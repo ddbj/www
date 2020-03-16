@@ -1,0 +1,21 @@
+.columns-view
+  display: flex
+  justify-content: space-between
+  &.-two
+    > .column
+      width: calc(100% / 2 - 3rem)
+  &.-three
+    > .column
+      width: calc(100% / 3 - 3rem)
+  &.-four
+    > .column
+      width: calc(100% / 4 - 3rem)
+
+@media screen and (max-width: $WIDTH_SP)
+  .columns-view
+    display: inherit
+    &.-two, &.-three, &.-four
+      > .column
+        width: 100%
+
+

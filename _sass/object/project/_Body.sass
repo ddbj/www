@@ -1,0 +1,15 @@
+#Body
+  background-color: white
+  > .inner
+    +inner
+    padding: 2rem 3rem 4rem
+    font-size: 1.4rem
+    line-height: 1.4
+
+
+@media screen and (max-width: $WIDTH_SP)
+  #Body
+    > .inner
+      +inner-sp
+      padding-left: $PADDING_SP_BASE
+      padding-right: $PADDING_SP_BASE

@@ -1,0 +1,97 @@
+.category-tab
+  text-align: center
+  font-size: 1.4rem
+  line-height: 5rem
+  background-color: $COLOR_BLACK
+  > ul
+    > li
+      display: inline-block
+      > a
+        padding: 0 2rem
+        display: block
+        color: white
+        text-decoration: none
+        transition: color $DURATION_GUI, background-color $DURATION_GUI
+        &:hover
+          background-color: $COLOR_KEY
+        &:before
+          content: ""
+          margin: -.2rem .4rem 0 -.8rem
+          display: inline-block
+          height: 2.95rem
+          background-position: 0 0
+          background-repeat: no-repeat
+          background-size: cover
+          vertical-align: middle
+          transition: background $DURATION_GUI
+      &.-servicesanalysis
+        > a:before
+          background-image: url(../images/icon-search_analysis-mono.png)
+          width: 2.5rem
+      &.-submissions
+        > a:before
+          background-image: url(../images/icon-submissions-mono.png)
+          width: 3.4rem
+      &.-downloads
+        > a:before
+          background-image: url(../images/icon-downloads-mono.png)
+          width: 3.6rem
+      &.-supercomputer
+        > a:before
+          background-image: url(../images/icon-super_computer-mono.png)
+          width: 3.45rem
+      &.-statistics
+        > a:before
+          background-image: url(../images/icon-statistics-mono.png)
+          width: 3rem
+      &.-activities
+        > a:before
+          background-image: url(../images/icon-activities-mono.png)
+          width: 3.1rem
+      &.-about
+        > a:before
+          background-image: url(../images/icon-about-mono.png)
+          width: 4rem
+      &.-current
+        > a
+          color: $COLOR_BLACK
+          background-color: white
+        &.-servicesanalysis
+          > a:before
+            background-image: url(../images/icon-search_analysis.png)
+        &.-submissions
+          > a:before
+            background-image: url(../images/icon-submissions.png)
+        &.-downloads
+          > a:before
+            background-image: url(../images/icon-downloads.png)
+        &.-supercomputer
+          > a:before
+            background-image: url(../images/icon-super_computer.png)
+        &.-statistics
+          > a:before
+            background-image: url(../images/icon-statistics.png)
+        &.-activities
+          > a:before
+            background-image: url(../images/icon-activities.png)
+        &.-about
+          > a:before
+            background-image: url(../images/icon-about.png)
+
+@media screen and (max-width: $WIDTH_SP)
+  .category-tab
+    > ul
+      display: flex
+      > li
+        display: block
+        flex-grow: 1
+        > a
+          padding: 1rem 0
+          font-size: 1rem
+          line-height: 1
+          &:before
+            display: block
+            margin: 0 auto .4rem
+
+
+

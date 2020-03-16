@@ -1,0 +1,49 @@
+.search-box
+  > *
+    height: 3rem
+    vertical-align: top
+  > select
+    //border: solid 1px $COLOR_LIGHT_GRAY
+    border: none
+    background-color: white
+    //box-shadow: $SHADOW_DEPTH1
+  > input[type="text"]
+    //border: solid 1px $COLOR_LIGHT_GRAY
+    padding: 0 1rem
+    width: 26rem
+    -webkit-appearance: none
+    border: none    
+    //height: 3.2rem
+    //box-shadow: $SHADOW_DEPTH1 inset
+  > button
+    width: 3rem
+    border: none
+    background-color: $COLOR_KEY
+    //box-shadow: $SHADOW_DEPTH1
+    position: relative
+    &:before, &:after
+      content: ""
+      position: absolute
+      display: block
+    &:before
+      width: 1rem
+      height: 1rem
+      border-radius: 100%
+      border: solid 1px white
+      top: .8rem
+      left: .8rem      
+    &:after
+      height: .7rem
+      border-right: solid 1px white
+      transform: rotate(-45deg)
+      top: 1.8rem
+      left: 1.8rem
+
+@media screen and (max-width: $WIDTH_SP)
+  .search-box
+    > select
+    > input[type="text"]
+      border-top: solid 1px $COLOR_LIGHT_GRAY
+      border-bottom: solid 1px $COLOR_LIGHT_GRAY
+      border-left: solid 1px $COLOR_LIGHT_GRAY
+      margin-right: -.4rem
