@@ -59,6 +59,8 @@ plugins:
 collections:
   authors:
     output: true
+  helps:
+    output: true
 
 defaults:
   - scope:

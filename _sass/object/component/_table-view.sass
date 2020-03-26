@@ -1,24 +1,28 @@
-.table-view
-  table
-    width: 100%
-    border-top: 1px solid $COLOR_BLACK
-    border-bottom: 1px solid $COLOR_BLACK
-    margin-bottom: 35px
-    .heading-view
-      font-size: 16px
-      color: #6E5C3E
-      margin-bottom: 13px 
-      text-align: left
-    tbody
-      tr
-        border-bottom: 1px solid $COLOR_SEPARATOR
-        &:last-child 
-          border-bottom: none
-        th
+.table-caption
+  font-size: 16px
+  color: #6E5C3E
+  margin-bottom: 13px 
+  text-align: left
+  display: block
+  margin-top: 35px
+table
+  width: 100%
+  border-top: 1px solid $COLOR_BLACK
+  border-bottom: 1px solid $COLOR_BLACK
+  tbody
+    tr
+      border-bottom: 1px solid $COLOR_SEPARATOR
+      &:last-child 
+        border-bottom: none
+      th
+        text-align: left
+        font-weight: bold
+        font-size: 14px
+      td
+        line-height: 30px
+        margin: 0
+        font-size: 14px
+        &:nth-of-type(1)
           text-align: left
           font-weight: bold
-          font-size: 14px
-        td
-          line-height: 30px
-          margin: 0
           font-size: 14px

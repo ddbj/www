@@ -13,3 +13,7 @@ title: Staff
     </li>
   {% endfor %}
 </ul>
+<p>--------------</p>
+{% for help in site.helps %}
+  <div>{{ help.content }}</div>
+{% endfor %}

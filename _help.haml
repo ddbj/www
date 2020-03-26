@@ -1,28 +1,8 @@
 ---
 # front matter tells Jekyll to process Liquid
-layout: default
-title: Help
+layout: help
+title: getentryヘルプ
 ---
-%header.page-header
-  %div.page-title
-    %h1.title getentryヘルプ
-    %nav.breadcrumb
-      %ul
-        %li
-          %a{href: 'index.html'} ホーム
-        %li
-          %a{href: 'index.html'} 検索・解析
-        %li
-          %a{href: ''} getentry
-        %li.current
-          getentryヘルプ
-  %form.search-box{:action => "https://www.google.com/cse"}
-    %select#search-target
-      %option{:selected => "selected", :value => "web"} Web Sites
-      %option{:value => "ddbj"} Annotated/Assembled Sequences
-      %option{:value => "dra"} Sequence Read Archive
-    %input#search-text{:placeholder => "custom search", :type => "text"}/
-    %button#search-button
 %main.NavigationAndMainView
   %section.internal-link
     %h2.title getentryの機能について
@@ -56,8 +36,8 @@ title: Help
       %li
         %a{href: ''} DDBJ の個々のエントリに対して，以下の方法でリンクを 設定することができます。
   %section.main-content-wrapper
-    %div.main-content
-      %div.getentry-function
+    %div.main-content.help-content
+      %div
         %h2 getentryの機能について
         %ul
           %li getentry は，アクセッション番号からの DDBJ フラットファイルの検索にご利用いただけます。
@@ -164,4 +144,3 @@ title: Help
               %a{href: ''} WABI MAFFT ヘルプ
             %li 
               %a{href: ''} Pipeline ヘルプ
-        

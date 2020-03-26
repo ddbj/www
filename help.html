@@ -1,0 +1,122 @@
+---
+# front matter tells Jekyll to process Liquid
+layout: help
+title: getentryヘルプ
+---
+
+<main class="NavigationAndMainView">
+  <section class="internal-link">
+    <h2 class="title">getentryの機能について</h2>
+    <ul>
+      <li>
+        <a href="">入力フォームによる検索</a>
+      </li>
+      <li>
+        <a href="">デフォルト指定</a>
+      </li>
+      <li>
+        <a href="">ID</a>
+      </li>
+      <li>
+        <a href="">データベースと出力形式</a>
+      </li>
+      <li>
+        <a href="">取得方法</a>
+      </li>
+      <li>
+        <a href="">上限(最大表示件数)</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="">WebAPI プログラムによる検索</a>
+      </li>
+      <li>
+        <a href="">プログラム</a>
+      </li>
+      <li>
+        <a href="">パラメータの指定方法</a>
+      </li>
+      <li>
+        <a href="">getentry で指定可能なパラメータ</a>
+      </li>
+      <li>
+        <a href="">gethistory で指定可能なパラメータ</a>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <a href="">DDBJ エントリへのリンク設定 方法</a>
+      </li>
+      <li>
+        <a href=""
+          >DDBJ の個々のエントリに対して，以下の方法でリンクを
+          設定することができます。</a
+        >
+      </li>
+    </ul>
+  </section>
+  <section class="main-content-wrapper">
+    <div class="main-content help-content">
+      {% for help in site.helps | markdownify %}
+        {{ help.content }}
+      {% endfor %}
+    </div>
+    <section class="multi-column-view">
+      <h2 class="caption">Related pages</h2>
+      <div class="navigation">
+        <nav>
+          <ul>
+            <li>
+              <a href="">ARSA ヘルプ</a>
+            </li>
+            <li>
+              <a href="">BLAST ヘルプ</a>
+            </li>
+            <li>
+              <a href="">VecScreen ヘルプ</a>
+            </li>
+            <li>
+              <a href="">ClustalW ヘルプ</a>
+            </li>
+            <li>
+              <a href="">TXSearch ヘルプ</a>
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <ul>
+            <li>
+              <a href="">過去のサービス</a>
+            </li>
+            <li>
+              <a href="">関連論文</a>
+            </li>
+            <li>
+              <a href="">WABI (Web API for Biology)</a>
+            </li>
+            <li>
+              <a href="">WABI BLAST ヘルプ</a>
+            </li>
+            <li>
+              <a href="">WABI ClustalW ヘルプ</a>
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <ul>
+            <li>
+              <a href="">WABI VecScreen ヘルプ</a>
+            </li>
+            <li>
+              <a href="">WABI MAFFT ヘルプ</a>
+            </li>
+            <li>
+              <a href="">Pipeline ヘルプ</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  </section>
+</main>
