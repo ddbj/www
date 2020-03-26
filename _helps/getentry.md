@@ -1,4 +1,5 @@
 ---
+layout: help
 title: getentry
 ---
 ## getentryの機能について
