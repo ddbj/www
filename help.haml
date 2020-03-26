@@ -1,0 +1,167 @@
+---
+# front matter tells Jekyll to process Liquid
+layout: default
+title: Help
+---
+%header.page-header
+  %div.page-title
+    %h1.title getentryヘルプ
+    %nav.breadcrumb
+      %ul
+        %li
+          %a{href: 'index.html'} ホーム
+        %li
+          %a{href: 'index.html'} 検索・解析
+        %li
+          %a{href: ''} getentry
+        %li.current
+          getentryヘルプ
+  %form.search-box{:action => "https://www.google.com/cse"}
+    %select#search-target
+      %option{:selected => "selected", :value => "web"} Web Sites
+      %option{:value => "ddbj"} Annotated/Assembled Sequences
+      %option{:value => "dra"} Sequence Read Archive
+    %input#search-text{:placeholder => "custom search", :type => "text"}/
+    %button#search-button
+%main.NavigationAndMainView
+  %section.internal-link
+    %h2.title getentryの機能について
+    %ul
+      %li
+        %a{href: ''} 入力フォームによる検索
+      %li
+        %a{href: ''} デフォルト指定
+      %li
+        %a{href: ''} ID
+      %li
+        %a{href: ''} データベースと出力形式
+      %li
+        %a{href: ''} 取得方法
+      %li
+        %a{href: ''} 上限(最大表示件数)
+    %ul
+      %li
+        %a{href: ''} WebAPI プログラムによる検索
+      %li
+        %a{href: ''} プログラム
+      %li
+        %a{href: ''} パラメータの指定方法
+      %li
+        %a{href: ''} getentry で指定可能なパラメータ
+      %li
+        %a{href: ''} gethistory で指定可能なパラメータ
+    %ul
+      %li
+        %a{href: ''} DDBJ エントリへのリンク設定 方法
+      %li
+        %a{href: ''} DDBJ の個々のエントリに対して，以下の方法でリンクを 設定することができます。
+  %section.main-content-wrapper
+    %div.main-content
+      %div.getentry-function
+        %h2 getentryの機能について
+        %ul
+          %li getentry は，アクセッション番号からの DDBJ フラットファイルの検索にご利用いただけます。
+          %li getentry は webAPI として実装しており，入力フォームからだけでなく，プログラムなどから直接呼び出すことも可能です。
+          %li データの変更履歴の検索は，webAPI プログラムの gethistory を用いて行うことができます。
+          %li "DDBJ フラットファイルのキーワード検索" は ARSA をご利用ください。
+          %li DRA データの検索は getentry ではおこなうことができません。DRA Search をご利用ください。
+      %div.search-link
+        %h2 入力フォームによる検索
+        %p
+          %a{:href => "https:http://getentry.ddbj.nig.ac.jp/top-j.html"}> http://getentry.ddbj.nig.ac.jp/top-j.html
+          からご利用下さい。
+      %div.table-view
+        %table
+          %caption.heading-view デフォルト指定
+          %tbody
+            %tr
+              %th ID
+              %td Accession 番号
+            %tr
+              %th データべース
+              %td DNA データベース:DDBJ/EMBL/GenBank
+            %tr
+              %th 出力形式
+              %td フラットファイル(DDBJ)
+            %tr
+              %th 取得方法
+              %td html
+            %tr
+              %th 上限
+              %td 10
+        %table
+          %caption.heading-view ID
+          %tbody
+            %tr
+              %th 
+                バージョン番号
+                %td
+                  %ul
+                    %li 指定がない場合は，最新バージョンを検索します。
+                    %li 指定されている場合は，指定のバージョンを検索します。
+                %td
+                  %ul
+                    %li AB669632.1 
+                    %li AB669632.2 
+            %tr
+              %th 
+                複数 Accession 番号
+                %td
+                  %ul
+                    %li ","区切りで複数の Accession 番号を指定できます。
+                    %li ","区切りで複数指定された場合，指定の順で出力されます。
+                    %li 二つの Accession 番号"-"で連結することにより範囲検索ができます。
+                    %li バージョン番号の指定もできます。
+                %td
+                  %ul
+                    %li AB669632.1,AB669632.2,AB669633.1,AB669633.2
+                    %li AK377101 - AK377200,AK377210,AK377211
+            %tr
+              %th 
+                範囲指定
+                %td
+                  %ul
+                    %li 範囲指定の両端の Accession 番号は前方のみの不完全でも構いません。
+                    %li 範囲指定も "," 区切りで複数指定できます。 
+                    %li バージョン番号を指定しても無視されます。 
+                %td
+                  %ul
+                    %li FY782000-FY7830
+                    %li AK377101 - AK377200,AK377211- AK388100
+    %section.multi-column-view
+      %h2.caption
+        Related pages
+      %div.navigation
+        %nav
+          %ul
+            %li 
+              %a{href: ''} ARSA ヘルプ
+            %li 
+              %a{href: ''} BLAST ヘルプ
+            %li 
+              %a{href: ''} VecScreen ヘルプ
+            %li 
+              %a{href: ''} ClustalW ヘルプ
+            %li 
+              %a{href: ''} TXSearch ヘルプ
+        %nav
+          %ul
+            %li 
+              %a{href: ''} 過去のサービス
+            %li 
+              %a{href: ''} 関連論文
+            %li 
+              %a{href: ''} WABI (Web API for Biology)
+            %li 
+              %a{href: ''} WABI BLAST ヘルプ
+            %li 
+              %a{href: ''} WABI ClustalW ヘルプ
+        %nav
+          %ul
+            %li 
+              %a{href: ''} WABI VecScreen ヘルプ
+            %li 
+              %a{href: ''} WABI MAFFT ヘルプ
+            %li 
+              %a{href: ''} Pipeline ヘルプ
+        
