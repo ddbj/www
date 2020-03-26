@@ -53,11 +53,11 @@ title: Home
             {% else %}
             %article.news
             {% endif %}
-              %a{ href: '' }
+              %a{ href: "{{post.url}}" }
                 %div.metadata
                   %time {{post.date | date: '%Y年%m月%d日'}}
                   %div.tags 
                     {% include post_meta.html %}
                 %h3.title {{post.title}}
           {% endfor %}
-        %a.more{ href: '' }more
+        %a.more{ href: '/news.html' }more

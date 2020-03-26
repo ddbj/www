@@ -327,17 +327,17 @@ input, textarea, select, button {
       display: block;
       margin-bottom: 10px; }
 
-.help-content h2 {
+.md-content h2 {
   font-size: 18px;
   color: #FF7300;
   margin-bottom: 15px; }
 
-.help-content ul li {
+.md-content ul li {
   font-size: 14px;
   margin-bottom: 27px;
   list-style-position: inside; }
 
-.help-content p, .help-content a {
+.md-content p, .md-content a {
   font-size: 14px; }
 
 .table-caption {
