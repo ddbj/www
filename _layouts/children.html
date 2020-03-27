@@ -1,0 +1,21 @@
+---
+layout: default
+---
+{% include category-tab.html %}
+<header class="page-header">
+  <div class="page-title">
+    <h1 class="title">{{ page.title-ja }}</h1>
+    <nav class="breadcrumb">
+      <ul>
+        <li>
+          <a href="index.html">ホーム</a>
+        </li>
+        <li>
+          <a href="index.html">{{ page.title-ja }}</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  {% include search-form.html %}  
+</header>
+{{ content }}
