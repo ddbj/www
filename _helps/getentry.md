@@ -30,12 +30,11 @@ title: getentry
 
 検索対象となるデータベースをひとつ指定します。 検索結果の出力形式は，エントリに対して，各データベースで定められている形式か FASTA 形式 のいずれかを以下の選択肢からひとつ指定します。
 
-#### DNAデータベース
+DNAデータベース
 
 検索対象データベース
 
 DDBJ/EMBL/GenBank |  [国際塩基配列データベース（INSD）](http://www.insdc.org/)               
------------------- | ----------------------------------------------------------
 MGA                | [Mass sequence for Genome Annotation(MGA)](/ddbj/mga.html)
 
 DDBJ/EMBL/GenBank を選択すると、以下が検索対象となります。
@@ -55,7 +54,6 @@ getentry で検索可能な各データベースのリリース番号や公開�
 出力形式
 
 フラットファイル(DDBJ)   | [DDBJ のデータ公開形式](/ddbj/flat-file.html)で出力
----------------- | ----------------------------------------
 全塩基配列 FASTA     |  塩基配列の全長を FASTA 形式で出力                    
 CDS アミノ酸配列 FASTA | 各 CDS 領域のアミノ酸翻訳配列を FASTA 形式で出力          
 CDS 塩基配列 FASTA   | 各 CDS 領域の塩基配列を FASTA 形式で出力              
@@ -65,35 +63,30 @@ INSD-XML_v1.4    | INSD-XML_v1.4 形式で出力
 
 検索対象データベースでMGA選択時は、FFのみ選択可能となります。
 
-#### Protein データベース
+Protein データベース
 
 検索対象データベース
 
 [UniProt](https://www.uniprot.org/) | UniProt/Swiss-Prot とUniProt/TrEMBL を合わせたアミノ酸配列データベース                        
------------------------------------ | ----------------------------------------------------------------------------
 [PDB](https://www.rcsb.org/pdb/)    | タンパク質の立体構造データベース                                                            
 [DAD](/stats/relnote.html)          | DDBJ からアミノ酸翻訳配列データを抽出して作成したデータベース                                           
 Patent                              | [JPO](https://www.jpo.go.jp/index.html)，[KIPO](//www.kipo.go.kr) に由来するアミノ酸配列
 
 getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報](/stats/relinfo.html) でご確認ください。
 
-#### 出力形式
+出力形式
 
-
-default            |  指定したデータベースの公開形式で出力            |                    
-------------------- | ----------------------------- | ------------------- | --------------------------
+default||指定したデータベースの公開形式で出力            |                    
 FASTA               | アミノ酸配列FASTA                  |  アミノ酸配列をFASTA 形式 で出力 | UniProt, DAD, Patent で選択可能
-塩基配列FASTA (for DAD) | アミノ酸配列をコードする塩基配列をFASTA 形式 で出力 | DAD のみ選択可能         
-seqres              | PDB アミノ酸 FASTA                | PDB のみ選択可能         
+|塩基配列FASTA (for DAD) | アミノ酸配列をコードする塩基配列をFASTA 形式 で出力 | DAD のみ選択可能         
+|seqres              | PDB アミノ酸 FASTA                | PDB のみ選択可能         
 
 
 選択データベースにより、出力形式は異なります。
 
-### 取得方法
-
+<span class="table-caption">取得方法</span>
 
 デフォルト | html                                 
------ | -------------------------------------
 html  | HTMLファイル（ACCESSION, ORGANISM等 にリンクあり）
 text  | テキストファイル                             
 gz    |  gz圧縮ファイル                            
@@ -102,7 +95,6 @@ gz    |  gz圧縮ファイル
 gz圧縮ファイルのファイル名はformatの指定値によって以下のようになります。
 
 
-col 1              | col 2          
 ------------------ | ---------------
 [DNA系]flatfile     | flatfile.txt.gz
 [DNA系]xml          | insd.xml.gz    
@@ -115,43 +107,34 @@ col 1              | col 2
 
 
 
-### 上限（最大表示件数）
+<span class="table-caption">上限（最大表示件数）</span>
 
-col 1    | col 2 
 -------- | ------
 デフォルト    | 10件   
 任意の件数を指定 | 指定した件数
 0 を指定    | 上限なし  
 
 
-WebAPI プログラムによる検索
+## WebAPI プログラムによる検索
 -----------------
 
 getentry は webAPI として実装しており，入力フォームからだけでなく，プログラムなどから直接呼び出すことも可能です。
 
-### プログラム
+<span class="table-caption">プログラム</span>
 
 getentry の web API は以下の２つのプログラムからなります。
 
 getentry  |  アクセッション番号（データベース中のエントリの ID)を与えると，データを返します。
----------- | --------------------------------------------------------------------------------------------------
-gethistory | アクセッション番号（データベース中のエントリの ID)を与えると，データの変更履歴を返します。  
-
-                特許庁由来アミノ酸配列の更新履歴は今のところとっておりません。
+gethistory | アクセッション番号（データベース中のエントリの ID)を与えると，データの変更履歴を返します。<br> 特許庁由来アミノ酸配列の更新履歴は今のところとっておりません。
 
 
-### パラメータの指定方法
+<span class="table-caption">パラメータの指定方法</span>
+
 
 以下の２種類があります
 
-col 1          | col 2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
--------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 通常の GET method | http://getentry.ddbj.nig.ac.jp/getentry?database=<span class="bold italic">データベース名</span>&accession_number=<span class="bold italic">アクセッション番号</span>&<span class="bold italic">追加のパラメーター（任意)</span>                                                                                                                                                                                                                                                                                                                                                                
-smart URL      | http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold italic">データベース名</span>/<span class="bold italic">アクセッション番号</span>  
-
-                http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold italic">データベース名</span>/<span class="bold italic">アクセッション番号</span>/?<span class="bold italic">追加のパラメーター(任意)</span>  
-
-                http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold italic">データベース名</span>/<span class="bold italic">アクセッション番号</span>/<span class="bold italic">リビジョン ID </span>/?<span class="bold italic">追加のパラメーター(任意)</span>
+smart URL      | http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold italic">データベース名</span>/<span class="bold italic">アクセッション番号</span>  <br> http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold italic">データベース名</span>/<span class="bold italic">アクセッション番号</span>/?<span class="bold italic">追加のパラメーター(任意)</span>  <br> http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold italic">データベース名</span>/<span class="bold italic">アクセッション番号</span>/<span class="bold italic">リビジョン ID </span>/?<span class="bold italic">追加のパラメーター(任意)</span>
 
 
 入力例
@@ -162,22 +145,14 @@ http://getentry.ddbj.nig.ac.jp/getentry?database=ddbj&accession_number=AB601234
 http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001
 
 
-### getentry で指定可能なパラメータ
+<span class="table-caption">getentry で指定可能なパラメータ</span>
 
-#### accession 番号<span class="red">（必須）</span><span class="normal">：　検索対象の Accession 番号を指定します。</span>
+accession 番号<span class="red">（必須）</span><span class="normal">：　検索対象の Accession 番号を指定します。</span>
 
-バージョン番号         | *  指定がない場合は，最新バージョンを検索します。
-*  指定されている場合は，指定のバージョンを検索します。                                                                          
---------------- | ----------------------------------------------------------------------------------------------------------------------------------
-複数 Accession 番号 | *  ","区切りで複数の Accession 番号を指定できます。
-*  ","区切りで複数指定された場合，指定の順で出力されます。
-*  二つの Accession 番号"-"で連結することにより範囲検索ができます。
-*  バージョン番号の指定もできます。
-範囲指定            | *  範囲指定の両端の Accession 番号は前方のみの不完全でも構いません。
-*  範囲指定も "," 区切りで複数指定できます。
-*  バージョン番号を指定しても無視されます。                                      
-
-
+|  バージョン番号  |  ・指定がない場合は，最新バージョンを検索します。<br> ・指定されている場合は，指定のバージョンを検索します。 |
+|  複数 Accession 番号  | ・ ","区切りで複数の Accession 番号を指定できます。 <br> ・","区切りで複数指定された場合，指定の順で出力されます。 |
+|  範囲指定  |  ・範囲指定の両端の Accession 番号は前方のみの不完全でも構いません。<br> ・範囲指定も "," 区切りで複数指定できます。<br> ・バージョン番号を指定しても無視されます。|
+                                  
 対象の Accession 番号が存在しない，または表示できない場合，該当の Accession 番号に対する結果は何も表示されず，limit で上限が制限されているときの数にもカウントされません。
 
 デフォルトでの表示件数が10件に設定されているため，それ以上の件数を指定する場合には "limit" で設定を変更して下さい。
@@ -202,17 +177,15 @@ http://getentry.ddbj.nig.ac.jp/getentry/na/AB669632.1,AB669632.2,AB669633.1,AB66
 http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB669632.1-AB6696356.1  
 http://getentry.ddbj.nig.ac.jp/getentry/na/AB669632.1-AB6696356.1
 
-#### database<span class="red">（任意）</span><span class="normal">：　検索対象のデータベースを指定します。</span>
+database<span class="red">（任意）</span><span class="normal">：　検索対象のデータベースを指定します。</span>
 
-DNA系      | na                                  | DDBJ/EMBL/GenBank                                                           |  [国際塩基配列データベース（INSD）](http://www.insdc.org/), [WGS](/ddbj/wgs.html), [TPA](/ddbj/tpa.html), [TSA](/ddbj/tsa.html)
---------- | ----------------------------------- | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------
-mga       | MGA                                 | [Mass sequence for Genome Annotation(MGA)](/ddbj/mga.html)                  
+DNA系      | na                                  | DDBJ/EMBL/GenBank  |  [国際塩基配列データベース（INSD）](http://www.insdc.org/), [WGS](/ddbj/wgs.html), [TPA](/ddbj/tpa.html), [TSA](/ddbj/tsa.html)
+|mga       | MGA                                 | [Mass sequence for Genome Annotation(MGA)](/ddbj/mga.html)       
 Protein系  | aa                                  | DAD, Patent, UniProt, PDB                                                   |  4つのデータベースをこの順番で検索
-
-uniprot   | [UniProt](https://www.uniprot.org/) | UniProt/Swiss-Prot とUniProt/TrEMBL を合わせたアミノ酸配列データベース                        
-pdb       | [PDB](https://www.rcsb.org/pdb/)    | タンパク質の立体構造データベース                                                            
-dad       | [DAD](/stats/relnote.html)          | DDBJ からアミノ酸翻訳配列データを抽出して作成したデータベース                                           
-patent_aa | Patent                              | [JPO](https://www.jpo.go.jp/index.html)，[KIPO](//www.kipo.go.kr) に由来するアミノ酸配列
+| uniprot   | [UniProt](https://www.uniprot.org/) | UniProt/Swiss-Prot とUniProt/TrEMBL を合わせたアミノ酸配列データベース                        
+| pdb       | [PDB](https://www.rcsb.org/pdb/)    | タンパク質の立体構造データベース                                                            
+| dad       | [DAD](/stats/relnote.html)          | DDBJ からアミノ酸翻訳配列データを抽出して作成したデータベース                                           
+| patent_aa | Patent                              | [JPO](https://www.jpo.go.jp/index.html)，[KIPO](//www.kipo.go.kr) に由来するアミノ酸配列
 
 データベース指定を省略すると、naを指定したものとみなして処理します。
 
@@ -221,8 +194,7 @@ DDBJ/EMBL/GenBank を選択すると、以下が検索対象となります。
 * DDBJ 定期リリース
 * DDBJ 定期リリース後の新着データ
 * アルファベット４文字＋８桁の数字で構成されるアクセッション番号のデータ  
-
-                  （[WGS(Whole Genome Shotgun)](/ddbj/wgs.html), [TSA(Transcriptome Shotgun Assembly)](/ddbj/tsa.html) の一部）
+（[WGS(Whole Genome Shotgun)](/ddbj/wgs.html), [TSA(Transcriptome Shotgun Assembly)](/ddbj/tsa.html) の一部）
 
 * [TPA(Third Party Data)](/ddbj/tpa.html)
 
@@ -257,10 +229,9 @@ http://getentry.ddbj.nig.ac.jp/getentry/aa/P06213
 http://getentry.ddbj.nig.ac.jp/getentry?database=uniprot&accession_number=P06213  
 http://getentry.ddbj.nig.ac.jp/getentry/uniprot/P06213
 
-#### revision<span class="red">（任意）</span><span class="normal">：　指定された revision 時点を検索します。</span>
+revision<span class="red">（任意）</span><span class="normal">：　指定された revision 時点を検索します。</span>
 
 通常    | yyyy-MM-dd hh:mm:ss        
------ | ---------------------------
 リリース時 | yyyy-MM-dd hh:mm:ss release
 
 バージョン番号と revision が同時に指定されているとき，revision が優先されます。
@@ -274,40 +245,25 @@ http://getentry.ddbj.nig.ac.jp/getentry/uniprot/P06213
 http://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=AB479935  
 http://getentry.ddbj.nig.ac.jp/gethistory/na/AB479935
 
-#### format<span class="red">（任意）</span><span class="normal">：　結果の出力フォーマットを指定します。</span>
+format<span class="red">（任意）</span><span class="normal">：　結果の出力フォーマットを指定します。</span>
 
 デフォルト                         | flatfile                                                                                   
------------------------------ | -------------------------------------------------------------------------------------------
 flatfile                      | [DDBJ フラットファイル形式](/ddbj/flat-file.html)                                                    
 xml                           | [INSDSeq-XML version 1.4 形式](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbj/xml/insdxml/v1.4/)
-fasta                         | [DNA 系] 全塩基配列 FASTA                                                                        
-[Protein 系] アミノ酸配列 FASTA     
+fasta                         | [DNA 系] 全塩基配列 FASTA <br> [Protein 系] アミノ酸配列 FASTA     
 trans                         | [DNA 系] CDS アミノ酸 FASTA                                                                     
-cds                           | [DNA 系] CDS 塩基配列 FASTA                                                                     
-[DAD 限定] 塩基配列 FASTA (for DAD)
+cds                           | [DNA 系] CDS 塩基配列 FASTA <br> [DAD 限定] 塩基配列 FASTA (for DAD)
 seqres                        | [Protein 系] PDB アミノ酸 FASTA                                                                 
 
 選択したデータベースでの有効な出力フォーマットの指定は以下の通りです。
 
-DNAデータベース                                                                  
---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                DDBJ / EMBL / GenBank  
-
-                MGA
-                |                 フラットファイル(DDBJ),  
-
-                全塩基配列FASTA,  
-
-                CDS アミノ酸配列FASTA,  
-
-                CDS 塩基配列FASTA,  
-
-                INSD-XML_v1.4
-Proteinデータベース                                                              
-UniProt                                                                     | default, アミノ酸配列FASTA                                                                                                                                                 
-PDB                                                                        |  default, seqres                                                                                                                                                      
-DAD                                                                        |  default, アミノ酸配列FASTA, 塩基配列FASTA                                                                                                                                      
-Patent                                                                      | default, アミノ酸配列FASTA                                                                                                                                                 
+|  DNAデータベース                                                                  
+|  DDBJ / EMBL / GenBank / MGA  |  フラットファイル(DDBJ), <br> 全塩基配列FASTA, <br> CDS アミノ酸配列FASTA, <br>CDS 塩基配列FASTA, <br>INSD-XML_v1.4 |
+|  Proteinデータベース
+|  UniProt  |  default, アミノ酸配列FASTA  |
+|  PDB  |  default, seqres  |
+|  DAD  |  default, アミノ酸配列FASTA, 塩基配列FASTA  |
+|  Patent  |  default, アミノ酸配列FASTA  |                                                       
 
 入力例 <span class="normal">（上段はGET method , 下段は　smart URL ）</span>
 
@@ -501,18 +457,15 @@ CGCGAATTCGCG
 >101m_A mol:protein length:154  MYOGLOBIN
 <center>----（以下略）----</center>
 
-#### filetype<span class="red">（任意）</span><span class="normal">：　出力のファイルタイプを指定します。</span>
+filetype<span class="red">（任意）</span><span class="normal">：　出力のファイルタイプを指定します。</span>
 
 デフォルト | text                                 
------ | -------------------------------------
 html  | HTMLファイル（ACCESSION, ORGANISM等 にリンクあり）
 text  | テキストファイル                             
 gz    | gz圧縮ファイル                             
 
 gz圧縮ファイルのファイル名はformatの指定値によって以下のようになります。
 
-col 1              | col 2          
------------------- | ---------------
 [DNA系]flatfile    |  flatfile.txt.gz
 [DNA系]xml          | insd.xml.gz    
 [DNA系]fasta        | fasta_na.txt.gz
@@ -560,11 +513,9 @@ COMMENT     OS   Homo sapiens
 
 
 
-
-#### show_suppressed<span class="red">（任意）</span><span class="normal">：　suppressed　データを表示します。</span>
+show_suppressed<span class="red">（任意）</span><span class="normal">：　suppressed　データを表示します。</span>
 
 true  | suppressed データを表示   
------ | --------------------
 false | suppressed データを表示しない
 
 入力例 <span class="normal">（上段はGET method , 下段は　smart URL ）</span>
@@ -573,10 +524,9 @@ false | suppressed データを表示しない
 http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=HE602933&show_suppressed=true  
 http://getentry.ddbj.nig.ac.jp/getentry/na/HE602933?show_suppressed=true
 
-#### limit<span class="red">（任意）</span><span class="normal">：　データの取得上限を設定します。</span>
+limit<span class="red">（任意）</span><span class="normal">：　データの取得上限を設定します。</span>
 
 デフォルト    | 10件   
--------- | ------
 任意の件数を指定 | 指定した件数
 0を指定     | 無制限   
 
@@ -588,10 +538,9 @@ http://getentry.ddbj.nig.ac.jp/getentry/na/HE602933?show_suppressed=true
 [http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FY736910 - FY762881&limit=0](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FY736910%20-%20FY762881&limit=0)  
 [http://getentry.ddbj.nig.ac.jp/getentry/na/FY736910 - FY762881?limit=0](http://getentry.ddbj.nig.ac.jp/getentry/na/FY736910%20-%20FY762881?limit=0)
 
-#### trace<span class="red">（任意）</span><span class="normal">：　Secondary Accession が指定された場合に，Primary への転送を設定します。</span>
+trace<span class="red">（任意）</span><span class="normal">：　Secondary Accession が指定された場合に，Primary への転送を設定します。</span>
 
 true  | primary データを表示   
------ | -----------------
 false | primary データを表示しない
 
 入力例 <span class="normal">（上段はGET method , 下段は　smart URL ）</span>
@@ -600,9 +549,10 @@ false | primary データを表示しない
 http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AF530906&format=flatfile&trace=true  
 http://getentry.ddbj.nig.ac.jp/getentry/na/AF530906/?format=flatfile&trace=true
 
-### gethistory で指定可能なパラメータ 
+<span class="table-caption">gethistory で指定可能なパラメータ</span>
 
-#### accession 番号<span class="red">（必須）</span><span class="normal">：検索対象のAccession番号を指定します。指定方法は getentry と同じです。</span>
+
+accession 番号<span class="red">（必須）</span><span class="normal">：検索対象のAccession番号を指定します。指定方法は getentry と同じです。</span>
 
 特許庁由来アミノ酸配列の履歴はありません
 
@@ -622,10 +572,9 @@ AB628096
 1 2011-05-11 23:09:49         2011-05-11 23:09:49         live
 
 
-#### database<span class="red">（任意）</span><span class="normal">： 検索対象のデータベースを指定します。</span>
+database<span class="red">（任意）</span><span class="normal">： 検索対象のデータベースを指定します。</span>
 
 デフォルト | na
------ | --
 DNA 系 | na
 
 指定したデータベースが履歴管理に対応していない場合は，空の結果を返します。
@@ -646,10 +595,9 @@ BAET01000001   BAET01000001
 1 2012-02-21 07:03:15 2012-02-21 07:03:15 live   
 
 
-#### filetype<span class="red">（任意）</span><span class="normal">：　出力のファイルタイプを指定します。</span>
+filetype<span class="red">（任意）</span><span class="normal">：　出力のファイルタイプを指定します。</span>
 
 デフォルト | text                              
------ | ----------------------------------
 html  | HTMLファイル（revision 時点のフラットファイルにリンク）
 text  | テキストファイル                          
 
@@ -662,31 +610,31 @@ http://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=AB628096&
 accession                                                                                                                                                                          | version                     | revision                                                                                                                                                                           | change                      | state
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | -----
 AB628096                                                                                                                                                                           | 1                           | [2015-05-29 18:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2015-05-29+18%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2015-05-29 18:00:00 release | live 
-[2015-02-27 14:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2015-02-27+14%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2015-02-27 14:00:00 release | live                                                                                                                                                                              
-[2014-11-25 13:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2014-11-25+13%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2014-11-25 13:00:00 release | live                                                                                                                                                                              
-[2014-08-29 21:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2014-08-29+21%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2014-08-29 21:00:00 release | live                                                                                                                                                                              
-[2014-05-30 12:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2014-05-30+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2014-05-30 12:00:00 release | live                                                                                                                                                                              
-[2014-02-21 12:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2014-02-21+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2014-02-21 12:00:00 release | live                                                                                                                                                                              
-[2013-11-29 12:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2013-11-29+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2013-11-29 12:00:00 release | live                                                                                                                                                                              
-[2013-08-30 07:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2013-08-30+07%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2013-08-30 07:00:00 release | live                                                                                                                                                                              
-[2013-05-24 12:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2013-05-24+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2013-05-24 12:00:00 release | live                                                                                                                                                                              
-[2013-02-22 12:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2013-02-22+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2013-02-22 12:00:00 release | live                                                                                                                                                                              
-[2012-11-22 15:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-11-22+15%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2012-11-22 15:00:00 release | live                                                                                                                                                                              
-[2012-08-24 12:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-08-24+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2012-08-24 12:00:00 release | live                                                                                                                                                                              
-[2012-05-25 12:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-05-25+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2012-05-25 12:00:00 release | live                                                                                                                                                                              
-[2012-02-24 07:17:46](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-02-24+07%3A17%3A46/?format=flatfile&filetype=text&trace=false&show_suppressed=true)                 | 2012-02-24 07:17:46         | live                                                                                                                                                                              
-[2012-02-24 07:02:55](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-02-24+07%3A02%3A55/?format=flatfile&filetype=text&trace=false&show_suppressed=true)                 | 2012-02-24 07:02:55         | live                                                                                                                                                                              
-[2011-11-25 11:27:22 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-11-25+11%3A27%3A22+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2011-11-25 11:27:22 release | live                                                                                                                                                                              
-[2011-10-22 23:01:47](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-10-22+23%3A01%3A47/?format=flatfile&filetype=text&trace=false&show_suppressed=true)                 | 2011-10-22 23:01:47         | live                                                                                                                                                                              
-[2011-08-26 10:33:50 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-08-26+10%3A33%3A50+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2011-08-26 10:33:50 release | live                                                                                                                                                                              
-[2011-05-27 12:38:45 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-05-27+12%3A38%3A45+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2011-05-27 12:38:45 release | live                                                                                                                                                                              
-[2011-05-11 23:09:49](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-05-11+23%3A09%3A49/?format=flatfile&filetype=text&trace=false&show_suppressed=true)                 | 2011-05-11 23:09:49         | live                                                                                                                                                                              
+ |  | [2015-02-27 14:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2015-02-27+14%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2015-02-27 14:00:00 release | live                                                                                                                                                                              
+ |  | [2014-11-25 13:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2014-11-25+13%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2014-11-25 13:00:00 release | live                                                                                                                                                                              
+ |  | [2014-08-29 21:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2014-08-29+21%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2014-08-29 21:00:00 release | live                                                                                                                                                                              
+ |  | [2014-05-30 12:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2014-05-30+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2014-05-30 12:00:00 release | live                                                                                                                                                                              
+ |  | [2014-02-21 12:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2014-02-21+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2014-02-21 12:00:00 release | live                                                                                                                                                                              
+ |  | [2013-11-29 12:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2013-11-29+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2013-11-29 12:00:00 release | live                                                                                                                                                                              
+ |  | [2013-08-30 07:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2013-08-30+07%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2013-08-30 07:00:00 release | live                                                                                                                                                                              
+ |  | [2013-05-24 12:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2013-05-24+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2013-05-24 12:00:00 release | live                                                                                                                                                                              
+ |  | [2013-02-22 12:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2013-02-22+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2013-02-22 12:00:00 release | live                                                                                                                                                                              
+ |  | [2012-11-22 15:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-11-22+15%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2012-11-22 15:00:00 release | live                                                                                                                                                                              
+ |  | [2012-08-24 12:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-08-24+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2012-08-24 12:00:00 release | live                                                                                                                                                                              
+ |  | [2012-05-25 12:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-05-25+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2012-05-25 12:00:00 release | live                                                                                                                                                                              
+ |  | [2012-02-24 07:17:46](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-02-24+07%3A17%3A46/?format=flatfile&filetype=text&trace=false&show_suppressed=true)                 | 2012-02-24 07:17:46         | live                                                                                                                                                                              
+ |  | [2012-02-24 07:02:55](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-02-24+07%3A02%3A55/?format=flatfile&filetype=text&trace=false&show_suppressed=true)                 | 2012-02-24 07:02:55         | live                                                                                                                                                                              
+ |  | [2011-11-25 11:27:22 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-11-25+11%3A27%3A22+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2011-11-25 11:27:22 release | live                                                                                                                                                                              
+ |  | [2011-10-22 23:01:47](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-10-22+23%3A01%3A47/?format=flatfile&filetype=text&trace=false&show_suppressed=true)                 | 2011-10-22 23:01:47         | live                                                                                                                                                                              
+ |  | [2011-08-26 10:33:50 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-08-26+10%3A33%3A50+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2011-08-26 10:33:50 release | live                                                                                                                                                                              
+ |  | [2011-05-27 12:38:45 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-05-27+12%3A38%3A45+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2011-05-27 12:38:45 release | live                                                                                                                                                                              
+ |  | [2011-05-11 23:09:49](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-05-11+23%3A09%3A49/?format=flatfile&filetype=text&trace=false&show_suppressed=true)                 | 2011-05-11 23:09:49         | live                                                                                                                                                                              
 
 
-DDBJ エントリへのリンク設定方法
+## DDBJ エントリへのリンク設定方法
 ------------------
 
-### DDBJ の個々のエントリに対して，以下の方法でリンクを設定することができます。
+DDBJ の個々のエントリに対して，以下の方法でリンクを設定することができます。
 
 http://getentry.ddbj.nig.ac.jp/getentry?database=データベース名&accession_number=アクセッション番号&追加のパラメーター（任意)  
 http://getentry.ddbj.nig.ac.jp/getentry/データベース名/アクセッション番号  
