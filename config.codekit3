@@ -85,28 +85,6 @@
 		"oAP": "/_data/navigation.yml",
 		"oF": 0
 		},
-	"/_help.haml": {
-		"cB": 0,
-		"cDA": 0,
-		"eHT": 0,
-		"ft": 256,
-		"hM": 0,
-		"nEA": 0,
-		"oA": 1,
-		"oAP": "/_help.html",
-		"oF": 0,
-		"oFM": 2,
-		"uDQ": 0,
-		"uUN": 0
-		},
-	"/_helps/getentry.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_helps/getentry.html",
-		"oF": 0
-		},
 	"/_helps/getentry.md": {
 		"cB": 0,
 		"cS": 0,
@@ -126,6 +104,38 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/_includes/category-tab.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_includes/category-tab.html",
+		"oF": 0
+		},
+	"/_includes/footer.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_includes/footer.html",
+		"oF": 0
+		},
+	"/_includes/head.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_includes/head.html",
+		"oF": 0
+		},
+	"/_includes/header.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_includes/header.html",
+		"oF": 0
+		},
 	"/_includes/navigation.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -142,12 +152,36 @@
 		"oAP": "/_includes/post_meta.html",
 		"oF": 0
 		},
+	"/_includes/search-form.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_includes/search-form.html",
+		"oF": 0
+		},
 	"/_layouts/author.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/_layouts/author.html",
+		"oF": 0
+		},
+	"/_layouts/category-tab.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_layouts/category-tab.html",
+		"oF": 0
+		},
+	"/_layouts/children.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_layouts/children.html",
 		"oF": 0
 		},
 	"/_layouts/default.html": {
@@ -174,7 +208,15 @@
 		"oAP": "/_layouts/post.html",
 		"oF": 0
 		},
-	"/_posts/en/2019-11-14-post1.md": {
+	"/_layouts/top.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_layouts/top.html",
+		"oF": 0
+		},
+	"/_posts/en/2020-2-04-post1.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -184,7 +226,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_posts/en/2019-11-14-post1.html",
+		"oAP": "/_posts/en/2020-2-04-post1.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -193,7 +235,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_posts/en/2019-11-25-post1.md": {
+	"/_posts/en/2020-3-17-post1.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -203,7 +245,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_posts/en/2019-11-25-post1.html",
+		"oAP": "/_posts/en/2020-3-17-post1.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -212,7 +254,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_posts/en/2019-11-28-post1.md": {
+	"/_posts/en/2020-3-19-post1.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -222,7 +264,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_posts/en/2019-11-28-post1.html",
+		"oAP": "/_posts/en/2020-3-19-post1.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -231,7 +273,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_posts/en/2019-12-06-post1.md": {
+	"/_posts/en/2020-3-23-post1.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -241,7 +283,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_posts/en/2019-12-06-post1.html",
+		"oAP": "/_posts/en/2020-3-23-post1.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -250,7 +292,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_posts/en/2019-12-18-post1.md": {
+	"/_posts/en/2020-3-26-post1.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -260,7 +302,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_posts/en/2019-12-18-post1.html",
+		"oAP": "/_posts/en/2020-3-26-post1.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -269,7 +311,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_posts/en/2019-12-23-post1.md": {
+	"/_posts/ja/2020-2-04-post1.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -279,7 +321,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_posts/en/2019-12-23-post1.html",
+		"oAP": "/_posts/ja/2020-2-04-post1.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -288,7 +330,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_posts/en/2020-01-10-post1.md": {
+	"/_posts/ja/2020-3-17-post1.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -298,7 +340,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_posts/en/2020-01-10-post1.html",
+		"oAP": "/_posts/ja/2020-3-17-post1.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -307,7 +349,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_posts/en/2020-01-16-post1.md": {
+	"/_posts/ja/2020-3-19-post1.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -317,7 +359,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_posts/en/2020-01-16-post1.html",
+		"oAP": "/_posts/ja/2020-3-19-post1.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -326,7 +368,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_posts/en/2020-01-20-post1.md": {
+	"/_posts/ja/2020-3-23-post1.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -336,7 +378,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_posts/en/2020-01-20-post1.html",
+		"oAP": "/_posts/ja/2020-3-23-post1.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -345,7 +387,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_posts/en/2020-01-27-post1.md": {
+	"/_posts/ja/2020-3-26-post1.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -355,197 +397,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_posts/en/2020-01-27-post1.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"/_posts/ja/2019-11-25-post1.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_posts/ja/2019-11-25-post1.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"/_posts/ja/2019-11-28-post1.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_posts/ja/2019-11-28-post1.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"/_posts/ja/2019-12-06-post1.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_posts/ja/2019-12-06-post1.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"/_posts/ja/2019-12-18-post1.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_posts/ja/2019-12-18-post1.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"/_posts/ja/2019-12-23-post1.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_posts/ja/2019-12-23-post1.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"/_posts/ja/2020-01-10-post1.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_posts/ja/2020-01-10-post1.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"/_posts/ja/2020-01-16-post1.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_posts/ja/2020-01-16-post1.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"/_posts/ja/2020-01-20-post1.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_posts/ja/2020-01-20-post1.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"/_posts/ja/2020-01-27-post1.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_posts/ja/2020-01-27-post1.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"/_posts/ja/2020-01-27-post2.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_posts/ja/2020-01-27-post2.html",
+		"oAP": "/_posts/ja/2020-3-26-post1.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -662,19 +514,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/_sass/object/component/_help-content.sass": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 2,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_sass/object/assets/css/_help-content.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"/_sass/object/component/_internallink-navigation.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -697,6 +536,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/_sass/object/assets/css/_list-view.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/_sass/object/component/_md-content.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_sass/object/assets/css/_md-content.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -943,13 +795,21 @@
 		"oAP": "/_site/404.html",
 		"oF": 1
 		},
-	"/_site/about.html": {
+	"/_site/aboutus.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 1,
-		"oAP": "/_site/about.html",
-		"oF": 1
+		"oA": 0,
+		"oAP": "/_site/aboutus.html",
+		"oF": 0
+		},
+	"/_site/activities.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_site/activities.html",
+		"oF": 0
 		},
 	"/_site/assets/css/main.css": {
 		"aP": 1,
@@ -958,6 +818,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/_site/assets/css/main-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/_site/assets/css/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/_site/assets/css/style-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -1300,84 +1170,52 @@
 		"oAP": "/_site/blog.html",
 		"oF": 1
 		},
-	"/_site/en/2019/11/14/post1.html": {
+	"/_site/download.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/_site/en/2019/11/14/post1.html",
+		"oAP": "/_site/download.html",
 		"oF": 0
 		},
-	"/_site/en/2019/11/25/post1.html": {
+	"/_site/en/2020/02/04/post1.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/_site/en/2019/11/25/post1.html",
+		"oAP": "/_site/en/2020/02/04/post1.html",
 		"oF": 0
 		},
-	"/_site/en/2019/11/28/post1.html": {
+	"/_site/en/2020/03/17/post1.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/_site/en/2019/11/28/post1.html",
+		"oAP": "/_site/en/2020/03/17/post1.html",
 		"oF": 0
 		},
-	"/_site/en/2019/12/06/post1.html": {
+	"/_site/en/2020/03/19/post1.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/_site/en/2019/12/06/post1.html",
+		"oAP": "/_site/en/2020/03/19/post1.html",
 		"oF": 0
 		},
-	"/_site/en/2019/12/18/post1.html": {
+	"/_site/en/2020/03/23/post1.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/_site/en/2019/12/18/post1.html",
+		"oAP": "/_site/en/2020/03/23/post1.html",
 		"oF": 0
 		},
-	"/_site/en/2019/12/23/post1.html": {
+	"/_site/en/2020/03/26/post1.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/_site/en/2019/12/23/post1.html",
-		"oF": 0
-		},
-	"/_site/en/2020/01/10/post1.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_site/en/2020/01/10/post1.html",
-		"oF": 0
-		},
-	"/_site/en/2020/01/16/post1.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_site/en/2020/01/16/post1.html",
-		"oF": 0
-		},
-	"/_site/en/2020/01/20/post1.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_site/en/2020/01/20/post1.html",
-		"oF": 0
-		},
-	"/_site/en/2020/01/27/post1.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_site/en/2020/01/27/post1.html",
+		"oAP": "/_site/en/2020/03/26/post1.html",
 		"oF": 0
 		},
 	"/_site/feed.xml": {
@@ -1387,14 +1225,6 @@
 		"oA": 1,
 		"oAP": "/_site/feed.xml",
 		"oF": 1
-		},
-	"/_site/help.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_site/help.html",
-		"oF": 0
 		},
 	"/_site/helps/getentry.html": {
 		"cB": 0,
@@ -1412,84 +1242,44 @@
 		"oAP": "/_site/index.html",
 		"oF": 1
 		},
-	"/_site/ja/2019/11/25/post1.html": {
+	"/_site/ja/2020/02/04/post1.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/_site/ja/2019/11/25/post1.html",
+		"oAP": "/_site/ja/2020/02/04/post1.html",
 		"oF": 0
 		},
-	"/_site/ja/2019/11/28/post1.html": {
+	"/_site/ja/2020/03/17/post1.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/_site/ja/2019/11/28/post1.html",
+		"oAP": "/_site/ja/2020/03/17/post1.html",
 		"oF": 0
 		},
-	"/_site/ja/2019/12/06/post1.html": {
+	"/_site/ja/2020/03/19/post1.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/_site/ja/2019/12/06/post1.html",
+		"oAP": "/_site/ja/2020/03/19/post1.html",
 		"oF": 0
 		},
-	"/_site/ja/2019/12/18/post1.html": {
+	"/_site/ja/2020/03/23/post1.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/_site/ja/2019/12/18/post1.html",
+		"oAP": "/_site/ja/2020/03/23/post1.html",
 		"oF": 0
 		},
-	"/_site/ja/2019/12/23/post1.html": {
+	"/_site/ja/2020/03/26/post1.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/_site/ja/2019/12/23/post1.html",
-		"oF": 0
-		},
-	"/_site/ja/2020/01/10/post1.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_site/ja/2020/01/10/post1.html",
-		"oF": 0
-		},
-	"/_site/ja/2020/01/16/post1.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_site/ja/2020/01/16/post1.html",
-		"oF": 0
-		},
-	"/_site/ja/2020/01/20/post1.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_site/ja/2020/01/20/post1.html",
-		"oF": 0
-		},
-	"/_site/ja/2020/01/27/post1.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_site/ja/2020/01/27/post1.html",
-		"oF": 0
-		},
-	"/_site/ja/2020/01/27/post2.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_site/ja/2020/01/27/post2.html",
+		"oAP": "/_site/ja/2020/03/26/post1.html",
 		"oF": 0
 		},
 	"/_site/js/common_header.js": {
@@ -1511,6 +1301,14 @@
 		"oAP": "/_site/js/common_header.js.map",
 		"oF": 0
 		},
+	"/_site/news.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_site/news.html",
+		"oF": 0
+		},
 	"/_site/robots.txt": {
 		"cB": 0,
 		"ft": 8192,
@@ -1518,6 +1316,14 @@
 		"oA": 1,
 		"oAP": "/_site/robots.txt",
 		"oF": 1
+		},
+	"/_site/services.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_site/services.html",
+		"oF": 0
 		},
 	"/_site/sitemap.xml": {
 		"cB": 0,
@@ -1535,6 +1341,22 @@
 		"oAP": "/_site/staff.html",
 		"oF": 1
 		},
+	"/_site/statistics.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_site/statistics.html",
+		"oF": 0
+		},
+	"/_site/submission.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_site/submission.html",
+		"oF": 0
+		},
 	"/_site/test.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1543,24 +1365,33 @@
 		"oAP": "/_site/test.html",
 		"oF": 1
 		},
-	"/about.md": {
+	"/aboutus.haml": {
 		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
+		"cDA": 0,
+		"eHT": 0,
+		"ft": 256,
 		"hM": 0,
+		"nEA": 0,
 		"oA": 1,
-		"oAP": "/about.html",
+		"oAP": "/aboutus.html",
 		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
+		"oFM": 2,
+		"uDQ": 0,
+		"uUN": 0
+		},
+	"/activities.haml": {
+		"cB": 0,
+		"cDA": 0,
+		"eHT": 0,
+		"ft": 256,
+		"hM": 0,
+		"nEA": 0,
+		"oA": 1,
+		"oAP": "/activities.html",
+		"oF": 0,
+		"oFM": 2,
+		"uDQ": 0,
+		"uUN": 0
 		},
 	"/assets/css/main.css": {
 		"aP": 1,
@@ -1895,6 +1726,20 @@
 		"oAP": "/blog.html",
 		"oF": 0
 		},
+	"/download.haml": {
+		"cB": 0,
+		"cDA": 0,
+		"eHT": 0,
+		"ft": 256,
+		"hM": 0,
+		"nEA": 0,
+		"oA": 1,
+		"oAP": "/download.html",
+		"oF": 0,
+		"oFM": 2,
+		"uDQ": 0,
+		"uUN": 0
+		},
 	"/Gemfile": {
 		"cB": 0,
 		"ft": 8192,
@@ -1909,14 +1754,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/Gemfile.lock",
-		"oF": 0
-		},
-	"/help.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/help.html",
 		"oF": 0
 		},
 	"/index.haml": {
@@ -1952,6 +1789,34 @@
 		"oAP": "/js/common_header.js.map",
 		"oF": 0
 		},
+	"/news.haml": {
+		"cB": 0,
+		"cDA": 0,
+		"eHT": 0,
+		"ft": 256,
+		"hM": 0,
+		"nEA": 0,
+		"oA": 1,
+		"oAP": "/news.html",
+		"oF": 0,
+		"oFM": 2,
+		"uDQ": 0,
+		"uUN": 0
+		},
+	"/services.haml": {
+		"cB": 0,
+		"cDA": 0,
+		"eHT": 0,
+		"ft": 256,
+		"hM": 0,
+		"nEA": 0,
+		"oA": 1,
+		"oAP": "/services.html",
+		"oF": 0,
+		"oFM": 2,
+		"uDQ": 0,
+		"uUN": 0
+		},
 	"/staff.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1959,6 +1824,34 @@
 		"oA": 0,
 		"oAP": "/staff.html",
 		"oF": 0
+		},
+	"/statistics.haml": {
+		"cB": 0,
+		"cDA": 0,
+		"eHT": 0,
+		"ft": 256,
+		"hM": 0,
+		"nEA": 0,
+		"oA": 1,
+		"oAP": "/statistics.html",
+		"oF": 0,
+		"oFM": 2,
+		"uDQ": 0,
+		"uUN": 0
+		},
+	"/submission.haml": {
+		"cB": 0,
+		"cDA": 0,
+		"eHT": 0,
+		"ft": 256,
+		"hM": 0,
+		"nEA": 0,
+		"oA": 1,
+		"oAP": "/submission.html",
+		"oF": 0,
+		"oFM": 2,
+		"uDQ": 0,
+		"uUN": 0
 		},
 	"/test.haml": {
 		"cB": 0,
