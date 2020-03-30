@@ -1,0 +1,99 @@
+---
+# front matter tells Jekyll to process Liquid
+layout: top
+title: Home
+---
+<div id='TopBody'>
+  <main class='inner'>
+    <ul id='TopServiceGroups'>
+      <li class='group'>
+        <a href="services.html">
+          <h2 class='title'>
+            <img src='assets/images/icon-search_analysis.png'/>
+            検索・解析
+          </h2>
+          <p class='description'>DDBJの提供する配列データの検索、および解析情報の提供します。</p>
+        </a>
+      </li>
+      <li class='group'>
+        <a href="submission.html">
+          <h2 class='title'>
+            <img src='assets/images/icon-submissions.png'/>
+            登録
+          </h2>
+          <p class='description'>塩基配列や遺伝子発現、研究プロジェクト、試料などの各種情報を登録いただけます。</p>
+        </a>
+      </li>
+      <li class='group'>
+        <a href="download.html">
+          <h2 class='title'>
+            <img src='assets/images/icon-downloads.png'/>
+            ダウンロード
+          </h2>
+          <p class='description'>DDBJの提供する各種情報をダウンロードいただけます。</p>
+        </a>
+      </li>
+      <li class='group'>
+        <a href="https://sc.ddbj.nig.ac.jp/ja">
+          <h2 class='title'>
+            <img src='assets/images/icon-super_computer.png'/>
+            スパコン
+          </h2>
+          <p class='description'>遺伝研スーパーコンピューターシステムをご利用いただけます。</p>
+        </a>
+      </li>
+      <li class='group'>
+        <a href="statistics.html">
+          <h2 class='title'>
+            <img src='assets/images/icon-statistics.png'/>
+            統計
+          </h2>
+          <p class='description'>DDBJの保有する各種データの統計情報です。</p>
+        </a>
+      </li>
+      <li class='group'>
+        <a href="activities.html">
+          <h2 class='title'>
+            <img src='assets/images/icon-activities.png'/>
+            活動・講習会
+          </h2>
+          <p class='description'>DDBJスタッフによる論文・著書・コラムや、DDBJの主催するシンポジウムなどをご紹介します。</p>
+        </a>
+      </li>
+      <li class='group'>
+        <a href="aboutus.html">
+          <h2 class='title'>
+            <img src='assets/images/icon-about.png'/>
+            センターについて
+          </h2>
+          <p class='description'>生命情報・DDBJセンターについてご紹介します。</p>
+        </a>
+      </li>
+    </ul>
+    <aside id='TopNews'>
+      <div class='container'>
+        <h2 class='title'>NEWS</h2>
+        <ul class='list'>
+        {% for post in site.categories.ja limit:5 %}
+          <li class="item">
+            {% if  post.priority%}
+            <article class="news priority">
+            {% else %}
+            <article class="news">
+            {% endif %}
+              <a href="{{ site.baseurl }}{{post.url}}">
+                <div class="metadata">
+                  <time>{{post.date | date: '%Y年%m月%d日'}}</time>
+                  <div class="tags">{% include post_meta.html %}</div>
+                </div>
+                <h3 class="title">{{post.title}}</h3>
+              </a>
+            </article>
+          </li>
+        {% endfor %}
+        </ul>
+        <a class='more' href='/www/news.html'>more</a>
+      </div>
+    </aside>
+  </main>
+</div>
