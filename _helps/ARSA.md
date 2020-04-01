@@ -1,0 +1,314 @@
+# ARSA ヘルプ
+
+## 検索対象データベース
+
+ARSA では、以下が検索可能です
+
+データベース名           | 備考    
+----------------- | ------
+DDBJ 最新リリースデータ    |       
+DDBJ 新着データ        |       
+JPO 経由のアミノ酸特許データ  |       
+KIPO 経由のアミノ酸特許データ | 更新は不定期
+
+* [WGS](/ddbj/wgs.html)(WGS Scaffold CON含), TSAの一部, [MGA](/ddbj/mga.html)　など、[アクセッション番号](/ddbj/flat-file.html#Accession)が通常データとは異なるものは ARSA では検索できません。
+
+* [DRA](/dra/index.html)データ（次世代シークエンサからの出力データ）はARSA では検索できません。[DRA Search](http://ddbj.nig.ac.jp/DRASearch) をご利用ください。
+
+## Quick Search
+
+Quick Search 画面の使用例です。入力テキスト欄で論理演算子(AND, OR, NOT) を使用する場合には大文字で入力します。
+
+AND 検索（検索キーワードをすべて記載するものを検索）
+:	検索キーワードを列挙します。
+:	[入力テキスト欄にlung cancerと入力して、「AND」を選択して、「Search」ボタンをクリックした場合の検索結果例](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=lung+cancer&operator=AND)
+:	例: DEFINITIONに「～ Human lung cancer associated ～」と記載されたもの  
+:	例: REFERENCE TITLEに「～ National Cancer Institute ～」と記載されていて、かつFEATURESに「～ Lung Focal Fibrosis ～」と記載されたもの。
+
+部分一致検索（単語の一部分に検索キーワードを含んでいる単語を記載するものを検索）
+:	ワイルドカード * を含む検索キーワードを指定します
+:	[入力テキスト欄に Hom* と入力して、「Search」ボタンをクリックした場合の検索結果例](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=Hom*&operator=AND)
+:	例: SOURCE ORGANISM に「～ Hominidae; ～」と記載されたもの
+
+フレーズ検索（検索キーワードを語順の通りに記載するものを検索）
+:	検索キーワードを " で囲むと特殊な意味を持つ文字も、ただの検索キーワードとして検索します
+:	[入力テキスト欄に "lung cancer" と入力して、「Search」ボタンをクリックした場合の検索結果例](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=%22lung+cancer%22&operator=AND)
+:	例: DEFINITION に「～ Human lung cancer associated ～」と記載されたもの
+
+OR 検索（検索キーワードのいずれかを記載するものを検索）
+:	検索キーワードを OR で連結します。または、選択肢「OR」を指定します。
+:	以下の２通りの検索方法は同じ結果を示します
+:	[入力テキスト欄に "stomach cancer" OR "gastric cancer" と入力して、「AND」のままにして、「Search」ボタンをクリックした場合の検索結果例](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=%22stomach+cancer%22+OR+%22gastric+cancer%22&operator=AND)
+:	[入力テキスト欄に "stomach cancer" "gastric cancer" と入力して、「OR」を選択して、「Search」ボタンをクリックした場合の検索結果例](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=%22stomach+cancer%22+%22gastric+cancer%22&operator=OR)
+:	例: DEFINITION に「～ Homo sapiens stomach cancer ～」と記載されたもの  
+:	例: REFERENCE TITLE に「～ human gastric cancer ～」と記載されたもの
+
+NOT 検索（検索キーワードを記載しないものを検索)
+:	除外したい検索キーワードの前に NOT を付けます。
+:	[入力テキスト欄に cancer NOT "Homo sapiens" と入力して、「Search」ボタンをクリックした場合の検索結果例](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=cancer+NOT+%22Homo+sapiens%22&operator=AND)
+:	例: COMMENT に「～ Mouse Cancer Genetics ～」と記載されたもの。
+
+検索フィールドを指定した検索（指定位置に検索キーワードを記載するものを検索)
+:	検索キーワードの中に検索フィールド名を含める方法と、 Advanced Search 画面を利用する方法の二通りがあります。  
+:	検索フィールドについての詳細は、後述します。  
+:	Advanced Search 画面については、後述します。  
+:	検索キーワードの前に検索フィールド名および : を付けます。
+
+[入力テキスト欄に Keyword:HTG と入力して、「Search」ボタンをクリックした場合の検索結果例](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=Keyword%3AHTG&operator=AND)
+:	例: KEYWORDS に「HTG」と記載されたもの。
+:	[入力テキスト欄に ReferencePubmedID:1111111 と入力して、「Search」ボタンをクリックした場合の検索結果例](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=ReferencePubmedID%3A1111111&operator=AND)
+:	例: REFERENCE PUBMED に「1111111」と記載されたもの
+:	[入力テキスト欄に FeatureQualifier:"CDS /gene=DRB6" と入力して、「Search」ボタンをクリックした場合の検索結果例](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=FeatureQualifier%3A%22CDS+%2Fgene%3DDRB6%22&operator=AND)
+:	例: FEATURES の CDS に「/gene="DRB6"」と記載されたもの。
+
+正規表現による検索
+:	いくつかの検索フィールドでは、正規表現形式の検索キーワードで検索できます。  
+:	検索キーワードを / で囲みます。
+:	[入力テキスト欄に PrimaryAccessionNumber:/AA[1-9]00000/ と入力して、「Search」ボタンをクリックした場合の検索結果例](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=PrimaryAccessionNumber%3A%2FAA%5B1-9%5D00000%2F&operator=AND)
+:	例: ACCESSION の先頭に「AA100000」や「AA900000」と記載されたもの  
+:	ACCESSION の先頭に「AA000000」と記載されたものは、検索条件に合致しません
+
+範囲指定による検索
+:	検索キーワードを [ と ] で囲んで、範囲を TO で連結します
+:	[入力テキスト欄に SequenceLength:[* TO 500] と入力して、「Search」ボタンをクリックした場合の検索結果例](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=SequenceLength%3A%5B*+TO+500%5D&operator=AND)
+:	例: LOCUS の配列長が「500」以下のもの。
+
+## Advanced Search
+
+Advanced Search 画面の使用例です。
+
+基本的な検索例 検索したいフィールドの入力欄に検索キーワードを入力
+:	[「Definition」欄に human と入力して、「Search」ボタンをクリックした場合の 検索結果例](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=human&kw=&og=&ln=&ra=&rt=&rj=&rp=&cm=&fq%5B0%5D.featureKey=&fq%5B0%5D.qualifierName=&fq%5B0%5D.qualifierValue=&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=AND)
+:	例: DEFINITION に「～ Human parvovirus ～」と記載されたもの
+
+単一の検索フィールドに対する OR 検索 検索したいフィールドの入力欄に検索キーワードを列挙
+:	[「Definition」欄に stomach gastric と入力して、「Search」ボタンをクリックした場合の 検索結果例](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=stomach+gastric&kw=&og=&ln=&ra=&rt=&rj=&rp=&cm=&fq%5B0%5D.featureKey=&fq%5B0%5D.qualifierName=&fq%5B0%5D.qualifierValue=&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=AND)
+:	例: DEFINITION に「～ human gastric lipase ～」と記載されたもの
+:	例:	DEFINITION に「～ related to stomach cancer ～」と記載されたもの
+
+単一の検索フィールドに対する AND 検索 検索したいフィールドの入力欄に検索キーワードを AND で連結
+:	[「Definition」欄に stomach AND gastric と入力して、「Search」ボタンをクリックした場合の 検索結果例](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=stomach+AND+gastric&kw=&og=&ln=&ra=&rt=&rj=&rp=&cm=&fq%5B0%5D.featureKey=&fq%5B0%5D.qualifierName=&fq%5B0%5D.qualifierValue=&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=AND)
+:	例: DEFINITION に「～ male stomach cDNA ～ polypeptide, gastric specific ～」と記載されたもの
+
+複数の検索フィールドに対する OR 検索 選択肢 OR を選んで検索
+:	[「Definition」欄に human と入力して、「Reference Title」欄に human と入力して、「Combine Searches with」で OR を選択して、「Search」ボタンをクリックした場合の 検索結果例](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=human&kw=&og=&ln=&ra=&rt=human&rj=&rp=&cm=&fq%5B0%5D.featureKey=&fq%5B0%5D.qualifierName=&fq%5B0%5D.qualifierValue=&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=OR)
+:	例: DEFINITION に「～ Human metapneumovirus ～」と記載されたもの
+:	例: REFERENCE TITLE に「～ human cDNA project ～」と記載されたもの
+
+複数の検索フィールドに対する AND 検索 選択肢 AND を選んで検索
+:	[「Definition」欄に human と入力して、「Reference Title」欄に human と入力して、「Combine Searches with」で AND を選択して、「Search」ボタンをクリックした場合の 検索結果例](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=human&kw=&og=&ln=&ra=&rt=human&rj=&rp=&cm=&fq%5B0%5D.featureKey=&fq%5B0%5D.qualifierName=&fq%5B0%5D.qualifierValue=&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=AND)
+:	例: DEFINITION に「～ Human glucocerebrosidase ～」と記載されていて、かつ REFERENCE TITLE に「～ expression of human ～」と記載されたもの。
+
+Feature/Qualifier の部分一致検索 Feature Key 、 Qualifier Name 、 Qualifier Value を指定して検索
+:	[「Features」の「Feature Key」欄に CDS と入力、「Qualifier Name」欄に translation と入力、「Qualifier Value」欄に AAA*CC と入力して、「Search」ボタンをクリックした場合の 検索結果例](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=&kw=&og=&ln=&ra=&rt=&rj=&rp=&cm=&fq%5B0%5D.featureKey=CDS&fq%5B0%5D.qualifierName=translation&fq%5B0%5D.qualifierValue=AAA*CC&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=AND)
+:	例: FEATURES の CDS に「/translation="～AAA～CC～"」と記載されたもの
+:	[Features」の「Feature Key」欄に CDS と入力、「Qualifier Name」欄に gene と入力、「Qualifier Value」欄に p53 と入力して、「Search」ボタンをクリックした場合の 検索結果例](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=&kw=&og=&ln=&ra=&rt=&rj=&rp=&cm=&fq%5B0%5D.featureKey=CDS&fq%5B0%5D.qualifierName=gene&fq%5B0%5D.qualifierValue=p53&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=AND)
+:	例: FEATURES の CDS に「/gene="p53"」と記載されたもの
+:	例: FEATURES の CDS に「/gene="p53R2"」と記載されたもの
+
+<!-- .手でやるしかない説 -->
+
+## 検索フィールドの詳細
+
+参考: [「Available Fields」](http://ddbj.nig.ac.jp/arsa/quick_search?lang=ja)
+
+|  検索フィールド名  |  略称  |  説明  |  例  |
+| ---- | ---- | ---- | ---- |
+|  PrimaryAccessionNumber  |  pa  |  [ACCESSION の先頭に記載された「Accession 番号」](/ddbj/flat-file.html#Accession)  |  AB999999  |
+|  AccessionNumber  |  an  |  [ACCESSION に記載された「Accession 番号」](/ddbj/flat-file.html#Accession)  |  AB999999, AB888888, AB777777  |
+|  Division  |  dv  |  [LOCUS に記載された「Division」](/ddbj/flat-file.html#Division)  |  HUM  |
+|  SequenceLength  |  sl  |  [LOCUS に記載された「配列長」](/ddbj/flat-file.html#SequenceLength)  |  450  |
+|  MolecularType  |  mt  |  [LOCUS に記載された「塩基配列の分子タイプ」](/ddbj/flat-file.html#MoleculeType) <br> [PRT はJPO, KIPO 経由のアミノ酸特許配列データ](/column/patent.html#4)  |  mRNA  |
+|  MolecularForm  |  mf  |   [LOCUS に記載された「塩基配列の分子形態」](/ddbj/flat-file.html#MoleculeForm)  |  linear  |
+|  Date  |  dt  |  [LOCUS に記載された「データの最終公開日」](/ddbj/flat-file.html#ModificationDate) |  01-JUN-2009  |
+|  Definition  |  df  |  [DEFINITION に記載されたテキスト](/ddbj/flat-file.html#Definition)  |  Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate<br>dehydrogenase, partial cds.  |
+|  Comment  |  cm  |  [COMMENT に記載されたテキスト](/ddbj/flat-file.html#Comment)  |  Human cDNA sequencing project.  |
+|  Keyword  |  kw  |  [KEYWORDS に記載されたテキスト](/ddbj/flat-file.html#Keywords)  |  HTC, HTC_FLI, oligo capping  |
+|  Organism  |  og  | 	[ORGANISM に記載された「由来生物名」](/ddbj/flat-file.html#Organism)  |  Homo sapiens  |
+|  Lineage  |  ln  |    [ORGANISM に記載された「生物学的分類」](/ddbj/flat-file.html#Organism)  |  Eukaryota, Metazoa, ..., Hominidae, Homo  |
+|  ReferenceAuthor  |  ra  |   [REFERENCE の AUTHORS に記載されたテキスト](/ddbj/flat-file.html#Reference1)  |  Mishima,H. , Shizuoka,T. , Fuji,I.  |
+|  ReferenceTitle  |  rt  |   [REFERENCE の TITLE に記載されたテキスト](/ddbj/flat-file.html#Reference1)  |  Direct Submission , Glyceraldehyde-3-phosphate dehydrogenase expressed in human liver  |
+|  ReferenceJournal  |  rj  |    [REFERENCE の JOURNAL に記載されたテキスト](/ddbj/flat-file.html#Reference1)  |  Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.<br>Contact:Hanako Mishima<br>National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,<br>Mishima, Shizuoka 411-8540, Japan , Unpublished (2009)  |
+|  ReferencePubmedID  |  rp  |  REFERENCE の PUBMED に記載されたテキスト   |  1111111  |
+|  Feature  |  fe  |  [FEATURES に記載された「Feature 単位のテキスト」](/ddbj/flat-file.html#Features)  |  source 1..450<br>/chromosome="12"<br>/clone="GT200015" <br>/clone_lib="lambda gt11 human liver cDNA (GeneTech.<br>No.20)" <br>/db_xref="taxon:9606" <br>/map="12p13" <br>/mol_type="mRNA" <br>/organism="Homo sapiens" <br>/tissue_type="liver"<br>CDS 86..&gt;450<br>/codon_start=1<br>/gene="GAPD" <br>/product="glyceraldehyde-3-phosphate dehydrogenase" <br>/protein_id="BAA12345.1" <br>/transl_table=1<br>/translation="MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT<br>YMFKYDTVHGQWKHHEVKVKDSKTLLFGEKEVTVFGCRNPKEIPWGETSAEFVVEYTG<br>VFTDKDKAVAQLKGGAKKV"  |
+|  FeatureQualifier  |  fq  |  [FEATURES に記載された「Qualifier 単位のテキスト」](/ddbj/flat-file.html#Features)  |  source 1..450<br>source /chromosome=12<br>CDS /translation=MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT<br>YMFKYDTVHGQWKHHEVKVKDSKTLLFGEKEVTVFGCRNPKEIPWGETSAEFVVEYTG<br>VFTDKDKAVAQLKGGAKKV  |
+|  AllText  |  at  |  フラットファイルに記載された全テキスト  |  LOCUS ～ //  | 
+
+※正規表現検索可（AllTextを除く）
+
+``` LOCUS       AB000000              450 bp    mRNA    linear   HUM 01-JUN-2009
+DEFINITION  Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate
+  dehydrogenase, partial cds.
+ACCESSION   AB999999 AB888888 AB777777
+VERSION     AB000000.1
+KEYWORDS    HTC; HTC_FLI; oligo capping.
+SOURCE      Homo sapiens (human)
+ORGANISM  Homo sapiens
+  Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+  Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+  Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 450)
+AUTHORS   Mishima,H. and Shizuoka,T.
+TITLE     Direct Submission
+JOURNAL   Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.
+  Contact:Hanako Mishima
+  National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
+  Mishima, Shizuoka 411-8540, Japan
+PUBMED   1111111
+REFERENCE   2
+AUTHORS   Mishima,H., Shizuoka,T. and Fuji,I.
+TITLE     Glyceraldehyde-3-phosphate dehydrogenase expressed in human liver
+JOURNAL   Unpublished (2009)
+COMMENT     Human cDNA sequencing project.
+FEATURES             Location/Qualifiers
+source          1..450
+            /chromosome="12" 
+            /clone="GT200015" 
+            /clone_lib="lambda gt11 human liver cDNA (GeneTech.
+            No.20)" 
+            /db_xref="taxon:9606" 
+            /map="12p13" 
+            /mol_type="mRNA" 
+            /organism="Homo sapiens" 
+            /tissue_type="liver" 
+CDS             86..&gt;450
+            /codon_start=1
+            /gene="GAPD" 
+            /product="glyceraldehyde-3-phosphate dehydrogenase" 
+            /protein_id="BAA12345.1" 
+            /transl_table=1
+            /translation="MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT
+            YMFKYDTVHGQWKHHEVKVKDSKTLLFGEKEVTVFGCRNPKEIPWGETSAEFVVEYTG
+            VFTDKDKAVAQLKGGAKKV" 
+BASE COUNT          102 a          119 c          131 g           98 t
+ORIGIN
+1 cccacgcgtc cggtcgcatc gcacttgtag ctctcgaccc ccgcatctca tccctcctct
+61 cgcttagttc agatcgaaat cgcaaatggc gaagattaag atcgggatca atgggttcgg
+121 gaggatcggg aggctcgtgg ccagggtggc cctgcagagc gacgacgtcg agctcgtcgc
+181 cgtcaacgac cccttcatca ccaccgacta catgacatac atgttcaagt atgacactgt
+241 gcacggccag tggaagcatc atgaggttaa ggtgaaggac tccaagaccc ttctcttcgg
+301 tgagaaggag gtcaccgtgt tcggctgcag gaaccctaag gagatcccat ggggtgagac
+361 tagcgctgag tttgttgtgg agtacactgg tgttttcact gacaaggaca aggccgttgc
+421 tcaacttaag ggtggtgcta agaaggtctg
+//
+```
+
+## 検索キーワードの書式
+
+検索フィールドの指定
+:	(検索フィールド名 または 略称) + ':' + (検索キーワード)
+
+論理演算子 (AND, OR, NOT 検索)
+:	(検索キーワード) + ' AND ' + (検索キーワード)  
+:	(検索キーワード) + ' && ' + (検索キーワード)  
+:	(検索キーワード) + ' +' + (検索キーワード)
+:	(検索キーワード) + ' OR ' + (検索キーワード)  
+:	(検索キーワード) + ' || ' + (検索キーワード)
+:	(検索キーワード) + ' NOT ' + (検索キーワード)  
+:	(検索キーワード) + ' -' + (検索キーワード)
+
+グループ化
+:	'(' + (検索キーワード) + (論理演算子) + (検索キーワード) + ')'
+
+範囲検索
+:	(検索フィールド名 または 略称) + ':[' + (開始値 または '*') + ' TO ' + (終了値 または '*') + ']'  
+:	開始値、終了値を含む検索
+:	(検索フィールド名 または 略称) + ':{' + (開始値 または '*') + ' TO ' + (終了値 または '*') + '}'  
+:	開始値、終了値を含まない検索
+
+ワイルドカード検索
+:	(検索キーワード) + '*'
+:	'*' + (検索キーワード)
+:	(検索キーワード) + '*' + (検索キーワード)  
+:	'*' は、 0 文字以上の任意テキストにマッチ
+:	(検索キーワード) + '?' + (検索キーワード)  
+:	'?' は、任意の 1 文字にマッチ
+
+フレーズ検索
+:	検索キーワードを、順序通りに検索する場合。または、特殊な意味を持つ文字を検索する場合  
+:	"' + (検索キーワード) + '"'
+
+正規表現検索
+:	'/' + (検索キーワード) + '/'
+
+正規表現の例
+:	. (任意の 1 文字)  
+:	例: /Homini.ae/ は、 'Hominidae', 'Homininae' 等に合致します。
+:	\* (直前の文字が 0 個以上)  
+:	例: /AB0*/ は、 'AB', 'AB0', 'AB00', 'AB000', ... 等に合致します。
+:	.* (任意の文字列。長さ 0 の空文字列も含む。)  
+:	例: /AB.*/ は、 'AB', 'AB0', 'AB789', 'ABXYZ' 等に合致します。
+:	? (直前の文字が 1 個または 0 個)  
+:	例: /AB?00000/ は、 'AB000000' および 'A000000' に合致します。
+:	+ (直前の文字が 1 個以上)  
+:	例: /AB0+/ は、 'AB0', 'AB00', 'AB000', ... 等に合致しますが、 'AB' には合致しません。
+:	[abc] (文字 'a' , 'b' または 'c')  
+:	例: /Homini[dn]ae/ は、 'Hominidae' および 'Homininae' に合致します。
+:	[^abc] (文字 'a' , 'b' , 'c' 以外)  
+:	例: /Homini[^d]ae/ は、 'Homininae' には合致しますが、 'Hominidae' には合致しません。
+:	[a-z0-9] (文字 'a' ～ 'z' または '0' ～ '9')  
+:	例: /AA[0-9]00000/ は、 'AA100000' などに合致します。
+:	{ n } class="tool_code">AB0{2}/ は、 'AB00' に合致しますが、 'AB0' や 'AB000'<には合致しません。
+:	{ n ,} (直前の文字が n 個以上)  
+:	例: /AB0{2,}/ は、 'AB00' , 'AB000' , ... 等に合致しますが、 'AB0' には合致しません。
+:	{ n , m } (直前の文字が n 個以上、 m 個以下)  
+:	例: /AB0{2,4}/ は、 'AB00' , 'AB0000' 等に合致しますが、 'AB0' や 'AB00000' には合致しません。
+
+あいまい検索 (Fuzzy Search)
+:	検索キーワードに類似した綴りの単語を検索  
+:	':' + (検索キーワード) + '~' + (検索語の距離。 0.0 以上 1.0 未満の数値。 1 に近いほど検索キーワードに近い)
+
+近接検索 (Proximity Search)
+:	フレーズに含まれる単語同士が近くに記載されているものを検索します。
+:	':' + (フレーズ) + '~' + (検索語の距離。単語数。)
+
+重み付け検索
+:	(検索キーワード) + '^' + (相対的な重み。正の数値。デフォルトでは 1.0 )
+
+特殊な意味を持つ文字
+:	これらの文字は、特殊な意味を持つ  
+:	+ - && || ! ( ) { } [ ] ^ " ~ * ? : /
+:	これらの文字を検索する場合には、フレーズ検索を行なうか、または '' を前置して特殊意味を打ち消してください。
+
+## 検索結果の取得
+
+検索結果のファイル形式
+
+FlatFile | DDBJ FlatFile 形式
+-------- | ----------------
+FASTA    | FASTA形式         
+XML      | INSD-XML 形式     
+
+画面で閲覧
+:	検索結果画面のアクセッション番号をクリックすると、該当エントリの Flatfile が閲覧できます。
+:	検索結果画面のチェックボックスを選択して、ファイル形式を指定して「View selected」ボタンをクリックすることで、選択されているエントリを指定した形式で閲覧できます。（上限値　10,000 件）
+:	検索結果件数が上限値を超える場合には、検索条件を調整して、絞り込んでください。
+
+ダウンロード
+:	ファイル形式を指定して「Download All」ボタンをクリックすることで、検索条件に合致した全てのエントリを指定した形式でダウンロードすることができます。（ダウンロード可能な最大数 3,000 件）
+:	ファイル形式を指定して検索結果画面のチェックボックスを選択し「Download selected」ボタンをクリックすることで、選択されているエントリを指定した形式でダウンロードすることができます。
+
+[注意]
+* エラー無くダウンロードするには、最大でも3,000件以下に検索結果を絞ってください。ただしサーバー負荷状況に依存するため最大数は少なくなる場合があります。例えば Date を追加指定することで絞り込みすることができます。
+
+Advanced Search     Date  20180101 to 20180630
+Quick Search        Date:[20180101 TO 20180630]
+
+* XMLダウンロードを行った場合で検索結果件数が多い場合、一つのファイル内に複数のXML宣言行が含まれます。利用時に適宜ファイル分割やXML開始行の判断を行ってください。
+
+検索結果のフィルター
+:	検索結果画面の「Facet」をクリックして、検索結果をフィルターすることができます。
+
+フィルターの種類
+* Division
+* 生物種
+
+## その他の検索条件など
+
+Advanced Search 画面の「Search Settings」をクリックすると、他にも幾つかの検索条件を指定できます。
+
+ソート条件
+:	ソート対象として、検索スコア、または検索フィールドを指定
+
+検索結果の表示フィールド
+:	検索結果ページに表示する検索フィールドを指定
