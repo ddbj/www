@@ -1,3 +1,7 @@
+---
+layout: help
+title: ClustalW
+---
 ## Version
 
 "2.1" （ClustalW の最新版），または"1.83"（Dr. Kirill Kryukov　改訂のDDBJ オリジナル） の何れかを選択してください。　デフォルトは　"2.1" です。  

@@ -1,3 +1,7 @@
+---
+layout: help
+title: TXSearch
+---
 ## 検索（ウェブ検索フォームから）
 
 #### トップページ（Tree画面）：http://ddbj.nig.ac.jp/tx_search/![トップページ](/images/help/txhelp01.gif)  

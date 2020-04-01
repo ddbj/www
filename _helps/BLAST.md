@@ -1,3 +1,7 @@
+---
+layout: help
+title: BLAST
+---
 # BLAST ヘルプ
 
 DDBJ では，Web版 BLAST の他に，以下の方法でも BLAST サービスを提供しています。
