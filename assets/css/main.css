@@ -319,9 +319,11 @@ input, textarea, select, button {
   .internal-link > ul > li {
     font-size: 14px;
     list-style: none; }
-    .internal-link > ul > li:nth-of-type(n+2) {
+    .internal-link > ul > li > ul {
       margin-left: 10px; }
-    .internal-link > ul > li > a {
+      .internal-link > ul > li > ul > li {
+        list-style: none; }
+    .internal-link > ul > li a {
       color: B2ACA6;
       text-decoration: none;
       display: block;
@@ -832,6 +834,9 @@ table {
 .internal-link {
   padding: 24px 16px 0 40px;
   width: 20%; }
+  .internal-link > ul {
+    position: sticky;
+    top: 24px; }
 
 .NavigationAndMainView {
   display: flex;

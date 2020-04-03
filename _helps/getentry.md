@@ -13,7 +13,7 @@ title: getentry
 [http://getentry.ddbj.nig.ac.jp/top-j.html](http://getentry.ddbj.nig.ac.jp/top-j.html)からご利用下さい。
 
 
-<span class="table-caption">デフォルト指定</span>
+### デフォルト指定
 
 |  |  |  
 | ---- | ---- |
@@ -23,7 +23,7 @@ title: getentry
 |  取得方法  |  html  |
 |  上限  |  10  |
 
-<span class="table-caption">ID</span>
+### ID
 
 Accession 番号 を入力します。入力には、複数 Accession 番号の指定、範囲指定、バージョン番号の指定が可能です。
 
@@ -33,7 +33,7 @@ Accession 番号 を入力します。入力には、複数 Accession 番号の�
 |  複数 Accession 番号  |  ・ ","区切りで複数の Accession 番号を指定できます。<br>・ ","区切りで複数指定された場合，指定の順で出力されます。 <br> ・ 二つの Accession 番号"-"で連結することにより範囲検索ができます。<br> ・ バージョン番号の指定もできます。 |  AB669632.1,AB669632.2,AB669633.1,AB669633.2 <br> AK377101 - AK377200,AK377210,AK377211  |
 |  範囲指定  |  ・ 範囲指定の両端の Accession 番号は前方のみの不完全でも構いません。<br>・ 範囲指定も "," 区切りで複数指定できます。 <br> ・ バージョン番号を指定しても無視されます。 |  FY782000-FY7830 <br> AK377101 - AK377200,AK377211- AK388100  |
 
-<span class="table-caption">データベースと出力形式</span>
+### データベースと出力形式
 
 検索対象となるデータベースをひとつ指定します。 検索結果の出力形式は，エントリに対して，各データベースで定められている形式か FASTA 形式 のいずれかを以下の選択肢からひとつ指定します。
 
@@ -98,7 +98,7 @@ FASTA               | アミノ酸配列FASTA                  |  アミノ酸�
 
 選択データベースにより、出力形式は異なります。
 
-<span class="table-caption">取得方法</span>
+### 取得方法
 
 |  |  |
 | ---- | ---- |
@@ -123,7 +123,7 @@ gz圧縮ファイルのファイル名はformatの指定値によって以下の
 
 
 
-<span class="table-caption">上限（最大表示件数）</span>
+### 上限（最大表示件数）
 
 |  |  |
 | ---- | ---- |
@@ -137,7 +137,7 @@ gz圧縮ファイルのファイル名はformatの指定値によって以下の
 
 getentry は webAPI として実装しており，入力フォームからだけでなく，プログラムなどから直接呼び出すことも可能です。
 
-<span class="table-caption">プログラム</span>
+### プログラム
 
 getentry の web API は以下の２つのプログラムからなります。
 
@@ -147,7 +147,7 @@ getentry  |  アクセッション番号（データベース中のエントリ�
 gethistory | アクセッション番号（データベース中のエントリの ID)を与えると，データの変更履歴を返します。<br> 特許庁由来アミノ酸配列の更新履歴は今のところとっておりません。
 
 
-<span class="table-caption">パラメータの指定方法</span>
+### パラメータの指定方法
 
 
 以下の２種類があります
@@ -166,7 +166,7 @@ http://getentry.ddbj.nig.ac.jp/getentry?database=ddbj&accession_number=AB601234
 http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001
 
 
-<span class="table-caption">getentry で指定可能なパラメータ</span>
+### getentry で指定可能なパラメータ
 
 accession 番号<span class="red">（必須）</span><span class="normal">：　検索対象の Accession 番号を指定します。</span>
 
@@ -611,7 +611,7 @@ false | primary データを表示しない
 http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AF530906&format=flatfile&trace=true  
 http://getentry.ddbj.nig.ac.jp/getentry/na/AF530906/?format=flatfile&trace=true
 
-<span class="table-caption">gethistory で指定可能なパラメータ</span>
+### gethistory で指定可能なパラメータ
 
 accession 番号（必須）：検索対象のAccession番号を指定します。指定方法は getentry と同じです。
 
