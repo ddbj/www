@@ -1,7 +1,7 @@
 <nav class="category-tab">
   <ul>
     <li {% if page.title == "search_analysis" || page.title == "help" %} class="-search_analysis -current" {% else %} class="-search_analysis" {% endif %}><a href="{{ site.url }}{{ site.baseurl }}/search_analysis/">検索・解析</a></li>
-    <li {% if page.title == "submissions" %} class="-submissions -current" {% else %} class="-submissions" {% endif %}><a href="{{ site.url }}{{ site.baseurl }}/submission/">登録</a></li>
+    <li {% if page.title == "submission" %} class="-submission -current" {% else %} class="-submission" {% endif %}><a href="{{ site.url }}{{ site.baseurl }}/submission/">登録</a></li>
     <li {% if page.title == "downloads" %} class="-downloads -current" {% else %} class="-downloads" {% endif %}><a href="{{ site.url }}{{ site.baseurl }}/download/">ダウンロード</a></li>
     <li {% if page.title == "supercomputer" %} class="-supercomputer -current" {% else %} class="-supercomputer" {% endif %}><a href="https://sc.ddbj.nig.ac.jp/ja">スパコン</a></li>
     <li {% if page.title == "statistics" %} class="-statistics -current" {% else %} class="-statistics" {% endif %}><a href="{{ site.url }}{{ site.baseurl }}/statistics/">統計</a></li>
