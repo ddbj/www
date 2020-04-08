@@ -57,7 +57,17 @@ plugins:
 collections:
   authors:
     output: true
-  helps:
+  search_analysis:
+    output: true
+  submission:
+    output: true
+  download:
+    output: true
+  statistics:
+    output: true
+  activities:
+    output: true
+  aboutus:
     output: true
 
 defaults:

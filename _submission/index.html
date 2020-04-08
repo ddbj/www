@@ -1,0 +1,16 @@
+---
+layout: children
+title: submission
+title-ja: 登録
+---
+<ul>
+{% for service in site.submission%}
+  {% unless service.title == "submission" %}
+  <li>
+    <a href="{{ service.service_link }}">{{ service.title }}</a>
+    <a href="{{ service.title }}">help</a>
+    <br>
+  </li>
+  {% endunless %}
+{% endfor %}
+</ul>

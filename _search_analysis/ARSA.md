@@ -1,6 +1,7 @@
 ---
-layout: help
+layout: indexed_content
 title: ARSA
+service_link: http://getentry.ddbj.nig.ac.jp/top-j.html
 ---
 
 # ARSA ヘルプ

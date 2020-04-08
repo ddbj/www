@@ -1,6 +1,7 @@
 ---
-layout: help
+layout: indexed_content
 title: getentry
+service_link: http://getentry.ddbj.nig.ac.jp/top-j.html
 ---
 ## getentryの機能について
 - getentry は，アクセッション番号からの DDBJ フラットファイルの検索にご利用いただけます。

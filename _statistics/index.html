@@ -1,0 +1,16 @@
+---
+layout: children
+title: statistics
+title-ja: 統計
+---
+<ul>
+{% for service in site.statistics%}
+  {% unless service.title == "statistics" %}
+  <li>
+    <a href="{{ service.service_link }}">{{ service.title }}</a>
+    <a href="{{ service.title }}">help</a>
+    <br>
+  </li>
+  {% endunless %}
+{% endfor %}
+</ul>

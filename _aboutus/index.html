@@ -1,0 +1,16 @@
+---
+layout: children
+title: aboutus
+title-ja: センターについて
+---
+<ul>
+{% for service in site.aboutus%}
+  {% unless service.title == "aboutus" %}
+  <li>
+    <a href="{{ service.service_link }}">{{ service.title }}</a>
+    <a href="{{ service.title }}">help</a>
+    <br>
+  </li>
+  {% endunless %}
+{% endfor %}
+</ul>
