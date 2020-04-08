@@ -1,0 +1,16 @@
+---
+layout: children
+title: downloads
+title-ja: ダウンロード
+---
+<ul>
+{% for service in site.download%}
+  {% unless service.title == "downloads" %}
+  <li>
+    <a href="{{ service.service_link }}">{{ service.title }}</a>
+    <a href="{{ service.title }}">help</a>
+    <br>
+  </li>
+  {% endunless %}
+{% endfor %}
+</ul>

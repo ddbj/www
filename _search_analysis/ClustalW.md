@@ -1,6 +1,7 @@
 ---
-layout: help
+layout: indexed_content
 title: ClustalW
+service_link: http://clustalw.ddbj.nig.ac.jp/index.php?lang=ja
 ---
 ## Version
 

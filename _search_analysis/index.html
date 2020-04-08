@@ -1,0 +1,16 @@
+---
+layout: children
+title: search_analysis
+title-ja: 検索・解析
+---
+<ul>
+{% for service in site.search_analysis%}
+  {% unless service.title == "search_analysis" %}
+  <li>
+    <a href="{{ service.service_link }}">{{ service.title }}</a>
+    <a href="{{ service.title }}">help</a>
+    <br>
+  </li>
+  {% endunless %}
+{% endfor %}
+</ul>
