@@ -1,0 +1,945 @@
+---
+layout: indexed_content
+title: WABI ClustalW ヘルプ
+service_link: https://www.ddbj.nig.ac.jp/wabi_clustalw-help.html
+---
+
+<span id="job"></span>CLUSTALWのjobの投入
+
+以下のパラメーターを POST します。  
+format, result は必須です。  
+result に mail を指定した場合は address も必須となります。
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>パラメーター</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>format</td>
+<td>request ID を返す際の応答データの形式。<br />
+text, json, xml, bigfile, imagefile, requestfile が受け付けられますが、job投入時に意味があるのは text, json, xml の3つです。</td>
+</tr>
+<tr class="even">
+<td>querySequence</td>
+<td>multiple alignment 実行時、または系統樹作成時に clustalw に渡す配列ファイル。<br />
+NBRF-PIR, EMBL-SWISSPROT, Pearson (Fasta), Clustal (*.aln), GCG-MSF (Pileup), GCG9-RSF, GDE flat file の7フォーマットを使用できます。</td>
+</tr>
+<tr class="odd">
+<td>profile1</td>
+<td>profile alignment 実行時に clustalw に -PROFILE1= で 渡す整列済み配列ファイル。</td>
+</tr>
+<tr class="even">
+<td>profile2</td>
+<td>profile alignment 実行時に clustalw に -PROFILE2= で渡す未整列の配列ファイルまたは整列済み配列ファイル。</td>
+</tr>
+<tr class="odd">
+<td>guidetree1</td>
+<td>multiple alignment 実行時に clustalw に -USETREE= で渡す、または profile alignment 実行時に clustalw に -USETREE1= で渡すガイドツリーファイル。</td>
+</tr>
+<tr class="even">
+<td>guidetree2</td>
+<td>profile alignment 実行時に clustalw に -USETREE2= で渡すガイドツリーファイル。</td>
+</tr>
+<tr class="odd">
+<td>pwAaMatrix</td>
+<td>pairwise alignment 実行時に clustalw に -PWMATRIX= で渡すカスタム weight matrix ファイル。</td>
+</tr>
+<tr class="even">
+<td>pwDnaMatrix</td>
+<td>pairwise alignment 実行時に clustalw に -PWDNAMATRIX= で渡すカスタム weight matrix ファイル。</td>
+</tr>
+<tr class="odd">
+<td>aaMatrix</td>
+<td>multiple alignment 実行時に clustalw に -MATRIX= で渡すカスタム weight matrix ファイル。</td>
+</tr>
+<tr class="even">
+<td>dnaMatrix</td>
+<td>multiple alignment 実行時に clustalw に -DNAMATRIX= で渡すカスタム weight matrix ファイル。</td>
+</tr>
+<tr class="odd">
+<td>parameters</td>
+<td>clustalw 実行時のコマンドラインオプションのうち、-INFILE=, -OUTFILE=, -NEWTREE=, -NEWTREE1=, -NEWTREE2=, -USETREE=, -USETREE1=, -USETREE2=, -STATS=, -OPTIONS, -HELP, -CHECK, -FULLHELP, -ALIGN, -INTERACTIVE 以外のものを記述します。</td>
+</tr>
+<tr class="even">
+<td>result</td>
+<td>結果通知方法。<br />
+www, mailのいずれかが指定できます。<br />
+mail の場合、job 完了時に address に記述したメールアドレスに対して検索終了の通知が送信されます。<br />
+www の場合は何もしないので、POST 時に返された request ID を使って GET で job の状態を調べます。</td>
+</tr>
+<tr class="odd">
+<td>address</td>
+<td>result で mail を指定した場合に検索終了の通知を受け取るメールアドレス。</td>
+</tr>
+</tbody>
+</table>
+
+## CLUSTALWの結果の取得
+
+| パラメーター                                | 説明                                                                                                                                                                                                            |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| GET clustalw/{id}?info=status         | job が走っている、キューにたまっている、終わっている、存在しない、ということを返します。                                                                                                                                                                |
+| GET clustalw/{id}?info=request        | プログラム実行条件を返します。 存在しない場合は、エラーを返します。                                                                                                                                                                            |
+| GET clustalw/{id}?info=result         | job が終わっていたら結果（multiple alignment, profile alignment を実行した場合は alignment の結果、-TREE を実行した場合は .ph ファイル、-BOOTSTRAP を実行した場合は .phb ファイル、-CONVERT を実行した場合はフォーマット変換後のファイル）を返します。 終わってない・存在しない場合は、エラーを返します。            |
+| GET clustalw/{id}?info=result\_guide1 | job が終わっていて -USETREE を指定しない multiple alignment または -SEQUENCES を指定して -USETREE を指定しないprofile alignment を実行した場合はガイドツリーファイルを、-USETREE1 を指定しない profile alignment を実行した場合はガイドツリーファイル1を返します。 終わっていない・存在しない場合はエラーを返す。 |
+| GET clustalw/{id}?info=result\_guide2 | job が終わっていて -USETREE2を 指定しない profile alignment を実行した場合はガイドツリーファイル2を返します。 終わっていない・存在しない場合はエラーを返す。                                                                                                              |
+| GET clustalw/{id}?info=result\_pim    | job が終わっていて -TREE -PIM を実行した場合は percent identity matrix ファイルを返す。 終わっていない・存在しない場合はエラーを返す。                                                                                                                      |
+
+## サンプルスクリプト
+
+clustalw-client.pl
+
+### 例1：複数配列のmultiple alignment
+
+conf.json
+
+``` code scroll
+{
+    "urlStr": "http://ddbj.nig.ac.jp/wabi/clustalw/",
+    "infile": "/home/hoge/cyc_aa.fasta",
+    "parameters": "-TYPE=PROTEIN -PWMATRIX=GONNET -PWGAPOPEN=10.00 -PWGAPEXT=0.10 -MATRIX=GONNET -GAPOPEN=10.00 -GAPEXT=0.20 -MAXDIV=30 -HGAPRESIDUES=GPSNDQEKR -GAPDIST=4 -ENDGAPS -OUTORDER=aligned",
+    "result": "www",
+    "address": ""
+}
+      
+```
+
+cyc\_aa.fasta
+
+``` code
+>mms:mma_0447
+MYRFTKTVVALLLATSGTMALAQAAYTNIGRPATAKEIAAWDIDVRPDFKGLPPGSGTVA
+KGMAVWEGKCASCHGTFGESNEVFTPIVGGTTKEDIKSGHVAALSNNKQPQRTTIMKVPT
+VSTLWDYINRAMPWTAPKSLTTEEVYAVTAYILNMAEILPDDFTLSDKNIAEVQQLMPNR
+NGMTRNHGMWDIKGKPDVKSVACMKDCKTSTDLRSTLPEPSRNAHGNIQLQNRTFGEVRG
+VDTTKPASTKPISAISADQKLAMATPAKPAAPAKVDGLALAKQYACVACHGVSNKIIGPG
+FNEIAAKYKGDAAAPAALTAKIKNGSTGAWGPIPMPAQAHVKDEDIKTLVGWIIGGAK
+>har:HEAR1189
+MSRFTKTVVALALVATGAIACAQTAYPHIGRTATEKEIAAWDIDVRPDFKGLPKGSGTVS
+KGMEVWEGKCASCHGTFGESNEVFTPIVGGTTKEDVKTGRVAALATNKQPQRTTMMKVAT
+VSTLWDYINRAMPWTAPKSLTTEEVYAVTAYILNMSEVLPDDFTLSDKNIAEVQKLMPNR
+NGMTQKHGMWDVKGKPDVKSVACMKDCQVSGDIRSSLPEPSRNAHGNIQEQNRSFGEVRG
+VNTTVPASTTPISSATRKSVVATAATTAPAEAAAKPKALGLAKQYACIACHGVSNKIVGP
+GFNEIAAKYKGDSAAATTLFDKVKNGSSGAWGPVPMPGQAHVKDEDVKTLVSWILSGAK
+>pnu:Pnuc_0802
+MFKLAKVAKFTLFAVTTFFAVGSVVAQNSSTHYPGIGRDATPAEVAAWDIDVRPDFKGLP
+KGSGSVEKGQQLWEAKCSVCHGTFGESNEIFTPIIGGTTTDDIKTGRVASLSDRKQPQRT
+TIMKVATVSSLWDYIYRAMPWNAPRSLTPDDTFALVAYLLNMAEVVPDDFVLSNTNIAEV
+QKRMPNRNGMTLKHGLWNSKGTPDVHATACMTNCVQFVQIGSELPDYARNAHGNIAEQNR
+QYGPFRGSDSTKPPLTKLPGASAEGLAHASETHASKKGPAELFKSENCTACHAMSTKLVG
+PSVADIAAKYQGQSGALDTLMAKVKNGGSGVWGPIPMPAQSQLSDEDRKALVTWVLSGGK
+>bprc:D521_0984
+MFKLDKFSISLGFAALIAITAQAALAQSGSAKFPGIGRAATPAEVAAWDIDVRPDFKGLP
+KGSGSVEKGQVIWEAKCASCHGTFGESNEIFTPIAGGTTKDDVKTGRVASLKDMKQPQRT
+TLMKVPTVSTLWDYIYRAMPWNAPRSLTPDDTYALVAFILSLGEIVPDDFVLSDKNIAEV
+KMPNRNGMTTKHGFWSVSGKPDVNGNACMHNCVPFVQIGSTLPDFARNAHENIAEQNRMY
+GPYRGADTSKPPIKQLPGASGEGLAHAADTHTSAAKGPAALFKNENCSACHAPNAKLVGP
+SIADIAKKYEGQSGAVDRLMAKVKNGGAGVWGSIPMPPQAQLSDDDRKTLVVWMLSGGK
+>dar:Daro_3133
+MSRFSKTILVLALLGASSTGFSFENFKGVGRQATPAEVKAWDIDVRPDFKGLPKGKGNVE
+RGNELFEEKCASCHGSFGESNEVFTPLAGGTTKDDIKTGRVKGLSSGELPQRTTFTKVAT
+ISTVFDYIQRAMPWTAPKSLKPDDVYAILAYLLNLQEIVPADFELSDRNIADVQKLLPNR
+NGMTTDHGLWPGASAKKGGIGNGGIPDVKNVACMKNCKPEVQIGSTLPEYARTAHGELAD
+QNRNFGAVRGTRTLGPEAAKKAADAGTLELATKSGCMACHGMKSKIVGPGYSEVVARYQG
+QPDAESRLIAKVKAGGQGVWGSIPMPPNAHVKDEDLKTLVQWILAGSK
+      
+```
+
+multi fasta データから pairewise alignment、ガイドツリー生成、multiple alignment
+を行う場合のサンプル  
+（conf.json に記述したパラメータ値は clustalw2 のデフォルト値であるので、parameters
+に何も指定しない場合と同一の結果が得られます。）
+
+``` code
+$ perl clustalw-client.pl conf.json
+Execute multiple sequence alignment.
+request-ID: wabi_clustalw_2013-0827-1814-55-821-640340
+waiting
+finished
+ClustalW2 result is outputed to wabi_clustalw_2013-0827-1814-55-821-640340.txt
+Guide Tree 1 is outputed to wabi_clustalw_2013-0827-1814-55-821-640340_guidetree1.txt
+      
+```
+
+``` code
+$ cat wabi_clustalw_2013-0827-1814-55-821-640340.txt
+CLUSTAL 2.1 multiple sequence alignment
+ 
+ 
+mms_mma_0447        MYRFTKTVVALLLAT-------SGTMALAQAAYTNIGRPATAKEIAAWDIDVRPDFKGLP
+har_HEAR1189        MSRFTKTVVALALVA-------TGAIACAQTAYPHIGRTATEKEIAAWDIDVRPDFKGLP
+dar_Daro_3133       MSRFSKTILVLALLG-------ASSTGFSFENFKGVGRQATPAEVKAWDIDVRPDFKGLP
+pnu_Pnuc_0802       MFKLAKVAKFTLFAVTTFFAVGSVVAQNSSTHYPGIGRDATPAEVAAWDIDVRPDFKGLP
+bprc_D521_0984      MFKLDKFSISLGFAALIAITAQAALAQSGSAKFPGIGRAATPAEVAAWDIDVRPDFKGLP
+                    * :: *      :         :     .   :  :** **  *: **************
+ 
+mms_mma_0447        PGSGTVAKGMAVWEGKCASCHGTFGESNEVFTPIVGGTTKEDIKSGHVAALSNNKQPQRT
+har_HEAR1189        KGSGTVSKGMEVWEGKCASCHGTFGESNEVFTPIVGGTTKEDVKTGRVAALATNKQPQRT
+dar_Daro_3133       KGKGNVERGNELFEEKCASCHGSFGESNEVFTPLAGGTTKDDIKTGRVKGLSSGELPQRT
+pnu_Pnuc_0802       KGSGSVEKGQQLWEAKCSVCHGTFGESNEIFTPIIGGTTTDDIKTGRVASLSDRKQPQRT
+bprc_D521_0984      KGSGSVEKGQVIWEAKCASCHGTFGESNEIFTPIAGGTTKDDVKTGRVASLKDMKQPQRT
+                     *.*.* :*  ::* **: ***:******:***: ****.:*:*:*:* .*   : ****
+ 
+mms_mma_0447        TIMKVPTVSTLWDYINRAMPWTAPKSLTTEEVYAVTAYILNMAEILPDDFTLSDKNIAEV
+har_HEAR1189        TMMKVATVSTLWDYINRAMPWTAPKSLTTEEVYAVTAYILNMSEVLPDDFTLSDKNIAEV
+dar_Daro_3133       TFTKVATISTVFDYIQRAMPWTAPKSLKPDDVYAILAYLLNLQEIVPADFELSDRNIADV
+pnu_Pnuc_0802       TIMKVATVSSLWDYIYRAMPWNAPRSLTPDDTFALVAYLLNMAEVVPDDFVLSNTNIAEV
+bprc_D521_0984      TLMKVPTVSTLWDYIYRAMPWNAPRSLTPDDTYALVAFILSLGEIVPDDFVLSDKNIAEV
+                    *: **.*:*:::*** *****.**:**..::.:*: *::*.: *::* ** **: ***:*
+ 
+mms_mma_0447        QQLMPNRNGMTRNHGMWD---IK-------GKPDVKSVACMKDCKTSTDLRSTLPEPSRN
+har_HEAR1189        QKLMPNRNGMTQKHGMWD---VK-------GKPDVKSVACMKDCQVSGDIRSSLPEPSRN
+dar_Daro_3133       QKLLPNRNGMTTDHGLWPGASAKKGGIGNGGIPDVKNVACMKNCKPEVQIGSTLPEYART
+pnu_Pnuc_0802       QKRMPNRNGMTLKHGLWN---SK-------GTPDVHATACMTNCVQFVQIGSELPDYARN
+bprc_D521_0984      K--MPNRNGMTTKHGFWS---VS-------GKPDVNGNACMHNCVPFVQIGSTLPDFARN
+                    :  :******* .**:*     .       * ***:  *** :*    :: * **: :*.
+ 
+mms_mma_0447        AHGNIQLQNRTFGEVRGVDTTKPASTKPISAISADQKLA-MATPAKPAAPAKVDGLALAK
+har_HEAR1189        AHGNIQEQNRSFGEVRGVNTTVPASTTPISSATRKSVVATAATTAPAEAAAKPKALGLAK
+dar_Daro_3133       AHGELADQNRNFGAVRGTRTLGPEAAK---------------------KAADAGTLELAT
+pnu_Pnuc_0802       AHGNIAEQNRQYGPFRGSDSTKPPLTKLPGASAEG-----LAHASETHASK-KGPAELFK
+bprc_D521_0984      AHENIAEQNRMYGPYRGADTSKPPIKQLPGASGEG-----LAHAADTHTSAAKGPAALFK
+                    ** ::  *** :*  **  :  *                          .       * .
+ 
+mms_mma_0447        QYACVACHGVSNKIIGPGFNEIAAKYKGDAAAPAALTAKIKNGSTGAWGPIPMPAQAHVK
+har_HEAR1189        QYACIACHGVSNKIVGPGFNEIAAKYKGDSAAATTLFDKVKNGSSGAWGPVPMPGQAHVK
+dar_Daro_3133       KSGCMACHGMKSKIVGPGYSEVVARYQGQPDAESRLIAKVKAGGQGVWGSIPMPPNAHVK
+pnu_Pnuc_0802       SENCTACHAMSTKLVGPSVADIAAKYQGQSGALDTLMAKVKNGGSGVWGPIPMPAQSQLS
+bprc_D521_0984      NENCSACHAPNAKLVGPSIADIAKKYEGQSGAVDRLMAKVKNGGAGVWGSIPMPPQAQLS
+                    .  * ***. . *::**.  ::. :*:*:. *   *  *:* *. *.**.:*** ::::.
+ 
+mms_mma_0447        DEDIKTLVGWIIGGAK
+har_HEAR1189        DEDVKTLVSWILSGAK
+dar_Daro_3133       DEDLKTLVQWILAGSK
+pnu_Pnuc_0802       DEDRKALVTWVLSGGK
+bprc_D521_0984      DDDRKTLVVWMLSGGK
+                    *:* *:** *::.*.*
+      
+```
+
+### 例2：ガイドツリーを使ったmultiple alignmentの再実行
+
+conf.json
+
+``` code scroll
+{
+    "urlStr": "http://ddbj.nig.ac.jp/wabi/clustalw/",
+    "infile": "/home/hoge/cyc_aa.fasta",
+    "guidetree1": "/home/hoge/wabi_clustalw_2013-0827-1814-55-821-640340_guidetree1.txt",
+    "parameters": "-TYPE=PROTEIN -MATRIX=GONNET -GAPOPEN=12.00 -GAPEXT=0.40 -MAXDIV=30 -HGAPRESIDUES=GPSNDQEKR -GAPDIST=4 -ENDGAPS",
+    "result": "www",
+    "address": ""
+}
+      
+```
+
+[例1](#sample1)で生成されたガイドツリー（wabi\_clustalw\_2013-0827-1814-55-821-640340\_guidetree1.txt）を使い、multiple
+alignment のみをパラメータを変えて再実行する場合のサンプル
+
+``` code
+$ perl clustalw-client.pl conf.json 
+Execute multiple sequence alignment.
+request-ID: wabi_clustalw_2013-0828-1125-32-853-013077
+waiting
+finished
+ClustalW2 result is outputed to wabi_clustalw_2013-0828-1125-32-853-013077.txt
+      
+```
+
+``` code
+$ cat wabi_clustalw_2013-0828-1125-32-853-013077.txt 
+CLUSTAL 2.1 multiple sequence alignment
+ 
+ 
+mms_mma_0447        MYRFTKTVVALLLAT-------SGTMALAQAAYTNIGRPATAKEIAAWDIDVRPDFKGLP
+har_HEAR1189        MSRFTKTVVALALVA-------TGAIACAQTAYPHIGRTATEKEIAAWDIDVRPDFKGLP
+dar_Daro_3133       MSRFSKTILVLALLG-------ASSTGFSFENFKGVGRQATPAEVKAWDIDVRPDFKGLP
+pnu_Pnuc_0802       MFKLAKVAKFTLFAVTTFFAVGSVVAQNSSTHYPGIGRDATPAEVAAWDIDVRPDFKGLP
+bprc_D521_0984      MFKLDKFSISLGFAALIAITAQAALAQSGSAKFPGIGRAATPAEVAAWDIDVRPDFKGLP
+                    * :: *      :         :     .   :  :** **  *: **************
+ 
+mms_mma_0447        PGSGTVAKGMAVWEGKCASCHGTFGESNEVFTPIVGGTTKEDIKSGHVAALSNNKQPQRT
+har_HEAR1189        KGSGTVSKGMEVWEGKCASCHGTFGESNEVFTPIVGGTTKEDVKTGRVAALATNKQPQRT
+dar_Daro_3133       KGKGNVERGNELFEEKCASCHGSFGESNEVFTPLAGGTTKDDIKTGRVKGLSSGELPQRT
+pnu_Pnuc_0802       KGSGSVEKGQQLWEAKCSVCHGTFGESNEIFTPIIGGTTTDDIKTGRVASLSDRKQPQRT
+bprc_D521_0984      KGSGSVEKGQVIWEAKCASCHGTFGESNEIFTPIAGGTTKDDVKTGRVASLKDMKQPQRT
+                     *.*.* :*  ::* **: ***:******:***: ****.:*:*:*:* .*   : ****
+ 
+mms_mma_0447        TIMKVPTVSTLWDYINRAMPWTAPKSLTTEEVYAVTAYILNMAEILPDDFTLSDKNIAEV
+har_HEAR1189        TMMKVATVSTLWDYINRAMPWTAPKSLTTEEVYAVTAYILNMSEVLPDDFTLSDKNIAEV
+dar_Daro_3133       TFTKVATISTVFDYIQRAMPWTAPKSLKPDDVYAILAYLLNLQEIVPADFELSDRNIADV
+pnu_Pnuc_0802       TIMKVATVSSLWDYIYRAMPWNAPRSLTPDDTFALVAYLLNMAEVVPDDFVLSNTNIAEV
+bprc_D521_0984      TLMKVPTVSTLWDYIYRAMPWNAPRSLTPDDTYALVAFILSLGEIVPDDFVLSDKNIAEV
+                    *: **.*:*:::*** *****.**:**..::.:*: *::*.: *::* ** **: ***:*
+ 
+mms_mma_0447        QQLMPNRNGMTRNHGMWDIK----------GKPDVKSVACMKDCKTSTDLRSTLPEPSRN
+har_HEAR1189        QKLMPNRNGMTQKHGMWDVK----------GKPDVKSVACMKDCQVSGDIRSSLPEPSRN
+dar_Daro_3133       QKLLPNRNGMTTDHGLWPGASAKKGGIGNGGIPDVKNVACMKNCKPEVQIGSTLPEYART
+pnu_Pnuc_0802       QKRMPNRNGMTLKHGLWNSK----------GTPDVHATACMTNCVQFVQIGSELPDYARN
+bprc_D521_0984      K--MPNRNGMTTKHGFWSVS----------GKPDVNGNACMHNCVPFVQIGSTLPDFARN
+                    :  :******* .**:*             * ***:  *** :*    :: * **: :*.
+ 
+mms_mma_0447        AHGNIQLQNRTFGEVRGVDTTKPASTKPISAISADQKLAMATPAKPAAP-AKVDGLALAK
+har_HEAR1189        AHGNIQEQNRSFGEVRGVNTTVPASTTPISSATRKSVVATAATTAPAEAAAKPKALGLAK
+dar_Daro_3133       AHGELADQNRNFGAVRGTRTLGPEAAKKAADAG---------------------TLELAT
+pnu_Pnuc_0802       AHGNIAEQNRQYGPFRGSDSTKPPLTKLPGASAEGLAHASETHASK------KGPAELFK
+bprc_D521_0984      AHENIAEQNRMYGPYRGADTSKPPIKQLPGASGEGLAHAADTHTSAA-----KGPAALFK
+                    ** ::  *** :*  **  :  *      .                           * .
+ 
+mms_mma_0447        QYACVACHGVSNKIIGPGFNEIAAKYKGDAAAPAALTAKIKNGSTGAWGPIPMPAQAHVK
+har_HEAR1189        QYACIACHGVSNKIVGPGFNEIAAKYKGDSAAATTLFDKVKNGSSGAWGPVPMPGQAHVK
+dar_Daro_3133       KSGCMACHGMKSKIVGPGYSEVVARYQGQPDAESRLIAKVKAGGQGVWGSIPMPPNAHVK
+pnu_Pnuc_0802       SENCTACHAMSTKLVGPSVADIAAKYQGQSGALDTLMAKVKNGGSGVWGPIPMPAQSQLS
+bprc_D521_0984      NENCSACHAPNAKLVGPSIADIAKKYEGQSGAVDRLMAKVKNGGAGVWGSIPMPPQAQLS
+                    .  * ***. . *::**.  ::. :*:*:. *   *  *:* *. *.**.:*** ::::.
+ 
+mms_mma_0447        DEDIKTLVGWIIGGAK
+har_HEAR1189        DEDVKTLVSWILSGAK
+dar_Daro_3133       DEDLKTLVQWILAGSK
+pnu_Pnuc_0802       DEDRKALVTWVLSGGK
+bprc_D521_0984      DDDRKTLVVWMLSGGK
+                    *:* *:** *::.*.*
+      
+```
+
+同じ処理をコマンドラインで実行する場合
+
+``` code scroll
+$ clustalw2 -INFILE=cyc_aa.fasta -USETREE=wabi_clustalw_2013-0827-1814-55-821-640340_guidetree1.txt -TYPE=PROTEIN \
+> -MATRIX=GONNET -GAPOPEN=12.00 -GAPEXT=0.40 -MAXDIV=30 -HGAPRESIDUES=GPSNDQEKR -GAPDIST=4 -ENDGAPS
+      
+```
+
+### 例3：整列済みデータへの新規配列の追加（profile alignment）
+
+cyc\_aa2.fasta
+
+``` code
+>lch:Lcho_3783
+MSSSPKWLAAAVLALAAAGSLAQVTAVGIGRAATEKEIKAWDIDVRPDFKGLPKGSGTVE
+QGMEVWEAKCAHCHGVFGESNEVFSPLVGGTTADDVKTGHVARLNDPTFPGRTTLMKVAT
+VSTLWDYINRAMPWTAPKSLKTDEVYAVTAYLLNMGDVLPAGFVLSDQTIAQAQARMPNR
+NGMTLDHGMWPGRGLKTAAKPDVKVAACMSNCEAEPKVASFLPDFARNAHGNLAEQTRMV
+GAQHGVDTTRPPGAAPTLAAAPVVAKATDEGAAALALAAKHTCTACHAVDAKLVGPAFRE
+IGKKHGSRADAVAYLTGKIKSGGTGVWGAIPMPAQTLPDADAKLIANWLAAGAKK
+>reh:H16_A3571
+MSMWAELRTAAALVLAAVSAAPAWAGTADARAALGRTATPAEVAAWDIDVRPDFQGLPRG
+SGTVAQGQKVWDGKCASCHGDFGESNEVFTPLVGGTTAEDIRRGRVAGMTGNQPYRTTLM
+KVSTVSTLWDYIHRAMPWNAPKSLSVGDVYAVTAYMLHLGEVVPADFTLSDANIAEIQRR
+MPNRDGMTTGHGLWPGRGRPDTRNTACMKDCAGKVAITSSIPDYARDAHGELAQQQRSFG
+PVRGVAAGNTVSKSAASAPSEPAAPGARLTSQYQCMACHAMDRKLVGPSFADIAGKYKGQ
+DAHGALARKVKAGGQGAWGSVPMPAQPQIPDSDVQAMVGWILEAK
+      
+```
+
+conf.json
+
+``` code scroll
+{
+    "urlStr": "http://ddbj.nig.ac.jp/wabi/clustalw/",
+    "profile1": "/home/hoge/wabi_clustalw_2013-0827-1814-55-821-640340.txt",
+    "profile2": "/home/hoge/cyc_aa2.fasta",
+    "parameters": "-SEQUENCES -TYPE=PROTEIN -MATRIX=GONNET -GAPOPEN=10.00 -GAPEXT=0.20 -MAXDIV=30 -HGAPRESIDUES=GPSNDQEKR -GAPDIST=4 -ENDGAPS",
+    "result": "www",
+    "address": ""
+}
+      
+```
+
+[例1](#sample1)の整列結果（wabi\_clustalw\_2013-0827-1814-55-821-640340.txt）に、新たな配列（cyc\_aa2.fasta）を追加する場合のサンプル
+
+``` code
+$ perl clustalw-client.pl conf.json
+Execute multiple sequence alignment.
+request-ID: wabi_clustalw_2013-0828-1452-47-561-627715
+waiting
+finished
+ClustalW2 result is outputed to wabi_clustalw_2013-0828-1452-47-561-627715.txt
+Guide Tree 2 is outputed to wabi_clustalw_2013-0828-1452-47-561-627715_guidetree1.txt
+      
+```
+
+``` code
+$ cat wabi_clustalw_2013-0828-1452-47-561-627715.txt 
+CLUSTAL 2.1 multiple sequence alignment
+ 
+ 
+mms_mma_0447        --MYRFTKTVVALLLAT-------SGTMALAQAAYTNIGRPATAKEIAAWDIDVRPDFKG
+har_HEAR1189        --MSRFTKTVVALALVA-------TGAIACAQTAYPHIGRTATEKEIAAWDIDVRPDFKG
+dar_Daro_3133       --MSRFSKTILVLALLG-------ASSTGFSFENFKGVGRQATPAEVKAWDIDVRPDFKG
+pnu_Pnuc_0802       --MFKLAKVAKFTLFAVTTFFAVGSVVAQNSSTHYPGIGRDATPAEVAAWDIDVRPDFKG
+bprc_D521_0984      --MFKLDKFSISLGFAALIAITAQAALAQSGSAKFPGIGRAATPAEVAAWDIDVRPDFKG
+lch_Lcho_3783       --MSSSPKWLAAAVLAL-------AAAGSLAQVTAVGIGRAATEKEIKAWDIDVRPDFKG
+reh_H16_A3571       MSMWAELRTAAALVLAAVS----AAPAWAGTADARAALGRTATPAEVAAWDIDVRPDFQG
+                      *    :      :         :            :** **  *: **********:*
+ 
+mms_mma_0447        LPPGSGTVAKGMAVWEGKCASCHGTFGESNEVFTPIVGGTTKEDIKSGHVAALSNNKQPQ
+har_HEAR1189        LPKGSGTVSKGMEVWEGKCASCHGTFGESNEVFTPIVGGTTKEDVKTGRVAALATNKQPQ
+dar_Daro_3133       LPKGKGNVERGNELFEEKCASCHGSFGESNEVFTPLAGGTTKDDIKTGRVKGLSSGELPQ
+pnu_Pnuc_0802       LPKGSGSVEKGQQLWEAKCSVCHGTFGESNEIFTPIIGGTTTDDIKTGRVASLSDRKQPQ
+bprc_D521_0984      LPKGSGSVEKGQVIWEAKCASCHGTFGESNEIFTPIAGGTTKDDVKTGRVASLKDMKQPQ
+lch_Lcho_3783       LPKGSGTVEQGMEVWEAKCAHCHGVFGESNEVFSPLVGGTTADDVKTGHVARLNDPTFPG
+reh_H16_A3571       LPRGSGTVAQGQKVWDGKCASCHGDFGESNEVFTPLVGGTTAEDIRRGRVAGMTGN-QPY
+                    ** *.*.* :*  ::: **: *** ******:*:*: **** :*:: *:*  :     * 
+ 
+mms_mma_0447        RTTIMKVPTVSTLWDYINRAMPWTAPKSLTTEEVYAVTAYILNMAEILPDDFTLSDKNIA
+har_HEAR1189        RTTMMKVATVSTLWDYINRAMPWTAPKSLTTEEVYAVTAYILNMSEVLPDDFTLSDKNIA
+dar_Daro_3133       RTTFTKVATISTVFDYIQRAMPWTAPKSLKPDDVYAILAYLLNLQEIVPADFELSDRNIA
+pnu_Pnuc_0802       RTTIMKVATVSSLWDYIYRAMPWNAPRSLTPDDTFALVAYLLNMAEVVPDDFVLSNTNIA
+bprc_D521_0984      RTTLMKVPTVSTLWDYIYRAMPWNAPRSLTPDDTYALVAFILSLGEIVPDDFVLSDKNIA
+lch_Lcho_3783       RTTLMKVATVSTLWDYINRAMPWTAPKSLKTDEVYAVTAYLLNMGDVLPAGFVLSDQTIA
+reh_H16_A3571       RTTLMKVSTVSTLWDYIHRAMPWNAPKSLSVGDVYAVTAYMLHLGEVVPADFTLSDANIA
+                    ***: **.*:*:::*** *****.**:**.  :.:*: *::* : :::* .* **: .**
+ 
+mms_mma_0447        EVQQLMPNRNGMTRNHGMWD---IK-------GKPDVKSVACMKDCKTSTDLRSTLPEPS
+har_HEAR1189        EVQKLMPNRNGMTQKHGMWD---VK-------GKPDVKSVACMKDCQVSGDIRSSLPEPS
+dar_Daro_3133       DVQKLLPNRNGMTTDHGLWPGASAKKGGIGNGGIPDVKNVACMKNCKPEVQIGSTLPEYA
+pnu_Pnuc_0802       EVQKRMPNRNGMTLKHGLWN---SK-------GTPDVHATACMTNCVQFVQIGSELPDYA
+bprc_D521_0984      EVK--MPNRNGMTTKHGFWS---VS-------GKPDVNGNACMHNCVPFVQIGSTLPDFA
+lch_Lcho_3783       QAQARMPNRNGMTLDHGMWPGRGLKT-----AAKPDVKVAACMSNCEAEPKVASFLPDFA
+reh_H16_A3571       EIQRRMPNRDGMTTGHGLWP---GR-------GRPDTRNTACMKDCAGKVAITSSIPDYA
+                    : :  :***:***  **:*             . **..  *** :*     : * :*: :
+ 
+mms_mma_0447        RNAHGNIQLQNRTFGEVRGVDTTKPASTKPISAISADQKLA-MATPAKPAAPAKVDGLAL
+har_HEAR1189        RNAHGNIQEQNRSFGEVRGVNTTVPASTTPISSATRKSVVATAATTAPAEAAAKPKALGL
+dar_Daro_3133       RTAHGELADQNRNFGAVRGTRTLGPEAAK---------------------KAADAGTLEL
+pnu_Pnuc_0802       RNAHGNIAEQNRQYGPFRGSDSTKPPLTKLPGASAEG-----LAHASETHASK-KGPAEL
+bprc_D521_0984      RNAHENIAEQNRMYGPYRGADTSKPPIKQLPGASGEG-----LAHAADTHTSAAKGPAAL
+lch_Lcho_3783       RNAHGNLAEQTRMVGAQHGVDTTRPPGAAPTLAAAP---------VVAKATDEGAAALAL
+reh_H16_A3571       RDAHGELAQQQRSFGPVRGVAAGNTVSKS----------------AASAPSEPAAPGARL
+                    * ** ::  * *  *  :*  :  .                                  *
+ 
+mms_mma_0447        AKQYACVACHGVSNKIIGPGFNEIAAKYKGDAAAPAALTAKIKNGSTGAWGPIPMPAQAH
+har_HEAR1189        AKQYACIACHGVSNKIVGPGFNEIAAKYKGDSAAATTLFDKVKNGSSGAWGPVPMPGQAH
+dar_Daro_3133       ATKSGCMACHGMKSKIVGPGYSEVVARYQGQPDAESRLIAKVKAGGQGVWGSIPMPPNAH
+pnu_Pnuc_0802       FKSENCTACHAMSTKLVGPSVADIAAKYQGQSGALDTLMAKVKNGGSGVWGPIPMPAQSQ
+bprc_D521_0984      FKNENCSACHAPNAKLVGPSIADIAKKYEGQSGAVDRLMAKVKNGGAGVWGSIPMPPQAQ
+lch_Lcho_3783       AAKHTCTACHAVDAKLVGPAFREIGKKHGSRADAVAYLTGKIKSGGTGVWGAIPMPAQT-
+reh_H16_A3571       TSQYQCMACHAMDRKLVGPSFADIAGKYKGQ-DAHGALARKVKAGGQGAWGSVPMPAQPQ
+                      .  * ***. . *::**.  ::  :: .   *   *  *:* *. *.**.:*** :. 
+ 
+mms_mma_0447        VKDEDIKTLVGWIIGGAK-
+har_HEAR1189        VKDEDVKTLVSWILSGAK-
+dar_Daro_3133       VKDEDLKTLVQWILAGSK-
+pnu_Pnuc_0802       LSDEDRKALVTWVLSGGK-
+bprc_D521_0984      LSDDDRKTLVVWMLSGGK-
+lch_Lcho_3783       LPDADAKLIANWLAAGAKK
+reh_H16_A3571       IPDSDVQAMVGWILEAK--
+                    : * * : :. *:  .
+      
+```
+
+同じ処理をコマンドラインで実行する場合
+
+``` code scroll
+$ clustalw2 -PROFILE1=wabi_clustalw_2013-0827-1814-55-821-640340.txt -PROFILE2=cyc_aa2.fasta -SEQUENCES -TYPE=PROTEIN \
+> -MATRIX=GONNET -GAPOPEN=10.00 -GAPEXT=0.20 -MAXDIV=30 -HGAPRESIDUES=GPSNDQEKR -GAPDIST=4 -ENDGAPS
+      
+```
+
+### 例4：2つの整列済みデータの統合（profile alignment）
+
+conf.json
+
+``` code scroll
+{
+    "urlStr": "http://ddbj.nig.ac.jp/wabi/clustalw/",
+    "profile1": "/home/hoge/wabi_clustalw_2013-0827-1814-55-821-640340.txt",
+    "profile2": "/home/hoge/cyc_aa2.aln",
+    "parameters": "-PROFILE -TYPE=PROTEIN -MATRIX=GONNET -GAPOPEN=10.00 -GAPEXT=0.20 -MAXDIV=30 -HGAPRESIDUES=GPSNDQEKR -GAPDIST=4 -ENDGAPS",
+    "result": "www",
+    "address": ""
+}
+      
+```
+
+cyc\_aa2.aln
+
+``` code
+CLUSTAL 2.1 multiple sequence alignment
+ 
+ 
+lch_Lcho_3783      MSSSPKWLAAAVLALAAAGSLAQVTAVG-----IGRAATEKEIKAWDIDVRPDFKGLPKG
+reh_H16_A3571      MSMWAELRTAAALVLAAVSAAPAWAGTADARAALGRTATPAEVAAWDIDVRPDFQGLPRG
+                   **  .:  :**.*.***..: .  :...     :**:**  *: **********:***:*
+ 
+lch_Lcho_3783      SGTVEQGMEVWEAKCAHCHGVFGESNEVFSPLVGGTTADDVKTGHVARLNDPTFPGRTTL
+reh_H16_A3571      SGTVAQGQKVWDGKCASCHGDFGESNEVFTPLVGGTTAEDIRRGRVAGMTG-NQPYRTTL
+                   **** ** :**:.*** *** ********:********:*:: *:** :.. . * ****
+ 
+lch_Lcho_3783      MKVATVSTLWDYINRAMPWTAPKSLKTDEVYAVTAYLLNMGDVLPAGFVLSDQTIAQAQA
+reh_H16_A3571      MKVSTVSTLWDYIHRAMPWNAPKSLSVGDVYAVTAYMLHLGEVVPADFTLSDANIAEIQR
+                   ***:*********:*****.*****...:*******:*::*:*:**.*.*** .**: * 
+ 
+lch_Lcho_3783      RMPNRNGMTLDHGMWPGRGLKTAAKPDVKVAACMSNCEAEPKVASFLPDFARNAHGNLAE
+reh_H16_A3571      RMPNRDGMTTGHGLWPGRG-----RPDTRNTACMKDCAGKVAITSSIPDYARDAHGELAQ
+                   *****:*** .**:*****     :**.: :***.:* .:  ::* :**:**:***:**:
+ 
+lch_Lcho_3783      QTRMVGAQHGVDTTRPPGAAPTLAAAPVVAKATDEGAAALALAAKHTCTACHAVDAKLVG
+reh_H16_A3571      QQRSFGPVRGVAAGN--TVSKSAASAP-----SEPAAPGARLTSQYQCMACHAMDRKLVG
+                   * * .*. :** : .   .: : *:**     :: .*..  *:::: * ****:* ****
+ 
+lch_Lcho_3783      PAFREIGKKHGSRADAVAYLTGKIKSGGTGVWGAIPMPAQ-TLPDADAKLIANWLAAGAK
+reh_H16_A3571      PSFADIAGKYKG-QDAHGALARKVKAGGQGAWGSVPMPAQPQIPDSDVQAMVGWILEAK-
+                   *:* :*. *: .  ** . *: *:*:** *.**::*****  :**:*.: :..*:  .  
+ 
+lch_Lcho_3783      K
+reh_H16_A3571      -
+      
+```
+
+[例3](#sample3)の cyc\_aa2.fasta の multiple alignment
+結果（cyc\_aa2.aln）と[例1](#sample1)の multiple alignment
+結果（wabi\_clustalw\_2013-0827-1814-55-821-640340.txt）を統合する場合のサンプル
+
+``` code
+$ perl clustalw-client3.pl conf.json 
+Execute multiple sequence alignment.
+request-ID: wabi_clustalw_2013-0829-1608-33-594-650129
+waiting
+waiting
+finished
+ClustalW2 result is outputed to wabi_clustalw_2013-0829-1608-33-594-650129.txt
+Guide Tree 1 is outputed to wabi_clustalw_2013-0829-1608-33-594-650129_guidetree1.txt
+Guide Tree 2 is outputed to wabi_clustalw_2013-0829-1608-33-594-650129_guidetree1.txt
+      
+```
+
+``` code
+$ cat wabi_clustalw_2013-0829-1608-33-594-650129.txt
+CLUSTAL 2.1 multiple sequence alignment
+ 
+ 
+mms_mma_0447        MYRFTKTVVALLLAT-------SGTMALAQAAYTN-----IGRPATAKEIAAWDIDVRPD
+har_HEAR1189        MSRFTKTVVALALVA-------TGAIACAQTAYPH-----IGRTATEKEIAAWDIDVRPD
+dar_Daro_3133       MSRFSKTILVLALLG-------ASSTGFSFENFKG-----VGRQATPAEVKAWDIDVRPD
+pnu_Pnuc_0802       MFKLAKVAKFTLFAVTTFFAVGSVVAQNSSTHYPG-----IGRDATPAEVAAWDIDVRPD
+bprc_D521_0984      MFKLDKFSISLGFAALIAITAQAALAQSGSAKFPG-----IGRAATPAEVAAWDIDVRPD
+lch_Lcho_3783       MSSSPKWLAAAVLAL-------AAAGSLAQVTAVG-----IGRAATEKEIKAWDIDVRPD
+reh_H16_A3571       MSMWAELRTAAALVL-------AAVSAAPAWAGTADARAALGRTATPAEVAAWDIDVRPD
+                    *    :      :         :                 :** **  *: *********
+ 
+mms_mma_0447        FKGLPPGSGTVAKGMAVWEGKCASCHGTFGESNEVFTPIVGGTTKEDIKSGHVAALSNNK
+har_HEAR1189        FKGLPKGSGTVSKGMEVWEGKCASCHGTFGESNEVFTPIVGGTTKEDVKTGRVAALATNK
+dar_Daro_3133       FKGLPKGKGNVERGNELFEEKCASCHGSFGESNEVFTPLAGGTTKDDIKTGRVKGLSSGE
+pnu_Pnuc_0802       FKGLPKGSGSVEKGQQLWEAKCSVCHGTFGESNEIFTPIIGGTTTDDIKTGRVASLSDRK
+bprc_D521_0984      FKGLPKGSGSVEKGQVIWEAKCASCHGTFGESNEIFTPIAGGTTKDDVKTGRVASLKDMK
+lch_Lcho_3783       FKGLPKGSGTVEQGMEVWEAKCAHCHGVFGESNEVFSPLVGGTTADDVKTGHVARLNDPT
+reh_H16_A3571       FQGLPRGSGTVAQGQKVWDGKCASCHGDFGESNEVFTPLVGGTTAEDIRRGRVAGMTG-N
+                    *:*** *.*.* :*  ::: **: *** ******:*:*: **** :*:: *:*  :    
+ 
+mms_mma_0447        QPQRTTIMKVPTVSTLWDYINRAMPWTAPKSLTTEEVYAVTAYILNMAEILPDDFTLSDK
+har_HEAR1189        QPQRTTMMKVATVSTLWDYINRAMPWTAPKSLTTEEVYAVTAYILNMSEVLPDDFTLSDK
+dar_Daro_3133       LPQRTTFTKVATISTVFDYIQRAMPWTAPKSLKPDDVYAILAYLLNLQEIVPADFELSDR
+pnu_Pnuc_0802       QPQRTTIMKVATVSSLWDYIYRAMPWNAPRSLTPDDTFALVAYLLNMAEVVPDDFVLSNT
+bprc_D521_0984      QPQRTTLMKVPTVSTLWDYIYRAMPWNAPRSLTPDDTYALVAFILSLGEIVPDDFVLSDK
+lch_Lcho_3783       FPGRTTLMKVATVSTLWDYINRAMPWTAPKSLKTDEVYAVTAYLLNMGDVLPAGFVLSDQ
+reh_H16_A3571       QPYRTTLMKVSTVSTLWDYIHRAMPWNAPKSLSVGDVYAVTAYMLHLGEVVPADFTLSDA
+                     * ***: **.*:*:::*** *****.**:**.  :.:*: *::* : :::* .* **: 
+ 
+mms_mma_0447        NIAEVQQLMPNRNGMTRNHGMWD---IK-------GKPDVKSVACMKDCKTSTDLRSTLP
+har_HEAR1189        NIAEVQKLMPNRNGMTQKHGMWD---VK-------GKPDVKSVACMKDCQVSGDIRSSLP
+dar_Daro_3133       NIADVQKLLPNRNGMTTDHGLWPGASAKKGGIGNGGIPDVKNVACMKNCKPEVQIGSTLP
+pnu_Pnuc_0802       NIAEVQKRMPNRNGMTLKHGLWN---SK-------GTPDVHATACMTNCVQFVQIGSELP
+bprc_D521_0984      NIAEVK--MPNRNGMTTKHGFWS---VS-------GKPDVNGNACMHNCVPFVQIGSTLP
+lch_Lcho_3783       TIAQAQARMPNRNGMTLDHGMWPGRGLK-----TAAKPDVKVAACMSNCEAEPKVASFLP
+reh_H16_A3571       NIAEIQRRMPNRDGMTTGHGLWPGRG----------RPDTRNTACMKDCAGKVAITSSIP
+                    .**: :  :***:***  **:*               **..  *** :*     : * :*
+ 
+mms_mma_0447        EPSRNAHGNIQLQNRTFGEVRGVDTTKPASTKPISAISADQKLA-MATPAKPAAPAKVDG
+har_HEAR1189        EPSRNAHGNIQEQNRSFGEVRGVNTTVPASTTPISSATRKSVVATAATTAPAEAAAKPKA
+dar_Daro_3133       EYARTAHGELADQNRNFGAVRGTRTLGPEAAK---------------------KAADAGT
+pnu_Pnuc_0802       DYARNAHGNIAEQNRQYGPFRGSDSTKPPLTKLPGASAEG-----LAHASETHASK-KGP
+bprc_D521_0984      DFARNAHENIAEQNRMYGPYRGADTSKPPIKQLPGASGEG-----LAHAADTHTSAAKGP
+lch_Lcho_3783       DFARNAHGNLAEQTRMVGAQHGVDTTRPPGAAPTLAAAPV---------VAKATDEGAAA
+reh_H16_A3571       DYARDAHGELAQQQRSFGPVRGVAAGN--TVSKSAASAP--------------SEPAAPG
+                    : :* ** ::  * *  *  :*  :                                   
+ 
+mms_mma_0447        LALAKQYACVACHGVSNKIIGPGFNEIAAKYKGDAAAPAALTAKIKNGSTGAWGPIPMPA
+har_HEAR1189        LGLAKQYACIACHGVSNKIVGPGFNEIAAKYKGDSAAATTLFDKVKNGSSGAWGPVPMPG
+dar_Daro_3133       LELATKSGCMACHGMKSKIVGPGYSEVVARYQGQPDAESRLIAKVKAGGQGVWGSIPMPP
+pnu_Pnuc_0802       AELFKSENCTACHAMSTKLVGPSVADIAAKYQGQSGALDTLMAKVKNGGSGVWGPIPMPA
+bprc_D521_0984      AALFKNENCSACHAPNAKLVGPSIADIAKKYEGQSGAVDRLMAKVKNGGAGVWGSIPMPP
+lch_Lcho_3783       LALAAKHTCTACHAVDAKLVGPAFREIGKKHGSRADAVAYLTGKIKSGGTGVWGAIPMPA
+reh_H16_A3571       ARLTSQYQCMACHAMDRKLVGPSFADIAGKYKG-QDAHGALARKVKAGGQGAWGSVPMPA
+                      *  .  * ***. . *::**.  ::  :: .   *   *  *:* *. *.**.:*** 
+ 
+mms_mma_0447        QAHVKDEDIKTLVGWIIGGAK-
+har_HEAR1189        QAHVKDEDVKTLVSWILSGAK-
+dar_Daro_3133       NAHVKDEDLKTLVQWILAGSK-
+pnu_Pnuc_0802       QSQLSDEDRKALVTWVLSGGK-
+bprc_D521_0984      QAQLSDDDRKTLVVWMLSGGK-
+lch_Lcho_3783       Q-TLPDADAKLIANWLAAGAKK
+reh_H16_A3571       QPQIPDSDVQAMVGWILEAK--
+                    :  : * * : :. *:  .
+      
+```
+
+### 例５：系統樹の作成
+
+conf.json
+
+``` code
+{
+    "urlStr": "http://ddbj.nig.ac.jp/wabi/clustalw/",
+    "infile": "/home/hoge/wabi_clustalw_2013-0828-1452-47-561-627715.txt",
+    "parameters": "-TREE -PIM -OUTPUTTREE=phylip -CLUSTERING=NJ",
+    "result": "www",
+    "address": ""
+}
+```
+
+[例3](#sample3)の整列結果（wabi\_clustalw\_2013-0828-1452-47-561-627715.txt）から系統樹を作成する場合のサンプル  
+ここでは、系統樹の作成と同時に percent identity matrix も出力しています。
+
+``` code
+$ perl clustalw-client3.pl conf.json 
+Execute multiple sequence alignment.
+request-ID: wabi_clustalw_2013-0828-1556-45-267-658015
+waiting
+finished
+ClustalW2 result is outputed to wabi_clustalw_2013-0828-1556-45-267-658015.txt
+PIM file is outputed to wabi_clustalw_2013-0828-1556-45-267-658015_pim.txt
+      
+```
+
+``` code
+$ cat wabi_clustalw_2013-0828-1556-45-267-658015.txt
+(
+(
+mms_mma_0447:0.10748,
+har_HEAR1189:0.09643)
+:0.08888,
+(
+(
+dar_Daro_3133:0.21190,
+(
+pnu_Pnuc_0802:0.13187,
+bprc_D521_0984:0.12512)
+:0.08605)
+:0.01023,
+reh_H16_A3571:0.23776)
+:0.00976,
+lch_Lcho_3783:0.23467);
+      
+```
+
+``` code
+$ cat wabi_clustalw_2013-0828-1556-45-267-658015_pim.txt 
+#
+#
+#  Percent Identity  Matrix - created by Clustal2.1 
+#
+#
+ 
+     1: mms_mma_0447       100      80      57      56      56      58      55
+     2: har_HEAR1189        80     100      59      58      57      57      57
+     3: dar_Daro_3133       57      59     100      57      58      53      54
+     4: pnu_Pnuc_0802       56      58      57     100      74      53      54
+     5: bprc_D521_0984      56      57      58      74     100      54      55
+     6: lch_Lcho_3783       58      57      53      53      54     100      52
+     7: reh_H16_A3571       55      57      54      54      55      52     100
+      
+```
+
+同じ処理をコマンドラインで実行する場合
+
+``` code scroll
+$ clustalw2 -INFILE=wabi_clustalw_2013-0828-1452-47-561-627715.txt -TREE -PIM -OUTPUTTREE=phylip -CLUSTERING=NJ
+      
+```
+
+### 例6：ブートストラップ法による系統樹評価
+
+conf.json
+
+``` code
+{
+    "urlStr": "http://ddbj.nig.ac.jp/wabi/clustalw/",
+    "infile": "/home/okuda/data/clustalw_test/wabi_test/wabi_clustalw_2013-0828-1452-47-561-627715.txt",
+    "parameters": "-BOOTSTRAP=1000 -OUTPUTTREE=phylip -SEED=111 -BOOTLABELS=branch -CLUSTERING=NJ",
+    "result": "www",
+    "address": ""
+}
+      
+```
+
+[例3](#sample3)の整列結果（wabi\_clustalw\_2013-0828-1452-47-561-627715.txt）から推定した系統樹をブートストラップ法により評価する場合のサンプル
+
+``` code
+$ perl clustalw-client3.pl conf.json 
+Execute multiple sequence alignment.
+request-ID: wabi_clustalw_2013-0828-1621-44-822-982789
+waiting
+finished
+ClustalW2 result is outputed to wabi_clustalw_2013-0828-1621-44-822-982789.txt
+      
+```
+
+``` code
+$ cat wabi_clustalw_2013-0828-1621-44-822-982789.txt 
+(
+(
+mms_mma_0447:0.10748,
+har_HEAR1189:0.09643)
+:0.08888[1000],
+(
+(
+dar_Daro_3133:0.21190,
+(
+pnu_Pnuc_0802:0.13187,
+bprc_D521_0984:0.12512)
+:0.08605[1000])
+:0.01023[621],
+reh_H16_A3571:0.23776)
+:0.00976[590],
+lch_Lcho_3783:0.23467);
+      
+```
+
+同じ処理をコマンドラインで実行する場合
+
+``` code scroll
+$ clustalw2 -INFILE=wabi_clustalw_2013-0828-1452-47-561-627715.txt -BOOTSTRAP=1000 -OUTPUTTREE=phylip -SEED=111 \
+> -BOOTLABELS=branch -CLUSTERING=NJ
+      
+```
+
+### 例7：配列ファイルのフォーマット変換
+
+conf.json
+
+``` code
+{
+    "urlStr": "http://ddbj.nig.ac.jp/wabi/clustalw/",
+    "infile": "/home/hoge/wabi_clustalw_2013-0828-1452-47-561-627715.txt",
+    "parameters": "-CONVERT -OUTPUT=FASTA",
+    "result": "www",
+    "address": ""
+}
+      
+```
+
+[例3](#sample3)の整列結果（wabi\_clustalw\_2013-0828-1452-47-561-627715.txt）をCLUSTAL形式からFASTA形式に変換する場合のサンプル
+
+CLUSTAL, GCG, GDE, PHYLIP, PIR, NEXUS, FASTAの7種類のフォーマットに相互変換が可能である。
+
+``` code
+$ perl clustalw-client3.pl conf.json 
+Execute multiple sequence alignment.
+request-ID: wabi_clustalw_2013-0828-1706-00-78-535439
+waiting
+finished
+ClustalW2 result is outputed to wabi_clustalw_2013-0828-1706-00-78-535439.txt
+      
+```
+
+``` code
+$ cat wabi_clustalw_2013-0828-1706-00-78-535439.txt 
+>mms_mma_0447
+--MYRFTKTVVALLLAT-------SGTMALAQAAYTNIGRPATAKEIAAWDIDVRPDFKG
+LPPGSGTVAKGMAVWEGKCASCHGTFGESNEVFTPIVGGTTKEDIKSGHVAALSNNKQPQ
+RTTIMKVPTVSTLWDYINRAMPWTAPKSLTTEEVYAVTAYILNMAEILPDDFTLSDKNIA
+EVQQLMPNRNGMTRNHGMWD---IK-------GKPDVKSVACMKDCKTSTDLRSTLPEPS
+RNAHGNIQLQNRTFGEVRGVDTTKPASTKPISAISADQKLA-MATPAKPAAPAKVDGLAL
+AKQYACVACHGVSNKIIGPGFNEIAAKYKGDAAAPAALTAKIKNGSTGAWGPIPMPAQAH
+VKDEDIKTLVGWIIGGAK-
+>har_HEAR1189
+--MSRFTKTVVALALVA-------TGAIACAQTAYPHIGRTATEKEIAAWDIDVRPDFKG
+LPKGSGTVSKGMEVWEGKCASCHGTFGESNEVFTPIVGGTTKEDVKTGRVAALATNKQPQ
+RTTMMKVATVSTLWDYINRAMPWTAPKSLTTEEVYAVTAYILNMSEVLPDDFTLSDKNIA
+EVQKLMPNRNGMTQKHGMWD---VK-------GKPDVKSVACMKDCQVSGDIRSSLPEPS
+RNAHGNIQEQNRSFGEVRGVNTTVPASTTPISSATRKSVVATAATTAPAEAAAKPKALGL
+AKQYACIACHGVSNKIVGPGFNEIAAKYKGDSAAATTLFDKVKNGSSGAWGPVPMPGQAH
+VKDEDVKTLVSWILSGAK-
+>dar_Daro_3133
+--MSRFSKTILVLALLG-------ASSTGFSFENFKGVGRQATPAEVKAWDIDVRPDFKG
+LPKGKGNVERGNELFEEKCASCHGSFGESNEVFTPLAGGTTKDDIKTGRVKGLSSGELPQ
+RTTFTKVATISTVFDYIQRAMPWTAPKSLKPDDVYAILAYLLNLQEIVPADFELSDRNIA
+DVQKLLPNRNGMTTDHGLWPGASAKKGGIGNGGIPDVKNVACMKNCKPEVQIGSTLPEYA
+RTAHGELADQNRNFGAVRGTRTLGPEAAK---------------------KAADAGTLEL
+ATKSGCMACHGMKSKIVGPGYSEVVARYQGQPDAESRLIAKVKAGGQGVWGSIPMPPNAH
+VKDEDLKTLVQWILAGSK-
+>pnu_Pnuc_0802
+--MFKLAKVAKFTLFAVTTFFAVGSVVAQNSSTHYPGIGRDATPAEVAAWDIDVRPDFKG
+LPKGSGSVEKGQQLWEAKCSVCHGTFGESNEIFTPIIGGTTTDDIKTGRVASLSDRKQPQ
+RTTIMKVATVSSLWDYIYRAMPWNAPRSLTPDDTFALVAYLLNMAEVVPDDFVLSNTNIA
+EVQKRMPNRNGMTLKHGLWN---SK-------GTPDVHATACMTNCVQFVQIGSELPDYA
+RNAHGNIAEQNRQYGPFRGSDSTKPPLTKLPGASAEG-----LAHASETHASK-KGPAEL
+FKSENCTACHAMSTKLVGPSVADIAAKYQGQSGALDTLMAKVKNGGSGVWGPIPMPAQSQ
+LSDEDRKALVTWVLSGGK-
+>bprc_D521_0984
+--MFKLDKFSISLGFAALIAITAQAALAQSGSAKFPGIGRAATPAEVAAWDIDVRPDFKG
+LPKGSGSVEKGQVIWEAKCASCHGTFGESNEIFTPIAGGTTKDDVKTGRVASLKDMKQPQ
+RTTLMKVPTVSTLWDYIYRAMPWNAPRSLTPDDTYALVAFILSLGEIVPDDFVLSDKNIA
+EVK--MPNRNGMTTKHGFWS---VS-------GKPDVNGNACMHNCVPFVQIGSTLPDFA
+RNAHENIAEQNRMYGPYRGADTSKPPIKQLPGASGEG-----LAHAADTHTSAAKGPAAL
+FKNENCSACHAPNAKLVGPSIADIAKKYEGQSGAVDRLMAKVKNGGAGVWGSIPMPPQAQ
+LSDDDRKTLVVWMLSGGK-
+>lch_Lcho_3783
+--MSSSPKWLAAAVLAL-------AAAGSLAQVTAVGIGRAATEKEIKAWDIDVRPDFKG
+LPKGSGTVEQGMEVWEAKCAHCHGVFGESNEVFSPLVGGTTADDVKTGHVARLNDPTFPG
+RTTLMKVATVSTLWDYINRAMPWTAPKSLKTDEVYAVTAYLLNMGDVLPAGFVLSDQTIA
+QAQARMPNRNGMTLDHGMWPGRGLKT-----AAKPDVKVAACMSNCEAEPKVASFLPDFA
+RNAHGNLAEQTRMVGAQHGVDTTRPPGAAPTLAAAP---------VVAKATDEGAAALAL
+AAKHTCTACHAVDAKLVGPAFREIGKKHGSRADAVAYLTGKIKSGGTGVWGAIPMPAQT-
+LPDADAKLIANWLAAGAKK
+>reh_H16_A3571
+MSMWAELRTAAALVLAAVS----AAPAWAGTADARAALGRTATPAEVAAWDIDVRPDFQG
+LPRGSGTVAQGQKVWDGKCASCHGDFGESNEVFTPLVGGTTAEDIRRGRVAGMTGN-QPY
+RTTLMKVSTVSTLWDYIHRAMPWNAPKSLSVGDVYAVTAYMLHLGEVVPADFTLSDANIA
+EIQRRMPNRDGMTTGHGLWP---GR-------GRPDTRNTACMKDCAGKVAITSSIPDYA
+RDAHGELAQQQRSFGPVRGVAAGNTVSKS----------------AASAPSEPAAPGARL
+TSQYQCMACHAMDRKLVGPSFADIAGKYKGQ-DAHGALARKVKAGGQGAWGSVPMPAQPQ
+IPDSDVQAMVGWILEAK--
+      
+```
+
+同じ処理をコマンドラインで実行する場合
+
+``` code
+$ clustalw2 -INFILE=wabi_clustalw_2013-0828-1452-47-561-627715.txt -CONVERT -OUTPUT=FASTA
+      
+```
+
+### 例8：custom weight matrixを使用したmultiple alignment
+
+conf.json
+
+``` code
+{
+    "urlStr": "http://ddbj.nig.ac.jp/wabi/clustalw/",
+    "infile": "/home/okuda/data/clustalw_test/wabi_test/cyc_aa.fasta",
+    "pwaamatrix": "/home/okuda/data/clustalw_test/wabi_test/blosum40.txt",
+    "aamatrix": "/home/okuda/data/clustalw_test/wabi_test/blosum40.txt",
+    "parameters": "",
+    "result": "www",
+    "address": ""
+}
+      
+```
+
+[blosum40.txt](ftp://ftp.ncbi.nih.gov/blast/matrices/BLOSUM40)
+
+``` code
+#  Matrix made by matblas from blosum40.iij
+#  * column uses minimum score
+#  BLOSUM Clustered Scoring Matrix in 1/4 Bit Units
+#  Blocks Database = /data/blocks_5.0/blocks.dat
+#  Cluster Percentage: >= 40
+#  Entropy =   0.2851, Expected =  -0.2090
+   A  R  N  D  C  Q  E  G  H  I  L  K  M  F  P  S  T  W  Y  V  B  Z  X  *
+A  5 -2 -1 -1 -2  0 -1  1 -2 -1 -2 -1 -1 -3 -2  1  0 -3 -2  0 -1 -1  0 -6 
+R -2  9  0 -1 -3  2 -1 -3  0 -3 -2  3 -1 -2 -3 -1 -2 -2 -1 -2 -1  0 -1 -6 
+N -1  0  8  2 -2  1 -1  0  1 -2 -3  0 -2 -3 -2  1  0 -4 -2 -3  4  0 -1 -6 
+D -1 -1  2  9 -2 -1  2 -2  0 -4 -3  0 -3 -4 -2  0 -1 -5 -3 -3  6  1 -1 -6 
+C -2 -3 -2 -2 16 -4 -2 -3 -4 -4 -2 -3 -3 -2 -5 -1 -1 -6 -4 -2 -2 -3 -2 -6 
+Q  0  2  1 -1 -4  8  2 -2  0 -3 -2  1 -1 -4 -2  1 -1 -1 -1 -3  0  4 -1 -6 
+E -1 -1 -1  2 -2  2  7 -3  0 -4 -2  1 -2 -3  0  0 -1 -2 -2 -3  1  5 -1 -6 
+G  1 -3  0 -2 -3 -2 -3  8 -2 -4 -4 -2 -2 -3 -1  0 -2 -2 -3 -4 -1 -2 -1 -6 
+H -2  0  1  0 -4  0  0 -2 13 -3 -2 -1  1 -2 -2 -1 -2 -5  2 -4  0  0 -1 -6 
+I -1 -3 -2 -4 -4 -3 -4 -4 -3  6  2 -3  1  1 -2 -2 -1 -3  0  4 -3 -4 -1 -6 
+L -2 -2 -3 -3 -2 -2 -2 -4 -2  2  6 -2  3  2 -4 -3 -1 -1  0  2 -3 -2 -1 -6 
+K -1  3  0  0 -3  1  1 -2 -1 -3 -2  6 -1 -3 -1  0  0 -2 -1 -2  0  1 -1 -6 
+M -1 -1 -2 -3 -3 -1 -2 -2  1  1  3 -1  7  0 -2 -2 -1 -2  1  1 -3 -2  0 -6 
+F -3 -2 -3 -4 -2 -4 -3 -3 -2  1  2 -3  0  9 -4 -2 -1  1  4  0 -3 -4 -1 -6 
+P -2 -3 -2 -2 -5 -2  0 -1 -2 -2 -4 -1 -2 -4 11 -1  0 -4 -3 -3 -2 -1 -2 -6 
+S  1 -1  1  0 -1  1  0  0 -1 -2 -3  0 -2 -2 -1  5  2 -5 -2 -1  0  0  0 -6 
+T  0 -2  0 -1 -1 -1 -1 -2 -2 -1 -1  0 -1 -1  0  2  6 -4 -1  1  0 -1  0 -6 
+W -3 -2 -4 -5 -6 -1 -2 -2 -5 -3 -1 -2 -2  1 -4 -5 -4 19  3 -3 -4 -2 -2 -6 
+Y -2 -1 -2 -3 -4 -1 -2 -3  2  0  0 -1  1  4 -3 -2 -1  3  9 -1 -3 -2 -1 -6 
+V  0 -2 -3 -3 -2 -3 -3 -4 -4  4  2 -2  1  0 -3 -1  1 -3 -1  5 -3 -3 -1 -6 
+B -1 -1  4  6 -2  0  1 -1  0 -3 -3  0 -3 -3 -2  0  0 -4 -3 -3  5  2 -1 -6 
+Z -1  0  0  1 -3  4  5 -2  0 -4 -2  1 -2 -4 -1  0 -1 -2 -2 -3  2  5 -1 -6 
+X  0 -1 -1 -1 -2 -1 -1 -1 -1 -1 -1 -1  0 -1 -2  0  0 -2 -1 -1 -1 -1 -1 -6 
+* -6 -6 -6 -6 -6 -6 -6 -6 -6 -6 -6 -6 -6 -6 -6 -6 -6 -6 -6 -6 -6 -6 -6  1
+      
+```
+
+pairwise alignment と multiple alignment で built-in ではない weight matrix
+を使用する場合のサンプル
+
+実際には clustalw2 には BLOSUM series の weight matrix
+は入っていますが、ここではユーザー定義ファイルとして用意して使用しています。
+
+``` code
+$ perl clustalw-client3.pl conf.json 
+Execute multiple sequence alignment.
+request-ID: wabi_clustalw_2013-0828-1815-17-562-701719
+waiting
+finished
+ClustalW2 result is outputed to wabi_clustalw_2013-0828-1815-17-562-701719.txt
+Guide Tree 1 is outputed to wabi_clustalw_2013-0828-1815-17-562-701719_guidetree1.txt
+      
+```
+
+``` code
+$ cat wabi_clustalw_2013-0828-1815-17-562-701719.txt 
+CLUSTAL 2.1 multiple sequence alignment
+ 
+ 
+mms_mma_0447        -------MYRFTKTVVALLLATSGTMALAQAAYTNIGRPATAKEIAAWDIDVRPDFKGLP
+har_HEAR1189        -------MSRFTKTVVALALVATGAIACAQTAYPHIGRTATEKEIAAWDIDVRPDFKGLP
+dar_Daro_3133       -------MSRFSKTILVLALLGASSTGFSFENFKGVGRQATPAEVKAWDIDVRPDFKGLP
+pnu_Pnuc_0802       MFKLAKVAKFTLFAVTTFFAVGSVVAQNSSTHYPGIGRDATPAEVAAWDIDVRPDFKGLP
+bprc_D521_0984      MFKLDKFSISLGFAALIAITAQAALAQSGSAKFPGIGRAATPAEVAAWDIDVRPDFKGLP
+                                 :        :     .   :  :** **  *: **************
+ 
+mms_mma_0447        PGSGTVAKGMAVWEGKCASCHGTFGESNEVFTPIVGGTTKEDIKSGHVAALSNNKQPQRT
+har_HEAR1189        KGSGTVSKGMEVWEGKCASCHGTFGESNEVFTPIVGGTTKEDVKTGRVAALATNKQPQRT
+dar_Daro_3133       KGKGNVERGNELFEEKCASCHGSFGESNEVFTPLAGGTTKDDIKTGRVKGLSSGELPQRT
+pnu_Pnuc_0802       KGSGSVEKGQQLWEAKCSVCHGTFGESNEIFTPIIGGTTTDDIKTGRVASLSDRKQPQRT
+bprc_D521_0984      KGSGSVEKGQVIWEAKCASCHGTFGESNEIFTPIAGGTTKDDVKTGRVASLKDMKQPQRT
+                     *.*.* :*  ::* **: ***:******:***: ****.:*:*:*:* .*   : ****
+ 
+mms_mma_0447        TIMKVPTVSTLWDYINRAMPWTAPKSLTTEEVYAVTAYILNMAEILPDDFTLSDKNIAEV
+har_HEAR1189        TMMKVATVSTLWDYINRAMPWTAPKSLTTEEVYAVTAYILNMSEVLPDDFTLSDKNIAEV
+dar_Daro_3133       TFTKVATISTVFDYIQRAMPWTAPKSLKPDDVYAILAYLLNLQEIVPADFELSDRNIADV
+pnu_Pnuc_0802       TIMKVATVSSLWDYIYRAMPWNAPRSLTPDDTFALVAYLLNMAEVVPDDFVLSNTNIAEV
+bprc_D521_0984      TLMKVPTVSTLWDYIYRAMPWNAPRSLTPDDTYALVAFILSLGEIVPDDFVLSDKNIAEV
+                    *: **.*:*:::*** *****.**:**..::.:*: *::*.: *::* ** **: ***:*
+ 
+mms_mma_0447        QQLMPNRNGMTRNHGMWDIK----------GKPDVKSVACMKDCKTSTDLRSTLPEPSRN
+har_HEAR1189        QKLMPNRNGMTQKHGMWDVK----------GKPDVKSVACMKDCQVSGDIRSSLPEPSRN
+dar_Daro_3133       QKLLPNRNGMTTDHGLWPGASAKKGGIGNGGIPDVKNVACMKNCKPEVQIGSTLPEYART
+pnu_Pnuc_0802       QKRMPNRNGMTLKHGLWNSK----------GTPDVHATACMTNCVQFVQIGSELPDYARN
+bprc_D521_0984      K--MPNRNGMTTKHGFWSVS----------GKPDVNGNACMHNCVPFVQIGSTLPDFARN
+                    :  :******* .**:*             * ***:  *** :*    :: * **: :*.
+ 
+mms_mma_0447        AHGNIQLQNRTFGEVRGVDTTKPASTKPISAISADQKLAMATPAKPAAP-AKVDGLALAK
+har_HEAR1189        AHGNIQEQNRSFGEVRGVNTTVPASTTPISSATRKSVVATAATTAPAEAAAKPKALGLAK
+dar_Daro_3133       AHGELADQNRNFGAVRGTRTLGPEAAKKAADAG---------------------TLELAT
+pnu_Pnuc_0802       AHGNIAEQNRQYGPFRGSDSTKPPLTKLPGASAEGLAHASETHASK------KGPAELFK
+bprc_D521_0984      AHENIAEQNRMYGPYRGADTSKPPIKQLPGASGEGLAHAADTHTSAA-----KGPAALFK
+                    ** ::  *** :*  **  :  *      .                           * .
+ 
+mms_mma_0447        QYACVACHGVSNKIIGPGFNEIAAKYKGDAAAPAALTAKIKNGSTGAWGPIPMPAQAHVK
+har_HEAR1189        QYACIACHGVSNKIVGPGFNEIAAKYKGDSAAATTLFDKVKNGSSGAWGPVPMPGQAHVK
+dar_Daro_3133       KSGCMACHGMKSKIVGPGYSEVVARYQGQPDAESRLIAKVKAGGQGVWGSIPMPPNAHVK
+pnu_Pnuc_0802       SENCTACHAMSTKLVGPSVADIAAKYQGQSGALDTLMAKVKNGGSGVWGPIPMPAQSQLS
+bprc_D521_0984      NENCSACHAPNAKLVGPSIADIAKKYEGQSGAVDRLMAKVKNGGAGVWGSIPMPPQAQLS
+                    .  * ***. . *::**.  ::. :*:*:. *   *  *:* *. *.**.:*** ::::.
+ 
+mms_mma_0447        DEDIKTLVGWIIGGAK
+har_HEAR1189        DEDVKTLVSWILSGAK
+dar_Daro_3133       DEDLKTLVQWILAGSK
+pnu_Pnuc_0802       DEDRKALVTWVLSGGK
+bprc_D521_0984      DDDRKTLVVWMLSGGK
+                    *:* *:** *::.*.*
+      
+```
+
+同じ処理をコマンドラインで実行する場合
+
+``` code
+$ clustalw2 -INFILE=cyc_aa.fasta -PWMATRIX=blosum40.txt -MATRIX=blosum40.txt
+      
+```
