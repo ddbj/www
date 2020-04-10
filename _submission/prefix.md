@@ -2,6 +2,7 @@
 layout: indexed_content
 title: Prefix Letter List
 service_link: https://www.ddbj.nig.ac.jp/prefix.html
+category: _submission
 ---
 
 # Prefix Letter List

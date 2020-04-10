@@ -2,6 +2,7 @@
 layout: indexed_content
 title: 関連論文
 service_link: https://www.ddbj.nig.ac.jp/references.html
+category: _search_analysis
 ---
 
 # 関連論文

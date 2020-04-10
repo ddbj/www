@@ -2,6 +2,7 @@
 layout: indexed_content
 title: VecScreen
 service_link: http://ddbj.nig.ac.jp/vecscreen/vecscreen?lang=ja
+category: _search_analysis
 ---
 ## VecScreenとは
 

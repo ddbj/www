@@ -2,6 +2,7 @@
 layout: indexed_content
 title: WABI VecScreen ヘルプ
 service_link: https://www.ddbj.nig.ac.jp/wabi_vecscreen-help.html
+category: _search_analysis
 ---
 
 ## VECSCREEN の job の投入

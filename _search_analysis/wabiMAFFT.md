@@ -2,6 +2,7 @@
 layout: indexed_content
 title: WABI MAFFT ヘルプ
 service_link: https://www.ddbj.nig.ac.jp/wabi_mafft-help.html
+category: _search_analysis
 ---
 
 ## MAFFT の job の投入
