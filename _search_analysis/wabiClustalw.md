@@ -1,7 +1,8 @@
 ---
 layout: indexed_content
 title: WABI ClustalW ヘルプ
-service_link: https://www.ddbj.nig.ac.jp/wabi_clustalw-help.html
+pathname: wabiClustalw
+category: _search_analysis
 ---
 
 <span id="job"></span>CLUSTALWのjobの投入

@@ -1,7 +1,9 @@
 ---
 layout: indexed_content
 title: BLAST
+pathname: BLAST
 service_link: http://ddbj.nig.ac.jp/arsa/?lang=ja
+category: _search_analysis
 ---
 # BLAST ヘルプ
 

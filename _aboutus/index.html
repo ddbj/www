@@ -6,11 +6,18 @@ title-ja: センターについて
 <ul>
 {% for service in site.aboutus%}
   {% unless service.title == "aboutus" %}
-  <li>
-    <a href="{{ service.service_link }}">{{ service.title }}</a>
-    <a href="{{ service.title }}">help</a>
-    <br>
-  </li>
+    {% if service.service_link != null %}
+      <li>
+        <a href="{{ service.service_link }}">{{ service.title }}</a>
+        <a href="{{ service.pathname }}">help</a>
+        <br>
+      </li>
+    {% else %}
+      <li>
+        <a href="{{ service.pathname }}">{{ service.title }}</a>
+        <br>
+      </li>
+    {% endif %}
   {% endunless %}
 {% endfor %}
 </ul>

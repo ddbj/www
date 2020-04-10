@@ -2,15 +2,23 @@
 layout: children
 title: search_analysis
 title-ja: 検索・解析
+category: _search_analysis
 ---
 <ul>
 {% for service in site.search_analysis%}
   {% unless service.title == "search_analysis" %}
-  <li>
-    <a href="{{ service.service_link }}">{{ service.title }}</a>
-    <a href="{{ service.title }}">help</a>
-    <br>
-  </li>
+    {% if service.service_link != null %}
+      <li>
+        <a href="{{ service.service_link }}">{{ service.title }}</a>
+        <a href="{{ service.pathname }}">help</a>
+        <br>
+      </li>
+    {% else %}
+      <li>
+        <a href="{{ service.pathname }}">{{ service.title }}</a>
+        <br>
+      </li>
+    {% endif %}
   {% endunless %}
 {% endfor %}
 </ul>
