@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: 過去のサービス
-service_link: https://www.ddbj.nig.ac.jp/past-services.html
+pathname: past-services
 ---
 
 # 過去のサービス

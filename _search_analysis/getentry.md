@@ -1,6 +1,7 @@
 ---
 layout: indexed_content
 title: getentry
+pathname: getentry
 service_link: http://getentry.ddbj.nig.ac.jp/top-j.html
 ---
 ## getentryの機能について

@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: WABI MAFFT ヘルプ
-service_link: https://www.ddbj.nig.ac.jp/wabi_mafft-help.html
+pathname: wabiMAFFT
 ---
 
 ## MAFFT の job の投入

@@ -1,6 +1,7 @@
 ---
 layout: indexed_content
 title: TXSearch
+pathname: TXSearch
 service_link: http://ddbj.nig.ac.jp/tx_search/?lang=ja
 ---
 ## 検索（ウェブ検索フォームから）

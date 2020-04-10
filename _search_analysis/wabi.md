@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: WABI (Web API for Biology)
-service_link: https://www.ddbj.nig.ac.jp/wabi.html
+pathname: wabi
 ---
 
 # WABI (Web API for Biology)

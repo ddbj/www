@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: WABI BLAST ヘルプ
-service_link: https://www.ddbj.nig.ac.jp/wabi_blast-help.html
+pathname: wabiBLAST
 ---
 
 ## 概要
