@@ -3,6 +3,7 @@ layout: indexed_content
 title: ARSA
 pathname: ARSA
 service_link: http://getentry.ddbj.nig.ac.jp/top-j.html
+category: _search_analysis
 ---
 
 # ARSA ヘルプ
