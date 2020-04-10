@@ -3,7 +3,7 @@ layout: indexed_content
 title: VecScreen
 pathname: VecScreen
 service_link: http://ddbj.nig.ac.jp/vecscreen/vecscreen?lang=ja
-category: _search_analysis
+category: search_analysis
 ---
 ## VecScreenとは
 

@@ -1,21 +1,339 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-16T16:55:46+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Kiwifruit</title><link href="http://localhost:4000/2018/08/22/kiwifruit.html" rel="alternate" type="text/html" title="Kiwifruit" /><published>2018-08-22T00:00:00+09:00</published><updated>2018-08-22T00:00:00+09:00</updated><id>http://localhost:4000/2018/08/22/kiwifruit</id><content type="html" xml:base="http://localhost:4000/2018/08/22/kiwifruit.html">&lt;p&gt;Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible
-berry of several species of woody vines in the genus Actinidia.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/www/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/www/" rel="alternate" type="text/html" /><updated>2020-04-10T09:59:45+09:00</updated><id>http://localhost:4000/www/feed.xml</id><title type="html">DDBJ</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">DDBJ Rel. 119.0, DAD Rel. 89.0 Completed</title><link href="http://localhost:4000/www/en/2020/03/26/post1.html" rel="alternate" type="text/html" title="DDBJ Rel. 119.0, DAD Rel. 89.0 Completed" /><published>2020-03-26T00:00:00+09:00</published><updated>2020-03-26T00:00:00+09:00</updated><id>http://localhost:4000/www/en/2020/03/26/post1</id><content type="html" xml:base="http://localhost:4000/www/en/2020/03/26/post1.html">&lt;p&gt;&lt;span class=&quot;bold&quot;&gt;DDBJ Rel. 119.0&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;The most common cultivar group of kiwifruit is oval, about the size of a large
-hen’s egg (5–8 cm (2.0–3.1 in) in length and 4.5–5.5 cm (1.8–2.2 in) in
-diameter). It has a fibrous, dull greenish-brown skin and bright green or
-golden flesh with rows of tiny, black, edible seeds. The fruit has a soft
-texture, with a sweet and unique flavor.&lt;/p&gt;</content><author><name>ted</name></author><summary type="html">Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible berry of several species of woody vines in the genus Actinidia.</summary></entry><entry><title type="html">Apples</title><link href="http://localhost:4000/2018/08/21/apples.html" rel="alternate" type="text/html" title="Apples" /><published>2018-08-21T00:00:00+09:00</published><updated>2018-08-21T00:00:00+09:00</updated><id>http://localhost:4000/2018/08/21/apples</id><content type="html" xml:base="http://localhost:4000/2018/08/21/apples.html">&lt;p&gt;An apple is a sweet, edible fruit produced by an apple tree.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Date: March 25, 2020&lt;/li&gt;
+  &lt;li&gt;2,703,019,984 entries, 7,238,087,008,919 bases&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.119.txt&quot;&gt;DDBJ Release Note&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/stats/relinfo-e.html&quot;&gt;Latest Release Information&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Apple trees are cultivated worldwide, and are the most widely grown species in
-the genus Malus. The tree originated in Central Asia, where its wild ancestor,
-Malus sieversii, is still found today. Apples have been grown for thousands of
-years in Asia and Europe, and were brought to North America by European
-colonists.&lt;/p&gt;</content><author><name>jill</name></author><summary type="html">An apple is a sweet, edible fruit produced by an apple tree.</summary></entry><entry><title type="html">Bananas</title><link href="http://localhost:4000/2018/08/20/bananas.html" rel="alternate" type="text/html" title="Bananas" /><published>2018-08-20T00:00:00+09:00</published><updated>2018-08-20T00:00:00+09:00</updated><id>http://localhost:4000/2018/08/20/bananas</id><content type="html" xml:base="http://localhost:4000/2018/08/20/bananas.html">&lt;p&gt;A banana is an edible fruit – botanically a berry – produced by several kinds
-of large herbaceous flowering plants in the genus Musa.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;bold&quot;&gt;DAD (DDBJ amino acid database) Rel. 89.0&lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;In some countries, bananas used for cooking may be called “plantains”,
-distinguishing them from dessert bananas. The fruit is variable in size, color,
-and firmness, but is usually elongated and curved, with soft flesh rich in
-starch covered with a rind, which may be green, yellow, red, purple, or brown
-when ripe.&lt;/p&gt;</content><author><name>jill</name></author><summary type="html">A banana is an edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa.</summary></entry></feed>
+&lt;ul&gt;
+  &lt;li&gt;Date: March 25, 2020&lt;/li&gt;
+  &lt;li&gt;110,528,765 entries, 34,722,270,677 aa (total number of residues)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.89.txt&quot;&gt;DAD Release Note&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;dl&gt;
+    &lt;dt class=&quot;top_space&quot;&gt;&lt;span class=&quot;red bold&quot;&gt;\*&lt;/span&gt;[Announcement for changing structure of directories on anonymous FTP site](/news/en/200319-e.html)&lt;/dt&gt;
+    &lt;dd&gt;INSDC members have assigned accession numbers with six-letter prefix for bulk sequence data.  To provide those sequence data, we have changed structure of directories on anonymous FTP site.   
+    For example, WGS data are provided 
+
+
+    &lt;pre class=&quot;code&quot;&gt;
+    ddbj_database/wgs/WGS_ORGANISM_LIST.html
+                     /WGS_ORGANISM_LIST.txt
+                     /AA/AA/AAAABA.gz
+                     /AA/AA/AAAABB.gz
+                     /AA/AA/AAAABC.gz
+                     /:
+                     /AA/AAAA.gz
+                     /AA/AAAB.gz
+                     /AA/AAAC.gz 
+    &lt;/pre&gt;&lt;/dd&gt;
+    &lt;dt class=&quot;top_space&quot;&gt;&lt;span class=&quot;red bold&quot;&gt;\*&lt;/span&gt;Apologies for the delay of loading bulk sequence data from GenBank and ENA:&lt;/dt&gt;
+    &lt;dd&gt;In the present release, many of bulk sequence data are lacking, because
+
+    * Very large scale sequence data came from GenBank and ENA and
+    * DDBJ has not yet accommodated the new format of accession numbers.
+
+    We are working to fix the problem, however, it is unclear when we can load all of the bulk sequence data. We regret any inconvenience it may cause and appreciate your understanding.&lt;/dd&gt;&lt;span class=&quot;faq_category&quot;&gt;Service: DDBJ&lt;/span&gt;
+    &lt;span class=&quot;faq_category&quot;&gt;Keywords: Data Release&lt;/span&gt;
+&lt;/dl&gt;</content><author><name></name></author><category term="[&quot;en&quot;]" /><category term="services" /><category term="public_relations" /><summary type="html">DDBJ Rel. 119.0</summary></entry><entry><title type="html">DDBJ リリース 119.0，DAD リリース 89.0 完成</title><link href="http://localhost:4000/www/ja/2020/03/26/post1.html" rel="alternate" type="text/html" title="DDBJ リリース 119.0，DAD リリース 89.0 完成" /><published>2020-03-26T00:00:00+09:00</published><updated>2020-03-26T00:00:00+09:00</updated><id>http://localhost:4000/www/ja/2020/03/26/post1</id><content type="html" xml:base="http://localhost:4000/www/ja/2020/03/26/post1.html">&lt;p&gt;&lt;span class=&quot;bold&quot;&gt;DDBJ リリース 119.0&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;span class=&quot;bold&quot;&gt;公開日：&lt;/span&gt;2020年3月25日&lt;/li&gt;
+  &lt;li&gt;&lt;span class=&quot;bold&quot;&gt;エントリ数：&lt;/span&gt;2,703,019,984 &lt;span class=&quot;bold&quot;&gt;塩基数：&lt;/span&gt;7,238,087,008,919&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.119.txt&quot;&gt;DDBJ Release Note&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/stats/relinfo.html&quot;&gt;現在公開されているリリースの情報&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;span class=&quot;bold&quot;&gt;DAD (DDBJ amino acid database)  リリース 89.0&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;span class=&quot;bold&quot;&gt;公開日：&lt;/span&gt;2020年3月24日&lt;/li&gt;
+  &lt;li&gt;&lt;span class=&quot;bold&quot;&gt;エントリ数：&lt;/span&gt;110,528,765 &lt;span class=&quot;bold&quot;&gt;総アミノ酸残基数(aa)：&lt;/span&gt;34,722,270,677&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.89.txt&quot;&gt;DAD Release Note&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;dl&gt;
+    &lt;dt class=&quot;top_space&quot;&gt;&lt;span class=&quot;red bold&quot;&gt;\*&lt;/span&gt;[anonymous FTP site の directory 構成変更のお知らせ](/news/ja/200319.html)&lt;/dt&gt;
+    &lt;dd&gt;アクセッション番号の書式拡張に伴い、bulk sequence data には 6文字の prefix を持つアクセッション番号の割り当てが開始されています。
+    このようなデータを提供していくために anonymous FTP site の directory 構成を変更いたしました。6文字のプレフィックスの場合、ファイルは、最初の2文字のディレクトリの下にあるアクセッション番号のプレフィックスの3番目と4番目の文字にちなんで名付けられたサブディレクトリに分割されます。  
+    例：WGS データを格納する directory の構成
+
+
+    &lt;pre class=&quot;code&quot;&gt;
+    ddbj_database/wgs/WGS_ORGANISM_LIST.html
+                     /WGS_ORGANISM_LIST.txt
+                     /AA/AA/AAAABA.gz
+                     /AA/AA/AAAABB.gz
+                     /AA/AA/AAAABC.gz
+                     /:
+                     /AA/AAAA.gz
+                     /AA/AAAB.gz
+                     /AA/AAAC.gz 
+    &lt;/pre&gt;&lt;/dd&gt;
+    &lt;dt class=&quot;top_space&quot;&gt;&lt;span class=&quot;red bold&quot;&gt;\*&lt;/span&gt;GenBank と ENA からの bulk sequence data 読み込み遅延のお詫び&lt;/dt&gt;
+    &lt;dd&gt;今回のリリースでは、以下の理由により、大量の bulk sequence data が欠落しています。
+
+    * 非常に大規模な配列データが GenBank と ENA から来た
+    * DDBJ はアクセッション番号の新フォーマットにまだ対応していない問題を解消するため作業を進めていますが、bulk sequence data のすべてがいつ読み込めるか不明です。  
+    ご不便をおかけして申し訳ありませんが、ご理解いただきますようお願い申し上げます。&lt;/dd&gt;&lt;span class=&quot;faq_category&quot;&gt;サービス: DDBJ&lt;/span&gt;
+    &lt;span class=&quot;faq_category&quot;&gt;キーワード: データ公開&lt;/span&gt;
+&lt;/dl&gt;</content><author><name></name></author><category term="ja" /><category term="events" /><category term="registration" /><category term="public_relations" /><summary type="html">DDBJ リリース 119.0</summary></entry><entry><title type="html">NCBI, EBI, NBDC, PDBj の新型コロナウイルス特設ページ</title><link href="http://localhost:4000/www/ja/2020/03/23/post1.html" rel="alternate" type="text/html" title="NCBI, EBI, NBDC, PDBj の新型コロナウイルス特設ページ" /><published>2020-03-23T00:00:00+09:00</published><updated>2020-03-23T00:00:00+09:00</updated><id>http://localhost:4000/www/ja/2020/03/23/post1</id><content type="html" xml:base="http://localhost:4000/www/ja/2020/03/23/post1.html">&lt;p&gt;生命情報・DDBJ センターの協力機関で新型コロナウイルス（COVID-19）の特設ページが作成されています。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ncbi.nlm.nih.gov/&quot;&gt;NCBI&lt;/a&gt; &lt;a href=&quot;https://www.ncbi.nlm.nih.gov/genbank/sars-cov-2-seqs/&quot;&gt;SARS-CoV-2 (Severe acute respiratory syndrome coronavirus 2) Sequences&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ebi.ac.uk&quot;&gt;EBI&lt;/a&gt; &lt;a href=&quot;https://www.ebi.ac.uk/about/news/announcements/coronavirus-data&quot;&gt;Coronavirus data resources at EMBL-EBI&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://biosciencedbc.jp/&quot;&gt;NBDC&lt;/a&gt; &lt;a href=&quot;https://biosciencedbc.jp/blog/20200303-01.html&quot;&gt;新型コロナウイルス（SARS-CoV-2）および新型コロナウイルス感染症（COVID-19）に関する研究データ・リソース&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pdbj.org/&quot;&gt;PDBj&lt;/a&gt; &lt;a href=&quot;https://pdbj.org/featured/covid-19&quot;&gt;新型コロナウイルスの構造情報&lt;/a&gt;&lt;span class=&quot;faq_category&quot;&gt;サービス: DDBJ Center&lt;/span&gt;
+&lt;span class=&quot;faq_category&quot;&gt;キーワード: お知らせ&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="ja" /><category term="events" /><category term="registration" /><category term="public_relations" /><summary type="html">生命情報・DDBJ センターの協力機関で新型コロナウイルス（COVID-19）の特設ページが作成されています。</summary></entry><entry><title type="html">Coronavirus data resource sites of NCBI, EBI, NBDC and PDBj</title><link href="http://localhost:4000/www/en/2020/03/23/post1.html" rel="alternate" type="text/html" title="Coronavirus data resource sites of NCBI, EBI, NBDC and PDBj" /><published>2020-03-23T00:00:00+09:00</published><updated>2020-03-23T00:00:00+09:00</updated><id>http://localhost:4000/www/en/2020/03/23/post1</id><content type="html" xml:base="http://localhost:4000/www/en/2020/03/23/post1.html">&lt;p&gt;Our collaborating institutions have opened coronavirus data resource sites.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ncbi.nlm.nih.gov/&quot;&gt;NCBI&lt;/a&gt; &lt;a href=&quot;https://www.ncbi.nlm.nih.gov/genbank/sars-cov-2-seqs/&quot;&gt;SARS-CoV-2 (Severe acute respiratory syndrome coronavirus 2) Sequences&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.ebi.ac.uk&quot;&gt;EBI&lt;/a&gt; &lt;a href=&quot;https://www.ebi.ac.uk/about/news/announcements/coronavirus-data&quot;&gt;Coronavirus data resources at EMBL-EBI&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://biosciencedbc.jp/&quot;&gt;NBDC&lt;/a&gt; &lt;a href=&quot;https://biosciencedbc.jp/blog/20200303-01.html&quot;&gt;新型コロナウイルス（SARS-CoV-2）および新型コロナウイルス感染症（COVID-19）に関する研究データ・リソース (Japanese)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pdbj.org/&quot;&gt;PDBj&lt;/a&gt; &lt;a href=&quot;https://pdbj.org/featured/covid-19&quot;&gt;COVID-19 featured content&lt;/a&gt;&lt;span class=&quot;faq_category&quot;&gt;Service: DDBJ Center&lt;/span&gt;
+&lt;span class=&quot;faq_category&quot;&gt;Keywords: Announcement&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="en" /><category term="public_relations" /><summary type="html">Our collaborating institutions have opened coronavirus data resource sites.</summary></entry><entry><title type="html">anonymous FTP site の directory 構成変更のお知らせ</title><link href="http://localhost:4000/www/ja/2020/03/19/post1.html" rel="alternate" type="text/html" title="anonymous FTP site の directory 構成変更のお知らせ" /><published>2020-03-19T00:00:00+09:00</published><updated>2020-03-19T00:00:00+09:00</updated><id>http://localhost:4000/www/ja/2020/03/19/post1</id><content type="html" xml:base="http://localhost:4000/www/ja/2020/03/19/post1.html">&lt;p&gt;&lt;a href=&quot;/activities/icm-reports.html#2018&quot;&gt;アクセッション番号の書式拡張&lt;/a&gt;に伴い、bulk sequence data には 6文字の prefix を持つアクセッション番号の割り当てが開始されています。このようなデータを提供していくために anonymous FTP site の directory 構成を以下のように変更いたします。利用者の皆様には、ご理解とご協力をお願いいたします。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/news/ja/wn180117.html&quot;&gt;以前の変更&lt;/a&gt;についてもご参照ください。&lt;/p&gt;
+
+&lt;h3 id=&quot;1-wgs-データを格納する-directory-の構成&quot;&gt;1) WGS データを格納する directory の構成&lt;/h3&gt;
+
+&lt;p&gt;2020 年 2 月 6 日より、directory 構成を以下のように拡張しました。&lt;/p&gt;
+
+&lt;pre class=&quot;code&quot;&gt;
+ddbj_database/wgs/WGS_ORGANISM_LIST.html
+                 /WGS_ORGANISM_LIST.txt
+                 /AA/AA/AAAABA.gz
+                 /AA/AA/AAAABB.gz
+                 /AA/AA/AAAABC.gz
+                 /:
+                 /AA/AAAA.gz
+                 /AA/AAAB.gz
+                 /AA/AAAC.gz 
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;2-tsa-tls-tpa-wgs-データを格納する-directory-の構成&quot;&gt;2) TSA, TLS, TPA-WGS データを格納する directory の構成&lt;/h3&gt;
+
+&lt;p&gt;2020 年 5 月 20 日より、TSA, TLS, TPA-WGS データを格納する directory を以下のように分割し、構成を変更いたします。&lt;/p&gt;
+
+&lt;p&gt;[変更対象ディレクトリ]&lt;/p&gt;
+
+&lt;pre class=&quot;code&quot;&gt;
+ftp://ftp.ddbj.nig.ac.jp/ddbj_database/tsa/
+ftp://ftp.ddbj.nig.ac.jp/ddbj_database/tls/
+ftp://ftp.ddbj.nig.ac.jp/ddbj_database/tpa/wgs/
+&lt;/pre&gt;
+
+&lt;dl&gt;
+    &lt;dt&gt;[変更前] &lt;/dt&gt;
+    &lt;dd&gt;すべての データを、アクセッション番号 の prefix をファイル名として、下記の directory にそれぞれ設置していました。&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;pre class=&quot;code&quot;&gt;
+ddbj_database/tsa/TSA_ORGANISM_LIST.html
+                 /TSA_ORGANISM_LIST.txt
+                 /GAAA.gz
+                 /GAAB.gz
+                 /GAAC.gz
+
+ddbj_database/tls/TLS_ORGANISM_LIST.html
+                 /TLS_ORGANISM_LIST.txt
+                 /KAAA.gz
+                 /KAAB.gz
+                 /KAAC.gz
+
+ddbj_database/tpa/wgs/TPAWGS_ORGANISM_LIST.html
+                     /TPAWGS_ORGANISM_LIST.txt
+                     /DAAAAB.gz
+                     /DAAAAC.gz
+                     /DAAAAD.gz
+                     /:
+                     /DAAB.gz
+                     /DAAF.gz
+                     /DAAI.gz 
+&lt;/pre&gt;
+
+&lt;dl&gt;
+    &lt;dt&gt;[変更後] &lt;/dt&gt;
+    &lt;dd&gt;アクセッション番号の prefix の最初の２文字ごとの sub-directory に分割して設置します。&lt;/dd&gt;
+    &lt;dd&gt;6文字の prefix ファイルが存在する場合は、上記ディレクトリ直下に、prefix の3文字目と4文字目ごとの sub-directory に分割して設置します。&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;pre class=&quot;code&quot;&gt;
+ddbj_database/tsa/TSA_ORGANISM_LIST.html
+                 /TSA_ORGANISM_LIST.txt
+                 /GA/GAAA.gz
+                 /GA/GAAB.gz
+                 /GA/GAAC.gz
+
+ddbj_database/tls/TLS_ORGANISM_LIST.html
+                 /TLS_ORGANISM_LIST.txt
+                 /KA/KAAA.gz
+                 /KA/KAAB.gz
+                 /KA/KAAC.gz
+
+ddbj_database/tpa/wgs/TPAWGS_ORGANISM_LIST.html
+                     /TPAWGS_ORGANISM_LIST.txt
+                     /DA/AA/DAAAAB.gz
+                     /DA/AA/DAAAAC.gz
+                     /DA/AA/DAAAAD.gz
+                     /:
+                     /DA/DAAB.gz
+                     /DA/DAAF.gz
+                     /DA/DAAI.gz 
+&lt;/pre&gt;
+
+&lt;p&gt;各データの ORGANISM_LIST.txt, ORGANISM_LIST.html は引き続き それぞれの directory に維持いたします。&lt;/p&gt;
+
+&lt;pre class=&quot;code&quot;&gt;
+ddbj_database/tsa/TSA_ORGANISM_LIST.html
+                 /TSA_ORGANISM_LIST.txt 
+ddbj_database/tls/TLS_ORGANISM_LIST.html
+                 /TLS_ORGANISM_LIST.txt 
+ddbj_database/tpa/wgs/TPAWGS_ORGANISM_LIST.html
+                     /TPAWGS_ORGANISM_LIST.txt
+&lt;/pre&gt;
+&lt;p&gt;&lt;span class=&quot;faq_category&quot;&gt;サービス: DDBJ, BioProject, BioSample, DRA&lt;/span&gt;
+&lt;span class=&quot;faq_category&quot;&gt;キーワード: お知らせ&lt;/span&gt;&lt;/p&gt;</content><author><name></name></author><category term="[&quot;ja&quot;]" /><category term="services" /><category term="public_relations" /><summary type="html">アクセッション番号の書式拡張に伴い、bulk sequence data には 6文字の prefix を持つアクセッション番号の割り当てが開始されています。このようなデータを提供していくために anonymous FTP site の directory 構成を以下のように変更いたします。利用者の皆様には、ご理解とご協力をお願いいたします。</summary></entry><entry><title type="html">Announcement for changing structure of directories on anonymous FTP site</title><link href="http://localhost:4000/www/en/2020/03/19/post1.html" rel="alternate" type="text/html" title="Announcement for changing structure of directories on anonymous FTP site" /><published>2020-03-19T00:00:00+09:00</published><updated>2020-03-19T00:00:00+09:00</updated><id>http://localhost:4000/www/en/2020/03/19/post1</id><content type="html" xml:base="http://localhost:4000/www/en/2020/03/19/post1.html">&lt;p&gt;Because of &lt;a href=&quot;/activities/icm-reports-e.html#2018&quot;&gt;the format extension of the accession numbers&lt;/a&gt;, INSDC members have assigned accession numbers with six-letter prefix for bulk sequence data. To provide those sequence data, we will change structure of directories on anonymous FTP site as follows. We appreciate your understanding and cooperation.&lt;/p&gt;
+
+&lt;p&gt;See also &lt;a href=&quot;/news/en/wn180117-e.html&quot;&gt;our previous change&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-structure-of-directories-for-wgs-data&quot;&gt;1) Structure of directories for WGS data&lt;/h3&gt;
+
+&lt;p&gt;Since February 6th, 2020, we have expanded the directory structure as follows.&lt;/p&gt;
+
+&lt;pre class=&quot;code&quot;&gt;
+ddbj_database/wgs/WGS_ORGANISM_LIST.html
+                 /WGS_ORGANISM_LIST.txt
+                 /AA/AA/AAAABA.gz
+                 /AA/AA/AAAABB.gz
+                 /AA/AA/AAAABC.gz
+                 /:
+                 /AA/AAAA.gz
+                 /AA/AAAB.gz
+                 /AA/AAAC.gz 
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;2-structure-of-directories-for-tsa-tls-and-tpa-wgs-data&quot;&gt;2) Structure of directories for TSA, TLS, and TPA-WGS data&lt;/h3&gt;
+
+&lt;p&gt;From May 20th, 2020, we will divide the files of TSA, TLS and TPA-WGS data into sub-directories as follows.&lt;/p&gt;
+
+&lt;p&gt;Target directories:&lt;/p&gt;
+
+&lt;pre class=&quot;code&quot;&gt;
+ftp://ftp.ddbj.nig.ac.jp/ddbj_database/tsa/
+ftp://ftp.ddbj.nig.ac.jp/ddbj_database/tls/
+ftp://ftp.ddbj.nig.ac.jp/ddbj_database/tpa/wgs/
+&lt;/pre&gt;
+
+&lt;dl&gt;
+    &lt;dt&gt;Before:&lt;/dt&gt;
+    &lt;dd&gt;All data in the files named as the prefixes of their accession numbers were placed with under the following directories;&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;pre class=&quot;code&quot;&gt;
+ddbj_database/tsa/TSA_ORGANISM_LIST.html
+                 /TSA_ORGANISM_LIST.txt
+                 /GAAA.gz
+                 /GAAB.gz
+                 /GAAC.gz
+
+ddbj_database/tls/TLS_ORGANISM_LIST.html
+                 /TLS_ORGANISM_LIST.txt
+                 /KAAA.gz
+                 /KAAB.gz
+                 /KAAC.gz
+
+ddbj_database/tpa/wgs/TPAWGS_ORGANISM_LIST.html
+                     /TPAWGS_ORGANISM_LIST.txt
+                     /DAAAAB.gz
+                     /DAAAAC.gz
+                     /DAAAAD.gz
+                     /:
+                     /DAAB.gz
+                     /DAAF.gz
+                     /DAAI.gz 
+&lt;/pre&gt;
+
+&lt;dl&gt;
+    &lt;dt&gt;After:&lt;/dt&gt;
+    &lt;dd&gt;The files will be divided into following sub-directories named after the first two letters of the prefixes of their accession numbers. &lt;/dd&gt;
+    &lt;dd&gt;In cases of six-letter prefixes, the files will be divided into sub-directories named after the 3rd and 4th letters of the prefixes of their accession numbers under the directories of the first two letters. &lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;pre class=&quot;code&quot;&gt;
+ddbj_database/tsa/TSA_ORGANISM_LIST.html
+                 /TSA_ORGANISM_LIST.txt
+                 /GA/GAAA.gz
+                 /GA/GAAB.gz
+                 /GA/GAAC.gz
+
+ddbj_database/tls/TLS_ORGANISM_LIST.html
+                 /TLS_ORGANISM_LIST.txt
+                 /KA/KAAA.gz
+                 /KA/KAAB.gz
+                 /KA/KAAC.gz
+
+ddbj_database/tpa/wgs/TPAWGS_ORGANISM_LIST.html
+                     /TPAWGS_ORGANISM_LIST.txt
+                     /DA/AA/DAAAAB.gz
+                     /DA/AA/DAAAAC.gz
+                     /DA/AA/DAAAAD.gz
+                     /:
+                     /DA/DAAB.gz
+                     /DA/DAAF.gz
+                     /DA/DAAI.gz 
+&lt;/pre&gt;
+
+&lt;p&gt;Please note that the files for the file lists of TSA, TLS and TPAWGS data are remained in the following directories.&lt;/p&gt;
+
+&lt;pre class=&quot;code&quot;&gt;
+ddbj_database/tsa/TSA_ORGANISM_LIST.html
+                 /TSA_ORGANISM_LIST.txt 
+ddbj_database/tls/TLS_ORGANISM_LIST.html
+                 /TLS_ORGANISM_LIST.txt 
+ddbj_database/tpa/wgs/TPAWGS_ORGANISM_LIST.html
+                     /TPAWGS_ORGANISM_LIST.txt
+&lt;/pre&gt;
+&lt;p&gt;&lt;span class=&quot;faq_category&quot;&gt;Service: DDBJ, BioProject, BioSample, DRA&lt;/span&gt;
+&lt;span class=&quot;faq_category&quot;&gt;Keywords: Announcement&lt;/span&gt;&lt;/p&gt;</content><author><name></name></author><category term="en" /><category term="events" /><category term="registration" /><summary type="html">Because of the format extension of the accession numbers, INSDC members have assigned accession numbers with six-letter prefix for bulk sequence data. To provide those sequence data, we will change structure of directories on anonymous FTP site as follows. We appreciate your understanding and cooperation.</summary></entry><entry><title type="html">Release of sequence data of Okinawa Rail (Gallirallus okinawae)</title><link href="http://localhost:4000/www/en/2020/03/17/post1.html" rel="alternate" type="text/html" title="Release of sequence data of Okinawa Rail (Gallirallus okinawae) " /><published>2020-03-17T00:00:00+09:00</published><updated>2020-03-17T00:00:00+09:00</updated><id>http://localhost:4000/www/en/2020/03/17/post1</id><content type="html" xml:base="http://localhost:4000/www/en/2020/03/17/post1.html">&lt;p&gt;DDBJ released sequence data of Okinawa Rail (&lt;span class=&quot;italic&quot;&gt;Gallirallus okinawae&lt;/span&gt;), which had been submitted by National Institute for Environmental Studies.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/ddbj/acc_def-e.html&quot;&gt;The accession numbers&lt;/a&gt; are as follows. &lt;br /&gt;
+They are available on &lt;a href=&quot;http://getentry.ddbj.nig.ac.jp/top-e.html&quot;&gt;getentry&lt;/a&gt; or &lt;a href=&quot;http://ddbj.nig.ac.jp/DRASearch/&quot;&gt;DRASearc&lt;/a&gt;.&lt;/p&gt;
+
+&lt;dl&gt;
+    &lt;dt&gt;[TSA](/ddbj/tsa-e.html)&lt;/dt&gt;
+    &lt;dd&gt;ICPP01000001-ICPP01012819 (12,819 entries) [ICPP.gz](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/tsa/ICPP.gz)&lt;/dd&gt;
+    &lt;dt&gt;[DRA](/dra/index-e.html)&lt;/dt&gt;
+    &lt;dd&gt;DRR185735-DRR185737 (DRA008697) &lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;&lt;span class=&quot;faq_category&quot;&gt;Service: DDBJ, BioProject, BioSample, DRA&lt;/span&gt;
+&lt;span class=&quot;faq_category&quot;&gt;Keywords: Data Release&lt;/span&gt;&lt;/p&gt;</content><author><name></name></author><category term="en" /><category term="events" /><category term="registration" /><category term="public_relations" /><summary type="html">DDBJ released sequence data of Okinawa Rail (Gallirallus okinawae), which had been submitted by National Institute for Environmental Studies.</summary></entry><entry><title type="html">ヤンバルクイナ (Gallirallus okinawae) の配列データ公開</title><link href="http://localhost:4000/www/ja/2020/03/17/post1.html" rel="alternate" type="text/html" title="ヤンバルクイナ (Gallirallus okinawae) の配列データ公開" /><published>2020-03-17T00:00:00+09:00</published><updated>2020-03-17T00:00:00+09:00</updated><id>http://localhost:4000/www/ja/2020/03/17/post1</id><content type="html" xml:base="http://localhost:4000/www/ja/2020/03/17/post1.html">&lt;p&gt;国立環境研究所から登録されたヤンバルクイナ (&lt;span class=&quot;italic&quot;&gt;Gallirallus okinawae&lt;/span&gt;) の配列データが公開されました。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/ddbj/acc_def.html&quot;&gt;アクセッション番号&lt;/a&gt;は以下の通りです。&lt;br /&gt;
+&lt;a href=&quot;http://getentry.ddbj.nig.ac.jp/top-j.html&quot;&gt;getentry&lt;/a&gt; または &lt;a href=&quot;http://ddbj.nig.ac.jp/DRASearch/&quot;&gt;DRASearch&lt;/a&gt; から検索可能です。&lt;/p&gt;
+
+&lt;dl&gt;
+    &lt;dt&gt;[TSA](/ddbj/tsa.html)&lt;/dt&gt;
+    &lt;dd&gt;ICPP01000001-ICPP01012819 (12,819 entries) [ICPP.gz](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/tsa/ICPP.gz)&lt;/dd&gt;
+    &lt;dt&gt;[DRA](/dra/index.html)&lt;/dt&gt;
+    &lt;dd&gt;DRR185735-DRR185737 (DRA008697) &lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;&lt;span class=&quot;faq_category&quot;&gt;サービス: DDBJ, BioProject, BioSample, DRA&lt;/span&gt;
+&lt;span class=&quot;faq_category&quot;&gt;キーワード: データ公開&lt;/span&gt;&lt;/p&gt;</content><author><name></name></author><category term="[&quot;ja&quot;]" /><category term="public_relations" /><summary type="html">国立環境研究所から登録されたヤンバルクイナ (Gallirallus okinawae) の配列データが公開されました。</summary></entry><entry><title type="html">新型コロナウイルスの配列と関連情報</title><link href="http://localhost:4000/www/ja/2020/02/04/post1.html" rel="alternate" type="text/html" title="新型コロナウイルスの配列と関連情報" /><published>2020-02-04T00:00:00+09:00</published><updated>2020-02-04T00:00:00+09:00</updated><id>http://localhost:4000/www/ja/2020/02/04/post1</id><content type="html" xml:base="http://localhost:4000/www/ja/2020/02/04/post1.html">&lt;p&gt;いわゆる新型コロナウイルス SARS-CoV-2 (Severe acute respiratory syndrome coronavirus 2) の配列と関連情報のリンクが GenBank (NCBI/NLM/NIH) において提供されています。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.ncbi.nlm.nih.gov/genbank/2019-ncov-seqs/&quot;&gt;SARS-CoV-2 Sequences&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;WHO からの勧告により、一部の SARS-CoV-2 配列データは &lt;a href=&quot;https://www.gisaid.org/&quot;&gt;GISAID&lt;/a&gt; で共有されることがあります。&lt;span class=&quot;faq_category&quot;&gt;サービス: DDBJ, BioProject, BioSample, DRA&lt;/span&gt;
+&lt;span class=&quot;faq_category&quot;&gt;キーワード: お知らせ&lt;/span&gt;&lt;/p&gt;</content><author><name></name></author><category term="[&quot;ja&quot;]" /><category term="public_relations" /><category term="registration" /><summary type="html">いわゆる新型コロナウイルス SARS-CoV-2 (Severe acute respiratory syndrome coronavirus 2) の配列と関連情報のリンクが GenBank (NCBI/NLM/NIH) において提供されています。</summary></entry><entry><title type="html">Sequences and related information for SARS-CoV-2</title><link href="http://localhost:4000/www/en/2020/02/04/post1.html" rel="alternate" type="text/html" title="Sequences and related information for SARS-CoV-2 " /><published>2020-02-04T00:00:00+09:00</published><updated>2020-02-04T00:00:00+09:00</updated><id>http://localhost:4000/www/en/2020/02/04/post1</id><content type="html" xml:base="http://localhost:4000/www/en/2020/02/04/post1.html">&lt;p&gt;On GenBank (NCBI/NLM/NIH), the links of sequences and related information for SARS-CoV-2 (Severe acute respiratory syndrome coronavirus 2) are provided.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.ncbi.nlm.nih.gov/genbank/2019-ncov-seqs/&quot;&gt;SARS-CoV-2 Sequences&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Followng to recommendations from WHO, some sequence data of SARS-CoV-2 are shared on &lt;a href=&quot;https://www.gisaid.org/&quot;&gt;GISAID&lt;/a&gt;.&lt;span class=&quot;faq_category&quot;&gt;Service: DDBJ, BioProject, BioSample, DRA&lt;/span&gt;
+&lt;span class=&quot;faq_category&quot;&gt;Keywords: Announcement&lt;/span&gt;&lt;/p&gt;</content><author><name></name></author><category term="en" /><category term="events" /><category term="registration" /><summary type="html">On GenBank (NCBI/NLM/NIH), the links of sequences and related information for SARS-CoV-2 (Severe acute respiratory syndrome coronavirus 2) are provided.</summary></entry></feed>

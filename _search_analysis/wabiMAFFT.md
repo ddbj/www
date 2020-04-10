@@ -2,7 +2,7 @@
 layout: indexed_content
 title: WABI MAFFT ヘルプ
 pathname: wabiMAFFT
-category: _search_analysis
+category: search_analysis
 ---
 
 ## MAFFT の job の投入
