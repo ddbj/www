@@ -185,8 +185,7 @@ features](ddbj/file-format.html#biological_feature)
 +-----------------------------------+-----------------------------------+
 | STS                               | sequence tagged sites; genome     |
 |                                   | sequencing の tag となる配列。\   |
-|                                   | ゲ                                |
-|                                   | ノム上の位置情報、[primer\_bind]  |
+|                                   | ゲノム上の位置情報、[primer\_bind] (/ddbj/features.html#primer_bind)feature,[PCR\_conditions](/ddbj/qualifiers.html#PCR_conditions)qualifier などの記載を推奨します。   |
 |                                   | (/ddbj/features.html#primer_bind) |
 |                                   | feature,                          |
 |                                   | [PCR\_conditions](/ddb            |
