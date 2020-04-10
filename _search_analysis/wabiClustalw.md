@@ -2,6 +2,7 @@
 layout: indexed_content
 title: WABI ClustalW ヘルプ
 pathname: wabiClustalw
+category: _search_analysis
 ---
 
 <span id="job"></span>CLUSTALWのjobの投入

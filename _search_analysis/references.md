@@ -2,6 +2,7 @@
 layout: indexed_content
 title: 関連論文
 pathname: references
+category: _search_analysis
 ---
 
 # 関連論文
