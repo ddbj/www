@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: GEA への登録
-service_link: https://www.ddbj.nig.ac.jp/stats/gea-submission.html
+pathname: gea-submission
 category: _statistics
 ---
 

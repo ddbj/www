@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: JGA への登録
-service_link: https://www.ddbj.nig.ac.jp/stats/jga-submission.html
+pathname: jga-submission
 category: _statistics
 ---
 

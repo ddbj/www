@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: JGA データ公開
-service_link: https://www.ddbj.nig.ac.jp/stats/jga-release.html
+pathname: jga-release
 category: _statistics
 ---
 

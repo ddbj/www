@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: DRA への登録
-service_link: https://www.ddbj.nig.ac.jp/stats/dra-submission.html
+pathname: dra-submission
 category: _statistics
 ---
 

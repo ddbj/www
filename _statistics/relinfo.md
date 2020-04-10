@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: 最新リリースの情報
-service_link: https://www.ddbj.nig.ac.jp/stats/relinfo.html
+pathname: relinfo
 category: _statistics
 ---
 

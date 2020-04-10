@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: DDBJ リリース統計
-service_link: https://www.ddbj.nig.ac.jp/stats/release.html
+pathname: release
 category: statistics
 ---
 

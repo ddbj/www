@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: リリースノート (DDBJ, 16S rRNA, DAD)
-service_link: https://www.ddbj.nig.ac.jp/stats/relnote.html
+pathname: relnote
 category: _statistics
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: ウェブアクセス
-service_link: https://www.ddbj.nig.ac.jp/stats/web-access.html
+pathname: web-access
 category: _statistics
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: DRA データ公開
-service_link: https://www.ddbj.nig.ac.jp/stats/dra-release.html
+pathname: dra-release
 category: _statistics
 ---
 

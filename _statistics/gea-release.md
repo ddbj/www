@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: GEA データ公開
-service_link: https://www.ddbj.nig.ac.jp/stats/gea-release.html
+pathname: gea-release
 category: _statistics
 ---
 
