@@ -3,7 +3,7 @@ layout: indexed_content
 title: ClustalW
 pathname: ClustalW
 service_link: http://clustalw.ddbj.nig.ac.jp/index.php?lang=ja
-category: _search_analysis
+category: search_analysis
 ---
 ## Version
 

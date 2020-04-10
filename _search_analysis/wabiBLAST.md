@@ -2,7 +2,7 @@
 layout: indexed_content
 title: WABI BLAST ヘルプ
 pathname: wabiBLAST
-category: _search_analysis
+category: search_analysis
 ---
 
 ## 概要

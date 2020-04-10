@@ -2,7 +2,7 @@
 layout: indexed_content
 title: 過去のサービス
 pathname: past-services
-category: _search_analysis
+category: search_analysis
 ---
 
 # 過去のサービス

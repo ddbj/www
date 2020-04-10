@@ -2,7 +2,7 @@
 layout: indexed_content
 title: DDBJ への登録数
 service_link: https://www.ddbj.nig.ac.jp/stats/submission.html
-category: _statistics
+category: statistics
 ---
 
 # DDBJ への登録数
