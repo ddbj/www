@@ -5,6 +5,8 @@ pathname: VecScreen
 service_link: http://ddbj.nig.ac.jp/vecscreen/vecscreen?lang=ja
 category: search_analysis
 ---
+# VecScreen ヘルプ
+
 ## VecScreenとは
 
 VecScreenは塩基配列中に含まれるベクター，リンカー，アダプター，プライマー領域などの領域 (本文ではベクターコンタミと表記します) をベクター配列データベースとのblast検索により検出するツールです。プログラム本体は[NCBIのvecscreenプログラム](//www.ncbi.nlm.nih.gov/tools/vecscreen/univec/)を使用しています。

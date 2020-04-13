@@ -5,11 +5,9 @@ service_link: https://www.ddbj.nig.ac.jp/data-categories.html
 category: submission
 ---
 
-登録データ種別
-==============
+# 登録データ種別
 
-DDBJ に登録可能なデータ {#accept}
------------------------
+## DDBJ に登録可能なデータ {#accept}
 
 DDBJ では, [Primary entry](/ddbj/submission.html#primary_entry)
 のデータとして登録依頼のあったデータにつきましては,
@@ -48,8 +46,7 @@ DDBJ では, 配列が同一であっても独立に配列決定されたデー�
 配列に関する権利, 配列決定の進捗などを考える上で,
 複数回の登録が必要なケースもありますので, 特に禁じてはおりません。
 
-配列データ {#real}
-----------
+## 配列データ {#real}
 
 ### アノテーションを付与した/アセンブルした塩基配列 {#ann}
 
@@ -87,8 +84,7 @@ DDBJ では, 配列が同一であっても独立に配列決定されたデー�
 :   遺伝子発現、エピジェネティクスやジェノタイピング SNP
     アレイ等の機能ゲノミクスデータの登録先。
 
-プロジェクト {#project}
-------------
+## プロジェクト {#project}
 
 [BioProject](/bioproject/index.html)
 :   研究プロジェクトとプロジェクトに由来するデータをまとめるためのデータベース。\
@@ -96,21 +92,18 @@ DDBJ では, 配列が同一であっても独立に配列決定されたデー�
     [WGS](/ddbj/wgs.html), [TLS](/ddbj/tls.html), [TSA](/ddbj/tsa.html)
     の登録の際は、登録が義務付けられています。
 
-サンプル {#project}
---------
+## サンプル {#project}
 
 [BioSample](/biosample/index.html)
 :   実験データを得るために使用された生物学的な試料 (サンプル)
     についての情報を集中して管理するデータベース。
 
-アクセス制限が必要なヒトデータの登録 {#control}
-------------------------------------
+## アクセス制限が必要なヒトデータの登録 {#control}
 
 [JGA: Japanese Genotype-phenotype Archive](/jga/index.html)
 :   個人に由来するアクセス制限が必要な遺伝学的なデータと表現型情報の登録。
 
-Annotated/Assembled データの区分 {#detail}
---------------------------------
+## Annotated/Assembled データの区分 {#detail}
 
 ### [Division](/ddbj/flat-file.html#Division) conventional sequence data {#division}
 

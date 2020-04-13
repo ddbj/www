@@ -4,6 +4,7 @@ title: WABI MAFFT ヘルプ
 pathname: wabiMAFFT
 category: search_analysis
 ---
+# WABI MAFFT ヘルプ
 
 ## MAFFT の job の投入
 

@@ -5,6 +5,10 @@ pathname: ClustalW
 service_link: http://clustalw.ddbj.nig.ac.jp/index.php?lang=ja
 category: search_analysis
 ---
+# ClustalW ヘルプ
+ClustalW は，DNA配列やタンパク質配列の多重整列のためのツールです。
+DDBJ では，通常版（最新バージョン）と DDBJ拡張版(Version 1.83, Modified by Dr. Kirill Kryukov) を提供しています。
+
 ## Version
 
 "2.1" （ClustalW の最新版），または"1.83"（Dr. Kirill Kryukov　改訂のDDBJ オリジナル） の何れかを選択してください。　デフォルトは　"2.1" です。  

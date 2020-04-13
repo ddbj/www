@@ -4,8 +4,9 @@ title: WABI ClustalW ヘルプ
 pathname: wabiClustalw
 category: search_analysis
 ---
+# WABI ClustalW ヘルプ
 
-<span id="job"></span>CLUSTALWのjobの投入
+## CLUSTALWのjobの投入
 
 以下のパラメーターを POST します。  
 format, result は必須です。  
