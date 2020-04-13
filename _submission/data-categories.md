@@ -116,20 +116,18 @@ feature](/ddbj/file-format.html#biological_feature)
 由来する生物の系統分類に基づいて自動的に下記の DIVISION
 に振り分けられます。
 
-::: {.news_post_container .glossary}
-  Division   Description
-  ---------- ----------------------------------------------
-  HUM        ヒト
-  PRI        霊長類(ヒトを除く)
-  ROD        齧歯類
-  MAM        哺乳類(ヒト、霊長類、齧歯類を除く)
-  VRT        脊椎動物(ヒト、霊長類、齧歯類、哺乳類を除く)
-  INV        無脊椎動物
-  PLN        植物・真菌類など
-  BCT        バクテリア
-  VRL        ウィルス
-  PHG        ファージ
-:::
+|  Division  |  Description  |
+| ---- | ---- |
+|  HUM  |  ヒト  |
+|  PRI  |  霊長類(ヒトを除く)  |
+|  ROD  |  齧歯類  |
+|  MAM  |  哺乳類(ヒト、霊長類、齧歯類を除く)  |
+|  VRT  |  脊椎動物(ヒト、霊長類、齧歯類、哺乳類を除く)  |
+|  INV  |  無脊椎動物  |
+|  PLN  |  植物・真菌類など  |
+|  BCT  |  バクテリア  |
+|  VRL  |  ウィルス  |
+|  PHG  |  ファージ  |
 
 #### ENV/SYN: 由来生物種を特定できない場合、環境サンプルと合成配列 {#env .bold}
 
@@ -139,20 +137,12 @@ source feature と、それ以外に最低 1 つの [Biological
 feature](ddbj/file-format.html#biological_feature)
 による特徴づけが必要となります。
 
-::: {.news_post_container .glossary}
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Division                            Description
-  ----------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------
-  [ENV](/ddbj/env.html)               PCR, DGGE, あるいは、その他の方法で直接、分子を単離した環境上のサンプルに由来した配列。\
-                                      ENV の場合は source feature に [environmental\_sample qualifier](/ddbj/qualifiers.html#environmental_sample) を記載する必要があります。
+|  Division  |  Description  |
+| ---- | ---- |
+|  [ENV](/ddbj/env.html)  |  PCR, DGGE, あるいは、その他の方法で直接、分子を単離した環境上のサンプルに由来した配列。<br>ENV の場合は source feature に [environmental\_sample qualifier](/ddbj/qualifiers.html#environmental_sample) を記載する必要があります。  |
+|  SYN  |  人為的な操作により構築された合成配列 <br> SYN は合成配列、例えば発現ベクターの配列、プライマーの配列、キメラ配列、fusion配列、人為的に変異を導入した配列などが該当します。複数の生物種や遺伝子由来の断片をつなぎ合わせた合成配列では、各々の配列の由来を示すために複数のsource feature を使用して記載する場合があります。<br> [登録の見本; E05) synthetic construct](/ddbj/example.html#E05) もご参照ください。 |
 
-  SYN                                 人為的な操作により構築された合成配列\
-                                      SYN は合成配列、例えば発現ベクターの配列、プライマーの配列、キメラ配列、fusion
-                                      配列、人為的に変異を導入した配列などが該当します。複数の生物種や遺伝子由来の断片をつなぎ合わせた合成配列では、各々の配列の由来を示すために複数の
-                                      source feature を使用して記載する場合があります。\
-                                      [登録の見本; E05) synthetic construct](/ddbj/example.html#E05) もご参照ください。
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-:::
+
 
 #### EST/GSS/HTC/HTG/STS: 配列決定の確度、あるいは、目的による区別 {#est .bold}
 
@@ -166,56 +156,13 @@ features](ddbj/file-format.html#biological_feature)
 を記載することも可能です。\
 それぞれのデータに関する説明ページも合わせてご覧ください。
 
-::: {.news_post_container .glossary}
-+-----------------------------------+-----------------------------------+
-| Division                          | Description                       |
-+===================================+===================================+
-| [EST](/ddbj/est.html)             | expressed sequence tags; short    |
-|                                   | single pass の cDNA 配列。        |
-+-----------------------------------+-----------------------------------+
-| [GSS](/ddbj/gss.html)             | genome survey sequences; short    |
-|                                   | single pass のゲノム配列。        |
-+-----------------------------------+-----------------------------------+
-| STS                               | sequence tagged sites; genome     |
-|                                   | sequencing の tag となる配列。\   |
-|                                   | ゲノム上の位置情報、[primer\_bind] (/ddbj/features.html#primer_bind)feature,[PCR\_conditions](/ddbj/qualifiers.html#PCR_conditions)qualifier などの記載を推奨します。   |
-|                                   | (/ddbj/features.html#primer_bind) |
-|                                   | feature,                          |
-|                                   | [PCR\_conditions](/ddb            |
-|                                   | j/qualifiers.html#PCR_conditions) |
-|                                   | qualifier                         |
-|                                   | などの記載を推奨します。          |
-+-----------------------------------+-----------------------------------+
-| [HTC](/ddbj/htc.html)             | high throughput cDNA sequences;   |
-|                                   | EST 以外の大規模 cDNA             |
-|                                   | 配列プロジェクトにする配列。\     |
-|                                   | full length cDNA                  |
-|                                   | 解析途上の配列なども含めます。    |
-+-----------------------------------+-----------------------------------+
-| [HTG](/ddbj/htg.html)             | high throughput genomic           |
-|                                   | sequences;                        |
-|                                   | ゲ                                |
-|                                   | ノムプロジェクトに由来し、頻繁に  |
-|                                   | update                            |
-|                                   | されることが期待される配列。\     |
-|                                   | [Genome Project                   |
-|                                   | の各段階と登録                    |
-|                                   | データの種別](/ddbj/genome.html)  |
-|                                   | もご参照ください。\               |
-|                                   | HTG の unfinished                 |
-|                                   | 配列は段階に応じて以下の 3 phase  |
-|                                   | に分類されます。                  |
-|                                   |                                   |
-|                                   | -   phase0；piece contig          |
-|                                   |     が構築される以前の配列        |
-|                                   | -   phase1；構築された piece      |
-|                                   |     contig                        |
-|                                   |     の向きや順序が未確定の配列    |
-|                                   | -   phase2；piece contig          |
-|                                   |     の向きや順序が確定した        |
-|                                   |     unfinished の配列             |
-+-----------------------------------+-----------------------------------+
-:::
+|  Division  |  Description  |
+| ---- | ---- |
+|  [EST](/ddbj/est.html)  |  expressed sequence tags; short single pass の cDNA 配列。 |
+|  [GSS](/ddbj/gss.html)   |  genome survey sequences; short single pass のゲノム配列。  |
+|  STS  |  sequence tagged sites; genome sequencing の tag となる配列。<br> ゲノム上の位置情報、[primer\_bind](/ddbj/features.html#primer_bind)feature,[PCR\_conditions](/ddbj/qualifiers.html#PCR_conditions)qualifier などの記載を推奨します。 |
+|  [HTC](/ddbj/htc.html)  |  high throughput cDNA sequences; EST 以外の大規模 cDNA 配列プロジェクトにする配列。<br> full length cDNA 解析途上の配列なども含めます。|
+|  [HTG](/ddbj/htg.html)  |  high throughput genomic sequences; ゲノムプロジェクトに由来し、頻繁に update されることが期待される配列。<br> [Genome Projectの各段階と登録データの種別](/ddbj/genome.html)もご参照ください。<br> HTG の unfinished 配列は段階に応じて以下の 3 phase に分類されます。<br> <ul><li>phase0；piece contig が構築される以前の配列</li><li>phase1；構築された piece contig の向きや順序が未確定の配列</li><li>phase2；piece contig の向きや順序が確定した unfinished の配列</li></ul>|
 
 #### CON: Contig / Constructed 配列のタイリング {#con .bold}
 
