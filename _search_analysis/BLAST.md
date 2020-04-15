@@ -100,15 +100,11 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  Phages  |  PHG  |  バクテリオファージ  |
 |  Synthetic DNAs  |  SYN  |  合成配列 （合成遺伝子）  |
 |  ENV  |  ENV  |  環境サンプル (environmental samples)  |
-
 |  High throughput divisions  |    |    |
-| ---- | ---- | ---- |
 |  HTC	  |  HTC	  |  High Throughput cDNAs  |
 |  HTG	  |  HTG	  |  High Throughput Genomic sequences  |
 |  TSA	  |  TSA	  |  Transcriptome Shotgun Assembly  |
-
 |  EST divisions  |    |    |
-| ---- | ---- | ---- |
 |  A.thaliana	  |  Arabidopsis thaliana （シロイヌナズナ）  |   |
 |  B.taurus	  |  Bos taurus （ウシ）  |    |
 |  C.elegans  |  Caenorhabditis elegans （線虫） |    |
@@ -131,9 +127,7 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  X.tropicalis  |  Xenopus tropicalis （アフリカツメガエル）  |    |
 |  Z.mays  |  Zea mays （トウモロコシ）  |    |
 |  Others  |  上記以外 （Others）  |    |
-
 |  その他  |    |    |
-| ---- | ---- | ---- |
 |  Patent  |  PAT  |  特許データ  |
 |  Unannotated Seq	  |  UNA  |  未注釈データ  |
 |  GSS  |  GSS  |  ゲノム研究関連 (genome survey sequences)  |
@@ -157,13 +151,9 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  Vertebrate Other   |  哺乳類以外の脊椎動物  |
 |  Viral  |  ウィルス  |
 |  Daily Updates  |  Daily Updates  |
-
 |  モデル生物（Genomic) |    |
-| ---- | ---- |
 |  H. sapiens  |  ヒト  |
-
 |  モデル生物（RNA) |    |
-| ---- | ---- |
 |  B. taurus  |  ウシ  |
 |  D. rerio  |  メダカ  |
 |  H. sapiens  |  ヒト  |
@@ -209,15 +199,11 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  Phages  |  PHG  |  バクテリオファージ  |
 |  Synthetic DNAs  |  SYN  |  合成配列 （合成遺伝子）  |
 |  ENV  |  ENV  |  環境サンプル (environmental samples)  |
-
 |  High throughput divisions  |    |    |
-| ---- | ---- | ---- |
 |  HTC	  |  HTC	  |  High Throughput cDNAs  |
 |  HTG	  |  HTG	  |  High Throughput Genomic sequences  |
 |  TSA	  |  TSA	  |  Transcriptome Shotgun Assembly  |
-
 |  EST divisions  |    |    |
-| ---- | ---- | ---- |
 |  A.thaliana	  |  Arabidopsis thaliana （シロイヌナズナ）  |   |
 |  B.taurus	  |  Bos taurus （ウシ）  |    |
 |  C.elegans  |  Caenorhabditis elegans （線虫） |    |
@@ -240,9 +226,7 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  X.tropicalis  |  Xenopus tropicalis （アフリカツメガエル）  |    |
 |  Z.mays  |  Zea mays （トウモロコシ）  |    |
 |  Others  |  上記以外 （Others）  |    |
-
 |  その他  |    |    |
-| ---- | ---- | ---- |
 |  Patent  |  PAT  |  特許データ  |
 |  Unannotated Seq	  |  UNA  |  未注釈データ  |
 |  GSS  |  GSS  |  ゲノム研究関連 (genome survey sequences)  |
@@ -264,9 +248,7 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  Vertebrate Other   |  哺乳類以外の脊椎動物  |
 |  Viral  |  ウィルス  |
 |  Daily Updates  |  Daily Updates  |
-
 |  モデル生物（RNA) |    |
-| ---- | ---- |
 |  B. taurus  |  ウシ  |
 |  D. rerio  |  メダカ  |
 |  H. sapiens  |  ヒト  |

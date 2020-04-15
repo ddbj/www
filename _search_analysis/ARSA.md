@@ -114,7 +114,6 @@ Feature/Qualifier の部分一致検索 Feature Key 、 Qualifier Name 、 Quali
 :	例: FEATURES の CDS に「/gene="p53"」と記載されたもの
 :	例: FEATURES の CDS に「/gene="p53R2"」と記載されたもの
 
-<!-- .手でやるしかない説 -->
 
 ## 検索フィールドの詳細
 
@@ -140,7 +139,7 @@ Feature/Qualifier の部分一致検索 Feature Key 、 Qualifier Name 、 Quali
 |  ReferencePubmedID  |  rp  |  REFERENCE の PUBMED に記載されたテキスト   |  1111111  |
 |  Feature  |  fe  |  [FEATURES に記載された「Feature 単位のテキスト」](/ddbj/flat-file.html#Features)  |  source 1..450<br>/chromosome="12"<br>/clone="GT200015" <br>/clone_lib="lambda gt11 human liver cDNA (GeneTech.<br>No.20)" <br>/db_xref="taxon:9606" <br>/map="12p13" <br>/mol_type="mRNA" <br>/organism="Homo sapiens" <br>/tissue_type="liver"<br>CDS 86..&gt;450<br>/codon_start=1<br>/gene="GAPD" <br>/product="glyceraldehyde-3-phosphate dehydrogenase" <br>/protein_id="BAA12345.1" <br>/transl_table=1<br>/translation="MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT<br>YMFKYDTVHGQWKHHEVKVKDSKTLLFGEKEVTVFGCRNPKEIPWGETSAEFVVEYTG<br>VFTDKDKAVAQLKGGAKKV"  |
 |  FeatureQualifier  |  fq  |  [FEATURES に記載された「Qualifier 単位のテキスト」](/ddbj/flat-file.html#Features)  |  source 1..450<br>source /chromosome=12<br>CDS /translation=MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT<br>YMFKYDTVHGQWKHHEVKVKDSKTLLFGEKEVTVFGCRNPKEIPWGETSAEFVVEYTG<br>VFTDKDKAVAQLKGGAKKV  |
-|  AllText  |  at  |  フラットファイルに記載された全テキスト  |  LOCUS ～ //  | 
+|  AllText  |  at  |  [フラットファイルに記載された全テキスト](/ddbj/flat-file.html)  |  LOCUS ～ //  | 
 
 ※正規表現検索可（AllTextを除く）
 

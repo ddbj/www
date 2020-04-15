@@ -12,102 +12,28 @@ category: search_analysis
 format, result は必須です。  
 result に mail を指定した場合は address も必須となります。
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>パラメーター</th>
-<th>説明</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>format</td>
-<td>request ID を返す際の応答データの形式。<br />
-text, json, xml, bigfile, imagefile, requestfile が受け付けられますが、job投入時に意味があるのは text, json, xml の3つです。</td>
-</tr>
-<tr class="even">
-<td>querySequence</td>
-<td>multiple alignment 実行時に mafft に渡す配列 fasta ファイル。</td>
-</tr>
-<tr class="odd">
-<td>profile1</td>
-<td>Group-to-group alignment 実行時に mafft に --seed で渡す1つめの整列済み配列ファイル。</td>
-</tr>
-<tr class="even">
-<td>profile2</td>
-<td>Group-to-group alignment 実行時に mafft に --seed で渡す2つめの整列済み配列ファイル。</td>
-</tr>
-<tr class="odd">
-<td>aaMatrix</td>
-<td>multiple alignment 実行時に mafft に --aamatrix で渡すアミノ酸のカスタム weight matrix ファイル。</td>
-</tr>
-<tr class="even">
-<td>addSequence</td>
-<td>multiple alignment実行時にmafftに--addで渡す配列fastaファイル。</td>
-</tr>
-<tr class="odd">
-<td>addfragmentsSequence</td>
-<td>multiple alignment実行時にmafftに--addfragmentsで渡す配列fastaファイル。</td>
-</tr>
-<tr class="even">
-<td>addprofileProfile</td>
-<td>multiple alignment実行時にmafftに--addprofileで渡す配列fastaファイル。</td>
-</tr>
-<tr class="odd">
-<td>addfullSequence</td>
-<td>multiple alignment実行時にmafftに--addfullで渡す配列fastaファイル。</td>
-</tr>
-<tr class="even">
-<td>parameters</td>
-<td>mafft実行時のコマンドラインオプションのうち、--seed, --aamatrix, --add, --addfragments, --addprofile, --addfull 以外のものを記述する。</td>
-</tr>
-<tr class="odd">
-<td>result</td>
-<td>結果通知方法。www, mail のいずれか。<br />
-mail の場合、job 完了時に address に記述したメールアドレスに対して検索終了の通知が送信されます。<br />
-www の場合は何もしないので、POST 時に返された request ID を使って GET で job の状態を調べます。</td>
-</tr>
-<tr class="even">
-<td>address</td>
-<td>result で mail を指定した場合に検索終了の通知を受け取るメールアドレス。</td>
-</tr>
-</tbody>
-</table>
+|  パラメーター  |  説明  |
+| ---- | ---- |
+|  format  |  request ID を返す際の応答データの形式。<br/>text, json, xml, bigfile, imagefile, requestfile が受け付けられますが、job投入時に意味があるのは text, json, xml の3つです。  |
+|  querySequence  |  multiple alignment 実行時に mafft に渡す配列 fasta ファイル。  |
+|  profile1  |  Group-to-group alignment 実行時に mafft に --seed で渡す1つめの整列済み配列ファイル。  |
+|  profile2  |  Group-to-group alignment 実行時に mafft に --seed で渡す2つめの整列済み配列ファイル。  |
+|  aaMatrix  |  multiple alignment 実行時に mafft に --aamatrix で渡すアミノ酸のカスタム weight matrix ファイル。  |
+|  addSequence  |  multiple alignment実行時にmafftに--addで渡す配列fastaファイル。  |
+|  addfragmentsSequence  |  multiple alignment実行時にmafftに--addfragmentsで渡す配列fastaファイル。  |
+|  addprofileProfile  |  multiple alignment実行時にmafftに--addprofileで渡す配列fastaファイル。  |
+|  addfullSequence  |  multiple alignment実行時にmafftに--addfullで渡す配列fastaファイル。  |
+|  parameters  |  mafft実行時のコマンドラインオプションのうち、--seed, --aamatrix, --add, --addfragments, --addprofile, --addfull 以外のものを記述する。  |
+|  result  |  結果通知方法。www, mail のいずれか。<br/>mail の場合、job 完了時に address に記述したメールアドレスに対して検索終了の通知が送信されます。<br/>www の場合は何もしないので、POST 時に返された request ID を使って GET で job の状態を調べます。  |
+|  address  |  esult で mail を指定した場合に検索終了の通知を受け取るメールアドレス。  |
 
 ## MAFFT の結果の取得
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>パラメーター</th>
-<th>説明</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>GET mafft/{id}?info=status</td>
-<td>job が走っている、キューにたまっている、終わっている、存在しない、ということを返します。</td>
-</tr>
-<tr class="even">
-<td>GET mafft/{id}?info=request</td>
-<td>プログラム実行条件を返します。<br />
-存在しない場合は、エラーを返します。</td>
-</tr>
-<tr class="odd">
-<td>GET mafft/{id}?info=result</td>
-<td>job が終わっていたら結果（multiple alignment, Group-to-group alignmentの結果）を返します。<br />
-終わってない・存在しない場合は、エラーを返します。</td>
-</tr>
-</tbody>
-</table>
+|  パラメーター  |  説明  |
+| ---- | ---- |
+|  GET mafft/{id}?info=status  |  job が走っている、キューにたまっている、終わっている、存在しない、ということを返します。  |
+|  GET mafft/{id}?info=request  |  プログラム実行条件を返します。<br/>存在しない場合は、エラーを返します。  |
+|  GET mafft/{id}?info=result  |  job が終わっていたら結果（multiple alignment, Group-to-group alignmentの結果）を返します。<br/>終わってない・存在しない場合は、エラーを返します。  |
 
 ## サンプルスクリプト
 

@@ -99,7 +99,7 @@ getentry で検索可能な各データベースのリリース番号や公開�
 default||指定したデータベースの公開形式で出力            |   |     |                
 FASTA               | アミノ酸配列FASTA                  |  アミノ酸配列をFASTA 形式 で出力 | UniProt, DAD, Patent で選択可能 | 
 ||塩基配列FASTA (for DAD) | アミノ酸配列をコードする塩基配列をFASTA 形式 で出力 | DAD のみ選択可能          | 
-||seqres              | PDB アミノ酸 FASTA                | PDB のみ選択可能  | 
+|^|seqres              | PDB アミノ酸 FASTA                | PDB のみ選択可能  | 
 
 選択データベースにより、出力形式は異なります。
 
@@ -138,7 +138,6 @@ gz圧縮ファイルのファイル名はformatの指定値によって以下の
 
 
 ## WebAPI プログラムによる検索
------------------
 
 getentry は webAPI として実装しており，入力フォームからだけでなく，プログラムなどから直接呼び出すことも可能です。
 
@@ -211,12 +210,12 @@ database（任意）：　検索対象のデータベースを指定します。
 |  |  |  |  |
 | ---- | ---- | ---- | ---- |
 |DNA系     | na                                  | DDBJ/EMBL/GenBank  |  [国際塩基配列データベース（INSD）](http://www.insdc.org/), [WGS](/ddbj/wgs.html), [TPA](/ddbj/tpa.html), [TSA](/ddbj/tsa.html)|
-||mga       | MGA                                 | [Mass sequence for Genome Annotation(MGA)](/ddbj/mga.html)       
+|^|mga       | MGA                                 | [Mass sequence for Genome Annotation(MGA)](/ddbj/mga.html)       
 Protein系  | aa                                  | DAD, Patent, UniProt, PDB                                                   |  4つのデータベースをこの順番で検索
-|| uniprot   | [UniProt](https://www.uniprot.org/) | UniProt/Swiss-Prot とUniProt/TrEMBL を合わせたアミノ酸配列データベース                        
-|| pdb       | [PDB](https://www.rcsb.org/pdb/)    | タンパク質の立体構造データベース                                                            
-|| dad       | [DAD](/stats/relnote.html)          | DDBJ からアミノ酸翻訳配列データを抽出して作成したデータベース                                           
-|| patent_aa | Patent                              | [JPO](https://www.jpo.go.jp/index.html)，[KIPO](//www.kipo.go.kr) に由来するアミノ酸配列
+|^| uniprot   | [UniProt](https://www.uniprot.org/) | UniProt/Swiss-Prot とUniProt/TrEMBL を合わせたアミノ酸配列データベース                        
+|^| pdb       | [PDB](https://www.rcsb.org/pdb/)    | タンパク質の立体構造データベース                                                            
+|^| dad       | [DAD](/stats/relnote.html)          | DDBJ からアミノ酸翻訳配列データを抽出して作成したデータベース                                           
+|^| patent_aa | Patent                              | [JPO](https://www.jpo.go.jp/index.html)，[KIPO](//www.kipo.go.kr) に由来するアミノ酸配列
 
 データベース指定を省略すると、naを指定したものとみなして処理します。
 
@@ -280,15 +279,16 @@ http://getentry.ddbj.nig.ac.jp/gethistory/na/AB479935
 
 format（任意）：　結果の出力フォーマットを指定します。
 
-|  |  |
+|  デフォルト  |  flatfile  |
 | ---- | ---- |
-デフォルト                         | flatfile                                                                                   
-flatfile                      | [DDBJ フラットファイル形式](/ddbj/flat-file.html)                                                    
-xml                           | [INSDSeq-XML version 1.4 形式](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbj/xml/insdxml/v1.4/)
-fasta                         | [DNA 系] 全塩基配列 FASTA <br> [Protein 系] アミノ酸配列 FASTA     
-trans                         | [DNA 系] CDS アミノ酸 FASTA                                                                     
-cds                           | [DNA 系] CDS 塩基配列 FASTA <br> [DAD 限定] 塩基配列 FASTA (for DAD)
-seqres                        | [Protein 系] PDB アミノ酸 FASTA                                                                 
+|  flatfile  |   [DDBJ フラットファイル形式](/ddbj/flat-file.html)    |
+|  xml  |  [INSDSeq-XML version 1.4 形式](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbj/xml/insdxml/v1.4/)  |
+|  fasta  |  [DNA 系] 全塩基配列 FASTA  |
+|  ^  |  [Protein 系] アミノ酸配列 FASTA  |
+|  trans  |  [DNA 系] CDS アミノ酸 FASTA   |
+|  cds  |  [DNA 系] CDS 塩基配列 FASTA  |
+|  ^  |  [DAD 限定] 塩基配列 FASTA (for DAD)  |
+|  seqres  |  [Protein 系] PDB アミノ酸 FASTA   |
 
 選択したデータベースでの有効な出力フォーマットの指定は以下の通りです。
 

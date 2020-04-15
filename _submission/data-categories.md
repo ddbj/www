@@ -56,7 +56,6 @@ DDBJ では, 配列が同一であっても独立に配列決定されたデー�
 :   DDBJ の配列データの詳細な分類は「[Annotated/Assembled
     データの区分](#detail)」をご覧ください。
 
-::: {.attention .no_color}
 登録予定の塩基配列データをどのように登録すべきか不明な場合は以下をご参照ください。
 
 -   [Genome Project の各段階と登録データの種別](/ddbj/genome.html)
@@ -68,7 +67,6 @@ DDBJ では, 配列が同一であっても独立に配列決定されたデー�
 [Mass Submission System (MSS)](/ddbj/mss.html) の場合、登録時に
 [DATATYPE, DIVISION, KEYWORD](/ddbj/file-format.html#annotation)
 の記載に基づいて、データ種別を区別しています。
-:::
 
 ### 次世代シークエンスデータ {#ngs}
 

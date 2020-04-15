@@ -12,77 +12,21 @@ category: search_analysis
 format, result は必須です。  
 result に mail を指定した場合は address も必須となります。
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>パラメーター</th>
-<th>説明</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>format</td>
-<td>request ID を返す際の応答データの形式。<br />
-text, json, xml, bigfile, imagefile, requestfile が受け付けられますが、job投入時に意味があるのは text, json, xml の3つです。</td>
-</tr>
-<tr class="even">
-<td>querySequence</td>
-<td>multiple alignment 実行時、または系統樹作成時に clustalw に渡す配列ファイル。<br />
-NBRF-PIR, EMBL-SWISSPROT, Pearson (Fasta), Clustal (*.aln), GCG-MSF (Pileup), GCG9-RSF, GDE flat file の7フォーマットを使用できます。</td>
-</tr>
-<tr class="odd">
-<td>profile1</td>
-<td>profile alignment 実行時に clustalw に -PROFILE1= で 渡す整列済み配列ファイル。</td>
-</tr>
-<tr class="even">
-<td>profile2</td>
-<td>profile alignment 実行時に clustalw に -PROFILE2= で渡す未整列の配列ファイルまたは整列済み配列ファイル。</td>
-</tr>
-<tr class="odd">
-<td>guidetree1</td>
-<td>multiple alignment 実行時に clustalw に -USETREE= で渡す、または profile alignment 実行時に clustalw に -USETREE1= で渡すガイドツリーファイル。</td>
-</tr>
-<tr class="even">
-<td>guidetree2</td>
-<td>profile alignment 実行時に clustalw に -USETREE2= で渡すガイドツリーファイル。</td>
-</tr>
-<tr class="odd">
-<td>pwAaMatrix</td>
-<td>pairwise alignment 実行時に clustalw に -PWMATRIX= で渡すカスタム weight matrix ファイル。</td>
-</tr>
-<tr class="even">
-<td>pwDnaMatrix</td>
-<td>pairwise alignment 実行時に clustalw に -PWDNAMATRIX= で渡すカスタム weight matrix ファイル。</td>
-</tr>
-<tr class="odd">
-<td>aaMatrix</td>
-<td>multiple alignment 実行時に clustalw に -MATRIX= で渡すカスタム weight matrix ファイル。</td>
-</tr>
-<tr class="even">
-<td>dnaMatrix</td>
-<td>multiple alignment 実行時に clustalw に -DNAMATRIX= で渡すカスタム weight matrix ファイル。</td>
-</tr>
-<tr class="odd">
-<td>parameters</td>
-<td>clustalw 実行時のコマンドラインオプションのうち、-INFILE=, -OUTFILE=, -NEWTREE=, -NEWTREE1=, -NEWTREE2=, -USETREE=, -USETREE1=, -USETREE2=, -STATS=, -OPTIONS, -HELP, -CHECK, -FULLHELP, -ALIGN, -INTERACTIVE 以外のものを記述します。</td>
-</tr>
-<tr class="even">
-<td>result</td>
-<td>結果通知方法。<br />
-www, mailのいずれかが指定できます。<br />
-mail の場合、job 完了時に address に記述したメールアドレスに対して検索終了の通知が送信されます。<br />
-www の場合は何もしないので、POST 時に返された request ID を使って GET で job の状態を調べます。</td>
-</tr>
-<tr class="odd">
-<td>address</td>
-<td>result で mail を指定した場合に検索終了の通知を受け取るメールアドレス。</td>
-</tr>
-</tbody>
-</table>
+|  パラメーター  |  説明  |
+| ---- | ---- |
+|  format  |  request ID を返す際の応答データの形式。<br/>text, json, xml,bigfile, imagefile, requestfile が受け付けられますが、job投入時に意味があるのは text, json, xml の3つです。  |
+|  querySequence  |  multiple alignment 実行時、または系統樹作成時に clustalw に渡す配列ファイル。<br/>NBRF-PIR, EMBL-SWISSPROT, Pearson (Fasta), Clustal (*.aln), GCG-MSF (Pileup), GCG9-RSF, GDE flat file の7フォーマットを使用できます。  |
+|  profile1  |  profile alignment 実行時に clustalw に -PROFILE1= で 渡す整列済み配列ファイル。  |
+|  profile2  |  profile alignment 実行時に clustalw に -PROFILE2= で渡す未整列の配列ファイルまたは整列済み配列ファイル。  |
+|  guidetree1  |  multiple alignment 実行時に clustalw に -USETREE= で渡す、または profile alignment 実行時に clustalw に -USETREE1= で渡すガイドツリーファイル。  |
+|  guidetree2  |  profile alignment 実行時に clustalw に -USETREE2= で渡すガイドツリーファイル。  |
+|  pwAaMatrix  |  pairwise alignment 実行時に clustalw に -PWMATRIX= で渡すカスタム weight matrix ファイル。  |
+|  pwDnaMatrix  |  pairwise alignment 実行時に clustalw に -PWDNAMATRIX= で渡すカスタム weight matrix ファイル。  |
+|  aaMatrix  |  multiple alignment 実行時に clustalw に -MATRIX= で渡すカスタム weight matrix ファイル。  |
+|  dnaMatrix  |  multiple alignment 実行時に clustalw に -DNAMATRIX= で渡すカスタム weight matrix ファイル。  |
+|  parameters  |  clustalw 実行時のコマンドラインオプションのうち、-INFILE=, -OUTFILE=, -NEWTREE=, -NEWTREE1=, -NEWTREE2=, -USETREE=, -USETREE1=, -USETREE2=, -STATS=, -OPTIONS, -HELP, -CHECK, -FULLHELP, -ALIGN, -INTERACTIVE 以外のものを記述します。  |
+|  result  |  結果通知方法。<br />www, mailのいずれかが指定できます。<br />mail の場合、job 完了時に address に記述したメールアドレスに対して検索終了の通知が送信されます。<br />www の場合は何もしないので、POST 時に返された request ID を使って GET で job の状態を調べます。  |
+|  address  |  result で mail を指定した場合に検索終了の通知を受け取るメールアドレス。  |
 
 ## CLUSTALWの結果の取得
 
