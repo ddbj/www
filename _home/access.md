@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: DDBJ へのアクセス
+pathname: access
+category: _home
+---
+
 # DDBJ へのアクセス
 
 ## 所在地・連絡先

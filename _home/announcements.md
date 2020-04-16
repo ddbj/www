@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: RSS フィード
+pathname: announcements
+category: _home
+---
+
 # RSS フィード
 
 <div id="feeds">

@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: DDBJ グループクラウド
+pathname: dgc
+category: _home
+---
+
 # DDBJ グループクラウド
 
 ## DDBJ グループクラウドサービス

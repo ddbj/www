@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: ウェブアクセス
+pathname: web-access1
+category: _home
+---
+
 # ウェブアクセス
 
 <div id="stat_area">
