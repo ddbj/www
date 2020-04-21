@@ -1,0 +1,122 @@
+<header><h1>Parser ユーザーマニュアル</h1></header><section class="book">
+  <p>Parser は、Mass Submission System (MSS) を利用して DDBJ に登録する際に必要な <a href="/ddbj/file-format.html#sequence">配列ファイル</a> と <a href="/ddbj/file-format.html#annotation">アノテーションファイル</a> のフォーマットチェックを行うツールです。</p>
+
+  <section class="chapter">
+    <h2 id="install">インストール</h2>
+    <dl class="bottom_space">
+      <dt>1. <a href="/ddbj/mss-tool.html">MSS データファイル用チェックツール</a> から Parser.tar.gz を取得</dt>    
+
+      <dt>2. tar.gz ファイルを gunzip コマンドで解凍</dt>
+      <dd><pre class="code">$ gunzip Parser.tar.gz</pre></dd>    
+
+      <dt>3. tar ファイルを tar コマンドで展開</dt>
+      <dd><pre class="code">$ tar xvf Parser.tar</pre></dd>    
+
+      <dt>4. ディレクトリが生成される</dt>
+      <dd>下記の要領でディレクトリの中身を見ると、以下のようになっています。</dd>
+      <dd> 
+  <pre class="code">$ cd jParser
+$ ls -FC
+jParser.sh*  jar/    license.txt resource/</pre>
+  </dd>
+      <dd>
+        <div class="news_post_container glossary ">
+          <table>
+            <tbody>
+              <tr>
+<th>jParser.sh</th>
+<td>実行シェルスクリプト</td>
+</tr>
+              <tr>
+<th>jar/</th>
+<td>java のクラスライブラリ格納ディレクトリ(改変不可)</td>
+</tr>
+              <tr>
+<th>license.txt</th>
+<td>使用許諾(改変不可)</td>
+</tr>
+              <tr>
+<th>resources/</th>
+<td>検査条件などのリソースファイル格納ディレクトリ(改変不可)</td>
+</tr>
+            </tbody>
+          </table>
+        </div>
+      </dd>
+
+      <dt>5. ファイルの編集</dt>
+      <dd>jParser.sh を実行する前にファイルの中身を、インストールしたコンピュータの環境にあわせるために変更する必要があります。vi などのエディタで編集して下さい。</dd>
+<dd><pre class="code">
+#!/bin/sh
+
+# Parser installed directory
+PARSER_DIR=./
+
+# Set maximum Java heap size
+HEAP_SIZE=128m
+
+# Parser's resource files(qual.list, ... *.list) path
+# Don't change.
+RESOURCE_FILE_PATH=$PARSER_DIR/resource
+
+# Parser's main class
+# Don't change.
+PARSER=tsunami.util.excel.ExcelParser
+
+# Execution Command
+# Don't change.
+java -Xmx$HEAP_SIZE -classpath $PARSER_DIR/jar/jParser.jar 
+-DPARSER_RESOURCE_PATH=$RESOURCE_FILE_PATH $PARSER -Cclean $@
+
+RETVAL=$?
+
+exit $RETVAL
+#EOF
+</pre></dd>
+      <dd>
+        <dl>
+          <dt>[PARSER_DIR 変数]</dt>
+          <dd>jParser ディレクトリのある場所をフルパスで入力して下さい。</dd>
+          <dd>例) PARSER_DIR=/home/mass/jParser</dd>
+          <dt>[HEAP_SIZE 変数]</dt>
+          <dd>jParser が使用できる最大メモリ量を指定してください。</dd>
+          <dd>例) HEAP_SIZE=128m</dd>
+        </dl>
+      </dd>    
+
+      <dt>6.PATH を指定する</dt>
+      <dd>PAHT に jParser.sh が設置してあるディレクトリを指定して下さい。</dd>
+    </dl>
+  </section><!-- .chapter -->
+
+  <section class="chapter">
+    <h2 id="exec">実行</h2>
+    <p>任意のディレクトリで下記の通りに、コマンドを実行して下さい。</p>    
+
+    <pre class="code">$ jParser.sh[space]-x[アノテーションファイル名][space]-s[塩基配列ファイル名]</pre>
+
+    <p class="bold no_bottom">例</p>
+    <pre class="code">$ jParser.sh -xsample.ann -ssample.fasta</pre>
+    <p>ファイル名は絶対パス・相対パスのどちらでも指定できます。<br>
+    <span class="bold">macOS: ファイル名とフォルダ名について</span><br>
+    <a href="/ddbj/file-format.html#sequence">配列ファイル</a>、<a href="/ddbj/file-format.html#annotation">アノテーションファイル</a>のファイル名またはフォルダ名にマルチバイト文字が含まれていますと 一部のバージョンの macOS では正常に動作しない場合がありますので、ファイル名とフォルダ名にマルチバイト文字を混在させないように ご注意ください。</p>    
+
+    <dl class="bottom_space">
+      <dt>-x[<span class="font-br font-normal">アノテーションファイル名</span>]</dt>
+      <dd>このオプションは必須です。指定されていない場合、本ツールは終了します。
+      アノテーションファイルは、登録データの登録者、REFERENCE、Feature/Qualifierの情報等を記述したタブ区切りテキストファイルです。
+      書式の詳細に関しては、<a href="/ddbj/file-format.html#annotation">登録ファイル形式：アノテーションファイル</a> をご参照下さい。</dd>      
+
+      <dt>-s[<span class="font-br font-normal">塩基配列ファイル名</span>]</dt>
+      <dd>このオプションは必須です。指定されていない場合、本ツールは終了します。
+      塩基配列ファイルは、全登録データの配列をFASTA形式で記述したテキストファイルです。
+      書式の詳細に関しては、<a href="/ddbj/file-format.html#sequence">登録ファイル形式：配列ファイル</a> をご参照下さい。</dd>
+    </dl>
+
+    <div class="attention no_color">
+      <p>Parser は、エラーが発生している場合は、エラーメッセージを出力します。<br>
+      エラーメッセージの意味は <a href="/ddbj/validator.html#parser">Parser エラーメッセージ</a> をご覧ください。</p>
+    </div>
+  </section><!-- .chapter -->
+<!-- .book -->
+</section>
