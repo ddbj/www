@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: The Genetic Codes
+pathname: geneticcode
+category: _home
+---
+
 # The Genetic Codes
 
 ## Defiition of /transl\_table qualifier

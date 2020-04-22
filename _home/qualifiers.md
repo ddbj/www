@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: Qualifier key の定義
+pathname: qualifiers
+category: _home
+---
+
 # Qualifier key の定義
 
 <div id="description_container">

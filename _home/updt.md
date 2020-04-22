@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: 登録データの修正・更新
+pathname: updt
+category: _home
+---
+
 # 登録データの修正・更新
 
 <div class="book">

@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: Environmental sequence の登録
+pathname: environmental
+category: _home
+---
+
 # Environmental sequence の登録
 
 種、あるいは、個体を特定しない手法により得られた配列データの種別の対応を示します。

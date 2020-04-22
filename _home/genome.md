@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: Genome Project のデータ登録
+pathname: genome
+category: _home
+---
+
 # Genome Project のデータ登録
 
 ゲノム配列決定の各段階と登録データの種別の対応を示します。  

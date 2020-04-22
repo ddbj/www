@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: MSS - Mass Submission System
+pathname: mss
+category: _home
+---
+
 # MSS - Mass Submission System
 
 <div class="section book">

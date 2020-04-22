@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: 登録ファイル形式
+pathname: file-format
+category: _home
+---
+
 # 登録ファイル形式
 
 <div class="section book">

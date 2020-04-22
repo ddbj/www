@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: MSS 利用申し込み
+pathname: mass-form
+category: _home
+---
+
 # MSS 利用申し込み
 
 ## MSS 利用 申し込みの流れ

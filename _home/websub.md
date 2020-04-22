@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: Web版塩基配列登録システム (NSSS)
+pathname: websub
+category: _home
+---
+
 # Web版塩基配列登録システム (NSSS)
 
 <div class="attention no_color">

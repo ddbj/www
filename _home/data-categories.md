@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: データの種類
+pathname: data-categories
+category: _home
+---
+
 # データの種類
 
 ## [Division](/ddbj/flat-file.html#Division) conventional sequence data

@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: 登録の見本
+pathname: example
+category: _home
+---
+
 # 登録の見本
 
 <div class="section book">

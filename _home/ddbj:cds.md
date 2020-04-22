@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: タンパク質コード配列; CDS feature について
+pathname: ddbj:cds
+category: _home
+---
+
 # タンパク質コード配列; CDS feature について
 
 <div class="section book">

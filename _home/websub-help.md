@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: DDBJ 塩基配列登録システム HELP
+pathname: websub-help
+category: _home
+---
+
 # DDBJ 塩基配列登録システム HELP
 
 <div class="section book">

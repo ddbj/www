@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: Organism qualifier に記載する生物名
+pathname: organism
+category: _home
+---
+
 # Organism qualifier に記載する生物名
 
 <div class="section book">

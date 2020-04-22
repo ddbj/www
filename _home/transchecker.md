@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: transChecker ユーザーマニュアル
+pathname: transchecker
+category: _home
+---
+
 # transChecker ユーザーマニュアル
 
 <div class="section book">

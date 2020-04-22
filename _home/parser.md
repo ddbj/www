@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: Parser ユーザーマニュアル
+pathname: parser
+category: _home
+---
+
 # Parser ユーザーマニュアル
 
 <div class="section book">

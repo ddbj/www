@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: validator エラーメッセージ
+pathname: validator
+category: _home
+---
+
 # validator エラーメッセージ
 
 ここでは DDBJ に登録される配列データをチェックするためのツールから出力されるエラーメッセージについて概説しています。  

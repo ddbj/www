@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: Feature key
+pathname: features
+category: _home
+---
+
 # Feature key
 
 <div id="description_container">

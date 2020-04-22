@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: UME ユーザーマニュアル
+pathname: ume
+category: _home
+---
+
 # UME ユーザーマニュアル
 
 <div class="section book">

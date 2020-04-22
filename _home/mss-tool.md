@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: MSS データファイル用チェックツール
+pathname: mss-tool
+category: _home
+---
+
 # MSS データファイル用チェックツール
 
 ## 実行環境
