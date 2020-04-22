@@ -14,9 +14,9 @@ ARSA では、以下が検索可能です
 
 データベース名           | 備考    
 ----------------- | ------
-DDBJ 最新リリースデータ    |       
-DDBJ 新着データ        |       
-JPO 経由のアミノ酸特許データ  |       
+DDBJ 最新リリースデータ    | 空白  |     
+DDBJ 新着データ        |   空白    | 
+JPO 経由のアミノ酸特許データ  |  空白    |  
 KIPO 経由のアミノ酸特許データ | 更新は不定期
 
 * [WGS](/ddbj/wgs.html)(WGS Scaffold CON含), TSAの一部, [MGA](/ddbj/mga.html)　など、[アクセッション番号](/ddbj/flat-file.html#Accession)が通常データとは異なるものは ARSA では検索できません。

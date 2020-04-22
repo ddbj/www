@@ -30,8 +30,8 @@ category: _home
 | t    | t                | thymine in DNA; uracil in RNA |
 | m    | a or c           | amino                         |
 | r    | a or g           | purine                        |
-| w    | a or t           |                               |
-| s    | c or g           |                               |
+| w    | a or t           |    空白                           |
+| s    | c or g           |    空白                           |
 | y    | c or t           | pyrimidine                    |
 | k    | g or t           | keto                          |
 | v    | a or c or g      | not t                         |
@@ -175,7 +175,7 @@ category: _home
 | Glx          | Z                     | Glutamic acid or Glutamine  |
 | Xaa          | X                     | Any amino acid              |
 | Xle          | J                     | Leucine or Isoleucine       |
-| TERM         |                       | termination codon           |
+| TERM         |         空白          | termination codon           |
 
 </div>
 

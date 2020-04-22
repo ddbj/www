@@ -59,38 +59,38 @@ atttgaacacacctgctgtggctgtaactctgagatgtgctaaataaaccctctt
 
 | Entry             | Feature                            | Location                                                         | Qualifier                          | Value                           |
 | ----------------- | ---------------------------------- | ---------------------------------------------------------------- | ---------------------------------- | ------------------------------- |
-| [COMMON](#common) | <span class="red">SUBMITTER</span> |                                                                  | <span class="red">ab\_name</span>  | Robertson,G.R.                  |
-|                   |                                    |                                                                  | ab\_name                           | Mishima,H.                      |
-|                   |                                    |                                                                  | <span class="red">contact</span>   | Hanako Mishima                  |
-|                   |                                    |                                                                  | <span class="red">email</span>     | mishima@ddbj.nig.ac.jp          |
-|                   |                                    |                                                                  | <span class="red">phone</span>     | 81-55-981-6853                  |
-|                   |                                    |                                                                  | fax                                | 81-55-981-6853                  |
-|                   |                                    |                                                                  | phext                              | 3207                            |
-|                   |                                    |                                                                  | <span class="red">institute</span> | National Institute of Genetics  |
-|                   |                                    |                                                                  | department                         | DNA Data Bank of Japan          |
-|                   |                                    |                                                                  | <span class="red">country</span>   | Japan                           |
-|                   |                                    |                                                                  | state                              | Shizuoka                        |
-|                   |                                    |                                                                  | <span class="red">city</span>      | Mishima                         |
-|                   |                                    |                                                                  | <span class="red">street</span>    | Yata 1111                       |
-|                   |                                    |                                                                  | <span class="red">zip</span>       | 411-8540                        |
-|                   | <span class="red">REFERENCE</span> |                                                                  | <span class="red">title</span>     | Mouse Genome Sequencing         |
-|                   |                                    |                                                                  | <span class="red">ab\_name</span>  | Robertson,G.R.                  |
-|                   |                                    |                                                                  | ab\_name                           | Mishima,H                       |
-|                   |                                    |                                                                  | <span class="red">year</span>      | 2017                            |
-|                   |                                    |                                                                  | <span class="red">status</span>    | Unpublished                     |
-|                   | COMMENT                            |                                                                  | line                               | Please visit our website        |
-|                   |                                    |                                                                  | line                               | URL: http://www.ddbj.nig.ac.jp/ |
+| [COMMON](#common) | <span class="red">SUBMITTER</span> |                               空白                                   | <span class="red">ab\_name</span>  | Robertson,G.R.                  |
+|         空白          |                 空白                   |                                空白                                  | ab\_name                           | Mishima,H.                      |
+|          空白         |                 空白                   |                            空白                                      | <span class="red">contact</span>   | Hanako Mishima                  |
+|        空白           |                  空白                  |                   空白                                               | <span class="red">email</span>     | mishima@ddbj.nig.ac.jp          |
+|          空白         |              空白                      |                             空白                                     | <span class="red">phone</span>     | 81-55-981-6853                  |
+|         空白          |               空白                     |                         空白                                         | fax                                | 81-55-981-6853                  |
+|         空白          |                 空白                   |                            空白                                      | phext                              | 3207                            |
+|          空白         |                       空白             |                          空白                                        | <span class="red">institute</span> | National Institute of Genetics  |
+|          空白         |                       空白             |                                空白                                  | department                         | DNA Data Bank of Japan          |
+|         空白          |                      空白              |                                 空白                                 | <span class="red">country</span>   | Japan                           |
+|           空白        |                     空白               |                             空白                                     | state                              | Shizuoka                        |
+|           空白        |                  空白                  |                          空白                                        | <span class="red">city</span>      | Mishima                         |
+|            空白       |                   空白                 |                              空白                                    | <span class="red">street</span>    | Yata 1111                       |
+|           空白        |                  空白                  |                                空白                                  | <span class="red">zip</span>       | 411-8540                        |
+|          空白         | <span class="red">REFERENCE</span> |                                     空白                             | <span class="red">title</span>     | Mouse Genome Sequencing         |
+|           空白        |                    空白                |                                 空白                                 | <span class="red">ab\_name</span>  | Robertson,G.R.                  |
+|           空白        |                   空白                 |                               空白                                   | ab\_name                           | Mishima,H                       |
+|               空白    |                       空白             |                              空白                                    | <span class="red">year</span>      | 2017                            |
+|           空白        |                  空白                  |                            空白                                      | <span class="red">status</span>    | Unpublished                     |
+|         空白          | COMMENT                            |                                    空白                              | line                               | Please visit our website        |
+|            空白       |                       空白             |                                  空白                                | line                               | URL: http://www.ddbj.nig.ac.jp/ |
 | CLN01             | <span class="red">source</span>    | <span class="red">1..12297</span>                                | <span class="red">organism</span>  | Mus musculus                    |
-|                   |                                    |                                                                  | <span class="red">mol\_type</span> | genomic DNA                     |
-|                   |                                    |                                                                  | clone                              | PC0110                          |
-|                   |                                    |                                                                  | chromosome                         | 8                               |
-|                   | CDS                                | <span class="small_80">join(\<1..456,609..879,1070..1213)</span> | product                            | protein kinase                  |
-|                   |                                    |                                                                  | codon\_start                       | 2                               |
+|          空白         |                空白                    |                                空白                                  | <span class="red">mol\_type</span> | genomic DNA                     |
+|         空白          |                   空白                 |                           空白                                       | clone                              | PC0110                          |
+|          空白         |                     空白               |                               空白                                    | chromosome                         | 8                               |
+|          空白         | CDS                                | <span class="small_80">join(\<1..456,609..879,1070..1213)</span> | product                            | protein kinase                  |
+|          空白         |                           空白         |                                空白                                  | codon\_start                       | 2                               |
 | CLN02             | <span class="red">source</span>    | <span class="red">1..12393</span>                                | <span class="red">organism</span>  | Mus musculus                    |
-|                   |                                    |                                                                  | <span class="red">mol\_type</span> | genomic DNA                     |
-|                   |                                    |                                                                  | clone                              | PC0210                          |
-|                   |                                    |                                                                  | chromosome                         | 8                               |
-|                   | CDS                                | 9365..9640                                                       | product                            | hypothetical protein            |
+|             空白      |                    空白                |                          空白                                        | <span class="red">mol\_type</span> | genomic DNA                     |
+|            空白       |                      空白              |                                  空白                                | clone                              | PC0210                          |
+|              空白     |                        空白             |                             空白                                     | chromosome                         | 8                               |
+|             空白      | CDS                                | 9365..9640                                                       | product                            | hypothetical protein            |
 
 </div>
 
@@ -127,7 +127,7 @@ atttgaacacacctgctgtggctgtaactctgagatgtgctaaataaaccctctt
 | 名称                                                  | 更新日        | 備考                                                   |
 | --------------------------------------------------- | ---------- | ---------------------------------------------------- |
 | [Feature Table Definition](/ddbj/full_index.html)   | 2016/11/17 | version 10.6                                         |
-| [Feature/Qualifier 対応一覧表](/files/pdf/ddbj/fq-j.pdf) | 2016/11/09 |                                                      |
+| [Feature/Qualifier 対応一覧表](/files/pdf/ddbj/fq-j.pdf) | 2016/11/09 |                                     空白                 |
 | [登録の見本](/ddbj/example.html)                         | 2014/11/27 | [DDBJ フラットファイル](/ddbj/flat-file.html)中の feature の記載例 |
 
 </div>
@@ -143,20 +143,20 @@ atttgaacacacctgctgtggctgtaactctgagatgtgctaaataaaccctctt
 | データの種類                                                                     | PDF形式 (解説付)                                                         | TSV形式                                                              | フラットファイルとの対応                                   |
 | -------------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------ | ---------------------------------------------- |
 | タンパク質コード領域                                                                 | [CDS](/files/pdf/ddbj/CDS.pdf)                                      | [CDS](/files/example/CDS.txt)                                      | [general](/files/pdf/ddbj/general_ann2ff.pdf)  |
-| リボソーマル RNA                                                                 | [16S\_rRNA](/files/pdf/ddbj/16S_rRNA.pdf)                           | [16S\_rRNA](/files/example/16S_rRNA.txt)                           |                                                |
-| ITS領域 (Internal Transcribed Spacer)                                        | [ITS](/files/pdf/ddbj/ITS.pdf)                                      | [ITS](/files/example/ITS.txt)                                      |                                                |
-| マイクロサテライトマーカー                                                              | [Microsatellite\_marker](/files/pdf/ddbj/Microsatellite_marker.pdf) | [Microsatellite\_marker](/files/example/Microsatellite_marker.txt) |                                                |
-| ミトコンドリア                                                                    | [mtDNA](/files/pdf/ddbj/mtDNA.pdf)                                  | [mtDNA](/files/example/mtDNA.txt)                                  |                                                |
-| [ENV](/ddbj/env.html) (環境サンプル)                                             | [ENV](/files/pdf/ddbj/ENV.pdf)                                      | [ENV](/files/example/ENV.txt)                                      |                                                |
+| リボソーマル RNA                                                                 | [16S\_rRNA](/files/pdf/ddbj/16S_rRNA.pdf)                           | [16S\_rRNA](/files/example/16S_rRNA.txt)                           |                                 空白               |
+| ITS領域 (Internal Transcribed Spacer)                                        | [ITS](/files/pdf/ddbj/ITS.pdf)                                      | [ITS](/files/example/ITS.txt)                                      |                             空白                   |
+| マイクロサテライトマーカー                                                              | [Microsatellite\_marker](/files/pdf/ddbj/Microsatellite_marker.pdf) | [Microsatellite\_marker](/files/example/Microsatellite_marker.txt) |                        空白                        |
+| ミトコンドリア                                                                    | [mtDNA](/files/pdf/ddbj/mtDNA.pdf)                                  | [mtDNA](/files/example/mtDNA.txt)                                  |                          空白                      |
+| [ENV](/ddbj/env.html) (環境サンプル)                                             | [ENV](/files/pdf/ddbj/ENV.pdf)                                      | [ENV](/files/example/ENV.txt)                                      |                     空白                           |
 | [EST](/ddbj/est.html) (Expressed Sequence Tags)                            | [EST](/files/pdf/ddbj/EST.pdf)                                      | [EST](/files/example/EST.txt)                                      | [EST](/files/pdf/ddbj/EST_ann2ff.pdf)          |
-| [GSS](/ddbj/gss.html) (Genome Survey Sequences)                            | [GSS](/files/pdf/ddbj/GSS.pdf)                                      | [GSS](/files/example/GSS.txt)                                      |                                                |
+| [GSS](/ddbj/gss.html) (Genome Survey Sequences)                            | [GSS](/files/pdf/ddbj/GSS.pdf)                                      | [GSS](/files/example/GSS.txt)                                      |                        空白                        |
 | [HTG](/ddbj/htg.html) (High Throughput Genomic Sequences)                  | [HTG](/files/pdf/ddbj/HTG.pdf)                                      | [HTG](/files/example/HTG.txt)                                      | [HTG](/files/pdf/ddbj/HTG.pdf)                 |
 | [TSA](/ddbj/tsa.html) (Transcriptome Shotgun Assembly); assembled from EST | [TSA](/files/pdf/ddbj/TSA.pdf)                                      | [TSA](/files/example/TSA.txt)                                      | [TSA](/files/pdf/ddbj/TSA.pdf)                 |
 | [TSA](/ddbj/tsa.html); assembled from short reads                          | [TSA\_SRA\_assemble](/files/pdf/ddbj/TSA_SRA_assemble.pdf)          | [TSA\_SRA\_assemble](/files/example/TSA_SRA_assemble.txt)          | [TSA\_SRA](/files/pdf/ddbj/TSA_SRA_ann2ff.pdf) |
 | [WGS](/ddbj/wgs.html) (Whole Genome Shotgun)                               | [WGS](/files/pdf/ddbj/WGS.pdf)                                      | [WGS](/files/example/WGS.txt)                                      | [WGS](/files/pdf/ddbj/WGS_ann2ff.pdf)          |
-| [WGS](/ddbj/wgs.html); piece of scaffold CON                               | [WGS\_piece\_CON](/files/pdf/ddbj/WGS_piece_CON.pdf)                | [WGS\_piece\_CON](/files/example/WGS_piece_CON.txt)                |                                                |
+| [WGS](/ddbj/wgs.html); piece of scaffold CON                               | [WGS\_piece\_CON](/files/pdf/ddbj/WGS_piece_CON.pdf)                | [WGS\_piece\_CON](/files/example/WGS_piece_CON.txt)                |                           空白                     |
 | [CON](/ddbj/con.html) entries for WGS scaffold                             | [WGS\_scaffold](/files/pdf/ddbj/WGS_scaffold.pdf)                   | [WGS\_scaffold](/files/example/WGS_scaffold.txt)                   | [CON](/files/pdf/ddbj/CON_ann2ff.pdf)          |
-| AGP file for [CON](/ddbj/con.html) entries                                 | [AGP](/files/pdf/ddbj/AGP.pdf)                                      | [AGP](/files/example/AGP.txt)                                      |                                                |
+| AGP file for [CON](/ddbj/con.html) entries                                 | [AGP](/files/pdf/ddbj/AGP.pdf)                                      | [AGP](/files/example/AGP.txt)                                      |                       空白                         |
 | [TPA](/ddbj/tpa.html) (Third Party Annotation)                             | [TPA](/files/pdf/ddbj/TPA.pdf)                                      | [TPA](/files/example/TPA.txt)                                      | [TPA](/files/pdf/ddbj/TPA_ann2ff.pdf)          |
 
 </div>
@@ -199,9 +199,9 @@ atttgaacacacctgctgtggctgtaactctgagatgtgctaaataaaccctctt
     | Entry  | Feature | Location                       | Qualifier        | Value                                                                                               |
     | ------ | ------- | ------------------------------ | ---------------- | --------------------------------------------------------------------------------------------------- |
     | COMMON | source  | 1..<span class="bold">E</span> | organism         | Homo sapiens                                                                                        |
-    |        |         |                                | mol\_type        | genomic DNA                                                                                         |
-    |        |         |                                | submitter\_seqid | <span class="bold">@@[entry\]@@</span>                                                             |
-    |        |         |                                | ff\_definition   | <span class="bold">@@[organism\]@@</span> DNA, <span class="bold"> @@[submitter\_seqid\]@@</span> |
+    |    空白    |    空白     |                空白                | mol\_type        | genomic DNA                                                                                         |
+    |   空白     |    空白     |                   空白             | submitter\_seqid | <span class="bold">@@[entry\]@@</span>                                                             |
+    |    空白    |     空白    |               空白              | ff\_definition   | <span class="bold">@@[organism\]@@</span> DNA, <span class="bold"> @@[submitter\_seqid\]@@</span> |
     
 
     </div>
@@ -228,22 +228,22 @@ atttgaacacacctgctgtggctgtaactctgagatgtgctaaataaaccctctt
 
 | Entry  | Feature                            | Location | Qualifier                          | Value                          |
 | ------ | ---------------------------------- | -------- | ---------------------------------- | ------------------------------ |
-| COMMON | <span class="red">SUBMITTER</span> |          | <span class="red">ab\_name</span>  | Robertson,G.R.                 |
-|        |                                    |          | ab\_name                           | Mishima,H.                     |
-|        |                                    |          | consrtm                            | Mouse Genome Consortium        |
-|        |                                    |          | <span class="red">contact</span>   | Hanako Mishima                 |
-|        |                                    |          | <span class="red">email</span>     | mishima@ddbj.nig.ac.jp         |
-|        |                                    |          | url                                | http://www.ddbj.nig.ac.jp      |
-|        |                                    |          | <span class="red">phone</span>     | 81-55-981-6853                 |
-|        |                                    |          | fax                                | 81-55-981-6853                 |
-|        |                                    |          | phext                              | 3207                           |
-|        |                                    |          | <span class="red">institute</span> | National Institute of Genetics |
-|        |                                    |          | department                         | DNA Data Bank of Japan         |
-|        |                                    |          | <span class="red">country</span>   | Japan                          |
-|        |                                    |          | state                              | Shizuoka                       |
-|        |                                    |          | <span class="red">city</span>      | Mishima                        |
-|        |                                    |          | <span class="red">street</span>    | Yata 1111                      |
-|        |                                    |          | <span class="red">zip</span>       | 411-8540                       |
+| COMMON | <span class="red">SUBMITTER</span> |     空白     | <span class="red">ab\_name</span>  | Robertson,G.R.                 |
+|    空白    |                空白                    |    空白      | ab\_name                           | Mishima,H.                     |
+|    空白    |                空白                    |      空白    | consrtm                            | Mouse Genome Consortium        |
+|   空白     |               空白                     |      空白    | <span class="red">contact</span>   | Hanako Mishima                 |
+|     空白   |              空白                      |     空白     | <span class="red">email</span>     | mishima@ddbj.nig.ac.jp         |
+|    空白    |             空白                       |    空白      | url                                | http://www.ddbj.nig.ac.jp      |
+|     空白   |                 空白                   |     空白   | <span class="red">phone</span>     | 81-55-981-6853                 |
+|     空白   |                空白                    |      空白    | fax                                | 81-55-981-6853                 |
+|     空白   |             空白                       |     空白     | phext                              | 3207                           |
+|      空白  |               空白                     |     空白     | <span class="red">institute</span> | National Institute of Genetics |
+|    空白    |                  空白                  |    空白      | department                         | DNA Data Bank of Japan         |
+|   空白     |                   空白                 |     空白     | <span class="red">country</span>   | Japan                          |
+|    空白    |                  空白                  |     空白     | state                              | Shizuoka                       |
+|     空白   |             空白                       |   空白       | <span class="red">city</span>      | Mishima                        |
+|    空白    |                空白                    |     空白     | <span class="red">street</span>    | Yata 1111                      |
+|     空白   |                   空白                 |  空白        | <span class="red">zip</span>       | 411-8540                       |
 
 </div>
 
@@ -307,15 +307,15 @@ middle(128), last(64)  |
 
 | Entry | Feature                            | Location | Qualifier                         | Value                               |
 | ----- | ---------------------------------- | -------- | --------------------------------- | ----------------------------------- |
-|       | <span class="red">REFERENCE</span> |          | <span class="red">title</span>    | Sequence and analysis of mouse ch.8 |
-|       |                                    |          | <span class="red">ab\_name</span> | Robertson,G.R.                      |
-|       |                                    |          | ab\_name                          | Mishima,H.                          |
-|       |                                    |          | <span class="red">status</span>   | Published                           |
-|       |                                    |          | <span class="red">year</span>     | 2003                                |
-|       |                                    |          | journal                           | Nature                              |
-|       |                                    |          | volume                            | 8                                   |
-|       |                                    |          | start\_page                       | 15                                  |
-|       |                                    |          | end\_page                         | 20                                  |
+|    空白   | <span class="red">REFERENCE</span> |    空白      | <span class="red">title</span>    | Sequence and analysis of mouse ch.8 |
+|    空白   |                   空白                 |     空白     | <span class="red">ab\_name</span> | Robertson,G.R.                      |
+|    空白   |                   空白                 |     空白     | ab\_name                          | Mishima,H.                          |
+|   空白    |                  空白                  |     空白     | <span class="red">status</span>   | Published                           |
+|   空白    |                  空白                  |     空白     | <span class="red">year</span>     | 2003                                |
+|   空白    |                   空白                 |     空白     | journal                           | Nature                              |
+|    空白   |                  空白                  |     空白     | volume                            | 8                                   |
+|    空白   |                  空白                  |     空白     | start\_page                       | 15                                  |
+|    空白   |                  空白                  |     空白     | end\_page                         | 20                                  |
 
 </div>
 
@@ -436,16 +436,16 @@ Unpublished, In press, Published</td>
 
 | Entry | Feature     | Location | Qualifier                | Value                                      |
 | ----- | ----------- | -------- | ------------------------ | ------------------------------------------ |
-|       | COMMENT     |          | line                     | This clone was obtained at our laboratory. |
-|       | COMMENT     |          | line                     | Please visit our web site.                 |
-|       |             |          | line                     | URL:http://www.ddbj.nig.ac.jp              |
-|       | ST\_COMMENT |          | tagset\_id               | Genome-Assembly-Data                       |
-|       |             |          | Finishing Goal           | High Quality Draft                         |
-|       |             |          | Current Finishing Status | High Quality Draft                         |
-|       |             |          | Assembly Method          | GS De Novo Assembler v. 2.0                |
-|       |             |          | Assembly Name            | Mmus\_1.0                                  |
-|       |             |          | Genome Coverage          | 50x                                        |
-|       |             |          | Sequencing Technology    | 454 GS FLX; ABI 3730                       |
+|    空白   | COMMENT     |     空白     | line                     | This clone was obtained at our laboratory. |
+|    空白   | COMMENT     |     空白     | line                     | Please visit our web site.                 |
+|    空白   |      空白       |     空白     | line                     | URL:http://www.ddbj.nig.ac.jp              |
+|    空白   | ST\_COMMENT |     空白     | tagset\_id               | Genome-Assembly-Data                       |
+|    空白   |      空白       |     空白     | Finishing Goal           | High Quality Draft                         |
+|    空白   |      空白       |     空白     | Current Finishing Status | High Quality Draft                         |
+|    空白   |      空白       |     空白     | Assembly Method          | GS De Novo Assembler v. 2.0                |
+|    空白   |      空白       |     空白     | Assembly Name            | Mmus\_1.0                                  |
+|    空白   |      空白       |     空白     | Genome Coverage          | 50x                                        |
+|    空白   |      空白       |     空白     | Sequencing Technology    | 454 GS FLX; ABI 3730                       |
 
 </div>
 
@@ -482,18 +482,35 @@ Unpublished, In press, Published</td>
 
   - 項目名を Qualifier として入力します。各項目に対応する具体的な内容を Value に入力します。
     
-    Genome-Assembly-Data で使用する Qualifier のリスト
-    （<span class="red">入力必須項目</span>）
+    Genome-Assembly-Data で使用する Qualifier のリスト　（<span class="red">入力必須項目</span>）
     
     <div class="main_table format">
-    
-    Qualifier
-    
+
+    |  Qualifier  |  意味・内容  |  備考  |
+    | ---- | ---- | ---- |
+    |  Finishing Goal  |  genome project の最終的な到達目標。規定値あり。  |  値の制限： "Standard Draft", "High-Quality Draft", "Improved High-Quality Draft", "Noncontiguous Finished", "Finished"  |
+    |  Current Finishing Status  |  genome project の現状の到達点。規定値あり。  |  ^  |
+    |  <span class="red">Assembly Method</span>  |  アセンブルに使用したソフトの名前とそのバージョン。  |  空白  |
+    |  Assembly Name  |  ゲノムアセンブリの名称・バージョン。真核生物の場合、必須。  |  推奨書式：[organism の種名 (or 一般名)] + [version 数値] （例；Btau_4.0）  |
+    |  Genome Coverage  |  ゲノム配列決定の深度、被覆度換算。  |  空白  |
+    |  Sequencing Technology  |  配列解析に使用されたシークエンサー。  |  空白  |
+
     </div>
+
+    Assembly-Data で使用する Qualifier のリスト （<span class="red">入力必須項目</span>
+
+    <div class="main_table format">
+
+    |  Qualifier  |  意味・内容  |
+    | ---- | ---- |
+    |  <span class="red">Assembly Method</span>  |  アセンブルに使用したソフトの名前とそのバージョン。必須。  |
+    |  Assembly Name  |  アセンブリの名称・バージョン。  |
+    |  Coverage  |  配列決定の深度、被覆度換算。  |
+    |  <span class="red">Sequencing Technology</span>  |  配列解析に使用されたシークエンサー。必須。  |
 
   - 記載の可否や内容等については登録毎に個別に対応しますので、MSS の担当者にお問い合わせください。
 
-</div>
+    </div>
 
 <div class="section section">
 
@@ -505,15 +522,15 @@ Unpublished, In press, Published</td>
 
 | Entry | Feature                         | Location                                                    | Qualifier                          | Value                    |
 | ----- | ------------------------------- | ----------------------------------------------------------- | ---------------------------------- | ------------------------ |
-|       | <span class="red">source</span> | <span class="red">1..12297</span>                           | <span class="red">organism</span>  | Mus musculus             |
-|       |                                 |                                                             | <span class="red">mol\_type</span> | genomic\_DNA             |
-|       |                                 |                                                             | chromosome                         | 8                        |
-|       |                                 |                                                             | clone                              | PC0110                   |
-|       | <span class="red">CDS</span>    | <span class="red">join(\<1..456,609..879,1070..1213)</span> | <span class="red">product</span>   | protein kinase           |
-|       |                                 |                                                             | codon\_start                       | 2                        |
-|       | rRNA                            | 1279..3000                                                  | product                            | 18S rRNA                 |
-|       | CDS                             | complement(join(3213..4981,9901..11677))                    | gene                               | tbpA                     |
-|       |                                 |                                                             | product                            | TATA-box binding protein |
+|   空白    | <span class="red">source</span> | <span class="red">1..12297</span>                           | <span class="red">organism</span>  | Mus musculus             |
+|   空白    |           空白                      |         空白                                                    | <span class="red">mol\_type</span> | genomic\_DNA             |
+|    空白   |        空白                         |            空白                                                 | chromosome                         | 8                        |
+|     空白  |           空白                      |                 空白                                            | clone                              | PC0110                   |
+|    空白   | <span class="red">CDS</span>    | <span class="red">join(\<1..456,609..879,1070..1213)</span> | <span class="red">product</span>   | protein kinase           |
+|    空白   |           空白                      |                  空白                                           | codon\_start                       | 2                        |
+|    空白   | rRNA                            | 1279..3000                                                  | product                            | 18S rRNA                 |
+|   空白    | CDS                             | complement(join(3213..4981,9901..11677))                    | gene                               | tbpA                     |
+|    空白   |             空白                    |               空白                                              | product                            | TATA-box binding protein |
 
 </div>
 
@@ -548,7 +565,7 @@ DIVISION は、登録データが [CON](/ddbj/data-categories.html#con) / [ENV](
 
 | Entry  | Feature  | Location | Qualifier | Value |
 | ------ | -------- | -------- | --------- | ----- |
-| COMMON | DIVISION |          | division  | EST   |
+| COMMON | DIVISION |    空白      | division  | EST   |
 
 </div>
 
@@ -572,7 +589,7 @@ DATATYPE は、登録データが [WGS](/ddbj/wgs.html), [TLS](/ddbj/tls.html),[
 
 | Entry  | Feature  | Location | Qualifier | Value |
 | ------ | -------- | -------- | --------- | ----- |
-| COMMON | DATATYPE |          | type      | WGS   |
+| COMMON | DATATYPE |    空白      | type      | WGS   |
 
 </div>
 
@@ -596,7 +613,7 @@ INSDC が合意した KEYWORD 名と規定値、並びに各 KEYWORD 名の定�
 
 | Entry | Feature                                | Location | Qualifier                              | Value                              |
 | ----- | -------------------------------------- | -------- | -------------------------------------- | ---------------------------------- |
-|       | <span class="font-bold">KEYWORD</span> |          | <span class="font-bold">keyword</span> | <span class="font-bold">ENV</span> |
+|   空白    | <span class="font-bold">KEYWORD</span> |     空白     | <span class="font-bold">keyword</span> | <span class="font-bold">ENV</span> |
 
 </div>
 
@@ -605,18 +622,18 @@ INSDC が合意した KEYWORD 名と規定値、並びに各 KEYWORD 名の定�
 |  データ種別  |  keyword の Value  |  注意事項  |
 | ---- | ---- | ---- |
 |  [WGS](/ddbj/wgs.html)  |  <span class="red">WGS</span>  |  [WGS, scaffold CON の場合](#wgs_con) もご参照ください。  |
-|  [ENV](/ddbj/env.html)  |  <span class="red">ENV</span>  |    |
-|  [EST](/ddbj/est.html)  |  <span class="red">EST</span>  |    |
+|  [ENV](/ddbj/env.html)  |  <span class="red">ENV</span>  |  空白  |
+|  [EST](/ddbj/est.html)  |  <span class="red">EST</span>  |  空白  |
 |  ^  |  その他  |  [EST の場合](#est) 参照  |
 |  [HTC](/ddbj/htc.html)  |  <span class="red">HTC</span>, その他  |  その他については、登録毎にご連絡いたします。  |
 |  [HTG](/ddbj/htg.html)  |  <span class="red">HTG</span>, [その他](#htg)  |  [phase](/ddbj/data-categories.html#est) に依存、登録毎にご連絡いたします。  |
-|  [GSS](/ddbj/gss.html)  |  <span class="red">GSS</span>  |    |
-|  STS  |  <span class="red">STS</span>  |    |
-|  [TPA](/ddbj/tpa.html)  |  <span class="red">TPA, Third Party Data</span>  |    |
+|  [GSS](/ddbj/gss.html)  |  <span class="red">GSS</span>  |  空白  |
+|  STS  |  <span class="red">STS</span>  |  空白  |
+|  [TPA](/ddbj/tpa.html)  |  <span class="red">TPA, Third Party Data</span>  |   空白 |
 |  ^  |  <span class="red">TPA:inferential</span> or <span class="red">TPA:experimental</span>  |  どちらか一方が必須  |
-|  [TSA](/ddbj/tsa.html)  |  <span class="red">TSA, Transcriptome Shotgun Assembly</span>  |    |
-|  [TLS](/ddbj/tls.html)  |  <span class="red">TLS, Targeted Locus Study</span>  |    |
-|  その他  |    |  登録毎にご連絡いたします。  |
+|  [TSA](/ddbj/tsa.html)  |  <span class="red">TSA, Transcriptome Shotgun Assembly</span>  |  空白  |
+|  [TLS](/ddbj/tls.html)  |  <span class="red">TLS, Targeted Locus Study</span>  |  空白  |
+|  その他  |  空白  |  登録毎にご連絡いたします。  |
 
 #### KEYWORD の書式
 
@@ -640,8 +657,8 @@ INSDC が合意した KEYWORD 名と規定値、並びに各 KEYWORD 名の定�
     
     | Entry | Feature                          | Location | Qualifier                        | Value                                    |
     | ----- | -------------------------------- | -------- | -------------------------------- | ---------------------------------------- |
-    |       | <span class="red">KEYWORD</span> |          | <span class="red">keyword</span> | <span class="red">WGS</span>             |
-    |       |                                  |          | <span class="red">keyword</span> | <span class="red">STANDARD\_DRAFT</span> |
+    |    空白   | <span class="red">KEYWORD</span> |    空白      | <span class="red">keyword</span> | <span class="red">WGS</span>             |
+    |    空白   |                空白                  |    空白      | <span class="red">keyword</span> | <span class="red">STANDARD\_DRAFT</span> |
     
 
     </div>
@@ -660,8 +677,8 @@ INSDC が合意した KEYWORD 名と規定値、並びに各 KEYWORD 名の定�
     
     | Entry | Feature                          | Location | Qualifier                        | Value                                             |
     | ----- | -------------------------------- | -------- | -------------------------------- | ------------------------------------------------- |
-    |       | <span class="red">KEYWORD</span> |          | <span class="red">keyword</span> | <span class="red">EST</span>                      |
-    |       |                                  |          | <span class="red">keyword</span> | <span class="red">5'-end sequence (5'-EST)</span> |
+    |   空白    | <span class="red">KEYWORD</span> |   空白       | <span class="red">keyword</span> | <span class="red">EST</span>                      |
+    |     空白  |                 空白                 |      空白    | <span class="red">keyword</span> | <span class="red">5'-end sequence (5'-EST)</span> |
     
 
     </div>
@@ -675,7 +692,7 @@ INSDC が合意した KEYWORD 名と規定値、並びに各 KEYWORD 名の定�
     
     | Entry | Feature                          | Location | Qualifier                     | Value                                                                         |
     | ----- | -------------------------------- | -------- | ----------------------------- | ----------------------------------------------------------------------------- |
-    |       | <span class="red">COMMENT</span> |          | <span class="red">line</span> | <span class="red">3'-EST sequences are presented as anti-sense strand.</span> |
+    |    空白   | <span class="red">COMMENT</span> |     空白     | <span class="red">line</span> | <span class="red">3'-EST sequences are presented as anti-sense strand.</span> |
     
 
     </div>
@@ -686,7 +703,7 @@ INSDC が合意した KEYWORD 名と規定値、並びに各 KEYWORD 名の定�
     
     | Entry | Feature                          | Location | Qualifier                     | Value                                                                    |
     | ----- | -------------------------------- | -------- | ----------------------------- | ------------------------------------------------------------------------ |
-    |       | <span class="red">COMMENT</span> |          | <span class="red">line</span> | <span class="red">3'-EST sequences are presented as sense strand.</span> |
+    |   空白    | <span class="red">COMMENT</span> |      空白    | <span class="red">line</span> | <span class="red">3'-EST sequences are presented as sense strand.</span> |
     
 
     </div>
@@ -708,10 +725,10 @@ DBLINK は、 BioProject ID、BioSample ID、Sequence Read Archive (DRA/ERA/SRA)
 
 | Entry | Feature                         | Location | Qualifier                                      | Value                                 |
 | ----- | ------------------------------- | -------- | ---------------------------------------------- | ------------------------------------- |
-|       | <span class="red">DBLINK</span> |          | <span class="red">project</span>               | <span class="red">PRJDB12345</span>   |
-|       |                                 |          | <span class="red">biosample</span>             | <span class="red">SAMD90000000</span> |
-|       |                                 |          | <span class="red">sequence read archive</span> | <span class="red">DRR999000</span>    |
-|       |                                 |          | <span class="red">sequence read archive</span> | <span class="red">DRR999001</span>    |
+|   空白    | <span class="red">DBLINK</span> |     空白     | <span class="red">project</span>               | <span class="red">PRJDB12345</span>   |
+|    空白   |                 空白                |     空白     | <span class="red">biosample</span>             | <span class="red">SAMD90000000</span> |
+|    空白   |                 空白                |     空白     | <span class="red">sequence read archive</span> | <span class="red">DRR999000</span>    |
+|    空白   |                 空白                |     空白     | <span class="red">sequence read archive</span> | <span class="red">DRR999001</span>    |
 
 </div>
 
@@ -745,10 +762,10 @@ ff\_definition は、The DDBJ/EMBL/GenBank Feature Table: Definition には定�
 
 | Entry | Feature | Location | Qualifier      | Value                                                                                           |
 | ----- | ------- | -------- | -------------- | ----------------------------------------------------------------------------------------------- |
-|       | source  | 1..516   | organism       | Mus musculus                                                                                    |
-|       |         |          | mol\_type      | mRNA                                                                                            |
-|       |         |          | ff\_definition | <span class="bold">@@[organism\]@@</span> mRNA, clone: <span class="bold">@@[clone\]@@</span> |
-|       |         |          | clone          | PC0110                                                                                          |
+|    空白   | source  | 1..516   | organism       | Mus musculus                                                                                    |
+|    空白   |    空白     |     空白     | mol\_type      | mRNA                                                                                            |
+|    空白   |    空白     |     空白     | ff\_definition | <span class="bold">@@[organism\]@@</span> mRNA, clone: <span class="bold">@@[clone\]@@</span> |
+|    空白   |     空白    |      空白    | clone          | PC0110                                                                                          |
 
 </div>
 
@@ -792,9 +809,9 @@ sequencing gap を示すために配列ファイルでは、配列中に 'n' を
 
 | Entry | Feature       | Location | Qualifier         | Value                                    |
 | ----- | ------------- | -------- | ----------------- | ---------------------------------------- |
-|       | assembly\_gap | 101..200 | estimated\_length | <span class="red">unknown</span>         |
-|       |               |          | gap\_type         | <span class="red">within scaffold</span> |
-|       |               |          | linkage\_evidence | <span class="red">paired-ends</span>     |
+|   空白    | assembly\_gap | 101..200 | estimated\_length | <span class="red">unknown</span>         |
+|   空白    |        空白       |    空白      | gap\_type         | <span class="red">within scaffold</span> |
+|   空白    |        空白       |    空白      | linkage\_evidence | <span class="red">paired-ends</span>     |
 
 </div>
 
@@ -828,7 +845,7 @@ TOPOLOGY は登録塩基配列全体の形状が環状で、最初の塩基と�
 
 | Entry | Feature  | Location | Qualifier | Value |
 | ----- | -------- | -------- | --------- | ----- |
-|       | TOPOLOGY |          | circular  |       |
+|    空白   | TOPOLOGY |     空白     | circular  |   空白    |
 
 </div>
 
@@ -852,13 +869,13 @@ PRIMARY\_CONTIG, entry, および primary\_bases
 
 | Entry | Feature         | Location  | Qualifier      | Value      |
 | ----- | --------------- | --------- | -------------- | ---------- |
-|       | PRIMARY\_CONTIG | 1..438    | entry          | ZZ000010.1 |
-|       |                 |           | primary\_bases | 1..438     |
-|       | PRIMARY\_CONTIG | 377..696  | entry          | ZZ000011.1 |
-|       |                 |           | primary\_bases | 1..320     |
-|       |                 |           | complement     |            |
-|       | PRIMARY\_CONTIG | 590..1191 | entry          | ZZ000022.0 |
-|       |                 |           | primary\_bases | 1..601     |
+|    空白   | PRIMARY\_CONTIG | 1..438    | entry          | ZZ000010.1 |
+|    空白   |         空白        |     空白      | primary\_bases | 1..438     |
+|    空白   | PRIMARY\_CONTIG | 377..696  | entry          | ZZ000011.1 |
+|    空白   |         空白        |     空白      | primary\_bases | 1..320     |
+|    空白   |           空白      |      空白     | complement     |            |
+|    空白   | PRIMARY\_CONTIG | 590..1191 | entry          | ZZ000022.0 |
+|    空白   |         空白        |     空白      | primary\_bases | 1..601     |
 
 </div>
 
@@ -978,7 +995,19 @@ check)でチェックすることが可能です。
     例: アノテーションファイル内の COMMENT と ST\_COMMENT
     
     <div class="main_table format">
-    
-    gap\_type
-    
+
+    |  gap_type  |  linkage  |  解説・注意事項  |
+    | ---- | ---- | ---- |
+    |  scaffold 内の gap: gap 前後の配列が１つの scaffold に収まる場合、連鎖している  |    |    |
+    |  scaffold  |  yes  |  scaffold を分けずに記載すること<br>gap 前後の配列が連鎖する証拠があることを示す  |
+    |  repeat  |  yes  |  scaffold を分けずに記載すること<br>gap に未解消の繰り返し単位が存在し、前後の配列が連鎖する証拠がある場合は 'yes' とする  |
+    |  scaffold を分ける gap: gap 前後の配列が分かれた scaffold に それぞれ位置し、連鎖するか否か不明  |    |    |
+    |  contig  |  no  |  scaffold を分けて記載すること<br>gap 前後の配列が連鎖する証拠がなく、連鎖するか否か不明  |
+    |  repeat  |  no  |  scaffold を分けて記載すること<br>gap に未解消の繰り返し単位が存在し、前後の配列が連鎖する証拠がない場合は 'no' とする  |
+    |  centromere<br>short_arm<br>heterochromatin<br>telomer  |  no  |  scaffold を分けて記載すること<br>これら生物学的 gap は chromosome に沿った scaffold の間に配置すること  |
+    |  使用禁止となる gap type と linkage の組み合わせ  |   |    |
+    |  contig  |  yes  |  この組み合わせは使用禁止<br>もし、gap 前後の配列が連鎖する証拠があるならば、gap type は contig ではなく scaffold とすべきである  |
+    |  scaffold  |  no  |  この組み合わせは使用禁止<br>もし、gap 前後の配列が連鎖する証拠がないならば、gap type は scaffold ではなく contig とすべきである  |
+    |  centromere<br>short_arm<br>heterochromatin<br>telomere  |  yes  |  この組み合わせは使用禁止<br>これら生物学的 gap は scaffold 内では使用しないこと  |
+
     </div>
