@@ -1,12 +1,70 @@
+
 .md-content
-  h2 
-    font-size: 18px
-    color: #FF7300
-    margin-bottom: 15px
+  font-size: 1.4rem
+  line-height: 2
+
+  p, table, ol, ul, dl
+    margin-bottom: 1rem
+
+  h2
+    font-size: 1.8rem
+    line-height: 1.2
+    margin-top: 2.4rem
+    margin-bottom: 1.5rem
+    border-left: solid 1.2rem $COLOR_KEY
+    margin-left: -2.5rem
+    padding-left: 1.2rem
+
   ul
     li
-      font-size: 14px
-      margin-bottom: 27px
+      padding: .4rem 0
+      line-height: 1.2
       list-style-position: inside
-  p,a
-    font-size: 14px
+
+  dl
+    line-height: 1.2
+    dt, dd
+      padding: .4rem 0
+    dt
+      font-weight: bold
+    dd
+      + dt
+        margin-top: 1rem
+
+  .table-caption
+    font-size: 1.6 rem
+    color: #6E5C3E
+    margin-bottom: 1.3rem 
+    text-align: left
+    display: block
+    margin-top: 3.5rem
+  table
+    width: 100%
+    border-top: 1px solid $COLOR_BLACK
+    border-bottom: 1px solid $COLOR_BLACK
+    line-height: 1.2
+    tr
+      th, td
+        padding: .6rem .6rem .6rem .0rem
+        &:last-child
+          padding-right: 0
+      th
+        text-align: left
+        font-weight: bold
+        border-bottom: 1px solid $COLOR_BLACK
+        white-space: nowrap
+      td
+        border-bottom: 1px solid $COLOR_SEPARATOR
+      &:last-child
+        border-bottom: none
+        td
+          border-bottom: 1px solid $COLOR_BLACK
+
+  .highlighter-rouge
+    background-color: $COLOR_BLACK
+    color: white
+    padding: .6rem 1rem
+  code
+    font-size: 1.2rem
+    line-height: 1.6
+    font-family: 'courier', monospace

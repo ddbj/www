@@ -27,15 +27,15 @@ layout: default
   </div>
 </header>
 
-<main id="NavigationAndMainView">
+<section id="NavigationAndMainView">
   <div class="inner">
-    <section class="internal-link">
-    </section>
-    <section class="main-content-wrapper">
-      <div class="main-content md-content">
+    <nav class="internal-link">
+    </nav>
+    <main id="MainContentView">
+      <div class="md-content">
         {{ content }}
       </div>
-      <section class="multi-column-view">
+      <aside class="multi-column-view">
         <h2 class="caption">Related pages</h2>
         <div class="navigation">
           <nav>
@@ -90,7 +90,7 @@ layout: default
             </ul>
           </nav>
         </div>
-      </section>
-    </section>
+      </aside>
+    </main>
   </div>
-</main>
+</section>

@@ -107,7 +107,7 @@ body {
   background-attachment: fixed;
   font-family: "Roboto Condensed", "Noto Sans JP","Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
   height: 100%;
-  min-width: 128rem;
+  min-width: 96rem;
   color: #1C1B19;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
@@ -134,64 +134,66 @@ input, textarea, select, button {
   font-size: 1.4rem;
   line-height: 5rem;
   background-color: #1C1B19; }
-  .category-tab > ul > li {
-    display: inline-block; }
-    .category-tab > ul > li > a {
-      padding: 0 2rem;
-      display: block;
-      color: white;
-      text-decoration: none;
-      transition: color 0.2s, background-color 0.2s; }
-      .category-tab > ul > li > a:hover {
-        background-color: #FF7300; }
-      .category-tab > ul > li > a:before {
-        content: "";
-        margin: -.2rem .4rem 0 -.8rem;
-        display: inline-block;
-        height: 2.95rem;
-        background-position: 0 0;
-        background-repeat: no-repeat;
-        background-size: cover;
-        vertical-align: middle;
-        transition: background 0.2s; }
-    .category-tab > ul > li.-search_analysis > a:before {
-      background-image: url(../images/icon-search_analysis-mono.png);
-      width: 2.5rem; }
-    .category-tab > ul > li.-submission > a:before {
-      background-image: url(../images/icon-submission-mono.png);
-      width: 3.4rem; }
-    .category-tab > ul > li.-downloads > a:before {
-      background-image: url(../images/icon-downloads-mono.png);
-      width: 3.6rem; }
-    .category-tab > ul > li.-supercomputer > a:before {
-      background-image: url(../images/icon-super_computer-mono.png);
-      width: 3.45rem; }
-    .category-tab > ul > li.-statistics > a:before {
-      background-image: url(../images/icon-statistics-mono.png);
-      width: 3rem; }
-    .category-tab > ul > li.-activities > a:before {
-      background-image: url(../images/icon-activities-mono.png);
-      width: 3.1rem; }
-    .category-tab > ul > li.-aboutus > a:before {
-      background-image: url(../images/icon-about-mono.png);
-      width: 4rem; }
-    .category-tab > ul > li.-current > a {
-      color: #1C1B19;
-      background-color: white; }
-    .category-tab > ul > li.-current.-search_analysis > a:before {
-      background-image: url(../images/icon-search_analysis.png); }
-    .category-tab > ul > li.-current.-submission > a:before {
-      background-image: url(../images/icon-submission.png); }
-    .category-tab > ul > li.-current.-downloads > a:before {
-      background-image: url(../images/icon-downloads.png); }
-    .category-tab > ul > li.-current.-supercomputer > a:before {
-      background-image: url(../images/icon-super_computer.png); }
-    .category-tab > ul > li.-current.-statistics > a:before {
-      background-image: url(../images/icon-statistics.png); }
-    .category-tab > ul > li.-current.-activities > a:before {
-      background-image: url(../images/icon-activities.png); }
-    .category-tab > ul > li.-current.-aboutus > a:before {
-      background-image: url(../images/icon-about.png); }
+  .category-tab > ul {
+    white-space: nowrap; }
+    .category-tab > ul > li {
+      display: inline-block; }
+      .category-tab > ul > li > a {
+        padding: 0 2rem;
+        display: block;
+        color: white;
+        text-decoration: none;
+        transition: color 0.2s, background-color 0.2s; }
+        .category-tab > ul > li > a:hover {
+          background-color: #FF7300; }
+        .category-tab > ul > li > a:before {
+          content: "";
+          margin: -.2rem .4rem 0 -.8rem;
+          display: inline-block;
+          height: 2.95rem;
+          background-position: 0 0;
+          background-repeat: no-repeat;
+          background-size: cover;
+          vertical-align: middle;
+          transition: background 0.2s; }
+      .category-tab > ul > li.-search_analysis > a:before {
+        background-image: url(../images/icon-search_analysis-mono.png);
+        width: 2.5rem; }
+      .category-tab > ul > li.-submission > a:before {
+        background-image: url(../images/icon-submission-mono.png);
+        width: 3.4rem; }
+      .category-tab > ul > li.-downloads > a:before {
+        background-image: url(../images/icon-downloads-mono.png);
+        width: 3.6rem; }
+      .category-tab > ul > li.-supercomputer > a:before {
+        background-image: url(../images/icon-super_computer-mono.png);
+        width: 3.45rem; }
+      .category-tab > ul > li.-statistics > a:before {
+        background-image: url(../images/icon-statistics-mono.png);
+        width: 3rem; }
+      .category-tab > ul > li.-activities > a:before {
+        background-image: url(../images/icon-activities-mono.png);
+        width: 3.1rem; }
+      .category-tab > ul > li.-aboutus > a:before {
+        background-image: url(../images/icon-about-mono.png);
+        width: 4rem; }
+      .category-tab > ul > li.-current > a {
+        color: #1C1B19;
+        background-color: white; }
+      .category-tab > ul > li.-current.-search_analysis > a:before {
+        background-image: url(../images/icon-search_analysis.png); }
+      .category-tab > ul > li.-current.-submission > a:before {
+        background-image: url(../images/icon-submission.png); }
+      .category-tab > ul > li.-current.-downloads > a:before {
+        background-image: url(../images/icon-downloads.png); }
+      .category-tab > ul > li.-current.-supercomputer > a:before {
+        background-image: url(../images/icon-super_computer.png); }
+      .category-tab > ul > li.-current.-statistics > a:before {
+        background-image: url(../images/icon-statistics.png); }
+      .category-tab > ul > li.-current.-activities > a:before {
+        background-image: url(../images/icon-activities.png); }
+      .category-tab > ul > li.-current.-aboutus > a:before {
+        background-image: url(../images/icon-about.png); }
 
 @media screen and (max-width: 480px) {
   .category-tab > ul {
@@ -336,47 +338,66 @@ input, textarea, select, button {
       display: block;
       margin-bottom: 10px; }
 
-.md-content h2 {
-  font-size: 18px;
-  color: #FF7300;
-  margin-bottom: 15px; }
-
-.md-content ul li {
-  font-size: 14px;
-  margin-bottom: 27px;
-  list-style-position: inside; }
-
-.md-content p, .md-content a {
-  font-size: 14px; }
-
-.table-caption {
-  font-size: 16px;
-  color: #6E5C3E;
-  margin-bottom: 13px;
-  text-align: left;
-  display: block;
-  margin-top: 35px; }
-
-table {
-  width: 100%;
-  border-top: 1px solid #1C1B19;
-  border-bottom: 1px solid #1C1B19; }
-  table tbody tr {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-    table tbody tr:last-child {
-      border-bottom: none; }
-    table tbody tr th {
+.md-content {
+  font-size: 1.4rem;
+  line-height: 2; }
+  .md-content p, .md-content table, .md-content ol, .md-content ul, .md-content dl {
+    margin-bottom: 1rem; }
+  .md-content h2 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-top: 2.4rem;
+    margin-bottom: 1.5rem;
+    border-left: solid 1.2rem #FF7300;
+    margin-left: -2.5rem;
+    padding-left: 1.2rem; }
+  .md-content ul li {
+    padding: .4rem 0;
+    line-height: 1.2;
+    list-style-position: inside; }
+  .md-content dl {
+    line-height: 1.2; }
+    .md-content dl dt, .md-content dl dd {
+      padding: .4rem 0; }
+    .md-content dl dt {
+      font-weight: bold; }
+    .md-content dl dd + dt {
+      margin-top: 1rem; }
+  .md-content .table-caption {
+    font-size: 1.6 rem;
+    color: #6E5C3E;
+    margin-bottom: 1.3rem;
+    text-align: left;
+    display: block;
+    margin-top: 3.5rem; }
+  .md-content table {
+    width: 100%;
+    border-top: 1px solid #1C1B19;
+    border-bottom: 1px solid #1C1B19;
+    line-height: 1.2; }
+    .md-content table tr th, .md-content table tr td {
+      padding: .6rem .6rem .6rem .0rem; }
+      .md-content table tr th:last-child, .md-content table tr td:last-child {
+        padding-right: 0; }
+    .md-content table tr th {
       text-align: left;
       font-weight: bold;
-      font-size: 14px; }
-    table tbody tr td {
-      line-height: 30px;
-      margin: 0;
-      font-size: 14px; }
-      table tbody tr td:nth-of-type(1) {
-        text-align: left;
-        font-weight: bold;
-        font-size: 14px; }
+      border-bottom: 1px solid #1C1B19;
+      white-space: nowrap; }
+    .md-content table tr td {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+    .md-content table tr:last-child {
+      border-bottom: none; }
+      .md-content table tr:last-child td {
+        border-bottom: 1px solid #1C1B19; }
+  .md-content .highlighter-rouge {
+    background-color: #1C1B19;
+    color: white;
+    padding: .6rem 1rem; }
+  .md-content code {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: 'courier', monospace; }
 
 .multi-column-view {
   border-top: 1px solid #1C1B19; }
@@ -400,7 +421,7 @@ table {
   background-color: white; }
   #Body > .inner {
     margin: 0 auto;
-    width: 128rem;
+    max-width: 128rem;
     padding: 2rem 3rem 4rem;
     font-size: 1.4rem;
     line-height: 1.4; }
@@ -421,7 +442,7 @@ table {
     color: white; }
   #CommonHeader > .inner {
     margin: 0 auto;
-    width: 128rem;
+    max-width: 128rem;
     padding: 0 1rem;
     height: 4rem;
     display: flex; }
@@ -456,7 +477,7 @@ table {
         justify-content: center;
         position: absolute;
         left: -9.3rem;
-        width: 128rem;
+        max-width: 128rem;
         background-color: #1C1B19;
         font-size: 1.4rem;
         line-height: 2rem;
@@ -553,7 +574,7 @@ table {
   background-attachment: fixed; }
   #Footer > .top > .inner, #Footer > .bottom > .inner {
     margin: 0 auto;
-    width: 128rem; }
+    max-width: 128rem; }
   #Footer > .top {
     padding: 3rem 0; }
     #Footer > .top > .inner > .sitemap {
@@ -642,21 +663,44 @@ table {
         display: block;
         padding: 0.8rem 2rem; } }
 
+.internal-link {
+  padding: 24px 16px 0 40px;
+  width: 20%; }
+  .internal-link > ul {
+    position: sticky;
+    top: 24px; }
+
+#MainContentView {
+  width: 80%; }
+  #MainContentView > .md-content {
+    padding: 0 4rem 2.5rem 2.5rem; }
+
+#NavigationAndMainView {
+  border-bottom: 0.3rem solid #6D5C3F;
+  background-color: white; }
+  #NavigationAndMainView > .inner {
+    margin: 0 auto;
+    max-width: 128rem;
+    display: flex; }
+
 #PageHeader {
   border-bottom: 1px solid #000;
   background-color: white; }
   #PageHeader > .inner {
     margin: 0 auto;
-    width: 128rem;
+    max-width: 128rem;
     display: flex;
     justify-content: space-between;
     padding: 2.7rem 4rem 1rem; }
+
+.multi-column-view {
+  padding: 25px 40px 25px 35px; }
 
 #TopBody {
   background-color: rgba(253, 253, 253, 0.8); }
   #TopBody > .inner {
     margin: 0 auto;
-    width: 128rem;
+    max-width: 128rem;
     padding: 0 4.2rem 4.2rem;
     display: flex; }
     #TopBody > .inner > #TopServiceGroups {
@@ -679,7 +723,7 @@ table {
 
 #TopHeader > .inner {
   margin: 0 auto;
-  width: 128rem;
+  max-width: 128rem;
   height: 14.6rem;
   position: relative; }
   #TopHeader > .inner > .first > * {
@@ -841,29 +885,6 @@ table {
     #TopServiceGroups > .group > a {
       width: auto;
       height: 100%; } }
-
-.internal-link {
-  padding: 24px 16px 0 40px;
-  width: 20%; }
-  .internal-link > ul {
-    position: sticky;
-    top: 24px; }
-
-#NavigationAndMainView {
-  border-bottom: 3px solid #6D5C3F;
-  background-color: white; }
-  #NavigationAndMainView > .inner {
-    margin: 0 auto;
-    width: 128rem;
-    display: flex; }
-    #NavigationAndMainView > .inner .main-content {
-      padding: 37px 40px 85px 25px; }
-
-.multi-column-view {
-  padding: 25px 40px 25px 35px; }
-
-.main-content-wrapper {
-  width: 80%; }
 
 ._bg-dbcls {
   background-color: #004098 !important; }
