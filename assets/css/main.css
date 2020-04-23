@@ -245,7 +245,7 @@ input, textarea, select, button {
   margin-top: 1em; }
 
 .page-title > .title {
-  margin-bottom: 0.6rem;
+  margin-bottom: .3rem;
   font-size: 3.2rem;
   line-height: 1.2;
   font-weight: lighter; }
@@ -296,6 +296,13 @@ input, textarea, select, button {
     transform: rotate(-45deg);
     top: 1.8rem;
     left: 1.8rem; }
+
+.search-box[data-color="white"] > select {
+  background-color: #F5F4F2;
+  border: solid 1px #d2cac4; }
+
+.search-box[data-color="white"] > input[type="text"] {
+  border: solid 1px #d2cac4; }
 
 @media screen and (max-width: 480px) {
   .search-box > input[type="text"] {
@@ -635,11 +642,15 @@ table {
         display: block;
         padding: 0.8rem 2rem; } }
 
-.page-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 27px 40px;
-  border-bottom: 1px solid #000; }
+#PageHeader {
+  border-bottom: 1px solid #000;
+  background-color: white; }
+  #PageHeader > .inner {
+    margin: 0 auto;
+    width: 128rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.7rem 4rem 1rem; }
 
 #TopBody {
   background-color: rgba(253, 253, 253, 0.8); }
@@ -852,3 +863,5 @@ table {
 
 ._bg-dbcls {
   background-color: #004098 !important; }
+
+/*# sourceMappingURL=main.css.map */
