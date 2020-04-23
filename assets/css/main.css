@@ -849,11 +849,15 @@ table {
     position: sticky;
     top: 24px; }
 
-.NavigationAndMainView {
-  display: flex;
-  border-bottom: 3px solid #6D5C3F; }
-  .NavigationAndMainView .main-content {
-    padding: 37px 40px 85px 25px; }
+#NavigationAndMainView {
+  border-bottom: 3px solid #6D5C3F;
+  background-color: white; }
+  #NavigationAndMainView > .inner {
+    margin: 0 auto;
+    width: 128rem;
+    display: flex; }
+    #NavigationAndMainView > .inner .main-content {
+      padding: 37px 40px 85px 25px; }
 
 .multi-column-view {
   padding: 25px 40px 25px 35px; }
