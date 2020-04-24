@@ -48,8 +48,8 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
 
   - [AMPLIFICATION\_FORWARD](#AMPLIFICATION_FORWARD)<span class="conditionally_required">\*</span>  
     テンプレートの増幅用フォワードプライマーの塩基配列 
-    <span class="dta_type">Type:
-    varchar(100)</span> <span class="dta_example">Example: GGATTCTGACTAACGAGC</span>
+    <span class="dta_type">Type: varchar(100)</span> 
+    <span class="dta_example">Example: GGATTCTGACTAACGAGC</span>
     配列決定のために用いられたテンプレート増幅用プライマーの配列を記載します。次の場合に必須です:<span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=PCR or RT-PCR。
 
 <!-- end list -->
@@ -71,7 +71,8 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
 <!-- end list -->
 
   - [ANONYMIZED\_ID](#ANONYMIZED_ID)  
-    個人に対する匿名化された ID <span class="dta_type">Type: varchar(100)</span>
+    個人に対する匿名化された ID 
+    <span class="dta_type">Type: varchar(100)</span>
     <span class="dta_example">Example: 2222anonym</span>
     ドナーの匿名性を保護するプロジェクトで使用します。多くの場合 Trace Archive の匿名化された ID と表現型情報が得られた個人の ID とを結びつけるアクセスが制限されたデータベースが存在します。
 
@@ -93,29 +94,31 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
 <!-- end list -->
 
   - [CENTER\_NAME](#CENTER_NAME)<span class="required">\*</span>  
-    センター名の略称 <span class="dta_type">Type: varchar(50)</span>
+    センター名の略称 
+    <span class="dta_type">Type: varchar(50)</span>
     <span class="dta_example">Example: WUGSC</span> 
-    DDBJ Trace Archive にデータを登録する前にセンター名の略称を登録します。この略称は <span class="dta_metadata">[CENTER\_NAME](#CENTER_NAME)</span> で使われます。登録されている <span class="dta_metadata">[CENTER\_NAME](#CENTER_NAME)</span> の一覧: [http://www.ncbi.nlm.nih.gov/Traces/trace.cgi?view=submitting\_centers](https://www.ncbi.n nih.gov/Traces/trace.cgi?view=submitting_centers)
-    
-    <span class="attention_text">Sequence Read Archive の center name とは別になります。</span>
+    DDBJ Trace Archive にデータを登録する前にセンター名の略称を登録します。この略称は <span class="dta_metadata">[CENTER\_NAME](#CENTER_NAME)</span> で使われます。登録されている <span class="dta_metadata">[CENTER\_NAME](#CENTER_NAME)</span> の一覧: [http://www.ncbi.nlm.nih.gov/Traces/trace.cgi?view=submitting\_centers](https://www.ncbi.n nih.gov/Traces/trace.cgi?view=submitting_centers) <span class="attention_text">Sequence Read Archive の center name とは別になります。</span>
 
 <!-- end list -->
 
   - [CENTER\_PROJECT](#CENTER_PROJECT)<span class="required">\*</span>  
-    センター独自のプロジェクト名 <span class="dta_type">Type: varchar(100)</span>
+    センター独自のプロジェクト名 
+    <span class="dta_type">Type: varchar(100)</span>
     <span class="dta_example">Example: HBBB</span>
     <span class="dta_metadata">[CENTER\_PROJECT](#CENTER_PROJECT)</span>はシークエンスセンター内部で使用するプロジェクト名です。この項目は関連する trace をまとめるのに役立ちます。
 
 <!-- end list -->
 
   - [CHEMISTRY](#CHEMISTRY)  
-    シークエンス反応で使われたケミストリー <span class="dta_type">Type: varchar(50)</span>
+    シークエンス反応で使われたケミストリー 
+    <span class="dta_type">Type: varchar(50)</span>
     <span class="dta_example">Example: BIGDYEV3.0</span>
 
 <!-- end list -->
 
   - [CHEMISTRY\_TYPE](#CHEMISTRY_TYPE)  
-    シークエンス反応で使われたケミストリーの種類 <span class="dta_type">Type: char(50)</span>
+    シークエンス反応で使われたケミストリーの種類 
+    <span class="dta_type">Type: char(50)</span>
     <span class="dta_example">Example: P</span>
     <span class="dta_metadata">[CHEMISTRY\_TYPE](#CHEMISTRY_TYPE)</span> で使用可能な語句:  
     Primer  
@@ -171,8 +174,7 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
     <span class="dta_type">Type: varchar(30)</span>
     <span class="dta_example">Example: RP23-1123F10</span>
     <span class="dta_metadata">[CLONE\_ID](#CLONE_ID)</span> は個々の BAC，PAC や cDNA クローンの ID です。クローンが Clone Registry
-    ([http://www.ncbi.nlm.nih.gov/clone/](https://www.ncbi.nlm.nih.gov/clone/))
-    に登録されている場合はstandard clone registry nomenclature ([http://www.ncbi.nlm.nih.gov/clone/content/overview/](https://www.ncbi.nlm.nih.gov/clone/content/overview/))に従って記載します。  
+    ([http://www.ncbi.nlm.nih.gov/clone/](https://www.ncbi.nlm.nih.gov/clone/)) に登録されている場合はstandard clone registry nomenclature ([http://www.ncbi.nlm.nih.gov/clone/content/overview/](https://www.ncbi.nlm.nih.gov/clone/content/overview/))に従って記載します。  
     次の <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>と <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span> の組み合わせで必須です:  
     <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=cDNA;<span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=Any  
     <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=EST;<span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=Any  
@@ -275,15 +277,15 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
   - [FEATURE\_ID\_FILE\_NAME](#FEATURE_ID_FILE_NAME)<span class="conditionally_required">\*</span>  
     共通の FEATURE\_ID\_FILE (先に登録します) へのリファレンス
     <span class="dta_type">Type: varchar(200)</span>
-    <span class="dta_example">Example:</span> 
+    <span class="dta_example">Example:</span>  
     この項目は <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>="CHIP" のときに必須です。
 
 <!-- end list -->
 
   - [FEATURE\_SIGNAL\_FILE](#FEATURE_SIGNAL_FILE)  
-    チップ上の feature のシグナルと分散が記載されたファイル <span class="dta_type">Type:
-    varchar(200)</span> <span class="dta_example">Example:
-    ./mytraces/chip2.signal</span>
+    チップ上の feature のシグナルと分散が記載されたファイル 
+    <span class="dta_type">Type: varchar(200)</span> 
+    <span class="dta_example">Example: ./mytraces/chip2.signal</span>
     <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>="CHIP"のときにチップ上の feature のシグナルと分散が記載されたファイルを <span class="dta_metadata">[FEATURE\_SIGNAL\_FILE](#FEATURE_SIGNAL_FILE)</span>で指定します。
 
 <!-- end list -->
@@ -297,7 +299,8 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
 <!-- end list -->
 
   - [GENE\_NAME](#GENE_NAME)  
-    遺伝子名や遺伝子の ID <span class="dta_type">Type: varchar(100)</span>
+    遺伝子名や遺伝子の ID 
+    <span class="dta_type">Type: varchar(100)</span>
     <span class="dta_example">Example: transporter 1</span> 
     フリーテキスト。主に <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>='Re-sequencing' or'ENCODE' のときに使われます。研究対象の遺伝子を遺伝子名や何らかの ID で参照します。
 
@@ -334,8 +337,7 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
     環境サンプルが採取されたホスト上の特定の場所 
     <span class="dta_type">Type: varchar(100)</span> 
     <span class="dta_example">Example: rumen</span>
-    <span class="dta_metadata">[HOST\_LOCATION](#HOST_LOCATION)</span>には環境サンプルが採取されたホスト上の特定の場所，例えば
-    dental plaque，hindgut，root surfaces を記載します。  
+    <span class="dta_metadata">[HOST\_LOCATION](#HOST_LOCATION)</span>には環境サンプルが採取されたホスト上の特定の場所，例えば dental plaque，hindgut，root surfaces を記載します。  
     次の <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span> の組み合わせで必須です:  
     <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=Env Sample-Host; <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=Any
 
@@ -370,17 +372,8 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
   - [INSERT\_FLANK\_RIGHT](#INSERT_FLANK_RIGHT)<span class="conditionally_required">\*</span>  
     クローニング部位の右に隣接する塩基配列 
     <span class="dta_type">Type: varchar(100)</span>
-    <span class="dta_example">Example:
-    AAGGCGCGATGCAGTGAGCGAGGCTGACGTCGGCTAGCGTCGCGTCGGGT</span>
-    <span class="dta_metadata">[INSERT\_FLANK\_RIGHT](#INSERT_FLANK_RIGHT)</span>
-    ではクローニング部位の右に隣接するリンカーを含む塩基配列 (50-100
-    塩基)　を記入します。この情報によりユーザは独自にベクターをトリミングすることができます。この項目はほとんど全ての
-    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と
-    <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>
-    で必須です。この項目は
-    <span class="dta_metadata">[CLIP\_VECTOR\_RIGHT](#CLIP_VECTOR_RIGHT)</span>
-    がある場合には省略できますが，<span class="dta_metadata">[INSERT\_FLANK\_RIGHT](#INSERT_FLANK_RIGHT)</span>
-    への記入を推奨しています。クローニングステップがない場合は 'NONE' と記入します。
+    <span class="dta_example">Example: AAGGCGCGATGCAGTGAGCGAGGCTGACGTCGGCTAGCGTCGCGTCGGGT</span>
+    <span class="dta_metadata">[INSERT\_FLANK\_RIGHT](#INSERT_FLANK_RIGHT)</span> ではクローニング部位の右に隣接するリンカーを含む塩基配列 (50-100 塩基)　を記入します。この情報によりユーザは独自にベクターをトリミングすることができます。この項目はほとんど全ての <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span> で必須です。この項目は <span class="dta_metadata">[CLIP\_VECTOR\_RIGHT](#CLIP_VECTOR_RIGHT)</span> がある場合には省略できますが，<span class="dta_metadata">[INSERT\_FLANK\_RIGHT](#INSERT_FLANK_RIGHT)</span> への記入を推奨しています。クローニングステップがない場合は 'NONE' と記入します。
 
 <!-- end list -->
 
@@ -388,9 +381,7 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
     インサートの平均塩基配列長 (TEMPLATE\_ID の値で参照されます) <span class="dta_type">Type:
     int</span> <span class="dta_example">Example: 2000</span>
     <span class="dta_metadata">[INSERT\_SIZE](#INSERT_SIZE)</span>は配列決定されるクローンの期待されるインサート長を示します。あるライブラリーに対して見積もられたインサートの平均長に基づいて記入します。この情報は全ゲノムアセンブリなどの実験にとって重要です。  
-    次の <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と
-    <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>
-    の組み合わせで必須です:  
+    次の <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span> の組み合わせで必須です:  
     <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=Any;<span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=WGS  
     <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=Any;  
     <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=WCS  
@@ -418,27 +409,18 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
     サンプル採取地点の緯度 (standard GPS notation に基づく)
     <span class="dta_type">Type: float</span>
     <span class="dta_example">Example: 54.736</span>
-    環境サンプルの取得地点の緯度。緯度の範囲は　\[-90,90\]
-    で，赤道を 0 とし，赤道より北を正の値で，南を負の値で表します。  
-    次の <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と
-    <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>
-    の組み合わせで必須です:  
-    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=Env
-    Sample-Geo;<span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=Any
+    環境サンプルの取得地点の緯度。緯度の範囲は　[-90,90] で，赤道を 0 とし，赤道より北を正の値で，南を負の値で表します。  
+    次の <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span> の組み合わせで必須です:  
+    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=Env Sample-Geo;<span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=Any
 
 <!-- end list -->
 
   - [LIBRARY\_ID](#LIBRARY_ID)<span class="conditionally_required">\*</span>  
-    CLONE\_ID に記載されたクローンのソースライブラリー <span class="dta_type">Type:
-    varchar(100)</span> <span class="dta_example">Example: RP23</span>
-    <span class="dta_metadata">[LIBRARY\_ID](#LIBRARY_ID)</span>
-    にはクローンのソースライブラリーを記載します。多くのゲノムライブラリーはClone Registry
-    ([http://www.ncbi.nlm.nih.gov/clone](https://www.ncbi.nlm.nih.gov/clone))に既に登録されており，これらのライブラリーについてはstandard
-    nomenclature
-    ([http://www.ncbi.nlm.nih.gov/clone/content/overview/](https://www.ncbi.nlm.nih.gov/clone/content/overview/))に従った名称を使用します。  
-    次の <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と
-    <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>
-    の組み合わせで必須です:  
+    CLONE\_ID に記載されたクローンのソースライブラリー 
+    <span class="dta_type">Type: varchar(100)</span> 
+    <span class="dta_example">Example: RP23</span>
+    <span class="dta_metadata">[LIBRARY\_ID](#LIBRARY_ID)</span> にはクローンのソースライブラリーを記載します。多くのゲノムライブラリーはClone Registry ([http://www.ncbi.nlm.nih.gov/clone](https://www.ncbi.nlm.nih.gov/clone))に既に登録されており，これらのライブラリーについてはstandard nomenclature ([http://www.ncbi.nlm.nih.gov/clone/content/overview/](https://www.ncbi.nlm.nih.gov/clone/content/overview/))に従った名称を使用します。  
+    次の <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span> の組み合わせで必須です:  
     <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=cDNA;<span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=Any  
     <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=EST;<span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=Any  
     <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=CLONEEND;<span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=CLONEEND  
@@ -452,73 +434,60 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
     サンプル採取地点の経度 (standard GPS notation に基づく)
     <span class="dta_type">Type: float</span>
     <span class="dta_example">Example: -86.403</span>
-    環境サンプルデータの取得地点の経度。グリニッジ子午線を 0°
-    として，子午線よりも東は +180°，西は -180° です。  
-    次の <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と
-    <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>
-    の組み合わせで必須です:  
-    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=Env
-    Sample-Geo;
-    <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=Any
+    環境サンプルデータの取得地点の経度。グリニッジ子午線を 0° として，子午線よりも東は +180°，西は -180° です。  
+    次の <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span> の組み合わせで必須です:  
+    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=Env Sample-Geo; <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=Any
 
 <!-- end list -->
 
   - [LO\_FILTER\_SIZE](#LO_FILTER_SIZE)  
-    環境サンプルを分取したフィルターで一番小さいサイズ <span class="dta_type">Type:
-    varchar(50)</span> <span class="dta_example">Example: 25
-    micron</span>
+    環境サンプルを分取したフィルターで一番小さいサイズ 
+    <span class="dta_type">Type: varchar(50)</span> 
+    <span class="dta_example">Example: 25 micron</span>
     <span class="dta_metadata">[LO\_FILTER\_SIZE](#LO_FILTER_SIZE)</span>は環境サンプルでのみ記載可能ですが必須ではありません。
 
 <!-- end list -->
 
   - [NCBI\_PROJECT\_ID](#NCBI_PROJECT_ID)  
-    INSDC によって管理されている BioProject ID <span class="dta_type">Type:
-    int</span> <span class="dta_example">Example: 7</span>
-    <span class="dta_metadata">[NCBI\_PROJECT\_ID](#NCBI_PROJECT_ID)</span>は
-    trace と [BioProject database](/bioproject/index.html)
-    を結びつけ，プロジェクト単位でのデータ取得を可能にします。シークエンス拠点はゲノム配列データを登録する前に
-    [DDBJ BioProject](/bioproject/index.html)
-    にプロジェクトを登録することができます。プロジェクト登録の時点で配列データを登録する必要はありません。
+    INSDC によって管理されている BioProject ID 
+    <span class="dta_type">Type: int</span> 
+    <span class="dta_example">Example: 7</span>
+    <span class="dta_metadata">[NCBI\_PROJECT\_ID](#NCBI_PROJECT_ID)</span>は trace と [BioProject database](/bioproject/index.html) を結びつけ，プロジェクト単位でのデータ取得を可能にします。シークエンス拠点はゲノム配列データを登録する前に [DDBJ BioProject](/bioproject/index.html) にプロジェクトを登録することができます。プロジェクト登録の時点で配列データを登録する必要はありません。
 
 <!-- end list -->
 
   - [ORGANISM\_NAME](#ORGANISM_NAME)<span class="conditionally_required">\*</span>  
-    BARCODE プロジェクトにおいて trace が由来する生物種名 <span class="dta_type">Type:
-    varchar(100)</span> <span class="dta_example">Example: Acanthocybium
-    solandri</span>
-    <span class="dta_metadata">[ORGANISM\_NAME](#ORGANISM_NAME)</span>は
-    BARCODE データにおいてリードを生物種ごとに分類するのに使われます。生物種名は[Taxonomy
-    Browser](https://www.ncbi.nlm.nih.gov/Taxonomy/) に従って記載します。全ての
-    BARCODE
-    データでは<span class="dta_metadata">[SPECIES\_CODE](#SPECIES_CODE)</span>="BARCODESPECIES"
-    になります。<span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=BARCODE
-    の場合に必須です。
+    BARCODE プロジェクトにおいて trace が由来する生物種名 
+    <span class="dta_type">Type: varchar(100)</span> <span class="dta_example">Example: Acanthocybium solandri</span>
+    <span class="dta_metadata">[ORGANISM\_NAME](#ORGANISM_NAME)</span>は BARCODE データにおいてリードを生物種ごとに分類するのに使われます。生物種名は[Taxonomy Browser](https://www.ncbi.nlm.nih.gov/Taxonomy/) に従って記載します。全ての BARCODE データでは<span class="dta_metadata">[SPECIES\_CODE](#SPECIES_CODE)</span>="BARCODESPECIES" になります。<span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=BARCODE の場合に必須です。
 
 <!-- end list -->
 
   - [PEAK\_FILE](#PEAK_FILE)  
-    peak value が記載されたファイル <span class="dta_type">Type:
-    varchar(200)</span> <span class="dta_example">Example:
-    ./mytraces/123clone.peak</span> 説明については
+    peak value が記載されたファイル 
+    <span class="dta_type">Type: varchar(200)</span> <span class="dta_example">Example: ./mytraces/123clone.peak</span> 説明については
     <span class="dta_metadata">[BASE\_FILE](#BASE_FILE)</span>をご覧ください。
 
 <!-- end list -->
 
   - [PH](#PH)  
-    環境サンプルが採取された場所の pH <span class="dta_type">Type: float</span>
+    環境サンプルが採取された場所の pH 
+    <span class="dta_type">Type: float</span>
     <span class="dta_example">Example: 7.2</span>
     <span class="dta_metadata">[PH](#PH)</span>は環境サンプルでのみ記載可能ですが必須ではありません。
 
 <!-- end list -->
 
   - [PICK\_GROUP\_ID](#PICK_GROUP_ID)  
-    同じ時に取得された trace をまとめる ID <span class="dta_type">Type: int</span>
+    同じ時に取得された trace をまとめる ID 
+    <span class="dta_type">Type: int</span>
     <span class="dta_example">Example: 939065</span>
 
 <!-- end list -->
 
   - [PLACE\_NAME](#PLACE_NAME)  
-    生物学的サンプルが得られた地点の国名 and/or 一般に通用する名称 <span class="dta_type">Type:
+    生物学的サンプルが得られた地点の国名 and/or 一般に通用する名称 
+    <span class="dta_type">Type:
     varchar(250)</span> <span class="dta_example">Example: Octopus
     Springs</span>
     <span class="dta_metadata">[PLACE\_NAME](#PLACE_NAME)</span>は環境サンプルでのみ記載可能ですが必須ではありません。
@@ -526,7 +495,8 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
 <!-- end list -->
 
   - [PLATE\_ID](#PLATE_ID)  
-    登録者が付けたプレート ID <span class="dta_type">Type: varchar(32)</span>
+    登録者が付けたプレート ID 
+    <span class="dta_type">Type: varchar(32)</span>
     <span class="dta_example">Example: 203</span>
     <span class="dta_metadata">[PLATE\_ID](#PLATE_ID)</span>と<span class="dta_metadata">[WELL\_ID](#WELL_ID)</span>はシークエンステンプレートが保存された場所を指し示します(<span class="dta_metadata">[CLONE\_ID](#CLONE_ID)</span>
     に記載されたクローンの保存場所ではありません)。この情報はこぼれたり何かが混入したプレートを同定するのに役立ちます。プレートを使用しない実験の場合は
@@ -538,29 +508,29 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
     登録者が trace (もしくは trace のグループ) が由来する population に付けた ID
     <span class="dta_type">Type: varchar(100)</span>
     <span class="dta_example">Example: CEPH</span>
-    <span class="dta_metadata">[POPULATION\_ID](#POPULATION_ID)</span>は集団を特定するのに使われます。この情報は
-    population study (通常
-    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=SNP)　で使用されます。
+    <span class="dta_metadata">[POPULATION\_ID](#POPULATION_ID)</span>は集団を特定するのに使われます。この情報は population study (通常 <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=SNP)　で使用されます。
 
 <!-- end list -->
 
   - [PREP\_GROUP\_ID](#PREP_GROUP_ID)  
-    同じ時に調整された trace をまとめる ID <span class="dta_type">Type:
+    同じ時に調整された trace をまとめる ID 
+    <span class="dta_type">Type:
     varchar(30)</span> <span class="dta_example">Example: A2</span>
 
 <!-- end list -->
 
   - [PRIMER](#PRIMER)  
-    シークエンス反応で使われたプライマー配列 <span class="dta_type">Type:
+    シークエンス反応で使われたプライマー配列 
+    <span class="dta_type">Type:
     varchar(200)</span> <span class="dta_example">Example:
     GAATACCTACGATCGCC</span>
-    <span class="dta_metadata">[PRIMER](#PRIMER)</span>にはシークエンスプライマーの塩基配列を記入します。センターが多種類のプライマーを使っている場合は<span class="dta_metadata">[PRIMER\_CODE](#PRIMER_CODE)</span>
-    に primer code のリストを記載します。
+    <span class="dta_metadata">[PRIMER](#PRIMER)</span>にはシークエンスプライマーの塩基配列を記入します。センターが多種類のプライマーを使っている場合は<span class="dta_metadata">[PRIMER\_CODE](#PRIMER_CODE)</span> に primer code のリストを記載します。
 
 <!-- end list -->
 
   - [PRIMER\_CODE](#PRIMER_CODE)  
-    シークエンスプライマーに対するコード <span class="dta_type">Type: varchar(30)</span>
+    シークエンスプライマーに対するコード 
+    <span class="dta_type">Type: varchar(30)</span>
     <span class="dta_example">Example: Sp6</span>
 
 <!-- end list -->
@@ -570,17 +540,14 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
     <span class="dta_type">Type: varchar(100)</span>
     <span class="dta_example">Example:
     AAGGTCTGCGCGTGTC;AGCTGCGTACGTAATCG;</span>
-    この項目は<span class="dta_metadata">[STRATEGY](#STRATEGY)</span>="AFLP"
-    と
-    <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>="PCR"
-    の組み合わせのときに必須です。
+    この項目は<span class="dta_metadata">[STRATEGY](#STRATEGY)</span>="AFLP" と <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>="PCR" の組み合わせのときに必須です。
 
 <!-- end list -->
 
   - [PROGRAM\_ID](#PROGRAM_ID)<span class="required">\*</span>  
-    trace ファイルを作成するのに使われたプログラム <span class="dta_type">Type:
-    varchar(100)</span> <span class="dta_example">Example:
-    phred-19990722h</span>
+    trace ファイルを作成するのに使われたプログラム 
+    <span class="dta_type">Type: varchar(100)</span> 
+    <span class="dta_example">Example: phred-19990722h</span>
     ベースコールに使われたプログラムをフリーテキストで記載します。プログラムの名前，バージョン番号や日付はとても有用です。  
     例:
       - phred-19980904e
@@ -594,72 +561,46 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
 <!-- end list -->
 
   - [PROJECT\_NAME](#PROJECT_NAME)  
-    異なるセンターからの trace をまとめる共通したプロジェクト名 <span class="dta_type">Type:
-    varchar(50)</span> <span class="dta_example">Example: New
-    Project</span> シークエンス拠点は共通したプロジェクト名を用いることで，あるプロジェクトから産みだされる全ての trace
-    をグループ化することができます。記載可能なプロジェクト名は制限されています。この項目を利用する場合は事前に DDBJ Trace
-    Archive に連絡し，全てのプロジェクト参加者が同意しているプロジェクト名を伝えます。
+    異なるセンターからの trace をまとめる共通したプロジェクト名 
+    <span class="dta_type">Type: varchar(50)</span> 
+    <span class="dta_example">Example: New
+    Project</span> シークエンス拠点は共通したプロジェクト名を用いることで，あるプロジェクトから産みだされる全ての trace をグループ化することができます。記載可能なプロジェクト名は制限されています。この項目を利用する場合は事前に DDBJ Trace Archive に連絡し，全てのプロジェクト参加者が同意しているプロジェクト名を伝えます。
 
 <!-- end list -->
 
   - [QUAL\_FILE](#QUAL_FILE)  
-    quality score を含んだファイル <span class="dta_type">Type:
-    varchar(200)</span> <span class="dta_example">Example:
-    ./mytraces/123clone.fasta.qs</span> trace ファイルが quality score
-    を含んでいない場合，quality score
-    が含まれた別のファイルを登録します。<span class="dta_metadata">[QUAL\_FILE](#QUAL_FILE)</span>
-    でファイルを指定します。trace (通常は scf) ファイル中の quality score は
-    <span class="dta_metadata">[QUAL\_FILE](#QUAL_FILE)</span>
-    のもので上書きされます。<span class="dta_metadata">[QUAL\_FILE](#QUAL_FILE)</span>
-    と trace ファイルの quality score が同じ場合は QUAL\_FILE
-    を登録しないでください。<span class="dta_metadata">[BASE\_FILE](#BASE_FILE)</span>
-    と<span class="dta_metadata">[QUAL\_FILE](#QUAL_FILE)</span>
-    の両方を登録する場合は，あわせて peak index
-    情報を<span class="dta_metadata">[PEAK\_FILE](#PEAK_FILE)</span>
-    として別ファイルで登録します。
+    quality score を含んだファイル 
+    <span class="dta_type">Type: varchar(200)</span> 
+    <span class="dta_example">Example: ./mytraces/123clone.fasta.qs</span> 
+    trace ファイルが quality score を含んでいない場合，quality score が含まれた別のファイルを登録します。<span class="dta_metadata">[QUAL\_FILE](#QUAL_FILE)</span> でファイルを指定します。trace (通常は scf) ファイル中の quality score は <span class="dta_metadata">[QUAL\_FILE](#QUAL_FILE)</span> のもので上書きされます。<span class="dta_metadata">[QUAL\_FILE](#QUAL_FILE)</span> と trace ファイルの quality score が同じ場合は QUAL\_FILE を登録しないでください。<span class="dta_metadata">[BASE\_FILE](#BASE_FILE)</span> と<span class="dta_metadata">[QUAL\_FILE](#QUAL_FILE)</span> の両方を登録する場合は，あわせて peak index 情報を<span class="dta_metadata">[PEAK\_FILE](#PEAK_FILE)</span> として別ファイルで登録します。
 
 <!-- end list -->
 
   - [REFERENCE\_ACCESSION](#REFERENCE_ACCESSION)<span class="conditionally_required">\*</span>  
-    リシークエンスプロジェクトで使用されるリファレンス配列のアクセッション番号 (配列を特定するためにバージョン番号も併記します)。
-    Comparative study の場合はプライマーデザインの情報も付け加えます。
+    リシークエンスプロジェクトで使用されるリファレンス配列のアクセッション番号 (配列を特定するためにバージョン番号も併記します)。 Comparative study の場合はプライマーデザインの情報も付け加えます。
     <span class="dta_type">Type: varchar(50)</span>
-    <span class="dta_example">Example: NT\_029829.1</span> 次の
-    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と
-    <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>
-    の組み合わせで必須です:  
-    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=Re-sequencing;Comparative
-    <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=Any
+    <span class="dta_example">Example: NT\_029829.1</span> 
+    次の <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span> の組み合わせで必須です:  
+    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=Re-sequencing;Comparative <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=Any
 
 <!-- end list -->
 
   - [REFERENCE\_ACC\_MAX](#REFERENCE_ACC_MAX)<span class="conditionally_required">\*</span>  
-    リシークエンスや比較ゲノム解析における amplicon の終了位置 <span class="dta_type">Type:
-    int</span> <span class="dta_example">Example: 30929</span>
-    この項目は<span class="dta_metadata">[REFERENCE\_ACCESSION](#REFERENCE_ACCESSION)</span>の
-    accession.versionで特定されたリファレンス配列の終端の座標を記入します。スタートを (０ではなく)
-    １とした塩基対座標で記入します。  
-    次の <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と
-    <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>
-    の組み合わせで必須です:  
-    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=Re-sequencing;
-    <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=SHOTGUN;
-    PCR;RT-PCR
+    リシークエンスや比較ゲノム解析における amplicon の終了位置 
+    <span class="dta_type">Type: int</span> <span class="dta_example">Example: 30929</span>
+    この項目は<span class="dta_metadata">[REFERENCE\_ACCESSIOxx(#REFERENCE_ACCESSION)</span>の accession.versionで特定されたリファレンス配列の終端の座標を記入します。スタートを (０ではなく) １とした塩基対座標で記入します。  
+    次の <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span> の組み合わせで必須です:  
+    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=Re-sequencing; <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=SHOTGUN; PCR;RT-PCR
 
 <!-- end list -->
 
   - [REFERENCE\_ACC\_MIN](#REFERENCE_ACC_MIN)<span class="conditionally_required">\*</span>  
-    リシークエンスや比較ゲノム解析における amplicon の開始位置 <span class="dta_type">Type:
-    int</span> <span class="dta_example">Example: 29829</span>
-    この項目は<span class="dta_metadata">[REFERENCE\_ACCESSION](#REFERENCE_ACCESSION)</span>の
-    accession.versionで特定されたリファレンス配列の開始座標を記入します。スタートを (０ではなく)
-    １とした塩基対座標で記入します。  
-    次の <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と
-    <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>
-    の組み合わせで必須です:  
-    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=Re-sequencing;
-    <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=SHOTGUN;
-    PCR;RT-PCR
+    リシークエンスや比較ゲノム解析における amplicon の開始位置 
+    <span class="dta_type">Type: int</span> 
+    <span class="dta_example">Example: 29829</span>
+    この項目は<span class="dta_metadata">[REFERENCE\_ACCESSION](#REFERENCE_ACCESSION)</span>の accession.versionで特定されたリファレンス配列の開始座標を記入します。スタートを (０ではなく) １とした塩基対座標で記入します。  
+    次の <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span> の組み合わせで必須です:   
+    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=Re-sequencing;  <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=SHOTGUN; PCR;RT-PCR
 
 <!-- end list -->
 
@@ -667,14 +608,9 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
     リシークエンス解析でスタートの位置を決める REFERENCE\_ACCESSION　で指定された配列におけるオフセット値
     <span class="dta_type">Type: int</span>
     <span class="dta_example">Example: 1520899</span>
-    この項目は<span class="dta_metadata">[REFERENCE\_ACCESSION](#REFERENCE_ACCESSION)</span>の
-    accession.versionで特定されたリファレンス配列の終端の座標を記入します。スタートを (０ではなく)
-    １とした塩基対座標で記入します。  
-    次の <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と
-    <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>
-    の組み合わせで必須です:  
-    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=Re-sequencing;
-    <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=CHIP
+    この項目は<span class="dta_metadata">[REFERENCE\_ACCESSION](#REFERENCE_ACCESSION)</span>の accession.versionで特定されたリファレンス配列の終端の座標を記入します。スタートを (０ではなく) １とした塩基対座標で記入します。  
+    次の <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span> の組み合わせで必須です:  
+    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=Re-sequencing; <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=CHIP
 
 <!-- end list -->
 
@@ -682,10 +618,7 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
     リシークエンスされた領域全体の終了位置。この領域は複数の amplicon を含むことがあります
     <span class="dta_type">Type: int</span>
     <span class="dta_example">Example: 29829</span>
-    この項目には<span class="dta_metadata">[REFERENCE\_ACCESSION](#REFERENCE_ACCESSION)</span>の
-    accession.versionで指定されたリシークエンスされた領域全体の終了位置を記入します。スタートを (０ではなく)
-    １とした塩基対座標で記入します。REFERENCE\_ACC\_\[MIN|MAX\] と
-    REFERENCE\_SET\_\[MIN|MAX\]のセットは同じ REFERENCE\_ACC を参照する必要があります。
+    この項目には<span class="dta_metadata">[REFERENCE\_ACCESSION](#REFERENCE_ACCESSION)</span>の accession.versionで指定されたリシークエンスされた領域全体の終了位置を記入します。スタートを (０ではなく) １とした塩基対座標で記入します。REFERENCE\_ACC\_[MIN|MAX] と REFERENCE\_SET\_[MIN|MAX]のセットは同じ REFERENCE\_ACC を参照する必要があります。
 
 <!-- end list -->
 
@@ -693,68 +626,67 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
     リシークエンスされた領域全体の開始位置。この領域は複数の amplicon を含むことがあります
     <span class="dta_type">Type: int</span>
     <span class="dta_example">Example: 29829</span>
-    この項目には<span class="dta_metadata">[REFERENCE\_ACCESSION](#REFERENCE_ACCESSION)</span>の
-    accession.versionで指定されたリシークエンスされた領域全体の開始位置を記入します。スタートを (０ではなく)
-    １とした塩基対座標で記入します。REFERENCE\_ACC\_\[MIN|MAX\] と
-    REFERENCE\_SET\_\[MIN|MAX\]のセットは同じ REFERENCE\_ACC を参照する必要があります。
+    この項目には<span class="dta_metadata">[REFERENCE\_ACCESSION](#REFERENCE_ACCESSION)</span>の accession.versionで指定されたリシークエンスされた領域全体の開始位置を記入します。ス を (０ではなく) １とした塩基対座標で記入します。REFERENCE\_ACC\_[MIN|MAX] と REFERENCE\_SET\_[MIN|MAX]のセットは同じ REFERENCE\_ACC を参照する必要があります。
 
 <!-- end list -->
 
   - [RUN\_DATE](#RUN_DATE)  
-    シークエンス反応が行われた日付 <span class="dta_type">Type: datetime</span>
+    シークエンス反応が行われた日付 
+    <span class="dta_type">Type: datetime</span>
     <span class="dta_example">Example: 2000-10-28</span>
 
 <!-- end list -->
 
   - [RUN\_GROUP\_ID](#RUN_GROUP_ID)  
-    同じシークエンサーでランされた trace につける ID <span class="dta_type">Type:
-    varchar(30)</span> <span class="dta_example">Example: group2</span>
+    同じシークエンサーでランされた trace につける ID 
+    <span class="dta_type">Type: varchar(30)</span> 
+    <span class="dta_example">Example: group2</span>
 
 <!-- end list -->
 
   - [RUN\_LANE](#RUN_LANE)  
-    trace のレーン，もしくはキャピラリ <span class="dta_type">Type: int</span>
+    trace のレーン，もしくはキャピラリ 
+    <span class="dta_type">Type: int</span>
     <span class="dta_example">Example: 1</span>
-    <span class="dta_metadata">[RUN\_LANE](#RUN_LANE)</span>には trace
-    が得られたレーンやキャピラリを記入します。
+    <span class="dta_metadata">[RUN\_LANE](#RUN_LANE)</span>には trace が得られたレーンやキャピラリを記入します。
 
 <!-- end list -->
 
   - [RUN\_MACHINE\_ID](#RUN_MACHINE_ID)  
-    trace が得られたシークエンサーの ID <span class="dta_type">Type:
-    varchar(30)</span> <span class="dta_example">Example:
-    machine2</span>
+    trace が得られたシークエンサーの ID 
+    <span class="dta_type">Type: varchar(30)</span> 
+    <span class="dta_example">Example: machine2</span>
 
 <!-- end list -->
 
   - [RUN\_MACHINE\_TYPE](#RUN_MACHINE_TYPE)  
-    trace が得られたシークエンサーのモデル名 <span class="dta_type">Type:
-    varchar(30)</span> <span class="dta_example">Example: ABI 310</span>
+    trace が得られたシークエンサーのモデル名 
+    <span class="dta_type">Type: varchar(30)</span> 
+    <span class="dta_example">Example: ABI 310</span>
 
 <!-- end list -->
 
   - [SALINITY](#SALINITY)  
-    環境サンプルが採取された場所の千分率で表された塩濃度 <span class="dta_type">Type: float</span>
+    環境サンプルが採取された場所の千分率で表された塩濃度 
+    <span class="dta_type">Type: float</span>
     <span class="dta_example">Example: 20</span>
     <span class="dta_metadata">[SALINITY](#SALINITY)</span>は環境サンプルでのみ記載可能ですが必須ではありません。
 
 <!-- end list -->
 
   - [SEQ\_LIB\_ID](#SEQ_LIB_ID)<span class="conditionally_required">\*</span>  
-    シークエンスに使用された M13/PUC ライブラリー <span class="dta_type">Type:
-    varchar(255)</span> <span class="dta_example">Example: 22194</span>
-    シークエンスに用いられた M13/PUC ベースのクローンに対してセンターが独自に付けた ID を記入します。この ID で
-    trace を ligation event でまとめることができるようになります。  
-    次の <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と
-    <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>
-    の組み合わせで必須です:  
-    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=Any;<span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=SHOTGUN  
-    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=Any;<span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=WGS/WCS
+    シークエンスに使用された M13/PUC ライブラリー 
+    <span class="dta_type">Type: varchar(255)</span> 
+    <span class="dta_example">Example: 22194</span>
+    シークエンスに用いられた M13/PUC ベースのクローンに対してセンターが独自に付けた ID を記入します。この ID で trace を ligation event でまとめることができるようになります。  
+    次の <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span> の組み合わせで必須です:  
+    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=Any;<span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=SHOTGUN   <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=Any;<span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=WGS/WCS
 
 <!-- end list -->
 
   - [SOURCE\_TYPE](#SOURCE_TYPE)<span class="required">\*</span>  
-    DNA のソース <span class="dta_type">Type: varchar(50)</span>
+    DNA のソース 
+    <span class="dta_type">Type: varchar(50)</span>
     <span class="dta_example">Example: GENOMIC DNA</span>
     <span class="dta_metadata">[SOURCE\_TYPE](#SOURCE_TYPE)</span>に記載可能なコードとその説明は以下です:
       - G=Genomic DNA (ゲノム DNA からの PCR 産物を含む)
@@ -767,29 +699,26 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
 <!-- end list -->
 
   - [SPECIES\_CODE](#SPECIES_CODE)<span class="required">\*</span>  
-    trace が得られた生物種 <span class="dta_type">Type: varchar(100)</span>
+    trace が得られた生物種 
+    <span class="dta_type">Type: varchar(100)</span>
     <span class="dta_example">Example: Homo sapiens</span>
-    <span class="dta_metadata">[SPECIES\_CODE](#SPECIES_CODE)</span>は分類学上の生物種名でリードを分類するのに使われます。この項目はコントロールされています。Trace
-    Archive
-    に含まれている生物種名のリスト:[http://www.ncbi.nlm.nih.gov/Traces/trace.cgi?cmd=stat\&f=xml\_list\_species\&m=obtain\&s=species](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi?cmd=stat&f=xml_list_species&m=obtain&s=species)リストに含まれていない生物を登録する場合は，データを投稿する前に
-    DDBJ Trace Archive に連絡します。trace が由来する生物を分類できない場合は，環境サンプルには
-    'ENVIRONMENTAL SEQUENCE' を人工物には 'ARTIFICIAL SEQUENCE' を使用することができます。
+    <span class="dta_metadata">[SPECIES\_CODE](#SPECIES_CODE)</span>は分類学上の生物種名でリードを分類するのに使われます。この項目はコントロールされています。Trace Archive に含まれている生物種名のリスト:[http://www.ncbi.nlm.nih.gov/Traces/trace.cgi?cmd=stat\&f=xml\_list\_species\&m=obtain\&s=species](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi?cmd=stat&f=xml_list_species&m=obtain&s=species)リストに含まれていない生物を登録する場合は，データを投稿する前に DDBJ Trace Archive に連絡します。trace が由来する生物を分類できない場合は，環境サンプルには 'ENVIRONMENTAL SEQUENCE' を人工物には 'ARTIFICIAL SEQUENCE' を使用することができます。
 
 <!-- end list -->
 
   - [STRAIN](#STRAIN)<span class="conditionally_required">\*</span>  
-    trace が由来する strain <span class="dta_type">Type: varchar(50)</span>
+    trace が由来する strain 
+    <span class="dta_type">Type: varchar(50)</span>
     <span class="dta_example">Example: C57BL/6J</span>
-    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>="SNP"
-    のときに必須です。
+    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>="SNP" のときに必須です。
 
 <!-- end list -->
 
   - [STRATEGY](#STRATEGY)<span class="required">\*</span>  
-    実験的な strategy <span class="dta_type">Type: varchar(50)</span>
-    <span class="dta_example">Example: MODEL VERIFY</span> trace
-    を得る上で採用された実験上の
-    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>。値はコントロールされていますが，登録者はリストへの新しい用語の追加を申請することができます。  
+    実験的な strategy 
+    <span class="dta_type">Type: varchar(50)</span>
+    <span class="dta_example">Example: MODEL VERIFY</span> 
+    trace を得る上で採用された実験上の <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>。値はコントロールされていますが，登録者はリストへの新しい用語の追加を申請することができます。  
       
     <span class="dta_metadata">記載可能な用語 (このリストは拡張され続けています):</span>
       - AFLP: Amplified Fragment Length Polymorphism
@@ -828,7 +757,8 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
 
   - [SUBMISSION\_TYPE](#SUBMISSION_TYPE)<span class="required">\*</span>  
     submission の種類 <span class="dta_type">Type: varchar(50)</span>
-    <span class="dta_example">Example: NEW</span> 記載可能な値:
+    <span class="dta_example">Example: NEW</span> 
+    記載可能な値:
       - NEW: 新しいデータを登録するとき
       - UPDATE:trace とメタデータを更新するとき。以前のデータは TI とともに保存され，更新された trace には新しい
         TI が付与され active になります。
@@ -838,40 +768,40 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
 <!-- end list -->
 
   - [SVECTOR\_ACCESSION](#SVECTOR_ACCESSION)  
-    シークエンスベクターの DDBJ/EMBL/GenBank アクセッション番号 <span class="dta_type">Type:
-    varchar(50)</span> <span class="dta_example">Example: X52325</span>
+    シークエンスベクターの DDBJ/EMBL/GenBank アクセッション番号 
+    <span class="dta_type">Type: varchar(50)</span> 
+    <span class="dta_example">Example: X52325</span>
 
 <!-- end list -->
 
   - [SVECTOR\_CODE](#SVECTOR_CODE)  
-    センターが独自にシークエンスベクターに付けたコード <span class="dta_type">Type:
-    varchar(50)</span> <span class="dta_example">Example: pBluescript
-    SK(+)</span>
+    センターが独自にシークエンスベクターに付けたコード 
+    <span class="dta_type">Type: varchar(50)</span> 
+    <span class="dta_example">Example: pBluescript SK(+)</span>
 
 <!-- end list -->
 
   - [TEMPERATURE](#TEMPERATURE)  
-    環境サンプルが採取された地点の温度 (<sup>o</sup>C) <span class="dta_type">Type:
-    float</span> <span class="dta_example">Example: 30</span>
+    環境サンプルが採取された地点の温度 (<sup>o</sup>C) 
+    <span class="dta_type">Type: float</span> 
+    <span class="dta_example">Example: 30</span>
     <span class="dta_metadata">[TEMPERATURE](#TEMPERATURE)</span>は環境サンプルでのみ記載可能ですが必須ではありません。
 
 <!-- end list -->
 
   - [TEMPLATE\_ID](#TEMPLATE_ID)  
-    登録者がシークエンスしたテンプレートに付けた ID <span class="dta_type">Type:
-    varchar(50)</span> <span class="dta_example">Example:
-    HBBBA2211</span>
-    <span class="dta_metadata">[TEMPLATE\_ID](#TEMPLATE_ID)</span>は実際にシークエンスされたテンプレートを同定するのに使われます。この情報と
-    TRACE\_END を組み合わせ，ある２つの trace が同じクローンの両側から得られた 'mate\_pairs'
-    かどうか判断しています。
+    登録者がシークエンスしたテンプレートに付けた ID 
+    <span class="dta_type">Type: varchar(50)</span> 
+    <span class="dta_example">Example: HBBBA2211</span>
+    <span class="dta_metadata">[TEMPLATE\_ID](#TEMPLATE_ID)</span>は実際にシークエンスされたテンプレートを同定するのに使われます。この情報と TRACE\_END を組み合わせ，ある２つの trace が同じクローンの両側から得られた 'mate\_pairs' かどうか判断しています。
 
 <!-- end list -->
 
   - [TRACE\_END](#TRACE_END)  
-    リードに含まれるテンプレートの向き <span class="dta_type">Type: varchar(50)</span>
+    リードに含まれるテンプレートの向き 
+    <span class="dta_type">Type: varchar(50)</span>
     <span class="dta_example">Example: F</span>
-    <span class="dta_metadata">[TRACE\_END](#TRACE_END)</span>
-    は以下の値を持てます:
+    <span class="dta_metadata">[TRACE\_END](#TRACE_END)</span> は以下の値を持てます:
       - F: FORWARD
       - R: REVERSE
       - N: UNKNOWN
@@ -879,14 +809,15 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
 <!-- end list -->
 
   - [TRACE\_FILE](#TRACE_FILE)<span class="required">\*</span>  
-    ルートからの trace ファイルまでの絶対パス <span class="dta_type">Type:
-    varchar(200)</span> <span class="dta_example">Example:
-    ./traces/TRACE001.scf</span>
+    ルートからの trace ファイルまでの絶対パス 
+    <span class="dta_type">Type: varchar(200)</span> 
+    <span class="dta_example">Example: ./traces/TRACE001.scf</span>
 
 <!-- end list -->
 
   - [TRACE\_FORMAT](#TRACE_FORMAT)<span class="required">\*</span>  
-    trace のファイル形式 <span class="dta_type">Type: varchar(20)</span>
+    trace のファイル形式 
+    <span class="dta_type">Type: varchar(20)</span>
     <span class="dta_example">Example: scf</span>
     <span class="dta_metadata">[TRACE\_FORMAT](#TRACE_FORMAT)</span>は以下の値を持てます:
       - SCF - DNA シークエンス装置から出力される標準的なフォーマット
@@ -895,19 +826,18 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
 <!-- end list -->
 
   - [TRACE\_NAME](#TRACE_NAME)<span class="required">\*</span>  
-    登録者が trace に付ける名前 <span class="dta_type">Type: varchar(250)</span>
+    登録者が trace に付ける名前 
+    <span class="dta_type">Type: varchar(250)</span>
     <span class="dta_example">Example: HBBBA1U2211</span>
     <span class="dta_metadata">[TRACE\_NAME](#TRACE_NAME)</span>はセンター単位でユニークであればよく，センター間でユニークである必要はありません。Trace
-    Archive では
-    <span class="dta_metadata">[TRACE\_NAME](#TRACE_NAME)</span> と
-    <span class="dta_metadata">[CENTER\_NAME](#CENTER_NAME)</span>
-    の組み合わせがユニークなキーとして働きます。
+    Archive では <span class="dta_metadata">[TRACE\_NAME](#TRACE_NAME)</span> と <span class="dta_metadata">[CENTER\_NAME](#CENTER_NAME)</span> の組み合わせがユニークなキーとして働きます。
 
 <!-- end list -->
 
   - [TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)<span class="required">\*</span>  
-    trace が取得されたシークエンス strategy <span class="dta_type">Type:
-    varchar(50)</span> <span class="dta_example">Example: wgs</span>
+    trace が取得されたシークエンス strategy 
+    <span class="dta_type">Type: varchar(50)</span> 
+    <span class="dta_example">Example: wgs</span>
     <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>
     には trace を得るのに使われたシークエンス strategy を記入します。  
       
@@ -937,31 +867,27 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
   - [TRANSPOSON\_ACC](#TRANSPOSON_ACC)<span class="conditionally_required">\*</span>  
     シークエンステンプレートを生成するのに使われたトランスポゾンの DDBJ/EMBL/GenBank アクセッション番号
     <span class="dta_type">Type: varchar(50)</span>
-    <span class="dta_example">Example: X00913</span> 次の
-    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と
-    <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>
-    の組み合わせの時に必須です:<span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=Any;<span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=TRANSPOSON
+    <span class="dta_example">Example: X00913</span> 
+    次の <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span> の組み合わせの時に必須です:
+    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=Any;<span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=TRANSPOSON
 
 <!-- end list -->
 
   - [TRANSPOSON\_CODE](#TRANSPOSON_CODE)<span class="conditionally_required">\*</span>  
     シークエンステンプレートを生成するのに使われたトランスポゾンにセンターが付けたコード
     <span class="dta_type">Type: varchar(50)</span>
-    <span class="dta_example">Example: Mu transposon</span> 次の
-    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と
-    <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>
-    の組み合わせの時に必須です:<span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=Any;<span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=TRANSPOSON
+    <span class="dta_example">Example: Mu transposon</span> 
+    次の <span class="dta_metadata">[STRATEGY](#STRATEGY)</span> と <span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span> の組み合わせの時に必須です:
+    <span class="dta_metadata">[STRATEGY](#STRATEGY)</span>=Any;<span class="dta_metadata">[TRACE\_TYPE\_CODE](#TRACE_TYPE_CODE)</span>=TRANSPOSON
 
 <!-- end list -->
 
   - [WELL\_ID](#WELL_ID)  
-    シークエンス反応が行われたウェルにセンターが付けた ID <span class="dta_type">Type:
-    varchar(50)</span> <span class="dta_example">Example: A1</span>
-    <span class="dta_metadata">[WELL\_ID](#WELL_ID)</span> は
-    <span class="dta_metadata">[PLATE\_ID](#PLATE_ID)</span>
-    と一緒にシークエンス反応が行われた場所を特定するのに利用されます
-    (<span class="dta_metadata">[WELL\_ID](#PLATE_ID)</span>
-    も参照)。通常シークエンス反応は標準的な 96 もしくは 384 穴プレートで行われます
+    シークエンス反応が行われたウェルにセンターが付けた ID 
+    <span class="dta_type">Type: varchar(50)</span> 
+    <span class="dta_example">Example: A1</span>
+    <span class="dta_metadata">[WELL\_ID](#WELL_ID)</span> は <span class="dta_metadata">[PLATE\_ID](#PLATE_ID)</span> と一緒にシークエンス反応が行われた場所を特定するのに利用されます
+    (<span class="dta_metadata">[WELL\_ID](#PLATE_ID)</span> も参照)。通常シークエンス反応は標準的な 96 もしくは 384 穴プレートで行われます
     (下の標準的なウェルの配置図を参照)。  
     ![標準的な 96 穴プレートの配置](/images/submission/96well.jpg
     "標準的な 96 穴プレートの配置")  
@@ -983,55 +909,59 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
 <!-- end list -->
 
   - [BASES\_20](#BASES_20)  
-    quality score が 20 を超える塩基数 <span class="dta_type">Type:
-    smallint</span> <span class="dta_example">Example: 50</span>
+    quality score が 20 を超える塩基数 
+    <span class="dta_type">Type: smallint</span> 
+    <span class="dta_example">Example: 50</span>
     注意:quality score がない登録がいくつか存在します。これは ABI ファイルだけが登録され， quality
     call が別ファイルで登録されなかったためです。
 
 <!-- end list -->
 
   - [BASES\_40](#BASES_40)  
-    quality score が 40 を超える塩基数 <span class="dta_type">Type:
-    smallint</span> <span class="dta_example">Example: 50</span>
-    注意:quality score がない登録がいくつか存在します。これは ABI ファイルだけが登録され， quality
-    call が別ファイルで登録されなかったためです。
+    quality score が 40 を超える塩基数 
+    <span class="dta_type">Type: smallint</span> 
+    <span class="dta_example">Example: 50</span>
+    注意:quality score がない登録がいくつか存在します。これは ABI ファイルだけが登録され， quality call が別ファイルで登録されなかったためです。
 
 <!-- end list -->
 
   - [BASES\_60](#BASES_60)  
-    quality score が 60 を超える塩基数 <span class="dta_type">Type:
-    smallint</span> <span class="dta_example">Example: 50</span>
-    注意:quality score がない登録がいくつか存在します。これは ABI ファイルだけが登録され， quality
-    call が別ファイルで登録されなかったためです。
+    quality score が 60 を超える塩基数 
+    <span class="dta_type">Type: smallint</span> 
+    <span class="dta_example">Example: 50</span>
+    注意:quality score がない登録がいくつか存在します。これは ABI ファイルだけが登録され， quality call が別ファイルで登録されなかったためです。
 
 <!-- end list -->
 
   - [LOAD\_DATE](#LOAD_DATE)  
-    データがロードされた日付 <span class="dta_type">Type: smalldatetime</span>
+    データがロードされた日付 
+    <span class="dta_type">Type: smalldatetime</span>
     <span class="dta_example">Example: Jan 8 2001 11:59AM</span>
 
 <!-- end list -->
 
   - [MATE\_PAIR](#MATE_PAIR)  
-    同じテンプレートの逆方向から得られたリードの TI 番号 <span class="dta_type">Type: int</span>
+    同じテンプレートの逆方向から得られたリードの TI 番号 
+    <span class="dta_type">Type: int</span>
     <span class="dta_example">Example: 203682255</span> MATE PAIR
     は同じテンプレートの両方向 (FORWARD と REVERSE) から得られたリード。
 
 <!-- end list -->
 
   - [REPLACED\_BY](#REPLACED_BY)  
-    "active" な TI を置き換えた TI <span class="dta_type">Type: int</span>
+    "active" な TI を置き換えた TI 
+    <span class="dta_type">Type: int</span>
     <span class="dta_example">Example: 304753779</span>
-    この項目は最新のデータセットを指し示します。trace
-    が更新された場合<span class="dta_metadata">[REPLACED\_BY](#REPLACED_BY)</span>
-    は新しい<span class="dta_metadata">[TI](#TI)</span>が入力されます。メタデータのみが更新された場合は
+    この項目は最新のデータセットを指し示します。trace が更新された場合<span class="dta_metadata">[REPLACED\_BY](#REPLACED_BY)</span> は新しい<span class="dta_metadata">[TI](#TI)</span>が入力されます。メタデータのみが更新された場合は
     replaced\_by=0 で表示されません。
 
 <!-- end list -->
 
   - [STATE](#STATE)  
-    trace の status <span class="dta_type">Type: varchar</span>
-    <span class="dta_example">Example: active</span> 取り得る値:
+    trace の status 
+    <span class="dta_type">Type: varchar</span>
+    <span class="dta_example">Example: active</span> 
+    取り得る値:
       - active
       - updated
       - withdrawn
@@ -1039,26 +969,25 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
 <!-- end list -->
 
   - [TAXID](#TAXID)  
-    NCBI Taxonomy ID <span class="dta_type">Type: int</span>
-    <span class="dta_example">Example: 10090</span> DDBJ Trace Archive と
-    [NCBI Taxonomy
-    Browser](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?)
-    とを結びつけます。
+    NCBI Taxonomy ID 
+    <span class="dta_type">Type: int</span>
+    <span class="dta_example">Example: 10090</span> 
+    DDBJ Trace Archive と [NCBI Taxonomy Browser](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?) とを結びつけます。
 
 <!-- end list -->
 
   - [TI](#TI)  
-    trace 固有のアクセッション番号 <span class="dta_type">Type: int</span>
-    <span class="dta_example">Example: 304753779</span> trace
-    がデータベースにロードされた時点で TI が付与されます。どのようなレコードでも TI
-    で取得できます。
+    trace 固有のアクセッション番号 
+    <span class="dta_type">Type: int</span>
+    <span class="dta_example">Example: 304753779</span> 
+    trace がデータベースにロードされた時点で TI が付与されます。どのようなレコードでも TI で取得できます。
 
 <!-- end list -->
 
   - [UPDATE\_DATE](#UPDATE_DATE)  
-    データが update/replace された日時 <span class="dta_type">Type:
-    smalldatetime</span> <span class="dta_example">Example: Jul 19 2001
-    3:48PM</span> 最後に更新された日時が記録されます。
+    データが update/replace された日時 
+    <span class="dta_type">Type: smalldatetime</span> 
+    <span class="dta_example">Example: Jul 19 2001 3:48PM</span> 最後に更新された日時が記録されます。
 
 </div>
 
@@ -1084,10 +1013,7 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
 
 ### TI 番号
 
-[DDBJ Trace Archive (DTA)](index.html) への登録には[メタデータ](#metadata)と
-[trace](#TRACE_FORMAT) ファイルが必要です。 ユニークなアクセッション番号 ([TI 番号](#TI)) は trace
-データが [NCBI Trace Archive](https://www.ncbi.nlm.nih.gov/Traces)
-に登録されるときに割り振られます。 TI 番号が発行されたデータは即日公開されます。
+[DDBJ Trace Archive (DTA)](index.html) への登録には[メタデータ](#metadata)と [trace](#TRACE_FORMAT) ファイルが必要です。 ユニークなアクセッション番号 ([TI 番号](#TI)) は trace データが [NCBI Trace Archive](https://www.ncbi.nlm.nih.gov/Traces) に登録されるときに割り振られます。 TI 番号が発行されたデータは即日公開されます。
 
 <span class="attention_text"> TI 番号発行後，データは即日公開されます。 </span>
 
@@ -1097,13 +1023,7 @@ STRATEGY と TRACE\_TYPE\_CODE の組み合わせによっては必須 <span cla
 
 ### 登録に必要なファイル
 
-テキストファイル (TRACEINFO ファイル) に trace データに関するメタデータを記述し，trace ファイルの場所を指定します。
-トップディレクトリを作成し，全てのメタデータファイルをトップディレクトリ下に配置します。 また trace
-ファイルは，トップディレクトリ下に１つ以上のディレクトリを作成し，その内に配置します。
-trace ファイル ([SCF](#TRACE_FORMAT)，[ABI](#TRACE_FORMAT) フォーマットのどちらの場合でも)
-はトップレベルではなく，サブディレクトリのなかに配置されている必要があります。 サブディレクトリ名には trace
-やプロジェクトの名前を使うことを推奨します。 さらにサブディレクトリを作成し trace
-をグループに分けることができます。
+テキストファイル (TRACEINFO ファイル) に trace データに関するメタデータを記述し，trace ファイルの場所を指定します。 トップディレクトリを作成し，全てのメタデータファイルをトップディレクトリ下に配置します。 また trace ファイルは，トップディレクトリ下に１つ以上のディレクトリを作成し，その内に配置します。 trace ファイル ([SCF](#TRACE_FORMAT)，[ABI](#TRACE_FORMAT) フォーマットのどちらの場合 も) はトップレベルではなく，サブディレクトリのなかに配置されている必要があります。 サブディレクトリ名 は trace やプロジェクトの名前を使うことを推奨します。 さらにサブディレクトリを作成し trace をグループに分けることができます。
 
 以下は登録ディレクトリの構成例です。
 
@@ -1119,11 +1039,7 @@ TOP_DIRECTORY/traces/FLJ/FLJA1U0002.scf
 TOP_DIRECTORY/traces/FLJ/FLJA1U0003.scf
 ```
 
-[メタデータ](#metadata)ファイルは XML かタブ区切りテキストファイル形式にします。 STRATEGY と
-TRACE\_TYPE\_CODE の組み合わせで必須になるメタデータ項目一覧は [Validation
-Table](/files/submission/field_matrix_current.xls)
-をご覧ください。どちらの形式のメタデータでも最初に共通項目のセクションを含めることができます。
-このセクションには各 trace に共通する項目を記載します。
+[メタデータ](#metadata)ファイルは XML かタブ区切りテキストファイル形式にします。 STRATEGY と TRACE\_TYPE\_CODE の組み合わせで必須になるメタデータ項目一覧は [Validation Table](/files/submission/field_matrix_current.xls) をご覧ください。どちらの形式のメタデータでも最初に共通項目のセクションを含めることができます。 このセクションには各 trace に共通する項目を記載します。
 
 以下は TRACEINFO メタデータファイルの例です。
 
@@ -1191,9 +1107,7 @@ F-3NB691000033  3NB691000033    3NB691  3NB691000033    ./traces/F-3NB691000033.
 
 ### 登録用ファイルのアップロード
 
-[DTA チームに連絡](/contact.html)し，登録用ディレクトリの作成を依頼します。
-[マニュアル](/dra/submission.html#upload-sequence-data)に従いファイルを SCP
-で転送します。
+[DTA チームに連絡](/contact.html)し，登録用ディレクトリの作成を依頼します。 [マニュアル](/dra/submission.html#upload-sequence-data)に従いファイルを SCP で転送します。
 
 #### 登録ディレクトリの例
 
@@ -1201,8 +1115,7 @@ F-3NB691000033  3NB691000033    3NB691  3NB691000033    ./traces/F-3NB691000033.
 submission/submitter_id/dta/dta_submitter_id-0001
 ```
 
-<span class="attention_text"> DTA の登録用ディレクトリは [DDBJ Sequence Read
-Archive](/dra/index.html) とは別になります。 </span>
+<span class="attention_text"> DTA の登録用ディレクトリは [DDBJ Sequence Read Archive](/dra/index.html) とは別になります。 </span>
 
 </div>
 
@@ -1210,9 +1123,7 @@ Archive](/dra/index.html) とは別になります。 </span>
 
 ### 登録の完了
 
-登録の完了後，登録者が公開を指示するまで DTA はデータを非公開にします。 データ公開の指示があれば DTA は NCBI Trace
-Archive にデータをアップロードします。データが NCBI Trace Archive にロードされると TI
-番号が発行されデータは公開されます。
+登録の完了後，登録者が公開を指示するまで DTA はデータを非公開にします。 データ公開の指示があれば DTA は NCBI Trace Archive にデータをアップロードします。データが NCBI Trace Archive にロードされると TI 番号が発行されデータは公開されます。
 
 <span class="attention_text">TI 番号の発行とデータ公開は同時になります。</span>
 
