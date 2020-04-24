@@ -5,7 +5,6 @@ pathname: BLAST
 service_link: http://ddbj.nig.ac.jp/arsa/?lang=ja
 category: search_analysis
 ---
-# BLAST ヘルプ
 
 DDBJ では，Web版 BLAST の他に，以下の方法でも BLAST サービスを提供しています。
 
@@ -59,13 +58,17 @@ TTTGCCCACGGACACAACTGCCATATCGCCTTACGGGAGATCATCGAAACTCTGAACAGC
 CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 ```
 
+
+{::options parse_block_html="true" /}
+<div class="attention">
 配列サイズが巨大な場合，配列数が多い場合などは，以下のような理由で結果を正常に取得出来ない場合があります。  
 
 そのような場合は，配列数を少なくするか配列を短くする等して再度お試し下さい。
 
-
 * 結果が巨大になりブラウザで表示出来ない
 * 検索時間が長くなり過ぎてタイムアウトする
+</div>
+
 
 ## Data Sets
 
