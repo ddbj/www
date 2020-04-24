@@ -1359,19 +1359,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/_sass/object/component/_table-view.sass": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 2,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_sass/object/assets/css/_table-view.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"/_sass/object/component/_tags-view.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -1437,7 +1424,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/_sass/object/project/_MainContentWrapper.sass": {
+	"/_sass/object/project/_MainContentView.sass": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1445,7 +1432,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/_sass/object/assets/css/_MainContentWrapper.css",
+		"oAP": "/_sass/object/assets/css/_MainContentView.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2499,6 +2486,17 @@
 		"oA": 0,
 		"oAP": "/js/common_header.js.map",
 		"oF": 0
+		},
+	"/js/main-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/main-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/js/main.js": {
 		"bF": 0,

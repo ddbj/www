@@ -6,8 +6,6 @@ service_link: http://getentry.ddbj.nig.ac.jp/top-j.html
 category: search_analysis
 ---
 
-# ARSA ヘルプ
-
 ## 検索対象データベース
 
 ARSA では、以下が検索可能です
@@ -20,7 +18,6 @@ JPO 経由のアミノ酸特許データ  |  空白    |
 KIPO 経由のアミノ酸特許データ | 更新は不定期
 
 * [WGS](/ddbj/wgs.html)(WGS Scaffold CON含), TSAの一部, [MGA](/ddbj/mga.html)　など、[アクセッション番号](/ddbj/flat-file.html#Accession)が通常データとは異なるものは ARSA では検索できません。
-
 * [DRA](/dra/index.html)データ（次世代シークエンサからの出力データ）はARSA では検索できません。[DRA Search](http://ddbj.nig.ac.jp/DRASearch) をご利用ください。
 
 ## Quick Search
@@ -108,7 +105,7 @@ Advanced Search 画面の使用例です。
 :	例: DEFINITION に「～ Human glucocerebrosidase ～」と記載されていて、かつ REFERENCE TITLE に「～ expression of human ～」と記載されたもの。
 
 Feature/Qualifier の部分一致検索 Feature Key 、 Qualifier Name 、 Qualifier Value を指定して検索
-:	[「Features」の「Feature Key」欄に CDS と入力、「Qualifier Name」欄に translation と入力、「Qualifier Value」欄に AAA*CC と入力して、「Search」ボタンをクリックした場合の 検索結果例](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=&kw=&og=&ln=&ra=&rt=&rj=&rp=&cm=&fq%5B0%5D.featureKey=CDS&fq%5B0%5D.qualifierName=translation&fq%5B0%5D.qualifierValue=AAA*CC&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=AND)
+:	[「Features」の「Feature Key」欄に CDS と入力、「Qualifier Name」欄に translation と入力、「Qualifier Value」欄に AAA*CC と入力して、「Search」ボタンをクリックした場合の 検索結果例](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=&kw=&og=&ln=&ra=&rt=&rj=&rp=&cm=&fq%5B0%5D.featureKey=CDS&fq%5B0%5D.qualifierName=translation&fq%5B0%5D.qualifierValue=AAA&lowast;CC&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=AND)
 :	例: FEATURES の CDS に「/translation="～AAA～CC～"」と記載されたもの
 :	[Features」の「Feature Key」欄に CDS と入力、「Qualifier Name」欄に gene と入力、「Qualifier Value」欄に p53 と入力して、「Search」ボタンをクリックした場合の 検索結果例](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=&kw=&og=&ln=&ra=&rt=&rj=&rp=&cm=&fq%5B0%5D.featureKey=CDS&fq%5B0%5D.qualifierName=gene&fq%5B0%5D.qualifierValue=p53&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=AND)
 :	例: FEATURES の CDS に「/gene="p53"」と記載されたもの
@@ -143,62 +140,60 @@ Feature/Qualifier の部分一致検索 Feature Key 、 Qualifier Name 、 Quali
 
 ※正規表現検索可（AllTextを除く）
 
-``` LOCUS       AB000000              450 bp    mRNA    linear   HUM 01-JUN-2009
-DEFINITION  Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate
-  dehydrogenase, partial cds.
-ACCESSION   AB999999 AB888888 AB777777
-VERSION     AB000000.1
-KEYWORDS    HTC; HTC_FLI; oligo capping.
-SOURCE      Homo sapiens (human)
-ORGANISM  Homo sapiens
-  Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
-  Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
-  Catarrhini; Hominidae; Homo.
-REFERENCE   1  (bases 1 to 450)
-AUTHORS   Mishima,H. and Shizuoka,T.
-TITLE     Direct Submission
-JOURNAL   Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.
-  Contact:Hanako Mishima
-  National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
-  Mishima, Shizuoka 411-8540, Japan
-PUBMED   1111111
-REFERENCE   2
-AUTHORS   Mishima,H., Shizuoka,T. and Fuji,I.
-TITLE     Glyceraldehyde-3-phosphate dehydrogenase expressed in human liver
-JOURNAL   Unpublished (2009)
-COMMENT     Human cDNA sequencing project.
-FEATURES             Location/Qualifiers
-source          1..450
-            /chromosome="12" 
-            /clone="GT200015" 
-            /clone_lib="lambda gt11 human liver cDNA (GeneTech.
-            No.20)" 
-            /db_xref="taxon:9606" 
-            /map="12p13" 
-            /mol_type="mRNA" 
-            /organism="Homo sapiens" 
-            /tissue_type="liver" 
-CDS             86..&gt;450
-            /codon_start=1
-            /gene="GAPD" 
-            /product="glyceraldehyde-3-phosphate dehydrogenase" 
-            /protein_id="BAA12345.1" 
-            /transl_table=1
-            /translation="MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT
-            YMFKYDTVHGQWKHHEVKVKDSKTLLFGEKEVTVFGCRNPKEIPWGETSAEFVVEYTG
-            VFTDKDKAVAQLKGGAKKV" 
-BASE COUNT          102 a          119 c          131 g           98 t
-ORIGIN
-1 cccacgcgtc cggtcgcatc gcacttgtag ctctcgaccc ccgcatctca tccctcctct
-61 cgcttagttc agatcgaaat cgcaaatggc gaagattaag atcgggatca atgggttcgg
-121 gaggatcggg aggctcgtgg ccagggtggc cctgcagagc gacgacgtcg agctcgtcgc
-181 cgtcaacgac cccttcatca ccaccgacta catgacatac atgttcaagt atgacactgt
-241 gcacggccag tggaagcatc atgaggttaa ggtgaaggac tccaagaccc ttctcttcgg
-301 tgagaaggag gtcaccgtgt tcggctgcag gaaccctaag gagatcccat ggggtgagac
-361 tagcgctgag tttgttgtgg agtacactgg tgttttcact gacaaggaca aggccgttgc
-421 tcaacttaag ggtggtgcta agaaggtctg
-//
-```
+    LOCUS       AB000000              450 bp    mRNA    linear   HUM 01-JUN-2009
+    DEFINITION  Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate dehydrogenase, partial cds.
+    ACCESSION   AB999999 AB888888 AB777777
+    VERSION     AB000000.1
+    KEYWORDS    HTC; HTC_FLI; oligo capping.
+    SOURCE      Homo sapiens (human)
+      ORGANISM  Homo sapiens
+                Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+                Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+                Catarrhini; Hominidae; Homo.
+    REFERENCE   1  (bases 1 to 450)
+      AUTHORS   Mishima,H. and Shizuoka,T.
+      TITLE     Direct Submission
+      JOURNAL   Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.
+                Contact:Hanako Mishima
+                National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
+                Mishima, Shizuoka 411-8540, Japan
+       PUBMED   1111111
+    REFERENCE   2
+      AUTHORS   Mishima,H., Shizuoka,T. and Fuji,I.
+      TITLE     Glyceraldehyde-3-phosphate dehydrogenase expressed in human liver
+      JOURNAL   Unpublished (2009)
+    COMMENT     Human cDNA sequencing project.
+    FEATURES             Location/Qualifiers
+         source          1..450
+                         /chromosome="12" 
+                         /clone="GT200015" 
+                         /clone_lib="lambda gt11 human liver cDNA (GeneTech.
+                         No.20)" 
+                         /db_xref="taxon:9606" 
+                         /map="12p13" 
+                         /mol_type="mRNA" 
+                         /organism="Homo sapiens" 
+                         /tissue_type="liver" 
+         CDS             86..&gt;450
+                         /codon_start=1
+                         /gene="GAPD" 
+                         /product="glyceraldehyde-3-phosphate dehydrogenase" 
+                         /protein_id="BAA12345.1" 
+                         /transl_table=1
+                         /translation="MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT
+                         YMFKYDTVHGQWKHHEVKVKDSKTLLFGEKEVTVFGCRNPKEIPWGETSAEFVVEYTG
+                         VFTDKDKAVAQLKGGAKKV" 
+    BASE COUNT          102 a          119 c          131 g           98 t
+    ORIGIN
+            1 cccacgcgtc cggtcgcatc gcacttgtag ctctcgaccc ccgcatctca tccctcctct
+           61 cgcttagttc agatcgaaat cgcaaatggc gaagattaag atcgggatca atgggttcgg
+          121 gaggatcggg aggctcgtgg ccagggtggc cctgcagagc gacgacgtcg agctcgtcgc
+          181 cgtcaacgac cccttcatca ccaccgacta catgacatac atgttcaagt atgacactgt
+          241 gcacggccag tggaagcatc atgaggttaa ggtgaaggac tccaagaccc ttctcttcgg
+          301 tgagaaggag gtcaccgtgt tcggctgcag gaaccctaag gagatcccat ggggtgagac
+          361 tagcgctgag tttgttgtgg agtacactgg tgttttcact gacaaggaca aggccgttgc
+          421 tcaacttaag ggtggtgcta agaaggtctg
+    //
 
 ## 検索キーワードの書式
 
@@ -210,7 +205,7 @@ ORIGIN
 :	(検索キーワード) + ' && ' + (検索キーワード)  
 :	(検索キーワード) + ' +' + (検索キーワード)
 :	(検索キーワード) + ' OR ' + (検索キーワード)  
-:	(検索キーワード) + ' || ' + (検索キーワード)
+:	(検索キーワード) + ' &#124;&#124; ' + (検索キーワード)
 :	(検索キーワード) + ' NOT ' + (検索キーワード)  
 :	(検索キーワード) + ' -' + (検索キーワード)
 
@@ -274,7 +269,7 @@ ORIGIN
 
 特殊な意味を持つ文字
 :	これらの文字は、特殊な意味を持つ  
-:	\+ \- && || \! \( \) \{ \} \[ \] ^ " ~ \* ? : /
+:	\+ \- && &#124;&#124; \! \( \) \{ \} \[ \] ^ " ~ \* ? : /
 :	これらの文字を検索する場合には、フレーズ検索を行なうか、または '' を前置して特殊意味を打ち消してください。
 
 ## 検索結果の取得
@@ -297,10 +292,10 @@ XML      | INSD-XML 形式
 
 [注意]
 * エラー無くダウンロードするには、最大でも3,000件以下に検索結果を絞ってください。ただしサーバー負荷状況に依存するため最大数は少なくなる場合があります。例えば Date を追加指定することで絞り込みすることができます。
-
-Advanced Search     Date  20180101 to 20180630
-Quick Search        Date:[20180101 TO 20180630]
-
+```
+    Advanced Search     Date  20180101 to 20180630
+    Quick Search        Date:[20180101 TO 20180630]
+```
 * XMLダウンロードを行った場合で検索結果件数が多い場合、一つのファイル内に複数のXML宣言行が含まれます。利用時に適宜ファイル分割やXML開始行の判断を行ってください。
 
 検索結果のフィルター

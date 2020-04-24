@@ -1,7 +1,7 @@
 window.onload = function () {
   const indexWrap = document.querySelector('.internal-link');  //H2タグの前に挿入したdivタグ
   if (indexWrap) {
-    const postContent = document.querySelector('.main-content');  //記事本文が書かれているラッパー
+    const postContent = document.querySelector('.md-content');  //記事本文が書かれているラッパー
     const hTags = postContent.querySelectorAll('h2, h3');         //記事内のH2とH3タグを全て取得
     if (hTags.length > 0) {
       let indexList = document.createElement("ul");
