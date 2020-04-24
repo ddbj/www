@@ -5,7 +5,6 @@ pathname: dra-submission
 category: _statistics
 ---
 
-# DRA への登録
 <!---
   以下に図・表をHTMLで挿入予定
 -->

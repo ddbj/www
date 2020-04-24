@@ -5,8 +5,6 @@ pathname: past-services
 category: search_analysis
 ---
 
-# 過去のサービス
-
 ## Web サービス
 
   - [GIB](#gib) (2012.2. サービス終了）

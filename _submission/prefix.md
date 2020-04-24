@@ -5,8 +5,6 @@ service_link: https://www.ddbj.nig.ac.jp/prefix.html
 category: submission
 ---
 
-# Prefix Letter List
-
 ## For conventional sequence data (two or one letter)
 
 ``` flat-file code

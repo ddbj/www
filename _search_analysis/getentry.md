@@ -5,7 +5,6 @@ pathname: getentry
 service_link: http://getentry.ddbj.nig.ac.jp/top-j.html
 category: search_analysis
 ---
-# getentry ヘルプ
 
 ## getentryの機能について
 - getentry は，アクセッション番号からの DDBJ フラットファイルの検索にご利用いただけます。

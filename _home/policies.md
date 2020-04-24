@@ -5,8 +5,6 @@ pathname: policies
 category: _home
 ---
 
-# ウェブサイトとデータ・サービスの利用に関するポリシーと免責事項
-
 <div class="section book">
 
 DDBJ センターでは[情報・システム研究機構](http://www.rois.ac.jp/) (ROIS)の[規程](http://www.rois.ac.jp/policy/index.html)に従いサイトポリシーを規定します。  

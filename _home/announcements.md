@@ -5,8 +5,6 @@ pathname: announcements
 category: _home
 ---
 
-# RSS フィード
-
 <div id="feeds">
 
 <div class="section">

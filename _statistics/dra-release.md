@@ -5,7 +5,6 @@ pathname: dra-release
 category: _statistics
 ---
 
-# DRA データ公開
 <!---
   以下に図・表をHTMLで挿入予定
 -->

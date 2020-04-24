@@ -5,8 +5,6 @@ service_link: https://www.ddbj.nig.ac.jp/data-categories.html
 category: submission
 ---
 
-# 登録データ種別
-
 ## DDBJ に登録可能なデータ {#accept}
 
 DDBJ では, [Primary entry](/ddbj/submission.html#primary_entry)

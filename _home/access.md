@@ -5,8 +5,6 @@ pathname: access
 category: _home
 ---
 
-# DDBJ へのアクセス
-
 ## 所在地・連絡先
 
 〒411-8540  

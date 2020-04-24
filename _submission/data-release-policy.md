@@ -5,8 +5,6 @@ service_link: https://www.ddbj.nig.ac.jp/data-release-policy.html
 category: submission
 ---
 
-# データ公開原則
-
 ### 「データ公開」を行う時期
 
 1\)

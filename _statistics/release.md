@@ -5,8 +5,6 @@ pathname: release
 category: statistics
 ---
 
-# DDBJ リリース統計
-
 ## 総データ量
 
 ### 総データ量 (塩基数/配列数)

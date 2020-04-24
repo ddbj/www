@@ -5,7 +5,6 @@ service_link: https://www.ddbj.nig.ac.jp/acc_def.html
 category: submission
 ---
 
-# 国際塩基配列データベースのアクセッション番号
 
 ## 定義 {#definition}
 

@@ -5,7 +5,6 @@ pathname: web-access
 category: _statistics
 ---
 
-# ウェブアクセス
 <!---
   以下に図・表をHTMLで挿入予定
 -->

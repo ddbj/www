@@ -5,7 +5,6 @@ pathname: gea-submission
 category: _statistics
 ---
 
-# GEA への登録
 <!---
   以下に図・表をHTMLで挿入予定
 -->

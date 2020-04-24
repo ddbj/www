@@ -5,8 +5,6 @@ pathname: relinfo
 category: _statistics
 ---
 
-# 最新リリースの情報
-
 [リリースノート (DDBJ, 16S rRNA, DAD)](/stats/relnote.html)
 <!---
   以下に図・表をHTMLで挿入予定

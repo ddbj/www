@@ -5,7 +5,6 @@ pathname: relnote
 category: _statistics
 ---
 
-# リリースノート (DDBJ, 16S rRNA, DAD)
 <!---
   以下に図・表をHTMLで挿入予定
 -->

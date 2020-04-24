@@ -5,7 +5,6 @@ pathname: jga-release
 category: _statistics
 ---
 
-# JGA データ公開
 <!---
   以下に図・表をHTMLで挿入予定
 -->

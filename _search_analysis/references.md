@@ -4,9 +4,6 @@ title: 関連論文
 pathname: references
 category: search_analysis
 ---
-
-# 関連論文
-
 ## DDBJ センターについての最新論文
 
   - <span class="title">[DDBJ Database updates and computational

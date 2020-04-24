@@ -5,7 +5,6 @@ pathname: VecScreen
 service_link: http://ddbj.nig.ac.jp/vecscreen/vecscreen?lang=ja
 category: search_analysis
 ---
-# VecScreen ヘルプ
 
 ## VecScreenとは
 

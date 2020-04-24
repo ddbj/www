@@ -5,8 +5,6 @@ pathname: insdc
 category: _aboutus
 ---
 
-# INSDC
-
 DDBJ センターは、欧州の [EBI; European Bioinformatics
 Institute](https://www.ebi.ac.uk/) で運営されている [ENA; European Nucleotide
 Archive](https://www.ebi.ac.uk/ena) および 米国の [NCBI; National Center for

@@ -5,8 +5,6 @@ pathname: submission
 category: statistics
 ---
 
-# DDBJ への登録数
-
   - <span class="bold">Web Submission</span>: [Nucleotide Sequence
     Submission System](/ddbj/websub.html) からの登録
   - <span class="bold">MSS Submission</span>: [Mass Submission

@@ -5,8 +5,6 @@ pathname: wabi
 category: search_analysis
 ---
 
-# WABI (Web API for Biology)
-
 WABI は、 DDBJの検索サービス を Web画面 を介せずに利用できる Web API です。  
 この Web API を利用することによって、 DDBJの検索サービス
 に対する検索処理登録や検索結果取得などを行なうプログラムを作成することができます。  
