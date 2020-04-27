@@ -5,8 +5,6 @@ pathname: submission
 category: _trace_archive
 ---
 
-# Trace Archive
-
 <div class="section book">
 
 <div class="section chapter">

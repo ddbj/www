@@ -5,8 +5,6 @@ pathname: submission
 category: _home
 ---
 
-# 塩基配列の登録
-
 <div class="section book">
 
 　

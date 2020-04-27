@@ -5,8 +5,6 @@ pathname: environmental
 category: _home
 ---
 
-# Environmental sequence の登録
-
 種、あるいは、個体を特定しない手法により得られた配列データの種別の対応を示します。
 
 環境サンプル (environmental sample) 由来の配列と その付帯情報からなるデータです。  

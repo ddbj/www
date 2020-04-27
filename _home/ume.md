@@ -5,8 +5,6 @@ pathname: ume
 category: _home
 ---
 
-# UME ユーザーマニュアル
-
 <div class="section book">
 
 UME (Utilities for MSS file Error check) は Mass Submission System (MSS) を利用して DDBJ に登録する際に必要な [配列ファイル](/ddbj/file-format.html#sequence) と[アノテーションファイル](/ddbj/file-format.html#annotation) のフォーマットチェックと、それらファイルの記載を元に [CDS feature](/ddbj/cds.html) のアミノ酸翻訳チェックを行うツールです。Parser と transChecker を内包しています。

@@ -5,8 +5,6 @@ pathname: genome
 category: _home
 ---
 
-# Genome Project のデータ登録
-
 ゲノム配列決定の各段階と登録データの種別の対応を示します。  
 実際には併用されることも多いのですが、下図では典型的な手法の各段階を模式的に示しています。  
 なお、大規模なゲノム配列決定プロジェクトは [BioProject](/bioproject/index.html) と [BioSample](/biosample/index.html) にも ご登録ください。

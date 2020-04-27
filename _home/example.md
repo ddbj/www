@@ -5,8 +5,6 @@ pathname: example
 category: _home
 ---
 
-# メタデータの例
-
 <div id="main_index">
 
   - [Experiment (Spot, Platform)](#Experiment)

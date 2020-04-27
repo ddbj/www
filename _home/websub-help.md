@@ -5,11 +5,7 @@ pathname: websub-help
 category: _home
 ---
 
-# DDBJ 塩基配列登録システム HELP
-
 <div class="section book">
-
-# DDBJ 塩基配列登録システム HELP
 
 <div class="section chapter">
 

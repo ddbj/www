@@ -5,8 +5,6 @@ pathname: sra_project
 category: _home
 ---
 
-# DRA 共同研究プロジェクトデータの取扱い
-
 <div class="section book">
 
 <div class="section chapter">

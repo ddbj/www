@@ -5,8 +5,6 @@ pathname: data-categories
 category: _home
 ---
 
-# データの種類
-
 ## [Division](/ddbj/flat-file.html#Division) conventional sequence data
 
 ### 通常の登録: 由来生物種による区分

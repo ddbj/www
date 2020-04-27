@@ -5,8 +5,6 @@ pathname: qualifiers
 category: _home
 ---
 
-# Qualifier key の定義
-
 <div id="description_container">
 
 <div id="description">

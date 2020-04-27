@@ -5,8 +5,6 @@ pathname: locus_tag
 category: _home
 ---
 
-# /locus\_tag qualifier の記載法
-
 ## 背景
 
 /locus\_tag qualifier は、2003年に導入されました。その導入当初は、ゲノムプロジェクトが

@@ -5,8 +5,6 @@ pathname: rpt_type
 category: _home
 ---
 
-# Controlled vocabulary for /rpt\_type qualifier
-
 The original site; [Controlled vocabulary for /rpt\_type qualifier](http://www.insdc.org/controlled-vocabulary-rpttype-qualifier) 2015.11.11 version.
 
 This page contains the current definition, format and controlled

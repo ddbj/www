@@ -5,8 +5,6 @@ pathname: mss-tool
 category: _home
 ---
 
-# MSS データファイル用チェックツール
-
 ## 実行環境
 
 ### ハードウェア

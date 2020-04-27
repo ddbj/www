@@ -5,8 +5,6 @@ pathname: transchecker
 category: _home
 ---
 
-# transChecker ユーザーマニュアル
-
 <div class="section book">
 
 transChecker は Mass Submission System (MSS) を利用して DDBJ に登録する際に必要な

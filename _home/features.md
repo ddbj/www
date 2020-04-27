@@ -5,8 +5,6 @@ pathname: features
 category: _home
 ---
 
-# Feature key
-
 <div id="description_container">
 
 <div id="description">

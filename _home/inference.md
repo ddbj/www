@@ -5,8 +5,6 @@ pathname: inference
 category: _home
 ---
 
-# /inference qualifier vocabulary recommendation document
-
 The original site; [/inference qualifier vocabulary recommendation document](http://www.insdc.org/documents/inference-qualifiers)
 2013.08.15 version
 

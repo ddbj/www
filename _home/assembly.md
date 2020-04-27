@@ -5,8 +5,6 @@ pathname: assembly
 category: _home
 ---
 
-# INSDC standards for genome assembly submission
-
 The original site; [INSDC standards for genome assembly submission](http://www.insdc.org insdc-standards-genome-assembly-submission) 2013.08.14 version
 
 Genome assemblies comprise a number of possible layers of information, including reads, contigs, scaffolds and chromosomes (see figure I). This document lays out the requirements for submission of genome assembly information into INSDC databases.

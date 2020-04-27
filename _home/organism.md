@@ -5,8 +5,6 @@ pathname: organism
 category: _home
 ---
 
-# Organism qualifier に記載する生物名
-
 <div class="section book">
 
 organism qualifier には「生物名」として、taxonomy database において、種、もしくは、それ以下のランクで "scientific name" とされている名称を記載する必要があります。

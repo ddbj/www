@@ -5,8 +5,6 @@ pathname: reaserch-participant-notification
 category: _home
 ---
 
-# ヒトデータに関するデータベース事業について研究対象者等に公開すべき事項
-
 [人を対象とする医学系研究に関する倫理指針](http://www.lifescience.mext.go.jp/bioethics/ekigaku.html)で定められている、DDBJ
 センターにおけるヒトデータに関するデータベース事業について研究対象者等に公開すべき事項は以下の通りです。
 

@@ -5,8 +5,6 @@ pathname: parser
 category: _home
 ---
 
-# Parser ユーザーマニュアル
-
 <div class="section book">
 
 Parser は、Mass Submission System (MSS) を利用して DDBJ に登録する際に必要な

@@ -5,8 +5,6 @@ pathname: file-format
 category: _home
 ---
 
-# 登録ファイル形式
-
 <div class="section book">
 
 <div class="section chapter">

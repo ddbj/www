@@ -5,8 +5,6 @@ pathname: updt
 category: _home
 ---
 
-# 登録データの修正・更新
-
 <div class="book">
 
 [登録データ種別](/data-categories.html)をご確認ください。

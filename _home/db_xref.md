@@ -5,8 +5,6 @@ pathname: db_xref
 category: _home
 ---
 
-# Controlled vocabulary for /db\_xref qualifier
-
 The original site; [Controlled vocabulary for /db\_xref qualifier](http://www.insdc.org/documents/dbxref-qualifier-vocabulary) 2019.08.14 version  
 See also [db\_xref](https://www.ncbi.nlm.nih.gov/genbank/collab/db_xref) at NCBI.
 

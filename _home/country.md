@@ -5,8 +5,6 @@ pathname: country
 category: _home
 ---
 
-# Controlled vocabulary for /country qualifier
-
 The original site; [Controlled vocabulary for /country qualifier](//www.insdc.org/documents/country-qualifier-vocabulary) 2020.01.08 version
 
 A new qualifier was introduced in version 2.1 (December 15, 1998) of the Feature table definitions: /country. 

@@ -5,8 +5,6 @@ pathname: about
 category: _home
 ---
 
-# DRA について
-
 <div id="main_index">
 
   - [連絡先](#contact)

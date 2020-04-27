@@ -5,8 +5,6 @@ pathname: submission
 category: _handbook
 ---
 
-# DDBJ Sequence Read Archive Handbook
-
 <div class="section book">
 
 # DDBJ Sequence Read Archive

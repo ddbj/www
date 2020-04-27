@@ -5,8 +5,6 @@ pathname: genome-sci
 category: _home
 ---
 
-# ゲノム支援
-
 <div id="main_index">
 
   - [メタデータ記入用エクセルファイル](#excel)

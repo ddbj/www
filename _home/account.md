@@ -5,8 +5,6 @@ pathname: account
 category: _home
 ---
 
-# 登録アカウント
-
 <div class="section book">
 
 <div class="arve-wrapper arve-thumb-wrapper arve-youtube-wrapper" style="background-image: url(https://img.youtube.com/vi/N76NUH748Fw/maxresdefault.jpg);">

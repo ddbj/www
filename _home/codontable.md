@@ -5,8 +5,6 @@ pathname: codontable
 category: _home
 ---
 
-# The Genetic Codes
-
 ## Defiition of /transl\_table qualifier
 
 ``` code flat-file

@@ -5,8 +5,6 @@ pathname: websub
 category: _home
 ---
 
-# Web版塩基配列登録システム (NSSS)
-
 <div class="attention no_color">
 
 ヒトを対象とした研究データの登録について

@@ -5,11 +5,7 @@ pathname: mss
 category: _home
 ---
 
-# MSS - Mass Submission System
-
 <div class="section book">
-
-# MSS - Mass Submission System
 
 ヒトを対象とした研究データの登録について
 

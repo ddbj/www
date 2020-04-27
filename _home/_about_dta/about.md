@@ -5,8 +5,6 @@ pathname: about
 category: _about_dta
 ---
 
-# DTA について
-
 <div id="main_index">
 
   - [連絡先](#contact)
