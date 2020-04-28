@@ -274,8 +274,7 @@ category: _activities
     <span class="pub-info">[第35回日本分子生物学会年会](http://www2.convention.co.jp/mbsj2012/) 2012年12月11-14日</span>
   - <span class="title">ますます多様化・大規模化する生命情報に求められる情報技術とは？</span>
     <span class="authors">高木 利久</span>
-    <span class="pub-info">[情報・システム研究機構シンポジウム2012
-    「生命科学のビッグデータ革命 - 仮想から現実へ -」](http://www.rois.ac.jp/sympo/2012/) 2012年11月9日</span>
+    <span class="pub-info">[情報・システム研究機構シンポジウム2012 「生命科学のビッグデータ革命 - 仮想から現実へ -」](http://www.rois.ac.jp/sympo/2012/) 2012年11月9日</span>
   - <span class="title">たくさんのゲノム情報をみんなで共有するために</span>
     <span class="authors">中村 保一</span> 
     <span class="pub-info">国立遺伝学研究所 公開講演会2012「知りたい！生命科学の最先端」＋大学院説明会 2012 2012年11月3日</span>
@@ -291,17 +290,16 @@ category: _activities
   - <span class="title">国際塩基配列データベース共同体(INSDC) -拡張するprimary databaseの活動-</span> 
   <span class="authors">大城戸 利久</span>
   <span class="pub-info">バイオインフォマティクス講習会2012 2012年8月9日</span>
-  - <span class="title">DNA Data Bank of Japan: trad and new databases</span> <span class="authors">中村 保一</span>
+  - <span class="title">DNA Data Bank of Japan: trad and new databases</span> 
+  <span class="authors">中村 保一</span>
     <span class="pub-info">Information Sources in Biotechnology: Key Databases for Patenting Biotechnology. A seminar organized by The European Bioinformatics Institute and FCO Science and Innovation Network 2012年7月24日</span>
   - <span class="title">新型シーケンサによる生物学へのビッグデータ解析時代の到来</span>
     <span class="authors">中村 保一</span>
     <span class="pub-info">岡山大学資源植物科学研究所　大麦・野生植物資源研究センターセミナー 2012年7月6日</span>
-  - <span class="title">New resources of DNA Data Bank of Japan: DDBJ
-    Omics Archive and BioProject</span> 
+  - <span class="title">New resources of DNA Data Bank of Japan: DDBJ Omics Archive and BioProject</span> 
     <span class="authors">長崎 英樹, 望月 孝子, 児玉 悠一, 猿橋 智, 高木 利久, 大久保 公策, 神沼 英里, 中村 保一</span>
     <span class="pub-info">[NGS現場の会 第2回研究会](http://www.ngs-field.org/top-page/service/meeting2/) 2012年5月24日</span>
-  - <span class="title">Sequence Read Archive: explosive growth of
-    sequencing data</span> 
+  - <span class="title">Sequence Read Archive: explosive growth of sequencing data</span> 
     <span class="authors">児玉 悠一, 野崎 亜沙美, 神沼 英里, 中村 保一, 小笠原 理, 大久保 公策, 高木 利久</span>
     <span class="pub-info">[NGS現場の会 第2回研究会](http://www.ngs-field.org/top-page/service/meeting2/) 2012年5月24日</span>
   - <span class="title">NGS由来大量データレポジトリDRAと解析支援パイプラインの提供</span>
@@ -310,8 +308,11 @@ category: _activities
   - <span class="title">高速DNAシークエンサ・アーカイブDBとクラウド計算資源利用法</span>
     <span class="authors">神沼 英里, 望月 孝子, 長崎 英樹, 児玉 悠一, 猿橋 智, 小笠原 理, 高木 利久, 大久保 公策, 中村 保一</span>
     <span class="pub-info">[第121回日本育種会年会](//www.nacos.com/jsb/06/06PDF/121program.pdf) 2012年3月29-30日</span>
-  - <span class="title">DRA\&DDBJパイプライン</span> <span class="authors">中村 保一</span> <span class="pub-info">新学術領域研究「ゲノム支援」情報解析講習会 2012年3月24日</span>
-  - <span class="title">DDBJのサービス紹介</span> <span class="authors">中村 保一</span>
+  - <span class="title">DRA\&DDBJパイプライン</span> 
+  <span class="authors">中村 保一</span> 
+  <span class="pub-info">新学術領域研究「ゲノム支援」情報解析講習会 2012年3月24日</span>
+  - <span class="title">DDBJのサービス紹介</span> 
+  <span class="authors">中村 保一</span>
     <span class="pub-info">[NBDC主催統合データベース講習会：AJACS本郷11](https://events.biosciencedbc.jp/training/ajacs29) 2012年3月2日</span>
   - <span class="title">DDBJ Sequence Read Archive and a cloud-computing based annotation tool for new-generation sequencing data</span>
     <span class="authors">長崎 英樹, 望月 孝子, 神沼 英里, 児玉 悠一, 猿橋 智, 高木 利久, 大久保 公策, 中村 保一</span> 
@@ -370,209 +371,140 @@ category: _activities
 
 ## 2010
 
-  - <span class="title">DDBJ Read Annotation Pipeline:
-    新型シーケンサ由来配列のクラウド型パイプライン</span>
-    <span class="authors">長崎 英樹, 望月 孝子, 神沼 英里, 渡邊 成樹, 児玉 悠一, 猿橋 智, 菅原
-    秀明, 高木 利久, 大久保 公策, 中村 保一</span>
-    <span class="pub-info">第33回日本分子生物学会年会
-    2010年12月8日</span>
-  - <span class="title">DDBJ Sequence Read Archive / DDBJ Omics
-    Archive</span> <span class="authors">児玉 悠一, 猿橋 智, 神沼 英里, 菅原 秀明, 高木
-    利久, 大久保 公策, 中村保一</span> <span class="pub-info">第33回日本分子生物学会年会
-    2010年12月7日</span>
-  - <span class="title">DDBJ Read Annotation Pipeline: A Cloud Computing
-    Based Analytical Tool for Next-generation Sequencing Data</span>
+  - <span class="title">DDBJ Read Annotation Pipeline: 新型シーケンサ由来配列のクラウド型パイプライン</span>
+    <span class="authors">長崎 英樹, 望月 孝子, 神沼 英里, 渡邊 成樹, 児玉 悠一, 猿橋 智, 菅原 秀明, 高木 利久, 大久保 公策, 中村 保一</span>
+    <span class="pub-info">第33回日本分子生物学会年会 2010年12月8日</span>
+  - <span class="title">DDBJ Sequence Read Archive / DDBJ Omics Archive</span> 
+  <span class="authors">児玉 悠一, 猿橋 智, 神沼 英里, 菅原 秀明, 高木 利久, 大久保 公策, 中村保一</span> 
+  <span class="pub-info">第33回日本分子生物学会年会 2010年12月7日</span>
+  - <span class="title">DDBJ Read Annotation Pipeline: A Cloud Computing Based Analytical Tool for Next-generation Sequencing Data</span>
     <span class="authors">中村 保一</span>
-    <span class="pub-info">[Biocuration 2010](http://hinv.jp/biocuration2010/)
-    2010年10月14日</span>
-  - <span class="title">DDBJ Sequence Read Archive / DDBJ Omics
-    Archive</span> <span class="authors">児玉 悠一, 猿橋 智, 神沼 英里, 菅原 秀明, 高木
-    利久, 大久保 公策, 中村 保一</span> <span class="pub-info">4th Biocuration
-    Conference 2010年10月11日</span>
-  - <span class="title">DDBJ Sequence Read Archive / DDBJ Omics
-    Archive</span> <span class="authors">児玉 悠一, 猿橋 智, 神沼 英里, 菅原 秀明, 高木
-    利久, 大久保 公策, 中村 保一</span>
-    <span class="pub-info">[統合データベースプロジェクトシンポジウム「ライフサイエンスの未来へ〜10年先のデータベースを考える〜」](https://events.biosciencedbc.jp/sympo/godo)
-    2010年10月5日</span>
-  - <span class="title">DDBJ Sequence Read Annotation Pipeline; A cloud
-    computing-based analytical tool for next-generation sequencing
-    data</span> <span class="authors">神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明,
-    大久保 公策, 高木 利久, 中村 保一</span> <span class="pub-info">10th Cold
-    Spring Harbor Laboratory/Wellcome Trust conference on Genome
-    Informatics 2010年9月15-19日</span>
+    <span class="pub-info">[Biocuration 2010](http://hinv.jp/biocuration2010/) 2010年10月14日</span>
+  - <span class="title">DDBJ Sequence Read Archive / DDBJ Omics Archive</span> 
+  <span class="authors">児玉 悠一, 猿橋 智, 神沼 英里, 菅原 秀明, 高木 利久, 大久保 公策, 中村 保一</span> 
+  <span class="pub-info">4th Biocuration Conference 2010年10月11日</span>
+  - <span class="title">DDBJ Sequence Read Archive / DDBJ Omics Archive</span> 
+  <span class="authors">児玉 悠一, 猿橋 智, 神沼 英里, 菅原 秀明, 高木 利久, 大久保 公策, 中村 保一</span>
+    <span class="pub-info">[統合データベースプロジェクトシンポジウム「ライフサイエンスの未来へ〜10年先のデータベースを考える〜」](https://events.biosciencedbc.jp/sympo/godo) 2010年10月5日</span>
+  - <span class="title">DDBJ Sequence Read Annotation Pipeline; A cloud computing-based analytical tool for next-generation sequencing data</span> 
+  <span class="authors">神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 大久保 公策, 高木 利久, 中村 保一</span> 
+  <span class="pub-info">10th Cold Spring Harbor Laboratory/Wellcome Trust conference on Genome Informatics 2010年9月15-19日</span>
   - <span class="title">次世代シーケンサのアーカイブDBとクラウド型解析パイプライン</span>
-    <span class="authors">神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 大久保 公策, 高木
-    利久, 中村 保一</span> <span class="pub-info">第148回農林交流センターワークショップ
-    「次世代シーケンサーを利用したゲノム解析の実際」 2010年9月10日</span>
+    <span class="authors">神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 大久保 公策, 高木 利久, 中村 保一</span> 
+    <span class="pub-info">第148回農林交流センターワークショップ 「次世代シーケンサーを利用したゲノム解析の実際」 2010年9月10日</span>
   - <span class="title">Parsing the Legacy DDBJ-- old but new</span>
     <span class="authors">小笠原 理</span>
-    <span class="pub-info">ライフサイエンス・データベース講習会 in
-    名大 2010年8月9-10日</span>
+    <span class="pub-info">ライフサイエンス・データベース講習会 in 名大 2010年8月9-10日</span>
   - <span class="title">DDBJの新型シーケンサへの対応 ― データアーカイブDRAと解析パイプライン</span>
     <span class="authors">中村 保一</span>
-    <span class="pub-info">ライフサイエンス・データベース講習会 in
-    名大 2010年8月9-10日</span>
+    <span class="pub-info">ライフサイエンス・データベース講習会 in 名大 2010年8月9-10日</span>
   - <span class="title">DDBJ past and future</span>
     <span class="authors">大久保 公策</span>
-    <span class="pub-info">ライフサイエンス・データベース講習会 in 名大
-    2010年8月9-10日</span>
+    <span class="pub-info">ライフサイエンス・データベース講習会 in 名大 2010年8月9-10日</span>
   - <span class="title">次世代シークエンサの活用法/データの解析法</span>
-    <span class="authors">中村 保一</span> <span class="pub-info">[DBCLS講習会
-    AJACS21 みちのく](http://motdb.dbcls.jp/?AJACS21) 2010年8月4-5日</span>
+    <span class="authors">中村 保一</span> 
+    <span class="pub-info">[DBCLS講習会 AJACS21 みちのく](http://motdb.dbcls.jp/?AJACS21) 2010年8月4-5日</span>
   - <span class="title">次世代シーケンサーデータのDRA(DDBJ Read Archive)への登録</span>
     <span class="authors">児玉 悠一</span>
-    <span class="pub-info">[シーケンサー利用技術講習会 -
-    第3回ライフテクノロジーズジャパン社
-    SOLiDTM　Systems編](http://www.osc.riken.jp/event/100714/)
-    2010年7月15日 </span>
-  - <span class="title">DDBJ Omics Archive and DDBJ Read Annotation
-    Pipeline: archive and analyze quantitative data from next generation
-    platforms</span> <span class="authors">児玉 悠一</span>
-    <span class="pub-info">13th International MGED Meeting
-    2010年7月13日</span>
-  - <span class="title">DDBJ Read Annotation Pipeline: A web-based
-    analytical tool for next-generation sequencing data</span>
-    <span class="authors">神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 大久保 公策, 高木
-    利久, 中村 保一</span> <span class="pub-info">[18th Annual
-    International Conference on Intelligent Systems for Molecular
-    Biology(ISMB2010)](//www.iscb.org/archive/conferences/iscb/ismb2010.html)
-    2010年7月9-13日 </span>
+    <span class="pub-info">[シーケンサー利用技術講習会 - 第3回ライフテクノロジーズジャパン社 SOLiDTM　Systems編](http://www.osc.riken.jp/event/100714/) 2010年7月15日 </span>
+  - <span class="title">DDBJ Omics Archive and DDBJ Read Annotation Pipeline: archive and analyze quantitative data from next generation platforms</span> 
+    <span class="authors">児玉 悠一</span>
+    <span class="pub-info">13th International MGED Meeting 2010年7月13日</span>
+  - <span class="title">DDBJ Read Annotation Pipeline: A web-based analytical tool for next-generation sequencing data</span>
+    <span class="authors">神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 大久保 公策, 高木 利久, 中村 保一</span> 
+    <span class="pub-info">[18th Annual International Conference on Intelligent Systems for Molecular Biology(ISMB2010)](//www.iscb.org/archive/conferences/iscb/ismb2010.html) 2010年7月9-13日 </span>
   - <span class="title">次世代シーケンサのアーカイブDBとクラウド型解析パイプライン</span>
-    <span class="authors">神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 大久保 公策, 高木
-    利久, 中村 保一</span>
-    <span class="pub-info">[NIASシンポジウム「イネ遺伝学・分子生物学ワークショップ2010」](https://kikaku.nias.affrc.go.jp/meeting/ricews2010/)
-    2010年7月2日</span>
+    <span class="authors">神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 大久保 公策, 高木 利久, 中村 保一</span>
+    <span class="pub-info">[NIASシンポジウム「イネ遺伝学・分子生物学ワークショップ2010」](https://kikaku.nias.affrc.go.jp/meeting/ricews2010/) 2010年7月2日</span>
   - <span class="title">DDBJ Read Archive (DRA) の紹介</span>
-    <span class="authors">児玉 悠一</span> <span class="pub-info">[第309回 CBI
-    学会研究講演会](http://www.cbi.or.jp/cbi/seminar/2010.06.21.00.html)
-    2010年6月21日</span>
-  - <span class="title">Plant SNP annotation using a web-based pipeline
-    tool for next-generation sequencing data</span>
-    <span class="authors">神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 大久保 公策, 高木
-    利久, 中村 保一</span> <span class="pub-info">The 21th International
-    Conference on Arabidopsis Research 2010年6月7-9日</span>
-  - <span class="title">次世代シークエンサの活用法</span> <span class="authors">神沼
-    英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 高木 利久, 大久保 公策, 中村 保一</span>
-    <span class="pub-info">[DBCLS 講習会
-    AJACS18](http://motdb.dbcls.jp/?AJACS18) 2010年6月4日</span>
-  - <span class="title">DDBJ Read Archive - Public archive for output
-    data from next-generation sequencer</span> <span class="authors">猿橋
-    智, 児玉 悠一, 神沼 英里, 五條堀 孝, 高木 利久, 大久保 公策, 菅原 秀明, 中村 保一</span>
+    <span class="authors">児玉 悠一</span> 
+    <span class="pub-info">[第309回 CBI 学会研究講演会](http://www.cbi.or.jp/cbi/seminar/2010.06.21.00.html) 2010年6月21日</span>
+  - <span class="title">Plant SNP annotation using a web-based pipeline tool for next-generation sequencing data</span>
+    <span class="authors">神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 大久保 公策, 高木 利久, 中村 保一</span> 
+    <span class="pub-info">The 21th International Conference on Arabidopsis Research 2010年6月7-9日</span>
+  - <span class="title">次世代シークエンサの活用法</span> 
+  <span class="authors">神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 高木 利久, 大久保 公策, 中村 保一</span>
+    <span class="pub-info">[DBCLS 講習会 AJACS18](http://motdb.dbcls.jp/?AJACS18) 2010年6月4日</span>
+  - <span class="title">DDBJ Read Archive - Public archive for output data from next-generation sequencer</span> 
+  <span class="authors">猿橋 智, 児玉 悠一, 神沼 英里, 五條堀 孝, 高木 利久, 大久保 公策, 菅原 秀明, 中村 保一</span>
     <span class="pub-info">The 5th NIG Poster Workshop 2010年5月26日</span>
-  - <span class="title">協調作業・共同研究コラボレーション・ツールとして Google Apps の DDBJ
-    における利用例 ～DDBJ から NIG 全体への利用をめざして～</span>
-    <span class="authors">小菅 武英, 望月 孝子, \*渡邊 成樹, 真島 淳, 神沼 英里, 大久保 公策, 高木
-    利久, 中村 保一</span> <span class="pub-info">The 5th NIG Poster Workshop
-    2010年5月26日</span>
-  - <span class="title">A Cloud computing based Analysis System for the
-    Next Generation sequencing Data</span> <span class="authors">望月 孝子,
-    神沼 英里, 児玉 悠一, 猿橋 智, 菅原 秀明, 大久保 公策, 高木 利久, 中村 保一</span>
+  - <span class="title">協調作業・共同研究コラボレーション・ツールとして Google Apps の DDBJ における利用例 ～DDBJ から NIG 全体への利用をめざして～</span>
+    <span class="authors">小菅 武英, 望月 孝子, \*渡邊 成樹, 真島 淳, 神沼 英里, 大久保 公策, 高木 利久, 中村 保一</span> 
+    <span class="pub-info">The 5th NIG Poster Workshop 2010年5月26日</span>
+  - <span class="title">A Cloud computing based Analysis System for the Next Generation sequencing Data</span> 
+  <span class="authors">望月 孝子, 神沼 英里, 児玉 悠一, 猿橋 智, 菅原 秀明, 大久保 公策, 高木 利久, 中村 保一</span>
     <span class="pub-info">The 5th NIG Poster Workshop 2010年5月26日</span>
   - <span class="title">次世代シークエンサデータのアーカイブ登録と解析パイプライン</span>
-    <span class="authors">神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 高木 利久, 大久保
-    公策, 中村 保一</span> <span class="pub-info">第51回日本植物生理学会年会 データベース講習会
-    2010年3月19日</span>
+    <span class="authors">神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 高木 利久, 大久保 公策, 中村 保一</span> 
+    <span class="pub-info">第51回日本植物生理学会年会 データベース講習会 2010年3月19日</span>
   - <span class="title">次世代シーケンサーデータの DRA(DDBJ Read Archive)への登録</span>
     <span class="authors">児玉 悠一</span>
-    <span class="pub-info">[第２回シーケンサー利用技術講習会 イルミナ社
-    Genome Analyzer（通称Solexa）編](http://www.osc.riken.jp/event/100217/)
-    2010年2月18日</span>
+    <span class="pub-info">[第２回シーケンサー利用技術講習会 イルミナ社 Genome Analyzer（通称Solexa）編](http://www.osc.riken.jp/event/100217/) 2010年2月18日</span>
 
 ## 2009
 
-  - <span class="title">次世代シーケンサーデータのDRA(DDBJ Sequence Read
-    Archive)への登録</span> <span class="authors">児玉 悠一</span>
-    <span class="pub-info">[第１回シーケンサー利用技術講習会 ロシュ・ダイアグノスティックス社 Genome
-    Sequencer FLX System編](http://www.osc.riken.jp/event/091216/)
-    2009年12月17日</span>
-  - <span class="title">DDBJ Sequence Read Archive and DDBJ Read
-    Annotation Pipeline: An archive database and an analytical tool for
-    next-generation sequence data</span> <span class="authors">Eli
-    Kaminuma, Yuichi Kodama, Satoshi Saruhashi, Takeshi Konno, Takako
-    Mochizuki, Hidemasa Bono, Hideaki Sugawara, Kousaku Okubo, Toshihisa
-    Takagi, Yasukazu Nakamura</span> <span class="pub-info">The 20th
-    International Conference on Genome Informatics 2009年12月14-16日</span>
-  - <span class="title">Consecutive Update of the Microbial Genome
-    Re-Annotation Database, GTPS</span> <span class="authors">Takehide
-    Kosuge, Yasumasa Shigemoto, Yoshikazu Kuwana, Hideaki
-    Sugawara</span> <span class="pub-info">The 20th International
-    Conference on Genome Informatics 2009年12月14-16日</span>
-  - <span class="title">次世代シーケンサーのハイスループット・データ解析システム「DDBJ Short Read
-    Annotation Pipeline」の構築</span> <span class="authors">神沼 英里, 児玉 悠一,
-    大久保 公策, 高木 利久, 中村 保一</span>
-    <span class="pub-info">第32回日本分子生物学会年会
-    2009年12月9-12日</span>
-  - <span class="title">「DDBJ Sequence Read
-    Archive」：次世代シークエンサーからの出力データのためのアーカイブ</span>
-    <span class="authors">児玉 悠一,猿橋 智, 五條堀 孝, 舘野 義男, 神沼 英里, 中村 保一, 菅原
-    秀明</span> <span class="pub-info">第32回日本分子生物学会年会
-    2009年12月9-12日</span>
+  - <span class="title">次世代シーケンサーデータのDRA(DDBJ Sequence Read Archive)への登録</span> 
+  <span class="authors">児玉 悠一</span>
+    <span class="pub-info">[第１回シーケンサー利用技術講習会 ロシュ・ダイアグノスティックス社 Genome Sequencer FLX System編](http://www.osc.riken.jp/event/091216/) 2009年12月17日</span>
+  - <span class="title">DDBJ Sequence Read Archive and DDBJ Read Annotation Pipeline: An archive database and an analytical tool for next-generation sequence data</span> 
+  <span class="authors">Eli Kaminuma, Yuichi Kodama, Satoshi Saruhashi, Takeshi Konno, Takako Mochizuki, Hidemasa Bono, Hideaki Sugawara, Kousaku Okubo, Toshihisa Takagi, Yasukazu Nakamura</span> 
+  <span class="pub-info">The 20th International Conference on Genome Informatics 2009年12月14-16日</span>
+  - <span class="title">Consecutive Update of the Microbial Genome Re-Annotation Database, GTPS</span> 
+  <span class="authors">Takehide Kosuge, Yasumasa Shigemoto, Yoshikazu Kuwana, Hideaki Sugawara</span> 
+  <span class="pub-info">The 20th International Conference on Genome Informatics 2009年12月14-16日</span>
+  - <span class="title">次世代シーケンサーのハイスループット・データ解析システム「DDBJ Short Read Annotation Pipeline」の構築</span> 
+  <span class="authors">神沼 英里, 児玉 悠一, 大久保 公策, 高木 利久, 中村 保一</span>
+    <span class="pub-info">第32回日本分子生物学会年会 2009年12月9-12日</span>
+  - <span class="title">「DDBJ Sequence Read Archive」：次世代シークエンサーからの出力データのためのアーカイブ</span>
+    <span class="authors">児玉 悠一,猿橋 智, 五條堀 孝, 舘野 義男, 神沼 英里, 中村 保一, 菅原 秀明</span> 
+    <span class="pub-info">第32回日本分子生物学会年会 2009年12月9-12日</span>
   - <span class="title">DDBJにおける次世代シーケンサデータへの対応</span>
     <span class="authors">神沼 英里, 児玉 悠一, 望月 孝子, 猿橋 智, 中村 保一</span>
-    <span class="pub-info">ライフサイエンス統合データベースセンター(DBCLS) セミナー
-    2009年12月1日</span>
-  - <span class="title">DDBJ: 配列データのフロー</span> <span class="authors">真島
-    淳, 中村 保一</span> <span class="pub-info">ライフサイエンス統合データベースセンター(DBCLS)
-    セミナー 2009年12月1日</span>
+    <span class="pub-info">ライフサイエンス統合データベースセンター(DBCLS) セミナー 2009年12月1日</span>
+  - <span class="title">DDBJ: 配列データのフロー</span> 
+  <span class="authors">真島 淳, 中村 保一</span> 
+  <span class="pub-info">ライフサイエンス統合データベースセンター(DBCLS) セミナー 2009年12月1日</span>
   - <span class="title">DNA Data Bank of Japan (DDBJ) の新展開</span>
     <span class="authors">神沼 英里, 中村 保一</span>
-    <span class="pub-info">情報・システム研究機構シンポジム「情報とシステム2009」
-    2009年11月30日</span>
+    <span class="pub-info">情報・システム研究機構シンポジム「情報とシステム2009」 2009年11月30日</span>
   - <span class="title">共同利用としてのライフサイエンス基盤－日本DNAデータバンク（DDBJ）とライフサイエンス統合データベース（LSDB）</span>
     <span class="authors">五條堀 孝</span>
-    <span class="pub-info">情報・システム研究機構シンポジム「情報とシステム2009」
-    2009年11月31日</span>
-  - <span class="title">DDBJ Sequence Read
-    Archiveのご紹介（新型シークエサへの対応）</span>
-    <span class="authors">猿橋 智, 児玉 悠一, 神沼 英里, 五條堀 孝, 舘野 義男, 中村 保一, 菅原
-    秀明</span>
-    <span class="pub-info">バイオインフォマティクス推進センター事業（BIRD）第5回研究開発成果報告会
-    2009年11月17日</span>
-  - <span class="title">Systematic Organization of Gene Expression Data
-    in Japan</span> <span class="authors">坊農 秀雅, 神沼 英里, 児玉 悠一, 中村 保一,
-    大久保 公策, 高木 利久</span> <span class="pub-info">12th International
-    MGED Meeting 2009年10月5-8日</span>
-  - <span class="title">CIBEX</span> <span class="authors">児玉 悠一, 舘野 義男,
-    池尾 一穂</span> <span class="pub-info">12th International MGED Meeting
-    2009年10月5-8日</span>
-  - <span class="title">遺伝子データバンクについて（DNA Data Bank of Japan,
-    DDBJ）</span> <span class="authors">李 慶範</span>
-    <span class="pub-info">Korean Bioinformation Center (KOBIC) セミナー
-    2009年8月19日</span>
+    <span class="pub-info">情報・システム研究機構シンポジム「情報とシステム2009」 2009年11月31日</span>
+  - <span class="title">DDBJ Sequence Read Archiveのご紹介（新型シークエサへの対応）</span>
+    <span class="authors">猿橋 智, 児玉 悠一, 神沼 英里, 五條堀 孝, 舘野 義男, 中村 保一, 菅原 秀明</span>
+    <span class="pub-info">バイオインフォマティクス推進センター事業（BIRD）第5回研究開発成果報告会 2009年11月17日</span>
+  - <span class="title">Systematic Organization of Gene Expression Data in Japan</span> 
+  <span class="authors">坊農 秀雅, 神沼 英里, 児玉 悠一, 中村 保一, 大久保 公策, 高木 利久</span> 
+  <span class="pub-info">12th International MGED Meeting 2009年10月5-8日</span>
+  - <span class="title">CIBEX</span> 
+  <span class="authors">児玉 悠一, 舘野 義男, 池尾 一穂</span> 
+  <span class="pub-info">12th International MGED Meeting 2009年10月5-8日</span>
+  - <span class="title">遺伝子データバンクについて（DNA Data Bank of Japan, DDBJ）</span> 
+  <span class="authors">李 慶範</span>
+    <span class="pub-info">Korean Bioinformation Center (KOBIC) セミナー 2009年8月19日</span>
   - <span class="title">DDBJ Sequence Read Archive</span>
-    <span class="authors">児玉 悠一</span> <span class="pub-info">理化学研究所
-    横浜研究所 所内セミナー 2009年8月6日</span>
+    <span class="authors">児玉 悠一</span> 
+    <span class="pub-info">理化学研究所 横浜研究所 所内セミナー 2009年8月6日</span>
   - <span class="title">Short Readデータ解析例の紹介</span>
     <span class="authors">神沼 英里</span>
-    <span class="pub-info">ライフサイエンス統合データベースセンター(DBCLS)
-    セミナー 2009年8月4日</span>
+    <span class="pub-info">ライフサイエンス統合データベースセンター(DBCLS) セミナー 2009年8月4日</span>
   - <span class="title">DDBJ Sequence Read Archive</span>
     <span class="authors">児玉 悠一</span>
-    <span class="pub-info">第23回システムバイオロジー研究会
-    2009年6月26日</span>
+    <span class="pub-info">第23回システムバイオロジー研究会 2009年6月26日</span>
   - <span class="title">DNA Data Bank of Japan (DDBJ)</span>
     <span class="authors">神沼 英里, 中村 保一, 高木 利久</span>
-    <span class="pub-info">[統合データベースプロジェクト
-    シンポジウム 2009「データベースが拓くこれからのライフサイエンス」](https://events.biosciencedbc.jp/sympo/sympo2009)
-    2009年6月12日</span>
+    <span class="pub-info">[統合データベースプロジェクト シンポジウム 2009「データベースが拓くこれからのライフサイエンス」](https://events.biosciencedbc.jp/sympo/sympo2009) 2009年6月12日</span>
   - <span class="title">次世代シークエンサの出力データのためのアーカイブについて</span>
     <span class="authors">児玉 悠一, 猿橋 智, 五條堀 孝, 舘野 義男, 中村 保一, 菅原秀明</span>
-    <span class="pub-info">[統合データベースプロジェクト
-    シンポジウム 2009「データベースが拓くこれからのライフサイエンス」](https://events.biosciencedbc.jp/sympo/sympo2009)
-    2009年6月12日</span>
-  - <span class="title">Constructing a high-throughput annotation
-    pipeline of next generation sequencing reads</span>
+    <span class="pub-info">[統合データベースプロジェクト シンポジウム 2009「データベースが拓くこれからのライフサイエンス」](https://events.biosciencedbc.jp/sympo/sympo2009) 2009年6月12日</span>
+  - <span class="title">Constructing a high-throughput annotation pipeline of next generation sequencing reads</span>
     <span class="authors">神沼 英里, 中村 保一, 高木 利久</span>
-    <span class="pub-info">遺伝学研究所内部交流セミナー The 4th NIG Poster Workshop
-    2009年5月26日</span>
+    <span class="pub-info">遺伝学研究所内部交流セミナー The 4th NIG Poster Workshop 2009年5月26日</span>
   - <span class="title">次世代シークエンサの出力データのためのアーカイブについて</span>
     <span class="authors">児玉 悠一, 猿橋 智, 五條堀 孝, 舘野 義男, 中村 保一, 菅原 秀明</span>
-    <span class="pub-info">遺伝学研究所内部交流セミナー The 4th NIG Poster Workshop
-    2009年5月26日</span>
-  - <span class="title">DDBJ Activities: Contribution to the Research in
-    Information Biology</span> <span class="authors">真島 淳, 小菅 武英, 大城戸
-    利久, 児玉 悠一, 池尾 一穂, 菅原 秀明, 舘野 義男, 五條堀 孝</span>
-    <span class="pub-info">The 3rd International Biocuration Conference
-    2009年4月16-19日</span>
+    <span class="pub-info">遺伝学研究所内部交流セミナー The 4th NIG Poster Workshop 2009年5月26日</span>
+  - <span class="title">DDBJ Activities: Contribution to the Research in Information Biology</span> 
+  <span class="authors">真島 淳, 小菅 武英, 大城戸 利久, 児玉 悠一, 池尾 一穂, 菅原 秀明, 舘野 義男, 五條堀 孝</span>
+    <span class="pub-info">The 3rd International Biocuration Conference 2009年4月16-19日</span>
 
 </div>
