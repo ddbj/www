@@ -103,11 +103,15 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  Phages  |  PHG  |  バクテリオファージ  |
 |  Synthetic DNAs  |  SYN  |  合成配列 （合成遺伝子）  |
 |  ENV  |  ENV  |  環境サンプル (environmental samples)  |
+
 |  High throughput divisions  |    |    |
+| ---- | ---- | ---- |
 |  HTC	  |  HTC	  |  High Throughput cDNAs  |
 |  HTG	  |  HTG	  |  High Throughput Genomic sequences  |
 |  TSA	  |  TSA	  |  Transcriptome Shotgun Assembly  |
+
 |  EST divisions  |    |    |
+| ---- | ---- | ---- |
 |  A.thaliana	  |  Arabidopsis thaliana （シロイヌナズナ）  |   |
 |  B.taurus	  |  Bos taurus （ウシ）  |    |
 |  C.elegans  |  Caenorhabditis elegans （線虫） |    |
@@ -130,7 +134,9 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  X.tropicalis  |  Xenopus tropicalis （アフリカツメガエル）  |    |
 |  Z.mays  |  Zea mays （トウモロコシ）  |    |
 |  Others  |  上記以外 （Others）  |    |
+
 |  その他  |    |    |
+| ---- | ---- | ---- |
 |  Patent  |  PAT  |  特許データ  |
 |  Unannotated Seq	  |  UNA  |  未注釈データ  |
 |  GSS  |  GSS  |  ゲノム研究関連 (genome survey sequences)  |
@@ -154,9 +160,13 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  Vertebrate Other   |  哺乳類以外の脊椎動物  |
 |  Viral  |  ウィルス  |
 |  Daily Updates  |  Daily Updates  |
+
 |  モデル生物（Genomic) |    |
+| ---- | ---- |
 |  H. sapiens  |  ヒト  |
+
 |  モデル生物（RNA) |    |
+| ---- | ---- |
 |  B. taurus  |  ウシ  |
 |  D. rerio  |  メダカ  |
 |  H. sapiens  |  ヒト  |
@@ -202,11 +212,15 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  Phages  |  PHG  |  バクテリオファージ  |
 |  Synthetic DNAs  |  SYN  |  合成配列 （合成遺伝子）  |
 |  ENV  |  ENV  |  環境サンプル (environmental samples)  |
+
 |  High throughput divisions  |    |    |
+| ---- | ---- | ---- |
 |  HTC	  |  HTC	  |  High Throughput cDNAs  |
 |  HTG	  |  HTG	  |  High Throughput Genomic sequences  |
 |  TSA	  |  TSA	  |  Transcriptome Shotgun Assembly  |
+
 |  EST divisions  |    |    |
+| ---- | ---- | ---- |
 |  A.thaliana	  |  Arabidopsis thaliana （シロイヌナズナ）  |   |
 |  B.taurus	  |  Bos taurus （ウシ）  |    |
 |  C.elegans  |  Caenorhabditis elegans （線虫） |    |
@@ -229,7 +243,9 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  X.tropicalis  |  Xenopus tropicalis （アフリカツメガエル）  |    |
 |  Z.mays  |  Zea mays （トウモロコシ）  |    |
 |  Others  |  上記以外 （Others）  |    |
+
 |  その他  |    |    |
+| ---- | ---- | ---- |
 |  Patent  |  PAT  |  特許データ  |
 |  Unannotated Seq	  |  UNA  |  未注釈データ  |
 |  GSS  |  GSS  |  ゲノム研究関連 (genome survey sequences)  |
@@ -251,7 +267,9 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  Vertebrate Other   |  哺乳類以外の脊椎動物  |
 |  Viral  |  ウィルス  |
 |  Daily Updates  |  Daily Updates  |
+
 |  モデル生物（RNA) |    |
+| ---- | ---- |
 |  B. taurus  |  ウシ  |
 |  D. rerio  |  メダカ  |
 |  H. sapiens  |  ヒト  |
@@ -314,14 +332,16 @@ blastn の場合は，wordsize を 11 以外の数に変えるべきではあり
 ### Request ID
 
 検索実行後の画面に Request ID が表示されますので，必ず控えて下さい。（問い合わせや Result Viewer （後述）で結果を見たい時などに必要です）
-Request ID:wabi_blast_2013-0314-1407-23-16-946732![](/images/help/blast_help_01.gif "blast_requestID")
+Request ID:wabi_blast_2013-0314-1407-23-16-946732
+
+![blast_requestID](/assets/images/blast_help_01.gif)
 
 ### 結果画面に表示される情報
-[](/images/help/blast_help_02.gif "検索画面に表示される情報")
+![検索画面に表示される情報](/images/help/blast_help_02.gif)
 
 ### 結果中のアクセッション番号の検索・表示
 該当するアクセッション番号にチェックを入れて、"getentry"　ボタンをクリックすると、getentry　の結果が表示されます。
-![](/images/help/blast_help_03.gif "結果中のアクセッション番号の検索・表示")
+![結果中のアクセッション番号の検索・表示](/images/help/blast_help_03.gif)
 
 ### 検索結果の閲覧
 
@@ -329,7 +349,7 @@ Request ID:wabi_blast_2013-0314-1407-23-16-946732![](/images/help/blast_help_01.
 
 ブラウザを閉じてしまっても、Result Viewer を用いてRequest ID から結果を閲覧することができます。  
 検索結果閲覧期間は、実行後７日間です。
-![](/images/help/blast_help_04.gif "Result Viewer")
+![Result Viewer](/images/help/blast_help_04.gif)
 
 ## ClustalW Set up
 

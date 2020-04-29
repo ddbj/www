@@ -1,10 +1,11 @@
+$MARGIN_BOTTOM: 1rem
 
 .md-content
   font-size: 1.4rem
   line-height: 2
 
   p, table, ol, ul, dl, .highlighter-rouge
-    margin-bottom: 1rem
+    margin-bottom: $MARGIN_BOTTOM
 
   h2
     font-size: 1.8rem
@@ -40,9 +41,9 @@
     margin-top: 3.5rem
   table
     width: 100%
-    border-top: 1px solid $COLOR_BLACK
-    border-bottom: 1px solid $COLOR_BLACK
-    line-height: 1.5
+    border: 1px solid $COLOR_GRAY    
+    line-height: 1.2
+    font-size: 1.2rem
     tr
       th, td
         padding: .6rem .6rem .6rem .0rem
@@ -51,14 +52,16 @@
       th
         text-align: left
         font-weight: bold
-        border-bottom: 1px solid $COLOR_BLACK
+        border-bottom: 1px solid $COLOR_GRAY
         white-space: nowrap
       td
         border-bottom: 1px solid $COLOR_SEPARATOR
       &:last-child
         border-bottom: none
         td
-          border-bottom: 1px solid $COLOR_BLACK
+          border-bottom: 1px solid $COLOR_GRAY
+    + table
+      margin-top: -$MARGIN_BOTTOM - 0.1rem
 
   .highlighter-rouge
     background-color: $COLOR_BLACK
@@ -71,3 +74,4 @@
   
   .attention
     background-color: lightgray
+    padding: 1rem
