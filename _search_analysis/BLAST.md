@@ -8,7 +8,7 @@ category: search_analysis
 
 DDBJ では，Web版 BLAST の他に，以下の方法でも BLAST サービスを提供しています。
 
-* [WABI BLAST](/wabi_blast-help.html)
+* [WABI BLAST]({{site.baseurl}}/search_analysis/wabiBLAST.html)
 * [NIG スーパーコンピュータ](https://sc.ddbj.nig.ac.jp/ja/system-guide/software)
 
 ## Program：プログラム
@@ -142,7 +142,9 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  GSS  |  GSS  |  ゲノム研究関連 (genome survey sequences)  |
 |  STS  |  STS  |  sequence tagged sites  |
 
-特許データの利用に際しては，[特許データ利用に関する注意](/ddbj/pat-data.html)をご参照ください。
+特許データの利用に際しては，[特許データ利用に関する注意]({{site.baseurl}}/home/pat-data.html)をご参照ください。
+
+[WABI BLAST]({{site.baseurl}}/search_analysis/wabiBLAST.html)
 
 #### データベースオプション（RefSeq）
 
@@ -302,7 +304,6 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 blastx, blastp, tblastn, tblastx で指定可能です。指定可能な置換行列は以下のとおりです。  
 デフォルトでは BLOSUM62 が設定されます。
 
-|    |    |
 | ---- | ---- |
 |  PAM30  |  PAM30 substitution matrix  |
 |  PAM70  |  PAM70 substitution matrix  |
@@ -334,13 +335,14 @@ blastn の場合は，wordsize を 11 以外の数に変えるべきではあり
 検索実行後の画面に Request ID が表示されますので，必ず控えて下さい。（問い合わせや Result Viewer （後述）で結果を見たい時などに必要です）
 Request ID:wabi_blast_2013-0314-1407-23-16-946732
 
-![blast_requestID]({{ site.baseurl }}/assets/images/blast_help_01.gif)
+![blast_requestID]({{ site.baseurl }}/assets/images/help/blast_help_01.gif)
 
 ### 結果画面に表示される情報
 ![検索画面に表示される情報]({{ site.baseurl }}/assets/images/help/blast_help_02.gif)
 
 ### 結果中のアクセッション番号の検索・表示
 該当するアクセッション番号にチェックを入れて、"getentry"　ボタンをクリックすると、getentry　の結果が表示されます。
+
 ![結果中のアクセッション番号の検索・表示]({{ site.baseurl }}/assets/images/help/blast_help_03.gif)
 
 ### 検索結果の閲覧
@@ -349,15 +351,20 @@ Request ID:wabi_blast_2013-0314-1407-23-16-946732
 
 ブラウザを閉じてしまっても、Result Viewer を用いてRequest ID から結果を閲覧することができます。  
 検索結果閲覧期間は、実行後７日間です。
+
 ![Result Viewer]({{ site.baseurl }}/assets/images/help/blast_help_04.gif)
 
 ## ClustalW Set up
 
 チェックボックスで ClustalW で解析を行いたい配列を選択して"ClustalW"　ボタンをクリックすると、選択した配列が入力された状態でClustalW 画面が開きます。
 
-(1)![ClustalW セットアップ（１）]({{ site.baseurl }}/assets/images/help/blast_help_05.gif)
+(1)
 
-(2)![ClustalW セットアップ（2）]({{ site.baseurl }}/assets/images/help/blast_help_06.gif)
+![ClustalW セットアップ（１）]({{ site.baseurl }}/assets/images/help/blast_help_05.gif)
+
+(2)
+
+![ClustalW セットアップ（2）]({{ site.baseurl }}/assets/images/help/blast_help_06.gif)
 
 ## 原著論文，関連論文および参考文献
 

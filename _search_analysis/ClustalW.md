@@ -177,67 +177,359 @@ Distance
 
 <dt>系統樹の作成について</dt>
 
+*********以下テストエリア*********
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+| <ul><li>item1</li><li>item2</li></ul>| See the list | from the first column|
+
+*********テストエリア終了*********
+
 |  塩基置換推定法  |  塩基置換モデル	  |  説明  |
 | ---- | ---- | ---- |
-|  Kimura  |  TD  |  トランジションとトランスバージョンの速度が異なると仮定して推定された塩基置換数  |
+|  Kimura  |  <table><tr><td></td><td>T</td><td>C</td><td>A</td><td>G</td></tr><tr><td>T</td><td>-</td><td>α</td><td>β</td><td>β</td></tr><tr><td>C</td><td>α</td><td>-</td><td>β</td><td>β</td></tr><tr><td>A</td><td>β</td><td>β</td><td>-</td><td>α</td></tr><tr><td>G</td><td>β</td><td>β</td><td>α</td><td>-</td></tr></table>  |  トランジションとトランスバージョンの速度が異なると仮定して推定された塩基置換数  |
 |  p-distance  |  入力された配列の順番で配列を出力します。  |  相違座位の割合  |
-|  Jukes-Cantor＊	  |  TD  |  全ての種類の塩基置換が同じ速度で生じると仮定して推定された塩基置換数  |
-|  Tamura＊	  |  TD  |  トランジションとトランスバージョンの速度が異なると仮定し、さらに GC 含量の平衡速度も考慮して推定された塩基置換数  |
-|  Tajima-Nei＊	  |  TD  |  塩基の平衡頻度を考慮して推定された塩基置換数  |
-|  Gojobori-Ishii-Nei＊	  |  TD  |  GC と TA 間で速度が異なり、他の置換については全て速度が異なると仮定して推定された塩基置換数  |
-|  Tamura-Nei＊  |  TD  |  トランジションとトランスバージョンの速度が異なるだけでなく、トランジションの速度も TC と AG 間で異なると仮定し、さらに塩基の平衡頻度を考慮して推定された塩基置換数  |
+|  Jukes-Cantor＊	  |  <table><tr><td></td><td>T</td><td>C</td><td>A</td><td>G</td></tr><tr><td>T</td><td>-</td><td>α</td><td>α</td><td>α</td></tr><tr><td>C</td><td>α</td><td>-</td><td>α</td><td>α</td></tr><tr><td>A</td><td>α</td><td>α</td><td>-</td><td>α</td></tr><tr><td>G</td><td>α</td><td>α</td><td>α</td><td>-</td></tr></table>  |  全ての種類の塩基置換が同じ速度で生じると仮定して推定された塩基置換数  |
+|  Tamura＊	  |  <table><tr><td></td><td>T</td><td>C</td><td>A</td><td>G</td></tr><tr><td>T</td><td>-</td><td>κπ<sub>GC</sub></td><td>1-π<sub>GC</sub></td><td>π<sub>GC</sub></td></tr> <tr><td>C</td><td>κ(1-π<sub>GC</sub>)</td><td>-</td><td>1-π<sub>GC</sub></td><td>π<sub>GC</sub></td></tr> <tr><td>A</td><td>1-π<sub>GC</sub></td><td>π<sub>GC</sub></td><td>-</td><td>κπ<sub>GC</sub></td></tr> <tr><td>G</td><td>1-π<sub>GC</sub></td><td>π<sub>GC</sub></td><td>κ(1-π<sub>GC</sub>)</td><td>-</td></tr></table>  |  トランジションとトランスバージョンの速度が異なると仮定し、さらに GC 含量の平衡速度も考慮して推定された塩基置換数  |
+|  Tajima-Nei＊	  |   <table><tr><td></td><td>T</td><td>C</td><td>A</td><td>G</td></tr><tr><td>T</td><td>-</td><td>απ<sub>C</sub></td><td>απ<sub>A</sub></td><td>απ<sub>G</sub></td></tr> <tr><td>C</td><td>απ<sub>T</sub></td><td>-</td><td>απ<sub>A</sub></td><td>απ<sub>G</sub></td></tr> <tr><td>A</td><td>απ<sub>T</sub></td><td>απ<sub>C</sub></td><td>-</td><td>απ<sub>G</sub></td></tr> <tr><td>G</td><td>απ<sub>T</sub></td><td>απ<sub>C</sub></td><td>απ<sub>A</sub></td><td>-</td></tr></table>  |  塩基の平衡頻度を考慮して推定された塩基置換数  |
+|  Gojobori-Ishii-Nei＊	  |   <table><tr><td></td><td>T</td><td>C</td><td>A</td><td>G</td></tr> <tr><td>T</td><td>-</td><td>β</td><td>γ</td><td>β</td></tr> <tr><td>C</td><td>α</td><td>-</td><td>α</td><td>δ</td></tr> <tr><td>A</td><td>ε</td><td>β</td><td>-</td><td>β</td></tr> <tr><td>G</td><td>α</td><td>ζ</td><td>α</td><td>-</td></tr></table>  |  GC と TA 間で速度が異なり、他の置換については全て速度が異なると仮定して推定された塩基置換数  |
+|  Tamura-Nei＊  |  <table><tr><td></td><td>T</td><td>C</td><td>A</td><td>G</td></tr><tr><td>T</td><td>-</td><td>α<sub>2</sub>π<sub>C</sub></td><td>βπ<sub>A</sub></td><td>βπ<sub>G</sub></td></tr><tr><td>C</td><td>α<sub>2</sub>π<sub>T</sub></td><td>-</td><td>βπ<sub>A</sub></td><td>βπ<sub>G</sub></td></tr><tr><td>A</td><td>βπ<sub>T</sub></td><td>βπ<sub>C</sub></td><td>-</td><td>α<sub>1</sub>π<sub>G</sub></td></tr><tr><td>G</td><td>βπ<sub>T</sub></td><td>βπ<sub>C</sub></td><td>α<sub>1</sub>π<sub>A</sub></td><td>-</td></tr></table>  |  トランジションとトランスバージョンの速度が異なるだけでなく、トランジションの速度も TC と AG 間で異なると仮定し、さらに塩基の平衡頻度を考慮して推定された塩基置換数  |
 |α,α1,α2,β,γ,δ,ε,ζ,κ:塩基置換速度 <br> πT,πC,πA,πG,πGC:平衡塩基頻度|    |    |
 
-|    |    |    |    |    |
-| ---- | ---- | ---- | ---- | ---- |
-|    |  T  |  C  |  A  |  G  |
-|  T  |  -  |  α  |  β  |  β  |
-|  C  |  α  |  -  |  β  |  β  |
-|  A  |  β  |  β  |  -  |  α  |
-|  G  |  β  |  β  |  α  |  -  |
-
-|    |    |    |    |    |
-| ---- | ---- | ---- | ---- | ---- |
-|    |  T  |  C  |  A  |  G  |
-|  T  |  -  |  α  |  α  |  α  |
-|  C  |  α  |  -  |  α  |  α  |
-|  A  |  α  |  α  |  -  |  α  |
-|  G  |  α  |  α  |  α  |  -  |
-
-|    |    |    |    |    |
-| ---- | ---- | ---- | ---- | ---- |
-|    |  T  |  C  |  A  |  G  |
-|  T  |  -  |  κπ<sub>GC</sub>  |  1-π<sub>GC</sub>  |  π<sub>GC</sub>   |
-|  C  |  κ(1-π<sub>GC</sub>)  |  -  |  1-π<sub>GC</sub>  |  π<sub>GC</sub>  |
-|  A  |  1-π<sub>GC</sub>  |  π<sub>GC</sub>  |  -  |  κπ<sub>GC</sub>  |
-|  G  |  1-π<sub>GC</sub>  |  π<sub>GC</sub>  |  κ(1-π<sub>GC</sub>)  |  -  |
-
-|    |    |    |    |    |
-| ---- | ---- | ---- | ---- | ---- |
-|    |  T  |  C  |  A  |  G  |
-|  T  |  -  |  απ<sub>C</sub>  |  απ<sub>A</sub>  |  απ<sub>G</sub>   |
-|  C  |  απ<sub>T</sub>  |  -  |  απ<sub>A</sub>  |  απ<sub>G</sub>  |
-|  A  |  απ<sub>T</sub>  |  απ<sub>C</sub>  |  -  |  απ<sub>G</sub>   |
-|  G  |  απ<sub>T</sub>  |  απ<sub>C</sub>  |  απ<sub>A</sub>  |  -  |
-
-
-|    |    |    |    |    |
-| ---- | ---- | ---- | ---- | ---- |
-|    |  T  |  C  |  A  |  G  |
-|  T  |  -  |  β  |  γ  |  β  |
-|  C  |  α  |  -  |  α  |  δ  |
-|  A  |  ε  |  β  |  -  |  β  |
-|  G  |  α  |  ζ  |  α  |  -  |
-
-|    |    |    |    |    |
-| ---- | ---- | ---- | ---- | ---- |
-|    |  T  |  C  |  A  |  G  |
-|  T  |  -  |  α<sub>2</sub>π<sub>C</sub>  |  βπ<sub>A</sub>  |  βπ<sub>G</sub>   |
-|  C  |  α<sub>2</sub>π<sub>T</sub>  |  -  |  βπ<sub>A</sub>  |  βπ<sub>G</sub>  |
-|  A  |  βπ<sub>T</sub>  |  βπ<sub>C</sub>  |  -  |  α<sub>1</sub>π<sub>G</sub>  |
-|  G  |  βπ<sub>T</sub>  |  βπ<sub>C</sub>  |  α<sub>1</sub>π<sub>A</sub>  |  -  |
-
-
+<dt><a href="#tree">系統樹の作成について</a></dt>
+<dd>
+<div class="main_table format">
+<table>
+<thead>
+<tr>
+<th>塩基置換推定法</th>
+<th>塩基置換モデル</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kimura</td>
+<td style="font-family: serif;">
+<table>
+<tr>
+<td></td>
+<td>T</td>
+<td>C</td>
+<td>A</td>
+<td>G</td>
+</tr>         
+<tr>
+<td>T</td>
+<td>-</td>
+<td>α</td>
+<td>β</td>
+<td>β</td>
+</tr>
+<tr>
+<td>C</td>
+<td>α</td>
+<td>-</td>
+<td>β</td>
+<td>β</td>
+</tr>
+<tr>
+<td>A</td>
+<td>β</td>
+<td>β</td>
+<td>-</td>
+<td>α</td>
+</tr>
+<tr>
+<td>G</td>
+<td>β</td>
+<td>β</td>
+<td>α</td>
+<td>-</td>
+</tr>
+</table>
+</td>
+<td>トランジションとトランスバージョンの速度が異なると仮定して推定された塩基置換数</td>
+</tr>
+<tr>
+<td>p-distance</td>
+<td>入力された配列の順番で配列を出力します。</td>
+<td>相違座位の割合</td>
+</tr>
+<tr>
+<td>Jukes-Cantor<span class="red">＊</span>
+</td>
+<td style="font-family: serif;">
+<table>
+<tr>
+<td></td>
+<td>T</td>
+<td>C</td>
+<td>A</td>
+<td>G</td>
+</tr> 
+<tr>
+<td>T</td>
+<td>-</td>
+<td>α</td>
+<td>α</td>
+<td>α</td>
+</tr> 
+<tr>
+<td>C</td>
+<td>α</td>
+<td>-</td>
+<td>α</td>
+<td>α</td>
+</tr> 
+<tr>
+<td>A</td>
+<td>α</td>
+<td>α</td>
+<td>-</td>
+<td>α</td>
+</tr> 
+<tr>
+<td>G</td>
+<td>α</td>
+<td>α</td>
+<td>α</td>
+<td>-</td>
+</tr> 
+</table>
+</td>
+<td>全ての種類の塩基置換が同じ速度で生じると仮定して推定された塩基置換数</td>
+</tr>
+<tr>
+<td>Tamura<span class="red">＊</span>
+</td>
+<td style="font-family: serif; font-size: 90%;">
+<table>
+<tr>
+<td></td>
+<td>T</td>
+<td>C</td>
+<td>A</td>
+<td>G
+</td>
+</tr>
+<tr>
+<td>T</td>
+<td>-</td>
+<td>κπ<sub>GC</sub>
+</td>
+<td>1-π<sub>GC</sub>
+</td>
+<td>π<sub>GC</sub>
+</td>
+</tr> 
+<tr>
+<td>C</td>
+<td>κ(1-π<sub>GC</sub>)</td>
+<td>-</td>
+<td>1-π<sub>GC</sub>
+</td>
+<td>π<sub>GC</sub>
+</td>
+</tr> 
+<tr>
+<td>A</td>
+<td>1-π<sub>GC</sub>
+</td>
+<td>π<sub>GC</sub>
+</td>
+<td>-</td>
+<td>κπ<sub>GC</sub>
+</td>
+</tr> 
+<tr>
+<td>G</td>
+<td>1-π<sub>GC</sub>
+</td>
+<td>π<sub>GC</sub>
+</td>
+<td>κ(1-π<sub>GC</sub>)</td>
+<td>-</td>
+</tr> 
+</table>
+</td>              
+<td>トランジションとトランスバージョンの速度が異なると仮定し、さらに GC 含量の平衡速度も考慮して推定された塩基置換数</td>
+</tr>
+<tr>
+<td>Tajima-Nei<span class="red">＊</span>
+</td>
+<td style="font-family: serif;">
+<table>
+<tr>
+<td></td>
+<td>T</td>
+<td>C</td>
+<td>A</td>
+<td>G
+</td>
+</tr>
+<tr>
+<td>T</td>
+<td>-</td>
+<td>απ<sub>C</sub>
+</td>
+<td>απ<sub>A</sub>
+</td>
+<td>απ<sub>G</sub>
+</td>
+</tr> 
+<tr>
+<td>C</td>
+<td>απ<sub>T</sub>
+</td>
+<td>-</td>
+<td>απ<sub>A</sub>
+</td>
+<td>απ<sub>G</sub>
+</td>
+</tr> 
+<tr>
+<td>A</td>
+<td>απ<sub>T</sub>
+</td>
+<td>απ<sub>C</sub>
+</td>
+<td>-</td>
+<td>απ<sub>G</sub>
+</td>
+</tr> 
+<tr>
+<td>G</td>
+<td>απ<sub>T</sub>
+</td>
+<td>απ<sub>C</sub>
+</td>
+<td>απ<sub>A</sub>
+</td>
+<td>-</td>
+</tr> 
+</table>
+</td>                   
+<td>塩基の平衡頻度を考慮して推定された塩基置換数</td>
+</tr>
+<tr>
+<td>Gojobori-Ishii-Nei<span class="red">＊</span>
+</td>
+<td style="font-family: serif;">
+<table>
+<tr>
+<td></td>
+<td>T</td>
+<td>C</td>
+<td>A</td>
+<td>G</td>
+</tr> 
+<tr>
+<td>T</td>
+<td>-</td>
+<td>β</td>
+<td>γ</td>
+<td>β</td>
+</tr> 
+<tr>
+<td>C</td>
+<td>α</td>
+<td>-</td>
+<td>α</td>
+<td>δ</td>
+</tr> 
+<tr>
+<td>A</td>
+<td>ε</td>
+<td>β</td>
+<td>-</td>
+<td>β</td>
+</tr> 
+<tr>
+<td>G</td>
+<td>α</td>
+<td>ζ</td>
+<td>α</td>
+<td>-</td>
+</tr> 
+</table>
+</td>
+<td>GC と TA 間で速度が異なり、他の置換については全て速度が異なると仮定して推定された塩基置換数</td>
+</tr>                
+<tr>
+<td>Tamura-Nei<span class="red">＊</span>
+</td>
+<td style="font-family: serif;">
+<table>
+<tr>
+<td></td>
+<td>T</td>
+<td>C</td>
+<td>A</td>
+<td>G
+</td>
+</tr>
+<tr>
+<td>T</td>
+<td>-</td>
+<td>α<sub>2</sub>π<sub>C</sub>
+</td>
+<td>βπ<sub>A</sub>
+</td>
+<td>βπ<sub>G</sub>
+</td>
+</tr>
+<tr>
+<td>C</td>
+<td>α<sub>2</sub>π<sub>T</sub>
+</td>
+<td>-</td>
+<td>βπ<sub>A</sub>
+</td>
+<td>βπ<sub>G</sub>
+</td>
+</tr>
+<tr>
+<td>A</td>
+<td>βπ<sub>T</sub>
+</td>
+<td>βπ<sub>C</sub>
+</td>
+<td>-</td>
+<td>α<sub>1</sub>π<sub>G</sub>
+</td>
+</tr>
+<tr>
+<td>G</td>
+<td>βπ<sub>T</sub>
+</td>
+<td>βπ<sub>C</sub>
+</td>
+<td>α<sub>1</sub>π<sub>A</sub>
+</td>
+<td>-</td>
+</tr>
+</table>
+</td>               
+<td>
+トランジションとトランスバージョンの速度が異なるだけでなく、トランジションの速度も TC と AG 間で異なると仮定し、さらに塩基の平衡頻度を考慮して推定された塩基置換数
+</td>
+</tr>
+<tr>
+<td colspan="3" style="font-family:serif">
+<ul id="disc">
+<li>α, α<sub>1</sub>, α<sub>2</sub> ,β, γ, δ, ε, ζ, κ : 塩基置換速度</li>
+<li>π<sub>T</sub>, π<sub>C</sub>, π<sub>A</sub>, π<sub>G</sub>, π<sub>GC</sub> : 平衡塩基頻度</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd>      
 
 TOSSGAPS
 :   系統樹計算時に gap を無視するかを指定します。デフォルトは **ON** (gap を無視する) です。
@@ -267,19 +559,19 @@ CLUSTALWで用いられる塩基置換数推定法のデフォルト値はKimura
 
 （１）解析結果
 
-:   ![解析結果](/images/help/clustalw_01.gif)
+:   ![解析結果]({{ site.baseurl }}/assets/images/help/clustalw_01.gif)
 
 （２）Multiple Alignment の結果
 
-:   ![Multiple Alignment の結果](/images/help/clustalw_02.gif)
+:   ![Multiple Alignment の結果]({{ site.baseurl }}/assets/images/help/clustalw_02.gif)
 
 （３）Guide Tree
 
-:   ![Guide Tree](/images/help/clustalw_03.gif)
+:   ![Guide Tree]({{ site.baseurl }}/assets/images/help/clustalw_03.gif)
 
 （４）BOOTSTRAP 計算結果
 
-:   ![BOOTSTRAP 計算結果](/images/help/clustalw_04.gif)
+:   ![BOOTSTRAP 計算結果]({{ site.baseurl }}/assets/images/help/clustalw_04.gif)
 
 （注意）2012年4月より，全ての解析時に BOOTSTRAP の計算を実行します。ただし，入力フォームで[FORMAT] と [CLUSTERING] の選択が以下の様な組み合わせのときには .phb ファイルは作成されません。
 
@@ -305,7 +597,6 @@ URLが他人に知られると他人に解析結果が分かってしまうた�
 
 * このプログラムは：ClustalW2.1
 * 参考文献
-
 * Larkin MA, Blackshields G, Brown NP, Chenna R, McGettigan PA, McWilliam H, Valentin F, Wallace IM, Wilm A, Lopez R, Thompson JD, Gibson TJ, Higgins DG. 
     (2007). Clustal W and Clustal X version 2.0. Bioinformatics, 23, 2947-2948. 
 * Chenna R, Sugawara H, Koike T, Lopez R, Gibson TJ, Higgins DG, Thompson JD. (2003) Multiple sequence alignment with the Clustal series of programs. Nucleic Acids Res. 31(13):3497-500.
