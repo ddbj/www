@@ -10,13 +10,14 @@ TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxon
 
 ## 検索（ウェブ検索フォームから）
 
-#### トップページ（Tree画面）：http://ddbj.nig.ac.jp/tx_search/![トップページ](/images/help/txhelp01.gif)  
+#### トップページ（Tree画面）：[http://ddbj.nig.ac.jp/tx_search/](http://ddbj.nig.ac.jp/tx_search/)
+![トップページ]({{ site.baseurl }}/assets/images/help/txhelp01.gif)  
 
 ### 検索フォームへの入力方法
 
 検索フォームのテキスト入力欄に検索したい名前や数字を入力し、「送信」をクリックまたはリターンキーを押します。
 
-![検索フォームへの入力](/images/help/txhelp03.gif)
+![検索フォームへの入力]({{ site.baseurl }}/assets/images/help/txhelp03.gif)
 
 * 1文字のワイルドカード"?"と複数文字のワイルドカード"*"が使用できます。
 * 論理演算子(AND, OR, NOT)は以下のように入力します。
@@ -29,13 +30,13 @@ TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxon
 
 * Example を利用することもできます。
 
-(1)検索ボックス下の"Example" をクリックすると、いくつか簡単な例が表示されます。
+<span class="red">(1)</span>検索ボックス下の"Example" をクリックすると、いくつか簡単な例が表示されます。
 
-(2)例の中から１つを選んでクリックすると、検索ボックスに入力されます。
+<span class="red">(2)</span>例の中から１つを選んでクリックすると、検索ボックスに入力されます。
 
-(3)生物名やtaxonomy_id などを、検索したいものに変更します。
+<span class="red">(3)</span>生物名やtaxonomy_id などを、検索したいものに変更します。
 
-![検索フォーム Example](/images/help/txhelp02.gif)
+![検索フォーム Example]({{ site.baseurl }}/assets/images/help/txhelp02.gif)
 
 デフォルトでは以下のフィールドを検索します。
 
@@ -58,7 +59,7 @@ TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxon
 * 結果が1000件を超える場合は最初（scientific_name で昇順）の 1000件分のみ結果を返します。この表示件数の上限を変更することはできませんので、絞り込み検索を行って1000件以下になるようにしてください。
 * テキスト入力欄に solr の standard query parser parameters の q パラメータを入力することで、より詳細な検索ができます
 * フィールドの指定方法  
-フィールド名：値（例　tax_id:9606)
+<span class="red">フィールド名：値</span>（例　tax_id:9606)
 * 複数フィールドの指定方法  
 
 "フィールド名：値" を論理演算子をはさんで並べます（例　scientific_name:(Homo Sapiens) && rank:species)
@@ -112,7 +113,7 @@ type_material_ex
 
 検索フォームから検索した場合の結果表示画面です。
 
-![検索結果](/images/help/txhelp04.gif)
+![検索結果]({{ site.baseurl }}/assets/images/help/txhelp04.gif)
 
 
 * 指定した taxonomy id の taxon の scientific name, taxonomy id, rank, division code, genetic code, mitochondrial genetic code, scientific name 以外の name class の名前, lineage が表示されます。
@@ -124,13 +125,13 @@ type_material_ex
 
 Search Result/Taxon Information 画面で lineage 中の名前をクリックすると、その taxon をトップにしたツリー画面が表示されます。
 
-![Tree 画面](/images/help/txhelp05.gif)
+![Tree 画面]({{ site.baseurl }}/assets/images/help/txhelp05.gif)
 
 
-* (1)scientific name はTaxon Information画面へのリンク。
-* (2)taxonomy id は [NCBI Taxonomy Browser](//www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/) へのリンクになっています。
-* (3)scientific name の左にある三角形のアイコンをクリックすると、その taxon の下の階層のツリーを開閉します。
-* (4)ツリーのトップの scientific name の右にある↑をクリックすると、1階層上がったツリーを表示します。この時、表示する階層数が1つ増やされます。
+* <span class="red">(1)</span>scientific name はTaxon Information画面へのリンク。
+* <span class="red">(2)</span>taxonomy id は [NCBI Taxonomy Browser](//www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/) へのリンクになっています。
+* <span class="red">(3)</span>scientific name の左にある三角形のアイコンをクリックすると、その taxon の下の階層のツリーを開閉します。
+* <span class="red">(4)</span>ツリーのトップの scientific name の右にある↑をクリックすると、1階層上がったツリーを表示します。この時、表示する階層数が1つ増やされます。
 * URL 中の depth パラメータの値を変更すると表示する階層数が変更されます。
 
 
@@ -143,7 +144,7 @@ taxonomy_id や検索語を含んだ URL を指定して、検索結果を直接
 
 |  パラメータ  |  詳細  |  入力例  |
 | ---- | ---- | ---- |
-|  id (必須）  |  検索対象の taxonomy_id を指定します。  |  * taxonomy_id :9606 をツリー表示<br>[//ddbj.nig.ac.jp/tx_search/9606?view=tree](http://ddbj.nig.ac.jp/tx_search/9606?view=tree)<br>[//ddbj.nig.ac.jp/tx_search/9606](http://ddbj.nig.ac.jp/tx_search/9606)<br>* taxonomy_id :63221 をTaxon Information 表示<br>[//ddbj.nig.ac.jp/tx_search/63221?view=info](http://ddbj.nig.ac.jp/tx_search/63221?view=info)  |
+|  id <span class="red">(必須）</span>  |  検索対象の taxonomy_id を指定します。  |  * taxonomy_id :9606 をツリー表示<br>[//ddbj.nig.ac.jp/tx_search/9606?view=tree](http://ddbj.nig.ac.jp/tx_search/9606?view=tree)<br>[//ddbj.nig.ac.jp/tx_search/9606](http://ddbj.nig.ac.jp/tx_search/9606)<br>* taxonomy_id :63221 をTaxon Information 表示<br>[//ddbj.nig.ac.jp/tx_search/63221?view=info](http://ddbj.nig.ac.jp/tx_search/63221?view=info)  |
 |  view  |  表示画面を指定します。<br>省略した場合は ツリー画面 が指定されます。  |  * taxonomy_id :63221 をTaxon Information 表示<br>[//ddbj.nig.ac.jp/tx_search/63221?view=info](http://ddbj.nig.ac.jp/tx_search/63221?view=info)<br>* taxonomy_id :63221 をツリー表示<br>[//ddbj.nig.ac.jp/tx_search/63221](http://ddbj.nig.ac.jp/tx_search/63221)|
 |  depth  |  表示するツリーの階層数を指定します。<br>省略した場合は 2 が指定されます。  |  * taxonomy_id :63221 を5 階層まで表示<br>[//ddbj.nig.ac.jp/tx_search/63221?depth=5](http://ddbj.nig.ac.jp/tx_search/63221?depth=5)<br>* taxonomy_id :9606 をデフォルトの2階層表示<br>[//ddbj.nig.ac.jp/tx_search/9606](http://ddbj.nig.ac.jp/tx_search/9606)  |
 

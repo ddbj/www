@@ -9,29 +9,27 @@ category: search_analysis
 ## getentryの機能について
 - getentry は，アクセッション番号からの DDBJ フラットファイルの検索にご利用いただけます。
 - getentry は webAPI として実装しており，入力フォームからだけでなく，プログラムなどから直接呼び出すことも可能です。
-- データの変更履歴の検索は，webAPI プログラムの gethistory を用いて行うことができます。
-- "DDBJ フラットファイルのキーワード検索" は ARSA をご利用ください。
-- DRA データの検索は getentry ではおこなうことができません。DRA Search をご利用ください。
+- データの変更履歴の検索は，webAPI プログラムの [gethistory](#ge_program) を用いて行うことができます。
+- "DDBJ フラットファイルのキーワード検索" は [ARSA](http://ddbj.nig.ac.jp/arsa/) をご利用ください。
+- DRA データの検索は getentry ではおこなうことができません。[DRA Search](https://ddbj.nig.ac.jp/DRASearch/) をご利用ください。
 
 ## 入力フォームによる検索
 [http://getentry.ddbj.nig.ac.jp/top-j.html](http://getentry.ddbj.nig.ac.jp/top-j.html)からご利用下さい。
 
-
 ### デフォルト指定
 
-|  |  |  
 | ---- | ---- |
 |  ID  |  Accession 番号  |
-|  データべース  |  DNA データベース:DDBJ/EMBL/GenBank  |
-|  出力形式  |  フラットファイル(DDBJ)  |
+|  データべース  |  [DNA データベース:DDBJ/EMBL/GenBank](http://www.insdc.org/)  |
+|  出力形式  |  [フラットファイル（DDBJ）]({{site.baseurl}}/search_analysis/flat-file.html)  |
 |  取得方法  |  html  |
 |  上限  |  10  |
+
 
 ### ID
 
 Accession 番号 を入力します。入力には、複数 Accession 番号の指定、範囲指定、バージョン番号の指定が可能です。
 
-|  |  |  |
 | ---- | ---- | ---- |
 |  バージョン番号  |  ・ 指定がない場合は，最新バージョンを検索します。<br>・ 指定されている場合は，指定のバージョンを検索します。  |   AB669632.1 <br> AB669632.2  |
 |  複数 Accession 番号  |  ・ ","区切りで複数の Accession 番号を指定できます。<br>・ ","区切りで複数指定された場合，指定の順で出力されます。 <br> ・ 二つの Accession 番号"-"で連結することにより範囲検索ができます。<br> ・ バージョン番号の指定もできます。 |  AB669632.1,AB669632.2,AB669633.1,AB669633.2 <br> AK377101 - AK377200,AK377210,AK377211  |
@@ -45,7 +43,6 @@ DNAデータベース
 
 検索対象データベース
 
-|  |  | 
 | ---- | ---- |
 DDBJ/EMBL/GenBank |  [国際塩基配列データベース（INSD）](http://www.insdc.org/)               
 MGA                | [Mass sequence for Genome Annotation(MGA)](/ddbj/mga.html)
@@ -62,11 +59,12 @@ DDBJ リリース には、 TPA、 アルファベット４文字＋８桁の数
 
 MGA データの新規登録は受け付けておりません。
 
-getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報](/stats/relinfo.html) でご確認ください。
+getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報]({{site.baseurl}}/statistics/relinfo.html) でご確認ください。
+
+
 
 出力形式
 
-|  |  |
 | ---- | ---- |
 フラットファイル(DDBJ)   | [DDBJ のデータ公開形式](/ddbj/flat-file.html)で出力
 全塩基配列 FASTA     |  [塩基配列の全長を FASTA 形式](#nfasta)で出力                
@@ -82,29 +80,26 @@ Protein データベース
 
 検索対象データベース
 
-|  |  |
 | ---- | ---- |
 [UniProt](https://www.uniprot.org/) | UniProt/Swiss-Prot とUniProt/TrEMBL を合わせたアミノ酸配列データベース                        
 [PDB](https://www.rcsb.org/pdb/)    | タンパク質の立体構造データベース                                                            
-[DAD](/stats/relnote.html)          | DDBJ からアミノ酸翻訳配列データを抽出して作成したデータベース                                           
+[DAD]({{site.baseurl}}/statistics/relnote.html)          | DDBJ からアミノ酸翻訳配列データを抽出して作成したデータベース                                           
 Patent                              | [JPO](https://www.jpo.go.jp/index.html)，[KIPO](//www.kipo.go.kr) に由来するアミノ酸配列
 
-getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報](/stats/relinfo.html) でご確認ください。
+getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報]({{site.baseurl}}/statistics/relinfo.html) でご確認ください。
 
 出力形式
 
-|  |  |  |  |
 | ---- | ---- | ---- | ---- |
 default||指定したデータベースの公開形式で出力            |  空白 |     |                
-FASTA               | アミノ酸配列FASTA                  |  アミノ酸配列をFASTA 形式 で出力 | UniProt, DAD, Patent で選択可能 | 
-||塩基配列FASTA (for DAD) | アミノ酸配列をコードする塩基配列をFASTA 形式 で出力 | DAD のみ選択可能          | 
-|^|seqres              | PDB アミノ酸 FASTA                | PDB のみ選択可能  | 
+FASTA               | [アミノ酸配列FASTA](#trans)               |  アミノ酸配列をFASTA 形式 で出力 | UniProt, DAD, Patent で選択可能 | 
+||[塩基配列FASTA (for DAD)](#dadfasta) | アミノ酸配列をコードする塩基配列をFASTA 形式 で出力 | DAD のみ選択可能          | 
+||[seqres](#seqres)              | PDB アミノ酸 FASTA                | PDB のみ選択可能  | 
 
 選択データベースにより、出力形式は異なります。
 
 ### 取得方法
 
-|  |  |
 | ---- | ---- |
 デフォルト | html                                 
 html  | HTMLファイル（ACCESSION, ORGANISM等 にリンクあり）
@@ -114,7 +109,6 @@ gz    |  gz圧縮ファイル
 
 gz圧縮ファイルのファイル名はformatの指定値によって以下のようになります。
 
-|  |  |
 | ---- | ---- | 
 [DNA系]flatfile     | flatfile.txt.gz
 [DNA系]xml          | insd.xml.gz    
@@ -129,14 +123,12 @@ gz圧縮ファイルのファイル名はformatの指定値によって以下の
 
 ### 上限（最大表示件数）
 
-|  |  |
 | ---- | ---- |
 デフォルト    | 10件   
 任意の件数を指定 | 指定した件数
 0 を指定    | 上限なし  
 
-
-## WebAPI プログラムによる検索
+## WebAPI プログラムによる検索 <a name="ge_program"></a>
 
 getentry は webAPI として実装しており，入力フォームからだけでなく，プログラムなどから直接呼び出すことも可能です。
 
@@ -144,7 +136,6 @@ getentry は webAPI として実装しており，入力フォームからだけ
 
 getentry の web API は以下の２つのプログラムからなります。
 
-|  |  |
 | ---- | ---- |
 getentry  |  アクセッション番号（データベース中のエントリの ID)を与えると，データを返します。
 gethistory | アクセッション番号（データベース中のエントリの ID)を与えると，データの変更履歴を返します。<br> 特許庁由来アミノ酸配列の更新履歴は今のところとっておりません。
@@ -155,7 +146,6 @@ gethistory | アクセッション番号（データベース中のエントリ�
 
 以下の２種類があります
 
-|  |  |
 | ---- | ---- |
 通常の GET method | http://getentry.ddbj.nig.ac.jp/getentry?database=<span class="bold italic">データベース名</span>&accession_number=<span class="bold italic">アクセッション番号</span>&<span class="bold italic">追加のパラメーター（任意)</span>                                                                                                                                                                                                                                                                                                                                                                
 smart URL      | http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold italic">データベース名</span>/<span class="bold italic">アクセッション番号</span>  <br> http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold italic">データベース名</span>/<span class="bold italic">アクセッション番号</span>/?<span class="bold italic">追加のパラメーター(任意)</span>  <br> http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold italic">データベース名</span>/<span class="bold italic">アクセッション番号</span>/<span class="bold italic">リビジョン ID </span>/?<span class="bold italic">追加のパラメーター(任意)</span>
@@ -163,17 +153,15 @@ smart URL      | http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold itali
 
 入力例
 
-* 通常の GET method によるアクセッション番号 AB601234 の検索  
-http://getentry.ddbj.nig.ac.jp/getentry?database=ddbj&accession_number=AB601234
-* smart URL による特許庁由来アミノ酸配列 BD500001 の検索  
-http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001
+* 通常の GET method によるアクセッション番号 AB601234 の検索<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=ddbj&amp;accession_number=AB601234](http://getentry.ddbj.nig.ac.jp/getentry?database=ddbj&amp;accession_number=AB601234)
+
+* smart URL による特許庁由来アミノ酸配列 BD500001 の検索<br>[http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001](http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001)
 
 
 ### getentry で指定可能なパラメータ
 
 accession 番号<span class="red">（必須）</span><span class="normal">：　検索対象の Accession 番号を指定します。</span>
 
-|  |  |
 | ---- | ---- |
 |  バージョン番号  |  ・指定がない場合は，最新バージョンを検索します。<br> ・指定されている場合は，指定のバージョンを検索します。 |
 |  複数 Accession 番号  | ・ ","区切りで複数の Accession 番号を指定できます。 <br> ・","区切りで複数指定された場合，指定の順で出力されます。 |
@@ -188,33 +176,26 @@ accession 番号<span class="red">（必須）</span><span class="normal">：　
 
 入力例
 
-* アクセッション番号AB055395 の検索  
-http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB055395  
-http://getentry.ddbj.nig.ac.jp/getentry/na/AB055395
+* アクセッション番号AB055395 の検索<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB055395](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB055395)<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/AB055395](http://getentry.ddbj.nig.ac.jp/getentry/na/AB055395)
 * 複数アクセッション番号の検索（複数指定&100件表示）  
-[http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AK377101 - AK377200,AK377210,AK377211- AK388100&limit=100](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AK377101%20-%20AK377200,AK377210,AK377211-%20AK388100&limit=100)
-[http://getentry.ddbj.nig.ac.jp/getentry/na/AK377101 - AK377200,AK377210,AK377211- AK388100?limit=100](http://getentry.ddbj.nig.ac.jp/getentry/na/AK377101%20-%20AK377200,AK377210,AK377211-%20AK388100?limit=100)
-* 複数アクセッション番号の検索（範囲指定&1000件表示）  
-http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FY782000-FY783000&limit=1000  
-http://getentry.ddbj.nig.ac.jp/getentry/na/FY782000-FYFY783000?limit=1000
-* バージョン 番号指定の複数検索：指定したバージョンを検索します。  
-http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB669632.1,AB669632.2,AB669633.1,AB669633.2,AB669634.1  
-http://getentry.ddbj.nig.ac.jp/getentry/na/AB669632.1,AB669632.2,AB669633.1,AB66963.2,AB669634.1
-* バージョン番号指定の範囲指定検索：バージョン番号の指定は無視され，最新バージョンを検索します。
-http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB669632.1-AB6696356.1  
-http://getentry.ddbj.nig.ac.jp/getentry/na/AB669632.1-AB6696356.1
+[http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AK377101 - AK377200,AK377210,AK377211- AK388100&limit=100](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AK377101%20-%20AK377200,AK377210,AK377211-%20AK388100&limit=100)<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/AK377101 - AK377200,AK377210,AK377211- AK388100?limit=100](http://getentry.ddbj.nig.ac.jp/getentry/na/AK377101%20-%20AK377200,AK377210,AK377211-%20AK388100?limit=100)
+* 複数アクセッション番号の検索（範囲指定&1000件表示）<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FY782000-FY783000&limit=1000](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FY782000-FY783000&limit=1000)<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/FY782000-FYFY783000?limit=1000](http://getentry.ddbj.nig.ac.jp/getentry/na/FY782000-FYFY783000?limit=1000)
 
-database（任意）：　検索対象のデータベースを指定します。
+* バージョン 番号指定の複数検索：指定したバージョンを検索します。<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB669632.1,AB669632.2,AB669633.1,AB669633.2,AB669634.1 ](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB669632.1,AB669632.2,AB669633.1,AB669633.2,AB669634.1 )<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/AB669632.1,AB669632.2,AB669633.1,AB66963.2,AB669634.1](http://getentry.ddbj.nig.ac.jp/getentry/na/AB669632.1,AB669632.2,AB669633.1,AB66963.2,AB669634.1)
+* バージョン番号指定の範囲指定検索：バージョン番号の指定は無視され，最新バージョンを検索します。<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB669632.1-AB6696356.1](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB669632.1-AB6696356.1)<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/AB669632.1-AB6696356.1
+](http://getentry.ddbj.nig.ac.jp/getentry/na/AB669632.1-AB6696356.1
+)
 
-|  |  |  |  |
+database<span class="red">（任意）</span>：　検索対象のデータベースを指定します。
+
 | ---- | ---- | ---- | ---- |
 |DNA系     | na                                  | DDBJ/EMBL/GenBank  |  [国際塩基配列データベース（INSD）](http://www.insdc.org/), [WGS](/ddbj/wgs.html), [TPA](/ddbj/tpa.html), [TSA](/ddbj/tsa.html)|
-|^|mga       | MGA                                 | [Mass sequence for Genome Annotation(MGA)](/ddbj/mga.html)       
+||mga       | MGA                                 | [Mass sequence for Genome Annotation(MGA)](/ddbj/mga.html)       
 Protein系  | aa                                  | DAD, Patent, UniProt, PDB                                                   |  4つのデータベースをこの順番で検索
-|^| uniprot   | [UniProt](https://www.uniprot.org/) | UniProt/Swiss-Prot とUniProt/TrEMBL を合わせたアミノ酸配列データベース                        
-|^| pdb       | [PDB](https://www.rcsb.org/pdb/)    | タンパク質の立体構造データベース                                                            
-|^| dad       | [DAD](/stats/relnote.html)          | DDBJ からアミノ酸翻訳配列データを抽出して作成したデータベース                                           
-|^| patent_aa | Patent                              | [JPO](https://www.jpo.go.jp/index.html)，[KIPO](//www.kipo.go.kr) に由来するアミノ酸配列
+|| uniprot   | [UniProt](https://www.uniprot.org/) | UniProt/Swiss-Prot とUniProt/TrEMBL を合わせたアミノ酸配列データベース                        
+|| pdb       | [PDB](https://www.rcsb.org/pdb/)    | タンパク質の立体構造データベース                                                            
+|| dad       | [DAD]({{site.baseurl}}/statistics/relnote.html)          | DDBJ からアミノ酸翻訳配列データを抽出して作成したデータベース                                           
+|| patent_aa | Patent                              | [JPO](https://www.jpo.go.jp/index.html)，[KIPO](//www.kipo.go.kr) に由来するアミノ酸配列
 
 データベース指定を省略すると、naを指定したものとみなして処理します。
 
@@ -231,36 +212,25 @@ DDBJ リリース には、 TPA、 アルファベット４文字＋８桁の数
 
 MGA データの新規登録は受け付けておりません。
 
-getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報](/stats/relinfo.html) でご確認ください。
+getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報]({{site.baseurl}}/statistics/relinfo.html) でご確認ください。
 
 入力例 <span class="normal">（上段はGET method , 下段は　smart URL ）</span>
 
-* TSA( IAAA01000001) の検索  
-http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=IAAA01000001  
-http://getentry.ddbj.nig.ac.jp/getentry/na/IAAA01000001
-* WGS( BAET01000001) の検索  
-http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=BAET01000001  
-http://getentry.ddbj.nig.ac.jp/getentry/na/BAET01000001
-* MGA(AAAAA0000001) の検索  
-http://getentry.ddbj.nig.ac.jp/getentry?database=mga&accession_number=AAAAA0000001  
-http://getentry.ddbj.nig.ac.jp/getentry/mga/AAAAA0000001
-* 特許庁由来アミノ酸配列の検索  
-http://getentry.ddbj.nig.ac.jp/getentry?database=patent_aa&accession_number=DI500001  
-http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/DI500001  
-http://getentry.ddbj.nig.ac.jp/getentry?database=aa&accession_number=BD500001  
-http://getentry.ddbj.nig.ac.jp/getentry/aa/BD500001
-* DAD の検索  
-http://getentry.ddbj.nig.ac.jp/getentry?database=dad&accession_number=AB000714-1  
-http://getentry.ddbj.nig.ac.jp/getentry/dad/AB000714-1
-* UniProt  の検索  
-http://getentry.ddbj.nig.ac.jp/getentry?database=aa&accession_number=P06213  
-http://getentry.ddbj.nig.ac.jp/getentry/aa/P06213  
-http://getentry.ddbj.nig.ac.jp/getentry?database=uniprot&accession_number=P06213  
-http://getentry.ddbj.nig.ac.jp/getentry/uniprot/P06213
+* TSA( IAAA01000001) の検索<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=IAAA01000001](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=IAAA01000001)<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/IAAA01000001](http://getentry.ddbj.nig.ac.jp/getentry/na/IAAA01000001)
 
-revision（任意）：　指定された revision 時点を検索します。
+* WGS( BAET01000001) の検索<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=BAET01000001](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=BAET01000001)<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/BAET01000001
+](http://getentry.ddbj.nig.ac.jp/getentry/na/BAET01000001
+)
+* MGA(AAAAA0000001) の検索<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=mga&accession_number=AAAAA0000001](http://getentry.ddbj.nig.ac.jp/getentry?database=mga&accession_number=AAAAA0000001)<br>[http://getentry.ddbj.nig.ac.jp/getentry/mga/AAAAA0000001](http://getentry.ddbj.nig.ac.jp/getentry/mga/AAAAA0000001)
+* 特許庁由来アミノ酸配列の検索<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=patent_aa&accession_number=DI500001 ](http://getentry.ddbj.nig.ac.jp/getentry?database=patent_aa&accession_number=DI500001 )<br>[http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/DI500001](http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/DI500001)<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=aa&accession_number=BD500001](http://getentry.ddbj.nig.ac.jp/getentry?database=aa&accession_number=BD500001  
+)<br>[http://getentry.ddbj.nig.ac.jp/getentry/aa/BD500001
+](http://getentry.ddbj.nig.ac.jp/getentry/aa/BD500001
+)
+* DAD の検索<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=dad&accession_number=AB000714-1](http://getentry.ddbj.nig.ac.jp/getentry?database=dad&accession_number=AB000714-1)<br>[http://getentry.ddbj.nig.ac.jp/getentry/dad/AB000714-1](http://getentry.ddbj.nig.ac.jp/getentry/dad/AB000714-1)
+* UniProt  の検索<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=aa&accession_number=P06213](http://getentry.ddbj.nig.ac.jp/getentry?database=aa&accession_number=P06213)<br>[http://getentry.ddbj.nig.ac.jp/getentry/aa/P06213](http://getentry.ddbj.nig.ac.jp/getentry/aa/P06213)<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=uniprot&accession_number=P06213](http://getentry.ddbj.nig.ac.jp/getentry?database=uniprot&accession_number=P06213)<br>[http://getentry.ddbj.nig.ac.jp/getentry/uniprot/P06213](http://getentry.ddbj.nig.ac.jp/getentry/uniprot/P06213)
 
-|  |  | 
+revision<span class="red">（任意）</span>：　指定された revision 時点を検索します。
+
 | ---- | ---- | 
 通常    | yyyy-MM-dd hh:mm:ss        
 リリース時 | yyyy-MM-dd hh:mm:ss release
@@ -272,30 +242,29 @@ revision（任意）：　指定された revision 時点を検索します。
 * AB479935 の 2011-05-31 23:07:30 時点での結果を表示  
 [http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB479935&revision=2011-05-31 23:07:30](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB479935&revision=2011-05-31%2023:07:30)  
 [http://getentry.ddbj.nig.ac.jp/getentry/na/AB479935?revision=2011-05-31 23:07:30](http://getentry.ddbj.nig.ac.jp/getentry/na/AB479935?revision=2011-05-31%2023:07:30)
-* 変更履歴は　gethistory の機能でしらべることが可能です  
-http://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=AB479935  
-http://getentry.ddbj.nig.ac.jp/gethistory/na/AB479935
+* 変更履歴は　gethistory の機能でしらべることが可能です<br>[http://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=AB479935](http://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=AB479935)<br>[http://getentry.ddbj.nig.ac.jp/gethistory/na/AB479935](http://getentry.ddbj.nig.ac.jp/gethistory/na/AB479935)
 
-format（任意）：　結果の出力フォーマットを指定します。
+format<span class="red">（任意）</span>：　結果の出力フォーマットを指定します。
 
 |  デフォルト  |  flatfile  |
 | ---- | ---- |
 |  flatfile  |   [DDBJ フラットファイル形式](/ddbj/flat-file.html)    |
 |  xml  |  [INSDSeq-XML version 1.4 形式](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbj/xml/insdxml/v1.4/)  |
 |  fasta  |  [DNA 系] 全塩基配列 FASTA  |
-|  ^  |  [Protein 系] アミノ酸配列 FASTA  |
+|    |  [Protein 系] アミノ酸配列 FASTA  |
 |  trans  |  [DNA 系] CDS アミノ酸 FASTA   |
 |  cds  |  [DNA 系] CDS 塩基配列 FASTA  |
-|  ^  |  [DAD 限定] 塩基配列 FASTA (for DAD)  |
+|    |  [DAD 限定] 塩基配列 FASTA (for DAD)  |
 |  seqres  |  [Protein 系] PDB アミノ酸 FASTA   |
 
 選択したデータベースでの有効な出力フォーマットの指定は以下の通りです。
 
-|  |  |
+|  DNAデータベース  
 | ---- | ---- |
-|  DNAデータベース                                                                  
 |  DDBJ / EMBL / GenBank / MGA  |  フラットファイル(DDBJ), <br> 全塩基配列FASTA, <br> CDS アミノ酸配列FASTA, <br>CDS 塩基配列FASTA, <br>INSD-XML_v1.4 |
+
 |  Proteinデータベース
+| ---- | ---- |
 |  UniProt  |  default, アミノ酸配列FASTA  |
 |  PDB  |  default, seqres  |
 |  DAD  |  default, アミノ酸配列FASTA, 塩基配列FASTA  |
@@ -303,9 +272,8 @@ format（任意）：　結果の出力フォーマットを指定します。
 
 入力例 <span class="normal">（上段はGET method , 下段は　smart URL ）</span>
 
-* アクセッション番号 AB628096 の検索のflatfile を表示  
-http://getentry.ddbj.nig.ac.jp/getentry?accession_number=AB628096  
-http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096
+* アクセッション番号 AB628096 の検索のflatfile を表示<br>[http://getentry.ddbj.nig.ac.jp/getentry?accession_number=AB628096](http://getentry.ddbj.nig.ac.jp/getentry?accession_number=AB628096)<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096
+)
 
 ```
 LOCUS       AB628096                 390 bp    RNA     linear   VRL 24-FEB-2012
@@ -368,10 +336,7 @@ ORIGIN
 //
 ```
 
-
-* 特許庁由来アミノ酸配列の検索結果を アミノ酸配列FASTA 形式で表示  
-http://getentry.ddbj.nig.ac.jp/getentry?database=patent_aa&accession_number=BD500001&format=fasta  
-http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001?format=fasta
+* 特許庁由来アミノ酸配列の検索結果を アミノ酸配列FASTA 形式で表示<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=patent_aa&accession_number=BD500001&format=fasta](http://getentry.ddbj.nig.ac.jp/getentry?database=patent_aa&accession_number=BD500001&format=fasta)<br>[http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001?format=fasta](http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001?format=fasta)
 
 ```
 >BD500001|JP 2000316586-A/3: Recombinant microorganism expressing small rubber particle-bound protein  (SRPP).  
@@ -383,9 +348,8 @@ YRVSSYLPLLPTEKITKVFGDEAS
 ```
 
 
-* アクセッション番号 AB601234 を塩基配列 FASTA 形式で表示  
-http://getentry.ddbj.nig.ac.jp/getentry?accession_number=AB601234&format=fasta  
-http://getentry.ddbj.nig.ac.jp/getentry/na/AB601234?format=fasta
+* アクセッション番号 AB601234 を塩基配列 FASTA 形式で表示<a name="nfasta"></a><br>[http://getentry.ddbj.nig.ac.jp/getentry?accession_number=AB601234&format=fasta](http://getentry.ddbj.nig.ac.jp/getentry?accession_number=AB601234&format=fasta)<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/AB601234?format=fasta](http://getentry.ddbj.nig.ac.jp/getentry/na/AB601234?format=fasta)
+
 
 ```
 >AB601234|AB601234.1 Ainsliaea faurieana chs gene for chalcone synthase, partial cds, haplotype: 2.  
@@ -399,9 +363,9 @@ tatagaggaggcattagtgcacatatttttgccactgggcataagagactggaactcg
 ```
 
 
-* アクセッション番号 AB601234 を塩基配列 xml 形式で表示  
-http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB601234&format=xml  
-http://getentry.ddbj.nig.ac.jp/getentry/na/AB601234/?format=xml
+* アクセッション番号 AB601234 を塩基配列 xml 形式で表示<a name="xml"></a><br>
+[http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB601234&format=xml](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB601234&format=xml)<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/AB601234/?format=xml](http://getentry.ddbj.nig.ac.jp/getentry/na/AB601234/?format=xml
+)
 
 ```
 
@@ -434,9 +398,9 @@ http://getentry.ddbj.nig.ac.jp/getentry/na/AB601234/?format=xml
                                 -------   以下略    -----
 ```
 
-* アクセッション番号 HE963104 をCDS塩基配列FASTA形式で表示  
-[http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number= HE963104&format=cds](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=%20HE963104&format=cds)  
-http://getentry.ddbj.nig.ac.jp/getentry/na/HE963104/?format=cds
+* アクセッション番号 HE963104 をCDS塩基配列FASTA形式で表示<a name="cdsfasta"></a><br>[http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number= HE963104&format=cds](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=%20HE963104&format=cds)<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/HE963104/?format=cds
+](http://getentry.ddbj.nig.ac.jp/getentry/na/HE963104/?format=cds
+)
 
 ```
 
@@ -458,9 +422,7 @@ ggtggtgttctaggtggtgcaggtggtactgttgcctat
 
 ```
 
-* アクセッション番号 JQ677812 をCDSアミノ酸FASTA  形式で表示  
-http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=JQ677812&format=trans  
-http://getentry.ddbj.nig.ac.jp/getentry/na/JQ677812/?format=trans
+* アクセッション番号 JQ677812 をCDSアミノ酸FASTA  形式で表示<a name="trans"></a><br>[http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=JQ677812&format=trans](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=JQ677812&format=trans)<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/JQ677812/?format=trans](http://getentry.ddbj.nig.ac.jp/getentry/na/JQ677812/?format=trans)
 
 ```
 
@@ -470,9 +432,9 @@ GLLLLVMPHVLLGI
 
 ```
 
-* DAD (AB000714-1) 塩基配列 FASTA形式で表示  
-http://getentry.ddbj.nig.ac.jp/getentry?database=dad&accession_number=AB000714-1&format=cds  
-http://getentry.ddbj.nig.ac.jp/getentry/dad/AB000714-1/?format=cds
+* DAD (AB000714-1) 塩基配列 FASTA形式で表示<a name="dadfasta"></a><br>
+[http://getentry.ddbj.nig.ac.jp/getentry?database=dad&accession_number=AB000714-1&format=cds](http://getentry.ddbj.nig.ac.jp/getentry?database=dad&accession_number=AB000714-1&format=cds)<br>[http://getentry.ddbj.nig.ac.jp/getentry/dad/AB000714-1/?format=cds](http://getentry.ddbj.nig.ac.jp/getentry/dad/AB000714-1/?format=cds
+)
 
 ```
 
@@ -492,9 +454,9 @@ taa
 
 ```
 
-* PDBの検索結果を PDBアミノ酸FASTA 形式 で表示  
-http://getentry.ddbj.nig.ac.jp/getentry?database=pdb&accession_number=0-Z&format=seqres&limit=5  
-http://getentry.ddbj.nig.ac.jp/getentry/pdb/0-Z/?format=seqres&limit=5
+* PDBの検索結果を PDBアミノ酸FASTA 形式 で表示<a name="seqres"></a><br>
+[http://getentry.ddbj.nig.ac.jp/getentry?database=pdb&accession_number=0-Z&format=seqres&limit=5](http://getentry.ddbj.nig.ac.jp/getentry?database=pdb&accession_number=0-Z&format=seqres&limit=5)<br>[http://getentry.ddbj.nig.ac.jp/getentry/pdb/0-Z/?format=seqres&limit=5
+](http://getentry.ddbj.nig.ac.jp/getentry/pdb/0-Z/?format=seqres&limit=5)
 
 ```
 
@@ -511,9 +473,8 @@ CGCGAATTCGCG
 
 ```
 
-filetype（任意）：　出力のファイルタイプを指定します。
+filetype<span class="red">（任意）</span>：　出力のファイルタイプを指定します。
 
-|  |  |
 | ---- | ---- |
 デフォルト | text                                 
 html  | HTMLファイル（ACCESSION, ORGANISM等 にリンクあり）
@@ -522,7 +483,6 @@ gz    | gz圧縮ファイル
 
 gz圧縮ファイルのファイル名はformatの指定値によって以下のようになります。
 
-|  |  |
 | ---- | ---- |
 [DNA系]flatfile    |  flatfile.txt.gz
 [DNA系]xml          | insd.xml.gz    
@@ -535,19 +495,14 @@ gz圧縮ファイルのファイル名はformatの指定値によって以下の
 
 入力例 （上段はGET method , 下段は　smart URL ）
 
-* AK377185-AK378194（1000エントリ）を gzファイルでダウンロード  
-http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AK377185-AK378194&filetype=gz&limit=1000  
-http://getentry.ddbj.nig.ac.jp/getentry/na/AK377185-AK378194?filetype=gz&limit=1000
+* AK377185-AK378194（1000エントリ）を gzファイルでダウンロード<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AK377185-AK378194&filetype=gz&limit=1000](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AK377185-AK378194&filetype=gz&limit=1000)<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/AK377185-AK378194?filetype=gz&limit=1000](http://getentry.ddbj.nig.ac.jp/getentry/na/AK377185-AK378194?filetype=gz&limit=1000)
 
 次ような画面が表示されます。
 
-![#](/images/help/getentry-gz.gif "getentry-gz")
+![getentry-gz]({{ site.baseurl }}/assets/images/help/getentry-gz.gif)
 
-
-
-* アクセッション番号 FW383979を html 表示  
-http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FW383979&filetype=html  
-http://getentry.ddbj.nig.ac.jp/getentry/na/AB601234/?filetype=html
+* アクセッション番号 FW383979を html 表示<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FW383979&filetype=html](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FW383979&filetype=html)<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/AB601234/?filetype=html](http://getentry.ddbj.nig.ac.jp/getentry/na/AB601234/?filetype=html
+)
 
 ```
 LOCUS       FW383979                2675 bp    DNA     linear   PAT 14-OCT-2010
@@ -573,22 +528,19 @@ COMMENT     OS   Homo sapiens
         PD   28-Sep-2006
 ```
 
-show_suppressed（任意）：　suppressed　データを表示します。
+show_suppressed<span class="red">（任意）</span>：　suppressed　データを表示します。
 
-|  |  |
 | ---- | ---- |
 true  | suppressed データを表示   
 false | suppressed データを表示しない
 
 入力例 （上段はGET method , 下段は　smart URL ）
 
-* アクセッション番号 HE602933  (suppressed)の検索  
-http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=HE602933&show_suppressed=true  
-http://getentry.ddbj.nig.ac.jp/getentry/na/HE602933?show_suppressed=true
+* アクセッション番号 HE602933  (suppressed)の検索<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=HE602933&show_suppressed=true](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=HE602933&show_suppressed=true)<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/HE602933?show_suppressed=true](http://getentry.ddbj.nig.ac.jp/getentry/na/HE602933?show_suppressed=true)
 
-limit（任意）：　データの取得上限を設定します。
 
-|  |  |
+limit<span class="red">（任意）</span>：　データの取得上限を設定します。
+
 | ---- | ---- |
 デフォルト    | 10件   
 任意の件数を指定 | 指定した件数
@@ -602,22 +554,20 @@ limit（任意）：　データの取得上限を設定します。
 [http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FY736910 - FY762881&limit=0](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FY736910%20-%20FY762881&limit=0)  
 [http://getentry.ddbj.nig.ac.jp/getentry/na/FY736910 - FY762881?limit=0](http://getentry.ddbj.nig.ac.jp/getentry/na/FY736910%20-%20FY762881?limit=0)
 
-trace（任意）：　Secondary Accession が指定された場合に，Primary への転送を設定します。
+trace<span class="red">（任意）</span>：　Secondary Accession が指定された場合に，Primary への転送を設定します。
 
-|  |  |
 | ---- | ---- |
 true  | primary データを表示   
 false | primary データを表示しない
 
 入力例 （上段はGET method , 下段は　smart URL ）
 
-* アクセッション番号 AB233943(primary)-AF530906(secondary) の検索でprimary を表示  
-http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AF530906&format=flatfile&trace=true  
-http://getentry.ddbj.nig.ac.jp/getentry/na/AF530906/?format=flatfile&trace=true
+* アクセッション番号 AB233943(primary)-AF530906(secondary) の検索でprimary を表示<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AF530906&format=flatfile&trace=true](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AF530906&format=flatfile&trace=true )<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/AF530906/?format=flatfile&trace=true](http://getentry.ddbj.nig.ac.jp/getentry/na/AF530906/?format=flatfile&trace=true)
+
 
 ### gethistory で指定可能なパラメータ
 
-accession 番号（必須）：検索対象のAccession番号を指定します。指定方法は getentry と同じです。
+accession 番号<span class="red">（必須）</span>：検索対象のAccession番号を指定します。指定方法は getentry と同じです。
 
 特許庁由来アミノ酸配列の履歴はありません
 
@@ -638,9 +588,8 @@ AB628096
 1 2011-05-11 23:09:49         2011-05-11 23:09:49         live
 ```
 
-database（任意）： 検索対象のデータベースを指定します。
+database<span class="red">（任意）</span>： 検索対象のデータベースを指定します。
 
-|  |  |
 | ---- | ---- |
 デフォルト | na
 DNA 系 | na
@@ -649,9 +598,8 @@ DNA 系 | na
 
 入力例 （上段はGET method , 下段は　smart URL ）
 
-* WGS( BAET01000001) の履歴検索  
-http://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=BAET01000001  
-http://getentry.ddbj.nig.ac.jp/gethistory/na/BAET01000001
+* WGS( BAET01000001) の履歴検索<br>[http://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=BAET01000001](http://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=BAET01000001)<br>[http://getentry.ddbj.nig.ac.jp/gethistory/na/BAET01000001](http://getentry.ddbj.nig.ac.jp/gethistory/na/BAET01000001)
+
 
 ```
 BAET01000001   BAET01000001 
@@ -664,9 +612,8 @@ BAET01000001   BAET01000001
 1 2012-02-21 07:03:15 2012-02-21 07:03:15 live   
 ```
 
-filetype（任意）：　出力のファイルタイプを指定します。
+filetype<span class="red">（任意）</span>：　出力のファイルタイプを指定します。
 
-|  |  |
 | ---- | ---- |
 デフォルト | text                              
 html  | HTMLファイル（revision 時点のフラットファイルにリンク）
@@ -677,10 +624,6 @@ text  | テキストファイル
 * アクセッション番号 AB628096 の履歴検索の結果を html で表示  
 http://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=AB628096&filetype=html  
 [http://getentry.ddbj.nig.ac.jp/gethistory/na/AB628096/?filetype=html ](http://getentry.ddbj.nig.ac.jp/gethistory/na/AB628096/?filetype=html)
-
-```
-
-```
 
 accession                                                                                                                                                                          | version                     | revision                                                                                                                                                                           | change                      | state
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | -----
