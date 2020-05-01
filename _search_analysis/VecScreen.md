@@ -14,9 +14,9 @@ VecScreenは塩基配列中に含まれるベクター，リンカー，アダ�
 
 Internet Explorer 8以上，および最新版のFirefox，Chrome，Safari で動作確認を行っています。旧バージョンのブラウザでは動作に支障が生じる可能性がございますのでご注意ください。
 
-## 使い方
+## 使い方 
 
-<div class="imagemap" style="position:relative; height:358px; width:800px; background:url(/images/help/VecScreen-Usage.png) 0 0 no-repeat;">    
+![使い方]({{ site.baseurl }}/assets/images/help/VecScreen-Usage.png)
 
 ### Query
 
@@ -81,20 +81,20 @@ UniVec_Coreは，バクテリア，ファージ，酵母，合成配列などか
 以下の4つが選択可能です。デフォルトは "HTML format, with alignment" がセットされています。
 
 HTML format, with alignment
-:   結果がHTML形式で得られ，query配列上のベクターコンタミ領域を示す図，結果のサマリ，アラインメント結果が表示されます([例](/images/help/VecScreen-HTMLwAlign.png))。
+:   結果がHTML形式で得られ，query配列上のベクターコンタミ領域を示す図，結果のサマリ，アラインメント結果が表示されます([例]({{ site.baseurl }}/assets/images/help/VecScreen-HTMLwAlign.png))。
 
 HTML format, no alignment
-:   結果がHTML形式で得られ，query配列上のベクターコンタミ領域を示す図，結果のサマリが表示されます([例](/images/help/VecScreen-HTMLwoAlign.png))。
+:   結果がHTML形式で得られ，query配列上のベクターコンタミ領域を示す図，結果のサマリが表示されます([例]({{ site.baseurl }}/assets/images/help/VecScreen-HTMLwoAlign.png))。
 
 Text list, with alignment
-:   結果がテキスト形式で得られ，結果のサマリ，アラインメント結果が表示されます([例](/images/help/VecScreen-TEXTwAlign.png))。
+:   結果がテキスト形式で得られ，結果のサマリ，アラインメント結果が表示されます([例]({{ site.baseurl }}/assets/images/help/VecScreen-TEXTwAlign.png))。
 
 Text list, no alignment
-:   結果がテキスト形式で得られ，結果のサマリのみが表示されます([例](/images/help/VecScreen-TEXTwoAlign.png))。
+:   結果がテキスト形式で得られ，結果のサマリのみが表示されます([例]({{ site.baseurl }}/assets/images/help/VecScreen-TEXTwoAlign.png))。
 
 ### パラメーター設定はない
 
-本システムには相同性検索のためのパラメーター設定はありません。プログラム本体はNCBIから取得可能なvecscreenプログラムを実行しています。vecscreenについては，[//www.ncbi.nlm.nih.gov/tools/vecscreen/about/，//www.ncbi.nlm.nih.gov/tools/vecscreen/univec/](//www.ncbi.nlm.nih.gov/tools/vecscreen/about/，//www.ncbi.nlm.nih.gov/tools/vecscreen/univec/)をご覧ください。
+本システムには相同性検索のためのパラメーター設定はありません。プログラム本体はNCBIから取得可能なvecscreenプログラムを実行しています。vecscreenについては，[//www.ncbi.nlm.nih.gov/tools/vecscreen/about](//www.ncbi.nlm.nih.gov/tools/vecscreen/about/),[//www.ncbi.nlm.nih.gov/tools/vecscreen/univec/](//www.ncbi.nlm.nih.gov/tools/vecscreen/univec/)をご覧ください。
 
 ### VecScreenの実行
 
@@ -130,13 +130,13 @@ Virus genomes, Yeast and bacterial biosynthetic genes, Transcriptional signals f
 
 検索実行後の画面には Request ID が表示されます。同じ番号が検索結果の最上部にも表示されます。このRequest IDはResult ViewerもしくはDDBJへの問い合わせの際に必要です。この番号を控えておけばブラウザを閉じてしまっても期限内であればRequest ID から結果を閲覧することができます(右図)。
 
-[VecScreen-RequestID](/images/help/VecScreen-RequestID.png)
+![VecScreen-RequestID]({{ site.baseurl }}/assets/images/help/VecScreen-RequestID.png)
 
 ## Result viewer
 
 Request ID(上述)から検索結果を取得することができます。画面左側のメニューから"Result viewer"をクリックしてください。Result viewer画面に切り替わるので,Request IDを入力後"display"をクリックしてください(右図)。
 
-[VecScreen-ResultViewer](/images/help/VecScreen-ResultViewer.png)
+![VecScreen-ResultViewer]({{ site.baseurl }}/assets/images/help/VecScreen-ResultViewer.png)
 
 ## 検索結果を閲覧可能な期間
 

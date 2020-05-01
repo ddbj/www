@@ -6,7 +6,7 @@ service_link: http://ddbj.nig.ac.jp/tx_search/?lang=ja
 category: search_analysis
 ---
 
-TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/) の検索システムです。国際塩基配列データベース([INSD](/insdc.html#insd)) にデータを登録する際には、NCBI Taxonomy に基づいた生物名の表記を使用する必要があります。
+TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/) の検索システムです。国際塩基配列データベース([INSD]({{site.baseurl}}/aboutus/insdc.html)) にデータを登録する際には、NCBI Taxonomy に基づいた生物名の表記を使用する必要があります。
 
 ## 検索（ウェブ検索フォームから）
 
@@ -22,7 +22,6 @@ TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxon
 * 1文字のワイルドカード"?"と複数文字のワイルドカード"*"が使用できます。
 * 論理演算子(AND, OR, NOT)は以下のように入力します。
 
-|    |    |
 | ---- | ---- |
 |  AND  |  スペース　または AND または &&   |
 |  OR  |  OR または  |
@@ -40,7 +39,6 @@ TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxon
 
 デフォルトでは以下のフィールドを検索します。
 
-|    |    |    |
 | ---- | ---- | ---- |
 |  tax_id  |  anamorph  |  in_part  |
 |  scientific_name  |  teleomorph  |  includes  |
@@ -48,17 +46,18 @@ TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxon
 |  synonym  |  blast_name  |  misspelling  |
 |  acronym  |  equivalent_name  |  type_material  |
 
-特定のフィールドに限定して検索する場合には、フィールド名を指定します。
+特定のフィールドに限定して検索する場合には、[フィールド名を指定](#f-shitei)します。
 
-* 結果が1000件を超える場合は最初（scientific_name で昇順）の 1000件分のみ結果を返します。この表示件数の上限を変更することはできません。<br> 結果を1000件以下にするためには、絞り込み検索を行ってください。
+* 結果が1000件を超える場合は最初（scientific_name で昇順）の 1000件分のみ結果を返します。この表示件数の上限を変更することはできません。<br> 結果を1000件以下にするためには、[絞り込み検索](#refine)を行ってください。
 
-### 絞り込み検索
+### 絞り込み検索 <a name="refine"></a>
 
 複数フィールドの組み合わせや、フィールド名を指定して絞り込み検索を行います。 
 
 * 結果が1000件を超える場合は最初（scientific_name で昇順）の 1000件分のみ結果を返します。この表示件数の上限を変更することはできませんので、絞り込み検索を行って1000件以下になるようにしてください。
 * テキスト入力欄に solr の standard query parser parameters の q パラメータを入力することで、より詳細な検索ができます
-* フィールドの指定方法  
+* フィールドの指定方法<a name="f-shitei"></a>  
+
 <span class="red">フィールド名：値</span>（例　tax_id:9606)
 * 複数フィールドの指定方法  
 
@@ -101,8 +100,8 @@ type_material_ex
 |  scientific_name:(Homo sapiens)  |  scientific_name に "Homo”と "sapiens" を含むものを検索  |
 |  scientific_name:Homo sapiens  |  scientific_name に"Homo" を含み、デフォルト検索フィールドに "sapiens" を含むものを検索  |
 |  scientific_name_ex:"Homo sapiens"  |  scientific_name が "Homo sapiens" であるものを検索（完全一致）<br> （注意）名前にスペースが含まれる場合、前後に " （ダブルクォート） をつけることが必須です。 |
-|  50000  |  デフォルト検索フィールドに "50000" を含むものを検索 ("Crinipellis sp. GDGM 50000" のように　名前に"50000" を含むものと、tax_id が "50000" の "Sarracenia alabamensis" がヒットします。どちらか一方のみを検索したい場合には、フィールド名を指定します。）  |
-|  tax_id:(741158 OR 63221)<br>または<br>tax_id:(741158 \|\| 63221) |tax_id が 741158 または 63221　を検索|  tax_id が 741158 または 63221　を検索  |
+|  50000  |  デフォルト検索フィールドに "50000" を含むものを検索 ("Crinipellis sp. GDGM 50000" のように　名前に"50000" を含むものと、tax_id が "50000" の "Sarracenia alabamensis" がヒットします。どちらか一方のみを検索したい場合には、[フィールド名を指定](#f-shitei)します。）  |
+|  tax_id:(741158 OR 63221)<br>または<br>tax_id:(741158 \|\| 63221) |tax_id が 741158 または 63221　を検索|  
 |  scientific_name:(Acetobacter c*)	 |  scientific_name に "Acetobacter" と "C で始まる0文字以上の任意の文字列" を含むものを検索  |
 |  scientific_name:(Acetobacter sp*)  |  scientific_name に "Acetobacter" と "spで始まる0文字以上の任意の文字列" を含むものを検索  |
 |  tax_id:960?  |  tax_id が　960? (? は任意の１文字）を検索  |
