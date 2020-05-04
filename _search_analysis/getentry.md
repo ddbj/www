@@ -181,12 +181,14 @@ accession 番号<span class="red">（必須）</span><span class="normal">：　
 |  複数 Accession 番号  | ・ ","区切りで複数の Accession 番号を指定できます。 <br> ・","区切りで複数指定された場合，指定の順で出力されます。 |
 |  範囲指定  |  ・範囲指定の両端の Accession 番号は前方のみの不完全でも構いません。<br> ・範囲指定も "," 区切りで複数指定できます。<br> ・バージョン番号を指定しても無視されます。|
 
-
+{::options parse_block_html="true" /}
+<div class="attention">
 対象の Accession 番号が存在しない，または表示できない場合，該当の Accession 番号に対する結果は何も表示されず，limit で上限が制限されているときの数にもカウントされません。
 
 デフォルトでの表示件数が10件に設定されているため，それ以上の件数を指定する場合には "limit" で設定を変更して下さい。
 
 件数が多い場合，表示に時間がかかる場合があります。また，ブラウザの性能により，全件表示できない場合があります。
+</div>
 
 入力例
 
@@ -211,15 +213,15 @@ Protein系  | aa                                  | DAD, Patent, UniProt, PDB   
 || dad       | [DAD]({{site.baseurl}}/statistics/relnote.html)          | DDBJ からアミノ酸翻訳配列データを抽出して作成したデータベース                                           
 || patent_aa | Patent                              | [JPO](https://www.jpo.go.jp/index.html)，[KIPO](//www.kipo.go.kr) に由来するアミノ酸配列
 
+{::options parse_block_html="true" /}
+<div class="attention">
 データベース指定を省略すると、naを指定したものとみなして処理します。
 
 DDBJ/EMBL/GenBank を選択すると、以下が検索対象となります。
 
 * DDBJ 定期リリース
 * DDBJ 定期リリース後の新着データ
-* アルファベット４文字＋８桁の数字で構成されるアクセッション番号のデータ  
-（[WGS(Whole Genome Shotgun)](/ddbj/wgs.html), [TSA(Transcriptome Shotgun Assembly)](/ddbj/tsa.html) の一部）
-
+* アルファベット４文字＋８桁の数字で構成されるアクセッション番号のデータ <br>（[WGS(Whole Genome Shotgun)](/ddbj/wgs.html), [TSA(Transcriptome Shotgun Assembly)](/ddbj/tsa.html) の一部）
 * [TPA(Third Party Data)](/ddbj/tpa.html)
 
 DDBJ リリース には、 TPA、 アルファベット４文字＋８桁の数字で構成されるアクセッション番号を持つデータ（WGS，TSA の一部） は含まれておりません。
@@ -227,6 +229,7 @@ DDBJ リリース には、 TPA、 アルファベット４文字＋８桁の数
 MGA データの新規登録は受け付けておりません。
 
 getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報]({{site.baseurl}}/statistics/relinfo.html) でご確認ください。
+</div>
 
 入力例 <span class="normal">（上段はGET method , 下段は　smart URL ）</span>
 
@@ -249,7 +252,10 @@ revision<span class="red">（任意）</span>：　指定された revision 時�
 通常    | yyyy-MM-dd hh:mm:ss        
 リリース時 | yyyy-MM-dd hh:mm:ss release
 
+{::options parse_block_html="true" /}
+<div class="attention">
 バージョン番号と revision が同時に指定されているとき，revision が優先されます。
+</div>
 
 入力例 （上段はGET method , 下段は　smart URL ）
 
@@ -560,7 +566,10 @@ limit<span class="red">（任意）</span>：　データの取得上限を設�
 任意の件数を指定 | 指定した件数
 0を指定     | 無制限   
 
+{::options parse_block_html="true" /}
+<div class="attention">
 件数が多い場合，表示に時間がかかる場合があります。また，ブラウザの性能により，全件表示できない場合があります。
+</div>
 
 入力例 （上段はGET method , 下段は　smart URL ）
 
@@ -583,7 +592,10 @@ false | primary データを表示しない
 
 accession 番号<span class="red">（必須）</span>：検索対象のAccession番号を指定します。指定方法は getentry と同じです。
 
+{::options parse_block_html="true" /}
+<div class="attention">
 特許庁由来アミノ酸配列の履歴はありません
+</div>
 
 入力例 （上段はGET method , 下段は　smart URL ）
 
@@ -608,7 +620,10 @@ database<span class="red">（任意）</span>： 検索対象のデータベー�
 デフォルト | na
 DNA 系 | na
 
+{::options parse_block_html="true" /}
+<div class="attention">
 指定したデータベースが履歴管理に対応していない場合は，空の結果を返します。
+</div>
 
 入力例 （上段はGET method , 下段は　smart URL ）
 
@@ -688,5 +703,7 @@ http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001
 [AB000001](http://getentry.ddbj.nig.ac.jp/getentry/na/AB000001)  
 [BD500001](http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001)
 
+{::options parse_block_html="true" /}
+<div class="attention">
 DRA は getentry の検索対象外のため、リンク設定方法は上記の方法とは異なります。[DRA のホームページ](/dra/index.html)をご参照下さい。
-
+</div>

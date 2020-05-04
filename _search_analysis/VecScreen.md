@@ -48,6 +48,8 @@ tttgcccacggacacaactgccatatcgccttacgggagatcatcgaaactctgaacagc
 ctcacagagcagaagactctgtgcaccaagttgaccataacggac
 ```
 
+{::options parse_block_html="true" /}
+<div class="attention">
 配列サイズが巨大な場合，配列数が多い場合など，以下のような理由で結果を正常に取得出来ない場合があります。
 
 * 結果が巨大になりブラウザで表示出来ない
@@ -55,6 +57,7 @@ ctcacagagcagaagactctgtgcaccaagttgaccataacggac
 * 検索時間が長くなり過ぎてタイムアウトする
 
 そのような場合は，配列数を少なくしたり配列を短くするなどの処理を行ってから再実行してください。
+</div>
 
 ### WWW or Email
 
@@ -124,7 +127,10 @@ VecScreenはベクターコンタミをすべて検出できる完璧なツー�
 UniVecデータベースの構成上，以下の配列をクエリーに用いた場合もベクターコンタミとして検出されることになりますのでご承知おきください。
 詳しくは，[//www.ncbi.nlm.nih.gov/tools/vecscreen/interpretation/#Exceptions](//www.ncbi.nlm.nih.gov/tools/vecscreen/interpretation/#Exceptions)をご覧ください。
 
+{::options parse_block_html="true" /}
+<div class="attention">
 Virus genomes, Yeast and bacterial biosynthetic genes, Transcriptional signals from bacteria, yeast, a few mammals, and other model organisms, Bacterial and yeast repressor and activator genes, Bacterial genes mediating antibiotic resistance, Bacterial plasmid genes and replication origins, Yeast replication elements, Bacteriophage genomes, Transposons and Insertion Sequences, Other specialized elements from a variety of sources (including a few from humans)
+</div>
 
 ## Request IDについて
 
