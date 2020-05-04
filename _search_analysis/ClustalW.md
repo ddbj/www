@@ -184,6 +184,8 @@ Order
 Distance
 :   系統樹計算時に使用する&nbsp;correction&nbsp;を指定します。デフォルトは &nbsp;Kimura&nbsp;です。PROTEINの場合は&nbsp;Kimura&nbsp;と&nbsp;p-distance&nbsp;のみ指定可能です。<span class="red">＊</span>のオプションは&nbsp;DDBJ&nbsp;オリジナルオプションです。
 
+*{: .red}
+
 [系統樹の作成について](#tree)
 
 |  塩基置換推定法  |  塩基置換モデル	  |  説明  |
