@@ -1,0 +1,9 @@
+database:
+  en: Database
+  ja: データベース
+search:
+  en: Search
+  ja: 検索
+analysis:
+  en: Analysis
+  ja: 解析

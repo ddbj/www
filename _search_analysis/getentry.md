@@ -1,9 +1,23 @@
 ---
 layout: indexed_content
 title: getentry
+formal_name: getentry
+service_link:
+  en: http://getentry.ddbj.nig.ac.jp/top-e.html
+  ja: http://getentry.ddbj.nig.ac.jp/top-j.html
 pathname: getentry
-service_link: http://getentry.ddbj.nig.ac.jp/top-j.html
+wabi: getentry#ge_program
 category: search_analysis
+description:
+  en: DDBJ annotated/assembled data retrieval by accession numbers
+  ja: アクセッション番号などによる DDBJ annotated/assembled 塩基配列エントリの検索
+target_data:
+  en: Annotated and assembled sequences
+  ja: アノテーション/アセンブルされた塩基配列
+affiliation: DDBJ
+tags:
+  - search
+flag: true
 ---
 
 ## getentryの機能について

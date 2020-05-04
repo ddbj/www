@@ -3,9 +3,36 @@ layout: children
 title: search_analysis
 title-ja: 検索・解析
 category: search_analysis
+lang: ja
 ---
+<div id="NavigationAndMainView">
+  <div class="inner">
+    <nav class="internal-link">
+      <h2>タグ</h2>
+      {{ site.data.service_tag }}
+    </nav>
+    <main id="MainContentView">
+      <ul id="ServicePanels">
+        {% for service in site.search_analysis %}
+          {% if service.flag %}
+          <li class="panel">
+            <h2 class="title">{{ service.title }}</h2>
+            <ul class="tags">
+              {% for tag in service.tags %}
+              <li class="tag">{{ site.data.service_tag[tag][page.lang] }}</li>
+              {% endfor %}
+            </ul>
+            <p class="description">{{ service.description[page.lang] }}</p>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </main>
+  </div>
+</div>
+
 <ul>
-{% for service in site.search_analysis%}
+{% for service in site.search_analysis %}
   {% unless service.title == "search_analysis" %}
     {% if service.service_link != null %}
       <li>

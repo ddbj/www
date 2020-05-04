@@ -341,8 +341,10 @@ input, textarea, select, button {
 .md-content {
   font-size: 1.4rem;
   line-height: 2; }
-  .md-content p, .md-content table, .md-content ol, .md-content ul, .md-content dl {
+  .md-content p, .md-content table, .md-content ol, .md-content ul, .md-content dl, .md-content .highlighter-rouge {
     margin-bottom: 1rem; }
+  .md-content .red {
+    color: red; }
   .md-content h2 {
     font-size: 1.8rem;
     line-height: 1.2;
@@ -372,24 +374,26 @@ input, textarea, select, button {
     margin-top: 3.5rem; }
   .md-content table {
     width: 100%;
-    border-top: 1px solid #1C1B19;
-    border-bottom: 1px solid #1C1B19;
-    line-height: 1.2; }
+    border: 1px solid #736357;
+    line-height: 1.2;
+    font-size: 1.2rem; }
     .md-content table tr th, .md-content table tr td {
-      padding: .6rem .6rem .6rem .0rem; }
+      padding: .6rem .6rem .6rem .6rem; }
       .md-content table tr th:last-child, .md-content table tr td:last-child {
         padding-right: 0; }
     .md-content table tr th {
       text-align: left;
       font-weight: bold;
-      border-bottom: 1px solid #1C1B19;
+      border-bottom: 1px solid #736357;
       white-space: nowrap; }
     .md-content table tr td {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
     .md-content table tr:last-child {
       border-bottom: none; }
       .md-content table tr:last-child td {
-        border-bottom: 1px solid #1C1B19; }
+        border-bottom: 1px solid #736357; }
+    .md-content table + table {
+      margin-top: -1.1rem; }
   .md-content .highlighter-rouge {
     background-color: #1C1B19;
     color: white;
@@ -398,6 +402,9 @@ input, textarea, select, button {
     font-size: 1.2rem;
     line-height: 1.6;
     font-family: 'courier', monospace; }
+  .md-content .attention {
+    background-color: lightgray;
+    padding: 1rem; }
 
 .multi-column-view {
   border-top: 1px solid #1C1B19; }
@@ -673,7 +680,9 @@ input, textarea, select, button {
 #MainContentView {
   width: 80%; }
   #MainContentView > .md-content {
-    padding: 0 4rem 2.5rem 2.5rem; }
+    padding: 2.5rem 4rem 2.5rem 2.5rem; }
+    #MainContentView > .md-content > *:first-child {
+      margin-top: 0; }
 
 #NavigationAndMainView {
   border-bottom: 0.3rem solid #6D5C3F;
@@ -695,6 +704,44 @@ input, textarea, select, button {
 
 .multi-column-view {
   padding: 25px 40px 25px 35px; }
+
+#ServicePanels {
+  padding: 3rem;
+  display: flex;
+  list-style: none; }
+  #ServicePanels .panel {
+    padding: 1.6rem;
+    width: 30%;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3); }
+    #ServicePanels .panel > .title {
+      font-size: 2rem;
+      line-height: 1.2;
+      position: relative;
+      margin-bottom: .6rem; }
+      #ServicePanels .panel > .title:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: .8rem;
+        height: 2.4rem;
+        top: 0;
+        left: -1.6rem;
+        background-color: #ff9905; }
+    #ServicePanels .panel > .tags {
+      list-style: none;
+      margin-bottom: .8rem; }
+      #ServicePanels .panel > .tags > .tag {
+        font-size: 1rem;
+        font-weight: bold;
+        line-height: 1.6;
+        background-color: #6D5C3F;
+        color: white;
+        display: inline-block;
+        border-radius: .8rem;
+        padding: 0 .8rem; }
+    #ServicePanels .panel > .description {
+      font-size: 1.4rem;
+      line-height: 1.4; }
 
 #TopBody {
   background-color: rgba(253, 253, 253, 0.8); }
