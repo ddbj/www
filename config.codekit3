@@ -1985,6 +1985,19 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/_sass/object/component/_arrowed-link.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_sass/object/assets/css/_arrowed-link.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
 	"/_sass/object/component/_category-tab.sass": {
 		"aP": 0,
 		"bl": 0,

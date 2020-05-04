@@ -16,13 +16,24 @@ lang: ja
         {% for service in site.search_analysis %}
           {% if service.flag %}
           <li class="panel">
-            <h2 class="title">{{ service.title }}</h2>
+            <h2 class="title">
+              <a href="{{ service.service_link[page.lang] }}">{{ service.title }}</a>
+              
+            </h2>
             <ul class="tags">
               {% for tag in service.tags %}
               <li class="tag">{{ site.data.service_tag[tag][page.lang] }}</li>
               {% endfor %}
             </ul>
             <p class="description">{{ service.description[page.lang] }}</p>
+            <nav class="links">
+              <ul>
+                <li><a class="arrowed-link" href="{{ service.pathname }}">HELP</a></li>
+                {% if service.wabi %}
+                <li><a class="arrowed-link" href="{{ service.wabi }}">Web API</a></li>
+                {% endif %}
+              </ul>
+            </nav>
           </li>
           {% endif %}
         {% endfor %}

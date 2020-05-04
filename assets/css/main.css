@@ -129,6 +129,17 @@ input, textarea, select, button {
     width: 100%;
     min-width: auto; } }
 
+.arrowed-link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #6D5C3F; }
+  .arrowed-link:after {
+    content: "";
+    display: inline-block;
+    border-top: .57rem solid transparent;
+    border-right: 0.57rem solid #FF7300;
+    margin-left: .36rem; }
+
 .category-tab {
   text-align: center;
   font-size: 1.4rem;
@@ -300,7 +311,7 @@ input, textarea, select, button {
     left: 1.8rem; }
 
 .search-box[data-color="white"] > select {
-  background-color: #F5F4F2;
+  background-color: #FFF3DB;
   border: solid 1px #d2cac4; }
 
 .search-box[data-color="white"] > input[type="text"] {
@@ -343,8 +354,6 @@ input, textarea, select, button {
   line-height: 2; }
   .md-content p, .md-content table, .md-content ol, .md-content ul, .md-content dl, .md-content .highlighter-rouge {
     margin-bottom: 1rem; }
-  .md-content .red {
-    color: red; }
   .md-content h2 {
     font-size: 1.8rem;
     line-height: 1.2;
@@ -403,8 +412,9 @@ input, textarea, select, button {
     line-height: 1.6;
     font-family: 'courier', monospace; }
   .md-content .attention {
-    background-color: lightgray;
-    padding: 1rem; }
+    background-color: #FFF3DB;
+    padding: 2rem;
+    border-left: 6px solid #FEC091; }
 
 .multi-column-view {
   border-top: 1px solid #1C1B19; }
@@ -742,6 +752,14 @@ input, textarea, select, button {
     #ServicePanels .panel > .description {
       font-size: 1.4rem;
       line-height: 1.4; }
+    #ServicePanels .panel > .links {
+      padding-top: .8rem; }
+      #ServicePanels .panel > .links > ul {
+        text-align: right; }
+        #ServicePanels .panel > .links > ul > li {
+          display: inline-block; }
+          #ServicePanels .panel > .links > ul > li + li {
+            margin-left: 1rem; }
 
 #TopBody {
   background-color: rgba(253, 253, 253, 0.8); }
@@ -863,23 +881,14 @@ input, textarea, select, button {
           color: #1C1B19; }
       #TopNews > .container > .list > .item > .news.priority > a {
         background-color: rgba(255, 229, 0, 0.2); }
-  #TopNews > .container > .more {
+  #TopNews > .container > .arrowed-link {
     padding: 0 1.6rem;
-    display: block;
-    text-align: right;
     font-size: 1.4rem;
     line-height: 4rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: #FF7300; }
-    #TopNews > .container > .more:hover {
+    display: block;
+    text-align: right; }
+    #TopNews > .container > .arrowed-link:hover {
       background-color: rgba(255, 191, 0, 0.15); }
-    #TopNews > .container > .more:after {
-      content: "";
-      display: inline-block;
-      border-top: .8rem solid transparent;
-      border-right: 0.8rem solid #FF7300;
-      margin-left: .5rem; }
 
 @media screen and (max-width: 480px) {
   #TopNews {
@@ -904,7 +913,7 @@ input, textarea, select, button {
       display: block;
       width: 25rem;
       height: 20rem;
-      border: solid 1px #F5F4F2;
+      border: solid 1px #FFF3DB;
       transition: border-color 0.2s; }
       #TopServiceGroups > .group > a:hover {
         border-color: #ff9905; }
