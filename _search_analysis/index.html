@@ -14,7 +14,6 @@ lang: ja
     <main id="MainContentView">
       <ul id="ServicePanels">
         {% for service in site.search_analysis %}
-          {% if service.flag %}
           <li class="panel">
             <h2 class="title">
               <a href="{{ service.service_link[page.lang] }}">{{ service.title }}</a>
@@ -35,28 +34,8 @@ lang: ja
               </ul>
             </nav>
           </li>
-          {% endif %}
         {% endfor %}
       </ul>
     </main>
   </div>
 </div>
-
-<ul>
-{% for service in site.search_analysis %}
-  {% unless service.title == "search_analysis" %}
-    {% if service.service_link != null %}
-      <li>
-        <a href="{{ service.service_link }}">{{ service.title }}</a>
-        <a href="{{ service.pathname }}">help</a>
-        <br>
-      </li>
-    {% else %}
-      <li>
-        <a href="{{ service.pathname }}">{{ service.title }}</a>
-        <br>
-      </li>
-    {% endif %}
-  {% endunless %}
-{% endfor %}
-</ul>

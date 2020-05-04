@@ -311,7 +311,7 @@ input, textarea, select, button {
     left: 1.8rem; }
 
 .search-box[data-color="white"] > select {
-  background-color: #FFF3DB;
+  background-color: #F5F4F2;
   border: solid 1px #d2cac4; }
 
 .search-box[data-color="white"] > input[type="text"] {
@@ -412,7 +412,7 @@ input, textarea, select, button {
     line-height: 1.6;
     font-family: 'courier', monospace; }
   .md-content .attention {
-    background-color: #FFF3DB;
+    background-color: #F5F4F2;
     padding: 2rem;
     border-left: 6px solid #FEC091; }
 
@@ -716,13 +716,17 @@ input, textarea, select, button {
   padding: 25px 40px 25px 35px; }
 
 #ServicePanels {
+  margin-right: 1rem;
   padding: 3rem;
   display: flex;
+  flex-wrap: wrap;
   list-style: none; }
   #ServicePanels .panel {
-    padding: 1.6rem;
-    width: 30%;
-    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3); }
+    padding: 1.6rem 1.6rem 3.2rem;
+    width: calc( 100% / 3 - 2rem);
+    box-shadow: 0 0.15rem 0.4rem rgba(0, 0, 0, 0.3);
+    margin: 0 2rem 2rem 0;
+    position: relative; }
     #ServicePanels .panel > .title {
       font-size: 2rem;
       line-height: 1.2;
@@ -739,7 +743,7 @@ input, textarea, select, button {
         background-color: #ff9905; }
     #ServicePanels .panel > .tags {
       list-style: none;
-      margin-bottom: .8rem; }
+      margin: 0 -.2rem .8rem; }
       #ServicePanels .panel > .tags > .tag {
         font-size: 1rem;
         font-weight: bold;
@@ -753,7 +757,9 @@ input, textarea, select, button {
       font-size: 1.4rem;
       line-height: 1.4; }
     #ServicePanels .panel > .links {
-      padding-top: .8rem; }
+      position: absolute;
+      bottom: 1rem;
+      right: 1.2rem; }
       #ServicePanels .panel > .links > ul {
         text-align: right; }
         #ServicePanels .panel > .links > ul > li {
@@ -913,7 +919,7 @@ input, textarea, select, button {
       display: block;
       width: 25rem;
       height: 20rem;
-      border: solid 1px #FFF3DB;
+      border: solid 1px #F5F4F2;
       transition: border-color 0.2s; }
       #TopServiceGroups > .group > a:hover {
         border-color: #ff9905; }
