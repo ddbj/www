@@ -385,3 +385,4 @@ Request ID:wabi_blast_2013-0314-1407-23-16-946732
 * 「改訂　第２版　バイオデータベースとウェブツールの手とり足とり活用法」（羊土社）  
 編集／中村保一，石川　淳，磯合　敦，平川美夏，坊農秀雅  ISBN978-4-7581-0811-9
 * [BLAST] Ian Korf, Mark Yandell and Joseph Bedell, OREILLY
+
