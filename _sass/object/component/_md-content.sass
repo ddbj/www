@@ -3,11 +3,13 @@ $MARGIN_BOTTOM: 1rem
 .md-content
   font-size: 1.4rem
   line-height: 2
+  .highlight
+    overflow: scroll
 
   p, table, ol, ul, dl, .highlighter-rouge
     margin-bottom: $MARGIN_BOTTOM
   .red
-    color:
+    color: $COLOR_RED
 
   h2
     font-size: 1.8rem
@@ -66,9 +68,9 @@ $MARGIN_BOTTOM: 1rem
       margin-top: -$MARGIN_BOTTOM - 0.1rem
 
   .highlighter-rouge
-    background-color: $COLOR_BLACK
-    color: white
-    padding: .6rem 1rem
+    background-color: $COLOR_LIGHT_VELY_PALE
+    color: black
+    padding: .3rem .6rem
   code
     font-size: 1.2rem
     line-height: 1.6

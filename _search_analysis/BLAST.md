@@ -142,9 +142,7 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  GSS  |  GSS  |  ゲノム研究関連 (genome survey sequences)  |
 |  STS  |  STS  |  sequence tagged sites  |
 
-特許データの利用に際しては，[特許データ利用に関する注意]({{site.baseurl}}/home/pat-data.html)をご参照ください。
-
-[WABI BLAST]({{site.baseurl}}/search_analysis/wabiBLAST.html)
+<span class="red">*</span>特許データの利用に際しては，[特許データ利用に関する注意]({{site.baseurl}}/home/pat-data.html)をご参照ください。
 
 #### データベースオプション（RefSeq）
 
@@ -192,9 +190,9 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  DAD (daily updates)  |  DAD 定期リリース後の新着データ  |
 |  RefSeq AA  |  Refseq(Protein)  |
 
-*特許データの利用に際しては，[特許データ利用に関する注意](/ddbj/pat-data.html)をご参照ください。
+<span class="red">*</span>特許データの利用に際しては，[特許データ利用に関する注意](/ddbj/pat-data.html)をご参照ください。
 
-*現在のバージョンは [こちら](/stats/relinfo.html) からご確認ください。
+<span class="red">*</span>現在のバージョンは [こちら](/stats/relinfo.html) からご確認ください。
 
 #### DIVISION(DAD)
 
