@@ -11,7 +11,7 @@ DDBJ では，Web版 BLAST の他に，以下の方法でも BLAST サービス�
 * [WABI BLAST]({{site.baseurl}}/search_analysis/wabiBLAST.html)
 * [NIG スーパーコンピュータ](https://sc.ddbj.nig.ac.jp/ja/system-guide/software)
 
-## Program：プログラム
+## Program：プログラム<a name="program"></a>
 
 解析の用途に合わせ，以下のプログラムのいずれかを左カラムより選択します。  
 デフォルトでは，blastn が設定されてます。megablast は新たに追加されたプログラムです。
@@ -25,7 +25,7 @@ DDBJ では，Web版 BLAST の他に，以下の方法でも BLAST サービス�
 |  blastp  |  アミノ酸配列  |  アミノ酸配列  |  あなたのアミノ酸配列をアミノ酸配列データベースと比較します。  |
 |  blastx  |  塩基配列  |  アミノ酸配列  |  あなたの塩基配列を表裏合わせて６通りの読み枠で翻訳しながら，アミノ酸配列データベースと比較します。  |
 
-## Query：検索配列名，検索配列データ
+## Query：検索配列名，検索配列データ<a name="query"></a>
 
 * FASTA 形式で検索配列を入力して下さい。
 * データを直接テキストボックスに入力するか，データを格納したファイルを指定（ファイルアップロード機能）します。
@@ -72,7 +72,7 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 
 ## Data Sets
 
-### 塩基配列（データベース，DIVISION）
+### 塩基配列（データベース，DIVISION）<a name="nucleotide"></a>
 
 #### データベース
 
@@ -277,7 +277,7 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  R. norvegicus  |  ラット  |
 |  X. tropicalis  |  アフリカツメガエル  |
 
-## Optional Parameters
+## Optional Parameters<a name="parameters"></a>
 
 ### SCORES：検索結果一覧の表示数
 
@@ -326,7 +326,7 @@ blastn 使用時には Tatusov and Lipman によるDUSTプログラムにより�
 blastp，blastx，tblastn，tblastx の場合は 3 です。  
 blastn の場合は，wordsize を 11 以外の数に変えるべきではありません。
 
-## Request ID，検索結果表示
+## Request ID，検索結果表示 <a name="result"></a>
 
 ### Request ID
 

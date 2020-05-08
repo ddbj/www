@@ -14,7 +14,7 @@ WABI は、 BLAST を利用するための Web API を提供しています。
     ID](#parameter-Request-ID) を返します。  
     検索ジョブは、キューに登録されると「待機」→「実行」→「完了」と状態が遷移して行きます。  
     状態が「完了」になると検索結果を閲覧できますが、閲覧期間は実行後 7日間 です。  
-    ( [「Request ID，検索結果表示」](blast-help.html#result) の「検索結果閲覧期間」より。)
+    ( [「Request ID，検索結果表示」]({{site.baseurl}}/search_analysis/BLAST.html#result) の「検索結果閲覧期間」より。)
   - 指定された [Request ID](#parameter-Request-ID) に対する
     [BLAST検索ジョブの状態](#search-job) を返します。
   - 指定された [Request ID](#parameter-Request-ID) に対する
@@ -24,13 +24,13 @@ WABI は、 BLAST を利用するための Web API を提供しています。
 
 ## WABI BLAST での検索
 
-### BLAST検索ジョブ
+### BLAST検索ジョブ<a name="search-job"></a>
 
 BLAST の検索ジョブは、まず実行待ちのキューに登録されます。そしてリソースを確保でき次第、実行されます。
 
 参照: [検索ジョブの状態](#search-status)
 
-### 検索ジョブの状態
+### 検索ジョブの状態<a name="search-status"></a>
 
 WABI の検索ジョブは、次のように状態が遷移して行きます。
 
@@ -43,7 +43,7 @@ WABI の検索ジョブは、次のように状態が遷移して行きます。
 
 [ジョブの状態を確認するアクション](#URI_GET_status) が返す値の例:
 
-``` code scroll
+``` 
 1 request-ID: wabi_blast_1111-1111-1111-11-111-111111
 2 status: finished
 3 current-time: 2013-01-01 12:34:56
@@ -66,7 +66,7 @@ WABI の検索ジョブは、次のように状態が遷移して行きます。
 8 </result>
 ```
 
-``` code
+``` 
  1 {
  2         "error-message": "Unexpected error (status == null)",
  3         "requestId": "wabi_blast_1111-1111-1111-11-111-111111",
@@ -81,13 +81,13 @@ WABI の検索ジョブは、次のように状態が遷移して行きます。
 12 }
 ```
 
-### BLAST 検索条件
+### BLAST 検索条件 <a name="search-criteria"></a>
 
 WABI に [BLAST検索ジョブを登録](#URI_POST) したときに指定したパラメーター値の情報です。
 
 例:
 
-``` code scroll
+``` 
  1 {
  2         "address": "",
  3        "database": "hum",
@@ -100,13 +100,13 @@ WABI に [BLAST検索ジョブを登録](#URI_POST) したときに指定した�
 10 }
 ```
 
-### BLAST 検索結果
+### BLAST 検索結果 <a name="search-result"></a>
 
 BLAST検索処理 の結果です。 `blastall` コマンドの `"-o"` オプションでファイル出力された内容などと同じです。
 
 例:
 
-``` code
+``` 
  1 BLASTN 2.2.25 [Feb-01-2011]
  2 
  3 Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer,
@@ -136,170 +136,197 @@ BLAST検索処理 の結果です。 `blastall` コマンドの `"-o"` オプシ
         
 ```
 
-### BLAST 検索結果画像
+### BLAST 検索結果画像<a name="search-image"></a>
 
 WABI の BLAST検索ジョブ は、 BLAST検索結果を元にしてグラフィカル表示用画像を出力します。
 
 画像例:
 
-![](images/help/wabi_blast_imagedata.png)
+![]({{ site.baseurl }}/assets/images/help/wabi_blast_imagedata.png)
 
 ## WABI BLAST の使用例
 
-### [Javaの使用例](javascript:void\(0\))
+{::options parse_block_html="true" /}
+<dl class="example-of-use">
+<dt><a href="javascript:void(0)">Javaの使用例</a></dt>
+<dd>#### コード例
 
-#### コード例
+- Example.java
 
-  - Example.java
+<script src="https://gist.github.com/ddbj-repo/d2ead08e9b9664418c34e292392f1ca8.js"></script>
 
-  - blast\_condition.fasta
-    
-    ``` code
-    >my query sequence 1
-    CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
-    GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
-    GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
-    ```
+- blast\_condition.fasta
 
-  - blast\_condition.txt  
-    [コード](https://gist.github.com/ddbj-repo/22e92ce2e085be3f34fe072298241639)
-    
-    ``` code
-    datasets        ddbjall
-    database        hum
-    program blastn
-    parameters      -v 100 -b 100 -e 10 -F F -W 11
-    format  json
-    result  www
-    ```
+``` 
+>my query sequence 1
+CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
+GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
+GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
+```
 
-  - pom.xml
+- blast\_condition.txt  
 
-  - 前準備 (一度だけ実施する必要あり)
-    
-    ``` code
-    $ wget 'http://sourceforge.jp/frs/redir.php?m=iij&f=%2Fjsonic%2F56583%2Fjsonic-1.3.0.zip'
-    $ unzip jsonic-1.3.0.zip
-    $ mv jsonic-1.3.0/jsonic-1.3.0.jar src/main/resources/
-    $ tree -F
-    .
-    ├── blast_condition.fasta
-    ├── blast_condition.txt
-    ├── pom.xml
-    └── src/
-        └── main/
-            ├── java/
-            │   └── Example.java
-            └── resources/
-                └── jsonic-1.3.0.jar
-    ```
+[コード](https://gist.github.com/ddbj-repo/22e92ce2e085be3f34fe072298241639)
 
-  - ビルド
-    
-    ``` code
-    $ mvn clean
-    $ mvn compile
-    $ mvn package
-    $ mvn assembly:assembly -DdescriptorId=jar-with-dependencies
-    ```
+  ``` 
+  datasets        ddbjall
+  database        hum
+  program blastn
+  parameters      -v 100 -b 100 -e 10 -F F -W 11
+  format  json
+  result  www
+  ```
 
-  - 実行手順
-    
-    ``` code scroll
-    $ java -classpath 'target/wabi-client-1.jar:target/wabi-client-1-jar-with-dependencies.jar:src/main/resources/jsonic-1.3.0.jar' Example
-    ```
+- pom.xml
 
-### [Perlの使用例](javascript:void\(0\))
+<script src="https://gist.github.com/ddbj-repo/4978b238ca7dbb94ebeebae0184cd6ce.js"></script>
 
-#### コード例
+- 前準備 (一度だけ実施する必要あり)
 
-  - <span id="example.pl"></span>example.pl
+``` 
+$ wget 'http://sourceforge.jp/frs/redir.php?m=iij&f=%2Fjsonic%2F56583%2Fjsonic-1.3.0.zip'
+$ unzip jsonic-1.3.0.zip
+$ mv jsonic-1.3.0/jsonic-1.3.0.jar src/main/resources/
+$ tree -F
+.
+├── blast_condition.fasta
+├── blast_condition.txt
+├── pom.xml
+└── src/
+    └── main/
+        ├── java/
+        │   └── Example.java
+        └── resources/
+            └── jsonic-1.3.0.jar
+```
 
-  - blast\_condition.fasta
-    
-    ``` code
-    >my query sequence 1
-    CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
-    GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
-    GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
-    ```
+- ビルド
 
-  - blast\_condition.txt  
-    [コード](https://gist.github.com/ddbj-repo/22e92ce2e085be3f34fe072298241639)
-    
-    ``` code
-    datasets        ddbjall
-    database        hum
-    program blastn
-    parameters      -v 100 -b 100 -e 10 -F F -W 11
-    format  json
-    result  www
-    ```
+``` 
+$ mvn clean
+$ mvn compile
+$ mvn package
+$ mvn assembly:assembly -DdescriptorId=jar-with-dependencies
+```
 
-#### 実行例
+- 実行手順
 
-  - 前準備 (一度だけ実施する必要あり)
-    
-    ``` code
-    $ cpan
-    cpan[1] install JSON
-    cpan[2]> install HTTP::Request::Common
-    cpan[3]> install LWP::UserAgent
-    cpan[4]> install HTTP::Status
-    cpan[5]> quit
-    $ tree -F
-    .
-    ├── blast_condition.fasta
-    >├── blast_condition.txt
-    └── example.pl
-    ```
+``` 
+$ java -classpath 'target/wabi-client-1.jar:target/wabi-client-1-jar-with-dependencies.jar:src/main/resources/jsonic-1.3.0.jar' Example
+```
 
-  - 実行手順
-    
-    ``` code
-    $ perl example.pl
-    ```
+[« 閉じる](javascript:void(0)){: .close-btn}
+</dd>
+</dl>
 
-### [Ruby の使用例](javascript:void\(0\))
+{::options parse_block_html="true" /}
+<dl class="example-of-use">
+  <dt><a href="javascript:void(0)">Perlの使用例</a></dt>
+<dd>#### コード例
 
-#### コード例
+- example.pl
 
-  - example.rb
+<script src="https://gist.github.com/ddbj-repo/b2f7e3ac56745a63b719908945518d4c.js"></script>
 
-  - blast\_condition.fasta
-    
-    ``` code
-    >my query sequence 1
-    CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
-    GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
-    GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
-    ```
+- blast\_condition.fasta
 
-  - blast\_condition.txt  
-    [コード](https://gist.github.com/ddbj-repo/22e92ce2e085be3f34fe072298241639)
-    
-    ``` code
-    datasets        ddbjall
-    database        hum
-    program blastn
-    parameters      -v 100 -b 100 -e 10 -F F -W 11
-    format  json
-    result  www
-    ```
+``` 
+>my query sequence 1
+CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
+GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
+GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
+```
+
+- blast\_condition.txt  
+
+[コード](https://gist.github.com/ddbj-repo/22e92ce2e085be3f34fe072298241639)
+
+``` 
+datasets        ddbjall
+database        hum
+program blastn
+parameters      -v 100 -b 100 -e 10 -F F -W 11
+format  json
+result  www
+```
 
 #### 実行例
 
-  - 実行手順
-    
-    ``` code
-    $ ruby example.rb
-    ```
+- 前準備 (一度だけ実施する必要あり)
 
-  - 実際の例
+``` 
+$ cpan
+cpan[1] install JSON
+cpan[2]> install HTTP::Request::Common
+cpan[3]> install LWP::UserAgent
+cpan[4]> install HTTP::Status
+cpan[5]> quit
+$ tree -F
+.
+├── blast_condition.fasta
+>├── blast_condition.txt
+└── example.pl
+```
+
+- 実行手順
+
+``` 
+$ perl example.pl
+```
+
+[« 閉じる](javascript:void(0)){: .close-btn}
+</dd>
+</dl>
+
+{::options parse_block_html="true" /}
+<dl class="example-of-use">
+  <dt><a href="javascript:void(0)">Ruby の使用例</a></dt>
+<dd>#### コード例
+
+- example.rb
+
+<script src="https://gist.github.com/ddbj-repo/aa94320d3ab88ae27e53371868885cfd.js">
+
+- blast\_condition.fasta
+  
+  ``` 
+  >my query sequence 1
+  CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
+  GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
+  GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
+  ```
+
+- blast\_condition.txt  
+  [コード](https://gist.github.com/ddbj-repo/22e92ce2e085be3f34fe072298241639)
+  
+  ``` 
+  datasets        ddbjall
+  database        hum
+  program blastn
+  parameters      -v 100 -b 100 -e 10 -F F -W 11
+  format  json
+  result  www
+  ```
+
+#### 実行例
+
+- 実行手順
+  
+  ``` 
+  $ ruby example.rb
+  ```
+
+- 実際の例
+  <script src="https://gist.github.com/ddbj-repo/d9e1d2d44aaecdb890ec12196dc52dbd.js"></script>
 
 #### 実行結果例
 
-  - wabi\_blast\_2013-0606-1336-31-681-634313.txt
+- wabi\_blast\_2013-0606-1336-31-681-634313.txt
+  <script src="https://gist.github.com/ddbj-repo/aea641167c10b4c56ec08b1c4e230f2a.js"></script>
+
+[« 閉じる](javascript:void(0)){: .close-btn}
+</dd>
+</dl>
 
 ## WABI BLAST の詳細
 
@@ -314,16 +341,16 @@ BLAST検索 の検索条件や結果通知方法などを HTTPパラメーター
 |  HTTP メソッド	  |    |  `POST`  |
 |  URI  |    |  `/blast`  |
 |  HTTP パラメーター	  |  `querySequence`	  |  [multi FASTA 形式の検索配列データ](#parameter-querySequence) <br> <code>例:<br>>my query sequence 1<br>CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA<br>GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG<br>GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC</code><br><span style="color:red;">※配列数を増やしても並列度は上がりません。 ジョブ管理エンジンによる負荷分散も考慮すると、Web API として利用するならば配列数は少なめにすることを推奨します。</span> |
-|  ^  |  `datasets`  |  [データセット](#parameter-datasets) (例: `"ddbjall"`)  |
-|  ^  |  `database`  |  [データベース](#parameter-database) (例: `"hum"`, `"hum pri"`)  |
-|  ^  |  `program`  |  [BLAST プログラム](#parameter-program) (例: `"blastn"`)  |
-|  ^  |  `parameters`  |  [その他のオプション指定](#parameter-parameters) (例: `"-v 100 -b 100 -e 10 -F F-W 11"`)  |
-|  ^  |  `format`  |  [応答データの形式](#parameter-format) (例: `"text"`, `"json"`)  |
-|  ^  |  `result`  |  [結果通知方法](#parameter-result) (例: `"www"`, `"mail"`)  |
-|  ^  |  `address`  |  [メールアドレス](#parameter-address)  |
+|    |  `datasets`  |  [データセット](#parameter-datasets) (例: `"ddbjall"`)  |
+|    |  `database`  |  [データベース](#parameter-database) (例: `"hum"`, `"hum pri"`)  |
+|    |  `program`  |  [BLAST プログラム](#parameter-program) (例: `"blastn"`)  |
+|    |  `parameters`  |  [その他のオプション指定](#parameter-parameters) (例: `"-v 100 -b 100 -e 10 -F F-W 11"`)  |
+|    |  `format`  |  [応答データの形式](#parameter-format) (例: `"text"`, `"json"`)  |
+|    |  `result`  |  [結果通知方法](#parameter-result) (例: `"www"`, `"mail"`)  |
+|    |  `address`  |  [メールアドレス](#parameter-address)  |
 |  処理内容	  |    |  BLAST検索 のジョブをキューに投入する。  |
 |  HTTP レスポンス	  |  成功した場合	  |  [Request ID](#parameter-Request-ID) を含むジョブ情報  |
-|  ^	  |  失敗した場合	  |  HTTP ステータス *4xx*  |
+|  	  |  失敗した場合	  |  HTTP ステータス *4xx*  |
 
 #### 処理の流れ
 
@@ -335,35 +362,33 @@ BLAST検索 の検索条件や結果通知方法などを HTTPパラメーター
 
 #### 入力値の検証内容
 
-|  [datasets](#parameter-datasets)<br>(省略可能) | <ul><li>未定義の値が指定された場合、入力値エラーです。<br>※現在、未使用。 <code>database</code> との整合性チェックは行なっていません。</li></ul></td>  |
-| ---- | ---- |
-|  [database](#parameter-database)  |  <ul><li>必須チェック</li><li>データベース名を空白区切りで並べた値以外は、入力値エラーです。データベース名は英字または <code>"_"</code> のみです。<br/>例: <code>"hum"</code> や <code>"hum pri"</code> など。</li></ul>  |
-|  [program](#parameter-program)  |  <ul><li>必須チェック</li><li>未定義の値が指定された場合、入力値エラーです。</li></ul>  |
-|  [format](#parameter-format)  |  <ul><li>必須チェック</li><li>未定義の値が指定された場合、入力値エラーです。</li></ul>  |
-|  [parameters](#parameter-parameters)<br>(省略可能)  |  <ul><li>オプション指定とその設定値を空白区切りで並べた値以外は、入力値エラーです。</li><li>指定可能なオプション以外は、入力値エラーです。指定可能なオプションは、 <code>program</code> 値に応じて次の通りです。<ul><li><code>program</code> 値が <code>"megablast"</code> の場合:<br /><code>ADEFGHIJLMNPRSTUVWXYZbefglmnpqrstvyz</code> 以外のオプション指定を含む場合は、入力値エラーです。<br />例: <code>"-A"</code> は正常値ですが、 <code>"-B"</code> は入力値エラー。</li><li><code>program</code> 値がそれ以外の場合:<br /><code>ABCDEFGIJKLMPQSTUVWXYZbefglmnqrstvwyz</code> 以外のオプション指定を含む場合は、入力値エラーです。<br />例: <code>"-B"</code> は正常値ですが、 <code>"-H"</code> は入力値エラー。</li><ul></li><li>オプションの設定値は整数値または、英数字およびカンマ区切り英数字です。<br />例: <code>"-1"</code> 、 <code>"foo,bar"</code> など。</li></ul>  |
-|  [result](#parameter-result)  |  <ul><li>必須チェック</li><li>未定義の値が指定された場合、入力値エラーです。</li></ul>  |
-|  [address](#parameter-address)  |  <ul><li><code>result</code> 値が <code>"mail"</code> の場合は必須チェック</li><li>メールアドレスの形式以外は、入力値エラーです。</li></ul>  |
+|  [datasets](#parameter-datasets)<br>(省略可能) | {::nomarkdown}<ul><li>未定義の値が指定された場合、入力値エラーです。<br>※現在、未使用。 <code>database</code> との整合性チェックは行なっていません。</li></ul></td>{:/}  |
+|  [database](#parameter-database)  |  {::nomarkdown}<ul><li>必須チェック</li><li>データベース名を空白区切りで並べた値以外は、入力値エラーです。データベース名は英字または <code>"_"</code> のみです。<br/>例: <code>"hum"</code> や <code>"hum pri"</code> など。</li></ul>{:/}  |
+|  [program](#parameter-program)  |  {::nomarkdown}<ul><li>必須チェック</li><li>未定義の値が指定された場合、入力値エラーです。</li></ul>{:/}  |
+|  [format](#parameter-format)  |  {::nomarkdown}<ul><li>必須チェック</li><li>未定義の値が指定された場合、入力値エラーです。</li></ul>{:/}  |
+|  [parameters](#parameter-parameters)<br>(省略可能)  |  {::nomarkdown}<ul><li>オプション指定とその設定値を空白区切りで並べた値以外は、入力値エラーです。</li><li>指定可能なオプション以外は、入力値エラーです。指定可能なオプションは、 <code>program</code> 値に応じて次の通りです。<ul><li><code>program</code> 値が <code>"megablast"</code> の場合:<br /><code>ADEFGHIJLMNPRSTUVWXYZbefglmnpqrstvyz</code> 以外のオプション指定を含む場合は、入力値エラーです。<br />例: <code>"-A"</code> は正常値ですが、 <code>"-B"</code> は入力値エラー。</li><li><code>program</code> 値がそれ以外の場合:<br /><code>ABCDEFGIJKLMPQSTUVWXYZbefglmnqrstvwyz</code> 以外のオプション指定を含む場合は、入力値エラーです。<br />例: <code>"-B"</code> は正常値ですが、 <code>"-H"</code> は入力値エラー。</li><ul></li><li>オプションの設定値は整数値または、英数字およびカンマ区切り英数字です。<br />例: <code>"-1"</code> 、 <code>"foo,bar"</code> など。</li></ul>{:/}  |
+|  [result](#parameter-result)  |  {::nomarkdown}<ul><li>必須チェック</li><li>未定義の値が指定された場合、入力値エラーです。</li></ul>{:/}  |
+|  [address](#parameter-address)  |  {::nomarkdown}<ul><li><code>result</code> 値が <code>"mail"</code> の場合は必須チェック</li><li>メールアドレスの形式以外は、入力値エラーです。</li></ul>{:/}  |
 
-#### 応答データの内容
+#### 応答データの内容　
 
-  - 正常終了した場合
-    
-      - HTTP ステータスが `200` 等の「成功」を示す値です。
-      - `requestId` に「リクエストID」が対応付けられた情報を返します。
-      - その他、 `current-time` (現在時刻) やリクエスト情報を含むことがありますが、書式は随時更新いたします。  
-        実行の成否判定のためには HTTP ステータスを利用してください。
+- 正常終了した場合
+  - HTTP ステータスが `200` 等の「成功」を示す値です。
+  - `requestId` に「リクエストID」が対応付けられた情報を返します。
+  - その他、 `current-time` (現在時刻) やリクエスト情報を含むことがありますが、書式は随時更新いたします。  
+    実行の成否判定のためには HTTP ステータスを利用してください。
 
-  - 異常終了した場合
-    
-      - HTTP ステータスが `400` 等の「クライアントエラー」を示す値です。
-      - 応答データの中からキー `error-messages`
-        で取得できるエラーメッセージ情報には、入力値エラーとなったパラメーター名の情報等が含まれます。
-      - その他、リクエスト情報やエラーの原因などの情報を含むことがありますが、書式は随時更新いたします。  
-        実行の成否判定のためには HTTP ステータスを利用してください。
+- 異常終了した場合
+    - HTTP ステータスが `400` 等の「クライアントエラー」を示す値です。
+    - 応答データの中からキー `error-messages`
+      で取得できるエラーメッセージ情報には、入力値エラーとなったパラメーター名の情報等が含まれます。
+    - その他、リクエスト情報やエラーの原因などの情報を含むことがありますが、書式は随時更新いたします。  
+      実行の成否判定のためには HTTP ステータスを利用してください。
 
-#### 入出力データの例
+#### 入出力データの例<a name="uripost-example"></a>
 
 入力値の例
+
 |  HTTP パラメーター  |  入力値  |
 | ---- | ---- |
 |  `address`  |  `""`  |
@@ -377,7 +402,7 @@ BLAST検索 の検索条件や結果通知方法などを HTTPパラメーター
 
 正常終了した場合の応答データ例
 
-``` code
+``` 
 HTTP ステータス 200
  1 {
  2        "requestId": "wabi_blast_1111-1111-1111-11-111-111111",
@@ -391,7 +416,7 @@ HTTP ステータス 200
 10 }
 ```
 
-``` code scroll
+``` 
 HTTP ステータス 200
  1 <?xml version="1.0" ?>
  2 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -409,7 +434,7 @@ HTTP ステータス 200
 
 入力値エラーの場合の応答データ例
 
-``` code scroll
+``` 
 HTTP ステータス 400
  1    {
  2    "status": "illegal-arguments",
@@ -430,11 +455,17 @@ HTTP ステータス 400
 17    }
 ```
 
-#### [利用例](javascript:void\(0\))
+{::options parse_block_html="true" /}
+<dl class="example-of-use">
+  <dt><a href="javascript:void(0)">利用例</a></dt>
+<dd>Java で SpringFramework の RESTクライアント を使う場合:
+   <script src="https://gist.github.com/ddbj-repo/ec96049ec11c1d22303d9fcdea9f70cd.js"></script>
 
-Java で SpringFramework の RESTクライアント を使う場合:
+[« 閉じる](javascript:void(0)){: .close-btn}
+</dd>
+</dl>
 
-### URI GET /blast/{Request-ID}?info=status (検索ジョブの状態確認)
+### URI GET /blast/{Request-ID}?info=status (検索ジョブの状態確認)<a name="URI_GET_status"></a>
 
 指定された [Request ID](#parameter-Request-ID) の [ジョブの現在の状態](#search-status)
 を返します。
@@ -458,28 +489,25 @@ Java で SpringFramework の RESTクライアント を使う場合:
 
 #### 入力値の検証内容
 
-|  [requestId](#parameter-Request-ID)  |  <ul><li>必須チェック</li><li>英数字、<code>"-"</code> 、 <code>"_"</code> 以外を含む場合、入力値エラーです。</li><li>実在する <a href="#parameter-Request-ID">Request ID</a> 以外の場合、入力値エラーです。<br/>一定日数を超えた検索結果は破棄されていますが、その場合も入力値エラーとして扱われます。</li></ul>  |
-| ---- | ---- |
-|  [format](#parameter-format)  |  <ul><li>必須チェック</li><li>未定義の値の場合、入力値エラーです。</li></ul>  |
-|  [imageId](#parameter-imageId)  |  <ul><li>何も指定しないこと。</li></ul>  |
-|  [info](#parameter-info)  |  <ul><li><code>"status"</code> を指定すること。</li></ul>  |
+|  [requestId](#parameter-Request-ID)  |  {::nomarkdown}<ul><li>必須チェック</li><li>英数字、<code>"-"</code> 、 <code>"_"</code> 以外を含む場合、入力値エラーです。</li><li>実在する <a href="#parameter-Request-ID">Request ID</a> 以外の場合、入力値エラーです。<br/>一定日数を超えた検索結果は破棄されていますが、その場合も入力値エラーとして扱われます。</li></ul>{:/}  |
+|  [format](#parameter-format)  |  {::nomarkdown}<ul><li>必須チェック</li><li>未定義の値の場合、入力値エラーです。</li></ul>{:/}  |
+|  [imageId](#parameter-imageId)  |  {::nomarkdown}<ul><li>何も指定しないこと。</li></ul>{:/}  |
+|  [info](#parameter-info)  |  {::nomarkdown}<ul><li><code>"status"</code> を指定すること。</li></ul>{:/}  |
 
-#### 応答データの内容
+#### 応答データの内容　
 
-  - 正常終了した場合
-    
-      - HTTP ステータスが `200` 等の「成功」を示す値です。
-      - `status` に「[現在の状態](#search-status)」が対応付けられた情報を返します。
-      - その他、 `current-time` (現在時刻) やリクエスト情報を含みますが、書式は随時更新いたします。  
-        実行の成否判定のためには HTTP ステータスを利用してください。
+- 正常終了した場合
+  - HTTP ステータスが `200` 等の「成功」を示す値です。
+  - `status` に「[現在の状態](#search-status)」が対応付けられた情報を返します。
+  - その他、 `current-time` (現在時刻) やリクエスト情報を含みますが、書式は随時更新いたします。  
+    実行の成否判定のためには HTTP ステータスを利用してください。
 
-  - 異常終了した場合
-    
-      - HTTP ステータスが `400` 等の「クライアントエラー」を示す値です。
-      - 応答データの中からキー `error-messages`
-        で取得できるエラーメッセージ情報には、入力値エラーとなったパラメーター名の情報等が含まれます。
-      - その他、リクエスト情報やエラーの原因などの情報を含みますが、書式は随時更新いたします。  
-        実行の成否判定のためには HTTP ステータスを利用してください。
+- 異常終了した場合
+  - HTTP ステータスが `400` 等の「クライアントエラー」を示す値です。
+  - 応答データの中からキー `error-messages`
+    で取得できるエラーメッセージ情報には、入力値エラーとなったパラメーター名の情報等が含まれます。
+  - その他、リクエスト情報やエラーの原因などの情報を含みますが、書式は随時更新いたします。  
+    実行の成否判定のためには HTTP ステータスを利用してください。
 
 #### 入出力データの例
 
@@ -493,7 +521,7 @@ Java で SpringFramework の RESTクライアント を使う場合:
 
 正常終了した場合の応答データ例
 
-``` code
+``` 
 HTTP ステータス 200
 1 request-ID: wabi_blast_1111-1111-1111-11-111-111111
 2 status: finished
@@ -502,7 +530,7 @@ HTTP ステータス 200
 5 stdout
 ```
 
-``` code
+``` 
 HTTP ステータス 200
 1{
 2        "request-ID": "wabi_blast_1111-1111-1111-11-111-111111",
@@ -512,7 +540,7 @@ HTTP ステータス 200
 6}
 ```
 
-``` code scroll
+``` 
 HTTP ステータス 200
 1<?xml version="1.0" ?>
 2<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -526,7 +554,7 @@ HTTP ステータス 200
 
 入力値エラーの場合の応答データ例
 
-``` code scroll
+``` 
 HTTP ステータス 400
  1{
  2  "status": "illegal-arguments",
@@ -543,11 +571,17 @@ HTTP ステータス 400
 13}
 ```
 
-#### [利用例](javascript:void\(0\))
+{::options parse_block_html="true" /}
+<dl class="example-of-use">
+  <dt><a href="javascript:void(0)">利用例</a></dt>
+<dd>Java で SpringFramework の RESTクライアント を使う場合:
+   <script src="https://gist.github.com/ddbj-repo/4a1ea26e46bebac37cf595eae77e384a.js"></script>
 
-Java で SpringFramework の RESTクライアント を使う場合:
+[« 閉じる](javascript:void(0)){: .close-btn}
+</dd>
+</dl>
 
-### URI GET /blast/{Request-ID}?info=request (検索条件の確認)
+### URI GET /blast/{Request-ID}?info=request (検索条件の確認)<a name="URI_GET_request"></a>
 
 指定された [Request ID](#parameter-Request-ID) の検索条件を返します。
 
@@ -569,28 +603,27 @@ Java で SpringFramework の RESTクライアント を使う場合:
 
 #### 入力値の検証内容
 
-|  [requestId](#parameter-Request-ID)  |  <ul><li>必須チェック</li><li>英数字、 <code>"-"</code> 、 <code>"_"</code> 以外を含む場合、入力値エラーです。</li><li>実在する <a href="#parameter-Request-ID">Request ID</a> 以外の場合、入力値エラーです。<br />一定日数を超えた検索結果は破棄されていますが、その場合も入力値エラーとして扱われます。</li></ul>  |
-| ---- | ---- |
-|  [format](#parameter-format)  |  <ul><li>必須チェック</li><li>未定義の値の場合、入力値エラーです。</li></ul>  |
-|  [imageId](#parameter-imageId)  |  <ul><li>何も指定しないこと。</li></ul>  |
-|  [info](#parameter-info)  |  <ul><li><code>"request"</code> を指定すること。</li></ul>  |
+{::nomarkdown}{:/}
+
+|  [requestId](#parameter-Request-ID)  |  {::nomarkdown}<ul><li>必須チェック</li><li>英数字、 <code>"-"</code> 、 <code>"_"</code> 以外を含む場合、入力値エラーです。</li><li>実在する <a href="#parameter-Request-ID">Request ID</a> 以外の場合、入力値エラーです。<br />一定日数を超えた検索結果は破棄されていますが、その場合も入力値エラーとして扱われます。</li></ul>{:/}  |
+|  [format](#parameter-format)  |  {::nomarkdown}<ul><li>必須チェック</li><li>未定義の値の場合、入力値エラーです。</li></ul>{:/}  |
+|  [imageId](#parameter-imageId)  |  {::nomarkdown}<ul><li>何も指定しないこと。</li></ul>{:/}  |
+|  [info](#parameter-info)  |  {::nomarkdown}<ul><li><code>"request"</code> を指定すること。</li></ul>{:/}  |
 
 #### 応答データの内容
 
-  - 正常終了した場合
-    
-      - HTTP ステータスが `200` 等の「成功」を示す値です。
-      - BLAST検索ジョブを投入した際の各パラメーター情報です。
-      - 実行の成否判定のためには HTTP ステータスを利用してください。
+- 正常終了した場合
+  - HTTP ステータスが `200` 等の「成功」を示す値です。
+  - BLAST検索ジョブを投入した際の各パラメーター情報です。
+  - 実行の成否判定のためには HTTP ステータスを利用してください。
 
-  - 異常終了した場合
-    
-      - HTTP ステータスが `400` 等の「クライアントエラー」を示す値です。
-      - 応答データの中からキー `error-messages`
-        で取得できるエラーメッセージ情報には、入力値エラーとなったパラメーター名の情報等が含まれます。
-      - 実行の成否判定のためには HTTP ステータスを利用してください。
+- 異常終了した場合
+  - HTTP ステータスが `400` 等の「クライアントエラー」を示す値です。
+  - 応答データの中からキー `error-messages`
+    で取得できるエラーメッセージ情報には、入力値エラーとなったパラメーター名の情報等が含まれます。
+  - 実行の成否判定のためには HTTP ステータスを利用してください。
 
-#### 入出力データの例
+#### 入出力データの例　
 
 入力値の例
 
@@ -601,7 +634,7 @@ Java で SpringFramework の RESTクライアント を使う場合:
 
 正常終了した場合の応答データ例
 
-``` code scroll
+``` 
 HTTP ステータス 200
  1{
  2        "address": "",
@@ -617,7 +650,7 @@ HTTP ステータス 200
 
 入力値エラーの場合の応答データ例
 
-``` code
+``` 
 HTTP ステータス 404
  1{
  2        "Message": "Unexpected error ( Results of your request id have been NOT FOUND.)",
@@ -633,11 +666,17 @@ HTTP ステータス 404
 12}
 ```
 
-#### [利用例](javascript:void\(0\))
+{::options parse_block_html="true" /}
+<dl class="example-of-use">
+  <dt><a href="javascript:void(0)">利用例</a></dt>
+<dd>Java で SpringFramework の RESTクライアント を使う場合:
+   <script src="https://gist.github.com/ddbj-repo/d3ff7fbc9a66733ab164f669e4bcb88d.js"></script>
 
-Java で SpringFramework の RESTクライアント を使う場合:
+[« 閉じる](javascript:void(0)){: .close-btn}
+</dd>
+</dl>
 
-### URI GET /blast/{Request-ID}?info=result (検索結果の閲覧)
+### URI GET /blast/{Request-ID}?info=result (検索結果の閲覧)<a name="URI_GET_result"></a>
 
 指定された [Request ID](#parameter-Request-ID) の検索結果を返します。
 
@@ -661,26 +700,24 @@ Java で SpringFramework の RESTクライアント を使う場合:
 
 #### 入力値の検証内容
 
-|  [requestId](#parameter-Request-ID)  |  <ul><li>必須チェック</li><li>英数字、 <code>"-"</code> 、 <code>"_"</code> 以外を含む場合、入力値エラーです。</li><li>実在する <a href="#parameter-Request-ID">Request ID</a> 以外の場合、入力値エラーです。<br/>一定日数を超えた検索結果は破棄されていますが、その場合も入力値エラーとして扱われます。</li></ul>  |
+|  [requestId](#parameter-Request-ID)  |  {::nomarkdown}<ul><li>必須チェック</li><li>英数字、 <code>"-"</code> 、 <code>"_"</code> 以外を含む場合、入力値エラーです。</li><li>実在する <a href="#parameter-Request-ID">Request ID</a> 以外の場合、入力値エラーです。<br/>一定日数を超えた検索結果は破棄されていますが、その場合も入力値エラーとして扱われます。</li></ul>{:/}  |
 | ---- | ---- |
-|  [format](#parameter-format)  |  <ul><li>必須チェック</li><li>未定義の値の場合、入力値エラーです。</li></ul>  |
-|  [imageId](#parameter-imageId)  |  <ul><li>何も指定しないこと。</li></ul>  |
-|  [info](#parameter-info)  |  <ul><li><code>"result"</code> を指定すること。</li></ul>  |
+|  [format](#parameter-format)  |  {::nomarkdown}<ul><li>必須チェック</li><li>未定義の値の場合、入力値エラーです。</li></ul>{:/}  |
+|  [imageId](#parameter-imageId)  |  {::nomarkdown}<ul><li>何も指定しないこと。</li></ul>{:/}  |
+|  [info](#parameter-info)  |  {::nomarkdown}<ul><li><code>"result"</code> を指定すること。</li></ul>{:/}  |
 
 #### 応答データの内容
 
-  - 正常終了した場合
-    
-      - HTTP ステータスが `200` 等の「成功」を示す値です。
-      - BLAST 検索が出力した結果ファイルの内容を返します。
-      - 実行の成否判定のためには HTTP ステータスを利用してください。
+- 正常終了した場合
+  - HTTP ステータスが `200` 等の「成功」を示す値です。
+  - BLAST 検索が出力した結果ファイルの内容を返します。
+  - 実行の成否判定のためには HTTP ステータスを利用してください。
 
-  - 異常終了した場合
-    
-      - HTTP ステータスが `400` 等の「クライアントエラー」を示す値です。
-      - 応答データの中からキー `error-messages`
-        で取得できるエラーメッセージ情報には、入力値エラーとなったパラメーター名の情報等が含まれます。
-      - 実行の成否判定のためには HTTP ステータスを利用してください。
+- 異常終了した場合
+  - HTTP ステータスが `400` 等の「クライアントエラー」を示す値です。
+  - 応答データの中からキー `error-messages`
+    で取得できるエラーメッセージ情報には、入力値エラーとなったパラメーター名の情報等が含まれます。
+  - 実行の成否判定のためには HTTP ステータスを利用してください。
 
 #### 入出力データの例
 
@@ -693,7 +730,7 @@ Java で SpringFramework の RESTクライアント を使う場合:
 
 正常終了した場合の応答データ例
 
-``` code
+``` 
 HTTP ステータス 200
 HTTP ステータス 200
  1 BLASTN 2.2.25 [Feb-01-2011]
@@ -727,7 +764,7 @@ HTTP ステータス 200
 
 入力値エラーの場合の応答データ例
 
-``` code
+``` 
 HTTP ステータス 400
  1{
  2        "Message": "Error ( Results of your request id have been NOT FOUND, or still running.)",
@@ -743,11 +780,17 @@ HTTP ステータス 400
 12}
 ```
 
-#### [利用例](javascript:void\(0\))
+{::options parse_block_html="true" /}
+<dl class="example-of-use">
+  <dt><a href="javascript:void(0)">利用例</a></dt>
+<dd>Java で SpringFramework の RESTクライアント を使う場合:
+   <script src="https://gist.github.com/ddbj-repo/af6f2a4165385224de18cc5968568848.js"></script>
 
-Java で SpringFramework の RESTクライアント を使う場合:
+[« 閉じる](javascript:void(0)){: .close-btn}
+</dd>
+</dl>
 
-### URI GET /blast/{Request-ID}?imageId={Image-ID} (検索処理によって出力された画像データの取得)
+### URI GET /blast/{Request-ID}?imageId={Image-ID} (検索処理によって出力された画像データの取得)<a name="URI_GET_imageid">
 
 指定された [RequestID](#parameter-Request-ID) の検索処理が出力した画像データを返します。
 
@@ -757,7 +800,7 @@ Java で SpringFramework の RESTクライアント を使う場合:
 |  URI  |    |  `"/blast/"` + [RequestID](#parameter-Request-ID) + `"?imageId="` +*画像ID* + HTTP パラメーター (例:`"/blast/wabi_blast_1111-1111-1111-11-111-111111?imageId=1"`)  |
 |  HTTP パラメーター  |  `format` (デフォルト値 = `"text"`)  |  [応答データの形式](#parameter-format) (例: `"imagefile"`)  |
 
-#### 処理の流れ
+#### 処理の流れ  
 
   - 入力値を検証します。  
     入力値エラーが見つかった場合は、処理を中断して `HTTP ステータス 400 Bad Request` を返します。
@@ -771,26 +814,25 @@ Java で SpringFramework の RESTクライアント を使う場合:
 
 #### 入力値の検証内容
 
-|  [requestId](#parameter-Request-ID)  |  <ul><li>必須チェック</li><li>英数字、 <code>"-"</code> 、 <code>"_"</code> 以外を含む場合、入力値エラーです。</li><li>実在する <a href="#parameter-Request-ID">requestId</a> 以外の場合、入力値エラーです。<br />一定日数を超えた検索結果は破棄されていますが、その場合も入力値エラーとして扱われます。</li></ul>  |
-| ---- | ---- |
-|  [format](#parameter-format)  |  <ul><li><code>"imagefile"</code> 以外の場合は、入力値エラーです。</li></ul>  |
-|  [imageId](#parameter-imageId)  |  <ul><li>数字以外の場合は、入力値エラーです。</li></ul>  |
-|  [info](#parameter-info)  |  <ul><li>未定義の値を指定した場合は、入力値エラーです。</li></ul>  |
+{::nomarkdown}{:/}
+
+|  [requestId](#parameter-Request-ID)  |  {::nomarkdown}<ul><li>必須チェック</li><li>英数字、 <code>"-"</code> 、 <code>"_"</code> 以外を含む場合、入力値エラーです。</li><li>実在する <a href="#parameter-Request-ID">requestId</a> 以外の場合、入力値エラーです。<br />一定日数を超えた検索結果は破棄されていますが、その場合も入力値エラーとして扱われます。</li></ul>{:/}  |
+|  [format](#parameter-format)  |  {::nomarkdown}<ul><li><code>"imagefile"</code> 以外の場合は、入力値エラーです。</li></ul>{:/}  |
+|  [imageId](#parameter-imageId)  |  {::nomarkdown}<ul><li>数字以外の場合は、入力値エラーです。</li></ul>{:/}  |
+|  [info](#parameter-info)  |  {::nomarkdown}<ul><li>未定義の値を指定した場合は、入力値エラーです。</li></ul>{:/}  |
 
 #### 応答データの内容
 
-  - 正常終了した場合
-    
-      - HTTP ステータスが `200` 等の「成功」を示す値です。
-      - BLAST 検索処理が出力した画像データを返します。
-      - 実行の成否判定のためには HTTP ステータスを利用してください。
+- 正常終了した場合
+  - HTTP ステータスが `200` 等の「成功」を示す値です。
+  - BLAST 検索処理が出力した画像データを返します。
+  - 実行の成否判定のためには HTTP ステータスを利用してください。
 
-  - 異常終了した場合
-    
-      - HTTP ステータスが `400` 等の「クライアントエラー」を示す値です。
-      - 応答データの中からキー `error-messages`
-        で取得できるエラーメッセージ情報には、入力値エラーとなったパラメーター名の情報等が含まれます。
-      - 実行の成否判定のためには HTTP ステータスを利用してください。
+- 異常終了した場合
+  - HTTP ステータスが `400` 等の「クライアントエラー」を示す値です。
+  - 応答データの中からキー `error-messages`
+    で取得できるエラーメッセージ情報には、入力値エラーとなったパラメーター名の情報等が含まれます。
+  - 実行の成否判定のためには HTTP ステータスを利用してください。
 
 #### 入出力データの例
 
@@ -804,14 +846,14 @@ Java で SpringFramework の RESTクライアント を使う場合:
 
 正常終了した場合の応答データ例
 
-``` code
+``` 
 HTTP ステータス 200
 (画像データ)
 ```
 
 入力値エラーの場合の応答データ例
 
-``` code
+``` 
 HTTP ステータス 404
  1 {
  2        "Message": "Error ( Blast image file of your request id have been NOT FOUND, or still running.)",
@@ -827,15 +869,21 @@ HTTP ステータス 404
 12 }
 ```
 
-#### [利用例](javascript:void\(0\))
+{::options parse_block_html="true" /}
+<dl class="example-of-use">
+  <dt><a href="javascript:void(0)">利用例</a></dt>
+<dd>Java で HttpURLConnection を使う場合:
+   <script src="https://gist.github.com/ddbj-repo/bd58a6ca09c2d380d5ceafd4905a0e2e.js"></script>
+   ~~Java で SpringFramework の RESTクライアント を使う場合:~~
 
-Java で HttpURLConnection を使う場合:
+<span class="red">※既知の問題のため、 RESTクライアント によっては画像データの変換に失敗します。</span>
+<script src="https://gist.github.com/ddbj-repo/1db03f437b50827f7e7474846ad5979a.js"></script>
 
-~~Java で SpringFramework の RESTクライアント を使う場合:~~
+[« 閉じる](javascript:void(0)){: .close-btn}
+</dd>
+</dl>
 
-※既知の問題のため、 RESTクライアント によっては画像データの変換に失敗します。
-
-### URI GET /blast/help/{Help-Command} (ヘルプ情報の閲覧)
+### URI GET /blast/help/{Help-Command} (ヘルプ情報の閲覧)<a name="URI_GET_help"></a>
 
 WABI BLAST のヘルプ情報を返します。
 
@@ -844,7 +892,7 @@ WABI BLAST のヘルプ情報を返します。
 |  HTTP メソッド  |    |  `GET`  |
 |  URI  |    |  `"/blast/help/"` + Help-Command + HTTP パラメーター (例:`"/blast/help/list_program?format=json"`)  |
 |  HTTP パラメーター  |  `format` (デフォルト値 = `"text"`)  |  [応答データの形式](#parameter-format) (例: `"text"`, `"json"`)  |
-|  ^  |  `program`  |  [BLAST プログラム](#parameter-program) (例: `"blastn"`)  |
+|    |  `program`  |  [BLAST プログラム](#parameter-program) (例: `"blastn"`)  |
 
 #### Help-Command
 
@@ -860,13 +908,11 @@ WABI BLAST のヘルプ情報を返します。
 
 #### 応答データの内容
 
-  - 正常終了した場合
-    
-      - 指定されたヘルプ情報を返します。
+- 正常終了した場合
+  - 指定されたヘルプ情報を返します。
 
-  - 異常終了した場合
-    
-      - 指定可能な Help-Command 等の情報を返します。
+- 異常終了した場合
+  - 指定可能な Help-Command 等の情報を返します。
 
 #### 入出力データの例
 
@@ -879,7 +925,7 @@ WABI BLAST のヘルプ情報を返します。
 
 正常終了した場合の応答データ例
 
-``` code
+``` 
 1 {
 2     "result": [
 3         "www",
@@ -890,7 +936,7 @@ WABI BLAST のヘルプ情報を返します。
 
 異常終了の場合の応答データ例
 
-``` code
+``` 
  1 {
  2     "help_commands": [
  3         "list_datasets",
@@ -909,13 +955,19 @@ WABI BLAST のヘルプ情報を返します。
 16 }
 ```
 
-#### [利用例](javascript:void\(0\))
+{::options parse_block_html="true" /}
+<dl class="example-of-use">
+  <dt><a href="javascript:void(0)">利用例</a></dt>
+<dd>Java で SpringFramework の RESTクライアント を使う場合:
+   <script src="https://gist.github.com/ddbj-repo/324515b540e438c23e5589dfa40f9aed.js"></script>
 
-Java で SpringFramework の RESTクライアント を使う場合:
+[« 閉じる](javascript:void(0)){: .close-btn}
+</dd>
+</dl>
 
 ## WABI BLAST パラメータ
 
-### requestId：Request ID
+### requestId：Request ID<a name="parameter-Request-ID"></a>
 
 WABI に登録されている全ての [BLAST検索ジョブ](#search-job)
 の中から処理対象としているジョブを識別するための文字列です。  
@@ -930,13 +982,13 @@ WABI に登録されている全ての [BLAST検索ジョブ](#search-job)
 
 Request ID の例:
 
-``` code
+``` 
 wabi_blast_1111-1111-1111-11-111-111111
 ```
 
 参考：[BLAST ヘルプ Request ID](/blast-help.html#request%20id)
 
-### querySequence：検索配列データ
+### querySequence：検索配列データ<a name="parameter-querySequence"></a>
 
   - FASTA 形式で検索配列を指定してください。
   - 配列名を付ける場合は、先頭に `">"` を付けた配列名の行を各配列の前においてください。
@@ -947,7 +999,7 @@ wabi_blast_1111-1111-1111-11-111-111111
 
 FASTA 形式の例
 
-``` brush: plain
+``` 
 >my query sequence 1
 CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
 GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
@@ -956,7 +1008,7 @@ GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
 
 複数配列の例 (multi FASTA 形式)
 
-``` brush: plain
+``` 
 >my query sequence 1
 CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
 GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
@@ -970,16 +1022,18 @@ ATGGGTCTCACCTCCCAACTGCTTCCCCCTCTGTTCTTCCTGCTAGCATGTGCCGGCAAC
 TTTGCCCACGGACACAACTGCCATATCGCCTTACGGGAGATCATCGAAACTCTGAACAGC
 CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 ```
-
+{::options parse_block_html="true" /}
+<div class="attention">
 配列サイズが巨大な場合や配列数が多い場合など、次のような理由で結果を正常に取得できないことがあります。  
 そのような場合は、配列数を少なくするか配列を短くする等して再度お試しください。
 
   - メモリー枯渇で異常終了となる。
   - 検索時間が長くなり過ぎてタイムアウトする。
+</div>
 
-参考：[BLAST ヘルプ Query:検索配列名，検索配列データ](/blast-help.html#query)
+参考：[BLAST ヘルプ Query:検索配列名，検索配列データ]({{site.baseurl}}/search_analysis/BLAST.html#query)
 
-### datasets：データセット
+### datasets：データセット<a name="parameter-datasets"></a>
 
 データセットは、 Web画面のフォームで入力を補助するために用意されていますが、現在、 WABI では使われていません。
 
@@ -1001,9 +1055,9 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 | `refseq_na`      | RefSeq NA                                          |
 | `refseq_aa`      | RefSeq AA                                          |
 
-参考：[BLAST ヘルプ 塩基配列（データベース，DIVISION）](/blast-help.html#nucleotide)
+参考：[BLAST ヘルプ 塩基配列（データベース，DIVISION）]({{site.baseurl}}/search_analysis/BLAST.html#nucleotide)
 
-### database：データベース
+### database：データベース<a name="parameter-database"></a>
 
 #### 塩基配列データベース
 
@@ -1034,11 +1088,15 @@ DDBJ ALL, DDBJ NEW データベース値
 |  `phg`, `new_phg`  |  Phages  |  バクテリオファージ  |
 |  `syn`, `new_syn`  |  Synthetic DNAs  |  合成配列 （合成遺伝子） (SYN)  |
 |  `env`, `new_env`  |  ENV  |  環境サンプル (environmental samples)  |
+
 |  High throughput divisions  |    |    |
+| ---- | ---- | ---- |
 |  `htc`, `new_htc`  |  HTC  |  High Throughput cDNAs  |
 |  `htg`, `new_htg`  |  HTG  |  High Throughput Genomic sequences  |
 |  `tsa`, `new_tsa`  |  TSA  |  Transcriptome Shotgun Assembly  |
+
 |  EST divisions  |    |    |
+| ---- | ---- | ---- |
 |  `est_atha`, `new_est_atha`  |  A.thaliana  |  *Arabidopsis thaliana* （シロイヌナズナ）  |
 |  `est_btra`, `new_est_btra`  |  B.taurus  |  *Bos taurus* （ウシ）  |
 |  `est_cele`, `new_est_cele`  |  C.elegans  |  *Caenorhabditis elegans* （線虫）  |
@@ -1061,7 +1119,9 @@ DDBJ ALL, DDBJ NEW データベース値
 |  `est_xtro`, `new_est_xtro`  |  X.tropicalis  |  *Xenopus tropicalis* （アフリカツメガエル）  |
 |  `est_zmay`, `new_est_zmay`  |  Z.mays  |  *Zea mays* （トウモロコシ）  |
 |  `est_rest`, `new_est_rest`  |  Others  |  上記以外 （Others）  |
+
 |  その他  |    |    |
+| ---- | ---- | ---- |
 |  `pat`, `new_pat`  |  Patent  |  特許データ (PAT)  |
 |  `una`, `new_una`  |  Unannotated Seq  |  未注釈データ (UNA)  |
 |  `gss`, `new_gss`  |  GSS  |  ゲノム研究関連 (genome survey sequences)  |
@@ -1125,11 +1185,15 @@ DAD ALL, DAD NEW データベース値
 |  `dad_phg`, `dad_new_phg`  |  Phages  |  バクテリオファージ  |
 |  `dad_syn`, `dad_new_syn`  |  Synthetic DNAs  |  合成配列 （合成遺伝子） (SYN)  |
 |  `dad_env`, `dad_new_env`  |  General  |  環境サンプル (environmental samples)  |
+
 |  High throughput divisions  |    |    |
+| ---- | ---- | ---- |
 |  `dad_htc`, `dad_new_htc`  |  HTC  |  High Throughput cDNAs  |
 |  `dad_htg`, `dad_new_htg`  |  HTG  |  High Throughput Genomic sequences  |
 |  `dad_tsa`, `dad_new_tsa`  |  TSA  |  Transcriptome Shotgun Assembly  |
+
 |  EST divisions  |    |    |
+| ---- | ---- | ---- |
 |  `dad_est_atha`, `dad_new_est_atha`  |  A.thaliana  |  *Arabidopsis thaliana* （シロイヌナズナ）  |
 |  `dad_est_btra`, `dad_new_est_btra`  |  B.taurus  |  *Bos taurus* （ウシ）  |
 |  `dad_est_cele`, `dad_new_est_cele`  |  C.elegans  |  *Caenorhabditis elegans* （線虫）  |
@@ -1152,7 +1216,9 @@ DAD ALL, DAD NEW データベース値
 |  `dad_est_xtro`, `dad_new_est_xtro`  |  X.tropicalis  |  *Xenopus tropicalis* （アフリカツメガエル）  |
 |  `dad_est_zmay`, `dad_new_est_zmay`  |  Z.mays  |  *Zea mays* （トウモロコシ）  |
 |  `dad_est_rest`, `dad_new_est_rest`  |  Others  |  上記以外 （Others）  |
+
 |  その他  |    |    |
+| ---- | ---- | ---- |
 |  `dad_pat`, `dad_new_pat`  |  Patent  |  特許データ (PAT)  |
 |  `dad_una`, `dad_new_una`  |  Unannotated Seq  |  未注釈データ (UNA)  |
 |  `dad_gss`, `dad_new_gss`  |  GSS  |  ゲノム研究関連 (genome survey sequences)  |
@@ -1183,9 +1249,9 @@ Refseq AA データベース値
 |  `refseq-model-protein-R_norvegicus`  |  R. norvegicus  |  ラット  |
 |  `refseq-model-protein-X_tropicalis`  |  X. tropicalis  |  アフリカツメガエル  |
 
-参考：[BLAST ヘルプ 塩基配列（データベース，DIVISION）](/blast-help.html#nucleotide)
+参考：[BLAST ヘルプ 塩基配列（データベース，DIVISION）]({{site.baseurl}}/search_analysis/BLAST.html#nucleotide)
 
-### program：BLASTプログラム
+### program：BLASTプログラム<a name="parameter-program"></a>
 
 解析の用途に合わせて、次の BLAST プログラムのいずれかを指定します。  
 ※ 最新の値は、こちらの API [GET /blast/help/{Help-Command}
@@ -1200,9 +1266,9 @@ Refseq AA データベース値
 |  blastp  |  アミノ酸配列  |  アミノ酸配列  |  あなたのアミノ酸配列をアミノ酸配列データベースと 比較します。  |
 |  blastx  |  塩基配列  |  アミノ酸配列  |  あなたの塩基配列を表裏合わせて６通りの読み枠で翻訳しながら，アミノ酸配列データベースと 比較します。  |
 
-参考：[BLAST ヘルプ Program：プログラム](/blast-help.html#program)
+参考：[BLAST ヘルプ Program：プログラム]({{site.baseurl}}/search_analysis/BLAST.html#program)
 
-### parameters：BLASTプログラムのオプション指定
+### parameters：BLASTプログラムのオプション指定<a name="parameter-parameters"></a>
 
 BLAST プログラムに指定できるオプションは次の通りです。  
 ※ 最新の値は、こちらの API [GET /blast/help/{Help-Command}
@@ -1216,12 +1282,12 @@ BLAST プログラムに指定できるオプションは次の通りです。
 |  `-B` *N*  |  "`megablast`" 以外  |  Number of concatenated queries, in  blastn or tblastn mode  |
 |  `-C` *X*  |  "`megablast`" 以外  |  Use composition-based statistics for blastp or tblastn: T, t, D, or d Default (equivalent to 1 for blast2 and blastall\_old and to 2 for blastall and blastcl3) 0, F, or f No composition-based statistics 1 Composition-based statistics as in NAR 29:2994-3005, 2001 2 Composition-based score adjustment as in Bioinformatics 21:902-911, 2005, conditioned on sequence properties 3 Composition-based score adjustment as in Bioinformatics 21:902-911, 2005, unconditionally When enabling statistics in blastall, blastall\_old, or blastcl3 (i.e., not blast2), appending u (case-insensitive) to the mode enables use of unified p-values combining alignment and compositional p-values in round 1 only.  |
 |  `-D` *N*  |  "`megablast`" 以外  |  Translate sequences in the database according to genetic code N in/usr/share/ncbi/data/gc.prt (default is 1; only applies to tblast\*)  |
-|  ^  |  `"megablast"`  |  Type of output: 0 alignment endpoints and score 1 all ungapped segments endpoints 2 traditional BLAST output (default) 3 tab-delimited one line format 4 incremental text ASN.1 5 incremental binary ASN.1  |
+|    |  `"megablast"`  |  Type of output: 0 alignment endpoints and score 1 all ungapped segments endpoints 2 traditional BLAST output (default) 3 tab-delimited one line format 4 incremental text ASN.1 5 incremental binary ASN.1  |
 |  `-E` *N*  |  `"megablast"`  |  Extending a gap costs N (-1 invokes default behavior)  |
-|  ^  |  "`megablast`" 以外  |  Extending a gap costs N (-1 invokes default behavior: non-affine if greedy, 2 otherwise)  |
+|    |  "`megablast`" 以外  |  Extending a gap costs N (-1 invokes default behavior: non-affine if greedy, 2 otherwise)  |
 |  `-F` *str*  |  全て  |  Filter options for DUST or SEG; defaults to T for bl2seq, blast2,blastall, blastall\_old, blastcl3, and megablast, and to F for blastpgp,impala, and rpsblast.  |
 |  `-G` *N*  |  `"megablast"`  |  Opening a gap costs N (-1 invokes default behavior)  |
-|  ^  |  "`megablast`" 以外  |  Opening a gap costs N (-1 invokes default behavior: non-affine if greedy, 5 if using dynamic programming)  |
+|    |  "`megablast`" 以外  |  Opening a gap costs N (-1 invokes default behavior: non-affine if greedy, 5 if using dynamic programming)  |
 |  `-H` *N*  |  `"megablast"`  |  Maximal number of HSPs to save per database sequence (default is 0,unlimited)  |
 |  `-I`  |  全て  |  Show GIs in deflines  |
 |  `-J`  |  全て  |  Believe the query defline  |
@@ -1231,7 +1297,7 @@ BLAST プログラムに指定できるオプションは次の通りです。
 |  `-M` *N*  |  `"megablast"`  |  Maximal total length of queries for a single search (default = 5000000)  |
 |  `-N` *N*  |  `"megablast"`  |  Type of a discontiguous word template: 0 coding (default) 1 optimal 2 two simultaneous  |
 |  `-P` *N*  |  "`megablast`" 以外  |  Set to 1 for single-hit mode or 0 for multiple-hit mode (default). Does not apply to blastn.  |
-|  ^  |  `"megablast"`  |  Maximal number of positions for a hash value (set to 0 [default\] to ignore)  |
+|    |  `"megablast"`  |  Maximal number of positions for a hash value (set to 0 [default\] to ignore)  |
 |  `-Q` *N*  |  "`megablast`" 以外  |  Translate query according to genetic code N in /usr/share/ncbi/data/gc.prt (default is 1)  |
 |  `-R`  |  `"megablast"`  |  Report the log information at the end of output  |
 |  `-S` *N*  |  全て  |  Query strands to search against database for blastn, blastx, tblastx: 1 top 2 bottom 3 both (default)  |
@@ -1247,19 +1313,18 @@ BLAST プログラムに指定できるオプションは次の通りです。
 |  `-f` *X*  |  "`megablast`" 以外  |  Threshold for extending hits, default if zero: 0 for blastn and megablast, 11 for blastp, 12 for blastx, and 13 for tblasn and tblastx.  |
 |  `-f`  |  `"megablast"`  |  Show full IDs in the output (default: only GIs or accessions)  |
 |  `-g` *F*  |  "`megablast`" 以外  |  Do not perform gapped alignment (N/A for tblastx)  |
-|  ^  |  `"megablast"`  |  Make discontiguous megablast generate words for every base of the database (mandatory with the current BLAST engine)  |
+|    |  `"megablast"`  |  Make discontiguous megablast generate words for every base of the database (mandatory with the current BLAST engine)  |
 |  `-l` *str*  |  全て  |  Restrict search of database to list of GI's \[String\]  |
 |  `-m` *N*  |  全て  |  alignment view options: 0 pairwise (default) 1 query-anchored showing identities 2 query-anchored, no identities 3 flat query-anchored, show identities 4 flat query-anchored, no identities 5 query-anchored, no identities and blunt ends 6 flat query-anchored, no identities and blunt ends 7 XML Blast output (not available for impala) 8 tabular (not available for impala) 9 tabular with comment lines (not available for impala) 10 ASN.1 text (not available for impala or rpsblast) 11 ASN.1 binary (not available for impala or rpsblast)  |
 |  `-n`  |  "`megablast`" 以外  |  MegaBlast search  |
-|  ^  |  `"megablast"`  |  Use non-greedy (dynamic programming) extension for affine gap scores  |
+|    |  `"megablast"`  |  Use non-greedy (dynamic programming) extension for affine gap scores  |
 |  `-p` *X*  |  `"megablast"`  |  Identity percentage cut-off (default = 0)  |
 |  `-q` *N*  |  全て  |  Penalty for a nucleotide mismatch (blastn only) (default = -10 for seedtop, -3 for everything else)  |
 |  `-r` *N*  |  全て  |  Reward for a nucleotide match (blastn only) (default = 10 for seedtop, -10 for everything else)  |
-|  `-s`  |  "`megablast`" 以外  |  Compute locally optimal Smith-Waterman alignments. For blastall, blastall\_old, and blastcl3, this is only available in gapped tblastn
-mode.  |
+|  `-s`  |  "`megablast`" 以外  |  Compute locally optimal Smith-Waterman alignments. For blastall, blastall\_old, and blastcl3, this is only available in gapped tblastn mode.  |
 |  `-s` *N*  |  `"megablast"`  |  Minimal hit score to report (0 for default behavior)  |
 |  `-t` *N*  |  "`megablast`" 以外  |  Length of a discontiguous word template (the largest intron allowed in a translated nucleotide sequence when linking multiple distinct assignments; default = 0; negative values disable linking for blastall,blastall\_old, and blastcl3.)  |
-|  ^  |  `"megablast"`  |  Length of a discontiguous word template (contiguous word if 0[default\])  |
+|    |  `"megablast"`  |  Length of a discontiguous word template (contiguous word if 0[default\])  |
 |  `-v` *N*  |  全て  |  Number of one-line descriptions to show (V) (default = 500)  |
 |  `-w` *N*  |  "`megablast`" 以外  |  Frame shift penalty (OOF algorithm for blastx)  |
 |  `-y` *X*  |  "`megablast`" 以外  |  X dropoff for ungapped extensions in bits (0.0 invokes default behavior: 20 for blastn, 10 for megablast, and 7 for all others.)  |
@@ -1268,13 +1333,13 @@ mode.  |
 
 BLAST プログラムのオプションの例:
 
-``` code
+``` 
 -v 100 -b 100 -e 10 -F F -W 11
 ```
 
-参考：[BLAST ヘルプ Optional Parameters](/blast-help.html#parameters)
+参考：[BLAST ヘルプ Optional Parameters]({{site.baseurl}}/search_analysis/BLAST.html#parameters)
 
-### format：応答データの形式
+### format：応答データの形式<a name="parameter-format"></a>
 
 WABI からの応答データの形式を次の中から指定できます。  
 ※ 最新の値は、こちらの API [GET /blast/help/{Help-Command}
@@ -1291,7 +1356,7 @@ WABI からの応答データの形式を次の中から指定できます。
 
 ※指定された形式の応答データを作成することが出来ない状態の場合は入力値エラーと扱って、 WABI は HTTP エラーを返します。
 
-### result：結果取得方法
+### result：結果取得方法<a name="parameter-result"></a>
 
 処理結果を取得する方法を次の中から指定します。  
 ※ 最新の値は、こちらの API [GET /blast/help/{Help-Command}
@@ -1302,11 +1367,11 @@ WABI からの応答データの形式を次の中から指定できます。
 | `www`    | 結果取得用の URI にリクエストして、その応答データとして処理結果を受け取ります。 |
 | `mail`   | 指定されているメールアドレス宛てに処理結果を送信します。               |
 
-### address：メールアドレス
+### address：メールアドレス<a name="parameter-address"></a>
 
 処理結果をメール通知する場合の宛先アドレスです。
 
-### info：参照するジョブ情報の種類
+### info：参照するジョブ情報の種類<a name="parameter-info"></a>
 
 検索ジョブから次の各種情報を参照できます。  
 ※ 最新の値は、こちらの API [GET /blast/help/{Help-Command}
@@ -1319,7 +1384,7 @@ WABI からの応答データの形式を次の中から指定できます。
 |  `result`  |  検索処理の結果  |
 |  `request`  |  ジョブを登録した際に指定した検索条件  |
 
-### imageId：検索処理出力画像のID
+### imageId：検索処理出力画像のID<a name="parameter-imageId"></a>
 
 検索処理が出力した画像データを取得するための ID です。
 
@@ -1329,13 +1394,13 @@ WABI からの応答データの形式を次の中から指定できます。
 
 検索処理出力画像のID の例:
 
-``` code
+``` 
 1
 ```
 
 ## その他
 
 検索結果は 7日間 保存されます。  
-( [「Request ID，検索結果表示」](/blast-help.html#result) の「検索結果閲覧期間」より。)  
+( [「Request ID，検索結果表示」]({{site.baseurl}}/search_analysis/BLAST.html#result) の「検索結果閲覧期間」より。)  
 その期間中であれば、 [Request ID](#parameter-Request-ID) を指定して `GET` リクエストすることで、
 [処理結果を参照する](#URI_GET_result) ことが可能です。
