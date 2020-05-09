@@ -6,13 +6,15 @@ category: search_analysis
 lang: ja
 ---
 <div id="NavigationAndMainView">
-  <div class="inner">
-    <nav class="internal-link">
-      <h2>タグ</h2>
-      {{ site.data.service_tag }}
+  <div class="inner -stretched">
+    <nav class="subview">
+      <div class="internal-link">
+        <h2>タグ</h2>
+        {{ site.data.service_tag }}
+      </div>
     </nav>
-    <main id="MainContentView">
-      <ul id="ServicePanels">
+    <main class="mainview -beige">
+      <ul id="ServicesView">
         {% for service in site.search_analysis %}
           <li class="panel">
             <h2 class="title">

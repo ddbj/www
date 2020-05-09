@@ -7,3 +7,6 @@ search:
 analysis:
   en: Analysis
   ja: 解析
+sequence:
+  en: Sequence
+  ja: 塩基配列
