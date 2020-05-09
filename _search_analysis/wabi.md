@@ -11,11 +11,12 @@ WABI は、 DDBJの検索サービス を Web画面 を介せずに利用でき�
 具体例として BLAST の検索条件を確認する場合を示してみますと、次のような URI に対して `GETメソッド` で HTTPリクエスト
 することによって、下のようなレスポンスを受け取ることができます。
 
-``` code
+``` 
 http://ddbj.nig.ac.jp/wabi/blast/wabi_blast_1111-1111-1111-11-111-111111?info=request&format=json
 ```
 
-``` code scroll
+
+```
  1{
  2        "address": "",
  3        "database": "hum",
@@ -30,9 +31,9 @@ http://ddbj.nig.ac.jp/wabi/blast/wabi_blast_1111-1111-1111-11-111-111111?info=re
 
 現在 WABI は、次のサービスの Web API を提供しています。
 
-  - [BLAST](/wabi_blast-help.html)
-  - [getentry](/getentry-help.html#ge_program)
-  - [ARSA](/arsa-help.html)
-  - [ClustalW](/wabi_clustalw-help.html)
-  - [VecScreen](/wabi_vecscreen-help.html)
-  - [MAFFT](/wabi_mafft-help.html)
+  - [BLAST]({{site.baseurl}}/search_analysis/wabiBLAST.html)
+  - [getentry]({{site.baseurl}}/search_analysis/getentry.html)
+  - [ARSA]({{site.baseurl}}/search_analysis/ARSA.html)
+  - [ClustalW]({{site.baseurl}}/search_analysis/wabiClustalw.html)
+  - [VecScreen]({{site.baseurl}}/search_analysis/wabiVecScreen.html)
+  - [MAFFT]({{site.baseurl}}/search_analysis/wabiMAFFT.html)

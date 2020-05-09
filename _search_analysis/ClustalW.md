@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: ClustalW
+title: ClustalW ヘルプ
 pathname: ClustalW
 service_link: http://clustalw.ddbj.nig.ac.jp/index.php?lang=ja
 category: search_analysis

@@ -3,11 +3,13 @@ $MARGIN_BOTTOM: 1rem
 .md-content
   font-size: 1.4rem
   line-height: 2
+  .highlight
+    overflow: scroll
 
   p, table, ol, ul, dl, .highlighter-rouge
     margin-bottom: $MARGIN_BOTTOM
   .red
-    color:
+    color: $COLOR_RED
 
   h2
     font-size: 1.8rem
@@ -21,7 +23,7 @@ $MARGIN_BOTTOM: 1rem
   ul
     li
       padding: .4rem 0
-      line-height: 1.2
+      line-height: 1.6
       list-style-position: inside
 
   dl
@@ -66,15 +68,26 @@ $MARGIN_BOTTOM: 1rem
       margin-top: -$MARGIN_BOTTOM - 0.1rem
 
   .highlighter-rouge
-    background-color: $COLOR_BLACK
-    color: white
-    padding: .6rem 1rem
+    background-color: $COLOR_LIGHT_VELY_PALE
+    color: black
+    padding: .3rem .6rem
   code
     font-size: 1.2rem
     line-height: 1.6
     font-family: 'courier', monospace
   
   .attention
-    background-color: $COLOR_BEIGE
+    background-color: $COLOR_KEY_VELY_PALE
     padding: 2rem
     border-left: 6px solid $COLOR_KEY_PALE
+
+  .example-of-use dt 
+    cursor: pointer
+
+  .example-of-use dd 
+    display: none
+    margin: 0
+
+  .close-btn
+    text-align: right
+    display: block
