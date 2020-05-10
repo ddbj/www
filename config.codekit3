@@ -1985,6 +1985,19 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/_sass/object/component/_appearance-switch.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_sass/object/assets/css/_appearance-switch.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
 	"/_sass/object/component/_arrowed-link.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -3092,6 +3105,17 @@
 		"iS": 156186,
 		"oA": 0,
 		"oAP": "/assets/images/help/VecScreen-Usage.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/help/wabi_blast_imagedata.png": {
+		"ft": 32768,
+		"iS": 57178,
+		"oA": 0,
+		"oAP": "/assets/images/help/wabi_blast_imagedata.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

@@ -93,7 +93,30 @@ window.onload = function () {
   $('.close-btn').click(function () {
     $(this).parents('.example-of-use dd').slideUp();
 });
+
+
+  // 外観変更スイッチ
+  switchAppearance();
   
 }
 
-
+// 外観変更スイッチ
+function switchAppearance() {
+  const appearanceWwitch = document.querySelector('.appearance-switch');
+  const buttons = appearanceWwitch.querySelectorAll('.button');
+  if (appearanceWwitch) {
+    buttons.forEach(button => {
+      button.addEventListener('click', e => {
+        appearanceWwitch.parentNode.dataset.appearanceType = e.target.dataset.appearanceValue;
+        // ボタンのハイライト切替
+        buttons.forEach(button => {
+          if (button === e.target) {
+            button.classList.add('-current');
+          } else {
+            button.classList.remove('-current');
+          }
+        });
+      });
+    });
+  }
+}
