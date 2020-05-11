@@ -31,12 +31,14 @@ result に mail を指定した場合は address も必須となります。
 ## サンプルスクリプト
 
 vecscreen-client.pl
+<script src="//gist.github.com/ddbj-repo/62a1a3390d0cf4e2df701c20704df498.js"></script>
+
 
 ### 複数配列のベクター配列のチェック
 
 conf.json
 
-``` code
+``` 
 {
   "urlStr": "http://ddbj-staging.nig.ac.jp/wabi/vecscreen/",
   "fasta": "/home/hoge/script/vec.fasta",
@@ -45,12 +47,12 @@ conf.json
   "result": "www",
   "address": ""
 }
-      
+
 ```
 
 vec.fasta
 
-``` code
+``` 
 >1
 tgaattcgagctcggtacccggggatcctctagagtcgacctgcaggcatgcaagcttggc
 >2
@@ -63,13 +65,13 @@ cgaattcgagctcggtacccggggatcctctagagtcgacctgcaggcatgcaagcttggc
 
 multi fastaデータをvecscreenにかけてベクター配列の有無をチェックする
 
-``` code
+``` 
 hoge@huga ~/script $ perl vecscreen-client.pl vecscreen_conf.json
 request-ID: wabi_vecscreen_2013-1009-1446-20-728-899018
 waiting
 finished
 Search result is outputed to wabi_vecscreen_2013-1009-1446-20-728-899018.txt
-      
+
 ```
 
 出力された wabi\_vecscreen\_2013-1009-1446-20-728-899018.txt は、ジョブ実行時に

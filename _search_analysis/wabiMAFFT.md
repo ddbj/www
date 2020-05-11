@@ -36,12 +36,13 @@ result に mail を指定した場合は address も必須となります。
 ## サンプルスクリプト
 
 mafft-client.pl
+<script src="https://gist.github.com/ddbj-repo/a1b4cdda6a78fa382e9df55c4441f5a1.js"></script>
 
 ### 例1：複数配列の multiple alignment
 
 conf.json
 
-``` code
+``` 
 {
   "url": "http://ddbj.nig.ac.jp/wabi/mafft/",
   "querySequence": "/home/hoge/cyc_aa.fasta",
@@ -54,7 +55,7 @@ conf.json
 
 cyc\_aa.fasta
 
-``` code
+``` 
 >mms:mma_0447
 MYRFTKTVVALLLATSGTMALAQAAYTNIGRPATAKEIAAWDIDVRPDFKGLPPGSGTVA
 KGMAVWEGKCASCHGTFGESNEVFTPIVGGTTKEDIKSGHVAALSNNKQPQRTTIMKVPT
@@ -98,14 +99,14 @@ multi fasta データから global pairwise alignment で multiple alignment
 
 実行されるコマンド
 
-``` code scroll
+``` 
 $ mafft --globalpair --maxiterate 1000 /home/hoge/cyc_aa.fasta > outfile
       
 ```
 
 実行の様子
 
-``` code
+``` 
 $ perl mafft-client.pl conf.json
 Execute multiple sequence alignment.
 request-ID: wabi_mafft_2013-1015-1123-50-232-114016
@@ -115,7 +116,7 @@ mafft result is outputed to wabi_mafft_2013-1015-1123-50-232-114016.txt
       
 ```
 
-``` code
+``` 
 $ cat wabi_mafft_2013-1015-1123-50-232-114016.txt 
 >mms:mma_0447
 MYRFTKTVVALLLAT----SGTMALAQ---AAYTNIGRPATAKEIAAWDIDVRPDFKGLP
@@ -164,7 +165,7 @@ DEDLKTLVQWILAGSK
 
 conf.json
 
-``` code
+``` 
 {
   "url": "http://ddbj.nig.ac.jp/wabi/mafft/",
   "profile1": "/home/hoge/wabi_mafft_2013-1015-1123-50-232-114016.txt",
@@ -181,14 +182,14 @@ conf.json
 
 実行されるコマンド
 
-``` code scroll
+``` 
 $ mafft --maxiterate 1000 --clustalout --seed /home/hoge/wabi_mafft_2013-1015-1123-50-232-114016.txt --seed /home/hoge/wabi_mafft_2013-1015-1136-16-420-058820.txt > out.txt
       
 ```
 
 実行の様子
 
-``` code
+``` 
 $ perl mafft-client.pl conf2.json
 Execute multiple sequence alignment.
 request-ID: wabi_mafft_2013-1015-1137-15-648-960788
@@ -198,7 +199,7 @@ mafft result is outputed to wabi_mafft_2013-1015-1137-15-648-960788.txt
       
 ```
 
-``` code
+``` 
 $ cat wabi_mafft_2013-1015-1137-15-648-960788.txt 
 CLUSTAL format alignment by MAFFT FFT-NS-i (v6.864b)
  
@@ -272,7 +273,7 @@ _seed_reh:H16_A IPDSDVQAMVGWILEA--K
 
 conf.json
 
-``` code
+``` 
 {
   "url": "http://ddbj.nig.ac.jp/wabi/mafft/",
   "querySequence": "/home/hoge/wabi_mafft_2013-1015-1123-50-232-114016.txt",
@@ -286,7 +287,7 @@ conf.json
 
 cyc\_aa2.fasta
 
-``` code
+``` 
 >lch:Lcho_3783
 MSSSPKWLAAAVLALAAAGSLAQVTAVGIGRAATEKEIKAWDIDVRPDFKGLPKGSGTVE
 QGMEVWEAKCAHCHGVFGESNEVFSPLVGGTTADDVKTGHVARLNDPTFPGRTTLMKVAT
@@ -309,14 +310,14 @@ DAHGALARKVKAGGQGAWGSVPMPAQPQIPDSDVQAMVGWILEAK
 
 実行されるコマンド
 
-``` code scroll
+``` 
 $ mafft --globalpair --maxiterate 1000 --clustalout --add /home/hoge/cyc_aa2.fasta /home/hoge/wabi_mafft_2013-1015-1123-50-232-114016.txt > out.txt
       
 ```
 
 実行の様子
 
-``` code
+``` 
 $ perl mafft-client.pl conf2.json 
 request-ID: wabi_mafft_2016-0704-1739-30-54-065372
 waiting
@@ -325,7 +326,7 @@ mafft result is outputed to wabi_mafft_2016-0704-1739-30-54-065372.txt
       
 ```
 
-``` code
+``` 
 $ cat wabi_mafft_2016-0704-1739-30-54-065372.txt
 CLUSTAL format alignment by MAFFT G-INS-1 (v7.299b)
  
