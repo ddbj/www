@@ -1,8 +1,23 @@
+
 #NavigationAndMainView
   border-bottom: .3rem solid $COLOR_BROWN
   background-color: white
   > .inner
     +inner
     display: flex
-    > #MainContentView
+    > .subview
+      width: calc( (100vw - #{$WIDTH_MAX}) * 0.5 + #{$WIDTH_NAV_AND_MAIN_SUBVIEW} )
+      min-width: $WIDTH_NAV_AND_MAIN_SUBVIEW
+      border-right: 1px solid #282725
+      > *
+        margin-left: auto
+        width: $WIDTH_NAV_AND_MAIN_SUBVIEW
+        position: sticky
+        top: 0
+    > .mainview
+      width: calc( (100vw - #{$WIDTH_MAX}) * 0.5 + (#{$WIDTH_MAX} - #{$WIDTH_NAV_AND_MAIN_SUBVIEW}) )
+      &.-beige
+        background-color: $COLOR_BEIGE
+      > *
+        max-width: calc(#{$WIDTH_MAX} - #{$WIDTH_NAV_AND_MAIN_SUBVIEW})
   

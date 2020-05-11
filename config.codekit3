@@ -7,7 +7,7 @@
 		"uuidString": "3DC8E7FC-C471-446D-8EEF-270A0B0878D5"
 		}
 	],
-"creatorBuild": "32137",
+"creatorBuild": "32147",
 "files": {
 	"/.gitignore": {
 		"cB": 0,
@@ -1985,6 +1985,19 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/_sass/object/component/_appearance-switch.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_sass/object/assets/css/_appearance-switch.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 1
+		},
 	"/_sass/object/component/_arrowed-link.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -2024,7 +2037,7 @@
 		"oS": 0,
 		"sct": 1
 		},
-	"/_sass/object/component/_internallink-navigation.sass": {
+	"/_sass/object/component/_internal-link.sass": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2032,7 +2045,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/_sass/object/assets/css/_internallink-navigation.css",
+		"oAP": "/_sass/object/assets/css/_internal-link.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
@@ -2154,19 +2167,6 @@
 		"oS": 0,
 		"sct": 1
 		},
-	"/_sass/object/project/_InternalLink.sass": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 2,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_sass/object/assets/css/_InternalLink.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 1
-		},
 	"/_sass/object/project/_MainContentView.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -2219,7 +2219,7 @@
 		"oS": 0,
 		"sct": 1
 		},
-	"/_sass/object/project/_ServicePanels.sass": {
+	"/_sass/object/project/_ServicesView.sass": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -2227,7 +2227,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/_sass/object/assets/css/_ServicePanels.css",
+		"oAP": "/_sass/object/assets/css/_ServicesView.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
@@ -3105,6 +3105,17 @@
 		"iS": 156186,
 		"oA": 0,
 		"oAP": "/assets/images/help/VecScreen-Usage.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/help/wabi_blast_imagedata.png": {
+		"ft": 32768,
+		"iS": 57178,
+		"oA": 0,
+		"oAP": "/assets/images/help/wabi_blast_imagedata.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

@@ -17,6 +17,7 @@ target_data:
 affiliation: DDBJ
 tags:
   - search
+  - sequence
 flag: true
 ---
 

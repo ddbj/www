@@ -6,15 +6,22 @@ category: search_analysis
 lang: ja
 ---
 <div id="NavigationAndMainView">
-  <div class="inner">
-    <nav class="internal-link">
-      <h2>タグ</h2>
-      {{ site.data.service_tag }}
+  <div class="inner -stretched">
+    <nav class="subview">
+      <nav class="">
+        <h2>タグ</h2>
+        {{ site.data.service_tag }}
+      </nav>
     </nav>
-    <main id="MainContentView">
-      <ul id="ServicePanels">
-        {% for service in site.search_analysis %}
-          <li class="panel">
+    <main class="mainview -beige">
+      <div id="ServicesView" data-appearance-type="panel">
+        <nav class="appearance-switch">
+          <div class="button -current" data-appearance-value="panel"></div>
+          <div class="button" data-appearance-value="list"></div>
+        </nav>
+        <ul class="container">
+          {% for service in site.search_analysis %}
+          <li class="service">
             <h2 class="title">
               <a href="{{ service.service_link[page.lang] }}">{{ service.title }}</a>
               
@@ -34,8 +41,9 @@ lang: ja
               </ul>
             </nav>
           </li>
-        {% endfor %}
-      </ul>
+          {% endfor %}
+        </ul>
+      </div>
     </main>
   </div>
 </div>
