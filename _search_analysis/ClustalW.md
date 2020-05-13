@@ -1,10 +1,19 @@
 ---
 layout: indexed_content
 title: ClustalW ヘルプ
+service_link:
+  en: http://clustalw.ddbj.nig.ac.jp/index.php?lang=ja
+  ja: http://clustalw.ddbj.nig.ac.jp/index.php?lang=en
 pathname: ClustalW
-service_link: http://clustalw.ddbj.nig.ac.jp/index.php?lang=ja
 category: search_analysis
+description:
+  en: DMultiple alignment and tree-making
+  ja: 塩基・アミノ酸配列の多重整列と系統樹作成
+affiliation: DDBJ
+tags:
+  - analysis
 ---
+
 ClustalW は，DNA配列やタンパク質配列の多重整列のためのツールです。<br>DDBJ では，通常版（最新バージョン）と DDBJ拡張版(Version 1.83, Modified by Dr. Kirill Kryukov) を提供しています。
 
 ## Version
@@ -72,6 +81,7 @@ DNA /Protein  Weight Matrix
 |  BLOSUM  |  相同性検索を行なう際に最も広く用いられています。  |
 |  PAM  |  この行列は1970年代後半以来，極めて広く使われています。Dayhoff's matrix とも呼ばれています。  |
 |  ID  |  同一のアミノ酸には 1 を，異なるアミノ酸には 0 を与えます。  |
+
 
 |  DNA&nbsp;Weight&nbsp;Matrix  |    |
 | ---- | ---- |
@@ -146,6 +156,7 @@ ITERATION
 
 NUMITER
 :   反復回数の最大値を示します。デフォルトは&nbsp;1&nbsp;です。
+
 CLUSTERING
 :   Clustering のタイプを指定します。デフォルトは&nbsp;NJ&nbsp;です。
 
@@ -196,6 +207,7 @@ Distance
 |  Tajima-Nei<span class="red">＊</span>	  |   {::nomarkdown}<table><tr><td></td><td>T</td><td>C</td><td>A</td><td>G</td></tr><tr><td>T</td><td>-</td><td>απ<sub>C</sub></td><td>απ<sub>A</sub></td><td>απ<sub>G</sub></td></tr> <tr><td>C</td><td>απ<sub>T</sub></td><td>-</td><td>απ<sub>A</sub></td><td>απ<sub>G</sub></td></tr> <tr><td>A</td><td>απ<sub>T</sub></td><td>απ<sub>C</sub></td><td>-</td><td>απ<sub>G</sub></td></tr> <tr><td>G</td><td>απ<sub>T</sub></td><td>απ<sub>C</sub></td><td>απ<sub>A</sub></td><td>-</td></tr></table>{:/}  |  塩基の平衡頻度を考慮して推定された塩基置換数  |
 |  Gojobori-Ishii-Nei<span class="red">＊</span>	  |   {::nomarkdown}<table><tr><td></td><td>T</td><td>C</td><td>A</td><td>G</td></tr> <tr><td>T</td><td>-</td><td>β</td><td>γ</td><td>β</td></tr> <tr><td>C</td><td>α</td><td>-</td><td>α</td><td>δ</td></tr> <tr><td>A</td><td>ε</td><td>β</td><td>-</td><td>β</td></tr> <tr><td>G</td><td>α</td><td>ζ</td><td>α</td><td>-</td></tr></table>{:/}  |  GC と TA 間で速度が異なり、他の置換については全て速度が異なると仮定して推定された塩基置換数  |
 |  Tamura-Nei<span class="red">＊</span>  |  {::nomarkdown}<table><tr><td></td><td>T</td><td>C</td><td>A</td><td>G</td></tr><tr><td>T</td><td>-</td><td>α<sub>2</sub>π<sub>C</sub></td><td>βπ<sub>A</sub></td><td>βπ<sub>G</sub></td></tr><tr><td>C</td><td>α<sub>2</sub>π<sub>T</sub></td><td>-</td><td>βπ<sub>A</sub></td><td>βπ<sub>G</sub></td></tr><tr><td>A</td><td>βπ<sub>T</sub></td><td>βπ<sub>C</sub></td><td>-</td><td>α<sub>1</sub>π<sub>G</sub></td></tr><tr><td>G</td><td>βπ<sub>T</sub></td><td>βπ<sub>C</sub></td><td>α<sub>1</sub>π<sub>A</sub></td><td>-</td></tr></table>{:/}  |  トランジションとトランスバージョンの速度が異なるだけでなく、トランジションの速度も TC と AG 間で異なると仮定し、さらに塩基の平衡頻度を考慮して推定された塩基置換数  |
+||||
 
 |{::nomarkdown}<ul id="disc"><li>α, α<sub>1</sub>, α<sub>2</sub> ,β, γ, δ, ε, ζ, κ : 塩基置換速度</li><li>π<sub>T</sub>, π<sub>C</sub>, π<sub>A</sub>, π<sub>G</sub>, π<sub>GC</sub> : 平衡塩基頻度</li></ul>{:/}|   |   |
 
@@ -229,20 +241,16 @@ SEED
 
 ### ClustalW 解析結果
 
-（１）解析結果
-
+1. 解析結果
 :   ![解析結果]({{ site.baseurl }}/assets/images/help/clustalw_01.gif)
 
-（２）Multiple Alignment の結果
-
+2. Multiple Alignment の結果
 :   ![Multiple Alignment の結果]({{ site.baseurl }}/assets/images/help/clustalw_02.gif)
 
-（３）Guide Tree
-
+3. Guide Tree
 :   ![Guide Tree]({{ site.baseurl }}/assets/images/help/clustalw_03.gif)
 
-（４）BOOTSTRAP 計算結果
-
+4. BOOTSTRAP 計算結果
 :   ![BOOTSTRAP 計算結果]({{ site.baseurl }}/assets/images/help/clustalw_04.gif)
 
 <span class="red">（注意）</span>2012年4月より，全ての解析時に BOOTSTRAP の計算を実行します。ただし，入力フォームで[FORMAT] と [CLUSTERING] の選択が以下の様な組み合わせのときには .phb ファイルは作成されません。
@@ -263,13 +271,12 @@ SEED
 Request ID は，入力内容送信後の画面に表示されます。問い合わせ等の場合にも必要になりますので，必ず控えておいてください。  
 URLが他人に知られると他人に解析結果が分かってしまうため，ご注意ください。
 
-//clustalw.ddbj.nig.ac.jp/cgi-bin/clustalwr.cgi?id=Request ID&output=aln1 
+//clustalw.ddbj.nig.ac.jp/cgi-bin/clustalwr.cgi?id=**Request ID**&output=aln1 
 
 ## ClustalW について
 
 * このプログラムは：ClustalW2.1
 * 参考文献
-* Larkin MA, Blackshields G, Brown NP, Chenna R, McGettigan PA, McWilliam H, Valentin F, Wallace IM, Wilm A, Lopez R, Thompson JD, Gibson TJ, Higgins DG. 
-    (2007). Clustal W and Clustal X version 2.0. Bioinformatics, 23, 2947-2948. 
-* Chenna R, Sugawara H, Koike T, Lopez R, Gibson TJ, Higgins DG, Thompson JD. (2003) Multiple sequence alignment with the Clustal series of programs. Nucleic Acids Res. 31(13):3497-500.
-* Thompson JD, Higgins DG, Gibson TJ. (1994) CLUSTAL W: improving the sensitivity of progressive multiple sequence alignment through sequence weighting, position-specific gap penalties and weight matrix choice. Nucleic Acids Res. 22(22):4673-80.
+  * Larkin MA, Blackshields G, Brown NP, Chenna R, McGettigan PA, McWilliam H, Valentin F, Wallace IM, Wilm A, Lopez R, Thompson JD, Gibson TJ, Higgins DG. (2007). Clustal W and Clustal X version 2.0. Bioinformatics, 23, 2947-2948. 
+  * Chenna R, Sugawara H, Koike T, Lopez R, Gibson TJ, Higgins DG, Thompson JD. (2003) Multiple sequence alignment with the Clustal series of programs. Nucleic Acids Res. 31(13):3497-500.
+  * Thompson JD, Higgins DG, Gibson TJ. (1994) CLUSTAL W: improving the sensitivity of progressive multiple sequence alignment through sequence weighting, position-specific gap penalties and weight matrix choice. Nucleic Acids Res. 22(22):4673-80.
