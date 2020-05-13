@@ -10,21 +10,7 @@ lang: ja
     <nav class="subview">
       <nav class="facet-search">
         <h2 class="title">タグ</h2>
-        <ul class="tags">
-          <li class="service-tag">
-            検索
-            <span class="count">10</span>
-          </li>
-          <li class="service-tag">
-            解析
-            <span class="count">10</span>
-          </li>
-          <li class="service-tag -disable">
-            関連情報
-            <span class="count">10</span>
-          </li>
-        </ul>
-        {{ site.data.service_tag }}
+        <ul class="tags"></ul>
       </nav>
     </nav>
     <main class="mainview -beige">
@@ -41,12 +27,12 @@ lang: ja
                 <a href="{{ service.service_link[page.lang] }}">{{ service.title }}</a>
               </h2>
               <ul class="tags">
-                {% if service.affiliation %}
-                <li class="service-tag -reverse">{{ service.affiliation }}</li>
-                {% endif %}
                 {% for tag in service.tags %}
-                <li class="service-tag">{{ site.data.service_tag[tag][page.lang] }}</li>
+                <li class="service-tag" data-tag="{{ site.data.service_tag[tag][page.lang] }}">{{ site.data.service_tag[tag][page.lang] }}</li>
                 {% endfor %}
+                {% if service.affiliation %}
+                <li class="service-tag -reverse" data-tag="{{service.affiliation}}">{{ service.affiliation }}</li>
+                {% endif %}
               </ul>
             </div>
             <p class="description">{{ service.description[page.lang] }}</p>
