@@ -105,8 +105,8 @@ window.onload = function () {
 // 外観変更スイッチ
 function switchAppearance() {
   const appearanceWwitch = document.querySelector('.appearance-switch');
-  const buttons = appearanceWwitch.querySelectorAll('.button');
   if (appearanceWwitch) {
+    const buttons = appearanceWwitch.querySelectorAll('.button');
     buttons.forEach(button => {
       button.addEventListener('click', e => {
         appearanceWwitch.parentNode.dataset.appearanceType = e.target.dataset.appearanceValue;
