@@ -16,21 +16,22 @@ lang: ja
     <main class="mainview -beige">
       <div id="ServicesView" data-appearance-type="panel">
         <nav class="appearance-switch">
-          <div class="button -current" data-appearance-value="panel"></div>
-          <div class="button" data-appearance-value="list"></div>
+          <div class="button -current" data-appearance-value="panel" title="Panel view"></div>
+          <div class="button" data-appearance-value="list" title="List view"></div>
         </nav>
         <ul class="container">
           {% for service in site.search_analysis %}
           <li class="service">
-            <h2 class="title">
-              <a href="{{ service.service_link[page.lang] }}">{{ service.title }}</a>
-              
-            </h2>
-            <ul class="tags">
-              {% for tag in service.tags %}
-              <li class="tag">{{ site.data.service_tag[tag][page.lang] }}</li>
-              {% endfor %}
-            </ul>
+            <div class="upper">
+              <h2 class="title">
+                <a href="{{ service.service_link[page.lang] }}">{{ service.title }}</a>
+              </h2>
+              <ul class="tags">
+                {% for tag in service.tags %}
+                <li class="tag">{{ site.data.service_tag[tag][page.lang] }}</li>
+                {% endfor %}
+              </ul>
+            </div>
             <p class="description">{{ service.description[page.lang] }}</p>
             <nav class="links">
               <ul>
