@@ -1,3 +1,5 @@
+/* global $ */
+
 window.onload = function () {
   const indexWrap = document.querySelector('.internal-link');  //H2タグの前に挿入したdivタグ
   if (indexWrap) {
@@ -51,8 +53,8 @@ window.onload = function () {
          // 配列に格納
             contentsArr[i] = [targetContentsTop, targetContentsBottom]
       }
-  };
-  console.log(contentsArr)
+  }
+  window.console.log(contentsArr)
   
   // 現在地をチェックする
   function currentCheck() {
@@ -66,7 +68,7 @@ window.onload = function () {
               navLink.eq(i).addClass('current');
                 i == contentsArr.length;
             }
-      };
+      }
   }
   
    // ページ読み込み時とスクロール時に、現在地をチェックする

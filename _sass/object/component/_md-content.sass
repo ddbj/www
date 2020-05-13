@@ -19,14 +19,40 @@ $MARGIN_BOTTOM: 1rem
     border-left: solid 1.2rem $COLOR_KEY
     margin-left: -2.5rem
     padding-left: 1.2rem
+  h3
+    font-size: 1.6rem
+    border-bottom: 2px solid $COLOR_KEY_PALE
+    margin-bottom: 1.6rem
 
   ul
     li
       padding: .4rem 0
       line-height: 1.6
-      list-style-position: inside
+      margin-left: 2rem
       & .title
         font-weight: bold
+  
+  ol
+    counter-reset: my-counter
+    list-style: none
+    padding: 0
+    li
+      margin-bottom: 10px
+      padding-left: 30px
+      position: relative
+      &:before 
+        content: counter(my-counter)
+        counter-increment: my-counter
+        background-color: $COLOR_KEY_PALE
+        color: $COLOR_KEY_VELY_PALE
+        display: block
+        float: left
+        line-height: 22px
+        margin-left: -30px
+        text-align: center
+        height: 22px
+        width: 22px
+        border-radius: 50%
 
   dl
     line-height: 1.4
@@ -53,8 +79,6 @@ $MARGIN_BOTTOM: 1rem
     tr
       th, td
         padding: .6rem .6rem .6rem .6rem
-        &:last-child
-          padding-right: 0
       th
         text-align: left
         font-weight: bold
@@ -82,6 +106,7 @@ $MARGIN_BOTTOM: 1rem
     background-color: $COLOR_KEY_VELY_PALE
     padding: 1rem 1.6rem
     border-left: 6px solid $COLOR_KEY_PALE
+    margin-bottom: 1.6rem
 
   .example-of-use dt 
     cursor: pointer

@@ -1,9 +1,18 @@
 ---
 layout: indexed_content
 title: TXSearch
+formal_name: Taxonomy Search
+service_link:
+  en: http://ddbj.nig.ac.jp/tx_search/?lang=en
+  ja: http://ddbj.nig.ac.jp/tx_search/?lang=ja
 pathname: TXSearch
-service_link: http://ddbj.nig.ac.jp/tx_search/?lang=ja
 category: search_analysis
+description:
+  en: Taxonomy database search
+  ja: 生物分類データベース検索
+affiliation: DDBJ
+tags:
+  - search
 ---
 
 TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/) の検索システムです。国際塩基配列データベース([INSD]({{site.baseurl}}/aboutus/insdc.html)) にデータを登録する際には、NCBI Taxonomy に基づいた生物名の表記を使用する必要があります。

@@ -53,7 +53,7 @@ Accession 番号 を入力します。入力には、複数 Accession 番号の�
 
 検索対象となるデータベースをひとつ指定します。 検索結果の出力形式は，エントリに対して，各データベースで定められている形式か FASTA 形式 のいずれかを以下の選択肢からひとつ指定します。
 
-DNAデータベース
+#### DNAデータベース
 
 検索対象データベース
 
@@ -90,7 +90,7 @@ INSD-XML_v1.4    | [INSD-XML_v1.4 形式](#xml)で出力
 
 検索対象データベースでMGA選択時は、FFのみ選択可能となります。
 
-Protein データベース
+#### Protein データベース
 
 検索対象データベース
 
@@ -102,7 +102,7 @@ Patent                              | [JPO](https://www.jpo.go.jp/index.html)，
 
 getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報]({{site.baseurl}}/statistics/relinfo.html) でご確認ください。
 
-出力形式
+#### 出力形式
 
 | ---- | ---- | ---- | ---- |
 default||指定したデータベースの公開形式で出力            |  空白 |     |                
@@ -165,14 +165,14 @@ gethistory | アクセッション番号（データベース中のエントリ�
 smart URL      | http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold italic">データベース名</span>/<span class="bold italic">アクセッション番号</span>  <br> http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold italic">データベース名</span>/<span class="bold italic">アクセッション番号</span>/?<span class="bold italic">追加のパラメーター(任意)</span>  <br> http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold italic">データベース名</span>/<span class="bold italic">アクセッション番号</span>/<span class="bold italic">リビジョン ID </span>/?<span class="bold italic">追加のパラメーター(任意)</span>
 
 
-入力例
+**入力例**
 
 * 通常の GET method によるアクセッション番号 AB601234 の検索<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=ddbj&amp;accession_number=AB601234](http://getentry.ddbj.nig.ac.jp/getentry?database=ddbj&amp;accession_number=AB601234)
 * smart URL による特許庁由来アミノ酸配列 BD500001 の検索<br>[http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001](http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001)
 
 ### getentry で指定可能なパラメータ
 
-accession 番号<span class="red">（必須）</span><span class="normal">：　検索対象の Accession 番号を指定します。</span>
+#### accession 番号<span class="red">（必須）</span><span class="normal">：　検索対象の Accession 番号を指定します。</span>
 
 | ---- | ---- |
 |  バージョン番号  |  ・指定がない場合は，最新バージョンを検索します。<br> ・指定されている場合は，指定のバージョンを検索します。 |
@@ -188,7 +188,7 @@ accession 番号<span class="red">（必須）</span><span class="normal">：　
 件数が多い場合，表示に時間がかかる場合があります。また，ブラウザの性能により，全件表示できない場合があります。
 </div>
 
-入力例
+**入力例**
 
 * アクセッション番号AB055395 の検索<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB055395](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB055395)<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/AB055395](http://getentry.ddbj.nig.ac.jp/getentry/na/AB055395)
 * 複数アクセッション番号の検索（複数指定&100件表示）  
@@ -200,7 +200,7 @@ accession 番号<span class="red">（必須）</span><span class="normal">：　
 ](http://getentry.ddbj.nig.ac.jp/getentry/na/AB669632.1-AB6696356.1
 )
 
-database<span class="red">（任意）</span>：　検索対象のデータベースを指定します。
+#### database<span class="red">（任意）</span>：　検索対象のデータベースを指定します。
 
 | ---- | ---- | ---- | ---- |
 |DNA系     | na                                  | DDBJ/EMBL/GenBank  |  [国際塩基配列データベース（INSD）](http://www.insdc.org/), [WGS](/ddbj/wgs.html), [TPA](/ddbj/tpa.html), [TSA](/ddbj/tsa.html)|
@@ -229,7 +229,7 @@ MGA データの新規登録は受け付けておりません。
 getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報]({{site.baseurl}}/statistics/relinfo.html) でご確認ください。
 </div>
 
-入力例 <span class="normal">（上段はGET method , 下段は　smart URL ）</span>
+**入力例** <span class="normal">（上段はGET method , 下段は　smart URL ）</span>
 
 * TSA( IAAA01000001) の検索<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=IAAA01000001](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=IAAA01000001)<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/IAAA01000001](http://getentry.ddbj.nig.ac.jp/getentry/na/IAAA01000001)
 
@@ -244,7 +244,7 @@ getentry で検索可能な各データベースのリリース番号や公開�
 * DAD の検索<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=dad&accession_number=AB000714-1](http://getentry.ddbj.nig.ac.jp/getentry?database=dad&accession_number=AB000714-1)<br>[http://getentry.ddbj.nig.ac.jp/getentry/dad/AB000714-1](http://getentry.ddbj.nig.ac.jp/getentry/dad/AB000714-1)
 * UniProt  の検索<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=aa&accession_number=P06213](http://getentry.ddbj.nig.ac.jp/getentry?database=aa&accession_number=P06213)<br>[http://getentry.ddbj.nig.ac.jp/getentry/aa/P06213](http://getentry.ddbj.nig.ac.jp/getentry/aa/P06213)<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=uniprot&accession_number=P06213](http://getentry.ddbj.nig.ac.jp/getentry?database=uniprot&accession_number=P06213)<br>[http://getentry.ddbj.nig.ac.jp/getentry/uniprot/P06213](http://getentry.ddbj.nig.ac.jp/getentry/uniprot/P06213)
 
-revision<span class="red">（任意）</span>：　指定された revision 時点を検索します。
+#### revision<span class="red">（任意）</span>：　指定された revision 時点を検索します。
 
 | ---- | ---- | 
 通常    | yyyy-MM-dd hh:mm:ss        
@@ -255,14 +255,14 @@ revision<span class="red">（任意）</span>：　指定された revision 時�
 バージョン番号と revision が同時に指定されているとき，revision が優先されます。
 </div>
 
-入力例 （上段はGET method , 下段は　smart URL ）
+**入力例** （上段はGET method , 下段は　smart URL ）
 
 * AB479935 の 2011-05-31 23:07:30 時点での結果を表示  
 [http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB479935&revision=2011-05-31 23:07:30](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB479935&revision=2011-05-31%2023:07:30)  
 [http://getentry.ddbj.nig.ac.jp/getentry/na/AB479935?revision=2011-05-31 23:07:30](http://getentry.ddbj.nig.ac.jp/getentry/na/AB479935?revision=2011-05-31%2023:07:30)
 * 変更履歴は　gethistory の機能でしらべることが可能です<br>[http://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=AB479935](http://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=AB479935)<br>[http://getentry.ddbj.nig.ac.jp/gethistory/na/AB479935](http://getentry.ddbj.nig.ac.jp/gethistory/na/AB479935)
 
-format<span class="red">（任意）</span>：　結果の出力フォーマットを指定します。
+#### format<span class="red">（任意）</span>：　結果の出力フォーマットを指定します。
 
 |  デフォルト  |  flatfile  |
 | ---- | ---- |
@@ -288,7 +288,7 @@ format<span class="red">（任意）</span>：　結果の出力フォーマッ�
 |  DAD  |  default, アミノ酸配列FASTA, 塩基配列FASTA  |
 |  Patent  |  default, アミノ酸配列FASTA  |                                                       
 
-入力例 <span class="normal">（上段はGET method , 下段は　smart URL ）</span>
+**入力例** <span class="normal">（上段はGET method , 下段は　smart URL ）</span>
 
 * アクセッション番号 AB628096 の検索のflatfile を表示<br>[http://getentry.ddbj.nig.ac.jp/getentry?accession_number=AB628096](http://getentry.ddbj.nig.ac.jp/getentry?accession_number=AB628096)<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096
 )
@@ -491,7 +491,7 @@ CGCGAATTCGCG
 
 ```
 
-filetype<span class="red">（任意）</span>：　出力のファイルタイプを指定します。
+#### filetype<span class="red">（任意）</span>：　出力のファイルタイプを指定します。
 
 | ---- | ---- |
 デフォルト | text                                 
@@ -511,7 +511,7 @@ gz圧縮ファイルのファイル名はformatの指定値によって以下の
 [Protein系]fasta    | fasta_aa.txt.gz
 [Protein系]cds      | cds_aa.txt.gz  
 
-入力例 （上段はGET method , 下段は　smart URL ）
+**入力例** （上段はGET method , 下段は　smart URL ）
 
 * AK377185-AK378194（1000エントリ）を gzファイルでダウンロード<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AK377185-AK378194&filetype=gz&limit=1000](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AK377185-AK378194&filetype=gz&limit=1000)<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/AK377185-AK378194?filetype=gz&limit=1000](http://getentry.ddbj.nig.ac.jp/getentry/na/AK377185-AK378194?filetype=gz&limit=1000)
 
@@ -546,18 +546,18 @@ COMMENT     OS   Homo sapiens
         PD   28-Sep-2006
 ```
 
-show_suppressed<span class="red">（任意）</span>：　suppressed　データを表示します。
+#### show_suppressed<span class="red">（任意）</span>：　suppressed　データを表示します。
 
 | ---- | ---- |
 true  | suppressed データを表示   
 false | suppressed データを表示しない
 
-入力例 （上段はGET method , 下段は　smart URL ）
+**入力例** （上段はGET method , 下段は　smart URL ）
 
 * アクセッション番号 HE602933  (suppressed)の検索<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=HE602933&show_suppressed=true](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=HE602933&show_suppressed=true)<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/HE602933?show_suppressed=true](http://getentry.ddbj.nig.ac.jp/getentry/na/HE602933?show_suppressed=true)
 
 
-limit<span class="red">（任意）</span>：　データの取得上限を設定します。
+#### limit<span class="red">（任意）</span>：　データの取得上限を設定します。
 
 | ---- | ---- |
 デフォルト    | 10件   
@@ -569,33 +569,33 @@ limit<span class="red">（任意）</span>：　データの取得上限を設�
 件数が多い場合，表示に時間がかかる場合があります。また，ブラウザの性能により，全件表示できない場合があります。
 </div>
 
-入力例 （上段はGET method , 下段は　smart URL ）
+**入力例** （上段はGET method , 下段は　smart URL ）
 
 * アクセッション番号 FY736910 - FY762881( 25,972 entries)の検索  
 [http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FY736910 - FY762881&limit=0](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FY736910%20-%20FY762881&limit=0)  
 [http://getentry.ddbj.nig.ac.jp/getentry/na/FY736910 - FY762881?limit=0](http://getentry.ddbj.nig.ac.jp/getentry/na/FY736910%20-%20FY762881?limit=0)
 
-trace<span class="red">（任意）</span>：　Secondary Accession が指定された場合に，Primary への転送を設定します。
+#### trace<span class="red">（任意）</span>：　Secondary Accession が指定された場合に，Primary への転送を設定します。
 
 | ---- | ---- |
 true  | primary データを表示   
 false | primary データを表示しない
 
-入力例 （上段はGET method , 下段は　smart URL ）
+**入力例** （上段はGET method , 下段は　smart URL ）
 
 * アクセッション番号 AB233943(primary)-AF530906(secondary) の検索でprimary を表示<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AF530906&format=flatfile&trace=true](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AF530906&format=flatfile&trace=true )<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/AF530906/?format=flatfile&trace=true](http://getentry.ddbj.nig.ac.jp/getentry/na/AF530906/?format=flatfile&trace=true)
 
 
 ### gethistory で指定可能なパラメータ
 
-accession 番号<span class="red">（必須）</span>：検索対象のAccession番号を指定します。指定方法は getentry と同じです。
+#### accession 番号<span class="red">（必須）</span>：検索対象のAccession番号を指定します。指定方法は getentry と同じです。
 
 {::options parse_block_html="true" /}
 <div class="attention">
 特許庁由来アミノ酸配列の履歴はありません
 </div>
 
-入力例 （上段はGET method , 下段は　smart URL ）
+**入力例** （上段はGET method , 下段は　smart URL ）
 
 * アクセッション番号 AB628096 の履歴検索  
 http://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=AB628096  
@@ -612,7 +612,7 @@ AB628096
 1 2011-05-11 23:09:49         2011-05-11 23:09:49         live
 ```
 
-database<span class="red">（任意）</span>： 検索対象のデータベースを指定します。
+#### database<span class="red">（任意）</span>： 検索対象のデータベースを指定します。
 
 | ---- | ---- |
 デフォルト | na
@@ -623,7 +623,7 @@ DNA 系 | na
 指定したデータベースが履歴管理に対応していない場合は，空の結果を返します。
 </div>
 
-入力例 （上段はGET method , 下段は　smart URL ）
+**入力例** （上段はGET method , 下段は　smart URL ）
 
 * WGS( BAET01000001) の履歴検索<br>[http://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=BAET01000001](http://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=BAET01000001)<br>[http://getentry.ddbj.nig.ac.jp/gethistory/na/BAET01000001](http://getentry.ddbj.nig.ac.jp/gethistory/na/BAET01000001)
 
@@ -639,14 +639,14 @@ BAET01000001   BAET01000001
 1 2012-02-21 07:03:15 2012-02-21 07:03:15 live   
 ```
 
-filetype<span class="red">（任意）</span>：　出力のファイルタイプを指定します。
+#### filetype<span class="red">（任意）</span>：　出力のファイルタイプを指定します。
 
 | ---- | ---- |
 デフォルト | text                              
 html  | HTMLファイル（revision 時点のフラットファイルにリンク）
 text  | テキストファイル                          
 
-入力例 （上段はGET method , 下段は　smart URL ）
+**入力例** （上段はGET method , 下段は　smart URL ）
 
 * アクセッション番号 AB628096 の履歴検索の結果を html で表示  
 http://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=AB628096&filetype=html  
