@@ -41,12 +41,13 @@ result に mail を指定した場合は address も必須となります。
 ## サンプルスクリプト
 
 clustalw-client.pl
+<script src="//gist.github.com/ddbj-repo/e317ec4fa1ea3bf42594334f8264f241.js"></script>
 
-### 例1：複数配列のmultiple alignment
+### 例1：複数配列のmultiple alignment<a name="sample1"></a>
 
 conf.json
 
-``` code scroll
+``` 
 {
     "urlStr": "http://ddbj.nig.ac.jp/wabi/clustalw/",
     "infile": "/home/hoge/cyc_aa.fasta",
@@ -59,7 +60,7 @@ conf.json
 
 cyc\_aa.fasta
 
-``` code
+``` 
 >mms:mma_0447
 MYRFTKTVVALLLATSGTMALAQAAYTNIGRPATAKEIAAWDIDVRPDFKGLPPGSGTVA
 KGMAVWEGKCASCHGTFGESNEVFTPIVGGTTKEDIKSGHVAALSNNKQPQRTTIMKVPT
@@ -103,7 +104,7 @@ multi fasta データから pairewise alignment、ガイドツリー生成、mul
 （conf.json に記述したパラメータ値は clustalw2 のデフォルト値であるので、parameters
 に何も指定しない場合と同一の結果が得られます。）
 
-``` code
+``` 
 $ perl clustalw-client.pl conf.json
 Execute multiple sequence alignment.
 request-ID: wabi_clustalw_2013-0827-1814-55-821-640340
@@ -114,7 +115,7 @@ Guide Tree 1 is outputed to wabi_clustalw_2013-0827-1814-55-821-640340_guidetree
       
 ```
 
-``` code
+``` 
 $ cat wabi_clustalw_2013-0827-1814-55-821-640340.txt
 CLUSTAL 2.1 multiple sequence alignment
  
@@ -174,7 +175,7 @@ bprc_D521_0984      DDDRKTLVVWMLSGGK
 
 conf.json
 
-``` code scroll
+``` 
 {
     "urlStr": "http://ddbj.nig.ac.jp/wabi/clustalw/",
     "infile": "/home/hoge/cyc_aa.fasta",
@@ -189,7 +190,7 @@ conf.json
 [例1](#sample1)で生成されたガイドツリー（wabi\_clustalw\_2013-0827-1814-55-821-640340\_guidetree1.txt）を使い、multiple
 alignment のみをパラメータを変えて再実行する場合のサンプル
 
-``` code
+``` 
 $ perl clustalw-client.pl conf.json 
 Execute multiple sequence alignment.
 request-ID: wabi_clustalw_2013-0828-1125-32-853-013077
@@ -199,7 +200,7 @@ ClustalW2 result is outputed to wabi_clustalw_2013-0828-1125-32-853-013077.txt
       
 ```
 
-``` code
+``` 
 $ cat wabi_clustalw_2013-0828-1125-32-853-013077.txt 
 CLUSTAL 2.1 multiple sequence alignment
  
@@ -257,17 +258,17 @@ bprc_D521_0984      DDDRKTLVVWMLSGGK
 
 同じ処理をコマンドラインで実行する場合
 
-``` code scroll
+``` 
 $ clustalw2 -INFILE=cyc_aa.fasta -USETREE=wabi_clustalw_2013-0827-1814-55-821-640340_guidetree1.txt -TYPE=PROTEIN \
 > -MATRIX=GONNET -GAPOPEN=12.00 -GAPEXT=0.40 -MAXDIV=30 -HGAPRESIDUES=GPSNDQEKR -GAPDIST=4 -ENDGAPS
       
 ```
 
-### 例3：整列済みデータへの新規配列の追加（profile alignment）
+### 例3：整列済みデータへの新規配列の追加（profile alignment）<a name="sample3"></a>
 
 cyc\_aa2.fasta
 
-``` code
+``` 
 >lch:Lcho_3783
 MSSSPKWLAAAVLALAAAGSLAQVTAVGIGRAATEKEIKAWDIDVRPDFKGLPKGSGTVE
 QGMEVWEAKCAHCHGVFGESNEVFSPLVGGTTADDVKTGHVARLNDPTFPGRTTLMKVAT
@@ -287,7 +288,7 @@ DAHGALARKVKAGGQGAWGSVPMPAQPQIPDSDVQAMVGWILEAK
 
 conf.json
 
-``` code scroll
+``` 
 {
     "urlStr": "http://ddbj.nig.ac.jp/wabi/clustalw/",
     "profile1": "/home/hoge/wabi_clustalw_2013-0827-1814-55-821-640340.txt",
@@ -301,7 +302,7 @@ conf.json
 
 [例1](#sample1)の整列結果（wabi\_clustalw\_2013-0827-1814-55-821-640340.txt）に、新たな配列（cyc\_aa2.fasta）を追加する場合のサンプル
 
-``` code
+``` 
 $ perl clustalw-client.pl conf.json
 Execute multiple sequence alignment.
 request-ID: wabi_clustalw_2013-0828-1452-47-561-627715
@@ -312,7 +313,7 @@ Guide Tree 2 is outputed to wabi_clustalw_2013-0828-1452-47-561-627715_guidetree
       
 ```
 
-``` code
+``` 
 $ cat wabi_clustalw_2013-0828-1452-47-561-627715.txt 
 CLUSTAL 2.1 multiple sequence alignment
  
@@ -384,7 +385,7 @@ reh_H16_A3571       IPDSDVQAMVGWILEAK--
 
 同じ処理をコマンドラインで実行する場合
 
-``` code scroll
+``` 
 $ clustalw2 -PROFILE1=wabi_clustalw_2013-0827-1814-55-821-640340.txt -PROFILE2=cyc_aa2.fasta -SEQUENCES -TYPE=PROTEIN \
 > -MATRIX=GONNET -GAPOPEN=10.00 -GAPEXT=0.20 -MAXDIV=30 -HGAPRESIDUES=GPSNDQEKR -GAPDIST=4 -ENDGAPS
       
@@ -394,7 +395,7 @@ $ clustalw2 -PROFILE1=wabi_clustalw_2013-0827-1814-55-821-640340.txt -PROFILE2=c
 
 conf.json
 
-``` code scroll
+``` 
 {
     "urlStr": "http://ddbj.nig.ac.jp/wabi/clustalw/",
     "profile1": "/home/hoge/wabi_clustalw_2013-0827-1814-55-821-640340.txt",
@@ -408,7 +409,7 @@ conf.json
 
 cyc\_aa2.aln
 
-``` code
+``` 
 CLUSTAL 2.1 multiple sequence alignment
  
  
@@ -445,7 +446,7 @@ reh_H16_A3571      -
 結果（cyc\_aa2.aln）と[例1](#sample1)の multiple alignment
 結果（wabi\_clustalw\_2013-0827-1814-55-821-640340.txt）を統合する場合のサンプル
 
-``` code
+``` 
 $ perl clustalw-client3.pl conf.json 
 Execute multiple sequence alignment.
 request-ID: wabi_clustalw_2013-0829-1608-33-594-650129
@@ -458,7 +459,7 @@ Guide Tree 2 is outputed to wabi_clustalw_2013-0829-1608-33-594-650129_guidetree
       
 ```
 
-``` code
+``` 
 $ cat wabi_clustalw_2013-0829-1608-33-594-650129.txt
 CLUSTAL 2.1 multiple sequence alignment
  
@@ -532,7 +533,7 @@ reh_H16_A3571       QPQIPDSDVQAMVGWILEAK--
 
 conf.json
 
-``` code
+``` 
 {
     "urlStr": "http://ddbj.nig.ac.jp/wabi/clustalw/",
     "infile": "/home/hoge/wabi_clustalw_2013-0828-1452-47-561-627715.txt",
@@ -545,7 +546,7 @@ conf.json
 [例3](#sample3)の整列結果（wabi\_clustalw\_2013-0828-1452-47-561-627715.txt）から系統樹を作成する場合のサンプル  
 ここでは、系統樹の作成と同時に percent identity matrix も出力しています。
 
-``` code
+``` 
 $ perl clustalw-client3.pl conf.json 
 Execute multiple sequence alignment.
 request-ID: wabi_clustalw_2013-0828-1556-45-267-658015
@@ -556,7 +557,7 @@ PIM file is outputed to wabi_clustalw_2013-0828-1556-45-267-658015_pim.txt
       
 ```
 
-``` code
+``` 
 $ cat wabi_clustalw_2013-0828-1556-45-267-658015.txt
 (
 (
@@ -577,7 +578,7 @@ lch_Lcho_3783:0.23467);
       
 ```
 
-``` code
+``` 
 $ cat wabi_clustalw_2013-0828-1556-45-267-658015_pim.txt 
 #
 #
@@ -597,7 +598,7 @@ $ cat wabi_clustalw_2013-0828-1556-45-267-658015_pim.txt
 
 同じ処理をコマンドラインで実行する場合
 
-``` code scroll
+``` 
 $ clustalw2 -INFILE=wabi_clustalw_2013-0828-1452-47-561-627715.txt -TREE -PIM -OUTPUTTREE=phylip -CLUSTERING=NJ
       
 ```
@@ -606,7 +607,7 @@ $ clustalw2 -INFILE=wabi_clustalw_2013-0828-1452-47-561-627715.txt -TREE -PIM -O
 
 conf.json
 
-``` code
+``` 
 {
     "urlStr": "http://ddbj.nig.ac.jp/wabi/clustalw/",
     "infile": "/home/okuda/data/clustalw_test/wabi_test/wabi_clustalw_2013-0828-1452-47-561-627715.txt",
@@ -619,7 +620,7 @@ conf.json
 
 [例3](#sample3)の整列結果（wabi\_clustalw\_2013-0828-1452-47-561-627715.txt）から推定した系統樹をブートストラップ法により評価する場合のサンプル
 
-``` code
+``` 
 $ perl clustalw-client3.pl conf.json 
 Execute multiple sequence alignment.
 request-ID: wabi_clustalw_2013-0828-1621-44-822-982789
@@ -629,7 +630,7 @@ ClustalW2 result is outputed to wabi_clustalw_2013-0828-1621-44-822-982789.txt
       
 ```
 
-``` code
+``` 
 $ cat wabi_clustalw_2013-0828-1621-44-822-982789.txt 
 (
 (
@@ -652,7 +653,7 @@ lch_Lcho_3783:0.23467);
 
 同じ処理をコマンドラインで実行する場合
 
-``` code scroll
+``` 
 $ clustalw2 -INFILE=wabi_clustalw_2013-0828-1452-47-561-627715.txt -BOOTSTRAP=1000 -OUTPUTTREE=phylip -SEED=111 \
 > -BOOTLABELS=branch -CLUSTERING=NJ
       
@@ -662,7 +663,7 @@ $ clustalw2 -INFILE=wabi_clustalw_2013-0828-1452-47-561-627715.txt -BOOTSTRAP=10
 
 conf.json
 
-``` code
+``` 
 {
     "urlStr": "http://ddbj.nig.ac.jp/wabi/clustalw/",
     "infile": "/home/hoge/wabi_clustalw_2013-0828-1452-47-561-627715.txt",
@@ -677,7 +678,7 @@ conf.json
 
 CLUSTAL, GCG, GDE, PHYLIP, PIR, NEXUS, FASTAの7種類のフォーマットに相互変換が可能である。
 
-``` code
+``` 
 $ perl clustalw-client3.pl conf.json 
 Execute multiple sequence alignment.
 request-ID: wabi_clustalw_2013-0828-1706-00-78-535439
@@ -687,7 +688,7 @@ ClustalW2 result is outputed to wabi_clustalw_2013-0828-1706-00-78-535439.txt
       
 ```
 
-``` code
+``` 
 $ cat wabi_clustalw_2013-0828-1706-00-78-535439.txt 
 >mms_mma_0447
 --MYRFTKTVVALLLAT-------SGTMALAQAAYTNIGRPATAKEIAAWDIDVRPDFKG
@@ -750,7 +751,7 @@ IPDSDVQAMVGWILEAK--
 
 同じ処理をコマンドラインで実行する場合
 
-``` code
+``` 
 $ clustalw2 -INFILE=wabi_clustalw_2013-0828-1452-47-561-627715.txt -CONVERT -OUTPUT=FASTA
       
 ```
@@ -759,7 +760,7 @@ $ clustalw2 -INFILE=wabi_clustalw_2013-0828-1452-47-561-627715.txt -CONVERT -OUT
 
 conf.json
 
-``` code
+``` 
 {
     "urlStr": "http://ddbj.nig.ac.jp/wabi/clustalw/",
     "infile": "/home/okuda/data/clustalw_test/wabi_test/cyc_aa.fasta",
@@ -774,7 +775,7 @@ conf.json
 
 [blosum40.txt](ftp://ftp.ncbi.nih.gov/blast/matrices/BLOSUM40)
 
-``` code
+``` 
 #  Matrix made by matblas from blosum40.iij
 #  * column uses minimum score
 #  BLOSUM Clustered Scoring Matrix in 1/4 Bit Units
@@ -815,7 +816,7 @@ pairwise alignment と multiple alignment で built-in ではない weight matri
 実際には clustalw2 には BLOSUM series の weight matrix
 は入っていますが、ここではユーザー定義ファイルとして用意して使用しています。
 
-``` code
+``` 
 $ perl clustalw-client3.pl conf.json 
 Execute multiple sequence alignment.
 request-ID: wabi_clustalw_2013-0828-1815-17-562-701719
@@ -826,7 +827,7 @@ Guide Tree 1 is outputed to wabi_clustalw_2013-0828-1815-17-562-701719_guidetree
       
 ```
 
-``` code
+``` 
 $ cat wabi_clustalw_2013-0828-1815-17-562-701719.txt 
 CLUSTAL 2.1 multiple sequence alignment
  
@@ -884,7 +885,7 @@ bprc_D521_0984      DDDRKTLVVWMLSGGK
 
 同じ処理をコマンドラインで実行する場合
 
-``` code
+``` 
 $ clustalw2 -INFILE=cyc_aa.fasta -PWMATRIX=blosum40.txt -MATRIX=blosum40.txt
       
 ```
