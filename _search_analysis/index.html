@@ -27,6 +27,9 @@ lang: ja
                 <a href="{{ service.service_link[page.lang] }}">{{ service.title }}</a>
               </h2>
               <ul class="tags">
+                {% if service.affiliation %}
+                <li class="tag -affiliation">{{ service.affiliation }}</li>
+                {% endif %}
                 {% for tag in service.tags %}
                 <li class="tag">{{ site.data.service_tag[tag][page.lang] }}</li>
                 {% endfor %}
