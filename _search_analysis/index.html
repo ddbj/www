@@ -8,8 +8,22 @@ lang: ja
 <div id="NavigationAndMainView">
   <div class="inner -stretched">
     <nav class="subview">
-      <nav class="">
-        <h2>タグ</h2>
+      <nav class="facet-search">
+        <h2 class="title">タグ</h2>
+        <ul class="tags">
+          <li class="service-tag">
+            検索
+            <span class="count">10</span>
+          </li>
+          <li class="service-tag">
+            解析
+            <span class="count">10</span>
+          </li>
+          <li class="service-tag -disable">
+            関連情報
+            <span class="count">10</span>
+          </li>
+        </ul>
         {{ site.data.service_tag }}
       </nav>
     </nav>
@@ -28,10 +42,10 @@ lang: ja
               </h2>
               <ul class="tags">
                 {% if service.affiliation %}
-                <li class="tag -affiliation">{{ service.affiliation }}</li>
+                <li class="service-tag -reverse">{{ service.affiliation }}</li>
                 {% endif %}
                 {% for tag in service.tags %}
-                <li class="tag">{{ site.data.service_tag[tag][page.lang] }}</li>
+                <li class="service-tag">{{ site.data.service_tag[tag][page.lang] }}</li>
                 {% endfor %}
               </ul>
             </div>

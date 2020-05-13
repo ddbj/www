@@ -1,0 +1,27 @@
+.service-tag
+  font-weight: bold
+  line-height: 1.6
+  background-color: $COLOR_KEY_MILD
+  color: $COLOR_BLACK
+  border-radius: .8em
+  padding: 0 .8em
+  position: relative
+  > .count
+    font-size: .8rem
+    background-color: white
+    vertical-align: middle
+    display: inline-block
+    border-radius: 1.1em
+    padding: 0
+    text-align: center
+    min-width: 2em
+    position: relative
+    top: -.2em
+  &.-reverse
+    background-color: $COLOR_BROWN
+    color: white
+  &.-disable
+    background-color: $COLOR_BEIGE
+    color: $COLOR_GRAY
+    > .count
+      color: $COLOR_GRAY
