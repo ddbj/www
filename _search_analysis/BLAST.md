@@ -331,6 +331,7 @@ blastn の場合は，wordsize を 11 以外の数に変えるべきではあり
 ### Request ID
 
 検索実行後の画面に Request ID が表示されますので，必ず控えて下さい。（問い合わせや Result Viewer （後述）で結果を見たい時などに必要です）
+
 Request ID:wabi_blast_2013-0314-1407-23-16-946732
 
 ![blast_requestID]({{ site.baseurl }}/assets/images/help/blast_help_01.gif)
@@ -356,13 +357,8 @@ Request ID:wabi_blast_2013-0314-1407-23-16-946732
 
 チェックボックスで ClustalW で解析を行いたい配列を選択して"ClustalW"　ボタンをクリックすると、選択した配列が入力された状態でClustalW 画面が開きます。
 
-(1)
-
-![ClustalW セットアップ（１）]({{ site.baseurl }}/assets/images/help/blast_help_05.gif)
-
-(2)
-
-![ClustalW セットアップ（2）]({{ site.baseurl }}/assets/images/help/blast_help_06.gif)
+1. ![ClustalW セットアップ（１）]({{ site.baseurl }}/assets/images/help/blast_help_05.gif)
+2. ![ClustalW セットアップ（2）]({{ site.baseurl }}/assets/images/help/blast_help_06.gif)
 
 ## 原著論文，関連論文および参考文献
 

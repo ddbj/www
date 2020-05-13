@@ -124,8 +124,7 @@ VecScreenはベクターコンタミをすべて検出できる完璧なツー�
 
 ## 例外に関して
 
-UniVecデータベースの構成上，以下の配列をクエリーに用いた場合もベクターコンタミとして検出されることになりますのでご承知おきください。
-詳しくは，[//www.ncbi.nlm.nih.gov/tools/vecscreen/interpretation/#Exceptions](//www.ncbi.nlm.nih.gov/tools/vecscreen/interpretation/#Exceptions)をご覧ください。
+UniVecデータベースの構成上，以下の配列をクエリーに用いた場合もベクターコンタミとして検出されることになりますのでご承知おきください。詳しくは，[//www.ncbi.nlm.nih.gov/tools/vecscreen/interpretation/#Exceptions](//www.ncbi.nlm.nih.gov/tools/vecscreen/interpretation/#Exceptions)をご覧ください。
 
 {::options parse_block_html="true" /}
 <div class="attention">

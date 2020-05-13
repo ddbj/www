@@ -18,7 +18,6 @@ affiliation: DDBJ
 tags:
   - search
   - sequence
-flag: true
 ---
 
 ## getentryの機能について
@@ -169,9 +168,7 @@ smart URL      | http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold itali
 入力例
 
 * 通常の GET method によるアクセッション番号 AB601234 の検索<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=ddbj&amp;accession_number=AB601234](http://getentry.ddbj.nig.ac.jp/getentry?database=ddbj&amp;accession_number=AB601234)
-
 * smart URL による特許庁由来アミノ酸配列 BD500001 の検索<br>[http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001](http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001)
-
 
 ### getentry で指定可能なパラメータ
 

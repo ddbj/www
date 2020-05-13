@@ -475,7 +475,7 @@ HTTP ステータス 400
 |  HTTP メソッド  |    |  `GET`  |
 |  URI  |    |  `"/blast/"` + [Request ID](#parameter-Request-ID) + HTTP パラメーター (例:`"/blast/wabi_blast_1111-1111-1111-11-111-111111?info=status"`)  |
 |  HTTP パラメーター  |  `info` (デフォルト値 = `"status"`)  |  [ジョブ情報の種類](#parameter-info) (例: `"status"`, `"result"`)  |
-|  ^  |  `format` (デフォルト値 = `"text"`)  |  [応答データの形式](#parameter-format) (例: `"text"`, `"json"`)  |
+|    |  `format` (デフォルト値 = `"text"`)  |  [応答データの形式](#parameter-format) (例: `"text"`, `"json"`)  |
 
 #### 処理の流れ
 
