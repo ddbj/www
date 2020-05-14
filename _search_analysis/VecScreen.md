@@ -1,9 +1,17 @@
 ---
 layout: indexed_content
 title: VecScreen
+service_link:
+  en: http://ddbj.nig.ac.jp/vecscreen/
+  ja: http://ddbj.nig.ac.jp/vecscreen/vecscreen?lang=ja
 pathname: VecScreen
-service_link: http://ddbj.nig.ac.jp/vecscreen/vecscreen?lang=ja
 category: search_analysis
+description:
+  en: Vector search to screen contamination in nucleic acid sequences.
+  ja: ベクター配列データベースを対象にした相同性検索サービス
+affiliation: DDBJ
+tags:
+  - analysis
 ---
 
 ## VecScreenとは

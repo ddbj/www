@@ -38,21 +38,28 @@ $MARGIN_BOTTOM: 1rem
     padding: 0
     li
       margin-bottom: 10px
-      padding-left: 30px
+      padding-left: 29px
       position: relative
       &:before 
         content: counter(my-counter)
         counter-increment: my-counter
         background-color: $COLOR_KEY_PALE
-        color: $COLOR_KEY_VELY_PALE
+        color: white
         display: block
-        float: left
-        line-height: 22px
-        margin-left: -30px
+        line-height: 20px
+        margin-left: -26px
         text-align: center
-        height: 22px
-        width: 22px
+        height: 20px
+        width: 20px
         border-radius: 50%
+        position: absolute
+        top: 3px
+        left: 28px
+      ul
+        li
+          padding-left: 0
+          &:before 
+            content: none
 
   dl
     line-height: 1.4
@@ -88,7 +95,7 @@ $MARGIN_BOTTOM: 1rem
         border-bottom: 1px solid $COLOR_SEPARATOR
       &:last-child
         border-bottom: none
-        td
+        > td
           border-bottom: 1px solid $COLOR_GRAY
     + table
       margin-top: -$MARGIN_BOTTOM - 0.1rem
