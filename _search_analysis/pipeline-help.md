@@ -351,7 +351,7 @@ Encoding）](//en.wikipedia.org/wiki/FASTQ_format#Encoding)
 
 ### 自分でreferenceを(User original setsへ)登録する場合
 
-1. Download or upload referenceを選択します。
+- Download or upload referenceを選択します。
 
 - [アクセッション番号(INSD)からのダウンロードの場合]  
 2. アクセッション番号(INSD)を入れ"LOAD"をクリックします。
