@@ -502,6 +502,14 @@
 		"oAP": "/_data/service_tag.yml",
 		"oF": 0
 		},
+	"/_data/services.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_data/services.yml",
+		"oF": 0
+		},
 	"/_download/index.html": {
 		"cB": 0,
 		"ft": 8192,

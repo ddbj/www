@@ -20,6 +20,37 @@ lang: ja
           <div class="button" data-appearance-value="list" title="List view"></div>
         </nav>
         <ul class="container">
+
+          {% for service in site.data.services %}
+          <li class="service">
+            <div class="upper">
+              <h2 class="title">
+                <a href="{{ service.service_link[page.lang] }}">{{ service.name }}</a>
+              </h2>
+              <ul class="tags">
+                {% for tag in service.tags %}
+                <li class="service-tag" data-tag="{{ site.data.service_tag[tag][page.lang] }}">{{ site.data.service_tag[tag][page.lang] }}</li>
+                {% endfor %}
+                {% if service.provider %}
+                <li class="service-tag -reverse" data-tag="{{service.provider}}">{{ service.provider }}</li>
+                {% endif %}
+              </ul>
+            </div>
+            <p class="description">{{ service.description[page.lang] }}</p>
+            <nav class="links">
+              <ul>
+                {% if service.help %}
+                <li><a class="arrowed-link" href="{{ service.help }}">HELP</a></li>
+                {% endif %}
+                {% if service.wabi %}
+                <li><a class="arrowed-link" href="{{ service.wabi }}">Web API</a></li>
+                {% endif %}
+              </ul>
+            </nav>
+          </li>
+          {% endfor %}
+
+          <!--
           {% for service in site.search_analysis %}
           <li class="service">
             <div class="upper">
@@ -46,6 +77,8 @@ lang: ja
             </nav>
           </li>
           {% endfor %}
+          -->
+
         </ul>
       </div>
     </main>
