@@ -18,7 +18,7 @@ tags:
 
 DDBJ では，Web版 BLAST の他に，以下の方法でも BLAST サービスを提供しています。
 
-* [WABI BLAST]({{site.baseurl}}/search_analysis/wabiBLAST.html)
+* [WABI BLAST]({{site.baseurl}}/services/wabiBLAST.html)
 * [NIG スーパーコンピュータ](https://sc.ddbj.nig.ac.jp/ja/system-guide/software)
 
 ## Program：プログラム<a name="program"></a>
