@@ -16,6 +16,8 @@ tags:
   - analysis
 ---
 
+## WABI (Web API for Biology)
+
 WABI は、 DDBJの検索サービス を Web画面 を介せずに利用できる Web API です。  
 この Web API を利用することによって、 DDBJの検索サービス
 に対する検索処理登録や検索結果取得などを行なうプログラムを作成することができます。  
@@ -42,9 +44,9 @@ http://ddbj.nig.ac.jp/wabi/blast/wabi_blast_1111-1111-1111-11-111-111111?info=re
 
 現在 WABI は、次のサービスの Web API を提供しています。
 
-  - [BLAST]({{site.baseurl}}/search_analysis/wabiBLAST.html)
-  - [getentry]({{site.baseurl}}/search_analysis/getentry.html)
-  - [ARSA]({{site.baseurl}}/search_analysis/ARSA.html)
-  - [ClustalW]({{site.baseurl}}/search_analysis/wabiClustalw.html)
-  - [VecScreen]({{site.baseurl}}/search_analysis/wabiVecScreen.html)
-  - [MAFFT]({{site.baseurl}}/search_analysis/wabiMAFFT.html)
+  - [BLAST]({{site.baseurl}}/services/wabiBLAST.html)
+  - [getentry]({{site.baseurl}}/services/getentry.html)
+  - [ARSA]({{site.baseurl}}/services/ARSA.html)
+  - [ClustalW]({{site.baseurl}}/services/wabiClustalw.html)
+  - [VecScreen]({{site.baseurl}}/services/wabiVecScreen.html)
+  - [MAFFT]({{site.baseurl}}/services/wabiMAFFT.html)

@@ -1,4 +1,4 @@
-- items:
+items:
   - name: getentry
     formal_name: getentry
     service_link:
@@ -454,7 +454,7 @@
       - genotype
       - phenotype
 
-- dictionary:
+dictionary:
   analysis:
     en: Analysis
     ja: 解析

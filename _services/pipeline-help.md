@@ -351,23 +351,24 @@ Encoding）](//en.wikipedia.org/wiki/FASTQ_format#Encoding)
 
 ### 自分でreferenceを(User original setsへ)登録する場合
 
-1. Download or upload referenceを選択します。
-
-- [アクセッション番号(INSD)からのダウンロードの場合]  
-2. アクセッション番号(INSD)を入れ"LOAD"をクリックします。
-
-- [ローカルPCからのアップロードの場合]  
-2. "ファイルを選択"をクリックし、ローカルPCからファイルを選択したら"UPLOAD"をクリックします。
-3. ファイルが表示されます。
-4. "CREATE DATASET"をクリックするとCreate Genome Dataset画面へ遷移します。
-![]({{ site.baseurl }}/assets/images/help/SpecifyingDatabase_61.png)
-5. genomeset の記述を変更できます。
-6. "CREATE GENOMESET"をクリックするとSpecifying Database of Reference
-Genome画面に戻ります。
-![]({{ site.baseurl }}/assets/images/help/SpecifyingDatabase_21.png)
-7. ダウンロードしたファイルが"User original sets"に追加され、選択した状態となっています。
-
-![]({{ site.baseurl }}/assets/images/help/SpecifyingDatabase_31.png)
+<ol>
+<li> Download or upload referenceを選択します。</li>
+[アクセッション番号(INSD)からのダウンロードの場合]
+<li>アクセッション番号(INSD)を入れ"LOAD"をクリックします。</li>
+[ローカルPCからのアップロードの場合]
+<li class ="decrement">"ファイルを選択"をクリックし、ローカルPCからファイルを選択したら"UPLOAD"をクリックします。</li>
+<li> ファイルが表示されます。</li>
+<li> "CREATE DATASET"をクリックするとCreate Genome Dataset画面へ遷移します。
+<figure><a href="{{ site.baseurl }}/assets/images/help/SpecifyingDatabase_61.png"><img src="{{ site.baseurl }}/assets/images/help/SpecifyingDatabase_61.png" alt=""></a></figure>
+</li>
+<li> genomeset の記述を変更できます。</li>
+<li> "CREATE GENOMESET"をクリックするとSpecifying Database of Reference Genome画面に戻ります。
+<figure><a href="{{ site.baseurl }}/assets/images/help/SpecifyingDatabase_21.png"><img src="{{ site.baseurl }}/assets/images/help/SpecifyingDatabase_21.png" alt=""></a></figure>
+</li>
+<li> ダウンロードしたファイルが"User original sets"に追加され、選択した状態となっています。
+<figure><a href="{{ site.baseurl }}/assets/images/help/SpecifyingDatabase_31.png"><img src="{{ site.baseurl }}/assets/images/help/SpecifyingDatabase_31.png" alt=""></a></figure>
+</li>
+</ol>
 
 ## Set Options<a name="StOpt"></a>
 
