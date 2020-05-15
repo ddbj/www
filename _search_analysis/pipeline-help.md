@@ -20,9 +20,9 @@ category: search_analysis
 **基礎解析部では以下の処理を行います。  
 それぞれ画面遷移が異なりますので表の「順」と「画面」でご確認ください。**
 
-  - [Preprocessing](#preprocess)
-  - [Mapping(Reference Alignment)](#mapping)
-  - [*de novo* Assembly](#assembly)
+1. [Preprocessing](#preprocess)
+2. [Mapping(Reference Alignment)](#mapping)
+3. [*de novo* Assembly](#assembly)
 
 ### Preprocessing<a name="preprocess"></a>
 
@@ -110,15 +110,15 @@ Assemblyのクエリとして選択できるようになります。クエリフ
 
 ## LOGIN<a name="login"></a>
 
-- ① システム利用に際してのアナウンスは、"twitter"で行ってます。
-- ② PipelineのIDをお持ちでない場合、「新規アカウント作成」で、登録画面へ遷移します。
-- ③ 試験的に使用したい方は「"guest"としてログイン」で、デモ画面を確認できます。
-- ④ "動作中JOBの確認"では、"guest"としてStatus画面へ遷移し、JOBの実行状況が確認できます。
-- ⑤ マニュアルおよびチュートリアルが用意されています。
+1. システム利用に際してのアナウンスは、"twitter"で行ってます。
+2. PipelineのIDをお持ちでない場合、「新規アカウント作成」で、登録画面へ遷移します。
+3. 試験的に使用したい方は「"guest"としてログイン」で、デモ画面を確認できます。
+4. "動作中JOBの確認"では、"guest"としてStatus画面へ遷移し、JOBの実行状況が確認できます。
+5. マニュアルおよびチュートリアルが用意されています。
 - [English manual](//sites.google.com/a/g.nig.ac.jp/pipeline_help/)
 - [DBCLS togotv Tutorial video 1 (JP) - Reference Genome Mapping](//togotv.dbcls.jp/20100617.html)
 - [DBCLS togotv Tutorial video 2 (JP) - De novo Assembly](//togotv.dbcls.jp/20110226.html#p01)
-- ⑥ DRAアカウント登録はこちらのページです。 [please see the page.](/dra/index-j.html)
+6. DRAアカウント登録はこちらのページです。 [please see the page.](/dra/index-j.html)
 
 ![]({{ site.baseurl }}/assets/images/help/LOGIN_20120522_1.png)
 
@@ -131,20 +131,17 @@ Assemblyのクエリとして選択できるようになります。クエリフ
   - スーパーコンピュータの新システム移行に伴い、既にアカウントをお持ちの方も登録内容に追加項目があります。
   - ②に該当する項目をAdditional input(追加項目ページ)から入力します。
   - 登録が完了すると、User ID, Initial passwordが、Email address宛に自動配信されます。
-
-<!-- end list -->
-
-  - ① Email addressの記入には十分注意して下さい。
-  - ② 新システム移行に伴い、新たに追加した項目です。
-  - ③ 全ての記入項目を確認後、登録します。
+1. Email addressの記入には十分注意して下さい。
+2. 新システム移行に伴い、新たに追加した項目です。
+3. 全ての記入項目を確認後、登録します。
 
 ![]({{ site.baseurl }}/assets/images/help/RegistrationForm_4_2.png)
 
 ### パスワードの変更
 
-  - ① passwordの変更は、各画面の左側メニュー (Change password) からいつでも行えます。
-  - ② パスワードは確認の為、再入力します。
-  - ③ 全ての記入項目を確認後、実行します。
+1. passwordの変更は、各画面の左側メニュー (Change password) からいつでも行えます。
+2. パスワードは確認の為、再入力します。
+3. 全ての記入項目を確認後、実行します。
 
 ![]({{ site.baseurl }}/assets/images/help/RegistrationForm_2_2.png)
 ![]({{ site.baseurl }}/assets/images/help/Change-password_21.png)
@@ -160,9 +157,9 @@ Assemblyのクエリとして選択できるようになります。クエリフ
 
 ### DRA(DDBJ Sequence Read Archive)に登録したデータ<a name="private"></a>
 
-  - ① Private DRA entryを選択します。
-  - ② metadataを選択します。
-  - ③ Queryにするファイルを選択します。
+1. Private DRA entryを選択します。
+2. metadataを選択します。
+3. Queryにするファイルを選択します。
 
 ![]({{ site.baseurl }}/assets/images/help/Selecting-Query-Files_Private-DRA-entry_2.png)
 
@@ -170,52 +167,52 @@ Assemblyのクエリとして選択できるようになります。クエリフ
 
 #### 新規にHTTPアップロードする場合
 
-  - ① HTTP Uploadを選択します。
-  - ② ”ファイルを選択”をクリックしローカルからファイルを選択します。
-  - ③ ”UPLOAD”をクリックします。
-  - ④ ファイルアップロードが完了するとファイル名が表示されます。Aliasを入力できます。
-  - ⑤ リロードすると表の中にファイルが表示されています。
+1. HTTP Uploadを選択します。
+2. ”ファイルを選択”をクリックしローカルからファイルを選択します。
+3.  ”UPLOAD”をクリックします。
+4.  ファイルアップロードが完了するとファイル名が表示されます。Aliasを入力できます。
+5.  リロードすると表の中にファイルが表示されています。
 
 ![]({{ site.baseurl }}/assets/images/help/Selecting-Query-Files_HTTP-Upload_4.png)
 
 #### 既にHTTPアップロードしたファイルから選択する場合
 
-  - ① HTTP Uploadを選択します。
-  - ② 既にアップロード済みのファイルから選択します。
+1. HTTP Uploadを選択します。
+2. 既にアップロード済みのファイルから選択します。
 
 ![]({{ site.baseurl }}/assets/images/help/Selecting-Query-Files_HTTP-Upload_R_2.png)
 
 ### FTPでのアップロード（新規、既存ファイル）<a name="FTP"></a>
 
-  - ① FTP Uploadを選択します。
-  - ② 新規にファイルをアップロードする場合は、[Add new files]をクリックします。<br>-----&gt;[Registration of fastq/fasta files画面へ遷移します。](#RgstFqFa)
-  - ③ 既にFTPアップロードしたファイルを使用する時は、リストから選びます。
+1. FTP Uploadを選択します。
+2. 新規にファイルをアップロードする場合は、[Add new files]をクリックします。<br>-----&gt;[Registration of fastq/fasta files画面へ遷移します。](#RgstFqFa)
+3. 既にFTPアップロードしたファイルを使用する時は、リストから選びます。
 
 ![]({{ site.baseurl }}/assets/images/help/Selecting-Query-Files_FTP-Upload_51.png)
 
 ### DRA databaseからDRA/ERA/SRA のFASTQファイルをインポート<a name="import"></a>
 
-  - ① Import public DRAを選択します。
-  - ② [Accession
+1. Import public DRAを選択します。
+2. [Accession
     Numberを検索したい場合](http://ddbj.nig.ac.jp/DRASearch)はこちらからできます。
-  - ③ Accession Numberを入力します。
-  - ④ Add my DRA entry をクリックします。
-  - ⑤ インポートが終了すると、Statusが"queued"から"done"に変わります。（ページ再読み込み）
-  - ⑥ Private DRA entryを選択して下さい。インポートしたデータが使用可能となっております。
+3. Accession Numberを入力します。
+4. Add my DRA entry をクリックします。
+5. インポートが終了すると、Statusが"queued"から"done"に変わります。（ページ再読み込み）
+6. Private DRA entryを選択して下さい。インポートしたデータが使用可能となっております。
 
 <!-- end list -->
 
-  - ＊インポートが終了するとメールが届きます。
-  - ＊Statusが"failed"の時は、再実行してください。
-  - ＊Statusが"preparing"の時は、まだDRAにファイルが準備されておりません。後日、再実行してください。
+  - インポートが終了するとメールが届きます。
+  - Statusが"failed"の時は、再実行してください。
+  - Statusが"preparing"の時は、まだDRAにファイルが準備されておりません。後日、再実行してください。
 
 ![]({{ site.baseurl }}/assets/images/help/Selecting-Query-Files_Import-public-DRA_41.png)
 
 ### Preprocessing処理での結果ファイル<a name="Preprocessing"></a>
 
-- ① Preprocessingを選択します。
-- <span id="Unmapped">②Preprocessing結果ファイルは、「JOB番号\_ファイル名\_e」で表示されています。</span>
-- ③ 使用するファイルをチェックします。
+1. Preprocessingを選択します。
+2. Preprocessing結果ファイルは、「JOB番号\_ファイル名\_e」で表示されています。<br>（BWA Unmap結果ファイルは、「JOB番号_ファイル名.unmapped」で表示されています。
+3. 使用するファイルをチェックします。
 
 ![]({{ site.baseurl }}/assets/images/help/Selecting-Query-Files_Preprocessing_21.png)
 
@@ -226,19 +223,19 @@ Assemblyのクエリとして選択できるようになります。クエリフ
 #### By FTP(Recommended)
 
 - 1\. Upload FASTA/FASTQ files
-- ①[FTPクライアントによる転送方法については、こちらのページ](//www.evernote.com/shard/s205/sh/dadca23e-38bc-4b13-a8b1-1c592f5b31e2/439158c40652ddb7d47f2b60ce022291)をご参照ください。
-- ② FTP clientをローカルPCにインストールし、DDBJのサーバーへFTP転送します。
-- ③ FTP setting内容です。（loginできない場合、パスワード変更を行って下さい。）
-- ④（FTPでの転送ができない場合、時間がかかりますがHTTPでの転送も可能です。）
-- ⑤ アップロードが終了したら、画面をリロードしてください。下のリストにファイルが追加されます。
-- ⑥ アップロードしたファイルをチェックし、次へ進みます。
+1. [FTPクライアントによる転送方法については、こちらのページ](//www.evernote.com/shard/s205/sh/dadca23e-38bc-4b13-a8b1-1c592f5b31e2/439158c40652ddb7d47f2b60ce022291)をご参照ください。
+2. FTP clientをローカルPCにインストールし、DDBJのサーバーへFTP転送します。
+3. FTP setting内容です。（loginできない場合、パスワード変更を行って下さい。）
+4. （FTPでの転送ができない場合、時間がかかりますがHTTPでの転送も可能です。）
+5. アップロードが終了したら、画面をリロードしてください。下のリストにファイルが追加されます。
+6. アップロードしたファイルをチェックし、次へ進みます。
 
 ![]({{ site.baseurl }}/assets/images/help/Registration_-filesUpload_31.png)
 
 - 2\. Select a FASTA/FASTQ file（Uploadしたファイルの注釈付け１）
-- ① Read layoutでSingle-end又は、Paired-endを選択します。
-- ② read fileを選択します。（paired\_endの場合はread1と対になるread2も選択）
-- ③ 次へ進みます。
+1. Read layoutでSingle-end又は、Paired-endを選択します。
+2. read fileを選択します。（paired\_endの場合はread1と対になるread2も選択）
+3. 次へ進みます。
 
 ＜Single\_endの場合＞
 
@@ -249,37 +246,35 @@ Assemblyのクエリとして選択できるようになります。クエリフ
 ![]({{ site.baseurl }}/assets/images/help/Registration-of-fastqfasta-files_Select-a-FASTAFASTQ-file_21.png)
 
 - 3\. Input a specification（Uploadしたファイルの注釈付け２）
-- ① シークエンサの機種を選択します。
-- ② Study titleを入力します。
-- ③ 登録(SUBMITをクリック)します。
-
+1. シークエンサの機種を選択します。
+2. Study titleを入力します。
+3. 登録(SUBMITをクリック)します。
 ![]({{ site.baseurl }}/assets/images/help/Registration-of-fastqfasta-files_Input-a-specification_11.png)
-
-- ④ 処理終了、Assembly/Mapplingをクリックすると、[Selecting Query Files画面](#FTP)に遷移します。  
+4. 処理終了、Assembly/Mapplingをクリックすると、[Selecting Query Files画面](#FTP)に遷移します。  
 ＊Uploadしたファイルを使用して解析が可能になっています。
 
 ![]({{ site.baseurl }}/assets/images/help/Registration-complete_12.png)
 
 #### By HTTP(slower)
 
-- ① Browse and Uploadをクリックします。
-- ② ローカルPCからファイルを選択します。開始するとUpload経過が表示されます。
+1. Browse and Uploadをクリックします。
+2. ローカルPCからファイルを選択します。開始するとUpload経過が表示されます。
 ![]({{ site.baseurl }}/assets/images/help/Registration_-filesUpload_HTTP_11.png)
-- ③ Uploadが完了したらページ再読み込みします。
+3. Uploadが完了したらページ再読み込みします。
 ![]({{ site.baseurl }}/assets/images/help/Registration_-filesUpload_HTTP_21.png)
-- ④ ファイルがリストに追加されています。
+4. ファイルがリストに追加されています。
 ![]({{ site.baseurl }}/assets/images/help/Registration_-filesUpload_HTTP_31.png)
 
 ## Set Parameters for Preprocessing<a name="SetPrmtPrePro"></a>
 
 ### Preprocessing処理によるFastq形式ファイルの編集
 
-- ① QVタイプを選択します。[（参照：2.2
+1. QVタイプを選択します。[（参照：2.2
 Encoding）](//en.wikipedia.org/wiki/FASTQ_format#Encoding)
-- ② 5', 3'両端から、「指定QV」より大きい値の塩基が出現するまでトリムします。  
+2. 5', 3'両端から、「指定QV」より大きい値の塩基が出現するまでトリムします。  
 （トリム後のリード長が24bp以下の場合、そのリードを取り除きます。）
-- ③ 「指定QV」未満の塩基が、トリム後のリード長の「指定％」より多い場合は、そのリードを取り除きます。
-- ④ ペアードエンドリードの場合、片方が条件 ② 、③ により取り除かれた場合、もう一方も取り除かれます。
+3. 「指定QV」未満の塩基が、トリム後のリード長の「指定％」より多い場合は、そのリードを取り除きます。
+4. ペアードエンドリードの場合、片方が条件 ② 、③ により取り除かれた場合、もう一方も取り除かれます。
 
 ![]({{ site.baseurl }}/assets/images/help/SetParametersForPreprocessing_21.png)
 
@@ -287,12 +282,12 @@ Encoding）](//en.wikipedia.org/wiki/FASTQ_format#Encoding)
 
 ### 解析ツールの選択
 
-  - ① まず最初に処理 ( Reference Genome Mapping または、*de novo* Assembly )
+1. まず最初に処理 ( Reference Genome Mapping または、*de novo* Assembly )
     を選択します。
-  - ② ツールを選択します。
-  - ③ この後でオプションの指定等あります。  
+2. ツールを選択します。
+3. この後でオプションの指定等あります。  
     ツールのマニュアル（Help列：本マーク）をよくお読み下さい。
-  - ④ *de novo* Assembly の場合で、結果contigをqueryとして、続けて Mapping
+4. *de novo* Assembly の場合で、結果contigをqueryとして、続けて Mapping
     (BLAT使用)する場は、下の、Mapping Contigs by de novo Assemble to
     Reference Sequences.を選択します。
 
@@ -302,46 +297,36 @@ Encoding）](//en.wikipedia.org/wiki/FASTQ_format#Encoding)
 
 ### クエリーファイルを一つのジョブで実行
 
-- ① 編集したいファイルにチェックを入れます。
-- ② confirmをクリックします。
-
+1. 編集したいファイルにチェックを入れます。
+2. confirmをクリックします。
 ![]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_61.png)
-
-- ③ 確認
-- ④ 次へ
+3. 確認
+4. 次へ
 
 ![]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_71.png)
 
 ### クエリーファイルを複数のジョブで実行
 
-- ① 一つのジョブとして編集したいファイルにチェックを入れます。
-- ② confirmをクリックします。
-
+1. 一つのジョブとして編集したいファイルにチェックを入れます。
+2. confirmをクリックします。
 ![]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_111.png)
-
-- ③ 確認
-
+3. 確認
 ![]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_121.png)
-
-- ④ 残りのファイルの内、別のジョブとして編集したいファイルにチェックを入れます。
-- ⑤ confirmをクリックします。
-
+4. 残りのファイルの内、別のジョブとして編集したいファイルにチェックを入れます。
+5. confirmをクリックします。
 ![]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_131.png)
-
-- ⑥ クエリセット１、２ができます。（JOBが２つ投入）
-- ⑦ 次へ
+6. クエリセット１、２ができます。（JOBが２つ投入）
+7. 次へ
 
 ![]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_141.png)
 
 ### Mate-pairedを使用してdenovoAssembly(SOAPdenovo,Velvetのみ)
 
-- ① 編集したいファイルにチェックを入れます。
-- ② 先にPair-Endをセットします。（その後Mate-Pairをセットします）
-
+1. 編集したいファイルにチェックを入れます。
+2. 先にPair-Endをセットします。（その後Mate-Pairをセットします）
 ![]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_91.png)
-
-- ③ 確認
-- ④ 次へ
+3. 確認
+4. 次へ
 
 ![]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_101.png)
 
@@ -349,40 +334,38 @@ Encoding）](//en.wikipedia.org/wiki/FASTQ_format#Encoding)
 
 ### Major genomeとして登録されているreferenceを使用する場合
 
-- ① Major genome setsを選択します。
-- ② Organisms,Genome setsを選択します。
-- ③ 染色体を選択します。
-- ④ 次へ
+1. Major genome setsを選択します。
+2. Organisms,Genome setsを選択します。
+3. 染色体を選択します。
+4. 次へ
 
 ![]({{ site.baseurl }}/assets/images/help/Specifying-Database-of-Reference-Genome_11.png)
 
 ### 自分で登録したreference (User original sets) を使用する場合
 
-- ① User original setsを選択します。
-- ② Genome setsを選択します。
-- ③ 次へ
+1. User original setsを選択します。
+2. Genome setsを選択します。
+3. 次へ
 
 ![]({{ site.baseurl }}/assets/images/help/Specifying-Database-of-Reference-Genome_21.png)
 
 ### 自分でreferenceを(User original setsへ)登録する場合
 
-- ① Download or upload referenceを選択します。
+1. Download or upload referenceを選択します。
+
 - [アクセッション番号(INSD)からのダウンロードの場合]  
-② アクセッション番号(INSD)を入れ"LOAD"をクリックします。
+2. アクセッション番号(INSD)を入れ"LOAD"をクリックします。
+
 - [ローカルPCからのアップロードの場合]  
-② "ファイルを選択"をクリックし、ローカルPCからファイルを選択したら"UPLOAD"をクリックします。
-- ③ ファイルが表示されます。
-- ④ "CREATE DATASET"をクリックするとCreate Genome Dataset画面へ遷移します。
-
+2. "ファイルを選択"をクリックし、ローカルPCからファイルを選択したら"UPLOAD"をクリックします。
+3. ファイルが表示されます。
+4. "CREATE DATASET"をクリックするとCreate Genome Dataset画面へ遷移します。
 ![]({{ site.baseurl }}/assets/images/help/SpecifyingDatabase_61.png)
-
-- ⑤ genomeset の記述を変更できます。
-- ⑥ "CREATE GENOMESET"をクリックするとSpecifying Database of Reference
+5. genomeset の記述を変更できます。
+6. "CREATE GENOMESET"をクリックするとSpecifying Database of Reference
 Genome画面に戻ります。
-
 ![]({{ site.baseurl }}/assets/images/help/SpecifyingDatabase_21.png)
-
-- ⑦ ダウンロードしたファイルが"User original sets"に追加され、選択した状態となっています。
+7. ダウンロードしたファイルが"User original sets"に追加され、選択した状態となっています。
 
 ![]({{ site.baseurl }}/assets/images/help/SpecifyingDatabase_31.png)
 
@@ -390,20 +373,20 @@ Genome画面に戻ります。
 
 ### Setting for *De Novo* Assembly
 
-- ① オプションを指定します。
-- ② [WGS配列データ](/ddbj/wgs.html)としてDDBJに登録する場合は該当にチェックします。
-- ③ 次へ  
+1. オプションを指定します。
+2. [WGS配列データ](/ddbj/wgs.html)としてDDBJに登録する場合は該当にチェックします。
+3. 次へ  
 ＊ツールにより、画面は若干異なります。
 
 ![]({{ site.baseurl }}/assets/images/help/Setting-for-De-Novo-Assembly_velvet_1.png)
 
 ### Setting for Reference Genome Mapping
 
-- ① オプションを指定します。
-- ② 'Uniq'指定ができます。
-- ③ DNA polymorphism抽出方法を選択します。
-- ④ [WGS配列データ](/ddbj/wgs.html)としてDDBJに登録する場合は該当にチェックします。
-- ⑤ 次へ  
+1. オプションを指定します。
+2. 'Uniq'指定ができます。
+3. DNA polymorphism抽出方法を選択します。
+4. [WGS配列データ](/ddbj/wgs.html)としてDDBJに登録する場合は該当にチェックします。
+5. 次へ  
 ＊ツールにより、画面は若干異なります。
 
 ![]({{ site.baseurl }}/assets/images/help/SetOption_Bwa_21.png)
@@ -412,10 +395,10 @@ Genome画面に戻ります。
 
 ### Mapping/*de novo* Assembly
 
-- ① ジョブが終了した際の連絡メールアドレスを記入します。
-- ② 内容を確認したら、"RUN"をクリックします。
-- ③ PopUp表示で再確認します。"OK"で実行。The reservation was completed.画面へ遷移します。
-- ④ "STATUS"をクリックすると、Mapping, *de novo* Assembly 各Status ページへ遷移します。
+1. ジョブが終了した際の連絡メールアドレスを記入します。
+2. 内容を確認したら、"RUN"をクリックします。
+3. PopUp表示で再確認します。"OK"で実行。The reservation was completed.画面へ遷移します。
+4. "STATUS"をクリックすると、Mapping, *de novo* Assembly 各Status ページへ遷移します。
 
 <span class="red">＊guestユーザーでは、RUNボタンが表示されません</span>
 
@@ -433,10 +416,10 @@ Genome画面に戻ります。
 
 ### Preprocessing
 
-- ① ジョブが終了した際の連絡メールアドレスを記入します。
-- ② 内容を確認します。
-- ③ "RUN"をクリックすると、The reservation was completed.画面へ遷移します。
-- ④ "STATUS"をクリックすると、Status-PreProcess画面へ遷移します。
+1. ジョブが終了した際の連絡メールアドレスを記入します。
+2. 内容を確認します。
+3. "RUN"をクリックすると、The reservation was completed.画面へ遷移します。
+4. "STATUS"をクリックすると、Status-PreProcess画面へ遷移します。
 
 ![]({{ site.baseurl }}/assets/images/help/RunConfirmation_PreProcess_21.png)
 
@@ -446,11 +429,11 @@ Genome画面に戻ります。
 
 ### ジョブ実行状況の確認
 
-- ① ”Show Only Your Own Job”をチェックします。
-- ② Reloadをクリックすると、ログインユーザーの結果のみ抽出されます。
-- ③ 実行したジョブのStatusが確認できます。( generating/running/complete/error )
-- ④ "View"クリックで、実行状況の詳細画面へ遷移します。
-- ⑤ 他のStatus画面へも遷移できます。
+1. ”Show Only Your Own Job”をチェックします。
+2. Reloadをクリックすると、ログインユーザーの結果のみ抽出されます。
+3. 実行したジョブのStatusが確認できます。( generating/running/complete/error )
+4. "View"クリックで、実行状況の詳細画面へ遷移します。
+5. 他のStatus画面へも遷移できます。
 
 ![]({{ site.baseurl }}/assets/images/help/Status-Mapping_31.png)
 
@@ -458,9 +441,9 @@ Genome画面に戻ります。
 
 ### Mapping
 
-- ① 統計結果が表示されます。
-- ② 実行ログの確認ができます。
-- ③ 各種コマンド結果ファイルがダウンロードできます。
+1. 統計結果が表示されます。
+2. 実行ログの確認ができます。
+3. 各種コマンド結果ファイルがダウンロードできます。
 
 ![]({{ site.baseurl }}/assets/images/help/DetailViewMapping5_1.png)
 
@@ -488,9 +471,9 @@ N = \# sequences.
 
 ### *de novo* Assembly
 
-- ① 統計結果が表示されます。
-- ② 実行ログの確認ができます。
-- ③ 各種コマンド結果ファイルがダウンロードできます。
+1. 統計結果が表示されます。
+2. 実行ログの確認ができます。
+3. 各種コマンド結果ファイルがダウンロードできます。
 
 ![]({{ site.baseurl }}/assets/images/help/DetailViewAssembly1_1.png)
 
@@ -501,8 +484,8 @@ N = \# sequences.
 
 ### Preprocessing
 
-- ① 編集後Fastqファイル及び、各種グラフのダウンロードが行えます。
-- ② 実行ログの確認ができます。
+1. 編集後Fastqファイル及び、各種グラフのダウンロードが行えます。
+2. 実行ログの確認ができます。
 
 ![]({{ site.baseurl }}/assets/images/help/DetailViewPreprocess6_1.png)
 
