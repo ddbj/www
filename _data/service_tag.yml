@@ -1,12 +1,36 @@
-database:
-  en: Database
-  ja: データベース
-search:
-  en: Search
-  ja: 検索
 analysis:
   en: Analysis
   ja: 解析
+database:
+  en: Database
+  ja: データベース
+disease:
+  en: Disease
+  ja: 疾患
+gene_expression:
+  en: Gene expression
+  ja: 遺伝子発現
+genome:
+  en: Genome
+  ja: ゲノム
+insdc:
+  en: INSDC
+  ja: INSDC
+ngs:
+  en: NGS
+  ja: NGS
+prokaryotic:
+  en: Prokaryotic
+  ja: 原核生物
+search:
+  en: Search
+  ja: 検索
 sequence:
   en: Sequence
   ja: 塩基配列
+submission:
+  en: Submission
+  ja: 登録
+taxonomy:
+  en: Taxonomy
+  ja: 生物分類
