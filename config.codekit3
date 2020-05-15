@@ -2407,14 +2407,6 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_search_analysis/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_search_analysis/index.html",
-		"oF": 0
-		},
 	"/_search_analysis/past-services.md": {
 		"cB": 0,
 		"cS": 0,
@@ -2604,6 +2596,14 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"/_services/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_services/index.html",
+		"oF": 0
 		},
 	"/_site": {
 		"ft": 65536,
