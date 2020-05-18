@@ -29,7 +29,8 @@ lang: ja
               </h2>
               <ul class="tags">
                 {% for tag in service.tags %}
-                <li class="service-tag" data-tag="{{ site.data.services.dictionary[tag][page.lang] }}">{{ site.data.services.dictionary[tag][page.lang] }}</li>
+                <li class="service-tag" data-tag="{{ site.data.services.dictionary[tag][page.lang] }}">
+                  {{ site.data.services.dictionary[tag][page.lang] }}</li>
                 {% endfor %}
                 {% if service.provider %}
                 <li class="service-tag -reverse" data-tag="{{service.provider}}">{{ service.provider }}</li>

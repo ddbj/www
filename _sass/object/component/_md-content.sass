@@ -40,7 +40,7 @@ $MARGIN_BOTTOM: 1rem
       margin-bottom: 10px
       padding-left: 29px
       position: relative
-      &:before 
+      &:before
         content: counter(my-counter)
         counter-increment: my-counter
         background-color: $COLOR_KEY_PALE
@@ -61,7 +61,7 @@ $MARGIN_BOTTOM: 1rem
       ul
         li
           padding-left: 0
-          &:before 
+          &:before
             content: none
 
   dl
@@ -71,19 +71,19 @@ $MARGIN_BOTTOM: 1rem
     dt
       font-weight: bold
     dd
-      + dt
-        margin-top: 1rem
+    + dt
+      margin-top: 1rem
 
   .table-caption
     font-size: 1.6 rem
     color: #6E5C3E
-    margin-bottom: 1.3rem 
+    margin-bottom: 1.3rem
     text-align: left
     display: block
     margin-top: 3.5rem
   table
     width: 100%
-    border: 1px solid $COLOR_GRAY    
+    border: 1px solid $COLOR_GRAY
     line-height: 1.2
     font-size: 1.2rem
     tr
@@ -111,17 +111,18 @@ $MARGIN_BOTTOM: 1rem
     font-size: 1.2rem
     line-height: 1.6
     font-family: 'courier', monospace
-  
+
   .attention
     background-color: $COLOR_KEY_VELY_PALE
     padding: 1rem 1.6rem
     border-left: 6px solid $COLOR_KEY_PALE
     margin-bottom: 1.6rem
 
-  .example-of-use dt 
+  .example-of-use dt
     cursor: pointer
     a
       text-decoration: none
+      position: relative
     &::after
       content: ""
       display: block
@@ -133,7 +134,7 @@ $MARGIN_BOTTOM: 1rem
       border-right: 2px solid $COLOR_KEY
       transform: translateX(900%) translateY(-150%)rotate(135deg)
 
-  .example-of-use dd 
+  .example-of-use dd
     display: none
     margin: 0
 
