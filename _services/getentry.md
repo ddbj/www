@@ -105,7 +105,7 @@ getentry で検索可能な各データベースのリリース番号や公開�
 #### 出力形式
 
 | ---- | ---- | ---- | ---- |
-default||指定したデータベースの公開形式で出力            |  空白 |     |                
+default||指定したデータベースの公開形式で出力            |   |               
 FASTA               | [アミノ酸配列FASTA](#trans)               |  アミノ酸配列をFASTA 形式 で出力 | UniProt, DAD, Patent で選択可能 | 
 ||[塩基配列FASTA (for DAD)](#dadfasta) | アミノ酸配列をコードする塩基配列をFASTA 形式 で出力 | DAD のみ選択可能          | 
 ||[seqres](#seqres)              | PDB アミノ酸 FASTA                | PDB のみ選択可能  | 

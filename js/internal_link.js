@@ -13,7 +13,8 @@ export default function internalLink() {
 
       for (let i = 0; i < hTags.length; i++) {
         let theHeading = hTags[i];
-        theHeading.setAttribute('id', 'index_id' + i);  //リンクで飛べるようにIDをつける
+        const id = 'index_id' + i;
+        theHeading.setAttribute('id', id);  //リンクで飛べるようにIDをつける
         if (theHeading.tagName === 'H2') {
           if (subListSrc !== "") {
             //h3リストが生成されていれば
@@ -38,13 +39,13 @@ export default function internalLink() {
     }
   }
   // ナビゲーションのリンクを指定
-  let navLink = $('#TableOfContents li a');
+  const $navLink = $('#TableOfContents li a');
 
   // 各コンテンツのページ上部からの開始位置と終了位置を配列に格納しておく
   let contentsArr = new Array();
-  for (let i = 0; i < navLink.length; i++) {
+  for (let i = 0; i < $navLink.length; i++) {
     // コンテンツのIDを取得
-    let targetContents = navLink.eq(i).attr('href');
+    let targetContents = $navLink.eq(i).attr('href');
     // ページ内リンクでないナビゲーションが含まれている場合は除外する
     if (targetContents.charAt(0) == '#') {
       // ページ上部からコンテンツの開始位置までの距離を取得
@@ -65,8 +66,8 @@ export default function internalLink() {
       // 現在のスクロール位置が、配列に格納した開始位置と終了位置の間にあるものを調べる
       if (contentsArr[i][0] <= windowScrolltop && contentsArr[i][1] >= windowScrolltop) {
         // 開始位置と終了位置の間にある場合、ナビゲーションにclass="current"をつける
-        navLink.removeClass('current');
-        navLink.eq(i).addClass('current');
+        $navLink.removeClass('current');
+        $navLink.eq(i).addClass('current');
         i == contentsArr.length;
       }
     }
@@ -77,8 +78,11 @@ export default function internalLink() {
     currentCheck();
   });
 
-  // ナビゲーションをクリックした時のスムーズスクロール
-  navLink.click(function () {
+  // ナビゲーションクリック時の動作：スムーズスクロール・アドレスバーにID付与
+  $navLink.click(function () {
+    console.log(this);
+    history.replaceState('', '', this.href);
+    console.log(this.href);
     $('html,body').animate({
       scrollTop: $($(this).attr('href')).offset().top
     }, 400);
