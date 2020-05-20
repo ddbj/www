@@ -132,8 +132,7 @@ Japanese Genotype-phenotype Archive に関する更新や変更のお知らせ�
 
   - [ARSA](http://arsa.ddbj.nig.ac.jp/html/ "キーワードで塩基配列データを検索")
 
-  - [DRA
-    Search](http://ddbj.nig.ac.jp/DRASearch/ "DDBJ/EBI/NCBI SRA のデータの検索と取得")
+  - [DRA Search](http://ddbj.nig.ac.jp/DRASearch/ "DDBJ/EBI/NCBI SRA のデータの検索と取得")
 
   - [TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja "生物名を検索")
 

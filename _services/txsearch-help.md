@@ -5,7 +5,7 @@ formal_name: Taxonomy Search
 service_link:
   en: http://ddbj.nig.ac.jp/tx_search/?lang=en
   ja: http://ddbj.nig.ac.jp/tx_search/?lang=ja
-pathname: TXSearch
+pathname: txsearch-help
 category: search_analysis
 description:
   en: Taxonomy database search

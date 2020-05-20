@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: WABI VecScreen ヘルプ
-pathname: wabiVecScreen
+pathname: wabi_vecscreen-help
 category: search_analysis
 ---
 

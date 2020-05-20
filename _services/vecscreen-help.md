@@ -4,7 +4,7 @@ title: VecScreen
 service_link:
   en: http://ddbj.nig.ac.jp/vecscreen/
   ja: http://ddbj.nig.ac.jp/vecscreen/vecscreen?lang=ja
-pathname: VecScreen
+pathname: vecscreen-help
 category: search_analysis
 description:
   en: Vector search to screen contamination in nucleic acid sequences.

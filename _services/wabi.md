@@ -44,9 +44,9 @@ http://ddbj.nig.ac.jp/wabi/blast/wabi_blast_1111-1111-1111-11-111-111111?info=re
 
 現在 WABI は、次のサービスの Web API を提供しています。
 
-  - [BLAST]({{site.baseurl}}/services/wabiBLAST.html)
-  - [getentry]({{site.baseurl}}/services/getentry.html)
-  - [ARSA]({{site.baseurl}}/services/ARSA.html)
-  - [ClustalW]({{site.baseurl}}/services/wabiClustalw.html)
-  - [VecScreen]({{site.baseurl}}/services/wabiVecScreen.html)
-  - [MAFFT]({{site.baseurl}}/services/wabiMAFFT.html)
+  - [BLAST]({{site.baseurl}}/services/wabi_blast-help.html)
+  - [getentry]({{site.baseurl}}/services/getentry-help.html)
+  - [ARSA]({{site.baseurl}}/services/arsa-help.html)
+  - [ClustalW]({{site.baseurl}}/services/wabi_clustalw-help.html)
+  - [VecScreen]({{site.baseurl}}/services/wabi_vecscreen-help.html)
+  - [MAFFT]({{site.baseurl}}/services/wabi_mafft-help.html)

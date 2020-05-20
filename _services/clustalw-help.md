@@ -4,7 +4,7 @@ title: ClustalW ヘルプ
 service_link:
   en: http://clustalw.ddbj.nig.ac.jp/index.php?lang=ja
   ja: http://clustalw.ddbj.nig.ac.jp/index.php?lang=en
-pathname: ClustalW
+pathname: clustalw-help
 category: search_analysis
 description:
   en: DMultiple alignment and tree-making

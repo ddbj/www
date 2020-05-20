@@ -5,7 +5,7 @@ formal_name: getentry
 service_link:
   en: http://getentry.ddbj.nig.ac.jp/top-e.html
   ja: http://getentry.ddbj.nig.ac.jp/top-j.html
-pathname: getentry
+pathname: getentry-help
 wabi: getentry#ge_program
 category: search_analysis
 description:

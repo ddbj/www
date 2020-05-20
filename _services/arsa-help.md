@@ -5,7 +5,7 @@ formal_name: All-round Retrieval of Sequence and Annotation
 service_link:
   en: http://ddbj.nig.ac.jp/arsa/
   ja: http://ddbj.nig.ac.jp/arsa/
-pathname: ARSA
+pathname: arsa-help
 category: search_analysis
 description:
   en: DDBJ annotated/assembled data retrieval by accession numbers and keywords

@@ -1,11 +1,11 @@
 ---
 layout: indexed_content
-title: BLAST
+title: BLAST 
 formal_name: Basic Local Alignment Search Tool
 service_link: 
   en: http://blast.ddbj.nig.ac.jp/blastn?lang=en
   ja: http://blast.ddbj.nig.ac.jp/blastn?lang=ja
-pathname: BLAST
+pathname: blast-help
 category: search_analysis
 description:
   en: Nucleotide homology search
@@ -18,7 +18,7 @@ tags:
 
 DDBJ では，Web版 BLAST の他に，以下の方法でも BLAST サービスを提供しています。
 
-* [WABI BLAST]({{site.baseurl}}/services/wabiBLAST.html)
+* [WABI BLAST]({{site.baseurl}}/services/wabi_blast-help.html)
 * [NIG スーパーコンピュータ](https://sc.ddbj.nig.ac.jp/ja/system-guide/software)
 
 ## Program：プログラム<a name="program"></a>

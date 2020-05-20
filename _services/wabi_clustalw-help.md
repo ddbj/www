@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: WABI ClustalW ヘルプ
-pathname: wabiClustalw
+pathname: wabi_clustalw-help
 category: search_analysis
 ---
 
