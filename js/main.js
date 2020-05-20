@@ -1,4 +1,5 @@
 /* global $ */
+
 import internalLink from "./internal_link"
 import accordionMenu from "./accordion_menu"
 import switchAppearance from "./switch_appearance"
