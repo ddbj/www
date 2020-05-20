@@ -2,7 +2,7 @@
 
 // 内部リンク
 export default function internalLink() {
-  const $navLink = $("#TableOfContents li a");
+  let $navLink = "";
 
   const createIndex = () => {
     const indexWrap = document.querySelector(".internal-link"); //H2タグの前に挿入したdivタグ
@@ -51,6 +51,7 @@ export default function internalLink() {
         indexWrap.innerHTML = indexList.outerHTML;
       }
     }
+    $navLink = $("#TableOfContents li a");
     console.log("createIndex完了");
   };
 
@@ -98,7 +99,7 @@ export default function internalLink() {
 
   // ナビゲーションクリック時の動作：スムーズスクロール・アドレスバーにID付与
   const smoothScroll = () => {
-    $("#TableOfContents li a").on("click", function () {
+    $navLink.on("click", function () {
       history.replaceState("", "", this.href);
       $("html,body").animate(
         {
@@ -127,7 +128,7 @@ export default function internalLink() {
     })
     .then(() => {
       createContentsArr();
-      console.log('createElement完了');
+      console.log("createContentsArr完了");
     }).then(() => {
       smoothScroll();
     }).catch((error) => {
