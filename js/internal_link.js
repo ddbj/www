@@ -129,10 +129,11 @@ export default function internalLink() {
       if (param.match('#')) {
         // その#の位置に移動
         let element = document.getElementById(param.slice(1));
-        console.log(param.slice(1));
-        element.scrollIntoView(true);
+        element.scrollIntoView({
+          behavior: "smooth",
+          inline: "nearest",
+        });
       }
-      console.log(param);
     }).then(() => {
       smoothScroll();
     }).catch((error) => {
