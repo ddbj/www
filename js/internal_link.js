@@ -117,22 +117,27 @@ export default function internalLink() {
   });
 
   promise
-    .then(() => {
-      console.log("パラメーター確認開始");
-      // IDを付け終わっていたら
-      // URLを確認し
-      // URLの末尾に#がついていれば
-      if (document.URL.match(/#index_id/)) {
-        // その#の位置に移動する
-      }
-    })
+    
     .then(() => {
       createContentsArr();
       console.log("createContentsArr完了");
+    }).then(() => {
+      console.log("パラメーター確認開始");
+      // URLパラメータ文字列を取得
+      let param = location.hash;
+      // 変数paramに#がついていれば
+      if (param.match('#')) {
+        // その#の位置に移動
+        let element = document.getElementById(param.slice(1));
+        console.log(param.slice(1));
+        element.scrollIntoView(true);
+      }
+      console.log(param);
     }).then(() => {
       smoothScroll();
     }).catch((error) => {
       // エラーハンドリング
       console.error(error);
     });
+    
 }
