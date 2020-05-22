@@ -27,7 +27,6 @@ INSD アクセッション番号は アルファベット＋数字 で構成さ�
 Annotated/Assembled Data
 
 |  conventional  |  アルファベット１文字＋５桁の数字: 例 A12345<br>アルファベット２文字＋６桁の数字: 例 AB123456<br>アルファベット２文字＋８桁の数字: 例 AB12345678  |
-| ---- | ---- |
 |  bulk<br>[WGS](/ddbj/wgs.html),[TSA](/ddbj/tsa.html),[TLS](/ddbj/tls.html)  |  アルファベット４文字 ([For Large Scale Data](/prefix.html#large))＋８～１０ 桁の数字: 例 ABCD01012345<br>アルファベット６文字 ([For Large Scale Data](/prefix.html#large))＋８～１０ 桁の数字: 例 ABCDEF01012345  |
 |  [MGA](/ddbj/mga.html)  |  アルファベット５文字＋７ 桁以上の数字: 例 ABCDE1234567  |
 |  [protein\_id](/ddbj/qualifiers.html#protein_id)  |  アルファベット３文字 ([protein\_id prefix list](/prefix.html#protein))＋５桁の数字: 例 ABC12345<br>アルファベット３文字 ([protein\_id prefix list](/prefix.html#protein))＋７桁の数字: 例 ABC1234567 |
@@ -35,13 +34,11 @@ Annotated/Assembled Data
 シークエンサ出力データ
 
 |  [Trace Archive](/dta/index.html)  |  アルファベット２文字 (TI のみ) ＋１ 桁以上の数字: 例 TI12345678  |
-| ---- | ---- |
 |  [Sequece Read Archive](/dra/index.html)  |  アルファベット３文字 ([SRA prefix list](/prefix.html#dra)) ＋６ 桁以上の数字: 例 DRA000001  |
 
 研究プロジェクト・サンプル
 
 |  [BioProject](/bioproject/index.html)  |  アルファベット５文字 ([BioProject prefix list](/prefix.html#project)) ＋１ 桁以上の数字: 例 PRJDA123  |
-| ---- | ---- |
 |  [BioSample](/biosample/index.html)  |  アルファベット４文字 ([BioSample prefix](/prefix.html#sample)) ＋８桁の数字: 例 SAMD00000001  |
 
 ## アクセッション番号と混同されるもの {#confuse}

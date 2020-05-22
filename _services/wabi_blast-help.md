@@ -336,21 +336,87 @@ $ perl example.pl
 ID](#parameter-Request-ID) を返します。  
 BLAST検索 の検索条件や結果通知方法などを HTTPパラメーター で指定します。
 
-|  項目  |    |  説明  |
-| ---- | ---- | ---- |
-|  HTTP メソッド	  |    |  `POST`  |
-|  URI  |    |  `/blast`  |
-|  HTTP パラメーター	  |  `querySequence`	  |  [multi FASTA 形式の検索配列データ](#parameter-querySequence) <br> <code>例:<br>>my query sequence 1<br>CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA<br>GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG<br>GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC</code><br><span style="color:red;">※配列数を増やしても並列度は上がりません。 ジョブ管理エンジンによる負荷分散も考慮すると、Web API として利用するならば配列数は少なめにすることを推奨します。</span> |
-|    |  `datasets`  |  [データセット](#parameter-datasets) (例: `"ddbjall"`)  |
-|    |  `database`  |  [データベース](#parameter-database) (例: `"hum"`, `"hum pri"`)  |
-|    |  `program`  |  [BLAST プログラム](#parameter-program) (例: `"blastn"`)  |
-|    |  `parameters`  |  [その他のオプション指定](#parameter-parameters) (例: `"-v 100 -b 100 -e 10 -F F-W 11"`)  |
-|    |  `format`  |  [応答データの形式](#parameter-format) (例: `"text"`, `"json"`)  |
-|    |  `result`  |  [結果通知方法](#parameter-result) (例: `"www"`, `"mail"`)  |
-|    |  `address`  |  [メールアドレス](#parameter-address)  |
-|  処理内容	  |    |  BLAST検索 のジョブをキューに投入する。  |
-|  HTTP レスポンス	  |  成功した場合	  |  [Request ID](#parameter-Request-ID) を含むジョブ情報  |
-|  	  |  失敗した場合	  |  HTTP ステータス *4xx*  |
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">項目</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">HTTP メソッド</td>
+      <td><code class="language-plaintext highlighter-rouge">POST</code></td>
+    </tr>
+    <tr>
+    <td colspan="2">URI</td>
+    <td><code class="language-plaintext highlighter-rouge">/blast</code></td>
+    </tr>
+    <tr>
+    <td rowspan="8">HTTP パラメーター</td>
+    <td><code class="language-plaintext highlighter-rouge">querySequence</code></td>
+    <td>
+<a href="#parameter-querySequence">multi FASTA 形式の検索配列データ</a>
+              <pre class="code"><code class="language-plaintext highlighter-rouge">例: &gt;my query sequence 1
+CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
+GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
+GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC</code></pre>
+              <span style="color:red;">※配列数を増やしても並列度は上がりません。
+              ジョブ管理エンジンによる負荷分散も考慮すると、
+              Web API として利用するならば配列数は少なめにすることを推奨します。</span>
+</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">datasets</code></td>
+      <td>
+<a href="#parameter-datasets">データセット</a> (例: <code class="language-plaintext highlighter-rouge">"ddbjall"</code>)</td>
+    </tr>
+    <tr>
+    <td><code class="language-plaintext highlighter-rouge">database</code></td>
+    <td>
+<a href="#parameter-database">データベース</a> (例: <code class="language-plaintext highlighter-rouge">"hum"</code>, <code class="language-plaintext highlighter-rouge">"hum pri"</code>)</td>
+    </tr>
+    <tr>
+    <td><code class="language-plaintext highlighter-rouge">program</code></td>
+    <td>
+<a href="#parameter-program">BLAST プログラム</a> (例: <code class="language-plaintext highlighter-rouge">"blastn"</code>)</td>
+    </tr>
+    <tr>
+    <td><code class="language-plaintext highlighter-rouge">parameters</code></td>
+    <td>
+<a href="#parameter-parameters">その他のオプション指定</a> (例: <code class="language-plaintext highlighter-rouge">"-v 100 -b 100 -e 10 -F F -W 11"</code>)</td>
+    </tr>
+    <tr>
+    <td><code class="language-plaintext highlighter-rouge">format</code></td>
+      <td>
+<a href="#parameter-format">応答データの形式</a> (例: <code class="language-plaintext highlighter-rouge">"text"</code>, <code class="language-plaintext highlighter-rouge">"json"</code>)</td>
+    </tr>
+    <tr>
+    <td><code class="language-plaintext highlighter-rouge">result</code></td>
+    <td>
+<a href="#parameter-result">結果通知方法</a> (例: <code class="language-plaintext highlighter-rouge">"www"</code>, <code class="language-plaintext highlighter-rouge">"mail"</code>)</td>
+    </tr>
+    <tr>
+    <td><code class="language-plaintext highlighter-rouge">address</code></td>
+    <td><a href="#parameter-address">メールアドレス</a></td>
+    </tr>
+    <tr>
+    <td colspan="2">処理内容</td>
+    <td>BLAST検索 のジョブをキューに投入する。</td>
+    </tr>
+    <tr>
+    <td rowspan="2" style="background-color: white;">HTTP レスポンス</td>
+    <td>成功した場合</td>
+    <td>
+<a href="#parameter-Request-ID">Request ID</a> を含むジョブ情報</td>
+    </tr>
+    <tr>
+    <td>失敗した場合</td>
+      <td>HTTP ステータス <em>4xx</em>
+</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 処理の流れ
 
@@ -362,13 +428,90 @@ BLAST検索 の検索条件や結果通知方法などを HTTPパラメーター
 
 #### 入力値の検証内容
 
-|  [datasets](#parameter-datasets)<br>(省略可能) | {::nomarkdown}<ul><li>未定義の値が指定された場合、入力値エラーです。<br>※現在、未使用。 <code>database</code> との整合性チェックは行なっていません。</li></ul></td>{:/}  |
-|  [database](#parameter-database)  |  {::nomarkdown}<ul><li>必須チェック</li><li>データベース名を空白区切りで並べた値以外は、入力値エラーです。データベース名は英字または <code>"_"</code> のみです。<br/>例: <code>"hum"</code> や <code>"hum pri"</code> など。</li></ul>{:/}  |
-|  [program](#parameter-program)  |  {::nomarkdown}<ul><li>必須チェック</li><li>未定義の値が指定された場合、入力値エラーです。</li></ul>{:/}  |
-|  [format](#parameter-format)  |  {::nomarkdown}<ul><li>必須チェック</li><li>未定義の値が指定された場合、入力値エラーです。</li></ul>{:/}  |
-|  [parameters](#parameter-parameters)<br>(省略可能)  |  {::nomarkdown}<ul><li>オプション指定とその設定値を空白区切りで並べた値以外は、入力値エラーです。</li><li>指定可能なオプション以外は、入力値エラーです。指定可能なオプションは、 <code>program</code> 値に応じて次の通りです。<ul><li><code>program</code> 値が <code>"megablast"</code> の場合:<br /><code>ADEFGHIJLMNPRSTUVWXYZbefglmnpqrstvyz</code> 以外のオプション指定を含む場合は、入力値エラーです。<br />例: <code>"-A"</code> は正常値ですが、 <code>"-B"</code> は入力値エラー。</li><li><code>program</code> 値がそれ以外の場合:<br /><code>ABCDEFGIJKLMPQSTUVWXYZbefglmnqrstvwyz</code> 以外のオプション指定を含む場合は、入力値エラーです。<br />例: <code>"-B"</code> は正常値ですが、 <code>"-H"</code> は入力値エラー。</li><ul></li><li>オプションの設定値は整数値または、英数字およびカンマ区切り英数字です。<br />例: <code>"-1"</code> 、 <code>"foo,bar"</code> など。</li></ul>{:/}  |
-|  [result](#parameter-result)  |  {::nomarkdown}<ul><li>必須チェック</li><li>未定義の値が指定された場合、入力値エラーです。</li></ul>{:/}  |
-|  [address](#parameter-address)  |  {::nomarkdown}<ul><li><code>result</code> 値が <code>"mail"</code> の場合は必須チェック</li><li>メールアドレスの形式以外は、入力値エラーです。</li></ul>{:/}  |
+<table>
+  <tbody>
+    <tr>
+      <th class="first">
+<a href="#parameter-datasets">datasets</a><br>(省略可能)</th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>未定義の値が指定された場合、入力値エラーです。<br>
+          ※現在、未使用。 <code class="language-plaintext highlighter-rouge">database</code> との整合性チェックは行なっていません。</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-database">database</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>必須チェック</li>
+        <li>データベース名を空白区切りで並べた値以外は、入力値エラーです。データベース名は英字または <code class="language-plaintext highlighter-rouge">"_"</code> のみです。<br>
+          例: <code class="language-plaintext highlighter-rouge">"hum"</code> や <code class="language-plaintext highlighter-rouge">"hum pri"</code> など。</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-program">program</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>必須チェック</li>
+        <li>未定義の値が指定された場合、入力値エラーです。</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-format">format</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>必須チェック</li>
+        <li>未定義の値が指定された場合、入力値エラーです。</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first">
+<a href="#parameter-parameters">parameters</a><br>(省略可能)</th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>オプション指定とその設定値を空白区切りで並べた値以外は、入力値エラーです。</li>
+        <li>指定可能なオプション以外は、入力値エラーです。指定可能なオプションは、 <code class="language-plaintext highlighter-rouge">program</code> 値に応じて次の通りです。
+          <ul class="decimal bottom_space">
+            <li>
+<code class="language-plaintext highlighter-rouge">program</code> 値が <code class="language-plaintext highlighter-rouge">"megablast"</code> の場合:<br>
+                <code class="language-plaintext highlighter-rouge">ADEFGHIJLMNPRSTUVWXYZbefglmnpqrstvyz</code> 以外のオプション指定を含む場合は、入力値エラーです。<br>
+                例: <code class="language-plaintext highlighter-rouge">"-A"</code> は正常値ですが、 <code class="language-plaintext highlighter-rouge">"-B"</code> は入力値エラー。</li>
+          <li>
+<code class="language-plaintext highlighter-rouge">program</code> 値がそれ以外の場合:<br>
+                <code class="language-plaintext highlighter-rouge">ABCDEFGIJKLMPQSTUVWXYZbefglmnqrstvwyz</code> 以外のオプション指定を含む場合は、入力値エラーです。<br>
+                例: <code class="language-plaintext highlighter-rouge">"-B"</code> は正常値ですが、 <code class="language-plaintext highlighter-rouge">"-H"</code> は入力値エラー。</li>
+          </ul>
+        </li>
+        <li>オプションの設定値は整数値または、英数字およびカンマ区切り英数字です。<br>
+          例: <code class="language-plaintext highlighter-rouge">"-1"</code> 、 <code class="language-plaintext highlighter-rouge">"foo,bar"</code> など。</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-result">result</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>必須チェック</li>
+        <li>未定義の値が指定された場合、入力値エラーです。</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-address">address</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>
+<code class="language-plaintext highlighter-rouge">result</code> 値が <code class="language-plaintext highlighter-rouge">"mail"</code> の場合は必須チェック</li>
+        <li>メールアドレスの形式以外は、入力値エラーです。</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### 応答データの内容　
 
@@ -389,16 +532,53 @@ BLAST検索 の検索条件や結果通知方法などを HTTPパラメーター
 
 入力値の例
 
-|  HTTP パラメーター  |  入力値  |
-| ---- | ---- |
-|  `address`  |  `""`  |
-|  `database`  |  `"hum"`  |
-|  `datasets`  |  `"ddbjall"`  |
-|  `format`  |  `"json"`  |
-|  `parameters`  |  `" -v 100 -b 100 -e 10 -F F -W 11"`  |
-|  `program`  |  `"blastn"`  |
-|  `querySequence`  |  &gt;`my query sequence 1`<br>`CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA`<br>`GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG`<br>`GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC`  |
-|  `result`  |  `"www"`  |
+<table>
+  <thead>
+    <tr>
+      <th>HTTP パラメーター</th>
+      <th>入力値</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">address</code></td>
+      <td><code class="language-plaintext highlighter-rouge">""</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">database</code></td>
+      <td><code class="language-plaintext highlighter-rouge">"hum"</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">datasets</code></td>
+      <td><code class="language-plaintext highlighter-rouge">"ddbjall"</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">format</code></td>
+      <td><code class="language-plaintext highlighter-rouge">"json"</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">parameters</code></td>
+      <td><code class="language-plaintext highlighter-rouge">" -v 100 -b 100 -e 10 -F F -W 11"</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">program</code></td>
+      <td><code class="language-plaintext highlighter-rouge">"blastn"</code></td>
+    </tr>
+    <tr>
+  <td><code class="language-plaintext highlighter-rouge">querySequence</code></td>
+  <td>
+    <pre><code class="language-plaintext highlighter-rouge">&gt;my query sequence 1
+    CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
+    GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
+    GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC</code></pre>
+  </td>
+  </tr>
+  <tr>
+  <td><code class="language-plaintext highlighter-rouge">result</code></td>
+  <td><code class="language-plaintext highlighter-rouge">"www"</code></td>
+    </tr>
+  </tbody>
+</table>
 
 正常終了した場合の応答データ例
 
@@ -470,30 +650,93 @@ HTTP ステータス 400
 指定された [Request ID](#parameter-Request-ID) の [ジョブの現在の状態](#search-status)
 を返します。
 
-|  項目  |    |  説明  |
-| ---- | ---- | ---- |
-|  HTTP メソッド  |    |  `GET`  |
-|  URI  |    |  `"/blast/"` + [Request ID](#parameter-Request-ID) + HTTP パラメーター (例:`"/blast/wabi_blast_1111-1111-1111-11-111-111111?info=status"`)  |
-|  HTTP パラメーター  |  `info` (デフォルト値 = `"status"`)  |  [ジョブ情報の種類](#parameter-info) (例: `"status"`, `"result"`)  |
-|    |  `format` (デフォルト値 = `"text"`)  |  [応答データの形式](#parameter-format) (例: `"text"`, `"json"`)  |
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">項目</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+  <td colspan="2">HTTP メソッド</td>
+  <td><code class="language-plaintext highlighter-rouge">GET</code></td>
+    </tr>
+    <tr>
+  <td colspan="2">URI</td>
+  <td>
+<code class="language-plaintext highlighter-rouge">"/blast/"</code> + <a href="#parameter-Request-ID">Request ID</a> + HTTP パラメーター
+            (例: <code class="language-plaintext highlighter-rouge">"/blast/wabi_blast_1111-1111-1111-11-111-111111?info=status"</code>)</td>
+    </tr>
+    <tr>
+  <td rowspan="2">HTTP パラメーター</td>
+  <td>
+<code class="language-plaintext highlighter-rouge">info</code> (デフォルト値 = <code class="language-plaintext highlighter-rouge">"status"</code>)</td>
+  <td>
+<a href="#parameter-info">ジョブ情報の種類</a> (例: <code class="language-plaintext highlighter-rouge">"status"</code>, <code class="language-plaintext highlighter-rouge">"result"</code>)</td>
+    </tr>
+    <tr>
+  <td>
+<code class="language-plaintext highlighter-rouge">format</code> (デフォルト値 = <code class="language-plaintext highlighter-rouge">"text"</code>)</td>
+  <td>
+<a href="#parameter-format">応答データの形式</a> (例: <code class="language-plaintext highlighter-rouge">"text"</code>, <code class="language-plaintext highlighter-rouge">"json"</code>)</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 処理の流れ
 
-  - 入力値を検証します。  
+1. 入力値を検証します。  
     入力値エラーが見つかった場合は、処理を中断して `HTTP ステータス 400 Bad Request` を返します。
-  - 指定された [Request ID](#parameter-Request-ID) に対するジョブ情報を取得して、
+2. 指定された [Request ID](#parameter-Request-ID) に対するジョブ情報を取得して、
     [現在の状態](#search-status) 情報を取得します。  
     検索結果の保存期間を過ぎている場合など、ジョブ情報が見つからなかった場合には、 HTTP ステータス 404 を返します。
-  - 取得した [現在の状態](#search-status) 情報を `format` で指定された形式に整形して返します。  
+3. 取得した [現在の状態](#search-status) 情報を `format` で指定された形式に整形して返します。  
     ただし、利用不可能な `format` 値だった場合は `HTTP ステータス 404 Not Found` を返します。
 
 #### 入力値の検証内容
 
-
-|  [requestId](#parameter-Request-ID)  |  {::nomarkdown}<ul><li>必須チェック</li><li>英数字、<code>"-"</code> 、 <code>"_"</code> 以外を含む場合、入力値エラーです。</li><li>実在する <a href="#parameter-Request-ID">Request ID</a> 以外の場合、入力値エラーです。<br/>一定日数を超えた検索結果は破棄されていますが、その場合も入力値エラーとして扱われます。</li></ul>{:/}  |
-|  [format](#parameter-format)  |  {::nomarkdown}<ul><li>必須チェック</li><li>未定義の値の場合、入力値エラーです。</li></ul>{:/}  |
-|  [imageId](#parameter-imageId)  |  {::nomarkdown}<ul><li>何も指定しないこと。</li></ul>{:/}  |
-|  [info](#parameter-info)  |  {::nomarkdown}<ul><li><code>"status"</code> を指定すること。</li></ul>{:/}  |
+<table>
+  <tbody>
+    <tr>
+      <th class="first"><a href="#parameter-Request-ID">requestId</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>必須チェック</li>
+        <li>英数字、 <code class="language-plaintext highlighter-rouge">"-"</code> 、 <code class="language-plaintext highlighter-rouge">"_"</code> 以外を含む場合、入力値エラーです。</li>
+          <li>実在する <a href="#parameter-Request-ID">Request ID</a> 以外の場合、入力値エラーです。<br>
+            一定日数を超えた検索結果は破棄されていますが、その場合も入力値エラーとして扱われます。</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-format">format</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>必須チェック</li>
+        <li>未定義の値の場合、入力値エラーです。</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-imageId">imageId</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>何も指定しないこと。</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-info">info</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>
+<code class="language-plaintext highlighter-rouge">"status"</code> を指定すること。</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### 応答データの内容　
 
@@ -586,30 +829,87 @@ HTTP ステータス 400
 
 指定された [Request ID](#parameter-Request-ID) の検索条件を返します。
 
-|  項目  |    |  説明  |
-| ---- | ---- | ---- |
-|  HTTP メソッド  |    |  `GET`  |
-|  URI  |    |  `"/blast/"` + [Request ID](#parameter-Request-ID) + `"?info=request"` +HTTP パラメーター (例:`"/blast/wabi_blast_1111-1111-1111-11-111-111111?info=request"`)  |
-|  HTTP パラメーター  |  `format` (デフォルト値 = `"text"`)  |  [応答データの形式](#parameter-format) (例: `"text"`, `"json"`)  |
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">項目</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">HTTP メソッド</td>
+      <td><code class="language-plaintext highlighter-rouge">GET</code></td>
+    </tr>
+    <tr>
+      <td colspan="2">URI</td>
+      <td>
+<code class="language-plaintext highlighter-rouge">"/blast/"</code> + <a href="#parameter-Request-ID">Request ID</a> + <code class="language-plaintext highlighter-rouge">"?info=request"</code> + HTTP パラメーター
+                (例: <code class="language-plaintext highlighter-rouge">"/blast/wabi_blast_1111-1111-1111-11-111-111111?info=request"</code>)</td>
+    </tr>
+    <tr>
+      <td>HTTP パラメーター</td>
+      <td>
+<code class="language-plaintext highlighter-rouge">format</code> (デフォルト値 = <code class="language-plaintext highlighter-rouge">"text"</code>)</td>
+      <td>
+<a href="#parameter-format">応答データの形式</a> (例: <code class="language-plaintext highlighter-rouge">"text"</code>, <code class="language-plaintext highlighter-rouge">"json"</code>)</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 処理の流れ
 
-  - 入力値を検証します。  
+1. 入力値を検証します。  
     入力値エラーが見つかった場合は、処理を中断して `HTTP ステータス 400 Bad Request` を返します。
-  - 指定された [Request ID](#parameter-Request-ID) に対するジョブ情報を取得して、
+2. 指定された [Request ID](#parameter-Request-ID) に対するジョブ情報を取得して、
     [検索条件](#search-criteria) 情報を取得します。  
     検索結果の保存期間を過ぎている場合など、ジョブ情報が見つからなかった場合には、 HTTP ステータス 404 を返します。
-  - 取得した [検索条件](#search-criteria) 情報を `format` で指定された形式に整形して返します。  
+3. 取得した [検索条件](#search-criteria) 情報を `format` で指定された形式に整形して返します。  
     ただし、利用不可能な `format` 値だった場合は `HTTP ステータス 404 Not Found` を返します。
 
 #### 入力値の検証内容
 
-{::nomarkdown}{:/}
-
-|  [requestId](#parameter-Request-ID)  |  {::nomarkdown}<ul><li>必須チェック</li><li>英数字、 <code>"-"</code> 、 <code>"_"</code> 以外を含む場合、入力値エラーです。</li><li>実在する <a href="#parameter-Request-ID">Request ID</a> 以外の場合、入力値エラーです。<br />一定日数を超えた検索結果は破棄されていますが、その場合も入力値エラーとして扱われます。</li></ul>{:/}  |
-|  [format](#parameter-format)  |  {::nomarkdown}<ul><li>必須チェック</li><li>未定義の値の場合、入力値エラーです。</li></ul>{:/}  |
-|  [imageId](#parameter-imageId)  |  {::nomarkdown}<ul><li>何も指定しないこと。</li></ul>{:/}  |
-|  [info](#parameter-info)  |  {::nomarkdown}<ul><li><code>"request"</code> を指定すること。</li></ul>{:/}  |
+<table>
+    <tbody>
+      <tr>
+        <th><a href="#parameter-Request-ID">requestId</a></th>
+        <td>
+          <ul>
+            <li>必須チェック</li>
+            <li>英数字、 <code class="language-plaintext highlighter-rouge">"-"</code> 、 <code class="language-plaintext highlighter-rouge">"_"</code> 以外を含む場合、入力値エラーです。</li>
+            <li>実在する <a href="#parameter-Request-ID">Request ID</a> 以外の場合、入力値エラーです。<br>
+              一定日数を超えた検索結果は破棄されていますが、その場合も入力値エラーとして扱われます。</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th><a href="#parameter-format">format</a></th>
+        <td>
+          <ul>
+            <li>必須チェック</li>
+            <li>未定義の値の場合、入力値エラーです。</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th><a href="#parameter-imageId">imageId</a></th>
+        <td>
+          <ul>
+            <li>何も指定しないこと。</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <th><a href="#parameter-info">info</a></th>
+        <td>
+          <ul>
+            <li>
+<code class="language-plaintext highlighter-rouge">"request"</code> を指定すること。</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
 #### 応答データの内容
 
@@ -681,31 +981,88 @@ HTTP ステータス 404
 
 指定された [Request ID](#parameter-Request-ID) の検索結果を返します。
 
-|  項目  |    |  説明  |
-| ---- | ---- | ---- |
-|  HTTP メソッド  |    |  `GET`  |
-|  URI  |    |  `"/blast/"` + [Request ID](#parameter-Request-ID) + `"?info=result"` +HTTP パラメーター (例:`"/blast/wabi_blast_1111-1111-1111-11-111-111111?info=result"`)  |
-|  HTTP パラメーター  |  `format` (デフォルト値 = `"text"`)  |  [応答データの形式](#parameter-format) (例: `"text"`, `"json"`)
-  |
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">項目</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">HTTP メソッド</td>
+      <td><code class="language-plaintext highlighter-rouge">GET</code></td>
+    </tr>
+    <tr>
+      <td colspan="2">URI</td>
+      <td>
+<code class="language-plaintext highlighter-rouge">"/blast/"</code> + <a href="#parameter-Request-ID">Request ID</a> + <code class="language-plaintext highlighter-rouge">"?info=result"</code> + HTTP パラメーター
+                (例: <code class="language-plaintext highlighter-rouge">"/blast/wabi_blast_1111-1111-1111-11-111-111111?info=result"</code>)</td>
+    </tr>
+    <tr>
+      <td>HTTP パラメーター</td>
+      <td>
+<code class="language-plaintext highlighter-rouge">format</code> (デフォルト値 = <code class="language-plaintext highlighter-rouge">"text"</code>)</td>
+      <td>
+<a href="#parameter-format">応答データの形式</a> (例: <code class="language-plaintext highlighter-rouge">"text"</code>, <code class="language-plaintext highlighter-rouge">"json"</code>)</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 処理の流れ
 
-  - 入力値を検証します。  
+1. 入力値を検証します。  
     入力値エラーが見つかった場合は、処理を中断して `HTTP ステータス 400 Bad Request` を返します。
-  - 指定された [Request ID](#parameter-Request-ID) に対するジョブ情報を取得して、
+2. 指定された [Request ID](#parameter-Request-ID) に対するジョブ情報を取得して、
     [検索結果](#search-result) 情報を取得します。  
     検索結果の保存期間を過ぎていてジョブ情報が見つからなかった場合や検索処理が完了していなくて検索結果情報を取得できなかった場合、には、
     HTTP ステータス 400, 404 等を返します。
-  - 取得した [検索結果](#search-result) 情報を `format` で指定された形式に整形して返します。  
+3. 取得した [検索結果](#search-result) 情報を `format` で指定された形式に整形して返します。  
     ただし、利用不可能な `format` 値だった場合は `HTTP ステータス 404 Not Found` を返します。
 
 #### 入力値の検証内容
 
-|  [requestId](#parameter-Request-ID)  |  {::nomarkdown}<ul><li>必須チェック</li><li>英数字、 <code>"-"</code> 、 <code>"_"</code> 以外を含む場合、入力値エラーです。</li><li>実在する <a href="#parameter-Request-ID">Request ID</a> 以外の場合、入力値エラーです。<br/>一定日数を超えた検索結果は破棄されていますが、その場合も入力値エラーとして扱われます。</li></ul>{:/}  |
-| ---- | ---- |
-|  [format](#parameter-format)  |  {::nomarkdown}<ul><li>必須チェック</li><li>未定義の値の場合、入力値エラーです。</li></ul>{:/}  |
-|  [imageId](#parameter-imageId)  |  {::nomarkdown}<ul><li>何も指定しないこと。</li></ul>{:/}  |
-|  [info](#parameter-info)  |  {::nomarkdown}<ul><li><code>"result"</code> を指定すること。</li></ul>{:/}  |
+<table>
+  <tbody>
+    <tr>
+      <th class="first"><a href="#parameter-Request-ID">requestId</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>必須チェック</li>
+          <li>英数字、 <code class="language-plaintext highlighter-rouge">"-"</code> 、 <code class="language-plaintext highlighter-rouge">"_"</code> 以外を含む場合、入力値エラーです。</li>
+          <li>実在する <a href="#parameter-Request-ID">Request ID</a> 以外の場合、入力値エラーです。<br>
+            一定日数を超えた検索結果は破棄されていますが、その場合も入力値エラーとして扱われます。</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-format"> format</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>必須チェック</li>
+          <li>未定義の値の場合、入力値エラーです。</li>
+        </ul>
+      </td>
+    </tr>
+      <tr>
+      <th class="first"><a href="#parameter-imageId">imageId</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>何も指定しないこと。</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-info">info</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>
+<code class="language-plaintext highlighter-rouge">"result"</code> を指定すること。</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### 応答データの内容
 
@@ -795,32 +1152,88 @@ HTTP ステータス 400
 
 指定された [RequestID](#parameter-Request-ID) の検索処理が出力した画像データを返します。
 
-|  項目  |    |  説明  |
-| ---- | ---- | ---- |
-|  HTTP メソッド  |    |  `GET`  |
-|  URI  |    |  `"/blast/"` + [RequestID](#parameter-Request-ID) + `"?imageId="` +*画像ID* + HTTP パラメーター (例:`"/blast/wabi_blast_1111-1111-1111-11-111-111111?imageId=1"`)  |
-|  HTTP パラメーター  |  `format` (デフォルト値 = `"text"`)  |  [応答データの形式](#parameter-format) (例: `"imagefile"`)  |
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">項目</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">HTTP メソッド</td>
+      <td><code  class="language-plaintext highlighter-rouge">GET</code></td>
+    </tr>
+    <tr>
+      <td colspan="2">URI</td>
+      <td>
+<code class="language-plaintext highlighter-rouge">"/blast/"</code> + <a href="#parameter-Request-ID">RequestID</a> + <code class="language-plaintext highlighter-rouge">"?imageId="</code> + <em>画像ID</em> + HTTP パラメーター
+                (例: <code class="language-plaintext highlighter-rouge">"/blast/wabi_blast_1111-1111-1111-11-111-111111?imageId=1"</code>)</td>
+    </tr>
+    <tr>
+      <td>HTTP パラメーター</td>
+      <td>
+<code class="language-plaintext highlighter-rouge">format</code> (デフォルト値 = <code class="language-plaintext highlighter-rouge">"text"</code>)</td>
+      <td>
+<a href="#parameter-format">応答データの形式</a> (例: <code class="language-plaintext highlighter-rouge">"imagefile"</code>)</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 処理の流れ  
 
-  - 入力値を検証します。  
+1. 入力値を検証します。  
     入力値エラーが見つかった場合は、処理を中断して `HTTP ステータス 400 Bad Request` を返します。
-  - 指定された [RequestID](#parameter-Request-ID) に対するジョブ情報を取得して、 [BLAST
+2. 指定された [RequestID](#parameter-Request-ID) に対するジョブ情報を取得して、 [BLAST
     検索処理が出力した画像データ](#search-image) を取得します。  
     検索結果の保存期間を過ぎていてジョブ情報が見つからなかった場合や検索処理が完了していなくて検索結果情報を取得できなかった場合、には、
     HTTP ステータス 400, 404 等を返します。
-  - 取得した [BLAST 検索処理が出力した画像データ](#search-image) 情報を `format`
+3. 取得した [BLAST 検索処理が出力した画像データ](#search-image) 情報を `format`
     で指定された形式で返します。  
     ただし、利用不可能な `format` 値だった場合は `HTTP ステータス 404 Not Found` を返します。
 
 #### 入力値の検証内容
 
-{::nomarkdown}{:/}
-
-|  [requestId](#parameter-Request-ID)  |  {::nomarkdown}<ul><li>必須チェック</li><li>英数字、 <code>"-"</code> 、 <code>"_"</code> 以外を含む場合、入力値エラーです。</li><li>実在する <a href="#parameter-Request-ID">requestId</a> 以外の場合、入力値エラーです。<br />一定日数を超えた検索結果は破棄されていますが、その場合も入力値エラーとして扱われます。</li></ul>{:/}  |
-|  [format](#parameter-format)  |  {::nomarkdown}<ul><li><code>"imagefile"</code> 以外の場合は、入力値エラーです。</li></ul>{:/}  |
-|  [imageId](#parameter-imageId)  |  {::nomarkdown}<ul><li>数字以外の場合は、入力値エラーです。</li></ul>{:/}  |
-|  [info](#parameter-info)  |  {::nomarkdown}<ul><li>未定義の値を指定した場合は、入力値エラーです。</li></ul>{:/}  |
+<table>
+  <tbody>
+    <tr>
+      <th class="first"><a href="#parameter-Request-ID">requestId</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">               
+          <li>必須チェック</li>
+          <li>英数字、 <code class="language-plaintext highlighter-rouge">"-"</code> 、 <code class="language-plaintext highlighter-rouge">"_"</code> 以外を含む場合、入力値エラーです。</li>
+          <li>実在する <a href="#parameter-Request-ID">requestId</a> 以外の場合、入力値エラーです。<br>
+            一定日数を超えた検索結果は破棄されていますが、その場合も入力値エラーとして扱われます。</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-format">format</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>
+<code class="language-plaintext highlighter-rouge">"imagefile"</code> 以外の場合は、入力値エラーです。</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-imageId">imageId</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>数字以外の場合は、入力値エラーです。</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-info">info</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>未定義の値を指定した場合は、入力値エラーです。</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### 応答データの内容
 
@@ -888,24 +1301,81 @@ HTTP ステータス 404
 
 WABI BLAST のヘルプ情報を返します。
 
-|  項目  |    |  説明  |
-| ---- | ---- | ---- |
-|  HTTP メソッド  |    |  `GET`  |
-|  URI  |    |  `"/blast/help/"` + Help-Command + HTTP パラメーター (例:`"/blast/help/list_program?format=json"`)  |
-|  HTTP パラメーター  |  `format` (デフォルト値 = `"text"`)  |  [応答データの形式](#parameter-format) (例: `"text"`, `"json"`)  |
-|    |  `program`  |  [BLAST プログラム](#parameter-program) (例: `"blastn"`)  |
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">項目</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">HTTP メソッド</td>
+      <td><code class="language-plaintext highlighter-rouge">GET</code></td>
+    </tr>
+    <tr>
+      <td colspan="2">URI</td>
+      <td>
+<code class="language-plaintext highlighter-rouge">"/blast/help/"</code> + Help-Command + HTTP パラメーター (例: <code class="language-plaintext highlighter-rouge">"/blast/help/list_program?format=json"</code>)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">HTTP パラメーター</td>
+      <td>
+<code class="language-plaintext highlighter-rouge">format</code> (デフォルト値 = <code class="language-plaintext highlighter-rouge">"text"</code>)</td>
+      <td>
+<a href="#parameter-format">応答データの形式</a> (例: <code class="language-plaintext highlighter-rouge">"text"</code>, <code class="language-plaintext highlighter-rouge">"json"</code>)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">program</code></td>
+      <td>
+<a href="#parameter-program">BLAST プログラム</a> (例: <code class="language-plaintext highlighter-rouge">"blastn"</code>)</td>
+    </tr>
+  </tbody>
+</table>
 
 #### Help-Command
 
-|  Help-Command 等  |  その他の HTTPパラメーター  |  参照できるヘルプ情報  |
-| ---- | ---- | ---- |
-|  `list_datasets`  |    |  パラメーター [データセット](#parameter-datasets) の定義値の一覧  |
-|  `list_database`  |    |  パラメーター [データベース](#parameter-database) の定義値の一覧  |
-|  `list_program`  |    |  パラメーター [BLASTプログラム](#parameter-program) の定義値の一覧  |
-|  `list_parameters`  |  `program` = パラメーター [BLASTプログラム](#parameter-program) を指定  |  パラメーター [BLASTプログラムのオプション指定](#parameter-parameters) の定義値の一覧  |
-|  `list_format`  |    |  パラメーター [応答データの形式](#parameter-format) の定義値の一覧  |
-|  `list_result`  |    |  パラメーター [結果取得方法](#parameter-result) の定義値の一覧  |
-|  `list_info`  |    |  パラメーター [参照するジョブ情報の種類](#parameter-info) の定義値の一覧  |
+<table>
+  <thead>
+    <tr>
+    <th>Help-Command 等</th>
+    <th>その他の HTTPパラメーター</th>
+    <th>参照できるヘルプ情報</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2"><code class="language-plaintext highlighter-rouge">list_datasets</code></td>
+      <td>パラメーター <a href="#parameter-datasets">データセット</a> の定義値の一覧</td>
+    </tr>
+    <tr>
+      <td colspan="2"><code class="language-plaintext highlighter-rouge">list_database</code></td>
+      <td>パラメーター <a href="#parameter-database">データベース</a> の定義値の一覧</td>
+    </tr>
+    <tr>
+      <td colspan="2"><code class="language-plaintext highlighter-rouge">list_program</code></td>
+      <td>パラメーター <a href="#parameter-program">BLASTプログラム</a> の定義値の一覧</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">list_parameters</code></td>
+      <td>
+<code class="language-plaintext highlighter-rouge">program</code> = パラメーター <a href="#parameter-program">BLASTプログラム</a> を指定</td>
+      <td>パラメーター <a href="#parameter-parameters">BLASTプログラムのオプション指定</a> の定義値の一覧</td>
+    </tr>
+    <tr>
+      <td colspan="2"><code class="language-plaintext highlighter-rouge">list_format</code></td>
+      <td>パラメーター <a href="#parameter-format">応答データの形式</a> の定義値の一覧</td>
+    </tr>
+    <tr>
+      <td colspan="2"><code class="language-plaintext highlighter-rouge">list_result</code></td>
+      <td>パラメーター <a href="#parameter-result">結果取得方法</a> の定義値の一覧</td>
+    </tr>
+    <tr>
+      <td colspan="2"><code class="language-plaintext highlighter-rouge">list_info</code></td>
+      <td>パラメーター <a href="#parameter-info">参照するジョブ情報の種類</a> の定義値の一覧</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 応答データの内容
 
@@ -1066,12 +1536,36 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 ※ 最新の値は、こちらの API [GET /blast/help/{Help-Command}
 (ヘルプ情報の閲覧)](#URI_GET_help) を利用して参照できます。
 
-|  説明  |    |  データベース値  |
-| ---- | ---- | ---- |
-|  DDBJ ALL  |  DDBJ 定期リリース + 新着データ  |  (下表を参照)  |
-|  DDBJ New  |  DDBJ 定期リリース後の新着データ  |  (下表の値に接頭辞 `"new_"` を付加)  |
-|  16S rRNA  |  DDBJ 定期リリースから 16S rRNA 配列を取り出したデータ  |  `16S_rRNA`  |
-|  RefSeq NA  |  RefSeq (Genomics + RNA)  |  (下表を参照)  |
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">説明</th>
+      <th>データベース値</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DDBJ ALL</td>
+      <td>DDBJ 定期リリース + 新着データ</td>
+      <td>(下表を参照)</td>
+    </tr>
+    <tr>
+      <td>DDBJ New</td>
+      <td>DDBJ 定期リリース後の新着データ</td>
+      <td>(下表の値に接頭辞 <code class="language-plaintext highlighter-rouge">"new_"</code> を付加)</td>
+    </tr>
+    <tr>
+      <td>16S rRNA</td>
+      <td>DDBJ 定期リリースから 16S rRNA 配列を取り出したデータ</td>
+      <td><code class="language-plaintext highlighter-rouge">16S_rRNA</code></td>
+    </tr>
+    <tr>
+      <td>RefSeq NA</td>
+      <td>RefSeq (Genomics + RNA)</td>
+      <td>(下表を参照)</td>
+    </tr>
+  </tbody>
+</table>
 
 DDBJ ALL, DDBJ NEW データベース値
 

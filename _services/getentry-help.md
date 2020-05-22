@@ -32,22 +32,78 @@ tags:
 
 ### デフォルト指定
 
-| ---- | ---- |
-|  ID  |  Accession 番号  |
-|  データべース  |  [DNA データベース:DDBJ/EMBL/GenBank](http://www.insdc.org/)  |
-|  出力形式  |  [フラットファイル（DDBJ）]({{site.baseurl}}/search_analysis/flat-file.html)  |
-|  取得方法  |  html  |
-|  上限  |  10  |
-
+<table>
+  <tbody>
+    <tr>
+      <th>ID</th>
+      <td>Accession 番号 </td>
+    </tr>
+    <tr>
+      <th>データべ－ス</th>
+      <td><a href="http://www.insdc.org/">DNA データベース:DDBJ/EMBL/GenBank </a></td>
+    </tr>
+    <tr>
+      <th>出力形式</th>
+      <td><a href="{{site.baseurl}}/services/flat-file.html">フラットファイル（DDBJ）</a></td>
+    </tr>
+    <tr>
+      <th>取得方法</th>
+      <td>html</td>
+    </tr>
+    <tr>
+      <th>上限</th>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
 
 ### ID
 
 Accession 番号 を入力します。入力には、複数 Accession 番号の指定、範囲指定、バージョン番号の指定が可能です。
 
-| ---- | ---- | ---- |
-|  バージョン番号  |  ・ 指定がない場合は，最新バージョンを検索します。<br>・ 指定されている場合は，指定のバージョンを検索します。  |   AB669632.1 <br> AB669632.2  |
-|  複数 Accession 番号  |  ・ ","区切りで複数の Accession 番号を指定できます。<br>・ ","区切りで複数指定された場合，指定の順で出力されます。 <br> ・ 二つの Accession 番号"-"で連結することにより範囲検索ができます。<br> ・ バージョン番号の指定もできます。 |  AB669632.1,AB669632.2,AB669633.1,AB669633.2 <br> AK377101 - AK377200,AK377210,AK377211  |
-|  範囲指定  |  ・ 範囲指定の両端の Accession 番号は前方のみの不完全でも構いません。<br>・ 範囲指定も "," 区切りで複数指定できます。 <br> ・ バージョン番号を指定しても無視されます。 |  FY782000-FY7830 <br> AK377101 - AK377200,AK377211- AK388100  |
+<table>
+  <tbody>
+    <tr>
+      <th>バージョン番号</th>
+      <td>
+        <ul class="disc">
+          <li> 指定がない場合は，最新バージョンを検索します。</li>
+          <li> 指定されている場合は，指定のバージョンを検索します。</li>
+        </ul>
+      </td>
+      <td>AB669632.1<br>AB669632.2</td>
+    </tr>
+    <tr>
+      <th>複数 Accession 番号
+      </th>
+<td>
+        <ul class="disc">
+          <li> ","区切りで複数の Accession 番号を指定できます。</li>
+          <li> ","区切りで複数指定された場合，指定の順で出力されます。</li>
+          <li> 二つの Accession 番号"-"で連結することにより範囲検索ができます。</li>
+          <li> バージョン番号の指定もできます。</li>
+        </ul>
+      </td>
+        <td>AB669632.1,AB669632.2,AB669633.1,AB669633.2<br>
+          AK377101 - AK377200,AK377210,AK377211</td>
+    </tr>
+    <tr>
+      <th>範囲指定
+      </th>
+<td>
+        <ul class="disc">
+          <li> 範囲指定の両端の Accession 番号は前方のみの不完全でも構いません。</li>
+          <li> 範囲指定も "," 区切りで複数指定できます。</li>
+          <li> バージョン番号を指定しても無視されます。</li>
+        </ul>
+      </td>
+      <td>
+        FY782000-FY7830<br>
+        AK377101 - AK377200,AK377211- AK388100
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### データベースと出力形式
 
@@ -57,9 +113,18 @@ Accession 番号 を入力します。入力には、複数 Accession 番号の�
 
 検索対象データベース
 
-| ---- | ---- |
-DDBJ/EMBL/GenBank |  [国際塩基配列データベース（INSD）](http://www.insdc.org/)               
-MGA                | [Mass sequence for Genome Annotation(MGA)](/ddbj/mga.html)
+<table>
+  <tbody>
+    <tr>
+      <th>DDBJ/EMBL/GenBank </th>
+      <td><a href="http://www.insdc.org/">国際塩基配列データベース（INSD）</a></td>
+    </tr>
+    <tr>
+      <th>MGA</th>
+      <td><a href="/ddbj/mga.html">Mass sequence for Genome Annotation(MGA)</a></td>
+    </tr>
+  </tbody>
+</table>
 
 DDBJ/EMBL/GenBank を選択すると、以下が検索対象となります。
 
@@ -76,15 +141,35 @@ MGA データの新規登録は受け付けておりません。
 getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報]({{site.baseurl}}/statistics/relinfo.html) でご確認ください。
 
 
-
 出力形式
 
-| ---- | ---- |
-フラットファイル(DDBJ)   | [DDBJ のデータ公開形式](/ddbj/flat-file.html)で出力
-全塩基配列 FASTA     |  [塩基配列の全長を FASTA 形式](#nfasta)で出力                
-CDS アミノ酸配列 FASTA | [各 CDS 領域のアミノ酸翻訳配列を FASTA 形式](#trans)で出力
-CDS 塩基配列 FASTA   | [各 CDS 領域の塩基配列を FASTA 形式](#cdsfasta)で出力         
-INSD-XML_v1.4    | [INSD-XML_v1.4 形式](#xml)で出力  
+<table>
+  <tbody>
+    <tr>
+      <th>フラットファイル(DDBJ)</th>
+      <td>
+<a href="/ddbj/flat-file.html">DDBJ のデータ公開形式</a>で出力</td>
+    </tr>
+    <tr>
+      <th>全塩基配列 FASTA </th>
+      <td><a href="#nfasta">塩基配列の全長を FASTA 形式</a>で出力</td>
+    </tr>
+    <tr>
+      <th>CDS アミノ酸配列 FASTA</th>
+      <td><a href="#trans">各 CDS 領域のアミノ酸翻訳配列を FASTA 形式</a>で出力</td>
+    </tr>
+    <tr>
+      <th>CDS 塩基配列 FASTA</th>
+      <td>
+<a href="#cdsfasta">各 CDS 領域の塩基配列を FASTA 形式</a>で出力</td>
+    </tr>
+    <tr>
+      <th>INSD-XML_v1.4</th>
+      <td>
+<a href="#xml">INSD-XML_v1.4 形式</a>で出力</td>
+    </tr>
+  </tbody>
+</table>
 
 上記の5つ(FF, 全FASTA, CDSアミノ酸FASTA, CDS塩基FASTA, INSD-XML_v1.4) はDDBJ/EMBL/GenBank 指定時にのみ選択可能です。
 
@@ -94,32 +179,82 @@ INSD-XML_v1.4    | [INSD-XML_v1.4 形式](#xml)で出力
 
 検索対象データベース
 
-| ---- | ---- |
-[UniProt](https://www.uniprot.org/) | UniProt/Swiss-Prot とUniProt/TrEMBL を合わせたアミノ酸配列データベース                        
-[PDB](https://www.rcsb.org/pdb/)    | タンパク質の立体構造データベース                                                            
-[DAD]({{site.baseurl}}/statistics/relnote.html)          | DDBJ からアミノ酸翻訳配列データを抽出して作成したデータベース                                           
-Patent                              | [JPO](https://www.jpo.go.jp/index.html)，[KIPO](//www.kipo.go.kr) に由来するアミノ酸配列
+<table>
+  <tbody>
+    <tr>
+      <th><a href="https://www.uniprot.org/">UniProt</a></th>
+      <td>UniProt/Swiss-Prot とUniProt/TrEMBL を合わせたアミノ酸配列データベース</td>
+    </tr>
+    <tr>
+      <th><a href="https://www.rcsb.org/pdb/">PDB</a></th>
+      <td>タンパク質の立体構造データベース</td>
+    </tr>
+    <tr>
+      <th><a href="{{site.baseurl}}/statistics/relnote.html">DAD</a></th>
+      <td>DDBJ からアミノ酸翻訳配列データを抽出して作成したデータベース</td>
+    </tr>
+    <tr>
+      <th>Patent</th>
+      <td>
+<a href="https://www.jpo.go.jp/index.html">JPO</a>，<a href="//www.kipo.go.kr">KIPO</a> に由来するアミノ酸配列</td>
+    </tr>
+  </tbody>
+</table>
 
 getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報]({{site.baseurl}}/statistics/relinfo.html) でご確認ください。
 
 #### 出力形式
 
-| ---- | ---- | ---- | ---- |
-default||指定したデータベースの公開形式で出力            |   |               
-FASTA               | [アミノ酸配列FASTA](#trans)               |  アミノ酸配列をFASTA 形式 で出力 | UniProt, DAD, Patent で選択可能 | 
-||[塩基配列FASTA (for DAD)](#dadfasta) | アミノ酸配列をコードする塩基配列をFASTA 形式 で出力 | DAD のみ選択可能          | 
-||[seqres](#seqres)              | PDB アミノ酸 FASTA                | PDB のみ選択可能  | 
+<table>
+  <tbody>
+    <tr>
+      <th colspan="2">default </th>
+      <td>指定したデータベースの公開形式で出力</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th rowspan="3">FASTA</th>
+      <th><a href="#trans">アミノ酸配列FASTA </a></th>
+      <td>アミノ酸配列をFASTA 形式 で出力</td>
+      <td>UniProt, DAD, Patent で選択可能</td>
+    </tr>
+    <tr>
+      <th><a href="#dadfasta">塩基配列FASTA (for DAD)</a></th>
+      <td>アミノ酸配列をコードする塩基配列をFASTA 形式 で出力</td>
+      <td>DAD のみ選択可能</td>
+</tr>
+    <tr>
+      <th><a href="#seqres">seqres</a></th>
+      <td>PDB アミノ酸 FASTA</td>
+      <td>PDB のみ選択可能</td>
+    </tr>
+  </tbody>
+</table>
 
 選択データベースにより、出力形式は異なります。
 
 ### 取得方法
 
-| ---- | ---- |
-デフォルト | html                                 
-html  | HTMLファイル（ACCESSION, ORGANISM等 にリンクあり）
-text  | テキストファイル                             
-gz    |  gz圧縮ファイル                            
-
+<table>
+  <tbody>
+    <tr>
+      <th>デフォルト</th>
+      <td>html</td>
+    </tr>
+    <tr>
+      <th>html</th>
+      <td>HTMLファイル（ACCESSION, ORGANISM等 にリンクあり）</td>
+    </tr>
+    <tr>
+      <th>text</th>
+      <td>テキストファイル</td>
+    </tr>
+    <tr>
+      <th>gz</th>
+      <td> gz圧縮ファイル</td>
+    </tr>
+  </tbody>
+</table>                      
 
 gz圧縮ファイルのファイル名はformatの指定値によって以下のようになります。
 
@@ -132,8 +267,6 @@ gz圧縮ファイルのファイル名はformatの指定値によって以下の
 [Protein系]flatfile | flatfile.txt.gz
 [Protein系]fasta    | fasta_aa.txt.gz
 [Protein系]cds      | cds_aa.txt.gz  
-
-
 
 ### 上限（最大表示件数）
 
@@ -150,13 +283,21 @@ getentry は webAPI として実装しており，入力フォームからだけ
 
 getentry の web API は以下の２つのプログラムからなります。
 
-| ---- | ---- |
-getentry  |  アクセッション番号（データベース中のエントリの ID)を与えると，データを返します。
-gethistory | アクセッション番号（データベース中のエントリの ID)を与えると，データの変更履歴を返します。<br> 特許庁由来アミノ酸配列の更新履歴は今のところとっておりません。
-
+<table>
+  <tbody>
+    <tr>
+      <th>getentry </th>
+      <td>アクセッション番号（データベース中のエントリの ID)を与えると，データを返します。</td>
+    </tr>
+    <tr>
+      <th>gethistory</th>
+      <td>アクセッション番号（データベース中のエントリの ID)を与えると，データの変更履歴を返します。<br>
+        特許庁由来アミノ酸配列の更新履歴は今のところとっておりません。</td>
+    </tr>
+  </tbody>
+</table>
 
 ### パラメータの指定方法
-
 
 以下の２種類があります
 
@@ -174,10 +315,42 @@ smart URL      | http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold itali
 
 #### accession 番号<span class="red">（必須）</span><span class="normal">：　検索対象の Accession 番号を指定します。</span>
 
-| ---- | ---- |
-|  バージョン番号  |  ・指定がない場合は，最新バージョンを検索します。<br> ・指定されている場合は，指定のバージョンを検索します。 |
-|  複数 Accession 番号  | ・ ","区切りで複数の Accession 番号を指定できます。 <br> ・","区切りで複数指定された場合，指定の順で出力されます。 |
-|  範囲指定  |  ・範囲指定の両端の Accession 番号は前方のみの不完全でも構いません。<br> ・範囲指定も "," 区切りで複数指定できます。<br> ・バージョン番号を指定しても無視されます。|
+<table>
+  <tbody>
+    <tr>
+      <th>バージョン番号</th>
+      <td>
+        <ul class="disc">
+          <li> 指定がない場合は，最新バージョンを検索します。</li>
+          <li> 指定されている場合は，指定のバージョンを検索します。</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th>複数 Accession 番号</th>
+      <td>
+        <ul class="disc">
+          <li> ","区切りで複数の Accession 番号を指定できます。</li>
+          <li> ","区切りで複数指定された場合，指定の順で出力されます。</li>
+          <li> 二つの Accession 番号"-"で連結することにより範囲検索ができます。</li>
+          <li> バージョン番号の指定もできます。</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th>範囲指定</th>
+      <td>
+        <ul class="disc">
+          <li> 範囲指定の両端の Accession 番号は前方のみの不完全でも構いません。</li>
+          <li> 範囲指定も "," 区切りで複数指定できます。</li>
+          <li> バージョン番号を指定しても無視されます。</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+<tbody>
+</tbody>
+</table>
 
 {::options parse_block_html="true" /}
 <div class="attention">
@@ -202,14 +375,52 @@ smart URL      | http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold itali
 
 #### database<span class="red">（任意）</span>：　検索対象のデータベースを指定します。
 
-| ---- | ---- | ---- | ---- |
-|DNA系     | na                                  | DDBJ/EMBL/GenBank  |  [国際塩基配列データベース（INSD）](http://www.insdc.org/), [WGS](/ddbj/wgs.html), [TPA](/ddbj/tpa.html), [TSA](/ddbj/tsa.html)|
-||mga       | MGA                                 | [Mass sequence for Genome Annotation(MGA)](/ddbj/mga.html)       
-Protein系  | aa                                  | DAD, Patent, UniProt, PDB                                                   |  4つのデータベースをこの順番で検索
-|| uniprot   | [UniProt](https://www.uniprot.org/) | UniProt/Swiss-Prot とUniProt/TrEMBL を合わせたアミノ酸配列データベース                        
-|| pdb       | [PDB](https://www.rcsb.org/pdb/)    | タンパク質の立体構造データベース                                                            
-|| dad       | [DAD]({{site.baseurl}}/statistics/relnote.html)          | DDBJ からアミノ酸翻訳配列データを抽出して作成したデータベース                                           
-|| patent_aa | Patent                              | [JPO](https://www.jpo.go.jp/index.html)，[KIPO](//www.kipo.go.kr) に由来するアミノ酸配列
+<table>
+  <tbody>
+    <tr>
+      <th rowspan="2">DNA系</th>
+      <th>na</th>
+      <td>DDBJ/EMBL/GenBank </td>
+      <td>
+<a href="http://www.insdc.org/">国際塩基配列データベース（INSD）</a>, <a href="/ddbj/wgs.html">WGS</a>, <a href="/ddbj/tpa.html">TPA</a>, <a href="/ddbj/tsa.html">TSA</a>
+</td>
+    </tr>
+    <tr>
+      <th>mga</th>
+      <td>MGA</td>
+      <td><a href="/ddbj/mga.html">Mass sequence for Genome Annotation(MGA)</a></td>
+    </tr>
+    <tr>
+      <th rowspan="5">Protein系</th>
+      <th>aa</th>
+      <td>DAD, Patent, UniProt, PDB </td>
+      <td>4つのデータベースをこの順番で検索
+    </td>
+</tr>
+    <tr>
+      <th>uniprot</th>
+      <td>
+<a href="https://www.uniprot.org/">UniProt</a> </td>
+      <td>UniProt/Swiss-Prot とUniProt/TrEMBL を合わせたアミノ酸配列データベース</td>
+    </tr>
+    <tr>
+      <th>pdb</th>
+      <td><a href="https://www.rcsb.org/pdb/">PDB</a></td>
+      <td>タンパク質の立体構造データベース</td>
+    </tr>
+    <tr>
+      <th>dad</th>
+      <td><a href="{{site.baseurl}}/statistics/relnote.html">DAD</a></td>
+      <td>DDBJ からアミノ酸翻訳配列データを抽出して作成したデータベース</td>
+    </tr>
+    <tr>
+      <th>patent_aa</th>
+      <td>Patent</td>
+      <td>
+<a href="https://www.jpo.go.jp/index.html">JPO</a>，<a href="//www.kipo.go.kr">KIPO</a> に由来するアミノ酸配列</td>
+    </tr>
+  </tbody>
+</table>
 
 {::options parse_block_html="true" /}
 <div class="attention">
@@ -246,9 +457,18 @@ getentry で検索可能な各データベースのリリース番号や公開�
 
 #### revision<span class="red">（任意）</span>：　指定された revision 時点を検索します。
 
-| ---- | ---- | 
-通常    | yyyy-MM-dd hh:mm:ss        
-リリース時 | yyyy-MM-dd hh:mm:ss release
+<table>
+  <tbody>
+    <tr>
+      <th>通常</th>
+      <td>yyyy-MM-dd hh:mm:ss</td>
+    </tr>
+    <tr>
+      <th>リリース時</th>
+      <td>yyyy-MM-dd hh:mm:ss release</td>
+    </tr>
+  </tbody>
+</table>
 
 {::options parse_block_html="true" /}
 <div class="attention">
@@ -264,16 +484,44 @@ getentry で検索可能な各データベースのリリース番号や公開�
 
 #### format<span class="red">（任意）</span>：　結果の出力フォーマットを指定します。
 
-|  デフォルト  |  flatfile  |
-| ---- | ---- |
-|  flatfile  |   [DDBJ フラットファイル形式](/ddbj/flat-file.html)    |
-|  xml  |  [INSDSeq-XML version 1.4 形式](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbj/xml/insdxml/v1.4/)  |
-|  fasta  |  [DNA 系] 全塩基配列 FASTA  |
-|    |  [Protein 系] アミノ酸配列 FASTA  |
-|  trans  |  [DNA 系] CDS アミノ酸 FASTA   |
-|  cds  |  [DNA 系] CDS 塩基配列 FASTA  |
-|    |  [DAD 限定] 塩基配列 FASTA (for DAD)  |
-|  seqres  |  [Protein 系] PDB アミノ酸 FASTA   |
+<table>
+  <tbody>
+    <tr>
+      <th>デフォルト</th>
+      <td>flatfile</td>
+    </tr>
+    <tr>
+      <th>flatfile</th>
+      <td><a href="/ddbj/flat-file.html">DDBJ フラットファイル形式</a></td>
+    </tr>
+    <tr>
+      <th>xml</th>
+      <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbj/xml/insdxml/v1.4/">INSDSeq-XML version 1.4 形式</a></td>
+    </tr>
+    <tr>
+      <th rowspan="2">fasta</th>
+      <td>[DNA 系] 全塩基配列 FASTA</td>
+    </tr>
+    <tr>
+      <td>[Protein 系] アミノ酸配列 FASTA</td>
+    </tr>
+    <tr>
+      <th>trans</th>
+      <td>[DNA 系] CDS アミノ酸 FASTA</td>
+    </tr>
+    <tr>
+      <th rowspan="2">cds</th>
+      <td>[DNA 系] CDS 塩基配列 FASTA</td>
+    </tr>
+    <tr>
+      <td>[DAD 限定] 塩基配列 FASTA (for DAD)</td>
+    </tr>
+    <tr>
+      <th>seqres</th>
+      <td>[Protein 系] PDB アミノ酸 FASTA</td>
+    </tr>
+  </tbody>
+</table>
 
 選択したデータベースでの有効な出力フォーマットの指定は以下の通りです。
 
@@ -493,11 +741,26 @@ CGCGAATTCGCG
 
 #### filetype<span class="red">（任意）</span>：　出力のファイルタイプを指定します。
 
-| ---- | ---- |
-デフォルト | text                                 
-html  | HTMLファイル（ACCESSION, ORGANISM等 にリンクあり）
-text  | テキストファイル                             
-gz    | gz圧縮ファイル                             
+<table>
+  <tbody>
+    <tr>
+      <th>デフォルト</th>
+      <td>text</td>
+    </tr>
+    <tr>
+      <th>html</th>
+      <td>HTMLファイル（ACCESSION, ORGANISM等 にリンクあり）</td>
+    </tr>
+    <tr>
+      <th>text</th>
+      <td>テキストファイル</td>
+    </tr>
+    <tr>
+      <th>gz</th>
+      <td>gz圧縮ファイル</td>
+    </tr>
+  </tbody>
+</table>                    
 
 gz圧縮ファイルのファイル名はformatの指定値によって以下のようになります。
 
@@ -548,9 +811,18 @@ COMMENT     OS   Homo sapiens
 
 #### show_suppressed<span class="red">（任意）</span>：　suppressed　データを表示します。
 
-| ---- | ---- |
-true  | suppressed データを表示   
-false | suppressed データを表示しない
+<table>
+  <tbody>
+    <tr>
+      <th>true</th>
+      <td>suppressed データを表示</td>
+    </tr>
+    <tr>
+      <th>false</th>
+      <td>suppressed データを表示しない</td>
+    </tr>
+  </tbody>
+</table>
 
 **入力例** （上段はGET method , 下段は　smart URL ）
 
@@ -559,10 +831,22 @@ false | suppressed データを表示しない
 
 #### limit<span class="red">（任意）</span>：　データの取得上限を設定します。
 
-| ---- | ---- |
-デフォルト    | 10件   
-任意の件数を指定 | 指定した件数
-0を指定     | 無制限   
+<table>
+  <tbody>
+    <tr>
+      <th>デフォルト</th>
+      <td>10件</td>
+    </tr>
+    <tr>
+      <th>任意の件数を指定</th>
+      <td>指定した件数</td>
+    </tr>
+    <tr>
+      <th>0を指定</th>
+      <td>無制限</td>
+    </tr>
+  </tbody>
+</table>
 
 {::options parse_block_html="true" /}
 <div class="attention">
@@ -577,9 +861,18 @@ false | suppressed データを表示しない
 
 #### trace<span class="red">（任意）</span>：　Secondary Accession が指定された場合に，Primary への転送を設定します。
 
-| ---- | ---- |
-true  | primary データを表示   
-false | primary データを表示しない
+<table>
+  <tbody>
+    <tr>
+      <th>true</th>
+      <td>primary データを表示</td>
+    </tr>
+    <tr>
+      <th>false</th>
+      <td>primary データを表示しない</td>
+    </tr>
+  </tbody>
+</table>
 
 **入力例** （上段はGET method , 下段は　smart URL ）
 
@@ -614,9 +907,18 @@ AB628096
 
 #### database<span class="red">（任意）</span>： 検索対象のデータベースを指定します。
 
-| ---- | ---- |
-デフォルト | na
-DNA 系 | na
+<table>
+  <tbody>
+    <tr>
+      <th>デフォルト</th>
+      <td>na</td>
+    </tr>
+    <tr>
+      <th>DNA 系</th>
+      <td>na</td>
+    </tr>
+  </tbody>
+</table>
 
 {::options parse_block_html="true" /}
 <div class="attention">
@@ -641,10 +943,22 @@ BAET01000001   BAET01000001
 
 #### filetype<span class="red">（任意）</span>：　出力のファイルタイプを指定します。
 
-| ---- | ---- |
-デフォルト | text                              
-html  | HTMLファイル（revision 時点のフラットファイルにリンク）
-text  | テキストファイル                          
+<table>
+  <tbody>
+    <tr>
+      <th>デフォルト</th>
+      <td>text</td>
+    </tr>
+    <tr>
+      <th>html</th>
+      <td>HTMLファイル（revision 時点のフラットファイルにリンク）</td>
+    </tr>
+    <tr>
+      <th>text</th>
+      <td>テキストファイル</td>
+    </tr>
+  </tbody>
+</table>
 
 **入力例** （上段はGET method , 下段は　smart URL ）
 

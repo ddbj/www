@@ -274,10 +274,22 @@ Feature/Qualifier の部分一致検索 Feature Key 、 Qualifier Name 、 Quali
 
 検索結果のファイル形式
 
-FlatFile | DDBJ FlatFile 形式
--------- | ----------------
-FASTA    | FASTA形式         
-XML      | INSD-XML 形式     
+<table>
+  <tbody>
+    <tr>
+      <th>FlatFile</th>
+      <td>DDBJ FlatFile 形式</td>
+    </tr>
+    <tr>
+      <th>FASTA</th>
+      <td>FASTA形式</td>
+    </tr>
+    <tr>
+      <th>XML</th>
+      <td>INSD-XML 形式</td>
+    </tr>
+  </tbody>
+</table>
 
 画面で閲覧
 :	検索結果画面のアクセッション番号をクリックすると、該当エントリの Flatfile が閲覧できます。

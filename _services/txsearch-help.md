@@ -65,19 +65,55 @@ TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxon
 
 * 結果が1000件を超える場合は最初（scientific_name で昇順）の 1000件分のみ結果を返します。この表示件数の上限を変更することはできませんので、絞り込み検索を行って1000件以下になるようにしてください。
 * テキスト入力欄に solr の standard query parser parameters の q パラメータを入力することで、より詳細な検索ができます
-* フィールドの指定方法<a name="f-shitei"></a>  
+* フィールドの指定方法<a name="f-shitei"></a><br><span class="red">フィールド名：値</span>（例　tax_id:9606)
+* 複数フィールドの指定方法<br>"フィールド名：値" を論理演算子をはさんで並べます（例　scientific_name:(Homo Sapiens) && rank:species)
+- 検索に使用できるフィールド名は以下の通りです
+  |  検索に使用できるフィールド名  |    |
+  | ---- | ---- |
+  |  tax_id<br>scientific_name<br>common_name<br>synonym<br>acronym<br>anamorph<br>teleomorph<br>authority<br>blast_name<br>equivalent_name<br>in_part<br>includes<br>misnomer<br>misspelling<br>type_material  |  フィールド名を指定すれば絞り込み検索が可能となります。<br> フィールド名を指定しない場合、これらのフィールド全てを検索します。  |
+  |  lineagerank  |  フィールド名の指定が必要です。  |
 
-<span class="red">フィールド名：値</span>（例　tax_id:9606)
-* 複数フィールドの指定方法  
 
-"フィールド名：値" を論理演算子をはさんで並べます（例　scientific_name:(Homo Sapiens) && rank:species)
 
-* 検索に使用できるフィールド名は以下の通りです
+  <table>
+    <thead>
+      <tr><th colspan="2">検索に使用できるフィールド名</th></tr>
+    </thead>
+    <tbody>
+      <tr>        
+        <td>
+          tax_id<br>
+          scientific_name<br>
+          common_name<br>
+          synonym<br>
+          acronym<br>
+          anamorph<br>
+          teleomorph<br>
+          authority<br>
+          blast_name<br>
+          equivalent_name<br>
+          in_part<br>
+          includes<br>
+          misnomer<br>
+          misspelling<br>
+          type_material
+        </td>
+        <td>フィールド名を指定すれば絞り込み検索が可能となります。<br>
+          フィールド名を指定しない場合、これらのフィールド全てを検索します。
+        </td>
+      </tr>
+      <tr>                
+        <td>
+        lineage<br>
+        rank
+        </td>
+        <td>フィールド名の指定が必要です。</td>
+      </tr>
+    </tbody>
+  </table>
 
-|  検索に使用できるフィールド名  |    |
-| ---- | ---- |
-|  tax_id<br>scientific_name<br>common_name<br>synonym<br>acronym<br>anamorph<br>teleomorph<br>authority<br>blast_name<br>equivalent_name<br>in_part<br>includes<br>misnomer<br>misspelling<br>type_material  |  フィールド名を指定すれば絞り込み検索が可能となります。<br> フィールド名を指定しない場合、これらのフィールド全てを検索します。  |
-|  lineagerank  |  フィールド名の指定が必要です。  |
+
+
 
 * 完全一致検索の場合には、フィールド名を以下のように指定します。
 
@@ -150,11 +186,61 @@ taxonomy_id や検索語を含んだ URL を指定して、検索結果を直接
 
 ### taxonomy_id をURL に含める場合
 
-|  パラメータ  |  詳細  |  入力例  |
-| ---- | ---- | ---- |
-|  id <span class="red">(必須）</span>  |  検索対象の taxonomy_id を指定します。  |  * taxonomy_id :9606 をツリー表示<br>[//ddbj.nig.ac.jp/tx_search/9606?view=tree](http://ddbj.nig.ac.jp/tx_search/9606?view=tree)<br>[//ddbj.nig.ac.jp/tx_search/9606](http://ddbj.nig.ac.jp/tx_search/9606)<br>* taxonomy_id :63221 をTaxon Information 表示<br>[//ddbj.nig.ac.jp/tx_search/63221?view=info](http://ddbj.nig.ac.jp/tx_search/63221?view=info)  |
-|  view  |  表示画面を指定します。<br>省略した場合は ツリー画面 が指定されます。  |  * taxonomy_id :63221 をTaxon Information 表示<br>[//ddbj.nig.ac.jp/tx_search/63221?view=info](http://ddbj.nig.ac.jp/tx_search/63221?view=info)<br>* taxonomy_id :63221 をツリー表示<br>[//ddbj.nig.ac.jp/tx_search/63221](http://ddbj.nig.ac.jp/tx_search/63221)|
-|  depth  |  表示するツリーの階層数を指定します。<br>省略した場合は 2 が指定されます。  |  * taxonomy_id :63221 を5 階層まで表示<br>[//ddbj.nig.ac.jp/tx_search/63221?depth=5](http://ddbj.nig.ac.jp/tx_search/63221?depth=5)<br>* taxonomy_id :9606 をデフォルトの2階層表示<br>[//ddbj.nig.ac.jp/tx_search/9606](http://ddbj.nig.ac.jp/tx_search/9606)  |
+<table>
+  <thead>
+    <tr>
+      <th>パラメータ</th>
+      <th>詳細</th>
+      <th>入力例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id="tx_id">
+      <th>id <span class="red">(必須）</span>
+    </th>
+      <td>検索対象の taxonomy_id を指定します。</td>
+      <td>
+        <ul class="disc">
+          <li>taxonomy_id :9606 をツリー表示<br>
+          <a class="external" href="http://ddbj.nig.ac.jp/tx_search/9606?view=tree">//ddbj.nig.ac.jp/tx_search/9606?view=tree</a><br>
+          <a class="external" href="http://ddbj.nig.ac.jp/tx_search/9606">//ddbj.nig.ac.jp/tx_search/9606</a>
+          </li>
+          <li>taxonomy_id :63221 をTaxon Information 表示<br>
+          <a class="external" href="http://ddbj.nig.ac.jp/tx_search/63221?view=info">//ddbj.nig.ac.jp/tx_search/63221?view=info</a>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr id="tx_view">
+      <th>view</th>
+      <td>表示画面を指定します。<br>省略した場合は ツリー画面 が指定されます。</td>
+      <td>
+        <ul class="disc">
+          <li>taxonomy_id :63221 をTaxon Information 表示<br>
+          <a class="external" href="http://ddbj.nig.ac.jp/tx_search/63221?view=info">//ddbj.nig.ac.jp/tx_search/63221?view=info</a>
+          </li>
+          <li>taxonomy_id :63221 をツリー表示<br>
+          <a class="external" href="http://ddbj.nig.ac.jp/tx_search/63221">//ddbj.nig.ac.jp/tx_search/63221</a>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr id="tx_depth">
+      <th>depth</th>
+      <td>表示するツリーの階層数を指定します。<br>省略した場合は 2 が指定されます。</td>
+      <td>
+        <ul class="disc">
+          <li>taxonomy_id :63221 を5 階層まで表示<br>
+          <a class="external" href="http://ddbj.nig.ac.jp/tx_search/63221?depth=5">//ddbj.nig.ac.jp/tx_search/63221?depth=5</a>
+          </li>
+          <li>taxonomy_id :9606 をデフォルトの2階層表示<br>
+          <a class="external" href="http://ddbj.nig.ac.jp/tx_search/9606">//ddbj.nig.ac.jp/tx_search/9606</a>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### 検索語をURL に含める場合
 

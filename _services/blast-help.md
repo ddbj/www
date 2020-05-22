@@ -120,30 +120,30 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  HTG	  |  HTG	  |  High Throughput Genomic sequences  |
 |  TSA	  |  TSA	  |  Transcriptome Shotgun Assembly  |
 
-|  EST divisions  |    |    |
-| ---- | ---- | ---- |
-|  A.thaliana	  |  Arabidopsis thaliana （シロイヌナズナ）  |   |
-|  B.taurus	  |  Bos taurus （ウシ）  |    |
-|  C.elegans  |  Caenorhabditis elegans （線虫） |    |
-|  C.reinhardtii  |  Chlamydomonas reinhardtii （クラミドモナス）  |   |
-|  C.intestinalis  |  Ciona intestinalis （カタユウレイボヤ）  |    |
-|  D.rerio	  |  Danio rerio （ゼブラフィッシュ）  |    |
-|  D.discoideum  |  Dictyostelium discoideum （キイロタマホコリカビ）  |    |
-|  D.melanogaster  |  D.melanogaster （ショウジョウバエ）  |    |
-|  G.gallus	  |  Gallus gallus （ニワトリ）  |    |
-|  G.max  |  Glycine max （ダイズ）  |    |
-|  H.sapiens  |  Homo sapiens （ヒト）  |    |
-|  H.vulgare  |  Hordeum vulgare （亜種も統合）  |    |
-|  M.truncatula  |  Medicago truncatula （特殊ライブラリも統合）  |    |
-|  M.musculus  |  Mus musculus （ハツカネズミ）  |    |
-|  O.sativa  |  Oryza sativa （亜種レベルも統合）  |    |
-|  R.norvegicus  |  Rattus norvegicus （Rattus sp. も統合）  |    |
-|  S.lycopersicum  |  Solanum lycopersicum （トマト）  |    |
-|  T.aestivum  |  Triticum aestivum （コムギ）  |    |
-|  X.laevis  |  Xenopus laevis （アフリカツメガエル）  |    |
-|  X.tropicalis  |  Xenopus tropicalis （アフリカツメガエル）  |    |
-|  Z.mays  |  Zea mays （トウモロコシ）  |    |
-|  Others  |  上記以外 （Others）  |    |
+|  EST divisions  |
+| ---- | 
+|  A.thaliana	  |  Arabidopsis thaliana （シロイヌナズナ）  
+|  B.taurus	  |  Bos taurus （ウシ）  |
+|  C.elegans  |  Caenorhabditis elegans （線虫） |
+|  C.reinhardtii  |  Chlamydomonas reinhardtii （クラミドモナス）  
+|  C.intestinalis  |  Ciona intestinalis （カタユウレイボヤ）  |
+|  D.rerio	  |  Danio rerio （ゼブラフィッシュ）  |
+|  D.discoideum  |  Dictyostelium discoideum （キイロタマホコリカビ）  |
+|  D.melanogaster  |  D.melanogaster （ショウジョウバエ）  |
+|  G.gallus	  |  Gallus gallus （ニワトリ）  |
+|  G.max  |  Glycine max （ダイズ）  |
+|  H.sapiens  |  Homo sapiens （ヒト）  |
+|  H.vulgare  |  Hordeum vulgare （亜種も統合）  |
+|  M.truncatula  |  Medicago truncatula （特殊ライブラリも統合）  |
+|  M.musculus  |  Mus musculus （ハツカネズミ）  |
+|  O.sativa  |  Oryza sativa （亜種レベルも統合）  |
+|  R.norvegicus  |  Rattus norvegicus （Rattus sp. も統合）  |
+|  S.lycopersicum  |  Solanum lycopersicum （トマト）  |
+|  T.aestivum  |  Triticum aestivum （コムギ）  | 
+|  X.laevis  |  Xenopus laevis （アフリカツメガエル）  |
+|  X.tropicalis  |  Xenopus tropicalis （アフリカツメガエル）  |
+|  Z.mays  |  Zea mays （トウモロコシ）  |
+|  Others  |  上記以外 （Others）  |
 
 |  その他  |    |    |
 | ---- | ---- | ---- |
@@ -229,30 +229,30 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  HTG	  |  HTG	  |  High Throughput Genomic sequences  |
 |  TSA	  |  TSA	  |  Transcriptome Shotgun Assembly  |
 
-|  EST divisions  |    |    |
-| ---- | ---- | ---- |
-|  A.thaliana	  |  Arabidopsis thaliana （シロイヌナズナ）  |   |
-|  B.taurus	  |  Bos taurus （ウシ）  |    |
-|  C.elegans  |  Caenorhabditis elegans （線虫） |    |
-|  C.reinhardtii  |  Chlamydomonas reinhardtii （クラミドモナス）  |   |
-|  C.intestinalis  |  Ciona intestinalis （カタユウレイボヤ）  |    |
-|  D.rerio	  |  Danio rerio （ゼブラフィッシュ）  |    |
-|  D.discoideum  |  Dictyostelium discoideum （キイロタマホコリカビ）  |    |
-|  D.melanogaster  |  D.melanogaster （ショウジョウバエ）  |    |
-|  G.gallus	  |  Gallus gallus （ニワトリ）  |    |
-|  G.max  |  Glycine max （ダイズ）  |    |
-|  H.sapiens  |  Homo sapiens （ヒト）  |    |
-|  H.vulgare  |  Hordeum vulgare （亜種も統合）  |    |
-|  M.truncatula  |  Medicago truncatula （特殊ライブラリも統合）  |    |
-|  M.musculus  |  Mus musculus （ハツカネズミ）  |    |
-|  O.sativa  |  Oryza sativa （亜種レベルも統合）  |    |
-|  R.norvegicus  |  Rattus norvegicus （Rattus sp. も統合）  |    |
-|  S.lycopersicum  |  Solanum lycopersicum （トマト）  |    |
-|  T.aestivum  |  Triticum aestivum （コムギ）  |    |
-|  X.laevis  |  Xenopus laevis （アフリカツメガエル）  |    |
-|  X.tropicalis  |  Xenopus tropicalis （アフリカツメガエル）  |    |
-|  Z.mays  |  Zea mays （トウモロコシ）  |    |
-|  Others  |  上記以外 （Others）  |    |
+|  EST divisions  |
+| ---- | 
+|  A.thaliana	  |  Arabidopsis thaliana （シロイヌナズナ）  |
+|  B.taurus	  |  Bos taurus （ウシ）  | 
+|  C.elegans  |  Caenorhabditis elegans （線虫） | 
+|  C.reinhardtii  |  Chlamydomonas reinhardtii （クラミドモナス）  | 
+|  C.intestinalis  |  Ciona intestinalis （カタユウレイボヤ）  | 
+|  D.rerio	  |  Danio rerio （ゼブラフィッシュ）  | 
+|  D.discoideum  |  Dictyostelium discoideum （キイロタマホコリカビ）  | 
+|  D.melanogaster  |  D.melanogaster （ショウジョウバエ）  |
+|  G.gallus	  |  Gallus gallus （ニワトリ）  |
+|  G.max  |  Glycine max （ダイズ）  |
+|  H.sapiens  |  Homo sapiens （ヒト）  |
+|  H.vulgare  |  Hordeum vulgare （亜種も統合）  |
+|  M.truncatula  |  Medicago truncatula （特殊ライブラリも統合）  |
+|  M.musculus  |  Mus musculus （ハツカネズミ）  |
+|  O.sativa  |  Oryza sativa （亜種レベルも統合）  | 
+|  R.norvegicus  |  Rattus norvegicus （Rattus sp. も統合）  |
+|  S.lycopersicum  |  Solanum lycopersicum （トマト）  |
+|  T.aestivum  |  Triticum aestivum （コムギ）  |
+|  X.laevis  |  Xenopus laevis （アフリカツメガエル）  |
+|  X.tropicalis  |  Xenopus tropicalis （アフリカツメガエル）  | 
+|  Z.mays  |  Zea mays （トウモロコシ）  |
+|  Others  |  上記以外 （Others）  |
 
 |  その他  |    |    |
 | ---- | ---- | ---- |

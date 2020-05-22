@@ -45,17 +45,44 @@ Archive](https://www.ebi.ac.uk/ena/) に統合されました。
 
 ## INSDC 構成員
 
-<div class="main_table format">
-
-|  Data type  |  DDBJ Center  |  EMBL-EBI  |  NCBI  |
-| ---- | ---- | ---- | ---- |
-|  Next generation reads  |  [Sequence Read Archive](/dra/index.html)  |  [European Nucleotide Archive (ENA)](https://www.ebi.ac.uk/ena)  |  [Sequence Read Archive](//trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?)  |
-|  Sequence Read Archive  |  [Trace Archive](/dta/index.html)  |  ^  |  [Trace Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi?)  |
-|  Annotated sequence  |  [DDBJ](/ddbj/index.html)  |  ^  |  [GenBank](https://www.ncbi.nlm.nih.gov/genbank/)  |
-|  Samples  |  [BioSample](/biosample/index.html)  |  ^  |  [BioSample](https://www.ncbi.nlm.nih.gov/biosample/)  |
-|  Studies  |  [BioProject](/bioproject/index.html)  |  ^  |  [BioProject](https://www.ncbi.nlm.nih.gov/bioproject/)  |
-
-</div>
+<table>
+  <thead>
+    <tr>
+      <th>Data type</th>
+      <th>DDBJ Center</th>
+      <th>EMBL-EBI</th>
+      <th>NCBI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Next generation reads</th>
+      <td><a href="/dra/index.html">Sequence Read Archive</a></td>
+      <td rowspan="5"><a href="https://www.ebi.ac.uk/ena">European Nucleotide Archive (ENA)</a></td>
+      <td><a href="//trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?">Sequence Read Archive</a></td>
+    </tr>
+    <tr>
+      <th>Sequence Read Archive</th>
+      <td><a href="/dta/index.html">Trace Archive</a></td>
+      <td><a href="https://www.ncbi.nlm.nih.gov/Traces/trace.cgi?">Trace Archive</a></td>
+    </tr>
+    <tr>
+      <th>Annotated sequence</th>
+      <td><a href="/ddbj/index.html">DDBJ</a></td>
+      <td><a href="https://www.ncbi.nlm.nih.gov/genbank/">GenBank</a></td>
+    </tr>
+    <tr>
+      <th>Samples</th>
+      <td><a href="/biosample/index.html">BioSample</a></td>
+      <td><a href="https://www.ncbi.nlm.nih.gov/biosample/">BioSample</a></td>
+    </tr>
+    <tr>
+      <th>Studies</th>
+      <td><a href="/bioproject/index.html">BioProject</a></td>
+      <td><a href="https://www.ncbi.nlm.nih.gov/bioproject/">BioProject</a></td>
+    </tr>                    
+  </tbody>
+</table>
 
 ## 国際諮問委員会 IAC; International Advisory Committee
 
