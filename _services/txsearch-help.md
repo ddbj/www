@@ -42,7 +42,7 @@ TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxon
   2. 例の中から１つを選んでクリックすると、検索ボックスに入力されます。
   3. 生物名やtaxonomy_id などを、検索したいものに変更します。
 
-![検索フォーム Example]({{ site.baseurl }}/assets/images/help/txhelp02.gif)
+  ![検索フォーム Example]({{ site.baseurl }}/assets/images/help/txhelp02.gif)
 
 - デフォルトでは以下のフィールドを検索します。
 

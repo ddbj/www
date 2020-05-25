@@ -1,6 +1,6 @@
 // アコーディオンメニュー
 export default function accordionMenu() {
-  $('.example-of-use dt').on('click', function () {
+  $('.accordion-menu dt').on('click', function () {
 
     $(this)
       .next('dd')
@@ -8,6 +8,6 @@ export default function accordionMenu() {
   });
 
   $('.close-btn').click(function () {
-    $(this).parents('.example-of-use dd').slideUp();
+    $(this).parents('.accordion-menu dd').slideUp();
   });
 }
