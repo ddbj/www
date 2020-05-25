@@ -29,33 +29,31 @@ TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxon
 ![検索フォームへの入力]({{ site.baseurl }}/assets/images/help/txhelp03.gif)
 
 * 1文字のワイルドカード"?"と複数文字のワイルドカード"*"が使用できます。
-* 論理演算子(AND, OR, NOT)は以下のように入力します。
+- 論理演算子(AND, OR, NOT)は以下のように入力します。
 
-| ---- | ---- |
-|  AND  |  スペース　または AND または &&   |
-|  OR  |  OR または  |
-|  NOT  |  NOT  |
+  | ---- | ---- |
+  |  AND  |  スペース　または AND または &&   |
+  |  OR  |  OR または  |
+  |  NOT  |  NOT  |
 
-* Example を利用することもできます。
+- Example を利用することもできます。
 
-<span class="red">(1)</span>検索ボックス下の"Example" をクリックすると、いくつか簡単な例が表示されます。
-
-<span class="red">(2)</span>例の中から１つを選んでクリックすると、検索ボックスに入力されます。
-
-<span class="red">(3)</span>生物名やtaxonomy_id などを、検索したいものに変更します。
+  1. 検索ボックス下の"Example" をクリックすると、いくつか簡単な例が表示されます。
+  2. 例の中から１つを選んでクリックすると、検索ボックスに入力されます。
+  3. 生物名やtaxonomy_id などを、検索したいものに変更します。
 
 ![検索フォーム Example]({{ site.baseurl }}/assets/images/help/txhelp02.gif)
 
-デフォルトでは以下のフィールドを検索します。
+- デフォルトでは以下のフィールドを検索します。
 
-| ---- | ---- | ---- |
-|  tax_id  |  anamorph  |  in_part  |
-|  scientific_name  |  teleomorph  |  includes  |
-|  common_name  |  authority  |  misnomer  |
-|  synonym  |  blast_name  |  misspelling  |
-|  acronym  |  equivalent_name  |  type_material  |
+  | ---- | ---- | ---- |
+  |  tax_id  |  anamorph  |  in_part  |
+  |  scientific_name  |  teleomorph  |  includes  |
+  |  common_name  |  authority  |  misnomer  |
+  |  synonym  |  blast_name  |  misspelling  |
+  |  acronym  |  equivalent_name  |  type_material  |
 
-特定のフィールドに限定して検索する場合には、[フィールド名を指定](#f-shitei)します。
+  特定のフィールドに限定して検索する場合には、[フィールド名を指定](#f-shitei)します。
 
 * 結果が1000件を超える場合は最初（scientific_name で昇順）の 1000件分のみ結果を返します。この表示件数の上限を変更することはできません。<br> 結果を1000件以下にするためには、[絞り込み検索](#refine)を行ってください。
 
@@ -68,69 +66,30 @@ TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxon
 * フィールドの指定方法<a name="f-shitei"></a><br><span class="red">フィールド名：値</span>（例　tax_id:9606)
 * 複数フィールドの指定方法<br>"フィールド名：値" を論理演算子をはさんで並べます（例　scientific_name:(Homo Sapiens) && rank:species)
 - 検索に使用できるフィールド名は以下の通りです
+
   |  検索に使用できるフィールド名  |    |
   | ---- | ---- |
-  |  tax_id<br>scientific_name<br>common_name<br>synonym<br>acronym<br>anamorph<br>teleomorph<br>authority<br>blast_name<br>equivalent_name<br>in_part<br>includes<br>misnomer<br>misspelling<br>type_material  |  フィールド名を指定すれば絞り込み検索が可能となります。<br> フィールド名を指定しない場合、これらのフィールド全てを検索します。  |
+  |  
+  tax_id<br>scientific_name<br>common_name<br>synonym<br>acronym<br>anamorph<br>teleomorph<br>authority<br>blast_name<br>equivalent_name<br>in_part<br>includes<br>misnomer<br>misspelling<br>type_material  |  フィールド名を指定すれば絞り込み検索が可能となります。<br> フィールド名を指定しない場合、これらのフィールド全てを検索します。  |
   |  lineagerank  |  フィールド名の指定が必要です。  |
 
+- 完全一致検索の場合には、フィールド名を以下のように指定します。
 
-
-  <table>
-    <thead>
-      <tr><th colspan="2">検索に使用できるフィールド名</th></tr>
-    </thead>
-    <tbody>
-      <tr>        
-        <td>
-          tax_id<br>
-          scientific_name<br>
-          common_name<br>
-          synonym<br>
-          acronym<br>
-          anamorph<br>
-          teleomorph<br>
-          authority<br>
-          blast_name<br>
-          equivalent_name<br>
-          in_part<br>
-          includes<br>
-          misnomer<br>
-          misspelling<br>
-          type_material
-        </td>
-        <td>フィールド名を指定すれば絞り込み検索が可能となります。<br>
-          フィールド名を指定しない場合、これらのフィールド全てを検索します。
-        </td>
-      </tr>
-      <tr>                
-        <td>
-        lineage<br>
-        rank
-        </td>
-        <td>フィールド名の指定が必要です。</td>
-      </tr>
-    </tbody>
-  </table>
-
-
-
-
-* 完全一致検索の場合には、フィールド名を以下のように指定します。
-
-scientific_name_ex  
-common_name_ex  
-synonym_ex  
-acronym_ex  
-anamorph_ex  
-teleomorph_ex  
-authority_ex  
-blast_name_ex  
-equivalent_name_ex  
-in_part_ex  
-includes_ex  
-misnomer_ex  
-misspelling_ex  
-type_material_ex
+  | ---- |
+  |  scientific_name_ex  |
+  |  common_name_ex  |
+  |  synonym_ex  |
+  |  acronym_ex  |
+  |  anamorph_ex  |
+  |  teleomorph_ex  |
+  |  authority_ex  |
+  |  blast_name_ex  |
+  |  equivalent_name_ex  |
+  |  in_part_ex  |
+  |  includes_ex  |
+  |  misnomer_ex  |
+  |  misspelling_ex  |
+  |  type_material_ex  |
 
 ### 検索の入力例
 
@@ -171,14 +130,10 @@ Search Result/Taxon Information 画面で lineage 中の名前をクリックす
 
 ![Tree 画面]({{ site.baseurl }}/assets/images/help/txhelp05.gif)
 
-
-* <span class="red">(1)</span>scientific name はTaxon Information画面へのリンク。
-* <span class="red">(2)</span>taxonomy id は [NCBI Taxonomy Browser](//www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/) へのリンクになっています。
-* <span class="red">(3)</span>scientific name の左にある三角形のアイコンをクリックすると、その taxon の下の階層のツリーを開閉します。
-* <span class="red">(4)</span>ツリーのトップの scientific name の右にある↑をクリックすると、1階層上がったツリーを表示します。この時、表示する階層数が1つ増やされます。
-* URL 中の depth パラメータの値を変更すると表示する階層数が変更されます。
-
-
+1. scientific name はTaxon Information画面へのリンク。
+2. taxonomy id は [NCBI Taxonomy Browser](//www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/) へのリンクになっています。
+3. scientific name の左にある三角形のアイコンをクリックすると、その taxon の下の階層のツリーを開閉します。
+4. ツリーのトップの scientific name の右にある↑をクリックすると、1階層上がったツリーを表示します。この時、表示する階層数が1つ増やされます。<br>URL 中の depth パラメータの値を変更すると表示する階層数が変更されます。
 
 ## taxonomy_id や検索語を URL に含めた表示方法
 
