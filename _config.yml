@@ -69,6 +69,8 @@ collections:
     output: true
   aboutus:
     output: true
+  home:
+    output: true
     
 
 defaults:

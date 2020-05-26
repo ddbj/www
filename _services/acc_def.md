@@ -6,7 +6,7 @@ category: submission
 ---
 
 
-## 定義 {#definition}
+## 定義 <a name="definition"></a>
 
 [INSD](/insdc.html#insd) (the International Nucleotide Sequence
 Databases; 国際塩基配列データベース)
@@ -17,10 +17,10 @@ Databases; 国際塩基配列データベース)
 INSD が正式に発行する**アクセッション番号**は、データに対して固有な ID
 として割り振られます。
 
-## INSD アクセッション番号の書式 {#format}
+## INSD アクセッション番号の書式 <a name="format"></a>
 
-INSD アクセッション番号は アルファベット＋数字 で構成されています。\
-アルファベットの部分を[プレフィックス](/prefix.html)と呼びます。\
+INSD アクセッション番号は アルファベット＋数字 で構成されています。
+アルファベットの部分を[プレフィックス](/prefix.html)と呼びます。
 アクセッション番号の書式は [登録データ種別](/data-categories.html)
 によって、以下のように異なります。
 
@@ -29,7 +29,7 @@ Annotated/Assembled Data
 |  conventional  |  アルファベット１文字＋５桁の数字: 例 A12345<br>アルファベット２文字＋６桁の数字: 例 AB123456<br>アルファベット２文字＋８桁の数字: 例 AB12345678  |
 |  bulk<br>[WGS](/ddbj/wgs.html),[TSA](/ddbj/tsa.html),[TLS](/ddbj/tls.html)  |  アルファベット４文字 ([For Large Scale Data](/prefix.html#large))＋８～１０ 桁の数字: 例 ABCD01012345<br>アルファベット６文字 ([For Large Scale Data](/prefix.html#large))＋８～１０ 桁の数字: 例 ABCDEF01012345  |
 |  [MGA](/ddbj/mga.html)  |  アルファベット５文字＋７ 桁以上の数字: 例 ABCDE1234567  |
-|  [protein\_id](/ddbj/qualifiers.html#protein_id)  |  アルファベット３文字 ([protein\_id prefix list](/prefix.html#protein))＋５桁の数字: 例 ABC12345<br>アルファベット３文字 ([protein\_id prefix list](/prefix.html#protein))＋７桁の数字: 例 ABC1234567 |
+|  [protein_id](/ddbj/qualifiers.html#protein_id)  |  アルファベット３文字 ([protein_id prefix list](/prefix.html#protein))＋５桁の数字: 例 ABC12345<br>アルファベット３文字 ([protein_id prefix list](/prefix.html#protein))＋７桁の数字: 例 ABC1234567 |
 
 シークエンサ出力データ
 
@@ -41,12 +41,12 @@ Annotated/Assembled Data
 |  [BioProject](/bioproject/index.html)  |  アルファベット５文字 ([BioProject prefix list](/prefix.html#project)) ＋１ 桁以上の数字: 例 PRJDA123  |
 |  [BioSample](/biosample/index.html)  |  アルファベット４文字 ([BioSample prefix](/prefix.html#sample)) ＋８桁の数字: 例 SAMD00000001  |
 
-## アクセッション番号と混同されるもの {#confuse}
+## アクセッション番号と混同されるもの <a name="confuse"></a>
 
 下記は混同されることが多いのですが、INSD
 のアクセッション番号ではありません。
 
 INSD 以外のデータベースにおいて発行される ID
-:   RefSeq numbers: 例 NC\_123456, NM\_123456
+:   RefSeq numbers: 例 NC_123456, NM_123456
 :   Ensembl numbers: 例 ENSG00000139618
 :   UniProt accession numbers: 例 P12345, Q01234

@@ -13,7 +13,7 @@ The text below outlines the format and the present list of allowed countries.
 
 ## Defiition of /country qualifier
 
-``` flat-file code
+```
 
 Qualifier:      /country=" "
 Qualifier       /country=

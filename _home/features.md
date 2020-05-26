@@ -117,11 +117,11 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
   - variation<span class="FT">[Feature Table Definition](/ddbj/full_index.html#variation)</span>  
     関連する系統において安定な変異により異なる配列が存在する部位
   - 3'UTR  
-    1\) 成熟したmRNAのタンパク質に翻訳されない終止コドンを除く3'末端部位<span class="FT">[Feature Table Definition](/ddbj/full_index.html#3UTR)</span>  
-    2\) RNA ウイルスゲノムのタンパク質に翻訳されない終止コドンを除く3'末端部位
+    1.  成熟したmRNAのタンパク質に翻訳されない終止コドンを除く3'末端部位<span class="FT">[Feature Table Definition](/ddbj/full_index.html#3UTR)</span>  
+    2.  RNA ウイルスゲノムのタンパク質に翻訳されない終止コドンを除く3'末端部位
   - 5'UTR<span class="FT">[Feature Table Definition](/ddbj/full_index.html#5UTR)</span>  
-    1\) 成熟したmRNAのタンパク質に翻訳されない5'末端部位;  
-    2\) RNA ウイルスゲノムののタンパク質に翻訳されない5'末端部位
+    1.  成熟したmRNAのタンパク質に翻訳されない5'末端部位;  
+    2.  RNA ウイルスゲノムののタンパク質に翻訳されない5'末端部位
 
 </div>
 

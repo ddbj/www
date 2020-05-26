@@ -14,7 +14,7 @@ The text below outlines the format and the present list of allowed database cros
 
 ## Definition of /db\_xref qualifier
 
-``` flat-file code
+```
 Qualifier:       /db_xref="[database]:[identifier]"
 Definition:      database cross-reference: pointer to related information in
          another database                     

@@ -29,7 +29,7 @@ DDBJ においては、ゲノム配列データ登録用に [Mass Submission Sys
 
 <span class="bold">用例 1:</span> /locus\_tag 削除と新規追加
 
-``` flat-file code
+```
        更新前の          更新後の
        登録データ        登録データ
         ABC_0022
@@ -39,7 +39,7 @@ DDBJ においては、ゲノム配列データ登録用に [Mass Submission Sys
 
 <span class="bold">用例 2:</span> /locus\_tag に予め gap を残しておいた場合の挿入
 
-``` flat-file code
+```
        更新前の          更新後の
        登録データ        登録データ
         ABC_0020          ABC_0020
@@ -49,7 +49,7 @@ DDBJ においては、ゲノム配列データ登録用に [Mass Submission Sys
 
 <span class="bold">禁則:</span> 小数(バージョン類似表記) は行わないでください
 
-``` flat-file code
+```
        更新前の          更新後の
        登録データ        登録データ
         ABC_0020          ABC_0020
@@ -61,7 +61,7 @@ DDBJ においては、ゲノム配列データ登録用に [Mass Submission Sys
 
 しかしながら、登録者が染色体番号、RNA 種別などの情報を locus\_tag の値に含めることを希望する場合、prefix と underscore の後に それらの情報を加えても構いません:
 
-``` flat-file code
+```
         ABC_I00001 for gene 1, chromosome I
         ABC_II00001 for gene 1, chromosome II
         ABC_r1112 for ribosomal RNA genes

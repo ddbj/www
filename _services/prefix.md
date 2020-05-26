@@ -7,7 +7,7 @@ category: submission
 
 ## For conventional sequence data (two or one letter)
 
-``` flat-file code
+```
 A       EPO             Patent application
 AA      GenBank         EST
 AB      DDBJ            Direct submission
@@ -351,7 +351,7 @@ Z       ENA
 
 ## For bulk sequence data
 
-``` flat-file code
+```
 AAAA-AZZZ      GenBank      general WGS 
 BAAA-BZZZ      DDBJ         general WGS 
 CAAA-CZZZ      ENA          WGS 
@@ -385,7 +385,7 @@ JAAAAA-JZZZZZ  GenBank      general WGS
 
 ## For protein\_id
 
-``` flat-file code
+```
 AAA-AZZ     GenBank 
 AAE         USPTO         Patent application
 BAA-BZZ     DDBJ          
@@ -412,7 +412,7 @@ VAA-VZZ     ENA
 
 ## For Sequence Read Archive
 
-``` flat-file code
+```
 DRA     DDBJ       Submission object
 DRP     DDBJ       Study object
 DRR     DDBJ       Run object
@@ -437,7 +437,7 @@ See also [DRA metadata outline](/dra/submission-e.html#metadata)
 
 ## For BioProject
 
-``` flat-file code
+```
 PRJDA-PRJDZ     DDBJ 
 PRJEA-PRJEZ     ENA/EBI
 PRJNA-PRJNZ     NCBI 
@@ -445,7 +445,7 @@ PRJNA-PRJNZ     NCBI
 
 ## For BioSample
 
-``` flat-file code
+```
 SAMD     DDBJ 
 SAME     ENA/EBI
 SAMN     NCBI 

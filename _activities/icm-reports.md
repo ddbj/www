@@ -19,10 +19,10 @@ DDBJ センター, [EBI](//www.ebi.ac.uk/), [NCBI](//www.ncbi.nlm.nih.gov/) で�
 
   - メタゲノムデータの区分と受け入れ  
     メタゲノムを扱うためのアセンブル・解析手法が発展し、そのデータ登録が増加しています。メタゲノムデータを 3 つのレベルに分類し、
-      - 1\) primary metagenome assemblies with environmental samples
-      - 2\) binned metagenome assemblies with binned samples
-      - 3\) MAGs with MIMAG samples ([Nat. Biotechnol. 35:725-731 (2017)](//www.nature.com/articles/nbt.3893) 参照)
-    1\) と 2) は SRA Analysis object へ、3) はフラットファイルとして受け入れる方針で進めます。
+      - 1.  primary metagenome assemblies with environmental samples
+      - 2.  binned metagenome assemblies with binned samples
+      - 3.  MAGs with MIMAG samples ([Nat. Biotechnol. 35:725-731 (2017)](//www.nature.com/articles/nbt.3893) 参照)
+    1.  と 2) は SRA Analysis object へ、3) はフラットファイルとして受け入れる方針で進めます。
   - Negative control 用の「生物名」  
     対照実験用に BioSample などに無生物を記載するようなケースがあり、そのための dummy として無生物の「生物名」を追加することを検討しています。
   - 由来生物種の記載が疑わしい配列データについて  
