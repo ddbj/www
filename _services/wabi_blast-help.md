@@ -147,7 +147,7 @@ WABI の BLAST検索ジョブ は、 BLAST検索結果を元にしてグラフ�
 ## WABI BLAST の使用例
 
 {::options parse_block_html="true" /}
-<dl class="example-of-use">
+<dl class="accordion-menu">
 <dt><a href="javascript:void(0)">Javaの使用例</a></dt>
 <dd>#### コード例
 
@@ -220,7 +220,7 @@ $ java -classpath 'target/wabi-client-1.jar:target/wabi-client-1-jar-with-depend
 </dl>
 
 {::options parse_block_html="true" /}
-<dl class="example-of-use">
+<dl class="accordion-menu">
   <dt><a href="javascript:void(0)">Perlの使用例</a></dt>
 <dd>#### コード例
 
@@ -279,7 +279,7 @@ $ perl example.pl
 </dl>
 
 {::options parse_block_html="true" /}
-<dl class="example-of-use">
+<dl class="accordion-menu">
   <dt><a href="javascript:void(0)">Ruby の使用例</a></dt>
 <dd>#### コード例
 
@@ -636,7 +636,7 @@ HTTP ステータス 400
 ```
 
 {::options parse_block_html="true" /}
-<dl class="example-of-use">
+<dl class="accordion-menu">
   <dt><a href="javascript:void(0)">利用例</a></dt>
 <dd>Java で SpringFramework の RESTクライアント を使う場合:
    <script src="https://gist.github.com/ddbj-repo/ec96049ec11c1d22303d9fcdea9f70cd.js"></script>
@@ -816,7 +816,7 @@ HTTP ステータス 400
 ```
 
 {::options parse_block_html="true" /}
-<dl class="example-of-use">
+<dl class="accordion-menu">
   <dt><a href="javascript:void(0)">利用例</a></dt>
 <dd>Java で SpringFramework の RESTクライアント を使う場合:
    <script src="https://gist.github.com/ddbj-repo/4a1ea26e46bebac37cf595eae77e384a.js"></script>
@@ -968,7 +968,7 @@ HTTP ステータス 404
 ```
 
 {::options parse_block_html="true" /}
-<dl class="example-of-use">
+<dl class="accordion-menu">
   <dt><a href="javascript:void(0)">利用例</a></dt>
 <dd>Java で SpringFramework の RESTクライアント を使う場合:
    <script src="https://gist.github.com/ddbj-repo/d3ff7fbc9a66733ab164f669e4bcb88d.js"></script>
@@ -1139,7 +1139,7 @@ HTTP ステータス 400
 ```
 
 {::options parse_block_html="true" /}
-<dl class="example-of-use">
+<dl class="accordion-menu">
   <dt><a href="javascript:void(0)">利用例</a></dt>
 <dd>Java で SpringFramework の RESTクライアント を使う場合:
    <script src="https://gist.github.com/ddbj-repo/af6f2a4165385224de18cc5968568848.js"></script>
@@ -1284,7 +1284,7 @@ HTTP ステータス 404
 ```
 
 {::options parse_block_html="true" /}
-<dl class="example-of-use">
+<dl class="accordion-menu">
   <dt><a href="javascript:void(0)">利用例</a></dt>
 <dd>Java で HttpURLConnection を使う場合:
    <script src="https://gist.github.com/ddbj-repo/bd58a6ca09c2d380d5ceafd4905a0e2e.js"></script>
@@ -1427,7 +1427,7 @@ WABI BLAST のヘルプ情報を返します。
 ```
 
 {::options parse_block_html="true" /}
-<dl class="example-of-use">
+<dl class="accordion-menu">
   <dt><a href="javascript:void(0)">利用例</a></dt>
 <dd>Java で SpringFramework の RESTクライアント を使う場合:
    <script src="https://gist.github.com/ddbj-repo/324515b540e438c23e5589dfa40f9aed.js"></script>
