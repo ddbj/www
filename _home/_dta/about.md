@@ -2,7 +2,7 @@
 layout: indexed_content
 title: DTA について
 pathname: about
-category: _about_dta
+category: _dta
 ---
 
 <div id="main_index">
