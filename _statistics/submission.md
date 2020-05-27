@@ -5,11 +5,9 @@ pathname: submission
 category: statistics
 ---
 
-  - <span class="bold">Web Submission</span>: [Nucleotide Sequence
-    Submission System](/ddbj/websub.html) からの登録
-  - <span class="bold">MSS Submission</span>: [Mass Submission
-    System](/ddbj/mss.html) からの登録
-  - <span class="bold">Submission</span>: 登録数
+  - **Web Submission**: [Nucleotide Sequence Submission System](/ddbj/websub.html) からの登録
+  - **MSS Submission**: [Mass Submission System](/ddbj/mss.html) からの登録
+  - **Submission**: 登録数
 
 <div id="stat_area">
 
