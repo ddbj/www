@@ -20,11 +20,11 @@ TEL : 055-981-6853
 そのため、電話によるお問い合わせは受け付けておりません。  
 何卒ご了承ください。
 
-お問い合わせは [フォーム](/contact.html) をご利用ください。
+お問い合わせは [フォーム]({{ site.baseurl }}/home/contact.html) をご利用ください。
 
 ## 遺伝研構内の地図
 
-![](/images/center/cibmap.png)
+![]({{ site.baseurl }}/assets/images/center/cibmap.png)
 
 [遺伝研までのアクセス
 (国立遺伝学研究所のページに移動します)](http://www.nig.ac.jp/nig/ja/about-nig/access_ja)

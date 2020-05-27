@@ -5,9 +5,7 @@ pathname: web-access1
 category: _home
 ---
 
-<div id="stat_area">
-
-</div>
+## ウェブアクセス
 
 注釈: Unique users/month は awstats が出力する bot アクセスを除外した月間ユニーク IP
 数になります。2018年2月22日から4月13日まで DDBJ ホームページ

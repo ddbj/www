@@ -5,7 +5,7 @@ pathname: relinfo
 category: _statistics
 ---
 
-[リリースノート (DDBJ, 16S rRNA, DAD)](/stats/relnote.html)
+[リリースノート (DDBJ, 16S rRNA, DAD)]({{site.baseurl}}/statistics/relnote.html)
 <!---
   以下に図・表をHTMLで挿入予定
 -->

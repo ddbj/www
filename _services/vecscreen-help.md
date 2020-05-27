@@ -141,19 +141,19 @@ Virus genomes, Yeast and bacterial biosynthetic genes, Transcriptional signals f
 
 ## Request IDについて
 
-{: .ddbj-description }
+{: .float-left }
 検索実行後の画面には Request ID が表示されます。同じ番号が検索結果の最上部にも表示されます。このRequest IDはResult ViewerもしくはDDBJへの問い合わせの際に必要です。この番号を控えておけばブラウザを閉じてしまっても期限内であればRequest ID から結果を閲覧することができます(右図)。
 
-{: .ddbj-chart }
+{: .float-right }
 ![VecScreen-RequestID]({{ site.baseurl }}/assets/images/help/VecScreen-RequestID.png)
 
 {: .float-release }
 ## Result viewer
 
-{: .ddbj-description }
+{: .float-left }
 Request ID(上述)から検索結果を取得することができます。画面左側のメニューから"Result viewer"をクリックしてください。Result viewer画面に切り替わるので,Request IDを入力後"display"をクリックしてください(右図)。
 
-{: .ddbj-chart }
+{: .float-right }
 ![VecScreen-ResultViewer]({{ site.baseurl }}/assets/images/help/VecScreen-ResultViewer.png)
 
 {: .float-release }

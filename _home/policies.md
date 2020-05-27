@@ -5,23 +5,18 @@ pathname: policies
 category: _home
 ---
 
-<div class="section book">
-
-DDBJ センターでは[情報・システム研究機構](http://www.rois.ac.jp/) (ROIS)の[規程](http://www.rois.ac.jp/policy/index.html)に従いサイトポリシーを規定します。  
+DDBJ センターでは[情報・システム研究機構](http://www.rois.ac.jp/) (ROIS)の[規程](https://www.rois.ac.jp/open/21.html)に従いサイトポリシーを規定します。  
 DDBJ センターより提供している各コンテンツ、データ、サービスは、原則として、クレジット (ライセンス種別と著作権者) を明記すれば[Creative Commons Attribution 4.0 International license (CC-BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.ja)の下で利用することができます。ご利用の際は[免責事項](#disclaimer)に
 ご注意ください。
 
 ご利用の前に、以下を ご一読の上、ご理解くださいますようお願いいたします。  
 ご連絡は基本的にメールを介して行いますので、これを["迷惑メール"としないために](/precautions.html) 設定をご確認ください。
 
-<div class="section chapter">
-
 ## 個人情報の取り扱いについて
 
 DDBJ では[情報・システム研究機構](http://www.rois.ac.jp/) (ROIS) の規程に従い個人情報を取り扱います。  
 [情報公開・法人文書管理について](http://www.rois.ac.jp/open/index.html) (ROIS) データ登録時、サービス利用時などに取り扱う個人情報は業務の範囲内に限定して利用いたします。
 
-<div class="section section">
 
 ### データ登録者の個人情報
 
@@ -29,21 +24,9 @@ DDBJ では[情報・システム研究機構](http://www.rois.ac.jp/) (ROIS) �
   - 所属・配信先を確認する際に使用することがあります。
   - 既公開の登録データに関する利用者からの質問などを登録者の連絡先に転送することがあります。質問の種類にも依存しますが、転送した質問へのご回答がない場合、登録者の連絡先を質問した利用者に知らせることがあります。
 
-</div>
-
-</div>
-
-<div class="section chapter">
-
-<div class="section section">
-
 ## ヒトを対象とした研究データの登録について
 
-<div class="red bold">
-
-2017年5月30日に改正された個人情報保護法と倫理指針が施行されたため、本ページの内容が変更されております。
-
-</div>
+<span class="red">2017年5月30日に改正された個人情報保護法と倫理指針が施行されたため、本ページの内容が変更されております。</span>
 
 #### 登録の前に
 
@@ -54,9 +37,7 @@ DDBJ では[情報・システム研究機構](http://www.rois.ac.jp/) (ROIS) �
   - 提供予定データを産出した実験手法および対象が明記された研究計画書が倫理審査委員会において承認された上で研究を実施する機関の長により許可されていること。
   - 研究計画書、インフォームド・コンセント説明同意文書内にデータベースへデータを提供し、国内外の研究者間で共有することが記載されていること。
 
-\*1 [HeLa
-細胞の全ゲノムデータ](https://grants.nih.gov/grants/guide/notice-files/NOT-OD-14-080.html)は
-[NCBI dbGaP](https://www.ncbi.nlm.nih.gov/gap) にご登録ください。
+\*1 [HeLa 細胞の全ゲノムデータ](https://grants.nih.gov/grants/guide/notice-files/NOT-OD-14-080.html)は [NCBI dbGaP](https://www.ncbi.nlm.nih.gov/gap) にご登録ください。
 
 #### アクセス制限とデータベース
 
@@ -69,7 +50,7 @@ DDBJ では[情報・システム研究機構](http://www.rois.ac.jp/) (ROIS) �
   - アクセス制限が必要ではない場合  
     非アクセス制限データベースである [DDBJ Sequence Read Archive
     (DRA)](/dra/index.html)、または、[DDBJ データベース](/ddbj/websub.html)へご登録ください。  
-    個人識別符号（\*2）に該当するデータを非アクセス制限データベースへ登録するためには、事前に [NBDC ヒトデータ審査委員会事務局](https://humandbs.biosciencedbc.jpxdata-submission)に登録予定データの提供申請書を提出し、委員会で審査の上、承認されている必要があります。原則として「[登録の前に](#before)」の確認項目二点に加え、インフォームド・コンセント説明同意文書内にデータがデータベースから制限なく一般公開される旨が記載されている必要があります。  
+    個人識別符号（\*2）に該当するデータを非アクセス制限データベースへ登録するためには、事前に [NBDC ヒトデータ審査委員会事務局](https://humandbs.biosciencedbc.jp/data-submission)に登録予定データの提供申請書を提出し、委員会で審査の上、承認されている必要があります。原則として「[登録の前に](#before)」の確認項目二点に加え、インフォームド・コンセント説明同意文書内にデータがデータベースから制限なく一般公開される旨が記載されている必要があります。  
     個人識別符号に該当しないデータ登録に対して審査を希望する場合は [NBDC ヒトデータ審査委員会事務局](https://humandbs.biosciencedbc.jp/data-submission)にお問い合わせください。
 
 \*2 個人識別符号については [NBDC の FAQ](https://humandbs.biosciencedbc.jp/faq#faq-5) を参照してください。
@@ -85,23 +66,11 @@ DDBJ では[情報・システム研究機構](http://www.rois.ac.jp/) (ROIS) �
   - [NBDC ヒトデータベース よくあるご質問（FAQ）](https://humandbs.biosciencedbc.jp/faq)
   - [ヒトデータに関するデータベース事業について研究対象者等に公開すべき事項](/reaserch-participant-notification.html)
 
-</div>
-
-</div>
-
-<div class="section chapter">
-
 ## 使用許諾
-
-<div class="section section">
 
 ### ウェブサイト
 
 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ja) に従います。
-
-</div>
-
-<div class="section section">
 
 ### データとサービス
 
@@ -119,10 +88,6 @@ DDBJ では[情報・システム研究機構](http://www.rois.ac.jp/) (ROIS) �
   - DDBJ が [anonymous FTP](/download.html)
     によるダウンロードや各サービスで提供しているデータの利用制限は、以下から参照可能な利用規定に準拠します。
 
-  
-
-<div class="main_table">
-
 | database                                                                      | FTP | getentry | ARSA | BLAST |
 | ----------------------------------------------------------------------------- | --- | -------- | ---- | ----- |
 | [DDBJ](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbj/ddbjrel.txt)               | ○   | ○        | ○    | ○     |
@@ -135,25 +100,12 @@ DDBJ では[情報・システム研究機構](http://www.rois.ac.jp/) (ROIS) �
 | [ArrayExpress](//www.ebi.ac.uk/arrayexpress/about.html)                       | ○   | ×        | ×    | ×     |
 | [HINV](ftp://ftp.ddbj.nig.ac.jp/mirror_database/hinv/README.txt)              | ○   | ×        | ×    | ×     |
 
-</div>
-
-</div>
-
-</div>
-
-<div class="section chapter">
 
 ## クレジット
-
-<div class="section section">
 
 ### ウェブサイト
 
 当サイトに掲載されている情報の著作権は、著者を明記している場合はその著者に、特に著者を明記しない場合は、DDBJ センターに帰属します。
-
-</div>
-
-<div class="section section">
 
 ### データとサービス
 
@@ -193,28 +145,15 @@ DDBJ は GenBank や EMBL-Bank 同様なんらの利用制限も付加しませ�
 
 これからも皆で協力して作って皆で自由に使う準パブリックドメインデータです。
 
-<div data-align="right">
-
-2009.08.18  
-生命情報・DDBJ研究センター センター長  
-大久保公策
-
-</div>
+{: .text-align-end}
+2009.08.18<br>生命情報・DDBJ研究センター センター長<br>大久保公策
 
 以下もご参照ください。
 
   - [登録データの取り扱いについて](/insdc.html#policy)
   - [登録に附随する権利と義務](/ddbj/submission.html#right)
 
-</div>
-
-</div>
-
-<div class="section chapter">
-
 ## 特許・知的所有権と優先権
-
-<div class="section section">
 
 ### 特許出願に含まれる塩基配列データについて
 
@@ -223,15 +162,13 @@ DDBJ は GenBank や EMBL-Bank 同様なんらの利用制限も付加しませ�
 同様に、[韓国特許庁](//www.kipo.go.kr/) (KIPO)、[欧州特許庁](//www.epo.org/index.html)
 (EPO)、 [米国特許商標庁](https://www.uspto.gov/) (USPTO) が受理し公開可能となった配列データも DDBJ から公開されます。
 
-  - 参照  
-    特許出願に含まれる塩基配列の公開例:[DL000001](http://getentry.ddbj.nig.ac.jp/getentry/na/DL000001/?filetype=html)
-    [特許出願に含まれる配列データの提供](/ddbj/pat-data.html)
+- 参照  
+  特許出願に含まれる塩基配列の公開例:[DL000001](http://getentry.ddbj.nig.ac.jp/getentry/na/DL000001/?filetype=html)<br>
+  [特許出願に含まれる配列データの提供](/ddbj/pat-data.html)
 
 そのため、当該配列が JPO/KIPO/EPO/USPTO への出願書類に記載されている場合、DDBJ に別途ご登録いただく必要はございません。
 
-</div>
 
-<div class="section section">
 
 ### 特許出願に関連する塩基配列の登録に関する注意
 
@@ -247,9 +184,7 @@ DDBJ は配列データの登録・公開により生じた 所有権、優先�
 特許出願と並行して、別途、DDBJ へ登録・公開をご希望の場合は、データ登録前に
 [お問い合わせ](/contact.html)の「塩基配列登録システム（NSSS）」を選択してご連絡ください。
 
-</div>
 
-<div class="section section">
 
 ### データの優先権
 
@@ -268,29 +203,22 @@ DDBJ に塩基配列を登録しても、以下の例を含めて
   - 新種など生物名の命名 （参照: [Organism Qualifier について）](/ddbj/organism.html)
   - 遺伝子・タンパク質の命名 （参照: [遺伝子命名に関する考え方）](/ddbj/cds.html#product)
 
-</div>
 
-</div>
 
-<div class="section chapter">
 
-## 免責事項
-
-<div class="section section">
+## 免責事項<a name="disclaimer"></a>
 
 ### ウェブサイト
 
 DDBJ では、上位機構である [情報・システム研究機構](http://www.rois.ac.jp/) (ROIS)
 に準じて免責事項を規定します。
 
-  - [ROIS サイトポリシー](http://www.rois.ac.jp/policy/index.html)より抜粋
+  - [ROIS サイトポリシー](https://www.rois.ac.jp/about/policy.html)より抜粋
     (2006.1.25 現在):  
     本サイトの各コンテンツは投資勧誘を目的としたものではありません。利用者は本サイトの各コンテンツより得た情報を、利用者ご自身の判断と責任において利用していただくものとします。各コンテンツは作成時点までの信頼できると思われる各種情報、データに基づいて作成されていますが、その正確性、相当性、完全性などに対して情報・システム研究機構（ROIS）及び情報提供者は責任を負いません。当該情報などに基づいて被ったとされるいかなる損害についても情報・システム研究機構（ROIS）及び情報提供者は責任を負いません。
     本サイトからは他のウェブサイトなどへリンクをしている場合があります。移動した先のホームページは情報・システム研究機構（ROIS）が管理運営するものではありません。その内容の信頼性などについて情報・システム研究機構（ROIS）及び情報提供者は責任を負いません。
 
-</div>
 
-<div class="section section">
 
 ### データとサービス
 
@@ -300,16 +228,11 @@ DDBJ センターは責任義務を負わないものとします。このため
 
 [特許出願に含まれる配列データの提供](/ddbj/pat-data.html)もあわせて ご参照ください。
 
-</div>
 
-</div>
 
-<div class="section chapter">
 
 ## 推奨するブラウザ
 
 DDBJ センターウェブサイトとウェブサービスの利用には [Firefox](https://www.mozilla.org/ja/firefox/all/) と [Chrome](https://www.google.com/chrome/browser/desktop/index.html)の使用を推奨いたします。推奨するブラウザは予告なく変更する場合があります。
 
-</div>
 
-</div>

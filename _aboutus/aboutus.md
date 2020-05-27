@@ -5,14 +5,7 @@ pathname: aboutus
 category: _aboutus
 ---
 
-DDBJ; DNA Data Bank of Japan は生命科学の研究活動をサポートするために、国際塩基配列データベースを協同運営する
-[INSDC (International Nucleotide Sequence Database
-Collaboration)](http://www.insdc.org/)
-の一員として、塩基配列データを収集しています。あわせて、自由に利用可能な塩基配列データとスーパーコンピュータシステムを提供しています。
-
-　
-
-<div class="section chapter">
+DDBJ; DNA Data Bank of Japan は生命科学の研究活動をサポートするために、国際塩基配列データベースを協同運営する [INSDC (International Nucleotide Sequence Database Collaboration)](http://www.insdc.org/) の一員として、塩基配列データを収集しています。あわせて、自由に利用可能な塩基配列データとスーパーコンピュータシステムを提供しています。
 
 ## 活動理念
 
@@ -26,11 +19,9 @@ INSD
 
 塩基配列データは久遠の時間をかけて生物が進化してきたことを直接示す記録です。塩基配列データが人類共通の財産であるという認識のもとに、各データバンクは研究者が利用できるように、データを公開しています。
 
-</div>
 
 　
 
-<div class="section chapter">
 
 ## 運営体制
 
@@ -43,15 +34,12 @@ DDBJ センター事業は所外委員会である DNA データ研究利用委�
 
 [現在の DDBJ 運営スタッフの一覧](/staff.html)はこちらをご覧ください。
 
-</div>
 
 　
 
-<div class="section chapter">
 
 ## 主要な活動
 
-<div class="section section">
 
 ### 国際塩基配列データベースの共同構築と運営
 
@@ -79,18 +67,14 @@ ENA/EBI でも共通です。
   - [特許・知的所有権と優先権](/policies.html#ownership)
   - [DDBJ での特許関連配列データの公開業務の紹介](/column/patent.html)
 
-</div>
 
-<div class="section section">
 
 ### 国立遺伝学研究所スーパーコンピュータシステム利用の管理・運用
 
 [国立遺伝学研究所スーパーコンピュータシステム](https://sc.ddbj.nig.ac.jp/)は、ゲノム解析を主な目的とした大規模計算機利用拠点として
 大規模クラスタ型計算機、大規模メモリ共有型型計算機、および大容量高速ディスク装置で構成されたスーパーコンピューティングシステムサービスを提供しています。
 
-</div>
 
-<div class="section section">
 
 ### 生命情報データの検索・解析サービス提供
 
@@ -106,9 +90,7 @@ ENA/EBI でも共通です。
 研究者に生命情報データを有効に利用していただくため、DDBJ で開発したものも含めた各種ツールを、WWW サービス および
 国立遺伝学研究所スーパーコンピュータシステム で公開しております。
 
-</div>
 
-<div class="section section">
 
 ### 教育 および 広報
 
@@ -119,129 +101,79 @@ DDBJ では、利用者の方々に塩基配列データの登録方法や 提�
 [DDBJ Mail Magazine](/subscribe.html) にて定期的に配信しております。  
 [DDBJ 活動に関する出版物](/activities/publications.html) もご覧ください。
 
-</div>
-
-</div>
-
-　
-
-<div class="section chapter">
-
 ## 沿革
 
-<div class="history">
-
   - 1980年
-  - EMBL data library が設立され、日本へ国際協力を要請。
 
-</div>
-
-<div class="history">
+    EMBL data library が設立され、日本へ国際協力を要請。
 
   - 1982年
-  - EMBL と GenBank が国際協力事業を開始し、 日本へ参加を要請。
 
-</div>
-
-<div class="history">
+    EMBL と GenBank が国際協力事業を開始し、 日本へ参加を要請。
 
   - 1983年
-  - DNAデータバンク運営委員会設置。  
+
+    DNAデータバンク運営委員会設置。  
     塩基配列データを収集・評価・提供するデータバンク活動で国際的に貢献すべく、試験的なデータ入力を開始。
 
-</div>
-
-<div class="history">
-
   - 1984年
-  - 国立遺伝学研究所、大学共同利用機関に改組。  
+
+    国立遺伝学研究所、大学共同利用機関に改組。  
     国立遺伝学研究所に遺伝情報研究センター設置。  
     これに伴い、遺伝情報研究センター内で DDBJ 稼動開始。
 
-</div>
-
-<div class="history">
-
   - 1986年
-  - DNA データ研究利用委員会設置。
-
-</div>
-
-<div class="history">
+  
+    DNA データ研究利用委員会設置。
 
   - 1987年
-  - DDBJ 定期リリース１を公開。  
+
+    DDBJ 定期リリース１を公開。  
     これをもって公式な DDBJ の活動開始年としている。
 
-</div>
-
-<div class="history">
-
   - 1995年4月
-  - 国立遺伝学研究所に生命情報研究センター (CIB; Center for Information Biology) 設置。  
+
+    国立遺伝学研究所に生命情報研究センター (CIB; Center for Information Biology) 設置。  
     これに伴い、DDBJ は CIB に移動。
 
-</div>
-
-<div class="history">
-
   - 2001年4月
-  - 生命情報研究センターを改組し、生命情報・DDBJ 研究センター(CIB-DDBJ; Center for Information
+    
+    生命情報研究センターを改組し、生命情報・DDBJ 研究センター(CIB-DDBJ; Center for Information
     Biology and DNA Data Bank of Japan) 設置。  
     以降、DDBJ は国立遺伝学研究所の公式な組織。
 
-</div>
-
-<div class="history">
-
   - 2004年4月
-  - 国立遺伝学研究所、国立大学法人法に基づき、[大学共同利用機関法人
+    
+    国立遺伝学研究所、国立大学法人法に基づき、[大学共同利用機関法人
     情報・システム研究機構](http://www.rois.ac.jp/) (ROIS;
     Research Organization of Information and Systems) に属する大学共同利用機関として改組。
 
-</div>
-
-<div class="history">
-
   - 2005年5月
-  - DDBJ, EMBL-Bank, GenBank の連携のもとにある国際塩基配列データベースは、その総称を INSDC;
+    
+    DDBJ, EMBL-Bank, GenBank の連携のもとにある国際塩基配列データベースは、その総称を INSDC;
     International Nucleotide Sequence Database Collaboration とした。
 
-</div>
-
-<div class="history">
-
   - 2007年4月
-  - [ライフサイエンス統合データベースセンター](http://dbcls.rois.ac.jp/) (DBCLS; Database
+    
+    [ライフサイエンス統合データベースセンター](http://dbcls.rois.ac.jp/) (DBCLS; Database
     Center for Life Science) が ROIS に加入。
 
-</div>
-
-<div class="history">
-
   - 2009年
-  - DDBJ 運営スタッフの大幅な異動があり、DBCLS との連携を強化。  
+    
+    DDBJ 運営スタッフの大幅な異動があり、DBCLS との連携を強化。  
     DDBJ において 次世代シークエンサの出力データを収集する Sequence Read Archive と Trace Archive
     の活動が軌道に乗り、これらの Archive も INSDC に加入。
 
-</div>
-
-<div class="history">
-
   - 2012年4月
-  - DDBJ を、CIB-DDBJ から独立した国立遺伝学研究所の事業系センター（共同利用事業センター）の１つとして、DDBJ
+    
+    DDBJ を、CIB-DDBJ から独立した国立遺伝学研究所の事業系センター（共同利用事業センター）の１つとして、DDBJ
     センターに改組。
 
-</div>
-
-<div class="history">
-
   - 2013年10月
-  - [バイオサイエンスデータベースセンター](https://biosciencedbc.jp/) (NBDC; National
+    
+    [バイオサイエンスデータベースセンター](https://biosciencedbc.jp/) (NBDC; National
     Bioscience Database Center)
     と共同で、個人に由来する遺伝学的なデータと匿名化された表現型情報を登録するデータベース、[JGA](/jga/index.html);
     Japanese Genotype-phenotype Archive の運用を DDBJ センターにおいて開始。
 
-</div>
 
-</div>
