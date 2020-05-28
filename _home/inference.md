@@ -5,6 +5,8 @@ pathname: inference
 category: _home
 ---
 
+## /inference qualifier vocabulary recommendation document
+
 The original site; [/inference qualifier vocabulary recommendation document](http://www.insdc.org/documents/inference-qualifiers)
 2013.08.15 version
 
@@ -14,7 +16,6 @@ The /inference qualifier provides a structured description of non-experimental e
   - The following table presents recommended acronyms for commonly cited
     resources
 
-<div class="main_table format">
 
 | Name of data resource/tool                                              | Recommended acronym |
 | ----------------------------------------------------------------------- | ------------------- |
@@ -31,5 +32,3 @@ The /inference qualifier provides a structured description of non-experimental e
 | PubMed Identifier (citations)                                           | PMID                |
 
 Revised August 9, 2012
-
-</div>
