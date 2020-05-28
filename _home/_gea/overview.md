@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: GEA への登録
+pathname: overview
+category: _gea
+---
+
 <div class="section chapter">
 
 ## 概要

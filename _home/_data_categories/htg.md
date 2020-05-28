@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: HTG
+pathname: htg
+category: _data_categories
+---
+
 DDBJ/ENA/GenBank の HTG division は finished
 レベルに達していないゲノム配列を迅速に利用可能にするという科学界の需要に対応するために作られました。
 HTG division には処理能力の高いゲノム解析センターから提供された finished

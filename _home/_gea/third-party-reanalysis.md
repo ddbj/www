@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: Third-party reanalysis data
+pathname: third-party-reanalysis
+category: _gea
+---
+
 <div class="section chapter">
 
 ## Third-party reanalysis data 登録

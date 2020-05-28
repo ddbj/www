@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: Experiment types in GEA
+pathname: experiment-types
+category: _gea
+---
+
 [Experiment Types in
 spreadsheet](https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=1327621011).
 

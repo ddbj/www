@@ -1,3 +1,9 @@
+---
+layout: 未定
+pathname: index
+category: _biosample
+---
+
 <div id="content_part">
 
 [BioSample](index.html) は DDBJ の一次データベースに登録されている実験データを得るのに使われた生物学的な試料

@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: Accepted Data File Formats
+pathname: datafile
+category: _gea
+---
+
 <div class="section chapter">
 
 ## ファイル準備における注意点

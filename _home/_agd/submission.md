@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: AGD への登録
+pathname: submission
+category: _agd
+---
+
 <div class="section chapter">
 
 ## 登録概要

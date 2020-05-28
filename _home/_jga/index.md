@@ -1,3 +1,9 @@
+---
+layout: indexed_content
+pathname: index
+category: _jga
+---
+
 <div id="content_part">
 
 ## 概要

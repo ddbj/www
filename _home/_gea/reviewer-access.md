@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: Reviewer Access
+pathname: reviewer-access
+category: _gea
+---
+
 <div class="section chapter">
 
 ## Reviewer access token

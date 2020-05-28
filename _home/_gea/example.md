@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: MAGE-TAB の例
+pathname: example
+category: _gea
+---
+
 <div class="section chapter">
 
 ## IDF 例

@@ -427,12 +427,12 @@ input, textarea, select, button {
     padding: 1rem 1.6rem;
     border-left: 6px solid #FEC091;
     margin-bottom: 1.6rem; }
-  .md-content .example-of-use dt {
+  .md-content .accordion-menu dt {
     cursor: pointer; }
-    .md-content .example-of-use dt a {
+    .md-content .accordion-menu dt a {
       text-decoration: none;
       position: relative; }
-    .md-content .example-of-use dt::after {
+    .md-content .accordion-menu dt::after {
       content: "";
       display: block;
       top: 100%;
@@ -442,18 +442,28 @@ input, textarea, select, button {
       border-top: 2px solid #FF7300;
       border-right: 2px solid #FF7300;
       transform: translateX(900%) translateY(-150%) rotate(135deg); }
-  .md-content .example-of-use dd {
+  .md-content .accordion-menu dd {
     display: none;
     margin: 0; }
   .md-content .close-btn {
     text-align: right;
     display: block; }
-  .md-content .ddbj_description {
+  .md-content .float-left {
     float: left;
     width: 50%; }
-  .md-content .ddbj_chart {
+  .md-content .float-right {
     float: right;
     width: 50%; }
+    .md-content .float-right img {
+      width: 100%; }
+  .md-content .float-release {
+    clear: both; }
+  .md-content .text-align-end {
+    text-align: end; }
+  .md-content .feeds img {
+    height: 2rem;
+    vertical-align: text-bottom;
+    margin-right: .2rem; }
 
 .multi-column-view {
   border-top: 1px solid #1C1B19; }

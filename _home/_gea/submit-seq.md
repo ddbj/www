@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: Submit sequencing experiment
+pathname: submit-seq
+category: _gea
+---
+
 <div class="section chapter">
 
 ## GEA submission flow

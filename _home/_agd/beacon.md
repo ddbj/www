@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: GA4GH Beacon
+pathname: beacon
+category: _agd
+---
+
 <div class="section chapter">
 
 ## GA4GH Beacon

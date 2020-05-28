@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: TLS
+pathname: tls
+category: _data_categories
+---
+
 2016年から INSDC では 16S rRNA または、他の特定 locus を標的とした配列で構成され、主として operational
 taxonomic unit クラスター化に用いられる bulk sequence data を Targeted Locus Study
 (TLS) data type として受け付けています。

@@ -1,3 +1,9 @@
+---
+layout: 未定
+pathname: index
+category: _dra
+---
+
 <div id="content_part">
 
 [DDBJ Sequence Read Archive (DRA)](index.html) は Roche 454 GS

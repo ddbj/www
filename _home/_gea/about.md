@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: GEA について
+pathname: about
+category: _gea
+---
+
 ## 連絡先
 
 [メッセージフォーム](/contact.html)よりご連絡ください。

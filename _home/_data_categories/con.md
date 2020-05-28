@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: CON
+pathname: con
+category: _data_categories
+---
+
 [HTG](/ddbj/htg.html) または [WGS](/ddbj/wgs.html)
 などを基本としたゲノムプロジェクトでは、個々に登録された一連の配列データを相互に結合し、ゲノム構造を再構築するための情報が必要になります。そのようなタイリング情報に対して、１つのアクセッション番号を割り当てて特殊なエントリとして登録を受け付けています。このようなエントリをCON
 エントリと呼び、CON division に格納します。

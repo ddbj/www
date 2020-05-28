@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: HTC
+pathname: htc
+category: _data_categories
+---
+
 DDBJ/ENA/GenBank の HTC division は 主として 完全長の cDNA (mRNA) を cloning
 する手法を用いて作製された cDNA library から得られたドラフト配列データです。  
 ゲノム配列の場合 ([HTG](/ddbj/htg.html)) と同様、finished level であれば、HTC ではなく、

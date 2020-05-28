@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: 登録手順
+pathname: substep
+category: _jga
+---
+
 <div class="section chapter">
 
 ## JGA 概要

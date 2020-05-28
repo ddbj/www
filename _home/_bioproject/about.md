@@ -1,3 +1,10 @@
+---
+layout: 未定
+title: BioProject について
+pathname: index
+category: _bioproject
+---
+
 <div class="section">
 
 ## 連絡先

@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: MAGE-TAB format for raw and processed data matrix
+pathname: matrix
+category: _gea
+---
+
 ## Data matrix format
 
 このファイルフォーマットは各データポイントが experiment 中の特定 assay、そして array design file 中の特定

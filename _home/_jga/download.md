@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: 利用手順
+pathname: download
+category: _jga
+---
+
 <div class="section chapter">
 
 ## JGA データの利用申請

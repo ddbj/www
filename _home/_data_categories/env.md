@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: ENV
+pathname: env
+category: _data_categories
+---
+
 DDBJ/ENA/GenBank の ENV division は 環境サンプル (environmental sample) 由来の配列と
 その付帯情報からなるデータです。  
 よく混同されますが、<span class="red bold">環境サンプルとは「野生型」という意味ではありません</span>。  

@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: サンプル属性
+pathname: attribute
+category: _biosample
+---
+
 List all sample attributes
 
 <div id="main_index" class="biosample_attr">
