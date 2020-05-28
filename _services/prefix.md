@@ -2,7 +2,7 @@
 layout: indexed_content
 title: Prefix Letter List
 service_link: https://www.ddbj.nig.ac.jp/prefix.html
-category: submission
+category: services
 ---
 
 ## For conventional sequence data (two or one letter)

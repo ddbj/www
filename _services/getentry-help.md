@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: getentry ヘルプ
+title: getentry
 formal_name: getentry
 service_link:
   en: http://getentry.ddbj.nig.ac.jp/top-e.html

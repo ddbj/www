@@ -69,7 +69,13 @@ collections:
     output: true
   aboutus:
     output: true
-  home:
+  tentative:
+    output: true
+  datacategories:
+    output: true
+  aboutdra:
+    output: true
+  aboutdta:
     output: true
     
 

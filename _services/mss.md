@@ -2,7 +2,7 @@
 layout: indexed_content
 title: MSS - Mass Submission System
 pathname: mss
-category: _services
+category: services
 ---
 
 <div class="section book">

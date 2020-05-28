@@ -66,6 +66,9 @@ category: search_analysis
 - [DDBJ 活動に関する論文(2009-)](activities/papers.html)
 - [DDBJ が過去に提供していたサービスについての論文](past-services.html#reference)
 
+
+{::options parse_block_html="true" /}
+<div class="attention">
 #### 論文の引用 および 謝辞記載の例
 
 - [論文の引用](/faq/ja/index.html#ddbj-cited-article)

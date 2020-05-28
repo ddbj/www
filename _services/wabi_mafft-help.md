@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: WABI MAFFT ヘルプ
+title: WABI MAFFT
 pathname: wabi_mafft-help
 category: search_analysis
 ---
