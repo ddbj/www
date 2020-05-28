@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: Submit microarray experiment
+pathname: submit-array
+category: _gea
+---
+
 <div class="section chapter">
 
 ## GEA 登録の流れ

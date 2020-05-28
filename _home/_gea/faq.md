@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: よくある質問
+pathname: faq
+category: _gea
+---
+
 <div id="primary">
 
 <div id="page_main">

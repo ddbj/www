@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: アレイデザイン
+pathname: adf
+category: _gea
+---
+
 <div class="section chapter">
 
 ## Array design format (ADF) ファイル

@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: DDBJ BioSample Handbook
+pathname: submission
+category: _biosample
+---
+
 <div class="section chapter">
 
 ## 概要

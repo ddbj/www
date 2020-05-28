@@ -427,12 +427,12 @@ input, textarea, select, button {
     padding: 1rem 1.6rem;
     border-left: 6px solid #FEC091;
     margin-bottom: 1.6rem; }
-  .md-content .example-of-use dt {
+  .md-content .accordion-menu dt {
     cursor: pointer; }
-    .md-content .example-of-use dt a {
+    .md-content .accordion-menu dt a {
       text-decoration: none;
       position: relative; }
-    .md-content .example-of-use dt::after {
+    .md-content .accordion-menu dt::after {
       content: "";
       display: block;
       top: 100%;
@@ -442,18 +442,28 @@ input, textarea, select, button {
       border-top: 2px solid #FF7300;
       border-right: 2px solid #FF7300;
       transform: translateX(900%) translateY(-150%) rotate(135deg); }
-  .md-content .example-of-use dd {
+  .md-content .accordion-menu dd {
     display: none;
     margin: 0; }
   .md-content .close-btn {
     text-align: right;
     display: block; }
-  .md-content .ddbj_description {
+  .md-content .float-left {
     float: left;
     width: 50%; }
-  .md-content .ddbj_chart {
+  .md-content .float-right {
     float: right;
     width: 50%; }
+    .md-content .float-right img {
+      width: 100%; }
+  .md-content .float-release {
+    clear: both; }
+  .md-content .text-align-end {
+    text-align: end; }
+  .md-content .feeds img {
+    height: 2rem;
+    vertical-align: text-bottom;
+    margin-right: .2rem; }
 
 .multi-column-view {
   border-top: 1px solid #1C1B19; }
@@ -829,7 +839,7 @@ input, textarea, select, button {
         padding: 0.8rem 2rem; } }
 
 #MainContentView > .md-content {
-  padding: 2.5rem 4rem 2.5rem 2.5rem; }
+  padding: 2.5rem 4.2rem 2.5rem 2.5rem; }
   #MainContentView > .md-content > *:first-child {
     margin-top: 0; }
 
@@ -843,7 +853,7 @@ input, textarea, select, button {
     #NavigationAndMainView > .inner.-stretched {
       max-width: 100%; }
     #NavigationAndMainView > .inner > .subview {
-      width: calc( (100vw - 128rem) * 0.5 + 23rem);
+      width: calc( (100vw - 128rem) + 23rem);
       min-width: 23rem;
       border-right: 1px solid #282725; }
       #NavigationAndMainView > .inner > .subview > * {
@@ -852,11 +862,11 @@ input, textarea, select, button {
         position: sticky;
         top: 0; }
     #NavigationAndMainView > .inner > .mainview {
-      width: calc( (100vw - 128rem) * 0.5 + (128rem - 23rem)); }
+      width: calc( (100vw - 128rem) + (128rem - 23rem)); }
       #NavigationAndMainView > .inner > .mainview.-beige {
         background-color: #F5F4F2; }
       #NavigationAndMainView > .inner > .mainview > * {
-        max-width: calc(128rem - 23rem); }
+        max-width: calc(128rem - 23rem - 4.2rem); }
 
 #PageHeader {
   border-bottom: 1px solid #000;

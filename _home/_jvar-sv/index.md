@@ -1,3 +1,10 @@
+---
+layout: 未定
+title: Home
+pathname: index
+category: _jvar-sv
+---
+
 <div id="primary">
 
 <div id="page_main">

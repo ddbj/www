@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: GSS
+pathname: gss
+category: _data_categories
+---
+
 DDBJ/ENA/GenBank の GSS division は [EST](/ddbj/est.html) division
 に似ていますが、その配列の大半が cDNA (RNA transcript)
 ではなく、ゲノムに由来するという点で異なります。  

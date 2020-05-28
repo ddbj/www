@@ -1,3 +1,9 @@
+---
+layout: 未定
+pathname: index
+category: _bioproject
+---
+
 <div id="content_part">
 
 [BioProject](index.html) は研究プロジェクトとプロジェクトに由来するデータをまとめるためのデータベースです。

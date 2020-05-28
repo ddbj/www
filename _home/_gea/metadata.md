@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: Metadata
+pathname: metadata
+category: _gea
+---
+
 <div class="section chapter">
 
 ## MAGE-TAB

@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: BioSample について
+pathname: about
+category: _biosample
+---
+
 <div class="section">
 
 ## 連絡先

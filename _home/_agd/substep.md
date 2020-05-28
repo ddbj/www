@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: 登録手順
+pathname: substep
+category: _agd
+---
+
 <div class="section chapter">
 
 ## AGD 概要

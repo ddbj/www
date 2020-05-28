@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: Validation rules
+pathname: validation
+category: _biosample
+---
+
 BioSample 登録システムでチェックしているルール（エラーとワーニング）
 
 [BioSample validation

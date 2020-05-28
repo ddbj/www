@@ -1,3 +1,9 @@
+---
+layout: 未定
+pathname: index
+category: _dta
+---
+
 <div id="primary">
 
 <div id="page_main">

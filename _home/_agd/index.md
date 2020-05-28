@@ -1,3 +1,9 @@
+---
+layout: indexed_content
+pathname: index
+category: _agd
+---
+
 <div id="primary">
 
 <div id="page_main">

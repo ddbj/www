@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: TSA
+pathname: tsa
+category: _data_categories
+---
+
 2008年から INSDC では、アセンブルされた cDNA 配列データを、Transcriptome Shotgun Assembly
 (TSA) division に受け付けています。
 

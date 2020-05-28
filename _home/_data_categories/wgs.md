@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: WGS
+pathname: wgs
+category: _data_categories
+---
+
 様々な生物においてホールゲノムショットガン配列決定法（whole genome shotgun:
 ゲノム全体を物理的に断片化し、シークエンサで各断片の塩基配列を決定した後、コンピューター・プログラムを用いて整理、アセンブルして完成させる手法）を用いて全ゲノム配列を決定するゲノムプロジェクトが進められています。
 

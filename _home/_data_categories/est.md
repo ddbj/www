@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: EST
+pathname: est
+category: _data_categories
+---
+
 DDBJ/ENA/GenBank の EST division "Expressed Sequence Tags" は様々な生物に由来する
 "single-pass" cDNA 配列 (つまり mRNA, RNA 転写産物) と その付帯情報からなる配列データです。
 

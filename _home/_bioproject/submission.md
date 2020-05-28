@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: DDBJ BioProject Handbook
+pathname: submission
+category: _bioproject
+---
+
 <div class="section chapter">
 
 ## 概要

@@ -1,3 +1,10 @@
+---
+layout: indexed_content
+title: TPA
+pathname: tpa
+category: _data_categories
+---
+
 TPA (Third Party Data) は、DDBJ/ENA/GenBank、[Trace
 Archive](//www.ncbi.nlm.nih.gov/Traces/trace.cgi)、[SRA](//www.ncbi.nlm.nih.gov/sra)
 で構成される国際塩基配列データベース (INSDC) に既に登録されているエントリ
