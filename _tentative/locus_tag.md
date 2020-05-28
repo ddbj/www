@@ -3,6 +3,7 @@ layout: indexed_content
 title: /locus_tag qualifier の記載法
 pathname: locus_tag
 category: tentative
+pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/locus_tag.pdf
 ---
 
 ## 背景
@@ -27,7 +28,7 @@ DDBJ においては、ゲノム配列データ登録用に [Mass Submission Sys
 
 /locus\_tag はゲノム内の gene に体系的に記載してください。一般的には、ゲノム上での出現順序になることが期待されます。登録者がゲノム配列とその annotation を更新した場合、新規の gene は、[用例 1] その次に続く使用可能な locus\_tag、または、[用例2] 登録者は最初の locus\_tag 割り当ての際に予め gap を残しておくことも可能なので 新規annotationの際にこの gap を埋めるような値を記載すること、の何れかが可能です。
 
-<span class="bold">用例 1:</span> /locus\_tag 削除と新規追加
+**用例 1:** /locus\_tag 削除と新規追加
 
 ```
        更新前の          更新後の
@@ -37,7 +38,7 @@ DDBJ においては、ゲノム配列データ登録用に [Mass Submission Sys
         ABC_0023          ABC_0023
 ```
 
-<span class="bold">用例 2:</span> /locus\_tag に予め gap を残しておいた場合の挿入
+**用例 2:** /locus\_tag に予め gap を残しておいた場合の挿入
 
 ```
        更新前の          更新後の
@@ -47,7 +48,8 @@ DDBJ においては、ゲノム配列データ登録用に [Mass Submission Sys
         ABC_0030          ABC_0030
 ```
 
-<span class="bold">禁則:</span> 小数(バージョン類似表記) は行わないでください
+{::options parse_block_html="true" /}
+<span class="red">**禁則:** 小数(バージョン類似表記) は行わないでください</span>
 
 ```
        更新前の          更新後の

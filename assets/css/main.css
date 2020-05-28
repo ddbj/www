@@ -839,7 +839,7 @@ input, textarea, select, button {
         padding: 0.8rem 2rem; } }
 
 #MainContentView > .md-content {
-  padding: 2.5rem 4rem 2.5rem 2.5rem; }
+  padding: 2.5rem 4.2rem 2.5rem 2.5rem; }
   #MainContentView > .md-content > *:first-child {
     margin-top: 0; }
 
@@ -853,7 +853,7 @@ input, textarea, select, button {
     #NavigationAndMainView > .inner.-stretched {
       max-width: 100%; }
     #NavigationAndMainView > .inner > .subview {
-      width: calc( (100vw - 128rem) * 0.5 + 23rem);
+      width: calc( (100vw - 128rem) + 23rem);
       min-width: 23rem;
       border-right: 1px solid #282725; }
       #NavigationAndMainView > .inner > .subview > * {
@@ -862,11 +862,11 @@ input, textarea, select, button {
         position: sticky;
         top: 0; }
     #NavigationAndMainView > .inner > .mainview {
-      width: calc( (100vw - 128rem) * 0.5 + (128rem - 23rem)); }
+      width: calc( (100vw - 128rem) + (128rem - 23rem)); }
       #NavigationAndMainView > .inner > .mainview.-beige {
         background-color: #F5F4F2; }
       #NavigationAndMainView > .inner > .mainview > * {
-        max-width: calc(128rem - 23rem); }
+        max-width: calc(128rem - 23rem - 4.2rem); }
 
 #PageHeader {
   border-bottom: 1px solid #000;
