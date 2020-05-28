@@ -2,7 +2,7 @@
 layout: indexed_content
 title: Transcriptome Project のデータ登録
 pathname: transcriptome
-category: _home
+category: tentative
 ---
 
 Transcriptome の各段階と登録データの種別の対応を示します。  

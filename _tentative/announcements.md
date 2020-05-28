@@ -2,7 +2,7 @@
 layout: indexed_content
 title: RSS フィード
 pathname: announcements
-category: _home
+category: tentative
 ---
 
 ## お知らせ全般

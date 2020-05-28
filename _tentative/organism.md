@@ -2,7 +2,7 @@
 layout: indexed_content
 title: Organism qualifier に記載する生物名
 pathname: organism
-category: _home
+category: tentative
 ---
 
 <div class="section book">

@@ -2,7 +2,7 @@
 layout: indexed_content
 title: ヒトデータに関するデータベース事業について研究対象者等に公開すべき事項
 pathname: reaserch-participant-notification
-category: _home
+category: tentative
 ---
 
 ## ヒトデータに関するデータベース事業について研究対象者等に公開すべき事項

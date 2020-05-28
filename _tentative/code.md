@@ -2,7 +2,7 @@
 layout: indexed_content
 title: 配列の記載に用いる略号
 pathname: code
-category: _home
+category: tentative
 ---
 
 <div class="section book">

@@ -2,7 +2,7 @@
 layout: indexed_content
 title: タンパク質コード配列; CDS feature について
 pathname: ddbj:cds
-category: _home
+category: tentative
 ---
 
 # タンパク質コード配列; CDS feature について

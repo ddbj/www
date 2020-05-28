@@ -77,7 +77,23 @@ collections:
     output: true
   aboutdta:
     output: true
-    
+  aboutgea:
+    output: true
+  aboutbioproject:
+    output: true
+  aboutbiosample:
+    output: true
+  jvar-snp:
+    output: true
+  jvar-sv:
+    output: true
+  aboutjga:
+    output: true
+  aboutagd:
+    output: true
+  aboutsc:
+    output: true
+
 
 defaults:
   - scope:

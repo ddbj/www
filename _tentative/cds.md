@@ -2,7 +2,7 @@
 layout: indexed_content
 title: タンパク質コード配列; CDS feature について
 pathname: cds
-category: _home
+category: tentative
 ---
 
 <div class="section book">
