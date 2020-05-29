@@ -5,6 +5,8 @@ pathname: precautions
 category: tentative
 ---
 
+## 迷惑メール対策機能をご確認ください
+
 DDBJ には, メールを介して提供しているサービスが多数あります。
 
 しかしながら, DDBJ から送信するメールが, 昨今の迷惑メール対策機能により, 誤って迷惑メールと判定される可能性があります。これは,公用の E-mail address が「なりすまし<span class="red"><sup>\*</sup></span>」の対象とされることにより,迷惑メール送信者と誤認されることがあるためです。
@@ -17,6 +19,6 @@ DDBJからの連絡は下記の E-mail address から行われます。DDBJへ�
 
 従いまして設定方法の詳細等は, こちらにご質問をいただきましてもお答えすることができません。それぞれのサービスの提供元にお尋ねください。
 
-![](/images/center/ad_non-spam-j.gif)
+![]({{site.baseurl}}/assets/images/center/ad_non-spam-j.gif)
 
 <span class="red">\*</span> 迷惑メール送信の「踏み台」にされることを防ぐ対策は行っております。しかし,「送信元詐称」に対する有効な手立ては, E-mail address の保持者側には, 残念ながら,存在しません。受信側での判定などによる対策に委ねられます。
