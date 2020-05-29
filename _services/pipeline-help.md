@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: Pipeline ヘルプ
+title: Pipeline
 pathname: pipeline-help
 category: search_analysis
 ---

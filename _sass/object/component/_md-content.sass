@@ -4,7 +4,7 @@ $MARGIN_BOTTOM: 1rem
   font-size: 1.4rem
   line-height: 1.8
   .highlight
-    overflow: scroll
+    overflow: auto
 
   > p, > table, > ol, > ul, > dl, > .highlighter-rouge
     margin-bottom: $MARGIN_BOTTOM
@@ -86,19 +86,22 @@ $MARGIN_BOTTOM: 1rem
     border: 1px solid $COLOR_GRAY
     line-height: 1.2
     font-size: 1.2rem
+    thead
+      tr
+        th
+          border-bottom: 1px solid $COLOR_GRAY
     tr
       th, td
         padding: .6rem .6rem .6rem .6rem
       th
         text-align: left
         font-weight: bold
-        // border-bottom: 1px solid $COLOR_GRAY
         white-space: nowrap
-      td
-        // border-bottom: 1px solid $COLOR_SEPARATOR
+      td, th
+        border-bottom: 1px solid $COLOR_SEPARATOR
       &:last-child
         border-bottom: none
-        > td
+        > td, th
           border-bottom: 1px solid $COLOR_GRAY
     + table
       margin-top: -$MARGIN_BOTTOM - 0.1rem

@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: ARSA ヘルプ
+title: ARSA 
 formal_name: All-round Retrieval of Sequence and Annotation
 service_link:
   en: http://ddbj.nig.ac.jp/arsa/

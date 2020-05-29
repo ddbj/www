@@ -2,7 +2,7 @@
 layout: indexed_content
 title: Web版塩基配列登録システム (NSSS)
 pathname: websub
-category: _services
+category: services
 ---
 
 <div class="attention no_color">

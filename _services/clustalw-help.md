@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: ClustalW ヘルプ
+title: ClustalW 
 service_link:
   en: http://clustalw.ddbj.nig.ac.jp/index.php?lang=ja
   ja: http://clustalw.ddbj.nig.ac.jp/index.php?lang=en

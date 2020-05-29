@@ -2,7 +2,7 @@
 layout: indexed_content
 title: 塩基配列の登録
 pathname: submission
-category: _services
+category: services
 ---
 
 <div class="section book">

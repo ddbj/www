@@ -315,7 +315,7 @@ input, textarea, select, button {
   list-style: none; }
   .list-view > .list > .item {
     padding: 1rem 0;
-    border-bottom: solid 1px rgba(0, 0, 0, 0.1); }
+    border-bottom: solid 1px rgba(0, 0, 0, 0.2); }
     .list-view > .list > .item > .title {
       margin-bottom: .2em; }
     .list-view > .list > .item > .detail {
@@ -330,7 +330,7 @@ input, textarea, select, button {
   font-size: 1.4rem;
   line-height: 1.8; }
   .md-content .highlight {
-    overflow: scroll; }
+    overflow: auto; }
   .md-content > p, .md-content > table, .md-content > ol, .md-content > ul, .md-content > dl, .md-content > .highlighter-rouge {
     margin-bottom: 1rem; }
   .md-content .red {
@@ -402,15 +402,19 @@ input, textarea, select, button {
     border: 1px solid #736357;
     line-height: 1.2;
     font-size: 1.2rem; }
+    .md-content table thead tr th {
+      border-bottom: 1px solid #736357; }
     .md-content table tr th, .md-content table tr td {
       padding: .6rem .6rem .6rem .6rem; }
     .md-content table tr th {
       text-align: left;
       font-weight: bold;
       white-space: nowrap; }
+    .md-content table tr td, .md-content table tr th {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
     .md-content table tr:last-child {
       border-bottom: none; }
-      .md-content table tr:last-child > td {
+      .md-content table tr:last-child > td, .md-content table tr:last-child th {
         border-bottom: 1px solid #736357; }
     .md-content table + table {
       margin-top: -1.1rem; }
@@ -1052,7 +1056,7 @@ input, textarea, select, button {
       #TopNews > .container > .list > .item > .news > a {
         padding: 1rem 1.6rem;
         display: block;
-        border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+        border-bottom: solid 1px rgba(0, 0, 0, 0.2);
         text-decoration: none; }
         #TopNews > .container > .list > .item > .news > a > .metadata {
           line-height: 1.2;

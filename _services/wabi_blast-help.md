@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: WABI BLAST ヘルプ
+title: WABI BLAST
 pathname: wabi_blast-help
 category: search_analysis
 ---
