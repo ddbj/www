@@ -3,9 +3,10 @@ layout: indexed_content
 title: Metadata
 pathname: metadata
 category: aboutgea
+pdf: https://www.ddbj.nig.ac.jp/pdf/gea/metadata.pdf
 ---
 
-<div class="section chapter">
+
 
 ## MAGE-TAB
 
@@ -16,30 +17,28 @@ MicroArray Gene Expression Tabular
 といったデータベース間でデータを交換する用途にも使えるように設計されています。[MAGE-TAB
 の仕様書](http://fged.org/projects/mage-tab/)
 
-![IDF，SDRF，ADF
-と生データファイル，解析処理されたデータファイル間の関係](/images/magetab/magetab_over.jpg
+![IDF，SDRF，ADFと生データファイル，解析処理されたデータファイル間の関係]({{site.baseurl}}/assets/images/magetab/magetab_over.jpg
 "IDF，SDRF，ADF と生データファイル，解析処理されたデータファイル間の関係")
 
-</div>
 
-<div class="section chapter">
+
+
 
 ## IDF
 
 IDF (Investigation Description Format)
 ファイルは実験デザイン、プロトコール、文献情報や登録者情報といった実験全体を記述するファイルです。
 
-<div class="section section">
+
 
 ### IDF 例
 
 [IDF
 の例](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=0)
 
-<div class="idf_format">
 
-|                                                       |                                                                                 |     |
-| ----------------------------------------------------- | ------------------------------------------------------------------------------- | --- |
+
+
 | [Comment\[GEAAccession\]](#Comment_idf)               | E-GEAD-369                                                                      |     |
 | MAGE-TAB Version                                      | 1.1                                                                             |     |
 | [Investigation Title](#Investigation_Title)           | Transcriptional profiling of Arabidopsis leaves exposed to elevated temperature |     |
@@ -64,11 +63,11 @@ IDF (Investigation Description Format)
 | [Comment\[Public Release Date\]](#Comment_idf)        | 2018-06-22                                                                      |     |
 | [Comment\[Last Update Date\]](#Comment_idf)           | 2018-06-22                                                                      |     |
 
-</div>
 
-</div>
 
-<div class="section section">
+
+
+
 
 ### IDF タグ
 
@@ -77,18 +76,18 @@ Experiment のフリーテキストでの説明を記載します。一つ以上
 experimental factor は一つの IDF
 ファイルで複数定義することができます（値はタブで区切ります）。一つの値しか持てないフィールドは以下に示してあります。
 
-<div class="item_container">
 
-<div class="news_post_container archive glossary gea">
 
-<div class="terms">
 
-  - [Investigation Title](#Investigation_Title)  
+
+
+
+  - [Investigation Title]<a name="Investigation_Title"></a>
     研究全体に付けるタイトル。このタグは１つの値しか持てません。
 
 <!-- end list -->
 
-  - [Experimental Design](#Experimental_Design)  
+  - [Experimental Design]<a name="Experimental_Design"></a>  
     実験のデザイン。[controlled
     term](https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=1804523015)
     から該当するものを選びます。
@@ -108,37 +107,37 @@ experimental factor は一つの IDF
 
 <!-- end list -->
 
-  - [Person Last Name](#Person_Last_Name)  
+  - [Person Last Name]<a name="Person_Last_Name"></a>
     登録者のラストネーム (公開されます)。
 
 <!-- end list -->
 
-  - [Person First Name](#Person_First_Name)  
+  - [Person First Name]<a name="Person_First_Name"></a>
     登録者のファーストネーム (公開されます)。
 
 <!-- end list -->
 
-  - [登録者のミドルネーム (公開されます)。](#Person_Mid_Initials)
+  - [登録者のミドルネーム (公開されます)。]<a name="Person_Mid_Initials"></a>
 
 <!-- end list -->
 
-  - [Person Affiliation](#Person_Affiliation)  
+  - [Person Affiliation]<a name="Person_Affiliation"></a>
     登録者の所属する組織 (公開されます)。
 
 <!-- end list -->
 
-  - [Person Roles](#Person_Roles)  
+  - [Person Roles]<a name="Person_Roles"></a>
     Person の役割。GEA では "submitter" のみ使用可能です。
 
 <!-- end list -->
 
-  - [Public Release Date](#Public_Release_Date)  
+  - [Public Release Date]<a name="Public_Release_Date"></a>
     データの初回公開日。日付は "YYYY-MM-DD" 形式で記入します (例:
     2011-10-10)。このフィールドは１つの値しか持てません。
 
 <!-- end list -->
 
-  - [PubMed ID](#PubMed_ID)  
+  - [PubMed ID]<a name="PubMed_ID"></a>
     登録データを引用している文献の PubMed ID。
 
 <!-- end list -->
@@ -165,7 +164,7 @@ experimental factor は一つの IDF
     プロトコールの種類。事前に定義されている type は以下になります。Microarray と Sequencing
     experiment で[必須 protocol
     セット](https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=961166619)が異なります。
-    
+
       - array scanning and feature extraction protocol
       - conversion protocol
       - dissection protocol
@@ -192,9 +191,9 @@ experimental factor は一つの IDF
 
 <!-- end list -->
 
-  - [Comment\[\<user-defined tag\>\]](#Comment_idf)  
+  - [Comment\[\<user-defined tag\>\]](#Comment_idf)<a name="Comment_idf"></a>
     ユーザもしくはアーカイブが独自に定義するフィールド。GEA は以下の Comment タグを使っています。
-    
+
       - Comment\[GEAAccession\]
       - Comment\[AEExperimentType\]
       - Comment\[Number of channel\]
@@ -204,17 +203,17 @@ experimental factor は一つの IDF
       - Comment\[Last Update Date\]
       - Comment\[AdditionalFile:TXT\]
 
-</div>
 
-</div>
 
-</div>
 
-</div>
 
-</div>
 
-<div class="section chapter">
+
+
+
+
+
+
 
 ## SDRF
 
@@ -225,40 +224,40 @@ SDRF (Sample and Data Relationship Format)
 のマイクロアレイ実験ではSDRF１行が１ハイブリダイゼーションに対応します。Two-channel
 マイクロアレイでは１行は１チャンネルに対応します。シークエンシング実験では１行は基本的に１生データファイル（Run、ペアードシークエンスを含む）に対応します。
 
-![SDRF の全体構造](/images/magetab/sdrf.jpg "SDRF の全体構造")
+![SDRF の全体構造]({{site.baseurl}}/assets/images/magetab/sdrf.jpg "SDRF の全体構造")
 
-<div class="section section">
+
 
 ### SDRF セクション
 
-<div class="item_container">
 
-<div class="news_post_container archive glossary gea sdrf-section">
 
-<div class="terms">
+
+
+
 
   - [Protocols](#Protocols_section)  
     多くの場合実験における「処理（Treatment）」は IDF で定義された [Protocol
     Name](#Protocol_Name) を参照する [Protocol REF](#Protocol_REF) カラムで表されます。
-    
+
     アクセッション番号が発行される前の段階では IDF で定義されたプロトコールには一時的な ID (例
     ESUB000001\_Protocol\_1) がアサインされ、SDRF からはこの ID
     で参照されます。アクセッション番号発行後、これらのプロトコールはアクセッション番号
     (P-GEAD-n) で参照されます。
-    
-    |                                 |                                  |                         |
+
+
     | ------------------------------- | -------------------------------- | ----------------------- |
     | [Protocol Name](#Protocol_Name) | ESUB000500\_Protocol\_1          | ESUB000500\_Protocol\_2 |
     | [Protocol Type](#Protocol_Type) | nucleic acid extraction protocol | labelling protocol      |
-    
+
 
     SDRF は以下のようになります。
-    
-    |                               |                               |
+
+
     | ----------------------------- | ----------------------------- |
     | [Protocol REF](#Protocol_REF) | [Protocol REF](#Protocol_REF) |
     | OSUB000500\_Protocol\_2       | OSUB000500\_Protocol\_3       |
-    
+
 
 <!-- end list -->
 
@@ -266,15 +265,16 @@ SDRF (Sample and Data Relationship Format)
     Source は実験の出発材料です。このセクションは [Source Name](#Source_Name)
     カラムで始まり、典型的にはいくつかの
     [Characteristics](#Characteristics) カラムが続きます。
-    
+
+    <div class="attention red">
     GEA の登録システムでは対応する BioSample の sample\_name が Source Name、Extract
     Name、Labeled Extract Name と Assay Name に共通で使用されます。
-    
-    |                                            |                                                 |                                                |
-    | ------------------------------------------ | ----------------------------------------------- | ---------------------------------------------- |
+    </div>
+
+
     | [Source Name](#Source_Name)                | [Characteristics\[organism\]](#Characteristics) | [Characteristics\[ecotype\]](#Characteristics) |
     | Arabidopsis control for heat stress\_rep 1 | Arabidopsis thaliana                            | Col-0                                          |
-    
+
 
     追加で Source Name を注釈するカラム: [Provider](#Provider) と
     [Comment](#Comment_sdrf).
@@ -283,12 +283,11 @@ SDRF (Sample and Data Relationship Format)
 
   - [Extracts](#Extracts_section)  
     Extract は実験で抽出された核酸のことです。
-    
-    |                                            |                               |                                            |                                 |
-    | ------------------------------------------ | ----------------------------- | ------------------------------------------ | ------------------------------- |
+
+
     | [Source Name](#Source_Name)                | [Protocol REF](#Protocol_REF) | [Extract Name](#Extract_Name)              | [Material Type](#Material_Type) |
     | Arabidopsis control for heat stress\_rep 1 | OSUB000500\_Protocol\_2       | Arabidopsis control for heat stress\_rep 1 | total RNA                       |
-    
+
 
     Extracts を注釈するカラム: [Characteristics\[\]](#Characteristics)、[Material
     Type](#Material_Type) と [Comment](#Comment_sdrf)。
@@ -300,12 +299,11 @@ SDRF (Sample and Data Relationship Format)
     アレイにハイブリダイズする前にラベルされた核酸のことです。マイクロアレイ実験ではどのサンプルにどのラベル（スキャナーのチャンネル）が対応するか記述する
     [Label](#Label) カラムが [Labeled Extract Name](#Labeled_Extract_Name)
     カラムに付加されている必要があります。
-    
-    |                                            |                                 |                               |                                               |                 |
-    | ------------------------------------------ | ------------------------------- | ----------------------------- | --------------------------------------------- | --------------- |
+
+
     | [Extract Name](#Extract_Name)              | [Material Type](#Material_Type) | [Protocol REF](#Protocol_REF) | [Labeled Extract Name](#Labeled_Extract_Name) | [Label](#Label) |
     | Arabidopsis control for heat stress\_rep 1 | total RNA                       | OSUB000500\_Protocol\_3       | Arabidopsis control for heat stress\_rep 1    | biotin          |
-    
+
 
     Labeled Extract を注釈するカラム:
     [Characteristics\[\]](#Characteristics)、[Material
@@ -318,12 +316,11 @@ SDRF (Sample and Data Relationship Format)
     において「材料（material）」と「データ（data）」セクションをつなぐ要となるステップです。マイクロアレイ実験ではアレイデザインを示す
     [Array Design REF](#Array_Design_REF) カラムが [Assay Name](#Assay_Name)
     に付加されている必要があります。
-    
-    |                                               |                 |                                            |                                     |                                       |
-    | --------------------------------------------- | --------------- | ------------------------------------------ | ----------------------------------- | ------------------------------------- |
+
+
     | [Labeled Extract Name](#Labeled_Extract_Name) | [Label](#Label) | [Assay Name](#Assay_Name)                  | [Technology Type](#Technology_Type) | [Array Design REF](#Array_Design_REF) |
     | Arabidopsis control for heat stress\_rep 1    | biotin          | Arabidopsis control for heat stress\_rep 1 | array assay                         | A-AFFY-2                              |
-    
+
 
     Assay Name カラムを注釈する [Comment](#Comment_sdrf) カラムを含めることができます。Assay
     Name カラムの値は [Data Matrix](/gea/matrix.html)
@@ -334,12 +331,11 @@ SDRF (Sample and Data Relationship Format)
   - [Raw Data Files](#Raw_Data_Files_section)  
     生データファイルは [Assay Name](#Assay_Name) カラムに続く [Array Data
     File](#Array_Data_File) カラムにリストする必要があります。
-    
-    |                                            |                                     |                                       |                                     |
-    | ------------------------------------------ | ----------------------------------- | ------------------------------------- | ----------------------------------- |
+
+
     | [Assay Name](#Assay_Name)                  | [Technology Type](#Technology_Type) | [Array Design REF](#Array_Design_REF) | [Array Data File](#Array_Data_File) |
     | Arabidopsis control for heat stress\_rep 1 | array assay                         | A-AFFY-2                              | Arabidopsis\_control\_rep\_1.CEL    |
-    
+
 
     生データファイルに関する情報を補足するのに [Comment](#Comment_sdrf) カラムを使うことができます。
 
@@ -352,12 +348,11 @@ SDRF (Sample and Data Relationship Format)
     複数アッセイからのデータが含まれている場合は解析済みデータファイルを [Data Matrix
     format](/gea/matrix.html) に変換しこのカラムではなく [Derived Array Data Matrix
     File](#Derived_Array_Data_Matrix_File) カラムにファイル名を記載します。
-    
-    |                                            |                                     |                                       |                                     |                                                     |
-    | ------------------------------------------ | ----------------------------------- | ------------------------------------- | ----------------------------------- | --------------------------------------------------- |
+
+
     | [Assay Name](#Assay_Name)                  | [Technology Type](#Technology_Type) | [Array Design REF](#Array_Design_REF) | [Array Data File](#Array_Data_File) | [Derived Array Data File](#Derived_Array_Data_File) |
     | Arabidopsis control for heat stress\_rep 1 | array assay                         | A-AFFY-2                              | Arabidopsis\_control\_rep\_1.CEL    | Arabidopsis\_control\_rep\_1.processed.txt          |
-    
+
 
 <!-- end list -->
 
@@ -365,51 +360,50 @@ SDRF (Sample and Data Relationship Format)
     Factor value
     は実験で解析対象になっている変数のことです。例えば異なる温度（熱ストレス）が培養細胞に与える影響を調べている場合、単位を示す
     "Unit" カラムが付いた "temparature" が Factor value になります。
-    
-    |                                           |                                                             |                                           |                                              |                                   |
-    | ----------------------------------------- | ----------------------------------------------------------- | ----------------------------------------- | -------------------------------------------- | --------------------------------- |
+
+
     | [Source Name](#Source_Name)               | [Comment\[description\]](#Comment_sdrf)                     | [Assay Name](#Assay_Name)                 | [Factor Value\[temparature\]](#Factor_Value) | [Unit\[temperature unit\]](#Unit) |
     | Arabidopsis control for heat stress rep 1 | Arabidopsis control for heat stress, biological replicate 1 | Arabidopsis control for heat stress rep 1 | 22                                           | degree\_C                         |
     | Arabidopsis heat stress rep 1             | Arabidopsis heat stress, biological replicate 1             | Arabidopsis heat stress rep 1             | 37                                           | degree\_C                         |
-    
+
 
     Factor value は通常 SDRF の他のカラムと重複します。"Factor Value" カラムは
     [Characteristics\[\]](#Characteristics) カラムと重複することが多いです。
-    
+
     Factor Value カラムは SDRF の最後（最も右）に配置する必要があります。
-    
+
     GEA は IDF で変数を "Experimental Factor Name" と Type（通常 Name
     と同じ）として定義します。
-    
-    |                                                       |             |
+
+
     | ----------------------------------------------------- | ----------- |
     | [Experimental Factor Name](#Experimental_Factor_Name) | temperature |
     | [Experimental Factor Type](#Experimental_Factor_Type) | temperature |
-    
 
-</div>
 
-</div>
 
-</div>
 
-</div>
 
-<div class="section section">
+
+
+
+
+
+
 
 ### 有効な SDRF カラムヘッダー
 
-<div class="item_container">
 
-<div class="news_post_container archive glossary gea sdrf-section">
 
-<div class="terms">
+
+
+
 
   - [Source Name](#Source_Name)  
     MAGE-TAB で identifier として使われます。このカラムには [Source](#Sources_section)
     material に対してユーザが定義する値 (デフォルトでは対応する BioSample の sample\_name が使われます)
     を記入します。以下のカラムが "Source Name" を注釈するのに使えます。
-    
+
       - [Characteristics\[\]](#Characteristics)
       - [Provider](#Provider)
       - [Comment\[\]](#Comment_sdrf)
@@ -420,7 +414,7 @@ SDRF (Sample and Data Relationship Format)
     MAGE-TAB で identifier として使われます。このカラムには [Sample](#Sources_section)
     material に対してユーザが定義する値 (デフォルトでは対応する BioSample の sample\_name が使われます)
     を記入します。以下のカラムが "Sample Name" を注釈するのに使えます。
-    
+
       - [Characteristics\[\]](#Characteristics)
       - [Comment\[\]](#Comment_sdrf)
 
@@ -430,7 +424,7 @@ SDRF (Sample and Data Relationship Format)
     MAGE-TAB で identifier として使われます。このカラムには [Extract](#Extracts_section)
     material に対してユーザが定義する値 (デフォルトでは対応する BioSample の sample\_name が使われます)
     を記入します。以下のカラムが "Extract Name" を注釈するのに使えます。
-    
+
       - [Material Type](#Material_Type)
       - [Comment\[\]](#Comment_sdrf)
 
@@ -441,7 +435,7 @@ SDRF (Sample and Data Relationship Format)
     Extract](#Labeled_Extracts_section) material に対してユーザが定義する値
     (デフォルトでは対応する BioSample の sample\_name が使われます)
     を記入します。以下のカラムが "Labeled Extract Name" を注釈するのに使えます。
-    
+
       - [Label](#Label) (required for array submissions)
       - [Comment\[\]](#Comment_sdrf)
 
@@ -451,13 +445,13 @@ SDRF (Sample and Data Relationship Format)
     MAGE-TAB で identifier として使われます。このカラムには [Assay](#Assays_section)
     に対してユーザが定義する値 (デフォルトでは対応する BioSample の sample\_name
     が使われます) を記入します。以下のカラムが "Assay Name" を注釈するのに使えます。
-    
+
       - [Array Design REF](#Array_Design_REF) (required for array
         submissions)
       - [Technology Type](#Technology_Type) ("array assay" for
         microarray and "sequencing assay" for sequencing experiment)
       - [Comment\[\]](#Comment_sdrf)
-    
+
     All "Assay Name" columns must be followed by a "Technology Type"
     column.
 
@@ -467,7 +461,7 @@ SDRF (Sample and Data Relationship Format)
     MAGE-TAB で identifier として使われます。このカラムには [Scan](#Assays_section)
     イベントに対してユーザが定義する値 (デフォルトでは対応する BioSample の sample\_name
     が使われます) を記入します。以下のカラムが "Scan Name" を注釈するのに使えます。
-    
+
       - [Comment\[\]](#Comment_sdrf)
 
 <!-- end list -->
@@ -477,7 +471,7 @@ SDRF (Sample and Data Relationship Format)
     [Normalization](#Processed_Data_Files_section) イベントに対してユーザが定義する値
     (デフォルトでは対応する BioSample の sample\_name が使われます) を記入します。以下のカラムが
     "Normalization Name" を注釈するのに使えます。
-    
+
       - [Comment\[\]](#Comment_sdrf)
 
 <!-- end list -->
@@ -486,7 +480,7 @@ SDRF (Sample and Data Relationship Format)
     このカラムは[生データファイル](#Raw_Data_Files_section)を SDRF
     １行について１ファイルリストして個々のアッセイとデータファイルを結びつけるのに使います。以下のカラムが
     "Array Data File" カラムを注釈するのに使えます。
-    
+
       - [Comment\[\]](#Comment_sdrf)
 
 <!-- end list -->
@@ -495,7 +489,7 @@ SDRF (Sample and Data Relationship Format)
     このカラムはマイクロアレイとシークエンシング実験において[解析済みデータファイル](#Processed_Data_Files_section)を
     SDRF １行について１ファイルリストして個々のアッセイと解析済みデータファイルを結びつけるのに使います。以下のカラムが
     "Derived Array Data File" カラムを注釈するのに使えます。
-    
+
       - [Comment\[\]](#Comment_sdrf)
 
 <!-- end list -->
@@ -504,7 +498,7 @@ SDRF (Sample and Data Relationship Format)
     このカラムではマイクロアレイとシークエンシング実験において複数アッセイからのデータを含む生データファイルを記載します。データとアッセイは
     [Data Matrix](/gea/matrix.html) 形式ファイル中で対応付けられます。以下のカラムが "Array Data
     Matrix File" カラムを注釈するのに使えます。
-    
+
       - [Comment\[\]](#Comment_sdrf)
 
 <!-- end list -->
@@ -514,7 +508,7 @@ SDRF (Sample and Data Relationship Format)
     Scan や Normalization） は [Data Matrix](/gea/matrix.html)
     形式ファイル中で対応付けられます。以下のカラムが "Derived Array
     Data Matrix File" カラムを注釈するのに使えます。
-    
+
       - [Comment\[\]](#Comment_sdrf)
 
 <!-- end list -->
@@ -526,7 +520,7 @@ SDRF (Sample and Data Relationship Format)
     [ArrayExpress array design search
     page](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)
     で検索できます。以下のカラムが "Array Design REF" カラムを注釈するのに使えます。
-    
+
       - [Comment\[\]](#Comment_sdrf)
 
 <!-- end list -->
@@ -537,7 +531,7 @@ SDRF (Sample and Data Relationship Format)
     "ESUB000500\_Protocol\_1" のような一時的な ID で参照されます。アクセッション番号発行後、この ID は
     "P-GEAD-100" のようなプロトコールアクセッション番号で置換されます。以下のカラムが "Protocol REF"
     カラムを注釈するのに使えます。
-    
+
       - [Parameter Value\[\]](#Parameter_Value)
       - [Performer](#Performer)
       - [Date](#Date)
@@ -557,7 +551,7 @@ SDRF (Sample and Data Relationship Format)
     Taxonomy](https://www.ncbi.nlm.nih.gov/taxonomy))や計測値 (Unit\[\]
     カラムで単位を掲示) を記入することもあります。以下のカラムが
     "Characteristics\[\<category term\>\]" カラムを注釈するのに使えます。
-    
+
       - [Term Source REF](#Term_Source_REF)
       - [Unit\[\]](#Unit)
 
@@ -576,9 +570,9 @@ SDRF (Sample and Data Relationship Format)
     Name](#Extract_Name) もしくは [Labeled Extract
     Name](#Labeled_Extract_Name) を注釈するカラムとして使えます。このカラムには以下の選択肢から各
     material を記述する語句を記入します。
-    
-    <div class="sub_index">
-    
+
+
+
       - total RNA
       - polyA RNA
       - cytoplasmic RNA
@@ -586,8 +580,8 @@ SDRF (Sample and Data Relationship Format)
       - genomic DNA
       - protein
       - other
-    
-    </div>
+
+
 
 <!-- end list -->
 
@@ -596,7 +590,7 @@ SDRF (Sample and Data Relationship Format)
     Name](#Labeled_Extract_Name) を注釈するカラムとして使えます。抽出核酸を標識して Labeled
     Extract を生成したラベル化合物名を記入します。例: Cy3、Cy5、biotin、alexa\_546。 以下のカラムが
     "Label" カラムを注釈するのに使えます。
-    
+
       - [Term Source REF](#Term_Source_REF)
 
 <!-- end list -->
@@ -607,7 +601,7 @@ SDRF (Sample and Data Relationship Format)
     [Assay Name](#Assay_Name) カラムを注釈するカラムとして使います。GEA はマイクロアレイ実験に対して
     "array assay"、シークエンシング実験に対して "sequencing assay" を自動で埋め込みます。以下のカラムが
     "Technology Type" カラムを注釈するのに使えます。
-    
+
       - [Term Source REF](#Term_Source_REF)
 
 <!-- end list -->
@@ -616,10 +610,10 @@ SDRF (Sample and Data Relationship Format)
     Controlled vocabulary term もしくは計測値。このカラムでは SDRF の各行の experimental
     factor values (変数) を記載します。Factor value の変数名をヘッダー中に Experimental
     Factor Name として定義します。
-    
+
     Example SDRF:
-    
-    |                                         |
+
+
     | --------------------------------------- |
     | [Factor Value\[tissue\]](#Factor_Value) |
     | gall bladder                            |
@@ -627,26 +621,26 @@ SDRF (Sample and Data Relationship Format)
     | liver                                   |
     | intestine                               |
     | pancreas                                |
-    
+
 
     上の例では tissue という変数の値が記載されています。さらに詳細に値を定義するために任意の形式として "Factor
     Value\[\]()" を用いることができます。例 "Factor
     Value\[growthconditionEF\](Nutrients)"。
-    
+
     変数の組み合わせが解析された場合、一つ以上の Factor Value を記述します。SDRF の例:
-    
-    |                                           |                                       |                                  |
+
+
     | ----------------------------------------- | ------------------------------------- | -------------------------------- |
     | [Factor Value\[compound\]](#Factor_Value) | [Factor Value\[dose\]](#Factor_Value) | [Unit\[molar mass unit\]](#Unit) |
     | none                                      |                                       |                                  |
     | potassium cyanide                         | 25                                    | micromolar                       |
     | potassium cyanide                         | 35                                    | micromolar                       |
     | potassium cyanide                         | 50                                    | micromolar                       |
-    
+
 
 Factor name は組になる IDF で定義します（GEA は SDRF 中の Factor name を IDF にコピーします）:
 
-|                                                       |        |
+
 | ----------------------------------------------------- | ------ |
 | [Experimental Factor Name](#Experimental_Factor_Name) | tissue |
 | [Experimental Factor Type](#Experimental_Factor_Type) | tissue |
@@ -668,21 +662,20 @@ Factor name は組になる IDF で定義します（GEA は SDRF 中の Factor 
     [Protocol REF](#Protocol_REF)
     に続く注釈カラムとして使うことができます。このカラムはカラムヘッダー中に含まれるプロトコールのパラメータを記述するのに使うことができます。以下のカラムが
     "Parameter Value" カラムを注釈するのに使えます。
-    
+
       - [Unit\[\]](#Unit)
       - [Term Source REF](#Term_Source_REF)
       - [Comment\[\]](#Comment_sdrf)
-    
+
     例えば "Array Hybridization" という名のプロトコールが Protocol Parameters "hyb
     temp" と共に IDF で定義されている場合、以下のような記載をすることができます。
-    
-    |                               |                                                 |                                   |
+
     | ----------------------------- | ----------------------------------------------- | --------------------------------- |
     | [Protocol REF](#Protocol_REF) | [Parameter Value\[hyb temp\]](#Parameter_Value) | [Unit\[temperature unit\]](#Unit) |
     | Array Hybridization           | 55                                              | degree celsius                    |
-    
 
-      
+
+
 
 <!-- end list -->
 
@@ -696,9 +689,9 @@ Factor name は組になる IDF で定義します（GEA は SDRF 中の Factor 
     [Unit](http://purl.obolibrary.org/obo/UO_0000000)
     サブクラスから適切なものを記載します。以下のカラムが
     "Unit\[\<unit category\>\]" カラムを注釈するのに使えます。
-    
+
       - [Term Source REF](#Term_Source_REF)
-    
+
     このケースにおいて Term Source REF は Unit の値が由来するオントロジーを示すのに使います。
 
 <!-- end list -->
@@ -717,9 +710,9 @@ Factor name は組になる IDF で定義します（GEA は SDRF 中の Factor 
     [Characteristics\[\]](#Characteristics))、もしくは、外部エンティティを参照できるカラム (例
     [Protocol REF](#Protocol_REF)) に対しても使うことができます。このカラムは先行するカラム中の値が由来する
     IDF で定義されたオントロジーやデータベースを参照することができます。以下のカラムが "Term Source REF"
-    カラムを注釈するのに使えます。<span class="attention_text">GEA では
+    カラムを注釈するのに使えます。<span class="red">GEA では
     ArrayExpress のように登録時点で構造化してオントロジーを適用することはしていません。</span>
-    
+
       - [Term Accession Number](#Term_Accession_Number)
 
 <!-- end list -->
@@ -727,16 +720,15 @@ Factor name は組になる IDF で定義します（GEA は SDRF 中の Factor 
   - [Term Accession Number](#Term_Accession_Number)  
     [Term Source REF](#Term_Source_REF)
     カラムを注釈するカラムとして使うことができます。オントロジーやデータベース中の記入された値に対するアクセッション番号を記入します。例:
-    
-    |                             |                                                |                                     |                                                 |
-    | --------------------------- | ---------------------------------------------- | ----------------------------------- | ----------------------------------------------- |
+
+
     | [Source Name](#Source_Name) | [Characteristics\[disease\]](#Characteristics) | [Term Source REF](#Term_Source_REF) | [Term Accession Number](#Term_Accession_Number) |
     | Sample 1                    | acute lymphoblastic leukemia                   | EFO                                 | EFO\_0000220                                    |
-    
+
 
     (この例は [EFO](https://www.ebi.ac.uk/efo/) Term Source が SDRF とペアになっている
     [IDF](/gea/metadata.html#idf) で定義されていることを前提にしています)
-    <span class="attention_text">GEA では ArrayExpress
+    <span class="red">GEA では ArrayExpress
     のように登録時点で構造化してオントロジーを適用することはしていません。</span>
 
 <!-- end list -->
@@ -744,13 +736,3 @@ Factor name は組になる IDF で定義します（GEA は SDRF 中の Factor 
   - [Comment\[\<comment name\>\]](#Comment_sdrf)  
     このカラムは node と edge
     カラムを注釈するために使うことができます。このカラムは拡張性を持たすためにあり、生物学的に意味のある事柄を記載するために用いられることを意図していません。カラムヘッダー中に値の種類に対する名前を記載する必要があります。
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
