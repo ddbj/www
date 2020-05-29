@@ -41,7 +41,7 @@ lang: ja
             <nav class="links">
               <ul>
                 {% if service.help %}
-                <li><a class="arrowed-link" href="{{ service.help }}">HELP</a></li>
+                <li><a class="arrowed-link" href="{{ service.help[page.lang] }}">HELP</a></li>
                 {% endif %}
                 {% if service.wabi %}
                 <li><a class="arrowed-link" href="{{ service.wabi }}">Web API</a></li>
