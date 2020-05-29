@@ -2,7 +2,7 @@
 layout: indexed_content
 title: 特許出願に含まれる配列データの提供
 pathname: pat-data
-category: tentative
+category: other
 ---
 
 DDBJ センターでは、特許出願に含まれる配列データを検索・閲覧可能なサービスを提供しています。

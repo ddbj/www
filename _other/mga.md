@@ -2,7 +2,7 @@
 layout: indexed_content
 title: MGA
 pathname: mga
-category: datacategories
+category: other
 ---
 
 <span class="bold"><span class="red">\[重要\] MGA

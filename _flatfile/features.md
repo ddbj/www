@@ -2,7 +2,7 @@
 layout: indexed_content
 title: Feature key
 pathname: features
-category: tentative
+category: flatfile
 ---
 
 <div id="description_container">

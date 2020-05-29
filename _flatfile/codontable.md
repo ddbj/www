@@ -2,7 +2,7 @@
 layout: indexed_content
 title: The Genetic Codes
 pathname: codontable
-category: tentative
+category: flatfile
 ---
 
 ## Defiition of /transl\_table qualifier

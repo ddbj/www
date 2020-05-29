@@ -2,7 +2,7 @@
 layout: indexed_content
 title: よくある質問
 pathname: faq
-category: aboutgea
+category: faq
 ---
 
 <div id="primary">

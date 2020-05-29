@@ -93,7 +93,12 @@ collections:
     output: true
   aboutsc:
     output: true
-
+  flatfile:
+    output: true
+  other:
+    output: true
+  faq:
+    output: true
 
 defaults:
   - scope:

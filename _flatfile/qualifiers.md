@@ -2,7 +2,7 @@
 layout: indexed_content
 title: Qualifier key の定義
 pathname: qualifiers
-category: tentative
+category: flatfile
 ---
 
 <div id="description_container">

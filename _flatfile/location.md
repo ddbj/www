@@ -2,7 +2,7 @@
 layout: indexed_content
 title: Location の記述法
 pathname: location
-category: tentative
+category: flatfile
 ---
 
 国際塩基配列データベースでは、配列上の Feature の位置情報 (以下、Location) を以下のルールで記述しています。
