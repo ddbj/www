@@ -862,6 +862,7 @@ input, textarea, select, button {
       border-right: 1px solid #282725; }
       #NavigationAndMainView > .inner > .subview > * {
         margin-left: auto;
+        padding-bottom: 2rem;
         width: 23rem;
         position: sticky;
         top: 0; }
