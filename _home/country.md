@@ -3,6 +3,7 @@ layout: indexed_content
 title: Controlled vocabulary for /country qualifier
 pathname: country
 category: _home
+pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/country.pdf
 ---
 
 The original site; [Controlled vocabulary for /country qualifier](//www.insdc.org/documents/country-qualifier-vocabulary) 2020.01.08 version
@@ -20,8 +21,9 @@ Qualifier       /country=
 Definition      locality of isolation of the sequenced organism indicated in
                 terms of political names for nations, oceans or seas, followed
                 by regions and localities
-Value format    "<country_value>[:<region>][, <locality>]" where 
+Value format    "[:][, ]" where
                 country_value is any value from the controlled vocabulary at
+                {::options parse_block_html=“true” /}
                 <a href="//www.insdc.org/documents/country-qualifier-vocabulary">//www.insdc.org/documents/country-qualifier-vocabulary</a>
 Example         /country="Canada:Vancouver"
                 /country="France:Cote d'Azur, Antibes"
@@ -40,13 +42,13 @@ COUNTRY LIST based on information from: [https://unstats.un.org/unsd/methods/m49
 
 ### Initial links
 
-|  [A](\#A)  |  [B](\#B)  |  [C](\#C)  |  [D](\#D)  |  [E](\#E)  |  [F](\#F)  |  [G](\#G)  |  [H](\#H)  |  [I](\#I)  |  [J](\#J)  |  [K](\#K)  |  [L](\#L)  |  [M](\#M)  |
+|  [A](#A)  |  [B](#B)  |  [C](#C)  |  [D](#D)  |  [E](#E)  |  [F](#F)  |  [G](#G)  |  [H](#H)  |  [I](#I)  |  [J](#J)  |  [K](#K)  |  [L](#L)  |  [M](#M)  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-|  [N](\#N)  |  [O](\#O)  |  [P](\#P)  |  [Q](\#Q)  |  [R](\#R)  |  [S](\#S)  |  [T](\#T)  |  [U](\#U)  |  [V](\#V)  |  [W](\#W)  |  X  |  [Y](\#Y)  |  [Z](\#Z)  |
+|  [N](#N)  |  [O](#O)  |  [P](#P)  |  [Q](#Q)  |  [R](#R)  |  [S](#S)  |  [T](#T)  |  [U](#U)  |  [V](#V)  |  [W](#W)  |  X  |  [Y](#Y)  |  [Z](#Z)  |
 
-[Historical Country Names](\#history) 
+[Historical Country Names](#history) 
 
-## A 
+## A <a name="A"></a>
 
 - Afghanistan 
 - Albania 
@@ -67,7 +69,7 @@ COUNTRY LIST based on information from: [https://unstats.un.org/unsd/methods/m49
 - Austria 
 - Azerbaijan 
 
-## B 
+## B <a name="B"></a>
 
 - Bahamas 
 - Bahrain 
@@ -94,7 +96,7 @@ COUNTRY LIST based on information from: [https://unstats.un.org/unsd/methods/m49
 - Burkina Faso 
 - Burundi 
 
-## C 
+## C <a name="C"></a>
 
 - Cambodia 
 - Cameroon 
@@ -120,14 +122,14 @@ COUNTRY LIST based on information from: [https://unstats.un.org/unsd/methods/m49
 - Cyprus 
 - Czech Republic 
 
-## D 
+## D <a name="D"></a>
 - Democratic Republic of the Congo 
 - Denmark 
 - Djibouti 
 - Dominica 
 - Dominican Republic 
 
-## E 
+## E <a name="E"></a>
 - Ecuador 
 - Egypt 
 - El Salvador 
@@ -138,7 +140,7 @@ COUNTRY LIST based on information from: [https://unstats.un.org/unsd/methods/m49
 - Ethiopia 
 - Europa Island 
 
-## F
+## F <a name="F"></a>
 - Falkland Islands (Islas Malvinas) 
 - Faroe Islands 
 - Fiji 
@@ -148,7 +150,7 @@ COUNTRY LIST based on information from: [https://unstats.un.org/unsd/methods/m49
 - French Polynesia 
 - French Southern and Antarctic Lands 
 
-## G 
+## G <a name="G"></a>
 - Gabon 
 - Gambia 
 - Gaza Strip 
@@ -168,7 +170,7 @@ COUNTRY LIST based on information from: [https://unstats.un.org/unsd/methods/m49
 - Guinea-Bissau 
 - Guyana 
 
-## H 
+## H <a name="H"></a>
 - Haiti 
 - Heard Island and McDonald Islands 
 - Honduras 
@@ -176,7 +178,7 @@ COUNTRY LIST based on information from: [https://unstats.un.org/unsd/methods/m49
 - Howland Island 
 - Hungary 
 
-## I 
+## I <a name="I"></a>
 - Iceland 
 - India 
 - Indian Ocean 
@@ -188,8 +190,7 @@ COUNTRY LIST based on information from: [https://unstats.un.org/unsd/methods/m49
 - Israel 
 - Italy
 
-
-## J 
+## J <a name="J"></a>
 - Jamaica 
 - Jan Mayen 
 - Japan 
@@ -199,7 +200,7 @@ COUNTRY LIST based on information from: [https://unstats.un.org/unsd/methods/m49
 - Jordan 
 - Juan de Nova Island 
 
-## K 
+## K <a name="K"></a>
 - Kazakhstan 
 - Kenya 
 - Kerguelen Archipelago 
@@ -207,10 +208,9 @@ COUNTRY LIST based on information from: [https://unstats.un.org/unsd/methods/m49
 - Kiribati 
 - Kosovo 
 - Kuwait 
--
-Kyrgyzstan 
+- Kyrgyzstan 
 
-## L 
+## L <a name="L"></a>
 - Laos 
 - Latvia 
 - Lebanon 
@@ -222,7 +222,7 @@ Kyrgyzstan
 - Lithuania 
 - Luxembourg 
 
-## M 
+## M <a name="M"></a>
 - Macau 
 - Macedonia 
 - Madagascar 
@@ -249,7 +249,7 @@ Kyrgyzstan
 - Mozambique 
 - Myanmar 
 
-## N 
+## N <a name="N"></a>
 - Namibia 
 - Nauru 
 - Navassa Island 
@@ -268,10 +268,10 @@ Kyrgyzstan
 - Northern Mariana Islands 
 - Norway 
 
-## O 
+## O <a name="O"></a>
 - Oman 
 
-## P 
+## P <a name="P"></a>
 - Pacific Ocean 
 - Pakistan
 - Palau 
@@ -287,10 +287,10 @@ Kyrgyzstan
 - Portugal 
 - Puerto Rico 
 
-## Q 
+## Q <a name="Q"></a>
 - Qatar 
 
-## R 
+## R <a name="R"></a>
 - Republic of the Congo 
 - Reunion 
 - Romania 
@@ -298,7 +298,7 @@ Kyrgyzstan
 - Russia 
 - Rwanda 
 
-## S 
+## S <a name="S"></a>
 - Saint Helena 
 - Saint Kitts and Nevis 
 - Saint Lucia 
@@ -335,7 +335,7 @@ Kyrgyzstan
 - Syria
 
 
-## T 
+## T <a name="T"></a>
 - Taiwan 
 - Tajikistan 
 - Tanzania 
@@ -353,7 +353,7 @@ Kyrgyzstan
 - Turks and Caicos Islands 
 - Tuvalu 
 
-## U 
+## U <a name="U"></a>
 - USA 
 - Uganda 
 - Ukraine 
@@ -362,26 +362,26 @@ Kyrgyzstan
 - Uruguay 
 - Uzbekistan 
 
-## V 
+## V <a name="V"></a>
 - Vanuatu 
 - Venezuela 
 - Viet Nam 
 - Virgin Islands 
 
-## W 
+## W <a name="W"></a>
 - Wake Island 
 - Wallis and Futuna 
 - West Bank 
 - Western Sahara 
 
-## Y 
+## Y <a name="Y"></a>
 - Yemen 
 
-## Z 
+## Z <a name="Z"></a>
 - Zambia 
 - Zimbabwe 
 
-## Historical
+## Historical <a name="history"></a>
 Country Names 
 - Belgian Congo 
 - British Guiana 
