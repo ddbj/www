@@ -2,7 +2,7 @@
 layout: indexed_content
 title: 登録データ種別
 service_link: https://www.ddbj.nig.ac.jp/data-categories.html
-category: submission
+category: services
 ---
 
 ## DDBJ に登録可能なデータ <a name="accept"></a>

@@ -2,18 +2,11 @@
 layout: indexed_content
 title: 塩基配列の登録
 pathname: submission
-category: _services
+category: services
+pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/submission.pdf
 ---
 
-<div class="section book">
-
-　
-
-<div class="section chapter">
-
 ## 塩基配列登録の前に
-
-<div class="section section">
 
 ### 塩基配列登録の目的と意義
 
@@ -27,9 +20,7 @@ DDBJ を含む国際塩基配列データベースに登録された塩基配列
 
 参照: [FAQ\] [DDBJ に登録すればデータの優先権は確保されますか。特許申請するべきですか](/faq/ja/priorities-for-data.html)
 
-</div>
 
-<div class="section section">
 
 ### 新規登録か、更新か？
 
@@ -39,11 +30,9 @@ DDBJ を含む国際塩基配列データベースに登録された塩基配列
 更新の場合は、[更新に関する説明](/ddbj/updt.html)をご参照の上、[登録データの修正・更新申し込み](/ddbj/updt-form.html)
 から ご連絡をお願いいたします。
 
-</div>
 
-<div class="section section">
 
-### 登録に附随する権利と義務
+### 登録に附随する権利と義務<a name="right"></a>
 
 DDBJ に塩基配列を登録する際には、配列以外に、[登録者とコンタクトパーソン](#terms)、 関連文献 ([primary citation](#pcite))、由来生物名、遺伝子の機能、特性等に関する情報（以下、<span class="bold">登録情報</span>と総称します）が必要となります。
 
@@ -58,9 +47,7 @@ DDBJ から塩基配列を公開する際には、登録情報を DDBJ の定め
 
 国際塩基配列データベースは登録情報に関する研究上の主張などに関して、登録者を含めた利用者間に意見の相違がある場合、双方の主張に関して中立の立場を取ります。
 
-</div>
 
-<div class="section section">
 
 ### 論文と塩基配列の公開
 
@@ -78,28 +65,20 @@ DDBJ から塩基配列を公開する際には、登録情報を DDBJ の定め
   - [FAQ\]
     [公開を取り消したデータが現在も参照できるのはなぜですか](/faq/ja/why-retracted-data-available.html)
 
-</div>
 
-</div>
 
-<div class="section chapter">
 
 ## 塩基配列データの登録に必要な情報
 
-<div class="section section">
 
 ### 登録者の情報
 
 [コンタクトパーソン](#contact)の所属、住所、電話番号、全ての[登録者](#submitter)の氏名が必要です。公開段階での表示は[REFERENCE 1](/ddbj/flat-file.html#Reference1) のようになります。2007 年以前は、E-mail address、電話番号、FAX 番号をフラットファイルに表示していましたが、2008年以降は特に登録者が希望しない限り表示していません。
 
-  - 注意事項: 登録者は、可能な限り複数に  
-    塩基配列の修正・更新を行う権利を有するのは登録者のみです。  
-    基本的には将来的に連絡が取れなくなることなどを避けるために、実作業者と研究指導者、最低でも２人以上の連名記載を強く推奨します。  
-    特に学生などが 研究指導者の連名なしに 独りで登録することは、原則、認められません。
+注意事項: 登録者は、可能な限り複数に  
+: 塩基配列の修正・更新を行う権利を有するのは登録者のみです。<br>基本的には将来的に連絡が取れなくなることなどを避けるために、実作業者と研究指導者、最低でも２人以上の連名記載を強く推奨します。<br>特に学生などが 研究指導者の連名なしに 独りで登録することは、原則、認められません。
 
-</div>
 
-<div class="section section">
 
 ### 公開予定日
 
@@ -108,9 +87,7 @@ DDBJ から塩基配列を公開する際には、登録情報を DDBJ の定め
 即日公開ではない登録の場合は、公開予定日の設定が必要になります。  
 参照: [データ公開原則](/data-release-policy.html)
 
-</div>
 
-<div class="section section">
 
 ### 登録件数
 
@@ -120,9 +97,7 @@ DDBJ から塩基配列を公開する際には、登録情報を DDBJ の定め
 [多型関連研究における同一配列の代表データ登録](/ddbj/represent.html)
 をご覧下さい。
 
-</div>
 
-<div class="section section">
 
 ### 論文、REFERENCE
 
@@ -130,9 +105,7 @@ DDBJ から塩基配列を公開する際には、登録情報を DDBJ の定め
 
 また、特に必須ではありませんが、参考文献としての論文情報を記載しておくことも可能です。
 
-</div>
 
-<div class="section section">
 
 ### 配列に関する生物学的情報
 
@@ -140,12 +113,10 @@ DDBJ から塩基配列を公開する際には、登録情報を DDBJ の定め
 
 いわゆるアノテーション情報として、[feature](/ddbj/features.html)を、可能な限り、記載いただいています。[タンパク質コード配列](/ddbj/cds.html)、[rRNA](/ddbj/features.html#rRNA)、[tRNA](/ddbj/features.html#tRNA)、[ncRNA](/ddbj/features.html#ncRNA)などの位置 ([location](/ddbj/location.html)) をご用意ください。また、その下位に記載する[product](/ddbj/qualifiers.html#product)、[gene](/ddbj/qualifiers.html#gene)といった情報も、適宜、記載をお願いいたします。
 
-  - 注意事項: タンパク質コード配列; CDS feature には、gene と product を記載  
-    [DDBJ の遺伝子命名に関する考え方](/ddbj/cds.html#product)の記載指針を ご参照の上、ご登録ください。
+注意事項: タンパク質コード配列; CDS feature には、gene と product を記載  
+: [DDBJ の遺伝子命名に関する考え方](/ddbj/cds.html#product)の記載指針を ご参照の上、ご登録ください。
 
-</div>
 
-<div class="section section">
 
 ### 塩基配列
 
@@ -160,47 +131,38 @@ DDBJ から塩基配列を公開する際には、登録情報を DDBJ の定め
 
 ご登録の前に、ベクタースクリーニングをお願いいたします。[VecScreen](http://ddbj.nig.ac.jp/vecscreen/?lang=ja)をご利用ください。
 
-</div>
 
-</div>
 
-<div class="section chapter">
 
 ## 塩基配列登録の流れ
 
-<div class="section section">
 
 ### 1.塩基配列登録受付
 
-  - (A) 塩基配列登録システム を利用  
-    Web経由の[塩基配列登録システムに](/ddbj/websub.html)よる登録をお勧めしております。
-  - (B) Mass Submission System (MSS) を利用  
-    登録予定データが、以下のような条件に該当する場合は [Mass Submission System
+(A) 塩基配列登録システム を利用  
+: Web経由の[塩基配列登録システムに](/ddbj/websub.html)よる登録をお勧めしております。
+
+(B) Mass Submission System (MSS) を利用  
+: 登録予定データが、以下のような条件に該当する場合は [Mass Submission System
     (MSS)](/ddbj/mss.html) をご利用ください。
-      - 登録予定データが、件数が多い (1024 以上) 場合
-      - 多数の Feature を持つ場合 (概ね30以上)
-      - 長大な配列 (概ね500 kb以上) の場合
-      - 塩基配列登録システムが最適でないと思われる登録
+  - 登録予定データが、件数が多い (1024 以上) 場合
+  - 多数の Feature を持つ場合 (概ね30以上)
+  - 長大な配列 (概ね500 kb以上) の場合
+  - 塩基配列登録システムが最適でないと思われる登録
 
-</div>
 
-<div class="section section">
 
 ### 2.データの査定
 
 DDBJ のキュレータが、公開に必要な事項を、国際塩基配列データベース（DDBJ/ENA/GenBank）が定める基準と、DDBJの注釈規範に従って入力し、査定した上で公開を行なっています。この作業の過程で、データの正確性を確保するため、登録者に問い合わせ等をさせていただく場合があります。
 
-</div>
 
-<div class="section section">
 
 ### 3.アクセッション番号の発行と通知
 
 データの受け取り後、5日以内（土、日、祭日を除く）にアクセッション番号を発行し、コンタクトパーソンに E-mailでお知らせします。アクセッション番号の通知が上記の5日間を経過しても届かない場合には、[ご連絡](/contact.html#to-ddbj)ください。
 
-</div>
 
-<div class="section section">
 
 ### 4.データ公開
 
@@ -208,98 +170,94 @@ DDBJ のキュレータが、公開に必要な事項を、国際塩基配列デ
 
 登録したデータに関して訂正等がある場合は、アクセッション番号、訂正希望箇所を明記して以下のアドレス宛にお知らせ下さい。詳細は[登録データの修正・更新](/ddbj/updt.html)をご参照ください。
 
-</div>
 
-<div class="section section">
 
 ### 5.登録、公開について連絡先一覧
 
-<div class="main_table format">
+<table>
+  <tbody>
+    <tr>
+      <th>問い合わせ一般</th>
+      <td><a href="/contact.html#to-ddbj">お問い合わせフォーム</a></td>
+    </tr>
+    <tr>
+      <th>登録全般に関する問い合わせ</th>
+      <td><a href="/contact.html#to-ddbj">お問い合わせフォーム</a></td>
+    </tr>
+    <tr>
+      <th>登録済みデータ更新・公開依頼</th>
+      <td><a href="/ddbj/updt-form.html">登録データの修正・更新申し込み</a></td>
+    </tr>            
+  </tbody>
+</table>
 
-|                |                                         |
-| -------------- | --------------------------------------- |
-| 問い合わせ一般        | [お問い合わせフォーム](/contact.html#to-ddbj)     |
-| 登録全般に関する問い合わせ  | [お問い合わせフォーム](/contact.html#to-ddbj)     |
-| 登録済みデータ更新・公開依頼 | [登録データの修正・更新申し込み](/ddbj/updt-form.html) |
 
-</div>
 
-</div>
-
-</div>
-
-<div class="section chapter">
-
-## 配列データの遷移
+## 配列データの遷移<a name="data_flow"></a>
 
 下図にDDBJにおける塩基配列の新規登録から公開と更新までのデータフローを示します。
 
-![](/images/ddbj/workflow.gif "配列データの遷移")
+![]({{site.baseurl}}/assets/images/ddbj/workflow.gif "配列データの遷移")
 
-  - 0\. 論文投稿  
+0. 論文投稿  
     多く科学雑誌は論文投稿に際し、DDBJ/ENA/GenBank の何れかへ塩基配列を登録することを義務付けています。
     <span class="red">※ 論文を投稿しない場合も塩基配列の登録は可能です。</span>
-  - 1\. 配列登録  
+1. 配列登録  
     基本的には、DDBJ への登録は [塩基配列登録システム](/ddbj/websub.html)、または、[Mass
     Submission System](/ddbj/mss.html)
     を経由します。登録作業が完了しましたら、登録者にアクセッション番号をお知らせします。
-  - 2\. 非公開  
+2. 非公開  
     登録後に即時公開か、一定期間非公開か、は登録時に登録者が指定します。非公開を希望する場合は、[公開予定日](#holddate)
     の指定が必要です。
-  - 3\. 配列データ公開  
+3. 配列データ公開  
     登録時に即時公開を指定された場合は、作業完了後、すぐに公開いたします。公開予定日
     が指定された場合は、[公開原則](/data-release-policy.html)に基づき公開されます。論文出版などによるアクセッション番号の公表が確認された場合は例外なく公開します。また「アクセッション番号の公表」に基づく公開請求は、誰にでも可能です。
-  - 4\. 公開データの利用  
+4. 公開データの利用  
     DDBJ から公開されたデータは、最初に[getentry](http://getentry.ddbj.nig.ac.jp/top-j.html)で検索可能になり、[anonymous FTP](ftp://ftp.ddbj.nig.ac.jp/) から取得可能になります。GenBankとENAにも転送され、そちらからも閲覧・取得が可能になります。DDBJのサービス、相同性検索，[ARSA](http://ddbj.nig.ac.jp/arsa/?lang=ja)
     などにも展開されます。公開されたデータは、基本的には、[どなたでも閲覧・利用が可能](/insdc.html#policy)です。
-  - 5\. 公開データの被引用性  
+5. 公開データの被引用性  
     DDBJ/ENA/GenBank から公開されたデータは多くのデータベースで２次的に引用されています。
-  - 6\. 公開データへのフィードバック  
+6. 公開データへのフィードバック  
     公開されたデータに対する質問・確認などは登録者へお願いいたします。連絡先が不明な場合は転送いたしますので、[お問い合わせフォーム](/contact.html)からご連絡ください。
-  - 7\. データ更新の権限  
+7. データ更新の権限  
     登録データを[更新する権利を持っているのは登録者のみ](#right)です。更新後に即時公開か、一定期間非公開か、は登録者が指定します。ただし、既に公開されているデータの場合は、非公開にすることはできません。
 
-</div>
 
-<div class="section chapter">
 
-## 用語
+## 用語<a name="terms"></a>
 
-  - 登録者 (Submitter)  
-    登録者は、原則として、その[エントリ](#entry)の登録情報に責任を持つことが可能な人物であり、その登録情報に変更を加える(updateする）権利を有します。基本的に、登録者には、DDBJ、または、DDBJ 利用者からの登録内容に関する問い合わせには応じる義務があります。
-    原則として、登録者は、フラットファイルの [REFERENCE 1](/ddbj/flat-file.html#Reference1)
+登録者 (Submitter)<a name="submitter"></a>
+: 登録者は、原則として、その[エントリ](#entry)の登録情報に責任を持つことが可能な人物であり、その登録情報に変更を加える(updateする）権利を有します。基本的に、登録者には、DDBJ、または、DDBJ 利用者からの登録内容に関する問い合わせには応じる義務があります。
+: 原則として、登録者は、フラットファイルの [REFERENCE 1](/ddbj/flat-file.html#Reference1)
     に記載されます。
-  - コンタクトパーソン (Contact person)  
-    コンタクトパーソンとは、その[エントリ](#entry)の登録情報について把握し、国際塩基配列データベースから塩基配列が公開された後、その利用者からの問い合わせに対応する代表者としての義務を負います。
-      - コンタクトパーソンは、原則として、登録者の中の一人でなければなりません。
-      - そのエントリに関する DDBJ からの連絡も、原則として、このコンタクトパーソン宛に行われます。そのため、[DDBJ からのメールを迷惑メールとしないように設定](/precautions.html)をお願いいたします。
-      - コンタクトパーソンは、原則として、フラットファイルの [REFERENCE 1](/ddbj/flat-file.html#Reference1) に記載されます。
+
+コンタクトパーソン (Contact person)  <a name="contact"></a>
+: コンタクトパーソンとは、その[エントリ](#entry)の登録情報について把握し、国際塩基配列データベースから塩基配列が公開された後、その利用者からの問い合わせに対応する代表者としての義務を負います。
+:      
+  - コンタクトパーソンは、原則として、登録者の中の一人でなければなりません。
+  - そのエントリに関する DDBJ からの連絡も、原則として、このコンタクトパーソン宛に行われます。そのため、[DDBJ からのメールを迷惑メールとしないように設定](/precautions.html)をお願いいたします。
+  - コンタクトパーソンは、原則として、フラットファイルの [REFERENCE 1](/ddbj/flat-file.html#Reference1) に記載されます。
     利用者から登録者へ連絡が必要な場合、DDBJから[問い合わせフォーム](/contact.html)を介してコンタクトパーソンへ転送いたします。
-  - 受付日 (Accept Date)  
-    受付日 (Accept Date) とは、原則として、アクセッション番号を発行可能な元データが DDBJ に到着した日付けです。
-  - 公開予定日 (Hold Date)  
-    公開予定日とは DDBJ で公開作業を開始する日付けです。登録者が必要に応じて設定します。  
-    参照: [データ公開原則](/data-release-policy.html)
-  - 業務日  
-    DDBJ
-    センターは土曜日と日曜日に加えて、[国民の祝日](//eco.mtk.nao.ac.jp/koyomi/faq/holiday.html)、年末年始(12月29日から翌年の1月３日)、[情報・システム研究機構](http://www.rois.ac.jp//index.html)の定める夏季休業日(８月中の２日間) には業務を休止します。[DDBJ Calendar](/calendar.html) もご参照ください。
-  - フラットファイル (flat file)  
-    フラットファイルとは、DDBJ のデータ公開形式です。  
-    参照: [DDBJ のデータ公開形式 (flat file) の説明](/ddbj/flat-file.html)
-  - エントリ (Entry)  
-    エントリとは、塩基配列データベースのデータの単位です。  
-    参照: [DDBJ のデータ公開形式 (flat file) の説明](/ddbj/flat-file.html)
-  -   
-    プライマリーエントリ (Primary entry)  
-    プライマリーエントリとは、DDBJ/ENA/GenBank
-    国際塩基配列データベースから、取得可能なデータであると同時に、登録者が実験的に配列決定し、アノテーション付加を行ったデータです。  
-    参照: [TPA (Third Party Data)](/ddbj/tpa.html)
-  - Primary citation  
-    Primary citation とは、当該配列に関する主論文を指します。  
-    原則として、[フラットファイル](/ddbj/flat-file.html)の [REFERENCE 2](/ddbj/flat-file.html#Reference2) に記載されます。  
-    REFERENCE 2 には、その配列の公表状況を提示する意味合いがあります。 Primary citation が複数ある場合、または、これに相当しない関連文献がある場合は REFERENCE 3
-    以降に、必要に応じて記載することができます。
 
-</div>
+受付日 (Accept Date)  <a name="acceptdate"></a>
+: 受付日 (Accept Date) とは、原則として、アクセッション番号を発行可能な元データが DDBJ に到着した日付けです。
 
-</div>
+公開予定日 (Hold Date) <a name="holddate"></a>
+: 公開予定日とは DDBJ で公開作業を開始する日付けです。登録者が必要に応じて設定します。<br>参照: [データ公開原則](/data-release-policy.html)
+
+業務日  <a name="working-day"></a>
+: DDBJ センターは土曜日と日曜日に加えて、[国民の祝日](//eco.mtk.nao.ac.jp/koyomi/faq/holiday.html)、年末年始(12月29日から翌年の1月３日)、[情報・システム研究機構](http://www.rois.ac.jp//index.html)の定める夏季休業日(８月中の２日間) には業務を休止します。[DDBJ Calendar](/calendar.html) もご参照ください。
+
+フラットファイル (flat file)  <a name="flatfile"></a>
+: フラットファイルとは、DDBJ のデータ公開形式です。<br>参照: [DDBJ のデータ公開形式 (flat file) の説明](/ddbj/flat-file.html)
+
+エントリ (Entry)  <a name="entry"></a>
+: エントリとは、塩基配列データベースのデータの単位です。<br>参照: [DDBJ のデータ公開形式 (flat file) の説明](/ddbj/flat-file.html)
+
+プライマリーエントリ (Primary entry)  <a name="primary_entry">
+: プライマリーエントリとは、DDBJ/ENA/GenBank 国際塩基配列データベースから、取得可能なデータであると同時に、登録者が実験的に配列決定し、アノテーション付加を行ったデータです。<br>参照: [TPA (Third Party Data)](/ddbj/tpa.html)
+
+Primary citation<a name="pcite"> </a>
+: Primary citation とは、当該配列に関する主論文を指します。<br>原則として、[フラットファイル](/ddbj/flat-file.html)の [REFERENCE 2](/ddbj/flat-file.html#Reference2) に記載されます。<br>REFERENCE 2 には、その配列の公表状況を提示する意味合いがあります。 Primary citation が複数ある場合、または、これに相当しない関連文献がある場合は REFERENCE 3 以降に、必要に応じて記載することができます。
+
+

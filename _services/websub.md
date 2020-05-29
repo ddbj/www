@@ -2,12 +2,13 @@
 layout: indexed_content
 title: Web版塩基配列登録システム (NSSS)
 pathname: websub
-category: _services
+category: services
 ---
 
-<div class="attention no_color">
+{::options parse_block_html="true" /}
+<div class="attention">
 
-ヒトを対象とした研究データの登録について
+<span class="red">ヒトを対象とした研究データの登録について<span>
 
 ヒトを対象とした全ての研究において DDBJ に送付するデータの由来である個人 (研究対象者)の尊厳及び人権は、適用されるべき法律、規定、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。  
 原則として、研究対象者を直接特定し得る参照情報は、登録データから取り除いてください。  
@@ -59,23 +60,22 @@ System）は、アノテーションをつけた塩基配列を Web
 
 </div>
 
-  - 新規登録を開始する  
-    初めて登録する場合には「[塩基配列の登録](/ddbj/submission.html)」,「[登録データ種別](data-categories.html)」について ご一読ください。
-    １度に登録可能なエントリ数は 1024件までです(最大数はPC環境や配列長に依存します)。
-    本ツールで[TPA データ](/ddbj/tpa.html)の登録も可能です。
-    登録する配列から vector 由来の配列を除いてください。[VecScreen](http://ddbj.nig.ac.jp/vecscreen/)で確認できます。
-    右サイドバーの「Related pages」もご参照ください。
-    次のいずれかに該当する時には [MSS](/ddbj/mss.html) をご利用ください。
-      - 配列が長い(目安は 500 kb 以上)
-      - エントリあたりに多数(概ね30以上)のFeature がある
-      - [WGS](/ddbj/wgs.html), [CON](/ddbj/con.html),
-        [TSA](/ddbj/tsa.html), [TLS](/ddbj/tls.html),
-        [HTC](/ddbj/htc.html), [HTG](/ddbj/htg.html),
-        [EST](/ddbj/est.html), [GSS](/ddbj/gss.html), STS の登録
-  - 登録を再開する  
-    ブックマークから submission を再開できます。
-  - 推奨するブラウザ  
-    [Firefox](https://www.mozilla.org/ja/firefox/all/) または [Chrome](https://www.google.com/chrome/browser/desktop/index.html) の使用を推奨します。Windows 10 の Microsoft Edge では動作いたしません。
+新規登録を開始する  
+: 初めて登録する場合には「[塩基配列の登録](/ddbj/submission.html)」,「[登録データ種別](data-categories.html)」について ご一読ください。
+: １度に登録可能なエントリ数は 1024件までです(最大数はPC環境や配列長に依存します)。
+: 本ツールで[TPA データ](/ddbj/tpa.html)の登録も可能です。
+: 登録する配列から vector 由来の配列を除いてください。[VecScreen](http://ddbj.nig.ac.jp/vecscreen/)で確認できます。
+: 右サイドバーの「Related pages」もご参照ください。
+: 次のいずれかに該当する時には [MSS](/ddbj/mss.html) をご利用ください。
+  - 配列が長い(目安は 500 kb 以上)
+  - エントリあたりに多数(概ね30以上)のFeature がある
+  - [WGS](/ddbj/wgs.html), [CON](/ddbj/con.html),[TSA](/ddbj/tsa.html), [TLS](/ddbj/tls.html),[HTC](/ddbj/htc.html), [HTG](/ddbj/htg.html),[EST](/ddbj/est.html), [GSS](/ddbj/gss.html), STS の登録
+
+登録を再開する  
+: ブックマークから submission を再開できます。
+
+推奨するブラウザ  
+: [Firefox](https://www.mozilla.org/ja/firefox/all/) または [Chrome](https://www.google.com/chrome/browser/desktop/index.html) の使用を推奨します。Windows 10 の Microsoft Edge では動作いたしません。
 
 ### 登録データの更新・お問い合わせ
 
@@ -83,7 +83,8 @@ System）は、アノテーションをつけた塩基配列を Web
     アクセッション番号を取得済のデータの修正については「[登録データの修正・更新](/ddbj/updt.html)」をご覧ください。
   - 入力途中でのトラブルは、"Submission ID" とともに、[「お問い合わせフォーム」](/contact.html)よりご連絡ください。
 
-<div class="start_button">
+{::options parse_block_html="true" /}
+<div class="start-button">
 
 **[新規登録の開始](https://ddbj.nig.ac.jp/submission)**  
 次ページで **[Create new submission\]** をクリックしてください。

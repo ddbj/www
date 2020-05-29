@@ -2,7 +2,7 @@
 layout: indexed_content
 title: データ公開原則
 service_link: https://www.ddbj.nig.ac.jp/data-release-policy.html
-category: submission
+category: services
 ---
 
 ### 「データ公開」を行う時期

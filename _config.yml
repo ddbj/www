@@ -69,9 +69,36 @@ collections:
     output: true
   aboutus:
     output: true
-  home:
+  tentative:
     output: true
-    
+  datacategories:
+    output: true
+  aboutdra:
+    output: true
+  aboutdta:
+    output: true
+  aboutgea:
+    output: true
+  aboutbioproject:
+    output: true
+  aboutbiosample:
+    output: true
+  jvar-snp:
+    output: true
+  jvar-sv:
+    output: true
+  aboutjga:
+    output: true
+  aboutagd:
+    output: true
+  aboutsc:
+    output: true
+  flatfile:
+    output: true
+  other:
+    output: true
+  faq:
+    output: true
 
 defaults:
   - scope:
