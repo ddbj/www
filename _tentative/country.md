@@ -14,7 +14,7 @@ The text below outlines the format and the present list of allowed countries.
 
 ## Defiition of /country qualifier
 
-```
+<pre>
 
 Qualifier:      /country=" "
 Qualifier       /country=
@@ -23,7 +23,6 @@ Definition      locality of isolation of the sequenced organism indicated in
                 by regions and localities
 Value format    "[:][, ]" where
                 country_value is any value from the controlled vocabulary at
-                {::options parse_block_html=“true” /}
                 <a href="//www.insdc.org/documents/country-qualifier-vocabulary">//www.insdc.org/documents/country-qualifier-vocabulary</a>
 Example         /country="Canada:Vancouver"
                 /country="France:Cote d'Azur, Antibes"
@@ -34,9 +33,7 @@ Comment         Intended to provide a reference to the site where the source
                 the isolation or sampling site should be represented in
                 /isolation_source.
 
-``` 
-
-明日この上のcodeタグの中にaタグを入れる方法を探りたいです。
+</pre>
 
 COUNTRY LIST based on information from: [https://unstats.un.org/unsd/methods/m49/m49.htm](https://unstats.un.org/unsd/methods/m49/m49.htm)
 
