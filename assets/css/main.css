@@ -418,11 +418,10 @@ input, textarea, select, button {
         border-bottom: 1px solid #736357; }
     .md-content table + table {
       margin-top: -1.1rem; }
-  .md-content .highlighter-rouge {
+  .md-content code, .md-content pre {
     background-color: #E0E0E0;
     color: black;
-    padding: .3rem .6rem; }
-  .md-content code {
+    padding: .3rem .6rem;
     font-size: 1.2rem;
     line-height: 1.6;
     font-family: 'courier', monospace; }
@@ -468,6 +467,11 @@ input, textarea, select, button {
     height: 2rem;
     vertical-align: text-bottom;
     margin-right: .2rem; }
+  .md-content .start-button {
+    text-align: center;
+    padding: .5rem 2rem .5rem .5rem;
+    margin: 2rem 2rem;
+    background-color: #FEC091; }
 
 .multi-column-view {
   border-top: 1px solid #1C1B19; }
