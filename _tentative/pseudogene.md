@@ -5,13 +5,15 @@ pathname: pseudogene
 category: tentative
 ---
 
+## Controlled vocabulary for /pseudogene qualifier
+
 The original site; [Controlled vocabulary for /pseudogene qualifier](http://www.insdc.org/documents/pseudogene-qualifier-vocabulary) 2012.08.15 version
 
 A new qualifier was introduced in version 10.1 (May 2012) of the Feature table definitions: /pseudogene. This qualifier is used to annotate pseudogenes only.
 
 The text below outlines the format and the present list of allowed controlled vocabulary.
 
-``` code
+```
 Qualifier:          /pseudogene=
 Definition:         indicates that this feature is a pseudogene of the 
                     element named by the feature key
