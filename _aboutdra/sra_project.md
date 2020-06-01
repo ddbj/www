@@ -3,142 +3,89 @@ layout: indexed_content
 title: DRA 共同研究プロジェクトデータの取扱い
 pathname: sra_project
 category: aboutdra
+pdf: https://www.ddbj.nig.ac.jp/pdf/dra/sra_project.pdf
 ---
-
-<div class="section book">
-
-<div class="section chapter">
 
 ## 共同研究プロジェクトデータの取り扱い
 
-ここでは共同研究プロジェクトに由来するデータを [DDBJ Sequence Read Archive (DRA)](/dra/index.html) サーバを介して，
-
-<div class="sub_index">
+ここでは共同研究プロジェクトに由来するデータを [DDBJ Sequence Read Archive (DRA)]({{ site.url }}{{ site.baseurl }}/aboutdra/index.html) サーバを介して，
 
   - シークエンス拠点から共同研究者へデータを転送する
   - 共同研究者が DRA へデータを登録する
 
-</div>
-
 方法を解説しています。これによりプロジェクトで得られたデータを共同研究者間で共有することができます。
 
-DRA へのデータ登録方法については [DRA Handbook](/dra/submission.html) をご覧ください。
-
-</div>
-
-<div class="section chapter">
+DRA へのデータ登録方法については [DRA Handbook]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html) をご覧ください。
 
 ## データ転送の準備
 
-<div class="section section">
-
 ### D-way アカウントの取得・連絡
 
-[アカウント Handbook](/account.html) に従い DDBJ データ登録システムである D-way のアカウントを取得します。
-
-</div>
-
-<div class="section section">
+[アカウント Handbook]({{ site.url }}{{ site.baseurl }}/tentative/account.html) に従い DDBJ データ登録システムである D-way のアカウントを取得します。
 
 ### 転送用ディレクトリ
 
-[DRA に転送用ディレクトリの作成を依頼します](/contact.html)。DRA チームは依頼に基づき DRA データ受付サーバに転送用ディレクトリ "transfer" を作成し，依頼者に連絡します。
-
-<div class="sub_index">
+[DRA に転送用ディレクトリの作成を依頼します]({{ site.url }}{{ site.baseurl }}/aboutus/contact.html)。DRA チームは依頼に基づき DRA データ受付サーバに転送用ディレクトリ "transfer" を作成し，依頼者に連絡します。
 
   - DRAデータ受付サーバ: ftp-private.ddbj.nig.ac.jp
   - 送り手側: transfer/プロジェクト名/受け手のアカウント名/
   - 受け手側: transfer/プロジェクト名/送り手のアカウント名/
 
-</div>
-
 受け手側ディレクトリは対応する送り手側ディレクトリにマウントされており，受け手側は送り手側がアップロードしたファイルを閲覧・コピーすることができます。削除と移動はできません。 作業完了後，送り手側でファイルを削除してください。
 
-![](/images/books/sra_project1.png "DRA サーバを介した共同研究者へのデータ受渡し")
+![]({{ site.baseurl }}/assets/images/books/sra_project1.png "DRA サーバを介した共同研究者へのデータ受渡し")
 
-以下ではシークエンス拠点 S (アカウント: center\_s) がプロジェクト (project\_X) のデータを共同研究者 A (アカウント: lab\_a) に転送し，共同研究者 A がデータを DRA に登録する場合を例に手順を説明します。
+以下ではシークエンス拠点 S (アカウント: center_s) がプロジェクト (project_X) のデータを共同研究者 A (アカウント: lab_a) に転送し，共同研究者 A がデータを DRA に登録する場合を例に手順を説明します。
 
-適宜，center\_s を送り手側のアカウント，lab\_a を登録者のアカウント，project\_X
+適宜，center_s を送り手側のアカウント，lab_a を登録者のアカウント，project_X
 を関係するプロジェクト名に読み替えてください。 シークエンス拠点，共同研究者やプロジェクトが増えた場合は DRA に連絡し，転送用ディレクトリの追加を依頼します。
-
-</div>
-
-</div>
-
-<div class="section chapter">
 
 ## 送り手側での操作
 
-<div class="section section">
-
 ### データの作成・アップロード
 
-送り手側であるシークエンス拠点 S が [DRA Handbook](/dra/submission.html) 中の FTP クライアント，もしくは，コマンドで操作します。
+送り手側であるシークエンス拠点 S が [DRA Handbook]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html) 中の FTP クライアント，もしくは，コマンドで操作します。
 
 #### ランデータ
 
-データ受付サーバにログインし transfer/project\_X/lab\_a にランデータをアップロードします。
+データ受付サーバにログインし transfer/project_X/lab_a にランデータをアップロードします。
 
 #### メタデータ
 
 D-way で DRA 新規登録を作成し，Save XML で XML ファイルとして保存します。新規登録は Submit しなければ使いまわすことができます。
 
-[Save XML] ボタンをクリックし，メタデータを XML ファイルとしてローカルのコンピュータ (PC) に保存します。データ受付サーバにログインし，保存した XML ファイルをランデータと同様に transfer/project\_X/lab\_a にアップロードします。 もしくは，XML ファイルをメールで共同研究者に送付します。
+[Save XML] ボタンをクリックし，メタデータを XML ファイルとしてローカルのコンピュータ (PC) に保存します。データ受付サーバにログインし，保存した XML ファイルをランデータと同様に transfer/project_X/lab_a にアップロードします。 もしくは，XML ファイルをメールで共同研究者に送付します。
 
-必要に応じて lab\_a の下にサブディレクトリを作成し submission ごとにファイルを区分けします。 アップロードが完了したらファイル情報を共同研究者 A に連絡します。
+必要に応じて lab_a の下にサブディレクトリを作成し submission ごとにファイルを区分けします。 アップロードが完了したらファイル情報を共同研究者 A に連絡します。
 
-<span class="attention_text">データは関係者同士で直接やり取りしてください。</span>
+<span class="red">データは関係者同士で直接やり取りしてください。</span>
 
 シークエンス拠点で多数のメタデータを DRA サーバ上で作成・管理したい場合は，メタデータ作成専用アカウントを DRA で発行します。
 
-</div>
-
-</div>
-
-<div class="section chapter">
-
 ## 受け手側での操作
-
-<div class="section section">
 
 ### D-wayでの新規登録作成
 
 DRA ウェブサイトから共同研究者の [D-way](https://ddbj.nig.ac.jp/D-way/) アカウントにログインします。
 
-[DRA Handbook](/dra/submission.html) に従い新規登録 (例: lab\_a-0001)
+[DRA Handbook]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html) に従い新規登録 (例: lab_a-0001)
 を作成します。対応する登録用ディレクトリ
-(submission/lab\_a/lab\_a-0001) が受付サーバの登録者用ディレクトリに作成されます。
-
-</div>
-
-<div class="section section">
+(submission/lab_a/lab_a-0001) が受付サーバの登録者用ディレクトリに作成されます。
 
 ### データのコピー・取得
 
-[DRA Handbook](/dra/submission.html) に従い，transfer 以下に作成された受渡し用ディレクトリに送り手はデータをアップロードします。受け手はデータをダウンロードします。
-
-</div>
-
-<div class="section section">
+[DRA Handbook]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html) に従い，transfer 以下に作成された受渡し用ディレクトリに送り手はデータをアップロードします。受け手はデータをダウンロードします。
 
 ### メタデータの読み込み・作成
 
 [D-way にログイン](https://ddbj.nig.ac.jp/D-way/)，対応する submission
-(lab\_a-0001) を選択した後，メタデータ作成ツールを起動します。 PC に保存した XML ファイル (例 Run.xml) に対応するオブジェクトタブ (例 Run) 中の [Load XML] をクリックし，ファイルをロードします。
+(lab_a-0001) を選択した後，メタデータ作成ツールを起動します。 PC に保存した XML ファイル (例 Run.xml) に対応するオブジェクトタブ (例 Run) 中の [Load XML] をクリックし，ファイルをロードします。
 
-XML ファイルの内容が読み込まれます。ロードしたアカウント (lab\_a) が Alias と Submission ID
+XML ファイルの内容が読み込まれます。ロードしたアカウント (lab_a) が Alias と Submission ID
 を自動的に上書きします。他の XML ファイルも同様に読み込み，情報を追加します。メタデータを完成させ
 DRA に登録します。
 
-</div>
-
-</div>
-
-<div class="section chapter">
-
 ## 共同研究プロジェクトのメタデータ
-
-<div class="section section">
 
 #### Center Name (Submission，Study，Sample，Experiment，Run，Analysis)
 
@@ -181,9 +128,3 @@ Value = KAKENHI on Innovative Areas - Genome Support Project
 #### Analysis Center (Analysis)
 
 解析を実行した組織の Center Name を記入します。
-
-</div>
-
-</div>
-
-</div>
