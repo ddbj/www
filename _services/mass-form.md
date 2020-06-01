@@ -7,10 +7,11 @@ category: services
 
 ## MSS 利用 申し込みの流れ
 
-  - MSS 利用 申し込み
-  - 受付確認メール（自動送信）
-  - MSS 利用案内メール  
-    （５日以内：[休業日](/calendar.html)を除く）
+{: .flow .flow_ja }
+- MSS 利用 申し込み
+- 受付確認メール（自動送信）
+- MSS 利用案内メール  
+  （５日以内：[休業日](/calendar.html)を除く）
 
 <!-- end list -->
 
