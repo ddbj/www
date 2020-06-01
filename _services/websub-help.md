@@ -2,38 +2,35 @@
 layout: indexed_content
 title: DDBJ 塩基配列登録システム HELP
 pathname: websub-help
-category: services
+category: _home
+pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/websub-help.pdf
 ---
 
-<div class="section book">
 
-<div class="section chapter">
 
 ## 1\. Contact person
 
 [コンタクトパーソン](/ddbj/submission.html#contact)情報を入力します。
 
-![](/images/help/NSSShelp1-1_j.png "コンタクトパーソン情報入力画面")
+![]({{ site.baseurl }}/assets/images/help/NSSShelp1-1_j.png "コンタクトパーソン情報入力画面")
 
 コンタクトパーソンメールアドレス宛に登録開始用のリンクを含むメールが自動的に送信されます。
 
-![](/images/help/NSSShelp1-2_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp1-2_j.png)
 
-</div>
 
-<div class="section chapter">
+
 
 ## 2\. Hold date
 
 公開日 (Hold date) をカレンダーから選択するか、即公開を希望する場合は "Release immediately" チェックを加えます。
 
-![](/images/help/NSSShelp2-1_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp2-1_j.png)
 
   - 年末・年始はDDBJが公開作業を停止するため選択できません
 
   - 選択できる日付は最大3年後までです
 
-<div class="section section">
 
 ### 入力の中断・再開方法
 
@@ -42,94 +39,73 @@ category: services
 
   - 7.Annotation のページでは "Next" クリック以前であっても入力内容は保存されます。ブックマークから再開できます。
 
-</div>
 
-</div>
 
-<div class="section chapter">
+
+
 
 ## 3\. Submitter
 
 登録者 (Submitter) 名を入力します。
 
-![](/images/help/NSSShelp3-1_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp3-1_j.png)
 
-<div class="attention no_color">
+{::options parse_block_html="true" /}
+<div class="attention">
 
-<span class="bold">Submitter には、例のように氏名の略記を記載してください。</span>
+**Submitter には、例のように氏名の略記を記載してください。**
 
-<span class="bold">format：</span>  
-Last name[comma\]Initial of first name[period\]Initial of middle
-name[period\]
+**format：**<br>Last name[comma\]Initial of first name[period\]Initial of middle name[period\]
 
-<span class="bold">例：</span>  
-Miyashita,Y.  
-Robertson,G.R.  
-Mishima-Tokai,H.  
-Kim,C.S.  
-Wang,Y.Q.
+**例：**<br>Miyashita,Y.<br>Robertson,G.R.<br>Mishima-Tokai,H.<br>Kim,C.S.<br>Wang,Y.Q.
 
 </div>
 
-  - 関連するページ  
-    [REFERENCE 1](/ddbj/flat-file.html#Reference1) / [DDBJ のデータ公開形式 (flat file) の説明](/ddbj/flat-file.html)
+関連するページ  
+: [REFERENCE 1](/ddbj/flat-file.html#Reference1) / [DDBJ のデータ公開形式 (flat file) の説明](/ddbj/flat-file.html)
 
 <!-- end list -->
 
   - 登録者は複数名を指定いただけるよう、お願いしております。  
     登録者が１名のみの場合、将来、修正が必要になった際に私どもから登録者本人への連絡がとれない場面に遭遇することもございます。1名の登録者のみでの登録も可能ですが、複数の登録者を記載いただけるよう推奨しております。たとえば、実作業者と研究指導者(責任者)、論文著者から登録者に加えるなど、２名以上の登録者記載に関しましてご協力をお願いいたします。
 
-</div>
 
-<div class="section chapter">
+
 
 ## 4\. Reference
 
 [論文 (Reference) 情報](/ddbj/flat-file.html#Reference2) を入力します。  
 配列に関する[主論文 (Primary citation)](/ddbj/submission.html#pcite) を第一 reference に入力してください。
 
-![](/images/help/NSSShelp4_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp4_j.png)
 
-<div class="attention no_color">
+<div class="attention">
 
-<span class="bold">論文の著者は例のように氏名の略記を記載してください。</span>
+**論文の著者は例のように氏名の略記を記載してください。**
 
-<span class="bold">format：</span>  
-Last name[comma\]Initial of first name[period\]Initial of middle
-name[period\]
+**format：**<br>Last name[comma\]Initial of first name[period\]Initial of middle name[period\]
 
-<span class="bold">例：</span>  
-Miyashita,Y.  
-Robertson,G.R.  
-Mishima-Tokai,H.  
-Kim,C.S.  
-Wang,Y.Q.
+**例：**<br>Miyashita,Y.<br>Robertson,G.R.<br>Mishima-Tokai,H.<br>Kim,C.S.<br>Wang,Y.Q.
 
 </div>
 
-  - 関連するページ  
-    [REFERENCE 2](/ddbj/flat-file.html#Reference2) / [DDBJ のデータ公開形式
-    (flat file) の説明](/ddbj/flat-file.html)
+関連するページ  
+: [REFERENCE 2](/ddbj/flat-file.html#Reference2) / [DDBJ のデータ公開形式 (flat file) の説明](/ddbj/flat-file.html)
 
-<div class="section section">
 
 ### Reference の例
 
 #### Status: Unpublished
 
-![](/images/help/NSSShelp4-1-1_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp4-1-1_j.png)
 
 #### Status: In press
 
-![](/images/help/NSSShelp4-1-2_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp4-1-2_j.png)
 
 #### Status: Published
 
-![](/images/help/NSSShelp4-1-3_j.png)
-
-</div>
-
-<div class="section section">
+![]({{ site.baseurl }}/assets/images/help/NSSShelp4-1-3_j.png)
 
 ### Journal name
 
@@ -137,33 +113,31 @@ Journal name を ISO abbreviation で入力してください。Journal の full
 を入力していくと候補が現れますので、マウスで選択することで Journal の ISO
 abbreviation を入力できます。
 
-![](/images/help/NSSShelp4-2_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp4-2_j.png)
 
 Journal の ISO abbreviation は [NLM Catalog](//www.ncbi.nlm.nih.gov/nlmcatalog) で調べることができます。
 
-![](/images/help/NSSShelp4-2-1_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp4-2-1_j.png)
 
-</div>
 
-</div>
 
-<div class="section chapter">
+
+
 
 ## 5\. Sequence
 
 塩基配列を入力します。  
 [TPA](/ddbj/tpa.html) の submission を行う場合には、assembly information も同時に入力します。
 
-![](/images/help/NSSShelp5_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp5_j.png)
 
-<div class="section section">
 
 ### 塩基配列のフォーマットについて
 
   - Multi-FASTA 形式の塩基配列をペースト(またはアップロード)可能です。
 
   - Entry name (エントリー名)
-    は、２４文字までの半角・英数記号(ただしスペース、"[double-quote\]、?[question\]、￥[yen sign\]、`\`[back-slash]を含まない)を用いて設定してください。
+    は、２４文字までの半角・英数記号(ただしスペース、"[double-quote\]、?[question\]、￥[yen sign\]、{::nomarkdown}\{:/}[back-slash]を含まない)を用いて設定してください。
 
   - Entry name には、それぞれ異なる名称を付けてください。  
     同じ Entry name が使用されている場合はエラーとなるため Entry name の修正が必要になります。
@@ -217,44 +191,35 @@ gctgtaactctgagatgtgctaaataaaccctctttctcaaaaaaaaaaaaaaaa
         
 ```
 
-</div>
 
-<div class="section section">
+
 
 ### TPA 塩基配列の入力
 
-![](/images/help/NSSShelp5-2_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp5-2_j.png)
 
-</div>
 
-<div class="section section">
+
 
 ### TPA における Assembly Information の書式
 
 #### 入力例
 
-![](/images/help/NSSShelp5-3-1_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp5-3-1_j.png)
 
-Assembly information のサンプルは<span class="bold">[ここから](/files/example/NSSShelp-tpa-sample.txt)</span>ダウンロードできます。(タブ区切りテキスト形式)
+Assembly information のサンプルは**[ここから](/files/example/NSSShelp-tpa-sample.txt)**ダウンロードできます。(タブ区切りテキスト形式)
 
 #### 上記入力例の意味
 
-<span class="no_bottom bold">Entry name FA01</span>  
-TPA 塩基配列 1-552 の領域は ZZ000001.1 の 54872-55422 に対応  
-TPA 塩基配列 553-705 の領域は ZZ000002.5 の 1-153 に対応
+**Entry name FA01**<br>TPA 塩基配列 1-552 の領域は ZZ000001.1 の 54872-55422 に対応<br>TPA 塩基配列 553-705 の領域は ZZ000002.5 の 1-153 に対応
 
-<span class="no_bottom bold">Entry name BM123</span>  
-TPA 塩基配列 1-438 の領域は ZZ000010.1 の 1-438 に対応  
-TPA 塩基配列 377-695 の領域は ZZ000011.1 の complement(1-320) に対応  
-TPA 塩基配列 411-790 の領域は ZZ000021.12 の 1-398 に対応  
-TPA 塩基配列 790-1191 の領域は ZZ000022.0 の 1-401 に対応
+**Entry name BM123**<br>TPA 塩基配列 1-438 の領域は ZZ000010.1 の 1-438 に対応<br>TPA 塩基配列 377-695 の領域は ZZ000011.1 の complement(1-320) に対応<br>TPA 塩基配列 411-790 の領域は ZZ000021.12 の 1-398 に対応<br>TPA 塩基配列 790-1191 の領域は ZZ000022.0 の 1-401 に対応
 
 いずれも [TPA とプライマリーエントリの配列アラインメントに関する規則](/ddbj/tpa.html#alignment-rule)
 に従います。
 
-</div>
 
-<div class="section section">
+
 
 ### Assembly Information 入力規則
 
@@ -293,140 +258,89 @@ TPA 塩基配列 790-1191 の領域は ZZ000022.0 の 1-401 に対応
       - 空欄 または c
       - プライマリエントリから相補鎖領域を引用する場合にのみ c を指定します。
 
-</div>
 
-</div>
 
-<div class="section chapter">
+
+
 
 ## 6\. Template
 
 アノテーションに適合する template を選択します。
 
-![](/images/help/NSSShelp6_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp6_j.png)
 
-</div>
 
-<div class="section chapter">
+
 
 ## 7\. Annotation
 
-<div class="section section">
 
 ### アノテーション画面 - Template で "other" 以外を選択したとき
 
-<div style="overflow: auto;">
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-1_j.png)
 
-![](/images/help/NSSShelp7-1_j.png)
-
-</div>
-
-  - 関連するページ  
-    [Feature key の定義](/ddbj/features.html) / [Qualifier key
-    の定義](/ddbj/qualifiers.html) / [Organism qualifier
-    に記載する生物名](/ddbj/organism.html) / [タンパク質コード配列; CDS
-    feature について](/ddbj/cds.html)
-
-</div>
-
-<div class="section section">
+関連するページ  
+: [Feature key の定義](/ddbj/features.html) / [Qualifier key の定義](/ddbj/qualifiers.html) / [Organism qualifier に記載する生物名](/ddbj/organism.html) / [タンパク質コード配列; CDS feature について](/ddbj/cds.html)
 
 ### アノテーション画面 - Template で "other" を選択したとき
 
-<div style="overflow: auto;">
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-2_j.png)
 
-![](/images/help/NSSShelp7-2_j.png)
-
-</div>
-
-  - 関連するページ  
-    [Feature key の定義](/ddbj/features.html) / [Qualifier key
-    の定義](/ddbj/qualifiers.html) / [Organism qualifier
-    に記載する生物名](/ddbj/organism.html) / [タンパク質コード配列; CDS
-    feature について](/ddbj/cds.html)
-
-</div>
-
-<div class="section section">
+関連するページ  
+: [Feature key の定義](/ddbj/features.html) / [Qualifier key の定義](/ddbj/qualifiers.html) / [Organism qualifier に記載する生物名](/ddbj/organism.html) / [タンパク質コード配列; CDS feature について](/ddbj/cds.html)
 
 ### アノテーションの入力方法
 
 #### "Edit" ボタン
 
-![](/images/help/NSSShelp7-3-1_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-1_j.png)
 
 #### "Select Qualifier" ボタン
 
-![](/images/help/NSSShelp7-3-2_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-2_j.png)
 
 #### "Pen & Note" ボタン
 
-![](/images/help/NSSShelp7-3-3_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-3_j.png)
 
 #### "Edit Colum" ボタン
 
-![](/images/help/NSSShelp7-3-4_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-4_j.png)
 
-#### セルのダブルクリック (Template で "other" 選択時の場合は Qualifier のクリック) ![](/images/help/NSSShelp7-3-5_j.png)
+#### セルのダブルクリック (Template で "other" 選択時の場合は Qualifier のクリック) 
 
-</div>
-
-<div class="section section">
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-5_j.png)
 
 ### 生物名 (Organism name)
 
-![](/images/help/NSSShelp7-4_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-4_j.png)
 
 学名を入力後、"OK" をクリックします。  
 入力した名称が NCBI Taxonomy database に無い場合、リストから該当するカテゴリーを選択します。
 詳細は、[生物名入力におけるカテゴリ (Category) について](/ddbj/organism.html#deasy) をご覧ください。
 
-![](/images/help/NSSShelp7-4-1_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-4-1_j.png)
 
-  - 関連するページ  
-    [Organism qualifier に記載する生物名](/ddbj/organism.html)
-
-</div>
-
-<div class="section section">
+関連するページ  
+: [Organism qualifier に記載する生物名](/ddbj/organism.html)
 
 ### アノテーション例
 
 #### 16S rRNA
 
-<div style="overflow: auto;">
-
-![](/images/help/NSSShelp7-5-1_j.png)
-
-</div>
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-1_j.png)
 
 #### CDS
 
-<div style="overflow: auto;">
-
-![](/images/help/NSSShelp7-5-2_j.png)
-
-</div>
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-2_j.png)
 
 #### Mitochondrial genome
 
-<div style="overflow: auto;">
-
-![](/images/help/NSSShelp7-5-3_j.png)
-
-</div>
-
-</div>
-
-<div class="section section">
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-3_j.png)
 
 ### アノテーションファイルのアップロード方法
 
-<div style="overflow: auto;">
-
-![](/images/help/NSSShelp7-6_j.png)
-
-</div>
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-6_j.png)
 
 #### アップロード可能なアノテーションファイル
 
@@ -447,15 +361,10 @@ TPA 塩基配列 790-1191 の領域は ZZ000022.0 の 1-401 に対応
 
 <!-- end list -->
 
-  - 関連するページ  
-    [Feature key の定義](/ddbj/features.html) / [Qualifier key の定義](/ddbj/qualifiers.html) / [Organism qualifier
-    に記載する生物名](/ddbj/organism.html) / [タンパク質コード配列; CDS feature について](/ddbj/cds.html)
+関連するページ  
+: [Feature key の定義](/ddbj/features.html) / [Qualifier key の定義](/ddbj/qualifiers.html) / [Organism qualifier に記載する生物名](/ddbj/organism.html) / [タンパク質コード配列; CDS feature について](/ddbj/cds.html)
 
-<div style="overflow: auto;">
-
-![](/images/help/NSSShelp7-6-1_j.png)
-
-</div>
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-6-1_j.png)
 
 #### アノテーションファイルのアップロードエラーとなる主な原因
 
@@ -467,9 +376,8 @@ TPA 塩基配列 790-1191 の領域は ZZ000022.0 の 1-401 に対応
 
   - 余計なスペース、不正文字(全角文字、unicode文字、unprintable character)がファイル中に含まれている場合もアップロードできません。
 
-</div>
 
-<div class="section section">
+
 
 ### Error/Warning
 
@@ -487,15 +395,8 @@ Error/warning メッセージの詳細については、[Validator エラーメ�
 例のようにコード番号から直接リンクすることも可能です。  
 例：[https://www.ddbj.nig.ac.jp/ddbj/validator.html\#JP0015](/ddbj/validator-j.html#JP0015)
 
-  - 関連するページ  
-    [Feature key の定義](/ddbj/features.html) / [Qualifier key
-    の定義](/ddbj/qualifiers.html) / [Organism qualifier
-    に記載する生物名](/ddbj/organism.html) / [タンパク質コード配列; CDS
-    feature について](/ddbj/cds.html)
-
-</div>
-
-<div class="section section">
+関連するページ  
+: [Feature key の定義](/ddbj/features.html) / [Qualifier key の定義](/ddbj/qualifiers.html) / [Organism qualifier に記載する生物名](/ddbj/organism.html) / [タンパク質コード配列; CDS feature について](/ddbj/cds.html)
 
 ### アミノ酸配列を得るには
 
@@ -507,33 +408,31 @@ ORFfinder (NCBI)
 EMBOSS Transeq (EBI)  
 [https://www.ebi.ac.uk/Tools/st/emboss\_transeq/](//www.ebi.ac.uk/Tools/st/emboss_transeq/)
 
-</div>
 
-</div>
 
-<div class="section chapter">
+
+
 
 ## Final page
 
 "Confirm" 後 "Next" クリックで最終確認画面が表示されます。
 
-![](/images/help/NSSShelp7a_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7a_j.png)
 
-</div>
 
-<div class="section chapter">
+
 
 ## 8\. Finish
 
 Finish 画面が現れた時点で submission 完了となります。  
 入力された内容は自動的に DDBJ の登録用サーバーに転送されます。同時にSubmission 完了を知らせる Email が contact person の Email アドレス宛に送信されます。
 
-![](/images/help/NSSShelp8-1_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp8-1_j.png)
 
 完了を通知するメール。
 
-![](/images/help/NSSShelp8-2_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp8-2_j.png)
 
-</div>
 
-</div>
+
+

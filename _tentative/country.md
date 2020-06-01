@@ -2,7 +2,7 @@
 layout: indexed_content
 title: Controlled vocabulary for /country qualifier
 pathname: country
-category: tentative
+category: _home
 ---
 
 The original site; [Controlled vocabulary for /country qualifier](//www.insdc.org/documents/country-qualifier-vocabulary) 2020.01.08 version

@@ -3,22 +3,20 @@ layout: indexed_content
 title: MSS - Mass Submission System
 pathname: mss
 category: services
+pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/mss.pdf
 ---
 
-<div class="section book">
-
-ヒトを対象とした研究データの登録について
+<span class="red">ヒトを対象とした研究データの登録について</span>
 
 ヒトを対象とした全ての研究において DDBJ に送付するデータの由来である個人 (研究対象者)
 の尊厳及び人権は、適用されるべき法律、規定、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。  
 原則として、研究対象者を直接特定し得る参照情報は、登録データから取り除いてください。  
 ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#human)をご覧ください。
 
-<div class="section chapter">
-
 ## MSS とは？
 
-<div class="attention no_color">
+{::options parse_block_html="true" /}
+<div class="attention">
 
 Mass Submission System (MSS) は、比較的大規模な塩基配列データ (reads ではない)
 をファイル送付により登録するサービスです。登録予定データが、以下のような条件に該当する場合はMSS をご利用ください。
@@ -37,17 +35,9 @@ Mass Submission System (MSS) は、比較的大規模な塩基配列データ (r
 また、シークエンサからの出力配列 (reads) を登録する場合は [DRA; DDBJ Sequence Read
 Archive](/dra/index.html) をご参照ください。
 
-</div>
-
-<div class="section chapter">
-
 ## MSS による登録の流れ
 
-<div>
-
-![](/images/ddbj/MSS-flow-jp.png "MSS による登録の流れ") 
-
-</div>
+![]({{ site.baseurl }}/assets/images/ddbj/MSS-flow-jp.png "MSS による登録の流れ") 
 
 ### 1\. 申し込み
 
@@ -58,21 +48,23 @@ DDBJ で受付した後に、より詳細な手順および作業を支援する
 
 #### 登録に必要なファイルの作成
 
-  - 配列ファイル  
-    全登録データの配列を FASTA 形式で記述したテキストファイル。
-    詳細：[登録ファイル形式：配列ファイル](/ddbj/file-format.html#sequence)
-  - アノテーションファイル  
-    全登録データの登録者、REFERENCE、Feature/Qualifier の情報等を記述したタブ区切りテキストファイル。
-    詳細：[登録ファイル形式：アノテーションファイル](/ddbj/file-format.html#annotation)
-  - AGP ファイル <span class="font-normal">（[CON](/ddbj/con.html) エントリの登録の場合）</span>  
-    CON エントリを構築する際のピースエントリの順序、種類、方向等が記載された、9列からなるタブ区切りテキストファイル。
-    AGP ファイルのみで配列が構築可能である場合、配列ファイルは必要ありません。
-    詳細：[登録ファイル形式： AGP ファイル](/ddbj/file-format.html#agp)
+配列ファイル  
+: 全登録データの配列を FASTA 形式で記述したテキストファイル。
+: 詳細：[登録ファイル形式：配列ファイル](/ddbj/file-format.html#sequence)
 
-<div class="attention no_top">
+アノテーションファイル  
+: 全登録データの登録者、REFERENCE、Feature/Qualifier の情報等を記述したタブ区切りテキストファイル。
+: 詳細：[登録ファイル形式：アノテーションファイル](/ddbj/file-format.html#annotation)
 
-[TSA](/ddbj/tsa.html), complete genome, draft genome
-([WGS](/ddbj/wgs.html) or [HTG](/ddbj/htg.html)) を登録する場合は、あらかじめ[BioProject](/bioproject/index.html)/[BioSample](/biosample/index.html) への登録を行い、取得したアクセッション番号をアノテーションファイル内に記載してください。
+AGP ファイル（[CON](/ddbj/con.html) エントリの登録の場合
+: CON エントリを構築する際のピースエントリの順序、種類、方向等が記載された、9列からなるタブ区切りテキストファイル。
+: AGP ファイルのみで配列が構築可能である場合、配列ファイルは必要ありません。
+: 詳細：[登録ファイル形式： AGP ファイル](/ddbj/file-format.html#agp)
+
+{::options parse_block_html="true" /}
+<div class="attention red">
+
+[TSA](/ddbj/tsa.html), complete genome, draft genome ([WGS](/ddbj/wgs.html) or [HTG](/ddbj/htg.html)) を登録する場合は、あらかじめ[BioProject](/bioproject/index.html)/[BioSample](/biosample/index.html) への登録を行い、取得したアクセッション番号をアノテーションファイル内に記載してください。
 
 </div>
 
@@ -80,20 +72,23 @@ DDBJ で受付した後に、より詳細な手順および作業を支援する
 
 DDBJ への登録の前に、作成したファイルを DDBJ が提供するデータファイル用チェックツールを用いてチェックを実行してください。
 
-  - UME (Utilities for MSS file Error check)  
-    [配列ファイル](/ddbj/file-format.html#sequence) と [アノテーションファイル](/ddbj/file-format.html#annotation)のフォーマットチェックと、それらファイルの記載を元に [CDS feature](/ddbj/cds.html)のアミノ酸翻訳チェックを行います。 Parser と  transChecker を内包しています。
-    OS : Windows, unix/macOS
-    詳細：[UME ユーザーマニュアル](/ddbj/ume.html)
-  - Parser  
-    [配列ファイル](/ddbj/file-format.html#sequence) と [アノテーションファイル](/ddbj/file-format.html#annotation) のフォーマットチェックを行います。
-    OS : Unix
-    詳細：[Parser ユーザーマニュアル](/ddbj/parser.html)
-  - transChecker  
-    [配列ファイル](/ddbj/file-format.html#sequence) と [アノテーションファイル](/ddbj/file-format.html#annotation) の記載を元に [CDS feature](/ddbj/cds.html) のアミノ酸翻訳チェックを行います。
-    OS : Unix
-    詳細：[transChecker ユーザーマニュアル](/ddbj/transchecker.html)
+UME (Utilities for MSS file Error check)  
+: [配列ファイル](/ddbj/file-format.html#sequence) と [アノテーションファイル](/ddbj/file-format.html#annotation)のフォーマットチェックと、それらファイルの記載を元に [CDS feature](/ddbj/cds.html)のアミノ酸翻訳チェックを行います。 Parser と  transChecker を内包しています。
+: OS : Windows, unix/macOS
+: 詳細：[UME ユーザーマニュアル](/ddbj/ume.html)
 
-<div class="attention no_top">
+Parser  
+: [配列ファイル](/ddbj/file-format.html#sequence) と [アノテーションファイル](/ddbj/file-format.html#annotation) のフォーマットチェックを行います。
+: OS : Unix
+: 詳細：[Parser ユーザーマニュアル](/ddbj/parser.html)
+
+transChecker  
+: [配列ファイル](/ddbj/file-format.html#sequence) と [アノテーションファイル](/ddbj/file-format.html#annotation) の記載を元に [CDS feature](/ddbj/cds.html) のアミノ酸翻訳チェックを行います。
+: OS : Unix
+: 詳細：[transChecker ユーザーマニュアル](/ddbj/transchecker.html)
+
+{::options parse_block_html="true" /}
+<div class="attention red">
 
 データフィル用チェックツールは [MSS データファイル用チェックツール](/ddbj/mss-tool.html) からダウンロードできます
 
@@ -123,24 +118,18 @@ DDBJ で送付されたデータを査定し、不具合があれば修正箇所
 
 #### ファイルの送付方法
 
-  - 電子メールに添付して送信する  
-    SCP によるファイル転送  
-    ファイルサイズが合計で 10 M byte を超える場合は、公開鍵と秘密鍵を用いた SCP によるファイル転送をお勧めいたします。
-    ファイル転送を利用するには、[DDBJ Submission Portal D-way](https://ddbj.nig.ac.jp/D-way/) にて[登録アカウント](/account.html)を取得する必要があります。  
-    詳細手順につきましては、[ファイルのアップロード方法](/dra/submission.html#upload-sequence-data)またはチュートリアル動画をご参照ください。
-    <span class="bold">チュートリアル動画</span>
-    鍵ペアの作成（[Windows](https://youtu.be/mggRnbxr0gQ) / [macOS](https://youtu.be/h9LbhwROtOM)）
-    データの転送（[Windows](https://youtu.be/ZxIfewrk8lI) / [macOS](https://youtu.be/A2hPlGZEW_o)）
+電子メールに添付して送信する  
+SCP によるファイル転送  
+: ファイルサイズが合計で 10 M byte を超える場合は、公開鍵と秘密鍵を用いた SCP によるファイル転送をお勧めいたします。
+: ファイル転送を利用するには、[DDBJ Submission Portal D-way](https://ddbj.nig.ac.jp/D-way/) にて[登録アカウント](/account.html)を取得する必要があります。<br>詳細手順につきましては、[ファイルのアップロード方法](/dra/submission.html#upload-sequence-data)またはチュートリアル動画をご参照ください。
+: **チュートリアル動画**
+: 鍵ペアの作成（[Windows](https://youtu.be/mggRnbxr0gQ) / [macOS](https://youtu.be/h9LbhwROtOM)）
+: データの転送（[Windows](https://youtu.be/ZxIfewrk8lI) / [macOS](https://youtu.be/A2hPlGZEW_o)）
 
 ### 5\. データ公開
 
 登録時に即日公開を希望した場合は、可能な限り速やかに公開します。  
 [公開予定日](/ddbj/submission.html#hold-date)([hold\_date](/ddbj/file-format.html#annotation))を指定した場合は、[公開原則](/data-release-policy.html)に基づいて公開します。
 
-登録された塩基配列データは、配列ファイルとアノテーションファイルの内容に基づき、DDBJ の定めるフォーマットにしたがった[フラットファイル
-(flat file)](/ddbj/flat-file.html) の形式で公開されています。  
+登録された塩基配列データは、配列ファイルとアノテーションファイルの内容に基づき、DDBJ の定めるフォーマットにしたがった[フラットファイル (flat file)](/ddbj/flat-file.html) の形式で公開されています。  
 [アノテーションファイルとフラットファイルの対応関係](/ddbj/file-format.html#sample)もご参照ください。
-
-</div>
-
-</div>
