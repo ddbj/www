@@ -3,6 +3,7 @@ layout: indexed_content
 title: MSS データファイル用チェックツール
 pathname: mss-tool
 category: services
+pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/mss-tool.pdf
 ---
 
 ## 実行環境
@@ -26,19 +27,49 @@ category: services
 下記から 必要なパッケージを選択してダウンロードしてください。  
 インストール、使用方法は、各マニュアルを参照してください。
 
-|  名称  |  OS  |  更新日  |  ドキュメント  |  ファイル形式 / 備考  |
-| ---- | ---- | ---- | ---- | ---- |
-|  [UME\_win\_V1.49.zip](ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/UME_win_V1.49.zip)  |  Windows  |  2020/04/07  |  [UME ユーザーマニュアル](/ddbj/ume.html)  |  zip 形式<br>UMEにはParser / <br>transCheckerが付属しています  |
-|  [UME\_unix\_V1.49.zip](ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/UME_unix_V1.49.zip)  |  unix/macOS  |  ^  |  ^  |  ^  |
-|  [Parser\_V6.62.tar.gz](ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/Parser_V6.62.tar.gz)  |  unix/macOS  |  2020/04/07  |  [Parser ユーザーマニュアル](/ddbj/parser.html)  |  tar (gzipped) 形式<br>UMEを使用する場合は不要です。  |
-|  [transChecker\_V2.21.tar.gz](ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/transChecker_V2.21.tar.gz)  |  unix/macOS  |  2017/05/17  |  [transChecker ユーザーマニュアル](/ddbj/transchecker.html)  |  tar (gzipped) 形式<br>UME を使用する場合は不要です。  |
+<table>
+    <caption></caption> 
+    <thead>
+      <tr>
+      <th>名称</th>
+      <th>OS</th>
+      <th>更新日</th>
+      <th>ドキュメント</th>
+      <th>ファイル形式 / 備考</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/UME_win_V1.49.zip">UME_win_V1.49.zip</a></td>
+      <td>Windows</td>
+      <td rowspan="2">2020/04/07</td>
+      <td rowspan="2"><a href="/ddbj/ume.html">UME ユーザーマニュアル</a></td>
+      <td rowspan="2">zip 形式<br>UMEにはParser / transCheckerが付属しています</td>
+      </tr>
+      <tr>
+      <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/UME_unix_V1.49.zip">UME_unix_V1.49.zip</a></td>
+      <td>unix/macOS</td>
+      </tr>
+      <tr>
+      <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/Parser_V6.62.tar.gz">Parser_V6.62.tar.gz</a></td>
+      <td>unix/macOS</td>
+      <td>2020/04/07</td>
+      <td><a href="/ddbj/parser.html">Parser ユーザーマニュアル</a></td>
+      <td>tar (gzipped) 形式<br>UME を使用する場合は不要です。</td>
+      </tr>
+      <tr>
+      <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/transChecker_V2.21.tar.gz">transChecker_V2.21.tar.gz</a></td>
+      <td>unix/macOS</td>
+      <td>2017/05/17</td>
+      <td><a href="/ddbj/transchecker.html">transChecker ユーザーマニュアル</a></td>
+      <td>tar (gzipped) 形式<br>UME を使用する場合は不要です。</td>
+      </tr>
+    </tbody>
+</table>
 
 ## 使用許諾
 
-<span class="bold">Please read the following agreement carefully before
-you use the software for Mass Submission System.</span>
-
-<div class="sub_index">
+**Please read the following agreement carefully before you use the software for Mass Submission System.**
 
 NOTICE TO USERS:  
 Carefully read the following agreement. Use of the tools for Mass Submission System provided by DDBJ with this agreement (hereinafter collectively called "the Software") constitutes your acceptance of these terms. If you do not agree to the terms of this agreement, do not install and/or use the Software. User's use of the Software is conditioned upon compliance by user with the terms of this agreement.
@@ -58,5 +89,3 @@ Carefully read the following agreement. Use of the tools for Mass Submission Sys
     damages arising out of the use or inability to use of the Software.
 5.  Requirements specified in this agreement are subject to change
     without notice.
-
-</div>

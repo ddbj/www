@@ -6,10 +6,14 @@ $MARGIN_BOTTOM: 1rem
   .highlight
     overflow: auto
 
+  img
+    width: 100%
   > p, > table, > ol, > ul, > dl, > .highlighter-rouge
     margin-bottom: $MARGIN_BOTTOM
   .red
     color: $COLOR_RED
+    *
+      color: $COLOR_RED
 
   h2
     font-size: 1.8rem
@@ -99,6 +103,7 @@ $MARGIN_BOTTOM: 1rem
         white-space: nowrap
       td, th
         border-bottom: 1px solid $COLOR_SEPARATOR
+        vertical-align: middle
       &:last-child
         border-bottom: none
         > td, th
@@ -171,3 +176,20 @@ $MARGIN_BOTTOM: 1rem
     padding: .5rem 2rem .5rem .5rem
     margin: 2rem 2rem
     background-color: $COLOR_KEY_PALE
+
+  .nsss_menu
+    display: flex
+    .nsss_icon
+      width: 100px
+      text-align: center
+      img
+        width: 35px
+        height: auto
+
+  .db_top_navi_box
+    img
+      width: 35px
+      height: auto
+      display: inline-block
+      opacity: .9
+      transition: opacity .1s linear 0s

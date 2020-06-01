@@ -3,6 +3,7 @@ layout: indexed_content
 title: Web版塩基配列登録システム (NSSS)
 pathname: websub
 category: services
+pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/websub.pdf
 ---
 
 {::options parse_block_html="true" /}
@@ -28,7 +29,7 @@ System）は、アノテーションをつけた塩基配列を Web
 
 <div class="nsss_icon">
 
-[![](/images/parts/pdf_icon.svg)](/files/pdf/ddbj/websubHelp_full-j.pdf)
+[![]({{ site.baseurl }}/assets/images/parts/pdf_icon.svg)](/files/pdf/ddbj/websubHelp_full-j.pdf)
 
 [マニュアル](/files/pdf/ddbj/websubHelp_full-j.pdf)
 
@@ -36,7 +37,7 @@ System）は、アノテーションをつけた塩基配列を Web
 
 <div class="nsss_icon">
 
-[![](/images/parts/youtube_icon.svg)](https://youtu.be/JTCV7bG_KJc)
+[![]({{ site.baseurl }}/assets/images/parts/youtube_icon.svg)](https://youtu.be/JTCV7bG_KJc)
 
 [NSSS の紹介](https://youtu.be/JTCV7bG_KJc)
 
@@ -44,7 +45,7 @@ System）は、アノテーションをつけた塩基配列を Web
 
 <div class="nsss_icon">
 
-[![](/images/parts/gdrive.svg)](https://drive.google.com/file/d/1KnEVC--SFglqdENRGLMehFP9NuQXyVrt)
+[![]({{ site.baseurl }}/assets/images/parts/gdrive.svg)](https://drive.google.com/file/d/1KnEVC--SFglqdENRGLMehFP9NuQXyVrt)
 
 [NSSS の紹介](https://drive.google.com/file/d/1KnEVC--SFglqdENRGLMehFP9NuQXyVrt)
 
@@ -52,7 +53,7 @@ System）は、アノテーションをつけた塩基配列を Web
 
 <div class="nsss_icon">
 
-[![](/images/parts/info_icon.svg)](/ddbj/websub-help.html)
+[![]({{ site.baseurl }}/assets/images/parts/info_icon.svg)](/ddbj/websub-help.html)
 
 [NSSS HELP](/ddbj/websub-help.html)
 
