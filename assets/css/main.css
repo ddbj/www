@@ -315,7 +315,7 @@ input, textarea, select, button {
   list-style: none; }
   .list-view > .list > .item {
     padding: 1rem 0;
-    border-bottom: solid 1px rgba(0, 0, 0, 0.2); }
+    border-bottom: solid 1px #ccc; }
     .list-view > .list > .item > .title {
       margin-bottom: .2em; }
     .list-view > .list > .item > .detail {
@@ -331,10 +331,14 @@ input, textarea, select, button {
   line-height: 1.8; }
   .md-content .highlight {
     overflow: auto; }
+  .md-content img {
+    width: 100%; }
   .md-content > p, .md-content > table, .md-content > ol, .md-content > ul, .md-content > dl, .md-content > .highlighter-rouge {
     margin-bottom: 1rem; }
   .md-content .red {
     color: #FF0000; }
+    .md-content .red * {
+      color: #FF0000; }
   .md-content h2 {
     font-size: 1.8rem;
     line-height: 1.2;
@@ -411,7 +415,8 @@ input, textarea, select, button {
       font-weight: bold;
       white-space: nowrap; }
     .md-content table tr td, .md-content table tr th {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+      border-bottom: 1px solid #ccc;
+      vertical-align: middle; }
     .md-content table tr:last-child {
       border-bottom: none; }
       .md-content table tr:last-child > td, .md-content table tr:last-child th {
@@ -472,6 +477,20 @@ input, textarea, select, button {
     padding: .5rem 2rem .5rem .5rem;
     margin: 2rem 2rem;
     background-color: #FEC091; }
+  .md-content .nsss_menu {
+    display: flex; }
+    .md-content .nsss_menu .nsss_icon {
+      width: 100px;
+      text-align: center; }
+      .md-content .nsss_menu .nsss_icon img {
+        width: 35px;
+        height: auto; }
+  .md-content .db_top_navi_box img {
+    width: 35px;
+    height: auto;
+    display: inline-block;
+    opacity: .9;
+    transition: opacity .1s linear 0s; }
 
 .multi-column-view {
   border-top: 1px solid #1C1B19; }
@@ -1060,7 +1079,7 @@ input, textarea, select, button {
       #TopNews > .container > .list > .item > .news > a {
         padding: 1rem 1.6rem;
         display: block;
-        border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+        border-bottom: solid 1px #ccc;
         text-decoration: none; }
         #TopNews > .container > .list > .item > .news > a > .metadata {
           line-height: 1.2;

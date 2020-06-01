@@ -3,57 +3,58 @@ layout: indexed_content
 title: Parser ユーザーマニュアル
 pathname: parser
 category: services
+pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/parser.pdf
 ---
-
-<div class="section book">
 
 Parser は、Mass Submission System (MSS) を利用して DDBJ に登録する際に必要な
 [配列ファイル](/ddbj/file-format.html#sequence) と [アノテーションファイル](/ddbj/file-format.html#annotation) のフォーマットチェックを行うツールです。
 
-<div class="section chapter">
-
 ## インストール
 
-  - 1\. [MSS データファイル用チェックツール](/ddbj/mss-tool.html) から Parser.tar.gz
-    を取得  
-    2\. tar.gz ファイルを gunzip コマンドで解凍
+1. [MSS データファイル用チェックツール](/ddbj/mss-tool.html) から Parser.tar.gz を取得  
+2. tar.gz ファイルを gunzip コマンドで解凍
     
     ``` code
     $ gunzip Parser.tar.gz
     ```
-
-  - 3\. tar ファイルを tar コマンドで展開
+3. tar ファイルを tar コマンドで展開
     
-    ``` code
+    ``` 
     $ tar xvf Parser.tar
     ```
-
-  - 4\. ディレクトリが生成される  
+4. ディレクトリが生成される  
     下記の要領でディレクトリの中身を見ると、以下のようになっています。
     
-    ``` code
+    ``` 
     $ cd jParser
     $ ls -FC
     jParser.sh*  jar/    license.txt resource/
     ```
-    
-    <div class="news_post_container glossary">
-    
-    |             |                               |
-    | ----------- | ----------------------------- |
-    | jParser.sh  | 実行シェルスクリプト                    |
-    | jar/        | java のクラスライブラリ格納ディレクトリ(改変不可)  |
-    | license.txt | 使用許諾(改変不可)                    |
-    | resources/  | 検査条件などのリソースファイル格納ディレクトリ(改変不可) |
-    
-
-    </div>
-
-  - 5\. ファイルの編集  
+  <table>
+    <tbody>
+      <tr>
+        <th>jParser.sh</th>
+        <td>実行シェルスクリプト</td>
+        </tr>
+      <tr>
+        <th>jar/</th>
+        <td>java のクラスライブラリ格納ディレクトリ(改変不可)</td>
+        </tr>
+      <tr>
+        <th>license.txt</th>
+        <td>使用許諾(改変不可)</td>
+        </tr>
+      <tr>
+        <th>resources/</th>
+        <td>検査条件などのリソースファイル格納ディレクトリ(改変不可)</td>
+      </tr>
+    </tbody>
+  </table>
+5. ファイルの編集  
     jParser.sh を実行する前にファイルの中身を、インストールしたコンピュータの環境にあわせるために変更する必要があります。vi
     などのエディタで編集して下さい。
     
-    ``` code
+    ``` 
     #!/bin/sh
     
     # Parser installed directory
@@ -80,56 +81,43 @@ Parser は、Mass Submission System (MSS) を利用して DDBJ に登録する�
     exit $RETVAL
     #EOF
     ```
-    
-      - [PARSER\_DIR 変数\]  
-        jParser ディレクトリのある場所をフルパスで入力して下さい。
-        例) PARSER\_DIR=/home/mass/jParser
-      - [HEAP\_SIZE 変数\]  
-        jParser が使用できる最大メモリ量を指定してください。
-        例) HEAP\_SIZE=128m
+[PARSER\_DIR 変数\]  
+: jParser ディレクトリのある場所をフルパスで入力して下さい。
+: 例) PARSER\_DIR=/home/mass/jParser
 
-  - 6.PATH を指定する  
-    PAHT に jParser.sh が設置してあるディレクトリを指定して下さい。
-
-</div>
-
-<div class="section chapter">
+[HEAP\_SIZE 変数\]  
+: jParser が使用できる最大メモリ量を指定してください。
+: 例) HEAP\_SIZE=128m
+6. PATH を指定する  
+  PAHT に jParser.sh が設置してあるディレクトリを指定して下さい。
 
 ## 実行
 
 任意のディレクトリで下記の通りに、コマンドを実行して下さい。
 
-``` code
+``` 
 $ jParser.sh[space]-x[アノテーションファイル名][space]-s[塩基配列ファイル名]
 ```
 
 例
 
-``` code
+``` 
 $ jParser.sh -xsample.ann -ssample.fasta
 ```
 
 ファイル名は絶対パス・相対パスのどちらでも指定できます。  
-<span class="bold">macOS: ファイル名とフォルダ名について</span>  
+**macOS: ファイル名とフォルダ名について**
 [配列ファイル](/ddbj/file-format.html#sequence)、[アノテーションファイル](/ddbj/file-format.html#annotation)のファイル名またはフォルダ名にマルチバイト文字が含まれていますと一部のバージョンの macOS では正常に動作しない場合がありますので、ファイル名とフォルダ名にマルチバイト文字を混在させないようにご注意ください。
 
-  - \-x[<span class="font-br font-normal">アノテーションファイル名</span>\]  
-    このオプションは必須です。指定されていない場合、本ツールは終了します。
-    アノテーションファイルは、登録データの登録者、REFERENCE、Feature/Qualifierの情報等を記述したタブ区切りテキストファイルです。
-    書式の詳細に関しては、[登録ファイル形式：アノテーションファイル](/ddbj/file-format.html#annotation)
-    をご参照下さい。
-  - \-s[<span class="font-br font-normal">塩基配列ファイル名</span>\]  
-    このオプションは必須です。指定されていない場合、本ツールは終了します。
-    塩基配列ファイルは、全登録データの配列をFASTA形式で記述したテキストファイルです。
-    書式の詳細に関しては、[登録ファイル形式：配列ファイル](/ddbj/file-format.html#sequence)をご参照下さい。
+\-x[<span class="font-br font-normal">アノテーションファイル名</span>\]  
+: このオプションは必須です。指定されていない場合、本ツールは終了します。 アノテーションファイルは、登録データの登録者、REFERENCE、Feature/Qualifierの情報等を記述したタブ区切りテキストファイルです。 書式の詳細に関しては、[登録ファイル形式：アノテーションファイル](/ddbj/file-format.html#annotation) をご参照下さい。
 
-<div class="attention no_color">
+\-s[<span class="font-br font-normal">塩基配列ファイル名</span>\]  
+: このオプションは必須です。指定されていない場合、本ツールは終了します。 塩基配列ファイルは、全登録データの配列をFASTA形式で記述したテキストファイルです。 書式の詳細に関しては、[登録ファイル形式：配列ファイル](/ddbj/file-format.html#sequence)をご参照下さい。
+
+<div class="attention">
 
 Parser は、エラーが発生している場合は、エラーメッセージを出力します。  
 エラーメッセージの意味は [Parser エラーメッセージ](/ddbj/validator.html#parser) をご覧ください。
-
-</div>
-
-</div>
 
 </div>
