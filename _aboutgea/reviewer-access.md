@@ -5,7 +5,7 @@ pathname: reviewer-access
 category: aboutgea
 ---
 
-<div class="section chapter">
+
 
 ## Reviewer access token
 
@@ -17,14 +17,14 @@ Reviewer access URL はアクセッション番号発行通知メールに含ま
 に登録した次世代シークエンス生データ以外の全てのメタデータとデータファイルへのアクセスが提供されます。[DRA](/dra/index.html)
 は非公開データへの reviewer access を提供していません。
 
-![reviewer access key を生成](/images/submission/reviewer1.jpg
+![reviewer access key を生成]({{ site.baseurl }}/assets/images/submission/reviewer1.jpg
 "reviewer access key を生成")
 
-![reviewer トークン](/images/submission/reviewer3.jpg "reviewer トークン")
+![reviewer トークン]({{ site.baseurl }}/assets/images/submission/reviewer3.jpg "reviewer トークン")
 
-</div>
 
-<div class="section chapter">
+
+
 
 ## 登録者の匿名化
 
@@ -41,10 +41,10 @@ token を生成した場合、reviewer には登録者を特定するような�
 access でフルメタデータが提供されるようになります。 データ公開後は reviewer access
 での登録者関連フィールドの自動削除は実施されなくなります。
 
+<div class="attention red">
 GEA は "Person"、"PubMed" と "Publication" で始まる IDF
 フィールドを自動で削除します。解析済みデータファイルのエクセル所有者情報などこれら以外の箇所に登録者を特定する情報を含めないようにすることは登録者の責任において実施してください。
-
-![double-blind オプションで自動削除される IDF フィールド](/images/submission/reviewer7.jpg
-"double-blind オプションで自動削除される IDF フィールド")
-
 </div>
+
+![double-blind オプションで自動削除される IDF フィールド]({{ site.baseurl }}/assets/images/submission/reviewer7.jpg
+"double-blind オプションで自動削除される IDF フィールド")
