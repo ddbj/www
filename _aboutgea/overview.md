@@ -5,7 +5,7 @@ pathname: overview
 category: aboutgea
 ---
 
-<div class="section chapter">
+
 
 ## 概要
 
@@ -18,7 +18,7 @@ type の[全リスト](/gea/experiment-types.html)。
 [MIAME](http://fged.org/projects/miame/) と
 [MINSEQE](http://fged.org/projects/minseqe/) ガイドラインに準拠する必要があります。
 
-<div class="gea_accept">
+
 
 <table>
 <colgroup>
@@ -57,60 +57,60 @@ type の[全リスト](/gea/experiment-types.html)。
 </tbody>
 </table>
 
-</div>
 
-<div id="human_subject" class="attention no_color">
 
+{::options parse_block_html="true" /}
+<div class="attention red">
   - ヒトを対象とした研究データの登録について  
     研究対象者に由来するデータを DDBJ
     センターが運営するデータベースに登録する場合、研究対象者の尊厳及び人権は、適用されるべき法令、指針、ガイドライン、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。原則として、研究対象者を直接特定し得る情報はメタデータから取り除いてください。
     ヒトを対象とした研究データを登録する場合は「[ヒトを対象とした研究データの登録について](/policies.html#human)」を熟読してください。
-
 </div>
 
-</div>
 
-<div class="section chapter">
+
+
+
 
 ## 登録ファイル
 
-<div class="section section">
+
 
 ### マイクロアレイ実験
 
 [マイクロアレイ実験の登録](/gea/submit-array.html)
 
-<div class="sub_index">
+
 
   - [IDF と SDRF メタデータ](/gea/metadata.html)
   - [生データ](/gea/datafile.html#array_data)
   - [解析済みデータ](/gea/datafile.html#array-proc)
   - [（必要であれば）アレイデザインファイル](/gea/adf.html)
 
-</div>
 
-</div>
 
-<div class="section section">
+
+
+
 
 ### シークエンシング実験
 
 [シークエンシング実験の登録](/gea/submit-seq.html)
 
-<div class="sub_index">
+
 
   - [IDF と SDRF メタデータ](/gea/metadata.html)
   - [生データ (先行して](/gea/datafile.html#seq_raw) [DRA](/dra/submission.html)
     に登録しておく必要があります)
   - [解析済みデータ](/gea/datafile.html#seq_proc)
 
-</div>
 
-</div>
 
-</div>
 
-<div class="section chapter">
+
+
+
+
 
 ## アクセッション番号
 
@@ -119,22 +119,22 @@ GEA の Experiment と Array design に対して以下の形式のアクセッ�
 codes](https://www.ebi.ac.uk/arrayexpress/help/accession_codes.html)
 をご覧ください。
 
-<div class="sub_index">
+
 
   - Experiment: E-GEAD-n
   - Array design: A-GEAD-n
 
 十分なメタデータとデータファイルが提供された登録に対してアクセッション番号が発行されます。
 
-<div class="section chapter">
+
 
 ## データ公開
 
 関連する論文が公表されるまでデータを非公開にすることができます。四年後までの公開予定日を設定し、随時延長することができます。登録されたデータは[データ公開原則](/data-release-policy.html)に従って公開されます。
 
-</div>
 
-<div class="section chapter">
+
+
 
 ## Reviewer access
 
@@ -142,16 +142,10 @@ GEA データベースに非公開 experiment と array design
 が登録された後、登録者は査読者用のアクセストークンを発行することができます。トークンを発行してジャーナルの編集者と査読者に伝える手順については
 [reviewer accesss](/gea/reviewer-access.html) ページをご覧ください。
 
-</div>
 
-<div class="section chapter">
+
+
 
 ## 更新
 
 GEA に登録されたデータを更新・削除する場合は [GEA チームに連絡](/contact.html)してください。
-
-</div>
-
-</div>
-
-</div>

@@ -1,16 +1,16 @@
 ---
 layout: indexed_content
-title: Controlled vocabulary for /rpt\_type qualifier
+title: Controlled vocabulary for /rpt_type qualifier
 pathname: rpt_type
 category: tentative
 ---
 
-The original site; [Controlled vocabulary for /rpt\_type qualifier](http://www.insdc.org/controlled-vocabulary-rpttype-qualifier) 2015.11.11 version.
+The original site; [Controlled vocabulary for /rpt_type qualifier](http://www.insdc.org/controlled-vocabulary-rpttype-qualifier) 2015.11.11 version.
 
 This page contains the current definition, format and controlled
 vocabularly for repeat type qualifier.
 
-``` code
+```
 Qualifier: /rpt_type=
 Definition: organization of repeated sequence 
 Value format: tandem, inverted, flanking, terminal, direct, dispersed, and other
@@ -34,17 +34,17 @@ Comment: the values are case-insensitive, i.e. both "INVERTED" and "inverted" ar
     a repeat that is located at dispersed sites in the genome;
   - *nested:*  
     a repeat that is disrupted by the insertion of another element;
-  - *long\_terminal\_repeat:*  
+  - *long_terminal_repeat:*  
     a sequence directly repeated at both ends of a defined sequence, of the sort typically found in retroviruses (replaces LTR Feature Key);
-  - *non\_ltr\_retrotransposon\_polymeric\_tract:*  
+  - *non_ltr_retrotransposon_polymeric_tract:*  
     a polymeric tract, such as poly(dA), within a non LTR retrotransposon;
-  - *x\_element\_combinatorial\_repeat:*  
+  - *x_element_combinatorial_repeat:*  
     a repeat region located between the X element and the telomere or adjacent Y' element;
-  - *y\_prime\_element:*  
+  - *y_prime_element:*  
     a repeat region located adjacent to telomeric repeats or X element combinatorial repeats, either as a single copy or tandem repeat of two to four copies;
-  - *telomeric\_repeat:*  
+  - *telomeric_repeat:*  
     a repeat region found within the telomere;
-  - *centromeric\_repeat:*  
+  - *centromeric_repeat:*  
     a repeat region found within the modular centromere;
   - other:  
     a repeat exhibiting important attributes that cannot be described by other values.
