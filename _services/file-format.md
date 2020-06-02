@@ -97,22 +97,25 @@ Feature, Location, Qualifier, Value の５列からなるタブ区切りテキ�
 必ず、[UME](/ddbj/ume.html) または [Parser](/ddbj/parser.html)
 を用いて、配列ファイルとアノテーションファイルの書式をご確認ください。
 
-  - Entry  
-    [登録ファイル形式：配列ファイル](#sequence)で示した配列ファイルと対応するエントリ名を入力してください。
-    エントリ名を入力後、次のエントリが始まる行までは、Entry カラムには何も入力しないでください。
-  - Feature  
-    [Biological feature](#biological_feature) と 独自に規定された DDBJ 登録用
-    feature の２つのタイプがあります。各 Feature の記載方法については以下で解説します。
-    Feature 入力後、次の Feature が始まる行までは、Feature カラムには何も入力しないでください。
-  - Location  
-    [Biological feature](#biological_feature) と
-    [PRIMARY\_CONTIG](#primary_contig) で Feature の記載に隣接するカラムにのみ、記載が必要です。
-  - Qualifier  
-    各行に 1つ記載します。記載可能な Qualifier は Feature に依存します。詳細は以下で解説します。
-  - Value  
-    Qualifier に依存します。各 Qualifier の説明に従って記載してください。
-  - その他  
-    アノテーションファイルでは、空行が存在した時点でファイルの終わりと判断されます。従って、複数エントリを入力する場合は、登録する全てのエントリの入力が終わるまで、途中に空行を作らずに入力してください。
+Entry  
+: [登録ファイル形式：配列ファイル](#sequence)で示した配列ファイルと対応するエントリ名を入力してください。
+: エントリ名を入力後、次のエントリが始まる行までは、Entry カラムには何も入力しないでください。
+
+Feature  
+: [Biological feature](#biological_feature) と 独自に規定された DDBJ 登録用 feature の２つのタイプがあります。各 Feature の記載方法については以下で解説します。
+: Feature 入力後、次の Feature が始まる行までは、Feature カラムには何も入力しないでください。
+
+Location  
+: [Biological feature](#biological_feature) と [PRIMARY\_CONTIG](#primary_contig) で Feature の記載に隣接するカラムにのみ、記載が必要です。
+
+Qualifier  
+: 各行に 1つ記載します。記載可能な Qualifier は Feature に依存します。詳細は以下で解説します。
+
+Value  
+: Qualifier に依存します。各 Qualifier の説明に従って記載してください。
+
+その他  
+: アノテーションファイルでは、空行が存在した時点でファイルの終わりと判断されます。従って、複数エントリを入力する場合は、登録する全てのエントリの入力が終わるまで、途中に空行を作らずに入力してください。
 
 ### Biological Feature 記載に関する参照先
 
@@ -135,20 +138,15 @@ Feature, Location, Qualifier, Value の５列からなるタブ区切りテキ�
 
 #### COMMON の活用
 
-  - location に使用可能なメタ塩基番号'E'  
-    例: COMMON に rRNA feature を記載
-        
-    | Entry  | Feature | Location                           | Qualifier | Value    |
-    | ------ | ------- | ---------------------------------- | --------- | -------- |
-    | COMMON | rRNA    | \<1..\><span class="bold">E</span> | product   | 16S rRNA |
-        
-    配列長が異なるために Location が異なることを除けば、Feature 以下の Qualifier, Value
-    の情報が全てのエントリで共通に記載可能なケース（例：rRNA
-    部分配列による系統解析など）があります。
-    
-    そのような場合には、COMMON エントリに Feature を記載し location
-    には、最後の塩基番号の代わりにメタ塩基番号として、<span class="bold">E</span>
-    を記載することにより、全てのエントリに共通となる Feature を COMMON エントリに記載することが可能です。
+location に使用可能なメタ塩基番号'E'  
+: 例: COMMON に rRNA feature を記載
+
+  | Entry  | Feature | Location                           | Qualifier | Value    |
+  | ------ | ------- | ---------------------------------- | --------- | -------- |
+  | COMMON | rRNA    | \<1..\><span class="bold">E</span> | product   | 16S rRNA |
+  
+: 配列長が異なるために Location が異なることを除けば、Feature 以下の Qualifier, Value の情報が全てのエントリで共通に記載可能なケース（例：rRNA 部分配列による系統解析など）があります。
+: そのような場合には、COMMON エントリに Feature を記載し location には、最後の塩基番号の代わりにメタ塩基番号として、<span class="bold">E</span> を記載することにより、全てのエントリに共通となる Feature を COMMON エントリに記載することが可能です。
 
   - clone, submitter\_seqid, note, ff\_definition に使用可能なメタ表記
     '@@\[entry\]@@'  
