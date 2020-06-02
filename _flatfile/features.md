@@ -5,10 +5,6 @@ pathname: features
 category: flatfile
 ---
 
-<div id="description_container">
-
-<div id="description">
-
 DDBJ への新規登録において使用を推奨する feature key の定義を以下に挙げています。  
 INSDC において運用している feature key に関する詳細は、Feature Table Definition の [7.2 Appendix II: Feature keys reference](/ddbj/full_index.html#7.2) をご参照ください。
 
@@ -16,20 +12,24 @@ INSDC において運用している feature key に関する詳細は、Feature
 
 Feature/Qualifier 対応一覧表には、DDBJ へ登録を推奨する feature と qualifier の組み合わせを示しています。
 
-[Feature/Qualifier対応一覧表![](/images/parts/pdf.png "pdficon")](/files/pdf/ddbj/fq-j.pdf)(2016.11.09)
+[Feature/Qualifier対応一覧表![]({{ site.baseurl }}/assets/images/parts/pdf.png){:.pdficon}](/files/pdf/ddbj/fq-j.pdf)(2016.11.09)
 
 INSDC において記載可能な feature と qualifier の組み合わせに関しましては、[Feature Table Definition](/ddbj/full_index.html) の [7.2 Appendix II: Feature keys reference](/ddbj/full_index.html#7.2) をご参照ください。
 
 ## Feature key の定義
 
-  - assembly\_gap<span class="FT">[Feature Table Definition](/ddbj/full_index.html#assembly_gap)</span>  
-    [genome](/ddbj/genome-j.html) または [transcriptome](/ddbj/transcriptome-j.html) assembly の一部において、2つの構成要素の間に位置する sequencing gap
-  - C\_region<span class="FT">[Feature Table Definition](/ddbj/full_index.html#C_region)</span>  
-    免疫グロブリン重・軽鎖, T-cell receptor アルファ・ベータ・ガンマ鎖の定常部位
-  - CDS<span class="FT">[Feature Table Definition](/ddbj/full_index.html#fCDS)</span>  
-    タンパク質 (ペプチド) のアミノ酸 (終止コドンを含む) をコードする配列 [CDS feature の解説](/ddbj/cds-j.html)もご一読ください。
-  - centromere<span class="FT">[Feature Table Definition](/ddbj/full_index.html#centromere)</span>  
-    生物学的な観点から実験的に centromere と同定された領域
+assembly\_gap<span class="FT">[Feature Table Definition](/ddbj/full_index.html#assembly_gap)</span>  
+: [genome](/ddbj/genome-j.html) または [transcriptome](/ddbj/transcriptome-j.html) assembly の一部において、2つの構成要素の間に位置する sequencing gap
+
+C\_region<span class="FT">[Feature Table Definition](/ddbj/full_index.html#C_region)</span>  
+: 免疫グロブリン重・軽鎖, T-cell receptor アルファ・ベータ・ガンマ鎖の定常部位
+  
+CDS<span class="FT">[Feature Table Definition](/ddbj/full_index.html#fCDS)</span>  
+: タンパク質 (ペプチド) のアミノ酸 (終止コドンを含む) をコードする配列 [CDS feature の解説](/ddbj/cds-j.html)もご一読ください。
+
+centromere<span class="FT">[Feature Table Definition](/ddbj/full_index.html#centromere)</span>  
+: 生物学的な観点から実験的に centromere と同定された領域
+
   - D-loop<span class="FT">[Feature Table Definition](/ddbj/full_index.html#D-loop)</span>  
     displacement loop; ミトコンドリアDNA内の２本鎖の一方に相同な配列の１本鎖が対合をなす領域。  
     RecA タンパク質に触媒される反応において外来の１本鎖によって２本鎖DNAの一方が置換する部位の記述にも用いる。
@@ -122,7 +122,3 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
   - 5'UTR<span class="FT">[Feature Table Definition](/ddbj/full_index.html#5UTR)</span>  
     1.  成熟したmRNAのタンパク質に翻訳されない5'末端部位;  
     2.  RNA ウイルスゲノムののタンパク質に翻訳されない5'末端部位
-
-</div>
-
-</div>

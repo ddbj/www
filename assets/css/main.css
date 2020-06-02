@@ -491,6 +491,11 @@ input, textarea, select, button {
     display: inline-block;
     opacity: .9;
     transition: opacity .1s linear 0s; }
+  .md-content .pdficon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-left: 2px; }
 
 .multi-column-view {
   border-top: 1px solid #1C1B19; }
