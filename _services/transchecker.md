@@ -11,68 +11,84 @@ transChecker は Mass Submission System (MSS) を利用して DDBJ に登録す�
 
 ## インストール
 
-1. [MSS データフイル用チェックツール](/ddbj/mss-tool.html)から transChecker.tar.gz を取得  
-2. tar.gz ファイルを gunzip コマンドで解凍
-  ``` 
-  $ gunzip transChecker.tar.gz
-  ```
-3. tar ファイルを tar コマンドで展開
-  ``` 
-  $ tar xvf transChecker.tar
-  ```
-4. ディレクトリが生成される  
-    下記の要領で、ディレクトリの中身を見ると以下のようになっています。
-  ``` 
-  $ cd transChecker
-  $ ls -FC
-  jar/      license.txt   transChecker.sh*
-  ```
-<table>
-  <tbody>
-    <tr>
-      <th>jar/</th>
-      <td>java のクラスライブラリ格納ディレクトリ(改変不可)</td>
-      </tr>
-    <tr>
-      <th>license.txt</th>
-      <td>使用許諾(改変不可)</td>
-    </tr>
-    <tr>
-      <th>transChecker.sh</th>
-      <td>実行シェルスクリプト</td>
-    </tr>
-  </tbody>
-</table>
-5. ファイルの編集  
-  transChecker.sh を実行する前にファイルの中身を、インストールしたコンピュータの環境にあわせるために変更する必要があります。vi などのエディタで編集して下さい。
-  
-  ``` code
-  #!/bin/sh
-  
-  # Installed directory
-  TRANS_DIR=./
-  
-  # Set maximum Java heap size
-  HEAP_SIZE=128m
-  
-  # Execution Command
-  # Don't change.
-  java -Xmx$HEAP_SIZE -jar $TRANS_DIR/jar/transChecker.jar -Cclean $@
-  
-  RETVAL=$?
-  
-  exit $RETVAL
-  #EOF
-  ```
-[TRANS\_DIR 変数\]  
-: transChecker ディレクトリのある場所をフルパスで入力して下さい。
-: 例) TRANS\_DIR=/home/mass/transChecker
+<ol>
+  <li>
+    <a href="/ddbj/mss-tool.html">MSS データフイル用チェックツール</a>から transChecker.tar.gz を取得 
+  </li>     
+  <li>  
+    tar.gz ファイルを gunzip コマンドで解凍<br>
+    <code>
+      $ gunzip transChecker.tar.gz
+    </code>   
+  </li>   
+  <li>
+    tar ファイルを tar コマンドで展開<br>
+    <code>
+      $ tar xvf transChecker.tar
+    </code>
+  </li>  
+  <li>
+    ディレクトリが生成される<br>
+    下記の要領で、ディレクトリの中身を見ると以下のようになっています。<br>
+    <code>  
+      $ cd transChecker
+      $ ls -FC
+      jar/license.txt   transChecker.sh*
+    </code>
+    <table>
+      <tbody>
+        <tr>
+          <th>jar/</th>
+          <td>java のクラスライブラリ格納ディレクトリ(改変不可)</td>
+        </tr>
+        <tr>
+          <th>license.txt</th>
+          <td>使用許諾(改変不可)</td>
+        </tr>
+        <tr>
+          <th>transChecker.sh</th>
+          <td>実行シェルスクリプト</td>
+        </tr>
+      </tbody>
+    </table>
+</li>
+<li>ファイルの編集<br>
+    transChecker.sh を実行する前にファイルの中身を、インストールしたコンピュータの環境にあわせるために変更する必要があります。vi などのエディタで編集して下さい。
+    <pre>
+      <code>
+#!/bin/sh
 
-[HEAP\_SIZE 変数\]  
-: transChecker が使用できる最大メモリ量を指定してください。
-: 例) HEAP\_SIZE=128m
-6. PATH を指定する  
-  PATH に transChecker.sh が設置してあるディレクトリを指定して下さい。
+# Installed directory
+TRANS_DIR=./
+
+# Set maximum Java heap size
+HEAP_SIZE=128m
+
+# Execution Command
+# Don't change.
+java -Xmx$HEAP_SIZE -jar $TRANS_DIR/jar/transChecker.jar -Cclean $@
+
+RETVAL=$?
+
+exit $RETVAL
+#EOF
+      </code>
+    </pre>
+
+    <dl>
+      <dt>[TRANS_DIR 変数]</dt>
+      <dd>transChecker ディレクトリのある場所をフルパスで入力して下さい。</dd>
+      <dd>例) TRANS_DIR=/home/mass/transChecker</dd>
+      <dt>[HEAP_SIZE 変数]</dt>
+      <dd>transChecker が使用できる最大メモリ量を指定してください。</dd>
+      <dd>例) HEAP_SIZE=128m</dd>
+    </dl>
+  </li>  
+  <li>
+    PATH を指定する<br>
+    PATH に transChecker.sh が設置してあるディレクトリを指定して下さい。
+  </li>
+</ol>
 
 ## 実行
 

@@ -125,22 +125,32 @@ Parser は、エラーが発生している場合は、エラーメッセージ�
 
 Check タブをクリックし、 Check パネル を表示させます。
 
-1. 処理対象とする [アノテーションファイル](/ddbj/file-format.html#annotation) と[配列ファイル](/ddbj/file-format.html#sequence) をそれぞれ指定します。
-2. Execute をクリックしますと、(1) で指定したファイルを transChecker でチェックします。
-3. Save log in file をチェックした場合は、transChecker の実行結果をテキストファイルに保存します。
-4. Save translated sequences in file をチェックした場合は、transChecker 実行時に出力される翻訳アミノ酸配列を選択された書式でテキストファイルに保存します。<br>翻訳アミノ酸配列の出力書式は以下の２通りです。
-
-| --------------------- | --------------------- |
-| [FASTA-like format](/ddbj/transchecker.html#output-1-1) | Translate in FASTA format を選択した場合               |
-| [塩基配列とのアラインメント](/ddbj/transchecker.html#output-1-2)     | Translate in alignment with nucleotide sequence |
-
-5. transChecker の実行結果表示ウィンドウが開きます。
-6. transChecker チェックの進行状況を表示します。
-7. transChecker チェックの実行結果、エラーメッセージなどを表示します。
-8. Save をクリックしますと、(7) の内容をテキストファイルに保存します。
-9. transChecker チェックの実行結果、翻訳アミノ酸配列を (4) で選択した書式で表示します。
-10. Save をクリックしますと、(9) の内容をテキストファイルに保存します。
-11. Close をクリックしますと、この結果表示ウィンドウを閉じます。
+<ol>
+  <li>処理対象とする <a href="/ddbj/file-format.html#annotation">アノテーションファイル</a> と <a href="/ddbj/file-format.html#sequence">配列ファイル</a> をそれぞれ指定します。</li>
+  <li>Execute をクリックしますと、(1) で指定したファイルを transChecker でチェックします。</li>
+  <li>Save log in file をチェックした場合は、transChecker の実行結果をテキストファイルに保存します。</li>
+  <li>Save translated sequences in file をチェックした場合は、transChecker 実行時に出力される翻訳アミノ酸配列を選択された書式でテキストファイルに保存します。<br>翻訳アミノ酸配列の出力書式は以下の２通りです。
+    <table>
+      <tbody>
+        <tr>
+          <td class="first"><a href="/ddbj/transchecker.html#output-1-1">FASTA-like format</a></td>
+          <td class="second">Translate in FASTA format を選択した場合</td>
+        </tr>
+        <tr>
+          <td class="first"><a href="/ddbj/transchecker.html#output-1-2">塩基配列とのアラインメント</a></td>
+          <td class="second">Translate in alignment with nucleotide sequence</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>transChecker の実行結果表示ウィンドウが開きます。</li>
+  <li>transChecker チェックの進行状況を表示します。</li>
+  <li>transChecker チェックの実行結果、エラーメッセージなどを表示します。</li>
+  <li>Save をクリックしますと、(7) の内容をテキストファイルに保存します。</li>
+  <li>transChecker チェックの実行結果、翻訳アミノ酸配列を (4) で選択した書式で表示します。</li>
+  <li>Save をクリックしますと、(9) の内容をテキストファイルに保存します。</li>
+  <li>Close をクリックしますと、この結果表示ウィンドウを閉じます。</li>
+</ol>      
 
 {::options parse_block_html="true" /}
 <div class="attention">

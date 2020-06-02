@@ -144,34 +144,30 @@ location に使用可能なメタ塩基番号'E'
   | Entry  | Feature | Location                           | Qualifier | Value    |
   | ------ | ------- | ---------------------------------- | --------- | -------- |
   | COMMON | rRNA    | \<1..\><span class="bold">E</span> | product   | 16S rRNA |
-  
+
 : 配列長が異なるために Location が異なることを除けば、Feature 以下の Qualifier, Value の情報が全てのエントリで共通に記載可能なケース（例：rRNA 部分配列による系統解析など）があります。
 : そのような場合には、COMMON エントリに Feature を記載し location には、最後の塩基番号の代わりにメタ塩基番号として、<span class="bold">E</span> を記載することにより、全てのエントリに共通となる Feature を COMMON エントリに記載することが可能です。
 
-  - clone, submitter\_seqid, note, ff\_definition に使用可能なメタ表記
-    '@@\[entry\]@@'  
-    例: COMMON に source feature を記載
+clone, submitter\_seqid, note, ff\_definition に使用可能なメタ表記 '@@\[entry\]@@'  
+: 例: COMMON に source feature を記載
+
+  | Entry  | Feature | Location                       | Qualifier        | Value                                                                                               |
+  | ------ | ------- | ------------------------------ | ---------------- | --------------------------------------------------------------------------------------------------- |
+  | COMMON | source  | 1..<span class="bold">E</span> | organism         | Homo sapiens                                                                                        |
+  |        |         |                                | mol\_type        | genomic DNA                                                                                         |
+  |        |         |                                | submitter\_seqid | <span class="bold">@@\[entry\]@@</span>                                                             |
+  |        |         |                                | ff\_definition   | <span class="bold">@@\[organism\]@@</span> DNA, <span class="bold"> @@\[submitter\_seqid\]@@</span> |
         
-    | Entry  | Feature | Location                       | Qualifier        | Value                                                                                               |
-    | ------ | ------- | ------------------------------ | ---------------- | --------------------------------------------------------------------------------------------------- |
-    | COMMON | source  | 1..<span class="bold">E</span> | organism         | Homo sapiens                                                                                        |
-    |        |         |                                | mol\_type        | genomic DNA                                                                                         |
-    |        |         |                                | submitter\_seqid | <span class="bold">@@\[entry\]@@</span>                                                             |
-    |        |         |                                | ff\_definition   | <span class="bold">@@\[organism\]@@</span> DNA, <span class="bold"> @@\[submitter\_seqid\]@@</span> |
-        
-    Location および clone 名や contig 名を除けば、Feature: source の Qualifier,
-    Value の情報が全てのエントリで共通に記載可能なケース（例： EST, GSS, TSA, TLS, WGS, WGS
-    scaffold (CON division)など）があります。
+: Location および clone 名や contig 名を除けば、Feature: source の Qualifier, Value の情報が全てのエントリで共通に記載可能なケース（例： EST, GSS, TSA, TLS, WGS, WGS scaffold (CON division)など）があります。
     
-    そのような場合、エントリ名に clone 名 または contig 名を使用する場合に限り、Feature: source を
-    COMMON エントリに記載することが可能です。
-    
-      - Location には、最後の塩基番号の代わりにメタ塩基番号として、<span class="bold">E</span>
-        を記載します。
-      - 例に示した <span class="bold">@@\[entry\]@@</span>
-        の形式で記載すると、配列ファイルから引用したエントリ名に置換されます。
-        <span class="bold">@@\[entry\]@@</span> を記載は clone,
-        submitter\_seqid, note, ff\_definition の Value に限定しています。
+: そのような場合、エントリ名に clone 名 または contig 名を使用する場合に限り、Feature: source を COMMON エントリに記載することが可能です。
+
+  - Location には、最後の塩基番号の代わりにメタ塩基番号として、<span class="bold">E</span>
+    を記載します。
+  - 例に示した <span class="bold">@@\[entry\]@@</span>
+    の形式で記載すると、配列ファイルから引用したエントリ名に置換されます。
+    <span class="bold">@@\[entry\]@@</span> を記載は clone,
+    submitter\_seqid, note, ff\_definition の Value に限定しています。
 
 ### SUBMITTER
 
@@ -198,104 +194,45 @@ location に使用可能なメタ塩基番号'E'
 
 SUBMITTER で使用する Qualifier のリスト
 
-Qualifier
-
-Value 使用可能文字(注意事項)
-
-Value 文字上限数
-
-ab\_name (登録者名)
-
-英, .\[period\], ,\[comma\], -\[hyphen\], ' \[apostrophe\]
-
-64
-
-contact (コンタクトパーソン)
-
-英, .\[period\], ,\[comma\], -\[hyphen\], ' \[apostrophe\], \[space\]  
-(first, middle, last name の順で間に space を入れて入力)
-
-first(64),  
-middle(128), last(64)
-
-consrtm (コンソーシアム名)
-
-英, 数, \[space\], -\[hyphen\], ' \[apostrophe\], .\[period\],
-\_\[underscore\], .\[comma\], ( ) \# & @ / ; : + \*
-
-255
-
-email
-
-英, 数, @, .\[period\], -\[hyphen\], \_\[underscore\]
-
-64
-
-\[space\] 以外
-
-255
-
-phone, fax, phext
-
-数, -\[hyphen\] (国番号の頭に + はつけない)
-
-16
-
-institute, department
-
-\[back-slash\], \` \[back-quote\] 以外
-
-255
-
-country, state
-
-英, 数, \[space\], -\[hyphen\], '\[apostrophe\], .\[period\],
-\_\[underscore\], ,\[comma\], ( ) \# & @ / ; : + \*
-
-32
-
-city
-
-英, 数, \[space\], -\[hyphen\], '\[apostrophe\], .\[period\],
-\_\[underscore\], ,\[comma\], ( ) \# & @ / ; : + \*
-
-64
-
-street
-
-英, 数, \[space\], -\[hyphen\], '\[apostrophe\], .\[period\],
-\_\[underscore\], ,\[comma\], ( ) \# & @ / ; : + \*
-
-255
-
-zip
-
-英, 数, -\[hyphen\]
-
-16
+|  Qualifier  |  Value 使用可能文字(注意事項)   |  Value 文字上限数  |
+| ---- | ---- | ---- |
+|  ab_name (登録者名)  |  英, .[period], ,[comma], -[hyphen], ' [apostrophe]  |  64  |
+|  contact (コンタクトパーソン)  |  英, .[period], ,[comma], -[hyphen], ' [apostrophe],  [space] (first, middle, last name の順で間に space を入れて入力)  |  first(64),middle(128), last(64)  |
+|  consrtm (コンソーシアム名)  |  英, 数,  [space], -[hyphen], ' [apostrophe], .[period], _[underscore], .[comma], ( ) # & @ / ; : + *  |  255  |
+|  email   |  英, 数, @, .[period], -[hyphen], _[underscore]   |  64  |
+|  <url></url>  |  [space] 以外  |  255  |
+|  phone, fax, phext  |  数, -[hyphen] (国番号の頭に + はつけない)  |  16  |
+|  institute, department  |  [back-slash], ` [back-quote] 以外  |  255  |
+|  country, state   |  英, 数,  [space], -[hyphen], '[apostrophe], .[period], _[underscore], ,[comma], ( ) # & @ / ; : + *  |  32  |
+|  city  |  英, 数,  [space], -[hyphen], '[apostrophe], .[period], _[underscore], ,[comma], ( ) # & @ / ; : + *  |  64  |
+|  street  |  英, 数,  [space], -[hyphen], '[apostrophe], .[period], _[underscore], ,[comma], ( ) # & @ / ; : + *  |  255  |
+|  zip  |  英, 数, -[hyphen]  |  16  |                             
 
 #### SUBMITTER の書式
 
-  - SUBMITTER は各エントリに一件必ず入力していただく必要がありますが、全件共通の SUBMITTER を入力する場合には
-    [COMMON](#common) エントリに入力してください。  
-    エントリ毎に異なる SUBMITTER を入力したい場合には個々のエントリに記載してください。なお、COMMON エントリに
-    SUBMITTER を記載した場合は、他の全てのエントリで SUBMITTER を使用することはできません。
-  - SUBMITTER の Qualifier: ab\_name
-    には複数の[登録者](/ddbj/submission.html#submitter)を入力できます。DDBJ
-    の[フラットファイル](/ddbj/flat-file.html)には、ここで入力された順番に登録者が記載されます。複数の登録者の記載を強く推奨しています。  
-    登録者の中から一名、コンタクトパーソン を Qualifier: contact で再度指定してください。contact の Value
-    には、full name を記載してください。
-  - Qualifier: ab\_name の Value には、論文等の著者名に準ずる形式で、氏名の略記を記載してください。
-      - 形式:  
-        last name\[comma\]first name の頭文字\[period\]middle name
-        の頭文字\[period\]
-      - 例:  
-        Miyashita,Y.
-        Robertson,G.R.
-    形式によって (氏名にハイフンを含む等)、Parser によるチェックで WAR
-    レベルのメッセージが表示されることがありますが、記述内容に問題がない場合は、そのまま記載可能です。
-  - ab\_name 以外の Qualifier の Value
-    には、コンタクトパーソンの情報をそれぞれ一件ずつしか入力できません。複数の研究機関の情報を入力したい場合には、別途、ご連絡ください。
+- SUBMITTER は各エントリに一件必ず入力していただく必要がありますが、全件共通の SUBMITTER を入力する場合には
+  [COMMON](#common) エントリに入力してください。  
+  エントリ毎に異なる SUBMITTER を入力したい場合には個々のエントリに記載してください。なお、COMMON エントリに
+  SUBMITTER を記載した場合は、他の全てのエントリで SUBMITTER を使用することはできません。
+- SUBMITTER の Qualifier: ab\_name
+  には複数の[登録者](/ddbj/submission.html#submitter)を入力できます。DDBJ
+  の[フラットファイル](/ddbj/flat-file.html)には、ここで入力された順番に登録者が記載されます。複数の登録者の記載を強く推奨しています。  
+  登録者の中から一名、コンタクトパーソン を Qualifier: contact で再度指定してください。contact の Value
+  には、full name を記載してください。
+- Qualifier: ab\_name の Value には、論文等の著者名に準ずる形式で、氏名の略記を記載してください。
+
+  形式:  
+  : last name\[comma\]first name の頭文字\[period\]middle name
+      の頭文字\[period\]
+
+  例:  
+  : Miyashita,Y.
+  : Robertson,G.R.
+
+  形式によって (氏名にハイフンを含む等)、Parser によるチェックで WAR
+  レベルのメッセージが表示されることがありますが、記述内容に問題がない場合は、そのまま記載可能です。
+- ab\_name 以外の Qualifier の Value
+  には、コンタクトパーソンの情報をそれぞれ一件ずつしか入力できません。複数の研究機関の情報を入力したい場合には、別途、ご連絡ください。
 
 ### REFERENCE
 
@@ -315,83 +252,40 @@ zip
 
 REFERENCE で使用する Qualifier のリスト
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Qualifier</th>
-<th>Value 使用可能文字(注意事項)</th>
-<th>Value 文字上限数</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>title (論文のタイトル)</td>
-<td>[back-slash], ` [back-quote] 以外</td>
-<td>255</td>
-</tr>
-<tr class="even">
-<td>ab_name (著者名)</td>
-<td>英, .[period], ,[comma], -[hyphen], ' [apostrophe]</td>
-<td>64</td>
-</tr>
-<tr class="odd">
-<td>consrtm (コンソーシアム名)</td>
-<td>英, 数, [space], -[hyphen], ' [apostrophe], .[period], _[underscore],<br />
-,[comma], ( ) # &amp; @ / ; : + *</td>
-<td>255</td>
-</tr>
-<tr class="even">
-<td>status</td>
-<td>以下の何れか<br />
-Unpublished, In press, Published</td>
-<td>-</td>
-</tr>
-<tr class="odd">
-<td>year</td>
-<td>数(西暦4桁)</td>
-<td>4</td>
-</tr>
-<tr class="even">
-<td>journal</td>
-<td>[back-slash], ` [back-quote] 以外 (PubMed type abbreviation を入力)</td>
-<td>128</td>
-</tr>
-<tr class="odd">
-<td>volume, start_page, end_page</td>
-<td>英, 数, -[hyphen]</td>
-<td>8</td>
-</tr>
-</tbody>
-</table>
+|  Qualifier  |  Value 使用可能文字(注意事項)  |  Value 文字上限数  |
+| ---- | ---- | ---- |
+|  title (論文のタイトル)  |  [back-slash], ` [back-quote] 以外  |  255  |
+|  ab_name (著者名)  |  英, .[period], ,[comma], -[hyphen], ' [apostrophe]  |  64  |
+|  consrtm (コンソーシアム名)  |  英, 数, [space], -[hyphen], ' [apostrophe], .[period], _[underscore],<br/>,[comma], ( ) # &amp; @ / ; : + *  |  255  |
+|  status  |  以下の何れか<br/>Unpublished, In press, Published  |  -  |
+|  year  |  数(西暦4桁)  |  4  |
+|  journal  |  [back-slash], ` [back-quote] 以外 (PubMed type abbreviation を入力)  |  128  |
+|  volume, start_page, end_page  |  英, 数, -[hyphen]  |  8  |
 
 #### REFERENCE の書式
 
-  - REFERENCE は各エントリに最低１つ、必須となります。
-  - Qualifier: ab\_name の Value には、論文等の著者名に準ずる形式で、氏名の略記を記載してください。
-      - 形式:  
-        last name\[comma\]first name の頭文字\[period\]middle name
-        の頭文字\[period\]
-      - 例:  
-        Miyashita,Y.
-        Robertson,G.R.
-    形式によって (氏名にハイフンを含む等)、Parser によるチェックで WAR
-    レベルのメッセージが表示されることがありますが、記述内容に問題がない場合は、そのまま記載可能です。
-  - status が "In Press" の場合は、Qualifier: journal も必須となります。
-  - status が "Published" の場合は、Qualifier: journal, volume, start\_page,
-    end\_page も必須となります。
-  - 今後論文に投稿する予定のない場合にも、status を "Unpublished" として REFERENCE を入力してください。
-  - journal には雑誌の PubMed type abbreviation を入力して下さい。
-  - REFERENCE を複数入力する場合には、登録する塩基配列を掲載する予定の論文、あるいは、既に掲載されている論文情報を
-    REFERENCE の筆頭に入力し、参考文献はそれ以降に入力してください。
-  - 登録する塩基配列に関する REFERENCE 情報が全件に共通する場合は、[COMMON](#common)
-    エントリに入力してください。エントリ毎に異なる参考文献の情報を入力したい場合には個々のエントリに記載してください。
-  - COMMON エントリと個々のエントリの双方に REFERENCE を入力した場合には、COMMON
-    の情報から順に、フラットファイル上に反映されます。
+- REFERENCE は各エントリに最低１つ、必須となります。
+- Qualifier: ab\_name の Value には、論文等の著者名に準ずる形式で、氏名の略記を記載してください。
+  形式:  
+  : last name\[comma\]first name の頭文字\[period\]middle name の頭文字\[period\]
+
+  例:  
+  : Miyashita,Y.
+  : Robertson,G.R.
+
+  形式によって (氏名にハイフンを含む等)、Parser によるチェックで WAR
+  レベルのメッセージが表示されることがありますが、記述内容に問題がない場合は、そのまま記載可能です。
+- status が "In Press" の場合は、Qualifier: journal も必須となります。
+- status が "Published" の場合は、Qualifier: journal, volume, start\_page,
+  end\_page も必須となります。
+- 今後論文に投稿する予定のない場合にも、status を "Unpublished" として REFERENCE を入力してください。
+- journal には雑誌の PubMed type abbreviation を入力して下さい。
+- REFERENCE を複数入力する場合には、登録する塩基配列を掲載する予定の論文、あるいは、既に掲載されている論文情報を
+  REFERENCE の筆頭に入力し、参考文献はそれ以降に入力してください。
+- 登録する塩基配列に関する REFERENCE 情報が全件に共通する場合は、[COMMON](#common)
+  エントリに入力してください。エントリ毎に異なる参考文献の情報を入力したい場合には個々のエントリに記載してください。
+- COMMON エントリと個々のエントリの双方に REFERENCE を入力した場合には、COMMON
+  の情報から順に、フラットファイル上に反映されます。
 
 ### DATE
 
@@ -467,17 +361,22 @@ COMMENT" があります。詳細は以下をご覧ください。
     
     Genome-Assembly-Data で使用する Qualifier のリスト
     （<span class="red">入力必須項目</span>）
-        
+
     | Qualifier                                      | 意味・内容                          | 備考                                                             |
     | ---------------------------------------------- | ------------------------------ | -------------------------------------------------------------- |
     | <span class="red">Assembly Method</span>       | アセンブルに使用したソフトの名前とそのバージョン。      |                                                                |
-    | Assembly Name                                  | ゲノムアセンブリの名称・バージョン。 真核生物の場合、必須。 | 推奨書式： \[organism の種名 (or 一般名)\] + \[version 数値\] （例；Btau\_4.0） |
+    | Assembly Name | ゲノムアセンブリの名称・バージョン。 真核生物の場合、必須。 | 推奨書式： \[organism の種名 (or 一般名)\] + \[version 数値\] （例；Btau\_4.0） |
     | <span class="red">Genome Coverage</span>       | ゲノム配列決定の深度、被覆度換算。              |                                                                |
     | <span class="red">Sequencing Technology</span> | 配列解析に使用されたシークエンサー。             |                                                                |
         
     Assembly-Data で使用する Qualifier のリスト （<span class="red">入力必須項目</span>）
         
-    Qualifier
+    |  Qualifier  |  意味・内容  |
+    | ---- | ---- |
+    |  <span class="red">Assembly Method</span>	  |  アセンブルに使用したソフトの名前とそのバージョン。必須。  |
+    |  Assembly Name	  |  アセンブリの名称・バージョン。  |
+    |  Coverage	  |  配列決定の深度、被覆度換算。  |
+    |  <span class="red">Sequencing Technology</span>	  |  配列解析に使用されたシークエンサー。必須。  |
     
   - 記載の可否や内容等については登録毎に個別に対応しますので、MSS の担当者にお問い合わせください。
 
@@ -581,70 +480,88 @@ methodological keywords](/ddbj/keyword.html)をご参照ください。
 
 データ種別ごとの keyword の Value<span class="red">入力必須項目</span>
 
-データ種別
-
-keyword の Value
-
-注意事項
-
-[WGS](/ddbj/wgs.html)
-
-<span class="red">WGS</span>
-
-[WGS, scaffold CON の場合](#wgs_con) もご参照ください。
-
-[ENV](/ddbj/env.html)
-
-<span class="red">ENV</span>
-
-[EST](/ddbj/est.html)
-
-<span class="red">EST</span>
-
-その他
-
-[EST の場合](#est) 参照
-
-[HTC](/ddbj/htc.html)
-
-<span class="red">HTC</span>, その他
-
-その他については、登録毎にご連絡いたします。
-
-[HTG](/ddbj/htg.html)
-
-<span class="red">HTG</span>, [その他](#htg)
-
-[phase](/ddbj/data-categories.html#est) に依存、登録毎にご連絡いたします。
-
-[GSS](/ddbj/gss.html)
-
-<span class="red">GSS</span>
-
-STS
-
-<span class="red">STS</span>
-
-[TPA](/ddbj/tpa.html)
-
-<span class="red">TPA, Third Party Data</span>
-
-<span class="red">TPA:inferential</span> or
-<span class="red">TPA:experimental</span>
-
-どちらか一方が必須
-
-[TSA](/ddbj/tsa.html)
-
-<span class="red">TSA, Transcriptome Shotgun Assembly</span>
-
-[TLS](/ddbj/tls.html)
-
-<span class="red">TLS, Targeted Locus Study</span>
-
-その他
-
-登録毎にご連絡いたします。
+<table>
+  <thead>
+    <tr>
+      <th>データ種別</th>
+      <th>keyword の Value</th>
+      <th>注意事項</th>
+    </tr>
+  </thead>
+  <tbody>           
+    <tr>
+      <td><a href="/ddbj/wgs.html">WGS</a></td>
+      <td><span class="red">WGS</span></td>
+      <td>
+      <a href="#wgs_con">WGS, scaffold CON の場合</a> もご参照ください。</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/env.html">ENV</a></td>
+      <td><span class="red">ENV</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2"><a href="/ddbj/est.html">EST</a></td>
+      <td><span class="red">EST</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>その他</td>
+      <td>
+      <a href="#est">EST の場合</a> 参照</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/htc.html">HTC</a></td>
+      <td>
+      <span class="red">HTC</span>, その他</td>
+      <td>その他については、登録毎にご連絡いたします。</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/htg.html">HTG</a></td>
+      <td>
+      <span class="red">HTG</span>, <a href="#htg">その他</a>
+      </td>
+      <td>
+      <a href="/ddbj/data-categories.html#est">phase</a> に依存、登録毎にご連絡いたします。</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/gss.html">GSS</a></td>
+      <td><span class="red">GSS</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>STS</td>
+      <td><span class="red">STS</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2"><a href="/ddbj/tpa.html">TPA</a></td>
+      <td><span class="red">TPA, Third Party Data</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+      <span class="red">TPA:inferential</span> or <span class="red">TPA:experimental</span>
+      </td>
+      <td>どちらか一方が必須</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/tsa.html">TSA</a></td>
+      <td><span class="red">TSA, Transcriptome Shotgun Assembly</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/tls.html">TLS</a></td>
+      <td><span class="red">TLS, Targeted Locus Study</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>その他</td>
+      <td></td>
+      <td>登録毎にご連絡いたします。</td>
+    </tr>
+  </tbody>
+</table>
 
 #### KEYWORD の書式
 
@@ -702,6 +619,22 @@ STS
 ###### HTG の場合
 
   - HTG では、その配列決定の段階を示す keyword の記載を推奨しています。
+
+    例I: 向きが不明な piece を含む場合（<span class="red">入力必須項目</span>）
+
+    |  Entry  |  Feature  |  Location  |  Qualifier  |  Value  |
+    | ---- | ---- | ---- | ---- | ---- |
+    |    |  <span class="red">KEYWORD</span>  |    |  <span class="red">keyword</span>  |  <span class="red">HTG</span>  |
+    |    |    |    |  <span class="red">keywrod</span>  |  <span class="red">HTGS_PHASE1</span>  |
+    |    |    |    |  <span class="red">keyword</span>  |  <span class="red">HTGS_DRAFT</span>   |
+
+    例 II: 向きが不明な piece が含まない場合（<span class="red">入力必須項目</span>）
+
+    |  Entry  |  Feature  |  Location  |  Qualifier  |  Value  |
+    | ---- | ---- | ---- | ---- | ---- |
+    |    |  <span class="red">KEYWORD</span>  |    |  <span class="red">keyword</span>   |  <span class="red">HTG</span>  |
+    |    |    |    |  <span class="red">keyword</span>  |  <span class="red">HTGS_DRAFT</span>  |
+
 
 ### DBLINK
 
@@ -880,20 +813,15 @@ PRIMARY\_CONTIG feature で使用可能な qualifier
 
 #### TPA/TSA: PRIMARY\_CONTIG プライマリーエントリ引用 の書式
 
-[DATATYPE/type](#datatype) で TPA、もしくは [DIVISION/division](#division) で
-TSA を指定しておく必要があります。
+- [DATATYPE/type](#datatype) で TPA、もしくは [DIVISION/division](#division) で TSA を指定しておく必要があります。
 
-PRIMARY\_CONTIG
-には、引用後の結果として配列(TPA/TSA)上の位置情報、および、引用したプライマリーシークエンスの(バージョンの付いた)アクセッション番号とその位置情報を必ず入力していただきます。
+- PRIMARY\_CONTIG には、引用後の結果として配列(TPA/TSA)上の位置情報、および、引用したプライマリーシークエンスの(バージョンの付いた)アクセッション番号とその位置情報を必ず入力していただきます。
 
-Location に join, order, complement を使用することはできません。同じ entry を引用する場合も
-location 単位で PRIMARY\_CONTIG を複数記述してください。
+- Location に join, order, complement を使用することはできません。同じ entry を引用する場合も location 単位で PRIMARY\_CONTIG を複数記述してください。
 
-プライマリーシークエンスが DDBJ/EMBL-Bank/GenBank
-に登録されている場合は、バージョンの付いたアクセッション番号を記載します。引用したアクセッション番号のデータが、TPA/TSA
-データ登録時点では、まだ公開されていない場合は、バージョン番号は、0 \[zero\]と入力してください。
+- プライマリーシークエンスが DDBJ/EMBL-Bank/GenBank に登録されている場合は、バージョンの付いたアクセッション番号を記載します。引用したアクセッション番号のデータが、TPA/TSA データ登録時点では、まだ公開されていない場合は、バージョン番号は、0 \[zero\]と入力してください。
 
-詳細は[サンプルとフラットファイルとの対応](#sample)を参照してください。
+- 詳細は[サンプルとフラットファイルとの対応](#sample)を参照してください。
 
   - TPA (Third Party Data)： [サンプル](#TPA)
   - TSA (Transcriptome Shotgun Assembly)： [サンプル](#TSA)
@@ -901,111 +829,108 @@ location 単位で PRIMARY\_CONTIG を複数記述してください。
 
 ## サンプルアノテーション
 
-一般データ
-
-タンパク質コード領域
-
-[CDS](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=505600445)
-
-リボソーマル RNA
-
-[16S\_rRNA](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=1380986730)
-
-ITS 領域 (Internal Transcribed Spacer)
-
-[ITS](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=162924670)
-
-マイクロサテライトマーカー
-
-[Microsatellite
-marker](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=282901241)
-
-ミトコンドリア
-
-[mtDNA](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=545461927)
-
-[ENV](/ddbj/env.html) (環境サンプル)
-
-[ENV](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=585575811)
-
-ゲノムデータ関連
-
-[complete genome sequence (Bacteria)](/ddbj/genome.html)
-
-[complete\_genome\_BCT](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=862924679)
-
-[WGS](/ddbj/wgs.html) (Whole Genome Shotgun) without annotation
-
-[WGS](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=382116224)
-
-[WGS](/ddbj/wgs.html) (Whole Genome Shotgun) with annotation
-
-[WGS\_annotation](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157)
-
-[WGS](/ddbj/wgs.html); piece of scaffold CON
-
-[WGS\_piece\_CON](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=595699065)
-
-[CON](/ddbj/con.html) entries for WGS scaffold
-
-[WGS\_scaffold](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1885054586)
-
-AGP file for [CON](/ddbj/con.html) entries
-
-[AGP](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1672995780)
-
-[GSS](/ddbj/gss.html) (Genome Survey Sequences)
-
-[GSS](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=460036592)
-
-[HTG](/ddbj/htg.html) (High Throughput Genomic Sequences)
-
-[HTG](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=199977055)
-
-大量転写物配列関連
-
-[TSA](/ddbj/tsa.html) (Transcriptome Shotgun Assembly); assembled from
-EST
-
-[TSA](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=2130672006)
-
-[TSA](/ddbj/tsa.html); assembled from short reads without annotation
-
-[TSA\_SRA\_assemble\_NoANN](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=931177555)
-
-[TSA](/ddbj/tsa.html); assembled from short reads with annotation
-
-[TSA\_SRA\_assemble\_Ann](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1607251813)
-
-[EST](/ddbj/est.html) (Expressed Sequence Tags)
-
-[EST](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1753678626)
-
-TLS (Targeted Locus Study)
-
-[TLS (Targeted Locus Study)](/ddbj/tls.html)
-
-[TLS](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=580470761)
-
-[TPA](/ddbj/tpa.html) (Third Party Data)
-
-[TPA](/ddbj/tpa.html) (Third Party Data)
-
-[TPA](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=123381270)
-
-[TPA](/ddbj/tpa.html) assembly (Third Party Data)
-
-[TPA-assembly\_WGS](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=80322930)
-
-[TPA](/ddbj/tpa.html) assembly (Third Party Data)
-
-[TPA-assembly](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1394019205)
-
-アノテーション:フラットファイル
-
-タンパク質コード領域
-
-[ann2-ff](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=961825804)
+<table>
+  <tbody>
+    <tr>
+      <td rowspan="6">一般データ</td>
+      <td>タンパク質コード領域</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=505600445">CDS</a></td>
+    </tr>
+    <tr>
+      <td>リボソーマル RNA</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=1380986730">16S_rRNA</a></td>
+    </tr>
+    <tr>
+      <td>ITS 領域 (Internal Transcribed Spacer)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=162924670">ITS</a></td>
+    </tr>
+    <tr>
+      <td>マイクロサテライトマーカー</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=282901241">Microsatellite marker</a></td>
+    </tr>
+    <tr>
+      <td>ミトコンドリア</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=545461927">mtDNA</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/env.html">ENV</a> (環境サンプル)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=585575811">ENV</a></td>
+    </tr>
+    <tr>
+      <td rowspan="8">ゲノムデータ関連</td>
+      <td><a href="/ddbj/genome.html">complete genome sequence (Bacteria)</a></td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=862924679">complete_genome_BCT</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/wgs.html">WGS</a> (Whole Genome Shotgun) without annotation</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=382116224">WGS</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/wgs.html">WGS</a> (Whole Genome Shotgun) with annotation</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">WGS_annotation</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/wgs.html">WGS</a>; piece of scaffold CON</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=595699065">WGS_piece_CON</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/con.html">CON</a> entries for WGS scaffold</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1885054586">WGS_scaffold</a></td>
+    </tr>
+    <tr>
+      <td>AGP file for <a href="/ddbj/con.html">CON</a> entries</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1672995780">AGP</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/gss.html">GSS</a> (Genome Survey Sequences)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=460036592">GSS</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/htg.html">HTG</a> (High Throughput Genomic Sequences)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=199977055">HTG</a></td>
+    </tr>
+    <tr>
+      <td rowspan="4">大量転写物配列関連</td>
+      <td><a href="/ddbj/tsa.html">TSA</a> (Transcriptome Shotgun Assembly); assembled from EST</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=2130672006">TSA</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/tsa.html">TSA</a>; assembled from short reads without annotation</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=931177555">TSA_SRA_assemble_NoANN</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/tsa.html">TSA</a>; assembled from short reads with annotation</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1607251813">TSA_SRA_assemble_Ann</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/est.html">EST</a> (Expressed Sequence Tags)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1753678626">EST</a></td>
+    </tr>
+    <tr>
+      <td>TLS (Targeted Locus Study)</td>
+      <td><a href="/ddbj/tls.html">TLS (Targeted Locus Study)</a></td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=580470761">TLS</a></td>
+    </tr>
+    <tr>
+      <td rowspan="3"><a href="/ddbj/tpa.html">TPA</a> (Third Party Data)</td>
+      <td><a href="/ddbj/tpa.html">TPA</a> (Third Party Data)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=123381270">TPA</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/tpa.html">TPA</a> assembly (Third Party Data)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=80322930">TPA-assembly_WGS</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/tpa.html">TPA</a> assembly (Third Party Data)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1394019205">TPA-assembly</a></td>
+    </tr>
+    <tr>
+      <td>アノテーション:フラットファイル</td>
+      <td>タンパク質コード領域</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=961825804">ann2-ff</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ## AGP ファイル
 
@@ -1040,142 +965,142 @@ check)でチェックすることが可能です。
 
 各カラムにおける記述内容（カラム 1 - カラム 5）
 
+<table>
+  <thead>
+    <tr>
+      <th>カラム</th>
+      <th>内容</th>
+      <th colspan="2">入力項目・注意事項</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>object</td>
+      <td colspan="2">CONエントリ名<br>(chromosome, scaffold, contig 等に対する固有の名称)<br>アノテーションファイルのエントリ名と対応するエントリ名を入力する</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>object_beg</td>
+      <td colspan="2">CON エントリにおける component/gap の開始位置</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>object_end</td>
+      <td colspan="2">CON エントリにおける component/gap の終了位置</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>part_number</td>
+      <td colspan="2">CON エントリを構成する component/gap の順序</td>
+    </tr>
+    <tr>
+      <td rowspan="10">5</td>
+      <td rowspan="10">component_type</td>
+      <td colspan="2">component の種類を示す規定値: A, D, F, G, O, P, W, N, U のいずれか</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>Active Finishing; finishing に向けて更新され得る段階</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>Draft HTG; HTG phase1, phase2, あるいは不明な draft 段階<br>つまり finished レベルに達していない HTG</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>Finished HTG; phase3, finished レベルの HTG</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>Whole Genome Finishing</td>
+    </tr>
+    <tr>
+      <td>O</td>
+      <td>Other sequence; WGS, HTG に該当しないもの</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>Pre Draft</td>
+    </tr>
+    <tr>
+      <td>W</td>
+      <td>WGS contig; ピースエントリが WGS エントリである場合</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>サイズが特定・予測されている gap</td>
+    </tr>
+    <tr>
+      <td>U</td>
+      <td>サイズ不明の gap、100 塩基とすること</td>
+    </tr>
+  </tbody>
+</table>
+
 \* component: より大きな配列を構築するために使用される配列 (ピースエントリ)
-
-カラム
-
-内容
-
-入力項目・注意事項
-
-1
-
-object
-
-CONエントリ名  
-(chromosome, scaffold, contig 等に対する固有の名称)  
-アノテーションファイルのエントリ名と対応するエントリ名を入力する
-
-2
-
-object\_beg
-
-CON エントリにおける component/gap の開始位置
-
-3
-
-object\_end
-
-CON エントリにおける component/gap の終了位置
-
-4
-
-part\_number
-
-CON エントリを構成する component/gap の順序
-
-5
-
-component\_type
-
-component の種類を示す規定値: A, D, F, G, O, P, W, N, U のいずれか
-
-A
-
-Active Finishing; finishing に向けて更新され得る段階
-
-D
-
-Draft HTG; HTG phase1, phase2, あるいは不明な draft 段階  
-つまり finished レベルに達していない HTG
-
-F
-
-Finished HTG; phase3, finished レベルの HTG
-
-G
-
-Whole Genome Finishing
-
-O
-
-Other sequence; WGS, HTG に該当しないもの
-
-P
-
-Pre Draft
-
-W
-
-WGS contig; ピースエントリが WGS エントリである場合
-
-N
-
-サイズが特定・予測されている gap
-
-U
-
-サイズ不明の gap、100 塩基とすること
 
 <span class="icon_d-triangle">6 以降のカラムは、カラム 5 の value
 に依存して記述内容が異なります。</span>
 
 各カラムにおける記述内容（カラム 6 - カラム 9）：カラム 5 が "N"と"U"以外の場合
 
+<table>
+  <thead>
+    <tr>
+      <th>カラム</th>
+      <th>内容</th>
+      <th colspan="2">入力項目・注意事項</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>6</td>
+      <td>component_id</td>
+      <td colspan="2">component のアクセッション番号とバージョン番号、<br>あるいは component のエントリ名</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>component_beg</td>
+      <td colspan="2">component の開始位置</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>component_end</td>
+      <td colspan="2">component の終了位置</td>
+    </tr>
+    <tr>
+      <td rowspan="7">9</td>
+      <td rowspan="7">orientation</td>
+      <td colspan="2">component の相対的な配列の方向。規定値は下記：</td>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td>プラス、順鎖</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>マイナス、相補鎖</td>
+    </tr>
+    <tr>
+      <td>?</td>
+      <td>不明</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>ゼロ、不明 (deprecated)</td>
+    </tr>
+    <tr>
+      <td>na</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td colspan="2">ただし、"?"、"0"、"na" も順鎖と扱う。</td>
+    </tr>
+  </tbody>
+</table>
+
 \* component: より大きな配列を構築するために使用される配列 (ピースエントリ)
-
-カラム
-
-内容
-
-入力項目・注意事項
-
-6
-
-component\_id
-
-component のアクセッション番号とバージョン番号、  
-あるいは component のエントリ名
-
-7
-
-component\_beg
-
-component の開始位置
-
-8
-
-component\_end
-
-component の終了位置
-
-9
-
-orientation
-
-component の相対的な配列の方向。規定値は下記：
-
-\+
-
-プラス、順鎖
-
-\-
-
-マイナス、相補鎖
-
-?
-
-不明
-
-0
-
-ゼロ、不明 (deprecated)
-
-na
-
-irrelevant
-
-ただし、"?"、"0"、"na" も順鎖と扱う。
 
   - 長さが判明していないギャップ領域については、一律 100 個の n で記述する規則となっています。 component\_type の
     value に"U"、gap\_length の value に "100" と記載します。
@@ -1184,5 +1109,58 @@ irrelevant
     以下の表を参考にしてください。
     
     例: アノテーションファイル内の COMMENT と ST\_COMMENT
-        
-    gap\_type
+
+<table>
+  <thead>
+    <tr>
+      <th>gap_type</th>
+      <th>linkage</th>
+      <th>解説・注意事項</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td colspan="3">scaffold 内の gap: gap 前後の配列が１つの scaffold に収まる場合、連鎖している</td></tr>
+    <tr>
+      <td>scaffold</td>
+      <td>yes</td>
+      <td>scaffold を分けずに記載すること<br>gap 前後の配列が連鎖する証拠があることを示す</td>
+    </tr>
+    <tr>
+      <td>repeat</td>
+      <td>yes</td>
+      <td>scaffold を分けずに記載すること<br>gap に未解消の繰り返し単位が存在し、前後の配列が連鎖する証拠がある場合は 'yes' とする</td>
+    </tr>
+    <tr><td colspan="3">scaffold を分ける gap: gap 前後の配列が分かれた scaffold に それぞれ位置し、連鎖するか否か不明</td></tr>
+    <tr>
+      <td>contig</td>
+      <td>no</td>
+      <td>scaffold を分けて記載すること<br>gap 前後の配列が連鎖する証拠がなく、連鎖するか否か不明</td>
+    </tr>
+    <tr>
+      <td>repeat</td>
+      <td>no</td>
+      <td>scaffold を分けて記載すること<br>gap に未解消の繰り返し単位が存在し、前後の配列が連鎖する証拠がない場合は 'no' とする</td>
+    </tr>
+    <tr>
+      <td>centromere<br>short_arm<br>heterochromatin<br>telomer</td>
+      <td>no</td>
+      <td>scaffold を分けて記載すること<br>これら生物学的 gap は chromosome に沿った scaffold の間に配置すること</td>
+    </tr>
+    <tr><td colspan="3">使用禁止となる gap type と linkage の組み合わせ</td></tr>
+    <tr>
+      <td>contig</td>
+      <td>yes</td>
+      <td>この組み合わせは使用禁止<br>もし、gap 前後の配列が連鎖する証拠があるならば、gap type は contig ではなく scaffold とすべきである</td>
+    </tr>
+    <tr>
+      <td>scaffold</td>
+      <td>no</td>
+      <td>この組み合わせは使用禁止<br>もし、gap 前後の配列が連鎖する証拠がないならば、gap type は scaffold ではなく contig とすべきである</td>
+    </tr>
+    <tr>
+      <td>centromere<br>short_arm<br>heterochromatin<br>telomere</td>
+      <td>yes</td>
+      <td>この組み合わせは使用禁止<br>これら生物学的 gap は scaffold 内では使用しないこと</td>
+    </tr>
+  </tbody>
+</table>
