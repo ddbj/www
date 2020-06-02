@@ -95,17 +95,17 @@ $MARGIN_BOTTOM: 1rem
         th
           border-bottom: 1px solid $COLOR_GRAY
     tr
-      th, td
-        padding: .6rem .6rem .6rem .6rem
       th
         text-align: left
         font-weight: bold
         white-space: nowrap
       td, th
+        padding: .6rem .6rem .6rem .6rem
         border-bottom: 1px solid $COLOR_SEPARATOR
         vertical-align: middle
+      td.border-btm
+        border-bottom: 1px solid $COLOR_GRAY
       &:last-child
-        border-bottom: none
         > td, th
           border-bottom: 1px solid $COLOR_GRAY
     + table

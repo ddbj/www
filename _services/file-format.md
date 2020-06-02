@@ -995,8 +995,8 @@ check)でチェックすることが可能です。
       <td colspan="2">CON エントリを構成する component/gap の順序</td>
     </tr>
     <tr>
-      <td rowspan="10">5</td>
-      <td rowspan="10">component_type</td>
+      <td class="border-btm" rowspan="10">5</td>
+      <td class="border-btm" rowspan="10">component_type</td>
       <td colspan="2">component の種類を示す規定値: A, D, F, G, O, P, W, N, U のいずれか</td>
     </tr>
     <tr>
@@ -1070,8 +1070,8 @@ check)でチェックすることが可能です。
       <td colspan="2">component の終了位置</td>
     </tr>
     <tr>
-      <td rowspan="7">9</td>
-      <td rowspan="7">orientation</td>
+      <td class="border-btm" rowspan="7">9</td>
+      <td class="border-btm" rowspan="7">orientation</td>
       <td colspan="2">component の相対的な配列の方向。規定値は下記：</td>
     </tr>
     <tr>
