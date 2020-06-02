@@ -54,7 +54,7 @@ pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/updt.pdf
       <td class="second">コンタクトパーソン情報、住所、所属情報を変更したい</td>
     </tr>
     <tr>
-      <th class="first" rowspan="4">メール利用</th>
+      <th class="border-btm" rowspan="4">メール利用</th>
       <td class="second"><a href="/faq/ja/update-sequence.html">塩基配列を更新したい</a></td>
     </tr>          
     <tr>

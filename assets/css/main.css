@@ -408,19 +408,18 @@ input, textarea, select, button {
     font-size: 1.2rem; }
     .md-content table thead tr th {
       border-bottom: 1px solid #736357; }
-    .md-content table tr th, .md-content table tr td {
-      padding: .6rem .6rem .6rem .6rem; }
     .md-content table tr th {
       text-align: left;
       font-weight: bold;
       white-space: nowrap; }
     .md-content table tr td, .md-content table tr th {
+      padding: .6rem .6rem .6rem .6rem;
       border-bottom: 1px solid #ccc;
       vertical-align: middle; }
-    .md-content table tr:last-child {
-      border-bottom: none; }
-      .md-content table tr:last-child > td, .md-content table tr:last-child th {
-        border-bottom: 1px solid #736357; }
+    .md-content table tr td, .md-content table tr th.border-btm {
+      border-bottom: 1px solid #736357; }
+    .md-content table tr:last-child > td, .md-content table tr:last-child th {
+      border-bottom: 1px solid #736357; }
     .md-content table + table {
       margin-top: -1.1rem; }
   .md-content code, .md-content pre {

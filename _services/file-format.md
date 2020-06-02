@@ -6,7 +6,7 @@ category: services
 pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/file-format.pdf
 ---
 
-## 配列ファイル
+## 配列ファイル<a name="sequence"></a>
 
 配列ファイルは、全登録データの配列を FASTA に類似した形式で記述したテキストファイルです。 配列ファイルは、1つの配列データは、"\>"
 で始まる1行のヘッダ行と、2行目以降の実際のシーケンス文字列で構成されます。DDBJ では、エントリ間は配列情報終了フラグ (//)
@@ -49,7 +49,7 @@ atttgaacacacctgctgtggctgtaactctgagatgtgctaaataaaccctctt
   - [CON](/ddbj/data-categories.html#con) に該当する場合は、配列ファイルは [AGP
     ファイル](#agp)で代替することができます。
 
-## アノテーションファイル
+## アノテーションファイル<a name="annotation"></a>
 
 アノテーションファイルは、全登録データの登録者, REFERENCE、Feature/Qualifierの情報等を記述した、Entry,
 Feature, Location, Qualifier, Value の５列からなるタブ区切りテキストファイルです。  
@@ -125,7 +125,7 @@ Value
 | [Feature/Qualifier 対応一覧表](/files/pdf/ddbj/fq-j.pdf) | 2016/11/09 |                                                      |
 | [登録の見本](/ddbj/example.html)                         | 2014/11/27 | [DDBJ フラットファイル](/ddbj/flat-file.html)中の feature の記載例 |
 
-### 共通情報 COMMON
+### 共通情報 COMMON<a name="common"></a>
 
 #### COMMON の入力について
 
@@ -143,30 +143,30 @@ location に使用可能なメタ塩基番号'E'
 
   | Entry  | Feature | Location                           | Qualifier | Value    |
   | ------ | ------- | ---------------------------------- | --------- | -------- |
-  | COMMON | rRNA    | \<1..\><span class="bold">E</span> | product   | 16S rRNA |
+  | COMMON | rRNA    | \<1..\>**E** | product   | 16S rRNA |
 
 : 配列長が異なるために Location が異なることを除けば、Feature 以下の Qualifier, Value の情報が全てのエントリで共通に記載可能なケース（例：rRNA 部分配列による系統解析など）があります。
-: そのような場合には、COMMON エントリに Feature を記載し location には、最後の塩基番号の代わりにメタ塩基番号として、<span class="bold">E</span> を記載することにより、全てのエントリに共通となる Feature を COMMON エントリに記載することが可能です。
+: そのような場合には、COMMON エントリに Feature を記載し location には、最後の塩基番号の代わりにメタ塩基番号として、**E** を記載することにより、全てのエントリに共通となる Feature を COMMON エントリに記載することが可能です。
 
 clone, submitter\_seqid, note, ff\_definition に使用可能なメタ表記 '@@\[entry\]@@'  
 : 例: COMMON に source feature を記載
 
   | Entry  | Feature | Location                       | Qualifier        | Value                                                                                               |
   | ------ | ------- | ------------------------------ | ---------------- | --------------------------------------------------------------------------------------------------- |
-  | COMMON | source  | 1..<span class="bold">E</span> | organism         | Homo sapiens                                                                                        |
+  | COMMON | source  | 1..**E** | organism         | Homo sapiens                                                                                        |
   |        |         |                                | mol\_type        | genomic DNA                                                                                         |
-  |        |         |                                | submitter\_seqid | <span class="bold">@@\[entry\]@@</span>                                                             |
-  |        |         |                                | ff\_definition   | <span class="bold">@@\[organism\]@@</span> DNA, <span class="bold"> @@\[submitter\_seqid\]@@</span> |
+  |        |         |                                | submitter\_seqid | **@@\[entry\]@@</**                                                             |
+  |        |         |                                | ff\_definition   | **@@\[organism\]@@** DNA, ** @@\[submitter\_seqid\]@@** |
         
 : Location および clone 名や contig 名を除けば、Feature: source の Qualifier, Value の情報が全てのエントリで共通に記載可能なケース（例： EST, GSS, TSA, TLS, WGS, WGS scaffold (CON division)など）があります。
     
 : そのような場合、エントリ名に clone 名 または contig 名を使用する場合に限り、Feature: source を COMMON エントリに記載することが可能です。
 
-  - Location には、最後の塩基番号の代わりにメタ塩基番号として、<span class="bold">E</span>
+  - Location には、最後の塩基番号の代わりにメタ塩基番号として、**E**
     を記載します。
-  - 例に示した <span class="bold">@@\[entry\]@@</span>
+  - 例に示した **@@\[entry\]@@**
     の形式で記載すると、配列ファイルから引用したエントリ名に置換されます。
-    <span class="bold">@@\[entry\]@@</span> を記載は clone,
+    **@@\[entry\]@@** を記載は clone,
     submitter\_seqid, note, ff\_definition の Value に限定しています。
 
 ### SUBMITTER
@@ -380,7 +380,7 @@ COMMENT" があります。詳細は以下をご覧ください。
     
   - 記載の可否や内容等については登録毎に個別に対応しますので、MSS の担当者にお問い合わせください。
 
-### Biological Feature
+### Biological Feature<a name="biological_feature"></a>
 
 例: アノテーションファイル内の source と CDS feature　（<span class="red">入力必須項目</span>）
 
@@ -424,7 +424,7 @@ Table Definition](/ddbj/full_index.html)をご参照ください。
     の対応一覧表](/files/pdf/ddbj/fq-j.pdf)をご参照ください。
   - Value type に従い、各 Qualifier で指定されている文字種を使用して、正しく入力してください。
 
-### DIVISION
+### DIVISION<a name="division"></a>
 
 DIVISION は、登録データが [CON](/ddbj/data-categories.html#con) /
 [ENV](/ddbj/data-categories.html#env) /
@@ -448,7 +448,7 @@ DIVISION は、登録データが [CON](/ddbj/data-categories.html#con) /
     の名称を示すアルファベット３文字を大文字で入力してください。
   - DIVISION は、原則として [COMMON](#common) エントリに入力してください。
 
-### DATATYPE
+### DATATYPE<a name="datatype"></a>
 
 DATATYPE は、登録データが [WGS](/ddbj/wgs.html), [TLS](/ddbj/tls.html),
 [TPA](/ddbj/tpa.html), TPA-WGS の何れかに該当することを示します。
@@ -568,7 +568,7 @@ methodological keywords](/ddbj/keyword.html)をご参照ください。
   - Qualifier: keyword の Value に該当する規定値を入力してください。
   - 詳細な記載方法に関しましては、登録毎にご連絡いたします。
 
-###### WGS, scaffold CON の場合
+###### WGS, scaffold CON の場合<a name="wgs_con"></a>
 
   - WGS や WGS エントリを primary エントリに引用した scaffold 配列（CON
     エントリ）では、登録される塩基配列の完成度を示すため、次のいずれかを
@@ -586,7 +586,7 @@ methodological keywords](/ddbj/keyword.html)をご参照ください。
     |       | <span class="red">KEYWORD</span> |          | <span class="red">keyword</span> | <span class="red">WGS</span>             |
     |       |                                  |          | <span class="red">keyword</span> | <span class="red">STANDARD\_DRAFT</span> |
     
-    ###### EST の場合
+    ###### EST の場合<a name="est"></a>
 
   - EST では、EST に加えて、以下のいずれかを keyword に必ず記載してください。
     
@@ -616,7 +616,7 @@ methodological keywords](/ddbj/keyword.html)をご参照ください。
     | ----- | -------------------------------- | -------- | ----------------------------- | ------------------------------------------------------------------------ |
     |       | <span class="red">COMMENT</span> |          | <span class="red">line</span> | <span class="red">3'-EST sequences are presented as sense strand.</span> |
     
-###### HTG の場合
+###### HTG の場合<a name="htg"></a>
 
   - HTG では、その配列決定の段階を示す keyword の記載を推奨しています。
 
@@ -683,7 +683,7 @@ ff\_definition は、The DDBJ/EMBL/GenBank Feature Table: Definition
 | ----- | ------- | -------- | -------------- | ----------------------------------------------------------------------------------------------- |
 |       | source  | 1..516   | organism       | Mus musculus                                                                                    |
 |       |         |          | mol\_type      | mRNA                                                                                            |
-|       |         |          | ff\_definition | <span class="bold">@@\[organism\]@@</span> mRNA, clone: <span class="bold">@@\[clone\]@@</span> |
+|       |         |          | ff\_definition | **@@\[organism\]@@** mRNA, clone: **@@\[clone\]@@** |
 |       |         |          | clone          | PC0110                                                                                          |
 
 ff\_definition 記述フォーマット
@@ -707,10 +707,10 @@ ff\_definition 記述フォーマット
     DEFINITION 行に反映されます。詳細は[サンプルとフラットファイルとの対応](#sample) をご参照ください。
   - ff\_definition の Value には、通常、同じ source feature 内にある他の Qualifier から
     Value を引用することが多いため、引用のためのメタ表記を用意しております。例に示したように
-    <span class="bold">@@\[organism\]@@</span>,
-    <span class="bold">@@\[clone\]@@</span> の形式で、Value を引用する Qualifier
-    の名称を <span class="bold">@@\[</span> と
-    <span class="bold">\]@@</span> で括り記載しておきますと、DEFINITION 行に反映する際に対象
+    **@@\[organism\]@@**,
+    **@@\[clone\]@@** の形式で、Value を引用する Qualifier
+    の名称を **@@\[** と
+    **\]@@** で括り記載しておきますと、DEFINITION 行に反映する際に対象
     Value に置換されます。
   - 上記表に示した記述フォーマットを基本としますが、ff\_definition の詳細な記載方法に関しましては、登録毎にご連絡いたします。
 
@@ -760,10 +760,9 @@ TOPOLOGY は登録塩基配列全体の形状が環状で、最初の塩基と�
 
 #### TOPOLOGY の書式
 
-  - DDBJ [フラットファイル](/ddbj/flat-file.html)では、topology は [LOCUS
-    行](/ddbj/flat-file.html#Locus)に反映されます。詳細は[アノテーションファイルのサンプル](#sample)を参照してください。
+  - DDBJ [フラットファイル](/ddbj/flat-file.html)では、topology は [LOCUS 行](/ddbj/flat-file.html#Locus)に反映されます。詳細は[アノテーションファイルのサンプル](#sample)を参照してください。
 
-### TPA/TSA: PRIMARY\_CONTIG プライマリーエントリ引用
+### TPA/TSA: PRIMARY\_CONTIG プライマリーエントリ引用<a name="primary_contig"></a>
 
 PRIMARY\_CONTIG, entry, および primary\_bases
 は、プライマリーエントリからの配列引用情報を記載するために設けられた
@@ -784,31 +783,26 @@ TPA/TSA データ登録専用の Feature, Qualifier です。
 PRIMARY\_CONTIG feature で使用可能な qualifier
 
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Qualifier</th>
-<th>Value 記述時の注意事項</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>entry</td>
-<td>引用するエントリのアクセッション番号を(バージョン番号とともに)入力する</td>
-</tr>
-<tr class="even">
-<td>primary_bases</td>
-<td>引用したプライマリーシークエンスの位置情報<br />
-各配列の領域を入力する 例) 1..500</td>
-</tr>
-<tr class="odd">
-<td>complement</td>
-<td>引用するエントリが相補鎖である場合に入力が必要</td>
-</tr>
-</tbody>
+  <thead>
+    <tr>
+      <th>Qualifier</th>
+      <th>Value 記述時の注意事項</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>entry</td>
+      <td>引用するエントリのアクセッション番号を(バージョン番号とともに)入力する</td>
+    </tr>
+  <tr>
+    <td>primary_bases</td>
+    <td>引用したプライマリーシークエンスの位置情報<br/>各配列の領域を入力する 例) 1..500</td>
+  </tr>
+    <tr>
+      <td>complement</td>
+      <td>引用するエントリが相補鎖である場合に入力が必要</td>
+    </tr>
+  </tbody>
 </table>
 
 #### TPA/TSA: PRIMARY\_CONTIG プライマリーエントリ引用 の書式
@@ -827,7 +821,7 @@ PRIMARY\_CONTIG feature で使用可能な qualifier
   - TSA (Transcriptome Shotgun Assembly)： [サンプル](#TSA)
   - TSA; assembled from short reads： [サンプル](#TSA_SRA_assemble_Ann)
 
-## サンプルアノテーション
+## サンプルアノテーション<a name="sample"></a>
 
 <table>
   <tbody>
@@ -889,7 +883,7 @@ PRIMARY\_CONTIG feature で使用可能な qualifier
       <td><a href="/ddbj/htg.html">HTG</a> (High Throughput Genomic Sequences)</td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=199977055">HTG</a></td>
     </tr>
-    <tr>
+    <tr id="TSA">
       <td rowspan="4">大量転写物配列関連</td>
       <td><a href="/ddbj/tsa.html">TSA</a> (Transcriptome Shotgun Assembly); assembled from EST</td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=2130672006">TSA</a></td>
@@ -898,7 +892,7 @@ PRIMARY\_CONTIG feature で使用可能な qualifier
       <td><a href="/ddbj/tsa.html">TSA</a>; assembled from short reads without annotation</td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=931177555">TSA_SRA_assemble_NoANN</a></td>
     </tr>
-    <tr>
+    <tr id="TSA_SRA_assemble_Ann">
       <td><a href="/ddbj/tsa.html">TSA</a>; assembled from short reads with annotation</td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1607251813">TSA_SRA_assemble_Ann</a></td>
     </tr>
@@ -932,7 +926,7 @@ PRIMARY\_CONTIG feature で使用可能な qualifier
   </tbody>
 </table>
 
-## AGP ファイル
+## AGP ファイル<a name="agp"></a>
 
 AGP ファイルは [CON](/ddbj/con.html) エントリの登録に必要です。 AGP ファイルは CON
 エントリを構築する際のピースエントリの順序、種類、方向等が記載された、9列からなるタブ区切りテキストファイルです。
