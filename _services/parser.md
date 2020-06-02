@@ -11,83 +11,98 @@ Parser は、Mass Submission System (MSS) を利用して DDBJ に登録する�
 
 ## インストール
 
-1. [MSS データファイル用チェックツール](/ddbj/mss-tool.html) から Parser.tar.gz を取得  
-2. tar.gz ファイルを gunzip コマンドで解凍
-  ``` 
-  $ gunzip Parser.tar.gz
-  ```
-3. tar ファイルを tar コマンドで展開
-  ``` 
-  $ tar xvf Parser.tar
-  ```
-4. ディレクトリが生成される  
-    下記の要領でディレクトリの中身を見ると、以下のようになっています。
-  ``` 
-  $ cd jParser
-  $ ls -FC
-  jParser.sh*  jar/    license.txt resource/
-  ```
-<table>
-  <tbody>
-    <tr>
-      <th>jParser.sh</th>
-      <td>実行シェルスクリプト</td>
-      </tr>
-    <tr>
-      <th>jar/</th>
-      <td>java のクラスライブラリ格納ディレクトリ(改変不可)</td>
-      </tr>
-    <tr>
-      <th>license.txt</th>
-      <td>使用許諾(改変不可)</td>
-      </tr>
-    <tr>
-      <th>resources/</th>
-      <td>検査条件などのリソースファイル格納ディレクトリ(改変不可)</td>
-    </tr>
-  </tbody>
-</table>
-5. ファイルの編集  
-    jParser.sh を実行する前にファイルの中身を、インストールしたコンピュータの環境にあわせるために変更する必要があります。vi
-    などのエディタで編集して下さい。
-    ``` 
-    #!/bin/sh
-    
-    # Parser installed directory
-    PARSER_DIR=./
-    
-    # Set maximum Java heap size
-    HEAP_SIZE=128m
-    
-    # Parser's resource files(qual.list, ... *.list) path
-    # Don't change.
-    RESOURCE_FILE_PATH=$PARSER_DIR/resource
-    
-    # Parser's main class
-    # Don't change.
-    PARSER=tsunami.util.excel.ExcelParser
-    
-    # Execution Command
-    # Don't change.
-    java -Xmx$HEAP_SIZE -classpath $PARSER_DIR/jar/jParser.jar 
-    -DPARSER_RESOURCE_PATH=$RESOURCE_FILE_PATH $PARSER -Cclean $@
-    
-    RETVAL=$?
-    
-    exit $RETVAL
-    #EOF
-    ```
+<ol>
+  <li>
+    <a href="/ddbj/mss-tool.html">MSS データファイル用チェックツール</a>から Parser.tar.gz を取得
+  </li>
+  <li>
+    tar.gz ファイルを gunzip コマンドで解凍<br>
+    <code>
+      $ gunzip Parser.tar.gz
+    </code>
+  </li>
+  <li>
+    tar ファイルを tar コマンドで展開<br>
+    <code>
+      $ tar xvf Parser.tar
+    </code>
+  </li>
+  <li>
+    ディレクトリが生成される<br>
+    下記の要領でディレクトリの中身を見ると、以下のようになっています。<br>
+    <code>
+      $ cd jParser
+      $ ls -FC
+      jParser.sh*  jar/    license.txt resource/
+    </code>
+    <table>
+      <tbody>
+        <tr>
+          <th>jParser.sh</th>
+          <td>実行シェルスクリプト</td>
+        </tr>
+        <tr>
+          <th>jar/</th>
+          <td>java のクラスライブラリ格納ディレクトリ(改変不可)</td>
+        </tr>
+        <tr>
+          <th>license.txt</th>
+          <td>使用許諾(改変不可)</td>
+        </tr>
+        <tr>
+          <th>resources/</th>
+          <td>検査条件などのリソースファイル格納ディレクトリ(改変不可)</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    ファイルの編集<br>
+    jParser.sh を実行する前にファイルの中身を、インストールしたコンピュータの環境にあわせるために変更する必要があります。viなどのエディタで編集して下さい。
+    <pre>
+      <code>
+#!/bin/sh
 
-[PARSER\_DIR 変数\]  
-: jParser ディレクトリのある場所をフルパスで入力して下さい。
-: 例) PARSER\_DIR=/home/mass/jParser
+# Parser installed directory
+PARSER_DIR=./
 
-[HEAP\_SIZE 変数\]  
-: jParser が使用できる最大メモリ量を指定してください。
-: 例) HEAP\_SIZE=128m
+# Set maximum Java heap size
+HEAP_SIZE=128m
 
-6. PATH を指定する  
+# Parser's resource files(qual.list, ... *.list) path
+# Don't change.
+RESOURCE_FILE_PATH=$PARSER_DIR/resource
+
+# Parser's main class
+# Don't change.
+PARSER=tsunami.util.excel.ExcelParser
+
+# Execution Command
+# Don't change.
+java -Xmx$HEAP_SIZE -classpath $PARSER_DIR/jar/jParser.jar 
+-DPARSER_RESOURCE_PATH=$RESOURCE_FILE_PATH $PARSER -Cclean $@
+
+RETVAL=$?
+
+exit $RETVAL
+#EOF
+      </code>
+    </pre>
+
+    <dl>
+      <dt>[PARSER_DIR 変数]</dt>
+      <dd>jParser ディレクトリのある場所をフルパスで入力して下さい。</dd>
+      <dd>例) PARSER_DIR=/home/mass/jParser</dd>
+      <dt>[HEAP_SIZE 変数]</dt>
+      <dd>jParser が使用できる最大メモリ量を指定してください。</dd>
+      <dd>例) HEAP_SIZE=128m</dd>
+    </dl>
+  </li>
+  <li>
+  PATH を指定する<br>
   PAHT に jParser.sh が設置してあるディレクトリを指定して下さい。
+  </li>
+</ol>
 
 ## 実行
 
