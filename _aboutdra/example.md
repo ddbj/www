@@ -6,25 +6,6 @@ category: aboutdra
 pdf: https://www.ddbj.nig.ac.jp/pdf/dra/example.pdf
 ---
 
-  - [Experiment (Spot, Platform)](#Experiment)
-  - [454 single reads](#454_single)
-  - [454 paired reads](#454_paired)
-  - [Illumina single reads](#illumina_single)
-  - [Illumina paired reads](#illumina_paired)
-  - [Illumina paired reads 10x Genomics](#illumina_paired_10x)
-  - [SOLiD single reads](#SOLiD_single)
-  - [SOLiD paired reads](#SOLiD_paired)
-  - [Ion torrent single reads](#Ion_single)
-  - [PacBio single reads (Standard sequencing)](#PacBio_standard)
-  - [PacBio single reads (Circular consensus sequencing)](#PacBio_CCS)
-  - [data validation でエラーになる典型的な例](#errors)
-  - [Application read のないリード](#no_application)
-  - [矛盾する塩基座標を持つリード](#inconsistent_base)
-  - [位置の特定できない Relative order を持ったリード](#cannot_specified)
-  - [Experiment (Pipeline)](#Experiment_pipeline)
-  - [Experiment XML Pipeline の例1](#pipeline1)
-  - [Experiment XML Pipeline の例2](#pipeline2)
-
 {::options parse_block_html="true" /}
 <div class="attention">
 メタデータ作成ツールは technical read (アダプター，プライマーやバーコード配列) の記載に対応していません。  
