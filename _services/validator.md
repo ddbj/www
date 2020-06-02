@@ -13,26 +13,29 @@ category: services
 
 #### 出力フォーマット
 
-[コード番号\]:[Level\]:[Type\]:[File\]:[エラー位置\]:[メッセージ本文\]
+{::nomarkdown}[コード番号]:[Level]:[Type]:[File]:[エラー位置]:[メッセージ本文]{:/}
 
-|  コード番号  |  コード番号を示します。  |    |
-| ---- | ---- | ---- |
-|  Level  |  エラーのレベルを示します。  |    |
-|  ^  |  ER1  |  通常のファイル構文に関するエラーです。修正が必要です。  |
-|  ^  |  ER2  |  通常のファイル構文に関するエラーです。修正が必要です。  |
-|  ^  |  FAT  |  実行環境に関するエラーです。  |
-|  ^  |  WAR  |  警告です。修正が必要な場合があります。  |
-|  ^  |  MES  |  他のエラーに関連する参考メッセージです。  |
-|  Type  |  エラーの種別を示します。  |    |
-|  ^  |  STX  |  構文  |
-|  ^  |  SYS  |  実行関連  |
-|  ^  |  LOC  |  配列とlocation の比較関連  |
-|  File  |  エラーが検出されたファイルを示します。  |    |
-|  ^  |  ANN  |  アノテーション  |
-|  ^  |  SEQ  |  配列  |
-|  ^  |  AxS  |  アノテーションと配列の比較  |
-|  エラー位置  |  エラーが検出された位置を行番号、または、エントリ名で示します。  |    |
-|  メッセージ本文  |  エラーの個別内容を示します。  |    |
+<table>
+  <tbody>
+  <tr><th>コード番号</th><td colspan="2">コード番号を示します。</td></tr>
+  <tr><th rowspan="6">Level</th><td colspan="2">エラーのレベルを示します。</td></tr>
+  <tr><td>ER1</td><td>通常のファイル構文に関するエラーです。修正が必要です。</td></tr>
+  <tr><td>ER2</td><td>通常のファイル構文に関するエラーです。修正が必要です。</td></tr>
+  <tr><td>FAT</td><td>実行環境に関するエラーです。</td></tr>
+  <tr><td>WAR</td><td>警告です。修正が必要な場合があります。</td></tr>
+  <tr><td>MES</td><td>他のエラーに関連する参考メッセージです。</td></tr>
+  <tr><th rowspan="4">Type</th><td colspan="2">エラーの種別を示します。</td></tr>
+  <tr><td>STX</td><td>構文</td></tr>
+  <tr><td>SYS</td><td>実行関連</td></tr>
+  <tr><td>LOC</td><td>配列とlocation の比較関連</td></tr>
+  <tr><th rowspan="4">File</th><td colspan="2">エラーが検出されたファイルを示します。</td></tr>
+  <tr><td>ANN</td><td>アノテーション</td></tr>
+  <tr><td>SEQ</td><td>配列</td></tr>
+  <tr><td>AxS</td><td>アノテーションと配列の比較</td></tr>
+  <tr><th>エラー位置</th><td colspan="2">エラーが検出された位置を行番号、または、エントリ名で示します。</td></tr>
+  <tr><th>メッセージ本文</th><td colspan="2">エラーの個別内容を示します。</td></tr>
+  </tbody>
+</table>
 
 #### エラーメッセージ
 
@@ -41,8 +44,7 @@ category: services
 
 メッセージ中で、括弧( [ と \] )で括られている \# で始まっていない語は予約語です。
 
-[Parser
-エラーメッセージ一覧](https://docs.google.com/spreadsheets/d/1djQ52hOYXFRQru3-CJZyvzANaZOZ_TuuQW8i0IKg5Ls/edit#gid=1311635655)
+[Parser　エラーメッセージ一覧](https://docs.google.com/spreadsheets/d/1djQ52hOYXFRQru3-CJZyvzANaZOZ_TuuQW8i0IKg5Ls/edit#gid=1311635655)
 
 -----
 
@@ -56,15 +58,18 @@ category: services
 
 #### フォーマット
 
-[コード番号\]:[Level\]: [メッセージ本文\]
+{::nomarkdown}[コード番号]:[Level]: [メッセージ本文]{:/}
 
-|  コード番号  |  コード番号を示します。  |    |
-| ---- | ---- | ---- |
-|  Level  |  エラーのレベルを示します。  |    |
-|  ^  |  ER2  |  通常のファイル構文に関するエラーです。修正が必要です。  |
-|  ^  |  FAT  |  実行環境に関するエラーです。  |
-|  ^  |  WAR  |  警告です。修正が必要な場合があります。  |
-|  メッセージ本文  |  エラーの個別内容を示します。  |    |
+<table>
+  <tbody>
+    <tr><th>コード番号</th><td colspan="2">コード番号を示します。</td></tr>
+    <tr><th rowspan="4">Level</th><td colspan="2">エラーのレベルを示します。</td></tr>
+    <tr><td>ER2</td><td>通常のファイル構文に関するエラーです。修正が必要です。</td></tr>
+    <tr><td>FAT</td><td>実行環境に関するエラーです。</td></tr>
+    <tr><td>WAR</td><td>警告です。修正が必要な場合があります。</td></tr>
+    <tr><th>メッセージ本文</th><td colspan="2">エラーの個別内容を示します。</td></tr>
+  </tbody>
+</table>
 
 **例**
 
@@ -101,17 +106,20 @@ TC0019:ER2: Stop codon is found in mid of CDS location.
 
 #### フォーマット
 
-[コード番号\]:[Level\]:[エラー位置\]:[メッセージ本文\] or [コード番号\]:[Level\]:[メッセージ本文\]
+{::nomarkdown}[コード番号]:[Level]:[エラー位置]:[メッセージ本文] or [コード番号]:[Level]:[メッセージ本文]{:/}
 
-|  コード番号  |  コード番号を示します。  |    |
-| ---- | ---- | ---- |
-|  Level  |  エラーのレベルを示します。  |    |
-|  ^  |  FAT  |  実行環境に関するエラーです。  |
-|  ^  |  ER1  |  通常のファイル構文に関するエラーです。修正が必要です。  |
-|  ^  |  ER2  |  通常のファイル構文に関するエラーです。修正が必要です。  |
-|  ^  |  WAR  |  警告です。修正が必要な場合があります。  |
-|  エラー位置  |  エラーが検出された位置を行番号、または、object 名で示します。  |    |
-|  メッセージ本文  |  エラーの個別内容を示します。  |    |
+<table>
+  <tbody>
+    <tr><th>コード番号</th><td colspan="2">コード番号を示します。</td></tr>
+    <tr><th rowspan="5">Level</th><td colspan="2">エラーのレベルを示します。</td></tr>
+    <tr><td>FAT</td><td>実行環境に関するエラーです。</td></tr>
+    <tr><td>ER1</td><td>通常のファイル構文に関するエラーです。修正が必要です。</td></tr>
+    <tr><td>ER2</td><td>通常のファイル構文に関するエラーです。修正が必要です。</td></tr>
+    <tr><td>WAR</td><td>警告です。修正が必要な場合があります。</td></tr>
+    <tr><th>エラー位置</th><td colspan="2">エラーが検出された位置を行番号、または、object 名で示します。</td></tr>
+    <tr><th>メッセージ本文</th><td colspan="2">エラーの個別内容を示します。</td></tr>
+  </tbody>
+</table>
 
 #### エラーメッセージ
 

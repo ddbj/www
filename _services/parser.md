@@ -13,47 +13,43 @@ Parser は、Mass Submission System (MSS) を利用して DDBJ に登録する�
 
 1. [MSS データファイル用チェックツール](/ddbj/mss-tool.html) から Parser.tar.gz を取得  
 2. tar.gz ファイルを gunzip コマンドで解凍
-    
-    ``` code
-    $ gunzip Parser.tar.gz
-    ```
+  ``` 
+  $ gunzip Parser.tar.gz
+  ```
 3. tar ファイルを tar コマンドで展開
-    
-    ``` 
-    $ tar xvf Parser.tar
-    ```
+  ``` 
+  $ tar xvf Parser.tar
+  ```
 4. ディレクトリが生成される  
     下記の要領でディレクトリの中身を見ると、以下のようになっています。
-    
-    ``` 
-    $ cd jParser
-    $ ls -FC
-    jParser.sh*  jar/    license.txt resource/
-    ```
-  <table>
-    <tbody>
-      <tr>
-        <th>jParser.sh</th>
-        <td>実行シェルスクリプト</td>
-        </tr>
-      <tr>
-        <th>jar/</th>
-        <td>java のクラスライブラリ格納ディレクトリ(改変不可)</td>
-        </tr>
-      <tr>
-        <th>license.txt</th>
-        <td>使用許諾(改変不可)</td>
-        </tr>
-      <tr>
-        <th>resources/</th>
-        <td>検査条件などのリソースファイル格納ディレクトリ(改変不可)</td>
+  ``` 
+  $ cd jParser
+  $ ls -FC
+  jParser.sh*  jar/    license.txt resource/
+  ```
+<table>
+  <tbody>
+    <tr>
+      <th>jParser.sh</th>
+      <td>実行シェルスクリプト</td>
       </tr>
-    </tbody>
-  </table>
+    <tr>
+      <th>jar/</th>
+      <td>java のクラスライブラリ格納ディレクトリ(改変不可)</td>
+      </tr>
+    <tr>
+      <th>license.txt</th>
+      <td>使用許諾(改変不可)</td>
+      </tr>
+    <tr>
+      <th>resources/</th>
+      <td>検査条件などのリソースファイル格納ディレクトリ(改変不可)</td>
+    </tr>
+  </tbody>
+</table>
 5. ファイルの編集  
     jParser.sh を実行する前にファイルの中身を、インストールしたコンピュータの環境にあわせるために変更する必要があります。vi
     などのエディタで編集して下さい。
-    
     ``` 
     #!/bin/sh
     
@@ -81,6 +77,7 @@ Parser は、Mass Submission System (MSS) を利用して DDBJ に登録する�
     exit $RETVAL
     #EOF
     ```
+
 [PARSER\_DIR 変数\]  
 : jParser ディレクトリのある場所をフルパスで入力して下さい。
 : 例) PARSER\_DIR=/home/mass/jParser
@@ -88,6 +85,7 @@ Parser は、Mass Submission System (MSS) を利用して DDBJ に登録する�
 [HEAP\_SIZE 変数\]  
 : jParser が使用できる最大メモリ量を指定してください。
 : 例) HEAP\_SIZE=128m
+
 6. PATH を指定する  
   PAHT に jParser.sh が設置してあるディレクトリを指定して下さい。
 
