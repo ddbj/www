@@ -3,9 +3,8 @@ layout: indexed_content
 title: メタデータの例
 pathname: example
 category: aboutdra
+pdf: https://www.ddbj.nig.ac.jp/pdf/dra/example.pdf
 ---
-
-<div id="main_index">
 
   - [Experiment (Spot, Platform)](#Experiment)
   - [454 single reads](#454_single)
@@ -26,37 +25,24 @@ category: aboutdra
   - [Experiment XML Pipeline の例1](#pipeline1)
   - [Experiment XML Pipeline の例2](#pipeline2)
 
-</div>
-
+{::options parse_block_html="true" /}
 <div class="attention">
-
-メタデータ作成ツールは technical read (アダプター，プライマーやバーコード配列) の記載に対応していません。[Technical read を含むデータを登録する場合は Experiment XML を作成](/dra/submission.html#create-metadata-in-xml-files)し，下記の例を参考に \<SPOT\_DESCRIPTOR\>で technical read を記載する必要があります。
-
+メタデータ作成ツールは technical read (アダプター，プライマーやバーコード配列) の記載に対応していません。  
+[Technical read を含むデータを登録する場合は Experiment XML を作成]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html#create-metadata-in-xml-files)し，下記の例を参考に&lt;SPOT_DESCRIPTOR&gt;で technical read を記載する必要があります。
 </div>
-
-<div class="section">
 
 ## Experiment (Spot, Platform)
 
-<div class="example">
-
 ### 454 single reads
-
-<div class="example_read">
 
 #### リード
 
 Read composition
 
-|  Read Index <span class="normal">:</span>  |  0  |  1  |
-| ---- | ---- | ---- |
-|  Read <span class="normal">:</span>  |  TCAG  |  ATAGAGTTGATCCTGGCTCAT……………  |
-|  Base Coordinate <span class="normal">:  |  1  |  <div class="base_left">5</div><div class="base_right">80</div>  |
-|  Read Type <span class="normal">:  |  Adapter  |  Forward  |
-
-</div>
-
-<div class="example_metadata">
+|  Read Index : |  0  |  1  |
+|  Read : |  TCAG  |  ATAGAGTTGATCCTGGCTCAT……………  |
+|  Base Coordinate :  |  1  |  {::nomarkdown}<div class="base_left">5</div><div class="base_right">80</div>{:/}  |
+|  Read Type :  |  Adapter  |  Forward  |
 
 #### メタデータ
 
@@ -67,9 +53,9 @@ Spot (Read Spec)
 | 0          | Technical Read   | Adapter   | BaseCoord = 1   |
 | 1          | Application Read | Forward   | BaseCoord = 5   |
 
-Experiment XML (SPOT\_DESCRIPTOR)
+Experiment XML (SPOT_DESCRIPTOR)
 
-``` example_xml
+```
 <SPOT_DESCRIPTOR>
   <SPOT_DECODE_SPEC>
     <READ_SPEC>
@@ -88,36 +74,22 @@ Experiment XML (SPOT\_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/submission.html#Instrument)
+[Platform]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html#Instrument)
 
 | Platform | Instrument Model    |
 | -------- | ------------------- |
 | LS454    | 454 GS FLX Titanium |
 
-</div>
-
-</div>
-
-<div class="example">
-
 ### 454 paired reads
-
-<div class="example_read">
 
 #### リード
 
 Read composition
 
-|                                               |         |                   |                    |            |
-| --------------------------------------------- | ------- | ----------------- | ------------------ | ---------- |
-| Read Index <span class="normal">:</span>      | 0       | 1                 | 2                  | 3          |
-| Read <span class="normal">:</span>            | TCAG    | ATAGAGT……………CCTGG | TCGTAT……………TATTACG | CTCAT…………… |
-| Base Coordinate <span class="normal">:</span> | 1       | 5                 |                    |            |
-| Read Type <span class="normal">:</span>       | Adapter | Forward           | Linker             | Forward    |
-
-</div>
-
-<div class="example_metadata">
+| Read Index :      | 0       | 1                 | 2                  | 3          |
+| Read :            | TCAG    | ATAGAGT……………CCTGG | TCGTAT……………TATTACG | CTCAT…………… |
+| Base Coordinate : | 1       | 5                 |                    |            |
+| Read Type :       | Adapter | Forward           | Linker             | Forward    |
 
 #### メタデータ
 
@@ -137,9 +109,9 @@ Expected Basecall Table
 | TCGTATAACTTCGTATAATGTATGCTATACGAAGTTATTACG | 38        | 5            | full       |
 | CGTAATAACTTCGTATAGCATACATTATACGAAGTTATACGA | 38        | 5            | full       |
 
-Experiment XML (SPOT\_DESCRIPTOR)
+Experiment XML (SPOT_DESCRIPTOR)
 
-``` example_xml
+```
 <SPOT_DESCRIPTOR>
   <SPOT_DECODE_SPEC>
     <READ_SPEC>
@@ -173,59 +145,22 @@ Experiment XML (SPOT\_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/submission.html#Instrument)
+[Platform]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html#Instrument)
 
 | Platform | Instrument Model    |
 | -------- | ------------------- |
 | LS454    | 454 GS FLX Titanium |
 
-</div>
-
-</div>
-
-<div class="example">
-
 ### Illumina single reads
-
-<div class="example_read">
 
 #### リード
 
 Read composition
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Read Index <span class="normal">:</span></td>
-<td>0</td>
-</tr>
-<tr class="even">
-<td>Read <span class="normal">:</span></td>
-<td>ATAGAGTTGATCCTGG……………CCTGGCTCA</td>
-</tr>
-<tr class="odd">
-<td>Base Coordinate <span class="normal">:</span></td>
-<td><div class="base_left">
-1
-</div>
-<div class="base_right">
-72
-</div></td>
-</tr>
-<tr class="even">
-<td>Read Type <span class="normal">:</span></td>
-<td>Forward</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-
-<div class="example_metadata">
+|  Read Index :  |  0  |
+|  Read :  |  ATAGAGTTGATCCTGG……………CCTGGCTCA  |
+|  Base Coordinate :  |  {::nomarkdown}<div class="base_left">１</div><div class="base_right">72</div>{:/} |
+|  Read Type :  |  Forward  |
 
 #### メタデータ
 
@@ -235,9 +170,9 @@ Spot (Read Spec)
 | ---------- | ---------------- | --------- | --------------- |
 | 0          | Application Read | Forward   | BaseCoord = 1   |
 
-Experiment XML (SPOT\_DESCRIPTOR)
+Experiment XML (SPOT_DESCRIPTOR)
 
-``` example_xml
+```
 <SPOT_DESCRIPTOR>
   <SPOT_DECODE_SPEC>
     <SPOT_LENGTH>72</SPOT_LENGTH>
@@ -251,35 +186,22 @@ Experiment XML (SPOT\_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/submission.html#Instrument)
+[Platform]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html#Instrument)
 
 | Platform | Instrument Model             | Sequence Length |
 | -------- | ---------------------------- | --------------- |
 | Illumina | Illumina Genome Analyzer IIx | 72              |
 
-</div>
-
-</div>
-
-<div class="example">
-
 ### Illumina paired reads
-
-<div class="example_read">
 
 #### リード
 
 Read composition
 
-|  Read Index <span class="normal">:</span>  |  0  |  1  |
-| ---- | ---- | ---- |
-|  Read <span class="normal">:</span>  |  ATAGAGTTGATCCTGG……………  |  CCTGGCTCATCAGTTGAT……………  |
-|  Base Coordinate <span class="normal">:</span>  |  1  |  <div class="base_left">101</div><div class="base_right">200</div>  |
-|  Read Type <span class="normal">:</span>  |  Forward  |  Reverse  |
-
-</div>
-
-<div class="example_metadata">
+|  Read Index :  |  0  |  1  |
+|  Read :  |  ATAGAGTTGATCCTGG……………  |  CCTGGCTCATCAGTTGAT……………  |
+|  Base Coordinate :  |  1  |  {::nomarkdown}<div class="base_left">101</div><div class="base_right">200</div>{:/} |
+|  Read Type :  |  Forward  |  Reverse  |
 
 #### メタデータ
 
@@ -290,9 +212,9 @@ Spot (Read Spec)
 | 0          | Application Read | Forward   | BaseCoord = 1   |
 | 1          | Application Read | Reverse   | BaseCoord = 101 |
 
-Experiment XML (SPOT\_DESCRIPTOR)
+Experiment XML (SPOT_DESCRIPTOR)
 
-``` example_xml
+```
 <SPOT_DESCRIPTOR>
   <SPOT_DECODE_SPEC>
   <SPOT_LENGTH>200</SPOT_LENGTH>
@@ -312,36 +234,22 @@ Experiment XML (SPOT\_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/submission.html#Instrument)
+[Platform]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html#Instrument)
 
 | Platform | Instrument Model             | Sequence Length |
 | -------- | ---------------------------- | --------------- |
 | Illumina | Illumina Genome Analyzer IIx | 200             |
 
-</div>
-
-</div>
-
-<div class="example">
-
 ### Illumina paired reads 10x Genomics
-
-<div class="example_read">
 
 #### リード
 
 Read composition
 
-|                                               |          |             |                          |                          |     |
-| --------------------------------------------- | -------- | ----------- | ------------------------ | ------------------------ | --- |
-| Read Index <span class="normal">:</span>      | 0        | 1           | 2                        | 3                        |     |
-| Read <span class="normal">:</span>            | ATTCCTCG | CCA.....ACT | GG...................... | CT...................... |     |
-| Base Coordinate <span class="normal">:</span> | 1        | 9           | 23                       | 123                      | 223 |
-| Read Type <span class="normal">:</span>       | Adapter  | Adapter     | Forward                  | Reverse                  |     |
-
-</div>
-
-<div class="example_metadata">
+| Read Index :      | 0        | 1           | 2                        | 3                        |     |
+| Read :            | ATTCCTCG | CCA.....ACT | GG...................... | CT...................... |     |
+| Base Coordinate : | 1        | 9           | 23                       | 123                      | 223 |
+| Read Type :       | Adapter  | Adapter     | Forward                  | Reverse                  |     |
 
 #### メタデータ
 
@@ -354,9 +262,9 @@ Spot (Read Spec)
 | 2          | Application Read | Forward   | BaseCoord = 23  |
 | 3          | Application Read | Reverse   | BaseCoord = 123 |
 
-Experiment XML (SPOT\_DESCRIPTOR)
+Experiment XML (SPOT_DESCRIPTOR)
 
-``` example_xml
+```
 <SPOT_DESCRIPTOR>
   <SPOT_DECODE_SPEC>
   <SPOT_LENGTH>223</SPOT_LENGTH>
@@ -388,35 +296,22 @@ Experiment XML (SPOT\_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/submission.html#Instrument)
+[Platform]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html#Instrument)
 
 | Platform | Instrument Model             | Sequence Length |
 | -------- | ---------------------------- | --------------- |
 | Illumina | Illumina Genome Analyzer IIx | 223             |
 
-</div>
-
-</div>
-
-<div class="example">
-
 ### SOLiD single reads
-
-<div class="example_read">
 
 #### リード
 
 Read composition
 
-|  Read Index <span class="normal">:</span>  |  0  |
-| ---- | ---- |
-|  Read <span class="normal">:</span>  |  TTGATCCTGG……………CGCTCA  |
-|  Base Coordinate <span class="normal">:</span>  |  <div class="base_left">1</div><div class="base_right">50</div>  |
-|  Read Type <span class="normal">:</span>  |  Forward  |
-
-</div>
-
-<div class="example_metadata">
+|  Read Index :  |  0  |
+|  Read :  |  TTGATCCTGG……………CGCTCA  |
+|  Base Coordinate :  |  {::nomarkdown}<div class="base_left">1</div><div class="base_right">50</div>{:/}  |
+|  Read Type :  |  Forward  |
 
 #### メタデータ
 
@@ -426,9 +321,9 @@ Spot (Read Spec)
 | ---------- | ---------------- | --------- | --------------- |
 | 0          | Application Read | Forward   | BaseCoord = 1   |
 
-Experiment XML (SPOT\_DESCRIPTOR)
+Experiment XML (SPOT_DESCRIPTOR)
 
-``` example_xml
+```
 <SPOT_DESCRIPTOR>
   <SPOT_DECODE_SPEC>
   <SPOT_LENGTH>50</SPOT_LENGTH>
@@ -442,35 +337,22 @@ Experiment XML (SPOT\_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/submission.html#Instrument)
+[Platform]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html#Instrument)
 
 | Platform  | Instrument Model    | Sequence Length |
 | --------- | ------------------- | --------------- |
 | ABI SOLID | AB SOLiD System 3.0 | 50              |
 
-</div>
-
-</div>
-
-<div class="example">
-
 ### SOLiD paired reads
-
-<div class="example_read">
 
 #### リード
 
 Read composition
 
-|  Read Index <span class="normal">:</span>  |  0  |  1  |
-| ---- | ---- | ---- |
-|  Read <span class="normal">:</span>  |  ATCCTGG……………  |  CATCAGTTGAT……………  |
-|  Base Coordinate <span class="normal">:</span>  |  1  |  <div class="base_left">26</div><div class="base_right">50</div>  |
-|  Read Type <span class="normal">:</span>  |  Forward  |  Forward  |
-
-</div>
-
-<div class="example_metadata">
+|  Read Index :  |  0  |  1  |
+|  Read :  |  ATCCTGG……………  |  CATCAGTTGAT……………  |
+|  Base Coordinate :  |  1  |  {::nomarkdown}<div class="base_left">26</div><div class="base_right">50</div>{:/}  |
+|  Read Type :  |  Forward  |  Forward  |
 
 #### メタデータ
 
@@ -481,9 +363,9 @@ Spot (Read Spec)
 | 0          | Application Read | Forward   | BaseCoord = 1   |
 | 0          | Application Read | Forward   | BaseCoord = 26  |
 
-Experiment XML (SPOT\_DESCRIPTOR)
+Experiment XML (SPOT_DESCRIPTOR)
 
-``` example_xml
+```
 <SPOT_DESCRIPTOR>
   <SPOT_DECODE_SPEC>
   <SPOT_LENGTH>50</SPOT_LENGTH>
@@ -503,35 +385,22 @@ Experiment XML (SPOT\_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/submission.html#Instrument)
+[Platform]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html#Instrument)
 
 | Platform  | Instrument Model    | Sequence Length |
 | --------- | ------------------- | --------------- |
 | ABI SOLID | AB SOLiD System 3.0 | 50              |
 
-</div>
-
-</div>
-
-<div class="example">
-
 ### Ion torrent single reads
-
-<div class="example_read">
 
 #### リード
 
 Read composition
 
-|  Read Index <span class="normal">:</span>  |  0  |
-| ---- | ---- |
-|  Read <span class="normal">:</span>  |  AGCCGTATATAG……………CGTCAGAA  |
-|  Base Coordinate <span class="normal">:</span>  |  <div class="base_left">1</div><div class="base_right">(x)</div>  |
-|  Read Type <span class="normal">:</span>  |  Forward  |
-
-</div>
-
-<div class="example_metadata">
+|  Read Index :  |  0  |
+|  Read :  |  AGCCGTATATAG……………CGTCAGAA  |
+|  Base Coordinate :  |  {::nomarkdown}<div class="base_left">1</div><div class="base_right">(x)</div>{:/} |
+|  Read Type :  |  Forward  |
 
 #### メタデータ
 
@@ -541,9 +410,9 @@ Spot (Read Spec)
 | ---------- | ---------------- | --------- | --------------- |
 | 0          | Application Read | Forward   | BaseCoord = 1   |
 
-Experiment XML (SPOT\_DESCRIPTOR)
+Experiment XML (SPOT_DESCRIPTOR)
 
-``` example_xml
+```
 <SPOT_DESCRIPTOR>
   <SPOT_DECODE_SPEC>
     <READ_SPEC>
@@ -556,21 +425,13 @@ Experiment XML (SPOT\_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/submission.html#Instrument)
+[Platform]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html#Instrument)
 
 | Platform    | Instrument Model       | Sequence Length |
 | ----------- | ---------------------- | --------------- |
 | Ion torrent | Ion torrent PGM/Proton |                 |
 
-</div>
-
-</div>
-
-<div class="example">
-
 ### PacBio single reads (Standard sequencing)
-
-<div class="example_metadata">
 
 #### メタデータ
 
@@ -580,13 +441,15 @@ Spot (Read Spec)
 | --------------------------------------------- |
 | ATCTCTCTCTTTTCCTCCTCCTCCGTTGTTGTTGTTGAGAGAGAT |
 
+{::nomarkdown}<br>{:/}
+
 | Read Index | Read Class       | Read Type | Ordering Method |
 | ---------- | ---------------- | --------- | --------------- |
 | 0          | Application Read | Forward   | BaseCoord = 1   |
 
-Experiment XML (SPOT\_DESCRIPTOR)
+Experiment XML (SPOT_DESCRIPTOR)
 
-``` example_xml
+```
 <SPOT_DESCRIPTOR>
   <SPOT_DECODE_SPEC>
     <READ_SPEC>
@@ -599,7 +462,7 @@ Experiment XML (SPOT\_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/submission.html#Instrument)
+[Platform]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html#Instrument)
 
 | Platform     | Instrument Model |
 | ------------ | ---------------- |
@@ -612,9 +475,9 @@ Experiment Attribute
 | Sequencing Protocol | Standard sequencing |       |
 | Insert size         | 8000                |       |
 
-Experiment XML (EXPERIMENT\_ATTRIBUTES)
+Experiment XML (EXPERIMENT_ATTRIBUTES)
 
-``` example_xml
+```
 <EXPERIMENT_ATTRIBUTES>
   <EXPERIMENT_ATTRIBUTE>
     <TAG>Sequencing Protocol</TAG>
@@ -627,15 +490,7 @@ Experiment XML (EXPERIMENT\_ATTRIBUTES)
 </EXPERIMENT_ATTRIBUTES>
 ```
 
-</div>
-
-</div>
-
-<div class="example">
-
 ### PacBio single reads (Circular consensus sequencing)
-
-<div class="example_metadata">
 
 #### メタデータ
 
@@ -645,9 +500,9 @@ Spot (Read Spec)
 | ---------- | ---------------- | --------- | --------------- |
 | 0          | Application Read | Other     | BaseCoord = 1   |
 
-Experiment XML (SPOT\_DESCRIPTOR)
+Experiment XML (SPOT_DESCRIPTOR)
 
-``` example_xml
+```
 <SPOT_DESCRIPTOR>
   <SPOT_DECODE_SPEC>
     <READ_SPEC>
@@ -660,7 +515,7 @@ Experiment XML (SPOT\_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/submission.html#Instrument)
+[Platform]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html#Instrument)
 
 | Platform     | Instrument Model |
 | ------------ | ---------------- |
@@ -673,9 +528,9 @@ Experiment Attribute
 | Sequencing Protocol | Circular consensus sequencing |       |
 | Insert size         | 700                           |       |
 
-Experiment XML (EXPERIMENT\_ATTRIBUTES)
+Experiment XML (EXPERIMENT_ATTRIBUTES)
 
-``` example_xml
+```
 <EXPERIMENT_ATTRIBUTES>
   <EXPERIMENT_ATTRIBUTE>
     <TAG>Sequencing Protocol</TAG>
@@ -688,114 +543,65 @@ Experiment XML (EXPERIMENT\_ATTRIBUTES)
 </EXPERIMENT_ATTRIBUTES>
 ```
 
-</div>
-
-</div>
-
-<div class="section">
-
 ## data validation でエラーになる典型的な例
 
 data validation でエラーになった場合， validation
 プロセスを停止し，メタデータを修正するかデータファイルを再アップロードしてください。
 
-<div class="sub_index">
-
   - [Application read のないリード](#no_application)
   - [矛盾する塩基座標を持つリード](#inconsistent_base)
   - [位置の特定できない Relative order を持ったリード](#cannot_specified)
 
-</div>
-
-<div class="example">
-
-### Application read のないリード
-
-<div class="example_read">
+### Application read のないリード <a name="no_application"></a>
 
 #### リード
 
 Read composition
 
-|  Read Index <span class="normal">:</span>  |  0  |  1  |
-| ---- | ---- | ---- |
-|  Read <span class="normal">:</span>  |  ATCCGG  |  CATCAGTTGAT…………………………………………………  |
-|  Base Coordinate <span class="normal">:</span>  |  1  |  <div class="base_left">7</div><div class="base_right">50</div>  |
-|  Read Type <span class="normal">:</span>  |  Primer  |  Linker <span class="attention_text">(少なくとも一つの application を持っている必要がある)</span>  |
+|  Read Index :  |  0  |  1  |
+|  Read :  |  ATCCGG  |  CATCAGTTGAT…………………………………………………  |
+|  Base Coordinate :  |  1  |  {::nomarkdown}<div class="base_left">7</div><div class="base_right">50</div>{:/} |
+|  Read Type :  |  Primer  |  Linker <span class="red">(少なくとも一つの application を持っている必要がある)</span>  |
 
-</div>
-
-</div>
-
-<div class="example">
-
-### 矛盾する塩基座標を持つリード
-
-<div class="example_read">
+### 矛盾する塩基座標を持つリード <a name="inconsistent_base"></a>
 
 #### リード 1
 
 Read composition
 
-|  Read Index <span class="normal">:</span>  |  0  |  1  |
-| ---- | ---- | ---- |
-|  Read <span class="normal">:</span>  |  ATCCGG……………  |  CATCAG……………  |
-|  Base Coordinate <span class="normal">:</span>  |  1  |  <div class="base_left"><span class="attention_text">1 (1 以上である必要がある)</span></div>  |
-|  Read Type <span class="normal">:</span>  |  Forward  |  Reverse  |
-
-</div>
-
-<div class="example_read">
+|  Read Index :  |  0  |  1  |
+|  Read :  |  ATCCGG……………  |  CATCAG……………  |
+|  Base Coordinate :  |  1  |  <span class="red">1 (1 以上である必要がある)</span>  |
+|  Read Type :  |  Forward  |  Reverse  |
 
 #### リード 2
 
 Read composition
 
-|                                               |         |              |                                                      |
-| --------------------------------------------- | ------- | ------------ | ---------------------------------------------------- |
-| Read Index <span class="normal">:</span>      | 0       | 1            | 2                                                    |
-| Read <span class="normal">:</span>            | TCAG    | ATAGAGTTG……… | TCGTATAACTTCGTATAATGTATGCTATACGAAGTT                 |
-| Base Coordinate <span class="normal">:</span> | 1       | 5            | <span class="attention_text">4 (5 以上である必要がある)</span> |
-| Read Type <span class="normal">:</span>       | Adapter | Forward      | Reverse                                              |
-
-</div>
-
-<div class="example_read">
+| Read Index :      | 0       | 1            | 2                                                    |
+| Read :            | TCAG    | ATAGAGTTG……… | TCGTATAACTTCGTATAATGTATGCTATACGAAGTT                 |
+| Base Coordinate : | 1       | 5            | <span class="red">4 (5 以上である必要がある)</span> |
+| Read Type :       | Adapter | Forward      | Reverse                                              |
 
 #### リード 3
 
 Read composition
 
-|  Read Index <span class="normal">:</span>  |  0  |  1  |
-| ---- | ---- | ---- |
-|  Read <span class="normal">:</span>  |  ATCCGGGTGTGTCATCAG  |  CATCAG……………  |
-|  Base Coordinate <span class="normal">:</span>  |  <span class="attention_text">2 (1 から始まる必要がある)</span>  |  <div class="base_left">19</div>  |
-|  Read Type <span class="normal">:</span>  |  Adapter  |  Forward  |
+|  Read Index :  |  0  |  1  |
+|  Read :  |  ATCCGGGTGTGTCATCAG  |  CATCAG……………  |
+|  Base Coordinate :  |  <span class="red">2 (1 から始まる必要がある)</span>  |  19  |
+|  Read Type :  |  Adapter  |  Forward  |
 
-</div>
-
-</div>
-
-<div class="example">
-
-### 位置の特定できない Relative order を持ったリード
-
-<div class="example_read">
+### 位置の特定できない Relative order を持ったリード <a name="cannot_specified"></a>
 
 #### リード
 
 Read composition
 
-|                                               |         |            |         |                                                                     |
-| --------------------------------------------- | ------- | ---------- | ------- | ------------------------------------------------------------------- |
-| Read Index <span class="normal">:</span>      | 0       | 1          | 2       | 3                                                                   |
-| Read <span class="normal">:</span>            | TCAG    | ATAGA…………… | ………………… | CTCAT…………………………………………………………                                         |
-| Base Coordinate <span class="normal">:</span> | 1       | 5          |         |                                                                     |
-| Read Type <span class="normal">:</span>       | Adapter | Forward    | Linker  | Forward <span class="attention_text">(この forward の位置が特定できない)</span> |
-
-</div>
-
-<div class="example_metadata">
+| Read Index :      | 0       | 1          | 2       | 3                                                                   |
+| Read :            | TCAG    | ATAGA…………… | ………………… | CTCAT…………………………………………………………                                         |
+| Base Coordinate : | 1       | 5          |         |                                                                     |
+| Read Type :       | Adapter | Forward    | Linker  | Forward <span class="red">(この forward の位置が特定できない)</span> |
 
 #### メタデータ
 
@@ -808,23 +614,11 @@ Spot (Read Spec)
 | 2          | Technical Read   | Linker    | RelativeOrder   |
 | 3          | Application Read | Forward   | RelativeOrder   |
 
-</div>
-
-</div>
-
-</div>
-
-<div class="section">
-
 ## Experiment (Pipeline)
-
-<div class="example">
 
 ### Experiment XML Pipeline の例1
 
-<div class="example_metadata">
-
-``` example_xml
+```
 <PROCESSING>
   <PIPELINE>
     <PIPE_SECTION section_name="Base Caller">
@@ -845,17 +639,9 @@ Spot (Read Spec)
 </PROCESSING>
 ```
 
-</div>
-
-</div>
-
-<div class="example">
-
 ### Experiment XML Pipeline の例2
 
-<div class="example_metadata">
-
-``` example_xml
+```
 <PROCESSING>
   <PIPELINE>
     <PIPE_SECTION>
@@ -889,11 +675,3 @@ Spot (Read Spec)
   </PIPELINE>
 </PROCESSING>
 ```
-
-</div>
-
-</div>
-
-</div>
-
-</div>

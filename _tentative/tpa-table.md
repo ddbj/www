@@ -11,13 +11,13 @@ Third PArty data (TPA) are submitted to the International Nucleotide Sequence Da
 
 ## TPA subcategories
 
-All TPA records belong to one of these classes: <span class="bold">TPA:experimental</span>, <span class="bold">TPA:inferential, TPA:specialist\_db,</span> or <span class="bold">TPA:assembly</span>.
+All TPA records belong to one of these classes: <span class="bold">TPA:experimental</span>, <span class="bold">TPA:inferential, TPA:specialist_db,</span> or <span class="bold">TPA:assembly</span>.
 
   - TPA:experimental  
     describes records that include functional annotation derived at least in part from peer-reviewed wet-lab experimental investigation.
   - TPA:inferential  
     describes records that include functional annotation derived from peer-reviewed bioinformatic investigation.
-  - TPA:specialist\_db  
+  - TPA:specialist_db  
     describes records whose sequences are submitted from an existing authoritative public database that is built using INSDC sequence data and is described in an accepted peer-reviewed publication. The existing database is therefore recognized to be comprehensive, to have added value, and to be maintained long term.
   - TPA:assembly  
     describes records reporting assembly or reassembly, for which the generation, whether it is purely informatic or informed by experimentation, has been subject to peer review. Annotation may or may not be available and does not require to be part of the peer review for this TPA class. A further requirement for TPA:assembly is for submitters to provide an alignment file containing the reads/sequences mapped to the assembly.
@@ -28,7 +28,6 @@ TPA records are clearly labeled with keywords indicating their TPA status and th
 
 Below is a list of typical TPA entry types and the class to which they belong. Please note that this list is neither exhaustive (there may be further entry types that would be acceptable) nor defining of the complete set of requirements (other constraints will be applied that are documented outside this list)
 
-<div class="main_table format">
 
 |  Record<br/>Type  |  TPA Tier  |  Description  |
 | ---- | ---- | ---- |
@@ -55,18 +54,13 @@ Below is a list of typical TPA entry types and the class to which they belong. P
 |  21  |  Assembly  |  A record or set of records representing a novel assembly or reassembly of primary read and sequence data that exist in INSDC, for which no functional annotation data are presented, but for which the assembly has been assessed in the peer review process associated with the linked publication.  |
 |  22  |  Assembly  |  A record or set of records representing a novel assembly or reassembly, with functional annotation, of primary read and sequence data that exist in INSDC, for which the assembly but not the functional annotation has been assessed in the peer review process associated with the linked publication.  |
 
-</div>
-
 ## Unacceptable records for TPA
 
 Please note that this list is not exhaustive.
 
-<div class="main_table format">
 
 |  Record<br/>Type  |  TPA Tier  |  Description  |
 | ---- | ---- | ---- |
 |  A  |  Not accepted  |  Annotation of repeat (and no other) features  |
 |  B  |  Not accepted  |  Annotation that has arisen from an automated tool, such as GeneMark, tRNA scan or ORF finder, where no further evidence, experimental or otherwise, is presented for the annotation. The annotation in these cases has not been the subject of the peer review of the publication.  |
 |  C  |  Not accepted  |  A record representing a completely sequenced genome including only features that have not been assigned gene symbols or product identifiers, for which none has wet laboratory experimental evidence.  |
-
-</div>
