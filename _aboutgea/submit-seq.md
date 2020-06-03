@@ -3,6 +3,7 @@ layout: indexed_content
 title: Submit sequencing experiment
 pathname: submit-seq
 category: aboutgea
+pdf: https://www.ddbj.nig.ac.jp/pdf/gea/submit-seq.pdf
 ---
 
 
