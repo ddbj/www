@@ -23,7 +23,7 @@ BioSample の主な目的:
 
 </div>
 
-<div id="db_top_navi_box" class="clearfix">
+<div id="db-top-navi-box" class="clearfix">
 
 <div class="box-layer">
 

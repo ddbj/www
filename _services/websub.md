@@ -25,9 +25,9 @@ System）は、アノテーションをつけた塩基配列を Web
 
 ### 入力ガイド
 
-<div class="nsss_menu">
+<div class="nsss-menu">
 
-<div class="nsss_icon">
+<div class="nsss-icon">
 
 [![]({{ site.baseurl }}/assets/images/parts/pdf_icon.svg)](/files/pdf/ddbj/websubHelp_full-j.pdf)
 
@@ -35,7 +35,7 @@ System）は、アノテーションをつけた塩基配列を Web
 
 </div>
 
-<div class="nsss_icon">
+<div class="nsss-icon">
 
 [![]({{ site.baseurl }}/assets/images/parts/youtube_icon.svg)](https://youtu.be/JTCV7bG_KJc)
 
@@ -43,7 +43,7 @@ System）は、アノテーションをつけた塩基配列を Web
 
 </div>
 
-<div class="nsss_icon">
+<div class="nsss-icon">
 
 [![]({{ site.baseurl }}/assets/images/parts/gdrive.svg)](https://drive.google.com/file/d/1KnEVC--SFglqdENRGLMehFP9NuQXyVrt)
 
@@ -51,7 +51,7 @@ System）は、アノテーションをつけた塩基配列を Web
 
 </div>
 
-<div class="nsss_icon">
+<div class="nsss-icon">
 
 [![]({{ site.baseurl }}/assets/images/parts/info_icon.svg)](/ddbj/websub-help.html)
 

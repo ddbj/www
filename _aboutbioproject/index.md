@@ -16,7 +16,7 @@ category: aboutbioproject
 [EBI](https://www.ebi.ac.uk/)/[NCBI](https://www.ncbi.nlm.nih.gov/bioproject)
 と共有されます。
 
-<div id="db_top_navi_box" class="clearfix">
+<div id="db-top-navi-box" class="clearfix">
 
 <div class="box-layer">
 

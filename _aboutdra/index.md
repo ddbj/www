@@ -14,7 +14,7 @@ Sequence Read Archive
 (SRA)](https://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi) と [EBI Sequence
 Read Archive (ERA)](https://www.ebi.ac.uk/ena/) との国際協力のもと，運営されています。
 
-<div id="db_top_navi_box" class="clearfix">
+<div id="db-top-navi-box" class="clearfix">
 
 <div class="box-layer">
 

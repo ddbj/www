@@ -41,7 +41,7 @@ NBDC からデータ提供の承認連絡を受けた登録者は [JGA に連絡
 また，JGA はサンプルの表現型についてのデータをも登録しています。その他のヒトに関するデータについては，[NBDC
 ヒトデータ審査委員会事務局](http://humandbs.biosciencedbc.jp/)にご相談下さい。
 
-<div id="db_top_navi_box" class="clearfix">
+<div id="db-top-navi-box" class="clearfix">
 
 <div class="box-layer">
 
