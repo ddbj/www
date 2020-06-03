@@ -3,9 +3,10 @@ layout: indexed_content
 title: Third-party reanalysis data
 pathname: third-party-reanalysis
 category: aboutgea
+pdf: https://www.ddbj.nig.ac.jp/pdf/gea/third-party-reanalysis.pdf
 ---
 
-<div class="section chapter">
+
 
 ## Third-party reanalysis data 登録
 
@@ -15,23 +16,21 @@ category: aboutgea
 等のデータベースで公開されている必要があります。また、登録の目的は査読論文で再解析の内容、及び、アクセッション番号を公表することである必要があります。Third-party
 reanalysis data を GEA に登録する場合は [GEA チーム](/contact.html)にお問い合わせください。
 
-<div class="section section">
+
 
 ### GEA third-party reanalysis data 登録についての注意点
 
-<div class="sub_index">
+
 
   - Third-party reanalysis data を GEA
     から公開するためには、再解析の内容についての査読論文が公開されている必要があります。
   - Third-party reanalysis data で参照している元データ（fastq 等の生データを含む）は GEA や
     INSDC 等の主要な公共データベースで公開されている必要があります。
 
-</div>
 
-</div>
+
+
 
 関連サイト: ['Third-party reanalysis' type を持つ NCBI GEO
 データ](https://www.ncbi.nlm.nih.gov/geo/browse/?view=series&search=Third-party%20reanalysis&type=27&zsort=date&display=20)。[DDBJ
 Third Party Data (TPA)](/ddbj/tpa.html)
-
-</div>

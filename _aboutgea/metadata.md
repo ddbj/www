@@ -144,7 +144,7 @@ experimental factor は一つの IDF
 
 <!-- end list -->
 
-  - Publication DOI  
+  - Publication DOI<a name="Publication_DOI"></a>
     <p>登録データを引用している文献の Digital Object Identifier (DOI)。PubMed ID がある場合は
     PubMed ID を記載します。</p>
 

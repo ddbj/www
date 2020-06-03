@@ -25,6 +25,7 @@ pdf: https://www.ddbj.nig.ac.jp/pdf/gea/submit-array.pdf
 
 
 {::options parse_block_html="true" /}
+<br>
 <div style="background-color:#dae3f3;">
 ### 2\. BioProject と BioSample を登録
 
@@ -45,6 +46,7 @@ pdf: https://www.ddbj.nig.ac.jp/pdf/gea/submit-array.pdf
 
 
 {::options parse_block_html="true" /}
+<br>
 <div style="background-color:#e2f0d9;">
 ### 3\. 生データと解析済みデータファイルをアップロード
 
@@ -57,6 +59,7 @@ pdf: https://www.ddbj.nig.ac.jp/pdf/gea/submit-array.pdf
 
 
 {::options parse_block_html="true" /}
+<br>
 <div style="background-color:#ffe5e5;">
 ### 4\. BioProject と BioSample を選択
 
@@ -67,6 +70,7 @@ pdf: https://www.ddbj.nig.ac.jp/pdf/gea/submit-array.pdf
 
 
 {::options parse_block_html="true" /}
+<br>
 <div style="background-color:#dae3f3;">
 ### 5\. IDF と SDRF を作成
 
@@ -88,6 +92,7 @@ pdf: https://www.ddbj.nig.ac.jp/pdf/gea/submit-array.pdf
 
 
 {::options parse_block_html="true" /}
+<br>
 <div style="background-color:#f6e6d5;">
 ### 6\. IDF と SDRF を投稿しデータファイルを検証する
 
@@ -204,7 +209,7 @@ DDBJ センターから登録者に問い合わせた後三か月以上回答が
 ### 生データと解析済みファイルのアップロード <a name="upload-data"></a>
 
 
-
+<br>
 #### [ターミナルによるシークエンスデータの転送 (Linux/Mac OS X)](javascript:void\(0\))
 
 
@@ -271,7 +276,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 
 
-
+<br>
 #### [WinSCP によるシークエンスデータの転送 (Windows)](javascript:void\(0\))
 
 
@@ -332,7 +337,7 @@ DRA への登録 ～データの転送 (Windows)～
 
 
 
-
+<br>
 #### [Cyberduck によるシークエンスデータの転送 (Mac OS X)](javascript:void\(0\))
 
 
@@ -645,7 +650,7 @@ MD5 (Message Digest Algorithm 5) はハッシュ関数であり、与えられ�
 MD5 値の一致をチェックすることで、ファイルの破損がないかどうか確認しています。
 
 
-
+<br>
 ### [MD5 値の取得 (Linux)](javascript:void\(0\))
 
 
@@ -664,7 +669,7 @@ B636E0063E29709B6082F324C76D0911 file2
 
 
 
-
+<br>
 ### [MD5 値の取得 (Mac OS X)](javascript:void\(0\))
 
 
@@ -682,7 +687,7 @@ B636E0063E29709B6082F324C76D0911 file2
 
 
 
-
+<br>
 ### [MD5 値の取得 (Windows)](javascript:void\(0\))<a name="supplement-md5"></a>
 
 
