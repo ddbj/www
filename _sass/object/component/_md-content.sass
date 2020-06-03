@@ -103,8 +103,8 @@ $MARGIN_BOTTOM: 1rem
         padding: .6rem .6rem .6rem .6rem
         border-bottom: 1px solid $COLOR_SEPARATOR
         vertical-align: middle
-      td, th.border-btm
-        border-bottom: 1px solid $COLOR_GRAY
+        &.borderbtm
+          border-bottom: 1px solid $COLOR_GRAY
       &:last-child
         > td, th
           border-bottom: 1px solid $COLOR_GRAY
@@ -177,16 +177,16 @@ $MARGIN_BOTTOM: 1rem
     margin: 2rem 2rem
     background-color: $COLOR_KEY_PALE
 
-  .nsss_menu
+  .nsss-menu
     display: flex
-    .nsss_icon
+    .nsss-icon
       width: 100px
       text-align: center
       img
         width: 35px
         height: auto
 
-  .db_top_navi_box
+  .db-top-navi-box
     img
       width: 35px
       height: auto
@@ -199,3 +199,242 @@ $MARGIN_BOTTOM: 1rem
     height: 24px
     vertical-align: middle
     margin-left: 2px
+
+  .right-alignment
+    float: right
+    a
+      font-weight: normal
+
+  .life-size
+    width: 100%
+
+/*-- 申し込みの流れ フローチャート --*/
+
+  .flow
+    color: #000000 
+    list-style: none
+    overflow: hidden
+    padding: 10px 0
+    border-radius: 4px 4px 0 0
+    -webkit-border-radius: 4px 4px 0 0
+    margin: 0
+    li:first-child
+      background: linear-gradient(#FEFEFE, #F3F5F5)
+      background: -o-linear-gradient(#FEFEFE, #F3F5F5)
+      background: -ms-linear-gradient(#FEFEFE, #F3F5F5)
+      background: -moz-linear-gradient(#FEFEFE, #F3F5F5)
+      background: -webkit-linear-gradient(#FEFEFE, #F3F5F5)
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(1.00, #F3F5F5), color-stop(0.00, #FEFEFE))
+      border-bottom: 1px solid #bbb
+      border-top: 1px solid #bbb
+      color: #000000
+      display: block
+      float: left
+      font-size: 13px
+      min-width: 100px
+      text-decoration: none
+
+  .flow_ja li:first-child
+    line-height: 60px
+    padding: 0 10px 0 40px
+    text-align: center
+
+  .flow_en li:first-child
+    line-height: 20px
+    padding: 10px 10px 0 40px
+    text-align: left
+
+  .flow li:first-child::after
+    background: linear-gradient(#F9FAFA, #F4F6F6)
+    background: -o-linear-gradient(#F9FAFA, #F4F6F6)
+    background: -ms-linear-gradient(#F9FAFA, #F4F6F6)
+    background: -moz-linear-gradient(#F9FAFA, #F4F6F6)
+    background: -webkit-linear-gradient(#F9FAFA, #F4F6F6)
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1, #F4F6F6), color-stop(0, #F9FAFA))
+    border-bottom: 1px solid #bbb
+    border-right: 1px solid #bbb
+    content: " "
+    height: 31px
+    position: relative
+    transform: skew(-30deg)
+    -o-transform: skew(-30deg)
+    -ms-transform: skew(-30deg)
+    -moz-transform: skew(-30deg)
+    -webkit-transform: skew(-30deg)
+    width: 30px
+
+  .ja li:first-child::after
+    margin: -30px -30px -1px auto
+
+  .en li:first-child::after
+    margin: -20px -30px -1px auto
+
+  .flow li:first-child
+    border-left: 1px solid #bbb
+    padding-left: 10px
+
+    &::before
+      background: linear-gradient(#FEFEFE, #F9FAFA)
+      background: -o-linear-gradient(#FEFEFE, #F9FAFA)
+      background: -ms-linear-gradient(#FEFEFE, #F9FAFA)
+      background: -moz-linear-gradient(#FEFEFE, #F9FAFA)
+      background: -webkit-linear-gradient(#FEFEFE, #F9FAFA)
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(1, #F9FAFA), color-stop(0, #FEFEFE))
+      border-right: 1px solid #bbb
+      border-top: 1px solid #bbb
+      content: " "
+      display: block
+      float: right
+      height: 31px
+      transform: skew(30deg)
+      -o-transform: skew(30deg)
+      -ms-transform: skew(30deg)
+      -moz-transform: skew(30deg)
+      -webkit-transform: skew(30deg)
+      width: 30px
+
+  .ja li:first-child::before
+    margin: -1px -30px -30px auto
+
+  .en li:first-child::before
+    margin: -11px -30px -30px auto
+
+  .flow li:nth-child(2)
+    background: linear-gradient(#f1f1f1, #e5e9e9)
+    background: -o-linear-gradient(#f1f1f1, #e5e9e9)
+    background: -ms-linear-gradient(#f1f1f1, #e5e9e9)
+    background: -moz-linear-gradient(#f1f1f1, #e5e9e9)
+    background: -webkit-linear-gradient(#f1f1f1, #e5e9e9)
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1, #e5e9e9), color-stop(0, #f1f1f1))
+    border-bottom: 1px solid #bbb
+    border-top: 1px solid #bbb
+    color: #000000
+    display: block
+    float: left
+    font-size: 13px
+    min-width: 100px
+    text-align: center
+    text-decoration: none
+
+  .flow_ja li:nth-child(2)
+    line-height: 60px
+    padding: 0 10px 0 40px
+
+  .flow_en li:nth-child(2)
+    line-height: 20px
+    padding: 10px 10px 0 40px
+
+  .flow li:nth-child(2)::after
+    background: linear-gradient(#ebeeee, #e6ebeb)
+    background: -o-linear-gradient(#ebeeee, #e6ebeb)
+    background: -ms-linear-gradient(#ebeeee, #e6ebeb)
+    background: -moz-linear-gradient(#ebeeee, #e6ebeb)
+    background: -webkit-linear-gradient(#ebeeee, #e6ebeb)
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1, #e6ebeb), color-stop(0, #ebeeee))
+    border-bottom: 1px solid #bbb
+    border-right: 1px solid #bbb
+    content: " "
+    display: block
+    height: 31px
+    margin: -30px -30px -1px auto
+    position: relative
+    transform: skew(-30deg)
+    -o-transform: skew(-30deg)
+    -ms-transform: skew(-30deg)
+    -moz-transform: skew(-30deg)
+    -webkit-transform: skew(-30deg)
+    width: 30px
+
+  .flow_ja li:nth-child(2)::after
+    margin: -30px -30px -1px auto
+
+  .flow_en li:nth-child(2)::after
+    margin: -20px -30px -1px auto
+
+  .flow li:nth-child(2)::before
+    background: linear-gradient(#f1f1f1, #ebeeee)
+    background: -o-linear-gradient(#f1f1f1, #ebeeee)
+    background: -ms-linear-gradient(#f1f1f1, #ebeeee)
+    background: -moz-linear-gradient(#f1f1f1, #ebeeee)
+    background: -webkit-linear-gradient(#f1f1f1, #ebeeee)
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1, #ebeeee), color-stop(0, #f1f1f1))
+    border-right: 1px solid #bbb
+    border-top: 1px solid #bbb
+    content: " "
+    display: block
+    float: right
+    height: 31px
+    margin: -1px -30px -30px auto
+    transform: skew(30deg)
+    -o-transform: skew(30deg)
+    -ms-transform: skew(30deg)
+    -moz-transform: skew(30deg)
+    -webkit-transform: skew(30deg)
+    width: 30px
+
+  .flow_ja li:nth-child(2)::before
+    margin: -1px -30px -30px auto
+
+  .flow_en li:nth-child(2)::before
+    margin: -11px -30px -30px auto
+
+  .flow li:last-child
+    background: linear-gradient(#e5e5e5, #d7dede)
+    background: -o-linear-gradient(#e5e5e5, #d7dede)
+    background: -ms-linear-gradient(#e5e5e5, #d7dede)
+    background: -moz-linear-gradient(#e5e5e5, #d7dede)
+    background: -webkit-linear-gradient(#e5e5e5, #d7dede)
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1, #d7dede), color-stop(0, #e5e5e5))
+    border-bottom: 1px solid #bbb
+    border-top: 1px solid #bbb
+    color: #000000
+    display: block
+    float: left
+    font-size: 13px
+    line-height: 20px
+    min-width: 100px
+    padding: 10px 10px 0px 40px
+    text-align: center
+    text-decoration: none
+
+    &::after
+      background: linear-gradient(#dde3e3, #d8dfdf)
+      background: -o-linear-gradient(#dde3e3, #d8dfdf)
+      background: -ms-linear-gradient(#dde3e3, #d8dfdf)
+      background: -moz-linear-gradient(#dde3e3, #d8dfdf)
+      background: -webkit-linear-gradient(#dde3e3, #d8dfdf)
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(1, #d8dfdf), color-stop(0, #dde3e3))
+      border-bottom: 1px solid #bbb
+      border-right: 1px solid #bbb
+      content: " "
+      display: block
+      height: 31px
+      margin: -20px -30px -1px auto
+      position: relative
+      transform: skew(-30deg)
+      -o-transform: skew(-30deg)
+      -ms-transform: skew(-30deg)
+      -moz-transform: skew(-30deg)
+      -webkit-transform: skew(-30deg)
+      width: 30px
+
+    &::before
+      background: linear-gradient(#e5e5e5, #dde3e3)
+      background: -o-linear-gradient(#e5e5e5, #dde3e3)
+      background: -ms-linear-gradient(#e5e5e5, #dde3e3)
+      background: -moz-linear-gradient(#e5e5e5, #dde3e3)
+      background: -webkit-linear-gradient(#e5e5e5, #dde3e3)
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(1, #dde3e3), color-stop(0, #e5e5e5))
+      border-right: 1px solid #bbb
+      border-top: 1px solid #bbb
+      content: " "
+      display: block
+      float: right
+      height: 31px
+      margin: -11px -30px -30px auto
+      transform: skew(30deg)
+      -o-transform: skew(30deg)
+      -ms-transform: skew(30deg)
+      -moz-transform: skew(30deg)
+      -webkit-transform: skew(30deg)
+      width: 30px
