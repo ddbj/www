@@ -73,7 +73,7 @@ scope](#BioProject_Sample_scope)，[Material](#Material)，[Capture](#Capture)
 
 
 
-### プライマリープロジェクトとアンブレラプロジェクト
+### プライマリープロジェクトとアンブレラプロジェクト<a name="primary-and-umbrella"></a>
 
 プロジェクトにはプライマリープロジェクトとアンブレラプロジェクトの二種類があります。
 
@@ -204,7 +204,7 @@ PRJDB 番号を記入してください。 登録したプライマリープロ�
 
 ## メタデータ
 
-必須<span class="required">\*</span>  
+必須<span class="red">\*</span>  
 条件によって必須<span class="conditionally_required">\*</span>
 
 
@@ -224,12 +224,12 @@ BioProject スタッフが登録者に連絡するために使われ，一般に
 
 <!-- end list -->
 
-  - [Last name](#BioProject_Last_name)<span class="required">\*</span>  
+  - [Last name](#BioProject_Last_name)<span class="red">\*</span>  
     登録者の last name。
 
 <!-- end list -->
 
-  - [E-mail](#BioProject_E-mail)<span class="required">\*</span>  
+  - [E-mail](#BioProject_E-mail)<span class="red">\*</span>  
     E-mail アドレス。所属する組織ドメインのメールアドレスを指定してください。
 
 #### Organization
@@ -237,7 +237,7 @@ BioProject スタッフが登録者に連絡するために使われ，一般に
 コンタクトパーソンが所属する組織。
 
   - [Submitting
-    organization](#BioProject_Submitting_organization)<span class="required">\*</span>  
+    organization](#BioProject_Submitting_organization)<span class="red">\*</span>  
     組織のフルネーム。
 
 <!-- end list -->
@@ -270,18 +270,18 @@ BioProject スタッフが登録者に連絡するために使われ，一般に
 
 プロジェクト内容を記述します。
 
-  - [Project title](#Project_title)<span class="required">\*</span>  
+  - [Project title](#Project_title)<span class="red">\*</span>  
     プロジェクトの内容を表す短いタイトル。このタイトルは公開されたプロジェクトのタイトルとして使われます。例: Chromosome Y
     sequencing，Global studies of microbial diversity on human skin.
 
 <!-- end list -->
 
-  - [Description](#Public_description)<span class="required">\*</span>  
+  - [Description](#Public_description)<span class="red">\*</span>  
     研究対象やゴールに関する記載。第三者がデータを解釈することができるように十分な量 (100 文字以上) の情報を記入します。
 
 <!-- end list -->
 
-  - [Private comments to DDBJ staff](#Private_comments)  
+  - [Private comments to DDBJ staff]<a name="Private_comments"></a>
     データベーススタッフへの質問，プロジェクトに関する追加情報を記入します。内容は公開されません。アンブレラプロジェクトを登録する場合，ここにその旨を記載します。
 
 <!-- end list -->
@@ -302,15 +302,15 @@ BioProject スタッフが登録者に連絡するために使われ，一般に
 <!-- end list -->
 
   - [Relevance
-    description](#Relevance_description)<span class="conditionally_required">\*</span>  
+    description](#Relevance_description)<span class="red">\*</span>  
     Other を選択したときはここに Relevance を記入します。
 
-#### Umbrella BioProject
+#### Umbrella BioProject<a name="Area_linked-project"></a>
 
 登録しようとしているプロジェクトが既に登録されているアンブレラプロジェクトに属する場合，そのアンブレラプロジェクトのアクセッション番号と概要を記入します。この情報は[プロジェクトのリンク](#primary-and-umbrella)のために必要です。
 
   - [Initiative
-    description](#Initiative_description)<span class="conditionally_required">\*</span>  
+    description](#Initiative_description)<span class="red">\*</span>  
     アンブレラプロジェクトについての記述。
 
 <!-- end list -->
@@ -373,7 +373,7 @@ BioProject スタッフが登録者に連絡するために使われ，一般に
 #### Project data type<a name="Project_data_type"></a>
 
   - [Project data
-    type](#Project_data_type)<span class="required">\*</span>  
+    type](#Project_data_type)<span class="red">\*</span>  
     Project の分類。以下の選択肢から該当する type を選びます。複数選択することができます。[News: Project
     data type を複数選択できるようになりました](/news/ja/2014-11-12.html)
 
@@ -409,7 +409,7 @@ BioProject スタッフが登録者に連絡するために使われ，一般に
 #### Sample scope/Material/Capture/Methodology
 
   - [Sample
-    scope](#BioProject_Sample_scope)<span class="required">\*</span>  
+    scope](#BioProject_Sample_scope)<span class="red">\*</span><a name="BioProject_Sample_scope"></a>  
     研究で使われた生物学的サンプルの対象を選択肢から選びます。
 
     | Sample scope  | Description                                 |
@@ -423,7 +423,7 @@ BioProject スタッフが登録者に連絡するために使われ，一般に
 
 <!-- end list -->
 
-  - [Material](#Material)<span class="required">\*</span>  
+  - [Material](#Material)<span class="red">\*</span><a name="Material"></a>
     サンプルから単離された実験材料の種類。
 
     | Material       | Description                                  |
@@ -438,7 +438,7 @@ BioProject スタッフが登録者に連絡するために使われ，一般に
 
 <!-- end list -->
 
-  - [Capture](#Capture)<span class="required">\*</span>  
+  - [Capture](#Capture)<span class="red">\*</span><a name="Capture"></a>  
     サンプル材料から得ようとしている情報のスケールや種類。　
 
     | Capture             | Description                            |
@@ -458,7 +458,7 @@ BioProject スタッフが登録者に連絡するために使われ，一般に
 
 <!-- end list -->
 
-  - [Methodology](#Methodology)<span class="required">\*</span>  
+  - [Methodology](#Methodology)<span class="red">\*</span>  
     データを得るために使われた主要な手法。
 
     | Methodology       | Description                                   |
@@ -478,7 +478,7 @@ BioProject スタッフが登録者に連絡するために使われ，一般に
 
 登録するデータの種類。
 
-  - [Objective](#Objective)<span class="required">\*</span>  
+  - [Objective](#Objective)<span class="red">\*</span>  
     登録するデータの種類。
 
     | Objective          | Description                                                  |
@@ -528,9 +528,9 @@ BioProject スタッフが登録者に連絡するために使われ，一般に
 対象生物の分類や記述。
 
   - [Organism
-    name](#BioProject_Organism_name)<span class="required">\*</span>
+    name](#BioProject_Organism_name)<span class="red">\*</span>
     <a name="BioProject_Organism_name"></a>
-    
+
     [Taxonomy
     データベース](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html)に登録されている生物名。メタゲノムや環境サンプルなどの生物名を特定できないサンプルについては[こちらのリスト](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908&lvl=3&lin=f&keep=1&srchmode=1&unlock)を参考にしてください。
 
@@ -567,7 +567,7 @@ BioProject スタッフが登録者に連絡するために使われ，一般に
 
 <!-- end list -->
 
-  - [Description of novel organism](#Novel_organism)  
+  - [Description of novel organism]<a name="Novel_organism"></a>
     [Taxonomy データベース](https://www.ncbi.nlm.nih.gov/Taxonomy/)
     への生物登録を申請するための情報を記入します。
 
@@ -577,7 +577,7 @@ Target の Sample scope="Environment" のときに [Organism
 information](#BioProject_Organism_name) に替わって表示されます。
 
   - [Environmental sample
-    name](#Environmental_sample_name)<span class="required">\*</span>  
+    name](#Environmental_sample_name)<span class="red">\*</span>  
     メタゲノムや環境サンプルなどの生物名を特定できないサンプルについては[こちらのリスト](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908&lvl=3&lin=f&keep=1&srchmode=1&unlock)から該当するものを選択します。該当するものがない場合は,登録を希望する名前を記載し，サンプルの詳細を[Environmental
     sample description](#Environmental_sample_description) に記載します。
 
@@ -845,7 +845,7 @@ information](#BioProject_Organism_name) に替わって表示されます。
 
 
 
-### Publication
+### Publication<a name="Publication"></a>
 
   - [PubMed ID](#BioProject_PubMed_ID)  
     文献の PubMed ID(s)。
@@ -872,45 +872,45 @@ information](#BioProject_Organism_name) に替わって表示されます。
 <!-- end list -->
 
   - [Reference
-    title](#BioProject_Reference_title)<span class="required">\*</span>  
+    title](#BioProject_Reference_title)<span class="red">\*</span>  
     論文のタイトル。
 
 <!-- end list -->
 
   - [Journal
-    title](#BioProject_Journal_title)<span class="required">\*</span>  
+    title](#BioProject_Journal_title)<span class="red">\*</span>  
     雑誌のタイトル。
 
 <!-- end list -->
 
-  - [Year](#BioProject_Year)<span class="required">\*</span>  
+  - [Year](#BioProject_Year)<span class="red">\*</span>  
     出版年。
 
 <!-- end list -->
 
-  - [Volume](#BioProject_Volume)<span class="required">\*</span>  
+  - [Volume](#BioProject_Volume)<span class="red">\*</span>  
     雑誌の巻。
 
 <!-- end list -->
 
-  - [Issue](#BioProject_Issue)<span class="required">\*</span>  
+  - [Issue](#BioProject_Issue)<span class="red">\*</span>  
     雑誌の号。
 
 <!-- end list -->
 
   - [Pages
-    from](#BioProject_Pages_from)<span class="required">\*</span>  
+    from](#BioProject_Pages_from)<span class="red">\*</span>  
     論文の開始ページ。
 
 <!-- end list -->
 
-  - [Pages to](#BioProject_Pages_to)<span class="required">\*</span>  
+  - [Pages to](#BioProject_Pages_to)<span class="red">\*</span>  
     論文の終了ページ。
 
 <!-- end list -->
 
   - [First
-    name](#BioProject_First_name_publication)<span class="required">\*</span>  
+    name](#BioProject_First_name_publication)<span class="red">\*</span>  
     著者の first name。
 
 <!-- end list -->
@@ -921,7 +921,7 @@ information](#BioProject_Organism_name) に替わって表示されます。
 <!-- end list -->
 
   - [Last
-    name](#BioProject_Last_name_publication)<span class="required">\*</span>  
+    name](#BioProject_Last_name_publication)<span class="red">\*</span>  
     著者の last name。
 
 <!-- end list -->
@@ -997,6 +997,7 @@ BioProject への登録は次のような場合は必須ではありません。
   - 単一のプラスミド，ウイルスやオルガネラゲノムのシークエンスといった１つ (もしくは少数の) アクセッション番号しかリンクされない場合
 
 
+{::options parse_block_html="true" /}
 <div class="attention red">
 [INSDC はゲノムが登録される微生物に対して strain-level taxonomy ID
 を新規発行していません。](/news/ja/2014-02-12.html)
