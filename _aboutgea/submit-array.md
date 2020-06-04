@@ -13,20 +13,18 @@ pdf: https://www.ddbj.nig.ac.jp/pdf/gea/submit-array.pdf
 
 
 {::options parse_block_html="true" /}
-<div style="background-color:#eeeeee;">
 ### 1\. 登録アカウントを取得
 
   - [D-way 登録アカウント](https://ddbj.nig.ac.jp/D-way/)を作成
   - [公開鍵と center name
     をアカウントに登録](/account.html#enable-dra-submission-in-account)し
     GEA 登録を可能に
-</div>
+
 
 
 
 {::options parse_block_html="true" /}
 <br>
-<div style="background-color:#dae3f3;">
 ### 2\. BioProject と BioSample を登録
 
 #### [BioProject](/bioproject/submission.html)
@@ -41,37 +39,34 @@ pdf: https://www.ddbj.nig.ac.jp/pdf/gea/submit-array.pdf
 
 ![]({{ site.baseurl }}/assets/images/parts/tsv.png)
     メタデータをタブ区切りテキストファイルで登録できます
-</div>
+
 
 
 
 {::options parse_block_html="true" /}
 <br>
-<div style="background-color:#e2f0d9;">
 ### 3\. 生データと解析済みデータファイルをアップロード
 
   - GEA 登録用ディレクトリに生データと解析済みデータファイルをアップロード
   - \[必要であれば\] アレイデザインが
     [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA
     に未登録の場合、GEA 登録用ディレクトリにデータファイルと一緒にアレイデザインファイルをアップロード
-</div>
+
 
 
 
 {::options parse_block_html="true" /}
 <br>
-<div style="background-color:#ffe5e5;">
 ### 4\. BioProject と BioSample を選択
 
   - GEA 登録で参照する BioProject を一つ選択
   - GEA 登録で参照する複数 BioSample を選択。通常の GEA 登録は一つ以上のサンプルで構成されます
-</div>
+
 
 
 
 {::options parse_block_html="true" /}
 <br>
-<div style="background-color:#dae3f3;">
 ### 5\. IDF と SDRF を作成
 
 #### IDF
@@ -87,19 +82,18 @@ pdf: https://www.ddbj.nig.ac.jp/pdf/gea/submit-array.pdf
     Format)](/gea/metadata.html#sdrf)
     ファイルでサンプル属性とサンプル、アレイ、データファイル間の関係性を記述します
   - 選択した BioProject と BioSample の内容から生成された SDRF テンプレートファイルに必要な情報を追加します
-</div>
+
 
 
 
 {::options parse_block_html="true" /}
 <br>
-<div style="background-color:#f6e6d5;">
 ### 6\. IDF と SDRF を投稿しデータファイルを検証する
 
   - 登録ウェブシステムから IDF と SDRF を投稿するとアップロードしたデータファイルの
     [検証処理](/gea/validation.html) が自動的に始まります
   - 検証処理を通過した登録が査定されます
-</div>
+
 
 
 
