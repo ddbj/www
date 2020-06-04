@@ -40,7 +40,7 @@ pdf: https://www.ddbj.nig.ac.jp/pdf/dra/submission.pdf
 [Analysis](#Analysis)  
 : Run に格納されたデータを解析したデータで、しかるべき登録先がないようなデータを登録します。Analysis は DDBJ/EBI/NCBI で交換していません。 交換を希望する場合は [DRA チームに連絡します]({{ site.url }}{{ site.baseurl }}/aboutus/contact.html)。 Analysis は [DRASearch](http://ddbj.nig.ac.jp/DRASearch) でインデックスされず、ftp でのファイル公開のみになります。
 
-![データモデル]({{ site.baseurl }}/assets/images/books/sra_object.png "データモデル")
+{% include image.html url="books/sra_object.png" caption="データモデル" %}
 
 ### オブジェクトの構成例
 
@@ -53,7 +53,7 @@ pdf: https://www.ddbj.nig.ac.jp/pdf/dra/submission.pdf
 
 #### 最もシンプルなケース <a name="ex_simple"></a>
 
-![最もシンプルなケース]({{ site.baseurl }}/assets/images/submission/obj_ex1.jpg "最もシンプルなケース")
+{% include image.html url="submission/obj_ex1.jpg" caption="最もシンプルなケース" %}
 
 #### 三つの菌株の比較ゲノム解析 (ペアエンド) <a name="ex_samples"></a>
 
@@ -764,9 +764,7 @@ fastq/bam ファイルを登録します。
   - 研究プロジェクトの内容
   - 「なぜ」そのサンプルをシークエンスしたのか
 
-#### [BioSample (Sample)]({{ site.url }}{{ site.baseurl }}/aboutbiosample/submission.html)
-
-![]({{ site.baseurl }}/assets/images/parts/tsv.png)
+#### [BioSample (Sample)]({{ site.url }}{{ site.baseurl }}/aboutbiosample/submission.html)![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
 
   - 生物学的、物理的にユニークなサンプル
   - 「何を」シークエンスしたのか
@@ -799,7 +797,7 @@ fastq/bam ファイルを登録します。
 
 アカウント取得から BioProject/BioSample/DRA の登録まで全てをカバーした [TogoTV](https://togotv.dbcls.jp/20190523.html) (22分12秒、作成:2019年)
 
-[](//www.youtube-nocookie.com/embed/6IDeMaLDuQQ?autohide=1&iv_load_policy=3&modestbranding=1&rel=0&wmode=transparent&autoplay=1 "次世代シークエンサ(NGS)のデータをDDBJ Sequence Read Archive (DRA)に登録する")
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6IDeMaLDuQQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 BioProject/BioSample/DRA の登録方法 (6分50秒、作成:2015年)
 

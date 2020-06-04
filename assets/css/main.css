@@ -339,6 +339,8 @@ input, textarea, select, button {
     color: #FF0000; }
     .md-content .red * {
       color: #FF0000; }
+  .md-content .conditionally_required {
+    color: #009B00; }
   .md-content h2 {
     font-size: 1.8rem;
     line-height: 1.2;
@@ -495,6 +497,9 @@ input, textarea, select, button {
     height: 24px;
     vertical-align: middle;
     margin-left: 2px; }
+  .md-content .tsv {
+    width: 45px;
+    vertical-align: middle; }
   .md-content .right-alignment {
     float: right; }
     .md-content .right-alignment a {
