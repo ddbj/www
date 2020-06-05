@@ -3,9 +3,10 @@ layout: indexed_content
 title: GA4GH Beacon
 pathname: beacon
 category: aboutagd
+pdf: https://www.ddbj.nig.ac.jp/pdf/agd/beacon.pdf
 ---
 
-<div class="section chapter">
+
 
 ## GA4GH Beacon
 
@@ -24,7 +25,7 @@ Beacon サービスにより「Registered ユーザは興味のあるアリル�
 
 Beacon の詳しい説明については以下をご覧ください。
 
-<div id="pub-list">
+
 
   - <span class="title">[Federated discovery and sharing of genomic data
     using Beacons.](https://www.ncbi.nlm.nih.gov/pubmed/30833764)</span>
@@ -36,25 +37,21 @@ Beacon の詳しい説明については以下をご覧ください。
     [30833764](https://www.ncbi.nlm.nih.gov/pubmed/30833764)</span>
     </span>
 
-</div>
+
 
 [Beacon: The Story So
 Far](https://drive.google.com/file/d/1TKkWdmpES52Ex4kWd8oaSoGV_z5tiz2N/view)
 
-</div>
 
-<div class="section chapter">
+
+
 
 ## インデックスデータ
 
 以下のデータセットが Beacon インデックスされています。
 
-<div class="main_table">
+
 
 | AGD Study                                                                          | Study Title                     | AGD Dataset                                                                        | Access level |
 | ---------------------------------------------------------------------------------- | ------------------------------- | ---------------------------------------------------------------------------------- | ------------ |
 | [AGDS\_00000000001](https://ddbj.nig.ac.jp/agd/viewer/view/study/AGDS_00000000001) | Response to Hepatitis B vaccine | [AGDD\_00000000001](https://ddbj.nig.ac.jp/agd/viewer/view/study/AGDS_00000000001) | Registered   |
-
-</div>
-
-</div>
