@@ -3,9 +3,10 @@ layout: indexed_content
 title: AGD への登録
 pathname: submission
 category: aboutagd
+pdf: https://www.ddbj.nig.ac.jp/pdf/agd/submission.pdf
 ---
 
-<div class="section chapter">
+
 
 ## 登録概要
 
@@ -19,11 +20,12 @@ AGD
 
 メタデータオブジェクトに対して以下のプレフィックス付き管理用 ID が割り振られます。
 
+<div class="attention red">
 AGD で発行される管理用 ID は論文で引用することはできません。論文投稿に必要なアクセッション番号は JGA や DRA
 から取得する必要があります。AGD は研究者間でのデータ共有 (制限共有) を実現するために DDBJ
 グループクラウドで提供するデータベースです。
+</div>
 
-<div id="id" class="main_table">
 
 | プレフィックス | メタデータオブジェクト | 数字の桁数 | 例                 |
 | ------- | ----------- | ----- | ----------------- |
@@ -36,11 +38,11 @@ AGD で発行される管理用 ID は論文で引用することはできませ
 | AGDD\_  | Data set    | 11    | AGDD\_00000000001 |
 | AGDP\_  | Policy      | 11    | AGDP\_00000000001 |
 
-</div>
 
-</div>
 
-<div class="section chapter">
+
+
+
 
 ## 塩基配列データ (raw/unaligned と aligned)
 
@@ -50,7 +52,7 @@ AGD でサポートしているファイル形式を以下に示します。 異
 データファイルが複数サンプルに由来するデータを含んでいる場合，投稿する前にファイルをサンプルごとに分割します。 そうすることによって Run
 は１つのサンプルに由来するデータファイルだけを持つようになります。
 
-<div class="section section">
+
 
 ### BAM 形式
 
@@ -64,9 +66,9 @@ AGD はプライマリーデータとして Data に unaligned read を含む BA
 
 圧縮という観点で BAM ファイルはほぼ最適化されているので，ファイルをさらに圧縮する必要はありません。
 
-</div>
 
-<div class="section section">
+
+
 
 ### Fastq 形式
 
@@ -74,7 +76,7 @@ AGD はプライマリーデータとして Data に unaligned read を含む BA
 [Fastq](http://en.wikipedia.org/wiki/FASTQ_format#Quality)
 ファイルでの登録を推奨しています。
 
-<div class="sub_index">
+
 
   - Quality score が
     [Phred](http://en.wikipedia.org/wiki/Phred_quality_score) スケールである。
@@ -91,7 +93,7 @@ AGD はプライマリーデータとして Data に unaligned read を含む BA
   - ベースコールと quality score が '+' で始める行で分けられている。
   - Fastq ファイルは gzip か bzip2 で圧縮されている。
 
-</div>
+
 
 シングルリードを含む Fastq ファイルの例:
 
@@ -117,9 +119,9 @@ GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
 ...
 ```
 
-</div>
 
-<div class="section section">
+
+
 
 ### SFF 形式
 
@@ -127,11 +129,11 @@ GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
 
 圧縮という観点で SFF ファイルはほぼ最適化されているので，ファイルをさらに圧縮する必要はありません。
 
-</div>
 
-</div>
 
-<div class="section chapter">
+
+
+
 
 ## アレイデータ (遺伝子型タイピング，SNP，遺伝子発現)
 
@@ -144,9 +146,9 @@ AGD は生データ (例 CEL)
 
 AGD はサンプルに関連した表現型 (phenotype) 情報も Analysis にアーカイブしています。
 
-</div>
 
-<div class="section chapter">
+
+
 
 ## 変異データ
 
@@ -154,9 +156,9 @@ AGD は variation データの [VCF
 形式](http://en.wikipedia.org/wiki/Variant_Call_Format)での登録を推奨しています。
 AGD Analysis に vcf ファイルを登録することができます。
 
-</div>
 
-<div class="section chapter">
+
+
 
 ## その他のデータ
 
@@ -164,17 +166,17 @@ Analysis は複数の Data もしくは Sample
 を参照することができるので，これらのオブジェクトに登録されているデータを解析，集計したデータを
 Analysis に登録することができます。Analysis に登録できるファイルの例を以下にリストします。
 
-<div class="sub_index">
+
 
   - 複数 Data に登録された配列データから作成したリファレンス配列 GFF3 ファイル
   - 複数 Data に登録されたアレイデータを正規化し表にまとめたファイル
   - 複数 Sample の表現型情報を一覧できる表形式ファイル
 
-</div>
 
-</div>
 
-<div class="section chapter">
+
+
+
 
 ## メタデータ
 
@@ -185,11 +187,11 @@ AGD データモデルは [Sequence Read Archive](/dra/submission.html)
 AGD XML schema: [AGD
 xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-![単一の Policy が適用されている例](/images/submission/jga_metadata_1.jpg)
+![単一の Policy が適用されている例]({{ site.baseurl }}/assets/images/submission/jga_metadata_1.jpg)
 
-![Control と Case で Policy が異なる例](/images/submission/jga_metadata_2.jpg)
+![Control と Case で Policy が異なる例]({{ site.baseurl }}/assets/images/submission/jga_metadata_2.jpg)
 
-<div class="section">
+
 
 ### 公開される項目
 
@@ -204,9 +206,9 @@ AGD メタデータのうち以下のオブジェクトは登録の概要を示�
   - Policy:  
     全ての内容
 
-</div>
 
-<div class="section">
+
+
 
 ### Submission
 
@@ -215,9 +217,9 @@ AGD メタデータのうち以下のオブジェクトは登録の概要を示�
 XML schema:
 [AGD.submission.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-</div>
 
-<div class="section">
+
+
 
 ### Study
 
@@ -228,9 +230,9 @@ XML schema:
 XML schema:
 [AGD.study.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-</div>
 
-<div class="section">
+
+
 
 ### Sample
 
@@ -240,9 +242,9 @@ XML schema:
 XML schema:
 [AGD.sample.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-</div>
 
-<div class="section">
+
+
 
 ### Experiment
 
@@ -251,9 +253,9 @@ XML schema:
 XML schema:
 [AGD.experiment.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-</div>
 
-<div class="section">
+
+
 
 ### Data
 
@@ -262,9 +264,9 @@ XML schema:
 XML schema:
 [AGD.data.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-</div>
 
-<div class="section">
+
+
 
 ### Analysis
 
@@ -277,9 +279,9 @@ XML schema:
 XML schema:
 [AGD.analysis.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-</div>
 
-<div class="section">
+
+
 
 ### Data set
 
@@ -294,9 +296,9 @@ Data XML と Analysis XML に記載されているデータファイルを,ポ�
 XML schema:
 [AGD.dataset.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-</div>
 
-<div class="section">
+
+
 
 ### Policy
 
@@ -305,11 +307,11 @@ XML schema:
 XML schema:
 [AGD.policy.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-</div>
 
-</div>
 
-<div class="section chapter">
+
+
+
 
 ## Analysis のみの登録
 
@@ -317,18 +319,16 @@ XML schema:
 Sample-Experiment-Data ではなく Sample-Analysis セットでデータを登録することができます。
 
 ![Sample に１対１対応する Analysis
-データ登録](/images/submission/sample-analysis.jpg)
+データ登録]({{ site.baseurl }}/assets/images/submission/sample-analysis.jpg)
 
-![Sample を集計した Analysis データ登録](/images/submission/samples-analysis.jpg)
+![Sample を集計した Analysis データ登録]({{ site.baseurl }}/assets/images/submission/samples-analysis.jpg)
 
 Sample-Analysis セットでデータ登録をする場合は [JGA チームに連絡](/contact.html)します。
 
-</div>
 
-<div class="section chapter">
+
+
 
 ## 登録の更新
 
 登録を更新するためには [AGD チームに連絡](/contact.html)します。
-
-</div>
