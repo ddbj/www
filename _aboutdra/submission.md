@@ -59,21 +59,18 @@ pdf: https://www.ddbj.nig.ac.jp/pdf/dra/submission.pdf
 
 ペアリードファイルは同じ Run に含めます。
 
-![三つの菌株の比較ゲノム解析 (ペアエンド)]({{ site.baseurl }}/assets/images/submission/obj_ex2.jpg
-"三つの菌株の比較ゲノム解析.")
+{% include image.html url="submission/obj_ex2.jpg" caption="三つの菌株の比較ゲノム解析 (ペアエンド)" %}
 
 #### (Technical, Biological) replicate がある場合 (ペアエンド) <a name="ex_replicates"></a>
 
 [関連する FAQ: 塩基配列登録にはいくつのサンプルが必要ですか?](/faq/ja/index.html#samples-for-sra)
 
-![(Technical, Biological) replicate がある場合
-(ペアエンド)]({{ site.baseurl }}/assets/images/submission/obj_exreplicate.jpg
-"(Technical, Biological) replicate がある場合 (ペアエンド)")
+{% include image.html url="submission/obj_exreplicate.jpg" caption="(Technical, Biological) replicate がある場合
+(ペアエンド)" %}
 
 #### 関連するデータが別々の論文に発表される場合 <a name="ex_submissions"></a>
 
-![関連するデータが別々の論文に発表される場合]({{ site.baseurl }}/assets/images/submission/obj_ex3.jpg
-"関連するデータが別々の論文に発表される場合")
+{% include image.html url="submission/obj_ex3.jpg" caption="関連するデータが別々の論文に発表される場合" %}
 
 メタデータ各項目の説明
 
@@ -560,11 +557,10 @@ PacBio や IonTorrent などでリファレンス配列がない bam ファイ�
 将来、新しいツールで再解析や再アライメントする際に重要であるため、bam ファイルのみを登録するときはアライメントされなかったリード (unaligned reads) を含めてください。
 </div>
 
-![bam とリファレンス配列の対応付け]({{ site.baseurl }}/assets/images/books/bam-mapping.jpg
-"bam とリファレンス配列の対応付け")
+{% include image.html url="books/bam-mapping.jpg" caption="bam とリファレンス配列の対応付け" %}
 
 1. #### BAM
-  アライメントデータを BAM フォーマットで登録することができます。BAM ファイルは [SAMtools](http://samtools.sourceforge.net/) と [picard](https://broadinstitute.github.io/picard/) で読み込める形式になっている必要があります。圧縮していない BAM ファイルをアップロードしてください。 
+  アライメントデータを BAM フォーマットで登録することができます。BAM ファイルは [SAMtools](http://samtools.sourceforge.net/) と [picard](https://broadinstitute.github.io/picard/) で読み込める形式になっている必要があります。圧縮していない BAM ファイルをアップロードしてください。   
   Run の [File Type](#File_Type) には "bam" を選択します。
 
 2. #### リファレンスを INSDC/RefSeq アクセッション番号で指定
@@ -769,21 +765,17 @@ fastq/bam ファイルを登録します。
   - 生物学的、物理的にユニークなサンプル
   - 「何を」シークエンスしたのか
 
-![]({{ site.baseurl }}/assets/images/parts/tsv.png)メタデータをタブ区切りテキストファイルで登録できます
+![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}メタデータをタブ区切りテキストファイルで登録できます
 
 ### 4. Experiment と Run を登録
 
-#### DRA Experiment
-
-![]({{ site.baseurl }}/assets/images/parts/tsv.png)
+#### DRA Experiment ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
 
   - 特定のサンプルから構築したライブラリーについての説明
   - 「どのように」シークエンスをしたのか
   - 複数の Experiment は一つの Sample を参照できるが、逆はできない
 
-#### DRA Run
-
-![]({{ site.baseurl }}/assets/images/parts/tsv.png)
+#### DRA Run ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
 
   - Experiment と Run を投稿した後、データファイルの検証処理を開始
   - Run にリンクしている全てのデータファイルは 1 つの SRA ファイルにマージされます
@@ -801,7 +793,7 @@ fastq/bam ファイルを登録します。
 
 BioProject/BioSample/DRA の登録方法 (6分50秒、作成:2015年)
 
-[](//www.youtube-nocookie.com/embed/GbAVB3Zg1tw?autohide=1&iv_load_policy=3&modestbranding=1&rel=0&wmode=transparent&autoplay=1 "BioProject, BioSample, DRA への登録")
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GbAVB3Zg1tw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### 登録アカウント
 
@@ -900,7 +892,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 #### [WinSCP によるシークエンスデータの転送 (Windows)](javascript:void(0))
 
-[](//www.youtube-nocookie.com/embed/ZxIfewrk8lI?autohide=1&iv_load_policy=3&modestbranding=1&rel=0&wmode=transparent&autoplay=1 "DRA への登録 ～データの転送 (Windows)～")
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZxIfewrk8lI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 DRA への登録 ～データの転送 (Windows)～
 
@@ -939,7 +931,7 @@ DRA への登録 ～データの転送 (Windows)～
 
 #### [Cyberduck によるシークエンスデータの転送 (Mac OS X)](javascript:void(0))
 
-[](//www.youtube-nocookie.com/embed/A2hPlGZEW_o?autohide=1&iv_load_policy=3&modestbranding=1&rel=0&wmode=transparent&autoplay=1 "DRA への登録 ～データの転送 (Mac)～")
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A2hPlGZEW_o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 DRA への登録 ～データの転送 (Mac)～
 
@@ -1039,7 +1031,8 @@ BioProject を新規登録する場合は左のタブから順番に内容を英
 ゲノムをアセンブルするプロジェクトでは、アセンブリに対してユニークな [Locus tag
 prefix]({{ site.url }}{{ site.baseurl }}/tentative/locus_tag.html) が必要です。
 
-[Project data type="Genome Sequencing" or "Metagenome"] AND [Capture="Whole"] AND [Objective="Sequence" or "Annotation" or "Assembly"] で Locus tag prefix 入力ボックスが現れます。
+[Project data type="Genome Sequencing" or "Metagenome"] AND [Capture="Whole"] AND  
+[Objective="Sequence" or "Annotation" or "Assembly"] で Locus tag prefix 入力ボックスが現れます。
 
 プレフィックスには３-12文字の英数字のみを含めることができます。先頭は英文字にします。数字は２文字目以降で使用できます (例: A1C)。
 シンボル (-_*) を含めることはできません。プレフィックスとタグの値はアンダースコア '_' で区切ります (例: A1C_00001)。
@@ -1231,11 +1224,10 @@ Analysis (任意) が不要な場合は [Submit / Update DRA metadata] をクリ
 メタデータ作成ツールは technical read (アダプター、プライマーやバーコード配列) を記載することに対応していません。
 「technical read を含む生データを登録する場合」や「[DRA XML schema](https://github.com/ddbj/pub/tree/master/docs/dra) 中にはあるがツール中には無い項目をメタデータに記載する場合」は メタデータを XML で登録、もしくは登録した XML を編集してアップロードします。
 
-  - DRA 新規登録を作成し、データファイルをアップロードします。
+1. DRA 新規登録を作成し、データファイルをアップロードします。
 
-  - Submission、Experiment、Run XML を作成します。アクセッション番号が未発行の BioProject と
-    BioSample を Experiment から参照する場合、以下のように記載します。
-    
+2. Submission、Experiment、Run XML を作成します。アクセッション番号が未発行の BioProject と
+BioSample を Experiment から参照する場合、以下のように記載します。
     ```
     <STUDY_REF>
       <IDENTIFIERS>
@@ -1251,37 +1243,30 @@ Analysis (任意) が不要な場合は [Submit / Update DRA metadata] をクリ
       </IDENTIFIERS>
     </SAMPLE_DESCRIPTOR>
     ```
-
-  - XML を検証します。以下の Unix コマンドで XML をスキーマに対して検証することができます。エラーになる XML
-    をアップロードすることはできません。
-    
+3. XML を検証します。以下の Unix コマンドで XML をスキーマに対して検証することができます。エラーになる XML
+をアップロードすることはできません。
     ```
     xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.submission.xsd?view=co test07-0018.Submission.xml
     xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.experiment.xsd?view=co test07-0018.Experiment.xml
     xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.run.xsd?view=co test07-0018.Run.xml
     xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.analysis.xsd?view=co test07-0018.Analysis.xml
     ```
-
-  - チェックした XML をアップロードします。Submission、Experiment、Run、Analysis (任意) の XML ファイルを選択し、同時にアップロードします。
-    
+4. チェックした XML をアップロードします。Submission、Experiment、Run、Analysis (任意) の XML ファイルを選択し、同時にアップロードします。
     アップロードされた XML について「SRA xsd に対する妥当性」と「オブジェクト間の関係性」がチェックされます。エラーが発生した場合はファイルを修正してください。
+    ![作成した XML のアップロード]({{ site.baseurl }}/assets/images/books/hdra-xmlupload.jpg
+    "作成した XML のアップロード")
 
 ### XML でのメタデータ編集方法
 
 メタデータ作成ツールは technical read (アダプター、プライマーやバーコード配列) を記載することに対応していません。
 「technical read を含む生データを登録する場合」や「[DRA XML schema](https://github.com/ddbj/pub/tree/master/docs/dra) 中にはあるがツール中には無い項目をメタデータに記載する場合」は メタデータを XML で登録、もしくは登録した XML を編集してアップロードします。
 
-  - 1.[メタデータ作成ツールでメタデータを作成し、投稿します。](#create-metadata-using-tool)
-
-  - 2."metadata_submitted" になった登録の Submission、Experiment、Run、Analysis (任意) を XML ファイルとしてダウンロードします。
-
-  [![ツールで作成したメタデータを XML としてダウンロード]({{ site.baseurl }}/assets/images/books/hdra-xmldownload.jpg "ツールで作成したメタデータを XML としてダウンロード")]({{ site.baseurl }}/assets/images/books/hdra-xmldownload.jpg "ツールで作成したメタデータを XML としてダウンロード")
-
-  - XML を編集します。ファイル中のリードの構成を記載する SPOT_DESCRIPTOR
-    については[記入例]({{ site.url }}{{ site.baseurl }}/aboutdra/example.html)を参考にしてください。 その他の項目については、[DRA XML schema](https://github.com/ddbj/pub/tree/master/docs/dra) 中の説明を参照してください。
-
-  - アクセッション番号が未発行の BioProject と BioSample を  Experiment から参照する場合、以下のように記載します。
-    
+1. [メタデータ作成ツールでメタデータを作成し、投稿します。](#create-metadata-using-tool)
+2. "metadata_submitted" になった登録の Submission、Experiment、Run、Analysis (任意) を XML ファイルとしてダウンロードします。
+    [![ツールで作成したメタデータを XML としてダウンロード]({{ site.baseurl }}/assets/images/books/hdra-xmldownload.jpg "ツールで作成したメタデータを XML としてダウンロード")]({{ site.baseurl }}/assets/images/books/hdra-xmldownload.jpg "ツールで作成したメタデータを XML としてダウンロード")
+3. XML を編集します。ファイル中のリードの構成を記載する SPOT_DESCRIPTOR
+  については[記入例]({{ site.url }}{{ site.baseurl }}/aboutdra/example.html)を参考にしてください。 その他の項目については、[DRA XML schema](https://github.com/ddbj/pub/tree/master/docs/dra) 中の説明を参照してください。
+4. アクセッション番号が未発行の BioProject と BioSample を  Experiment から参照する場合、以下のように記載します。
     ```
     <STUDY_REF>
       <IDENTIFIERS>
@@ -1297,19 +1282,17 @@ Analysis (任意) が不要な場合は [Submit / Update DRA metadata] をクリ
       </IDENTIFIERS>
     </SAMPLE_DESCRIPTOR>
     ```
-
-  - XML を検証します。以下の Unix コマンドで XML をスキーマに対して検証することができます。エラーになる XML をアップロードすることはできません。
-    
+5. XML を検証します。以下の Unix コマンドで XML をスキーマに対して検証することができます。エラーになる XML をアップロードすることはできません。
     ```
     xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.submission.xsd?view=co test07-0018.Submission.xml
     xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.experiment.xsd?view=co test07-0018.Experiment.xml
     xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.run.xsd?view=co test07-0018.Run.xml
     xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.analysis.xsd?view=co test07-0018.Analysis.xml
     ```
-
-  - 編集した XML をアップロードします。Submission、Experiment、Run、Analysis (任意) の XML ファイルを選択し、同時にアップロードします。
-    
-    アップロードされた XML について「SRA xsd に対する妥当性」と「オブジェクト間の関係性」がチェックされます。エラーが発生した場合はファイルを修正してください。
+6. 編集した XML をアップロードします。Submission、Experiment、Run、Analysis (任意) の XML ファイルを選択し、同時にアップロードします。
+  アップロードされた XML について「SRA xsd に対する妥当性」と「オブジェクト間の関係性」がチェックされます。エラーが発生した場合はファイルを修正してください。
+  ![編集した XML のアップロード]({{ site.baseurl }}/assets/images/books/hdra-xmlupload.jpg
+  "編集した XML のアップロード")
 
 ### データファイルの検証
 
