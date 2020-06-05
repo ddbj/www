@@ -512,7 +512,7 @@ CAG may be used in _Candida albicans_ ([Santos _et al_., 1993](https://www.ncbi.
 
 ### Systematic Range:
 
-_Endomycetales_ (yeasts): _Candida albicans_, _Candida cylindracea_, _Candida melibiosica_, _Candida parapsilosis_, and _Candida rugosa_ ([Ohama __et al_._, 1993](https://www.ncbi.nlm.nih.gov/pubmed/8371978)).
+_Endomycetales_ (yeasts): _Candida albicans_, _Candida cylindracea_, _Candida melibiosica_, _Candida parapsilosis_, and _Candida rugosa_ ([Ohama _et al_., 1993](https://www.ncbi.nlm.nih.gov/pubmed/8371978)).
 
 ### Comment:
 
