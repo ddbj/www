@@ -3,24 +3,17 @@ layout: indexed_content
 title: 配列の記載に用いる略号
 pathname: code
 category: flatfile
+pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/code.pdf
 ---
 
-<div class="section book">
-
-<div class="section chapter">
-
 ## 塩基
-
-<div class="section section">
 
 ### Nucleotide Base Codes
 
 国際塩基配列データベースで使用する核酸コードは以下の通りです。  
 全て小文字を使用します。大文字で登録された場合には、自動的に小文字に変換されます。
 
-<div class="main_table format">
-
-| シンボル | 意味               | 説明                            |
+| シンボル | 意味           | 説明                           |
 | ---- | ---------------- | ----------------------------- |
 | a    | a                | adenine                       |
 | c    | c                | cytosine                      |
@@ -28,8 +21,8 @@ category: flatfile
 | t    | t                | thymine in DNA; uracil in RNA |
 | m    | a or c           | amino                         |
 | r    | a or g           | purine                        |
-| w    | a or t           |    空白                           |
-| s    | c or g           |    空白                           |
+| w    | a or t           |    空白                        |
+| s    | c or g           |    空白                        |
 | y    | c or t           | pyrimidine                    |
 | k    | g or t           | keto                          |
 | v    | a or c or g      | not t                         |
@@ -38,16 +31,10 @@ category: flatfile
 | b    | c or g or t      | not a                         |
 | n    | a or c or g or t | any                           |
 
-</div>
-
 [参考文献]
 
   - Cornish-Bowden, A. Nucl Acid Res 13, 3021-3030 (1985)
   - [Feature Table Definition](/ddbj/full_index.html): [7.4.1 Nucleotide base codes (IUPAC)](/ddbj/full_index.html#7.4.1)
-
-</div>
-
-<div class="section section">
 
 ### Modified Base Abbreviations
 
@@ -55,14 +42,12 @@ category: flatfile
 
 例
 
-``` code flat-file
+<pre>
       FEATURES             Location/Qualifiers
-           modified_base   15
-                           /mod_base="m2g"
-      
-```
-
-<div class="main_table format">
+           <a href="/ddbj/features.html#modified_base">modified_base</a>   15
+                           <a href="/ddbj/qualifiers.html#mod_base">/mod_base</a>="m2g"
+      </pre>
+<br>
 
 | 省略形      | 修飾塩基                                                                 |
 | -------- | -------------------------------------------------------------------- |
@@ -115,8 +100,6 @@ category: flatfile
 | x        | 3-(3-amino-3-carboxypropyl)uridine, (acp3)u                          |
 | OTHER    | Other ([/note](/ddbj/qualifiers.html#note) qualifier に修飾塩基を記載します)    |
 
-</div>
-
 [参考文献]
 
   - Sprinzl, M. and Gauss, D.H. Nucl Acid Res 10, r1 (1982).(note that
@@ -126,24 +109,14 @@ category: flatfile
   - [Feature Table Definition](/ddbj/full_index.html): [7.4.2 Modified
     base abbreviations](/ddbj/full_index.html#7.4.2)
 
-</div>
-
-</div>
-
-<div class="section chapter">
-
 ## アミノ酸
 
-<div class="section section">
-
-### Amino Acid Codes
+### Amino Acid Codes<a name="amino-1"></a>
 
 国際塩基配列データベースで使用するアミノ酸コードは以下の通りです。  
 [CDS feature](/ddbj/cds.html) の [/translation](/ddbj/qualifiers.html#translation) には以下の一文字表記で表されます。   
 [/transl\_except](/ddbj/qualifiers.html#transl_except), [/anticodon](/ddbj/qualifiers.html#anticodon) に記載するアミノ酸は、以下の省略形を使用します。  
 これ以外のアミノ酸を記載する場合には、[Modified and unusual Amino Acids](#amino-2)を参照して下さい。
-
-<div class="main_table format">
 
 | Abbreviation | 1 letter abbreviation | Amino acid name             |
 | ------------ | --------------------- | --------------------------- |
@@ -175,23 +148,15 @@ category: flatfile
 | Xle          | J                     | Leucine or Isoleucine       |
 | TERM         |         空白          | termination codon           |
 
-</div>
-
 [参考文献]
 
   - IUPAC-IUB Joint Commission on Biochemical Nomenclature.Nomenclature and Symbolism for Amino Acids and Peptides. Eur. J. Biochem. 138: 9-37 (1984).
   - [Feature Table Definition](/ddbj/full_index.html): [7.4.3 Amino acid abbreviations](/ddbj/full_index.html#7.4.3)
 
-</div>
-
-<div class="section section">
-
-### Modified and Unusual Amino Acids
+### Modified and Unusual Amino Acids<a name="amino-2"></a>
 
 [Amino Acid Codes](#amino-1) にないアミノ酸を記載する場合には以下の省略形を使用します。  
 [CDS feature](/ddbj/cds.html) の [/translation](/ddbj/qualifiers.html#translation) にはいずれも "X" で表されます。
-
-<div class="main_table format">
 
 | 省略形   | アミノ酸                                                              |
 | ----- | ----------------------------------------------------------------- |
@@ -226,14 +191,6 @@ category: flatfile
 | Orn   | Ornithine                                                         |
 | OTHER | Other ([/note](/ddbj/qualifiers.html#note) qualifier にアミノ酸を記載します) |
 
-</div>
-
 [参考文献]
 
   - [Feature Table Definition](/ddbj/full_index.html): [7.4.4 Modified and unusual Amino Acids](/ddbj/full_index.html#7.4.4)
-
-</div>
-
-</div>
-
-</div>
