@@ -8,8 +8,6 @@ category: aboutgea
 [Experiment Types in
 spreadsheet](https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=1327621011).
 
-<div class="main_table">
-
 | Experiment Type                                     | Definition (EFO term accession)                       | Example                                                                      |
 | --------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------------------------------------------- |
 | 4C                                                  | [EFO\_0007690](https://www.ebi.ac.uk/efo/EFO_0007690) | [E-MTAB-2180](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-2180)    |
@@ -52,5 +50,3 @@ spreadsheet](https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjk
 | transcription profiling by tiling array             | [EFO\_0002769](https://www.ebi.ac.uk/efo/EFO_0002769) | [E-MTAB-2241](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-2241/)   |
 | translation profiling                               | [EFO\_0001033](https://www.ebi.ac.uk/efo/EFO_0001033) | [E-MTAB-3583](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3583/)   |
 | whole chromosome random sequencing                  | [EFO\_0004160](https://www.ebi.ac.uk/efo/EFO_0004160) | [E-MTAB-2888](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-2888/)   |
-
-</div>

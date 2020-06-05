@@ -3,19 +3,14 @@ layout: indexed_content
 title: MAGE-TAB の例
 pathname: example
 category: aboutgea
+pdf: https://www.ddbj.nig.ac.jp/pdf/gea/example.pdf
 ---
-
-<div class="section chapter">
 
 ## IDF 例
 
 [IDF
 スプレッドシート例](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=0)
 
-<div class="idf_format">
-
-|                                                                           |                                                                                 |     |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | --- |
 | [Comment\[GEAAccession\]](/gea/metadata-e.html#Comment_idf)               | E-GEAD-369                                                                      |     |
 | MAGE-TAB Version                                                          | 1.1                                                                             |     |
 | [Investigation Title](/gea/metadata-e.html#Investigation_Title)           | Transcriptional profiling of Arabidopsis leaves exposed to elevated temperature |     |
@@ -40,43 +35,27 @@ category: aboutgea
 | [Comment\[Public Release Date\]](/gea/metadata-e.html#Comment_idf)        | 2018-06-22                                                                      |     |
 | [Comment\[Last Update Date\]](/gea/metadata-e.html#Comment_idf)           | 2018-06-22                                                                      |     |
 
-</div>
-
 サポートされている IDF タグの全リストは [IDF ページ](/gea/metadata-e.html#idf)をご覧ください。
-
-</div>
-
-<div class="section chapter">
 
 ## SDRF 概念的な例
 
 [SDRF
 スプレッドシート例](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=657626667)
 
-<div class="sub_index">
-
   - [Example 1: サンプル毎の生データと解析済みデータファイル](#sdrf_example1)
   - [Example 2: Two-color マイクロアレイ](#sdrf_example2)
   - [Example 3: サンプル毎の次世代シークエンス DRA 生データ (Run)
     と解析済みデータファイル、及び、解析済みマトリックスファイル](#sdrf_example3)
 
-</div>
-
 以下の例では概念上重要なカラムに限定した SDRF グラフと対応する表を示しています。青色のカラムヘッダーはグラフノード（Name
 カラム）を表しています。
 
-<div class="section section">
-
-### Example 1: サンプル毎の生データと解析済みデータファイル
+### Example 1: サンプル毎の生データと解析済みデータファイル <a name="sdrf_example1"></a>
 
 単純なマイクロアレイ実験。各サンプルに対して１つの生データファイルと解析済みデータファイルがあるケース。
 
-![各サンプルに対して１つの生データファイルと解析済みデータファイルがあるケース](/images/magetab/sdrf1.png)
+{% include image.html url="magetab/sdrf1.png" caption="各サンプルに対して１つの生データファイルと解析済みデータファイルがあるケース" %}
 
-<div class="sdrf_ex">
-
-|             |              |                 |                 |                         |
-| ----------- | ------------ | --------------- | --------------- | ----------------------- |
 | Source Name | Protocol REF | Assay Name      | Array Data File | Derived Array Data File |
 | Source 1    | P-GEAD-10    | Hybridization 1 | Data1.CEL       | Processed1.txt          |
 | Source 2    | P-GEAD-10    | Hybridization 2 | Data2.CEL       | Processed2.txt          |
@@ -85,20 +64,10 @@ category: aboutgea
 
 各サンプルに対して１つの生データファイルと解析済みデータファイルがあるケース
 
-</div>
+### Example 2: Two-color マイクロアレイ <a name="sdrf_example2"></a>
 
-</div>
+{% include image.html url="magetab/sdrf2.png" caption="Two-color マイクロアレイ" %}
 
-<div class="section section">
-
-### Example 2: Two-color マイクロアレイ
-
-![Two-color マイクロアレイ](/images/magetab/sdrf2.png)
-
-<div class="sdrf_ex">
-
-|             |              |                       |       |                 |
-| ----------- | ------------ | --------------------- | ----- | --------------- |
 | Source Name | Extract Name | Labeled Extract Name  | Label | Assay Name      |
 | Source 1a   | Extract 1a   | LabeledExtract 1a Cy3 | Cy3   | Hybridization 1 |
 | Source 1b   | Extract 1b   | LabeledExtract 1b Cy5 | Cy5   | Hybridization 1 |
@@ -109,24 +78,14 @@ category: aboutgea
 
 Two-color マイクロアレイ
 
-</div>
-
-</div>
-
-<div class="section section">
-
-### Example 3: サンプル毎の次世代シークエンス DRA 生データ (Run) と解析済みデータファイル、及び、解析済みマトリックスファイル
+### Example 3: サンプル毎の次世代シークエンス DRA 生データ (Run) と解析済みデータファイル、及び、解析済みマトリックスファイル  <a name="sdrf_example3"></a>
 
 単純な次世代シークエンス実験。サンプル毎の次世代シークエンス DRA 生データ (Run)
 と解析済みデータファイル、及び、解析済みマトリックスファイル
 
-![サンプル毎の次世代シークエンス DRA 生データ (Run)
-と解析済みデータファイル、及び、解析済みマトリックスファイル](/images/magetab/sdrf3.png)
+{% include image.html url="magetab/sdrf3.png" caption="サンプル毎の次世代シークエンス DRA 生データ (Run)
+と解析済みデータファイル、及び、解析済みマトリックスファイル" %}
 
-<div class="sdrf_ex">
-
-|             |              |              |                 |                         |                                |
-| ----------- | ------------ | ------------ | --------------- | ----------------------- | ------------------------------ |
 | Source Name | Protocol REF | Assay Name   | Array Data File | Derived Array Data File | Derived Array Data Matrix File |
 | Source 1    | P-GEAD-20    | Sequencing 1 | DRR000001       | Processed1.txt          | Processed-matrix.txt           |
 | Source 2    | P-GEAD-20    | Sequencing 2 | DRR000002       | Processed2.txt          | Processed-matrix.txt           |
@@ -135,14 +94,6 @@ Two-color マイクロアレイ
 
 サンプル毎の次世代シークエンス DRA 生データ (Run) と解析済みデータファイル、及び、解析済みマトリックスファイル
 
-</div>
-
-</div>
-
-</div>
-
-<div class="section chapter">
-
 ## MAGE-TAB 実際の例
 
 [SDRF
@@ -150,10 +101,6 @@ Two-color マイクロアレイ
 
 以下は ArrayExpress に実際に登録されているマイクロアレイとシークエンシング実験の MAGE-TAB 例です。
 
-<div class="main_table">
-
-|                                                                             |                                                                                        |                                                                                          |                                                                                                                          |                               |
-| --------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ----------------------------- |
 | Accession Number                                                            | IDF Text                                                                               | SDRF Text                                                                                | Experiment Summary                                                                                                       | Platform                      |
 | [E-TABM-18](https://www.ebi.ac.uk/arrayexpress/experiments/E-TABM-18)       | [idf text](https://www.ebi.ac.uk/arrayexpress/files/E-TABM-18/E-TABM-18.idf.txt)       | [sdrf text](https://www.ebi.ac.uk/arrayexpress/files/E-TABM-18/E-TABM-18.sdrf.txt)       | Transcription profiling of 35 different Arabidopsis thaliana ecotypes                                                    | Affymetrix                    |
 | [E-TABM-985](https://www.ebi.ac.uk/arrayexpress/experiments/E-TABM-985)     | [idf text](https://www.ebi.ac.uk/arrayexpress/files/E-TABM-985/E-TABM-985.idf.txt)     | [sdrf text](https://www.ebi.ac.uk/arrayexpress/files/E-TABM-985/E-TABM-985.sdrf.txt)     | Transcription profiling by array of mouse testis development, dye swap design                                            | Compugen                      |
@@ -165,7 +112,3 @@ Two-color マイクロアレイ
 | [E-GEOD-24366](https://www.ebi.ac.uk/arrayexpress/experiments/E-GEOD-24366) | [idf text](https://www.ebi.ac.uk/arrayexpress/files/E-GEOD-24366/E-GEOD-24366.idf.txt) | [sdrf text](https://www.ebi.ac.uk/arrayexpress/files/E-GEOD-24366/E-GEOD-24366.sdrf.txt) | Global changes following N-deprivation in Chlamydomonas                                                                  | 454 sequencing                |
 
 MAGE-TAB 実際の例
-
-</div>
-
-</div>
