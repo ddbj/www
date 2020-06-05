@@ -557,7 +557,9 @@ PacBio や IonTorrent などでリファレンス配列がない bam ファイ�
 将来、新しいツールで再解析や再アライメントする際に重要であるため、bam ファイルのみを登録するときはアライメントされなかったリード (unaligned reads) を含めてください。
 </div>
 
+{::nomarkdown}
 {% include image.html url="books/bam-mapping.jpg" caption="bam とリファレンス配列の対応付け" %}
+{:/}
 
 1. #### BAM
   アライメントデータを BAM フォーマットで登録することができます。BAM ファイルは [SAMtools](http://samtools.sourceforge.net/) と [picard](https://broadinstitute.github.io/picard/) で読み込める形式になっている必要があります。圧縮していない BAM ファイルをアップロードしてください。   
