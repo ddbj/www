@@ -1,5 +1,5 @@
 ---
-layout: 未定
+layout: indexed_content
 title: BioProject について
 pathname: index
 category: aboutbioproject
