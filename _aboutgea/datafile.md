@@ -3,30 +3,19 @@ layout: indexed_content
 title: Accepted Data File Formats
 pathname: datafile
 category: aboutgea
+pdf: https://www.ddbj.nig.ac.jp/pdf/gea/datafile.pdf
 ---
-
-<div class="section chapter">
 
 ## ファイル準備における注意点
 
-<div class="sub_index">
-
 1.  experiment 中の全ての sample/hybridization
     に対する生データファイルと生マトリックスファイルを登録すること。
-2.  ファイル名は英数字 \[A-Z,a-z,0-9\]、アンダースコア \[\_\]、ハイフン \[-\] とドット \[.\]
+2.  ファイル名は英数字 [A-Z,a-z,0-9]、アンダースコア [_]、ハイフン [-] とドット [.]
     のみから構成され、空白文字、カッコ、句読点やシンボルを含まないこと。
 3.  全ての spreadsheet/matrix ファイルはタブ区切りテキストファイル形式 (\*.txt) で保存しエクセル形式
     (\*.xls、\*.xlsx) で保存しないこと。
 
-</div>
-
-</div>
-
-<div class="section chapter">
-
 ## マイクロアレイデータファイル形式
-
-<div class="section section">
 
 ### 生データファイルの形式
 
@@ -45,15 +34,9 @@ assay がカラム) の生データファイル。マトリックスファイル
 データファイル以外は)
 厳格に定められています。詳細は[マトリックスファイルガイドラインと例](/gea/matrix.html)を参照してください。
 
-</div>
-
-<div class="section section">
-
 ### プラットフォーム毎の受付フォーマット
 
 生データファイルのプラットフォームはファイルヘッダー中のカラムヘッダーで判定されます。
-
-<div class="sub_index">
 
   - Common platforms:
       - [Affymetrix](#affymetrix)
@@ -75,153 +58,108 @@ assay がカラム) の生データファイル。マトリックスファイル
       - [CSIRO Spot](#csirospot)
       - [Generic (for spotted arrays、non-platform specific)](#generic)
 
-</div>
+Affymetrix <a name="affymetrix"></a>  
+: 古い GDAC 形式と新しい GCOS/XDA 形式の両方を使って CEL と EXP ファイルを認識します。
 
-<div class="array">
+Agilent <a name="agilent"></a>  
+: 以下のカラムヘッダーを含むファイルは Agilent ファイルとして認識されます:
 
-  - Affymetrix  
-    古い GDAC 形式と新しい GCOS/XDA 形式の両方を使って CEL と EXP ファイルを認識します。
-
-  
-
-  - Agilent  
-    以下のカラムヘッダーを含むファイルは Agilent ファイルとして認識されます:
-
-|     |     |           |           |
-| --- | --- | --------- | --------- |
 | Row | Col | PositionX | PositionY |
 
-  - Illumina  
-    Illumina の生データファイルはテキストかバイナリー形式です。テキストファイルは [Illumina GenomeStudio
-    software](https://www.illumina.com/techniques/microarrays/array-data-analysis-experimental-design/genomestudio.html)
-    から生成されます。バイナリーの "IDAT" ファイル ("intensity data file") はスキャナーから生成され
-    [illuminaio](http://www.bioconductor.org/packages/release/bioc/html/illuminaio.html)
-    等の R/BioConductor パッケージで読み込めます)。バイナリーで解析に必要な全情報を含んでいる IDAT
-    の登録を推奨します。対照的にテキストファイルはどのプローブがコントロールであるか等の情報が別ファイルとなっていて欠けている場合があること、また、フォーマットが統一されておらず統合解析が難しいことがあります。他のデメリットとしてテキストファイルはユーザが何らかのソフトで開いて保存する間に意図せぬ変更が入りやすいという点が挙げられます。GenomeStudio
-    テキストファイルを登録する場合、以下が予期されるカラム構成になります:
-    PROBE\_ID は常に "ILMN\_123456" のような形式になります。QT は quantitation type の略で
-    AVGSignal といったカラム中の測定値の種類のことです。必要数の quantitation type
-    を含めることができます。カラムは sample name でソートし、次に
-    quantitation type でソートします。
+Illumina <a name="illumina"></a>  
+: Illumina の生データファイルはテキストかバイナリー形式です。テキストファイルは [Illumina GenomeStudio
+software](https://www.illumina.com/techniques/microarrays/array-data-analysis-experimental-design/genomestudio.html)
+から生成されます。バイナリーの "IDAT" ファイル ("intensity data file") はスキャナーから生成され
+[illuminaio](http://www.bioconductor.org/packages/release/bioc/html/illuminaio.html)
+等の R/BioConductor パッケージで読み込めます)。バイナリーで解析に必要な全情報を含んでいる IDAT
+の登録を推奨します。対照的にテキストファイルはどのプローブがコントロールであるか等の情報が別ファイルとなっていて欠けている場合があること、また、フォーマットが統一されておらず統合解析が難しいことがあります。他のデメリットとしてテキストファイルはユーザが何らかのソフトで開いて保存する間に意図せぬ変更が入りやすいという点が挙げられます。GenomeStudio
+テキストファイルを登録する場合、以下が予期されるカラム構成になります:  
 
-  
+| PROBE_ID | Assay_Name_1.QT1 | Assay_Name_1.QT2 | Assay_Name_2.QT1 | Assay_Name_2.QT2 |
 
-  - GenePix  
-    GenePix ファイル (通常拡張子は .gpr か .txt) は以下のカラムヘッダーで認識されます:
+PROBE_ID は常に "ILMN_123456" のような形式になります。QT は quantitation type の略で
+AVGSignal といったカラム中の測定値の種類のことです。必要数の quantitation type
+を含めることができます。カラムは sample name でソートし、次に
+quantitation type でソートします。
 
-|       |        |     |   |   |
-| ----- | ------ | --- | - | - |
+GenePix <a name="genepix"></a>  
+: GenePix ファイル (通常拡張子は .gpr か .txt) は以下のカラムヘッダーで認識されます:
+
 | Block | Column | Row | X | Y |
 
-  - NimbleScan  
-    全 NimbleScan ファイル (Feature、Probe と Pair) は以下のヘッダーを含みます:
+NimbleScan <a name="nimblescan"></a>  
+: 全 NimbleScan ファイル (Feature、Probe と Pair) は以下のヘッダーを含みます:
 
-|           |   |   |
-| --------- | - | - |
-| PROBE\_ID | X | Y |
+| PROBE_ID | X | Y |
 
-  - ScanAlyze  
-    以下のカラムヘッダーで認識されます:
+ScanAlyze <a name="scanalyze"></a>  
+: 以下のカラムヘッダーで認識されます:
 
-|      |     |     |      |     |       |     |
-| ---- | --- | --- | ---- | --- | ----- | --- |
 | GRID | COL | ROW | LEFT | TOP | RIGHT | BOT |
 
-  - ScanArray/QuantArray  
-    以下のカラムヘッダーで認識されます:
+ScanArray/QuantArray <a name="scanarray-quantarry"></a>  
+: 以下のカラムヘッダーで認識されます:
 
-|              |           |             |          |   |   |
-| ------------ | --------- | ----------- | -------- | - | - |
 | Array Column | Array Row | Spot Column | Spot Row | X | Y |
 
 古い QuantArray 形式は以下のカラムヘッダーで認識されます:
 
-|              |           |        |     |
-| ------------ | --------- | ------ | --- |
 | Array Column | Array Row | Column | Row |
 
-  - ArrayVision  
-    以下のカラムヘッダーで認識されます:
+ArrayVision <a name="arrayvision"></a>  
+: 以下のカラムヘッダーで認識されます:
 
-|         |           |
-| ------- | --------- |
 | Primary | Secondary |
 
 より新しい "lg2" ArrayVision ファイルは以下のカラムヘッダーで認識されます:
 
-|             |
-| ----------- |
 | Spot labels |
 
-  - Spotfinder  
-    以下のカラムヘッダーで認識されます:
+Spotfinder <a name="spotfinder"></a>  
+: 以下のカラムヘッダーで認識されます:
 
-|    |    |    |    |
-| -- | -- | -- | -- |
 | MC | MR | SC | SR |
 
-  - BlueFuse  
-    以下のカラムヘッダーで認識されます:
+BlueFuse <a name="bluefuse"></a>  
+: 以下のカラムヘッダーで認識されます:
 
-|     |     |            |            |
-| --- | --- | ---------- | ---------- |
 | COL | ROW | SUBGRIDCOL | SUBGRIDROW |
 
-  - UCSF Spot  
-    以下のカラムヘッダーで認識されます:
+UCSF Spot <a name="ucsfspot"></a>  
+: 以下のカラムヘッダーで認識されます:
 
-|          |          |           |           |
-| -------- | -------- | --------- | --------- |
 | Arr-colx | Arr-coly | Spot-colx | Spot-coly |
 
-  - Applied Biosystems  
-    以下のカラムヘッダーで認識されます:
+Applied Biosystems <a name="appliedbiosystems"></a>  
+: 以下のカラムヘッダーで認識されます:
 
-|           |          |
-| --------- | -------- |
-| Probe\_ID | Gene\_ID |
+| Probe_ID | Gene_ID |
 
-  - CodeLink  
-    以下のカラムヘッダーで認識されます:
+CodeLink <a name="codelink"></a>  
+: 以下のカラムヘッダーで認識されます:
 
-|              |              |           |           |
-| ------------ | ------------ | --------- | --------- |
-| Logical\_row | Logical\_col | Center\_X | Center\_Y |
+| Logical_row | Logical_col | Center_X | Center_Y |
 
-  - ImaGene  
-    以下のカラムヘッダーで認識されます:
+ImaGene <a name="imagene"></a>  
+: 以下のカラムヘッダーで認識されます:
 
-|             |          |        |     |       |         |
-| ----------- | -------- | ------ | --- | ----- | ------- |
 | Meta Column | Meta Row | Column | Row | Field | Gene ID |
 
 ImaGene 3.0 フォーマットもサポートしています:
 
-|           |           |          |          |      |          |
-| --------- | --------- | -------- | -------- | ---- | -------- |
-| Meta\_col | Meta\_row | Sub\_col | Sub\_row | Name | Selected |
+| Meta_col | Meta_row | Sub_col | Sub_row | Name | Selected |
 
-  - CSIRO Spot  
-    以下のカラムヘッダーで認識されます:
+CSIRO Spot <a name="csirospot"></a>  
+: 以下のカラムヘッダーで認識されます:
 
-|         |         |         |         |        |
-| ------- | ------- | ------- | ------- | ------ |
-| grid\_c | grid\_r | spot\_c | spot\_r | indexs |
+| grid_c | grid_r | spot_c | spot_r | indexs |
 
-  - Generic (spotted アレイと platform 特異的でないアレイ)  
-    生データファイルが [スポットアレイ中のプローブ位置](/gea/adf.html#feature) を示す
-    BlockColumn/BlockRow/Column/Row
-    フィールドを含んでいる場合、以下の４つのカラムの後にデータのカラムが続く一般的な形式を使うことができます:
+Generic (spotted アレイと platform 特異的でないアレイ) <a name="generic"></a>  
+: 生データファイルが [スポットアレイ中のプローブ位置](/gea/adf.html#feature) を示す
+BlockColumn/BlockRow/Column/Row
+フィールドを含んでいる場合、以下の４つのカラムの後にデータのカラムが続く一般的な形式を使うことができます:
 
-|            |         |        |     |
-| ---------- | ------- | ------ | --- |
 | MetaColumn | MetaRow | Column | Row |
-
-</div>
-
-</div>
-
-<div class="section section">
 
 ### 解析データファイル
 
@@ -234,19 +172,11 @@ GenomeStudio ソフトからの出力ファイル）とタブ区切りテキス�
 probe/probeset/gene name で１または複数の hybridization からのデータが列になります。GEA は
 processed data file を以下の場合に受付けています。
 
-<div class="sub_index">
-
   - １ hybridization 辺り１つの processed file (推奨)。複数のまとまった processed file
     を登録することになります。
   - 全ての hybridization からの正規化されたデータを含んだ１つの表 ("matrix") (非推奨)。
   - 異なるデータ処理段階の正規化されたデータを含んだいくつかの表ファイル ("matrix")、１つは正規化されたプローブの
     intensity でもう一つは遺伝子単位で算出した fold-change である場合など。
-
-</div>
-
-</div>
-
-<div class="section section">
 
 ### 解析済みテキストファイル
 
@@ -264,21 +194,17 @@ Identifier を記載します。Probe ID が無い場合は gene symbol や他�
 
 １つの hybridization からのデータを含んでいる processed .txt file は以下のようになります。
 
-<div class="sdrf_ex">
-
-|                     |                               |                     |
-| ------------------- | ----------------------------- | ------------------- |
 | Reporter Identifier | sample 1 normalised intensity | sample 1 background |
-| probe\_name\_1      | 233.5                         | 69.1                |
-| probe\_name\_2      | 129.4                         | 27.6                |
+| ------------------- | ----------------------------- | ------------------- |
+| **probe_name_1**    | 233.5                         | 69.1                |
+| **probe_name_2**    | 129.4                         | 27.6                |
 
 以下は行ヘッダーに gene name が記載されている例です。
 
-|                      |                               |                     |
-| -------------------- | ----------------------------- | ------------------- |
 | Human HGNC gene name | sample 1 normalised intensity | sample 1 background |
-| CDKN2A               | 233.5                         | 69.1                |
-| BRCA2                | 129.4                         | 27.6                |
+| -------------------- | ----------------------------- | ------------------- |
+| **CDKN2A**           | 233.5                         | 69.1                |
+| **BRCA2**            | 129.4                         | 27.6                |
 
 複数 hybridization からのデータを集計した processed "matrix" は以下のようになります。Probe ID
 が無い場合は gene symbol や他の ID (GenBank cDNA アクセッション番号や UniProt
@@ -286,31 +212,24 @@ protein アクセッション番号) を記載するようにしてください�
 
 サンプル毎の正規化された値:
 
-|                     |                     |                     |                     |                     |
+| Reporter<br>Identifier | sample 1<br>normalised | sample 2<br>normalised | sample 3<br>normalised | sample 4<br>normalised |
 | ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
-| Reporter Identifier | sample 1 normalised | sample 2 normalised | sample 3 normalised | sample 4 normalised |
-| probe\_name\_1      | 26.9                | 44.3                | 62.3                | 58.5                |
-| probe\_name\_2      | 22.9                | 43.7                | 58.2                | 67.4                |
+| **probe_name_1**    | 26.9                | 44.3                | 62.3                | 58.5                |
+| **probe_name_2**    | 22.9                | 43.7                | 58.2                | 67.4                |
 
-|                   |                     |                     |                     |                     |
+<br>
+
+| GenBank<br>accession | sample 1<br>normalised | sample 2<br>normalised | sample 3<br>normalised | sample 4<br>normalised |
 | ----------------- | ------------------- | ------------------- | ------------------- | ------------------- |
-| GenBank accession | sample 1 normalised | sample 2 normalised | sample 3 normalised | sample 4 normalised |
-| BC000578          | 26.9                | 44.3                | 62.3                | 58.5                |
-| M31642            | 22.9                | 43.7                | 58.2                | 67.4                |
+| **BC000578**      | 26.9                | 44.3                | 62.3                | 58.5                |
+| **M31642**        | 22.9                | 43.7                | 58.2                | 67.4                |
 
 集計された値の matrix (一つのデータカラムが複数サンプルに対応する場合):
 
-|                     |                        |                        |                           |
-| ------------------- | ---------------------- | ---------------------- | ------------------------- |
 | Reporter Identifier | drug A treated average | drug B treated average | untreated control average |
-| probe\_name\_1      | 44.6                   | 89.3                   | 290.15                    |
-| probe\_name\_2      | 98.3                   | 36.7                   | 100.52                    |
-
-</div>
-
-</div>
-
-<div class="section section">
+| ------------------- | ---------------------- | ---------------------- | ------------------------- |
+| **probe_name_1**    | 44.6                   | 89.3                   | 290.15                    |
+| **probe_name_2**    | 98.3                   | 36.7                   | 100.52                    |
 
 ### Additional file
 
@@ -318,33 +237,17 @@ protein アクセッション番号) を記載するようにしてください�
 [E-MTAB-3624](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3624/)）。登録を希望する場合は
 [GEA チームに連絡](/contact.html)してください。
 
-</div>
-
-</div>
-
-<div class="section chapter">
-
 ## シークエンシングデータ
-
-<div class="sub_index">
 
   - [生データファイル](#seq_raw)
   - [解析済みファイル](#seq_proc)
 
-</div>
-
-<div class="section section">
-
-### 生データファイル
+### 生データファイル <a name="seq_raw"></a>
 
 次世代シークエンスの生データは DDBJ Sequence Read Archive (DRA) に事前登録する必要があります。[DRA
 に登録可能なファイルリスト](/dra/submission.html#run-data-files)をご覧ください。
 
-</div>
-
-<div class="section section">
-
-### 解析データファイル
+### 解析データファイル <a name="seq_proc"></a>
 
 最終的な解析データファイル（final processed data）とは関連する論文の結論が導かれる基になったデータのことです。
 論文における結論は標準的なアライメントファイル（例
@@ -358,12 +261,8 @@ GEA はアライメントファイルが解析データファイルとして登�
 発現解析では対象となる生物学的特徴（フィーチャー）に関する定量的なデータが生成されます。生物学的特徴は遺伝子、転写産物、エキソン、miRNA
 等で通常二種類のデータが生成されます。
 
-<div class="sub_index">
-
   - 対象となる生物学的特徴を測定したリード（配列）のカウント数
   - 正規化された測定量。例 Cufflinks、Cuffdiff、DESeq、edgeR 等からの出力データ
-
-</div>
 
 どちらか、もしくは、両方を解析データとして登録することができます。ファイルはサンプルからのデータをまとめたマトリックスファイルか各サンプルに対応する個別ファイル（推奨）として登録することができます。
 発現量に差がある遺伝子だけを抽出するのではなく、全てのサンプルにおける全測定対象の測定値が記載された完全なデータを登録してください。
@@ -372,16 +271,12 @@ ChIP-Seq データは定量的なタグ密度を記載したピークファイ�
 WIG、bigWig、bedGraph 等です。
 
 解析データファイルにおける測定対象（遺伝子や転写産物等）は公的なアクセッション番号やゲノム座標で実体をトレースできるようになっている必要があります。使用した[リファレンスゲノム](https://www.ncbi.nlm.nih.gov/assembly/)（例
-hg19、mm9、GCF\_000001405.13) の ID を normalization data transformation
+hg19、mm9、GCF_000001405.13) の ID を normalization data transformation
 protocol や high throughput sequence alignment protocol
 に明記します。加えて、解析データファイルの中身と形式に関する情報もこれらのプロトコールに記載します。
 
 WIG、bedGraph、GFF もしくは GTF ファイルを登録する場合、これらのファイル形式の要件については [UCSC file
 format FAQ](http://www.genome.ucsc.edu/FAQ/FAQformat.html) を参照してください。
-
-</div>
-
-<div class="section section">
 
 ### 解析済み matrix ファイル (アドバンスドユーザ向け)
 
@@ -389,16 +284,8 @@ format FAQ](http://www.genome.ucsc.edu/FAQ/FAQformat.html) を参照してくだ
 と人が見て/機械的にマッピングされるファイル形式である厳格な MAGE-TAB 形式での matrix
 ファイルも受け付けています。詳細は[こちらのガイドライン](/gea/matrix.html)を参照してください。
 
-</div>
-
-<div class="section section">
-
 ### Additional file
 
 一細胞解析における spike-in やデータ解析に必要な追加ファイルを additional file として登録することができます（例
 [E-MTAB-3624](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3624/)）。登録を希望する場合は
 [GEA チームに連絡](/contact.html)してください。
-
-</div>
-
-</div>
