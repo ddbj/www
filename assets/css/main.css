@@ -506,6 +506,8 @@ input, textarea, select, button {
       font-weight: normal; }
   .md-content .life-size {
     width: auto; }
+  .md-content sup {
+    vertical-align: super; }
   .md-content .flow {
     color: #000000;
     list-style: none;
