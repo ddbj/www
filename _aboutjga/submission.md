@@ -3,9 +3,10 @@ layout: indexed_content
 title: JGA への登録
 pathname: submission
 category: aboutjga
+pdf: https://www.ddbj.nig.ac.jp/pdf/jga/submission.pdf
 ---
 
-<div class="section chapter">
+
 
 ## 登録概要
 
@@ -23,7 +24,7 @@ JGA は NBDC で承認された利用制限ポリシーを持つ，匿名化さ�
 
 メタデータオブジェクトに対して以下のプレフィックス付きアクセッション番号が割り振られます。
 
-<div id="accession" class="main_table">
+
 
 | プレフィックス | メタデータオブジェクト | 数字の桁数 | 例               |
 | ------- | ----------- | ----- | --------------- |
@@ -36,10 +37,11 @@ JGA は NBDC で承認された利用制限ポリシーを持つ，匿名化さ�
 | JGAD    | Data set    | 11    | JGAD00000000001 |
 | JGAP    | Policy      | 11    | JGAP00000000001 |
 
-</div>
 
+<div class="attention red">
 データの再利用性，再現性のためには論文での主張の基になっている解析データが登録されることが重要です。できるだけ VCF などの解析データを
 Analysis に登録してください。
+</div>
 
 著者が論文中で引用すべき JGA アクセッション番号が指定されていない場合は，JGAS (study)
 番号を引用することを推奨します。Study 番号は読者に研究の概要を示し，その
@@ -49,9 +51,9 @@ Study に含まれているすべてのデータへのリンクを提供しま�
 Genotype-phenotype Archive (JGA, http://trace.ddbj.nig.ac.jp/jga), which
 is hosted by the DDBJ, under accession number JGASXXXXXXXXX.」
 
-</div>
 
-<div class="section chapter">
+
+
 
 ## 塩基配列データ (raw/unaligned と aligned)
 
@@ -61,7 +63,7 @@ JGA でサポートしているファイル形式を以下に示します。 異
 データファイルが複数サンプルに由来するデータを含んでいる場合，投稿する前にファイルをサンプルごとに分割します。 そうすることによって Run
 は１つのサンプルに由来するデータファイルだけを持つようになります。
 
-<div class="section section">
+
 
 ### BAM 形式
 
@@ -75,9 +77,9 @@ JGA はプライマリーデータとして Data に unaligned read を含む BA
 
 圧縮という観点で BAM ファイルはほぼ最適化されているので，ファイルをさらに圧縮する必要はありません。
 
-</div>
 
-<div class="section section">
+
+
 
 ### Fastq 形式
 
@@ -85,7 +87,7 @@ JGA はプライマリーデータとして Data に unaligned read を含む BA
 [Fastq](http://en.wikipedia.org/wiki/FASTQ_format#Quality)
 ファイルでの登録を推奨しています。
 
-<div class="sub_index">
+
 
   - Quality score が
     [Phred](http://en.wikipedia.org/wiki/Phred_quality_score) スケールである。
@@ -102,7 +104,7 @@ JGA はプライマリーデータとして Data に unaligned read を含む BA
   - ベースコールと quality score が '+' で始める行で分けられている。
   - Fastq ファイルは gzip か bzip2 で圧縮されている。
 
-</div>
+
 
 シングルリードを含む Fastq ファイルの例:
 
@@ -128,9 +130,9 @@ GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
 ...
 ```
 
-</div>
 
-<div class="section section">
+
+
 
 ### SFF 形式
 
@@ -138,11 +140,11 @@ GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
 
 圧縮という観点で SFF ファイルはほぼ最適化されているので，ファイルをさらに圧縮する必要はありません。
 
-</div>
 
-</div>
 
-<div class="section chapter">
+
+
+
 
 ## アレイデータ (遺伝子型タイピング，SNP，遺伝子発現)
 
@@ -156,9 +158,9 @@ JGA は生データ (例 CEL)
 
 JGA はサンプルに関連した表現型 (phenotype) 情報も Analysis にアーカイブしています。
 
-</div>
 
-<div class="section chapter">
+
+
 
 ## 変異データ
 
@@ -166,9 +168,9 @@ JGA は variation データの [VCF
 形式](http://en.wikipedia.org/wiki/Variant_Call_Format)での登録を推奨しています。
 JGA Analysis に vcf ファイルを登録することができます。
 
-</div>
 
-<div class="section chapter">
+
+
 
 ## その他のデータ
 
@@ -176,16 +178,16 @@ Analysis は複数の Data もしくは Sample
 を参照することができるので，これらのオブジェクトに登録されているデータを解析，集計したデータを
 Analysis に登録することができます。Analysis に登録できるファイルの例を以下にリストします。
 
-<div class="sub_index">
+
 
   - 複数 Data に登録された配列データから作成したリファレンス配列 GFF3 ファイル
   - 複数 Analysis に登録されたアレイデータを正規化し表にまとめたファイル
 
-</div>
 
-</div>
 
-<div class="section chapter">
+
+
+
 
 ## メタデータ
 
@@ -196,11 +198,11 @@ JGA データモデルは [Sequence Read Archive](/dra/submission.html)
 JGA XML schema: [JGA
 xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-![単一の Policy が適用されている例](/images/submission/jga_metadata_1.jpg)
+![単一の Policy が適用されている例]({{ site.baseurl }}/assets/images/submission/jga_metadata_1.jpg)
 
-![Control と Case で Policy が異なる例](/images/submission/jga_metadata_2.jpg)
+![Control と Case で Policy が異なる例]({{ site.baseurl }}/assets/images/submission/jga_metadata_2.jpg)
 
-<div class="section section">
+
 
 ### 公開される項目
 
@@ -215,9 +217,9 @@ JGA メタデータのうち以下のオブジェクトは登録の概要を示�
   - Policy:  
     全ての内容
 
-</div>
 
-<div class="section section">
+
+
 
 ### Submission
 
@@ -226,9 +228,9 @@ JGA メタデータのうち以下のオブジェクトは登録の概要を示�
 XML schema:
 [JGA.submission.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-</div>
 
-<div class="section section">
+
+
 
 ### Study
 
@@ -239,9 +241,9 @@ XML schema:
 XML schema:
 [JGA.study.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-</div>
 
-<div class="section section">
+
+
 
 ### Sample
 
@@ -251,9 +253,9 @@ XML schema:
 XML schema:
 [JGA.sample.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-</div>
 
-<div class="section section">
+
+
 
 ### Experiment
 
@@ -262,9 +264,9 @@ XML schema:
 XML schema:
 [JGA.experiment.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-</div>
 
-<div class="section section">
+
+
 
 ### Data
 
@@ -273,9 +275,9 @@ XML schema:
 XML schema:
 [JGA.data.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-</div>
 
-<div class="section section">
+
+
 
 ### Analysis
 
@@ -287,9 +289,9 @@ Analysis には一つの VCF ファイルしか登録できません。また，
 XML schema:
 [JGA.analysis.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-</div>
 
-<div class="section section">
+
+
 
 ### Data set
 
@@ -302,9 +304,9 @@ Data XML と Analysis XML に記載されているデータファイルを,デ�
 XML schema:
 [JGA.dataset.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-</div>
 
-<div class="section section">
+
+
 
 ### Policy
 
@@ -318,11 +320,11 @@ XML schema:
 XML schema:
 [JGA.policy.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-</div>
 
-</div>
 
-<div class="section chapter">
+
+
+
 
 ## Analysis のみの登録
 
@@ -330,18 +332,16 @@ XML schema:
 Sample-Experiment-Data ではなく Sample-Analysis セットでデータを登録することができます。
 
 ![Sample に１対１対応する Analysis
-データ登録](/images/submission/sample-analysis.jpg)
+データ登録]({{ site.baseurl }}/assets/images/submission/sample-analysis.jpg)
 
-![Sample を集計した Analysis データ登録](/images/submission/samples-analysis.jpg)
+![Sample を集計した Analysis データ登録]({{ site.baseurl }}/assets/images/submission/samples-analysis.jpg)
 
 Sample-Analysis セットでデータ登録をする場合は [JGA チームに連絡](/contact.html)します。
 
-</div>
 
-<div class="section chapter">
+
+
 
 ## 登録の更新
 
 登録を更新するためには [JGA チームに連絡](/contact.html)します。
-
-</div>
