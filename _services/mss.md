@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: MSS - Mass Submission System
-pathname: mss
 category: services
 pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/mss.pdf
 ---

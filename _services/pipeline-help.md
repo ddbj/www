@@ -1,8 +1,7 @@
 ---
 layout: indexed_content
 title: Pipeline
-pathname: pipeline-help
-category: search_analysis
+category: services
 ---
 
 ## Basic Analysis(Preprocessing/Mapping/*de novo* Assembly)

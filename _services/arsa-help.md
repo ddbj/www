@@ -1,19 +1,7 @@
 ---
 layout: indexed_content
 title: ARSA 
-formal_name: All-round Retrieval of Sequence and Annotation
-service_link:
-  en: http://ddbj.nig.ac.jp/arsa/
-  ja: http://ddbj.nig.ac.jp/arsa/
-pathname: arsa-help
-category: search_analysis
-description:
-  en: DDBJ annotated/assembled data retrieval by accession numbers and keywords
-  ja: 高速なキーワードによる DDBJ annotated/assembled 塩基配列エントリの検索
-affiliation: DDBJ
-tags:
-  - search
-  - sequence
+category: services
 ---
 
 ## 検索対象データベース

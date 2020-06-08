@@ -1,8 +1,7 @@
 ---
 layout: indexed_content
 title: 過去のサービス
-pathname: past-services
-category: search_analysis
+category: services
 ---
 
 ## Web サービス

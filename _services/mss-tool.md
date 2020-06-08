@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: MSS データファイル用チェックツール
-pathname: mss-tool
 category: services
 pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/mss-tool.pdf
 ---

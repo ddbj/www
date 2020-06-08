@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Web版塩基配列登録システム (NSSS)
-pathname: websub
 category: services
 pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/websub.pdf
 ---

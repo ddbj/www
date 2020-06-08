@@ -1,8 +1,7 @@
 ---
 layout: indexed_content
 title: WABI VecScreen
-pathname: wabi_vecscreen-help
-category: search_analysis
+category: services
 ---
 
 ## VECSCREEN の job の投入

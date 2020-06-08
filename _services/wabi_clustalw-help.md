@@ -1,8 +1,7 @@
 ---
 layout: indexed_content
 title: WABI ClustalW
-pathname: wabi_clustalw-help
-category: search_analysis
+category: services
 ---
 
 ## CLUSTALWのjobの投入

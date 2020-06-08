@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: transChecker ユーザーマニュアル
-pathname: transchecker
 category: services
 pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/transchecker.pdf
 ---

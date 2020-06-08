@@ -1,8 +1,7 @@
 ---
 layout: indexed_content
 title: WABI MAFFT
-pathname: wabi_mafft-help
-category: search_analysis
+category: services
 ---
 ## MAFFT の job の投入
 

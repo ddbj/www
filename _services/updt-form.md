@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: 登録データの修正・更新申し込み
-pathname: updt-form
 category: services
 ---
 

@@ -1,19 +1,7 @@
 ---
 layout: indexed_content
 title: WABI Web API for Biology
-formal_name: Web API for Biology
-service_link:
-  en: https://www.ddbj.nig.ac.jp/wabi-e.html
-  ja: https://www.ddbj.nig.ac.jp/wabi.html
-pathname: wabi
-category: search_analysis
-description:
-  en: WABI is a web API for using the search services of the DDBJ without needing to navigate the web front-end
-  ja: 検索サービス を Web 画面を介せずに利用できる Web API
-affiliation: DDBJ
-tags:
-  - search
-  - analysis
+category: services
 ---
 
 ## WABI (Web API for Biology)

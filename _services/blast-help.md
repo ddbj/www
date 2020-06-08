@@ -1,19 +1,7 @@
 ---
 layout: indexed_content
 title: BLAST 
-formal_name: Basic Local Alignment Search Tool
-service_link: 
-  en: http://blast.ddbj.nig.ac.jp/blastn?lang=en
-  ja: http://blast.ddbj.nig.ac.jp/blastn?lang=ja
-pathname: blast-help
-category: search_analysis
-description:
-  en: Nucleotide homology search
-  ja: 塩基配列による相同性検索
-affiliation: DDBJ
-tags:
-  - search
-  - analysis  
+category: services
 ---
 
 DDBJ では，Web版 BLAST の他に，以下の方法でも BLAST サービスを提供しています。

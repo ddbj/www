@@ -194,7 +194,7 @@ input, textarea, select, button {
           background-size: cover;
           vertical-align: middle;
           transition: background 0.2s; }
-      .category-tab > ul > li.-search_analysis > a:before {
+      .category-tab > ul > li.-search_analysis > a:before, .category-tab > ul > li.-services > a:before {
         background-image: url(../images/icon-search_analysis-mono.png);
         width: 2.5rem; }
       .category-tab > ul > li.-submission > a:before {
@@ -218,7 +218,7 @@ input, textarea, select, button {
       .category-tab > ul > li.-current > a {
         color: #1C1B19;
         background-color: white; }
-      .category-tab > ul > li.-current.-search_analysis > a:before {
+      .category-tab > ul > li.-current.-search_analysis > a:before, .category-tab > ul > li.-current.-services > a:before {
         background-image: url(../images/icon-search_analysis.png); }
       .category-tab > ul > li.-current.-submission > a:before {
         background-image: url(../images/icon-submission.png); }

@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: DDBJ 塩基配列登録システム HELP
-pathname: websub-help
 category: _home
 pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/websub-help.pdf
 ---

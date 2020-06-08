@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: 登録データの修正・更新
-pathname: updt
 category: services
 pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/updt.pdf
 ---

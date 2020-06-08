@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: 登録ファイル形式
-pathname: file-format
 category: services
 pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/file-format.pdf
 ---

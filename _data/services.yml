@@ -5,8 +5,8 @@ items:
       en: http://getentry.ddbj.nig.ac.jp/top-e.html
       ja: http://getentry.ddbj.nig.ac.jp/top-j.html
     help:
-      en: ./getentry-help-e
-      ja: ./getentry-help
+      en: services/getentry-help-e
+      ja: services/getentry-help
     wabi: https://www.ddbj.nig.ac.jp/getentry-help.html#ge_program
     description:
       en: DDBJ annotated/assembled data retrieval by accession numbers
@@ -25,8 +25,8 @@ items:
       en: http://ddbj.nig.ac.jp/arsa/
       ja: http://ddbj.nig.ac.jp/arsa/
     help:
-      en: ./arsa-help-e
-      ja: ./arsa-help
+      en: services/arsa-help-e
+      ja: services/arsa-help
     wabi: https://www.ddbj.nig.ac.jp/arsa-help.html
     description:
       en: DDBJ annotated/assembled data retrieval by accession numbers and keywords
@@ -61,8 +61,8 @@ items:
       en: http://ddbj.nig.ac.jp/tx_search/?lang=en
       ja: http://ddbj.nig.ac.jp/tx_search/?lang=ja
     help:
-      en: ./txsearch-help-e
-      ja: ./txsearch-help
+      en: services/txsearch-help-e
+      ja: services/txsearch-help
     description:
       en: Taxonomy database search
       ja: 生物分類データベース検索
@@ -80,8 +80,8 @@ items:
       en: http://blast.ddbj.nig.ac.jp/blastn?lang=en
       ja: http://blast.ddbj.nig.ac.jp/blastn?lang=ja
     help:
-      en: ./blast-help-e
-      ja: ./blast-help
+      en: services/blast-help-e
+      ja: services/blast-help
     wabi: https://www.ddbj.nig.ac.jp/wabi_blast-help.html
     description:
       en: Nucleotide homology search
@@ -142,8 +142,8 @@ items:
       en: http://ddbj.nig.ac.jp/vecscreen/
       ja: http://ddbj.nig.ac.jp/vecscreen/vecscreen?lang=ja
     help:
-      en: ./vecscreen-help-e
-      ja: ./vecscreen-help
+      en: services/vecscreen-help-e
+      ja: services/vecscreen-help
     wabi: https://www.ddbj.nig.ac.jp/wabi_vecscreen-help.html
     description:
       en: Vector search to screen contamination in nucleic acid sequences.
@@ -162,8 +162,8 @@ items:
       en: https://www.ddbj.nig.ac.jp/wabi_mafft-help.html
       ja: https://www.ddbj.nig.ac.jp/wabi_mafft-help.html
     help:
-      en: ./wabi_clustalw-help-e
-      ja: ./wabi_clustalw-help
+      en: services/wabi_clustalw-help-e
+      ja: services/wabi_clustalw-help
     wabi: https://www.ddbj.nig.ac.jp/wabi_clustalw-help.html
     description:
       en: Multiple alignment and tree-making
@@ -178,8 +178,8 @@ items:
       en: http://clustalw.ddbj.nig.ac.jp/index.php?lang=en
       ja: http://clustalw.ddbj.nig.ac.jp/index.php?lang=ja
     help:
-      en: ./wabi_mafft-help-e
-      ja: ./wabi_mafft-help
+      en: services/wabi_mafft-help-e
+      ja: services/wabi_mafft-help
     wabi: https://www.ddbj.nig.ac.jp/wabi_mafft-help.html
     description:
       en: Fast multiple alignment tool for nucleotide and amino acid sequences.
@@ -195,8 +195,8 @@ items:
       en: https://www.ddbj.nig.ac.jp/wabi-e.html
       ja: https://www.ddbj.nig.ac.jp/wabi.html
     help:
-      en: ./wabi-e
-      ja: ./wabi
+      en: services/wabi-e
+      ja: services/wabi
     description:
       en: WABI is a web API for using the search services of the DDBJ without needing to navigate the web front-end
       ja: 検索サービス を Web 画面を介せずに利用できる Web API

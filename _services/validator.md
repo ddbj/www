@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: validator エラーメッセージ
-pathname: validator
 category: services
 ---
 

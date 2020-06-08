@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: MSS 利用申し込み
-pathname: mass-form
 category: services
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Parser ユーザーマニュアル
-pathname: parser
 category: services
 pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/parser.pdf
 ---

@@ -1,8 +1,7 @@
 ---
 layout: indexed_content
 title: 関連論文
-pathname: references
-category: search_analysis
+category: services
 ---
 ## DDBJ センターについての最新論文
 
