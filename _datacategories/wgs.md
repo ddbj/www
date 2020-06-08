@@ -3,6 +3,7 @@ layout: indexed_content
 title: WGS
 pathname: wgs
 category: datacategories
+pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/wgs.pdf
 ---
 
 様々な生物においてホールゲノムショットガン配列決定法（whole genome shotgun:
@@ -17,27 +18,29 @@ submission](/ddbj/assembly.html)もご参照ください。
 
 WGSデータの登録は [Mass Submission System (MSS)](/ddbj/mss.html) で受け付けております。
 
-  - WGS データとして登録可能なデータ  
-    原則、冗長な raw read sequences ではなく、ある程度 計算機処理を経た contigs (overlapping
-    reads) の配列を受付けます。冗長な raw read sequences
-    を公表することが必要な場合は、DDBJ/ENA/GenBank
-    とは別枠のデータベースである [DDBJ Sequence Read Archive
-    (DRA)](/dra/index.html)をご利用ください。
-      - 登録に先立ち、[BioProject Database](/bioproject/index.html) と
-        [BioSample Database](/biosample/index.html) への登録が必要です。
-      - assembly 過程を表現する WGS の登録には２種類の方法があります。
-          - a) WGS + scaffold CON:  
-            各 contig (overlapping reads) の配列を WGS entry として登録します。
-            WGS 配列には sequencing gap を表現する連続した"n"を含むことはできません。
-            gap を含めた連結構造の記載が必要な場合、[AGP
-            ファイル](/ddbj/file-format.html#agp)による登録が可能です。  
-            scaffold (assembled contigs separated by gaps) を
-            [CON](/ddbj/con.html) entry として WGS の連結を表現する形式で登録を受付けます。
-          - b) WGS with gaps:  
-            各 scaffold (assembled contigs separated by gaps) の配列を WGS
-            entry として登録します。
-            sequencing gap を連続した"n"として WGS 配列に含めて記載します。
-            [AGP ファイル](/ddbj/file-format.html#agp)は必要ありません。
+<dl>
+  <dt>WGS データとして登録可能なデータ</dt>
+  <dd>原則、冗長な raw read sequences ではなく、ある程度 計算機処理を経た contigs (overlapping reads) の配列を受付けます。冗長な raw read sequences を公表することが必要な場合は、DDBJ/ENA/GenBank とは別枠のデータベースである <a href="/dra/index.html">DDBJ Sequence Read Archive (DRA)</a>をご利用ください。</dd>
+  <dd>
+    <ul>
+      <li>登録に先立ち、<a href="/bioproject/index.html">BioProject Database</a> と <a href="/biosample/index.html">BioSample Database</a> への登録が必要です。</li>
+      <li>assembly 過程を表現する WGS の登録には２種類の方法があります。
+        <dl>
+          <dt>a) WGS + scaffold CON:</dt>
+          <dd>各 contig (overlapping reads) の配列を WGS entry として登録します。</dd>
+          <dd>WGS 配列には sequencing gap を表現する連続した"n"を含むことはできません。</dd>
+          <dd>gap を含めた連結構造の記載が必要な場合、<a href="/ddbj/file-format.html#agp">AGP ファイル</a>による登録が可能です。<br>
+            scaffold (assembled contigs separated by gaps) を <a href="/ddbj/con.html">CON</a> entry として WGS の連結を表現する形式で登録を受付けます。</dd>
+          <dt>b) WGS with gaps:</dt>
+          <dd>各 scaffold (assembled contigs separated by gaps) の配列を WGS entry として登録します。</dd>
+          <dd>sequencing gap を連続した"n"として WGS 配列に含めて記載します。</dd>
+          <dd>
+<a href="/ddbj/file-format.html#agp">AGP ファイル</a>は必要ありません。</dd>
+        </dl>
+      </li>
+    </ul>
+  </dd>
+</dl>
 
 ## DDBJ フォーマットの例
 
@@ -49,134 +52,38 @@ WGS エントリの特徴
 
 <!-- end list -->
 
-``` code flat-file
-LOCUS       ZZZZ01000001              123456 bp    DNA    linear   HUM 01-MAY-2003
-DEFINITION  Homo sapiens DNA, chromosome 7, A01234B01. 
-ACCESSION   ZZZZ01000001 ZZZZ01000000
-VERSION     ZZZZ01000001.1
-DBLINK      BioProject:PRJDA12345
+<pre><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">ZZZZ01000001</a>              <a id="SequenceLengthA" href="#SequenceLengthB">123456 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">DNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">HUM</a> <a id="ModificationDateA" href="#ModificationDateB">01-MAY-2003</a>
+<a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Homo sapiens DNA, chromosome 7, A01234B01. 
+<a id="AccessionA" href="#AccessionB">ACCESSION</a>   ZZZZ01000001 ZZZZ01000000
+<a id="VersionA" href="#VersionB">VERSION</a>     ZZZZ01000001.1
+<a id="DblinkA" href="#DblinkB">DBLINK</a>      BioProject:PRJDA12345
             BioSample:SAMD01234567
             Sequence Read Archive:DRR012345, DRR012346
-KEYWORDS    WGS; STANDARD_DRAFT.
-SOURCE      Homo sapiens
-  ORGANISM  Homo sapiens
+<a id="KeywordsA" href="#KeywordsB">KEYWORDS</a>    WGS; STANDARD_DRAFT.
+<a id="SourceA" href="#SourceB">SOURCE</a>      Homo sapiens
+  <a id="OrganismA" href="#OrganismB">ORGANISM</a>  Homo sapiens
             Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
             Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
             Catarrhini; Hominidae; Homo.
-REFERENCE   1  (bases 1 to 123456)
-  AUTHORS   Mishima,H. and Shizuoka,T.
-  TITLE     Direct Submission
-  JOURNAL   Submitted (01-APR-2003) to the DDBJ/EMBL/GenBank databases.
+<a id="Reference1A" href="#Reference1B">REFERENCE   1</a>  (bases 1 to 123456)
+  <a id="AuthorsA" href="#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
+  <a id="TitleA" href="#TitleB">TITLE</a>     Direct Submission
+  <a id="JournalA" href="#JournalB">JOURNAL</a>   Submitted (01-APR-2003) to the DDBJ/EMBL/GenBank databases.
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
-REFERENCE   2
+<a id="Reference2A" href="#Reference2B">REFERENCE   2</a>
   AUTHORS   Mishima,H., Shizuoka,T. and Fuji,I.
   TITLE     Human whole genome shotgun sequence
   JOURNAL   Unpublished (2003)
-COMMENT     Whole genome shotgun sequencing project.
-FEATURES             Location/Qualifiers
-     source          1..123456
-                     /db_xref="taxon:9606"
-                     /chromosome="7"
-                     /mol_type="genomic DNA"
-                     /organism="Homo sapiens"
-                     /submitter_seqid="A01234B01"
+<a id="CommentA" href="#CommentB">COMMENT</a>     Whole genome shotgun sequencing project.
+<a id="FeaturesA" href="#FeaturesB">FEATURES</a>             Location/Qualifiers
+     <a id="FeaturesSourceA" href="#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..123456</a>
+                     /<a href="/ddbj/qualifiers.html#db_xref">db_xref</a>="taxon:9606"
+                     /<a href="/ddbj/qualifiers.html#chromosome">chromosome</a>="7"
+                     /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
+                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Homo sapiens"
+                     /<a href="/ddbj/qualifiers.html#submitter_seqid">submitter_seqid</a>="A01234B01"
 
 -- The rest is snipped --
-//
-```
-
-## FIELD COMMENTS
-
-<div id="Locus">
-
-</div>
-
-<div id="LocusName">
-
-</div>
-
-<div id="SequenceLength">
-
-</div>
-
-<div id="MoleculeType">
-
-</div>
-
-<div id="MoleculeForm">
-
-</div>
-
-<div id="Division">
-
-</div>
-
-<div id="ModificationDate">
-
-</div>
-
-<div id="Definition">
-
-</div>
-
-<div id="Accession">
-
-</div>
-
-<div id="Version">
-
-</div>
-
-<div id="Dblink">
-
-</div>
-
-<div id="Keywords">
-
-</div>
-
-<div id="Source">
-
-</div>
-
-<div id="Organism">
-
-</div>
-
-<div id="Reference1">
-
-</div>
-
-<div id="Authors">
-
-</div>
-
-<div id="Title">
-
-</div>
-
-<div id="Journal">
-
-</div>
-
-<div id="Reference2">
-
-</div>
-
-<div id="Comment">
-
-</div>
-
-<div id="Features">
-
-</div>
-
-<div id="FeaturesSource">
-
-</div>
-
-<div id="End">
-
-</div>
+<a id="EndA" href="#EndB">//</a></pre>
