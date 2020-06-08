@@ -607,6 +607,107 @@ input, textarea, select, button {
   .md-content .flow_en li:nth-child(2)::before {
     margin: -11px -30px -30px auto; }
 
+/* =BioSample attributes */
+#page_main #biosample_attr_area .name a:link, #page_main #biosample_attr_area .name a:visited, #page_main #biosample_attr_area .name a:hover {
+  color: #000000; }
+
+#biosample_attr_area table#biosample_attr_table {
+  padding: 2px 0 0 0;
+  border-collapse: collapse;
+  background: white; }
+
+#biosample_attr_table {
+  background: #FBEBD3; }
+
+#biosample_attr_area table#biosample_attr_table thead tr {
+  line-height: 1.4;
+  background: #ddd;
+  color: #666; }
+  #biosample_attr_area table#biosample_attr_table thead tr th {
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: 1px solid #CCCCCC;
+    padding: 2px 4px;
+    text-align: left;
+    vertical-align: top; }
+
+#biosample_attr_area table#biosample_attr_table tbody {
+  border: 0; }
+  #biosample_attr_area table#biosample_attr_table tbody tr {
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd; }
+    #biosample_attr_area table#biosample_attr_table tbody tr td {
+      border: 1px solid #ccc;
+      padding: 2px 4px;
+      text-align: left;
+      vertical-align: top; }
+
+#biosample_attr_area table td.name {
+  white-space: nowrap; }
+
+#sample_type > ul > li > ul, #env_package {
+  display: none; }
+
+#main_index.biosample_attr .radio {
+  float: left;
+  margin-right: 3px; }
+
+#main_index.biosample_attr input {
+  vertical-align: middle;
+  margin-bottom: 3px; }
+
+#main_index.biosample_attr .radio.required {
+  outline: 1px solid #FF0000; }
+
+#page_main .biosample_attr a:visited {
+  color: #039; }
+
+#page_main .biosample_attr a:hover {
+  color: #039;
+  text-decoration: underline; }
+
+#main_index.biosample_attr ul {
+  list-style: none; }
+
+#sample_type, #env_package {
+  border: 1px solid #999999;
+  padding: 5px 10px;
+  width: 450px;
+  border-radius: 5px; }
+
+#sample_type {
+  margin-top: 5px;
+  margin-bottom: 15px; }
+
+#main_index.biosample_attr ul {
+  margin-bottom: 0; }
+  #main_index.biosample_attr ul li {
+    margin-bottom: 2px; }
+
+#main_index.biosample_attr > ul > li {
+  margin-top: 5px; }
+  #main_index.biosample_attr > ul > li > ul > li:last-child {
+    margin-bottom: 5px; }
+
+#page_main #main_index.biosample_attr a.title {
+  font-weight: bold; }
+
+#main_index.biosample_attr label {
+  color: #000000;
+  font-size: 90%; }
+
+#definition {
+  margin: 10px 0 20px 0; }
+
+/* 幅を調整 */
+#biosample_attr_area table#biosample_attr_table .description {
+  word-wrap: break-word; }
+
+#biosample_attr_area table#biosample_attr_table .value {
+  word-wrap: break-word;
+  width: 15%; }
+
 .multi-column-view {
   border-top: 1px solid #1C1B19; }
   .multi-column-view .caption {
