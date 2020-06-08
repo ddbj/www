@@ -1,2 +1,0 @@
-var accordion_menu_min=function(){"use strict";function n(){$(".accordion-menu dt").on("click",(function(){$(this).next("dd").slideToggle(500)})),$(".close-btn").click((function(){$(this).parents(".accordion-menu dd").slideUp()}))}return n}();
-//# sourceMappingURL=accordion_menu-min.js.map
