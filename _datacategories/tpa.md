@@ -55,19 +55,38 @@ TPA とプライマリーエントリの配列アラインメントに関する�
   - 挿入、欠失、置換など、TPA の配列に含まれる上記の不一致な部位（5% 以下）は引用元プライマリーエントリが存在しない領域、TPA の配列と引用元の配列が一致しない領域、双方を指します。
   - 上記は配列長と配列の類似度に適用されます。
 
-DDBJ フラットファイルにおける TPA の特徴
-:    
-  - [LOCUS](#LocusA) 行には、生物名に依存した taxonomic division
-    が表示されますが、CON、または、TSA の場合もあります。
-  - [DEFINITION](#DefinitionA) 行 の先頭 がTPA\_exp: (TPA:experimental の場合)、TPA\_inf: (TPA:inferential の場合)、TPA\_asm: (TPA:assembly の場合)、TPA: (TPA:specialist\_db の場合)、で始まります。
-  - [KEYWORDS](#KeywordA) 行には次のいずれかが表示されます。
-  
-    | [TPA:experimental](/ddbj/tpa-table-e.html#exp) の場合   | Third Party Data; TPA; TPA:experimental.   |
-    | [TPA:inferential](/ddbj/tpa-table-e.html#inf) の場合    | Third Party Data; TPA; TPA:inferential.    |
-    | [TPA:assembly](/ddbj/tpa-table-e.html#ass) の場合       | Third Party Data; TPA; TPA:assembly.       |
-    | [TPA:specialist\_db](/ddbj/tpa-table-e.html#spe) の場合 | Third Party Data; TPA; TPA:specialist\_db. |
-
-  - [PRIMARY](#PrimaryA) ブロックには、引用されたプライマリーエントリの配列領域と、これに対応する TPA 配列の領域が記載されます。
+<dl>
+  <dt>DDBJ フラットファイルにおける TPA の特徴</dt>
+    <dd>
+      <ul>
+        <li><a href="#LocusA">LOCUS</a> 行には、生物名に依存した taxonomic division が表示されますが、CON、または、TSA の場合もあります。</li>
+        <li><a href="#DefinitionA">DEFINITION</a> 行 の先頭 がTPA_exp: (TPA:experimental の場合)、TPA_inf: (TPA:inferential の場合)、TPA_asm: (TPA:assembly の場合)、TPA: (TPA:specialist_db の場合)、で始まります。</li>
+        <li><a href="#KeywordA">KEYWORDS</a> 行には次のいずれかが表示されます。
+            <table>
+              <tbody>
+                <tr>
+                  <td><a href="/ddbj/tpa-table-e.html#exp">TPA:experimental</a> の場合</td>
+                  <td>Third Party Data; TPA; TPA:experimental.</td>
+                </tr>
+                <tr>
+                  <td><a href="/ddbj/tpa-table-e.html#inf">TPA:inferential</a> の場合</td>
+                  <td>Third Party Data; TPA; TPA:inferential.</td>
+                </tr>
+                <tr>
+                  <td><a href="/ddbj/tpa-table-e.html#ass">TPA:assembly</a> の場合</td>
+                  <td>Third Party Data; TPA; TPA:assembly.</td>
+                </tr>
+                <tr>
+                  <td><a href="/ddbj/tpa-table-e.html#spe">TPA:specialist_db</a> の場合</td>
+                  <td>Third Party Data; TPA; TPA:specialist_db.</td>
+                </tr>
+              </tbody>
+            </table>
+        </li>
+        <li><a href="#PrimaryA">PRIMARY</a> ブロックには、引用されたプライマリーエントリの配列領域と、これに対応する TPA 配列の領域が記載されます。</li>
+      </ul>
+    </dd>
+</dl>
 
 ## TPA フラットファイルの例
 
