@@ -34,58 +34,16 @@ layout: default
       <div class="md-content">
         {{ content }}
       </div>
-      <aside class="multi-column-view">
+      <aside class="multi-column-view _padding-bottom-5rem">
         <h2 class="caption">Related pages</h2>
         <div class="navigation">
           <nav>
             <ul>
+              {% for related_page in page.related_pages %}
               <li>
-                <a href="">ARSA ヘルプ</a>
+                <a href="{{ related_page.url }}">{{ related_page.title }}</a>
               </li>
-              <li>
-                <a href="">BLAST ヘルプ</a>
-              </li>
-              <li>
-                <a href="">VecScreen ヘルプ</a>
-              </li>
-              <li>
-                <a href="">ClustalW ヘルプ</a>
-              </li>
-              <li>
-                <a href="">TXSearch ヘルプ</a>
-              </li>
-            </ul>
-          </nav>
-          <nav>
-            <ul>
-              <li>
-                <a href="">過去のサービス</a>
-              </li>
-              <li>
-                <a href="">関連論文</a>
-              </li>
-              <li>
-                <a href="">WABI (Web API for Biology)</a>
-              </li>
-              <li>
-                <a href="">WABI BLAST ヘルプ</a>
-              </li>
-              <li>
-                <a href="">WABI ClustalW ヘルプ</a>
-              </li>
-            </ul>
-          </nav>
-          <nav>
-            <ul>
-              <li>
-                <a href="">WABI VecScreen ヘルプ</a>
-              </li>
-              <li>
-                <a href="">WABI MAFFT ヘルプ</a>
-              </li>
-              <li>
-                <a href="">Pipeline ヘルプ</a>
-              </li>
+              {% endfor %}
             </ul>
           </nav>
         </div>

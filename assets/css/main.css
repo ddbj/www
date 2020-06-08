@@ -611,19 +611,17 @@ input, textarea, select, button {
 #page_main #biosample_attr_area .name a:link, #page_main #biosample_attr_area .name a:visited, #page_main #biosample_attr_area .name a:hover {
   color: #000000; }
 
-#biosample_attr_area table#biosample_attr_table {
+#biosample_attr_area {
   padding: 2px 0 0 0;
   border-collapse: collapse;
   background: white; }
 
-#biosample_attr_table {
-  background: #FBEBD3; }
-
-#biosample_attr_area table#biosample_attr_table thead tr {
+#biosample_attr_area table#biosample_attr_table thead {
   line-height: 1.4;
   background: #ddd;
-  color: #666; }
-  #biosample_attr_area table#biosample_attr_table thead tr th {
+  color: #666;
+  background: #FBEBD3; }
+  #biosample_attr_area table#biosample_attr_table thead th {
     border-top: none;
     border-bottom: none;
     border-left: none;
@@ -667,7 +665,7 @@ input, textarea, select, button {
   color: #039;
   text-decoration: underline; }
 
-#main_index.biosample_attr ul {
+#main_index.biosample_attr {
   list-style: none; }
 
 #sample_type, #env_package {
@@ -690,10 +688,10 @@ input, textarea, select, button {
   #main_index.biosample_attr > ul > li > ul > li:last-child {
     margin-bottom: 5px; }
 
-#page_main #main_index.biosample_attr a.title {
+#page_main #main_index.biosample_attr {
   font-weight: bold; }
 
-#main_index.biosample_attr label {
+#main_index.biosample_attr {
   color: #000000;
   font-size: 90%; }
 
@@ -701,10 +699,10 @@ input, textarea, select, button {
   margin: 10px 0 20px 0; }
 
 /* 幅を調整 */
-#biosample_attr_area table#biosample_attr_table .description {
+#biosample_attr_area .description {
   word-wrap: break-word; }
 
-#biosample_attr_area table#biosample_attr_table .value {
+#biosample_attr_area .value {
   word-wrap: break-word;
   width: 15%; }
 
@@ -1378,5 +1376,8 @@ input, textarea, select, button {
 
 ._bg-dbcls {
   background-color: #004098 !important; }
+
+._padding-bottom-5rem {
+  padding-bottom: 5rem; }
 
 /*# sourceMappingURL=main.css.map */

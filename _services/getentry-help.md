@@ -2,6 +2,33 @@
 layout: indexed_content
 title: getentry
 category: services
+related_pages:
+  - title: ARSA ヘルプ
+    url: services/arsa-help.html
+  - title: BLAST ヘルプ
+    url: services/blast-help.html
+  - title: VecScreen ヘルプ
+    url: services/vecscreen-help.html
+  - title: ClustalW ヘルプ
+    url: services/clustalw-help.html
+  - title: TXSearch ヘルプ
+    url: services/txsearch-help.html
+  - title: 過去のサービス
+    url: services/past-services.html
+  - title: 関連論文
+    url: services/references.html
+  - title: WABI (Web API for Biology)
+    url: services/wabi.html
+  - title: WABI BLAST ヘルプ
+    url: services/wabi_blast-help.html
+  - title: WABI ClustalW ヘルプ
+    url: services/wabi_clustalw-help.html
+  - title: WABI VecScreen ヘルプ
+    url: services/wabi_vecscreen-help.html
+  - title: WABI MAFFT ヘルプ
+    url: services/wabi_mafft-help.html
+  - title: Pipeline ヘルプ
+    url: services/pipeline-help.html
 ---
 
 ## getentryの機能について
