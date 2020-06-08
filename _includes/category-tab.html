@@ -1,9 +1,7 @@
 {% capture path %}{{site.url}}{{site.baseurl}}{% endcapture %}
 <nav class="category-tab">
   <ul>
-    <li class="-search_analysis{% if page.category == "search_analysis" %} -current{% endif %}"><a href="{{ path }}/search_analysis/">検索・解析</a></li>
-    <li class="-submission{% if page.category == "submission" %} -current{% endif %}"><a href="{{ path }}/submission/">登録</a></li>
-    <li class="-downloads{% if page.category == "downloads" %} -current{% endif %}"><a href="{{ path }}/downloads/">ダウンロード</a></li>
+    <li class="-search_analysis{% if page.category == "search_analysis" %} -current{% endif %}"><a href="{{ path }}/services/">サービス</a></li>
     <li class="-supercomputer{% if page.category == "supercomputer" %} -current{% endif %}"><a href="{https://sc.ddbj.nig.ac.jp/ja">スパコン</a></li>
     <li class="-statistics{% if page.category == "statistics" %} -current{% endif %}"><a href="{{ path }}/statistics/">統計</a></li>
     <li class="-activities{% if page.category == "activities" %} -current{% endif %}"><a href="{{ path }}/activities/">活動</a></li>
