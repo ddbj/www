@@ -9,7 +9,7 @@
   header.innerHTML = (`
     <div class="inner">
       <div class="logocontainer">
-        <a class="logotype" href="index.html">DDBJ DNA Data Bank of Japan</a>
+        <a class="logotype" href="/index.html">DDBJ DNA Data Bank of Japan</a>
       </div>
       <nav class="services">
         <h1 class="title">サービス</h1>
