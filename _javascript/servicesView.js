@@ -1,10 +1,12 @@
+/* global $ */
+
 // サービス一覧
-export default function ServicesView() {
-  const servicesView = document.getElementById('ServicesView');
-  if (servicesView) {
+export default function servicesView() {
+  const servicesView_ = document.getElementById('ServicesView');
+  if (servicesView_) {
     // タグの収集
     const categoryTags = {}, affiliationTags = {};
-    const services = servicesView.querySelectorAll('.service')
+    const services = servicesView_.querySelectorAll('.service')
     for (const service of services) {
       const tags = service.querySelectorAll('.tags > .service-tag');
       for (const tag of tags) {
@@ -31,8 +33,8 @@ export default function ServicesView() {
     // インタラクション
     const selectedTags = [];
     const $selectedTags = $('.service-tag', facetSearchTags);
-    $selectedTags.on('click', e => selectTag(e.target.dataset.tag));
-    function selectTag(tag) {
+    $selectedTags.on('click', e => {
+      const tag = e.target.dataset.tag;
       // 選択中のタグに追加・削除
       if (selectedTags.indexOf(tag) === -1) {
         selectedTags.push(tag);
@@ -68,7 +70,7 @@ export default function ServicesView() {
         $selectedTags.each((index, elm) => elm.classList.remove('-disable'));
         services.forEach(service => service.classList.remove('-hidden'));
       }
-    }
+    });
 
   }
 }

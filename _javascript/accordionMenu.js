@@ -1,5 +1,5 @@
 // アコーディオンメニュー
-export default function accordionMenu() {
+export default function AccordionMenu() {
   $('.accordion-menu dt').on('click', function () {
 
     $(this)
