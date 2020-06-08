@@ -1,15 +1,12 @@
-(function () {
-  'use strict';
+(()=>{
+  const script = document.getElementById('DDBJ_common_header');
+  script.style.display = '';
+  script.style.height = '';
 
-  (()=>{
-    const script = document.getElementById('DDBJ_common_header');
-    script.style.display = '';
-    script.style.height = '';
-
-    // generate header
-    const header = document.createElement('header');
-    header.id = 'CommonHeader';
-    header.innerHTML = (`
+  // generate header
+  const header = document.createElement('header');
+  header.id = 'CommonHeader';
+  header.innerHTML = (`
     <div class="inner">
       <div class="logocontainer">
         <a class="logotype" href="index.html">DDBJ DNA Data Bank of Japan</a>
@@ -86,22 +83,19 @@
       </nav>
     </div>
   `);
-    script.insertAdjacentElement('afterend', header);
+  script.insertAdjacentElement('afterend', header);
 
-    // attach event
-    const collapseButtons = document.querySelectorAll('.spcollapsemenubutton');
+  // attach event
+  const collapseButtons = document.querySelectorAll('.spcollapsemenubutton');
+  for (const button of collapseButtons) {
+    button.addEventListener('touchend', toggleServicesMenu);
+  }
+  
+  function toggleServicesMenu() {
     for (const button of collapseButtons) {
-      button.addEventListener('touchend', toggleServicesMenu);
+      if (this !== button) button.classList.remove('-opened');
     }
-    
-    function toggleServicesMenu() {
-      for (const button of collapseButtons) {
-        if (this !== button) button.classList.remove('-opened');
-      }
-      this.classList.toggle('-opened');
-    }
-    
-  })();
-
-}());
-//# sourceMappingURL=common_header.js.map
+    this.classList.toggle('-opened');
+  }
+  
+})();
