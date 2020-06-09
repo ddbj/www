@@ -44,7 +44,7 @@ JGA
 メタデータ記入用エクセルファイルを下記よりダウンロードし、内容を英語で記入してください。メタデータの説明は[こちらのページ](/jga/submission.html)をご参考ください。
 
 [![JGA メタデータ記入用エクセル]({{ site.baseurl }}/assets/images/parts/download.png
-"JGA メタデータ記入用エクセル")](/files/submission/JGA_metadata.xlsx)
+"JGA メタデータ記入用エクセル"){:.w40}.](/files/submission/JGA_metadata.xlsx)
 
 last updated: 2019-06-07
 

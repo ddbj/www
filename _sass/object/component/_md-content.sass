@@ -8,6 +8,8 @@ $MARGIN_BOTTOM: 1rem
 
   img
     width: 100%
+  .w40
+    width: 40px
   > p, > table, > ol, > ul, > dl, > .highlighter-rouge
     margin-bottom: $MARGIN_BOTTOM
   .red
@@ -327,117 +329,116 @@ $MARGIN_BOTTOM: 1rem
 
   .flow_en li:nth-child(2)::before
     margin: -11px -30px -30px auto
+    
+  #page_main 
+    #biosample_attr_area 
+      .name a
+        &:link, &:visited, &:hover
+          color: #000000
 
-/* =BioSample attributes */
-
-#page_main 
   #biosample_attr_area 
-    .name a
-      &:link, &:visited, &:hover
-        color: #000000
+    table#biosample_attr_table
+    padding: 2px 0 0 0
+    border-collapse: collapse
+    background: white
 
-#biosample_attr_area 
-  table#biosample_attr_table
-  padding: 2px 0 0 0
-  border-collapse: collapse
-  background: white
-
-#biosample_attr_area 
-  table
-    &#biosample_attr_table
-      thead 
-        tr
-        line-height: 1.4
-        background: #ddd
-        color: #666
-        &:honer
-        background: #FBEBD3
-        th
-          border-top: none
-          border-bottom: none
-          border-left: none
-          border-right: 1px solid #CCCCCC
-          padding: 2px 4px
-          text-align: left
-          vertical-align: top
-      tbody
-        border: 0
-        tr
-          border-bottom: 1px solid #ddd
-          border-left: 1px solid #ddd
-          td
-            border: 1px solid #ccc
+  #biosample_attr_area 
+    table
+      &#biosample_attr_table
+        thead 
+          tr
+          line-height: 1.4
+          background: #ddd
+          color: #666
+          &:honer
+          background: #FBEBD3
+          th
+            border-top: none
+            border-bottom: none
+            border-left: none
+            border-right: 1px solid #CCCCCC
             padding: 2px 4px
             text-align: left
             vertical-align: top
-    td.name
-      white-space: nowrap
+        tbody
+          border: 0
+          tr
+            border-bottom: 1px solid #ddd
+            border-left: 1px solid #ddd
+            td
+              border: 1px solid #ccc
+              padding: 2px 4px
+              text-align: left
+              vertical-align: top
+      td.name
+        white-space: nowrap
 
-#sample_type > ul > li > ul, #env_package
-  display: none
+  #sample_type > ul > li > ul, #env_package
+    display: none
 
-#main_index.biosample_attr
-  .radio
-    float: left
-    margin-right: 3px
-  input
-    vertical-align: middle
-    margin-bottom: 3px
-  .radio.required
-    outline: 1px solid #FF0000
+  #main_index.biosample_attr
+    .radio
+      float: left
+      margin-right: 3px
+    input
+      vertical-align: middle
+      margin-bottom: 3px
+    .radio.required
+      outline: 1px solid #FF0000
 
-#page_main 
-  .biosample_attr
-    a
-      &:visited
-        color: #039
-      &:hover
-        color: #039
-        text-decoration: underline
+  #page_main 
+    .biosample_attr
+      a
+        &:visited
+          color: #039
+        &:hover
+          color: #039
+          text-decoration: underline
 
-#main_index.biosample_attr
-  ul
-  list-style: none
+  #main_index.biosample_attr
+    ul
+    list-style: none
 
-#sample_type, #env_package
-  border: 1px solid #999999
-  padding: 5px 10px
-  width: 450px
-  border-radius: 5px
+  #sample_type, #env_package
+    border: 1px solid #999999
+    padding: 5px 10px
+    width: 450px
+    border-radius: 5px
 
-#sample_type
-  margin-top: 5px
-  margin-bottom: 15px
-
-#main_index.biosample_attr
-  ul
-    margin-bottom: 0
-    li
-      margin-bottom: 2px
-  > ul > li
+  #sample_type
     margin-top: 5px
-    > ul > li:last-child
-      margin-bottom: 5px
+    margin-bottom: 15px
 
-#page_main 
+  #main_index.biosample_attr
+    ul
+      margin-bottom: 0
+      li
+        margin-bottom: 2px
+    > ul > li
+      margin-top: 5px
+      > ul > li:last-child
+        margin-bottom: 5px
+
+  #page_main 
+    #main_index.biosample_attr 
+      a.title
+      font-weight: bold
+
   #main_index.biosample_attr 
-    a.title
-    font-weight: bold
+    label
+    color: #000000
+    font-size: 90%
 
-#main_index.biosample_attr 
-  label
-  color: #000000
-  font-size: 90%
+  #definition
+    margin: 10px 0 20px 0
 
-#definition
-  margin: 10px 0 20px 0
+  /* 幅を調整 */
 
-/* 幅を調整 */
+  #biosample_attr_area 
+    table#biosample_attr_table
+    .description
+      word-wrap: break-word
+    .value
+      word-wrap: break-word
+      width: 15%
 
-#biosample_attr_area 
-  table#biosample_attr_table
-  .description
-    word-wrap: break-word
-  .value
-    word-wrap: break-word
-    width: 15%
