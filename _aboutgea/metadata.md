@@ -22,12 +22,10 @@ MicroArray Gene Expression Tabular
 IDF (Investigation Description Format)
 ファイルは実験デザイン、プロトコール、文献情報や登録者情報といった実験全体を記述するファイルです。
 
-
 ### IDF 例
 
 [IDF
 の例](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=0)
-
 
 | [Comment[GEAAccession]](#Comment_idf)               | E-GEAD-369                                                                      |     |
 | MAGE-TAB Version                                      | 1.1                                                                             |     |
@@ -53,14 +51,12 @@ IDF (Investigation Description Format)
 | [Comment[Public Release Date]](#Comment_idf)        | 2018-06-22                                                                      |     |
 | [Comment[Last Update Date]](#Comment_idf)           | 2018-06-22                                                                      |     |
 
-
 ### IDF タグ
 
 IDF はタグと対応する値が組み合わされたタブ区切りテキストファイルです。例えば "Experiment Description" には
 Experiment のフリーテキストでの説明を記載します。一つ以上の値が許容されているフィールド、例えばプロトコール、登録者や
 experimental factor は一つの IDF
 ファイルで複数定義することができます（値はタブで区切ります）。一つの値しか持てないフィールドは以下に示してあります。
-
 
 [Investigation Title](#Investigation_Title)<a name="Investigation_Title"></a>
 : 研究全体に付けるタイトル。このタグは１つの値しか持てません。
@@ -97,7 +93,7 @@ Experimental Factor Type として使っています。
 <!-- end list -->
 
 [登録者のミドルネーム (公開されます)。](#Person_Mid_Initials)<a name="Person_Mid_Initials"></a>
-: 
+:
 <!-- end list -->
 
 [Person Affiliation](#Person_Affiliation)<a name="Person_Affiliation"></a>
@@ -213,7 +209,6 @@ SDRF は以下のようになります。
 | [Protocol REF](#Protocol_REF) | [Protocol REF](#Protocol_REF) |
 | OSUB000500_Protocol_2       | OSUB000500_Protocol_3       |
 
-
 <!-- end list -->
 
 {::options parse_block_html="true" /}
@@ -271,7 +266,6 @@ Assays<a name="Assays_section"></a>
 | [Labeled Extract Name](#Labeled_Extract_Name) | [Label](#Label) | [Assay Name](#Assay_Name)                  | [Technology Type](#Technology_Type) | [Array Design REF](#Array_Design_REF) |
 | Arabidopsis control for heat stress_rep 1    | biotin          | Arabidopsis control for heat stress_rep 1 | array assay                         | A-AFFY-2                              |
 
-
 Assay Name カラムを注釈する [Comment](#Comment_sdrf) カラムを含めることができます。Assay
 Name カラムの値は [Data Matrix](/gea/matrix.html)
 ファイル中でデータカラムと個々のアッセイをリンクするのに使われることがあることに注意が必要です。
@@ -281,7 +275,6 @@ Name カラムの値は [Data Matrix](/gea/matrix.html)
 [Raw Data Files](#Raw_Data_Files_section)<a name="Raw_Data_Files_section"></a>   
 : 生データファイルは [Assay Name](#Assay_Name) カラムに続く [Array Data
 File](#Array_Data_File) カラムにリストする必要があります。
-
 
 | [Assay Name](#Assay_Name)                  | [Technology Type](#Technology_Type) | [Array Design REF](#Array_Design_REF) | [Array Data File](#Array_Data_File) |
 | Arabidopsis control for heat stress_rep 1 | array assay                         | A-AFFY-2                              | Arabidopsis_control_rep_1.CEL    |
@@ -320,7 +313,6 @@ GEA は IDF で変数を "Experimental Factor Name" と Type（通常 Name
 | ----------------------------------------------------- | ----------- |
 | [Experimental Factor Name](#Experimental_Factor_Name) | temperature |
 | [Experimental Factor Type](#Experimental_Factor_Type) | temperature |
-
 
 ### 有効な SDRF カラムヘッダー
 
@@ -641,10 +633,8 @@ ArrayExpress のように登録時点で構造化してオントロジーを適�
 : [Term Source REF](#Term_Source_REF)
 カラムを注釈するカラムとして使うことができます。オントロジーやデータベース中の記入された値に対するアクセッション番号を記入します。例:
 
-
 | [Source Name](#Source_Name) | [Characteristics[disease]](#Characteristics) | [Term Source REF](#Term_Source_REF) | [Term Accession Number](#Term_Accession_Number) |
 | Sample 1                    | acute lymphoblastic leukemia                   | EFO                                 | EFO_0000220                                    |
-
 
 (この例は [EFO](https://www.ebi.ac.uk/efo/) Term Source が SDRF とペアになっている
 [IDF](/gea/metadata.html#idf) で定義されていることを前提にしています)  

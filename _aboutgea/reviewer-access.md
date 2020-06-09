@@ -3,9 +3,8 @@ layout: indexed_content
 title: Reviewer Access
 pathname: reviewer-access
 category: aboutgea
+pdf: https://www.ddbj.nig.ac.jp/pdf/gea/reviewer-access.pdf
 ---
-
-
 
 ## Reviewer access token
 
@@ -20,11 +19,9 @@ Reviewer access URL はアクセッション番号発行通知メールに含ま
 ![reviewer access key を生成]({{ site.baseurl }}/assets/images/submission/reviewer1.jpg
 "reviewer access key を生成")
 
+{% include image.html url=“/images/submission/reviewer1.jpg” caption=“reviewer access key を生成” %}
+
 ![reviewer トークン]({{ site.baseurl }}/assets/images/submission/reviewer3.jpg "reviewer トークン")
-
-
-
-
 
 ## 登録者の匿名化
 
