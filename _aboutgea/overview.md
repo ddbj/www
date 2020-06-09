@@ -3,9 +3,8 @@ layout: indexed_content
 title: GEA への登録
 pathname: overview
 category: aboutgea
+pdf: https://www.ddbj.nig.ac.jp/pdf/gea/overview.pdf
 ---
-
-
 
 ## 概要
 
@@ -17,8 +16,6 @@ type の[全リスト](/gea/experiment-types.html)。
 マイクロアレイとシークエンシング実験の submission はそれぞれ
 [MIAME](http://fged.org/projects/miame/) と
 [MINSEQE](http://fged.org/projects/minseqe/) ガイドラインに準拠する必要があります。
-
-
 
 <table>
 <colgroup>
@@ -56,8 +53,6 @@ type の[全リスト](/gea/experiment-types.html)。
 </tr>
 </tbody>
 </table>
-
-
 
 {::options parse_block_html="true" /}
 <div class="attention red">
