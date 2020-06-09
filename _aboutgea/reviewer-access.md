@@ -21,8 +21,6 @@ Reviewer access URL はアクセッション番号発行通知メールに含ま
 
 ![reviewer トークン]({{ site.baseurl }}/assets/images/submission/reviewer3.jpg "reviewer トークン")
 
-
-
 ## 登録者の匿名化
 
 論文の査読プロセスにおけるバイアスを無くすためいくつかのジャーナルでは査読者に論文著者が誰だか分からなくする "double-blind"
