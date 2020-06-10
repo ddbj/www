@@ -436,8 +436,8 @@ Analysis に含めるデータファイルを選択します。
 
 <!-- end list -->
 
-[Run/Analysis contains files](#Analysis_Run_Analysis_contains_files)<a name="Analysis_Run_Analysis_contains_files"></a><span : class="red">*</span>  
-    データファイルが属する Analysis を選択します。
+[Run/Analysis contains files](#Analysis_Run_Analysis_contains_files)<a name="Analysis_Run_Analysis_contains_files"></a><span class="red">*</span>  
+: データファイルが属する Analysis を選択します。
 
 <!-- end list -->
 
@@ -728,14 +728,14 @@ fastq/bam ファイルを登録します。
 </div>
 
 <div class="attention">
-  - ヒトを対象とした研究データの登録について  
-    <span class="red">研究対象者に由来するデータを DDBJ センターが運営するデータベースに登録する場合、研究対象者の尊厳及び人権は、適用されるべき法令、指針、ガイドライン、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。原則として、研究対象者を直接特定し得る情報はメタデータから取り除いてください。
-    ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#human)を熟読してください。</span>
+ヒトを対象とした研究データの登録について  
+: <span class="red">研究対象者に由来するデータを DDBJ センターが運営するデータベースに登録する場合、研究対象者の尊厳及び人権は、適用されるべき法令、指針、ガイドライン、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。原則として、研究対象者を直接特定し得る情報はメタデータから取り除いてください。
+ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#human)を熟読してください。</span>
 </div>
 
 <div class="attention">
-  - 特許に関連するデータの登録  
-    <span class="red">登録するデータが特許に関連する場合は、[「特許に関連する塩基配列の登録に関する注意、データの優先権」](/policies.html#disclaimer)の内容を必ずご確認ください。</span>
+特許に関連するデータの登録  
+: <span class="red">登録するデータが特許に関連する場合は、[「特許に関連する塩基配列の登録に関する注意、データの優先権」](/policies.html#disclaimer)の内容を必ずご確認ください。</span>
 </div>
 
 次世代シークエンサからのデータを DRA に登録するためにはメタデータとシークエンスデータが必要です。
@@ -836,6 +836,7 @@ DDBJ センターから登録者に問い合わせた後三か月以上回答が
 になった登録が査定されます。
 
 DRA 登録のステータス一覧
+{: .tablecaption}
 
 | ステータス                 | 状態                            |
 | --------------------- | ----------------------------- |
@@ -1091,7 +1092,7 @@ BioSamples] をクリックすると、フィルターされたサンプルが�
 自身のアカウント以外で取得された BioSample を参照したい場合は [DRA チームに連絡してください]({{ site.url }}{{ site.baseurl }}/aboutus/contact.html)。
 
 {::nomarkdown}
-{% include image.html url="books/hdra-bs01.jpg" caption="iBioSample の新規登録 or 選択d" %}
+{% include image.html url="books/hdra-bs01.jpg" caption="BioSample の新規登録 or 選択" %}
 {:/}
 
 BioSample を新規登録する場合は左のタブから順番に内容を英語で入力していきます。二段目が BioSample になります。登録者などの情報は DRA Submission で入力した内容が引き写されます。
@@ -1431,15 +1432,15 @@ DRA では以下の場合にデータを公開しています。
 オブジェクトは Submission 単位で公開されます。オブジェクトを異なる時期に公開したい場合は Submission を分けて登録してください。
 </div>
 
-A.  登録者から公開依頼の連絡を受けた場合
-B.  登録者がアクセッション番号を公表した事を確認した場合。  
-    登録者以外の第三者が過失により他人のアクセッション番号を論文や学会等で公表した場合などは該当しません。  
-    公表とは、アクセッション番号を不特定多数の対象に知らせる行為 (学術論文、学会、インターネット、報道機関などを媒体とした発表)
-    を指します。
-C.  公開予定日が到来した場合
-D.  DRA Run (DRR) アクセッション番号を引用している DDBJ/EMBL-Bank/GenBank レコード
-    ([TSA](/ddbj/tsa.html)、[WGS]({{ site.url }}{{ site.baseurl }}/datacategories/wgs.html), [CON]({{ site.url }}{{ site.baseurl }}/datacategories/con.html)
-    など) が公開された場合
+- A. 登録者から公開依頼の連絡を受けた場合  
+- B. 登録者がアクセッション番号を公表した事を確認した場合。  
+登録者以外の第三者が過失により他人のアクセッション番号を論文や学会等で公表した場合などは該当しません。  
+公表とは、アクセッション番号を不特定多数の対象に知らせる行為 (学術論文、学会、インターネット、報道機関などを媒体とした発表)
+を指します。
+- C. 公開予定日が到来した場合
+- D. DRA Run (DRR) アクセッション番号を引用している DDBJ/EMBL-Bank/GenBank レコード
+([TSA](/ddbj/tsa.html)、[WGS]({{ site.url }}{{ site.baseurl }}/datacategories/wgs.html), [CON]({{ site.url }}{{ site.baseurl }}/datacategories/con.html)
+など) が公開された場合
 
 
 B, C または D の場合は登録者の了解がなくても例外なく公開します。D の場合、引用されている DRR 番号を含む DRA

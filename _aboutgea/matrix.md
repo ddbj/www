@@ -13,14 +13,14 @@ probe/probe set にマッピングされるようにするためのものです�
 支障なくマッピングされるためには各マトリックスファイルが一つのアレイデザインに由来するアッセイのみを含んでいる必要があり（experiment
 で一つ以上のアレイデザインを使っている場合は複数のマトリックスファイルが必要です）、また、カラム/行のヘッダーとカラムの順番が厳密に制御されている必要があります。
 
-Column/row ヘッダー:
+**Column/row ヘッダー:**
 
 マトリックスファイルの一行目のヘッダーは assay name で assay とデータを対応付ける Hybridization REF
 である必要があります。二行目のヘッダーには各カラムの "quantitation type" (log2 ratio
 といった測定値の種類) をリストします。そして一列目は Reporter REF とし、アレイデザインファイルの
 probe ID とデータが対応付けられるようにします。
 
-複数アッセイの測定値を計算した場合:
+**複数アッセイの測定値を計算した場合:**
 
 Log2 fold-change といった計算値は往々にして一つ以上のアッセイの測定値を含んでいます
 (例えば全ての遺伝子について3つのノックアウトサンプルに対して3つの野生型コントロールサンプルの平均値を計算した場合)。このケースでは各カラムにセミコロンで区切った複数の
@@ -29,7 +29,7 @@ assay name を記載します。
 | **Hybridization REF** | <span class="blue">Hyb1;Hyb2;Hyb3</span> | <span class="blue">Hyb4;Hyb5;Hyb6</span> |
 | **Reporter REF**      | <span class="blue">log2 FC</span>        | <span class="blue">log2 FC</span>        |
 
-データカラムの順番:
+**データカラムの順番:**
 
 マトリックス形式ではカラムの順序と構成が定められています: 最初は assay 続いて quantitation type の順になります:
 
