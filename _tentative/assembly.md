@@ -28,54 +28,54 @@ C) Partial assembly to contigs only.
 <table>
   <tbody>
     <tr>
-      <th>Component</th>
-      <th>Level</th>
-      <th>Comment</th>
+      <td>Component</td>
+      <td>Level</td>
+      <td>Comment</td>
     </tr>
     <tr>
-        <td>Reads</td>
-        <td>Recommended</td>
-        <td>Complete read and quality data</td>
+      <td>Reads</td>
+      <td>Recommended</td>
+      <td>Complete read and quality data</td>
     </tr>
     <tr>
-        <td>ReRead to contig mappingads</td>
-        <td rowspan="2">One of, as appropriate, optional</td>
-        <td>e.g. BAM alignment of reads to contigs</td>
+      <td>ReRead to contig mappingads</td>
+      <td rowspan="2">One of, as appropriate, optional</td>
+      <td>e.g. BAM alignment of reads to contigs</td>
     </tr>
     <tr>
-        <td>Read to chromosome mapping</td>
-        <td>e.g. BAM alignment of reads to new chromosome</td>
+      <td>Read to chromosome mapping</td>
+      <td>e.g. BAM alignment of reads to new chromosome</td>
     </tr>
     <tr>
-        <td>Contigs</td>
-        <td rowspan="3">At least one layer mandatory</td>
-        <td rowspan="3"></td>
+      <td>Contigs</td>
+      <td rowspan="3">At least one layer mandatory</td>
+      <td rowspan="3"></td>
     </tr>
     <tr>
-        <td>Scaffolds</td>
+      <td>Scaffolds</td>
     </tr>
     <tr>
-        <td>Chromosomes</td>
+      <td>Chromosomes</td>
     </tr>
     <tr>
-        <td>Scaffold to chromosome mapping</td>
-        <td>Mandatory if both layers are present</td>
-        <td>e.g. AGP file</td>
+      <td>Scaffold to chromosome mapping</td>
+      <td>Mandatory if both layers are present</td>
+      <td>e.g. AGP file</td>
     </tr>
     <tr>
-        <td>Contig to scaffold mapping</td>
-        <td>Mandatory if both layers are present</td>
-        <td>e.g. AGP file</td>
+      <td>Contig to scaffold mapping</td>
+      <td>Mandatory if both layers are present</td>
+      <td>e.g. AGP file</td>
     </tr>
     <tr>
-        <td>Assembly description</td>
-        <td>Mandatory</td>
-        <td>Brief information relating to assembly and future plans</td>
+      <td>Assembly description</td>
+      <td>Mandatory</td>
+      <td>Brief information relating to assembly and future plans</td>
     </tr>
     <tr>
-        <td>Functional annotation</td>
-        <td>Optional</td>
-        <td></td>
+      <td>Functional annotation</td>
+      <td>Optional</td>
+      <td></td>
     </tr>
   </tbody>
 </table>
@@ -87,9 +87,9 @@ Consistent with the variety of assembly processes, submitters to INSDC　approac
 <table>
   <tbody>
     <tr>
-      <th>Component</th>
-      <th>Level</th>
-      <th>Comment</th>
+      <td>Component</td>
+      <td>Level</td>
+      <td>Comment</td>
     </tr>
     <tr>
       <td>Reads</td>

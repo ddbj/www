@@ -19,7 +19,7 @@ pdf: https://www.ddbj.nig.ac.jp/pdf/gea/datafile.pdf
 
 ### 生データファイルの形式
 
-アッセイ毎の生データファイル (推奨):
+**アッセイ毎の生データファイル (推奨):**
 
 マイクロアレイスキャナー付属ソフトによって生成される "native" ファイル。Native ファイルは変更・編集せずにそのまま 1
 hybridization assay 辺り 1 file として登録します。 一つの assay は Affymetrix
@@ -27,7 +27,7 @@ hybridization assay 辺り 1 file として登録します。 一つの assay �
 
 マイクロアレイ製造業者は時と共に様々な生データファイル形式を開発してきました。持っている生データファイル形式が登録可能かどうか不明な場合は下記のリストを参照してください。
 
-生データマトリックス (非推奨):
+**生データマトリックス (非推奨):**
 
 複数の hybridization assay に由来するデータを含んでいるタブ区切りテキストファイル形式 (.txt、probe が行で
 assay がカラム) の生データファイル。マトリックスファイル形式の仕様は (Illumina GenomeStudio

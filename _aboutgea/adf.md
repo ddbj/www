@@ -59,7 +59,7 @@ ADF テーブルセクション中のヘッダーも controlled vocabulary を�
 
 ### Feature、reporter と composite element
 
-Feature (スポットアレイのみ):
+**Feature (スポットアレイのみ):**
 
 アレイ上の各スポットを feature と呼びます。Feature の位置は四つの座標 Block Column、Block
 Row、Column と Row で示します。これらの四座標はマイクロアレイ上のユニークな位置に対応しているため feature
@@ -68,13 +68,13 @@ feature を ADF ファイルで記載してください。 以下に四座標の
 
 {% include image.html url="magetab/adf_column.jpg" caption="Block Column と Block Row 座標" %}
 
-Reporter (全てのアレイで必須):
+**Reporter (全てのアレイで必須):**
 
 Reporter は通常 "probe" と呼ばれているものです。各 reporter は特定の塩基配列と role (experimental
 か control) を持ちます。 原則として reporter にはユニークな名前を付けます。同一配列のプローブがアレイの異なるスポット
 (feature) にプリントされている場合は異なる座標で同じ reporter name が繰り返されることになります。
 
-Composite element (全てのアレイにおいて任意):
+**Composite element (全てのアレイにおいて任意):**
 
 Composite element で reporter
 同士の関係性、同じ遺伝子や転写産物由来であるといったこと、などの情報を付加することができます。
@@ -102,7 +102,7 @@ Sequence カラムを使い、外部エンティティやゲノム座標参照�
 のアノテーションは空欄にします。キュレータがアノテーション情報のフォーマットと値をチェックするため　"NA"、"empty"
 や "unmapped" 等のカスタム値を記入しないでください。
 
-Reporter 配列:
+**Reporter 配列:**
 
 全てのアレイ（ペプチドアレイを含む）の配列は [single-letter IUPAC
 code](http://www.bioinformatics.org/sms/iupac.html) で記載します。 全ての
@@ -111,7 +111,7 @@ reporter は配列アノテーションが付与されている必要があり�
 control reporter にアノテーションを付与してはいけません。experimental と control reporter
 については下のセクションをご覧ください。
 
-外部データベースエントリの参照:
+**外部データベースエントリの参照:**
 
 参照したい外部データベースが[許容されているリソースリスト](https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=1479684386%22)にあるかどうかを探し、ある場合は
 Database Entry [xxx] の []
@@ -126,7 +126,7 @@ File フィールドにデータベースの名前と URL を記載します。
 [NCBI RefSeq curated cDNAs](https://www.ncbi.nlm.nih.gov/refseq/about/)
 は NM_ に数字が続くフォーマットのアクセッション番号形式になっています。
 
-ゲノムマップ上の位置:
+**ゲノムマップ上の位置:**
 
 データベースの略称の代わりにゲノム座標上の位置を chromosome_coordinate に繋げて Reporter Database
 Entry [xxx] の [] に記入することができます（例 Reporter Database Entry

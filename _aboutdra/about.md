@@ -20,5 +20,6 @@ FAX : 055-981-6849
 
 ## 文献 <a name="reference"></a>
 
-  - Kodama Y, Shumway M, Leinonen R; on behalf of the International Nucleotide Sequence Database Collaboration (2012)  
-  The sequence read archive: explosive growth of sequencing data. *Nucleic Acids Res* 40:D54-D56. PMID:[22009675](https://www.ncbi.nlm.nih.gov/pubmed/22009675)
+Kodama Y, Shumway M, Leinonen R; on behalf of the International Nucleotide Sequence Database Collaboration (2012)
+: The sequence read archive: explosive growth of sequencing data. *Nucleic Acids Res* 40:D54-D56.  
+PMID:[22009675](https://www.ncbi.nlm.nih.gov/pubmed/22009675)

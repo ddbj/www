@@ -32,18 +32,22 @@ For all [*databases*] types 'Case' is important. All databases member of the Int
 
 Description of database, and type with example(s).
 
-  - Database  
-    Description of database name in /db_xref qualifier
-  - Full name  
-    Full name of the database
-  - Format  
-    Format for /db_xref qualifier
-  - Diff  
-    Flag for any difference with [the original site](http://www.insdc.org/documents/dbxref-qualifier-vocabulary) in the line.
-  - Use  
-    **Yes**: to be described by DDBJ submitters  
-    **No**: not to be described by DDBJ submitters  
-    **Auto**: not to be described by DDBJ submitters, described by the database  
+Database  
+: Description of database name in /db_xref qualifier
+
+Full name  
+: Full name of the database
+
+Format  
+: Format for /db_xref qualifier
+
+Diff  
+: Flag for any difference with [the original site](http://www.insdc.org/documents/dbxref-qualifier-vocabulary) in the line.
+
+Use  
+: **Yes**: to be described by DDBJ submitters  
+**No**: not to be described by DDBJ submitters  
+**Auto**: not to be described by DDBJ submitters, described by the database  
 
 Presently the list includes:
 

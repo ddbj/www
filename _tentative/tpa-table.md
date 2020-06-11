@@ -13,14 +13,18 @@ Third PArty data (TPA) are submitted to the International Nucleotide Sequence Da
 
 All TPA records belong to one of these classes: <span class="bold">TPA:experimental</span>, <span class="bold">TPA:inferential, TPA:specialist_db,</span> or <span class="bold">TPA:assembly</span>.
 
-  - TPA:experimental  
-    describes records that include functional annotation derived at least in part from peer-reviewed wet-lab experimental investigation.
-  - TPA:inferential  
-    describes records that include functional annotation derived from peer-reviewed bioinformatic investigation.
-  - TPA:specialist_db  
-    describes records whose sequences are submitted from an existing authoritative public database that is built using INSDC sequence data and is described in an accepted peer-reviewed publication. The existing database is therefore recognized to be comprehensive, to have added value, and to be maintained long term.
-  - TPA:assembly  
-    describes records reporting assembly or reassembly, for which the generation, whether it is purely informatic or informed by experimentation, has been subject to peer review. Annotation may or may not be available and does not require to be part of the peer review for this TPA class. A further requirement for TPA:assembly is for submitters to provide an alignment file containing the reads/sequences mapped to the assembly.
+
+TPA:experimental  
+: describes records that include functional annotation derived at least in part from peer-reviewed wet-lab experimental investigation.
+
+TPA:inferential  
+: describes records that include functional annotation derived from peer-reviewed bioinformatic investigation.
+
+TPA:specialist_db  
+: describes records whose sequences are submitted from an existing authoritative public database that is built using INSDC sequence data and is described in an accepted peer-reviewed publication. The existing database is therefore recognized to be comprehensive, to have added value, and to be maintained long term.
+
+TPA:assembly  
+: describes records reporting assembly or reassembly, for which the generation, whether it is purely informatic or informed by experimentation, has been subject to peer review. Annotation may or may not be available and does not require to be part of the peer review for this TPA class. A further requirement for TPA:assembly is for submitters to provide an alignment file containing the reads/sequences mapped to the assembly.
 
 TPA records are clearly labeled with keywords indicating their TPA status and their class. Constructed genomes where no experimental evidence is presented (in <span style="font-weight:bold">TPA:assembly</span>) are permitted to include only annotation relating to genes of known function (as opposed to hypothetical proteins, for example). Submissions containing neither assembly information nor annotation that has resulted from peer-reviewed *in vivo*, *in vitro* or *in silico* experimentation are not accepted in TPA. The outputs of computational tools, feature identification algorithms, and homology search tools alone are not sufficient for TPA.
 

@@ -62,6 +62,7 @@ pdf: https://www.ddbj.nig.ac.jp/pdf/gea/example.pdf
 | Source 3    | P-GEAD-10    | Hybridization 3 | Data3.CEL       | Processed3.txt          |
 | Source 4    | P-GEAD-10    | Hybridization 4 | Data4.CEL       | Processed4.txt          |
 
+{: .tablecaption}
 各サンプルに対して１つの生データファイルと解析済みデータファイルがあるケース
 
 ### Example 2: Two-color マイクロアレイ <a name="sdrf_example2"></a>
@@ -76,6 +77,7 @@ pdf: https://www.ddbj.nig.ac.jp/pdf/gea/example.pdf
 | Source 3a   | Extract 3a   | LabeledExtract 3a Cy3 | Cy3   | Hybridization 3 |
 | Source 3b   | Extract 3b   | LabeledExtract 3b Cy5 | Cy5   | Hybridization 3 |
 
+{: .tablecaption}
 Two-color マイクロアレイ
 
 ### Example 3: サンプル毎の次世代シークエンス DRA 生データ (Run) と解析済みデータファイル、及び、解析済みマトリックスファイル  <a name="sdrf_example3"></a>
@@ -92,6 +94,7 @@ Two-color マイクロアレイ
 | Source 3    | P-GEAD-20    | Sequencing 3 | DRR000003       | Processed3.txt          | Processed-matrix.txt           |
 | Source 4    | P-GEAD-20    | Sequencing 4 | DRR000004       | Processed4.txt          | Processed-matrix.txt           |
 
+{: .tablecaption}
 サンプル毎の次世代シークエンス DRA 生データ (Run) と解析済みデータファイル、及び、解析済みマトリックスファイル
 
 ## MAGE-TAB 実際の例
@@ -111,4 +114,5 @@ Two-color マイクロアレイ
 | [E-GEOD-26444](https://www.ebi.ac.uk/arrayexpress/experiments/E-GEOD-26444) | [idf text](https://www.ebi.ac.uk/arrayexpress/files/E-GEOD-26444/E-GEOD-26444.idf.txt) | [sdrf text](https://www.ebi.ac.uk/arrayexpress/files/E-GEOD-26444/E-GEOD-26444.sdrf.txt) | Deep sequencing-based analysis of the anaerobic stimulon                                                                 | SOLiD sequencing              |
 | [E-GEOD-24366](https://www.ebi.ac.uk/arrayexpress/experiments/E-GEOD-24366) | [idf text](https://www.ebi.ac.uk/arrayexpress/files/E-GEOD-24366/E-GEOD-24366.idf.txt) | [sdrf text](https://www.ebi.ac.uk/arrayexpress/files/E-GEOD-24366/E-GEOD-24366.sdrf.txt) | Global changes following N-deprivation in Chlamydomonas                                                                  | 454 sequencing                |
 
+{: .tablecaption}
 MAGE-TAB 実際の例

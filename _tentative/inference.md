@@ -16,7 +16,6 @@ The /inference qualifier provides a structured description of non-experimental e
   - The following table presents recommended acronyms for commonly cited
     resources
 
-
 | Name of data resource/tool                                              | Recommended acronym |
 | ----------------------------------------------------------------------- | ------------------- |
 | International Nucleotide Sequence Database                              | INSD                |
@@ -32,3 +31,4 @@ The /inference qualifier provides a structured description of non-experimental e
 | PubMed Identifier (citations)                                           | PMID                |
 
 Revised August 9, 2012
+{: .tablecaption}
