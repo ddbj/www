@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: INSDC
+title: page-access
 pathname: insdc
 category: _aboutus
 ---
