@@ -154,7 +154,7 @@ WABI の BLAST検索ジョブ は、 BLAST検索結果を元にしてグラフ�
 
 <script src="https://gist.github.com/ddbj-repo/d2ead08e9b9664418c34e292392f1ca8.js"></script>
 
-- blast\_condition.fasta
+- blast_condition.fasta
 
 ``` 
 >my query sequence 1
@@ -163,7 +163,7 @@ GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
 GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
 ```
 
-- blast\_condition.txt  
+- blast_condition.txt  
 
 [コード](https://gist.github.com/ddbj-repo/22e92ce2e085be3f34fe072298241639)
 
@@ -227,7 +227,7 @@ $ java -classpath 'target/wabi-client-1.jar:target/wabi-client-1-jar-with-depend
 
 <script src="https://gist.github.com/ddbj-repo/b2f7e3ac56745a63b719908945518d4c.js"></script>
 
-- blast\_condition.fasta
+- blast_condition.fasta
 
 ``` 
 >my query sequence 1
@@ -236,7 +236,7 @@ GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
 GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
 ```
 
-- blast\_condition.txt  
+- blast_condition.txt  
 
 [コード](https://gist.github.com/ddbj-repo/22e92ce2e085be3f34fe072298241639)
 
@@ -286,7 +286,7 @@ $ perl example.pl
 
 <script src="https://gist.github.com/ddbj-repo/aa94320d3ab88ae27e53371868885cfd.js">
 
-- blast\_condition.fasta
+- blast_condition.fasta
   
   ``` 
   >my query sequence 1
@@ -295,7 +295,7 @@ $ perl example.pl
   GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
   ```
 
-- blast\_condition.txt  
+- blast_condition.txt  
   [コード](https://gist.github.com/ddbj-repo/22e92ce2e085be3f34fe072298241639)
   
   ``` 
@@ -320,7 +320,7 @@ $ perl example.pl
 
 #### 実行結果例
 
-- wabi\_blast\_2013-0606-1336-31-681-634313.txt
+- wabi_blast_2013-0606-1336-31-681-634313.txt
   <script src="https://gist.github.com/ddbj-repo/aea641167c10b4c56ec08b1c4e230f2a.js"></script>
 
 [« 閉じる](javascript:void(0)){: .close-btn}
