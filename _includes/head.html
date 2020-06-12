@@ -17,4 +17,10 @@
     <script src="{{ site.url }}{{ site.baseurl }}/assets/js/main.js"></script>
     <script></script>
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/main.css" />
+    {% assign jsonld_path = page.id | replace: "/", "_" %}
+    {% if site.data.jsonld[ jsonld_path ] %}
+    <script type="application/ld+json">
+      {{ site.data.jsonld[ jsonld_path ] }}
+    </script>
+    {% endif %}
   </head>
