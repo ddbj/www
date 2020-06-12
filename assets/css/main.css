@@ -334,6 +334,8 @@ input, textarea, select, button {
     overflow: auto; }
   .md-content img {
     width: 100%; }
+  .md-content .size-optimize img {
+    width: auto; }
   .md-content .w40 {
     width: 40px; }
   .md-content > p, .md-content > table, .md-content > ol, .md-content > ul, .md-content > dl, .md-content > .highlighter-rouge {
@@ -401,11 +403,17 @@ input, textarea, select, button {
       font-weight: bold; }
     .md-content dl + dt {
       margin-top: 1rem; }
-  .md-content .tablecaption {
-    font-size: 1.4rem;
-    color: #6E5C3E;
-    margin-bottom: 0.5rem;
+  .md-content caption, .md-content figcaption, .md-content .tablecaption {
+    caption-side: bottom;
+    font-size: 1.2rem;
+    color: #666;
     text-align: left;
+    line-height: initial; }
+  .md-content caption, .md-content figcaption {
+    margin-top: .5rem;
+    margin-bottom: 3.5rem; }
+  .md-content .tablecaption {
+    margin-bottom: .5rem;
     display: block;
     margin-top: 3.5rem; }
   .md-content table {

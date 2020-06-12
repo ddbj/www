@@ -8,6 +8,9 @@ $MARGIN_BOTTOM: 1rem
 
   img
     width: 100%
+  .size-optimize
+    img
+      width: auto
   .w40
     width: 40px
   > p, > table, > ol, > ul, > dl, > .highlighter-rouge
@@ -84,11 +87,17 @@ $MARGIN_BOTTOM: 1rem
     + dt
       margin-top: 1rem
 
-  .tablecaption
-    font-size: 1.4rem
-    color: #6E5C3E
-    margin-bottom: 0.5rem
+  caption,figcaption,.tablecaption
+    caption-side: bottom
+    font-size: 1.2rem
+    color: #666
     text-align: left
+    line-height: initial
+  caption,figcaption
+    margin-top: .5rem
+    margin-bottom: 3.5rem
+  .tablecaption
+    margin-bottom: .5rem
     display: block
     margin-top: 3.5rem
   table
