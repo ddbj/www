@@ -23,11 +23,11 @@ BioProject または BioSample データベースを検索し、目的のレコ�
 [DDBJ](/ddbj/index.html)、[DRA](/dra/index.html)
 に登録されている関連する実験データを得ることができます。
 
-![BioSample と他の DDBJ
-データベースとの連携]({{ site.baseurl }}/assets/images/submission/biosample_integration.jpg
-"BioSample と他の DDBJ データベースとの連携")
+![BioSample と他の DDBJ データベースとの連携]({{ site.baseurl }}/assets/images/submission/biosample_integration.jpg "BioSample と他の DDBJ データベースとの連携")
 
-
+{::nomarkdown}
+{% include image.html url="submission/biosample_integration.jpg" caption="BioSample と他の DDBJ データベースとの連携" %}
+{:/}
 
 
 
@@ -360,36 +360,19 @@ schema](https://github.com/ddbj/pub/tree/master/docs/biosample)
     登録を準備する際は[属性のリスト](/biosample/attribute.html)や[登録例](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482)を参照し、該当する項目を入力してください。
     リストにない情報を持っている場合はユーザが定義した独自の属性をタブ区切りテキストファイルの末尾に追加することができます。
 
-
-
-
-
 ### Overview
 
   - [Overview](#BioSample_Overview)  
     登録内容を確認し問題がなければ一番下の Submit ボタンをクリックしてサンプルを投稿してください。 "Submission
     ID.txt" ファイルでアップロードしたサンプル属性の内容をダウンロードすることができます。
 
-
-
-
-
-
-
-
-
 # BioSample への登録
 
-
-  <div class="attention red">
-  - ヒトを対象とした研究データの登録について  
-    研究対象者に由来するデータを DDBJ
-    センターが運営するデータベースに登録する場合、研究対象者の尊厳及び人権は、適用されるべき法令、指針、ガイドライン、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。原則として、研究対象者を直接特定し得る情報はメタデータから取り除いてください。  
-    ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#human)を熟読してください。
+  {::options parse_block_html="true" /}
+  <div class="attention">
+  ヒトを対象とした研究データの登録について
+  : <span class="red">研究対象者に由来するデータを DDBJ センターが運営するデータベースに登録する場合、研究対象者の尊厳及び人権は、適用されるべき法令、指針、ガイドライン、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。原則として、研究対象者を直接特定し得る情報はメタデータから取り除いてください。ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#human)を熟読してください。</span>
   </div>
-
-
-
 
 ## サンプルの登録
 

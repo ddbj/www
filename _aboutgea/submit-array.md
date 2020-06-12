@@ -6,12 +6,12 @@ category: aboutgea
 pdf: https://www.ddbj.nig.ac.jp/pdf/gea/submit-array.pdf
 ---
 
-## GEA登録の流れ
+## GEA 登録の流れ
 
 ### 1\. 登録アカウントを取得
 
   - [D-way 登録アカウント](https://ddbj.nig.ac.jp/D-way/)を作成
-  - [公開鍵と center nameをアカウントに登録](/account.html#enable-dra-submission-in-account)しGEA登録を可能に
+  - [公開鍵と center nameをアカウントに登録](/account.html#enable-dra-submission-in-account)しGEA 登録を可能に
 
 ### 2\. BioProjectとBioSampleを登録
 
@@ -30,13 +30,13 @@ pdf: https://www.ddbj.nig.ac.jp/pdf/gea/submit-array.pdf
 
 ### 3\. 生データと解析済みデータファイルをアップロード
 
-  - GEA登録用ディレクトリに生データと解析済みデータファイルをアップロード
-  - \[必要であれば\] アレイデザインが[ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEAに未登録の場合、GEA登録用ディレクトリにデータファイルと一緒にアレイデザインファイルをアップロード
+  - GEA 登録用ディレクトリに生データと解析済みデータファイルをアップロード
+  - \[必要であれば\] アレイデザインが[ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA に未登録の場合、GEA 登録用ディレクトリにデータファイルと一緒にアレイデザインファイルをアップロード
 
 ### 4\. BioProjectとBioSampleを選択
 
-  - GEA登録で参照するBioProjectを一つ選択
-  - GEA登録で参照する複数BioSampleを選択。通常のGEA登録は一つ以上のサンプルで構成されます
+  - GEA 登録で参照するBioProjectを一つ選択
+  - GEA 登録で参照する複数BioSampleを選択。通常のGEA 登録は一つ以上のサンプルで構成されます
 
 ### 5\. IDFとSDRFを作成
 
@@ -62,26 +62,26 @@ pdf: https://www.ddbj.nig.ac.jp/pdf/gea/submit-array.pdf
 
 #### [Two-color microarray experiment](javascript:void\(0\))
 
-GEA登録インターフェースは二つのサンプルが一つの生データファイルにリンクしているタイプのtwo-colorワークフローのみをサポートしています([例を参照](/gea/example.html#sdrf_example2))。IDFタブでdual-channelオプションが選択された場合、同時にハイブリダイズした二サンプルに由来する一つのデータファイルが提供されることを想定しています。いくつかのtwo-colorマイクロアレイプラットフォームでは通常それぞれのチャンネルに対応した別々の生データファイルが生成されます。このようなケースでそれぞれのサンプルに一つのファイルを結びつけると検証処理でエラーになります。
+GEA 登録インターフェースは二つのサンプルが一つの生データファイルにリンクしているタイプのtwo-colorワークフローのみをサポートしています([例を参照](/gea/example.html#sdrf_example2))。IDFタブでdual-channelオプションが選択された場合、同時にハイブリダイズした二サンプルに由来する一つのデータファイルが提供されることを想定しています。いくつかのtwo-colorマイクロアレイプラットフォームでは通常それぞれのチャンネルに対応した別々の生データファイルが生成されます。このようなケースでそれぞれのサンプルに一つのファイルを結びつけると検証処理でエラーになります。
 
-各チャンネルに対応した別々のファイルを登録する場合は[GEAチームに連絡](/contact.html)してください。
+各チャンネルに対応した別々のファイルを登録する場合は[GEA チームに連絡](/contact.html)してください。
 
 #### [Single-cell sequencing experiment](javascript:void\(0\))
 
-[ArrayExpress Single-cell submissionguide](https://www.ebi.ac.uk/arrayexpress/help/single-cell_submission_guide.html)を参照してください。spike-inやデータ解析に必要な追加ファイルを登録する場合は[GEAチームに連絡](/contact.html)してください。
+[ArrayExpress Single-cell submissionguide](https://www.ebi.ac.uk/arrayexpress/help/single-cell_submission_guide.html)を参照してください。spike-inやデータ解析に必要な追加ファイルを登録する場合は[GEA チームに連絡](/contact.html)してください。
 
 #### [More than one technology per experiment](javascript:void\(0\))
 
-GEAでは一つの登録に異なる種類のテクノロジー（マイクロアレイとシークエンシング）を含めることはできないため登録を分ける必要があります。間違いを防ぐためそれぞれの登録には同じ研究に属していても明確に区別できるタイトルを付けてください。
-一つの登録に異なるアレイデザインを含めることは可能なので、このような場合は[GEAチームに連絡](/contact.html)してください。
+GEA では一つの登録に異なる種類のテクノロジー（マイクロアレイとシークエンシング）を含めることはできないため登録を分ける必要があります。間違いを防ぐためそれぞれの登録には同じ研究に属していても明確に区別できるタイトルを付けてください。
+一つの登録に異なるアレイデザインを含めることは可能なので、このような場合は[GEA チームに連絡](/contact.html)してください。
 
 ## Microarray experiment の登録
 
 ### 新規登録の作成
 
-[D-way(https://trace.ddbj.nig.ac.jp/D-way)](https://ddbj.nig.ac.jp/D-way/)にログインするとトップページが表示されます。上部の GEAメニューから GEA登録サイトに移動します。
+[D-way(https://trace.ddbj.nig.ac.jp/D-way)](https://ddbj.nig.ac.jp/D-way/)にログインするとトップページが表示されます。上部の GEA メニューから GEA 登録サイトに移動します。
 
-"Microarray"を選択した状態で\[New submission\]をクリックしてmicroarray experimentsubmissionを作成します。作成と同時にDDBJファイルサーバ(ftp-private.ddbj.nig.ac.jp)に対応するGEA登録用サブディレクトリが登録者のホーム下に作成されます。このサブディレクトリに[データファイルをアップロード](#upload-data)します。
+"Microarray"を選択した状態で\[New submission\]をクリックしてmicroarray experimentsubmissionを作成します。作成と同時にDDBJファイルサーバ(ftp-private.ddbj.nig.ac.jp)に対応するGEA 登録用サブディレクトリが登録者のホーム下に作成されます。このサブディレクトリに[データファイルをアップロード](#upload-data)します。
 
 {::options parse_block_html="true"/}
 <div class="attention red">
@@ -114,13 +114,13 @@ DDBJセンターから登録者に問い合わせた後三か月以上回答が�
 ファイルをSCP転送します。
 
 ```
-$ scp <Your Files> <D-way Login ID>@ftp-private.ddbj.nig.ac.jp:~/gea/<GEASubmission ID>
+$ scp <Your Files> <D-way Login ID>@ftp-private.ddbj.nig.ac.jp:~/gea/<GEA Submission ID>
 ```
 
   - \<Your Files\> 転送するファイル。例:file1 file2(file1とfile2)、file\*
   (fileではじまる全てのファイル)
   - \<D-way Login ID\>D-wayのLogin ID(例 test07)
-  - \<GEASubmission ID\> GEA登録のSubmissionID(例:ESUB000350)
+  - \<GEA Submission ID\> GEA 登録のSubmissionID(例:ESUB000350)
   - コマンドの例:scp strainA\_1.fastq test07@ftp-private.ddbj.nig.ac.jp:\~/gea/ESUB000350
 
 鍵を作成したときに指定したパスフレーズを入力します。
@@ -154,6 +154,8 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 ```
 
 #### [WinSCPによるシークエンスデータの転送(Windows)](javascript:void\(0\))
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZxIfewrk8lI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [](//www.youtube-nocookie.com/embed/ZxIfewrk8lI?autohide=1&iv_load_policy=3&modestbranding=1&rel=0&wmode=transparent&autoplay=1 "DRAへの登録 ～データの転送(Windows)～")
 
@@ -193,6 +195,8 @@ DRAへの登録～データの転送(Windows)～
 転送したファイルは、ファイルを選択し\[削除\]ボタンをクリックすることで削除できます。
 
 #### [Cyberduck によるシークエンスデータの転送(Mac OS X)](javascript:void\(0\))
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A2hPlGZEW_o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [](//www.youtube-nocookie.com/embed/A2hPlGZEW_o?autohide=1&iv_load_policy=3&modestbranding=1&rel=0&wmode=transparent&autoplay=1 "DRAへの登録 ～データの転送(Mac)～")
 
@@ -248,17 +252,17 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 自身のアカウントで登録済みのBioProjectを一つ選択します。BioProjectが未登録の場合は[BioProject登録サイト](/bioproject/submission.html#bioproject-submission)でプロジェクトを登録します。
 
-他のアカウントで登録されたBioProjectを参照したい場合は[GEAチームに連絡](/contact.html)します。
+他のアカウントで登録されたBioProjectを参照したい場合は[GEA チームに連絡](/contact.html)します。
 
-![GEA登録で使う BioProjectを一つ選択します]({{ site.baseurl }}/assets/images/books/gea-bp.jpg "GEA登録で使う BioProjectを一つ選択します")
+![GEA 登録で使う BioProjectを一つ選択します]({{ site.baseurl }}/assets/images/books/gea-bp.jpg "GEA 登録で使う BioProjectを一つ選択します")
 
 ### BioSample
 
 自身のアカウントで登録済みのBioSampleを選択します。BioSample が未登録の場合は[BioSample登録サイト](/biosample/submission.html#biosample-submission)でサンプルを登録します。
 
-他のアカウントで登録されたBioSampleを参照したい場合は[GEAチームに連絡](/contact.html)します。
+他のアカウントで登録されたBioSampleを参照したい場合は[GEA チームに連絡](/contact.html)します。
 
-![GEA登録で使うBioSampleを選択します]({{ site.baseurl }}/assets/images/books/gea-bs.jpg "GEA登録で使うBioSampleを選択します")
+![GEA 登録で使うBioSampleを選択します]({{ site.baseurl }}/assets/images/books/gea-bs.jpg "GEA 登録で使うBioSampleを選択します")
 
 ### IDF
 
@@ -268,7 +272,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
   - Protocol:チェック済みのプロトコールは必須です
   - Publication: 関連する文献を PubMed IDもしくはDOIで指定します。未公表の文献についてはIDが発行された後に[お知らせください](/contact.html)。
-  - Array Design: [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEAにアレイデザインが登録されている場合は"A-XXXX-n"のアクセッション番号を記入します。アレイデザインが未登録の場合はGEA登録用ディレクトリにアレイデザインファイルをアップロードして[新規アレイデザインを登録](/gea/adf.html)します。
+  - Array Design: [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA にアレイデザインが登録されている場合は"A-XXXX-n"のアクセッション番号を記入します。アレイデザインが未登録の場合はGEA 登録用ディレクトリにアレイデザインファイルをアップロードして[新規アレイデザインを登録](/gea/adf.html)します。
   - Data File Type: マイクロアレイ実験の場合は生データと解析済みデータが必須です。サンプル毎の生データ・解析済みデータファイルの登録を強く推奨します[マイクロアレイ実験に登録可能なファイル形式](/gea/datafile.html#array_data)。
 
 ![IDFの内容を入力]({{ site.baseurl }}/assets/images/books/array-idf.jpg "IDFの内容を入力")
@@ -305,7 +309,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
   - Label: biotin、Cy3やCy5等の抽出分子を標識したラベル化合物名を記入します。
   - Array Data FileとComment\[Array Data File md5\]: 生データファイルのファイル名と[md5 チェックサム値](#supplement-md5)の組を記入します。
   - Derived Array Data File と Comment\[Derived Array Data File md5\]: 解析済みデータファイルのファイル名と[md5 チェックサム値](#supplement-md5)の組を記入します。
-  - データファイルとmd5チェックサム値の組は[md5sum コマンド](#supplement-md5)の結果を\<GEAsubmission ID\>.md5(例 ESUB000001.md5)ファイルとしてデータファイルと一緒に提供することもできます（SDRFと .md5 ファイルの両方がある場合は.md5の値が優先されます）。
+  - データファイルとmd5チェックサム値の組は[md5sum コマンド](#supplement-md5)の結果を\<GEA submission ID\>.md5(例 ESUB000001.md5)ファイルとしてデータファイルと一緒に提供することもできます（SDRFと .md5 ファイルの両方がある場合は.md5の値が優先されます）。
   - Factor Value\[enter experiment factor name here\]: 実験で研究している「要因」。growthcondition、genotype、organism part 等の研究で解析している変数のことです。これらの変数の実際の値は"Factor Value\[\]"カラムに記載します。例:
       - Factor Value\[strain\]
       - AT76
@@ -336,11 +340,11 @@ Validatorは[validation rule](/gea/validation.html)に従ってメタデータ�
 
 ### アクセッション番号
 
-完成したGEAexperimentに対して[GEAアクセッション番号](/gea/overview.html#acc)が発行されます。
+完成したGEA experimentに対して[GEA アクセッション番号](/gea/overview.html#acc)が発行されます。
 
 [査読者用トークンを発行](/gea/reviewer-access.html)することでの非公開データへのアクセスを提供することができます。
 
-![GEAアクセッション番号]({{ site.baseurl }}/assets/images/books/array-accession.jpg "GEAアクセッション番号")
+![GEA アクセッション番号]({{ site.baseurl }}/assets/images/books/array-accession.jpg "GEA アクセッション番号")
 
 ## 更新
 
@@ -363,7 +367,7 @@ Validatorは[validation rule](/gea/validation.html)に従ってメタデータ�
 <td><a href="https://ddbj.nig.ac.jp/D-way/">D-way にログインして登録者自身で更新</a><br />
 <a href="/contact.html">(配列データの追加や削除はウェブフォームから依頼)</a></td>
 </tr>
-<td>Genomic Expression Archive(GEA)</td>
+<td>Genomic Expression Archive(GEA )</td>
 <td><a href="/contact.html">ウェブフォームから依頼</a></td>
 <tr class="even">
 <td>BioProject/BioSample</td>
@@ -374,7 +378,7 @@ Validatorは[validation rule](/gea/validation.html)に従ってメタデータ�
 
 ### アーカイブされた experiment の削除
 
-アーカイブされた Experiment を削除する場合は [GEAチームに連絡](/contact.html)します。
+アーカイブされた Experiment を削除する場合は [GEA チームに連絡](/contact.html)します。
 
 ## 補足: MD5値
 
