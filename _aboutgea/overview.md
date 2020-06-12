@@ -13,14 +13,12 @@ GEA はマイクロアレイや次世代シークエンサから出力される�
 マイクロアレイとシークエンシング実験の submission はそれぞれ [MIAME](http://fged.org/projects/miame/) と [MINSEQE](http://fged.org/projects/minseqe/) ガイドラインに準拠する必要があります。
 
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
+
+<tr>
 <th>GEA が受付けているデータ</th>
 <th>GEA が受付けていないデータ</th>
-</thead>
+</tr>
+
 <tbody>
 <td>
 <p>定量的な遺伝子発現、遺伝子発現制御やエピジェネティクス解析をしている研究やその他の機能ゲノミクス研究から得られたデータ。</p>
@@ -34,6 +32,7 @@ GEA はマイクロアレイや次世代シークエンサから出力される�
 </ul>
 <p>データが GEA に登録可能かどうか不明な場合は<a href="/contact.html">お問い合わせください</a>。</p>
 </td>
+
 <td>
 <ul>
 <li>アクセス制限が必要なヒトデータ (<a href="/jga/index.html">JGA</a> に登録してください)</li>
@@ -44,7 +43,8 @@ GEA はマイクロアレイや次世代シークエンサから出力される�
 <li>survey シークエンスやエキソームシークエンス (<a href="/dra/submission.html">DRA</a> に登録してください)</li>
 <li>メタボロミクスやプロテオミクスデータ (プロテオミクスデータは <a href="https://jpostdb.org/">jPOST</a> に登録してください)</li>
 </ul>
-<p>これらのデータの登録先については <a href="/submission.html">DDBJ ウェブサイト</a>を参照してください。</p></td>
+<p>これらのデータの登録先については <a href="/submission.html">DDBJ ウェブサイト</a>を参照してください。</p>
+</td>
 </tbody>
 </table>
 

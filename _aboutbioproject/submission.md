@@ -15,7 +15,9 @@ pdf: https://www.ddbj.nig.ac.jp/pdf/bioproject/submission.pdf
 BioProject は研究プロジェクトと [INSDC](http://www.insdc.org/)が運営するデータベースに存在するデータを管理します。
 BioProject によりプロジェクトの種類や特徴といった項目でデータベースを横断してデータを検索することができるようになります。
 
-![BioProject/BioSample と他の DDBJ データベースとの連携]({{ site.baseurl }}/assets/images/submission/biosample_integration.jpg "BioSample と他の DDBJ データベースとの連携")
+{::nomarkdown}
+{% include image.html url="submission/biosample_integration.jpg" caption="BioSample と他の DDBJ データベースとの連携" %}
+{:/}
 
 ### プロジェクト
 
@@ -68,7 +70,9 @@ BioProject は同じプロジェクトに由来するデータ，それからま
 
 いくつかの大規模プロジェクトを１つ以上のアンブレラプロジェクトで表すことができます。最上位レベルで共同研究プロジェクト全体を表し，二段目で産出されるデータの種類に対してアンブレラプロジェクトを作成，最後の三段目で実際に登録されるデータにリンクされるプライマリープロジェクトを作成する，といった構成です。
 
-![階層構造の模式図。(A)二階層 (B)三階層]({{ site.baseurl }}/assets/images/submission/bp_org.jpg "階層構造の模式図。(A)二階層 (B)三階層")
+{::nomarkdown}
+{% include image.html url="submission/bp_org.jpg" caption="階層構造の模式図。(A)二階層 (B)三階層" %}
+{:/}
 
   : 二階層 (A)  
     コンソーシアムは１つのアンブレラプロジェクトとデータにリンクされた１つ以上のプライマリープロジェクトから構成されます。例: [Neanderthal Metagenome](https://www.ncbi.nlm.nih.gov/bioproject/18309)
@@ -78,7 +82,9 @@ BioProject は同じプロジェクトに由来するデータ，それからま
 
 ### データ公開
 
-![プライマリープロジェクトとデータレコードの公開の仕組み]({{ site.baseurl }}/assets/images/submission/release_re.jpg "プライマリープロジェクトとデータレコードの公開の仕組み")
+{::nomarkdown}
+{% include image.html url="submission/release_re.jpg" caption="プライマリープロジェクトとデータレコードの公開の仕組み" %}
+{:/}
 
 DDBJ BioProject に登録されたプライマリープロジェクトは「即日公開」もしくは「非公開」にすることができます。
 
@@ -86,7 +92,9 @@ DDBJ BioProject に登録されたプライマリープロジェクトは「即�
 
 FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp_bs_seq_release.html)
 
-![アンブレラプロジェクトとプライマリープロジェクト間の関係の可視性]({{ site.baseurl }}/assets/images/submission/um_pri_visibility.jpg "アンブレラプロジェクトとプライマリープロジェクト間の関係の可視性")
+{::nomarkdown}
+{% include image.html url="submission/um_pri_visibility.jpg" caption="アンブレラプロジェクトとプライマリープロジェクト間の関係の可視性" %}
+{:/}
 
 <span class="red">アンブレラプロジェクトは非公開にすることができません。</span>  
 アンブレラプロジェクトは公開されているプライマリープロジェクトと非公開のプロジェクトの両者を持つことができます。第三者は公開されているアンブレラプロジェクトと非公開のプライマリープロジェクト間の関係を見ることはできません。
@@ -829,11 +837,15 @@ BioProject への登録は次のような場合は必須ではありません。
 DDBJ センターから登録者に問い合わせた後三か月以上回答が無い場合は Submission をキャンセルいたします。
 </div>
 
-![BioProject の新規登録作成]({{ site.baseurl }}/assets/images/books/hbp-01.jpg "BioProject の新規登録作成")
+{::nomarkdown}
+{% include image.html url="books/hbp-01.jpg" caption="BioProject の新規登録作成" %}
+{:/}
 
 BioProject を新規登録する場合は左のタブから順番に内容を英語で入力していきます。 [各項目の説明](#metadata)
 
-![プロジェクトの入力]({{ site.baseurl }}/assets/images/books/hbp-02.jpg "プロジェクトの入力")
+{::nomarkdown}
+{% include image.html url="books/hbp-02.jpg" caption="プロジェクトの入力" %}
+{:/}
 
 ゲノムをアセンブルするプロジェクトでは，アセンブリに対してユニークな [Locus tag prefix](/ddbj/locus_tag.html) が必要です。
 
@@ -849,11 +861,15 @@ prefix は NCBI が一括管理しています。プロジェクトを投稿す�
 複数の prefix の取得を希望する場合は [BioProject チームに連絡します](/contact.html)。
 </div>
 
-![Locus tag prefix の取得]({{ site.baseurl }}/assets/images/books/hbp-03.jpg "Locus tag prefix の取得")
+{::nomarkdown}
+{% include image.html url="books/hbp-03.jpg" caption="Locus tag prefix の取得" %}
+{:/}
 
 最後の "OVERVIEW" で内容を確認したうえで \[Submit\] をクリックして投稿します。
 
-![BioProject の投稿]({{ site.baseurl }}/assets/images/books/hbp-04.jpg "BioProject の投稿")
+{::nomarkdown}
+{% include image.html url="books/hbp-04.jpg" caption="BioProject の投稿" %}
+{:/}
 
 "OVERVIEW" には初回投稿時の内容が表示され続けます。登録後の更新は反映されませんので，ご注意ください。
 
@@ -870,13 +886,17 @@ prefix は NCBI が一括管理しています。プロジェクトを投稿す�
 
 アンブレラプロジェクトは通常のプライマリープロジェクトと同様 [D-way](https://ddbj.nig.ac.jp/D-way/) から登録します。 <span class="red">登録の際には必ず [Private comments to DDBJ staff](#Private_comments) にこの登録がアンブレラであることを記入し DDBJ BioProject チームに伝えてください。 </span>アンブレラプロジェクトを非公開にすることはできません。
 
-![アンブレラプロジェクトの登録]({{ site.baseurl }}/assets/images/books/hbp-05.jpg "アンブレラプロジェクトの登録")
+{::nomarkdown}
+{% include image.html url="books/hbp-05.jpg" caption="アンブレラプロジェクトの登録" %}
+{:/}
 
 ### アンブレラプロジェクトへのリンク
 
 プライマリープロジェクトを登録する際，[Umbrella BioProject](#Area_linked-project) にリンクすべきアンブレラプロジェクトの概要とアクセッション番号を記入します。 BioProject スタッフは記入内容をみて，プロジェクトをアンブレラにリンクする作業を行います。
 
-![アンブレラへのリンク]({{ site.baseurl }}/assets/images/books/hbp-06.jpg "アンブレラへのリンク")
+{::nomarkdown}
+{% include image.html url="books/hbp-06.jpg" caption="アンブレラへのリンク" %}
+{:/}
 
 ### プロジェクトの公開
 
