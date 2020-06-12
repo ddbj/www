@@ -8,14 +8,9 @@ pdf: https://www.ddbj.nig.ac.jp/pdf/gea/overview.pdf
 
 ## 概要
 
-GEA はマイクロアレイや次世代シークエンサから出力される機能ゲノミクスデータを受け付けています。主要な experiment type
-としては transcription profiling (mRNA と miRNA)、chromatin
-immunoprecipitation (ChIP) と SNP genotyping が挙げられます。GEA における experiment
-type の[全リスト](/gea/experiment-types.html)。
+GEA はマイクロアレイや次世代シークエンサから出力される機能ゲノミクスデータを受け付けています。主要な experiment type としては transcription profiling (mRNA と miRNA)、chromatin immunoprecipitation (ChIP) と SNP genotyping が挙げられます。GEA における experiment type の[全リスト](/gea/experiment-types.html)。
 
-マイクロアレイとシークエンシング実験の submission はそれぞれ
-[MIAME](http://fged.org/projects/miame/) と
-[MINSEQE](http://fged.org/projects/minseqe/) ガイドラインに準拠する必要があります。
+マイクロアレイとシークエンシング実験の submission はそれぞれ [MIAME](http://fged.org/projects/miame/) と [MINSEQE](http://fged.org/projects/minseqe/) ガイドラインに準拠する必要があります。
 
 <table>
 <colgroup>
@@ -83,10 +78,7 @@ type の[全リスト](/gea/experiment-types.html)。
 
 ## アクセッション番号
 
-GEA の Experiment と Array design に対して以下の形式のアクセッション番号が発行されます (n
-は整数)。中央の四文字コードについては ArrayExpress [accession
-codes](https://www.ebi.ac.uk/arrayexpress/help/accession_codes.html)
-をご覧ください。
+GEA の Experiment と Array design に対して以下の形式のアクセッション番号が発行されます (n は整数)。中央の四文字コードについては ArrayExpress [accession codes](https://www.ebi.ac.uk/arrayexpress/help/accession_codes.html) をご覧ください。
 
   - Experiment: E-GEAD-n
   - Array design: A-GEAD-n
@@ -99,8 +91,7 @@ codes](https://www.ebi.ac.uk/arrayexpress/help/accession_codes.html)
 
 ## Reviewer access
 
-GEA データベースに非公開 experiment と array design
-が登録された後、登録者は査読者用のアクセストークンを発行することができます。トークンを発行してジャーナルの編集者と査読者に伝える手順については
+GEA データベースに非公開 experiment と array design が登録された後、登録者は査読者用のアクセストークンを発行することができます。トークンを発行してジャーナルの編集者と査読者に伝える手順については
 [reviewer accesss](/gea/reviewer-access.html) ページをご覧ください。
 
 ## 更新
