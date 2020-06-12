@@ -2188,25 +2188,6 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_activities/subscribe.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_activities/subscribe.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
 	"/_activities/training-e.md": {
 		"cB": 0,
 		"cS": 0,
@@ -3367,6 +3348,17 @@
 		"oA": 1,
 		"oAP": "/_javascript/internalLink-min.js",
 		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/_javascript/jquery.charts.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "/assets/js/jquery.charts.js",
+		"oF": 2,
 		"sC": 3,
 		"tS": 0
 		},
@@ -16156,6 +16148,17 @@
 		"oAP": "/assets/js/common_header.js.map",
 		"oF": 0
 		},
+	"/assets/js/jquery.charts.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/assets/js/jquery.charts-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/assets/js/main.js": {
 		"bF": 0,
 		"ft": 64,
@@ -16230,6 +16233,25 @@
 		"oA": 0,
 		"oAP": "/staff.html",
 		"oF": 0
+		},
+	"/subscribe-ddbj.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/subscribe-ddbj.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		}
 	},
 "hooks": [
