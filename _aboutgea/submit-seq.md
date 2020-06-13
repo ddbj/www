@@ -98,7 +98,10 @@ GEA では一つの登録に異なる種類のテクノロジー（マイクロ�
 DDBJ センターから登録者に問い合わせた後三か月以上回答が無い場合は Submission をキャンセルいたします。
 </div>
 
-![Sequencing experiment submissionの新規作成]({{ site.baseurl }}/assets/images/books/array-sub1.jpg "Sequencing experiment submissionの新規作成")
+{::nomarkdown}
+{% include image.html url="books/array-sub1.jpg" caption="Sequencing experiment submissionの新規作成" %}
+{:/}
+
 
 登録のステータスには以下のものがあります。"Data Validated" と "Validation Error" になった登録が査定されます。
 
@@ -257,7 +260,9 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 "Delete submission" で投稿前の登録を削除することができます。
 </div>
 
-![登録管理情報を入力します]({{ site.baseurl }}/assets/images/books/array-sub2.jpg "登録管理情報を入力します")
+{::nomarkdown}
+{% include image.html url="books/array-sub2.jpg" caption="登録管理情報を入力します" %}
+{:/}
 
 ### DRA
 
@@ -265,7 +270,9 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 他のアカウントで登録された DRA を参照したい場合は [GEA チームに連絡](/contact.html)します。
 
-![GEA 登録で使う DRA submission を選択]({{ site.baseurl }}/assets/images/books/seq-dra.jpg "GEA 登録で使う DRA submission を選択")
+{::nomarkdown}
+{% include image.html url="books/seq-dra.jpg" caption="GEA 登録で使う DRA submission を選択" %}
+{:/}
 
 ### BioProject
 
@@ -275,7 +282,9 @@ GEA と DRA submission が同じプロジェクトである場合は DRA submiss
 
 他のアカウントで登録された BioProject を参照したい場合は [GEA チームに連絡](/contact.html)します。
 
-![GEA 登録で使う BioProject を一つ選択します]({{ site.baseurl }}/assets/images/books/gea-bp.jpg "GEA 登録で使う BioProject を一つ選択します")
+{::nomarkdown}
+{% include image.html url="books/gea-bp.jpg" caption="GEA 登録で使う BioProject を一つ選択します" %}
+{:/}
 
 ### IDF
 
@@ -287,11 +296,15 @@ GEA と DRA submission が同じプロジェクトである場合は DRA submiss
   - Publication: 関連する文献を PubMed ID もしくは DOI で指定します。未公表の文献については ID が発行された後に [お知らせください](/contact.html)。
   - Data File Type: シークエンシング実験の場合は解析済みデータが必須です。サンプル毎の解析済みデータファイルの登録を強く推奨します。[シークエンシング実験に登録可能なファイル形式](/gea/datafile.html#seq_data)。
 
-![IDF の内容を入力]({{ site.baseurl }}/assets/images/books/seq-idf.jpg "IDF の内容を入力")
+{::nomarkdown}
+{% include image.html url="books/seq-idf.jpg" caption="IDF の内容を入力" %}
+{:/}
 
 ### SDRF
 
-![SDRF テンプレートファイルをダウンロード]({{ site.baseurl }}/assets/images/books/seq-sdrf-down.jpg "SDRF テンプレートファイルをダウンロード")
+{::nomarkdown}
+{% include image.html url="books/seq-sdrf-down.jpg" caption="SDRF テンプレートファイルをダウンロード" %}
+{:/}
 
 [SDRF (Sample and Data Relationship Format)](/gea/metadata.html#sdrf)
 テンプレートファイルをダウンロードして必要な情報を追加します。
@@ -339,11 +352,15 @@ Enter required fields by overwriting \<Required: fill in the content\> tags.
       - KU-2003
       - KU-PI499262
 
-![SDRF テンプレートの図解、登録者が情報を追加する必要がある部分は黄色で示されている]({{ site.baseurl }}/assets/images/books/seq-sdrf-template.jpg "SDRF テンプレートの図解、登録者が情報を追加する必要がある部分は黄色で示されている")
+{::nomarkdown}
+{% include image.html url="books/seq-sdrf-template.jpg" caption="SDRF テンプレートの図解、登録者が情報を追加する必要がある部分は黄色で示されている" %}
+{:/}
 
 内容を追加した SDRF を選択して Continue をクリックします。
 
-![作成した SDRF ファイルを選択]({{ site.baseurl }}/assets/images/books/seq-sdrf-up.jpg "作成した SDRF ファイルを選択")
+{::nomarkdown}
+{% include image.html url="books/seq-sdrf-up.jpg" caption="作成した SDRF ファイルを選択" %}
+{:/}
 
 ### Overview と投稿
 
@@ -351,7 +368,9 @@ Enter required fields by overwriting \<Required: fill in the content\> tags.
 
 "Submit" ボタンをクリックして IDF と SDRF を投稿します。
 
-![IDF と SDRF の内容を確認してから投稿]({{ site.baseurl }}/assets/images/books/seq-submit.jpg "IDF と SDRF の内容を確認してから投稿")
+{::nomarkdown}
+{% include image.html url="books/seq-submit.jpg" caption="IDF と SDRF の内容を確認してから投稿" %}
+{:/}
 
 ### 検証処理
 
@@ -359,7 +378,9 @@ Enter required fields by overwriting \<Required: fill in the content\> tags.
 
 Validator は [validation rule](/gea/validation.html) に従ってメタデータをチェックしエラーとワーニングメッセージを表示します。メタデータを投稿するためにはエラーを解消しておく必要があります。
 
-![エラーとワーニングメッセージ]({{ site.baseurl }}/assets/images/books/seq-validation.jpg "エラーとワーニングメッセージ")
+{::nomarkdown}
+{% include image.html url="books/seq-validation.jpg" caption="エラーとワーニングメッセージ" %}
+{:/}
 
 
 ### アクセッション番号
@@ -368,7 +389,9 @@ Validator は [validation rule](/gea/validation.html) に従ってメタデー�
 
 [査読者用トークンを発行](/gea/reviewer-access.html)することでの非公開データへのアクセスを提供することができます。
 
-![GEA アクセッション番号]({{ site.baseurl }}/assets/images/books/seq-accession.jpg "GEA アクセッション番号")
+{::nomarkdown}
+{% include image.html url="books/seq-accession.jpg" caption="GEA アクセッション番号" %}
+{:/}
 
 ## 更新
 

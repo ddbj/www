@@ -16,7 +16,7 @@ BioProject は研究プロジェクトと [INSDC](http://www.insdc.org/)が運�
 BioProject によりプロジェクトの種類や特徴といった項目でデータベースを横断してデータを検索することができるようになります。
 
 {::nomarkdown}
-{% include image.html url="submission/biosample_integration.jpg" caption="BioSample と他の DDBJ データベースとの連携" %}
+{% include image.html url="submission/biosample_integration.jpg" caption="BioProject/BioSample と他の DDBJ データベースとの連携" %}
 {:/}
 
 ### プロジェクト
@@ -710,7 +710,6 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
     文献の PubMed ID(s)。
 
     ```
-    example_xml term
     <Publication id="15557739">
         <DbType>ePubmed</DbType>
     </Publication>
@@ -723,7 +722,6 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
     PubMed ID がない場合は DOI を記入し，さらに文献に関する以下の情報を記入します。
 
     ```
-    example_xml term
     <Publication id="10.1093/nar/gku1120">
         <DbType>eDOI</DbType>
     </Publication>
