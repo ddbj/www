@@ -337,7 +337,10 @@ input, textarea, select, button {
   .md-content .size-optimize img {
     width: auto; }
   .md-content .w40 {
-    width: 40px; }
+    width: 4rem; }
+  .md-content .pdf {
+    width: 2.5rem;
+    height: 2.5rem; }
   .md-content > p, .md-content > table, .md-content > ol, .md-content > ul, .md-content > dl, .md-content > .highlighter-rouge {
     margin-bottom: 1rem; }
   .md-content .red {

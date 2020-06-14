@@ -139,7 +139,7 @@ DDBJ-challenge.mat以外の外部データ利用は許可されていますか�
 パラメータ(注1)の外部利用＝可  
 転移学習用Pretrained Modelの利用＝可(注2)  
 (注1)＝馬場博士スライドp.15参照
-[![]({{ site.baseurl }}/assets/images/parts/pdf_icon.svg)](https://drive.google.com/file/d/1EmJMw_4cDUTcm_A5kx5U75G5JZrE2rWH/edit)  
+[![]({{ site.baseurl }}/assets/images/parts/pdf_icon.svg){:.pdf}](https://drive.google.com/file/d/1EmJMw_4cDUTcm_A5kx5U75G5JZrE2rWH/edit)<br>
 (注2)＝不正を防ぐ為に、外部入力配列は植物を禁止します
 
 testデータを訓練に使用(semi-supervised learning)して良いですか？  
