@@ -42,12 +42,14 @@ fastq形式ファイルのQSを各種グラフで参照できます。fastq形�
 | 5 | [Status - Preprocessing/Mapping/*de novo* Assembly](#Status)  | 実行ジョブstatus確認                                                                                                                                          |
 | 6 | [Detail view](#View)                                          | fastqファイル, QS Average(PDF), QS Count(PDF), QS Error(PDF)                                                                                               |
 
-  - \+ fastqファイル  
-    read編集（指定QS未満をトリム他、各種条件による選別）、片側のみのpaired-endリード削除
-  - \+ QS Average(PDF),　QS Count(PDF)  
-    編集前のQSの平均と標準偏差を計算、グラフ作成
-  - \+ QS Error(PDF)  
-    編集後のリード位置毎の削除割合を計算、グラフ作成
+\+ fastqファイル  
+: read編集（指定QS未満をトリム他、各種条件による選別）、片側のみのpaired-endリード削除
+
+\+ QS Average(PDF),　QS Count(PDF)  
+: 編集前のQSの平均と標準偏差を計算、グラフ作成
+
+\+ QS Error(PDF)  
+: 編集後のリード位置毎の削除割合を計算、グラフ作成
 
 Preprocessing処理後のファイルは、「Preprocessingタブ(下図黄色ハイライト)」でMapping/*de novo*
 Assemblyのクエリとして選択できるようになります。クエリファイルの先頭は、JOB番号です（下では3845がJOB番号）。
@@ -70,27 +72,30 @@ Assemblyのクエリとして選択できるようになります。クエリフ
 | 8 | [Status - Preprocessing/Mapping/*de novo* Assembly](#Status)               | 実行ジョブstatus確認                                                                                                                                          |
 | 9 | [Detail view](#View)                                                       | Error Rate, Coverage, Depth, Map ratio, コマンド毎の結果ファイル（samフォーマット）                                                                                        |
 
-  - \+ ErrorRate (mapping, graph)</span>  
-    Percentage error of mapped sequence to reference sequence is
-    calculated by read position.
-  - \+ Coverage (mapping, numeric data)</span>  
-    Sum of the length of all contigs/G,  
-    where  
-    G = Size (bp) of Reference Genome <span class="red">excluding "N"
-    nucleotides</span>  
-    L = Sequence Length (bp),  
-    N = \# sequences.
-  - \+ Depth (mapping, numeric data)</span>  
-    The average of total sequence length (length of all sequence reads
-    in a contig including gaps)/contig  
-    Length <span class="red">excluding "N" nucleotides.</span>  
-    Reference: Lander ES, Waterman MS, Genomic mapping by fingerprinting
-    random  
-    clones: a mathematical analysis.  
-    Genomics 1988, 2(3):231-239.
-  - \+ Map ratio (mapping, numeric data)</span>  
-    Number of mapped reads\* / Number of reads  
-    \*: the number of reads, which were mapped in both ends.
+\+ ErrorRate (mapping, graph)
+: Percentage error of mapped sequence to reference sequence is
+calculated by read position.
+
+\+ Coverage (mapping, numeric data)
+: Sum of the length of all contigs/G,  
+where  
+G = Size (bp) of Reference Genome <span class="red">excluding "N"
+nucleotides
+L = Sequence Length (bp),  
+N = \# sequences.
+
+\+ Depth (mapping, numeric data)
+: The average of total sequence length (length of all sequence reads
+in a contig including gaps)/contig  
+Length <span class="red">excluding "N" nucleotides.</span>  
+Reference: Lander ES, Waterman MS, Genomic mapping by fingerprinting
+random  
+clones: a mathematical analysis.  
+Genomics 1988, 2(3):231-239.
+
+\+ Map ratio (mapping, numeric data)
+: Number of mapped reads\* / Number of reads  
+\*: the number of reads, which were mapped in both ends.
 
 ### *de novo* Assembly<a name="assembly"></a>
 
@@ -445,29 +450,31 @@ Encoding）](//en.wikipedia.org/wiki/FASTQ_format#Encoding)
 2. 実行ログの確認ができます。
 3. 各種コマンド結果ファイルがダウンロードできます。
 
-![]({{ site.baseurl }}/assets/images/help/DetailViewMapping5_1.png)
+![](/images/help/DetailViewMapping5_1.png)
 
 #### 統計結果のダウンロード
 
-- ＜Position errors＞  
-![](/images/help/Detail-view_2-300x253.png "Detail view_2")
-- \+ ErrorRate (mapping, graph).
-Percentage error of mapped sequence to reference sequence is calculated by read position.
-- ＜Map ratio＞
-- \+ Map ratio (mapping, numeric data)
-Number of mapped reads\* / Number of reads  
-\*: the number of reads, which were mapped in both ends.
-- ＜Depth, Coverage＞
-- \+ Depth (mapping, numeric data)  
-he average of total sequence length (length of all sequence reads in a contig including gaps)/contig Length <span class="red">excluding "N" nucleotides. </span> 
-Reference: Lander ES, Waterman MS, Genomic mapping by fingerprinting random clones: a mathematical analysis.  
-Genomics 1988, 2(3):231-239.
-- \+ Coverage (mapping, numeric data) 
-Sum of the length of all contigs/G,  
-where  
-G = Size (bp) of Reference Genome <span class="red">excluding "N" nucleotides.</span>  
-L = Sequence Length (bp),  
-N = \# sequences.
+＜Position errors＞  
+: ![]({{ site.baseurl }}/assets/images/help/Detail-view_2-300x253.png "Detail view_2")
+: \+ ErrorRate (mapping, graph).
+  : Percentage error of mapped sequence to reference sequence is calculated by read position.
+
+＜Map ratio＞
+: \+ Map ratio (mapping, numeric data)
+  : Number of mapped reads\* / Number of reads  
+  \*: the number of reads, which were mapped in both ends.
+
+＜Depth, Coverage＞
+: \+ Depth (mapping, numeric data)  
+  : he average of total sequence length (length of all sequence reads in a contig including gaps)/contig Length <span class="red">excluding "N" nucleotides. </span> 
+  Reference: Lander ES, Waterman MS, Genomic mapping by fingerprinting random clones: a mathematical analysis.  
+  Genomics 1988, 2(3):231-239.  
+: \+ Coverage (mapping, numeric data) 
+  : Sum of the length of all contigs/G,  
+  where  
+  G = Size (bp) of Reference Genome <span class="red">excluding "N" nucleotides.</span>  
+  L = Sequence Length (bp),  
+  N = \# sequences.
 
 ### *de novo* Assembly
 
@@ -491,20 +498,21 @@ N = \# sequences.
 
 #### 編集済みファイル、各種グラフのダウンロード
 
-- ＜Fastq Download＞  
-編集後のFastqファイルがダウンロードできます。
-- ＜QS Average(PDF)＞  
-編集前のQS標準偏差
+＜Fastq Download＞  
+: 編集後のFastqファイルがダウンロードできます。
+
+＜QS Average(PDF)＞  
+: 編集前のQS標準偏差
 
 ![]({{ site.baseurl }}/assets/images/help/DetailViewPreprocess2_1.png)
 
-- ＜QS Count(PDF)＞  
-編集前のQS平均
+＜QS Count(PDF)＞  
+: 編集前のQS平均
 
 ![]({{ site.baseurl }}/assets/images/help/DetailViewPreprocess3_1.png)
 
-- ＜QS Error(PDF)＞  
-編集後のリード位置毎の削除割合
+＜QS Error(PDF)＞  
+: 編集後のリード位置毎の削除割合
 
 ![]({{ site.baseurl }}/assets/images/help/DetailViewPreprocess4_1.png)
 
