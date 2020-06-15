@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="layout" content="indexed_content"/>
+	<title>DDBJ BioSample Handbook</title>
+	<meta name="pathname" content="submission"/>
+	<meta name="category" content="aboutbiosample"/>
+	<meta name="pdf" content="https://www.ddbj.nig.ac.jp/pdf/aboutbiosample/submission.pdf"/>
+</head>
+<body>
+
+<h2 id="概要">概要</h2>
+
+<h3 id="目的">目的</h3>
+
+<p><a href="/biosample/index.html">BioSample</a> はデータベースに登録されている実験データを得るのに使われたサンプルに関する情報を管理するデータベースです。</p>
+
+<p>以下の図は BioSample がどのように他の DDBJ のデータベースとリンクしているかを示しています。 この例は、データと二つの BioSample、三つの BioProject、一つの Umbrella BioProject から構成されています。ユーザは BioProject または BioSample データベースを検索し、目的のレコードを取得、そこからのリンクをたどることによって <a href="/ddbj/index.html">DDBJ</a>、<a href="/dra/index.html">DRA</a> に登録されている関連する実験データを得ることができます。</p>
+
+<p>{::nomarkdown}
+{% include image.html url=&#8220;submission/biosample_integration.jpg&#8221; caption=&#8220;BioSample と他の DDBJ データベースとの連携&#8221; %}
+{:/}</p>
+
+<h3 id="サンプル">サンプル</h3>
+
+<p>DDBJ のデータベースに登録されているサンプルが多様であること、また、サンプルの適切な記載方法が研究内容により異なることから BioSample の定義は柔軟なものになっています。 BioSample の典型的な例としては細胞株、組織の生検、生物個体や環境サンプルなどが挙げられます。</p>
+
+<p>Biological/Technical replicate は &#8220;replicate&#8221; というユーザ定義の属性を使い &#8220;biological replicate 1&#8221;、&quot;biological replicate 2&quot; のようにしてサンプルを区別します。<a href="/biosample/faq.html#samples-for-sra">FAQ: 塩基配列登録にはいくつのサンプルが必要ですか?</a></p>
+
+<p>BioSample はサンプルについての以下のような情報を含みます:</p>
+
+<ul>
+<li> 生物種</li>
+<li> 採取された生物試料、例: 器官、組織、セルタイプ</li>
+<li> 表現型 - 疾患や個人の医学的な情報など</li>
+</ul>
+
+<p>ヒトに関する情報とそれへのアクセスは適用される全ての倫理的な要請を満たしている必要があります。 DDBJ BioSample データベースはアクセスを制限する仕組みを持っていないため、プライバシーに抵触する可能性のあるヒト由来サンプルを登録することはできません。</p>
+
+<h3 id="リファレンスバイオサンプル">リファレンスバイオサンプル</h3>
+
+<p>BioSample に登録されたサンプルの一部は、多くの実験で共通に使用されるかもしれません。 ここではこのようなサンプルセットのことを &#8220;<span class="italic">リファレンスバイオサンプル (reference biosample)</span>&#8221; と呼びます。
+リファレンスバイオサンプルの例としては、広く使われているセルラインやマウスの系統が挙げられます。</p>
+
+<p>BioSample では広く使われているサンプルが事前に BioSample にカタログ化されており、すぐに引用できるようになっています。これは、登録者が新しい実験データを DDBJ/EBI/NCBI に登録する度に、汎用的なサンプルを毎回 BioSample に登録しなくても済むようにするためです。 現在、リファレンスバイオサンプルには <a href="http://www.atcc.org/">ATCC</a> と <a href="http://ccr.coriell.org/">Coriell</a> が含まれています。</p>
+
+<h3 id="サンプルの属性anamesample-attributesa">サンプルの属性<a name="sample-attributes"></a></h3>
+
+<p>BioSample レコードを構成する主要部分は「サンプル属性」です。属性にはセルタイプ、採取地や表現型などの情報を記載することができ、対象となるサンプルを定義します。 BioSample の属性は構造化された「属性名:値」 (name:value) の組として表現されます。例) tissue:liver</p>
+
+<p>BioSample は属性名にコントロールされた語句 (&#8220;辞書&#8221;) を使うことをサポートしています。</p>
+
+<p>DDBJ BioSample に実装された最初の辞書は <a href="http://wiki.gensc.org/index.php?title=Main_Page">Genomics Standards Consortium</a> によって作成されたゲノム、メタゲノム、ターゲットローカスの記載を標準化するために最低限必要な情報を定めた <a href="http://wiki.gensc.org/index.php?title=MIxS">MIxS</a> チェックリストです。</p>
+
+<p>MIxS チェックリストについては Nature Biotechnology 29, 415–420 (2011) | doi: 10.1038/nbt.1823(PMID:<a href="https://www.ncbi.nlm.nih.gov/pubmed/21552244">21552244</a> ) を参照してください。</p>
+
+<p>{::nomarkdown}
+{% include image.html url=&#8220;books/mixs.jpg&#8221; caption=&#8220;MIxS チェックリスト&#8221; %}
+{:/}</p>
+
+<h3 id="生物名">生物名</h3>
+
+<p>BioSample の <a href="/biosample/attribute.html?all=all#organism">organism</a> に記載する生物名については「<a href="/ddbj/organism.html">生物名について</a>」をご覧ください。 以前は微生物などで完全長ゲノム配列を登録する場合、種の学名に加えて strain などの名称を organism に含めて記載していましたが、現在は学名のみの記載を原則としています。strain 名は BioSample の <a href="/biosample/attribute.html?all=all#strain">strain</a> に記入します。</p>
+
+<p>関連するお知らせ: <a href="/news/ja/2013-12-13.html">生物の株情報を管理する方法が変更になります</a></p>
+
+<h3 id="薬剤感受性表">薬剤感受性表</h3>
+
+<p>BioSample レコードに薬剤感受性表（アンチバイオグラム、Antibiogram）を含めることができます（登録例: <a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN07958491">SAMN07958491</a>）。登録を希望する場合は <a href="/contact.html">BioSample チーム</a>に連絡してください。</p>
+
+<p>薬剤感受性表の登録ガイドラインは NCBI BioSample の各ページを参照してください。</p>
+
+<ul>
+<li> <a href="https://www.ncbi.nlm.nih.gov/biosample/docs/beta-lactamase/">Antibiograms - beta-lactamase
+MIC</a></li>
+<li> <a href="https://www.ncbi.nlm.nih.gov/biosample/docs/antibiogram/">Antibiograms - pathogen
+MIC</a></li>
+<li> <a href="https://www.ncbi.nlm.nih.gov/biosample/docs/antibiogram-myco/">Antibiograms - mycobacterial
+non-MIC</a></li>
+</ul>
+
+<h3 id="xmlスキーマ">XML スキーマ</h3>
+
+<p><a href="https://github.com/ddbj/pub/tree/master/docs/biosample">BioSample XML schema</a></p>
+
+<h2 id="メタデータ">メタデータ</h2>
+
+<p>必須<span class="red">*</span><br />
+条件によって必須<span class="conditionally_required">*</span></p>
+
+<h3 id="submitter">Submitter</h3>
+
+<h4 id="submitter">Submitter</h4>
+
+<p>登録者情報。登録に関する連絡はここに記載された E-mail アドレス宛てに行われます。 必要な人数分作成します。 連絡先情報は DDBJ スタッフが登録者に連絡するために使われ、一般に公開されることはありません。連絡先情報のかわりに研究者の所属する組織に関する情報が公開されます。</p>
+
+<ul>
+<li> <a href="#BioSample_First_name">First name</a><span class="red">*</span><br />
+登録者の first name。</li>
+</ul>
+
+<!-- end list -->
+
+<ul>
+<li> <a href="#BioSample_Last_name">Last name</a><span class="red">*</span><br />
+登録者の last name。</li>
+</ul>
+
+<!-- end list -->
+
+<ul>
+<li> <a href="#BioSample_E-mail">E-mail</a><span class="red">*</span><br />
+E-mail アドレス。所属する組織ドメインのメールアドレスを指定してください。</li>
+</ul>
+
+<h4 id="organization">Organization</h4>
+
+<ul>
+<li> <a href="#Organization">Organization</a><br />
+コンタクトパーソンが所属する組織。</li>
+</ul>
+
+<!-- end list -->
+
+<ul>
+<li> <a href="#BioSample_Submitting_organization">Submitting organization</a><span class="red">*</span><br />
+組織のフルネーム。</li>
+</ul>
+
+<!-- end list -->
+
+<ul>
+<li> <a href="#BioSample_Submitting_organization_URL">Submitting organization URL</a><br />
+登録者が所属する組織の URL。</li>
+</ul>
+
+<h4 id="datarelease">Data Release</h4>
+
+<p>&#8220;Hold&#8221; か &#8220;Release&#8221; のどちらかを選びます。公開予定日を指定することはできません。データ公開の仕組みについては<a href="#sample-release">データ公開</a>をご覧ください。</p>
+
+<ul>
+<li> <a href="#BioSample_Release">Release</a><br />
+登録したサンプルは査定された後、公開されます。</li>
+</ul>
+
+<!-- end list -->
+
+<ul>
+<li> <a href="#BioSample_Hold">Hold</a><br />
+この BioSample ID を引用している DDBJ、DRA、DTA レコードが公開されると同時に公開されます。この BioSample ID を引用している非公開の DDBJ レコードが公開されることはありません。</li>
+</ul>
+
+<h3 id="generalinfo">General info</h3>
+
+<ul>
+<li> <a href="#Link">External Links</a><br />
+サンプルに直接関連するリソースの URL とそれに付けるラベル (表示名)。</li>
+</ul>
+
+<!-- end list -->
+
+<ul>
+<li> <a href="#Link_description">Link description</a><br />
+サンプルに関連するウェブサイトの表示名。</li>
+</ul>
+
+<!-- end list -->
+
+<ul>
+<li> <a href="#BioSample_URL">URL</a><br />
+ウェブサイトの URL。</li>
+</ul>
+
+<h3 id="sampletype">Sample type</h3>
+
+<h4 id="corepackage">Core Package</h4>
+
+<ul>
+<li> <a href="#MIxS_Sample">Genome, metagenome or marker sequences (MIxS compliant)</a><br />
+ゲノム、メタゲノムやマーカー配列の場合に使用します。ゲノム、メタゲノムやマーカー配列が由来するサンプルの記載方法を標準化するため Genome Standards Consortium (GSC) が策定した属性が使われます。<a href="http://wiki.gensc.org/index.php?title=MIxS">MIxS</a> が定めた必須属性があるかどうかで <a href="http://wiki.gensc.org/index.php?title=MIxS">MIxS</a> を満たしているかどうかが検証されます。MIxS についての詳細は <a href="http://wiki.gensc.org/index.php?title=MIxS">GSC ウェブサイト</a> をご覧ください。</li>
+</ul>
+
+<!-- end list -->
+
+<ul>
+<li> <a href="#functional_genomics_samples">Functional genomics samples (e.g. transcriptome, epigenetics etc)</a><br />
+遺伝子発現、遺伝子発現制御、エピジェネティクスやゲノム変異解析等の機能ゲノミクスデータを受け付けている <a href="/gea/index.html">Genomic Expression Archive (GEA)</a> への登録のためのパッケージです。機能ゲノミクス実験で頻出するサンプル属性から構成されています。</li>
+</ul>
+
+<!-- end list -->
+
+<ul>
+<li> <a href="#General_Sample">Other samples (e.g. transcriptome, epigenetics etc)</a><br />
+transcriptome, epigenetics など、どのようなサンプルタイプにも使用することができます。一般的な属性と登録者が作成するカスタム属性で記述されます。</li>
+</ul>
+
+<h4 id="mixs">MIxS</h4>
+
+<ul>
+<li><p> <a href="#Meta_Genomic_Sequences_Sample">(Meta)Genomic Sequences Sample (MIMS)</a></p>
+
+<p>| &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212; |
+| Environmental/Metagenome Genomic Sequences |</p>
+
+<p><a href="/ddbj/env.html">環境サンプルの説明</a>もご参照ください。</p></li>
+</ul>
+
+<!-- end list -->
+
+<ul>
+<li><p> <a href="#Genomic_Sequences_Sample">Genomic Sequences Sample (MIGS)</a></p>
+
+<p>| &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212; |
+| Cultured Bacterial/Archaeal Genomic Sequences |
+| Eukaryotic Genomic Sequences     |
+| Viral Genomic Sequences      |</p>
+
+<p>特定宿主から確実に回収できる内部共生生物、多くの cyanobacteria のように容易に同定可能であるが培養ができない生物、純粋培養は不可能でも罹患植物から確実に回収できる phytoplasmas といった対象は環境サンプルとは扱いません。&quot;Cultured Bacterial/Archaeal&quot;, &#8220;Eukaryotic&#8221;, &#8220;Viral&#8221; のいずれかを選択します</p></li>
+</ul>
+
+<!-- end list -->
+
+<ul>
+<li><p> <a href="#Marker_Sequences_Sample">Marker Sequences Sample (MIMARKS)</a></p>
+
+<p>| &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;- |
+| Specimen Marker Sequences  |
+| Survey related Marker Sequences |</p>
+
+<p>MIMARKS specimen: for marker gene (e.g., COI) sequences obtained from any material identifiable by means of specimens</p>
+
+<p>MIMARKS-specimen は培養した、あるいは同定可能な標本から得られた marker gene に対する contextual data に適用します。</p>
+
+<p>MIMARKS survey: for uncultured diversity marker gene (e.g., 16S rRNA, 18S rRNA, nif, amoA, rpo) surveys</p>
+
+<p>MIMARKS-survey は分離培養や生物種を同定せず、環境から直接得られた marker gene に対する contextual data に適用できます。</p></li>
+</ul>
+
+<h4 id="environmentalpackage">Environmental package</h4>
+
+<ul>
+<li><p> <a href="#Environmental_package">Environmental package (MIxS Sample)</a><br />
+以下のパッケージから適切なものを選びます。パッケージ毎に必要とされる属性が追加されます。<br />
+<span class="red">&#8220;Environmental/Metagenome Genomic Sequences&#8221; と &#8220;Survey related Marker Sequences&#8221; のときは No package を選択できません。</span></p>
+
+<p>| &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212; |
+| No package     |
+| air       |
+| host-associated    |
+| human-associated   |
+| human-gut     |
+| human-oral     |
+| human-skin     |
+| human-vaginal    |
+| microbial mat/biofilm  |
+| miscellaneous or artificial |
+| plant-associated   |
+| sediment     |
+| soil      |
+| wastewater/sludge   |
+| water      |</p></li>
+</ul>
+
+<h3 id="attributes">Attributes</h3>
+
+<ul>
+<li> <a href="#Sample_attributes">Sample attributes</a><br />
+モデルごとにカスタマイズされた BioSample ワークシートをダウンロードします。 ワークシートはタブ区切りテキストファイルでスプレッドシートプログラムやテキストエディタで開くことができます。属性を記載したテキストファイルをアップロードすると
+validator により内容がチェックされます。 <a href="/biosample/validation.html">Warning や Error メッセージ</a> が表示された場合は必要に応じて内容を修正してから再度アップロードしてください。エラーが解消されるまで次のタブに進むことはできません。</li>
+</ul>
+
+<!-- end list -->
+
+<ul>
+<li> <a href="#BioSample_Attributes">Attributes</a><br />
+<a href="/biosample/attribute.html">サンプル属性のリスト</a><br />
+必須項目に加えて、いくつかの推奨項目があります。BioSample データをより役立つものにするためにできるだけ情報を登録してください。 登録システムが一般的に使われている属性を標準化された名称とともに提供します。 登録を準備する際は<a href="/biosample/attribute.html">属性のリスト</a>や<a href="https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482">登録例</a>を参照し、該当する項目を入力してください。 リストにない情報を持っている場合はユーザが定義した独自の属性をタブ区切りテキストファイルの末尾に追加することができます。</li>
+</ul>
+
+<h3 id="overview">Overview</h3>
+
+<ul>
+<li> <a href="#BioSample_Overview">Overview</a><br />
+登録内容を確認し問題がなければ一番下の Submit ボタンをクリックしてサンプルを投稿してください。 &#8220;Submission ID.txt&#8221; ファイルでアップロードしたサンプル属性の内容をダウンロードすることができます。</li>
+</ul>
+
+<h1 id="biosampleへの登録">BioSample への登録</h1>
+
+<dl>
+<dt> {::options parse_block_html=&#8220;true&#8221; /}</dt>
+<dt> <div class="attention"></dt>
+<dt> ヒトを対象とした研究データの登録について</dt>
+<dd>: <span class="red">研究対象者に由来するデータを DDBJ センターが運営するデータベースに登録する場合、研究対象者の尊厳及び人権は、適用されるべき法令、指針、ガイドライン、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。原則として、研究対象者を直接特定し得る情報はメタデータから取り除いてください。ヒトを対象とした研究データを登録する場合は<a href="/policies.html#human">「ヒトを対象とした研究データの登録について」</a>を熟読してください。</span>
+</div></dd>
+</dl>
+
+<h2 id="サンプルの登録">サンプルの登録</h2>
+
+<h3 id="新規サンプルの登録">新規サンプルの登録</h3>
+
+<p><a href="/account.html">アカウント Handbook</a> に従いアカウントを取得します。</p>
+
+<p>D-way ウェブサイトの上部にある &#8220;BioSample&#8221; メニューから BioSample 登録ページに移動します。 BioSample ページ内の [New submission] をクリックし、新規サンプル登録を作成します。</p>
+
+<div class="attention red">
+1 submission で登録できるサンプル数の上限は約 2,000 になります。
+</div>
+
+<div class="attention red">
+DDBJ センターから登録者に問い合わせた後三か月以上回答が無い場合は Submission をキャンセルいたします。
+</div>
+
+<p>{::nomarkdown}
+{% include image.html url=&#8220;books/hbs-01.jpg&#8221; caption=&#8220;BioSample の新規登録作成&#8221; %}
+{:/}</p>
+
+<p>BioSample を新規登録する場合は左のタブから順番に内容を英語で入力していきます。</p>
+
+<p>各項目の説明は<a href="#metadata">こちら</a>を参照してください。</p>
+
+<p>{::nomarkdown}
+{% include image.html url=&#8220;books/hbs-02.jpg&#8221; caption=&#8220;BioSample の登録&#8221; %}
+{:/}</p>
+
+<p>&#8220;SAMPLE TYPE&#8221; でサンプルの種類を選択します。ゲノム配列を取得したサンプルの場合、<a href="#sample-attributes">MIxS 基準</a>を満たしたサンプル記述をする必要があります。</p>
+
+<p>Sample type については<a href="#Sample_type">こちら</a>を参照してください。</p>
+
+<p>{::nomarkdown}
+{% include image.html url=&#8220;books/hbs-03.jpg&#8221; caption=&#8220;Sample type の選択&#8221; %}
+{:/}</p>
+
+<p>Sample type に応じた属性入力用テンプレートファイルをダウンロードします。</p>
+
+<p>必須・任意・ユーザが定義した一連の属性でサンプルを記述することが、登録作業の中心になります。</p>
+
+<p>{::nomarkdown}
+{% include image.html url=&#8220;books/hbs-04.jpg&#8221; caption=&#8220;サンプル属性テンプレートファイルのダウンロード&#8221; %}
+{:/}</p>
+
+<h3 id="属性値の記入">属性値の記入</h3>
+
+<p><a href="/biosample/attribute.html">BioSample 属性の説明</a>。独自の属性を追加したい場合は、右端に属性名と値を追加します。</p>
+
+<p><a href="https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482">サンプル属性ファイルの記入例</a></p>
+
+<p>ファイルはタブで区切られているので、エクセルなどの表計算ソフトで編集することができます。一行目には属性名が記載されています。* が必須属性です。</p>
+
+<p>二行目以降に１行１サンプルで入力していきます。BioProject アクセッション番号が発行されていないプロジェクトの場合、<a href="/biosample/attribute.html?all=all#bioproject_id">bioproject_id</a> には PSUB 番号を入力します。</p>
+
+<div class="attention red">
+サンプル属性のタブ区切りテキストファイルでは1行に1サンプルの属性を入力します。行を複数作成することで，複数の sample
+をまとめて登録することができます。
+</div>
+
+<h4 id="値がない場合の記載方法">値がない場合の記載方法</h4>
+
+<p><a href="https://www.ebi.ac.uk/ena/about/missing-values-reporting">INSDC ではサンプル属性値が存在しない場合の記載方法を標準化しています</a>。 登録者は常に定められた形式で属性値を提供することが推奨されますが、値がない (missing/null value)
+ことを報告する際には、状況をより細かく表す用語を使用することが求められます。適切な場合は &#8220;lower level&#8221; の用語を使用し、そうでない場合には &#8220;top level&#8221; の用語を使用します。</p>
+
+<p>以下に &#8220;missing/null value&#8221; に対する用語と定義を記載しています。</p>
+
+<p>必須属性に対する値がない場合にだけ標準化された用語を使用します。推奨・任意属性に対する値がない場合は、値を空にするか、属性そのものを使用しないでください。</p>
+
+<p>INSDC missing value reporting terms</p>
+
+<table>
+<tr>
+<th>
+INSDC term  
+(top level)
+</th>
+<th>
+INSDC term  
+(lower level)
+</th>
+<th>Definition</th>
+</tr>
+
+<tbody>
+<tr>
+<td>
+not applicable
+</td>
+<td></td>
+<td>
+information is inappropriate to report, can indicate that the standard itself fails to model or represent the information appropriately
+</td>
+</tr>
+
+<tr>
+<td rowspan="3" class="borderbtm">
+missing
+</td>
+<td>
+not collected
+</td>
+<td>
+information of an expected format was not given because it has not been collected
+</td>
+</tr>
+
+<tr>
+<td>
+not provided
+</td>
+<td>
+information of an expected format was not given, a value may be given at the later stage
+</td>
+</tr>
+
+<tr>
+<td>
+restricted access
+</td>
+<td>
+information exists but can not be released openly because of privacy concerns
+</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="サンプル属性のvalidation">サンプル属性の validation</h4>
+
+<p>サンプル属性ファイルを選択して Continue をクリックすると validator がルールに基づいてアップロードされたファイルをチェックします。Error や Warning メッセージが表示された場合は必要に応じて内容を修正して再度アップロードします。Error
+が解消されない限り次のタブに進んで内容を submit することはできません。</p>
+
+<p>Validation ルールとメッセージについては <a href="/biosample/validation.html">Validation rules ページ</a>をご覧ください。</p>
+
+<p>{::nomarkdown}
+{% include image.html url=&#8220;books/hbs-04&#8211;2.jpg&#8221; caption=&#8220;BioSample の validation。この例では &quot;KOME-2&quot; の collection_date に将来の日付が記入されているエラーと geo_loc_name 中の国名と緯度経度が一致していない warning が表示されています。&#8221; %}
+{:/}</p>
+
+<p>最後の &#8220;OVERVIEW&#8221; で内容を確認したうえで投稿します。&quot;ATTRIBUTES&quot; で属性ファイルをダウンロードすることができます。</p>
+
+<div class="attention red">
+登録後は最新の属性ファイルをダウンロードすることができます。
+</div>
+
+<p>{::nomarkdown}
+{% include image.html url=&#8220;books/hbs-05.jpg&#8221; caption=&#8220;BioSample の投稿&#8221; %}
+{:/}</p>
+
+<h3 id="アクセッション番号">アクセッション番号</h3>
+
+<p>新規 Submission を作成すると SSUB で始まる仮 ID が自動的に割り当てられます。D-way から validation を通過したサンプルが投稿されると自動的にプレフィックス &#8220;SAMD&#8221; のアクセッション番号が発行されます。未登録の生物名が organism に記載されていた場合や locus_teg_prefix に値が記入されていた場合はキュレータが必要な査定を実施した後にアクセッション番号が発行されます。<a href="https://ddbj.nig.ac.jp/D-way/">D-way アカウント</a>にログイン後、ウェブ上で登録したサンプルの進行状況やアクセッション番号を確認することができます。</p>
+
+<p>{::options parse_block_html=&#8220;true&#8221; /}
+<div class="attention red"></p>
+
+<ul>
+<li> SSUB で始まる仮 ID を論文中に引用しないでください。</li>
+<li> EBI/NCBI に登録したサンプルを DDBJ に重複して登録しないでください。
+</div></li>
+</ul>
+
+<h3 id="サンプルの公開anamesample-releasea">サンプルの公開<a name="sample-release"></a></h3>
+
+<p>以下の選択肢があります:</p>
+
+<ul>
+<li> 査定が終わった後すぐに公開</li>
+<li> BioSample アクセッション番号を引用しているデータと同時に公開</li>
+</ul>
+
+<div class="attention red">
+公開予定日は設定することができません。
+</div>
+
+<p>登録した Sample データは一定期間非公開にすることができます。 DDBJ レコードが公開されると、引用されている BioSample データは自動的に公開されます。この BioSample アクセッション番号を引用している非公開の DDBJ レコードが公開されることはありませんが、引用されている BioProject は連動公開されます。</p>
+
+<p>FAQ: <a href="/faq/ja/bp_bs_seq_release.html">BioProject/BioSample/塩基配列データの連動公開の仕組みは？</a></p>
+
+<h3 id="サンプルの更新">サンプルの更新</h3>
+
+<p>登録が完了したデータを更新することができます。<a href="/contact.html">メッセージフォーム</a>よりご連絡ください。</p>
+
+</body>
+</html>
+

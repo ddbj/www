@@ -339,7 +339,7 @@ information is inappropriate to report, can indicate that the standard itself fa
 </tr>
 
 <tr>
-<td rowspan="3">
+<td rowspan="3" class="borderbtm">
 missing
 </td>
 <td>
