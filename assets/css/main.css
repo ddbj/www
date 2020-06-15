@@ -413,12 +413,10 @@ input, textarea, select, button {
     text-align: left;
     line-height: initial; }
   .md-content caption, .md-content figcaption {
-    margin-top: .5rem;
-    margin-bottom: 3.5rem; }
+    margin-top: .5rem; }
   .md-content .tablecaption {
     margin-bottom: .5rem;
-    display: block;
-    margin-top: 3.5rem; }
+    display: block; }
   .md-content table {
     width: 100%;
     border: 1px solid #736357;
