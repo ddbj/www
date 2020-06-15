@@ -276,120 +276,122 @@ JPO データの FF 構造と各項目の記載内容について，塩基配列
 {:.size-optimize}
 {% include image.html url="ddbj/column_18.jpg" caption="図1：JPO 塩基配列データの FF と記載内容の対応関係　（画像クリックで拡大）" %}
 
-1. LOCUS 行- KEYWORDS 行
+1.  LOCUS 行- KEYWORDS 行
 
-[LOCUS 行]  
-: アクセッション番号，配列長，分子タイプ，分子形態，Division，最終公開日が記載される。
-: 
-  | 配列長      | 塩基配列データの場合は配列長の数値の後に bp，アミノ酸配列データの場合は配列長の数値の後に aa が記載される。 |
-  | 分子タイプ    | 塩基配列データの場合は DNA もしくは RNA が記載され，アミノ酸配列データの場合は PRT が記載される。  |
-  | 分子形態     | linear が塩基配列の場合のみ記載される。アミノ酸配列データでは記載されない。                 |
-  | Division | 特許データの Division である PAT が記載される。                           |
-  | 最終公開日    | そのデータが公開された日付が記載される。データが更新され，再公開されると日付は変わる。               |
-: 
-アミノ酸配列データの LOCUS 行は塩基配列データと記載内容が異なるため，図2にアミノ酸配列データの LOCUS 行の例を示した。
-
-  {:.size-optimize}
-  {% include image.html url="ddbj/column_14.jpg" caption="図2：アミノ酸配列データの LOCUS 行(例)" %}
-
-[DEFINITION 行]  
-: 発明タイトルが記載される。REFERENCE の TITLE 行と同じ内容が記載される。
-
-[ACCESSION 行]  
-: アクセッション番号が記載される。
-
-[VERSION 行]  
-: アクセッション番号と配列バージョン番号が記載される。 VERSION 行は塩基配列データのみに記載され，アミノ酸配列データには記載されない。配列バージョン番号は初公開時には1が指定される。
-
-[KEYWORDS 行]  
-: 公開番号が記載される。国内公開公報および公表公報に由来するデータには JP が先頭に付加され，国際公開公報に由来するデータには WO が付加される。
-
-: 公開番号の記載フォーマットについては，DDBJ メールマガジン No.53 「[3. 特許 FF の特許公開番号(公開番号)記載箇所](#3)」を参照。
-
-2. 生物情報
-  
-[SOURCE 行]  
-: DDBJ の FF に記載する生物学名(生物名)は，NCBI が構築している [Unified Taxonomy Database](//www.ncbi.nlm.nih.gov/taxonomy) の生物名を採用している。そのため④COMMENT のOS行に記載される登録ファイルの生物名から Unified Taxonomy Database の生物名へ変換が行われた名称が，SOURCE 行に記載される。また human などの一般名(common name) での記載が可能な場合は，生物名の後ろに記載される。<br>例：SOURCE Homo sapiens (human)
-
-[ORGANISM 行]  
-: 1行目は SOURCE 行と同じ生物名が記載され，2行目は Unified Taxonomy Database に基づいた分類(lineage) 情報が記載される。
-  
-  ``` 
-    例：  ORGANISM  Homo sapiens
-                    Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
-                    Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
-                    Catarrhini; Hominidae; Homo.
+    [LOCUS 行]
+    : アクセッション番号，配列長，分子タイプ，分子形態，Division，最終公開日が記載される。
+    : 
+      | 配列長      | 塩基配列データの場合は配列長の数値の後に bp，アミノ酸配列データの場合は配列長の数値の後に aa が記載される。 |
+      | 分子タイプ    | 塩基配列データの場合は DNA もしくは RNA が記載され，アミノ酸配列データの場合は PRT が記載される。  |
+      | 分子形態     | linear が塩基配列の場合のみ記載される。アミノ酸配列データでは記載されない。                 |
+      | Division | 特許データの Division である PAT が記載される。                           |
+      | 最終公開日    | そのデータが公開された日付が記載される。データが更新され，再公開されると日付は変わる。               |
+    : 
+    アミノ酸配列データの LOCUS 行は塩基配列データと記載内容が異なるため，図2にアミノ酸配列データの LOCUS 行の例を示した。
     
-  ```
-  
-  「生物名が unidentified となるデータ」
-  
-  特許データは出願内容により明確に生物名を記載できない場合がある。DDBJ での FF 構築時に登録ファイルの生物名が Unified Taxonomy Database に存在しない場合は，下記例の様に生物名は unidentified が記載される。登録ファイルの出願人が記載した生物名については，④COMMENT の OS 行で確認することが可能である。
-  
-  ``` 
-  例: 生物名が unidentified のデータ例(FF抜粋)
-        SOURCE      unidentified
-          ORGANISM  unidentified
-                    unclassified sequences.
-                    
-        COMMENT     OS   Bacillus
-        
-        FEATURES             Location/Qualifiers
-              source          1..2000
-                              /mol_type="unassigned DNA"
-                              /db_xref="taxon:32644"
-                              /organism="unidentified"
-  ```
-
-3. REFERENCE 情報  
-  : REFERENCE 情報は，AUTHORS 行，TITLE 行，JOURNAL 行で構成される。
+    <figure class="image size-optimize">
+      <img src="{{ site.baseurl }}/assets/images/ddbj/column_14.jpg" alt="図2：アミノ酸配列データの LOCUS 行(例)">
+      <figcaption>図2：アミノ酸配列データの LOCUS 行(例)</figcaption>
+    </figure>
     
-  [AUTHORS 行]  
-  : DDBJ の FF 構築ルールに基づいて変換された発明者が記載される。発明者のフルネームは，④COMMENT の PI 行で確認を行うことができる。
+    [DEFINITION 行]
+    : 発明タイトルが記載される。REFERENCE の TITLE 行と同じ内容が記載される。
+    
+    [ACCESSION 行]  
+    : アクセッション番号が記載される。
+    
+    [VERSION 行]  
+    : アクセッション番号と配列バージョン番号が記載される。 VERSION 行は塩基配列データのみに記載され，アミノ酸配列データには記載されない。配列バージョン番号は初公開時には1が指定される。
+    
+    [KEYWORDS 行]  
+    : 公開番号が記載される。国内公開公報および公表公報に由来するデータには JP が先頭に付加され，国際公開公報に由来するデータには WO が付加される。
+    
+    : 公開番号の記載フォーマットについては，DDBJ メールマガジン No.53 「[3. 特許 FF の特許公開番号(公開番号)記載箇所](#3)」を参照。
+    
+2.  生物情報
 
-  [TITLE 行]  
-  : 発明タイトルが記載される。DEFINITION 行と同じ内容が記載される。
-
-  [JOURNAL 行]  
-  : 1行目には「Patent:」の後に，公開番号，公開日が記載される。2行目以降に出願人名が記載される。 ④COMMENT の PN 行で公開番号，PD 行で公開日が記載されるが，出願人名は JOURNAL 行のみに記載され，COMMENT には記載されない。
-
-4. COMMENT 情報  
-: COMMENT 情報には，表2の様に JPO ファイルに含まれる出願内容の一部が記載される。
-  
-  |  行名  |  各行の記載内容  |
-  | ---- | ---- |
-  |  OS  |  登録ファイルの出願人が記載した生物名が記載される。この生物名に基づき，<br/>SOURCE 行，ORGANISM 行，/organism，/db_xref が構築される  |
-  |  PN  |  公開番号が配列番号と共に記載される  |
-  |  PD  |  公開日  |
-  |  PF  |  出願日 出願番号  |
-  |  PR  |  優先権主張日，優先権主張出願の出願番号  |
-  |  PI  |  発明者  |
-  |  CC  |  コメント  |
-  |  FH  |  Feature ヘッダーとして Key　Location/Qualifiers の固定値が記載される  |
-  |  FT	  |  Feature 情報|
-
-表2：COMMENT 情報の各行の説明
-{: .tablecaption}
-
-  現在受け付けている JPO データでは記載されていないが、国際特許分類(IPC) を記載する PC 行がある。
-
-5. Feature 情報  
-  JPO データ(KIPO データも含) の Feature 情報は，source feature のみが記載される。塩基配列データは， /mol_type，/db_xref，/organism のみが記載され，アミノ酸配列データでは /db_xref，/organism のみが記載される。
-  
-  | /mol_type | 塩基配列データのみで記載され，DNA データの場合は unassigned DNA，RNA データの場合はunassigned RNAが記載される。アミノ酸データでは，記載されない。 |
-  | /db_xref  | taxon: の後ろに Unified Taxonomy Database での生物名の ID(Taxonomy ID) が記載される。                        |
-  | /organism  | ④COMMENT の OS 行の JPO ファイルの生物名から，Unified Taxonomy Database の生物名に変換が行われた生物名が記載される。            |
+    [SOURCE 行]
+    : DDBJ の FF に記載する生物学名(生物名)は，NCBI が構築している [Unified Taxonomy Database](//www.ncbi.nlm.nih.gov/taxonomy) の生物名を採用している。そのため④COMMENT のOS行に記載される登録ファイルの生物名から Unified Taxonomy Database の生物名へ変換が行われた名称が，SOURCE 行に記載される。また human などの一般名(common name) での記載が可能な場合は，生物名の後ろに記載される。<br>例：SOURCE Homo sapiens (human)
+    
+    [ORGANISM 行]  
+    : 1行目は SOURCE 行と同じ生物名が記載され，2行目は Unified Taxonomy Database に基づいた分類(lineage) 情報が記載される。
       
-  「/db_xrefによるTaxonomy IDの記載追加について」
-  
-  JPO および KIPO データの FF では /db_xref による Taxonomy ID の記載が行われていなかった。そのため2010年5月より，JPO および KIPO の全データに，Taxonomy ID を付与する修正作業を実施した。Unified Taxonomy Database の内容は逐次更新されており，Taxonomy ID が維持された状態で，生物名の更新が行われている。Taxonomy ID を各エントリーで保持させることで，Taxonomy ID に基づいた最新の生物名の情報を反映させることが可能となった。DDBJ では年に1度，JPO および KIPO の全データについて Taxonomy ID から SOURCE 行，ORGANISM 行，/organism の再構築し，最新の生物名の情報を反映する作業を実施する予定である。
+      ``` 
+        例：  ORGANISM  Homo sapiens
+                        Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+                        Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+                        Catarrhini; Hominidae; Homo.
+        
+      ```
+      
+      「生物名が unidentified となるデータ」
+      
+      特許データは出願内容により明確に生物名を記載できない場合がある。DDBJ での FF 構築時に登録ファイルの生物名が Unified Taxonomy Database に存在しない場合は，下記例の様に生物名は unidentified が記載される。登録ファイルの出願人が記載した生物名については，④COMMENT の OS 行で確認することが可能である。
+      
+      ``` 
+      例: 生物名が unidentified のデータ例(FF抜粋)
+            SOURCE      unidentified
+              ORGANISM  unidentified
+                        unclassified sequences.
+                        
+            COMMENT     OS   Bacillus
+            
+            FEATURES             Location/Qualifiers
+                  source          1..2000
+                                  /mol_type="unassigned DNA"
+                                  /db_xref="taxon:32644"
+                                  /organism="unidentified"
+      ```
 
-6. 配列情報  
-  公開番号の後ろに記載される配列番号に対応する塩基配列，アミノ酸配列が記載される。  
-  塩基配列データでは，BASE COUNT 行で配列の adenine(a), cytosine(c), guanine(g), thymine(t) の塩基数が記載される。アミノ酸配列データでは，図3の様に BASE COUNT 行は出力されない。
-  
-  {:.size-optimize}
-  {% include image.html url="ddbj/column_15.jpg" caption="図3：アミノ酸配列データの配列情報の表示" %}
+3.  REFERENCE 情報
+    : REFERENCE 情報は，AUTHORS 行，TITLE 行，JOURNAL 行で構成される。
+    
+    [AUTHORS 行]  
+    : DDBJ の FF 構築ルールに基づいて変換された発明者が記載される。発明者のフルネームは，④COMMENT の PI 行で確認を行うことができる。
+    
+    [TITLE 行]  
+    : 発明タイトルが記載される。DEFINITION 行と同じ内容が記載される。
+    
+    [JOURNAL 行]  
+    : 1行目には「Patent:」の後に，公開番号，公開日が記載される。2行目以降に出願人名が記載される。 ④COMMENT の PN 行で公開番号，PD 行で公開日が記載されるが，出願人名は JOURNAL 行のみに記載され，COMMENT には記載されない。
+
+4.  COMMENT 情報
+    : COMMENT 情報には，表2の様に JPO ファイルに含まれる出願内容の一部が記載される。
+      
+      |  行名  |  各行の記載内容  |
+      | ---- | ---- |
+      |  OS  |  登録ファイルの出願人が記載した生物名が記載される。この生物名に基づき，<br/>SOURCE 行，    ORGANISM 行，/organism，/db_xref が構築される  |
+      |  PN  |  公開番号が配列番号と共に記載される  |
+      |  PD  |  公開日  |
+      |  PF  |  出願日 出願番号  |
+      |  PR  |  優先権主張日，優先権主張出願の出願番号  |
+      |  PI  |  発明者  |
+      |  CC  |  コメント  |
+      |  FH  |  Feature ヘッダーとして Key　Location/Qualifiers の固定値が記載される  |
+      |  FT	  |  Feature 情報|
+    
+    表2：COMMENT 情報の各行の説明
+    {: .tablecaption}
+    
+    現在受け付けている JPO データでは記載されていないが、国際特許分類(IPC) を記載する PC 行がある。
+
+5.  Feature 情報
+    JPO データ(KIPO データも含) の Feature 情報は，source feature のみが記載される。塩基配列データは， /mol_type，/db_xref，/organism のみが記載され，アミノ酸配列データでは /db_xref，/organism のみが記載される。
+    
+    | /mol_type | 塩基配列データのみで記載され，DNA データの場合は unassigned DNA，RNA データの場合はunassigned RNAが記載される。アミノ酸データでは，記載されない。 |
+    | /db_xref  | taxon: の後ろに Unified Taxonomy Database での生物名の ID(Taxonomy ID) が記載される。                        |
+    | /organism  | ④COMMENT の OS 行の JPO ファイルの生物名から，Unified Taxonomy Database の生物名に変換が行われた生物名が記載される。            |
+        
+    「/db_xrefによるTaxonomy IDの記載追加について」
+    
+    JPO および KIPO データの FF では /db_xref による Taxonomy ID の記載が行われていなかった。そのため2010年5月より，JPO および KIPO の全データに，Taxonomy ID を付与する修正作業を実施した。Unified Taxonomy Database の内容は逐次更新されており，Taxonomy ID が維持された状態で，生物名の更新が行われている。Taxonomy ID を各エントリーで保持させることで，Taxonomy ID に基づいた最新の生物名の情報を反映させることが可能となった。DDBJ では年に1度，JPO および KIPO の全データについて Taxonomy ID から SOURCE 行，ORGANISM 行，/organism の再構築し，最新の生物名の情報を反映する作業を実施する予定である。
+
+6.  配列情報
+    公開番号の後ろに記載される配列番号に対応する塩基配列，アミノ酸配列が記載される。
+    塩基配列データでは，BASE COUNT 行で配列の adenine(a), cytosine(c), guanine(g), thymine(t) の塩基数が記載される。アミノ酸配列データでは，図3の様に BASE COUNT 行は出力されない。
+    
+    {:.size-optimize}
+    {% include image.html url="ddbj/column_15.jpg" caption="図3：アミノ酸配列データの配列情報の表示" %}
 
 ### 3. EPO および USPTO の FF
 
