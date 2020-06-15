@@ -25,7 +25,7 @@ category: tentative
   <thead>
     <tr>
       <th>配列多型(haplotype)</th>
-      <th><span class="green">A</span></th>
+      <th>A</th>
       <th>B</th>
       <th>C</th>
       <th>total</th>                
@@ -33,17 +33,17 @@ category: tentative
   </thead>
   <tbody>
     <tr>
-      <th><span class="red">Japan</span></th>
-      <td class="green"><span class="blue">75</span></td>
-      <td class="green">38</td>
+      <th>Japan</th>
+      <td>75</td>
+      <td>38</td>
       <td>0</td>
-      <td><span class="blue">113</span></td>        
+      <td>113</td>        
     </tr>
     <tr>
       <th>USA</th>
-      <td class="green">26</td>
-      <td class="green">32</td>
-      <td class="green">60</td>
+      <td>26</td>
+      <td>32</td>
+      <td>60</td>
       <td>118</td>        
     </tr>
     <tr>
@@ -60,12 +60,12 @@ category: tentative
 
 <pre>
     <a href="/ddbj/features.html#source">source</a>        1..365
-                  /<a href="/ddbj/qualifiers.html#country">country</a>="<span class="red">Japan</span>"
-                  /<a href="/ddbj/qualifiers.html#haplotype">haplotype</a>="<span class="green">A</span>"
+                  /<a href="/ddbj/qualifiers.html#country">country</a>="Japan"
+                  /<a href="/ddbj/qualifiers.html#haplotype">haplotype</a>="A"
                   /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
                   /<a href="/ddbj/qualifiers.html#organism">organism</a>="Felis catus"
     <a href="/ddbj/features.html#variation">variation</a>     124
                   /<a href="/ddbj/qualifiers.html#compare">compare</a>="AB012345.1"
-                  /<a href="/ddbj/qualifiers.html#frequency">frequency</a>="<span class="blue">75</span> in <span class="blue">113</span>"
+                  /<a href="/ddbj/qualifiers.html#frequency">frequency</a>="75 in 113"
                   /<a href="/ddbj/qualifiers.html#replace">replace</a>="t"
 </pre>
