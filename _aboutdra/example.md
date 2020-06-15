@@ -22,7 +22,7 @@ Read composition
 
 |  Read Index : |  0  |  1  |
 |  Read : |  TCAG  |  ATAGAGTTGATCCTGGCTCAT……………  |
-|  Base Coordinate :  |  1  |  {::nomarkdown}<div class="base_left">5</div><div class="base_right">80</div>{:/}  |
+|  Base Coordinate :  |  1  |  {::nomarkdown}<div class="float-left">5</div><div class="float-right">80</div>{:/}  |
 |  Read Type :  |  Adapter  |  Forward  |
 
 #### メタデータ
@@ -140,7 +140,7 @@ Read composition
 
 |  Read Index :  |  0  |
 |  Read :  |  ATAGAGTTGATCCTGG……………CCTGGCTCA  |
-|  Base Coordinate :  |  {::nomarkdown}<div class="base_left">１</div><div class="base_right">72</div>{:/} |
+|  Base Coordinate :  |  {::nomarkdown}<div class="float-left">１</div><div class="float-right">72</div>{:/} |
 |  Read Type :  |  Forward  |
 
 #### メタデータ
@@ -181,7 +181,7 @@ Read composition
 
 |  Read Index :  |  0  |  1  |
 |  Read :  |  ATAGAGTTGATCCTGG……………  |  CCTGGCTCATCAGTTGAT……………  |
-|  Base Coordinate :  |  1  |  {::nomarkdown}<div class="base_left">101</div><div class="base_right">200</div>{:/} |
+|  Base Coordinate :  |  1  |  {::nomarkdown}<div class="float-left">101</div><div class="float-right">200</div>{:/} |
 |  Read Type :  |  Forward  |  Reverse  |
 
 #### メタデータ
@@ -291,7 +291,7 @@ Read composition
 
 |  Read Index :  |  0  |
 |  Read :  |  TTGATCCTGG……………CGCTCA  |
-|  Base Coordinate :  |  {::nomarkdown}<div class="base_left">1</div><div class="base_right">50</div>{:/}  |
+|  Base Coordinate :  |  {::nomarkdown}<div class="float-left">1</div><div class="float-right">50</div>{:/}  |
 |  Read Type :  |  Forward  |
 
 #### メタデータ
@@ -332,7 +332,7 @@ Read composition
 
 |  Read Index :  |  0  |  1  |
 |  Read :  |  ATCCTGG……………  |  CATCAGTTGAT……………  |
-|  Base Coordinate :  |  1  |  {::nomarkdown}<div class="base_left">26</div><div class="base_right">50</div>{:/}  |
+|  Base Coordinate :  |  1  |  {::nomarkdown}<div class="float-left">26</div><div class="float-right">50</div>{:/}  |
 |  Read Type :  |  Forward  |  Forward  |
 
 #### メタデータ
@@ -380,7 +380,7 @@ Read composition
 
 |  Read Index :  |  0  |
 |  Read :  |  AGCCGTATATAG……………CGTCAGAA  |
-|  Base Coordinate :  |  {::nomarkdown}<div class="base_left">1</div><div class="base_right">(x)</div>{:/} |
+|  Base Coordinate :  |  {::nomarkdown}<div class="float-left">1</div><div class="float-right">(x)</div>{:/} |
 |  Read Type :  |  Forward  |
 
 #### メタデータ
@@ -541,7 +541,7 @@ Read composition
 
 |  Read Index :  |  0  |  1  |
 |  Read :  |  ATCCGG  |  CATCAGTTGAT…………………………………………………  |
-|  Base Coordinate :  |  1  |  {::nomarkdown}<div class="base_left">7</div><div class="base_right">50</div>{:/} |
+|  Base Coordinate :  |  1  |  {::nomarkdown}<div class="float-left">7</div><div class="float-right">50</div>{:/} |
 |  Read Type :  |  Primer  |  Linker <span class="red">(少なくとも一つの application を持っている必要がある)</span>  |
 
 ### 矛盾する塩基座標を持つリード <a name="inconsistent_base"></a>
