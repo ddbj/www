@@ -332,6 +332,13 @@ input, textarea, select, button {
   /* 幅を調整 */ }
   .md-content .highlight {
     overflow: auto; }
+  .md-content a[href^="http"]:after, .md-content a[href^="//"]:after {
+    content: '';
+    background-image: url(/www/assets/images/parts/external_link.jpeg);
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0 .3rem;
+    display: inline-block; }
   .md-content img {
     width: 100%; }
   .md-content .size-optimize img {
@@ -363,6 +370,17 @@ input, textarea, select, button {
     font-size: 1.6rem;
     border-bottom: 2px solid #FEC091;
     margin-bottom: 1.6rem; }
+  .md-content h2, .md-content h3 {
+    cursor: pointer; }
+    .md-content h2:after, .md-content h3:after {
+      content: '';
+      background-image: url(/www/assets/images/parts/link.jpeg);
+      width: 1.6rem;
+      height: 1.6rem;
+      margin: 0 .3rem;
+      display: none; }
+    .md-content h2:hover:after, .md-content h3:hover:after {
+      display: inline-block; }
   .md-content ul li {
     padding: .4rem 0;
     line-height: 1.6;

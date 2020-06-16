@@ -34,7 +34,7 @@ DDBJ は、1980年代の事業開始当初から、欧州の EMBL-Bank/[EBI](htt
     <tr>
       <th>Next generation reads</th>
       <td><a href="/dra/index.html">Sequence Read Archive</a></td>
-      <td rowspan="5"><a href="https://www.ebi.ac.uk/ena">European Nucleotide Archive (ENA)</a></td>
+      <td rowspan="5" class="borderbtm"><a href="https://www.ebi.ac.uk/ena">European Nucleotide Archive (ENA)</a></td>
       <td><a href="//trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?">Sequence Read Archive</a></td>
     </tr>
     <tr>

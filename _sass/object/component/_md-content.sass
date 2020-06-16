@@ -5,7 +5,14 @@ $MARGIN_BOTTOM: 1rem
   line-height: 1.8
   .highlight
     overflow: auto
-
+  a[href^="http"],a[href^="//"]
+    &:after
+      content: ''
+      background-image: url(/www/assets/images/parts/external_link.jpeg)
+      width: 1.6rem
+      height: 1.6rem
+      margin: 0 .3rem
+      display: inline-block
   img
     width: 100%
   .size-optimize
@@ -39,6 +46,18 @@ $MARGIN_BOTTOM: 1rem
     font-size: 1.6rem
     border-bottom: 2px solid $COLOR_KEY_PALE
     margin-bottom: 1.6rem
+  h2,h3
+    cursor: pointer
+    &:after
+      content: ''
+      background-image: url(/www/assets/images/parts/link.jpeg)
+      width: 1.6rem
+      height: 1.6rem
+      margin: 0 .3rem
+      display: none
+    &:hover
+      &:after
+        display: inline-block
 
   ul
     li
