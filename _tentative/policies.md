@@ -42,13 +42,10 @@ DDBJ では[情報・システム研究機構](http://www.rois.ac.jp/) (ROIS) �
 ヒトを対象としたデータを登録する前に、研究対象者とのインフォームド・コンセントに基づき、データ公開に際してアクセス制限が必要かどうかを検討してください。
 
 アクセス制限が必要な場合  
-: アクセス制限データベース [Japanese Genotype-phenotype Archive (JGA)](/jga/index.html) へご登録ください。  
-JGA にデータを登録するためには、事前に[科学技術振興機構 バイオサイエンスデータベースセンター（NBDC）ヒトデータ審査委員会事務局](https://humandbs.biosciencedbc.jp/data-submission)に登録予定データの提供申請書を提出し、委員会で審査の上、承認されている必要があります。
+: アクセス制限データベース [Japanese Genotype-phenotype Archive (JGA)](/jga/index.html) へご登録ください。<br>JGA にデータを登録するためには、事前に[科学技術振興機構 バイオサイエンスデータベースセンター（NBDC）ヒトデータ審査委員会事務局](https://humandbs.biosciencedbc.jp/data-submission)に登録予定データの提供申請書を提出し、委員会で審査の上、承認されている必要があります。
 
 アクセス制限が必要ではない場合  
-: 非アクセス制限データベースである [DDBJ Sequence Read Archive (DRA)](/dra/index.html)、または、[DDBJ データベース](/ddbj/websub.html)へご登録ください。  
-個人識別符号（\*2）に該当するデータを非アクセス制限データベースへ登録するためには、事前に [NBDC ヒトデータ審査委員会事務局](https://humandbs.biosciencedbc.jp/data-submission)に登録予定データの提供申請書を提出し、委員会で審査の上、承認されている必要があります。原則として「[登録の前に](#before)」の確認項目二点に加え、インフォームド・コンセント説明同意文書内にデータがデータベースから制限なく一般公開される旨が記載されている必要があります。  
-個人識別符号に該当しないデータ登録に対して審査を希望する場合は [NBDC ヒトデータ審査委員会事務局](https://humandbs.biosciencedbc.jp/data-submission)にお問い合わせください。
+: 非アクセス制限データベースである [DDBJ Sequence Read Archive (DRA)](/dra/index.html)、または、[DDBJ データベース](/ddbj/websub.html)へご登録ください。<br>個人識別符号（\*2）に該当するデータを非アクセス制限データベースへ登録するためには、事前に [NBDC ヒトデータ審査委員会事務局](https://humandbs.biosciencedbc.jp/data-submission)に登録予定データの提供申請書を提出し、委員会で審査の上、承認されている必要があります。原則として「[登録の前に](#before)」の確認項目二点に加え、インフォームド・コンセント説明同意文書内にデータがデータベースから制限なく一般公開される旨が記載されている必要があります。<br>個人識別符号に該当しないデータ登録に対して審査を希望する場合は [NBDC ヒトデータ審査委員会事務局](https://humandbs.biosciencedbc.jp/data-submission)にお問い合わせください。
 
 \*2 個人識別符号については [NBDC の FAQ](https://humandbs.biosciencedbc.jp/faq#faq-5) を参照してください。
 個人識別符号の定義は[個人情報保護委員会](//www.ppc.go.jp/)の[「個人情報の保護に関する法律についてのガイドライン（通則編）」](//www.ppc.go.jp/personal/legal/)に示されています。  
@@ -105,8 +102,7 @@ JGA にデータを登録するためには、事前に[科学技術振興機構
 ただし、以下の点についてご注意ください。
 
 個別の配列データを引用する場合  
-: 通常は[アクセッション番号](/acc_def.html)を、必要に応じて、そのバージョンとともに引用することで十分です。  
-個別のデータに関して詳細な内容について言及する場合は各配列データの [primary citation](/ddbj/submission.html#pcite) を引用することが適切です。
+: 通常は[アクセッション番号](/acc_def.html)を、必要に応じて、そのバージョンとともに引用することで十分です。<br>個別のデータに関して詳細な内容について言及する場合は各配列データの [primary citation](/ddbj/submission.html#pcite) を引用することが適切です。
 
 DDBJ センターが提供する個別のサービスについて引用する場合  
 : 通常は[各サービスに関するオリジナル論文](/references.html)を引用する方が適切です。
@@ -153,8 +149,8 @@ DDBJ は GenBank や EMBL-Bank 同様なんらの利用制限も付加しませ�
 (EPO)、 [米国特許商標庁](https://www.uspto.gov/) (USPTO) が受理し公開可能となった配列データも DDBJ から公開されます。
 
 参照  
-: 特許出願に含まれる塩基配列の公開例:[DL000001](http://getentry.ddbj.nig.ac.jp/getentry/na/DL000001/?filetype=html)<br>
-  [特許出願に含まれる配列データの提供](/ddbj/pat-data.html)
+: 特許出願に含まれる塩基配列の公開例:[DL000001](http://getentry.ddbj.nig.ac.jp/getentry/na/DL000001/?filetype=html)
+: [特許出願に含まれる配列データの提供](/ddbj/pat-data.html)
 
 そのため、当該配列が JPO/KIPO/EPO/USPTO への出願書類に記載されている場合、DDBJ に別途ご登録いただく必要はございません。
 
@@ -209,3 +205,4 @@ DDBJ センターは 提供するデータが正しくあるべく維持に努�
 ## 推奨するブラウザ
 
 DDBJ センターウェブサイトとウェブサービスの利用には [Firefox](https://www.mozilla.org/ja/firefox/all/) と [Chrome](https://www.google.com/chrome/browser/desktop/index.html)の使用を推奨いたします。推奨するブラウザは予告なく変更する場合があります。
+

@@ -127,10 +127,22 @@ AGD XML schema: [AGD xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
 AGD メタデータのうち以下のオブジェクトは登録の概要を示すため，データの制限共有開始後に公開されます。
 
-: Submission: 登録者の連絡先以外の全ての内容
-: Study: 全ての内容
-: Data set: 全ての内容と含まれる Sample 数とファイルサイズ。
-: Policy: 全ての内容
+{::options parse_block_html="true" /}
+<div class="dl-list">
+
+Submission: 
+: 登録者の連絡先以外の全ての内容
+
+Study: 
+: 全ての内容
+
+Data set: 
+: 全ての内容と含まれる Sample 数とファイルサイズ。
+
+Policy: 
+: 全ての内容
+
+</div>
 
 ### Submission
 
@@ -201,3 +213,4 @@ Sample-Analysis セットでデータ登録をする場合は [JGA チームに�
 ## 登録の更新
 
 登録を更新するためには [AGD チームに連絡](/contact.html)します。
+
