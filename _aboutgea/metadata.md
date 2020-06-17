@@ -3,7 +3,6 @@ layout: indexed_content
 title: Metadata
 pathname: metadata
 category: aboutgea
-pdf: https://www.ddbj.nig.ac.jp/pdf/gea/metadata.pdf
 ---
 
 ## MAGE-TAB

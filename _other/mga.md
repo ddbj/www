@@ -3,7 +3,6 @@ layout: indexed_content
 title: MGA
 pathname: mga
 category: other
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/mga.pdf
 ---
 
 <span class="red">**\[重要\] MGA データの新規登録は終了しました。**</span>

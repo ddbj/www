@@ -3,7 +3,6 @@ layout: indexed_content
 title: INSDC standards for genome assembly submission
 pathname: assembly-e
 category: tentative
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/assembly-e.pdf
 ---
 
 # INSDC standards for genome assembly submission

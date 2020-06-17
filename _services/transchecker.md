@@ -2,7 +2,6 @@
 layout: indexed_content
 title: transChecker ユーザーマニュアル
 category: services
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/transchecker.pdf
 ---
 
 transChecker は Mass Submission System (MSS) を利用して DDBJ に登録する際に必要な

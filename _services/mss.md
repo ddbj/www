@@ -2,7 +2,6 @@
 layout: indexed_content
 title: MSS - Mass Submission System
 category: services
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/mss.pdf
 ---
 
 <span class="red">ヒトを対象とした研究データの登録について</span>

@@ -3,7 +3,6 @@ layout: indexed_content
 title: 配列の記載に用いる略号
 pathname: code
 category: flatfile
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/code.pdf
 ---
 
 ## 塩基

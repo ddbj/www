@@ -3,7 +3,6 @@ layout: indexed_content
 title: TLS
 pathname: tls
 category: datacategories
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/tls.pdf
 ---
 
 2016年から INSDC では 16S rRNA または、他の特定 locus を標的とした配列で構成され、主として operational

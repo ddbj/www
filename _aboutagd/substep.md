@@ -3,7 +3,6 @@ layout: indexed_content
 title: 登録手順
 pathname: substep
 category: aboutagd
-pdf: https://www.ddbj.nig.ac.jp/pdf/agd/substep.pdf
 ---
 
 ## AGD 概要

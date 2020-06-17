@@ -3,7 +3,6 @@ layout: indexed_content
 title: Organism qualifier に記載する生物名
 pathname: organism
 category: flatfile
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/organism.pdf
 ---
 
 organism qualifier には「生物名」として、taxonomy database において、種、もしくは、それ以下のランクで "scientific name" とされている名称を記載する必要があります。

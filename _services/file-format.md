@@ -2,7 +2,6 @@
 layout: indexed_content
 title: 登録ファイル形式
 category: services
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/file-format.pdf
 ---
 
 ## 配列ファイル<a name="sequence"></a>

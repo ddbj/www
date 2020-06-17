@@ -3,7 +3,6 @@ layout: indexed_content
 title: Example of metadata
 pathname: example-e
 category: aboutdra
-pdf: https://www.ddbj.nig.ac.jp/pdf/dra/example-e.pdf
 ---
 
 # Example of metadata

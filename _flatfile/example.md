@@ -3,7 +3,6 @@ layout: indexed_content
 title: 登録の見本
 pathname: example
 category: flatfile
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/example.pdf
 ---
 
 ## A: Ribosomal RNA, ITS, IGS

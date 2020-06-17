@@ -3,7 +3,6 @@ layout: indexed_content
 title: メタデータの例
 pathname: example
 category: aboutdra
-pdf: https://www.ddbj.nig.ac.jp/pdf/dra/example.pdf
 ---
 
 {::options parse_block_html="true" /}

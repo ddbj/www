@@ -3,7 +3,6 @@ layout: indexed_content
 title: CON
 pathname: con
 category: datacategories
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/con.pdf
 ---
 
 [HTG](/ddbj/htg.html) または [WGS](/ddbj/wgs.html)

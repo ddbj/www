@@ -2,7 +2,6 @@
 layout: indexed_content
 title: 登録データの修正・更新
 category: services
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/updt.pdf
 ---
 
 [登録データ種別](/data-categories.html)をご確認ください。

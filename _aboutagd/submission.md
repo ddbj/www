@@ -3,7 +3,6 @@ layout: indexed_content
 title: AGD への登録
 pathname: submission
 category: aboutagd
-pdf: https://www.ddbj.nig.ac.jp/pdf/agd/submission.pdf
 ---
 
 ## 登録概要

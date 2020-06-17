@@ -3,7 +3,6 @@ layout: indexed_content
 title: 利用手順
 pathname: download
 category: aboutjga
-pdf: https://www.ddbj.nig.ac.jp/pdf/jga/download.pdf
 ---
 
 ## JGA データの利用申請

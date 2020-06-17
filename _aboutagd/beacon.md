@@ -3,7 +3,6 @@ layout: indexed_content
 title: GA4GH Beacon
 pathname: beacon
 category: aboutagd
-pdf: https://www.ddbj.nig.ac.jp/pdf/agd/beacon.pdf
 ---
 
 ## GA4GH Beacon

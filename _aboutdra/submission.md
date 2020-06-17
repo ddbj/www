@@ -3,7 +3,6 @@ layout: indexed_content
 title: DDBJ Sequence Read Archive Handbook
 pathname: submission
 category: aboutdra
-pdf: https://www.ddbj.nig.ac.jp/pdf/dra/submission.pdf
 ---
 
 # DDBJ Sequence Read Archive

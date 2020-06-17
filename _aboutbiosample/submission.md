@@ -3,7 +3,6 @@ layout: indexed_content
 title: DDBJ BioSample Handbook
 pathname: submission
 category: aboutbiosample
-pdf: https://www.ddbj.nig.ac.jp/pdf/aboutbiosample/submission.pdf
 ---
 
 ## 概要

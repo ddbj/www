@@ -2,7 +2,6 @@
 layout: indexed_content
 title: 塩基配列の登録
 category: services
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/submission.pdf
 ---
 
 ## 塩基配列登録の前に

@@ -3,7 +3,6 @@ layout: indexed_content
 title: Accepted Data File Formats
 pathname: datafile
 category: aboutgea
-pdf: https://www.ddbj.nig.ac.jp/pdf/gea/datafile.pdf
 ---
 
 ## ファイル準備における注意点

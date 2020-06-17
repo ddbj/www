@@ -3,7 +3,6 @@ layout: indexed_content
 title: Submit microarray experiment
 pathname: submit-array
 category: aboutgea
-pdf: https://www.ddbj.nig.ac.jp/pdf/gea/submit-array.pdf
 ---
 
 ## GEA 登録の流れ

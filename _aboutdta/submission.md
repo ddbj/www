@@ -3,7 +3,6 @@ layout: indexed_content
 title: Trace Archive
 pathname: submission
 category: aboutdta
-pdf: https://www.ddbj.nig.ac.jp/pdf/dta/submission.pdf
 ---
 
 ## Trace Archive の概要
