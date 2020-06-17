@@ -3,7 +3,6 @@ layout: indexed_content
 title: DDBJ Sequence Read Archive Handbook
 pathname: submission
 category: aboutdra
-pdf: https://www.ddbj.nig.ac.jp/pdf/dra/submission.pdf
 ---
 
 # DDBJ Sequence Read Archive
@@ -112,12 +111,12 @@ SRA にデータを登録する際にはこの Center Name が必要です。
 
 登録者の名前とメールアドレスのリストです。責任者 (principal investigator) を含めてください。登録に関する連絡は記入された全てのアドレスに対して行われます。<span class="red">責任者以外の人が登録作業をした場合、その作業者を含めてください。</span>登録者情報は公開されません。登録者情報を明示したい場合は BioProject に記載してください。
 
-[Name](#Contact_Name)<a name="Contact_Name"><span class="red">*</span>  
+[Name](#Contact_Name)<a name="Contact_Name"></a><span class="red">*</span>  
 : 登録者の名前。
 
 <!-- end list -->
 
-[E-mail](#Contact_E-mail)<a name="Contact_E-mail"><span class="red">*</span>  
+[E-mail](#Contact_E-mail)<a name="Contact_E-mail"></a><span class="red">*</span>  
 : 登録者の電子メールアドレス。
 
 ### BioProject <a name="BioProject"></a>
@@ -398,7 +397,7 @@ Run に含めるデータファイルを選択します。
 
 ### Analysis <a name="Analysis"></a>
 
-[Alias](#Analysis_Alias)<a name="Analysis_Alias"></a><a name="MD5_Checksum"></a>  
+[Alias](#Analysis_Alias)<a name="Analysis_Alias"></a>
 : 自動的に Analysis に付けられる名前。アクセッション番号のないオブジェクトは Alias で参照されます。
 
 <!-- end list -->
@@ -805,7 +804,7 @@ BioProject/BioSample/DRA の登録方法 (6分50秒、作成:2015年)
 
 ### データ構成
 
-オブジェクトの構成例は[こちら](#%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E6%A7%8B%E6%88%90%E4%BE%8B)をご覧ください。 Submission 中では１つの BioProject のみ登録できます。 BioSample、Experiment、Run は複数登録することができます。サンプル数を中心に考えるとデータを構成しやすくなります。
+オブジェクトの構成例は[こちら](#index_id2)をご覧ください。 Submission 中では１つの BioProject のみ登録できます。 BioSample、Experiment、Run は複数登録することができます。サンプル数を中心に考えるとデータを構成しやすくなります。
 
 ここでは３つのバクテリア菌株のゲノム配列をペアーエンドでシークエンスしたデータを登録する場合を例に説明します。
 
@@ -1513,11 +1512,11 @@ Run と同様登録が完了した Analysis データファイルの追加・変
 
 Experiment、Run や Analysis などのオブジェクトを削除する場合は [DRA チームに連絡してください]({{ site.url }}{{ site.baseurl }}/aboutus/contact.html)。
 
-## 補足: MD5 値
+## 補足: MD5 値 <a name="supplement-md5"></a>
 
 MD5 (Message Digest Algorithm 5) はハッシュ関数であり、与えられたファイルに対してハッシュ値 (MD5値、32桁の英数字) を出力します。ファイルが破損していると MD5 値が変化します。 DRA では、到着したファイルの MD5 値の一致をチェックすることで、ファイルの破損がないかどうか確認しています。
 
-### [MD5 値の取得 (Linux)](javascript:void(0))
+### [MD5 値の取得 (Linux)](javascript:void(0)) <a name="obtain-md5-number-linux"></a>
 
 ファイルの MD5 値を取得します。
 
@@ -1527,7 +1526,7 @@ $ md5sum file1 file2
 B636E0063E29709B6082F324C76D0911 file2
 ```
 
-### [MD5 値の取得 (Mac OS X)](javascript:void(0))
+### [MD5 値の取得 (Mac OS X)](javascript:void(0)) <a name="obtain-md5-number-mac-os-x"></a>
 
 ファイルの MD5 値を取得します。
 
@@ -1537,7 +1536,7 @@ $ md5 file1 file2
 B636E0063E29709B6082F324C76D0911 file2
 ```
 
-### [MD5 値の取得 (Windows)](javascript:void(0)) <a name="supplement-md5"></a>
+### [MD5 値の取得 (Windows)](javascript:void(0)) <a name="obtain-md5-number-windows"></a>
 
 [Fsum Frontend (http://sourceforge.net/projects/fsumfe/)](http://sourceforge.net/projects/fsumfe/)
 をインストールし、起動します。  
