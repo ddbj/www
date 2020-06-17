@@ -3,7 +3,6 @@ layout: indexed_content
 title: TSA
 pathname: tsa
 category: datacategories
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/tsa.pdf
 ---
 
 2008年から INSDC では、アセンブルされた cDNA 配列データを、Transcriptome Shotgun Assembly

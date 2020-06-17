@@ -3,7 +3,6 @@ layout: indexed_content
 title: Controlled vocabulary for /country qualifier
 pathname: country-e
 category: tentative
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/country-e.pdf
 ---
 
 

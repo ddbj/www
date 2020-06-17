@@ -3,7 +3,6 @@ layout: indexed_content
 title: JGA への登録
 pathname: submission
 category: aboutjga
-pdf: https://www.ddbj.nig.ac.jp/pdf/jga/submission.pdf
 ---
 
 ## 登録概要

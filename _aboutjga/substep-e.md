@@ -3,7 +3,6 @@ layout: indexed_content
 title: JGA submission steps
 pathname: substep-e
 category: aboutjga
-pdf: https://www.ddbj.nig.ac.jp/pdf/jga/substep.pdf
 ---
 
 <div id="page" class="top">

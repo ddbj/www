@@ -3,7 +3,6 @@ layout: indexed_content
 title: Guideline to use /locus_tag qualifier
 pathname: locus_tag-e
 category: tentative
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/locus_tag-e.pdf
 ---
 
 # Guideline to use /locus_tag qualifier

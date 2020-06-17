@@ -3,7 +3,6 @@ layout: indexed_content
 title: 登録手順
 pathname: substep
 category: aboutjga
-pdf: https://www.ddbj.nig.ac.jp/pdf/jga/substep.pdf
 ---
 
 ## JGA 概要

@@ -9,10 +9,16 @@ $MARGIN_BOTTOM: 1rem
     &:after
       content: ''
       background-image: url(/www/assets/images/parts/external_link.jpeg)
+      background-repeat: no-repeat
       width: 1.6rem
       height: 1.6rem
-      margin: 0 .3rem
+      margin: 0 .4rem
       display: inline-block
+      background-size: 1.4rem
+      vertical-align: middle
+  a[href^="http://ddbj.nig.ac.jp"]
+    &:after
+      display: none
   img
     width: 100%
   .size-optimize

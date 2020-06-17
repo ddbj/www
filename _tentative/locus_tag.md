@@ -3,7 +3,6 @@ layout: indexed_content
 title: /locus_tag qualifier の記載法
 pathname: locus_tag
 category: tentative
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/locus_tag.pdf
 ---
 
 ## 背景

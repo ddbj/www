@@ -3,7 +3,6 @@ layout: indexed_content
 title: GEA への登録
 pathname: overview
 category: aboutgea
-pdf: https://www.ddbj.nig.ac.jp/pdf/gea/overview.pdf
 ---
 
 ## 概要

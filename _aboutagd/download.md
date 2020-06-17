@@ -3,7 +3,6 @@ layout: indexed_content
 title: 利用手順
 pathname: download
 category: aboutagd
-pdf: https://www.ddbj.nig.ac.jp/pdf/agd/download.pdf
 ---
 
 ## AGD データの利用申請

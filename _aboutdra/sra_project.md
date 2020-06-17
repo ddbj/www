@@ -3,7 +3,6 @@ layout: indexed_content
 title: DRA 共同研究プロジェクトデータの取扱い
 pathname: sra_project
 category: aboutdra
-pdf: https://www.ddbj.nig.ac.jp/pdf/dra/sra_project.pdf
 ---
 
 ## 共同研究プロジェクトデータの取り扱い

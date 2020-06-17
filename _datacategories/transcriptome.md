@@ -3,7 +3,6 @@ layout: indexed_content
 title: Transcriptome Project のデータ登録
 pathname: transcriptome
 category: datacategories
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/transcriptome.pdf
 ---
 
 ## Transcriptome Project のデータ登録

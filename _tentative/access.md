@@ -26,5 +26,4 @@ TEL : 055-981-6853
 
 ![]({{ site.baseurl }}/assets/images/center/cibmap.png)
 
-[遺伝研までのアクセス
-(国立遺伝学研究所のページに移動します)](http://www.nig.ac.jp/nig/ja/about-nig/access_ja)
+[遺伝研までのアクセス (国立遺伝学研究所のページに移動します)](http://www.nig.ac.jp/nig/ja/about-nig/access_ja)

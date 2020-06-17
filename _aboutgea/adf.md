@@ -3,7 +3,6 @@ layout: indexed_content
 title: アレイデザイン
 pathname: adf
 category: aboutgea
-pdf: https://www.ddbj.nig.ac.jp/pdf/gea/adf.pdf
 ---
 
 ## Array design format (ADF) ファイル

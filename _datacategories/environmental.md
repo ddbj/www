@@ -3,7 +3,6 @@ layout: indexed_content
 title: Environmental sequence の登録
 pathname: environmental
 category: datacategories
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/environmental.pdf
 ---
 
 ## Environmental sequence の登録

@@ -3,7 +3,6 @@ layout: indexed_content
 title: Reviewer Access
 pathname: reviewer-access
 category: aboutgea
-pdf: https://www.ddbj.nig.ac.jp/pdf/gea/reviewer-access.pdf
 ---
 
 ## Reviewer access token

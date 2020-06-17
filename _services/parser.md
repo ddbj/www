@@ -2,7 +2,6 @@
 layout: indexed_content
 title: Parser ユーザーマニュアル
 category: services
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/parser.pdf
 ---
 
 Parser は、Mass Submission System (MSS) を利用して DDBJ に登録する際に必要な

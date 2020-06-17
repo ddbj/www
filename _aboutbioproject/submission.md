@@ -3,7 +3,6 @@ layout: indexed_content
 title: DDBJ BioProject Handbook
 pathname: submission
 category: aboutbioproject
-pdf: https://www.ddbj.nig.ac.jp/pdf/bioproject/submission.pdf
 ---
 
 ## 概要

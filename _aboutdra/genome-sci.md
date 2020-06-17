@@ -3,7 +3,6 @@ layout: indexed_content
 title: ゲノム支援
 pathname: genome-sci
 category: aboutdra
-pdf: https://www.ddbj.nig.ac.jp/pdf/dra/genome-sci.pdf
 ---
 
   - [メタデータ記入用エクセルファイル](#excel)
