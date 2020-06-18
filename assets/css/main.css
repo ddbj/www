@@ -429,6 +429,12 @@ input, textarea, select, button {
       font-weight: bold; }
     .md-content dl + dt {
       margin-top: 1rem; }
+  .md-content .dl-list {
+    margin-bottom: 2rem; }
+    .md-content .dl-list dt {
+      float: left; }
+    .md-content .dl-list dd {
+      margin-left: 8.5rem; }
   .md-content caption, .md-content figcaption, .md-content .tablecaption {
     caption-side: bottom;
     font-size: 1.2rem;
