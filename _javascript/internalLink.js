@@ -13,11 +13,14 @@ export default function internalLink() {
         let indexList = document.createElement("ul");
         let listSrc = "";
         let subListSrc = ""; //h3タグを取得しておくための変数
-
         for (let i = 0; i < hTags.length; i++) {
           let theHeading = hTags[i];
           const id = "index_id" + i;
           theHeading.setAttribute("id", id); //リンクで飛べるようにIDをつける
+          //ここのid名がhref属性に指定されているaタグをh2、もしくはh3の後に挿入
+          const a = document.createElement('a');
+          theHeading.appendChild(a);
+          a.setAttribute("href","#" + id);
           if (theHeading.tagName === "H2") {
             if (subListSrc !== "") {
               //h3リストが生成されていれば
