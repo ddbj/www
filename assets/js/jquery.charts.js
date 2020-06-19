@@ -2149,11 +2149,11 @@ function makeSubmission() {
     
     } // for(var y = year_max-span; y <= year_max; y++)
 
-    html_tables += '<h3 id="total">By year (' + year_min + '-' + year_max + ')</h3>' + '<div id="chart_total"></div><div id="table_total"></div>';
+    html_tables += '<h2 id="total">By year (' + year_min + '-' + year_max + ')</h2>' + '<div id="chart_total"></div><div id="table_total"></div>';
     html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=881663501">Source data</a></p>';
 
     /* グラフ作成 */
-    $("#submission_stat_area").append(html_tables);
+    $("#stat_area").append(html_tables);
 
     google.charts.setOnLoadCallback(drawDDBJSub);
     google.charts.setOnLoadCallback(drawDDBJSubTable);
