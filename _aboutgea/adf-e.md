@@ -5,204 +5,14 @@ pathname: adf-e
 category: aboutgea
 ---
 
-<div id="page" class="top">
-
-<div id="header" class="clearfix">
-
-<div id="header-top">
-
-[![](/images/parts/ddbj-logo-white.svg)](/index-e.html "DNA Data Bank of Japan")
-
-<div id="header-top-left">
-
-<span class="resources-btn">Services**</span>
-
-</div>
-
-<div id="header-top-right">
-
-  - [Login & Submit](https://ddbj.nig.ac.jp/D-way)
-  - [Policies and Disclaimers](/policies-e.html)
-  - [Contact](/contact-e.html)
-  - [Japanese](/gea/adf.html)
-
-</div>
-
-</div>
-
-<div class="resources-contents">
-
-<div class="boxContainer">
-
-<div class="resources-box">
-
-  - ### ![](/images/logos/service-org.svg)Search
-
-  - [getentry](http://getentry.ddbj.nig.ac.jp/top-e.html "Retrieve sequence records by accession numbers")
-
-  - [ARSA](http://ddbj.nig.ac.jp/arsa/ "Retrieve sequence and annotation by keywords")
-
-  - [DRA
-    Search](http://ddbj.nig.ac.jp/DRASearch "Search and retrieve sequencing data.")
-
-  - [TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en "Search unified taxonomy database")
-
-  - [BLAST](http://blast.ddbj.nig.ac.jp/blastn?lang=en "Search nucleotide sequences by sequence similarity")
-
-<!-- end list -->
-
-  - ### ![](/images/logos/wrench.svg)Analysis
-
-  - [Vector Screening
-    System](http://ddbj.nig.ac.jp/vecscreen/ "Screen vector sequences")
-
-  - [ClustalW](http://clustalw.ddbj.nig.ac.jp/index.php?lang=en "Multiple alignment and tree-making")
-
-  - [WABI (Web API for
-    Biology)](/search/help/wabi/wabi-e.html "Web API for using the search services of DDB")
-
-  - [DDBJ FTP
-    Site](ftp://ftp.ddbj.nig.ac.jp/ "Download public data by ftp")
-
-</div>
-
-<div class="resources-box">
-
-  - ### ![](/images/logos/database-org.svg)Databases
-
-  - [Annotated/Assembled Sequences
-    (DDBJ)](/ddbj/index-e.html "Annotated/Assembled Sequences (DDBJ)")
-
-  - [Sequence Read Archive
-    (DRA)](/dra/index-e.html "Sequence Read Archive")
-
-  - [Genomic Expression Archive
-    (GEA)](/gea/index-e.html "Genomic Expression Archive")
-
-  - [BioProject](/bioproject/index-e.html "BioProject")
-
-  - [BioSample](/biosample/index-e.html "BioSample")
-
-  - [Japanese Genotype-phenotype Archive
-    (JGA)](/jga/index-e.html "Japanese Genotype-phenotype Archive")
-
-  - [Submission portal
-    D-way](https://ddbj.nig.ac.jp/D-way "Submission portal D-way")
-
-<!-- end list -->
-
-  - ### ![](/images/logos/sc-org.svg)NIG SuperComputer
-
-  - [NIG
-    SuperComputer](https://sc.ddbj.nig.ac.jp/en "NIG SuperComputer")
-
-</div>
-
-<div class="resources-box dbcls">
-
-  - ### ![](/images/logos/dbcls-s.svg)DBCLS Services
-
-  - [AOE](http://aoe.dbcls.jp/en "Statistics and trends of gene expression data")
-
-  - [CRISPRdirect](https://crispr.dbcls.jp/ "Designing CRISPR/Cas9 guide RNA with reduced off-target sites")
-
-  - [DBCLS
-    SRA](http://sra.dbcls.jp/ "Statistics and trends of SRA data")
-
-  - [Gendoo](http://gendoo.dbcls.jp/ "Functional profiling of gene and disease features for omics analysis")
-
-  - [GGGenome](https://gggenome.dbcls.jp/en/ "A ultrafast sequence search")
-
-  - [GGRNA](https://ggrna.dbcls.jp/en/ "A Google-like, ultrafast search engine for genes and transcripts")
-
-  - [RefEx](http://refex.dbcls.jp/index.php?lang=en "A web tool for a comfortable search of reference data for gene expression analysis")
-
-</div>
-
-</div>
-
-</div>
-
-<div id="header-middle" class="clearfix">
-
-<div class="page-title">
-
-[Genomic Expression Archive](/gea/index-e.html)
-
-</div>
-
-<div class="search-box">
-
-<div id="search-box-flex">
-
-<div class="search-options-wrapper">
-
-BI-DDBJ Web Sites Annotated/Assembled Sequences Sequence Read Archive
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div id="header-bottom">
-
-  - [Home](/gea/index-e.html)
-  - [Submission
-    Overview![](/images/parts/arrow_down.svg)](/gea/overview-e.html)
-      - [Submit microarray experiment](/gea/submit-array-e.html)
-      - [Submit sequencing experiment](/gea/submit-seq-e.html)
-      - [Metadata](/gea/metadata-e.html)
-      - [Data File](/gea/datafile-e.html)
-      - [Validation](/gea/validation-e.html)
-      - [Example](/gea/example-e.html)
-      - [Array Design](/gea/adf-e.html)
-      - [Data matrix](/gea/matrix-e.html)
-      - [Reviewer Access](/gea/reviewer-access-e.html)
-  - [FAQ](/gea/faq-e.html)
-  - [Search
-    (AOE)![](/images/parts/arrow_down.svg)](http://aoe.dbcls.jp/en)
-      - [RefEx](http://refex.dbcls.jp/index.php?lang=en)
-      - [Search
-        (ArrayExpress)](https://www.ebi.ac.uk/arrayexpress/browse.html)
-  - [Downloads](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/gea)
-  - [About GEA](/gea/about-e.html)
-
-</div>
-
-</div>
-
-<div id="main" class="clearfix">
-
-<div id="breadcrumb" class="clearfix">
-
-  - [HOME](/gea/index-e.html "Genomic Expression Archive top page")
-  - \>
-  - Array Design
-
-</div>
-
-<div id="primary">
-
-<div id="page_main">
-
-<div id="book">
-
 # Array design
 
-<div class="section book">
-
-<div class="section chapter">
 
 ## Array design format (ADF) file
 
 The ADF (Array Design Format) file captures information about a
-microarray chip. The file contains two section, separated by a \[main\]
+microarray chip. The file contains two section, separated by a [main]
 tag:
-
-<div class="sub_index">
 
   - A multi-row metadata header (e.g. who submitted the array design,
     how the probes or composite "probe sets" were designed); followed by
@@ -211,19 +21,14 @@ tag:
     location (on spotted arrays), cross-references to other databases,
     where the probes map to in the genome, and so on.
 
-</div>
 
-The ADF file is always in tab-delimited text (\*.txt) format, and will
+The ADF file is always in tab-delimited text (*.txt) format, and will
 open in any spreadsheet program for viewing or editing.
 
 Here is a snippet of an ADF document:
 
-![A snippet of an ADF document](/images/magetab/adf1.png
-"A snippet of an ADF document")
+{% include image.html url="magetab/adf1.png" caption="A snippet of an ADF document" %}
 
-</div>
-
-<div class="section chapter">
 
 ## ADF metadata header
 
@@ -234,33 +39,27 @@ one of our ADF templates so you don't need to insert them from scratch.
 Please do not edit the headings, but fill in each field as much as
 possible, like the blue text below:
 
-![ADF metadata header](/images/magetab/adf2.png "ADF metadata header")
+{% include image.html url="magetab/adf2.png" caption="ADF metadata header" %}
 
-A glossary of the ADF header fields (\* denotes mandatory fields):
-
-<div class="main_table">
+A glossary of the ADF header fields (* denotes mandatory fields):
 
 | No. | ADF header field                  | What is it?                                                                                                                                                                                                                                                  | Allowed values                                                                                                                                                                                                  | Example                                                                                                                                                                                                          |
 | --- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | \* Array Design Name              | An informative title of the array design. Should include the name of the manufacturer (e.g. Agilent) or the lab which designed it, the species, version number, purpose of the array (e.g. genotyping), the number of probes/features (e.g 450k)             |                                                                                                                                                                                                                 | Agilent human micoRNA microarray miRBase Release 14.0, 8x15k (GridName 029297, 82 cols x 192 rows)                                                                                                               |
+| 1   | * Array Design Name              | An informative title of the array design. Should include the name of the manufacturer (e.g. Agilent) or the lab which designed it, the species, version number, purpose of the array (e.g. genotyping), the number of probes/features (e.g 450k)             |                                                                                                                                                                                                                 | Agilent human micoRNA microarray miRBase Release 14.0, 8x15k (GridName 029297, 82 cols x 192 rows)                                                                                                               |
 | 2   | Version                           | Version (or revision) number of the array design.                                                                                                                                                                                                            |                                                                                                                                                                                                                 | version 3.0                                                                                                                                                                                                      |
-| 3   | \* Provider                       | Name of the array design's submitter.                                                                                                                                                                                                                        |                                                                                                                                                                                                                 | Mishima Taro                                                                                                                                                                                                     |
-| 4   | \* Comment\[Organism\]            | The species from which the probe sequences were derived from.                                                                                                                                                                                                | Must use scientific name in [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi). Separate names by semicolon for multi-species arrays.                                                    | Homo sapiens                                                                                                                                                                                                     |
-| 5   | \* Comment\[Description\]         | A concise description of how the microarray is designed and what it is for. Include URLs to stable online resources if possible.                                                                                                                             |                                                                                                                                                                                                                 | This custom commercial microarray consists of 84881 (86205 total including 1324 control probes) 60-mer oligonucleotide probes derived from the genomes and EST database of Emiliania huxleyi strain (... etc...) |
-| 6   | \* Comment\[Public Release Date\] | Enter "Hold" to keep pre-published array designs private (inform us to release). Otherwise, insert the date of submission.                                                                                                                                   | Must use YYYY-MM-DD format for submission date.                                                                                                                                                                 | 2014-04-25                                                                                                                                                                                                       |
+| 3   | * Provider                       | Name of the array design's submitter.                                                                                                                                                                                                                        |                                                                                                                                                                                                                 | Mishima Taro                                                                                                                                                                                                     |
+| 4   | * Comment[Organism]            | The species from which the probe sequences were derived from.                                                                                                                                                                                                | Must use scientific name in [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi). Separate names by semicolon for multi-species arrays.                                                    | Homo sapiens                                                                                                                                                                                                     |
+| 5   | * Comment[Description]         | A concise description of how the microarray is designed and what it is for. Include URLs to stable online resources if possible.                                                                                                                             |                                                                                                                                                                                                                 | This custom commercial microarray consists of 84881 (86205 total including 1324 control probes) 60-mer oligonucleotide probes derived from the genomes and EST database of Emiliania huxleyi strain (... etc...) |
+| 6   | * Comment[Public Release Date] | Enter "Hold" to keep pre-published array designs private (inform us to release). Otherwise, insert the date of submission.                                                                                                                                   | Must use YYYY-MM-DD format for submission date.                                                                                                                                                                 | 2014-04-25                                                                                                                                                                                                       |
 | 7   | Printing Protocol                 | How the probes were printed on the array. Include URLs to stable online resources if possible. Especially important if you are submitting a custom array printed with non-propreitary methods.                                                               |                                                                                                                                                                                                                 | The 60-mer oligonucleotides were synthessized in situ using Agilent inkjet SurePrint technology. Four arrays were printed on each 1 x 3-inch glass slide (...etc...)                                             |
-| 8   | Technology Type                   | Printing/synthesis technology used when creating the microarray.                                                                                                                                                                                             | "in situ oligo features", "spotted antibody features", "spotted colony features", "spotted ds DNA features", "spotted protein features", "spotted\_ss\_PCR\_amplicon\_features", "spotted\_ss\_oligo\_features" | in situ oligo features                                                                                                                                                                                           |
+| 8   | Technology Type                   | Printing/synthesis technology used when creating the microarray.                                                                                                                                                                                             | "in situ oligo features", "spotted antibody features", "spotted colony features", "spotted ds DNA features", "spotted protein features", "spotted_ss_PCR_amplicon_features", "spotted_ss_oligo_features" | in situ oligo features                                                                                                                                                                                           |
 | 9   | Surface Type                      | The chemical coating on the surface of the substrate (see below). Probes are immobilised by the coating.                                                                                                                                                     | polylysine, aminosilane, "other surface type"                                                                                                                                                                   | polylysine                                                                                                                                                                                                       |
 | 10  | Substrate Type                    | The material/substrate of the microarray.                                                                                                                                                                                                                    | glass, nitrocellulose, nylon, silicon, "other substrate type"                                                                                                                                                   | glass                                                                                                                                                                                                            |
 | 11  | Sequence Polymer Type             | The polymer that makes up the probes.                                                                                                                                                                                                                        | DNA, RNA, protein                                                                                                                                                                                               | DNA                                                                                                                                                                                                              |
-| 12  | Term Source Name                  | In the ADF table, for each cross-reference provided, e.g. Reporter Database Entry \[uniprot\], the cross-referenced resource's name needs to be entered here, so the resource can be looked up via the URL in Term Source File (see header number 13 below). | External database names from this [allowed list](https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=1479684386)                                                       | uniprot                                                                                                                                                                                                          |
+| 12  | Term Source Name                  | In the ADF table, for each cross-reference provided, e.g. Reporter Database Entry [uniprot], the cross-referenced resource's name needs to be entered here, so the resource can be looked up via the URL in Term Source File (see header number 13 below). | External database names from this [allowed list](https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=1479684386)                                                       | uniprot                                                                                                                                                                                                          |
 | 13  | Term Source File                  | The URL where an external database resource mentioned in Term Source Name (see header number 12 above) is hosted.                                                                                                                                            | A valid URL.                                                                                                                                                                                                    | http://www.uniprot.org                                                                                                                                                                                           |
 
-</div>
 
-</div>
-
-<div class="section chapter">
 
 ## ADF table
 
@@ -270,20 +69,16 @@ where correct headings have been prefilled for you, saving you inserting
 them from scratch. Please don't change the column headings in the
 template.
 
-<div class="sub_index">
 
-  - [composite\_element\_array\_ADF\_template.xls](/files/magetab/adf/composite_element_array_ADF_template.xls)
-  - [commercial\_array\_header\_template.xls](/files/magetab/adf/commercial_array_header_template.xls)
-  - [reporter\_only\_array\_ADF\_template.xls](/files/magetab/adf/reporter_only_array_ADF_template.xls)
-  - [spotted\_array\_ADF\_template.xls](/files/magetab/adf/spotted_array_ADF_template.xls)
+  - [composite_element_array_ADF_template.xls](/files/magetab/adf/composite_element_array_ADF_template.xls)
+  - [commercial_array_header_template.xls](/files/magetab/adf/commercial_array_header_template.xls)
+  - [reporter_only_array_ADF_template.xls](/files/magetab/adf/reporter_only_array_ADF_template.xls)
+  - [spotted_array_ADF_template.xls](/files/magetab/adf/spotted_array_ADF_template.xls)
 
-</div>
-
-<div class="section section">
 
 ### Features, reporters and composite elements
 
-Features (for spotted arrays only):
+**Features (for spotted arrays only):**
 
 Each spot on the array is called a feature. The position of each feature
 is described by 4 coordinates, each has its dedicated column in the ADF
@@ -293,11 +88,9 @@ cannot be duplicated on an array. Include all features in your ADF file,
 even if there is nothing spotted there (e.g. control spots). Here is a
 schematic diagram showing the 4 coordinates:
 
-![image of the Block Column and Block Row
-coordinate](/images/magetab/adf_column.jpg
-"image of the Block Column and Block Row coordinate")
+{% include image.html url="magetab/adf_column.jpg" caption="image of the Block Column and Block Row coordinate" %}
 
-Reporters (mandatory, for all arrays):
+**Reporters (mandatory, for all arrays):**
 
 This is what is usually referred to as a "probe". Each reporter has a
 particular sequence and a defined role (experimental or control). Give
@@ -307,7 +100,7 @@ with "features", see above), where the same probe can be printed at
 multiple locations on the same array, so the same reporter name can be
 repeated at different feature locations.
 
-Composite elements (optional, for all arrays):
+**Composite elements (optional, for all arrays):**
 
 These allow you to provide an additional level of information showing
 which reporters are related, e.g. derived from the same gene or
@@ -321,20 +114,15 @@ because they are based on "probe sets" and not simply "probes".
 Here is a snippet from a hypothetical example of an array design,
 showing seven features, two reporters and one composite element:
 
-![Feature, reporter and composite element](/images/magetab/adf3.png
-"Feature, reporter and composite element")
+{% include image.html url="magetab/adf3.png" caption="Feature, reporter and composite element" %}
 
-</div>
-
-<div class="section section">
-
-### Annotation of reporters
+### Annotation of reporters <a name="ann-reporters"></a>
 
 Annotate each reporter by providing its sequence, cross-referenced
 accessions in external databases (e.g. RefSeq accession numbers of the
 cDNA sequences from which the reporters were designed), and/or its
 genomic mapping location. Use the Reporter Sequence column for the
-sequence, and one or more Reporter Database Entry \[xxx\] columns for
+sequence, and one or more Reporter Database Entry [xxx] columns for
 the cross-references and mapping location.
 
 If a reporter appears multiple times in an ADF table, e.g. for spotted
@@ -347,7 +135,7 @@ annotation blank. Do not put down custom values such as "NA", "empty" or
 "unmapped", as curators will validate the annotation values against
 expected formats and custom values will not be accepted.
 
-Reporter Sequence:
+**Reporter Sequence:**
 
 Use [single-letter IUPAC
 codes](http://www.bioinformatics.org/sms/iupac.html) for all arrays
@@ -358,17 +146,15 @@ spotted on the array), buffer-only or label-only should not have
 sequence annotation. See section below for more details on experimental
 and control reporters.
 
-Cross references to external databases:
+**Cross references to external databases:**
 
-Look up the abbreviated name of the cross-referenced database from [this
-allowed
-list](https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=1479684386),
+Look up the abbreviated name of the cross-referenced database from [this allowed list](https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=1479684386),
 and insert it inside the square brackets of the column heading Reporter
-Database Entry \[xxx\], e.g. Reporter Database Entry \[genbank\]. Then,
+Database Entry [xxx], e.g. Reporter Database Entry [genbank]. Then,
 fill the column with the appropriate accession. You can enter multiple
 accessions from the same database by separating them with semicolons,
 e.g. AJ12345;BX45678. For annotations from different database sources,
-they must be provided in separate Reporter Database Entry \[xxx\]
+they must be provided in separate Reporter Database Entry [xxx]
 columns. Don't forget to add the database name and URL to the Term
 Source Name and Term Source File fields of the ADF header.
 
@@ -379,15 +165,14 @@ look into adding it to the list of allowed databases.
 We rely on accession numbers and not free-text names, because accessions
 are usually stable and traceable (even for deprecated ones). Morever,
 each database usually enforces a certain format for the accessions,
-which makes computational data-mining a lot easier. E.g. [NCBI RefSeq
-curated cDNAs](https://www.ncbi.nlm.nih.gov/refseq/about/) always have
-accessions start with NM\_ followed by a few digits.
+which makes computational data-mining a lot easier. E.g. [NCBI RefSeq curated cDNAs](https://www.ncbi.nlm.nih.gov/refseq/about/) always have
+accessions start with NM_ followed by a few digits.
 
-Genomic mapping location:
+**Genomic mapping location:**
 
-Instead of an abbreviated database name, enter chromosome\_coordinate:
-inside the square brackets of Reporter Database Entry \[xxx\], e.g.
-Reporter Database Entry \[chromosome\_coordinate:GRCh38\]. Try to use
+Instead of an abbreviated database name, enter chromosome_coordinate:
+inside the square brackets of Reporter Database Entry [xxx], e.g.
+Reporter Database Entry [chromosome_coordinate:GRCh38]. Try to use
 official genome assembly names from public databases (ENA, GenBank or
 DDBJ), e.g
 [GRCh38](https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.38) for the
@@ -398,24 +183,18 @@ This is how the hypothetical reporter annotations would be like. Notice
 how you can enter multiple accessions from the same database by
 separating them with semicolons:
 
-![ADF annotation of reporters](/images/magetab/adf4.png
-"ADF annotation of reporters")
-
-</div>
-
-<div class="section section">
+{% include image.html url="magetab/adf4.png" caption="ADF annotation of reporters" %}
 
 ### Repoter role - experimental or control
 
 For each reporter, enter its role: experimental or control in the
-Reporter Group \[role\] column.
+Reporter Group [role] column.
 
 For each control reporter, describe what type of control it is in the
 Control Type column. (Do not fill in this column for any experimental
 reporters.) The allowed control type values taken from Experimental
 Factor Ontology (EFO). Here is a glossary:
 
-<div class="main_table">
 
 | Allowed terms                                                           | Meaning                                                                                                           |
 | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
@@ -428,85 +207,29 @@ Factor Ontology (EFO). Here is a glossary:
 | [array control spike calibration](http://www.ebi.ac.uk/efo/EFO_0000375) | E.g. the same spike sequence introduced at varying concentrations                                                 |
 | [array control design](http://www.ebi.ac.uk/efo/EFO_0005440)            | (when none of the above applies, i.e. a control was used, but no further details available)                       |
 
-</div>
 
 Here is an example of reporter roles in the ADF table:
 
-![Reporter roles](/images/magetab/adf5.png "Reporter roles")
-
-</div>
-
-<div class="section section">
+{% include image.html url="magetab/adf5.png" caption="Reporter role" %}
 
 ### Reporter grouping by species (multi-species ADFs only)
 
 Where reporters were designed from more than one species, you can
-indicate the species source in the Reporter Group \[species\] column.
+indicate the species source in the Reporter Group [species] column.
 Use species name from Latin binomial nomenclature where possible, e.g.
 Homo sapiens.
 
 An example of a microarray with probes derived from viral and human
 microRNA sequences:
 
-![Reporter grouping by species (multi-species ADFs
-only)](/images/magetab/adf6.png
-"Reporter grouping by species (multi-species ADFs only)")
-
-</div>
-
-<div class="section section">
+{% include image.html url="magetab/adf6.png" caption="Reporter grouping by species (multi-species ADFs only)" %}
 
 ### Annotation of composite elements
 
 Annotation of composite elements is usually in the form of
 cross-references to external databases, in a very similar way as for
-reporters, using one or more Composite Element Database Entry \[xxx\]
+reporters, using one or more Composite Element Database Entry [xxx]
 columns. In addition, a Composite Element Comment column can be added to
 insert free-text comments or descriptions for each element.
 
-![ADF annotation of composite elements](/images/magetab/adf7.png
-"ADF annotation of composite elements")
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div id="side_navigation">
-
-<div class="side_nav_menu handbook_contents handbook adf">
-
-<div id="in_this_page">
-
-## In this page
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div id="footer_original" class="clearfix">
-
-  - [Policies and
-    Disclaimers](/policies-e.html "Policies and Disclaimers")
-  - [News](/news/en/index-e.html "News archives")
-  - [FAQs](/faq/en/index-e.html "Frequently asked questions")
-  - [Sitemap](/sitemap-e.html "Sitemap")
-  - [Calendar](/calendar-e.html "DDBJ Center Calendar")
-  - [Address](/access-e.html "DDBJ Center address")
-  - [Contact](/contact-e.html "Contact to DDBJ Center")
-  - Last modified: 2019-02-25
-
-</div>
-
-</div>
+{% include image.html url="magetab/adf7.png" caption="ADF annotation of composite elements" %}

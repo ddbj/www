@@ -8,8 +8,6 @@ category: services
 
 ARSA retrieves the following databases.
 
-<div class="main_table format">
-
 | Database                                            | Note                     |
 | --------------------------------------------------- | ------------------------ |
 | DDBJ Release                                        |                          |
@@ -17,14 +15,12 @@ ARSA retrieves the following databases.
 | Amino Acid Patent Sequence data submitted from JPO  |                          |
 | Amino Acid Patent Sequence data submitted from KIPO | Update is not periodical |
 
-</div>
 
 Entries whose accession number is assigned in a different rules from
 [general data](/ddbj/flat-file-e.html#Accession), such as
 [WGS](/ddbj/wgs-e.html)(including WGS Scaffold CON), some TSA entries,
 [MGA](/ddbj/mga-e.html)　are not searchable in ARSA.
 
-<div class="section chapter">
 
 ## Quick Search
 
@@ -33,396 +29,148 @@ at the Result page, you can check your entered keyword.
 When you use the boolean operators (AND, OR, NOT) in the text box,
 please write in capitals.
 
-"AND" search <span class="normal">（Searchs that contain all search
-keywords）</span>
+"AND" search（Searchs that contain all search
+keywords）
+: Enter all keywords into the text box, separating each word with a space.
+: [Example: Example: Enter lung cancer to the text box, and select "AND" as a boolean operator.](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=lung+cancer&operator=AND)
+: The result contains for example,  
+"~ Human lung cancer associated ~" in the DEFINITION  
+"~ Lung Focal Fibrosis ~" in the FEATURES, and "~ National Cancer
+Institute ~" in the REFERENCE TITLE.
 
-Enter all keywords into the text box, separating each word with a space.
+Partial match search（Searchs that contains the search keyword in a part of a word）
+: Specify the search keyword containing the wild card *.
+: [Example: Enter Hom\*.](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=Hom*&operator=AND)
+: The result contains for example,  
+"~ Hominidae; ~" in the SOURCE ORGANISM.  
+"~ higher homolog of ~" in the REFERENCE TITLE.
 
-[Example: Example: Enter <span class="tool_code">lung cancer</span> to
-the text box, and select "AND" as a boolean
-operator.](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=lung+cancer&operator=AND)
-
-The result contains for example,  
-"\~ Human lung cancer associated \~" in the
-<span class="tool_code">DEFINITION</span>  
-"\~ Lung Focal Fibrosis \~" in the
-<span class="tool_code">FEATURES</span>, and "\~ National Cancer
-Institute \~" in the <span class="tool_code">REFERENCE TITLE</span>.
-
-Partial match search <span class="normal">（Searchs that contains the
-search keyword in a part of a word）</span>
-
-Specify the search keyword containing the wild card \*.
-
-[Example: Enter
-<span class="tool_code">Hom\*</span>.](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=Hom*&operator=AND)
-
-The result contains for example,  
-"\~ Hominidae; \~" in the <span id="tool_code">SOURCE ORGANISM</span>.  
-"\~ higher homolog of \~" in the <span id="tool_code">REFERENCE
-TITLE</span>.
-
-Phrase search <span class="normal">（Searchs keyword in a word
-order）</span>
-
-Enclose the phrase into double quotation( " ). A character with a
+Phrase search（Searchs keyword in a word order）
+: Enclose the phrase into double quotation( " ). A character with a
 special meaning is also searched as a free search keyword.
+: [Example: Enter "lung cancer"](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=%22stomach+cancer%22+OR+%22gastric+cancer%22&operator=AND)
+: The result contains for example,  
+"~ Human lung cancer associated ~" in the DEFINITION.
 
-[Example: Enter "<span class="tool_code">lung
-cancer</span>"](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=%22stomach+cancer%22+OR+%22gastric+cancer%22&operator=AND)
-
-The result contains for example,  
-"\~ Human lung cancer associated \~" in the
-<span id="tool_code">DEFINITION</span>.
-
-"OR" search <span class="normal">（Searchs that contains either of the
-search keyword）</span>
-
-Connect a search keyword by OR in the text box, or select "OR" in the
+"OR" search（Searchs that contains either of the search keyword）
+: Connect a search keyword by OR in the text box, or select "OR" in the
 operator box.
+: The same results are obtained in the either case.
+: [Example: Enter "stomach cancer" OR "gastric cancer"](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=%22stomach+cancer%22+OR+%22gastric+cancer%22&operator=AND)
+: [Example: Enter "stomach cancer" "gastric cancer" into the text box, and select "OR" in the operator box.](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=%22stomach+cancer%22+%22gastric+cancer%22&operator=OR)
+: "~ Homo sapiens stomach cancer ~" in the DEFINITION    
+"~ human gastric cancer ~" in the REFERENCE TITLE
 
-The same results are obtained in the either case.
+"NOT" search（Searchs what does not include the keyword after NOT.)
+: [Example: Enter cancer NOT "Homo sapiens".](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=cancer+NOT+%22Homo+sapiens%22&operator=AND)
+: The result contains for example,  
+"~ Mouse Cancer Genetics ~" in the COMMENT.
 
-[Example: Enter <span class="tool_code">"stomach cancer" OR "gastric
-cancer"</span>](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=%22stomach+cancer%22+OR+%22gastric+cancer%22&operator=AND)
-
-[Example: Enter <span class="tool_code">"stomach cancer" "gastric
-cancer"</span> into the text box, and select "OR" in the operator
-box.](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=%22stomach+cancer%22+%22gastric+cancer%22&operator=OR)
-
-"\~ Homo sapiens stomach cancer \~" in the
-<span class="tool_code">DEFINITION</span>  
-"\~ human gastric cancer \~" in the <span class="tool_code">REFERENCE
-TITLE</span>
-
-"NOT" search <span class="normal">（Searchs what does not include the
-keyword after NOT.)</span>
-
-[Example: Enter <span class="tool_code">cancer NOT "Homo
-sapiens"</span>.](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=cancer+NOT+%22Homo+sapiens%22&operator=AND)
-
-The result contains for example,  
-"\~ Mouse Cancer Genetics \~" in the
-<span class="tool_code">COMMENT</span>.
-
-Search that specifies the search field<span class="normal">（Searchs that
-a search keyword is present in the specified field)</span>
-
-There are two ways in this method.  
+Search that specifies the search fiel（Searchs that a search keyword is present in the specified field)
+: There are two ways in this method.  
 Include the search field name in the search keywords.  
 Use the Advanced Search.  
 The details about the search fieldand Advanced Search are mentioned
 later.  
 Note:A search field name and : shold be placed before a search keyword.
-
-[Example: Enter <span class="tool_code">Keyword:HTG </span> into the
-text
-column.](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=Keyword%3AHTG&operator=AND)
-
-The result contains for example,  
-"HTG" in the <span class="tool_code">KEYWORDS</span>
-
-[Example: Enter
-<span class="tool_code">ReferencePubmedID:1111111</span>](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=ReferencePubmedID%3A1111111&operator=AND)
-
-The result contains for example,  
-"1111111" in the <span class="tool_code">REFERENCE PUBMED</span>
-
-[Example: Enter <span class="tool_code">FeatureQualifier:"CDS
-/gene=DRB6"</span>](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=FeatureQualifier%3A%22CDS+%2Fgene%3DDRB6%22&operator=AND)
-
-The result contains for example,  
-"/gene="DRB6"" to <span class="tool_code">FEATURES</span>.
+: [Example: Enter Keyword:HTG  into the text column.](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=Keyword%3AHTG&operator=AND)
+: The result contains for example,  
+"HTG" in the KEYWORDS
+: [Example: Enter ReferencePubmedID:1111111](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=ReferencePubmedID%3A1111111&operator=AND)
+: The result contains for example,  
+"1111111" in the REFERENCE PUBMED
+: [Example: Enter FeatureQualifier:"CDS /gene=DRB6"](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=FeatureQualifier%3A%22CDS+%2Fgene%3DDRB6%22&operator=AND)
+: The result contains for example,  
+"/gene="DRB6"" to FEATURES.
 
 Search by the regular expression
-
-In some search fields, you can use the regular expression in the search
-keyword.  
-You should enclose the search keyword in /.
-
-[Example: Enter
-<span class="tool_code">PrimaryAccessionNumber:/AA\[1-9\]00000/</span>](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=PrimaryAccessionNumber%3A%2FAA%5B1-9%5D00000%2F&operator=AND)
-
-The result contains for example,  
+: In some search fields, you can use the regular expression in the search
+keyword. You should enclose the search keyword in /.
+: [Example: Enter PrimaryAccessionNumber:/AA[1-9]00000/](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=PrimaryAccessionNumber%3A%2FAA%5B1-9%5D00000%2F&operator=AND)
+: The result contains for example,  
 Like as "AA100000" and "AA900000", top of the numerical part ranges from
-1 to 9, at the head of <span class="tool_code">ACCESSION</span>.  
-"AA000000" at the head of <span class="tool_code">ACCESSION</span> does
+1 to 9, at the head of ACCESSION.  
+"AA000000" at the head of ACCESSION does
 not match the search criteria.
 
 Search by the range specification
+: Search keywords connected by TO are
+enclosed in [ ].
+: [Example: Enter SequenceLength:[* TO 500].](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=SequenceLength%3A%5B*+TO+500%5D&operator=AND)
+: The result contains for example,  
+Sequence length of LOCUS include the 500 or less.
 
-Search keywords connected by <span class="tool_code">TO</span> are
-enclosed in \[ \].
-
-[Example: Enter <span class="tool_code">SequenceLength:\[\* TO
-500\]</span>.](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=quick_search&query=SequenceLength%3A%5B*+TO+500%5D&operator=AND)
-
-The result contains for example,  
-Sequence length of <span class="tool_code">LOCUS</span> include the 500
-or less.
-
-</div>
-
-<div class="section chapter">
 
 ## Advanced Search
 
-Basic search <span class="normal">Enter the search keyword to the search
-box of the field which you want to search.</span>
+Basic searchEnter the search keyword to the search box of the field which you want to search.
+: [Example: Enter human into "Definition" column,](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=human&kw=&og=&ln=&ra=&rt=&rj=&rp=&cm=&fq%5B0%5D.featureKey=&fq%5B0%5D.qualifierName=&fq%5B0%5D.qualifierValue=&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=AND)
+: The result contains for example,　  
+"~ Human parvovirus ~" in DEFINITION
 
-[Example: Enter <span class="tool_code">human</span> into "Definition"
-column,](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=human&kw=&og=&ln=&ra=&rt=&rj=&rp=&cm=&fq%5B0%5D.featureKey=&fq%5B0%5D.qualifierName=&fq%5B0%5D.qualifierValue=&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=AND)
+"OR" search for the single search fieldSearch keywords should be connected by a space.
+: [Example: Enter stomach gastric into "Definition" column,](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=stomach+gastric&kw=&og=&ln=&ra=&rt=&rj=&rp=&cm=&fq%5B0%5D.featureKey=&fq%5B0%5D.qualifierName=&fq%5B0%5D.qualifierValue=&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=AND)
+: The result contains for example,  
+"~ human gastric lipase ~" to
+DEFINITION "~ related to stomach cancer
+~" to DEFINITION
 
-The result contains for example,　  
-"\~ Human parvovirus \~" in <span class="tool_code">DEFINITION</span>
+"AND" search for the single search fieldEnter the keywords to the search box of the field which you want to search. Keywords are connected by AND.
+: [Example: Enter stomach AND gastric into "Definition" column,](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=stomach+AND+gastric&kw=&og=&ln=&ra=&rt=&rj=&rp=&cm=&fq%5B0%5D.featureKey=&fq%5B0%5D.qualifierName=&fq%5B0%5D.qualifierValue=&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=AND)
+: The result contains for example,  
+"~ male stomach cDNA ~ polypeptide, gastric specific ~" to DEFINITION
 
-"OR" search for the single search field <span class="normal">Search
-keywords should be connected by a space.</span>
+"OR" search for the plural search fieldsSearch by selecting the OR.
+: [Example:Enter human into "Definition" column, Enter human into "Reference Title" column, and choose "OR" at "Combine Searches with", the result is obtained.](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=human&kw=&og=&ln=&ra=&rt=human&rj=&rp=&cm=&fq%5B0%5D.featureKey=&fq%5B0%5D.qualifierName=&fq%5B0%5D.qualifierValue=&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=OR)
+: The result contains for example,  
+"~ Human metapneumovirus ~" to DEFINITION "~ human cDNA project ~" to REFERENCE
 
-[Example: Enter <span class="tool_code">stomach gastric</span> into
-"Definition"
-column,](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=stomach+gastric&kw=&og=&ln=&ra=&rt=&rj=&rp=&cm=&fq%5B0%5D.featureKey=&fq%5B0%5D.qualifierName=&fq%5B0%5D.qualifierValue=&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=AND)
+"AND" search for the plural search fieldsSearch by selecting the AND
+: [Example:Enter human into "Definition" column, Enterhuman into "Reference Title" column, and choose "AND" at "Combine Searches with", The result is obtained.](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=human&kw=&og=&ln=&ra=&rt=human&rj=&rp=&cm=&fq%5B0%5D.featureKey=&fq%5B0%5D.qualifierName=&fq%5B0%5D.qualifierValue=&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=AND)
+: The result contains for example,  
+"~ Human glucocerebrosidase ~" to the DEFINITION "~ expression of human ~" in the REFERENCE TITLE
 
-The result contains for example,  
-"\~ human gastric lipase \~" to
-<span class="tool_code">DEFINITION</span> "\~ related to stomach cancer
-\~" to <span class="tool_code">DEFINITION</span>
-
-"AND" search for the single search field <span class="normal">Enter the
-keywords to the search box of the field which you want to search.
-Keywords are connected by AND.</span>
-
-[Example: Enter <span class="tool_code">stomach AND gastric</span> into
-"Definition"
-column,](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=stomach+AND+gastric&kw=&og=&ln=&ra=&rt=&rj=&rp=&cm=&fq%5B0%5D.featureKey=&fq%5B0%5D.qualifierName=&fq%5B0%5D.qualifierValue=&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=AND)
-
-The result contains for example,  
-"\~ male stomach cDNA \~ polypeptide, gastric specific \~" to
-<span class="tool_code">DEFINITION</span>
-
-"OR" search for the plural search fields <span class="normal">Search by
-selecting the OR.</span>
-
-[Example:Enter <span class="tool_code">human</span> into "Definition"
-column, Enter <span class="tool_code">human</span> into "Reference
-Title" column, and choose "OR" at "Combine Searches with", the result is
-obtained.](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=human&kw=&og=&ln=&ra=&rt=human&rj=&rp=&cm=&fq%5B0%5D.featureKey=&fq%5B0%5D.qualifierName=&fq%5B0%5D.qualifierValue=&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=OR)
-
-The result contains for example,  
-"\~ Human metapneumovirus \~" to
-<span class="tool_code">DEFINITION</span> "\~ human cDNA project \~" to
-<span class="tool_code">REFERENCE</span>
-
-"AND" search for the plural search fields <span class="normal">Search by
-selecting the AND</span>
-
-[Example:Enter <span class="tool_code">human</span> into "Definition"
-column, Enter<span class="tool_code">human</span> into "Reference Title"
-column, and choose "AND" at "Combine Searches with", The result is
-obtained.](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=human&kw=&og=&ln=&ra=&rt=human&rj=&rp=&cm=&fq%5B0%5D.featureKey=&fq%5B0%5D.qualifierName=&fq%5B0%5D.qualifierValue=&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=AND)
-
-The result contains for example,  
-"\~ Human glucocerebrosidase \~" to the
-<span class="tool_code">DEFINITION</span> "\~ expression of human \~" in
-the <span class="tool_code">REFERENCE TITLE</span>
-
-Partial match search of Feature/Qualifier <span class="normal">Search by
-Feature Key, Qualifier Name,Qualifier Value.</span>
-
-[Example:Enter CDS into "Feature Key" column in "Features",
-<span class="tool_code">translation</span> "Qualifier Name" column, and
-AAA\*CC into "Qualifier Value"
-column,](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=&kw=&og=&ln=&ra=&rt=&rj=&rp=&cm=&fq%5B0%5D.featureKey=CDS&fq%5B0%5D.qualifierName=translation&fq%5B0%5D.qualifierValue=AAA*CC&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=AND)
-
-The result contains for example,  
-"/translation="～AAA～CC～"" to CDS of
-<span class="tool_code">FEATURES</span>
-
-[Example: Enter CDS into "Feature Key" column in
-"Features",<span class="tool_code">gene</span> "Qualifier Name" column,
-and p53 into "Qualifier Value"
-column,](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=&kw=&og=&ln=&ra=&rt=&rj=&rp=&cm=&fq%5B0%5D.featureKey=CDS&fq%5B0%5D.qualifierName=gene&fq%5B0%5D.qualifierValue=p53&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=AND)
-
-The result contains for example,  
+Partial match search of Feature/QualifierSearch by Feature Key, Qualifier Name,Qualifier Value.
+: [Example: Enter CDS into "Feature Key" column in "Features", translation "Qualifier Name" column, and AAA\*CC into "Qualifier Value" column,](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=&kw=&og=&ln=&ra=&rt=&rj=&rp=&cm=&fq%5B0%5D.featureKey=CDS&fq%5B0%5D.qualifierName=translation&fq%5B0%5D.qualifierValue=AAA*CC&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=AND)
+: The result contains for example,  
+"/translation="～AAA～CC～"" to CDS of FEATURES
+: [Example: Enter CDS into "Feature Key" column in "Features",gene "Qualifier Name" column, and p53 into "Qualifier Value" column,](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=&kw=&og=&ln=&ra=&rt=&rj=&rp=&cm=&fq%5B0%5D.featureKey=CDS&fq%5B0%5D.qualifierName=gene&fq%5B0%5D.qualifierValue=p53&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=AND)
+: The result contains for example,  
 One which has been described as "/gene="p53"" to CDS of
-<span class="tool_code">FEATURES</span> One which has been described as
-"/gene="p53R2"" to CDS of <span class="tool_code">FEATURES</span>
-
-</div>
-
-<div class="section chapter">
+FEATURES One which has been described as
+"/gene="p53R2"" to CDS of FEATURES
 
 ## Details of the search field
 
-Reference: ['Available
-Fields'](http://ddbj.nig.ac.jp/arsa/quick_search?lang=en)
+Reference: ['Available Fields'](http://ddbj.nig.ac.jp/arsa/quick_search?lang=en)
 
-<div class="main_table format">
 
-<table>
-<caption>※regexp search: Yes（except for <span class="tool_code">AllText</span>）</caption>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Search field name</th>
-<th>Short<br />
-name</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="tool_code">PrimaryAccessionNumber</span></td>
-<td><span class="tool_code">pa</span></td>
-<td><a href="/ddbj/flat-file-e.html#Accession">"Accession number" that is described at the head of<span class="tool_code">ACCESSION</span></a></td>
-<td><span class="tool_code">AB999999</span></td>
-</tr>
-<tr class="even">
-<td><span class="tool_code">AccessionNumber</span></td>
-<td><span class="tool_code">an</span></td>
-<td><a href="/ddbj/flat-file-e.html#Accession">"Accession number" in <span class="tool_code">ACCESSION</span></a></td>
-<td><span class="tool_code">AB999999, AB888888, AB777777</span></td>
-</tr>
-<tr class="odd">
-<td><span class="tool_code">Division</span></td>
-<td><span class="tool_code">dv</span></td>
-<td><a href="/ddbj/flat-file-e.html#Locus">"Division" in <span class="tool_code">LOCUS</span></a></td>
-<td><span class="tool_code">HUM</span></td>
-</tr>
-<tr class="even">
-<td><span class="tool_code">SequenceLength</span></td>
-<td><span class="tool_code">sl</span></td>
-<td><a href="/ddbj/flat-file-e.html#Locus">"Sequence length" in <span class="tool_code">LOCUS</span></a></td>
-<td><span class="tool_code">450</span></td>
-</tr>
-<tr class="odd">
-<td><span class="tool_code">MolecularType</span></td>
-<td><span class="tool_code">mt</span></td>
-<td><a href="/ddbj/flat-file-e.html#Locus">"Molecular type" in <span class="tool_code">LOCUS</span></a></td>
-<td><span class="tool_code">mRNA</span></td>
-</tr>
-<tr class="even">
-<td><span class="tool_code">MolecularForm</span></td>
-<td><span class="tool_code">mf</span></td>
-<td><a href="/ddbj/flat-file-e.html#Locus">"Molecular form" in <span class="tool_code">LOCUS</span></a></td>
-<td><span class="tool_code">linear</span></td>
-</tr>
-<tr class="odd">
-<td><span class="tool_code">Date</span></td>
-<td><span class="tool_code">dt</span></td>
-<td><a href="/ddbj/flat-file-e.html#Locus">"Last published date"in <span class="tool_code">LOCUS</span></a></td>
-<td><span class="tool_code">01-JUN-2009</span></td>
-</tr>
-<tr class="even">
-<td><span class="tool_code">Definition</span></td>
-<td><span class="tool_code">df</span></td>
-<td><a href="/ddbj/flat-file-e.html#Definition">Text in <span class="tool_code">DEFINITION</span></a></td>
-<td><span class="tool_code">Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate<br />
-dehydrogenase, partial cds.</span></td>
-</tr>
-<tr class="odd">
-<td><span class="tool_code">Comment</span></td>
-<td><span class="tool_code">cm</span></td>
-<td><a href="/ddbj/flat-file-e.html#Comment">Text in <span class="tool_code">COMMENT</span></a></td>
-<td><span class="tool_code">Human cDNA sequencing project.</span></td>
-</tr>
-<tr class="even">
-<td><span class="tool_code">Keyword</span></td>
-<td><span class="tool_code">kw</span></td>
-<td><a href="/ddbj/flat-file-e.html#Keywords">Text in <span class="tool_code">KEYWORDS</span></a></td>
-<td><span class="tool_code">HTC, HTC_FLI, oligo capping</span></td>
-</tr>
-<tr class="odd">
-<td><span class="tool_code">Organism</span></td>
-<td><span class="tool_code">og</span></td>
-<td><a href="/ddbj/flat-file-e.html#Source">ORGANISM in <span class="tool_code">ORGANISM</span></a></td>
-<td><span class="tool_code">Homo sapiens</span></td>
-</tr>
-<tr class="even">
-<td><span class="tool_code">Lineage</span></td>
-<td><span class="tool_code">ln</span></td>
-<td><a href="/ddbj/flat-file-e.html#Source">"Lineage" in <span class="tool_code">ORGANISM</span></a></td>
-<td><span class="tool_code">Eukaryota, Metazoa, ..., Hominidae, Homo</span></td>
-</tr>
-<tr class="odd">
-<td><span class="tool_code">ReferenceAuthor</span></td>
-<td><span class="tool_code">ra</span></td>
-<td><a href="/ddbj/flat-file-e.html#Reference1">Text in <span class="tool_code">AUTHORS</span> of <span class="tool_code">REFERENCE</span></a></td>
-<td><span class="tool_code">Mishima,H. , Shizuoka,T. , Fuji,I.</span></td>
-</tr>
-<tr class="even">
-<td><span class="tool_code">ReferenceTitle</span></td>
-<td><span class="tool_code">rt</span></td>
-<td><a href="/ddbj/flat-file-e.html#Reference1">Text in <span class="tool_code">TITLE</span> of <span class="tool_code">REFERENCE</span></a></td>
-<td><span class="tool_code">Direct Submission , Glyceraldehyde-3-phosphate dehydrogenase expressed in human liver</span></td>
-</tr>
-<tr class="odd">
-<td><span class="tool_code">ReferenceJournal</span></td>
-<td><span class="tool_code">rj</span></td>
-<td><a href="/ddbj/flat-file-e.html#Reference1">Text in <span class="tool_code">JOURNAL</span> of <span class="tool_code">REFERENCE</span></a></td>
-<td><span class="tool_code">Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.<br />
-Contact:Hanako Mishima<br />
-National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,<br />
-Mishima, Shizuoka 411-8540, Japan , Unpublished (2009)</span></td>
-</tr>
-<tr class="even">
-<td><span class="tool_code">ReferencePubmedID</span></td>
-<td><span class="tool_code">rp</span></td>
-<td>Text in <span class="tool_code">PUBMED</span> of <span class="tool_code">REFERENCE</span></td>
-<td><span class="tool_code">1111111</span></td>
-</tr>
-<tr class="odd">
-<td><span class="tool_code">Feature</span></td>
-<td><span class="tool_code">fe</span></td>
-<td><a href="/ddbj/flat-file-e.html#Features">"Text of Feature" in <span class="tool_code">FEATURES</span></a></td>
-<td><pre class="code scroll"><code>source 1..450
-/chromosome=&quot;12&quot; 
-/clone=&quot;GT200015&quot; 
-/clone_lib=&quot;lambda gt11 human liver cDNA (GeneTech.
-No.20)&quot; 
-/db_xref=&quot;taxon:9606&quot; 
-/map=&quot;12p13&quot; 
-/mol_type=&quot;mRNA&quot; 
-/organism=&quot;Homo sapiens&quot; 
-/tissue_type=&quot;liver&quot;
-CDS 86..&gt;450
-/codon_start=1
-/gene=&quot;GAPD&quot; 
-/product=&quot;glyceraldehyde-3-phosphate dehydrogenase&quot; 
-/protein_id=&quot;BAA12345.1&quot; 
-/transl_table=1
-/translation=&quot;MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT
-YMFKYDTVHGQWKHHEVKVKDSKTLLFGEKEVTVFGCRNPKEIPWGETSAEFVVEYTG
-VFTDKDKAVAQLKGGAKKV&quot; </code></pre></td>
-</tr>
-<tr class="even">
-<td><span class="tool_code">FeatureQualifier</span></td>
-<td><span class="tool_code">fq</span></td>
-<td><a href="/ddbj/flat-file-e.html#Features">"Text of Qualifier" in <span class="tool_code">FEATURES</span></a></td>
-<td><pre class="code scroll"><code>source 1..450
-source /chromosome=12
-CDS /translation=MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT
-YMFKYDTVHGQWKHHEVKVKDSKTLLFGEKEVTVFGCRNPKEIPWGETSAEFVVEYTG
-VFTDKDKAVAQLKGGAKKV</code></pre></td>
-</tr>
-<tr class="odd">
-<td><span class="tool_code">AllText</span></td>
-<td><span class="tool_code">at</span></td>
-<td><a href="/ddbj/flat-file-e.html">Full text that is described in the flat file.</a></td>
-<td><span class="tool_code">LOCUS ～ //</span></td>
-</tr>
-</tbody>
-</table>
+|  Search field name  |  Short name  |  Description	  |  Example  |
+| ---- | ---- | ---- | ---- |
+|  PrimaryAccessionNumber  |  pa  |  ["Accession number" that is described at the head ofACCESSION](/ddbj/flat-file-e.html#Accession)  |  AB999999  |
+|  AccessionNumber  |  an  |  ["Accession number" in ACCESSION](/ddbj/flat-file-e.html#Accession)  |  AB999999, AB888888, AB777777  |
+|  Division  |  dv  |  ["Division" in LOCUS](/ddbj/flat-file-e.html#Locus)  |  HUM  |
+|  SequenceLength  |  sl  |  ["Sequence length" in LOCUS](/ddbj/flat-file-e.html#Locus)  |  450  |
+|  MolecularType  |  mt  |  ["Molecular type" in LOCUS](/ddbj/flat-file-e.html#Locus) |  mRNA  |
+|  MolecularForm  |  mf  |   ["Molecular form" in LOCUS](/ddbj/flat-file-e.html#Locus)  |  linear  |
+|  Date  |  dt  |  ["Last published date"in LOCUS](/ddbj/flat-file-e.html#Locus) |  01-JUN-2009  |
+|  Definition  |  df  |  [Text in DEFINITION](/ddbj/flat-file-e.html#Definition)  |  Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate<br>dehydrogenase, partial cds.  |
+|  Comment  |  cm  |  [Text in COMMENT](/ddbj/flat-file-e.html#Comment)  |  Human cDNA sequencing project.  |
+|  Keyword  |  kw  |  [Text in KEYWORDS](/ddbj/flat-file-e.html#Keywords)  |  HTC, HTC_FLI, oligo capping  |
+|  Organism  |  og  | 	[ORGANISM in ORGANISM](/ddbj/flat-file-e.html#Source)  |  Homo sapiens  |
+|  Lineage  |  ln  |    ["Lineage" in ORGANISM](/ddbj/flat-file-e.html#Source)  |  Eukaryota, Metazoa, ..., Hominidae, Homo  |
+|  ReferenceAuthor  |  ra  |   [Text in AUTHORS of REFERENCE](/ddbj/flat-file-e.html#Reference1)  |  Mishima,H. , Shizuoka,T. , Fuji,I.  |
+|  ReferenceTitle  |  rt  |   [Text in TITLE of REFERENCE](/ddbj/flat-file-e.html#Reference1)  |  Direct Submission , Glyceraldehyde-3-phosphate dehydrogenase expressed in human liver  |
+|  ReferenceJournal  |  rj  |    [Text in JOURNAL of REFERENCE](/ddbj/flat-file-e.html#Reference1)  |  Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.<br>Contact:Hanako Mishima<br>National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,<br>Mishima, Shizuoka 411-8540, Japan , Unpublished (2009)  |
+|  ReferencePubmedID  |  rp  |  Text in PUBMED of REFERENCE   |  1111111  |
+|  Feature  |  fe  |  ["Text of Feature" in FEATURES](/ddbj/flat-file-e.html#Features)  |  source 1..450<br>/chromosome="12"<br>/clone="GT200015" <br>/clone_lib="lambda gt11 human liver cDNA (GeneTech.<br>No.20)" <br>/db_xref="taxon:9606" <br>/map="12p13" <br>/mol_type="mRNA" <br>/organism="Homo sapiens" <br>/tissue_type="liver"<br>CDS 86..&gt;450<br>/codon_start=1<br>/gene="GAPD" <br>/product="glyceraldehyde-3-phosphate dehydrogenase" <br>/protein_id="BAA12345.1" <br>/transl_table=1<br>/translation="MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT<br>YMFKYDTVHGQWKHHEVKVKDSKTLLFGEKEVTVFGCRNPKEIPWGETSAEFVVEYTG<br>VFTDKDKAVAQLKGGAKKV"  |
+|  FeatureQualifier  |  fq  |  ["Text of Qualifier" in FEATURES](/ddbj/flat-file-e.html#Features)  |  source 1..450<br>source /chromosome=12<br>CDS /translation=MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT<br>YMFKYDTVHGQWKHHEVKVKDSKTLLFGEKEVTVFGCRNPKEIPWGETSAEFVVEYTG<br>VFTDKDKAVAQLKGGAKKV  |
+|  AllText  |  at  |  [Full text that is described in the flat file.](/ddbj/flat-file-e.html)  |  LOCUS ～ //  | 
 
-</div>
+※regexp search: Yes（except for AllText）
+{: .tablecaption}
 
-``` code
+```
 LOCUS       AB000000              450 bp    mRNA    linear   HUM 01-JUN-2009
 DEFINITION  Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate
             dehydrogenase, partial cds.
@@ -480,205 +228,169 @@ ORIGIN
 //
 ```
 
-</div>
-
-<div class="section chapter">
-
 ## Format of the search keyword
 
 Specification of the search field
-
-(Search field name or Short name) + ':' + (Search keyword)
+: (Search field name or Short name) + ':' + (Search keyword)
 
 Boolean operator ("AND", "OR", "NOT" search)
-
-(Search keyword) + ' AND ' + (Search keyword)  
-(Search keyword) + ' && ' + (Search keyword)  
-(Search keyword) + ' +' + (Search keyword)
-
-(Search keyword) + ' OR ' + (Search keyword)  
-(Search keyword) + ' || ' + (Search keyword)
-
-(Search keyword) + ' NOT ' + (Search keyword)  
-(Search keyword) + ' -' + (Search keyword)
+: (Search keyword) + ' AND ' + (Search keyword)  
+: (Search keyword) + ' && ' + (Search keyword)  
+: (Search keyword) + ' +' + (Search keyword)
+: (Search keyword) + ' OR ' + (Search keyword)  
+: (Search keyword) + ' &#124;&#124; ' + (Search keyword)
+: (Search keyword) + ' NOT ' + (Search keyword)  
+: (Search keyword) + ' -' + (Search keyword)
 
 Grouping
-
-'(' + (Search keyword) + (Logical operator) + (Search keyword) + ')'
+: '(' + (Search keyword) + (Logical operator) + (Search keyword) + ')'
 
 Range search
-
-(Search field name or Short name) + ':\[' + (Start value or '\*') + ' TO
-' + (End value or '\*') + '\]'  
-Including start value, end value
-
-(Search field name or Short name) + ':{' + (Start value or '\*') + ' TO
+: (Search field name or Short name) + ':[' + (Start value or '\*') + ' TO
+' + (End value or '\*') + ']'  
+: Including start value, end value
+: (Search field name or Short name) + ':{' + (Start value or '\*') + ' TO
 ' + (End value or '\*') + '}'  
-Not including start value, end value
+: Not including start value, end value
 
 Wild card search
-
-(Search keyword) + '\*'
-
-'\*' + (Search keyword)
-
-(Search keyword) + '\*' + (Search keyword)  
-'\*' matches any texts more than 0 characters
-
-(Search keyword) + '?' + (Search keyword)  
-'?' match in any one character
+: (Search keyword) + '\*'
+: '\*' + (Search keyword)
+: (Search keyword) + '\*' + (Search keyword)  
+: '\*' matches any texts more than 0 characters
+: (Search keyword) + '?' + (Search keyword)  
+: '?' match in any one character
 
 Phrase search
-
-Search in sequence the search keyword. Or search characters that have
-special meaning.  
-"' + (Search keyword) + '"'
+: Search in sequence the search keyword. Or search characters that have special meaning.  
+: "' + (Search keyword) + '"'
 
 Regular expression search
-
-'/' + (Search keyword) + '/'
+: '/' + (Search keyword) + '/'
 
 Example of the regular expression
-
-. (any single character)  
-example :<span class="tool_code"> /Homini.ae/</span> matches the for
-example <span class="tool_code">'Hominidae'</span> and
-<span class="tool_code">'Homininae'</span>.
-
-\* (a letter more than 0)  
-example : /<span class="tool_code">AB0\*</span>/ matches the for example
-<span class="tool_code">'AB'</span>,
-<span class="tool_code">'AB0'</span>,
-<span class="tool_code"><span class="tool_code">'AB00'</span>,
-<span class="tool_code">'AB000'</span></span>
-
-.\* (zero or more of the preceding element)  
-example : /<span class="tool_code">AB.\*</span>/ matches the for example
-<span class="tool_code">'AB'</span>,
-<span class="tool_code">'AB0'</span>,
-<span class="tool_code">'AB789'</span>,
-<span class="tool_code">'ABXYZ</span>'
-
-?(Previous character is 0 or 1)  
-example : /<span class="tool_code">AB?00000</span>/ matches
-<span class="tool_code">'AB000000'</span> and
-<span class="tool_code">'A000000'</span>
-
-\+ (Previous character is 1 or more)  
-example : /<span class="tool_code">AB0+</span>/ matches the for example
-<span class="tool_code">'AB0'</span>,
-<span class="tool_code">'AB00'</span>,
-<span class="tool_code">'AB000'</span>, , but does not match
-<span class="tool_code">'AB'</span>
-
-\[<span class="tool_code">abc\]</span> (character
-<span class="tool_code">'a'</span> , <span class="tool_code">'b'</span>
-or <span class="tool_code">'c'</span>)  
-example : /<span class="tool_code">Homini\[dn\]ae</span>/ matches
-<span class="tool_code">'Hominidae'</span> and
-<span class="tool_code">'Homininae'</span>
-
-\[<span class="tool_code">^abc</span>\] (except character
-<span class="tool_code">'a'</span> , <span class="tool_code">'b'</span>
-, <span class="tool_code">'c'</span>)  
-example : /<span class="tool_code">Homini\[^d\]ae</span>/ matches
-<span class="tool_code">'Homininae'</span> but does not match
-<span class="tool_code">'Hominidae'</span>
-
-\[<span class="tool_code">a-z0-9</span>\] (character
-<span class="tool_code">'a'</span> ～ <span class="tool_code">'z'</span>
-or <span class="tool_code">'0'</span> ～
-<span class="tool_code">'9'</span>)  
-example : /<span class="tool_code">AA\[0-9\]00000</span>/ matches the
-for example <span class="tool_code">'AA100000'</span>
-
-{ <span class="tool_code">n </span>} (Previous character occurs n times
+: . (any single character)  
+example : /Homini.ae/ matches the for
+example 'Hominidae' and
+'Homininae'.
+: \* (a letter more than 0)  
+example : /AB0\*/ matches the for example
+'AB',
+'AB0',
+'AB00',
+'AB000'
+: .\* (zero or more of the preceding element)  
+example : /AB.\*/ matches the for example
+'AB',
+'AB0',
+'AB789',
+'ABXYZ'
+: ?(Previous character is 0 or 1)  
+example : /AB?00000/ matches
+'AB000000' and
+'A000000'
+: \+ (Previous character is 1 or more)  
+example : /AB0+/ matches the for example
+'AB0',
+'AB00',
+'AB000', , but does not match
+'AB'
+: [abc] (character
+'a' , 'b'
+or 'c')  
+example : /Homini[dn]ae/ matches
+'Hominidae' and
+'Homininae'
+: [^abc] (except character
+'a' , 'b'
+, 'c')  
+example : /Homini[^d]ae/ matches
+'Homininae' but does not match
+'Hominidae'
+: [a-z0-9] (character
+'a' ～ 'z'
+or '0' ～
+'9')  
+example : /AA[0-9]00000/ matches the
+for example 'AA100000'
+: { n } (Previous character occurs n times
 exactly)  
-example : /<span class="tool_code">AB0{2</span>}/ matches
-<span class="tool_code">'AB00'</span> but does not match
-<span class="tool_code">'AB0'</span> and
-<span class="tool_code">'AB000'</span>
-
-{ <span class="tool_code">n ,</span>} (Previous character occurs n times
+example : /AB0{2}/ matches
+'AB00' but does not match
+'AB0' and
+'AB000'
+: { n ,} (Previous character occurs n times
 or more)  
-example : /<span class="tool_code">AB0{2,}</span>/ matches the for
-example <span class="tool_code">'AB00'</span> ,
-<span class="tool_code">'AB000'</span> , but does not match
-<span class="tool_code">'AB0'</span>
-
-{ <span class="tool_code">n , m</span> } (Previous character occurs at
+example : /AB0{2,}/ matches the for
+example 'AB00' ,
+'AB000' , but does not match
+'AB0'
+: { n , m } (Previous character occurs at
 least n and not more than m times  
-example : /<span class="tool_code">AB0{2,4}</span>/ matches the for
-example <span class="tool_code">'AB00'</span> ,
-<span class="tool_code">'AB0000'</span> but does not match
-<span class="tool_code">'AB0'</span> and
-<span class="tool_code">'AB00000'</span>
+example : /AB0{2,4}/ matches the for
+example 'AB00' ,
+'AB0000' but does not match
+'AB0' and
+'AB00000'
 
 Fuzzy Search
-
-Search for a word of spelling similar to the search keyword  
-':' + (Search keyword) + '\~' + (Distance of the search term. Numerical
+: Search for a word of spelling similar to the search keyword  
+':' + (Search keyword) + '~' + (Distance of the search term. Numerical
 value of 0.0 or more and less than 1.0. Close to the search keyword
 closer to 1.)
 
 Proximity Search
-
-The words contained in a phrase search what is indicated in the
+: The words contained in a phrase search what is indicated in the
 neighborhood.
-
-':' + (Phrase) + '\~' + (Distance of the search term. Number of words.)
+':' + (Phrase) + '~' + (Distance of the search term. Number of words.)
 
 Weighting Search
-
-(Search keyword) + '^' + (Positive relative weight. Positive number.
+: (Search keyword) + '^' + (Positive relative weight. Positive number.
 Default is 1.0.)
 
 Character with a special meaning
-
-These characters have a special meaning.  
-\+ - && || \! ( ) { } \[ \] ^ " \~ \* ? : /
+: These characters have a special meaning.  
+\+ \- && &#124;&#124; \! \( \) \{ \} \[ \] ^ " ~ \* ? : /
 
 When you search these characters, use phrase search, or cancel the
-special meaning by prefixing the ''\\''
-
-</div>
-
-<div class="section chapter">
+special meaning by prefixing the ''{::nomarkdown}\{:/}''
 
 ## Get the search results
 
 Your results are available in the following formats.
 
-<div class="main_table format">
-
-|          |                      |
-| -------- | -------------------- |
-| FlatFile | DDBJ FlatFile format |
-| FASTA    | FASTA format         |
-| XML      | INSD-XML format      |
-
-</div>
+<table>
+  <tbody>
+    <tr>
+      <th>FlatFile</th>
+      <td>DDBJ FlatFile format</td>
+    </tr>
+    <tr>
+      <th>FASTA</th>
+      <td>FASTA format</td>
+    </tr>
+    <tr>
+      <th>XML</th>
+      <td>INSD-XML format</td>
+    </tr>
+  </tbody>
+</table>
 
 In the browser
-
-Click the Accession number which you would like to view the content. You
+: Click the Accession number which you would like to view the content. You
 can view the Flatfile of the entry.
-
-Specify the format. Check the results you want to view, and click the
+: Specify the format. Check the results you want to view, and click the
 "View selected" button. You can view the results that was selected in
 the specified format. (10,000 upper limit)
-
-When your result is over the upper limit, refine your search condition.
+: When your result is over the upper limit, refine your search condition.
 
 Download
-
-To download results, specify the format and click the "Download All"
+: To download results, specify the format and click the "Download All"
 button (Downloadable entries, 3,000 at most).
-
-To download the selected files, specify the format and check the box you
+: To download the selected files, specify the format and check the box you
 want to download. Then click the "Download selected" button.
 
-\[Caution\]
+[Caution]
 
   - For download all the results without fail, you should reduce the
     total number of the results less than 3,000 at most. The number of
@@ -686,7 +398,7 @@ want to download. Then click the "Download selected" button.
     load status of the server. You can reduce the number of the results
     by adding the date filter.
     
-    ``` code
+    ```
     　　Advanced Search     Date  20180101 to 20180630
     　　Quick Search        Date:[20180101 TO 20180630]
     ```
@@ -706,9 +418,6 @@ Kind of filters
   - Division
   - Organism
 
-</div>
-
-<div class="section chapter">
 
 ## Other search criteria
 
@@ -716,11 +425,8 @@ Specifiction of the following seach conditions are also available at the
 "Search Settints" of "Advanced Search".
 
 Sort condition
-
-You can select a search field or search score for sorting.
+: You can select a search field or search score for sorting.
 
 Display field of the search results
+: Check the box(es) you want to display on the search results.
 
-Check the box(es) you want to display on the search results.
-
-</div>

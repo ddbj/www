@@ -5,12 +5,7 @@ pathname: index-e
 category: _jvar-snp
 ---
 
-<div id="primary">
-
-<div id="page_main">
+# Home
 
 JVar-SNP (Japan Variation Database for Short Genetic Variation)
 
-</div>
-
-</div>

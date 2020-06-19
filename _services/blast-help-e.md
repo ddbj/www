@@ -8,67 +8,14 @@ category: services
 
 Specify the search program from the followings.
 
-<div class="main_table format">
-
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>PROGRAM</th>
-<th>query</th>
-<th>Data Base</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>megablast</td>
-<td>nucleotide</td>
-<td>nucleotide</td>
-<td>Aligning your nucleotide sequence with nucleotide sequence database.<br />
-When you want to perform a homology search with long length of nucleotide sequence, results are provided faster than blastn program.</td>
-</tr>
-<tr class="even">
-<td><span class="bold">blastn</span></td>
-<td>nucleotide</td>
-<td>nucleotide</td>
-<td>Aligning your nucleotide sequence with nucleotide sequence database.</td>
-</tr>
-<tr class="odd">
-<td>tblastn</td>
-<td>amino acid</td>
-<td>nucleotide</td>
-<td>Aligning your amino acid sequence with nucleotide sequence database by translating database sequences taking into account all six possible open reading frames.</td>
-</tr>
-<tr class="even">
-<td>tblastx</td>
-<td>nucleotide</td>
-<td>nucleotide</td>
-<td>Aligning your nucleotide sequence with nucleotide sequence database by translating both sequences taking into account all six possible open reading frames.</td>
-</tr>
-<tr class="odd">
-<td>blastp</td>
-<td>amino acid</td>
-<td>amino acid</td>
-<td>Aligning your amino acid sequence with amino acid seque nce database.</td>
-</tr>
-<tr class="even">
-<td>blastx</td>
-<td>nucleotide</td>
-<td>amino acid</td>
-<td>Aligning your nucleotide sequence with amino acid sequence database by translating your sequence taking into account all six possible open reading frames.</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-
-<div class="section chapter">
+|  PROGRAM  |  query  |  Data Base  |  Description  |　　　　　　
+| ---- | ---- | ---- | ---- |
+| megablast | nucleotide | nucleotide | Aligning your nucleotide sequence with nucleotide sequence database.<br>When you want to perform a homology search with long length of nucleotide sequence, results are provided faster than blastn program. |
+ | **blastn** | nucleotide | nucleotide | Aligning your nucleotide sequence with nucleotide sequence database. |
+ | tblastn | amino acid | nucleotide | Aligning your amino acid sequence with nucleotide sequence database by translating database sequences taking into account all six possible open reading frames. |
+ | tblastx | nucleotide | nucleotide | Aligning your nucleotide sequence with nucleotide sequence database by translating both sequences taking into account all six possible open reading frames. |
+ | blastp | amino acid | amino acid | Aligning your amino acid sequence with amino acid seque nce database. |
+ | blastx | nucleotide | amino acid | Aligning your nucleotide sequence with amino acid sequence database by translating your sequence taking into account all six possible open reading frames. |
 
 ## Query name, Query sequence
 
@@ -77,16 +24,16 @@ When you want to perform a homology search with long length of nucleotide sequen
   - You can use either "File Upload" or fill the box directly.
 
   - For multiple query sequence, sequence names to distinguish each
-    sequences are indispensable. Names beginning at "\>" should be
+    sequences are indispensable. Names beginning at ">" should be
     placed on the first line of each sequence data (multi FASTA format).
 
   - If your query is one sequence, please enter the sequence. Attaching
-    a sequence name is optional. A name beginning at "\>" can be
+    a sequence name is optional. A name beginning at ">" can be
     attached at the first line.
 
 An example sequence in FASTA format
 
-``` code
+```
 >my query sequence 1
 CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
 GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
@@ -95,7 +42,7 @@ GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
 
 Example of multiple query sequence (multi FASTA format)
 
-``` code
+```
 >>my query sequence 1
 CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
 GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
@@ -110,24 +57,18 @@ TTTGCCCACGGACACAACTGCCATATCGCCTTACGGGAGATCATCGAAACTCTGAACAGC
 CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 ```
 
-<div class="attention">
-
+<div class="attention red">
 When your query size is too big (a large number of sequences, or each
 sequence is very long), the result might not be viewed in the web screen
 normally.  
 In such a case, please reduce the query size to send it at one time,
 decreasing the number of sequences or shortening the the sequence
 lengths.
-
 </div>
 
-</div>
-
-<div class="section chapter">
 
 ## Data Sets
 
-<div class="section section">
 
 ### Nucleotide (DATABASE, DIVISION)
 
@@ -135,31 +76,12 @@ lengths.
 
 Select the target database.
 
-<div class="main_table format">
-
-nucleotide database
-
-</div>
-
-</div>
-
-</div>
-
-DDBJ ALL
-
-DDBJ periodical release + daily updates
-
-DDBJ New
-
-DDBJ daily updates
-
-16S rRNA
-
-16S rRNA from DDBJ periodical release
-
-RefSeq NA
-
-RefSeq (Genomics + RNA)
+|  nucleotide database  |      |
+| ---- | ---- |
+| DDBJ ALL | DDBJ periodical release + daily updates |
+| DDBJ New | DDBJ daily updates |
+| 16S rRNA | 16S rRNA from DDBJ periodical release |
+| RefSeq NA | RefSeq (Genomics + RNA) |
 
 #### DIVISION (DDBJ ALL/DDBJ New)
 
@@ -170,354 +92,109 @@ Especially for EST division, the following 21 listed organisms which
 were selectted based on the submitted-number's statistics can be
 specified each other.
 
-<div class="main_table format">
 
-Standard divisions
 
-</div>
+|  Standard divisions  |    |    |
+| ---- | ---- | ---- |
+|  Human  |  HUM  |  human  |
+|  Primates  |  PRI  |  primates other than human  |
+|  Rodents  |  ROD  |  rodents  |
+|  Mammals	  |  MAM  |  mammals other than human, primates and rodents  |
+|  Vertebrates	  |  VRT  |  vertebrates other than human, primates, rodents and mammals  |
+|  Invertebrates  |  INV  |  invertebrates  |
+|  Plants  |  PLN  |  plants  |
+|  Bacteria	  |  BCT	  |  bacteria  |
+|  Viruses  |  VRL  |  viruses  |
+|  Phages  |  PHG  |  phages  |
+|  Synthetic DNAs  |  SYN  |  synthetic DNAs  |
+|  ENV  |  ENV  |  environmental samples  |
+
+|  High throughput divisions  |    |    |
+| ---- | ---- | ---- |
+|  HTC	  |  HTC	  |  High Throughput cDNAs  |
+|  HTG	  |  HTG	  |  High Throughput Genomic sequences  |
+|  TSA	  |  TSA	  |  Transcriptome Shotgun Assembly  |
+
+|  EST divisions  |      |
+| ---- | ---- | 
+|  A.thaliana	  | *Arabidopsis thaliana* (thale cress)  |
+|  B.taurus	  |  *Bos taurus* (cattle)  |
+|  C.elegans  | *Caenorhabditis elegans* (nematode worm) |
+|  C.reinhardtii  |  *Chlamydomonas reinhardtii* (Chlamydomonas:green algae)  |
+|  C.intestinalis  |  *Ciona intestinalis* (vase tunicate)  |
+|  D.rerio	  |  *Danio rerio* (zebrafish)  |
+|  D.discoideum  | *Dictyostelium discoideum* (soil-living amoeba)  |
+|  D.melanogaster  |  *D.melanogaster* (fruit fly)  |
+|  G.gallus	  |  *Gallus gallus* (chicken)  |
+|  G.max  |  *Glycine max* (soybean)  |
+|  H.sapiens  |  *Homo sapiens* (human)  |
+|  H.vulgare  |  *Hordeum vulgare* (incl. subspecies)  |
+|  M.truncatula  |  *Medicago truncatula* (incl. mixed library)  |
+|  M.musculus  |  *Mus musculus* (Mouse)  |
+|  O.sativa  |  *Oryza sativa* (incl. subspecies rank)  |
+|  R.norvegicus  |  *Rattus norvegicus* (incl. Rattus sp.)  |
+|  S.lycopersicum  |  *Solanum lycopersicum* (tomato)  |
+|  T.aestivum  |  *Triticum aestivum* (bread wheat)  | 
+|  X.laevis  |  *Xenopus laevis* (african clawed frog)  |
+|  X.tropicalis  |  *Xenopus tropicalis* (western clawed frog)  |
+|  Z.mays  |  *Zea mays* (maize)  |
+|  Others  |  Others  |
+
+|  Other divisions  |    |    |
+| ---- | ---- | ---- |
+|  Patent  |  PAT  |  patent  |
+|  Unannotated Seq	  |  UNA  |  unannotated sequences  |
+|  GSS  |  GSS  |  genome survey sequences  |
+|  STS  |  STS  |  sequence tagged sites  |
 
-Human
-
-HUM
-
-human
-
-Primates
-
-PRI
-
-primates other than human
-
-Rodents
-
-ROD
-
-rodents
-
-Mammals
-
-MAM
-
-mammals other than human, primates and rodents
-
-Vertebrates
-
-VRT
-
-vertebrates other than human, primates, rodents and mammals
-
-Invertebrates
-
-INV
-
-invertebrates
-
-Plants
-
-PLN
-
-plants
-
-Bacteria
-
-BCT
-
-bacteria
-
-Viruses
-
-VRL
-
-viruses
-
-Phages
-
-PHG
-
-phages
-
-Synthetic DNAs
-
-SYN
-
-synthetic DNAs
-
-ENV
-
-ENV
-
-environmental samples
-
-High throughput divisions
-
-HTC
-
-HTC
-
-High Throughput cDNAs
-
-HTG
-
-HTG
-
-High Throughput Genomic sequences
-
-TSA
-
-TSA
-
-Transcriptome Shotgun Assembly
-
-EST divisions
-
-A.thaliana
-
-*Arabidopsis thaliana* (thale cress)
-
-B.taurus
-
-*Bos taurus* (cattle)
-
-C.elegans
-
-*Caenorhabditis elegans* (nematode worm)
-
-C.reinhardtii
-
-*Chlamydomonas reinhardtii* (Chlamydomonas:green algae)
-
-C.intestinalis
-
-*Ciona intestinalis* (vase tunicate)
-
-D.rerio
-
-*Danio rerio* (zebrafish)
-
-D.discoideum
-
-*Dictyostelium discoideum* (soil-living amoeba)
-
-D.melanogaster
-
-*D.melanogaster* (fruit fly)
-
-G.gallus
-
-*Gallus gallus* (chicken)
-
-G.max
-
-*Glycine max* (soybean)
-
-H.sapiens
-
-*Homo sapiens* (human)
-
-H.vulgare
-
-*Hordeum vulgare* (incl. subspecies)
-
-M.truncatula
-
-*Medicago truncatula* (incl. mixed library)
-
-M.musculus
-
-*Mus musculus* (Mouse)
-
-O.sativa
-
-*Oryza sativa* (incl. subspecies rank)
-
-R.norvegicus
-
-*Rattus norvegicus* (incl. Rattus sp.)
-
-S.lycopersicum
-
-*Solanum lycopersicum* (tomato)
-
-T.aestivum
-
-*Triticum aestivum* (bread wheat)
-
-X.laevis
-
-*Xenopus laevis* (african clawed frog)
-
-X.tropicalis
-
-*Xenopus tropicalis* (western clawed frog)
-
-Z.mays
-
-*Zea mays* (maize)
-
-Others
-
-Others
-
-Other divisions
-
-Patent
-
-PAT
-
-patent
-
-Unannotated Seq
-
-UNA
-
-unannotated sequences
-
-GSS
-
-GSS
-
-genome survey sequences
-
-STS
-
-STS
-
-sequence tagged sites
 
 #### Database Options (RefSeq)
 
-<div class="main_table format">
+| Release（genomic/RNA) |    |
+| ---- | ---- |
+|  Fungi  |  Fungi  |
+|  Invertebrate  |  Invertebrate  |
+|  Microbial  |  Microbial  |
+|  Mitochondrion  |  Mitochondrion  |
+|  Plant  |  Plant  |
+|  Plasmid  |  Plasmid  |
+|  Plastid  |  Plastid  |
+|  Protozoa  |  Protozoa  |
+|  Vertebrate Mammalian  |  Vertebrate Mammalian  |
+|  Vertebrate Other   |  Vertebrate Other  |
+|  Viral  |  Viral  |
+|  Daily Updates  |  Daily Updates  |
 
-Release（genomic/RNA)
+|  Model（Genomic) |    |
+| ---- | ---- |
+|  H. sapiens  |  human  |
 
-</div>
-
-Fungi
-
-Fungi
-
-Invertebrate
-
-Invertebrate
-
-Microbial
-
-Microbial
-
-Mitochondrion
-
-Mitochondrion
-
-Plant
-
-Plant
-
-Plasmid
-
-Plasmid
-
-Plastid
-
-Plastid
-
-Protozoa
-
-Protozoa
-
-Vertebrate Mammalian
-
-Vertebrate Mammalian
-
-Vertebrate Other
-
-Vertebrate Other
-
-Viral
-
-Viral
-
-Daily Updates
-
-Daily Updates
-
-Model（Genomic)
-
-H. sapiens
-
-human
-
-Model（RNA)
-
-B. taurus
-
-cattle
-
-D. rerio
-
-zebrafish
-
-H. sapiens
-
-human
-
-M. musculus
-
-mouse
-
-R. norvegicus
-
-rat
-
-X. tropicalis
-
-western clawed frog
-
-<div class="section section">
+|  Model（RNA) |    |
+| ---- | ---- |
+|  B. taurus  |  cattle  |
+|  D. rerio  |  zebrafish  |
+|  H. sapiens  |  human  |
+|  M. musculus  |  mouse  |
+|  R. norvegicus  |  rat  |
+|  X. tropicalis  |  western clawed frog  |
 
 ### Protein (amino acid)
 
 #### DATABASE (protein)
 
-<div class="main_table format">
+|  Proterin Databases |    |
+| ---- | ---- |
+| UniProt (Swiss-Prot + TrEMBL)  |  Swiss-Prot + TrEMBL  |
+|  UniProt (Swiss-Prot)	  |  Swiss-Prot  |
+|  UniProt (TrEMBL)	 |  TrEMBL |
+|  Patent  |  amino acid patent data via JPO, EPO, USPTO and KIPO<br>（When you check the "Patent", all 4 boxes (JPO, KIPO, USPTO, EPO) was checked.<br>If you would like to select each other, remove the unnecessary marks.) |
+|  DAD (periodical release + daily updates)  |  DAD periodical release + daily updates  |
+|  DAD (daily updates)  |  DAD daily updates  |
+|  RefSeq AA  |  Refseq(Protein)  |
 
-\* Please check the current version is from here.
+{: .tablecaption}
+<span class="red">*</span> Please check the current version is from [here.](/stats/relinfo-e.html)
 
-Proterin Databases
-
-</div>
-
-</div>
-
-UniProt (Swiss-Prot + TrEMBL)
-
-Swiss-Prot + TrEMBL
-
-UniProt (Swiss-Prot)
-
-Swiss-Prot
-
-UniProt (TrEMBL)
-
-TrEMBL
-
-Patent
-
-amino acid patent data via JPO, EPO, USPTO and KIPO  
-（When you check the "Patent", all 4 boxes (JPO, KIPO, USPTO, EPO) was
-checked.  
-If you would like to select each other, remove the unnecessary marks.)
-
-DAD (periodical release + daily updates)
-
-DAD periodical release + daily updates
-
-DAD (daily updates)
-
-DAD daily updates
-
-RefSeq AA
-
-Refseq(Protein)
 
 #### DIVISION(DAD)
 
@@ -527,313 +204,92 @@ divisions (excl. SYN and ENV). Especially for EST division, the
 following 21 listed organisms which were selectted based on the
 submitted-number's statistics can be specified each other.
 
-<div class="main_table format">
-
-Standard divisions
-
-</div>
-
-Human
-
-HUM
-
-human
-
-Primates
-
-PRI
-
-primates other than human
-
-Rodents
-
-ROD
-
-rodents
-
-Mammals
-
-MAM
-
-mammals other than human，primates and rodents
-
-Vertebrates
-
-VRT
-
-vertebrates other than human，primates, rodents and mammals
-
-Invertebrates
-
-INV
-
-invertebrates
-
-Plants
-
-PLN
-
-plants
-
-Bacteria
-
-BCT
-
-bacteria
-
-Viruses
-
-VRL
-
-viruses
-
-Phages
-
-PHG
-
-phages
-
-Synthetic DNAs
-
-SYN
-
-synthetic DNAs
-
-ENV
-
-ENV
-
-environmental samples
-
-High throughput divisions
-
-HTC
-
-HTC
-
-High Throughput cDNAs
-
-HTG
-
-HTG
-
-High Throughput Genomic sequences
-
-TSA
-
-TSA
-
-Transcriptome Shotgun Assembly
-
-EST divisions
-
-A.thaliana
-
-*Arabidopsis thaliana* (thale cress)
-
-B.taurus
-
-*Bos taurus* （cattle）
-
-C.elegans
-
-*Caenorhabditis elegans* (nematode worm)
-
-C.reinhardtii
-
-*Chlamydomonas reinhardtii* (Chlamydomonas:green algae)
-
-C.intestinalis
-
-*Ciona intestinalis* (vase tunicate)
-
-D.rerio
-
-*Danio rerio* (zebrafish)
-
-D.discoideum
-
-*Dictyostelium discoideum* (soil-living amoeba)
-
-D.melanogaster
-
-*D.melanogaster* (fruit fly)
-
-G.gallus
-
-*Gallus gallus* (chicken)
-
-G.max
-
-*Glycine max* (soybean)
-
-H.sapiens
-
-*Homo sapiens* (human)
-
-H.vulgare
-
-*Hordeum vulgare* (Barley incl. subspecies)
-
-M.truncatula
-
-*Medicago truncatula*(Barrel Medic incl. mixed library)
-
-M.musculus
-
-*Mus musculus* (Mouse)
-
-O.sativa
-
-*Oryza sativa* (incl. subspecies rank)
-
-R.norvegicus
-
-*Rattus norvegicus* (Rat incl. Rattus sp.)
-
-S.lycopersicum
-
-*Solanum lycopersicum* (tomato)
-
-T.aestivum
-
-*Triticum aestivum* (bread wheat)
-
-X.laevis
-
-*Xenopus laevis* (african clawed frog)
-
-X.tropicalis
-
-*Xenopus tropicalis* (western clawed frog)
-
-Z.mays
-
-*Zea mays* (maize)
-
-Others
-
-Others
-
-Other divisions
-
-Patent
-
-PAT
-
-patent
-
-Unannotated Seq
-
-UNA
-
-unannotated sequences
-
-GSS
-
-GSS
-
-genome survey sequences
-
-STS
-
-STS
-
-sequence tagged sites
+|  Standard divisions  |    |    |
+| ---- | ---- | ---- |
+|  Human  |  HUM  |  human  |
+|  Primates  |  PRI  |  primates other than human  |
+|  Rodents  |  ROD  |  rodents  |
+|  Mammals	  |  MAM  |  mammals other than human，primates and rodents  |
+|  Vertebrates	  |  VRT  |  vertebrates other than human，primates, rodents and mammals  |
+|  Invertebrates  |  INV  |  invertebrates  |
+|  Plants  |  PLN  |  plants  |
+|  Bacteria	  |  BCT	  |  bacteria  |
+|  Viruses  |  VRL  |  viruses  |
+|  Phages  |  PHG  |  phages  |
+|  Synthetic DNAs  |  SYN  |  synthetic DNAs  |
+|  ENV  |  ENV  |  environmental samples  |
+
+|  High throughput divisions  |    |    |
+| ---- | ---- | ---- |
+|  HTC	  |  HTC	  |  High Throughput cDNAs  |
+|  HTG	  |  HTG	  |  High Throughput Genomic sequences  |
+|  TSA	  |  TSA	  |  Transcriptome Shotgun Assembly  |
+
+|  EST divisions  |
+| ---- | 
+|  A.thaliana	  |  *Arabidopsis thaliana* (thale cress)  |
+|  B.taurus	  |  *Bos taurus* （cattle）  | 
+|  C.elegans  |  *Caenorhabditis elegans* (nematode worm) | 
+|  C.reinhardtii  |  *Chlamydomonas reinhardtii* (Chlamydomonas:green algae)  | 
+|  C.intestinalis  |  *Ciona intestinalis* (vase tunicate)  | 
+|  D.rerio	  |  *Danio rerio* (zebrafish)  | 
+|  D.discoideum  |  *Dictyostelium discoideum* (soil-living amoeba)  | 
+|  D.melanogaster  |  *D.melanogaster* (fruit fly)  |
+|  G.gallus	  |  *Gallus gallus* (chicken)  |
+|  G.max  |  *Glycine max* (soybean)  |
+|  H.sapiens  |  *Homo sapiens* (human)  |
+|  H.vulgare  |  *Hordeum vulgare* (Barley incl. subspecies)  |
+|  M.truncatula  |  *Medicago truncatula*(Barrel Medic incl. mixed library)  |
+|  M.musculus  |  *Mus musculus* (Mouse)  |
+|  O.sativa  |  *Oryza sativa* (incl. subspecies rank)  | 
+|  R.norvegicus  |  *Rattus norvegicus* (Rat incl. Rattus sp.)  |
+|  S.lycopersicum  |  *Solanum lycopersicum* (tomato)  |
+|  T.aestivum  |  *Triticum aestivum* (bread wheat)  |
+|  X.laevis  |  *Xenopus laevis* (african clawed frog)  |
+|  X.tropicalis  |  *Xenopus laevis* (african clawed frog)  | 
+|  Z.mays  |  *Zea mays* (maize)  |
+|  Others  |  Others  |
+
+|  Other divisions  |    |    |
+| ---- | ---- | ---- |
+|  Patent  |  PAT  |  patent  |
+|  Unannotated Seq	  |  UNA  |  unannotated sequences  |
+|  GSS  |  GSS  |  genome survey sequences  |
+|  STS  |  STS  |  sequence tagged sites  |
 
 #### DATABASE option (RefSeq)
 
-<div class="main_table format">
+|  Release（Protein) |    |
+| ---- | ---- |
+|  Fungi  |  Fungi  |
+|  Invertebrate  |  Invertebrate  |
+|  Microbial  |  Microbial  |
+|  Mitochondrion  |  Mitochondrion  |
+|  Plant  |  Plant  |
+|  Plasmid  |  Plasmid  |
+|  Plastid  |  Plastid  |
+|  Protozoa  |  Protozoa  |
+|  Vertebrate Mammalian  |  Vertebrate Mammalian  |
+|  Vertebrate Other   |  Vertebrate Other  |
+|  Viral  |  Viral  |
+|  Daily Updates  |  Daily Updates  |
 
-Release（Protein)
+|  Model（Genomic) |    |
+| ---- | ---- |
+|  H. sapiens  |  human  |
 
-</div>
+|  Model（Protain) |    |
+| ---- | ---- |
+|  B. taurus  |  cattle  |
+|  D. rerio  |  zebrafish  |
+|  H. sapiens  |  human  |
+|  M. musculus  |  mouse  |
+|  R. norvegicus  |  rat  |
+|  X. tropicalis  |  western clawed frog  |
 
-Fungi
-
-Fungi
-
-Invertebrate
-
-Invertebrate
-
-Microbial
-
-Microbial
-
-Mitochondrion
-
-Mitochondrion
-
-Plant
-
-Plant
-
-Plasmid
-
-Plasmid
-
-Plastid
-
-Plastid
-
-Protozoa
-
-Protozoa
-
-Vertebrate Mammalian
-
-Vertebrate Mammalian
-
-Vertebrate Other
-
-Vertebrate Other
-
-Viral
-
-Viral
-
-Daily Updates
-
-Daily Updates
-
-Model（Genomic)
-
-H. sapiens
-
-human
-
-Model（Protain)
-
-B. taurus
-
-cattle
-
-D. rerio
-
-zebrafish
-
-H. sapiens
-
-human
-
-M. musculus
-
-mouse
-
-R. norvegicus
-
-rat
-
-X. tropicalis
-
-western clawed frog
-
-<div class="section chapter">
 
 ## Optional Parameters
 
-<div class="section section">
 
 ### SCORES
 
@@ -842,9 +298,6 @@ scores. Default value is 100.
 When you can not find some expected data in the result of BLAST search,
 it is possibly improved by using larger value for this parameter.
 
-</div>
-
-<div class="section section">
 
 ### ALIGNMENTS
 
@@ -853,9 +306,6 @@ Default value is 100.
 When you can not find some expected data in the result of BLAST search,
 it is possibly improved by using larger value for this parameter.
 
-</div>
-
-<div class="section section">
 
 ### EXPECT value (E-value)
 
@@ -865,9 +315,6 @@ score, increase the "expect value”. If you need only sequences with very
 high homology scores, decrease the value.  
 It is possible to specify it by the exponent notation. (ex: 1.0E+1)
 
-</div>
-
-<div class="section section">
 
 ### SCORING MATRIX
 
@@ -875,10 +322,6 @@ Specify the scoring matrix table for blastx, blastp and tblastn and
 tblastx.  
 The default matrix is BLOSUM62.
 
-<div class="main_table format">
-
-|          |                                 |
-| -------- | ------------------------------- |
 | PAM30    | PAM30 substitution matrix       |
 | PAM70    | PAM70 substitution matrix       |
 | PAM250   | PAM250 substitution matrix      |
@@ -888,11 +331,7 @@ The default matrix is BLOSUM62.
 | BLOSUM80 | BLOSUM Clustered Scoring Matrix |
 | BLOSUM90 | BLOSUM Clustered Scoring Matrix |
 
-</div>
 
-</div>
-
-<div class="section section">
 
 ### FILTER
 
@@ -909,24 +348,16 @@ and Lipman in BLASTN, and by SEG of Wootton and Federhen otherwise. Low
 compositional complexity regions ignored by filtering are replaced by
 "N"s in the nucleotide sequence and by "X"s in the amino acid sequence.
 
-</div>
-
-<div class="section section">
 
 ### WORD SIZE
 
 Specify a natural number. Default values are 28 for megablast, 11 for
 blastn, and 3 for the other programs.
 
-</div>
 
-</div>
-
-<div class="section chapter">
 
 ## Request ID and BLAST result
 
-<div class="section section">
 
 ### Request ID
 
@@ -934,33 +365,27 @@ After pressing the "Send to BLAST" button, Request ID is displayed on
 the web screen. Don't loose this ID because it is necessary for using
 the "Result Viewer" and/or inquiring to DDBJ for your search.
 
-Request ID:wabi\_blast\_2013-0314-1407-23-16-946732
+Request ID:wabi_blast_2013-0314-1407-23-16-946732
 
-![](/images/help/blast_help_01-e.gif "blast_requestID")
+![]({{ site.baseurl }}/assets/images/help/blast_help_01-e.gif "blast_requestID")
 
-</div>
 
-<div class="section section">
 
 ### Information contained in the result screen
 
-![](/images/help/blast_help_02-e.gif
+![]({{ site.baseurl }}/assets/images/help/blast_help_02-e.gif
 "Information contained in the result screen")
 
-</div>
 
-<div class="section section">
 
 ### View the flatfile of the entries
 
 Select the accession numbers, and prres the "getentry"button. You can
 view the flatfile of the sequences in the getentry.
 
-![](/images/help/blast_help_03-e.gif "View the flatfile of the entries")
+![]({{ site.baseurl }}/assets/images/help/blast_help_03-e.gif "View the flatfile of the entries")
 
-</div>
 
-<div class="section section">
 
 ### Result Viewer
 
@@ -968,13 +393,8 @@ You can view your result using "Request ID" at any time (within the
 retention period).  
 The results will be deleted after 7 days.
 
-![](/images/help/blast_help_04-e.gif "Result Viewer")
+![]({{ site.baseurl }}/assets/images/help/blast_help_04-e.gif "Result Viewer")
 
-</div>
-
-</div>
-
-<div class="section chapter">
 
 ## ClustalW Set up
 
@@ -984,15 +404,12 @@ pasted in the ClustalW query box.
 
 (1)
 
-![ClustalW Set up（１）](/images/help/blast_help_05-e.gif)
+![ClustalW Set up（１）]({{ site.baseurl }}/assets/images/help/blast_help_05-e.gif)
 
 (2)
 
-![ClustalW Set up（2）](/images/help/blast_help_06-e.gif)
+![ClustalW Set up（2）]({{ site.baseurl }}/assets/images/help/blast_help_06-e.gif)
 
-</div>
-
-<div class="section chapter">
 
 ## Reference
 
@@ -1025,6 +442,4 @@ pasted in the ClustalW query box.
 
 ### BOOK
 
-  - \[BLAST\] Ian Korf, Mark Yandell and Joseph Bedell, OREILLY
-
-</div>
+  - [BLAST] Ian Korf, Mark Yandell and Joseph Bedell, OREILLY
