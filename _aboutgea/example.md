@@ -3,7 +3,6 @@ layout: indexed_content
 title: MAGE-TAB の例
 pathname: example
 category: aboutgea
-pdf: https://www.ddbj.nig.ac.jp/pdf/gea/example.pdf
 ---
 
 ## IDF 例

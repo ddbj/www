@@ -3,7 +3,6 @@ layout: indexed_content
 title: データの種類
 pathname: data-categories
 category: datacategories
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/data-categories.pdf
 ---
 
 ## [Division](/ddbj/flat-file.html#Division) conventional sequence data

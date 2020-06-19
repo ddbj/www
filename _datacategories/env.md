@@ -3,7 +3,6 @@ layout: indexed_content
 title: ENV
 pathname: env
 category: datacategories
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/env.pdf
 ---
 
 DDBJ/ENA/GenBank の ENV division は 環境サンプル (environmental sample) 由来の配列と

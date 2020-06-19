@@ -34,6 +34,7 @@ layout: default
       <div class="md-content">
         {{ content }}
       </div>
+      {% if page.related_pages %}
       <aside class="multi-column-view _padding-bottom-5rem">
         <h2 class="caption">Related pages</h2>
         <div class="navigation">
@@ -48,6 +49,7 @@ layout: default
           </nav>
         </div>
       </aside>
+      {% endif %}
     </main>
   </div>
 </section>

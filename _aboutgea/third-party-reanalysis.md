@@ -3,7 +3,6 @@ layout: indexed_content
 title: Third-party reanalysis data
 pathname: third-party-reanalysis
 category: aboutgea
-pdf: https://www.ddbj.nig.ac.jp/pdf/gea/third-party-reanalysis.pdf
 ---
 
 

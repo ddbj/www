@@ -332,10 +332,27 @@ input, textarea, select, button {
   /* 幅を調整 */ }
   .md-content .highlight {
     overflow: auto; }
+  .md-content a[href^="http"]:after, .md-content a[href^="//"]:after {
+    content: '';
+    background-image: url(/www/assets/images/parts/external_link.jpeg);
+    background-repeat: no-repeat;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0 .4rem;
+    display: inline-block;
+    background-size: 1.4rem;
+    vertical-align: middle; }
+  .md-content a[href^="http://ddbj.nig.ac.jp"]:after {
+    display: none; }
   .md-content img {
     width: 100%; }
+  .md-content .size-optimize img {
+    width: auto; }
   .md-content .w40 {
-    width: 40px; }
+    width: 4rem; }
+  .md-content .pdf {
+    width: 2.5rem;
+    height: 2.5rem; }
   .md-content > p, .md-content > table, .md-content > ol, .md-content > ul, .md-content > dl, .md-content > .highlighter-rouge {
     margin-bottom: 1rem; }
   .md-content .red {
@@ -358,6 +375,17 @@ input, textarea, select, button {
     font-size: 1.6rem;
     border-bottom: 2px solid #FEC091;
     margin-bottom: 1.6rem; }
+  .md-content h2, .md-content h3 {
+    cursor: pointer; }
+    .md-content h2:after, .md-content h3:after {
+      content: '';
+      background-image: url(/www/assets/images/parts/link.jpeg);
+      width: 1.6rem;
+      height: 1.6rem;
+      margin: 0 .3rem;
+      display: none; }
+    .md-content h2:hover:after, .md-content h3:hover:after {
+      display: inline-block; }
   .md-content ul li {
     padding: .4rem 0;
     line-height: 1.6;
@@ -401,13 +429,23 @@ input, textarea, select, button {
       font-weight: bold; }
     .md-content dl + dt {
       margin-top: 1rem; }
-  .md-content .tablecaption {
-    font-size: 1.4rem;
-    color: #6E5C3E;
-    margin-bottom: 0.5rem;
+  .md-content .dl-list {
+    margin-bottom: 2rem; }
+    .md-content .dl-list dt {
+      float: left; }
+    .md-content .dl-list dd {
+      margin-left: 8.5rem; }
+  .md-content caption, .md-content figcaption, .md-content .tablecaption {
+    caption-side: bottom;
+    font-size: 1.2rem;
+    color: #666;
     text-align: left;
-    display: block;
-    margin-top: 3.5rem; }
+    line-height: initial; }
+  .md-content caption, .md-content figcaption {
+    margin-top: .5rem; }
+  .md-content .tablecaption {
+    margin-bottom: .5rem;
+    display: block; }
   .md-content table {
     width: 100%;
     border: 1px solid #736357;

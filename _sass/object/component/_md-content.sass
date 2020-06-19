@@ -5,11 +5,30 @@ $MARGIN_BOTTOM: 1rem
   line-height: 1.8
   .highlight
     overflow: auto
-
+  a[href^="http"],a[href^="//"]
+    &:after
+      content: ''
+      background-image: url(/www/assets/images/parts/external_link.jpeg)
+      background-repeat: no-repeat
+      width: 1.6rem
+      height: 1.6rem
+      margin: 0 .4rem
+      display: inline-block
+      background-size: 1.4rem
+      vertical-align: middle
+  a[href^="http://ddbj.nig.ac.jp"]
+    &:after
+      display: none
   img
     width: 100%
+  .size-optimize
+    img
+      width: auto
   .w40
-    width: 40px
+    width: 4rem
+  .pdf
+    width: 2.5rem
+    height: 2.5rem
   > p, > table, > ol, > ul, > dl, > .highlighter-rouge
     margin-bottom: $MARGIN_BOTTOM
   .red
@@ -33,6 +52,18 @@ $MARGIN_BOTTOM: 1rem
     font-size: 1.6rem
     border-bottom: 2px solid $COLOR_KEY_PALE
     margin-bottom: 1.6rem
+  h2,h3
+    cursor: pointer
+    &:after
+      content: ''
+      background-image: url(/www/assets/images/parts/link.jpeg)
+      width: 1.6rem
+      height: 1.6rem
+      margin: 0 .3rem
+      display: none
+    &:hover
+      &:after
+        display: inline-block
 
   ul
     li
@@ -83,14 +114,24 @@ $MARGIN_BOTTOM: 1rem
     dd
     + dt
       margin-top: 1rem
+  .dl-list
+    margin-bottom: 2rem
+    dt
+      float: left
+    dd
+      margin-left: 8.5rem
 
-  .tablecaption
-    font-size: 1.4rem
-    color: #6E5C3E
-    margin-bottom: 0.5rem
+  caption,figcaption,.tablecaption
+    caption-side: bottom
+    font-size: 1.2rem
+    color: #666
     text-align: left
+    line-height: initial
+  caption,figcaption
+    margin-top: .5rem
+  .tablecaption
+    margin-bottom: .5rem
     display: block
-    margin-top: 3.5rem
   table
     width: 100%
     border: 1px solid $COLOR_GRAY

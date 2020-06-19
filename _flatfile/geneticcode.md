@@ -3,7 +3,6 @@ layout: indexed_content
 title: The Genetic Codes
 pathname: geneticcode
 category: flatfile
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/geneticcode.pdf
 ---
 
 ## Defiition of /transl\_table qualifier

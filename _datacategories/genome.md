@@ -3,7 +3,6 @@ layout: indexed_content
 title: Genome Project のデータ登録
 pathname: genome
 category: datacategories
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/genome.pdf
 ---
 
 ## Genome Project のデータ登録

@@ -3,7 +3,6 @@ layout: indexed_content
 title: HTG
 pathname: htg
 category: datacategories
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/htg.pdf
 ---
 
 DDBJ/ENA/GenBank の HTG division は finished

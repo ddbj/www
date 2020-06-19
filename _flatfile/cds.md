@@ -3,7 +3,6 @@ layout: indexed_content
 title: タンパク質コード配列; CDS feature について
 pathname: cds
 category: flatfile
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/cds.pdf
 ---
 　
 

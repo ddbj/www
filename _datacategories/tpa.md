@@ -3,7 +3,6 @@ layout: indexed_content
 title: TPA
 pathname: tpa
 category: datacategories
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/tpa.pdf
 ---
 
 TPA (Third Party Data) は、DDBJ/ENA/GenBank、[Trace

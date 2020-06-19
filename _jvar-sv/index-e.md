@@ -5,12 +5,7 @@ pathname: index-e
 category: _jvar-sv
 ---
 
-<div id="primary">
-
-<div id="page_main">
+# Home
 
 JVar-SV (Japan Variation Database for Structural Variation)
 
-</div>
-
-</div>

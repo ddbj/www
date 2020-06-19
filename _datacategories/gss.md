@@ -3,7 +3,6 @@ layout: indexed_content
 title: GSS
 pathname: gss
 category: datacategories
-pdf: https://www.ddbj.nig.ac.jp/pdf/ddbj/gss.pdf
 ---
 
 DDBJ/ENA/GenBank の GSS division は [EST](/ddbj/est.html) division

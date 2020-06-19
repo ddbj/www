@@ -9,17 +9,10 @@ category: _activities
 
 連載期間：No.55（2010年12月1日発行）〜No.65（2011年10月27日発行）※最新の情報とは内容が異なる場合がありますのでご注意下さい。
 
-<div id="pub-list" class="switch">
-
 ## １．Primary Database を維持するということ(前編/後編)
 
-<div class="column">
-
-<div class="clearfix">
-
+{:.text-align-end}
 DDBJ チーフアノテータ　真島　淳
-
-</div>
 
 自己紹介みたいなものは興味のある場合だけ, 過去の雑文を読んでいただくことに代えて割愛します。 ただ, 当時と違い今は chief でも, annotator でもないという説もあります。 それでも, 現場ではエラそうに仕切っているという不思議な感じにしています。
 
@@ -29,21 +22,9 @@ DDBJ チーフアノテータ　真島　淳
 
 「[INSDC](http://www.insdc.org/) は primary database を構築している」という主張は [GenBank](//www.ncbi.nlm.nih.gov/genbank/) ([NCBI](//www.ncbi.nlm.nih.gov/)) と [EMBL-Bank](//www.ebi.ac.uk/ena/) ([ENA](//www.ebi.ac.uk/ena/about/about)/[EBI](//www.ebi.ac.uk/)) との対話において頻出しますが, 今一つ一般的には浸透していません。 primary database とは, おそらく一般には「個々の研究者が自らデータを登録する仕組みで収集されたデータベース」というようなことを指すと思います。[DDBJ におけるデータのサイクル](/ddbj/submission.html#flow)を図に示しています。
 
-<div class="clearfix">
+![]({{ site.baseurl }}/assets/images/ddbj/workflow.gif){:.float-left}
 
-<div class="chart">
-
-![](/images/ddbj/workflow.gif)
-
-</div>
-
-<div class="cart">
-
-![](/images/center/insdc_shoukai.gif)
-
-</div>
-
-</div>
+![]({{ site.baseurl }}/assets/images/center/insdc_shoukai.gif){:.float-right}
 
 primary database の場合, そのコンテンツに関する responsibility とか, 文責のようなものは, 本来, 登録した個々の研究者に帰せられるべきです。 よく混同される [RefSeq](//www.ncbi.nlm.nih.gov/refseq/) を対照例にします。 RefSeq は NCBI が独自に構築しており secondary database に相当します。 対して DDBJ/EMBL-Bank/GenBank は一般の研究者が決めた塩基配列を受け付ける primary database に相当します。 RefSeq は実は DDBJ/EMBL-Bank/GenBank から引用, 冗長性をなくすような選択, NCBI の staff による記述の見直しと修正などを経て構築されています。この特定 staff が自由に記述を改訂することが可能か否かの点が primary database と secondary database で大きく異なります。 [RefSeq](//www.ncbi.nlm.nih.gov/books/NBK50679/) の FAQ  項目で説明されていますが, この文脈では GenBank と DDBJ, EMBL-Bank は等価ですので, 読み替えてください。
 
@@ -82,10 +63,6 @@ primary database の場合, そのコンテンツに関する responsibility と
 
 今後のリレー連載への繋ぎの文章として, 次回以降は, 実際の現場で何が起こっているか, を中心に展開していくことと思います。 多分, 私ではない人が これから書くことですので, 内容は推定です。
 
-1.  欠点はあると思いますが, とにかく利用してくれている研究者は多い SAKURA からの登録がどのように扱われているか？ 2) EST, WGS, 全ゲノム規模 などの登録を扱う[Mass Submission System](/ddbj/mss.html) からの登録受付の実情, 3) それら全てのデータを登録受付後に更新・維持管理をする [update 担当](/ddbj/updt.html) が処理する種々の修正依頼, 4) 配列決定の手法も多様化しつつあり, データ量も増え, 立ち上げから対応に追われている [DDBJ Seauence Read Archive (DRA)](/dra/index.html) に関する事情などが予定されています。
+1) 欠点はあると思いますが, とにかく利用してくれている研究者は多い SAKURA からの登録がどのように扱われているか？ 2) EST, WGS, 全ゲノム規模 などの登録を扱う[Mass Submission System](/ddbj/mss.html) からの登録受付の実情, 3) それら全てのデータを登録受付後に更新・維持管理をする [update 担当](/ddbj/updt.html) が処理する種々の修正依頼, 4) 配列決定の手法も多様化しつつあり, データ量も増え, 立ち上げから対応に追われている [DDBJ Seauence Read Archive (DRA)](/dra/index.html) に関する事情などが予定されています。
 
 また, 機会があれば, annotator とシステム仕様策定とか, 新システム検討の関係について述べることがあるかもしれません。 予定していませんが, 私が再登場する回があるかもしれません。 でも, それはないことを密かに願っています。
-
-</div>
-
-</div>

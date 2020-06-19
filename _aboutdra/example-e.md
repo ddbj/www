@@ -5,184 +5,7 @@ pathname: example-e
 category: aboutdra
 ---
 
-<div id="page" class="top">
-
-<div id="header" class="clearfix">
-
-<div id="header-top">
-
-[![](/images/parts/ddbj-logo-white.svg)](/index-e.html "DNA Data Bank of Japan")
-
-<div id="header-top-left">
-
-<span class="resources-btn">Services**</span>
-
-</div>
-
-<div id="header-top-right">
-
-  - [Login & Submit](https://ddbj.nig.ac.jp/D-way)
-  - [Policies and Disclaimers](/policies-e.html)
-  - [Contact](/contact-e.html)
-  - [Japanese](/dra/example.html)
-
-</div>
-
-</div>
-
-<div class="resources-contents">
-
-<div class="boxContainer">
-
-<div class="resources-box">
-
-  - ### ![](/images/logos/service-org.svg)Search
-
-  - [getentry](http://getentry.ddbj.nig.ac.jp/top-e.html "Retrieve sequence records by accession numbers")
-
-  - [ARSA](http://ddbj.nig.ac.jp/arsa/ "Retrieve sequence and annotation by keywords")
-
-  - [DRA
-    Search](http://ddbj.nig.ac.jp/DRASearch "Search and retrieve sequencing data.")
-
-  - [TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en "Search unified taxonomy database")
-
-  - [BLAST](http://blast.ddbj.nig.ac.jp/blastn?lang=en "Search nucleotide sequences by sequence similarity")
-
-<!-- end list -->
-
-  - ### ![](/images/logos/wrench.svg)Analysis
-
-  - [Vector Screening
-    System](http://ddbj.nig.ac.jp/vecscreen/ "Screen vector sequences")
-
-  - [ClustalW](http://clustalw.ddbj.nig.ac.jp/index.php?lang=en "Multiple alignment and tree-making")
-
-  - [WABI (Web API for
-    Biology)](/search/help/wabi/wabi-e.html "Web API for using the search services of DDB")
-
-  - [DDBJ FTP
-    Site](ftp://ftp.ddbj.nig.ac.jp/ "Download public data by ftp")
-
-</div>
-
-<div class="resources-box">
-
-  - ### ![](/images/logos/database-org.svg)Databases
-
-  - [Annotated/Assembled Sequences
-    (DDBJ)](/ddbj/index-e.html "Annotated/Assembled Sequences (DDBJ)")
-
-  - [Sequence Read Archive
-    (DRA)](/dra/index-e.html "Sequence Read Archive")
-
-  - [Genomic Expression Archive
-    (GEA)](/gea/index-e.html "Genomic Expression Archive")
-
-  - [BioProject](/bioproject/index-e.html "BioProject")
-
-  - [BioSample](/biosample/index-e.html "BioSample")
-
-  - [Japanese Genotype-phenotype Archive
-    (JGA)](/jga/index-e.html "Japanese Genotype-phenotype Archive")
-
-  - [Submission portal
-    D-way](https://ddbj.nig.ac.jp/D-way "Submission portal D-way")
-
-<!-- end list -->
-
-  - ### ![](/images/logos/sc-org.svg)NIG SuperComputer
-
-  - [NIG
-    SuperComputer](https://sc.ddbj.nig.ac.jp/en "NIG SuperComputer")
-
-</div>
-
-<div class="resources-box dbcls">
-
-  - ### ![](/images/logos/dbcls-s.svg)DBCLS Services
-
-  - [AOE](http://aoe.dbcls.jp/en "Statistics and trends of gene expression data")
-
-  - [CRISPRdirect](https://crispr.dbcls.jp/ "Designing CRISPR/Cas9 guide RNA with reduced off-target sites")
-
-  - [DBCLS
-    SRA](http://sra.dbcls.jp/ "Statistics and trends of SRA data")
-
-  - [Gendoo](http://gendoo.dbcls.jp/ "Functional profiling of gene and disease features for omics analysis")
-
-  - [GGGenome](https://gggenome.dbcls.jp/en/ "A ultrafast sequence search")
-
-  - [GGRNA](https://ggrna.dbcls.jp/en/ "A Google-like, ultrafast search engine for genes and transcripts")
-
-  - [RefEx](http://refex.dbcls.jp/index.php?lang=en "A web tool for a comfortable search of reference data for gene expression analysis")
-
-</div>
-
-</div>
-
-</div>
-
-<div id="header-middle" class="clearfix">
-
-<div class="page-title">
-
-[Sequence Read Archive](/dra/index-e.html)
-
-</div>
-
-<div class="search-box">
-
-<div id="search-box-flex">
-
-<div class="search-options-wrapper">
-
-BI-DDBJ Web Sites Annotated/Assembled Sequences Sequence Read Archive
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div id="header-bottom">
-
-  - [Home](/dra/index-e.html)
-  - [Handbook![](/images/parts/arrow_down.svg)](/dra/submission.html)
-      - [Metadata
-        examples](https://docs.google.com/spreadsheets/d/1DTdUQ-WWOMjOA2eYQWmFYUB24hJysuwhvHLJoDFX4rc/edit#gid=0)
-  - [FAQ](/dra/faq-e.html)
-  - [Search](http://ddbj.nig.ac.jp/DRASearch/)
-  - [Downloads![](/images/parts/arrow_down.svg)](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq)
-      - [FASTQ](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq)
-      - [SRA](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/sralite/ByExp/litesra/)
-      - [XML
-        Schema](https://github.com/ddbj/pub/tree/master/docs/dra/xsd)
-  - [About DRA](/dra/about-e.html)
-
-</div>
-
-</div>
-
-<div id="main" class="clearfix">
-
-<div id="breadcrumb" class="clearfix">
-
-  - [HOME](/dra/index-e.html "DDBJ Sequence Read Archive top page")
-  - \>
-  - Example
-
-</div>
-
-<div id="primary">
-
-<div id="page_main">
-
 # Example of metadata
-
-<div id="main_index">
 
   - [Experiment (Spot, Platform)](#Experiment)
   - [454 single reads](#454_single)
@@ -194,79 +17,36 @@ BI-DDBJ Web Sites Annotated/Assembled Sequences Sequence Read Archive
   - [Ion torrent single reads](#Ion_single)
   - [PacBio single reads (Standard sequencing)](#PacBio_standard)
   - [PacBio single reads (Circular consensus sequencing)](#PacBio_CCS)
-  - [Typical examples causing errors in data validation](#errors)
+
+# [Typical examples causing errors in data validation](#errors)
+
   - [Reads having no application read](#no_application)
   - [Reads with inconsistent base coordinate](#inconsistent_base)
-  - [Reads with relative order which cannot be
-    specified](#cannot_specified)
-  - [Experiment (Pipeline)](#Experiment_pipeline)
+  - [Reads with relative order which cannot be specified](#cannot_specified)
+
+# [Experiment (Pipeline)](#Experiment_pipeline)
   - [Example 1 of Experiment XML Pipeline](#pipeline1)
   - [Example 2 of Experiment XML Pipeline](#pipeline2)
 
+{::options parse_block_html="true" /}
+<div class="attention red">
+The DRA metadata submission tool cannot describe technical reads (adapter, primer and barcode sequences). When sequencing data contain technical reads to be submitted,
+[submitters need to create ExperimentXML files](/dra/submission-e.html#create-metadata-in-xml-files)
+and describe technical reads in the \<SPOT_DESCRIPTOR>.
 </div>
 
-<div class="attention">
+## Experiment (Spot, Platform) <a name="Experiment"></a>
 
-The DRA metadata submission tool cannot describe technical reads
-(adapter, primer and barcode sequences). When sequencing data contain
-technical reads to be submitted, [submitters need to create Experiment
-XML files](/dra/submission-e.html#create-metadata-in-xml-files) and
-describe technical reads in the \<SPOT\_DESCRIPTOR\>.
-
-</div>
-
-<div class="section">
-
-## Experiment (Spot, Platform)
-
-<div class="example">
-
-### 454 single reads
-
-<div class="example_read">
+### 454 single reads <a name="454_single"></a>
 
 #### Read
 
 Read composition
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Read Index <span class="normal">:</span></td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>Read <span class="normal">:</span></td>
-<td>TCAG</td>
-<td>ATAGAGTTGATCCTGGCTCAT……………</td>
-</tr>
-<tr class="odd">
-<td>Base Coordinate <span class="normal">:</span></td>
-<td>1</td>
-<td><div class="base_left">
-5
-</div>
-<div class="base_right">
-80
-</div></td>
-</tr>
-<tr class="even">
-<td>Read Type <span class="normal">:</span></td>
-<td>Adapter</td>
-<td>Forward</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-
-<div class="example_metadata">
+|  Read Index : |  0  |  1  |
+|  Read : |  TCAG  |  ATAGAGTTGATCCTGGCTCAT……………  |
+|  Base Coordinate :  |  1  |  {::nomarkdown}<div class="float-left">5</div><div class="float-right">80</div>{:/}  |
+|  Read Type :  |  Adapter  |  Forward  |
 
 #### Metadata
 
@@ -277,9 +57,9 @@ Spot (Read Spec)
 | 0          | Technical Read   | Adapter   | BaseCoord = 1   |
 | 1          | Application Read | Forward   | BaseCoord = 5   |
 
-Experiment XML (SPOT\_DESCRIPTOR)
+Experiment XML (SPOT_DESCRIPTOR)
 
-``` example_xml
+```
 <SPOT_DESCRIPTOR>
   <SPOT_DECODE_SPEC>
     <READ_SPEC>
@@ -304,30 +84,16 @@ Experiment XML (SPOT\_DESCRIPTOR)
 | -------- | ------------------- |
 | LS454    | 454 GS FLX Titanium |
 
-</div>
-
-</div>
-
-<div class="example">
-
-### 454 paired reads
-
-<div class="example_read">
+### 454 paired reads <a name="454_paired"></a>
 
 #### Read
 
 Read composition
 
-|                                               |         |                   |                    |            |
-| --------------------------------------------- | ------- | ----------------- | ------------------ | ---------- |
-| Read Index <span class="normal">:</span>      | 0       | 1                 | 2                  | 3          |
-| Read <span class="normal">:</span>            | TCAG    | ATAGAGT……………CCTGG | TCGTAT……………TATTACG | CTCAT…………… |
-| Base Coordinate <span class="normal">:</span> | 1       | 5                 |                    |            |
-| Read Type <span class="normal">:</span>       | Adapter | Forward           | Linker             | Forward    |
-
-</div>
-
-<div class="example_metadata">
+| Read Index :      | 0       | 1                 | 2                  | 3          |
+| Read :            | TCAG    | ATAGAGT……………CCTGG | TCGTAT……………TATTACG | CTCAT…………… |
+| Base Coordinate : | 1       | 5                 |                    |            |
+| Read Type :       | Adapter | Forward           | Linker             | Forward    |
 
 #### Metadata
 
@@ -347,9 +113,9 @@ Expected Basecall Table
 | TCGTATAACTTCGTATAATGTATGCTATACGAAGTTATTACG | 38        | 5            | full       |
 | CGTAATAACTTCGTATAGCATACATTATACGAAGTTATACGA | 38        | 5            | full       |
 
-Experiment XML (SPOT\_DESCRIPTOR)
+Experiment XML (SPOT_DESCRIPTOR)
 
-``` example_xml
+```
 <SPOT_DESCRIPTOR>
   <SPOT_DECODE_SPEC>
     <READ_SPEC>
@@ -389,53 +155,16 @@ Experiment XML (SPOT\_DESCRIPTOR)
 | -------- | ------------------- |
 | LS454    | 454 GS FLX Titanium |
 
-</div>
-
-</div>
-
-<div class="example">
-
-### Illumina single reads
-
-<div class="example_read">
+### Illumina single reads <a name="illumina_single"></a>
 
 #### Read
 
 Read composition
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Read Index <span class="normal">:</span></td>
-<td>0</td>
-</tr>
-<tr class="even">
-<td>Read <span class="normal">:</span></td>
-<td>ATAGAGTTGATCCTGG……………CCTGGCTCA</td>
-</tr>
-<tr class="odd">
-<td>Base Coordinate <span class="normal">:</span></td>
-<td><div class="base_left">
-1
-</div>
-<div class="base_right">
-72
-</div></td>
-</tr>
-<tr class="even">
-<td>Read Type <span class="normal">:</span></td>
-<td>Forward</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-
-<div class="example_metadata">
+|  Read Index :  |  0  |
+|  Read :  |  ATAGAGTTGATCCTGG……………CCTGGCTCA  |
+|  Base Coordinate :  |  {::nomarkdown}<div class="float-left">１</div><div class="float-right">72</div>{:/} |
+|  Read Type :  |  Forward  |
 
 #### Metadata
 
@@ -445,9 +174,9 @@ Spot (Read Spec)
 | ---------- | ---------------- | --------- | --------------- |
 | 0          | Application Read | Forward   | BaseCoord = 1   |
 
-Experiment XML (SPOT\_DESCRIPTOR)
+Experiment XML (SPOT_DESCRIPTOR)
 
-``` example_xml
+```
 <SPOT_DESCRIPTOR>
   <SPOT_DECODE_SPEC>
     <SPOT_LENGTH>72</SPOT_LENGTH>
@@ -467,58 +196,17 @@ Experiment XML (SPOT\_DESCRIPTOR)
 | -------- | ---------------------------- | --------------- |
 | Illumina | Illumina Genome Analyzer IIx | 72              |
 
-</div>
-
-</div>
-
-<div class="example">
-
-### Illumina paired reads
-
-<div class="example_read">
+### Illumina paired reads <a name="illumina_paired"></a>
 
 #### Read
 
 Read composition
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Read Index <span class="normal">:</span></td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>Read <span class="normal">:</span></td>
-<td>ATAGAGTTGATCCTGG……………</td>
-<td>CCTGGCTCATCAGTTGAT……………</td>
-</tr>
-<tr class="odd">
-<td>Base Coordinate <span class="normal">:</span></td>
-<td>1</td>
-<td><div class="base_left">
-101
-</div>
-<div class="base_right">
-200
-</div></td>
-</tr>
-<tr class="even">
-<td>Read Type <span class="normal">:</span></td>
-<td>Forward</td>
-<td>Reverse</td>
-</tr>
-</tbody>
-</table>
+|  Read Index :  |  0  |  1  |
+|  Read :  |  ATAGAGTTGATCCTGG……………  |  CCTGGCTCATCAGTTGAT……………  |
+|  Base Coordinate :  |  1  |  {::nomarkdown}<div class="float-left">101</div><div class="float-right">200</div>{:/} |
+|  Read Type :  |  Forward  |  Reverse  |
 
-</div>
-
-<div class="example_metadata">
 
 #### Metadata
 
@@ -529,9 +217,9 @@ Spot (Read Spec)
 | 0          | Application Read | Forward   | BaseCoord = 1   |
 | 1          | Application Read | Reverse   | BaseCoord = 101 |
 
-Experiment XML (SPOT\_DESCRIPTOR)
+Experiment XML (SPOT_DESCRIPTOR)
 
-``` example_xml
+```
 <SPOT_DESCRIPTOR>
   <SPOT_DECODE_SPEC>
   <SPOT_LENGTH>200</SPOT_LENGTH>
@@ -557,53 +245,18 @@ Experiment XML (SPOT\_DESCRIPTOR)
 | -------- | ---------------------------- | --------------- |
 | Illumina | Illumina Genome Analyzer IIx | 200             |
 
-</div>
 
-</div>
-
-<div class="example">
-
-### SOLiD single reads
-
-<div class="example_read">
+### SOLiD single reads <a name="SOLiD_single"></a>
 
 #### Read
 
 Read composition
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Read Index <span class="normal">:</span></td>
-<td>0</td>
-</tr>
-<tr class="even">
-<td>Read <span class="normal">:</span></td>
-<td>TTGATCCTGG……………CGCTCA</td>
-</tr>
-<tr class="odd">
-<td>Base Coordinate <span class="normal">:</span></td>
-<td><div class="base_left">
-1
-</div>
-<div class="base_right">
-50
-</div></td>
-</tr>
-<tr class="even">
-<td>Read Type <span class="normal">:</span></td>
-<td>Forward</td>
-</tr>
-</tbody>
-</table>
+|  Read Index :  |  0  |
+|  Read :  |  TTGATCCTGG……………CGCTCA  |
+|  Base Coordinate :  |  {::nomarkdown}<div class="float-left">1</div><div class="float-right">50</div>{:/}  |
+|  Read Type :  |  Forward  |
 
-</div>
-
-<div class="example_metadata">
 
 #### Metadata
 
@@ -613,9 +266,9 @@ Spot (Read Spec)
 | ---------- | ---------------- | --------- | --------------- |
 | 0          | Application Read | Forward   | BaseCoord = 1   |
 
-Experiment XML (SPOT\_DESCRIPTOR)
+Experiment XML (SPOT_DESCRIPTOR)
 
-``` example_xml
+```
 <SPOT_DESCRIPTOR>
   <SPOT_DECODE_SPEC>
   <SPOT_LENGTH>50</SPOT_LENGTH>
@@ -635,58 +288,18 @@ Experiment XML (SPOT\_DESCRIPTOR)
 | --------- | ------------------- | --------------- |
 | ABI SOLID | AB SOLiD System 3.0 | 50              |
 
-</div>
 
-</div>
-
-<div class="example">
-
-### SOLiD paired reads
-
-<div class="example_read">
+### SOLiD paired reads <a name="SOLiD_paired"></a>
 
 #### Read
 
 Read composition
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Read Index <span class="normal">:</span></td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>Read <span class="normal">:</span></td>
-<td>ATCCTGG……………</td>
-<td>CATCAGTTGAT……………</td>
-</tr>
-<tr class="odd">
-<td>Base Coordinate <span class="normal">:</span></td>
-<td>1</td>
-<td><div class="base_left">
-26
-</div>
-<div class="base_right">
-50
-</div></td>
-</tr>
-<tr class="even">
-<td>Read Type <span class="normal">:</span></td>
-<td>Forward</td>
-<td>Forward</td>
-</tr>
-</tbody>
-</table>
+|  Read Index :  |  0  |  1  |
+|  Read :  |  ATCCTGG……………  |  CATCAGTTGAT……………  |
+|  Base Coordinate :  |  1  |  {::nomarkdown}<div class="float-left">26</div><div class="float-right">50</div>{:/}  |
+|  Read Type :  |  Forward  |  Forward  |
 
-</div>
-
-<div class="example_metadata">
 
 #### Metadata
 
@@ -697,9 +310,9 @@ Spot (Read Spec)
 | 0          | Application Read | Forward   | BaseCoord = 1   |
 | 0          | Application Read | Forward   | BaseCoord = 26  |
 
-Experiment XML (SPOT\_DESCRIPTOR)
+Experiment XML (SPOT_DESCRIPTOR)
 
-``` example_xml
+```
 <SPOT_DESCRIPTOR>
   <SPOT_DECODE_SPEC>
   <SPOT_LENGTH>50</SPOT_LENGTH>
@@ -725,53 +338,17 @@ Experiment XML (SPOT\_DESCRIPTOR)
 | --------- | ------------------- | --------------- |
 | ABI SOLID | AB SOLiD System 3.0 | 50              |
 
-</div>
 
-</div>
-
-<div class="example">
-
-### Ion torrent single reads
-
-<div class="example_read">
+### Ion torrent single reads <a name="Ion_single"></a>
 
 #### Read
 
 Read composition
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Read Index <span class="normal">:</span></td>
-<td>0</td>
-</tr>
-<tr class="even">
-<td>Read <span class="normal">:</span></td>
-<td>AGCCGTATATAG……………CGTCAGAA</td>
-</tr>
-<tr class="odd">
-<td>Base Coordinate <span class="normal">:</span></td>
-<td><div class="base_left">
-1
-</div>
-<div class="base_right">
-(x)
-</div></td>
-</tr>
-<tr class="even">
-<td>Read Type <span class="normal">:</span></td>
-<td>Forward</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-
-<div class="example_metadata">
+|  Read Index :  |  0  |
+|  Read :  |  AGCCGTATATAG……………CGTCAGAA  |
+|  Base Coordinate :  |  {::nomarkdown}<div class="float-left">1</div><div class="float-right">(x)</div>{:/} |
+|  Read Type :  |  Forward  |
 
 #### Metadata
 
@@ -781,9 +358,9 @@ Spot (Read Spec)
 | ---------- | ---------------- | --------- | --------------- |
 | 0          | Application Read | Forward   | BaseCoord = 1   |
 
-Experiment XML (SPOT\_DESCRIPTOR)
+Experiment XML (SPOT_DESCRIPTOR)
 
-``` example_xml
+```
 <SPOT_DESCRIPTOR>
   <SPOT_DECODE_SPEC>
     <READ_SPEC>
@@ -802,15 +379,7 @@ Experiment XML (SPOT\_DESCRIPTOR)
 | ----------- | ---------------------- | --------------- |
 | Ion torrent | Ion torrent PGM/Proton |                 |
 
-</div>
-
-</div>
-
-<div class="example">
-
-### PacBio single reads (Standard sequencing)
-
-<div class="example_metadata">
+### PacBio single reads (Standard sequencing) <a name="PacBio_standard"></a>
 
 #### Metadata
 
@@ -820,13 +389,15 @@ Spot (Read Spec)
 | --------------------------------------------- |
 | ATCTCTCTCTTTTCCTCCTCCTCCGTTGTTGTTGTTGAGAGAGAT |
 
+{::nomarkdown}<br>{:/}
+
 | Read Index | Read Class       | Read Type | Ordering Method |
 | ---------- | ---------------- | --------- | --------------- |
 | 0          | Application Read | Forward   | BaseCoord = 1   |
 
-Experiment XML (SPOT\_DESCRIPTOR)
+Experiment XML (SPOT_DESCRIPTOR)
 
-``` example_xml
+```
 <SPOT_DESCRIPTOR>
   <SPOT_DECODE_SPEC>
     <READ_SPEC>
@@ -852,9 +423,9 @@ Experiment Attribute
 | Sequencing Protocol | Standard sequencing |       |
 | Insert size         | 8000                |       |
 
-Experiment XML (EXPERIMENT\_ATTRIBUTES)
+Experiment XML (EXPERIMENT_ATTRIBUTES)
 
-``` example_xml
+```
 <EXPERIMENT_ATTRIBUTES>
   <EXPERIMENT_ATTRIBUTE>
     <TAG>Sequencing Protocol</TAG>
@@ -867,15 +438,7 @@ Experiment XML (EXPERIMENT\_ATTRIBUTES)
 </EXPERIMENT_ATTRIBUTES>
 ```
 
-</div>
-
-</div>
-
-<div class="example">
-
-### PacBio single reads (Circular consensus sequencing)
-
-<div class="example_metadata">
+### PacBio single reads (Circular consensus sequencing) <a name="PacBio_CCS"></a>
 
 #### Metadata
 
@@ -885,9 +448,9 @@ Spot (Read Spec)
 | ---------- | ---------------- | --------- | --------------- |
 | 0          | Application Read | Other     | BaseCoord = 1   |
 
-Experiment XML (SPOT\_DESCRIPTOR)
+Experiment XML (SPOT_DESCRIPTOR)
 
-``` example_xml
+```
 <SPOT_DESCRIPTOR>
   <SPOT_DECODE_SPEC>
     <READ_SPEC>
@@ -913,9 +476,9 @@ Experiment Attribute
 | Sequencing Protocol | Circular consensus sequencing |       |
 | Insert size         | 700                           |       |
 
-Experiment XML (EXPERIMENT\_ATTRIBUTES)
+Experiment XML (EXPERIMENT_ATTRIBUTES)
 
-``` example_xml
+```
 <EXPERIMENT_ATTRIBUTES>
   <EXPERIMENT_ATTRIBUTE>
     <TAG>Sequencing Protocol</TAG>
@@ -928,196 +491,68 @@ Experiment XML (EXPERIMENT\_ATTRIBUTES)
 </EXPERIMENT_ATTRIBUTES>
 ```
 
-</div>
-
-</div>
-
-<div class="section">
-
-## Typical examples causing errors in data validation
+## Typical examples causing errors in data validation <a name="errors"></a>
 
 In the case of validation error, correct the metadata and re-upload data
 files after stopping validation process.
 
-<div class="sub_index">
-
   - [Reads having no application read](#no_application)
   - [Reads with inconsistent base coordinate](#inconsistent_base)
-  - [Reads with relative order which cannot be
-    specified](#cannot_specified)
+  - [Reads with relative order which cannot be specified](#cannot_specified)
 
-</div>
 
-<div class="example">
-
-### Reads having no application read
-
-<div class="example_read">
+### Reads having no application read <a name="no_application"></a>
 
 #### Read
 
 Read composition
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Read Index <span class="normal">:</span></td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>Read <span class="normal">:</span></td>
-<td>ATCCGG</td>
-<td>CATCAGTTGAT…………………………………………………</td>
-</tr>
-<tr class="odd">
-<td>Base Coordinate <span class="normal">:</span></td>
-<td>1</td>
-<td><div class="base_left">
-7
-</div>
-<div class="base_right">
-50
-</div></td>
-</tr>
-<tr class="even">
-<td>Read Type <span class="normal">:</span></td>
-<td>Primer</td>
-<td>Linker <span class="attention_text">(should have at least one application)</span></td>
-</tr>
-</tbody>
-</table>
+|  Read Index :  |  0  |  1  |
+|  Read :  |  ATCCGG  |  CATCAGTTGAT…………………………………………………  |
+|  Base Coordinate :  |  1  |  {::nomarkdown}<div class="float-left">7</div><div class="float-right">50</div>{:/} |
+|  Read Type :  |  Primer  |  Linker <span class="red">(should have at least one application)</span>  |
 
-</div>
-
-</div>
-
-<div class="example">
-
-### Reads with inconsistent base coordinate
-
-<div class="example_read">
+### Reads with inconsistent base coordinate <a name="inconsistent_base"></a>
 
 #### Read 1
 
 Read composition
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Read Index <span class="normal">:</span></td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>Read <span class="normal">:</span></td>
-<td>ATCCGG……………</td>
-<td>CATCAG……………</td>
-</tr>
-<tr class="odd">
-<td>Base Coordinate <span class="normal">:</span></td>
-<td>1</td>
-<td><div class="base_left">
-<span class="attention_text">1 (should be &gt; 1)</span>
-</div></td>
-</tr>
-<tr class="even">
-<td>Read Type <span class="normal">:</span></td>
-<td>Forward</td>
-<td>Reverse</td>
-</tr>
-</tbody>
-</table>
+|  Read Index :  |  0  |  1  |
+|  Read :  |  ATCCGG……………  |  CATCAG……………  |
+|  Base Coordinate :  |  1  |  <span class="red">1 (should be &gt; 1)</span>  |
+|  Read Type :  |  Forward  |  Reverse  |
 
-</div>
-
-<div class="example_read">
 
 #### Read 2
 
 Read composition
 
-|                                               |         |              |                                                        |
-| --------------------------------------------- | ------- | ------------ | ------------------------------------------------------ |
-| Read Index <span class="normal">:</span>      | 0       | 1            | 2                                                      |
-| Read <span class="normal">:</span>            | TCAG    | ATAGAGTTG……… | TCGTATAACTTCGTATAATGTATGCTATACGAAGTT                   |
-| Base Coordinate <span class="normal">:</span> | 1       | 5            | <span class="attention_text">4 (should be \> 5)</span> |
-| Read Type <span class="normal">:</span>       | Adapter | Forward      | Reverse                                                |
-
-</div>
-
-<div class="example_read">
+| Read Index :      | 0       | 1            | 2                                                    |
+| Read :            | TCAG    | ATAGAGTTG……… | TCGTATAACTTCGTATAATGTATGCTATACGAAGTT                 |
+| Base Coordinate : | 1       | 5            | <span class="red">4 (should be > 5)</span> |
+| Read Type :       | Adapter | Forward      | Reverse                                              |
 
 #### Read 3
 
 Read composition
 
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>Read Index <span class="normal">:</span></td>
-<td>0</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>Read <span class="normal">:</span></td>
-<td>ATCCGGGTGTGTCATCAG</td>
-<td>CATCAG……………</td>
-</tr>
-<tr class="odd">
-<td>Base Coordinate <span class="normal">:</span></td>
-<td><span class="attention_text">2 (should start at 1)</span></td>
-<td><div class="base_left">
-19
-</div></td>
-</tr>
-<tr class="even">
-<td>Read Type <span class="normal">:</span></td>
-<td>Adapter</td>
-<td>Forward</td>
-</tr>
-</tbody>
-</table>
+|  Read Index :  |  0  |  1  |
+|  Read :  |  ATCCGGGTGTGTCATCAG  |  CATCAG……………  |
+|  Base Coordinate :  |  <span class="red">2 (should start at 1)</span>  |  19  |
+|  Read Type :  |  Adapter  |  Forward  |
 
-</div>
-
-</div>
-
-<div class="example">
-
-### Reads with relative order which cannot be specified
-
-<div class="example_read">
+### Reads with relative order which cannot be specified <a name="cannot_specified"></a>
 
 #### Read
 
 Read composition
 
-|                                               |         |            |         |                                                                                |
-| --------------------------------------------- | ------- | ---------- | ------- | ------------------------------------------------------------------------------ |
-| Read Index <span class="normal">:</span>      | 0       | 1          | 2       | 3                                                                              |
-| Read <span class="normal">:</span>            | TCAG    | ATAGA…………… | ………………… | CTCAT…………………………………………………………                                                    |
-| Base Coordinate <span class="normal">:</span> | 1       | 5          |         |                                                                                |
-| Read Type <span class="normal">:</span>       | Adapter | Forward    | Linker  | Forward <span class="attention_text">(This forward cannot be specified)</span> |
+| Read Index :      | 0       | 1          | 2       | 3                                                                   |
+| Read :            | TCAG    | ATAGA…………… | ………………… | CTCAT…………………………………………………………                                         |
+| Base Coordinate : | 1       | 5          |         |                                                                     |
+| Read Type :       | Adapter | Forward    | Linker  | Forward <span class="red"> (This forward cannot be specified)</span> |
 
-</div>
-
-<div class="example_metadata">
 
 #### Metadata
 
@@ -1130,23 +565,13 @@ Spot (Read Spec)
 | 2          | Technical Read   | Linker    | RelativeOrder   |
 | 3          | Application Read | Forward   | RelativeOrder   |
 
-</div>
 
-</div>
+## Experiment (Pipeline) <a name="Experiment_pipeline"></a>
 
-</div>
+### Example 1 of Experiment XML Pipeline <a name="pipeline1"></a>
 
-<div class="section">
 
-## Experiment (Pipeline)
-
-<div class="example">
-
-### Example 1 of Experiment XML Pipeline
-
-<div class="example_metadata">
-
-``` example_xml
+```
 <PROCESSING>
   <PIPELINE>
     <PIPE_SECTION section_name="Base Caller">
@@ -1167,17 +592,10 @@ Spot (Read Spec)
 </PROCESSING>
 ```
 
-</div>
+### Example 2 of Experiment XML Pipeline <a name="pipeline2"></a>
 
-</div>
 
-<div class="example">
-
-### Example 2 of Experiment XML Pipeline
-
-<div class="example_metadata">
-
-``` example_xml
+```
 <PROCESSING>
   <PIPELINE>
     <PIPE_SECTION>
@@ -1211,47 +629,3 @@ Spot (Read Spec)
   </PIPELINE>
 </PROCESSING>
 ```
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div id="side_navigation">
-
-<div class="side_nav_menu handbook_contents page-noside">
-
-<div id="in_this_page">
-
-## In this page
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div id="footer_original" class="clearfix">
-
-  - [Policies and
-    Disclaimers](/policies-e.html "Policies and Disclaimers")
-  - [News](/news/en/index-e.html "News archives")
-  - [FAQs](/faq/en/index-e.html "Frequently asked questions")
-  - [Sitemap](/sitemap-e.html "Sitemap")
-  - [Calendar](/calendar-e.html "DDBJ Center Calendar")
-  - [Address](/access-e.html "DDBJ Center address")
-  - [Contact](/contact-e.html "Contact to DDBJ Center")
-  - Last modified: 2018-02-20
-
-</div>
-
-</div>

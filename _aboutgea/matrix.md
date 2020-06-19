@@ -3,7 +3,6 @@ layout: indexed_content
 title: MAGE-TAB format for raw and processed data matrix
 pathname: matrix
 category: aboutgea
-pdf: https://www.ddbj.nig.ac.jp/pdf/gea/matrix.pdf
 ---
 
 ## Data matrix format
