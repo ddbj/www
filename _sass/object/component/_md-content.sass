@@ -39,7 +39,6 @@ $MARGIN_BOTTOM: 1rem
     color: $COLOR_BLUE
   .conditionally_required
     color: $COLOR_GREEN
-
   h2
     font-size: 1.8rem
     line-height: 1.2
@@ -54,16 +53,16 @@ $MARGIN_BOTTOM: 1rem
     margin-bottom: 1.6rem
   h2,h3
     cursor: pointer
-    &:after
-      content: ''
-      background-image: url(/www/assets/images/parts/link.jpeg)
-      width: 1.6rem
-      height: 1.6rem
-      margin: 0 .3rem
-      display: none
-    &:hover
-      &:after
+      &:hover > a
         display: inline-block
+  h2 > a,h3 > a
+    background-image: url(/www/assets/images/parts/link.jpeg)
+    background-repeat: no-repeat
+    background-size: contain
+    display: none
+    width: 1.2rem
+    height: 1.2rem
+    margin: 0 .3rem
 
   ul
     li

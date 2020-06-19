@@ -377,15 +377,16 @@ input, textarea, select, button {
     margin-bottom: 1.6rem; }
   .md-content h2, .md-content h3 {
     cursor: pointer; }
-    .md-content h2:after, .md-content h3:after {
-      content: '';
-      background-image: url(/www/assets/images/parts/link.jpeg);
-      width: 1.6rem;
-      height: 1.6rem;
-      margin: 0 .3rem;
-      display: none; }
-    .md-content h2:hover:after, .md-content h3:hover:after {
+    .md-content h2:hover > a, .md-content h3:hover > a {
       display: inline-block; }
+  .md-content h2 > a, .md-content h3 > a {
+    background-image: url(/www/assets/images/parts/link.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0 .3rem; }
   .md-content ul li {
     padding: .4rem 0;
     line-height: 1.6;
