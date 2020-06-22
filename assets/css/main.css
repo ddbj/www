@@ -353,7 +353,7 @@ input, textarea, select, button {
   .md-content .pdf {
     width: 2.5rem;
     height: 2.5rem; }
-  .md-content > p, .md-content > table, .md-content > ol, .md-content > ul, .md-content > dl, .md-content > .highlighter-rouge {
+  .md-content > p, .md-content > table, .md-content > ol, .md-content > ul, .md-content > dl, .md-content > figure, .md-content > .highlighter-rouge {
     margin-bottom: 1rem; }
   .md-content .red {
     color: #FF0000; }
@@ -1140,6 +1140,8 @@ input, textarea, select, button {
     padding: 2.7rem 4rem 1rem; }
     #PageHeader > .inner.-stretched {
       max-width: 100%; }
+    #PageHeader > .inner > .search-box {
+      white-space: nowrap; }
 
 .multi-column-view {
   padding: 25px 40px 25px 35px; }
