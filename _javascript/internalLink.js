@@ -56,7 +56,6 @@ export default function internalLink() {
       }
     }
     $navLink = $("#TableOfContents li a");
-    console.log("createIndex完了");
   };
 
   // 各コンテンツのページ上部からの開始位置と終了位置を配列に格納しておく
@@ -82,9 +81,15 @@ export default function internalLink() {
   function currentCheck() {
     // 現在のスクロール位置を取得
     let windowScrolltop = $(window).scrollTop();
+    console.log('contentsArr.length', contentsArr.length);
     for (let i = 0; i < contentsArr.length; i++) {
+      console.log(i, contentsArr[i]);
       // 現在のスクロール位置が、配列に格納した開始位置と終了位置の間にあるものを調べる
-      if (
+      if ( contentsArr[0][0] > windowScrolltop ) {
+        $navLink.removeClass("current");
+        $navLink.eq(0).addClass("current");
+        break;
+      } else if (
         contentsArr[i][0] <= windowScrolltop &&
         contentsArr[i][1] >= windowScrolltop
       ) {
@@ -97,7 +102,7 @@ export default function internalLink() {
   }
 
   // ページ読み込み時とスクロール時に、現在地をチェックする
-  $(window).on("load scroll", function () {
+  $(window).on("scroll", function () {
     currentCheck();
   });
 
@@ -124,6 +129,7 @@ export default function internalLink() {
     
     .then(() => {
       createContentsArr();
+      currentCheck();
       console.log("createContentsArr完了");
     }).then(() => {
       console.log("パラメーター確認開始");
