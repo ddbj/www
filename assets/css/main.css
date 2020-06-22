@@ -379,7 +379,7 @@ input, textarea, select, button {
     cursor: pointer; }
     .md-content h2:hover > a, .md-content h3:hover > a {
       display: inline-block; }
-  .md-content h2 > a, .md-content h3 > a {
+  .md-content .link-icon {
     background-image: url(/www/assets/images/parts/link.jpeg);
     background-repeat: no-repeat;
     background-size: contain;

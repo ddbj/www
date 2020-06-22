@@ -21,6 +21,7 @@ export default function internalLink() {
           const a = document.createElement('a');
           theHeading.appendChild(a);
           a.setAttribute("href","#" + id);
+          a.classList.add("link-icon");
           if (theHeading.tagName === "H2") {
             if (subListSrc !== "") {
               //h3リストが生成されていれば
