@@ -15,11 +15,11 @@ For example, the following shows the URI for searching BLAST based on
 particular criteria, and the corresponding response received after
 sending the URI as a GET HTTP request.
 
-``` code
+```
 http://ddbj.nig.ac.jp/wabi/blast/wabi_blast_1111-1111-1111-11-111-111111?info=request&format=json
 ```
 
-``` code scroll
+```
  1{
  2        "address": "",
  3        "database": "hum",
