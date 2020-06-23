@@ -2,181 +2,15 @@
 layout: indexed_content
 title: Categories for Sequence Data
 category: services
+related_pages:
+  - title: Prefix Letter List
+    url: /prefix-e.html
+  - title: Accession Number Assigned by INSD
+    url: /acc_def-e.html
+  - title: Principle of “Hold-Until-Published” data release
+    url: /data-release-policy-e.html
 ---
 
-<div id="page" class="top">
-
-<div id="header" class="clearfix">
-
-<div id="header-top">
-
-[![](/images/parts/ddbj-logo-white.svg)](/index-e.html "DNA Data Bank of Japan")
-
-<div id="header-top-left">
-
-<span class="resources-btn">Services**</span>
-
-</div>
-
-<div id="header-top-right">
-
-  - [Login & Submit](https://ddbj.nig.ac.jp/D-way)
-  - [Policies and Disclaimers](/policies-e.html)
-  - [Contact](/contact-e.html)
-  - [Japanese](/data-categories.html)
-
-</div>
-
-</div>
-
-<div class="resources-contents">
-
-<div class="boxContainer">
-
-<div class="resources-box">
-
-  - ### ![](/images/logos/service-org.svg)Search
-
-  - [getentry](http://getentry.ddbj.nig.ac.jp/top-e.html "Retrieve sequence records by accession numbers")
-
-  - [ARSA](http://ddbj.nig.ac.jp/arsa/ "Retrieve sequence and annotation by keywords")
-
-  - [DRA
-    Search](http://ddbj.nig.ac.jp/DRASearch "Search and retrieve sequencing data.")
-
-  - [TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en "Search unified taxonomy database")
-
-  - [BLAST](http://blast.ddbj.nig.ac.jp/blastn?lang=en "Search nucleotide sequences by sequence similarity")
-
-<!-- end list -->
-
-  - ### ![](/images/logos/wrench.svg)Analysis
-
-  - [Vector Screening
-    System](http://ddbj.nig.ac.jp/vecscreen/ "Screen vector sequences")
-
-  - [ClustalW](http://clustalw.ddbj.nig.ac.jp/index.php?lang=en "Multiple alignment and tree-making")
-
-  - [WABI (Web API for
-    Biology)](/search/help/wabi/wabi-e.html "Web API for using the search services of DDB")
-
-  - [DDBJ FTP
-    Site](ftp://ftp.ddbj.nig.ac.jp/ "Download public data by ftp")
-
-</div>
-
-<div class="resources-box">
-
-  - ### ![](/images/logos/database-org.svg)Databases
-
-  - [Annotated/Assembled Sequences
-    (DDBJ)](/ddbj/index-e.html "Annotated/Assembled Sequences (DDBJ)")
-
-  - [Sequence Read Archive
-    (DRA)](/dra/index-e.html "Sequence Read Archive")
-
-  - [Genomic Expression Archive
-    (GEA)](/gea/index-e.html "Genomic Expression Archive")
-
-  - [BioProject](/bioproject/index-e.html "BioProject")
-
-  - [BioSample](/biosample/index-e.html "BioSample")
-
-  - [Japanese Genotype-phenotype Archive
-    (JGA)](/jga/index-e.html "Japanese Genotype-phenotype Archive")
-
-  - [Submission portal
-    D-way](https://ddbj.nig.ac.jp/D-way "Submission portal D-way")
-
-<!-- end list -->
-
-  - ### ![](/images/logos/sc-org.svg)NIG SuperComputer
-
-  - [NIG
-    SuperComputer](https://sc.ddbj.nig.ac.jp/en "NIG SuperComputer")
-
-</div>
-
-<div class="resources-box dbcls">
-
-  - ### ![](/images/logos/dbcls-s.svg)DBCLS Services
-
-  - [AOE](http://aoe.dbcls.jp/en "Statistics and trends of gene expression data")
-
-  - [CRISPRdirect](https://crispr.dbcls.jp/ "Designing CRISPR/Cas9 guide RNA with reduced off-target sites")
-
-  - [DBCLS
-    SRA](http://sra.dbcls.jp/ "Statistics and trends of SRA data")
-
-  - [Gendoo](http://gendoo.dbcls.jp/ "Functional profiling of gene and disease features for omics analysis")
-
-  - [GGGenome](https://gggenome.dbcls.jp/en/ "A ultrafast sequence search")
-
-  - [GGRNA](https://ggrna.dbcls.jp/en/ "A Google-like, ultrafast search engine for genes and transcripts")
-
-  - [RefEx](http://refex.dbcls.jp/index.php?lang=en "A web tool for a comfortable search of reference data for gene expression analysis")
-
-</div>
-
-</div>
-
-</div>
-
-<div id="header-middle" class="clearfix">
-
-<div class="page-title">
-
-[Bioinformation and DDBJ Center](/index-e.html)
-
-</div>
-
-<div class="search-box">
-
-<div id="search-box-flex">
-
-<div class="search-options-wrapper">
-
-BI-DDBJ Web Sites Annotated/Assembled Sequences Sequence Read Archive
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div id="header-bottom">
-
-  - [Home](/index-e.html)
-  - [Search & Analysis](/services-e.html)
-  - [Submissions](/submission-e.html)
-  - [Downloads](/download-e.html)
-  - [SuperComputer](https://sc.ddbj.nig.ac.jp/en)
-  - [Statistics](/statistics-e.html)
-  - [Activities](/activities-e.html)
-  - [Training](/training-e.html)
-  - [About Us](/aboutus-e.html)
-
-</div>
-
-</div>
-
-<div id="main" class="clearfix">
-
-<div id="breadcrumb" class="clearfix">
-
-  - [HOME](/index-e.html "Bioinformation and DDBJ Center top page")
-  - \>
-  - [Submissions](/submission-e.html)
-  - \>
-  - Categories for Sequence Data
-
-</div>
-
-<div id="primary">
-
-<div id="page_main">
 
 # Categories for Sequence Data
 
@@ -224,15 +58,15 @@ does not restrict them.
 
 ### Annotated/assembled sequences
 
-  - [DDBJ](/ddbj/index-e.html)  
-    Narrowly-defined DDBJ. DDBJ is a counterpart of GenBank and ENA
-    (EMBL-Bank) to accept sequences with feature annotation and to
-    provide them in [flat file](/ddbj/flat-file-e.html).
-    About the data in traditional DDBJ is classified, see [Categories of
-    Annotated/Assembled Data](#detail).
+[DDBJ](/ddbj/index-e.html)  
+: Narrowly-defined DDBJ. DDBJ is a counterpart of GenBank and ENA
+(EMBL-Bank) to accept sequences with feature annotation and to
+provide them in [flat file](/ddbj/flat-file-e.html).
+: About the data in traditional DDBJ is classified, see [Categories of
+Annotated/Assembled Data](#detail).
 
-<div class="attention no_color">
-
+{::options parse_block_html="true" /}
+<div class="attention">
 If you are not sure to which database you should submit your data, see
 following sites;
 
@@ -247,97 +81,132 @@ Using [Mass Submission System (MSS)](/ddbj/mss-e.html), the submitted
 nucleotide sequences are classified into one of the categories according
 to the descriptions of the [DATATYPE, DIVISION,
 KEYWORD](/ddbj/file-format-e.html#annotation).
-
 </div>
 
 ### Sequencing and alignment data from next-generation sequencing platforms
 
-  - [DRA: DDBJ Sequence Read Archive](/dra/index-e.html)  
-    Archival database for output data generated by next-generation
-    sequencing machines including Roche 454 GS System，Illumina Genome
-    Analyzer，Applied Biosystems SOLiD System and others.
-  - [DTA: DDBJ Trace Archive](/dta/index-e.html)  
-    Archival database of DNA sequence chromatograms (traces), base
-    calls, and quality estimates for single-pass reads from various
-    large-scale sequencing projects.
+[DRA: DDBJ Sequence Read Archive](/dra/index-e.html)  
+: Archival database for output data generated by next-generation
+sequencing machines including Roche 454 GS System，Illumina Genome
+Analyzer，Applied Biosystems SOLiD System and others.
+
+[DTA: DDBJ Trace Archive](/dta/index-e.html)  
+: Archival database of DNA sequence chromatograms (traces), base
+calls, and quality estimates for single-pass reads from various
+large-scale sequencing projects.
 
 ### Functional genomics data
 
-  - [Genomic Expression Archive (GEA)](/gea/index-e.html)  
-    A public database of functional genomics data such as gene
-    expression, epigenetics and genotyping SNP array. Both microarray-
-    and sequence-based data are accepted.
+[Genomic Expression Archive (GEA)](/gea/index-e.html)  
+: A public database of functional genomics data such as gene
+expression, epigenetics and genotyping SNP array. Both microarray-
+and sequence-based data are accepted.
 
 ## Research project
 
-  - [BioProject](/bioproject/index-e.html)  
-    Database to organize research projects and the corresponding data.  
-    It is required to submit to BioProject before sequence data
-    submissions for [TSA](/ddbj/tsa-e.html), [TLS](/ddbj/tls-e.html),
-    [WGS](/ddbj/wgs-e.html) or [complete-genome
-    scale](/ddbj/genome-e.html) except viruses, plasmids and organelles.
+[BioProject](/bioproject/index-e.html)  
+: Database to organize research projects and the corresponding data.  
+It is required to submit to BioProject before sequence data
+submissions for [TSA](/ddbj/tsa-e.html), [TLS](/ddbj/tls-e.html),
+[WGS](/ddbj/wgs-e.html) or [complete-genome
+scale](/ddbj/genome-e.html) except viruses, plasmids and organelles.
 
 ## Biological sample
 
-  - [BioSample](/biosample/index-e.html)  
-    Database to capture and store descriptive information about the
-    biological source materials, or samples, used to generate
-    experimental data.
+[BioSample](/biosample/index-e.html)  
+: Database to capture and store descriptive information about the
+biological source materials, or samples, used to generate
+experimental data.
 
 ## Human data requiring controlled-access
 
-  - [JGA: Japanese Genotype-phenotype Archive](/jga/index-e.html)  
-    Database for permanent archiving and sharing of all types of
-    individual-level genetic and de-identified phenotypic data resulting
-    from biomedical research projects.
+[JGA: Japanese Genotype-phenotype Archive](/jga/index-e.html)  
+: Database for permanent archiving and sharing of all types of
+individual-level genetic and de-identified phenotypic data resulting
+from biomedical research projects.
 
-</div>
 
-</div>
 
-<div id="side_navigation">
 
-<div class="side_nav_menu handbook_contents page-noside">
+## Annotated/Assembled Data Categories <a name="detail"></a>
 
-<div id="in_this_page">
+### [Division](/ddbj/flat-file-e.html#Division) conventional sequence data <a name="division"></a>
 
-## In this page
+#### **General data: classified by source species** <a name="general"></a>
 
-</div>
+The data that are not classified into any categories described in the sections are called general data and belong here.<br>In principle, it is required for general data to have at least one source feature and at least one other [Biological feature](/ddbj/file-format-e.html#biological_feature).<br>Submitted sequences are automatically classified into one of the following divisions on the basis of the taxonomy of the source organisms.
 
-</div>
+| *Division* | *Description* |
+| --- | --- |
+| HUM | Human |
+| PRI | Primates (other than human) |
+| ROD | Rodents |
+| MAM | Mammals (other than primates or rodents) |
+| VRT | Vertebrates (other than mammals) |
+| INV | Invertebrates |
+| PLN | Plants or fungi |
+| BCT | Bacteria |
+| VRL | Viruses |
+| PHG | Phages |
 
-<div class="side_nav_menu handbook_related">
 
-<div id="related_pages">
+#### **ENV/SYN: impossible to identify souce species, Environmental Samples and Synthetic Constructs** <a name="env"></a>
 
-## Related pages
+Environmental samples and artificially constructed sequences are classified into [ENV](/ddbj/env-e.html) and SYN division,respectively. <br>In principle, it is required for ENV and SYN data to have at least one source feature and at least one other [Biological feature](/ddbj/file-format-e.html#biological_feature).
 
-  - [Prefix Letter List](/prefix-e.html)
-  - [Accession Number Assigned by INSD](/acc_def-e.html)
-  - [Principle of “Hold-Until-Published” data
-    release](/data-release-policy-e.html)
+| *Division* | *Description* |
+| --- | --- |
+| ENV | Sequences obtained via environmental sampling methods, direct PCR, DGGE, etc.<br>For ENV submissions, it is necessary to describe an [environmental_sample qualifier](/ddbj/qualifiers-e.html#environmental_sample) on the source feature. |
+| SYN | Synthetic constructs, sequences constructed by artificial manipulations<br>For SYN submissions, in general, the entry often has plural source features, so it should be cared.<br>See also [Example of Submission; E05) synthetic construct.](/ddbj/example-e.html#E05). |
 
-</div>
 
-</div>
+#### **EST/GSS/HTC/HTG/STS: Divisions for Feasibility of Sequencing** <a name="est"></a>
 
-</div>
+Sequences derived from high throughput projects, such as large scale analyses like EST dataset, ongoing whole genome scale sequencing, and so on, are classified into the following divisions, respectively.<br>
+Basically only one source feature should be described for an entry in those divisions. <br>
+In this regard, however, the entries including HTC or HTG division can have some [Biological features](/ddbj/file-format-e.html#biological_feature) like as general data, if necessary.
 
-</div>
 
-<div id="footer_original" class="clearfix">
+| *Division* | *Description* |
+| --- | --- |
+| [EST](/ddbj/est-e.html) | Expressed sequence tags, cDNA sequences read short single pass. |
+| [GSS](/ddbj/gss-e.html) | Genome survey sequences, genome sequences read short single pass. |
+| STS | Sequence tagged sites, tagged sequences for genome sequencing.<br>Recommended to use [primer_bind](/ddbj/features-e.html#primer_bind) feature and [PCR_conditions](/ddbj/qualifiers-e.html#PCR_conditions) qualifier. |
+| [HTC](/ddbj/htc-e.html) | High throughput cDNA sequences from cDNA sequencing projects, not EST.<br>This division is to include unfinished high throughput cDNA sequences. |
+| [HTG](/ddbj/htg-e.html) | High throughput genomic sequences mainly from genome sequencing projects.<br>Unfinished HTG entries are classified into different levels, as follow;<br>{::nomarkdown}<ul><li>phase0；Survey sequence generated for the purpose of library quality assessment and detection of overlaps with other clones before construction of piece contig(s)</li><li>phase1；Unfinished sequence having contigs that have NOT been ordered and oriented</li><li>phase2；Unfinished sequence having contigs that have been ordered and oriented</li></ul>{:/} |
 
-  - [Policies and
-    Disclaimers](/policies-e.html "Policies and Disclaimers")
-  - [News](/news/en/index-e.html "News archives")
-  - [FAQs](/faq/en/index-e.html "Frequently asked questions")
-  - [Sitemap](/sitemap-e.html "Sitemap")
-  - [Calendar](/calendar-e.html "DDBJ Center Calendar")
-  - [Address](/access-e.html "DDBJ Center address")
-  - [Contact](/contact-e.html "Contact to DDBJ Center")
-  - Last modified: 2018-07-30
+#### **CON: Contig / Constructed, Tiling of Entries**
 
-</div>
+Many genome projects submitting a lot of [HTG](/ddbj/htg-e.html) and/or [WGS](/ddbj/wgs-e.html) entries can often provide the information to assemble a series of their entries and reconstruct a genome structure. An accession number would be assigned for such contig tiling path, so called "[CON entry](/ddbj/con-e.html)", which is classified into CON division.<br>
+See also [Steps of genome sequencing, categories of sequence data and their correspondences.](/ddbj/genome-e.html)
 
-</div>
+<span class="red">We can NOT directly accept only the submission of CON entry.</span><br>
+At first you have to submit all piece entries to construct the contig, then a CON entry will be constructed.<br>[AGP file](/ddbj/file-format-e.html#agp) is required to submit CON entries.
+
+
+### Data type, bulk sequence data <a name="data_type"></a>
+
+#### **WGS: Fragment Sequences during WGS Assembling Process** <a name="wgs"></a>
+
+The large set of contigs from the proceeding genome project can be submitted as one of bulk sequence data, [Whole Genome Shotgun (WGS)](/ddbj/wgs-e.html).<br>
+Please note that WGS data is different from others in its [format of accession number](/ddbj/flat-file-e.html#Accession). <br>
+See also [Steps of genome sequencing, categories of sequence data and their correspondences](/ddbj/genome-e.html).
+
+#### **TSA: Transcriptome Shotgun Assembly** <a name="tsa"></a>
+
+Since 2008, we have accepted one of bulk sequence data, [Transcriptome Shotgun Assembly (TSA)](/ddbj/tsa-e.html) categorized for assembled RNA transcript sequences.<br>
+Basically only one source feature should be described for a TSA entry. <br>
+TSA entries can have some [Biological features](/ddbj/file-format-e.html#biological_feature) like as general data, if necessary. <br>
+Please note that TSA data may be different from others in its [format of accession number](/ddbj/flat-file-e.html#Accession).<br>
+See also [steps of transcriptome project, categories of sequence data and their correspondences](/ddbj/transcriptome-e.html)
+
+#### **TLS: Targeted Locus Study** <a name="tls"></a>
+
+Since 2016, we have accepted one of bulk sequence data, [Targeted Locus Study (TLS)](/ddbj/tls.html), including 16S rRNA or some other targeted loci mainly to be clustered into operational taxonomic unit.<br>
+TLS entries can have some [Biological features](/ddbj/file-format-e.html#biological_feature) like as general data. <br>Please note that TLS data is different from others in its [format of accession number](/ddbj/flat-file-e.html#Accession).
+
+### Sequenced by whom <a name="whom"></a>
+
+#### **TPA; Third Party Data and primary sequence data** <a name="tpa"></a>
+
+[TPA (Third Party Data)](/ddbj/tpa-e.html) is a nucleotide sequence data collection in which each entry is obtained by assembling primary entries publicized from DDBJ/EMBL-Bank/GenBank, [Trace Archive](//www.ncbi.nlm.nih.gov/Traces/trace.cgi), and/or [Sequence Read Archive](/dra/index-e.html) with additional feature annotation(s) determined by experimental or inferential methods by TPA submitter. Those assemblies include two cases; one or more primary entries are used and newly determined sequence is contained. TPA sequence data should be submitted to DDBJ/EMBL-Bank/GenBank as a part of the process to publish biological research for primary nucleotide sequences.<br>See also [TPA Submission Guidelines](/ddbj/tpa-table-e.html).
