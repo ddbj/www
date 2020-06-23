@@ -39,8 +39,9 @@ category: aboutdra
 [Analysis](#Analysis)  
 : Run に格納されたデータを解析したデータで、しかるべき登録先がないようなデータを登録します。Analysis は DDBJ/EBI/NCBI で交換していません。 交換を希望する場合は [DRA チームに連絡します]({{ site.url }}{{ site.baseurl }}/aboutus/contact.html)。 Analysis は [DRASearch](http://ddbj.nig.ac.jp/DRASearch) でインデックスされず、ftp でのファイル公開のみになります。
 
-
-{% include image.html url="books/sra_object.png" caption="データモデル" %}{:.group1}
+{::nomarkdown}
+{% include image.html url="books/sra_object.png" caption="データモデル" %}
+{:/}
 
 <a class="group1" href="https://125naroom.com/demo/img/itukanokotonokoto01.jpg" title="Photo 1"><img src="https://125naroom.com/demo/img/itukanokotonokoto01.jpg.pagespeed.ce.bwmEHPPaF_.jpg" alt="Photo 1" width="1200" height="680"></a>
 
