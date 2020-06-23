@@ -171,47 +171,8 @@ page.
 
 ### When including taxonomy_id in URL
 
-<table>
-  <thead>
-    <tr class="header">
-      <th>Parameters</th>
-      <th>Details</th>
-      <th>Examples</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>id <span class="red">(required item）</span></td>
-      <td>specifies target taxonomy id.</td>
-      <td><ul>
-      <li>taxonomy_id :9606 in the Tree view<br />
-      <a href="http://ddbj.nig.ac.jp/tx_search/9606?view=tree" class="external">//ddbj.nig.ac.jp/tx_search/9606?view=tree</a><br />
-      <a href="http://ddbj.nig.ac.jp/tx_search/9606" class="external">//ddbj.nig.ac.jp/tx_search/9606</a></li>
-      <li>taxonomy_id :63221 in Taxon Information view<br />
-      <a href="http://ddbj.nig.ac.jp/tx_search/63221?view=info" class="external">//ddbj.nig.ac.jp/tx_search/63221?view=info</a></li>
-      </ul></td>
-    </tr>
-    <tr>
-    <td>view</td>
-      <td>View of Tree of Taxon information.<br />
-      In case of not specified, automatically tree view is selected.</td>
-      <td><ul>
-      <li>taxonomy_id :63221 in the Taxon Information view<br />
-      <a href="http://ddbj.nig.ac.jp/tx_search/63221?view=info" class="external">//ddbj.nig.ac.jp/tx_search/63221?view=info</a></li>
-      <li>taxonomy_id :63221 in the Tree view<br />
-      <a href="http://ddbj.nig.ac.jp/tx_search/63221" class="external">//ddbj.nig.ac.jp/tx_search/63221</a></li>
-      </ul></td>
-    </tr>
-    <tr>
-      <td>depth</td>
-      <td>specifies number of hierarchy.<br />
-      Default is 2.</td>
-      <td><ul>
-      <li>display taxonomy_id :9592 in 5 hierarchies<br />
-      <a href="http://ddbj.nig.ac.jp/tx_search/63221?depth=5" class="external">//ddbj.nig.ac.jp/tx_search/63221?depth=5</a></li>
-      <li>display taxonomy_id :9606 by default<br />
-      <a href="http://ddbj.nig.ac.jp/tx_search/9606" class="external">//ddbj.nig.ac.jp/tx_search/9606</a></li>
-      </ul></td>
-    </tr>
-  </tbody>
-</table>
+| Parameters | Details | Examples |
+| --- | --- | --- |
+| id <span class="red">(required item）</span> | specifies target taxonomy id. | {::nomarkdown}<ul><li>taxonomy_id :9606 in the Tree view<br /><a href="http://ddbj.nig.ac.jp/tx_search/9606?view=tree" class="external">//ddbj.nig.ac.jp/tx_search/9606?view=tree</a><br /><a href="http://ddbj.nig.ac.jp/tx_search/9606" class="external">//ddbj.nig.ac.jp/tx_search/9606</a></li><li>taxonomy_id :63221 in Taxon Information view<br /><a href="http://ddbj.nig.ac.jp/tx_search/63221?view=info" class="external">//ddbj.nig.ac.jp/tx_search/63221?view=info</a></li></ul>{:/} |
+| view | View of Tree of Taxon information.<br />In case of not specified, automatically tree view is selected. | {::nomarkdown}<ul><li>taxonomy_id :63221 in the Taxon Information view<br /><a href="http://ddbj.nig.ac.jp/tx_search/63221?view=info" class="external">//ddbj.nig.ac.jp/tx_search/63221?view=info</a></li><li>taxonomy_id :63221 in the Tree view<br /><a href="http://ddbj.nig.ac.jp/tx_search/63221" class="external">//ddbj.nig.ac.jp/tx_search/63221</a></li></ul>{:/} |
+| depth | specifies number of hierarchy.<br />Default is 2. | {::nomarkdown}<ul><li>display taxonomy_id :9592 in 5 hierarchies<br /><a href="http://ddbj.nig.ac.jp/tx_search/63221?depth=5" class="external">//ddbj.nig.ac.jp/tx_search/63221?depth=5</a></li><li>display taxonomy_id :9606 by default<br /><a href="http://ddbj.nig.ac.jp/tx_search/9606" class="external">//ddbj.nig.ac.jp/tx_search/9606</a></li></ul>{:/} |
