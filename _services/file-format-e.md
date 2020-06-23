@@ -4,218 +4,6 @@ title: Submission File Format
 category: services
 ---
 
-<div id="page" class="top">
-
-<div id="header" class="clearfix">
-
-<div id="header-top">
-
-[![](/images/parts/ddbj-logo-white.svg)](/index-e.html "DNA Data Bank of Japan")
-
-<div id="header-top-left">
-
-<span class="resources-btn">Services**</span>
-
-</div>
-
-<div id="header-top-right">
-
-  - [Login & Submit](https://ddbj.nig.ac.jp/D-way)
-  - [Policies and Disclaimers](/policies-e.html)
-  - [Contact](/contact-e.html)
-  - [Japanese](/ddbj/file-format.html)
-
-</div>
-
-</div>
-
-<div class="resources-contents">
-
-<div class="boxContainer">
-
-<div class="resources-box">
-
-  - ### ![](/images/logos/service-org.svg)Search
-
-  - [getentry](http://getentry.ddbj.nig.ac.jp/top-e.html "Retrieve sequence records by accession numbers")
-
-  - [ARSA](http://ddbj.nig.ac.jp/arsa/ "Retrieve sequence and annotation by keywords")
-
-  - [DRA
-    Search](http://ddbj.nig.ac.jp/DRASearch "Search and retrieve sequencing data.")
-
-  - [TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en "Search unified taxonomy database")
-
-  - [BLAST](http://blast.ddbj.nig.ac.jp/blastn?lang=en "Search nucleotide sequences by sequence similarity")
-
-<!-- end list -->
-
-  - ### ![](/images/logos/wrench.svg)Analysis
-
-  - [Vector Screening
-    System](http://ddbj.nig.ac.jp/vecscreen/ "Screen vector sequences")
-
-  - [ClustalW](http://clustalw.ddbj.nig.ac.jp/index.php?lang=en "Multiple alignment and tree-making")
-
-  - [WABI (Web API for
-    Biology)](/search/help/wabi/wabi-e.html "Web API for using the search services of DDB")
-
-  - [DDBJ FTP
-    Site](ftp://ftp.ddbj.nig.ac.jp/ "Download public data by ftp")
-
-</div>
-
-<div class="resources-box">
-
-  - ### ![](/images/logos/database-org.svg)Databases
-
-  - [Annotated/Assembled Sequences
-    (DDBJ)](/ddbj/index-e.html "Annotated/Assembled Sequences (DDBJ)")
-
-  - [Sequence Read Archive
-    (DRA)](/dra/index-e.html "Sequence Read Archive")
-
-  - [Genomic Expression Archive
-    (GEA)](/gea/index-e.html "Genomic Expression Archive")
-
-  - [BioProject](/bioproject/index-e.html "BioProject")
-
-  - [BioSample](/biosample/index-e.html "BioSample")
-
-  - [Japanese Genotype-phenotype Archive
-    (JGA)](/jga/index-e.html "Japanese Genotype-phenotype Archive")
-
-  - [Submission portal
-    D-way](https://ddbj.nig.ac.jp/D-way "Submission portal D-way")
-
-<!-- end list -->
-
-  - ### ![](/images/logos/sc-org.svg)NIG SuperComputer
-
-  - [NIG
-    SuperComputer](https://sc.ddbj.nig.ac.jp/en "NIG SuperComputer")
-
-</div>
-
-<div class="resources-box dbcls">
-
-  - ### ![](/images/logos/dbcls-s.svg)DBCLS Services
-
-  - [AOE](http://aoe.dbcls.jp/en "Statistics and trends of gene expression data")
-
-  - [CRISPRdirect](https://crispr.dbcls.jp/ "Designing CRISPR/Cas9 guide RNA with reduced off-target sites")
-
-  - [DBCLS
-    SRA](http://sra.dbcls.jp/ "Statistics and trends of SRA data")
-
-  - [Gendoo](http://gendoo.dbcls.jp/ "Functional profiling of gene and disease features for omics analysis")
-
-  - [GGGenome](https://gggenome.dbcls.jp/en/ "A ultrafast sequence search")
-
-  - [GGRNA](https://ggrna.dbcls.jp/en/ "A Google-like, ultrafast search engine for genes and transcripts")
-
-  - [RefEx](http://refex.dbcls.jp/index.php?lang=en "A web tool for a comfortable search of reference data for gene expression analysis")
-
-</div>
-
-</div>
-
-</div>
-
-<div id="header-middle" class="clearfix">
-
-<div class="page-title">
-
-[DDBJ Annotated/Assembled Sequences](/ddbj/index-e.html)
-
-</div>
-
-<div class="search-box">
-
-<div id="search-box-flex">
-
-<div class="search-options-wrapper">
-
-BI-DDBJ Web Sites Annotated/Assembled Sequences Sequence Read Archive
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div id="header-bottom">
-
-  - [Home](/ddbj/index-e.html)
-  - [Submission![](/images/parts/arrow_down.svg)](/ddbj/submission-e.html)
-      - [Before Submission](submission-e.html)
-      - [Web submission](websub-e.html)
-      - [Mass submission](mss-e.html)
-      - [Data Update](updt-e.html)
-  - [Search![](/images/parts/arrow_down.svg)](http://ddbj.nig.ac.jp/arsa/?lang=en)
-      - [getentry](http://getentry.ddbj.nig.ac.jp/top-e.html)
-      - [ARSA](http://ddbj.nig.ac.jp/arsa/?lang=en)
-  - [Flat File![](/images/parts/arrow_down.svg)](/ddbj/flat-file-e.html)
-      - [Feature key](/ddbj/features-e.html)
-      - [Qualifier key](/ddbj/qualifiers-e.html)
-      - [Organism qualifier](/ddbj/organism-e.html)
-      - [Description of Location](/ddbj/location-e.html)
-      - [Protein Coding Sequence](/ddbj/cds-e.html)
-      - [The Genetic Codes](/ddbj/geneticcode-e.html)
-      - [Codes Used in Sequence Description](/ddbj/code-e.html)
-      - [Example of Submission](/ddbj/example-e.html)
-  - [Data
-    Categories![](/images/parts/arrow_down.svg)](/ddbj/data-categories-e.html)
-      - [Data Submission from Genome Project](/ddbj/genome-e.html)
-      - [WGS](/ddbj/wgs-e.html)
-      - [CON](/ddbj/con-e.html)
-      - [GSS](/ddbj/gss-e.html)
-      - [HTG](/ddbj/htg-e.html)
-      - [Submission of environmental
-        sequences](/ddbj/environmental-e.html)
-      - [ENV](/ddbj/env-e.html)
-      - [TLS](/ddbj/tls-e.html)
-      - [Data Submission from Transcriptome
-        Project](/ddbj/transcriptome-e.html)
-      - [TSA](/ddbj/tsa-e.html)
-      - [EST](/ddbj/est-e.html)
-      - [HTC](/ddbj/htc-e.html)
-      - [Third Party Data (TPA)](/ddbj/tpa-e.html)
-  - [FAQ](/ddbj/faq-e.html)
-  - [Other![](/images/parts/arrow_down.svg)](/)
-      - [Patent](/ddbj/pat-data-e.html)
-      - [MGA](/ddbj/mga-e.html)
-
-</div>
-
-</div>
-
-<div id="main" class="clearfix">
-
-<div id="breadcrumb" class="clearfix">
-
-  - [HOME](/ddbj/index-e.html "DDBJ Annotated/Assembled Sequences top page")
-  - \>
-  - [MSS - Mass Submission System](/ddbj/mss-e.html)
-  - \>
-  - Submission File Format
-
-</div>
-
-<div id="primary">
-
-<div id="page_main">
-
-<div id="book">
-
-# Submission File Format
-
-<div class="section book">
-
-<div class="section chapter">
-
 ## Sequence File
 
 The sequence file is a text file in FASTA-like format contains all
@@ -226,7 +14,7 @@ the end of each sequence.
 
 Example: Sequence File
 
-``` code
+```
 >CLN01  <-- Entry name for the first one
 ggacaggctgccgcaggagccaggccgggagcaggaagaggcttcgggggagccggagaa
 ctgggccagatgcgcttcgtgggcgaagcctgaggaaaaagagagtgaggcaggagaatc
@@ -239,56 +27,27 @@ atttgaacacacctgctgtggctgtaactctgagatgtgctaaataaaccctctt
 //      <-- End flag
 ```
 
-<div class="section section">
-
 ### Format and Syntax
 
-It is required to validate formats of sequence file by
-[UME](/ddbj/ume-e.html) or [Parser](/ddbj/parser-e.html).
+It is required to validate formats of sequence file by [UME](/ddbj/ume-e.html) or [Parser](/ddbj/parser-e.html).
 
-  - First line starts with \[\>\], followed by the Entry name at the
-    head of each sequence.
-  - Entry names must be unique in the sequence file.It is common to use
-    clone name or isolate name as unique Entry name.
-  - Entry name is required to be described in less than 32 letters of
-    characters which do not contain space, " double-quote, = equal, |
-    pipe, \> greater-than, \[\] angled brackets or \\ back-slash.
-  - The names and the orders of Entry in the both of sequence and
-    [annotation files](#annotation) should be matched.The accession
-    numbers will be assigned in the order of entries.
+  - First line starts with \[\>\], followed by the Entry name at the head of each sequence.
+  - Entry names must be unique in the sequence file.It is common to use clone name or isolate name as unique Entry name.
+  - Entry name is required to be described in less than 32 letters of characters which do not contain space, " double-quote, = equal, | pipe, \> greater-than, \[\] angled brackets or \\ back-slash.
+  - The names and the orders of Entry in the both of sequence and [annotation files](#annotation) should be matched.The accession numbers will be assigned in the order of entries.
   - Sequence file is required to contain NO space or blank line.
-  - You can use not only a, t, g and c but also characters in Nucleotide
-    base codes for your nucleotide sequences, if necessary.
-  - In principle, please remove the base code 'n' locating 5' or 3' end
-    of sequences. For especially EST submissions, please do not send the
-    raw outputs of a sequencer. You should screen your sequences to
-    remove unreliable output(s) often locating at 5'-end.
-  - Remove the sequences derived from vector, linker or adaptor.If you
-    would like to submit some artificially constructed sequence itself,
-    such as an expression vector etc., you do not have to remove that.
-  - Please be sure to input the end flag \[//\] at the end of each
-    sequence.
-  - In case of [CON entry](/data-categories-e.html#con), [AGP
-    file](#agp) can be used as a substitute for sequence file.
-
-</div>
-
-</div>
-
-<div class="section chapter">
+  - You can use not only a, t, g and c but also characters in Nucleotide base codes for your nucleotide sequences, if necessary.
+  - In principle, please remove the base code 'n' locating 5' or 3' end of sequences. For especially EST submissions, please do not send the raw outputs of a sequencer. You should screen your sequences to remove unreliable output(s) often locating at 5'-end.
+  - Remove the sequences derived from vector, linker or adaptor.If you would like to submit some artificially constructed sequence itself, such as an expression vector etc., you do not have to remove that.
+  - Please be sure to input the end flag \[//\] at the end of each sequence.
+  - In case of [CON entry](/data-categories-e.html#con), [AGP file](#agp) can be used as a substitute for sequence file.
 
 ## Annotation File
 
-The annotation file is the tab delimited text file consisting of five
-columns of Entry, Feature, Location, Qualifier, and Value that contains
-your data other than sequences, such as submitters, references and
-biological features.  
-You can make the files with some scripts, spread sheets (such as MS
-Excel), text editors and so on.
+The annotation file is the tab delimited text file consisting of five columns of Entry, Feature, Location, Qualifier, and Value that contains your data other than sequences, such as submitters, references and biological features.  
+You can make the files with some scripts, spread sheets (such as MS Excel), text editors and so on.
 
 Example:Annotation file (<span class="red">Required</span>)
-
-<div class="main_table format">
 
 | Entry             | Feature                            | Location                                                         | Qualifier                          | Value                           |
 | ----------------- | ---------------------------------- | ---------------------------------------------------------------- | ---------------------------------- | ------------------------------- |
@@ -325,50 +84,32 @@ Example:Annotation file (<span class="red">Required</span>)
 |                   |                                    |                                                                  | chromosome                         | 8                               |
 |                   | CDS                                | 9365..9640                                                       | product                            | hypothetical protein            |
 
-</div>
-
-<div class="section section">
-
 ### Format and Syntax
 
 It is required to validate formats of annotation file by
 [UME](/ddbj/ume-e.html) or [Parser](/ddbj/parser-e.html).
 
-  - Entry  
-    Please enter the Entry name into Entry column. Entry name has to
-    correspond to each name in the sequence file as described at [How to
-    Make Sequence File](#sequence).
-    Do not enter anything in the Entry column until the first line for
-    the next entry.
-  - Feature  
-    There are two types of Features, [Biological
-    feature](#biological_feature) and DDBJ original features. The detail
-    descriptions for Features are explained below.
-    Do not enter anything in Feature columns until the first line for
-    the next feature.
-  - Location  
-    Location can be described in the columns adjacent Feature columns
-    filed with either of [Biological feature](#biological_feature) or
-    [PRIMARY\_CONTIG](#primary_contig) feature.
-  - Qualifier  
-    Qualifier is described in every line, in principle. It depends on
-    the Feature whether each Qualifier is mandatory, available, or not
-    to use for the Feature. Details are explained below.
-  - Value  
-    The format of Value is different depending on Qualifiers. Details
-    will be explained below.
-  - Other  
-    In annotation file, it is judged as end when a blank line was found.
-    Therefore, when you input multiple entries, please be sure not to
-    make a blank line until the end of file.
+Entry  
+: Please enter the Entry name into Entry column. Entry name has to correspond to each name in the sequence file as described at [How to Make Sequence File](#sequence).
+Do not enter anything in the Entry column until the first line for the next entry.
 
-</div>
+Feature  
+: There are two types of Features, [Biological feature](#biological_feature) and DDBJ original features. The detail descriptions for Features are explained below.
+Do not enter anything in Feature columns until the first line for the next feature.
 
-<div class="section section">
+Location  
+: Location can be described in the columns adjacent Feature columns filed with either of [Biological feature](#biological_feature) or [PRIMARY\_CONTIG](#primary_contig) feature.
+
+Qualifier  
+: Qualifier is described in every line, in principle. It depends on the Feature whether each Qualifier is mandatory, available, or not to use for the Feature. Details are explained below.
+
+Value  
+: The format of Value is different depending on Qualifiers. Details will be explained below.
+
+Other  
+: In annotation file, it is judged as end when a blank line was found. Therefore, when you input multiple entries, please be sure not to make a blank line until the end of file.
 
 ### References for Describing Biological Features
-
-<div class="main_table format">
 
 | Name                                                       | Refix Date | Remarks                                                        |
 | ---------------------------------------------------------- | ---------- | -------------------------------------------------------------- |
@@ -376,217 +117,48 @@ It is required to validate formats of annotation file by
 | [Feature/Qualifier usage matrix](/files/pdf/ddbj/fq-e.pdf) | 2016/11/09 |                                                                |
 | [Example of Submission](/ddbj/example-e.html)              | 2014/11/27 | Examples of features in [DDBJ flat file](/ddbj/flat-file.html) |
 
-</div>
-
-</div>
-
-<div class="section section">
-
-### Samples and Relationships with DDBJ flat files
-
-<div class="main_table format">
-
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Data contents</th>
-<th>PDF format<br />
-(with remarks)</th>
-<th>Tab-delimited text format</th>
-<th>Relationships with flatfile</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Protein coding sequence (CDS)</td>
-<td><a href="/files/pdf/ddbj/CDS.pdf">CDS</a></td>
-<td><a href="/files/example/CDS.txt">CDS</a></td>
-<td><a href="/files/pdf/ddbj/general_ann2ff.pdf">general</a></td>
-</tr>
-<tr class="even">
-<td>Ribosomal RNA</td>
-<td><a href="/files/pdf/ddbj/16S_rRNA.pdf">16S_rRNA</a></td>
-<td><a href="/files/example/16S_rRNA.txt">16S_rRNA</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>ITS (Internal Transcribed Spacer)</td>
-<td><a href="/files/pdf/ddbj/ITS.pdf">ITS</a></td>
-<td><a href="/files/example/ITS.txt">ITS</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Microsatellite marker</td>
-<td><a href="/files/pdf/ddbj/Microsatellite_marker.pdf">Microsatellite_marker</a></td>
-<td><a href="/files/example/Microsatellite_marker.txt">Microsatellite_marker</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Mitochondrial sequence</td>
-<td><a href="/files/pdf/ddbj/mtDNA.pdf">mtDNA</a></td>
-<td><a href="/files/example/mtDNA.txt">mtDNA</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><a href="/ddbj/env-e.html">ENV</a>(Environmental Samples)</td>
-<td><a href="/files/pdf/ddbj/ENV.pdf">ENV</a></td>
-<td><a href="/files/example/ENV.txt">ENV</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><a href="/ddbj/est-e.html">EST</a> (Expressed Sequence Tags)</td>
-<td><a href="/files/pdf/ddbj/EST.pdf">EST</a></td>
-<td><a href="/files/example/EST.txt">EST</a></td>
-<td><a href="/files/pdf/ddbj/EST_ann2ff.pdf">EST</a></td>
-</tr>
-<tr class="even">
-<td><a href="/ddbj/gss-e.html">GSS</a> (Genome Survey Sequences)</td>
-<td><a href="/files/pdf/ddbj/GSS.pdf">GSS</a></td>
-<td><a href="/files/example/GSS.txt">GSS</a></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><a href="/sub/htg-e.html">HTG</a> (High Throughput Genomic Sequences)</td>
-<td><a href="/files/pdf/ddbj/HTG.pdf">HTG</a></td>
-<td><a href="/files/example/HTG.txt">HTG</a></td>
-<td><a href="/files/pdf/ddbj/HTG_ann2ff.pdf">HTG</a></td>
-</tr>
-<tr class="even">
-<td><a href="/ddbj/tsa-e.html">TSA</a> (Transcriptome Shotgun Assembly); assembled from EST</td>
-<td><a href="/files/pdf/ddbj/TSA.pdf">TSA</a></td>
-<td><a href="/files/example/TSA.txt">TSA</a></td>
-<td><a href="/files/pdf/ddbj/TSA_ann2ff.pdf">TSA</a></td>
-</tr>
-<tr class="odd">
-<td><a href="/ddbj/tsa-e.html">TSA</a>; assembled from short reads</td>
-<td><a href="/files/pdf/ddbj/TSA_SRA_assemble.pdf">TSA_SRA_assemble</a></td>
-<td><a href="/files/example/TSA_SRA_assemble.txt">TSA_SRA_assemble</a></td>
-<td><a href="/files/pdf/ddbj/TSA_SRA_ann2ff.pdf">TSA_SRA</a></td>
-</tr>
-<tr class="even">
-<td><a href="/ddbj/wgs-e.html">WGS</a> (Whole Genome Shotgun)</td>
-<td><a href="/files/pdf/ddbj/WGS.pdf">WGS</a></td>
-<td><a href="/files/example/WGS.txt">WGS</a></td>
-<td><a href="/files/pdf/ddbj/WGS_ann2ff.pdf">WGS</a></td>
-</tr>
-<tr class="odd">
-<td><a href="/ddbj/wgs-e.html">WGS</a>; piece of scaffold CON</td>
-<td><a href="/files/pdf/ddbj/WGS_piece_CON.pdf">WGS_piece_CON</a></td>
-<td><a href="/files/example/WGS_piece_CON.txt">WGS_piece_CON</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><a href="/ddbj/con-e.html">CON</a> entries for WGS scaffold</td>
-<td><a href="/files/pdf/ddbj/WGS_scaffold.pdf">WGS_scaffold</a></td>
-<td><a href="/files/example/WGS_scaffold.txt">WGS_scaffold</a></td>
-<td><a href="/files/pdf/ddbj/CON_ann2ff.pdf">CON</a></td>
-</tr>
-<tr class="odd">
-<td>AGP file for <a href="/ddbj/con-e.html">CON</a> entries</td>
-<td><a href="/files/pdf/ddbj/AGP.pdf">AGP</a></td>
-<td><a href="/files/example/AGP.txt">AGP</a></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><a href="/ddbj/tpa-e.html">TPA</a> (Third Party Annotation)</td>
-<td><a href="/files/pdf/ddbj/TPA.pdf">TPA</a></td>
-<td><a href="/files/example/TPA.txt">TPA</a></td>
-<td><a href="/files/pdf/ddbj/TPA_ann2ff.pdf">TPA</a></td>
-</tr>
-</tbody>
-</table>
-
-</div>
-
-</div>
-
-<div class="section section">
-
-### COMMON
+### COMMON<a name="common"></a>
 
 #### COMMON entry for the common information to all entries
 
-  - In annotation file, entry name COMMON can be described in Entry
-    column for the common information to all entries.
-  - The information described in COMMON entry will be reflected in all
-    entries.
-  - Usually, COMMON is used for SUBMITTER/REFERENCE/DATE/COMMENT, but it
-    can also be used for [Biological feature](#biological_feature) when
-    all the information of Feature, Location, Qualifiers and Values are
-    common to all entries.
+  - In annotation file, entry name COMMON can be described in Entry column for the common information to all entries.
+  - The information described in COMMON entry will be reflected in all entries.
+  - Usually, COMMON is used for SUBMITTER/REFERENCE/DATE/COMMENT, but it can also be used for [Biological feature](#biological_feature) when all the information of Feature, Location, Qualifiers and Values are common to all entries.
 
 #### Use of COMMON entry
 
-  - Meta-base position 'E' for the location description  
-    Example: rRNA feature in COMMON entry
+Meta-base position 'E' for the location description  
+: Example: rRNA feature in COMMON entry
     
-    <div class="main_table format">
+| Entry  | Feature | Location                           | Qualifier | Value    |
+| ------ | ------- | ---------------------------------- | --------- | -------- |
+| COMMON | rRNA    | \<1..\><span class="bold">E</span> | product   | 16S rRNA |
+     
+There are many submissions that have common Feature information for all entries in their Qualifiers, and Values except their Locations because of difference of their sequence lengths, such as phylogenic studies with rRNA sequences.
     
-    | Entry  | Feature | Location                           | Qualifier | Value    |
-    | ------ | ------- | ---------------------------------- | --------- | -------- |
-    | COMMON | rRNA    | \<1..\><span class="bold">E</span> | product   | 16S rRNA |
-    
+In such cases, you can describe the common Feature in COMMON entry by using meta-base position '<span class="bold">E</span>' in its Location instead of the number of the sequence end points.
 
-    </div>
-    
-    There are many submissions that have common Feature information for
-    all entries in their Qualifiers, and Values except their Locations
-    because of difference of their sequence lengths, such as phylogenic
-    studies with rRNA sequences.
-    
-    In such cases, you can describe the common Feature in COMMON entry
-    by using meta-base position '<span class="bold">E</span>' in its
-    Location instead of the number of the sequence end points.
-
-  - Meta-description '@@\[entry\]@@ 'is available for clone, note,
-    ff\_definition  
-    Example: source feature in COMMON entry
-    
-    <div class="main_table format">
-    
+Meta-description '@@\[entry\]@@ 'is available for clone, note, ff\_definition  
+: Example: source feature in COMMON entry
+       
     | Entry  | Feature | Location                       | Qualifier        | Value                                                                                               |
     | ------ | ------- | ------------------------------ | ---------------- | --------------------------------------------------------------------------------------------------- |
-    | COMMON | source  | 1..<span class="bold">E</span> | organism         | Homo sapiens                                                                                        |
+    | COMMON | source  | 1..**E** | organism         | Homo sapiens                                                                                        |
     |        |         |                                | mol\_type        | genomic DNA                                                                                         |
-    |        |         |                                | submitter\_seqid | <span class="bold">@@\[entry\]@@</span>                                                             |
-    |        |         |                                | ff\_definition   | <span class="bold">@@\[organism\]@@</span> DNA, <span class="bold"> @@\[submitter\_seqid\]@@</span> |
+    |        |         |                                | submitter\_seqid | **@@\[entry\]@@**                                                            |
+    |        |         |                                | ff\_definition   | **@@\[organism\]@@** DNA, **@@\[submitter\_seqid\]@@** |
+     
+There are some submissions that have common Feature information for all entries in their Qualifiers, and Values except their Locations and clone name or contig names, such as EST, GSS, TSA, TLS, WGS, WGS scaffold (CON division), and so on.
     
-
-    </div>
+In such cases, you can describe the Feature: source in COMMON entry only if you use clone or contig names as entry name.
     
-    There are some submissions that have common Feature information for
-    all entries in their Qualifiers, and Values except their Locations
-    and clone name or contig names, such as EST, GSS, TSA, TLS, WGS, WGS
-    scaffold (CON division), and so on.
-    
-    In such cases, you can describe the Feature: source in COMMON entry
-    only if you use clone or contig names as entry name.
-    
-      - You can use meta-base position '<span class="bold">E</span>' in
-        its Location instead of the number of the sequence end points.
-      - For the Value of clone, submitter\_seqid, note, ff\_definition,
-        a meta description <span class="bold">@@\[entry\]@@,
-        entry</span> enclosed by "<span class="bold">@@\[</span>" and
-        "<span class="bold">\]@@</span>", is available to quote entry
-        names. It will be replaced by the entry names which are quoted
-        from a sequence file.
-
-</div>
-
-<div class="section section">
+  - You can use meta-base position '**E**' in its Location instead of the number of the sequence end points.
+  - For the Value of clone, submitter\_seqid, note, ff\_definition, a meta description **@@\[entry\]@@, entry** enclosed by "**@@\[**" and "**\]@@**", is available to quote entry names. It will be replaced by the entry names which are quoted from a sequence file.
 
 ### SUBMITTER
 
 Example: SUBMITTER in annotation
 file　(<span class="red">Requierd</span>)
-
-<div class="main_table format">
 
 | Entry  | Feature                            | Location | Qualifier                          | Value                          |
 | ------ | ---------------------------------- | -------- | ---------------------------------- | ------------------------------ |
@@ -607,129 +179,101 @@ file　(<span class="red">Requierd</span>)
 |        |                                    |          | <span class="red">street</span>    | Yata 1111                      |
 |        |                                    |          | <span class="red">zip</span>       | 411-8540                       |
 
-</div>
 
 List of Qualifiers for SUBMITTER
 
-<div class="main_table format">
-
 <table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
+  <thead>
 <tr class="header">
 <th>Qualifier</th>
 <th>Legal characters for each Value (Remarks)</th>
 <th>Number of letters</th>
 </tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>ab_name (abbreviation of author name)</td>
-<td>alphabets, .[period], ,[comma], -[hyphen], ' [apostrophe]</td>
-<td>64</td>
-</tr>
-<tr class="even">
-<td>contact (contact person)</td>
-<td>alphabets, .[period], ,[comma], -[hyphen], ' [apostrophe], [space]<br />
-(In order of first, middle, and last names delimited with)</td>
-<td>first(64),<br />
-middle(128), last(64)</td>
-</tr>
-<tr class="odd">
-<td>consrtm (consortium)</td>
-<td>alphabets, digits, [space], -[hyphen], ' [apostrophe], .[period], _[underscore], .[comma], ( ) # &amp; @ / ; : + *</td>
-<td>255</td>
-</tr>
-<tr class="even">
-<td>email</td>
-<td>alphabets, digits, @, .[period], -[hyphen], _[underscore]</td>
-<td>64</td>
-</tr>
-<tr class="odd">
-<td>url</td>
-<td>All printable characters but [space]</td>
-<td>255</td>
-</tr>
-<tr class="even">
-<td>phone, fax, phext</td>
-<td>digits, -[hyphen] (DO NOT enter + before country code)</td>
-<td>16</td>
-</tr>
-<tr class="odd">
-<td>institute, department</td>
-<td>All printable characters but [back-slash], ` [back-quote]</td>
-<td>255</td>
-</tr>
-<tr class="even">
-<td>country, state</td>
-<td>alphabets, digits, [space], -[hyphen], '[apostrophe], .[period], _[underscore], ,[comma], ( ) # &amp; @ / ; : + *</td>
-<td>32</td>
-</tr>
-<tr class="odd">
-<td>city</td>
-<td>alphabets, digits, [space], -[hyphen], '[apostrophe], .[period], _[underscore], ,[comma], ( ) # &amp; @ / ; : + *</td>
-<td>64</td>
-</tr>
-<tr class="even">
-<td>street</td>
-<td>alphabets, digits, [space], -[hyphen], '[apostrophe], .[period], _[underscore], ,[comma], ( ) # &amp; @ / ; : + *</td>
-<td>255</td>
-</tr>
-<tr class="odd">
-<td>zip</td>
-<td>alphabets, digits, -[hyphen]</td>
-<td>16</td>
-</tr>
-</tbody>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td>ab_name (abbreviation of author name)</td>
+      <td>alphabets, .[period], ,[comma], -[hyphen], ' [apostrophe]</td>
+      <td>64</td>
+    </tr>
+    <tr class="even">
+      <td>contact (contact person)</td>
+      <td>alphabets, .[period], ,[comma], -[hyphen], ' [apostrophe], [space]<br/>(In order of first, middle, and last names delimited with)</td>
+      <td>first(64),<br/>middle(128), last(64)</td>
+    </tr>
+    <tr class="odd">
+      <td>consrtm (consortium)</td>
+      <td>alphabets, digits, [space], -[hyphen], ' [apostrophe], .[period], _[underscore], .[comma], ( ) # &amp; @ / ; : + *</td>
+      <td>255</td>
+    </tr>
+    <tr class="even">
+      <td>email</td>
+      <td>alphabets, digits, @, .[period], -[hyphen], _[underscore]</td>
+      <td>64</td>
+    </tr>
+    <tr class="odd">
+      <td>url</td>
+      <td>All printable characters but [space]</td>
+      <td>255</td>
+    </tr>
+    <tr class="even">
+      <td>phone, fax, phext</td>
+      <td>digits, -[hyphen] (DO NOT enter + before country code)</td>
+      <td>16</td>
+    </tr>
+    <tr class="odd">
+      <td>institute, department</td>
+      <td>All printable characters but [back-slash], ` [back-quote]</td>
+      <td>255</td>
+    </tr>
+    <tr class="even">
+      <td>country, state</td>
+      <td>alphabets, digits, [space], -[hyphen], '[apostrophe], .[period], _[underscore], ,[comma], ( ) # &amp; @ / ; : + *</td>
+      <td>32</td>
+    </tr>
+    <tr class="odd">
+      <td>city</td>
+      <td>alphabets, digits, [space], -[hyphen], '[apostrophe], .[period], _[underscore], ,[comma], ( ) # &amp; @ / ; : + *</td>
+      <td>64</td>
+    </tr>
+    <tr class="even">
+      <td>street</td>
+      <td>alphabets, digits, [space], -[hyphen], '[apostrophe], .[period], _[underscore], ,[comma], ( ) # &amp; @ / ; : + *</td>
+      <td>255</td>
+    </tr>
+    <tr class="odd">
+      <td>zip</td>
+      <td>alphabets, digits, -[hyphen]</td>
+      <td>16</td>
+    </tr>
+  </tbody>
 </table>
-
-</div>
 
 #### Requirements for Describing SUBMITTER
 
-  - Basically it is necessary to enter one SUBMITTER for each entry. But
-    [COMMON](#common) can be used for describing SUBMITTER that is
-    common to all entries.  
-    When SUBMITTER is written by using COMMON, SUBMITTER cannot be used
-    for the other entries in the same annotation file.
-  - [Submitters](/ddbj/submission-e.html#submitter) are the persons who
-    have the responsibility in the contents of the submitted data and
-    have the right to update the data.
-  - Qualifier: ab\_name in SUBMITTER can be used repeatedly for multiple
-    submitters and those submitters are shown in the released file in
+  - Basically it is necessary to enter one SUBMITTER for each entry. But [COMMON](#common) can be used for describing SUBMITTER that is common to all entries.  
+    When SUBMITTER is written by using COMMON, SUBMITTER cannot be used for the other entries in the same annotation file.
+  - [Submitters](/ddbj/submission-e.html#submitter) are the persons who have the responsibility in the contents of the submitted data and have the right to update the data.
+  - Qualifier: ab\_name in SUBMITTER can be used repeatedly for multiple submitters and those submitters are shown in the released file in
     the order of this annotation file.
-  - It is necessary to specify a contact person whom DDBJ will contact
-    with about the data by using Qualifier: contact.
-  - The abbreviation of the author name according to the format of
-    REFERENCE author should be described in Value of Qualifier:
-    ab\_name.
-      - Value format:  
-        last name\[comma\]initial of first name\[period\]initial of
-        middle name\[period\]
-      - Example:  
-        Miyashita,Y.
-        Robertson,G.R.
-    Although some names (e.g. name with a hyphen) may show a warning
-    message owing to format error, it is possible to input.
-  - Each Value for the Qualifier except ab\_name in SUBMITTER cannot be
-    used repeatedly. They can be used for only contact person. If you
-    would like to submit the information of multiple institutes, please
-    contact us before your submission.
+  - It is necessary to specify a contact person whom DDBJ will contact with about the data by using Qualifier: contact.
+  - The abbreviation of the author name according to the format of REFERENCE author should be described in Value of Qualifier: ab\_name.
 
-</div>
+    Value format:
+    : last name\[comma\]initial of first name\[period\]initial of
+    middle name\[period\]
 
-<div class="section section">
+    Example:  
+    : Miyashita,Y.
+    Robertson,G.R.
+
+    Although some names (e.g. name with a hyphen) may show a warning message owing to format error, it is possible to input.
+
+  - Each Value for the Qualifier except ab\_name in SUBMITTER cannot be used repeatedly. They can be used for only contact person. If you would like to submit the information of multiple institutes, please contact us before your submission.
 
 ### REFERENCE
 
-Example: REFERENCE in annotation file　(<span class="red">Requierd
-</span>
-
-<div class="main_table format">
+Example: REFERENCE in annotation file　(<span class="red">Requierd</span>)
 
 | Entry | Feature                            | Location | Qualifier                         | Value                               |
 | ----- | ---------------------------------- | -------- | --------------------------------- | ----------------------------------- |
@@ -743,143 +287,98 @@ Example: REFERENCE in annotation file　(<span class="red">Requierd
 |       |                                    |          | start\_page                       | 15                                  |
 |       |                                    |          | end\_page                         | 20                                  |
 
-</div>
-
 List of Qualifiers for REFERENCE
 
-<div class="main_table format">
-
 <table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Qualifier</th>
-<th>Legal characters for each Value (Remarks)</th>
-<th>Number of letters</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>title</td>
-<td>All printable characters but [back-slash], ` [back-quote]</td>
-<td>255</td>
-</tr>
-<tr class="even">
-<td>ab_name (abbreviation of author name)</td>
-<td>alphabets, .[period], ,[comma], -[hyphen], ' [apostrophe]</td>
-<td>64</td>
-</tr>
-<tr class="odd">
-<td>consrtm(consortium)</td>
-<td>alphabets, digits, [space], -[hyphen], ' [apostrophe], .[period], _[underscore],<br />
-,[comma], ( ) # &amp; @ / ; : + *</td>
-<td>255</td>
-</tr>
-<tr class="even">
-<td>status</td>
-<td>Either one of follows;<br />
-Unpublished, In press, Published</td>
-<td>-</td>
-</tr>
-<tr class="odd">
-<td>year</td>
-<td>digits(4 figures of A.D.)</td>
-<td>4</td>
-</tr>
-<tr class="even">
-<td>journal</td>
-<td>All printable characters but [back-slash], ` [back-quote] (PubMed type abbreviation)</td>
-<td>128</td>
-</tr>
-<tr class="odd">
-<td>volume, start_page, end_page</td>
-<td>alphabets, digits, -[hyphen]</td>
-<td>8</td>
-</tr>
-</tbody>
+  <thead>
+    <tr class="header">
+      <th>Qualifier</th>
+      <th>Legal characters for each Value (Remarks)</th>
+      <th>Number of letters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td>title</td>
+      <td>All printable characters but [back-slash], ` [back-quote]</td>
+      <td>255</td>
+    </tr>
+    <tr class="even">
+      <td>ab_name (abbreviation of author name)</td>
+      <td>alphabets, .[period], ,[comma], -[hyphen], ' [apostrophe]</td>
+      <td>64</td>
+    </tr>
+    <tr class="odd">
+      <td>consrtm(consortium)</td>
+      <td>alphabets, digits, [space], -[hyphen], ' [apostrophe], .[period], _[underscore],<br/>,[comma], ( ) # &amp; @ / ; : + *</td>
+      <td>255</td>
+    </tr>
+    <tr class="even">
+      <td>status</td>
+      <td>Either one of follows;<br/>Unpublished, In press, Published</td>
+      <td>-</td>
+    </tr>
+    <tr class="odd">
+      <td>year</td>
+      <td>digits(4 figures of A.D.)</td>
+      <td>4</td>
+    </tr>
+    <tr class="even">
+      <td>journal</td>
+      <td>All printable characters but [back-slash], ` [back-quote] (PubMed type abbreviation)</td>
+      <td>128</td>
+    </tr>
+    <tr class="odd">
+      <td>volume, start_page, end_page</td>
+      <td>alphabets, digits, -[hyphen]</td>
+      <td>8</td>
+    </tr>
+  </tbody>
 </table>
-
-</div>
 
 #### Requirements for Describing REFERENCE
 
-  - It is necessary to specify at least one REFERENCE for each entry.
-    However, [COMMON](#common) can be used for describing the REFERENCE
+  - It is necessary to specify at least one REFERENCE for each entry. However, [COMMON](#common) can be used for describing the REFERENCE
     that is common to all entries.
-  - The abbreviation of the author name according to the format of
-    REFERENCE author should be described in Value of Qualifier:
-    ab\_name.
-      - Value format:  
-        last name\[comma\]initial of first name\[period\]initial of
-        middle name\[period\]
-      - Example:  
-        Miyashita,Y.
-        Robertson,G.R.
-    Please pay no attention to a warning message about name format error
-    (e.g. name with a hyphen).
-  - If the Value of status is "In Press", Qualifier: journal is also a
-    mandatory item.
-  - If the Value of status is "Published", Qualifier: journal, volume,
-    start\_page and end\_page are also mandatory items.
-  - Please input "Unpublished" in the status, if you do not prepare any
-    publication.
+  - The abbreviation of the author name according to the format of REFERENCE author should be described in Value of Qualifier: ab\_name.
+
+    Value format:  
+    : last name\[comma\]initial of first name\[period\]initial of middle name\[period\]
+
+    Example:  
+    : Miyashita,Y.
+    Robertson,G.R.
+
+    Please pay no attention to a warning message about name format error (e.g. name with a hyphen).
+  - If the Value of status is "In Press", Qualifier: journal is also a mandatory item.
+  - If the Value of status is "Published", Qualifier: journal, volume, start\_page and end\_page are also mandatory items.
+  - Please input "Unpublished" in the status, if you do not prepare any publication.
   - Please input ISO abbreviation in the journal if you have.
-  - If you need to enter more than two REFERENCE features, please input
-    the first REFERENCE directly related to your sequences and then put
-    the other(s) that would be helpful for understanding the data after
-    the first one.
-  - When you use REFERENCE features for both [COMMON](#common) entry and
-    other entries, the REFERENCE feature(s) specified for each entry
-    will be loaded into DDBJ after one(s) given by COMMON entry.
-  - When you cite two or more REFERENCE features for an entry, they will
-    be shown on the DDBJ flat file in the same order on the annotation
-    file.
-
-</div>
-
-<div class="section section">
+  - If you need to enter more than two REFERENCE features, please input the first REFERENCE directly related to your sequences and then put the other(s) that would be helpful for understanding the data after the first one.
+  - When you use REFERENCE features for both [COMMON](#common) entry and other entries, the REFERENCE feature(s) specified for each entry will be loaded into DDBJ after one(s) given by COMMON entry.
+  - When you cite two or more REFERENCE features for an entry, they will be shown on the DDBJ flat file in the same order on the annotation file.
 
 ### DATE
 
 Example: DATE/hold\_date in annotation file
 
-<div class="main_table format">
-
 | Entry  | Feature | Location | Qualifier  | Value    |
 | ------ | ------- | -------- | ---------- | -------- |
 | COMMON | DATE    |          | hold\_date | 20181125 |
 
-</div>
 
 #### Requirements for Describing DATE
 
-  - DATE and hold\_date are required to be described in
-    [COMMON](#common) entry.
-  - If you want to keep confidential your data until a specific date,
-    please set the date with 8 digits (e.g. 20181125).
-  - Delimiters (i.e. -- (hyphen), / (slash) etc.) is not allowed to use
-    for Value of hold\_date.
-  - Do not enter any DATE, if your data should be open to public
-    immediately.
-  - DATE should be included for [COMMON](#common) entry. If the date is
-    not common to all entries, please prepare the file for each.
-  - If you set a hold\_date, your data will be released according to
-    [Principle of "Hold-Until-Published" data
-    release](/data-release-policy-e.html).
+  - DATE and hold\_date are required to be described in [COMMON](#common) entry.
+  - If you want to keep confidential your data until a specific date, please set the date with 8 digits (e.g. 20181125).
+  - Delimiters (i.e. -- (hyphen), / (slash) etc.) is not allowed to use for Value of hold\_date.
+  - Do not enter any DATE, if your data should be open to public immediately.
+  - DATE should be included for [COMMON](#common) entry. If the date is not common to all entries, please prepare the file for each.
+  - If you set a hold\_date, your data will be released according to [Principle of "Hold-Until-Published" data release](/data-release-policy-e.html).
 
-</div>
-
-<div class="section section">
-
-### COMMENT/ST\_COMMENT
+### COMMENT/ST\_COMMENT<a name="comment"></a>
 
 Example: COMMENT and ST\_COMMENT in annotation file
-
-<div class="main_table format">
 
 | Entry | Feature     | Location | Qualifier                | Value                                      |
 | ----- | ----------- | -------- | ------------------------ | ------------------------------------------ |
@@ -894,88 +393,53 @@ Example: COMMENT and ST\_COMMENT in annotation file
 |       |             |          | Genome Coverage          | 50x                                        |
 |       |             |          | Sequencing Technology    | 454 GS FLX; ABI 3730                       |
 
-</div>
-
-<span class="red">※</span> There are two kinds of COMMENTs, "general
-COMMENT" and "structured COMMENT".
+<span class="red">※</span> There are two kinds of COMMENTs, "general COMMENT" and "structured COMMENT".
 
 #### Requirements for Describing COMMENT (General COMMENT)
 
-  - Please use general COMMENT if you want to describe additional
-    information for your data.
-  - It will automatically start a new-line by 60 letters including
-    spaces. If you want to start a new-line other than 60 letters,
-    please add Qualifier: line.
-  - All printable characters except \[back-slash\] are legal for the
-    Value of Qualifier: line.
-  - [COMMON](#common) entry can be used for describing COMMENT that is
-    common to all entries.
-  - When you put multiple COMMENT features, please put each COMMENT for
-    a Feature column, separately.
-  - When an entry has both COMMENT features specific to it and common
-    with all other entries described in COMMON entry, those will be
-    shown on DDBJ flat file in the order, COMMENT in COMMON entry at
-    first, then followed by one specific to the entry. On DDBJ flat
-    files, in the case of plural COMMENTs, they will be shown in DDBJ
-    format on same order of the annotation file.
-  - When you use COMMENT features for both COMMON entry and other
-    entries, the COMMENT feature(s) specified for each entry will be
-    loaded into DDBJ after one(s) given by COMMON entry.
-  - When you describe two or more COMMENT features for an entry, they
-    will be shown on the DDBJ flat file in the same order on the
-    annotation file.
-  - For EST submissions, some particular COMMENT description is
-    required.[Details](#wgs_con)
+  - Please use general COMMENT if you want to describe additional information for your data.
+  - It will automatically start a new-line by 60 letters including spaces. If you want to start a new-line other than 60 letters, please add Qualifier: line.
+  - All printable characters except \[back-slash\] are legal for the Value of Qualifier: line.
+  - [COMMON](#common) entry can be used for describing COMMENT that is common to all entries.
+  - When you put multiple COMMENT features, please put each COMMENT for a Feature column, separately.
+  - When an entry has both COMMENT features specific to it and common with all other entries described in COMMON entry, those will be shown on DDBJ flat file in the order, COMMENT in COMMON entry at first, then followed by one specific to the entry. On DDBJ flat files, in the case of plural COMMENTs, they will be shown in DDBJ format on same order of the annotation file.
+  - When you use COMMENT features for both COMMON entry and other entries, the COMMENT feature(s) specified for each entry will be loaded into DDBJ after one(s) given by COMMON entry.
+  - When you describe two or more COMMENT features for an entry, they will be shown on the DDBJ flat file in the same order on the annotation file.
+  - For EST submissions, some particular COMMENT description is required.[Details](#wgs_con)
 
 #### Requirements for Describing ST\_COMMENT (structured COMMENT)
 
-  - ST\_COMMENT is a feature to describe [structured
-    COMMENT](/ddbj/flat-file-e.html#Comment).
+  - ST\_COMMENT is a feature to describe [structured COMMENT](/ddbj/flat-file-e.html#Comment).
 
-  - Though ST\_COMMENT can be defined by user community, ST\_COMMENT in
-    predetermined format is required to submit sequence data derived
-    from [genome Project](/ddbj/genome-e.html) (including
-    [WGS](/ddbj/wgs-e.html)) or [transcriptome
-    Project](/ddbj/transcriptome-e.html) (including
-    [TSA](/ddbj/tsa-e.html)).
+  - Though ST\_COMMENT can be defined by user community, ST\_COMMENT in predetermined format is required to submit sequence data derived from [genome Project](/ddbj/genome-e.html) (including [WGS](/ddbj/wgs-e.html)) or [transcriptome Project](/ddbj/transcriptome-e.html) (including [TSA](/ddbj/tsa-e.html)).
 
-  - ST\_COMMENT is composed of dataset name (tagset\_id), names of items
-    (user-defined Qualifier) and values of items (Value).
+  - ST\_COMMENT is composed of dataset name (tagset\_id), names of items (user-defined Qualifier) and values of items (Value).
 
-  - In the initial line of Structured COMMENT feature, describe
-    tagset\_id as Qualifier and dataset name as its Value.
+  - In the initial line of Structured COMMENT feature, describe tagset\_id as Qualifier and dataset name as its Value.
     
-    In case of genome project, describe "Genome-Assembly-Data" for the
-    value of tagset\_id qualifier.  
-    In case of transcriptome project, describe "Assembly-Data" for the
-    value of tagset\_id qualifier.
+    In case of genome project, describe "Genome-Assembly-Data" for the value of tagset\_id qualifier.  
+    In case of transcriptome project, describe "Assembly-Data" for the value of tagset\_id qualifier.
 
-  - Describe a name of item as Qualifier name and its value as Value. In
-    case of Genome-Assembly-Data, use following Qualifiers.  
+  - Describe a name of item as Qualifier name and its value as Value. In case of Genome-Assembly-Data, use following Qualifiers.  
     In case of Assembly-Data, use following Qualifiers.
     
-    List of Qualifiers for Genome-Assembly-Data
-    (<span class="red">Requierd</span>)
+    List of Qualifiers for Genome-Assembly-Data (<span class="red">Requierd</span>)
     
-    <div class="main_table format">
+    
     
     Qualifier
     
-    </div>
+  
 
   - If you have any question to describe ST\_COMMENT, please contact us
     by email prior to your submission.
-
-</div>
-
-<div class="section section">
 
 ### Biological Features
 
 Example: source and CDS features in annotation
 file　(<span class="red">Requierd</span>)
 
-<div class="main_table format">
+
 
 | Entry | Feature                         | Location                                                    | Qualifier                          | Value                    |
 | ----- | ------------------------------- | ----------------------------------------------------------- | ---------------------------------- | ------------------------ |
@@ -989,7 +453,6 @@ file　(<span class="red">Requierd</span>)
 |       | CDS                             | complement(join(3213..4981,9901..11677))                    | gene                               | tbpA                     |
 |       |                                 |                                                             | product                            | TATA-box binding protein |
 
-</div>
 
 <span class="red">※</span>For detail definitions and descriptions of
 Biological features, please read [Feature Table
@@ -1028,9 +491,8 @@ Definition](/ddbj/full_index-e.html).
   - Please be sure to input (or not to input) Values in accordance with
     value types in tables.
 
-</div>
 
-<div class="section section">
+
 
 ### DIVISION
 
@@ -1045,13 +507,12 @@ corresponding only to one of [CON](/data-categories-e.html#con) /
 
 Example: DIVISION in annotation file
 
-<div class="main_table format">
+
 
 | Entry  | Feature  | Location | Qualifier | Value |
 | ------ | -------- | -------- | --------- | ----- |
 | COMMON | DIVISION |          | division  | EST   |
 
-</div>
 
 #### Requirements for Describing DIVISION
 
@@ -1060,9 +521,8 @@ Example: DIVISION in annotation file
   - In principle, please describe the DIVISION feature in the
     [COMMON](#common) entry.
 
-</div>
 
-<div class="section section">
+
 
 ### DATATYPE
 
@@ -1072,13 +532,12 @@ DATATYPE feature indicates that entries are corresponding to either of
 
 Example: DATATYPE in annotation file
 
-<div class="main_table format">
+
 
 | Entry  | Feature  | Location | Qualifier | Value |
 | ------ | -------- | -------- | --------- | ----- |
 | COMMON | DATATYPE |          | type      | WGS   |
 
-</div>
 
 #### Requirements for Describing DATATYPE
 
@@ -1086,9 +545,8 @@ Example: DATATYPE in annotation file
     Value for Qualifier: type.
   - Please describe the DATATYPE feature in the [COMMON](#common) entry.
 
-</div>
 
-<div class="section section">
+
 
 ### KEYWORD
 
@@ -1101,37 +559,27 @@ which qualify controlled keyword terms.
 
 Example: KEYWORD in annotation file
 
-<div class="main_table format">
+
 
 | Entry | Feature                                | Location | Qualifier                              | Value                              |
 | ----- | -------------------------------------- | -------- | -------------------------------------- | ---------------------------------- |
 |       | <span class="font-bold">KEYWORD</span> |          | <span class="font-bold">keyword</span> | <span class="font-bold">ENV</span> |
 
-</div>
 
 Specified values for KEYWORD/keyword(<span class="red">Requierd</span>)
 
-<div class="main_table format">
+
 
 Categories
 
-</div>
 
-</div>
 
-</div>
 
-</div>
 
-</div>
 
-</div>
 
-</div>
 
-</div>
 
-</div>
 
 the values for keyword
 
@@ -1205,7 +653,7 @@ Please contact us before your submission.
   - Please contact us before your submission to make sure the detail
     descriptions of KEYWORD.
 
-###### For WGS and scaffold CON
+###### For WGS and scaffold CON<a name="wgs_con"></a>
 
   - For WGS and scaffold CON, please select a keyword from the following
     list.
@@ -1217,7 +665,7 @@ Please contact us before your submission.
     
     Example: WGS draft genome(<span class="red">Requierd</span>)
     
-    <div class="main_table format">
+    
     
     | Entry | Feature                          | Location | Qualifier                        | Value                                    |
     | ----- | -------------------------------- | -------- | -------------------------------- | ---------------------------------------- |
@@ -1225,7 +673,7 @@ Please contact us before your submission.
     |       |                                  |          | <span class="red">keyword</span> | <span class="red">STANDARD\_DRAFT</span> |
     
 
-    </div>
+  
 
 ###### For EST Submissions
 
@@ -1238,7 +686,7 @@ Please contact us before your submission.
     
     Example : 5' EST(<span class="red">Requierd</span>)
     
-    <div class="main_table format">
+    
     
     | Entry | Feature                          | Location | Qualifier                        | Value                                             |
     | ----- | -------------------------------- | -------- | -------------------------------- | ------------------------------------------------- |
@@ -1246,7 +694,7 @@ Please contact us before your submission.
     |       |                                  |          | <span class="red">keyword</span> | <span class="red">5'-end sequence (5'-EST)</span> |
     
 
-    </div>
+  
 
   - In the case of 3' EST, to distinguish whether your sequences are
     corresponding to anti-sense or sense strand, please describe either
@@ -1254,32 +702,32 @@ Please contact us before your submission.
     
     Example : For anti-sense strand;(<span class="red">Requierd</span>)
     
-    <div class="main_table format">
+    
     
     | Entry | Feature                          | Location | Qualifier                     | Value                                                                         |
     | ----- | -------------------------------- | -------- | ----------------------------- | ----------------------------------------------------------------------------- |
     |       | <span class="red">COMMENT</span> |          | <span class="red">line</span> | <span class="red">3'-EST sequences are presented as anti-sense strand.</span> |
     
 
-    </div>
+  
     
     Example : For sense strand;(<span class="red">Requierd</span>)
     
-    <div class="main_table format">
+    
     
     | Entry | Feature                          | Location | Qualifier                     | Value                                                                    |
     | ----- | -------------------------------- | -------- | ----------------------------- | ------------------------------------------------------------------------ |
     |       | <span class="red">COMMENT</span> |          | <span class="red">line</span> | <span class="red">3'-EST sequences are presented as sense strand.</span> |
     
 
-    </div>
+  
 
 ###### For HTG submissions
 
   - For HTG submissions, we recommend to use keywords to indicate
     sequencing status of [HTG data](/sub/htg-e.html).
 
-<div class="section section">
+
 
 ### DBLINK
 
@@ -1288,7 +736,7 @@ BioSample ID and Sequence Read Archive (DRA/ERA/SRA).
 
 Example: DBLINK in annotation file(<span class="red">Requierd</span>)
 
-<div class="main_table format">
+
 
 | Entry | Feature                         | Location | Qualifier                                      | Value                                 |
 | ----- | ------------------------------- | -------- | ---------------------------------------------- | ------------------------------------- |
@@ -1297,7 +745,6 @@ Example: DBLINK in annotation file(<span class="red">Requierd</span>)
 |       |                                 |          | <span class="red">sequence read archive</span> | <span class="red">DRR999000</span>    |
 |       |                                 |          | <span class="red">sequence read archive</span> | <span class="red">DRR999001</span>    |
 
-</div>
 
 #### Requirements for Describing DBLINK
 
@@ -1313,9 +760,8 @@ Example: DBLINK in annotation file(<span class="red">Requierd</span>)
     BioSample Database](/biosample/index-e.html) and [DDBJ Sequence Read
     Archive](/dra/index-e.html).
 
-</div>
 
-<div class="section section">
+
 
 ### locus\_tag
 
@@ -1327,7 +773,7 @@ Features](#biological_feature) indicating protein products
 The locus\_tag prefix and BioProject ID should be registered at [DDBJ
 BioProject Database](/bioproject/index-e.html) in advance.
 
-<div class="section section">
+
 
 ### source: ff\_definition
 
@@ -1337,7 +783,7 @@ described in an entry, if necessary.
 
 Example: ff\_definition in annotation file
 
-<div class="main_table format">
+
 
 | Entry | Feature | Location | Qualifier      | Value                                                                                           |
 | ----- | ------- | -------- | -------------- | ----------------------------------------------------------------------------------------------- |
@@ -1346,19 +792,15 @@ Example: ff\_definition in annotation file
 |       |         |          | ff\_definition | <span class="bold">@@\[organism\]@@</span> mRNA, clone: <span class="bold">@@\[clone\]@@</span> |
 |       |         |          | clone          | PC0110                                                                                          |
 
-</div>
 
 Value formats of ff\_definition
 
-<div class="main_table format">
+
 
 Categories
 
-</div>
 
-</div>
 
-</div>
 
 Format for the value of ff\_definition
 
@@ -1415,7 +857,7 @@ Please contact us before your submission, if necessary.
     table, however, if you like to input the values of ff\_definition
     qualifiers, please contact us before your submission.
 
-<div class="section section">
+
 
 ### assembly\_gap: Sequencing Gap Region
 
@@ -1431,7 +873,7 @@ features.
 Example: assembly\_gap in annotation
 file(<span class="red">Requierd</span>)
 
-<div class="main_table format">
+
 
 | Entry | Feature       | Location | Qualifier         | Value                                    |
 | ----- | ------------- | -------- | ----------------- | ---------------------------------------- |
@@ -1439,7 +881,6 @@ file(<span class="red">Requierd</span>)
 |       |               |          | gap\_type         | <span class="red">within scaffold</span> |
 |       |               |          | linkage\_evidence | <span class="red">paired-ends</span>     |
 
-</div>
 
 #### Requirements for Describing assembly\_gap: Sequencing Gap Region
 
@@ -1469,9 +910,8 @@ indicated by the number of "n"'s in the sequence. It is required to
 indicate known for the Value of Qualifier: estimated\_length on the
 assembly\_gap feature.
 
-</div>
 
-<div class="section section">
+
 
 ### TOPOLOGY
 
@@ -1482,13 +922,12 @@ i.e. Complete genome sequence of a circular virus
 
 Example: TOPOLOGY in annotation file
 
-<div class="main_table format">
+
 
 | Entry | Feature  | Location | Qualifier | Value |
 | ----- | -------- | -------- | --------- | ----- |
 |       | TOPOLOGY |          | circular  |       |
 
-</div>
 
 #### Requirements for Describing TOPOLOGY
 
@@ -1496,9 +935,8 @@ Example: TOPOLOGY in annotation file
     [LOCUS](/ddbj/flat-file-e.html#Locus) line. See also [Sample
     annotation file](#sample).
 
-</div>
 
-<div class="section section">
+
 
 ### TPA/TSA: PRIMARY\_CONTIG, Citation of Primary Entries
 
@@ -1508,7 +946,7 @@ TPA/TSA submission.
 
 Example: PRIMARY\_CONTIG in annotation file
 
-<div class="main_table format">
+
 
 | Entry | Feature         | Location  | Qualifier      | Value      |
 | ----- | --------------- | --------- | -------------- | ---------- |
@@ -1520,11 +958,10 @@ Example: PRIMARY\_CONTIG in annotation file
 |       | PRIMARY\_CONTIG | 590..1191 | entry          | ZZ000022.0 |
 |       |                 |           | primary\_bases | 1..601     |
 
-</div>
 
 Qualifiers available for PRIMARY\_CONTIG
 
-<div class="main_table format">
+
 
 <table>
 <colgroup>
@@ -1554,7 +991,6 @@ The base span of the cited primary sequence. Example) 1..500</td>
 </tbody>
 </table>
 
-</div>
 
 #### Requirements for Describing TPA/TSA: PRIMARY\_CONTIG, Citation of Primary Entries
 
@@ -1587,9 +1023,8 @@ between annotation file and DDBJ flat file](#sample).
     [Sample](/files/pdf/ddbj/TSA_SRA_assemble.pdf) / [relationship
     table](/files/pdf/ddbj/TSA_SRA_ann2ff.pdf)
 
-</div>
 
-<div class="section chapter">
+
 
 ## AGP File
 
@@ -1608,7 +1043,7 @@ format was initially developed by UCSC, EBI and NCBI.
 
 Example: AGP file
 
-<div class="main_table format">
+
 
 | \#1       | 2    | 3    | 4 | 5 | 6              | 7        | 8    | 9            |
 | --------- | ---- | ---- | - | - | -------------- | -------- | ---- | ------------ |
@@ -1621,9 +1056,8 @@ Example: AGP file
 | scaffold2 | 651  | 750  | 2 | N | 100            | scaffold | yes  | align\_genus |
 | scaffold2 | 751  | 2980 | 3 | W | BZZZ01123488.1 | 1        | 1230 | \-           |
 
-</div>
 
-<div class="section section">
+
 
 ### Format and Syntax
 
@@ -1638,18 +1072,15 @@ It is required to validate formats of AGP file by
 
 Description on each column（column 1 - column 5）
 
-<div class="main_table format">
+
 
 \* component: a sequence used to construct a larger sequence (i.e. piece
 entry)
 
 column
 
-</div>
 
-</div>
 
-</div>
 
 content
 
@@ -1733,14 +1164,13 @@ on the value in column 5 whether it has gap or not.</span>
 Description on each column（column 6 - column 9）： If column 5 contains A,
 D, F, G, O, P and W except from N and U
 
-<div class="main_table format">
+
 
 \* component: a sequence used to construct a larger sequence (i.e. piece
 entry)
 
 column
 
-</div>
 
 content
 
@@ -1799,11 +1229,10 @@ By default, components with "?", "0" or "na" are treated as if they had
 Description on each column（column 6 - column 9）：If column 5 contains N
 and U
 
-<div class="main_table format">
+
 
 column
 
-</div>
 
 content
 
@@ -1925,27 +1354,25 @@ listed using a ‘;’ delimiter.
     
     Example: source feature in COMMON entry
     
-    <div class="main_table format">
+    
     
     gap\_type
     
-    </div>
+  
 
-<div id="side_navigation">
 
-<div class="side_nav_menu handbook_contents handbook file-format">
 
-<div id="in_this_page">
+
+
+
 
 ## In this page
 
-</div>
 
-</div>
 
-<div class="side_nav_menu handbook_related">
 
-<div id="related_pages">
+
+
 
 ## Related pages
 
@@ -1956,13 +1383,10 @@ listed using a ‘;’ delimiter.
   - [Validator error message](/ddbj/validator-e.html)
   - [Application form for MSS](/ddbj/mass-form-e.html)
 
-</div>
 
-</div>
 
-</div>
 
-<div id="footer_original" class="clearfix">
+
 
   - [Policies and
     Disclaimers](/policies-e.html "Policies and Disclaimers")
@@ -1974,4 +1398,3 @@ listed using a ‘;’ delimiter.
   - [Contact](/contact-e.html "Contact to DDBJ Center")
   - Last modified: 2018-03-09
 
-</div>

@@ -153,8 +153,8 @@ clone, submitter\_seqid, note, ff\_definition に使用可能なメタ表記 '@@
   | ------ | ------- | ------------------------------ | ---------------- | --------------------------------------------------------------------------------------------------- |
   | COMMON | source  | 1..**E** | organism         | Homo sapiens                                                                                        |
   |        |         |                                | mol\_type        | genomic DNA                                                                                         |
-  |        |         |                                | submitter\_seqid | **@@\[entry\]@@</**                                                             |
-  |        |         |                                | ff\_definition   | **@@\[organism\]@@** DNA, ** @@\[submitter\_seqid\]@@** |
+  |        |         |                                | submitter\_seqid | **@@\[entry\]@@**                                                             |
+  |        |         |                                | ff\_definition   | **@@\[organism\]@@** DNA, **@@\[submitter\_seqid\]@@** |
         
 : Location および clone 名や contig 名を除けば、Feature: source の Qualifier, Value の情報が全てのエントリで共通に記載可能なケース（例： EST, GSS, TSA, TLS, WGS, WGS scaffold (CON division)など）があります。
     
