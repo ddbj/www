@@ -10,74 +10,96 @@ Parser is a software tool developed by DDBJ for checking the format and the synt
 
 ## Install
 
-  - 1\. Access and get Parser.tar.gz file from [Validation tools for MSS data files](/ddbj/mss-tool-e.html).  
-    2\. Uncompress tar.gz file.
+<ol>
+  <li>
+    Access and get Parser.tar.gz file from <a href="/ddbj/mss-tool.html">Validation tools for MSS data files</a>.
+  </li>
+  <li>
+    Uncompress tar.gz file.<br>
+    <code>
+      $ gunzip Parser.tar.gz
+    </code>
+  </li>
+  <li>
+    Extract the file tar command<br>
+    <code>
+      $ tar xvf Parser.tar
+    </code>
+  </li>
+  <li>
+    directory is created<br>  
+    Check the contents of the directory<br>
+    <code>
+      $ cd jParser
+      $ ls -FC
+      jParser.sh* jar/    license.txt resource/
+    </code>
+    <table>
+      <tbody>
+        <tr>
+          <th>jParser.sh</th>
+          <td>executable file</td>
+        </tr>
+        <tr>
+          <th>jar/</th>
+          <td>directory which includes class-library of Java (DO NOT change)</td>
+        </tr>
+        <tr>
+          <th>license.txt</th>
+          <td>End-user license agreement (DO NOT change)</td>
+        </tr>
+        <tr>
+          <th>resources/</th>
+          <td>directory which includes resource files (DO NOT change)</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    Change the file jParser.sh according to your system environment.
+    <pre>
+      <code>
+#!/bin/sh
 
-    ```
-    $ gunzip Parser.tar.gz
-    ```
+# Parser installed directory
+PARSER_DIR=./
 
-  - 3\. Extract the file tar command
+# Set maximum Java heap size
+HEAP_SIZE=128m
 
-    ```
-    $ tar xvf Parser.tar
-    ```
+# Parser's resource files(qual.list, ... *.list) path
+# Don't change.
+RESOURCE_FILE_PATH=$PARSER_DIR/resource
 
-  - 4\. directory is created  
-    Check the contents of the directory
+# Parser's main class
+# Don't change.
+PARSER=tsunami.util.excel.ExcelParser
 
-    ```
-    $ cd jParser
-    $ ls -FC
-    jParser.sh* jar/    license.txt resource/
-    ```
+# Execution Command
+# Don't change.
+java -Xmx$HEAP_SIZE -classpath $PARSER_DIR/jar/jParser.jar
+-DPARSER_RESOURCE_PATH=$RESOURCE_FILE_PATH $PARSER -Cclean $@
 
-    | ----------- | -------------------------------------------------------------- |
-    | jParser.sh  | executable file                                                |
-    | jar/        | directory which includes class-library of Java (DO NOT change) |
-    | license.txt | End-user license agreement (DO NOT change)                     |
-    | resources/  | directory which includes resource files (DO NOT change)        |
+RETVAL=$?
 
-  - 5\. Change the file jParser.sh according to your system environment.
-
-    ```
-    #!/bin/sh
-
-    # Parser installed directory
-    PARSER_DIR=./
-
-    # Set maximum Java heap size
-    HEAP_SIZE=128m
-
-    # Parser's resource files(qual.list, ... *.list) path
-    # Don't change.
-    RESOURCE_FILE_PATH=$PARSER_DIR/resource
-
-    # Parser's main class
-    # Don't change.
-    PARSER=tsunami.util.excel.ExcelParser
-
-    # Execution Command
-    # Don't change.
-    java -Xmx$HEAP_SIZE -classpath $PARSER_DIR/jar/jParser.jar
-    -DPARSER_RESOURCE_PATH=$RESOURCE_FILE_PATH $PARSER -Cclean $@
-
-    RETVAL=$?
-
-    exit $RETVAL
-    #EOF
-    ```
-
-\[PARSER\_DIR parameter\]  
-: Enter the full path name of jParser directory.
-ex) PARSER\_DIR=/home/mass/jParser
-
-\[HEAP\_SIZE parameter\]  
-: Enter the maximum memory of jParser.
-ex) HEAP\_SIZE=128m
-
-  - 6\. Set PATH  
-    Set PATH the directory which includes jParser.sh.
+exit $RETVAL
+#EOF
+      </code>
+    </pre>
+    <dl>
+      <dt>[PARSER\_DIR parameter\]</dt>  
+      <dd>Enter the full path name of jParser directory.</dd>
+      <dd>ex) PARSER\_DIR=/home/mass/jParser</dd>
+      <dt>[HEAP\_SIZE parameter\]</dt> 
+      <dd>Enter the maximum memory of jParser.</dd>
+      <dd>ex) HEAP\_SIZE=128m</dd>
+    </dl>
+  </li>
+  <li>
+  Set PATH<br>  
+  Set PATH the directory which includes jParser.sh.
+  </li>
+</ol>
 
 ## Execution
 
@@ -94,7 +116,7 @@ $ jParser.sh -xsample.ann -ssample.fasta
 ```
 
 You can specify locations of files in both ways, relative and full path names.  
-<span class="bold">macOS: Regarding the available file names</span>  
+**macOS: Regarding the available file names** 
 DO NOT use multibyte character(s) for any file or folder name of [Sequence file](/ddbj/file-format-e.html#sequence) or [Annotation file](/ddbj/file-format-e.html#annotation) when you use our tools on some versions of macOS. Tools may not work when multibyte character is included in the file or folder name.
 
 \-x\[<span class="font-br font-normal">annotation file name</span>\]  
