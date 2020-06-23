@@ -1,4 +1,6 @@
 <figure class="image">
-  <img src="{{ site.baseurl }}/assets/images/{{ include.url }}" alt="{{ include.caption }}">
-  <figcaption>{{ include.caption }}</figcaption>
+  <a class="group1" href="{{ site.baseurl }}/assets/images/{{ include.url }}" title="{{ include.caption }}">
+    <img src="{{ site.baseurl }}/assets/images/{{ include.url }}" alt="{{ include.caption }}" style="width: 200px; height: 200px;">
+    <figcaption>{{ include.caption }}</figcaption>
+  </a>
 </figure>
