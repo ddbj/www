@@ -25,8 +25,8 @@ Log2 fold-change といった計算値は往々にして一つ以上のアッセ
 (例えば全ての遺伝子について3つのノックアウトサンプルに対して3つの野生型コントロールサンプルの平均値を計算した場合)。このケースでは各カラムにセミコロンで区切った複数の
 assay name を記載します。
 
-| **Hybridization REF** | <span class="blue">Hyb1;Hyb2;Hyb3</span> | <span class="blue">Hyb4;Hyb5;Hyb6</span> |
-| **Reporter REF**      | <span class="blue">log2 FC</span>        | <span class="blue">log2 FC</span>        |
+| **Hybridization REF** | Hyb1;Hyb2;Hyb3 | Hyb4;Hyb5;Hyb6 |
+| **Reporter REF**      | log2 FC        | log2 FC        |
 
 **データカラムの順番:**
 
@@ -34,13 +34,13 @@ assay name を記載します。
 
 Correct
 
-| **Hybridization REF** | <span class="blue">Hyb1</span>    | <span class="blue">Hyb1</span>   | <span class="red">Hyb2</span>     | <span class="red">Hyb2</span>    |
-| **Reporter REF**      | <span class="blue">log2 FC</span> | <span class="red">p-value</span> | <span class="blue">log2 FC</span> | <span class="red">p-value</span> |
+| **Hybridization REF** | Hyb1    | Hyb1   | Hyb2     | Hyb2    |
+| **Reporter REF**      | log2 FC | p-value | log2 FC | p-value |
 
 Wrong
 
-| **Hybridization REF** | <span class="blue">Hyb1</span>    | <span class="red">Hyb2</span>     | <span class="blue">Hyb1</span>   | <span class="red">Hyb2</span>    |
-| **Reporter REF**      | <span class="blue">log2 FC</span> | <span class="blue">log2 FC</span> | <span class="red">p-value</span> | <span class="red">p-value</span> |
+| **Hybridization REF** | Hyb1    | Hyb2     | Hyb1   | Hyb2    |
+| **Reporter REF**      | log2 FC | log2 FC | p-value | p-value |
 
 ### Affymetrix 以外の data matrix の例
 
@@ -60,8 +60,8 @@ SDRF 中の Assay Name カラム:
 
 Non-Affymetrix data matrix:
 
-| **Hybridization REF** | <span class="blue">Sample 1:Cy3;Sample 2:Cy3</span> | <span class="blue">Sample 3:Cy3;Sample 4:Cy3</span> |
-| **Reporter REF**      | <span class="blue">log2 ratio</span>                | <span class="blue">log2 ratio</span>                |
+| **Hybridization REF** | Sample 1:Cy3;Sample 2:Cy3 | Sample 3:Cy3;Sample 4:Cy3 |
+| **Reporter REF**      | log2 ratio                | log2 ratio                |
 | **A_42_P834147**      | 4.2                     | 2.6                       |
 | **A_43_P19480**       | 1.9                     | 1.3                       |
 | **A_42_P495989**      | 5.3                     | 9.8                       |
@@ -84,8 +84,8 @@ Assay Name nodes in SDRF:
 
 Affymetrix data matrix:
 
-| **Hybridization REF**    | <span class="blue">Sample 1:biotin</span> | <span class="blue">Sample 1:biotin</span> | <span class="blue">Sample 2:biotin</span> | <span class="blue">Sample 2:biotin</span> |
-| **CompositeElement REF** | <span class="blue">CELIntensity</span>    | <span class="blue">CELStdev</span>        | <span class="blue">CELIntensity</span>    | <span class="blue">CELStdev</span>        |
+| **Hybridization REF**    | Sample 1:biotin | Sample 1:biotin | Sample 2:biotin | Sample 2:biotin |
+| **CompositeElement REF** | CELIntensity    | CELStdev        | CELIntensity    | CELStdev        |
 | **AFFX_ThrX-M_at**      | 142.1                | 2.6                  | 199.1                | 6.5                  |
 | **20050_at**            | 70.4                 | 1.3                  | 88.3                 | 4.7                  |
 | **20051_at**            | 227.3                | 9.8                  | 213.2                | 3.5                  |

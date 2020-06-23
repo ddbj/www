@@ -5,6 +5,8 @@ pathname: example
 category: flatfile
 ---
 
+登録の例としてご利用下さい。
+
 ## A: Ribosomal RNA, ITS, IGS
 
 ### A01) 16S rRNA gene

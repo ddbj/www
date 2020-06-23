@@ -2,14 +2,13 @@
 layout: indexed_content
 title: Controlled vocabulary for /country qualifier
 pathname: country
-www.ddbj.nig.ac.jp/pdf/ddbj/country.pdf
 category: tentative
 ---
 
 The original site; [Controlled vocabulary for /country qualifier](//www.insdc.org/documents/country-qualifier-vocabulary) 2020.01.08 version
 
-A new qualifier was introduced in version 2.1 (December 15, 1998) of the Feature table definitions: /country. 
-This new qualifier is used to indicate the country of origin of a DNA sample. 
+A new qualifier was introduced in version 2.1 (December 15, 1998) of the Feature table definitions: /country.<br>This new qualifier is used to indicate the country of origin of a DNA sample. 
+
 The text below outlines the format and the present list of allowed countries. 
 
 ## Defiition of /country qualifier

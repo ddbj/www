@@ -184,8 +184,7 @@ t=terminator
 &emsp; Type: int  
 &emsp; Example: 275  
 
-[CLIP_VECTOR_RIGHT](#CLIP_VECTOR_RIGHT) はベクター配列に基づきクリップされるべきリードの終わりの部分です。非ベクター配列の最後の塩基の位置で示します 項目はほとんど全ての[STRATEGY](#STRATEGY) と [TRACE_TYPE_CODE](#TRACE_TYPE_CODE) の組み合わせで必須です。   この情報は [INSERT_FLANK_RIGHT](#INSERT_FLANK_RIGHT) が記載されている場合，もしくは，[TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=PCR or RT-PCR の場合には省略できます。  
-注意: 多くのセンターではベクター配列解析と信頼性評価を一緒に行っており，１セットのクリップ情報しかない場合がありま の場合は[CLIP_VECTOR_LEFT](#CLIP_VECTOR_LEFT)と[CLIP_VECTOR_RIGHT](#CLIP_VECTOR_RIGHT) に値を記入します。
+[CLIP_VECTOR_RIGHT](#CLIP_VECTOR_RIGHT) はベクター配列に基づきクリップされるべきリードの終わりの部分です。非ベクター配列の最後の塩基の位置で示します 項目はほとんど全ての[STRATEGY](#STRATEGY) と [TRACE_TYPE_CODE](#TRACE_TYPE_CODE) の組み合わせで必須です。<br>この情報は [INSERT_FLANK_RIGHT](#INSERT_FLANK_RIGHT) が記載されている場合，もしくは，[TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=PCR or RT-PCR の場合には省略できます。<br>注意: 多くのセンターではベクター配列解析と信頼性評価を一緒に行っており，１セットのクリップ情報しかない場合がありま の場合は[CLIP_VECTOR_LEFT](#CLIP_VECTOR_LEFT)と[CLIP_VECTOR_RIGHT](#CLIP_VECTOR_RIGHT) に値を記入します。
 
 <!-- end list -->
 
@@ -730,7 +729,8 @@ trace ファイルが quality score を含んでいない場合，quality score 
 &emsp; Type: int  
 &emsp; Example: 29829  
 
-この項目には[REFERENCE_ACCESSION](#REFERENCE_ACCESSION)の accession.versionで指定されたリシークエンスされた領域全体の終了位置を記入します。スタートを (０ではなく) １とした塩基対座標で記入します。REFERENCE_ACC_[MIN|MAX] と REFERENCE_SET_[MIN|MAX]のセットは同じ REFERENCE_ACC を参照する必要があります。
+この項目には[REFERENCE_ACCESSION](#REFERENCE_ACCESSION)の accession.versionで指定されたリシークエンスされた領域全体の終了位置を記入します。スタートを (０ではなく) １とした塩基対座標で記入します。
+REFERENCE_ACC_[MIN|MAX] と REFERENCE_SET_[MIN|MAX]のセットは同じ REFERENCE_ACC を参照する必要があります。
 
 <!-- end list -->
 
@@ -740,7 +740,8 @@ trace ファイルが quality score を含んでいない場合，quality score 
 &emsp; Type: int  
 &emsp; Example: 29829  
 
-この項目には[REFERENCE_ACCESSION](#REFERENCE_ACCESSION)の accession.versionで指定されたリシークエンスされた領域全体の開始位置を記入します。ス を (０ではなく) １とした塩基対座標で記入します。REFERENCE_ACC_[MIN|MAX] と REFERENCE_SET_[MIN|MAX]のセットは同じ REFERENCE_ACC を参照する必要があります。
+この項目には[REFERENCE_ACCESSION](#REFERENCE_ACCESSION)の accession.versionで指定されたリシークエンスされた領域全体の開始位置を記入します。
+スタート を (０ではなく) １とした塩基対座標で記入します。REFERENCE_ACC_[MIN|MAX] と REFERENCE_SET_[MIN|MAX]のセットは同じ REFERENCE_ACC を参照する必要があります。
 
 <!-- end list -->
 
@@ -802,7 +803,7 @@ trace ファイルが quality score を含んでいない場合，quality score 
 
 シークエンスに用いられた M13/PUC ベースのクローンに対してセンターが独自に付けた ID を記入します。この ID で trace を ligation event でまとめることができるようになります。  
 次の [STRATEGY](#STRATEGY) と [TRACE_TYPE_CODE](#TRACE_TYPE_CODE) の組み合わせで必須です:  
-[STRATEGY](#STRATEGY)=Any;[TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=SHOTGUN   [STRATEGY](#STRATEGY)=Any;[TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=WGS/WCS
+[STRATEGY](#STRATEGY)=Any;[TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=SHOTGUN   <br>[STRATEGY](#STRATEGY)=Any;[TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=WGS/WCS
 
 <!-- end list -->
 
@@ -828,7 +829,7 @@ trace ファイルが quality score を含んでいない場合，quality score 
 &emsp; Type: varchar(100)  
 &emsp; Example: Homo sapiens  
 
-[SPECIES_CODE](#SPECIES_CODE)は分類学上の生物種名でリードを分類するのに使われます。この項目はコントロールされています。Trace Archive に含まれている生物種名のリスト:[http://www.ncbi.nlm.nih.gov/Traces/trace.cgi?cmd=stat&f=xml_list_species&m=obtain&s=species](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi?cmd=stat&f=xml_list_species&m=obtain&s=species)リストに含まれていない生物を登録する場合は，データを投稿する前に DDBJ Trace Archive に連絡します。trace が由来する生物を分類できない場合は，環境サンプルには 'ENVIRONMENTAL SEQUENCE' を人工物には 'ARTIFICIAL SEQUENCE' を使用することができます。
+[SPECIES_CODE](#SPECIES_CODE)は分類学上の生物種名でリードを分類するのに使われます。この項目はコントロールされています。<br>Trace Archive に含まれている生物種名のリスト:[http://www.ncbi.nlm.nih.gov/Traces/trace.cgi?cmd=stat&f=xml_list_species&m=obtain&s=species](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi?cmd=stat&f=xml_list_species&m=obtain&s=species)リストに含まれていない生物を登録する場合は，データを投稿する前に DDBJ Trace Archive に連絡します。trace が由来する生物を分類できない場合は，環境サンプルには 'ENVIRONMENTAL SEQUENCE' を人工物には 'ARTIFICIAL SEQUENCE' を使用することができます。
 
 <!-- end list -->
 

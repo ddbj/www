@@ -145,7 +145,7 @@ category: flatfile
 | Glx          | Z                     | Glutamic acid or Glutamine  |
 | Xaa          | X                     | Any amino acid              |
 | Xle          | J                     | Leucine or Isoleucine       |
-| TERM         |         空白          | termination codon           |
+| TERM         |                   | termination codon           |
 
 [参考文献]
 

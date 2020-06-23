@@ -92,7 +92,7 @@ Experimental Factor Type として使っています。
 <!-- end list -->
 
 [登録者のミドルネーム (公開されます)。](#Person_Mid_Initials)<a name="Person_Mid_Initials"></a>
-:
+: <p></p>
 <!-- end list -->
 
 [Person Affiliation](#Person_Affiliation)<a name="Person_Affiliation"></a>
@@ -154,7 +154,7 @@ experiment で[必須 protocol セット](https://docs.google.com/spreadsheets/d
 
 <!-- end list -->
 
-[rotocol Description](#Protocol_Description)<a name="Protocol_Description"></a>
+[Protocol Description](#Protocol_Description)<a name="Protocol_Description"></a>
 : プロトコールをフリーテキストで記述します。このテキストはタブで区切られた１フィールド内に収めます。
 
 <!-- end list -->
