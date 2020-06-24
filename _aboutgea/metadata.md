@@ -14,7 +14,9 @@ MicroArray Gene Expression Tabular
 といったデータベース間でデータを交換する用途にも使えるように設計されています。[MAGE-TAB
 の仕様書](http://fged.org/projects/mage-tab/)
 
+{::nomarkdown}
 {% include image.html url="magetab/magetab_over.jpg" caption="IDF，SDRF，ADFと生データファイル，解析処理されたデータファイル間の関係" %}
+{:/}
 
 ## IDF
 
@@ -185,7 +187,9 @@ SDRF (Sample and Data Relationship Format)
 のマイクロアレイ実験ではSDRF１行が１ハイブリダイゼーションに対応します。Two-channel
 マイクロアレイでは１行は１チャンネルに対応します。シークエンシング実験では１行は基本的に１生データファイル（Run、ペアードシークエンスを含む）に対応します。
 
+{::nomarkdown}
 {% include image.html url="magetab/sdrf.jpg" caption="SDRF の全体構造" %}
+{:/}
 
 ### SDRF セクション
 

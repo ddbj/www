@@ -170,13 +170,15 @@ KIPO が保持する特許データの多くが，DDBJ からの公開に至っ�
 以下に特許公報番号検索，アミノ酸配列データ検索を行う際の getentry での画面指定条件の留意点を示した。  
 特許公報番号の検索では，図1の様に「ID指定」のプルダウンメニューから [Patent Retrieval Number] を選択して，特許公報番号を入力ボックスに記載して検索を行う必要がある。
 
-{:.size-optimize}
+{::nomarkdown}
 {% include image.html url="ddbj/column_09.jpg" caption="図1：特許公報番号検索の getentry 指定条件" %}
+{:/}
 
 アミノ酸配列データを検索する際には，Protein データベースの Patent のラジオボタンにチェックを入れる必要がある。
 
-{:.size-optimize}
+{::nomarkdown}
 {% include image.html url="ddbj/column_10.jpg" caption="図2：アミノ酸配列データ検索の getentry 指定条件" %}
+{:/}
 
 #### 2-2）ARSA (All-round Retrieval of Sequence and Annotation)
 
@@ -204,8 +206,9 @@ KIPO が保持する特許データの多くが，DDBJ からの公開に至っ�
 
 JPO の特許 FF で，公開番号は図3の黄色で示しているKEYWORDS行，JOURNAL行，COMMENT PN 行の3か所に記載される。特許公開公報を検索するためには，KEYWORDS 行，JOURNAL 行，COMMENT PN 行のいずれかの行から，公開番号を取得する必要がある。
 
-{:.size-optimize}
+{::nomarkdown}
 {% include image.html url="ddbj/column_11.jpg" caption="図3：特許 FF の公報番号記載箇所（抜粋）" %}
+{:/}
 
 公開番号は，以下のフォーマットで記載される。公開番号の先頭の JP は，国内公報および公表公報由来データに記載され，国際公表由来のデータには WO が記載される。基本的に公開番号の後ろには ”-A” が記載され，特許公開公報由来であることを示す。また配列番号は，同一公報由来の各配列に塩基配列，アミノ酸配列の順に連番で記載される。
 
@@ -222,8 +225,9 @@ JOURNAL行：
 特許 FF から公開番号を取得した後に特許公開公報の内容を確認する方法の一つとして，IPDL での検索方法を紹介したい。IPDL の「特許・実用新案検索」の画面から，「特許・実用新案公報 DB」をクリックすると図4の画面となる。  
 文献種別では A，文献番号に公開番号を入力する。文献番号に入力する公開番号は，最初の4桁の数字の後ろにハイフンを入力する必要がある。文献番号照会ボタンを押すと，該当する特許公開公報を確認することができ，最大12の公開番号の検索を行うことが可能である。
 
-{:.size-optimize}
+{::nomarkdown}
 {% include image.html url="ddbj/column_12.jpg" caption="図4：IPDL の特許・実用新案公報 DB 検索画面 (IPDL より画面引用)" %}
+{:/}
 
 検索結果は“文献番号の選択画面”，“特許公開公報の参照画面”，“特許公開公報に記載される図の参照画面”で表示される。また検索した特許公開公報の公開後の審査状況を確認するためは，特許公開公報の参照画面で，経過情報のボタンを押すことで審査状況を参照することができる。
 
@@ -269,8 +273,9 @@ JPO データの FF は，他データバンクから公開されている [欧�
 JPO データの FF 構造と各項目の記載内容について，塩基配列データと記載内容の対応関係を図1で示し，6つの部分に分けて解説した。  
 公開公報のフロントページに記載される出願基本情報は，③REFERENCE 情報および ④COMMENT 情報を参照することで，把握が可能である。アミノ酸配列データについては，各項目で解説した。
 
-{: .size-optimize}
+{::nomarkdown}
 {% include image.html url="ddbj/column_18.jpg" caption="図1：JPO 塩基配列データの FF と記載内容の対応関係　（画像クリックで拡大）" %}
+{:/}
 
 1.  LOCUS 行- KEYWORDS 行
     :  
@@ -288,7 +293,9 @@ JPO データの FF 構造と各項目の記載内容について，塩基配列
     : 
     アミノ酸配列データの LOCUS 行は塩基配列データと記載内容が異なるため，図2にアミノ酸配列データの LOCUS 行の例を示した。
 
-    <figure class="size-optimize"><a href="{{ site.baseurl }}/assets/images/ddbj/column_14.jpg"><img src="{{ site.baseurl }}/assets/images/ddbj/column_14.jpg" alt="アミノ酸配列データの LOCUS 行(例)"></a><figcaption>図2：アミノ酸配列データの LOCUS 行(例)</figcaption></figure>
+    {::nomarkdown}
+    <a class="group1 cboxElement"><figure class="size-optimize"><a href="{{ site.baseurl }}/assets/images/ddbj/column_14.jpg"><img src="{{ site.baseurl }}/assets/images/ddbj/column_14.jpg" alt="アミノ酸配列データの LOCUS 行(例)"></a><figcaption>図2：アミノ酸配列データの LOCUS 行(例)</figcaption></figure></a>
+    {:/}
 
     [DEFINITION 行]  
     : 発明タイトルが記載される。REFERENCE の TITLE 行と同じ内容が記載される。
@@ -395,13 +402,15 @@ EPO の塩基配列データは EMBL-Bank/EBI，USPTO の塩基配列データ�
 
 EPO の塩基配列データでは，JPO データの様に出願番号や出願日などの出願情報について多くは反映されていない。しかし JPO データでは COMMENT の FT 行で記載される feature 情報が，source feature 以外にも記載される。CDS が記載される場合は，図4の様に翻訳されたアミノ酸配列と /protein\_id も記載される。図4は，DDBJ のエントリー検索ツールである getentry で，EPO の塩基配列データを検索した内容を示した。
 
-{:.size-optimize}
+{::nomarkdown}
 {% include image.html url="ddbj/column_16.jpg" caption="図4：EPO 塩基配列データFF (例: HC000669)　（画像クリックで拡大）" %}
+{:/}
 
 USPTO の塩基配列データでは，生物情報は Unknown で記載され，source feature には /db\_xref による Taxonomy ID の付与も行われない。発明タイトル，発明者，出願人，公開番号，公開日，配列で FF が構築され，JPO データと比べると出願内容に関する情報が少ない。図5は DDBJ で USPTO データを検索した内容となるが，GenBank/NCBI 側での公開データでは公開番号にハイパーリンクが設定され，公開公報が参照できる様になっている。図5は getentry で，USPTO の塩基配列データを検索した内容を示した。
 
-{:.size-optimize}
+{::nomarkdown}
 {% include image.html url="ddbj/column_17.jpg" caption="図5：USPTO 塩基配列データ FF における表示内容 (例: GX000001)　（画像クリックで拡大）" %}
+{:/}
 
 ### 4\. 最後に
 
@@ -414,9 +423,9 @@ USPTO の塩基配列データでは，生物情報は Unknown で記載され�
 DDBJ では、日本特許庁(JPO)データの公開フラットファイル(FF) について、COMMENT 部分に記載される内容の改良を行った。塩基配列データの新フォーマットはDDBJ release 90.0 から、JPO の全データが新フォーマットに対応している(図1参照)。アミノ酸配列データにおいては、2012年9月公開のJPO アミノ酸蓄積ファイルより、全データが新フォーマットで提供を行っている(図2参照)。  
 今回のコラムでは、JPO データの新フォーマットの特徴を紹介したい。
 
-![]({{ site.baseurl }}/assets/images/ddbj/Fig1rev.jpg){: .float-left}
+[![]({{ site.baseurl }}/assets/images/ddbj/Fig1rev.jpg)]({{ site.baseurl }}/assets/images/ddbj/Fig1rev.jpg){: .float-left .group1}
 
-![]({{ site.baseurl }}/assets/images/ddbj/Fig2rev.jpg){: .float-right}
+[![]({{ site.baseurl }}/assets/images/ddbj/Fig2rev.jpg)]({{ site.baseurl }}/assets/images/ddbj/Fig2rev.jpg){: .float-right .group1}
 
 {: .float-release}
 ### 2\. COMMENT 部分の新フォーマット
@@ -426,15 +435,17 @@ DDBJ では、日本特許庁(JPO)データの公開フラットファイル(FF)
 JPO データは公開公報のフロントページに記載される出願基本情報に関わる内容が記載され、公開公報を参照しなくてもFF だけで特許基本情報が把握できる特徴がある。  
 しかしFF の各部分に出願基本情報に関わる内容が記載されるため、必要な情報がFFのどの部分に記載されているのか理解しておく必要があった。特に出願人名はREFERENCE 部分のJOURNAL 行のみに記載され、FF 構造を理解していないと出願人情報を取得するのが難しかった(図3参照)。
 
-{:.size-optimize}
+{::nomarkdown}
 {% include image.html url="ddbj/Ref.jpg" caption="図3: REFERENCE 部分の出願人記載箇所" %}
+{:/}
 
 #### 2-2：
 
 新フォーマットではCOMMENT 部分に出願基本情報に関わる内容を全て記載し、COMMENT 部分を参照しただけで出願基本情報を把握できる様に改良を行った(図4参照)。
 
+{::nomarkdown}
 {% include image.html url="ddbj/RevC.jpg" caption="図4: COMMENT 部分の新フォーマットと各行の説明" %}
-
+{:/}
 
 新フォーマットでは、出願人名が記載されるPA 行、発明タイトルが記載されるPT 行、出願人指定の配列番号を記載したPS 行の追加を行った(表1参照)。
 
@@ -460,7 +471,9 @@ JPO データは公開公報のフロントページに記載される出願基�
 出願人は配列をJPO へ提出する際に、WIPO ST.25 という [ガイドライン](//www.jpo.go.jp/shiryou/kijun/kijun2/pdf/tjkijun_vii-2-furoku3.pdf "tjkijun_vii-2-furoku3.pdf") に従い配列表を作成する。  
 配列表では1 から始まる通し番号の配列番号を、出願人が各配列に付与している。出願内容に複数の配列が含まれる場合、配列番号は塩基配列、アミノ酸配列の順序は考慮されずに記載される。そのためJPO ではDDBJ に配列データを送る際に、塩基配列、アミノ酸配列の順に入れ替えを行い、配列番号を振り直している(表2参照)。
 
+{::nomarkdown}
 {% include image.html url="ddbj/PS.jpg" caption="表2: 配列表とFF での配列番号の対応" %}
+{:/}
 
 JPO 記載の配列番号は公開番号とともに、DEFINITION 行、KEYWORDS 行、COMMENT 部分のPN 行、REFERENCE 部分のJOURNAL 行に記載される。  
 国内公報および公表公報由来データの公開番号には先頭にJP、国際公報由来のデータにはWO が記載され、公開番号の後ろには"-A" が記載される(表3参照)。

@@ -43,8 +43,6 @@ category: aboutdra
 {% include image.html url="books/sra_object.png" caption="データモデル" %}
 {:/}
 
-<a class="group1" href="https://125naroom.com/demo/img/itukanokotonokoto01.jpg" title="Photo 1"><img src="https://125naroom.com/demo/img/itukanokotonokoto01.jpg.pagespeed.ce.bwmEHPPaF_.jpg" alt="Photo 1" width="1200" height="680"></a>
-
 ### オブジェクトの構成例
 
 登録者は実際のデータにあわせて柔軟にオブジェクトを構成することができます。
@@ -56,24 +54,31 @@ category: aboutdra
 
 #### 最もシンプルなケース <a name="ex_simple"></a>
 
+{::nomarkdown}
 {% include image.html url="submission/obj_ex1.jpg" caption="最もシンプルなケース" %}
+{:/}
 
 #### 三つの菌株の比較ゲノム解析 (ペアエンド) <a name="ex_samples"></a>
 
 ペアリードファイルは同じ Run に含めます。
 
+{::nomarkdown}
 {% include image.html url="submission/obj_ex2.jpg" caption="三つの菌株の比較ゲノム解析 (ペアエンド)" %}
+{:/}
 
 #### (Technical, Biological) replicate がある場合 (ペアエンド) <a name="ex_replicates"></a>
 
 [関連する FAQ: 塩基配列登録にはいくつのサンプルが必要ですか?](/faq/ja/index.html#samples-for-sra)
 
-{% include image.html url="submission/obj_exreplicate.jpg" caption="(Technical, Biological) replicate がある場合
-(ペアエンド)" %}
+{::nomarkdown}
+{% include image.html url="submission/obj_exreplicate.jpg" caption="(Technical, Biological) replicate がある場合　(ペアエンド)" %}
+{:/}
 
 #### 関連するデータが別々の論文に発表される場合 <a name="ex_submissions"></a>
 
+{::nomarkdown}
 {% include image.html url="submission/obj_ex3.jpg" caption="関連するデータが別々の論文に発表される場合" %}
+{:/}
 
 メタデータ各項目の説明
 
@@ -920,22 +925,22 @@ DRA への登録 ～データの転送 (Windows)～
   - **User name:** (D-way の Login ID を入力)
   - **Password:** (空欄のまま)
 
-![]({{ site.baseurl }}/assets/images/books/winscp1_400.jpg "秘密鍵の登録１")
+[![秘密鍵の登録１]({{ site.baseurl }}/assets/images/books/winscp1_400.jpg "秘密鍵の登録１")]({{ site.baseurl }}/assets/images/books/winscp1_400.jpg "秘密鍵の選択１"){:.group1}
 
 "Authentication" にある "Private key file" で、事前に作成した PuTTY 形式の秘密鍵を選択します。
 
-![]({{ site.baseurl }}/assets/images/books/winscp2_400.jpg "秘密鍵の登録２")
+[![秘密鍵の登録2]({{ site.baseurl }}/assets/images/books/winscp2_400.jpg "秘密鍵の登録2")]({{ site.baseurl }}/assets/images/books/winscp2_400.jpg "秘密鍵の選択2"){:.group1}
 
 最後に、下中央にある [Login] をクリックします。
 
-![]({{ site.baseurl }}/assets/images/books/winscp3_400.jpg "winSCPへのログイン")
+[![winSCPへのログイン]({{ site.baseurl }}/assets/images/books/winscp3_400.jpg "winSCPへのログイン")]({{ site.baseurl }}/assets/images/books/winscp3_400.jpg "winSCPへのログイン"){:.group1}
 
 初回接続時には警告メッセージが表示されますが、“はい” を選択してください
 (次回から表示されません)。次の画面では、鍵を作成した際に指定したパスフレーズを入力します。
 
 ログインに成功すると、左側のウィンドウにユーザの PC のフォルダ、右側のウィンドウにデータ受付サーバの登録者専用ディレクトリが表示されます。 左側ウィンドウでファイルを選択し右側ウィンドウへドラッグ＆ドロップし、サーバへファイルを転送します。
 
-![]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg "ファイルの転送")
+[![ファイルの転送]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg "ファイルの転送")]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg "ファイルの転送"){:.group1}
 
 転送したファイルは、ファイルを選択し [削除] ボタンをクリックすることで削除できます。
 
@@ -949,11 +954,11 @@ DRA への登録 ～データの転送 (Mac)～
 
 トップ画面で “Open Connection” を選択します。
 
-![]({{ site.baseurl }}/assets/images/books/Cyberduck_1.jpg "open_connection")
+[![open_connection]({{ site.baseurl }}/assets/images/books/Cyberduck_1.jpg "open_connection")]({{ site.baseurl }}/assets/images/books/Cyberduck_1.jpg "open_connection"){:.group1}
 
 使用する転送方式で “SFTP (SSH File Transfer Protocol)” を選択します。
 
-![]({{ site.baseurl }}/assets/images/books/Cyberduck_2.jpg "SFTP")
+[![SFTP]({{ site.baseurl }}/assets/images/books/Cyberduck_2.jpg "SFTP")]({{ site.baseurl }}/assets/images/books/Cyberduck_2.jpg "SFTP"){:.group1}
 
 Cyberduck の起動画面で、以下のように設定し More Options の “Use Public Key
 Authentication” をチェックします。
@@ -964,18 +969,20 @@ Authentication” をチェックします。
   - **Password:** (空欄のまま)
   - **Add to Keychain:** (チェックを入れる)
 
-![]({{ site.baseurl }}/assets/images/books/Cyberduck_3.jpg "key_authentication")
+[![key_authentication]({{ site.baseurl }}/assets/images/books/Cyberduck_3.jpg "key_authentication")]({{ site.baseurl }}/assets/images/books/Cyberduck_3.jpg "key_authentication"){:.group1}
+
 
 秘密鍵 (private key) はデフォルトで “ユーザのホームフォルダ .ssh フォルダ (Finder からは見えない隠しフォルダ) > id_rsa” に保存されています。
 
-![]({{ site.baseurl }}/assets/images/books/Cyberduck_4.jpg "private_key")
+[![private_key]({{ site.baseurl }}/assets/images/books/Cyberduck_4.jpg "private_key")]({{ site.baseurl }}/assets/images/books/Cyberduck_4.jpg "private_key"){:.group1}
+
 
 初回接続時には警告メッセージが表示されますが “常に” を選択してください (次回から表示されません)。
 
 ログインに成功すると、データ受付サーバの登録者専用ディレクトリが表示されます。登録者の PC
 にあるファイルを選択しウィンドウにドラッグ＆ドロップすることで、ファイルをサーバに転送します。
 
-![]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg "transfer")
+[![transfer]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg "transfer")]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg "transfer"){:.group1}
 
 <div class="attention red">
 ftp-private.ddbj.nig.ac.jp サーバに秘密鍵を使って ssh でログインすることができます。
@@ -1302,8 +1309,9 @@ BioSample を Experiment から参照する場合、以下のように記載し�
     ```
 4. チェックした XML をアップロードします。Submission、Experiment、Run、Analysis (任意) の XML ファイルを選択し、同時にアップロードします。
     アップロードされた XML について「SRA xsd に対する妥当性」と「オブジェクト間の関係性」がチェックされます。エラーが発生した場合はファイルを修正してください。
-    ![作成した XML のアップロード]({{ site.baseurl }}/assets/images/books/hdra-xmlupload.jpg
-    "作成した XML のアップロード")
+
+    [![作成した XML のアップロード]({{ site.baseurl }}/assets/images/books/hdra-xmlupload.jpg "作成した XML のアップロード")]({{ site.baseurl }}/assets/images/books/hdra-xmlupload.jpg "作成した XML のアップロード"){:.group1}
+
 
 ### XML でのメタデータ編集方法
 
@@ -1312,7 +1320,7 @@ BioSample を Experiment から参照する場合、以下のように記載し�
 
 1. [メタデータ作成ツールでメタデータを作成し、投稿します。](#create-metadata-using-tool)
 2. "metadata_submitted" になった登録の Submission、Experiment、Run、Analysis (任意) を XML ファイルとしてダウンロードします。
-    [![ツールで作成したメタデータを XML としてダウンロード]({{ site.baseurl }}/assets/images/books/hdra-xmldownload.jpg "ツールで作成したメタデータを XML としてダウンロード")]({{ site.baseurl }}/assets/images/books/hdra-xmldownload.jpg "ツールで作成したメタデータを XML としてダウンロード")
+    [![ツールで作成したメタデータを XML としてダウンロード]({{ site.baseurl }}/assets/images/books/hdra-xmldownload.jpg "ツールで作成したメタデータを XML としてダウンロード")]({{ site.baseurl }}/assets/images/books/hdra-xmldownload.jpg "ツールで作成したメタデータを XML としてダウンロード"){:.group1}
 3. XML を編集します。ファイル中のリードの構成を記載する SPOT_DESCRIPTOR
   については[記入例]({{ site.url }}{{ site.baseurl }}/aboutdra/example.html)を参考にしてください。 その他の項目については、[DRA XML schema](https://github.com/ddbj/pub/tree/master/docs/dra) 中の説明を参照してください。
 4. アクセッション番号が未発行の BioProject と BioSample を  Experiment から参照する場合、以下のように記載します。
@@ -1340,8 +1348,7 @@ BioSample を Experiment から参照する場合、以下のように記載し�
     ```
 6. 編集した XML をアップロードします。Submission、Experiment、Run、Analysis (任意) の XML ファイルを選択し、同時にアップロードします。
   アップロードされた XML について「SRA xsd に対する妥当性」と「オブジェクト間の関係性」がチェックされます。エラーが発生した場合はファイルを修正してください。
-  ![編集した XML のアップロード]({{ site.baseurl }}/assets/images/books/hdra-xmlupload.jpg
-  "編集した XML のアップロード")
+  [![編集した XML のアップロード]({{ site.baseurl }}/assets/images/books/hdra-xmlupload.jpg "編集した XML のアップロード")]({{ site.baseurl }}/assets/images/books/hdra-xmlupload.jpg "編集した XML のアップロード"){:.group1}
 
 ### データファイルの検証
 
@@ -1472,7 +1479,8 @@ DRA ファイルサーバに存在する fastq ファイル一覧:
 
 公開予定日は最長で4年後まで指定でき、繰り返し更新することができます。Hold Date の [Change] をクリックし、公開予定日変更ページに移動し、予定日を変更します。
 
-![]({{ site.baseurl }}/assets/images/books/hdra-hold.jpg "公開予定日の変更")
+[![公開予定日の変更]({{ site.baseurl }}/assets/images/books/hdra-hold.jpg "公開予定日の変更")]({{ site.baseurl }}/assets/images/books/hdra-hold.jpg "公開予定日の変更"){:.group1}
+
 
 データを即日公開する場合は "Release Now" をクリックします。作業した日の深夜に公開処理が実施され、[ftp にデータファイルが公開](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/)され、数日以内に [DRA 検索システム](http://ddbj.nig.ac.jp/DRASearch)にインデックスされます。
 
@@ -1546,12 +1554,12 @@ B636E0063E29709B6082F324C76D0911 file2
 をインストールし、起動します。  
 まず、 "md5" にチェックを入れてください。
 
-![]({{ site.baseurl }}/assets/images/books/Fsum1.jpg "md5 を選択")
+[![md5 を選択]({{ site.baseurl }}/assets/images/books/Fsum1.jpg "md5 を選択")]({{ site.baseurl }}/assets/images/books/Fsum1.jpg "md5 を選択"){:.group1}
 
 [+] ボタンをクリックし、必要なシークエンスデータファイルを開いてください。同時に複数のファイルを選択することが可能です。
 
-![]({{ site.baseurl }}/assets/images/books/Fsum2.jpg "シークエンスデータファイルを選択")
+[![シークエンスデータファイルを選択]({{ site.baseurl }}/assets/images/books/Fsum2.jpg "シークエンスデータファイルを選択")]({{ site.baseurl }}/assets/images/books/Fsum2.jpg "シークエンスデータファイルを選択"){:.group1}
 
 最後に、[Calculate hashes] ボタンをクリックしてください。各ファイルの MD5 値が表示されます。[Export] ボタンから、MD5 値の一覧表 (.html, .csv, .xml) を作成することができます。
 
-![]({{ site.baseurl }}/assets/images/books/Fsum3.jpg "MD5 値の計算を開始")
+[![MD5 値の計算を開始]({{ site.baseurl }}/assets/images/books/Fsum3.jpg "MD5 値の計算を開始")]({{ site.baseurl }}/assets/images/books/Fsum3.jpg "MD5 値の計算を開始"){:.group1}

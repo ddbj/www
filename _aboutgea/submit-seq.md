@@ -20,15 +20,11 @@ category: aboutgea
 
   - 研究プロジェクトの内容
 
-#### [BioSample](/biosample/submission.html)
-
-![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
+#### [BioSample](/biosample/submission.html) ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
 
   - 実験データを得るのに使われた生物学的、物理的にユニークなサンプル
 
-#### [DRA](/dra/submission.html)
-
-![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
+#### [DRA](/dra/submission.html) ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
 
   - 生シークエンスリードとアライメント
 
@@ -59,9 +55,7 @@ category: aboutgea
   - [IDF (Investigation Description Format)](/gea/metadata.html#idf)
     ファイルで実験デザイン、プロトコールや文献情報といった実験全体を記述します
 
-#### SDRF
-
-![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
+#### SDRF ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
 
   - [SDRF (Sample and Data RelationshipFormat)](/gea/metadata.html#sdrf)
     ファイルでサンプル属性とサンプル、アレイ、データファイル間の関係性を記述します
@@ -100,7 +94,6 @@ DDBJ センターから登録者に問い合わせた後三か月以上回答が
 {::nomarkdown}
 {% include image.html url="books/array-sub1.jpg" caption="Sequencing experiment submissionの新規作成" %}
 {:/}
-
 
 登録のステータスには以下のものがあります。"Data Validated" と "Validation Error" になった登録が査定されます。
 
@@ -188,22 +181,22 @@ DRA への登録 ～データの転送 (Windows)～
   - <span class="bold">User name: </span> (D-way の Login ID を入力)
   - <span class="bold">Password: </span> (空欄のまま)
 
-![]({{ site.baseurl }}/assets/images/books/winscp1_400.jpg "秘密鍵の登録１")
+[![]({{ site.baseurl }}/assets/images/books/winscp1_400.jpg)]({{ site.baseurl }}/assets/images/books/winscp1_400.jpg  "秘密鍵の登録１"){:.group1}
 
 "Authentication" にある "Private key file" で、事前に作成した PuTTY 形式の秘密鍵を選択します。
 
-![]({{ site.baseurl }}/assets/images/books/winscp2_400.jpg "秘密鍵の登録２")
+[![]({{ site.baseurl }}/assets/images/books/winscp2_400.jpg)]({{ site.baseurl }}/assets/images/books/winscp2_400.jpg  "秘密鍵の登録2"){:.group1}
 
 最後に、下中央にある \[Login\] をクリックします。
 
-![]({{ site.baseurl }}/assets/images/books/winscp3_400.jpg "winSCPへのログイン")
+[![]({{ site.baseurl }}/assets/images/books/winscp3_400.jpg)]({{ site.baseurl }}/assets/images/books/winscp3_400.jpg  "winSCPへのログイン"){:.group1}
 
 初回接続時には警告メッセージが表示されますが、 "はい" を選択してください (次回から表示されません)。次の画面では、鍵を作成した際に指定したパスフレーズを入力します。
 
 ログインに成功すると、左側のウィンドウにユーザの PC のフォルダ、右側のウィンドウにデータ受付サーバの登録者専用ディレクトリが表示されます。
 左側ウィンドウでファイルを選択し右側ウィンドウへドラッグ＆ドロップし、サーバへファイルを転送します。
 
-![]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg "ファイルの転送")
+[![]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg)]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg  "ファイルの転送"){:.group1}
 
 転送したファイルは、ファイルを選択し \[削除\] ボタンをクリックすることで削除できます。
 
@@ -219,11 +212,11 @@ DRA への登録 ～データの転送 (Mac)～
 
 トップ画面で "Open Connection" を選択します。
 
-![]({{ site.baseurl }}/assets/images/books/Cyberduck_1.jpg "open_connection")
+[![]({{ site.baseurl }}/assets/images/books/Cyberduck_1.jpg)]({{ site.baseurl }}/assets/images/books/Cyberduck_1.jpg  "open_connection"){:.group1}
 
 使用する転送方式で "SFTP (SSH File Transfer Protocol)" を選択します。
 
-![]({{ site.baseurl }}/assets/images/books/Cyberduck_2.jpg "SFTP")
+[![]({{ site.baseurl }}/assets/images/books/Cyberduck_2.jpg)]({{ site.baseurl }}/assets/images/books/Cyberduck_2.jpg  "SFTP"){:.group1}
 
 Cyberduck の起動画面で、以下のように設定し More Options の "Use Public Key Authentication" をチェックします。
 
@@ -233,17 +226,17 @@ Cyberduck の起動画面で、以下のように設定し More Options の "Use
   - <span class="bold">Password:</span> (空欄のまま)
   - <span class="bold">Add to Keychain:</span> (チェックを入れる)
 
-![]({{ site.baseurl }}/assets/images/books/Cyberduck_3.jpg "key_authentication")
+[![]({{ site.baseurl }}/assets/images/books/Cyberduck_3.jpg)]({{ site.baseurl }}/assets/images/books/Cyberduck_3.jpg  "key_authentication"){:.group1}
 
 秘密鍵 (private key) はデフォルトで "ユーザのホームフォルダ .ssh フォルダ (Finderからは見えない隠しフォルダ) \>id\_rsa" に保存されています。
 
-![]({{ site.baseurl }}/assets/images/books/Cyberduck_4.jpg "private_key")
+[![]({{ site.baseurl }}/assets/images/books/Cyberduck_4.jpg)]({{ site.baseurl }}/assets/images/books/Cyberduck_4.jpg  "private_key"){:.group1}
 
 初回接続時には警告メッセージが表示されますが "常に" を選択してください (次回から表示されません)。
 
 ログインに成功すると、データ受付サーバの登録者専用ディレクトリが表示されます。登録者の PC にあるファイルを選択しウィンドウにドラッグ＆ドロップすることで、ファイルをサーバに転送します。
 
-![]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg "transfer")
+[![]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg)]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg  "transfer"){:.group1}
 
 <div class="attention red">
 ftp-private.ddbj.nig.ac.jp サーバに秘密鍵を使って ssh でログインすることができます。
@@ -461,12 +454,13 @@ B636E0063E29709B6082F324C76D0911 file2
 [Fsum Frontend(http://sourceforge.net/projects/fsumfe/)](http://sourceforge.net/projects/fsumfe/) をインストールし、起動します。  
 まず、 "md5" にチェックを入れてください。
 
-![]({{ site.baseurl }}/assets/images/books/Fsum1.jpg "md5 を選択")
+[![]({{ site.baseurl }}/assets/images/books/Fsum1.jpg)]({{ site.baseurl }}/assets/images/books/Fsum1.jpg  "md5 を選択"){:.group1}
 
 \[+\] ボタンをクリックし、必要なシークエンスデータファイルを開いてください。同時に複数のファイルを選択することが可能です。
 
-![]({{ site.baseurl }}/assets/images/books/Fsum2.jpg "シークエンスデータファイルを選択")
+[![]({{ site.baseurl }}/assets/images/books/Fsum2.jpg)]({{ site.baseurl }}/assets/images/books/Fsum2.jpg  "シークエンスデータファイルを選択"){:.group1}
 
 最後に、\[Calculate hashes\] ボタンをクリックしてください。各ファイルの MD5 値が表示されます。\[Export\] ボタンから、MD5 値の一覧表 (.html, .csv, .xml) を作成することができます。
 
-![]({{ site.baseurl }}/assets/images/books/Fsum3.jpg "MD5 値の計算を開始")
+[![]({{ site.baseurl }}/assets/images/books/Fsum3.jpg)]({{ site.baseurl }}/assets/images/books/Fsum3.jpg  "MD5 値の計算を開始"){:.group1}
+

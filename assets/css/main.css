@@ -344,6 +344,8 @@ input, textarea, select, button {
     vertical-align: middle; }
   .md-content a[href^="http://ddbj.nig.ac.jp"]:after {
     display: none; }
+  .md-content .group1 {
+    text-decoration: none; }
   .md-content img {
     width: 100%; }
   .md-content .size-optimize img {
