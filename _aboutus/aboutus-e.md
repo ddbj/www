@@ -5,15 +5,8 @@ pathname: aboutus-e
 category: _aboutus
 ---
 
-DDBJ Center collects nucleotide sequence data as a member of [INSDC
-(International Nucleotide Sequence Database
-Collaboration)](http://www.insdc.org/) and provides freely available
-nucleotide sequence data and supercomputer system, to support research
-activities in life science.
+DDBJ Center collects nucleotide sequence data as a member of [INSDC(International Nucleotide Sequence Database Collaboration)](http://www.insdc.org/) and provides freely available nucleotide sequence data and supercomputer system, to support research　activities in life science.
 
-　
-
-<div class="section chapter">
 
 ## Mission
 
@@ -42,11 +35,7 @@ in life sciences but also human welfare in general. The database is, so
 to speak, a common treasure of human beings. With this in mind, we make
 the database online accessible to anyone in the world.
 
-</div>
 
-　
-
-<div class="section chapter">
 
 ## Governing Structure
 
@@ -63,15 +52,10 @@ Committee](/insdc-e.html#iac).
 
 [A list of current staff of DDBJ.](/staff-e.html)
 
-</div>
 
-　
-
-<div class="section chapter">
 
 ## Major Activities
 
-<div class="section section">
 
 ### Construction and Operation of INSDC
 
@@ -111,9 +95,7 @@ Refer to:
     Priority](/policies-e.html#ownership)
   - [Patent column from DDBJ](/column/patent-e.html)
 
-</div>
 
-<div class="section section">
 
 ### Management and operation of the National Institute of Genetics Supercomputer System
 
@@ -124,9 +106,6 @@ primary focus. The system provides Supercomputing System Services
 comprising leading-edge, large-scale cluster-type computers, large-scale
 memory-sharing computers, and high-capacity, high-speed disk devices.
 
-</div>
-
-<div class="section section">
 
 ### Providing services to search and to analyze biological data
 
@@ -142,9 +121,7 @@ site](download-e.html).
 We provide software tools for data analyses developed by DDBJ and others
 through [web services](/services-e.html) or on NIG Supercomputer.
 
-</div>
 
-<div class="section section">
 
 ### Training course and publication
 
@@ -157,138 +134,19 @@ We announce [the latest information for DDBJ
 activities](/news/en/index-e.html).  
 See also [our publications](/activities/publications.html).
 
-</div>
 
-</div>
 
-　
-
-<div class="section chapter">
-
-## History
-
-<div class="history">
-
-  - 1980
-  - EMBL data library was organized, and asked international cooperation
-    for nucleotide sequence data bank to Japan.
-
-</div>
-
-<div class="history">
-
-  - 1982
-  - EMBL and GenBank started international cooperation, and invited
-    Japan to participate their data bank.
-
-</div>
-
-<div class="history">
-
-  - 1983
-  - Aimed at contribution for international data bank to collect, to
-    evaluate and to provide nucleotide sequence data, trial data loading
-    was started.
-
-</div>
-
-<div class="history">
-
-  - 1984
-  - NIG; the National Institute of Genetics was reorganized as an
-    Inter-University Research Institute.  
-    DDBJ began to work at NIG.
-
-</div>
-
-<div class="history">
-
-  - 1986
-  - DNA Database Advisory Committee organized.
-
-</div>
-
-<div class="history">
-
-  - 1987
-  - DDBJ release 1 was provided.  
-    By this release, we regard this year as official start of DDBJ
-    operation.
-
-</div>
-
-<div class="history">
-
-  - 1995.04
-  - To operate DDBJ more efficiently, CIB; the Center for Information
-    Biology was established in NIG.
-
-</div>
-
-<div class="history">
-
-  - 2001.04
-  - CIB was reorganized as CIB-DDBJ; the Center for Information Biology
-    and DNA Data Bank of Japan
-
-</div>
-
-<div class="history">
-
-  - 2004.04
-  - NIG was reorganized as a member of [ROIS; Research Organization of
-    Information and Systems](https://www.rois.ac.jp/). DDBJ has also
-    belonged to ROIS.
-
-</div>
-
-<div class="history">
-
-  - 2005.05
-  - DDBJ, EMBL-Bank and GenBank agreed to call their collaboration
-    INSDC; International Nucleotide Sequence Database Collaboration; and
-    to call the unified nucleotide sequence database INSD; the
-    International Nucleotide Sequence Database.
-
-</div>
-
-<div class="history">
-
-  - 2007.04
-  - [DBCLS; Database Center for Life
-    Science](http://dbcls.rois.ac.jp/en/) was newly founded in ROIS
-
-</div>
-
-<div class="history">
-
-  - 2009
-  - DDBJ faculty staff have greatly been reshuffled. DDBJ collaborates
-    with DBCLS more closely.  
-    INSDC added a collaborative meeting to deal with huge sequence data
-    produced by the next generation sequencers (Sequence Read Archive)
-    and traces produced by traditional sequencers (Trace Archive).
-
-</div>
-
-<div class="history">
-
-  - 2012.04
-  - DDBJ, expanding its DNA databank activities, was restructured as one
-    of the Intellectual Infrastructure Project Centers of NIG, being
-    separated from CIB.
-
-</div>
-
-<div class="history">
-
-  - 2013.10
-  - Collaborating with [NBDC; National Bioscience Database
-    Center](https://biosciencedbc.jp/en/), DDBJ Center started to
-    operate the archive for all types of individual-level genetic and
-    de-identified phenotypic data from human subjects,
-    [JGA](/jga/index-e.html); Japanese Genotype-phenotype Archive.
-
-</div>
-
-</div>
+| 1980 | EMBL data library was organized, and asked international cooperation for nucleotide sequence data bank to Japan. |
+| 1982 | EMBL and GenBank started international cooperation, and invited Japan to participate their data bank. |
+| 1983 | Aimed at contribution for international data bank to collect, to evaluate and to provide nucleotide sequence data, trial data loading was started. |
+| 1984 | NIG; the National Institute of Genetics was reorganized as an Inter-University Research Institute.<br>DDBJ began to work at NIG. |
+| 1986 | DNA Database Advisory Committee organized. |
+| 1987 | DDBJ release 1 was provided.<br>By this release, we regard this year as official start of DDBJ operation. |
+| 1995.04 | To operate DDBJ more efficiently, CIB; the Center for Information Biology was established in NIG. |
+| 2001.04 | CIB was reorganized as CIB-DDBJ; the Center for Information Biology and DNA Data Bank of Japan |
+| 2004.04 | NIG was reorganized as a member of [ROIS; Research Organization of Information and Systems](https://www.rois.ac.jp/). DDBJ has also belonged to ROIS. |
+| 2005.05 | DDBJ, EMBL-Bank and GenBank agreed to call their collaboration INSDC; International Nucleotide Sequence Database Collaboration; and to call the unified nucleotide sequence database INSD; the International Nucleotide Sequence Database. |
+| 2007.04 | [DBCLS; Database Center for Life Science](http://dbcls.rois.ac.jp/en/) was newly founded in ROIS |
+| 2009 | DDBJ faculty staff have greatly been reshuffled. DDBJ collaborates with DBCLS more closely.<br>INSDC added a collaborative meeting to deal with huge sequence data produced by the next generation sequencers (Sequence Read Archive)and traces produced by traditional sequencers (Trace Archive). |
+| 2012.04 | DDBJ, expanding its DNA databank activities, was restructud as one of the Intellectual Infrastructure Project Centers of NIG, being separated from CIB. |
+| 2013.10 | Collaborating with [NBDC; National Bioscience Database Center](https://biosciencedbc.jp/en/), DJ Center started to operate the archive for all types of individual-level genetic and de-identified phenotypic data from human subjects, [JGA](/jga/index-e.html); Japanese Genotype-phenotype Archive. 

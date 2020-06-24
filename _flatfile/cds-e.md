@@ -3,219 +3,29 @@ layout: indexed_content
 title: Protein Coding Sequence; CDS feature
 pathname: cds-e
 category: flatfile
+related_pages:
+  - title: DDBJ flat file format
+    url: /ddbj/flat-file-e.html
+  - title: Feature Key
+    url: /ddbj/features-e.html
+  - title: Qualifier key
+    url: /ddbj/qualifiers-e.html
+  - title: Organism qualifier
+    url: /ddbj/organism-e.html
+  - title: Description of Location
+    url: /ddbj/location-e.html
+  - title: The Genetic Codes
+    url: /ddbj/geneticcode-e.html
+  - title: Codes Used in Sequence Description
+    url: /ddbj/code-e.html
+  - title: Example of Submission
+    url: /ddbj/example-e.html
 ---
 
-<div id="page" class="top">
 
-<div id="header" class="clearfix">
-
-<div id="header-top">
-
-[![](/images/parts/ddbj-logo-white.svg)](/index-e.html "DNA Data Bank of Japan")
-
-<div id="header-top-left">
-
-<span class="resources-btn">Services**</span>
-
-</div>
-
-<div id="header-top-right">
-
-  - [Login & Submit](https://ddbj.nig.ac.jp/D-way)
-  - [Policies and Disclaimers](/policies-e.html)
-  - [Contact](/contact-e.html)
-  - [Japanese](/ddbj/cds.html)
-
-</div>
-
-</div>
-
-<div class="resources-contents">
-
-<div class="boxContainer">
-
-<div class="resources-box">
-
-  - ### ![](/images/logos/service-org.svg)Search
-
-  - [getentry](http://getentry.ddbj.nig.ac.jp/top-e.html "Retrieve sequence records by accession numbers")
-
-  - [ARSA](http://ddbj.nig.ac.jp/arsa/ "Retrieve sequence and annotation by keywords")
-
-  - [DRA
-    Search](http://ddbj.nig.ac.jp/DRASearch "Search and retrieve sequencing data.")
-
-  - [TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en "Search unified taxonomy database")
-
-  - [BLAST](http://blast.ddbj.nig.ac.jp/blastn?lang=en "Search nucleotide sequences by sequence similarity")
-
-<!-- end list -->
-
-  - ### ![](/images/logos/wrench.svg)Analysis
-
-  - [Vector Screening
-    System](http://ddbj.nig.ac.jp/vecscreen/ "Screen vector sequences")
-
-  - [ClustalW](http://clustalw.ddbj.nig.ac.jp/index.php?lang=en "Multiple alignment and tree-making")
-
-  - [WABI (Web API for
-    Biology)](/search/help/wabi/wabi-e.html "Web API for using the search services of DDB")
-
-  - [DDBJ FTP
-    Site](ftp://ftp.ddbj.nig.ac.jp/ "Download public data by ftp")
-
-</div>
-
-<div class="resources-box">
-
-  - ### ![](/images/logos/database-org.svg)Databases
-
-  - [Annotated/Assembled Sequences
-    (DDBJ)](/ddbj/index-e.html "Annotated/Assembled Sequences (DDBJ)")
-
-  - [Sequence Read Archive
-    (DRA)](/dra/index-e.html "Sequence Read Archive")
-
-  - [Genomic Expression Archive
-    (GEA)](/gea/index-e.html "Genomic Expression Archive")
-
-  - [BioProject](/bioproject/index-e.html "BioProject")
-
-  - [BioSample](/biosample/index-e.html "BioSample")
-
-  - [Japanese Genotype-phenotype Archive
-    (JGA)](/jga/index-e.html "Japanese Genotype-phenotype Archive")
-
-  - [Submission portal
-    D-way](https://ddbj.nig.ac.jp/D-way "Submission portal D-way")
-
-<!-- end list -->
-
-  - ### ![](/images/logos/sc-org.svg)NIG SuperComputer
-
-  - [NIG
-    SuperComputer](https://sc.ddbj.nig.ac.jp/en "NIG SuperComputer")
-
-</div>
-
-<div class="resources-box dbcls">
-
-  - ### ![](/images/logos/dbcls-s.svg)DBCLS Services
-
-  - [AOE](http://aoe.dbcls.jp/en "Statistics and trends of gene expression data")
-
-  - [CRISPRdirect](https://crispr.dbcls.jp/ "Designing CRISPR/Cas9 guide RNA with reduced off-target sites")
-
-  - [DBCLS
-    SRA](http://sra.dbcls.jp/ "Statistics and trends of SRA data")
-
-  - [Gendoo](http://gendoo.dbcls.jp/ "Functional profiling of gene and disease features for omics analysis")
-
-  - [GGGenome](https://gggenome.dbcls.jp/en/ "A ultrafast sequence search")
-
-  - [GGRNA](https://ggrna.dbcls.jp/en/ "A Google-like, ultrafast search engine for genes and transcripts")
-
-  - [RefEx](http://refex.dbcls.jp/index.php?lang=en "A web tool for a comfortable search of reference data for gene expression analysis")
-
-</div>
-
-</div>
-
-</div>
-
-<div id="header-middle" class="clearfix">
-
-<div class="page-title">
-
-[DDBJ Annotated/Assembled Sequences](/ddbj/index-e.html)
-
-</div>
-
-<div class="search-box">
-
-<div id="search-box-flex">
-
-<div class="search-options-wrapper">
-
-BI-DDBJ Web Sites Annotated/Assembled Sequences Sequence Read Archive
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div id="header-bottom">
-
-  - [Home](/ddbj/index-e.html)
-  - [Submission![](/images/parts/arrow_down.svg)](/ddbj/submission-e.html)
-      - [Before Submission](submission-e.html)
-      - [Web submission](websub-e.html)
-      - [Mass submission](mss-e.html)
-      - [Data Update](updt-e.html)
-  - [Search![](/images/parts/arrow_down.svg)](http://ddbj.nig.ac.jp/arsa/?lang=en)
-      - [getentry](http://getentry.ddbj.nig.ac.jp/top-e.html)
-      - [ARSA](http://ddbj.nig.ac.jp/arsa/?lang=en)
-  - [Flat File![](/images/parts/arrow_down.svg)](/ddbj/flat-file-e.html)
-      - [Feature key](/ddbj/features-e.html)
-      - [Qualifier key](/ddbj/qualifiers-e.html)
-      - [Organism qualifier](/ddbj/organism-e.html)
-      - [Description of Location](/ddbj/location-e.html)
-      - [Protein Coding Sequence](/ddbj/cds-e.html)
-      - [The Genetic Codes](/ddbj/geneticcode-e.html)
-      - [Codes Used in Sequence Description](/ddbj/code-e.html)
-      - [Example of Submission](/ddbj/example-e.html)
-  - [Data
-    Categories![](/images/parts/arrow_down.svg)](/ddbj/data-categories-e.html)
-      - [Data Submission from Genome Project](/ddbj/genome-e.html)
-      - [WGS](/ddbj/wgs-e.html)
-      - [CON](/ddbj/con-e.html)
-      - [GSS](/ddbj/gss-e.html)
-      - [HTG](/ddbj/htg-e.html)
-      - [Submission of environmental
-        sequences](/ddbj/environmental-e.html)
-      - [ENV](/ddbj/env-e.html)
-      - [TLS](/ddbj/tls-e.html)
-      - [Data Submission from Transcriptome
-        Project](/ddbj/transcriptome-e.html)
-      - [TSA](/ddbj/tsa-e.html)
-      - [EST](/ddbj/est-e.html)
-      - [HTC](/ddbj/htc-e.html)
-      - [Third Party Data (TPA)](/ddbj/tpa-e.html)
-  - [FAQ](/ddbj/faq-e.html)
-  - [Other![](/images/parts/arrow_down.svg)](/)
-      - [Patent](/ddbj/pat-data-e.html)
-      - [MGA](/ddbj/mga-e.html)
-
-</div>
-
-</div>
-
-<div id="main" class="clearfix">
-
-<div id="breadcrumb" class="clearfix">
-
-  - [HOME](/ddbj/index-e.html "DDBJ Annotated/Assembled Sequences top page")
-  - \>
-  - [DDBJ flat file format](/ddbj/flat-file-e.html)
-  - \>
-  - Protein Coding Sequence; CDS feature
-
-</div>
-
-<div id="primary">
-
-<div id="page_main">
 
 # Protein Coding Sequence; CDS feature
 
-<div class="section book">
-
-　
-
-<div class="section chapter">
 
 ## Outline
 
@@ -224,10 +34,10 @@ sequence for protein. The location of CDS feature basically indicates
 the base range(s) from the start point of initiation codon to the end
 point termination codon location. CDS feature indicates the amino acid
 translation with codon table (indicated by
-[transl\_table](/ddbj/qualifiers-e.html#transl_table) qualifier) of the
+[transl_table](/ddbj/qualifiers-e.html#transl_table) qualifier) of the
 source organism and the description of the frame
-[codon\_start](/ddbj/qualifiers-e.html#codon_start) and
-[transl\_except](/ddbj/qualifiers-e.html#transl_except), on the basis of
+[codon_start](/ddbj/qualifiers-e.html#codon_start) and
+[transl_except](/ddbj/qualifiers-e.html#transl_except), on the basis of
 the information provided from submitter (In the case of setting the
 qualifier, [pseudo](/ddbj/qualifiers-e.html#pseudo) or
 [pseudogene](/ddbj/qualifiers-e.html#pseudogene), translation is NOT
@@ -249,11 +59,9 @@ other gene(s) or not is judged by submitters, entirely. In principle,
 the information about motif and higher-order structure of protein is NOT
 described on the flat file.
 
-</div>
 
 　
 
-<div class="section chapter">
 
 ## Gene nomenclature at DDBJ
 
@@ -285,48 +93,37 @@ though they have no binding force to submitters;
 For user's convenience to refer contents of database, DDBJ recommends to
 describe the names of gene and product as follows;
 
-  - [gene](/ddbj/qualifiers-e.html#gene): symbol of the gene
-    corresponding to a sequence region  
-    Example: ilvE
-    Notices:
-      - Please enter the abbreviation as gene symbol.
-      - Even if there are multiple general abbreviations for the same
-        gene, do not enter multiple abbreviations in 'gene'.  
-        Do not use needless symbolic letters as delimiter for multiple
-        names. If you would like to describe more than two, please enter
-        one of the most representative abbreviation in 'gene', and
-        other(s) in
-        [gene\_synonym](/ddbj/qualifiers-e.html#gene_synonym) qualifier.
-  - [product](/ddbj/qualifiers-e.html#product): name of the product
-    associated with the feature, e.g. the polypeptide of a CDS  
-    Example: trypsinogen
-    Notices:
-      - In principle, please enter a general name, not abbreviation.
-      - Do not include the organism name.
-      - Even if there are multiple general names for the same product,
-        do not enter multiple names in 'product'.  
-        Do not use needless symbolic letters as delimiter for multiple
-        names.  
-        If you would like to describe more than two names, please enter
-        one of the most representative name in 'product',and other(s) in
-        '[note](/ddbj/qualifiers-e.html#note)' qualifier.
-      - If the name and function are not known, we recommend to describe
-        as "hypothetical protein".
-    Though we recognize that there are many exceptions in which the gene
-    nomenclature of some model organisms do not fall into the above
-    rule, we recommend the above rule, because we wish to make contents
-    of DDBJ/ENA/GenBank as useful as possible.
-    Please do not hesitate to contact us when you like to update the
-    informnation of protein in your entry after once submitted to DDBJ.
-    See also the page, [Data Updates/Correction: after getting your
-    accession number](/ddbj/updt-e.html), when you like to update your
-    data.
+[gene](/ddbj/qualifiers-e.html#gene): symbol of the gene corresponding to a sequence region  
+: Example: ilvE
+: Notices:
+  - Please enter the abbreviation as gene symbol.
+  - Even if there are multiple general abbreviations for the same
+    gene, do not enter multiple abbreviations in 'gene'.  
+    Do not use needless symbolic letters as delimiter for multiple
+    names. If you would like to describe more than two, please enter
+    one of the most representative abbreviation in 'gene', and
+    other(s) in
+    [gene_synonym](/ddbj/qualifiers-e.html#gene_synonym) qualifier.
+[product](/ddbj/qualifiers-e.html#product): name of the product associated with the feature, e.g. the polypeptide of a CDS  
+: Example: trypsinogen
+: Notices:
+  - In principle, please enter a general name, not abbreviation.
+  - Do not include the organism name.
+  - Even if there are multiple general names for the same product,
+    do not enter multiple names in 'product'.  
+    Do not use needless symbolic letters as delimiter for multiple
+    names.  
+    If you would like to describe more than two names, please enter
+    one of the most representative name in 'product',and other(s) in
+    '[note](/ddbj/qualifiers-e.html#note)' qualifier.
+  - If the name and function are not known, we recommend to describe as "hypothetical protein".
+  - It is recommended to comply with [the international protein nomenclature guidelines](https://www.ncbi.nlm.nih.gov/genome/doc/internatprot_nomenguide/).
+: Though we recognize that there are many exceptions in which the gene nomenclature of some model organisms do not fall into the above rule, we recommend the above rule, because we wish to make contents of DDBJ/ENA/GenBank as useful as possible.
+: Please do not hesitate to contact us when you like to update the informnation of protein in your entry after once submitted to DDBJ. See also the page, [Data Updates/Correction: after getting your accession number](/ddbj/updt-e.html), when you like to update your data.
 
-</div>
 
 　
 
-<div class="section chapter">
 
 ## How to describe CDS feature, when termination codon is found in the range
 
@@ -337,9 +134,9 @@ specified.
   - Location of CDS feature (See also [Description of
     Location](/ddbj/location-e.html))
   - [The Genetic Codes](/ddbj/geneticcode-e.html) in
-    [transl\_table](/ddbj/qualifiers-e.html#transl_table)
-  - [codon\_start](/ddbj/qualifiers-e.html#codon_start)(See also [Offset
-    of the translation initiation by codon\_start frame](#frame))
+    [transl_table](/ddbj/qualifiers-e.html#transl_table)
+  - [codon_start](/ddbj/qualifiers-e.html#codon_start)(See also [Offset
+    of the translation initiation by codon_start frame](#frame))
 
 If all of above items are correct and termination codon is still found
 in the range of CDS feature, it should be processed by either of
@@ -360,116 +157,101 @@ following ways, in principle.
 
 <!-- end list -->
 
-  - a) Putative nonsense mutation, frameshift caused by uncertain
-    reason, or on the process of diversity increasing related to
-    acquired immunity for IgG etc.  
-    In case of low accuracy of sequencing, use this solution, in
-    principle.
-    Describe with [misc\_feature](/ddbj/features-e.html#misc_feature),
-    not CDS.
-    Because it is not sure if the corresponding protein exist or not.  
-    Describe referred information in
-    [inference](/ddbj/qualifiers-e.html#inference) qualifier.  
-    Describe a short explanation in [note](/ddbj/qualifiers-e.html#note)
-    qualifier; "putative frameshift mutation", "Ig rearrangement", "TCR
-    beta rearrangement" or else.
-  - b) considered pseudogene  
-    If you have not yet confirmed any collateral evidence to identify a
-    pseugdogene (i.e. relationship of orthologues and paralogues in
-    other species, missing any corresponding transcript, or some), you
-    shuold not call it pseudogene.
-    Describe original CDS location with
-    [pseudogene](/ddbj/qualifiers-e.html#pseudogene) qualifier.
-    When you use pseudogene qualifier,
-    [translation](/ddbj/qualifiers.html#translation) is not described
-    for the CDS feature, because the corresponding protein would not
-    exist in vivo.
-      - Describe referred information in
-        [inference](/ddbj/qualifiers-e.html#inference) qualifier.
-      - Describe a short explanation in
-        [note](/ddbj/qualifiers-e.html#note) qualifier like as
-        "pseudogene of \[protein name\]".
-      - About controlled values of
-        [pseudogene](/ddbj/qualifiers-e.html#pseudogene) qualifier, see
-        [Controlled vocabulary for /pseudogene
-        qualifier](/ddbj/pseudogene-e.html).
-      - Since there is no protein product for the CDS feature, do NOT
-        describe [product](/ddbj/qualifiers.html#product) qualifier, in
-        principle.
-    See also [Example of Submission B06](/ddbj/example-e.html#B06).
-  - c) In case that you assume that the truncated protein exists in
-    vivo  
-    Describe CDS location corresponding to the truncated protein.  
-    i.e. The CDS location should be shortened.
-  - d) ribosomal slippage  
-    Adjust CDS location with "join" operator at the point of ribosomal
-    slippage.
-    In case of + 1 frameshift at the 90th base
-    ``` code flat-file
-         CDS             join(21..90,90..449)
-    ```
-    In case of - 1 frameshift at the 91st base
-    ``` code flat-file
-         CDS             join(21..90,92..451)
-    ```
-    Then, add
-    [ribosomal\_slippage](/ddbj/qualifiers-e.html#ribosomal_slippage)
-    qualifier as a flag to indicate the adjustment is legal.  
-    After this adjustment of location, the amino acid sequence in
-    [translation](/ddbj/qualifiers-e.html#translation) qualifier is
-    conceptually translated one.
-    See also [Example of Submission B10](/ddbj/example-e.html#B10).
-    On submission via Nucleotide Sequence Submission System, please use
-    "Submission Information" box to tell us the ribosomal slippage in
-    detail.
-  - e) RNA editing  
-    Basically, it should be described for genome annotation.
-    Describe original CDS location with
-    [exception](/ddbj/qualifiers-e.html#exception) qualifier
-    qualifier.  
-    When the exception qualifier is described, amino acid sequence for
-    translation qualifier can be provided by submitter. So, you can use
-    the amino acid sequence confirmed via cDNA or some for the CDS
-    feature on the genomic sequence.  
-    Describe referred information in
+a) Putative nonsense mutation, frameshift caused by uncertain reason, or on the process of diversity increasing related to acquired immunity for IgG etc.<a name="stop_a"></a>  
+: <span class="red">In case of low accuracy of sequencing, use this solution, in principle.</span>  
+: Describe with [misc_feature](/ddbj/features-e.html#misc_feature), not CDS.
+: Because it is not sure if the corresponding protein exist or not.  
+Describe referred information in
+[inference](/ddbj/qualifiers-e.html#inference) qualifier.  
+Describe a short explanation in [note](/ddbj/qualifiers-e.html#note)
+qualifier; "putative frameshift mutation", "Ig rearrangement", "TCR
+beta rearrangement" or else.
+
+b) considered pseudogene<a name="stop_b"></a>  
+: <span class="red">If you have not yet confirmed any collateral evidence to identify a pseugdogene (i.e. relationship of orthologues and paralogues in other species, missing any corresponding transcript, or some), you shuold not call it pseudogene.</span>  
+: Describe original CDS location with
+[pseudogene](/ddbj/qualifiers-e.html#pseudogene) qualifier.
+: When you use pseudogene qualifier,
+[translation](/ddbj/qualifiers.html#translation) is not described
+for the CDS feature, because the corresponding protein would not
+exist in vivo.
+: 
+  - Describe referred information in
     [inference](/ddbj/qualifiers-e.html#inference) qualifier.
-    See also [Example of Submission B09](/ddbj/example.html#B09).
-    On submission via Nucleotide Sequence Submission System, please use
-    "Submission Information" box to tell us translational exceptions in
-    detail.
-  - f) translated with selenocystein or pyrrolysine  
-    Describe original CDS location with
-    [transl\_except](/ddbj/qualifiers-e.html#transl_except) qualifier.
-    For example;
-    <div class="news_post_container glossary">
-    |                                       |                                                                                      |
-    | ------------------------------------- | ------------------------------------------------------------------------------------ |
-    | /transl\_except=(pos:213..215,aa:Sec) | \# To use "U" (one letter abbreviation for selenocystein) for amino acid translation |
-    | /transl\_except=(pos:213..215,aa:Pyl) | \# To use "O" (one letter abbreviation for pyrrolysine) for amino acid translation   |
-    </div>
-  - g) gene disruption by transpon insertion etc.  
-    Describe with [misc\_feature](/ddbj/features-e.html#misc_feature),
-    not CDS.
-  - h) low accuracy of draft sequences from genome or transcriptome
-    project  
-    To avoid the point of frameshift, adjust CDS location with "join"
-    operator, operatively, to make amino acid sequence with conceptual
-    translation.  
-    Add
-    [artificial\_location](/ddbj/qualifiers-e.html#artificial_location)
-    qualifier as a flag to indicate the operative adjustment.
-    For submissions via Nucleotide Sequence Submission System, it is
-    forbidden to use artificial\_location qualifier.
+  - Describe a short explanation in
+    [note](/ddbj/qualifiers-e.html#note) qualifier like as
+    "pseudogene of [protein name]".
+  - About controlled values of
+    [pseudogene](/ddbj/qualifiers-e.html#pseudogene) qualifier, see
+    [Controlled vocabulary for /pseudogene
+    qualifier](/ddbj/pseudogene-e.html).
+  - Since there is no protein product for the CDS feature, do NOT
+    describe [product](/ddbj/qualifiers.html#product) qualifier, in
+    principle.
+: See also [Example of Submission B06](/ddbj/example-e.html#B06).
 
-</div>
+c) In case that you assume that the truncated protein exists in vivo<a name="stop_c"></a>  
+: Describe CDS location corresponding to the truncated protein.  
+i.e. The CDS location should be shortened.
 
-<div class="section chapter">
+d) ribosomal slippage<a name="stop_d"></a>  
+: Adjust CDS location with "join" operator at the point of ribosomal
+slippage.
+: In case of + 1 frameshift at the 90th base
+```
+      CDS             join(21..90,90..449)
+```
+: In case of - 1 frameshift at the 91st base
+```
+      CDS             join(21..90,92..451)
+```
+: Then, add
+[ribosomal_slippage](/ddbj/qualifiers-e.html#ribosomal_slippage)
+qualifier as a flag to indicate the adjustment is legal.  
+After this adjustment of location, the amino acid sequence in
+[translation](/ddbj/qualifiers-e.html#translation) qualifier is
+conceptually translated one.
+: See also [Example of Submission B10](/ddbj/example-e.html#B10).
+On submission via Nucleotide Sequence Submission System, please use "Submission Information" box to tell us the ribosomal slippage in detail.
+
+e) RNA editing<a name="stop_e"></a>  
+: <span class="red">Basically, it should be described for genome annotation.</span>
+: Describe original CDS location with
+[exception](/ddbj/qualifiers-e.html#exception) qualifier
+qualifier.  
+When the exception qualifier is described, amino acid sequence for
+translation qualifier can be provided by submitter. So, you can use
+the amino acid sequence confirmed via cDNA or some for the CDS
+feature on the genomic sequence.  
+Describe referred information in
+[inference](/ddbj/qualifiers-e.html#inference) qualifier.
+: See also [Example of Submission B09](/ddbj/example.html#B09).
+: On submission via Nucleotide Sequence Submission System, please use
+"Submission Information" box to tell us translational exceptions in
+detail.
+
+f) translated with selenocystein or pyrrolysine<a name="stop_f"></a>  
+: Describe original CDS location with
+[transl_except](/ddbj/qualifiers-e.html#transl_except) qualifier.
+: For example;
+
+|             |               |
+| ------------------------------------- | ------------------------------------------------------------------------------------ |
+| /transl_except=(pos:213..215,aa:Sec) | # To use "U" (one letter abbreviation for selenocystein) for amino acid translation |
+| /transl_except=(pos:213..215,aa:Pyl) | # To use "O" (one letter abbreviation for pyrrolysine) for amino acid translation   |
+
+g) gene disruption by transpon insertion etc.<a name="stop_g"></a>  
+: Describe with [misc_feature](/ddbj/features-e.html#misc_feature),
+not CDS.
+
+h) low accuracy of draft sequences from genome or transcriptome project<a name="stop_h"></a>  
+: To avoid the point of frameshift, adjust CDS location with "join" operator, operatively, to make amino acid sequence with conceptual translation.  
+Add [artificial_location](/ddbj/qualifiers-e.html#artificial_location)
+qualifier as a flag to indicate the operative adjustment.
+: <span class="red">For submissions via Nucleotide Sequence Submission System, it is forbidden to use artificial_location qualifier.</span>
+
 
 ## Flat File
-
-　　
-
-<div class="section section">
 
 ### Locations with "join" operators are basically described to indicate splicing results
 
@@ -496,14 +278,11 @@ However, there are three major exceptions as below;
     the process of translation.
   - CDS locations operatively adjusted to avoid frameshift errors in
     draft sequences from genome or transcriptome projects, with a flag
-    [artificial\_location
+    [artificial_location
     qualifier](/ddbj/qualifiers-e.html#artificial_location)qualifier.
 
-</div>
 
-　
 
-<div class="section section">
 
 ### Translated amino acid sequence described at translation qualifier
 
@@ -514,44 +293,22 @@ processed from the nucleotide sequence by using following items;
 
 i.e.
 
-``` code flat-file
+```
      CDS             86..>450
                      /codon_start=1
                      /transl_table=1
 ```
 
-<div class="news_post_container glossary">
+| <code>CDS   86.. &gt;450</code> | The region from 86th to 450th base of the sequence is coding a protein described with following qualifiers.<br />"&gt;" means that 3'end is not completed for the region of CDS.<br />See the rule for [Description of Location](/ddbj/location-e.html) in detail. |
+| <code>/codon_start=1</code> | The frame reading amino acid translation of the first codon is the 1st base of the above CDS location (86th base of the entry). |
+| <code>/transl_table=1</code> | The nucleotide sequence of CDS region is translated into amino acid sequence according to [The Genetic Codes](/ddbj/geneticcode-e.html), No. 1 table. |
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><pre class="code"><code>CDS   86.. &gt;450</code></pre></td>
-<td>The region from 86th to 450th base of the sequence is coding a protein described with following qualifiers.<br />
-"&gt;" means that 3'end is not completed for the region of CDS.<br />
-See the rule for <a href="/ddbj/location-e.html">Description of Location</a> in detail.</td>
-</tr>
-<tr class="even">
-<td><pre class="code"><code>/codon_start=1</code></pre></td>
-<td>The frame reading amino acid translation of the first codon is the 1st base of the above CDS location (86th base of the entry).</td>
-</tr>
-<tr class="odd">
-<td><pre class="code"><code>/transl_table=1</code></pre></td>
-<td>The nucleotide sequence of CDS region is translated into amino acid sequence according to <a href="/ddbj/geneticcode-e.html">The Genetic Codes</a>, No. 1 table.</td>
-</tr>
-</tbody>
-</table>
-
-</div>
 
 Acording to above items, the region from 86th to 450th bases of the
 nucleotide sequence is translated into the amino acid sequence as with
 [1 letter abbreviation](/ddbj/code-e.html#amino-1) below;
 
-``` code flat-file
+```
       86 atg gcg aag att aag atc ggg atc aat ggg ttc ggg agg atc ggg 
      aa: M   A   K   I   K   I   G   I   N   G   F   G   R   I   G   
 
@@ -585,32 +342,31 @@ either of amino acids, C (cysteine), W (tryptphan), or \* (termination
 codon), so, it is not described.Finally, the translated amino acid
 sequence is described in the value of translation as below.
 
-``` code flat-file
+```
           /translation="MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT
          YMFKYDTVHGQWKHHEVKVKDSKTLLFGEKEVTVFGCRNPKEIPWGETSAEFVVEYTG
          VFTDKDKAVAQLKGGAKKV"
 ```
 
-</div>
 
-<div class="section section">
 
-### Offset of the frame at translation initiation by codon\_start
 
-The [codon\_start](/ddbj/qualifiers-e.html#codon_start) qualifier
+### Offset of the frame at translation initiation by codon_start<a name="frame"></a>
+
+The [codon_start](/ddbj/qualifiers-e.html#codon_start) qualifier
 indicates the offset at which the first complete codon of a CDS feature
 can be found, relative to the first base of that feature.
 
 When the location of CDS feature is started from initiation codon, the
-value of codon\_start is 1, consistently.
+value of codon_start is 1, consistently.
 
 If the location of CDS feature is not started from initiation codon,
-codon\_start is required to specify from either of 1, 2, or 3,
+codon_start is required to specify from either of 1, 2, or 3,
 appropriately. Although the nucleotide sequence is same, depending on
-the description of codon\_start, translated amino acid sequence is
+the description of codon_start, translated amino acid sequence is
 different as followings.
 
-``` code flat-file
+```
     the number of base position: tens place           11111111112222222 
     the number of base position: ones place  12345678901234567890123456 
     nucelotide sequence                      ttcggctgcagaagataaataaataa 
@@ -621,7 +377,7 @@ different as followings.
 
 case１
 
-``` code flat-file
+```
     CDS     <1..18
             /codon_start=1
             /transl_table=1
@@ -630,7 +386,7 @@ case１
 
 case 2
 
-``` code flat-file
+```
  
     CDS     <1..22
             /codon_start=2
@@ -640,7 +396,7 @@ case 2
 
 case 3
 
-``` code flat-file
+```
           
     CDS     <1..26
             /codon_start=3
@@ -648,63 +404,4 @@ case 3
             /translation="RLQKINK"
 ```
 
-</div>
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div id="side_navigation">
-
-<div class="side_nav_menu handbook_contents page-noside">
-
-<div id="in_this_page">
-
-## In this page
-
-</div>
-
-</div>
-
-<div class="side_nav_menu handbook_related">
-
-<div id="related_pages">
-
-## Related pages
-
-  - [DDBJ flat file format](/ddbj/flat-file-e.html)
-  - [Feature Key](/ddbj/features-e.html)
-  - [Qualifier key](/ddbj/qualifiers-e.html)
-  - [Organism qualifier](/ddbj/organism-e.html)
-  - [Description of Location](/ddbj/location-e.html)
-  - [The Genetic Codes](/ddbj/geneticcode-e.html)
-  - [Codes Used in Sequence Description](/ddbj/code-e.html)
-  - [Example of Submission](/ddbj/example-e.html)
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div id="footer_original" class="clearfix">
-
-  - [Policies and
-    Disclaimers](/policies-e.html "Policies and Disclaimers")
-  - [News](/news/en/index-e.html "News archives")
-  - [FAQs](/faq/en/index-e.html "Frequently asked questions")
-  - [Sitemap](/sitemap-e.html "Sitemap")
-  - [Calendar](/calendar-e.html "DDBJ Center Calendar")
-  - [Address](/access-e.html "DDBJ Center address")
-  - [Contact](/contact-e.html "Contact to DDBJ Center")
-  - Last modified: 2018-02-09
-
-</div>
-
-</div>
