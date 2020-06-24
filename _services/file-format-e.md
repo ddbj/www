@@ -439,8 +439,6 @@ Example: COMMENT and ST\_COMMENT in annotation file
 Example: source and CDS features in annotation
 file　(<span class="red">Requierd</span>)
 
-
-
 | Entry | Feature                         | Location                                                    | Qualifier                          | Value                    |
 | ----- | ------------------------------- | ----------------------------------------------------------- | ---------------------------------- | ------------------------ |
 |       | <span class="red">source</span> | <span class="red">1..12297</span>                           | <span class="red">organism</span>  | Mus musculus             |
@@ -453,133 +451,71 @@ file　(<span class="red">Requierd</span>)
 |       | CDS                             | complement(join(3213..4981,9901..11677))                    | gene                               | tbpA                     |
 |       |                                 |                                                             | product                            | TATA-box binding protein |
 
-
-<span class="red">※</span>For detail definitions and descriptions of
-Biological features, please read [Feature Table
-Definition](/ddbj/full_index-e.html).
+<span class="red">※</span>For detail definitions and descriptions of Biological features, please read [Feature Table Definition](/ddbj/full_index-e.html).
 
 #### Requirements for Describing Feature/Location/Qualifier
 
-  - In [Feature Table Definition](/ddbj/full_index-e.html), each
-    Qualifier has a / \[slash\] on its head, however do not use slashes
+  - In [Feature Table Definition](/ddbj/full_index-e.html), each Qualifier has a / \[slash\] on its head, however do not use slashes
     for Qualifiers in the annotation file.
-  - Qualifiers marked with \* (organism、mol\_type) are mandatory items.
-    Features, source and at least one other feature are mandatory items
-    for each entry. Please be sure to input them correctly.
-  - You can find the rule to describe Location on [Description of
-    Location](/ddbj/location-e.html).
-  - You can see Qualifiers are legal for each Feature in
-    [Feature/Qualifier Usage Matrix](/files/pdf/ddbj/fq-e.pdf). Some of
-    Features have mandatory Qualifier(s). Please be sure to specify
-    Features and Qualifiers according to their name in the table. They
-    are strictly defined such as case-sensitive (to distinguish upper
-    case or lower), to use "\_" \[underscore\], and so on.
-  - See also [Sample annotation file](#sample) and [Example of
-    Submission](/ddbj/example-e.html)
-  - When you describe CDS features, [Protein Coding Sequence; CDS
-    feature](/ddbj/cds-e.html) would be helpful.
-  - Files containing CDS feature(s) should be checked with
-    [UME](/ddbj/ume-e.html) or
-    [transChecker](/ddbj/transchecker-e.html).
+  - Qualifiers marked with \* (organism、mol\_type) are mandatory items. Features, source and at least one other feature are mandatory items for each entry. Please be sure to input them correctly.
+  - You can find the rule to describe Location on [Description of Location](/ddbj/location-e.html).
+  - You can see Qualifiers are legal for each Feature in [Feature/Qualifier Usage Matrix](/files/pdf/ddbj/fq-e.pdf). Some of
+    Features have mandatory Qualifier(s). Please be sure to specify Features and Qualifiers according to their name in the table. They are strictly defined such as case-sensitive (to distinguish upper case or lower), to use "\_" \[underscore\], and so on.
+  - See also [Sample annotation file](#sample) and [Example of Submission](/ddbj/example-e.html)
+  - When you describe CDS features, [Protein Coding Sequence; CDS feature](/ddbj/cds-e.html) would be helpful.
+  - Files containing CDS feature(s) should be checked with [UME](/ddbj/ume-e.html) or [transChecker](/ddbj/transchecker-e.html).
 
 #### Requirements for Describing Value
 
-  - The legal character type for Values depends on the Qualifiers as
-    shown in the table, [Feature/Qualifier Usage
-    Matrix](/files/pdf/ddbj/fq-e.pdf) and [Feature Table
-    Definition](/ddbj/full_index-e.html).
-  - Please be sure to input (or not to input) Values in accordance with
-    value types in tables.
-
-
-
+  - The legal character type for Values depends on the Qualifiers as shown in the table, [Feature/Qualifier Usage Matrix](/files/pdf/ddbj/fq-e.pdf) and [Feature Table Definition](/ddbj/full_index-e.html).
+  - Please be sure to input (or not to input) Values in accordance with value types in tables.
 
 ### DIVISION
 
-DIVISION feature in annotation file indicates that entries are
-corresponding only to one of [CON](/data-categories-e.html#con) /
-[ENV](/ddbj/data-categories.html#env) /
-[EST](/data-categories-e.html#est) / [GSS](/data-categories-e.html#est)
-/ [HTC](/data-categories-e.html#est) /
-[HTG](/data-categories-e.html#est) / [STS](/data-categories-e.html#est)
-/ [SYN](/data-categories-e.html#env) /
-[TSA](/data-categories-e.html#tsa).
+DIVISION feature in annotation file indicates that entries are corresponding only to one of [CON](/data-categories-e.html#con) /
+[ENV](/ddbj/data-categories.html#env) / [EST](/data-categories-e.html#est) / [GSS](/data-categories-e.html#est) / [HTC](/data-categories-e.html#est) / [HTG](/data-categories-e.html#est) / [STS](/data-categories-e.html#est) / [SYN](/data-categories-e.html#env) / [TSA](/data-categories-e.html#tsa).
 
 Example: DIVISION in annotation file
-
-
 
 | Entry  | Feature  | Location | Qualifier | Value |
 | ------ | -------- | -------- | --------- | ----- |
 | COMMON | DIVISION |          | division  | EST   |
 
-
 #### Requirements for Describing DIVISION
 
-  - Please enter the division name, 3 capital letters in the Value for
-    Qualifier: division.
-  - In principle, please describe the DIVISION feature in the
-    [COMMON](#common) entry.
-
-
-
+  - Please enter the division name, 3 capital letters in the Value for Qualifier: division.
+  - In principle, please describe the DIVISION feature in the [COMMON](#common) entry.
 
 ### DATATYPE
 
-DATATYPE feature indicates that entries are corresponding to either of
-[WGS](/ddbj/wgs-e.html), [TLS](/ddbj/tls-e.html),
+DATATYPE feature indicates that entries are corresponding to either of [WGS](/ddbj/wgs-e.html), [TLS](/ddbj/tls-e.html),
 [TPA](/ddbj/tpa-e.html), or TPA-WGS.
 
 Example: DATATYPE in annotation file
-
-
 
 | Entry  | Feature  | Location | Qualifier | Value |
 | ------ | -------- | -------- | --------- | ----- |
 | COMMON | DATATYPE |          | type      | WGS   |
 
-
 #### Requirements for Describing DATATYPE
 
-  - Please enter the name of type, WGS, TLS, TPA, or TPA-WGS in the
-    Value for Qualifier: type.
+  - Please enter the name of type, WGS, TLS, TPA, or TPA-WGS in the Value for Qualifier: type.
   - Please describe the DATATYPE feature in the [COMMON](#common) entry.
-
-
-
 
 ### KEYWORD
 
-On the basis of categories indicated at the sections,
-[DIVISION](#division) and [DATATYPE](#datatype), KEYWORDs with
-controlled vocabulary describe more detail and specified information,
-such as experimental methods.  
-Please see [INSDC agreed methodological keywords](/ddbj/keyword-e.html),
-which qualify controlled keyword terms.
+On the basis of categories indicated at the sections, [DIVISION](#division) and [DATATYPE](#datatype), KEYWORDs with controlled vocabulary describe more detail and specified information, such as experimental methods.  
+Please see [INSDC agreed methodological keywords](/ddbj/keyword-e.html), which qualify controlled keyword terms.
 
 Example: KEYWORD in annotation file
-
-
 
 | Entry | Feature                                | Location | Qualifier                              | Value                              |
 | ----- | -------------------------------------- | -------- | -------------------------------------- | ---------------------------------- |
 |       | <span class="font-bold">KEYWORD</span> |          | <span class="font-bold">keyword</span> | <span class="font-bold">ENV</span> |
 
-
 Specified values for KEYWORD/keyword(<span class="red">Requierd</span>)
 
-
-
 Categories
-
-
-
-
-
-
-
-
-
 
 the values for keyword
 
@@ -650,13 +586,11 @@ Please contact us before your submission.
 #### Requirements for Describing KEYWORD
 
   - Please describe the specified values for Qualifier: keyword.
-  - Please contact us before your submission to make sure the detail
-    descriptions of KEYWORD.
+  - Please contact us before your submission to make sure the detail descriptions of KEYWORD.
 
 ###### For WGS and scaffold CON<a name="wgs_con"></a>
 
-  - For WGS and scaffold CON, please select a keyword from the following
-    list.
+  - For WGS and scaffold CON, please select a keyword from the following list.
     
       - STANDARD\_DRAFT
       - HIGH\_QUALITY\_DRAFT
@@ -665,20 +599,14 @@ Please contact us before your submission.
     
     Example: WGS draft genome(<span class="red">Requierd</span>)
     
-    
-    
     | Entry | Feature                          | Location | Qualifier                        | Value                                    |
     | ----- | -------------------------------- | -------- | -------------------------------- | ---------------------------------------- |
     |       | <span class="red">KEYWORD</span> |          | <span class="red">keyword</span> | <span class="red">WGS</span>             |
     |       |                                  |          | <span class="red">keyword</span> | <span class="red">STANDARD\_DRAFT</span> |
     
-
-  
-
 ###### For EST Submissions
 
-  - For EST submissions, at least two keywords are required; EST and one
-    of following three terms;
+  - For EST submissions, at least two keywords are required; EST and one of following three terms;
     
       - For 5' EST submissions --- 5'-end sequence (5'-EST)
       - For 3' EST submissions --- 3'-end sequence (3'-EST)
@@ -686,57 +614,34 @@ Please contact us before your submission.
     
     Example : 5' EST(<span class="red">Requierd</span>)
     
-    
-    
     | Entry | Feature                          | Location | Qualifier                        | Value                                             |
     | ----- | -------------------------------- | -------- | -------------------------------- | ------------------------------------------------- |
     |       | <span class="red">KEYWORD</span> |          | <span class="red">keyword</span> | <span class="red">EST</span>                      |
     |       |                                  |          | <span class="red">keyword</span> | <span class="red">5'-end sequence (5'-EST)</span> |
     
-
-  
-
-  - In the case of 3' EST, to distinguish whether your sequences are
-    corresponding to anti-sense or sense strand, please describe either
-    of following two COMMENTs.
+  - In the case of 3' EST, to distinguish whether your sequences are corresponding to anti-sense or sense strand, please describe either of following two COMMENTs.
     
     Example : For anti-sense strand;(<span class="red">Requierd</span>)
-    
-    
-    
+      
     | Entry | Feature                          | Location | Qualifier                     | Value                                                                         |
     | ----- | -------------------------------- | -------- | ----------------------------- | ----------------------------------------------------------------------------- |
     |       | <span class="red">COMMENT</span> |          | <span class="red">line</span> | <span class="red">3'-EST sequences are presented as anti-sense strand.</span> |
     
-
-  
-    
     Example : For sense strand;(<span class="red">Requierd</span>)
-    
-    
     
     | Entry | Feature                          | Location | Qualifier                     | Value                                                                    |
     | ----- | -------------------------------- | -------- | ----------------------------- | ------------------------------------------------------------------------ |
     |       | <span class="red">COMMENT</span> |          | <span class="red">line</span> | <span class="red">3'-EST sequences are presented as sense strand.</span> |
     
-
-  
-
 ###### For HTG submissions
 
-  - For HTG submissions, we recommend to use keywords to indicate
-    sequencing status of [HTG data](/sub/htg-e.html).
-
-
+  - For HTG submissions, we recommend to use keywords to indicate sequencing status of [HTG data](/sub/htg-e.html).
 
 ### DBLINK
 
-The DBLINK line is used to link other databases, such as BioProject ID,
-BioSample ID and Sequence Read Archive (DRA/ERA/SRA).
+The DBLINK line is used to link other databases, such as BioProject ID, BioSample ID and Sequence Read Archive (DRA/ERA/SRA).
 
 Example: DBLINK in annotation file(<span class="red">Requierd</span>)
-
-
 
 | Entry | Feature                         | Location | Qualifier                                      | Value                                 |
 | ----- | ------------------------------- | -------- | ---------------------------------------------- | ------------------------------------- |
@@ -745,45 +650,24 @@ Example: DBLINK in annotation file(<span class="red">Requierd</span>)
 |       |                                 |          | <span class="red">sequence read archive</span> | <span class="red">DRR999000</span>    |
 |       |                                 |          | <span class="red">sequence read archive</span> | <span class="red">DRR999001</span>    |
 
-
 #### Requirements for Describing DBLINK
 
-  - If you have registered your project to the [DDBJ BioProject
-    Database](/bioproject/index-e.html), please enter the project ID in
-    the Value for Qualifier: The sample ID of [DDBJ
-    BioSample](/biosample/index-e.html) also writes in the Value of for
-    Qualifier.
-  - An assembly from raw reads of Sequence Read Archive is required to
-    have [run accession number(s)](/prefix-e.html#dra) in the Value for
-    Qualifier.
-  - See also [DDBJ BioProject Database](/bioproject/index-e.html), [DDBJ
-    BioSample Database](/biosample/index-e.html) and [DDBJ Sequence Read
-    Archive](/dra/index-e.html).
-
-
-
+  - If you have registered your project to the [DDBJ BioProject Database](/bioproject/index-e.html), please enter the project ID in
+    the Value for Qualifier: The sample ID of [DDBJ BioSample](/biosample/index-e.html) also writes in the Value of for Qualifier.
+  - An assembly from raw reads of Sequence Read Archive is required to have [run accession number(s)](/prefix-e.html#dra) in the Value for Qualifier.
+  - See also [DDBJ BioProject Database](/bioproject/index-e.html), [DDBJ BioSample Database](/biosample/index-e.html) and [DDBJ Sequence Read Archive](/dra/index-e.html).
 
 ### locus\_tag
 
-For the submission in the whole genome scale with many annotated
-features, we recommend to use the qualifier
-[locus\_tag](/ddbj/locus_tag.html), for the [Biological
-Features](#biological_feature) indicating protein products
-([CDSs](/ddbj/cds-e.html)), and transcripts (rRNA, tRNA and so on).  
-The locus\_tag prefix and BioProject ID should be registered at [DDBJ
-BioProject Database](/bioproject/index-e.html) in advance.
-
-
+For the submission in the whole genome scale with many annotated features, we recommend to use the qualifier [locus\_tag](/ddbj/locus_tag.html), for the [Biological Features](#biological_feature) indicating protein products ([CDSs](/ddbj/cds-e.html)), and transcripts (rRNA, tRNA and so on).  
+The locus\_tag prefix and BioProject ID should be registered at [DDBJ BioProject Database](/bioproject/index-e.html) in advance.
 
 ### source: ff\_definition
 
-ff\_definition is a Qualifier that is not defined in The
-DDBJ/EMBL/GenBank Feature Table: Definition. One ff\_definition can be
+ff\_definition is a Qualifier that is not defined in The DDBJ/EMBL/GenBank Feature Table: Definition. One ff\_definition can be
 described in an entry, if necessary.
 
 Example: ff\_definition in annotation file
-
-
 
 | Entry | Feature | Location | Qualifier      | Value                                                                                           |
 | ----- | ------- | -------- | -------------- | ----------------------------------------------------------------------------------------------- |
@@ -792,15 +676,9 @@ Example: ff\_definition in annotation file
 |       |         |          | ff\_definition | <span class="bold">@@\[organism\]@@</span> mRNA, clone: <span class="bold">@@\[clone\]@@</span> |
 |       |         |          | clone          | PC0110                                                                                          |
 
-
 Value formats of ff\_definition
 
-
-
 Categories
-
-
-
 
 Format for the value of ff\_definition
 
@@ -839,41 +717,18 @@ Please contact us before your submission, if necessary.
 
 #### Requirements for Describing source: ff\_definition
 
-  - The Qualifier: ff\_definition can be described on source, one of
-    [Biological features](#biological_feature).
+  - The Qualifier: ff\_definition can be described on source, one of [Biological features](#biological_feature).
   - You can describe only one ff\_difinition for one entry.
-  - The value of ff\_definition will be used for the DEFINITION line in
-    the format of [DDBJ flat file](/ddbj/flat-file-e.html). Please refer
-    to [Sample annotation file and The relationships between annotation
-    file and DDBJ flat file](#sample).
-  - For the Value of ff\_definition, a meta description (e.g.
-    @@\[organism\]@@ and @@\[clone\]@@) is available to quote values of
-    other qualifiers. The meta description, Qualifier name enclosed by
-    "<span class="bold">@@\[</span> and <span class="bold">\]@@</span>",
-    will be replaced by the value of target Qualifier ("organism",
-    "clone" in the above sample) when ff\_definition is reflected in
-    DEFINITION line on DDBJ flat file.
-  - In principle, you can describe DEFINITION according to the above
-    table, however, if you like to input the values of ff\_definition
-    qualifiers, please contact us before your submission.
-
-
+  - The value of ff\_definition will be used for the DEFINITION line in the format of [DDBJ flat file](/ddbj/flat-file-e.html).  Please refer to [Sample annotation file and The relationships between annotation file and DDBJ flat file](#sample).
+  - For the Value of ff\_definition, a meta description (e.g. @@\[organism\]@@ and @@\[clone\]@@) is available to quote values of
+    other qualifiers. The meta description, Qualifier name enclosed by "**@@\[** and **\]@@**", will be replaced by the value of target Qualifier ("organism", "clone" in the above sample) when ff\_definition is reflected in DEFINITION line on DDBJ flat file.
+  - In principle, you can describe DEFINITION according to the above table, however, if you like to input the values of ff\_definition qualifiers, please contact us before your submission.
 
 ### assembly\_gap: Sequencing Gap Region
 
-In cases of whole genome scale sequencing such as [HTG](/sub/htg-e.html)
-or large scale of assembled EST sequences such as
-[TSA](/ddbj/tsa-e.html) division, the entries may have some sequencing
-gaps that would be resulted from the process of assembling or the region
-difficult to read. You can indicate them by describing "n" in its
-sequence. In annotation file, you have to indicate the regions of
-sequencing gaps with [assembly\_gap](/ddbj/features-e.html#assembly_gap)
-features.
+In cases of whole genome scale sequencing such as [HTG](/sub/htg-e.html) or large scale of assembled EST sequences such as [TSA](/ddbj/tsa-e.html) division, the entries may have some sequencing gaps that would be resulted from the process of assembling or the region difficult to read. You can indicate them by describing "n" in its sequence. In annotation file, you have to indicate the regions of sequencing gaps with [assembly\_gap](/ddbj/features-e.html#assembly_gap) features.
 
-Example: assembly\_gap in annotation
-file(<span class="red">Requierd</span>)
-
-
+Example: assembly\_gap in annotation file(<span class="red">Requierd</span>)
 
 | Entry | Feature       | Location | Qualifier         | Value                                    |
 | ----- | ------------- | -------- | ----------------- | ---------------------------------------- |
@@ -884,69 +739,42 @@ file(<span class="red">Requierd</span>)
 
 #### Requirements for Describing assembly\_gap: Sequencing Gap Region
 
-  - Though the assembly\_gap feature is one of [Biological
-    features](/ddbj/file-format-e.html#biological_feature), the format
+  - Though the assembly\_gap feature is one of [Biological features](/ddbj/file-format-e.html#biological_feature), the format
     is slightly different from others.
-  - You can NOT use join, order, complement for the Location of
-    assembly\_gap features.
+  - You can NOT use join, order, complement for the Location of assembly\_gap features.
 
 ###### Length of the gap is unknown
 
-The location of span of the assembly\_gap feature for an unknown gap has
-to be specified by the submitter; the specified gap length has to be
-reasonable (less or = 1000) and will be indicated as "n"'s in the
-sequence.  
-It is required to indicate unknown for the Value of Qualifier:
-estimated\_length on the assembly\_gap feature.
+The location of span of the assembly\_gap feature for an unknown gap has to be specified by the submitter; the specified gap length has to be reasonable (less or = 1000) and will be indicated as "n"'s in the sequence.  
+It is required to indicate unknown for the Value of Qualifier: estimated\_length on the assembly\_gap feature.
 
-In case of transcriptome record (TSA division), the value of the
-estimated\_length of assembly\_gap features must be in an integer, not
-be “unknown”.
+In case of transcriptome record (TSA division), the value of the estimated\_length of assembly\_gap features must be in an integer, not be “unknown”.
 
 ###### Length of the gap is estimated
 
-The location span of the assembly\_gap feature for "known" gap should be
-indicated by the number of "n"'s in the sequence. It is required to
-indicate known for the Value of Qualifier: estimated\_length on the
-assembly\_gap feature.
-
-
-
+The location span of the assembly\_gap feature for "known" gap should be indicated by the number of "n"'s in the sequence. It is required to indicate known for the Value of Qualifier: estimated\_length on the assembly\_gap feature.
 
 ### TOPOLOGY
 
-Please enter circular for the Qualifier of TOPOLOGY feature, when the
-topology of whole nucleotide molecule is circular and the first and the
-end positions are conjugated on real molecules.  
+Please enter circular for the Qualifier of TOPOLOGY feature, when the topology of whole nucleotide molecule is circular and the first and the end positions are conjugated on real molecules.  
 i.e. Complete genome sequence of a circular virus
 
 Example: TOPOLOGY in annotation file
-
-
 
 | Entry | Feature  | Location | Qualifier | Value |
 | ----- | -------- | -------- | --------- | ----- |
 |       | TOPOLOGY |          | circular  |       |
 
-
 #### Requirements for Describing TOPOLOGY
 
-  - In DDBJ flat file, topology is indicated in the
-    [LOCUS](/ddbj/flat-file-e.html#Locus) line. See also [Sample
-    annotation file](#sample).
-
-
-
+  - In DDBJ flat file, topology is indicated in the [LOCUS](/ddbj/flat-file-e.html#Locus) line. See also [Sample annotation file](#sample).
 
 ### TPA/TSA: PRIMARY\_CONTIG, Citation of Primary Entries
 
-PRIMARY\_CONTIG, entry, and primary\_bases are the Feature and
-Qualifiers prepared to describe the alignments of primary entries for
+PRIMARY\_CONTIG, entry, and primary\_bases are the Feature and Qualifiers prepared to describe the alignments of primary entries for
 TPA/TSA submission.
 
 Example: PRIMARY\_CONTIG in annotation file
-
-
 
 | Entry | Feature         | Location  | Qualifier      | Value      |
 | ----- | --------------- | --------- | -------------- | ---------- |
@@ -958,16 +786,9 @@ Example: PRIMARY\_CONTIG in annotation file
 |       | PRIMARY\_CONTIG | 590..1191 | entry          | ZZ000022.0 |
 |       |                 |           | primary\_bases | 1..601     |
 
-
 Qualifiers available for PRIMARY\_CONTIG
 
-
-
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Qualifier</th>
@@ -991,15 +812,11 @@ The base span of the cited primary sequence. Example) 1..500</td>
 </tbody>
 </table>
 
-
 #### Requirements for Describing TPA/TSA: PRIMARY\_CONTIG, Citation of Primary Entries
 
-Please specify the value for [DATATYPE/type](#datatype), TPA or
-[DIVISION/division](#division), TSA in the annotation file.
+Please specify the value for [DATATYPE/type](#datatype), TPA or [DIVISION/division](#division), TSA in the annotation file.
 
-In PRIMARY\_CONTIG, it is necessary to refer to accession number(s)
-(with version) in the primary database and enter the base spans of the
-primary sequences that contribute to the TPA/TSA sequence.
+In PRIMARY\_CONTIG, it is necessary to refer to accession number(s) (with version) in the primary database and enter the base spans of the primary sequences that contribute to the TPA/TSA sequence.
 
 You can not use join, order, complement for Location column. Please
 describe each PRIMARY\_CONTIG and location even in the same entry.
@@ -1023,27 +840,15 @@ between annotation file and DDBJ flat file](#sample).
     [Sample](/files/pdf/ddbj/TSA_SRA_assemble.pdf) / [relationship
     table](/files/pdf/ddbj/TSA_SRA_ann2ff.pdf)
 
-
-
-
 ## AGP File
 
-AGP file is required to submit [CON entries](/ddbj/con-e.html). An AGP
-file is the tab delimited text file consisting of nine columns of the
-order and orientation etc of the piece entries to construct CON entry.
-You can make the files with some scripts, spread sheets (such as MS
-Excel), text editors and so on.
+AGP file is required to submit [CON entries](/ddbj/con-e.html). An AGP file is the tab delimited text file consisting of nine columns of the order and orientation etc of the piece entries to construct CON entry. You can make the files with some scripts, spread sheets (such as MS Excel), text editors and so on.
 
-Sequence file is not required when the sequence can be constructed from
-AGP file.
+Sequence file is not required when the sequence can be constructed from AGP file.
 
-[The AGP
-file](https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/)
-format was initially developed by UCSC, EBI and NCBI.
+[The AGP file](https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/) format was initially developed by UCSC, EBI and NCBI.
 
 Example: AGP file
-
-
 
 | \#1       | 2    | 3    | 4 | 5 | 6              | 7        | 8    | 9            |
 | --------- | ---- | ---- | - | - | -------------- | -------- | ---- | ------------ |
@@ -1056,26 +861,18 @@ Example: AGP file
 | scaffold2 | 651  | 750  | 2 | N | 100            | scaffold | yes  | align\_genus |
 | scaffold2 | 751  | 2980 | 3 | W | BZZZ01123488.1 | 1        | 1230 | \-           |
 
-
-
-
 ### Format and Syntax
 
-It is required to validate formats of AGP file by
-[UME](/ddbj/ume-e.html).
+It is required to validate formats of AGP file by [UME](/ddbj/ume-e.html).
 
   - AGP file consists of nine columns.
   - Columns should be tab delimited.
   - AGP file is required to contain NO space or blank line.
-  - The use of comment lines, starting with a \# symbol, at the head of
-    the file is encouraged.
+  - The use of comment lines, starting with a \# symbol, at the head of the file is encouraged.
 
 Description on each column（column 1 - column 5）
 
-
-
-\* component: a sequence used to construct a larger sequence (i.e. piece
-entry)
+\* component: a sequence used to construct a larger sequence (i.e. piece entry)
 
 column
 
@@ -1357,44 +1154,3 @@ listed using a ‘;’ delimiter.
     
     
     gap\_type
-    
-  
-
-
-
-
-
-
-
-## In this page
-
-
-
-
-
-
-
-## Related pages
-
-  - [Validation tools for MSS data files](/ddbj/mss-tool-e.html)
-  - [UME User’s manual](/ddbj/ume-e.html)
-  - [Parser User’s Manual](/ddbj/parser-e.html)
-  - [transChecker User’s Manual](/ddbj/transchecker-e.html)
-  - [Validator error message](/ddbj/validator-e.html)
-  - [Application form for MSS](/ddbj/mass-form-e.html)
-
-
-
-
-
-
-  - [Policies and
-    Disclaimers](/policies-e.html "Policies and Disclaimers")
-  - [News](/news/en/index-e.html "News archives")
-  - [FAQs](/faq/en/index-e.html "Frequently asked questions")
-  - [Sitemap](/sitemap-e.html "Sitemap")
-  - [Calendar](/calendar-e.html "DDBJ Center Calendar")
-  - [Address](/access-e.html "DDBJ Center address")
-  - [Contact](/contact-e.html "Contact to DDBJ Center")
-  - Last modified: 2018-03-09
-
