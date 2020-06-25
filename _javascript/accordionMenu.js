@@ -5,9 +5,11 @@ export default function accordionMenu() {
     $(this)
       .next('dd')
       .slideToggle(500);
+    $(this).toggleClass("active");
   });
 
   $('.close-btn').click(function () {
     $(this).parents('.accordion-menu dd').slideUp();
+    $(this).removeClass("active");
   });
 }
