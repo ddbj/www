@@ -19,7 +19,6 @@ form](/contact-e.html).
 
 ## Location with in NIG
 
-![](/images/center/cibmap-e.png)
+![]({{ site.baseurl }}/assets/images/center/cibmap-e.png)
 
-[Access (Jump to NIG web
-site.)](https://www.nig.ac.jp/nig/about-nig/access)
+[Access (Jump to NIG web site.)](https://www.nig.ac.jp/nig/about-nig/access)
