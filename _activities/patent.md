@@ -292,9 +292,8 @@ JPO データの FF 構造と各項目の記載内容について，塩基配列
 
     : 
     アミノ酸配列データの LOCUS 行は塩基配列データと記載内容が異なるため，図2にアミノ酸配列データの LOCUS 行の例を示した。
-
     {::nomarkdown}
-    <a class="group1 cboxElement" href="{{ site.baseurl }}/assets/images/ddbj/column_14.jpg" title="アミノ酸配列データの LOCUS 行(例)"><figure class="size-optimize"><img src="{{ site.baseurl }}/assets/images/ddbj/column_14.jpg" alt="アミノ酸配列データの LOCUS 行(例)" /><figcaption>図2：アミノ酸配列データの LOCUS 行(例)a</figcaption></figure></a>
+    <a class="group1 cboxElement" href="{{ site.baseurl }}/assets/images/ddbj/column_14.jpg" title="アミノ酸配列データの LOCUS 行(例)"><figure class="size-optimize"><img src="{{ site.baseurl }}/assets/images/ddbj/column_14.jpg" alt="アミノ酸配列データの LOCUS 行(例)" /><figcaption>図2：アミノ酸配列データの LOCUS 行(例)</figcaption></figure></a>
     {:/}
 
     [DEFINITION 行]  
