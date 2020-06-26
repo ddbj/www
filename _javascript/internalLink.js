@@ -81,9 +81,7 @@ export default function internalLink() {
   function currentCheck() {
     // 現在のスクロール位置を取得
     let windowScrolltop = $(window).scrollTop();
-    console.log('contentsArr.length', contentsArr.length);
     for (let i = 0; i < contentsArr.length; i++) {
-      console.log(i, contentsArr[i]);
       // 現在のスクロール位置が、配列に格納した開始位置と終了位置の間にあるものを調べる
       if ( contentsArr[0][0] > windowScrolltop ) {
         $navLink.removeClass("current");

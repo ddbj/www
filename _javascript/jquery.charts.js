@@ -221,819 +221,6 @@ if ( filepath=="/stats/web-access" ){
 } // ページアクセス
 
 
-// DDBJ リリース統計
-if (filepath=="/stats/release"){
-
-  // DDBJ リリース総データ量推移
-  var now = new Date();
-  var this_year = now.getFullYear();
-  var release_span = 10; // 直近10リリースを表示
-  var release_new = 107; // release 107 から bulk sequence が含まれている
-  var chart_a = [];    
-  var html_tables = "";
-    
-  google.charts.load('current', {'packages':['corechart', 'table']});
-
-    // 統計公開シート https://docs.goosgle.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-    $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['ddbj-release'] + "/public/values?alt=json", function(data) {
-
-      var ddbj_release = data.feed.entry;
-      var chart_a = [];
-      var chart_table_a = [];
-      
-            for(var i = release_new - 1; i < ddbj_release.length; i++) {
-             
-              var year_month = ddbj_release[i].gsx$yearmonth.$t;
-              var release_no = ddbj_release[i].gsx$release.$t;
-              var bases = parseInt(ddbj_release[i].gsx$bases.$t, 10);
-              var sequences = parseInt(ddbj_release[i].gsx$sequences.$t, 10);
-              var comments = ddbj_release[i].gsx$comments.$t;
-
-              // リリース毎に配列に格納                            
-              chart_a.push([release_no + " (" + year_month + ")", roundFloat(sequences/10**6, 2), roundFloat(bases/10**9, 2)]);                          
-              chart_table_a.push([release_no, year_month, sequences, bases, comments]);                          
-              
-            } // for(var i = 0; i < ddbj_release.length; i++)
-
-        // 棒グラフ描画 size
-        google.charts.setOnLoadCallback(DDBJReleaseGrowth);
-        google.charts.setOnLoadCallback(DDBJReleaseGrowthTable);
-
-      function DDBJReleaseGrowth(){
-
-          var title = 'DDBJ/ENA/GenBank database growth';
-
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Release No.');          
-          data.addColumn('number', 'Sequences');
-          data.addColumn('number', 'Bases');
-          data.addRows(chart_a);
-
-      var options =
-        {
-          title: title,      
-          width: 600,      
-          height: 500,
-          titleTextStyle: {fontSize:15},
-          legend:{position:'top', textStyle: {fontSize: 12}},
-          series: {            
-            0:{color:'#5b84d6', targetAxisIndex: 0, type:'line'},
-            1:{color:'#ff0000', targetAxisIndex: 1, type:'line'},
-          },
-          hAxis:{
-            title: 'Release',
-            textStyle: {fontSize:12},
-            slantedText:true, 
-            slantedTextAngle:90
-          },
-          vAxes: {
-            0: {   
-              title: 'Sequences (million)',
-              color:'#ff0000',
-              textStyle: {fontSize:12},
-              viewWindow: {min:500, max:2500},
-              gridlines: {count:5}
-            },
-            1: {
-              title: 'Bases (billion)',
-              textStyle: {fontSize:12},
-              viewWindow: {min:2000, max:7000},
-              gridlines: {count:6}
-            },
-          },
-          chartArea:{top:60},
-        　titlePosition:'out'
-        };
-
-          var ddbjrelease = new google.visualization.ColumnChart(document.getElementById('growth-chart'));          
-          ddbjrelease.draw(data, options);
-
-      } // function DDBJReleaseGrowth()
-
-      function DDBJReleaseGrowthTable(){
-        
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Release');
-          data.addColumn('string', 'Date');          
-          data.addColumn('number', 'Sequences');
-          data.addColumn('number', 'Bases');
-          data.addColumn('string', 'Comments');
-
-          data.addRows(chart_table_a);
-          data.setProperty(0, 4, 'style', 'width:40%');
-
-          var options = {
-            allowHtml: true
-          }
-
-          var ddbjreleaset = new google.visualization.Table(document.getElementById('growth-table'));
-          ddbjreleaset.draw(data, options);
-
-      } // function drawTotalDRAReleaseTable()
-
-      })  // $.getJSON 
-
-  // DDBJ リリース配列数、塩基数各バンクの割合
-  var now = new Date();
-  var this_year = now.getFullYear();
-  var release_span = 10; // 直近10リリースを表示
-  var release_new = 107; // release 107 から bulk sequence が含まれている
-  var chart_seq_a = [];    
-  var chart_base_a = [];    
-  var chart_seq_table_a = [];    
-  var chart_base_table_a = [];    
-  var html_seq_tables = "";
-  var html_base_tables = "";
-    
-  google.charts.load('current', {'packages':['corechart', 'table']});
-
-    // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-    $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['ddbj-release-proportion'] + "/public/values?alt=json", function(data) {
-
-      var ddbj_release = data.feed.entry;      
-            
-            // release 10 からなので 9 をさらに引いている      
-            for(var i = release_new - 1 - 9; i < ddbj_release.length; i++) {
-             
-              var release_no = ddbj_release[i].gsx$release.$t;
-              var year_month = ddbj_release[i].gsx$yearmonth.$t;              
-              var ddbjsequences = parseInt(ddbj_release[i].gsx$ddbjsequences.$t, 10);
-              var jposequences = parseInt(ddbj_release[i].gsx$jposequences.$t, 10);
-              var kiposequences = parseInt(ddbj_release[i].gsx$kiposequences.$t, 10);
-              var ddbjsubtotalsequences = ddbjsequences + jposequences + kiposequences;
-              
-              var enasequences = parseInt(ddbj_release[i].gsx$enasequences.$t, 10);
-              var eposequences = parseInt(ddbj_release[i].gsx$eposequences.$t, 10);
-              var enasubtotalsequences = enasequences + eposequences;
-              
-              var genbanksequences = parseInt(ddbj_release[i].gsx$genbanksequences.$t, 10);
-              var usptosequences = parseInt(ddbj_release[i].gsx$usptosequences.$t, 10);
-              var genbanksubtotalsequences = genbanksequences + usptosequences;
-              
-              var totalsequences = parseInt(ddbj_release[i].gsx$totalsequences.$t, 10);
-
-              var ddbjbases = parseInt(ddbj_release[i].gsx$ddbjbases.$t, 10);
-              var jpobases = parseInt(ddbj_release[i].gsx$jpobases.$t, 10);
-              var kipobases = parseInt(ddbj_release[i].gsx$kipobases.$t, 10);
-              var ddbjsubtotalbases = ddbjbases + jpobases + kipobases;
-
-              var enabases = parseInt(ddbj_release[i].gsx$enabases.$t, 10);
-              var epobases = parseInt(ddbj_release[i].gsx$epobases.$t, 10);
-              var enasubtotalbases = enabases + epobases;
-
-              var genbankbases = parseInt(ddbj_release[i].gsx$genbankbases.$t, 10);
-              var usptobases = parseInt(ddbj_release[i].gsx$usptobases.$t, 10);
-              var genbanksubtotalbases = genbankbases + usptobases;
-
-              var totalbases = parseInt(ddbj_release[i].gsx$totalbases.$t, 10);
-
-              // リリース毎に配列に格納                            
-              chart_seq_a.push([release_no + " (" + year_month + ")", roundFloat(genbanksubtotalsequences/10**6, 2), roundFloat(enasubtotalsequences/10**6, 2), roundFloat(ddbjsubtotalsequences/10**6, 2)]);                          
-              chart_seq_table_a.push([release_no + " (" + year_month + ")", ddbjsubtotalsequences, enasubtotalsequences, genbanksubtotalsequences, totalsequences]);                          
-   
-              chart_base_a.push([release_no + " (" + year_month + ")", roundFloat(genbanksubtotalbases/10**9, 2), roundFloat(enasubtotalbases/10**9, 2), roundFloat(ddbjsubtotalbases/10**9, 2)]);                          
-              chart_base_table_a.push([release_no + " (" + year_month + ")", ddbjsubtotalbases, enasubtotalbases, genbanksubtotalbases, totalbases]);                          
-
-            } // for(var i = 0; i < ddbj_release.length; i++)
-
-        // 棒グラフ描画 size
-        google.charts.setOnLoadCallback(DDBJReleasePropSeq);
-        google.charts.setOnLoadCallback(DDBJReleasePropSeqTable);
-
-        google.charts.setOnLoadCallback(DDBJReleasePropBase);
-        google.charts.setOnLoadCallback(DDBJReleasePropBaseTable);
-
-      function DDBJReleasePropSeq(){
-
-          var title = 'Proportion of each archive in total data volume (Sequences)';
-
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Release');          
-          data.addColumn('number', 'GenBank');
-          data.addColumn('number', 'ENA');
-          data.addColumn('number', 'DDBJ');          
-          data.addRows(chart_seq_a);
-
-          var options = {
-              title: title, 
-              width:700,
-              height:500,
-              titleTextStyle: {fontSize:15},
-              legend:{position: 'top',  textStyle: {fontSize:12}},
-              hAxis: {title: 'Release', slantedText:true, slantedTextAngle:90, textStyle: {fontSize:12}},
-              isStacked: true,
-              colors: ['#528cde',  '#5fb4a0',  '#ff8a29'],
-              chartArea:{top:60},
-              vAxis: {title: 'Sequences (million)', textStyle: {fontSize:12}}
-            };
-
-          var charpropseq = new google.visualization.ColumnChart(document.getElementById('prop-seq-chart')); 
-          charpropseq.draw(data, options);
-      
-      } // function DDBJReleasePropSeq()
-
-      function DDBJReleasePropSeqTable(){
-        
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Release');          
-          data.addColumn('number', 'DDBJ');
-          data.addColumn('number', 'ENA');
-          data.addColumn('number', 'GenBank');
-          data.addColumn('number', 'Total');
-          data.addRows(chart_seq_table_a);
-
-          var charpropseqtable = new google.visualization.Table(document.getElementById('prop-seq-table'));
-          charpropseqtable.draw(data);
-
-      } // function DDBJReleasePropSeqTable
-
-      function DDBJReleasePropBase(){
-
-          var title = 'Proportion of each archive in total data volume (Bases)';
-
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Release');          
-          data.addColumn('number', 'GenBank');
-          data.addColumn('number', 'ENA');
-          data.addColumn('number', 'DDBJ');          
-          data.addRows(chart_base_a);
-
-          var options = {
-              title: title, 
-              width:700,
-              height:500,
-              titleTextStyle: {fontSize:15},
-              legend:{position: 'top',  textStyle: {fontSize:12}},
-              hAxis: {title: 'Release', slantedText:true, slantedTextAngle:90, textStyle: {fontSize:12}},
-              isStacked: true,
-              colors: ['#528cde',  '#5fb4a0',  '#ff8a29'],
-              chartArea:{top:60},
-              vAxis: {title: 'Bases (billion)', textStyle: {fontSize:12}}
-            };
-
-          var charpropbase = new google.visualization.ColumnChart(document.getElementById('prop-base-chart')); 
-          charpropbase.draw(data, options);
-      
-      } // function DDBJReleasePropBase
-
-      function DDBJReleasePropBaseTable(){
-        
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Release');          
-          data.addColumn('number', 'DDBJ');
-          data.addColumn('number', 'ENA');
-          data.addColumn('number', 'GenBank');
-          data.addColumn('number', 'Total');
-          data.addRows(chart_base_table_a);
-
-          var charpropbasetable = new google.visualization.Table(document.getElementById('prop-base-table'));
-          charpropbasetable.draw(data);
-
-      } // function DDBJReleasePropBaseTable
-
-      })  // $.getJSON 
-
-  // DDBJ 最新リリースにおけるアーカイブ毎の data category の割合
-  var chart_ddbj_cat_seq_a = ['DDBJ'];    
-  var chart_ena_cat_seq_a = ['ENA'];    
-  var chart_genbank_cat_seq_a = ['GenBank'];    
-  var table_cat_seq_a = [];
-  var chart_ddbj_cat_base_a = ['DDBJ'];    
-  var chart_ena_cat_base_a = ['ENA'];    
-  var chart_genbank_cat_base_a = ['GenBank'];    
-  var table_cat_base_a = [];
-  
-  var html_seq_tables = "";
-  var html_base_tables = "";
-    
-  google.charts.load('current', {'packages':['corechart', 'table']});
-
-    // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-    $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['ddbj-category'] + "/public/values?alt=json", function(data) {
-
-      var ddbj_cat = data.feed.entry;      
-      var release_no = ddbj_cat[0].gsx$release.$t;
-
-            // Category から Total まで
-            for(var i = 0; i < ddbj_cat.length; i++) {
-
-              // グラフからは Total を除く
-              if (i < ddbj_cat.length - 1){
-                chart_ddbj_cat_seq_a.push(parseFloat(ddbj_cat[i].gsx$ddbjsequencesproportion.$t, 10));    
-                chart_ena_cat_seq_a.push(parseFloat(ddbj_cat[i].gsx$enasequencesproportion.$t, 10));    
-                chart_genbank_cat_seq_a.push(parseFloat(ddbj_cat[i].gsx$genbanksequencesproportion.$t, 10));    
-                
-                chart_ddbj_cat_base_a.push(parseFloat(ddbj_cat[i].gsx$ddbjbasesproportion.$t, 10));    
-                chart_ena_cat_base_a.push(parseFloat(ddbj_cat[i].gsx$enabasesproportion.$t, 10));    
-                chart_genbank_cat_base_a.push(parseFloat(ddbj_cat[i].gsx$genbankbasesproportion.$t, 10));    
-              }
-
-              // 表には　Total を含める
-              table_cat_seq_a.push([ddbj_cat[i].gsx$category.$t, parseInt(ddbj_cat[i].gsx$ddbjsequences.$t, 10), parseFloat(ddbj_cat[i].gsx$ddbjsequencesproportion.$t, 10), parseInt(ddbj_cat[i].gsx$enasequences.$t, 10), parseFloat(ddbj_cat[i].gsx$enasequencesproportion.$t, 10), parseInt(ddbj_cat[i].gsx$genbanksequences.$t, 10), parseFloat(ddbj_cat[i].gsx$genbanksequencesproportion.$t, 10)])
-              table_cat_base_a.push([ddbj_cat[i].gsx$category.$t, parseInt(ddbj_cat[i].gsx$ddbjbases.$t, 10), parseFloat(ddbj_cat[i].gsx$ddbjbasesproportion.$t, 10), parseInt(ddbj_cat[i].gsx$enabases.$t, 10), parseFloat(ddbj_cat[i].gsx$enabasesproportion.$t, 10), parseInt(ddbj_cat[i].gsx$genbankbases.$t, 10), parseFloat(ddbj_cat[i].gsx$genbankbasesproportion.$t, 10)])
-
-            } // for(var i = 0; i < ddbj_release.length; i++)
-
-        // 棒グラフ描画 size
-        google.charts.setOnLoadCallback(CategoryPropSeq);
-        google.charts.setOnLoadCallback(CategoryPropSeqTable);
-
-        google.charts.setOnLoadCallback(CategoryPropBase);
-        google.charts.setOnLoadCallback(CategoryPropBaseTable);
-
-      function CategoryPropSeq(){
-
-          var title = 'Data categories at each archive (Sequences)';
-
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Archive');          
-          data.addColumn('number', 'Taxonomic & Env');
-          data.addColumn('number', 'SYN');
-          data.addColumn('number', 'EST');
-          data.addColumn('number', 'TSA');
-          data.addColumn('number', 'GSS');
-          data.addColumn('number', 'HTC');
-          data.addColumn('number', 'HTG');
-          data.addColumn('number', 'STS');
-          data.addColumn('number', 'PAT');
-          data.addColumn('number', 'WGS');
-          data.addRows([chart_ddbj_cat_seq_a,chart_ena_cat_seq_a,chart_genbank_cat_seq_a]);
-
-      var options ={
-        title: title, 
-        width: 650,      
-        height: 300,
-        isStacked: true,
-        titleTextStyle: {fontSize:15},
-        colors: ['#a14543','#439ea0','#4291a7','#42a78b','#f1d7c2','#565989','#d33f46','#91c1c9','#cb8fac','#ae8fcb'],
-        vAxis: {title: 'Archive', textStyle: {fontSize:12}},
-        legend: {position: 'right', textStyle: {fontSize: 12}},
-        hAxis:{title:'Proportion in Release ' + release_no + ' (%)', textStyle: {fontSize:12}, viewWindow:{min:0, max:100}},
-        chartArea:{left:70,width:'65%'}
-      };
-
-          var catpropseq = new google.visualization.BarChart(document.getElementById('chart-div-all-seq')); 
-          catpropseq.draw(data, options);
-      
-      } // function DDBJReleasePropSeq()
-
-      function CategoryPropSeqTable(){
-        
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Category');          
-          data.addColumn('number', 'DDBJ Sequences');
-          data.addColumn('number', '%');
-          data.addColumn('number', 'ENA Sequences');
-          data.addColumn('number', '%');
-          data.addColumn('number', 'GenBank Sequences');
-          data.addColumn('number', '%');
-
-          data.addRows(table_cat_seq_a);
-
-          var tablecatpropseq = new google.visualization.Table(document.getElementById('table-div-all-seq'));
-          tablecatpropseq.draw(data);
-
-      } // function CategoryPropSeqTable
-
-      function CategoryPropBase(){
-
-          var title = 'Data categories at each archive (Bases)';
-
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Archive');          
-          data.addColumn('number', 'Taxonomic & Env');
-          data.addColumn('number', 'SYN');
-          data.addColumn('number', 'EST');
-          data.addColumn('number', 'TSA');
-          data.addColumn('number', 'GSS');
-          data.addColumn('number', 'HTC');
-          data.addColumn('number', 'HTG');
-          data.addColumn('number', 'STS');
-          data.addColumn('number', 'PAT');
-          data.addColumn('number', 'WGS');
-          data.addRows([chart_ddbj_cat_base_a, chart_ena_cat_base_a, chart_genbank_cat_base_a]);
-
-      var options ={
-        title: title, 
-        width: 650,      
-        height: 300,
-        isStacked: true,
-        titleTextStyle: {fontSize:15},
-        colors: ['#a14543','#439ea0','#4291a7','#42a78b','#f1d7c2','#565989','#d33f46','#91c1c9','#cb8fac','#ae8fcb'],
-        vAxis: {title: 'Archive', textStyle: {fontSize:12}},
-        legend: {position: 'right', textStyle: {fontSize: 12}},
-        hAxis:{title:'Proportion in Release ' + release_no + ' (%)', textStyle: {fontSize:12}, viewWindow: {min:0, max:100}},
-        chartArea:{left:70,width:'65%'}
-      };
-
-          var catpropbase = new google.visualization.BarChart(document.getElementById('chart-div-all-base')); 
-          catpropbase.draw(data, options);
-      
-      } // function DDBJReleasePropSeq()
-
-      function CategoryPropBaseTable(){
-        
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Category');          
-          data.addColumn('number', 'DDBJ Bases');
-          data.addColumn('number', '%');
-          data.addColumn('number', 'ENA Bases');
-          data.addColumn('number', '%');
-          data.addColumn('number', 'GenBank Bases');
-          data.addColumn('number', '%');
-
-          data.addRows(table_cat_base_a);
-
-          var tablecatpropbase = new google.visualization.Table(document.getElementById('table-div-all-base'));
-          tablecatpropbase.draw(data);
-
-      } // function CategoryPropSeqTable
-
-      })  // $.getJSON 
-
-  // DDBJ 最新リリースにおけるアーカイブ毎の division の割合
-  var chart_div_seq_a = [];    
-  var table_div_seq_a = [];
-  var chart_div_base_a = [];    
-  var table_div_base_a = [];
-  
-  var html_seq_tables = "";
-  var html_base_tables = "";
-    
-  google.charts.load('current', {'packages':['corechart', 'table']});
-
-    // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-    $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['archive-proportion-category'] + "/public/values?alt=json", function(data) {
-
-      var ddbj_cat = data.feed.entry;      
-      var release_no = ddbj_cat[0].gsx$release.$t;
-
-            // 各 division におけるアーカイブの割合を取得
-            for(var i = 0; i < ddbj_cat.length; i++) {
-
-                chart_div_seq_a.push([ddbj_cat[i].gsx$category.$t, parseFloat(ddbj_cat[i].gsx$ddbjsequencesproportion.$t, 10), parseFloat(ddbj_cat[i].gsx$enasequencesproportion.$t, 10), parseFloat(ddbj_cat[i].gsx$genbanksequencesproportion.$t, 10)]);    
-                chart_div_base_a.push([ddbj_cat[i].gsx$category.$t, parseFloat(ddbj_cat[i].gsx$ddbjbasesproportion.$t, 10), parseFloat(ddbj_cat[i].gsx$enabasesproportion.$t, 10), parseFloat(ddbj_cat[i].gsx$genbankbasesproportion.$t, 10)]);    
-
-                table_div_seq_a.push([ddbj_cat[i].gsx$category.$t, parseInt(ddbj_cat[i].gsx$ddbjsequences.$t, 10), parseFloat(ddbj_cat[i].gsx$ddbjsequencesproportion.$t, 10), parseInt(ddbj_cat[i].gsx$enasequences.$t, 10), parseFloat(ddbj_cat[i].gsx$enasequencesproportion.$t, 10), parseInt(ddbj_cat[i].gsx$genbanksequences.$t, 10), parseFloat(ddbj_cat[i].gsx$genbanksequencesproportion.$t, 10)]);    
-                table_div_base_a.push([ddbj_cat[i].gsx$category.$t, parseInt(ddbj_cat[i].gsx$ddbjbases.$t, 10), parseFloat(ddbj_cat[i].gsx$ddbjbasesproportion.$t, 10), parseInt(ddbj_cat[i].gsx$enabases.$t, 10), parseFloat(ddbj_cat[i].gsx$enabasesproportion.$t, 10), parseInt(ddbj_cat[i].gsx$genbankbases.$t, 10), parseFloat(ddbj_cat[i].gsx$genbankbasesproportion.$t, 10)]);    
-
-            } // for(var i = 0; i < ddbj_release.length; i++)
-
-        // 棒グラフ描画 size
-        google.charts.setOnLoadCallback(DivPropSeq);
-        google.charts.setOnLoadCallback(DivPropSeqTable);
-
-        google.charts.setOnLoadCallback(DivPropBase);
-        google.charts.setOnLoadCallback(DivPropBaseTable);
-
-      function DivPropSeq(){
-
-          var title = 'Proportion of each archive per data category (Sequences)';
-
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Category');          
-          data.addColumn('number', 'DDBJ');
-          data.addColumn('number', 'ENA');
-          data.addColumn('number', 'GenBank');
-          data.addRows(chart_div_seq_a);
-
-      var options = {
-        title: title,
-        width: 650,      
-        height: 450,
-        isStacked: true,
-        titleTextStyle: {fontSize:15},
-        legend: {position: 'right', textStyle: {fontSize: 12}},
-        colors: ['#ff8a29',  '#5fb4a0',  '#528cde'],
-        vAxis: {title: 'Category', textStyle: {fontSize:12}},
-        chartArea:{height:'75%'},
-        hAxis:{title: 'Proportion of each archive in Release ' + release_no + ' (%)', textStyle: {fontSize:12}, viewWindow:{min:0, max:100}}
-      };
-
-          var catpropseq = new google.visualization.BarChart(document.getElementById('chart-prop-category-seq')); 
-          catpropseq.draw(data, options);
-      
-      } // function DDBJReleasePropSeq()
-
-      function DivPropSeqTable(){
-        
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Category');          
-          data.addColumn('number', 'DDBJ Sequences');
-          data.addColumn('number', '%');
-          data.addColumn('number', 'ENA Sequences');
-          data.addColumn('number', '%');
-          data.addColumn('number', 'GenBank Sequences');
-          data.addColumn('number', '%');
-          data.addRows(table_div_seq_a);
-
-          var tablepropseq = new google.visualization.Table(document.getElementById('table-prop-category-seq'));
-          tablepropseq.draw(data);
-
-      } // function CategoryPropSeqTable
-
-      function DivPropBase(){
-
-          var title = 'Proportion of each archive per data category (Bases)';
-
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Category');          
-          data.addColumn('number', 'DDBJ');
-          data.addColumn('number', 'ENA');
-          data.addColumn('number', 'GenBank');
-          data.addRows(chart_div_base_a);
-
-      var options = {
-        title: title,
-        width: 650,      
-        height: 550,
-        isStacked: true,
-        titleTextStyle: {fontSize:15},
-        legend: {position: 'right', textStyle: {fontSize: 12}},
-        colors: ['#ff8a29',  '#5fb4a0',  '#528cde'],
-        vAxis: {title: 'Category', textStyle: {fontSize:12}},
-        chartArea:{height:'75%'},
-        hAxis:{title: 'Proportion of each archive in Release ' + release_no + ' (%)', textStyle: {fontSize:12}, viewWindow:{min:0, max:100}}
-      };
-
-          var catpropbase = new google.visualization.BarChart(document.getElementById('chart-prop-category-base')); 
-          catpropbase.draw(data, options);
-      
-      } // function DDBJReleasePropSeq()
-
-      function DivPropBaseTable(){
-        
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Category');          
-          data.addColumn('number', 'DDBJ Bases');
-          data.addColumn('number', '%');
-          data.addColumn('number', 'ENA Bases');
-          data.addColumn('number', '%');
-          data.addColumn('number', 'GenBank Bases');
-          data.addColumn('number', '%');
-          data.addRows(table_div_base_a);
-
-          var tablepropbase = new google.visualization.Table(document.getElementById('table-prop-category-base'));
-          tablepropbase.draw(data);
-
-      } // function CategoryPropSeqTable
-
-      })  // $.getJSON 
-
-  // DDBJ 最新リリースにおけるアーカイブ毎の tax & env における div 割合
-  var chart_ddbj_tax_seq_a = ['DDBJ'];    
-  var chart_ena_tax_seq_a = ['ENA'];    
-  var chart_genbank_tax_seq_a = ['GenBank'];    
-  var table_tax_seq_a = [];
-  var chart_ddbj_tax_base_a = ['DDBJ'];    
-  var chart_ena_tax_base_a = ['ENA'];    
-  var chart_genbank_tax_base_a = ['GenBank'];    
-  var table_tax_base_a = [];
-  
-  var html_seq_tables = "";
-  var html_base_tables = "";
-    
-  google.charts.load('current', {'packages':['corechart', 'table']});
-
-    // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-    $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['organism-archive'] + "/public/values?alt=json", function(data) {
-
-      var ddbj_tax = data.feed.entry;      
-      var release_no = ddbj_tax[0].gsx$release.$t;
-
-            // Tax から Total まで
-            for(var i = 0; i < ddbj_tax.length; i++) {
-
-              // グラフからは Total を除く
-              if (i < ddbj_tax.length - 1){
-                chart_ddbj_tax_seq_a.push(parseFloat(ddbj_tax[i].gsx$ddbjsequencesproportion.$t, 10));    
-                chart_ena_tax_seq_a.push(parseFloat(ddbj_tax[i].gsx$enasequencesproportion.$t, 10));    
-                chart_genbank_tax_seq_a.push(parseFloat(ddbj_tax[i].gsx$genbanksequencesproportion.$t, 10));    
-                
-                chart_ddbj_tax_base_a.push(parseFloat(ddbj_tax[i].gsx$ddbjbasesproportion.$t, 10));    
-                chart_ena_tax_base_a.push(parseFloat(ddbj_tax[i].gsx$enabasesproportion.$t, 10));    
-                chart_genbank_tax_base_a.push(parseFloat(ddbj_tax[i].gsx$genbankbasesproportion.$t, 10));    
-              }
-
-              // 表には　Total を含める
-              table_tax_seq_a.push([ddbj_tax[i].gsx$category.$t, parseInt(ddbj_tax[i].gsx$ddbjsequences.$t, 10), parseFloat(ddbj_tax[i].gsx$ddbjsequencesproportion.$t, 10), parseInt(ddbj_tax[i].gsx$enasequences.$t, 10), parseFloat(ddbj_tax[i].gsx$enasequencesproportion.$t, 10), parseInt(ddbj_tax[i].gsx$genbanksequences.$t, 10), parseFloat(ddbj_tax[i].gsx$genbanksequencesproportion.$t, 10)])
-              table_tax_base_a.push([ddbj_tax[i].gsx$category.$t, parseInt(ddbj_tax[i].gsx$ddbjbases.$t, 10), parseFloat(ddbj_tax[i].gsx$ddbjbasesproportion.$t, 10), parseInt(ddbj_tax[i].gsx$enabases.$t, 10), parseFloat(ddbj_tax[i].gsx$enabasesproportion.$t, 10), parseInt(ddbj_tax[i].gsx$genbankbases.$t, 10), parseFloat(ddbj_tax[i].gsx$genbankbasesproportion.$t, 10)])
-
-            } // for(var i = 0; i < ddbj_release.length; i++)
-
-        // 棒グラフ描画 size
-        google.charts.setOnLoadCallback(TaxPropSeq);
-        google.charts.setOnLoadCallback(TaxPropSeqTable);
-
-        google.charts.setOnLoadCallback(TaxPropBase);
-        google.charts.setOnLoadCallback(TaxPropBaseTable);
-
-      function TaxPropSeq(){
-
-          var title = 'Organisms in Taxonomic & ENV at each archive (Sequences)';
-
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Archive');
-          data.addColumn('number', 'HUM');
-          data.addColumn('number', 'PRI');
-          data.addColumn('number', 'ROD');
-          data.addColumn('number', 'MAM');
-          data.addColumn('number', 'VRT');
-          data.addColumn('number', 'INV');
-          data.addColumn('number', 'PLN');
-          data.addColumn('number', 'BCT');
-          data.addColumn('number', 'VRL');
-          data.addColumn('number', 'PHG');
-          data.addColumn('number', 'ENV');
-          data.addRows([chart_ddbj_tax_seq_a,chart_ena_tax_seq_a,chart_genbank_tax_seq_a]);
-
-      var options ={
-        title: title, 
-        width: 650,      
-        height: 350,
-        isStacked: true,
-        titleTextStyle: {fontSize:15},
-        colors: ['#4b7bb2','#86a04f','#4291a7','#a34542','#6d5689','#d3823f','#91a5c9','#cb908f','#b6c894', '#ff0000','#90bdce'],
-        vAxis: {title: 'Archive', textStyle: {fontSize:12}},
-        legend: {position: 'right', textStyle: {fontSize: 12}},
-        hAxis:{title:'Proportion in Release ' + release_no + ' (%)', textStyle: {fontSize:12}, viewWindow:{min:0, max:100}},
-        chartArea:{left:70, width:'70%', height:'65%'}
-      };
-
-          var taxpropseq = new google.visualization.BarChart(document.getElementById('chart-tax-prop-seq')); 
-          taxpropseq.draw(data, options);
-      
-      } // function DDBJReleasePropSeq()
-
-      function TaxPropSeqTable(){
-        
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Category');          
-          data.addColumn('number', 'DDBJ Sequences');
-          data.addColumn('number', '%');
-          data.addColumn('number', 'ENA Sequences');
-          data.addColumn('number', '%');
-          data.addColumn('number', 'GenBank Sequences');
-          data.addColumn('number', '%');
-
-          data.addRows(table_tax_seq_a);
-
-          var tablecatpropseq = new google.visualization.Table(document.getElementById('table-tax-prop-seq'));
-          tablecatpropseq.draw(data);
-
-      } // function TaxPropSeqTable
-
-      function TaxPropBase(){
-
-          var title = 'Organisms in Taxonomic & ENV at each archive (Bases)';
-
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Archive');
-          data.addColumn('number', 'HUM');
-          data.addColumn('number', 'PRI');
-          data.addColumn('number', 'ROD');
-          data.addColumn('number', 'MAM');
-          data.addColumn('number', 'VRT');
-          data.addColumn('number', 'INV');
-          data.addColumn('number', 'PLN');
-          data.addColumn('number', 'BCT');
-          data.addColumn('number', 'VRL');
-          data.addColumn('number', 'PHG');
-          data.addColumn('number', 'ENV');
-          data.addRows([chart_ddbj_tax_base_a,chart_ena_tax_base_a,chart_genbank_tax_base_a]);
-
-      var options ={
-        title: title, 
-        width: 650,      
-        height: 350,
-        isStacked: true,
-        titleTextStyle: {fontSize:15},
-        colors: ['#4b7bb2','#86a04f','#4291a7','#a34542','#6d5689','#d3823f','#91a5c9','#cb908f','#b6c894', '#ff0000','#90bdce'],
-        vAxis: {title: 'Archive', textStyle: {fontSize:12}},
-        legend: {position: 'right', textStyle: {fontSize: 12}},
-        hAxis:{title:'Proportion in Release ' + release_no + ' (%)', textStyle: {fontSize:12}, viewWindow:{min:0, max:100}},
-        chartArea:{left:70, width:'70%', height:'65%'}
-      };
-
-          var taxpropbase = new google.visualization.BarChart(document.getElementById('chart-tax-prop-base')); 
-          taxpropbase.draw(data, options);
-      
-      } // function DDBJReleasePropSeq()
-
-      function TaxPropBaseTable(){
-        
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Category');          
-          data.addColumn('number', 'DDBJ Bases');
-          data.addColumn('number', '%');
-          data.addColumn('number', 'ENA Bases');
-          data.addColumn('number', '%');
-          data.addColumn('number', 'GenBank Bases');
-          data.addColumn('number', '%');
-
-          data.addRows(table_tax_base_a);
-
-          var tablecatpropbase = new google.visualization.Table(document.getElementById('table-tax-prop-base'));
-          tablecatpropbase.draw(data);
-
-      } // function TaxPropSeqTable
-      })  // $.getJSON 
-
-  // DDBJ 最新リリースにおける上生物種ランキング
-  var table_org_ranking_a = [];
-      
-  google.charts.load('current', {'packages':['corechart', 'table']});
-
-    // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-    $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['organism-ranking'] + "/public/values?alt=json", function(data) {
-
-      var org_rank = data.feed.entry;      
-      var release_no = org_rank[0].gsx$release.$t;
-      var org_rank_limit = 19;
-
-            // ranking 1-20
-            for(var i = 0; i <= org_rank_limit; i++) {
-                table_org_ranking_a.push([parseInt(org_rank[i].gsx$rank.$t, 10), org_rank[i].gsx$organism.$t, parseInt(org_rank[i].gsx$sequences.$t, 10), parseInt(org_rank[i].gsx$bases.$t, 10)]);    
-            }
-
-        // 棒グラフ描画 size
-        google.charts.setOnLoadCallback(OrgRankingTable);
-
-      function OrgRankingTable(){
-
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('number', 'Rank');          
-          data.addColumn('string', 'Organism');
-          data.addColumn('number', 'Sequences');
-          data.addColumn('number', 'Bases');
-
-          data.addRows(table_org_ranking_a);
-
-          var tableorgrank = new google.visualization.Table(document.getElementById('table_organism_ranking'));
-          tableorgrank.draw(data);
-
-      } // function OrgRankingTable
-
-    })  // $.getJSON 
-
-  // DDBJ 最新リリースにおける Journal ランキング
-  var table_journal_ranking_a = [];
-      
-  google.charts.load('current', {'packages':['corechart', 'table']});
-
-    // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-    $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['journal-ranking'] + "/public/values?alt=json", function(data) {
-
-      var journal_rank = data.feed.entry;      
-      var release_no = journal_rank[0].gsx$release.$t;
-      var journal_rank_limit = 19;
-
-            // ranking 1-20
-            for(var i = 0; i <= journal_rank_limit; i++) {
-                table_journal_ranking_a.push([parseInt(journal_rank[i].gsx$rank.$t, 10), journal_rank[i].gsx$journal.$t, parseInt(journal_rank[i].gsx$counts.$t, 10)]);    
-            }
-
-        // 棒グラフ描画 size
-        google.charts.setOnLoadCallback(JournalRankingTable);
-
-      function JournalRankingTable(){
-
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('number', 'Rank');          
-          data.addColumn('string', 'Journal');
-          data.addColumn('number', 'Counts');
-
-          data.addRows(table_journal_ranking_a);
-
-          var tablejournalrank = new google.visualization.Table(document.getElementById('table_journal_ranking'));
-          tablejournalrank.draw(data);
-
-      } // function JournalRankingTable
-
-    })  // $.getJSON 
-      
-} // if (filepath=="/stats/release"  || filepath=="/stats/release-old" )
-
 // WGS リリースデータ (DDBJ 登録分)
 if ( filepath=="/stats/wgs-release"){
 
@@ -2106,8 +1293,801 @@ if ( filepath=="/stats/gea-release"){
 
 
 $(function(){
+  console.log( 'filepath:', filepath )
+  makeDDBJRelease();
   makeSubmission();
 });
+
+// DDBJ リリース統計
+function makeDDBJRelease() {
+
+  // DDBJ リリース総データ量推移
+  var release_new = 107; // release 107 から bulk sequence が含まれている
+    
+  google.charts.load('current', {'packages':['corechart', 'table']});
+
+  // 統計公開シート https://docs.goosgle.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
+  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['ddbj-release'] + "/public/values?alt=json", function(data) {
+
+    var ddbj_release = data.feed.entry;
+    var chart_a = [];
+    var chart_table_a = [];
+    
+    for(var i = release_new - 1; i < ddbj_release.length; i++) {
+      
+      var year_month = ddbj_release[i].gsx$yearmonth.$t;
+      var release_no = ddbj_release[i].gsx$release.$t;
+      var bases = parseInt(ddbj_release[i].gsx$bases.$t, 10);
+      var sequences = parseInt(ddbj_release[i].gsx$sequences.$t, 10);
+      var comments = ddbj_release[i].gsx$comments.$t;
+
+      // リリース毎に配列に格納
+      chart_a.push([release_no + " (" + year_month + ")", roundFloat(sequences/10**6, 2), roundFloat(bases/10**9, 2)]);                          
+      chart_table_a.push([release_no, year_month, sequences, bases, comments]);
+      
+    } // for(var i = 0; i < ddbj_release.length; i++)
+
+    // 棒グラフ描画 size
+    google.charts.setOnLoadCallback(DDBJReleaseGrowth);
+    google.charts.setOnLoadCallback(DDBJReleaseGrowthTable);
+
+    function DDBJReleaseGrowth(){
+
+      var title = 'DDBJ/ENA/GenBank database growth';
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Release No.');
+      data.addColumn('number', 'Sequences');
+      data.addColumn('number', 'Bases');
+      data.addRows(chart_a);
+
+      var options = {
+        title: title,
+        width: 600,
+        height: 500,
+        titleTextStyle: {fontSize:15},
+        legend:{position:'top', textStyle: {fontSize: 12}},
+        series: {            
+          0:{color:'#5b84d6', targetAxisIndex: 0, type:'line'},
+          1:{color:'#ff0000', targetAxisIndex: 1, type:'line'}
+        },
+        hAxis:{
+          title: 'Release',
+          textStyle: {fontSize:12},
+          slantedText:true, 
+          slantedTextAngle:90
+        },
+        vAxes: {
+          0: {   
+            title: 'Sequences (million)',
+            color:'#ff0000',
+            textStyle: {fontSize:12},
+            viewWindow: {min:500, max:2500},
+            gridlines: {count:5}
+          },
+          1: {
+            title: 'Bases (billion)',
+            textStyle: {fontSize:12},
+            viewWindow: {min:2000, max:7000},
+            gridlines: {count:6}
+          }
+        },
+        chartArea:{top:60},
+        titlePosition:'out'
+      };
+
+      var ddbjrelease = new google.visualization.ColumnChart(document.getElementById('ddbj-release-growth-chart'));          
+      ddbjrelease.draw(data, options);
+
+    } // function DDBJReleaseGrowth()
+
+    function DDBJReleaseGrowthTable(){
+      
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Release');
+      data.addColumn('string', 'Date');
+      data.addColumn('number', 'Sequences');
+      data.addColumn('number', 'Bases');
+      data.addColumn('string', 'Comments');
+
+      data.addRows(chart_table_a);
+      data.setProperty(0, 4, 'style', 'width:40%');
+
+      var options = {
+        allowHtml: true
+      }
+
+      var ddbjreleaset = new google.visualization.Table(document.getElementById('ddbj-release-growth-table'));
+      ddbjreleaset.draw(data, options);
+
+    } // function drawTotalDRAReleaseTable()
+
+  })  // $.getJSON 
+
+  // DDBJ リリース配列数、塩基数各バンクの割合
+  release_new = 107; // release 107 から bulk sequence が含まれている
+  var chart_seq_a = [];
+  var chart_base_a = [];
+  var chart_seq_table_a = [];
+  var chart_base_table_a = [];
+    
+  google.charts.load('current', {'packages':['corechart', 'table']});
+
+  // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
+  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['ddbj-release-proportion'] + "/public/values?alt=json", function(data) {
+
+    var ddbj_release = data.feed.entry;
+          
+    // release 10 からなので 9 をさらに引いている
+    for(var i = release_new - 1 - 9; i < ddbj_release.length; i++) {
+      
+      var release_no = ddbj_release[i].gsx$release.$t;
+      var year_month = ddbj_release[i].gsx$yearmonth.$t;              
+      var ddbjsequences = parseInt(ddbj_release[i].gsx$ddbjsequences.$t, 10);
+      var jposequences = parseInt(ddbj_release[i].gsx$jposequences.$t, 10);
+      var kiposequences = parseInt(ddbj_release[i].gsx$kiposequences.$t, 10);
+      var ddbjsubtotalsequences = ddbjsequences + jposequences + kiposequences;
+      
+      var enasequences = parseInt(ddbj_release[i].gsx$enasequences.$t, 10);
+      var eposequences = parseInt(ddbj_release[i].gsx$eposequences.$t, 10);
+      var enasubtotalsequences = enasequences + eposequences;
+      
+      var genbanksequences = parseInt(ddbj_release[i].gsx$genbanksequences.$t, 10);
+      var usptosequences = parseInt(ddbj_release[i].gsx$usptosequences.$t, 10);
+      var genbanksubtotalsequences = genbanksequences + usptosequences;
+      
+      var totalsequences = parseInt(ddbj_release[i].gsx$totalsequences.$t, 10);
+
+      var ddbjbases = parseInt(ddbj_release[i].gsx$ddbjbases.$t, 10);
+      var jpobases = parseInt(ddbj_release[i].gsx$jpobases.$t, 10);
+      var kipobases = parseInt(ddbj_release[i].gsx$kipobases.$t, 10);
+      var ddbjsubtotalbases = ddbjbases + jpobases + kipobases;
+
+      var enabases = parseInt(ddbj_release[i].gsx$enabases.$t, 10);
+      var epobases = parseInt(ddbj_release[i].gsx$epobases.$t, 10);
+      var enasubtotalbases = enabases + epobases;
+
+      var genbankbases = parseInt(ddbj_release[i].gsx$genbankbases.$t, 10);
+      var usptobases = parseInt(ddbj_release[i].gsx$usptobases.$t, 10);
+      var genbanksubtotalbases = genbankbases + usptobases;
+
+      var totalbases = parseInt(ddbj_release[i].gsx$totalbases.$t, 10);
+
+      // リリース毎に配列に格納                            
+      chart_seq_a.push([release_no + " (" + year_month + ")", roundFloat(genbanksubtotalsequences/10**6, 2), roundFloat(enasubtotalsequences/10**6, 2), roundFloat(ddbjsubtotalsequences/10**6, 2)]);
+      chart_seq_table_a.push([release_no + " (" + year_month + ")", ddbjsubtotalsequences, enasubtotalsequences, genbanksubtotalsequences, totalsequences]);
+
+      chart_base_a.push([release_no + " (" + year_month + ")", roundFloat(genbanksubtotalbases/10**9, 2), roundFloat(enasubtotalbases/10**9, 2), roundFloat(ddbjsubtotalbases/10**9, 2)]);
+      chart_base_table_a.push([release_no + " (" + year_month + ")", ddbjsubtotalbases, enasubtotalbases, genbanksubtotalbases, totalbases]);
+
+    } // for(var i = 0; i < ddbj_release.length; i++)
+
+    // 棒グラフ描画 size
+    google.charts.setOnLoadCallback(DDBJReleasePropSeq);
+    google.charts.setOnLoadCallback(DDBJReleasePropSeqTable);
+
+    google.charts.setOnLoadCallback(DDBJReleasePropBase);
+    google.charts.setOnLoadCallback(DDBJReleasePropBaseTable);
+
+    function DDBJReleasePropSeq(){
+
+      var title = 'Proportion of each archive in total data volume (Sequences)';
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Release');          
+      data.addColumn('number', 'GenBank');
+      data.addColumn('number', 'ENA');
+      data.addColumn('number', 'DDBJ');          
+      data.addRows(chart_seq_a);
+
+      var options = {
+        title: title, 
+        width:700,
+        height:500,
+        titleTextStyle: {fontSize:15},
+        legend:{position: 'top',  textStyle: {fontSize:12}},
+        hAxis: {title: 'Release', slantedText:true, slantedTextAngle:90, textStyle: {fontSize:12}},
+        isStacked: true,
+        colors: ['#528cde',  '#5fb4a0',  '#ff8a29'],
+        chartArea:{top:60},
+        vAxis: {title: 'Sequences (million)', textStyle: {fontSize:12}}
+      };
+
+      var charpropseq = new google.visualization.ColumnChart(document.getElementById('ddbj-release-prop-seq-chart')); 
+      charpropseq.draw(data, options);
+    
+    } // function DDBJReleasePropSeq()
+
+    function DDBJReleasePropSeqTable(){
+      
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Release');          
+      data.addColumn('number', 'DDBJ');
+      data.addColumn('number', 'ENA');
+      data.addColumn('number', 'GenBank');
+      data.addColumn('number', 'Total');
+      data.addRows(chart_seq_table_a);
+
+      var charpropseqtable = new google.visualization.Table(document.getElementById('ddbj-release-prop-seq-table'));
+      charpropseqtable.draw(data);
+
+    } // function DDBJReleasePropSeqTable
+
+    function DDBJReleasePropBase(){
+
+      var title = 'Proportion of each archive in total data volume (Bases)';
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Release');          
+      data.addColumn('number', 'GenBank');
+      data.addColumn('number', 'ENA');
+      data.addColumn('number', 'DDBJ');
+      data.addRows(chart_base_a);
+
+      var options = {
+        title: title, 
+        width:700,
+        height:500,
+        titleTextStyle: {fontSize:15},
+        legend:{position: 'top',  textStyle: {fontSize:12}},
+        hAxis: {title: 'Release', slantedText:true, slantedTextAngle:90, textStyle: {fontSize:12}},
+        isStacked: true,
+        colors: ['#528cde',  '#5fb4a0',  '#ff8a29'],
+        chartArea:{top:60},
+        vAxis: {title: 'Bases (billion)', textStyle: {fontSize:12}}
+      };
+
+      var charpropbase = new google.visualization.ColumnChart(document.getElementById('ddbj-release-prop-base-chart')); 
+      charpropbase.draw(data, options);
+    
+    } // function DDBJReleasePropBase
+
+    function DDBJReleasePropBaseTable(){
+      
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Release');
+      data.addColumn('number', 'DDBJ');
+      data.addColumn('number', 'ENA');
+      data.addColumn('number', 'GenBank');
+      data.addColumn('number', 'Total');
+      data.addRows(chart_base_table_a);
+
+      var charpropbasetable = new google.visualization.Table(document.getElementById('ddbj-release-prop-base-table'));
+      charpropbasetable.draw(data);
+
+    } // function DDBJReleasePropBaseTable
+
+  })  // $.getJSON 
+
+  // DDBJ 最新リリースにおけるアーカイブ毎の data category の割合
+  var chart_ddbj_cat_seq_a = ['DDBJ'];    
+  var chart_ena_cat_seq_a = ['ENA'];    
+  var chart_genbank_cat_seq_a = ['GenBank'];    
+  var table_cat_seq_a = [];
+  var chart_ddbj_cat_base_a = ['DDBJ'];    
+  var chart_ena_cat_base_a = ['ENA'];    
+  var chart_genbank_cat_base_a = ['GenBank'];    
+  var table_cat_base_a = [];
+    
+  google.charts.load('current', {'packages':['corechart', 'table']});
+
+  // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
+  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['ddbj-category'] + "/public/values?alt=json", function(data) {
+
+    var ddbj_cat = data.feed.entry;      
+    var release_no = ddbj_cat[0].gsx$release.$t;
+
+    // Category から Total まで
+    for(var i = 0; i < ddbj_cat.length; i++) {
+
+      // グラフからは Total を除く
+      if (i < ddbj_cat.length - 1){
+        chart_ddbj_cat_seq_a.push(parseFloat(ddbj_cat[i].gsx$ddbjsequencesproportion.$t, 10));    
+        chart_ena_cat_seq_a.push(parseFloat(ddbj_cat[i].gsx$enasequencesproportion.$t, 10));    
+        chart_genbank_cat_seq_a.push(parseFloat(ddbj_cat[i].gsx$genbanksequencesproportion.$t, 10));    
+        
+        chart_ddbj_cat_base_a.push(parseFloat(ddbj_cat[i].gsx$ddbjbasesproportion.$t, 10));    
+        chart_ena_cat_base_a.push(parseFloat(ddbj_cat[i].gsx$enabasesproportion.$t, 10));    
+        chart_genbank_cat_base_a.push(parseFloat(ddbj_cat[i].gsx$genbankbasesproportion.$t, 10));    
+      }
+
+      // 表には Total を含める
+      table_cat_seq_a.push([ddbj_cat[i].gsx$category.$t, parseInt(ddbj_cat[i].gsx$ddbjsequences.$t, 10), parseFloat(ddbj_cat[i].gsx$ddbjsequencesproportion.$t, 10), parseInt(ddbj_cat[i].gsx$enasequences.$t, 10), parseFloat(ddbj_cat[i].gsx$enasequencesproportion.$t, 10), parseInt(ddbj_cat[i].gsx$genbanksequences.$t, 10), parseFloat(ddbj_cat[i].gsx$genbanksequencesproportion.$t, 10)])
+      table_cat_base_a.push([ddbj_cat[i].gsx$category.$t, parseInt(ddbj_cat[i].gsx$ddbjbases.$t, 10), parseFloat(ddbj_cat[i].gsx$ddbjbasesproportion.$t, 10), parseInt(ddbj_cat[i].gsx$enabases.$t, 10), parseFloat(ddbj_cat[i].gsx$enabasesproportion.$t, 10), parseInt(ddbj_cat[i].gsx$genbankbases.$t, 10), parseFloat(ddbj_cat[i].gsx$genbankbasesproportion.$t, 10)])
+
+    } // for(var i = 0; i < ddbj_release.length; i++)
+
+    // 棒グラフ描画 size
+    google.charts.setOnLoadCallback(CategoryPropSeq);
+    google.charts.setOnLoadCallback(CategoryPropSeqTable);
+
+    google.charts.setOnLoadCallback(CategoryPropBase);
+    google.charts.setOnLoadCallback(CategoryPropBaseTable);
+
+    function CategoryPropSeq(){
+
+      var title = 'Data categories at each archive (Sequences)';
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Archive');          
+      data.addColumn('number', 'Taxonomic & Env');
+      data.addColumn('number', 'SYN');
+      data.addColumn('number', 'EST');
+      data.addColumn('number', 'TSA');
+      data.addColumn('number', 'GSS');
+      data.addColumn('number', 'HTC');
+      data.addColumn('number', 'HTG');
+      data.addColumn('number', 'STS');
+      data.addColumn('number', 'PAT');
+      data.addColumn('number', 'WGS');
+      data.addRows([chart_ddbj_cat_seq_a,chart_ena_cat_seq_a,chart_genbank_cat_seq_a]);
+
+      var options ={
+        title: title, 
+        width: 650,      
+        height: 300,
+        isStacked: true,
+        titleTextStyle: {fontSize:15},
+        colors: ['#a14543','#439ea0','#4291a7','#42a78b','#f1d7c2','#565989','#d33f46','#91c1c9','#cb8fac','#ae8fcb'],
+        vAxis: {title: 'Archive', textStyle: {fontSize:12}},
+        legend: {position: 'right', textStyle: {fontSize: 12}},
+        hAxis:{title:'Proportion in Release ' + release_no + ' (%)', textStyle: {fontSize:12}, viewWindow:{min:0, max:100}},
+        chartArea:{left:70,width:'65%'}
+      };
+
+      var catpropseq = new google.visualization.BarChart(document.getElementById('ddbj-release-chart-div-all-seq')); 
+      catpropseq.draw(data, options);
+    
+    } // function DDBJReleasePropSeq()
+
+    function CategoryPropSeqTable(){
+      
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Category');          
+      data.addColumn('number', 'DDBJ Sequences');
+      data.addColumn('number', '%');
+      data.addColumn('number', 'ENA Sequences');
+      data.addColumn('number', '%');
+      data.addColumn('number', 'GenBank Sequences');
+      data.addColumn('number', '%');
+
+      data.addRows(table_cat_seq_a);
+
+      var tablecatpropseq = new google.visualization.Table(document.getElementById('ddbj-release-table-div-all-seq'));
+      tablecatpropseq.draw(data);
+
+    } // function CategoryPropSeqTable
+
+    function CategoryPropBase(){
+
+      var title = 'Data categories at each archive (Bases)';
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Archive');          
+      data.addColumn('number', 'Taxonomic & Env');
+      data.addColumn('number', 'SYN');
+      data.addColumn('number', 'EST');
+      data.addColumn('number', 'TSA');
+      data.addColumn('number', 'GSS');
+      data.addColumn('number', 'HTC');
+      data.addColumn('number', 'HTG');
+      data.addColumn('number', 'STS');
+      data.addColumn('number', 'PAT');
+      data.addColumn('number', 'WGS');
+      data.addRows([chart_ddbj_cat_base_a, chart_ena_cat_base_a, chart_genbank_cat_base_a]);
+
+      var options ={
+        title: title, 
+        width: 650,      
+        height: 300,
+        isStacked: true,
+        titleTextStyle: {fontSize:15},
+        colors: ['#a14543','#439ea0','#4291a7','#42a78b','#f1d7c2','#565989','#d33f46','#91c1c9','#cb8fac','#ae8fcb'],
+        vAxis: {title: 'Archive', textStyle: {fontSize:12}},
+        legend: {position: 'right', textStyle: {fontSize: 12}},
+        hAxis:{title:'Proportion in Release ' + release_no + ' (%)', textStyle: {fontSize:12}, viewWindow: {min:0, max:100}},
+        chartArea:{left:70,width:'65%'}
+      };
+
+      var catpropbase = new google.visualization.BarChart(document.getElementById('ddbj-release-chart-div-all-base')); 
+      catpropbase.draw(data, options);
+    
+    } // function DDBJReleasePropSeq()
+
+    function CategoryPropBaseTable(){
+      
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Category');          
+      data.addColumn('number', 'DDBJ Bases');
+      data.addColumn('number', '%');
+      data.addColumn('number', 'ENA Bases');
+      data.addColumn('number', '%');
+      data.addColumn('number', 'GenBank Bases');
+      data.addColumn('number', '%');
+
+      data.addRows(table_cat_base_a);
+
+      var tablecatpropbase = new google.visualization.Table(document.getElementById('ddbj-release-table-div-all-base'));
+      tablecatpropbase.draw(data);
+
+    } // function CategoryPropSeqTable
+
+  })  // $.getJSON 
+
+  // DDBJ 最新リリースにおけるアーカイブ毎の division の割合
+  var chart_div_seq_a = [];    
+  var table_div_seq_a = [];
+  var chart_div_base_a = [];    
+  var table_div_base_a = [];
+    
+  google.charts.load('current', {'packages':['corechart', 'table']});
+
+  // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
+  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['archive-proportion-category'] + "/public/values?alt=json", function(data) {
+
+    var ddbj_cat = data.feed.entry;      
+    var release_no = ddbj_cat[0].gsx$release.$t;
+
+    // 各 division におけるアーカイブの割合を取得
+    for(var i = 0; i < ddbj_cat.length; i++) {
+
+      chart_div_seq_a.push([ddbj_cat[i].gsx$category.$t, parseFloat(ddbj_cat[i].gsx$ddbjsequencesproportion.$t, 10), parseFloat(ddbj_cat[i].gsx$enasequencesproportion.$t, 10), parseFloat(ddbj_cat[i].gsx$genbanksequencesproportion.$t, 10)]);    
+      chart_div_base_a.push([ddbj_cat[i].gsx$category.$t, parseFloat(ddbj_cat[i].gsx$ddbjbasesproportion.$t, 10), parseFloat(ddbj_cat[i].gsx$enabasesproportion.$t, 10), parseFloat(ddbj_cat[i].gsx$genbankbasesproportion.$t, 10)]);    
+
+      table_div_seq_a.push([ddbj_cat[i].gsx$category.$t, parseInt(ddbj_cat[i].gsx$ddbjsequences.$t, 10), parseFloat(ddbj_cat[i].gsx$ddbjsequencesproportion.$t, 10), parseInt(ddbj_cat[i].gsx$enasequences.$t, 10), parseFloat(ddbj_cat[i].gsx$enasequencesproportion.$t, 10), parseInt(ddbj_cat[i].gsx$genbanksequences.$t, 10), parseFloat(ddbj_cat[i].gsx$genbanksequencesproportion.$t, 10)]);    
+      table_div_base_a.push([ddbj_cat[i].gsx$category.$t, parseInt(ddbj_cat[i].gsx$ddbjbases.$t, 10), parseFloat(ddbj_cat[i].gsx$ddbjbasesproportion.$t, 10), parseInt(ddbj_cat[i].gsx$enabases.$t, 10), parseFloat(ddbj_cat[i].gsx$enabasesproportion.$t, 10), parseInt(ddbj_cat[i].gsx$genbankbases.$t, 10), parseFloat(ddbj_cat[i].gsx$genbankbasesproportion.$t, 10)]);    
+
+    } // for(var i = 0; i < ddbj_release.length; i++)
+
+    // 棒グラフ描画 size
+    google.charts.setOnLoadCallback(DivPropSeq);
+    google.charts.setOnLoadCallback(DivPropSeqTable);
+
+    google.charts.setOnLoadCallback(DivPropBase);
+    google.charts.setOnLoadCallback(DivPropBaseTable);
+
+    function DivPropSeq(){
+
+      var title = 'Proportion of each archive per data category (Sequences)';
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Category');          
+      data.addColumn('number', 'DDBJ');
+      data.addColumn('number', 'ENA');
+      data.addColumn('number', 'GenBank');
+      data.addRows(chart_div_seq_a);
+
+      var options = {
+        title: title,
+        width: 650,      
+        height: 450,
+        isStacked: true,
+        titleTextStyle: {fontSize:15},
+        legend: {position: 'right', textStyle: {fontSize: 12}},
+        colors: ['#ff8a29',  '#5fb4a0',  '#528cde'],
+        vAxis: {title: 'Category', textStyle: {fontSize:12}},
+        chartArea:{height:'75%'},
+        hAxis:{title: 'Proportion of each archive in Release ' + release_no + ' (%)', textStyle: {fontSize:12}, viewWindow:{min:0, max:100}}
+      };
+
+      var catpropseq = new google.visualization.BarChart(document.getElementById('cddbj-release-chart-prop-category-seq')); 
+      catpropseq.draw(data, options);
+    
+    } // function DDBJReleasePropSeq()
+
+    function DivPropSeqTable(){
+      
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Category');          
+      data.addColumn('number', 'DDBJ Sequences');
+      data.addColumn('number', '%');
+      data.addColumn('number', 'ENA Sequences');
+      data.addColumn('number', '%');
+      data.addColumn('number', 'GenBank Sequences');
+      data.addColumn('number', '%');
+      data.addRows(table_div_seq_a);
+
+      var tablepropseq = new google.visualization.Table(document.getElementById('ddbj-release-table-prop-category-seq'));
+      tablepropseq.draw(data);
+
+    } // function CategoryPropSeqTable
+
+    function DivPropBase(){
+
+      var title = 'Proportion of each archive per data category (Bases)';
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Category');          
+      data.addColumn('number', 'DDBJ');
+      data.addColumn('number', 'ENA');
+      data.addColumn('number', 'GenBank');
+      data.addRows(chart_div_base_a);
+
+      var options = {
+        title: title,
+        width: 650,      
+        height: 550,
+        isStacked: true,
+        titleTextStyle: {fontSize:15},
+        legend: {position: 'right', textStyle: {fontSize: 12}},
+        colors: ['#ff8a29',  '#5fb4a0',  '#528cde'],
+        vAxis: {title: 'Category', textStyle: {fontSize:12}},
+        chartArea:{height:'75%'},
+        hAxis:{title: 'Proportion of each archive in Release ' + release_no + ' (%)', textStyle: {fontSize:12}, viewWindow:{min:0, max:100}}
+      };
+
+      var catpropbase = new google.visualization.BarChart(document.getElementById('ddbj-release-chart-prop-category-base')); 
+      catpropbase.draw(data, options);
+  
+    } // function DDBJReleasePropSeq()
+
+    function DivPropBaseTable(){
+      
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Category');          
+      data.addColumn('number', 'DDBJ Bases');
+      data.addColumn('number', '%');
+      data.addColumn('number', 'ENA Bases');
+      data.addColumn('number', '%');
+      data.addColumn('number', 'GenBank Bases');
+      data.addColumn('number', '%');
+      data.addRows(table_div_base_a);
+
+      var tablepropbase = new google.visualization.Table(document.getElementById('ddbj-release-table-prop-category-base'));
+      tablepropbase.draw(data);
+
+    } // function CategoryPropSeqTable
+
+  })  // $.getJSON 
+
+  // DDBJ 最新リリースにおけるアーカイブ毎の tax & env における div 割合
+  var chart_ddbj_tax_seq_a = ['DDBJ'];    
+  var chart_ena_tax_seq_a = ['ENA'];    
+  var chart_genbank_tax_seq_a = ['GenBank'];    
+  var table_tax_seq_a = [];
+  var chart_ddbj_tax_base_a = ['DDBJ'];    
+  var chart_ena_tax_base_a = ['ENA'];    
+  var chart_genbank_tax_base_a = ['GenBank'];    
+  var table_tax_base_a = [];
+  
+  google.charts.load('current', {'packages':['corechart', 'table']});
+
+  // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
+  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['organism-archive'] + "/public/values?alt=json", function(data) {
+
+    var ddbj_tax = data.feed.entry;      
+    var release_no = ddbj_tax[0].gsx$release.$t;
+
+    // Tax から Total まで
+    for(var i = 0; i < ddbj_tax.length; i++) {
+
+      // グラフからは Total を除く
+      if (i < ddbj_tax.length - 1){
+        chart_ddbj_tax_seq_a.push(parseFloat(ddbj_tax[i].gsx$ddbjsequencesproportion.$t, 10));    
+        chart_ena_tax_seq_a.push(parseFloat(ddbj_tax[i].gsx$enasequencesproportion.$t, 10));    
+        chart_genbank_tax_seq_a.push(parseFloat(ddbj_tax[i].gsx$genbanksequencesproportion.$t, 10));    
+        
+        chart_ddbj_tax_base_a.push(parseFloat(ddbj_tax[i].gsx$ddbjbasesproportion.$t, 10));    
+        chart_ena_tax_base_a.push(parseFloat(ddbj_tax[i].gsx$enabasesproportion.$t, 10));    
+        chart_genbank_tax_base_a.push(parseFloat(ddbj_tax[i].gsx$genbankbasesproportion.$t, 10));    
+      }
+
+      // 表には Total を含める
+      table_tax_seq_a.push([ddbj_tax[i].gsx$category.$t, parseInt(ddbj_tax[i].gsx$ddbjsequences.$t, 10), parseFloat(ddbj_tax[i].gsx$ddbjsequencesproportion.$t, 10), parseInt(ddbj_tax[i].gsx$enasequences.$t, 10), parseFloat(ddbj_tax[i].gsx$enasequencesproportion.$t, 10), parseInt(ddbj_tax[i].gsx$genbanksequences.$t, 10), parseFloat(ddbj_tax[i].gsx$genbanksequencesproportion.$t, 10)])
+      table_tax_base_a.push([ddbj_tax[i].gsx$category.$t, parseInt(ddbj_tax[i].gsx$ddbjbases.$t, 10), parseFloat(ddbj_tax[i].gsx$ddbjbasesproportion.$t, 10), parseInt(ddbj_tax[i].gsx$enabases.$t, 10), parseFloat(ddbj_tax[i].gsx$enabasesproportion.$t, 10), parseInt(ddbj_tax[i].gsx$genbankbases.$t, 10), parseFloat(ddbj_tax[i].gsx$genbankbasesproportion.$t, 10)])
+
+    } // for(var i = 0; i < ddbj_release.length; i++)
+
+    // 棒グラフ描画 size
+    google.charts.setOnLoadCallback(TaxPropSeq);
+    google.charts.setOnLoadCallback(TaxPropSeqTable);
+
+    google.charts.setOnLoadCallback(TaxPropBase);
+    google.charts.setOnLoadCallback(TaxPropBaseTable);
+
+    function TaxPropSeq(){
+
+      var title = 'Organisms in Taxonomic & ENV at each archive (Sequences)';
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Archive');
+      data.addColumn('number', 'HUM');
+      data.addColumn('number', 'PRI');
+      data.addColumn('number', 'ROD');
+      data.addColumn('number', 'MAM');
+      data.addColumn('number', 'VRT');
+      data.addColumn('number', 'INV');
+      data.addColumn('number', 'PLN');
+      data.addColumn('number', 'BCT');
+      data.addColumn('number', 'VRL');
+      data.addColumn('number', 'PHG');
+      data.addColumn('number', 'ENV');
+      data.addRows([chart_ddbj_tax_seq_a,chart_ena_tax_seq_a,chart_genbank_tax_seq_a]);
+
+      var options ={
+        title: title, 
+        width: 650,      
+        height: 350,
+        isStacked: true,
+        titleTextStyle: {fontSize:15},
+        colors: ['#4b7bb2','#86a04f','#4291a7','#a34542','#6d5689','#d3823f','#91a5c9','#cb908f','#b6c894', '#ff0000','#90bdce'],
+        vAxis: {title: 'Archive', textStyle: {fontSize:12}},
+        legend: {position: 'right', textStyle: {fontSize: 12}},
+        hAxis:{title:'Proportion in Release ' + release_no + ' (%)', textStyle: {fontSize:12}, viewWindow:{min:0, max:100}},
+        chartArea:{left:70, width:'70%', height:'65%'}
+      };
+
+      var taxpropseq = new google.visualization.BarChart(document.getElementById('ddbj-release-chart-tax-prop-seq')); 
+      taxpropseq.draw(data, options);
+    
+    } // function DDBJReleasePropSeq()
+
+    function TaxPropSeqTable(){
+      
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Category');          
+      data.addColumn('number', 'DDBJ Sequences');
+      data.addColumn('number', '%');
+      data.addColumn('number', 'ENA Sequences');
+      data.addColumn('number', '%');
+      data.addColumn('number', 'GenBank Sequences');
+      data.addColumn('number', '%');
+
+      data.addRows(table_tax_seq_a);
+
+      var tablecatpropseq = new google.visualization.Table(document.getElementById('ddbj-release-table-tax-prop-seq'));
+      tablecatpropseq.draw(data);
+
+    } // function TaxPropSeqTable
+
+    function TaxPropBase(){
+
+      var title = 'Organisms in Taxonomic & ENV at each archive (Bases)';
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Archive');
+      data.addColumn('number', 'HUM');
+      data.addColumn('number', 'PRI');
+      data.addColumn('number', 'ROD');
+      data.addColumn('number', 'MAM');
+      data.addColumn('number', 'VRT');
+      data.addColumn('number', 'INV');
+      data.addColumn('number', 'PLN');
+      data.addColumn('number', 'BCT');
+      data.addColumn('number', 'VRL');
+      data.addColumn('number', 'PHG');
+      data.addColumn('number', 'ENV');
+      data.addRows([chart_ddbj_tax_base_a,chart_ena_tax_base_a,chart_genbank_tax_base_a]);
+
+      var options ={
+        title: title, 
+        width: 650,      
+        height: 350,
+        isStacked: true,
+        titleTextStyle: {fontSize:15},
+        colors: ['#4b7bb2','#86a04f','#4291a7','#a34542','#6d5689','#d3823f','#91a5c9','#cb908f','#b6c894', '#ff0000','#90bdce'],
+        vAxis: {title: 'Archive', textStyle: {fontSize:12}},
+        legend: {position: 'right', textStyle: {fontSize: 12}},
+        hAxis:{title:'Proportion in Release ' + release_no + ' (%)', textStyle: {fontSize:12}, viewWindow:{min:0, max:100}},
+        chartArea:{left:70, width:'70%', height:'65%'}
+      };
+
+      var taxpropbase = new google.visualization.BarChart(document.getElementById('ddbj-release-chart-tax-prop-base')); 
+      taxpropbase.draw(data, options);
+    
+    } // function DDBJReleasePropSeq()
+
+    function TaxPropBaseTable(){
+      
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Category');          
+      data.addColumn('number', 'DDBJ Bases');
+      data.addColumn('number', '%');
+      data.addColumn('number', 'ENA Bases');
+      data.addColumn('number', '%');
+      data.addColumn('number', 'GenBank Bases');
+      data.addColumn('number', '%');
+
+      data.addRows(table_tax_base_a);
+
+      var tablecatpropbase = new google.visualization.Table(document.getElementById('ddbj-release-table-tax-prop-base'));
+      tablecatpropbase.draw(data);
+
+    } // function TaxPropSeqTable
+  })  // $.getJSON 
+
+  // DDBJ 最新リリースにおける上生物種ランキング
+  var table_org_ranking_a = [];
+      
+  google.charts.load('current', {'packages':['corechart', 'table']});
+
+  // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
+  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['organism-ranking'] + "/public/values?alt=json", function(data) {
+
+    var org_rank = data.feed.entry;      
+    var org_rank_limit = 19;
+
+    // ranking 1-20
+    for(var i = 0; i <= org_rank_limit; i++) {
+      table_org_ranking_a.push([parseInt(org_rank[i].gsx$rank.$t, 10), org_rank[i].gsx$organism.$t, parseInt(org_rank[i].gsx$sequences.$t, 10), parseInt(org_rank[i].gsx$bases.$t, 10)]);    
+    }
+
+    // 棒グラフ描画 size
+    google.charts.setOnLoadCallback(OrgRankingTable);
+
+    function OrgRankingTable(){
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'Rank');          
+      data.addColumn('string', 'Organism');
+      data.addColumn('number', 'Sequences');
+      data.addColumn('number', 'Bases');
+
+      data.addRows(table_org_ranking_a);
+
+      var tableorgrank = new google.visualization.Table(document.getElementById('ddbj-release-table_organism_ranking'));
+      tableorgrank.draw(data);
+
+    } // function OrgRankingTable
+
+  })  // $.getJSON 
+
+  // DDBJ 最新リリースにおける Journal ランキング
+  var table_journal_ranking_a = [];
+      
+  google.charts.load('current', {'packages':['corechart', 'table']});
+
+  // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
+  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['journal-ranking'] + "/public/values?alt=json", function(data) {
+
+    var journal_rank = data.feed.entry;      
+    var journal_rank_limit = 19;
+
+    // ranking 1-20
+    for(var i = 0; i <= journal_rank_limit; i++) {
+      table_journal_ranking_a.push([parseInt(journal_rank[i].gsx$rank.$t, 10), journal_rank[i].gsx$journal.$t, parseInt(journal_rank[i].gsx$counts.$t, 10)]);    
+    }
+
+    // 棒グラフ描画 size
+    google.charts.setOnLoadCallback(JournalRankingTable);
+
+    function JournalRankingTable(){
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'Rank');          
+      data.addColumn('string', 'Journal');
+      data.addColumn('number', 'Counts');
+
+      data.addRows(table_journal_ranking_a);
+
+      var tablejournalrank = new google.visualization.Table(document.getElementById('ddbj-release-table_journal_ranking'));
+      tablejournalrank.draw(data);
+
+    } // function JournalRankingTable
+
+  })  // $.getJSON
+}
+
 
 // DDBJ への登録ルート毎の submission
 function makeSubmission() {
