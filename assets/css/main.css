@@ -282,6 +282,9 @@ input, textarea, select, button {
         right: .5em;
         line-height: 1.6; }
 
+.google-visualization-table-table {
+  margin-bottom: 1rem; }
+
 .internal-link {
   padding: 2.4rem 1.6rem 2.4rem 4rem; }
   .internal-link > .title {
@@ -509,10 +512,10 @@ input, textarea, select, button {
     display: block; }
   .md-content .float-left {
     float: left;
-    width: 50%; }
+    width: 48%; }
   .md-content .float-right {
     float: right;
-    width: 50%; }
+    width: 48%; }
     .md-content .float-right img {
       width: 100%; }
   .md-content .float-release {

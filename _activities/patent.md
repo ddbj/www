@@ -145,7 +145,7 @@ KIPO が保持する特許データの多くが，DDBJ からの公開に至っ�
 [getentry](http://getentry.ddbj.nig.ac.jp/top-j.html) では表1に示す様にアクセッション番号もしくは特許公報番号を指定することで，塩基配列データおよびアミノ酸配列データのエントリー検索が可能である。塩基配列データはアクセッション番号検索の他に，特許公報番号でも検索を行うことができる。特許公報番号の検索では JPO 以外に，KIPO，[米国特許商標庁(USPTO)](//www.uspto.gov/)，[欧州特許庁(EPO)](//www.epo.org/) 由来データの検索が可能である。しかしアミノ酸配列データではアクセッション番号検索のみで，特許公報番号での検索は行うことはできない。
 
 <table>
-  	<caption>表1：塩基配列/アミノ酸配列データの検索条件<br>＊各特許庁の特許公報番号の種類と検索に指定する入力フォーマットは，<a href="/getentry-help.html#parameter">getentry の HELP</a> を参照。</caption>
+    <caption>表1：塩基配列/アミノ酸配列データの検索条件<br>＊各特許庁の特許公報番号の種類と検索に指定する入力フォーマットは，<a href="/getentry-help.html#parameter">getentry の HELP</a> を参照。</caption>
     <thead>
       <tr>
         <th></th>
@@ -294,7 +294,7 @@ JPO データの FF 構造と各項目の記載内容について，塩基配列
     アミノ酸配列データの LOCUS 行は塩基配列データと記載内容が異なるため，図2にアミノ酸配列データの LOCUS 行の例を示した。
 
     {::nomarkdown}
-    <a class="group1 cboxElement"><figure class="size-optimize"><a href="{{ site.baseurl }}/assets/images/ddbj/column_14.jpg"><img src="{{ site.baseurl }}/assets/images/ddbj/column_14.jpg" alt="アミノ酸配列データの LOCUS 行(例)"></a><figcaption>図2：アミノ酸配列データの LOCUS 行(例)</figcaption></figure></a>
+    <a class="group1 cboxElement" href="{{ site.baseurl }}/assets/images/ddbj/column_14.jpg" title="アミノ酸配列データの LOCUS 行(例)"><figure class="size-optimize"><img src="{{ site.baseurl }}/assets/images/ddbj/column_14.jpg" alt="アミノ酸配列データの LOCUS 行(例)" /><figcaption>図2：アミノ酸配列データの LOCUS 行(例)a</figcaption></figure></a>
     {:/}
 
     [DEFINITION 行]  
