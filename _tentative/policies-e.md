@@ -22,17 +22,15 @@ email, please configure your email client to allow communications from
 [DDBJ email addresses and avoid being categorized as "junk
 mail"](/precautions-e.html).
 
-<div class="section chapter">
 
 ## Privacy policy
 
 DDBJ manages personal information in accordance with the policies of
-[the Research Organization of Information and
-Systems](https://www.rois.ac.jp/en/index.html) (ROIS).  
+[the Research Organization of Information and Systems](https://www.rois.ac.jp/en/index.html) (ROIS).  
 Use of personal information for data submission or using services shall
 be limited to the scope of the respective objectives.
 
-<div class="section section">
+
 
 ### Use of personal information of data submitters
 
@@ -45,23 +43,19 @@ be limited to the scope of the respective objectives.
     submitter is not respond to the forwarded question, we may let the
     questioned user know contact information of the submitter.
 
-</div>
-
-<div class="section chapter">
-
-<div class="section section">
 
 ## Submission of research data from human subjects
 
-<div class="red bold">
+{::options parse_block_html="true" /}
+<div class="red">
 
-The amended Act on the Protection of Personal Information and ethical
+**The amended Act on the Protection of Personal Information and ethical
 guidelines have been fully put into effect on May 30, 2017. This page
-has been revised accordingly.
+has been revised accordingly.**
 
 </div>
 
-#### Before submitting your data
+#### Before submitting your data<a name="before"></a>
 
 For submitting data from human subjects (human data) to the databases of
 DDBJ center, it is submitter's responsibility to ensure that the dignity
@@ -91,37 +85,37 @@ Before submitting human data, please consider whether controlled-access
 for the data is required or not (i.e. unrestricted access) on the basis
 of informed consents obtained from human subjects.
 
-  - Controlled-access database  
-    Submit your data to the controlled-access database ["Japanese
-    Genotype-phenotype Archive (JGA)"](/jga/index-e.html).  
-    Before submitting your data to JGA, you need an approval for data
-    submission from [National Bioscience Database Center
-    (NBDC)](https://humandbs.biosciencedbc.jp/en/data-submission) of
-    Japan Science and Technology Agency.
-  - Unrestricted-access database  
-    Submit your data to unrestricted-access databases [DDBJ Sequence
-    Read Archive (DRA)](/dra/index-e.html) or
-    [DDBJ](/ddbj/websub-e.html).  
-    To submit human data corresponding to personal identification code
-    (\*2), you need an approval for data submission from
-    [NBDC](https://humandbs.biosciencedbc.jp/en/data-submission). In
-    principle, the two points of "[Before submitting your
-    data"](#before) " must be fulfilled, and the informed consent
-    documents must explain that the human data are deposited to database
-    and are shared publicly.  
 
-\*2 Personal identification code is defined in the [guideline (Japanese
-only)](//www.ppc.go.jp/) of the [Personal Information Protection
-Commission](//www.ppc.go.jp/en/).
+Controlled-access database  
+: Submit your data to the controlled-access database ["Japanese
+Genotype-phenotype Archive (JGA)"](/jga/index-e.html).  
+Before submitting your data to JGA, you need an approval for data
+submission from [National Bioscience Database Center
+(NBDC)](https://humandbs.biosciencedbc.jp/en/data-submission) of
+Japan Science and Technology Agency.
+
+Unrestricted-access database  
+: Submit your data to unrestricted-access databases [DDBJ Sequence
+Read Archive (DRA)](/dra/index-e.html) or
+[DDBJ](/ddbj/websub-e.html).  
+To submit human data corresponding to personal identification code
+(\*2), you need an approval for data submission from
+[NBDC](https://humandbs.biosciencedbc.jp/en/data-submission). In
+principle, the two points of "[Before submitting your
+data"](#before) " must be fulfilled, and the informed consent
+documents must explain that the human data are deposited to database
+and are shared publicly.  
+
+\*2 Personal identification code is defined in the [guideline (Japanese only)](//www.ppc.go.jp/) of the [Personal Information Protection Commission](//www.ppc.go.jp/en/).
 
 #### Related information
 
   - [Act on the Protection of Personal
     Information](//www.ppc.go.jp/en/legal/)
-  - Japanese only\] [Ethical Guidelines for Medical and Health Research
+  - Japanese only] [Ethical Guidelines for Medical and Health Research
     Involving Human
     Subjects](http://www.lifescience.mext.go.jp/bioethics/ekigaku.html)
-  - Japanese only\] [Ethical Guidelines for Human Genome and Genetic
+  - Japanese only] [Ethical Guidelines for Human Genome and Genetic
     Sequencing
     Research](http://www.lifescience.mext.go.jp/bioethics/hito_genom.html)
   - [NBDC Human Data Sharing
@@ -130,24 +124,15 @@ Commission](//www.ppc.go.jp/en/).
     activities for human
     data](/reaserch-participant-notification-e.html)
 
-</div>
 
-</div>
-
-<div class="section chapter">
 
 ## Licenses
-
-<div class="section section">
 
 ### Websites
 
 Licensed under
 [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
-</div>
-
-<div class="section section">
 
 ### Data and services
 
@@ -173,9 +158,6 @@ redistribute the data.
     FTP](/download-e.html) and/or other services at DDBJ is regulated by
     each document available from the following table.
 
-  
-
-<div class="main_table">
 
 | database                                                                      | FTP | getentry | ARSA | BLAST |
 | ----------------------------------------------------------------------------- | --- | -------- | ---- | ----- |
@@ -189,17 +171,9 @@ redistribute the data.
 | [ArrayExpress](//www.ebi.ac.uk/arrayexpress/about.html)                       | ○   | ×        | ×    | ×     |
 | [HINV](ftp://ftp.ddbj.nig.ac.jp/mirror_database/hinv/README.txt)              | ○   | ×        | ×    | ×     |
 
-</div>
 
-</div>
-
-</div>
-
-<div class="section chapter">
 
 ## Credits
-
-<div class="section section">
 
 ### Website
 
@@ -207,9 +181,6 @@ The copyrights of the contents published on the websites are the
 properties of the authors when the authors are indicated on the sites.
 If not indicated, the copyright is the property of DDBJ Center.
 
-</div>
-
-<div class="section section">
 
 ### Data and services
 
@@ -220,16 +191,18 @@ reference.
 
 However, please note the following points.
 
-  - In case of citation for each sequence record  
-    In general, it is enough to describe [accession
-    number](/acc_def.html) (and its version, if necessary) in your
-    publication.  
-    If you discuss about the data in detail, please use [primary
-    citation](/ddbj/submission-e.html#pcite) for the data as a
-    reference.
-  - In case of citation for each service provided at DDBJ Center  
-    In general, please use [original article for each
-    service](/references-e.html) as a reference.
+
+In case of citation for each sequence record  
+: In general, it is enough to describe [accession
+number](/acc_def.html) (and its version, if necessary) in your
+publication.  
+If you discuss about the data in detail, please use [primary
+citation](/ddbj/submission-e.html#pcite) for the data as a
+reference.
+
+In case of citation for each service provided at DDBJ Center  
+: In general, please use [original article for each
+service](/references-e.html) as a reference.
 
 #### Copyright and limitation of using DDBJ data
 
@@ -246,8 +219,7 @@ avoid making any definite statement that anybody may freely
 copy/modify/redistribute any part of the data set.
 
 Since 2002, we ask all submitting authors to read the following policy,
-according to [the advice from International Advisory
-Committee](/insdc-e.html#policy).
+according to [the advice from International Advisory Committee](/insdc-e.html#policy).
 
 "The INSD will not attach statements to records that restrict access to
 the data, limit the use of information in these records, or prohibit
@@ -264,29 +236,21 @@ part of the data set by the third parties until know.
 Hence, DDBJ data set is a quasi-public domain data, which is made by the
 collaboration of the many and which can be reused freely.
 
-<div data-align="right">
 
+{: .text-align-end}
 2009.08.18  
 Center for Information Biology and DNA Data Bank of Japan,  
 National Institute of Genetics  
 Director, OKUBO Kousaku
 
-</div>
 
 See also following sites;
 
   - [INSDC policy](/insdc-e.html#policy)
   - [Rights and Duties of Submitter](/ddbj/submission-e.html#right)
 
-</div>
-
-</div>
-
-<div class="section chapter">
 
 ## Patent, Intellectual Property and Priority
-
-<div class="section section">
 
 ### Nucleotide Sequence Data Included in Patent Applications
 
@@ -300,18 +264,15 @@ from [Korean Intellectual Property Office](//www.kipo.go.kr/)
 (USPTO) and [the Korean Intellectual Property
 Office](//www.kipo.go.kr/en/) (KIPO).
 
-  - References:  
-    An example of Sequence data included in patent applications:
-    [DL000001](http://getentry.ddbj.nig.ac.jp/getentry/na/DL000001/?filetype=html)
-    [Sequence data included in patent
-    applications](/ddbj/pat-data-e.html)
+References:  
+: An example of Sequence data included in patent applications:
+[DL000001](http://getentry.ddbj.nig.ac.jp/getentry/na/DL000001/?filetype=html)
+: [Sequence data included in patent
+applications](/ddbj/pat-data-e.html)
 
 Therefore, when the sequence is included in patent applications to
 JPO/KIPO/EPO/USPTO, you do not have to submit the sequence to DDBJ.
 
-</div>
-
-<div class="section section">
 
 ### Notice: Sequence Data Submission Related to Patent Applications
 
@@ -335,9 +296,8 @@ to the public.
 If you are to submit sequence data related to your patent application,
 you should [consult DDBJ](/contact-e.html) before submission.
 
-</div>
 
-<div class="section section">
+
 
 ### Patent Priority and Other Priority
 
@@ -345,8 +305,7 @@ you should [consult DDBJ](/contact-e.html) before submission.
 
 If you submit nucleotide sequence data to DDBJ, you get
 <span class="red">NO patent priority for the data</span>.  
-DDBJ takes no responsibility for any property or priority issues for
-patenting.
+DDBJ takes no responsibility for any property or priority issues for patenting.
 
 If necessary, you should consult the patent office, before submitting
 your data to DDBJ.
@@ -362,25 +321,13 @@ following examples.
   - Nomenclature of gene and protein: See also [Gene nomenclature at
     DDBJ](/ddbj/cds-e.html#product)
 
-</div>
-
-</div>
-
-<div class="section chapter">
 
 ## Disclaimers
 
-<div class="section section">
-
 ### Website
 
-DDBJ Center adopts the disclaimers on [the site
-policy](https://www.rois.ac.jp/en/about/policy.html) of its parent
-organization, ROIS.
+DDBJ Center adopts the disclaimers on [the site policy](https://www.rois.ac.jp/en/about/policy.html) of its parent organization, ROIS.
 
-</div>
-
-<div class="section section">
 
 ### Data and Services
 
@@ -395,11 +342,7 @@ your own risk.
 
 See also [Sequence data included in patent applications](#ownership).
 
-</div>
 
-</div>
-
-<div class="section chapter">
 
 ## Recommended browsers
 
@@ -408,6 +351,4 @@ The recommended browsers for our websites and web services are
 [Chrome](https://www.google.com/chrome/browser/desktop/index.html). The
 recommended browsers may be changed without a prior notice.
 
-</div>
 
-</div>
