@@ -508,13 +508,23 @@ New format of Nucleotide sequence data has been released since DDBJ
 release 90 (Fig.1) and Amino acid sequence data has been distributed JPO
 cumulated files on Anonymous FTP since September 2012 (Fig.2).
 
+{::options parse_block_html="true" /}
+<div class="float-left">
+
 {::nomarkdown}
 {% include image.html url="ddbj/5_Fig1.jpg" caption="Fig.1 New format of COMMENT Block for Nucleotide sequence data" %}
 {:/}
 
+</div>
+
+{::options parse_block_html="true" /}
+<div class="float-right">
+
 {::nomarkdown}
 {% include image.html url="ddbj/5_Fig2.jpg" caption="Fig.2 New format of COMMENT Block for Amino acid sequence data" %}
 {:/}
+
+</div>
 
 {: .float-release}
 ### 2. New format of COMMENT Block
