@@ -107,7 +107,8 @@ $ transChecker.sh -xsample.ann -ssample.fasta -eerrmsg.txt -orsl.fasta -taln.txt
 ```
 
 ファイル名は絶対パス・相対パスのどちらでも指定できます。  
-**macOS: ファイル名とフォルダ名について**<br>[配列ファイル](/ddbj/file-format.html#sequence)、[アノテーションファイル](/ddbj/file-format.html#annotation)のファイル名またはフォルダ名にマルチバイト文字が含まれていますと一部のバージョンの macOS では正常に動作しない場合がありますので、ファイル名とフォルダ名にマルチバイト文字を混在させないようにご注意ください。
+**macOS: ファイル名とフォルダ名について**
+[配列ファイル](/ddbj/file-format.html#sequence)、[アノテーションファイル](/ddbj/file-format.html#annotation)のファイル名またはフォルダ名にマルチバイト文字が含まれていますと一部のバージョンの macOS では正常に動作しない場合がありますので、ファイル名とフォルダ名にマルチバイト文字を混在させないようにご注意ください。
 
 \-x[<span class="font-br font-normal">アノテーションファイル名</span>\]  
 : このオプションは必須です。指定されていない場合、本ツールは終了します。 アノテーションファイル はタブ区切りのテキストファイルです。書式の詳細に関しては、[登録ファイル形式：アノテーションファイル](/ddbj/file-format.html#annotation) をご参照下さい。 また、transChecker 実行前に Parser によるチェックでエラーがないことをご確認ください。

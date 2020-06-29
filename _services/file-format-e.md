@@ -4,13 +4,9 @@ title: Submission File Format
 category: services
 ---
 
-## Sequence File
+## Sequence File<a name="sequence"></a>
 
-The sequence file is a text file in FASTA-like format contains all
-nucleotide sequences. In the sequence file, one array data consists of a
-line of header lines starting with "\>" and a sequence of entities of
-the second and subsequent lines. You must insert the end flag (//) at
-the end of each sequence.
+The sequence file is a text file in FASTA-like format contains all nucleotide sequences. In the sequence file, one array data consists of a line of header lines starting with "\>" and a sequence of entities of the second and subsequent lines. You must insert the end flag (//) at the end of each sequence.
 
 Example: Sequence File
 
@@ -33,7 +29,8 @@ It is required to validate formats of sequence file by [UME](/ddbj/ume-e.html) o
 
   - First line starts with \[\>\], followed by the Entry name at the head of each sequence.
   - Entry names must be unique in the sequence file.It is common to use clone name or isolate name as unique Entry name.
-  - Entry name is required to be described in less than 32 letters of characters which do not contain space, " double-quote, = equal, | pipe, \> greater-than, \[\] angled brackets or \\ back-slash.
+  - Entry name is required to be described in less than 32 letters of characters which do not contain space,
+     " double-quote, = equal, | pipe, \> greater-than, \[\] angled brackets or \\ back-slash.
   - The names and the orders of Entry in the both of sequence and [annotation files](#annotation) should be matched.The accession numbers will be assigned in the order of entries.
   - Sequence file is required to contain NO space or blank line.
   - You can use not only a, t, g and c but also characters in Nucleotide base codes for your nucleotide sequences, if necessary.
@@ -265,7 +262,7 @@ List of Qualifiers for SUBMITTER
 
     Example:  
     : Miyashita,Y.
-    Robertson,G.R.
+    : Robertson,G.R.
 
     Although some names (e.g. name with a hyphen) may show a warning message owing to format error, it is possible to input.
 
@@ -347,7 +344,7 @@ List of Qualifiers for REFERENCE
 
     Example:  
     : Miyashita,Y.
-    Robertson,G.R.
+    : Robertson,G.R.
 
     Please pay no attention to a warning message about name format error (e.g. name with a hyphen).
   - If the Value of status is "In Press", Qualifier: journal is also a mandatory item.
@@ -425,19 +422,43 @@ Example: COMMENT and ST\_COMMENT in annotation file
     
     List of Qualifiers for Genome-Assembly-Data (<span class="red">Requierd</span>)
     
-    
-    
-    Qualifier
-    
+<table>
+  <thead>
+    <tr>
+      <th>Qualifier</th>
+      <th>designation and content</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+      <span class="red">Assembly Method</span>
+      </td>
+      <td>Name of program and the version used assembling sequences. Mandatory.</td>
+    </tr>
+    <tr>
+      <td>Assembly Name</td>
+      <td>Name and version for assembled sequences</td>
+    </tr>
+    <tr>
+      <td>Coverage</td>
+      <td>Approximate sequencing depth.</td>
+    </tr>
+    <tr>
+      <td>
+      <span class="red">Sequencing Technology</span>
+      </td>
+      <td>Platform(s) used to generate the sequence. Mandatory.</td>
+    </tr>
+  </tbody>
+</table>
   
-
   - If you have any question to describe ST\_COMMENT, please contact us
     by email prior to your submission.
 
-### Biological Features
+### Biological Features<a name="biological_feature"></a>
 
-Example: source and CDS features in annotation
-file　(<span class="red">Requierd</span>)
+Example: source and CDS features in annotation file　(<span class="red">Requierd</span>)
 
 | Entry | Feature                         | Location                                                    | Qualifier                          | Value                    |
 | ----- | ------------------------------- | ----------------------------------------------------------- | ---------------------------------- | ------------------------ |
@@ -470,10 +491,9 @@ file　(<span class="red">Requierd</span>)
   - The legal character type for Values depends on the Qualifiers as shown in the table, [Feature/Qualifier Usage Matrix](/files/pdf/ddbj/fq-e.pdf) and [Feature Table Definition](/ddbj/full_index-e.html).
   - Please be sure to input (or not to input) Values in accordance with value types in tables.
 
-### DIVISION
+### DIVISION<a name="division"></a>
 
-DIVISION feature in annotation file indicates that entries are corresponding only to one of [CON](/data-categories-e.html#con) /
-[ENV](/ddbj/data-categories.html#env) / [EST](/data-categories-e.html#est) / [GSS](/data-categories-e.html#est) / [HTC](/data-categories-e.html#est) / [HTG](/data-categories-e.html#est) / [STS](/data-categories-e.html#est) / [SYN](/data-categories-e.html#env) / [TSA](/data-categories-e.html#tsa).
+DIVISION feature in annotation file indicates that entries are corresponding only to one of [CON](/data-categories-e.html#con) / [ENV](/ddbj/data-categories.html#env) / [EST](/data-categories-e.html#est) / [GSS](/data-categories-e.html#est) / [HTC](/data-categories-e.html#est) / [HTG](/data-categories-e.html#est) / [STS](/data-categories-e.html#est) / [SYN](/data-categories-e.html#env) / [TSA](/data-categories-e.html#tsa).
 
 Example: DIVISION in annotation file
 
@@ -486,10 +506,9 @@ Example: DIVISION in annotation file
   - Please enter the division name, 3 capital letters in the Value for Qualifier: division.
   - In principle, please describe the DIVISION feature in the [COMMON](#common) entry.
 
-### DATATYPE
+### DATATYPE<a name="datatype"></a>
 
-DATATYPE feature indicates that entries are corresponding to either of [WGS](/ddbj/wgs-e.html), [TLS](/ddbj/tls-e.html),
-[TPA](/ddbj/tpa-e.html), or TPA-WGS.
+DATATYPE feature indicates that entries are corresponding to either of [WGS](/ddbj/wgs-e.html), [TLS](/ddbj/tls-e.html), [TPA](/ddbj/tpa-e.html), or TPA-WGS.
 
 Example: DATATYPE in annotation file
 
@@ -515,73 +534,81 @@ Example: KEYWORD in annotation file
 
 Specified values for KEYWORD/keyword(<span class="red">Requierd</span>)
 
-Categories
-
-the values for keyword
-
-Remarks
-
-[WGS](/ddbj/wgs-e.html)
-
-<span class="red">WGS</span>
-
-see also [For WGS and scaffold CON](#wgs_con).
-
-[ENV](/ddbj/env-e.html)
-
-<span class="red">ENV</span>
-
-[EST](/ddbj/est-e.html)
-
-<span class="red">EST</span>
-
-some other terms
-
-Please refer to [For EST Submissions](#est).
-
-[HTC](/ddbj/htc-e.html)
-
-<span class="red">HTC</span> some other terms
-
-Please contact us before your submission.
-
-[HTG](/sub/htg-e.html)
-
-<span class="red">HTG</span> [some other terms](#htg)
-
-Depending on the [phase](/data-categories-e.html#est). Please contact us
-before your submission.
-
-[GSS](/ddbj/gss.html)
-
-<span class="red">GSS</span>
-
-STS
-
-<span class="red">STS</span>
-
-[TPA](/ddbj/tpa.html)
-
-<span class="red">TPA, Third Party Data</span>
-
-<span class="red">TPA:inferential</span> or
-<span class="red">TPA:experimental</span>
-
-Either of two is mandatory.
-
-[TSA](/ddbj/tsa-e.html)
-
-<span class="red">TSA</span>, <span class="red">Transcriptome Shotgun
-Assembly</span>
-
-[TLS](/ddbj/tls-e.html)
-
-<span class="red">TLS</span>, <span class="red">Targeted Locus
-Study</span>
-
-Others
-
-Please contact us before your submission.
+<table>
+  <thead>
+    <tr>
+      <th>Categories</th>
+      <th>the values for keyword</th>
+      <th>Remarks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/ddbj/wgs.html">WGS</a></td>
+      <td><span class="red">WGS</span></td>
+      <td>see also <a href="#wgs_con">For WGS and scaffold CON</a>.</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/env.html">ENV</a></td>
+      <td><span class="red">ENV</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2"><a href="/ddbj/est.html">EST</a></td>
+      <td><span class="red">EST</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>some other terms</td>
+      <td>Please refer to <a href="#est">For EST Submissions</a>.</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/htc.html">HTC</a></td>
+      <td>
+      <span class="red">HTC</span> some other terms</td>
+      <td>Please contact us before your submission.</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/htg.html">HTG</a></td>
+      <td><span class="red">HTG</span>, <a href="#htg">some other terms</a></td>
+      <td>Depending on the <a href="/ddbj/data-categories.html#est">phase</a>. Please contact us before your submission.</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/gss.html">GSS</a></td>
+      <td><span class="red">GSS</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>STS</td>
+      <td><span class="red">STS</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2"><a href="/ddbj/tpa.html">TPA</a></td>
+      <td><span class="red">TPA, Third Party Data</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><span class="red">TPA:inferential</span> or <span class="red">TPA:experimental</span></td>
+      <td>Either of two is mandatory.</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/tsa.html">TSA</a></td>
+      <td><span class="red">TSA, Transcriptome Shotgun Assembly</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/tls.html">TLS</a></td>
+      <td><span class="red">TLS, Targeted Locus Study</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td></td>
+      <td>Please contact us before your submission.</td>
+    </tr>
+  </tbody>
+</table>
 
 #### Requirements for Describing KEYWORD
 
@@ -604,7 +631,7 @@ Please contact us before your submission.
     |       | <span class="red">KEYWORD</span> |          | <span class="red">keyword</span> | <span class="red">WGS</span>             |
     |       |                                  |          | <span class="red">keyword</span> | <span class="red">STANDARD\_DRAFT</span> |
     
-###### For EST Submissions
+###### For EST Submissions<a name="est"></a>
 
   - For EST submissions, at least two keywords are required; EST and one of following three terms;
     
@@ -633,9 +660,24 @@ Please contact us before your submission.
     | ----- | -------------------------------- | -------- | ----------------------------- | ------------------------------------------------------------------------ |
     |       | <span class="red">COMMENT</span> |          | <span class="red">line</span> | <span class="red">3'-EST sequences are presented as sense strand.</span> |
     
-###### For HTG submissions
+###### For HTG submissions<a name="htg"></a>
 
   - For HTG submissions, we recommend to use keywords to indicate sequencing status of [HTG data](/sub/htg-e.html).
+
+    Example I: containing unordered pieces(<span class="red">Requierd</span>)
+
+    |  Entry  |  Feature  |  Location  |  Qualifier  |  Value  |
+    | ---- | ---- | ---- | ---- | ---- |
+    |    |  <span class="red">KEYWORD</span>  |    |  <span class="red">keyword</span>  |  <span class="red">HTG</span>  |
+    |    |    |    |  <span class="red">keywrod</span>  |  <span class="red">HTGS_PHASE1</span>  |
+    |    |    |    |  <span class="red">keyword</span>  |  <span class="red">HTGS_DRAFT</span>   |
+
+    Example II: containing only ordered pieces(<span class="red">Requierd</span>)
+
+    |  Entry  |  Feature  |  Location  |  Qualifier  |  Value  |
+    | ---- | ---- | ---- | ---- | ---- |
+    |    |  <span class="red">KEYWORD</span>  |    |  <span class="red">keyword</span>   |  <span class="red">HTG</span>  |
+    |    |    |    |  <span class="red">keyword</span>  |  <span class="red">HTGS_DRAFT</span>  |
 
 ### DBLINK
 
@@ -678,42 +720,47 @@ Example: ff\_definition in annotation file
 
 Value formats of ff\_definition
 
-Categories
-
-Format for the value of ff\_definition
-
-[WGS](/ddbj/wgs-e.html)
-
-@@\[organism\]@@ @@\[strain\]@@ DNA, @@\[submitter\_seqid\]@@, \[other
-information\]
-
-BAC/YAC genomic clones in unfinished phase ([HTG](/ddbj/htg.html))
-
-@@\[organism\]@@ DNA, chromosome @@\[map\]@@, \[BAC/YAC\] clone:
-@@\[clone\]@@, \*\*\* SEQUENCING IN PROGRESS \*\*\*
-
-BAC/YAC genomic clones in finished phase
-
-@@\[organism\]@@ DNA, chromosome @@\[map\]@@, \[BAC/YAC\] clone:
-@@\[clone\]@@
-
-[EST](/ddbj/est.html)
-
-@@\[organism\]@@ mRNA, clone: @@\[clone\]@@, \[other information\]
-
-@@\[organism\]@@ cDNA, clone: @@\[clone\]@@, \[other information\]
-
-[GSS](/ddbj/gss.html)
-
-@@\[organism\]@@ DNA, clone: @@\[clone\]@@, \[other information\]
-
-STS
-
-@@\[organism\]@@ DNA, @@\[map\]@@, \[marker name\], sequence tagged site
-
-Others
-
-Please contact us before your submission, if necessary.
+<table>
+  <thead>
+    <tr>
+      <th>Categories</th>
+      <th>Format for the value of ff_definition</th>
+    </tr>
+  </thead>
+  <tbody> 
+    <tr>
+      <td><a href="/ddbj/wgs-e.html">WGS</a></td>
+      <td>@@[organism]@@ @@[strain]@@ DNA, @@[submitter_seqid]@@, [other information]</td>
+    </tr>
+    <tr>
+      <td>BAC/YAC genomic clones in unfinished phase (<a href="/ddbj/htg.html">HTG</a>)</td>
+      <td>@@[organism]@@ DNA, chromosome @@[map]@@, [BAC/YAC] clone: @@[clone]@@, *** SEQUENCING IN PROGRESS ***</td>
+    </tr>
+    <tr>
+      <td>BAC/YAC genomic clones in finished phase</td>
+      <td>@@[organism]@@ DNA, chromosome @@[map]@@, [BAC/YAC] clone: @@[clone]@@</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><a href="/ddbj/est.html">EST</a></td>
+      <td>@@[organism]@@ mRNA, clone: @@[clone]@@, [other information]</td>
+    </tr>
+    <tr>              
+      <td>@@[organism]@@ cDNA, clone: @@[clone]@@, [other information]</td>     
+    </tr>
+    <tr>
+      <td><a href="/ddbj/gss.html">GSS</a></td>
+      <td>@@[organism]@@ DNA, clone: @@[clone]@@, [other information]</td>
+    </tr>
+    <tr>
+      <td>STS</td>
+      <td>@@[organism]@@ DNA, @@[map]@@, [marker name], sequence tagged site</td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>Please contact us before your submission, if necessary. </td>
+    </tr>
+  </tbody>
+</table>
 
 #### Requirements for Describing source: ff\_definition
 
@@ -769,7 +816,7 @@ Example: TOPOLOGY in annotation file
 
   - In DDBJ flat file, topology is indicated in the [LOCUS](/ddbj/flat-file-e.html#Locus) line. See also [Sample annotation file](#sample).
 
-### TPA/TSA: PRIMARY\_CONTIG, Citation of Primary Entries
+### TPA/TSA: PRIMARY\_CONTIG, Citation of Primary Entries<a name="primary_contig"></a>
 
 PRIMARY\_CONTIG, entry, and primary\_bases are the Feature and Qualifiers prepared to describe the alignments of primary entries for
 TPA/TSA submission.
@@ -814,33 +861,133 @@ The base span of the cited primary sequence. Example) 1..500</td>
 
 #### Requirements for Describing TPA/TSA: PRIMARY\_CONTIG, Citation of Primary Entries
 
-Please specify the value for [DATATYPE/type](#datatype), TPA or [DIVISION/division](#division), TSA in the annotation file.
+- Please specify the value for [DATATYPE/type](#datatype), TPA or [DIVISION/division](#division), TSA in the annotation file.
 
-In PRIMARY\_CONTIG, it is necessary to refer to accession number(s) (with version) in the primary database and enter the base spans of the primary sequences that contribute to the TPA/TSA sequence.
+- In PRIMARY\_CONTIG, it is necessary to refer to accession number(s) (with version) in the primary database and enter the base spans of the primary sequences that contribute to the TPA/TSA sequence.
 
-You can not use join, order, complement for Location column. Please
+- You can not use join, order, complement for Location column. Please
 describe each PRIMARY\_CONTIG and location even in the same entry.
 
-If the primary entry has been submitted to DDBJ/EMBL-Bank/GenBank, a
+- If the primary entry has been submitted to DDBJ/EMBL-Bank/GenBank, a
 version number is required for accession number. If the primary entry is
 not public, please use 0 \[zero\] for the version. e.g. ZZ000022.0
 
-If primary sequence is corresponding to reverse strand in the TPA/TSA
+- If primary sequence is corresponding to reverse strand in the TPA/TSA
 sequence, please put complement qualifier.
 
-In detail, refer to [Sample annotation file and The relationships
+- In detail, refer to [Sample annotation file and The relationships
 between annotation file and DDBJ flat file](#sample).
 
-  - TPA (Third Party Annotation)： [Sample](/files/pdf/ddbj/TPA.pdf) /
-    [relationship table](/files/pdf/ddbj/TPA_ann2ff.pdf)
-  - TSA (Transcriptome Shotgun Assembly)：
-    [Sample](/files/pdf/ddbj/TSA.pdf) / [relationship
-    table](/files/pdf/ddbj/TSA_ann2ff.pdf)
-  - TSA; assembled from short reads：
-    [Sample](/files/pdf/ddbj/TSA_SRA_assemble.pdf) / [relationship
-    table](/files/pdf/ddbj/TSA_SRA_ann2ff.pdf)
+  - TPA (Third Party Annotation)： [Sample](#TPA)
+  - TSA (Transcriptome Shotgun Assembly)： [Sample](#TSA)
+  - TSA; assembled from short reads： [Sample](#TSA_SRA_assemble_Ann)
 
-## AGP File
+## Sample annotation<a name="sample"></a>
+
+<table>
+  <tbody>
+    <tr>
+      <td rowspan="6">General data</td>
+      <td>Protein coding sequence (CDS)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=505600445">CDS</a></td>
+    </tr>
+    <tr>
+      <td>Ribosomal RNA</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=1380986730">16S_rRNA</a></td>
+    </tr>
+    <tr>
+      <td>ITS (Internal Transcribed Spacer)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=162924670">ITS</a></td>
+    </tr>
+    <tr>
+      <td>Microsatellite marker</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=282901241">Microsatellite marker</a></td>
+    </tr>
+    <tr>
+      <td>Mitochondrial sequence</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=545461927">mtDNA</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/env.html">ENV</a> (Environmental Samples)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=585575811">ENV</a></td>
+    </tr>
+    <tr>
+      <td rowspan="8">Genome data</td>
+      <td><a href="/ddbj/genome.html">complete genome sequence (Bacteria)</a></td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=862924679">complete_genome_BCT</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/wgs.html">WGS</a> (Whole Genome Shotgun) without annotation</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=382116224">WGS</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/wgs.html">WGS</a> (Whole Genome Shotgun) with annotation</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">WGS_annotation</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/wgs.html">WGS</a>; piece of scaffold CON</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=595699065">WGS_piece_CON</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/con.html">CON</a> entries for WGS scaffold</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1885054586">WGS_scaffold</a></td>
+    </tr>
+    <tr>
+      <td>AGP file for <a href="/ddbj/con.html">CON</a> entries</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1672995780">AGP</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/gss.html">GSS</a> (Genome Survey Sequences)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=460036592">GSS</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/htg.html">HTG</a> (High Throughput Genomic Sequences)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=199977055">HTG</a></td>
+    </tr>
+    <tr id="TSA">
+      <td rowspan="4">Large transcripts data</td>
+      <td><a href="/ddbj/tsa.html">TSA</a> (Transcriptome Shotgun Assembly); assembled from EST</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=2130672006">TSA</a></td>
+    </tr>
+    <tr id="TSA_SRA_assemble_NoANN">
+      <td><a href="/ddbj/tsa.html">TSA</a>; assembled from short reads without annotation</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=931177555">TSA_SRA_assemble_NoANN</a></td>
+    </tr>
+    <tr id="TSA_SRA_assemble_Ann">
+      <td><a href="/ddbj/tsa.html">TSA</a>; assembled from short reads with annotation</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1607251813">TSA_SRA_assemble_Ann</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/est.html">EST</a> (Expressed Sequence Tags)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1753678626">EST</a></td>
+    </tr>
+    <tr>
+      <td>TLS (Targeted Locus Study)</td>
+      <td><a href="/ddbj/tls.html">TLS (Targeted Locus Study)</a></td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=580470761">TLS</a></td>
+    </tr>
+    <tr>
+      <td rowspan="3"><a href="/ddbj/tpa.html">TPA</a> (Third Party Data)</td>
+      <td><a href="/ddbj/tpa.html">TPA</a> (Third Party Data)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=123381270">TPA</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/tpa.html">TPA</a> assembly (Third Party Data)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=80322930">TPA-assembly_WGS</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/tpa.html">TPA</a> assembly (Third Party Data)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1394019205">TPA-assembly</a></td>
+    </tr>
+    <tr id="ann2-ff">
+      <td>Annotation: Flat file</td>
+      <td>Protein coding sequence (CDS)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=961825804">ann2-ff</a></td>
+    </tr>
+  </tbody>
+</table>
+
+## AGP File<a name="agp"></a>
 
 AGP file is required to submit [CON entries](/ddbj/con-e.html). An AGP file is the tab delimited text file consisting of nine columns of the order and orientation etc of the piece entries to construct CON entry. You can make the files with some scripts, spread sheets (such as MS Excel), text editors and so on.
 
@@ -872,285 +1019,311 @@ It is required to validate formats of AGP file by [UME](/ddbj/ume-e.html).
 
 Description on each column（column 1 - column 5）
 
-\* component: a sequence used to construct a larger sequence (i.e. piece entry)
-
-column
-
-
-
-
-content
-
-description
-
-1
-
-object
-
-CON entry name, the identifier for the object being assembled.  
-i.e. a chromosome, scaffold or contig.  
-CON entry name has to correspond to each name in the annotation file as
-described at [Annotation File](#annotation).
-
-2
-
-object\_beg
-
-The starting coordinates of the component/gap on the object.
-
-3
-
-object\_end
-
-The ending coordinates of the component/gap on the object.
-
-4
-
-part\_number
-
-The line count for the components/gaps that make up the object.
-
-5
-
-component\_type
-
-The sequencing status of the component. These typically correspond to
-keywords in the International Sequence Database (GenBank/EMBL/DDBJ)
-submission. Current acceptable values are:
-
-A
-
-Active Finishing
-
-D
-
-Draft HTG (often phase1 and phase2 are called Draft, whether or not they
-have the draft keyword)
-
-F
-
-Finished HTG (phase3)
-
-G
-
-Whole Genome Finishing
-
-O
-
-Other sequence (typically means no HTG keyword)
-
-P
-
-Pre Draft
-
-W
-
-WGS contig
-
-N
-
-gap with specified size
-
-U
-
-gap of unknown size, defaulting to 100 bases
-
-<span class="icon_d-triangle">The description of column 6 to 9 depends
-on the value in column 5 whether it has gap or not.</span>
-
-Description on each column（column 6 - column 9）： If column 5 contains A,
-D, F, G, O, P and W except from N and U
-
-
-
-\* component: a sequence used to construct a larger sequence (i.e. piece
-entry)
-
-column
-
-
-content
-
-Description
-
-6
-
-component\_id
-
-The accession number with version or  
-local identifier for the component
-
-7
-
-component\_beg
-
-The beginning of the part of the component that contributes to the
-object
-
-8
-
-component\_end
-
-The end of the part of the component that contributes to the object
-
-9
-
-orientation
-
-The orientation of the component relative to the object.  
-Acceptable values are:
-
-\+
-
-plus
-
-\-
-
-minus
-
-?
-
-unknown
-
-0
-
-zero; unknown (deprecated)
-
-na
-
-irrelevant
-
-By default, components with "?", "0" or "na" are treated as if they had
-+ orientation.
-
-Description on each column（column 6 - column 9）：If column 5 contains N
-and U
-
-
-
-column
-
-
-content
-
-description
-
-6
-
-gap\_length
-
-\[component\_type: N\] The length of gap (bp)  
-\[component\_type: U\] 100
-
-7
-
-gap\_type
-
-This column specifies the gap type. Accepted values:
-
-scaffold
-
-a gap between two sequence contigs in a scaffold (superscaffold or
-ultra-scaffold).
-
-contig
-
-an unspanned gap between two sequence contigs.
-
-centromere
-
-a gap inserted for the centromere.
-
-short\_arm
-
-a gap inserted at the start of an acrocentric chromosome.
-
-heterochromatin
-
-a gap inserted for an especially large region of heterochromatic
-sequence (may also include the centromere)
-
-telomere
-
-a gap inserted for the telomere.  
-
-repeat
-
-an unresolvable repeat.
-
-8
-
-linkage
-
-The linkage between the adjacent lines (Values: "yes" or "no")
-
-9
-
-linkage evidence
-
-This specifies the type of evidence used to assert linkage (as indicated
-in column 8b). Accepted values:
-
-na
-
-used when no linkage is being asserted (column 8b is 'no')
-
-paired-ends
-
-paired sequences from the two ends of a DNA fragment.
-
-align\_genus
-
-alignment to a reference genome within the same genus.
-
-align\_xgenus
-
-alignment to a reference genome within another genus.
-
-align\_trnscpt
-
-alignment to a transcript from the same species.
-
-within\_clone
-
-sequence on both sides of the gap is derived from the same clone, but
-the gap is not spanned by paired-ends. The adjacent sequence contigs
-have unknown order and orientation
-
-clone\_contig
-
-linkage is provided by a clone contig in the tiling path (TPF). For
-example, a gap where there is a known clone, but there is not yet
-sequence for that clone.
-
-map
-
-linkage asserted using a non-sequence based map such as RH, linkage,
-fingerprint or optical.
-
-strobe
-
-strobe sequencing (PacBio).
-
-unspecified
-
-used when converting old AGPs that lack a field for linkage evidence
-into the new format.
-
-If there are multiple lines of evidence to support linkage, all can be
-listed using a ‘;’ delimiter.  
-(e.g. "paired-ends;align\_xgenus ")
-
-  - The length of gap for an 'unknown' gap should be 100 bp. It is
-    required to indicate "U" for the value of component\_type and "100"
-    for the value of gap\_length.
-
-  - Information about continuity is provided by a combination of the
-    value in the gap\_type and linkage. Please refer to the following
-    table.
+component: a sequence used to construct a larger sequence (i.e. piece entry)
+{: .tablecaption}
+<table>
+  <thead>
+    <tr>
+      <th>column</th>
+      <th>content</th>
+      <th colspan="2">description</th>
+    </tr>
+  </thead>
+  <tbody> 
+    <tr>
+      <td>1</td>
+      <td>object</td>
+      <td colspan="2">CON entry name, the identifier for the object being assembled.<br>i.e. a chromosome, scaffold or contig.<br>CON entry name has to correspond to each name in the annotation file as described at <a href="#annotation">Annotation File</a>.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>object_beg</td>
+      <td colspan="2">The starting coordinates of the component/gap on the object.</td>
+    </tr>
+    <tr>
+              <td>3</td>
+              <td>object_end</td>
+              <td colspan="2">The ending coordinates of the component/gap on the object.</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>part_number</td>
+              <td colspan="2">The line count for the components/gaps that make up the object.</td>
+            </tr>
+            <tr>
+              <td rowspan="10">5</td>
+              <td rowspan="10">component_type</td>
+              <td colspan="2">The sequencing status of the component. These typically correspond to keywords in the International Sequence Database (GenBank/EMBL/DDBJ) submission. Current acceptable values are:</td>
+            </tr>
+            <tr>
+              <td>A</td>
+              <td> Active Finishing</td>
+            </tr>
+            <tr>
+              <td>D</td>
+              <td>Draft HTG (often phase1 and phase2 are called Draft, whether or not they have the draft keyword)</td>
+            </tr>
+            <tr>
+              <td>F</td>
+              <td>Finished HTG (phase3)</td>
+            </tr>
+            <tr>
+              <td>G</td>
+              <td>Whole Genome Finishing</td>
+            </tr>
+            <tr>
+              <td>O</td>
+              <td>Other sequence (typically means no HTG keyword)</td>
+            </tr>
+            <tr>
+              <td>P</td>
+              <td>Pre Draft</td>
+            </tr>
+            <tr>
+              <td>W</td>
+              <td>WGS contig</td>
+            </tr>
+            <tr>
+              <td>N</td>
+              <td>gap with specified size</td>
+            </tr>
+            <tr>
+              <td>U</td>
+              <td>gap of unknown size, defaulting to 100 bases</td>
+            </tr>
+          </tbody>
+        </table>
+
+<span class="icon_d-triangle">The description of column 6 to 9 depends on the value in column 5 whether it has gap or not.</span>
+
+Description on each column（column 6 - column 9）： If column 5 contains A, D, F, G, O, P and W except from N and U
+
+component: a sequence used to construct a larger sequence (i.e. piece entry)
+{: .tablecaption}
+<table>
+  <thead>
+    <tr>
+      <th>column</th>
+      <th>content</th>
+      <th colspan="2">Description</th>
+    </tr>
+  </thead>
+  <tbody> 
+    <tr>
+      <td>6</td>
+      <td>component_id</td>
+      <td colspan="2">The accession number with version or <br>local identifier for the component</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>component_beg</td>
+      <td colspan="2">The beginning of the part of the component that contributes to the object</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>component_end</td>
+      <td colspan="2">The end of the part of the component that contributes to the object</td>
+    </tr>
+    <tr>
+      <td rowspan="7">9</td>
+      <td rowspan="7">orientation</td>
+      <td colspan="2">The orientation of the component relative to the object.<br>Acceptable values are:</td>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td>plus</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>minus</td>
+    </tr>
+    <tr>
+      <td>?</td>
+      <td>unknown</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>zero; unknown (deprecated)</td>
+    </tr>
+    <tr>
+      <td>na</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td colspan="2">By default, components with "?", "0" or "na" are treated as if they had + orientation.</td>
+    </tr>
+  </tbody>
+</table>
+
+Description on each column（column 6 - column 9）：If column 5 contains N and U
+
+<table>
+  <thead>
+    <tr>
+      <th>column</th>
+      <th>content</th>
+      <th colspan="2">description</th>
+    </tr>
+  </thead>
+  <tbody> 
+    <tr>
+      <td>6</td>
+      <td>gap_length</td>
+      <td colspan="2">[component_type: N] The length of gap (bp)<br>[component_type: U] 100</td>
+    </tr>
+    <tr>
+      <td rowspan="8">7</td>
+      <td rowspan="8">gap_type</td>
+      <td colspan="2">This column specifies the gap type. Accepted values:</td>
+    </tr>
+    <tr>
+      <td>scaffold</td>
+      <td>a gap between two sequence contigs in a scaffold (superscaffold or ultra-scaffold).</td>
+    </tr>
+    <tr>
+      <td>contig</td>
+      <td>an unspanned gap between two sequence contigs.</td>
+    </tr>
+    <tr>
+      <td>centromere</td>
+      <td>a gap inserted for the centromere.</td>
+    </tr>
+    <tr>
+      <td>short_arm</td>
+      <td>a gap inserted at the start of an acrocentric chromosome.</td>
+    </tr>
+    <tr>
+      <td>heterochromatin</td>
+      <td>a gap inserted for an especially large region of heterochromatic sequence (may also include the centromere)</td>
+    </tr>
+    <tr>
+      <td>telomere</td>
+      <td>a gap inserted for the telomere.</td>
+    </tr>
+    <tr>
+      <td>repeat</td>
+      <td>an unresolvable repeat.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>linkage</td>
+      <td colspan="2">The linkage between the adjacent lines (Values: "yes" or "no")</td>
+    </tr>
+    <tr>
+      <td rowspan="12">9</td>
+      <td rowspan="12">linkage evidence</td>
+      <td colspan="2">This specifies the type of evidence used to assert linkage (as indicated in column 8b). Accepted values:</td>
+    </tr>
+    <tr>
+      <td>na</td>
+      <td>used when no linkage is being asserted (column 8b is 'no')</td>
+    </tr>
+    <tr>
+      <td>paired-ends</td>
+      <td>paired sequences from the two ends of a DNA fragment.</td>
+    </tr>
+    <tr>
+      <td>align_genus</td>
+      <td>alignment to a reference genome within the same genus.</td>
+    </tr>
+    <tr>
+      <td>align_xgenus</td>
+      <td>alignment to a reference genome within another genus.</td>
+    </tr>
+    <tr>
+      <td>align_trnscpt</td>
+      <td>alignment to a transcript from the same species.</td>
+    </tr>
+    <tr>
+      <td>within_clone</td>
+      <td>sequence on both sides of the gap is derived from the same clone, but the gap is not spanned by paired-ends. The adjacent sequence contigs have unknown order and orientation</td>
+    </tr>
+    <tr>
+      <td>clone_contig</td>
+      <td>linkage is provided by a clone contig in the tiling path (TPF). For example, a gap where there is a known clone, but there is not yet sequence for that clone.</td>
+    </tr>
+    <tr>
+      <td>map</td>
+      <td>linkage asserted using a non-sequence based map such as RH, linkage, fingerprint or optical.</td>
+    </tr>
+    <tr>
+      <td>strobe</td>
+      <td>strobe sequencing (PacBio).</td>
+    </tr>
+    <tr>
+      <td>unspecified</td>
+      <td>used when converting old AGPs that lack a field for linkage evidence into the new format.</td>
+    </tr>
+    <tr>
+      <td colspan="2">If there are multiple lines of evidence to support linkage, all can be listed using a ‘;’ delimiter.<br>(e.g. "paired-ends;align_xgenus ")</td>
+    </tr>
+  </tbody>
+</table>
+
+- The length of gap for an 'unknown' gap should be 100 bp. It is required to indicate "U" for the value of component\_type and "100" for the value of gap\_length.
+
+- Information about continuity is provided by a combination of the value in the gap\_type and linkage. 
+  Please refer to the following table.
     
-    Example: source feature in COMMON entry
+  Example: source feature in COMMON entry
     
-    
-    
-    gap\_type
+<table>
+  <thead>
+    <tr>
+      <th>gap_type</th>
+      <th>linkage</th>
+      <th>Interpretation and description</th>
+    </tr>
+  </thead>
+  <tbody> 
+    <tr>
+      <td colspan="3">Within-scaffold gaps: sequences on either side of the gap are in a single scaffold.</td>
+    </tr>
+    <tr>
+      <td>scaffold</td>
+      <td>yes</td>
+      <td>Do not break scaffold<br>There is evidence linking sequence contigs on both sides of the gap.</td>
+    </tr>
+    <tr>
+      <td>repeat</td>
+      <td>yes</td>
+      <td>Do not break scaffold<br>If an unresolvable repeat unit is spanned by linkage evidence, the linkage will be 'yes'.</td>
+    </tr>
+    <tr>
+      <td colspan="3">Scaffold-breaking gaps: sequences on either side of the gap are in separate scaffolds.</td>
+    </tr>
+    <tr>
+      <td>contig</td>
+      <td>no</td>
+      <td> Break scaffold<br>A contig gap indicates there is no evidence to link the adjacent sequence contigs.</td>
+    </tr>
+    <tr>
+      <td>repeat</td>
+      <td>no</td>
+      <td>Break scaffold<br>If an unresolvable repeat unit is not spanned by linkage evidence, the linkage will be 'no'.</td>
+    </tr>
+    <tr>
+      <td>centromere<br>short_arm<br>heterochromatin<br>telomer</td>
+      <td>no</td>
+      <td>Break scaffold<br>Gaps with these biological types are used for laying out scaffolds along a chromosome.</td>
+    </tr>
+    <tr>
+      <td colspan="3">Invalid gap/linkage combinations</td>
+    </tr>
+    <tr>
+      <td>contig</td>
+      <td>yes</td>
+      <td>Invalid<br>If there is evidence of linkage between the adjacent sequence contigs, the gap type should be scaffold.</td>
+    </tr>
+    <tr>
+      <td>scaffold</td>
+      <td>no</td>
+      <td>Invalid<br>If there is no evidence of linkage between the adjacent sequence contigs, the gap type should be contig.</td>
+    </tr>
+    <tr>
+      <td>centromere<br>short_arm<br>heterochromatin<br>telomere</td>
+      <td>yes</td>
+      <td>Invalid<br>It is invalid to use these biological types within a scaffold.</td>
+    </tr>
+  </tbody>
+</table>
