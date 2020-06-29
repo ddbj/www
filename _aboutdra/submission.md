@@ -861,7 +861,10 @@ DRA 登録のステータス一覧
 
 <span class="red">メタデータを作成する前に登録するシークエンスデータファイルをアップロードします。先にメタデータを作成する場合は適当なファイルをアップロードしてください。</span>
 
-#### [ターミナルによるシークエンスデータの転送 (Linux/Mac OS X)](javascript:void(0))
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">ターミナルによるシークエンスデータの転送 (Linux/Mac OS X)</a></h4>
+<div class="accordion-content">
 
 ファイルを SCP 転送します。
 
@@ -905,7 +908,14 @@ Enter passphrase for key '/home/you/.ssh/id_rsa':
 ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 ```
 
-#### [WinSCP によるシークエンスデータの転送 (Windows)](javascript:void(0))
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
+
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">WinSCP によるシークエンスデータの転送 (Windows)</a></h4>
+<div class="accordion-content">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZxIfewrk8lI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -944,7 +954,14 @@ DRA への登録 ～データの転送 (Windows)～
 
 転送したファイルは、ファイルを選択し [削除] ボタンをクリックすることで削除できます。
 
-#### [Cyberduck によるシークエンスデータの転送 (Mac OS X)](javascript:void(0))
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
+
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">Cyberduck によるシークエンスデータの転送 (Mac OS X)</a></h4>
+<div class="accordion-content">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/A2hPlGZEW_o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -983,6 +1000,10 @@ Authentication” をチェックします。
 にあるファイルを選択しウィンドウにドラッグ＆ドロップすることで、ファイルをサーバに転送します。
 
 [![transfer]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg "transfer")]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg "transfer"){:.group1}
+
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
 
 <div class="attention red">
 ftp-private.ddbj.nig.ac.jp サーバに秘密鍵を使って ssh でログインすることができます。
@@ -1275,7 +1296,10 @@ Analysis (任意) が不要な場合は [Submit / Update DRA metadata] をクリ
 
 [Enter / Update metadata] をクリックして内容を投稿し、データファイルの検証に進みます。Analysis 用のファイルは md5 しかチェックされません。
 
-### XML でのメタデータ登録方法 <a name="create-metadata-in-xml-files"></a>
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h3 class="toggle-content-btn"><a href="javascript:void(0)" name="create-metadata-in-xml-files">XML でのメタデータ登録方法</a></h3>
+<div class="accordion-content">
 
 メタデータ作成ツールは technical read (アダプター、プライマーやバーコード配列) を記載することに対応していません。
 「technical read を含む生データを登録する場合」や「[DRA XML schema](https://github.com/ddbj/pub/tree/master/docs/dra) 中にはあるがツール中には無い項目をメタデータに記載する場合」は メタデータを XML で登録、もしくは登録した XML を編集してアップロードします。
@@ -1312,8 +1336,14 @@ BioSample を Experiment から参照する場合、以下のように記載し�
 
     [![作成した XML のアップロード]({{ site.baseurl }}/assets/images/books/hdra-xmlupload.jpg "作成した XML のアップロード")]({{ site.baseurl }}/assets/images/books/hdra-xmlupload.jpg "作成した XML のアップロード"){:.group1}
 
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
 
-### XML でのメタデータ編集方法
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h3 class="toggle-content-btn"><a href="javascript:void(0)">XML でのメタデータ編集方法</a></h3>
+<div class="accordion-content">
 
 メタデータ作成ツールは technical read (アダプター、プライマーやバーコード配列) を記載することに対応していません。
 「technical read を含む生データを登録する場合」や「[DRA XML schema](https://github.com/ddbj/pub/tree/master/docs/dra) 中にはあるがツール中には無い項目をメタデータに記載する場合」は メタデータを XML で登録、もしくは登録した XML を編集してアップロードします。
@@ -1349,6 +1379,10 @@ BioSample を Experiment から参照する場合、以下のように記載し�
 6. 編集した XML をアップロードします。Submission、Experiment、Run、Analysis (任意) の XML ファイルを選択し、同時にアップロードします。
   アップロードされた XML について「SRA xsd に対する妥当性」と「オブジェクト間の関係性」がチェックされます。エラーが発生した場合はファイルを修正してください。
   [![編集した XML のアップロード]({{ site.baseurl }}/assets/images/books/hdra-xmlupload.jpg "編集した XML のアップロード")]({{ site.baseurl }}/assets/images/books/hdra-xmlupload.jpg "編集した XML のアップロード"){:.group1}
+
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
 
 ### データファイルの検証
 
@@ -1528,7 +1562,10 @@ Experiment、Run や Analysis などのオブジェクトを削除する場合�
 
 MD5 (Message Digest Algorithm 5) はハッシュ関数であり、与えられたファイルに対してハッシュ値 (MD5値、32桁の英数字) を出力します。ファイルが破損していると MD5 値が変化します。 DRA では、到着したファイルの MD5 値の一致をチェックすることで、ファイルの破損がないかどうか確認しています。
 
-### [MD5 値の取得 (Linux)](javascript:void(0)) <a name="obtain-md5-number-linux"></a>
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h3 class="toggle-content-btn"><a href="javascript:void(0)" name="obtain-md5-number-linux">MD5 値の取得 (Linux)</a></h3>
+<div class="accordion-content">
 
 ファイルの MD5 値を取得します。
 
@@ -1538,7 +1575,14 @@ $ md5sum file1 file2
 B636E0063E29709B6082F324C76D0911 file2
 ```
 
-### [MD5 値の取得 (Mac OS X)](javascript:void(0)) <a name="obtain-md5-number-mac-os-x"></a>
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
+
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h3 class="toggle-content-btn"><a href="javascript:void(0)" name="obtain-md5-number-mac-os-x">MD5 値の取得 (Mac OS X)</a></h3>
+<div class="accordion-content">
 
 ファイルの MD5 値を取得します。
 
@@ -1548,7 +1592,14 @@ $ md5 file1 file2
 B636E0063E29709B6082F324C76D0911 file2
 ```
 
-### [MD5 値の取得 (Windows)](javascript:void(0)) <a name="obtain-md5-number-windows"></a>
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
+
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h3 class="toggle-content-btn"><a href="javascript:void(0)" name="obtain-md5-number-windows">MD5 値の取得 (Windows)</a></h3>
+<div class="accordion-content">
 
 [Fsum Frontend (http://sourceforge.net/projects/fsumfe/)](http://sourceforge.net/projects/fsumfe/)
 をインストールし、起動します。  
@@ -1563,3 +1614,7 @@ B636E0063E29709B6082F324C76D0911 file2
 最後に、[Calculate hashes] ボタンをクリックしてください。各ファイルの MD5 値が表示されます。[Export] ボタンから、MD5 値の一覧表 (.html, .csv, .xml) を作成することができます。
 
 [![MD5 値の計算を開始]({{ site.baseurl }}/assets/images/books/Fsum3.jpg "MD5 値の計算を開始")]({{ site.baseurl }}/assets/images/books/Fsum3.jpg "MD5 値の計算を開始"){:.group1}
+
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>

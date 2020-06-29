@@ -146,9 +146,9 @@ WABI の BLAST検索ジョブ は、 BLAST検索結果を元にしてグラフ�
 ## WABI BLAST の使用例
 
 {::options parse_block_html="true" /}
-<dl class="accordion-menu">
-<dt class="btn"><a href="javascript:void(0)">Javaの使用例</a></dt>
-<dd class="content">#### コード例
+<div class="accordion-menu">
+<h3 class="toggle-content-btn"><a href="javascript:void(0)">Javaの使用例</a></h3>
+<div class="accordion-content">#### コード例
 
 Example.java
 : <script src="https://gist.github.com/ddbj-repo/d2ead08e9b9664418c34e292392f1ca8.js"></script>
@@ -163,9 +163,8 @@ blast_condition.fasta
   ```
 
 blast_condition.txt  
-:
-[コード](https://gist.github.com/ddbj-repo/22e92ce2e085be3f34fe072298241639)
-
+: [コード](https://gist.github.com/ddbj-repo/22e92ce2e085be3f34fe072298241639)
+: 
   ``` 
   datasets        ddbjall
   database        hum
@@ -175,118 +174,57 @@ blast_condition.txt
   result  www
   ```
 
-- pom.xml
+pom.xml
+: <script src="https://gist.github.com/ddbj-repo/4978b238ca7dbb94ebeebae0184cd6ce.js"></script>
 
-<script src="https://gist.github.com/ddbj-repo/4978b238ca7dbb94ebeebae0184cd6ce.js"></script>
+前準備 (一度だけ実施する必要あり)
+: 
+  ``` 
+  $ wget 'http://sourceforge.jp/frs/redir.php?m=iij&f=%2Fjsonic%2F56583%2Fjsonic-1.3.0.zip'
+  $ unzip jsonic-1.3.0.zip
+  $ mv jsonic-1.3.0/jsonic-1.3.0.jar src/main/resources/
+  $ tree -F
+  .
+  ├── blast_condition.fasta
+  ├── blast_condition.txt
+  ├── pom.xml
+  └── src/
+      └── main/
+          ├── java/
+          │   └── Example.java
+          └── resources/
+              └── jsonic-1.3.0.jar
+  ```
 
-- 前準備 (一度だけ実施する必要あり)
+ビルド
+: 
+  ``` 
+  $ mvn clean
+  $ mvn compile
+  $ mvn package
+  $ mvn assembly:assembly -DdescriptorId=jar-with-dependencies
+  ```
 
-``` 
-$ wget 'http://sourceforge.jp/frs/redir.php?m=iij&f=%2Fjsonic%2F56583%2Fjsonic-1.3.0.zip'
-$ unzip jsonic-1.3.0.zip
-$ mv jsonic-1.3.0/jsonic-1.3.0.jar src/main/resources/
-$ tree -F
-.
-├── blast_condition.fasta
-├── blast_condition.txt
-├── pom.xml
-└── src/
-    └── main/
-        ├── java/
-        │   └── Example.java
-        └── resources/
-            └── jsonic-1.3.0.jar
-```
+実行手順
+: 
+  ``` 
+  $ java -classpath 'target/wabi-client-1.jar:target/wabi-client-1-jar-with-dependencies.jar:src/main/resources/jsonic-1.3.0.jar' Example
+  ```
 
-- ビルド
-
-``` 
-$ mvn clean
-$ mvn compile
-$ mvn package
-$ mvn assembly:assembly -DdescriptorId=jar-with-dependencies
-```
-
-- 実行手順
-
-``` 
-$ java -classpath 'target/wabi-client-1.jar:target/wabi-client-1-jar-with-dependencies.jar:src/main/resources/jsonic-1.3.0.jar' Example
-```
-
-[« 閉じる](javascript:void(0)){: .close-btn}
-</dd>
-</dl>
-
-{::options parse_block_html="true" /}
-<dl class="accordion-menu">
-  <dt><a href="javascript:void(0)">Perlの使用例</a></dt>
-<dd>#### コード例
-
-- example.pl
-
-<script src="https://gist.github.com/ddbj-repo/b2f7e3ac56745a63b719908945518d4c.js"></script>
-
-- blast_condition.fasta
-
-``` 
->my query sequence 1
-CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
-GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
-GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
-```
-
-- blast_condition.txt  
-
-[コード](https://gist.github.com/ddbj-repo/22e92ce2e085be3f34fe072298241639)
-
-``` 
-datasets        ddbjall
-database        hum
-program blastn
-parameters      -v 100 -b 100 -e 10 -F F -W 11
-format  json
-result  www
-```
-
-#### 実行例
-
-- 前準備 (一度だけ実施する必要あり)
-
-``` 
-$ cpan
-cpan[1] install JSON
-cpan[2]> install HTTP::Request::Common
-cpan[3]> install LWP::UserAgent
-cpan[4]> install HTTP::Status
-cpan[5]> quit
-$ tree -F
-.
-├── blast_condition.fasta
->├── blast_condition.txt
-└── example.pl
-```
-
-- 実行手順
-
-``` 
-$ perl example.pl
-```
-
-[« 閉じる](javascript:void(0)){: .close-btn}
-</dd>
-</dl>
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
 
 {::options parse_block_html="true" /}
-<dl class="accordion-menu">
-  <dt><a href="javascript:void(0)">Ruby の使用例</a></dt>
-<dd>#### コード例
+<div class="accordion-menu">
+  <h3 class="toggle-content-btn"><a href="javascript:void(0)">Perlの使用例</a></h3>
+<div class="accordion-content">#### コード例
 
-- example.rb
+example.pl
+: <script src="https://gist.github.com/ddbj-repo/b2f7e3ac56745a63b719908945518d4c.js"></script>
 
-<script src="https://gist.github.com/ddbj-repo/aa94320d3ab88ae27e53371868885cfd.js">
-
-- blast_condition.fasta
-  
+blast_condition.fasta
+: 
   ``` 
   >my query sequence 1
   CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
@@ -294,9 +232,9 @@ $ perl example.pl
   GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
   ```
 
-- blast_condition.txt  
-  [コード](https://gist.github.com/ddbj-repo/22e92ce2e085be3f34fe072298241639)
-  
+blast_condition.txt
+: [コード](https://gist.github.com/ddbj-repo/22e92ce2e085be3f34fe072298241639)
+: 
   ``` 
   datasets        ddbjall
   database        hum
@@ -308,23 +246,80 @@ $ perl example.pl
 
 #### 実行例
 
-- 実行手順
-  
+前準備 (一度だけ実施する必要あり)
+: 
+  ``` 
+  $ cpan
+  cpan[1] install JSON
+  cpan[2]> install HTTP::Request::Common
+  cpan[3]> install LWP::UserAgent
+  cpan[4]> install HTTP::Status
+  cpan[5]> quit
+  $ tree -F
+  .
+  ├── blast_condition.fasta
+  >├── blast_condition.txt
+  └── example.pl
+  ```
+
+実行手順
+: 
+  ``` 
+  $ perl example.pl
+  ```
+
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
+
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+  <h3 class="toggle-content-btn"><a href="javascript:void(0)">Ruby の使用例</a></h3>
+<div class="accordion-content">#### コード例
+
+example.rb
+: <script src="https://gist.github.com/ddbj-repo/aa94320d3ab88ae27e53371868885cfd.js">
+
+blast_condition.fasta
+: 
+  ``` 
+  >my query sequence 1
+  CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
+  GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
+  GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
+  ```
+
+blast_condition.txt  
+: [コード](https://gist.github.com/ddbj-repo/22e92ce2e085be3f34fe072298241639)
+: 
+  ``` 
+  datasets        ddbjall
+  database        hum
+  program blastn
+  parameters      -v 100 -b 100 -e 10 -F F -W 11
+  format  json
+  result  www
+  ```
+
+#### 実行例
+
+実行手順
+:   
   ``` 
   $ ruby example.rb
   ```
 
-- 実際の例
-  <script src="https://gist.github.com/ddbj-repo/d9e1d2d44aaecdb890ec12196dc52dbd.js"></script>
+実際の例
+: <script src="https://gist.github.com/ddbj-repo/d9e1d2d44aaecdb890ec12196dc52dbd.js"></script>
 
 #### 実行結果例
 
-- wabi_blast_2013-0606-1336-31-681-634313.txt
-  <script src="https://gist.github.com/ddbj-repo/aea641167c10b4c56ec08b1c4e230f2a.js"></script>
+wabi_blast_2013-0606-1336-31-681-634313.txt
+: <script src="https://gist.github.com/ddbj-repo/aea641167c10b4c56ec08b1c4e230f2a.js"></script>
 
-[« 閉じる](javascript:void(0)){: .close-btn}
-</dd>
-</dl>
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
 
 ## WABI BLAST の詳細
 
@@ -403,7 +398,7 @@ GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC</code></pre>
     <td>BLAST検索 のジョブをキューに投入する。</td>
     </tr>
     <tr>
-    <td rowspan="2" style="background-color: white;">HTTP レスポンス</td>
+    <td rowspan="2" style="background-color: white;" class="borderbtm">HTTP レスポンス</td>
     <td>成功した場合</td>
     <td>
 <a href="#parameter-Request-ID">Request ID</a> を含むジョブ情報</td>
@@ -513,18 +508,17 @@ GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC</code></pre>
 
 #### 応答データの内容　
 
-- 正常終了した場合
+正常終了した場合
+: 
   - HTTP ステータスが `200` 等の「成功」を示す値です。
   - `requestId` に「リクエストID」が対応付けられた情報を返します。
-  - その他、 `current-time` (現在時刻) やリクエスト情報を含むことがありますが、書式は随時更新いたします。  
-    実行の成否判定のためには HTTP ステータスを利用してください。
+  - その他、 `current-time` (現在時刻) やリクエスト情報を含むことがありますが、書式は随時更新いたします。<br>実行の成否判定のためには HTTP ステータスを利用してください。
 
-- 異常終了した場合
-    - HTTP ステータスが `400` 等の「クライアントエラー」を示す値です。
-    - 応答データの中からキー `error-messages`
-      で取得できるエラーメッセージ情報には、入力値エラーとなったパラメーター名の情報等が含まれます。
-    - その他、リクエスト情報やエラーの原因などの情報を含むことがありますが、書式は随時更新いたします。  
-      実行の成否判定のためには HTTP ステータスを利用してください。
+異常終了した場合
+: 
+  - HTTP ステータスが `400` 等の「クライアントエラー」を示す値です。
+  - 応答データの中からキー `error-messages` で取得できるエラーメッセージ情報には、入力値エラーとなったパラメーター名の情報等が含まれます。
+  - その他、リクエスト情報やエラーの原因などの情報を含むことがありますが、書式は随時更新いたします。<br>実行の成否判定のためには HTTP ステータスを利用してください。
 
 #### 入出力データの例<a name="uripost-example"></a>
 
@@ -634,14 +628,14 @@ HTTP ステータス 400
 ```
 
 {::options parse_block_html="true" /}
-<dl class="accordion-menu">
-  <dt><a href="javascript:void(0)">利用例</a></dt>
-<dd>Java で SpringFramework の RESTクライアント を使う場合:
+<div class="accordion-menu">
+  <h4 class="toggle-content-btn"><a href="javascript:void(0)">利用例</a></h4>
+<div class="accordion-content">Java で SpringFramework の RESTクライアント を使う場合:
    <script src="https://gist.github.com/ddbj-repo/ec96049ec11c1d22303d9fcdea9f70cd.js"></script>
 
-[« 閉じる](javascript:void(0)){: .close-btn}
-</dd>
-</dl>
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
 
 ### URI GET /blast/{Request-ID}?info=status (検索ジョブの状態確認)<a name="URI_GET_status"></a>
 
@@ -667,7 +661,7 @@ HTTP ステータス 400
             (例: <code class="language-plaintext highlighter-rouge">"/blast/wabi_blast_1111-1111-1111-11-111-111111?info=status"</code>)</td>
     </tr>
     <tr>
-  <td rowspan="2">HTTP パラメーター</td>
+  <td rowspan="2" class="borderbtm">HTTP パラメーター</td>
   <td>
 <code class="language-plaintext highlighter-rouge">info</code> (デフォルト値 = <code class="language-plaintext highlighter-rouge">"status"</code>)</td>
   <td>
@@ -738,18 +732,17 @@ HTTP ステータス 400
 
 #### 応答データの内容　
 
-- 正常終了した場合
+正常終了した場合
+: 
   - HTTP ステータスが `200` 等の「成功」を示す値です。
   - `status` に「[現在の状態](#search-status)」が対応付けられた情報を返します。
-  - その他、 `current-time` (現在時刻) やリクエスト情報を含みますが、書式は随時更新いたします。  
-    実行の成否判定のためには HTTP ステータスを利用してください。
+  - その他、 `current-time` (現在時刻) やリクエスト情報を含みますが、書式は随時更新いたします。<br>実行の成否判定のためには HTTP ステータスを利用してください。
 
-- 異常終了した場合
+異常終了した場合
+: 
   - HTTP ステータスが `400` 等の「クライアントエラー」を示す値です。
-  - 応答データの中からキー `error-messages`
-    で取得できるエラーメッセージ情報には、入力値エラーとなったパラメーター名の情報等が含まれます。
-  - その他、リクエスト情報やエラーの原因などの情報を含みますが、書式は随時更新いたします。  
-    実行の成否判定のためには HTTP ステータスを利用してください。
+  - 応答データの中からキー `error-messages` で取得できるエラーメッセージ情報には、入力値エラーとなったパラメーター名の情報等が含まれます。
+  - その他、リクエスト情報やエラーの原因などの情報を含みますが、書式は随時更新いたします。<br>実行の成否判定のためには HTTP ステータスを利用してください。
 
 #### 入出力データの例
 
@@ -814,14 +807,14 @@ HTTP ステータス 400
 ```
 
 {::options parse_block_html="true" /}
-<dl class="accordion-menu">
-  <dt><a href="javascript:void(0)">利用例</a></dt>
-<dd>Java で SpringFramework の RESTクライアント を使う場合:
+<div class="accordion-menu">
+  <h4 class="toggle-content-btn"><a href="javascript:void(0)">利用例</a></h4>
+<div class="accordion-content">Java で SpringFramework の RESTクライアント を使う場合:
    <script src="https://gist.github.com/ddbj-repo/4a1ea26e46bebac37cf595eae77e384a.js"></script>
 
-[« 閉じる](javascript:void(0)){: .close-btn}
-</dd>
-</dl>
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
 
 ### URI GET /blast/{Request-ID}?info=request (検索条件の確認)<a name="URI_GET_request"></a>
 
@@ -911,15 +904,16 @@ HTTP ステータス 400
 
 #### 応答データの内容
 
-- 正常終了した場合
+正常終了した場合
+: 
   - HTTP ステータスが `200` 等の「成功」を示す値です。
   - BLAST検索ジョブを投入した際の各パラメーター情報です。
   - 実行の成否判定のためには HTTP ステータスを利用してください。
 
-- 異常終了した場合
+異常終了した場合
+: 
   - HTTP ステータスが `400` 等の「クライアントエラー」を示す値です。
-  - 応答データの中からキー `error-messages`
-    で取得できるエラーメッセージ情報には、入力値エラーとなったパラメーター名の情報等が含まれます。
+  - 応答データの中からキー `error-messages` で取得できるエラーメッセージ情報には、入力値エラーとなったパラメーター名の情報等が含まれます。
   - 実行の成否判定のためには HTTP ステータスを利用してください。
 
 #### 入出力データの例　
@@ -966,14 +960,14 @@ HTTP ステータス 404
 ```
 
 {::options parse_block_html="true" /}
-<dl class="accordion-menu">
-  <dt><a href="javascript:void(0)">利用例</a></dt>
-<dd>Java で SpringFramework の RESTクライアント を使う場合:
+<div class="accordion-menu">
+  <h4 class="toggle-content-btn"><a href="javascript:void(0)">利用例</a></h4>
+<div class="accordion-content">Java で SpringFramework の RESTクライアント を使う場合:
    <script src="https://gist.github.com/ddbj-repo/d3ff7fbc9a66733ab164f669e4bcb88d.js"></script>
 
-[« 閉じる](javascript:void(0)){: .close-btn}
-</dd>
-</dl>
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
 
 ### URI GET /blast/{Request-ID}?info=result (検索結果の閲覧)<a name="URI_GET_result"></a>
 
@@ -1064,15 +1058,16 @@ HTTP ステータス 404
 
 #### 応答データの内容
 
-- 正常終了した場合
+正常終了した場合
+: 
   - HTTP ステータスが `200` 等の「成功」を示す値です。
   - BLAST 検索が出力した結果ファイルの内容を返します。
   - 実行の成否判定のためには HTTP ステータスを利用してください。
 
-- 異常終了した場合
+異常終了した場合
+: 
   - HTTP ステータスが `400` 等の「クライアントエラー」を示す値です。
-  - 応答データの中からキー `error-messages`
-    で取得できるエラーメッセージ情報には、入力値エラーとなったパラメーター名の情報等が含まれます。
+  - 応答データの中からキー `error-messages` で取得できるエラーメッセージ情報には、入力値エラーとなったパラメーター名の情報等が含まれます。
   - 実行の成否判定のためには HTTP ステータスを利用してください。
 
 #### 入出力データの例
@@ -1137,14 +1132,14 @@ HTTP ステータス 400
 ```
 
 {::options parse_block_html="true" /}
-<dl class="accordion-menu">
-  <dt><a href="javascript:void(0)">利用例</a></dt>
-<dd>Java で SpringFramework の RESTクライアント を使う場合:
+<div class="accordion-menu">
+  <h4 class="toggle-content-btn"><a href="javascript:void(0)">利用例</a></h4>
+<div class="accordion-content">Java で SpringFramework の RESTクライアント を使う場合:
    <script src="https://gist.github.com/ddbj-repo/af6f2a4165385224de18cc5968568848.js"></script>
 
-[« 閉じる](javascript:void(0)){: .close-btn}
-</dd>
-</dl>
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
 
 ### URI GET /blast/{Request-ID}?imageId={Image-ID} (検索処理によって出力された画像データの取得)<a name="URI_GET_imageid">
 
@@ -1235,15 +1230,16 @@ HTTP ステータス 400
 
 #### 応答データの内容
 
-- 正常終了した場合
+正常終了した場合
+: 
   - HTTP ステータスが `200` 等の「成功」を示す値です。
   - BLAST 検索処理が出力した画像データを返します。
   - 実行の成否判定のためには HTTP ステータスを利用してください。
 
-- 異常終了した場合
+異常終了した場合
+: 
   - HTTP ステータスが `400` 等の「クライアントエラー」を示す値です。
-  - 応答データの中からキー `error-messages`
-    で取得できるエラーメッセージ情報には、入力値エラーとなったパラメーター名の情報等が含まれます。
+  - 応答データの中からキー `error-messages` で取得できるエラーメッセージ情報には、入力値エラーとなったパラメーター名の情報等が含まれます。
   - 実行の成否判定のためには HTTP ステータスを利用してください。
 
 #### 入出力データの例
@@ -1282,18 +1278,18 @@ HTTP ステータス 404
 ```
 
 {::options parse_block_html="true" /}
-<dl class="accordion-menu">
-  <dt><a href="javascript:void(0)">利用例</a></dt>
-<dd>Java で HttpURLConnection を使う場合:
+<div class="accordion-menu">
+  <h4 class="toggle-content-btn"><a href="javascript:void(0)">利用例</a></h4>
+<div class="accordion-content">Java で HttpURLConnection を使う場合:
    <script src="https://gist.github.com/ddbj-repo/bd58a6ca09c2d380d5ceafd4905a0e2e.js"></script>
    ~~Java で SpringFramework の RESTクライアント を使う場合:~~
 
 <span class="red">※既知の問題のため、 RESTクライアント によっては画像データの変換に失敗します。</span>
 <script src="https://gist.github.com/ddbj-repo/1db03f437b50827f7e7474846ad5979a.js"></script>
 
-[« 閉じる](javascript:void(0)){: .close-btn}
-</dd>
-</dl>
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
 
 ### URI GET /blast/help/{Help-Command} (ヘルプ情報の閲覧)<a name="URI_GET_help"></a>
 
@@ -1317,7 +1313,7 @@ WABI BLAST のヘルプ情報を返します。
 <code class="language-plaintext highlighter-rouge">"/blast/help/"</code> + Help-Command + HTTP パラメーター (例: <code class="language-plaintext highlighter-rouge">"/blast/help/list_program?format=json"</code>)</td>
     </tr>
     <tr>
-      <td rowspan="2">HTTP パラメーター</td>
+      <td rowspan="2" class="borderbtm">HTTP パラメーター</td>
       <td>
 <code class="language-plaintext highlighter-rouge">format</code> (デフォルト値 = <code class="language-plaintext highlighter-rouge">"text"</code>)</td>
       <td>
@@ -1377,10 +1373,12 @@ WABI BLAST のヘルプ情報を返します。
 
 #### 応答データの内容
 
-- 正常終了した場合
+正常終了した場合
+: 
   - 指定されたヘルプ情報を返します。
 
-- 異常終了した場合
+異常終了した場合
+: 
   - 指定可能な Help-Command 等の情報を返します。
 
 #### 入出力データの例
@@ -1425,14 +1423,14 @@ WABI BLAST のヘルプ情報を返します。
 ```
 
 {::options parse_block_html="true" /}
-<dl class="accordion-menu">
-  <dt><a href="javascript:void(0)">利用例</a></dt>
-<dd>Java で SpringFramework の RESTクライアント を使う場合:
+<div class="accordion-menu">
+  <h4 class="toggle-content-btn"><a href="javascript:void(0)">利用例</a></h4>
+<div class="accordion-content">Java で SpringFramework の RESTクライアント を使う場合:
    <script src="https://gist.github.com/ddbj-repo/324515b540e438c23e5589dfa40f9aed.js"></script>
 
-[« 閉じる](javascript:void(0)){: .close-btn}
-</dd>
-</dl>
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
 
 ## WABI BLAST パラメータ
 
@@ -1492,7 +1490,7 @@ TTTGCCCACGGACACAACTGCCATATCGCCTTACGGGAGATCATCGAAACTCTGAACAGC
 CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 ```
 {::options parse_block_html="true" /}
-<div class="attention">
+<div class="attention red">
 配列サイズが巨大な場合や配列数が多い場合など、次のような理由で結果を正常に取得できないことがあります。  
 そのような場合は、配列数を少なくするか配列を短くする等して再度お試しください。
 

@@ -95,7 +95,10 @@ Login ID:
 
 ### 公開鍵/秘密鍵ペアの生成
 
-#### [Windows](javascript:void\(0\))
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">Windows</a></h4>
+<div class="accordion-content">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mggRnbxr0gQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -106,7 +109,14 @@ Login ID:
 ウィンドウのなかでマウスポインターをランダムに動かして鍵を生成させます。生成される公開鍵と秘密鍵を保存します。鍵は WinSCP
 でそのまま使用できる PuTTY 形式で保存されます。
 
-#### [Mac OS X](javascript:void\(0\))
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
+
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">Mac OS X</a></h4>
+<div class="accordion-content">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/h9LbhwROtOM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -149,7 +159,14 @@ Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
 
 その公開鍵ファイル "id\_rsa.pub" をデスクトップなどにコピーし，アカウントに登録します。
 
-#### [Unix](javascript:void\(0\))
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
+
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">Unix</a></h4>
+<div class="accordion-content">
 
 ``` 
 鍵ペアの生成。
@@ -169,6 +186,10 @@ Your identification has been saved in /Users/you/.ssh/id_rsa.
 Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
 "/Users/you/.ssh" フォルダに秘密鍵は "id_rsa" として，公開鍵は "id_rsa.pub" として保存されます。
 ```
+
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
 
 ### Center name と公開鍵の登録
 
@@ -202,7 +223,10 @@ public key\] で鍵を登録します。
 
 ## 秘密鍵ファイルの変換
 
-#### [Windows PuTTY から OpenSSH 形式](javascript:void\(0\))
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">Windows PuTTY から OpenSSH 形式</a></h4>
+<div class="accordion-content">
 
 "変換" メニューの "鍵のインポート" を選択し PuTTY で作成した秘密鍵を読み込みます。
 
@@ -212,7 +236,14 @@ public key\] で鍵を登録します。
 
 [![]({{ site.baseurl }}/assets/images/books/con_2.jpg)]({{ site.baseurl }}/assets/images/books/con_2.jpg "OpenSSH 形式へエクスポート"){: .group1}
 
-#### [OpenSSH から Windows PuTTY 形式](javascript:void\(0\))
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
+
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">OpenSSH から Windows PuTTY 形式</a></h4>
+<div class="accordion-content">
 
 "変換" メニューの "鍵のインポート" を選択し，PuTTY で作成した秘密鍵を読み込みます。
 
@@ -223,3 +254,6 @@ public key\] で鍵を登録します。
 
 [![]({{ site.baseurl }}/assets/images/books/con_4.jpg)]({{ site.baseurl }}/assets/images/books/con_4.jpg "変換された秘密鍵を保存"){: .group1}
 
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>

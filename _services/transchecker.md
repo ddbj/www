@@ -28,11 +28,14 @@ transChecker は Mass Submission System (MSS) を利用して DDBJ に登録す�
   <li>
     ディレクトリが生成される<br>
     下記の要領で、ディレクトリの中身を見ると以下のようになっています。<br>
-    <code>  
-      $ cd transChecker
-      $ ls -FC
-      jar/license.txt   transChecker.sh*
-    </code>
+    <pre>
+      <code> 
+$ cd transChecker
+$ ls -FC
+jar/license.txt   transChecker.sh*
+      </code>
+    </pre>
+    <br>
     <table>
       <tbody>
         <tr>

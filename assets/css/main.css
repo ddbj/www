@@ -485,14 +485,14 @@ input, textarea, select, button {
     padding: 1rem 1.6rem;
     border-left: 6px solid #FEC091;
     margin-bottom: 1.6rem; }
-  .md-content .accordion-menu dt {
+  .md-content .toggle-content-btn {
     display: flex;
     align-items: center;
     cursor: pointer; }
-    .md-content .accordion-menu dt a {
+    .md-content .toggle-content-btn a {
       text-decoration: none;
       position: relative; }
-    .md-content .accordion-menu dt::after {
+    .md-content .toggle-content-btn::after {
       content: "";
       display: inline-block;
       width: 6px;
@@ -502,18 +502,12 @@ input, textarea, select, button {
       border-top: 3px solid #FF7300;
       border-right: 3px solid #FF7300;
       transform: translateY(-35%) rotate(135deg); }
-    .md-content .accordion-menu dt.active::after {
+    .md-content .toggle-content-btn.active::after {
       transform: rotate(315deg); }
-  .md-content .accordion-menu dd.content {
+  .md-content .accordion-menu div.accordion-content {
     margin: 0;
-    visibility: hidden;
-    max-height: 0;
-    transition: .5s;
-    overflow: hidden; }
-    .md-content .accordion-menu dd.content.active {
-      visibility: visible;
-      max-height: 1000vh; }
-  .md-content .close-btn {
+    display: none; }
+  .md-content .close-content-btn {
     text-align: right;
     display: block; }
   .md-content .float-left {
