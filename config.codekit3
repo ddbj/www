@@ -3349,7 +3349,7 @@
 		"tS": 0
 		},
 	"/_javascript/common_header.js": {
-		"bF": 0,
+		"bF": 6,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
@@ -3815,6 +3815,19 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/_sass/common_header.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 2,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/assets/css/common_header.css",
+		"oF": 3,
+		"oS": 0,
+		"sct": 0
+		},
 	"/_sass/foundation/_base.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -4068,19 +4081,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/_sass/object/project/_Body.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 1
-		},
-	"/_sass/object/project/_CommonHeader.sass": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 2,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_sass/object/project/_CommonHeader.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
@@ -6670,6 +6670,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/assets/css/colorbox-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/assets/css/common_header.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/assets/css/common_header-min.css",
 		"oF": 0,
 		"oS": 3
 		},
