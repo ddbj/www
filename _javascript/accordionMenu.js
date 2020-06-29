@@ -1,15 +1,14 @@
 // アコーディオンメニュー
 export default function accordionMenu() {
   $('.btn').on('click', function () {
-
-    $(this)
-      .next('.content')
-      .toggleClass("active");
+    const content = $(this).next('.content')
+    content.slideToggle(500)
     $(this).toggleClass("active");
   });
 
   $('.close-btn').click(function () {
-    $(this).parents('.content').removeClass("active");
+    const content = $(this).next('.content')
+    content.slideToggle(500)
     $(this).removeClass("active");
   });
 }
