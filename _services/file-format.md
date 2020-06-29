@@ -6,9 +6,7 @@ category: services
 
 ## 配列ファイル<a name="sequence"></a>
 
-配列ファイルは、全登録データの配列を FASTA に類似した形式で記述したテキストファイルです。 配列ファイルは、1つの配列データは、"\>"
-で始まる1行のヘッダ行と、2行目以降の実際のシーケンス文字列で構成されます。DDBJ では、エントリ間は配列情報終了フラグ (//)
-で区切ります。
+配列ファイルは、全登録データの配列を FASTA に類似した形式で記述したテキストファイルです。 配列ファイルは、1つの配列データは、"\>" で始まる1行のヘッダ行と、2行目以降の実際のシーケンス文字列で構成されます。DDBJ では、エントリ間は配列情報終了フラグ (//) で区切ります。
 
 例: 配列ファイル
 
@@ -27,8 +25,7 @@ atttgaacacacctgctgtggctgtaactctgagatgtgctaaataaaccctctt
 
 ### 書式と構文
 
-必ず、[UME](/ddbj/ume.html) または [Parser](/ddbj/parser.html)
-を用いて、配列ファイルとアノテーションファイルの書式をご確認ください。
+必ず、[UME](/ddbj/ume.html) または [Parser](/ddbj/parser.html) を用いて、配列ファイルとアノテーションファイルの書式をご確認ください。
 
   - ベクター，リンカー，アダプターなどの配列（technical
     readと呼びます）は必ず除去してください。ただし、ベクターなどの配列自体を報告する場合は、除去する必要はありません。
@@ -49,8 +46,7 @@ atttgaacacacctgctgtggctgtaactctgagatgtgctaaataaaccctctt
 
 ## アノテーションファイル<a name="annotation"></a>
 
-アノテーションファイルは、全登録データの登録者, REFERENCE、Feature/Qualifierの情報等を記述した、Entry,
-Feature, Location, Qualifier, Value の５列からなるタブ区切りテキストファイルです。  
+アノテーションファイルは、全登録データの登録者, REFERENCE、Feature/Qualifierの情報等を記述した、Entry, Feature, Location, Qualifier, Value の５列からなるタブ区切りテキストファイルです。  
 スクリプト、(MS Excel などの) 表計算ソフト、テキストエディタ等で作成が可能です。
 
 例:アノテーションファイル （<span class="red">入力必須項目</span>）
@@ -633,11 +629,9 @@ methodological keywords](/ddbj/keyword.html)をご参照ください。
     |    |  <span class="red">KEYWORD</span>  |    |  <span class="red">keyword</span>   |  <span class="red">HTG</span>  |
     |    |    |    |  <span class="red">keyword</span>  |  <span class="red">HTGS_DRAFT</span>  |
 
-
 ### DBLINK
 
-DBLINK は、 BioProject ID、BioSample ID、Sequence Read Archive (DRA/ERA/SRA)
-他, 特定データベースへのリンクを記載します。
+DBLINK は、 BioProject ID、BioSample ID、Sequence Read Archive (DRA/ERA/SRA) 他, 特定データベースへのリンクを記載します。
 
 例: アノテーションファイル内の DBLINK（<span class="red">入力必須項目</span>）
 
@@ -686,16 +680,48 @@ ff\_definition は、The DDBJ/EMBL/GenBank Feature Table: Definition
 
 ff\_definition 記述フォーマット
 
-| データ種別                                                              | ff\_definition記述フォーマット                                                                                               |
-| ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------- |
-| [WGS](/ddbj/wgs.html)                                              | @@\[organism\]@@ @@\[strain\]@@ DNA, @@\[submitter\_seqid\]@@, \[other information\]                                 |
-| BAC/YAC genomic clones in unfinished phase ([HTG](/ddbj/htg.html)) | @@\[organism\]@@ DNA, chromosome @@\[map\]@@, \[BAC/YAC\] clone: @@\[clone\]@@, \*\*\* SEQUENCING IN PROGRESS \*\*\* |
-| BAC/YAC genomic clones in finished phase                           | @@\[organism\]@@ DNA, chromosome @@\[map\]@@, \[BAC/YAC\] clone: @@\[clone\]@@                                       |
-| [EST](/ddbj/est.html)                                              | @@\[organism\]@@ mRNA, clone: @@\[clone\]@@, \[other information\]                                                   |
-| [EST](/ddbj/est.html)                                              | @@\[organism\]@@ cDNA, clone: @@\[clone\]@@, \[other information\]                                                   |
-| [GSS](/ddbj/gss.html)                                              | @@\[organism\]@@ DNA, clone: @@\[clone\]@@, \[other information\]                                                    |
-| STS                                                                | @@\[organism\]@@ DNA, @@\[map\]@@, \[marker name\], sequence tagged site                                             |
-| その他                                                                | 登録毎にご連絡いたします。                                                                                                        |
+<table>
+  <thead>
+    <tr>
+      <th>データ種別</th>
+      <th>ff_definition記述フォーマット</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/ddbj/wgs.html">WGS</a></td>
+      <td>@@[organism]@@ @@[strain]@@ DNA, @@[submitter_seqid]@@, [other information]</td>
+    </tr>
+    <tr>
+      <td>BAC/YAC genomic clones in unfinished phase (<a href="/ddbj/htg.html">HTG</a>)</td>
+      <td>@@[organism]@@ DNA, chromosome @@[map]@@, [BAC/YAC] clone: @@[clone]@@, *** SEQUENCING IN PROGRESS ***</td>
+    </tr>
+    <tr>
+      <td>BAC/YAC genomic clones in finished phase</td>
+      <td>@@[organism]@@ DNA, chromosome @@[map]@@, [BAC/YAC] clone: @@[clone]@@</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/est.html">EST</a></td>
+      <td>@@[organism]@@ mRNA, clone: @@[clone]@@, [other information]</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/est.html">EST</a></td>
+      <td>@@[organism]@@ cDNA, clone: @@[clone]@@, [other information]</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/gss.html">GSS</a></td>
+      <td>@@[organism]@@ DNA, clone: @@[clone]@@, [other information]</td>
+    </tr>
+    <tr>
+      <td>STS</td>
+      <td>@@[organism]@@ DNA, @@[map]@@, [marker name], sequence tagged site</td>
+    </tr>
+    <tr>
+      <td>その他</td>
+      <td>登録毎にご連絡いたします。</td>
+    </tr>
+  </tbody>
+</table>
 
 #### source: ff\_definition の書式
 
@@ -886,7 +912,7 @@ PRIMARY\_CONTIG feature で使用可能な qualifier
       <td><a href="/ddbj/tsa.html">TSA</a> (Transcriptome Shotgun Assembly); assembled from EST</td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=2130672006">TSA</a></td>
     </tr>
-    <tr>
+    <tr id="TSA_SRA_assemble_NoANN">
       <td><a href="/ddbj/tsa.html">TSA</a>; assembled from short reads without annotation</td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=931177555">TSA_SRA_assemble_NoANN</a></td>
     </tr>
@@ -916,7 +942,7 @@ PRIMARY\_CONTIG feature で使用可能な qualifier
       <td><a href="/ddbj/tpa.html">TPA</a> assembly (Third Party Data)</td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1394019205">TPA-assembly</a></td>
     </tr>
-    <tr>
+    <tr id="ann2-ff">
       <td>アノテーション:フラットファイル</td>
       <td>タンパク質コード領域</td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=961825804">ann2-ff</a></td>
@@ -926,8 +952,7 @@ PRIMARY\_CONTIG feature で使用可能な qualifier
 
 ## AGP ファイル<a name="agp"></a>
 
-AGP ファイルは [CON](/ddbj/con.html) エントリの登録に必要です。 AGP ファイルは CON
-エントリを構築する際のピースエントリの順序、種類、方向等が記載された、9列からなるタブ区切りテキストファイルです。
+AGP ファイルは [CON](/ddbj/con.html) エントリの登録に必要です。 AGP ファイルは CON エントリを構築する際のピースエントリの順序、種類、方向等が記載された、9列からなるタブ区切りテキストファイルです。
 スクリプト、(MS Excel などの) 表計算ソフト、テキストエディタ等で作成が可能です。
 
 AGP ファイルの書式は、UCSC, EBI および NCBI により開発されました。
@@ -957,6 +982,8 @@ check)でチェックすることが可能です。
 
 各カラムにおける記述内容（カラム 1 - カラム 5）
 
+component: より大きな配列を構築するために使用される配列 (ピースエントリ)
+{: .tablecaption}
 <table>
   <thead>
     <tr>
@@ -1030,13 +1057,12 @@ check)でチェックすることが可能です。
   </tbody>
 </table>
 
-\* component: より大きな配列を構築するために使用される配列 (ピースエントリ)
-
-<span class="icon_d-triangle">6 以降のカラムは、カラム 5 の value
-に依存して記述内容が異なります。</span>
+<span class="icon_d-triangle">6 以降のカラムは、カラム 5 の value に依存して記述内容が異なります。</span>
 
 各カラムにおける記述内容（カラム 6 - カラム 9）：カラム 5 が "N"と"U"以外の場合
 
+component: より大きな配列を構築するために使用される配列 (ピースエントリ)
+{: .tablecaption}
 <table>
   <thead>
     <tr>
@@ -1091,8 +1117,6 @@ check)でチェックすることが可能です。
     </tr>
   </tbody>
 </table>
-
-\* component: より大きな配列を構築するために使用される配列 (ピースエントリ)
 
   - 長さが判明していないギャップ領域については、一律 100 個の n で記述する規則となっています。 component\_type の
     value に"U"、gap\_length の value に "100" と記載します。
