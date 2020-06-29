@@ -99,6 +99,8 @@ collections:
     output: true
   faq:
     output: true
+  news:
+    output: true
 
 defaults:
   - scope:
