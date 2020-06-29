@@ -504,9 +504,15 @@ input, textarea, select, button {
       transform: translateY(-35%) rotate(135deg); }
     .md-content .accordion-menu dt.active::after {
       transform: rotate(315deg); }
-  .md-content .accordion-menu dd {
-    display: none;
-    margin: 0; }
+  .md-content .accordion-menu dd.content {
+    margin: 0;
+    visibility: hidden;
+    max-height: 0;
+    transition: .5s;
+    overflow: hidden; }
+    .md-content .accordion-menu dd.content.active {
+      visibility: visible;
+      max-height: 1000vh; }
   .md-content .close-btn {
     text-align: right;
     display: block; }

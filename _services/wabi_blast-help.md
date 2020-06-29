@@ -147,24 +147,23 @@ WABI の BLAST検索ジョブ は、 BLAST検索結果を元にしてグラフ�
 
 {::options parse_block_html="true" /}
 <dl class="accordion-menu">
-<dt><a href="javascript:void(0)">Javaの使用例</a></dt>
-<dd>#### コード例
+<dt class="btn"><a href="javascript:void(0)">Javaの使用例</a></dt>
+<dd class="content">#### コード例
 
-- Example.java
+Example.java
+: <script src="https://gist.github.com/ddbj-repo/d2ead08e9b9664418c34e292392f1ca8.js"></script>
 
-<script src="https://gist.github.com/ddbj-repo/d2ead08e9b9664418c34e292392f1ca8.js"></script>
+blast_condition.fasta
+: 
+  ``` 
+  >my query sequence 1
+  CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
+  GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
+  GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
+  ```
 
-- blast_condition.fasta
-
-``` 
->my query sequence 1
-CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
-GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
-GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
-```
-
-- blast_condition.txt  
-
+blast_condition.txt  
+:
 [コード](https://gist.github.com/ddbj-repo/22e92ce2e085be3f34fe072298241639)
 
   ``` 

@@ -194,9 +194,15 @@ $MARGIN_BOTTOM: 1rem
       &::after
         transform: rotate(315deg)
 
-  .accordion-menu dd
-    display: none
+  .accordion-menu dd.content
     margin: 0
+    visibility: hidden
+    max-height: 0
+    transition: .5s
+    overflow: hidden
+    &.active
+      visibility: visible
+      max-height: 1000vh
 
   .close-btn
     text-align: right
