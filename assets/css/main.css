@@ -561,6 +561,15 @@ input, textarea, select, button {
     width: auto; }
   .md-content sup {
     vertical-align: super; }
+  .md-content .news_category {
+    font-size: 80%;
+    color: #736357; }
+    .md-content .news_category span {
+      display: block;
+      padding-bottom: .3rem; }
+  .md-content .news_date {
+    font-size: 80%;
+    color: #333; }
   .md-content .flow {
     color: #000000;
     list-style: none;
