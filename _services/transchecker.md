@@ -76,14 +76,14 @@ exit $RETVAL
       </code>
     </pre>
 
-    <dl>
-      <dt>[TRANS_DIR 変数]</dt>
-      <dd>transChecker ディレクトリのある場所をフルパスで入力して下さい。</dd>
-      <dd>例) TRANS_DIR=/home/mass/transChecker</dd>
-      <dt>[HEAP_SIZE 変数]</dt>
-      <dd>transChecker が使用できる最大メモリ量を指定してください。</dd>
-      <dd>例) HEAP_SIZE=128m</dd>
-    </dl>
+  <dl>
+    <dt>[TRANS_DIR 変数]</dt>
+    <dd>transChecker ディレクトリのある場所をフルパスで入力して下さい。</dd>
+    <dd>例) TRANS_DIR=/home/mass/transChecker</dd>
+    <dt>[HEAP_SIZE 変数]</dt>
+    <dd>transChecker が使用できる最大メモリ量を指定してください。</dd>
+    <dd>例) HEAP_SIZE=128m</dd>
+  </dl>
   </li>  
   <li>
     PATH を指定する<br>

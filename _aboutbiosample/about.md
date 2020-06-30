@@ -5,8 +5,6 @@ pathname: about
 category: aboutbiosample
 ---
 
-
-
 ## 連絡先
 
 [メッセージフォーム](/contact.html)よりご連絡ください。

@@ -14,8 +14,7 @@ DNA Data Bank of Japan (DDBJ)
 FAX : 81-55-981-6849  
 TEL : 81-55-981-6853
 
-For inquiries and questions, please contact us from the [contact
-form](/contact-e.html).
+For inquiries and questions, please contact us from the [contact form](/contact-e.html).
 
 ## Location with in NIG
 

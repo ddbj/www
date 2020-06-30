@@ -42,11 +42,14 @@ TransChecker is a software tool developed by DDBJ for checking translation into 
   <li>
     directory is created<br>
     Check the contents of the directory。<br>
-    <code>  
-      $ cd transChecker
-      $ ls -FC
-      jar/license.txt   transChecker.sh*
-    </code>
+    <pre>
+      <code>  
+$ cd transChecker
+$ ls -FC
+jar/license.txt   transChecker.sh*
+      </code>
+    </pre>
+    <br>
     <table>
       <tbody>
         <tr>
@@ -87,14 +90,14 @@ exit $RETVAL
       </code>
     </pre>
 
-<dl>
-  <dt>[TRANS_DIR 変数]</dt>
-  <dd>transChecker ディレクトリのある場所をフルパスで入力して下さい。</dd>
-  <dd>例) TRANS_DIR=/home/mass/transChecker</dd>
-  <dt>[HEAP_SIZE 変数]</dt>
-  <dd>transChecker が使用できる最大メモリ量を指定してください。</dd>
-  <dd>例) HEAP_SIZE=128m</dd>
-</dl>
+  <dl>
+    <dt>[TRANS_DIR 変数]</dt>
+    <dd>transChecker ディレクトリのある場所をフルパスで入力して下さい。</dd>
+    <dd>例) TRANS_DIR=/home/mass/transChecker</dd>
+    <dt>[HEAP_SIZE 変数]</dt>
+    <dd>transChecker が使用できる最大メモリ量を指定してください。</dd>
+    <dd>例) HEAP_SIZE=128m</dd>
+  </dl>
   </li>  
   <li>
     Set PATH<br>
