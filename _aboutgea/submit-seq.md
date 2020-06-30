@@ -70,14 +70,28 @@ category: aboutgea
 
 ## 登録前のチェックリスト
 
-#### [Single-cell sequencing experiment](javascript:void\(0\))
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">Single-cell sequencing experiment</a></h4>
+<div class="accordion-content">
 
 [ArrayExpress Single-cell submission guide](https://www.ebi.ac.uk/arrayexpress/help/single-cell_submission_guide.html)を参照してください。spike-in やデータ解析に必要な追加ファイルを登録する場合は [GEA チームに連絡](/contact.html)してください。
 
-#### [More than one technology per experiment](javascript:void\(0\))
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
+
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">More than one technology per experiment</a></h4>
+<div class="accordion-content">
 
 GEA では一つの登録に異なる種類のテクノロジー（マイクロアレイとシークエンシング）を含めることはできないため登録を分ける必要があります。間違いを防ぐためそれぞれの登録には同じ研究に属していても明確に区別できるタイトルを付けてください。
 一つの登録に異なるアレイデザインを含めることは可能なので、このような場合は [GEA チームに連絡](/contact.html)してください。
+
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
 
 ## シークエンス実験の登録
 
@@ -112,11 +126,12 @@ DDBJ センターから登録者に問い合わせた後三か月以上回答が
 | Confidential     | 公開用ファイルの作成処理が完了し、非公開に保たれている状態 |
 | Public           | 公開されている状態                     |
 
-# はじめに {#sec:first}
-
 ### 解析済みファイルのアップロード<a name="upload-data"></a>
 
-#### [ターミナルによるシークエンスデータの転送 (Linux/Mac OS X)](javascript:void\(0\))
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">ターミナルによるシークエンスデータの転送 (Linux/Mac OS X)</a></h4>
+<div class="accordion-content">
 
 ファイルを SCP 転送します。
 
@@ -159,7 +174,14 @@ Enter passphrase for key '/home/you/.ssh/id_rsa':
 ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 ```
 
-#### [WinSCP によるシークエンスデータの転送 (Windows)](javascript:void\(0\))
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
+
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">WinSCP によるシークエンスデータの転送 (Windows)</a></h4>
+<div class="accordion-content">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZxIfewrk8lI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -200,7 +222,14 @@ DRA への登録 ～データの転送 (Windows)～
 
 転送したファイルは、ファイルを選択し \[削除\] ボタンをクリックすることで削除できます。
 
-#### [Cyberduck によるシークエンスデータの転送 (Mac OS X)](javascript:void\(0\))
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
+
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">Cyberduck によるシークエンスデータの転送 (Mac OS X)</a></h4>
+<div class="accordion-content">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/A2hPlGZEW_o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -237,6 +266,10 @@ Cyberduck の起動画面で、以下のように設定し More Options の "Use
 ログインに成功すると、データ受付サーバの登録者専用ディレクトリが表示されます。登録者の PC にあるファイルを選択しウィンドウにドラッグ＆ドロップすることで、ファイルをサーバに転送します。
 
 [![]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg)]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg  "transfer"){:.group1}
+
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
 
 <div class="attention red">
 ftp-private.ddbj.nig.ac.jp サーバに秘密鍵を使って ssh でログインすることができます。
@@ -425,11 +458,14 @@ Validator は [validation rule](/gea/validation.html) に従ってメタデー�
 
 アーカイブされた Experiment を削除する場合は [GEA チームに連絡](/contact.html)します。
 
-## 補足: MD5 値
+## 補足: MD5 値<a name="supplement-md5"></a>
 
 MD5 (Message Digest Algorithm 5) はハッシュ関数であり、与えられたファイルに対してハッシュ値 (MD5値、32桁の英数字) を出力します。ファイルが破損していると MD5 値が変化します。 DRA では、到着したファイルの MD5 値の一致をチェックすることで、ファイルの破損がないかどうか確認しています。
 
-### [MD5 値の取得 (Linux)](javascript:void\(0\))
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h3 class="toggle-content-btn"><a href="javascript:void(0)">MD5 値の取得 (Linux)</a></h3>
+<div class="accordion-content">
 
 ファイルの MD5 値を取得します。
 
@@ -439,7 +475,14 @@ $ md5sum file1 file2
 B636E0063E29709B6082F324C76D0911 file2
 ```
 
-### [MD5 値の取得 (Mac OS X)](javascript:void\(0\))
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
+
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h3 class="toggle-content-btn"><a href="javascript:void(0)">MD5 値の取得 (Mac OS X)</a></h3>
+<div class="accordion-content">
 
 ファイルの MD5 値を取得します。
 
@@ -449,7 +492,14 @@ $ md5 file1 file2
 B636E0063E29709B6082F324C76D0911 file2
 ```
 
-### [MD5 値の取得 (Windows)](javascript:void\(0\))<a name="supplement-md5"></a>
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
+
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h3 class="toggle-content-btn"><a href="javascript:void(0)">MD5 値の取得 (Windows)</a></h3>
+<div class="accordion-content">
 
 [Fsum Frontend(http://sourceforge.net/projects/fsumfe/)](http://sourceforge.net/projects/fsumfe/) をインストールし、起動します。  
 まず、 "md5" にチェックを入れてください。
@@ -464,3 +514,6 @@ B636E0063E29709B6082F324C76D0911 file2
 
 [![]({{ site.baseurl }}/assets/images/books/Fsum3.jpg)]({{ site.baseurl }}/assets/images/books/Fsum3.jpg  "MD5 値の計算を開始"){:.group1}
 
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
