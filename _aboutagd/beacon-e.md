@@ -5,15 +5,10 @@ pathname: beacon-e
 category: aboutagd
 ---
 
-<div id="breadcrumb" class="clearfix">
-    * [HOME](/agd/index-e.html "AMED Genome group sharing Database top page")
-    * >
-    * GA4GH Beacon
-</div>
-
-<div id="primary">
-    <div id="page_main">
-        <div id="book">
+* [HOME](/agd/index-e.html "AMED Genome group sharing Database top page")
+* >
+* GA4GH Beacon
+    
             <header>
                 # GA4GH Beacon
             </header>
@@ -23,12 +18,11 @@ category: aboutagd
             </article>
 
             <!-- #article -->
-        </div>
+    
 
         <!-- #book -->
-    </div>
+
 
     <!-- #page_main -->
-</div>
 
 <!-- #primary -->
