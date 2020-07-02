@@ -12,20 +12,22 @@ category: tentative
 
 1. 情報の利用目的及び利用方法
 
-  - 非アクセス制限データベース  
-    [DDBJ センターについて](aboutus.html#mission)
-  - アクセス制限データベース  
-    [JGA](/jga/index.html)
-    [AGD](/agd/index.html)
-    [NBDCヒトデータ共有ガイドライン](https://humandbs.biosciencedbc.jp/guidelines/data-sharing-guidelines)
+非アクセス制限データベース  
+: [DDBJ センターについて](aboutus.html#mission)
+
+アクセス制限データベース  
+: [JGA](/jga/index.html)
+: [AGD](/agd/index.html)
+: [NBDCヒトデータ共有ガイドライン](https://humandbs.biosciencedbc.jp/guidelines/data-sharing-guidelines)
 
 2. 利用し、又は提供する情報の項目
 
-  - 非アクセス制限データベース  
-    [データ登録](/submission.html)
-  - アクセス制限データベース  
-    [JGA 登録手順](/jga/substep.html)
-    [AGD 登録手順](/agd/substep.html)
+非アクセス制限データベース  
+: [データ登録](/submission.html)
+
+アクセス制限データベース  
+: [JGA 登録手順](/jga/substep.html)
+: [AGD 登録手順](/agd/substep.html)
 
 3. 利用する者の範囲
 
