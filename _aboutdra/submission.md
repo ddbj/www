@@ -40,7 +40,7 @@ category: aboutdra
 : Run に格納されたデータを解析したデータで、しかるべき登録先がないようなデータを登録します。Analysis は DDBJ/EBI/NCBI で交換していません。 交換を希望する場合は [DRA チームに連絡します]({{ site.url }}{{ site.baseurl }}/aboutus/contact.html)。 Analysis は [DRASearch](http://ddbj.nig.ac.jp/DRASearch) でインデックスされず、ftp でのファイル公開のみになります。
 
 {::nomarkdown}
-{% include image.html url="books/sra_object.png" caption="データモデル" %}
+{% include image.html url="books/sra_object.png" caption="データモデル" class="w450" %}
 {:/}
 
 ### オブジェクトの構成例
@@ -55,7 +55,7 @@ category: aboutdra
 #### 最もシンプルなケース <a name="ex_simple"></a>
 
 {::nomarkdown}
-{% include image.html url="submission/obj_ex1.jpg" caption="最もシンプルなケース" %}
+{% include image.html url="submission/obj_ex1.jpg" caption="最もシンプルなケース" class="w450" %}
 {:/}
 
 #### 三つの菌株の比較ゲノム解析 (ペアエンド) <a name="ex_samples"></a>
@@ -63,7 +63,7 @@ category: aboutdra
 ペアリードファイルは同じ Run に含めます。
 
 {::nomarkdown}
-{% include image.html url="submission/obj_ex2.jpg" caption="三つの菌株の比較ゲノム解析 (ペアエンド)" %}
+{% include image.html url="submission/obj_ex2.jpg" caption="三つの菌株の比較ゲノム解析 (ペアエンド)" class="w450" %}
 {:/}
 
 #### (Technical, Biological) replicate がある場合 (ペアエンド) <a name="ex_replicates"></a>
@@ -71,13 +71,13 @@ category: aboutdra
 [関連する FAQ: 塩基配列登録にはいくつのサンプルが必要ですか?](/faq/ja/index.html#samples-for-sra)
 
 {::nomarkdown}
-{% include image.html url="submission/obj_exreplicate.jpg" caption="(Technical, Biological) replicate がある場合　(ペアエンド)" %}
+{% include image.html url="submission/obj_exreplicate.jpg" caption="(Technical, Biological) replicate がある場合　(ペアエンド)" class="w450" %}
 {:/}
 
 #### 関連するデータが別々の論文に発表される場合 <a name="ex_submissions"></a>
 
 {::nomarkdown}
-{% include image.html url="submission/obj_ex3.jpg" caption="関連するデータが別々の論文に発表される場合" %}
+{% include image.html url="submission/obj_ex3.jpg" caption="関連するデータが別々の論文に発表される場合" class="w450" %}
 {:/}
 
 メタデータ各項目の説明
@@ -566,7 +566,7 @@ PacBio や IonTorrent などでリファレンス配列がない bam ファイ�
 </div>
 
 {::nomarkdown}
-{% include image.html url="books/bam-mapping.jpg" caption="bam とリファレンス配列の対応付け" %}
+{% include image.html url="books/bam-mapping.jpg" caption="bam とリファレンス配列の対応付け" class="w500" %}
 {:/}
 
 1. #### BAM
@@ -818,7 +818,7 @@ BioProject/BioSample/DRA の登録方法 (6分50秒、作成:2015年)
 ここでは３つのバクテリア菌株のゲノム配列をペアーエンドでシークエンスしたデータを登録する場合を例に説明します。
 
 {::nomarkdown}
-{% include image.html url="books/datamodel1.jpg" caption="三つの菌株のゲノム配列を登録" %}
+{% include image.html url="books/datamodel1.jpg" caption="三つの菌株のゲノム配列を登録" class="w450" %}
 {:/}
 
 ### 新規登録の作成
@@ -837,7 +837,7 @@ DDBJ センターから登録者に問い合わせた後三か月以上回答が
 </div>
 
 {::nomarkdown}
-{% include image.html url="books/hdra01.jpg" caption="新規 DRA 登録の作成" %}
+{% include image.html url="books/hdra01.jpg" caption="新規 DRA 登録の作成" class="w450" %}
 {:/}
 
 登録のステータスには以下のものがあります。"submission_validated" と "data_error"
@@ -935,22 +935,22 @@ DRA への登録 ～データの転送 (Windows)～
   - **User name:** (D-way の Login ID を入力)
   - **Password:** (空欄のまま)
 
-[![秘密鍵の登録１]({{ site.baseurl }}/assets/images/books/winscp1_400.jpg "秘密鍵の登録１")]({{ site.baseurl }}/assets/images/books/winscp1_400.jpg "秘密鍵の選択１"){:.group1}
+[![秘密鍵の登録１]({{ site.baseurl }}/assets/images/books/winscp1_400.jpg "秘密鍵の登録１"){:.w300}]({{ site.baseurl }}/assets/images/books/winscp1_400.jpg "秘密鍵の選択１"){:.group1}
 
 "Authentication" にある "Private key file" で、事前に作成した PuTTY 形式の秘密鍵を選択します。
 
-[![秘密鍵の登録2]({{ site.baseurl }}/assets/images/books/winscp2_400.jpg "秘密鍵の登録2")]({{ site.baseurl }}/assets/images/books/winscp2_400.jpg "秘密鍵の選択2"){:.group1}
+[![秘密鍵の登録2]({{ site.baseurl }}/assets/images/books/winscp2_400.jpg "秘密鍵の登録2"){:.w300}]({{ site.baseurl }}/assets/images/books/winscp2_400.jpg "秘密鍵の選択2"){:.group1}
 
 最後に、下中央にある [Login] をクリックします。
 
-[![winSCPへのログイン]({{ site.baseurl }}/assets/images/books/winscp3_400.jpg "winSCPへのログイン")]({{ site.baseurl }}/assets/images/books/winscp3_400.jpg "winSCPへのログイン"){:.group1}
+[![winSCPへのログイン]({{ site.baseurl }}/assets/images/books/winscp3_400.jpg "winSCPへのログイン"){:.w300}]({{ site.baseurl }}/assets/images/books/winscp3_400.jpg "winSCPへのログイン"){:.group1}
 
 初回接続時には警告メッセージが表示されますが、“はい” を選択してください
 (次回から表示されません)。次の画面では、鍵を作成した際に指定したパスフレーズを入力します。
 
 ログインに成功すると、左側のウィンドウにユーザの PC のフォルダ、右側のウィンドウにデータ受付サーバの登録者専用ディレクトリが表示されます。 左側ウィンドウでファイルを選択し右側ウィンドウへドラッグ＆ドロップし、サーバへファイルを転送します。
 
-[![ファイルの転送]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg "ファイルの転送")]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg "ファイルの転送"){:.group1}
+[![ファイルの転送]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg "ファイルの転送"){:.w400}]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg "ファイルの転送"){:.group1}
 
 転送したファイルは、ファイルを選択し [削除] ボタンをクリックすることで削除できます。
 
@@ -971,11 +971,11 @@ DRA への登録 ～データの転送 (Mac)～
 
 トップ画面で “Open Connection” を選択します。
 
-[![open_connection]({{ site.baseurl }}/assets/images/books/Cyberduck_1.jpg "open_connection")]({{ site.baseurl }}/assets/images/books/Cyberduck_1.jpg "open_connection"){:.group1}
+[![open_connection]({{ site.baseurl }}/assets/images/books/Cyberduck_1.jpg "open_connection"){:.w300}]({{ site.baseurl }}/assets/images/books/Cyberduck_1.jpg "open_connection"){:.group1}
 
 使用する転送方式で “SFTP (SSH File Transfer Protocol)” を選択します。
 
-[![SFTP]({{ site.baseurl }}/assets/images/books/Cyberduck_2.jpg "SFTP")]({{ site.baseurl }}/assets/images/books/Cyberduck_2.jpg "SFTP"){:.group1}
+[![SFTP]({{ site.baseurl }}/assets/images/books/Cyberduck_2.jpg "SFTP"){:.w300}]({{ site.baseurl }}/assets/images/books/Cyberduck_2.jpg "SFTP"){:.group1}
 
 Cyberduck の起動画面で、以下のように設定し More Options の “Use Public Key
 Authentication” をチェックします。
@@ -986,12 +986,12 @@ Authentication” をチェックします。
   - **Password:** (空欄のまま)
   - **Add to Keychain:** (チェックを入れる)
 
-[![key_authentication]({{ site.baseurl }}/assets/images/books/Cyberduck_3.jpg "key_authentication")]({{ site.baseurl }}/assets/images/books/Cyberduck_3.jpg "key_authentication"){:.group1}
+[![key_authentication]({{ site.baseurl }}/assets/images/books/Cyberduck_3.jpg "key_authentication"){:.w300}]({{ site.baseurl }}/assets/images/books/Cyberduck_3.jpg "key_authentication"){:.group1}
 
 
 秘密鍵 (private key) はデフォルトで “ユーザのホームフォルダ .ssh フォルダ (Finder からは見えない隠しフォルダ) > id_rsa” に保存されています。
 
-[![private_key]({{ site.baseurl }}/assets/images/books/Cyberduck_4.jpg "private_key")]({{ site.baseurl }}/assets/images/books/Cyberduck_4.jpg "private_key"){:.group1}
+[![private_key]({{ site.baseurl }}/assets/images/books/Cyberduck_4.jpg "private_key"){:.w300}]({{ site.baseurl }}/assets/images/books/Cyberduck_4.jpg "private_key"){:.group1}
 
 
 初回接続時には警告メッセージが表示されますが “常に” を選択してください (次回から表示されません)。
@@ -999,7 +999,7 @@ Authentication” をチェックします。
 ログインに成功すると、データ受付サーバの登録者専用ディレクトリが表示されます。登録者の PC
 にあるファイルを選択しウィンドウにドラッグ＆ドロップすることで、ファイルをサーバに転送します。
 
-[![transfer]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg "transfer")]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg "transfer"){:.group1}
+[![transfer]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg "transfer"){:.w400}]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg "transfer"){:.group1}
 
 [« 閉じる](javascript:void(0)){: .close-content-btn}
 </div>
@@ -1020,13 +1020,13 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 作成した新規登録をクリックし、登録詳細ページへ移動します。
 
 {::nomarkdown}
-{% include image.html url="books/hdra02.jpg" caption="登録詳細ページへ移動" %}
+{% include image.html url="books/hdra02.jpg" caption="登録詳細ページへ移動" class="w450" %}
 {:/}
 
 登録詳細ページ中の [Enter / Update metadata] をクリックし、メタデータ作成ツールを起動します。
 
 {::nomarkdown}
-{% include image.html url="books/hdra03.jpg" caption="メタデータ作成ツールを起動" %}
+{% include image.html url="books/hdra03.jpg" caption="メタデータ作成ツールを起動" class="w450" %}
 {:/}
 
 新規登録に対応するファイルサーバのディレクトリにデータファイルがアップロードされていない場合、下記のようなメッセージが表示されます。[データファイルをアップロードします](#upload-sequence-data)。
@@ -1034,7 +1034,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 先にメタデータを作成しておきたい場合は、適当なファイルをアップロードしておきます。
 
 {::nomarkdown}
-{% include image.html url="books/hdra-not-uploaded.jpg" caption="データファイルがアップロードされていない場合" %}
+{% include image.html url="books/hdra-not-uploaded.jpg" caption="データファイルがアップロードされていない場合" class="w200" %}
 {:/}
 
 メタデータは Submission、BioProject、BioSample、Experiment、Run、Analysis (任意)
@@ -1053,7 +1053,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 </div>
 
 {::nomarkdown}
-{% include image.html url="books/hdra-submission01.jpg" caption="Submission に登録情報を入力" %}
+{% include image.html url="books/hdra-submission01.jpg" caption="Submission に登録情報を入力" class="w450" %}
 {:/}
 
 #### Study
@@ -1064,7 +1064,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 複数のプロジェクトを登録することはできません。 自身のアカウント以外で取得されたプロジェクトを参照したい場合は [DRA チームに連絡してください]({{ site.url }}{{ site.baseurl }}/aboutus/contact.html)。
 
 {::nomarkdown}
-{% include image.html url="books/hdra-bp01.jpg" caption="BioProject の新規登録、もしくは選択" %}
+{% include image.html url="books/hdra-bp01.jpg" caption="BioProject の新規登録、もしくは選択" class="w450" %}
 {:/}
 
 BioProject を新規登録する場合は左のタブから順番に内容を英語で入力していきます。二段目が BioProject になります。登録者などの情報は DRA Submission で入力した内容が引き写されます。
@@ -1072,7 +1072,7 @@ BioProject を新規登録する場合は左のタブから順番に内容を英
 各項目の説明は [BioProject Handbook]({{ site.url }}{{ site.baseurl }}/aboutbioproject/submission.html#metadata) を参照してください。
 
 {::nomarkdown}
-{% include image.html url="books/hdra-bp02.jpg" caption="BioProject の新規登録" %}
+{% include image.html url="books/hdra-bp02.jpg" caption="BioProject の新規登録" class="w450" %}
 {:/}
 
 ゲノムをアセンブルするプロジェクトでは、アセンブリに対してユニークな [Locus tag
@@ -1093,19 +1093,19 @@ prefix は NCBI が一括管理しています。プロジェクトを投稿す�
 </div>
 
 {::nomarkdown}
-{% include image.html url="books/hdra-bpltag.jpg" caption="Locus tag prefix の取得" %}
+{% include image.html url="books/hdra-bpltag.jpg" caption="Locus tag prefix の取得" class="w450" %}
 {:/}
 
 最後の "OVERVIEW" で内容を確認したうえで [Submit BioProject] をクリックして投稿します。
 
 {::nomarkdown}
-{% include image.html url="books/hdra-bp03.jpg" caption="BioProject の投稿" %}
+{% include image.html url="books/hdra-bp03.jpg" caption="BioProject の投稿" class="w450" %}
 {:/}
 
 BioProject を投稿した後、Study では投稿したプロジェクトが選択されている状態になります。
 
 {::nomarkdown}
-{% include image.html url="books//hdra-bp04.jpg" caption="投稿されたプロジェクトが選択される" %}
+{% include image.html url="books//hdra-bp04.jpg" caption="投稿されたプロジェクトが選択される" class="w450" %}
 {:/}
 
 #### Sample
@@ -1123,7 +1123,7 @@ BioSamples] をクリックすると、フィルターされたサンプルが�
 自身のアカウント以外で取得された BioSample を参照したい場合は [DRA チームに連絡してください]({{ site.url }}{{ site.baseurl }}/aboutus/contact.html)。
 
 {::nomarkdown}
-{% include image.html url="books/hdra-bs01.jpg" caption="BioSample の新規登録 or 選択" %}
+{% include image.html url="books/hdra-bs01.jpg" caption="BioSample の新規登録 or 選択" class="w450" %}
 {:/}
 
 BioSample を新規登録する場合は左のタブから順番に内容を英語で入力していきます。二段目が BioSample になります。登録者などの情報は DRA Submission で入力した内容が引き写されます。
@@ -1131,7 +1131,7 @@ BioSample を新規登録する場合は左のタブから順番に内容を英�
 各項目の説明は [BioSample Handbook]({{ site.url }}{{ site.baseurl }}/aboutbiosample/submission.html#metadata) を参照してください。
 
 {::nomarkdown}
-{% include image.html url="books/hdra-bs02.jpg" caption="BioSample の新規登録" %}
+{% include image.html url="books/hdra-bs02.jpg" caption="BioSample の新規登録" class="w450" %}
 {:/}
 
 "SAMPLE TYPE" でサンプルの種類を選択します。
@@ -1139,7 +1139,7 @@ BioSample を新規登録する場合は左のタブから順番に内容を英�
 Sample type については [BioSample Handbook]({{ site.url }}{{ site.baseurl }}/aboutbiosample/submission.html#Sample_type) を参照してください。
 
 {::nomarkdown}
-{% include image.html url="books/hdra-bs03.jpg" caption="Sample type の選択" %}
+{% include image.html url="books/hdra-bs03.jpg" caption="Sample type の選択" class="w450" %}
 {:/}
 
 Sample type に応じた属性入力用テンプレートファイルをダウンロードします。
@@ -1158,7 +1158,7 @@ Biological/Technical replicate は別々の BioSample として登録します�
 を参照してください。
 
 {::nomarkdown}
-{% include image.html url="books/hdra-bs04.jpg" caption="サンプル属性テンプレートファイルのダウンロード" %}
+{% include image.html url="books/hdra-bs04.jpg" caption="サンプル属性テンプレートファイルのダウンロード" class="w450" %}
 {:/}
 
 サンプル属性ファイルを選択して Continue をクリックすると validator がルールに基づいてアップロードされたファイルをチェックします。Error や Warning メッセージが表示された場合は必要に応じて内容を修正して再度アップロードします。Error が解消されない限り次のタブに進んで内容を submit することはできません。
@@ -1166,7 +1166,7 @@ Biological/Technical replicate は別々の BioSample として登録します�
 Validation ルールとメッセージについては [Validation rules ページ]({{ site.url }}{{ site.baseurl }}/aboutbiosample/validation.html)をご覧ください。
 
 {::nomarkdown}
-{% include image.html url="books/hdra-bs04-2.jpg" caption="BBioSample の validation。この例では sample \"genome bacteria strain C\" の collection_date に将来の日付が記入されているエラーと geo_loc_name 中の国名と緯度経度が一致していない warning が表示されています。" %}
+{% include image.html url="books/hdra-bs04-2.jpg" caption="BBioSample の validation。この例では sample \"genome bacteria strain C\" の collection_date に将来の日付が記入されているエラーと geo_loc_name 中の国名と緯度経度が一致していない warning が表示されています。" class="w500" %}
 {:/}
 
 最後の "OVERVIEW" で内容を確認したうえで投稿します。"ATTRIBUTES" で属性ファイルをダウンロードすることができます。
@@ -1176,13 +1176,13 @@ Validation ルールとメッセージについては [Validation rules ペー�
 </div>
 
 {::nomarkdown}
-{% include image.html url="books/hdra-bs05.jpg" caption="BioSample の投稿" %}
+{% include image.html url="books/hdra-bs05.jpg" caption="BioSample の投稿" class="w450"%}
 {:/}
 
 BioSample を投稿した後、Sample では投稿したサンプルが選択されている状態になります。
 
 {::nomarkdown}
-{% include image.html url="books/hdra-bs06.jpg" caption="投稿されたサンプルが選択される" %}
+{% include image.html url="books/hdra-bs06.jpg" caption="投稿されたサンプルが選択される" class="w450" %}
 {:/}
 
 #### Experiment
@@ -1198,7 +1198,7 @@ BioSample を投稿した後、Sample では投稿したサンプルが選択さ
 [Add new Experiment(s)] で Experiment の追加、右端の [Delete] で Experiment の削除をすることができます。Run から参照されている Experiment は削除することができません。
 
 {::nomarkdown}
-{% include image.html url="books/hdra-experiment01.jpg" caption="各 BioSample を参照している Experiment が自動的に作成される" %}
+{% include image.html url="books/hdra-experiment01.jpg" caption="各 BioSample を参照している Experiment が自動的に作成される" class="w450" %}
 {:/}
 
 タブ区切りテキストファイルでまとめて Experiment を作成することができます。まず [Save] で内容を保存し、Alias (例 test07-0040_Experiment_0001 ～ 0003) を確定します。Alias はアクセッション番号が発行されるまでのオブジェクトの仮の名称になります。
@@ -1207,7 +1207,7 @@ BioSample を投稿した後、Sample では投稿したサンプルが選択さ
 
 {::nomarkdown}
 {% include image.html url="books/hdra-experiment02.jpg" caption="Save して Alias
-を確定し、タブ区切りテキストファイルをダウンロード" %}
+を確定し、タブ区切りテキストファイルをダウンロード" class="w450" %}
 {:/}
 
 エクセルなどの表計算ソフトでメタデータをまとめて作成することができます。
@@ -1217,13 +1217,13 @@ BioSample を投稿した後、Sample では投稿したサンプルが選択さ
 "BioSample Used" は "SSUB BioSample Submission ID" : "Sample name" (例 SSUB003746 : Genome bacteria strain A) で指定します。":" の両側の空白は無視されます。
 
 {::nomarkdown}
-{% include image.html url="books/hdra-experiment03.jpg" caption="Experiment テンプレートファイル" %}
+{% include image.html url="books/hdra-experiment03.jpg" caption="Experiment テンプレートファイル" class="w450" %}
 {:/}
 
 入力内容をタブ区切りテキストファイルとして保存し、選択したうえで [Upload TSV file] をクリックして読み込ませます。
 
 {::nomarkdown}
-{% include image.html url="books/hdra-experiment04.jpg" caption="Experiment をタブ区切りテキストファイルとしてアップロード" %}
+{% include image.html url="books/hdra-experiment04.jpg" caption="Experiment をタブ区切りテキストファイルとしてアップロード" class="w450" %}
 {:/}
 
 <div class="attention red">
@@ -1239,7 +1239,7 @@ BioSample を投稿した後、Sample では投稿したサンプルが選択さ
 [Add another Run(s)] で Run の追加、右端の [Delete] で Run の削除をすることができます。ファイルが紐づいている Run は削除することができません。
 
 {::nomarkdown}
-{% include image.html url="books/hdra-run01.jpg" caption="Save して Alias を確定" %}
+{% include image.html url="books/hdra-run01.jpg" caption="Save して Alias を確定" class="w450" %}
 {:/}
 
 [Save] で Run の Alias を確定すると、内容をタブ区切りテキストファイルでまとめて編集できるようになります。
@@ -1247,7 +1247,7 @@ BioSample を投稿した後、Sample では投稿したサンプルが選択さ
 [Select data files for Run] で Run とアップロードしたデータファイルをリンクする画面に移動します。
 
 {::nomarkdown}
-{% include image.html url="books/hdra-run02.jpg" caption="ファイルと Run をリンクする画面へ移動" %}
+{% include image.html url="books/hdra-run02.jpg" caption="ファイルと Run をリンクする画面へ移動" class="w450" %}
 {:/}
 
 ディレクトリにアップロードされているファイル一覧が表示されます。ファイルが属すべき Run の Alias を "Run/Analysis contains files" で選択します。
@@ -1263,19 +1263,19 @@ BioSample を投稿した後、Sample では投稿したサンプルが選択さ
 </div>
 
 {::nomarkdown}
-{% include image.html url="books/hdra-runfinish.jpg" caption="データファイルの属性を入力し Run に結び付ける" %}
+{% include image.html url="books/hdra-runfinish.jpg" caption="データファイルの属性を入力し Run に結び付ける" class="w450" %}
 {:/}
 
 Analysis (任意) が不要な場合は [Submit / Update DRA metadata] をクリックし、メタデータを投稿します。
 
 {::nomarkdown}
-{% include image.html url="books/hdra-submit01.jpg" caption="DRA メタデータの投稿" %}
+{% include image.html url="books/hdra-submit01.jpg" caption="DRA メタデータの投稿" class="w450" %}
 {:/}
 
 メタデータの投稿後、データファイルを検証する処理を開始します。"Validate uploaded data files to finish this submission" をクリックします。
 
 {::nomarkdown}
-{% include image.html url="books/hdra-submit02.jpg" caption="メタデータ投稿後、データファイルの検証に進む" %}
+{% include image.html url="books/hdra-submit02.jpg" caption="メタデータ投稿後、データファイルの検証に進む" class="w450" %}
 {:/}
 
 #### Analysis (任意)
@@ -1285,13 +1285,13 @@ Analysis (任意) が不要な場合は [Submit / Update DRA metadata] をクリ
 [Select data files for Analysis] ボタンをクリックし、ファイルと Analysis を結び付ける画面に移動します。
 
 {::nomarkdown}
-{% include image.html url="books/hdra-analysis01.jpg" caption="Analysis の入力" %}
+{% include image.html url="books/hdra-analysis01.jpg" caption="Analysis の入力" class="w450" %}
 {:/}
 
 データファイルの属性を入力し、Analysis とリンクさせます。タブ区切りテキストファイルでまとめて内容を入力する場合、Analysis に登録するファイルを区別するために左端の Run/Analysis に "Analysis" と入力します。
 
 {::nomarkdown}
-{% include image.html url="books/hdra-analysisfile01.jpg" caption="データファイルと Analysis のリンク" %}
+{% include image.html url="books/hdra-analysisfile01.jpg" caption="データファイルと Analysis のリンク" class="w450" %}
 {:/}
 
 [Enter / Update metadata] をクリックして内容を投稿し、データファイルの検証に進みます。Analysis 用のファイルは md5 しかチェックされません。
@@ -1333,8 +1333,7 @@ BioSample を Experiment から参照する場合、以下のように記載し�
     ```
 4. チェックした XML をアップロードします。Submission、Experiment、Run、Analysis (任意) の XML ファイルを選択し、同時にアップロードします。
     アップロードされた XML について「SRA xsd に対する妥当性」と「オブジェクト間の関係性」がチェックされます。エラーが発生した場合はファイルを修正してください。
-
-    [![作成した XML のアップロード]({{ site.baseurl }}/assets/images/books/hdra-xmlupload.jpg "作成した XML のアップロード")]({{ site.baseurl }}/assets/images/books/hdra-xmlupload.jpg "作成した XML のアップロード"){:.group1}
+    [![作成した XML のアップロード]({{ site.baseurl }}/assets/images/books/hdra-xmlupload.jpg "作成した XML のアップロード"){:.w500}]({{ site.baseurl }}/assets/images/books/hdra-xmlupload.jpg "作成した XML のアップロード"){:.group1}
 
 [« 閉じる](javascript:void(0)){: .close-content-btn}
 </div>
@@ -1350,7 +1349,7 @@ BioSample を Experiment から参照する場合、以下のように記載し�
 
 1. [メタデータ作成ツールでメタデータを作成し、投稿します。](#create-metadata-using-tool)
 2. "metadata_submitted" になった登録の Submission、Experiment、Run、Analysis (任意) を XML ファイルとしてダウンロードします。
-    [![ツールで作成したメタデータを XML としてダウンロード]({{ site.baseurl }}/assets/images/books/hdra-xmldownload.jpg "ツールで作成したメタデータを XML としてダウンロード")]({{ site.baseurl }}/assets/images/books/hdra-xmldownload.jpg "ツールで作成したメタデータを XML としてダウンロード"){:.group1}
+    [![ツールで作成したメタデータを XML としてダウンロード]({{ site.baseurl }}/assets/images/books/hdra-xmldownload.jpg "ツールで作成したメタデータを XML としてダウンロード"){:.w500}]({{ site.baseurl }}/assets/images/books/hdra-xmldownload.jpg "ツールで作成したメタデータを XML としてダウンロード"){:.group1}
 3. XML を編集します。ファイル中のリードの構成を記載する SPOT_DESCRIPTOR
   については[記入例]({{ site.url }}{{ site.baseurl }}/aboutdra/example.html)を参考にしてください。 その他の項目については、[DRA XML schema](https://github.com/ddbj/pub/tree/master/docs/dra) 中の説明を参照してください。
 4. アクセッション番号が未発行の BioProject と BioSample を  Experiment から参照する場合、以下のように記載します。
@@ -1378,7 +1377,7 @@ BioSample を Experiment から参照する場合、以下のように記載し�
     ```
 6. 編集した XML をアップロードします。Submission、Experiment、Run、Analysis (任意) の XML ファイルを選択し、同時にアップロードします。
   アップロードされた XML について「SRA xsd に対する妥当性」と「オブジェクト間の関係性」がチェックされます。エラーが発生した場合はファイルを修正してください。
-  [![編集した XML のアップロード]({{ site.baseurl }}/assets/images/books/hdra-xmlupload.jpg "編集した XML のアップロード")]({{ site.baseurl }}/assets/images/books/hdra-xmlupload.jpg "編集した XML のアップロード"){:.group1}
+  [![編集した XML のアップロード]({{ site.baseurl }}/assets/images/books/hdra-xmlupload.jpg "編集した XML のアップロード"){:.w500}]({{ site.baseurl }}/assets/images/books/hdra-xmlupload.jpg "編集した XML のアップロード"){:.group1}
 
 [« 閉じる](javascript:void(0)){: .close-content-btn}
 </div>
@@ -1397,7 +1396,7 @@ BioSample を Experiment から参照する場合、以下のように記載し�
 登録詳細画面中の [Validate data files] をクリックし、シークエンスデータファイルの検証処理を開始します。
 
 {::nomarkdown}
-{% include image.html url="books/hdra-validate.jpg" caption="シークエンスデータの検証処理を開始" %}
+{% include image.html url="books/hdra-validate.jpg" caption="シークエンスデータの検証処理を開始" class="w450" %}
 {:/}
 
 検証処理は以下の順番で実行されます。
@@ -1425,13 +1424,13 @@ BioSample を Experiment から参照する場合、以下のように記載し�
 [FAQ: データファイルの validation エラーへの対処方法は？](/dra/faq.html#data-validation-error)
 
 {::nomarkdown}
-{% include image.html url="books/hdra-error.jpg" caption="検証処理を停止" %}
+{% include image.html url="books/hdra-error.jpg" caption="検証処理を停止" class="w450" %}
 {:/}
 
 ステータスが "metadata_submitted" に戻るので、必要に応じてメタデータの修正、データファイルの再アップロードを行います。
 
 {::nomarkdown}
-{% include image.html url="books/hdra-edit.jpg" caption="データを修正" %}
+{% include image.html url="books/hdra-edit.jpg" caption="データを修正" class="w450" %}
 {:/}
 
 ### アクセッション番号の発行
@@ -1441,7 +1440,7 @@ BioSample を Experiment から参照する場合、以下のように記載し�
 また、Submission に記載されている登録者には、アクセッション番号がメールで通知されます。
 
 {::nomarkdown}
-{% include image.html url="books/hdra-accession.jpg" caption="DRA アクセッション番号" %}
+{% include image.html url="books/hdra-accession.jpg" caption="DRA アクセッション番号" class="w450" %}
 {:/}
 
 ### アーカイブ済み fastq/SRA ファイルの期間限定アクセス提供
@@ -1513,8 +1512,7 @@ DRA ファイルサーバに存在する fastq ファイル一覧:
 
 公開予定日は最長で4年後まで指定でき、繰り返し更新することができます。Hold Date の [Change] をクリックし、公開予定日変更ページに移動し、予定日を変更します。
 
-[![公開予定日の変更]({{ site.baseurl }}/assets/images/books/hdra-hold.jpg "公開予定日の変更")]({{ site.baseurl }}/assets/images/books/hdra-hold.jpg "公開予定日の変更"){:.group1}
-
+[![公開予定日の変更]({{ site.baseurl }}/assets/images/books/hdra-hold.jpg "公開予定日の変更"){:.w400}]({{ site.baseurl }}/assets/images/books/hdra-hold.jpg "公開予定日の変更"){:.group1}
 
 データを即日公開する場合は "Release Now" をクリックします。作業した日の深夜に公開処理が実施され、[ftp にデータファイルが公開](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/)され、数日以内に [DRA 検索システム](http://ddbj.nig.ac.jp/DRASearch)にインデックスされます。
 
@@ -1545,11 +1543,11 @@ Run と同様登録が完了した Analysis データファイルの追加・変
 </div>
 
 {::nomarkdown}
-{% include image.html url="books/add_data_files.jpg" caption="サンプルの追加" %}
+{% include image.html url="books/add_data_files.jpg" caption="サンプルの追加" class="w400" %}
 {:/}
 
 {::nomarkdown}
-{% include image.html url="books/add_run.jpg" caption="サンプルへのデータ追加" %}
+{% include image.html url="books/add_run.jpg" caption="サンプルへのデータ追加" class="w400" %}
 {:/}
 
 登録が完了した DRA 登録にデータファイルを直接追加する場合は [DRA チームに連絡してください]({{ site.url }}{{ site.baseurl }}/aboutus/contact.html)。
@@ -1605,15 +1603,15 @@ B636E0063E29709B6082F324C76D0911 file2
 をインストールし、起動します。  
 まず、 "md5" にチェックを入れてください。
 
-[![md5 を選択]({{ site.baseurl }}/assets/images/books/Fsum1.jpg "md5 を選択")]({{ site.baseurl }}/assets/images/books/Fsum1.jpg "md5 を選択"){:.group1}
+[![md5 を選択]({{ site.baseurl }}/assets/images/books/Fsum1.jpg "md5 を選択"){:.w400}]({{ site.baseurl }}/assets/images/books/Fsum1.jpg "md5 を選択"){:.group1}
 
 [+] ボタンをクリックし、必要なシークエンスデータファイルを開いてください。同時に複数のファイルを選択することが可能です。
 
-[![シークエンスデータファイルを選択]({{ site.baseurl }}/assets/images/books/Fsum2.jpg "シークエンスデータファイルを選択")]({{ site.baseurl }}/assets/images/books/Fsum2.jpg "シークエンスデータファイルを選択"){:.group1}
+[![シークエンスデータファイルを選択]({{ site.baseurl }}/assets/images/books/Fsum2.jpg "シークエンスデータファイルを選択"){:.w400}]({{ site.baseurl }}/assets/images/books/Fsum2.jpg "シークエンスデータファイルを選択"){:.group1}
 
 最後に、[Calculate hashes] ボタンをクリックしてください。各ファイルの MD5 値が表示されます。[Export] ボタンから、MD5 値の一覧表 (.html, .csv, .xml) を作成することができます。
 
-[![MD5 値の計算を開始]({{ site.baseurl }}/assets/images/books/Fsum3.jpg "MD5 値の計算を開始")]({{ site.baseurl }}/assets/images/books/Fsum3.jpg "MD5 値の計算を開始"){:.group1}
+[![MD5 値の計算を開始]({{ site.baseurl }}/assets/images/books/Fsum3.jpg "MD5 値の計算を開始"){:.w400}]({{ site.baseurl }}/assets/images/books/Fsum3.jpg "MD5 値の計算を開始"){:.group1}
 
 [« 閉じる](javascript:void(0)){: .close-content-btn}
 </div>

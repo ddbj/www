@@ -422,9 +422,9 @@ USPTO の塩基配列データでは，生物情報は Unknown で記載され�
 DDBJ では、日本特許庁(JPO)データの公開フラットファイル(FF) について、COMMENT 部分に記載される内容の改良を行った。塩基配列データの新フォーマットはDDBJ release 90.0 から、JPO の全データが新フォーマットに対応している(図1参照)。アミノ酸配列データにおいては、2012年9月公開のJPO アミノ酸蓄積ファイルより、全データが新フォーマットで提供を行っている(図2参照)。  
 今回のコラムでは、JPO データの新フォーマットの特徴を紹介したい。
 
-[![]({{ site.baseurl }}/assets/images/ddbj/Fig1rev.jpg)]({{ site.baseurl }}/assets/images/ddbj/Fig1rev.jpg){: .float-left .group1}
+[![]({{ site.baseurl }}/assets/images/ddbj/Fig1rev.jpg){: .float-left}]({{ site.baseurl }}/assets/images/ddbj/Fig1rev.jpg){: .group1}
 
-[![]({{ site.baseurl }}/assets/images/ddbj/Fig2rev.jpg)]({{ site.baseurl }}/assets/images/ddbj/Fig2rev.jpg){: .float-right .group1}
+[![]({{ site.baseurl }}/assets/images/ddbj/Fig2rev.jpg){: .float-right}]({{ site.baseurl }}/assets/images/ddbj/Fig2rev.jpg){: .group1}
 
 {: .float-release}
 ### 2\. COMMENT 部分の新フォーマット
@@ -443,7 +443,7 @@ JPO データは公開公報のフロントページに記載される出願基�
 新フォーマットではCOMMENT 部分に出願基本情報に関わる内容を全て記載し、COMMENT 部分を参照しただけで出願基本情報を把握できる様に改良を行った(図4参照)。
 
 {::nomarkdown}
-{% include image.html url="ddbj/RevC.jpg" caption="図4: COMMENT 部分の新フォーマットと各行の説明" %}
+{% include image.html url="ddbj/RevC.jpg" caption="図4: COMMENT 部分の新フォーマットと各行の説明" class="w650" %}
 {:/}
 
 新フォーマットでは、出願人名が記載されるPA 行、発明タイトルが記載されるPT 行、出願人指定の配列番号を記載したPS 行の追加を行った(表1参照)。
@@ -471,7 +471,7 @@ JPO データは公開公報のフロントページに記載される出願基�
 配列表では1 から始まる通し番号の配列番号を、出願人が各配列に付与している。出願内容に複数の配列が含まれる場合、配列番号は塩基配列、アミノ酸配列の順序は考慮されずに記載される。そのためJPO ではDDBJ に配列データを送る際に、塩基配列、アミノ酸配列の順に入れ替えを行い、配列番号を振り直している(表2参照)。
 
 {::nomarkdown}
-{% include image.html url="ddbj/PS.jpg" caption="表2: 配列表とFF での配列番号の対応" %}
+{% include image.html url="ddbj/PS.jpg" caption="表2: 配列表とFF での配列番号の対応" class="w650" %}
 {:/}
 
 JPO 記載の配列番号は公開番号とともに、DEFINITION 行、KEYWORDS 行、COMMENT 部分のPN 行、REFERENCE 部分のJOURNAL 行に記載される。  

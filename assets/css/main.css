@@ -353,8 +353,20 @@ input, textarea, select, button {
     width: auto; }
   .md-content .w40 {
     width: 4rem; }
+  .md-content .w200 {
+    width: 20rem; }
+  .md-content .w300 {
+    width: 30rem; }
+  .md-content .w400 {
+    width: 40rem; }
+  .md-content .w450 {
+    width: 45rem; }
   .md-content .w500 {
     width: 50rem; }
+  .md-content .w600 {
+    width: 60rem; }
+  .md-content .w650 {
+    width: 65rem; }
   .md-content .pdf {
     width: 2.5rem;
     height: 2.5rem; }

@@ -141,7 +141,7 @@ WABI の BLAST検索ジョブ は、 BLAST検索結果を元にしてグラフ�
 
 画像例:
 
-[![Detail view_6_1]({{ site.baseurl }}/assets/images/help/wabi_blast_imagedata.png)]({{ site.baseurl }}/assets/images/help/wabi_blast_imagedata.png ){:.group1}
+[![Detail view_6_1]({{ site.baseurl }}/assets/images/help/wabi_blast_imagedata.png){:.w500}]({{ site.baseurl }}/assets/images/help/wabi_blast_imagedata.png ){:.group1}
 
 ## WABI BLAST の使用例
 

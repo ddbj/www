@@ -57,7 +57,9 @@ Sequence Read Archive (DRA)](/dra/index.html) のアカウントで利用可能�
 {: .tablecaption}
 表1：DDBJ パイプラインで稼働しているツール
 
-{% include image.html url="ddbj/mag65-pipeline2.2.jpg" caption="図2：高次処理部 de novo アセンブルによるコンティグ解析画面" %}
+{::nomarkdown}
+{% include image.html url="ddbj/mag65-pipeline2.2.jpg" caption="図2：高次処理部 de novo アセンブルによるコンティグ解析画面" class="w600" %}
+{:/}
 
 -----
 

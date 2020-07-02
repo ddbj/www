@@ -455,7 +455,7 @@ Encoding）](//en.wikipedia.org/wiki/FASTQ_format#Encoding)
 #### 統計結果のダウンロード
 
 ＜Position errors＞  
-: [![Detail view_2]({{ site.baseurl }}/assets/images/help/Detail-view_2.png)]({{ site.baseurl }}/assets/images/help/Detail-view_2.png){:.group1}
+: [![Detail view_2]({{ site.baseurl }}/assets/images/help/Detail-view_2.png){:.w450}]({{ site.baseurl }}/assets/images/help/Detail-view_2.png){:.group1}
 : \+ ErrorRate (mapping, graph).
   : Percentage error of mapped sequence to reference sequence is calculated by read position.
 
