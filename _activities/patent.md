@@ -293,7 +293,7 @@ JPO データの FF 構造と各項目の記載内容について，塩基配列
     : 
     アミノ酸配列データの LOCUS 行は塩基配列データと記載内容が異なるため，図2にアミノ酸配列データの LOCUS 行の例を示した。
     {::nomarkdown}
-    <a class="group1 cboxElement" href="{{ site.baseurl }}/assets/images/ddbj/column_14.jpg" title="アミノ酸配列データの LOCUS 行(例)"><figure class="size-optimize"><img src="{{ site.baseurl }}/assets/images/ddbj/column_14.jpg" alt="アミノ酸配列データの LOCUS 行(例)" /><figcaption>図2：アミノ酸配列データの LOCUS 行(例)</figcaption></figure></a>
+    <a class="group1 cboxElement" href="{{ site.baseurl }}/assets/images/ddbj/column_14.jpg" title="アミノ酸配列データの LOCUS 行(例)"><figure><img src="{{ site.baseurl }}/assets/images/ddbj/column_14.jpg" alt="アミノ酸配列データの LOCUS 行(例)" /><figcaption>図2：アミノ酸配列データの LOCUS 行(例)</figcaption></figure></a>
     {:/}
 
     [DEFINITION 行]  
@@ -393,7 +393,7 @@ JPO データの FF 構造と各項目の記載内容について，塩基配列
     : 公開番号の後ろに記載される配列番号に対応する塩基配列，アミノ酸配列が記載される。  
     塩基配列データでは，BASE COUNT 行で配列の adenine(a), cytosine(c), guanine(g), thymine(t) の塩基数が記載される。アミノ酸配列データでは，図3の様に BASE COUNT 行は出力されない。
     
-    <figure class="size-optimize"><a href="{{ site.baseurl }}/assets/images/ddbj/column_15.jpg"><img src="{{ site.baseurl }}/assets/images/ddbj/column_15.jpg" alt="アミノ酸配列データの配列情報の表示"></a><figcaption>図3：アミノ酸配列データの配列情報の表示</figcaption></figure>   
+    <figure><a href="{{ site.baseurl }}/assets/images/ddbj/column_15.jpg"><img src="{{ site.baseurl }}/assets/images/ddbj/column_15.jpg" alt="アミノ酸配列データの配列情報の表示"></a><figcaption>図3：アミノ酸配列データの配列情報の表示</figcaption></figure>   
 
 ### 3\. EPO および USPTO の FF
 

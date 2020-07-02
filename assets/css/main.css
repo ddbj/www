@@ -350,11 +350,11 @@ input, textarea, select, button {
   .md-content .group1 {
     text-decoration: none; }
   .md-content img {
-    width: 100%; }
-  .md-content .size-optimize img {
     width: auto; }
   .md-content .w40 {
     width: 4rem; }
+  .md-content .w500 {
+    width: 50rem; }
   .md-content .pdf {
     width: 2.5rem;
     height: 2.5rem; }

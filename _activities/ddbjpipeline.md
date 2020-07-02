@@ -20,7 +20,6 @@ DDBJ では高速シーケンサ由来の大量配列データを取り扱う為
 DDBJ パイプラインは，[http://p.ddbj.nig.ac.jp/](https://p.ddbj.nig.ac.jp/pipeline/Login.do) <span></span>よりアクセスできます(図1)。トップページから取得したユーザアカウントか，DDBJ が公開している高速シーケンサの出力データベース [DDBJ
 Sequence Read Archive (DRA)](/dra/index.html) のアカウントで利用可能となります。DDBJ パイプラインは，参照ゲノム配列に対するマッピングまたはde novo アセンブリを行なう「基礎処理部」とSNP 検出や発現解析等の高度な解析を行う「高次処理部」から構成されています。基礎処理部は公開済みで，高次処理部は試験運用中です。
 
-{:.size-optimize}
 {% include image.html url="ddbj/column_19.jpg" caption="図1：DDBJ パイプライン トップページ([http://p.ddbj.nig.ac.jp/])" %}
 
 ## DDBJ の塩基配列解析ツールについて（後編）
