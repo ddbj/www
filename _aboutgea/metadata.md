@@ -7,12 +7,7 @@ category: aboutgea
 
 ## MAGE-TAB
 
-MicroArray Gene Expression Tabular
-([MAGE-TAB](http://fged.org/projects/mage-tab/))
-は機能ゲノミクスデータを構造化・標準化された方法で表現するための研究者コミュニティで開発、採用された形式です。MAGE-TAB
-はデータの収集とアノテーションに加え、ArrayExpress や GEA
-といったデータベース間でデータを交換する用途にも使えるように設計されています。[MAGE-TAB
-の仕様書](http://fged.org/projects/mage-tab/)
+MicroArray Gene Expression Tabular ([MAGE-TAB](http://fged.org/projects/mage-tab/)) は機能ゲノミクスデータを構造化・標準化された方法で表現するための研究者コミュニティで開発、採用された形式です。MAGE-TAB はデータの収集とアノテーションに加え、ArrayExpress や GEA といったデータベース間でデータを交換する用途にも使えるように設計されています。[MAGE-TAB の仕様書](http://fged.org/projects/mage-tab/)
 
 {::nomarkdown}
 {% include image.html url="magetab/magetab_over.jpg" caption="IDF，SDRF，ADFと生データファイル，解析処理されたデータファイル間の関係" %}
@@ -20,13 +15,11 @@ MicroArray Gene Expression Tabular
 
 ## IDF
 
-IDF (Investigation Description Format)
-ファイルは実験デザイン、プロトコール、文献情報や登録者情報といった実験全体を記述するファイルです。
+IDF (Investigation Description Format) ファイルは実験デザイン、プロトコール、文献情報や登録者情報といった実験全体を記述するファイルです。
 
 ### IDF 例
 
-[IDF
-の例](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=0)
+[IDF の例](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=0)
 
 | [Comment[GEAAccession]](#Comment_idf)               | E-GEAD-369                                                                      |     |
 | MAGE-TAB Version                                      | 1.1                                                                             |     |
@@ -54,10 +47,7 @@ IDF (Investigation Description Format)
 
 ### IDF タグ
 
-IDF はタグと対応する値が組み合わされたタブ区切りテキストファイルです。例えば "Experiment Description" には
-Experiment のフリーテキストでの説明を記載します。一つ以上の値が許容されているフィールド、例えばプロトコール、登録者や
-experimental factor は一つの IDF
-ファイルで複数定義することができます（値はタブで区切ります）。一つの値しか持てないフィールドは以下に示してあります。
+IDF はタグと対応する値が組み合わされたタブ区切りテキストファイルです。例えば "Experiment Description" には Experiment のフリーテキストでの説明を記載します。一つ以上の値が許容されているフィールド、例えばプロトコール、登録者や experimental factor は一つの IDF ファイルで複数定義することができます（値はタブで区切ります）。一つの値しか持てないフィールドは以下に示してあります。
 
 [Investigation Title](#Investigation_Title)<a name="Investigation_Title"></a>
 : 研究全体に付けるタイトル。このタグは１つの値しか持てません。
@@ -65,15 +55,12 @@ experimental factor は一つの IDF
 <!-- end list -->
 
 [Experimental Design](#Experimental_Design)<a name="Experimental_Design"></a>  
-: 実験のデザイン。[controlled term]("https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=1804523015")
-から該当するものを選びます。
+: 実験のデザイン。[controlled term]("https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=1804523015") から該当するものを選びます。
 
 <!-- end list -->
 
 Experimental Factor Name<a name="Experimental_Factor_Name"></a>
-: 実験の Experimental factor は実験の変数 (growth condition, genotype, organism
-part 等) です。Factor の値は SDRF の "Factor Value[\<factor name>]"
-カラムに記入します。GEA は SDRF の Factor value の名前を IDF にコピーします。
+: 実験の Experimental factor は実験の変数 (growth condition, genotype, organism part 等) です。Factor の値は SDRF の "Factor Value[\<factor name>]" カラムに記入します。GEA は SDRF の Factor value の名前を IDF にコピーします。
 
 <!-- end list -->
 
@@ -180,12 +167,7 @@ experiment で[必須 protocol セット](https://docs.google.com/spreadsheets/d
 
 ## SDRF
 
-SDRF (Sample and Data Relationship Format)
-サンプル属性及びサンプル、アレイ、データファイル間の関係性を記述します。SDRF
-は機能ゲノミクス実験の自然な流れを再現できるように構成されています。SDRF は用いられた大元の Source
-サンプルから始まり、最後はサンプルから得られたデータファイルで終わります。Single-channel
-のマイクロアレイ実験ではSDRF１行が１ハイブリダイゼーションに対応します。Two-channel
-マイクロアレイでは１行は１チャンネルに対応します。シークエンシング実験では１行は基本的に１生データファイル（Run、ペアードシークエンスを含む）に対応します。
+SDRF (Sample and Data Relationship Format) サンプル属性及びサンプル、アレイ、データファイル間の関係性を記述します。SDRF は機能ゲノミクス実験の自然な流れを再現できるように構成されています。SDRF は用いられた大元の Source サンプルから始まり、最後はサンプルから得られたデータファイルで終わります。Single-channel のマイクロアレイ実験ではSDRF１行が１ハイブリダイゼーションに対応します。Two-channel マイクロアレイでは１行は１チャンネルに対応します。シークエンシング実験では１行は基本的に１生データファイル（Run、ペアードシークエンスを含む）に対応します。
 
 {::nomarkdown}
 {% include image.html url="magetab/sdrf.jpg" caption="SDRF の全体構造" %}
@@ -197,10 +179,7 @@ SDRF (Sample and Data Relationship Format)
 : 多くの場合実験における「処理（Treatment）」は IDF で定義された [Protocol
 Name](#Protocol_Name) を参照する [Protocol REF](#Protocol_REF) カラムで表されます。
 
-アクセッション番号が発行される前の段階では IDF で定義されたプロトコールには一時的な ID (例
-ESUB000001_Protocol_1) がアサインされ、SDRF からはこの ID
-で参照されます。アクセッション番号発行後、これらのプロトコールはアクセッション番号
-(P-GEAD-n) で参照されます。
+アクセッション番号が発行される前の段階では IDF で定義されたプロトコールには一時的な ID (例 ESUB000001_Protocol_1) がアサインされ、SDRF からはこの ID で参照されます。アクセッション番号発行後、これらのプロトコールはアクセッション番号 (P-GEAD-n) で参照されます。
 
 | ------------------------------- | -------------------------------- | ----------------------- |
 | [Protocol Name](#Protocol_Name) | ESUB000500_Protocol_1          | ESUB000500_Protocol_2 |
@@ -216,20 +195,16 @@ SDRF は以下のようになります。
 
 {::options parse_block_html="true" /}
 [Sources](#Sources_section)<a name="Sources_section"></a>
-: Source は実験の出発材料です。このセクションは [Source Name](#Source_Name)
-カラムで始まり、典型的にはいくつかの
-[Characteristics](#Characteristics) カラムが続きます。
+: Source は実験の出発材料です。このセクションは [Source Name](#Source_Name) カラムで始まり、典型的にはいくつかの [Characteristics](#Characteristics) カラムが続きます。
 
 <div class="attention red">
-GEA の登録システムでは対応する BioSample の sample_name が Source Name、Extract
-Name、Labeled Extract Name と Assay Name に共通で使用されます。
+GEA の登録システムでは対応する BioSample の sample_name が Source Name、Extract Name、Labeled Extract Name と Assay Name に共通で使用されます。
 </div>
 
 | [Source Name](#Source_Name)                | [Characteristics[organism]](#Characteristics) | [Characteristics[ecotype]](#Characteristics) |
 | Arabidopsis control for heat stress_rep 1 | Arabidopsis thaliana                            | Col-0                                          |
 
-追加で Source Name を注釈するカラム: [Provider](#Provider) と
-[Comment](#Comment_sdrf).
+追加で Source Name を注釈するカラム: [Provider](#Provider) と [Comment](#Comment_sdrf).
 
 <!-- end list -->
 
@@ -239,17 +214,13 @@ Name、Labeled Extract Name と Assay Name に共通で使用されます。
 | [Source Name](#Source_Name)                | [Protocol REF](#Protocol_REF) | [Extract Name](#Extract_Name)              | [Material Type](#Material_Type) |
 | Arabidopsis control for heat stress_rep 1 | OSUB000500_Protocol_2       | Arabidopsis control for heat stress_rep 1 | total RNA                       |
 
-Extracts を注釈するカラム: [Characteristics[]](#Characteristics)、[Material
-Type](#Material_Type) と [Comment](#Comment_sdrf)。
+Extracts を注釈するカラム: [Characteristics[]](#Characteristics)、[Material Type](#Material_Type) と [Comment](#Comment_sdrf)。
 
 <!-- end list -->
 
 {::options parse_block_html="true" /}
 Labeled Extracts<a name="Labeled_Extracts_section"></a>  
-: Labeled Extracts
-アレイにハイブリダイズする前にラベルされた核酸のことです。マイクロアレイ実験ではどのサンプルにどのラベル（スキャナーのチャンネル）が対応するか記述する
-[Label](#Label) カラムが [Labeled Extract Name](#Labeled_Extract_Name)
-カラムに付加されている必要があります。</p>
+: Labeled Extracts アレイにハイブリダイズする前にラベルされた核酸のことです。マイクロアレイ実験ではどのサンプルにどのラベル（スキャナーのチャンネル）が対応するか記述する [Label](#Label) カラムが [Labeled Extract Name](#Labeled_Extract_Name) カラムに付加されている必要があります。</p>
 
 | [Extract Name](#Extract_Name)              | [Material Type](#Material_Type) | [Protocol REF](#Protocol_REF) | [Labeled Extract Name](#Labeled_Extract_Name) | [Label](#Label) |
 | Arabidopsis control for heat stress_rep 1 | total RNA                       | OSUB000500_Protocol_3       | Arabidopsis control for heat stress_rep 1    | biotin          |

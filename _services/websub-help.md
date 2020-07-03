@@ -4,8 +4,6 @@ title: DDBJ 塩基配列登録システム HELP
 category: services
 ---
 
-
-
 ## 1\. Contact person
 
 [コンタクトパーソン](/ddbj/submission.html#contact)情報を入力します。
@@ -15,9 +13,6 @@ category: services
 コンタクトパーソンメールアドレス宛に登録開始用のリンクを含むメールが自動的に送信されます。
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp1-2_j.png){:.w600}
-
-
-
 
 ## 2\. Hold date
 
@@ -29,18 +24,12 @@ category: services
 
   - 選択できる日付は最大3年後までです
 
-
 ### 入力の中断・再開方法
 
   - "Next"
     をクリックしてからブラウザでブックマークしてください。ブラウザを閉じた後でもブックマークしたURLを用いて再開することが可能です。
 
   - 7.Annotation のページでは "Next" クリック以前であっても入力内容は保存されます。ブックマークから再開できます。
-
-
-
-
-
 
 ## 3\. Submitter
 
@@ -67,9 +56,6 @@ category: services
   - 登録者は複数名を指定いただけるよう、お願いしております。  
     登録者が１名のみの場合、将来、修正が必要になった際に私どもから登録者本人への連絡がとれない場面に遭遇することもございます。1名の登録者のみでの登録も可能ですが、複数の登録者を記載いただけるよう推奨しております。たとえば、実作業者と研究指導者(責任者)、論文著者から登録者に加えるなど、２名以上の登録者記載に関しましてご協力をお願いいたします。
 
-
-
-
 ## 4\. Reference
 
 [論文 (Reference) 情報](/ddbj/flat-file.html#Reference2) を入力します。  
@@ -90,7 +76,6 @@ category: services
 関連するページ  
 : [REFERENCE 2](/ddbj/flat-file.html#Reference2) / [DDBJ のデータ公開形式 (flat file) の説明](/ddbj/flat-file.html)
 
-
 ### Reference の例
 
 #### Status: Unpublished
@@ -107,20 +92,13 @@ category: services
 
 ### Journal name
 
-Journal name を ISO abbreviation で入力してください。Journal の full name
-を入力していくと候補が現れますので、マウスで選択することで Journal の ISO
-abbreviation を入力できます。
+Journal name を ISO abbreviation で入力してください。Journal の full name を入力していくと候補が現れますので、マウスで選択することで Journal の ISO abbreviation を入力できます。
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp4-2_j.png){:.w600}
 
 Journal の ISO abbreviation は [NLM Catalog](//www.ncbi.nlm.nih.gov/nlmcatalog) で調べることができます。
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp4-2-1_j.png){:.w600}
-
-
-
-
-
 
 ## 5\. Sequence
 
@@ -134,14 +112,12 @@ Journal の ISO abbreviation は [NLM Catalog](//www.ncbi.nlm.nih.gov/nlmcatalog
 
   - Multi-FASTA 形式の塩基配列をペースト(またはアップロード)可能です。
 
-  - Entry name (エントリー名)
-    は、２４文字までの半角・英数記号(ただしスペース、"[double-quote\]、?[question\]、￥[yen sign\]、{::nomarkdown}\{:/}[back-slash]を含まない)を用いて設定してください。
+  - Entry name (エントリー名) は、２４文字までの半角・英数記号(ただしスペース、"[double-quote\]、?[question\]、￥[yen sign\]、{::nomarkdown}\{:/}[back-slash]を含まない)を用いて設定してください。
 
   - Entry name には、それぞれ異なる名称を付けてください。  
     同じ Entry name が使用されている場合はエラーとなるため Entry name の修正が必要になります。
 
-  - 各エントリーの区切りとして // [double slash\] を挿入する必要はありませんが、//
-    をエントリーの区切りとして使用しても構いません(例１、例２)。
+  - 各エントリーの区切りとして // [double slash\] を挿入する必要はありませんが、// をエントリーの区切りとして使用しても構いません(例１、例２)。
 
   - 本システムでは // 無しの塩基配列を入力した場合、各エントリーの区切りとして // が自動的に挿入されます。
 
@@ -189,15 +165,9 @@ gctgtaactctgagatgtgctaaataaaccctctttctcaaaaaaaaaaaaaaaa
         
 ```
 
-
-
-
 ### TPA 塩基配列の入力
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp5-2_j.png){:.w600}
-
-
-
 
 ### TPA における Assembly Information の書式
 
@@ -216,22 +186,16 @@ Assembly information のサンプルは**[ここから](/files/example/NSSShelp-
 いずれも [TPA とプライマリーエントリの配列アラインメントに関する規則](/ddbj/tpa.html#alignment-rule)
 に従います。
 
-
-
-
 ### Assembly Information 入力規則
 
   - 第1行目は
     
-      - <span style="font-size: 11px;">[tab or space\]TPA\_SPAN[tab or
-        space\]PRIMARY\_IDENTIFIER[tab or space\]PRIMARY\_SPAN[tab or
-        space\]COMPLEMENT</span>  
+      - <span style="font-size: 11px;">[tab or space\]TPA\_SPAN[tab or space\]PRIMARY\_IDENTIFIER[tab or space\]PRIMARY\_SPAN[tab or space\]COMPLEMENT</span>  
 である必要があります。
 
   - 空行を含めないでください。
 
-  - Entry name は第１列に記載します、Entry name のある行でエントリーごとの Assembly
-    情報が区切られることになります。
+  - Entry name は第１列に記載します、Entry name のある行でエントリーごとの Assembly 情報が区切られることになります。
 
   - TPA\_SPAN
     
@@ -256,22 +220,13 @@ Assembly information のサンプルは**[ここから](/files/example/NSSShelp-
       - 空欄 または c
       - プライマリエントリから相補鎖領域を引用する場合にのみ c を指定します。
 
-
-
-
-
-
 ## 6\. Template
 
 アノテーションに適合する template を選択します。
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp6_j.png){:.w600}
 
-
-
-
 ## 7\. Annotation
-
 
 ### アノテーション画面 - Template で "other" 以外を選択したとき
 
@@ -374,9 +329,6 @@ Assembly information のサンプルは**[ここから](/files/example/NSSShelp-
 
   - 余計なスペース、不正文字(全角文字、unicode文字、unprintable character)がファイル中に含まれている場合もアップロードできません。
 
-
-
-
 ### Error/Warning
 
   - "Confirm" クリック後、エラーが生じなければ、"Next" ボタンがクリック可能になり次のステップ(Final page)に進めます。
@@ -406,19 +358,11 @@ ORFfinder (NCBI)
 EMBOSS Transeq (EBI)  
 [https://www.ebi.ac.uk/Tools/st/emboss\_transeq/](//www.ebi.ac.uk/Tools/st/emboss_transeq/)
 
-
-
-
-
-
 ## Final page
 
 "Confirm" 後 "Next" クリックで最終確認画面が表示されます。
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp7a_j.png){:.w600}
-
-
-
 
 ## 8\. Finish
 
@@ -430,7 +374,3 @@ Finish 画面が現れた時点で submission 完了となります。
 完了を通知するメール。
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp8-2_j.png){:.w600}
-
-
-
-
