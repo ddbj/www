@@ -45,8 +45,7 @@ TSA とプライマリーエントリの配列アラインメントに関する�
 
 TSA エントリの特徴
 
-  - [アクセッション番号](#AccessionA) は[アルファベット 4 文字と数字 8
-    桁を基本](#bulk_sequence)とします。
+  - [アクセッション番号](#AccessionA) は[アルファベット 4 文字と数字 8 桁を基本](#bulk_sequence)とします。
   - [LOCUS](#LocusA) 行に表示される DIVISION は、"TSA" です。
   - [DEFINITION](#DefinitionA) 行は "TSA:" で始まります。
   - [KEYWORDS](#KeywordsA) 行には "TSA" と "Transcriptome Shotgun Assembly"

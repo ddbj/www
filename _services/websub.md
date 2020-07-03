@@ -7,7 +7,7 @@ category: services
 {::options parse_block_html="true" /}
 <div class="attention">
 
-<span class="red">ヒトを対象とした研究データの登録について<span>
+<span class="red">ヒトを対象とした研究データの登録について</span>
 
 ヒトを対象とした全ての研究において DDBJ に送付するデータの由来である個人 (研究対象者)の尊厳及び人権は、適用されるべき法律、規定、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。  
 原則として、研究対象者を直接特定し得る参照情報は、登録データから取り除いてください。  
@@ -17,9 +17,7 @@ category: services
 
 ## Web 版塩基配列登録システム
 
-Web 版塩基配列登録システム（DDBJ Nucleotide Sequence Submission
-System）は、アノテーションをつけた塩基配列を Web
-経由で登録できるシステムです。
+Web 版塩基配列登録システム（DDBJ Nucleotide Sequence Submission System）は、アノテーションをつけた塩基配列を Web 経由で登録できるシステムです。
 
 ### 入力ガイド
 
