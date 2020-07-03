@@ -17,11 +17,11 @@ export default function internalLink() {
         for (let i = 0; i < hTags.length; i++) {
           let theHeading = hTags[i];
           let id = "";
-          if ( $(theHeading).attr("id") ){//既にidがある場合は
-              id = $(theHeading).attr("id");//既存のidを仕様
+          if ( $(theHeading).attr("id") ){//既にidがあれば
+              id = $(theHeading).attr("id");//既存のidを使う
           }else{
-              id = $(theHeading).text().replace(/ |:/g, "_").replace(/\(|\)/g, "");//不必要な箇所を除外
-              id = jQuery.trim(id);//不必要な箇所を除外
+              id = $(theHeading).text().replace(/ |:/g, "_").replace(/\(|\)/g, "");//不要な箇所を除去
+              id = jQuery.trim(id);//不要な箇所を除去
               $(theHeading).attr("id", id);//リンクで飛べるようにIDをつける
           }
           //ここのid名がhref属性に指定されているaタグをh2、もしくはh3の後に挿入
@@ -117,7 +117,7 @@ export default function internalLink() {
       history.replaceState("", "", this.href);
       $("html,body").animate(
         {
-          scrollTop: $($(this).attr("href")).offset().top - 24
+          scrollTop: $($(this).attr("href")).offset().top - 24,
         },
         400
       );
@@ -135,7 +135,9 @@ export default function internalLink() {
     .then(() => {
       createContentsArr();
       currentCheck();
+      console.log("createContentsArr完了");
     }).then(() => {
+      console.log("パラメーター確認開始");
       // URLパラメータ文字列を取得
       let param = location.hash;
       // 変数paramに#がついていれば
@@ -144,7 +146,7 @@ export default function internalLink() {
         let element = document.getElementById(param.slice(1));
         element.scrollIntoView({
           behavior: "smooth",
-          inline: "nearest"
+          inline: "nearest",
         });
       }
     }).then(() => {

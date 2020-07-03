@@ -19,7 +19,7 @@ ADF ファイルはタブ区切りテキストファイル形式 (*.txt) でス�
 ADF の例（一部）:
 
 {::nomarkdown}
-{% include image.html url="magetab/adf1.png" caption="ADF の例（一部）" %}
+{% include image.html url="magetab/adf1.png" caption="ADF の例（一部）" class="w600" %}
 {:/}
 
 ## ADF メタデータヘッダー
@@ -29,7 +29,7 @@ ADF の例（一部）:
 テンプレートにはヘッダーが埋め込まれているのでゼロから作成する必要はありません。テンプレート中のヘッダーは編集せず各フィールドに可能な限り内容を記載してください（下の例では青字）。
 
 {::nomarkdown}
-{% include image.html url="magetab/adf2.png" caption="ADF メタデータヘッダー" %}
+{% include image.html url="magetab/adf2.png" caption="ADF メタデータヘッダー" class="w600" %}
 {:/}
 
 ADF ヘッダーフィールドリスト (* 必須フィールド):
@@ -70,7 +70,7 @@ Row、Column と Row で示します。これらの四座標はマイクロア�
 feature を ADF ファイルで記載してください。 以下に四座標の図式を示します。
 
 {::nomarkdown}
-{% include image.html url="magetab/adf_column.jpg" caption="Block Column と Block Row 座標" %}
+{% include image.html url="magetab/adf_column.jpg" caption="Block Column と Block Row 座標" class="w300" %}
 {:/}
 
 **Reporter (全てのアレイで必須):**
@@ -91,7 +91,7 @@ element を持ちます。
 以下に７つの feature、２つの reporter と１つの composite element を持つ仮想的な例を示します。
 
 {::nomarkdown}
-{% include image.html url="magetab/adf3.png" caption="ADF feature、reporter、composite element の例" %}
+{% include image.html url="magetab/adf3.png" caption="ADF feature、reporter、composite element の例" class="w450" %}
 {:/}
 
 ### Reporter のアノテーション <a name="ann-reporters"></a>
@@ -145,7 +145,7 @@ chrName:start position-end position 形式で記載します（例 chr1:1234-567
 下記は仮想的な reporter アノテーションの例です。同一データベースの複数アクセッション番号をセミコロンで区切って列挙しています。
 
 {::nomarkdown}
-{% include image.html url="magetab/adf4.png" caption="Reporter の ADF アノテーション" %}
+{% include image.html url="magetab/adf4.png" caption="Reporter の ADF アノテーション" class="w450" %}
 {:/}
 
 ### Repoter role - experimental もしくは control
@@ -171,7 +171,7 @@ control type に記載できる語彙は以下です。
 ADF テーブルでの reporter role の例。
 
 {::nomarkdown}
-{% include image.html url="magetab/adf5.png" caption="Reporter role" %}
+{% include image.html url="magetab/adf5.png" caption="Reporter role" class="w500" %}
 {:/}
 
 ### 生物種による reporter grouping（複数生物種 ADF の場合のみ）
@@ -183,7 +183,7 @@ Homo sapiens。
 ウイルスとヒトの microRNA 配列から構成されるアレイの例。
 
 {::nomarkdown}
-{% include image.html url="magetab/adf6.png" caption="生物種による reporter grouping（複数生物種 ADF の場合のみ）" %}
+{% include image.html url="magetab/adf6.png" caption="生物種による reporter grouping（複数生物種 ADF の場合のみ）" class="w500" %}
 {:/}
 
 ### Composite element のアノテーション
@@ -193,5 +193,5 @@ Composite element のアノテーションは Composite Element Database Entry [
 Composite element をコメント注釈することに使うことができます。
 
 {::nomarkdown}
-{% include image.html url="magetab/adf7.png" caption="Composite element のアノテーション" %}
+{% include image.html url="magetab/adf7.png" caption="Composite element のアノテーション" class="w500" %}
 {:/}

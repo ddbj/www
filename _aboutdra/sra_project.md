@@ -32,7 +32,7 @@ DRA へのデータ登録方法については [DRA Handbook]({{ site.url }}{{ s
 
 受け手側ディレクトリは対応する送り手側ディレクトリにマウントされており，受け手側は送り手側がアップロードしたファイルを閲覧・コピーすることができます。削除と移動はできません。 作業完了後，送り手側でファイルを削除してください。
 
-[![]({{ site.baseurl }}/assets/images/books/sra_project1.png)]({{ site.baseurl }}/assets/images/books/sra_project1.png "DRA サーバを介した共同研究者へのデータ受渡し"){: .group1}
+[![]({{ site.baseurl }}/assets/images/books/sra_project1.png){: .w450}]({{ site.baseurl }}/assets/images/books/sra_project1.png "DRA サーバを介した共同研究者へのデータ受渡し"){: .group1}
 
 以下ではシークエンス拠点 S (アカウント: center_s) がプロジェクト (project_X) のデータを共同研究者 A (アカウント: lab_a) に転送し，共同研究者 A がデータを DRA に登録する場合を例に手順を説明します。
 

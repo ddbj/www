@@ -53,7 +53,9 @@ category: aboutgea
 
 単純なマイクロアレイ実験。各サンプルに対して１つの生データファイルと解析済みデータファイルがあるケース。
 
-{% include image.html url="magetab/sdrf1.png" caption="各サンプルに対して１つの生データファイルと解析済みデータファイルがあるケース" %}
+{::nomarkdown}
+{% include image.html url="magetab/sdrf1.png" caption="各サンプルに対して１つの生データファイルと解析済みデータファイルがあるケース" class="w400" %}
+{:/}
 
 | Source Name | Protocol REF | Assay Name      | Array Data File | Derived Array Data File |
 | Source 1    | P-GEAD-10    | Hybridization 1 | Data1.CEL       | Processed1.txt          |
@@ -66,7 +68,9 @@ category: aboutgea
 
 ### Example 2: Two-color マイクロアレイ <a name="sdrf_example2"></a>
 
-{% include image.html url="magetab/sdrf2.png" caption="Two-color マイクロアレイ" %}
+{::nomarkdown}
+{% include image.html url="magetab/sdrf2.png" caption="Two-color マイクロアレイ" class="w400" %}
+{:/}
 
 | Source Name | Extract Name | Labeled Extract Name  | Label | Assay Name      |
 | Source 1a   | Extract 1a   | LabeledExtract 1a Cy3 | Cy3   | Hybridization 1 |
@@ -84,8 +88,10 @@ Two-color マイクロアレイ
 単純な次世代シークエンス実験。サンプル毎の次世代シークエンス DRA 生データ (Run)
 と解析済みデータファイル、及び、解析済みマトリックスファイル
 
+{::nomarkdown}
 {% include image.html url="magetab/sdrf3.png" caption="サンプル毎の次世代シークエンス DRA 生データ (Run)
-と解析済みデータファイル、及び、解析済みマトリックスファイル" %}
+と解析済みデータファイル、及び、解析済みマトリックスファイル" class="w500" %}
+{:/}
 
 | Source Name | Protocol REF | Assay Name   | Array Data File | Derived Array Data File | Derived Array Data Matrix File |
 | Source 1    | P-GEAD-20    | Sequencing 1 | DRR000001       | Processed1.txt          | Processed-matrix.txt           |

@@ -355,6 +355,8 @@ input, textarea, select, button {
     width: 4rem; }
   .md-content .w200 {
     width: 20rem; }
+  .md-content .w250 {
+    width: 25rem; }
   .md-content .w300 {
     width: 30rem; }
   .md-content .w400 {
@@ -363,6 +365,8 @@ input, textarea, select, button {
     width: 45rem; }
   .md-content .w500 {
     width: 50rem; }
+  .md-content .w550 {
+    width: 55rem; }
   .md-content .w600 {
     width: 60rem; }
   .md-content .w650 {

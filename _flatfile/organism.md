@@ -53,7 +53,7 @@ Taxonomy database の間違いなどを発見された場合は、[ご連絡](/c
 DDBJ が運用している WWW 経由の[塩基配列登録システム](/ddbj/websub-j.html)では登録の際に、生物名入力において Category を選択します。  
 下図に Category を判断するためのフローチャートを示します。
 
-![]({{ site.baseurl }}/assets/images/ddbj/organism-j.png)
+![]({{ site.baseurl }}/assets/images/ddbj/organism-j.png){:.w600}
 
 a. 人工的に構築した配列  
 : Category は "Artificially constructed or synthesized sequence" となりますので、メニューから選択してください。<br>[4. 人工的に構築した配列](#syn) を ご参照の上、生物名 (scientific name) を記載してください。

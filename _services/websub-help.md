@@ -10,11 +10,11 @@ category: services
 
 [コンタクトパーソン](/ddbj/submission.html#contact)情報を入力します。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp1-1_j.png "コンタクトパーソン情報入力画面")
+![]({{ site.baseurl }}/assets/images/help/NSSShelp1-1_j.png "コンタクトパーソン情報入力画面"){:.w600}
 
 コンタクトパーソンメールアドレス宛に登録開始用のリンクを含むメールが自動的に送信されます。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp1-2_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp1-2_j.png){:.w600}
 
 
 
@@ -23,7 +23,7 @@ category: services
 
 公開日 (Hold date) をカレンダーから選択するか、即公開を希望する場合は "Release immediately" チェックを加えます。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp2-1_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp2-1_j.png){:.w600}
 
   - 年末・年始はDDBJが公開作業を停止するため選択できません
 
@@ -46,7 +46,7 @@ category: services
 
 登録者 (Submitter) 名を入力します。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp3-1_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp3-1_j.png){:.w600}
 
 {::options parse_block_html="true" /}
 <div class="attention">
@@ -75,7 +75,7 @@ category: services
 [論文 (Reference) 情報](/ddbj/flat-file.html#Reference2) を入力します。  
 配列に関する[主論文 (Primary citation)](/ddbj/submission.html#pcite) を第一 reference に入力してください。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp4_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp4_j.png){:.w600}
 
 <div class="attention">
 
@@ -95,15 +95,15 @@ category: services
 
 #### Status: Unpublished
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp4-1-1_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp4-1-1_j.png){:.w600}
 
 #### Status: In press
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp4-1-2_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp4-1-2_j.png){:.w600}
 
 #### Status: Published
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp4-1-3_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp4-1-3_j.png){:.w600}
 
 ### Journal name
 
@@ -111,11 +111,11 @@ Journal name を ISO abbreviation で入力してください。Journal の full
 を入力していくと候補が現れますので、マウスで選択することで Journal の ISO
 abbreviation を入力できます。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp4-2_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp4-2_j.png){:.w600}
 
 Journal の ISO abbreviation は [NLM Catalog](//www.ncbi.nlm.nih.gov/nlmcatalog) で調べることができます。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp4-2-1_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp4-2-1_j.png){:.w600}
 
 
 
@@ -127,7 +127,7 @@ Journal の ISO abbreviation は [NLM Catalog](//www.ncbi.nlm.nih.gov/nlmcatalog
 塩基配列を入力します。  
 [TPA](/ddbj/tpa.html) の submission を行う場合には、assembly information も同時に入力します。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp5_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp5_j.png){:.w600}
 
 
 ### 塩基配列のフォーマットについて
@@ -194,7 +194,7 @@ gctgtaactctgagatgtgctaaataaaccctctttctcaaaaaaaaaaaaaaaa
 
 ### TPA 塩基配列の入力
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp5-2_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp5-2_j.png){:.w600}
 
 
 
@@ -203,7 +203,7 @@ gctgtaactctgagatgtgctaaataaaccctctttctcaaaaaaaaaaaaaaaa
 
 #### 入力例
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp5-3-1_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp5-3-1_j.png){:.w600}
 
 Assembly information のサンプルは**[ここから](/files/example/NSSShelp-tpa-sample.txt)**ダウンロードできます。(タブ区切りテキスト形式)
 
@@ -265,7 +265,7 @@ Assembly information のサンプルは**[ここから](/files/example/NSSShelp-
 
 アノテーションに適合する template を選択します。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp6_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp6_j.png){:.w600}
 
 
 
@@ -275,14 +275,14 @@ Assembly information のサンプルは**[ここから](/files/example/NSSShelp-
 
 ### アノテーション画面 - Template で "other" 以外を選択したとき
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-1_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-1_j.png){:.w600}
 
 関連するページ  
 : [Feature key の定義](/ddbj/features.html) / [Qualifier key の定義](/ddbj/qualifiers.html) / [Organism qualifier に記載する生物名](/ddbj/organism.html) / [タンパク質コード配列; CDS feature について](/ddbj/cds.html)
 
 ### アノテーション画面 - Template で "other" を選択したとき
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-2_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-2_j.png){:.w600}
 
 関連するページ  
 : [Feature key の定義](/ddbj/features.html) / [Qualifier key の定義](/ddbj/qualifiers.html) / [Organism qualifier に記載する生物名](/ddbj/organism.html) / [タンパク質コード配列; CDS feature について](/ddbj/cds.html)
@@ -291,33 +291,33 @@ Assembly information のサンプルは**[ここから](/files/example/NSSShelp-
 
 #### "Edit" ボタン
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-1_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-1_j.png){:.w600}
 
 #### "Select Qualifier" ボタン
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-2_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-2_j.png){:.w600}
 
 #### "Pen & Note" ボタン
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-3_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-3_j.png){:.w600}
 
 #### "Edit Colum" ボタン
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-4_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-4_j.png){:.w600}
 
 #### セルのダブルクリック (Template で "other" 選択時の場合は Qualifier のクリック) 
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-5_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-5_j.png){:.w600}
 
 ### 生物名 (Organism name)
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-4_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-4_j.png){:.w600}
 
 学名を入力後、"OK" をクリックします。  
 入力した名称が NCBI Taxonomy database に無い場合、リストから該当するカテゴリーを選択します。
 詳細は、[生物名入力におけるカテゴリ (Category) について](/ddbj/organism.html#deasy) をご覧ください。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-4-1_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-4-1_j.png){:.w600}
 
 関連するページ  
 : [Organism qualifier に記載する生物名](/ddbj/organism.html)
@@ -326,19 +326,19 @@ Assembly information のサンプルは**[ここから](/files/example/NSSShelp-
 
 #### 16S rRNA
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-1_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-1_j.png){:.w600}
 
 #### CDS
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-2_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-2_j.png){:.w600}
 
 #### Mitochondrial genome
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-3_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-3_j.png){:.w600}
 
 ### アノテーションファイルのアップロード方法
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-6_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-6_j.png){:.w600}
 
 #### アップロード可能なアノテーションファイル
 
@@ -362,7 +362,7 @@ Assembly information のサンプルは**[ここから](/files/example/NSSShelp-
 関連するページ  
 : [Feature key の定義](/ddbj/features.html) / [Qualifier key の定義](/ddbj/qualifiers.html) / [Organism qualifier に記載する生物名](/ddbj/organism.html) / [タンパク質コード配列; CDS feature について](/ddbj/cds.html)
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-6-1_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-6-1_j.png){:.w600}
 
 #### アノテーションファイルのアップロードエラーとなる主な原因
 
@@ -415,7 +415,7 @@ EMBOSS Transeq (EBI)
 
 "Confirm" 後 "Next" クリックで最終確認画面が表示されます。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7a_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7a_j.png){:.w600}
 
 
 
@@ -425,11 +425,11 @@ EMBOSS Transeq (EBI)
 Finish 画面が現れた時点で submission 完了となります。  
 入力された内容は自動的に DDBJ の登録用サーバーに転送されます。同時にSubmission 完了を知らせる Email が contact person の Email アドレス宛に送信されます。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp8-1_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp8-1_j.png){:.w600}
 
 完了を通知するメール。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp8-2_j.png)
+![]({{ site.baseurl }}/assets/images/help/NSSShelp8-2_j.png){:.w600}
 
 
 
