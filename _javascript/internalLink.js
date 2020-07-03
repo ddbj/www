@@ -13,10 +13,17 @@ export default function internalLink() {
         let indexList = document.createElement("ul");
         let listSrc = "";
         let subListSrc = ""; //h3タグを取得しておくための変数
+
         for (let i = 0; i < hTags.length; i++) {
           let theHeading = hTags[i];
-          const id = "index_id" + i;
-          theHeading.setAttribute("id", id); //リンクで飛べるようにIDをつける
+          let id = "";
+          if ( $(theHeading).attr("id") ){//既にidがある場合は
+              id = $(theHeading).attr("id");//既存のidを仕様
+          }else{
+              id = $(theHeading).text().replace(/ |:/g, "_").replace(/\(|\)/g, "");//不必要な箇所を除外
+              id = jQuery.trim(id);//不必要な箇所を除外
+              $(theHeading).attr("id", id);//リンクで飛べるようにIDをつける
+          }
           //ここのid名がhref属性に指定されているaタグをh2、もしくはh3の後に挿入
           const a = document.createElement('a');
           theHeading.appendChild(a);
@@ -29,15 +36,15 @@ export default function internalLink() {
               subListSrc = "";
             }
             listSrc +=
-              '</li><li><a href="#index_id' +
-              i +
+              '</li><li><a href="#' +
+              id +
               '">' +
               theHeading.textContent +
               "</a>";
           } else if (theHeading.tagName === "H3") {
             subListSrc +=
-              '<li><a href="#index_id' +
-              i +
+              '<li><a href="#' +
+              id +
               '">' +
               theHeading.textContent +
               "</a></li>";
@@ -110,7 +117,7 @@ export default function internalLink() {
       history.replaceState("", "", this.href);
       $("html,body").animate(
         {
-          scrollTop: $($(this).attr("href")).offset().top - 24,
+          scrollTop: $($(this).attr("href")).offset().top - 24
         },
         400
       );
@@ -128,9 +135,7 @@ export default function internalLink() {
     .then(() => {
       createContentsArr();
       currentCheck();
-      console.log("createContentsArr完了");
     }).then(() => {
-      console.log("パラメーター確認開始");
       // URLパラメータ文字列を取得
       let param = location.hash;
       // 変数paramに#がついていれば
@@ -139,7 +144,7 @@ export default function internalLink() {
         let element = document.getElementById(param.slice(1));
         element.scrollIntoView({
           behavior: "smooth",
-          inline: "nearest",
+          inline: "nearest"
         });
       }
     }).then(() => {
