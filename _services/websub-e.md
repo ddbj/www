@@ -65,9 +65,10 @@ The first-time submission
 : Maximum number of 1 submission: 1024 (depends on PC environment/sequence length) [TPA data](/ddbj/tpa-e.html) submission is also acceptable via this system.
 : Check your sequences by [VecScreen](http://ddbj.nig.ac.jp/vecscreen/) to exclude vector sequences before submission.。
 : Use [MSS](/ddbj/mss-e.html) for:
-      - long sequences (greater than 500 kb)
-      - complex submission containing many features (more than 30).
-      - [WGS](/ddbj/wgs-e.html), [CON](/ddbj/con-e.html), [TSA](/ddbj/tsa-e.html), [TLS](/ddbj/tls-e.html), [HTC](/ddbj/htc-e.html), [HTG](/ddbj/htg-e.html), [EST](/ddbj/est-e.html), [GSS](/ddbj/gss-e.html), STS
+
+- long sequences (greater than 500 kb)
+- complex submission containing many features (more than 30).
+- [WGS](/ddbj/wgs-e.html), [CON](/ddbj/con-e.html), [TSA](/ddbj/tsa-e.html), [TLS](/ddbj/tls-e.html), [HTC](/ddbj/htc-e.html), [HTG](/ddbj/htg-e.html), [EST](/ddbj/est-e.html), [GSS](/ddbj/gss-e.html), STS
 
 Resume the submission  
 : You can Resume the submission from the bookmark of the page.

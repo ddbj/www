@@ -2,6 +2,19 @@
 layout: indexed_content
 title: validator エラーメッセージ
 category: services
+related_pages:
+  - title: 登録ファイル形式
+    url: services/file-format.html
+  - title: MSS データファイル用チェックツール
+    url: services/mss-tool.html
+  - title: UME ユーザーマニュアル
+    url: services/ume.html
+  - title: Parser ユーザーマニュアル
+    url: services/parser.html
+  - title: transChecker ユーザーマニュアル
+    url: services/transchecker.html
+  - title: MSS 利用申し込み
+    url: services/mass-form.html
 ---
 
 ここでは DDBJ に登録される配列データをチェックするためのツールから出力されるエラーメッセージについて概説しています。  
@@ -38,8 +51,7 @@ category: services
 
 #### エラーメッセージ
 
-メッセージ中で括弧( [ と \] )で括られている \#
-で始まる語・数値は、実際のエラーメッセージでは、登録において使用されている値などに置換されます。
+メッセージ中で括弧( [ と \] )で括られている \# で始まる語・数値は、実際のエラーメッセージでは、登録において使用されている値などに置換されます。
 
 メッセージ中で、括弧( [ と \] )で括られている \# で始まっていない語は予約語です。
 
@@ -57,7 +69,7 @@ category: services
 
 #### フォーマット
 
-{::nomarkdown}[コード番号]:[Level]: [メッセージ本文]{:/}
+{::nomarkdown}[コード番号]:[Level]:[メッセージ本文]{:/}
 
 <table>
   <tbody>
@@ -72,7 +84,7 @@ category: services
 
 **例**
 
-``` code
+```
 >entry1.1 <1..>366
 TC0020:WAR: [codon_start] qualifier should be selected. The value is automatically set 1. 
 TC0020:WAR: [transl_table] qualifier should be selected. The value is automatically set 1. 
@@ -90,8 +102,7 @@ TC0019:ER2: Stop codon is found in mid of CDS location.
 
 メッセージ中で、括弧( **[** と **\]** )で括られている \# で始まっていない語は予約語です。
 
-[transChecker
-エラーメッセージ一覧](https://docs.google.com/spreadsheets/d/1djQ52hOYXFRQru3-CJZyvzANaZOZ_TuuQW8i0IKg5Ls/edit#gid=215659657)
+[transChecker エラーメッセージ一覧](https://docs.google.com/spreadsheets/d/1djQ52hOYXFRQru3-CJZyvzANaZOZ_TuuQW8i0IKg5Ls/edit#gid=215659657)
 
 -----
 

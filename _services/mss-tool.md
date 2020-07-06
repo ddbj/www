@@ -2,6 +2,19 @@
 layout: indexed_content
 title: MSS データファイル用チェックツール
 category: services
+related_pages:
+  - title: 登録ファイル形式
+    url: services/file-format.html
+  - title: UME ユーザーマニュアル
+    url: services/ume.html
+  - title: Parser ユーザーマニュアル
+    url: services/parser.html
+  - title: transChecker ユーザーマニュアル
+    url: services/transchecker.html
+  - title: validator エラーメッセージ
+    url: services/validator.html
+  - title: MSS 利用申し込み
+    url: services/mass-form.html
 ---
 
 ## 実行環境
@@ -72,18 +85,11 @@ category: services
 NOTICE TO USERS:  
 Carefully read the following agreement. Use of the tools for Mass Submission System provided by DDBJ with this agreement (hereinafter collectively called "the Software") constitutes your acceptance of these terms. If you do not agree to the terms of this agreement, do not install and/or use the Software. User's use of the Software is conditioned upon compliance by user with the terms of this agreement.
 
-1.  All copyright related to the Software except the following
-    third-party software (included in only "UME") must belong to the
-    DDBJ:  
+1.  All copyright related to the Software except the following third-party software (included in only "UME") must belong to the DDBJ:  
     a) Axis 1.1  
     b) Xerces 1.4.4  
-    The Software includes the source code thereof and documentation
-    thereto.
-2.  In the event you provide to any third party all or any portion of
-    the Software, prior written consent of DDBJ is required.
-3.  You agree that you will not attempt to reverse compile, modify,
-    translate, or disassemble the Software in whole or in part.
-4.  Except as required by law, DDBJ will not be liable to you for any
-    damages arising out of the use or inability to use of the Software.
-5.  Requirements specified in this agreement are subject to change
-    without notice.
+    The Software includes the source code thereof and documentation thereto.
+2.  In the event you provide to any third party all or any portion of the Software, prior written consent of DDBJ is required.
+3.  You agree that you will not attempt to reverse compile, modify, translate, or disassemble the Software in whole or in part.
+4.  Except as required by law, DDBJ will not be liable to you for any damages arising out of the use or inability to use of the Software.
+5.  Requirements specified in this agreement are subject to change without notice.

@@ -7,13 +7,11 @@ category: aboutgea
 
 ## GEA submission flow
 
-{::options parse_block_html="true" /}
 ### 1\. 登録アカウントを取得
 
   - [D-way 登録アカウント](https://ddbj.nig.ac.jp/D-way/)を作成
   - [公開鍵と center nameをアカウントに登録](/account.html#enable-dra-submission-in-account)しGEA登録を可能に
 
-{::options parse_block_html="true" /}
 ### 2\. BioProject、BioSample と Sequence Read Archive(DRA)に登録
 
 #### [BioProject](/bioproject/submission.html)
@@ -30,24 +28,20 @@ category: aboutgea
 
 ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}メタデータをタブ区切りテキストファイルで登録できます
 
-{::options parse_block_html="true" /}
 ### 3\. 解析済みデータファイルをアップロード
 
   - GEA 登録用ディレクトリに解析済みデータファイルをアップロード
 
-{::options parse_block_html="true" /}
 ### 4\. DRA submissionを選択
 
   - GEA 登録の基となる生シークエンスリードを含んでいる DRA submission を一つ選択します
   - GEA 登録の基となる生シークエンスリードが複数の DRA submission に含まれている場合は複数 submission を選択します
 
-{::options parse_block_html="true" /}
 ### 5\. BioProjectを一つ選択
 
   - GEA と DRA submission が同じプロジェクトである場合は DRA submission で使用した BioProject を一つ選択します
   - GEA と DRA submission が異なるプロジェクトである場合は DRA submission で使用した BioProject ではないBioProjectを一つ選択します
 
-{::options parse_block_html="true" /}
 ### 6\. IDF と SDRF を作成
 
 #### IDF
@@ -60,8 +54,6 @@ category: aboutgea
   - [SDRF (Sample and Data RelationshipFormat)](/gea/metadata.html#sdrf)
     ファイルでサンプル属性とサンプル、アレイ、データファイル間の関係性を記述します
   - 選択した BioProject、BioSample と DRA submission の内容から生成された SDRF テンプレートファイルに必要な情報を追加します
-
-{::options parse_block_html="true" /}
 
 ### 7\. IDF と SDRF を投稿しデータファイルを検証する
 

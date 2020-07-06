@@ -5,36 +5,36 @@ pathname: submit-array-e
 category: aboutgea
 ---
 
-<div id="page" class="top">
 
-<div id="header" class="clearfix">
 
-<div id="header-top">
+
+
+
 
 [![](/images/parts/ddbj-logo-white.svg)](/index-e.html "DNA Data Bank of Japan")
 
-<div id="header-top-left">
+
 
 <span class="resources-btn">Services**</span>
 
-</div>
 
-<div id="header-top-right">
+
+
 
   - [Login & Submit](https://ddbj.nig.ac.jp/D-way)
   - [Policies and Disclaimers](/policies-e.html)
   - [Contact](/contact-e.html)
   - [Japanese](/gea/submit-array.html)
 
-</div>
 
-</div>
 
-<div class="resources-contents">
 
-<div class="boxContainer">
 
-<div class="resources-box">
+
+
+
+
+
 
   - ### ![](/images/logos/service-org.svg)Search
 
@@ -64,9 +64,9 @@ category: aboutgea
   - [DDBJ FTP
     Site](ftp://ftp.ddbj.nig.ac.jp/ "Download public data by ftp")
 
-</div>
 
-<div class="resources-box">
+
+
 
   - ### ![](/images/logos/database-org.svg)Databases
 
@@ -96,9 +96,9 @@ category: aboutgea
   - [NIG
     SuperComputer](https://sc.ddbj.nig.ac.jp/en "NIG SuperComputer")
 
-</div>
 
-<div class="resources-box dbcls">
+
+
 
   - ### ![](/images/logos/dbcls-s.svg)DBCLS Services
 
@@ -117,37 +117,37 @@ category: aboutgea
 
   - [RefEx](http://refex.dbcls.jp/index.php?lang=en "A web tool for a comfortable search of reference data for gene expression analysis")
 
-</div>
 
-</div>
 
-</div>
 
-<div id="header-middle" class="clearfix">
 
-<div class="page-title">
+
+
+
+
+
 
 [Genomic Expression Archive](/gea/index-e.html)
 
-</div>
 
-<div class="search-box">
 
-<div id="search-box-flex">
 
-<div class="search-options-wrapper">
+
+
+
+
 
 BI-DDBJ Web Sites Annotated/Assembled Sequences Sequence Read Archive
 
-</div>
 
-</div>
 
-</div>
 
-</div>
 
-<div id="header-bottom">
+
+
+
+
+
 
   - [Home](/gea/index-e.html)
   - [Submission
@@ -170,37 +170,37 @@ BI-DDBJ Web Sites Annotated/Assembled Sequences Sequence Read Archive
   - [Downloads](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/gea)
   - [About GEA](/gea/about-e.html)
 
-</div>
 
-</div>
 
-<div id="main" class="clearfix">
 
-<div id="breadcrumb" class="clearfix">
+
+
+
+
 
   - [HOME](/gea/index-e.html "Genomic Expression Archive top page")
   - \>
   - Submit microarray experiment
 
-</div>
 
-<div id="primary">
 
-<div id="page_main">
 
-<div id="book">
+
+
+
+
 
 # Submit microarray experiment
 
-<div class="section book">
 
-<div class="section chapter">
+
+
 
 ## GEA submission flow
 
-<div id="flow">
 
-<div class="step1">
+
+
 
 ### 1\. Obtain a submission account
 
@@ -208,9 +208,9 @@ BI-DDBJ Web Sites Annotated/Assembled Sequences Sequence Read Archive
   - To enable GEA submission, [register a public key and a center name
     to your account](/account-e.html#enable-dra-submission-in-account).
 
-</div>
 
-<div class="step2">
+
+
 
 ### 2\. Register a BioProject and BioSample(s)
 
@@ -228,9 +228,9 @@ BI-DDBJ Web Sites Annotated/Assembled Sequences Sequence Read Archive
 ![](/images/parts/tsv.png)metadata can be submitted as a tab-delimited
 text file.
 
-</div>
 
-<div class="step3">
+
+
 
 ### 3\. Upload raw and processed data files
 
@@ -241,9 +241,9 @@ text file.
     upload an array design file into the GEA submission directory along
     with data files.
 
-</div>
 
-<div class="step4">
+
+
 
 ### 4\. Select a BioProject and BioSample(s)
 
@@ -251,9 +251,9 @@ text file.
   - Select registed BioSample(s) for the GEA submission. Majority of GEA
     submissions require more than one sample.
 
-</div>
 
-<div class="step5">
+
+
 
 ### 5\. Prepare IDF and SDRF
 
@@ -275,9 +275,9 @@ text file.
   - SDRF template is generated from selected BioProject and
     BioSample(s). Enter additional information.
 
-</div>
 
-<div class="step6">
+
+
 
 ### 6\. Submit IDF, SDRF and validate data files
 
@@ -286,21 +286,21 @@ text file.
     automatically begin.
   - The submission passed validation will be reviewed.
 
-</div>
 
-</div>
 
-</div>
 
-<div class="section chapter">
+
+
+
+
 
 ## Pre-submission checklist
 
-<div class="sub_section">
+
 
 #### [Two-color microarray experiment](javascript:void\(0\))
 
-<div class="toggle_text box">
+
 
 At the moment GEA submission interface only supports one type of
 two-color workflow ([see graphic
@@ -315,30 +315,30 @@ validation to fail (if you connect a single file per sample).
 If you have separate files for each channel, please [contact GEA
 team](/contact-e.html).
 
-</div>
 
-</div>
 
-<div class="sub_section">
+
+
+
 
 #### [Single-cell sequencing experiment](javascript:void\(0\))
 
-<div class="toggle_text box">
+
 
 Refer to [ArrayExpress Single-cell submission
 guide](https://www.ebi.ac.uk/arrayexpress/help/single-cell_submission_guide.html).
 Please [contact GEA team](/contact-e.html) to upload any additional
 files for custom spike-ins or to facilitate data analysis.
 
-</div>
 
-</div>
 
-<div class="sub_section">
+
+
+
 
 #### [More than one technology per experiment](javascript:void\(0\))
 
-<div class="toggle_text box">
+
 
 GEA will ask you for the technology and name of the array, and applies
 it to the whole submission. If you have used different types of
@@ -349,17 +349,17 @@ mistakes. If you have samples from more than one array design in your
 experiment, it is possible to submit only one experiment. If you wish to
 do this, please [contact GEA team](/contact-e.html).
 
-</div>
 
-</div>
 
-</div>
 
-<div class="section chapter">
+
+
+
+
 
 ## Microarray experiment submission
 
-<div class="section section">
+
 
 ### Create a new submission
 
@@ -398,21 +398,21 @@ whose status is in "submission\_validated" or "data\_error".
 
 List of submission status
 
-</div>
 
-<div class="section section">
+
+
 
 ### Upload raw and processed data files
 
-<div class="section sub_section">
+
 
 #### [Upload files by using terminal (Linux/Mac OS X)](javascript:void\(0\))
 
-<div class="toggle_text">
+
 
 Upload files by executing,
 
-<div class="sub_index">
+
 
   - \<Your Files\> Files to be transferred. Ex: file1 file2 (file1 and
     file2), file\* (all files whose filenames start with "file")
@@ -421,7 +421,7 @@ Upload files by executing,
   - command example: scp Arabidopsis\_control\_rep\_1.CEL
     test07@ftp-private.ddbj.nig.ac.jp:\~/gea/ESUB000350
 
-</div>
+
 
 Enter the passphrase set for the keys.
 
@@ -436,25 +436,25 @@ The login environment is private for the submitter. Users other than the
 submitter cannot access the data. Executable commands are restricted to
 the following ones. Users can delete unnecessary files.
 
-</div>
 
-</div>
 
-<div class="section sub_section">
+
+
+
 
 #### [Upload files by using WinSCP (Windows)](javascript:void\(0\))
 
-<div class="toggle_text">
 
-<div class="arve-wrapper arve-thumb-wrapper arve-youtube-wrapper" style="background-image: url(https://img.youtube.com/vi/gJqgCvUc0Y8/maxresdefault.jpg);">
 
-<div class="arve-embed-container">
+gJqgCvUc0Y8/maxresdefault.jpg);">
+
+
 
 [](//www.youtube-nocookie.com/embed/gJqgCvUc0Y8?autohide=1&iv_load_policy=3&modestbranding=1&rel=0&wmode=transparent&autoplay=1 "Submission to DRA ～upload data files (Windows)～")
 
-</div>
 
-</div>
+
+
 
 Submission to DRA ～upload data files (Windows)～
 
@@ -467,7 +467,7 @@ Set items as below and click the \[Advanced...\] button.
 Be sure to select the "binary mode" for file transfer. Do NOT select the
 "text mode".
 
-<div class="sub_index">
+
 
   - File protocol: SFTP
   - Host name: ftp-private.ddbj.nig.ac.jp
@@ -475,7 +475,7 @@ Be sure to select the "binary mode" for file transfer. Do NOT select the
   - User name: (D-way Login ID)
   - Password: (Leave empty)
 
-</div>
+
 
 ![](/images/books/winscp1_400.jpg "privatekey1")
 
@@ -502,25 +502,25 @@ transfer the files to the server.
 You can delete the transferred files by selecting the files and clicking
 the \[Delete\] button.
 
-</div>
 
-</div>
 
-<div class="section sub_section">
+
+
+
 
 #### [Upload sequence data by using Cyberduck (Mac OS X)](javascript:void\(0\))
 
-<div class="toggle_text">
 
-<div class="arve-wrapper arve-thumb-wrapper arve-youtube-wrapper" style="background-image: url(https://img.youtube.com/vi/aO2aVafS3ZE/maxresdefault.jpg);">
 
-<div class="arve-embed-container">
+aO2aVafS3ZE/maxresdefault.jpg);">
+
+
 
 [](//www.youtube-nocookie.com/embed/aO2aVafS3ZE?autohide=1&iv_load_policy=3&modestbranding=1&rel=0&wmode=transparent&autoplay=1 "Submission to DRA ～upload data files (Mac) ～")
 
-</div>
 
-</div>
+
+
 
 Submission to DRA ～upload data files (Mac) ～
 
@@ -539,7 +539,7 @@ Select "SFTP (SSH File Transfer Protocol)" .
 Set as follows and tick off "Use Public Key Authentication" in the More
 Options.
 
-<div class="sub_index">
+
 
   - Server: ftp-private.ddbj.nig.ac.jp
   - Port: 22
@@ -547,7 +547,7 @@ Options.
   - Password: (Leave empty)
   - Add to Keychain: (Check)
 
-</div>
+
 
 ![](/images/books/Cyberduck_3.jpg "key authentication")
 
@@ -565,18 +565,18 @@ them into the window to transfer the files to the server.
 
 ![](/images/books/Cyberduck_5.jpg "transfer")
 
-</div>
 
-</div>
+
+
 
 Users can ssh login ftp-private.ddbj.nig.ac.jp server by using a private
 key. Executable commands are restricted to the following ones. Users can
 delete unnecessary files.  
 ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
-</div>
 
-<div class="section section">
+
+
 
 ### Submission
 
@@ -589,9 +589,9 @@ You can delete an un-submitted GEA submission at "Delete submission".
 ![Enter submission information](/images/books/array-sub2.jpg
 "Enter submission information")
 
-</div>
 
-<div class="section section">
+
+
 
 ### BioProject
 
@@ -606,9 +606,9 @@ team](/contact-e.html).
 ![Select a BioProject for the GEA experiment](/images/books/gea-bp.jpg
 "Select a BioProject for the GEA experiment")
 
-</div>
 
-<div class="section section">
+
+
 
 ### BioSample
 
@@ -623,9 +623,9 @@ team](/contact-e.html).
 ![Select BioSamples for the GEA experiment](/images/books/gea-bs.jpg
 "Select BioSamples for the GEA experiment")
 
-</div>
 
-<div class="section section">
+
+
 
 ### IDF
 
@@ -635,7 +635,7 @@ Format)](/gea/metadata-e.html#idf).
 [Example
 IDF](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=0)
 
-<div class="sub_index">
+
 
   - Protocol: Pre-checked protocols are mandatory.
   - Publication: Describe associated publications by PubMed ID or DOI.
@@ -653,14 +653,14 @@ IDF](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZ
     Files Formats for microarray
     experiment](/gea/datafile-e.html#array_data).
 
-</div>
+
 
 ![Enter information for IDF](/images/books/array-idf.jpg
 "Enter information for IDF")
 
-</div>
 
-<div class="section section">
+
+
 
 ### SDRF
 
@@ -675,7 +675,7 @@ SDRF](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYr
 
 Auto-filled fields.
 
-<div class="sub_index">
+
 
   - Name columns and attribute columns for Source Name: Generated from
     BioSamples.
@@ -687,14 +687,14 @@ Auto-filled fields.
   - Array Design REF: array design accession or filename described in
     IDF.
 
-</div>
+
 
 Enter required fields by overwriting \<Required: fill in the content\>
 tags.
 
 Fields you need to add.
 
-<div class="sub_index">
+
 
   - Material Type: Enter [controlled
     terms](/gea/metadata-e.html#Material_Type).
@@ -728,7 +728,7 @@ Fields you need to add.
       - KU-2003
       - KU-PI499262
 
-</div>
+
 
 ![SDRF template, yellow-highlighted fields need to be filled by
 submitter](/images/books/array-sdrf-template.jpg
@@ -739,9 +739,9 @@ Select the entered SDRF file and continue.
 ![Select entered SDRF file](/images/books/array-sdrf2.jpg
 "Select entered SDRF file")
 
-</div>
 
-<div class="section section">
+
+
 
 ### Overview and submit
 
@@ -753,9 +753,9 @@ Submit the IDF and SDRF metadata by clicking the "Submit" button.
 ![Check the IDF and SDRF and submit](/images/books/array-overview.jpg
 "Check the IDF and SDRF and submit")
 
-</div>
 
-<div class="section section">
+
+
 
 ### Validation
 
@@ -770,9 +770,9 @@ messages. Errors need to be resolved for submission.
 ![Warning and error messages](/images/books/array-validation.jpg
 "Warning and error messages")
 
-</div>
 
-<div class="section section">
+
+
 
 ### Accession number
 
@@ -785,19 +785,19 @@ reviewer accesss token](/gea/reviewer-access-e.html).
 ![GEA accession numbers](/images/books/array-accession.jpg
 "GEA accession numbers")
 
-</div>
 
-</div>
 
-<div class="section chapter">
+
+
+
 
 ## Update submission
 
-<div class="section section">
+
 
 ### Update in each database
 
-<div class="main_table">
+
 
 <table>
 <colgroup>
@@ -831,22 +831,22 @@ reviewer accesss token](/gea/reviewer-access-e.html).
 </tbody>
 </table>
 
-</div>
 
-</div>
 
-<div class="section section">
+
+
+
 
 ### Withdraw archived objects
 
 To withdrawing archived Experiment, please [contact
 us](/contact-e.html).
 
-</div>
 
-</div>
 
-<div class="section chapter">
+
+
+
 
 ## Supplement: MD5
 
@@ -856,11 +856,11 @@ Because the MD5 number of the damaged file is distinct from the original
 one, we can check whether the transferred file is intact or not by
 comparing the numbers before and after the file transfer.
 
-<div class="section sub_section">
+
 
 ### [Obtain MD5 number (Linux)](javascript:void\(0\))
 
-<div class="toggle_text">
+
 
 Obtain the MD5 numbers of the files by executing,
 
@@ -870,15 +870,15 @@ $ md5sum file1 file2
 B636E0063E29709B6082F324C76D0911 file2
 ```
 
-</div>
 
-</div>
 
-<div class="section sub_section">
+
+
+
 
 ### [Obtain MD5 number (Mac OS X)](javascript:void\(0\))
 
-<div class="toggle_text">
+
 
 Obtain the MD5 numbers of the files by executing,
 
@@ -888,15 +888,15 @@ $ md5 file1 file2
 B636E0063E29709B6082F324C76D0911 file2
 ```
 
-</div>
 
-</div>
 
-<div class="section sub_section">
+
+
+
 
 ### [Obtain MD5 number (Windows)](javascript:void\(0\))
 
-<div class="toggle_text">
+
 
 Install and run the [Fsum Frontend
 (sourceforge.net/projects/fsumfe/)](//sourceforge.net/projects/fsumfe/)
@@ -917,37 +917,37 @@ numbers as a html, a csv, or a xml file.
 
 ![](/images/books/Fsum3.jpg "Generate md5 in the tool 3")
 
-</div>
 
-</div>
 
-</div>
 
-</div>
 
-</div>
 
-</div>
 
-</div>
 
-<div id="side_navigation">
 
-<div class="side_nav_menu handbook_contents handbook submit-array">
 
-<div id="in_this_page">
+
+
+
+
+
+
+
+
+
+
 
 ## In this page
 
-</div>
 
-</div>
 
-</div>
 
-</div>
 
-<div id="footer_original" class="clearfix">
+
+
+
+
+
 
   - [Policies and
     Disclaimers](/policies-e.html "Policies and Disclaimers")
@@ -959,6 +959,6 @@ numbers as a html, a csv, or a xml file.
   - [Contact](/contact-e.html "Contact to DDBJ Center")
   - Last modified: 2019-02-25
 
-</div>
 
-</div>
+
+
