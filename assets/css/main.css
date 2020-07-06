@@ -345,7 +345,7 @@ input, textarea, select, button {
     display: inline-block;
     background-size: 1.4rem;
     vertical-align: middle; }
-  .md-content a[href^="http://ddbj.nig.ac.jp"]:after {
+  .md-content a[href^="http://ddbj.nig.ac.jp"]:after, .md-content a[href^="https://ddbj.nig.ac.jp"]:after, .md-content a[href^="http://getentry.ddbj.nig.ac.jp/"]:after, .md-content a[href^="http://blast.ddbj.nig.ac.jp/"]:after, .md-content a[href^="http://http://clustalw.ddbj.nig.ac.jp/"]:after {
     display: none; }
   .md-content .group1 {
     text-decoration: none; }

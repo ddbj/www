@@ -10,13 +10,13 @@ category: aboutdra
 
 ## 連絡先 <a name="contact"></a>
 
-[メッセージフォーム]({{ site.url }}{{ site.baseurl }}/aboutus/contact.html)よりご連絡ください。
+[メッセージフォーム]({{ site.baseurl }}/aboutus/contact.html)よりご連絡ください。
 
 電話 : 055-981-6853  
 FAX : 055-981-6849  
 住所 : 〒411-8540 静岡県三島市谷田1111 国立遺伝学研究所 生命情報研究センター W201 DRA
 
-[DDBJ サービスへの問い合わせ]({{ site.url }}{{ site.baseurl }}/aboutus/contact.html#to-ddbj)
+[DDBJ サービスへの問い合わせ]({{ site.baseurl }}/aboutus/contact.html#to-ddbj)
 
 ## 文献 <a name="reference"></a>
 

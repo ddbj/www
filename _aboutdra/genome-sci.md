@@ -29,7 +29,7 @@ category: aboutdra
 
 ### BioProject
 
-D-way BioProject 登録システムで [Grants]({{ site.url }}{{ site.baseurl }}/aboutbioproject/submission.html#Area_grants) の各項目に以下を記入します。
+D-way BioProject 登録システムで [Grants]({{ site.baseurl }}/aboutbioproject/submission.html#Area_grants) の各項目に以下を記入します。
 
   - **Agency:** Japanese Ministry of Education, Culture, Sports, Science and Technology
   - **Agency abbreviation:** MEXT
@@ -40,7 +40,7 @@ D-way BioProject 登録システムで [Grants]({{ site.url }}{{ site.baseurl }}
 
 ### DDBJ 塩基配列データ
 
-アノテーションを付加した塩基配列データを [DDBJ]({{ site.url }}{{ site.baseurl }}/services/submission.html) に登録する場合，[structured COMMENT]({{ site.url }}{{ site.baseurl }}/flatfile/flat-file.html#Comment) に以下のように記載します。
+アノテーションを付加した塩基配列データを [DDBJ]({{ site.baseurl }}/services/submission.html) に登録する場合，[structured COMMENT]({{ site.baseurl }}/flatfile/flat-file.html#Comment) に以下のように記載します。
 
 | COMMENT | ##Grant-START##     |                                             |
 |         | Agency abbreviation | :: MEXT                                     |

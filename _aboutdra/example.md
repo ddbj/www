@@ -8,7 +8,7 @@ category: aboutdra
 {::options parse_block_html="true" /}
 <div class="attention">
 メタデータ作成ツールは technical read (アダプター，プライマーやバーコード配列) の記載に対応していません。  
-[Technical read を含むデータを登録する場合は Experiment XML を作成]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html#create-metadata-in-xml-files)し，下記の例を参考に&lt;SPOT_DESCRIPTOR&gt;で technical read を記載する必要があります。
+[Technical read を含むデータを登録する場合は Experiment XML を作成]({{ site.baseurl }}/aboutdra/submission.html#create-metadata-in-xml-files)し，下記の例を参考に&lt;SPOT_DESCRIPTOR&gt;で technical read を記載する必要があります。
 </div>
 
 ## Experiment (Spot, Platform)
@@ -54,7 +54,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html#Instrument)
+[Platform]({{ site.baseurl }}/aboutdra/submission.html#Instrument)
 
 | Platform | Instrument Model    |
 | -------- | ------------------- |
@@ -125,7 +125,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html#Instrument)
+[Platform]({{ site.baseurl }}/aboutdra/submission.html#Instrument)
 
 | Platform | Instrument Model    |
 | -------- | ------------------- |
@@ -166,7 +166,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html#Instrument)
+[Platform]({{ site.baseurl }}/aboutdra/submission.html#Instrument)
 
 | Platform | Instrument Model             | Sequence Length |
 | -------- | ---------------------------- | --------------- |
@@ -214,7 +214,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html#Instrument)
+[Platform]({{ site.baseurl }}/aboutdra/submission.html#Instrument)
 
 | Platform | Instrument Model             | Sequence Length |
 | -------- | ---------------------------- | --------------- |
@@ -276,7 +276,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html#Instrument)
+[Platform]({{ site.baseurl }}/aboutdra/submission.html#Instrument)
 
 | Platform | Instrument Model             | Sequence Length |
 | -------- | ---------------------------- | --------------- |
@@ -317,7 +317,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html#Instrument)
+[Platform]({{ site.baseurl }}/aboutdra/submission.html#Instrument)
 
 | Platform  | Instrument Model    | Sequence Length |
 | --------- | ------------------- | --------------- |
@@ -365,7 +365,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html#Instrument)
+[Platform]({{ site.baseurl }}/aboutdra/submission.html#Instrument)
 
 | Platform  | Instrument Model    | Sequence Length |
 | --------- | ------------------- | --------------- |
@@ -405,7 +405,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html#Instrument)
+[Platform]({{ site.baseurl }}/aboutdra/submission.html#Instrument)
 
 | Platform    | Instrument Model       | Sequence Length |
 | ----------- | ---------------------- | --------------- |
@@ -442,7 +442,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html#Instrument)
+[Platform]({{ site.baseurl }}/aboutdra/submission.html#Instrument)
 
 | Platform     | Instrument Model |
 | ------------ | ---------------- |
@@ -495,7 +495,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform]({{ site.url }}{{ site.baseurl }}/aboutdra/submission.html#Instrument)
+[Platform]({{ site.baseurl }}/aboutdra/submission.html#Instrument)
 
 | Platform     | Instrument Model |
 | ------------ | ---------------- |

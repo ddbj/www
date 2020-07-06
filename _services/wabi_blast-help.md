@@ -323,7 +323,7 @@ wabi_blast_2013-0606-1336-31-681-634313.txt
 
 ## WABI BLAST の詳細
 
-### URI POST /blast (検索ジョブの登録)
+### URI POST /blast (検索ジョブの登録)<a name="URI_POST"></a>
 
 [BLAST検索のジョブ](#search-job) をキューに投入して、 [Request
 ID](#parameter-Request-ID) を返します。  
