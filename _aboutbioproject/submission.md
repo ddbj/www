@@ -147,14 +147,12 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 
 コンタクトパーソンが所属する組織。
 
-  - [Submitting
-    organization](#BioProject_Submitting_organization)<span class="red">\*</span>  
+  - [Submitting organization](#BioProject_Submitting_organization)<span class="red">\*</span>  
     組織のフルネーム。
 
 <!-- end list -->
 
-  - [Submitting organization
-    URL](#BioProject_Submitting_organization_URL)  
+  - [Submitting organization URL](#BioProject_Submitting_organization_URL)  
     登録者が所属する組織の URL。
 
 #### Data Release
@@ -167,8 +165,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 <!-- end list -->
 
   - [Release](#BioProject_Release)  
-    プロジェクトデータを即日公開する。この BioProject ID を引用している非公開の DDBJ
-    レコードが公開されることはありません。
+    プロジェクトデータを即日公開する。この BioProject ID を引用している非公開の DDBJ レコードが公開されることはありません。
 
 ### General info
 
@@ -177,8 +174,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 プロジェクト内容を記述します。
 
   - [Project title](#Project_title)<span class="red">\*</span>  
-    プロジェクトの内容を表す短いタイトル。このタイトルは公開されたプロジェクトのタイトルとして使われます。例: Chromosome Y
-    sequencing，Global studies of microbial diversity on human skin.
+    プロジェクトの内容を表す短いタイトル。このタイトルは公開されたプロジェクトのタイトルとして使われます。例: Chromosome Y sequencing，Global studies of microbial diversity on human skin.
 
 <!-- end list -->
 
@@ -405,8 +401,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 
 対象生物の分類や記述。
 
-  - [Organism name](#BioProject_Organism_name)<span class="red">\*</span>
-    <a name="BioProject_Organism_name"></a>
+  - [Organism name](#BioProject_Organism_name)<span class="red">\*</span><a name="BioProject_Organism_name"></a>
 
     [Taxonomy データベース](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html)に登録されている生物名。メタゲノムや環境サンプルなどの生物名を特定できないサンプルについては[こちらのリスト](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908&lvl=3&lin=f&keep=1&srchmode=1&unlock)を参考にしてください。
 
