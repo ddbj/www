@@ -76,7 +76,7 @@ Java 8 で実行してください。Java 7 では動作しません。[プロ�
 AGD tool を起動し，[NBDC](http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines) 担当者から通知されるアカウントとパスワードでログインします。
 
 {::nomarkdown}
-{% include image.html url="submission/agdsub1.jpg" caption="AGD tool へのログイン" %}
+{% include image.html url="submission/agdsub1.jpg" caption="AGD tool へのログイン" class="w200" %}
 {:/}
 
 左ウィンドウがお手許のコンピュータ，右ウィンドウが AGD のセキュアなファイルサーバになります。
@@ -84,7 +84,7 @@ AGD tool を起動し，[NBDC](http://gr-sharingdbs.biosciencedbc.jp/agd-guideli
 右ウィンドウ上部の Submission ID で対象となる AGD 登録の ID (例 upload-0003) をプルダウンメニューから選択します。 左ウィンドウでメタデータを記入したエクセルファイル (例 AGD\_upload-0003\_metadata.xlsx) を選択し，Encrypt & Upload をクリックします。
 
 {::nomarkdown}
-{% include image.html url="submission/agdsub2.jpg" caption="対象 submission とエクセルファイルの選択" %}
+{% include image.html url="submission/agdsub2.jpg" caption="対象 submission とエクセルファイルの選択" class="w500" %}
 {:/}
 
 エクセルファイルがサーバにセキュアにアップロードされます。下部ウィンドウにエラーメッセージが表示されますが無視してください。
@@ -92,7 +92,7 @@ AGD tool を起動し，[NBDC](http://gr-sharingdbs.biosciencedbc.jp/agd-guideli
 エクセルファイルをアップロードした後，[メールで AGD 担当者にご連絡ください](/contact.html)。
 
 {::nomarkdown}
-{% include image.html url="submission/agdsub3.jpg" caption="アップロードされたエクセルファイル" %}
+{% include image.html url="submission/agdsub3.jpg" caption="アップロードされたエクセルファイル" class="w500" %}
 {:/}
 
 <div class="attention red">
@@ -106,13 +106,13 @@ AGD ファイルサーバ上にある「ファイル名が \_metadata.xlsx で�
 ダウンロードしたいエクセルファイル (例 AGD\_upload-0003\_r1\_metadata.xlsx) を右クリックし，表示されるメニューの Download を選択します。対象のファイルが左ウィンドウで表示されているローカルマシンにダウンロードされます。
 
 {::nomarkdown}
-{% include image.html url="submission/agddown1.jpg" caption="エクセルのダウンロード" %}
+{% include image.html url="submission/agddown1.jpg" caption="エクセルのダウンロード" class="w500" %}
 {:/}
 
 ダウンロードしたい XML ファイル (例 upload-0003\_Data.xml) を右クリックし，表示されるメニューの Download を選択します。対象のファイルが左ウィンドウで表示されているローカルマシンにダウンロードされます。必要な XML ファイルを１つずつダウンロードします。
 
 {::nomarkdown}
-{% include image.html url="submission/agddown2.jpg" caption="XML のダウンロード" %}
+{% include image.html url="submission/agddown2.jpg" caption="XML のダウンロード" class="w500" %}
 {:/}
 
 ## 登録ファイルのアップロード
@@ -130,7 +130,7 @@ Data オブジェクトに fastq や bam ファイルなどの個人レベルの
 ダウンロードした XML ファイルとデータファイルを AGD tool で選択し，対象 submission にまとめてアップロードします。
 
 {::nomarkdown}
-{% include image.html url="submission/agdsub4.jpg" caption="メタデータ XML ファイルとデータファイルのアップロード" %}
+{% include image.html url="submission/agdsub4.jpg" caption="メタデータ XML ファイルとデータファイルのアップロード" class="w500" %}
 {:/}
 
 ### 登録ファイルの検証処理
@@ -147,7 +147,7 @@ Data オブジェクトに fastq や bam ファイルなどの個人レベルの
 エラーメッセージが表示された場合は[メールで AGD 担当者にご連絡ください](/contact.html)。
 
 {::nomarkdown}
-{% include image.html url="submission/agdsub4.jpg" caption="検証処理を通過したメタデータ XML とデータファイル" %}
+{% include image.html url="submission/agdsub4.jpg" caption="検証処理を通過したメタデータ XML とデータファイル" class="w500" %}
 {:/}
 
 ### 複数ファイルの選択方法
@@ -159,7 +159,7 @@ Data オブジェクトに fastq や bam ファイルなどの個人レベルの
 始点となるファイルのファイル名部分 (チェックボックスではありません) を選択します。続いて終点となるファイル名を Shift キーを押しながら選択すると，ファイルが範囲選択されます。選択した状態で右クリックメニューから "check (selected item)" を選び，範囲選択したファイルをチェックします。
 
 {::nomarkdown}
-{% include image.html url="submission/agd_range_select.jpg" caption="範囲選択したファイルのチェック" %}
+{% include image.html url="submission/agd_range_select.jpg" caption="範囲選択したファイルのチェック" class="w500" %}
 {:/}
 
 #### 複数選択
@@ -167,7 +167,7 @@ Data オブジェクトに fastq や bam ファイルなどの個人レベルの
 Control キーを押しながらファイルを選択していくと，ファイルが複数選択されます。選択した状態で右クリックメニューから "check (selected item)" を選び，選択したファイルをチェックします。
 
 {::nomarkdown}
-{% include image.html url="submission/agd_multi_select.jpg" caption="複数選択したファイルのチェック" %}
+{% include image.html url="submission/agd_multi_select.jpg" caption="複数選択したファイルのチェック" class="w500" %}
 {:/}
 
 #### サブディレクトリ選択
@@ -175,7 +175,7 @@ Control キーを押しながらファイルを選択していくと，ファイ
 ファイルが含まれているサブディレクトリをチェックすると，配下の全てのファイルがチェックされます。
 
 {::nomarkdown}
-{% include image.html url="submission/agd_dir_select.jpg" caption="サブディレクトリごとチェック" %}
+{% include image.html url="submission/agd_dir_select.jpg" caption="サブディレクトリごとチェック" class="w500" %}
 {:/}
 
 ### プロキシ環境での使用方法

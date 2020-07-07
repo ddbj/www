@@ -15,7 +15,7 @@ BioProject は研究プロジェクトと [INSDC](http://www.insdc.org/)が運�
 BioProject によりプロジェクトの種類や特徴といった項目でデータベースを横断してデータを検索することができるようになります。
 
 {::nomarkdown}
-{% include image.html url="submission/biosample_integration.jpg" caption="BioProject/BioSample と他の DDBJ データベースとの連携" %}
+{% include image.html url="submission/biosample_integration.jpg" caption="BioProject/BioSample と他の DDBJ データベースとの連携" class="w450" %}
 {:/}
 
 ### プロジェクト
@@ -70,7 +70,7 @@ BioProject は同じプロジェクトに由来するデータ，それからま
 いくつかの大規模プロジェクトを１つ以上のアンブレラプロジェクトで表すことができます。最上位レベルで共同研究プロジェクト全体を表し，二段目で産出されるデータの種類に対してアンブレラプロジェクトを作成，最後の三段目で実際に登録されるデータにリンクされるプライマリープロジェクトを作成する，といった構成です。
 
 {::nomarkdown}
-{% include image.html url="submission/bp_org.jpg" caption="階層構造の模式図。(A)二階層 (B)三階層" %}
+{% include image.html url="submission/bp_org.jpg" caption="階層構造の模式図。(A)二階層 (B)三階層" class="w500" %}
 {:/}
 
   : 二階層 (A)  
@@ -82,7 +82,7 @@ BioProject は同じプロジェクトに由来するデータ，それからま
 ### データ公開
 
 {::nomarkdown}
-{% include image.html url="submission/release_re.jpg" caption="プライマリープロジェクトとデータレコードの公開の仕組み" %}
+{% include image.html url="submission/release_re.jpg" caption="プライマリープロジェクトとデータレコードの公開の仕組み" class="w500" %}
 {:/}
 
 DDBJ BioProject に登録されたプライマリープロジェクトは「即日公開」もしくは「非公開」にすることができます。
@@ -92,7 +92,7 @@ DDBJ BioProject に登録されたプライマリープロジェクトは「即�
 FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp_bs_seq_release.html)
 
 {::nomarkdown}
-{% include image.html url="submission/um_pri_visibility.jpg" caption="アンブレラプロジェクトとプライマリープロジェクト間の関係の可視性" %}
+{% include image.html url="submission/um_pri_visibility.jpg" caption="アンブレラプロジェクトとプライマリープロジェクト間の関係の可視性" class="w500" %}
 {:/}
 
 <span class="red">アンブレラプロジェクトは非公開にすることができません。</span>  
@@ -835,13 +835,13 @@ DDBJ センターから登録者に問い合わせた後三か月以上回答が
 </div>
 
 {::nomarkdown}
-{% include image.html url="books/hbp-01.jpg" caption="BioProject の新規登録作成" %}
+{% include image.html url="books/hbp-01.jpg" caption="BioProject の新規登録作成" class="w450" %}
 {:/}
 
 BioProject を新規登録する場合は左のタブから順番に内容を英語で入力していきます。 [各項目の説明](#metadata)
 
 {::nomarkdown}
-{% include image.html url="books/hbp-02.jpg" caption="プロジェクトの入力" %}
+{% include image.html url="books/hbp-02.jpg" caption="プロジェクトの入力" class="w450" %}
 {:/}
 
 ゲノムをアセンブルするプロジェクトでは，アセンブリに対してユニークな [Locus tag prefix](/ddbj/locus_tag.html) が必要です。
@@ -859,13 +859,13 @@ prefix は NCBI が一括管理しています。プロジェクトを投稿す�
 </div>
 
 {::nomarkdown}
-{% include image.html url="books/hbp-03.jpg" caption="Locus tag prefix の取得" %}
+{% include image.html url="books/hbp-03.jpg" caption="Locus tag prefix の取得" class="w450" %}
 {:/}
 
 最後の "OVERVIEW" で内容を確認したうえで \[Submit\] をクリックして投稿します。
 
 {::nomarkdown}
-{% include image.html url="books/hbp-04.jpg" caption="BioProject の投稿" %}
+{% include image.html url="books/hbp-04.jpg" caption="BioProject の投稿" class="w450" %}
 {:/}
 
 "OVERVIEW" には初回投稿時の内容が表示され続けます。登録後の更新は反映されませんので，ご注意ください。
@@ -884,7 +884,7 @@ prefix は NCBI が一括管理しています。プロジェクトを投稿す�
 アンブレラプロジェクトは通常のプライマリープロジェクトと同様 [D-way](https://ddbj.nig.ac.jp/D-way/) から登録します。 <span class="red">登録の際には必ず [Private comments to DDBJ staff](#Private_comments) にこの登録がアンブレラであることを記入し DDBJ BioProject チームに伝えてください。 </span>アンブレラプロジェクトを非公開にすることはできません。
 
 {::nomarkdown}
-{% include image.html url="books/hbp-05.jpg" caption="アンブレラプロジェクトの登録" %}
+{% include image.html url="books/hbp-05.jpg" caption="アンブレラプロジェクトの登録" class="w450" %}
 {:/}
 
 ### アンブレラプロジェクトへのリンク
@@ -892,7 +892,7 @@ prefix は NCBI が一括管理しています。プロジェクトを投稿す�
 プライマリープロジェクトを登録する際，[Umbrella BioProject](#Area_linked-project) にリンクすべきアンブレラプロジェクトの概要とアクセッション番号を記入します。 BioProject スタッフは記入内容をみて，プロジェクトをアンブレラにリンクする作業を行います。
 
 {::nomarkdown}
-{% include image.html url="books/hbp-06.jpg" caption="アンブレラへのリンク" %}
+{% include image.html url="books/hbp-06.jpg" caption="アンブレラへのリンク" class="w450" %}
 {:/}
 
 ### プロジェクトの公開

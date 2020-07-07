@@ -54,7 +54,7 @@ JGA download tool は可能な限り良好なネットワーク環境にある�
 </div>
 
 {::nomarkdown}
-{% include image.html url="submission/jgasub1.jpg" caption="JGA tool へのログイン" %}
+{% include image.html url="submission/jgasub1.jpg" caption="JGA tool へのログイン" class="w200" %}
 {:/}
 
 左ウィンドウがお手許のコンピュータ，右ウィンドウが JGA のセキュアなファイル提供サーバになります。
@@ -63,7 +63,7 @@ JGA download tool は可能な限り良好なネットワーク環境にある�
 にチェックを入れます。チェックすると下部に総ファイル数と合計サイズが表示されます。
 
 {::nomarkdown}
-{% include image.html url="books/jgadown01.jpg" caption="対象 Dataset の選択" %}
+{% include image.html url="books/jgadown01.jpg" caption="対象 Dataset の選択" class="w500" %}
 {:/}
 
 \[Download\] をクリックすると，ダウンロードと復号化が開始されます。 "Parallel Download count" で並列ダウンロード数を1～5の間で調整することができます。
@@ -71,13 +71,13 @@ JGA download tool は可能な限り良好なネットワーク環境にある�
 処理が完了すると，お手許のコンピュータに Dataset がダウンロードされます。 Dataset 番号のフォルダ中にメタデータ XML とデータファイルが存在しています。
 
 {::nomarkdown}
-{% include image.html url="books/jgadown03.jpg" caption="メタデータとデータファイル" %}
+{% include image.html url="books/jgadown03.jpg" caption="メタデータとデータファイル" class="w300" %}
 {:/}
 
 Dataset ディレクトリの左にある矢印をクリックし，含まれているデータ番号ディレクトリを展開することができます。データ番号ディレクトリやファイルを選択し，個別にダウンロードすることもできます。
 
 {::nomarkdown}
-{% include image.html url="books/jgadown02.jpg" caption="ファイル毎のダウンロード" %}
+{% include image.html url="books/jgadown02.jpg" caption="ファイル毎のダウンロード" class="w500" %}
 {:/}
 
 ### プロキシ環境での使用方法
@@ -105,25 +105,25 @@ port=
 [JGA の公開されている Study 一覧ページ](https://ddbj.nig.ac.jp/jga/viewer/view/studies)へ移動します。Datasets からDataset 一覧へ移動します。
 
 {::nomarkdown}
-{% include image.html url="books/jgadown04.jpg" caption="JGA で公開されている Study 一覧" %}
+{% include image.html url="books/jgadown04.jpg" caption="JGA で公開されている Study 一覧" class="w500" %}
 {:/}
 
 利用権限が付与されているDataset 番号を選択します。
 
 {::nomarkdown}
-{% include image.html url="books/jgadown05.jpg" caption="メタデータを閲覧する Dataset の選択" %}
+{% include image.html url="books/jgadown05.jpg" caption="メタデータを閲覧する Dataset の選択" class="w500" %}
 {:/}
 
 JGA tool と同様，NBDC から通知される利用アカウントのユーザ ID とパスワードでログインします。
 
 {::nomarkdown}
-{% include image.html url="books/jgadown06.jpg" caption="利用アカウントでログイン" %}
+{% include image.html url="books/jgadown06.jpg" caption="利用アカウントでログイン" class="w300" %}
 {:/}
 
 ウェブサイト上でメタデータを閲覧することができます。
 
 {::nomarkdown}
-{% include image.html url="books/jgadown07.jpg" caption="ウェブサイト上でメタデータを閲覧" %}
+{% include image.html url="books/jgadown07.jpg" caption="ウェブサイト上でメタデータを閲覧" class="w500" %}
 {:/}
 
 メタデータ閲覧サイトからのログアウト
@@ -136,13 +136,13 @@ JGA tool と同様，NBDC から通知される利用アカウントのユーザ
 閲覧終了後は，必ず左上の Logout からログアウトしてください。
 
 {::nomarkdown}
-{% include image.html url="books/jgadown08.jpg" caption="メタデータ閲覧サイトからのログアウト" %}
+{% include image.html url="books/jgadown08.jpg" caption="メタデータ閲覧サイトからのログアウト" class="w500" %}
 {:/}
 
 下記エラーは同時接続数が１を超えている場合に表示されます。30 分以上の間隔を空けて再度ログインしてください。
 
 {::nomarkdown}
-{% include image.html url="books/jgadown09.jpg" caption="同時ログイン数が１を超えている場合のエラー" %}
+{% include image.html url="books/jgadown09.jpg" caption="同時ログイン数が１を超えている場合のエラー" class="w500" %}
 {:/}
 
 ### データファイルのディスク郵送

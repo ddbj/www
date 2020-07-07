@@ -116,11 +116,11 @@ AGD データモデルは [Sequence Read Archive](/dra/submission.html) のモ�
 AGD XML schema: [AGD xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
 {::nomarkdown}
-{% include image.html url="submission/jga_metadata_1.jpg" caption="単一の Policy が適用されている例" %}
+{% include image.html url="submission/jga_metadata_1.jpg" caption="単一の Policy が適用されている例" class="w500" %}
 {:/}
 
 {::nomarkdown}
-{% include image.html url="submission/jga_metadata_2.jpg" caption="Control と Case で Policy が異なる例" %}
+{% include image.html url="submission/jga_metadata_2.jpg" caption="Control と Case で Policy が異なる例" class="w500" %}
 {:/}
 
 ### 公開される項目
@@ -201,11 +201,11 @@ XML schema: [AGD.policy.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 集計されたデータ，もしくは，Experiment-Data に格納するのが適切ではないデータを登録する場合は Sample-Experiment-Data ではなく Sample-Analysis セットでデータを登録することができます。
 
 {::nomarkdown}
-{% include image.html url="submission/sample-analysis.jpg" caption="Sample に１対１対応する Analysis データ登録" %}
+{% include image.html url="submission/sample-analysis.jpg" caption="Sample に１対１対応する Analysis データ登録" class="w500" %}
 {:/}
 
 {::nomarkdown}
-{% include image.html url="submission/samples-analysis.jpg" caption="Sample を集計した Analysis データ登録" %}
+{% include image.html url="submission/samples-analysis.jpg" caption="Sample を集計した Analysis データ登録" class="w500" %}
 {:/}
 
 Sample-Analysis セットでデータ登録をする場合は [JGA チームに連絡](/contact.html)します。
