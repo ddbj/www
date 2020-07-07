@@ -2,6 +2,9 @@
 layout: indexed_content
 title: 登録データの修正・更新
 category: services
+related_pages:
+  - title: 登録データの修正・更新申し込み
+    url: services/updt-form.html
 ---
 
 [登録データ種別](/data-categories.html)をご確認ください。
