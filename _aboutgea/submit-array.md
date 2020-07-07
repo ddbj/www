@@ -104,7 +104,7 @@ DDBJ センターから登録者に問い合わせた後三か月以上回答が
 </div>
 
 {::nomarkdown}
-{% include image.html url="books/array-sub1.jpg" caption="Microarray experiment submission の新規作成" %}
+{% include image.html url="books/array-sub1.jpg" caption="Microarray experiment submission の新規作成" class="w450" %}
 {:/}
 
 登録のステータスには以下のものがあります。 "Data Validated" と "Validation Error" になった登録が査定されます。
@@ -201,22 +201,22 @@ DRAへの登録～データの転送 (Windows)～
   - <span class="bold">User name:</span>(D-way の Login ID を入力)
   - <span class="bold">Password:</span>(空欄のまま)
 
-[![]({{ site.baseurl }}/assets/images/books/winscp1_400.jpg)]({{ site.baseurl }}/assets/images/books/winscp1_400.jpg "秘密鍵の登録１"){:.group1}
+[![]({{ site.baseurl }}/assets/images/books/winscp1_400.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/winscp1_400.jpg "秘密鍵の登録１"){:.group1}
 
 "Authentication" にある "Private key file" で、事前に作成した PuTTY 形式の秘密鍵を選択します。
 
-[![]({{ site.baseurl }}/assets/images/books/winscp2_400.jpg)]({{ site.baseurl }}/assets/images/books/winscp2_400.jpg "秘密鍵の登録2"){:.group1}
+[![]({{ site.baseurl }}/assets/images/books/winscp2_400.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/winscp2_400.jpg "秘密鍵の登録2"){:.group1}
 
 最後に、下中央にある \[Login\] をクリックします。
 
-[![]({{ site.baseurl }}/assets/images/books/winscp3_400.jpg)]({{ site.baseurl }}/assets/images/books/winscp3_400.jpg "winSCPへのログイン"){:.group1}
+[![]({{ site.baseurl }}/assets/images/books/winscp3_400.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/winscp3_400.jpg "winSCPへのログイン"){:.group1}
 
 初回接続時には警告メッセージが表示されますが、 "はい" を選択してください (次回から表示されません)。次の画面では、鍵を作成した際に指定したパスフレーズを入力します。
 
 ログインに成功すると、左側のウィンドウにユーザの PC のフォルダ、右側のウィンドウにデータ受付サーバの登録者専用ディレクトリが表示されます。
 左側ウィンドウでファイルを選択し右側ウィンドウへドラッグ＆ドロップし、サーバへファイルを転送します。
 
-[![]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg)]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg "ファイルの転送"){:.group1}
+[![]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg){:.w400}]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg "ファイルの転送"){:.group1}
 
 転送したファイルは、ファイルを選択し \[削除\] ボタンをクリックすることで削除できます。
 
@@ -237,11 +237,11 @@ DRA への登録～データの転送 (Mac)～
 
 トップ画面で "Open Connection" を選択します。
 
-[![]({{ site.baseurl }}/assets/images/books/Cyberduck_1.jpg)]({{ site.baseurl }}/assets/images/books/Cyberduck_1.jpg "open_connection"){:.group1}
+[![]({{ site.baseurl }}/assets/images/books/Cyberduck_1.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/Cyberduck_1.jpg "open_connection"){:.group1}
 
 使用する転送方式で "SFTP(SSH File Transfer Protocol)" を選択します。
 
-[![]({{ site.baseurl }}/assets/images/books/Cyberduck_2.jpg)]({{ site.baseurl }}/assets/images/books/Cyberduck_2.jpg "SFTP"){:.group1}
+[![]({{ site.baseurl }}/assets/images/books/Cyberduck_2.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/Cyberduck_2.jpg "SFTP"){:.group1}
 
 Cyberduck の起動画面で、以下のように設定し More Options の "Use Public Key Authentication" をチェックします。
 
@@ -251,17 +251,17 @@ Cyberduck の起動画面で、以下のように設定し More Options の "Use
   - <span class="bold">Password:</span> (空欄のまま)
   - <span class="bold">Add to Keychain:</span> (チェックを入れる)
 
-[![]({{ site.baseurl }}/assets/images/books/Cyberduck_3.jpg)]({{ site.baseurl }}/assets/images/books/Cyberduck_3.jpg "key_authentication"){:.group1}
+[![]({{ site.baseurl }}/assets/images/books/Cyberduck_3.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/Cyberduck_3.jpg "key_authentication"){:.group1}
 
 秘密鍵(private key) はデフォルトで"ユーザのホームフォルダ .sshフォルダ (Finder からは見えない隠しフォルダ)\>id\_rsa"に保存されています。
 
-[![]({{ site.baseurl }}/assets/images/books/Cyberduck_4.jpg)]({{ site.baseurl }}/assets/images/books/Cyberduck_4.jpg "private_key"){:.group1}
+[![]({{ site.baseurl }}/assets/images/books/Cyberduck_4.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/Cyberduck_4.jpg "private_key"){:.group1}
 
 初回接続時には警告メッセージが表示されますが "常に" を選択してください (次回から表示されません)。
 
 ログインに成功すると、データ受付サーバの登録者専用ディレクトリが表示されます。登録者の PC にあるファイルを選択しウィンドウにドラッグ＆ドロップすることで、ファイルをサーバに転送します。
 
-[![]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg)]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg "transfer"){:.group1}
+[![]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg){:.w400}]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg "transfer"){:.group1}
 
 [« 閉じる](javascript:void(0)){: .close-content-btn}
 </div>
@@ -282,7 +282,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 </div>
 
 {::nomarkdown}
-{% include image.html url="books/array-sub2.jpg" caption="登録管理情報を入力します" %}
+{% include image.html url="books/array-sub2.jpg" caption="登録管理情報を入力します" class="w550" %}
 {:/}
 
 ### BioProject
@@ -292,7 +292,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 他のアカウントで登録された BioProject を参照したい場合は [GEA チームに連絡](/contact.html)します。
 
 {::nomarkdown}
-{% include image.html url="books/gea-bp.jpg" caption="GEA 登録で使う BioProject を一つ選択します" %}
+{% include image.html url="books/gea-bp.jpg" caption="GEA 登録で使う BioProject を一つ選択します" class="w550" %}
 {:/}
 
 ### BioSample
@@ -302,7 +302,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 他のアカウントで登録された BioSample を参照したい場合は [GEA チームに連絡](/contact.html)します。
 
 {::nomarkdown}
-{% include image.html url="books/gea-bs.jpg" caption="GEA 登録で使うBioSampleを選択します" %}
+{% include image.html url="books/gea-bs.jpg" caption="GEA 登録で使うBioSampleを選択します" class="w550" %}
 {:/}
 
 ### IDF
@@ -317,13 +317,13 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
   - Data File Type: マイクロアレイ実験の場合は生データと解析済みデータが必須です。サンプル毎の生データ・解析済みデータファイルの登録を強く推奨します[マイクロアレイ実験に登録可能なファイル形式](/gea/datafile.html#array_data)。
 
 {::nomarkdown}
-{% include image.html url="books/array-idf.jpg" caption="IDF の内容を入力" %}
+{% include image.html url="books/array-idf.jpg" caption="IDF の内容を入力" class="w600" %}
 {:/}
 
 ### SDRF
 
 {::nomarkdown}
-{% include image.html url="books/array-sdrf.jpg" caption="SDRF テンプレートファイルをダウンロード" %}
+{% include image.html url="books/array-sdrf.jpg" caption="SDRF テンプレートファイルをダウンロード" class="w400" %}
 {:/}
 
 [SDRF(Sample and Data Relationship Format)](/gea/metadata.html#sdrf)
@@ -362,13 +362,13 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
       - KU-PI499262
 
 {::nomarkdown}
-{% include image.html url="books/array-sdrf-template.jpg" caption="SDRF テンプレートの図解、登録者が情報を追加する必要がある部分は黄色で示されている" %}
+{% include image.html url="books/array-sdrf-template.jpg" caption="SDRF テンプレートの図解、登録者が情報を追加する必要がある部分は黄色で示されている" class="w600" %}
 {:/}
 
 内容を追加した SDRF を選択して Continue をクリックします。
 
 {::nomarkdown}
-{% include image.html url="books/array-sdrf2.jpg" caption="作成した SDRF ファイルを選択" %}
+{% include image.html url="books/array-sdrf2.jpg" caption="作成した SDRF ファイルを選択" class="w450" %}
 {:/}
 
 ### Overview と投稿
@@ -378,7 +378,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 "Submit"ボタンをクリックして IDF と SDRF を投稿します。
 
 {::nomarkdown}
-{% include image.html url="books/array-overview.jpg" caption="IDF と SDRF の内容を確認してから投稿" %}
+{% include image.html url="books/array-overview.jpg" caption="IDF と SDRF の内容を確認してから投稿" class="w450" %}
 {:/}
 
 ### 検証処理
@@ -388,7 +388,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 Validatorは[validation rule](/gea/validation.html)に従ってメタデータをチェックしエラーとワーニングメッセージを表示します。メタデータを投稿するためにはエラーを解消しておく必要があります。
 
 {::nomarkdown}
-{% include image.html url="books/array-validation.jpg" caption="エラーとワーニングメッセージ" %}
+{% include image.html url="books/array-validation.jpg" caption="エラーとワーニングメッセージ" class="w500" %}
 {:/}
 
 ### アクセッション番号
@@ -398,7 +398,7 @@ Validatorは[validation rule](/gea/validation.html)に従ってメタデータ�
 [査読者用トークンを発行](/gea/reviewer-access.html)することでの非公開データへのアクセスを提供することができます。
 
 {::nomarkdown}
-{% include image.html url="books/array-accession.jpg" caption="GEA アクセッション番号" %}
+{% include image.html url="books/array-accession.jpg" caption="GEA アクセッション番号" class="w500" %}
 {:/}
 
 ## 更新
@@ -481,15 +481,15 @@ B636E0063E29709B6082F324C76D0911 file2
 [Fsum Frontend(http://sourceforge.net/projects/fsumfe/)](http://sourceforge.net/projects/fsumfe/)をインストールし、起動します。  
 まず、 "md5" にチェックを入れてください。
 
-[![]({{ site.baseurl }}/assets/images/books/Fsum1.jpg)]({{ site.baseurl }}/assets/images/books/Fsum1.jpg "md5 を選択"){:.group1}
+[![]({{ site.baseurl }}/assets/images/books/Fsum1.jpg){:.w400}]({{ site.baseurl }}/assets/images/books/Fsum1.jpg "md5 を選択"){:.group1}
 
 \[+\]ボタンをクリックし、必要なシークエンスデータファイルを開いてください。同時に複数のファイルを選択することが可能です。
 
-[![]({{ site.baseurl }}/assets/images/books/Fsum2.jpg)]({{ site.baseurl }}/assets/images/books/Fsum2.jpg "シークエンスデータファイルを選択"){:.group1}
+[![]({{ site.baseurl }}/assets/images/books/Fsum2.jpg){:.w400}]({{ site.baseurl }}/assets/images/books/Fsum2.jpg "シークエンスデータファイルを選択"){:.group1}
 
 最後に、 \[Calculate hashes\] ボタンをクリックしてください。各ファイルの MD5 値が表示されます。 \[Export\] ボタンから、MD5 値の一覧表 (.html,.csv,.xml) を作成することができます。
 
-[![]({{ site.baseurl }}/assets/images/books/Fsum3.jpg)]({{ site.baseurl }}/assets/images/books/Fsum3.jpg "MD5値の計算を開始"){:.group1}
+[![]({{ site.baseurl }}/assets/images/books/Fsum3.jpg){:.w400}]({{ site.baseurl }}/assets/images/books/Fsum3.jpg "MD5値の計算を開始"){:.group1}
 
 [« 閉じる](javascript:void(0)){: .close-content-btn}
 </div>

@@ -15,7 +15,7 @@ category: news
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn111222"><a href="#wn111222">DDBJ/EMBL/GenBank Feature Table Definition 改訂  </a></h2>
+  <h2 class="news_title" id="wn111222"><a href="#wn111222">DDBJ/EMBL/GenBank Feature Table Definition 改訂</a></h2>
   <div class="news_date">2011年12月22日</div>
   <div class="news_content"><dl><dd><a href="/ddbj/full_index-e.html">Feature Table Definition (FT-Doc)</a> は， DDBJ/EMBL-Bank/GenBank 国際塩基配列データベース構築のために，DDBJ, EMBL-Bank, GenBank が三者間で定めた共通のアノテーション規範です。2011年12月に Feature Table Definition が改訂されました。 Version は，10.0 です。</dd></dl></div>
   <div class="news_category">
@@ -24,7 +24,7 @@ category: news
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn111221"><a href="#wn111221">（全サービス再開） (2012/1/12-18) DDBJ 公開サービスの一時停止予定  </a></h2>
+  <h2 class="news_title" id="wn111221"><a href="#wn111221">（全サービス再開） (2012/1/12-18) DDBJ 公開サービスの一時停止予定</a></h2>
   <div class="news_date">2011年12月21日</div>
   <div class="news_content"><dl><dd>2012年3月に予定されている新スーパーコンピュータシステムの移行（リプレース）に関連した一部作業のため，以下の日程で DDBJ の全ネットワークサービスを停止いたします。<br>詳細は以下の通りです。</dd></dl>[generate_table class=t04]サービス名停止期間SAKURA2012年1月12日（木）17：00　～　1月18日（水）10：00DDBJ HP2012年1月13日（金）15：00　～　1月16日（月）14：00その他2012年1月13日（金）15：00　～　1月16日（月）16：00[/generate_table]<dl><dd>皆様には大変ご迷惑をお掛けいたしますが，ご理解とご協力をお願いいたします。</dd><dd><span class="red">全てのサービスが再開しました。ご協力ありがとうございました。（1月18日10時 JST）</span></dd></dl></div>
   <div class="news_category">
@@ -33,7 +33,7 @@ category: news
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn111206"><a href="#wn111206">ヒト (Homo sapiens) MGA データの公開  </a></h2>
+  <h2 class="news_title" id="wn111206"><a href="#wn111206">ヒト (Homo sapiens) MGA データの公開</a></h2>
   <div class="news_date">2011年12月06日</div>
   <div class="news_content"><dl> <dd><a href="http://www.u-tokyo.ac.jp/index_j.html" target="_blank">東京大学</a>から登録された ヒト (<i>Homo sapiens</i>) 由来の 5'SAGE tag の MGA データが公開されました。<br><strong>アクセッション番号</strong>は以下の通りです。<br><br>
 <pre class="highlight">・AEAAA0000001-AEAAA0026367 (26,367 entries)・AEAAB0000001-AEAAB0012114 (12,114 entries)
@@ -56,7 +56,7 @@ category: news
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn111130"><a href="#wn111130">第34回日本分子生物学会年会 ブース出展・ポスター発表  </a></h2>
+  <h2 class="news_title" id="wn111130"><a href="#wn111130">第34回日本分子生物学会年会 ブース出展・ポスター発表</a></h2>
   <div class="news_date">2011年11月30日</div>
   <div class="news_content"><dl><dd><a href="http://www.aeplan.co.jp/mbsj2011/index.html" target="_new">第34回日本分子生物学会年会</a> の，特別企画「使ってみようバイオデータベース～つながるデータ，広がる世界」 にDDBJ ブースを出展します。<br>DDBJ の次世代シークエンサ対応をテーマに，発現定量データベース「DDBJ Omics Archive(DOR)」 やプロジェクトのデータベース「Bio Project」 等のデモ展示を行います。<br><br>  <b>日程</b>：12月13日(火) ～ 12月16日(金)　9：00～17：00 (最終日は14：00まで)<br>  <b>会場</b>：パシフィコ横浜　展示ホール　バイオデータベースコーナー<br><br><br>また，14日(水) にDDBJ の新しい塩基配列データ登録ツールについて<b>「DDBJ created a new Web-based nucleotide sequence date submission tool, code name: D-easy</b> (ポスター番号 2P-0115)<b>」</b> を発表します。<br><br>みなさま，どうぞお気軽にお立寄り下さい。</dd></dl></div>
   <div class="news_category">
@@ -65,7 +65,7 @@ category: news
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn111129"><a href="#wn111129">DDBJ 年末年始休業のお知らせ </a></h2>
+  <h2 class="news_title" id="wn111129"><a href="#wn111129">DDBJ 年末年始休業のお知らせ</a></h2>
   <div class="news_date">2011年11月29日</div>
   <div class="news_content"><dl><dd>DDBJ では，国際塩基配列データベースの構築業務を 2011年12月29日から 2012年1月3日まで休業いたします。<br>これにともない，<a href="http://sakura.ddbj.nig.ac.jp/top-j.html" target="_new">SAKURA</a> によるデータ受け付けは，下記の期間ご利用頂けません。エントリの新規および再公開も行なわれません。 ただし，データ検索や ftp は休業期間でも利用可能です。<br><br><table><tbody><tr><td>休業期間 </td><td>2011年12月29日(木)  ～ 2012年1月3日(火) </td></tr><tr><td>SAKURA 停止 </td><td>2011年12月27日(火) 17時 ～ 2012年1月4日(水)  10時</td></tr><tr><td>新規・再公開停止 </td><td>2011年12月27日(火) ～ 2012年1月4日(水) </td></tr></tbody></table>ご迷惑をお掛けいたしますが，ご理解とご協力をお願いいたします。<br><br>2011年11月29日</dd></dl></div>
   <div class="news_category">
@@ -74,7 +74,7 @@ category: news
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn111116"><a href="#wn111116">(12/6) 国立遺伝学研究所ならびに DDBJ ネットワークの一時不通 </a></h2>
+  <h2 class="news_title" id="wn111116"><a href="#wn111116">(12/6) 国立遺伝学研究所ならびに DDBJ ネットワークの一時不通</a></h2>
   <div class="news_date">2011年11月16日</div>
   <div class="news_content"><dl><dd>メンテナンスのため，下記期日におきまして，国立遺伝学研究所ならびに DDBJ ネットワークが一時不通になります。<br><br><ul><li><b>作業日時：</b>2011年12月6日(火) 18:30 ～ 19:30 (この時間帯において15分の通信断が1回発生)</li><li><b>作業内容：</b>学術情報ネットワークのメンテナンス</li></ul></dd><dd>ご迷惑をお掛けいたしますが，ご理解とご協力をお願いいたします。</dd></dl></div>
   <div class="news_category">
@@ -101,7 +101,7 @@ category: news
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn111025_2"><a href="#wn111025_2">(11/11-14) 国立遺伝学研究所の停電による公開サービスの停止 </a></h2>
+  <h2 class="news_title" id="wn111025_2"><a href="#wn111025_2">(11/11-14) 国立遺伝学研究所の停電による公開サービスの停止</a></h2>
   <div class="news_date">2011年10月25日</div>
   <div class="news_content"><dl><dd>国立遺伝学研究所の停電にともない，以下の日程で DDBJ の全ネットワークサービスを停止いたします。サービスによって停止期間が異なりますのでご注意下さい。　詳細は以下の通りです。</dd></dl><table><tbody><tr><td align="center" ><strong>サービス名</strong></td><td align="center" ><strong>停止期間</strong></td></tr><tr><td>DDBJ Read Annotation Pipeline</td><td align="top">11月11日(金) 12:00～11月14日(月) 12:00 <!-- <span sclass>（再開済）</span> --></td></tr><tr><td>SAKURA</td><td align="top">11月11日(金) 13:00～11月14日(月) 12:00 <!-- <span class="red">（再開済）</span> --></td></tr><tr><td>D-way，DRA，DTA，BioProject，CIBEX，<br>getentry，ARSA，<br>BLAST，ClustalW，<br>TXSearch，ベクタースクリーニングシステム，<br>GIB，Anonymous-FTP，WABI</td><td valign="middle"><br><br>11月11日(金) 15:00～11月14日(月) 12:00 <!-- <span class="red">（再開済）</span> --></td></tr><tr><td>DDBJ HP</td><td align="top">11月11日(金) 17:00～11月12日(土) 18:00 <!-- <span class="red">（再開済）</span> --></td></tr></tbody></table><dl><dd>皆様には大変ご迷惑をお掛けいたしますが，ご理解とご協力をお願いいたします。</dd><dd><span class="red">全てのサービスが再開しました。ご協力ありがとうございました。（11月14日12時 JST）</span></dd></dl></div>
   <div class="news_category">
@@ -110,7 +110,7 @@ category: news
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn111025"><a href="#wn111025">DDBJ BioProject サービス提供開始 </a></h2>
+  <h2 class="news_title" id="wn111025"><a href="#wn111025">DDBJ BioProject サービス提供開始</a></h2>
   <div class="news_date">2011年10月25日</div>
   <div class="news_content"><a href="/bioproject/index.html" target="_new">BioProject</a> は研究プロジェクトとプロジェクトに由来するデータをまとめるためのデータベースです。INSDC が運営するデータベースに登録されたデータが BioProject ID を引用することで，データがプロジェクト単位でグループ化されます。<br>DDBJ BioProject は登録されたプロジェクトデータに対して国際的に認可されたプレフィックス 'PRJD' で始まるアクセッション番号を発行します。公開されたプロジェクトデータは EBI，NCBI と交換，共有されます。<br><br>BioProject データを登録するためには DDBJ 登録管理システム <a href="https://ddbj.nig.ac.jp/D-way/" target="_new">D-way</a> のアカウントが必要になります。<a href="/files/manual/D-way_manual.pdf" target="_new">D-way 登録アカウントマニュアル</a> に従いアカウントを取得後，D-way ウェブサイトからプロジェクトデータを投稿してください。<br><br></div>
   <div class="news_category">
@@ -137,7 +137,7 @@ category: news
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn111024"><a href="#wn111024">「第25回 DDBJing 講習会 in 三島」 開催のお知らせ </a></h2>
+  <h2 class="news_title" id="wn111024"><a href="#wn111024">「第25回 DDBJing 講習会 in 三島」 開催のお知らせ</a></h2>
   <div class="news_date">2011年10月24日</div>
   <div class="news_content"><dl><dd>「第25回 DDBJing 講習会 in 三島」を開催します。<br><br><b>日　時：</b> 2012年1月26日(木)<br><b>場　所：</b> 国立遺伝学研究所　生命情報・DDBJ 研究センター 4F<br><b>対　象：</b> DDBJ を利用される方をどなたでも歓迎します <br><b>参加費：</b> 無料<br><br>【 講義内容 】<br>Next-Generation Sequencer(NGS) 由来のデータ解析（微生物を中心に）やデータ登録について，講義とPC を用いた実習を行います。<br>・NGS マルチプレックス法による黄色ブドウ球菌de novo アセンブリ<br>・<a href="http://www.migap.org/">MiGAP</a> ～微生物ゲノム注釈ツール利用法<br>・<a href="http://galaxy.dbcls.jp/">DBCLS Galaxy</a>： ツール群，日本語統合環境，etc.<br>・<a href="/dra/index.html">DDBJ Sequence Read Archive(DRA)</a> の紹介<br>・<!--<a href="https://sso.ddbj.nig.ac.jp/opensso/UI/Login?realm=ddbj&amp;goto=https://p.ddbj.nig.ac.jp:443/pipeline/&amp;lang=JP">-->Pipeline<!--</a>--> 基礎(de novo assembly)<br>・Pipeline 高次部(galaxy： contig annotation workflow)<br>・Pipeline 高次部(galaxy： 系統樹解析)<br>・NGS 由来アセンブル配列の登録 ～大量登録システム(MSS)　　　　など<br><br>詳細・参加申込みは，<a href="/training.html">こちら</a> をご覧下さい。</dd></dl></div>
   <div class="news_category">
@@ -155,7 +155,7 @@ category: news
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn111003"><a href="#wn111003">GIB サービス再開 </a></h2>
+  <h2 class="news_title" id="wn111003"><a href="#wn111003">GIB サービス再開</a></h2>
   <div class="news_date">2011年10月03日</div>
   <div class="news_content">節電のために停止しておりました，<a href="/past-services-e.html#gib" target="_blank">GIB</a> のサービスを10月3日（月）より再開しました。<br>ユーザのみなさまには，大変長らくお待たせいたしました。<br>どうぞご利用下さい。<br><br></div>
   <div class="news_category">

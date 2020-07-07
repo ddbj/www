@@ -78,7 +78,7 @@ category: news
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn121127"><a href="#wn121127">Nucleic Acids Research にDDBJ に関する論文発表 </a></h2>
+  <h2 class="news_title" id="wn121127"><a href="#wn121127">Nucleic Acids Research にDDBJ に関する論文発表</a></h2>
   <div class="news_date">2012年11月27日</div>
   <div class="news_content"><dl><dd>Nucleic Acids Research では，毎年データベース特集号が発行されています。DDBJ の活動に関連する下記の論文が発表されましたのでお知らせします。<br><br><strong>"DDBJ new system and service refactoring"</strong><br>Osamu Ogasawara, Jun Mashima, Yuichi Kodama, Eli Kaminuma, Yasukazu Nakamura, Kousaku Okubo and Toshihisa Takagi<br><a href="http://nar.oxfordjournals.org/content/early/2012/11/23/nar.gks1152.full" target="_new"> Nucl. Acids Res. (2012) doi: 10.1093/nar/gks1152 </a><br><br><strong>"The International Nucleotide Sequence Database Collaboration"</strong><br>Yasukazu Nakamura, Guy Cochrane and Ilene Karsch-Mizrachi on behalf of the International Nucleotide Sequence Database Collaboration<br><a href="http://nar.oxfordjournals.org/content/early/2012/11/23/nar.gks1084.full" target="_new"> Nucl. Acids Res. (2012) doi: 10.1093/nar/gks1084 </a></dd></dl></div>
   <div class="news_category">
@@ -426,7 +426,7 @@ FT   misc_feature    1..88           FT   /note="genetic maker"</pre><span ><b>[
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn120627"><a href="#wn120627">DDBJ リリース 89.0，DAD リリース 59.0 完成 </a></h2>
+  <h2 class="news_title" id="wn120627"><a href="#wn120627">DDBJ リリース 89.0，DAD リリース 59.0 完成</a></h2>
   <div class="news_date">2012年06月27日</div>
   <div class="news_content"><dl><dd><b>DDBJ リリース 89.0</b><br><ul><li><b>公開日：</b>2012年6月27日</li><li><b>エントリ数：</b>153,273,314    <b>塩基数：</b>141,016,380,296</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.89.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo.html">現在公開されているリリースの情報</a></li></ul><br><b>DAD リリース 59.0</b><br><ul><li><b>公開日：</b>2012年6月27日</li><li><b>エントリ数：</b>23,734,064    <b>総アミノ酸残基数：</b>6,866,234,533aa</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.59.txt">DAD Release Note</a></li><li><a href="/stats/relinfo.html">現在公開されているリリースの情報</a></li></ul></dd></dl></div>
   <div class="news_category">
@@ -453,7 +453,7 @@ FT   misc_feature    1..88           FT   /note="genetic maker"</pre><span ><b>[
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn120604"><a href="#wn120604">トマト (Solanum lycopersicum) 全ゲノムデータの公開  </a></h2>
+  <h2 class="news_title" id="wn120604"><a href="#wn120604">トマト (Solanum lycopersicum) 全ゲノムデータの公開</a></h2>
   <div class="news_date">2012年06月04日</div>
   <div class="news_content"><dl><dd><a href="http://bti.cornell.edu/" target="_blank">Boyce Thompson Institute for Plant Research</a> から登録されたトマト (<i>Solanum lycopersicum</i>) の全ゲノムデータが公開されました。<br>国際コンソーシアム「<a href="http://solgenomics.net/organism/Solanum_lycopersicum/genome" target="_blank">トマトゲノムコンソーシアム</a>」の一員として，<a href="http://www.kazusa.or.jp/" target="_blank">かずさ DNA 研究所</a>は，主要な役割を果たしました。</dd><dd><b>参考：</b><br>  <b>Boyce Thompson Institute for Plant Research (News)</b><br>    <a href="http://bti.cornell.edu/index.php?page=NewsDetails&amp;id=135" target="_blank">Tomato genome becomes fully sequenced – paving the way for healthier fruits and vegetables </a><br>  <b>かずさ DNA 研究所　（プレスリリース）</b><br>    <a href="http://www.kazusa.or.jp/j/information/news20120531.html" target="_blank">トマトの全ゲノム解読に世界で初めて成功</a></dd><dd><b>アクセッション番号</b>は以下の通りです。  （<a href="http://getentry.ddbj.nig.ac.jp/top-j.html" target="_blank">getentry</a> または <a href="http://ddbj.nig.ac.jp/DRASearch/" target="_blank">DRASearch</a> から検索可能です）</dd></dl><dl><dd>  <b>genome</b>     <ul>      <li>WGS:      AEKE02000001 - AEKE02026877 (AEKE.gz)  ( 26,877 entries)</li>       <li>Chr CON: CM001064 - CM001075  ( 12 entries)</li>      <li>CON:       GL758110 - GL761332  ( 3,223 entries)</li>      </ul>      <b>RNA-Seq data</b>     <ul>      <li>SRA: <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/SRA048/SRA048144">SRA048144</a>, <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/SRA049/SRA049915">SRA049915</a> and <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/SRA050/SRA050797">SRA050797</a></li>     </ul> </dd></dl></div>
   <div class="news_category">
@@ -480,7 +480,7 @@ FT   misc_feature    1..88           FT   /note="genetic maker"</pre><span ><b>[
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn120427"><a href="#wn120427">DRA と BioProject の動画マニュアルを公開  </a></h2>
+  <h2 class="news_title" id="wn120427"><a href="#wn120427">DRA と BioProject の動画マニュアルを公開</a></h2>
   <div class="news_date">2012年04月27日</div>
   <div class="news_content"><dl><dd><a href="/dra/index.html">DDBJ Sequence Read Archive</a> と <a href="/bioproject/index.html">BioProject</a> の動画マニュアルを公開しました。<br><br>DDBJ Sequence Read Archive <a href="/dra/video.html">Video Tutorial</a><ul><li><a href="/videos/DRA1.shtml">データの登録１ ～必要なデータ～</a></li><li>データの登録２ ～データの登録～</li><li>データの登録３ ～データの転送～ Windows Mac</li><li>データの登録４ ～鍵ペアの作成～ Windows <a href="/videos/DRA4mac.shtml">Mac</a></li></ul>BioProject<ul><li><a href="/videos/BP.shtml">BioProject ～データベースの紹介とプロジェクトの登録～</a></li></ul><a href="http://www.youtube.com/user/DDBJvideo">Youtube 版はこちら</a>です。</dd></dl></div>
   <div class="news_category">
@@ -498,7 +498,7 @@ FT   misc_feature    1..88           FT   /note="genetic maker"</pre><span ><b>[
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn120418"><a href="#wn120418">(4/23-26) DRA, BioProject 関連システムの一部停止  </a></h2>
+  <h2 class="news_title" id="wn120418"><a href="#wn120418">(4/23-26) DRA, BioProject 関連システムの一部停止</a></h2>
   <div class="news_date">2012年04月18日</div>
   <div class="news_content"><dl><dd><a href="/dra/index.html" target="_blank">DDBJ Sequence Read Archive (DRA)</a> は Roche 454 GS System®，Illumina Genome Analyzer®，Applied Biosystems SOLiD® System などの次世代シークエンサからの出力データのためのデータベースです。<a href="/bioproject/index.html" target="_blank">BioProject</a> は研究プロジェクトとプロジェクトに由来するデータをまとめるためのデータベースです。停止サービスは以下の通りです。<br><br><ul><li><b>停止期間：</b> 2012年4月23日（月）17時30分～4月26日（木）13時　<br>（作業が終了次第 サービスを再開し，HP にてお知らせいたします）</li><li><b>停止サービス：</b><br>  <b>・</b>D-way システム<br>  <b>・</b>DRA, BioProject の登録受付<br>  <b>・</b>DDBJ anonymous FTP の dra ディレクトリ（fastq を除く）</li><li><b>停止理由：</b>ディスクストレージ移設作業の為</li>        <li><b>利用可能サービス：</b><br>  <b>・</b><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/" target="_blank">fastq</a> ダウンロード（DDBJ anonymous FTP）<br>  <b>・</b><a href="http://ddbj.nig.ac.jp/DRASearch/" target="_blank">DRASearch</a><br>  <b>・</b><a href="http://ddbj.nig.ac.jp/BPSearch/" target="_blank">BPSearch</a></li></ul>ご迷惑をお掛けいたしますが，ご理解とご協力をお願いいたします。 </dd><dd><font class="red">作業は終了しました。ご協力ありがとうございました。（4月26日（木）12時10分）</font></dd></dl></div>
   <div class="news_category">
@@ -597,7 +597,7 @@ FT   misc_feature    1..88           FT   /note="genetic maker"</pre><span ><b>[
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn120112"><a href="#wn120112">DDBJ リリース 88.0，DAD リリース 58.0 完成  </a></h2>
+  <h2 class="news_title" id="wn120112"><a href="#wn120112">DDBJ リリース 88.0，DAD リリース 58.0 完成</a></h2>
   <div class="news_date">2012年01月12日</div>
   <div class="news_content"><dl><dd><b>DDBJ リリース 88.0</b><br><ul><li><b>公開日：</b>2012年1月12日</li><li><b>エントリ数：</b>145,861,965    <b>塩基数：</b>134,956,109,049</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.88.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo.html">現在公開されているリリースの情報</a></li></ul>※　DDBJ は2012年3月に予定されている新コンピュータシステムの移行（リプレース）に伴い，DDBJ リリース 89 の公開を3月から6月に延期いたします。<br><br><br><b>DAD リリース 58.0</b><br><ul><li><b>公開日：</b>2012年1月12日</li><li><b>エントリ数：</b>22,451,011    <b>総アミノ酸残基数：</b>6,457,504,280aa</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.58.txt">DAD Release Note</a></li><li><a href="/stats/relinfo.html">現在公開されているリリースの情報</a></li></ul>※　DDBJ は2012年3月に予定されている新コンピュータシステムの移行（リプレース）に伴い，DAD リリース 59 の公開を3月から6月に延期いたします。</dd></dl></div>
   <div class="news_category">
@@ -624,7 +624,7 @@ FT   misc_feature    1..88           FT   /note="genetic maker"</pre><span ><b>[
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn120105"><a href="#wn120105">Nucleic Acids Research に DDBJ に関する論文発表  </a></h2>
+  <h2 class="news_title" id="wn120105"><a href="#wn120105">Nucleic Acids Research に DDBJ に関する論文発表</a></h2>
   <div class="news_date">2012年01月05日</div>
   <div class="news_content"><dl><dd>Nucleic Acids Research では，毎年データベース特集号が発行されています。Database issue, Vol. 40 にDDBJ の活動に関連する下記の論文が発表されましたのでお知らせします。<br><br><strong>"The International Nucleotide Sequence Database Collaboration"</strong><br>Ilene Karsch-Mizrachi, Yasukazu Nakamura, and Guy Cochrane  on behalf of the International Nucleotide Sequence Database Collaboration<br><a href="http://nar.oxfordjournals.org/cgi/content/abstract/40/D1/D33?etoc" target="_new">Nucl. Acids Res. 2012 40: D33-D37; doi:10.1093/nar/gkr1006.</a><br><br><strong>"The DNA Data Bank of Japan launches a new resource, the DDBJ Omics Archive of functional genomics experiments"</strong><br>Yuichi Kodama, Jun Mashima, Eli Kaminuma, Takashi Gojobori, Osamu Ogasawara, Toshihisa Takagi, Kousaku Okubo,  and Yasukazu Nakamura<br><a href="http://nar.oxfordjournals.org/cgi/content/abstract/40/D1/D38?etoc" target="_new">Nucl. Acids Res. 2012 40: D38-D42; doi:10.1093/nar/gkr994.</a><br><br><strong>"The sequence read archive: explosive growth of sequencing data"</strong><br>Yuichi Kodama, Martin Shumway, and Rasko Leinonen  on behalf of the International Nucleotide Sequence Database Collaboration<br><a href="http://nar.oxfordjournals.org/cgi/content/abstract/40/D1/D54?etoc" target="_new">Nucl. Acids Res. 2012 40: D54-D56; doi:10.1093/nar/gkr854.</a></dd></dl></div>
   <div class="news_category">

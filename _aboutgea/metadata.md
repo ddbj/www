@@ -10,7 +10,7 @@ category: aboutgea
 MicroArray Gene Expression Tabular ([MAGE-TAB](http://fged.org/projects/mage-tab/)) は機能ゲノミクスデータを構造化・標準化された方法で表現するための研究者コミュニティで開発、採用された形式です。MAGE-TAB はデータの収集とアノテーションに加え、ArrayExpress や GEA といったデータベース間でデータを交換する用途にも使えるように設計されています。[MAGE-TAB の仕様書](http://fged.org/projects/mage-tab/)
 
 {::nomarkdown}
-{% include image.html url="magetab/magetab_over.jpg" caption="IDF，SDRF，ADFと生データファイル，解析処理されたデータファイル間の関係" %}
+{% include image.html url="magetab/magetab_over.jpg" caption="IDF，SDRF，ADFと生データファイル，解析処理されたデータファイル間の関係" class="w450" %}
 {:/}
 
 ## IDF
@@ -170,7 +170,7 @@ experiment で[必須 protocol セット](https://docs.google.com/spreadsheets/d
 SDRF (Sample and Data Relationship Format) サンプル属性及びサンプル、アレイ、データファイル間の関係性を記述します。SDRF は機能ゲノミクス実験の自然な流れを再現できるように構成されています。SDRF は用いられた大元の Source サンプルから始まり、最後はサンプルから得られたデータファイルで終わります。Single-channel のマイクロアレイ実験ではSDRF１行が１ハイブリダイゼーションに対応します。Two-channel マイクロアレイでは１行は１チャンネルに対応します。シークエンシング実験では１行は基本的に１生データファイル（Run、ペアードシークエンスを含む）に対応します。
 
 {::nomarkdown}
-{% include image.html url="magetab/sdrf.jpg" caption="SDRF の全体構造" %}
+{% include image.html url="magetab/sdrf.jpg" caption="SDRF の全体構造" class="w450" %}
 {:/}
 
 ### SDRF セクション

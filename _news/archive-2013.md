@@ -6,7 +6,7 @@ category: news
 ---
 
 <div class="news_post firstpost">
-  <h2 class="news_title" id="wn131226_2"><a href="#wn131226_2">DDBJ リリース 95.0，DAD リリース 65.0 完成 </a></h2>
+  <h2 class="news_title" id="wn131226_2"><a href="#wn131226_2">DDBJ リリース 95.0，DAD リリース 65.0 完成</a></h2>
   <div class="news_date">2013年12月26日</div>
   <div class="news_content"><p><b>DDBJ リリース 95.0</b></p><ul><li><b>公開日：</b>2013年12月26日</li><li><b>エントリ数：</b>169,094,459     <b>塩基数：</b>156,527,217,715</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.95.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo.html">現在公開されているリリースの情報</a></li></ul><b>DAD (DDBJ amino acid database)  リリース 65.0</b><ul><li><b>公開日：</b>2013年12月26日</li><li><b>エントリ数：</b>29,553,914     <b>総アミノ酸残基数：</b>8,770,768,717aa</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.65.txt">DAD Release Note</a></li></ul></div>
   <div class="news_category">
@@ -132,7 +132,7 @@ category: news
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn131128"><a href="#wn131128">イチゴ (Fragaria x ananassa と他4種) ゲノム配列データの公開 </a></h2>
+  <h2 class="news_title" id="wn131128"><a href="#wn131128">イチゴ (Fragaria x ananassa と他4種) ゲノム配列データの公開</a></h2>
   <div class="news_date">2013年11月28日</div>
   <div class="news_content"> <p>かずさDNA 研究所から登録されたイチゴ (<em>Fragaria x ananassa</em> と他4種) のゲノム配列データが公開されました。</p><p><strong>参考</strong>; <br><a href="http://www.kazusa.or.jp/j/information/news20131127.html" target="_new">食用イチゴの全ゲノム解読に世界で初めて成功</a> <br><a href="http://strawberry-garden.kazusa.or.jp/" target="_new">Strawberry GARDEN</a>  </p><p><strong>アクセッション番号</strong>は以下の通りです。<a href="http://getentry.ddbj.nig.ac.jp/top-j.html" target="_blank">getentry</a> または <a href="http://ddbj.nig.ac.jp/DRASearch/" target="_blank">DRASearch</a> から検索可能です。</p><table class="t04"><tbody><tr><th> species </th><th> WGS </th><th> scaffold CON </th><th> SRA </th></tr><tr><td> <em>Fragaria x ananassa</em> <br>(assembled to eliminate heterozygous) </td><td> BATS01000001-BATS01220286 (BATS.gz) </td><td> DF266822-DF269452 </td><td> DRR013866-DRR013871 <br>DRR013873-DRR013882 </td></tr><tr><td> <em>Fragaria x ananassa</em> <br>(assembled with octoploidity) </td><td> BATT01000001-BATT01714282 (BATT.gz) </td><td> DF269453-DF338599 </td><td> DRR013873-DRR013882 </td></tr><tr><td> <em>Fragaria iinumae</em> </td><td> BATU01000001-BATU01118549 (BATU.gz) </td><td> DF338600-DF339317 </td><td> DRR013884 </td></tr><tr><td> <em>Fragaria nipponica</em> </td><td> BATV01000001-BATV01215530 (BATV.gz) </td><td> DF339318-DF339818 </td><td> DRR013885 </td></tr><tr><td> <em>Fragaria nubicola</em> </td><td> BATW01000001-BATW01211274 (BATWgz)</td><td> DF339819-DF340307 </td><td> DRR013883 </td></tr><tr><td> <em>Fragaria orientalis</em> </td><td> BATX01000001-BATX01323675 (BATX.gz) </td><td> DF340308-DF340817 </td><td> DRR013886 </td></tr></tbody></table> </div>
   <div class="news_category">
@@ -267,7 +267,7 @@ category: news
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn131011"><a href="#wn131011">(10/19) 国立遺伝学研究所ならびにDDBJ ネットワークの一時停止 </a></h2>
+  <h2 class="news_title" id="wn131011"><a href="#wn131011">(10/19) 国立遺伝学研究所ならびにDDBJ ネットワークの一時停止</a></h2>
   <div class="news_date">2013年10月11日</div>
   <div class="news_content"><p>メンテナンスのため、下記期日におきまして国立遺伝学研究所ならびに DDBJ ネットワークが一時停止いたします。<br></p><ul><li><b>作業日時：</b>2013年10月19日(土)  14:00 ～ 16:00 (この時間帯において60分程の通信停止が1回発生)</li><li><b>作業内容：</b>光ケーブル引き替え工事</li></ul><br>ご迷惑をお掛けいたしますが、ご理解とご協力をお願いいたします。</div>
   <div class="news_category">
@@ -330,7 +330,7 @@ category: news
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn130918"><a href="#wn130918">DDBJ リリース 94.0，DAD リリース 64.0 完成 </a></h2>
+  <h2 class="news_title" id="wn130918"><a href="#wn130918">DDBJ リリース 94.0，DAD リリース 64.0 完成</a></h2>
   <div class="news_date">2013年09月18日</div>
   <div class="news_content"><p><b>DDBJ リリース 94.0</b></p><ul><li><b>公開日：</b>2013年9月18日</li><li><b>エントリ数：</b>167,480,294     <b>塩基数：</b>154,916,713,861</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.94.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo.html">現在公開されているリリースの情報</a></li></ul><b>DAD (DDBJ amino acid database)  リリース 64.0</b><ul><li><b>公開日：</b>2013年9月18日</li><li><b>エントリ数：</b>28,416,672     <b>総アミノ酸残基数：</b>8,394,552,710aa</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.64.txt">DAD Release Note</a></li></ul></div>
   <div class="news_category">
@@ -384,7 +384,7 @@ category: news
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn130809"><a href="#wn130809">第26回国際実務者会議 報告 </a></h2>
+  <h2 class="news_title" id="wn130809"><a href="#wn130809">第26回国際実務者会議 報告</a></h2>
   <div class="news_date">2013年08月09日</div>
   <div class="news_content"><p>DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a>, <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a> で構成される <a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a> は、その共同事業の運営・推進を図るために、国際実務者会議を年１回開催しています。<br>2013年は 5月21日-23日に EBI で開催され、<a href="/index.html" target="_blank">DDBJ</a>、<a href="http://www.ebi.ac.uk/embl/" target="_blank">EMBL-Bank</a>、<a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>、Sequence Read Archive (SRA)、Trace Archive を運営する上での実務的な問題を討論しました。<br>会議の報告は <a href="/activities/icm-reports.html#2013">こちら</a> をご覧ください。</p></div>
   <div class="news_category">
@@ -393,7 +393,7 @@ category: news
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn130807"><a href="#wn130807">(8/15) 国立遺伝学研究所ならびにDDBJ ネットワークの一時停止 </a></h2>
+  <h2 class="news_title" id="wn130807"><a href="#wn130807">(8/15) 国立遺伝学研究所ならびにDDBJ ネットワークの一時停止</a></h2>
   <div class="news_date">2013年08月07日</div>
   <div class="news_content"><p>メンテナンスのため、下記期日におきまして国立遺伝学研究所ならびに DDBJ ネットワークが一時停止いたします。<br></p><ul><li><b>作業日時：</b>2013年8月15日(木) 午前 0:00 ～ 6:15 (この時間帯において10分程の通信停止が1回発生)</li><li><b>作業内容：</b>学術情報ネットワークのメンテナンス</li></ul><br>ご迷惑をお掛けいたしますが、ご理解とご協力をお願いいたします。</div>
   <div class="news_category">
@@ -418,7 +418,7 @@ DDBJNEWr93.065.dat.gz （HG322958-HG323812 を含む）</pre>getentry につい�
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn130802"><a href="#wn130802">サンゴに共生するカッチュウソウ (Symbiodinium minutum) ゲノム配列データの公開 </a></h2>
+  <h2 class="news_title" id="wn130802"><a href="#wn130802">サンゴに共生するカッチュウソウ (Symbiodinium minutum) ゲノム配列データの公開</a></h2>
   <div class="news_date">2013年08月02日</div>
   <div class="news_content"><p>沖縄科学技術大学院大学から登録されたサンゴに共生するカッチュウソウ (<em>Symbiodinium minutum</em>) のゲノム配列データが公開されました。<br><br><strong>参考</strong>; <a href="http://www.oist.jp/ja/news-center/press-releases/11305" target="_new">サンゴ共生カッチュウソウのゲノム解読</a>  <br><br><strong>アクセッション番号</strong>は以下の通りです。<a href="http://getentry.ddbj.nig.ac.jp/top-j.html" target="_blank">getentry</a> または <a href="http://ddbj.nig.ac.jp/DRASearch/" target="_blank">DRASearch</a> から検索可能です。<br> <br>    <strong>scaffold CON</strong>: DF239013-DF260911 (21,899 entries) <br>    <strong>WGS</strong>: BASF01000001-BASF01033816 (BASF.gz) (33,816 entries) <br>    <strong>raw data</strong>: DRR003834-DRR003864 <br><br>    <strong>GSS</strong>: GA393224-GA605429 (212,206 entries) <br></p></div>
   <div class="news_category">
@@ -427,7 +427,7 @@ DDBJNEWr93.065.dat.gz （HG322958-HG323812 を含む）</pre>getentry につい�
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn130730"><a href="#wn130730">(8/12-13)DDBJ 夏季休業のお知らせ </a></h2>
+  <h2 class="news_title" id="wn130730"><a href="#wn130730">(8/12-13)DDBJ 夏季休業のお知らせ</a></h2>
   <div class="news_date">2013年07月30日</div>
   <div class="news_content"><dl><dd>国立遺伝学研究所の夏季休業にともない、DDBJ では下記の期間に国際塩基配列データベース構築業務を休業いたします。この期間の問い合わせ等につきましては、休業明けに順次対応させて頂きます。ただし、休業期間中すべての WWW サービスは利用可能です。<br><br>    <b>休業期間：2013年8月12日(月)、8月13日(火)</b></dd><br><dd>ご迷惑をお掛けいたしますが、ご理解とご協力をお願いいたします。</dd></dl></div>
   <div class="news_category">
@@ -445,7 +445,7 @@ DDBJNEWr93.065.dat.gz （HG322958-HG323812 を含む）</pre>getentry につい�
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn130726"><a href="#wn130726">DDBJ ホームページアンケートにご協力をお願いします </a></h2>
+  <h2 class="news_title" id="wn130726"><a href="#wn130726">DDBJ ホームページアンケートにご協力をお願いします</a></h2>
   <div class="news_date">2013年07月26日</div>
   <div class="news_content"><p>DDBJ をご利用いただきありがとうございます。<br>DDBJ では、５月にDDBJ ホームページをリニューアルしました。<br>今後も、より使いやすいホームページを目指して改善を行う予定です。<br>皆さまのご意見やご要望を伺い、改善に役立てたいと思いますので、アンケートへのご協力をお願いいたします。<br><a href="http://svy.mk/18wbU8x" target="_blank">DDBJ HP に関するアンケート（外部サイト）</a>　よりご回答ください。<br>なお、ご回答いただいたデータ等につきましては、本アンケートの目的のためだけに使用し、他の目的には使用いたしません。</p></div>
   <div class="news_category">
@@ -589,7 +589,7 @@ DDBJNEWr93.065.dat.gz （HG322958-HG323812 を含む）</pre>getentry につい�
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn130515"><a href="#wn130515">「第27回 DDBJing 講習会 in 三島(2013.7.4.開催)」のご案内 </a></h2>
+  <h2 class="news_title" id="wn130515"><a href="#wn130515">「第27回 DDBJing 講習会 in 三島(2013.7.4.開催)」のご案内</a></h2>
   <div class="news_date">2013年05月15日</div>
   <div class="news_content"><font color="#FF0000">＊本講習会は終了いたしました</font> <!--<font color="#FF0000">＊5月28日(火) より受付を開始いたします</font><font color="#FF0000">＊参加申込み受付中</font>-->[ddbjing_table_01]日　時,2013年7月4日(木) 10:00～17:00 （受付は 9:30より）|場　所,国立遺伝学研究所 DDBJセンター 4F会議室 |主　催,日本 DNA データバンク（DDBJ）|対　象,DDBJ を利用される方をどなたでも歓迎します（定員20名 先着順）|参加費,無料|内　容,今回の講習会テーマは「NGS 配列解析と DDBJ データ登録」です。<br>実習を交えた講習を行います。参加申込みの際は、詳細の項を必ずお読みください。|詳　細,[<a href="#nittei">講習会の日程</a>][<a href="#about_PC">PC について</a>][<a href="#nig_access">アクセス</a>][<a href="#toiawase">お問い合わせ</a>][<a href="#sanka">参加申込み</a>][/ddbjing_table_01] <h3> <a name="nittei"><strong>講習会の日程</strong></a></h3>[ddbjing_table_02]7月4日（木） 10:00～17:00時間</div>
   <div class="news_category">
