@@ -5,223 +5,24 @@ pathname: submission-e
 category: aboutbioproject
 ---
 
-<div id="page" class="top">
-
-<div id="header" class="clearfix">
-
-<div id="header-top">
-
-[![](/images/parts/ddbj-logo-white.svg)](/index-e.html "DNA Data Bank of Japan")
-
-<div id="header-top-left">
-
-<span class="resources-btn">Services**</span>
-
-</div>
-
-<div id="header-top-right">
-
-  - [Login & Submit](https://ddbj.nig.ac.jp/D-way)
-  - [Policies and Disclaimers](/policies-e.html)
-  - [Contact](/contact-e.html)
-  - [Japanese](/bioproject/submission.html)
-
-</div>
-
-</div>
-
-<div class="resources-contents">
-
-<div class="boxContainer">
-
-<div class="resources-box">
-
-  - ### ![](/images/logos/service-org.svg)Search
-
-  - [getentry](http://getentry.ddbj.nig.ac.jp/top-e.html "Retrieve sequence records by accession numbers")
-
-  - [ARSA](http://ddbj.nig.ac.jp/arsa/ "Retrieve sequence and annotation by keywords")
-
-  - [DRA
-    Search](http://ddbj.nig.ac.jp/DRASearch "Search and retrieve sequencing data.")
-
-  - [TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en "Search unified taxonomy database")
-
-  - [BLAST](http://blast.ddbj.nig.ac.jp/blastn?lang=en "Search nucleotide sequences by sequence similarity")
-
-<!-- end list -->
-
-  - ### ![](/images/logos/wrench.svg)Analysis
-
-  - [Vector Screening
-    System](http://ddbj.nig.ac.jp/vecscreen/ "Screen vector sequences")
-
-  - [ClustalW](http://clustalw.ddbj.nig.ac.jp/index.php?lang=en "Multiple alignment and tree-making")
-
-  - [WABI (Web API for
-    Biology)](/search/help/wabi/wabi-e.html "Web API for using the search services of DDB")
-
-  - [DDBJ FTP
-    Site](ftp://ftp.ddbj.nig.ac.jp/ "Download public data by ftp")
-
-</div>
-
-<div class="resources-box">
-
-  - ### ![](/images/logos/database-org.svg)Databases
-
-  - [Annotated/Assembled Sequences
-    (DDBJ)](/ddbj/index-e.html "Annotated/Assembled Sequences (DDBJ)")
-
-  - [Sequence Read Archive
-    (DRA)](/dra/index-e.html "Sequence Read Archive")
-
-  - [Genomic Expression Archive
-    (GEA)](/gea/index-e.html "Genomic Expression Archive")
-
-  - [BioProject](/bioproject/index-e.html "BioProject")
-
-  - [BioSample](/biosample/index-e.html "BioSample")
-
-  - [Japanese Genotype-phenotype Archive
-    (JGA)](/jga/index-e.html "Japanese Genotype-phenotype Archive")
-
-  - [Submission portal
-    D-way](https://ddbj.nig.ac.jp/D-way "Submission portal D-way")
-
-<!-- end list -->
-
-  - ### ![](/images/logos/sc-org.svg)NIG SuperComputer
-
-  - [NIG
-    SuperComputer](https://sc.ddbj.nig.ac.jp/en "NIG SuperComputer")
-
-</div>
-
-<div class="resources-box dbcls">
-
-  - ### ![](/images/logos/dbcls-s.svg)DBCLS Services
-
-  - [AOE](http://aoe.dbcls.jp/en "Statistics and trends of gene expression data")
-
-  - [CRISPRdirect](https://crispr.dbcls.jp/ "Designing CRISPR/Cas9 guide RNA with reduced off-target sites")
-
-  - [DBCLS
-    SRA](http://sra.dbcls.jp/ "Statistics and trends of SRA data")
-
-  - [Gendoo](http://gendoo.dbcls.jp/ "Functional profiling of gene and disease features for omics analysis")
-
-  - [GGGenome](https://gggenome.dbcls.jp/en/ "A ultrafast sequence search")
-
-  - [GGRNA](https://ggrna.dbcls.jp/en/ "A Google-like, ultrafast search engine for genes and transcripts")
-
-  - [RefEx](http://refex.dbcls.jp/index.php?lang=en "A web tool for a comfortable search of reference data for gene expression analysis")
-
-</div>
-
-</div>
-
-</div>
-
-<div id="header-middle" class="clearfix">
-
-<div class="page-title">
-
-[BioProject](/bioproject/index-e.html)
-
-</div>
-
-<div class="search-box">
-
-<div id="search-box-flex">
-
-<div class="search-options-wrapper">
-
-BI-DDBJ Web Sites Annotated/Assembled Sequences Sequence Read Archive
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div id="header-bottom">
-
-  - [Home](/bioproject/index-e.html)
-  - [Handbook](/bioproject/submission-e.html)
-  - [FAQ](/bioproject/faq-e.html)
-  - [Search](http://ddbj.nig.ac.jp/BPSearch/)
-  - [Download![](/images/parts/arrow_down.svg)](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/bioproject)
-      - [XML
-        Schema](https://github.com/ddbj/pub/tree/master/docs/bioproject/xsd)
-  - [About BioProject](/bioproject/about-e.html)
-
-</div>
-
-</div>
-
-<div id="main" class="clearfix">
-
-<div id="breadcrumb" class="clearfix">
-
-  - [HOME](/bioproject/index-e.html "DDBJ BioProject top page")
-  - \>
-  - Handbook
-
-</div>
-
-<div id="primary">
-
-<div id="page_main">
-
-<div id="book">
-
-# DDBJ BioProject Handbook
-
-<div class="section book">
-
-# BioProject
-
-<div class="section chapter">
-
 ## Overview
-
-<div class="section section">
 
 ### Purpose
 
-New sequencing technologies have significantly increased the volume of
-data that can be generated. Coupled with this, research is increasingly
-collaborative and data resulting from collaboration can include distinct
-types of data which may be submitted by more than one research group to
-more than one archival database.
+New sequencing technologies have significantly increased the volume of data that can be generated. Coupled with this, research is increasingly collaborative and data resulting from collaboration can include distinct types of data which may be submitted by more than one research group to more than one archival database.
 
-The BioProject resource organizes both the projects and the data from
-those projects which is deposited into several archival databases
-maintained by members of the [INSDC](http://www.insdc.org/). This allows
-searching by characteristics of these projects, using the project
-description and project content across the
-[INSDC](http://www.insdc.org/)-associated databases.
+The BioProject resource organizes both the projects and the data from those projects which is deposited into several archival databases maintained by members of the [INSDC](http://www.insdc.org/). This allows searching by characteristics of these projects, using the project description and project content across the [INSDC](http://www.insdc.org/)-associated databases.
 
-![Overview of BioSample and BioProject integration with other DDBJ
-databases](/images/submission/biosample_integration.jpg
-"Overview of BioSample and BioProject integration with other DDBJ databases")
-
-</div>
-
-<div class="section section">
+{::nomarkdown}
+{% include image.html url="submission/biosample_integration.jpg" caption="Overview of BioSample and BioProject integration with other DDBJ
+databases" class="w450" %}
+{:/}
 
 ### Project
 
-The definition of a set of related data, a 'project' is very flexible
-and supports the need to define a complex project and various distinct
-sub-projects using different parameters.
+The definition of a set of related data, a 'project' is very flexible and supports the need to define a complex project and various distinct sub-projects using different parameters.
 
 For example, BioProject records can be established for:
-
-<div class="sub_index">
 
   - Genome sequencing and assembly
   - Metagenomes
@@ -232,42 +33,22 @@ For example, BioProject records can be established for:
   - Phenotype or Genotype
   - Variation detection
 
-</div>
-
-BioProject represents a submission, initiative, or group of data that is
-logically related in some manner, or is of interest to retrieve as a
-distinct dataset. A project may be identified in terms of distinctions
-in the type of data produced.
-
-</div>
-
-<div class="section section">
+BioProject represents a submission, initiative, or group of data that is logically related in some manner, or is of interest to retrieve as a
+distinct dataset. A project may be identified in terms of distinctions in the type of data produced.
 
 ### Complex project
 
-By selecting [Project Data Types](#Project_data_type)(for example,
-"Genome Sequencing" and "Transcriptome or Gene Expression"), multiple
-studies can be merged into single project.
+By selecting [Project Data Types](#Project_data_type)(for example, "Genome Sequencing" and "Transcriptome or Gene Expression"), multiple studies can be merged into single project.
 
-In the project spanning multiple species, enter a taxonomic
-classification common to the species (e.g., genus name).
+In the project spanning multiple species, enter a taxonomic classification common to the species (e.g., genus name).
 
-In the [Sample scope](#BioProject_Sample_scope),
-[Material](#Material)and [Capture](#Capture), select "Other" if
-appropriate ones are not available.
+In the [Sample scope](#BioProject_Sample_scope), [Material](#Material)and [Capture](#Capture), select "Other" if appropriate ones are not available.
 
-A series of publications can be listed in the
-[Publication](#Publication).
-
-</div>
-
-<div class="section section">
+A series of publications can be listed in the [Publication](#Publication).
 
 ### Primary and Umbrella projects
 
 There are two basic types of projects; primary and umbrella projects.
-
-<div class="term_def">
 
   - Primary project:  
     Submitted projects which are intended to represent and be linked to
@@ -295,11 +76,11 @@ There are two basic types of projects; primary and umbrella projects.
     Nucleotide sequence data can not directly refer an umbrella project.
     Sequence data are linked to an umbrella via a primary project.
 
-</div>
 
-</div>
 
-<div class="section section">
+
+
+
 
 ### BioProject hierarchy
 
@@ -328,7 +109,7 @@ each of which has a distinct project accession.
 layers.](/images/submission/bp_org.jpg
 "Schematic diagram of BioProject hierarchies. (A)Two layers. (B)Three layers.")
 
-<div class="term_def">
+
 
   - Two layers (A)  
     Initiatives may be organized as a single Umbrella project with one
@@ -346,11 +127,11 @@ layers.](/images/submission/bp_org.jpg
     epigenetics, etc.). Example: [NIH Human Microbiome Project (HMP)
     Roadmap Project](https://www.ncbi.nlm.nih.gov/bioproject/43021).
 
-</div>
 
-</div>
 
-<div class="section section">
+
+
+
 
 ### Data release
 
@@ -386,9 +167,9 @@ Released project data are exchanged with the other two INSDC partners
 [NCBI](https://www.ncbi.nlm.nih.gov/bioproject)and
 [EBI](https://www.ebi.ac.uk/)BioProject databases.
 
-</div>
 
-<div class="section section">
+
+
 
 ### Use an umbrella project
 
@@ -429,20 +210,20 @@ related primary projects to the DDBJ BioProject team.
 <span class="attention_text">Private primary projects are not released
 by linking to public umbrella project.</span>
 
-</div>
 
-</div>
 
-<div class="section chapter">
+
+
+
 
 ## Metadata
 
 Required <span class="required">\*</span>  
 Conditionally required <span class="conditionally_required">\*</span>
 
-<div class="news_post_container archive glossary bioproject">
 
-<div class="section terms section">
+
+
 
 ### Submitter
 
@@ -497,9 +278,9 @@ mechanism.
     Release project data immediately. Private DDBJ record(s) citing this
     ID is not released.
 
-</div>
 
-<div class="section terms section">
+
+
 
 ### General info
 
@@ -615,9 +396,9 @@ Funding information for a project.
   - [Consortium URL](#Consortium_URL)  
     If the consortium maintains a web site, provide the URL.
 
-</div>
 
-<div class="section terms section">
+
+
 
 ### Project type
 
@@ -777,9 +558,9 @@ options.
     capital letters. However, the tag is reserved in case-insensitive
     manner.
 
-</div>
 
-<div class="section terms section">
+
+
 
 ### Target
 
@@ -1095,9 +876,9 @@ extremophile parameters if known.
   - [Optimum Temperature](#OptimumTemperature)  
     Optimum temperature in Celsius.
 
-</div>
 
-<div class="section terms section">
+
+
 
 ### Publication
 
@@ -1178,28 +959,28 @@ extremophile parameters if known.
     If this is checked, then "et al" is added to the author name
     provided above.
 
-</div>
 
-</div>
 
-<div class="section section">
+
+
+
 
 ### XML schema
 
 [BioProject XML
 schema](https://github.com/ddbj/pub/tree/master/docs/bioproject)
 
-</div>
 
-</div>
 
-</div>
 
-<div class="section book">
+
+
+
+
 
 # Submission to BioProject
 
-<div id="human_subject" class="attention no_top">
+
 
   - Submission of research data from human subjects  
     For submitting data from human subjects (human data) to the
@@ -1212,47 +993,47 @@ schema](https://github.com/ddbj/pub/tree/master/docs/bioproject)
     "[Submission of research data from human
     subjects](/policies-e.html#human)".
 
-</div>
 
-<div class="section chapter">
+
+
 
 ## Submission to BioProject
 
-<div class="section section">
+
 
 ### Cases requiring project registration
 
 Registration for a BioProject accession is required in the following
 cases.
 
-<div class="sub_index">
+
 
   - submit sequencing data to DRA
   - submit genome sequences to DDBJ
 
-</div>
+
 
 Registration for a BioProject accession is encouraged in the following
 cases.
 
-<div class="sub_index">
+
 
   - projects that result in a very large volume of data submissions
   - submissions from multiple members of a collaboration
   - submissions to multiple archival databases
 
-</div>
+
 
 Registration for a BioProject accession is not required in the following
 cases. Register an accession if necessary.
 
-<div class="sub_index">
+
 
   - small datasets for which the results are found in one (or a small
     number) of accession numbers such as a single plasmid, viral or
     organelle genome sequencing study
 
-</div>
+
 
 A BioProject accession is required for submission to [Sequence Read
 Archive](/dra/index-e.html), and microbial and eukaryotic genomes
@@ -1265,9 +1046,9 @@ Archive](/dra/index-e.html)and [Trace Archive](/dta/index-e.html).
 whose genomes have been submitted to the
 INSDC.](/news/en/2014-02-12-e.html)
 
-</div>
 
-<div class="section section">
+
+
 
 ### Submit a new BioProject submission
 
@@ -1328,9 +1109,9 @@ Check the content in "OVERVIEW" and submit a project by clicking the
 The "OVERVIEW" tab continue to display submitted content. Updates will
 not be reflected in the "OVERVIEW" tab.
 
-</div>
 
-<div class="section section">
+
+
 
 ### Accession number
 
@@ -1341,17 +1122,17 @@ review submissions and issue accession numbers with prefix PRJD to
 completed projects. Submitters can view accession numbers and submission
 status in your [submission account](https://ddbj.nig.ac.jp/D-way/).
 
-<div class="sub_index attention">
+
 
   - Do NOT cite numbers with prefix PSUB in publication.
   - Do not double submit the projects which have been registered to EBI
     and NCBI.
 
-</div>
 
-</div>
 
-<div class="section section">
+
+
+
 
 ### Submit an umbrella project
 
@@ -1366,9 +1147,9 @@ private.
 umbrella](/images/books/hbp-05.jpg
 "Tell DDBJ staff that submitting project is umbrella")
 
-</div>
 
-<div class="section section">
+
+
 
 ### Link primary project to umbrella
 
@@ -1379,21 +1160,21 @@ submitted primary project to the umbrella based on this information.
 
 ![Link to umbrella](/images/books/hbp-06.jpg "Link to umbrella")
 
-</div>
 
-<div class="section section">
+
+
 
 ### Release of projects
 
 Registered projects can be released in the following two ways:
 
-<div class="sub_index">
+
 
   - Release immediately after registration.
   - Release when records citing the BioProject accession are made
     public.
 
-</div>
+
 
 The projects can be kept private. If DDBJ records citing the BioProject
 accession are made public, [cited projects are automatically
@@ -1406,18 +1187,18 @@ Public projects are exchanged among
 [NCBI](https://www.ncbi.nlm.nih.gov/bioproject)and
 [EBI](https://www.ebi.ac.uk/)BioProject databases.
 
-</div>
 
-<div class="section section">
+
+
 
 ### Update
 
 Registered projects can be updated. Please [contact the BioProject
 staff](/contact.html)to update the projects.
 
-</div>
 
-<div class="section section">
+
+
 
 ### Link experimental data and project
 
@@ -1427,35 +1208,35 @@ registered in advance in the Study.
 For genome and TSA submissions to the DDBJ, enter the BioProject
 accession in the DBLINK.
 
-</div>
 
-</div>
 
-</div>
 
-</div>
 
-</div>
 
-</div>
 
-<div id="side_navigation">
 
-<div class="side_nav_menu handbook_contents handbook submission">
 
-<div id="in_this_page">
+
+
+
+
+
+
+
+
+
 
 ## In this page
 
-</div>
 
-</div>
 
-</div>
 
-</div>
 
-<div id="footer_original" class="clearfix">
+
+
+
+
+
 
   - [Policies and
     Disclaimers](/policies-e.html "Policies and Disclaimers")
@@ -1467,6 +1248,6 @@ accession in the DBLINK.
   - [Contact](/contact-e.html "Contact to DDBJ Center")
   - Last modified: 2018-06-04
 
-</div>
 
-</div>
+
+
