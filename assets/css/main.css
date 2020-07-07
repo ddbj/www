@@ -511,12 +511,12 @@ input, textarea, select, button {
     .md-content .toggle-content-btn::after {
       content: "";
       display: inline-block;
-      width: 6px;
-      height: 6px;
+      width: 4px;
+      height: 4px;
       margin-left: 5px;
       margin-right: -5px;
-      border-top: 3px solid #FF7300;
-      border-right: 3px solid #FF7300;
+      border-top: 2px solid #FF7300;
+      border-right: 2px solid #FF7300;
       transform: translateY(-35%) rotate(135deg); }
     .md-content .toggle-content-btn.active::after {
       transform: rotate(315deg); }

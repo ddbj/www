@@ -14,7 +14,7 @@ category: aboutbiosample
 以下の図は BioSample がどのように他の DDBJ のデータベースとリンクしているかを示しています。 この例は、データと二つの BioSample、三つの BioProject、一つの Umbrella BioProject から構成されています。ユーザは BioProject または BioSample データベースを検索し、目的のレコードを取得、そこからのリンクをたどることによって [DDBJ](/ddbj/index.html)、[DRA](/dra/index.html) に登録されている関連する実験データを得ることができます。
 
 {::nomarkdown}
-{% include image.html url="submission/biosample_integration.jpg" caption="BioSample と他の DDBJ データベースとの連携" %}
+{% include image.html url="submission/biosample_integration.jpg" caption="BioSample と他の DDBJ データベースとの連携" class="w450" %}
 {:/}
 
 ### サンプル
@@ -50,7 +50,7 @@ DDBJ BioSample に実装された最初の辞書は [Genomics Standards Consorti
 MIxS チェックリストについては Nature Biotechnology 29, 415–420 (2011) | doi: 10.1038/nbt.1823(PMID:[21552244](https://www.ncbi.nlm.nih.gov/pubmed/21552244) ) を参照してください。
 
 {::nomarkdown}
-{% include image.html url="books/mixs.jpg" caption="MIxS チェックリスト" %}
+{% include image.html url="books/mixs.jpg" caption="MIxS チェックリスト" class="w450" %}
 {:/}
 
 ### 生物名
