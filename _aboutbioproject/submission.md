@@ -431,8 +431,8 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 
 <!-- end list -->
 
-  - [Description of novel organism]<a name="Novel_organism"></a>
-    [Taxonomy データベース](https://www.ncbi.nlm.nih.gov/Taxonomy/) への生物登録を申請するための情報を記入します。
+  - [Description of novel organism](#Novel_organism)<a name="Novel_organism"></a>
+[Taxonomy データベース](https://www.ncbi.nlm.nih.gov/Taxonomy/) への生物登録を申請するための情報を記入します。
 
 #### Environmental sample information
 
