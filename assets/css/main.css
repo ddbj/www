@@ -295,17 +295,17 @@ input, textarea, select, button {
     .internal-link > ul > li {
       font-size: 14px;
       list-style: none; }
-      .internal-link > ul > li > ul {
-        margin-left: 10px; }
-        .internal-link > ul > li > ul > li {
-          font-size: 12px;
-          list-style: none; }
-      .internal-link > ul > li a {
+    .internal-link > ul ul {
+      margin-left: 10px; }
+      .internal-link > ul ul > li {
+        font-size: 12px;
+        list-style: none; }
+      .internal-link > ul ul a {
         color: B2ACA6;
         text-decoration: none;
         display: block;
         margin-bottom: 10px; }
-        .internal-link > ul > li a.current {
+        .internal-link > ul ul a.current {
           color: #1C1B19; }
 
 .list-view > .listtitle {

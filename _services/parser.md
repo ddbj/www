@@ -28,11 +28,13 @@ Parser は、Mass Submission System (MSS) を利用して DDBJ に登録する�
   <li>
     ディレクトリが生成される<br>
     下記の要領でディレクトリの中身を見ると、以下のようになっています。<br>
-    <code>
-      $ cd jParser
-      $ ls -FC
-      jParser.sh*  jar/    license.txt resource/
-    </code>
+    <pre>
+      <code>
+$ cd jParser
+$ ls -FC
+jParser.sh*  jar/    license.txt resource/
+      </code>
+    </pre><br>
     <table>
       <tbody>
         <tr>
