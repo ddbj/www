@@ -260,7 +260,7 @@ DDBJ センターから登録者に問い合わせた後三か月以上回答が
 </div>
 
 {::nomarkdown}
-{% include image.html url="books/hbs-01.jpg" caption="BioSample の新規登録作成" %}
+{% include image.html url="books/hbs-01.jpg" caption="BioSample の新規登録作成" class="w450" %}
 {:/}
 
 BioSample を新規登録する場合は左のタブから順番に内容を英語で入力していきます。
@@ -268,7 +268,7 @@ BioSample を新規登録する場合は左のタブから順番に内容を英�
 各項目の説明は[こちら](#metadata)を参照してください。
 
 {::nomarkdown}
-{% include image.html url="books/hbs-02.jpg" caption="BioSample の登録" %}
+{% include image.html url="books/hbs-02.jpg" caption="BioSample の登録" class="w450" %}
 {:/}
 
 "SAMPLE TYPE" でサンプルの種類を選択します。ゲノム配列を取得したサンプルの場合、[MIxS 基準](#sample-attributes)を満たしたサンプル記述をする必要があります。
@@ -276,7 +276,7 @@ BioSample を新規登録する場合は左のタブから順番に内容を英�
 Sample type については[こちら](#Sample_type)を参照してください。
 
 {::nomarkdown}
-{% include image.html url="books/hbs-03.jpg" caption="Sample type の選択" %}
+{% include image.html url="books/hbs-03.jpg" caption="Sample type の選択" class="w450" %}
 {:/}
 
 Sample type に応じた属性入力用テンプレートファイルをダウンロードします。
@@ -284,7 +284,7 @@ Sample type に応じた属性入力用テンプレートファイルをダウ�
 必須・任意・ユーザが定義した一連の属性でサンプルを記述することが、登録作業の中心になります。
 
 {::nomarkdown}
-{% include image.html url="books/hbs-04.jpg" caption="サンプル属性テンプレートファイルのダウンロード" %}
+{% include image.html url="books/hbs-04.jpg" caption="サンプル属性テンプレートファイルのダウンロード" class="w450" %}
 {:/}
 
 ### 属性値の記入
@@ -377,7 +377,7 @@ information exists but can not be released openly because of privacy concerns
 Validation ルールとメッセージについては [Validation rules ページ](/biosample/validation.html)をご覧ください。
 
 {::nomarkdown}
-{% include image.html url="books/hbs-04-2.jpg" caption="BioSample の validation。この例では \"KOME-2\" の collection_date に将来の日付が記入されているエラーと geo_loc_name 中の国名と緯度経度が一致していない warning が表示されています。" %}
+{% include image.html url="books/hbs-04-2.jpg" caption="BioSample の validation。この例では \"KOME-2\" の collection_date に将来の日付が記入されているエラーと geo_loc_name 中の国名と緯度経度が一致していない warning が表示されています。" class="w500" %}
 {:/}
 
 最後の "OVERVIEW" で内容を確認したうえで投稿します。"ATTRIBUTES" で属性ファイルをダウンロードすることができます。
@@ -387,7 +387,7 @@ Validation ルールとメッセージについては [Validation rules ペー�
 </div>
 
 {::nomarkdown}
-{% include image.html url="books/hbs-05.jpg" caption="BioSample の投稿" %}
+{% include image.html url="books/hbs-05.jpg" caption="BioSample の投稿" class="w450" %}
 {:/}
 
 ### アクセッション番号
