@@ -47,7 +47,7 @@ BioSample は属性名にコントロールされた語句 ("辞書") を使う�
 
 DDBJ BioSample に実装された最初の辞書は [Genomics Standards Consortium](http://wiki.gensc.org/index.php?title=Main_Page) によって作成されたゲノム、メタゲノム、ターゲットローカスの記載を標準化するために最低限必要な情報を定めた [MIxS](http://wiki.gensc.org/index.php?title=MIxS) チェックリストです。
 
-MIxS チェックリストについては Nature Biotechnology 29, 415–420 (2011) | doi: 10.1038/nbt.1823(PMID:[21552244](https://www.ncbi.nlm.nih.gov/pubmed/21552244) ) を参照してください。
+MIxS チェックリストについては Nature Biotechnology 29, 415–420 (2011) \| doi: 10.1038/nbt.1823(PMID:[21552244](https://www.ncbi.nlm.nih.gov/pubmed/21552244) ) を参照してください。
 
 {::nomarkdown}
 {% include image.html url="books/mixs.jpg" caption="MIxS チェックリスト" class="w450" %}
@@ -76,7 +76,7 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
 
 [BioSample XML schema](https://github.com/ddbj/pub/tree/master/docs/biosample)
 
-## メタデータ
+## メタデータ<a name="metadata"></a>
 
 必須<span class="red">\*</span>  
 条件によって必須<span class="conditionally_required">\*</span>
@@ -87,105 +87,105 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
 
 登録者情報。登録に関する連絡はここに記載された E-mail アドレス宛てに行われます。 必要な人数分作成します。 連絡先情報は DDBJ スタッフが登録者に連絡するために使われ、一般に公開されることはありません。連絡先情報のかわりに研究者の所属する組織に関する情報が公開されます。
 
-  - [First name](#BioSample_First_name)<span class="red">\*</span>  
-    登録者の first name。
+[First name](#BioSample_First_name)<span class="red">\*</span><a name="BioSample_First_name"></a>  
+: 登録者の first name。
 
 <!-- end list -->
 
-  - [Last name](#BioSample_Last_name)<span class="red">\*</span>  
-    登録者の last name。
+[Last name](#BioSample_Last_name)<span class="red">\*</span><a name="BioSample_Last_name"></a>  
+: 登録者の last name。
 
 <!-- end list -->
 
-  - [E-mail](#BioSample_E-mail)<span class="red">\*</span>  
-    E-mail アドレス。所属する組織ドメインのメールアドレスを指定してください。
+[E-mail](#BioSample_E-mail)<span class="red">\*</span><a name="BioSample_E-mail"></a>  
+: E-mail アドレス。所属する組織ドメインのメールアドレスを指定してください。
 
 #### Organization
 
-  - [Organization](#Organization)  
-    コンタクトパーソンが所属する組織。
+[Organization](#Organization)<a name="Organization"></a>  
+: コンタクトパーソンが所属する組織。
 
 <!-- end list -->
 
-  - [Submitting organization](#BioSample_Submitting_organization)<span class="red">\*</span>  
-    組織のフルネーム。
+[Submitting organization](#BioSample_Submitting_organization)<span class="red">\*</span><a name="BioSample_Submitting_organization"></a>  
+: 組織のフルネーム。
 
 <!-- end list -->
 
-  - [Submitting organization URL](#BioSample_Submitting_organization_URL)  
-    登録者が所属する組織の URL。
+[Submitting organization URL](#BioSample_Submitting_organization_URL)<a name="BioSample_Submitting_organization_URL"></a>  
+: 登録者が所属する組織の URL。
 
 #### Data Release
 
 "Hold" か "Release" のどちらかを選びます。公開予定日を指定することはできません。データ公開の仕組みについては[データ公開](#sample-release)をご覧ください。
 
-  - [Release](#BioSample_Release)  
-    登録したサンプルは査定された後、公開されます。
+[Release](#BioSample_Release)<a name="BioSample_Release"></a>  
+: 登録したサンプルは査定された後、公開されます。
 
 <!-- end list -->
 
-  - [Hold](#BioSample_Hold)  
-    この BioSample ID を引用している DDBJ、DRA、DTA レコードが公開されると同時に公開されます。この BioSample ID を引用している非公開の DDBJ レコードが公開されることはありません。
+[Hold](#BioSample_Hold)<a name="BioSample_Hold"></a>  
+: この BioSample ID を引用している DDBJ、DRA、DTA レコードが公開されると同時に公開されます。この BioSample ID を引用している非公開の DDBJ レコードが公開されることはありません。
 
 ### General info
 
-  - [External Links](#Link)  
-    サンプルに直接関連するリソースの URL とそれに付けるラベル (表示名)。
+[External Links](#Link)<a name="Link"></a>  
+: サンプルに直接関連するリソースの URL とそれに付けるラベル (表示名)。
 
 <!-- end list -->
 
-  - [Link description](#Link_description)  
-    サンプルに関連するウェブサイトの表示名。
+[Link description](#Link_description)<a name="Link_description"></a>  
+: サンプルに関連するウェブサイトの表示名。
 
 <!-- end list -->
 
-  - [URL](#BioSample_URL)  
-    ウェブサイトの URL。
+[URL](#BioSample_URL)<a name="BioSample_URL"></a>  
+: ウェブサイトの URL。
 
 ### Sample type
 
 #### Core Package
 
-  - [Genome, metagenome or marker sequences (MIxS compliant)](#MIxS_Sample)  
-    ゲノム、メタゲノムやマーカー配列の場合に使用します。ゲノム、メタゲノムやマーカー配列が由来するサンプルの記載方法を標準化するため Genome Standards Consortium (GSC) が策定した属性が使われます。[MIxS](http://wiki.gensc.org/index.php?title=MIxS) が定めた必須属性があるかどうかで [MIxS](http://wiki.gensc.org/index.php?title=MIxS) を満たしているかどうかが検証されます。MIxS についての詳細は [GSC ウェブサイト](http://wiki.gensc.org/index.php?title=MIxS) をご覧ください。
+[Genome, metagenome or marker sequences (MIxS compliant)](#MIxS_Sample)<a name="MIxS_Sample"></a>  
+: ゲノム、メタゲノムやマーカー配列の場合に使用します。ゲノム、メタゲノムやマーカー配列が由来するサンプルの記載方法を標準化するため Genome Standards Consortium (GSC) が策定した属性が使われます。[MIxS](http://wiki.gensc.org/index.php?title=MIxS) が定めた必須属性があるかどうかで [MIxS](http://wiki.gensc.org/index.php?title=MIxS) を満たしているかどうかが検証されます。MIxS についての詳細は [GSC ウェブサイト](http://wiki.gensc.org/index.php?title=MIxS) をご覧ください。
 
 <!-- end list -->
 
-  - [Functional genomics samples (e.g. transcriptome, epigenetics etc)](#functional_genomics_samples)  
-    遺伝子発現、遺伝子発現制御、エピジェネティクスやゲノム変異解析等の機能ゲノミクスデータを受け付けている [Genomic Expression Archive (GEA)](/gea/index.html) への登録のためのパッケージです。機能ゲノミクス実験で頻出するサンプル属性から構成されています。
+[Functional genomics samples (e.g. transcriptome, epigenetics etc)](#functional_genomics_samples)<a name="functional_genomics_samples"></a>  
+: 遺伝子発現、遺伝子発現制御、エピジェネティクスやゲノム変異解析等の機能ゲノミクスデータを受け付けている [Genomic Expression Archive (GEA)](/gea/index.html) への登録のためのパッケージです。機能ゲノミクス実験で頻出するサンプル属性から構成されています。
 
 <!-- end list -->
 
-  - [Other samples (e.g. transcriptome, epigenetics etc)](#General_Sample)  
-    transcriptome, epigenetics など、どのようなサンプルタイプにも使用することができます。一般的な属性と登録者が作成するカスタム属性で記述されます。
+[Other samples (e.g. transcriptome, epigenetics etc)](#General_Sample)<a name="General_Sample"></a>  
+: transcriptome, epigenetics など、どのようなサンプルタイプにも使用することができます。一般的な属性と登録者が作成するカスタム属性で記述されます。
 
 #### MIxS
 
-  - [(Meta)Genomic Sequences Sample (MIMS)](#Meta_Genomic_Sequences_Sample)
+[(Meta)Genomic Sequences Sample (MIMS)](#Meta_Genomic_Sequences_Sample)<a name="Meta_Genomic_Sequences_Sample"></a>
 
-    | ------------------------------------------ |
-    | Environmental/Metagenome Genomic Sequences |
+: | ------------------------------------------ |
+  | Environmental/Metagenome Genomic Sequences |
 
     [環境サンプルの説明](/ddbj/env.html)もご参照ください。
 
 <!-- end list -->
 
-  - [Genomic Sequences Sample (MIGS)](#Genomic_Sequences_Sample)
+[Genomic Sequences Sample (MIGS)](#Genomic_Sequences_Sample)<a name="Genomic_Sequences_Sample"></a>
 
-    | --------------------------------------------- |
-    | Cultured Bacterial/Archaeal Genomic Sequences |
-    | Eukaryotic Genomic Sequences                  |
-    | Viral Genomic Sequences                       |
+: | --------------------------------------------- |
+  | Cultured Bacterial/Archaeal Genomic Sequences |
+  | Eukaryotic Genomic Sequences                  |
+  | Viral Genomic Sequences                       |
 
     特定宿主から確実に回収できる内部共生生物、多くの cyanobacteria のように容易に同定可能であるが培養ができない生物、純粋培養は不可能でも罹患植物から確実に回収できる phytoplasmas といった対象は環境サンプルとは扱いません。"Cultured Bacterial/Archaeal", "Eukaryotic", "Viral" のいずれかを選択します
 
 <!-- end list -->
 
-  - [Marker Sequences Sample (MIMARKS)](#Marker_Sequences_Sample)
+[Marker Sequences Sample (MIMARKS)](#Marker_Sequences_Sample)<a name="Marker_Sequences_Sample"></a>
 
-    | ------------------------------- |
-    | Specimen Marker Sequences       |
-    | Survey related Marker Sequences |
+: | ------------------------------- |
+  | Specimen Marker Sequences       |
+  | Survey related Marker Sequences |
 
     MIMARKS specimen: for marker gene (e.g., COI) sequences obtained from any material identifiable by means of specimens
 
@@ -197,9 +197,9 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
 
 #### Environmental package
 
-  - [Environmental package (MIxS Sample)](#Environmental_package)  
-    以下のパッケージから適切なものを選びます。パッケージ毎に必要とされる属性が追加されます。  
-    <span class="red">"Environmental/Metagenome Genomic Sequences" と "Survey related Marker Sequences" のときは No package を選択できません。</span>
+[Environmental package (MIxS Sample)](#Environmental_package)<a name="Environmental_package"></a>  
+: 以下のパッケージから適切なものを選びます。パッケージ毎に必要とされる属性が追加されます。  
+<span class="red">"Environmental/Metagenome Genomic Sequences" と "Survey related Marker Sequences" のときは No package を選択できません。</span>
 
     | --------------------------- |
     | No package                  |
@@ -220,20 +220,19 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
 
 ### Attributes
 
-  - [Sample attributes](#Sample_attributes)  
-    モデルごとにカスタマイズされた BioSample ワークシートをダウンロードします。 ワークシートはタブ区切りテキストファイルでスプレッドシートプログラムやテキストエディタで開くことができます。属性を記載したテキストファイルをアップロードすると
-    validator により内容がチェックされます。 [Warning や Error メッセージ](/biosample/validation.html) が表示された場合は必要に応じて内容を修正してから再度アップロードしてください。エラーが解消されるまで次のタブに進むことはできません。
+[Sample attributes](#Sample_attributes)<a name="Sample_attributes"></a>  
+: モデルごとにカスタマイズされた BioSample ワークシートをダウンロードします。 ワークシートはタブ区切りテキストファイルでスプレッドシートプログラムやテキストエディタで開くことができます。属性を記載したテキストファイルをアップロードすると validator により内容がチェックされます。 [Warning や Error メッセージ](/biosample/validation.html) が表示された場合は必要に応じて内容を修正してから再度アップロードしてください。エラーが解消されるまで次のタブに進むことはできません。
 
 <!-- end list -->
 
-  - [Attributes](#BioSample_Attributes)  
-    [サンプル属性のリスト](/biosample/attribute.html)  
-    必須項目に加えて、いくつかの推奨項目があります。BioSample データをより役立つものにするためにできるだけ情報を登録してください。 登録システムが一般的に使われている属性を標準化された名称とともに提供します。 登録を準備する際は[属性のリスト](/biosample/attribute.html)や[登録例](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482)を参照し、該当する項目を入力してください。 リストにない情報を持っている場合はユーザが定義した独自の属性をタブ区切りテキストファイルの末尾に追加することができます。
+[Attributes](#BioSample_Attributes)<a name="BioSample_Attributes"></a>  
+: [サンプル属性のリスト](/biosample/attribute.html)  
+必須項目に加えて、いくつかの推奨項目があります。BioSample データをより役立つものにするためにできるだけ情報を登録してください。 登録システムが一般的に使われている属性を標準化された名称とともに提供します。 登録を準備する際は[属性のリスト](/biosample/attribute.html)や[登録例](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482)を参照し、該当する項目を入力してください。 リストにない情報を持っている場合はユーザが定義した独自の属性をタブ区切りテキストファイルの末尾に追加することができます。
 
 ### Overview
 
-  - [Overview](#BioSample_Overview)  
-    登録内容を確認し問題がなければ一番下の Submit ボタンをクリックしてサンプルを投稿してください。 "Submission ID.txt" ファイルでアップロードしたサンプル属性の内容をダウンロードすることができます。
+[Overview](#BioSample_Overview)<a name="BioSample_Overview"></a>  
+: 登録内容を確認し問題がなければ一番下の Submit ボタンをクリックしてサンプルを投稿してください。 "Submission ID.txt" ファイルでアップロードしたサンプル属性の内容をダウンロードすることができます。
 
 # BioSample への登録
 
