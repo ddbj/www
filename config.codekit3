@@ -7003,6 +7003,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/assets/images/books/account_1_new.png": {
+		"ft": 32768,
+		"iS": 54731,
+		"oA": 0,
+		"oAP": "/assets/images/books/account_1_new.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/images/books/account_2.jpg": {
 		"ft": 16384,
 		"iS": 25202,

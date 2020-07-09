@@ -897,101 +897,102 @@ input, textarea, select, button {
     padding-left: 2rem;
     padding-right: 2rem; } }
 
-#Footer {
+#DDBJCommonBottomMenu > .inner, #DDBJCommonFooter > .inner {
+  margin: 0 auto;
+  max-width: 128rem; }
+  #DDBJCommonBottomMenu > .inner.-stretched, #DDBJCommonFooter > .inner.-stretched {
+    max-width: 100%; }
+
+#DDBJCommonBottomMenu {
+  padding: 3rem 0;
   text-align: center;
   background: url(../images/central-dogma.svg) repeat 50% 50%;
   background-size: 65px;
   background-attachment: fixed; }
-  #Footer > .top > .inner, #Footer > .bottom > .inner {
-    margin: 0 auto;
-    max-width: 128rem; }
-    #Footer > .top > .inner.-stretched, #Footer > .bottom > .inner.-stretched {
-      max-width: 100%; }
-  #Footer > .top {
-    padding: 3rem 0; }
-    #Footer > .top > .inner > .sitemap {
-      margin-bottom: 2rem; }
-      #Footer > .top > .inner > .sitemap > .group {
-        display: inline-block;
-        text-align: left;
-        vertical-align: top; }
-        #Footer > .top > .inner > .sitemap > .group + .group {
-          margin-left: 3rem; }
-        #Footer > .top > .inner > .sitemap > .group > .title {
-          font-size: 1.4rem;
-          line-height: 1.8; }
-        #Footer > .top > .inner > .sitemap > .group > ul {
-          font-size: 1.2rem;
-          line-height: 1.6; }
-    #Footer > .top > .inner > .information {
-      margin-bottom: 2rem; }
-      #Footer > .top > .inner > .information > ul > li {
-        display: inline-block;
-        font-size: 1.4rem;
-        vertical-align: middle; }
-        #Footer > .top > .inner > .information > ul > li + li {
-          margin-left: 3rem; }
-        #Footer > .top > .inner > .information > ul > li > a > img {
-          width: 4rem; }
-    #Footer > .top > .inner > .partners > ul > li {
-      display: inline-block; }
-      #Footer > .top > .inner > .partners > ul > li + li {
+  #DDBJCommonBottomMenu > .inner > .sitemap {
+    margin-bottom: 2rem; }
+    #DDBJCommonBottomMenu > .inner > .sitemap > .group {
+      display: inline-block;
+      text-align: left;
+      vertical-align: top; }
+      #DDBJCommonBottomMenu > .inner > .sitemap > .group + .group {
         margin-left: 3rem; }
-  #Footer > .bottom {
-    background-color: rgba(28, 27, 25, 0.8); }
-    #Footer > .bottom > .inner > .links {
-      padding: 1.6rem 0; }
-      #Footer > .bottom > .inner > .links > ul > li {
-        display: inline-block; }
-        #Footer > .bottom > .inner > .links > ul > li + li {
-          margin-left: 2rem; }
-        #Footer > .bottom > .inner > .links > ul > li a {
-          color: white;
-          font-size: 1.2;
-          line-height: 2; }
-        #Footer > .bottom > .inner > .links > ul > li address {
-          font-style: normal; }
+      #DDBJCommonBottomMenu > .inner > .sitemap > .group > .title {
+        font-size: 1.4rem;
+        line-height: 1.8; }
+      #DDBJCommonBottomMenu > .inner > .sitemap > .group > ul {
+        font-size: 1.2rem;
+        line-height: 1.6; }
+  #DDBJCommonBottomMenu > .inner > .information {
+    margin-bottom: 2rem; }
+    #DDBJCommonBottomMenu > .inner > .information > ul > li {
+      display: inline-block;
+      font-size: 1.4rem;
+      vertical-align: middle; }
+      #DDBJCommonBottomMenu > .inner > .information > ul > li + li {
+        margin-left: 3rem; }
+      #DDBJCommonBottomMenu > .inner > .information > ul > li > a > img {
+        width: 4rem; }
+  #DDBJCommonBottomMenu > .inner > .partners > ul > li {
+    display: inline-block; }
+    #DDBJCommonBottomMenu > .inner > .partners > ul > li + li {
+      margin-left: 3rem; }
+
+#DDBJCommonFooter {
+  background-color: rgba(28, 27, 25, 0.8); }
+  #DDBJCommonFooter > .inner > .links {
+    padding: 1.6rem 0; }
+    #DDBJCommonFooter > .inner > .links > ul > li {
+      display: inline-block; }
+      #DDBJCommonFooter > .inner > .links > ul > li + li {
+        margin-left: 2rem; }
+      #DDBJCommonFooter > .inner > .links > ul > li a {
+        color: white;
+        font-size: 1.2;
+        line-height: 2; }
+      #DDBJCommonFooter > .inner > .links > ul > li address {
+        font-style: normal; }
 
 @media screen and (max-width: 480px) {
-  #Footer > .top > .inner, #Footer > .bottom > .inner {
+  #DDBJCommonBottomMenu > .inner, #DDBJCommonFooter > .inner {
     width: auto; }
-  #Footer > .top > .inner > .sitemap {
+  #DDBJCommonBottomMenu > .inner > .sitemap {
     display: flex;
     flex-wrap: wrap;
     padding: 0 2rem; }
-    #Footer > .top > .inner > .sitemap > .group {
+    #DDBJCommonBottomMenu > .inner > .sitemap > .group {
       width: 50%;
       margin-bottom: 1rem; }
-      #Footer > .top > .inner > .sitemap > .group + .group {
+      #DDBJCommonBottomMenu > .inner > .sitemap > .group + .group {
         margin-left: 0; }
-      #Footer > .top > .inner > .sitemap > .group > ul > li > a {
+      #DDBJCommonBottomMenu > .inner > .sitemap > .group > ul > li > a {
         padding: .4rem 0;
         display: block; }
-  #Footer > .top > .inner > .information > ul {
+  #DDBJCommonBottomMenu > .inner > .information > ul {
     display: flex;
     justify-content: space-around;
     align-items: center; }
-    #Footer > .top > .inner > .information > ul > li + li {
+    #DDBJCommonBottomMenu > .inner > .information > ul > li + li {
       margin-left: 0; }
-  #Footer > .top > .inner > .partners > ul {
+  #DDBJCommonBottomMenu > .inner > .partners > ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap; }
-    #Footer > .top > .inner > .partners > ul > li {
+    #DDBJCommonBottomMenu > .inner > .partners > ul > li {
       padding: 1rem 2rem; }
-      #Footer > .top > .inner > .partners > ul > li + li {
+      #DDBJCommonBottomMenu > .inner > .partners > ul > li + li {
         margin-left: 0; }
-  #Footer > .bottom > .inner > .links > ul {
+  #DDBJCommonFooter > .inner > .links > ul {
     display: flex;
     flex-wrap: wrap; }
-    #Footer > .bottom > .inner > .links > ul > li {
+    #DDBJCommonFooter > .inner > .links > ul > li {
       text-align: left;
       width: 50%;
       display: block; }
-      #Footer > .bottom > .inner > .links > ul > li + li {
+      #DDBJCommonFooter > .inner > .links > ul > li + li {
         margin-left: 0; }
-      #Footer > .bottom > .inner > .links > ul > li > a, #Footer > .bottom > .inner > .links > ul > li > address > a {
+      #DDBJCommonFooter > .inner > .links > ul > li > a, #DDBJCommonFooter > .inner > .links > ul > li > address > a {
         display: block;
         padding: 0.8rem 2rem; } }
 
