@@ -402,7 +402,7 @@ smart URL      | http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold itali
       <td><a href="/ddbj/mga.html">Mass sequence for Genome Annotation(MGA)</a></td>
     </tr>
     <tr>
-      <th rowspan="5">Protein系</th>
+      <th rowspan="5" class="borderbtm">Protein系</th>
       <th>aa</th>
       <td>DAD, Patent, UniProt, PDB </td>
       <td>4つのデータベースをこの順番で検索
