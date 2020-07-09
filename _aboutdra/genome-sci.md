@@ -15,15 +15,15 @@ category: aboutdra
 
 ### BioProject
 
-[BioProject_template_20150408.xlsx](/files/submission/BioProject_template_20150408.xlsx)
+[BioProject_template_20150408.xlsx]({{ site.baseurl }}/assets/files/submission/BioProject_template_20150408.xlsx)
 
 ### BioSample
 
-[BioSample_template_20150408.xlsx](/files/submission/BioSample_template_20150408.xlsx)
+[BioSample_template_20150408.xlsx]({{ site.baseurl }}/assets/files/submission/BioSample_template_20150408.xlsx)
 
 ### DRA
 
-[DRA_template_20180730.xlsx](/files/submission/DRA_template_20180730.xlsx)
+[DRA_template_20180730.xlsx]({{ site.baseurl }}/assets/files/submission/DRA_template_20180730.xlsx)
 
 ## 研究費情報の記載 <a name="grant"></a>
 

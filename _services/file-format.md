@@ -982,8 +982,6 @@ check)でチェックすることが可能です。
 
 各カラムにおける記述内容（カラム 1 - カラム 5）
 
-component: より大きな配列を構築するために使用される配列 (ピースエントリ)
-{: .tablecaption}
 <table>
   <thead>
     <tr>
@@ -1056,13 +1054,13 @@ component: より大きな配列を構築するために使用される配列 (�
     </tr>
   </tbody>
 </table>
+\* component: より大きな配列を構築するために使用される配列 (ピースエントリ)
+{: .tablecaption}
 
 <span class="icon_d-triangle">6 以降のカラムは、カラム 5 の value に依存して記述内容が異なります。</span>
 
 各カラムにおける記述内容（カラム 6 - カラム 9）：カラム 5 が "N"と"U"以外の場合
 
-component: より大きな配列を構築するために使用される配列 (ピースエントリ)
-{: .tablecaption}
 <table>
   <thead>
     <tr>
@@ -1117,6 +1115,8 @@ component: より大きな配列を構築するために使用される配列 (�
     </tr>
   </tbody>
 </table>
+\* component: より大きな配列を構築するために使用される配列 (ピースエントリ)
+{: .tablecaption}
 
   - 長さが判明していないギャップ領域については、一律 100 個の n で記述する規則となっています。 component\_type の
     value に"U"、gap\_length の value に "100" と記載します。
