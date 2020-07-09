@@ -45,7 +45,7 @@ In the [Sample scope](#BioProject_Sample_scope), [Material](#Material)and [Captu
 
 A series of publications can be listed in the [Publication](#Publication).
 
-### Primary and Umbrella projects
+### Primary and Umbrella projects<a name="primary-and-umbrella"></a>
 
 There are two basic types of projects; primary and umbrella projects.
 
@@ -185,7 +185,7 @@ An informative paragraph that describes the project and provides informative con
 
 <!-- end list -->
 
-  - [Private comments to DDBJ staff](#Private_comments)  
+  - [Private comments to DDBJ staff](#Private_comments)<a name="Private_comments"></a>  
     Use this field if you have questions for database support staff. The content is not made public. If you intend to submit an umbrella project, please inform us that "this is umbrella project".
 
 <!-- end list -->
@@ -208,7 +208,7 @@ An informative paragraph that describes the project and provides informative con
   - [Relevance description](#Relevance_description)<span class="conditionally_required">\*</span>  
     Describe the relevance when the Other is selected.
 
-#### Umbrella BioProject
+#### Umbrella BioProject<a name="Area_linked-project"></a>
 
 If you are registering a project that is part of an initiative which is already registered in the BioProject database, then please tell us the existing BioProject accession number and provide a general description of the larger initiative. This information is needed for [project linking](#primary-and-umbrella).
 
