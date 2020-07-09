@@ -130,10 +130,22 @@ JGA XML schema: [JGA xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
 JGA メタデータのうち以下のオブジェクトは登録の概要を示すため，データの提供開始後に公開されます。
 
-  : Submission: 登録者の連絡先以外の全ての内容
-  : Study: 全ての内容
-  : Data set: 全ての内容と含まれる Sample 数とファイルサイズ。
-  : Policy: 全ての内容
+{::options parse_block_html="true" /}
+<div class="dl-list">
+
+Submission: 
+: 登録者の連絡先以外の全ての内容
+
+Study: 
+: 全ての内容
+
+Data set: 
+: 全ての内容と含まれる Sample 数とファイルサイズ。
+
+Policy: 
+: 全ての内容
+
+</div>
 
 ### Submission
 

@@ -221,13 +221,13 @@ Use this tool in Java 8. This tool does not work in Java 7.
 
 #### Windows
 
-[AGD download tool for Windows](/files/submission/3-5-0/AGD_tool.zip)
+[AGD download tool for Windows]({{ site.baseurl }}/assets/files/submission/3-5-0/AGD_tool.zip)
 
 Run the tool by clicking the "bat" file in the folder.
 
 #### Unix
 
-[AGD download tool for Unix](/files/submission/3-5-0/AGD_tool_unix.zip)
+[AGD download tool for Unix]({{ site.baseurl }}/assets/files/submission/3-5-0/AGD_tool_unix.zip)
 
 Run the tool by executing the sh file in the directory.
 

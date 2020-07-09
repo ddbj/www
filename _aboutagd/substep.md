@@ -25,7 +25,7 @@ category: aboutagd
 
 メタデータ記入用エクセルファイルを下記よりダウンロードし、内容を英語で記入してください。メタデータの説明は[こちらのページ](/agd/submission.html)をご参考ください。
 
-[![AGD メタデータ記入用エクセル]({{ site.baseurl }}/assets/images/parts/download.png "AGD メタデータ記入用エクセル"){:.w40}.](/files/submission/AGD_metadata.xlsx)
+[![AGD メタデータ記入用エクセル]({{ site.baseurl }}/assets/images/parts/download.png "AGD メタデータ記入用エクセル"){:.w40}.]({{ site.baseurl }}/assets/files/submission/AGD_metadata.xlsx)
 
 last updated: 2017-08-18
 
@@ -57,7 +57,7 @@ Java 8 で実行してください。Java 7 では動作しません。[プロ�
 
 #### Windows
 
-[Windows 用 AGD submission tool](/files/submission/3-5-0/AGD_tool.zip)
+[Windows 用 AGD submission tool]({{ site.baseurl }}/assets/files/submission/3-5-0/AGD_tool.zip)
 
 展開したフォルダに含まれる bat ファイルをダブルクリックして起動。
 
@@ -65,7 +65,7 @@ Java 8 で実行してください。Java 7 では動作しません。[プロ�
 
 #### Unix
 
-[Unix 用 AGD submission tool](/files/submission/3-5-0/AGD_tool_unix.zip)
+[Unix 用 AGD submission tool]({{ site.baseurl }}/assets/files/submission/3-5-0/AGD_tool_unix.zip)
 
 展開したフォルダに含まれる sh ファイルをシェルで実行して起動。
 
@@ -211,7 +211,7 @@ AGD ツールでの転送に多大な時間を要する，ファイル選択画�
 
 AGD データ暗号化ツールを使ってデータファイルを暗号化し，ディスクにコピーし郵送します。XML メタデータファイルは AGD Submission Tool でアップロードし，ディスクに含めないでください。
 
-[![AGD データ暗号化ツール]({{ site.baseurl }}/assets/images/parts/download.png "AGD データ暗号化ツール"){:.w40}.](/files/submission/agd-data-encrypt.tar.gz)
+[![AGD データ暗号化ツール]({{ site.baseurl }}/assets/images/parts/download.png "AGD データ暗号化ツール"){:.w40}.]({{ site.baseurl }}/assets/files/submission/agd-data-encrypt.tar.gz)
 
 last updated: 2017-01-26
 
@@ -293,6 +293,11 @@ AGD にデータを登録するためには「暗号化された対象ファイ�
 
 USB 接続のハードディスクにデータをコピーし，<span class="red">宛先が記入された返送用の着払い伝票を同封して</span>下記宛にお送りください。<span class="red">ハードディスクにラベルを貼って区別しやすくすることを推奨いたします。</span>
 
+{::options parse_block_html="true" /}
+<address>
+
 〒411-8540  
 静岡県三島市谷田1111 国立遺伝学研究所 生命情報研究センター W201 AGD 担当  
 電話:055-981-6853
+
+</address>

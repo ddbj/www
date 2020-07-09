@@ -73,11 +73,11 @@ BioProject は同じプロジェクトに由来するデータ，それからま
 {% include image.html url="submission/bp_org.jpg" caption="階層構造の模式図。(A)二階層 (B)三階層" class="w500" %}
 {:/}
 
-  : 二階層 (A)  
-    コンソーシアムは１つのアンブレラプロジェクトとデータにリンクされた１つ以上のプライマリープロジェクトから構成されます。例: [Neanderthal Metagenome](https://www.ncbi.nlm.nih.gov/bioproject/18309)
+二階層 (A)  
+: コンソーシアムは１つのアンブレラプロジェクトとデータにリンクされた１つ以上のプライマリープロジェクトから構成されます。例: [Neanderthal Metagenome](https://www.ncbi.nlm.nih.gov/bioproject/18309)
 
-  : 三階層 (B)  
-    いくつかのサブプロジェクトを持つ巨大プロジェクトは二階層のアンブレラプロジェクトで構成することができます。最上位のアンブレラプロジェクトでコンソーシアム全体を表し，中位レベルのアンブレラプロジェクトでプロジェクトのコンポーネントを表し，最下段の複数のプライマリープロジェクトで異なるプロジェクトのデータタイプを表す場合などです。例: [NIH Human Microbiome Project (HMP) Roadmap Project](https://www.ncbi.nlm.nih.gov/bioproject/43021)
+三階層 (B)  
+: いくつかのサブプロジェクトを持つ巨大プロジェクトは二階層のアンブレラプロジェクトで構成することができます。最上位のアンブレラプロジェクトでコンソーシアム全体を表し，中位レベルのアンブレラプロジェクトでプロジェクトのコンポーネントを表し，最下段の複数のプライマリープロジェクトで異なるプロジェクトのデータタイプを表す場合などです。例: [NIH Human Microbiome Project (HMP) Roadmap Project](https://www.ncbi.nlm.nih.gov/bioproject/43021)
 
 ### データ公開
 
@@ -130,7 +130,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 
 登録者情報。登録に関する連絡はここに記載された E-mail アドレス宛てに行われます。 必要な人数分作成します。 連絡先情報は DDBJ BioProject スタッフが登録者に連絡するために使われ，一般に公開されることはありません。連絡先情報の代わりに研究者の所属する組織に関する情報が公開されます。
 
-  - [First name](#BioProject_First_name)  
+  - [First name](#BioProject_First_name) 
     登録者の first name。
 
 <!-- end list -->

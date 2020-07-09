@@ -177,8 +177,6 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZxIfewrk8lI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[](//www.youtube-nocookie.com/embed/ZxIfewrk8lI?autohide=1&iv_load_policy=3&modestbranding=1&rel=0&wmode=transparent&autoplay=1 "DRA への登録 ～データの転送 (Windows)～")
-
 DRA への登録 ～データの転送 (Windows)～
 
 [WinSCP (http://winscp.net/eng/download.php)](http://winscp.net/eng/download.php) をインストールし、起動します。
@@ -224,8 +222,6 @@ DRA への登録 ～データの転送 (Windows)～
 <div class="accordion-content">
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/A2hPlGZEW_o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-[](//www.youtube-nocookie.com/embed/A2hPlGZEW_o?autohide=1&iv_load_policy=3&modestbranding=1&rel=0&wmode=transparent&autoplay=1 "DRA への登録 ～データの転送 (Mac)～")
 
 DRA への登録 ～データの転送 (Mac)～
 

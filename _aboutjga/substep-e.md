@@ -226,7 +226,7 @@ Download and fill in the metadata in English. For the JGA metadata, see
 [this page](/jga/submission-e.html).
 
 [![JGA metadata excel](/images/parts/download.png
-"JGA metadata excel")](/files/submission/JGA_metadata.xlsx)
+"JGA metadata excel")]({{ site.baseurl }}/assets/files/submission/JGA_metadata.xlsx)
 
 last updated: 2017-08-18
 
@@ -278,7 +278,7 @@ use in the proxy envinronment.](#How_to_use_in_the_proxy_environment)
 
 #### Windows
 
-[JGA submission tool (Windows)](/files/submission/3-5-0/JGA_tool.zip)
+[JGA submission tool (Windows)]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool.zip)
 
 Execute the tool by double clicking the bat file in the expanded files.
 
@@ -287,7 +287,7 @@ Execute the tool by double clicking the bat file in the expanded files.
 
 #### Unix
 
-[JGA submission tool (Unix)](/files/submission/3-5-0/JGA_tool_unix.zip)
+[JGA submission tool (Unix)]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool_unix.zip)
 
 Excecute the sh file by shell in the expanded files.
 
@@ -521,7 +521,7 @@ them into the hard disk. Upload the XML files by using the JGA
 submission tool and do not include them in the disk.
 
 [![JGA data encryption tool](/images/parts/download.png
-"JGA data encryption tool")](/files/submission/jga-data-encrypt.tar.gz)
+"JGA data encryption tool")]({{ site.baseurl }}/assets/files/submission/jga-data-encrypt.tar.gz)
 
 last updated: 2015-12-09
 

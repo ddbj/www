@@ -31,7 +31,7 @@ Java 8 で実行してください。Java 7 では動作しません。 [プロ�
 
 #### Windows
 
-[Windows 用 JGA submission tool](/files/submission/3-5-0/JGA_tool.zip)
+[Windows 用 JGA submission tool]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool.zip)
 
 展開したフォルダに含まれる bat ファイルをダブルクリックして起動。
 
@@ -39,7 +39,7 @@ Java 8 で実行してください。Java 7 では動作しません。 [プロ�
 
 #### Unix
 
-[Unix 用 JGA submission tool](/files/submission/3-5-0/JGA_tool_unix.zip)
+[Unix 用 JGA submission tool]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool_unix.zip)
 
 展開したフォルダに含まれる sh ファイルをシェルで実行して起動。
 
@@ -156,9 +156,14 @@ JGA tool と同様，NBDC から通知される利用アカウントのユーザ
 
 <span class="red">宛先が記入された返送用の着払い伝票を同封して</span>下記宛にお送りください。<span class="red">ハードディスクにラベルを貼って区別しやすくすることを推奨いたします。</span>
 
+{::options parse_block_html="true" /}
+<address>
+
 〒411-8540  
 静岡県三島市谷田1111 国立遺伝学研究所 生命情報研究センター W201 JGA 担当 児玉 悠一  
 電話:055-981-6853
+
+</address>
 
 ## データの CUI tool によるダウンロード
 
@@ -168,7 +173,7 @@ JGA CUI download tool (最終更新日: 2018-04-16，v3.5.0) をダウンロー�
 
 #### Unix
 
-[Unix 用 JGA tool](/files/submission/3-5-0/JGA_tool_unix.zip)
+[Unix 用 JGA tool]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool_unix.zip)
 
 ### ログイン
 

@@ -26,7 +26,7 @@ JGA 全体の説明については[こちらの資料](https://drive.google.com/
 
 メタデータ記入用エクセルファイルを下記よりダウンロードし、内容を英語で記入してください。メタデータの説明は[こちらのページ](/jga/submission.html)をご参考ください。
 
-[![JGA メタデータ記入用エクセル]({{ site.baseurl }}/assets/images/parts/download.png "JGA メタデータ記入用エクセル"){:.w40}.](/files/submission/JGA_metadata.xlsx)
+[![JGA メタデータ記入用エクセル]({{ site.baseurl }}/assets/images/parts/download.png "JGA メタデータ記入用エクセル"){:.w40}.]({{ site.baseurl }}/assets/files/submission/JGA_metadata.xlsx)
 
 last updated: 2019-06-07
 
@@ -58,7 +58,7 @@ Java 8 で実行してください。Java 7 では動作しません。[プロ�
 
 #### Windows
 
-[Windows 用 JGA submission tool](/files/submission/3-5-0/JGA_tool.zip)
+[Windows 用 JGA submission tool]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool.zip)
 
 展開したフォルダに含まれる bat ファイルをダブルクリックして起動。
 
@@ -66,7 +66,7 @@ Java 8 で実行してください。Java 7 では動作しません。[プロ�
 
 #### Unix
 
-[Unix 用 JGA submission tool](/files/submission/3-5-0/JGA_tool_unix.zip)
+[Unix 用 JGA submission tool]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool_unix.zip)
 
 展開したフォルダに含まれる sh ファイルをシェルで実行して起動。
 
@@ -221,7 +221,7 @@ JGA 担当者に事前連絡してからディスクを送付するようにし�
 
 JGA データ暗号化ツールを使ってデータファイルを暗号化し，ディスクにコピーし郵送します。XML メタデータファイルは JGA Submission Tool でアップロードし，ディスクに含めないでください。
 
-[![JGA データ暗号化ツール]({{ site.baseurl }}/assets/images/parts/download.png "JGA データ暗号化ツール"){:.w40}.](/files/submission/jga-data-encrypt.tar.gz)
+[![JGA データ暗号化ツール]({{ site.baseurl }}/assets/images/parts/download.png "JGA データ暗号化ツール"){:.w40}.]({{ site.baseurl }}/assets/files/submission/jga-data-encrypt.tar.gz)
 
 last updated: 2015-12-09
 
@@ -304,6 +304,11 @@ JGA にデータを登録するためには「暗号化された対象ファイ�
 
 USB 接続のハードディスクにデータをコピーし，<span class="red">宛先が記入された返送用の着払い伝票を同封して</span>下記宛にお送りください。<span class="red">ハードディスクにラベルを貼って区別しやすくすることを推奨いたします。</span>
 
+{::options parse_block_html="true" /}
+<address>
+
 〒411-8540  
 静岡県三島市谷田1111 国立遺伝学研究所 生命情報研究センター W201 JGA 担当者  
 電話:055-981-6853
+
+</address>
