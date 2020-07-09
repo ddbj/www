@@ -79,7 +79,7 @@ BioProject は同じプロジェクトに由来するデータ，それからま
 三階層 (B)  
 : いくつかのサブプロジェクトを持つ巨大プロジェクトは二階層のアンブレラプロジェクトで構成することができます。最上位のアンブレラプロジェクトでコンソーシアム全体を表し，中位レベルのアンブレラプロジェクトでプロジェクトのコンポーネントを表し，最下段の複数のプライマリープロジェクトで異なるプロジェクトのデータタイプを表す場合などです。例: [NIH Human Microbiome Project (HMP) Roadmap Project](https://www.ncbi.nlm.nih.gov/bioproject/43021)
 
-### データ公開
+### データ公開<a name="data-release"></a>
 
 {::nomarkdown}
 {% include image.html url="submission/release_re.jpg" caption="プライマリープロジェクトとデータレコードの公開の仕組み" class="w500" %}
@@ -119,7 +119,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 
 <span class="red">公開されているアンブレラに関連付けたことによって非公開のプライマリープロジェクトが公開されることはありません。</span>
 
-## メタデータ
+## メタデータ<a name="metadata"></a>
 
 必須<span class="red">\*</span>  
 条件によって必須<span class="conditionally_required">\*</span>
@@ -222,7 +222,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 
 プロジェクトに直接関連するリソースの URL とそれに付ける表示名。
 
-[Link description](#URL_link_description)<a name="Link description"></a>  
+[Link description](#URL_link_description)<a name="URL_link_description"></a>  
 : プロジェクトに関連するウェブサイトの表示名。
 
 <!-- end list -->
@@ -259,7 +259,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 
 <!-- end list -->
 
-[Consortium URL](#Consortium_URL)<a name="Consortium URL"></a>  
+[Consortium URL](#Consortium_URL)<a name="Consortium_URL"></a>  
 : コンソーシアムのウェブサイトがある場合そのサイトの URL を記入します。
 
 ### Project type
@@ -271,23 +271,21 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 
 NCBI ではプロジェクトにリンクしている実験データから独自に [Project data type](https://www.ncbi.nlm.nih.gov/books/NBK54364/def-item/project-data-type/) を割り振っています。また，[EBI](https://www.ebi.ac.uk/ena/submit/project-format) では Project data type を使用していません。
 
-
-    | Project Data type                | Description                                                                                    |
-    | -------------------------------- | ---------------------------------------------------------------------------------------------- |
-    | Genome Sequencing                | 全ゲノムや部分ゲノム塩基配列決定プロジェクト (ゲノムアセンブリの有無は問わない)                                                      |
-    | Clone Ends                       | クローンエンド塩基配列決定プロジェクト                                                                            |
-    | Epigenomics                      | メチル化, ヒストン修飾, クロマチン構造に関するデータセット                                                                |
-    | Exome                            | エクソームリシークエンシングプロジェクト                                                                           |
-    | Map                              | 塩基配列ではないマップデータをもたらすプロジェクト (genetic map, radiation hybrid map, cytogenetic map, optical map など) |
-    | Metagenome                       | 環境サンプルの配列解析                                                                                    |
-    | Phenotype and Genotype           | 表現型と遺伝子型の相関を解析するプロジェクト                                                                         |
-    | Proteome                         | マススペクトロメトリー解析を含む大規模プロテオミクス実験                                                                   |
-    | Random Survey                    | ランダムに収集した (対象の包括的なサンプリングを目的としていない) サンプルから得られた配列                                                |
-    | Targeted Locus (Loci)            | 特定の遺伝子座 (16S rRNA など) の塩基配列決定プロジェクト                                                            |
-    | Transcriptome or Gene Expression | cDNA, EST, RNA-seq, マイクロアレイ実験を含む大規模 RNA 塩基配列決定や発現解析                                            |
-    | Variation                        | 集団間に存在する大小の変異を同定することを目的としたプロジェクト                                                               |
-    | Other                            | ”Project data type description” に Project Data Type を記入します。                                    |
-
+| Project Data type                | Description                                                                                    |
+| -------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Genome Sequencing                | 全ゲノムや部分ゲノム塩基配列決定プロジェクト (ゲノムアセンブリの有無は問わない)                                                      |
+| Clone Ends                       | クローンエンド塩基配列決定プロジェクト                                                                            |
+| Epigenomics                      | メチル化, ヒストン修飾, クロマチン構造に関するデータセット                                                                |
+| Exome                            | エクソームリシークエンシングプロジェクト                                                                           |
+| Map                              | 塩基配列ではないマップデータをもたらすプロジェクト (genetic map, radiation hybrid map, cytogenetic map, optical map など) |
+| Metagenome                       | 環境サンプルの配列解析                                                                                    |
+| Phenotype and Genotype           | 表現型と遺伝子型の相関を解析するプロジェクト                                                                         |
+| Proteome                         | マススペクトロメトリー解析を含む大規模プロテオミクス実験                                                                   |
+| Random Survey                    | ランダムに収集した (対象の包括的なサンプリングを目的としていない) サンプルから得られた配列                                                |
+| Targeted Locus (Loci)            | 特定の遺伝子座 (16S rRNA など) の塩基配列決定プロジェクト                                                            |
+| Transcriptome or Gene Expression | cDNA, EST, RNA-seq, マイクロアレイ実験を含む大規模 RNA 塩基配列決定や発現解析                                            |
+| Variation                        | 集団間に存在する大小の変異を同定することを目的としたプロジェクト                                                               |
+| Other                            | ”Project data type description” に Project Data Type を記入します。                                    |
 
 <!-- end list -->
 
@@ -549,7 +547,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 
 <!-- end list -->
 
-[Biotic Relationship](#BioticRelationship)  
+[Biotic Relationship](#BioticRelationship)<a name="BioticRelationship"></a>  
 : 選択肢から BioticRelationship を選びます。
 
     | BioticRelationship |
@@ -565,7 +563,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 
 <!-- end list -->
 
-[Trophic Level](#TrophicLevel)  
+[Trophic Level](#TrophicLevel)<a name="TrophicLevel"></a>  
 : 選択肢から TrophicLevel を選びます。
 
     | TrophicLevel |
@@ -578,7 +576,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 
 対象が原核生物の場合，形態について分かっている情報を記載してください。
 
-[Shape](#Shape)  
+[Shape](#Shape)<a name="Shape"></a>  
 : 該当する全てのオプションを選びます。
 
     | Shape        | Description                                          |
@@ -596,7 +594,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 
 <!-- end list -->
 
-[Gram](#Gram)  
+[Gram](#Gram)<a name="Gram"></a>  
 : 選択肢からグラム陽性か陰性から選びます。
 
     | Gram     |
@@ -606,7 +604,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 
 <!-- end list -->
 
-[Motility](#Motility)  
+[Motility](#Motility)<a name="Motility"></a>  
 : 選択肢から Motility を選びます。
 
     | Motility |
@@ -616,7 +614,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 
 <!-- end list -->
 
-[Enveloped](#Enveloped)  
+[Enveloped](#Enveloped)<a name="Enveloped"></a>  
 : 対象生物の Envelope の有無を選択します。
 
     | Enveloped |
@@ -626,7 +624,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 
 <!-- end list -->
 
-[Endospores](#Endospores)  
+[Endospores](#Endospores)<a name="Endospores"></a>  
 : 対象生物が Endospores を形成するかどうかを選択します。
 
     | Endospores |
@@ -638,7 +636,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 
 生息環境。好極限性に関して分かっていることがあれば追加情報として記載します。
 
-[Habitat](#Habitat)  
+[Habitat](#Habitat)<a name="Habitat"></a>  
 : 選択肢から Habitat を選択します。
 
     | Habitat        |
@@ -652,7 +650,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 
 <!-- end list -->
 
-[Salinity](#Salinity)  
+[Salinity](#Salinity)<a name="Salinity"></a>  
 : 選択肢から Salinity を選びます。
 
     | Salinity           |
@@ -665,7 +663,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 
 <!-- end list -->
 
-[Oxygen requirement](#OxygenReq)  
+[Oxygen requirement](#OxygenReq)<a name="OxygenReq"></a>  
 : 酸素要求性を選択します。
 
     | OxygenReq       |
@@ -678,7 +676,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 
 <!-- end list -->
 
-[Temperature range](#TemperatureRange)  
+[Temperature range](#TemperatureRange)<a name="TemperatureRange"></a>  
 : 生息温度での分類を選びます。
 
     | TemperatureRange  |
@@ -692,91 +690,91 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 
 <!-- end list -->
 
-[Optimum Temperature](#OptimumTemperature)  
+[Optimum Temperature](#OptimumTemperature)<a name="OptimumTemperature"></a>  
 : 生息の最適温度を Celsius で記入します。
 
 ### Publication<a name="Publication"></a>
 
-[PubMed ID](#BioProject_PubMed_ID)  
+[PubMed ID](#BioProject_PubMed_ID)<a name="BioProject_PubMed_ID"></a>  
 : 文献の PubMed ID(s)。
 
-    ```
-    <Publication id="15557739">
-        <DbType>ePubmed</DbType>
-    </Publication>
-    <ProjectReleaseDate> ...
-    ```
+```
+<Publication id="15557739">
+    <DbType>ePubmed</DbType>
+</Publication>
+<ProjectReleaseDate> ...
+```
 
 <!-- end list -->
 
-[DOI](#BioProject_DOI)  
+[DOI](#BioProject_DOI)<a name="BioProject_DOI"></a>  
 : PubMed ID がない場合は DOI を記入し，さらに文献に関する以下の情報を記入します。
 
-    ```
-    <Publication id="10.1093/nar/gku1120">
-        <DbType>eDOI</DbType>
-    </Publication>
-    <ProjectReleaseDate> ...
-    ```
+```
+<Publication id="10.1093/nar/gku1120">
+    <DbType>eDOI</DbType>
+</Publication>
+<ProjectReleaseDate> ...
+```
 
 <!-- end list -->
 
-[Reference title](#BioProject_Reference_title)<span class="red">\*</span>  
+[Reference title](#BioProject_Reference_title)<span class="red">\*</span><a name="BioProject_Reference_title"></a>  
 : 論文のタイトル。
 
 <!-- end list -->
 
-[Journal title](#BioProject_Journal_title)<span class="red">\*</span>  
+[Journal title](#BioProject_Journal_title)<span class="red">\*</span><a name="BioProject_Journal_title"></a>  
 : 雑誌のタイトル。
 
 <!-- end list -->
 
-[Year](#BioProject_Year)<span class="red">\*</span>  
+[Year](#BioProject_Year)<span class="red">\*</span><a name="BioProject_Year"></a>  
 : 出版年。
 
 <!-- end list -->
 
-[Volume](#BioProject_Volume)<span class="red">\*</span>  
+[Volume](#BioProject_Volume)<span class="red">\*</span><a name="BioProject_Volume"></a>  
 : 雑誌の巻。
 
 <!-- end list -->
 
-[Issue](#BioProject_Issue)<span class="red">\*</span>  
+[Issue](#BioProject_Issue)<span class="red">\*</span><a name="BioProject_Issue"></a>  
 : 雑誌の号。
 
 <!-- end list -->
 
-[Pages from](#BioProject_Pages_from)<span class="red">\*</span>  
+[Pages from](#BioProject_Pages_from)<span class="red">\*</span><a name="BioProject_Pages_from"></a>  
 : 論文の開始ページ。
 
 <!-- end list -->
 
-[Pages to](#BioProject_Pages_to)<span class="red">\*</span>  
+[Pages to](#BioProject_Pages_to)<span class="red">\*</span><a name="BioProject_Pages_to"></a>  
 : 論文の終了ページ。
 
 <!-- end list -->
 
-[First name](#BioProject_First_name_publication)<span class="red">\*</span>  
+[First name](#BioProject_First_name_publication)<span class="red">\*</span><a name="BioProject_First_name_publication"></a>  
 : 著者の first name。
 
 <!-- end list -->
 
-[MI](#BioProject_MI)  
+[MI](#BioProject_MI)<a name="BioProject_MI"></a>  
 : ミドルイニシャル。
 
 <!-- end list -->
 
-[Last name](#BioProject_Last_name_publication)<span class="red">\*</span>  
+[Last name](#BioProject_Last_name_publication)<span class="red">\*</span><a name="BioProject_Last_name_publication"></a>  
 : 著者の last name。
 
 <!-- end list -->
 
-[Suffix](#BioProject_Suffix)  
+[Suffix](#BioProject_Suffix)<a name="BioProject_Suffix"></a>  
 : 著者の称号。
 
 <!-- end list -->
 
-[This publication has multiple authors](#BioProject_This_publication_has_multiple_authors)  
+[This publication has multiple authors](#BioProject_This_publication_has_multiple_authors)<a name="BioProject_This_publication_has_multiple_authors"></a>  
 : この項目をチェックすると記入された著者名の後に "et al" が付加されます。
 
 ### XML スキーマ
@@ -887,7 +885,7 @@ prefix は NCBI が一括管理しています。プロジェクトを投稿す�
 {% include image.html url="books/hbp-06.jpg" caption="アンブレラへのリンク" class="w450" %}
 {:/}
 
-### プロジェクトの公開
+### プロジェクトの公開<a name="project-release"></a>
 
 以下の選択肢があります:
 
