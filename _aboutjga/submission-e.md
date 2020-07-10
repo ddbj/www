@@ -55,7 +55,7 @@ Primary sequence data submissions of single and paired reads are accepted as [Fa
   - Quality scores must be in [Phred](http://en.wikipedia.org/wiki/Phred_quality_score) scale. For example, quality scores from early Solexa pipelines must be converted to use this scale. Both ASCII and space delimitered decimal encoding of quality scores are supported. We will automatically detect the Phred quality offset of either 33 or 64.
   - No technical reads (adapters, linkers, barcodes) are allowed.
   - Single reads must be submitted using a single Fastq file.
-  - Paired reads must split and submitted using two Fastq files. The read names must have a suffix identifying the first and second read from the pair, for example '/1' and '/2'; (regular expression for the reads "^(.\*)(\[\\\\.|:|/|\_\])(\[12\])$").
+  - Paired reads must split and submitted using two Fastq files. The read names must have a suffix identifying the first and second read from the pair, for example '/1' and '/2'; (regular expression for the reads "^(.\*)(\[\\\\.\|:\|/\|\_\])(\[12\])$").
   - The first line for each read must start with '@'.
   - The base calls and quality scores must be separated by a line starting with '+'.
   - The Fastq files must be compressed using gzip or bzip2.
@@ -198,23 +198,18 @@ XML schema: [JGA.policy.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
 ## Analysis only submission
 
-To submitting only aggregated data or data which are not suitable for
-Sample-Experiment-Data, these data can be submitted as Sample-Analysis
-instead of Sample-Experiment-Data.
+To submitting only aggregated data or data which are not suitable for Sample-Experiment-Data, these data can be submitted as Sample-Analysis instead of Sample-Experiment-Data.
 
-![One Analysis for each Sample](/images/submission/sample-analysis.jpg)
+{::nomarkdown}
+{% include image.html url="submission/sample-analysis.jpg" caption="Analysis data aggregating Samples" class="w500" %}
+{:/}
 
-![Analysis data aggregating
-Samples](/images/submission/samples-analysis.jpg)
+{::nomarkdown}
+{% include image.html url="submission/samples-analysis.jpg" caption="Analysis data aggregating Samples" class="w500" %}
+{:/}
 
-To submitting Analysis only data, please contact [JGA
-team](/contact-e.html) .
-
-
-
-
+To submitting Analysis only data, please contact [JGA team](/contact-e.html) .
 
 ## Update submissions
 
-To update your submissions, please [contact to the JGA
-team](/contact-e.html) .
+To update your submissions, please [contact to the JGA team](/contact-e.html) .
