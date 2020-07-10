@@ -73,12 +73,12 @@ Some large initiatives are represented by more than one layer of umbrella projec
 {% include image.html url="submission/bp_org.jpg" caption="Schematic diagram of BioProject hierarchies. (A)Two layers. (B)Three layers." class="w500" %}
 {:/}
 
-  : Two layers (A)  
-    Initiatives may be organized as a single Umbrella project with one or many submitted projects that are connected to data. Example:
+Two layers (A)  
+: Initiatives may be organized as a single Umbrella project with one or many submitted projects that are connected to data. Example:
     [Neanderthal Metagenome](https://www.ncbi.nlm.nih.gov/bioproject/18309).
 
-  : Three layers (B)  
-    Very large initiatives which have distinct sub-projects may have two levels of Umbrella project. For example, a top-level Umbrella project groups all components of the initiative; mid-level Umbrella projects reflect two distinct branches of the project (such as sequencing vs. epigenetics); and several primary projects denote distinct project data types (e.g., genome sequencing, transcriptome, epigenetics, etc.). Example: [NIH Human Microbiome Project (HMP) Roadmap Project](https://www.ncbi.nlm.nih.gov/bioproject/43021).
+Three layers (B)  
+: Very large initiatives which have distinct sub-projects may have two levels of Umbrella project. For example, a top-level Umbrella project groups all components of the initiative; mid-level Umbrella projects reflect two distinct branches of the project (such as sequencing vs. epigenetics); and several primary projects denote distinct project data types (e.g., genome sequencing, transcriptome, epigenetics, etc.). Example: [NIH Human Microbiome Project (HMP) Roadmap Project](https://www.ncbi.nlm.nih.gov/bioproject/43021).
 
 ### Data release
 
@@ -120,7 +120,7 @@ If you want to add already registered primary projects to the umbrella, please [
 
 <span class="red">Private primary projects are not released by linking to public umbrella project.</span>
 
-## Metadata
+## Metadata<a name="metadata"></a>
 
 Required <span class="red">\*</span>  
 Conditionally required <span class="conditionally_required">\*</span>
@@ -131,43 +131,42 @@ Conditionally required <span class="conditionally_required">\*</span>
 
 Contact information of submitter(s). Questions and notifications about a submission are contacted to the e-mail address(es) listed here. Personal contact information is considered confidential and is collected to be used by DDBJ BioProject staff should questions arise; the general information about the research center is used for public display.
 
-  - [First name](#BioProject_First_name)  
-    Submitter's first name.
+[First name](#BioProject_First_name)<a name="BioProject_First_name"></a>  
+: Submitter's first name.
 
 <!-- end list -->
 
-  - [Last name](#BioProject_Last_name)<span class="red">\*</span>  
-    Submitter's last name.
+[Last name](#BioProject_Last_name)<span class="red">\*</span><a name="BioProject_Last_name"></a>  
+: Submitter's last name.
 
 <!-- end list -->
 
-  - [E-mail](#BioProject_E-mail) <span class="red">\*</span>  
-    E-mail address. Enter an address from the organizations domain.
+[E-mail](#BioProject_E-mail) <span class="red">\*</span><a name="BioProject_E-mail"></a>  
+: E-mail address. Enter an address from the organizations domain.
 
 #### Organization
 
 Organization to which a contact person belongs.
 
-  - [Submitting organization](#BioProject_Submitting_organization)
-    <span class="red">\*</span>  
-    full name of organization.
+[Submitting organization](#BioProject_Submitting_organization)<span class="red">\*</span><a name="BioProject_Submitting_organization"></a>  
+: full name of organization.
 
 <!-- end list -->
 
-  - [Submitting organization URL](#BioProject_Submitting_organization_URL)  
-    The URL of submitter's organization.
+[Submitting organization URL](#BioProject_Submitting_organization_URL)<a name="BioProject_Submitting_organization_URL"></a>  
+: The URL of submitter's organization.
 
 #### Data Release
 
 Select "Hold" or "Release". You cannot specify hold date. Please see [Release of projects](#Release_of_projects) for detailed release mechanism.
 
-  - [Hold](#BioProject_Hold)  
-    Released concurrently when the DDBJ, DRA, DTA and DOR record(s) citing this ID is released.
+[Hold](#BioProject_Hold)<a name="BioProject_Hold"></a>  
+: Released concurrently when the DDBJ, DRA, DTA and DOR record(s) citing this ID is released.
 
 <!-- end list -->
 
-  - [Release](#BioProject_Release)  
-    Release project data immediately. Private DDBJ record(s) citing this ID is not released.
+[Release](#BioProject_Release)<a name="BioProject_Release"></a>  
+: Release project data immediately. Private DDBJ record(s) citing this ID is not released.
 
 ### General info
 
@@ -175,23 +174,23 @@ Select "Hold" or "Release". You cannot specify hold date. Please see [Release of
 
 An informative paragraph that describes the project and provides informative context for the displayed project record.
 
-  - [Project title](#Project_title)<span class="red">\*</span>  
-    Very short descriptive name of the project for caption, labels, etc for public display. For example: Chromosome Y sequencing, Global studies of microbial diversity on human skin.
+[Project title](#Project_title)<span class="red">\*</span><a name="Project_title"></a>  
+: Very short descriptive name of the project for caption, labels, etc for public display. For example: Chromosome Y sequencing, Global studies of microbial diversity on human skin.
 
 <!-- end list -->
 
-  - [Description](#Public_description)<span class="red">\*</span>  
-    Description (a paragraph) of the project goals and purposes. Provide enough information (more than 100 characters) in the description for other users to interpret the data.
+[Description](#Public_description)<span class="red">\*</span><a name="Public_description"></a>  
+: Description (a paragraph) of the project goals and purposes. Provide enough information (more than 100 characters) in the description for other users to interpret the data.
 
 <!-- end list -->
 
-  - [Private comments to DDBJ staff](#Private_comments)<a name="Private_comments"></a>  
-    Use this field if you have questions for database support staff. The content is not made public. If you intend to submit an umbrella project, please inform us that "this is umbrella project".
+[Private comments to DDBJ staff](#Private_comments)<a name="Private_comments"></a>  
+: Use this field if you have questions for database support staff. The content is not made public. If you intend to submit an umbrella project, please inform us that "this is umbrella project".
 
 <!-- end list -->
 
-  - [Relevance](#Relevance)  
-    Select the primary general relevance of the study.
+[Relevance](#Relevance)<a name="Relevance"></a>  
+: Select the primary general relevance of the study.
 
     | Relevance     | Description                                                                                                    |
     | ------------- | -------------------------------------------------------------------------------------------------------------- |
@@ -205,99 +204,99 @@ An informative paragraph that describes the project and provides informative con
 
 <!-- end list -->
 
-  - [Relevance description](#Relevance_description)<span class="conditionally_required">\*</span>  
-    Describe the relevance when the Other is selected.
+[Relevance description](#Relevance_description)<span class="conditionally_required">\*</span><a name="Relevance_description"></a>  
+: Describe the relevance when the Other is selected.
 
 #### Umbrella BioProject<a name="Area_linked-project"></a>
 
 If you are registering a project that is part of an initiative which is already registered in the BioProject database, then please tell us the existing BioProject accession number and provide a general description of the larger initiative. This information is needed for [project linking](#primary-and-umbrella).
 
-  - [Initiative description](#Initiative_description)<span class="conditionally_required">\*</span>  
-    Description of an initiative.
+[Initiative description](#Initiative_description)<span class="conditionally_required">\*</span><a name="Initiative_description"></a>  
+: Description of an initiative.
 
 <!-- end list -->
 
-  - [Umbrella BioProject accession](#BioProject_BioProject_ID)<span class="conditionally_required">\*</span>  
-    A BioProject accession number of an initiative which is already registered in the BioProject database.
+[Umbrella BioProject accession](#BioProject_BioProject_ID)<span class="conditionally_required">\*</span><a name="BioProject_BioProject_ID"></a>  
+: A BioProject accession number of an initiative which is already registered in the BioProject database.
 
 #### External Links
 
 An URL may be provided, with a label for the resource, to reference a resource that is directly relevant to the submitted project.
 
-  - [Link description](#URL_link_description)  
-    Display name of web site that is related to this study.
+[Link description](#URL_link_description)<a name="URL_link_description"></a>  
+: Display name of web site that is related to this study.
 
 <!-- end list -->
 
-  - [URL](#BioProject_URL)  
-    URL of web site that is related to this study.
+[URL](#BioProject_URL)<a name="BioProject_URL"></a>  
+: URL of web site that is related to this study.
 
 #### Grants
 
 Funding information for a project.
 
-  - [Agency](#Agency)  
-    Name of funding agency. For example: Japan Society for the Promotion of Science.
+[Agency](#Agency)<a name="Agency"></a>  
+: Name of funding agency. For example: Japan Society for the Promotion of Science.
 
 <!-- end list -->
 
-  - [Agency abbreviation](#Agency_abbreviation)  
-    Abbreviation of funding agency. For example: JSPS.
+[Agency abbreviation](#Agency_abbreviation)<a name="Agency_abbreviation"></a>  
+: Abbreviation of funding agency. For example: JSPS.
 
 <!-- end list -->
 
-  - [Grant ID](#Grant_ID)  
-    Grant number is collected to support searches (e.g., publications often cite Grant numbers). For example: JSPS KAKENHI Grant Number 12345678.
+[Grant ID](#Grant_ID)<a name="Grant_ID"></a>  
+: Grant number is collected to support searches (e.g., publications often cite Grant numbers). For example: JSPS KAKENHI Grant Number 12345678.
 
 <!-- end list -->
 
-  - [Grant title](#Grant_title)  
-    Grant title may also support searches.
+[Grant title](#Grant_title)<a name="Grant_title"></a>  
+: Grant title may also support searches.
 
 #### Consortium
 
-  - [Consortium name](#Consortium_name)  
-    If study is carried out as part of a consortium, provide the consortium name.
+[Consortium name](#Consortium_name)<a name="Consortium_name"></a> 
+: If study is carried out as part of a consortium, provide the consortium name.
 
 <!-- end list -->
 
-  - [Consortium URL](#Consortium_URL)  
-    If the consortium maintains a web site, provide the URL.
+[Consortium URL](#Consortium_URL)<a name="Consortium_URL"></a>  
+: If the consortium maintains a web site, provide the URL.
 
 ### Project type
 
 #### Project data type<a name="Project_data_type"></a>
 
-  - [Project data type](#Project_data_type)<span class="red">\*</span>  
-    A general label indicating the primary study goal. Select appropriate types. [News: A BioProject record can have multiple project data types](/news/en/2014-11-12-e.html)
+[Project data type](#Project_data_type)<span class="red">\*</span><a name="Project_data_type"></a>  
+: A general label indicating the primary study goal. Select appropriate types. [News: A BioProject record can have multiple project data types](/news/en/2014-11-12-e.html)
     
-    NCBI individually assigns the [Project data type](https://www.ncbi.nlm.nih.gov/books/NBK54364/def-item/project-data-type/) based on the experimental data linked to the project. This type is not used by [EBI](https://www.ebi.ac.uk/ena/submit/project-format).
+NCBI individually assigns the [Project data type](https://www.ncbi.nlm.nih.gov/books/NBK54364/def-item/project-data-type/) based on the experimental data linked to the project. This type is not used by [EBI](https://www.ebi.ac.uk/ena/submit/project-format).
     
-    | Project Data type                | Description                                                                                                                     |
-    | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-    | Genome Sequencing                | whole, or partial, genome sequencing project (with or without a genome assembly)                                                |
-    | Clone Ends                       | clone-end sequencing project                                                                                                    |
-    | Epigenomics                      | DNA methylation, histone modification, chromatin accessibility datasets                                                         |
-    | Exome                            | exome resequencing project                                                                                                      |
-    | Map                              | project that results in non-sequence map data such as genetic map, radiation hybrid map, cytogenetic map, optical map, and etc. |
-    | Metagenome                       | sequence analysis of environmental samples                                                                                      |
-    | Phenotype and Genotype           | project correlating phenotype and genotype                                                                                      |
-    | Proteome                         | large scale proteomics experiment including mass spec. analysis                                                                 |
-    | Random Survey                    | sequence generated from a random sampling of the collected sample; not intended to be comprehensive sampling of the material.   |
-    | Targeted Locus (Loci)            | project to sequence specific loci, such as a 16S rRNA sequencing                                                                |
-    | Transcriptome or Gene Expression | large scale RNA sequencing or expression analysis. Includes cDNA, EST, RNA\_seq, and microarray.                                |
-    | Variation                        | project with a primary goal of identifying large or small sequence variation across populations.                                |
-    | Other                            | a free text description is provided to indicate Other data type                                                                 |
+| Project Data type                | Description                                                                                                                     |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| Genome Sequencing                | whole, or partial, genome sequencing project (with or without a genome assembly)                                                |
+| Clone Ends                       | clone-end sequencing project                                                                                                    |
+| Epigenomics                      | DNA methylation, histone modification, chromatin accessibility datasets                                                         |
+| Exome                            | exome resequencing project                                                                                                      |
+| Map                              | project that results in non-sequence map data such as genetic map, radiation hybrid map, cytogenetic map, optical map, and etc. |
+| Metagenome                       | sequence analysis of environmental samples                                                                                      |
+| Phenotype and Genotype           | project correlating phenotype and genotype                                                                                      |
+| Proteome                         | large scale proteomics experiment including mass spec. analysis                                                                 |
+| Random Survey                    | sequence generated from a random sampling of the collected sample; not intended to be comprehensive sampling of the material.   |
+| Targeted Locus (Loci)            | project to sequence specific loci, such as a 16S rRNA sequencing                                                                |
+| Transcriptome or Gene Expression | large scale RNA sequencing or expression analysis. Includes cDNA, EST, RNA\_seq, and microarray.                                |
+| Variation                        | project with a primary goal of identifying large or small sequence variation across populations.                                |
+| Other                            | a free text description is provided to indicate Other data type                                                                 |
     
 <!-- end list -->
 
-  - [Project data type description](#Project_data_type_description)<span class="conditionally_required">\*</span>  
-    Describe the project data type when the Other is selected.
+[Project data type description](#Project_data_type_description)<span class="conditionally_required">\*</span><a name="Project_data_type_description"></a>  
+: Describe the project data type when the Other is selected.
 
 #### Sample scope/Material/Capture/Methodology
 
-  - [Sample scope](#BioProject_Sample_scope)<span class="red">\*</span><a name="BioProject_Sample_scope"></a>  
-    The scope and purity of the biological sample used for the study.
+[Sample scope](#BioProject_Sample_scope)<span class="red">\*</span><a name="BioProject_Sample_scope"></a>  
+: The scope and purity of the biological sample used for the study.
 
     | Sample scope  | Description                                                                                                                                                                       |
     | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -310,8 +309,8 @@ Funding information for a project.
 
 <!-- end list -->
 
-  - [Material](#Material)<span class="red">\*</span><a name="Material"></a>
-    The type of material that is isolated from the sample for use in the experimental study.
+[Material](#Material)<span class="red">\*</span><a name="Material"></a>
+: The type of material that is isolated from the sample for use in the experimental study.
 
     | Material       | Description                                                                                    |
     | -------------- | ---------------------------------------------------------------------------------------------- |
@@ -325,8 +324,8 @@ Funding information for a project.
 
 <!-- end list -->
 
-  - [Capture](#Capture)<span class="red">\*</span><a name="Capture"></a>  
-    The scale, or type, of information that the study is designed to generate from the sample material.
+[Capture](#Capture)<span class="red">\*</span><a name="Capture"></a>  
+: The scale, or type, of information that the study is designed to generate from the sample material.
 
     | Capture             | Description                                                                     |
     | ------------------- | ------------------------------------------------------------------------------- |
@@ -339,13 +338,13 @@ Funding information for a project.
 
 <!-- end list -->
 
-  - [Target description](#Target_description)<span class="conditionally_required">\*</span>  
-    Describe the Sample scope/Material/Capture when the Other(s) is selected.
+[Target description](#Target_description)<span class="conditionally_required">\*</span><a name="Target_description"></a>  
+: Describe the Sample scope/Material/Capture when the Other(s) is selected.
 
 <!-- end list -->
 
-  - [Methodology](#Methodology)<span class="red">\*</span>  
-    The core experimental approach used to obtain the data that is submitted to archival databases.
+[Methodology](#Methodology)<span class="red">\*</span><a name="Methodology"></a>  
+: The core experimental approach used to obtain the data that is submitted to archival databases.
 
     | Methodology       | Description                                                     |
     | ----------------- | --------------------------------------------------------------- |
@@ -356,15 +355,15 @@ Funding information for a project.
 
 <!-- end list -->
 
-  - [Methodology description](#Methodology_description)<span class="conditionally_required">\*</span>  
-    Describe the methodology type when the Other is selected.
+[Methodology description](#Methodology_description)<span class="conditionally_required">\*</span><a name="Methodology_description"></a>  
+: Describe the methodology type when the Other is selected.
 
 #### Objective
 
 Project goals with respect to the type of data that will be generated and submitted to an INSDC-associated database. Select all relevant menu options.
 
-  - [Objective](#Objective)<span class="red">\*</span>  
-    Project goals with respect to the type of data that will be generated and submitted to an INSDC-associated database. Select all relevant menu options.
+[Objective](#Objective)<span class="red">\*</span><a name="Objective"></a>  
+: Project goals with respect to the type of data that will be generated and submitted to an INSDC-associated database. Select all relevant menu options.
 
     | Objective          | Description                                                                    |
     | ------------------ | ------------------------------------------------------------------------------ |
@@ -382,16 +381,16 @@ Project goals with respect to the type of data that will be generated and submit
 
 #### Locus tag prefix
 
-  - [Locus tag prefix](#Locus_tag_prefix)<span class="conditionally_required">\*</span>  
-    Locus tag prefix generation box will appear when \[Project data type="Genome Sequencing" or "Metagenome"\] AND \[Capture="Whole"\] AND \[Objective="Sequence" or "Annotation" or "Assembly"\].
-    Registration of a unique locus tag prefix is required for studies that result in genome assemblies. Please leave the prefix box empty, when a prefix is not necessary for [WGS](/ddbj/wgs-e.html) only submission.
+[Locus tag prefix](#Locus_tag_prefix)<span class="conditionally_required">\*</span><a name="Locus_tag_prefix"></a>  
+: Locus tag prefix generation box will appear when \[Project data type="Genome Sequencing" or "Metagenome"\] AND \[Capture="Whole"\] AND \[Objective="Sequence" or "Annotation" or "Assembly"\].
+Registration of a unique locus tag prefix is required for studies that result in genome assemblies. Please leave the prefix box empty, when a prefix is not necessary for [WGS](/ddbj/wgs-e.html) only submission.
     
-    [Locus tag prefix guideline](/ddbj/locus_tag-e.html).
+[Locus tag prefix guideline](/ddbj/locus_tag-e.html).
     
-    Locus tag prefix format  
-    The locus\_tag prefix can contain only alpha-numeric characters and it must be 3-12 characters long. It should start with a letter, but numerals can be in the 2nd position or later in the string. (ex. A1C). There should be no symbols, such as -\_\* in the prefix. The locus\_tag prefix is to be separated from the tag value by an underscore ‘\_’, eg A1C\_00001.
+Locus tag prefix format  
+The locus\_tag prefix can contain only alpha-numeric characters and it must be 3-12 characters long. It should start with a letter, but numerals can be in the 2nd position or later in the string. (ex. A1C). There should be no symbols, such as -\_\* in the prefix. The locus\_tag prefix is to be separated from the tag value by an underscore ‘\_’, eg A1C\_00001.
     
-    DDBJ BioProject limits the maximum tag length to 12 characters. In the BioProject submission system, the locus tag is displayed in capital letters. However, the tag is reserved in case-insensitive manner.
+DDBJ BioProject limits the maximum tag length to 12 characters. In the BioProject submission system, the locus tag is displayed in capital letters. However, the tag is reserved in case-insensitive manner.
 
 ### Target
 
@@ -399,56 +398,56 @@ Project goals with respect to the type of data that will be generated and submit
 
 Taxonomy and description of target organism.
 
-  - [Organism name](#BioProject_Organism_name)<span class="red">\*</span><a name="BioProject_Organism_name"></a>  
-    Organism name in the [Taxonomy database](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html). Unclassified sequences including metagenome and environmental samples may be found at [here](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908&lvl=3&lin=f&keep=1&srchmode=1&unlock).
+[Organism name](#BioProject_Organism_name)<span class="red">\*</span><a name="BioProject_Organism_name"></a><a name="BioProject_Organism_name"></a>  
+: Organism name in the [Taxonomy database](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html). Unclassified sequences including metagenome and environmental samples may be found at [here](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908&lvl=3&lin=f&keep=1&srchmode=1&unlock).
     
-    In the project spanning multiple species, enter a taxonomic classification common to the species (e.g., genus name).
+In the project spanning multiple species, enter a taxonomic classification common to the species (e.g., genus name).
     
-    If you intend to submit un-registered novel organism, please provide us the [detailed organism information](/ddbj/organism-e.html) in the [Description of novel organism](#Novel_organism) and proposed organism name in the Organism Name.
+If you intend to submit un-registered novel organism, please provide us the [detailed organism information](/ddbj/organism-e.html) in the [Description of novel organism](#Novel_organism) and proposed organism name in the Organism Name.
 
 <!-- end list -->
 
-  - [Taxonomy ID](#BioProject_Taxonomy_ID)  
-    [NCBI Taxonomy ID](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html)
+[Taxonomy ID](#BioProject_Taxonomy_ID)<a name="BioProject_Taxonomy_ID"></a>  
+: [NCBI Taxonomy ID](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html)
 
 <!-- end list -->
 
-  - [Strain, breed, cultivar](#Strain_breed_cultivar)  
-    Microbial strain name, or eukaryotic breed or cultivar name. Please provide this or "Isolate name or label"
+[Strain, breed, cultivar](#Strain_breed_cultivar)<a name="Strain_breed_cultivar"></a>  
+: Microbial strain name, or eukaryotic breed or cultivar name. Please provide this or "Isolate name or label"
 
 <!-- end list -->
 
-  - [Isolate name or label](#Isolate_name_label)  
-    A label for an isolated sample, or name of an individual animal (e.g., Clint). Please provide this or "Strain, breed, cultivar".
+[Isolate name or label](#Isolate_name_label)<a name="Isolate_name_label"></a>  
+: A label for an isolated sample, or name of an individual animal (e.g., Clint). Please provide this or "Strain, breed, cultivar".
 
 <!-- end list -->
 
-  - [Description](#BioProject_Description)  
-    A brief description, to elaborate upon the brief label.
+[Description](#BioProject_Description)<a name="BioProject_Description"></a>  
+: A brief description, to elaborate upon the brief label.
 
 <!-- end list -->
 
-  - [Description of novel organism](#Novel_organism)<a name="Novel_organism"></a>  
-    Enter necessary information to register an organism to the [taxonomy database](https://www.ncbi.nlm.nih.gov/Taxonomy/).
+[Description of novel organism](#Novel_organism)<a name="Novel_organism"></a>  
+: Enter necessary information to register an organism to the [taxonomy database](https://www.ncbi.nlm.nih.gov/Taxonomy/).
 
 #### Environmental sample information
 
 This section appears instead of the [Organism information](#BioProject_Organism_name) when the Sample scope="Environment" in the Target.
 
-  - [Environmental sample name](#Environmental_sample_name)<span class="red">\*</span>  
-    Unclassified sequences including metagenome and environmental samples may be found at [here](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908&lvl=3&lin=f&keep=1&srchmode=1&unlock). If an appropriate name was not found, describe a novel name you propose and details of sample information in the [Environmental sample description](#Environmental_sample_description).
+[Environmental sample name](#Environmental_sample_name)<span class="red">\*</span><a name="Environmental_sample_name"></a>  
+: Unclassified sequences including metagenome and environmental samples may be found at [here](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908&lvl=3&lin=f&keep=1&srchmode=1&unlock). If an appropriate name was not found, describe a novel name you propose and details of sample information in the [Environmental sample description](#Environmental_sample_description).
 
 <!-- end list -->
 
-  - [Environmental sample description](#Environmental_sample_description)  
-    Describe details of sample information.
+[Environmental sample description](#Environmental_sample_description)<a name="Environmental_sample_description"></a>  
+: Describe details of sample information.
 
 #### General Properties
 
 General properties of target organism.
 
-  - [Cellularity](#Cellularity)  
-    Select a cellularity.
+[Cellularity](#Cellularity)<a name="Cellularity"></a>  
+: Select a cellularity.
 
     | Cellularity   |
     | ------------- |
@@ -458,8 +457,8 @@ General properties of target organism.
 
 <!-- end list -->
 
-  - [Reproduction](#Reproduction)  
-    Select a Reproduction.
+[Reproduction](#Reproduction)<a name="Reproduction"></a>  
+: Select a Reproduction.
 
     | Reproduction |
     | ------------ |
@@ -468,13 +467,13 @@ General properties of target organism.
 
 <!-- end list -->
 
-  - [Haploid genome size](#Haploid_genome_size)  
-    Haploid genome size in Kb, Mb or cM.
+[Haploid genome size](#Haploid_genome_size)<a name="Haploid_genome_size"></a>  
+: Haploid genome size in Kb, Mb or cM.
 
 <!-- end list -->
 
-  - [Ploidy](#Ploidy)  
-    Select a Ploidy.
+[Ploidy](#Ploidy)<a name="Ploidy"></a>  
+: Select a Ploidy.
 
     | Ploidy        |
     | ------------- |
@@ -487,13 +486,13 @@ General properties of target organism.
 
 Describe how many replicons this organism has, how they are named (e.g., 1, 2, 3 vs. I, II, III), the replicon type (chromosome etc.), and the subcellular structure that the replicon is located in.
 
-  - [Name](#Replicon_name)  
-    The preferred standard for the replicon name.
+[Name](#Replicon_name)<a name="Replicon_name"></a>  
+: The preferred standard for the replicon name.
 
 <!-- end list -->
 
-  - [Type](#Replicon_type)  
-    Select a replicon type.
+[Type](#Replicon_type)<a name="Replicon_type"></a>  
+: Select a replicon type.
 
     | Replicon type |
     | ------------- |
@@ -505,8 +504,8 @@ Describe how many replicons this organism has, how they are named (e.g., 1, 2, 3
 
 <!-- end list -->
 
-  - [Location](#Location)  
-    The replicon subcellular location. For instance, the nucleus, or a differentiated organella. Please select "Nuclear or Prokaryote" for the chromosomes of eularyotes, bacteria or archaea.
+[Location](#Location)<a name="Location"></a>  
+: The replicon subcellular location. For instance, the nucleus, or a differentiated organella. Please select "Nuclear or Prokaryote" for the chromosomes of eularyotes, bacteria or archaea.
 
     | Location              |
     | --------------------- |
@@ -532,25 +531,25 @@ Describe how many replicons this organism has, how they are named (e.g., 1, 2, 3
 
 <!-- end list -->
 
-  - [Size](#Size)  
-    The size and unit of measurement for the estimated genome size.
+[Size](#Size)<a name="Size"></a>  
+: The size and unit of measurement for the estimated genome size.
 
 <!-- end list -->
 
-  - [Description](#Replicon_description)  
-    A description of any unusual features of the replicon.
+[Description](#Replicon_description)<a name="Replicon_description"></a>  
+: A description of any unusual features of the replicon.
 
 #### Phenotype
 
 Phenotype of target organism.
 
-  - [Disease](#Disease)  
-    Enter a disease name.
+[Disease](#Disease)<a name="Disease"></a>  
+: Enter a disease name.
 
 <!-- end list -->
 
-  - [Biotic Relationship](#BioticRelationship)
-    Select a BioticRelationship.
+[Biotic Relationship](#BioticRelationship)<a name="BioticRelationship"></a>
+: Select a BioticRelationship.
 
     | BioticRelationship |
     | ------------------ |
@@ -565,8 +564,8 @@ Phenotype of target organism.
 
 <!-- end list -->
 
-  - [Trophic Level](#TrophicLevel)
-    Select a TrophicLevel.
+[Trophic Level](#TrophicLevel)<a name="TrophicLevel"></a>
+: Select a TrophicLevel.
 
     | TrophicLevel |
     | ------------ |
@@ -578,8 +577,8 @@ Phenotype of target organism.
 
 When the target organism is prokaryote, please describe the general morphology if known.
 
-  - [Shape](#Shape)
-    Select all relevant menu options.
+[Shape](#Shape)<a name="Shape"></a>
+: Select all relevant menu options.
 
     | Shape        | Description                                          |
     | ------------ | ---------------------------------------------------- |
@@ -596,8 +595,8 @@ When the target organism is prokaryote, please describe the general morphology i
 
 <!-- end list -->
 
-  - [Gram](#Gram)
-    Choose gram positive or negative.
+[Gram](#Gram)<a name="Gram"></a>
+: Choose gram positive or negative.
 
     | Gram     |
     | -------- |
@@ -606,8 +605,8 @@ When the target organism is prokaryote, please describe the general morphology i
 
 <!-- end list -->
 
-  - [Motility](#Motility)  
-    Choose a Motility.
+[Motility](#Motility)<a name="Motility"></a>  
+: Choose a Motility.
 
     | Motility |
     | -------- |
@@ -616,8 +615,8 @@ When the target organism is prokaryote, please describe the general morphology i
 
 <!-- end list -->
 
-  - [Enveloped](#Enveloped)  
-    Choose enveloped or not.
+[Enveloped](#Enveloped)<a name="Enveloped"></a>  
+: Choose enveloped or not.
 
     | Enveloped |
     | --------- |
@@ -626,8 +625,8 @@ When the target organism is prokaryote, please describe the general morphology i
 
 <!-- end list -->
 
-  - [Endospores](#Endospores)  
-    Choose target bacteria forms endospores or not.
+[Endospores](#Endospores)<a name="Endospores"></a>  
+: Choose target bacteria forms endospores or not.
 
     | Endospores |
     | ---------- |
@@ -638,8 +637,8 @@ When the target organism is prokaryote, please describe the general morphology i
 
 The general habitat for any organism. Please indicate additional extremophile parameters if known.
 
-  - [Habitat](#Habitat)  
-    Choose a Habitat.
+[Habitat](#Habitat)<a name="Habitat"></a>  
+: Choose a Habitat.
 
     | Habitat        |
     | -------------- |
@@ -652,8 +651,8 @@ The general habitat for any organism. Please indicate additional extremophile pa
 
 <!-- end list -->
 
-  - [Salinity](#Salinity)  
-    Choose a Salinity.
+[Salinity](#Salinity)<a name="Salinity"></a>  
+: Choose a Salinity.
 
     | Salinity           |
     | ------------------ |
@@ -665,8 +664,8 @@ The general habitat for any organism. Please indicate additional extremophile pa
 
 <!-- end list -->
 
-  - [Oxygen requirement](#OxygenReq)  
-    Choose an Oxygen requirement.
+[Oxygen requirement](#OxygenReq)<a name="OxygenReq"></a>  
+: Choose an Oxygen requirement.
 
     | OxygenReq       |
     | --------------- |
@@ -678,8 +677,8 @@ The general habitat for any organism. Please indicate additional extremophile pa
 
 <!-- end list -->
 
-  - [Temperature range](#TemperatureRange)  
-    Choose a temperature range.
+[Temperature range](#TemperatureRange)<a name="TemperatureRange"></a>  
+: Choose a temperature range.
 
     | TemperatureRange  |
     | ----------------- |
@@ -692,78 +691,78 @@ The general habitat for any organism. Please indicate additional extremophile pa
 
 <!-- end list -->
 
-  - [Optimum Temperature](#OptimumTemperature)  
-    Optimum temperature in Celsius.
+[Optimum Temperature](#OptimumTemperature)<a name="OptimumTemperature"></a>  
+: Optimum temperature in Celsius.
 
 ### Publication<a name="Publication"></a>
 
-  - [PubMed ID](#BioProject_PubMed_ID)  
-    The PubMed ID(s) will be used to populate the publication information.
+[PubMed ID](#BioProject_PubMed_ID)<a name="BioProject_PubMed_ID"></a>  
+: The PubMed ID(s) will be used to populate the publication information.
 
 <!-- end list -->
 
-  - [DOI](#BioProject_DOI)  
-    Provide a DOI if a PubMed ID is not available. Provide the additional reference information.
+[DOI](#BioProject_DOI)<a name="BioProject_DOI"></a>  
+: Provide a DOI if a PubMed ID is not available. Provide the additional reference information.
 
 <!-- end list -->
 
-  - [Reference title](#BioProject_Reference_title)<span class="red">\*</span>  
-    A title of reference.
+[Reference title](#BioProject_Reference_title)<span class="red">\*</span><a name="BioProject_Reference_title"></a>  
+: A title of reference.
 
 <!-- end list -->
 
-  - [Journal title](#BioProject_Journal_title)<span class="red">\*</span>  
-    A title of journal.
+[Journal title](#BioProject_Journal_title)<span class="red">\*</span><a name="BioProject_Journal_title"></a>  
+: A title of journal.
 
 <!-- end list -->
 
-  - [Year](#BioProject_Year)<span class="red">\*</span>  
-    Publication year.
+[Year](#BioProject_Year)<span class="red">\*</span><a name="BioProject_Year"></a>  
+: Publication year.
 
 <!-- end list -->
 
-  - [Volume](#BioProject_Volume)<span class="red">\*</span>  
-    Journal volume.
+[Volume](#BioProject_Volume)<span class="red">\*</span><a name="BioProject_Volume"></a>  
+: Journal volume.
 
 <!-- end list -->
 
-  - [Issue](#BioProject_Issue)<span class="red">\*</span>  
-    Journal issue.
+[Issue](#BioProject_Issue)<span class="red">\*</span><a name="BioProject_Issue"></a>  
+: Journal issue.
 
 <!-- end list -->
 
-  - [Pages from](#BioProject_Pages_from)<span class="red">\*</span>  
-    Reference start page.
+[Pages from](#BioProject_Pages_from)<span class="red">\*</span><a name="BioProject_Pages_from"></a>  
+: Reference start page.
 
 <!-- end list -->
 
-  - [Pages to](#BioProject_Pages_to)<span class="red">\*</span>  
-    Reference end page.
+[Pages to](#BioProject_Pages_to)<span class="red">\*</span><a name="BioProject_Pages_to"></a>  
+: Reference end page.
 
 <!-- end list -->
 
-  - [First name](#BioProject_First_name_publication)<span class="red">\*</span>  
-    First name of author.
+[First name](#BioProject_First_name_publication)<span class="red">\*</span><a name="BioProject_First_name_publication"></a>  
+: First name of author.
 
 <!-- end list -->
 
-  - [MI](#BioProject_MI)  
-    Middle initial.
+[MI](#BioProject_MI)<a name="BioProject_MI"></a>  
+: Middle initial.
 
 <!-- end list -->
 
-  - [Last name](#BioProject_Last_name_publication)<span class="red">\*</span>  
-    Last name of author.
+[Last name](#BioProject_Last_name_publication)<span class="red">\*</span><a name="BioProject_Last_name_publication"></a>  
+: Last name of author.
 
 <!-- end list -->
 
-  - [Suffix](#BioProject_Suffix)  
-    Suffix for author.
+[Suffix](#BioProject_Suffix)<a name="BioProject_Suffix"></a>  
+: Suffix for author.
 
 <!-- end list -->
 
-  - [This publication has multiple authors](#BioProject_This_publication_has_multiple_authors)  
-    If this is checked, then "et al" is added to the author name provided above.
+[This publication has multiple authors](#BioProject_This_publication_has_multiple_authors)<a name="BioProject_This_publication_has_multiple_authors"></a>  
+: If this is checked, then "et al" is added to the author name provided above.
 
 ### XML schema
 

@@ -402,7 +402,7 @@ DDBJ BioProject 独自に最大タグ長を12文字に制限しています。�
 
 複数の生物種を対象としたプロジェクトの場合，共通する階層までの生物分類 (例 属レベルまで) を記入してください。
 
-: [Taxonomy データベース](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html) に該当する生物が登録されていない場合は，Novel organism を選択し [Description of novel　organism](#Novel_organism) に[新規生物に関する参考情報](/ddbj/organism.html)，Organism Name に希望する生物名を記入します。
+: [Taxonomy データベース](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html) に該当する生物が登録されていない場合は，Novel organism を選択し [Description of novel organism](#Novel_organism) に[新規生物に関する参考情報](/ddbj/organism.html)，Organism Name に希望する生物名を記入します。
 
 <!-- end list -->
 
