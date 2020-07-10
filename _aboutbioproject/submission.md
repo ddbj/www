@@ -155,7 +155,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 [Submitting organization URL](#BioProject_Submitting_organization_URL)<a name="BioProject_Submitting_organization_URL"></a>  
 : 登録者が所属する組織の URL。
 
-#### Data Release
+#### Data Release <a name="Area_data-release"></a>
 
 "Hold" か "Release" のどちらかを選びます。公開予定日を指定することはできません。データ公開の仕組みについては[プロジェクトの公開](#project-release)をご覧ください。
 
@@ -292,7 +292,7 @@ NCBI ではプロジェクトにリンクしている実験データから独自
 [Project data type description](#Project_data_type_description)<span class="conditionally_required">\*</span><a name="Project_data_type_description"></a>  
 : Other を選択したときは Project data type をここに記入します。
 
-#### Sample scope/Material/Capture/Methodology
+#### Sample scope&#047;Material&#047;Capture&#047;Methodology
 
 [Sample scope](#BioProject_Sample_scope)<span class="red">\*</span><a name="BioProject_Sample_scope"></a>  
 : 研究で使われた生物学的サンプルの対象を選択肢から選びます。
