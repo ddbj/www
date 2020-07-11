@@ -4,8 +4,6 @@ title: Parser User’s Manual
 category: services
 ---
 
-# Parser User’s Manual
-
 Parser is a software tool developed by DDBJ for checking the format and the syntax of the [sequence](/ddbj/file-format-e.html#sequence) and [annotation](/ddbj/file-format-e.html#annotation) files.
 
 ## Install
@@ -29,11 +27,13 @@ Parser is a software tool developed by DDBJ for checking the format and the synt
   <li>
     directory is created<br>  
     Check the contents of the directory<br>
-    <code>
-      $ cd jParser
-      $ ls -FC
-      jParser.sh* jar/    license.txt resource/
-    </code>
+    <pre>
+      <code>
+$ cd jParser
+$ ls -FC
+jParser.sh* jar/    license.txt resource/
+      </code>
+    </pre><br>
     <table>
       <tbody>
         <tr>
@@ -116,7 +116,7 @@ $ jParser.sh -xsample.ann -ssample.fasta
 ```
 
 You can specify locations of files in both ways, relative and full path names.  
-**macOS: Regarding the available file names** 
+**macOS: Regarding the available file names**<br> 
 DO NOT use multibyte character(s) for any file or folder name of [Sequence file](/ddbj/file-format-e.html#sequence) or [Annotation file](/ddbj/file-format-e.html#annotation) when you use our tools on some versions of macOS. Tools may not work when multibyte character is included in the file or folder name.
 
 \-x\[<span class="font-br font-normal">annotation file name</span>\]  
