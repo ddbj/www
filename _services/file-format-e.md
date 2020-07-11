@@ -39,7 +39,7 @@ It is required to validate formats of sequence file by [UME](/ddbj/ume-e.html) o
   - Please be sure to input the end flag \[//\] at the end of each sequence.
   - In case of [CON entry](/data-categories-e.html#con), [AGP file](#agp) can be used as a substitute for sequence file.
 
-## Annotation File
+## Annotation File<a name="annotation"></a>
 
 The annotation file is the tab delimited text file consisting of five columns of Entry, Feature, Location, Qualifier, and Value that contains your data other than sequences, such as submitters, references and biological features.  
 You can make the files with some scripts, spread sheets (such as MS Excel), text editors and so on.
@@ -88,11 +88,11 @@ It is required to validate formats of annotation file by
 
 Entry  
 : Please enter the Entry name into Entry column. Entry name has to correspond to each name in the sequence file as described at [How to Make Sequence File](#sequence).
-Do not enter anything in the Entry column until the first line for the next entry.
+: Do not enter anything in the Entry column until the first line for the next entry.
 
 Feature  
-: There are two types of Features, [Biological feature](#biological_feature) and DDBJ original features. The detail descriptions for Features are explained below.
-Do not enter anything in Feature columns until the first line for the next feature.
+: There are two types of Features, [Biological feature](#biological_feature) and DDBJ original features. The detail descriptions for Features are explained below.<
+: Do not enter anything in Feature columns until the first line for the next feature.
 
 Location  
 : Location can be described in the columns adjacent Feature columns filed with either of [Biological feature](#biological_feature) or [PRIMARY\_CONTIG](#primary_contig) feature.
@@ -129,11 +129,11 @@ Meta-base position 'E' for the location description
     
 | Entry  | Feature | Location                           | Qualifier | Value    |
 | ------ | ------- | ---------------------------------- | --------- | -------- |
-| COMMON | rRNA    | \<1..\><span class="bold">E</span> | product   | 16S rRNA |
+| COMMON | rRNA    | \<1..\>**E** | product   | 16S rRNA |
      
 There are many submissions that have common Feature information for all entries in their Qualifiers, and Values except their Locations because of difference of their sequence lengths, such as phylogenic studies with rRNA sequences.
     
-In such cases, you can describe the common Feature in COMMON entry by using meta-base position '<span class="bold">E</span>' in its Location instead of the number of the sequence end points.
+In such cases, you can describe the common Feature in COMMON entry by using meta-base position '**E**' in its Location instead of the number of the sequence end points.
 
 Meta-description '@@\[entry\]@@ 'is available for clone, note, ff\_definition  
 : Example: source feature in COMMON entry
@@ -179,72 +179,19 @@ file　(<span class="red">Requierd</span>)
 
 List of Qualifiers for SUBMITTER
 
-<table>
-  <thead>
-<tr class="header">
-<th>Qualifier</th>
-<th>Legal characters for each Value (Remarks)</th>
-<th>Number of letters</th>
-</tr>
-  </thead>
-  <tbody>
-    <tr class="odd">
-      <td>ab_name (abbreviation of author name)</td>
-      <td>alphabets, .[period], ,[comma], -[hyphen], ' [apostrophe]</td>
-      <td>64</td>
-    </tr>
-    <tr class="even">
-      <td>contact (contact person)</td>
-      <td>alphabets, .[period], ,[comma], -[hyphen], ' [apostrophe], [space]<br/>(In order of first, middle, and last names delimited with)</td>
-      <td>first(64),<br/>middle(128), last(64)</td>
-    </tr>
-    <tr class="odd">
-      <td>consrtm (consortium)</td>
-      <td>alphabets, digits, [space], -[hyphen], ' [apostrophe], .[period], _[underscore], .[comma], ( ) # &amp; @ / ; : + *</td>
-      <td>255</td>
-    </tr>
-    <tr class="even">
-      <td>email</td>
-      <td>alphabets, digits, @, .[period], -[hyphen], _[underscore]</td>
-      <td>64</td>
-    </tr>
-    <tr class="odd">
-      <td>url</td>
-      <td>All printable characters but [space]</td>
-      <td>255</td>
-    </tr>
-    <tr class="even">
-      <td>phone, fax, phext</td>
-      <td>digits, -[hyphen] (DO NOT enter + before country code)</td>
-      <td>16</td>
-    </tr>
-    <tr class="odd">
-      <td>institute, department</td>
-      <td>All printable characters but [back-slash], ` [back-quote]</td>
-      <td>255</td>
-    </tr>
-    <tr class="even">
-      <td>country, state</td>
-      <td>alphabets, digits, [space], -[hyphen], '[apostrophe], .[period], _[underscore], ,[comma], ( ) # &amp; @ / ; : + *</td>
-      <td>32</td>
-    </tr>
-    <tr class="odd">
-      <td>city</td>
-      <td>alphabets, digits, [space], -[hyphen], '[apostrophe], .[period], _[underscore], ,[comma], ( ) # &amp; @ / ; : + *</td>
-      <td>64</td>
-    </tr>
-    <tr class="even">
-      <td>street</td>
-      <td>alphabets, digits, [space], -[hyphen], '[apostrophe], .[period], _[underscore], ,[comma], ( ) # &amp; @ / ; : + *</td>
-      <td>255</td>
-    </tr>
-    <tr class="odd">
-      <td>zip</td>
-      <td>alphabets, digits, -[hyphen]</td>
-      <td>16</td>
-    </tr>
-  </tbody>
-</table>
+|  Qualifier  |  Legal characters for each Value (Remarks)   |  Number of letters  |
+| ---- | ---- | ---- |
+|  ab_name (abbreviation of author name)  |  alphabets, .[period], ,[comma], -[hyphen], ' [apostrophe]  |  64  |
+|  contact (contact person)  |  alphabets, .[period], ,[comma], -[hyphen], ' [apostrophe],  [space] (In order of first, middle, and last names delimited with)  |  first(64),middle(128), last(64)  |
+|  consrtm (consortium)  |  alphabets, digits,  [space], -[hyphen], ' [apostrophe], .[period], _[underscore], .[comma], ( ) # & @ / ; : + *  |  255  |
+|  email   |  alphabets, digits, @, .[period], -[hyphen], _[underscore]   |  64  |
+|  url  |  All printable characters but [space]  |  255  |
+|  phone, fax, phext  |  digits, -[hyphen] (DO NOT enter + before country code)  |  16  |
+|  institute, department  |  All printable characters but [back-slash], ` [back-quote]   |  255  |
+|  country, state   |  alphabets, digits,  [space], -[hyphen], '[apostrophe], .[period], _[underscore], ,[comma], ( ) # & @ / ; : + *  |  32  |
+|  city  |  alphabets, digits,  [space], -[hyphen], '[apostrophe], .[period], _[underscore], ,[comma], ( ) # & @ / ; : + *  |  64  |
+|  street  |  alphabets, digits,  [space], -[hyphen], '[apostrophe], .[period], _[underscore], ,[comma], ( ) # & @ / ; : + *  |  255  |
+|  zip  |  alphabets, digits, -[hyphen]  |  16  |                             
 
 #### Requirements for Describing SUBMITTER
 
@@ -383,8 +330,6 @@ Example: COMMENT and ST\_COMMENT in annotation file
 |       | COMMENT     |          | line                     | Please visit our web site.                 |
 |       |             |          | line                     | URL:http://www.ddbj.nig.ac.jp              |
 |       | ST\_COMMENT |          | tagset\_id               | Genome-Assembly-Data                       |
-|       |             |          | Finishing Goal           | High Quality Draft                         |
-|       |             |          | Current Finishing Status | High Quality Draft                         |
 |       |             |          | Assembly Method          | GS De Novo Assembler v. 2.0                |
 |       |             |          | Assembly Name            | Mmus\_1.0                                  |
 |       |             |          | Genome Coverage          | 50x                                        |
@@ -421,44 +366,29 @@ Example: COMMENT and ST\_COMMENT in annotation file
     In case of Assembly-Data, use following Qualifiers.
     
     List of Qualifiers for Genome-Assembly-Data (<span class="red">Requierd</span>)
+
+
+    | Qualifier                                      | designation and content                          | Remarks                                                             |
+    | ---------------------------------------------- | ------------------------------ | -------------------------------------------------------------- |
+    | <span class="red">Assembly Method</span>       | Name of program and the version used assembling sequences. Mandatory.      |                                                                |
+    | Assembly Name | Name that the submitter has given to that assembly of the genome. Mandatory for Eukaryote. | we recommend to describe in the format： [abbreviated name of species or common name of organism] + [version] (i.e. Btau_4.0) |
+    | <span class="red">Genome Coverage</span>       | Approximate sequencing depth. Mandatory.              |                                                                |
+    | <span class="red">Sequencing Technology</span> | Platform(s) used to generate the sequence. Mandatory.             |                                                                |
     
-<table>
-  <thead>
-    <tr>
-      <th>Qualifier</th>
-      <th>designation and content</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-      <span class="red">Assembly Method</span>
-      </td>
-      <td>Name of program and the version used assembling sequences. Mandatory.</td>
-    </tr>
-    <tr>
-      <td>Assembly Name</td>
-      <td>Name and version for assembled sequences</td>
-    </tr>
-    <tr>
-      <td>Coverage</td>
-      <td>Approximate sequencing depth.</td>
-    </tr>
-    <tr>
-      <td>
-      <span class="red">Sequencing Technology</span>
-      </td>
-      <td>Platform(s) used to generate the sequence. Mandatory.</td>
-    </tr>
-  </tbody>
-</table>
+    List of Qualifiers for Assembly-Data (<span class="red">Requierd</span>)
+
+    |  Qualifier  |  designation and content  |
+    | ---- | ---- |
+    |  <span class="red">Assembly Method</span>	  |  Name of program and the version used assembling sequences. Mandatory.  |
+    |  Assembly Name	  |  Name and version for assembled sequences  |
+    |  Coverage	  |  Approximate sequencing depth.  |
+    |  <span class="red">Sequencing Technology</span>	  |  Platform(s) used to generate the sequence. Mandatory.  |
   
-  - If you have any question to describe ST\_COMMENT, please contact us
-    by email prior to your submission.
+  - If you have any question to describe ST\_COMMENT, please contact us by email prior to your submission.
 
 ### Biological Features<a name="biological_feature"></a>
 
-Example: source and CDS features in annotation file　(<span class="red">Requierd</span>)
+Example: source and CDS features in annotation file(<span class="red">Requierd</span>)
 
 | Entry | Feature                         | Location                                                    | Qualifier                          | Value                    |
 | ----- | ------------------------------- | ----------------------------------------------------------- | ---------------------------------- | ------------------------ |
@@ -476,8 +406,7 @@ Example: source and CDS features in annotation file　(<span class="red">Requier
 
 #### Requirements for Describing Feature/Location/Qualifier
 
-  - In [Feature Table Definition](/ddbj/full_index-e.html), each Qualifier has a / \[slash\] on its head, however do not use slashes
-    for Qualifiers in the annotation file.
+  - In [Feature Table Definition](/ddbj/full_index-e.html), each Qualifier has a / \[slash\] on its head, however do not use slashes for Qualifiers in the annotation file.
   - Qualifiers marked with \* (organism、mol\_type) are mandatory items. Features, source and at least one other feature are mandatory items for each entry. Please be sure to input them correctly.
   - You can find the rule to describe Location on [Description of Location](/ddbj/location-e.html).
   - You can see Qualifiers are legal for each Feature in [Feature/Qualifier Usage Matrix](/files/pdf/ddbj/fq-e.pdf). Some of
@@ -677,7 +606,7 @@ Specified values for KEYWORD/keyword(<span class="red">Requierd</span>)
     |  Entry  |  Feature  |  Location  |  Qualifier  |  Value  |
     | ---- | ---- | ---- | ---- | ---- |
     |    |  <span class="red">KEYWORD</span>  |    |  <span class="red">keyword</span>   |  <span class="red">HTG</span>  |
-    |    |    |    |  <span class="red">keyword</span>  |  <span class="red">HTGS_DRAFT</span>  |
+    |    |    |    |  <span class="red">keyword</span>  |  <span class="red">HTGS_PHASE2</span>  |
 
 ### DBLINK
 
@@ -1051,8 +980,8 @@ component: a sequence used to construct a larger sequence (i.e. piece entry)
               <td colspan="2">The line count for the components/gaps that make up the object.</td>
             </tr>
             <tr>
-              <td rowspan="10">5</td>
-              <td rowspan="10">component_type</td>
+              <td rowspan="10" class="borderbtm">5</td>
+              <td rowspan="10" class="borderbtm">component_type</td>
               <td colspan="2">The sequencing status of the component. These typically correspond to keywords in the International Sequence Database (GenBank/EMBL/DDBJ) submission. Current acceptable values are:</td>
             </tr>
             <tr>
@@ -1125,8 +1054,8 @@ component: a sequence used to construct a larger sequence (i.e. piece entry)
       <td colspan="2">The end of the part of the component that contributes to the object</td>
     </tr>
     <tr>
-      <td rowspan="7">9</td>
-      <td rowspan="7">orientation</td>
+      <td rowspan="7" class="borderbtm">9</td>
+      <td rowspan="7" class="borderbtm">orientation</td>
       <td colspan="2">The orientation of the component relative to the object.<br>Acceptable values are:</td>
     </tr>
     <tr>
@@ -1210,8 +1139,8 @@ Description on each column（column 6 - column 9）：If column 5 contains N and
       <td colspan="2">The linkage between the adjacent lines (Values: "yes" or "no")</td>
     </tr>
     <tr>
-      <td rowspan="12">9</td>
-      <td rowspan="12">linkage evidence</td>
+      <td rowspan="12" class="borderbtm">9</td>
+      <td rowspan="12" class="borderbtm">linkage evidence</td>
       <td colspan="2">This specifies the type of evidence used to assert linkage (as indicated in column 8b). Accepted values:</td>
     </tr>
     <tr>

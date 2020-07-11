@@ -17,8 +17,6 @@ related_pages:
     url: services/mass-form-e.html
 ---
 
-# transChecker User’s Manual
-
 TransChecker is a software tool developed by DDBJ for checking translation into amino acid sequence from [CDS features](/ddbj/cds-e.html) that are described in
 [sequence](/ddbj/file-format-e.html#sequence) and [annotation](/ddbj/file-format-e.html#annotation) files.
 
