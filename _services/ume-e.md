@@ -102,7 +102,7 @@ You can move to this panel by clicking the Check tab enclosed in the red square.
 
 Execute Parser through the following steps.
 
-![]({{ site.baseurl }}/assets/images/ddbj/UME5.png "Parser: verification of syntax and format")
+![]({{ site.baseurl }}/assets/images/ddbj/UME5.png "Parser: verification of syntax and format"){:.w600}
 
 Click Check tab and move to Check panel.
 
@@ -131,7 +131,7 @@ Before using transChecker, both two files should be checked by [Parser](#validat
 Please note that when some Parser error is found, transChecker is terminated without any result. Execute transChecker through the
 following steps.
 
-![]({{ site.baseurl }}/assets/images/ddbj/UME6.png "transChecker")
+![]({{ site.baseurl }}/assets/images/ddbj/UME6.png "transChecker"){:.w600}
 
 Click Check tab to move to Check panel.
 
@@ -168,7 +168,7 @@ Before using FFconv, both two files should be checked by , and remove all of Par
 
 Execute FFconv through the following steps.
 
-![]({{ site.baseurl }}/assets/images/ddbj/UME7.png "FFconv")
+![]({{ site.baseurl }}/assets/images/ddbj/UME7.png "FFconv"){:.w600}
 
 Click Check tab to move to Check panel.
 
@@ -201,7 +201,7 @@ You can move to this panel by clicking the Contig tab enclosed in the red square
 
 Basically, AGPParser checks the format of [AGP file](/ddbj/file-format-e.html#agp).AGP file. When you specify [Annotation file](/ddbj/file-format-e.html#annotation) and/or multi-fasta file including all of sequences cited by AGP file, AGPParser also checks the consistency between the two or three files.
 
-![]({{ site.baseurl }}/assets/images/ddbj/UME8.png "Executing AGPParser")
+![]({{ site.baseurl }}/assets/images/ddbj/UME8.png "Executing AGPParser"){:.w600}
 
 Click Contig tab to move to Contig pannel.
 
