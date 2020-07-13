@@ -114,27 +114,163 @@ Feature/Qualifier の部分一致検索 Feature Key 、 Qualifier Name 、 Quali
 
 参考: [「Available Fields」](http://ddbj.nig.ac.jp/arsa/quick_search?lang=ja)
 
-|  検索フィールド名  |  略称  |  説明  |  例  |
-| ---- | ---- | ---- | ---- |
-|  PrimaryAccessionNumber  |  pa  |  [ACCESSION の先頭に記載された「Accession 番号」](/ddbj/flat-file.html#Accession)  |  AB999999  |
-|  AccessionNumber  |  an  |  [ACCESSION に記載された「Accession 番号」](/ddbj/flat-file.html#Accession)  |  AB999999, AB888888, AB777777  |
-|  Division  |  dv  |  [LOCUS に記載された「Division」](/ddbj/flat-file.html#Division)  |  HUM  |
-|  SequenceLength  |  sl  |  [LOCUS に記載された「配列長」](/ddbj/flat-file.html#SequenceLength)  |  450  |
-|  MolecularType  |  mt  |  [LOCUS に記載された「塩基配列の分子タイプ」](/ddbj/flat-file.html#MoleculeType) <br> [PRT はJPO, KIPO 経由のアミノ酸特許配列データ](/column/patent.html#4)  |  mRNA  |
-|  MolecularForm  |  mf  |   [LOCUS に記載された「塩基配列の分子形態」](/ddbj/flat-file.html#MoleculeForm)  |  linear  |
-|  Date  |  dt  |  [LOCUS に記載された「データの最終公開日」](/ddbj/flat-file.html#ModificationDate) |  01-JUN-2009  |
-|  Definition  |  df  |  [DEFINITION に記載されたテキスト](/ddbj/flat-file.html#Definition)  |  Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate<br>dehydrogenase, partial cds.  |
-|  Comment  |  cm  |  [COMMENT に記載されたテキスト](/ddbj/flat-file.html#Comment)  |  Human cDNA sequencing project.  |
-|  Keyword  |  kw  |  [KEYWORDS に記載されたテキスト](/ddbj/flat-file.html#Keywords)  |  HTC, HTC_FLI, oligo capping  |
-|  Organism  |  og  | 	[ORGANISM に記載された「由来生物名」](/ddbj/flat-file.html#Organism)  |  Homo sapiens  |
-|  Lineage  |  ln  |    [ORGANISM に記載された「生物学的分類」](/ddbj/flat-file.html#Organism)  |  Eukaryota, Metazoa, ..., Hominidae, Homo  |
-|  ReferenceAuthor  |  ra  |   [REFERENCE の AUTHORS に記載されたテキスト](/ddbj/flat-file.html#Reference1)  |  Mishima,H. , Shizuoka,T. , Fuji,I.  |
-|  ReferenceTitle  |  rt  |   [REFERENCE の TITLE に記載されたテキスト](/ddbj/flat-file.html#Reference1)  |  Direct Submission , Glyceraldehyde-3-phosphate dehydrogenase expressed in human liver  |
-|  ReferenceJournal  |  rj  |    [REFERENCE の JOURNAL に記載されたテキスト](/ddbj/flat-file.html#Reference1)  |  Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.<br>Contact:Hanako Mishima<br>National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,<br>Mishima, Shizuoka 411-8540, Japan , Unpublished (2009)  |
-|  ReferencePubmedID  |  rp  |  REFERENCE の PUBMED に記載されたテキスト   |  1111111  |
-|  Feature  |  fe  |  [FEATURES に記載された「Feature 単位のテキスト」](/ddbj/flat-file.html#Features)  |  source 1..450<br>/chromosome="12"<br>/clone="GT200015" <br>/clone_lib="lambda gt11 human liver cDNA (GeneTech.<br>No.20)" <br>/db_xref="taxon:9606" <br>/map="12p13" <br>/mol_type="mRNA" <br>/organism="Homo sapiens" <br>/tissue_type="liver"<br>CDS 86..&gt;450<br>/codon_start=1<br>/gene="GAPD" <br>/product="glyceraldehyde-3-phosphate dehydrogenase" <br>/protein_id="BAA12345.1" <br>/transl_table=1<br>/translation="MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT<br>YMFKYDTVHGQWKHHEVKVKDSKTLLFGEKEVTVFGCRNPKEIPWGETSAEFVVEYTG<br>VFTDKDKAVAQLKGGAKKV"  |
-|  FeatureQualifier  |  fq  |  [FEATURES に記載された「Qualifier 単位のテキスト」](/ddbj/flat-file.html#Features)  |  source 1..450<br>source /chromosome=12<br>CDS /translation=MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT<br>YMFKYDTVHGQWKHHEVKVKDSKTLLFGEKEVTVFGCRNPKEIPWGETSAEFVVEYTG<br>VFTDKDKAVAQLKGGAKKV  |
-|  AllText  |  at  |  [フラットファイルに記載された全テキスト](/ddbj/flat-file.html)  |  LOCUS ～ //  | 
+<table>
+        <caption>※正規表現検索可（<span>AllText</span>を除く）</caption>
+        <thead>
+          <tr>
+            <th>検索フィールド名</th>
+            <th>略称</th>
+            <th>説明</th>
+            <th>例</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span>PrimaryAccessionNumber</span></td>
+            <td><span>pa</span></td>
+            <td><a href="/ddbj/flat-file.html#Accession"><span>ACCESSION</span> の先頭に記載された「Accession 番号」</a></td>
+            <td><span>AB999999</span></td>
+          </tr>
+          <tr>
+            <td><span>AccessionNumber</span></td>
+            <td><span>an</span></td>
+            <td><a href="/ddbj/flat-file.html#Accession"><span>ACCESSION</span> に記載された「Accession 番号」</a></td>
+            <td><span>AB999999, AB888888, AB777777</span></td>
+          </tr>
+          <tr>
+            <td><span>Division</span></td>
+            <td><span>dv</span></td>
+            <td><a href="/ddbj/flat-file.html#Division"><span>LOCUS</span> に記載された「Division」</a></td>
+            <td><span>HUM</span></td>
+          </tr>
+          <tr>
+            <td><span>SequenceLength</span></td>
+            <td><span>sl</span></td>
+            <td><a href="/ddbj/flat-file.html#SequenceLength"><span>LOCUS</span> に記載された「配列長」</a></td>
+            <td><span>450</span></td>
+          </tr>
+          <tr>
+            <td><span>MolecularType</span></td>
+            <td><span>mt</span></td>
+            <td>
+<a href="/ddbj/flat-file.html#MoleculeType"><span>LOCUS</span> に記載された「塩基配列の分子タイプ」</a><br>
+                <a href="/column/patent.html#4">PRT はJPO, KIPO 経由のアミノ酸特許配列データ</a>
+</td>
+            <td><span>mRNA</span></td>
+          </tr>
+          <tr>
+            <td><span>MolecularForm</span></td>
+            <td><span>mf</span></td>
+            <td><a href="/ddbj/flat-file.html#MoleculeForm"><span>LOCUS</span> に記載された「塩基配列の分子形態」</a></td>
+            <td><span>linear</span></td>
+          </tr>
+          <tr>
+            <td><span>Date</span></td>
+            <td><span>dt</span></td>
+            <td><a href="/ddbj/flat-file.html#ModificationDate"><span>LOCUS</span> に記載された「データの最終公開日」</a></td>
+            <td><span>01-JUN-2009</span></td>
+          </tr>
+          <tr>
+            <td><span>Definition</span></td>
+            <td><span>df</span></td>
+            <td><a href="/ddbj/flat-file.html#Definition"><span>DEFINITION</span> に記載されたテキスト</a></td>
+            <td><span>Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate<br>
+              dehydrogenase, partial cds.</span></td>
+          </tr>
+          <tr>
+            <td><span>Comment</span></td>
+            <td><span>cm</span></td>
+            <td><a href="/ddbj/flat-file.html#Comment"><span>COMMENT</span> に記載されたテキスト</a></td>
+            <td><span>Human cDNA sequencing project.</span></td>
+          </tr>
+          <tr>
+            <td><span>Keyword</span></td>
+            <td><span>kw</span></td>
+            <td><a href="/ddbj/flat-file.html#Keywords"><span>KEYWORDS</span> に記載されたテキスト</a></td>
+            <td><span>HTC, HTC_FLI, oligo capping</span></td>
+          </tr>
+          <tr>
+            <td><span>Organism</span></td>
+            <td><span>og</span></td>
+            <td><a href="/ddbj/flat-file.html#Organism"><span>ORGANISM</span> に記載された「由来生物名」</a></td>
+            <td><span>Homo sapiens</span></td>
+          </tr>
+          <tr>
+            <td><span>Lineage</span></td>
+            <td><span>ln</span></td>
+            <td><a href="/ddbj/flat-file.html#Organism"><span>ORGANISM</span> に記載された「生物学的分類」</a></td>
+            <td><span>Eukaryota, Metazoa, ..., Hominidae, Homo</span></td>
+          </tr>
+          <tr>
+            <td><span>ReferenceAuthor</span></td>
+            <td><span>ra</span></td>
+            <td><a href="/ddbj/flat-file.html#Reference1"><span>REFERENCE</span> の <span>AUTHORS</span> に記載されたテキスト</a></td>
+            <td><span>Mishima,H. , Shizuoka,T. , Fuji,I.</span></td>
+          </tr>
+          <tr>
+            <td><span>ReferenceTitle</span></td>
+            <td><span>rt</span></td>
+            <td><a href="/ddbj/flat-file.html#Reference1"><span>REFERENCE</span> の <span>TITLE</span> に記載されたテキスト</a></td>
+            <td><span>Direct Submission , Glyceraldehyde-3-phosphate dehydrogenase expressed in human liver</span></td>
+          </tr>
+          <tr>
+            <td><span>ReferenceJournal</span></td>
+            <td><span>rj</span></td>
+            <td><a href="/ddbj/flat-file.html#Reference1"><span>REFERENCE</span> の <span>JOURNAL</span> に記載されたテキスト</a></td>
+            <td><span>Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.<br>
+              Contact:Hanako Mishima<br>
+              National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,<br>
+              Mishima, Shizuoka 411-8540, Japan , Unpublished (2009)</span></td>
+          </tr>
+          <tr>
+            <td><span>ReferencePubmedID</span></td>
+            <td><span>rp</span></td>
+            <td>
+<span>REFERENCE</span> の <span>PUBMED</span> に記載されたテキスト</td>
+            <td><span>1111111</span></td>
+          </tr>
+          <tr>
+            <td><span>Feature</span></td>
+            <td><span>fe</span></td>
+            <td><a href="/ddbj/flat-file.html#Features"><span>FEATURES</span> に記載された「Feature 単位のテキスト」</a></td>
+            <td><pre>source 1..450
+/chromosome="12" 
+/clone="GT200015" 
+/clone_lib="lambda gt11 human liver cDNA (GeneTech.
+No.20)" 
+/db_xref="taxon:9606" 
+/map="12p13" 
+/mol_type="mRNA" 
+/organism="Homo sapiens" 
+/tissue_type="liver"
+CDS 86..&gt;450
+/codon_start=1
+/gene="GAPD" 
+/product="glyceraldehyde-3-phosphate dehydrogenase" 
+/protein_id="BAA12345.1" 
+/transl_table=1
+/translation="MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT
+YMFKYDTVHGQWKHHEVKVKDSKTLLFGEKEVTVFGCRNPKEIPWGETSAEFVVEYTG
+VFTDKDKAVAQLKGGAKKV" </pre></td>
+          </tr>
+          <tr>
+            <td><span>FeatureQualifier</span></td>
+            <td><span>fq</span></td>
+            <td><a href="/ddbj/flat-file.html#Features"><span>FEATURES</span> に記載された「Qualifier 単位のテキスト」</a></td>
+            <td><pre><code>source 1..450
+source /chromosome=12
+CDS /translation=MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT
+YMFKYDTVHGQWKHHEVKVKDSKTLLFGEKEVTVFGCRNPKEIPWGETSAEFVVEYTG
+VFTDKDKAVAQLKGGAKKV</code></pre></td>
+          </tr>
+           <tr>
+            <td><span>AllText</span></td>
+            <td><span>at</span></td>
+            <td><a href="/ddbj/flat-file.html">フラットファイルに記載された全テキスト</a></td>
+            <td><span>LOCUS ～ //</span></td>
+          </tr>
+        </tbody>
+      </table>
 
 ※正規表現検索可（AllTextを除く）
 
