@@ -700,7 +700,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 
   ```
   <Publication id="15557739">
-  <DbType>ePubmed</DbType>
+    <DbType>ePubmed</DbType>
   </Publication>
   <ProjectReleaseDate> ...
   ```
@@ -712,7 +712,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 
   ```
   <Publication id="10.1093/nar/gku1120">
-  <DbType>eDOI</DbType>
+    <DbType>eDOI</DbType>
   </Publication>
   <ProjectReleaseDate> ...
   ```
