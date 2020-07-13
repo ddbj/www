@@ -400,9 +400,9 @@ DDBJ BioProject 独自に最大タグ長を12文字に制限しています。�
 
 : [Taxonomy データベース](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html)に登録されている生物名。メタゲノムや環境サンプルなどの生物名を特定できないサンプルについては[こちらのリスト](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908&lvl=3&lin=f&keep=1&srchmode=1&unlock)を参考にしてください。
 
-複数の生物種を対象としたプロジェクトの場合，共通する階層までの生物分類 (例 属レベルまで) を記入してください。
+  複数の生物種を対象としたプロジェクトの場合，共通する階層までの生物分類 (例 属レベルまで) を記入してください。
 
-: [Taxonomy データベース](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html) に該当する生物が登録されていない場合は，Novel organism を選択し [Description of novel organism](#Novel_organism) に[新規生物に関する参考情報](/ddbj/organism.html)，Organism Name に希望する生物名を記入します。
+  [Taxonomy データベース](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html) に該当する生物が登録されていない場合は，Novel organism を選択し [Description of novel organism](#Novel_organism) に[新規生物に関する参考情報](/ddbj/organism.html)，Organism Name に希望する生物名を記入します。
 
 <!-- end list -->
 
@@ -698,12 +698,12 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 [PubMed ID](#BioProject_PubMed_ID)<a name="BioProject_PubMed_ID"></a>  
 : 文献の PubMed ID(s)。
 
-```
-<Publication id="15557739">
-    <DbType>ePubmed</DbType>
-</Publication>
-<ProjectReleaseDate> ...
-```
+  ```
+  <Publication id="15557739">
+      <DbType>ePubmed</DbType>
+  </Publication>
+  <ProjectReleaseDate> ...
+  ```
 
 <!-- end list -->
 
