@@ -402,14 +402,8 @@ Select the sequences which you would like to suceed the clustalW, then
 press the "ClustalW" button. Your selected sequences are automatically
 pasted in the ClustalW query box.
 
-(1)
-
-![ClustalW Set up（１）]({{ site.baseurl }}/assets/images/help/blast_help_05-e.gif)
-
-(2)
-
-![ClustalW Set up（2）]({{ site.baseurl }}/assets/images/help/blast_help_06-e.gif)
-
+1. ![ClustalW Set up（１）]({{ site.baseurl }}/assets/images/help/blast_help_05-e.gif)
+2. ![ClustalW Set up（2）]({{ site.baseurl }}/assets/images/help/blast_help_06-e.gif)
 
 ## Reference
 

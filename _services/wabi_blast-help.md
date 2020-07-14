@@ -353,8 +353,8 @@ BLAST検索 の検索条件や結果通知方法などを HTTPパラメーター
               <pre class="code"><code class="language-plaintext highlighter-rouge">例: &gt;my query sequence 1
 CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
 GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
-GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC</code></pre>
-              <span style="color:red;">※配列数を増やしても並列度は上がりません。
+GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC</code></pre><br>
+              <span class="red">※配列数を増やしても並列度は上がりません。
               ジョブ管理エンジンによる負荷分散も考慮すると、
               Web API として利用するならば配列数は少なめにすることを推奨します。</span>
 </td>
@@ -398,7 +398,7 @@ GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC</code></pre>
     <td>BLAST検索 のジョブをキューに投入する。</td>
     </tr>
     <tr>
-    <td rowspan="2" style="background-color: white;" class="borderbtm">HTTP レスポンス</td>
+    <td rowspan="2" class="borderbtm">HTTP レスポンス</td>
     <td>成功した場合</td>
     <td>
 <a href="#parameter-Request-ID">Request ID</a> を含むジョブ情報</td>
@@ -631,7 +631,7 @@ HTTP ステータス 400
 <div class="accordion-menu">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">利用例</a></h4>
 <div class="accordion-content">Java で SpringFramework の RESTクライアント を使う場合:
-   <script src="https://gist.github.com/ddbj-repo/ec96049ec11c1d22303d9fcdea9f70cd.js"></script>
+    <script src="https://gist.github.com/ddbj-repo/ec96049ec11c1d22303d9fcdea9f70cd.js"></script>
 
 [« 閉じる](javascript:void(0)){: .close-content-btn}
 </div>
@@ -1155,7 +1155,7 @@ HTTP ステータス 400
   <tbody>
     <tr>
       <td colspan="2">HTTP メソッド</td>
-      <td><code  class="language-plaintext highlighter-rouge">GET</code></td>
+      <td><code class="language-plaintext highlighter-rouge">GET</code></td>
     </tr>
     <tr>
       <td colspan="2">URI</td>
@@ -1246,7 +1246,7 @@ HTTP ステータス 400
 
 入力値の例
 
-| HTTP パラメーター | 入力値           |
+| HTTP パラメーター | 入力値     |
 | ----------- | ------------- |
 | `imageId`   | `"1"`         |
 | `format`    | `"imagefile"` |
@@ -1617,8 +1617,6 @@ DDBJ ALL, DDBJ NEW データベース値
 |  `una`, `new_una`  |  Unannotated Seq  |  未注釈データ (UNA)  |
 |  `gss`, `new_gss`  |  GSS  |  ゲノム研究関連 (genome survey sequences)  |
 |  `sts`, `new_sts`  |  STS  |  STS (sequence tagged sites)  |
-
-
 
 Refseq NA データベース値
 
