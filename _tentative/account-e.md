@@ -7,10 +7,7 @@ category: tentative
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1092WV_aXjA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
-
 Create a DDBJ submission account.
-
 
 ## DDBJ submission account
 
@@ -35,9 +32,6 @@ key is required.
 {% include image.html url="books/hac01.jpg" caption="Two types of submission account." %}
 {:/}
 
-
-
-
 ## Account for BioProject/BioSample submissions
 
 ### Create an account on website
@@ -56,7 +50,6 @@ Open the submission portal page at
 {% include image.html url="books/account_1_new.png" caption="Create a new submission account" %}
 {:/}
 
-
 Enter necessary information and click the [Continue].
 
 {::options parse_block_html="true" /}
@@ -74,13 +67,11 @@ Login ID:
 {% include image.html url="books/account_2.jpg" caption="Enter basic account information" %}
 {:/}
 
-
 Enter basic account information and reserve an account ID.
 
 {::nomarkdown}
 {% include image.html url="books/account_3.jpg" caption="Reserve an account" %}
 {:/}
-
 
 A confirmation mail is sent to the entered e-mail address. Activate your
 reserved account according to the mail text.

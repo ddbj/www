@@ -5,12 +5,13 @@ pathname: before-sending-inquiries-e
 category: tentative
 ---
 
+## Before sending inquiry to us
+
 Since we carry out DDBJ services within the limited number of members, we have to prioritize our tasks.  
 Please contact us via [web form](/contact-e.html#to-ddbj) or mail. 
 In principle, we do not accept any inquiry via phone call.  
 Please see the following manners before sending your questions to us. If your inquiry violates the manners, we will assign lower priority to it.
 In cases of the extreme violations, we can not reply the questions.
-
 
 Before asking, investigate by yourself as far as you can.  
 : It may be inadequate both our services and their explanation
