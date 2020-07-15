@@ -32,11 +32,11 @@ In case of data addition or deletion, contact us via <a href="/contact-e.html">C
 ### Narrowly-defined DDBJ, as a counterpart of GenBank and EMBL-Bank
 
 Making requests  
-: We only accept updating requests from [the original submitter](/ddbj/submission-e.html#submitter) of the entry.  
+: We only accept updating requests from [the original submitter](/ddbj/submission-e.html#submitter) of the entry.<br> 
 Therefore if you are not the submitter you will need authorization from the submitter before making requests for the entry.
 
 Accepting your requests  
-: We will send you a E-mail when your request is accepted.  
+: We will send you a E-mail when your request is accepted. <br> 
 We will contact you only if we have queries or require further information.
 
 How to accepting your requests  

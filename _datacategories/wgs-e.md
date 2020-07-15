@@ -30,8 +30,6 @@ related_pages:
     url: datacategories/tpa-e.html
 ---
 
-# WGS
-
 The whole genome shotgun approach (the whole genome is once blasted into millions of fragment, which are sequenced and reassembled to produce a series of sequence 'scaffolds'.) has been used to sequence the genome of various organisms.
 
 The large set of contigs from the proceeding genome project can be submitted to DDBJ/ENA/GenBank as WGS data.  
