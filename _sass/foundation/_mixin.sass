@@ -6,3 +6,9 @@
 
 @mixin inner-sp
   width: auto
+
+@mixin anchor
+  color: $COLOR_BLACK
+  transition: color $DURATION_GUI
+  &:active, &:hover
+    color: $COLOR_KEY

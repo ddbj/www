@@ -950,7 +950,17 @@
       }
     }
   ];
-  const CSS = `#DDBJ_CommonHeader {
+  const CSS = `@charset "UTF-8";
+  @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700,900");
+  #DDBJ_CommonHeader, #DDBJCommonBottomMenu, #DDBJCommonFooter {
+    font-family: "Roboto Condensed", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
+  }
+  #DDBJ_CommonHeader a, #DDBJCommonBottomMenu a, #DDBJCommonFooter a {
+    font-family: "Roboto Condensed", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
+    text-decoration: underline;
+  }
+  
+  #DDBJ_CommonHeader {
     height: 40px;
     background-color: black;
     color: white;
@@ -963,6 +973,7 @@
   #DDBJ_CommonHeader > .DDBJ_inner {
     margin: 0 auto;
     max-width: 128rem;
+    max-width: 1280px;
     padding: 0 10px;
     height: 40px;
     display: flex;
@@ -988,6 +999,8 @@
   #DDBJ_CommonHeader > .DDBJ_inner > .DDBJ_services > .DDBJ_title {
     cursor: pointer;
     padding-left: 16px;
+    font-size: 12px;
+    line-height: 40px;
   }
   #DDBJ_CommonHeader > .DDBJ_inner > .DDBJ_services > .DDBJ_title:after {
     content: "";
@@ -1005,6 +1018,7 @@
     display: flex;
     justify-content: center;
     position: absolute;
+    top: 40px;
     left: -93px;
     width: 100vw;
     max-width: 1280px;
@@ -1027,6 +1041,12 @@
   #DDBJ_CommonHeader > .DDBJ_inner > .DDBJ_services > .DDBJ_rows > .DDBJ_row > .DDBJ_group > .DDBJ_grouptitle {
     color: #ff9905;
     padding: 4px 0;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+  }
+  #DDBJ_CommonHeader > .DDBJ_inner > .DDBJ_services > .DDBJ_rows > .DDBJ_row > .DDBJ_group > ul {
+    margin: 0;
   }
   #DDBJ_CommonHeader > .DDBJ_inner > .DDBJ_services > .DDBJ_rows > .DDBJ_row > .DDBJ_group > ul > li {
     padding: 4px 0;
@@ -1074,14 +1094,26 @@
   }
   #DDBJCommonBottomMenu > .DDBJ_inner > .DDBJ_sitemap > .DDBJ_group > .DDBJ_title {
     font-size: 14px;
+    font-weight: bold;
     line-height: 1.8;
   }
   #DDBJCommonBottomMenu > .DDBJ_inner > .DDBJ_sitemap > .DDBJ_group > ul {
+    margin: 0;
     font-size: 12px;
     line-height: 1.6;
   }
+  #DDBJCommonBottomMenu > .DDBJ_inner > .DDBJ_sitemap > .DDBJ_group > ul > li > a {
+    color: #1C1B19;
+    transition: color 0.2s;
+  }
+  #DDBJCommonBottomMenu > .DDBJ_inner > .DDBJ_sitemap > .DDBJ_group > ul > li > a:active, #DDBJCommonBottomMenu > .DDBJ_inner > .DDBJ_sitemap > .DDBJ_group > ul > li > a:hover {
+    color: #FF7300;
+  }
   #DDBJCommonBottomMenu > .DDBJ_inner > .DDBJ_information {
     margin-bottom: 20px;
+  }
+  #DDBJCommonBottomMenu > .DDBJ_inner > .DDBJ_information > ul {
+    margin: 0;
   }
   #DDBJCommonBottomMenu > .DDBJ_inner > .DDBJ_information > ul > li {
     display: inline-block;
@@ -1091,8 +1123,18 @@
   #DDBJCommonBottomMenu > .DDBJ_inner > .DDBJ_information > ul > li + li {
     margin-left: 30px;
   }
+  #DDBJCommonBottomMenu > .DDBJ_inner > .DDBJ_information > ul > li > a {
+    color: #1C1B19;
+    transition: color 0.2s;
+  }
+  #DDBJCommonBottomMenu > .DDBJ_inner > .DDBJ_information > ul > li > a:active, #DDBJCommonBottomMenu > .DDBJ_inner > .DDBJ_information > ul > li > a:hover {
+    color: #FF7300;
+  }
   #DDBJCommonBottomMenu > .DDBJ_inner > .DDBJ_information > ul > li > a > img {
     width: 40px;
+  }
+  #DDBJCommonBottomMenu > .DDBJ_inner > .DDBJ_partners > ul {
+    margin: 0;
   }
   #DDBJCommonBottomMenu > .DDBJ_inner > .DDBJ_partners > ul > li {
     display: inline-block;
@@ -1108,19 +1150,24 @@
   #DDBJCommonFooter > .DDBJ_inner > .DDBJ_links {
     padding: 16px 0;
   }
+  #DDBJCommonFooter > .DDBJ_inner > .DDBJ_links > ul {
+    margin: 0;
+  }
   #DDBJCommonFooter > .DDBJ_inner > .DDBJ_links > ul > li {
     display: inline-block;
+    margin: 0;
   }
   #DDBJCommonFooter > .DDBJ_inner > .DDBJ_links > ul > li + li {
     margin-left: 20px;
   }
   #DDBJCommonFooter > .DDBJ_inner > .DDBJ_links > ul > li a {
     color: white;
-    font-size: 1.2;
+    font-size: 10px;
     line-height: 2;
   }
   #DDBJCommonFooter > .DDBJ_inner > .DDBJ_links > ul > li address {
     font-style: normal;
+    margin: 0;
   }
   
   @media screen and (max-width: 480px) {
