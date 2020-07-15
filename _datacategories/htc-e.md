@@ -32,10 +32,6 @@ related_pages:
     url: /ddbj/tpa-e.html
 ---
 
-
-
-# HTC
-
 The HTC division of DDBJ/ENA/GenBank contains draft sequence data
 derived from cDNA libraries created using full length insert cDNA (mRNA)
 cloning methods.  

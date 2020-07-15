@@ -22,9 +22,6 @@ related_pages:
     url: /ddbj/geneticcode-e.html)
 ---
 
-
-# The Genetic Codes
-
 ## Defiition of /transl_table qualifier
 
 ```
@@ -1492,7 +1489,7 @@ AGG  Lys         Arg
 
 ### Systematic Range:
 
-**Cephalodiscidae** (*Hemichordata*)*
+**Cephalodiscidae** (*Hemichordata*)
 
 ### Comments:
 

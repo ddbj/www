@@ -22,11 +22,7 @@ related_pages:
     url: /ddbj/example-e.html
 ---
 
-# Codes Used in Sequence Description
-
-
 ## Nucleotide
-
 
 ### Nucleotide Base Codes
 
@@ -34,7 +30,6 @@ The nucleotide base codes that are used with the International
 Nucleotide Sequence Database is as follows.  
 Sequence data is expressed with small letters only. Capital letter will
 be automatically converted to small letter.
-
 
 | Symbol | Meaning          | Explanation                   |
 | ------ | ---------------- | ----------------------------- |

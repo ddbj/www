@@ -19,7 +19,6 @@ related_pages:
     url: /ddbj/mass-form-e.html)
 ---
 
-
 <span class="red">Submission of research data from human subjects</span>
 
 For all data from human subjects researches submitted to DDBJ, it is
@@ -30,8 +29,6 @@ In principle, make sure to remove any direct personal identifiers of
 human subjects from your submissions.  
 Before submission, read "[Submission of research data from human
 subjects](/policies-e.html#human)".
-
-
 
 ## What is MSS?
 
@@ -65,13 +62,9 @@ If you are to submit reads from sequencers, please refer [DRA; DDBJ
 Sequence Read Archive](/dra/index-e.html).  
 Please confirm [Categories for Sequence Data](/data-categories-e.html).
 
-
 ## The Flow of MSS
 
-
 ![]({{ site.baseurl }}/assets/images/ddbj/MSS-flow-en.png "The Flow of MSS")
-
-
 
 ### 1. Application
 
@@ -79,14 +72,11 @@ Please apply for your submission from [MSS application　form](/ddbj/mass-form-e
 
 After confirmation, we will introduce submission procedures in detail.
 
-
-
 ### 2. Make submission files
 
 #### Submission files required for MSS
 
 Prepare following files required to submit your sequence data.
-
 
 Sequence file  
 : The text file that contains all nucleotide sequences in FASTA-like format.
@@ -124,7 +114,6 @@ numbers of them in annotation file.
 
 Before submitting to DDBJ, the files should be checked with software
 tools provided from DDBJ.
-
 
 UME (Utilities for MSS file Error check)  
 : You can verify the syntax, format and amino acid translation of [CDS
@@ -172,7 +161,6 @@ files](/ddbj/mss-tool-e.html)
   - Before installing Validation tools for data files, see [End-user
     license agreement](/ddbj/mss-tool-e.html#license).
 
-
 ### 3. Test submission
 
 In the test submission, you can confirm contents and format of your data
@@ -185,8 +173,6 @@ errors.
 
 If you are familiar to make data files required by MSS, you can omit the
 test submission.
-
-
 
 ### 4. Submission
 
@@ -217,7 +203,6 @@ movies.
 [macOS](https://youtu.be/jBfOqsJxDZU)）
 : Upload data files（[Windows](https://youtu.be/gJqgCvUc0Y8) /
 [macOS](https://youtu.be/aO2aVafS3ZE)）
-
 
 ### 5. Data release
 
