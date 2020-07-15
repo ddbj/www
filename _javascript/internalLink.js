@@ -9,6 +9,7 @@ export default function internalLink() {
     if (indexWrap) {
       const postContent = document.querySelector(".md-content"); //記事本文が書かれているラッパー
       const hTags = postContent.querySelectorAll("h2, h3"); //記事内のH2とH3タグを全て取得
+      const hTags_include_h4 = postContent.querySelectorAll("h2, h3, h4");
       if (hTags.length > 0) {
         let indexList = document.createElement("ul");
         let listSrc = "";
@@ -16,14 +17,16 @@ export default function internalLink() {
 
         for (let i = 0; i < hTags.length; i++) {
           let theHeading = hTags[i];
+          let theHeadingIncludeH4 = hTags_include_h4[i]
           let id = "";
-          if ( $(theHeading).attr("id") ){//既にidがあれば
-              id = $(theHeading).attr("id");//既存のidを使う
+          if ( $(theHeadingIncludeH4).children('a').attr("name") ){//既にidがあれば
+            id = $(theHeadingIncludeH4).children('a').attr("name");//既存のidを使う
           }else{
-              id = $(theHeading).text().replace(/ |:/g, "_").replace(/\(|\)/g, "");//不要な箇所を除去
-              id = jQuery.trim(id);//不要な箇所を除去
-              $(theHeading).attr("id", id);//リンクで飛べるようにIDをつける
+            id = $(theHeadingIncludeH4).text().replace(/ |:/g, "_").replace(/\(|\)/g, "");//不要な箇所を除去
+            id = jQuery.trim(id);//不要な箇所を除去
           }
+          id = encodeURIComponent(id);//idをエンコード
+          $(theHeadingIncludeH4).attr("id", id);//リンクで飛べるようにIDをつける
           //ここのid名がhref属性に指定されているaタグをh2、もしくはh3の後に挿入
           const a = document.createElement('a');
           theHeading.appendChild(a);
@@ -74,10 +77,11 @@ export default function internalLink() {
       // ページ内リンクでないナビゲーションが含まれている場合は除外する
       if (targetContents.charAt(0) == "#") {
         // ページ上部からコンテンツの開始位置までの距離を取得
-        let targetContentsTop = $(targetContents).offset().top;
+        const $targetContents = $(document.getElementById(targetContents.substr(1)));
+        let targetContentsTop = $targetContents.offset().top;
         // ページ上部からコンテンツの終了位置までの距離を取得
         let targetContentsBottom =
-          targetContentsTop + $(targetContents).outerHeight(true) - 1;
+          targetContentsTop + $targetContents.outerHeight(true) - 1;
         // 配列に格納
         contentsArr[i] = [targetContentsTop, targetContentsBottom];
       }
@@ -131,7 +135,6 @@ export default function internalLink() {
   });
 
   promise
-    
     .then(() => {
       createContentsArr();
       currentCheck();
@@ -151,6 +154,9 @@ export default function internalLink() {
       }
     }).then(() => {
       smoothScroll();
+      // hashを調べる
+      const hash = window.location.hash.substr(1);
+      // hashがあれば、スクロール
     }).catch((error) => {
       // エラーハンドリング
       console.error(error);

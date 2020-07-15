@@ -50,7 +50,7 @@ In 2010, databases at EBI were integrated to [ENA; European Nucleotide Archive](
     <tr>
       <th>Next generation reads</th>
       <td><a href="/dra/index.html">Sequence Read Archive</a></td>
-      <td rowspan="5"><a href="https://www.ebi.ac.uk/ena">European Nucleotide Archive (ENA)</a></td>
+      <td rowspan="5" class="borderbtm"><a href="https://www.ebi.ac.uk/ena">European Nucleotide Archive (ENA)</a></td>
       <td><a href="//trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?">Sequence Read Archive</a></td>
     </tr>
     <tr>

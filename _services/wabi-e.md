@@ -4,7 +4,7 @@ title: WABI Web API for Biology
 category: services
 ---
 
-# WABI (Web API for Biology)
+## WABI (Web API for Biology)
 
 WABI is a web API for using the search services of the DNA Data Bank of
 Japan (DDBJ) without needing to navigate the web front-end. Through the

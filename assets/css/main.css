@@ -492,10 +492,14 @@ input, textarea, select, button {
   .md-content code, .md-content pre {
     background-color: #E0E0E0;
     color: black;
-    padding: .3rem .6rem;
     font-size: 1.2rem;
     line-height: 1.6;
     font-family: 'courier', monospace; }
+  .md-content pre {
+    padding: .3rem .6rem;
+    display: inline-block; }
+  .md-content code {
+    white-space: break-spaces; }
   .md-content .attention {
     background-color: #FFF3DB;
     padding: 1rem 1.6rem;

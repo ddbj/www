@@ -14,10 +14,7 @@ and updates to DDBJ resources and tools.
 [![\*]({{ site.baseurl }}/assets/images/parts/rss.png)Subscribe](/rss/news-center-en.xml)
 | [Archive](/news/en/index-e.html)
 
-
 ## Database Resources
-
-
 
 ### Nucleotide Sequence Database
 
@@ -29,8 +26,6 @@ Database.
 |
 [Archive](/news/en/index-e.html?db=ddbj)
 
-
-
 ### Sequence Read Archive
 
 Announcements of updates and changes to the DDBJ Sequence Read Archive.
@@ -39,8 +34,6 @@ Announcements of updates and changes to the DDBJ Sequence Read Archive.
 [![\*]({{ site.baseurl }}/assets/images/parts/rss.png)Subscribe](/rss/news-dra-en.xml)
 | [Archive](/news/en/index-e.html?db=dra)
 
-
-
 ### Genomic Expression Archive
 
 Announcements of updates and changes to the Genomic Expression Archive.
@@ -48,8 +41,6 @@ Announcements of updates and changes to the Genomic Expression Archive.
 {: .feeds}
 [![\*]({{ site.baseurl }}/assets/images/parts/rss.png)Subscribe](/rss/news-gea-en.xml)
 | [Archive](/news/en/index-e.html?db=gea)
-
-
 
 ### BioProject
 
@@ -60,8 +51,6 @@ Announcements of updates and changes to the BioProject.
 |
 [Archive](/news/en/index-e.html?db=bioproject)
 
-
-
 ### BioSample
 
 Announcements of updates and changes to the BioSample.
@@ -71,8 +60,6 @@ Announcements of updates and changes to the BioSample.
 |
 [Archive](/news/en/index-e.html?db=biosample)
 
-
-
 ### Japanese Genotype-phenotype Archive
 
 Announcements of updates and changes to the Japanese Genotype-phenotype
@@ -81,4 +68,3 @@ Archive.
 {: .feeds}
 [![\*]({{ site.baseurl }}/assets/images/parts/rss.png)Subscribe](/rss/news-jga-en.xml)
 | [Archive](/news/en/index-e.html?db=jga)
-

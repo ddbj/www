@@ -3,6 +3,7 @@ layout: indexed_content
 title: 関連論文
 category: services
 ---
+
 ## DDBJ センターについての最新論文
 
 - [DDBJ Database updates and computational infrastructure enhancement.](https://www.ncbi.nlm.nih.gov/pubmed/31724722){: .title}<br>Ogasawara O, Kodama Y, Mashima J, Kosuge T, Fujisawa T<br>Nucleic Acids Res 2019 Nov 14. Pubmed: [31724722](https://www.ncbi.nlm.nih.gov/pubmed/31724722)

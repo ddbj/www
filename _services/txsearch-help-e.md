@@ -46,14 +46,14 @@ button or press the "Enter" key.
 
   - Default search fields are as follows.
     
-  |  tax_id  |  anamorph  |  in_part  |
-  |  scientific_name  |  teleomorph  |  includes  |
-  |  common_name  |  authority  |  misnomer  |
-  |  synonym  |  blast_name  |  misspelling  |
-  |  acronym  |  equivalent_name  |  type_material  |
-    
-  If you search some particular fields, [specify the field](#f-shitei)
-  by refine search.
+    |  tax_id  |  anamorph  |  in_part  |
+    |  scientific_name  |  teleomorph  |  includes  |
+    |  common_name  |  authority  |  misnomer  |
+    |  synonym  |  blast_name  |  misspelling  |
+    |  acronym  |  equivalent_name  |  type_material  |
+      
+    If you search some particular fields, [specify the field](#f-shitei)
+    by refine search.
 
   - Because the maximum number of results displayed in the screen is
     fixed in 1000 (in ascending order of scientific_name), to view the
@@ -80,28 +80,26 @@ fields, and/or combining some field searches.
   - <span id="k-field">Following fields can be specified</span>
 
     |  Searchable fields  |    |
-  | ---- | ---- |
-  |      tax_id<br>scientific_name<br>common_name<br>synonym<br>acronym<br>anamorph<br>teleomorph<br>authority<br>blast_name<br>equivalent_name<br>in_part<br>includes<br>misnomer<br>misspelling<br>type_material  |  When the field name is specified, specified field is searched.<br>When the field is not specified, all these field is searched.  |
-  |  lineagerank  |  To search these fields, you need to specify the field-name and its value.  |
+    | ---- | ---- |
+    |      tax_id<br>scientific_name<br>common_name<br>synonym<br>acronym<br>anamorph<br>teleomorph<br>authority<br>blast_name<br>equivalent_name<br>in_part<br>includes<br>misnomer<br>misspelling<br>type_material  |  When the field name is specified, specified field is searched.<br>When the field is not specified, all these field is searched.  |
+    |  lineagerank  |  To search these fields, you need to specify the field-name and its value.  |
 
   - Exact matching, please specify the field name as follows.
 
-  |  scientific_name_ex  |
-  |  common_name_ex  |
-  |  synonym_ex  |
-  |  acronym_ex  |
-  |  anamorph_ex  |
-  |  teleomorph_ex  |
-  |  authority_ex  |
-  |  blast_name_ex  |
-  |  equivalent_name_ex  |
-  |  in_part_ex  |
-  |  includes_ex  |
-  |  misnomer_ex  |
-  |  misspelling_ex  |
-  |  type_material_ex  |
-
-
+    |  scientific_name_ex  |
+    |  common_name_ex  |
+    |  synonym_ex  |
+    |  acronym_ex  |
+    |  anamorph_ex  |
+    |  teleomorph_ex  |
+    |  authority_ex  |
+    |  blast_name_ex  |
+    |  equivalent_name_ex  |
+    |  in_part_ex  |
+    |  includes_ex  |
+    |  misnomer_ex  |
+    |  misspelling_ex  |
+    |  type_material_ex  |
 
 ### Search Examples
 

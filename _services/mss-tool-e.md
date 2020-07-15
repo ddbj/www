@@ -28,14 +28,14 @@ related_pages:
 
   - Each tool requires [Java Development Kit 8 (JDK8)](http://www.oracle.com/technetwork/java/javase/downloads/index.html) installed properly on a PC that it runs.
   - DDBJ recommends either of following operating systems, because DDBJ has tested the program only on these environments.  
-    Windows: Windows 7, Windows 10  
+    Windows: Windows 10  
     unix/macOS: Ubuntu 16.04 LTS, macOS High Sierra
 
 <span class="red">\*</span>UME (Utilities for MSS file Error check) includes software developed by [the Apache Software Foundation](//www.apache.org/).
 
 ## Download
 
-Download (HTTP, only) either of following UME archive packages that suits for your system environment.  
+Download either of following UME archive packages that suits for your system environment.  
 Please refer each manuals for how to install and use.
 
 <table>

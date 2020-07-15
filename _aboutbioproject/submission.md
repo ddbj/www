@@ -155,7 +155,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 [Submitting organization URL](#BioProject_Submitting_organization_URL)<a name="BioProject_Submitting_organization_URL"></a>  
 : 登録者が所属する組織の URL。
 
-#### Data Release
+#### Data Release <a name="Area_data-release"></a>
 
 "Hold" か "Release" のどちらかを選びます。公開予定日を指定することはできません。データ公開の仕組みについては[プロジェクトの公開](#project-release)をご覧ください。
 
@@ -191,15 +191,15 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 [Relevance](#Relevance)<a name="Relevance"></a>  
 : 最も関連性が高い分野を選択します。
 
-    | Relevance     | Description                                     |
-    | ------------- | ----------------------------------------------- |
-    | Agricultural  |                                                 |
-    | Medical       |                                                 |
-    | Industrial    | バイオレメディエーション，バイオ燃料といった大量生産を意図している研究分野           |
-    | Environmental |                                                 |
-    | Evolution     |                                                 |
-    | ModelOrganism |                                                 |
-    | Other         | 選択肢にない研究分野。"Relevance description" に研究分野を記入します。 |
+  | Relevance     | Description                                     |
+  | ------------- | ----------------------------------------------- |
+  | Agricultural  |                                                 |
+  | Medical       |                                                 |
+  | Industrial    | バイオレメディエーション，バイオ燃料といった大量生産を意図している研究分野           |
+  | Environmental |                                                 |
+  | Evolution     |                                                 |
+  | ModelOrganism |                                                 |
+  | Other         | 選択肢にない研究分野。"Relevance description" に研究分野を記入します。 |
 
 <!-- end list -->
 
@@ -269,71 +269,71 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 [Project data type](#Project_data_type)<span class="red">\*</span><a name="Project data type"></a>  
 : Project の分類。以下の選択肢から該当する type を選びます。複数選択することができます。[News: Project data type を複数選択できるようになりました](/news/ja/2014-11-12.html)
 
-NCBI ではプロジェクトにリンクしている実験データから独自に [Project data type](https://www.ncbi.nlm.nih.gov/books/NBK54364/def-item/project-data-type/) を割り振っています。また，[EBI](https://www.ebi.ac.uk/ena/submit/project-format) では Project data type を使用していません。
+  NCBI ではプロジェクトにリンクしている実験データから独自に [Project data type](https://www.ncbi.nlm.nih.gov/books/NBK54364/def-item/project-data-type/) を割り振っています。また，[EBI](https://www.ebi.ac.uk/ena/submit/project-format) では Project data type を使用していません。
 
-| Project Data type                | Description                                                                                    |
-| -------------------------------- | ---------------------------------------------------------------------------------------------- |
-| Genome Sequencing                | 全ゲノムや部分ゲノム塩基配列決定プロジェクト (ゲノムアセンブリの有無は問わない)                                                      |
-| Clone Ends                       | クローンエンド塩基配列決定プロジェクト                                                                            |
-| Epigenomics                      | メチル化, ヒストン修飾, クロマチン構造に関するデータセット                                                                |
-| Exome                            | エクソームリシークエンシングプロジェクト                                                                           |
-| Map                              | 塩基配列ではないマップデータをもたらすプロジェクト (genetic map, radiation hybrid map, cytogenetic map, optical map など) |
-| Metagenome                       | 環境サンプルの配列解析                                                                                    |
-| Phenotype and Genotype           | 表現型と遺伝子型の相関を解析するプロジェクト                                                                         |
-| Proteome                         | マススペクトロメトリー解析を含む大規模プロテオミクス実験                                                                   |
-| Random Survey                    | ランダムに収集した (対象の包括的なサンプリングを目的としていない) サンプルから得られた配列                                                |
-| Targeted Locus (Loci)            | 特定の遺伝子座 (16S rRNA など) の塩基配列決定プロジェクト                                                            |
-| Transcriptome or Gene Expression | cDNA, EST, RNA-seq, マイクロアレイ実験を含む大規模 RNA 塩基配列決定や発現解析                                            |
-| Variation                        | 集団間に存在する大小の変異を同定することを目的としたプロジェクト                                                               |
-| Other                            | ”Project data type description” に Project Data Type を記入します。                                    |
+  | Project Data type                | Description                                                                                    |
+  | -------------------------------- | ---------------------------------------------------------------------------------------------- |
+  | Genome Sequencing                | 全ゲノムや部分ゲノム塩基配列決定プロジェクト (ゲノムアセンブリの有無は問わない)                                                      |
+  | Clone Ends                       | クローンエンド塩基配列決定プロジェクト                                                                            |
+  | Epigenomics                      | メチル化, ヒストン修飾, クロマチン構造に関するデータセット                                                                |
+  | Exome                            | エクソームリシークエンシングプロジェクト                                                                           |
+  | Map                              | 塩基配列ではないマップデータをもたらすプロジェクト (genetic map, radiation hybrid map, cytogenetic map, optical map など) |
+  | Metagenome                       | 環境サンプルの配列解析                                                                                    |
+  | Phenotype and Genotype           | 表現型と遺伝子型の相関を解析するプロジェクト                                                                         |
+  | Proteome                         | マススペクトロメトリー解析を含む大規模プロテオミクス実験                                                                   |
+  | Random Survey                    | ランダムに収集した (対象の包括的なサンプリングを目的としていない) サンプルから得られた配列                                                |
+  | Targeted Locus (Loci)            | 特定の遺伝子座 (16S rRNA など) の塩基配列決定プロジェクト                                                            |
+  | Transcriptome or Gene Expression | cDNA, EST, RNA-seq, マイクロアレイ実験を含む大規模 RNA 塩基配列決定や発現解析                                            |
+  | Variation                        | 集団間に存在する大小の変異を同定することを目的としたプロジェクト                                                               |
+  | Other                            | ”Project data type description” に Project Data Type を記入します。                                    |
 
 <!-- end list -->
 
 [Project data type description](#Project_data_type_description)<span class="conditionally_required">\*</span><a name="Project_data_type_description"></a>  
 : Other を選択したときは Project data type をここに記入します。
 
-#### Sample scope/Material/Capture/Methodology
+#### Sample scope&#047;Material&#047;Capture&#047;Methodology
 
 [Sample scope](#BioProject_Sample_scope)<span class="red">\*</span><a name="BioProject_Sample_scope"></a>  
 : 研究で使われた生物学的サンプルの対象を選択肢から選びます。
 
-    | Sample scope  | Description                                 |
-    | ------------- | ------------------------------------------- |
-    | Monoisolate   | 単一の動物，培養細胞のセルライン，育種された均一な集団                 |
-    | Multiisolate  | 複数の個人や集団 (特定の種)                             |
-    | Multi-species | サンプルが複数の種を含んでいる                             |
-    | Environment   | サンプルに含まれる種が不明                               |
-    | Synthetic     | 人工的に合成されたサンプル                               |
-    | Other         | "Target description" に Sample scope を記入します。 |
+  | Sample scope  | Description                                 |
+  | ------------- | ------------------------------------------- |
+  | Monoisolate   | 単一の動物，培養細胞のセルライン，育種された均一な集団                 |
+  | Multiisolate  | 複数の個人や集団 (特定の種)                             |
+  | Multi-species | サンプルが複数の種を含んでいる                             |
+  | Environment   | サンプルに含まれる種が不明                               |
+  | Synthetic     | 人工的に合成されたサンプル                               |
+  | Other         | "Target description" に Sample scope を記入します。 |
 
 <!-- end list -->
 
 [Material](#Material)<span class="red">\*</span><a name="Material"></a>
 : サンプルから単離された実験材料の種類。
 
-    | Material       | Description                                  |
-    | -------------- | -------------------------------------------- |
-    | Genome         | 全ゲノム。核ゲノムが対象のときに使います。DNA やメタゲノムサンプルに対して用います。 |
-    | Partial Genome | 精製された１つ以上の染色体やレプリコン                          |
-    | Transcriptome  | 転写産物解析データ                                    |
-    | Reagent        | 化学反応や沈降反応によって得られた実験材料                        |
-    | Proteome       | タンパク質やペプチドのデータ                               |
-    | Phenotype      | 表現型解析                                        |
-    | Other          | "Target description" に Material を記入します。      |
+  | Material       | Description                                  |
+  | -------------- | -------------------------------------------- |
+  | Genome         | 全ゲノム。核ゲノムが対象のときに使います。DNA やメタゲノムサンプルに対して用います。 |
+  | Partial Genome | 精製された１つ以上の染色体やレプリコン                          |
+  | Transcriptome  | 転写産物解析データ                                    |
+  | Reagent        | 化学反応や沈降反応によって得られた実験材料                        |
+  | Proteome       | タンパク質やペプチドのデータ                               |
+  | Phenotype      | 表現型解析                                        |
+  | Other          | "Target description" に Material を記入します。      |
 
 <!-- end list -->
 
 [Capture](#Capture)<span class="red">\*</span><a name="Capture"></a>  
 : サンプル材料から得ようとしている情報のスケールや種類。　
 
-    | Capture             | Description                            |
-    | ------------------- | -------------------------------------- |
-    | Whole               | サンプル全体を使っている (通常のケース)                  |
-    | Clone Ends          | クローンエンドデータを使用                          |
-    | Exome               | エクソンのデータを使用                            |
-    | Targeted Locus/Loci | 特定の遺伝子座 (遺伝子，ゲノム領域，バーコード領域) のデータ       |
-    | Random Survey       | サンプルをラフにサーベイしたデータ                      |
-    | Other               | "Target description" に Capture を記入します。 |
+  | Capture             | Description                            |
+  | ------------------- | -------------------------------------- |
+  | Whole               | サンプル全体を使っている (通常のケース)                  |
+  | Clone Ends          | クローンエンドデータを使用                          |
+  | Exome               | エクソンのデータを使用                            |
+  | Targeted Locus/Loci | 特定の遺伝子座 (遺伝子，ゲノム領域，バーコード領域) のデータ       |
+  | Random Survey       | サンプルをラフにサーベイしたデータ                      |
+  | Other               | "Target description" に Capture を記入します。 |
 
 <!-- end list -->
 
@@ -345,12 +345,12 @@ NCBI ではプロジェクトにリンクしている実験データから独自
 [Methodology](#Methodology)<span class="red">\*</span><a name="Methodology"></a>  
 : データを得るために使われた主要な手法。
 
-    | Methodology       | Description                                   |
-    | ----------------- | --------------------------------------------- |
-    | Sequencing        | Sanger，454 や Illumina などを使ったシークエンシング          |
-    | Array             | ハイブリダイゼーションアレイ                                |
-    | Mass Spectroscopy | マススペクトロメトリー                                   |
-    | Other             | "Methodogy description" に Methodology を記入します。 |
+  | Methodology       | Description                                   |
+  | ----------------- | --------------------------------------------- |
+  | Sequencing        | Sanger，454 や Illumina などを使ったシークエンシング          |
+  | Array             | ハイブリダイゼーションアレイ                                |
+  | Mass Spectroscopy | マススペクトロメトリー                                   |
+  | Other             | "Methodogy description" に Methodology を記入します。 |
 
 <!-- end list -->
 
@@ -364,19 +364,19 @@ NCBI ではプロジェクトにリンクしている実験データから独自
 [Objective](#Objective)<span class="red">\*</span><a name="Objective"></a>  
 : 登録するデータの種類。
 
-    | Objective          | Description                                                  |
-    | ------------------ | ------------------------------------------------------------ |
-    | Raw Sequence Reads | シークエンサから出力された生シークエンシングデータ                                    |
-    | Sequence           | 生データではない加工処理されたシークエンス (クリップされている，メイトペアが対になっている，向きが揃えられているなど) |
-    | Analysis           | 生物学的な意味を解釈するために解析されたデータ                                      |
-    | Assembly           | アセンブリ (ゲノムやトランスクリプトーム) データ                                   |
-    | Annotation         | アノテーションを得るためのデータ                                             |
-    | Variation          | 変異情報データ                                                      |
-    | Epigenetic Markers | エピジェネティックなマーカーの探索                                            |
-    | Expression         | 遺伝子発現データ                                                     |
-    | Maps               | 細胞学的，物理的なマッピングや Rh マッピング                                     |
-    | Phenotype          | 表現型                                                          |
-    | Other              | "Objective description" に Objective を記載します。                  |
+  | Objective          | Description                                                  |
+  | ------------------ | ------------------------------------------------------------ |
+  | Raw Sequence Reads | シークエンサから出力された生シークエンシングデータ                                    |
+  | Sequence           | 生データではない加工処理されたシークエンス (クリップされている，メイトペアが対になっている，向きが揃えられているなど) |
+  | Analysis           | 生物学的な意味を解釈するために解析されたデータ                                      |
+  | Assembly           | アセンブリ (ゲノムやトランスクリプトーム) データ                                   |
+  | Annotation         | アノテーションを得るためのデータ                                             |
+  | Variation          | 変異情報データ                                                      |
+  | Epigenetic Markers | エピジェネティックなマーカーの探索                                            |
+  | Expression         | 遺伝子発現データ                                                     |
+  | Maps               | 細胞学的，物理的なマッピングや Rh マッピング                                     |
+  | Phenotype          | 表現型                                                          |
+  | Other              | "Objective description" に Objective を記載します。                  |
 
 #### Locus tag prefix
 
@@ -400,9 +400,9 @@ DDBJ BioProject 独自に最大タグ長を12文字に制限しています。�
 
 : [Taxonomy データベース](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html)に登録されている生物名。メタゲノムや環境サンプルなどの生物名を特定できないサンプルについては[こちらのリスト](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908&lvl=3&lin=f&keep=1&srchmode=1&unlock)を参考にしてください。
 
-複数の生物種を対象としたプロジェクトの場合，共通する階層までの生物分類 (例 属レベルまで) を記入してください。
+  複数の生物種を対象としたプロジェクトの場合，共通する階層までの生物分類 (例 属レベルまで) を記入してください。
 
-: [Taxonomy データベース](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html) に該当する生物が登録されていない場合は，Novel organism を選択し [Description of novel　organism](#Novel_organism) に[新規生物に関する参考情報](/ddbj/organism.html)，Organism Name に希望する生物名を記入します。
+  [Taxonomy データベース](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html) に該当する生物が登録されていない場合は，Novel organism を選択し [Description of novel organism](#Novel_organism) に[新規生物に関する参考情報](/ddbj/organism.html)，Organism Name に希望する生物名を記入します。
 
 <!-- end list -->
 
@@ -448,21 +448,21 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 [Cellularity](#Cellularity)<a name="Cellularity"></a>  
 : 選択肢から Cellularity を選びます。
 
-    | Cellularity   |
-    | ------------- |
-    | Unicellular   |
-    | Multicellular |
-    | Colonial      |
+  | Cellularity   |
+  | ------------- |
+  | Unicellular   |
+  | Multicellular |
+  | Colonial      |
 
 <!-- end list -->
 
 [Reproduction](#Reproduction)<a name="Reproduction"></a>  
 : 選択肢から Reproduction を選びます。
 
-    | Reproduction |
-    | ------------ |
-    | Sexual       |
-    | Asexual      |
+  | Reproduction |
+  | ------------ |
+  | Sexual       |
+  | Asexual      |
 
 <!-- end list -->
 
@@ -474,12 +474,12 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 [Ploidy](#Ploidy)<a name="Ploidy"></a>  
 : 選択肢から Ploidy を選びます。
 
-    | Ploidy        |
-    | ------------- |
-    | Haploid       |
-    | Diploid       |
-    | Polyploid     |
-    | Allopolyploid |
+  | Ploidy        |
+  | ------------- |
+  | Haploid       |
+  | Diploid       |
+  | Polyploid     |
+  | Allopolyploid |
 
 #### Organism Replicons
 
@@ -493,40 +493,40 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 [Type](#Replicon_type)<a name="Replicon_type"></a>  
 : Replicon type を選択します。
 
-    | Replicon type |
-    | ------------- |
-    | Chromosome    |
-    | Plasmid       |
-    | Linkage Group |
-    | Segment       |
-    | Other         |
+  | Replicon type |
+  | ------------- |
+  | Chromosome    |
+  | Plasmid       |
+  | Linkage Group |
+  | Segment       |
+  | Other         |
 
 <!-- end list -->
 
 [Location](#Location)<a name="Location"></a>  
 : レプリコンが存在する細胞内の場所。例: 核，分化した細胞内器官。真核生物，バクテリアや古細菌の染色体の場合 "Nuclear or Prokaryote" を使用します。
 
-    | Location              |
-    | --------------------- |
-    | Nuclear or Prokaryote |
-    | Macronuclear          |
-    | Nucleomorph           |
-    | Mitochondrion         |
-    | Kinetoplast           |
-    | Chloroplast           |
-    | Chromoplast           |
-    | Plastid               |
-    | Virion or Phage       |
-    | Proviral or Prophage  |
-    | Viroid                |
-    | Extrachrom            |
-    | Cyanelle              |
-    | Apicoplast            |
-    | Leucoplast            |
-    | Proplastid            |
-    | Hydrogenosome         |
-    | Chromatophore         |
-    | Other                 |
+  | Location              |
+  | --------------------- |
+  | Nuclear or Prokaryote |
+  | Macronuclear          |
+  | Nucleomorph           |
+  | Mitochondrion         |
+  | Kinetoplast           |
+  | Chloroplast           |
+  | Chromoplast           |
+  | Plastid               |
+  | Virion or Phage       |
+  | Proviral or Prophage  |
+  | Viroid                |
+  | Extrachrom            |
+  | Cyanelle              |
+  | Apicoplast            |
+  | Leucoplast            |
+  | Proplastid            |
+  | Hydrogenosome         |
+  | Chromatophore         |
+  | Other                 |
 
 <!-- end list -->
 
@@ -550,27 +550,27 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 [Biotic Relationship](#BioticRelationship)<a name="BioticRelationship"></a>  
 : 選択肢から BioticRelationship を選びます。
 
-    | BioticRelationship |
-    | ------------------ |
-    | FreeLiving         |
-    | Commensal          |
-    | Symbiont           |
-    | Episymbiont        |
-    | Intracellular      |
-    | Parasite           |
-    | Host               |
-    | Endosymbiont       |
+  | BioticRelationship |
+  | ------------------ |
+  | FreeLiving         |
+  | Commensal          |
+  | Symbiont           |
+  | Episymbiont        |
+  | Intracellular      |
+  | Parasite           |
+  | Host               |
+  | Endosymbiont       |
 
 <!-- end list -->
 
 [Trophic Level](#TrophicLevel)<a name="TrophicLevel"></a>  
 : 選択肢から TrophicLevel を選びます。
 
-    | TrophicLevel |
-    | ------------ |
-    | Autotroph    |
-    | Heterotroph  |
-    | Mixotroph    |
+  | TrophicLevel |
+  | ------------ |
+  | Autotroph    |
+  | Heterotroph  |
+  | Mixotroph    |
 
 #### Prokaryote Morphology
 
@@ -579,58 +579,58 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 [Shape](#Shape)<a name="Shape"></a>  
 : 該当する全てのオプションを選びます。
 
-    | Shape        | Description                                          |
-    | ------------ | ---------------------------------------------------- |
-    | Bacilli      | rod-shaped                                           |
-    | Cocci        | spherical-shaped                                     |
-    | Spirilla     | spiral-shaped                                        |
-    | Coccobacilli | elongated coccal form                                |
-    | Filamentous  | filament-shaped (bacilli thar occur in long threads) |
-    | Vibrios      | vibrio-shaped (short, slightly curved rods)          |
-    | Fusobacteria | fusiform or spindle-shaped (rods with tapered ends)  |
-    | SquareShaped |                                                      |
-    | CurvedShaped |                                                      |
-    | Tailed       |                                                      |
+  | Shape        | Description                                          |
+  | ------------ | ---------------------------------------------------- |
+  | Bacilli      | rod-shaped                                           |
+  | Cocci        | spherical-shaped                                     |
+  | Spirilla     | spiral-shaped                                        |
+  | Coccobacilli | elongated coccal form                                |
+  | Filamentous  | filament-shaped (bacilli thar occur in long threads) |
+  | Vibrios      | vibrio-shaped (short, slightly curved rods)          |
+  | Fusobacteria | fusiform or spindle-shaped (rods with tapered ends)  |
+  | SquareShaped |                                                      |
+  | CurvedShaped |                                                      |
+  | Tailed       |                                                      |
 
 <!-- end list -->
 
 [Gram](#Gram)<a name="Gram"></a>  
 : 選択肢からグラム陽性か陰性から選びます。
 
-    | Gram     |
-    | -------- |
-    | Positive |
-    | Negative |
+  | Gram     |
+  | -------- |
+  | Positive |
+  | Negative |
 
 <!-- end list -->
 
 [Motility](#Motility)<a name="Motility"></a>  
 : 選択肢から Motility を選びます。
 
-    | Motility |
-    | -------- |
-    | Yes      |
-    | No       |
+  | Motility |
+  | -------- |
+  | Yes      |
+  | No       |
 
 <!-- end list -->
 
 [Enveloped](#Enveloped)<a name="Enveloped"></a>  
 : 対象生物の Envelope の有無を選択します。
 
-    | Enveloped |
-    | --------- |
-    | Yes       |
-    | No        |
+  | Enveloped |
+  | --------- |
+  | Yes       |
+  | No        |
 
 <!-- end list -->
 
 [Endospores](#Endospores)<a name="Endospores"></a>  
 : 対象生物が Endospores を形成するかどうかを選択します。
 
-    | Endospores |
-    | ---------- |
-    | Yes        |
-    | No         |
+  | Endospores |
+  | ---------- |
+  | Yes        |
+  | No         |
 
 #### Ecological Environment
 
@@ -639,54 +639,54 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 [Habitat](#Habitat)<a name="Habitat"></a>  
 : 選択肢から Habitat を選択します。
 
-    | Habitat        |
-    | -------------- |
-    | HostAssociated |
-    | Aquatic        |
-    | Terrestrial    |
-    | Specialized    |
-    | Multiple       |
-    | Unknown        |
+  | Habitat        |
+  | -------------- |
+  | HostAssociated |
+  | Aquatic        |
+  | Terrestrial    |
+  | Specialized    |
+  | Multiple       |
+  | Unknown        |
 
 <!-- end list -->
 
 [Salinity](#Salinity)<a name="Salinity"></a>  
 : 選択肢から Salinity を選びます。
 
-    | Salinity           |
-    | ------------------ |
-    | NonHalophilic      |
-    | Mesophilic         |
-    | ModerateHalophilic |
-    | ExtremeHalophilic  |
-    | Unknown            |
+  | Salinity           |
+  | ------------------ |
+  | NonHalophilic      |
+  | Mesophilic         |
+  | ModerateHalophilic |
+  | ExtremeHalophilic  |
+  | Unknown            |
 
 <!-- end list -->
 
 [Oxygen requirement](#OxygenReq)<a name="OxygenReq"></a>  
 : 酸素要求性を選択します。
 
-    | OxygenReq       |
-    | --------------- |
-    | Aerobic         |
-    | Microaerophilic |
-    | Facultative     |
-    | Anaerobic       |
-    | Unknown         |
+  | OxygenReq       |
+  | --------------- |
+  | Aerobic         |
+  | Microaerophilic |
+  | Facultative     |
+  | Anaerobic       |
+  | Unknown         |
 
 <!-- end list -->
 
 [Temperature range](#TemperatureRange)<a name="TemperatureRange"></a>  
 : 生息温度での分類を選びます。
 
-    | TemperatureRange  |
-    | ----------------- |
-    | Cryophilic        |
-    | Psychrophilic     |
-    | Mesophilic        |
-    | Thermophilic      |
-    | Hyperthermophilic |
-    | Unknown           |
+  | TemperatureRange  |
+  | ----------------- |
+  | Cryophilic        |
+  | Psychrophilic     |
+  | Mesophilic        |
+  | Thermophilic      |
+  | Hyperthermophilic |
+  | Unknown           |
 
 <!-- end list -->
 
@@ -698,24 +698,24 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 [PubMed ID](#BioProject_PubMed_ID)<a name="BioProject_PubMed_ID"></a>  
 : 文献の PubMed ID(s)。
 
-```
-<Publication id="15557739">
+  ```
+  <Publication id="15557739">
     <DbType>ePubmed</DbType>
-</Publication>
-<ProjectReleaseDate> ...
-```
+  </Publication>
+  <ProjectReleaseDate> ...
+  ```
 
 <!-- end list -->
 
 [DOI](#BioProject_DOI)<a name="BioProject_DOI"></a>  
 : PubMed ID がない場合は DOI を記入し，さらに文献に関する以下の情報を記入します。
 
-```
-<Publication id="10.1093/nar/gku1120">
+  ```
+  <Publication id="10.1093/nar/gku1120">
     <DbType>eDOI</DbType>
-</Publication>
-<ProjectReleaseDate> ...
-```
+  </Publication>
+  <ProjectReleaseDate> ...
+  ```
 
 <!-- end list -->
 

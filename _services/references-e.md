@@ -4,8 +4,6 @@ title: References
 category: services
 ---
 
-# References
-
 ## Latest publication regarding DDBJ Center
 
 [DDBJ Database updates and computational infrastructure enhancement.](https://www.ncbi.nlm.nih.gov/pubmed/31724722){: .title}

@@ -83,23 +83,19 @@ generate the guide tree. Default value is **slow**.
 ### Slow/Fast Pairwise Alignment Options
 
 DNA /Protein Weight Matrix  
-: Slow pairwise alignment DNA/Protein sequence comparison matrix
-series used to score alignment.
+: Slow pairwise alignment DNA/Protein sequence comparison matrix series used to score alignment.
 
-|  Protein Weight Matrix  |    |
-| ---- | ---- |
-|  Gonnet  |  These matrices were derived using almost the same procedure as the Dayhoff one (above) but are much more up to date and are based on a far larger data set. They appear to be more sensitive than the Dayhoff series.  |
-|  BLOSUM  |  These matrices appear to be the best available for carrying out data base similarity (homology searches).  |
-|  PAM  |  These have been extremely widely used since the late '70s. They are also called Dayhoff's matrix.  |
-|  ID  |  This matrix gives a score of 1.0 to two identical amino acids and a score of zero otherwise.  |
+: |  Protein Weight Matrix  |    |
+  | ---- | ---- |
+  |  Gonnet  |  These matrices were derived using almost the same procedure as the Dayhoff one (above) but are much more up to date and are based on a far larger data set. They appear to be more sensitive than the Dayhoff series.  |
+  |  BLOSUM  |  These matrices appear to be the best available for carrying out data base similarity (homology searches).  |
+  |  PAM  |  These have been extremely widely used since the late '70s. They are also called Dayhoff's matrix.  |
+  |  ID  |  This matrix gives a score of 1.0 to two identical amino acids and a score of zero otherwise.  |<br> 
 
-<br> 
-
-|  DNA Weight Matrix (Default value is IUB)  |    |
-| ---- | ---- |
-|  IUB  |  	This is the default scoring matrix used by BESTFIT for the comparison of nucleic acid sequences. X's and N's are treated as matches to any IUB ambiguity symbol. All matches score 1.9; all mismatches for IUB symbols score 0.  |
-|  ClustalW  | Matches score 1.0 and mismatches score 0. All matches for IUB symbols also score 0. |
-
+: |  DNA Weight Matrix (Default value is IUB)  |    |
+  | ---- | ---- |
+  |  IUB  |  	This is the default scoring matrix used by BESTFIT for the comparison of nucleic acid sequences. X's and N's are treated as matches to any IUB ambiguity symbol. All matches score 1.9; all mismatches for IUB symbols score 0.  |
+  |  ClustalW  | Matches score 1.0 and mismatches score 0. All matches for IUB symbols also score 0. |
 
 GAP OPEN  
 : Gap opening penalty for Slow Pairwise Alignment. Default value is
@@ -135,19 +131,17 @@ PAIRGAP
 DNA /Protein Weight Matrix  
 : 塩基置換行列表/アミノ酸置換行列表を指定します。デフォルトは Protein の場合は **Gonnet** ， DNA の場合は **IUB** です。
 
-|  Protein Weight Matrix  |    |
-| ---- | ---- |
-|  Gonnet  |  These matrices were derived using almost the same procedure as the Dayhoff one (above) but are much more up to date and are based on a far larger data set. They appear to be more sensitive than the Dayhoff series.  |
-|  BLOSUM  |  These matrices appear to be the best available for carrying out data base similarity (homology searches).  |
-|  PAM  |  These have been extremely widely used since the late '70s. They are also called Dayhoff's matrix.  |
-|  ID  |  This matrix gives a score of 1.0 to two identical amino acids and a score of zero otherwise.  |
+: |  Protein Weight Matrix  |    |
+  | ---- | ---- |
+  |  Gonnet  |  These matrices were derived using almost the same procedure as the Dayhoff one (above) but are much more up to date and are based on a far larger data set. They appear to be more sensitive than the Dayhoff series.  |
+  |  BLOSUM  |  These matrices appear to be the best available for carrying out data base similarity (homology searches).  |
+  |  PAM  |  These have been extremely widely used since the late '70s. They are also called Dayhoff's matrix.  |
+  |  ID  |  This matrix gives a score of 1.0 to two identical amino acids and a score of zero otherwise.  |<br> 
 
-<br> 
-
-|  DNA Weight Matrix  |    |
-| ---- | ---- |
-|  IUB  |  This is the default scoring matrix used by BESTFIT for the comparison of nucleic acid sequences. X's and N's are treated as matches to any IUB ambiguity symbol. All matches score 1.9; all mismatches for IUB symbols score 0. |
-|  ClustalW  |  Matches score 1.0 and mismatches score 0. All matches for IUB symbols also score 0.  |
+: |  DNA Weight Matrix  |    |
+  | ---- | ---- |
+  |  IUB  |  This is the default scoring matrix used by BESTFIT for the comparison of nucleic acid sequences. X's and N's are treated as matches to any IUB ambiguity symbol. All matches score 1.9; all mismatches for IUB symbols score 0. |
+  |  ClustalW  |  Matches score 1.0 and mismatches score 0. All matches for IUB symbols also score 0.  |
 
 GAP OPEN  
 : Multiple alignment gap opening penalty. Default value is **10.0**.
@@ -156,27 +150,24 @@ GAP EXTENSION
 : Multiple alignment gap extension penalty. Default value is **0.2**.
 
 GAP DISTANCES  
-: Multiple alignment gaps that are closer together than this distance
-are penalised. Default value is **5**.
+: Multiple alignment gaps that are closer together than this distance are penalised. Default value is **5**.
 
 NO END GAPS  
-: Multiple alignment disable the gap seperation penalty when scoring
-gaps the ends of the alignment. Default value is **no**.
+: Multiple alignment disable the gap seperation penalty when scoring gaps the ends of the alignment. Default value is **no**.
 
-    | Type | Description |
-    | ---- | ----------- |
-    | no   | false       |
-    | yes  | true        |
+: | Type | Description |
+  | ---- | ----------- |
+  | no   | false       |
+  | yes  | true        |
 
 ITERATION  
-: This can be used to improve the final alignment or improve the
-alignment at each stage of the progressive alignment. Default value is **none**.
+: This can be used to improve the final alignment or improve the alignment at each stage of the progressive alignment. Default value is **none**.
 
-    | Type      | Description  |
-    | --------- | ------------ |
-    | none      | No iteration   |
-    | tree      | Iteration at each step of alignment process |
-    | alignment | Iteration only on final alignment   |
+: | Type      | Description  |
+  | --------- | ------------ |
+  | none      | No iteration   |
+  | tree      | Iteration at each step of alignment process |
+  | alignment | Iteration only on final alignment   |
 
 NUMITER  
 : Maximum number of iterations to perform. Default value is **1**.
@@ -184,10 +175,10 @@ NUMITER
 CLUSTERING  
 : Clustering type. Default value is **NJ**.
 
-    | Type  | Description    |
-    | ----- | -------------- |
-    | NJ    | Neighbour-joining (Saitou and Nei 1987) method           |
-    | UPGMA | Unweighted Pair-Group Method with Arithmatic mean method |
+: | Type  | Description    |
+  | ----- | -------------- |
+  | NJ    | Neighbour-joining (Saitou and Nei 1987) method           |
+  | UPGMA | Unweighted Pair-Group Method with Arithmatic mean method |
 
 
 ### Output Options
@@ -210,10 +201,10 @@ Format
 Order  
 : Control the order of the sequences in the output alignments. Default value is **aligned**.
 
-    | Type    | Description        |
-    | ------- | ------------------ |
-    | aligned | Corresponds to the order in which the sequences were aligned (from the guide tree-dendrogram). |
-    | input   | Same order as the input sequences.                  |
+: | Type    | Description        |
+  | ------- | ------------------ |
+  | aligned | Corresponds to the order in which the sequences were aligned (from the guide tree-dendrogram). |
+  | input   | Same order as the input sequences.                  |
 
 
 ## DDBJ Original version (Version 1.83, Modified by Dr. Kirill Kryukov) options
@@ -227,18 +218,17 @@ marked <span class="red">＊</span> are DDBJ's original option
 formats.
 
 [Method of phylogenetic tree](#tree)
-: 
-|  Method  |  Model	  |  Note  |
-| ---- | ---- | ---- |
-|  Kimura  |  {::nomarkdown}<table><tr><td></td><td>T</td><td>C</td><td>A</td><td>G</td></tr><tr><td>T</td><td>-</td><td>α</td><td>β</td><td>β</td></tr><tr><td>C</td><td>α</td><td>-</td><td>β</td><td>β</td></tr><tr><td>A</td><td>β</td><td>β</td><td>-</td><td>α</td></tr><tr><td>G</td><td>β</td><td>β</td><td>α</td><td>-</td></tr></table>{:/}  |  Distance estimated by assuming that the rates of transition and transversion are different  |
-|  p-distance  |    |  Proportion of difference  |
-|  Jukes-Cantor<span class="red">＊</span>	  |  {::nomarkdown}<table><tr><td></td><td>T</td><td>C</td><td>A</td><td>G</td></tr><tr><td>T</td><td>-</td><td>α</td><td>α</td><td>α</td></tr><tr><td>C</td><td>α</td><td>-</td><td>α</td><td>α</td></tr><tr><td>A</td><td>α</td><td>α</td><td>-</td><td>α</td></tr><tr><td>G</td><td>α</td><td>α</td><td>α</td><td>-</td></tr></table>{:/}  |  Distance estimated by assuming that all types of substitutions occur at the same rate  |
-|  Tamura<span class="red">＊</span>	  |  {::nomarkdown}<table><tr><td></td><td>T</td><td>C</td><td>A</td><td>G</td></tr><tr><td>T</td><td>-</td><td>κπ<sub>GC</sub></td><td>1-π<sub>GC</sub></td><td>π<sub>GC</sub></td></tr> <tr><td>C</td><td>κ(1-π<sub>GC</sub>)</td><td>-</td><td>1-π<sub>GC</sub></td><td>π<sub>GC</sub></td></tr> <tr><td>A</td><td>1-π<sub>GC</sub></td><td>π<sub>GC</sub></td><td>-</td><td>κπ<sub>GC</sub></td></tr> <tr><td>G</td><td>1-π<sub>GC</sub></td><td>π<sub>GC</sub></td><td>κ(1-π<sub>GC</sub>)</td><td>-</td></tr></table>{:/}  |  Distance estimated by assuming that the rates of transition and transversion are different, and taking into account the equilibrium frequencies of GC  |
-|  Tajima-Nei<span class="red">＊</span>	  |   {::nomarkdown}<table><tr><td></td><td>T</td><td>C</td><td>A</td><td>G</td></tr><tr><td>T</td><td>-</td><td>απ<sub>C</sub></td><td>απ<sub>A</sub></td><td>απ<sub>G</sub></td></tr> <tr><td>C</td><td>απ<sub>T</sub></td><td>-</td><td>απ<sub>A</sub></td><td>απ<sub>G</sub></td></tr> <tr><td>A</td><td>απ<sub>T</sub></td><td>απ<sub>C</sub></td><td>-</td><td>απ<sub>G</sub></td></tr> <tr><td>G</td><td>απ<sub>T</sub></td><td>απ<sub>C</sub></td><td>απ<sub>A</sub></td><td>-</td></tr></table>{:/}  |  Distance estimated by taking into account the equilibrium frequencies of T, C, A, and G  |
-|  Gojobori-Ishii-Nei<span class="red">＊</span>	  |   {::nomarkdown}<table><tr><td></td><td>T</td><td>C</td><td>A</td><td>G</td></tr> <tr><td>T</td><td>-</td><td>β</td><td>γ</td><td>β</td></tr> <tr><td>C</td><td>α</td><td>-</td><td>α</td><td>δ</td></tr> <tr><td>A</td><td>ε</td><td>β</td><td>-</td><td>β</td></tr> <tr><td>G</td><td>α</td><td>ζ</td><td>α</td><td>-</td></tr></table>{:/}  |  Distance estimated by assuming that the rates are different not only for substitutions between GC and TA, but also for others  |
-|  Tamura-Nei<span class="red">＊</span>  |  {::nomarkdown}<table><tr><td></td><td>T</td><td>C</td><td>A</td><td>G</td></tr><tr><td>T</td><td>-</td><td>α<sub>2</sub>π<sub>C</sub></td><td>βπ<sub>A</sub></td><td>βπ<sub>G</sub></td></tr><tr><td>C</td><td>α<sub>2</sub>π<sub>T</sub></td><td>-</td><td>βπ<sub>A</sub></td><td>βπ<sub>G</sub></td></tr><tr><td>A</td><td>βπ<sub>T</sub></td><td>βπ<sub>C</sub></td><td>-</td><td>α<sub>1</sub>π<sub>G</sub></td></tr><tr><td>G</td><td>βπ<sub>T</sub></td><td>βπ<sub>C</sub></td><td>α<sub>1</sub>π<sub>A</sub></td><td>-</td></tr></table>{:/}  |  Distance estimated by assuming not only that the rates of transition and transversion are different but also the rates between TC and AG are different, and taking into account the equilibrium frequencies of T, C, A, and G  |
 
-|{::nomarkdown}<ul id="disc"><li>α, α<sub>1</sub>, α<sub>2</sub> ,β, γ, δ, ε, ζ, κ : 塩基置換速度</li><li>π<sub>T</sub>, π<sub>C</sub>, π<sub>A</sub>, π<sub>G</sub>, π<sub>GC</sub> : 平衡塩基頻度</li></ul>{:/}| 
+: |  Method  |  Model	  |  Note  |
+  | ---- | ---- | ---- |
+  |  Kimura  |  {::nomarkdown}<table><tr><td></td><td>T</td><td>C</td><td>A</td><td>G</td></tr><tr><td>T</td><td>-</td><td>α</td><td>β</td><td>β</td></tr><tr><td>C</td><td>α</td><td>-</td><td>β</td><td>β</td></tr><tr><td>A</td><td>β</td><td>β</td><td>-</td><td>α</td></tr><tr><td>G</td><td>β</td><td>β</td><td>α</td><td>-</td></tr></table>{:/}  |  Distance estimated by assuming that the rates of transition and transversion are different  |
+  |  p-distance  |    |  Proportion of difference  |
+  |  Jukes-Cantor<span class="red">＊</span>	  |  {::nomarkdown}<table><tr><td></td><td>T</td><td>C</td><td>A</td><td>G</td></tr><tr><td>T</td><td>-</td><td>α</td><td>α</td><td>α</td></tr><tr><td>C</td><td>α</td><td>-</td><td>α</td><td>α</td></tr><tr><td>A</td><td>α</td><td>α</td><td>-</td><td>α</td></tr><tr><td>G</td><td>α</td><td>α</td><td>α</td><td>-</td></tr></table>{:/}  |  Distance estimated by assuming that all types of substitutions occur at the same rate  |
+  |  Tamura<span class="red">＊</span>	  |  {::nomarkdown}<table><tr><td></td><td>T</td><td>C</td><td>A</td><td>G</td></tr><tr><td>T</td><td>-</td><td>κπ<sub>GC</sub></td><td>1-π<sub>GC</sub></td><td>π<sub>GC</sub></td></tr> <tr><td>C</td><td>κ(1-π<sub>GC</sub>)</td><td>-</td><td>1-π<sub>GC</sub></td><td>π<sub>GC</sub></td></tr> <tr><td>A</td><td>1-π<sub>GC</sub></td><td>π<sub>GC</sub></td><td>-</td><td>κπ<sub>GC</sub></td></tr> <tr><td>G</td><td>1-π<sub>GC</sub></td><td>π<sub>GC</sub></td><td>κ(1-π<sub>GC</sub>)</td><td>-</td></tr></table>{:/}  |  Distance estimated by assuming that the rates of transition and transversion are different, and taking into account the equilibrium frequencies of GC  |
+  |  Tajima-Nei<span class="red">＊</span>	  |   {::nomarkdown}<table><tr><td></td><td>T</td><td>C</td><td>A</td><td>G</td></tr><tr><td>T</td><td>-</td><td>απ<sub>C</sub></td><td>απ<sub>A</sub></td><td>απ<sub>G</sub></td></tr> <tr><td>C</td><td>απ<sub>T</sub></td><td>-</td><td>απ<sub>A</sub></td><td>απ<sub>G</sub></td></tr> <tr><td>A</td><td>απ<sub>T</sub></td><td>απ<sub>C</sub></td><td>-</td><td>απ<sub>G</sub></td></tr> <tr><td>G</td><td>απ<sub>T</sub></td><td>απ<sub>C</sub></td><td>απ<sub>A</sub></td><td>-</td></tr></table>{:/}  |  Distance estimated by taking into account the equilibrium frequencies of T, C, A, and G  |
+  |  Gojobori-Ishii-Nei<span class="red">＊</span>	  |   {::nomarkdown}<table><tr><td></td><td>T</td><td>C</td><td>A</td><td>G</td></tr> <tr><td>T</td><td>-</td><td>β</td><td>γ</td><td>β</td></tr> <tr><td>C</td><td>α</td><td>-</td><td>α</td><td>δ</td></tr> <tr><td>A</td><td>ε</td><td>β</td><td>-</td><td>β</td></tr> <tr><td>G</td><td>α</td><td>ζ</td><td>α</td><td>-</td></tr></table>{:/}  |  Distance estimated by assuming that the rates are different not only for substitutions between GC and TA, but also for others  |
+  |  Tamura-Nei<span class="red">＊</span>  |  {::nomarkdown}<table><tr><td></td><td>T</td><td>C</td><td>A</td><td>G</td></tr><tr><td>T</td><td>-</td><td>α<sub>2</sub>π<sub>C</sub></td><td>βπ<sub>A</sub></td><td>βπ<sub>G</sub></td></tr><tr><td>C</td><td>α<sub>2</sub>π<sub>T</sub></td><td>-</td><td>βπ<sub>A</sub></td><td>βπ<sub>G</sub></td></tr><tr><td>A</td><td>βπ<sub>T</sub></td><td>βπ<sub>C</sub></td><td>-</td><td>α<sub>1</sub>π<sub>G</sub></td></tr><tr><td>G</td><td>βπ<sub>T</sub></td><td>βπ<sub>C</sub></td><td>α<sub>1</sub>π<sub>A</sub></td><td>-</td></tr></table>{:/}  |  Distance estimated by assuming not only that the rates of transition and transversion are different but also the rates between TC and AG are different, and taking into account the equilibrium frequencies of T, C, A, and G  |
+  |{::nomarkdown}<ul id="disc"><li style="white-space: nowrap;">α, α<sub>1</sub>, α<sub>2</sub> ,β, γ, δ, ε, ζ, κ : 塩基置換速度</li><li style="white-space: nowrap;">π<sub>T</sub>, π<sub>C</sub>, π<sub>A</sub>, π<sub>G</sub>, π<sub>GC</sub> : 平衡塩基頻度</li></ul>{:/}| 
 
 
 TOSSGAPS  
@@ -330,7 +320,7 @@ useful for some data.
 4. Bootstrap analysis  
 ![BOOTSTRAP 計算結果]({{ site.baseurl }}/assets/images/help/clustalw_04-e.gif)
 
-    **(Note)** Since April 2012, in the ClustalW ver.2.1, BOOTSTRAP is
+    <span class="red">**(Note)**</span> Since April 2012, in the ClustalW ver.2.1, BOOTSTRAP is
     calculated automatically and ".phb" download file is placed, except
     for the following combination of [FORMAT] and [Clustering]
     options.

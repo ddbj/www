@@ -17,8 +17,6 @@ related_pages:
     url: services/mass-form-e.html
 ---
 
-# transChecker User’s Manual
-
 TransChecker is a software tool developed by DDBJ for checking translation into amino acid sequence from [CDS features](/ddbj/cds-e.html) that are described in
 [sequence](/ddbj/file-format-e.html#sequence) and [annotation](/ddbj/file-format-e.html#annotation) files.
 
@@ -89,13 +87,12 @@ exit $RETVAL
 #EOF
       </code>
     </pre>
-
   <dl>
-    <dt>[TRANS_DIR 変数]</dt>
-    <dd>transChecker ディレクトリのある場所をフルパスで入力して下さい。</dd>
-    <dd>例) TRANS_DIR=/home/mass/transChecker</dd>
-    <dt>[HEAP_SIZE 変数]</dt>
-    <dd>transChecker が使用できる最大メモリ量を指定してください。</dd>
+    <dt>[TRANS_DIR parameter]</dt>
+    <dd>Enter the full path name of jParser directory.</dd>
+    <dd>ex) PARSER_DIR=/home/mass/jParser</dd>
+    <dt>[HEAP_SIZE parameter]</dt>
+    <dd>Enter the maximum memory of jParser.</dd>
     <dd>例) HEAP_SIZE=128m</dd>
   </dl>
   </li>  
@@ -122,7 +119,7 @@ $ transChecker.sh -xsample.ann -ssample.fasta -eerrmsg.txt -orsl.fasta -taln.txt
 
 You can specify locations of files in both ways, relative and full path names.  
 
-**macOS: Regarding the available file names**<br>  
+**macOS: Regarding the available file names**  
 DO NOT use multibyte character(s) for any file or folder name of [Sequence file](/ddbj/file-format-e.html#sequence) or [Annotation file](/ddbj/file-format-e.html#annotation) when you use our tools on some versions of macOS. Tools may not work when multibyte character is included in the file or folder name.
 
 \-x\[<span class="font-br font-normal">annotation file name</span>\]  
@@ -145,7 +142,7 @@ DO NOT use multibyte character(s) for any file or folder name of [Sequence file]
 he transChecker provides two options for translated amino acid sequences.  
 Even though some errors are occurred, the sequence of [CDS feature](/ddbj/cds-e.html) is translated into amino acid as is, however, some translation processes are likely skipped because of severe errors.
 
-#### FASTA-like format
+#### FASTA-like format<a name="output-1-1">
 
 The amino acid sequences are in a kind of fasta format as follows.
 
@@ -172,7 +169,7 @@ DADRNLLLVKGSVPGKPGALLNITPATVVGQQA
 //
 ```
 
-#### Alignment with nucleotide sequence
+#### Alignment with nucleotide sequence<a name="output-1-2"></a>
 
 The alignments for nucleotide and translated amino acid sequences are in the following format.
 

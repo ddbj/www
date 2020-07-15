@@ -208,7 +208,7 @@ the current status of searchable databases and related information.
       <td></td>
     </tr>
     <tr>
-      <th rowspan="3">FASTA</th>
+      <th rowspan="3" class="borderbtm">FASTA</th>
       <th><a href="#trans">Amino acid seq FASTA </a></th>
       <td>Amino acid sequence in FASTA format</td>
       <td>available in UniProt, DAD, Patent</td>
@@ -408,7 +408,7 @@ example (upper:Get method / lower: smart URL)
       <td><a href="/ddbj/mga-e.html">Mass sequence for Genome Annotation(MGA)</a></td>
     </tr>
     <tr>
-      <th rowspan="5">Protein</th>
+      <th rowspan="5" class="borderbtm">Protein</th>
       <th>aa</th>
       <td>DAD, Patent, UniProt, PDB </td>
       <td>search these 4 dbs in this order</td>

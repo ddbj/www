@@ -5,6 +5,8 @@ pathname: precautions-e
 category: tentative
 ---
 
+## Do not block E-mails from DDBJ
+
 DDBJ provides many services via E-mail. So, please configure your
 blocking tools against unwanted junk E-mails, NOT to block E-mails from
 DDBJ
