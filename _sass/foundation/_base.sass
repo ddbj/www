@@ -21,11 +21,7 @@ body
   -webkit-font-smoothing: antialiased
 
 a
-  color: $COLOR_BLACK
-  transition: color $DURATION_GUI
-  &:link
-  &:active, &:hover
-    color: $COLOR_KEY
+  +anchor
 
 input, textarea, select, button
   outline: none

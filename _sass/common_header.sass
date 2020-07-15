@@ -1,79 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700,900')
 @import "foundation/variable"
 @import "foundation/mixin"
 
 $Z_COMMON_HEADER: 10000000
+$HEIGHT_COMMON_HEADER: 40px
   
+#DDBJ_CommonHeader, #DDBJCommonBottomMenu, #DDBJCommonFooter
+  font-family: "Roboto Condensed", "Noto Sans JP","Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif
+  a
+    font-family: "Roboto Condensed", "Noto Sans JP","Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif
+    text-decoration: underline
 #DDBJ_CommonHeader
   height: $HEIGHT_COMMON_HEADER
   background-color: black
   color: white
-  font-size: 1.2rem
+  font-size: 12px
   line-height: $HEIGHT_COMMON_HEADER
   a
     color: white
   > .DDBJ_inner
     +inner
-    padding: 0 1rem
+    max-width: $WIDTH_MAX_PX
+    padding: 0 10px
     height: $HEIGHT_COMMON_HEADER
     display: flex
     .DDBJ_spcollapsemenubutton
       display: none
     > .DDBJ_logocontainer
       > .DDBJ_logotype
-        margin-left: 1.6rem
+        margin-left: 16px
         display: block
         text-indent: -9999px
-        width: 6.7rem
+        width: 67px
         height: $HEIGHT_COMMON_HEADER
         background: url(data:image/svg+xml;utf8,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20180%2066%22%20style%3D%22enable-background%3Anew%200%200%20180%2066%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.st0%7Bfill%3A%23FFFFFF%3B%7D.st1%7Bfill%3A%23E99523%3B%7D%3C%2Fstyle%3E%3Cg%3E%3Cg%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M37.9%2C58.4c-0.3-0.3-1.8-0.7-5.1-1.6c-0.5%2C0.5-1.4%2C1.5-3.4%2C3c2.1%2C0.4%2C7.1%2C0.6%2C7.9%2C0.3C38.6%2C59.6%2C38.2%2C58.7%2C37.9%2C58.4z%22%2F%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M1.8%2C4.2C1.1%2C4.3-0.4%2C5%2C0.1%2C5.7c0.3%2C0.4%2C3.8%2C0.7%2C7%2C1.8c0.8-1%2C1.6-1.7%2C2.1-2.1C4.8%2C4.1%2C2.3%2C4.1%2C1.8%2C4.2z%22%2F%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M28.2%2C16.6c-1.9-4.9-7.7-7.8-13.9-9.4c-0.6%2C0.4-1.7%2C1.6-2.1%2C2.5c6.9%2C2.9%2C10.2%2C5.7%2C11.3%2C8.6c1.8%2C4.5-3.6%2C11.8-6.8%2C15.7c-3.7%2C4.5-7.2%2C9.1-5.9%2C13.7c1.5%2C5.4%2C8.5%2C9.8%2C12.2%2C10.5c0.5%2C0.1%2C3.2-2.7%2C3.2-2.8c-4.9-2-10.6-5.6-10.9-10.6c-0.2-3.7%2C3.3-8.4%2C6-11.6C25.7%2C27.9%2C30.5%2C22.5%2C28.2%2C16.6z%22%2F%3E%3C%2Fg%3E%3Cg%3E%3Cpath%20class%3D%22st1%22%20d%3D%22M20%2C0C17.8-0.6-1.8%2C10.7%2C2.8%2C24.7c1.6%2C4.7%2C8.8%2C7.4%2C12.8%2C9l1.8-2C12.9%2C30%2C9.9%2C28.1%2C8%2C24.1c-5.1-11%2C10.4-22%2C11.9-23C20.7%2C0.6%2C20.4%2C0.1%2C20%2C0z%22%2F%3E%3Cpath%20class%3D%22st1%22%20d%3D%22M37.4%2C44.2c-2.2-6.7-9.3-9.2-14.8-11c0%2C0-1.2%2C0.9-1.8%2C2c5.3%2C1.9%2C9.2%2C3.6%2C11%2C8.7c1.3%2C3.8-1.3%2C10.3-8.3%2C15.2c-3.1%2C2.2-5.1%2C3.4-6%2C4c-1.3%2C0.9-2.3%2C3.1-0.2%2C2.7c0%2C0%2C5.7-2.3%2C10.7-6.3C29.2%2C58.7%2C39.7%2C51.1%2C37.4%2C44.2z%22%2F%3E%3C%2Fg%3E%3Cpath%20class%3D%22st0%22%20d%3D%22M65.2%2C12.4H49.4h-0.8v3.1l0.7%2C0.1c4%2C0.3%2C4%2C0.3%2C4%2C4.6v22.7c0%2C4.3-0.1%2C4.4-4.5%2C4.7l-0.8%2C0.1v3.1h14.1c7.4%2C0%2C13-1.6%2C17.2-4.9c4.7-3.6%2C7.3-9%2C7.3-15.7c0-5.1-1.8-9.6-5-12.7C78.2%2C14%2C72.9%2C12.4%2C65.2%2C12.4z%20M65%2C47c-4%2C0-5.2-1-5.2-4.5V19c0-2%2C0.2-2.4%2C0.4-2.5c0.1-0.1%2C0.8-0.6%2C3.9-0.6c3.7%2C0%2C6.8%2C0.7%2C9.2%2C2.2c4%2C2.4%2C6.3%2C6.9%2C6.3%2C12.8C79.6%2C38.7%2C75.8%2C47%2C65%2C47z%20M105.4%2C12.4H89.6h-0.8v3.1l0.7%2C0.1c4%2C0.3%2C4%2C0.3%2C4%2C4.6v22.7c0%2C4.3-0.1%2C4.4-4.5%2C4.7l-0.8%2C0.1v3.1h14.1c7.4%2C0%2C13-1.6%2C17.2-4.9c4.7-3.6%2C7.2-9%2C7.2-15.7c0-5.1-1.8-9.6-5-12.7C118.3%2C14%2C113.1%2C12.4%2C105.4%2C12.4z%20M105.2%2C47c-4%2C0-5.2-1-5.2-4.5V19c0-2%2C0.2-2.4%2C0.4-2.5c0.1-0.1%2C0.8-0.6%2C3.9-0.6c3.7%2C0%2C6.8%2C0.7%2C9.2%2C2.2c4%2C2.4%2C6.3%2C6.9%2C6.3%2C12.8C119.7%2C38.7%2C115.9%2C47%2C105.2%2C47zM151%2C29.9c3.7-1.8%2C5.8-4.6%2C5.8-8.3c0-2.9-1.3-5.6-3.5-7.1c-2-1.4-4.8-2.1-8.9-2.1h-14.5H129v3.1l0.8%2C0.1c4%2C0.3%2C4%2C0.3%2C4%2C4.5v22.8c0%2C4.2%2C0%2C4.2-4.4%2C4.5l-0.8%2C0.1v3.1h13.3c4.8%2C0%2C8.6-0.8%2C11.4-2.4c3.7-2%2C5.8-5.3%2C5.8-9.2C159%2C35.8%2C157.5%2C31.7%2C151%2C29.9z%20M140.1%2C18.4c0-1.8%2C0.2-2%2C0.3-2.1c0.3-0.2%2C1.3-0.4%2C2.7-0.4c6%2C0%2C6.7%2C4.5%2C6.7%2C6.4c0%2C4.4-2.4%2C6.4-7.9%2C6.4c0%2C0-1.1%2C0-1.8%2C0C140.1%2C27.3%2C140.1%2C18.4%2C140.1%2C18.4z%20M144%2C47.1c-3%2C0-3.9-0.5-3.9-4.3c0%2C0%2C0-9.2%2C0-10.6c0.8%2C0%2C1.7%2C0%2C1.7%2C0c6.7%2C0%2C10%2C2.4%2C10%2C7.5C151.9%2C46.3%2C146.4%2C47.1%2C144%2C47.1z%20M179.2%2C12.4h-15.4v3.1l0.8%2C0.1c4.1%2C0.3%2C4.3%2C0.3%2C4.3%2C4.7v19.2c0%2C4.5-0.1%2C7.9-0.6%2C10.6c-0.6%2C3.2-2.2%2C5.4-5%2C6.7l-0.7%2C0.3l1.3%2C3l0.7-0.2c1.7-0.5%2C3.7-1.8%2C5.6-3.4c3.8-3.5%2C5.1-7.5%2C5.1-15.2v-21c0-4.3%2C0.2-4.4%2C4-4.7l0.7-0.1v-3.1L179.2%2C12.4L179.2%2C12.4z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E) no-repeat 0 center
     > .DDBJ_services
       position: relative
-      padding-right: 10rem
+      padding-right: 100px
       > .DDBJ_title
         cursor: pointer
-        padding-left: 1.6rem
+        padding-left: 16px
+        font-size: 12px
+        line-height: $HEIGHT_COMMON_HEADER
         &:after
           content: ""
           display: inline-block
-          width: .6rem
-          height: .6rem
+          width: 6px
+          height: 6px
           border-left: solid 1px white
           border-bottom: solid 1px white
           position: relative
-          transform: translateY(-.3rem) rotate(-45deg)
-          margin-left: .8rem
+          transform: translateY(-3px) rotate(-45deg)
+          margin-left: 8px
       > .DDBJ_rows
-        padding: 1.6rem 0rem 2.4rem
+        padding: 16px 0 24px
         display: flex
         justify-content: center
         position: absolute
-        left: -9.3rem
+        top: $HEIGHT_COMMON_HEADER
+        left: -93px
         width: 100vw
-        max-width: $WIDTH_MAX
+        max-width: $WIDTH_MAX_PX
         background-color: $COLOR_BLACK
-        font-size: 1.4rem
-        line-height: 2rem
+        font-size: 14px
+        line-height: 20px
         opacity: 0
-        transform: translateY(-1rem)
+        transform: translateY(-10px)
         pointer-events: none
         z-index: 99999999
         transition: opacity $DURATION_GUI, transform $DURATION_GUI
         > .DDBJ_row
-          margin: 0 4rem
+          margin: 0 40px
           flex-grow: 1
           > .DDBJ_group
             + .DDBJ_group
-              margin-top: 2.8rem
+              margin-top: 28px
             > .DDBJ_grouptitle
               color: $COLOR_KEY_STRONG
-              padding: 0.4rem 0
+              padding: 4px 0
+              font-size: 14px
+              font-weight: bold
+              margin: 0
             > ul
+              margin: 0
               > li
-                padding: 0.4rem 0
+                padding: 4px 0
       &:hover
         > .DDBJ_rows
           opacity: 1
-          transform: translateY(0rem)
+          transform: translateY(0)
           pointer-events: auto
     > .DDBJ_navigation
       flex-grow: 2
@@ -81,66 +96,78 @@ $Z_COMMON_HEADER: 10000000
       > ul
         > li
           display: inline-block
-          margin-left: 1rem
+          margin-left: 10px
 #DDBJCommonBottomMenu, #DDBJCommonFooter
   > .DDBJ_inner
     +inner
+    max-width: $WIDTH_MAX_PX
 #DDBJCommonBottomMenu
-  padding: 3rem 0
+  padding: 30px 0
   text-align: center
   background: url(data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2056%20101%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%2C.cls-3%7Bfill%3A%23736357%3B%7D.cls-1%2C.cls-2%7Bopacity%3A0.1%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Crect%20class%3D%22cls-1%22%20y%3D%2275.87%22%20width%3D%2256%22%20height%3D%221.33%22%2F%3E%3Crect%20class%3D%22cls-1%22%20y%3D%2295.07%22%20width%3D%2256%22%20height%3D%221.33%22%2F%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M56%2C82.28V80.55a5.65%2C5.65%2C0%2C0%2C0-5.6%2C4.72H47.61a5.69%2C5.69%2C0%2C0%2C0-11.22%2C0H33.61a5.69%2C5.69%2C0%2C0%2C0-11.21%2C0H19.62a5.69%2C5.69%2C0%2C0%2C0-11.22%2C0H5.62A5.65%2C5.65%2C0%2C0%2C0%2C0%2C80.55H0v1.73H0a3.89%2C3.89%2C0%2C0%2C1%2C3.91%2C3.85A3.88%2C3.88%2C0%2C0%2C1%2C0%2C90H0v1.74H0A5.65%2C5.65%2C0%2C0%2C0%2C5.62%2C87H8.4a5.69%2C5.69%2C0%2C0%2C0%2C11.22%2C0H22.4a5.69%2C5.69%2C0%2C0%2C0%2C11.21%2C0h2.78a5.69%2C5.69%2C0%2C0%2C0%2C11.22%2C0h2.78A5.65%2C5.65%2C0%2C0%2C0%2C56%2C91.72V90a3.85%2C3.85%2C0%2C1%2C1%2C0-7.7ZM14%2C90a3.85%2C3.85%2C0%2C1%2C1%2C3.91-3.85A3.88%2C3.88%2C0%2C0%2C1%2C14%2C90Zm14%2C0a3.85%2C3.85%2C0%2C1%2C1%2C3.92-3.85A3.88%2C3.88%2C0%2C0%2C1%2C28%2C90Zm14%2C0a3.85%2C3.85%2C0%2C1%2C1%2C3.91-3.85A3.89%2C3.89%2C0%2C0%2C1%2C42%2C90Z%22%2F%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M33.43%2C24V11.43L31%2C8.88V26.53ZM54.59%2C28.4%2C56%2C29.89V5.52L54.59%2C7Zm-1.87-2V9l-2.4%2C2.55V23.88Zm-27.9.06V8.94l-2.4%2C2.54V23.93Zm1.87%2C2L28%2C29.8l1.21-1.29V6.9L28%2C5.61%2C26.69%2C7Zm-21.1-4.6V11.55L3.2%2C9V26.4ZM1.33%2C28.38V7L0%2C5.62V29.79Zm54.66%2C7v-2.9H53.33l-18-19.11V22l3.32-3.51%2C2.57%2C2.73L30.53%2C32.52H25.37l-17.91-19v8.33l3.2-3.38%2C2.58%2C2.73L2.57%2C32.52H0v2.9ZM0%2C0V2.89H2.57L20.55%2C22V13.46l-3.27%2C3.47L14.71%2C14.2%2C25.37%2C2.89h5.16l17.92%2C19V13.52l-3.21%2C3.41L42.66%2C14.2%2C53.33%2C2.89H56V0Z%22%2F%3E%3Cg%20class%3D%22cls-2%22%3E%3Cpolygon%20class%3D%22cls-3%22%20points%3D%2255.99%2043.48%2055.99%2043.48%2055.99%2043.54%2055.99%2043.48%22%2F%3E%3Cpath%20class%3D%22cls-3%22%20d%3D%22M54.56%2C55.58V44.93L56%2C43.45l0%2C0%2C0-3.34H0v.67H0v2.73L1.33%2C45V55.58H3.19V46.93l2.4%2C2.55v6.1H7.46V51.46L24.77%2C69.82H0v1.33H56V69.82H31.1L48.42%2C51.44v4.14h1.87V49.46l2.4-2.54v8.66ZM35.28%2C59.92V55.58H33.41v6.33L31%2C64.45V55.58H29.14V66.43l-1.21%2C1.29-1.26-1.34V55.58H24.8V64.4l-2.4-2.54V55.58H20.54v4.29L3.19%2C41.47H52.67Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E) repeat 50% 50%
   background-size: 65px
   background-attachment: fixed
   > .DDBJ_inner
     > .DDBJ_sitemap
-      margin-bottom: 2rem
+      margin-bottom: 20px
       > .DDBJ_group
         display: inline-block
         text-align: left
         vertical-align: top
         + .DDBJ_group
-          margin-left: 3rem
+          margin-left: 30px
         > .DDBJ_title
-          font-size: 1.4rem
+          font-size: 14px
+          font-weight: bold
           line-height: 1.8
         > ul
-          font-size: 1.2rem
+          margin: 0
+          font-size: 12px
           line-height: 1.6
+          > li
+            > a
+              +anchor
     > .DDBJ_information
-      margin-bottom: 2rem
+      margin-bottom: 20px
       > ul
+        margin: 0
         > li
           display: inline-block
-          font-size: 1.4rem
+          font-size: 14px
           vertical-align: middle
           + li
-            margin-left: 3rem
+            margin-left: 30px
           > a
+            +anchor
             > img
-              width: 4rem
+              width: 40px
     > .DDBJ_partners
       > ul
+        margin: 0
         > li
           display: inline-block
           + li
-            margin-left: 3rem
+            margin-left: 30px
 #DDBJCommonFooter
   text-align: center
   background-color: rgba($COLOR_BLACK, .8)
   > .DDBJ_inner
     > .DDBJ_links
-      padding: 1.6rem 0
+      padding: 16px 0
       > ul
+        margin: 0
         > li
           display: inline-block
+          margin: 0
           + li
-            margin-left: 2rem
+            margin-left: 20px
           a
             color: white
-            font-size: 1.2
+            font-size: 10px
             line-height: 2
           address
             font-style: normal
+            margin: 0
 
 
 
@@ -156,7 +183,7 @@ $Z_COMMON_HEADER: 10000000
       .DDBJ_spcollapsemenu
         display: block !important
         background-color: $COLOR_KEY !important
-        padding: 0.8rem 0 !important
+        padding: 08px 0 !important
         width: 100vw !important
         position: absolute !important
         left: 0 !important
@@ -164,18 +191,18 @@ $Z_COMMON_HEADER: 10000000
         z-index: $Z_COMMON_HEADER !important
         text-align: left !important
         opacity: 0 !important
-        transform: translateY(-1rem) !important
+        transform: translateY(-10px) !important
         pointer-events: none !important
         transition: opacity $DURATION_GUI, transform $DURATION_GUI
       .DDBJ_spcollapsemenubutton
         display: block
-        padding: 0 1rem
-        font-size: 1.4rem
+        padding: 0 10px
+        font-size: 14px
         &.-opened
           background-color: $COLOR_KEY
           + .DDBJ_spcollapsemenu
             opacity: 1 !important
-            transform: translateY(0rem) !important
+            transform: translateY(0) !important
             pointer-events: auto !important
       > .DDBJ_logocontainer
         flex-grow: 2
@@ -190,12 +217,12 @@ $Z_COMMON_HEADER: 10000000
           > .DDBJ_row
             margin: 0
             + .DDBJ_row
-              margin-top: 1.4rem
+              margin-top: 14px
             > .DDBJ_group
               + .DDBJ_group
-                margin-top: 1.4rem
+                margin-top: 14px
               > .DDBJ_grouptitle
-                padding: 0 2rem
+                padding: 0 20px
                 color: white
                 line-height: $HEIGHT_COMMON_HEADER
       > .DDBJ_navigation
@@ -206,7 +233,7 @@ $Z_COMMON_HEADER: 10000000
           > li
             display: block
       > .DDBJ_services > .DDBJ_spcollapsemenu > .DDBJ_row > .DDBJ_group > ul > li, .DDBJ_navigation > ul > li
-        padding: 0 2rem
+        padding: 0 20px
         margin: 0
         line-height: $HEIGHT_COMMON_HEADER
   #DDBJCommonBottomMenu, #DDBJCommonFooter
@@ -217,16 +244,16 @@ $Z_COMMON_HEADER: 10000000
       > .DDBJ_sitemap
         display: flex
         flex-wrap: wrap
-        padding: 0 $PADDING_SP_BASE
+        padding: 0 $PADDING_SP_BASE_PX
         > .DDBJ_group
           width: 50%
-          margin-bottom: 1rem
+          margin-bottom: 10px
           + .DDBJ_group
             margin-left: 0
           > ul
             > li
               > a
-                padding: .4rem 0
+                padding: 4px 0
                 display: block
       > .DDBJ_information
         > ul
@@ -243,7 +270,7 @@ $Z_COMMON_HEADER: 10000000
           align-items: center
           flex-wrap: wrap
           > li
-            padding: 1rem $PADDING_SP_BASE
+            padding: 10px $PADDING_SP_BASE_PX
             + li
               margin-left: 0
   #DDBJCommonFooter
@@ -260,5 +287,4 @@ $Z_COMMON_HEADER: 10000000
               margin-left: 0
             > a, > address > a
               display: block
-              padding: 0.8rem $PADDING_SP_BASE
-
+              padding: 08px $PADDING_SP_BASE_PX
