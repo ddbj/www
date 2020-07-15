@@ -32,9 +32,7 @@ related_pages:
     url: /ddbj/tpa-e.html
 ---
 
-
-
-# Submission of environmental sequences
+## Submission of environmental sequences
 
 Here shows procedures for sequence data obtained from studies that do
 not specify individuals or species.
@@ -85,7 +83,6 @@ Notes on environmental sample submission
   - Do not use [strain](/ddbj/qualifiers-e.html#strain) qualifier.
 
 <!-- end list -->
-
 
 For small scale sequence data  
 : Sequence data obtained from environmental samples are treated as

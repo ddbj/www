@@ -5,10 +5,6 @@ pathname: qualifiers-e
 category: flatfile
 ---
 
-
-# Qualifier key
-
-
 The qualifier keys that are used and recommended for DDBJ new
 submissions are as follows.  
 For further information of INSDC qualifier keys, read [Feature Table

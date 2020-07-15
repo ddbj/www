@@ -22,15 +22,8 @@ related_pages:
     url: /ddbj/example-e.html
 ---
 
-
-
-# Organism qualifier
-
-
 Every value of organism qualifier must be a "scientific name" ranked as
 species or lower taxa in taxonomy database.
-
-
 
 ## taxonomy database
 
@@ -67,9 +60,6 @@ database, but already registered in other sequence data " for
 
 To submit nucleotide sequence data to DDBJ or to search taxonomy
 database, <span class="red">please make sure that the organism name has no misspelling. </span>
-
-
-
 
 ## General rule to describe organism names
 
@@ -112,17 +102,12 @@ regard, however, in case of different opinions in phylogenetic lineages,
 the claim would be often rejected. When you find misspelled name in
 taxonomy database, do not hesitate to [contact us](/contact-e.html#to-ddbj) to correct it.
 
-
-
-
-
 ## "Category" of organism name <a name="deasy"></a>
 
 During submission through [Nucleotide Sequence Submission System](/ddbj/websub-e.html) you have to select "Category" of organism
 name. Here shows a flowchart for judging "Category" of organism on Nucleotide Sequence Submission System
 
-![]({{ site.baseurl }}/assets/images/ddbj/organism-e.png)
-
+![]({{ site.baseurl }}/assets/images/ddbj/organism-e.png){:.w600}
 
 a. artificial constructed or synthesized sequence  
 : Select "Artificially constructed or synthesized sequence" in the
@@ -179,10 +164,6 @@ Select "The name is valid but not registered in taxonomy database"
 in the menu box of [Category]. After referring to [1. For
 identified species](#species), enter an organism name in the
 [Scientific name] box, appropriately.
-
-
-
-
 
 ## Details to describe organism names
 
@@ -441,16 +422,11 @@ Useful items for application of organism names to taxonomy database
 
   - [expected usage](/ddbj/organism-e.html#usage)
 
-
-
-
-
 ## Useful items for application of organism names to taxonomy database <a name="items"></a>
 
 If the organism name that you submit with your sequence data is not in
 the database, it must be newly registered to the taxonomy database
 through DDBJ.
-
 
 taxonomic lineage<a name="lineage"></a>
 : Please tell us the taxonomic lineage of the organism from which your

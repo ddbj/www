@@ -32,9 +32,6 @@ related_pages:
     url: /ddbj/tpa-e.html
 ---
 
-
-# ENV
-
 The ENV division of DDBJ/ENA/GenBank contains sequence data and other
 information on environmental samples. Though frequently confused,
 <span class="red">**the term, 'environmental samples', does NOT mean
@@ -89,7 +86,6 @@ Aspects of environmental samples
     samples". Please note there are some exceptions.
 
 <!-- end list -->
-
 
 <pre><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">AB000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">450 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">ENV</a> <a id="ModificationDateA" href="#ModificationDateB">16-DEC-2012</a>
 <a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Uncultured Acetobacter sp. gene for 16S ribosomal RNA, partial

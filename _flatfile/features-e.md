@@ -5,12 +5,6 @@ pathname: features-e
 category: flatfile
 ---
 
-
-
-# Feature Key
-
-
-
 The feature keys used and recommended for DDBJ submissions are as
 follows.  
 For further information of INSDC feature keys, read [Feature Table Definition](/ddbj/full_index-e.html): [7.2 Appendix II: Feature keys
@@ -28,7 +22,6 @@ in INSDC entries, read: [Feature Table Definition](/ddbj/full_index-e.html): [7.
 reference](/ddbj/full_index-e.html#7.2).
 
 ## Definision of Feature key
-
 
 assembly_gap<span class="right-alignment">[Feature Table Definition](/ddbj/full_index-e.html#assembly_gap)</span>  
 : gap between two components of a [genome](/ddbj/genome-e.html) or

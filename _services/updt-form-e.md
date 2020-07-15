@@ -4,17 +4,15 @@ title: Application Form for Data Update Requests
 category: services
 ---
 
-
-# Application Form for Data Update Requests
-
 ### Flow of data update
 
-  - Apply your request  
-    through the following form.
-  - Send an automatic  
-    confirmation e-mail
-  - Send a work completion e-mail  
-    ([within the next 5 working days](/calendar-e.html))
+{: .flow .flow_en }
+- Apply your request  
+  through the following form.
+- Send an automatic  
+  confirmation e-mail
+- Send a work completion e-mail  
+  ([within the next 5 working days](/calendar-e.html))
 
 <!-- end list -->
 

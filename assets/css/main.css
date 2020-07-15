@@ -671,6 +671,10 @@ input, textarea, select, button {
     line-height: 20px;
     padding: 10px 10px 0 40px;
     text-align: left; }
+    .md-content .flow_en li:first-child:before {
+      margin: -11px -30px -30px auto; }
+    .md-content .flow_en li:first-child:after {
+      margin: -20px -30px -1px auto; }
   .md-content .flow_en li:nth-child(2) {
     line-height: 20px;
     padding: 10px 10px 0 40px; }

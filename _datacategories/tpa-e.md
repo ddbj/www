@@ -32,9 +32,6 @@ related_pages:
     url: /ddbj/tpa-e.html
 ---
 
-
-# TPA
-
 TPA (Third Party Data) is a nucleotide sequence data collection in which
 each primary is obtained by assembling [primary
 entries](#definition_of_primary) publicized from DDBJ/EMBL-Bank/GenBank,
@@ -129,20 +126,9 @@ The sequence alignment rule between TPA and primary entries
 
 Aspects of TPA on DDBJ flat file
 : 
-  - [LOCUS](#LocusA) line provides the taxonomic division except CON
-    and TSA cases.
-  - Either of "TPA_exp:" (for TPA:experimental) or "TPA_inf:" (for
-    TPA:inferential) is shown at the beginning of
-    [DEFINITION](#DefinitionA) line.
-  - Either set of the following values is indicated in
-    [KEYWORDS](#KeywordA) line.
-
-
-    | for [TPA:experimental](/ddbj/tpa-table-e.html#exp) | Third Party Data; TPA; TPA:experimental. |
-    | for [TPA:inferential](/ddbj/tpa-table-e.html#inf)  | Third Party Data; TPA; TPA:inferential.  |
-    | for [TPA:assembly](/ddbj/tpa-table-e.html#ass)  | Third Party Data; TPA; TPA:assembly.  |
-    | for [TPA:specialist_db](/ddbj/tpa-table-e.html#spe)  | Third Party Data; TPA; TPA:specialist_db.  |
-
+  - [LOCUS](#LocusA) line provides the taxonomic division except CON and TSA cases.
+  - Either of "TPA_exp:" (for TPA:experimental) or "TPA_inf:" (for TPA:inferential) is shown at the beginning of [DEFINITION](#DefinitionA) line.
+  - Either set of the following values is indicated in [KEYWORDS](#KeywordA) line.<br>{::nomarkdown}<table><tbody><tr><td>for <a href="/ddbj/tpa-table-e.html#exp">TPA:experimental</a></td><td>Third Party Data; TPA; TPA:experimental.</td></tr><tr><td>for <a href="/ddbj/tpa-table-e.html#inf">TPA:inferential</a></td><td>Third Party Data; TPA; TPA:inferential.</td></tr><tr><td>for <a href="/ddbj/tpa-table-e.html#ass">TPA:assembly</a></td><td class="second">Third Party Data; TPA; TPA:assembly.</td></tr><tr><td>for <a href="/ddbj/tpa-table-e.html#spe">TPA:specialist_db</a></td><td>Third Party Data; TPA; TPA:specialist_db.</td></tr></tbody></table>{:/}
   - [PRIMARY](#PrimaryA) block provides base spans cited from
     sequeces of primary entries that contribute to regions of the
     TPA sequence.

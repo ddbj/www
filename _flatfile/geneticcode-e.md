@@ -25,10 +25,6 @@ related_pages:
 
 ---
 
-
-
-# The Genetic Codes
-
 ## Defiition of /transl_table qualifier
 
 ```
@@ -537,12 +533,7 @@ CAG may be used in *Candida albicans* ([Santos *et al*., 1993](https://www.ncbi.
 
 ### Systematic Range:
 
-***Endomycetales (yeasts)***
-: *Candida albicans*,
-*Candida cylindracea*,
-*Candida melibiosica*,
-*Candida parapsilosis*, and
-*Candida rugosa* ([Ohama *et al*., 1993](https://www.ncbi.nlm.nih.gov/pubmed/8371978)).
+***Endomycetales (yeasts)***: *Candida albicans*,*Candida cylindracea*,*Candida melibiosica*,*Candida parapsilosis*, and *Candida rugosa* ([Ohama *et al*., 1993](https://www.ncbi.nlm.nih.gov/pubmed/8371978)).
 
 ### Comment:
 

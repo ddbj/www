@@ -32,9 +32,6 @@ related_pages:
     url: /ddbj/tpa-e.html)
 ---
 
-
-# Data Categories
-
 ## [Division](/ddbj/flat-file-e.html#Division) conventional sequence data
 
 ### General data: classified by source species

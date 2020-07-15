@@ -32,9 +32,6 @@ related_pages:
     url: /ddbj/tpa-e.html
 ---
 
-
-# EST
-
 EST is a division of DDBJ/ENA/GenBank that contains sequence data and
 other information on "single-pass" cDNA (i.e. mRNA or other RNA
 transcript) sequences, or "Expressed Sequence Tags", from a number of
@@ -87,7 +84,6 @@ Aspects of EST
     | Other than above two cases | unspecified EST          |
     
 
-
   - In the case of 3' EST, to distinguish whether your sequences are
     corresponding to anti-sense or sense strand, please describe either
     of following two [COMMENT](#CommentA)s.
@@ -96,8 +92,6 @@ Aspects of EST
     | For anti-sense strand | 3'-EST sequences are presented as anti-sense strand. |
     | For sense strand      | 3'-EST sequences are presented as sense strand.      |
     
-
-
 <!-- end list -->
 
 <pre><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">HY000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">300 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">EST</a> <a id="ModificationDateA" href="#ModificationDateB">15-OCT-2008</a>
