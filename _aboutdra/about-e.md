@@ -5,16 +5,12 @@ pathname: about-e
 category: aboutdra
 ---
 
-
-# About DRA
-
-  - [Contact](#contact)
-  - [Reference](#reference)
-
-
-## Contact
+## Contact <a name="contact"></a>
 
 Please contact us from [Message form](/contact-e.html).
+
+{::options parse_block_html="true" /}
+<address>
 
 Phone : +81-(0)55-981-6853  
 FAX : +81-(0)55-981-6849  
@@ -22,10 +18,11 @@ Address : DDBJ Center DRA, W201, Center for Information Biology,
 National Institute of Genetics" at "1111 Yata, Mishima, Shizuoka
 411-8540, JAPAN
 
+</address>
+
 [Ask questions about DDBJ services.](/contact-e.html#to-ddbj)
 
-
-## Reference
+## Reference <a name="reference"></a>
 
 Kodama Y, Shumway M, Leinonen R; on behalf of the InternationalNucleotide Sequence Database  
 Collaboration (2012)  

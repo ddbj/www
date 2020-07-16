@@ -5,12 +5,9 @@ pathname: ncRNA_class-e
 category: tentative
 ---
 
-# Controlled vocabulary for ncRNA classes
+## Controlled vocabulary for ncRNA classes
 
-The original site; [Controlled vocabulary for ncRNA
-classes](http://www.insdc.org/documents/ncrna-vocabulary) 2014.02.03
-version
-
+The original site; [Controlled vocabulary for ncRNA classes](http://www.insdc.org/documents/ncrna-vocabulary) 2014.02.03 version
 
 antisense_RNA  
 : RNA molecule that is transcribed from the coding, rather than the

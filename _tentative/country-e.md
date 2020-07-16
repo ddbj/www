@@ -5,9 +5,6 @@ pathname: country-e
 category: tentative
 ---
 
-
-# Controlled vocabulary for /country qualifier
-
 The original site; [Controlled vocabulary for /country
 qualifier](//www.insdc.org/documents/country-qualifier-vocabulary)
 2018.06.21 version
@@ -22,15 +19,14 @@ countries.
 
 ## Defiition of /country qualifier
 
-```
-Qualifier:      /country=" "
+<pre>Qualifier:      /country=" "
 Qualifier       /country=
 Definition      locality of isolation of the sequenced organism indicated in
                 terms of political names for nations, oceans or seas, followed
                 by regions and localities
-Value format    "[:][, ]" where 
+Value format    "<country_value>[:<region>][, <locality>]" where 
                 country_value is any value from the controlled vocabulary at 
-                //www.insdc.org/documents/country-qualifier-vocabulary
+                <a href="//www.insdc.org/documents/country-qualifier-vocabulary">//www.insdc.org/documents/country-qualifier-vocabulary</a>
 Example         /country="Canada:Vancouver"
                 /country="France:Cote d'Azur, Antibes"
                 /country="Atlantic Ocean:Charlie Gibbs Fracture Zone"
@@ -39,7 +35,7 @@ Comment         Intended to provide a reference to the site where the source
                 be indicated where possible. Note that the physical geography of
                 the isolation or sampling site should be represented in
                 /isolation_source.
-```
+</locality></region></country_value></pre>
 
 COUNTRY LIST based on information from:
 <https://unstats.un.org/unsd/methods/m49/m49.htm>

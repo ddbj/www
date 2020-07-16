@@ -5,29 +5,6 @@ pathname: example-e
 category: aboutdra
 ---
 
-# Example of metadata
-
-  - [Experiment (Spot, Platform)](#Experiment)
-  - [454 single reads](#454_single)
-  - [454 paired reads](#454_paired)
-  - [Illumina single reads](#illumina_single)
-  - [Illumina paired reads](#illumina_paired)
-  - [SOLiD single reads](#SOLiD_single)
-  - [SOLiD paired reads](#SOLiD_paired)
-  - [Ion torrent single reads](#Ion_single)
-  - [PacBio single reads (Standard sequencing)](#PacBio_standard)
-  - [PacBio single reads (Circular consensus sequencing)](#PacBio_CCS)
-
-# [Typical examples causing errors in data validation](#errors)
-
-  - [Reads having no application read](#no_application)
-  - [Reads with inconsistent base coordinate](#inconsistent_base)
-  - [Reads with relative order which cannot be specified](#cannot_specified)
-
-# [Experiment (Pipeline)](#Experiment_pipeline)
-  - [Example 1 of Experiment XML Pipeline](#pipeline1)
-  - [Example 2 of Experiment XML Pipeline](#pipeline2)
-
 {::options parse_block_html="true" /}
 <div class="attention red">
 The DRA metadata submission tool cannot describe technical reads (adapter, primer and barcode sequences). When sequencing data contain technical reads to be submitted,

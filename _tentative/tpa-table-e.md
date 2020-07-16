@@ -5,18 +5,9 @@ pathname: tpa-table-e
 category: tentative
 ---
 
-# TPA Submission Guidelines
+The original site; [TPA Submission Guidelines](http://www.insdc.org/documents/tpa-submission-guidelines) 2013.10.15 version
 
-The original site; [TPA Submission
-Guidelines](http://www.insdc.org/documents/tpa-submission-guidelines)
-2013.10.15 version
-
-Third PArty data (TPA) are submitted to the International Nucleotide
-Sequence Databases as part of the process of publishing biological
-studies that include the assembly and/or annotation of existing INSDC
-reads and primary sequences. Publicly accessible TPA data are therefore
-linked to a publication or publications that document the derivation of
-the data supported by peer-reviewed scientific evidence.
+Third PArty data (TPA) are submitted to the International Nucleotide Sequence Databases as part of the process of publishing biological studies that include the assembly and/or annotation of existing INSDC reads and primary sequences. Publicly accessible TPA data are therefore linked to a publication or publications that document the derivation of the data supported by peer-reviewed scientific evidence.
 
 ## TPA subcategories
 
@@ -26,47 +17,25 @@ All TPA records belong to one of these classes:
 **TPA:assembly**.
 
 TPA:experimental  
-: describes records that include functional annotation derived at
-least in part from peer-reviewed wet-lab experimental investigation.
+: describes records that include functional annotation derived at least in part from peer-reviewed wet-lab experimental investigation.
 
 TPA:inferential  
-: describes records that include functional annotation derived from
-peer-reviewed bioinformatic investigation.
+: describes records that include functional annotation derived from peer-reviewed bioinformatic investigation.
 
 TPA:specialist_db  
-: describes records whose sequences are submitted from an existing
-authoritative public database that is built using INSDC sequence
-data and is described in an accepted peer-reviewed publication. The
-existing database is therefore recognized to be comprehensive, to
-have added value, and to be maintained long term.
+: describes records whose sequences are submitted from an existing authoritative public database that is built using INSDC sequence data and is described in an accepted peer-reviewed publication. The existing database is therefore recognized to be comprehensive, to have added value, and to be maintained long term.
 
 TPA:assembly  
-: describes records reporting assembly or reassembly, for which the
-generation, whether it is purely informatic or informed by
-experimentation, has been subject to peer review. Annotation may or
-may not be available and does not require to be part of the peer
-review for this TPA class. A further requirement for TPA:assembly is
-for submitters to provide an alignment file containing the
-reads/sequences mapped to the assembly.
+: describes records reporting assembly or reassembly, for which the generation, whether it is purely informatic or informed by experimentation, has been subject to peer review. Annotation may or may not be available and does not require to be part of the peer review for this TPA class. A further requirement for TPA:assembly is
+for submitters to provide an alignment file containing the reads/sequences mapped to the assembly.
 
-TPA records are clearly labeled with keywords indicating their TPA
-status and their class. Constructed genomes where no experimental
-evidence is presented (in
-**TPA:assembly**) are permitted to
-include only annotation relating to genes of known function (as opposed
-to hypothetical proteins, for example). Submissions containing neither
-assembly information nor annotation that has resulted from peer-reviewed
-*in vivo*, *in vitro* or *in silico* experimentation are not accepted in
-TPA. The outputs of computational tools, feature identification
-algorithms, and homology search tools alone are not sufficient for TPA.
+TPA records are clearly labeled with keywords indicating their TPA status and their class. Constructed genomes where no experimental evidence is presented (in
+**TPA:assembly**) are permitted to include only annotation relating to genes of known function (as opposed to hypothetical proteins, for example). Submissions containing neither assembly information nor annotation that has resulted from peer-reviewed *in vivo*, *in vitro* or *in silico* experimentation are not accepted in
+TPA. The outputs of computational tools, feature identification algorithms, and homology search tools alone are not sufficient for TPA.
 
 ## Acceptable records for TPA
 
-Below is a list of typical TPA entry types and the class to which they
-belong. Please note that this list is neither exhaustive (there may be
-further entry types that would be acceptable) nor defining of the
-complete set of requirements (other constraints will be applied that are
-documented outside this list)
+Below is a list of typical TPA entry types and the class to which they belong. Please note that this list is neither exhaustive (there may be further entry types that would be acceptable) nor defining of the complete set of requirements (other constraints will be applied that are documented outside this list)
 
 | Record<br>Type | TPA Tier | Description |
 | --- | --- | --- |

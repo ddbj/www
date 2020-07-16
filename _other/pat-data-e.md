@@ -5,13 +5,9 @@ pathname: pat-data-e
 category: other
 ---
 
-# Sequence data included in patent applications
+DDBJ Center provides some services to search and to browse sequence data　that are included in patent applications.
 
-DDBJ Center provides some services to search and to browse sequence data
-that are included in patent applications.
-
-Please note that DDBJ is not responsible for any issues that may arise
-from use of sequence data.  
+Please note that DDBJ is not responsible for any issues that may arise　from use of sequence data.  
 See also [sitepolicy and Disclaimer](/policies-e.html).
 
 ## Nucleotide sequence data
