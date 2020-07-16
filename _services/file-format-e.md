@@ -2,6 +2,19 @@
 layout: indexed_content
 title: Submission File Format
 category: services
+related_pages:
+  - title: Validation tools for MSS data files
+    url: services/mss-tool-e.html
+  - title: UME User’s manual
+    url: services/ume-e.html
+  - title: Parser User’s Manual
+    url: services/parser-e.html
+  - title: transChecker User’s Manual
+    url: services/transchecker-e.html
+  - title: Validator error message
+    url: services/validator-e.html
+  - title: Application form for MSS
+    url: services/mass-form-e.html
 ---
 
 ## Sequence File<a name="sequence"></a>
@@ -127,35 +140,34 @@ Other
 Meta-base position 'E' for the location description  
 : Example: rRNA feature in COMMON entry
     
-| Entry  | Feature | Location                           | Qualifier | Value    |
-| ------ | ------- | ---------------------------------- | --------- | -------- |
-| COMMON | rRNA    | \<1..\>**E** | product   | 16S rRNA |
+  | Entry  | Feature | Location                           | Qualifier | Value    |
+  | ------ | ------- | ---------------------------------- | --------- | -------- |
+  | COMMON | rRNA    | \<1..\>**E** | product   | 16S rRNA |
      
-There are many submissions that have common Feature information for all entries in their Qualifiers, and Values except their Locations because of difference of their sequence lengths, such as phylogenic studies with rRNA sequences.
+  There are many submissions that have common Feature information for all entries in their Qualifiers, and Values except their Locations because of difference of their sequence lengths, such as phylogenic studies with rRNA sequences.
     
-In such cases, you can describe the common Feature in COMMON entry by using meta-base position '**E**' in its Location instead of the number of the sequence end points.
+  In such cases, you can describe the common Feature in COMMON entry by using meta-base position '**E**' in its Location instead of the number of the sequence end points.
 
 Meta-description '@@\[entry\]@@ 'is available for clone, note, ff\_definition  
 : Example: source feature in COMMON entry
        
-    | Entry  | Feature | Location                       | Qualifier        | Value                                                                                               |
-    | ------ | ------- | ------------------------------ | ---------------- | --------------------------------------------------------------------------------------------------- |
-    | COMMON | source  | 1..**E** | organism         | Homo sapiens                                                                                        |
-    |        |         |                                | mol\_type        | genomic DNA                                                                                         |
-    |        |         |                                | submitter\_seqid | **@@\[entry\]@@**                                                            |
-    |        |         |                                | ff\_definition   | **@@\[organism\]@@** DNA, **@@\[submitter\_seqid\]@@** |
+  | Entry  | Feature | Location                       | Qualifier        | Value                                                                                               |
+  | ------ | ------- | ------------------------------ | ---------------- | --------------------------------------------------------------------------------------------------- |
+  | COMMON | source  | 1..**E** | organism         | Homo sapiens                                                                                        |
+  |        |         |                                | mol\_type        | genomic DNA                                                                                         |
+  |        |         |                                | submitter\_seqid | **@@\[entry\]@@**                                                            |
+  |        |         |                                | ff\_definition   | **@@\[organism\]@@** DNA, **@@\[submitter\_seqid\]@@** |
      
-There are some submissions that have common Feature information for all entries in their Qualifiers, and Values except their Locations and clone name or contig names, such as EST, GSS, TSA, TLS, WGS, WGS scaffold (CON division), and so on.
+  There are some submissions that have common Feature information for all entries in their Qualifiers, and Values except their Locations and clone name or contig names, such as EST, GSS, TSA, TLS, WGS, WGS scaffold (CON division), and so on.
     
-In such cases, you can describe the Feature: source in COMMON entry only if you use clone or contig names as entry name.
+  In such cases, you can describe the Feature: source in COMMON entry only if you use clone or contig names as entry name.
     
   - You can use meta-base position '**E**' in its Location instead of the number of the sequence end points.
   - For the Value of clone, submitter\_seqid, note, ff\_definition, a meta description **@@\[entry\]@@, entry** enclosed by "**@@\[**" and "**\]@@**", is available to quote entry names. It will be replaced by the entry names which are quoted from a sequence file.
 
 ### SUBMITTER
 
-Example: SUBMITTER in annotation
-file　(<span class="red">Requierd</span>)
+Example: SUBMITTER in annotation file　(<span class="red">Requierd</span>)
 
 | Entry  | Feature                            | Location | Qualifier                          | Value                          |
 | ------ | ---------------------------------- | -------- | ---------------------------------- | ------------------------------ |
@@ -204,8 +216,7 @@ List of Qualifiers for SUBMITTER
   - The abbreviation of the author name according to the format of REFERENCE author should be described in Value of Qualifier: ab\_name.
 
     Value format:
-    : last name\[comma\]initial of first name\[period\]initial of
-    middle name\[period\]
+    : last name\[comma\]initial of first name\[period\]initial of middle name\[period\]
 
     Example:  
     : Miyashita,Y.
@@ -696,8 +707,7 @@ Value formats of ff\_definition
   - The Qualifier: ff\_definition can be described on source, one of [Biological features](#biological_feature).
   - You can describe only one ff\_difinition for one entry.
   - The value of ff\_definition will be used for the DEFINITION line in the format of [DDBJ flat file](/ddbj/flat-file-e.html).  Please refer to [Sample annotation file and The relationships between annotation file and DDBJ flat file](#sample).
-  - For the Value of ff\_definition, a meta description (e.g. @@\[organism\]@@ and @@\[clone\]@@) is available to quote values of
-    other qualifiers. The meta description, Qualifier name enclosed by "**@@\[** and **\]@@**", will be replaced by the value of target Qualifier ("organism", "clone" in the above sample) when ff\_definition is reflected in DEFINITION line on DDBJ flat file.
+  - For the Value of ff\_definition, a meta description (e.g. @@\[organism\]@@ and @@\[clone\]@@) is available to quote values of other qualifiers. The meta description, Qualifier name enclosed by "**@@\[** and **\]@@**", will be replaced by the value of target Qualifier ("organism", "clone" in the above sample) when ff\_definition is reflected in DEFINITION line on DDBJ flat file.
   - In principle, you can describe DEFINITION according to the above table, however, if you like to input the values of ff\_definition qualifiers, please contact us before your submission.
 
 ### assembly\_gap: Sequencing Gap Region
