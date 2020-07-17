@@ -27,26 +27,26 @@ Parser is a software tool developed by DDBJ for checking the format and the synt
   </li>
   <li>
     Uncompress tar.gz file.<br>
-<code>
-$ gunzip Parser.tar.gz
-</code>
+    <code>
+      $ gunzip Parser.tar.gz
+    </code>
   </li>
   <li>
     Extract the file tar command<br>
-<code>
-$ tar xvf Parser.tar
-</code>
+    <code>
+      $ tar xvf Parser.tar
+    </code>
   </li>
   <li>
     directory is created<br>  
     Check the contents of the directory<br>
-<pre>
-<code>
+  <pre>
+    <code>
 $ cd jParser
 $ ls -FC
 jParser.sh* jar/    license.txt resource/
-</code>
-</pre><br>
+    </code>
+  </pre><br>
     <table>
       <tbody>
         <tr>
@@ -97,8 +97,8 @@ RETVAL=$?
 
 exit $RETVAL
 #EOF
-</code>
-</pre>
+      </code>
+    </pre>
   <dl>
       <dt>[PARSER\_DIR parameter\]</dt>  
       <dd>Enter the full path name of jParser directory.</dd>
