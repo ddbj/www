@@ -44,13 +44,13 @@ $ tar xvf Parser.tar
   <li>
     directory is created<br>  
     Check the contents of the directory<br>
-<pre>
-<code>
+  <pre>
+    <code>
 $ cd jParser
 $ ls -FC
 jParser.sh* jar/    license.txt resource/
-</code>
-</pre><br>
+    </code>
+  </pre><br>
     <table>
       <tbody>
         <tr>
@@ -101,8 +101,8 @@ RETVAL=$?
 
 exit $RETVAL
 #EOF
-</code>
-</pre>
+      </code>
+    </pre>
   <dl>
       <dt>[PARSER\_DIR parameter\]</dt>  
       <dd>Enter the full path name of jParser directory.</dd>
