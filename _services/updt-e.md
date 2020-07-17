@@ -12,21 +12,18 @@ See [Categories for Sequence Data](/data-categories-e.html).
 ### DRA: DDBJ Sequece Read Archive, BioProject or BioSample
 
 <table>
-<colgroup>
-<col style="width: 50%"/>
-<col style="width: 50%"/>
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>DRA</td>
-<td><a href="https://ddbj.nig.ac.jp/D-way/">Login to D-way</a> and update by yourself.<br/>
-In case of data addition or deletion, contact us via <a href="/contact-e.html">Contact</a>.</td>
-</tr>
-<tr class="even">
-<td>BioProject / BioSample</td>
-<td>contact us via <a href="/contact-e.html">Contact</a>.</td>
-</tr>
-</tbody>
+  	<tbody>
+  	  <tr>
+  	  	<th>DRA</th>
+  	  	<td>
+<a href="https://ddbj.nig.ac.jp/D-way/">Login to D-way</a> and update by yourself.<br>
+          In case of data addition or deletion, contact us via <a href="/contact-e.html">Contact</a>.</td>
+  	  </tr>
+  	  <tr>
+  	  	<th>BioProject / BioSample</th>
+  	  	<td>contact us via <a href="/contact-e.html">Contact</a>.</td>
+  	  </tr>
+  	</tbody> 
 </table>
 
 ### Narrowly-defined DDBJ, as a counterpart of GenBank and EMBL-Bank

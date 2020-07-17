@@ -55,10 +55,10 @@ ADF ヘッダーフィールドリスト (* 必須フィールド):
 ADF テーブルセクション中のヘッダーも controlled vocabulary を使います。GEA が提供している ADF
 テンプレートファイルには正しいヘッダーが含まれているのでゼロから作成する必要はありません。テンプレート中のヘッダーは編集しないでください。
 
-  - [composite_element_array_ADF_template.xls](/files/magetab/adf/composite_element_array_ADF_template.xls)
-  - [commercial_array_header_template.xls](/files/magetab/adf/commercial_array_header_template.xls)
-  - [reporter_only_array_ADF_template.xls](/files/magetab/adf/reporter_only_array_ADF_template.xls)
-  - [spotted_array_ADF_template.xls](/files/magetab/adf/spotted_array_ADF_template.xls)
+  - [composite_element_array_ADF_template.xls]({{ site.baseurl }}/assets/files/magetab/adf/composite_element_array_ADF_template.xls)
+  - [commercial_array_header_template.xls]({{ site.baseurl }}/assets/files/magetab/adf/commercial_array_header_template.xls)
+  - [reporter_only_array_ADF_template.xls]({{ site.baseurl }}/assets/files/magetab/adf/reporter_only_array_ADF_template.xls)
+  - [spotted_array_ADF_template.xls]({{ site.baseurl }}/assets/files/magetab/adf/spotted_array_ADF_template.xls)
 
 ### Feature、reporter と composite element
 

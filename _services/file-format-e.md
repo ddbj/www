@@ -958,9 +958,8 @@ It is required to validate formats of AGP file by [UME](/ddbj/ume-e.html).
 
 Description on each column（column 1 - column 5）
 
-component: a sequence used to construct a larger sequence (i.e. piece entry)
-{: .tablecaption}
 <table>
+  <caption>* component: a sequence used to construct a larger sequence (i.e. piece entry)</caption>
   <thead>
     <tr>
       <th>column</th>
@@ -980,66 +979,65 @@ component: a sequence used to construct a larger sequence (i.e. piece entry)
       <td colspan="2">The starting coordinates of the component/gap on the object.</td>
     </tr>
     <tr>
-              <td>3</td>
-              <td>object_end</td>
-              <td colspan="2">The ending coordinates of the component/gap on the object.</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>part_number</td>
-              <td colspan="2">The line count for the components/gaps that make up the object.</td>
-            </tr>
-            <tr>
-              <td rowspan="10" class="borderbtm">5</td>
-              <td rowspan="10" class="borderbtm">component_type</td>
-              <td colspan="2">The sequencing status of the component. These typically correspond to keywords in the International Sequence Database (GenBank/EMBL/DDBJ) submission. Current acceptable values are:</td>
-            </tr>
-            <tr>
-              <td>A</td>
-              <td> Active Finishing</td>
-            </tr>
-            <tr>
-              <td>D</td>
-              <td>Draft HTG (often phase1 and phase2 are called Draft, whether or not they have the draft keyword)</td>
-            </tr>
-            <tr>
-              <td>F</td>
-              <td>Finished HTG (phase3)</td>
-            </tr>
-            <tr>
-              <td>G</td>
-              <td>Whole Genome Finishing</td>
-            </tr>
-            <tr>
-              <td>O</td>
-              <td>Other sequence (typically means no HTG keyword)</td>
-            </tr>
-            <tr>
-              <td>P</td>
-              <td>Pre Draft</td>
-            </tr>
-            <tr>
-              <td>W</td>
-              <td>WGS contig</td>
-            </tr>
-            <tr>
-              <td>N</td>
-              <td>gap with specified size</td>
-            </tr>
-            <tr>
-              <td>U</td>
-              <td>gap of unknown size, defaulting to 100 bases</td>
-            </tr>
-          </tbody>
-        </table>
+      <td>3</td>
+      <td>object_end</td>
+      <td colspan="2">The ending coordinates of the component/gap on the object.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>part_number</td>
+      <td colspan="2">The line count for the components/gaps that make up the object.</td>
+    </tr>
+    <tr>
+      <td rowspan="10" class="borderbtm">5</td>
+      <td rowspan="10" class="borderbtm">component_type</td>
+      <td colspan="2">The sequencing status of the component. These typically correspond to keywords in the International Sequence Database (GenBank/EMBL/DDBJ) submission. Current acceptable values are:</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td> Active Finishing</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>Draft HTG (often phase1 and phase2 are called Draft, whether or not they have the draft keyword)</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>Finished HTG (phase3)</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>Whole Genome Finishing</td>
+    </tr>
+    <tr>
+      <td>O</td>
+      <td>Other sequence (typically means no HTG keyword)</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>Pre Draft</td>
+    </tr>
+    <tr>
+      <td>W</td>
+      <td>WGS contig</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>gap with specified size</td>
+    </tr>
+    <tr>
+      <td>U</td>
+      <td>gap of unknown size, defaulting to 100 bases</td>
+    </tr>
+  </tbody>
+</table>
 
 <span class="icon_d-triangle">The description of column 6 to 9 depends on the value in column 5 whether it has gap or not.</span>
 
 Description on each column（column 6 - column 9）： If column 5 contains A, D, F, G, O, P and W except from N and U
 
-component: a sequence used to construct a larger sequence (i.e. piece entry)
-{: .tablecaption}
 <table>
+  <caption>* component: a sequence used to construct a larger sequence (i.e. piece entry)</caption>
   <thead>
     <tr>
       <th>column</th>

@@ -5,9 +5,6 @@ pathname: about-e
 category: aboutgea
 ---
 
-
-# About GEA
-
 ## Contact
 
 Please contact us from [Message form](/contact-e.html).

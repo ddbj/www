@@ -15,15 +15,19 @@ transChecker は Mass Submission System (MSS) を利用して DDBJ に登録す�
   </li>     
   <li>  
     tar.gz ファイルを gunzip コマンドで解凍<br>
-    <code>
-      $ gunzip transChecker.tar.gz
-    </code>   
+<pre>
+<code>
+$ gunzip transChecker.tar.gz
+</code>   
+</pre>
   </li>   
   <li>
     tar ファイルを tar コマンドで展開<br>
-    <code>
-      $ tar xvf transChecker.tar
-    </code>
+<pre>
+<code>
+$ tar xvf transChecker.tar
+</code>
+</pre>
   </li>  
   <li>
     ディレクトリが生成される<br>

@@ -5,9 +5,6 @@ pathname: example-e
 category: aboutgea
 ---
 
-# MAGE-TAB example
-
-
 ## IDF Example
 
 [Full IDF example in
@@ -66,7 +63,9 @@ identifier columns (names).
 A simple microarray experiment. Each sample has one raw data file and
 one processed data file.
 
-{% include image.html url="magetab/sdrf1.png" caption="Raw and processed microarray data files for each sample" %}
+{::nomarkdown}
+{% include image.html url="magetab/sdrf1.png" caption="Raw and processed microarray data files for each sample" class="w400" %}
+{:/}
 
 | Source Name | Protocol REF | Assay Name      | Array Data File | Derived Array Data File |
 | Source 1    | P-GEAD-10    | Hybridization 1 | Data1.CEL       | Processed1.txt          |
@@ -74,12 +73,14 @@ one processed data file.
 | Source 3    | P-GEAD-10    | Hybridization 3 | Data3.CEL       | Processed3.txt          |
 | Source 4    | P-GEAD-10    | Hybridization 4 | Data4.CEL       | Processed4.txt          |
 
+{: .tablecaption}
 Raw and processed microarray data files for each sample
-
 
 ### Example 2: Two-color microarray <a name="sdrf_example2"></a>
 
-{% include image.html url="magetab/sdrf2.png" caption="Two-color microarray" %}
+{::nomarkdown}
+{% include image.html url="magetab/sdrf2.png" caption="Two-color microarray" class="w400" %}
+{:/}
 
 | Source Name | Extract Name | Labeled Extract Name  | Label | Assay Name      |
 | Source 1a   | Extract 1a   | LabeledExtract 1a Cy3 | Cy3   | Hybridization 1 |
@@ -89,8 +90,8 @@ Raw and processed microarray data files for each sample
 | Source 3a   | Extract 3a   | LabeledExtract 3a Cy3 | Cy3   | Hybridization 3 |
 | Source 3b   | Extract 3b   | LabeledExtract 3b Cy5 | Cy5   | Hybridization 3 |
 
+{: .tablecaption}
 Two-color microarray
-
 
 ### Example 3: Raw and processed sequencing data file for each sample, and a processed matrix file  <a name="sdrf_example3"></a>
 
@@ -98,7 +99,9 @@ A simple next-generation sequencing experiment. One raw DRA data file
 and one processed data file for each sample, and one processed matrix
 file for all samples.
 
-{% include image.html url="magetab/sdrf3.png" caption="Raw and processed sequencing data file for each sample, and a processed matrix file" %}
+{::nomarkdown}
+{% include image.html url="magetab/sdrf3.png" caption="Raw and processed sequencing data file for each sample, and a processed matrix file" class="w500" %}
+{:/}
 
 | Source Name | Protocol REF | Assay Name   | Array Data File | Derived Array Data File | Derived Array Data Matrix File |
 | Source 1    | P-GEAD-20    | Sequencing 1 | DRR000001       | Processed1.txt          | Processed-matrix.txt           |

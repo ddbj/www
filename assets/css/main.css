@@ -451,6 +451,8 @@ input, textarea, select, button {
       font-weight: bold; }
     .md-content dl + dt {
       margin-top: 1rem; }
+    .md-content dl dd * {
+      margin-bottom: 1rem; }
   .md-content .dl-list {
     margin-bottom: 2rem; }
     .md-content .dl-list dt {
@@ -497,7 +499,8 @@ input, textarea, select, button {
     font-family: 'courier', monospace; }
   .md-content pre {
     padding: .3rem .6rem;
-    display: inline-block; }
+    display: inline-block;
+    margin-bottom: 1rem; }
   .md-content code {
     white-space: break-spaces; }
   .md-content .attention {

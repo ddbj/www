@@ -79,7 +79,7 @@ license file
 
 ### Initial setting of UME
 
-At the first time, you run UME application, change the maximum size of RAM for UME to optimize run-time environments. The default configuration of it is 512 Mbytes. [![]({{ site.baseurl }}/assets/images/ddbj/UME2.png)](/images/ddbj/UME2.png)
+At the first time, you run UME application, change the maximum size of RAM for UME to optimize run-time environments. The default configuration of it is 512 Mbytes. [![]({{ site.baseurl }}/assets/images/ddbj/UME2.png)]({{ site.baseurl }}/assets/images/ddbj/UME2.png)
 
 1. Click Config in menu bar.
 2. Select the appropriate size of Max memory for runtime from pull-down menu.

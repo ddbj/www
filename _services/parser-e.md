@@ -27,15 +27,19 @@ Parser is a software tool developed by DDBJ for checking the format and the synt
   </li>
   <li>
     Uncompress tar.gz file.<br>
+<pre>
 <code>
 $ gunzip Parser.tar.gz
 </code>
+</pre>
   </li>
   <li>
     Extract the file tar command<br>
+<pre>
 <code>
 $ tar xvf Parser.tar
 </code>
+</pre>
   </li>
   <li>
     directory is created<br>  

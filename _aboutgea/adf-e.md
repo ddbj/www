@@ -5,9 +5,6 @@ pathname: adf-e
 category: aboutgea
 ---
 
-# Array design
-
-
 ## Array design format (ADF) file
 
 The ADF (Array Design Format) file captures information about a
@@ -27,8 +24,9 @@ open in any spreadsheet program for viewing or editing.
 
 Here is a snippet of an ADF document:
 
-{% include image.html url="magetab/adf1.png" caption="A snippet of an ADF document" %}
-
+{::nomarkdown}
+{% include image.html url="magetab/adf1.png" caption="A snippet of an ADF document" class="w600" %}
+{:/}
 
 ## ADF metadata header
 
@@ -39,7 +37,9 @@ one of our ADF templates so you don't need to insert them from scratch.
 Please do not edit the headings, but fill in each field as much as
 possible, like the blue text below:
 
-{% include image.html url="magetab/adf2.png" caption="ADF metadata header" %}
+{::nomarkdown}
+{% include image.html url="magetab/adf2.png" caption="ADF metadata header" class="w600" %}
+{:/}
 
 A glossary of the ADF header fields (* denotes mandatory fields):
 
@@ -70,10 +70,10 @@ them from scratch. Please don't change the column headings in the
 template.
 
 
-  - [composite_element_array_ADF_template.xls](/files/magetab/adf/composite_element_array_ADF_template.xls)
-  - [commercial_array_header_template.xls](/files/magetab/adf/commercial_array_header_template.xls)
-  - [reporter_only_array_ADF_template.xls](/files/magetab/adf/reporter_only_array_ADF_template.xls)
-  - [spotted_array_ADF_template.xls](/files/magetab/adf/spotted_array_ADF_template.xls)
+  - [composite_element_array_ADF_template.xls]({{ site.baseurl }}/assets/files/magetab/adf/composite_element_array_ADF_template.xls)
+  - [commercial_array_header_template.xls]({{ site.baseurl }}/assets/files/magetab/adf/commercial_array_header_template.xls)
+  - [reporter_only_array_ADF_template.xls]({{ site.baseurl }}/assets/files/magetab/adf/reporter_only_array_ADF_template.xls)
+  - [spotted_array_ADF_template.xls]({{ site.baseurl }}/assets/files/magetab/adf/spotted_array_ADF_template.xls)
 
 
 ### Features, reporters and composite elements
@@ -88,7 +88,9 @@ cannot be duplicated on an array. Include all features in your ADF file,
 even if there is nothing spotted there (e.g. control spots). Here is a
 schematic diagram showing the 4 coordinates:
 
-{% include image.html url="magetab/adf_column.jpg" caption="image of the Block Column and Block Row coordinate" %}
+{::nomarkdown}
+{% include image.html url="magetab/adf_column.jpg" caption="image of the Block Column and Block Row coordinate" class="w300" %}
+{:/}
 
 **Reporters (mandatory, for all arrays):**
 
@@ -114,7 +116,9 @@ because they are based on "probe sets" and not simply "probes".
 Here is a snippet from a hypothetical example of an array design,
 showing seven features, two reporters and one composite element:
 
-{% include image.html url="magetab/adf3.png" caption="Feature, reporter and composite element" %}
+{::nomarkdown}
+{% include image.html url="magetab/adf3.png" caption="Feature, reporter and composite element" class="w450" %}
+{:/}
 
 ### Annotation of reporters <a name="ann-reporters"></a>
 
@@ -183,7 +187,9 @@ This is how the hypothetical reporter annotations would be like. Notice
 how you can enter multiple accessions from the same database by
 separating them with semicolons:
 
-{% include image.html url="magetab/adf4.png" caption="ADF annotation of reporters" %}
+{::nomarkdown}
+{% include image.html url="magetab/adf4.png" caption="ADF annotation of reporters" class="w450" %}
+{:/}
 
 ### Repoter role - experimental or control
 
@@ -207,10 +213,11 @@ Factor Ontology (EFO). Here is a glossary:
 | [array control spike calibration](http://www.ebi.ac.uk/efo/EFO_0000375) | E.g. the same spike sequence introduced at varying concentrations                                                 |
 | [array control design](http://www.ebi.ac.uk/efo/EFO_0005440)            | (when none of the above applies, i.e. a control was used, but no further details available)                       |
 
-
 Here is an example of reporter roles in the ADF table:
 
-{% include image.html url="magetab/adf5.png" caption="Reporter role" %}
+{::nomarkdown}
+{% include image.html url="magetab/adf5.png" caption="Reporter role" class="w500" %}
+{:/}
 
 ### Reporter grouping by species (multi-species ADFs only)
 
@@ -222,7 +229,9 @@ Homo sapiens.
 An example of a microarray with probes derived from viral and human
 microRNA sequences:
 
-{% include image.html url="magetab/adf6.png" caption="Reporter grouping by species (multi-species ADFs only)" %}
+{::nomarkdown}
+{% include image.html url="magetab/adf6.png" caption="Reporter grouping by species (multi-species ADFs only)" class="w500" %}
+{:/}
 
 ### Annotation of composite elements
 
@@ -232,4 +241,6 @@ reporters, using one or more Composite Element Database Entry [xxx]
 columns. In addition, a Composite Element Comment column can be added to
 insert free-text comments or descriptions for each element.
 
-{% include image.html url="magetab/adf7.png" caption="ADF annotation of composite elements" %}
+{::nomarkdown}
+{% include image.html url="magetab/adf7.png" caption="ADF annotation of composite elements" class="w500" %}
+{:/}

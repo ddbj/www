@@ -121,8 +121,7 @@ center and/or submitted to the Trace Archive.
 
   Sequencing centers wishing to submit data must contact the DDBJ Trace Archive administrators to determine a center abbreviation. This abbreviation issued in the [CENTER_NAME](#CENTER_NAME)field. This field has a controlled vocabulary. For the complete list of submitting centers see: [http://www.ncbi.nlm.nih.gov/Traces/trace.cgi?view=submitting_centers](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi?view=submitting_centers)
 
-<span class="red">These center names are controlled
-separately from those of the Sequence Read Archive</span>
+  <span class="red">These center names are controlled separately from those of the Sequence Read Archive</span>
 
 <!-- end list -->
 
@@ -150,7 +149,7 @@ separately from those of the Sequence Read Archive</span>
   &emsp; Type: char(50)  
   &emsp; Example: P  
 
-  The [CHEMISTRY_TYPE](#CHEMISTRY_TYPE) uses a controlled list.   Accepted values are: PrimerTerminatorp=primer; t=terminator
+  The [CHEMISTRY_TYPE](#CHEMISTRY_TYPE) uses a controlled list. <br>  Accepted values are:<br> PrimerTerminatorp=primer; t=terminator
 
 <!-- end list -->
 
@@ -233,10 +232,7 @@ environmental sample was collected.
   &emsp; Type: datetime  
   &emsp; Example: Mar 2 2006 12:00AM  
 
-  The [COLLECTION_DATE](#COLLECTION_DATE) field is used to define the date and time on which an environmental sample was collected.<br>  
-  This field is required for the following combination of [STRATEGY](#STRATEGY)and [TRACE_TYPE_CODE](#TRACE_TYPE_CODE): <br>
-  [STRATEGY](#STRATEGY)=Env Sample-Geo; [TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=Any  <br>
-  [STRATEGY](#STRATEGY)=Env Sample-Host; [TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=Any
+  The [COLLECTION_DATE](#COLLECTION_DATE) field is used to define the date and time on which an environmental sample was collected.<br> This field is required for the following combination of [STRATEGY](#STRATEGY)and [TRACE_TYPE_CODE](#TRACE_TYPE_CODE): <br> [STRATEGY](#STRATEGY)=Env Sample-Geo; [TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=Any  <br> [STRATEGY](#STRATEGY)=Env Sample-Host; [TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=Any
 
 <!-- end list -->
 
@@ -399,8 +395,7 @@ obtained.
   &emsp; Type: varchar(100)  
   &emsp; Example: rumen  
 
-  The [HOST_LOCATION](#HOST_LOCATION) field is only applicable to environmental sample data and is used to describe the specific part of the host from which the sample was obtained, for &emsp; example: dental plaque, hindgut, root surfaces.<br>  
-  This field would be required for the following combination of[STRATEGY](#STRATEGY) and [TRACE_TYPE_CODE](#TRACE_TYPE_CODE):   [STRATEGY](#STRATEGY)=Env Sample-Host; [TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=Any
+  The [HOST_LOCATION](#HOST_LOCATION) field is only applicable to environmental sample data and is used to describe the specific part of the host from which the sample was obtained, for &emsp; example: dental plaque, hindgut, root surfaces.<br>  This field would be required for the following combination of[STRATEGY](#STRATEGY) and [TRACE_TYPE_CODE](#TRACE_TYPE_CODE):   [STRATEGY](#STRATEGY)=Env Sample-Host; [TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=Any
 
 <!-- end list -->
 
@@ -653,42 +648,20 @@ as AFLP).
 : Term by which to group traces from different centers based on a
 common project.  
 
-&emsp; Type: varchar(50)  
-&emsp; Example: New Project  
+  &emsp; Type: varchar(50)  
+  &emsp; Example: New Project  
 
-In this way sequencing centers that are working on the same large project can
-group all of the traces for this project using a common term. This
-field has a controlled vocabulary. Sequencing centers wishing to
-submit data must contact the DDBJ Trace Archive to determine a name
-that all members of the project agree on.
+  In this way sequencing centers that are working on the same large project can group all of the traces for this project using a common term. This field has a controlled vocabulary. Sequencing centers wishing to submit data must contact the DDBJ Trace Archive to determine a name that all members of the project agree on.
 
 <!-- end list -->
 
 [QUAL_FILE](#QUAL_FILE)<a name="QUAL_FILE"></a>
 : Name of file containing the quality scores.  
 
-&emsp; Type: varchar(200)  
-&emsp; Example: ./mytraces/123clone.fasta.qs  
+  &emsp; Type: varchar(200)  
+  &emsp; Example: ./mytraces/123clone.fasta.qs  
 
-Trace files which do not include
-the quality scores must provide this information in a separate file.
-The file designations are recorded in the
-[QUAL_FILE](#QUAL_FILE) fields of
-the metadata file. The actual quality scores are stored in the file
-designated in
-the[QUAL_FILE](#QUAL_FILE) field.
-If quality scores are provided in separate files the information in
-these files will overwrite any information in the trace (usually
-*.scf) file. If the quality scores that would be provided in the
-[QUAL_FILE](#QUAL_FILE) are the
-same as the information in the trace file, DO NOT PROVIDE THE FILE.
-However, it is important to note that if some formats do not include
-the quality scores, then these values must be provided as ancillary
-information. If the center provides
-the[BASE_FILE](#BASE_FILE)
-and[QUAL_FILE](#QUAL_FILE), then
-the peak index information should also be provided in a file
-called[PEAK_FILE](#PEAK_FILE).
+  Trace files which do not include the quality scores must provide this information in a separate file. The file designations are recorded in the [QUAL_FILE](#QUAL_FILE) fields of the metadata file. The actual quality scores are stored in the file designated in the[QUAL_FILE](#QUAL_FILE) field. If quality scores are provided in separate files the information in these files will overwrite any information in the trace (usually *.scf) file. If the quality scores that would be provided in the [QUAL_FILE](#QUAL_FILE) are the same as the information in the trace file, DO NOT PROVIDE THE FILE. However, it is important to note that if some formats do not include the quality scores, then these values must be provided as ancillary information. If the center provides the[BASE_FILE](#BASE_FILE) and[QUAL_FILE](#QUAL_FILE), then the peak index information should also be provided in a file called[PEAK_FILE](#PEAK_FILE).
 
 <!-- end list -->
 
@@ -698,14 +671,11 @@ particular instance of a sequence) used as the basis for a
 re-sequencing project. In case of Comparative strategy show the
 basis for primers design.  
 
-&emsp; Type: varchar(50)  
-&emsp; Example: NT_029829.1  
+  &emsp; Type: varchar(50)  
+  &emsp; Example: NT_029829.1  
 
-This field is required for the following combination
-of[STRATEGY](#STRATEGY) and
-[TRACE_TYPE_CODE](#TRACE_TYPE_CODE):  
-[STRATEGY](#STRATEGY)=Re-sequencing;Comparative
-[TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=Any
+  This field is required for the following combination of[STRATEGY](#STRATEGY) and [TRACE_TYPE_CODE](#TRACE_TYPE_CODE): <br> 
+  [STRATEGY](#STRATEGY)=Re-sequencing;Comparative [TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=Any
 
 <!-- end list -->
 
@@ -713,20 +683,11 @@ of[STRATEGY](#STRATEGY) and
 : Finish position for a particular amplicon in re-sequencing or
 comparative projects.   
 
-&emsp; Type: int  
-&emsp; Example: 30929  
+  &emsp; Type: int  
+  &emsp; Example: 30929  
 
-This field points to the finishing coordinate of the
-accession.version described in the
-[REFERENCE_ACCESSION](#REFERENCE_ACCESSION)
-field. All coordinates should be in 1 base coordinates
-(i.e.sequences start at base 1, not base 0). This field is required
-for the following combination of
-[STRATEGY](#STRATEGY) and
-[TRACE_TYPE_CODE](#TRACE_TYPE_CODE):  
-[STRATEGY](#STRATEGY)=Re-sequencing;
-[TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=SHOTGUN;
-PCR;RT-PCR
+  This field points to the finishing coordinate of the accession.version described in the [REFERENCE_ACCESSION](#REFERENCE_ACCESSION) field. All coordinates should be in 1 base coordinates (i.e.sequences start at base 1, not base 0). This field is required for the following combination of [STRATEGY](#STRATEGY) and [TRACE_TYPE_CODE](#TRACE_TYPE_CODE):<br>
+  [STRATEGY](#STRATEGY)=Re-sequencing; [TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=SHOTGUN; PCR;RT-PCR
 
 <!-- end list -->
 
@@ -734,20 +695,10 @@ PCR;RT-PCR
 : Start position for a particular amplicon in re-sequencing or
 comparative projects.  
 
-&emsp; Type: int  
-&emsp; Example: 29829  
+  &emsp; Type: int  
+  &emsp; Example: 29829  
 
-This field points to the starting coordinate of
-theaccession.version described in
-the[REFERENCE_ACCESSION](#REFERENCE_ACCESSION)field.
-All coordinates should be in 1 base coordinates (i.e.sequences start
-at base 1, not base 0). This field is required forthe following
-combination of
-[STRATEGY](#STRATEGY) and
-[TRACE_TYPE_CODE](#TRACE_TYPE_CODE):  
-[STRATEGY](#STRATEGY)=Re-sequencing;
-[TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=SHOTGUN;
-PCR;RT-PCR
+  This field points to the starting coordinate of theaccession.version described in the[REFERENCE_ACCESSION](#REFERENCE_ACCESSION)field. All coordinates should be in 1 base coordinates (i.e.sequences start at base 1, not base 0). This field is required forthe following combination of [STRATEGY](#STRATEGY) and [TRACE_TYPE_CODE](#TRACE_TYPE_CODE):<br>   [STRATEGY](#STRATEGY)=Re-sequencing; [TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=SHOTGUN; PCR;RT-PCR
 
 <!-- end list -->
 
@@ -756,19 +707,11 @@ PCR;RT-PCR
 to define the coordinate start position used as the basis for a
 re-sequencing project.  
 
-&emsp; Type: int  
-&emsp; Example: 1520899  
+  &emsp; Type: int  
+  &emsp; Example: 1520899  
 
-This field points to the starting coordinate of
-theaccession.version described in
-the[REFERENCE_ACCESSION](#REFERENCE_ACCESSION)field.
-All coordinates should be in 1 base coordinates (i.e.sequences start
-at base 1, not base 0). This field is required forthe following
-combination of
-[STRATEGY](#STRATEGY) and
-[TRACE_TYPE_CODE](#TRACE_TYPE_CODE):  
-[STRATEGY](#STRATEGY)=Re-sequencing;
-[TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=CHIP
+  This field points to the starting coordinate of theaccession.version described in the[REFERENCE_ACCESSION](#REFERENCE_ACCESSION)field. All coordinates should be in 1 base coordinates (i.e.sequences start at base 1, not base 0). This field is required forthe following combination of [STRATEGY](#STRATEGY) and [TRACE_TYPE_CODE](#TRACE_TYPE_CODE): <br> 
+  [STRATEGY](#STRATEGY)=Re-sequencing; [TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=CHIP
 
 <!-- end list -->
 
@@ -776,16 +719,15 @@ combination of
 : Finish position for a entire re-sequencing region. This region may
 include several amplicons.  
 
-&emsp; Type: int  
-&emsp; Example: 29829　　
+  &emsp; Type: int  
+  &emsp; Example: 29829　　
 
-This field points to the starting coordinate of
-theaccession.version described in
-the [REFERENCE_ACCESSION](#REFERENCE_ACCESSION)
-field for a entire re-sequencing region. All coordinates should be
-in 1 base coordinates (i.e. sequences start at base 1, not base
-0).The REFERENCE_ACC_[MIN|MAX] and REFERENCE_SET_[MIN|MAX]
-should refer to the same REFERENCE_ACC.
+  This field points to the starting coordinate of theaccession.version 
+  described in the [REFERENCE_ACCESSION](#REFERENCE_ACCESSION) field for a 
+  entire re-sequencing region. All coordinates should be in 1 base 
+  coordinates (i.e. sequences start at base 1, not base 0).The REFERENCE_ACC_
+  [MIN|MAX] and REFERENCE_SET_[MIN|MAX] should refer to the same 
+  REFERENCE_ACC.
 
 <!-- end list -->
 
@@ -793,59 +735,57 @@ should refer to the same REFERENCE_ACC.
 : Start position for a entire re-sequencing region. This region may
 include several amplicons.  
 
-&emsp; Type: int  
-&emsp; Example: 29829  
+  &emsp; Type: int  
+  &emsp; Example: 29829  
 
-This field points to the starting coordinate of
-theaccession.version described in
-the [REFERENCE_ACCESSION](#REFERENCE_ACCESSION)
-field for a entire re-sequencing region. All coordinates should be
-in 1 base coordinates (i.e. sequences start at base 1, not base
-0).The REFERENCE_ACC_[MIN|MAX] and REFERENCE_SET_[MIN|MAX]
-should refer to the same REFERENCE_ACC.
+  This field points to the starting coordinate of theaccession.version 
+  described in the [REFERENCE_ACCESSION](#REFERENCE_ACCESSION) field for a 
+  entire re-sequencing region. All coordinates should be in 1 base 
+  coordinates (i.e. sequences start at base 1, not base 0).The REFERENCE_ACC_
+  [MIN|MAX] and REFERENCE_SET_[MIN|MAX] should refer to the same 
+  REFERENCE_ACC.
 
 <!-- end list -->
 
 [RUN_DATE](#RUN_DATE)<a name="RUN_DATE"></a>
 : Date the sequencing reaction was run.   
 
-&emsp; Type: datetime  
-&emsp; Example: 2000-10-28
+  &emsp; Type: datetime  
+  &emsp; Example: 2000-10-28
 
 <!-- end list -->
 
 [RUN_GROUP_ID](#RUN_GROUP_ID)<a name="RUN_GROUP_ID"></a>
 : ID used to group traces run on the same machine.  
 
-&emsp; Type: varchar(30)  
-&emsp; Example: group2
+  &emsp; Type: varchar(30)  
+  &emsp; Example: group2
 
 <!-- end list -->
 
 [RUN_LANE](#RUN_LANE)<a name="RUN_LANE"></a>
 : Lane or capillary of the trace.  
 
-&emsp; Type: int  
-&emsp; Example: 1  
+  &emsp; Type: int  
+  &emsp; Example: 1  
 
-The [RUN_LANE](#RUN_LANE) documents
-the specific lane or capillary on which a trace was obtained.
+  The [RUN_LANE](#RUN_LANE) documents the specific lane or capillary on which a trace was obtained.
 
 <!-- end list -->
 
 [RUN_MACHINE_ID](#RUN_MACHINE_ID)<a name="RUN_MACHINE_ID"></a>
 : ID of the specific sequencing machine on which a trace was obtained.  
 
-&emsp; Type: varchar(30)  
-&emsp; Example: machine2
+  &emsp; Type: varchar(30)  
+  &emsp; Example: machine2
 
 <!-- end list -->
 
 [RUN_MACHINE_TYPE](#RUN_MACHINE_TYPE)<a name="RUN_MACHINE_TYPE"></a>
 : Type or model of machine on which a trace was obtained.  
 
-&emsp; Type: varchar(30)  
-&emsp; Example: ABI 310
+  &emsp; Type: varchar(30)  
+  &emsp; Example: ABI 310
 
 <!-- end list -->
 
@@ -853,275 +793,251 @@ the specific lane or capillary on which a trace was obtained.
 : The salinity at which an environmental sample was collected measured
 in parts per thousand units (promille).  
 
-&emsp; Type: float  
-&emsp; Example: 20  
+  &emsp; Type: float  
+  &emsp; Example: 20  
 
-The [SALINITY](#SALINITY) field is
-only applicable to environmental sample data but is not a required
-field.
+The [SALINITY](#SALINITY) field is only applicable to environmental sample data but is not a required field.
 
 <!-- end list -->
 
 [SEQ_LIB_ID](#SEQ_LIB_ID)<a name="SEQ_LIB_ID"></a><span class="conditionally_required">*</span>  
 : Center specified M13/PUC library that is actually sequenced.  
 
-&emsp; Type: varchar(255)   
-&emsp; Example: 22194  
+  &emsp; Type: varchar(255)   
+  &emsp; Example: 22194  
 
-The [SEQ_LIB_ID](#SEQ_LIB_ID) field
-is the center identifier for the M13/PUC based clone that is
-actually sequenced. This will allow grouping of traces by the actual
-ligation event and is applicable to most projects. Thi svalue will
-be unique within a given center.  
-This field would be required for the following combination of
-[STRATEGY](#STRATEGY) and
-[TRACE_TYPE_CODE](#TRACE_TYPE_CODE):  
-[STRATEGY](#STRATEGY)=Any;[TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=SHOTGUN  
-[STRATEGY](#STRATEGY)=Any;[TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=WGS/WCS
+  The [SEQ_LIB_ID](#SEQ_LIB_ID) field is the center identifier for the M13/PUC based clone that is actually sequenced. This will allow grouping of traces by the actual ligation event and is applicable to most projects. Thi svalue will be unique within a given center.   This field would be required for the following combination of [STRATEGY](#STRATEGY) and [TRACE_TYPE_CODE](#TRACE_TYPE_CODE): <br> [STRATEGY](#STRATEGY)=Any;[TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=SHOTGUN<br> [STRATEGY](#STRATEGY)=Any;[TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=WGS/WCS
 
 <!-- end list -->
 
 [SOURCE_TYPE](#SOURCE_TYPE)<a name="SOURCE_TYPE"></a><span class="red">*</span>  
 : Source of the DNA.  
 
-&emsp; Type: varchar(50)  
-&emsp; Example: GENOMIC DNA  
+  &emsp; Type: varchar(50)  
+  &emsp; Example: GENOMIC DNA  
 
-The [SOURCE_TYPE](#SOURCE_TYPE)field
-consists of a code. Possible values are:
-  - G=Genomic DNA (includes PCR products from genomic DNA)
-  - N=Non Genomic DNA (EST, cDNA, RT-PCR, screened libraries)
-  - VIRAL RNA=Viral RNA
-  - SYNTHETIC=Synthetic DNA  
+  The [SOURCE_TYPE](#SOURCE_TYPE)field consists of a code. Possible values are:
+    - G=Genomic DNA (includes PCR products from genomic DNA)
+    - N=Non Genomic DNA (EST, cDNA, RT-PCR, screened libraries)
+    - VIRAL RNA=Viral RNA
+    - SYNTHETIC=Synthetic DNA  
 
-Accepted values are G, N, GENOMIC, NON GENOMIC, VIRAL RNA,SYNTHETIC
+  Accepted values are G, N, GENOMIC, NON GENOMIC, VIRAL RNA,SYNTHETIC
 
 <!-- end list -->
 
 [SPECIES_CODE](#SPECIES_CODE)<a name="SPECIES_CODE"></a><span class="red">*</span>  
 : Description of species from which trace is derived.  
 
-&emsp; Type: varchar(100)  
-&emsp; Example: Homo sapiens  
+  &emsp; Type: varchar(100)  
+  &emsp; Example: Homo sapiens  
 
-The [SPECIES_CODE](#SPECIES_CODE)field
-is used to classify the read by species, using proper taxonomic
-names where possible. This field currently is maintained as a
-controlled vocabulary. For a list of species currently contained
-within the Trace Archive, see:
-[http://www.ncbi.nlm.nih.gov/Traces/trace.cgi?cmd=stat&f=xml_list_species&m=obtain&s=species](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi?cmd=stat&f=xml_list_species&m=obtain&s=species)To
-submit a new species, please contact the DDBJ Trace Archive prior to
-submission. For cases in which it is unclear ofthe taxonomic origin
-of a specific trace the taxonomic classification 'ENVIRONMENTAL
-SEQUENCE' can be used in a case of environmental samples or
-'ARTIFICIAL SEQUENCE' in a case of artificial material.
+  The [SPECIES_CODE](#SPECIES_CODE)field
+  is used to classify the read by species, using proper taxonomic
+  names where possible. This field currently is maintained as a
+  controlled vocabulary. For a list of species currently contained
+  within the Trace Archive, see:
+  [http://www.ncbi.nlm.nih.gov/Traces/trace.cgi?cmd=stat&f=xml_list_species&m=obtain&s=species](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi?cmd=stat&f=xml_list_species&m=obtain&s=species)To
+  submit a new species, please contact the DDBJ Trace Archive prior to
+  submission. For cases in which it is unclear ofthe taxonomic origin
+  of a specific trace the taxonomic classification 'ENVIRONMENTAL
+  SEQUENCE' can be used in a case of environmental samples or
+  'ARTIFICIAL SEQUENCE' in a case of artificial material.
 
 <!-- end list -->
 
 [STRAIN](#STRAIN)<a name="STRAIN"></a><span class="conditionally_required">*</span>  
 : Strain from which a trace is derived.  
 
-&emsp; Type: varchar(50)   
-&emsp; Example: C57BL/6J　　
+  &emsp; Type: varchar(50)   
+  &emsp; Example: C57BL/6J　　
 
-[STRAIN](#STRAIN) is required for
-[STRATEGY](#STRATEGY)="SNP"
+  [STRAIN](#STRAIN) is required for [STRATEGY](#STRATEGY)="SNP"
 
 <!-- end list -->
 
 [STRATEGY](#STRATEGY)<a name="STRATEGY"></a><span class="red">*</span>  
 : Experimental STRATEGY.  
 
-&emsp; Type: varchar(50)  
-&emsp; Example: MODEL  
-
-VERIFY Experimental
-[STRATEGY](#STRATEGY) used when
-obtaining the trace. It is proposed that this would be a controlled
-vocabulary, but that submitters would contribute to this list as
-needed to define various experiments and projects.  
+  &emsp; Type: varchar(50)  
+  &emsp; Example: MODEL VERIFY 
   
-Current values (this list would
-continually be expanding):
-  - AFLP: Amplified Fragment Length Polymorphism
-  - BARCODE: DNA sequence analysis of a uniform target gene to
-    enable species identification
-  - CCS: Concatenated cDNA sequencing
-  - cDNA: Sequences generated in the process of sequencing cDNA
-    clones
-  - CF-S: Cot-filtered single/low-copy genomic DNA
-  - CF-M: Cot-filtered moderately repetitive genomic DNA
-  - CF-H: Cot-filtered highly repetitive genomic DNA
-  - CF-T: Cot-filtered theoretical single-copy DNA
-  - CLONE: Genomic clone based (hierarchical) sequencing
-  - CLONEEND: Sequences generated from the end of a
-    clone(BAC/PAC/Fosmid or cDNA)
-  - Comparative: Sequences obtained using primers design from
-    related species
-  - CTS: Concatenated Tag Sequencing
-  - Env Sample-GEO: Geographically generated environmental sample
-  - Env Sample-Host: Environmental samples collected from a specific
-    host
-  - EST: single pass sequencing of cDNA templates
-  - FINISHING: a read specifically made for finishing, could be
-    either BAC finishing or Whole Genome Assembly (WGA) finishing
-  - MODEL VERIFY: Sequences obtained to verify proposed gene models
-  - PoolClone: Pools of clones (BACs mostly)
-  - SNP: Reads used for SNP identification
-  - TARGETED LOCUS: Sequences obtained from templates generated by
-    primers designed to amplify a specific genetic locus
-  - Re-sequencing: Re-sequencing of targeted genomic regions
-  - RT-PCR: Sequences obtained using templates generated by Reverse
-    Transcriptase Polymerase Chain Reaction
-  - WGA: Whole Genome Assembly
+  Experimental [STRATEGY](#STRATEGY) used when obtaining the trace. It is proposed that this would be a controlled vocabulary, but that submitters would contribute to this list as needed to define various experiments and projects.  
+  
+  Current values (this list would continually be expanding):
+    - AFLP: Amplified Fragment Length Polymorphism
+    - BARCODE: DNA sequence analysis of a uniform target gene to
+      enable species identification
+    - CCS: Concatenated cDNA sequencing
+    - cDNA: Sequences generated in the process of sequencing cDNA
+      clones
+    - CF-S: Cot-filtered single/low-copy genomic DNA
+    - CF-M: Cot-filtered moderately repetitive genomic DNA
+    - CF-H: Cot-filtered highly repetitive genomic DNA
+    - CF-T: Cot-filtered theoretical single-copy DNA
+    - CLONE: Genomic clone based (hierarchical) sequencing
+    - CLONEEND: Sequences generated from the end of a
+      clone(BAC/PAC/Fosmid or cDNA)
+    - Comparative: Sequences obtained using primers design from
+      related species
+    - CTS: Concatenated Tag Sequencing
+    - Env Sample-GEO: Geographically generated environmental sample
+    - Env Sample-Host: Environmental samples collected from a specific
+      host
+    - EST: single pass sequencing of cDNA templates
+    - FINISHING: a read specifically made for finishing, could be
+      either BAC finishing or Whole Genome Assembly (WGA) finishing
+    - MODEL VERIFY: Sequences obtained to verify proposed gene models
+    - PoolClone: Pools of clones (BACs mostly)
+    - SNP: Reads used for SNP identification
+    - TARGETED LOCUS: Sequences obtained from templates generated by
+      primers designed to amplify a specific genetic locus
+    - Re-sequencing: Re-sequencing of targeted genomic regions
+    - RT-PCR: Sequences obtained using templates generated by Reverse
+      Transcriptase Polymerase Chain Reaction
+    - WGA: Whole Genome Assembly
 
 <!-- end list -->
 
 [SUBMISSION_TYPE](#SUBMISSION_TYPE)<a name="SUBMISSION_TYPE"></a><span class="red">*</span>  
 : Type of submission.  
 
-&emsp; Type: varchar(50)  
-&emsp; Example: NEW  
+  &emsp; Type: varchar(50)  
+  &emsp; Example: NEW  
 
-The [SUBMISSION_TYPE](#SUBMISSION_TYPE)
-field allowed values:
-  - NEW: use to submit new data
-  - UPDATE: use to renew traces and their ancillary information.
-    Previous data will be saved with their TI's; new traces with the
-    same trace_name's will receive new TI's and they will become
-    active
-  - UPDATEINFO: use to update or add ancillary information for
-    already existing traces without re-submitting the entire package
-    of data
-  - WITHDRAW: use to withdraw traces
+  The [SUBMISSION_TYPE](#SUBMISSION_TYPE) field allowed values:
+    - NEW: use to submit new data
+    - UPDATE: use to renew traces and their ancillary information.
+      Previous data will be saved with their TI's; new traces with the
+      same trace_name's will receive new TI's and they will become
+      active
+    - UPDATEINFO: use to update or add ancillary information for
+      already existing traces without re-submitting the entire package
+      of data
+    - WITHDRAW: use to withdraw traces
 
 <!-- end list -->
 
 [SVECTOR_ACCESSION](#SVECTOR_ACCESSION)<a name="SVECTOR_ACCESSION"></a>
 : DDBJ/EMBL/Genbank accession of the sequencing vector.  
 
-&emsp; Type: varchar(50)  
-&emsp; Example: X52325  
+  &emsp; Type: varchar(50)  
+  &emsp; Example: X52325  
 
 <!-- end list -->
 
 [SVECTOR_CODE](#SVECTOR_CODE)<a name="SVECTOR_CODE"></a>
 : Center defined code for the sequencing vector.  
 
-&emsp; Type: varchar(50)  
-&emsp; Example: pBluescript SK(+)
+  &emsp; Type: varchar(50)  
+  &emsp; Example: pBluescript SK(+)
 
 <!-- end list -->
 
 [TEMPERATURE](#TEMPERATURE)<a name="TEMPERATURE"></a>
 : The temperature (in <sup>o</sup>C) at which an environmental sample was collected.  
 
-&emsp; Type: float  
-&emsp; Example: 30  
+  &emsp; Type: float  
+  &emsp; Example: 30  
 
-The [TEMPERATURE](#TEMPERATURE)field
-is only applicable to environmental sample data but it is not a
-required field.
+  The [TEMPERATURE](#TEMPERATURE)field
+  is only applicable to environmental sample data but it is not a
+  required field.
 
 <!-- end list -->
 
 [TEMPLATE_ID](#TEMPLATE_ID)<a name="TEMPLATE_ID"></a>
 : Submitter defined identifier for the sequencing template.  
 
-&emsp; Type: varchar(50)    
-&emsp; Example: HBBBA2211  
+  &emsp; Type: varchar(50)    
+  &emsp; Example: HBBBA2211  
 
-The [TEMPLATE_ID](#TEMPLATE_ID)field
-is used to uniquely identify the actual template that is sequenced.
-This field, in conjunction with the TRACE_END field, can be used to
-identify traces that should be marked as 'mate_pairs'because they
-come from opposite ends of the same clone.
+  The [TEMPLATE_ID](#TEMPLATE_ID)field
+  is used to uniquely identify the actual template that is sequenced.
+  This field, in conjunction with the TRACE_END field, can be used to
+  identify traces that should be marked as 'mate_pairs'because they
+  come from opposite ends of the same clone.
 
 <!-- end list -->
 
 [TRACE_END](#TRACE_END)<a name="TRACE_END"></a>
 : Defines the end of the template contained in the read.  
 
-&emsp; Type: varchar(50)  
-&emsp; Example: F  
+  &emsp; Type: varchar(50)  
+  &emsp; Example: F  
 
-The [TRACE_END](#TRACE_END) field can
-have the following values:
-  - F: FORWARD
-  - R: REVERSE
-  - N: UNKNOWN
+  The [TRACE_END](#TRACE_END) field can have the following values:
+    - F: FORWARD
+    - R: REVERSE
+    - N: UNKNOWN
 
 <!-- end list -->
 
 [TRACE_FILE](#TRACE_FILE)<a name="TRACE_FILE"></a><span class="red">*</span>  
 : Filename with the trace, relative to the top of the volume.  
 
-&emsp; Type: varchar(200)  
-&emsp; Example: ./traces/TRACE001.scf
+  &emsp; Type: varchar(200)  
+  &emsp; Example: ./traces/TRACE001.scf
 
 <!-- end list -->
 
 [TRACE_FORMAT](#TRACE_FORMAT)<a name="TRACE_FORMAT"></a><span class="red">*</span>  
 : Format of the trace file.  
 
-&emsp; Type: varchar(20)  
-&emsp; Example: scf　　
+  &emsp; Type: varchar(20)  
+  &emsp; Example: scf　　
 
-The [TRACE_FORMAT](#TRACE_FORMAT)field
-can have the following values:
-  - SCF - A standard file format for data from DNA sequencing
-    instruments.
-  - ABI - A ABI-trace file is a binary file including the trace data
-    and the sequence.
+  The [TRACE_FORMAT](#TRACE_FORMAT)field can have the following values:
+    - SCF - A standard file format for data from DNA sequencing
+      instruments.
+    - ABI - A ABI-trace file is a binary file including the trace data
+      and the sequence.
 
 <!-- end list -->
 
 [TRACE_NAME](#TRACE_NAME)<a name="TRACE_NAME"></a><span class="red">*</span>  
 : Center defined trace identifier.   
 
-&emsp; Type: varchar(250)  
-&emsp; Example: HBBBA1U2211  
+  &emsp; Type: varchar(250)  
+  &emsp; Example: HBBBA1U2211  
 
-The [TRACE_NAME](#TRACE_NAME) field
-must be unique within a center, but is not required to be unique
-between centers. The combination of
-[TRACE_NAME](#TRACE_NAME) and
-[CENTER_NAME](#CENTER_NAME) act
-as a unique key within the Trace Archive.
+  The [TRACE_NAME](#TRACE_NAME) field
+  must be unique within a center, but is not required to be unique
+  between centers. The combination of
+  [TRACE_NAME](#TRACE_NAME) and
+  [CENTER_NAME](#CENTER_NAME) act
+  as a unique key within the Trace Archive.
 
 <!-- end list -->
 
 [TRACE_TYPE_CODE](#TRACE_TYPE_CODE)<a name="TRACE_TYPE_CODE"></a><span class="red">*</span>  
 : Sequencing strategy by which the trace was obtained.  
 
-&emsp; Type: varchar(50)  
-&emsp; Example: wgs The field  
+  &emsp; Type: varchar(50)  
+  &emsp; Example: wgs The field  
 
-[TRACE_TYPE_CODE](#TRACE_TYPE_CODE)
-reflects the sequencing
-[STRATEGY](#STRATEGY) used to
-obtain the trace.  
+  [TRACE_TYPE_CODE](#TRACE_TYPE_CODE) reflects the sequencing [STRATEGY](#STRATEGY) used to obtain the trace.  
   
-Current values:
-  - CHIP: Sequences obtained using microarrays (also called DNAchips
-    or gene chips)
-  - CLONEEND: Sequences generated from the end of a large
-    insert(BAC/PAC/Fosmid) or cDNA clone
-  - EST: Single Pass Expressed Sequence Tag
-  - HTP SELEX: High throughput SELEX
-  - OTHER: Other than PCR, PrimerWalk, SHOTGUN or TRANSPOSON for
-    FINISHING
-    [STRATEGY](#STRATEGY)
-  - PCR: Sequences obtained using templates generated by genomic
-    Polymerase Chain Reaction
-  - PrimerWalk: Sequences generated through a primer walkingstep
-  - RT-PCR: Sequences obtained using templates generated by Reverse
-    Transcriptase Polymerase Chain Reaction
-  - SHOTGUN: Shotgun sequencing of clones (genomic or cDNA)
-  - TRANSPOSON: Sequences obtained using templates generated
-    bytransposons
-  - WCS: Whole Chromosome Shotgun
-  - WGS: Whole Genome Shotgun
+  Current values:
+    - CHIP: Sequences obtained using microarrays (also called DNAchips
+      or gene chips)
+    - CLONEEND: Sequences generated from the end of a large
+      insert(BAC/PAC/Fosmid) or cDNA clone
+    - EST: Single Pass Expressed Sequence Tag
+    - HTP SELEX: High throughput SELEX
+    - OTHER: Other than PCR, PrimerWalk, SHOTGUN or TRANSPOSON for
+      FINISHING
+      [STRATEGY](#STRATEGY)
+    - PCR: Sequences obtained using templates generated by genomic
+      Polymerase Chain Reaction
+    - PrimerWalk: Sequences generated through a primer walkingstep
+    - RT-PCR: Sequences obtained using templates generated by Reverse
+      Transcriptase Polymerase Chain Reaction
+    - SHOTGUN: Shotgun sequencing of clones (genomic or cDNA)
+    - TRANSPOSON: Sequences obtained using templates generated
+      bytransposons
+    - WCS: Whole Chromosome Shotgun
+    - WGS: Whole Genome Shotgun
 
 <!-- end list -->
 
@@ -1129,14 +1045,11 @@ Current values:
 : DDBJ/EMBL/Genbank accession for transposon used in generating
 sequencing template.  
 
-&emsp; Type: varchar(50)  
-&emsp; Example: X00913　　
+  &emsp; Type: varchar(50)  
+  &emsp; Example: X00913　　
 
-The [TRANSPOSON_ACC](#TRANSPOSON_ACC)
-would be required for the following combination of
-[STRATEGY](#STRATEGY) and
-[TRACE_TYPE_CODE](#TRACE_TYPE_CODE):  
-[STRATEGY](#STRATEGY)=Any;[TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=TRANSPOSON
+  The [TRANSPOSON_ACC](#TRANSPOSON_ACC) would be required for the following combination of [STRATEGY](#STRATEGY) and [TRACE_TYPE_CODE](#TRACE_TYPE_CODE): <br> 
+  [STRATEGY](#STRATEGY)=Any;[TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=TRANSPOSON
 
 <!-- end list -->
 
@@ -1144,167 +1057,160 @@ would be required for the following combination of
 : Center defined code for transposon used in generating sequencing
 template.   
 
-&emsp; Type: varchar(50)  
-&emsp; Example: Mu transposon  
+  &emsp; Type: varchar(50)  
+  &emsp; Example: Mu transposon  
 
-This [TRANSPOSON_CODE](#TRANSPOSON_CODE)
-field would be required for the following combination of
-[STRATEGY](#STRATEGY) and
-[TRACE_TYPE_CODE](#TRACE_TYPE_CODE):  
-[STRATEGY](#STRATEGY)=Any;[TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=TRANSPOSON
+  This [TRANSPOSON_CODE](#TRANSPOSON_CODE) field would be required for the following combination of [STRATEGY](#STRATEGY) and [TRACE_TYPE_CODE](#TRACE_TYPE_CODE):<br> [STRATEGY](#STRATEGY)=Any;[TRACE_TYPE_CODE](#TRACE_TYPE_CODE)=TRANSPOSON
 
 <!-- end list -->
 
 [WELL_ID](#WELL_ID)<a name="WELL_ID"></a>
 : Center defined well identifier for the sequencing reaction.  
 
-&emsp; Type: varchar(50)  
-&emsp; Example: A1 The field  
+  &emsp; Type: varchar(50)  
+  &emsp; Example: A1 The field  
 
-[WELL_ID](#WELL_ID) in
-combination with the field
-[PLATE_ID](#PLATE_ID), is used to
-define the storage location of the sequencing reaction (see note
-with the
-field[PLATE_ID](#PLATE_ID)).
-Typically,sequencing reactions are performed in standard microtiter
-dishes having either 96 or 384 wells (see standard configurations
-below).  
-![Standard 96 well microtiter
-configuration]({{ site.baseurl }}/assets/images/submission/96well.jpg
-"Standard 96 well microtiter configuration")  
-Standard 96 well microtiter configuration  
-![Standard 384 well microtiter
-configuration]({{ site.baseurl }}/assets/images/submission/384well.jpg
-"Standard 384 well microtiter configuration")  
-Standard 384 well microtiter configuration
-
+  [WELL_ID](#WELL_ID) in
+  combination with the field
+  [PLATE_ID](#PLATE_ID), is used to
+  define the storage location of the sequencing reaction (see note
+  with the
+  field[PLATE_ID](#PLATE_ID)).
+  Typically,sequencing reactions are performed in standard microtiter
+  dishes having either 96 or 384 wells (see standard configurations
+  below).  
+  ![Standard 96 well microtiter
+  configuration]({{ site.baseurl }}/assets/images/submission/96well.jpg
+  "Standard 96 well microtiter configuration")  
+  Standard 96 well microtiter configuration  
+  ![Standard 384 well microtiter
+  configuration]({{ site.baseurl }}/assets/images/submission/384well.jpg
+  "Standard 384 well microtiter configuration")  
+  Standard 384 well microtiter configuration
 
 ### Internal Fields List
 
 [BASECALL_LENGTH](#BASECALL_LENGTH)<a name="BASECALL_LENGTH"></a>
 : Length of the trace in base pairs.  
 
-&emsp; Type: int  
-&emsp; Example: 396
+  &emsp; Type: int  
+  &emsp; Example: 396
 
 <!-- end list -->
 
 [BASES_20](#BASES_20)<a name="BASES_20"></a>
 : Number of base pairs for which quality score exceed 20.  
 
-&emsp; Type: smallint   
-&emsp; Example: 50  
+  &emsp; Type: smallint   
+  &emsp; Example: 50  
 
-Warning: There are some
-depositions that do not have quality scores. This is likely due to
-the center submitting ABI files and not providing quality calls
-separately.
+  Warning: There are some
+  depositions that do not have quality scores. This is likely due to
+  the center submitting ABI files and not providing quality calls
+  separately.
 
 <!-- end list -->
 
 [BASES_40](#BASES_40)<a name="BASES_40"></a>  
 : Number of base pairs for which quality score exceed 40.  
 
-&emsp; Type: smallint   
-&emsp; Example: 50  
+  &emsp; Type: smallint   
+  &emsp; Example: 50  
 
-Warning: There are some
-deposition sthat do not have quality scores. This is likely due to
-the center submitting ABI files and not providing quality calls
-separately.
+  Warning: There are some
+  deposition sthat do not have quality scores. This is likely due to
+  the center submitting ABI files and not providing quality calls
+  separately.
 
 <!-- end list -->
 
 [BASES_60](#BASES_60)<a name="BASES_60"></a>  
 : Number of base pairs for which quality score exceed 60.  
 
-&emsp; Type: smallint   
-&emsp; Example: 50  
+  &emsp; Type: smallint   
+  &emsp; Example: 50  
 
-Warning: There are some
-depositions that do not have quality scores. This is likely due to
-the center submitting ABI files and not providing quality calls
-separately.
+  Warning: There are some
+  depositions that do not have quality scores. This is likely due to
+  the center submitting ABI files and not providing quality calls
+  separately.
 
 <!-- end list -->
 
 [LOAD_DATE](#LOAD_DATE)<a name="LOAD_DATE"></a> 
 : Date on which the data was loaded.  
 
-&emsp; Type: smalldatetime  
-&emsp; Example: Jan 8 2001 11:59AM
+  &emsp; Type: smalldatetime  
+  &emsp; Example: Jan 8 2001 11:59AM
 
 <!-- end list -->
 
 [MATE_PAIR](#MATE_PAIR)<a name="MATE_PAIR"></a>  
 : TI's of the reads obtained from the other end of the same template.  
 
-&emsp; Type: int   
-&emsp; Example: 203682255  
+  &emsp; Type: int   
+  &emsp; Example: 203682255  
 
-MATE PAIR is the
-pair of reads obtained from two ends of the same template (FORWARD
-and REVERSE).
+  MATE PAIR is the
+  pair of reads obtained from two ends of the same template (FORWARD
+  and REVERSE).
 
 <!-- end list -->
 
 [REPLACED_BY](#REPLACED_BY)<a name="REPLACED_BY"></a>  
 : TI that replaced the current TI as "active".  
 
-&emsp; Type: int  
-&emsp; Example: 304753779  
+  &emsp; Type: int  
+  &emsp; Example: 304753779  
 
-This field points to the more recent data set. If trace was updated then the
-[REPLACED_BY](#REPLACED_BY) field
-stores the[TI](#TI) for the new
-trace. If only ancillary information has been updated, then
-replaced_by=0 and is not shown.
+  This field points to the more recent data set. If trace was updated then the
+  [REPLACED_BY](#REPLACED_BY) field
+  stores the[TI](#TI) for the new
+  trace. If only ancillary information has been updated, then
+  replaced_by=0 and is not shown.
 
 <!-- end list -->
 
 [STATE](#STATE)<a name="STATE"></a>  
 : Indicates the status of the trace.  
 
-&emsp; Type: varchar  
-&emsp; Example: active  
+  &emsp; Type: varchar  
+  &emsp; Example: active  
 
-Possible values:
-  - active
-  - updated
-  - withdrawn
+  Possible values:
+    - active
+    - updated
+    - withdrawn
 
 <!-- end list -->
 
 [TAXID](#TAXID)<a name="TAXID"></a>  
 : NCBI Taxonomy ID.   
 
-&emsp; Type: int  
-&emsp; Example: 10090  
+  &emsp; Type: int  
+  &emsp; Example: 10090  
 
-This field links DDBJ Trace Archive with [NCBI Taxonomy
-Browser](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?).
+  This field links DDBJ Trace Archive with [NCBI Taxonomy Browser](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?).
 
 <!-- end list -->
 
 [TI](#TI)<a name="TI"></a>  
 : Trace unique internal Identifier.  
 
-&emsp; Type: int  
-&emsp; Example: 304753779  
+  &emsp; Type: int  
+  &emsp; Example: 304753779  
 
-It is given for a record at the loading stage, and any record,or number of
-records can be obtain by their identifiers.
+  It is given for a record at the loading stage, and any record,or number of records can be obtain by their identifiers.
 
 <!-- end list -->
 
 [UPDATE_DATE](#UPDATE_DATE)<a name="UPDATE_DATE"></a>  
 : Date on which the data was updated/replaced.  
 
-&emsp; Type: smalldatetime  
-&emsp; Example: Jul 19 2001 3:48PM  
+  &emsp; Type: smalldatetime  
+  &emsp; Example: Jul 19 2001 3:48PM  
 
-This field is used to store the date of the last update.
+  This field is used to store the date of the last update.
 
 ## Submit trace data
 
