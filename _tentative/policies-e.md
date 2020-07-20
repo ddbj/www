@@ -34,12 +34,8 @@ For submitting data from human subjects (human data) to the databases of DDBJ ce
 
 When you are submitting human data from samples except widely utilized and generally available samples of academically established value (\*1), make sure the followings.
 
-  - The research plan describing experimental methods and human subjects
-    has been approved by the institutional review board and by the head
-    of institution who oversees the research.
-  - The research plan and the informed consent documents describe that
-    data from human subjects are deposited to databases and are shared
-    among domestic and overseas researchers.
+  - The research plan describing experimental methods and human subjects has been approved by the institutional review board and by the head of institution who oversees the research.
+  - The research plan and the informed consent documents describe that data from human subjects are deposited to databases and are shared among domestic and overseas researchers.
 
 \*1 [HeLa whole genome sequence data](https://grants.nih.gov/grants/guide/notice-files/NOT-OD-14-080.html) should be submitted to [NCBI dbGaP](https://www.ncbi.nlm.nih.gov/gap).
 
@@ -76,6 +72,7 @@ Licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 If not specified, there is no restriction on the use of data and services provided by DDBJ Center, and you can freely modify and
 redistribute the data.
 
+  - Do not attempt to identify individual human research participants from whom the data were obtained.
   - For data derived from [INSDC activities](insdc-e.html), licensed under[INSDC policy](/insdc-e.html#policy).
   - For [Japanese Genotype-phenotype Archive (JGA)](/jga/index-e.html), licensed under [Data Use](https://humandbs.biosciencedbc.jp/en/data-use) of NBDC Human Database.
   - For [AMED Genome group sharing Database (AGD)](/agd/index-e.html), licensed under [Data Use (in Japanese)](//gr-sharingdbs.biosciencedbc.jp/agd-data-use) of NBDC Human Data group sharing Database.
@@ -126,8 +123,7 @@ authors of the records upon submission. This is the reason why we, DDBJ, avoid m
 
 Since 2002, we ask all submitting authors to read the following policy, according to [the advice from International Advisory Committee](/insdc-e.html#policy).
 
-"The INSD will not attach statements to records that restrict access to the data, limit the use of information in these records, or prohibit
-certain types of publications based on these records. Specifically, no use restrictions or licensing requirements will be included in any sequence data records, and no restrictions or licensing fees will be placed on the redistribution or use of the database by any party."
+"The INSD will not attach statements to records that restrict access to the data, limit the use of information in these records, or prohibit certain types of publications based on these records. Specifically, no use restrictions or licensing requirements will be included in any sequence data records, and no restrictions or licensing fees will be placed on the redistribution or use of the database by any party."
 
 We believe that by doing this we obtain, in effect, a permission equivalent to a waiver of copyright from authors. In fact, no author of the DDBJ records have claimed any restriction about the reuse of any part of the data set by the third parties until know.
 
@@ -155,6 +151,7 @@ Similarly, DDBJ services also include the nucleotide data transferred from [Kore
 References:  
 : An example of Sequence data included in patent applications: [DL000001](http://getentry.ddbj.nig.ac.jp/getentry/na/DL000001/?filetype=html)
 : [Sequence data included in patent applications](/ddbj/pat-data-e.html)
+
 Therefore, when the sequence is included in patent applications to
 JPO/KIPO/EPO/USPTO, you do not have to submit the sequence to DDBJ.
 
