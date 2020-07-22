@@ -32,9 +32,6 @@ related_pages:
     url: /ddbj/tpa-e.html
 ---
 
-
-# HTG
-
 The HTG division of DDBJ/ENA/GenBank was created to accommodate a
 growing need to make unfinished genomic sequence data rapidly available
 to the scientific community. The HTG division contains unfinished genome

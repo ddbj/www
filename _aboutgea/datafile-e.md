@@ -5,9 +5,6 @@ pathname: datafile-e
 category: aboutgea
 ---
 
-
-# Accepted Data File Formats
-
 ## Important notes on file preparation:
 
 1.  Submit raw or raw matrix file(s) for every sample/hybridization of

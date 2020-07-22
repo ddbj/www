@@ -15,15 +15,19 @@ Parser は、Mass Submission System (MSS) を利用して DDBJ に登録する�
   </li>
   <li>
     tar.gz ファイルを gunzip コマンドで解凍<br>
-    <code>
-      $ gunzip Parser.tar.gz
-    </code>
+<pre>
+<code>
+$ gunzip Parser.tar.gz
+</code>
+</pre>
   </li>
   <li>
     tar ファイルを tar コマンドで展開<br>
-    <code>
-      $ tar xvf Parser.tar
-    </code>
+<pre>
+<code>
+$ tar xvf Parser.tar
+</code>
+</pre>
   </li>
   <li>
     ディレクトリが生成される<br>

@@ -130,6 +130,8 @@ $MARGIN_BOTTOM: 1rem
     dd
     + dt
       margin-top: 1rem
+    dd * 
+      margin-bottom: 1rem
   .dl-list
     margin-bottom: 2rem
     dt
@@ -183,6 +185,7 @@ $MARGIN_BOTTOM: 1rem
   pre
     padding: .3rem .6rem
     display: inline-block
+    margin-bottom: 1rem
   code
     white-space: break-spaces
 
@@ -383,12 +386,15 @@ $MARGIN_BOTTOM: 1rem
         line-height: 20px
         padding: 10px 10px 0 40px
         text-align: left
+        &:before
+          margin: -11px -30px -30px auto
+        &:after
+          margin: -20px -30px -1px auto
       &:nth-child(2)
         line-height: 20px
         padding: 10px 10px 0 40px
         &:after
           margin: -20px -30px -1px auto
-
   .ja
     li
       &:first-child

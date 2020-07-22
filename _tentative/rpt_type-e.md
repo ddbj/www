@@ -5,11 +5,7 @@ pathname: rpt_type-e
 category: tentative
 ---
 
-# Controlled vocabulary for /rpt_type qualifier
-
-The original site; [Controlled vocabulary for /rpt_type
-qualifier](http://www.insdc.org/controlled-vocabulary-rpttype-qualifier)
-2015.11.11 version.
+The original site; [Controlled vocabulary for /rpt_type qualifier](http://www.insdc.org/controlled-vocabulary-rpttype-qualifier) 2015.11.11 version.
 
 This page contains the current definition, format and controlled
 vocabularly for repeat type qualifier.
@@ -23,7 +19,6 @@ Comment: the values are case-insensitive, i.e. both "INVERTED" and "inverted" ar
 ```
 
 ## Definitions of the values:
-
 
 tandem:  
 : a repeat that consists of two or more adjacent copies of a region

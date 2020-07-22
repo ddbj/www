@@ -5,8 +5,6 @@ pathname: locus_tag-e
 category: tentative
 ---
 
-# Guideline to use /locus_tag qualifier
-
 ## Proper Use of /locus_tag in Genome Submissions
 
 At the International Nucleotide Sequence Database Collaborators meeting,
@@ -93,7 +91,7 @@ OR: Gaps in original locus_tags
         ABC_0030          ABC_0030
 ```
 
-<span class="red">BUT NOT: </span>Decimal integers
+<span class="red">BUT NOT:</span>Decimal integers
 
 ```
        Original          Revised

@@ -187,21 +187,21 @@ Be sure to select the "binary mode" for file transfer. Do NOT select the "text m
 - User name: (D-way Login ID)
 - Password: (Leave empty)
 
-![]({{ site.baseurl }}/assets/images/books/winscp1_400.jpg "privatekey1")
+[![]({{ site.baseurl }}/assets/images/books/winscp1_400.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/winscp1_400.jpg "privatekey1"){:.group1}
 
 Please select the private key, which you created beforehand, from "Private key file" in "Authentication".
 
-![]({{ site.baseurl }}/assets/images/books/winscp2_400.jpg "privatekey2")
+[![]({{ site.baseurl }}/assets/images/books/winscp2_400.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/winscp2_400.jpg "privatekey2"){:.group1}
 
 Last, click the \[Login\] button in the lower center
 
-![]({{ site.baseurl }}/assets/images/books/winscp3_400.jpg "login to winSCP")
+[![]({{ site.baseurl }}/assets/images/books/winscp3_400.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/winscp3_400.jpg "login to winSCP"){:.group1}
 
 At the first time of login, a warning message is displayed; however, please select "Yes" (this message will not be displayed again). Next, enter the passphrase set for the keys.
 
 After login successfully, a folder of your PC is displayed at left, and your private directory in the server is displayed at right. Select the files at the left window and drag & drop them into the right window to transfer the files to the server.
 
-![]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg "transfer files")
+[![]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg){:.w400}]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg "transfer files"){:.group1}
 
 You can delete the transferred files by selecting the files and clicking the \[Delete\] button.
 
@@ -222,11 +222,11 @@ Download and install [the Cyberduck (http://cyberduck.ch)](http://cyberduck.ch).
 
 Run the Cyberduck and click the \[Open Connection\] button in the Cyberduck menu.
 
-![]({{ site.baseurl }}/assets/images/books/Cyberduck_1.jpg "open connection")
+[![]({{ site.baseurl }}/assets/images/books/Cyberduck_1.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/Cyberduck_1.jpg "open connection"){:.group1}
 
 Select "SFTP (SSH File Transfer Protocol)" .
 
-![]({{ site.baseurl }}/assets/images/books/Cyberduck_2.jpg "SFTP in the WinSCP")
+[![]({{ site.baseurl }}/assets/images/books/Cyberduck_2.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/Cyberduck_2.jpg "SFTP in the WinSCP"){:.group1}
 
 Set as follows and tick off "Use Public Key Authentication" in the More Options.
 
@@ -236,27 +236,27 @@ Set as follows and tick off "Use Public Key Authentication" in the More Options.
 - Password: (Leave empty)
 - Add to Keychain: (Check)
 
-![]({{ site.baseurl }}/assets/images/books/Cyberduck_3.jpg "key authentication")
+[![]({{ site.baseurl }}/assets/images/books/Cyberduck_3.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/Cyberduck_3.jpg "key authentication"){:.group1}
 
 By default, the private key is created in "User’s home folder \> .ssh folder (invisible in Finder) \> id\_rsa".
 
-![]({{ site.baseurl }}/assets/images/books/Cyberduck_4.jpg "private_key")
+[![]({{ site.baseurl }}/assets/images/books/Cyberduck_4.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/Cyberduck_4.jpg "private_key"){:.group1}
 
 At the first time of login, a warning message is displayed; however, please select "Always" (this message will not be displayed again).
 
 After login successfully, your private directory in the server is displayed in the window. Select the files in your PC and drag & drop them into the window to transfer the files to the server.
 
-![]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg "transfer")
+[![]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg){:.w400}]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg "transfer"){:.group1}
+
+[« Close](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
 
 <div class="attention">
 
 Users can ssh login ftp-private.ddbj.nig.ac.jp server by using a private key. Executable commands are restricted to the following ones. Users can delete unnecessary files.  
 ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
-</div>
-
-[« Close](javascript:void(0)){: .close-content-btn}
-</div>
 </div>
 
 ### Submission

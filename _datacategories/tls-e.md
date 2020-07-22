@@ -32,10 +32,6 @@ related_pages:
     url: /ddbj/tpa-e.html
 ---
 
-
-# TLS
-
-
 Since 2016, INSDC has accepted bulk sequence data including 16S rRNA or
 some other targeted loci mainly to be clustered into operational
 taxonomic unit as Targeted Locus Study (TLS) data type.

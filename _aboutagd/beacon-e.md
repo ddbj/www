@@ -8,8 +8,3 @@ category: aboutagd
 ## GA4GH Beacon
 
 Under development.
-
-<!-- #article -->
-<!-- #book -->
-<!-- #page_main -->
-<!-- #primary -->

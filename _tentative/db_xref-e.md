@@ -5,8 +5,6 @@ pathname: db_xref-e
 category: tentative
 ---
 
-# Controlled vocabulary for /db_xref qualifier
-
 The original site; [Controlled vocabulary for /db_xref
 qualifier](http://www.insdc.org/documents/dbxref-qualifier-vocabulary)
 2016.08.28 version  

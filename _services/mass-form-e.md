@@ -17,17 +17,15 @@ related_pages:
     url: /ddbj/validator-e.html)
 ---
 
-
-# Application form for MSS
-
 ## Flow of MSS application
 
-  - Apply your request  
-    through the following form.
-  - Send an automatic  
-    confirmation e-mail
-  - Send a MSS guidance e-mail  
-    ([within the next 5 working days](/calendar.html))
+{: .flow .flow_en }
+- Apply your request  
+  through the following form.
+- Send an automatic  
+  confirmation e-mail
+- Send a MSS guidance e-mail  
+  ([within the next 5 working days](/calendar.html))
 
 <!-- end list -->
 

@@ -5,15 +5,11 @@ pathname: keyword-e
 category: tentative
 ---
 
-# INSDC agreed methodological keywords
+## INSDC agreed methodological keywords
 
-The original site; [INSDC agreed methodological
-keywords](http://www.insdc.org/documents/methodological-keywords)
-2013.10.31 version
+The original site; [INSDC agreed methodological keywords](http://www.insdc.org/documents/methodological-keywords) 2013.10.31 version
 
-Methodological keywords are added at the discretion of the INSDC from a
-controlled vocabulary of terms that explicitly describe the type of
-sequence contained within the entry.
+Methodological keywords are added at the discretion of the INSDC from a controlled vocabulary of terms that explicitly describe the type of sequence contained within the entry.
 
 | Keyword                                                  | Description                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

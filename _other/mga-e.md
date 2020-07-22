@@ -34,9 +34,6 @@ related_pages:
     url: /ddbj/mga-e.html
 ---
 
-
-# MGA
-
 <span class="red">**[Caution] DDBJ terminated
 accepting new submission of MGA data.**</span>
 
@@ -46,7 +43,6 @@ International Nucleotide Sequence Database Collaboration (INSDC;
 DDBJ/EMBL-Bank/GenBank) have created a new category. The name of this
 new category is Mass sequence for Genome Annotation (MGA). The
 definition of MGA data is the following.。
-
 
 The definition of MGA data  
 : MGA is defined as those sequences which are produced in large
@@ -70,7 +66,6 @@ others), references, comments and so on. Master record is provided for
 every resource unit.
 
 Master record の例
-
 
 <pre>
 <a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">ZZZZZ0000000</a>                       <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="ModificationDateA" href="#ModificationDateB">linear</a>   <a id="DivisionA" href="#DivisionB">ROD</a> <a id="ModificationDateA" href="#ModificationDateB">24-JAN-2005</a>
@@ -118,7 +113,6 @@ Master record の例
             count]|[map]|[free text]|[db_xref1(,db_xref2,...)]|
 <a id="EndA" href="#EndB">//</a>
 </pre>
-
 
 ### Variable record
 

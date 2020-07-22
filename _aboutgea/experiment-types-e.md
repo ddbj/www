@@ -5,8 +5,7 @@ pathname: experiment-types-e
 category: aboutgea
 ---
 
-
-# Experiment types in GEA
+## Experiment types in GEA
 
 [Experiment Types in
 spreadsheet](https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=1327621011).

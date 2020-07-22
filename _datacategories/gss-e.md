@@ -32,9 +32,6 @@ related_pages:
     url: /ddbj/tpa-e.html
 ---
 
-
-# GSS
-
 The GSS division of DDBJ/ENA/GenBank is similar to the
 [EST](/ddbj/est-e.html) division, with the exception that most of the
 sequences are genomic in origin, rather than cDNA (mRNA, RNA

@@ -198,7 +198,8 @@ The definition briefly describes the information of gene(s). "DEFINITION" is con
 
 [Sample]
 
-トウモロコシ catalase gene の完全配列Complete sequence of maize catalase coding gene: 
+Complete sequence of maize catalase coding gene
+: 
   ```
   DEFINITION  Zea mays Cat3 gene for catalase, complete cds.
   ```
@@ -217,7 +218,8 @@ Partial sequence of human glyceraldehyde-3-phosphate dehydrogenase coding cDNA
   ```
 
 : Format: [organism name] mRNA for [product name], partial cds.
-  - partial cds: this protein coding sequence is partial
+
+: - partial cds: this protein coding sequence is partial
   - The gene name is omitted, because the submitter did not describe.
 
 Partial sequence of Bacillus 16S rRNA
@@ -240,7 +242,8 @@ Multiple CDS of rat mitochondrial DNA
   ```
 
 : Format: [organism name] [gene name 1], [gene name 2], .... genes for [product name 1], [product name 2], ..... , partial and complete cds.
-  - The gene names and/or product names are subsequently described from 5'to 3' end.
+
+: - The gene names and/or product names are subsequently described from 5'to 3' end.
   - "partial, complete and partial cds" is abbreviated to "partial and complete cds".
   - If some genes have only gene names or product names, only gene name or product name is described principally.
   - If the "DEFINITION" is too long, some information, such as map position, is described instead of the gene or product names.
@@ -255,15 +258,14 @@ EST data of human liver 3' end
   ```
 
 : Format: [organism name] cDNA, clone:[clone name], [other information].
-  - The clone name is mandatory.
+: - The clone name is mandatory.
 
 GSS data of mouse chromosome 1q
 : 
   ```
   DEFINITION  Mus musculus DNA, clone:1H11A14, 1q region.
   ```
-
-: Format: [organism name] DNA, clone:[clone name], [other information].
+  Format: [organism name] DNA, clone:[clone name], [other information].
   - The clone name is mandatory.
 
 TPA (Third Party Data) of human GAPD
@@ -274,7 +276,8 @@ TPA (Third Party Data) of human GAPD
   ```
 
 : Format: [TPA header]: [organism name] [gene name] mRNA for [product name], complete cds.
-  - In the case of [TPA (Third Party data)](/ddbj/tpa-e.html), either of "TPA_exp" (for TPA:experimental) or "TPA_inf" (for TPA:inferential) is described at the beginning of DEFINITION.
+
+: - In the case of [TPA (Third Party data)](/ddbj/tpa-e.html), either of "TPA_exp" (for TPA:experimental) or "TPA_inf" (for TPA:inferential) is described at the beginning of DEFINITION.
 
 {::options parse_block_html="true" /}
 <div id="AccessionB">
@@ -300,12 +303,13 @@ Conventional sequence data
 
 Bulk sequence data; WGS, TSA, TLS  
 : The accession number assigned to each entry of [WGS](/ddbj/wgs-e.html), [TSA](/ddbj/tsa-e.html) and TLS data consists of 4 alphabet characters and 8 (sometimes 9 or 10, if necessary) digits.<br>The alphabet part is called [prefix](/ddbj/prefix-e.html).<br>See also [For Large Scale Data (four prefix)](/ddbj/prefix-e.html#large).<br>Example:ZZZZ01000001
-: 
-  | ZZZZ (4 letters) | Prefix to distinguish each project, project_id                 |
+
+: | ZZZZ (4 letters) | Prefix to distinguish each project, project_id                 |
   | 01 (2 digits)        | Version number of the data set, set_version                |
   | 000001 (6 digits)	    | ID of each individual sequence (It might be 7 or 8 digits depended on the number of entries.) |
-: 
-The set_version goes up for every update of the dataset. Example:ZZZZ02000001
+
+  The set_version goes up for every update of the dataset. Example:ZZZZ02000001
+
 : 
   ```
   ACCESSION   ZZZZ01000001 ZZZZ01000000

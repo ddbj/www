@@ -27,15 +27,19 @@ TransChecker is a software tool developed by DDBJ for checking translation into 
   </li>     
   <li>  
     Uncompress tar.gz file.<br>
-    <code>
-      $ gunzip transChecker.tar.gz
-    </code>   
+<pre>
+<code>
+$ gunzip transChecker.tar.gz
+</code>  
+</pre> 
   </li>   
   <li>
     Extract the file tar command<br>
-    <code>
-      $ tar xvf transChecker.tar
-    </code>
+<pre>
+<code>
+$ tar xvf transChecker.tar
+</code>
+</pre> 
   </li>  
   <li>
     directory is created<br>

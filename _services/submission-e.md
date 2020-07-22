@@ -17,7 +17,6 @@ related_pages:
     url: /ddbj/location-e.html)
 ---
 
-
 ## Before Nucleotide Sequence Submission
 
 ### Purpose and Significance of Nucleotide Sequence Submission
@@ -76,7 +75,7 @@ As mentioned above and [the page to explain dataflow](#data_flow), the
 nucleotide sequences released from DDBJ are available for everyone. When
 a user other than the submitter of the entry points out some error(s) in
 the entry, DDBJ will inform it to contact person of the entry. Since
-<span class="red">only submitters of the entry can revise and/or update the entry</span>, it depends on the submitters of the entry if the entry
+only submitters of the entry can revise and/or update the entry it depends on the submitters of the entry if the entry
 is modified following user's claim or not.
 
 Basically, it is required for the submitters to response user's inquiry
@@ -300,61 +299,44 @@ number) for details.
 
 Following figure shows the dataflow from new submission to release and update at DDBJ.
 
-![]({{site.baseurl}}/assets/images/ddbj/workflow.gif "配列データの遷移")
+![]({{site.baseurl}}/assets/images/ddbj/workflow.gif "配列データの遷移"){:.w400}
 
- 0. Article Submission  
-    It is now the usual practice for authors to acquire accession
-    numbers from DDBJ(, ENA, or GenBank) to their sequences when they
-    submit articles to journals. <span class="red">\* You can submit
-    your sequences to DDBJ, even if you have no plan to publication of
-    article related to the sequences.</span>
- 1. Nucleotide Sequence Submission  
-    Basically, DDBJ accepts nucleotide sequence submissions via
-    [Nucleotide Sequence Submission System](/ddbj/websub-e.html) or
-    [Mass Submission System](/ddbj/mss-e.html). DDBJ issues an accession
-    number for each sequence after processing submitted data.
- 2. Hold until Publication  
-    During sequence submission, the submitter can specify that the data
-    can be made available to the public through DDBJ immediately or not.
-    If the submitter wishes to hold the data until publication,
-    submitter has to specify a [hold date](#holddate).
- 3. Release of Sequence Data  
-    DDBJ releases the submitted data that specified to be open to the
-    public immediately, as soon as possible after processing. The
-    submitted entry that is specified to hold until publication will be
-    released according to [principle of data
-    release](/data-release-policy-e.html). When the accession number of
-    the hold entry is published, the entry will be released with no
-    exception and no permission from the submitter. Everyone can request
-    DDBJ to release the unpublished data whose accession numbers are on
-    the published papers.
- 4. Availability of Released Data  
-    At first, the data released from DDBJ are available via
-    [getentry](http://getentry.ddbj.nig.ac.jp/top-e.html) and [anonymous
-    FTP](ftp://ftp.ddbj.nig.ac.jp/). The data are forwarded to GenBank
-    and ENA, and the data are available also via GenBank and ENA. The
-    data are also expanded into services provided from DDBJ, Search and
-    Analysis, [ARSA](http://ddbj.nig.ac.jp/arsa/quick_search?lang=en)
-    and so on. Basically, the data released from DDBJ are
-    [](/insdc-e.html#policy)available for everyone.
- 5. Citation of Released Data  
-    Released data from DDBJ/ENA/GenBank are cited many biological
-    databases.
- 6. Feed back for Released Data  
-    If you have comments or questions for released data, please contact
-    the submitters of each entry. If you can not directly contact the
-    submitters, please contact us through [the inquiry
-    form](/contact-e.html#to-submitter) with reasons
- 7. Right of Entry Update  
-    [Only submitters of the entry can update and modify the
-    entry](#right). After data madification, the submitter of the entry
-    can also specify either of immediate release or hold until
-    publication. However, in principle, if the entry have already been
-    open to the public, the entry can not restore hold.
-
+<ol>
+  <li class="decrement">
+    Article Submission<br>
+    It is now the usual practice for authors to acquire accession numbers from DDBJ(, ENA, or GenBank) to their sequences when they submit articles to journals.
+      <span class="red">* You can submit your sequences to DDBJ, even if you have no plan to publication of article related to the sequences.</span>
+    </li>
+  <li>
+    Nucleotide Sequence Submission<br>
+    Basically, DDBJ accepts nucleotide sequence submissions via <a href="/ddbj/websub-e.html">Nucleotide Sequence Submission System</a> or <a href="/ddbj/mss-e.html">Mass Submission System</a>. DDBJ issues an accession number for each sequence after processing submitted data.
+    </li>
+  <li>
+    Hold until Publication<br>
+    During sequence submission, the submitter can specify that the data can be made available to the public through DDBJ immediately or not. If the submitter wishes to hold the data until publication, submitter has to specify a <a href="#holddate">hold date</a>.
+    </li>
+  <li>
+    Release of Sequence Data<br>
+    DDBJ releases the submitted data that specified to be open to the public immediately, as soon as possible after processing. The submitted entry that is specified to hold until publication will be released according to <a href="/data-release-policy-e.html">principle of data release</a>. When the accession number of the hold entry is published, the entry will be released with no exception and no permission from the submitter. Everyone can request DDBJ to release the unpublished data whose accession numbers are on the published papers.
+    </li>
+  <li>
+    Availability of Released Data<br>
+    At first, the data released from DDBJ are available via <a href="http://getentry.ddbj.nig.ac.jp/top-e.html">getentry</a> and <a href="ftp://ftp.ddbj.nig.ac.jp/">anonymous FTP</a>. The data are forwarded to GenBank and ENA, and the data are available also via GenBank and ENA. The data are also expanded into services provided from DDBJ, Search and Analysis, <a href="http://ddbj.nig.ac.jp/arsa/quick_search?lang=en">ARSA</a> and so on. Basically, the data released from DDBJ are <a href="/insdc-e.html#policy"></a>available for everyone.
+    </li>
+  <li>
+    Citation of Released Data<br>
+    Released data from DDBJ/ENA/GenBank are cited many biological databases.
+  </li>
+  <li>
+    Feed back for Released Data<br>
+    If you have comments or questions for released data, please contact the submitters of each entry. If you can not directly contact the submitters, please contact us through <a href="/contact-e.html">the inquiry form</a> with reasons
+  </li>
+  <li>
+    <a href="#right">Only submitters of the entry can update and modify the entry</a>. After data madification, the submitter of the entry can also specify either of immediate release or hold until publication. However, in principle, if the entry have already been open to the public, the entry can not restore hold.
+  </li>
+</ol>
 
 ## Terms<a name="terms"></a>
-
 
 Submitter <a name="submitter"></a>
 : Submitter of the [entry](#entry) is the person who have

@@ -5,16 +5,9 @@ pathname: assembly-e
 category: tentative
 ---
 
-# INSDC standards for genome assembly submission
+The original site; [INSDC standards for genome assembly submission](http://www.insdc.org/insdc-standards-genome-assembly-submission) 2013.08.14 version
 
-The original site; [INSDC standards for genome assembly
-submission](http://www.insdc.org/insdc-standards-genome-assembly-submission)
-2013.08.14 version
-
-Genome assemblies comprise a number of possible layers of information,
-including reads, contigs, scaffolds and chromosomes (see figure I). This
-document lays out the requirements for submission of genome assembly
-information into INSDC databases.
+Genome assemblies comprise a number of possible layers of information, including reads, contigs, scaffolds and chromosomes (see figure I). This document lays out the requirements for submission of genome assembly information into INSDC databases.
 
 ## Figure I. Three typical assembly processes
 
@@ -84,10 +77,8 @@ C) Partial assembly to contigs only.
   </tr>
 </table>
  
-Consistent with the variety of assembly processes, submitters to INSDC
-approach with data for the layers in different combinations of layers.
-Tables I and II shows requirements for new genome assembly submissions
-and updates to existing assembly submissions.
+Consistent with the variety of assembly processes, submitters to INSDC approach with data for the layers in different combinations of layers.
+Tables I and II shows requirements for new genome assembly submissions and updates to existing assembly submissions.
 
 ## Table II. Update to existing genome assembly
 
@@ -160,9 +151,5 @@ and updates to existing assembly submissions.
   </tr>
 </table>
 
-Third party genome assembly submissions and updates, in which the
-submitting group does not hold complete ownership of data, are subject
-to existing third party annotation rules, including the requirement for
-presentation of the new/updated genome assembly in a peer reviewed
-publication prior to public release from INSDC.
+Third party genome assembly submissions and updates, in which the submitting group does not hold complete ownership of data, are subject to existing third party annotation rules, including the requirement for presentation of the new/updated genome assembly in a peer reviewed publication prior to public release from INSDC.
 

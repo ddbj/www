@@ -68,7 +68,7 @@ license ファイル
 
 UME を起動しましたら、メモリ割り当てサイズを調節します。 デフォルトは 512 Mbytes ですが、ご使用の PCのスペックに合わせて変更してください。
 
-[![]({{ site.baseurl }}/assets/images/ddbj/UME2.png)](/images/ddbj/UME2.png)
+[![]({{ site.baseurl }}/assets/images/ddbj/UME2.png)]({{ site.baseurl }}/assets/images/ddbj/UME2.png)
 
 1. 画面上部のメニューから Config をクリックします。
 2. Max memory for runtime のプルダウンメニューから、クリックして選択します。

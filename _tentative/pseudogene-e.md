@@ -5,7 +5,7 @@ pathname: pseudogene-e
 category: tentative
 ---
 
-# Controlled vocabulary for /pseudogene qualifier
+## Controlled vocabulary for /pseudogene qualifier
 
 The original site; [Controlled vocabulary for /pseudogene
 qualifier](http://www.insdc.org/documents/pseudogene-qualifier-vocabulary)

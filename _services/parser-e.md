@@ -2,6 +2,19 @@
 layout: indexed_content
 title: Parser User’s Manual
 category: services
+related_pages:
+  - title: Submission File Format
+    url: services/file-format-e.html
+  - title: Validation tools for MSS data files
+    url: services/mss-tool-e.html
+  - title: UME User’s manual
+    url: services/ume-e.html
+  - title: transChecker User’s Manual
+    url: services/transchecker-e.html
+  - title: Validator error message
+    url: services/validator-e.html
+  - title: Application form for MSS
+    url: services/mass-form-e.html
 ---
 
 Parser is a software tool developed by DDBJ for checking the format and the syntax of the [sequence](/ddbj/file-format-e.html#sequence) and [annotation](/ddbj/file-format-e.html#annotation) files.
@@ -14,26 +27,30 @@ Parser is a software tool developed by DDBJ for checking the format and the synt
   </li>
   <li>
     Uncompress tar.gz file.<br>
-    <code>
-      $ gunzip Parser.tar.gz
-    </code>
+<pre>
+<code>
+$ gunzip Parser.tar.gz
+</code>
+</pre>
   </li>
   <li>
     Extract the file tar command<br>
-    <code>
-      $ tar xvf Parser.tar
-    </code>
+<pre>
+<code>
+$ tar xvf Parser.tar
+</code>
+</pre>
   </li>
   <li>
     directory is created<br>  
     Check the contents of the directory<br>
-    <pre>
-      <code>
+  <pre>
+    <code>
 $ cd jParser
 $ ls -FC
 jParser.sh* jar/    license.txt resource/
-      </code>
-    </pre><br>
+    </code>
+  </pre><br>
     <table>
       <tbody>
         <tr>
@@ -57,8 +74,8 @@ jParser.sh* jar/    license.txt resource/
   </li>
   <li>
     Change the file jParser.sh according to your system environment.
-    <pre>
-      <code>
+<pre>
+  <code>
 #!/bin/sh
 
 # Parser installed directory
@@ -86,7 +103,7 @@ exit $RETVAL
 #EOF
       </code>
     </pre>
-    <dl>
+  <dl>
       <dt>[PARSER\_DIR parameter\]</dt>  
       <dd>Enter the full path name of jParser directory.</dd>
       <dd>ex) PARSER\_DIR=/home/mass/jParser</dd>

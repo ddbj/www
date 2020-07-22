@@ -5,14 +5,11 @@ pathname: location-e
 category: flatfile
 ---
 
-
-
-# Description of Location
+## Description of Location
 
 Location, the region of the presented sequence where corresponds to a
 feature, described with the International Nucleotide Sequence Database
 is as follows.
-
 
 | **Example of Location**           | **Meaning**                                                                                                                                                                                                                                                  |
 | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
