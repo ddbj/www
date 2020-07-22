@@ -1781,7 +1781,7 @@ function makeDDBJRelease() {
         hAxis:{title: 'Proportion of each archive in Release ' + release_no + ' (%)', textStyle: {fontSize:12}, viewWindow:{min:0, max:100}}
       };
 
-      var catpropseq = new google.visualization.BarChart(document.getElementById('cddbj-release-chart-prop-category-seq')); 
+      var catpropseq = new google.visualization.BarChart(document.getElementById('ddbj-release-chart-prop-category-seq')); 
       catpropseq.draw(data, options);
     
     } // function DDBJReleasePropSeq()

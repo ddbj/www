@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: statistics
+title: DB の out/in 統計量
 title-ja: 統計
 addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script><script type='text/javascript' src='/www/assets/js/jquery.charts.js'></script>
 ---
