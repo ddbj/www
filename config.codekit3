@@ -7144,6 +7144,38 @@
 		"oAP": "/assets/css/main.css.map",
 		"oF": 0
 		},
+	"/assets/files/magetab/adf/commercial_array_header_template.xls": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/files/magetab/adf/commercial_array_header_template.xls",
+		"oF": 0
+		},
+	"/assets/files/magetab/adf/composite_element_array_ADF_template.xls": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/files/magetab/adf/composite_element_array_ADF_template.xls",
+		"oF": 0
+		},
+	"/assets/files/magetab/adf/reporter_only_array_ADF_template.xls": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/files/magetab/adf/reporter_only_array_ADF_template.xls",
+		"oF": 0
+		},
+	"/assets/files/magetab/adf/spotted_array_ADF_template.xls": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/assets/files/magetab/adf/spotted_array_ADF_template.xls",
+		"oF": 0
+		},
 	"/assets/files/submission/3-5-0/AGD_tool (1).zip": {
 		"cB": 0,
 		"ft": 8192,
