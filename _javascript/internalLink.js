@@ -4,8 +4,8 @@
 export default function internalLink() {
   let $navLink = '';
 
-  function createIndex() {
-    console.log('createIndex')
+  function createToc() {
+    console.log('createToc')
     const tocContainer = document.querySelector('.internal-link');
     if (tocContainer) {
       const postContent = document.querySelector('.md-content');
@@ -44,67 +44,19 @@ export default function internalLink() {
         }
       }
       console.log(outline);
-
-
-
-      const hTags = postContent.querySelectorAll('h2, h3');
-      const hTagsIncludeH4 = postContent.querySelectorAll('h2, h3, h4');
-      if (hTags.length > 0) {
-        const indexList = document.createElement('ul');
-        let listSrc = '';
-        let subListSrc = ''; //h3タグを取得しておくための変数
-
-        for (let i = 0; i < hTags.length; i++) {
-          let theHeading = hTags[i];
-          let theHeadingIncludeH4 = hTagsIncludeH4[i]
-          let id = '';
-          if ( $(theHeadingIncludeH4).children('a').attr('name') ){//既にidがあれば
-            id = $(theHeadingIncludeH4).children('a').attr('name');//既存のidを使う
-          }else{
-            id = $(theHeadingIncludeH4).text().replace(/ |:/g, '_').replace(/\(|\)/g, '');//不要な箇所を除去
-            id = jQuery.trim(id);//不要な箇所を除去
-          }
-          id = encodeURIComponent(id);//idをエンコード
-          //$(theHeadingIncludeH4).attr("id", id);//リンクで飛べるようにIDをつける
-          //const a = document.createElement('a');
-          //theHeading.appendChild(a);
-          //a.setAttribute("href","#" + id);
-          //a.classList.add("link-icon");
-          if (theHeading.tagName === 'H2') {
-            if (subListSrc !== '') {
-              //h3リストが生成されていれば
-              listSrc += '<ul>' + subListSrc + '</ul>';
-              subListSrc = '';
-            }
-            listSrc +=
-              '</li><li><a href="#' +
-              id +
-              '">' +
-              theHeading.textContent +
-              "</a>";
-          } else if (theHeading.tagName === "H3") {
-            subListSrc +=
-              '<li><a href="#' +
-              id +
-              '">' +
-              theHeading.textContent +
-              "</a></li>";
-          }
-        }
-
-        if (subListSrc !== '') {
-          //最後のリストがh3だった場合
-          listSrc += "<ul>" + subListSrc + "</ul></li>";
-        } else {
-          listSrc += "</li>";
-        }
-        indexList.innerHTML = listSrc;
-        //tocContainer.appendChild(indexList);
-        tocContainer.innerHTML = indexList.outerHTML;
-      }
+      // make table of content
+      tocContainer.innerHTML = '<ul>' + outline.map(item => createItemOfToc(item)).join('').replace(/<li><ul><\/ul><\/li>/g, '').replace(/<\/li><li><ul><\/ul>/g, '<ul>') + '</ul>';
     }
     $navLink = $("#TableOfContents li a");
   };
+  function createItemOfToc(item) {
+    switch (true) {
+      case item.nodeName !== undefined:
+        return '<li><a href="#' + item.id + '">' + item.textContent + '</a></li>';
+      case item.length !== undefined:
+        return '<li><ul>' + item.map(subitem => createItemOfToc(subitem)).join('') + '</ul></li>';
+    }
+  }
 
   // 各コンテンツのページ上部からの開始位置と終了位置を配列に格納しておく
   let contentsArr = new Array();
@@ -171,7 +123,7 @@ export default function internalLink() {
 
   console.log('before of promise1')
   let promise = new Promise((resolve, reject) => {
-    createIndex();
+    createToc();
     console.log('before of resolve')
     resolve();
   });
