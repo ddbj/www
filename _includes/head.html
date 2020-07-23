@@ -14,7 +14,6 @@
   src="https://code.jquery.com/jquery-3.5.0.js"
   integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
   crossorigin="anonymous"></script>
-    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/main.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
     <script></script>
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/colorbox.css" />
@@ -22,6 +21,7 @@
     {% if page.addhead %}
     {{ page.addhead }}
     {% endif %}
+    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/main.js"></script>
     {% assign jsonld_path = page.id | replace: "/", "_" %}
     {% if site.data.jsonld[ jsonld_path ] %}
     <script type="application/ld+json">

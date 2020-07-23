@@ -2,11 +2,25 @@
 
 // 内部リンク
 export default function internalLink() {
-  let $navLink = '';
   let itemsOfToc = [];
 
+  createToc(); // 目次の生成
+  setupSmoothScroll(); // 目次をクリックしたらスクロール
+  $(window).on('resize', updateSectionSize).trigger('resize'); // セクションの矩形サイズを更新
+  $(window).on('scroll', updateHighlightingOfToc).trigger('scroll'); // 目次のハイライトを更新
+  // ハッシュが指定されていたら、そこまでスクロール
+  const hash = (window.location.hash.substr(1));
+  if (hash) {
+    const decodedHash = decodeURIComponent(hash);
+    const target = itemsOfToc.filter(item => item.target.id === decodedHash);
+    if (target) {
+      $(target[0].elm).trigger('click');
+    }
+  }
+
+
+  // 目次の生成
   function createToc() {
-    console.log('createToc')
     const tocContainer = document.getElementById('TableOfContents');
     if (tocContainer) {
       const postContent = document.querySelector('.md-content');
@@ -54,9 +68,8 @@ export default function internalLink() {
         rect: { y: undefined, height: undefined }
       })
     });
-    $navLink = $('#TableOfContents li a');
   }
-
+  // 目次の各項目の生成（再帰処理）
   function createItemOfToc(item) {
     switch (true) {
       case item.nodeName !== undefined:
@@ -74,6 +87,7 @@ export default function internalLink() {
       item.rect.y = item.target.offsetTop;
       item.rect.height = (i < itemsOfToc.length - 1 ? itemsOfToc[i + 1].target.offsetTop : container.offsetTop + container.clientHeight) - item.rect.y;
     }
+    updateHighlightingOfToc();
   }
 
   // 目次のハイライトを更新
@@ -101,58 +115,20 @@ export default function internalLink() {
     return { y: 0, height: 0 };
   }
 
-  // ページ読み込み時とスクロール時に、現在地をチェックする
-  $(window).on("scroll", function () {
-    updateHighlightingOfToc();
-  });
 
-  // ナビゲーションクリック時の動作：スムーズスクロール・アドレスバーにID付与
-  const smoothScroll = () => {
-    $navLink.on("click", function () {
-      history.replaceState('', '', this.href);
-      $("html,body").animate(
-        {
-          scrollTop: $($(this).attr("href")).offset().top - 24,
-        },
-        400
-      );
-      return false;
-    });
-  };
-
-  console.log('before of promise1')
-  let promise = new Promise((resolve, reject) => {
-    createToc();
-    console.log('before of resolve')
-    resolve();
-  });
-
-  console.log('before of promise2')
-  promise
-    .then(() => {
-      updateSectionSize();
-      updateHighlightingOfToc();
-    }).then(() => {
-      console.log("パラメーター確認開始");
-      // URLパラメータ文字列を取得
-      let param = location.hash;
-      // 変数paramに#がついていれば
-      if (param.match('#')) {
-        // その#の位置に移動
-        let element = document.getElementById(param.slice(1));
-        element.scrollIntoView({
-          behavior: "smooth",
-          inline: "nearest",
+  // 目次をクリックしたらスクロール
+  function setupSmoothScroll() {
+    $('#TableOfContents a').on('click', (e) => {
+      history.replaceState('', '', e.delegateTarget.href);
+      const target = document.getElementById(e.delegateTarget.dataset.target);
+      if (target) {
+        $('html').animate({
+          scrollTop: target.offsetTop - 16,
+          duration: 400
         });
       }
-    }).then(() => {
-      smoothScroll();
-      // hashを調べる
-      const hash = window.location.hash.substr(1);
-      // hashがあれば、スクロール
-    }).catch((error) => {
-      // エラーハンドリング
-      console.error(error);
+      return false;
     });
-    
+  }
+
 }

@@ -308,6 +308,9 @@ input, textarea, select, button {
         font-weight: bold; }
         .internal-link > ul li a.current {
           color: #1C1B19; }
+        .internal-link > ul li a:hover {
+          color: #FF7300;
+          text-decoration: underline; }
 
 .list-view > .listtitle {
   background: #1C1B19;
