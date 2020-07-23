@@ -3,10 +3,11 @@
 // 内部リンク
 export default function internalLink() {
   let $navLink = '';
+  let itemsOfToc = [];
 
   function createToc() {
     console.log('createToc')
-    const tocContainer = document.querySelector('.internal-link');
+    const tocContainer = document.getElementById('TableOfContents');
     if (tocContainer) {
       const postContent = document.querySelector('.md-content');
       const headings = postContent.querySelectorAll('h2, h3, h4');
@@ -43,68 +44,66 @@ export default function internalLink() {
           anchor.classList.add('link-icon');
         }
       }
-      console.log(outline);
       // make table of content
       tocContainer.innerHTML = '<ul>' + outline.map(item => createItemOfToc(item)).join('').replace(/<li><ul><\/ul><\/li>/g, '').replace(/<\/li><li><ul><\/ul>/g, '<ul>') + '</ul>';
     }
-    $navLink = $("#TableOfContents li a");
-  };
+    $('a', tocContainer).each((index, item) => {
+      itemsOfToc.push({
+        elm: item,
+        target: document.getElementById(item.dataset.target),
+        rect: { y: undefined, height: undefined }
+      })
+    });
+    $navLink = $('#TableOfContents li a');
+  }
+
   function createItemOfToc(item) {
     switch (true) {
       case item.nodeName !== undefined:
-        return '<li><a href="#' + item.id + '">' + item.textContent + '</a></li>';
+        return '<li><a href="#' + item.id + '" data-target="' + item.id + '">' + item.textContent + '</a></li>';
       case item.length !== undefined:
         return '<li><ul>' + item.map(subitem => createItemOfToc(subitem)).join('') + '</ul></li>';
     }
   }
 
-  // 各コンテンツのページ上部からの開始位置と終了位置を配列に格納しておく
-  let contentsArr = new Array();
-  const createContentsArr = () => {
-    console.log('createContentsArr')
-    for (let i = 0; i < $navLink.length; i++) {
-      // コンテンツのIDを取得
-      let targetContents = $navLink.eq(i).attr("href");
-      // ページ内リンクでないナビゲーションが含まれている場合は除外する
-      if (targetContents.charAt(0) == "#") {
-        // ページ上部からコンテンツの開始位置までの距離を取得
-        const $targetContents = $(document.getElementById(targetContents.substr(1)));
-        let targetContentsTop = $targetContents.offset().top;
-        // ページ上部からコンテンツの終了位置までの距離を取得
-        let targetContentsBottom =
-          targetContentsTop + $targetContents.outerHeight(true) - 1;
-        // 配列に格納
-        contentsArr[i] = [targetContentsTop, targetContentsBottom];
-      }
+  // セクションの矩形サイズを更新
+  function updateSectionSize() {
+    const container = document.querySelector('#MainContentView > .md-content');
+    for (let i = 0; i < itemsOfToc.length; i++) {
+      const item = itemsOfToc[i];
+      item.rect.y = item.target.offsetTop;
+      item.rect.height = (i < itemsOfToc.length - 1 ? itemsOfToc[i + 1].target.offsetTop : container.offsetTop + container.clientHeight) - item.rect.y;
     }
-  };
+  }
 
-  // 現在地をチェックする
-  function currentCheck() {
-    console.log('currentCheck')
-    // 現在のスクロール位置を取得
-    let windowScrolltop = $(window).scrollTop();
-    for (let i = 0; i < contentsArr.length; i++) {
-      // 現在のスクロール位置が、配列に格納した開始位置と終了位置の間にあるものを調べる
-      if ( contentsArr[0][0] > windowScrolltop ) {
-        $navLink.removeClass("current");
-        $navLink.eq(0).addClass("current");
-        break;
-      } else if (
-        contentsArr[i][0] <= windowScrolltop &&
-        contentsArr[i][1] >= windowScrolltop
-      ) {
-        // 開始位置と終了位置の間にある場合、ナビゲーションにclass="current"をつける
-        $navLink.removeClass("current");
-        $navLink.eq(i).addClass("current");
-        i == contentsArr.length;
+  // 目次のハイライトを更新
+  function updateHighlightingOfToc() {
+    const screenTop = window.scrollY;
+    for (let i = 0; i < itemsOfToc.length; i++) {
+      const item = itemsOfToc[i];
+      const rect = intersect({y: screenTop, height: window.innerHeight}, item.rect);
+      if (rect.height > 0) {
+        item.elm.classList.add('current');
+      } else {
+        item.elm.classList.remove('current');
       }
     }
   }
 
+  function intersect(rect1, rect2) {
+    const
+      sy = Math.max(rect1.y, rect2.y),
+      ey = Math.min(rect1.y + rect1.height, rect2.y + rect2.height),
+      h = ey - sy;
+    if (h > 0) {
+      return { y: sy, height: h };
+    }
+    return { y: 0, height: 0 };
+  }
+
   // ページ読み込み時とスクロール時に、現在地をチェックする
   $(window).on("scroll", function () {
-    currentCheck();
+    updateHighlightingOfToc();
   });
 
   // ナビゲーションクリック時の動作：スムーズスクロール・アドレスバーにID付与
@@ -131,9 +130,8 @@ export default function internalLink() {
   console.log('before of promise2')
   promise
     .then(() => {
-      createContentsArr();
-      currentCheck();
-      console.log("createContentsArr完了");
+      updateSectionSize();
+      updateHighlightingOfToc();
     }).then(() => {
       console.log("パラメーター確認開始");
       // URLパラメータ文字列を取得
