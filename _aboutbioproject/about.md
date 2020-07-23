@@ -5,8 +5,6 @@ pathname: index
 category: aboutbioproject
 ---
 
-
-
 ## 連絡先
 
 [メッセージフォーム](/contact.html)よりご連絡ください。

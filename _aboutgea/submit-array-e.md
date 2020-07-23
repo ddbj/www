@@ -27,12 +27,8 @@ metadata can be submitted as a tab-delimited text file.
 
 ### 3\. Upload raw and processed data files
 
-  - Upload raw and processed data files into the GEA submission
-    directory.
-  - \[Optional\] When an array design is not available in
-    [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA,
-    upload an array design file into the GEA submission directory along
-    with data files.
+  - Upload raw and processed data files into the GEA submission directory.
+  - \[Optional\] When an array design is not available in [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA, upload an array design file into the GEA submission directory along with data files.
 
 ### 4\. Select a BioProject and BioSample(s)
 
@@ -45,9 +41,7 @@ metadata can be submitted as a tab-delimited text file.
 
   - The [IDF (Investigation Description Format)](/gea/metadata-e.html#idf) file is used to give an overview of the experiment, including the experimental design, protocols and publication information.
 
-#### SDRF
-
-![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
+#### SDRF ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
 
   - The [SDRF (Sample and Data Relationship Format)](/gea/metadata-e.html#sdrf) describes the sample characteristics and the relationship between samples, arrays, data files etc.
   - SDRF template is generated from selected BioProject and BioSample(s). Enter additional information.
@@ -144,8 +138,7 @@ Upload files by executing,
   - \<Your Files\> Files to be transferred. Ex: file1 file2 (file1 and file2), file\* (all files whose filenames start with "file")
   - \<D-way Login ID\> D-way Login ID (ex. test07)
   - \<GEA Submission ID\> GEA Submission ID (ex. ESUB000350)
-  - command example: scp Arabidopsis\_control\_rep\_1.CEL
-    test07@ftp-private.ddbj.nig.ac.jp:\~/gea/ESUB000350
+  - command example: scp Arabidopsis\_control\_rep\_1.CEL test07@ftp-private.ddbj.nig.ac.jp:\~/gea/ESUB000350
 
 Enter the passphrase set for the keys.
 
@@ -170,8 +163,7 @@ The login environment is private for the submitter. Users other than the submitt
 
 Submission to DRA ～upload data files (Windows)～
 
-Install and run the ["WinSCP" (http://winscp.net/eng/download.php)](http://winscp.net/eng/download.php)
-.
+Install and run the ["WinSCP" (http://winscp.net/eng/download.php)](http://winscp.net/eng/download.php).
 
 Set items as below and click the \[Advanced...\] button.
 
@@ -201,7 +193,7 @@ At the first time of login, a warning message is displayed; however, please sele
 
 After login successfully, a folder of your PC is displayed at left, and your private directory in the server is displayed at right. Select the files at the left window and drag & drop them into the right window to transfer the files to the server.
 
-[![]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg){:.w400}]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg "transfer files"){:.group1}
+[![]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg){:.w500}]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg "transfer files"){:.group1}
 
 You can delete the transferred files by selecting the files and clicking the \[Delete\] button.
 
@@ -246,7 +238,7 @@ At the first time of login, a warning message is displayed; however, please sele
 
 After login successfully, your private directory in the server is displayed in the window. Select the files in your PC and drag & drop them into the window to transfer the files to the server.
 
-[![]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg){:.w400}]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg "transfer"){:.group1}
+[![]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg){:.w500}]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg "transfer"){:.group1}
 
 [« Close](javascript:void(0)){: .close-content-btn}
 </div>
@@ -276,8 +268,7 @@ You can delete an un-submitted GEA submission at "Delete submission".
 
 ### BioProject
 
-Select a submitted project registered in your account. If a BioProject is not registered, please go to the [BioProject submission site](/bioproject/submission-e.html#bioproject-submission) and submit a
-project.
+Select a submitted project registered in your account. If a BioProject is not registered, please go to the [BioProject submission site](/bioproject/submission-e.html#bioproject-submission) and submit a project.
 
 To use a project obtained in the other account, please [contact GEA team](/contact-e.html).
 
@@ -328,8 +319,7 @@ Auto-filled fields.
   - Technology Type: "array assay" for microarray submission.
   - Array Design REF: array design accession or filename described in IDF.
 
-Enter required fields by overwriting \<Required: fill in the content\>
-tags.
+Enter required fields by overwriting \<Required: fill in the content\> tags.
 
 Fields you need to add.
 
@@ -374,11 +364,9 @@ Submit the IDF and SDRF metadata by clicking the "Submit" button.
 
 ### Validation
 
-When data files described in the IDF and SDRF are not found in the submission directory, an error message "Data file is not uploaded" is
-shown and the submission is aborted.
+When data files described in the IDF and SDRF are not found in the submission directory, an error message "Data file is not uploaded" is shown and the submission is aborted.
 
-The validator checks submitted IDF and SDRF files according to the [validation rules](/gea/validation-e.html) and gives warning and error
-messages. Errors need to be resolved for submission.
+The validator checks submitted IDF and SDRF files according to the [validation rules](/gea/validation-e.html) and gives warning and error messages. Errors need to be resolved for submission.
 
 {::nomarkdown}
 {% include image.html url="books/array-validation.jpg" caption="Warning and error messages" class="w500" %}
@@ -480,16 +468,16 @@ B636E0063E29709B6082F324C76D0911 file2
 Install and run the [Fsum Frontend (sourceforge.net/projects/fsumfe/)](//sourceforge.net/projects/fsumfe/).  
 At first, tick off "md5".
 
-![]({{ site.baseurl }}/assets/images/books/Fsum1.jpg "Generate md5 in the tool 1")
+[![]({{ site.baseurl }}/assets/images/books/Fsum1.jpg){:.w500}]({{ site.baseurl }}/assets/images/books/Fsum1.jpg "Generate md5 in the tool 1")
 
 After clicking the \[+\] button, open the sequence data files that you need. You can select multiple files at the same time.
 
-![]({{ site.baseurl }}/assets/images/books/Fsum2.jpg "Generate md5 in the tool 2")
+[![]({{ site.baseurl }}/assets/images/books/Fsum2.jpg){:.w500}]({{ site.baseurl }}/assets/images/books/Fsum2.jpg "Generate md5 in the tool 2")
 
 Click the \[Calculate hashes\] button. The MD5 numbers of the files are displayed.  
 By clicking the \[Export\] button, you can obtain the list of the MD5 numbers as a html, a csv, or a xml file.
 
-![]({{ site.baseurl }}/assets/images/books/Fsum3.jpg "Generate md5 in the tool 3")
+[![]({{ site.baseurl }}/assets/images/books/Fsum3.jpg){:.w500}]({{ site.baseurl }}/assets/images/books/Fsum3.jpg "Generate md5 in the tool 3")
 
 [« Close](javascript:void(0)){: .close-content-btn}
 </div>
