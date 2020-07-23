@@ -2,7 +2,7 @@
 
 // 内部リンク
 export default function internalLink() {
-  let itemsOfToc = [];
+  let itemsOfToc = []; // 目次管理用配列
 
   createToc(); // 目次の生成
   setupSmoothScroll(); // 目次をクリックしたらスクロール
@@ -25,21 +25,21 @@ export default function internalLink() {
     if (tocContainer) {
       const postContent = document.querySelector('.md-content');
       const headings = postContent.querySelectorAll('h2, h3, h4');
-      const outline = [];
+      const outline = []; // 階層構造を持った見出しのリスト
       let currentNode = outline;
       for (let i = 0; i < headings.length; i++) {
         const currentHeading = headings[i];
-        // make outline
+        //// 階層構造を持った見出しのリストの作成
         switch (currentHeading.tagName) {
-          case 'H2':
-            currentNode = [];
-            outline.push(currentHeading, currentNode);
+          case 'H2': // 大見出しの場合
+            currentNode = []; // 子の階層を作り、現在操作中の階層にする
+            outline.push(currentHeading, currentNode); // 見出しリストに追加
             break;
           case 'H3':
-            currentNode.push(currentHeading);
+            currentNode.push(currentHeading); // 見出しリストの子の階層に追加
             break;
         }
-        // add ID
+        //// IDの付与
         const namedAnchor = currentHeading.querySelector('a[name]');
         if (namedAnchor) {
           // 見出しにname属性持ちのアンカーがあれば、name属性をIDに 
@@ -47,10 +47,9 @@ export default function internalLink() {
         } else if (!currentHeading.getAttribute('id')) {
           // そうでなく、かつ見出しにIDが付与されていなければ、見出し内容をIDに
           // （ただしどうやらJekyllは自動的にそれをやっているっぽい。だとしたら不要
-          // * encodeURIComponent は不要？
           currentHeading.setAttribute('id', currentHeading.textContent.replace(/[\/\s]/g, '-'));
         }
-        // add anchor
+        //// 見出しにリンク用のアンカーを追加
         if (currentHeading.tagName === 'H2' || currentHeading.tagName === 'H3') {
           const anchor = document.createElement('a');
           currentHeading.appendChild(anchor);
@@ -58,23 +57,24 @@ export default function internalLink() {
           anchor.classList.add('link-icon');
         }
       }
-      // make table of content
+      //// 目次のHTMLを作り、DOM生成
       tocContainer.innerHTML = '<ul>' + outline.map(item => createItemOfToc(item)).join('').replace(/<li><ul><\/ul><\/li>/g, '').replace(/<\/li><li><ul><\/ul>/g, '<ul>') + '</ul>';
     }
+    //// 目次管理用の配列作成
     $('a', tocContainer).each((index, item) => {
       itemsOfToc.push({
-        elm: item,
-        target: document.getElementById(item.dataset.target),
-        rect: { y: undefined, height: undefined }
+        elm: item, // 目次の項目
+        target: document.getElementById(item.dataset.target), // 目次の対象の見出し
+        rect: { y: undefined, height: undefined } // 対象の矩形情報（後で生成）
       })
     });
   }
-  // 目次の各項目の生成（再帰処理）
+  // 目次の各項目の生成（再帰処理をしてる）
   function createItemOfToc(item) {
     switch (true) {
-      case item.nodeName !== undefined:
+      case item.nodeName !== undefined: // タグの場合、<LI>を追加
         return '<li><a href="#' + item.id + '" data-target="' + item.id + '">' + item.textContent + '</a></li>';
-      case item.length !== undefined:
+      case item.length !== undefined: // 配列の場合、<UL>を追加し、中身を再帰処理で生成
         return '<li><ul>' + item.map(subitem => createItemOfToc(subitem)).join('') + '</ul></li>';
     }
   }
@@ -82,10 +82,10 @@ export default function internalLink() {
   // セクションの矩形サイズを更新
   function updateSectionSize() {
     const container = document.querySelector('#MainContentView > .md-content');
-    for (let i = 0; i < itemsOfToc.length; i++) {
+    for (let i = 0; i < itemsOfToc.length; i++) { // 目次管理用配列を回す
       const item = itemsOfToc[i];
       item.rect.y = item.target.offsetTop;
-      item.rect.height = (i < itemsOfToc.length - 1 ? itemsOfToc[i + 1].target.offsetTop : container.offsetTop + container.clientHeight) - item.rect.y;
+      item.rect.height = (i < itemsOfToc.length - 1 ? itemsOfToc[i + 1].target.offsetTop : container.offsetTop + container.clientHeight) - item.rect.y; // 最後の項目でなければ、次の項目のY座標、そうであれば、.md-contentの高さからセクションのサイズを計測
     }
     updateHighlightingOfToc();
   }
@@ -93,10 +93,10 @@ export default function internalLink() {
   // 目次のハイライトを更新
   function updateHighlightingOfToc() {
     const screenTop = window.scrollY;
-    for (let i = 0; i < itemsOfToc.length; i++) {
+    for (let i = 0; i < itemsOfToc.length; i++) { // 目次管理用配列を回す
       const item = itemsOfToc[i];
-      const rect = intersect({y: screenTop, height: window.innerHeight}, item.rect);
-      if (rect.height > 0) {
+      const rect = intersect({y: screenTop, height: window.innerHeight}, item.rect); // セクションの矩形と、現在表示中の矩形を重ね合わせる
+      if (rect.height > 0) { // 重なり合う領域があればハイライト
         item.elm.classList.add('current');
       } else {
         item.elm.classList.remove('current');
@@ -104,6 +104,7 @@ export default function internalLink() {
     }
   }
 
+  // 矩形の重ね合わせを計算
   function intersect(rect1, rect2) {
     const
       sy = Math.max(rect1.y, rect2.y),
