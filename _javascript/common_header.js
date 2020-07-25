@@ -1330,7 +1330,7 @@
       </div>
       <nav class="DDBJ_services">
         <h1 class="DDBJ_title">サービス</h1>
-        <div class="spcollapsemenubutton">Services</div>
+        <div class="DDBJ_spcollapsemenubutton">Services</div>
         <div class="DDBJ_rows DDBJ_spcollapsemenu">
           ${HEADER_SERVICES_ROWS.map(row => {
             return `<div class="DDBJ_row">${row.map(group => {
@@ -1368,9 +1368,9 @@
   script.insertAdjacentElement('afterend', header);
 
   // attach event
-  const collapseButtons = document.querySelectorAll('.spcollapsemenubutton');
+  const collapseButtons = document.querySelectorAll('.DDBJ_spcollapsemenubutton');
   for (const button of collapseButtons) {
-    button.addEventListener('touchend', toggleServicesMenu);
+    button.addEventListener('click', toggleServicesMenu);
   }
   
   function toggleServicesMenu() {
