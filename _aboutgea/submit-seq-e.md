@@ -99,7 +99,7 @@ If there is no reply from submitters after three months of initial contact, subm
 </div>
 
 {::nomarkdown}
-{% include image.html url="books/seq-sub1.jpg" caption="Create a new submission" class="w600" %}
+{% include image.html url="books/seq-sub1.jpg" caption="Create a new submission" class="w450" %}
 {:/}
 
 List of submission status is as follows. The GEA team reviews submission whose status is in "submission\_validated" or "data\_error".
@@ -132,8 +132,7 @@ Upload files by executing,
   - \<Your Files\> Files to be transferred. Ex: file1 file2 (file1 and file2), file\* (all files whose filenames start with "file")
   - \<D-way Login ID\> D-way Login ID (ex. test07)
   - \<GEA Submission ID\> GEA Submission ID (ex. ESUB000350)
-  - command example: scp Arabidopsis\_control\_rep\_1.CEL
-    test07@ftp-private.ddbj.nig.ac.jp:\~/gea/ESUB000350
+  - command example: scp Arabidopsis\_control\_rep\_1.CEL test07@ftp-private.ddbj.nig.ac.jp:\~/gea/ESUB000350
 
 Enter the passphrase set for the keys.
 
@@ -164,8 +163,7 @@ Set items as below and click the \[Advanced...\] button.
 
 <div class="attention red">
 
-Be sure to select the "binary mode" for file transfer. Do NOT select the
-"text mode".
+Be sure to select the "binary mode" for file transfer. Do NOT select the "text mode".
 
 </div>
 
@@ -175,21 +173,21 @@ Be sure to select the "binary mode" for file transfer. Do NOT select the
 - User name: (D-way Login ID)
 - Password: (Leave empty)
 
-![]({{ site.baseurl }}/assets/images/books/winscp1_400.jpg "privatekey1")
+[![]({{ site.baseurl }}/assets/images/books/winscp1_400.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/winscp1_400.jpg "privatekey1")
 
 Please select the private key, which you created beforehand, from "Private key file" in "Authentication".
 
-![]({{ site.baseurl }}/assets/images/books/winscp2_400.jpg "privatekey2")
+[![]({{ site.baseurl }}/assets/images/books/winscp2_400.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/winscp2_400.jpg "privatekey2")
 
 Last, click the \[Login\] button in the lower center
 
-![]({{ site.baseurl }}/assets/images/books/winscp3_400.jpg "login to winSCP")
+[![]({{ site.baseurl }}/assets/images/books/winscp3_400.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/winscp3_400.jpg "login to winSCP")
 
 At the first time of login, a warning message is displayed; however, please select "Yes" (this message will not be displayed again). Next, enter the passphrase set for the keys.
 
 After login successfully, a folder of your PC is displayed at left, and your private directory in the server is displayed at right. Select the files at the left window and drag & drop them into the right window to transfer the files to the server.
 
-![]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg "transfer files")
+[![]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg){:.w500}]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg "transfer files")
 
 You can delete the transferred files by selecting the files and clicking the \[Delete\] button.
 
@@ -210,11 +208,11 @@ Download and install [the Cyberduck (http://cyberduck.ch)](http://cyberduck.ch).
 
 Run the Cyberduck and click the \[Open Connection\] button in the Cyberduck menu.
 
-![]({{ site.baseurl }}/assets/images/books/Cyberduck_1.jpg "open connection")
+[![]({{ site.baseurl }}/assets/images/books/Cyberduck_1.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/Cyberduck_1.jpg "open connection")
 
 Select "SFTP (SSH File Transfer Protocol)" .
 
-![]({{ site.baseurl }}/assets/images/books/Cyberduck_2.jpg "SFTP in the WinSCP")
+[![]({{ site.baseurl }}/assets/images/books/Cyberduck_2.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/Cyberduck_2.jpg "SFTP in the WinSCP")
 
 Set as follows and tick off "Use Public Key Authentication" in the More Options.
 
@@ -224,17 +222,17 @@ Set as follows and tick off "Use Public Key Authentication" in the More Options.
 - Password: (Leave empty)
 - Add to Keychain: (Check)
 
-![]({{ site.baseurl }}/assets/images/books/Cyberduck_3.jpg "key authentication")
+[![]({{ site.baseurl }}/assets/images/books/Cyberduck_3.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/Cyberduck_3.jpg "key authentication")
 
 By default, the private key is created in "User’s home folder \> .ssh folder (invisible in Finder) \> id\_rsa".
 
-![]({{ site.baseurl }}/assets/images/books/Cyberduck_4.jpg "private_key")
+[![]({{ site.baseurl }}/assets/images/books/Cyberduck_4.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/Cyberduck_4.jpg "private_key")
 
 At the first time of login, a warning message is displayed; however, please select "Always" (this message will not be displayed again).
 
 After login successfully, your private directory in the server is displayed in the window. Select the files in your PC and drag & drop them into the window to transfer the files to the server.
 
-![]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg "transfer")
+[![]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg){:.w500}]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg "transfer")
 
 [« Close](javascript:void(0)){: .close-content-btn}
 </div>
@@ -258,7 +256,7 @@ You can delete an un-submitted GEA submission.
 </div>
 
 {::nomarkdown}
-{% include image.html url="books/array-sub2.jpg" caption="Enter submission information" class="w600" %}
+{% include image.html url="books/array-sub2.jpg" caption="Enter submission information" class="w550" %}
 {:/}
 
 ### DRA
@@ -268,7 +266,7 @@ Select a DRA submission registered in your account. If DRA submission is not reg
 To use DRA submissions obtained in the other account, please [contact GEA team](/contact-e.html).
 
 {::nomarkdown}
-{% include image.html url="books/seq-dra.jpg" caption="Select a DRA submission for the GEA experiment" class="w600" %}
+{% include image.html url="books/seq-dra.jpg" caption="Select a DRA submission for the GEA experiment" class="w550" %}
 {:/}
 
 ### BioProject
@@ -280,7 +278,7 @@ Select a BioProject used in the DRA submission when the GEA experiment and DRA s
 To use a project obtained in the other account, please [contact GEA team](/contact-e.html).
 
 {::nomarkdown}
-{% include image.html url="books/seq-bp.jpg" caption="Select a BioProject for the GEA experiment" class="w600" %}
+{% include image.html url="books/seq-bp.jpg" caption="Select a BioProject for the GEA experiment" class="w550" %}
 {:/}
 
 ### IDF
@@ -300,7 +298,7 @@ Enter information for [IDF (Investigation Description Format)](/gea/metadata-e.h
 ### SDRF
 
 {::nomarkdown}
-{% include image.html url="books/seq-sdrf-down.jpg" caption="Download a SDRF template file" class="w600" %}
+{% include image.html url="books/seq-sdrf-down.jpg" caption="Download a SDRF template file" class="w400" %}
 {:/}
 
 Enter information for [SDRF (Sample and Data Relationship Format)](/gea/metadata-e.html#sdrf).
@@ -336,14 +334,13 @@ Fields you need to add.
     - KU-PI499262
 
 {::nomarkdown}
-{% include image.html url="books/seq-sdrf-template.jpg" caption="SDRF template, yellow-highlighted fields need to be filled by
-submitter" class="w600" %}
+{% include image.html url="books/seq-sdrf-template.jpg" caption="SDRF template, yellow-highlighted fields need to be filled by submitter" class="w600" %}
 {:/}
 
 Select the entered SDRF file and continue.
 
 {::nomarkdown}
-{% include image.html url="books/seq-sdrf-up.jpg" caption="Select entered SDRF file" class="w600" %}
+{% include image.html url="books/seq-sdrf-up.jpg" caption="Select entered SDRF file" class="w450" %}
 {:/}
 
 ### Overview and submit
@@ -353,7 +350,7 @@ You can download the IDF and SDRF files and check them. When correction is neces
 Submit the IDF and SDRF metadata by clicking the "Submit" button.
 
 {::nomarkdown}
-{% include image.html url="books/seq-submit.jpg" caption="Check the IDF and SDRF and submit" class="w600" %}
+{% include image.html url="books/seq-submit.jpg" caption="Check the IDF and SDRF and submit" class="w450" %}
 {:/}
 
 ### Validation
@@ -363,7 +360,7 @@ When data files described in the IDF and SDRF are not found in the submission di
 The validator checks submitted IDF and SDRF files according to the [validation rules.](/gea/validation-e.html) and gives warning and error messages. Errors need to be resolved for submission.
 
 {::nomarkdown}
-{% include image.html url="books/seq-validation.jpg" caption="Warning and error messages" class="w600" %}
+{% include image.html url="books/seq-validation.jpg" caption="Warning and error messages" class="w500" %}
 {:/}
 
 ### Accession numbers
@@ -371,7 +368,7 @@ The validator checks submitted IDF and SDRF files according to the [validation r
 [GEA accession numbers](/gea/overview-e.html#acc) are issued to the completed GEA experiment. You can allow reviewers access to private records by [communicating a reviewer accesss token](/gea/reviewer-access-e.html).
 
 {::nomarkdown}
-{% include image.html url="books/seq-accession.jpg" caption="GEA accession numbers" class="w600" %}
+{% include image.html url="books/seq-accession.jpg" caption="GEA accession numbers" class="w500" %}
 {:/}
 
 ## Update submission
@@ -456,16 +453,16 @@ B636E0063E29709B6082F324C76D0911 file2
 Install and run the [Fsum Frontend (sourceforge.net/projects/fsumfe/)](//sourceforge.net/projects/fsumfe/).  
 At first, tick off "md5".
 
-![]({{ site.baseurl }}/assets/images/books/Fsum1.jpg "Generate md5 in the tool 1")
+[![]({{ site.baseurl }}/assets/images/books/Fsum1.jpg){:.w500}]({{ site.baseurl }}/assets/images/books/Fsum1.jpg "Generate md5 in the tool 1")
 
 After clicking the \[+\] button, open the sequence data files that you need. You can select multiple files at the same time.
 
-![]({{ site.baseurl }}/assets/images/books/Fsum2.jpg "Generate md5 in the tool 2")
+[![]({{ site.baseurl }}/assets/images/books/Fsum2.jpg){:.w500}]({{ site.baseurl }}/assets/images/books/Fsum2.jpg "Generate md5 in the tool 2")
 
 Click the \[Calculate hashes\] button. The MD5 numbers of the files are displayed.  
 By clicking the \[Export\] button, you can obtain the list of the MD5 numbers as a html, a csv, or a xml file.
 
-![]({{ site.baseurl }}/assets/images/books/Fsum3.jpg "Generate md5 in the tool 3")
+[![]({{ site.baseurl }}/assets/images/books/Fsum3.jpg){:.w500}]({{ site.baseurl }}/assets/images/books/Fsum3.jpg "Generate md5 in the tool 3")
 
 [« Close](javascript:void(0)){: .close-content-btn}
 </div>
