@@ -13,7 +13,7 @@ export default function internalLink() {
   if (hash) {
     const decodedHash = decodeURIComponent(hash);
     const target = itemsOfToc.filter(item => item.target.id === decodedHash);
-    if (target) {
+    if (target.length > 0) {
       $(target[0].elm).trigger('click');
     }
   }
