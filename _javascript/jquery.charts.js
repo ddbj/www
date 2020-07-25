@@ -45,181 +45,6 @@ var average = function(arr, fn) {
 
 // Google sheet ID 対応表
 
-// ウェブサービスアクセス
-if ( filepath=="/stats/web-access" ){
-
-  $(function(){
-
-    var now = new Date();
-    var this_year = now.getFullYear();
-    var span = 4; // 直近10年を表示
-
-      // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-      $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['web-access'] + "/public/values?alt=json", function(data) {
-
-        var web_access = data.feed.entry;
-        var unique_users_per_year = {};
-        var average_unique_users_per_year = {};
-        var getentry_per_year_h = {};
-        var arsa_per_year_h = {};
-        var drasearch_per_year_h = {};
-        var txsearch_per_year_h = {};
-        var blast_per_year_h = {};
-        var clustalw_per_year_h = {};
-        var homepage_per_year_h = {};
-        var all_per_year_h = {};
-        var ave_ftp_download_day_h = {};
-
-        var average_getentry_per_year_h = {};
-        var average_arsa_per_year_h = {};
-        var average_drasearch_per_year_h = {};
-        var average_txsearch_per_year_h = {};
-        var average_blast_per_year_h = {};
-        var average_clustalw_per_year_h = {};
-        var average_homepage_per_year_h = {};
-        var average_all_per_year_h = {};
-
-        for(var y = this_year-span; y < this_year; y++) {
-          
-          getentry_per_year_h[y] = [];
-          arsa_per_year_h[y] = [];
-          drasearch_per_year_h[y] = [];
-          txsearch_per_year_h[y] = [];
-          blast_per_year_h[y] = [];
-          clustalw_per_year_h[y] = [];
-          homepage_per_year_h[y] = [];
-          all_per_year_h[y] = [];
-          //ave_ftp_download_day_h[y] = [];
-        
-          for(var i = 0; i < web_access.length; i++) {
-           
-            var year_month = web_access[i].gsx$yearmonth.$t;
-            var getentry_per_month = parseInt(web_access[i].gsx$getentry.$t, 10);
-            var arsa_per_month = parseInt(web_access[i].gsx$arsa.$t, 10);
-            var drasearch_per_month = parseInt(web_access[i].gsx$drasearch.$t, 10);
-            var txsearch_per_month = parseInt(web_access[i].gsx$txsearch.$t, 10);
-            var blast_per_month = parseInt(web_access[i].gsx$blast.$t, 10);
-            var clustalw_per_month = parseInt(web_access[i].gsx$clustalw.$t, 10);
-            var homepage_per_month = parseInt(web_access[i].gsx$homepage.$t, 10);
-            var all_per_month = parseInt(web_access[i].gsx$all.$t, 10);
-            //var ave_ftp_download_day = parseFloat(web_access[i].gsx$averageftpdownloadtbday.$t, 10);
-
-            // 年毎に配列に格納
-            if( parseInt(year_month.substring(0, 4), 10) == y ){
-              
-              //ログ欠落期間の 2018-02, 03, 04 を除外
-              if( year_month == "2018-02" || year_month == "2018-03" || year_month == "2018-04" ){
-
-              } else {
-                getentry_per_year_h[y].push(getentry_per_month);
-                arsa_per_year_h[y].push(arsa_per_month);
-                drasearch_per_year_h[y].push(drasearch_per_month);
-                txsearch_per_year_h[y].push(txsearch_per_month);
-                blast_per_year_h[y].push(blast_per_month);
-                clustalw_per_year_h[y].push(clustalw_per_month);
-                homepage_per_year_h[y].push(homepage_per_month);
-                all_per_year_h[y].push(all_per_month);
-                //ave_ftp_download_day_h[y].push(ave_ftp_download_day);
-              }              
-            }
-            
-            } // for(var i = 0; i < web_access.length; i++) {
-                        
-                average_getentry_per_year_h[y] = Math.floor(average(getentry_per_year_h[y]));
-                average_arsa_per_year_h[y] = Math.floor(average(arsa_per_year_h[y]));
-                average_drasearch_per_year_h[y] = Math.floor(average(drasearch_per_year_h[y]));
-                average_txsearch_per_year_h[y] = Math.floor(average(txsearch_per_year_h[y]));
-                average_blast_per_year_h[y] = Math.floor(average(blast_per_year_h[y]));
-                average_clustalw_per_year_h[y] = Math.floor(average(clustalw_per_year_h[y]));
-                average_homepage_per_year_h[y] = Math.floor(average(homepage_per_year_h[y]));
-                average_all_per_year_h[y] = Math.floor(average(all_per_year_h[y]));
-                //average_ave_ftp_download_day_h[y] = Math.floor(average(ave_ftp_download_day_h[y]));
-
-          } // for(var y = 2004; y < this_year; y++) {
-
-          // グラフ描画          
-          google.charts.load('current', {'packages':['corechart', 'table']});
-
-          // html 要素組み立て
-          var chart_year = [];
-          var html_tables = "";
-          html_tables += '<h2 id="total">By year (' + (this_year-span) + '-' + (this_year-1) + ')</h2>' + '<div id="chart_total"></div><div id="table_total"></div>';
-          html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=1599631737">Source data</a></p>';
-          
-          $("#stat_area").append(html_tables);
-
-          for(var y = this_year-span; y < this_year; y++) {
-            chart_year.push([y.toString(), average_getentry_per_year_h[y], average_arsa_per_year_h[y], average_drasearch_per_year_h[y], average_txsearch_per_year_h[y], average_blast_per_year_h[y], average_clustalw_per_year_h[y], average_homepage_per_year_h[y], average_all_per_year_h[y]]);
-          }
-          
-          google.charts.setOnLoadCallback(drawWebAccess);
-          google.charts.setOnLoadCallback(drawWebAccessTable);
-      
-      function drawWebAccess(){
-
-          var title = 'Average unique users/month';
-
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Year');
-          data.addColumn('number', 'getentry');
-          data.addColumn('number', 'ARSA');
-          data.addColumn('number', 'DRA Search');
-          data.addColumn('number', 'TXSearch');
-          data.addColumn('number', 'BLAST');
-          data.addColumn('number', 'ClustalW');
-          data.addColumn('number', 'Home pages');
-          data.addColumn('number', 'All');
-
-          data.addRows(chart_year);
-
-          var options = {
-            title: 'Average unique users/month', 
-            width: 700,      
-            height: 500,
-            titleTextStyle:{fontSize:15},
-            legend: {position: 'right', textStyle: {fontSize: 12}},
-            hAxis:{
-              textStyle: {fontSize:12}
-            },
-            vAxis:{
-                textStyle: {fontSize:12}
-            },
-            chartArea:{left:100, height:'80%'},
-            titlePosition:'out'
-          };
-          
-          var webaccess = new google.visualization.LineChart(document.getElementById('chart_total'));
-          webaccess.draw(data, options);
-
-      } // function drawPageAccess()
-
-          function drawWebAccessTable(){
-            
-              // Create the data table.
-              var data = new google.visualization.DataTable();
-              data.addColumn('string', 'Year');
-              data.addColumn('number', 'getentry');
-              data.addColumn('number', 'ARSA');
-              data.addColumn('number', 'DRA Search');
-              data.addColumn('number', 'TXSearch');
-              data.addColumn('number', 'BLAST');
-              data.addColumn('number', 'ClustalW');
-              data.addColumn('number', 'Home pages');
-              data.addColumn('number', 'All');              
-              data.addRows(chart_year);
-
-              var webaccesst = new google.visualization.Table(document.getElementById('table_total'));
-              webaccesst.draw(data);
-
-          } // function drawSubmissionNumberTable
-
-      })  // $.getJSON 
-
-    })  // function
-
-} // ページアクセス
-
 
 // WGS リリースデータ (DDBJ 登録分)
 if ( filepath=="/stats/wgs-release"){
@@ -461,16 +286,6 @@ function roundFloat( number, n ) {
   return Math.round( number * _pow ) / _pow;
 }
 
-// JGA への登録数、年単位、前年まで
-if ( filepath=="/stats/jga-submission"){
-
-  $(function(){
-
-
-
-    })  // function
-
-} // JGA への登録数
 
 // ページアクセス
 if ( filepath=="/stats/page-access" ){
@@ -493,7 +308,7 @@ if ( filepath=="/stats/page-access" ){
           unique_users_per_year[y] = [];
           
           for(var i = 0; i < page_access.length; i++) {
-           
+          
             var year_month = page_access[i].gsx$yearmonth.$t;
             var uniqueusersmonth = parseInt(page_access[i].gsx$uniqueusersmonth.$t, 10);
 
@@ -596,6 +411,7 @@ $(function(){
   makeDRASubmission();
   makeGEASubmission();
   makeJGASubmission();
+  makeWebAccess();
 });
 
 // DDBJ リリース統計
@@ -2133,8 +1949,6 @@ function makeJGASubmission() {
 
     function drawTotalJGASubmission(){
 
-      var title = 'Submission';
-
       // Create the data table.
       var data = new google.visualization.DataTable();
       data.addColumn('string', 'Year');
@@ -2188,10 +2002,178 @@ function makeJGASubmission() {
       jgasubyeartable.draw(data);
 
     } // function drawTotalJGASubmissionTable()
-      
+
+    updateSectionLocation();
+
   })  // $.getJSON 
 
 } // makeJGASubmission
+
+// ウェブサービスアクセス
+function makeWebAccess() {
+  var now = new Date();
+  var this_year = now.getFullYear();
+  var span = 4; // 直近10年を表示
+
+  // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
+  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['web-access'] + "/public/values?alt=json", function(data) {
+
+    var web_access = data.feed.entry;
+    //var unique_users_per_year = {};
+    //var average_unique_users_per_year = {};
+    var getentry_per_year_h = {};
+    var arsa_per_year_h = {};
+    var drasearch_per_year_h = {};
+    var txsearch_per_year_h = {};
+    var blast_per_year_h = {};
+    var clustalw_per_year_h = {};
+    var homepage_per_year_h = {};
+    var all_per_year_h = {};
+
+    var average_getentry_per_year_h = {};
+    var average_arsa_per_year_h = {};
+    var average_drasearch_per_year_h = {};
+    var average_txsearch_per_year_h = {};
+    var average_blast_per_year_h = {};
+    var average_clustalw_per_year_h = {};
+    var average_homepage_per_year_h = {};
+    var average_all_per_year_h = {};
+
+    for(var y = this_year-span; y < this_year; y++) {
+      
+      getentry_per_year_h[y] = [];
+      arsa_per_year_h[y] = [];
+      drasearch_per_year_h[y] = [];
+      txsearch_per_year_h[y] = [];
+      blast_per_year_h[y] = [];
+      clustalw_per_year_h[y] = [];
+      homepage_per_year_h[y] = [];
+      all_per_year_h[y] = [];
+    
+      for(var i = 0; i < web_access.length; i++) {
+      
+        var year_month = web_access[i].gsx$yearmonth.$t;
+        var getentry_per_month = parseInt(web_access[i].gsx$getentry.$t, 10);
+        var arsa_per_month = parseInt(web_access[i].gsx$arsa.$t, 10);
+        var drasearch_per_month = parseInt(web_access[i].gsx$drasearch.$t, 10);
+        var txsearch_per_month = parseInt(web_access[i].gsx$txsearch.$t, 10);
+        var blast_per_month = parseInt(web_access[i].gsx$blast.$t, 10);
+        var clustalw_per_month = parseInt(web_access[i].gsx$clustalw.$t, 10);
+        var homepage_per_month = parseInt(web_access[i].gsx$homepage.$t, 10);
+        var all_per_month = parseInt(web_access[i].gsx$all.$t, 10);
+        //var ave_ftp_download_day = parseFloat(web_access[i].gsx$averageftpdownloadtbday.$t, 10);
+
+        // 年毎に配列に格納
+        if ( parseInt(year_month.substring(0, 4), 10) == y ) {
+          
+          //ログ欠落期間の 2018-02, 03, 04 を除外
+          if ( year_month == "2018-02" || year_month == "2018-03" || year_month == "2018-04" ) {
+
+          } else {
+            getentry_per_year_h[y].push(getentry_per_month);
+            arsa_per_year_h[y].push(arsa_per_month);
+            drasearch_per_year_h[y].push(drasearch_per_month);
+            txsearch_per_year_h[y].push(txsearch_per_month);
+            blast_per_year_h[y].push(blast_per_month);
+            clustalw_per_year_h[y].push(clustalw_per_month);
+            homepage_per_year_h[y].push(homepage_per_month);
+            all_per_year_h[y].push(all_per_month);
+          }              
+        }
+        
+      } // for(var i = 0; i < web_access.length; i++) {
+                    
+      average_getentry_per_year_h[y] = Math.floor(average(getentry_per_year_h[y]));
+      average_arsa_per_year_h[y] = Math.floor(average(arsa_per_year_h[y]));
+      average_drasearch_per_year_h[y] = Math.floor(average(drasearch_per_year_h[y]));
+      average_txsearch_per_year_h[y] = Math.floor(average(txsearch_per_year_h[y]));
+      average_blast_per_year_h[y] = Math.floor(average(blast_per_year_h[y]));
+      average_clustalw_per_year_h[y] = Math.floor(average(clustalw_per_year_h[y]));
+      average_homepage_per_year_h[y] = Math.floor(average(homepage_per_year_h[y]));
+      average_all_per_year_h[y] = Math.floor(average(all_per_year_h[y]));
+
+    } // for(var y = 2004; y < this_year; y++) {
+
+    // グラフ描画          
+    google.charts.load('current', {'packages':['corechart', 'table']});
+
+    // html 要素組み立て
+    var chart_year = [];
+    var html_tables = "";
+    html_tables += '<h3 id="total">By year (' + (this_year-span) + '-' + (this_year-1) + ')</h3>' + '<div id="web-access_chart_total"></div><div id="web-access_table_total"></div>';
+    html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=1599631737">Source data</a></p>';
+    
+    $("#web-access_stat_area").append(html_tables);
+
+    for (var y2 = this_year-span; y2 < this_year; y2++) {
+      chart_year.push([y2.toString(), average_getentry_per_year_h[y2], average_arsa_per_year_h[y2], average_drasearch_per_year_h[y2], average_txsearch_per_year_h[y2], average_blast_per_year_h[y2], average_clustalw_per_year_h[y2], average_homepage_per_year_h[y2], average_all_per_year_h[y2]]);
+    }
+    
+    google.charts.setOnLoadCallback(drawWebAccess);
+    google.charts.setOnLoadCallback(drawWebAccessTable);
+
+    function drawWebAccess(){
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'getentry');
+      data.addColumn('number', 'ARSA');
+      data.addColumn('number', 'DRA Search');
+      data.addColumn('number', 'TXSearch');
+      data.addColumn('number', 'BLAST');
+      data.addColumn('number', 'ClustalW');
+      data.addColumn('number', 'Home pages');
+      data.addColumn('number', 'All');
+
+      data.addRows(chart_year);
+
+      var options = {
+        title: 'Average unique users/month', 
+        width: 700,      
+        height: 500,
+        titleTextStyle:{fontSize:15},
+        legend: {position: 'right', textStyle: {fontSize: 12}},
+        hAxis:{
+          textStyle: {fontSize:12}
+        },
+        vAxis:{
+            textStyle: {fontSize:12}
+        },
+        chartArea:{left:100, height:'80%'},
+        titlePosition:'out'
+      };
+      
+      var webaccess = new google.visualization.LineChart(document.getElementById('web-access_chart_total'));
+      webaccess.draw(data, options);
+
+    } // function drawPageAccess()
+
+    function drawWebAccessTable(){
+      
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'getentry');
+      data.addColumn('number', 'ARSA');
+      data.addColumn('number', 'DRA Search');
+      data.addColumn('number', 'TXSearch');
+      data.addColumn('number', 'BLAST');
+      data.addColumn('number', 'ClustalW');
+      data.addColumn('number', 'Home pages');
+      data.addColumn('number', 'All');              
+      data.addRows(chart_year);
+
+      var webaccesst = new google.visualization.Table(document.getElementById('web-access_table_total'));
+      webaccesst.draw(data);
+
+    } // function drawSubmissionNumberTable
+
+    updateSectionLocation();
+
+  })  // $.getJSON
+
+} // makeWebAccess
 
 function updateSectionLocation() {
   $(window).triggerHandler('resize');
