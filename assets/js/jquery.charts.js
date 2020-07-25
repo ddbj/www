@@ -461,113 +461,6 @@ function roundFloat( number, n ) {
   return Math.round( number * _pow ) / _pow;
 }
 
-// DRA への登録数、年単位、前年まで
-if ( filepath=="/stats/dra-submission"){
-
-  $(function(){
-
-    google.charts.load('current', {'packages':['corechart', 'table']});
-
-    var now = new Date();
-    var this_year = now.getFullYear();
-    var year_min = 0;
-    var year_max = 0;
-    var x = 0;
-    var span = 5; // 前年から5年間を表示
-    var chart_year_a = [];    
-    var html_tables = "";
-
-      // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-      $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['dra-submission'] + "/public/values?alt=json", function(data) {
-
-        var dra_submission = data.feed.entry;
-      
-        for(var i = 0; i < dra_submission.length; i++) {
-
-          var y = parseInt(dra_submission[i].gsx$year.$t.substring(0, 4), 10);
-
-          if( y >= (this_year-1-span) ){
-            chart_year_a.push([dra_submission[i].gsx$year.$t, parseInt(dra_submission[i].gsx$submissions.$t, 10), roundFloat(parseInt(dra_submission[i].gsx$bytes.$t, 10)/10**12, 2)]);
-            if (x==0) year_min = y;
-            year_max = y;
-            x++;
-          } // for(var i = 0; i < dra_submission.length; i++)
-        
-        } // for(var y = year_max-span; y <= year_max; y++)
-
-        html_tables += '<h2 id="total">By year (' + year_min + '-' + year_max + ')</h2>' + '<div id="chart_total"></div><div id="table_total"></div>';
-        html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=781521653">Source data</a></p>';
-
-          /* グラフ作成 */
-          $("#stat_area").append(html_tables);
-
-          google.charts.setOnLoadCallback(drawTotalDRASubmission);
-          google.charts.setOnLoadCallback(drawTotalDRASubmissionTable);
-
-          function drawTotalDRASubmission(){
-
-              var title = 'Submission';
-
-              // Create the data table.
-              var data = new google.visualization.DataTable();
-              data.addColumn('string', 'Year');
-              data.addColumn('number', 'Submissions');
-              data.addColumn('number', 'SRA filesize (TB)');
-
-              data.addRows(chart_year_a);
-
-              var options = {
-                title: 'Submissions to DRA (By year)', 
-                width: 600,      
-                height:400,
-                seriesType: 'bars',
-                legend:{position:'top', textStyle: {fontSize: 12}},         
-                series: {
-                  0:{color:'#00CCFF', targetAxisIndex: 0},
-                  1:{color:'#953735', targetAxisIndex: 1}
-                },
-                hAxis:{
-                  title: 'Year',
-                  textStyle: {fontSize:11}
-                },
-                vAxes: {
-                  0: {
-                    title: 'Submissions',
-                    textStyle: {fontSize:11}
-                  },
-                  1: {   
-                    title: 'SRA filesize (TB)',
-                    color:'#ff0000'
-                  }
-                },
-                titlePosition:'out'
-              };
-              
-              var drasubyear = new google.visualization.ColumnChart(document.getElementById('chart_total'));
-              drasubyear.draw(data, options);
-          
-          } // function drawTotalDRASubmission()
-
-          function drawTotalDRASubmissionTable(){
-            
-              // Create the data table.
-              var data = new google.visualization.DataTable();
-              data.addColumn('string', 'Year');
-              data.addColumn('number', 'Submissions');
-              data.addColumn('number', 'SRA filesize (TB)');
-              data.addRows(chart_year_a);
-
-              var drasubyeartable = new google.visualization.Table(document.getElementById('table_total'));
-              drasubyeartable.draw(data);
-
-          } // function drawSubmissionNumberTable
-          
-      })  // $.getJSON 
-
-    })  // function
-
-} // DRA への登録数
-
 // JGA への登録数、年単位、前年まで
 if ( filepath=="/stats/jga-submission"){
 
@@ -900,7 +793,8 @@ $(function(){
   makeDRARelease();
   makeGEARelease();
   makeJGARelease();
-  makeSubmission();
+  makeDDBJSubmission();
+  makeDRASubmission();
 });
 
 // DDBJ リリース統計
@@ -2091,7 +1985,7 @@ function makeJGARelease() {
 } // makeJGARelease
 
 // DDBJ への登録ルート毎の submission
-function makeSubmission() {
+function makeDDBJSubmission() {
 
   google.charts.load('current', {'packages':['corechart', 'table']});
 
@@ -2134,7 +2028,7 @@ function makeSubmission() {
     html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=881663501">Source data</a></p>';
 
     /* グラフ作成 */
-    $("#submission_stat_area").append(html_tables);
+    $("#ddbj-submission_stat_area").append(html_tables);
 
     google.charts.setOnLoadCallback(drawDDBJSub);
     google.charts.setOnLoadCallback(drawDDBJSubTable);
@@ -2190,7 +2084,110 @@ function makeSubmission() {
 
   }) // $.getJSON
 
-} // makeSubmission
+} // makeDDBJSubmission
+
+function makeDRASubmission() {
+  google.charts.load('current', {'packages':['corechart', 'table']});
+
+  var now = new Date();
+  var this_year = now.getFullYear();
+  var year_min = 0;
+  var year_max = 0;
+  var x = 0;
+  var span = 5; // 前年から5年間を表示
+  var chart_year_a = [];    
+  var html_tables = "";
+
+  // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
+  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['dra-submission'] + "/public/values?alt=json", function(data) {
+
+    var dra_submission = data.feed.entry;
+  
+    for(var i = 0; i < dra_submission.length; i++) {
+
+      var y = parseInt(dra_submission[i].gsx$year.$t.substring(0, 4), 10);
+
+      if( y >= (this_year-1-span) ){
+        chart_year_a.push([dra_submission[i].gsx$year.$t, parseInt(dra_submission[i].gsx$submissions.$t, 10), roundFloat(parseInt(dra_submission[i].gsx$bytes.$t, 10)/10**12, 2)]);
+        if (x==0) year_min = y;
+        year_max = y;
+        x++;
+      } // for(var i = 0; i < dra_submission.length; i++)
+    
+    } // for(var y = year_max-span; y <= year_max; y++)
+
+    html_tables += '<h3 id="total">By year (' + year_min + '-' + year_max + ')</h3>' + '<div id="dra-submission_chart_total"></div><div id="dra-submission_table_total"></div>';
+    html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=781521653">Source data</a></p>';
+
+    /* グラフ作成 */
+    $("#dra-submission_stat_area").append(html_tables);
+
+    google.charts.setOnLoadCallback(drawTotalDRASubmission);
+    google.charts.setOnLoadCallback(drawTotalDRASubmissionTable);
+
+    function drawTotalDRASubmission(){
+
+      var title = 'Submission';
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'Submissions');
+      data.addColumn('number', 'SRA filesize (TB)');
+
+      data.addRows(chart_year_a);
+
+      var options = {
+        title: 'Submissions to DRA (By year)', 
+        width: 600,      
+        height:400,
+        seriesType: 'bars',
+        legend:{position:'top', textStyle: {fontSize: 12}},         
+        series: {
+          0:{color:'#00CCFF', targetAxisIndex: 0},
+          1:{color:'#953735', targetAxisIndex: 1}
+        },
+        hAxis:{
+          title: 'Year',
+          textStyle: {fontSize:11}
+        },
+        vAxes: {
+          0: {
+            title: 'Submissions',
+            textStyle: {fontSize:11}
+          },
+          1: {   
+            title: 'SRA filesize (TB)',
+            color:'#ff0000'
+          }
+        },
+        titlePosition:'out'
+      };
+      
+      var drasubyear = new google.visualization.ColumnChart(document.getElementById('dra-submission_chart_total'));
+      drasubyear.draw(data, options);
+    
+    } // function drawTotalDRASubmission()
+
+    function drawTotalDRASubmissionTable(){
+      
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'Submissions');
+      data.addColumn('number', 'SRA filesize (TB)');
+      data.addRows(chart_year_a);
+
+      var drasubyeartable = new google.visualization.Table(document.getElementById('dra-submission_table_total'));
+      drasubyeartable.draw(data);
+
+    } // function drawSubmissionNumberTable
+
+    updateSectionLocation();
+      
+  })  // $.getJSON
+
+} // makeDRASubmission
 
 function updateSectionLocation() {
   $(window).triggerHandler('resize');

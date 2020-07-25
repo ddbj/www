@@ -143,7 +143,14 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 - MSS Submission: [Mass Submission System](/ddbj/mss.html) からの登録
 - Submission: 登録数
 
-<div id="submission_stat_area"></div>
+<div id="ddbj-submission_stat_area"></div>
+
+
+
+{: #dra-submission}
+## DRA への登録
+
+<div id="dra-submission_stat_area"></div>
 
 
 
