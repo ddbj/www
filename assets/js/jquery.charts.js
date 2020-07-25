@@ -1114,6 +1114,9 @@ function makeDDBJRelease() {
 
 // DRA リリース
 function makeDRARelease() {
+
+  if ( !document.getElementById('dra-release_stat_area') ) return;
+
   google.charts.load('current', {'packages':['corechart', 'table']});
 
   var now = new Date();
@@ -1154,7 +1157,7 @@ function makeDRARelease() {
       
     } // for(var i = 0; i < dra_release.length; i++)
 
-    html_tables += '<h3 id="total">Total filesize (' + year_min + '-' + year_max + ')</h3>' + '<div id="dra-release_chart_size"></div><div id="dra-release_table_size"></div><div id="dra-release_chart_bases_seqs"></div><div id="dra-release_table_bases_seqs"></div>';        
+    html_tables += '<h3 id="dra-release_total">Total filesize (' + year_min + '-' + year_max + ')</h3>' + '<div id="dra-release_chart_size"></div><div id="dra-release_table_size"></div><div id="dra-release_chart_bases_seqs"></div><div id="dra-release_table_bases_seqs"></div>';        
     html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=300088284">Source data</a></p>';
 
     /* グラフ作成 */
@@ -1280,14 +1283,17 @@ function makeDRARelease() {
 
 // GEA 公開数、年単位、前年まで
 function makeGEARelease() {
+
+  if ( !document.getElementById('gea-release_stat_area') ) return;
+
   google.charts.load('current', {'packages':['corechart', 'table']});
 
   var now = new Date();
   var this_year = now.getFullYear();
   var year_min = 0;
   var year_max = 0;
-  var x = 0;
   var span = 5; // 前年から5年間を表示
+  var x = 0;
   var chart_year_a = [];
   var html_tables = "";
 
@@ -1382,6 +1388,9 @@ function makeGEARelease() {
 
 // JGA リリース
 function makeJGARelease() {
+
+  if ( !document.getElementById('jga-release_stat_area') ) return;
+
   google.charts.load('current', {'packages':['corechart', 'table']});
 
   var now = new Date();
@@ -1497,6 +1506,8 @@ function makeJGARelease() {
 // DDBJ への登録ルート毎の submission
 function makeDDBJSubmission() {
 
+  if ( !document.getElementById('ddbj-submission_stat_area') ) return;
+
   google.charts.load('current', {'packages':['corechart', 'table']});
 
   var now = new Date();
@@ -1598,6 +1609,9 @@ function makeDDBJSubmission() {
 
 // DRA への登録数、年単位、前年まで
 function makeDRASubmission() {
+
+  if ( !document.getElementById('dra-submission_stat_area') ) return;
+
   google.charts.load('current', {'packages':['corechart', 'table']});
 
   var now = new Date();
@@ -1700,6 +1714,9 @@ function makeDRASubmission() {
 
 // GEA への登録数、年単位、前年まで
 function makeGEASubmission() {
+
+  if ( !document.getElementById('gea-submission_stat_area') ) return;
+
   google.charts.load('current', {'packages':['corechart', 'table']});
 
   var now = new Date();
@@ -1802,6 +1819,9 @@ function makeGEASubmission() {
 
 // JGA への登録数、年単位、前年まで
 function makeJGASubmission() {
+
+  if ( !document.getElementById('jga-submission_stat_area') ) return;
+
   google.charts.load('current', {'packages':['corechart', 'table']});
 
   var now = new Date();
@@ -1904,6 +1924,9 @@ function makeJGASubmission() {
 
 // ウェブサービスアクセス
 function makeWebAccess() {
+
+  if ( !document.getElementById('web-access_stat_area') ) return;
+
   var now = new Date();
   var this_year = now.getFullYear();
   var span = 4; // 直近10年を表示
@@ -1912,8 +1935,6 @@ function makeWebAccess() {
   $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['web-access'] + "/public/values?alt=json", function(data) {
 
     var web_access = data.feed.entry;
-    //var unique_users_per_year = {};
-    //var average_unique_users_per_year = {};
     var getentry_per_year_h = {};
     var arsa_per_year_h = {};
     var drasearch_per_year_h = {};
@@ -1993,7 +2014,7 @@ function makeWebAccess() {
     // html 要素組み立て
     var chart_year = [];
     var html_tables = "";
-    html_tables += '<h3 id="total">By year (' + (this_year-span) + '-' + (this_year-1) + ')</h3>' + '<div id="web-access_chart_total"></div><div id="web-access_table_total"></div>';
+    html_tables += '<h3 id="web-access_total">By year (' + (this_year-span) + '-' + (this_year-1) + ')</h3>' + '<div id="web-access_chart_total"></div><div id="web-access_table_total"></div>';
     html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=1599631737">Source data</a></p>';
     
     $("#web-access_stat_area").append(html_tables);
@@ -2070,6 +2091,9 @@ function makeWebAccess() {
 
 // ページアクセス
 function makePageAccess() {
+
+  if ( !document.getElementById('page-access_stat_area') ) return;
+
   var now = new Date();
   var this_year = now.getFullYear();
   var span = 10; // 直近10年を表示
