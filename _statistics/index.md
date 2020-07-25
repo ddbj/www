@@ -177,25 +177,7 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 
 
+{: #page-access}
+## ホームページアクセス
 
-
-
-
-<ul>
-{% for service in site.statistics%}
-  {% unless service.title == "statistics" %}
-    {% if service.service_link != null %}
-      <li>
-        <a href="{{ service.service_link }}">{{ service.title }}</a>
-        <a href="{{ service.pathname }}">help</a>
-        <br>
-      </li>
-    {% else %}
-      <li>
-        <a href="{{ service.pathname }}">{{ service.title }}</a>
-        <br>
-      </li>
-    {% endif %}
-  {% endunless %}
-{% endfor %}
-</ul>
+<div id="page-access_stat_area"></div>

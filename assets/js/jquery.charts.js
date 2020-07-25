@@ -287,114 +287,6 @@ function roundFloat( number, n ) {
 }
 
 
-// ページアクセス
-if ( filepath=="/stats/page-access" ){
-
-  $(function(){
-
-    var now = new Date();
-    var this_year = now.getFullYear();
-    var span = 10; // 直近10年を表示
-
-      // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-      $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['page-access'] + "/public/values?alt=json", function(data) {
-
-        var page_access = data.feed.entry;
-        var unique_users_per_year = {};
-        var average_unique_users_per_year = {};
-
-        for(var y = this_year-span; y < this_year; y++) {
-          
-          unique_users_per_year[y] = [];
-          
-          for(var i = 0; i < page_access.length; i++) {
-          
-            var year_month = page_access[i].gsx$yearmonth.$t;
-            var uniqueusersmonth = parseInt(page_access[i].gsx$uniqueusersmonth.$t, 10);
-
-            // 年毎に配列に格納
-            if( parseInt(year_month.substring(0, 4), 10) == y ){
-              
-              //ログ欠落期間の 2018-02, 03, 04 を除外
-              if( year_month == "2018-02" || year_month == "2018-03" || year_month == "2018-04" ){
-
-              } else {
-                unique_users_per_year[y].push(uniqueusersmonth);
-              }              
-            }
-            
-            } // for(var i = 0; i < page_access.length; i++) {
-                        
-            average_unique_users_per_year[y] = Math.floor(average(unique_users_per_year[y]));
-
-          } // for(var y = 2004; y < this_year; y++) {
-
-          // グラフ描画          
-          google.charts.load('current', {'packages':['corechart', 'table']});
-
-          // html 要素組み立て
-          var chart_year = [];
-          var html_tables = "";
-          html_tables += '<h2 id="total">By year (' + (this_year-span) + '-' + (this_year-1) + ')</h2>' + '<div id="chart_total"></div><div id="table_total"></div>';
-          html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0">Source data</a></p>';
-          $("#stat_area").append(html_tables);
-
-          for(var y = this_year-span; y < this_year; y++) {
-            chart_year.push([y.toString(), average_unique_users_per_year[y]]);
-          }
-          
-          google.charts.setOnLoadCallback(drawPageAccess);
-          google.charts.setOnLoadCallback(drawPageAccessTable);
-      
-      function drawPageAccess(){
-
-          var title = 'Average unique users/month';
-
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Year');
-          data.addColumn('number', 'Average unique users/month');
-
-          data.addRows(chart_year);
-
-          var options = {
-            title: 'Average unique users/month', 
-            width: 700,      
-            height:400,
-            legend:{position:'none'},         
-            hAxis:{
-              textStyle: {fontSize:11}
-            },
-            vAxis:{
-                textStyle: {fontSize:11}
-            },
-            titlePosition:'out'
-          };
-          
-          var drasuby = new google.visualization.LineChart(document.getElementById('chart_total'));
-          drasuby.draw(data, options);
-
-      } // function drawPageAccess()
-
-          function drawPageAccessTable(){
-            
-              // Create the data table.
-              var data = new google.visualization.DataTable();
-              data.addColumn('string', 'Year');
-              data.addColumn('number', 'Average unique users/month');
-              data.addRows(chart_year);
-
-              var drat = new google.visualization.Table(document.getElementById('table_total'));
-              drat.draw(data);
-
-          } // function drawSubmissionNumberTable
-
-      })  // $.getJSON 
-
-    })  // function
-
-} // ページアクセス
-
 
 
 
@@ -412,6 +304,7 @@ $(function(){
   makeGEASubmission();
   makeJGASubmission();
   makeWebAccess();
+  makePageAccess();
 });
 
 // DDBJ リリース統計
@@ -2174,6 +2067,109 @@ function makeWebAccess() {
   })  // $.getJSON
 
 } // makeWebAccess
+
+// ページアクセス
+function makePageAccess() {
+  var now = new Date();
+  var this_year = now.getFullYear();
+  var span = 10; // 直近10年を表示
+
+  // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
+  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['page-access'] + "/public/values?alt=json", function(data) {
+
+    var page_access = data.feed.entry;
+    var unique_users_per_year = {};
+    var average_unique_users_per_year = {};
+
+    for(var y = this_year-span; y < this_year; y++) {
+      
+      unique_users_per_year[y] = [];
+      
+      for(var i = 0; i < page_access.length; i++) {
+      
+        var year_month = page_access[i].gsx$yearmonth.$t;
+        var uniqueusersmonth = parseInt(page_access[i].gsx$uniqueusersmonth.$t, 10);
+
+        // 年毎に配列に格納
+        if ( parseInt(year_month.substring(0, 4), 10) == y ) {
+          
+          //ログ欠落期間の 2018-02, 03, 04 を除外
+          if ( year_month == "2018-02" || year_month == "2018-03" || year_month == "2018-04" ) {
+
+          } else {
+            unique_users_per_year[y].push(uniqueusersmonth);
+          }              
+        }
+        
+      } // for(var i = 0; i < page_access.length; i++) {
+        
+      average_unique_users_per_year[y] = Math.floor(average(unique_users_per_year[y]));
+
+    } // for(var y = 2004; y < this_year; y++) {
+
+    // グラフ描画
+    google.charts.load('current', {'packages':['corechart', 'table']});
+
+    // html 要素組み立て
+    var chart_year = [];
+    var html_tables = "";
+    html_tables += '<h3 id="page-access_total">By year (' + (this_year-span) + '-' + (this_year-1) + ')</h3>' + '<div id="page-access_chart_total"></div><div id="page-access_table_total"></div>';
+    html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0">Source data</a></p>';
+    $("#page-access_stat_area").append(html_tables);
+
+    for (var y2 = this_year-span; y2 < this_year; y2++) {
+      chart_year.push([y2.toString(), average_unique_users_per_year[y2]]);
+    }
+    
+    google.charts.setOnLoadCallback(drawPageAccess);
+    google.charts.setOnLoadCallback(drawPageAccessTable);
+
+    function drawPageAccess(){
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'Average unique users/month');
+
+      data.addRows(chart_year);
+
+      var options = {
+        title: 'Average unique users/month', 
+        width: 700,      
+        height:400,
+        legend:{position:'none'},         
+        hAxis:{
+          textStyle: {fontSize:11}
+        },
+        vAxis:{
+            textStyle: {fontSize:11}
+        },
+        titlePosition:'out'
+      };
+      
+      var drasuby = new google.visualization.LineChart(document.getElementById('page-access_chart_total'));
+      drasuby.draw(data, options);
+
+    } // function drawPageAccess()
+
+    function drawPageAccessTable(){
+      
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'Average unique users/month');
+      data.addRows(chart_year);
+
+      var drat = new google.visualization.Table(document.getElementById('page-access_table_total'));
+      drat.draw(data);
+
+    } // function drawSubmissionNumberTable
+
+    updateSectionLocation();
+
+  })  // $.getJSON
+
+} // makePageAccess
 
 function updateSectionLocation() {
   $(window).triggerHandler('resize');
