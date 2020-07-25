@@ -115,10 +115,17 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 
 
-{: #dra-submission}
+{: #dra-release}
 ## DRA データ公開
 
 <div id="dra-release_stat_area"></div>
+
+
+
+{: #gea-release}
+## GEA データ公開
+
+<div id="gea-release_stat_area"></div>
 
 
 

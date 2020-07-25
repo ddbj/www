@@ -1010,112 +1010,7 @@ if ( filepath=="/stats/gea-submission"){
 
 } // GEA への登録数
 
-// GEA 公開数、年単位、前年まで
-if ( filepath=="/stats/gea-release"){
 
-  $(function(){
-
-    google.charts.load('current', {'packages':['corechart', 'table']});
-
-    var now = new Date();
-    var this_year = now.getFullYear();
-    var year_min = 0;
-    var year_max = 0;
-    var x = 0;
-    var span = 5; // 前年から5年間を表示
-    var chart_year_a = [];    
-    var html_tables = "";
-
-      // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-      $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['gea-release'] + "/public/values?alt=json", function(data) {
-
-        var gea_release = data.feed.entry;
-      
-        for(var i = 0; i < gea_release.length; i++) {
-
-          var y = parseInt(gea_release[i].gsx$year.$t.substring(0, 4), 10);
-
-          if( y >= (this_year-1-span) ){
-            chart_year_a.push([gea_release[i].gsx$year.$t, parseInt(gea_release[i].gsx$experiments.$t, 10), parseInt(gea_release[i].gsx$samples.$t, 10)]);
-            if (x==0) year_min = y;
-            year_max = y;
-            x++;
-          } // for(var i = 0; i < gea_release.length; i++)
-        
-        } // for(var y = year_max-span; y <= year_max; y++)
-
-        html_tables += '<h2 id="total">Total data volume (' + year_min + '-' + year_max + ')</h2>' + '<div id="chart_total"></div><div id="table_total"></div>';
-        html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=584932770">Source data</a></p>';
-
-          /* グラフ作成 */
-          $("#stat_area").append(html_tables);
-
-          google.charts.setOnLoadCallback(drawTotalGEARelease);
-          google.charts.setOnLoadCallback(drawTotalGEAReleaseTable);
-
-          function drawTotalGEARelease(){
-
-              var title = 'Submission';
-
-              // Create the data table.
-              var data = new google.visualization.DataTable();
-              data.addColumn('string', 'Year');
-              data.addColumn('number', 'Experiments');
-              data.addColumn('number', 'Samples');
-
-              data.addRows(chart_year_a);
-
-              var options = {
-                title: 'GEA release (total data volume)', 
-                width: 600,      
-                height:400,
-                seriesType: 'bars',
-                legend:{position:'top', textStyle: {fontSize: 12}},         
-                series: {
-                  0:{color:'#00CCFF', targetAxisIndex: 0},
-                  1:{color:'#953735', targetAxisIndex: 1}
-                },
-                hAxis:{
-                  title: 'Year',
-                  textStyle: {fontSize:11}
-                },
-                vAxes: {
-                  0: {
-                    title: 'Experiments',
-                    textStyle: {fontSize:11}
-                  },
-                  1: {   
-                    title: 'Samples',
-                    color:'#ff0000'
-                  }
-                },
-                titlePosition:'out'
-              };
-              
-              var gearelyear = new google.visualization.ColumnChart(document.getElementById('chart_total'));
-              gearelyear.draw(data, options);
-          
-          } // function drawTotalGEASubmission
-
-          function drawTotalGEAReleaseTable(){
-            
-              // Create the data table.
-              var data = new google.visualization.DataTable();
-              data.addColumn('string', 'Year');
-              data.addColumn('number', 'Experiments');
-              data.addColumn('number', 'Samples');
-              data.addRows(chart_year_a);
-
-              var gearelyeartable = new google.visualization.Table(document.getElementById('table_total'));
-              gearelyeartable.draw(data);
-
-          } // function drawTotalGEASubmissionTable
-          
-      })  // $.getJSON 
-
-    })  // function
-
-} // GEA 公開数
 
 
 
@@ -1123,6 +1018,7 @@ $(function(){
   console.log( 'filepath:', filepath )
   makeDDBJRelease();
   makeDRARelease();
+  makeGEARelease();
   makeSubmission();
 });
 
@@ -2096,6 +1992,108 @@ function makeDRARelease() {
 
   })  // $.getJSON
 } // makeDRARelease
+
+// GEA 公開数、年単位、前年まで
+function makeGEARelease() {
+  google.charts.load('current', {'packages':['corechart', 'table']});
+
+  var now = new Date();
+  var this_year = now.getFullYear();
+  var year_min = 0;
+  var year_max = 0;
+  var x = 0;
+  var span = 5; // 前年から5年間を表示
+  var chart_year_a = [];
+  var html_tables = "";
+
+  // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
+  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['gea-release'] + "/public/values?alt=json", function(data) {
+
+    var gea_release = data.feed.entry;
+  
+    for(var i = 0; i < gea_release.length; i++) {
+
+      var y = parseInt(gea_release[i].gsx$year.$t.substring(0, 4), 10);
+
+      if( y >= (this_year-1-span) ){
+        chart_year_a.push([gea_release[i].gsx$year.$t, parseInt(gea_release[i].gsx$experiments.$t, 10), parseInt(gea_release[i].gsx$samples.$t, 10)]);
+        if (x==0) year_min = y;
+        year_max = y;
+        x++;
+      } // for(var i = 0; i < gea_release.length; i++)
+    
+    } // for(var y = year_max-span; y <= year_max; y++)
+
+    html_tables += '<h3 id="gea-release_otal">Total data volume (' + year_min + '-' + year_max + ')</h3>' + '<div id="gea-release_chart_total"></div><div id="gea-release_table_total"></div>';
+    html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=584932770">Source data</a></p>';
+
+    /* グラフ作成 */
+    $("#gea-release_stat_area").append(html_tables);
+
+    google.charts.setOnLoadCallback(drawTotalGEARelease);
+    google.charts.setOnLoadCallback(drawTotalGEAReleaseTable);
+
+    function drawTotalGEARelease(){
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'Experiments');
+      data.addColumn('number', 'Samples');
+
+      data.addRows(chart_year_a);
+
+      var options = {
+        title: 'GEA release (total data volume)', 
+        width: 600,      
+        height:400,
+        seriesType: 'bars',
+        legend:{position:'top', textStyle: {fontSize: 12}},         
+        series: {
+          0:{color:'#00CCFF', targetAxisIndex: 0},
+          1:{color:'#953735', targetAxisIndex: 1}
+        },
+        hAxis:{
+          title: 'Year',
+          textStyle: {fontSize:11}
+        },
+        vAxes: {
+          0: {
+            title: 'Experiments',
+            textStyle: {fontSize:11}
+          },
+          1: {   
+            title: 'Samples',
+            color:'#ff0000'
+          }
+        },
+        titlePosition:'out'
+      };
+      
+      var gearelyear = new google.visualization.ColumnChart(document.getElementById('gea-release_chart_total'));
+      gearelyear.draw(data, options);
+    
+    } // function drawTotalGEASubmission
+
+    function drawTotalGEAReleaseTable(){
+      
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'Experiments');
+      data.addColumn('number', 'Samples');
+      data.addRows(chart_year_a);
+
+      var gearelyeartable = new google.visualization.Table(document.getElementById('gea-release_table_total'));
+      gearelyeartable.draw(data);
+
+    } // function drawTotalGEASubmissionTable
+
+    updateSectionLocation();
+    
+  })  // $.getJSON
+
+} // makeGEARelease
 
 // DDBJ への登録ルート毎の submission
 function makeSubmission() {
