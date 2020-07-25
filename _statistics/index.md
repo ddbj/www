@@ -115,6 +115,13 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 
 
+{: #dra-submission}
+## DRA データ公開
+
+<div id="dra-release_stat_area"></div>
+
+
+
 {: #ddbj-submission}
 ## DDBJ への登録数
 
@@ -123,6 +130,11 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 - Submission: 登録数
 
 <div id="submission_stat_area"></div>
+
+
+
+
+
 
 <ul>
 {% for service in site.statistics%}

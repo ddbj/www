@@ -795,179 +795,6 @@ if ( filepath=="/stats/jga-release"){
 
 } // JGA リリース
 
-// DRA リリース
-if ( filepath=="/stats/dra-release"){
-
-  $(function(){
-
-    google.charts.load('current', {'packages':['corechart', 'table']});
-
-    var now = new Date();
-    var this_year = now.getFullYear();
-    var year_min = 0;
-    var year_max = 0;
-    var span = 10; // 年毎は直近10年を表示
-    var x = 0;
-    var chart_size_year_a = [];    
-    var chart_bases_seqs_year_a = [];    
-    var html_tables = "";
-
-      // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-      $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['dra-release'] + "/public/values?alt=json", function(data) {
-
-        var dra_release = data.feed.entry;
-        var dra_release_h = {};
-
-        // 今年の途中も表示
-        
-              for(var i = 0; i < dra_release.length; i++) {
-               
-                var year = dra_release[i].gsx$year.$t;
-                var y = parseInt(year, 10);
-                var runs = parseInt(dra_release[i].gsx$runs.$t, 10);
-                var sra_bytes = parseInt(dra_release[i].gsx$srabytes.$t, 10);
-                var sequences = parseInt(dra_release[i].gsx$sequences.$t, 10);
-                var bases = parseInt(dra_release[i].gsx$bases.$t, 10);
-                var fastq_bytes = parseInt(dra_release[i].gsx$fastqbytes.$t, 10);
-
-                // 年毎に配列に格納                
-                if(y > this_year -1 - span){
-                  chart_size_year_a.push([year, roundFloat(sra_bytes/10**12, 2), roundFloat(fastq_bytes/10**12, 2)]);                          
-                  // sequences, bases trillion 10^12
-                  chart_bases_seqs_year_a.push([year, roundFloat(sequences/10**12, 2), roundFloat(bases/10**12, 2)]);                          
-                  if (x==0) year_min = y;
-                  year_max = y;
-                  x++;
-                }
-                
-              } // for(var i = 0; i < dra_release.length; i++)
-
-        html_tables += '<h2 id="total">Total filesize (' + year_min + '-' + year_max + ')</h2>' + '<div id="chart_size"></div><div id="table_size"></div><div id="chart_bases_seqs"></div><div id="table_bases_seqs"></div>';        
-        html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=300088284">Source data</a></p>';
-
-          /* グラフ作成 */
-          $("#stat_area").append(html_tables);
-
-        // 棒グラフ描画 size
-        google.charts.setOnLoadCallback(drawTotalDRARelease);
-        google.charts.setOnLoadCallback(drawTotalDRAReleaseTable);
-
-        // bases seqs
-        google.charts.setOnLoadCallback(drawTotalDRABasesSeqs);
-        google.charts.setOnLoadCallback(drawTotalDRABasesSeqsTable);
-
-      function drawTotalDRARelease(){
-
-          var title = 'DRA data release (total filesize)';
-
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Year');
-          data.addColumn('number', 'SRA filesize (TB)');
-          data.addColumn('number', 'fastq filesize (TB)');
-
-          data.addRows(chart_size_year_a);
-
-          var options = {
-            width: 600,
-            height: 600,
-            title: title,
-            titleTextStyle:{fontSize:15},
-            fontSize:12,
-            legend: {position: 'top', textStyle:{fontSize: 10}},
-            hAxis:{title:'Year'},
-            vAxis:{title:'Filesize (TB)', minorGridlines:{count:0}},
-            colors: ['#3366cc','#5b84d6'],
-            isStacked:true
-          };
-          
-          var drareleasey = new google.visualization.ColumnChart(document.getElementById('chart_size'));
-          drareleasey.draw(data, options);
-
-      } // function drawTotalDRARelease()
-
-      function drawTotalDRAReleaseTable(){
-        
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Year');
-          data.addColumn('number', 'SRA filesize (TB)');
-          data.addColumn('number', 'fastq filesize (TB)');
-          data.addRows(chart_size_year_a);
-
-          var formatter = new google.visualization.NumberFormat({ fractionDigits:0, groupingSymbol: '' });
-          formatter.format(data, 0);
-
-          var drareleaseyt = new google.visualization.Table(document.getElementById('table_size'));
-          drareleaseyt.draw(data);
-
-      } // function drawTotalDRAReleaseTable()
-
-      // bases sequences
-      function drawTotalDRABasesSeqs(){
-
-          var title = 'DRA data release (total sequences and bases)';
-
-          // Create the data table.
-          var data = new google.visualization.DataTable();          
-
-          data.addColumn('string', 'Year');
-          data.addColumn('number', 'Sequences (trillion)');
-          data.addColumn('number', 'Bases (trillion)');
-          
-          data.addRows(chart_bases_seqs_year_a);
-
-          var options = {
-            width: 600,
-            height: 600,
-            title: title,
-            titleTextStyle:{fontSize:15},
-            fontSize:12,
-            legend: {position: 'top', textStyle: {fontSize: 10}},
-            series: {
-              0: {targetAxisIndex: 0},
-              1: {targetAxisIndex: 1}
-            },
-            hAxis:{title:'Year', textStyle:{fontSize:12}, format:'0', minorGridlines:{count:0}, gridlines:{color:'#eee'}},
-            vAxes:{
-              // Adds titles to each axis.              
-              0: {title: 'Sequences (trillion)', scaleType:'log', ticks: [0, 10, 100]},
-              1: {title: 'Bases (trillion)', scaleType:'log', ticks: [0, 10, 100]},
-            },            
-            colors: ['#5b84d6', '#ff0000'],
-          };
-
-          var formatter = new google.visualization.NumberFormat({ pattern:'####',groupingSymbol:'' });
-          formatter.format(data, 0);
-          
-          var drareleasebq = new google.visualization.LineChart(document.getElementById('chart_bases_seqs'));
-          drareleasebq.draw(data, options);
-      } // drawTotalDRARelease()
-
-      function drawTotalDRABasesSeqsTable(){
-        
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Year');
-          data.addColumn('number', 'Sequences (trillion)');
-          data.addColumn('number', 'Bases (trillion)');
-          data.addRows(chart_bases_seqs_year_a);
-
-          var formatter = new google.visualization.NumberFormat({ fractionDigits:0, groupingSymbol:'' });
-          formatter.format(data, 0);
-
-          var drareleasebqt = new google.visualization.Table(document.getElementById('table_bases_seqs'));
-          drareleasebqt.draw(data);
-
-        } // function drawTotalDRABasesSeqsTable()
-
-      })  // $.getJSON 
-
-    })  // function
-
-} // DRA リリース
-
-
 // ページアクセス
 if ( filepath=="/stats/page-access" ){
 
@@ -1295,6 +1122,7 @@ if ( filepath=="/stats/gea-release"){
 $(function(){
   console.log( 'filepath:', filepath )
   makeDDBJRelease();
+  makeDRARelease();
   makeSubmission();
 });
 
@@ -2101,7 +1929,173 @@ function makeDDBJRelease() {
     updateSectionLocation();
 
   })  // $.getJSON
-}
+} // makeDDBJRelease
+
+// DRA リリース
+function makeDRARelease() {
+  google.charts.load('current', {'packages':['corechart', 'table']});
+
+  var now = new Date();
+  var this_year = now.getFullYear();
+  var year_min = 0;
+  var year_max = 0;
+  var span = 10; // 年毎は直近10年を表示
+  var x = 0;
+  var chart_size_year_a = [];    
+  var chart_bases_seqs_year_a = [];    
+  var html_tables = "";
+
+  // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
+  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['dra-release'] + "/public/values?alt=json", function(data) {
+
+    var dra_release = data.feed.entry;
+
+    // 今年の途中も表示
+    
+    for(var i = 0; i < dra_release.length; i++) {
+    
+      var year = dra_release[i].gsx$year.$t;
+      var y = parseInt(year, 10);
+      var sra_bytes = parseInt(dra_release[i].gsx$srabytes.$t, 10);
+      var sequences = parseInt(dra_release[i].gsx$sequences.$t, 10);
+      var bases = parseInt(dra_release[i].gsx$bases.$t, 10);
+      var fastq_bytes = parseInt(dra_release[i].gsx$fastqbytes.$t, 10);
+
+      // 年毎に配列に格納                
+      if(y > this_year -1 - span){
+        chart_size_year_a.push([year, roundFloat(sra_bytes/10**12, 2), roundFloat(fastq_bytes/10**12, 2)]);                          
+        // sequences, bases trillion 10^12
+        chart_bases_seqs_year_a.push([year, roundFloat(sequences/10**12, 2), roundFloat(bases/10**12, 2)]);                          
+        if (x==0) year_min = y;
+        year_max = y;
+        x++;
+      }
+      
+    } // for(var i = 0; i < dra_release.length; i++)
+
+    html_tables += '<h3 id="total">Total filesize (' + year_min + '-' + year_max + ')</h3>' + '<div id="dra-release_chart_size"></div><div id="dra-release_table_size"></div><div id="dra-release_chart_bases_seqs"></div><div id="dra-release_table_bases_seqs"></div>';        
+    html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=300088284">Source data</a></p>';
+
+    /* グラフ作成 */
+    $("#dra-release_stat_area").append(html_tables);
+
+    // 棒グラフ描画 size
+    google.charts.setOnLoadCallback(drawTotalDRARelease);
+    google.charts.setOnLoadCallback(drawTotalDRAReleaseTable);
+
+    // bases seqs
+    google.charts.setOnLoadCallback(drawTotalDRABasesSeqs);
+    google.charts.setOnLoadCallback(drawTotalDRABasesSeqsTable);
+
+    function drawTotalDRARelease(){
+
+      var title = 'DRA data release (total filesize)';
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'SRA filesize (TB)');
+      data.addColumn('number', 'fastq filesize (TB)');
+
+      data.addRows(chart_size_year_a);
+
+      var options = {
+        width: 600,
+        height: 600,
+        title: title,
+        titleTextStyle:{fontSize:15},
+        fontSize:12,
+        legend: {position: 'top', textStyle:{fontSize: 10}},
+        hAxis:{title:'Year'},
+        vAxis:{title:'Filesize (TB)', minorGridlines:{count:0}},
+        colors: ['#3366cc','#5b84d6'],
+        isStacked:true
+      };
+      
+      var drareleasey = new google.visualization.ColumnChart(document.getElementById('dra-release_chart_size'));
+      drareleasey.draw(data, options);
+
+    } // function drawTotalDRARelease()
+
+    function drawTotalDRAReleaseTable(){
+    
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'SRA filesize (TB)');
+      data.addColumn('number', 'fastq filesize (TB)');
+      data.addRows(chart_size_year_a);
+
+      var formatter = new google.visualization.NumberFormat({ fractionDigits:0, groupingSymbol: '' });
+      formatter.format(data, 0);
+
+      var drareleaseyt = new google.visualization.Table(document.getElementById('dra-release_table_size'));
+      drareleaseyt.draw(data);
+
+    } // function drawTotalDRAReleaseTable()
+
+    // bases sequences
+    function drawTotalDRABasesSeqs(){
+
+      var title = 'DRA data release (total sequences and bases)';
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();          
+
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'Sequences (trillion)');
+      data.addColumn('number', 'Bases (trillion)');
+      
+      data.addRows(chart_bases_seqs_year_a);
+
+      var options = {
+        width: 600,
+        height: 600,
+        title: title,
+        titleTextStyle:{fontSize:15},
+        fontSize:12,
+        legend: {position: 'top', textStyle: {fontSize: 10}},
+        series: {
+          0: {targetAxisIndex: 0},
+          1: {targetAxisIndex: 1}
+        },
+        hAxis:{title:'Year', textStyle:{fontSize:12}, format:'0', minorGridlines:{count:0}, gridlines:{color:'#eee'}},
+        vAxes:{
+          // Adds titles to each axis.              
+          0: {title: 'Sequences (trillion)', scaleType:'log', ticks: [0, 10, 100]},
+          1: {title: 'Bases (trillion)', scaleType:'log', ticks: [0, 10, 100]}
+        },            
+        colors: ['#5b84d6', '#ff0000']
+      };
+
+      var formatter = new google.visualization.NumberFormat({ pattern:'####',groupingSymbol:'' });
+      formatter.format(data, 0);
+      
+      var drareleasebq = new google.visualization.LineChart(document.getElementById('dra-release_chart_bases_seqs'));
+      drareleasebq.draw(data, options);
+    } // drawTotalDRARelease()
+
+    function drawTotalDRABasesSeqsTable(){
+    
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'Sequences (trillion)');
+      data.addColumn('number', 'Bases (trillion)');
+      data.addRows(chart_bases_seqs_year_a);
+
+      var formatter = new google.visualization.NumberFormat({ fractionDigits:0, groupingSymbol:'' });
+      formatter.format(data, 0);
+
+      var drareleasebqt = new google.visualization.Table(document.getElementById('dra-release_table_bases_seqs'));
+      drareleasebqt.draw(data);
+
+    } // function drawTotalDRABasesSeqsTable()
+
+    updateSectionLocation();
+
+  })  // $.getJSON
+} // makeDRARelease
 
 // DDBJ への登録ルート毎の submission
 function makeSubmission() {
@@ -2143,7 +2137,7 @@ function makeSubmission() {
     
     } // for(var y = year_max-span; y <= year_max; y++)
 
-    html_tables += '<h3 id="total">By year (' + year_min + '-' + year_max + ')</h3>' + '<div id="ddbj-submission_chart_total"></div><div id="ddbj-submission_table_total"></div>';
+    html_tables += '<h3 id="ddbj-submission_total">By year (' + year_min + '-' + year_max + ')</h3>' + '<div id="ddbj-submission_chart_total"></div><div id="ddbj-submission_table_total"></div>';
     html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=881663501">Source data</a></p>';
 
     /* グラフ作成 */
