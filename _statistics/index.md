@@ -154,6 +154,13 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 
 
+{: #gea-submission}
+## GEA への登録
+
+<div id="gea-submission_stat_area"></div>
+
+
+
 
 
 
