@@ -675,126 +675,6 @@ if ( filepath=="/stats/jga-submission"){
 
 } // JGA への登録数
 
-// JGA リリース
-if ( filepath=="/stats/jga-release"){
-
-  $(function(){
-
-    google.charts.load('current', {'packages':['corechart', 'table']});
-
-    var now = new Date();
-    var this_year = now.getFullYear();
-    var year_min = 0;
-    var year_max = 0;
-    var span = 5; // 年毎は直近4年を表示
-    var x = 0;
-    var chart_year_a = [];    
-    var chart_year_table_a = [];    
-    var html_tables = "";
-
-      // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-      $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['jga-release'] + "/public/values?alt=json", function(data) {
-
-        var jga_release = data.feed.entry;
-        var jga_release_h = {};
-
-        // 今年の途中も表示
-        
-              for(var i = 0; i < jga_release.length; i++) {
-               
-                var year = jga_release[i].gsx$year.$t;
-                var y = parseInt(year, 10);
-                var studies = parseInt(jga_release[i].gsx$studies.$t, 10);
-                var samples = parseInt(jga_release[i].gsx$samples.$t, 10);
-                var bytes = parseInt(jga_release[i].gsx$bytes.$t, 10);
-
-                // 年毎に配列に格納                                
-                if(y > this_year - 1 - span){
-                  chart_year_a.push([year, samples, roundFloat(bytes/10**12, 2)]);                          
-                  chart_year_table_a.push([year, studies, samples, roundFloat(bytes/10**12, 2)]);                          
-                  if (x==0) year_min = y;
-                  year_max = y;
-                  x++;
-                }
-                
-              } // for(var i = 0; i < jga_release.length; i++)
-
-        html_tables += '<h2 id="total">Total data volume (' + year_min + '-' + year_max + ')</h2>' + '<div id="chart_total"></div><div id="table_total"></div>';        
-        html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=1609644463">Source data</a></p>';
-
-          /* グラフ作成 */
-          $("#stat_area").append(html_tables);
-
-        // 棒グラフ描画 size
-        google.charts.setOnLoadCallback(JGATotalRelease);
-        google.charts.setOnLoadCallback(JGATotalReleaseTable);
-
-      function JGATotalRelease(){
-
-          var title = 'JGA data release';
-
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Year');
-          data.addColumn('number', 'Samples');
-          data.addColumn('number', 'Filesize (TB)');
-
-          data.addRows(chart_year_a);
-
-          var options = {
-            title: 'JGA data release (total data volume)', 
-            width: 600,      
-            height:400,
-            seriesType: 'bars',
-            legend:{position:'top', textStyle: {fontSize: 12}},         
-            series: {
-              0:{color:'#00CCFF', targetAxisIndex: 0},
-              1:{color:'#953735', targetAxisIndex: 1}
-            },
-            hAxis:{
-              title: 'Year',
-              textStyle: {fontSize:11}
-            },
-            vAxes: {
-              0: {
-                title: 'Samples',
-                textStyle: {fontSize:11},
-                gridlines: {count:6}
-              },
-              1: {   
-                title: 'Filesize (TB)',
-                color:'#ff0000',
-                gridlines: {count:6}
-              }
-            },
-            titlePosition:'out'
-          };
-          
-          var jgarel = new google.visualization.ColumnChart(document.getElementById('chart_total'));
-          jgarel.draw(data, options);
-      } // function drawTotalJGASubmission()
-
-      function JGATotalReleaseTable(){
-        
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Year');
-          data.addColumn('number', 'Studies');
-          data.addColumn('number', 'Samples');
-          data.addColumn('number', 'Filesize (TB)');
-          data.addRows(chart_year_table_a);
-
-          var jgarelt = new google.visualization.Table(document.getElementById('table_total'));
-          jgarelt.draw(data);
-
-      } // function drawSubmissionNumberTable
-
-      })  // $.getJSON 
-
-    })  // function
-
-} // JGA リリース
-
 // ページアクセス
 if ( filepath=="/stats/page-access" ){
 
@@ -1019,6 +899,7 @@ $(function(){
   makeDDBJRelease();
   makeDRARelease();
   makeGEARelease();
+  makeJGARelease();
   makeSubmission();
 });
 
@@ -2094,6 +1975,120 @@ function makeGEARelease() {
   })  // $.getJSON
 
 } // makeGEARelease
+
+// JGA リリース
+function makeJGARelease() {
+  google.charts.load('current', {'packages':['corechart', 'table']});
+
+  var now = new Date();
+  var this_year = now.getFullYear();
+  var year_min = 0;
+  var year_max = 0;
+  var span = 5; // 年毎は直近4年を表示
+  var x = 0;
+  var chart_year_a = [];    
+  var chart_year_table_a = [];    
+  var html_tables = "";
+
+  // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
+  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['jga-release'] + "/public/values?alt=json", function(data) {
+
+    var jga_release = data.feed.entry;
+
+    // 今年の途中も表示
+    
+    for(var i = 0; i < jga_release.length; i++) {
+      
+      var year = jga_release[i].gsx$year.$t;
+      var y = parseInt(year, 10);
+      var studies = parseInt(jga_release[i].gsx$studies.$t, 10);
+      var samples = parseInt(jga_release[i].gsx$samples.$t, 10);
+      var bytes = parseInt(jga_release[i].gsx$bytes.$t, 10);
+
+      // 年毎に配列に格納                                
+      if(y > this_year - 1 - span){
+        chart_year_a.push([year, samples, roundFloat(bytes/10**12, 2)]);                          
+        chart_year_table_a.push([year, studies, samples, roundFloat(bytes/10**12, 2)]);                          
+        if (x==0) year_min = y;
+        year_max = y;
+        x++;
+      }
+      
+    } // for(var i = 0; i < jga_release.length; i++)
+
+    html_tables += '<h3 id="total">Total data volume (' + year_min + '-' + year_max + ')</h3>' + '<div id="jga-release_chart_total"></div><div id="jga-release_table_total"></div>';        
+    html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=1609644463">Source data</a></p>';
+
+    /* グラフ作成 */
+    $("#jga-release_stat_area").append(html_tables);
+
+    // 棒グラフ描画 size
+    google.charts.setOnLoadCallback(JGATotalRelease);
+    google.charts.setOnLoadCallback(JGATotalReleaseTable);
+
+    function JGATotalRelease(){
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'Samples');
+      data.addColumn('number', 'Filesize (TB)');
+
+      data.addRows(chart_year_a);
+
+      var options = {
+        title: 'JGA data release (total data volume)', 
+        width: 600,      
+        height:400,
+        seriesType: 'bars',
+        legend:{position:'top', textStyle: {fontSize: 12}},         
+        series: {
+          0:{color:'#00CCFF', targetAxisIndex: 0},
+          1:{color:'#953735', targetAxisIndex: 1}
+        },
+        hAxis:{
+          title: 'Year',
+          textStyle: {fontSize:11}
+        },
+        vAxes: {
+          0: {
+            title: 'Samples',
+            textStyle: {fontSize:11},
+            gridlines: {count:6}
+          },
+          1: {   
+            title: 'Filesize (TB)',
+            color:'#ff0000',
+            gridlines: {count:6}
+          }
+        },
+        titlePosition:'out'
+      };
+      
+      var jgarel = new google.visualization.ColumnChart(document.getElementById('jga-release_chart_total'));
+      jgarel.draw(data, options);
+    } // function drawTotalJGASubmission()
+
+    function JGATotalReleaseTable(){
+      
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'Studies');
+      data.addColumn('number', 'Samples');
+      data.addColumn('number', 'Filesize (TB)');
+      data.addRows(chart_year_table_a);
+
+      var jgarelt = new google.visualization.Table(document.getElementById('jga-release_table_total'));
+      jgarelt.draw(data);
+
+    } // function drawSubmissionNumberTable
+
+    updateSectionLocation();
+
+  })  // $.getJSON
+
+} // makeJGARelease
 
 // DDBJ への登録ルート毎の submission
 function makeSubmission() {
