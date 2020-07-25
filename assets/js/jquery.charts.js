@@ -466,103 +466,7 @@ if ( filepath=="/stats/jga-submission"){
 
   $(function(){
 
-    google.charts.load('current', {'packages':['corechart', 'table']});
 
-    var now = new Date();
-    var this_year = now.getFullYear();
-    var year_min = 0;
-    var year_max = 0;
-    var x = 0;
-    var span = 5; // 前年から5年間を表示
-    var chart_year_a = [];    
-    var html_tables = "";
-
-      // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-      $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['jga-submission'] + "/public/values?alt=json", function(data) {
-
-        var jga_submission = data.feed.entry;
-      
-        for(var i = 0; i < jga_submission.length; i++) {
-
-          var y = parseInt(jga_submission[i].gsx$year.$t.substring(0, 4), 10);
-
-          if( y >= (this_year-1-span) ){
-            chart_year_a.push([jga_submission[i].gsx$year.$t, parseInt(jga_submission[i].gsx$submissions.$t, 10), roundFloat(parseInt(jga_submission[i].gsx$bytes.$t, 10)/10**12, 2)]);
-            if (x==0) year_min = y;
-            year_max = y;
-            x++;
-          } // for(var i = 0; i < jga_submission.length; i++)
-        
-        } // for(var y = year_max-span; y <= year_max; y++)
-
-        html_tables += '<h2 id="total">By year (' + year_min + '-' + year_max + ')</h2>' + '<div id="chart_total"></div><div id="table_total"></div>';
-        html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=1225854857">Source data</a></p>';
-
-          /* グラフ作成 */
-          $("#stat_area").append(html_tables);
-
-          google.charts.setOnLoadCallback(drawTotalJGASubmission);
-          google.charts.setOnLoadCallback(drawTotalJGASubmissionTable);
-
-          function drawTotalJGASubmission(){
-
-              var title = 'Submission';
-
-              // Create the data table.
-              var data = new google.visualization.DataTable();
-              data.addColumn('string', 'Year');
-              data.addColumn('number', 'Submissions');
-              data.addColumn('number', 'Filesize (TB)');
-
-              data.addRows(chart_year_a);
-
-              var options = {
-                title: 'Submissions to JGA (By year)', 
-                width: 600,      
-                height:400,
-                seriesType: 'bars',
-                legend:{position:'top', textStyle: {fontSize: 12}},         
-                series: {
-                  0:{color:'#00CCFF', targetAxisIndex: 0},
-                  1:{color:'#953735', targetAxisIndex: 1}
-                },
-                hAxis:{
-                  title: 'Year',
-                  textStyle: {fontSize:11}
-                },
-                vAxes: {
-                  0: {
-                    title: 'Submissions',
-                    textStyle: {fontSize:11}
-                  },
-                  1: {   
-                    title: 'Filesize (TB)',
-                    color:'#ff0000'
-                  }
-                },
-                titlePosition:'out'
-              };
-              
-              var jgasubyear = new google.visualization.ColumnChart(document.getElementById('chart_total'));
-              jgasubyear.draw(data, options);
-          
-          } // function drawTotalJGASubmission()
-
-          function drawTotalJGASubmissionTable(){
-            
-              // Create the data table.
-              var data = new google.visualization.DataTable();
-              data.addColumn('string', 'Year');
-              data.addColumn('number', 'Submissions');
-              data.addColumn('number', 'Filesize (TB)');
-              data.addRows(chart_year_a);
-
-              var jgasubyeartable = new google.visualization.Table(document.getElementById('table_total'));
-              jgasubyeartable.draw(data);
-
-          } // function drawTotalJGASubmissionTable()
-          
-      })  // $.getJSON 
 
     })  // function
 
@@ -691,6 +595,7 @@ $(function(){
   makeDDBJSubmission();
   makeDRASubmission();
   makeGEASubmission();
+  makeJGASubmission();
 });
 
 // DDBJ リリース統計
@@ -2185,6 +2090,108 @@ function makeGEASubmission() {
   })  // $.getJSON
 
 } // makeGEASubmission
+
+// JGA への登録数、年単位、前年まで
+function makeJGASubmission() {
+  google.charts.load('current', {'packages':['corechart', 'table']});
+
+  var now = new Date();
+  var this_year = now.getFullYear();
+  var year_min = 0;
+  var year_max = 0;
+  var x = 0;
+  var span = 5; // 前年から5年間を表示
+  var chart_year_a = [];    
+  var html_tables = "";
+
+  // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
+  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['jga-submission'] + "/public/values?alt=json", function(data) {
+
+    var jga_submission = data.feed.entry;
+  
+    for(var i = 0; i < jga_submission.length; i++) {
+
+      var y = parseInt(jga_submission[i].gsx$year.$t.substring(0, 4), 10);
+
+      if( y >= (this_year-1-span) ){
+        chart_year_a.push([jga_submission[i].gsx$year.$t, parseInt(jga_submission[i].gsx$submissions.$t, 10), roundFloat(parseInt(jga_submission[i].gsx$bytes.$t, 10)/10**12, 2)]);
+        if (x==0) year_min = y;
+        year_max = y;
+        x++;
+      } // for(var i = 0; i < jga_submission.length; i++)
+    
+    } // for(var y = year_max-span; y <= year_max; y++)
+
+    html_tables += '<h3 id="total">By year (' + year_min + '-' + year_max + ')</h3>' + '<div id="jga-submission_chart_total"></div><div id="jga-submission_table_total"></div>';
+    html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=1225854857">Source data</a></p>';
+
+    /* グラフ作成 */
+    $("#jga-submission_stat_area").append(html_tables);
+
+    google.charts.setOnLoadCallback(drawTotalJGASubmission);
+    google.charts.setOnLoadCallback(drawTotalJGASubmissionTable);
+
+    function drawTotalJGASubmission(){
+
+      var title = 'Submission';
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'Submissions');
+      data.addColumn('number', 'Filesize (TB)');
+
+      data.addRows(chart_year_a);
+
+      var options = {
+        title: 'Submissions to JGA (By year)', 
+        width: 600,      
+        height:400,
+        seriesType: 'bars',
+        legend:{position:'top', textStyle: {fontSize: 12}},         
+        series: {
+          0:{color:'#00CCFF', targetAxisIndex: 0},
+          1:{color:'#953735', targetAxisIndex: 1}
+        },
+        hAxis:{
+          title: 'Year',
+          textStyle: {fontSize:11}
+        },
+        vAxes: {
+          0: {
+            title: 'Submissions',
+            textStyle: {fontSize:11}
+          },
+          1: {   
+            title: 'Filesize (TB)',
+            color:'#ff0000'
+          }
+        },
+        titlePosition:'out'
+      };
+      
+      var jgasubyear = new google.visualization.ColumnChart(document.getElementById('jga-submission_chart_total'));
+      jgasubyear.draw(data, options);
+    
+    } // function drawTotalJGASubmission()
+
+    function drawTotalJGASubmissionTable(){
+      
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'Submissions');
+      data.addColumn('number', 'Filesize (TB)');
+      data.addRows(chart_year_a);
+
+      var jgasubyeartable = new google.visualization.Table(document.getElementById('jga-submission_table_total'));
+      jgasubyeartable.draw(data);
+
+    } // function drawTotalJGASubmissionTable()
+      
+  })  // $.getJSON 
+
+} // makeJGASubmission
 
 function updateSectionLocation() {
   $(window).triggerHandler('resize');

@@ -161,6 +161,13 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 
 
+{: #jga-submission}
+## JGA への登録
+
+<div id="jga-submission_stat_area"></div>
+
+
+
 
 
 
