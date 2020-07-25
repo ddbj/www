@@ -32,7 +32,7 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 <div id="ddbj-release-prop-seq-chart"></div>
 
-<div id="ddbj-release-prop-seq-table" class=""></div>
+<div id="ddbj-release-prop-seq-table"></div>
 
 [Source data
 table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=1634110914)
@@ -41,7 +41,7 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 <div id="ddbj-release-prop-base-chart"></div>
 
-<div id="ddbj-release-prop-base-table" class=""></div>
+<div id="ddbj-release-prop-base-table"></div>
 
 CON と TPA はリリースの統計には含まれていません。
 
@@ -101,30 +101,27 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 ### 登録塩基数の多い生物種
 
-<div id="ddbj-release-table_organism_ranking">
-
-</div>
+<div id="ddbj-release-table_organism_ranking"></div>
 
 [Source data
 table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=20026687)
 
 ### 記載回数の多い Journal
 
-<div id="ddbj-release-table_journal_ranking">
-
-</div>
+<div id="ddbj-release-table_journal_ranking"></div>
 
 [Source data
 table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=811062981)
 
 
 
-<h2 id="ddbj-submission">DDBJ への登録数</h2>
-<ul class="no_disc no_left bottom_space">
-  <li><span class="bold">Web Submission</span>: <a href="/ddbj/websub.html">Nucleotide Sequence Submission System</a> からの登録</li>
-  <li><span class="bold">MSS Submission</span>: <a href="/ddbj/mss.html">Mass Submission System</a> からの登録</li>
-  <li><span class="bold">Submission</span>: 登録数</li>
-</ul>
+{: #ddbj-submission}
+## DDBJ への登録数
+
+- Web Submission: [Nucleotide Sequence Submission System](/ddbj/websub.html) からの登録
+- MSS Submission: [Mass Submission System](/ddbj/mss.html) からの登録
+- Submission: 登録数
+
 <div id="submission_stat_area"></div>
 
 <ul>

@@ -1404,6 +1404,8 @@ function makeDDBJRelease() {
 
     } // function drawTotalDRAReleaseTable()
 
+    updateSectionLocation();
+
   })  // $.getJSON 
 
   // DDBJ リリース配列数、塩基数各バンクの割合
@@ -1562,6 +1564,8 @@ function makeDDBJRelease() {
       charpropbasetable.draw(data);
 
     } // function DDBJReleasePropBaseTable
+
+    updateSectionLocation();
 
   })  // $.getJSON 
 
@@ -1722,6 +1726,8 @@ function makeDDBJRelease() {
 
     } // function CategoryPropSeqTable
 
+    updateSectionLocation();
+
   })  // $.getJSON 
 
   // DDBJ 最新リリースにおけるアーカイブ毎の division の割合
@@ -1851,6 +1857,8 @@ function makeDDBJRelease() {
       tablepropbase.draw(data);
 
     } // function CategoryPropSeqTable
+
+    updateSectionLocation();
 
   })  // $.getJSON 
 
@@ -2012,6 +2020,9 @@ function makeDDBJRelease() {
       tablecatpropbase.draw(data);
 
     } // function TaxPropSeqTable
+
+    updateSectionLocation();
+
   })  // $.getJSON 
 
   // DDBJ 最新リリースにおける上生物種ランキング
@@ -2049,6 +2060,8 @@ function makeDDBJRelease() {
 
     } // function OrgRankingTable
 
+    updateSectionLocation();
+
   })  // $.getJSON 
 
   // DDBJ 最新リリースにおける Journal ランキング
@@ -2085,9 +2098,10 @@ function makeDDBJRelease() {
 
     } // function JournalRankingTable
 
+    updateSectionLocation();
+
   })  // $.getJSON
 }
-
 
 // DDBJ への登録ルート毎の submission
 function makeSubmission() {
@@ -2129,7 +2143,7 @@ function makeSubmission() {
     
     } // for(var y = year_max-span; y <= year_max; y++)
 
-    html_tables += '<h3 id="total">By year (' + year_min + '-' + year_max + ')</h3>' + '<div id="chart_total"></div><div id="table_total"></div>';
+    html_tables += '<h3 id="total">By year (' + year_min + '-' + year_max + ')</h3>' + '<div id="ddbj-submission_chart_total"></div><div id="ddbj-submission_table_total"></div>';
     html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=881663501">Source data</a></p>';
 
     /* グラフ作成 */
@@ -2164,7 +2178,7 @@ function makeSubmission() {
         isStacked:true
       };
 
-      var ddbjsubyear = new google.visualization.ColumnChart(document.getElementById('chart_total'));            
+      var ddbjsubyear = new google.visualization.ColumnChart(document.getElementById('ddbj-submission_chart_total'));
       ddbjsubyear.draw(data, options);
     
     } // function drawWGSRelease
@@ -2180,11 +2194,17 @@ function makeSubmission() {
 
       data.addRows(chart_year_table_a);
 
-      var ddbjsubyeartable = new google.visualization.Table(document.getElementById('table_total'));
+      var ddbjsubyeartable = new google.visualization.Table(document.getElementById('ddbj-submission_table_total'));
       ddbjsubyeartable.draw(data);
 
     } // function drawWGSReleaseTable
 
+    updateSectionLocation();
+
   }) // $.getJSON
 
 } // makeSubmission
+
+function updateSectionLocation() {
+  $(window).triggerHandler('resize');
+}
