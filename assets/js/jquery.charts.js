@@ -33,9 +33,9 @@ var sheet_position_h = {
 // 配列要素の合計値を求める
 // http://phiary.me/javascript-array-sum-average-median/
 var sum = function(arr) {  
-    return arr.reduce(function(prev, current, i, arr) {
-        return prev + current;
-    });
+  return arr.reduce(function(prev, current, i, arr) {
+    return prev + current;
+  });
 };
 
 // 平均値を求める
@@ -1510,7 +1510,7 @@ function makeDDBJRelease2() {
   if ( !document.getElementById('total-data-volume') ) return;
 
   // DDBJ リリース配列数、塩基数各バンクの割合
-  release_new = 107; // release 107 から bulk sequence が含まれている
+  var release_new = 107; // release 107 から bulk sequence が含まれている
   var chart_seq_a = [];
   var chart_base_a = [];
   var chart_seq_table_a = [];

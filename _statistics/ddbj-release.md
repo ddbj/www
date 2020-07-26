@@ -2,6 +2,9 @@
 layout: indexed_content
 title: DDBJ 定期リリース統計
 category: statistics
+related_pages:
+  - title: DB の out/in 統計量
+    url: ./index.html
 addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script><script type='text/javascript' src='/www/assets/js/jquery.charts.js'></script>
 ---
 
