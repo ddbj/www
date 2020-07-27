@@ -2,6 +2,8 @@
 
 // 内部リンク
 export default function internalLink() {
+  if (!document.getElementById('TableOfContents')) return;
+  
   let itemsOfToc = []; // 目次管理用配列
 
   createToc(); // 目次の生成
