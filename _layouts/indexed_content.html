@@ -9,7 +9,7 @@ layout: default
       <nav class="breadcrumb">
         <ul>
           <li>
-            <a href="index.html">{% if page.lang %}ホーム{%  else %}Home{% endif %}</a>
+            <a href="index.html">{% if page.lang == 'ja' %}ホーム{%  else %}Home{% endif %}</a>
           </li>
           <li>
             <a href="{{site.url}}{{site.baseurl}}/{{ page.category }}">{{ page.category }}</a>

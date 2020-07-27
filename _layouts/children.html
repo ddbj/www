@@ -5,14 +5,14 @@ layout: default
 <header id="PageHeader">
   <div class="inner">
     <div class="page-title">
-      <h1 class="title">{{ page.title-ja }}</h1>
+      <h1 class="title">{{ page.title }}</h1>
       <nav class="breadcrumb">
         <ul>
           <li>
-            <a href="index.html">{% if page.lang %}ホーム{%  else %}Home{% endif %}</a>
+            <a href="index.html">{% if page.lang == 'ja' %}ホーム{%  else %}Home{% endif %}</a>
           </li>
           <li>
-            {{ page.title-ja }}
+            {{ page.title }}
           </li>
         </ul>
       </nav>
