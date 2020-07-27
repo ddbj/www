@@ -1,5 +1,6 @@
 ---
 layout: indexed_content
+lang: ja
 title: DDBJ 定期リリース統計
 category: statistics
 related_pages:

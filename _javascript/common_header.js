@@ -1310,7 +1310,30 @@
   `; // TODO: 最終的にはCSS読み込みは自動化したい
   const script = document.getElementById('DDBJ_common_header');
   let language = document.getElementsByTagName('html')[0].getAttribute('lang');
+  let otherLanguageLink;
   language = language === 'ja' ? 'ja' : 'en';
+  console.log(language)
+  switch (language) {
+    console.log(location.href.slice(-1) === '/')
+    console.log(location.href.slice(-5) === '.html')
+    case 'ja':
+      if (location.href.slice(-1) === '/') {
+        otherLanguageLink = location.href + 'index-e.html';
+      } else if (location.href.slice(-5) === '.html') {
+        otherLanguageLink = location.href.slice(0, -5) + '-e';
+      } else {
+        otherLanguageLink = location.href + '-e';
+      }
+      break;
+    default: // en
+      if (location.href.slice(-2) === '-e') {
+        otherLanguageLink = location.href.slice(0, -2);
+      } else if (location.href.slice(-7) === '-e.html') {
+        otherLanguageLink = location.href.slice(0, -7);
+      }
+      break;
+  }
+  console.log(otherLanguageLink)
   script.style.display = '';
   script.style.height = '';
   const body = document.querySelector('body');
@@ -1358,9 +1381,7 @@
           ${HEADER_MENU.map(item => `
           <li><a href="${item.uri[language]}">${item.label[language]}</a></li>
           `).join('')}
-          ${language === 'ja'
-          ? '<li class="DDBJ_language"><a href="/index-e.html">English</a></li>'
-          : '<li class="DDBJ_language"><a href="/index.html">Japanese</a></li>'}
+          <li class="DDBJ_language"><a href="${otherLanguageLink}">English</a></li>
         </ul>
       </nav>
     </div>

@@ -1,5 +1,6 @@
 ---
 layout: indexed_content
+lang: ja
 title: getentry
 category: services
 related_pages:
