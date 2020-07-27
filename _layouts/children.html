@@ -9,7 +9,7 @@ layout: default
       <nav class="breadcrumb">
         <ul>
           <li>
-            <a href="index.html">ホーム</a>
+            <a href="index.html">{% if page.lang %}ホーム{%  else %}Home{% endif %}</a>
           </li>
           <li>
             {{ page.title-ja }}
