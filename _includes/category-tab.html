@@ -1,10 +1,18 @@
 {% capture path %}{{site.url}}{{site.baseurl}}{% endcapture %}
 <nav class="category-tab">
   <ul>
-    <li class="-services{% if page.category == "services" %} -current{% endif %}"><a href="{{ path }}/services/">{% if page.lang %}サービス{%  else %}Services{% endif %}</a></li>
-    <li class="-supercomputer{% if page.category == "supercomputer" %} -current{% endif %}"><a href="{https://sc.ddbj.nig.ac.jp/ja">{% if page.lang %}スパコン{%  else %}SuperComputer{% endif %}</a></li>
-    <li class="-statistics{% if page.category == "statistics" %} -current{% endif %}"><a href="{{ path }}/statistics/">{% if page.lang %}統計{%  else %}Statistics{% endif %}</a></li>
-    <li class="-activities{% if page.category == "activities" %} -current{% endif %}"><a href="{{ path }}/activities/">{% if page.lang %}活動{%  else %}Activities{% endif %}</a></li>
-    <li class="-aboutus{% if page.category == "aboutus" %} -current{% endif %}"><a href="{{ path }}/aboutus/">{% if page.lang %}センターについて{%  else %}About Us{% endif %}</a></li>
+    {% if page.lang %}
+    <li class="-services{% if page.category == 'services' %} -current{% endif %}"><a href="{{ path }}/services/">サービス</a></li>
+    <li class="-supercomputer{% if page.category == 'supercomputer' %} -current{% endif %}"><a href="https://sc.ddbj.nig.ac.jp/ja">スパコン</a></li>
+    <li class="-statistics{% if page.category == 'statistics' %} -current{% endif %}"><a href="{{ path }}/statistics/">統計</a></li>
+    <li class="-activities{% if page.category == 'activities' %} -current{% endif %}"><a href="{{ path }}/activities/">活動</a></li>
+    <li class="-aboutus{% if page.category == 'aboutus' %} -current{% endif %}"><a href="{{ path }}/aboutus/">センターについて</a></li>
+    {% else %}
+    <li class="-services{% if page.category == 'services' %} -current{% endif %}"><a href="{{ path }}/services/index-e">Services</a></li>
+    <li class="-supercomputer{% if page.category == 'supercomputer' %} -current{% endif %}"><a href="https://sc.ddbj.nig.ac.jp/en">SuperComputer</a></li>
+    <li class="-statistics{% if page.category == 'statistics' %} -current{% endif %}"><a href="{{ path }}/statistics/index-e">Statistics</a></li>
+    <li class="-activities{% if page.category == 'activities' %} -current{% endif %}"><a href="{{ path }}/activities/index-e">Activities</a></li>
+    <li class="-aboutus{% if page.category == 'aboutus' %} -current{% endif %}"><a href="{{ path }}/aboutus/index-e">About Us</a></li>
+    {% endif %}
   </ul>
 </nav>
