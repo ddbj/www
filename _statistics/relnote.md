@@ -1,8 +1,16 @@
 ---
 layout: indexed_content
+lang: ja
 title: リリースノート (DDBJ, 16S rRNA, DAD)
 pathname: relnote
 category: _statistics
+related_pages:
+  - title: DB の out/in 統計量
+    url: ./index.html
+  - title: DDBJ 定期リリース統計
+    url: ./ddbj-release
+  - title: 最新リリースの情報
+    url: ./relinfo
 ---
 
 ## リリースノート (DDBJ, 16S rRNA, DAD)
