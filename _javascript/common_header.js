@@ -1312,10 +1312,7 @@
   let language = document.getElementsByTagName('html')[0].getAttribute('lang');
   let otherLanguageLink;
   language = language === 'ja' ? 'ja' : 'en';
-  console.log(language)
   switch (language) {
-    console.log(location.href.slice(-1) === '/')
-    console.log(location.href.slice(-5) === '.html')
     case 'ja':
       if (location.href.slice(-1) === '/') {
         otherLanguageLink = location.href + 'index-e.html';
@@ -1333,7 +1330,6 @@
       }
       break;
   }
-  console.log(otherLanguageLink)
   script.style.display = '';
   script.style.height = '';
   const body = document.querySelector('body');
@@ -1349,10 +1345,10 @@
   header.innerHTML = `
     <div class="DDBJ_inner">
       <div class="DDBJ_logocontainer">
-        <a class="DDBJ_logotype" href="/index.html">DDBJ DNA Data Bank of Japan</a>
+        <a class="DDBJ_logotype" href="${language === 'ja' ? 'https://www.ddbj.nig.ac.jp/index.html' : 'https://www.ddbj.nig.ac.jp/index-e.html'}">DDBJ DNA Data Bank of Japan</a>
       </div>
       <nav class="DDBJ_services">
-        <h1 class="DDBJ_title">サービス</h1>
+        <h1 class="DDBJ_title">${language === 'ja' ? 'サービス' : 'Services'}</h1>
         <div class="DDBJ_spcollapsemenubutton">Services</div>
         <div class="DDBJ_rows DDBJ_spcollapsemenu">
           ${HEADER_SERVICES_ROWS.map(row => {
@@ -1381,7 +1377,7 @@
           ${HEADER_MENU.map(item => `
           <li><a href="${item.uri[language]}">${item.label[language]}</a></li>
           `).join('')}
-          <li class="DDBJ_language"><a href="${otherLanguageLink}">English</a></li>
+          <li class="DDBJ_language"><a href="${otherLanguageLink}">${language === 'ja' ? 'English' : 'Japanese'}</a></li>
         </ul>
       </nav>
     </div>
