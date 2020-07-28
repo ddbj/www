@@ -2,6 +2,7 @@
 layout: indexed_content
 pathname: index-e
 category: aboutagd
+lang: en
 ---
 
 ## Introduction

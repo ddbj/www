@@ -2,6 +2,7 @@
 layout: indexed_content
 title: Parser ユーザーマニュアル
 category: services
+lang: ja
 ---
 
 Parser は、Mass Submission System (MSS) を利用して DDBJ に登録する際に必要な

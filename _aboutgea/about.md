@@ -3,6 +3,7 @@ layout: indexed_content
 title: GEA について
 pathname: about
 category: aboutgea
+lang: ja
 ---
 
 ## 連絡先

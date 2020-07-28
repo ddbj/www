@@ -3,6 +3,7 @@ layout: 年表
 title: DDBJ スタッフの論文 (1996-2008)
 pathname: past-papers
 category: _activities
+lang: ja
 ---
 
 # DDBJ スタッフの論文 (1996-2008)

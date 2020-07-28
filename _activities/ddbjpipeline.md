@@ -3,6 +3,7 @@ layout: indexed_content
 title: DDBJ の塩基配列解析ツールについて
 pathname: ddbjpipeline
 category: _activities
+lang: ja
 ---
 
 DDBJ の塩基配列解析ツール「DDBJ Read Annotation Pipeline」ついて，「DDBJ Read Annotation Pipeline」開発担当者 が DDBJ Mail Magazine に連載したコラムをまとめました。

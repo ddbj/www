@@ -3,6 +3,7 @@ layout: indexed_content
 title: GA4GH Beacon
 pathname: beacon
 category: aboutagd
+lang: ja
 ---
 
 ## GA4GH Beacon

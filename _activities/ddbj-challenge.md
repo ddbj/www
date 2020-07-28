@@ -3,6 +3,7 @@ layout: indexed_content
 title: DDBJ データ解析チャレンジ
 pathname: ddbj-challenge
 category: _activities
+lang: ja
 ---
 
 DDBJ データ解析チャレンジでは、DDBJ

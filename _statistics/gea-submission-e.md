@@ -3,6 +3,7 @@ layout: indexed_content
 title: Submissions to GEA
 pathname: gea-submission-e
 category: _statistics
+lang: en
 ---
 
 <div id="primary">

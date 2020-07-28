@@ -3,6 +3,7 @@ layout: indexed_content
 title: DDBJ Data Analysis Challenge
 pathname: ddbj-challenge-e
 category: _activities
+lang: en
 ---
 
 "DDBJ Data Analysis Challenge" is a machine learning competition using

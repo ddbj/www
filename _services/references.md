@@ -2,6 +2,7 @@
 layout: indexed_content
 title: 関連論文
 category: services
+lang: ja
 ---
 
 ## DDBJ センターについての最新論文

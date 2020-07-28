@@ -3,6 +3,7 @@ layout: indexed_content
 title: News from 1999
 pathname: archive-1999
 category: news
+lang: ja
 ---
 
 <div class="news_post firstpost">

@@ -3,6 +3,7 @@ layout: indexed_content
 title: MAGE-TAB example
 pathname: example-e
 category: aboutgea
+lang: en
 ---
 
 ## IDF Example

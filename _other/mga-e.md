@@ -3,6 +3,7 @@ layout: indexed_content
 title: MGA
 pathname: mga-e
 category: other
+lang: en
 related_pages:
   - title: ENV
     url: /ddbj/env-e.html

@@ -3,6 +3,7 @@ layout: indexed_content
 title: Example of metadata
 pathname: example-e
 category: aboutdra
+lang: en
 ---
 
 {::options parse_block_html="true" /}

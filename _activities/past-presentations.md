@@ -3,6 +3,7 @@ layout: 年表
 title: DDBJ スタッフの講演発表（2001-2006）
 pathname: past-presentations
 category: _activities
+lang: ja
 ---
 
 # DDBJ スタッフの講演発表（2001-2006）

@@ -3,6 +3,7 @@ layout: indexed_content
 title: Data Categories
 pathname: data-categories-e
 category: datacategories
+lang: en
 related_pages:
   - title: Data Submission from Genome Project
     url: /ddbj/genome-e.html)

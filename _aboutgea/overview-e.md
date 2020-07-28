@@ -3,6 +3,7 @@ layout: indexed_content
 title: Submissions Overview
 pathname: overview-e
 category: aboutgea
+lang: en
 ---
 
 ## Overview

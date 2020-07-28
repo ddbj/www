@@ -3,6 +3,7 @@ layout: 年表
 title: DDBJ staff presentations (2009-)
 pathname: presentations-e
 category: _activities
+lang: en
 ---
 
 ## 2019

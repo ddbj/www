@@ -3,6 +3,7 @@ layout: indexed_content
 title: Third-party reanalysis data
 pathname: third-party-reanalysis
 category: aboutgea
+lang: ja
 ---
 
 ## Third-party reanalysis data 登録

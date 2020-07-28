@@ -3,6 +3,7 @@ layout: indexed_content
 title: About DDBJ Center
 pathname: aboutus-e
 category: _aboutus
+lang: en
 ---
 
 DDBJ Center collects nucleotide sequence data as a member of [INSDC(International Nucleotide Sequence Database Collaboration)](http://www.insdc.org/) and provides freely available nucleotide sequence data and supercomputer system, to support research　activities in life science.

@@ -3,6 +3,7 @@ layout: indexed_content
 title: Submissions to DRA
 pathname: dra-submission-e
 category: _statistics
+lang: en
 ---
 
 <div id="primary">

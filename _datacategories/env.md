@@ -3,6 +3,7 @@ layout: indexed_content
 title: ENV
 pathname: env
 category: datacategories
+lang: ja
 ---
 
 DDBJ/ENA/GenBank の ENV division は 環境サンプル (environmental sample) 由来の配列と

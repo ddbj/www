@@ -3,6 +3,7 @@ layout: 未定
 title: Home
 pathname: index
 category: _jvar-snp
+lang: ja
 ---
 
 <div id="primary">

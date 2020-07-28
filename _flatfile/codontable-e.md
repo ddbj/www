@@ -3,6 +3,7 @@ layout: indexed_content
 title: The Genetic Codes
 pathname: codontable-e
 category: flatfile
+lang: en
 related_pages:
   - title: Description of Location
     url: /ddbj/location-e.html)

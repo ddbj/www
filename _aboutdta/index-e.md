@@ -2,6 +2,7 @@
 layout: 未定
 pathname: index-e
 category: aboutdta
+lang: en
 ---
 
 <div id="page" class="top">

@@ -3,6 +3,7 @@ layout: indexed_content
 title: Contact
 pathname: contact-e
 category: _aboutus
+lang: en
 ---
 
 There is a possibility that your mail or ours is interrupted by network

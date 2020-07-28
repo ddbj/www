@@ -2,6 +2,7 @@
 layout: indexed_content
 pathname: index
 category: aboutjga
+lang: ja
 ---
 
 <div id="content_part">

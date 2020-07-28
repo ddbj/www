@@ -3,6 +3,7 @@ layout: indexed_content
 title: GEA への登録
 pathname: overview
 category: aboutgea
+lang: ja
 ---
 
 ## 概要

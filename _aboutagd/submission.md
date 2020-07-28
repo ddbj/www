@@ -3,6 +3,7 @@ layout: indexed_content
 title: AGD への登録
 pathname: submission
 category: aboutagd
+lang: ja
 ---
 
 ## 登録概要

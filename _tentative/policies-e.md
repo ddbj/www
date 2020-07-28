@@ -3,6 +3,7 @@ layout: indexed_content
 title: Usage Policies and Disclaimers for Website, Data and Services Provided from DDBJ
 pathname: policies-e
 category: tentative
+lang: en
 ---
 
 DDBJ Center prescribes its website policies in accordance with the policies of its parent organization, [the Research Organization of Information and Systems](https://www.rois.ac.jp/en/index.html) (ROIS) (ROIS).  

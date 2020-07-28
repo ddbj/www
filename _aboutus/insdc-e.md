@@ -3,6 +3,7 @@ layout: indexed_content
 title: page-access
 pathname: insdc-e
 category: _aboutus
+lang: en
 ---
 
 DDBJ Center has been closely collaborating with [EBI; European

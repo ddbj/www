@@ -3,6 +3,7 @@ layout: indexed_content
 title: DDBJ BioSample Handbook
 pathname: submission-e
 category: aboutbiosample
+lang: en
 ---
 
 <div id="page" class="top">

@@ -3,6 +3,7 @@ layout: 年表
 title: The Reports for International Collaborators Meetings
 pathname: icm-reports-e
 category: _activities
+lang: en
 ---
 
 ## 2019

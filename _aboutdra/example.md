@@ -3,6 +3,7 @@ layout: indexed_content
 title: メタデータの例
 pathname: example
 category: aboutdra
+lang: ja
 ---
 
 {::options parse_block_html="true" /}

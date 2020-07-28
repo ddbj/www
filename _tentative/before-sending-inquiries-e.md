@@ -3,6 +3,7 @@ layout: indexed_content
 title: Before sending inquiry to us
 pathname: before-sending-inquiries-e
 category: tentative
+lang: en
 ---
 
 ## Before sending inquiry to us

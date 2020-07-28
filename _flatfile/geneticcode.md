@@ -3,6 +3,7 @@ layout: indexed_content
 title: The Genetic Codes
 pathname: geneticcode
 category: flatfile
+lang: ja
 ---
 
 ## Defiition of /transl\_table qualifier

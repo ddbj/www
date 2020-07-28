@@ -2,6 +2,7 @@
 layout: indexed_content
 title: Web版塩基配列登録システム (NSSS)
 category: services
+lang: ja
 ---
 
 {::options parse_block_html="true" /}

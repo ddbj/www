@@ -3,6 +3,7 @@ layout: indexed_content
 title: INSDC standards for genome assembly submission
 pathname: assembly
 category: tentative
+lang: ja
 ---
 
 The original site; [INSDC standards for genome assembly submission](http://www.insdc.org/insdc-standards-genome-assembly-submission) 2013.08.14 version

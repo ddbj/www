@@ -3,6 +3,7 @@ layout: indexed_content
 title: DDBJ アノテータの業務紹介
 pathname: annotator
 category: _activities
+lang: ja
 ---
 
 ユーザーの皆様に DDBJ について業務内容を知って頂きより身近に感じていただけるよう，DDBJ アノテータが DDBJ Mail Magazine にリレー連載したコラムをまとめました。

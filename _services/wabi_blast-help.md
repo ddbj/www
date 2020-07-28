@@ -2,6 +2,7 @@
 layout: indexed_content
 title: WABI BLAST
 category: services
+lang: ja
 ---
 
 ## 概要

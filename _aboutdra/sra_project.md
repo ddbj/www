@@ -3,6 +3,7 @@ layout: indexed_content
 title: DRA 共同研究プロジェクトデータの取扱い
 pathname: sra_project
 category: aboutdra
+lang: ja
 ---
 
 ## 共同研究プロジェクトデータの取り扱い

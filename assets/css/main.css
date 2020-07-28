@@ -766,8 +766,6 @@ input, textarea, select, button {
   .md-content #main_index.biosample_attr {
     color: #000000;
     font-size: 90%; }
-  .md-content #definition {
-    margin: 10px 0 20px 0; }
   .md-content #biosample_attr_area .description {
     word-wrap: break-word; }
   .md-content #biosample_attr_area .value {

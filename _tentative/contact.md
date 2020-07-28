@@ -3,6 +3,7 @@ layout: indexed_content
 title: お問い合わせ
 pathname: contact
 category: tentative
+lang: ja
 ---
 
 DDBJ では，より良いデータベースを構築するために，登録，更新等，ご依頼には迅速かつ適切な対応に努めております。しかしながら，通信トラブル等の事情で関連メールの送受信が完了しない可能性もございます。１週間を過ぎても DDBJ より連絡がない場合は，お知らせください。  

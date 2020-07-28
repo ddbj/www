@@ -3,6 +3,7 @@ layout: indexed_content
 title: Validation Rules
 pathname: validation
 category: aboutgea
+lang: en
 ---
 
 This page contains a compilation of the GEA validation errors and

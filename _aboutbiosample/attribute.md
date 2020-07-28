@@ -3,6 +3,7 @@ layout: indexed_content
 title: サンプル属性
 pathname: attribute
 category: aboutbiosample
+lang: ja
 ---
 
 <form method="get" action="">

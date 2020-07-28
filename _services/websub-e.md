@@ -2,6 +2,7 @@
 layout: indexed_content
 title: DDBJ Nucleotide Sequence Submission System (NSSS)
 category: services
+lang: en
 related_pages:
   - title: Nucleotide Sequence Submission
     url: services/submission-e.html

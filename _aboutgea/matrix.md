@@ -3,6 +3,7 @@ layout: indexed_content
 title: MAGE-TAB format for raw and processed data matrix
 pathname: matrix
 category: aboutgea
+lang: ja
 ---
 
 ## Data matrix format

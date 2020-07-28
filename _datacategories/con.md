@@ -3,6 +3,7 @@ layout: indexed_content
 title: CON
 pathname: con
 category: datacategories
+lang: ja
 ---
 
 [HTG](/ddbj/htg.html) または [WGS](/ddbj/wgs.html)

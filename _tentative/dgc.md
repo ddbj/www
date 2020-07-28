@@ -3,6 +3,7 @@ layout: indexed_content
 title: DDBJ グループクラウド
 pathname: dgc
 category: tentative
+lang: ja
 ---
 
 ## DDBJ グループクラウドサービス

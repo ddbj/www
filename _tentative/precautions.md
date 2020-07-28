@@ -3,6 +3,7 @@ layout: indexed_content
 title: 迷惑メール対策機能をご確認ください
 pathname: precautions
 category: tentative
+lang: ja
 ---
 
 ## 迷惑メール対策機能をご確認ください

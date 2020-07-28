@@ -2,6 +2,7 @@
 layout: indexed_content
 title: Categories for Sequence Data
 category: services
+lang: en
 related_pages:
   - title: Prefix Letter List
     url: /prefix-e.html

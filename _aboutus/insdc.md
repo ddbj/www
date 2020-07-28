@@ -3,6 +3,7 @@ layout: indexed_content
 title: INSDC
 pathname: insdc
 category: _aboutus
+lang: ja
 ---
 
 DDBJ センターは、欧州の [EBI; European Bioinformatics Institute](https://www.ebi.ac.uk/) で運営されている [ENA; European Nucleotide Archive](https://www.ebi.ac.uk/ena) および 米国の [NCBI; National Center for Biotechnology Information](https://www.ncbi.nlm.nih.gov/) と、インターネットを経由したデータと情報の相互交換と定期的に開催する２つの会議、[国際実務者会議](#icm)と[国際諮問委員会](#iac)、を通じて密接に連携し、INSD; International Nucleotide Sequence Database を構築しています。   

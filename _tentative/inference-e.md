@@ -3,6 +3,7 @@ layout: indexed_content
 title: /inference qualifier vocabulary recommendation document
 pathname: inference-e
 category: tentative
+lang: en
 ---
 
 ## /inference qualifier vocabulary recommendation document

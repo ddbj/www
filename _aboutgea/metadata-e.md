@@ -3,6 +3,7 @@ layout: indexed_content
 title: Metadata
 pathname: metadata-e
 category: aboutgea
+lang: en
 ---
 
 ## MAGE-TAB

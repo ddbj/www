@@ -3,6 +3,7 @@ layout: indexed_content
 title: TSA
 pathname: tsa
 category: datacategories
+lang: ja
 ---
 
 2008年から INSDC では、アセンブルされた cDNA 配列データを、Transcriptome Shotgun Assembly

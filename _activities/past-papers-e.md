@@ -3,6 +3,7 @@ layout: 年表
 title: DDBJ staff papers（1996-2008）
 pathname: past-papers-e
 category: _activities
+lang: en
 ---
 
 Bold are CIB-DDBJ members. Some of the publications in Japanese are

@@ -2,6 +2,7 @@
 layout: indexed_content
 title: MSS - Mass Submission System
 category: services
+lang: ja
 ---
 
 <span class="red">ヒトを対象とした研究データの登録について</span>

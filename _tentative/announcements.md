@@ -3,6 +3,7 @@ layout: indexed_content
 title: RSS フィード
 pathname: announcements
 category: tentative
+lang: ja
 ---
 
 ## お知らせ全般

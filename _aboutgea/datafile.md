@@ -3,6 +3,7 @@ layout: indexed_content
 title: Accepted Data File Formats
 pathname: datafile
 category: aboutgea
+lang: ja
 ---
 
 ## ファイル準備における注意点

@@ -2,6 +2,7 @@
 layout: indexed_content
 title: transChecker ユーザーマニュアル
 category: services
+lang: ja
 ---
 
 transChecker は Mass Submission System (MSS) を利用して DDBJ に登録する際に必要な

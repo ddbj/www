@@ -3,6 +3,7 @@ layout: indexed_content
 title: DDBJ flat file format
 pathname: flat-file-e
 category: flatfile
+lang: en
 related_pages:
   - title: Description of Location
     url: /ddbj/location-e.html

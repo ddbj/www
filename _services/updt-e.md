@@ -2,6 +2,7 @@
 layout: indexed_content
 title: Data Updates/Corrections`:` after getting your accession number
 category: services
+lang: en
 related_pages:
   - title: Application Form for Data Update Requests
     url: services/updt-form-e.html

@@ -3,6 +3,7 @@ layout: indexed_content
 title: BioProject について
 pathname: index
 category: aboutbioproject
+lang: ja
 ---
 
 ## 連絡先

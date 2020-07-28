@@ -3,6 +3,7 @@ layout: indexed_content
 title: 利用手順
 pathname: download
 category: aboutjga
+lang: ja
 ---
 
 ## JGA データの利用申請

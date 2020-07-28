@@ -2,6 +2,7 @@
 layout: indexed_content
 title: MSS - Mass Submission System
 category: services
+lang: en
 related_pages:
   - title: Submission File Format
     url: /ddbj/file-format-e.html)

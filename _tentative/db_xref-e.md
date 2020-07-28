@@ -3,6 +3,7 @@ layout: indexed_content
 title: Controlled vocabulary for /db_xref qualifier
 pathname: db_xref-e
 category: tentative
+lang: en
 ---
 
 The original site; [Controlled vocabulary for /db_xref

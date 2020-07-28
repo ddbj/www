@@ -3,6 +3,7 @@ layout: indexed_content
 title: 登録アカウント
 pathname: account
 category: tentative
+lang: ja
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/N76NUH748Fw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

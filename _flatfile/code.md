@@ -3,6 +3,7 @@ layout: indexed_content
 title: 配列の記載に用いる略号
 pathname: code
 category: flatfile
+lang: ja
 ---
 
 ## 塩基

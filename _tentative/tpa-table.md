@@ -3,6 +3,7 @@ layout: indexed_content
 title: TPA Submission Guidelines
 pathname: tpa-table
 category: tentative
+lang: ja
 ---
 
 The original site; [TPA Submission Guidelines](http://www.insdc.org/documents/tpa-submission-guidelines) 2013.10.15 version

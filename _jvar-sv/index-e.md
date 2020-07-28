@@ -3,6 +3,7 @@ layout: 未定
 title: Home
 pathname: index-e
 category: _jvar-sv
+lang: en
 ---
 
 # Home

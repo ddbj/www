@@ -3,6 +3,7 @@ layout: indexed_content
 title: Metagenome Assembly
 pathname: metagenome-assembly-e
 category: tentative
+lang: en
 ---
 
 Microorganisms comprise the majority of the planet's biological

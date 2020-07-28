@@ -3,6 +3,7 @@ layout: indexed_content
 title: Sequence data included in patent applications
 pathname: pat-data-e
 category: other
+lang: en
 ---
 
 DDBJ Center provides some services to search and to browse sequence data　that are included in patent applications.

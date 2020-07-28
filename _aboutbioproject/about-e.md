@@ -3,6 +3,7 @@ layout: indexed_content
 title: About BioProject
 pathname: index-e
 category: aboutbioproject
+lang: en
 ---
 
 ## Contact

@@ -3,6 +3,7 @@ layout: 発行物アーカイブ
 title: 発行物アーカイブ
 pathname: pub-archives
 category: _activities
+lang: ja
 ---
 
 # 発行物アーカイブ

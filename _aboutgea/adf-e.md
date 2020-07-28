@@ -3,6 +3,7 @@ layout: indexed_content
 title: Array design
 pathname: adf-e
 category: aboutgea
+lang: en
 ---
 
 ## Array design format (ADF) file

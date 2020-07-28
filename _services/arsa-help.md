@@ -2,6 +2,7 @@
 layout: indexed_content
 title: ARSA 
 category: services
+lang: ja
 ---
 
 ## 検索対象データベース

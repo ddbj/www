@@ -3,6 +3,7 @@ layout: indexed_content
 title: Location の記述法
 pathname: location
 category: flatfile
+lang: ja
 ---
 
 ## Location の記述法

@@ -3,6 +3,7 @@ layout: indexed_content
 title: Reviewer Access
 pathname: reviewer-access-e
 category: aboutgea
+lang: en
 ---
 
 ## Reviewer access token

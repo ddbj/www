@@ -3,6 +3,7 @@ layout: indexed_content
 title: GSS
 pathname: gss-e
 category: datacategories
+lang: en
 related_pages:
   - title: Data Submission from Genome Project
     url: /ddbj/genome-e.html

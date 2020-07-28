@@ -3,6 +3,7 @@ layout: indexed_content
 title: 「ユーザーの皆様へ，お願いです！」
 pathname: request
 category: _activities
+lang: ja
 ---
 
 ユーザーの皆様が DDBJ に登録をする際に参考にして頂く為のアドバイスを，DDBJ 登録担当者が Mail Magazine に連載したコラムをまとめました。

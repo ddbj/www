@@ -3,6 +3,7 @@ layout: indexed_content
 title: ウェブアクセス
 pathname: web-access1
 category: tentative
+lang: ja
 ---
 
 ## ウェブアクセス

@@ -2,6 +2,7 @@
 layout: indexed_content
 title: Prefix Letter List
 category: services
+lang: ja
 ---
 
 ## For conventional sequence data (two or one letter)

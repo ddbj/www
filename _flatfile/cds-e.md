@@ -3,6 +3,7 @@ layout: indexed_content
 title: Protein Coding Sequence; CDS feature
 pathname: cds-e
 category: flatfile
+lang: en
 related_pages:
   - title: DDBJ flat file format
     url: /ddbj/flat-file-e.html

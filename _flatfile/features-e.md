@@ -3,6 +3,7 @@ layout: indexed_content
 title: Feature key
 pathname: features-e
 category: flatfile
+lang: en
 ---
 
 The feature keys used and recommended for DDBJ submissions are as

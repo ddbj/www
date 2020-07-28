@@ -2,6 +2,7 @@
 layout: indexed_content
 title: getentry
 category: services
+lang: en
 ---
 
 ## About getentry

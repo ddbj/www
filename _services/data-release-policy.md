@@ -2,6 +2,7 @@
 layout: indexed_content
 title: データ公開原則
 category: services
+lang: ja
 ---
 
 ### 「データ公開」を行う時期

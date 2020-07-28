@@ -3,6 +3,7 @@ layout: indexed_content
 title: INSDC Status Document
 pathname: insdc-status-e
 category: _aboutus
+lang: en
 ---
 
 ## INSDC Status Document

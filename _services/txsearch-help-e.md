@@ -2,6 +2,7 @@
 layout: indexed_content
 title: TXSearch
 category: services
+lang: en
 ---
 
 TXSearch is a [NCBI

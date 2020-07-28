@@ -2,6 +2,7 @@
 layout: indexed_content
 title: MSS データファイル用チェックツール
 category: services
+lang: ja
 related_pages:
   - title: 登録ファイル形式
     url: services/file-format.html

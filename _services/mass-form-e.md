@@ -2,6 +2,7 @@
 layout: indexed_content
 title: Application form for MSS
 category: services
+lang: en
 related_pages:
   - title: Submission File Format
     url: /ddbj/file-format-e.html)

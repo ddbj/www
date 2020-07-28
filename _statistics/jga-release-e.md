@@ -3,6 +3,7 @@ layout: indexed_content
 title: jga-release
 pathname: jga-release-e
 category: _statistics
+lang: en
 ---
 
 <div id="primary">

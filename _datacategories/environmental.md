@@ -3,6 +3,7 @@ layout: indexed_content
 title: Environmental sequence の登録
 pathname: environmental
 category: datacategories
+lang: ja
 ---
 
 ## Environmental sequence の登録

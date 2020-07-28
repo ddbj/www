@@ -2,6 +2,7 @@
 layout: 未定
 pathname: index
 category: aboutdra
+lang: ja
 ---
 
 <div id="content_part">

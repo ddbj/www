@@ -3,6 +3,7 @@ layout: indexed_content
 title: Guideline to use /locus_tag qualifier
 pathname: locus_tag-e
 category: tentative
+lang: en
 ---
 
 ## Proper Use of /locus_tag in Genome Submissions

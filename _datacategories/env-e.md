@@ -3,6 +3,7 @@ layout: indexed_content
 title: ENV
 pathname: env-e
 category: datacategories
+lang: en
 related_pages:
   - title: Data Submission from Genome Project
     url: /ddbj/genome-e.html

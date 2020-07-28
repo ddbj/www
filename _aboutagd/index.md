@@ -2,6 +2,7 @@
 layout: indexed_content
 pathname: index
 category: aboutagd
+lang: ja
 ---
 
 ## 概要

@@ -2,6 +2,7 @@
 layout: indexed_content
 title: Pipeline
 category: services
+lang: ja
 ---
 
 ## Basic Analysis(Preprocessing/Mapping/*de novo* Assembly)

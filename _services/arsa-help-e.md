@@ -2,6 +2,7 @@
 layout: indexed_content
 title: ARSA 
 category: services
+lang: en
 ---
 
 ## Searchable DataBases

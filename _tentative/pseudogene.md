@@ -3,6 +3,7 @@ layout: indexed_content
 title: Controlled vocabulary for /pseudogene qualifier
 pathname: pseudogene
 category: tentative
+lang: ja
 ---
 
 ## Controlled vocabulary for /pseudogene qualifier

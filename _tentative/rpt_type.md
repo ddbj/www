@@ -3,6 +3,7 @@ layout: indexed_content
 title: Controlled vocabulary for /rpt_type qualifier
 pathname: rpt_type
 category: tentative
+lang: ja
 ---
 
 The original site; [Controlled vocabulary for /rpt_type qualifier](http://www.insdc.org/controlled-vocabulary-rpttype-qualifier) 2015.11.11 version.

@@ -3,6 +3,7 @@ layout: indexed_content
 title: Download steps
 pathname: download-e
 category: aboutjga
+lang: en
 ---
 
 ## JGA data use request

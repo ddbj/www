@@ -3,6 +3,7 @@ layout: 年表
 title: 国際実務者会議報告一覧
 pathname: icm-reports
 category: _activities
+lang: ja
 ---
 
 ## 2019

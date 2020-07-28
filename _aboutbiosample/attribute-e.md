@@ -3,6 +3,7 @@ layout: indexed_content
 title: Sample attributes
 pathname: attribute-e
 category: aboutbiosample
+lang: en
 ---
 
 <div id="page" class="top">

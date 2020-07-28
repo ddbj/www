@@ -3,6 +3,7 @@ layout: indexed_content
 title: Submit microarray experiment
 pathname: submit-array-e
 category: aboutgea
+lang: en
 ---
 
 ## GEA submission flow

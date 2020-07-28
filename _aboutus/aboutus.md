@@ -3,6 +3,7 @@ layout: indexed_content
 title: DDBJ センターについて
 pathname: aboutus
 category: _aboutus
+lang: ja
 ---
 
 DDBJ; DNA Data Bank of Japan は生命科学の研究活動をサポートするために、国際塩基配列データベースを協同運営する [INSDC (International Nucleotide Sequence Database Collaboration)](http://www.insdc.org/) の一員として、塩基配列データを収集しています。あわせて、自由に利用可能な塩基配列データとスーパーコンピュータシステムを提供しています。

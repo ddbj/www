@@ -3,6 +3,7 @@ layout: indexed_content
 title: TPA
 pathname: tpa
 category: datacategories
+lang: ja
 ---
 
 TPA (Third Party Data) は、DDBJ/ENA/GenBank、[Trace

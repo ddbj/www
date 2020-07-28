@@ -3,6 +3,7 @@ layout: indexed_content
 title: Submission Account
 pathname: account-e
 category: tentative
+lang: en
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1092WV_aXjA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

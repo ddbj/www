@@ -3,6 +3,7 @@ layout: indexed_content
 title: Transcriptome Project のデータ登録
 pathname: transcriptome
 category: datacategories
+lang: ja
 ---
 
 ## Transcriptome Project のデータ登録

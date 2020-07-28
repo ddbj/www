@@ -3,6 +3,7 @@ layout: indexed_content
 title: About DRA
 pathname: about-e
 category: aboutdra
+lang: en
 ---
 
 ## Contact <a name="contact"></a>

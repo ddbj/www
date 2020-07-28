@@ -3,6 +3,7 @@ layout: indexed_content
 title: Codes Used in Sequence Description
 pathname: code-e
 category: flatfile
+lang: en
 related_pages:
   - title: DDBJ flat file format
     url: /ddbj/flat-file-e.html

@@ -3,6 +3,7 @@ layout: indexed_content
 title: Validation rules
 pathname: validation
 category: aboutbiosample
+lang: ja
 ---
 
 BioSample 登録システムでチェックしているルール（エラーとワーニング）

@@ -2,6 +2,7 @@
 layout: indexed_content
 title: WABI ClustalW
 category: services
+lang: ja
 ---
 
 ## CLUSTALWのjobの投入

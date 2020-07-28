@@ -3,6 +3,7 @@ layout: indexed_content
 title: ゲノム支援
 pathname: genome-sci
 category: aboutdra
+lang: ja
 ---
 
   - [メタデータ記入用エクセルファイル](#excel)

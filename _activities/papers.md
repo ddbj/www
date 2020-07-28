@@ -3,6 +3,7 @@ layout: 年表
 title: DDBJ 活動に関する論文 (2009-)
 pathname: papers
 category: _activities
+lang: ja
 ---
 
 # DDBJ 活動に関する論文 (2009-)

@@ -3,6 +3,7 @@ layout: indexed_content
 title: INSDC agreed methodological keywords
 pathname: keyword-e
 category: tentative
+lang: en
 ---
 
 ## INSDC agreed methodological keywords

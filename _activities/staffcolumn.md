@@ -3,6 +3,7 @@ layout: indexed_content
 title: DDBJ スタッフコラム
 pathname: staffcolumn
 category: _activities
+lang: ja
 ---
 
 Mail Magazine 連載期間：No.12（2004年2月2日発行）〜 No.40（2008年10月8日発行）  

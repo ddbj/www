@@ -3,6 +3,7 @@ layout: indexed_content
 title: About BioSample
 pathname: about-e
 category: aboutbiosample
+lang: en
 ---
 
 ## Contact

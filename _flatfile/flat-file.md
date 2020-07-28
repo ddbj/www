@@ -3,6 +3,7 @@ layout: indexed_content
 title: DDBJ 公開形式 Flat file
 pathname: flat-file
 category: flatfile
+lang: ja
 ---
 
 「DDBJ/EMBL-Bank/GenBank 国際塩基配列データベース」は、全世界の研究者が実験によって決定したDNA (または RNA)

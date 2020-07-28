@@ -3,6 +3,7 @@ layout: indexed_content
 title: JGA への登録
 pathname: submission
 category: aboutjga
+lang: ja
 ---
 
 ## 登録概要

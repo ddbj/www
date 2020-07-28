@@ -3,6 +3,7 @@ layout: 年表
 title: DDBJ staff presentations (2001-2008)
 pathname: past-presentations-e
 category: _activities
+lang: en
 ---
 
 ## 2008

@@ -2,6 +2,7 @@
 layout: indexed_content
 title: Services in past
 category: services
+lang: en
 ---
 
 ## Terminated WWW Services

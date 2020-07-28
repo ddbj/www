@@ -3,6 +3,7 @@ layout: indexed_content
 title: タンパク質コード配列; CDS feature について
 pathname: cds
 category: flatfile
+lang: ja
 ---
 　
 

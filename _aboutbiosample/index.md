@@ -2,6 +2,7 @@
 layout: 未定
 pathname: index
 category: aboutbiosample
+lang: ja
 ---
 
 <div id="content_part">

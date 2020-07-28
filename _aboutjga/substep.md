@@ -3,6 +3,7 @@ layout: indexed_content
 title: 登録手順
 pathname: substep
 category: aboutjga
+lang: ja
 ---
 
 ## JGA 概要

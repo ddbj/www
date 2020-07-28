@@ -2,6 +2,7 @@
 layout: 未定
 pathname: index
 category: aboutsc
+lang: ja
 ---
 
 <div id="primary">

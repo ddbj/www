@@ -3,6 +3,7 @@ layout: indexed_content
 title: DTA について
 pathname: about
 category: aboutdta
+lang: ja
 ---
 
   - [連絡先](#contact)

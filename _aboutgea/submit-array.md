@@ -3,6 +3,7 @@ layout: indexed_content
 title: Submit microarray experiment
 pathname: submit-array
 category: aboutgea
+lang: ja
 ---
 
 ## GEA 登録の流れ

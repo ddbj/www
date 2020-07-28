@@ -3,6 +3,7 @@ layout: indexed_content
 title: DRA data release
 pathname: dra-release-e
 category: _statistics
+lang: en
 ---
 
 Comment: Due to the shortage of available disk space, NCBI/EBI SRA data

@@ -4,6 +4,7 @@ lang: ja
 title: 最新リリースの情報
 pathname: relinfo
 category: _statistics
+lang: ja
 related_pages:
   - title: DB の out/in 統計量
     url: ./index.html

@@ -2,6 +2,7 @@
 layout: indexed_content
 title: 登録データの修正・更新申し込み
 category: services
+lang: ja
 ---
 
 ### 登録データの修正・更新 申し込みの流れ

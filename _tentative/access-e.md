@@ -3,6 +3,7 @@ layout: indexed_content
 title: Access
 pathname: access-e
 category: tentative
+lang: en
 ---
 
 ## Address

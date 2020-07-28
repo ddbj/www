@@ -3,6 +3,7 @@ layout: indexed_content
 title: Release Notes of DDBJ Releases
 pathname: relnote-e
 category: _statistics
+lang: en
 ---
 
 When the release note is revised, minor version number is incremented

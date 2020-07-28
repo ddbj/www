@@ -3,6 +3,7 @@ layout: indexed_content
 title: DDBJ Release Statistics
 pathname: release-e
 category: statistics
+lang: en
 ---
 
 ## Total data volume

@@ -2,6 +2,7 @@
 layout: indexed_content
 title: WABI MAFFT
 category: services
+lang: ja
 ---
 ## MAFFT の job の投入
 

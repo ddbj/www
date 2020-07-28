@@ -2,6 +2,7 @@
 layout: 未定
 pathname: index
 category: aboutdta
+lang: ja
 ---
 
 <div id="primary">

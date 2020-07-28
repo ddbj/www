@@ -3,6 +3,7 @@ layout: indexed_content
 title: RSS Feeds
 pathname: announcements-e
 category: tentative
+lang: en
 ---
 
 ## General Announcements

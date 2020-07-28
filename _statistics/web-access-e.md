@@ -3,6 +3,7 @@ layout: indexed_content
 title: Web access
 pathname: web-access-e
 category: _statistics
+lang: en
 ---
 
 Comment: 'Unique users/month' is 'unique IP addresses/month' (bot

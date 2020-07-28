@@ -3,6 +3,7 @@ layout: indexed_content
 title: DDBJ Sequence Read Archive Handbook
 pathname: submission-e
 category: aboutdra
+lang: en
 ---
 
 [DDBJ Sequence Read Archive (DRA)](/index-e.html)is an archive database

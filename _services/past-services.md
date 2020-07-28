@@ -2,6 +2,7 @@
 layout: indexed_content
 title: 過去のサービス
 category: services
+lang: ja
 ---
 
 ## Web サービス

@@ -2,6 +2,7 @@
 layout: indexed_content
 title: 塩基配列の登録
 category: services
+lang: ja
 ---
 
 ## 塩基配列登録の前に

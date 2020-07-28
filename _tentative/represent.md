@@ -3,6 +3,7 @@ layout: indexed_content
 title: 多型関連研究における同一配列の代表データ登録
 pathname: represent
 category: tentative
+lang: ja
 ---
 
 ## 多型関連研究における同一配列の代表データ登録

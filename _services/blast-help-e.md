@@ -2,6 +2,7 @@
 layout: indexed_content
 title: BLAST 
 category: services
+lang: en
 ---
 
 ## PROGRAM

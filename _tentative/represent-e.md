@@ -3,6 +3,7 @@ layout: indexed_content
 title: Representative submissions of identical sequences for variation studies
 pathname: represent-e
 category: tentative
+lang: en
 ---
 
 

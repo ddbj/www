@@ -3,6 +3,7 @@ layout: indexed_content
 title: DRA について
 pathname: about
 category: aboutdra
+lang: ja
 ---
 
 ## 連絡先 <a name="contact"></a>

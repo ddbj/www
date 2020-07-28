@@ -3,6 +3,7 @@ layout: indexed_content
 title: DDBJ での特許関連配列データの公開業務の紹介
 pathname: patent
 category: _activities
+lang: ja
 ---
 
 DDBJ Mail Magazine 連載期間：No.50（2010年5月27日発行）〜No.54（2010年11月1日発行）,

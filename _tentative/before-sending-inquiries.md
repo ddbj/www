@@ -3,6 +3,7 @@ layout: indexed_content
 title: 質問送信の前に
 pathname: before-sending-inquiries
 category: tentative
+lang: ja
 ---
 
 ## 質問送信の前に

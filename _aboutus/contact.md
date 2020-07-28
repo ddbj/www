@@ -3,6 +3,7 @@ layout: indexed_content
 title: お問い合わせ
 pathname: contact
 category: _aboutus
+lang: ja
 ---
 
 DDBJ

@@ -2,6 +2,7 @@
 layout: indexed_content
 title: Accession Number Assigned by INSD
 category: services
+lang: en
 ---
 
 ## Definition

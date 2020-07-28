@@ -3,6 +3,7 @@ layout: indexed_content
 title: Trace Archive
 pathname: submission
 category: aboutdta
+lang: ja
 ---
 
 ## Trace Archive の概要

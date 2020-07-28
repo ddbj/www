@@ -2,6 +2,7 @@
 layout: indexed_content
 title: TXSearch
 category: services
+lang: ja
 ---
 
 TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/) の検索システムです。国際塩基配列データベース([INSD]({{site.baseurl}}/aboutus/insdc.html)) にデータを登録する際には、NCBI Taxonomy に基づいた生物名の表記を使用する必要があります。

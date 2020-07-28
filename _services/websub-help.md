@@ -2,6 +2,7 @@
 layout: indexed_content
 title: DDBJ 塩基配列登録システム HELP
 category: services
+lang: ja
 ---
 
 ## 1\. Contact person

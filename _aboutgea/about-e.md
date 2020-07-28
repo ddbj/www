@@ -3,6 +3,7 @@ layout: indexed_content
 title: About GEA
 pathname: about-e
 category: aboutgea
+lang: en
 ---
 
 ## Contact

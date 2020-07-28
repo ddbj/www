@@ -3,6 +3,7 @@ layout: indexed_content
 title: Feature key
 pathname: features
 category: flatfile
+lang: ja
 ---
 
 DDBJ への新規登録において使用を推奨する feature key の定義を以下に挙げています。  

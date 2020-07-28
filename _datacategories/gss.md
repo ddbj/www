@@ -3,6 +3,7 @@ layout: indexed_content
 title: GSS
 pathname: gss
 category: datacategories
+lang: ja
 ---
 
 DDBJ/ENA/GenBank の GSS division は [EST](/ddbj/est.html) division

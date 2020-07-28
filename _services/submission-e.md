@@ -2,6 +2,7 @@
 layout: indexed_content
 title: Nucleotide Sequence Submission
 category: services
+lang: en
 related_pages:
   - title: Example of Submission
     url: /ddbj/example-e.html)

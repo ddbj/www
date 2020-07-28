@@ -2,6 +2,7 @@
 layout: indexed_content
 title: DDBJ Nucleotide Sequence Submission System HELP
 category: services
+lang: en
 ---
 
 ## 1\. Contact person

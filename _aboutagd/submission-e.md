@@ -3,6 +3,7 @@ layout: indexed_content
 title: Submission to AGD
 pathname: submission-e
 category: aboutagd
+lang: en
 ---
 
 ## Submission Guide

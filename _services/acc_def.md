@@ -2,6 +2,7 @@
 layout: indexed_content
 title: 国際塩基配列データベースのアクセッション番号
 category: services
+lang: ja
 ---
 
 

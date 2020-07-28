@@ -3,6 +3,7 @@ layout: indexed_content
 title: 進化ゲノム学とは
 pathname: introevog
 category: _activities
+lang: ja
 ---
 
 ## 進化ゲノム学とは

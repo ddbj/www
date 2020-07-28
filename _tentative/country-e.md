@@ -3,6 +3,7 @@ layout: indexed_content
 title: Controlled vocabulary for /country qualifier
 pathname: country-e
 category: tentative
+lang: en
 ---
 
 The original site; [Controlled vocabulary for /country

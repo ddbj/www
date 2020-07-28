@@ -3,6 +3,7 @@ layout: indexed_content
 title: About DTA
 pathname: about-e
 category: aboutdta
+lang: en
 ---
 
 ## Contact

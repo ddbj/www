@@ -3,6 +3,7 @@ layout: indexed_content
 title: Qualifier key の定義
 pathname: qualifiers
 category: flatfile
+lang: ja
 ---
 
 DDBJ への新規登録で使用を推奨する qualifier key を以下に挙げています。 より詳しい INSDC qualifier key に関する情報は, Feature Table Definition の [7.3.1 Qualifier List](/ddbj/full\\\_index.html\\\#7.3.1) をご参照ください。 

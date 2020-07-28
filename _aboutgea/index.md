@@ -2,6 +2,7 @@
 layout: 未定
 pathname: index
 category: aboutgea
+lang: ja
 ---
 
 <div id="primary">

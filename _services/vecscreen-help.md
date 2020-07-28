@@ -2,6 +2,7 @@
 layout: indexed_content
 title: VecScreen
 category: services
+lang: ja
 ---
 
 ## VecScreenとは

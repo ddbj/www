@@ -3,6 +3,7 @@ layout: indexed_content
 title: WGS
 pathname: wgs
 category: datacategories
+lang: ja
 ---
 
 様々な生物においてホールゲノムショットガン配列決定法（whole genome shotgun:

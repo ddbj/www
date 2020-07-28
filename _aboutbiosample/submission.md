@@ -3,6 +3,7 @@ layout: indexed_content
 title: DDBJ BioSample Handbook
 pathname: submission
 category: aboutbiosample
+lang: ja
 ---
 
 ## 概要

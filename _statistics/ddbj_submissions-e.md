@@ -3,6 +3,7 @@ layout: indexed_content
 title: Monthly Data Submitter and Session to DDBJ
 pathname: ddbj_submissions-e
 category: _statistics
+lang: en
 ---
 
 <div id="page" class="top">

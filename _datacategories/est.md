@@ -3,6 +3,7 @@ layout: indexed_content
 title: EST
 pathname: est
 category: datacategories
+lang: ja
 ---
 
 DDBJ/ENA/GenBank の EST division "Expressed Sequence Tags" は様々な生物に由来する

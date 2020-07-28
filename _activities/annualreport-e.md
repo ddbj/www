@@ -3,6 +3,7 @@ layout: indexed_content
 title: DDBJ Annual Report
 pathname: annualreport-e
 category: _activities
+lang: en
 ---
 
 <div id="page" class="top">

@@ -3,6 +3,7 @@ layout: indexed_content
 title: FASTAとBLASTについて
 pathname: homology_doc
 category: _activities
+lang: ja
 ---
 
 ## FASTAとBLASTについて

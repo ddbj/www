@@ -3,6 +3,7 @@ layout: indexed_content
 title: DDBJ Annual Report
 pathname: annualreport
 category: _activities
+lang: ja
 ---
 
 資料は [Google Drive](https://drive.google.com/drive/u/2/folders/1oq8tQ3pD6hgUCcIfzCNGAHV8YocJ5U0L) からもご覧になれます。

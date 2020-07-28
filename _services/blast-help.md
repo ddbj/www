@@ -2,6 +2,7 @@
 layout: indexed_content
 title: BLAST 
 category: services
+lang: ja
 ---
 
 DDBJ では，Web版 BLAST の他に，以下の方法でも BLAST サービスを提供しています。

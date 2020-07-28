@@ -3,6 +3,7 @@ layout: indexed_content
 title: Description of Location
 pathname: location-e
 category: flatfile
+lang: en
 ---
 
 ## Description of Location

@@ -3,6 +3,7 @@ layout: 発行物アーカイブ
 title: DDBJ Publications Archive
 pathname: pub-archives-e
 category: _activities
+lang: en
 ---
 
 All published materials are available at [Google

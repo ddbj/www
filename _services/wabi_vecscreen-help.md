@@ -2,6 +2,7 @@
 layout: indexed_content
 title: WABI VecScreen
 category: services
+lang: ja
 ---
 
 ## VECSCREEN の job の投入

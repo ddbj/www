@@ -3,6 +3,7 @@ layout: indexed_content
 title: DDBJ Group Cloud
 pathname: dgc-e
 category: tentative
+lang: en
 ---
 
 ## DDBJ group cloud service for sharing pre-publication data

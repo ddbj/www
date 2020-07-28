@@ -3,6 +3,7 @@ layout: indexed_content
 title: Genome Project のデータ登録
 pathname: genome
 category: datacategories
+lang: ja
 ---
 
 ## Genome Project のデータ登録

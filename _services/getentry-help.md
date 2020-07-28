@@ -3,6 +3,7 @@ layout: indexed_content
 lang: ja
 title: getentry
 category: services
+lang: ja
 related_pages:
   - title: ARSA ヘルプ
     url: services/arsa-help.html

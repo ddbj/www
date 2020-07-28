@@ -3,6 +3,7 @@ layout: indexed_content
 title: 遺伝子とゲノム
 pathname: genegenome
 category: _activities
+lang: ja
 ---
 
 ## 遺伝子とゲノム

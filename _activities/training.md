@@ -3,6 +3,7 @@ layout: 年表
 title: Training events
 pathname: 講習会
 category: activities
+lang: ja
 ---
 
 <div id="page" class="top">

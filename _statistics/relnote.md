@@ -4,6 +4,7 @@ lang: ja
 title: リリースノート (DDBJ, 16S rRNA, DAD)
 pathname: relnote
 category: _statistics
+lang: ja
 related_pages:
   - title: DB の out/in 統計量
     url: ./index.html

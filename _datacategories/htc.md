@@ -3,6 +3,7 @@ layout: indexed_content
 title: HTC
 pathname: htc
 category: datacategories
+lang: ja
 ---
 
 DDBJ/ENA/GenBank の HTC division は 主として 完全長の cDNA (mRNA) を cloning

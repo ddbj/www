@@ -2,6 +2,7 @@
 layout: indexed_content
 title: ClustalW 
 category: services
+lang: en
 ---
 
 ClustalW is a general purpose multiple sequence alignment program for

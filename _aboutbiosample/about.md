@@ -3,6 +3,7 @@ layout: indexed_content
 title: BioSample について
 pathname: about
 category: aboutbiosample
+lang: ja
 ---
 
 ## 連絡先

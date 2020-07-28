@@ -3,6 +3,7 @@ layout: indexed_content
 title: MGA
 pathname: mga
 category: other
+lang: ja
 ---
 
 <span class="red">**\[重要\] MGA データの新規登録は終了しました。**</span>

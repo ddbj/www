@@ -3,6 +3,7 @@ layout: indexed_content
 title: Accepted Data File Formats
 pathname: datafile-e
 category: aboutgea
+lang: en
 ---
 
 ## Important notes on file preparation:

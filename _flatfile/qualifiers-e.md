@@ -3,6 +3,7 @@ layout: indexed_content
 title: Qualifier key
 pathname: qualifiers-e
 category: flatfile
+lang: en
 ---
 
 The qualifier keys that are used and recommended for DDBJ new

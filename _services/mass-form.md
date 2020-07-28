@@ -2,6 +2,7 @@
 layout: indexed_content
 title: MSS 利用申し込み
 category: services
+lang: ja
 ---
 
 ## MSS 利用 申し込みの流れ

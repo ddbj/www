@@ -3,6 +3,7 @@ layout: indexed_content
 title: ウェブサイトとデータ・サービスの利用に関するポリシーと免責事項
 pathname: policies
 category: tentative
+lang: ja
 ---
 
 DDBJ センターでは[情報・システム研究機構](http://www.rois.ac.jp/) (ROIS)の[規程](https://www.rois.ac.jp/open/21.html)に従いサイトポリシーを規定します。  

@@ -3,6 +3,7 @@ layout: indexed_content
 title: Submission to JGA
 pathname: submission-e
 category: aboutjga
+lang: en
 ---
 
 ## Submission Guide

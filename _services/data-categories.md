@@ -2,6 +2,7 @@
 layout: indexed_content
 title: 登録データ種別
 category: services
+lang: ja
 ---
 
 ## DDBJ に登録可能なデータ <a name="accept"></a>

@@ -2,6 +2,7 @@
 layout: 未定
 pathname: about
 category: aboutjga
+lang: ja
 ---
 
 <div class="side_nav_menu">

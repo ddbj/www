@@ -3,6 +3,7 @@ layout: 年表
 title: DDBJ staff papers (2009-)
 pathname: papers-e
 category: _activities
+lang: en
 ---
 
 ## 2020

@@ -3,6 +3,7 @@ layout: indexed_content
 title: DDBJ Sequence Read Archive Handbook
 pathname: submission
 category: aboutdra
+lang: ja
 ---
 
 # DDBJ Sequence Read Archive

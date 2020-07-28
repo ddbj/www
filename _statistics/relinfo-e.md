@@ -3,6 +3,7 @@ layout: indexed_content
 title: Latest Release Information
 pathname: relinfo-e
 category: _statistics
+lang: en
 ---
 
 [Release notes (DDBJ, 16S rRNA, DAD)](/stats/relnote.html)

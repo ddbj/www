@@ -3,6 +3,7 @@ layout: indexed_content
 title: Experiment types in GEA
 pathname: experiment-types-e
 category: aboutgea
+lang: en
 ---
 
 ## Experiment types in GEA

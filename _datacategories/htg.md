@@ -3,6 +3,7 @@ layout: indexed_content
 title: HTG
 pathname: htg
 category: datacategories
+lang: ja
 ---
 
 DDBJ/ENA/GenBank の HTG division は finished

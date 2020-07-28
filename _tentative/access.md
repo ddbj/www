@@ -3,6 +3,7 @@ layout: indexed_content
 title: DDBJ へのアクセス
 pathname: access
 category: tentative
+lang: ja
 ---
 
 ## 所在地・連絡先

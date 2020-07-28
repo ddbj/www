@@ -2,6 +2,7 @@
 layout: 未定
 pathname: about-e
 category: aboutjga
+lang: en
 ---
 
 <div id="page" class="top">

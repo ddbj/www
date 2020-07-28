@@ -2,6 +2,7 @@
 layout: indexed_content
 pathname: index-e
 category: aboutjga
+lang: en
 ---
 
 <div id="page" class="top">

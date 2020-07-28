@@ -2,6 +2,7 @@
 layout: indexed_content
 title: References
 category: services
+lang: en
 ---
 
 ## Latest publication regarding DDBJ Center

@@ -2,6 +2,7 @@
 layout: indexed_content
 title: WABI Web API for Biology
 category: services
+lang: ja
 ---
 
 ## WABI (Web API for Biology)

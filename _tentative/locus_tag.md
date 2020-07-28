@@ -3,6 +3,7 @@ layout: indexed_content
 title: /locus_tag qualifier の記載法
 pathname: locus_tag
 category: tentative
+lang: ja
 ---
 
 ## 背景

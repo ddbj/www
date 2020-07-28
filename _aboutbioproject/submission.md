@@ -3,6 +3,7 @@ layout: indexed_content
 title: DDBJ BioProject Handbook
 pathname: submission
 category: aboutbioproject
+lang: ja
 ---
 
 ## 概要

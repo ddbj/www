@@ -3,6 +3,7 @@ layout: 年表
 title: 講習会
 pathname: update-training
 category: activities
+lang: ja
 ---
 
 # 講習会

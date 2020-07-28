@@ -2,6 +2,7 @@
 layout: 未定
 pathname: index-e
 category: aboutgea
+lang: en
 ---
 
 <div id="page" class="top">

@@ -3,6 +3,7 @@ layout: indexed_content
 title: Submit sequencing experiment
 pathname: submit-seq
 category: aboutgea
+lang: ja
 ---
 
 ## GEA submission flow

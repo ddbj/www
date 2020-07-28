@@ -3,6 +3,7 @@ layout: indexed_content
 title: WGS
 pathname: wgs-e
 category: datacategories
+lang: en
 related_pages:
   - title: Data Submission from Genome Project
     url: datacategories/genome-e.html

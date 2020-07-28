@@ -3,6 +3,7 @@ layout: indexed_content
 title: Controlled vocabulary for ncRNA classes
 pathname: ddbj:ncRNA_class
 category: tentative
+lang: ja
 ---
 
 # Controlled vocabulary for ncRNA classes

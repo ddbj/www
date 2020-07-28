@@ -3,6 +3,7 @@ layout: indexed_content
 title: Controlled vocabulary for /db_xref qualifier
 pathname: db_xref
 category: tentative
+lang: ja
 ---
 
 The original site; [Controlled vocabulary for /db_xref qualifier](http://www.insdc.org/documents/dbxref-qualifier-vocabulary) 2019.08.14 version  

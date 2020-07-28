@@ -3,6 +3,7 @@ layout: indexed_content
 title: Notification for research participants regarding our database activities for human data
 pathname: reaserch-participant-notification-e
 category: tentative
+lang: en
 ---
 
 ## Notification for research participants regarding our database activities for human data

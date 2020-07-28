@@ -3,6 +3,7 @@ layout: indexed_content
 title: Patent column from DDBJ
 pathname: patent-e
 category: _activities
+lang: en
 ---
 
 Quote from Mail Magazine : No.62&63 (Sep.02,2011) ～ No.71&72

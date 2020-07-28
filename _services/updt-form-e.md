@@ -2,6 +2,7 @@
 layout: indexed_content
 title: Application Form for Data Update Requests
 category: services
+lang: en
 ---
 
 ### Flow of data update

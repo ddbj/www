@@ -2,6 +2,7 @@
 layout: indexed_content
 title: 登録ファイル形式
 category: services
+lang: ja
 ---
 
 ## 配列ファイル<a name="sequence"></a>

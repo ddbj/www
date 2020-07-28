@@ -3,6 +3,7 @@ layout: indexed_content
 title: 登録の見本
 pathname: example
 category: flatfile
+lang: ja
 ---
 
 登録の例としてご利用下さい。

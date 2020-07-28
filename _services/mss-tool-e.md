@@ -2,6 +2,7 @@
 layout: indexed_content
 title: Validation tools for MSS data files
 category: services
+lang: en
 related_pages:
   - title: Submission File Format
     url: services/file-format-e.html

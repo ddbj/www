@@ -3,6 +3,7 @@ layout: indexed_content
 lang: ja
 title: DB の out/in 統計量
 category: statistics
+lang: ja
 related_pages:
   - title: DDBJ 定期リリース統計
     url: ./ddbj-release
