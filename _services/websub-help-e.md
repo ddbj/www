@@ -215,14 +215,22 @@ Please select template that matches to annotation.
 
 ### Annotation when a template except "other" is selected
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-1_e.png){:.w600}
+<div class="highlight">
+
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-1_e.png)
+
+</div>
 
 Related page  
 : [Definition of Feature key](/ddbj/features-e.html) / [Definition of Qualifier key](/ddbj/qualifiers-e.html) / [Organism qualifier](/ddbj/organism-e.html) / [Protein Coding Sequence; CDS feature](/ddbj/cds-e.html)
 
 ### Annotation when template "other" is selected
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-2_e.png){:.w600}
+<div class="highlight">
+
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-2_e.png)
+
+</div>
 
 Related page  
 : [Definition of Feature key](/ddbj/features-e.html) / [Definition of Qualifier key](/ddbj/qualifiers-e.html) / [Organism qualifier](/ddbj/organism-e.html) / [Protein Coding Sequence; CDS feature](/ddbj/cds-e.html)
@@ -263,19 +271,35 @@ Related page
 
 #### 16S rRNA
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-1_e.png){:.w600}
+<div class="highlight">
+
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-1_e.png)
+
+</div>
 
 #### CDS
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-2_e.png){:.w600}
+<div class="highlight">
+
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-2_e.png)
+
+</div>
 
 #### Mitochondrial genome
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-3_e.png){:.w600}
+<div class="highlight">
+
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-3_e.png)
+
+</div>
 
 ### Submission by uploading the annotation file
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-6_e.png){:.w600}
+<div class="highlight">
+
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-6_e.png)
+
+</div>
 
 #### Uploadable file format
 
@@ -299,7 +323,11 @@ Related page
 Related page  
 : [Definition of Feature key](/ddbj/features-e.html) / [Definition of Qualifier key](/ddbj/qualifiers-e.html) / [Organism qualifier](/ddbj/organism-e.html) / [Protein Coding Sequence; CDS feature](/ddbj/cds-e.html)
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-6-1_e.png){:.w600}
+<div class="highlight">
+
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-6-1_e.png)
+
+</div>
 
 #### Common mistake that causes file-uploading error
 

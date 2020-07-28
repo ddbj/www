@@ -286,7 +286,7 @@ To use a project obtained in the other account, please [contact GEA team](/conta
 
 Enter information for [IDF (Investigation Description Format)](/gea/metadata-e.html#idf).
 
-[Example IDF](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=30173120).
+[Example IDF](/gea/example-e.html#idf).
 
   - Protocol: Pre-checked protocols are mandatory.
   - Publication: Describe associated publications by PubMed ID or DOI. For unpublished manuscript, please [inform us](/contact-e.html) the ID after assignment.

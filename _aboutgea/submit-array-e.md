@@ -271,7 +271,11 @@ You can delete an un-submitted GEA submission at "Delete submission".
 
 Select a submitted project registered in your account. If a BioProject is not registered, please go to the [BioProject submission site](/bioproject/submission-e.html#bioproject-submission) and submit a project.
 
+<div class="attention red">
+
 To use a project obtained in the other account, please [contact GEA team](/contact-e.html).
+
+</div>
 
 {::nomarkdown}
 {% include image.html url="books/gea-bp.jpg" caption="Select a BioProject for the GEA experiment" class="w550" %}

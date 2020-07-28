@@ -6,8 +6,6 @@ category: aboutgea
 lang: en
 ---
 
-# MAGE-TAB format for raw and processed data matrix
-
 ## Data matrix format
 
 This format allows each data point in the file to be mapped to a particular assay in the experiment, and to a particular probe/probe set in the array design file of your experiment. For the mapping to work smoothly, each matrix file should contain data from assays on a single array design (i.e if you use multiple array designs in your experiment, mutliple matrix files will be needed), and the column/row headings and the order of columns are strictly controlled:
@@ -20,8 +18,8 @@ The first header line of a matrix file, Hybridization REF, allows assay-mapping 
 
 Measurements such as Log2 fold-changes are often calculated from more than one assay (e.g. for every given gene, calculate the average of 3 knockout samples vs the average of 3 wild-type controls). In that case, you can put down multiple assay names per column, with the assay names separated by semi-colons:
 
-| **Hybridization REF** | <span class="blue">Hyb1;Hyb2;Hyb3</span> | <span class="blue">Hyb4;Hyb5;Hyb6</span> |
-| **Reporter REF**      | <span class="blue">log2 FC</span>        | <span class="blue">log2 FC</span>        |
+| **Hybridization REF** | Hyb1;Hyb2;Hyb3 | Hyb4;Hyb5;Hyb6 |
+| **Reporter REF**      | log2 FC        | log2 FC        |
 
 **Order of data columns:**
 
@@ -29,13 +27,13 @@ The format requires an ordered and regular organization of the columns: first by
 
 Correct
 
-| **Hybridization REF** | <span class="blue">Hyb1</span>    | <span class="blue">Hyb1</span>   | <span class="red">Hyb2</span>     | <span class="red">Hyb2</span>    |
-| **Reporter REF**      | <span class="blue">log2 FC</span> | <span class="red">p-value</span> | <span class="blue">log2 FC</span> | <span class="red">p-value</span> |
+| **Hybridization REF** | Hyb1    | Hyb1   | Hyb2     | Hyb2    |
+| **Reporter REF**      | log2 FC | p-value | log2 FC | p-value |
 
 Wrong
 
-| **Hybridization REF** | <span class="blue">Hyb1</span>    | <span class="red">Hyb2</span>     | <span class="blue">Hyb1</span>   | <span class="red">Hyb2</span>    |
-| **Reporter REF**      | <span class="blue">log2 FC</span> | <span class="blue">log2 FC</span> | <span class="red">p-value</span> | <span class="red">p-value</span> |
+| **Hybridization REF** | Hyb1    | Hyb2     | Hyb1   | Hyb2    |
+| **Reporter REF**      | log2 FC | log2 FC | p-value | p-value |
 
 ### Example non-Affymetrix data matrix
 
@@ -52,8 +50,8 @@ Assay Name nodes in SDRF:
 
 Non-Affymetrix data matrix:
 
-| **Hybridization REF** | <span class="blue">Sample 1:Cy3;Sample 2:Cy3</span> | <span class="blue">Sample 3:Cy3;Sample 4:Cy3</span> |
-| **Reporter REF**      | <span class="blue">log2 ratio</span>                | <span class="blue">log2 ratio</span>                |
+| **Hybridization REF** | Sample 1:Cy3;Sample 2:Cy3 | Sample 3:Cy3;Sample 4:Cy3 |
+| **Reporter REF**      | log2 ratio                | log2 ratio                |
 | **A_42_P834147**      | 4.2                     | 2.6                       |
 | **A_43_P19480**       | 1.9                     | 1.3                       |
 | **A_42_P495989**      | 5.3                     | 9.8                       |
@@ -71,8 +69,8 @@ Assay Name nodes in SDRF:
 
 Affymetrix data matrix:
 
-| **Hybridization REF**    | <span class="blue">Sample 1:biotin</span> | <span class="blue">Sample 1:biotin</span> | <span class="blue">Sample 2:biotin</span> | <span class="blue">Sample 2:biotin</span> |
-| **CompositeElement REF** | <span class="blue">CELIntensity</span>    | <span class="blue">CELStdev</span>        | <span class="blue">CELIntensity</span>    | <span class="blue">CELStdev</span>        |
+| **Hybridization REF**    | Sample 1:biotin | Sample 1:biotin | Sample 2:biotin | Sample 2:biotin |
+| **CompositeElement REF** | CELIntensity    | CELStdev        | CELIntensity    | CELStdev        |
 | **AFFX_ThrX-M_at**      | 142.1                | 2.6                  | 199.1                | 6.5                  |
 | **20050_at**            | 70.4                 | 1.3                  | 88.3                 | 4.7                  |
 | **20051_at**            | 227.3                | 9.8                  | 213.2                | 3.5                  |

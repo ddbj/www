@@ -20,7 +20,7 @@ The IDF (Investigation Description Format) file is used to give an overview of t
 
 ### IDF example
 
-[Full IDF example in spreadsheet.](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=0)
+[IDF example](/gea/example-e.html#idf)
 
 | ----------------------------------------------------- | ------------------------------------------------------------------------------- | --- |
 | [Comment\[GEAAccession\]](#Comment_idf)               | E-GEAD-369                                                                      |     |

@@ -27,7 +27,7 @@ For JGA overview, see [this slide (Japanese only)](https://drive.google.com/file
 
 Download and fill in the metadata in English. For the JGA metadata, see [this page](/jga/submission-e.html).
 
-[![JGA metadata excel]({{ site.baseurl }}/assets/images/parts/download.png "JGA metadata excel"){:.w40}.]({{ site.baseurl }}/assets/files/submission/JGA_metadata.xlsx)
+[![JGA metadata excel]({{ site.baseurl }}/assets/images/parts/download.png "JGA metadata excel"){:.w40}]({{ site.baseurl }}/assets/files/submission/JGA_metadata.xlsx)
 
 last updated: 2019-06-07
 
@@ -225,7 +225,7 @@ Shipping fee should be paid by the user.
 
 Encrypt the data files by using the JGA data encryption tool and copy them into the hard disk. Upload the XML files by using the JGA submission tool and do not include them in the disk.
 
-[![JGA data encryption tool]({{ site.baseurl }}/assets/images/parts/download.png "JGA data encryption tool"){:.w40}.]({{ site.baseurl }}/assets/files/submission/jga-data-encrypt.tar.gz)
+[![JGA data encryption tool]({{ site.baseurl }}/assets/images/parts/download.png "JGA data encryption tool"){:.w40}]({{ site.baseurl }}/assets/files/submission/jga-data-encrypt.tar.gz)
 
 last updated: 2015-12-09
 

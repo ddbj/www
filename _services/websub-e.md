@@ -20,8 +20,6 @@ related_pages:
     url: flatfile/location-e.html
 ---
 
-# DDBJ Nucleotide Sequence Submission System (NSSS)
-
 {::options parse_block_html="true" /}
 <div class="attention">
 

@@ -231,14 +231,22 @@ Assembly information のサンプルは**[ここから](/files/example/NSSShelp-
 
 ### アノテーション画面 - Template で "other" 以外を選択したとき
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-1_j.png){:.w600}
+<div class="highlight">
+
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-1_j.png)
+
+</div>
 
 関連するページ  
 : [Feature key の定義](/ddbj/features.html) / [Qualifier key の定義](/ddbj/qualifiers.html) / [Organism qualifier に記載する生物名](/ddbj/organism.html) / [タンパク質コード配列; CDS feature について](/ddbj/cds.html)
 
 ### アノテーション画面 - Template で "other" を選択したとき
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-2_j.png){:.w600}
+<div class="highlight">
+
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-2_j.png)
+
+</div>
 
 関連するページ  
 : [Feature key の定義](/ddbj/features.html) / [Qualifier key の定義](/ddbj/qualifiers.html) / [Organism qualifier に記載する生物名](/ddbj/organism.html) / [タンパク質コード配列; CDS feature について](/ddbj/cds.html)
@@ -282,19 +290,35 @@ Assembly information のサンプルは**[ここから](/files/example/NSSShelp-
 
 #### 16S rRNA
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-1_j.png){:.w600}
+<div class="highlight">
+
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-1_j.png)
+
+</div>
 
 #### CDS
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-2_j.png){:.w600}
+<div class="highlight">
+
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-2_j.png)
+
+</div>
 
 #### Mitochondrial genome
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-3_j.png){:.w600}
+<div class="highlight">
+
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-3_j.png)
+
+</div>
 
 ### アノテーションファイルのアップロード方法
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-6_j.png){:.w600}
+<div class="highlight">
+
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-6_j.png)
+
+</div>
 
 #### アップロード可能なアノテーションファイル
 
@@ -318,7 +342,11 @@ Assembly information のサンプルは**[ここから](/files/example/NSSShelp-
 関連するページ  
 : [Feature key の定義](/ddbj/features.html) / [Qualifier key の定義](/ddbj/qualifiers.html) / [Organism qualifier に記載する生物名](/ddbj/organism.html) / [タンパク質コード配列; CDS feature について](/ddbj/cds.html)
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-6-1_j.png){:.w600}
+<div class="highlight">
+
+![]({{ site.baseurl }}/assets/images/help/NSSShelp7-6-1_j.png)
+
+</div>
 
 #### アノテーションファイルのアップロードエラーとなる主な原因
 
