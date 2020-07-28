@@ -51,18 +51,18 @@ BioProject は同じプロジェクトに由来するデータ，それからま
 
 プロジェクトにはプライマリープロジェクトとアンブレラプロジェクトの二種類があります。
 
-  : プライマリープロジェクト  
-    既に登録したデータ，または，これから登録しようとしているデータをまとめるために登録者が作成するプロジェクト。
-    <span class="red">関連するデータが公開されるまで非公開にすることができます。</span>
+プライマリープロジェクト  
+: 既に登録したデータ，または，これから登録しようとしているデータをまとめるために登録者が作成するプロジェクト。<span class="red">関連するデータが公開されるまで非公開にすることができます。</span>
 
-  : アンブレラプロジェクト  
-    関連性のあるプロジェクトを上位レベルでまとめるためのプロジェクト。アンブレラプロジェクトは特定のルールに従って自動的に作成されたり，データベーススタッフがユーザからのリクエストに基づいて作成したり，グループ化が必要なプロジェクトが同定された場合に作成されます。<span class="red">非公開にすることはできません。</span>
+アンブレラプロジェクト
 
-    アンブレラプロジェクトは大規模なプロジェクトや研究費の提供元が同一のプロジェクトといった関連するプロジェクトを上位レベルでまとめるために存在しています。プライマリープロジェクトは登録されているデータにリンクされ，さらに１つ以上のアンブレラプロジェクトにリンクすることができます。プライマリープロジェクト同士が直接リンクされることはなく，それらはアンブレラプロジェクトを介して間接的にリンクされます。
+: 関連性のあるプロジェクトを上位レベルでまとめるためのプロジェクト。アンブレラプロジェクトは特定のルールに従って自動的に作成されたり，データベーススタッフがユーザからのリクエストに基づいて作成したり，グループ化が必要なプロジェクトが同定された場合に作成されます。<span class="red">非公開にすることはできません。</span>
 
-    <div class="attention red">
-    配列データはアンブレラプロジェクトを直接参照することはできません。プライマリープロジェクトを介してアンブレラにリンクされます。
-    </div>
+  アンブレラプロジェクトは大規模なプロジェクトや研究費の提供元が同一のプロジェクトといった関連するプロジェクトを上位レベルでまとめるために存在しています。プライマリープロジェクトは登録されているデータにリンクされ，さらに１つ以上のアンブレラプロジェクトにリンクすることができます。プライマリープロジェクト同士が直接リンクされることはなく，それらはアンブレラプロジェクトを介して間接的にリンクされます。
+
+  <div class="attention red">
+  配列データはアンブレラプロジェクトを直接参照することはできません。プライマリープロジェクトを介してアンブレラにリンクされます。
+  </div>
 
 ### 階層構造
 
@@ -267,7 +267,8 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 
 #### Project data type<a name="Project_data_type"></a>
 
-[Project data type](#Project_data_type)<span class="red">\*</span><a name="Project data type"></a>  
+[Project data type](#Project_data_type)<span class="red">\*</span><a name="Project data type"></a>
+
 : Project の分類。以下の選択肢から該当する type を選びます。複数選択することができます。[News: Project data type を複数選択できるようになりました](/news/ja/2014-11-12.html)
 
   NCBI ではプロジェクトにリンクしている実験データから独自に [Project data type](https://www.ncbi.nlm.nih.gov/books/NBK54364/def-item/project-data-type/) を割り振っています。また，[EBI](https://www.ebi.ac.uk/ena/submit/project-format) では Project data type を使用していません。
@@ -381,15 +382,16 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 
 #### Locus tag prefix
 
-[Locus tag prefix](#Locus_tag_prefix)<span class="conditionally_required">\*</span><a name="Locus_tag_prefix"></a>  
+[Locus tag prefix](#Locus_tag_prefix)<span class="conditionally_required">\*</span><a name="Locus_tag_prefix"></a>
+
 : \[Project data type="Genome Sequencing" or "Metagenome"\] AND \[Capture="Whole"\] AND \[Objective="Sequence" or "Annotation" or "Assembly"\] で Locus tag prefix 入力ボックスが現れます。 ゲノムをアセンブルするプロジェクトでは，アセンブリに対してユニークな locus tag prefix が必要です。[WGS](/ddbj/wgs.html) の登録のみで prefix を使用しない場合は入力欄を空にしてください。
 
-[Locus tag prefix について](/ddbj/locus_tag.html)
+  [Locus tag prefix について](/ddbj/locus_tag.html)
 
-Locus tag prefix のフォーマット  
-Locus tag prefix には３文字以上の英数字のみを含めることができます。先頭は英文字にします。数字は２文字目以降で使用できます(例: A1C)。 シンボル (-\_\*) を含めることはできません。 Locus tag prefix とタグの値はアンダースコア '\_' で区切ります (例: A1C\_00001)。
+  Locus tag prefix のフォーマット  
+  Locus tag prefix には３文字以上の英数字のみを含めることができます。先頭は英文字にします。数字は２文字目以降で使用できます(例: A1C)。 シンボル (-\_\*) を含めることはできません。 Locus tag prefix とタグの値はアンダースコア '\_' で区切ります (例: A1C\_00001)。
 
-DDBJ BioProject 独自に最大タグ長を12文字に制限しています。小文字は大文字に変換されて表示されますが，実際には locus tag は大文字・小文字の区別なく予約されます。
+  DDBJ BioProject 独自に最大タグ長を12文字に制限しています。小文字は大文字に変換されて表示されますが，実際には locus tag は大文字・小文字の区別なく予約されます。
 
 ### Target
 
