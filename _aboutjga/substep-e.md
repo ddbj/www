@@ -147,8 +147,7 @@ Select the downloaded XML and data files and upload them to the target submissio
 
 ### Validation of submitted files
 
-Submitted metadata and data files are validated and the data files are
-uploaded in the encrypted form.
+Submitted metadata and data files are validated and the data files are uploaded in the encrypted form.
 
   - The metadata XML files are validated against [JGA XML schema](https://github.com/ddbj/pub/tree/master/docs/jga).
   - [The relationships between each metadata object](/jga/submission-e.html#metadata)

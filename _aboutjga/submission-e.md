@@ -202,7 +202,7 @@ XML schema: [JGA.policy.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 To submitting only aggregated data or data which are not suitable for Sample-Experiment-Data, these data can be submitted as Sample-Analysis instead of Sample-Experiment-Data.
 
 {::nomarkdown}
-{% include image.html url="submission/sample-analysis.jpg" caption="Analysis data aggregating Samples" class="w500" %}
+{% include image.html url="submission/sample-analysis.jpg" caption="One Analysis for each Sample" class="w500" %}
 {:/}
 
 {::nomarkdown}

@@ -50,19 +50,20 @@ A series of publications can be listed in the [Publication](#Publication).
 
 There are two basic types of projects; primary and umbrella projects.
 
-  Primary project:  
-  : Submitted projects which are intended to represent and be linked to current or future data submissions. <span class="red">Primary projects can be kept private.</span>
+Primary project:  
+: Submitted projects which are intended to represent and be linked to current or future data submissions. <span class="red">Primary projects can be kept private.</span>
 
-  Umbrella project:  
-  : Administrative project that is created to group multiple projects that are related by a single effort from a single submitter or group of submitters. Umbrella projects may be created automatically using a rule-based logic or may be created by database staff upon request or upon identification of a needed grouping. <span class="red">Umbrella projects cannot be kept private.</span>
+Umbrella project:
+
+: Administrative project that is created to group multiple projects that are related by a single effort from a single submitter or group of submitters. Umbrella projects may be created automatically using a rule-based logic or may be created by database staff upon request or upon identification of a needed grouping. <span class="red">Umbrella projects cannot be kept private.</span>
     
   Umbrella projects exist to provide an organizational structure to a large collaborative project and to group projects that are related via funding or submitting source or collaboration. Submitted primary projects are linked to data as it is submitted, and are linked to one or many umbrella projects. Submitted primary projects are not directly linked to other primary projects; they are linked indirectly by way of links to the umbrella project.
 
   <div class="attention red">  
 
-Nucleotide sequence data can not directly refer an umbrella project. Sequence data are linked to an umbrella via a primary project.
+  Nucleotide sequence data can not directly refer an umbrella project. Sequence data are linked to an umbrella via a primary project.
 
-</div>
+  </div>
 
 ### BioProject hierarchy
 
@@ -71,12 +72,11 @@ Definition of an umbrella project may be done in collaboration with a funding so
 Some large initiatives are represented by more than one layer of umbrella projects (see Figure B below); for instance, a top-most level may identify the largest definition of the collaboration; a second level of umbrella projects identify the primary categories of data production; and finally a third layer represents the projects that actually generate the data that is submitted. The Human Microbiome project is an example of this type of complex hierarchy where the top-most project, [PRJNA43021](https://www.ncbi.nlm.nih.gov/bioproject?term=PRJNA43021), represents the most inclusive definition of the initiative, and a secondary level (such as [PRJNA28331](https://www.ncbi.nlm.nih.gov/bioproject?term=PRJNA28331)) identifies a major sub-project to sequence multiple reference genomes each of which has a distinct project accession.
 
 {::nomarkdown}
-{% include image.html url="submission/bp_org.jpg" caption="Schematic diagram of BioProject hierarchies. (A)Two layers. (B)Three layers." class="w500" %}
+{% include image.html url="submission/bp_org.jpg" caption="Schematic diagram of BioProject hierarchies. (A)Two layers. (B)Three layers." class="w450" %}
 {:/}
 
 Two layers (A)  
-: Initiatives may be organized as a single Umbrella project with one or many submitted projects that are connected to data. Example:
-    [Neanderthal Metagenome](https://www.ncbi.nlm.nih.gov/bioproject/18309).
+: Initiatives may be organized as a single Umbrella project with one or many submitted projects that are connected to data. Example: [Neanderthal Metagenome](https://www.ncbi.nlm.nih.gov/bioproject/18309).
 
 Three layers (B)  
 : Very large initiatives which have distinct sub-projects may have two levels of Umbrella project. For example, a top-level Umbrella project groups all components of the initiative; mid-level Umbrella projects reflect two distinct branches of the project (such as sequencing vs. epigenetics); and several primary projects denote distinct project data types (e.g., genome sequencing, transcriptome, epigenetics, etc.). Example: [NIH Human Microbiome Project (HMP) Roadmap Project](https://www.ncbi.nlm.nih.gov/bioproject/43021).
@@ -84,7 +84,7 @@ Three layers (B)
 ### Data release
 
 {::nomarkdown}
-{% include image.html url="submission/release_re.jpg" caption="Triggering of data release between primary projects and data records." class="w500" %}
+{% include image.html url="submission/release_re.jpg" caption="Triggering of data release between primary projects and data records." class="w450" %}
 {:/}
 
 You can "immediately release" or "hold" the registered primary project.
@@ -94,7 +94,7 @@ The submitted primary project data can be kept private until the linked DDBJ, DR
 FAQ: [How are linked BioProject/BioSample/sequence data released?](/faq/en/bp_bs_seq_release-e.html)
 
 {::nomarkdown}
-{% include image.html url="submission/um_pri_visibility.jpg" caption="Visibility of relationships between a public umbrella and primary projects." class="w500" %}
+{% include image.html url="submission/um_pri_visibility.jpg" caption="Visibility of relationships between a public umbrella and primary projects." class="w450" %}
 {:/}
 
 <span class="red">An umbrella project cannot be kept private.</span>An umbrella project can have public and private primary projects. Hierarchical relationship between the public umbrella project and the un-released primary project is invisible.
@@ -192,16 +192,16 @@ An informative paragraph that describes the project and provides informative con
 
 [Relevance](#Relevance)<a name="Relevance"></a>  
 : Select the primary general relevance of the study.
-
-    | Relevance     | Description                                                                                                    |
-    | ------------- | -------------------------------------------------------------------------------------------------------------- |
-    | Agricultural  |                                                                                                                |
-    | Medical       |                                                                                                                |
-    | Industrial    | Could include bio-remediation, bio-fuels and other areas of research where there are areas of mass production. |
-    | Environmental |                                                                                                                |
-    | Evolution     |                                                                                                                |
-    | ModelOrganism |                                                                                                                |
-    | Other         | Unspecified major impact categories to be defined in the "Relevance description".                              |
+  
+  | Relevance     | Description                                                                                                    |
+  | ------------- | -------------------------------------------------------------------------------------------------------------- |
+  | Agricultural  |                                                                                                                |
+  | Medical       |                                                                                                                |
+  | Industrial    | Could include bio-remediation, bio-fuels and other areas of research where there are areas of mass production. |
+  | Environmental |                                                                                                                |
+  | Evolution     |                                                                                                                |
+  | ModelOrganism |                                                                                                                |
+  | Other         | Unspecified major impact categories to be defined in the "Relevance description".                              |
 
 <!-- end list -->
 
@@ -268,26 +268,27 @@ Funding information for a project.
 
 #### Project data type<a name="Project_data_type"></a>
 
-[Project data type](#Project_data_type)<span class="red">\*</span><a name="Project_data_type"></a>  
+[Project data type](#Project_data_type)<span class="red">\*</span><a name="Project_data_type"></a>
+
 : A general label indicating the primary study goal. Select appropriate types. [News: A BioProject record can have multiple project data types](/news/en/2014-11-12-e.html)
     
-NCBI individually assigns the [Project data type](https://www.ncbi.nlm.nih.gov/books/NBK54364/def-item/project-data-type/) based on the experimental data linked to the project. This type is not used by [EBI](https://www.ebi.ac.uk/ena/submit/project-format).
+  NCBI individually assigns the [Project data type](https://www.ncbi.nlm.nih.gov/books/NBK54364/def-item/project-data-type/) based on the experimental data linked to the project. This type is not used by [EBI](https://www.ebi.ac.uk/ena/submit/project-format).
     
-| Project Data type                | Description                                                                                                                     |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| Genome Sequencing                | whole, or partial, genome sequencing project (with or without a genome assembly)                                                |
-| Clone Ends                       | clone-end sequencing project                                                                                                    |
-| Epigenomics                      | DNA methylation, histone modification, chromatin accessibility datasets                                                         |
-| Exome                            | exome resequencing project                                                                                                      |
-| Map                              | project that results in non-sequence map data such as genetic map, radiation hybrid map, cytogenetic map, optical map, and etc. |
-| Metagenome                       | sequence analysis of environmental samples                                                                                      |
-| Phenotype and Genotype           | project correlating phenotype and genotype                                                                                      |
-| Proteome                         | large scale proteomics experiment including mass spec. analysis                                                                 |
-| Random Survey                    | sequence generated from a random sampling of the collected sample; not intended to be comprehensive sampling of the material.   |
-| Targeted Locus (Loci)            | project to sequence specific loci, such as a 16S rRNA sequencing                                                                |
-| Transcriptome or Gene Expression | large scale RNA sequencing or expression analysis. Includes cDNA, EST, RNA\_seq, and microarray.                                |
-| Variation                        | project with a primary goal of identifying large or small sequence variation across populations.                                |
-| Other                            | a free text description is provided to indicate Other data type                                                                 |
+  | Project Data type                | Description                                                                                                                     |
+  | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+  | Genome Sequencing                | whole, or partial, genome sequencing project (with or without a genome assembly)                                                |
+  | Clone Ends                       | clone-end sequencing project                                                                                                    |
+  | Epigenomics                      | DNA methylation, histone modification, chromatin accessibility datasets                                                         |
+  | Exome                            | exome resequencing project                                                                                                      |
+  | Map                              | project that results in non-sequence map data such as genetic map, radiation hybrid map, cytogenetic map, optical map, and etc. |
+  | Metagenome                       | sequence analysis of environmental samples                                                                                      |
+  | Phenotype and Genotype           | project correlating phenotype and genotype                                                                                      |
+  | Proteome                         | large scale proteomics experiment including mass spec. analysis                                                                 |
+  | Random Survey                    | sequence generated from a random sampling of the collected sample; not intended to be comprehensive sampling of the material.   |
+  | Targeted Locus (Loci)            | project to sequence specific loci, such as a 16S rRNA sequencing                                                                |
+  | Transcriptome or Gene Expression | large scale RNA sequencing or expression analysis. Includes cDNA, EST, RNA\_seq, and microarray.                                |
+  | Variation                        | project with a primary goal of identifying large or small sequence variation across populations.                                |
+  | Other                            | a free text description is provided to indicate Other data type                                                                 |
     
 <!-- end list -->
 
@@ -299,43 +300,43 @@ NCBI individually assigns the [Project data type](https://www.ncbi.nlm.nih.gov/b
 [Sample scope](#BioProject_Sample_scope)<span class="red">\*</span><a name="BioProject_Sample_scope"></a>  
 : The scope and purity of the biological sample used for the study.
 
-    | Sample scope  | Description                                                                                                                                                                       |
-    | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-    | Monoisolate   | A single animal, cultured cell-line, inbred population (or possibly a heterogeneous population when a single genome assembly is generated from the pooled sample; not preferred). |
-    | Multiisolate  | Multiple individuals, a population (representation of a species).                                                                                                                 |
-    | Multi-species | Sample represents multiple species.                                                                                                                                               |
-    | Environment   | Species content of the sample is not known.                                                                                                                                       |
-    | Synthetic     | Sample is synthetically created by a machine.                                                                                                                                     |
-    | Other         | Specify the sample scope that was used in the "Target description".                                                                                                               |
+  | Sample scope  | Description                                                                                                                                                                       |
+  | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+  | Monoisolate   | A single animal, cultured cell-line, inbred population (or possibly a heterogeneous population when a single genome assembly is generated from the pooled sample; not preferred). |
+  | Multiisolate  | Multiple individuals, a population (representation of a species).                                                                                                                 |
+  | Multi-species | Sample represents multiple species.                                                                                                                                               |
+  | Environment   | Species content of the sample is not known.                                                                                                                                       |
+  | Synthetic     | Sample is synthetically created by a machine.                                                                                                                                     |
+  | Other         | Specify the sample scope that was used in the "Target description".                                                                                                               |
 
 <!-- end list -->
 
 [Material](#Material)<span class="red">\*</span><a name="Material"></a>
 : The type of material that is isolated from the sample for use in the experimental study.
 
-    | Material       | Description                                                                                    |
-    | -------------- | ---------------------------------------------------------------------------------------------- |
-    | Genome         | A whole genome initiative. May be only the nuclear genome. Use for DNA of a metagenome sample. |
-    | Partial Genome | One or more chromosomes or replicons were experimentally purified.                             |
-    | Transcriptome  | Transcript data.                                                                               |
-    | Reagent        | Material studied was obtained by chemical reaction, precipitation.                             |
-    | Proteome       | Protein or peptide data.                                                                       |
-    | Phenotype      | Phenotypic descriptive data.                                                                   |
-    | Other          | Specify the material that was used in the "Target description".                                |
+  | Material       | Description                                                                                    |
+  | -------------- | ---------------------------------------------------------------------------------------------- |
+  | Genome         | A whole genome initiative. May be only the nuclear genome. Use for DNA of a metagenome sample. |
+  | Partial Genome | One or more chromosomes or replicons were experimentally purified.                             |
+  | Transcriptome  | Transcript data.                                                                               |
+  | Reagent        | Material studied was obtained by chemical reaction, precipitation.                             |
+  | Proteome       | Protein or peptide data.                                                                       |
+  | Phenotype      | Phenotypic descriptive data.                                                                   |
+  | Other          | Specify the material that was used in the "Target description".                                |
 
 <!-- end list -->
 
 [Capture](#Capture)<span class="red">\*</span><a name="Capture"></a>  
 : The scale, or type, of information that the study is designed to generate from the sample material.
 
-    | Capture             | Description                                                                     |
-    | ------------------- | ------------------------------------------------------------------------------- |
-    | Whole               | The project makes use of the whole sample material (most common case).          |
-    | Clone Ends          | Capturing clone end data.                                                       |
-    | Exome               | Capturing exon-specific data.                                                   |
-    | Targeted Locus/Loci | Capturing specific loci (gene, genomic region, barcode standard).               |
-    | Random Survey       | Not using whole sample, an incomplete survey of the sample.                     |
-    | Other               | Specify the scale or type of the captured material in the "Target description". |
+  | Capture             | Description                                                                     |
+  | ------------------- | ------------------------------------------------------------------------------- |
+  | Whole               | The project makes use of the whole sample material (most common case).          |
+  | Clone Ends          | Capturing clone end data.                                                       |
+  | Exome               | Capturing exon-specific data.                                                   |
+  | Targeted Locus/Loci | Capturing specific loci (gene, genomic region, barcode standard).               |
+  | Random Survey       | Not using whole sample, an incomplete survey of the sample.                     |
+  | Other               | Specify the scale or type of the captured material in the "Target description". |
 
 <!-- end list -->
 
@@ -347,12 +348,12 @@ NCBI individually assigns the [Project data type](https://www.ncbi.nlm.nih.gov/b
 [Methodology](#Methodology)<span class="red">\*</span><a name="Methodology"></a>  
 : The core experimental approach used to obtain the data that is submitted to archival databases.
 
-    | Methodology       | Description                                                     |
-    | ----------------- | --------------------------------------------------------------- |
-    | Sequencing        | Sequencing using Sanger, 454, Illumina, etc wit                 |
-    | Array             | Data/Sequence are generated by hybridization arrays.            |
-    | Mass Spectroscopy | Data are generated by mass spectroscopy.                        |
-    | Other             | Please provide data description in the "Methodogy description". |
+  | Methodology       | Description                                                     |
+  | ----------------- | --------------------------------------------------------------- |
+  | Sequencing        | Sequencing using Sanger, 454, Illumina, etc wit                 |
+  | Array             | Data/Sequence are generated by hybridization arrays.            |
+  | Mass Spectroscopy | Data are generated by mass spectroscopy.                        |
+  | Other             | Please provide data description in the "Methodogy description". |
 
 <!-- end list -->
 
@@ -366,32 +367,33 @@ Project goals with respect to the type of data that will be generated and submit
 [Objective](#Objective)<span class="red">\*</span><a name="Objective"></a>  
 : Project goals with respect to the type of data that will be generated and submitted to an INSDC-associated database. Select all relevant menu options.
 
-    | Objective          | Description                                                                    |
-    | ------------------ | ------------------------------------------------------------------------------ |
-    | Raw Sequence Reads | Submission of raw sequencing information as it comes out of machine.           |
-    | Sequence           | Sequence which is not raw - meaning processed (clipped, matepaired, oriented). |
-    | Analysis           | Higher level interpretation of the data.                                       |
-    | Assembly           | Experiment will result in assemblies (genome or transcriptome).                |
-    | Annotation         | Experiment wil result in Annotation.                                           |
-    | Variation          | Submission of variations.                                                      |
-    | Epigenetic Markers | Experiment will result in Epigenetic markers.                                  |
-    | Expression         | Submission of gene expression.                                                 |
-    | Maps               | Experiment will result in cytogenetic, physical, Rh, etc...maps.               |
-    | Phenotype          | Experiment will deliver phenotypes.                                            |
-    | Other              |                                                                                |
+  | Objective          | Description                                                                    |
+  | ------------------ | ------------------------------------------------------------------------------ |
+  | Raw Sequence Reads | Submission of raw sequencing information as it comes out of machine.           |
+  | Sequence           | Sequence which is not raw - meaning processed (clipped, matepaired, oriented). |
+  | Analysis           | Higher level interpretation of the data.                                       |
+  | Assembly           | Experiment will result in assemblies (genome or transcriptome).                |
+  | Annotation         | Experiment wil result in Annotation.                                           |
+  | Variation          | Submission of variations.                                                      |
+  | Epigenetic Markers | Experiment will result in Epigenetic markers.                                  |
+  | Expression         | Submission of gene expression.                                                 |
+  | Maps               | Experiment will result in cytogenetic, physical, Rh, etc...maps.               |
+  | Phenotype          | Experiment will deliver phenotypes.                                            |
+  | Other              |                                                                                |
 
 #### Locus tag prefix
 
-[Locus tag prefix](#Locus_tag_prefix)<span class="conditionally_required">\*</span><a name="Locus_tag_prefix"></a>  
+[Locus tag prefix](#Locus_tag_prefix)<span class="conditionally_required">\*</span><a name="Locus_tag_prefix"></a>
 : Locus tag prefix generation box will appear when \[Project data type="Genome Sequencing" or "Metagenome"\] AND \[Capture="Whole"\] AND \[Objective="Sequence" or "Annotation" or "Assembly"\].
-Registration of a unique locus tag prefix is required for studies that result in genome assemblies. Please leave the prefix box empty, when a prefix is not necessary for [WGS](/ddbj/wgs-e.html) only submission.
+
+  Registration of a unique locus tag prefix is required for studies that result in genome assemblies. Please leave the prefix box empty, when a prefix is not necessary for [WGS](/ddbj/wgs-e.html) only submission.
     
-[Locus tag prefix guideline](/ddbj/locus_tag-e.html).
+  [Locus tag prefix guideline](/ddbj/locus_tag-e.html).
     
-Locus tag prefix format  
-The locus\_tag prefix can contain only alpha-numeric characters and it must be 3-12 characters long. It should start with a letter, but numerals can be in the 2nd position or later in the string. (ex. A1C). There should be no symbols, such as -\_\* in the prefix. The locus\_tag prefix is to be separated from the tag value by an underscore ‘\_’, eg A1C\_00001.
+  Locus tag prefix format  
+  The locus\_tag prefix can contain only alpha-numeric characters and it must be 3-12 characters long. It should start with a letter, but numerals can be in the 2nd position or later in the string. (ex. A1C). There should be no symbols, such as -\_\* in the prefix. The locus\_tag prefix is to be separated from the tag value by an underscore ‘\_’, eg A1C\_00001.
     
-DDBJ BioProject limits the maximum tag length to 12 characters. In the BioProject submission system, the locus tag is displayed in capital letters. However, the tag is reserved in case-insensitive manner.
+  DDBJ BioProject limits the maximum tag length to 12 characters. In the BioProject submission system, the locus tag is displayed in capital letters. However, the tag is reserved in case-insensitive manner.
 
 ### Target
 
@@ -399,12 +401,13 @@ DDBJ BioProject limits the maximum tag length to 12 characters. In the BioProjec
 
 Taxonomy and description of target organism.
 
-[Organism name](#BioProject_Organism_name)<span class="red">\*</span><a name="BioProject_Organism_name"></a><a name="BioProject_Organism_name"></a>  
+[Organism name](#BioProject_Organism_name)<span class="red">\*</span><a name="BioProject_Organism_name"></a><a name="BioProject_Organism_name"></a>
+
 : Organism name in the [Taxonomy database](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html). Unclassified sequences including metagenome and environmental samples may be found at [here](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908&lvl=3&lin=f&keep=1&srchmode=1&unlock).
     
-In the project spanning multiple species, enter a taxonomic classification common to the species (e.g., genus name).
+  In the project spanning multiple species, enter a taxonomic classification common to the species (e.g., genus name).
     
-If you intend to submit un-registered novel organism, please provide us the [detailed organism information](/ddbj/organism-e.html) in the [Description of novel organism](#Novel_organism) and proposed organism name in the Organism Name.
+  If you intend to submit un-registered novel organism, please provide us the [detailed organism information](/ddbj/organism-e.html) in the [Description of novel organism](#Novel_organism) and proposed organism name in the Organism Name.
 
 <!-- end list -->
 
@@ -450,21 +453,21 @@ General properties of target organism.
 [Cellularity](#Cellularity)<a name="Cellularity"></a>  
 : Select a cellularity.
 
-    | Cellularity   |
-    | ------------- |
-    | Unicellular   |
-    | Multicellular |
-    | Colonial      |
+  | Cellularity   |
+  | ------------- |
+  | Unicellular   |
+  | Multicellular |
+  | Colonial      |
 
 <!-- end list -->
 
 [Reproduction](#Reproduction)<a name="Reproduction"></a>  
 : Select a Reproduction.
 
-    | Reproduction |
-    | ------------ |
-    | Sexual       |
-    | Asexual      |
+  | Reproduction |
+  | ------------ |
+  | Sexual       |
+  | Asexual      |
 
 <!-- end list -->
 
@@ -476,12 +479,12 @@ General properties of target organism.
 [Ploidy](#Ploidy)<a name="Ploidy"></a>  
 : Select a Ploidy.
 
-    | Ploidy        |
-    | ------------- |
-    | Haploid       |
-    | Diploid       |
-    | Polyploid     |
-    | Allopolyploid |
+  | Ploidy        |
+  | ------------- |
+  | Haploid       |
+  | Diploid       |
+  | Polyploid     |
+  | Allopolyploid |
 
 #### Organism Replicons
 
@@ -495,40 +498,40 @@ Describe how many replicons this organism has, how they are named (e.g., 1, 2, 3
 [Type](#Replicon_type)<a name="Replicon_type"></a>  
 : Select a replicon type.
 
-    | Replicon type |
-    | ------------- |
-    | Chromosome    |
-    | Plasmid       |
-    | Linkage Group |
-    | Segment       |
-    | Other         |
+  | Replicon type |
+  | ------------- |
+  | Chromosome    |
+  | Plasmid       |
+  | Linkage Group |
+  | Segment       |
+  | Other         |
 
 <!-- end list -->
 
 [Location](#Location)<a name="Location"></a>  
 : The replicon subcellular location. For instance, the nucleus, or a differentiated organella. Please select "Nuclear or Prokaryote" for the chromosomes of eularyotes, bacteria or archaea.
 
-    | Location              |
-    | --------------------- |
-    | Nuclear or Prokaryote |
-    | Macronuclear          |
-    | Nucleomorph           |
-    | Mitochondrion         |
-    | Kinetoplast           |
-    | Chloroplast           |
-    | Chromoplast           |
-    | Plastid               |
-    | Virion or Phage       |
-    | Proviral or Prophage  |
-    | Viroid                |
-    | Extrachrom            |
-    | Cyanelle              |
-    | Apicoplast            |
-    | Leucoplast            |
-    | Proplastid            |
-    | Hydrogenosome         |
-    | Chromatophore         |
-    | Other                 |
+  | Location              |
+  | --------------------- |
+  | Nuclear or Prokaryote |
+  | Macronuclear          |
+  | Nucleomorph           |
+  | Mitochondrion         |
+  | Kinetoplast           |
+  | Chloroplast           |
+  | Chromoplast           |
+  | Plastid               |
+  | Virion or Phage       |
+  | Proviral or Prophage  |
+  | Viroid                |
+  | Extrachrom            |
+  | Cyanelle              |
+  | Apicoplast            |
+  | Leucoplast            |
+  | Proplastid            |
+  | Hydrogenosome         |
+  | Chromatophore         |
+  | Other                 |
 
 <!-- end list -->
 
@@ -552,27 +555,27 @@ Phenotype of target organism.
 [Biotic Relationship](#BioticRelationship)<a name="BioticRelationship"></a>
 : Select a BioticRelationship.
 
-    | BioticRelationship |
-    | ------------------ |
-    | FreeLiving         |
-    | Commensal          |
-    | Symbiont           |
-    | Episymbiont        |
-    | Intracellular      |
-    | Parasite           |
-    | Host               |
-    | Endosymbiont       |
+  | BioticRelationship |
+  | ------------------ |
+  | FreeLiving         |
+  | Commensal          |
+  | Symbiont           |
+  | Episymbiont        |
+  | Intracellular      |
+  | Parasite           |
+  | Host               |
+  | Endosymbiont       |
 
 <!-- end list -->
 
 [Trophic Level](#TrophicLevel)<a name="TrophicLevel"></a>
 : Select a TrophicLevel.
 
-    | TrophicLevel |
-    | ------------ |
-    | Autotroph    |
-    | Heterotroph  |
-    | Mixotroph    |
+  | TrophicLevel |
+  | ------------ |
+  | Autotroph    |
+  | Heterotroph  |
+  | Mixotroph    |
 
 #### Prokaryote Morphology
 
@@ -581,58 +584,58 @@ When the target organism is prokaryote, please describe the general morphology i
 [Shape](#Shape)<a name="Shape"></a>
 : Select all relevant menu options.
 
-    | Shape        | Description                                          |
-    | ------------ | ---------------------------------------------------- |
-    | Bacilli      | rod-shaped                                           |
-    | Cocci        | spherical-shaped                                     |
-    | Spirilla     | spiral-shaped                                        |
-    | Coccobacilli | elongated coccal form                                |
-    | Filamentous  | filament-shaped (bacilli thar occur in long threads) |
-    | Vibrios      | vibrio-shaped (short, slightly curved rods)          |
-    | Fusobacteria | fusiform or spindle-shaped (rods with tapered ends)  |
-    | SquareShaped |                                                      |
-    | CurvedShaped |                                                      |
-    | Tailed       |                                                      |
+  | Shape        | Description                                          |
+  | ------------ | ---------------------------------------------------- |
+  | Bacilli      | rod-shaped                                           |
+  | Cocci        | spherical-shaped                                     |
+  | Spirilla     | spiral-shaped                                        |
+  | Coccobacilli | elongated coccal form                                |
+  | Filamentous  | filament-shaped (bacilli thar occur in long threads) |
+  | Vibrios      | vibrio-shaped (short, slightly curved rods)          |
+  | Fusobacteria | fusiform or spindle-shaped (rods with tapered ends)  |
+  | SquareShaped |                                                      |
+  | CurvedShaped |                                                      |
+  | Tailed       |                                                      |
 
 <!-- end list -->
 
 [Gram](#Gram)<a name="Gram"></a>
 : Choose gram positive or negative.
 
-    | Gram     |
-    | -------- |
-    | Positive |
-    | Negative |
+  | Gram     |
+  | -------- |
+  | Positive |
+  | Negative |
 
 <!-- end list -->
 
 [Motility](#Motility)<a name="Motility"></a>  
 : Choose a Motility.
 
-    | Motility |
-    | -------- |
-    | Yes      |
-    | No       |
+  | Motility |
+  | -------- |
+  | Yes      |
+  | No       |
 
 <!-- end list -->
 
 [Enveloped](#Enveloped)<a name="Enveloped"></a>  
 : Choose enveloped or not.
 
-    | Enveloped |
-    | --------- |
-    | Yes       |
-    | No        |
+  | Enveloped |
+  | --------- |
+  | Yes       |
+  | No        |
 
 <!-- end list -->
 
 [Endospores](#Endospores)<a name="Endospores"></a>  
 : Choose target bacteria forms endospores or not.
 
-    | Endospores |
-    | ---------- |
-    | Yes        |
-    | No         |
+  | Endospores |
+  | ---------- |
+  | Yes        |
+  | No         |
 
 #### Ecological Environment
 
@@ -641,54 +644,54 @@ The general habitat for any organism. Please indicate additional extremophile pa
 [Habitat](#Habitat)<a name="Habitat"></a>  
 : Choose a Habitat.
 
-    | Habitat        |
-    | -------------- |
-    | HostAssociated |
-    | Aquatic        |
-    | Terrestrial    |
-    | Specialized    |
-    | Multiple       |
-    | Unknown        |
+  | Habitat        |
+  | -------------- |
+  | HostAssociated |
+  | Aquatic        |
+  | Terrestrial    |
+  | Specialized    |
+  | Multiple       |
+  | Unknown        |
 
 <!-- end list -->
 
 [Salinity](#Salinity)<a name="Salinity"></a>  
 : Choose a Salinity.
 
-    | Salinity           |
-    | ------------------ |
-    | NonHalophilic      |
-    | Mesophilic         |
-    | ModerateHalophilic |
-    | ExtremeHalophilic  |
-    | Unknown            |
+  | Salinity           |
+  | ------------------ |
+  | NonHalophilic      |
+  | Mesophilic         |
+  | ModerateHalophilic |
+  | ExtremeHalophilic  |
+  | Unknown            |
 
 <!-- end list -->
 
 [Oxygen requirement](#OxygenReq)<a name="OxygenReq"></a>  
 : Choose an Oxygen requirement.
 
-    | OxygenReq       |
-    | --------------- |
-    | Aerobic         |
-    | Microaerophilic |
-    | Facultative     |
-    | Anaerobic       |
-    | Unknown         |
+  | OxygenReq       |
+  | --------------- |
+  | Aerobic         |
+  | Microaerophilic |
+  | Facultative     |
+  | Anaerobic       |
+  | Unknown         |
 
 <!-- end list -->
 
 [Temperature range](#TemperatureRange)<a name="TemperatureRange"></a>  
 : Choose a temperature range.
 
-    | TemperatureRange  |
-    | ----------------- |
-    | Cryophilic        |
-    | Psychrophilic     |
-    | Mesophilic        |
-    | Thermophilic      |
-    | Hyperthermophilic |
-    | Unknown           |
+  | TemperatureRange  |
+  | ----------------- |
+  | Cryophilic        |
+  | Psychrophilic     |
+  | Mesophilic        |
+  | Thermophilic      |
+  | Hyperthermophilic |
+  | Unknown           |
 
 <!-- end list -->
 
@@ -783,18 +786,18 @@ Submission of research data from human subjects
 
 Registration for a BioProject accession is required in the following cases.
 
-  - submit sequencing data to DRA
-  - submit genome sequences to DDBJ
+- submit sequencing data to DRA
+- submit genome sequences to DDBJ
 
 Registration for a BioProject accession is encouraged in the following cases.
 
-  - projects that result in a very large volume of data submissions
-  - submissions from multiple members of a collaboration
-  - submissions to multiple archival databases
+- projects that result in a very large volume of data submissions
+- submissions from multiple members of a collaboration
+- submissions to multiple archival databases
 
 Registration for a BioProject accession is not required in the following cases. Register an accession if necessary.
 
-  - small datasets for which the results are found in one (or a small number) of accession numbers such as a single plasmid, viral or organelle genome sequencing study
+- small datasets for which the results are found in one (or a small number) of accession numbers such as a single plasmid, viral or organelle genome sequencing study
 
 A BioProject accession is required for submission to [Sequence Read Archive](/dra/index-e.html), and microbial and eukaryotic genomes
 submissions to the DDBJ. If you obtain a BioProject accession from DDBJ, please submit your related biological data to the [DDBJ](http://www.ddbj.nig.ac.jp), [Sequence Read Archive](/dra/index-e.html)and [Trace Archive](/dta/index-e.html).
@@ -856,10 +859,10 @@ The "OVERVIEW" tab continue to display submitted content. Updates will not be re
 
 Temporary numbers with prefix PSUB are automatically assigned to submitted projects. Projects can be referred by the PSUB numbers until official accession numbers will be assigned. DDBJ BioProject staff review submissions and issue accession numbers with prefix PRJD to completed projects. Submitters can view accession numbers and submission status in your [submission account](https://ddbj.nig.ac.jp/D-way/).
 
-  <div class="attention red">
-  - Do NOT cite numbers with prefix PSUB in publication.
-  - Do not double submit the projects which have been registered to EBI and NCBI.
-  </div>
+<div class="attention red">
+- Do NOT cite numbers with prefix PSUB in publication.
+- Do not double submit the projects which have been registered to EBI and NCBI.
+</div>
 
 ### Submit an umbrella project
 
@@ -881,8 +884,8 @@ When submitting project, in the [Umbrella BioProject](#Area_linked-project), ent
 
 Registered projects can be released in the following two ways:
 
-  - Release immediately after registration.
-  - Release when records citing the BioProject accession are made public.
+- Release immediately after registration.
+- Release when records citing the BioProject accession are made public.
 
 The projects can be kept private. If DDBJ records citing the BioProject accession are made public, [cited projects are automatically released](#data-release). Private DDBJ records citing this BioProject accession are not made public.
 
