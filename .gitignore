@@ -14,3 +14,6 @@ _site/
 .sass-cache/
 .jekyll-metadata
 config.codekit3
+
+feed.xml
+sitemap.xml
