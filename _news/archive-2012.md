@@ -217,12 +217,12 @@ lang: ja
   <h2 class="news_title" id="wn120928_2"><a href="#wn120928_2">日本特許庁(JPO)データのCOMMENT行修正</a></h2>
   <div class="news_date">2012年09月28日</div>
   <div class="news_content"><dl> <dd>日本特許庁(JPO)の塩基配列データ、アミノ酸配列データのCOMMENT行に、下記の行が追加されました。<br><br><span ><b>[追加行]</b></span><br>　<b>PA:</b> 出願人<br>　<b>PT:</b> 発明タイトル<br>　<b>PS:</b> 出願人指定の配列番号<br><br>JPOの全データのCOMMENT行で修正が行われ、塩基配列データはDDBJリリース90、アミノ酸配列データはアミノ酸蓄積ファイルにて公開されました。<br><br><span ><b>[COMMENT行の例]</b></span><br>
-<pre class="highlight">COMMENT    OS   human           PN   JP 2010599999-A/100           PD   29-SEP-2010           
+<pre class="highlight"><code>COMMENT    OS   human           PN   JP 2010599999-A/100           PD   29-SEP-2010           
 PF   20-NOV-2006 JP 2008583186           PR   15-MAR-2003 US 60/525115           
 PA   DNA Data Bank of Japan           PI   hanako mishima,taro iden           
 PT   "Genetic Markers Expressed In Tumors"           PS   N55           
 CC   genetic maker for genetic diagnosis           FH   Key Location/Qualifiers           
-FT   misc_feature    1..88           FT   /note="genetic maker"</pre><span ><b>[DDBJ FTPサイト]</b></span><br>修正データは以下のサイトから取得可能です。<br><br>塩基配列データ：<br><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbj/">ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbj/</a><br><br>アミノ酸配列データ：<br><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/patent/">ftp://ftp.ddbj.nig.ac.jp/ddbj_database/patent/</a></dd></dl></div>
+FT   misc_feature    1..88           FT   /note="genetic maker"</code></pre><span ><b>[DDBJ FTPサイト]</b></span><br>修正データは以下のサイトから取得可能です。<br><br>塩基配列データ：<br><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbj/">ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbj/</a><br><br>アミノ酸配列データ：<br><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/patent/">ftp://ftp.ddbj.nig.ac.jp/ddbj_database/patent/</a></dd></dl></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -447,7 +447,7 @@ FT   misc_feature    1..88           FT   /note="genetic maker"</pre><span ><b>[
 <div class="news_post_list">
   <h2 class="news_title" id="wn120604_2"><a href="#wn120604_2">ナミアゲハ (Papilio xuthus) と シロオビアゲハ (Papilio polytes) EST データの公開</a></h2>
   <div class="news_date">2012年06月04日</div>
-  <div class="news_content"><dl><dd><a href="http://www.aist.go.jp/" target="_blank">産業技術総合研究所</a>から登録された ナミアゲハ ( <i>Papilio xuthus</i> ) と シロオビアゲハ ( <i>Papilio polytes</i>) 由来の EST データが公開されました。　（<a href="http://getentry.ddbj.nig.ac.jp/top-j.html" target="_blank">getentry</a> から検索可能です） <br><b>アクセッション番号</b>は以下の通りです。<br><br><br><pre class="highlight"><b>Papilio xuthus</b><br>・FY174038-FY192407 ( 18,370 entries) 5'-EST<br>・FY192408-FY210626 ( 18,219 entries) 3'-EST<br><br>               total: 36,589 entries<br><br><b>Papilio polytes</b><br>・FY302525-FY312114 (  9,590 entries) 5'-EST<br>・FY312115-FY319715 (  7,601 entries) 3'-EST<br>・FY319716-FY339489 ( 19,774 entries) 5'-EST<br>・FY339490-FY358875 ( 19,386 entries) 3'-EST<br><br>               total: 56,351 entries<br></pre></dd></dl></div>
+  <div class="news_content"><dl><dd><a href="http://www.aist.go.jp/" target="_blank">産業技術総合研究所</a>から登録された ナミアゲハ ( <i>Papilio xuthus</i> ) と シロオビアゲハ ( <i>Papilio polytes</i>) 由来の EST データが公開されました。　（<a href="http://getentry.ddbj.nig.ac.jp/top-j.html" target="_blank">getentry</a> から検索可能です） <br><b>アクセッション番号</b>は以下の通りです。<br><br><br><pre class="highlight"><code><b>Papilio xuthus</b><br>・FY174038-FY192407 ( 18,370 entries) 5'-EST<br>・FY192408-FY210626 ( 18,219 entries) 3'-EST<br><br>               total: 36,589 entries<br><br><b>Papilio polytes</b><br>・FY302525-FY312114 (  9,590 entries) 5'-EST<br>・FY312115-FY319715 (  7,601 entries) 3'-EST<br>・FY319716-FY339489 ( 19,774 entries) 5'-EST<br>・FY339490-FY358875 ( 19,386 entries) 3'-EST<br><br>               total: 56,351 entries<br></code></pre></dd></dl></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -465,7 +465,7 @@ FT   misc_feature    1..88           FT   /note="genetic maker"</pre><span ><b>[
 <div class="news_post_list">
   <h2 class="news_title" id="wn120521"><a href="#wn120521">ヒト (Homo sapiens) EST データの公開</a></h2>
   <div class="news_date">2012年05月21日</div>
-  <div class="news_content"><dl><dd>理化学研究所から登録されたヒト (<i>Homo sapiens</i>) 由来の EST データが公開されました。　（<a href="http://getentry.ddbj.nig.ac.jp/top-j.html" target="_blank">getentry</a> から検索可能です） <br><br><b>アクセッション番号</b>は以下の通りです。<br><br><br><pre class="highlight">・HY000001 - HY183282 ( 183,282 entries) 5'-EST<br>・HY183283 - HY377477 ( 194,195 entries) 3'-EST<br><br>                total： 377,477 entries</pre></dd></dl></div>
+  <div class="news_content"><dl><dd>理化学研究所から登録されたヒト (<i>Homo sapiens</i>) 由来の EST データが公開されました。　（<a href="http://getentry.ddbj.nig.ac.jp/top-j.html" target="_blank">getentry</a> から検索可能です） <br><br><b>アクセッション番号</b>は以下の通りです。<br><br><br><pre class="highlight"><code>・HY000001 - HY183282 ( 183,282 entries) 5'-EST<br>・HY183283 - HY377477 ( 194,195 entries) 3'-EST<br><br>                total： 377,477 entries</code></pre></dd></dl></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -510,7 +510,7 @@ FT   misc_feature    1..88           FT   /note="genetic maker"</pre><span ><b>[
 <div class="news_post_list">
   <h2 class="news_title" id="wn120411_2"><a href="#wn120411_2">ミツバチ (Apis mellifera carnica) EST データの公開</a></h2>
   <div class="news_date">2012年04月11日</div>
-  <div class="news_content"><dl><dd>理化学研究所から登録されたミツバチ (<i>Apis mellifera carnica</i>) 由来の EST データが公開されました。　（<a href="http://getentry.ddbj.nig.ac.jp/top-j.html" target="_blank">getentry</a> から検索可能です） <br><br><b>アクセッション番号</b>は以下の通りです。<br><br><br><pre class="highlight">・HX282115-HX327225 ( 45,111 entries) 5'-EST<br>・HX327226-HX373155 ( 45,930 entries) 3'-EST<br><br>              total： 91,041 entries</pre></dd></dl></div>
+  <div class="news_content"><dl><dd>理化学研究所から登録されたミツバチ (<i>Apis mellifera carnica</i>) 由来の EST データが公開されました。　（<a href="http://getentry.ddbj.nig.ac.jp/top-j.html" target="_blank">getentry</a> から検索可能です） <br><br><b>アクセッション番号</b>は以下の通りです。<br><br><br><pre class="highlight"><code>・HX282115-HX327225 ( 45,111 entries) 5'-EST<br>・HX327226-HX373155 ( 45,930 entries) 3'-EST<br><br>              total： 91,041 entries</code></pre></dd></dl></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -519,7 +519,7 @@ FT   misc_feature    1..88           FT   /note="genetic maker"</pre><span ><b>[
 <div class="news_post_list">
   <h2 class="news_title" id="wn120409"><a href="#wn120409">コムギ (Triticum aestivum) EST データの公開</a></h2>
   <div class="news_date">2012年04月09日</div>
-  <div class="news_content"><dl><dd>横浜市立大学から登録されたコムギ (<i>Triticum aestivum</i>) 由来の EST データが公開されました。　（<a href="http://getentry.ddbj.nig.ac.jp/top-j.html" target="_blank">getentry</a> から検索可能です） <br><br><b>アクセッション番号</b>は以下の通りです。<br><br><br><pre class="highlight">・HX000001 - HX201765 ( 201,765 entries)<br>・HX247045 - HX257200 (  10,156 entries)<br><br>                total： 211,921 entries</pre></dd></dl></div>
+  <div class="news_content"><dl><dd>横浜市立大学から登録されたコムギ (<i>Triticum aestivum</i>) 由来の EST データが公開されました。　（<a href="http://getentry.ddbj.nig.ac.jp/top-j.html" target="_blank">getentry</a> から検索可能です） <br><br><b>アクセッション番号</b>は以下の通りです。<br><br><br><pre class="highlight"><code>・HX000001 - HX201765 ( 201,765 entries)<br>・HX247045 - HX257200 (  10,156 entries)<br><br>                total： 211,921 entries</code></pre></dd></dl></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>

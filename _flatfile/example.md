@@ -12,7 +12,7 @@ lang: ja
 
 ### A01) 16S rRNA gene
 
-<pre>DEFINITION  Vibrio halioticoli IAM 14597 gene for 16S rRNA, partial sequence.
+<pre><code>DEFINITION  Vibrio halioticoli IAM 14597 gene for 16S rRNA, partial sequence.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..1471</a>
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
@@ -20,11 +20,11 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="IAM 14597" 
      <a href="/ddbj/features.html#rRNA">rRNA</a>            <a href="/ddbj/location.html">&lt;1..&gt;1471</a>
                      /<a href="/ddbj/qualifiers.html#product">product</a>="16S ribosomal RNA" 
-</pre>
+</code></pre>
 
 ### A02) 18S rRNA gene including intron
 
-<pre>DEFINITION  Sporobolomyces ruber JCM 6884 gene for 18S rRNA, partial sequence. 
+<pre><code>DEFINITION  Sporobolomyces ruber JCM 6884 gene for 18S rRNA, partial sequence. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..2072</a>
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
@@ -33,11 +33,11 @@ FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#rRNA">rRNA</a>            <a href="/ddbj/location.html">join(&lt;1..1144,1469..&gt;2072)</a>
                      /<a href="/ddbj/qualifiers.html#product">product</a>="18S ribosomal RNA" 
      <a href="/ddbj/features.html#intron">intron</a>          <a href="/ddbj/location.html">1145..1468</a>
-</pre>
+</code></pre>
 
 ### A03) ITS1, ITS2
 
-<pre>DEFINITION  Microsphaera trifolii var. trifolii MUMH29s genes for 18S rRNA, 
+<pre><code>DEFINITION  Microsphaera trifolii var. trifolii MUMH29s genes for 18S rRNA, 
             ITS1, 5.8S rRNA, ITS2, 28S rRNA, partial and complete sequence.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..597</a>
@@ -57,11 +57,11 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#note">note</a>="internal transcribed spacer 2" 
      <a href="/ddbj/features.html#rRNA">rRNA</a>            <a href="/ddbj/location.html">563..&gt;597</a>
                      /<a href="/ddbj/qualifiers.html#product">product</a>="28S ribosomal RNA" 
-</pre>
+</code></pre>
 
 各 rRNA、ITS の境界が不明な場合は、以下の annotation を記載します。
 
-<pre>FEATURES             Location/Qualifiers
+<pre><code>FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..597</a>
                      /<a href="/ddbj/qualifiers.html#isolate">isolate</a>="MUMH29s"
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
@@ -73,11 +73,11 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#note">note</a>="contains 18S ribosomal RNA, internal transcribed
                      spacer 1, 5.8S ribosomal RNA, internal transcribed spacer
                      2, and 28S ribosomal RNA"
-</pre>
+</code></pre>
 
 ### A04) intergenic spacer, IGS
 
-<pre>DEFINITION  Setaria italica cv. Shimokatsugi genes for 25S rRNA, IGS, 17S rRNA, 
+<pre><code>DEFINITION  Setaria italica cv. Shimokatsugi genes for 25S rRNA, IGS, 17S rRNA, 
             partial and complete sequence.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..2646</a>
@@ -92,13 +92,13 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#note">note</a>="intergenic spacer, IGS" 
      <a href="/ddbj/features.html#rRNA">rRNA</a>            <a href="/ddbj/location.html">2485..&gt;2646</a>
                      /<a href="/ddbj/qualifiers.html#product">product</a>="17S ribosomal RNA" 
-</pre>
+</code></pre>
 
 ## B: Protein-coding genes
 
 ### B01) CDS (mRNA)
 
-<pre>DEFINITION  Homo sapiens AQP9 mRNA for aquaporin 9, complete cds. 
+<pre><code>DEFINITION  Homo sapiens AQP9 mRNA for aquaporin 9, complete cds. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..2878</a>
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="mRNA"
@@ -110,11 +110,11 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#product">product</a>="aquaporin 9"
                      /<a href="/ddbj/qualifiers.html#translation">translation</a>="--- omitted ---"
                      /<a href="/ddbj/qualifiers.html#transl_table">transl_table</a>=1 
-</pre>
+</code></pre>
 
 ### B02) CDS (DNA)
 
-<pre>DEFINITION  Aspergillus oryzae RIB128 tglA gene for triacylglycerol lipase, 
+<pre><code>DEFINITION  Aspergillus oryzae RIB128 tglA gene for triacylglycerol lipase, 
             complete cds.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..1025</a>
@@ -127,11 +127,11 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#product">product</a>="triacylglycerol lipase"
                      /<a href="/ddbj/qualifiers.html#transl_table">transl_table</a>=1
                      /<a href="/ddbj/qualifiers.html#translation">translation</a>="--- omitted ---" 
-</pre>
+</code></pre>
 
 ### B03) premature mRNA
 
-<pre>DEFINITION  Cynops pyrrhogaster CpTbx3 premature mRNA, partial cds.
+<pre><code>DEFINITION  Cynops pyrrhogaster CpTbx3 premature mRNA, partial cds.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..5170</a>
                      /<a href="/ddbj/qualifiers.html#dev_stage">dev_stage</a>="gastrula"
@@ -145,11 +145,11 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#note">note</a>="T-box family member; T-box domain"
                      /<a href="/ddbj/qualifiers.html#transl_table">transl_table</a>=1
                      /<a href="/ddbj/qualifiers.html#translation">translation</a>="--- omitted ---" 
-</pre>
+</code></pre>
 
 ### B04) promoter region
 
-<pre>DEFINITION  Mus musculus 129SVJ mNB-3 gene for neural recognition molecule NB-3,
+<pre><code>DEFINITION  Mus musculus 129SVJ mNB-3 gene for neural recognition molecule NB-3,
             exon 1 and promoter region.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..1300</a>
@@ -164,11 +164,11 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#gene">gene</a>="mNB-3"
                      /<a href="/ddbj/qualifiers.html#note">note</a>="neural recognition molecule NB-3"
                      /<a href="/ddbj/qualifiers.html#number">number</a>=1
-</pre>
+</code></pre>
 
 ### B05) 5' flanking region
 
-<pre>DEFINITION  Mus musculus 129SV gene for membrane cofactor protein CD46, 5' 
+<pre><code>DEFINITION  Mus musculus 129SV gene for membrane cofactor protein CD46, 5' 
             flanking region.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..1614</a>
@@ -178,11 +178,11 @@ FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#misc_feature">misc_feature</a>    <a href="/ddbj/location.html">1..1614</a>
                      /<a href="/ddbj/qualifiers.html#note">note</a>="5' flanking region"
                      /<a href="/ddbj/qualifiers.html#product">product</a>="membrane cofactor protein CD46" 
-</pre>
+</code></pre>
 
 ### B06) pseudogene
 
-<pre>DEFINITION  Homo sapiens pseudogene, necdin. 
+<pre><code>DEFINITION  Homo sapiens pseudogene, necdin. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..2285</a>
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
@@ -190,11 +190,11 @@ FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#cds">CDS</a>             <a href="/ddbj/location.html">&lt;1..1319</a>
                      /<a href="/ddbj/qualifiers.html#note">note</a>="pseudogene of necdin"
                      /<a href="/ddbj/qualifiers.html#pseudogene">pseudogene</a>="processed" 
-</pre>
+</code></pre>
 
 ### B07) alternative splicing (mRNA)
 
-<pre><strong>[isoform 1]</strong>
+<pre><code><strong>[isoform 1]</strong>
 DEFINITION  Homo sapiens BAP2 mRNA for BAI-associated protein 2 alpha, 
             complete cds. 
 ACCESSION   XA000001 
@@ -225,11 +225,11 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#product">product</a>="BAI-associated protein 2 beta"
                      /<a href="/ddbj/qualifiers.html#transl_table">transl_table</a>=1
                      /<a href="/ddbj/qualifiers.html#translation">translation</a>="--- omitted ---" 
-</pre>
+</code></pre>
 
 ### B08) alternative splicing (DNA)
 
-<pre>DEFINITION  Homo sapiens KNP-I gene for KNP-I alpha protein, KNP-I beta
+<pre><code>DEFINITION  Homo sapiens KNP-I gene for KNP-I alpha protein, KNP-I beta
             protein, partial cds, alternative splicing. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..13051</a>
@@ -271,11 +271,11 @@ FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#exon">exon</a>            <a href="/ddbj/location.html">12251..12407</a>
                      /<a href="/ddbj/qualifiers.html#gene">gene</a>="KNP-I"
                      /<a href="/ddbj/qualifiers.html#number">number</a>=6 
-</pre>
+</code></pre>
 
 ### B09) RNA editing
 
-<pre>DEFINITION  Beta vulgaris TK81-O mitochondrial nad4L gene for NADH 
+<pre><code>DEFINITION  Beta vulgaris TK81-O mitochondrial nad4L gene for NADH 
             dehydrogenase subunit 4L, complete cds.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..400</a>
@@ -301,11 +301,11 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#note">note</a>="C to U RNA editing" 
      <a href="/ddbj/features.html#misc_feature">misc_feature</a>    <a href="/ddbj/location.html">201</a>
                      /<a href="/ddbj/qualifiers.html#note">note</a>="C to U RNA editing" 
-</pre>
+</code></pre>
 
 ### B10) ribosomal frameshift in HIV1 complete genome
 
-<pre>DEFINITION  Human immunodeficiency virus 1 95TNIH047 proviral DNA, complete 
+<pre><code>DEFINITION  Human immunodeficiency virus 1 95TNIH047 proviral DNA, complete 
             genome.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..9430</a>
@@ -331,11 +331,11 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#transl_table">transl_table</a>=1
                      /<a href="/ddbj/qualifiers.html#translation">translation</a>="--- omitted ---"
      --- The rest is omitted --- 
-</pre>
+</code></pre>
 
 ### B11) partial TAA stop codon in mitochondrial genome
 
-<pre>DEFINITION  Mus musculus SAMP8 mitochondrial DNA, complete genome. 
+<pre><code>DEFINITION  Mus musculus SAMP8 mitochondrial DNA, complete genome. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..16299</a>
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
@@ -368,11 +368,11 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#note">note</a>="codon recognized: CGA"
                      /<a href="/ddbj/qualifiers.html#product">product</a>="tRNA-Arg"
   --- The rest is omitted --- 
-</pre>
+</code></pre>
 
 ### B12) Major Histocompatibility Complex (MHC)
 
-<pre>DEFINITION  Homo sapiens HLA-A gene for MHC class I antigen, partial cds,
+<pre><code>DEFINITION  Homo sapiens HLA-A gene for MHC class I antigen, partial cds,
             allele: HLA-A2(A*0201V3). 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..546</a>
@@ -386,11 +386,11 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#product">product</a>="MHC class I antigen"
                      /<a href="/ddbj/qualifiers.html#transl_table">transl_table</a>=1
                      /<a href="/ddbj/qualifiers.html#translation">translation</a>="--- omitted ---" 
-</pre>
+</code></pre>
 
 ### B13) trans\_splicing
 
-<pre>DEFINITION  Psilotum nudum Kingyoku chloroplast DNA, complete genome.
+<pre><code>DEFINITION  Psilotum nudum Kingyoku chloroplast DNA, complete genome.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..138829</a>
                      /<a href="/ddbj/qualifiers.html#cultivar">cultivar</a>="Kingyoku"
@@ -420,11 +420,11 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#number">number</a>=2
                      /<a href="/ddbj/qualifiers.html#product">product</a>="ribosomal protein S12"
                      ---- omitted ---- 
-</pre>
+</code></pre>
 
 ### B14) preproprotein
 
-<pre>DEFINITION  Homo sapiens NMS mRNA for prepro-neuromedin S, complete cds.
+<pre><code>DEFINITION  Homo sapiens NMS mRNA for prepro-neuromedin S, complete cds.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..485</a>
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="mRNA"
@@ -443,11 +443,11 @@ FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#mat_peptide">mat_peptide</a>     <a href="/ddbj/location.html">332..430</a>
                      /<a href="/ddbj/qualifiers.html#q_gene">gene</a>="NMS"
                      /<a href="/ddbj/qualifiers.html#product">product</a>="neuromedin S"
-</pre>
+</code></pre>
 
 ### B15) polyprotein
 
-<pre>DEFINITION  Dengue virus 2 DR123 genomic RNA, complete genome.
+<pre><code>DEFINITION  Dengue virus 2 DR123 genomic RNA, complete genome.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..10723</a>
                      /<a href="/ddbj/qualifiers.html#collection_date">collection_date</a>="2001"
@@ -481,7 +481,7 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#product">product</a>="nonstructural protein NS4B"
      <a href="/ddbj/features.html#mat_peptide">mat_peptide</a>     <a href="/ddbj/location.html">7570..10269</a>
                      /<a href="/ddbj/qualifiers.html#product">product</a>="RNA-dependent RNA polymerase"
-</pre>
+</code></pre>
 
 ## C: EST, GSS, STS
 
@@ -489,7 +489,7 @@ FEATURES             Location/Qualifiers
 
 [EST の説明](/ddbj/est.html)もご参照ください。
 
-<pre>DEFINITION  Mus musculus cDNA, clone: 2310009B01, 3' end sequence, expressed
+<pre><code>DEFINITION  Mus musculus cDNA, clone: 2310009B01, 3' end sequence, expressed
             in tongue. 
 KEYWORDS    EST; 3'-end sequence (3'-EST).
 FEATURES             Location/Qualifiers
@@ -502,13 +502,13 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#organism">organism</a>="Mus musculus"
                      /<a href="/ddbj/qualifiers.html#sex">sex</a>="male"
                      /<a href="/ddbj/qualifiers.html#tissue_type">tissue_type</a>="tongue" 
-</pre>
+</code></pre>
 
 ### C02) GSS (Genome Survey Sequence)
 
 [GSS の説明](/ddbj/gss.html)もご参照ください。
 
-<pre>DEFINITION  Arabidopsis thaliana Columbia DNA, YAC clone: CIC5D1, left end,
+<pre><code>DEFINITION  Arabidopsis thaliana Columbia DNA, YAC clone: CIC5D1, left end,
             chromosome 1 between mi303 and mi259.
 KEYWORDS    GSS.
 FEATURES             Location/Qualifiers
@@ -519,11 +519,11 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers.html#organism">organism</a>="Arabidopsis thaliana"
                      /<a href="/ddbj/qualifiers.html#ecotype">ecotype</a>="Columbia" 
-</pre>
+</code></pre>
 
 ### C03) STS (Sequence Tagged Site)
 
-<pre>DEFINITION  Sus scrofa DNA, STS on chromosome 1, clone:AA12345, 
+<pre><code>DEFINITION  Sus scrofa DNA, STS on chromosome 1, clone:AA12345, 
             sequence tagged site. 
 KEYWORDS    STS.
 FEATURES             Location/Qualifiers
@@ -536,7 +536,7 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#PCR_conditions">PCR_conditions</a>="30 cycles 94degC 30 sec, 
                      56degC 30 sec and 72degC 30 sec" 
      <a href="/ddbj/features.html#primer_bind">primer_bind</a>     <a href="/ddbj/location.html">complement(180..200)</a>
-</pre>
+</code></pre>
 
 ## D: Repeat
 
@@ -544,7 +544,7 @@ FEATURES             Location/Qualifiers
 
 ゲノムマッピングを目的とした microsatellite は STS division に分類します。
 
-<pre>DEFINITION  Bos taurus DNA, microsatellite: 3456P. 
+<pre><code>DEFINITION  Bos taurus DNA, microsatellite: 3456P. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..300</a>
                      /<a href="/ddbj/qualifiers.html#chromosome">chromosome</a>="11"
@@ -560,11 +560,11 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#rpt_unit_seq">rpt_unit_seq</a>="ta" 
                      /<a href="/ddbj/qualifiers.html#satellite">satellite</a>="microsatellite: 3456P"
      <a href="/ddbj/features.html#primer_bind">primer_bind</a>     <a href="/ddbj/location.html">complement(210..230)</a>
-</pre>
+</code></pre>
 
 ### D01.2) microsatellite, minimal annotation
 
-<pre>DEFINITION  Paralichthys olivaceus DNA, microsatellite: Poli1TUF.
+<pre><code>DEFINITION  Paralichthys olivaceus DNA, microsatellite: Poli1TUF.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..222</a>
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
@@ -573,11 +573,11 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#rpt_type">rpt_type</a>=tandem
                      /<a href="/ddbj/qualifiers.html#rpt_unit_seq">rpt_unit_seq</a>="ca"
                      /<a href="/ddbj/qualifiers.html#satellite">satellite</a>="microsatellite: Poli1TUF"
-</pre>
+</code></pre>
 
 ### D02) transposon
 
-<pre>DEFINITION  Escherichia coli transposon Tn2000 DNA, complete sequence. 
+<pre><code>DEFINITION  Escherichia coli transposon Tn2000 DNA, complete sequence. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..5000</a>
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
@@ -598,11 +598,11 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#translation">translation</a>="--- omitted ---" 
      <a href="/ddbj/features.html#repeat_region">repeat_region</a>   <a href="/ddbj/location.html">4900..5000</a>
                      /<a href="/ddbj/qualifiers.html#rpt_type">rpt_type</a>=inverted 
-</pre>
+</code></pre>
 
 ### D03) insertion sequence
 
-<pre>DEFINITION  Streptomyces coelicolor A456 insertion sequence IS123 DNA, complete 
+<pre><code>DEFINITION  Streptomyces coelicolor A456 insertion sequence IS123 DNA, complete 
             sequence.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..2000</a>
@@ -629,7 +629,7 @@ FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#repeat_region">repeat_region</a>   <a href="/ddbj/location.html">1167..1171</a>
                      /<a href="/ddbj/qualifiers.html#note">note</a>="target sequence"
                      /<a href="/ddbj/qualifiers.html#rpt_type">rpt_type</a>=flanking 
-</pre>
+</code></pre>
 
 ## E: Particular resources
 
@@ -637,7 +637,7 @@ FEATURES             Location/Qualifiers
 
 [環境サンプルの説明](/ddbj/env.html)もご参照ください。
 
-<pre>DEFINITION  Uncultured bacterium 4-11 gene for 16S rRNA, partial sequence.
+<pre><code>DEFINITION  Uncultured bacterium 4-11 gene for 16S rRNA, partial sequence.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..1475</a>
                      /<a href="/ddbj/qualifiers.html#clone">clone</a>="4-11"
@@ -647,11 +647,11 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#organism">organism</a>="uncultured bacterium" 
      <a href="/ddbj/features.html#rRNA">rRNA</a>            <a href="/ddbj/location.html">&lt;1..&gt;1475</a>
                      /<a href="/ddbj/qualifiers.html#product">product</a>="16S rRNA" 
-</pre>
+</code></pre>
 
 ### E02) organism name with sp. (unidentified species)
 
-<pre>DEFINITION  Eirene sp. EML1 GAPDH mRNA for glyceraldehyde-3-phosphate 
+<pre><code>DEFINITION  Eirene sp. EML1 GAPDH mRNA for glyceraldehyde-3-phosphate 
             dehydrogenase, partial cds. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..245</a>
@@ -663,11 +663,11 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#gene">gene</a>="GAPDH"
                      /<a href="/ddbj/qualifiers.html#product">product</a>="glyceraldehyde-3-phosphate dehydrogenase"
                      /<a href="/ddbj/qualifiers.html#translation">translation</a>="--- omitted ---" 
-</pre>
+</code></pre>
 
 ### E03) natural plasmid
 
-<pre>DEFINITION  Rhodococcus rhodochrous IFO 3338 plasmid pRC4 repA, repB genes for 
+<pre><code>DEFINITION  Rhodococcus rhodochrous IFO 3338 plasmid pRC4 repA, repB genes for 
             replication protein, DNA-binding replication protein, complete 
             cds.
 FEATURES             Location/Qualifiers
@@ -688,11 +688,11 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#product">product</a>="DNA-binding replication protein"
                      /<a href="/ddbj/qualifiers.html#transl_table">transl_table</a>=11
                      /<a href="/ddbj/qualifiers.html#translation">translation</a>="--- omitted ---" 
-</pre>
+</code></pre>
 
 ### E04) cloning vector
 
-<pre>DEFINITION  Cloning vector pAP3neo DNA, complete sequence. 
+<pre><code>DEFINITION  Cloning vector pAP3neo DNA, complete sequence. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source </a>         <a href="/ddbj/location.html">1..5350</a>
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="other DNA"
@@ -725,11 +725,11 @@ FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#regulatory">regulatory</a>      <a href="/ddbj/location.html">5302..5321</a>
                      /<a href="/ddbj/qualifiers.html#note">note</a>="T3 promoter" 
                      /<a href="/ddbj/qualifiers.html#regulatory_class">regulatory_class</a>="promoter"
-</pre>
+</code></pre>
 
 ### E05) synthetic construct
 
-<pre>DEFINITION  Synthetic construct gene for Rai-chu 101, complete cds. 
+<pre><code>DEFINITION  Synthetic construct gene for Rai-chu 101, complete cds. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..2223</a>
                      /<a href="/ddbj/qualifiers.html#focus">focus</a>
@@ -751,11 +751,11 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>=other DNA""
                      /<a href="/ddbj/qualifiers.html#note">note</a>="derived from human Raf cDNA"
                      /<a href="/ddbj/qualifiers.html#organism">organism</a>="Homo sapiens" 
-</pre>
+</code></pre>
 
 ### E06.1) miRNA mature transcript
 
-<pre>DEFINITION  Arabidopsis thaliana miR840 miRNA.
+<pre><code>DEFINITION  Arabidopsis thaliana miR840 miRNA.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..21</a>
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="transcribed RNA"
@@ -763,11 +763,11 @@ FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#ncRNA">ncRNA</a>           <a href="/ddbj/location.html">1..21</a>
                      /<a href="/ddbj/qualifiers.html#ncRNA_class">ncRNA_class</a>="miRNA"
                      /<a href="/ddbj/qualifiers.html#product">product</a>="miR840"
-</pre>
+</code></pre>
 
 ### E06.2) miRNA precursor transcript
 
-<pre>DEFINITION  Arabidopsis thaliana miR840-843 polycistronic noncoding RNA.
+<pre><code>DEFINITION  Arabidopsis thaliana miR840-843 polycistronic noncoding RNA.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..2223</a>
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="transcribed RNA"
@@ -780,7 +780,7 @@ FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#ncRNA">ncRNA</a>           <a href="/ddbj/location.html">1177..1197</a>
                      /<a href="/ddbj/qualifiers.html#ncRNA_class">ncRNA_class</a>="miRNA"
                      /<a href="/ddbj/qualifiers.html#product">product</a>="miR843" 
-</pre>
+</code></pre>
 
 ## F: Variation
 
@@ -788,7 +788,7 @@ FEATURES             Location/Qualifiers
 
 [多型関連研究における同一配列の代表データ登録](/ddbj/represent.html)もご参照ください。
 
-<pre>DEFINITION  Homo sapiens IGF1R mRNA for insulin-like growth factor I receptor,
+<pre><code>DEFINITION  Homo sapiens IGF1R mRNA for insulin-like growth factor I receptor,
             partial cds. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..1000</a>
@@ -805,11 +805,11 @@ FEATURES             Location/Qualifiers
                      substitution from Ala to Thr."
                      /<a href="/ddbj/qualifiers.html#compare">compare</a>="AB000000.1"
                      /<a href="/ddbj/qualifiers.html#replace">replace</a>="a" 
-</pre>
+</code></pre>
 
 ### F02) candidates of polymorphism found by direct sequencing of diploid genome
 
-<pre>
+<pre><code>
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..426</a>
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="mRNA"
@@ -833,13 +833,13 @@ ORIGIN
       361 gactatgata aggtaaaatt actattagaa attattttat tatttcttca actagctgcc
       421 tttgca
 //
-</pre>
+</code></pre>
 
 ## G: Sequencing gap
 
 ### G01) entry with unknown gaps
 
-<pre>DEFINITION  Homo sapiens HLA-A gene for MHC class I antigen, partial cds,
+<pre><code>DEFINITION  Homo sapiens HLA-A gene for MHC class I antigen, partial cds,
             allele: HLA-A*2601V1.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..1022</a>
@@ -889,7 +889,7 @@ ORIGIN
       901 gcctgcaggg gatgggacct tccagaagtg ggcgtctgtg gtggtgcctt ctggacagga 
       961 gcagagatac acctgccatg tgcagcatga gggtctgccc aagcccctca ccctgagatg 
      1021 gg
-//</pre>
+//</code></pre>
 
 
 

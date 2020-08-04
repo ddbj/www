@@ -75,7 +75,7 @@ Aspects of TSA
 
 In case of citing [DDBJ Read Archive](/dra/index-e.html)
 
-<pre><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">IZZY01000001</a>              <a id="SequenceLengthA" href="#SequenceLengthB">800 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">TSA</a> <a id="ModificationDateA" href="#ModificationDateB">15-OCT-2015</a>
+<pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">IZZY01000001</a>              <a id="SequenceLengthA" href="#SequenceLengthB">800 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">TSA</a> <a id="ModificationDateA" href="#ModificationDateB">15-OCT-2015</a>
 <a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  TSA: Mus musculus RNA, contig1_1.
 <a id="AccessionA" href="#AccessionB">ACCESSION</a>   IZZY01000001
 <a id="VersionA" href="#VersionB">VERSION</a>     IZZY01000001.1
@@ -115,11 +115,11 @@ In case of citing [DDBJ Read Archive](/dra/index-e.html)
         :
         -- The rest of nucleotide sequence is omitted --
         :
-<a id="EndA" href="#EndB">//</a></pre>
+<a id="EndA" href="#EndB">//</a></code></pre>
 
 In case of citing [EST](/ddbj/est-e.html)
 
-<pre class="code flat-file"><a href="#LocusB">LOCUS</a>       <a href="#LocusNameB">IZZY01000001</a>              <a href="#SequenceLengthB">800 bp</a>    <a href="#MoleculeTypeB">mRNA</a>    <a href="#ModificationDateB">linear</a>   <a href="#DivisionB">TSA</a> <a href="#ModificationDateB">15-OCT-2015</a>
+<pre class="code flat-file"><code><a href="#LocusB">LOCUS</a>       <a href="#LocusNameB">IZZY01000001</a>              <a href="#SequenceLengthB">800 bp</a>    <a href="#MoleculeTypeB">mRNA</a>    <a href="#ModificationDateB">linear</a>   <a href="#DivisionB">TSA</a> <a href="#ModificationDateB">15-OCT-2015</a>
 <a href="#DefinitionB">DEFINITION</a>  TSA: Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate
             dehydrogenase, complete cds.
 <a href="#AccessionB">ACCESSION</a>   IZZY01000001
@@ -173,4 +173,4 @@ In case of citing [EST](/ddbj/est-e.html)
         :
         -- The rest of nucleotide sequence is omitted --
         :
-<a href="#EndB">//</a></pre>
+<a href="#EndB">//</a></code></pre>

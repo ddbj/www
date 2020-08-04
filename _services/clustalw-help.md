@@ -3,6 +3,33 @@ layout: indexed_content
 title: ClustalW 
 category: services
 lang: ja
+related_pages:
+  - title: ARSA ヘルプ
+    url: /arsa-help.html
+  - title: BLAST ヘルプ
+    url: /blast-help.html
+  - title: getentry ヘルプ
+    url: /getentry-help.html
+  - title: VecScreen ヘルプ
+    url: /vecscreen-help.html
+  - title: TXSearch ヘルプ
+    url: /txsearch-help.html
+  - title: 過去のサービス
+    url: /past-services.html
+  - title: 関連論文
+    url: /references.html
+  - title: WABI (Web API for Biology)
+    url: /wabi.html
+  - title: WABI BLAST ヘルプ
+    url: /wabi_blast-help.html
+  - title: WABI ClustalW ヘルプ
+    url: /wabi_clustalw-help.html
+  - title: WABI VecScreen ヘルプ
+    url: /wabi_vecscreen-help.html
+  - title: WABI MAFFT ヘルプ
+    url: /wabi_mafft-help.html
+  - title: Pipeline ヘルプ
+    url: /pipeline-help.html
 ---
 
 ClustalW は，DNA配列やタンパク質配列の多重整列のためのツールです。<br>DDBJ では，通常版（最新バージョン）と DDBJ拡張版(Version 1.83, Modified by Dr. Kirill Kryukov) を提供しています。

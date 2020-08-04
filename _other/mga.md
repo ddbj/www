@@ -30,7 +30,7 @@ Variable record から構成されています。MGA の公開データには，
 
 Master record の例
 
-<pre>
+<pre><code>
 <a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">ZZZZZ0000000</a>                       <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="ModificationDateA" href="#ModificationDateB">linear</a>   <a id="DivisionA" href="#DivisionB">ROD</a> <a id="ModificationDateA" href="#ModificationDateB">24-JAN-2005</a>
 <a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Mus musculus 1 month adult cerebellum short transcripts tag.
 <a id="AccessionA" href="#Accession_MGA">ACCESSION</a>   ZZZZZ0000000
@@ -75,7 +75,7 @@ Master record の例
             &gt;[ACC#]|[submitter's identifier]|[number of sequence
             count]|[map]|[free text]|[db_xref1(,db_xref2,...)]|
 <a id="EndA" href="#EndB">//</a>
-</pre>
+</code></pre>
 
 #### Variable record
 

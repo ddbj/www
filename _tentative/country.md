@@ -14,7 +14,7 @@ The text below outlines the format and the present list of allowed countries.
 
 ## Defiition of /country qualifier
 
-<pre>
+<pre><code>
 Qualifier:      /country=" "
 Qualifier       /country=
 Definition      locality of isolation of the sequenced organism indicated in
@@ -31,7 +31,7 @@ Comment         Intended to provide a reference to the site where the source
                 be indicated where possible. Note that the physical geography of
                 the isolation or sampling site should be represented in
                 /isolation_source.
-</pre>
+</code></pre>
 
 COUNTRY LIST based on information from: [https://unstats.un.org/unsd/methods/m49/m49.htm](https://unstats.un.org/unsd/methods/m49/m49.htm)
 

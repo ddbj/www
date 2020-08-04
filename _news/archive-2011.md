@@ -37,11 +37,11 @@ lang: ja
   <h2 class="news_title" id="wn111206"><a href="#wn111206">ヒト (Homo sapiens) MGA データの公開</a></h2>
   <div class="news_date">2011年12月06日</div>
   <div class="news_content"><dl> <dd><a href="http://www.u-tokyo.ac.jp/index_j.html" target="_blank">東京大学</a>から登録された ヒト (<i>Homo sapiens</i>) 由来の 5'SAGE tag の MGA データが公開されました。<br><strong>アクセッション番号</strong>は以下の通りです。<br><br>
-<pre class="highlight">・AEAAA0000001-AEAAA0026367 (26,367 entries)・AEAAB0000001-AEAAB0012114 (12,114 entries)
+<pre class="highlight"><code>・AEAAA0000001-AEAAA0026367 (26,367 entries)・AEAAB0000001-AEAAB0012114 (12,114 entries)
 ・AEAAC0000001-AEAAC0021096 (21,096 entries)・AEAAD0000001-AEAAD0024262 (24,262 entries)
 ・AEAAE0000001-AEAAE0023437 (23,437 entries)・AEAAF0000001-AEAAF0030485 (30,485 entries)
 ・AEAAG0000001-AEAAG0021798 (21,798 entries)・AEAAH0000001-AEAAH0040734 (40,734 entries)
-・AEAAI0000001-AEAAI0029614 (29,614 entries)・AEAAJ0000001-AEAAJ0030206 (30,206 entries)</pre><strong>Anonymous FTP 一括取得：</strong> <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/mga/AE_resource_index.html">AE_resource_index</a><br><strong>関連ページ：</strong> <a href="/ddbj/mga.html">MGA 配列データについて</a></dd> </dl></div>
+・AEAAI0000001-AEAAI0029614 (29,614 entries)・AEAAJ0000001-AEAAJ0030206 (30,206 entries)</code></pre><strong>Anonymous FTP 一括取得：</strong> <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/mga/AE_resource_index.html">AE_resource_index</a><br><strong>関連ページ：</strong> <a href="/ddbj/mga.html">MGA 配列データについて</a></dd> </dl></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -641,10 +641,10 @@ lang: ja
   <h2 class="news_title" id="wn110210"><a href="#wn110210">DAD リリース54 における不具合のお詫び</a></h2>
   <div class="news_date">2011年02月10日</div>
   <div class="news_content">DAD リリース54 に一部不具合が発生していたことが判明しました。詳細は以下の通りです。<ul><li><b>対象：</b> DAD リリース54（2011年1月公開）の下記該当箇所</li><li><b>状況：</b> リリースから除外されるべきデータが含まれていた</li><li><b>影響サービス：</b> Anonymous FTP，ARSA，相同性検索，大型計算機(supernig)</li><li><b>対応：</b> 訂正版 DAD リリース 54.1 を近日公開予定です</li></ul>
-<pre class="highlight">BCT（44 entries）  / ddbjbct2.DAD.gz, ddbjbct10.DAD.gzHUM（13 entries）  
+<pre class="highlight"><code>BCT（44 entries）  / ddbjbct2.DAD.gz, ddbjbct10.DAD.gzHUM（13 entries）  
 / ddbjhum.DAD.gz INV（9 entries）   / ddbjinv2.DAD.gz PLN（1 entry）     
 / ddbjpln2.DAD.gz SYN（1 entry）     / ddbjsyn.DAD.gzVRL（44 entries）  
-/ ddbjvrl1.DAD.gzVRT（274 entries） / ddbjvrt.DAD.gz </pre>ユーザの皆様にご迷惑をお掛けいたしました事を深くお詫び申し上げます。 </div>
+/ ddbjvrl1.DAD.gzVRT（274 entries） / ddbjvrt.DAD.gz </code></pre>ユーザの皆様にご迷惑をお掛けいたしました事を深くお詫び申し上げます。 </div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: メンテナンス</span>
@@ -672,13 +672,13 @@ lang: ja
   <h2 class="news_title" id="wn110207_2"><a href="#wn110207_2">DDBJ リリース84 における不具合のお詫び</a></h2>
   <div class="news_date">2011年02月07日</div>
   <div class="news_content"><dd>DDBJ リリース84 に一部不具合が発生していたことが判明しました。詳細は以下の通りです。<ul><li><strong>対象：</strong> DDBJ リリース84（2010年12月公開）の下記該当箇所</li><li><strong>状況：</strong> リリースから除外されるべきデータが含まれていた</li><li><strong>影響サービス：</strong> Anonymous FTP，ARSA，相同性検索，DAD，大型計算機(supernig)</li><li><strong>対応：</strong>訂正版 DDBJリリース 84.1 を近日公開予定です</li></ul><strong>該当ファイル：</strong>
-<pre class="highlight"> BCT（33 entries）  / ddbjbct2.seq.gz，ddbjbct8.seq.gz，ddbjbct9.seq.gz ENV（217 entries） 
+<pre class="highlight"><code> BCT（33 entries）  / ddbjbct2.seq.gz，ddbjbct8.seq.gz，ddbjbct9.seq.gz ENV（217 entries） 
 / ddbjenv4.seq.gz，ddbjenv5.seq.gz EST（1 entry）     / ddbjest145.seq.gz HUM（21 entries）  
 / ddbjhum6.seq.gz INV（9 entries）   / ddbjinv4.seq.gz PLN（2 entries）   
 / ddbjpln5.seq.gz，ddbjpln7.seq.gz ROD（27 entries）  / ddbjrod5.seq.gz SYN（1 entry）     
 / ddbjsyn.seq.gz VRL（33 entries）  / ddbjvrl1.seq.gz， VRT（403 entries） 
 / ddbjvrt1.seq.gz，ddbjvrt3.seq.gz，ddbjvrt4.seq.gz CON（16,633 entries）  
-/ ddbjcon5.seq.gz, ddbjcon6.seq.gz, ddbjcon7.seq.gz, ddbjcon8.seq.gz, ddbjcon11.seq.</pre> ユーザの皆様にご迷惑をお掛けいたしました事を深くお詫び申し上げます。</dd></div>
+/ ddbjcon5.seq.gz, ddbjcon6.seq.gz, ddbjcon7.seq.gz, ddbjcon8.seq.gz, ddbjcon11.seq.</code></pre> ユーザの皆様にご迷惑をお掛けいたしました事を深くお詫び申し上げます。</dd></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: メンテナンス</span>

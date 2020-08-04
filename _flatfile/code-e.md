@@ -63,11 +63,11 @@ An example for description of the modified base in FEATURES line.
 
 Example
 
- <pre>
+ <pre><code>
       FEATURES             Location/Qualifiers
            <a href="/ddbj/features-e.html#modified_base">modified_base</a>   15
                            <a href="/ddbj/qualifiers-e.html#mod_base">/mod_base</a>="m2g"
-</pre>   
+</code></pre>   
 <br>
 
 | Abbreviation | Modified base description                                            |

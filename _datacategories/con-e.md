@@ -55,7 +55,7 @@ You can submit CON data to DDBJ via [Mass Submission System (MSS)](/ddbj/mss-e.h
 
 ## Sample flat file
 
-<pre><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">BA001000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">5631 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">DNA</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">linear</a>   <a id="DivisionA" href="#DivisionB">CON</a> <a id="ModificationDateA" href="#ModificationDateB">06-DEC-2008</a>
+<pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">BA001000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">5631 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">DNA</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">linear</a>   <a id="DivisionA" href="#DivisionB">CON</a> <a id="ModificationDateA" href="#ModificationDateB">06-DEC-2008</a>
 <a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Homo sapiens DNA, chromosome 7, scaffold_ASE1. 
 <a id="AccessionA" href="#AccessionB">ACCESSION</a>   BA001000 BZZZ01000000
 <a id="VersionA" href="#VersionB">VERSION</a>     BA001000.1
@@ -96,4 +96,4 @@ You can submit CON data to DDBJ via [Mass Submission System (MSS)](/ddbj/mss-e.h
                      /<a href="/ddbj/qualifiers.html#linkage_evidence">linkage_evidence</a>="align trnscpt"
 <a id="ContigA" href="#ContigB">CONTIG</a>      join(BZZZ01123456.1:1..1345,gap(1500),BZZZ01123457.1:1..1456,
             gap(unk100),complement(BZZZ01123458.1:1..1230))
-<a id="EndA" href="#EndB">//</a></pre>
+<a id="EndA" href="#EndB">//</a></code></pre>

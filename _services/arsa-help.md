@@ -3,6 +3,33 @@ layout: indexed_content
 title: ARSA 
 category: services
 lang: ja
+related_pages:
+  - title: BLAST ヘルプ
+    url: /blast-help.html
+  - title: getentry ヘルプ
+    url: /getentry-help.html
+  - title: VecScreen ヘルプ
+    url: /vecscreen-help.html
+  - title: ClustalW ヘルプ
+    url: /clustalw-help.html
+  - title: TXSearch ヘルプ
+    url: /txsearch-help.html
+  - title: 過去のサービス
+    url: /past-services.html
+  - title: 関連論文
+    url: /references.html
+  - title: WABI (Web API for Biology)
+    url: /wabi.html
+  - title: WABI BLAST ヘルプ
+    url: /wabi_blast-help.html
+  - title: WABI ClustalW ヘルプ
+    url: /wabi_clustalw-help.html
+  - title: WABI VecScreen ヘルプ
+    url: /wabi_vecscreen-help.html
+  - title: WABI MAFFT ヘルプ
+    url: /wabi_mafft-help.html
+  - title: Pipeline ヘルプ
+    url: /pipeline-help.html
 ---
 
 ## 検索対象データベース
@@ -234,7 +261,7 @@ Feature/Qualifier の部分一致検索 Feature Key 、 Qualifier Name 、 Quali
             <td><span>Feature</span></td>
             <td><span>fe</span></td>
             <td><a href="/ddbj/flat-file.html#Features"><span>FEATURES</span> に記載された「Feature 単位のテキスト」</a></td>
-            <td><pre>source 1..450
+            <td><pre><code>source 1..450
 /chromosome="12" 
 /clone="GT200015" 
 /clone_lib="lambda gt11 human liver cDNA (GeneTech.
@@ -252,7 +279,7 @@ CDS 86..&gt;450
 /transl_table=1
 /translation="MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT
 YMFKYDTVHGQWKHHEVKVKDSKTLLFGEKEVTVFGCRNPKEIPWGETSAEFVVEYTG
-VFTDKDKAVAQLKGGAKKV" </pre></td>
+VFTDKDKAVAQLKGGAKKV" </code></pre></td>
           </tr>
           <tr>
             <td><span>FeatureQualifier</span></td>

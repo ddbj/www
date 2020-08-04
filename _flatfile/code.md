@@ -42,11 +42,12 @@ lang: ja
 
 例
 
-<pre>
+<pre><code>
       FEATURES             Location/Qualifiers
            <a href="/ddbj/features.html#modified_base">modified_base</a>   15
                            <a href="/ddbj/qualifiers.html#mod_base">/mod_base</a>="m2g"
-      </pre>
+    </code>
+</pre>
 <br>
 
 | 省略形      | 修飾塩基                                                                 |
