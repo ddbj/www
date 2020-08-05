@@ -4,6 +4,45 @@ title: 相同性検索プログラムBLASTの内部構造
 pathname: blast_doc
 category: _activities
 lang: ja
+related_pages:
+  - title: DDBJ スタッフの論文 (2009-)
+    url: /activities/papers.html
+  - title: DDBJ スタッフの出版物（2009-）
+    url: /activities/presentations.html
+  - title: DDBJ スタッフの講演発表（2009-）
+    url: /activities/past-presentations.html
+  - title: 国際実務者会議報告一覧
+    url: /activities/icm-reports.html
+  - title: DDBJ スタッフの論文 (1996-2008)
+    url: /activities/past-papers.html
+  - title: DDBJ スタッフの講演発表（2001-2006）
+    url: /activities/past-presentations.html
+  - title: DDBJ の塩基配列解析ツールについて
+    url: /column/ddbjpipeline.html
+  - title: DDBJ スタッフの出版物（1996–2008）
+    url: /activities/past-publications.html
+  - title: DDBJ アノテータの業務紹介
+    url: /column/annotator.html
+  - title: 「ユーザーの皆様へ，お願いです！」
+    url: /column/request.html
+  - title: DDBJ での特許関連配列データの公開業務の紹介
+    url: /column/patent.html
+  - title: DDBJ スタッフコラム
+    url: /column/staffcolumn.html
+  - title: 遺伝子とゲノム
+    url: /column/genegenome.html
+  - title: 進化ゲノム学とは
+    url: /column/introevog.html
+  - title: FASTAとBLASTについて
+    url: /column/homology_doc.html
+  - title: DDBJ Annual Report
+    url: /activities/annualreport.html
+  - title: 発行物アーカイブ
+    url: /archives/pub-archives.html
+  - title: DDBJ Mail Magazine
+    url: /subscribe.html
+  - title: DDBJ データ解析チャレンジ
+    url: /activities/ddbj-challenge.html
 ---
 
 　ＤＮＡの塩基配列やタンパク質のアミノ酸配列の決定が一般的になった現在では，新たに決めた配列と相同性の高い配列をデータベース中で発見することが，分子の機能や構造，そして分子進化を考える上で，ますます重要になっています。この相同性検索のための強力なツールが，Altschulら（1990）によって開発されたBLAST（Basic Local Alignment Search Tool）です。ここでは，BLASTのプログラムの原理と実際の作業手順について，簡単に紹介します。

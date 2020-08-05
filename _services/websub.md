@@ -3,6 +3,23 @@ layout: indexed_content
 title: Web版塩基配列登録システム (NSSS)
 category: services
 lang: ja
+related_pages:
+  - title: DDBJ 塩基配列登録システム HELP
+    url: /ddbj/websub-help.html
+  - title: 塩基配列の登録
+    url: /ddbj/submission.html
+  - title: 登録の見本
+    url: /ddbj/example.html
+  - title: Feature key
+    url: /ddbj/features.html
+  - title: Qualifier key
+    url: /ddbj/qualifiers.html
+  - title: Organism qualifier に記載する生物名
+    url: /ddbj/organism.html
+  - title: タンパク質コード配列; CDS feature について
+    url: /ddbj/cds.html
+  - title: Location の記述法
+    url: /ddbj/location.html
 ---
 
 {::options parse_block_html="true" /}

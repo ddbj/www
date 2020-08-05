@@ -4,6 +4,27 @@ title: Organism qualifier に記載する生物名
 pathname: organism
 category: flatfile
 lang: ja
+related_pages:
+  - title: The Genetic Codes
+    url: /ddbj/geneticcode.html
+  - title: The Genetic Codes
+    url: /ddbj/codontable.html
+  - title: DDBJ 公開形式 (Flat file)
+    url: /ddbj/flat-file.html
+  - title: Feature key
+    url: /ddbj/features.html
+  - title: Qualifier key
+    url: /ddbj/qualifiers.html
+  - title: Location の記述法
+    url: /ddbj/location.html
+  - title: タンパク質コード配列; CDS feature について
+    url: /ddbj/cds.html
+  - title: The Genetic Codes
+    url: /ddbj/geneticcode-e.html
+  - title: 配列の記載に用いる略号
+    url: /ddbj/code.html
+  - title: 登録の見本
+    url: /ddbj/example.html
 ---
 
 organism qualifier には「生物名」として、taxonomy database において、種、もしくは、それ以下のランクで "scientific name" とされている名称を記載する必要があります。

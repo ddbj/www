@@ -3,6 +3,13 @@ layout: indexed_content
 title: 登録データ種別
 category: services
 lang: ja
+related_pages:
+  - title: 国際塩基配列データベースのアクセッション番号
+    url: /acc_def.html
+  - title: データ公開原則
+    url: /data-release-policy.html
+  - title: Prefix Letter List
+    url: /prefix.html
 ---
 
 ## DDBJ に登録可能なデータ <a name="accept"></a>

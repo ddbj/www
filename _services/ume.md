@@ -3,6 +3,19 @@ layout: indexed_content
 title: UME ユーザーマニュアル
 category: services
 lang: ja
+related_pages:
+  - title: 登録ファイル形式
+    url: services/file-format.html
+  - title: MSS データファイル用チェックツール
+    url: /ddbj/mss-tool.html
+  - title: Parser ユーザーマニュアル
+    url: services/parser.html
+  - title: transChecker ユーザーマニュアル
+    url: services/transchecker.html
+  - title: validator エラーメッセージ
+    url: services/validator.html
+  - title: MSS 利用申し込み
+    url: services/mass-form.html
 ---
 
 UME (Utilities for MSS file Error check) は Mass Submission System (MSS) を利用して DDBJ に登録する際に必要な [配列ファイル](/ddbj/file-format.html#sequence) と[アノテーションファイル](/ddbj/file-format.html#annotation) のフォーマットチェックと、それらファイルの記載を元に [CDS feature](/ddbj/cds.html) のアミノ酸翻訳チェックを行うツールです。Parser と transChecker を内包しています。

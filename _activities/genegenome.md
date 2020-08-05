@@ -4,6 +4,27 @@ title: 遺伝子とゲノム
 pathname: genegenome
 category: _activities
 lang: ja
+related_pages:
+  - title: DDBJ Mail Magazine
+    url: /subscribe.html
+  - title: DDBJ データ解析チャレンジ
+    url: /activities/ddbj-challenge.html
+  - title: 進化ゲノム学とは
+    url: /column/introevog.html
+  - title: 相同性検索プログラムBLASTの内部構造
+    url: /column/blast_doc.html
+  - title: FASTAとBLASTについて
+    url: /column/homology_doc.html
+  - title: DDBJ の塩基配列解析ツールについて
+    url: /column/ddbjpipeline.html
+  - title: DDBJ アノテータの業務紹介
+    url: /column/annotator.html
+  - title: 「ユーザーの皆様へ，お願いです！」
+    url: /column/request.html
+  - title: DDBJ での特許関連配列データの公開業務の紹介
+    url: /column/patent.html
+  - title: DDBJ スタッフコラム
+    url: /column/staffcolumn.html
 ---
 
 ## 遺伝子とゲノム

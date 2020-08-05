@@ -4,6 +4,25 @@ title: DDBJ 公開形式 Flat file
 pathname: flat-file
 category: flatfile
 lang: ja
+related_pages:
+  - title: Location の記述法
+    url: /ddbj/location.html
+  - title: タンパク質コード配列; CDS feature について
+    url: /ddbj/cds.html
+  - title: 登録の見本
+    url: /ddbj/example.html
+  - title: 配列の記載に用いる略号
+    url: /ddbj/code.html
+  - title: Organism qualifier に記載する生物名
+    url: /ddbj/organism.html
+  - title: Feature key
+    url: /ddbj/features.html
+  - title: Qualifier key
+    url: /ddbj/qualifiers.html
+  - title: The Genetic Codes
+    url: /ddbj/codontable.html
+  - title: The Genetic Codes
+    url: /ddbj/geneticcode.html
 ---
 
 「DDBJ/EMBL-Bank/GenBank 国際塩基配列データベース」は、全世界の研究者が実験によって決定したDNA (または RNA)

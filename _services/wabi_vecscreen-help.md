@@ -3,6 +3,13 @@ layout: indexed_content
 title: WABI VecScreen
 category: services
 lang: ja
+related_pages:
+  - title: WABI BLAST ヘルプ
+    url: /wabi_blast-help.html
+  - title: WABI ClustalW ヘルプ
+    url: /wabi_clustalw-help.html
+  - title: WABI MAFFT ヘルプ
+    url: /wabi_mafft-help.html
 ---
 
 ## VECSCREEN の job の投入

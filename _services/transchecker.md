@@ -3,6 +3,19 @@ layout: indexed_content
 title: transChecker ユーザーマニュアル
 category: services
 lang: ja
+related_pages:
+  - title: 登録ファイル形式
+    url: services/file-format.html
+  - title: MSS データファイル用チェックツール
+    url: /ddbj/mss-tool.html
+  - title: UME ユーザーマニュアル
+    url: services/ume.html
+  - title: Parser ユーザーマニュアル
+    url: services/parser.html
+  - title: validator エラーメッセージ
+    url: services/validator.html
+  - title: MSS 利用申し込み
+    url: services/mass-form.html
 ---
 
 transChecker は Mass Submission System (MSS) を利用して DDBJ に登録する際に必要な

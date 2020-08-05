@@ -3,6 +3,19 @@ layout: indexed_content
 title: 登録ファイル形式
 category: services
 lang: ja
+related_pages:
+  - title: MSS データファイル用チェックツール
+    url: /ddbj/mss-tool.html
+  - title: UME ユーザーマニュアル
+    url: services/ume.html
+  - title: Parser ユーザーマニュアル
+    url: services/parser.html
+  - title: transChecker ユーザーマニュアル
+    url: services/transchecker.html
+  - title: validator エラーメッセージ
+    url: services/validator.html
+  - title: MSS 利用申し込み
+    url: services/mass-form.html
 ---
 
 ## 配列ファイル<a name="sequence"></a>
