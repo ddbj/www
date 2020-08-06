@@ -4,6 +4,23 @@ title: Patent column from DDBJ
 pathname: patent-e
 category: _activities
 lang: en
+related_pages:
+  - title: DDBJ Publications Archive
+    url: /archives/pub-archives-e.html
+  - title: DDBJ staff papers (2009-)
+    url: /activities/papers-e.html
+  - title: DDBJ staff presentations (2009-)
+    url: /activities/presentations-e.html
+  - title: DDBJ staff presentations (2001-2008)
+    url: /activities/past-presentations-e.html
+  - title: The Reports for International Collaborators Meetings
+    url: /activities/icm-reports-e.html
+  - title: DDBJ staff papers（1996-2008）
+    url: /activities/past-papers-e.html
+  - title: DDBJ Annual Reports
+    url: /activities/annualreport-e.html
+  - title: DDBJ Mail Magazine
+    url: /subscribe-e.html
 ---
 
 Quote from Mail Magazine : No.62&63 (Sep.02,2011) ～ No.71&72
@@ -194,7 +211,7 @@ applied sequences in Korea (Please see Fig.3).
   
 
 {::nomarkdown}
-{% include image.html url="ddbj/2_Fig3.png" caption="Fig.3, Top page of PATOME@Korea;" %}
+{% include image.html url="ddbj/2_Fig3.png" caption="Fig.3, Top page of PATOME@Korea;" class="w630" %}
 {:/}
 
 
@@ -209,7 +226,7 @@ Fig.4). K2E-PAT (Korean to English Patent Automatic Translation) has pay
 service for the provision of full text by English machine translation.
   
 {::nomarkdown}
-{% include image.html url="ddbj/2_Fig4.png" caption="Fig.4, \"KPA\" search page of KIPRIS;" %}
+{% include image.html url="ddbj/2_Fig4.png" caption="Fig.4, \"KPA\" search page of KIPRIS;" class="w630" %}
 {:/}
 
 
@@ -245,7 +262,7 @@ JPO submission file (Fig. 2).
 
   
 {::nomarkdown}
-{% include image.html url="ddbj/3_Fig1.jpg" caption="Fig.1 Example of JPO submission file" %}
+{% include image.html url="ddbj/3_Fig1.jpg" caption="Fig.1 Example of JPO submission file" class="w500" %}
 {:/}
 
 
@@ -257,7 +274,7 @@ Block and Sequence Block) as different color with sample data and
 description contents in Fig. 2.
 
 {::nomarkdown}
-{% include image.html url="ddbj/3_Fig2.jpg" caption="Fig. 2 Correspondence relation of JPO nucleotide sequence data" %}
+{% include image.html url="ddbj/3_Fig2.jpg" caption="Fig. 2 Correspondence relation of JPO nucleotide sequence data" class="w500" %}
 {:/}
 
 Each Block name of symbol alphabet is as follows;  
@@ -296,7 +313,7 @@ of [A] LOCUS Bloc and TITLE line of [C] REFERENCE Block.
 In specially, applicants name is only set JOURNAL line on [C]
 REFERENCE Block (Fig. 3).
 
-![]({{ site.baseurl }}/assets/images/ddbj/3_Fig3.jpg)
+![]({{ site.baseurl }}/assets/images/ddbj/3_Fig3.jpg){:.w500}
 
 ### 5. Author comments
 
@@ -323,7 +340,7 @@ different color with sample data and description contents in Fig. 1.
 
    
 {::nomarkdown}
-{% include image.html url="ddbj/4_Fig1.jpg" caption="Fig. 1 Correspondence relation of JPO nucleotide sequence data" %}
+{% include image.html url="ddbj/4_Fig1.jpg" caption="Fig. 1 Correspondence relation of JPO nucleotide sequence data" class="w500" %}
 {:/}
 
 
@@ -349,7 +366,7 @@ format (Fig.2). Its line has Accession number, Sequence length number,
 Molecule type, Division and Last release date.
 
 {::nomarkdown}
-{% include image.html url="ddbj/4_Fig2.jpg" caption="Fig.2 LOCUS line for Amino acid sequence data" %}
+{% include image.html url="ddbj/4_Fig2.jpg" caption="Fig.2 LOCUS line for Amino acid sequence data" class="w500" %}
 {:/}
 
 
@@ -430,7 +447,7 @@ In case of Amino acid sequence data, BASE COUNT line is not output
 (Fig.3).
   
 {::nomarkdown}
-{% include image.html url="ddbj/4_Fig3.jpg" caption="Fig.3 Example of Sequence Blockv for amino acid data" %}
+{% include image.html url="ddbj/4_Fig3.jpg" caption="Fig.3 Example of Sequence Blockv for amino acid data" class="w500" %}
 {:/}
 
 ### 3. Conversion process of scientific name
@@ -453,7 +470,7 @@ COMMENT Block (Fig.1, Table 4).
 
   
 {::nomarkdown}
-{% include image.html url="ddbj/4_Fig4.jpg" caption="Fig.4 Example of Unidentified organism name (extracted FF)" %}
+{% include image.html url="ddbj/4_Fig4.jpg" caption="Fig.4 Example of Unidentified organism name (extracted FF)" class="w500" %}
 {:/}
 
 
@@ -474,7 +491,7 @@ number.
 
   
 {::nomarkdown}
-{% include image.html url="ddbj/4_Table6.jpg" caption="Table 6: Format of Patent publication number" %}
+{% include image.html url="ddbj/4_Table6.jpg" caption="Table 6: Format of Patent publication number" class="w500" %}
 {:/}
 
 
@@ -485,7 +502,7 @@ of REFERENCE Block and PN line of COMMENT Block (Fig.5).
 
   
 {::nomarkdown}
-{% include image.html url="ddbj/4_Fig5.jpg" caption="Fig.5 Patent publication number on DDBJ FF" %}
+{% include image.html url="ddbj/4_Fig5.jpg" caption="Fig.5 Patent publication number on DDBJ FF" class="w500" %}
 {:/}
 
 
@@ -513,7 +530,7 @@ cumulated files on Anonymous FTP since September 2012 (Fig.2).
 <div class="float-left">
 
 {::nomarkdown}
-{% include image.html url="ddbj/5_Fig1.jpg" caption="Fig.1 New format of COMMENT Block for Nucleotide sequence data" %}
+{% include image.html url="ddbj/5_Fig1.jpg" caption="Fig.1 New format of COMMENT Block for Nucleotide sequence data" class="w320" %}
 {:/}
 
 </div>
@@ -522,7 +539,7 @@ cumulated files on Anonymous FTP since September 2012 (Fig.2).
 <div class="float-right">
 
 {::nomarkdown}
-{% include image.html url="ddbj/5_Fig2.jpg" caption="Fig.2 New format of COMMENT Block for Amino acid sequence data" %}
+{% include image.html url="ddbj/5_Fig2.jpg" caption="Fig.2 New format of COMMENT Block for Amino acid sequence data" class="w320" %}
 {:/}
 
 </div>
@@ -538,7 +555,7 @@ applicants name is only set JOURNAL line on REFERENCE Block (Fig.3 &
 Fig.4).
 
 {::nomarkdown}
-{% include image.html url="ddbj/5_Fig3.jpg" caption="Fig.3 Applicant name on REFERENCE Block" %}
+{% include image.html url="ddbj/5_Fig3.jpg" caption="Fig.3 Applicant name on REFERENCE Block" class="w500" %}
 {:/}
 
 
@@ -546,7 +563,7 @@ Therefore, DDBJ made describing basic patent information on COMMENT
 Block as follows (Fig.4).
 
 {::nomarkdown}
-{% include image.html url="ddbj/5_Fig4.jpg" caption="Fig.4 Description of each line on REFERENCE [A] and COMMENT Block [B]" %}
+{% include image.html url="ddbj/5_Fig4.jpg" caption="Fig.4 Description of each line on REFERENCE [A] and COMMENT Block [B]" class="w500" %}
 {:/}
 
 
@@ -586,7 +603,7 @@ Sequence number in order of nucleotide sequences, amino acid sequences
 
   
 {::nomarkdown}
-{% include image.html url="ddbj/5_Table2.jpg" caption="Table.2 Correspondence of Sequence number between Sequence listings and FF" %}
+{% include image.html url="ddbj/5_Table2.jpg" caption="Table.2 Correspondence of Sequence number between Sequence listings and FF" class="w500" %}
 {:/}
 
   

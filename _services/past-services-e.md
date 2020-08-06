@@ -3,6 +3,25 @@ layout: indexed_content
 title: Services in past
 category: services
 lang: en
+related_pages:
+  - title: ARSA Help
+    url: /arsa-help-e.html
+  - title: BLAST Help
+    url: /blast-help-e.html
+  - title: getentry Help
+    url: /getentry-help-e.html
+  - title: TXSearch Help
+    url: /txsearch-help-e.html
+  - title: ClustalW Help
+    url: /clustalw-help-e.html
+  - title: VecScreen Help
+    url: /vecscreen-help-e.html
+  - title: References
+    url: /references-e.html
+  - title: WABI (Web API for Biology)
+    url: /wabi-e.html
+  - title: WABI BLAST Help
+    url: /wabi_blast-help-e.html
 ---
 
 ## Terminated WWW Services

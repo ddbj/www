@@ -4,6 +4,13 @@ title: About DDBJ Center
 pathname: aboutus-e
 category: _aboutus
 lang: en
+related_pages:
+  - title: Faculty Staff of DDBJ
+    url: /staff-e.html
+  - title: INSDC
+    url: /insdc-e.html
+  - title: INSDC Status Document
+    url: /insdc-status-e.html
 ---
 
 DDBJ Center collects nucleotide sequence data as a member of [INSDC(International Nucleotide Sequence Database Collaboration)](http://www.insdc.org/) and provides freely available nucleotide sequence data and supercomputer system, to support research　activities in life science.

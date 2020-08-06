@@ -3,6 +3,13 @@ layout: indexed_content
 title: Accession Number Assigned by INSD
 category: services
 lang: en
+related_pages:
+  - title: Prefix Letter List
+    url: /prefix-e.html
+  - title: Categories for Sequence Data
+    url: /data-categories-e.html
+  - title: Principle of “Hold-Until-Published” data release
+    url: /data-release-policy-e.html
 ---
 
 ## Definition

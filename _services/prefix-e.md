@@ -3,6 +3,13 @@ layout: indexed_content
 title: Prefix Letter List
 category: services
 lang: en
+related_pages:
+  - title: Categories for Sequence Data
+    url: /data-categories-e.html
+  - title: Accession Number Assigned by INSD
+    url: /acc_def-e.html
+  - title: Principle of “Hold-Until-Published” data release
+    url: /data-release-policy-e.html
 ---
 
 ## For conventional sequence data (two or one letter)

@@ -4,6 +4,33 @@ title: TSA
 pathname: tsa
 category: datacategories
 lang: ja
+related_pages:
+  - title: Genome Project のデータ登録
+    url: /ddbj/genome.html
+  - title: WGS
+    url: /ddbj/wgs.html
+  - title: CON
+    url: /ddbj/con.html
+  - title: GSS
+    url: /ddbj/gss.html
+  - title: HTG
+    url: /ddbj/htg.html
+  - title: Environmental sequence の登録
+    url: /ddbj/environmental.html
+  - title: ENV
+    url: /ddbj/env.html
+  - title: TLS
+    url: /ddbj/tls.html
+  - title: Transcriptome Project のデータ登録
+    url: /ddbj/transcriptome.html
+  - title: TSA
+    url: /ddbj/tsa.html
+  - title: EST
+    url: /ddbj/est.html
+  - title: HTC
+    url: /ddbj/htc.html
+  - title: Third Party Data (TPA)
+    url: /ddbj/tpa.html
 ---
 
 2008年から INSDC では、アセンブルされた cDNA 配列データを、Transcriptome Shotgun Assembly
