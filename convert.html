@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+				crossorigin="anonymous"></script>
+</head>
+<body>
+	<script>
+		const html_path = 'static-real/aboutus.html'
+		const md_path = '_aboutus/aboutus.md'
+		$.ajax({
+			url : html_path,
+			type : "GET",
+			success : function(html){
+				$.ajax({
+				url : md_path,
+				type : "GET",
+				success : function(md){
+					/* htmlからh2, h3を取得 */
+					let h3_array = $(html).find('h3')
+					let h3_html_array = []
+					$(h3_array).each((index, data) => {
+						let obj = {
+							data: $(data).text(),
+							id: $(data).attr("id")
+						}
+						h3_html_array.push(obj)
+					})
+					console.log(h3_html_array);
+					let h2_array = $(html).find('h2')
+					let h2_html_array = []
+					$(h2_array).each((index, data) => {
+					let obj = {
+					data: $(data).text(),
+					id: $(data).attr("id")
+					}
+					h2_html_array.push(obj)
+					})
+
+					/* mdからh2, h3を取得 */
+					let md_headline = md.match(/\#{2}(.+)/g)
+					let md_h2_array = []
+					let md_h3_array = []
+					md_h3_array = md_headline.filter(h => h.slice(0, 4) === '### ')
+					md_h2_array = md_headline.filter(h => h.slice(0, 3) === '## ')
+					
+					md_h2_array.forEach(md_h2 => {
+						md_h2 = md_h2.replace('## ', '')
+						let id = ''
+						h2_html_array.forEach(html_h2 => {
+							if(md_h2 === html_h2.data) {
+								id = html_h2.id
+							}
+						})
+						if(id !== undefined) {
+							md = md.replace(`## ${md_h2}`, `## ${md_h2} <a name="${id}"></a>`)
+						}
+					})
+
+					md_h3_array.forEach(md_h3 => {
+						md_h3 = md_h3.replace('### ', '')
+						let id = ''
+						h3_html_array.forEach(html_h3 => {
+							if(md_h3 === html_h3.data) {
+								id = html_h3.id
+							}
+						})
+						if(id !== undefined) {
+							md = md.replace(`### ${md_h3}`, `### ${md_h3} <a name="${id}"></a>`)
+						}
+					})
+					console.log(md);
+
+					/*
+						1. md_h2_array, md_h3_array内でループを回して（forEach）マークダウン内のh2, h3を参照
+						2. html内に同じタイトルがあるかチェック(indexOf)
+						3. htmlのidを変数に格納
+						4. あれば元のmd内で参照中のタイトルを見つけてそのあとに<a name="id">を付与
+					*/
+				}
+				});
+			}
+		});
+	</script>
+</body>
+</html>
