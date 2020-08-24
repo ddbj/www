@@ -11,7 +11,7 @@ lang: ja
 
 DDBJ 登録アカウントの作成
 
-## DDBJ 登録アカウント
+## DDBJ 登録アカウント <a name="ddbj-submission-account"></a>
 
 [日本 DNA データバンク (DDBJ)](/index.html) は [BioProject](/bioproject/index.html) ，[BioSample](/biosample/index.html) と [DRA](/dra/index.html) への登録をユーザアカウントで管理しています。
 
@@ -31,9 +31,9 @@ DDBJ には二種類の登録アカウントがあります。[DDBJ Sequence Rea
 {% include image.html url="books/hac01.jpg" caption="二種類の登録アカウント" class="w300" %}
 {:/}
 
-## ウェブから取得した登録用アカウント
+## ウェブから取得した登録用アカウント <a name="account-for-bioproject-biosample-submissions"></a>
 
-### ウェブ上でアカウントを取得
+### ウェブ上でアカウントを取得 <a name="create-an-account-on-website"></a>
 
 この章で説明されている方法で取得したアカウントでは [BioProject](/bioproject/index.html) と[BioSample](/biosample/index.html) に登録できます。
 
@@ -90,11 +90,11 @@ Login ID:
 {% include image.html url="books/initial.jpg" caption="アカウントから BioProject と BioSample に登録できます" class="w450" %}
 {:/}
 
-## DRA への登録権限を追加
+## DRA への登録権限を追加 <a name="enable-dra-submission-in-account"></a>
 
 [DDBJ Sequence Read Archive (DRA)](/dra/index.html) へデータを登録するため，アカウントにcenter name と公開鍵を登録します。 [Centername](/dra/submission.html#Submission_Center_Name) は DRAが組織に対して割り振っている略号です。 公開鍵はユーザの認証に用いられます。
 
-### 公開鍵/秘密鍵ペアの生成
+### 公開鍵/秘密鍵ペアの生成 <a name="generate-key-pair"></a>
 
 {::options parse_block_html="true" /}
 <div class="accordion-menu">
@@ -192,7 +192,7 @@ Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
 </div>
 </div>
 
-### Center name と公開鍵の登録
+### Center name と公開鍵の登録 <a name="register-center-name-and-public-key"></a>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/N76NUH748Fw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -218,11 +218,11 @@ public key\] で鍵を登録します。
 {% include image.html url="books/drasub.jpg" caption="DRA に登録することができるようになります" class="w450" %}
 {:/}
 
-### アカウントの更新
+### アカウントの更新 <a name="update-account"></a>
 
 アカウント情報を編集し [Update\] ボタンでアカウントを更新します。登録した公開鍵は新しいファイルをアップロードすることで上書きすることができます。
 
-## 秘密鍵ファイルの変換
+## 秘密鍵ファイルの変換 <a name="convert-private-key"></a>
 
 {::options parse_block_html="true" /}
 <div class="accordion-menu">

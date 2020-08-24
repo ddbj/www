@@ -8,7 +8,7 @@ lang: ja
 
 # DDBJ 活動に関する論文 (2009-)
 
-## 2020
+## 2020 <a name="2020"></a>
 
   - <span class="title">[DDBJ Data Analysis Challenge: a machine learning competition to predict Arabidopsis chromatin feature annotations from DNA sequences.](https://www.ncbi.nlm.nih.gov/pubmed/32213716)</span>
     <span class="authors">Kaminuma E, Baba Y, Mochizuki M, Matsumoto H, Ozaki H, Okayama T, Kato T, Oki S, Fujisawa T, Nakamura Y et al</span> 
@@ -21,7 +21,7 @@ lang: ja
     <span class="authors">Ogasawara O, Kodama Y, Mashima J, Kosuge T, Fujisawa T</span> <span class="pub-info"> <span class="journal">Nucleic Acids Res</span> <span class="bib-info">2020 Jan 8;48(D1):D45-D50.</span> <span class="pubmed-id">Pubmed: [31724722](https://www.ncbi.nlm.nih.gov/pubmed/31724722)</span>
     </span>
 
-## 2019
+## 2019 <a name="2019"></a>
 
   - <span class="title">[Generating Publication-Ready Prokaryotic Genome Annotations with DFAST.](https://www.ncbi.nlm.nih.gov/pubmed/31020563)</span>
     <span class="authors">Tanizawa Y, Fujisawa T, Arita M, Nakamura Y</span> 
@@ -36,7 +36,7 @@ lang: ja
     <span class="pub-info"> <span class="journal">Nucleic Acids Res</span> <span class="bib-info">2019 Jan 8;47(D1):D69-D73.</span> <span class="pubmed-id">Pubmed: [30357349](https://www.ncbi.nlm.nih.gov/pubmed/30357349)</span>
     </span>
 
-## 2018
+## 2018 <a name="2018"></a>
 
   - <span class="title">[ChIP-Atlas: a data-mining suite powered by full integration of public ChIP-seq data.](https://www.ncbi.nlm.nih.gov/pubmed/30413482)</span>
     <span class="authors">Oki S, Ohta T, Shioi G, Hatanaka H, Ogasawara O, Okuda Y, Kawaji H, Nakaki R, Sese J, Meno C</span> <span class="pub-info"> <span class="journal">EMBO Rep</span> <span class="bib-info">2018 Dec;19(12):.</span> <span class="pubmed-id">Pubmed: [30413482](https://www.ncbi.nlm.nih.gov/pubmed/30413482)</span>
@@ -53,7 +53,7 @@ lang: ja
     <span class="authors">Kodama Y, Mashima J, Kosuge T, Kaminuma E, Ogasawara O, Okubo K, Nakamura Y, Takagi T</span> <span class="pub-info"> <span class="journal">Nucleic Acids Res</span> <span class="bib-info">2018 Jan 4;46(D1):D30-D35.</span> <span class="pubmed-id">Pubmed: [29040613](https://www.ncbi.nlm.nih.gov/pubmed/29040613)</span>
     </span>
 
-## 2017
+## 2017 <a name="2017"></a>
 
   - <span class="title">[次世代シーケンサーデータの解析手法 第10回 DDBJ への塩基配列の登録（実践編)](http://www.iu.a.u-tokyo.ac.jp/~kadota/JSLAB_10_kadota.pdf)</span>
     <span class="authors">谷澤 靖洋、藤澤 貴智、真島 淳、李 慶範、遠野 雅徳、坂本 光央、大熊 盛也、中村 保一、清水 謙多郎、門田 幸二</span> <span class="pub-info">
@@ -65,7 +65,7 @@ lang: ja
     <span class="authors">Mashima J, Kodama Y, Fujisawa T, Katayama T, Okuda Y, Kaminuma E, Ogasawara O, Okubo K, Nakamura Y, Takagi T</span> 
     <span class="pub-info"> <span class="journal">Nucleic Acids Res</span> <span class="bib-info">2017 Jan 4;45(D1):D25-D31.</span> <span class="pubmed-id">Pubmed: [27924010](https://www.ncbi.nlm.nih.gov/pubmed/27924010)</span> </span>
 
-## 2016
+## 2016 <a name="2016"></a>
 
   - <span class="title">[DNA data bank of Japan (DDBJ) progress report.](https://www.ncbi.nlm.nih.gov/pubmed/26578571)</span>
     <span class="authors">Mashima J, Kodama Y, Kosuge T, Fujisawa T, Katayama T, Nagasaki H, Okuda Y, Kaminuma E, Ogasawara O, Okubo K et al</span> 
@@ -75,14 +75,14 @@ lang: ja
     <span class="pub-info"> <span class="journal">Nucleic Acids Res</span> <span class="bib-info">2016 Jan 4;44(D1):D48-50.</span> <span class="pubmed-id">Pubmed: [26657633](https://www.ncbi.nlm.nih.gov/pubmed/26657633)</span>
     </span>
 
-## 2015
+## 2015 <a name="2015"></a>
 
   - <span class="title">[The DDBJ Japanese Genotype-phenotype Archive for genetic and phenotypic human data.](https://www.ncbi.nlm.nih.gov/pubmed/25477381)</span>
     <span class="authors">Kodama Y, Mashima J, Kosuge T, Katayama T, Fujisawa T, Kaminuma E, Ogasawara O, Okubo K, Takagi T, Nakamura Y</span> 
     <span class="pub-info"> <span class="journal">Nucleic Acids Res</span> <span class="bib-info">2015 Jan;43(Database issue):D18-22.</span> <span class="pubmed-id">Pubmed: [25477381](https://www.ncbi.nlm.nih.gov/pubmed/25477381)</span>
     </span>
 
-## 2014
+## 2014 <a name="2014"></a>
 
   - <span class="title">[Toward richer metadata for microbial sequences: replacing strain-level NCBI taxonomy taxids with BioProject, BioSample and Assembly records.](https://www.ncbi.nlm.nih.gov/pubmed/25197497)</span>
     <span class="authors">Federhen S, Clark K, Barrett T, Parkinson H, Ostell J, Kodama Y, Mashima J, Nakamura Y, Cochrane G, Karsch-Mizrachi I</span> <span class="pub-info">
@@ -93,7 +93,7 @@ lang: ja
     <span class="pub-info"> <span class="journal">Nucleic Acids Res</span> <span class="bib-info">2014 Jan;42(Database issue):D44-9.</span> <span class="pubmed-id">Pubmed: [24194602](https://www.ncbi.nlm.nih.gov/pubmed/24194602)</span>
     </span>
 
-## 2013
+## 2013 <a name="2013"></a>
 
   - <span class="title">[DDBJ read annotation pipeline: a cloud computing-based pipeline for high-throughput analysis of next-generation sequencing data.](https://www.ncbi.nlm.nih.gov/pubmed/23657089)</span>
     <span class="authors">Nagasaki H, Mochizuki T, Kodama Y, Saruhashi S, Morizaki S, Sugawara H, Ohyanagi H, Kurata N, Okubo K, Takagi T et al</span> 
@@ -108,7 +108,7 @@ lang: ja
     <span class="journal">Nucleic Acids Res</span> <span class="bib-info">2013 Jan;41(Database issue):D21-4.</span> <span class="pubmed-id">Pubmed: [23180798](https://www.ncbi.nlm.nih.gov/pubmed/23180798)</span>
     </span>
 
-## 2012
+## 2012 <a name="2012"></a>
 
   - <span class="title">[The DNA Data Bank of Japan launches a new resource, the DDBJ Omics Archive of functional genomics experiments.](https://www.ncbi.nlm.nih.gov/pubmed/22110025)</span>
     <span class="authors">Kodama Y, Mashima J, Kaminuma E, Gojobori T, Ogasawara O, Takagi T, Okubo K, Nakamura Y</span>
@@ -123,7 +123,7 @@ lang: ja
     <span class="pub-info"> <span class="journal">Nucleic Acids Res</span> <span class="bib-info">2012 Jan;40(Database issue):D54-6.</span> <span class="pubmed-id">Pubmed: [22009675](https://www.ncbi.nlm.nih.gov/pubmed/22009675)</span>
     </span>
 
-## 2011
+## 2011 <a name="2011"></a>
 
   - <span class="title">[The sequence read archive.](https://www.ncbi.nlm.nih.gov/pubmed/21062823)</span>
     <span class="authors">Leinonen R, Sugawara H, Shumway M</span>
@@ -139,7 +139,7 @@ lang: ja
     Res</span> <span class="bib-info">2011 Jan;39(Database issue):D15-8.</span> <span class="pubmed-id">Pubmed: [21106499](https://www.ncbi.nlm.nih.gov/pubmed/21106499)</span>
     </span>
 
-## 2010
+## 2010 <a name="2010"></a>
 
   - <span class="title">[Biological databases at DNA Data Bank of Japan in the era of next-generation sequencing technologies.](https://www.ncbi.nlm.nih.gov/pubmed/20865494)</span>
     <span class="authors">Kodama Y, Kaminuma E, Saruhashi S, Ikeo K, Sugawara H, Tateno Y, Nakamura Y</span> <span class="pub-info">
@@ -154,7 +154,7 @@ lang: ja
     <span class="journal">Nucleic Acids Res</span> <span class="bib-info">2010 Jan;38(Database issue):D33-8.</span> <span class="pubmed-id">Pubmed: [19850725](https://www.ncbi.nlm.nih.gov/pubmed/19850725)</span>
     </span>
 
-## 2009
+## 2009 <a name="2009"></a>
 
   - <span class="title">[Web API for biology with a workflow navigation system.](https://www.ncbi.nlm.nih.gov/pubmed/19417067)</span>
     <span class="authors">Kwon Y, Shigemoto Y, Kuwana Y, Sugawara H</span> 

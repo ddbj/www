@@ -12,7 +12,7 @@ DDBJ データ解析チャレンジでは、DDBJ
 参加者がビッグデータ解析の経験を積める様に、学生やライフサイエンス専門外の方にも、[遺伝研スーパーコンピュータ](https://sc.ddbj.nig.ac.jp/ja)の計算機環境を提供します。  
 初日には参加者向けに[キックオフ講習会](/training/kickoff.html)を行い、課題やスパコンの使い方を説明します。
 
-## DDBJ データ解析チャレンジ 2016
+## DDBJ データ解析チャレンジ 2016 <a name="2016"></a>
 
 | 日程            | 内容                                                |
 | ------------- | ------------------------------------------------- |
@@ -22,7 +22,7 @@ DDBJ データ解析チャレンジでは、DDBJ
 | 2016年8月31日(水) | 課題投稿の締切                                           |
 | 2016年9月30日(金) | 結果発表                                              |
 
-### チャレンジ課題
+### チャレンジ課題 <a name="task-2016"></a>
 
 DNA配列からクロマチン特徴を予測します。[DDBJ Sequence Read Archive(DDBJ
 SRA)](/dra/index.html)からクロマチン特徴を注釈したデータベースに「ChIP-Atlas(九大沖博士、DBCLS大田博士)」があります。ChIP-Atlasデータベースに未掲載の生物種を対象として、DNA配列がクロマチン特徴領域か否かを予測します。
@@ -54,7 +54,7 @@ factors)の4条件を含めて構成しています。生物種はChIP-Atlasデ�
 チャレンジ効果  
 : 課題のクロマチン特徴予測モデルが高精度になれば、遺伝子発現オンオフに関わる(即ち疾患・病害リスクとなる）DNA多型の絞込み精度向上に繋がります。構築したシロイヌナズナのクロマチン特徴予測モデルは、他の植物へ応用可能な為に植物研究コミュニティに貢献する事が出来ます。
 
-### 表彰
+### 表彰 <a name="winners-2016"></a>
 
 |  **最優秀賞<br/>1st Prize of DDBJ Challenge Awards 2016**  |  **株式会社 情報数理バイオ　研究開発部 ライフサイエンスグループ<br/>望月 正弘**  |
 |  優秀賞<br/>2nd Prize of DDBJ Challenge Awards 2016  |  国立研究開発法人 理化学研究所 情報基盤センター バイオインフォマティクス研究開発ユニット<br/>松本 拡高(代表)、尾崎 遼(チームとして2名で参加)  |
@@ -64,7 +64,7 @@ factors)の4条件を含めて構成しています。生物種はChIP-Atlasデ�
 今回「DNA配列からのクロマチン特徴予測」のチャレンジ課題について、38名が参加して、延べ360回のモデル投稿がありました。
 {: .tablecaption}
 
-#### 最優秀賞モデルの概要
+#### 最優秀賞モデルの概要 <a name="summary-2016"></a>
 
 望月氏のモデルは、<span class="red">Extremely Randomized Trees</span>(ERT, 参考文献1) と <span class="red">Convolutional Neural Network</span>(CNN, 参考文献2) の2種類の分類器を基盤として、<span class="red">Stacked Generalization</span>(Stacking, 参考文献3) アンサンブル学習法で精度向上を図っています。
 
@@ -94,7 +94,7 @@ Figure2: Benchmark result of models
     241-259 (1992).
   - [4]　<https://www.arabidopsis.org/>
 
-#### 受賞モデルの精度結果
+#### 受賞モデルの精度結果 <a name="result-2016"></a>
 
 |  DDBJ<br/>Challenge<br/>Award  |  AUC  |  Model Design  |  Tool Version  |
 | ---- | ---- | ---- | ---- |
@@ -103,13 +103,13 @@ Figure2: Benchmark result of models
 |  3rd Prize  |  0.85428  |  *7 Classifiers(Naive Bayes for Multivariate Bernoulli Models, Logistic Regression, Random Forest, Gradient Boosting, Extremely Randomized Trees, eXtreme Gradient Boosting, CNN)<br/>*Ensemble Learning (Stacking)  |  python=2.7.11<br/>numpy=1.10.4<br/>scikit-learn=0.17<br/>chainer=1.11.0<br/>xgboost=0.4a30  |
 |  Student Prize  |  0.84318  |  *3 Classifiers(LeNet like CNN, DeepBind like CNN, Variable filter DeepBind like CNN)<br/>*Ensemble Learning(Soft Voting)  |  python=2.7<br/>lasagne=0.2.dev1  |
 
-#### 論文
+#### 論文 <a name="citation"></a>
 
 - [DDBJ Data Analysis Challenge: a machine learning competition to predict Arabidopsis chromatin feature annotations from DNA sequences.](https://www.ncbi.nlm.nih.gov/pubmed/32213716)  
   Kaminuma E, Baba Y, Mochizuki M, Matsumoto H, Ozaki H, Okayama T, Kato T, Oki S, Fujisawa T, Nakamura Y et al  
   *Genes Genet Syst* 2020 Mar 26;():. Pubmed: [32213716](https://www.ncbi.nlm.nih.gov/pubmed/32213716)
 
-## DDBJデータ解析チャレンジ Q&
+## DDBJデータ解析チャレンジ Q& <a name="faq"></a>
 
 DDBJデータ解析チャレンジの内容や結果は論文に投稿できますか？  
 : DDBJチャレンジ報告論文をジャーナルに投稿予定です。上位入賞者の方には、共著者としてご参加いただきます。詳しくは チャレンジ賞 を参照ください。
@@ -149,7 +149,7 @@ testデータを訓練に使用(semi-supervised learning)して良いですか�
 Deep Learning用ライブラリを遺伝研スパコンへインストールするとエラーが出ます。  
 : UC Berkeley の [Caffe](http://caffe.berkeleyvision.org/), Preferred Networks社 [Chainer](https://chainer.org/) のインストール方法を スパコンHP に掲載しましたのでご参照ください。
 
-## DDBJ チャレンジ実施委員会
+## DDBJ チャレンジ実施委員会 <a name="committee"></a>
 
 DDBJ Challenge Committee
 : 神沼英里 : 国立遺伝学研究所 生命情報研究センター　助教

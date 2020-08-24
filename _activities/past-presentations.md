@@ -10,7 +10,7 @@ lang: ja
 
 <div id="pub-list" class="switch">
 
-## 2006
+## 2006 <a name="2006"></a>
 
   - ### 英語による講演発表
 

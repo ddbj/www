@@ -31,16 +31,20 @@ export default function internalLink() {
       let currentNode = outline;
       for (let i = 0; i < headings.length; i++) {
         const currentHeading = headings[i];
+        //// News Archiveに付与する日付の取得
+        const date = $(headings[i]).next('.news_date').text();
+
         //// 階層構造を持った見出しのリストの作成
         switch (currentHeading.tagName) {
           case 'H2': // 大見出しの場合
             currentNode = []; // 子の階層を作り、現在操作中の階層にする
-            outline.push(currentHeading, currentNode); // 見出しリストに追加
+            outline.push({currentHeading: currentHeading, date: date}, currentNode); // 見出しリストに追加
             break;
           case 'H3':
             currentNode.push(currentHeading); // 見出しリストの子の階層に追加
             break;
         }
+        
         //// IDの付与
         const namedAnchor = currentHeading.querySelector('a[name]');
         if (namedAnchor) {
@@ -74,10 +78,10 @@ export default function internalLink() {
   // 目次の各項目の生成（再帰処理をしてる）
   function createItemOfToc(item) {
     switch (true) {
-      case item.nodeName !== undefined: // タグの場合、<LI>を追加
-        return '<li><a href="#' + item.id + '" data-target="' + item.id + '">' + item.textContent + '</a></li>';
-      case item.length !== undefined: // 配列の場合、<UL>を追加し、中身を再帰処理で生成
-        return '<li><ul>' + item.map(subitem => createItemOfToc(subitem)).join('') + '</ul></li>';
+      case item.currentHeading !== undefined && item.currentHeading.nodeName !== undefined: // タグの場合、<LI>を追加
+        return '<li><a href="#' + item.currentHeading.id + '" data-target="' + item.currentHeading.id + '">' + item.currentHeading.textContent + '<span class="nav_date">' + item.date + '</span></a></li>';
+      case item.currentHeading !== undefined && item.currentHeading.length !== undefined: // 配列の場合、<UL>を追加し、中身を再帰処理で生成
+        return '<li><ul>' + item.currentHeading.map(subitem => createItemOfToc(subitem)).join('') + '</ul></li>';
     }
   }
 

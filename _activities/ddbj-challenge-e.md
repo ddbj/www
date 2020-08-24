@@ -17,7 +17,7 @@ Challenge. And, to join this Challenge more easily, DDBJ provides [NIG
 Supercomputer System](https://sc.ddbj.nig.ac.jp/en) as your computer
 resources.
 
-## DDBJ Data Analysis Challenge 2016
+## DDBJ Data Analysis Challenge 2016 <a name="2016"></a>
 
 <div class="news_post_container glossary">
 
@@ -62,7 +62,7 @@ NIG Supercomputer System OSS Installation request</td>
 
 </div>
 
-### Challenge Task
+### Challenge Task <a name="task-2016"></a>
 
 DNA Data Bank of Japan (DDBJ) supports a big data resource called by
 [DDBJ Sequence Read Archive (DDBJ SRA)](/dra/index.html), which contains
@@ -109,7 +109,7 @@ On the submit stage, please submit the probability of true prediction
 with 10,000 rows (test axis) and 8 columns (condition axis) in BigData
 University website.
 
-### Award
+### Award <a name="winners-2016"></a>
 
 <div class="main_table format">
 
@@ -145,7 +145,7 @@ KATO Takuya</td>
 
 </div>
 
-#### Result
+#### Result <a name="result-2016"></a>
 
 <div class="main_table format">
 
@@ -211,7 +211,7 @@ lasagne=0.2.dev1</td>
 
 </div>
 
-#### Citation
+#### Citation <a name="citation"></a>
 
 <div id="pub-list">
 
@@ -229,7 +229,7 @@ lasagne=0.2.dev1</td>
 
 </div>
 
-## DDBJ Challenge Committee
+## DDBJ Challenge Committee <a name="committee"></a>
 
   - DDBJ Challenge Committee  
     Eli Kaminuma, PhD : Center for Information Biology, National

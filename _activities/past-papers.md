@@ -13,7 +13,7 @@ excluded.
 
 <div id="pub-list" class="switch">
 
-## 2008
+## 2008 <a name="2008"></a>
 
   - Akihito, Fumihito A, Ikeda Y, Aizawa M, Makino T, Umehara Y, Kai Y, Nishimoto Y, Hasegawa M, Nakabo T, and **Gojobori T.** (2008) Evolution of Pacific Ocean and the Sea of Japan populations of the gobiid species, Pterogobius elapoides and Pterogobius zonoleucus, based on molecular and morphological analyses. Gene. 427: 7-18.
   - Blancher A, Bonhomme M, Crouau-Roy B, Terao K, Kitano T, and **Saitou N.** (2008) Mitochondrial DNA sequence phylogeny of four populations of the widely distributed cynomolgus macaque (Macaca fascicularis fascicularis). J. Hered. 99 (3): 254-264.

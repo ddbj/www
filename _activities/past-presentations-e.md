@@ -6,7 +6,7 @@ category: _activities
 lang: en
 ---
 
-## 2008
+## 2008 <a name="2008"></a>
 
   - Gojobori T. “Genomic evolution of neural genes in light of Ohno’s
     view of biological order and disorder”, The 2008 Memorial Symposium
@@ -115,7 +115,7 @@ lang: en
     of positive selection. Center for Information Biology Internal
     Seminar, Ochanomizu University, Otsuka, Dec.
 
-## 2007
+## 2007 <a name="2007"></a>
 
   - Gojobori T. “Transcriptional Landscape of Human Genome and its
     Evolutionary Implication to Isochore Structures”, Symposium on
@@ -180,7 +180,7 @@ lang: en
     eukaryotic proteins - a case study of human tran-scription factors”
     BMB2007 (Yokohama) December.
 
-## 2006
+## 2006 <a name="2006"></a>
 
   - Abe T, Sugawara H, Kanaya S, Ikemura T. Sequences from Almost All
     Prokaryotic, Eukaryotic, and Viral Genomes Available Could be
@@ -330,7 +330,7 @@ lang: en
     functional and structural influence on proteins. Gene. 2006 Oct
     1;380(2):63-71.
 
-## 2005
+## 2005 <a name="2005"></a>
 
   - Gojobori T. Greetings & overview. H-Invitational DE Workshop,
     National Institute of Advanced Industrial Science and Technology
@@ -453,7 +453,7 @@ lang: en
     Genes, the H-Invitational Database. First International Biocurator's
     Meeting (Asilomar, California, USA), December 9.
 
-## 2004
+## 2004 <a name="2004"></a>
 
   - Gojobori T. Genomics Data Banks and Biotechnology/Bioinformatics.
     The 28th IUBS General Assembly & The IUBS Conference International
@@ -568,7 +568,7 @@ lang: en
     prediction of microbial genes. Genome Informatics Workshop
     (Yokohama), December 13.
 
-## 2003
+## 2003 <a name="2003"></a>
 
   - **Tateno Y, Ikeo K**, Ishi-I J. "CIBEX" AAAS-MGED Meeting (Denver,
     USA), Feb.15-16.
@@ -654,7 +654,7 @@ lang: en
     Mishima Workshop: the post-genomic studies of genetic diversity and
     evolution of organismic populations (Mishima and Hakone), Nov.22-23.
 
-## 2002
+## 2002 <a name="2002"></a>
 
   - **Gojobori T**. An approach toward unification of comparative
     genomics, functional genomics and bioinformatics. Japan-UK
@@ -756,7 +756,7 @@ lang: en
     Eastern Forum of Science and Technology: Bioinformatics Technology
     in Post-genome Era (Shanghai, China), Dec. 16.
 
-## 2001
+## 2001 <a name="2001"></a>
 
   - 1/7-13 Tateno Y. Chromosomes: structure,function and evolution.
     Symposium on Evolutionary Genomics. Guanacaste (Costa Rica)

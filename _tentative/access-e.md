@@ -6,7 +6,7 @@ category: tentative
 lang: en
 ---
 
-## Address
+## Address <a name="ddbj-location"></a>
 
 {::options parse_block_html="true" /}
 <address>
@@ -21,7 +21,7 @@ TEL : 81-55-981-6853
 </address><br>
 For inquiries and questions, please contact us from the [contact form](/contact-e.html).
 
-## Location with in NIG
+## Location with in NIG <a name="cibmap"></a>
 
 ![]({{ site.baseurl }}/assets/images/center/cibmap-e.png)
 

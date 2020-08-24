@@ -6,7 +6,7 @@ category: _activities
 lang: en
 ---
 
-## 2020
+## 2020 <a name="2020"></a>
 
   - <span class="title">[DDBJ Data Analysis Challenge: a machine
     learning competition to predict Arabidopsis chromatin feature
@@ -33,7 +33,7 @@ lang: en
     [31724722](https://www.ncbi.nlm.nih.gov/pubmed/31724722)</span>
     </span>
 
-## 2019
+## 2019 <a name="2019"></a>
 
   - <span class="title">[Generating Publication-Ready Prokaryotic Genome
     Annotations with
@@ -64,7 +64,7 @@ lang: en
     [30357349](https://www.ncbi.nlm.nih.gov/pubmed/30357349)</span>
     </span>
 
-## 2018
+## 2018 <a name="2018"></a>
 
   - <span class="title">[ChIP-Atlas: a data-mining suite powered by full
     integration of public ChIP-seq
@@ -105,7 +105,7 @@ lang: en
     [29040613](https://www.ncbi.nlm.nih.gov/pubmed/29040613)</span>
     </span>
 
-## 2017
+## 2017 <a name="2017"></a>
 
   - <span class="title">[DNA Data Bank of
     Japan.](https://www.ncbi.nlm.nih.gov/pubmed/27924010)</span>
@@ -117,7 +117,7 @@ lang: en
     [27924010](https://www.ncbi.nlm.nih.gov/pubmed/27924010)</span>
     </span>
 
-## 2016
+## 2016 <a name="2016"></a>
 
   - <span class="title">[DNA data bank of Japan (DDBJ) progress
     report.](https://www.ncbi.nlm.nih.gov/pubmed/26578571)</span>
@@ -137,7 +137,7 @@ lang: en
     [26657633](https://www.ncbi.nlm.nih.gov/pubmed/26657633)</span>
     </span>
 
-## 2015
+## 2015 <a name="2015"></a>
 
   - <span class="title">[The DDBJ Japanese Genotype-phenotype Archive
     for genetic and phenotypic human
@@ -150,7 +150,7 @@ lang: en
     [25477381](https://www.ncbi.nlm.nih.gov/pubmed/25477381)</span>
     </span>
 
-## 2014
+## 2014 <a name="2014"></a>
 
   - <span class="title">[Toward richer metadata for microbial sequences:
     replacing strain-level NCBI taxonomy taxids with BioProject,
@@ -175,7 +175,7 @@ lang: en
     [24194602](https://www.ncbi.nlm.nih.gov/pubmed/24194602)</span>
     </span>
 
-## 2013
+## 2013 <a name="2013"></a>
 
   - <span class="title">[DDBJ read annotation pipeline: a cloud
     computing-based pipeline for high-throughput analysis of
@@ -206,7 +206,7 @@ lang: en
     [23180798](https://www.ncbi.nlm.nih.gov/pubmed/23180798)</span>
     </span>
 
-## 2012
+## 2012 <a name="2012"></a>
 
   - <span class="title">[The DNA Data Bank of Japan launches a new
     resource, the DDBJ Omics Archive of functional genomics
@@ -236,7 +236,7 @@ lang: en
     [22009675](https://www.ncbi.nlm.nih.gov/pubmed/22009675)</span>
     </span>
 
-## 2011
+## 2011 <a name="2011"></a>
 
   - <span class="title">[The sequence read
     archive.](https://www.ncbi.nlm.nih.gov/pubmed/21062823)</span>
@@ -265,7 +265,7 @@ lang: en
     [21106499](https://www.ncbi.nlm.nih.gov/pubmed/21106499)</span>
     </span>
 
-## 2010
+## 2010 <a name="2010"></a>
 
   - <span class="title">[Biological databases at DNA Data Bank of Japan
     in the era of next-generation sequencing
@@ -296,7 +296,7 @@ lang: en
     [19850725](https://www.ncbi.nlm.nih.gov/pubmed/19850725)</span>
     </span>
 
-## 2009
+## 2009 <a name="2009"></a>
 
   - <span class="title">[Web API for biology with a workflow navigation
     system.](https://www.ncbi.nlm.nih.gov/pubmed/19417067)</span>

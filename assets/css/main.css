@@ -311,6 +311,10 @@ input, textarea, select, button {
         .internal-link > ul li a:hover {
           color: #FF7300;
           text-decoration: underline; }
+        .internal-link > ul li a span {
+          font-size: 1.1rem;
+          font-weight: normal;
+          margin-left: 1rem; }
 
 .list-view > .listtitle {
   background: #1C1B19;
@@ -936,7 +940,9 @@ input, textarea, select, button {
         margin-left: auto;
         padding-bottom: 2rem;
         width: 23rem;
+        height: 93rem;
         position: sticky;
+        overflow: scroll;
         top: 0; }
     #NavigationAndMainView > .inner > .mainview {
       width: calc( (100vw - 128rem) + (128rem - 23rem)); }
