@@ -6,7 +6,7 @@ category: aboutagd
 lang: en
 ---
 
-## AGD data use request
+## AGD data use request <a name="request"></a>
 
 Apply data use request to [National Bioscience Database Center (NBDC)](http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines) with the AGD Study (e.g., AGDS\_00000000005) and Dataset (e.g., AGDD\_00000000005) IDs.
 
@@ -19,9 +19,9 @@ NBDC will notify user ID and password to approved users. The download account wi
 
 This page explains how to use the AGD data.
 
-## Download data
+## Download data <a name="download-data"></a>
 
-### AGD download tool
+### AGD download tool <a name="agd-download-tool"></a>
 
 Download the AGD download tool (last updated: 2018-11-22，v3.5.0).
 
@@ -43,7 +43,7 @@ Run the tool by executing the sh file in the directory.
 
 Use "Java SE Development Kit 8" and not OpenJDK.
 
-### Login
+### Login <a name="login"></a>
 
 Run the AGD tool and login the AGD system with user ID and password notified by [NBDC](http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines).
 
@@ -81,7 +81,7 @@ You can expand the directory tree by clicking the arrowhead left to the dataset 
 {% include image.html url="books/agddown02.jpg" caption="Download data set" class="w500" %}
 {:/}
 
-### Download via a proxy server
+### Download via a proxy server <a name="download-via-proxy-server"></a>
 
 To use the tool via the proxy server, you need to set the name and port number of the proxy server.
 
@@ -98,7 +98,7 @@ port=
 
 After login, when the proxy requires user authentication, enter the authentication information in the displayed window. The v3.5.0 (2018-11-21) tool is compatible with the BASIC authentication but not with the Digest authentication.
 
-### View metadata in website
+### View metadata in website <a name="view-metadata-in-website"></a>
 
 Users can view AGD metadata also in website.
 
@@ -145,7 +145,7 @@ The following error is displayed when access from single account exceeds "1". Lo
 {% include image.html url="books/jgadown09.jpg" caption="Error when access from single account exceeds 1" class="w500" %}
 {:/}
 
-### Data file transfer by hard disk
+### Data file transfer by hard disk <a name="data-file-transfer-by-hard-disk"></a>
 
 {::options parse_block_html="true" /}
 <div class="attention red">

@@ -77,7 +77,7 @@ Notes on environmental sample submission
     as an identifier.
   - Do not use [strain](/ddbj/qualifiers-e.html#strain) qualifier.
 
-## Sample flat file
+## Sample flat file <a name="flat-file"></a>
 
 Aspects of environmental samples
 

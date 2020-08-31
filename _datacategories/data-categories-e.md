@@ -33,9 +33,9 @@ related_pages:
     url: /ddbj/tpa-e.html)
 ---
 
-## [Division](/ddbj/flat-file-e.html#Division) conventional sequence data
+## [Division](/ddbj/flat-file-e.html#Division) conventional sequence data <a name="division"></a>
 
-### General data: classified by source species
+### General data: classified by source species <a name="general"></a>
 
 The data that are not classified into any categories described in the
 sections are called general data and belong here.  
@@ -61,7 +61,7 @@ organisms.
 
 
 
-### ENV/SYN: impossible to identify souce species, Environmental Samples and Synthetic Constructs
+### ENV/SYN: impossible to identify souce species, Environmental Samples and Synthetic Constructs <a name="env"></a>
 
 Environmental samples and artificially constructed sequences are
 classified into [ENV](/ddbj/env-e.html) and SYN division,respectively.  
@@ -78,7 +78,7 @@ feature](/ddbj/file-format-e.html#biological_feature).
 
 
 
-### EST/GSS/HTC/HTG/STS: Divisions for Feasibility of Sequencing
+### EST/GSS/HTC/HTG/STS: Divisions for Feasibility of Sequencing <a name="est"></a>
 
 Sequences derived from high throughput projects, such as large scale
 analyses like EST dataset, ongoing whole genome scale sequencing, and so
@@ -102,7 +102,7 @@ data, if necessary.
 
 
 
-### CON: Contig / Constructed, Tiling of Entries
+### CON: Contig / Constructed, Tiling of Entries <a name="con"></a>
 
 Many genome projects submitting a lot of [HTG](/ddbj/htg-e.html) and/or
 [WGS](/ddbj/wgs-e.html) entries can often provide the information to
@@ -119,9 +119,9 @@ then a CON entry will be constructed.
 [AGP file](/ddbj/file-format-e.html#agp) is required to submit CON
 entries.
 
-## Data type, bulk sequence data
+## Data type, bulk sequence data <a name="data_type"></a>
 
-### WGS: Fragment Sequences during WGS Assembling Process
+### WGS: Fragment Sequences during WGS Assembling Process <a name="wgs"></a>
 
 The large set of contigs from the proceeding genome project can be
 submitted as one of bulk sequence data, [Whole Genome Shotgun
@@ -131,7 +131,7 @@ accession number](/ddbj/flat-file-e.html#Accession).
 See also [Steps of genome sequencing, categories of sequence data and
 their correspondences](/ddbj/genome-e.html) .
 
-### TSA: Transcriptome Shotgun Assembly
+### TSA: Transcriptome Shotgun Assembly <a name="tsa"></a>
 
 Since 2008, we have accepted one of bulk sequence data, [Transcriptome
 Shotgun Assembly (TSA)](/ddbj/tsa-e.html) categorized for assembled RNA
@@ -145,7 +145,7 @@ accession number](/ddbj/flat-file-e.html#Accession).
 See also [steps of transcriptome project, categories of sequence data
 and their correspondences](/ddbj/transcriptome-e.html)
 
-### TLS: Targeted Locus Study
+### TLS: Targeted Locus Study <a name="tls"></a>
 
 Since 2016, we have accepted one of bulk sequence data, [Targeted Locus
 Study (TLS)](/ddbj/tls-e.html), including 16S rRNA or some other
@@ -156,9 +156,9 @@ data.
 Please note that TLS data is different from others in its [format of
 accession number](/ddbj/flat-file-e.html#Accession).
 
-## Sequenced by whom
+## Sequenced by whom <a name="whom"></a>
 
-### TPA; Third Party Data and primary sequence data
+### TPA; Third Party Data and primary sequence data <a name="tpa"></a>
 
 [TPA (Third Party Data)](/ddbj/tpa-e.html) is a nucleotide sequence data
 collection in which each entry is obtained by assembling primary entries

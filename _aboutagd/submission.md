@@ -6,7 +6,7 @@ category: aboutagd
 lang: ja
 ---
 
-## 登録概要
+## 登録概要 <a name="submission"></a>
 
 AGD は NBDC で承認された利用制限ポリシーを持つ，匿名化されたデータだけを受け付けています。 登録者は [NBDC](http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines) に AGD へのデータ提供を申請し， AGD は NBDC から正式に提供が承認された連絡を受け，登録者に登録手順を案内します。
 
@@ -29,20 +29,20 @@ AGD で発行される管理用 ID は論文で引用することはできませ
 | AGDD\_  | Data set    | 11    | AGDD\_00000000001 |
 | AGDP\_  | Policy      | 11    | AGDP\_00000000001 |
 
-## 塩基配列データ (raw/unaligned と aligned)
+## 塩基配列データ (raw/unaligned と aligned) <a name="sequence"></a>
 
 AGD でサポートしているファイル形式を以下に示します。 異なるファイル形式をもっている場合や不明な点がある場合は [AGD に連絡](/contact.html)してください。
 
 データファイルが複数サンプルに由来するデータを含んでいる場合，投稿する前にファイルをサンプルごとに分割します。 そうすることによって Run は１つのサンプルに由来するデータファイルだけを持つようになります。
 
-### BAM 形式
+### BAM 形式 <a name="bam-format"></a>
 
 Binary Alignment/Map (BAM) ファイルは AGD への登録にとって好ましいファイル形式の一つです。BAM は Sequence Alignment/Map (SAM) ファイル形式のバイナリー圧縮です (詳細は [SAMv1.pdf](https://samtools.github.io/hts-specs/SAMv1.pdf))。BAM ファイルは SAM/BAM 用ツール (例えば [samtools](http://www.htslib.org/)) で human-readable なテキスト形式である SAM に変換することができます。BAM はアライメントされなかった unaligned read を含めることができます。  
 AGD はプライマリーデータとして Data に unaligned read を含む BAM を登録することを強く推奨しています。
 
 圧縮という観点で BAM ファイルはほぼ最適化されているので，ファイルをさらに圧縮する必要はありません。
 
-### Fastq 形式
+### Fastq 形式 <a name="fastq-format"></a>
 
 シングルとペアードの塩基配列データは下記の条件を満たした [Fastq](http://en.wikipedia.org/wiki/FASTQ_format#Quality) ファイルでの登録を推奨しています。
 
@@ -79,13 +79,13 @@ GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
 ...
 ```
 
-### SFF 形式
+### SFF 形式 <a name="sff-format"></a>
 
 454 プラットフォームからのデータは，SFF での登録が推奨されます。
 
 圧縮という観点で SFF ファイルはほぼ最適化されているので，ファイルをさらに圧縮する必要はありません。
 
-## アレイデータ (遺伝子型タイピング，SNP，遺伝子発現)
+## アレイデータ (遺伝子型タイピング，SNP，遺伝子発現) <a name="array"></a>
 
 AGD は全ての種類のアレイプラットフォームからのデータを受け付けています。例えば，genotypes，遺伝子発現やメチル化解析データなどです。
 
@@ -95,11 +95,11 @@ AGD は生データ (例 CEL) と解析したデータの両方を登録する�
 
 AGD はサンプルに関連した表現型 (phenotype) 情報も Analysis にアーカイブしています。
 
-## 変異データ
+## 変異データ <a name="variations"></a>
 
 AGD は variation データの [VCF 形式](http://en.wikipedia.org/wiki/Variant_Call_Format)での登録を推奨しています。 AGD Analysis に vcf ファイルを登録することができます。
 
-## その他のデータ
+## その他のデータ <a name="other"></a>
 
 Analysis は複数の Data もしくは Sample を参照することができるので，これらのオブジェクトに登録されているデータを解析，集計したデータを
 Analysis に登録することができます。Analysis に登録できるファイルの例を以下にリストします。
@@ -108,7 +108,7 @@ Analysis に登録することができます。Analysis に登録できるフ�
   - 複数 Data に登録されたアレイデータを正規化し表にまとめたファイル
   - 複数 Sample の表現型情報を一覧できる表形式ファイル
 
-## メタデータ
+## メタデータ <a name="metadata"></a>
 
 AGD データモデルは [Sequence Read Archive](/dra/submission.html) のモデルを拡張してつくられています。 AGD メタデータは XML オブジェクトで構成されています。
 
@@ -122,7 +122,7 @@ AGD XML schema: [AGD xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 {% include image.html url="submission/jga_metadata_2.jpg" caption="Control と Case で Policy が異なる例" class="w500" %}
 {:/}
 
-### 公開される項目
+### 公開される項目 <a name="public"></a>
 
 AGD メタデータのうち以下のオブジェクトは登録の概要を示すため，データの制限共有開始後に公開されます。
 
@@ -143,43 +143,43 @@ Policy:
 
 </div>
 
-### Submission
+### Submission <a name="Submission"></a>
 
 登録プロセスを管理します。登録者の連絡先情報を含みます。
 
 XML schema: [AGD.submission.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-### Study
+### Study <a name="Study"></a>
 
 研究を記述します。 研究のタイトル，study type と論文に使われるようなアブストラクトを含みます。 論文公表後，登録したデータを使った論文の PubMed ID を追加し，論文情報を更新します。
 
 XML schema: [AGD.study.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-### Sample
+### Sample <a name="Sample"></a>
 
 研究で使った各サンプルを記載します。一般的に Sample は個人に対応します。 必須項目は少ないですが，できるだけ詳細な情報を記入し，サンプルについての有用な情報を提供することを推奨します。
 
 XML schema: [AGD.sample.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-### Experiment
+### Experiment <a name="Experiment"></a>
 
 実験のセットアップを記述します。サンプルの調整からデータの取得にいたるまでのプロトコールや使ったシークエンサやアレイを記載します。シークエンシングとアレイ実験の両方に対応しています。
 
 XML schema: [AGD.experiment.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-### Data
+### Data <a name="Data"></a>
 
 データファイルについての情報と，それらと Experiment との関係を記述します。ファイルをまとめる役割を果たします。
 
 XML schema: [AGD.data.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-### Analysis
+### Analysis <a name="Analysis"></a>
 
 データを解析，集計した結果を登録します。また，サンプルの表現型情報をまとめた表を登録することができます。 変異データは VCF ファイルとして登録することができます。 それぞれの Analysis には一つの VCF ファイルしか登録できません。また，VCF で使われたサンプルは AGD Sample に対応している必要があります。 使用したリファレンス配列を INSDC のアクセッション番号，もしくは広く使われているラベル名で記載します。
 
 XML schema: [AGD.analysis.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-### Data set
+### Data set <a name="Dataset"></a>
 
 Data XML と Analysis XML に記載されているデータファイルを,ポリシー (利用制限事項) が適用されるデータセットという単位にまとめます。 全てのデータに対して同じポリシーが適用される場合，Data set を作成する必要はありません。 ポリシーが複数ある場合 (Control と Case で適用されるポリシーが異なる場合など)，対応する Data set を作成する必要があります。
 
@@ -187,13 +187,13 @@ Data XML と Analysis XML に記載されているデータファイルを,ポ�
 
 XML schema: [AGD.dataset.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-### Policy
+### Policy <a name="Policy"></a>
 
 データ利用制限ポリシーを記載します。
 
 XML schema: [AGD.policy.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-## Analysis のみの登録
+## Analysis のみの登録 <a name="analysis_only"></a>
 
 集計されたデータ，もしくは，Experiment-Data に格納するのが適切ではないデータを登録する場合は Sample-Experiment-Data ではなく Sample-Analysis セットでデータを登録することができます。
 
@@ -207,6 +207,6 @@ XML schema: [AGD.policy.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
 Sample-Analysis セットでデータ登録をする場合は [JGA チームに連絡](/contact.html)します。
 
-## 登録の更新
+## 登録の更新 <a name="update"></a>
 
 登録を更新するためには [AGD チームに連絡](/contact.html)します。

@@ -22,7 +22,7 @@ database cross references. Inquiries about the addition of other
 database types should be made to one of the collaborating databases,
 listed above.
 
-## Definition of /db_xref qualifier
+## Definition of /db_xref qualifier <a name="Definition_of_/db_xref_qualifier"></a>
 
 ```
 Qualifier:       /db_xref="[database]:[identifier]"
@@ -42,7 +42,7 @@ make recommendations for additions or removal of databases to this list
 at their convenience, and need not rely on the release cycle of the
 Feature Table documentation.
 
-## Database:
+## Database: <a name="Database_"></a>
 
 Description of database, and type with example(s).
 

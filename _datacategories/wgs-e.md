@@ -64,7 +64,7 @@ You can submit WGS data to DDBJ via [Mass Submission System (MSS)](/ddbj/mss-e.h
   </dd>
 </dl>
 
-## Sample flat file
+## Sample flat file <a name="flat-file"></a>
 
 Aspects of WGS
 

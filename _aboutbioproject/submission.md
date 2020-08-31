@@ -6,9 +6,9 @@ category: aboutbioproject
 lang: ja
 ---
 
-## 概要
+## 概要 <a name="overview"></a>
 
-### 目的
+### 目的 <a name="purpose"></a>
 
 新しいシークエンシング技術が登場し，大量のデータが日々生み出されるようになっています。
 これに伴い，大型の共同研究プロジェクトが増え，多くのグループが様々なデータを複数のデータベースに登録するようになっています。
@@ -19,7 +19,7 @@ BioProject によりプロジェクトの種類や特徴といった項目でデ
 {% include image.html url="submission/biosample_integration.jpg" caption="BioProject/BioSample と他の DDBJ データベースとの連携" class="w450" %}
 {:/}
 
-### プロジェクト
+### プロジェクト <a name="project"></a>
 
 "Project" は複雑なプロジェクトや異なる特徴を持ったサブプロジェクトを表現できるよう，柔軟に定義されています。
 
@@ -37,7 +37,7 @@ BioProject によりプロジェクトの種類や特徴といった項目でデ
 BioProject は同じプロジェクトに由来するデータ，それからまとめて提供したいデータに対して作成します。
 大型プロジェクトから産出されるデータの種類ごとにサブプロジェクトをつくることもできます。
 
-### 複合プロジェクト
+### 複合プロジェクト <a name="complex-project"></a>
 
 [Project Data Type](#Project_data_type) を複数選択 (例: Genome Sequencing と Transcriptome or Gene Expression) することで，ゲノムシークエンシングと遺伝子発現解析といった異なる研究を一つのプロジェクトにまとめることができます。
 
@@ -64,7 +64,7 @@ BioProject は同じプロジェクトに由来するデータ，それからま
   配列データはアンブレラプロジェクトを直接参照することはできません。プライマリープロジェクトを介してアンブレラにリンクされます。
   </div>
 
-### 階層構造
+### 階層構造 <a name="bioproject-hierarchy"></a>
 
 アンブレラプロジェクトは研究費の提供元と協力してつくることができます。 例えば，最上位にコンソーシアム全体をまとめるアンブレラプロジェクト (例: "Genome Science Project") を作成し，その下にコンソーシアムを構成するサブプロジェクトに対するプライマリープロジェクト (例: reference genomes，rRNA sequencing，metagenomes など) を作成することができます。
 
@@ -101,7 +101,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 
 公開されたプロジェクトデータは [NCBI](https://www.ncbi.nlm.nih.gov/bioproject) と [EBI](https://www.ebi.ac.uk/) の BioProject データベースと交換されます。
 
-### アンブレラプロジェクトの活用
+### アンブレラプロジェクトの活用 <a name="use-umbrella-project"></a>
 
 アンブレラプロジェクトを使って関連するプライマリープロジェクトをまとめてください。アンブレラを活用することでプロジェクトからの研究成果をまとめて表示することができます。
 
@@ -120,14 +120,14 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 
 <span class="red">公開されているアンブレラに関連付けたことによって非公開のプライマリープロジェクトが公開されることはありません。</span>
 
-## メタデータ<a name="metadata"></a>
+## メタデータ<a name="metadata"></a> 
 
 必須<span class="red">\*</span>  
 条件によって必須<span class="conditionally_required">\*</span>
 
-### Submitter
+### Submitter <a name="Submitter"></a>
 
-#### Submitter
+#### Submitter <a name="Area_bioproject-submitter"></a>
 
 登録者情報。登録に関する連絡はここに記載された E-mail アドレス宛てに行われます。 必要な人数分作成します。 連絡先情報は DDBJ BioProject スタッフが登録者に連絡するために使われ，一般に公開されることはありません。連絡先情報の代わりに研究者の所属する組織に関する情報が公開されます。
 
@@ -144,7 +144,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 [E-mail](#BioProject_E-mail)<span class="red">\*</span><a name="BioProject_E-mail"></a>   
 : E-mail アドレス。所属する組織ドメインのメールアドレスを指定してください。
 
-#### Organization
+#### Organization <a name="Area_organization"></a>
 
 コンタクトパーソンが所属する組織。
 
@@ -168,9 +168,9 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 [Release](#BioProject_Release)<a name="BioProject_Release"></a>  
 : プロジェクトデータを即日公開する。この BioProject ID を引用している非公開の DDBJ レコードが公開されることはありません。
 
-### General info
+### General info <a name="General-info"></a>
 
-#### Project Description
+#### Project Description <a name="Area_project-description"></a>
 
 プロジェクト内容を記述します。
 
@@ -219,7 +219,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 [Umbrella BioProject accession](#BioProject_BioProject_ID)<span class="conditionally_required">\*</span><a name="BioProject_BioProject_ID"></a>  
 : 登録されているアンブレラプロジェクトのアクセッション番号。
 
-#### External Links
+#### External Links <a name="Area_external-links"></a>
 
 プロジェクトに直接関連するリソースの URL とそれに付ける表示名。
 
@@ -231,7 +231,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 [URL](#BioProject_URL)<a name="BioProject_URL"></a>  
 : プロジェクトに関連するウェブサイトの URL。
 
-#### Grants
+#### Grants <a name="Area_grants"></a>
 
 プロジェクトの研究費に関する情報。
 
@@ -253,7 +253,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 [Grant title](#Grant_title)<a name="Grant_title"></a>  
 : 研究費のタイトル。研究費のタイトルでの検索をサポートします。
 
-#### Consortium
+#### Consortium <a name="Area_consortium"></a>
 
 [Consortium name](#Consortium_name)<a name="Consortium_name"></a>  
 : 研究がコンソーシアムの一環として行われた場合，そのコンソーシアム名を記入します。
@@ -263,7 +263,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 [Consortium URL](#Consortium_URL)<a name="Consortium_URL"></a>  
 : コンソーシアムのウェブサイトがある場合そのサイトの URL を記入します。
 
-### Project type
+### Project type <a name="Project-type"></a>
 
 #### Project data type<a name="Project_data_type"></a>
 
@@ -359,7 +359,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 [Methodology description](#Methodology_description)<span class="conditionally_required">\*</span><a name="Methodology_description"></a>  
 : Other を選択したときに Methodology type を記入します。
 
-#### Objective
+#### Objective <a name="Area_objective"></a>
 
 登録するデータの種類。
 
@@ -380,7 +380,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
   | Phenotype          | 表現型                                                          |
   | Other              | "Objective description" に Objective を記載します。                  |
 
-#### Locus tag prefix
+#### Locus tag prefix <a name="Area_locus-tag-prefix"></a>
 
 [Locus tag prefix](#Locus_tag_prefix)<span class="conditionally_required">\*</span><a name="Locus_tag_prefix"></a>
 
@@ -393,9 +393,9 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 
   DDBJ BioProject 独自に最大タグ長を12文字に制限しています。小文字は大文字に変換されて表示されますが，実際には locus tag は大文字・小文字の区別なく予約されます。
 
-### Target
+### Target <a name="Target"></a>
 
-#### Organism information
+#### Organism information <a name="Area_organism-information"></a>
 
 対象生物の分類や記述。
 
@@ -432,7 +432,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 [Description of novel organism](#Novel_organism)<a name="Novel_organism"></a>
 : [Taxonomy データベース](https://www.ncbi.nlm.nih.gov/Taxonomy/) への生物登録を申請するための情報を記入します。
 
-#### Environmental sample information
+#### Environmental sample information <a name="Area_environmental-sample-information"></a>
 
 Target の Sample scope="Environment" のときに [Organism information](#BioProject_Organism_name) に替わって表示されます。
 
@@ -444,7 +444,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 [Environmental sample description](#Environmental_sample_description)<a name="Environmental_sample_description"></a>  
 : サンプルの詳細を記載します。
 
-#### General Properties
+#### General Properties <a name="Area_general-properties"></a>
 
 対象生物の一般的な性質。
 
@@ -484,7 +484,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
   | Polyploid     |
   | Allopolyploid |
 
-#### Organism Replicons
+#### Organism Replicons <a name="Area_organism-replicons"></a>
 
 対象となる生物が持っているレプリコンの数，その名前 (例: 1，2，3 や I，II，III)，レプリコンの種類 (chromosome など) やレプリコンが存在する細胞内構造。
 
@@ -541,7 +541,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 [Description](#Replicon_description)<a name="Replicon_description"></a>  
 : レプリコンの通常とは異なる特徴。
 
-#### Phenotype
+#### Phenotype <a name="Area_phenotype"></a>
 
 対象生物の表現型。
 
@@ -575,7 +575,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
   | Heterotroph  |
   | Mixotroph    |
 
-#### Prokaryote Morphology
+#### Prokaryote Morphology <a name="Area_prokaryote-morphology"></a>
 
 対象が原核生物の場合，形態について分かっている情報を記載してください。
 
@@ -635,7 +635,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
   | Yes        |
   | No         |
 
-#### Ecological Environment
+#### Ecological Environment <a name="Area_ecological-environment"></a>
 
 生息環境。好極限性に関して分かっていることがあれば追加情報として記載します。
 
@@ -696,7 +696,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 [Optimum Temperature](#OptimumTemperature)<a name="OptimumTemperature"></a>  
 : 生息の最適温度を Celsius で記入します。
 
-### Publication<a name="Publication"></a>
+### Publication<a name="Publication"></a> 
 
 [PubMed ID](#BioProject_PubMed_ID)<a name="BioProject_PubMed_ID"></a>  
 : 文献の PubMed ID(s)。
@@ -780,7 +780,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 [This publication has multiple authors](#BioProject_This_publication_has_multiple_authors)<a name="BioProject_This_publication_has_multiple_authors"></a>  
 : この項目をチェックすると記入された著者名の後に "et al" が付加されます。
 
-### XML スキーマ
+### XML スキーマ <a name="xml-schema"></a>
 
 [BioProject XML schema](https://github.com/ddbj/pub/tree/master/docs/bioproject)
 
@@ -792,9 +792,9 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
   : <span class="red">研究対象者に由来するデータを DDBJ センターが運営するデータベースに登録する場合，研究対象者の尊厳及び人権は，適用されるべき法令，指針，ガイドライン，登録者が所属している機関の方針に従い，登録者の責任において保護されている必要があります。原則として，研究対象者を直接特定し得る情報はメタデータから取り除いてください。ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#human)を熟読してください。</span>
   </div>
 
-## プロジェクトの登録
+## プロジェクトの登録 <a name="project-submission"></a>
 
-### プロジェクトの登録が必要な場合
+### プロジェクトの登録が必要な場合 <a name="project-registration"></a>
 
 BioProject への登録は次のような場合は必須です。
 
@@ -816,7 +816,7 @@ BioProject への登録は次のような場合は必須ではありません。
 [INSDC はゲノムが登録される微生物に対して strain-level taxonomy ID を新規発行していません。](/news/ja/2014-02-12.html)[BioSample ID](/biosample/index.html) で区別されることになります。
 </div>
 
-### 新規プロジェクトの登録
+### 新規プロジェクトの登録 <a name="new-bioproject-submission"></a>
 
 [アカウント Handbook](/account.html) に従いアカウントを取得します。
 
@@ -863,7 +863,7 @@ prefix は NCBI が一括管理しています。プロジェクトを投稿す�
 
 "OVERVIEW" には初回投稿時の内容が表示され続けます。登録後の更新は反映されませんので，ご注意ください。
 
-### アクセッション番号
+### アクセッション番号 <a name="accession-number"></a>
 
 ウェブから投稿されたデータに対して PSUB で始まる仮 ID が自動的に割り当てられます。正式なアクセッション番号が発行されるまでは，この仮 ID で登録を参照します。 DDBJ BioProject スタッフはデータを査定した後，完成したデータに対してプレフィックス "PRJD" のアクセッション番号を発行します。 [D-way](https://ddbj.nig.ac.jp/D-way/) にログイン後，ウェブ上で登録したプロジェクトの進行状況やアクセッション番号を確認することができます。
 
@@ -872,7 +872,7 @@ prefix は NCBI が一括管理しています。プロジェクトを投稿す�
   - EBI/NCBI に登録したプロジェクトを DDBJ に重複して登録しないでください。
   </div>
 
-### アンブレラプロジェクトの登録
+### アンブレラプロジェクトの登録 <a name="submit-umbrella-project"></a>
 
 アンブレラプロジェクトは通常のプライマリープロジェクトと同様 [D-way](https://ddbj.nig.ac.jp/D-way/) から登録します。 <span class="red">登録の際には必ず [Private comments to DDBJ staff](#Private_comments) にこの登録がアンブレラであることを記入し DDBJ BioProject チームに伝えてください。 </span>アンブレラプロジェクトを非公開にすることはできません。
 
@@ -880,7 +880,7 @@ prefix は NCBI が一括管理しています。プロジェクトを投稿す�
 {% include image.html url="books/hbp-05.jpg" caption="アンブレラプロジェクトの登録" class="w450" %}
 {:/}
 
-### アンブレラプロジェクトへのリンク
+### アンブレラプロジェクトへのリンク <a name="link-primary-project-umbrella"></a>
 
 プライマリープロジェクトを登録する際，[Umbrella BioProject](#Area_linked-project) にリンクすべきアンブレラプロジェクトの概要とアクセッション番号を記入します。 BioProject スタッフは記入内容をみて，プロジェクトをアンブレラにリンクする作業を行います。
 
@@ -888,7 +888,7 @@ prefix は NCBI が一括管理しています。プロジェクトを投稿す�
 {% include image.html url="books/hbp-06.jpg" caption="アンブレラへのリンク" class="w450" %}
 {:/}
 
-### プロジェクトの公開<a name="project-release"></a>
+### プロジェクトの公開<a name="project-release"></a> 
 
 以下の選択肢があります:
 
@@ -903,11 +903,11 @@ prefix は NCBI が一括管理しています。プロジェクトを投稿す�
 
 公開された BioProject レコードは [NCBI](https://www.ncbi.nlm.nih.gov/bioproject) と [EBI](https://www.ebi.ac.uk/) BioProject データベースと交換されます。
 
-### プロジェクトの更新
+### プロジェクトの更新 <a name="update"></a>
 
 登録が完了したデータを更新することができます。[メッセージフォーム](/contact.html)よりご連絡ください。
 
-### プロジェクトと配列データのリンク
+### プロジェクトと配列データのリンク <a name="link-experimental-data-project"></a>
 
 DRA にデータを登録する場合は、事前に登録した BioProject アクセッション番号を Study でリストから選択します。
 

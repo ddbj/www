@@ -12,7 +12,7 @@ A new qualifier was introduced in version 2.1 (December 15, 1998) of the Feature
 
 The text below outlines the format and the present list of allowed countries. 
 
-## Defiition of /country qualifier
+## Defiition of /country qualifier <a name="Defiition_of_/country_qualifier"></a>
 
 <pre><code>
 Qualifier:      /country=" "

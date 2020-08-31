@@ -30,7 +30,7 @@ Quote from Mail Magazine : No.62&63 (Sep.02,2011) ～ No.71&72
 Hideo Aono (DDBJ Patent Annotator)
 
 
-## 1. Patent data distribution for Japan Patent Office (JPO)
+## 1. Patent data distribution for Japan Patent Office (JPO) <a name="1"></a>
 
 ### 1. Introduction
 
@@ -115,7 +115,7 @@ I hope to help understanding about JPO patent data. I will introduce
 about KIPO data and retrieval method of patent sequence in KIPO related
 organization at next column.
 
-## 2. Patent data distribution for Korean Intellectual Property Office (KIPO)
+## 2. Patent data distribution for Korean Intellectual Property Office (KIPO) <a name="2"></a>
 
 ### 1. Introduction
 
@@ -238,7 +238,7 @@ as soon as possible.
 At next column, I will introduce about the structure of DDBJ Flat Files
 (FF) for JPO patent data.
 
-## 3. Flat File structure for Japan Patent Office (JPO) -First part-
+## 3. Flat File structure for Japan Patent Office (JPO) -First part- <a name="3"></a>
 
 ### 1. Introduction
 
@@ -321,7 +321,7 @@ At second part, I will explain each line description of six Blocks in
 detail. Moreover, I would like to introduce the conversion process of
 organism name from JPO submission file in DDBJ.
 
-## 4. Flat File structure for Japan Patent Office (JPO) -Second part-
+## 4. Flat File structure for Japan Patent Office (JPO) -Second part- <a name="4"></a>
 
 ### 1. Introduction
 
@@ -513,7 +513,7 @@ structure and patent data property for JPO and KIPO data, please refer
 to my columns. If I have a chance, I will explain how to search the
 patent data by DDBJ tools and improvement points of JPO and KIPO FF.
 
-## 5. New COMMENT format for Japan Patent Office (JPO) data
+## 5. New COMMENT format for Japan Patent Office (JPO) data <a name="5"></a>
 
 ### 1. Introduction
 

@@ -52,7 +52,7 @@ Notes on HTG submission
     Basically, main targets of HTG division are unfinished sequences
     of BAC, YAC, fosmid clones.
 
-## Sample flat file
+## Sample flat file <a name="flat-file"></a>
 
 Aspects of HTG
 

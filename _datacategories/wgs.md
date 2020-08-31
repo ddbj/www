@@ -69,7 +69,7 @@ WGSデータの登録は [Mass Submission System (MSS)](/ddbj/mss.html) で受�
   </dd>
 </dl>
 
-## DDBJ フォーマットの例
+## DDBJ フォーマットの例 <a name="flat-file"></a>
 
 WGS エントリの特徴
 

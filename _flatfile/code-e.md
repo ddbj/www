@@ -23,9 +23,9 @@ related_pages:
     url: /ddbj/example-e.html
 ---
 
-## Nucleotide
+## Nucleotide <a name="nucleotide"></a>
 
-### Nucleotide Base Codes
+### Nucleotide Base Codes <a name="nucleotide-1"></a>
 
 The nucleotide base codes that are used with the International
 Nucleotide Sequence Database is as follows.  
@@ -57,7 +57,7 @@ be automatically converted to small letter.
   - [Feature Table Definition](/ddbj/full_index-e.html): [7.4.1
     Nucleotide base codes (IUPAC)](/ddbj/full_index-e.html#7.4.1)
 
-### Modified Base Abbreviations
+### Modified Base Abbreviations <a name="nucleotide-2"></a>
 
 An example for description of the modified base in FEATURES line.
 
@@ -134,10 +134,10 @@ Example
 
 
 
-## Amino Acid
+## Amino Acid <a name="amino"></a>
 
 
-### Amino Acid Codes
+### Amino Acid Codes <a name="amino-1"></a>
 
 The amino acid code that is used with the International Nucleotide
 Sequence Database is as follows.  
@@ -191,7 +191,7 @@ Those that are not included in "Amino acid codes", please refer to
     acid abbreviations](/ddbj/full_index-e.html#7.4.3)
 
 
-### Modified and Unusual Amino Acids
+### Modified and Unusual Amino Acids <a name="amino-2"></a>
 
 For other amino acids, those that are not included in [Amino Acid
 Codes](#amino-1), abbreviation listed below is used. All of these amino

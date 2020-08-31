@@ -15,7 +15,7 @@ us](before-sending-inquiries-e.html).
 The response is sent by E-mail to the E-mail address that you entered.
 So, [do not block E-mails from DDBJ](precautions-e.html).
 
-## Contact form
+## Contact form <a name="to-ddbj"></a>
 
 ※[How can I contact you when the form is not available?](/faq/en/index-e.html#contact-form-not-displayed)
 

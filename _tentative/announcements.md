@@ -6,7 +6,7 @@ category: tentative
 lang: ja
 ---
 
-## お知らせ全般
+## お知らせ全般 <a name="general"></a>
 
 DDBJ センターからのお知らせと DDBJ サービスに関する更新や変更。
 
@@ -15,7 +15,7 @@ DDBJ センターからのお知らせと DDBJ サービスに関する更新や
 [![\*]({{ site.baseurl }}/assets/images/parts/rss.png)購読](/rss/news-center-ja.xml)
 | [お知らせ一覧](/news/ja/index.html)
 
-## データベース
+## データベース <a name="database"></a>
 ### Nucleotide Sequence Database
 
 Nucleotide Sequence Database に関する更新や変更のお知らせ。

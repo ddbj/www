@@ -345,7 +345,7 @@ input, textarea, select, button {
     overflow: auto; }
   .md-content a[href^="http"]:after, .md-content a[href^="//"]:after {
     content: '';
-    background-image: url(/www/assets/images/parts/external_link.jpeg);
+    background-image: url(../images/parts/external_link.png);
     background-repeat: no-repeat;
     width: 1.6rem;
     height: 1.6rem;

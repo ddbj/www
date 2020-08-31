@@ -62,7 +62,7 @@ phytoplasmas といった対象は環境サンプルとは扱いません。
     [isolate](/ddbj/qualifiers.html#isolate) qualifier に識別子の記載が必要です。
   - [strain](/ddbj/qualifiers.html#strain) qualifier を記載することはできません。
 
-## DDBJ フォーマットの例
+## DDBJ フォーマットの例 <a name="flat-file"></a>
 
 環境サンプル(ENV)の特徴
 
