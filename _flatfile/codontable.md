@@ -6,7 +6,7 @@ category: flatfile
 lang: ja
 ---
 
-## Defiition of /transl\_table qualifier
+## Defiition of /transl\_table qualifier <a name="Defiition_of_/transl_table_qualifier"></a>
 
 ``` 
 Qualifier       /transl_table=
@@ -16,7 +16,7 @@ Value format    <integer; 1=universal table 1;2=non-universal table 2;...
 Example         /transl_table=4
 ```
 
-## Genetic code table
+## Genetic code table <a name="Genetic_code_table"></a>
 
 Compiled by Andrzej (Anjay) Elzanowski and Jim Ostell   National Center for Biotechnology Information (NCBI), Bethesda, Maryland, U.S.A.  
 

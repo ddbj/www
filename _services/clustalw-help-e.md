@@ -3,6 +3,25 @@ layout: indexed_content
 title: ClustalW 
 category: services
 lang: en
+related_pages:
+  - title: ARSA Help
+    url: /arsa-help-e.html
+  - title: BLAST Help
+    url: /blast-help-e.html
+  - title: getentry Help
+    url: /getentry-help-e.html
+  - title: TXSearch Help
+    url: /txsearch-help-e.html
+  - title: VecScreen Help
+    url: /vecscreen-help-e.html
+  - title: References
+    url: /references-e.html
+  - title: Services in past
+    url: /past-services-e.html
+  - title: WABI (Web API for Biology)
+    url: /wabi-e.html
+  - title: WABI BLAST Help
+    url: /wabi_blast-help-e.html
 ---
 
 ClustalW is a general purpose multiple sequence alignment program for
@@ -11,21 +30,21 @@ DDBJ provides both the latest version and the DDBJ original version
 (Version 1.83, Modified by Dr. Kirill Kryukov).
 
 
-## Version
+## Version <a name="Version"></a>
 
 Select "2.1" (Latest version) or "1.83" (DDBJ original, modified by Dr.
 Kirill Kryukov). Default is **Latest version**.  
 In the "1.83", you can specify the detailed option parameters for Tree calculation and Boostrap.
 
-## Sequences
+## Sequences <a name="Sequences"></a>
 
 
-### Sequence Type
+### Sequence Type <a name="select"></a>
 
 Select Protein or DNA to align. Default value is **Protein**.
 
 
-### Sequence Input
+### Sequence Input <a name="sequence"></a>
 
 Enter or paste a set of sequences, or upload a file in any format
 (NBRF-PIR，EMBL-SWISSPROT, Pearson (Fasta), Clustal (\*.aln), GCG-MSF
@@ -66,10 +85,10 @@ identifier.
 The duplicate identifier causes the error.
 
 
-## Pairwise Alignment Options
+## Pairwise Alignment Options <a name="pairwise"></a>
 
 
-### Alignment Type
+### Alignment Type <a name="type"></a>
 
 The alignment method used to perform the pairwise alignments used to
 generate the guide tree. Default value is **slow**.
@@ -81,7 +100,7 @@ generate the guide tree. Default value is **slow**.
 | fast | FAST, but approximate    |
 
 
-### Slow/Fast Pairwise Alignment Options
+### Slow/Fast Pairwise Alignment Options <a name="Slow/Fast_Pairwise_Alignment_Options"></a>
 
 DNA /Protein Weight Matrix  
 : Slow pairwise alignment DNA/Protein sequence comparison matrix series used to score alignment.
@@ -125,9 +144,9 @@ PAIRGAP
 
 
 
-## Multiple Sequence Alignment Options
+## Multiple Sequence Alignment Options <a name="multiple"></a>
 
-### Alignment Options
+### Alignment Options <a name="option"></a>
 
 DNA /Protein Weight Matrix  
 : 塩基置換行列表/アミノ酸置換行列表を指定します。デフォルトは Protein の場合は **Gonnet** ， DNA の場合は **IUB** です。
@@ -182,7 +201,7 @@ CLUSTERING
   | UPGMA | Unweighted Pair-Group Method with Arithmatic mean method |
 
 
-### Output Options
+### Output Options <a name="Output_Options"></a>
 
 Format  
 : Format for generated multiple sequence alignment. Default value is **Aln w/numbers**.
@@ -208,9 +227,9 @@ Order
   | input   | Same order as the input sequences.                  |
 
 
-## DDBJ Original version (Version 1.83, Modified by Dr. Kirill Kryukov) options
+## DDBJ Original version (Version 1.83, Modified by Dr. Kirill Kryukov) options <a name="ddbjoriginal"></a>
 
-### Tree calculation/BOOTSTRAP options
+### Tree calculation/BOOTSTRAP options <a name="bootstrap"></a>
 
 Distance  
 : Specify the correction format. Default value is **Kimura**. Only
@@ -305,9 +324,9 @@ method is the Kimura method, but the p distance method may also be
 useful for some data.
 
 
-## How to see the result screen
+## How to see the result screen <a name="results"></a>
 
-### ClustalW analysis result
+### ClustalW analysis result <a name="kekka"></a>
 
 1. Result  
 ![解析結果]({{ site.baseurl }}/assets/images/help/clustalw_01-e.gif)
@@ -340,7 +359,7 @@ file.
 
 
 
-### How to view the results after closing the window
+### How to view the results after closing the window <a name="viewafter"></a>
 
 Using the Request ID, ClustalW analysis result is available by the
 following URL.  
@@ -350,7 +369,7 @@ Please note that whoever knows Request ID can view the result.
 //clustalw.ddbj.nig.ac.jp/cgi-bin/clustalwr.cgi?id=**Request ID**&output=aln1
 
 
-## About ClustalW
+## About ClustalW <a name="About_ClustalW"></a>
 
 - This program is : ClustalW2.1
 

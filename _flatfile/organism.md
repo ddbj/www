@@ -4,6 +4,27 @@ title: Organism qualifier に記載する生物名
 pathname: organism
 category: flatfile
 lang: ja
+related_pages:
+  - title: The Genetic Codes
+    url: /ddbj/geneticcode.html
+  - title: The Genetic Codes
+    url: /ddbj/codontable.html
+  - title: DDBJ 公開形式 (Flat file)
+    url: /ddbj/flat-file.html
+  - title: Feature key
+    url: /ddbj/features.html
+  - title: Qualifier key
+    url: /ddbj/qualifiers.html
+  - title: Location の記述法
+    url: /ddbj/location.html
+  - title: タンパク質コード配列; CDS feature について
+    url: /ddbj/cds.html
+  - title: The Genetic Codes
+    url: /ddbj/geneticcode-e.html
+  - title: 配列の記載に用いる略号
+    url: /ddbj/code.html
+  - title: 登録の見本
+    url: /ddbj/example.html
 ---
 
 organism qualifier には「生物名」として、taxonomy database において、種、もしくは、それ以下のランクで "scientific name" とされている名称を記載する必要があります。
@@ -109,9 +130,9 @@ h. taxonomy database に未登録で、学名が確立している場合
 また、このとき [sub\_species](/ddbj/qualifiers.html#sub_species), [variety](/ddbj/qualifiers.html#variety), [serotype](/ddbj/qualifiers.html#serotype), [strain](/ddbj/qualifiers.html#strain) の該当 qualifier をあわせて source
 feature に記載します。
 
-<pre>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Pan troglodytes troglodytes"
+<pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Pan troglodytes troglodytes"
                      /<a href="/ddbj/qualifiers.html#sub_species">sub_species</a>="troglodytes"
-</pre> 
+</code></pre> 
 
 #### 微生物ゲノム
 
@@ -119,9 +140,9 @@ feature に記載します。
 に含めて記載していましたが、現在は学名のみの記載を原則としています。  
 strain 名は [strain](/ddbj/qualifiers.html#strain) qualifier に記載してください。
 
-<pre>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Candida albicans"
+<pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Candida albicans"
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="WO-1"
-</pre>  
+</code></pre>  
 
 #### ウイルス
 
@@ -134,14 +155,14 @@ strain 名は [strain](/ddbj/qualifiers.html#strain) qualifier に記載して�
 
 下記の例のように [collection\_date](/ddbj/qualifiers.html#collection_date) (採取した年月日)、[country](/ddbj/qualifiers.html#country) (採取した地名)、[host](/ddbj/qualifiers.html#host)、[strain](/ddbj/qualifiers.html#strain)、[serotype](/ddbj/qualifiers.html#serotype) などの該当 qualifier をあわせて source feature に記載します。
 
-<pre>                   /<a href="/ddbj/qualifiers.html#country">country</a>="Japan:Tokyo"
+<pre><code>                  /<a href="/ddbj/qualifiers.html#country">country</a>="Japan:Tokyo"
                    /<a href="/ddbj/qualifiers.html#collection_date">collection_date</a>="2007-11-01"
                    /<a href="/ddbj/qualifiers.html#host">host</a>="Gallus gallus"
                    /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="viral cRNA"
                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Influenza A virus"
                    /<a href="/ddbj/qualifiers.html#serotype">serotype</a>="H7N7"
                    /<a href="/ddbj/qualifiers.html#strain">strain</a>="A/chicken/Tokyo/2007"
-</pre>  
+</code></pre>  
 
 #### 雑種
 
@@ -184,14 +205,14 @@ taxonomy database 登録申請のための参考情報
 
 登録の際には、「生物名」に含めた下位の rank、[strain](/ddbj/qualifiers.html#strain), [isolate](/ddbj/qualifiers.html#isolate)などに該当する qualifier をあわせて source feature に記載します。
 
-<pre>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp."
-                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</pre>  
+<pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp."
+                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
 微生物の全ゲノム規模の配列に該当する場合、あるいは、真核生物 (真菌を除く) の場合は、判明している範囲の lineage、多くの場合 属名、を用いて、"\<属名\> sp."などとした上で、strain などの名称を organism に含めて記載しています。  
 その場合も strain 名を [strain](/ddbj/qualifiers.html#strain) qualifier に記載してください。
 
-<pre>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
-                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</pre>  
+<pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
+                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
 #### 2-2. 新種提唱の場合
 
@@ -215,8 +236,8 @@ taxonomy database 登録申請のための参考情報
 登録の際には、「生物名」に含めた下位の rank、[strain](/ddbj/qualifiers.html#strain)などに該当する
 qualifier をあわせて source feature に記載します。
 
-<pre>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
-                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</pre>  
+<pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
+                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
 taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から検索不能な場合、登録時に以下の参考情報を可能な範囲でお知らせください。
 
@@ -251,11 +272,11 @@ taxonomy database 登録申請のための参考情報
 
 環境サンプルの場合、必須な[environmental\_sample](/ddbj/qualifiers.html#environmental_sample) qualifier、および、[isolation\_source](/ddbj/qualifiers.html#isolation_source) qualifier などでサンプリングの過程・状態などをあわせて source feature に記載します。
 
-<pre>                     /<a href="/ddbj/qualifiers.html#clone">clone</a>="4-11"
+<pre><code>                    /<a href="/ddbj/qualifiers.html#clone">clone</a>="4-11"
                      /<a href="/ddbj/qualifiers.html#environmental_sample">environmental_sample</a>
                      /<a href="/ddbj/qualifiers.html#isolation_source">isolation_source</a>="PCR-derived sequence from sediment"
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
-                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="uncultured Acetobacter sp."</pre>
+                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="uncultured Acetobacter sp."</code></pre>
 
 taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から検索不能な場合、登録時に以下の参考情報を可能な範囲でお知らせください。
 

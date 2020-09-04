@@ -3,6 +3,13 @@ layout: indexed_content
 title: 国際塩基配列データベースのアクセッション番号
 category: services
 lang: ja
+related_pages:
+  - title: 登録データ種別
+    url: /data-categories.html
+  - title: データ公開原則
+    url: /data-release-policy.html
+  - title: Prefix Letter List
+    url: /prefix.html
 ---
 
 

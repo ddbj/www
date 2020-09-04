@@ -4,6 +4,25 @@ title: DDBJ 公開形式 Flat file
 pathname: flat-file
 category: flatfile
 lang: ja
+related_pages:
+  - title: Location の記述法
+    url: /ddbj/location.html
+  - title: タンパク質コード配列; CDS feature について
+    url: /ddbj/cds.html
+  - title: 登録の見本
+    url: /ddbj/example.html
+  - title: 配列の記載に用いる略号
+    url: /ddbj/code.html
+  - title: Organism qualifier に記載する生物名
+    url: /ddbj/organism.html
+  - title: Feature key
+    url: /ddbj/features.html
+  - title: Qualifier key
+    url: /ddbj/qualifiers.html
+  - title: The Genetic Codes
+    url: /ddbj/codontable.html
+  - title: The Genetic Codes
+    url: /ddbj/geneticcode.html
 ---
 
 「DDBJ/EMBL-Bank/GenBank 国際塩基配列データベース」は、全世界の研究者が実験によって決定したDNA (または RNA)
@@ -18,7 +37,7 @@ lang: ja
 
 ## DDBJ フォーマットの例
 
-<pre class="code flat-file"><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">AB000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">450 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">HUM</a> <a id="ModificationDateA" href="#ModificationDateB">01-JUN-2009</a>
+<pre class="code flat-file"><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">AB000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">450 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">HUM</a> <a id="ModificationDateA" href="#ModificationDateB">01-JUN-2009</a>
 <a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate
             dehydrogenase, partial cds.
 <a id="AccessionA" href="#AccessionB">ACCESSION</a>   AB000000
@@ -71,7 +90,7 @@ lang: ja
       301 tgagaaggag gtcaccgtgt tcggctgcag gaaccctaag gagatcccat ggggtgagac
       361 tagcgctgag tttgttgtgg agtacactgg tgttttcact gacaaggaca aggccgttgc
       421 tcaacttaag ggtggtgcta agaaggtctg
-<a id="EndA" href="#EndB">//</a></pre>
+<a id="EndA" href="#EndB">//</a></code></pre>
 
 フラットファイルは登録者から提供される情報に基づいて、一定の形式に則って作成されています。
 登録者の研究上の着眼点の違いなどにより、配列が類似している登録の場合でもフラットファイルに記載される内容は異なることがあります。

@@ -60,7 +60,7 @@ Notes on the TLS data submission
   - Remove low quality reads and chimeric sequences before
     submission.
 
-## Sample flat file
+## Sample flat file <a name="flat-file"></a>
 
 Aspects of TLS
 
@@ -73,7 +73,7 @@ Aspects of TLS
 
 <!-- end list -->
 
-<pre><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">TZZZ01000001</a>             <a id="SequenceLengthA" href="#SequenceLengthB">800 bp</a>   <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>     <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">TLS</a> <a id="ModificationDateA" href="#ModificationDateB">15-NOV-2017</a>
+<pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">TZZZ01000001</a>             <a id="SequenceLengthA" href="#SequenceLengthB">800 bp</a>   <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>     <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">TLS</a> <a id="ModificationDateA" href="#ModificationDateB">15-NOV-2017</a>
 <a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  TLS: Uncultured bacterium OTU:MS213 gene for 16S ribosomal RNA, 
             partial sequence.
 <a id="AccessionA" href="#AccessionB">ACCESSION</a>   TZZZ01000001
@@ -119,4 +119,4 @@ Aspects of TLS
         :
         -- The rest of nucleotide sequence is omitted --
         :
-<a id="EndA" href="#EndB">//</a> </pre>
+<a id="EndA" href="#EndB">//</a></code></pre>

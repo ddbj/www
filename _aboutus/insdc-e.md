@@ -4,6 +4,11 @@ title: page-access
 pathname: insdc-e
 category: _aboutus
 lang: en
+related_pages:
+  - title: INSDC Status Document
+    url: /insdc-status-e.html
+  - title: Faculty Staff of DDBJ
+    url: /staff-e.html
 ---
 
 DDBJ Center has been closely collaborating with [EBI; European

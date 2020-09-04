@@ -52,7 +52,7 @@ Notes on HTG submission
     Basically, main targets of HTG division are unfinished sequences
     of BAC, YAC, fosmid clones.
 
-## Sample flat file
+## Sample flat file <a name="flat-file"></a>
 
 Aspects of HTG
 
@@ -77,7 +77,7 @@ Aspects of HTG
 
 <!-- end list -->
 
-<pre><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">AP000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">121001 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">DNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">HTG</a> <a id="ModificationDateA" href="#ModificationDateB">15-OCT-2008</a>
+<pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">AP000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">121001 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">DNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">HTG</a> <a id="ModificationDateA" href="#ModificationDateB">15-OCT-2008</a>
 <a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Arabidopsis thaliana DNA, chromosome 1, BAC clone: CIC5D1, ***
             SEQUENCING IN PROGRESS ***, 10 unordered pieces.
 <a id="AccessionA" href="#AccessionB">ACCESSION</a>   AP000000
@@ -134,4 +134,4 @@ Aspects of HTG
         :
         -- The rest of nucleotide sequence is omitted --
         :
-<a id="EndA" href="#EndB">//</a></pre>
+<a id="EndA" href="#EndB">//</a></code></pre>

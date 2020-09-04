@@ -1,17 +1,11 @@
 ---
-layout: 未定
+layout: indexed_content
 title: Home
 pathname: index
 category: _jvar-snp
 lang: ja
 ---
 
-<div id="primary">
-
-<div id="page_main">
+## JVar-SNP
 
 JVar-SNP (Japan Variation Database for Short Genetic Variation)
-
-</div>
-
-</div>

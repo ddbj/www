@@ -4,13 +4,38 @@ title: DDBJ アノテータの業務紹介
 pathname: annotator
 category: _activities
 lang: ja
+related_pages:
+  - title: DDBJ スタッフの論文 (1996-2008)
+    url: /activities/past-papers.html
+  - title: DDBJ スタッフの講演発表（2001-2006）
+    url: /activities/past-presentations.html
+  - title: 相同性検索プログラムBLASTの内部構造
+    url: /column/blast_doc.html
+  - title: DDBJ の塩基配列解析ツールについて
+    url: /column/ddbjpipeline.html
+  - title: 「ユーザーの皆様へ，お願いです！」
+    url: /column/request.html
+  - title: DDBJ での特許関連配列データの公開業務の紹介
+    url: /column/patent.html
+  - title: DDBJ スタッフコラム
+    url: /column/staffcolumn.html
+  - title: 遺伝子とゲノム
+    url: /column/genegenome.html
+  - title: 進化ゲノム学とは
+    url: /column/introevog.html
+  - title: FASTAとBLASTについて
+    url: /column/homology_doc.html
+  - title: DDBJ Mail Magazine
+    url: /subscribe.html
+  - title: DDBJ データ解析チャレンジ
+    url: /activities/ddbj-challenge.html
 ---
 
 ユーザーの皆様に DDBJ について業務内容を知って頂きより身近に感じていただけるよう，DDBJ アノテータが DDBJ Mail Magazine にリレー連載したコラムをまとめました。
 
 連載期間：No.55（2010年12月1日発行）〜No.65（2011年10月27日発行）※最新の情報とは内容が異なる場合がありますのでご注意下さい。
 
-## １．Primary Database を維持するということ(前編/後編)
+## １．Primary Database を維持するということ(前編/後編) <a name="2001"></a>
 
 {:.text-align-end}
 DDBJ チーフアノテータ　真島　淳
@@ -58,7 +83,7 @@ primary database の場合, そのコンテンツに関する responsibility と
 
 生物学, 生命情報科学のコミュニティからの要請・需要の変化に応えるべく, 規則を変化させたり, 枠組を新設したり, いろいろな変化がありましたし, これからも変化することでしょう。 データベースには, システム・ストレージのインフラも大事なのですが, 仕様・枠組に関しても熟考が必要です。 特に, このような「継ぎ足し」のような拡張は通常の保守以上に厄介な局面も多いのです。 現在の課題は, 主に生物多様性研究と個人ゲノム研究の進行に伴うサンプルデータの記述とデータ連携 と感じていますが, それは別の機会に論じてみたいと思います。 ひょっとしたら, この後の回でこの点について何か書く人がいるかもしれません。
 
-### 4\. 登録者とデータベースと利用者を繋ぐ DDBJ の現場
+### 4\. 登録者とデータベースと利用者を繋ぐ DDBJ の現場 
 
 もちろん変わらない基本方針はありますが, 上述のように, 運用と規則は拡張されたり細かい変更を経て現在に至ります。もちろん, 今後も何らかの変化は不断に起こることでしょう。 ルールの変更は登録・更新の現場で annotator の業務自体の変更にあたります。 皆, それぞれに柔軟に時に厳密に対応していることと思います。 多分, この文章を書いている人物の優しい (鬼のような？) 指導の賜物でしょうか？
 

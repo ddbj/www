@@ -39,10 +39,10 @@ lang: ja
   <div class="news_content">
 DDBJ/EMBL/GenBank国際塩基配列データベースでは，1999年3月からデータベース中の特定の配列を示すためのIDである配列のバージョン番号（Nucleotide Sequence IDとProt ein ID）を導入しました。 この導入にともないＤＤＢＪではリリース39よりこれまでフラットファイルに記述されていたNIDとPIDを削除しました。<br>PIDが削除されたので，DAD (DDBJ Amino Acid Database) のフォーマットも一部変更し，これまでPIDを記述していた欄に以下のようにprotein_idを記述することになりました。
 <p>[変更前]</p>
-<pre class="highlight">LOCUS       AB000714      220 aa    PRT     HUM     27-OCT-1997DEFINITION  Homo sapiens RVP1 
-  protein.ACCESSION   AB000714-1PID         d1023862(以下略)</pre>
-<p>[変更後]</p><pre class="highlight">LOCUS       AB000714      220 aa    PRT     HUM     27-OCT-1997DEFINITION  Homo sapiens RVP1 
-  protein.ACCESSION   AB000714-1PID         <font class="red">BAA22986.1</font>(以下略)</pre>
+<pre class="highlight"><code>LOCUS       AB000714      220 aa    PRT     HUM     27-OCT-1997DEFINITION  Homo sapiens RVP1 
+  protein.ACCESSION   AB000714-1PID         d1023862(以下略)</code></pre>
+<p>[変更後]</p><pre class="highlight"><code>LOCUS       AB000714      220 aa    PRT     HUM     27-OCT-1997DEFINITION  Homo sapiens RVP1 
+  protein.ACCESSION   AB000714-1PID         <font class="red">BAA22986.1</font>(以下略)</code></pre>
 <p>＊Protein IDは「CDSに振る ID＋バージョン番号」で構成され，DNAデータベースフ~ラットファイルのCDS featureに "/protein_id" qualifierとして記述されています。 このバージョン番号は配列の変更があった場合にのみ更新されます。</p>
 </div>
   <div class="news_category">
@@ -519,8 +519,8 @@ DDBJ/EMBL/GenBank国際塩基配列データベースでは，1999年3月から�
   <h2 class="news_title" id="wn990317"><a href="#wn990317">supernig 相同性検索サービスに機能追加</a></h2>
   <div class="news_date">1999年03月17日</div>
   <div class="news_content">ＤＤＢＪ WWWの 相同性検索サービスに以下の機能拡張を行ないました。<br><ol><li>DAD, SWISS-PROT の 新着データ取り込み<br>アミノ酸配列データベースであるDAD, SWISS-PROTの相同性検索用データベースはリ~ リース以降の新着データを取り込んだデータを公開するようにしました (DADは毎日, SWISS-PROTは毎週(金曜日)更新されます)。</li><li>検索結果メールへのHTML埋め込み機能追加<br>E-mailサービスでの相同性検索依頼及びWWWサービスで検索結果をE-mail で受け取る指定をした場合の検索結果メールにHTMLを埋め込む機能を追加しました。<br>HTMLを埋め込んだメールは，Webブラウザなどで開くとWWW上で結果を受け取ったとき と同じように結果一覧からアクセション番号をクリックしてそのエントリのデータを取得 する，などの操作を行なうことができます。</li></ol><br>本機能は以下の方法でお使いいただけます。<p>・WWWから入力して検索する場合<br>検索結果を選択する画面においてE-mail の方を指定したときに， 同時にその下にある"In HTML format" をチェックすると HTML 形式の結果が添付ファイルで送られてきます。<br>・(fasta/blast/ssearch)@nig.ac.jp にメールを送って検索する場合<br>下記の例のように "html 1" を指定することによってHTML 形式の結果が添付ファイルで送られてきます (1以外を指定した場合には通常の結果が送られます)。</p>
-<pre class="highlight">例) blast の場合 program      blastn datalib      ddbj scores       100 alignments   100 expect       10 gap          
-1 filter       1 html         1 begin &gt; query aaacccgggtttaaaaaaaacggttttt ........... // </pre></div>
+<pre class="highlight"><code>例) blast の場合 program      blastn datalib      ddbj scores       100 alignments   100 expect       10 gap          
+1 filter       1 html         1 begin &gt; query aaacccgggtttaaaaaaaacggttttt ........... // </code></pre></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>

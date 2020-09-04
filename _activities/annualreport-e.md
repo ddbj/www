@@ -4,6 +4,15 @@ title: DDBJ Annual Report
 pathname: annualreport-e
 category: _activities
 lang: en
+related_pages:
+  - title: DDBJ staff papers (2009-)
+    url: /activities/papers-e.html
+  - title: DDBJ staff presentations (2009-)
+    url: /activities/presentations-e.html
+  - title: DDBJ Publications Archive
+    url: /archives/pub-archives-e.html
+  - title: The Reports for International Collaborators Meetings
+    url: /activities/icm-reports-e.html
 ---
 
 <div id="page" class="top">

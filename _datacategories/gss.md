@@ -4,6 +4,33 @@ title: GSS
 pathname: gss
 category: datacategories
 lang: ja
+related_pages:
+  - title: Genome Project のデータ登録
+    url: /ddbj/genome.html
+  - title: WGS
+    url: /ddbj/wgs.html
+  - title: CON
+    url: /ddbj/con.html
+  - title: GSS
+    url: /ddbj/gss.html
+  - title: HTG
+    url: /ddbj/htg.html
+  - title: Environmental sequence の登録
+    url: /ddbj/environmental.html
+  - title: ENV
+    url: /ddbj/env.html
+  - title: TLS
+    url: /ddbj/tls.html
+  - title: Transcriptome Project のデータ登録
+    url: /ddbj/transcriptome.html
+  - title: TSA
+    url: /ddbj/tsa.html
+  - title: EST
+    url: /ddbj/est.html
+  - title: HTC
+    url: /ddbj/htc.html
+  - title: Third Party Data (TPA)
+    url: /ddbj/tpa.html
 ---
 
 DDBJ/ENA/GenBank の GSS division は [EST](/ddbj/est.html) division
@@ -26,7 +53,7 @@ GSS 登録における注意事項
   - 登録前に cloning vector に由来する領域は配列から取り除いておいてください。
   - [clone](/ddbj/qualifiers.html#clone) qualifier の記載が必須です。
 
-## DDBJ フォーマットの例
+## DDBJ フォーマットの例 <a name="flat-file"></a>
 
 GSS エントリの特徴
 
@@ -36,7 +63,7 @@ GSS エントリの特徴
 
 <!-- end list -->
 
-<pre><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">GA000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">423 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">DNA</a>    <a id="ModificationDateA" href="#ModificationDateB">linear</a>   <a id="DivisionA" href="#DivisionB">GSS</a> <a id="ModificationDateA" href="#ModificationDateB">15-OCT-2008</a>
+<pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">GA000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">423 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">DNA</a>    <a id="ModificationDateA" href="#ModificationDateB">linear</a>   <a id="DivisionA" href="#DivisionB">GSS</a> <a id="ModificationDateA" href="#ModificationDateB">15-OCT-2008</a>
 <a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Arabidopsis thaliana DNA, BAC clone: CIC5D1, left end, chromosome 1 
             between mi303 and mi259.
 <a id="AccessionA" href="#AccessionB">ACCESSION</a>   GA000000
@@ -75,4 +102,4 @@ GSS エントリの特徴
         :
         -- The rest of nucleotide sequence is omitted --
         :
-<a id="EndA" href="#EndB">//</a></pre>
+<a id="EndA" href="#EndB">//</a></code></pre>

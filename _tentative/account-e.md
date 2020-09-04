@@ -10,7 +10,7 @@ lang: en
 
 Create a DDBJ submission account.
 
-## DDBJ submission account
+## DDBJ submission account <a name="ddbj-submission-account"></a>
 
 At the DNA Data Bank of Japan (DDBJ), BioProject, BioSample, GEA and DRA
 submissions are managed in user's account. This handbook explains how to
@@ -33,9 +33,9 @@ key is required.
 {% include image.html url="books/hac01.jpg" caption="Two types of submission account." class="w300" %}
 {:/}
 
-## Account for BioProject/BioSample submissions
+## Account for BioProject/BioSample submissions <a name="account-for-bioproject-biosample-submissions"></a>
 
-### Create an account on website
+### Create an account on website <a name="create-an-account-on-website"></a>
 
 You can submit to BioProject and BioSample databases in the account created as explained in this chapter.
 
@@ -93,12 +93,12 @@ Set a password longer than 8 characters contains both alphabets and　numbers.
 {:/}
 
 
-## Enable DRA/GEA submission in account
+## Enable DRA/GEA submission in account <a name="enable-dra-submission-in-account"></a>
 
 For submission to the [DDBJ Sequence Read Archive (DRA)](/dra/index-e.html) and [Genomic Expression Archive (GEA)](/gea/index-e.html), center name and public key should be registered to your account. The center name is abbreviated name of
 organization assigned by the DRA. The public key is used to identify users to access the file submission server.
 
-### Generate public and private key pair
+### Generate public and private key pair <a name="generate-key-pair"></a>
 
 {::options parse_block_html="true" /}
 <div class="accordion-menu">
@@ -202,7 +202,7 @@ At "/Users/you/.ssh", the private key is saved as "id_rsa" and the public key is
 </div>
 </div>
 
-### Register center name and public key
+### Register center name and public key <a name="register-center-name-and-public-key"></a>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1092WV_aXjA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -235,12 +235,12 @@ the DRA/GEA at menus at top left.
 {% include image.html url="books/drasub.jpg" caption="Can submit to DRA/GEA in addition to BioProject and BioSample" class="w450" %}
 {:/}
 
-### Update account
+### Update account <a name="update-account"></a>
 
 Edit account information and update account by [Update] button. The
 registered public key can be overwritten by uploading a new file.
 
-## Convert private key
+## Convert private key <a name="convert-private-key"></a>
 
 {::options parse_block_html="true" /}
 <div class="accordion-menu">

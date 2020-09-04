@@ -4,6 +4,33 @@ title: TSA
 pathname: tsa
 category: datacategories
 lang: ja
+related_pages:
+  - title: Genome Project のデータ登録
+    url: /ddbj/genome.html
+  - title: WGS
+    url: /ddbj/wgs.html
+  - title: CON
+    url: /ddbj/con.html
+  - title: GSS
+    url: /ddbj/gss.html
+  - title: HTG
+    url: /ddbj/htg.html
+  - title: Environmental sequence の登録
+    url: /ddbj/environmental.html
+  - title: ENV
+    url: /ddbj/env.html
+  - title: TLS
+    url: /ddbj/tls.html
+  - title: Transcriptome Project のデータ登録
+    url: /ddbj/transcriptome.html
+  - title: TSA
+    url: /ddbj/tsa.html
+  - title: EST
+    url: /ddbj/est.html
+  - title: HTC
+    url: /ddbj/htc.html
+  - title: Third Party Data (TPA)
+    url: /ddbj/tpa.html
 ---
 
 2008年から INSDC では、アセンブルされた cDNA 配列データを、Transcriptome Shotgun Assembly
@@ -42,7 +69,7 @@ TSA とプライマリーエントリの配列アラインメントに関する�
     1. 'n' で示される塩基は 5% より少ないこと
     2. 連続した 'n' で示される区間が 5 塩基以下であること
 
-## DDBJ フォーマットの例
+## DDBJ フォーマットの例 <a name="flat-file"></a>
 
 TSA エントリの特徴
 
@@ -56,7 +83,7 @@ TSA エントリの特徴
 
 [DDBJ Read Archive](/dra/index.html) を引用した例
 
-<pre><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">IZZY01000001</a>              <a id="SequenceLengthA" href="#SequenceLengthB">800 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">TSA</a> <a id="ModificationDateA" href="#ModificationDateB">15-OCT-2015</a>
+<pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">IZZY01000001</a>              <a id="SequenceLengthA" href="#SequenceLengthB">800 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">TSA</a> <a id="ModificationDateA" href="#ModificationDateB">15-OCT-2015</a>
 <a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  TSA: Mus musculus RNA, contig1_1.
 <a id="AccessionA" href="#AccessionB">ACCESSION</a>   IZZY01000001
 <a id="VersionA" href="#VersionB">VERSION</a>     IZZY01000001.1
@@ -96,11 +123,11 @@ TSA エントリの特徴
         :
         -- The rest of nucleotide sequence is omitted --
         :
-<a id="EndA" href="#EndB">//</a></pre>
+<a id="EndA" href="#EndB">//</a></code></pre>
 
 [EST](/ddbj/est.html) を引用した例
 
-<pre class="code flat-file"><a href="#LocusB">LOCUS</a>       <a href="#LocusNameB">IZZY01000001</a>              <a href="#SequenceLengthB">800 bp</a>    <a href="#MoleculeTypeB">mRNA</a>    <a href="#ModificationDateB">linear</a>   <a href="#DivisionB">TSA</a> <a href="#ModificationDateB">15-OCT-2015</a>
+<pre class="code flat-file"><code><a href="#LocusB">LOCUS</a>       <a href="#LocusNameB">IZZY01000001</a>              <a href="#SequenceLengthB">800 bp</a>    <a href="#MoleculeTypeB">mRNA</a>    <a href="#ModificationDateB">linear</a>   <a href="#DivisionB">TSA</a> <a href="#ModificationDateB">15-OCT-2015</a>
 <a href="#DefinitionB">DEFINITION</a>  TSA: Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate
             dehydrogenase, complete cds.
 <a href="#AccessionB">ACCESSION</a>   IZZY01000001
@@ -154,4 +181,4 @@ TSA エントリの特徴
         :
         -- The rest of nucleotide sequence is omitted --
         :
-<a href="#EndB">//</a></pre>
+<a href="#EndB">//</a></code></pre>

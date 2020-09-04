@@ -3,9 +3,28 @@ layout: indexed_content
 title: ARSA 
 category: services
 lang: en
+related_pages:
+  - title: BLAST Help
+    url: /blast-help-e.html
+  - title: getentry Help
+    url: /getentry-help-e.html
+  - title: TXSearch Help
+    url: /txsearch-help-e.html
+  - title: ClustalW Help
+    url: /clustalw-help-e.html
+  - title: VecScreen Help
+    url: /vecscreen-help-e.html
+  - title: References
+    url: /references-e.html
+  - title: Services in past
+    url: /past-services-e.html
+  - title: WABI (Web API for Biology)
+    url: /wabi-e.html
+  - title: WABI BLAST Help
+    url: /wabi_blast-help-e.html
 ---
 
-## Searchable DataBases
+## Searchable DataBases <a name="database"></a>
 
 ARSA retrieves the following databases.
 
@@ -22,7 +41,7 @@ Entries whose accession number is assigned in a different rules from
 [WGS](/ddbj/wgs-e.html)(including WGS Scaffold CON), some TSA entries,
 [MGA](/ddbj/mga-e.html)　are not searchable in ARSA.
 
-## Quick Search
+## Quick Search <a name="Quick_Search"></a>
 
 These are search options and examples. If you click "Search Condition"
 at the Result page, you can check your entered keyword.  
@@ -100,7 +119,7 @@ enclosed in [ ].
 Sequence length of LOCUS include the 500 or less.
 
 
-## Advanced Search
+## Advanced Search <a name="Advanced_Search"></a>
 
 Basic searchEnter the search keyword to the search box of the field which you want to search.
 : [Example: Enter human into "Definition" column,](http://ddbj.nig.ac.jp/arsa/search?lang=en&cond=advanced_search&pa=&an=&sl1=&sl2=&_mt=on&_mf=on&_dv=on&dt1=&dt2=&df=human&kw=&og=&ln=&ra=&rt=&rj=&rp=&cm=&fq%5B0%5D.featureKey=&fq%5B0%5D.qualifierName=&fq%5B0%5D.qualifierValue=&at=&sortTarget=score&sortOrder=desc&displayFields=PrimaryAccessionNumber&displayFields=Definition&displayFields=SequenceLength&displayFields=MolecularType&displayFields=Organism&_displayFields=on&op=AND)
@@ -139,7 +158,7 @@ One which has been described as "/gene="p53"" to CDS of
 FEATURES One which has been described as
 "/gene="p53R2"" to CDS of FEATURES
 
-## Details of the search field
+## Details of the search field <a name="Details_of_the_search_field"></a>
 
 Reference: ['Available Fields'](http://ddbj.nig.ac.jp/arsa/quick_search?lang=en)
 
@@ -356,7 +375,7 @@ ORIGIN
 //
 ```
 
-## Format of the search keyword
+## Format of the search keyword <a name="Format_of_the_search_keyword"></a>
 
 Specification of the search field
 : (Search field name or Short name) + ':' + (Search keyword)
@@ -483,7 +502,7 @@ Character with a special meaning
 When you search these characters, use phrase search, or cancel the
 special meaning by prefixing the ''{::nomarkdown}\{:/}''
 
-## Get the search results
+## Get the search results <a name="Get_the_search_results"></a>
 
 Your results are available in the following formats.
 
@@ -547,7 +566,7 @@ Kind of filters
   - Organism
 
 
-## Other search criteria
+## Other search criteria <a name="Other_search_criteria"></a>
 
 Specifiction of the following seach conditions are also available at the
 "Search Settints" of "Advanced Search".

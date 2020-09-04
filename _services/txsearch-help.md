@@ -3,6 +3,33 @@ layout: indexed_content
 title: TXSearch
 category: services
 lang: ja
+related_pages:
+  - title: ARSA ヘルプ
+    url: /arsa-help.html
+  - title: BLAST ヘルプ
+    url: /blast-help.html
+  - title: getentry ヘルプ
+    url: /getentry-help.html
+  - title: VecScreen ヘルプ
+    url: /vecscreen-help.html
+  - title: ClustalW ヘルプ
+    url: /clustalw-help.html
+  - title: 過去のサービス
+    url: /past-services.html
+  - title: 関連論文
+    url: /references.html
+  - title: WABI (Web API for Biology)
+    url: /wabi.html
+  - title: WABI BLAST ヘルプ
+    url: /wabi_blast-help.html
+  - title: WABI ClustalW ヘルプ
+    url: /wabi_clustalw-help.html
+  - title: WABI VecScreen ヘルプ
+    url: /wabi_vecscreen-help.html
+  - title: WABI MAFFT ヘルプ
+    url: /wabi_mafft-help.html
+  - title: Pipeline ヘルプ
+    url: /pipeline-help.html
 ---
 
 TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/) の検索システムです。国際塩基配列データベース([INSD]({{site.baseurl}}/aboutus/insdc.html)) にデータを登録する際には、NCBI Taxonomy に基づいた生物名の表記を使用する必要があります。

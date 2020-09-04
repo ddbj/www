@@ -6,7 +6,7 @@ category: _activities
 lang: en
 ---
 
-## 2019
+## 2019 <a name="2019"></a>
 
   - <span class="title">Database and supercomputer resources for human
     data at DDBJ</span> <span class="authors">Yuichi Kodama, Asami
@@ -46,7 +46,7 @@ lang: en
     <span class="pub-info">Plant and Animal Genome conference 2019 12
     Jan 2019</span>
 
-## 2018
+## 2018 <a name="2018"></a>
 
   - <span class="title">Resources for archiving, sharing and analysis of
     controlled-access human data at DDBJ Center.</span>
@@ -88,7 +88,7 @@ lang: en
     Brasiliensis</span> <span class="authors">Yasukazu Nakamura</span>
     <span class="pub-info">PAGXXVI 13 Jan 2018</span>
 
-## 2017
+## 2017 <a name="2017"></a>
 
   - <span class="title">MarpolDB \_ marchantia.info; a genome DB for the
     Liverwort</span> <span class="authors">Yasukazu Nakamura</span>
@@ -121,7 +121,7 @@ lang: en
     Symposium 2017](http://cjk-bioinfo.org/2017/index.html) Jun
     20,2017</span>
 
-## 2016
+## 2016 <a name="2016"></a>
 
   - <span class="title">JGA: Japanese Genotype-phenotype Archive</span>
     <span class="authors">Yuichi Kodama, Jun Mashima, Mari T. Minowa,
@@ -138,7 +138,7 @@ lang: en
     (PAG)](https://pag.confex.com/pag/xxiv/webprogram/Paper21911.html)
     Jan 10,2016</span>
 
-## 2012
+## 2012 <a name="2012"></a>
 
   - <span class="title">DNA Data Bank of Japan: trad and new
     databases</span> <span class="authors">Yasukazu Nakamura</span>
@@ -153,7 +153,7 @@ lang: en
     <span class="pub-info">The International Plant & Animal Genome XX
     Conference Jan 14,2012</span>
 
-## 2011
+## 2011 <a name="2011"></a>
 
   - <span class="title">DDBJ Sequence Read Archive and a cloud-computing
     based analytical pipeline for next-generation sequencing
@@ -178,7 +178,7 @@ lang: en
     <span class="pub-info">Plant and Animal Genome XIX Conference Jan
     15,2011</span>
 
-## 2010
+## 2010 <a name="2010"></a>
 
   - <span class="title">DDBJ Read Annotation Pipeline: A Cloud Computing
     Based Analytical Tool for Next-generation Sequencing Data</span>
@@ -237,7 +237,7 @@ lang: en
     <span class="pub-info">The 5th NIG Poster Workshop May
     26,2010</span>
 
-## 2009
+## 2009 <a name="2009"></a>
 
   - <span class="title">DDBJ Sequence Read Archive and DDBJ Read
     Annotation Pipeline: An archive database and an analytical tool for

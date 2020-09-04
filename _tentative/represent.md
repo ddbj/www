@@ -59,7 +59,7 @@ lang: ja
 
 観測した配列は３タイプですので, 配列の同一性にのみ着目して３件の配列データで代表させることも可能と思われます。しかし, その方法では観測した集団の情報を捉えることが困難になります。 そのため観測した集団に関する情報と配列の双方を配列データに保持可能な件数が良いと思われます。下記 要領でサンプルの由来情報を source feature に記載し, ６通り中, 観測されていない日本における haplotype C を除く５件の配列データを登録することが, 好ましいと考えられます。
 
-<pre>
+<pre><code>
     <a href="/ddbj/features.html#source">source</a>        1..365
                   /<a href="/ddbj/qualifiers.html#country">country</a>="Japan"
                   /<a href="/ddbj/qualifiers.html#haplotype">haplotype</a>="A"
@@ -69,4 +69,4 @@ lang: ja
                   /<a href="/ddbj/qualifiers.html#compare">compare</a>="AB012345.1"
                   /<a href="/ddbj/qualifiers.html#frequency">frequency</a>="75 in 113"
                   /<a href="/ddbj/qualifiers.html#replace">replace</a>="t"
-</pre>
+</code></pre>

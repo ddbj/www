@@ -60,7 +60,7 @@ You can submit HTC data to DDBJ through [Mass Submission System
     Do not confuse with [TSA: Transcriptome Shotgun
     Assembly](/ddbj/tsa-e.html).
 
-### Sample flat file
+### Sample flat file <a name="flat-file"></a>
 
 Aspects of HTC/full length insert cDNA
 
@@ -80,7 +80,7 @@ Aspects of HTC/full length insert cDNA
 
 <!-- end list -->
 
-<pre><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">AK000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">1450 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">HTC</a> <a id="ModificationDateA" href="#ModificationDateB">15-OCT-2008</a>
+<pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">AK000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">1450 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">HTC</a> <a id="ModificationDateA" href="#ModificationDateB">15-OCT-2008</a>
 <a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Mus musculus mRNA for hypothetical protein, complete cds, clone: 
             2310009A01, full insert sequence. 
 <a id="AccessionA" href="#AccessionB">ACCESSION</a>   AK000000
@@ -124,5 +124,5 @@ Aspects of HTC/full length insert cDNA
         :
         -- The rest of nucleotide sequence is omitted --
         :
-<a id="EndA" href="#EndB">//</a></pre>
+<a id="EndA" href="#EndB">//</a></code></pre>
 

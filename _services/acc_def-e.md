@@ -3,9 +3,16 @@ layout: indexed_content
 title: Accession Number Assigned by INSD
 category: services
 lang: en
+related_pages:
+  - title: Prefix Letter List
+    url: /prefix-e.html
+  - title: Categories for Sequence Data
+    url: /data-categories-e.html
+  - title: Principle of “Hold-Until-Published” data release
+    url: /data-release-policy-e.html
 ---
 
-## Definition
+## Definition <a name="definition"></a>
 
 [INSD](/insdc-e.html#insd) (the International Nucleotide Sequence
 Databases) are composed of DDBJ, ENA and NCBI, and collect
@@ -18,7 +25,7 @@ the INSD accession number.
 The number is internationally recognized to guarantee the submitter the
 property of the submitted and published data.
 
-## Format of the INSD Accession Number
+## Format of the INSD Accession Number <a name="format"></a>
 
 INSD accession number is composed of alphabet letters and digits.  
 The alphabet part is called "prefix". See [the prefix
@@ -50,7 +57,7 @@ Project/Sample
 
 
 
-## Some ID numbers confused with the INSD Accession Number
+## Some ID numbers confused with the INSD Accession Number <a name="confuse"></a>
 
 Though often confused, the followings are not the INSD accession
 numbers;

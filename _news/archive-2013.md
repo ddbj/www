@@ -405,14 +405,14 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn130806"><a href="#wn130806">EMBL-Bank 由来 TPA データの不備についてお詫び</a></h2>
   <div class="news_date">2013年08月06日</div>
-  <div class="news_content"><p>EMBL-Bank 由来の TPA データを分ける処理に不具合があり、一部データに不備が生じていたことが判明しました。<br>詳細は以下の通りです。</p><dl><dd><strong>対象：</strong> EMBL-Bank 由来の一部の TPA データ 865 entries<br><pre class="highlight">  HE804769-HE804772  HG322958-HG323812  BN001513-BN001519  FR749997</pre><strong>期間：</strong> 2013.04.24 ～ 2013.07.27 <br><strong>影響サービス：</strong> anonymous FTP，getentry<br><br><strong>状況：</strong> <br>anonymous FTP について: TPA データは、本来であれば、primary data とは別のディレクトリ (/ddbj_database/tpa/ddbjnew/) で区別して公開しますが、 primary data とともに 下記のファイルに含まれています。 <br>
-<pre class="highlight">directory: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbjnew/file name: DDBJNEWr93.043.dat.gz 
+  <div class="news_content"><p>EMBL-Bank 由来の TPA データを分ける処理に不具合があり、一部データに不備が生じていたことが判明しました。<br>詳細は以下の通りです。</p><dl><dd><strong>対象：</strong> EMBL-Bank 由来の一部の TPA データ 865 entries<br><pre class="highlight"><code>  HE804769-HE804772  HG322958-HG323812  BN001513-BN001519  FR749997</code></pre><strong>期間：</strong> 2013.04.24 ～ 2013.07.27 <br><strong>影響サービス：</strong> anonymous FTP，getentry<br><br><strong>状況：</strong> <br>anonymous FTP について: TPA データは、本来であれば、primary data とは別のディレクトリ (/ddbj_database/tpa/ddbjnew/) で区別して公開しますが、 primary data とともに 下記のファイルに含まれています。 <br>
+<pre class="highlight"><code>directory: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbjnew/file name: DDBJNEWr93.043.dat.gz 
 （HG322958-HG323812 を含む）          
 DDBJNEWr93.046.dat.gz （HG322958-HG323812 を含む）           
 DDBJNEWr93.050.dat.gz （BN001513-BN001519,FR749997 を含む）           
 DDBJNEWr93.054.dat.gz （HG322958-HG323812 を含む）           
 DDBJNEWr93.056.dat.gz （HG322958-HG323812 を含む）           
-DDBJNEWr93.065.dat.gz （HG322958-HG323812 を含む）</pre>getentry について: 該当するエントリが格納されていませんでした。<br><br><strong>対応：</strong> 問題のあったソフトウェアを修正しました。<br>anonymous FTP について: 該当する TPA エントリは DDBJ 定期リリース 94 以降に正しく再配置されます。<br>getentry について: 該当する TPA エントリは既に getentry に格納されています。<br></dd></dl><p>ユーザの皆様にご迷惑をお掛けいたしました事を深くお詫び申し上げます。</p></div>
+DDBJNEWr93.065.dat.gz （HG322958-HG323812 を含む）</code></pre>getentry について: 該当するエントリが格納されていませんでした。<br><br><strong>対応：</strong> 問題のあったソフトウェアを修正しました。<br>anonymous FTP について: 該当する TPA エントリは DDBJ 定期リリース 94 以降に正しく再配置されます。<br>getentry について: 該当する TPA エントリは既に getentry に格納されています。<br></dd></dl><p>ユーザの皆様にご迷惑をお掛けいたしました事を深くお詫び申し上げます。</p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -718,7 +718,7 @@ DDBJNEWr93.065.dat.gz （HG322958-HG323812 を含む）</pre>getentry につい�
 <div class="news_post_list">
   <h2 class="news_title" id="wn130307"><a href="#wn130307">anonymous FTP のディレクトリ構成変更: unified-all ディレクトリ新設と non-redundant から unified-new へディレクトリ名称変更</a></h2>
   <div class="news_date">2013年03月07日</div>
-  <div class="news_content"><p>FTP の <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/">ddbj_database</a> (DDBJ 由来データ) 配下のディレクトリに unified-all を新設しました。また、これに伴い、non-redundant から unified-new に名称変更しました。<br>ddbj_database 以下の構成の詳細は、同ディレクトリ内の <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/README.TXT">README.TXT</a> をご参照下さい。定期監視されている場合は、この変更による影響のご確認をお願いいたします。</p><dl><dt>unified-all; <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbjnew/unified-all">ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbjnew/unified-all</a></dt><dd>このディレクトリには ddbj と ddbjnew のディレクトリ内に含まれる全ファイルを統合して、更新されたエントリを最新のバージョンのみ含むようにしています。つまり、置き換えられた以前のバージョンのエントリを除いています。<pre class="highlight"><strong>ディレクトリ構成</strong>　unified-all　　|- fasta   : in FASTA file format　　|- blastdb : in BLAST DB format</pre></dd><dt>unified-new; <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbjnew/unified-new">ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbjnew/unified-new</a></dt><dd>このディレクトリには ddbjnew のディレクトリ内に含まれる全ファイルを統合して、更新されたエントリを最新のバージョンのみ含むようにしています。 つまり、置き換えられた以前のバージョンのエントリを除いています。<pre class="highlight"><strong>ディレクトリ構成</strong>　unified-new  : in DDBJ flat file format　　|- fasta   : in FASTA file format　　|- blastdb : in BLAST DB format</pre></dd></dl></div>
+  <div class="news_content"><p>FTP の <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/">ddbj_database</a> (DDBJ 由来データ) 配下のディレクトリに unified-all を新設しました。また、これに伴い、non-redundant から unified-new に名称変更しました。<br>ddbj_database 以下の構成の詳細は、同ディレクトリ内の <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/README.TXT">README.TXT</a> をご参照下さい。定期監視されている場合は、この変更による影響のご確認をお願いいたします。</p><dl><dt>unified-all; <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbjnew/unified-all">ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbjnew/unified-all</a></dt><dd>このディレクトリには ddbj と ddbjnew のディレクトリ内に含まれる全ファイルを統合して、更新されたエントリを最新のバージョンのみ含むようにしています。つまり、置き換えられた以前のバージョンのエントリを除いています。<pre class="highlight"><code><strong>ディレクトリ構成</strong>　unified-all　　|- fasta   : in FASTA file format　　|- blastdb : in BLAST DB format</code></pre></dd><dt>unified-new; <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbjnew/unified-new">ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbjnew/unified-new</a></dt><dd>このディレクトリには ddbjnew のディレクトリ内に含まれる全ファイルを統合して、更新されたエントリを最新のバージョンのみ含むようにしています。 つまり、置き換えられた以前のバージョンのエントリを除いています。<pre class="highlight"><code><strong>ディレクトリ構成</strong>　unified-new  : in DDBJ flat file format　　|- fasta   : in FASTA file format　　|- blastdb : in BLAST DB format</code></pre></dd></dl></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -754,7 +754,7 @@ DDBJNEWr93.065.dat.gz （HG322958-HG323812 を含む）</pre>getentry につい�
 <div class="news_post_list">
   <h2 class="news_title" id="wn130213"><a href="#wn130213">EMBL-Bank 由来 WGS データの不備についてお詫び</a></h2>
   <div class="news_date">2013年02月13日</div>
-  <div class="news_content"><p>EMBL-Bank 由来の WGS データを読み込むソフトウェアに不具合があり、一部データに不備が生じていたことが判明しました。<br>詳細は以下の通りです。</p><dl><dd><strong>対象：</strong> EMBL-Bank 由来の一部のWGS データ 64,579 entries、以下の 175 prefix を持つもの<br>参照; 公開されているWGSデータ<pre class="highlight">CABT, CACQ, CADR, CAEG, CAEK, CAEL, CAEN, CAEO, CAEP, CAER, CAES, CAET, CAEU, 
+  <div class="news_content"><p>EMBL-Bank 由来の WGS データを読み込むソフトウェアに不具合があり、一部データに不備が生じていたことが判明しました。<br>詳細は以下の通りです。</p><dl><dd><strong>対象：</strong> EMBL-Bank 由来の一部のWGS データ 64,579 entries、以下の 175 prefix を持つもの<br>参照; 公開されているWGSデータ<pre class="highlight"><code>CABT, CACQ, CADR, CAEG, CAEK, CAEL, CAEN, CAEO, CAEP, CAER, CAES, CAET, CAEU, 
 CAEV, CAEW, CAFD, CAFH, CAFI, CAFJ, CAFK, CAFM, CAFN, CAFQ, CAGA, CAGB, CAGD, 
 CAGH, CAGI, CAGJ, CAGK, CAGL, CAGM, CAGN, CAGO, CAGP, CAGQ, CAGR, CAGS, CAGT, 
 CAGU, CAGV, CAGW, CAGX, CAGY, CAGZ, CAHA, CAHB, CAHC, CAHD, CAHE, CAHF, CAHG, 
@@ -767,7 +767,7 @@ CAKU, CAKV, CAKW, CAKX, CAKY, CAKZ, CALA, CALB, CALC, CALD, CALE, CALF, CALG,
 CALI, CALJ, CALK, CALL, CALU, CALV, CALW, CALX, CALY, CALZ, CAMA, CANE, CANF, 
 CANG, CANH, CANI, CANJ, CANO, CANP, CANQ, CANR, CANS, CAOH, CAOI, CAOL, CAOM, 
 CAON, CAOO, CAOR, CAOS, CAOT, CAOU, CAOV, CAPF, CAPG, CAPH, CAPI, CAPJ, CAPK, 
-CAPL, CAPM, CAPN, CAPS, CAQO, CAQP</pre><strong>期間：</strong> 2012.03.01 ～ 2013.02.12 <br><strong>状況：</strong> <a href="/ddbj/flat-file.html#LocusB">LOCUS</a> 行の division の書式が不正<br><strong>影響サービス：</strong> Anonymous FTP，getentry<br><strong>対応：</strong> 該当ソフトウェアを修正し、該当データを再公開し適用することで解消しました。<br></dd></dl><p>ユーザの皆様にご迷惑をお掛けいたしました事を深くお詫び申し上げます。</p></div>
+CAPL, CAPM, CAPN, CAPS, CAQO, CAQP</code></pre><strong><br>期間：</strong> 2012.03.01 ～ 2013.02.12 <br><strong>状況：</strong> <a href="/ddbj/flat-file.html#LocusB">LOCUS</a> 行の division の書式が不正<br><strong>影響サービス：</strong> Anonymous FTP，getentry<br><strong>対応：</strong> 該当ソフトウェアを修正し、該当データを再公開し適用することで解消しました。<br></dd></dl><p>ユーザの皆様にご迷惑をお掛けいたしました事を深くお詫び申し上げます。</p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>

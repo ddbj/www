@@ -405,15 +405,15 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn070801"><a href="#wn070801">[重要] DDBJフラットファイルフォーマット改訂：E-mailアドレスと電話番号，FAX番号の非表示化　</a></h2>
   <div class="news_date">2007年08月01日</div>
-  <div class="news_content"><span class="icon_d-triangle font-bold">改訂概要</span><br>個人情報保護，および，迷惑メール増加などへの対応としまして，DDBJ では，DDBJ が登録を受け付けたエントリに関しましては，E-mail アドレスと電話番号，FAX 番号を非表示化いたします。DDBJ では，ほぼ全ての DDBJ が過去に登録を受け付けたエントリを改訂します。ただし，GenBank，EMBL が受け付けたエントリに関しましては修正しません。この改訂は，2007年12月末，DDBJ 定期リリース72 において完了予定です。<br>これまで，データベース利用者から各配列の登録者に対する連絡は対象フラットファイルを参照することで自由に行うことが可能でしたが，この改訂により，一般的には，この連絡が取り難くなります。研究上の問題に関して，各配列の登録者への連絡が必要な場合はメッセージを転送いたしますので，お手数ですが，別途設置予定の問い合わせフォームからご連絡ください。その際は簡単な理由(「clone 譲渡を希望」など)を書き添えてください。<br>申し訳ございませんが，ご理解とご協力をお願いいたします。<br><span class="icon_d-triangle font-bold">改訂詳細</span><br>現在，登録者の情報は一般に，<a href="/ddbj/flat-file.html#Reference1B">REFERENCE 1</a> の JOURNAL 行に下記のように示されています。<br><dl><dd><pre class="highlight">JOURNAL   Submitted (30-NOV-2000) to the DDBJ/EMBL/GenBank databases.           
+  <div class="news_content"><span class="icon_d-triangle font-bold">改訂概要</span><br>個人情報保護，および，迷惑メール増加などへの対応としまして，DDBJ では，DDBJ が登録を受け付けたエントリに関しましては，E-mail アドレスと電話番号，FAX 番号を非表示化いたします。DDBJ では，ほぼ全ての DDBJ が過去に登録を受け付けたエントリを改訂します。ただし，GenBank，EMBL が受け付けたエントリに関しましては修正しません。この改訂は，2007年12月末，DDBJ 定期リリース72 において完了予定です。<br>これまで，データベース利用者から各配列の登録者に対する連絡は対象フラットファイルを参照することで自由に行うことが可能でしたが，この改訂により，一般的には，この連絡が取り難くなります。研究上の問題に関して，各配列の登録者への連絡が必要な場合はメッセージを転送いたしますので，お手数ですが，別途設置予定の問い合わせフォームからご連絡ください。その際は簡単な理由(「clone 譲渡を希望」など)を書き添えてください。<br>申し訳ございませんが，ご理解とご協力をお願いいたします。<br><span class="icon_d-triangle font-bold">改訂詳細</span><br>現在，登録者の情報は一般に，<a href="/ddbj/flat-file.html#Reference1B">REFERENCE 1</a> の JOURNAL 行に下記のように示されています。<br><dl><dd><pre class="highlight"><code>JOURNAL   Submitted (30-NOV-2000) to the DDBJ/EMBL/GenBank databases.           
 Hanako Mishima, National Institute of Genetics, DNA Data           
 Bank of Japan; Yata 1111, Mishima, Shizuoka 411-8540, Japan           
-(E-mail:mishima@supernig.nig.ac.jp, Tel:81-55-981-6853,            Fax:81-55-981-6849)</pre><p></p></dd></dl><br>本改訂後は，下記の２つの表示形式の何れかを選択することになります。<br><dl><dd><br><span class="icon_d-triangle">Type 1: 一般的には，E-mailアドレスと電話番号，FAX番号を非表示とします。</span><pre class="highlight">JOURNAL   Submitted (30-NOV-2000) to the DDBJ/EMBL/GenBank databases.            
+(E-mail:mishima@supernig.nig.ac.jp, Tel:81-55-981-6853,            Fax:81-55-981-6849)</code></pre><p></p></dd></dl><br>本改訂後は，下記の２つの表示形式の何れかを選択することになります。<br><dl><dd><br><span class="icon_d-triangle">Type 1: 一般的には，E-mailアドレスと電話番号，FAX番号を非表示とします。</span><pre class="highlight"><code>JOURNAL   Submitted (30-NOV-2000) to the DDBJ/EMBL/GenBank databases.            
 Contact:Hanako Mishima            National Institute of Genetics, DNA Data Bank of Japan; 
-Yata 1111,            Mishima, Shizuoka 411-8540, Japan</pre><dl> <br><span class="icon_d-triangle">Type 2: 登録者が，E-mailアドレスと電話番号，FAX番号の表示をご希望の場合，以下の形式で表示します。</span><pre class="highlight">JOURNAL   Submitted (30-NOV-2000) to the DDBJ/EMBL/GenBank databases.            
+Yata 1111,            Mishima, Shizuoka 411-8540, Japan</code></pre><dl> <br><span class="icon_d-triangle">Type 2: 登録者が，E-mailアドレスと電話番号，FAX番号の表示をご希望の場合，以下の形式で表示します。</span><pre class="highlight"><code>JOURNAL   Submitted (30-NOV-2000) to the DDBJ/EMBL/GenBank databases.            
 Contact:Hanako Mishima            National Institute of Genetics, DNA Data Bank of Japan; 
 Yata 1111,            Mishima, Shizuoka 411-8540, Japan            E-mail :mishima@supernig.nig.ac.jp            
-Phone  :81-55-981-6853            Fax    :81-55-981-6849</pre><p></p></dl><br><span class="icon_d-triangle"> DDBJ への既登録分に関しましては，原則，一括で上記のType 1の様に非表示としますが，表示しておく必要がある場合は， <img src="{{ site.baseurl }}/assets/images/news/ad_update.gif" align="top" alt="ddbjupdt#&amp;64;ddbj.nig.ac.jp"> にご連絡いただければ，個別に対応いたします。表示・非表示は「E-mailアドレス」「電話番号」「FAX番号」それぞれ個別に指定可能です。</span></dd></dl></div>
+Phone  :81-55-981-6853            Fax    :81-55-981-6849</code></pre><p></p></dl><br><span class="icon_d-triangle"> DDBJ への既登録分に関しましては，原則，一括で上記のType 1の様に非表示としますが，表示しておく必要がある場合は， <img src="{{ site.baseurl }}/assets/images/news/ad_update.gif" align="top" alt="ddbjupdt#&amp;64;ddbj.nig.ac.jp"> にご連絡いただければ，個別に対応いたします。表示・非表示は「E-mailアドレス」「電話番号」「FAX番号」それぞれ個別に指定可能です。</span></dd></dl></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -539,11 +539,11 @@ Phone  :81-55-981-6853            Fax    :81-55-981-6849</pre><p></p></dl><br><s
 <div class="news_post_list">
   <h2 class="news_title" id="wn070611_2"><a href="#wn070611_2">相同性検索システムの機能更新</a></h2>
   <div class="news_date">2007年06月11日</div>
-  <div class="news_content">DDBJ では， <a href="/searches.html">WWW</a> と <a href="/search/email_exp-j.html">E-mail</a>で提供している相同性検索サービス FASTA， BLAST，PSI-BLAST，SSEARCH，HMMPFAM のシステム更新を5月15日に行ないました。 その結果，新機能の追加や表記の変更がありました。詳細は以下の通りです。<dl><dt><b>[1] FASTA/SSEARCH/PSI-BLAST/HMMPFAMでの複数クエリ受付機能の追加</b></dt><dd>これまでは，BLAST のみ複数クエリの受付が可能でしたが，FASTA，PSI-BLAST，SSEARCH，HMMPFAM にも複数クエリ受付機能を追加しました。<p><b>[2] HMMPFAM 結果へのエントリ表示機能の付加</b><br></p><ul><br><li>HMMPFAM の検索結果に Pfam エントリへの表示リンクを追加しました<br></li><li>seq-fに各アラインメントへのリンクを追加しました<br></li></ul><br><small><pre class="highlight">=============================================================
+  <div class="news_content">DDBJ では， <a href="/searches.html">WWW</a> と <a href="/search/email_exp-j.html">E-mail</a>で提供している相同性検索サービス FASTA， BLAST，PSI-BLAST，SSEARCH，HMMPFAM のシステム更新を5月15日に行ないました。 その結果，新機能の追加や表記の変更がありました。詳細は以下の通りです。<dl><dt><b>[1] FASTA/SSEARCH/PSI-BLAST/HMMPFAMでの複数クエリ受付機能の追加</b></dt><dd>これまでは，BLAST のみ複数クエリの受付が可能でしたが，FASTA，PSI-BLAST，SSEARCH，HMMPFAM にも複数クエリ受付機能を追加しました。<p><b>[2] HMMPFAM 結果へのエントリ表示機能の付加</b><br></p><ul><br><li>HMMPFAM の検索結果に Pfam エントリへの表示リンクを追加しました<br></li><li>seq-fに各アラインメントへのリンクを追加しました<br></li></ul><br><small><pre class="highlight"><code>=============================================================
 ==========Parsed for domains:Model      Domain  seq-f seq-t   
 hmm-f hmm-t     score  E-value--------   ------- ----- -----   
 ----- -----     -----  -------PF00310.11  1/1       2   264 ..    
-1   394 []   203.6  4.3e-58    </pre></small></dd><dt><b>[3] FASTA/SSEARCH で使用されるプログラム名の統一</b></dt><dd>これまで，FASTA/SSEARCH で用いられているプログラム名が不揃いで，たとえば，fastx と fastx34_t の2つの表記が混在していました。これをバージョンを含まない表記に統一しました。バージョン番号はトップページ画面のサービス名のロゴ部分に表示します。</dd><dt><b>[4] FASTA E-mail サービスの program パラメータの変更</b></dt><dd>program パラメータをバージョン表記なしに統一しました（[3]の方針と合わせる為）。当面は，どちらの表記でも実行可能です。<br><ul><li>修正前<br> program パラメータとして fasta3_t，fastx3_t，tfasta3_t，tfastx3_t が指定可能<br></li><li>修正後<br>  program パラメータとして fasta， fastx， tfasta， tfastx が指定可能。<br></li></ul></dd><dt><b>[5] 結果返却 E-mail の文面変更</b></dt><dd>全サービスで統一しました。</dd><dt><b>[6] "In HTML format" オプションを "HTML format" 表記に統一しました</b></dt><dd>結果受け取り方法に E-mail を選択し，HTML format をチェックしなかった場合は，メール本文中にtext 形式で結果が届きます。<br>どうぞご利用ください。</dd></dl></div>
+1   394 []   203.6  4.3e-58    </code></pre></small></dd><dt><b>[3] FASTA/SSEARCH で使用されるプログラム名の統一</b></dt><dd>これまで，FASTA/SSEARCH で用いられているプログラム名が不揃いで，たとえば，fastx と fastx34_t の2つの表記が混在していました。これをバージョンを含まない表記に統一しました。バージョン番号はトップページ画面のサービス名のロゴ部分に表示します。</dd><dt><b>[4] FASTA E-mail サービスの program パラメータの変更</b></dt><dd>program パラメータをバージョン表記なしに統一しました（[3]の方針と合わせる為）。当面は，どちらの表記でも実行可能です。<br><ul><li>修正前<br> program パラメータとして fasta3_t，fastx3_t，tfasta3_t，tfastx3_t が指定可能<br></li><li>修正後<br>  program パラメータとして fasta， fastx， tfasta， tfastx が指定可能。<br></li></ul></dd><dt><b>[5] 結果返却 E-mail の文面変更</b></dt><dd>全サービスで統一しました。</dd><dt><b>[6] "In HTML format" オプションを "HTML format" 表記に統一しました</b></dt><dd>結果受け取り方法に E-mail を選択し，HTML format をチェックしなかった場合は，メール本文中にtext 形式で結果が届きます。<br>どうぞご利用ください。</dd></dl></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -844,14 +844,14 @@ hmm-f hmm-t     score  E-value--------   ------- ----- -----
 <b>・期間：</b> </br>2007年2月27日から3月17日11時頃まで<br>（現在，検索用データベースの再構築を行っており，明日11時頃完了予定)</br>
 <b>・不具合の内容：</b></br>検索結果の表示で，本来アクセッション番号が表示されるはずが LOCUS 名が表示されるためにリンクエラーとなる（下記例参照）<br>既に検索が終了したものは，Result Viewer で確認する際にもリンクエラーとなります<br>
 <b>・検索結果：</b><br>検索結果に間違いはありません<br>
-<pre class="highlight">---------------------------------------------------------------------                                                                 
+<pre class="highlight"><code>---------------------------------------------------------------------                                                                 
 Score    ESequences producing significant alignments:                      
 (bits) ValueAAU58946|U58946.1 Aspergillus awamori transposable element Tan1,...   3979  0.0      
 ↑LOCUS名が表示されるため、リンクエラーとなる
 AM270150|AM270150.1 Aspergillus niger contig An07c0330, complete...   3866  0.0  
 AM270394|AM270394.1 Aspergillus niger contig An18c0010, complete...    517  
 e-143AM270353|AM270353.1 Aspergillus niger contig An16c0010, complete...    517  
-e-143---------------------------------------------------------------------</pre><br>
+e-143---------------------------------------------------------------------</code></pre><br>
 <b>・対応：</b><br>検索用データベースの再構築を行います<br>（作業終了は3月17日（土）11時頃の予定）</p><p>ユーザの皆様にとって不便な状況が続いていたことにより，ご迷惑 お掛けいたしましたことを深くお詫び申し上げると共に，今後このような事態が発生することのないよう最大限の努力をいたします。</p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
@@ -1082,13 +1082,13 @@ e-143---------------------------------------------------------------------</pre>
   <h2 class="news_title" id="wn070116_2"><a href="#wn070116_2">ClustalW DOTSINOUTPUT オプションご利用のお知らせ</a></h2>
   <div class="news_date">2007年01月16日</div>
   <div class="news_content">DDBJ が <a href="http://clustalw.ddbj.nig.ac.jp/top-j.html">WWW</a> と <a href="/search/explain/clustalw%5Cexp-j.html">E-mail</a> で提供している ClustalW のアライメント結果をドットで出力する（以下出力例）DOTSINOUTPUT オプションが利用可能になりました。DOTSINOUTPUT オプションは，ALIGN の解析のみ利用可能で，DOTSINOUTPUT オプションを ON にした場合は TREE や BOOTSTRAP 解析は実行できません。<br><b>CLUSTAL W (1.83) multiple sequence alignment</b>
-<pre class="highlight"> query      MDMEIEDSSPIDDLKLQKLDTNVYFGPCEILTQPILLQYENIKFIIGVNLSTEK P39728-1   
+<pre class="highlight"><code> query      MDMEIEDSSPIDDLKLQKLDTNVYFGPCEILTQPILLQYENIKFIIGVNLSTEK P39728-1   
 ...................................................... Q759A6-1   -------
 M.Q.QP.Q.SA..F...LNT.S.AEFIESK..R.F.SIGIPIQ.VVE Q6FV15-1   -------------
 .Q..S.IF..SLAT..E.HT..QR..R.F...GI.NHVF.N Q12182-1   -------------
 .R..NHIF..SVHS..HTDF.VEN..R.F.N.D....L.SH Q6CIX1-1   -------
 LNQM.P.Q.SN..F...LNT.S.YDF.SKND...F.S.GIPV.R---                             
-*:*. :::**.   *:.   :  .:*:*:*.:.:. .       </pre></div>
+*:*. :::**.   *:.   :  .:*:*:*.:.:. .       </code></pre></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>

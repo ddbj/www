@@ -9,7 +9,7 @@ lang: en
 All published materials are available at [Google
 Drive](https://drive.google.com/drive/u/2/folders/1Q9-RtK-maEp7HsYq0i9k-MxOTSldMr7G).
 
-## News
+## News <a name="news"></a>
 
 |                                       |                                       |                                       |                                       |                                       |
 | ------------------------------------- | ------------------------------------- | ------------------------------------- | ------------------------------------- | ------------------------------------- |
@@ -18,7 +18,7 @@ Drive](https://drive.google.com/drive/u/2/folders/1Q9-RtK-maEp7HsYq0i9k-MxOTSldM
 | [2008](/archives/en/news-2008-e.html) | [2009](/archives/en/news-2009-e.html) | [2010](/archives/en/news-2010-e.html) | [2011](/archives/en/news-2011-e.html) | [2012](/archives/en/news-2012-e.html) |
 | [2013](/archives/en/news-2013-e.html) | [2014](/archives/en/news-2014-e.html) | [2015](/archives/en/news-2015-e.html) | [2016](/archives/en/news-2016-e.html) |                                       |
 
-## DDBJ Mail Magazine
+## DDBJ Mail Magazine <a name="mag"></a>
 
 |                                                                                               |                                                                                                |                                                                                             |                                                                                             |
 | --------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
@@ -34,7 +34,7 @@ Drive](https://drive.google.com/drive/u/2/folders/1Q9-RtK-maEp7HsYq0i9k-MxOTSldM
 | [No.26](https://drive.google.com/file/d/1aeO1C2vWsgYB2uBnf_Nvuj4HCbNB2Xw7) (Jun.22,2006)      | [No.25](https://drive.google.com/file/d/1YqT4qC_C00uP4dsyjghyxD8B4dm6kfdq) (Apr.18,2006)       | [No.24](https://drive.google.com/file/d/1huW9yHQl2z40IccOziAl_zHsOVoCi1GR) (Mar.3,2006)     | [No.23](https://drive.google.com/file/d/1UOy-o55d9aCIWJd37_a1D1utHeoVFZeb) (Dec.19,2005)    |
 | [No.22](https://drive.google.com/file/d/1VHICY3ErWqD2J-ti6fLl9EbOaFzs3K_d) (Nov.15,2005)      | [No.21](https://drive.google.com/file/d/1m2vPwya-p0aKNtN3gdNTbZFEL_pWURNX) (Oct.31,2005)       |                                                                                             |                                                                                             |
 
-## DDBJ/CIB Report
+## DDBJ/CIB Report <a name="ddbjcib"></a>
 
 |                                                                                 |                                                                                 |                                                                                 |                                                                                 |                                                                                 |                                                                                 |
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |

@@ -6,7 +6,7 @@ category: tentative
 lang: ja
 ---
 
-## 所在地・連絡先
+## 所在地・連絡先 <a name="ddbj-location"></a>
 
 {::options parse_block_html="true" /}
 <address>
@@ -27,7 +27,7 @@ TEL : 055-981-6853
 
 お問い合わせは [フォーム]({{ site.baseurl }}/home/contact.html) をご利用ください。
 
-## 遺伝研構内の地図
+## 遺伝研構内の地図 <a name="cibmap"></a>
 
 ![]({{ site.baseurl }}/assets/images/center/cibmap.png)
 

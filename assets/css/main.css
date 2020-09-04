@@ -311,6 +311,10 @@ input, textarea, select, button {
         .internal-link > ul li a:hover {
           color: #FF7300;
           text-decoration: underline; }
+        .internal-link > ul li a span {
+          font-size: 1.1rem;
+          font-weight: normal;
+          margin-left: 1rem; }
 
 .list-view > .listtitle {
   background: #1C1B19;
@@ -341,7 +345,7 @@ input, textarea, select, button {
     overflow: auto; }
   .md-content a[href^="http"]:after, .md-content a[href^="//"]:after {
     content: '';
-    background-image: url(/www/assets/images/parts/external_link.jpeg);
+    background-image: url(../images/parts/external_link.png);
     background-repeat: no-repeat;
     width: 1.6rem;
     height: 1.6rem;
@@ -363,6 +367,8 @@ input, textarea, select, button {
     width: 25rem; }
   .md-content .w300 {
     width: 30rem; }
+  .md-content .w320 {
+    width: 32rem; }
   .md-content .w400 {
     width: 40rem; }
   .md-content .w450 {
@@ -373,6 +379,8 @@ input, textarea, select, button {
     width: 55rem; }
   .md-content .w600 {
     width: 60rem; }
+  .md-content .w630 {
+    width: 63rem; }
   .md-content .w650 {
     width: 65rem; }
   .md-content .pdf {
@@ -932,7 +940,9 @@ input, textarea, select, button {
         margin-left: auto;
         padding-bottom: 2rem;
         width: 23rem;
+        height: 93rem;
         position: sticky;
+        overflow: scroll;
         top: 0; }
     #NavigationAndMainView > .inner > .mainview {
       width: calc( (100vw - 128rem) + (128rem - 23rem)); }

@@ -3,6 +3,33 @@ layout: indexed_content
 title: Pipeline
 category: services
 lang: ja
+related_pages:
+  - title: ARSA ヘルプ
+    url: /arsa-help.html
+  - title: BLAST ヘルプ
+    url: /blast-help.html
+  - title: getentry ヘルプ
+    url: /getentry-help.html
+  - title: VecScreen ヘルプ
+    url: /vecscreen-help.html
+  - title: ClustalW ヘルプ
+    url: /clustalw-help.html
+  - title: TXSearch ヘルプ
+    url: /txsearch-help.html
+  - title: 過去のサービス
+    url: /past-services.html
+  - title: 関連論文
+    url: /references.html
+  - title: WABI (Web API for Biology)
+    url: /wabi.html
+  - title: WABI BLAST ヘルプ
+    url: /wabi_blast-help.html
+  - title: WABI ClustalW ヘルプ
+    url: /wabi_clustalw-help.html
+  - title: WABI VecScreen ヘルプ
+    url: /wabi_vecscreen-help.html
+  - title: WABI MAFFT ヘルプ
+    url: /wabi_mafft-help.html
 ---
 
 ## Basic Analysis(Preprocessing/Mapping/*de novo* Assembly)

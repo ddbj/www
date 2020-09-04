@@ -3,6 +3,13 @@ layout: indexed_content
 title: データ公開原則
 category: services
 lang: ja
+related_pages:
+  - title: 登録データ種別
+    url: /data-categories.html
+  - title: 国際塩基配列データベースのアクセッション番号
+    url: /acc_def.html
+  - title: Prefix Letter List
+    url: /prefix.html
 ---
 
 ### 「データ公開」を行う時期

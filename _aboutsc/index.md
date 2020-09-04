@@ -1,24 +1,12 @@
 ---
-layout: 未定
+layout: indexed_content
+title: Home
 pathname: index
 category: aboutsc
 lang: ja
 ---
 
-<div id="primary">
-
-<div id="page_main">
-
-<div id="content_part">
+## NIG SuperComputer
 
 NIG SuperComputer
 
-</div>
-
-<div id="news_part">
-
-</div>
-
-</div>
-
-</div>

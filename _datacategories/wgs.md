@@ -4,6 +4,33 @@ title: WGS
 pathname: wgs
 category: datacategories
 lang: ja
+related_pages:
+  - title: Genome Project のデータ登録
+    url: /ddbj/genome.html
+  - title: WGS
+    url: /ddbj/wgs.html
+  - title: CON
+    url: /ddbj/con.html
+  - title: GSS
+    url: /ddbj/gss.html
+  - title: HTG
+    url: /ddbj/htg.html
+  - title: Environmental sequence の登録
+    url: /ddbj/environmental.html
+  - title: ENV
+    url: /ddbj/env.html
+  - title: TLS
+    url: /ddbj/tls.html
+  - title: Transcriptome Project のデータ登録
+    url: /ddbj/transcriptome.html
+  - title: TSA
+    url: /ddbj/tsa.html
+  - title: EST
+    url: /ddbj/est.html
+  - title: HTC
+    url: /ddbj/htc.html
+  - title: Third Party Data (TPA)
+    url: /ddbj/tpa.html
 ---
 
 様々な生物においてホールゲノムショットガン配列決定法（whole genome shotgun:
@@ -42,7 +69,7 @@ WGSデータの登録は [Mass Submission System (MSS)](/ddbj/mss.html) で受�
   </dd>
 </dl>
 
-## DDBJ フォーマットの例
+## DDBJ フォーマットの例 <a name="flat-file"></a>
 
 WGS エントリの特徴
 
@@ -52,7 +79,7 @@ WGS エントリの特徴
 
 <!-- end list -->
 
-<pre><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">ZZZZ01000001</a>              <a id="SequenceLengthA" href="#SequenceLengthB">123456 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">DNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">HUM</a> <a id="ModificationDateA" href="#ModificationDateB">01-MAY-2003</a>
+<pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">ZZZZ01000001</a>              <a id="SequenceLengthA" href="#SequenceLengthB">123456 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">DNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">HUM</a> <a id="ModificationDateA" href="#ModificationDateB">01-MAY-2003</a>
 <a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Homo sapiens DNA, chromosome 7, A01234B01. 
 <a id="AccessionA" href="#AccessionB">ACCESSION</a>   ZZZZ01000001 ZZZZ01000000
 <a id="VersionA" href="#VersionB">VERSION</a>     ZZZZ01000001.1
@@ -86,4 +113,4 @@ WGS エントリの特徴
                      /<a href="/ddbj/qualifiers.html#submitter_seqid">submitter_seqid</a>="A01234B01"
 
 -- The rest is snipped --
-<a id="EndA" href="#EndB">//</a></pre>
+<a id="EndA" href="#EndB">//</a></code></pre>

@@ -3,6 +3,21 @@ layout: indexed_content
 title: MSS - Mass Submission System
 category: services
 lang: ja
+related_pages:
+  - title: 登録ファイル形式
+    url: /ddbj/file-format.html
+  - title: MSS データファイル用チェックツール
+    url: /ddbj/mss-tool.html
+  - title: UME ユーザーマニュアル
+    url: /ddbj/ume.html
+  - title: Parser ユーザーマニュアル
+    url: /ddbj/parser.html
+  - title: transChecker ユーザーマニュアル
+    url: /ddbj/transchecker.html
+  - title: validator エラーメッセージ
+    url: /ddbj/validator.html
+  - title: MSS 利用申し込み
+    url: /ddbj/mass-form.html
 ---
 
 <span class="red">ヒトを対象とした研究データの登録について</span>

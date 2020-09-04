@@ -81,12 +81,12 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn031203"><a href="#wn031203">DDBJ フラットファイルフォーマット一部変更</a></h2>
   <div class="news_date">2003年12月03日</div>
-  <div class="news_content"><dd>2003年12月公開予定の DDBJ release 56 より，フラットファイル BASE COUNT 行のフォーマットを変更します*。<br>これは DDBJ/EMBL/GenBank 国際塩基配列データベースが決定した，登録可能な配列長制限（350,000 bp／1エントリ）の撤廃に対応するための変更です。<br>これまで BASE COUNT 行では配列中の acgt および others の数を各６桁で記述していましたが，変更後は acgt の数を９桁分で記述し，others の記述を廃止することになります。<br>変更後のフォーマットは以下の例をご覧下さい。<br>上記制限の撤廃にあたり，GenBank はリリース138（2003年10月）よりフラットファイルから BASE COUNT 行を廃止しました。<br>DDBJ では GC 含有量は配列の性質を総括する情報の１つであり，フラットファイルに載せるべき情報であるという観点から，DDBJ フォーマットのフラットファイルには引き続き BASE COUNT 行を残しています。<br>* 新着データ（daily update）はリリース公開に先だち，12月3日公開データからこの形式で公開します。<br>  <dl><br>  <dd><table border="0"><tr><pre class="highlight">  <b>記述例）現在</b>  1    6   11   16   21   26   31   36   41   46   51   56   61   66   71  
+  <div class="news_content"><dd>2003年12月公開予定の DDBJ release 56 より，フラットファイル BASE COUNT 行のフォーマットを変更します*。<br>これは DDBJ/EMBL/GenBank 国際塩基配列データベースが決定した，登録可能な配列長制限（350,000 bp／1エントリ）の撤廃に対応するための変更です。<br>これまで BASE COUNT 行では配列中の acgt および others の数を各６桁で記述していましたが，変更後は acgt の数を９桁分で記述し，others の記述を廃止することになります。<br>変更後のフォーマットは以下の例をご覧下さい。<br>上記制限の撤廃にあたり，GenBank はリリース138（2003年10月）よりフラットファイルから BASE COUNT 行を廃止しました。<br>DDBJ では GC 含有量は配列の性質を総括する情報の１つであり，フラットファイルに載せるべき情報であるという観点から，DDBJ フォーマットのフラットファイルには引き続き BASE COUNT 行を残しています。<br>* 新着データ（daily update）はリリース公開に先だち，12月3日公開データからこの形式で公開します。<br>  <dl><br>  <dd><table border="0"><tr><pre class="highlight"><code>  <b>記述例）現在</b>  1    6   11   16   21   26   31   36   41   46   51   56   61   66   71  
 |----|----|----|----|----|----|----|----|----|----|----|----|----|----|  
 BASE COUNT   123456 a 123456 c 123456 g 123456 t 123456 others  <b>
 <font class="red">記述例）変更後</font></b>  1    6   11   16   21   26   31   36   41   46   51   56   61   66   71  
 |----|----|----|----|----|----|----|----|----|----|----|----|----|----|  
-BASE COUNT    123456789 a    123456789 c    123456789 g    123456789 t</pre>      </tr>      </table>  </dd></dl>DDBJ フォーマットのフラットファイルについての詳細は，DDBJ ホームページ以下のサイトををご覧下さい。塩基配列登録のための参考資料／<a href="/ddbj/flat-file.html">資料10 DDBJ のデータ公開形式 (flat file) の説明</a>皆様のご理解とご協力をお願い申し上げます。ご質問がありましたら ddbj@ddbj.nig.ac.jp までご連絡下さい。</dd></div>
+BASE COUNT    123456789 a    123456789 c    123456789 g    123456789 t</code></pre>      </tr>      </table>  </dd></dl>DDBJ フォーマットのフラットファイルについての詳細は，DDBJ ホームページ以下のサイトををご覧下さい。塩基配列登録のための参考資料／<a href="/ddbj/flat-file.html">資料10 DDBJ のデータ公開形式 (flat file) の説明</a>皆様のご理解とご協力をお願い申し上げます。ご質問がありましたら ddbj@ddbj.nig.ac.jp までご連絡下さい。</dd></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -735,7 +735,7 @@ BASE COUNT    123456789 a    123456789 c    123456789 g    123456789 t</pre>    
   <h2 class="news_title" id="wn030522"><a href="#wn030522">相同性検索サービス BLAST に機能追加</a></h2>
   <div class="news_date">2003年05月22日</div>
   <div class="news_content">DDBJ が web サーバと E-mail サーバで提供している相同性検索サービス BLASTに複数の配列を一括して検索できる機能を追加しました。以下簡単に web を利用した場合の使用方法を紹介します。どうぞご利用下さい。・BLAST の検索画面にアクセスし，通常通りプログラム・対象データベースなどを選択する・複数の query 配列を multi FASTA 形式で入力またはアップロードする
-<pre class="highlight">例：    
+<pre class="highlight"><code>例：    
 >my query sequence 1    CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGAC
 GTGGAA    GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG 
 GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC    
@@ -744,7 +744,7 @@ TCACATG    CTTCGAGACCTCCGAGATGCCTTCAGCAGAGTGAAGACTTTCTTTCAAATGAAGGATCAG
 CTGGACAACATATTGTTAAAGGAGTCCTTGCTGGAGGACTTTAAG    
 >my query sequence 3    ATGGGTCTCACCTCCCAACTGCTTCCCCCTCTGTTCTTCCTGCTAGCATGTGC
 CGGCAAC    TTTGCCCACGGACACAACTGCCATATCGCCTTACGGGAGATCATCGAAACTCTGAACAGC    
-CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC    </pre><p>・検索結果の受取方法に E-mail を選択し，メールアドレスを入力する(WWW を選択するとエラーメッセージが出ます）<br>・メールで Request ID と検索結果が表示されている URL が返信されます<br>・結果は検索終了後７日間で削除されますのでご注意下さい</p></div>
+CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC    </code></pre><p>・検索結果の受取方法に E-mail を選択し，メールアドレスを入力する(WWW を選択するとエラーメッセージが出ます）<br>・メールで Request ID と検索結果が表示されている URL が返信されます<br>・結果は検索終了後７日間で削除されますのでご注意下さい</p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>

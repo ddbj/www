@@ -4,6 +4,33 @@ title: TPA
 pathname: tpa
 category: datacategories
 lang: ja
+related_pages:
+  - title: Genome Project のデータ登録
+    url: /ddbj/genome.html
+  - title: WGS
+    url: /ddbj/wgs.html
+  - title: CON
+    url: /ddbj/con.html
+  - title: GSS
+    url: /ddbj/gss.html
+  - title: HTG
+    url: /ddbj/htg.html
+  - title: Environmental sequence の登録
+    url: /ddbj/environmental.html
+  - title: ENV
+    url: /ddbj/env.html
+  - title: TLS
+    url: /ddbj/tls.html
+  - title: Transcriptome Project のデータ登録
+    url: /ddbj/transcriptome.html
+  - title: TSA
+    url: /ddbj/tsa.html
+  - title: EST
+    url: /ddbj/est.html
+  - title: HTC
+    url: /ddbj/htc.html
+  - title: Third Party Data (TPA)
+    url: /ddbj/tpa.html
 ---
 
 TPA (Third Party Data) は、DDBJ/ENA/GenBank、[Trace
@@ -90,7 +117,7 @@ TPA とプライマリーエントリの配列アラインメントに関する�
 
 ## TPA フラットファイルの例
 
-<pre><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">BR000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">2000 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="ModificationDateA" href="#ModificationDateB">linear</a>   <a id="DivisionA" href="#DivisionB">HUM</a> <a id="ModificationDateA" href="#ModificationDateB">17-SEP-2006</a>
+<pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">BR000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">2000 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="ModificationDateA" href="#ModificationDateB">linear</a>   <a id="DivisionA" href="#DivisionB">HUM</a> <a id="ModificationDateA" href="#ModificationDateB">17-SEP-2006</a>
 <a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  TPA_exp: Homo sapiens GAPD gene for glyceraldehyde-3-phosphate
             dehydrogenase, complete cds.
 <a id="AccessionA" href="#AccessionB">ACCESSION</a>   BR000000
@@ -138,4 +165,4 @@ TPA とプライマリーエントリの配列アラインメントに関する�
         :
         -- The rest of sequence is omitted --
         :
-<a id="EndA" href="#EndB">//</a></pre>
+<a id="EndA" href="#EndB">//</a></code></pre>

@@ -4,6 +4,33 @@ title: ENV
 pathname: env
 category: datacategories
 lang: ja
+related_pages:
+  - title: Genome Project のデータ登録
+    url: /ddbj/genome.html
+  - title: WGS
+    url: /ddbj/wgs.html
+  - title: CON
+    url: /ddbj/con.html
+  - title: GSS
+    url: /ddbj/gss.html
+  - title: HTG
+    url: /ddbj/htg.html
+  - title: Environmental sequence の登録
+    url: /ddbj/environmental.html
+  - title: ENV
+    url: /ddbj/env.html
+  - title: TLS
+    url: /ddbj/tls.html
+  - title: Transcriptome Project のデータ登録
+    url: /ddbj/transcriptome.html
+  - title: TSA
+    url: /ddbj/tsa.html
+  - title: EST
+    url: /ddbj/est.html
+  - title: HTC
+    url: /ddbj/htc.html
+  - title: Third Party Data (TPA)
+    url: /ddbj/tpa.html
 ---
 
 DDBJ/ENA/GenBank の ENV division は 環境サンプル (environmental sample) 由来の配列と
@@ -35,7 +62,7 @@ phytoplasmas といった対象は環境サンプルとは扱いません。
     [isolate](/ddbj/qualifiers.html#isolate) qualifier に識別子の記載が必要です。
   - [strain](/ddbj/qualifiers.html#strain) qualifier を記載することはできません。
 
-## DDBJ フォーマットの例
+## DDBJ フォーマットの例 <a name="flat-file"></a>
 
 環境サンプル(ENV)の特徴
 
@@ -46,7 +73,7 @@ phytoplasmas といった対象は環境サンプルとは扱いません。
 
 <!-- end list -->
 
-<pre><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">AB000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">450 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">ENV</a> <a id="ModificationDateA" href="#ModificationDateB">16-DEC-2012</a>
+<pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">AB000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">450 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">ENV</a> <a id="ModificationDateA" href="#ModificationDateB">16-DEC-2012</a>
 <a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Uncultured Acetobacter sp. gene for 16S ribosomal RNA, partial
             sequence, clone: M12-34.
 <a id="AccessionA" href="#AccessionB">ACCESSION</a>   AB000000
@@ -85,4 +112,4 @@ phytoplasmas といった対象は環境サンプルとは扱いません。
         :
         -- The rest of nucleotide sequence is omitted --
         :
-<a id="EndA" href="#EndB">//</a></pre>
+<a id="EndA" href="#EndB">//</a></code></pre>

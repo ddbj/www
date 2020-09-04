@@ -4,13 +4,38 @@ title: DDBJ の塩基配列解析ツールについて
 pathname: ddbjpipeline
 category: _activities
 lang: ja
+related_pages:
+  - title: DDBJ スタッフの論文 (1996-2008)
+    url: /activities/past-papers.html
+  - title: DDBJ スタッフの講演発表（2001-2006）
+    url: /activities/past-presentations.html
+  - title: 相同性検索プログラムBLASTの内部構造
+    url: /column/blast_doc.html
+  - title: DDBJ アノテータの業務紹介
+    url: /column/annotator.html
+  - title: 「ユーザーの皆様へ，お願いです！」
+    url: /column/request.html
+  - title: DDBJ での特許関連配列データの公開業務の紹介
+    url: /column/patent.html
+  - title: DDBJ スタッフコラム
+    url: /column/staffcolumn.html
+  - title: 遺伝子とゲノム
+    url: /column/genegenome.html
+  - title: 進化ゲノム学とは
+    url: /column/introevog.html
+  - title: FASTAとBLASTについて
+    url: /column/homology_doc.html
+  - title: DDBJ Mail Magazine
+    url: /subscribe.html
+  - title: DDBJ データ解析チャレンジ
+    url: /activities/ddbj-challenge.html
 ---
 
 DDBJ の塩基配列解析ツール「DDBJ Read Annotation Pipeline」ついて，「DDBJ Read Annotation Pipeline」開発担当者 が DDBJ Mail Magazine に連載したコラムをまとめました。
 
 連載期間：No.64（2011年9月29日発行），No.65（2011年10月27日発行）※最新の情報とは内容が異なる場合がありますのでご注意下さい。
 
-## DDBJ の塩基配列解析ツールについて(前編)
+## DDBJ の塩基配列解析ツールについて(前編) <a name="1"></a>
 
 {:.text-align-end}
 国立遺伝学研究所　大量遺伝情報研究室　長崎英樹
@@ -23,7 +48,7 @@ Sequence Read Archive (DRA)](/dra/index.html) のアカウントで利用可能�
 
 {% include image.html url="ddbj/column_19.jpg" caption="図1：DDBJ パイプライン トップページ([http://p.ddbj.nig.ac.jp/])" %}
 
-## DDBJ の塩基配列解析ツールについて（後編）
+## DDBJ の塩基配列解析ツールについて（後編） <a name="2"></a>
 
 {:.text-align-end}
 国立遺伝学研究所　大量遺伝情報研究室　長崎英樹

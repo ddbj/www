@@ -4,11 +4,32 @@ title: 配列の記載に用いる略号
 pathname: code
 category: flatfile
 lang: ja
+related_pages:
+  - title: The Genetic Codes
+    url: /ddbj/geneticcode.html
+  - title: The Genetic Codes
+    url: /ddbj/codontable.html
+  - title: DDBJ 公開形式 (Flat file)
+    url: /ddbj/flat-file.html
+  - title: Feature key
+    url: /ddbj/features.html
+  - title: Qualifier key
+    url: /ddbj/qualifiers.html
+  - title: Organism qualifier に記載する生物名
+    url: /ddbj/organism.html
+  - title: Location の記述法
+    url: /ddbj/location.html
+  - title: タンパク質コード配列; CDS feature について
+    url: /ddbj/cds.html
+  - title: The Genetic Codes
+    url: /ddbj/geneticcode-e.html
+  - title: 登録の見本
+    url: /ddbj/example.html
 ---
 
-## 塩基
+## 塩基 <a name="nucleotide"></a>
 
-### Nucleotide Base Codes
+### Nucleotide Base Codes <a name="nucleotide-1"></a>
 
 国際塩基配列データベースで使用する核酸コードは以下の通りです。  
 全て小文字を使用します。大文字で登録された場合には、自動的に小文字に変換されます。
@@ -36,17 +57,18 @@ lang: ja
   - Cornish-Bowden, A. Nucl Acid Res 13, 3021-3030 (1985)
   - [Feature Table Definition](/ddbj/full_index.html): [7.4.1 Nucleotide base codes (IUPAC)](/ddbj/full_index.html#7.4.1)
 
-### Modified Base Abbreviations
+### Modified Base Abbreviations <a name="nucleotide-2"></a>
 
 修飾塩基は、以下の例のように modified base を用いて記載します。
 
 例
 
-<pre>
+<pre><code>
       FEATURES             Location/Qualifiers
            <a href="/ddbj/features.html#modified_base">modified_base</a>   15
                            <a href="/ddbj/qualifiers.html#mod_base">/mod_base</a>="m2g"
-      </pre>
+    </code>
+</pre>
 <br>
 
 | 省略形      | 修飾塩基                                                                 |
@@ -109,9 +131,9 @@ lang: ja
   - [Feature Table Definition](/ddbj/full_index.html): [7.4.2 Modified
     base abbreviations](/ddbj/full_index.html#7.4.2)
 
-## アミノ酸
+## アミノ酸 <a name="amino"></a>
 
-### Amino Acid Codes<a name="amino-1"></a>
+### Amino Acid Codes<a name="amino-1"></a> 
 
 国際塩基配列データベースで使用するアミノ酸コードは以下の通りです。  
 [CDS feature](/ddbj/cds.html) の [/translation](/ddbj/qualifiers.html#translation) には以下の一文字表記で表されます。   
@@ -153,7 +175,7 @@ lang: ja
   - IUPAC-IUB Joint Commission on Biochemical Nomenclature.Nomenclature and Symbolism for Amino Acids and Peptides. Eur. J. Biochem. 138: 9-37 (1984).
   - [Feature Table Definition](/ddbj/full_index.html): [7.4.3 Amino acid abbreviations](/ddbj/full_index.html#7.4.3)
 
-### Modified and Unusual Amino Acids<a name="amino-2"></a>
+### Modified and Unusual Amino Acids<a name="amino-2"></a> 
 
 [Amino Acid Codes](#amino-1) にないアミノ酸を記載する場合には以下の省略形を使用します。  
 [CDS feature](/ddbj/cds.html) の [/translation](/ddbj/qualifiers.html#translation) にはいずれも "X" で表されます。

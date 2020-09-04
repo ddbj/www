@@ -6,7 +6,7 @@ category: tentative
 lang: en
 ---
 
-## General Announcements
+## General Announcements <a name="general"></a>
 
 Latest news from DDBJ center and announcements regarding major changes
 and updates to DDBJ resources and tools.
@@ -15,7 +15,7 @@ and updates to DDBJ resources and tools.
 [![\*]({{ site.baseurl }}/assets/images/parts/rss.png)Subscribe](/rss/news-center-en.xml)
 | [Archive](/news/en/index-e.html)
 
-## Database Resources
+## Database Resources <a name="database"></a>
 
 ### Nucleotide Sequence Database
 

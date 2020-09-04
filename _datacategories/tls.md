@@ -4,6 +4,33 @@ title: TLS
 pathname: tls
 category: datacategories
 lang: ja
+related_pages:
+  - title: Genome Project のデータ登録
+    url: /ddbj/genome.html
+  - title: WGS
+    url: /ddbj/wgs.html
+  - title: CON
+    url: /ddbj/con.html
+  - title: GSS
+    url: /ddbj/gss.html
+  - title: HTG
+    url: /ddbj/htg.html
+  - title: Environmental sequence の登録
+    url: /ddbj/environmental.html
+  - title: ENV
+    url: /ddbj/env.html
+  - title: TLS
+    url: /ddbj/tls.html
+  - title: Transcriptome Project のデータ登録
+    url: /ddbj/transcriptome.html
+  - title: TSA
+    url: /ddbj/tsa.html
+  - title: EST
+    url: /ddbj/est.html
+  - title: HTC
+    url: /ddbj/htc.html
+  - title: Third Party Data (TPA)
+    url: /ddbj/tpa.html
 ---
 
 2016年から INSDC では 16S rRNA または、他の特定 locus を標的とした配列で構成され、主として operational
@@ -27,7 +54,7 @@ TLS 登録における注意事項
     に登録されていることが推奨されます。
   - 登録前に low quality reads, chimeric sequences の除去を行っておいてください。
 
-## DDBJ フォーマットの例
+## DDBJ フォーマットの例 <a name="flat-file"></a>
 
 TLS エントリの特徴
 
@@ -38,7 +65,7 @@ TLS エントリの特徴
 
 <!-- end list -->
 
-<pre><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">TZZZ01000001</a>             <a id="SequenceLengthA" href="#SequenceLengthB">800 bp</a>   <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>     <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">TLS</a> <a id="ModificationDateA" href="#ModificationDateB">15-NOV-2017</a>
+<pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">TZZZ01000001</a>             <a id="SequenceLengthA" href="#SequenceLengthB">800 bp</a>   <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>     <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">TLS</a> <a id="ModificationDateA" href="#ModificationDateB">15-NOV-2017</a>
 <a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  TLS: Uncultured bacterium OTU:MS213 gene for 16S ribosomal RNA, 
             partial sequence.
 <a id="AccessionA" href="#AccessionB">ACCESSION</a>   TZZZ01000001
@@ -84,4 +111,4 @@ TLS エントリの特徴
         :
         -- The rest of nucleotide sequence is omitted --
         :
-<a id="EndA" href="#EndB">//</a> </pre>
+<a id="EndA" href="#EndB">//</a></code></pre>

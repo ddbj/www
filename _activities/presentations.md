@@ -10,7 +10,7 @@ lang: ja
 
 <div id="pub-list">
 
-## 2019
+## 2019 <a name="2019"></a>
 
   - <span class="title">ゲノム科学＋DDBJ入門</span>
     <span class="authors">中村　保一</span>
@@ -58,7 +58,7 @@ lang: ja
     <span class="authors">青野 英雄</span>
     <span class="pub-info">[All-in-one 合同講習会 2018／統合データベース講習会：AJACS 番町２](/training/archives.html#a-2018) 2019年1月29日 </span>
 
-## 2018
+## 2018 <a name="2018"></a>
 
   - <span class="title">DDBJ センターにおけるデータベースサービスのこれまでとこれから</span>
     <span class="authors">児玉　悠一</span>
@@ -103,7 +103,7 @@ lang: ja
     <span class="authors">児玉　悠一</span>
     <span class="pub-info">[統合データベース講習会：AJACS浜松](https://events.biosciencedbc.jp/training/ajacs68) 2018年1月17日</span>
 
-## 2017
+## 2017 <a name="2017"></a>
 
   - <span class="title">MarpolDB \_ marchantia.info; a genome DB for the Liverwort</span> 
   <span class="authors">中村 保一</span>
@@ -147,7 +147,7 @@ lang: ja
   <span class="authors">児玉 悠一</span> 
   <span class="pub-info">静岡県立大学 食品栄養科学部 学部講義 2017年1月24日</span>
 
-## 2016
+## 2016 <a name="2016"></a>
 
   - <span class="title">DDBJデータ解析チャレンジ報告：機械学習コンペティションのタスク設計とルール設定</span>
     <span class="authors">神沼英里, 馬場雪乃, 望月正弘, 松本拡高, 尾崎遼, 岡山利次, 加藤卓也, 沖真弥, 小笠原理, 鹿島久嗣, 高木利久</span>
@@ -164,7 +164,7 @@ lang: ja
     <span class="authors">児玉 悠一, 真島 淳, 神沼 英里, 小笠原 理, 大久保 公策, 中村 保一, 高木 利久</span> 
     <span class="pub-info">[The Plant and Animal Genome XXIV Conference (PAG)](https://pag.confex.com/pag/xxiv/webprogram/Paper21911.html) 2016年1月10日</span>
 
-## 2015
+## 2015 <a name="2015"></a>
 
   - <span class="title">次世代シークエンスデータの登録</span> 
   <span class="authors">児玉 悠一</span> 
@@ -200,7 +200,7 @@ lang: ja
     <span class="authors">小笠原 理</span>
     <span class="pub-info">[平成26年度第2回学術情報基盤オープンフォーラム](//www.nii.ac.jp/service/openforum/archives/2014/forum_2/) 2015年2月3日</span>
 
-## 2014
+## 2014 <a name="2014"></a>
 
   - <span class="title">INSDC・DDBJ の MIxS に関するとりくみと活用</span>
     <span class="authors">中村 保一</span> 
@@ -231,7 +231,7 @@ lang: ja
     <span class="authors">神沼 英里</span>
     <span class="pub-info">[第125回日本育種学会講演会「NGS 使い倒し講座 - Breeding Informatics 研究 XII」](//www.nacos.com/jsb/06/06PDF/125program.pdf) 2014年3月22日</span>
 
-## 2013
+## 2013 <a name="2013"></a>
 
   - <span class="title">次世代シーケンサによる研究のこれからとそれを支えるインフラ／技術／制度</span>
     <span class="authors">児玉 悠一, 仲里 猛</span>
@@ -268,7 +268,7 @@ lang: ja
     <span class="authors">中村 保一</span>
     <span class="pub-info">[統合データベース講習会：AJACS駿河](https://events.biosciencedbc.jp/training/ajacs36) 2013年1月13日</span>
 
-## 2012
+## 2012 <a name="2012"></a>
 
   - <span class="title">DDBJパイプラインによるゼニゴケゲノム解析とゲノムアノテーションデータベースの構築</span>
     <span class="authors">長崎 英樹, 藤澤 貴智, 望月 孝子, 猿橋 智, 神沼 英里, 石崎 公庸, 大和 勝幸, 河内 孝之, 中村 保一</span>
@@ -319,7 +319,7 @@ lang: ja
     <span class="authors">長崎 英樹, 望月 孝子, 神沼 英里, 児玉 悠一, 猿橋 智, 高木 利久, 大久保 公策, 中村 保一</span> 
     <span class="pub-info">The International Plant & Animal Genome XX Conference 2012年1月14日</span>
 
-## 2011
+## 2011 <a name="2011"></a>
 
   - <span class="title">日本DNAデータバンク(DDBJ)での新規電算機システムによる超並列型シーケンサ由来の大規模塩基配列情報解析支援の試み</span>
     <span class="authors">中村 保一</span>
@@ -370,7 +370,7 @@ lang: ja
   <span class="authors">長崎 英樹, 望月 孝子, 渡邊 成樹, Morizaki, S., 児玉 悠一, 猿橋 智, 高木 利久, 大久保 公策, 神沼 英里, 中村 保一</span>
     <span class="pub-info">Plant and Animal Genome XIX Conference 2011年1月15日</span>
 
-## 2010
+## 2010 <a name="2010"></a>
 
   - <span class="title">DDBJ Read Annotation Pipeline: 新型シーケンサ由来配列のクラウド型パイプライン</span>
     <span class="authors">長崎 英樹, 望月 孝子, 神沼 英里, 渡邊 成樹, 児玉 悠一, 猿橋 智, 菅原 秀明, 高木 利久, 大久保 公策, 中村 保一</span>
@@ -442,7 +442,7 @@ lang: ja
     <span class="authors">児玉 悠一</span>
     <span class="pub-info">[第２回シーケンサー利用技術講習会 イルミナ社 Genome Analyzer（通称Solexa）編](http://www.osc.riken.jp/event/100217/) 2010年2月18日</span>
 
-## 2009
+## 2009 <a name="2009"></a>
 
   - <span class="title">次世代シーケンサーデータのDRA(DDBJ Sequence Read Archive)への登録</span> 
   <span class="authors">児玉 悠一</span>

@@ -208,9 +208,9 @@ Also, the qualifier corresponding to
 [strain](/ddbj/qualifiers-e.html#strain) is required for the source
 feature.
 
-<pre>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Pan troglodytes troglodytes"
+<pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Pan troglodytes troglodytes"
                      /<a href="/ddbj/qualifiers.html#sub_species">sub_species</a>="troglodytes"
-</pre> 
+</code></pre> 
 
 #### microbial genome
 
@@ -221,9 +221,9 @@ scientific name, in principle, even though for microbial genomes.
 Describe a strain name in the [strain](/ddbj/qualifiers-e.html#strain)
 qualifier.
 
-<pre>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Candida albicans"
+<pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Candida albicans"
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="WO-1"
-</pre>  
+</code></pre>  
 
 #### virus
 
@@ -243,14 +243,14 @@ The qualifiers corresponding to
 
 Please describe them with appropriate qualifiers as below example.
 
-<pre>                   /<a href="/ddbj/qualifiers.html#country">country</a>="Japan:Tokyo"
+<pre><code>                  /<a href="/ddbj/qualifiers.html#country">country</a>="Japan:Tokyo"
                    /<a href="/ddbj/qualifiers.html#collection_date">collection_date</a>="2007-11-01"
                    /<a href="/ddbj/qualifiers.html#host">host</a>="Gallus gallus"
                    /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="viral cRNA"
                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Influenza A virus"
                    /<a href="/ddbj/qualifiers.html#serotype">serotype</a>="H7N7"
                    /<a href="/ddbj/qualifiers.html#strain">strain</a>="A/chicken/Tokyo/2007"
-</pre>  
+</code></pre>  
 
 #### hybrid
 
@@ -300,8 +300,8 @@ The qualifiers corresponding to the lower rank such as
 [isolate](/ddbj/qualifiers-e.html#isolate) etc. are required for the
 source feature.
 
-<pre>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp."
-                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</pre>  
+<pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp."
+                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
 In case of whole genomic scale sequences from microorganisms, or in case
 of eukaryote sequences (except unicellular fungi), a strain name or some
@@ -311,8 +311,8 @@ names) that as far as submitters could specify and the lower taxon (in many case
 Also, describe a strain name in the
 [strain](/ddbj/qualifiers-e.html#strain) qualifier.
 
-<pre>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
-                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</pre>  
+<pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
+                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
 #### 2-2. In case of proposing a novel species
 
@@ -339,8 +339,8 @@ Also, the qualifiers corresponding to the lower rank such as
 [strain](/ddbj/qualifiers-e.html#strain) etc. are required for the
 source feature.
 
-<pre>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
-                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</pre>  
+<pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
+                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
 If the name is not available on taxonomy database
 ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en)), please tell us
@@ -388,11 +388,11 @@ is required for source feature. Also,
 other qualifiers should be used to describe the process and conditions
 of sample isolation.
 
-<pre>                     /<a href="/ddbj/qualifiers.html#clone">clone</a>="4-11"
+<pre><code>                    /<a href="/ddbj/qualifiers.html#clone">clone</a>="4-11"
                      /<a href="/ddbj/qualifiers.html#environmental_sample">environmental_sample</a>
                      /<a href="/ddbj/qualifiers.html#isolation_source">isolation_source</a>="PCR-derived sequence from sediment"
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
-                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="uncultured Acetobacter sp."</pre>
+                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="uncultured Acetobacter sp."</code></pre>
 
 If the name is not available on taxonomy database
 ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en)), please tell us

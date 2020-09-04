@@ -4,6 +4,33 @@ title: HTG
 pathname: htg
 category: datacategories
 lang: ja
+related_pages:
+  - title: Genome Project のデータ登録
+    url: /ddbj/genome.html
+  - title: WGS
+    url: /ddbj/wgs.html
+  - title: CON
+    url: /ddbj/con.html
+  - title: GSS
+    url: /ddbj/gss.html
+  - title: HTG
+    url: /ddbj/htg.html
+  - title: Environmental sequence の登録
+    url: /ddbj/environmental.html
+  - title: ENV
+    url: /ddbj/env.html
+  - title: TLS
+    url: /ddbj/tls.html
+  - title: Transcriptome Project のデータ登録
+    url: /ddbj/transcriptome.html
+  - title: TSA
+    url: /ddbj/tsa.html
+  - title: EST
+    url: /ddbj/est.html
+  - title: HTC
+    url: /ddbj/htc.html
+  - title: Third Party Data (TPA)
+    url: /ddbj/tpa.html
 ---
 
 DDBJ/ENA/GenBank の HTG division は finished
@@ -23,7 +50,7 @@ HTG の登録における注意事項
     基本的に HTG division への主な対象はfinished レベルに達していない BAC, YAC, fosmid
     cloneです。
 
-## DDBJ フォーマットの例
+## DDBJ フォーマットの例 <a name="flat-file"></a>
 
 HTG の特徴
 
@@ -48,7 +75,7 @@ HTG の特徴
 
 <!-- end list -->
 
-<pre><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">AP000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">121001 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">DNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">HTG</a> <a id="ModificationDateA" href="#ModificationDateB">15-OCT-2008</a>
+<pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">AP000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">121001 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">DNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">HTG</a> <a id="ModificationDateA" href="#ModificationDateB">15-OCT-2008</a>
 <a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Arabidopsis thaliana DNA, chromosome 1, BAC clone: CIC5D1, ***
             SEQUENCING IN PROGRESS ***, 10 unordered pieces.
 <a id="AccessionA" href="#AccessionB">ACCESSION</a>   AP000000
@@ -105,4 +132,4 @@ HTG の特徴
         :
         -- The rest of nucleotide sequence is omitted --
         :
-<a id="EndA" href="#EndB">//</a></pre>
+<a id="EndA" href="#EndB">//</a></code></pre>

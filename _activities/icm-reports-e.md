@@ -6,7 +6,7 @@ category: _activities
 lang: en
 ---
 
-## 2019
+## 2019 <a name="2019"></a>
 
 <div>
 
@@ -42,7 +42,7 @@ The outcomes of the meeting are summarized below.
     analysis indicates the correspondence between the genome sequence
     and the described species name is suspicious.
 
-#### Discussion Items Related to SRA Data
+#### Discussion Items Related to SRA Data <a name="2019-sra"></a>
 
   - INSDC partners confirmed, in cases of analyses by single-cell
     sequencing or others, we can accept descriptions of a representative
@@ -54,7 +54,7 @@ The outcomes of the meeting are summarized below.
   - Currently, SRA Analysis object is not always shared among INSDC
     members. We discussed how to share SRA Analysis object.
 
-#### Forthcoming changes in The DDBJ/ENA/GenBank Feature Table: Definition
+#### Forthcoming changes in The DDBJ/ENA/GenBank Feature Table: Definition <a name="2018-ft"></a>
 
 Some parts of applied in advance to
 [/gap\_type](/ddbj/qualifiers-e.html#gap_type) and
@@ -95,7 +95,7 @@ revision of [Feature Table Definition](/ddbj/full_index-e.html).
 
 </div>
 
-## 2018
+## 2018 <a name="2018"></a>
 
 <div>
 
@@ -156,7 +156,7 @@ The outcomes of the meeting are summarized below.
     (2017)](//www.nature.com/articles/nbt.3893) about MIMAG and MISAG in
     detail.
 
-#### Forthcoming changes in The DDBJ/ENA/GenBank Feature Table: Definition
+#### Forthcoming changes in The DDBJ/ENA/GenBank Feature Table: Definition <a name="2018-ft"></a>
 
 The following items will be applied after October 2018 with the next
 revision of [Feature Table Definition](/ddbj/full_index-e.html), if not
@@ -207,7 +207,7 @@ otherwise specified.
 
 </div>
 
-## 2017
+## 2017 <a name="2017"></a>
 
 <div>
 
@@ -276,7 +276,7 @@ The outcomes of the meeting are summarized below.
     submissions when the sizes of genome sequences were deviated from
     the closely related species.
 
-#### Forthcoming Changes in The DDBJ/ENA/GenBank Feature Table: Definition
+#### Forthcoming Changes in The DDBJ/ENA/GenBank Feature Table: Definition <a name="2016-ft"></a>
 
 The following items were proposed to be applied for [Feature Table
 Definition](/ddbj/full_index-e.html) from the next revision.
@@ -293,7 +293,7 @@ Definition](/ddbj/full_index-e.html) from the next revision.
 
 </div>
 
-## 2016
+## 2016 <a name="2016"></a>
 
 <div>
 
@@ -338,7 +338,7 @@ The outcomes of the meeting are summarized below.
     [2012](/activities/icm-reports-e.html#2012), we discussed some
     practical issues.
 
-#### Forthcoming Changes in The DDBJ/ENA/GenBank Feature Table: Definition
+#### Forthcoming Changes in The DDBJ/ENA/GenBank Feature Table: Definition <a name="2016-ft"></a>
 
 The following items were proposed to be applied for [Feature Table
 Definition](/ddbj/full_index-e.html) from the next revision or later.
@@ -364,7 +364,7 @@ descriptions of miscellaneous features.
 
 </div>
 
-## 2015
+## 2015 <a name="2015"></a>
 
 <div>
 
@@ -414,7 +414,7 @@ The outcomes of the meeting are summarized below.
     2015)](//standardsingenomics.biomedcentral.com/articles/10.1186/s40793-016-0134-1),
     we discussed how to resolve the problem of misidentified genomes.
 
-#### Forthcoming changes in The DDBJ/EMBL/GenBank Feature Table: Definition
+#### Forthcoming changes in The DDBJ/EMBL/GenBank Feature Table: Definition <a name="2011-ft"></a>
 
 The following items will be applied from October 2015 with the next
 revision of [Feature Table Definition](/ddbj/full_index-e.html), if not
@@ -434,7 +434,7 @@ otherwise specified.
 
 </div>
 
-## 2014
+## 2014 <a name="2014"></a>
 
 <div>
 
@@ -489,7 +489,7 @@ SRA XML schema version 2.0 continues to be discussed for refactoring SRA
 metadata with [BioProject](/bioproject/index-e.html) and
 [BioSample](/biosample/index-e.html) data.
 
-#### Forthcoming changes in The DDBJ/EMBL/GenBank Feature Table: Definition
+#### Forthcoming changes in The DDBJ/EMBL/GenBank Feature Table: Definition <a name="2011-ft"></a>
 
 The following items will be applied from October 2014 with the next
 revision of [Feature Table Definition](/ddbj/full_index-e.html), if not
@@ -517,7 +517,7 @@ otherwise specified.
 
 </div>
 
-## 2013
+## 2013 <a name="2013"></a>
 
 <div>
 
@@ -612,7 +612,7 @@ metadata with [BioProject](/bioproject/index-e.html) and
 We decided to allow SRA accessions to have variable lengths after 6
 digits have been used up, e.g. SRR1000000 would follow SRR999999.
 
-#### Forthcoming changes in the DDBJ/EMBL/GenBank Feature Table: Definition
+#### Forthcoming changes in the DDBJ/EMBL/GenBank Feature Table: Definition <a name="2013-ft"></a>
 
 The following items will be applied from October 2013 with the revision
 of [Feature Table Definition](/ddbj/full_index-e.html), if not otherwise
@@ -641,7 +641,7 @@ specified.
 
 </div>
 
-## 2012
+## 2012 <a name="2012"></a>
 
 <div>
 
@@ -734,7 +734,7 @@ SRA SRA XML schema version 2.0 continues to be discussed for refactoring
 SRA metadata with [BioProject](/bioproject/index-e.html) and
 [BioSample](/biosample/index-e.html)
 
-#### Forthcoming changes in The DDBJ/EMBL/GenBank Feature Table: Definition
+#### Forthcoming changes in The DDBJ/EMBL/GenBank Feature Table: Definition <a name="2011-ft"></a>
 
 The following items will be applied from October 2012 with the revision
 of [Feature Table Definition](/ddbj/full_index-e.html), if not otherwise
@@ -782,7 +782,7 @@ specified.
 
 </div>
 
-## 2011
+## 2011 <a name="2011"></a>
 
 <div>
 
@@ -905,7 +905,7 @@ version 2.0 will be applied from December 2011.
     already been applied for SRA data since June 2011.
   - SRA XML schema version 2.0 will be discussed.
 
-#### Forthcoming changes in The DDBJ/EMBL/GenBank Feature Table: Definition
+#### Forthcoming changes in The DDBJ/EMBL/GenBank Feature Table: Definition <a name="2011-ft"></a>
 
   - Two new feature keys, [centromere](/ddbj/features-e.html#centromere)
     and [telomere](/ddbj/features-e.html#telomere), will be legal from
@@ -956,7 +956,7 @@ version 2.0 will be applied from December 2011.
 
 </div>
 
-## 2010
+## 2010 <a name="2010"></a>
 
 <div>
 
@@ -1071,7 +1071,7 @@ activities should be updated
       - Pacific BioSciences
       - Ion Torrent
 
-#### Changes in future revisions of the Feature Table Document: Features and Qualifiers
+#### Changes in future revisions of the Feature Table Document: Features and Qualifiers <a name="2010-ft"></a>
 
 The following items will be applied from October 2010 with the revision
 of [Feature Table Definition](/ddbj/full_index-e.html), if not otherwise
@@ -1151,7 +1151,7 @@ specified.
 
 </div>
 
-## 2009
+## 2009 <a name="2009"></a>
 
 <div>
 
@@ -1250,7 +1250,7 @@ The outcomes of the two meetings are summarized below.
     DDBJ/EMBL-Bank/GenBank will discuss the format of structured
     COMMENT/CC line to use it in a formalized way.
 
-#### Changes to the Feature Table Document: Features and Qualifiers
+#### Changes to the Feature Table Document: Features and Qualifiers <a name="2005-ft"></a>
 
 The following items will be applied from October 2009 with the revision
 of [Feature Table Definition](/ddbj/full_index-e.html), if not otherwise
@@ -1284,7 +1284,7 @@ specified.
     /[note](/ddbj/qualifiers-e.html#note) qualifier is recommended.
     
     ``` flat-file code
-          /note="strain coidentity: JCM ### = NBRC ###"
+          /note="strain coidentity: JCM ### = NBRC ###" <a name=""></a>
           /strain="ATCC ####"
     ```
 
@@ -1306,7 +1306,7 @@ specified.
 
 </div>
 
-## 2008
+## 2008 <a name="2008"></a>
 
 <div>
 
@@ -1356,7 +1356,7 @@ discussed some practical matters to maintain and develop INSDC.
     will be removed. Old records will be retrofitted to conventional
     article citations where possible.
 
-#### Changes to the Feature Table Document: Features and Qualifiers
+#### Changes to the Feature Table Document: Features and Qualifiers <a name="2005-ft"></a>
 
 The following items will be applied from October 2008 with the revision
 of [Feature Table Definition](/ddbj/full_index-e.html), if not otherwise
@@ -1481,7 +1481,7 @@ specified.
 
 </div>
 
-## 2007
+## 2007 <a name="2007"></a>
 
 <div>
 
@@ -1530,7 +1530,7 @@ outcomes of the meeting are summarized below.
         cDNA project  
         "FLI\_CDNA"
 
-#### Changes to the Feature Table Document: Features and Qualifiers
+#### Changes to the Feature Table Document: Features and Qualifiers <a name="2005-ft"></a>
 
 The following items will be applied from October 2007 with the revision
 of [Feature Table Definition](/ddbj/full_index-e.html), if not otherwise
@@ -1664,7 +1664,7 @@ specified.
 
 </div>
 
-## 2006
+## 2006 <a name="2006"></a>
 
 <div>
 
@@ -1709,7 +1709,7 @@ The outcomes of the meeting are summarized below.
     prefixes of locus\_tag.The framework to assign the locus\_tag
     prefixes will be available in the near future
 
-#### Changes to the Feature Table Document: Features and Qualifiers
+#### Changes to the Feature Table Document: Features and Qualifiers <a name="2005-ft"></a>
 
   - New amino acid abbreviations, "J" and "O"
     
@@ -1804,7 +1804,7 @@ The outcomes of the meeting are summarized below.
 
 </div>
 
-## 2005
+## 2005 <a name="2005"></a>
 
 <div>
 
@@ -1857,7 +1857,7 @@ consistently annotated in the database. It was agreed that we should
 check them,and also that the same preference for plus stranded
 annotation should be applied to other single feature.
 
-#### Changes to the Feature Table Document: Features and Qualifiers
+#### Changes to the Feature Table Document: Features and Qualifiers <a name="2005-ft"></a>
 
 For features, especially [CDS](/ddbj/cds-e.html), the database users
 demand the information if the feature description is based on some

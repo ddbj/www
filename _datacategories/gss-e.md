@@ -60,7 +60,7 @@ Notes on the GSS submission
   - Clone Id is required for [clone](/ddbj/qualifiers-e.html#clone)
     qualifer.
 
-## Sample flat file
+## Sample flat file <a name="flat-file"></a>
 
 Aspects of GSS
 
@@ -71,7 +71,7 @@ Aspects of GSS
 
 <!-- end list -->
 
-<pre><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">GA000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">423 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">DNA</a>    <a id="ModificationDateA" href="#ModificationDateB">linear</a>   <a id="DivisionA" href="#DivisionB">GSS</a> <a id="ModificationDateA" href="#ModificationDateB">15-OCT-2008</a>
+<pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">GA000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">423 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">DNA</a>    <a id="ModificationDateA" href="#ModificationDateB">linear</a>   <a id="DivisionA" href="#DivisionB">GSS</a> <a id="ModificationDateA" href="#ModificationDateB">15-OCT-2008</a>
 <a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Arabidopsis thaliana DNA, BAC clone: CIC5D1, left end, chromosome 1 
             between mi303 and mi259.
 <a id="AccessionA" href="#AccessionB">ACCESSION</a>   GA000000
@@ -110,4 +110,4 @@ Aspects of GSS
         :
         -- The rest of nucleotide sequence is omitted --
         :
-<a id="EndA" href="#EndB">//</a></pre>
+<a id="EndA" href="#EndB">//</a></code></pre>

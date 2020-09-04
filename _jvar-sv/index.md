@@ -1,17 +1,12 @@
 ---
-layout: 未定
+layout: indexed_content
 title: Home
 pathname: index
 category: _jvar-sv
 lang: ja
 ---
 
-<div id="primary">
-
-<div id="page_main">
+## JVar-SV
 
 JVar-SV (Japan Variation Database for Structural Variation)
 
-</div>
-
-</div>

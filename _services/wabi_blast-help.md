@@ -3,6 +3,13 @@ layout: indexed_content
 title: WABI BLAST
 category: services
 lang: ja
+related_pages:
+  - title: WABI ClustalW ヘルプ
+    url: /wabi_clustalw-help.html
+  - title: WABI VecScreen ヘルプ
+    url: /wabi_vecscreen-help.html
+  - title: WABI MAFFT ヘルプ
+    url: /wabi_mafft-help.html
 ---
 
 ## 概要

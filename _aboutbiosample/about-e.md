@@ -6,7 +6,7 @@ category: aboutbiosample
 lang: en
 ---
 
-## Contact
+## Contact <a name="contact"></a>
 
 Please contact us from [Message form](/contact-e.html).
 

@@ -3,6 +3,13 @@ layout: indexed_content
 title: WABI MAFFT
 category: services
 lang: ja
+related_pages:
+  - title: WABI BLAST ヘルプ
+    url: /wabi_blast-help.html
+  - title: WABI ClustalW ヘルプ
+    url: /wabi_clustalw-help.html
+  - title: WABI VecScreen ヘルプ
+    url: /wabi_vecscreen-help.html
 ---
 ## MAFFT の job の投入
 

@@ -4,6 +4,33 @@ title: MGA
 pathname: mga
 category: other
 lang: ja
+related_pages:
+  - title: Genome Project のデータ登録
+    url: /ddbj/genome.html
+  - title: WGS
+    url: /ddbj/wgs.html
+  - title: CON
+    url: /ddbj/con.html
+  - title: GSS
+    url: /ddbj/gss.html
+  - title: HTG
+    url: /ddbj/htg.html
+  - title: Environmental sequence の登録
+    url: /ddbj/environmental.html
+  - title: ENV
+    url: /ddbj/env.html
+  - title: TLS
+    url: /ddbj/tls.html
+  - title: Transcriptome Project のデータ登録
+    url: /ddbj/transcriptome.html
+  - title: TSA
+    url: /ddbj/tsa.html
+  - title: EST
+    url: /ddbj/est.html
+  - title: HTC
+    url: /ddbj/htc.html
+  - title: Third Party Data (TPA)
+    url: /ddbj/tpa.html
 ---
 
 <span class="red">**\[重要\] MGA データの新規登録は終了しました。**</span>
@@ -30,7 +57,7 @@ Variable record から構成されています。MGA の公開データには，
 
 Master record の例
 
-<pre>
+<pre><code>
 <a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">ZZZZZ0000000</a>                       <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="ModificationDateA" href="#ModificationDateB">linear</a>   <a id="DivisionA" href="#DivisionB">ROD</a> <a id="ModificationDateA" href="#ModificationDateB">24-JAN-2005</a>
 <a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Mus musculus 1 month adult cerebellum short transcripts tag.
 <a id="AccessionA" href="#Accession_MGA">ACCESSION</a>   ZZZZZ0000000
@@ -75,7 +102,7 @@ Master record の例
             &gt;[ACC#]|[submitter's identifier]|[number of sequence
             count]|[map]|[free text]|[db_xref1(,db_xref2,...)]|
 <a id="EndA" href="#EndB">//</a>
-</pre>
+</code></pre>
 
 #### Variable record
 
