@@ -100,6 +100,7 @@ DNA /Protein  Weight Matrix
 |  PAM  |  この行列は1970年代後半以来，極めて広く使われています。Dayhoff's matrix とも呼ばれています。  |
 |  ID  |  同一のアミノ酸には 1 を，異なるアミノ酸には 0 を与えます。  |
 
+<br>
 
 |  DNA&nbsp;Weight&nbsp;Matrix  |    |
 | ---- | ---- |
@@ -140,6 +141,8 @@ DNA&nbsp;/Protein&nbsp;Weight&nbsp;Matrix
 |  BLOSUM  |  相同性検索を行なう際に最も広く用いられています。  |
 |  PAM  |  この行列は 1970 年代後半以来，極めて広く使われています。Dayhoff's matrix とも呼ばれています。  |
 |  ID  |  同一のアミノ酸には 1 を，異なるアミノ酸には 0 を与えます。  |
+
+<br>
 
 |  DNA&nbsp;Weight&nbsp;Matrix  |    |
 | ---- | ---- |
@@ -258,29 +261,29 @@ SEED
 
 ### ClustalW 解析結果 <a name="kekka"></a>
 
-1. 解析結果
-:   ![解析結果]({{ site.baseurl }}/assets/images/help/clustalw_01.gif)
+1. 解析結果  
+![解析結果]({{ site.baseurl }}/assets/images/help/clustalw_01.gif)
 
-2. Multiple Alignment の結果
-:   ![Multiple Alignment の結果]({{ site.baseurl }}/assets/images/help/clustalw_02.gif)
+2. Multiple Alignment の結果  
+![Multiple Alignment の結果]({{ site.baseurl }}/assets/images/help/clustalw_02.gif)
 
-3. Guide Tree
-:   ![Guide Tree]({{ site.baseurl }}/assets/images/help/clustalw_03.gif)
+3. Guide Tree  
+![Guide Tree]({{ site.baseurl }}/assets/images/help/clustalw_03.gif)
 
-4. BOOTSTRAP 計算結果
-:   ![BOOTSTRAP 計算結果]({{ site.baseurl }}/assets/images/help/clustalw_04.gif)
+4. BOOTSTRAP 計算結果  
+![BOOTSTRAP 計算結果]({{ site.baseurl }}/assets/images/help/clustalw_04.gif)
 
-<span class="red">（注意）</span>2012年4月より，全ての解析時に BOOTSTRAP の計算を実行します。ただし，入力フォームで[FORMAT] と [CLUSTERING] の選択が以下の様な組み合わせのときには .phb ファイルは作成されません。
+    <span class="red">（注意）</span>2012年4月より，全ての解析時に BOOTSTRAP の計算を実行します。ただし，入力フォームで[FORMAT] と [CLUSTERING] の選択が以下の様な組み合わせのときには .phb ファイルは作成されません。
 
-|  [FORAMT]  |  [CLUSTERING]  |
-| ---- | ---- |
-|  PHYLIP  |  NJ  |
-|  NEXUS  |  NJ  |
-|  PHYLIP  |  UPGMA   |
-|  NEXUS  |  UPGMA   |
+    | [FORAMT] | [CLUSTERING] |
+    | ---------- | -------------- |
+    | PHYLIP     | NJ             |
+    | NEXUS      | NJ             |
+    | PHYLIP     | UPGMA          |
+    | NEXUS      | UPGMA          |
 
-(5)系統樹作成
-:   ダウンロードしたファイルから系統樹を作成するには，系統樹作成ソフト (例 TreeView X や MEGA など)を利用してください。
+5. 系統樹作成  
+ダウンロードしたファイルから系統樹を作成するには，系統樹作成ソフト (例 TreeView X や MEGA など)を利用してください。
 
 ### 検索結果表示と保存期間 <a name="viewafter"></a>
 

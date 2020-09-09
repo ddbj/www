@@ -12,9 +12,9 @@ lang: ja
 [Technical read を含むデータを登録する場合は Experiment XML を作成]({{ site.baseurl }}/aboutdra/submission.html#create-metadata-in-xml-files)し，下記の例を参考に&lt;SPOT_DESCRIPTOR&gt;で technical read を記載する必要があります。
 </div>
 
-## Experiment (Spot, Platform)
+## Experiment (Spot, Platform) <a name="Experiment"></a>
 
-### 454 single reads
+### 454 single reads <a name="454_single"></a>
 
 #### リード
 
@@ -61,7 +61,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 | -------- | ------------------- |
 | LS454    | 454 GS FLX Titanium |
 
-### 454 paired reads
+### 454 paired reads <a name="454_paired"></a>
 
 #### リード
 
@@ -132,7 +132,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 | -------- | ------------------- |
 | LS454    | 454 GS FLX Titanium |
 
-### Illumina single reads
+### Illumina single reads <a name="illumina_single"></a>
 
 #### リード
 
@@ -173,7 +173,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 | -------- | ---------------------------- | --------------- |
 | Illumina | Illumina Genome Analyzer IIx | 72              |
 
-### Illumina paired reads
+### Illumina paired reads <a name="illumina_paired"></a>
 
 #### リード
 
@@ -221,7 +221,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 | -------- | ---------------------------- | --------------- |
 | Illumina | Illumina Genome Analyzer IIx | 200             |
 
-### Illumina paired reads 10x Genomics
+### Illumina paired reads 10x Genomics <a name="illumina_paired_10x"></a>
 
 #### リード
 
@@ -283,7 +283,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 | -------- | ---------------------------- | --------------- |
 | Illumina | Illumina Genome Analyzer IIx | 223             |
 
-### SOLiD single reads
+### SOLiD single reads <a name="SOLiD_single"></a>
 
 #### リード
 
@@ -324,7 +324,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 | --------- | ------------------- | --------------- |
 | ABI SOLID | AB SOLiD System 3.0 | 50              |
 
-### SOLiD paired reads
+### SOLiD paired reads <a name="SOLiD_paired"></a>
 
 #### リード
 
@@ -372,7 +372,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 | --------- | ------------------- | --------------- |
 | ABI SOLID | AB SOLiD System 3.0 | 50              |
 
-### Ion torrent single reads
+### Ion torrent single reads <a name="Ion_single"></a>
 
 #### リード
 
@@ -412,7 +412,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 | ----------- | ---------------------- | --------------- |
 | Ion torrent | Ion torrent PGM/Proton |                 |
 
-### PacBio single reads (Standard sequencing)
+### PacBio single reads (Standard sequencing) <a name="PacBio_standard"></a>
 
 #### メタデータ
 
@@ -471,7 +471,7 @@ Experiment XML (EXPERIMENT_ATTRIBUTES)
 </EXPERIMENT_ATTRIBUTES>
 ```
 
-### PacBio single reads (Circular consensus sequencing)
+### PacBio single reads (Circular consensus sequencing) <a name="PacBio_CCS"></a>
 
 #### メタデータ
 
@@ -524,7 +524,7 @@ Experiment XML (EXPERIMENT_ATTRIBUTES)
 </EXPERIMENT_ATTRIBUTES>
 ```
 
-## data validation でエラーになる典型的な例
+## data validation でエラーになる典型的な例 <a name="errors"></a>
 
 data validation でエラーになった場合， validation
 プロセスを停止し，メタデータを修正するかデータファイルを再アップロードしてください。
@@ -533,7 +533,7 @@ data validation でエラーになった場合， validation
   - [矛盾する塩基座標を持つリード](#inconsistent_base)
   - [位置の特定できない Relative order を持ったリード](#cannot_specified)
 
-### Application read のないリード <a name="no_application"></a>
+### Application read のないリード <a name="no_application"></a> 
 
 #### リード
 
@@ -544,7 +544,7 @@ Read composition
 |  Base Coordinate :  |  1  |  {::nomarkdown}<div class="float-left">7</div><div class="float-right">50</div>{:/} |
 |  Read Type :  |  Primer  |  Linker <span class="red">(少なくとも一つの application を持っている必要がある)</span>  |
 
-### 矛盾する塩基座標を持つリード <a name="inconsistent_base"></a>
+### 矛盾する塩基座標を持つリード <a name="inconsistent_base"></a> 
 
 #### リード 1
 
@@ -573,7 +573,7 @@ Read composition
 |  Base Coordinate :  |  <span class="red">2 (1 から始まる必要がある)</span>  |  19  |
 |  Read Type :  |  Adapter  |  Forward  |
 
-### 位置の特定できない Relative order を持ったリード <a name="cannot_specified"></a>
+### 位置の特定できない Relative order を持ったリード <a name="cannot_specified"></a> 
 
 #### リード
 
@@ -595,9 +595,9 @@ Spot (Read Spec)
 | 2          | Technical Read   | Linker    | RelativeOrder   |
 | 3          | Application Read | Forward   | RelativeOrder   |
 
-## Experiment (Pipeline)
+## Experiment (Pipeline) <a name="Experiment_pipeline"></a>
 
-### Experiment XML Pipeline の例1
+### Experiment XML Pipeline の例1 <a name="pipeline1"></a>
 
 ```
 <PROCESSING>
@@ -620,7 +620,7 @@ Spot (Read Spec)
 </PROCESSING>
 ```
 
-### Experiment XML Pipeline の例2
+### Experiment XML Pipeline の例2 <a name="pipeline1"></a>
 
 ```
 <PROCESSING>

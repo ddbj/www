@@ -29,7 +29,7 @@ related_pages:
 
 organism qualifier には「生物名」として、taxonomy database において、種、もしくは、それ以下のランクで "scientific name" とされている名称を記載する必要があります。
 
-## taxonomy database
+## taxonomy database <a name="taxonomy"></a>
 
 DDBJ/EMBL-Bank/GenBank では、生物名 (/organism qualifier の値) を共同で構築している
 taxonomy database で管理しています。  
@@ -47,7 +47,7 @@ DDBJでは、taxonomy database を検索するためのシステム
 
 塩基配列の登録、taxonomy database 検索の際は、「生物名」に<span class="red">スペルミスがないように、十分、ご確認ください。</span>
 
-## 生物名記載の概要
+## 生物名記載の概要 <a name="rule"></a>
 
 「生物名」は、通常、種の学名ですが、種が同定されていない場合(人工的に構築した配列なども含む)、仮称を用いることもあります。
 
@@ -70,7 +70,7 @@ DDBJ から当該塩基配列データが公開されるまでは、taxonomy dat
 Taxonomy database の間違いなどを発見された場合は、[ご連絡](/contact.html#to-ddbj)ください。  
 学名のスペルミスなどに関しましては修正します。
 
-## 生物名入力におけるカテゴリー (Category) について<a name="deasy"></a>
+## 生物名入力におけるカテゴリー (Category) について<a name="deasy"></a> 
 
 DDBJ が運用している WWW 経由の[塩基配列登録システム](/ddbj/websub-j.html)では登録の際に、生物名入力において Category を選択します。  
 下図に Category を判断するためのフローチャートを示します。
@@ -101,12 +101,12 @@ g. 登録済で非公開 (検索不可) の場合
 h. taxonomy database に未登録で、学名が確立している場合  
 : Category は "The name is valid but not registered in taxonomy database" となりますので、メニューから選択してください。<br>下記、生物名記載の各論より、[1. 種が同定されている場合](#species) をご参照の上、生物名を scientific name 入力ボックスに記載してください。
 
-## 生物名記載の各論
+## 生物名記載の各論 <a name="organism_name"></a>
 
 一部、特殊な例外もありますが、DDBJ への登録の際における「生物名」記載についての考え方を以下に挙げています。  
 塩基配列データの登録に際して taxonomy database への登録申請が必要な際は、[各参考情報](#items) もお知らせください。
 
-### 1\. 種が同定されている場合<a name="species"></a>
+### 1\. 種が同定されている場合<a name="species"></a> 
 
 「生物名」の登録は属・種の名称を用いた二名法による種の学名 (以下、種名)を原則としております。  
 種名は、動物、植物、細菌の各国際命名規約に従って記載されるべきです。
@@ -134,7 +134,7 @@ feature に記載します。
                      /<a href="/ddbj/qualifiers.html#sub_species">sub_species</a>="troglodytes"
 </code></pre> 
 
-#### 微生物ゲノム
+#### 微生物ゲノム <a name="genome"></a>
 
 以前は 微生物などで全ゲノム規模の配列を登録する場合、strain などを organism
 に含めて記載していましたが、現在は学名のみの記載を原則としています。  
@@ -144,7 +144,7 @@ strain 名は [strain](/ddbj/qualifiers.html#strain) qualifier に記載して�
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="WO-1"
 </code></pre>  
 
-#### ウイルス
+#### ウイルス <a name="virus"></a>
 
 ウイルスの場合は二名法ではありませんが、[the International Committee on Taxonomy of Viruses](https://talk.ictvonline.org/) に従った種名を基本としています。  
 <span class="red">**2017年以前は、登録頻度の高い病原性ウイルスの場合、strain、serotype を生物名に含めて記載する運用を続けていましたが、この運用は新規登録分には適用されません。**</span>
@@ -164,7 +164,7 @@ strain 名は [strain](/ddbj/qualifiers.html#strain) qualifier に記載して�
                    /<a href="/ddbj/qualifiers.html#strain">strain</a>="A/chicken/Tokyo/2007"
 </code></pre>  
 
-#### 雑種
+#### 雑種 <a name="hybrid"></a>
 
 雑種の場合、適宜、以下のように記載します。
 
@@ -174,7 +174,7 @@ strain 名は [strain](/ddbj/qualifiers.html#strain) qualifier に記載して�
   - Malus x domestica
   - Lilium hybrid division I
 
-#### database で見つからない場合
+#### database で見つからない場合 <a name="novel"></a>
 
 taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から検索不能な場合、登録時に以下の参考情報を可能な範囲でお知らせください。
 
@@ -185,9 +185,9 @@ taxonomy database 登録申請のための参考情報
   - [以前に登録した配列のアクセッション番号](#acc)
   - [サンプル、または、配列を得た方法の概略](#isolate)
 
-### 2\. 種が同定されていない場合<a name="unidentified"></a>
+### 2\. 種が同定されていない場合<a name="unidentified"></a> 
 
-#### 2-1. 種を同定しない場合
+#### 2-1. 種を同定しない場合 <a name="2-1._種を同定しない場合"></a>
 
 種同定を伴わない研究の場合、判明している範囲の lineage、多くの場合、属名を用いて、"\<属名\> sp."などとして記載します。
 
@@ -214,7 +214,7 @@ taxonomy database 登録申請のための参考情報
 <pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
-#### 2-2. 新種提唱の場合
+#### 2-2. 新種提唱の場合 <a name="new"></a>
 
 学名提唱中のため種名が未確定の場合、「生物名」の一意性を保つために、判明している範囲の lineage、多くの場合、属名を用いて、"\<属名\> sp."などとした上で、その下位の rank
 ([strain](/ddbj/qualifiers.html#strain)、[isolate](/ddbj/qualifiers.html#isolate), [clone](/ddbj/qualifiers.html#clone), etc) を並記します。  
@@ -285,7 +285,7 @@ taxonomy database 登録申請のための参考情報
   - [推定可能な範囲の lineage](#lineage)
   - [サンプル、または、配列を得た方法の概略](#isolate)
 
-### 4\. 人工的に構築した配列<a name="syn"></a>
+### 4\. 人工的に構築した配列<a name="syn"></a> 
 
 "synthetic construct"、または、"eukaryotic synthetic construct" とのみ一律に記載する場合と vector などの名称を以下のように そのまま記載する場合があります。
 
@@ -300,7 +300,7 @@ taxonomy database 登録申請のための参考情報
 
   - [想定される用法など](#usage)
 
-## taxonomy database 登録申請のための参考情報<a name="items"></a>
+## taxonomy database 登録申請のための参考情報<a name="items"></a> 
 
 配列データ登録の際に、その由来となる「生物名」が taxonomy database の存在していない場合、DDBJ を通じて taxonomy database に登録します。
 

@@ -6,7 +6,7 @@ category: aboutgea
 lang: en
 ---
 
-## Overview
+## Overview <a name="over"></a>
 
 GEA accepts all functional genomics data generated from microarray or next-generation sequencing (NGS) platforms. Popular experiment types are transcription profiling (mRNA and miRNA), chromatin immunoprecipitation (ChIP) and SNP genotyping. Here is the [full list of experiment types](/gea/experiment-types-e.html) in GEA.
 
@@ -51,9 +51,9 @@ Microarray-based and sequencing-based submissions should follow the [MIAME](http
 : For submitting data from human subjects (human data) to the databases of DDBJ center, it is submitter's responsibility to ensure that the dignity and right of human subject are protected in accordance with all applicable laws, ordinances, guidelines and policies of submitter's institution. In principle, make sure to remove any direct personal identifiers of human subjects from your data to be submitted. Before submitting human data, read the "[Submission of research data from human subjects](/policies-e.html#human)"
 </div>
 
-## Submission files
+## Submission files <a name="sub-files"></a>
 
-### Microarray experiment
+### Microarray experiment <a name="array-exp"></a>
 
 [Submit microarray experiment](/gea/submit-array-e.html)
 
@@ -62,7 +62,7 @@ Microarray-based and sequencing-based submissions should follow the [MIAME](http
   - [Processed data](/gea/datafile-e.html#array-proc)
   - [Array design file (if not registered)](/gea/adf-e.html)
 
-### Sequencing experiment
+### Sequencing experiment <a name="seq-exp"></a>
 
 [Submit sequencing experiment](/gea/submit-seq-e.html)
 
@@ -70,7 +70,7 @@ Microarray-based and sequencing-based submissions should follow the [MIAME](http
   - [Raw data (should be pre-registered to](/gea/datafile-e.html#seq_raw) [DRA](/dra/submission-e.html))
   - [Processed data](/gea/datafile-e.html#seq_proc)
 
-## Accession numbers
+## Accession numbers <a name="acc"></a>
 
 Experiments and array designs in GEA are given unique accession numbers in the following formats (n is a number). For the middle four-letter codes, please see the ArrayExpress [accession codes](https://www.ebi.ac.uk/arrayexpress/help/accession_codes.html).
 
@@ -79,14 +79,14 @@ Experiments and array designs in GEA are given unique accession numbers in the f
 
 Accessions numbers are generated when sufficient metadata and data files are provided for a submission.
 
-## Data release
+## Data release <a name="rel"></a>
 
 The data can be kept private until your paper is published. You can set the hold date for a maximum of 4 years and can change it. Registered records are released according to the [Data Release Policy](/data-release-policy-e.html).
 
-## Reviewer access
+## Reviewer access <a name="reviewer-access"></a>
 
 Submitters are able to generate an access token for journal reviewers after a pre-published experiment or array design is loaded into the GEA database. For instructions, see [reviewer accesss page](/gea/reviewer-access-e.html) for how to obtain an access token and communicate it to journal editors and reviewers.
 
-## Update
+## Update <a name="update"></a>
 
 After submitting data to GEA, please [contact us](/contact-e.html) to update or withdraw your data.

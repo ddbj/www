@@ -14,21 +14,21 @@ lang: ja
 
 シークエンス拠点の依頼者間でメタデータをやり取りするのにご利用ください。
 
-### BioProject
+### BioProject <a name="bioproject"></a>
 
 [BioProject_template_20150408.xlsx]({{ site.baseurl }}/assets/files/submission/BioProject_template_20150408.xlsx)
 
-### BioSample
+### BioSample <a name="biosample"></a>
 
 [BioSample_template_20150408.xlsx]({{ site.baseurl }}/assets/files/submission/BioSample_template_20150408.xlsx)
 
-### DRA
+### DRA <a name="dra"></a>
 
 [DRA_template_20180730.xlsx]({{ site.baseurl }}/assets/files/submission/DRA_template_20180730.xlsx)
 
 ## 研究費情報の記載 <a name="grant"></a>
 
-### BioProject
+### BioProject <a name="grant_bp"></a>
 
 D-way BioProject 登録システムで [Grants]({{ site.baseurl }}/aboutbioproject/submission.html#Area_grants) の各項目に以下を記入します。
 
@@ -39,7 +39,7 @@ D-way BioProject 登録システムで [Grants]({{ site.baseurl }}/aboutbioproje
 
 実際の登録例: [PRJDB3208 (DDBJ)](//ddbj.nig.ac.jp/BPSearch/bioproject?acc=PRJDB3208) [PRJDB3208 (NCBI)](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJDB3208)
 
-### DDBJ 塩基配列データ
+### DDBJ 塩基配列データ <a name="grant_ddbj"></a>
 
 アノテーションを付加した塩基配列データを [DDBJ]({{ site.baseurl }}/services/submission.html) に登録する場合，[structured COMMENT]({{ site.baseurl }}/flatfile/flat-file.html#Comment) に以下のように記載します。
 

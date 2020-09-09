@@ -20,7 +20,7 @@ related_pages:
 
 UME (Utilities for MSS file Error check) is a stand-alone tool to check syntax and format of [Sequence file](/ddbj/file-format-e.html#sequence) and [Annotation file](/ddbj/file-format-e.html#annotation) required for using Mass Submission System of DDBJ and to check amino acid translation of [CDS feature](/ddbj/cds-e.html) based on the description of each file. UME includes both Parser and transChecker.
 
-## Basic function
+## Basic function <a name="function"></a>
 
 | Name                          | Functions                                                                                                                                                                               |
 | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -29,7 +29,7 @@ UME (Utilities for MSS file Error check) is a stand-alone tool to check syntax a
 | [FFconv](#validation-4)       | Making simulated format of [DDBJ flat file](/ddbj/flat-file-e.html) from [Sequence file](/ddbj/file-format-e.html#sequence) and [Annotation file](/ddbj/file-format-e.html#annotation). |
 | [AGPParser](#agpparser)       | For the submission of contigs ([CON entries](/ddbj/con-e.html)), [AGP file](/ddbj/file-format-e.html#agp) and [Annotation file](/ddbj/file-format-e.html#annotation).                   |
 
-## Install
+## Install <a name="install"></a>
 
 Download UME package from [Validation tool for MSS data file](/ddbj/mss-tool-e.html).  
 Uncompress the downloaded file to extract its contents into the UME folder.
@@ -47,9 +47,9 @@ $ gunzip UME_unix.zip
  macOS: Regarding the available file names  
 : DO NOT use multibyte character(s) for any file or folder name of [Sequence file](/ddbj/file-format-e.html#sequence), [Annotation file](/ddbj/file-format-e.html#annotation), or [AGP file](/ddbj/file-format-e.html#agp) when you use UME on some versions of macOS. UME may not work when multibyte character is included in the file or folder name.
 
-## Initialization
+## Initialization <a name="initial"></a>
 
-### Starting UME
+### Starting UME <a name="initial-1"></a>
 
 You can run UME application by double clicking the UME icon (Depending on your PC environment, some extension of UME file would be displayed) in the UME folder.
 
@@ -78,16 +78,16 @@ UME file
 license file  
 : A text file for license agreement. Please read at first. The contents of the file are the same as [End-user license agreement](/ddbj/mss-tool-e.html#license).
 
-### Initial setting of UME
+### Initial setting of UME <a name="initial-2"></a>
 
 At the first time, you run UME application, change the maximum size of RAM for UME to optimize run-time environments. The default configuration of it is 512 Mbytes. [![]({{ site.baseurl }}/assets/images/ddbj/UME2.png)]({{ site.baseurl }}/assets/images/ddbj/UME2.png)
 
 1. Click Config in menu bar.
 2. Select the appropriate size of Max memory for runtime from pull-down menu.
 
-## Verification of submission files
+## Verification of submission files <a name="validation"></a>
 
-### Check panel: basic verification of submission files
+### Check panel: basic verification of submission files <a name="validation-1"></a>
 
 You can move to this panel by clicking the Check tab enclosed in the red square.
 
@@ -99,7 +99,7 @@ You can move to this panel by clicking the Check tab enclosed in the red square.
 4. By clicking Execute button, process the files specified at step (1) by FFconv.
 5. By clicking Exit button, Close UME.
 
-### Parser: verification of syntax and format<a name="validation-2"></a>
+### Parser: verification of syntax and format<a name="validation-2"></a> <a name=""></a>
 
 Execute Parser through the following steps.
 
@@ -124,7 +124,7 @@ Please reffer: [Parser Error Eessages](/ddbj/validator-e.html#parser), in detail
 
 </div>
 
-### transChecker: validation of amino acid translation<a name="validation-3"></a>
+### transChecker: validation of amino acid translation<a name="validation-3"></a> 
 
 transChecker can translate nucleotide sequences of [Sequence file](/ddbj/file-format-e.html#sequence) into amino acid sequences
 corresponding to [CDS features](/ddbj/cds-e.html) specified at Annotation file.  
@@ -161,7 +161,7 @@ Please reffer: [transChecker Error Eessages](/ddbj/validator-e.html#transchecker
 
 </div>
 
-### FFconv: confirmation by making simulated DDBJ flat file<a name="validation-4"></a>
+### FFconv: confirmation by making simulated DDBJ flat file<a name="validation-4"></a> 
 
 FFconv can make simulated format of [DDBJ flat file](/ddbj/flat-file-e.html) from [Annotation file](/ddbj/file-format-e.html#annotation) and [Sequence file](/ddbj/file-format-e.html#sequence).
 
@@ -184,9 +184,9 @@ Click Check tab to move to Check panel.
 9. By clicking Save button, the contents of (8) are saved as a text file.
 10. By clicking Close button, the window, FFconv result, is closed.
 
-## Verification of contig submission files<a name="agpparser"></a>
+## Verification of contig submission files<a name="agpparser"></a> 
 
-### Contig panel: verification of AGP file for contig submission
+### Contig panel: verification of AGP file for contig submission <a name="panel-2"></a>
 
 You can move to this panel by clicking the Contig tab enclosed in the red square.
 
@@ -198,7 +198,7 @@ You can move to this panel by clicking the Contig tab enclosed in the red square
 4. By clicking Execute button, process the files specified at steps (1) to (2) by AGPParser.
 5. By clicking Exit t button, Close UME.
 
-### Executing AGPParser
+### Executing AGPParser <a name="agpparser-1"></a>
 
 Basically, AGPParser checks the format of [AGP file](/ddbj/file-format-e.html#agp).AGP file. When you specify [Annotation file](/ddbj/file-format-e.html#annotation) and/or multi-fasta file including all of sequences cited by AGP file, AGPParser also checks the consistency between the two or three files.
 

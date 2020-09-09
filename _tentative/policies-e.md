@@ -12,18 +12,18 @@ In principle, website, data and services provided from DDBJ center are available
 Before using data and services provided from DDBJ Center, please understand all of followings.  
 Since most of all communications regarding services will be sent by email, please configure your email client to allow communications from [DDBJ email addresses and avoid being categorized as "junk mail"](/precautions-e.html).
 
-## Privacy policy
+## Privacy policy <a name="personal_information"></a>
 
 DDBJ manages personal information in accordance with the policies of [the Research Organization of Information and Systems](https://www.rois.ac.jp/en/index.html) (ROIS).  
 Use of personal information for data submission or using services shall be limited to the scope of the respective objectives.
 
-### Use of personal information of data submitters
+### Use of personal information of data submitters <a name="pinfo"></a>
 
   - DDBJ uses data submitters’ personal information to send queries regarding the submitted data and other communications.
   - Information may also be used to confirm affiliated organizations and contact addresses of submitters.
   - Questions from users regarding published data may also be forwarded to the submitter. Depending on the type of question, when the submitter is not respond to the forwarded question, we may let the questioned user know contact information of the submitter.
 
-## Submission of research data from human subjects
+## Submission of research data from human subjects <a name="human"></a>
 
 <span class="red">
 The amended Act on the Protection of Personal Information and ethical guidelines have been fully put into effect on May 30, 2017. This page has been revised accordingly.
@@ -62,7 +62,7 @@ To submit human data corresponding to personal identification code (\*2), you ne
   - [NBDC Human Data Sharing Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines)
   - [Notification for research participants regarding our database activities for human data](/reaserch-participant-notification-e.html)
 
-## Licenses
+## Licenses <a name="license"></a>
 
 ### Websites
 
@@ -93,7 +93,7 @@ redistribute the data.
 | [ArrayExpress](//www.ebi.ac.uk/arrayexpress/about.html)                       | ○   | ×        | ×    | ×     |
 | [HINV](ftp://ftp.ddbj.nig.ac.jp/mirror_database/hinv/README.txt)              | ○   | ×        | ×    | ×     |
 
-## Credits
+## Credits <a name="credit"></a>
 
 ### Website
 
@@ -112,7 +112,7 @@ If you discuss about the data in detail, please use [primary citation](/ddbj/sub
 In case of citation for each service provided at DDBJ Center  
 : In general, please use [original article for each service](/references-e.html) as a reference.
 
-#### Copyright and limitation of using DDBJ data
+#### Copyright and limitation of using DDBJ data <a name="copyright"></a>
 
 ##### DDBJ data set is a collaborative work of tens of thousands of authors world wide
 
@@ -141,7 +141,7 @@ See also following sites;
   - [INSDC policy](/insdc-e.html#policy)
   - [Rights and Duties of Submitter](/ddbj/submission-e.html#right)
 
-## Patent, Intellectual Property and Priority<a name="ownership"></a>
+## Patent, Intellectual Property and Priority<a name="ownership"></a> 
 
 ### Nucleotide Sequence Data Included in Patent Applications
 
@@ -169,7 +169,7 @@ Since we have to keep the original sequence data from JPO, "as is", if you need 
 
 If you are to submit sequence data related to your patent application, you should [consult DDBJ](/contact-e.html) before submission.
 
-### Patent Priority and Other Priority
+### Patent Priority and Other Priority <a name="priority"></a>
 
 #### Patent Priority
 
@@ -186,7 +186,7 @@ following examples.
   - Nomenclature of new species: See also [Organism Qualifier](/ddbj/organism-e.html)
   - Nomenclature of gene and protein: See also [Gene nomenclature at DDBJ](/ddbj/cds-e.html#product)
 
-## Disclaimers<a name="disclaimer"></a>
+## Disclaimers<a name="disclaimer"></a> <a name=""></a>
 
 ### Website
 
@@ -200,6 +200,6 @@ receipt, reliance or use you place on such data is therefore strictly at your ow
 
 See also [Sequence data included in patent applications](#ownership).
 
-## Recommended browsers
+## Recommended browsers <a name="browser"></a>
 
 The recommended browsers for our websites and web services are [Firefox](https://www.mozilla.org/ja/firefox/all/) and [Chrome](https://www.google.com/chrome/browser/desktop/index.html). The recommended browsers may be changed without a prior notice.

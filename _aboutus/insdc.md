@@ -12,7 +12,7 @@ related_pages:
 DDBJ センターは、欧州の [EBI; European Bioinformatics Institute](https://www.ebi.ac.uk/) で運営されている [ENA; European Nucleotide Archive](https://www.ebi.ac.uk/ena) および 米国の [NCBI; National Center for Biotechnology Information](https://www.ncbi.nlm.nih.gov/) と、インターネットを経由したデータと情報の相互交換と定期的に開催する２つの会議、[国際実務者会議](#icm)と[国際諮問委員会](#iac)、を通じて密接に連携し、INSD; International Nucleotide Sequence Database を構築しています。   
 DDBJ, ENA/EBI, NCBI の各事業、および、国際実務者会議は、[国際諮問委員会からの助言・勧告](#policy)を受けて運営されています。
 
-## 塩基配列データベース構築の国際協調
+## 塩基配列データベース構築の国際協調 <a name="insd"></a>
 
 {: .float-left }
 DDBJ は、1980年代の事業開始当初から、欧州の EMBL-Bank/[EBI](https://www.ebi.ac.uk/) と米国の
@@ -23,7 +23,7 @@ DDBJ は、1980年代の事業開始当初から、欧州の EMBL-Bank/[EBI](htt
 ![]({{ site.baseurl }}/assets/images/center/insdc_shoukai.gif)
 
 {: .float-release }
-## INSDC 構成員
+## INSDC 構成員 <a name="member"></a>
 
 <table>
   <thead>
@@ -64,17 +64,17 @@ DDBJ は、1980年代の事業開始当初から、欧州の EMBL-Bank/[EBI](htt
   </tbody>
 </table>
 
-## 国際諮問委員会 IAC; International Advisory Committee<a name="iac"></a>
+## 国際諮問委員会 IAC; International Advisory Committee<a name="iac"></a> 
 
 国際諮問委員会は, 欧州・米国・日本から選出されたそれぞれ３名の委員により構成され, INSDC
 の運営や将来計画に関して公正な立場で勧告・助言する組織で、年に１度、委員会が開催されます。
 
-## 国際実務者会議 ICM; International Collaborative Meeting<a name="icm"></a>
+## 国際実務者会議 ICM; International Collaborative Meeting<a name="icm"></a> 
 
 [国際実務者会議](/activities/icm-reports.html)は、INSDC の実務者で構成されています。ICM
 は、国際協調を基本理念とし,INSDC 運営上の実務的な問題を解決していくための協議会で、年１度開催されます。
 
-## 登録データに取り扱いについて<a name="policy"></a>
+## 登録データに取り扱いについて<a name="policy"></a> 
 
 2002年5月23-24日に国立遺伝学研究所で開催された国際塩基配列データベースの諮問機関である国際諮問委員会で，「DDBJ/EMBL/GenBank
 の登録データの取り扱い」について以下のように明文化しました。

@@ -206,7 +206,7 @@ CLUSTERING
 Format  
 : Format for generated multiple sequence alignment. Default value is **Aln w/numbers**.
 
-| 表示             |  Description           |
+| Type             |  Description           |
 | -------------- | -------------------------------- |
 | Aln w/numbers  | Residue numbers may be added to the end of the alignment lines in clustalw format. |
 | Aln wo/numbers | Residue numbers may not be added in clustalw format.  |

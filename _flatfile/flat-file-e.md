@@ -48,7 +48,7 @@ organisms, and "feature" information, etc. The "feature" is defined by
 to describe the biological nature such as gene function and other
 property of the nucleotide sequence.
 
-## The virtual sample of DDBJ flat file
+## The virtual sample of DDBJ flat file <a name="The_virtual_sample_of_DDBJ_flat_file"></a>
 
 <pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">AB000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">450 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">HUM</a> <a id="ModificationDateA" href="#ModificationDateB">01-JUN-2009</a>
 <a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate
@@ -111,7 +111,7 @@ Even when the sequences are similar, the contents on the flat files may
 vary according to the submitter's research aim etc.  
 Please take that point into consideration when you refer search results.
 
-## FIELD COMMENTS
+## FIELD COMMENTS <a name="FIELD_COMMENTS"></a>
 
 {::options parse_block_html="true" /}
 <div id="LocusB">

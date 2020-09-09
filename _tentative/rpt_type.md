@@ -19,8 +19,7 @@ Example: /rpt_type=INVERTED
 Comment: the values are case-insensitive, i.e. both "INVERTED" and "inverted" are valid;
 ```
 
-## Definitions of the values:
-
+## Definitions of the values: <a name="Definitions_of_the_values_"></a>
 
 tandem:  
 : a repeat that consists of two or more adjacent copies of a region whose length is greater than one in the same orientation;

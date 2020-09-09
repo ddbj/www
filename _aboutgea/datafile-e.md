@@ -6,7 +6,7 @@ category: aboutgea
 lang: en
 ---
 
-## Important notes on file preparation:
+## Important notes on file preparation: <a name="notes"></a>
 
 1.  Submit raw or raw matrix file(s) for every sample/hybridization of
     your experiment.
@@ -16,9 +16,9 @@ lang: en
 3.  Any spreadsheet/matrix file should be saved in tab-delimited text
     (\*.txt) format and not Excel format (\*.xls, \*.xlsx)
 
-## Microarray file formats
+## Microarray file formats <a name="array_data"></a>
 
-### Raw data file formats
+### Raw data file formats <a name="ar-raw"></a>
 
 **Per assay raw file (recommended):**
 
@@ -42,7 +42,7 @@ GenomeStudio data files). See [matrix guidelines and
 examples](/gea/matrix-e.html).
 
 
-### Accepted formats by platform
+### Accepted formats by platform <a name="ar_raw"></a>
 
 The raw data file platform is recognized by using column headings in the
 file's header:
@@ -211,7 +211,7 @@ with four columns followed by columns of data:
 | MetaColumn | MetaRow | Column | Row |
 
 
-### Processed data files
+### Processed data files <a name="seq_proc"></a> 
 
 Processed files are generated from raw files by procedures such as
 background correction, normalization, and further statistical analyses
@@ -235,7 +235,7 @@ processed files from the following scenarios:
   summarized at the gene level.
 
 
-### Processed text file format
+### Processed text file format <a name="array-proc-format"></a>
 
 In the two-dimensional table, you should have probes/genes in rows and
 samples/data in columns:
@@ -299,7 +299,7 @@ samples):
 | **probe_name_2**    | 98.3                   | 36.7                   | 100.52                    |
 
 
-### Additional files
+### Additional files <a name="seq-additional"></a> 
 
 A spike-in list for single-cell analysis or supplementary files for data
 analysis can be attached to GEA experiment as "additional files"
@@ -309,13 +309,13 @@ Please [contact GEA team](/contact-e.html) to submit additional files.
 
 
 
-## Sequencing data
+## Sequencing data <a name="seq_data"></a>
 
   - [Raw data files](#seq_raw)
   - [Processed data files](#seq_proc)
 
 
-### Raw data files <a name="seq_raw"></a>
+### Raw data files <a name="seq_raw"></a> 
 
 Sequencing raw data files need to be pre-registered to DDBJ Sequence
 Read Archive (DRA). Please see the [accepted data
@@ -366,7 +366,7 @@ If you provide WIG, bedGraph, GFF, or GTF files, please refer to the
 for format requirements.
 
 
-### Processed matrix files (for advanced users)
+### Processed matrix files (for advanced users) <a name="matrix"></a>
 
 For submitters who are familiar with MAGE-TAB specification, we also
 accept matrix files in strict MAGE-TAB format, which allows each data
@@ -378,7 +378,7 @@ strict matrix format for more information.
 
 
 
-### Additional files
+### Additional files <a name="seq-additional"></a>
 
 A spike-in list for single-cell analysis or supplementary files for data
 analysis can be attached to GEA experiment as "additional files"

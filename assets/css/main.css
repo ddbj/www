@@ -410,8 +410,6 @@ input, textarea, select, button {
     margin-bottom: 1.6rem; }
   .md-content h2, .md-content h3 {
     cursor: pointer; }
-    .md-content h2:hover > a, .md-content h3:hover > a {
-      display: inline-block; }
   .md-content .link-icon {
     background-image: url(/www/assets/images/parts/link.jpeg);
     background-repeat: no-repeat;

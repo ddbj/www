@@ -376,7 +376,7 @@ options are specified using HTTP parameters.
     <td rowspan="8">HTTP Parameters</td>
     <td><code class="language-plaintext highlighter-rouge">querySequence</code></td>
     <td>
-<a href="#parameter-querySequence">Search sequence data in multi-FASTA format</a>
+<a href="#parameter-querySequence">Search sequence data in multi-FASTA format</a> <br>
               <pre class="code"><code class="language-plaintext highlighter-rouge">example: &gt;my query sequence 1
 CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
 GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG

@@ -31,7 +31,7 @@ human subjects from your submissions.
 Before submission, read "[Submission of research data from human
 subjects](/policies-e.html#human)".
 
-## What is MSS?
+## What is MSS? <a name="outline"></a>
 
 {::options parse_block_html="true" /}
 <div class="attention">
@@ -63,19 +63,19 @@ If you are to submit reads from sequencers, please refer [DRA; DDBJ
 Sequence Read Archive](/dra/index-e.html).  
 Please confirm [Categories for Sequence Data](/data-categories-e.html).
 
-## The Flow of MSS
+## The Flow of MSS <a name="flow"></a>
 
 ![]({{ site.baseurl }}/assets/images/ddbj/MSS-flow-en.png "The Flow of MSS")
 
-### 1. Application
+### 1. Application <a name="flow-1"></a>
 
 Please apply for your submission from [MSS application　form](/ddbj/mass-form-e.html).
 
 After confirmation, we will introduce submission procedures in detail.
 
-### 2. Make submission files
+### 2. Make submission files <a name="flow-2"></a>
 
-#### Submission files required for MSS
+#### Submission files required for MSS <a name="Submission_files_required_for_MSS"></a>
 
 Prepare following files required to submit your sequence data.
 
@@ -111,7 +111,7 @@ numbers of them in annotation file.
 
 </div>
 
-#### Check submission files
+#### Check submission files <a name="Check_submission_files"></a>
 
 Before submitting to DDBJ, the files should be checked with software
 tools provided from DDBJ.
@@ -162,7 +162,7 @@ files](/ddbj/mss-tool-e.html)
   - Before installing Validation tools for data files, see [End-user
     license agreement](/ddbj/mss-tool-e.html#license).
 
-### 3. Test submission
+### 3. Test submission <a name="flow-3"></a>
 
 In the test submission, you can confirm contents and format of your data
 before making all of your data to submit to DDBJ.  
@@ -175,7 +175,7 @@ errors.
 If you are familiar to make data files required by MSS, you can omit the
 test submission.
 
-### 4. Submission
+### 4. Submission <a name="flow-4"></a>
 
 According to the suggestions in test submission, please make and send
 sequence and annotation files for all data.  
@@ -187,7 +187,7 @@ revise the files, if necessary.
 If there is no problem, we will assign and acknowledge accession numbers
 for your data to the e-mail address of contact person.
 
-#### File transfer
+#### File transfer <a name="File_transfer"></a>
 
 Attach to e-mail  
 File transfer by SCP  
@@ -205,7 +205,7 @@ movies.
 : Upload data files（[Windows](https://youtu.be/gJqgCvUc0Y8) /
 [macOS](https://youtu.be/aO2aVafS3ZE)）
 
-### 5. Data release
+### 5. Data release <a name="flow-5"></a>
 
 If you do not set any hold-date, your data will be released
 immediately.  
@@ -218,4 +218,3 @@ and publicized into the DDBJ format, so called "[flat
 file](/ddbj/flat-file-e.html)".  
 See also [relationships between annotation file and DDBJ flat
 file](/ddbj/file-format-e.html#sample).
-

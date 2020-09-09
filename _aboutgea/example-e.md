@@ -6,10 +6,9 @@ category: aboutgea
 lang: en
 ---
 
-## IDF Example
+## IDF Example <a name="idf"></a>
 
-[Full IDF example in
-spreadsheet.](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=0)
+[Full IDF example in spreadsheet.](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=0)
 
 
 | [Comment\[GEAAccession\]](/gea/metadata-e.html#Comment_idf)               | E-GEAD-369                                                                      |     |
@@ -39,8 +38,7 @@ spreadsheet.](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hni
 
 A full listing of all supported IDF tags can be found in the [IDF section](metadata-e.html#idf).
 
-
-## SDRF Conceptual Examples
+## SDRF Conceptual Examples <a name="sdrf_con"></a>
 
 [Full SDRF example in
 spreadsheet.](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=657626667)
@@ -115,7 +113,7 @@ Raw and processed sequencing data file for each sample, and a processed
 matrix file
 
 
-## MAGE-TAB Real-world Examples
+## MAGE-TAB Real-world Examples <a name="tab_real"></a>
 
 [Full SDRF example in
 spreadsheet.](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=657626667)

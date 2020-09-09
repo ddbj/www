@@ -55,7 +55,7 @@ The data which can be acceptable to the MGA category of INSDC are
 The large of quantity here means that the number of sequences in one
 resource is 10,000 or more.
 
-## Sample flat file
+## Sample flat file <a name="flat-file"></a>
 
 MGA data are published a resource as a unit. The data consist of "Master
 record" and "Variable record" for a resource.

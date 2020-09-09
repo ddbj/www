@@ -135,7 +135,7 @@ Aspects of TPA on DDBJ flat file
     TPA sequence.
 
 
-## Sample of TPA flat file
+## Sample of TPA flat file <a name="Sample_of_TPA_flat_file"></a>
 
 
 <pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">BR000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">2000 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="ModificationDateA" href="#ModificationDateB">linear</a>   <a id="DivisionA" href="#DivisionB">HUM</a> <a id="ModificationDateA" href="#ModificationDateB">17-SEP-2006</a>

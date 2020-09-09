@@ -18,7 +18,7 @@ related_pages:
     url: /ddbj/validator-e.html)
 ---
 
-## Flow of MSS application
+## Flow of MSS application <a name="flow"></a>
 
 {: .flow .flow_en }
 - Apply your request  
@@ -35,7 +35,7 @@ related_pages:
     Submission System (MSS)".
   - [Do not block E-mails from DDBJ](/precautions-e.html).
 
-## Application Form for MSS
+## Application Form for MSS <a name="Application_Form_for_MSS">
 
 ※[How can I contact you when the form is not available?](/faq/en/index-e.html#mss-application-form-not-displayed)
 

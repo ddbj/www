@@ -12,18 +12,18 @@ DDBJ センターより提供している各コンテンツ、データ、サー
 ご利用の前に、以下を ご一読の上、ご理解くださいますようお願いいたします。  
 ご連絡は基本的にメールを介して行いますので、これを["迷惑メール"としないために](/precautions.html) 設定をご確認ください。
 
-## 個人情報の取り扱いについて
+## 個人情報の取り扱いについて <a name="personal_information"></a>
 
 DDBJ では[情報・システム研究機構](http://www.rois.ac.jp/) (ROIS) の規程に従い個人情報を取り扱います。  
 [情報公開・法人文書管理について](http://www.rois.ac.jp/open/index.html) (ROIS) データ登録時、サービス利用時などに取り扱う個人情報は業務の範囲内に限定して利用いたします。
 
-### データ登録者の個人情報
+### データ登録者の個人情報 <a name="pinfo"></a>
 
   - DDBJ から登録データに関する問い合わせや連絡をする際に使用します。
   - 所属・配信先を確認する際に使用することがあります。
   - 既公開の登録データに関する利用者からの質問などを登録者の連絡先に転送することがあります。質問の種類にも依存しますが、転送した質問へのご回答がない場合、登録者の連絡先を質問した利用者に知らせることがあります。
 
-## ヒトを対象とした研究データの登録について
+## ヒトを対象とした研究データの登録について <a name="human"></a>
 
 <span class="red">2017年5月30日に改正された個人情報保護法と倫理指針が施行されたため、本ページの内容が変更されております。</span>
 
@@ -60,7 +60,7 @@ DDBJ では[情報・システム研究機構](http://www.rois.ac.jp/) (ROIS) �
   - [NBDC ヒトデータベース よくあるご質問（FAQ）](https://humandbs.biosciencedbc.jp/faq)
   - [ヒトデータに関するデータベース事業について研究対象者等に公開すべき事項](/reaserch-participant-notification.html)
 
-## 使用許諾
+## 使用許諾 <a name="license"></a>
 
 ### ウェブサイト
 
@@ -90,7 +90,7 @@ DDBJ では[情報・システム研究機構](http://www.rois.ac.jp/) (ROIS) �
 | [ArrayExpress](//www.ebi.ac.uk/arrayexpress/about.html)                       | ○   | ×        | ×    | ×     |
 | [HINV](ftp://ftp.ddbj.nig.ac.jp/mirror_database/hinv/README.txt)              | ○   | ×        | ×    | ×     |
 
-## クレジット
+## クレジット <a name="credit"></a>
 
 ### ウェブサイト
 
@@ -108,7 +108,7 @@ DDBJ では[情報・システム研究機構](http://www.rois.ac.jp/) (ROIS) �
 DDBJ センターが提供する個別のサービスについて引用する場合  
 : 通常は[各サービスに関するオリジナル論文](/references.html)を引用する方が適切です。
 
-#### DDBJ データの著作権について
+#### DDBJ データの著作権について <a name="copyright"></a>
 
 ##### DDBJデータの利用法や利用目的に制限はあるか？
 
@@ -140,7 +140,7 @@ DDBJ は GenBank や EMBL-Bank 同様なんらの利用制限も付加しませ�
   - [登録データの取り扱いについて](/insdc.html#policy)
   - [登録に附随する権利と義務](/ddbj/submission.html#right)
 
-## 特許・知的所有権と優先権
+## 特許・知的所有権と優先権 <a name="ownership"></a>
 
 ### 特許出願に含まれる塩基配列データについて
 
@@ -169,7 +169,7 @@ DDBJ は配列データの登録・公開により生じた 所有権、優先�
 特許出願と並行して、別途、DDBJ へ登録・公開をご希望の場合は、データ登録前に
 [お問い合わせ](/contact.html)の「塩基配列登録システム（NSSS）」を選択してご連絡ください。
 
-### データの優先権
+### データの優先権 <a name="priority"></a>
 
 #### 特許権
 
@@ -186,7 +186,7 @@ DDBJ に塩基配列を登録しても、以下の例を含めて
   - 新種など生物名の命名 （参照: [Organism Qualifier について）](/ddbj/organism.html)
   - 遺伝子・タンパク質の命名 （参照: [遺伝子命名に関する考え方）](/ddbj/cds.html#product)
 
-## 免責事項<a name="disclaimer"></a>
+## 免責事項<a name="disclaimer"></a> 
 
 ### ウェブサイト
 
@@ -203,6 +203,6 @@ DDBJ センターは 提供するデータが正しくあるべく維持に努�
 
 [特許出願に含まれる配列データの提供](/ddbj/pat-data.html)もあわせて ご参照ください。
 
-## 推奨するブラウザ
+## 推奨するブラウザ <a name="browser"></a>
 
 DDBJ センターウェブサイトとウェブサービスの利用には [Firefox](https://www.mozilla.org/ja/firefox/all/) と [Chrome](https://www.google.com/chrome/browser/desktop/index.html)の使用を推奨いたします。推奨するブラウザは予告なく変更する場合があります。

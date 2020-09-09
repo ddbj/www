@@ -6,7 +6,7 @@ category: aboutgea
 lang: ja
 ---
 
-## 概要
+## 概要 <a name="over"></a>
 
 GEA はマイクロアレイや次世代シークエンサから出力される機能ゲノミクスデータを受け付けています。主要な experiment type としては transcription profiling (mRNA と miRNA)、chromatin immunoprecipitation (ChIP) と SNP genotyping が挙げられます。GEA における experiment type の[全リスト](/gea/experiment-types.html)。
 
@@ -52,9 +52,9 @@ GEA はマイクロアレイや次世代シークエンサから出力される�
     センターが運営するデータベースに登録する場合、研究対象者の尊厳及び人権は、適用されるべき法令、指針、ガイドライン、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。原則として、研究対象者を直接特定し得る情報はメタデータから取り除いてください。 ヒトを対象とした研究データを登録する場合は「[ヒトを対象とした研究データの登録について](/policies.html#human)」を熟読してください。
 </div>
 
-## 登録ファイル
+## 登録ファイル <a name="sub-files"></a>
 
-### マイクロアレイ実験
+### マイクロアレイ実験 <a name="arrayxp"></a>
 
 [マイクロアレイ実験の登録](/gea/submit-array.html)
 
@@ -63,7 +63,7 @@ GEA はマイクロアレイや次世代シークエンサから出力される�
   - [解析済みデータ](/gea/datafile.html#array-proc)
   - [（必要であれば）アレイデザインファイル](/gea/adf.html)
 
-### シークエンシング実験
+### シークエンシング実験 <a name="seqxp"></a>
 
 [シークエンシング実験の登録](/gea/submit-seq.html)
 
@@ -71,7 +71,7 @@ GEA はマイクロアレイや次世代シークエンサから出力される�
   - [生データ (先行して](/gea/datafile.html#seq_raw) [DRA](/dra/submission.html) に登録しておく必要があります)
   - [解析済みデータ](/gea/datafile.html#seq_proc)
 
-## アクセッション番号
+## アクセッション番号 <a name="acc"></a>
 
 GEA の Experiment と Array design に対して以下の形式のアクセッション番号が発行されます (n は整数)。中央の四文字コードについては ArrayExpress [accession codes](https://www.ebi.ac.uk/arrayexpress/help/accession_codes.html) をご覧ください。
 
@@ -80,14 +80,14 @@ GEA の Experiment と Array design に対して以下の形式のアクセッ�
 
 十分なメタデータとデータファイルが提供された登録に対してアクセッション番号が発行されます。
 
-## データ公開
+## データ公開 <a name="rel"></a>
 
 関連する論文が公表されるまでデータを非公開にすることができます。四年後までの公開予定日を設定し、随時延長することができます。登録されたデータは[データ公開原則](/data-release-policy.html)に従って公開されます。
 
-## Reviewer access
+## Reviewer access <a name="reviewer-access"></a>
 
 GEA データベースに非公開 experiment と array design が登録された後、登録者は査読者用のアクセストークンを発行することができます。トークンを発行してジャーナルの編集者と査読者に伝える手順については [reviewer accesss](/gea/reviewer-access.html) ページをご覧ください。
 
-## 更新
+## 更新 <a name="update"></a>
 
 GEA に登録されたデータを更新・削除する場合は [GEA チームに連絡](/contact.html)してください。

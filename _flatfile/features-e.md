@@ -11,7 +11,7 @@ follows.
 For further information of INSDC feature keys, read [Feature Table Definition](/ddbj/full_index-e.html): [7.2 Appendix II: Feature keys
 reference](/ddbj/full_index-e.html#7.2).
 
-## Feature/Qualifier Usage Matrix
+## Feature/Qualifier Usage Matrix <a name="usage"></a>
 
 The chart below explains recommended combinations of feature and
 qualifier keys for DDBJ submissions.

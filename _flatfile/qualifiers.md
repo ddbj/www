@@ -8,7 +8,7 @@ lang: ja
 
 DDBJ への新規登録で使用を推奨する qualifier key を以下に挙げています。 より詳しい INSDC qualifier key に関する情報は, Feature Table Definition の [7.3.1 Qualifier List](/ddbj/full\\\_index.html\\\#7.3.1) をご参照ください。 
 
-## Feature/Qualifier 対応
+## Feature/Qualifier 対応 <a name="usage"></a>
 
 Feature/Qualifier 対応一覧表には、DDBJ へ登録を推奨する feature と qualifier の組み合わせを示しています。
 

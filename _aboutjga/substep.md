@@ -6,7 +6,7 @@ category: aboutjga
 lang: ja
 ---
 
-## JGA 概要
+## JGA 概要 <a name="overview"></a>
 
 [日本 DNA データバンク (DDBJ) センター](/index.html)は利用制限が必要なヒト由来のデータのためのデータベースとして　Japanese Genotype-phenotype Archive (JGA) を [National Bioscience Database Center (NBDC)](http://humandbs.biosciencedbc.jp/) と共同で運営しています。
 
@@ -21,9 +21,9 @@ lang: ja
 このページでは JGA へのデータ登録手順を説明しています。  
 JGA 全体の説明については[こちらの資料](https://drive.google.com/file/d/12IaBZHub6s9fNK55S0r6x0U7MD2oQsk_)をご参照ください。
 
-## エクセルでのメタデータ作成
+## エクセルでのメタデータ作成 <a name="create-metadata-using-excel"></a>
 
-### エクセルファイルへの記入
+### エクセルファイルへの記入 <a name="enter-metadata-into-excel"></a>
 
 メタデータ記入用エクセルファイルを下記よりダウンロードし、内容を英語で記入してください。メタデータの説明は[こちらのページ](/jga/submission.html)をご参考ください。
 
@@ -44,11 +44,11 @@ Data/Analysis
 オブジェクトに複数のファイルが含まれる場合は，可能な限りファイルを結合し１つにまとめてください。ファイルのアップロード・ダウンロードで不具合が発生する可能性があります。
 </div>
 
-### エクセルの記入例
+### エクセルの記入例 <a name="example-submission"></a>
 
 [メタデータエクセルの記入例](https://docs.google.com/spreadsheets/d/1HHlxItj89fQv2oWUNBIHZ4VVGwbcC09WGD5tEiXAQZ4/edit#gid=744299318)
 
-### JGA submission tool
+### JGA submission tool <a name="jga-submission-tool"></a>
 
 JGA submission tool (最終更新日: 2018-04-16，v3.5.0) をダウンロードし、JGATool.bat からツールを起動します。
 
@@ -57,7 +57,7 @@ JGA submission tool (最終更新日: 2018-04-16，v3.5.0) をダウンロード
 Java 8 で実行してください。Java 7 では動作しません。[プロキシ環境での使用方法について](#%E3%83%97%E3%83%AD%E3%82%AD%E3%82%B7%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AE%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95)
 </div>
 
-#### Windows
+#### Windows <a name="Windows"></a>
 
 [Windows 用 JGA submission tool]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool.zip)
 
@@ -65,7 +65,7 @@ Java 8 で実行してください。Java 7 では動作しません。[プロ�
 
 <span class="red">動作環境: Java Runtime Environment Version 8 Update 45 以上</span>
 
-#### Unix
+#### Unix <a name="Unix"></a>
 
 [Unix 用 JGA submission tool]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool_unix.zip)
 
@@ -73,7 +73,7 @@ Java 8 で実行してください。Java 7 では動作しません。[プロ�
 
 <span class="red">動作環境: Java SE Development Kit 8u45 以上。OpenJDK では動作しません。</span>
 
-### エクセルをアップロード
+### エクセルをアップロード <a name="upload-excel"></a>
 
 JGA tool を起動し，[NBDC](http://humandbs.biosciencedbc.jp/) 担当者から通知されるアカウントとパスワードでログインします。
 
@@ -101,7 +101,7 @@ JGA tool を起動し，[NBDC](http://humandbs.biosciencedbc.jp/) 担当者か�
 メタデータが記入されたエクセルファイルはメールで送付しないでください。
 </div>
 
-### エクセル/XML をダウンロード
+### エクセル/XML をダウンロード <a name="download-excel-xml-files"></a>
 
 JGA ファイルサーバ上にある「ファイル名が \_metadata.xlsx で終わるエクセル」と「XML ファイル」は tool でダウンロードすることができます。
 
@@ -117,9 +117,9 @@ JGA ファイルサーバ上にある「ファイル名が \_metadata.xlsx で�
 {% include image.html url="submission/jgadown2.jpg" caption="XML のダウンロード" class="w500" %}
 {:/}
 
-## 登録ファイルのアップロード
+## 登録ファイルのアップロード <a name="upload-data-files"></a>
 
-### データファイル形式
+### データファイル形式 <a name="data-file-format"></a>
 
 JGA 登録システムではファイルの拡張子でアーカイブ・圧縮形式を判定し、ファイルを処理しています。
 
@@ -127,7 +127,7 @@ JGA 登録システムではファイルの拡張子でアーカイブ・圧縮�
   - bam ファイルは圧縮しないでください。
   - gz や bzip 圧縮したファイルをさらに tar でアーカイブせず、tar.gz 等でアーカイブしたファイルを圧縮してください。
 
-### 登録するデータ
+### 登録するデータ <a name="file-formats-submission"></a>
 
 Data オブジェクトに fastq や bam ファイルなどの個人レベルの次世代シークエンスデータを登録します。Analysis にアレイデータ，変異解析，質問票などの次世代シークエンス以外のデータや各種ドキュメントを登録します。
 
@@ -135,7 +135,7 @@ Data オブジェクトに fastq や bam ファイルなどの個人レベルの
 データの再利用性，再現性のためには論文での主張の基になっている解析データが登録されることが重要です。できるだけ VCF などの解析データを Analysis に登録してください。
 </div>
 
-### メタデータ XML ファイル
+### メタデータ XML ファイル <a name="metadata-xml-file"></a>
 
 ダウンロードした XML ファイルとデータファイルを JGA tool で選択し，対象 submission にまとめてアップロードします。
 
@@ -143,7 +143,7 @@ Data オブジェクトに fastq や bam ファイルなどの個人レベルの
 {% include image.html url="submission/jgasub4.jpg" caption="メタデータ XML ファイルとデータファイルのアップロード" class="w500" %}
 {:/}
 
-### 登録ファイルの検証処理
+### 登録ファイルの検証処理 <a name="validation-submitted-files"></a>
 
 メタデータとデータファイルに以下の検証処理が実施され，データファイルは暗号化されて JGA サーバにアップロードされます。
 
@@ -160,7 +160,7 @@ Data オブジェクトに fastq や bam ファイルなどの個人レベルの
 {% include image.html url="submission/jgasub5.jpg" caption="検証処理を通過したメタデータ XML とデータファイル" class="w500" %}
 {:/}
 
-### 複数ファイルの選択方法
+### 複数ファイルの選択方法 <a name="select-files"></a>
 
 左ウィンドウに表示されているファイルを複数選択することができます。
 
@@ -188,7 +188,7 @@ Control キーを押しながらファイルを選択していくと，ファイ
 {% include image.html url="submission/jga_dir_select.jpg" caption="サブディレクトリごとチェック" class="w500" %}
 {:/}
 
-### プロキシ環境での使用方法
+### プロキシ環境での使用方法 <a name="use-proxy-environment"></a>
 
 プロキシ環境でツールを使用するためにはプロキシサーバの設定が必要になります。
 
@@ -208,7 +208,7 @@ port=
 
 2016-11-17 にリリースした v3.2.0 で BASIC 認証に対応しましたが Digest 認証には未対応です。
 
-## ハードディスクでのデータファイル送付
+## ハードディスクでのデータファイル送付 <a name="send-data-files-in-hard-disk"></a>
 
 JGA ツールでの転送に多大な時間を要する，ファイル選択画面がフリーズするなど，大容量・多件数のファイル転送が困難な場合には，ハードディスクでデータを受け付けています。
 
@@ -218,7 +218,7 @@ JGA 担当者に事前連絡してからディスクを送付するようにし�
 郵送前にディスクをアンチウイルスソフトでチェックしてください。送料は全額登録者負担になります。
 </div>
 
-### データの暗号化
+### データの暗号化 <a name="encrypt-data-files"></a>
 
 JGA データ暗号化ツールを使ってデータファイルを暗号化し，ディスクにコピーし郵送します。XML メタデータファイルは JGA Submission Tool でアップロードし，ディスクに含めないでください。
 
@@ -295,7 +295,7 @@ FINISH encrypt file ←処理完了
 | \[code 13\] output dir is not a directory : \<target\> | \-o に指定されたパスがディレクトリではありません      |
 | \[code 14\] target is not a file : \<target\>          | \-t に指定されたパスが通常ファイルではありません      |
 
-### データの送付
+### データの送付 <a name="sending-files"></a>
 
 JGA にデータを登録するためには「暗号化された対象ファイル」「鍵ファイル」「暗号化前後のMD5ファイル」の３点セットが必要です。各対象データファイルについて生成される３ファイルを全てディスクにコピーします。
 

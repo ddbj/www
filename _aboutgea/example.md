@@ -6,7 +6,7 @@ category: aboutgea
 lang: ja
 ---
 
-## IDF 例
+## IDF 例 <a name="idf"></a>
 
 [IDF
 スプレッドシート例](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=0)
@@ -37,7 +37,7 @@ lang: ja
 
 サポートされている IDF タグの全リストは [IDF ページ](/gea/metadata-e.html#idf)をご覧ください。
 
-## SDRF 概念的な例
+## SDRF 概念的な例 <a name="sdrf_con"></a>
 
 [SDRF
 スプレッドシート例](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=657626667)
@@ -103,10 +103,9 @@ Two-color マイクロアレイ
 {: .tablecaption}
 サンプル毎の次世代シークエンス DRA 生データ (Run) と解析済みデータファイル、及び、解析済みマトリックスファイル
 
-## MAGE-TAB 実際の例
+## MAGE-TAB 実際の例 <a name="tab_real"></a>
 
-[SDRF
-スプレッドシート例](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=657626667)
+[SDRF スプレッドシート例](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=657626667)
 
 以下は ArrayExpress に実際に登録されているマイクロアレイとシークエンシング実験の MAGE-TAB 例です。
 

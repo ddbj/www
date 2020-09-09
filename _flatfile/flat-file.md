@@ -35,7 +35,7 @@ related_pages:
 の定めるフォーマットにしたがった「フラットファイル」 (flat file) の形式で公開されています。
 フラットファイルには、塩基配列のほか、配列の登録者、関連文献、由来生物種、Feature 情報などが表示されています。 Feature 情報とは、その塩基配列のもつ生物学的特徴や遺伝子の機能、特性等に関する情報を記述したもので、記述形式は、 [The DDBJ/ENA/GenBank Feature Table Definition](/ddbj/full_index.html) (国際塩基配列データベースが定める記述形式) によって定められています。
 
-## DDBJ フォーマットの例
+## DDBJ フォーマットの例<a name="DDBJ_フォーマットの例"></a>
 
 <pre class="code flat-file"><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">AB000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">450 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">HUM</a> <a id="ModificationDateA" href="#ModificationDateB">01-JUN-2009</a>
 <a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate
@@ -96,7 +96,7 @@ related_pages:
 登録者の研究上の着眼点の違いなどにより、配列が類似している登録の場合でもフラットファイルに記載される内容は異なることがあります。
 検索結果を参照される際にはご注意下さい。
 
-## FIELD COMMENTS
+## FIELD COMMENTS <a name="FIELD_COMMENTS"></a>
 
 {::options parse_block_html="true" /}
 <div id="LocusB">

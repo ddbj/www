@@ -37,7 +37,7 @@ atttgaacacacctgctgtggctgtaactctgagatgtgctaaataaaccctctt
 //      <-- 配列情報終了フラグ
 ```
 
-### 書式と構文
+### 書式と構文 <a name="agp_format"></a> 
 
 必ず、[UME](/ddbj/ume.html) または [Parser](/ddbj/parser.html) を用いて、配列ファイルとアノテーションファイルの書式をご確認ください。
 
@@ -58,7 +58,7 @@ atttgaacacacctgctgtggctgtaactctgagatgtgctaaataaaccctctt
   - [CON](/ddbj/data-categories.html#con) に該当する場合は、配列ファイルは [AGP
     ファイル](#agp)で代替することができます。
 
-## アノテーションファイル<a name="annotation"></a>
+## アノテーションファイル<a name="annotation"></a> 
 
 アノテーションファイルは、全登録データの登録者, REFERENCE、Feature/Qualifierの情報等を記述した、Entry, Feature, Location, Qualifier, Value の５列からなるタブ区切りテキストファイルです。  
 スクリプト、(MS Excel などの) 表計算ソフト、テキストエディタ等で作成が可能です。
@@ -125,7 +125,7 @@ Value
 その他  
 : アノテーションファイルでは、空行が存在した時点でファイルの終わりと判断されます。従って、複数エントリを入力する場合は、登録する全てのエントリの入力が終わるまで、途中に空行を作らずに入力してください。
 
-### Biological Feature 記載に関する参照先
+### Biological Feature 記載に関する参照先 <a name="describing"></a>
 
 | 名称                                                  | 更新日        | 備考                                                   |
 | --------------------------------------------------- | ---------- | ---------------------------------------------------- |
@@ -133,9 +133,9 @@ Value
 | [Feature/Qualifier 対応一覧表](/files/pdf/ddbj/fq-j.pdf) | 2016/11/09 |                                                      |
 | [登録の見本](/ddbj/example.html)                         | 2014/11/27 | [DDBJ フラットファイル](/ddbj/flat-file.html)中の feature の記載例 |
 
-### 共通情報 COMMON<a name="common"></a>
+### 共通情報 COMMON<a name="common"></a> 
 
-#### COMMON の入力について
+#### COMMON の入力について <a name="common_entry"></a>
 
   - アノテーションファイルでは全てのエントリに共通な情報を入力するために COMMON というエントリ名を使用することができます。
   - COMMON エントリに記載された情報はデータベースに読み込まれる際に全てのエントリに反映されます。
@@ -144,7 +144,7 @@ Value
     Value)の情報が全てのエントリに共通であれば、[Biological
     feature](#biological_feature) でも記載できます。
 
-#### COMMON の活用
+#### COMMON の活用 <a name="use_common"></a>
 
 location に使用可能なメタ塩基番号'E'  
 : 例: COMMON に rRNA feature を記載
@@ -177,7 +177,7 @@ clone, submitter\_seqid, note, ff\_definition に使用可能なメタ表記 '@@
     **@@\[entry\]@@** を記載は clone,
     submitter\_seqid, note, ff\_definition の Value に限定しています。
 
-### SUBMITTER
+### SUBMITTER <a name="submitter"></a>
 
 例: アノテーションファイル内の SUBMITTER　（<span class="red">入力必須項目</span>）
 
@@ -216,7 +216,7 @@ SUBMITTER で使用する Qualifier のリスト
 |  street  |  英, 数,  [space], -[hyphen], '[apostrophe], .[period], _[underscore], ,[comma], ( ) # & @ / ; : + *  |  255  |
 |  zip  |  英, 数, -[hyphen]  |  16  |                             
 
-#### SUBMITTER の書式
+#### SUBMITTER の書式 <a name="describing_submitter"></a>
 
 - SUBMITTER は各エントリに一件必ず入力していただく必要がありますが、全件共通の SUBMITTER を入力する場合には
   [COMMON](#common) エントリに入力してください。  
@@ -242,7 +242,7 @@ SUBMITTER で使用する Qualifier のリスト
 - ab\_name 以外の Qualifier の Value
   には、コンタクトパーソンの情報をそれぞれ一件ずつしか入力できません。複数の研究機関の情報を入力したい場合には、別途、ご連絡ください。
 
-### REFERENCE
+### REFERENCE <a name="reference"></a>
 
 例: アノテーションファイル内の REFERENCE （<span class="red">入力必須項目</span>）
 
@@ -270,7 +270,7 @@ REFERENCE で使用する Qualifier のリスト
 |  journal  |  [back-slash], ` [back-quote] 以外 (PubMed type abbreviation を入力)  |  128  |
 |  volume, start_page, end_page  |  英, 数, -[hyphen]  |  8  |
 
-#### REFERENCE の書式
+#### REFERENCE の書式 <a name="describing_reference"></a>
 
 - REFERENCE は各エントリに最低１つ、必須となります。
 - Qualifier: ab\_name の Value には、論文等の著者名に準ずる形式で、氏名の略記を記載してください。
@@ -295,7 +295,7 @@ REFERENCE で使用する Qualifier のリスト
 - COMMON エントリと個々のエントリの双方に REFERENCE を入力した場合には、COMMON
   の情報から順に、フラットファイル上に反映されます。
 
-### DATE
+### DATE <a name="date"></a>
 
 例: アノテーションファイル内の DATE と hold\_date
 
@@ -303,7 +303,7 @@ REFERENCE で使用する Qualifier のリスト
 | ------ | ------- | -------- | ---------- | -------- |
 | COMMON | DATE    |          | hold\_date | 20181125 |
 
-#### DATE の書式
+#### DATE の書式 <a name="describing_date"></a>
 
   - DATE、hold\_date は必ず [COMMON](#common)
     エントリに入力してください。公開予定日が異なる場合には、ファイルを公開予定日毎に分けて作成してください。
@@ -312,7 +312,7 @@ REFERENCE で使用する Qualifier のリスト
   - 登録作業後、データの即時公開をご希望の場合には、DATE を入力しないでください。
   - 公開予定日をご指定いただいた場合は、[データ公開原則](/data-release-policy.html)に基づいて、公開作業を行ないます。
 
-### COMMENT/ST\_COMMENT
+### COMMENT/ST\_COMMENT <a name="comment"></a>
 
 例: アノテーションファイル内の COMMENT と ST\_COMMENT
 
@@ -330,7 +330,7 @@ REFERENCE で使用する Qualifier のリスト
 <span class="red">※</span> COMMENT には "一般 COMMENT" と "structured
 COMMENT" があります。詳細は以下をご覧ください。
 
-#### COMMENT (一般 COMMENT) の書式
+#### COMMENT (一般 COMMENT) の書式 <a name="describing_comment"></a>
 
   - 一般 COMMENT は必要に応じて登録者が自由な記述形式で内容を入力することができます。
   - COMMENT は [DDBJ フラットファイル](/ddbj/flat-file.html)上では 60
@@ -346,7 +346,7 @@ COMMENT" があります。詳細は以下をご覧ください。
     COMMENT を入力した場合は、アノテーションファイルに入力した順番でフラットファイル上に反映されます。
   - [EST の場合](#est)、特殊な COMMENT の記載が必要なことがあります。
 
-#### ST\_COMMENT (structured COMMENT) の書式
+#### ST\_COMMENT (structured COMMENT) の書式 <a name="describing_st_comment"></a>
 
   - ST\_COMMENT は一定のルールに従って構造化された COMMENT ([structured
     COMMENT](/ddbj/flat-file.html#Comment)) を記載するための feature です。
@@ -407,7 +407,7 @@ COMMENT" があります。詳細は以下をご覧ください。
 <span class="red">※</span> Biological feature の定義、記述方法の詳細については、[Feature
 Table Definition](/ddbj/full_index.html)をご参照ください。
 
-#### Feature/Location/Qualifier の書式
+#### Feature/Location/Qualifier の書式 <a name="#describing_feature"></a>
 
   - [Feature Table Definition](/ddbj/full_index.html) では、各 Qualifier の前に
     / \[slash\] が記述されておりますが、アノテーションファイルでは / を入力しないでください。
@@ -425,14 +425,14 @@ Table Definition](/ddbj/full_index.html)をご参照ください。
   - CDS feature を含むデータは、必ず、[UME](/ddbj/ume.html) または
     [transChecker](/ddbj/transchecker.html) を用いてアミノ酸翻訳をご確認ください。
 
-#### Value の書式
+#### Value の書式 <a name="#describing_value"></a>
 
   - 使用可能な文字種は Qualifier に依存します。詳細は [Feature Table
     Definition](/ddbj/full_index.html)および、[Feature/Qualifier
     の対応一覧表](/files/pdf/ddbj/fq-j.pdf)をご参照ください。
   - Value type に従い、各 Qualifier で指定されている文字種を使用して、正しく入力してください。
 
-### DIVISION<a name="division"></a>
+### DIVISION<a name="division"></a> 
 
 DIVISION は、登録データが [CON](/ddbj/data-categories.html#con) /
 [ENV](/ddbj/data-categories.html#env) /
@@ -450,7 +450,7 @@ DIVISION は、登録データが [CON](/ddbj/data-categories.html#con) /
 | ------ | -------- | -------- | --------- | ----- |
 | COMMON | DIVISION |          | division  | EST   |
 
-#### DIVISION の書式
+#### DIVISION の書式 <a name="DIVISION_の書式"></a>
 
   - Qualifier : division の Value にdivision
     の名称を示すアルファベット３文字を大文字で入力してください。
@@ -467,12 +467,12 @@ DATATYPE は、登録データが [WGS](/ddbj/wgs.html), [TLS](/ddbj/tls.html),
 | ------ | -------- | -------- | --------- | ----- |
 | COMMON | DATATYPE |          | type      | WGS   |
 
-#### DATATYPE の書式
+#### DATATYPE の書式 <a name="DATATYPE_の書式"></a>
 
   - Qualifier: type の Value に WGS, TLS, TPA, TPA-WGS の何れかを入力してください。
   - DATATYPE は [COMMON](#common) エントリに入力してください。
 
-### KEYWORD
+### KEYWORD <a name="keyword"></a>
 
 KEYWORD には、[DIVISION](#division) と [DATATYPE](#datatype)
 で示されたデータ種別を基本に、細分化した情報,
@@ -571,7 +571,7 @@ methodological keywords](/ddbj/keyword.html)をご参照ください。
   </tbody>
 </table>
 
-#### KEYWORD の書式
+#### KEYWORD の書式 <a name="KEYWORD_の書式"></a>
 
   - Qualifier: keyword の Value に該当する規定値を入力してください。
   - 詳細な記載方法に関しましては、登録毎にご連絡いたします。
@@ -643,7 +643,7 @@ methodological keywords](/ddbj/keyword.html)をご参照ください。
     |    |  <span class="red">KEYWORD</span>  |    |  <span class="red">keyword</span>   |  <span class="red">HTG</span>  |
     |    |    |    |  <span class="red">keyword</span>  |  <span class="red">HTGS_DRAFT</span>  |
 
-### DBLINK
+### DBLINK <a name="dblink"></a>
 
 DBLINK は、 BioProject ID、BioSample ID、Sequence Read Archive (DRA/ERA/SRA) 他, 特定データベースへのリンクを記載します。
 
@@ -656,7 +656,7 @@ DBLINK は、 BioProject ID、BioSample ID、Sequence Read Archive (DRA/ERA/SRA)
 |       |                                 |          | <span class="red">sequence read archive</span> | <span class="red">DRR999000</span>    |
 |       |                                 |          | <span class="red">sequence read archive</span> | <span class="red">DRR999001</span>    |
 
-#### DBLINK の書式
+#### DBLINK の書式<a name="DBLINK_の書式"></a>
 
   - 登録データが BioProject Database、BioSample Database に登録されている場合は、Qualifier:
     project の Value に BioProject ID、Qualifier: biosample の Value に
@@ -668,7 +668,7 @@ DBLINK は、 BioProject ID、BioSample ID、Sequence Read Archive (DRA/ERA/SRA)
     Database](/biosample/index.html), [Sequence Read
     Archive](/dra/index.html) もご参照ください。
 
-### locus\_tag
+### locus\_tag <a name="locus_tag"></a>
 
 アノテーションが付加された全ゲノム規模の登録に関しましては、タンパク質産物
 ([CDS](/ddbj/cds.html))、あるいは、転写産物(rRNA, tRNA など)を示す
@@ -677,7 +677,7 @@ DBLINK は、 BioProject ID、BioSample ID、Sequence Read Archive (DRA/ERA/SRA)
 locus\_tag prefix は事前に [BioProject Database](/bioproject/index.html) で
 BioProject ID を申請する際に取得して下さい。
 
-### source: ff\_definition
+### source: ff\_definition <a name="source"></a>
 
 ff\_definition は、The DDBJ/EMBL/GenBank Feature Table: Definition
 には定義されていない DDBJ 登録専用 Qualifier
@@ -737,7 +737,7 @@ ff\_definition 記述フォーマット
   </tbody>
 </table>
 
-#### source: ff\_definition の書式
+#### source: ff\_definition の書式 <a name="source__ff_definition_の書式"></a>
 
   - [Biological feature](#biological_feature) である source に Qualifier:
     ff\_definition を入力します。
@@ -752,7 +752,7 @@ ff\_definition 記述フォーマット
     Value に置換されます。
   - 上記表に示した記述フォーマットを基本としますが、ff\_definition の詳細な記載方法に関しましては、登録毎にご連絡いたします。
 
-### assembly\_gap: Sequencing Gap Region
+### assembly\_gap: Sequencing Gap Region <a name="assembly_gap"></a>
 
 [HTG](/ddbj/htg.html) に代表される大規模ゲノム配列やESTアセンブルによるトランスクリプトーム
 ([TSA](/ddbj/tsa.html)) 配列の登録などにおいて、アセンブル途上、難読領域であるなどの理由により生じる
@@ -767,7 +767,7 @@ sequencing gap 領域を下記の要領で、assembly\_gap feature を用いて�
 |       |               |          | gap\_type         | <span class="red">within scaffold</span> |
 |       |               |          | linkage\_evidence | <span class="red">paired-ends</span>     |
 
-#### assembly\_gap: Sequencing Gap Region の書式
+#### assembly\_gap: Sequencing Gap Region の書式 <a name="assembly_gap__Sequencing_Gap_Region_の書式"></a>
 
   - assembly\_gap feature は Biological feature の１つですが、特殊な書式になります。
   - assembly\_gap では、location に join, order, complement を使用することはできません。
@@ -785,7 +785,7 @@ unknown を記載することができません。
 長さが判明しているギャップ領域については、配列の相当位置に推定される長さの 'n' で記述する規則となっております。 また、Qualifier:
 estimated\_length で Value に known と記載します。
 
-### TOPOLOGY
+### TOPOLOGY <a name="topology"></a>
 
 TOPOLOGY は登録塩基配列全体の形状が環状で、最初の塩基と最後の塩基が実際には連続している場合に記載する必要があります。  
 例：環状ウイルスゲノムの全長など
@@ -796,7 +796,7 @@ TOPOLOGY は登録塩基配列全体の形状が環状で、最初の塩基と�
 | ----- | -------- | -------- | --------- | ----- |
 |       | TOPOLOGY |          | circular  |       |
 
-#### TOPOLOGY の書式
+#### TOPOLOGY の書式 <a name="TOPOLOGY_の書式"></a>
 
   - DDBJ [フラットファイル](/ddbj/flat-file.html)では、topology は [LOCUS 行](/ddbj/flat-file.html#Locus)に反映されます。詳細は[アノテーションファイルのサンプル](#sample)を参照してください。
 
@@ -843,7 +843,7 @@ PRIMARY\_CONTIG feature で使用可能な qualifier
   </tbody>
 </table>
 
-#### TPA/TSA: PRIMARY\_CONTIG プライマリーエントリ引用 の書式
+#### TPA/TSA: PRIMARY\_CONTIG プライマリーエントリ引用 の書式 <a name="TPA/TSA__PRIMARY_CONTIG_プライマリーエントリ引用_の書式"></a>
 
 - [DATATYPE/type](#datatype) で TPA、もしくは [DIVISION/division](#division) で TSA を指定しておく必要があります。
 
@@ -984,7 +984,7 @@ AGP ファイルの書式は、UCSC, EBI および NCBI により開発されま
 | scaffold2 | 651  | 750  | 2 | N | 100            | scaffold | yes  | align\_genus |
 | scaffold2 | 751  | 2980 | 3 | W | BZZZ01123488.1 | 1        | 1230 | \-           |
 
-### 書式と構文
+### 書式と構文 <a name="agp_format"></a>
 
 AGPファイルは、[UME](/ddbj/ume.html) (Utilities for MSS Error
 check)でチェックすることが可能です。

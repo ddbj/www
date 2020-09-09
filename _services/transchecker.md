@@ -21,7 +21,7 @@ related_pages:
 transChecker は Mass Submission System (MSS) を利用して DDBJ に登録する際に必要な
 [配列ファイル](/ddbj/file-format.html#sequence) と [アノテーションファイル](/ddbj/file-format-j.html#annotation) の記載を元に、[CDS feature](/ddbj/cds.html) のアミノ酸翻訳チェックを行うツールです。
 
-## インストール
+## インストール <a name="install"></a>
 
 <ol>
   <li>
@@ -109,7 +109,7 @@ exit $RETVAL
   </li>
 </ol>
 
-## 実行
+## 実行 <a name="exec"></a>
 
 任意のディレクトリで下記の通りに、コマンドを実行して下さい。
 
@@ -143,12 +143,12 @@ $ transChecker.sh -xsample.ann -ssample.fasta -eerrmsg.txt -orsl.fasta -taln.txt
 \-t[<span class="font-br font-normal">塩基配列とアミノ酸配列のアラインメントのファイル名</span>\]  
 : 翻訳結果を塩基配列とアミノ酸配列のアラインメントとして出力するファイルの名称を指定します。このオプションが指定されていない場合、アラインメントは出力されません。出力フォーマットは [塩基配列とのアラインメント](#output-1-2) をご参照ください。
 
-### アミノ酸配列のフォーマット
+### アミノ酸配列のフォーマット <a name="exec-1"></a>
 
 transChecker では２種類の形式を用意しています。  
 エラーがある場合でも、CDS feature で示される塩基配列に対応するアミノ酸配列をその状態で出力しますが、エラーの程度により出力されないこともあります。
 
-#### FASTA-like format
+#### FASTA-like format <a name="output-1-1"></a>
 
 以下に示す FASTA に類似の形式で出力します。
 

@@ -12,7 +12,7 @@ For further information of INSDC qualifier keys, read [Feature Table
 Definition](/ddbj/full_index-e.html): [7.3.1 Qualifier
 List](/ddbj/full_index-e.html#7.3.1).
 
-## Feature/Qualifier Usage Matrix
+## Feature/Qualifier Usage Matrix <a name="usage"></a>
 
 The chart below explains recommended combinations of feature and
 qualifier keys for DDBJ submissions.

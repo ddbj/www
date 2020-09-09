@@ -6,11 +6,11 @@ category: _activities
 lang: en
 ---
 
-## 2019 <a name="2019"></a>
+## 2019 <a name="2019"></a> 
 
 <div>
 
-### 32nd ICM: May 15-17 2019, Hinxton, UK
+### 32nd ICM: May 15-17 2019, Hinxton, UK 
 
 [International Nucleotide Sequence Database Collaboration
 (INSDC)](http://www.insdc.org/), consisted of DDBJ Center,
@@ -95,11 +95,11 @@ revision of [Feature Table Definition](/ddbj/full_index-e.html).
 
 </div>
 
-## 2018 <a name="2018"></a>
+## 2018 <a name="2018"></a> 
 
 <div>
 
-### 31st ICM: May 15-17 2018, Bethesda, USA
+### 31st ICM: May 15-17 2018, Bethesda, USA 
 
 [International Nucleotide Sequence Database Collaboration
 (INSDC)](http://www.insdc.org/), consisted of DDBJ Center,
@@ -207,11 +207,11 @@ otherwise specified.
 
 </div>
 
-## 2017 <a name="2017"></a>
+## 2017 <a name="2017"></a> 
 
 <div>
 
-### 30th ICM: May 24-26 2017, Mishima, Japan
+### 30th ICM: May 24-26 2017, Mishima, Japan 
 
 [International Nucleotide Sequence Database Collaboration
 (INSDC)](http://www.insdc.org/), consisted of DDBJ,
@@ -293,11 +293,11 @@ Definition](/ddbj/full_index-e.html) from the next revision.
 
 </div>
 
-## 2016 <a name="2016"></a>
+## 2016 <a name="2016"></a> 
 
 <div>
 
-### 29th ICM: May 16-18 2016, Hinxton, UK
+### 29th ICM: May 16-18 2016, Hinxton, UK 
 
 [International Nucleotide Sequence Database Collaboration
 (INSDC)](http://www.insdc.org/), consisted of DDBJ,
@@ -368,7 +368,7 @@ descriptions of miscellaneous features.
 
 <div>
 
-### 28th ICM: May 19-21 2015, Bethesda, USA
+### 28th ICM: May 19-21 2015, Bethesda, USA 
 
 [International Nucleotide Sequence Database Collaboration
 (INSDC)](http://www.insdc.org/), consisted of DDBJ,
@@ -434,11 +434,11 @@ otherwise specified.
 
 </div>
 
-## 2014 <a name="2014"></a>
+## 2014 <a name="2014"></a> 
 
 <div>
 
-### 27th ICM: May 20-22 2014, Mishima, Japan
+### 27th ICM: May 20-22 2014, Mishima, Japan 
 
 [International Nucleotide Sequence Database Collaboration
 (INSDC)](http://www.insdc.org/), consisted of DDBJ,
@@ -517,11 +517,11 @@ otherwise specified.
 
 </div>
 
-## 2013 <a name="2013"></a>
+## 2013 <a name="2013"></a> 
 
 <div>
 
-### 26th: May 21-23 2013, Hinxton, UK
+### 26th: May 21-23 2013, Hinxton, UK 
 
 [International Nucleotide Sequence Database Collaboration
 (INSDC)](http://www.insdc.org/), consisted of DDBJ,
@@ -641,11 +641,11 @@ specified.
 
 </div>
 
-## 2012 <a name="2012"></a>
+## 2012 <a name="2012"></a> 
 
 <div>
 
-### 25th ICM: June 11-13 2012, Bethesda, USA
+### 25th ICM: June 11-13 2012, Bethesda, USA 
 
 [International Nucleotide Sequence Database Collaboration
 (INSDC)](http://www.insdc.org/), consisted of DDBJ,
@@ -782,11 +782,11 @@ specified.
 
 </div>
 
-## 2011 <a name="2011"></a>
+## 2011 <a name="2011"></a> 
 
 <div>
 
-### 24th ICM: May 23-27 2011, Osaka, Japan
+### 24th ICM: May 23-27 2011, Osaka, Japan 
 
 [International Nucleotide Sequence Database Collaboration
 (INSDC)](http://www.insdc.org/), consisted of DDBJ,
@@ -956,11 +956,11 @@ version 2.0 will be applied from December 2011.
 
 </div>
 
-## 2010 <a name="2010"></a>
+## 2010 <a name="2010"></a> 
 
 <div>
 
-### 23rd ICM: May 19-21 2010, Hinxton, UK
+### 23rd ICM: May 19-21 2010, Hinxton, UK 
 
 International Nucleotide Sequence Database Collaboration (INSDC),
 consisted of DDBJ, EBI and NCBI, hold the international collaborators
@@ -1151,11 +1151,11 @@ specified.
 
 </div>
 
-## 2009 <a name="2009"></a>
+## 2009 <a name="2009"></a> 
 
 <div>
 
-### 22nd ICM: May 12-15 2009, Bethesda, USA
+### 22nd ICM: May 12-15 2009, Bethesda, USA 
 
 International Nucleotide Sequence Database Collaboration (INSDC), the
 three data banks; DDBJ, EMBL-Bank/EBI, GenBank/NCBI hold the
@@ -1284,7 +1284,7 @@ specified.
     /[note](/ddbj/qualifiers-e.html#note) qualifier is recommended.
     
     ``` flat-file code
-          /note="strain coidentity: JCM ### = NBRC ###" <a name=""></a>
+          /note="strain coidentity: JCM ### = NBRC ###"  
           /strain="ATCC ####"
     ```
 
@@ -1306,11 +1306,11 @@ specified.
 
 </div>
 
-## 2008 <a name="2008"></a>
+## 2008 <a name="2008"></a> 
 
 <div>
 
-### 21st ICM: May 20-22 2008, Mishima, Japan
+### 21st ICM: May 20-22 2008, Mishima, Japan 
 
 International Nucleotide Sequence Database Collaboration (INSDC), the
 three data banks; DDBJ, EMBL-Bank/EBI, GenBank/NCBI hold the
@@ -1481,11 +1481,11 @@ specified.
 
 </div>
 
-## 2007 <a name="2007"></a>
+## 2007 <a name="2007"></a> 
 
 <div>
 
-### 20th ICM: May 21-23 2007, Hinxton, UK
+### 20th ICM: May 21-23 2007, Hinxton, UK 
 
 International Nucleotide Sequence Database Collaboration (INSDC), the
 three data banks; DDBJ, EMBL-Bank/EBI, GenBank/NCBI hold the
@@ -1664,11 +1664,11 @@ specified.
 
 </div>
 
-## 2006 <a name="2006"></a>
+## 2006 <a name="2006"></a> 
 
 <div>
 
-### 19th ICM: May 15-17 2006, Bethesda, USA
+### 19th ICM: May 15-17 2006, Bethesda, USA 
 
 International Nucleotide Sequence Database Collaboration (INSDC), the
 three data banks; DDBJ, EMBL-Bank/EBI, GenBank/NCBI hold the
@@ -1804,11 +1804,11 @@ The outcomes of the meeting are summarized below.
 
 </div>
 
-## 2005 <a name="2005"></a>
+## 2005 <a name="2005"></a> 
 
 <div>
 
-### 18th ICM: May 16-18 2005, Mishima, Japan
+### 18th ICM: May 16-18 2005, Mishima, Japan 
 
 To operate and implement the collaborative construction of the
 international nucleotide sequence database, the three data banks; DDBJ,

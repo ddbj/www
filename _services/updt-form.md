@@ -5,7 +5,7 @@ category: services
 lang: ja
 ---
 
-### 登録データの修正・更新 申し込みの流れ
+### 登録データの修正・更新 申し込みの流れ <a name="flow"></a>
 
 {: .flow .flow_ja }
 - 登録データの修正・更新 申し込み

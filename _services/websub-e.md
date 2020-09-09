@@ -31,7 +31,7 @@ Before submission, read ["Submission of research data from human subjects"](/pol
 
 </div>
 
-## How to submit
+## How to submit <a name="How_to_submit"></a>
 
 <div class="nsss-menu">
 
@@ -58,7 +58,8 @@ See "Related Pages" in the sidebar.
 OS  
 : System requirements:[Firefox](https://www.mozilla.org/ja/firefox/all/) or [Chrome](https://www.google.com/chrome/browser/desktop/index.html). Not work on Microsoft Edge.
 
-## Submission
+## Submission <a name="Submission"></a>
+
 The first-time submission  
 : Please read the descriptions of "[Nucleotide Sequence Submission](/ddbj/submission-e.html)" and "[Categories for Sequence Data](/data-categories-e.html)".
 : Maximum number of 1 submission: 1024 (depends on PC environment/sequence length) 
@@ -76,7 +77,7 @@ Resume the submission
 Recommended browsers
 : We recommend to use [Firefox](https://www.mozilla.org/ja/firefox/all/) and [Chrome](https://www.google.com/chrome/browser/desktop/index.html) for this submission system. We confirmed Microsoft Edge for Windows 10 does not work to use this system.
 
-## Updates/ Questions
+## Updates/ Questions <a name="Updates/_Questions"></a>
 
   - This system accepts only new submissions. DO NOT send update request via this system.  
     After getting accession number(s), send request/question from [Update.](/ddbj/updt-e.html).

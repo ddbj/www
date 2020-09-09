@@ -9,7 +9,7 @@ lang: ja
 DDBJ への新規登録において使用を推奨する feature key の定義を以下に挙げています。  
 INSDC において運用している feature key に関する詳細は、Feature Table Definition の [7.2 Appendix II: Feature keys reference](/ddbj/full_index.html#7.2) をご参照ください。
 
-## Feature/Qualifier 対応
+## Feature/Qualifier 対応 <a name="usage"></a>
 
 Feature/Qualifier 対応一覧表には、DDBJ へ登録を推奨する feature と qualifier の組み合わせを示しています。
 

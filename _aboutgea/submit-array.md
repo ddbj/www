@@ -6,54 +6,54 @@ category: aboutgea
 lang: ja
 ---
 
-## GEA 登録の流れ
+## GEA 登録の流れ <a name="gea-submission-flow"></a>
 
-### 1\. 登録アカウントを取得
+### 1\. 登録アカウントを取得 
 
   - [D-way 登録アカウント](https://ddbj.nig.ac.jp/D-way/)を作成
   - [公開鍵と center nameをアカウントに登録](/account.html#enable-dra-submission-in-account)しGEA 登録を可能に
 
-### 2\. BioProjectとBioSampleを登録
+### 2\. BioProjectとBioSampleを登録 
 
-#### [BioProject](/bioproject/submission.html)
+#### [BioProject](/bioproject/submission.html) <a name="BioProject"></a>
 
   - 研究プロジェクトの内容
 
-#### [BioSample](/biosample/submission.html) ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
+#### [BioSample](/biosample/submission.html)<a name="_BioSample"></a> ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
 
   - 実験データを得るのに使われた生物学的、物理的にユニークなサンプル
 
 ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
     メタデータをタブ区切りテキストファイルで登録できます
 
-### 3\. 生データと解析済みデータファイルをアップロード
+### 3\. 生データと解析済みデータファイルをアップロード 
 
   - GEA 登録用ディレクトリに生データと解析済みデータファイルをアップロード
   - \[必要であれば\] アレイデザインが [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA に未登録の場合、GEA 登録用ディレクトリにデータファイルと一緒にアレイデザインファイルをアップロード
 
-### 4\. BioProjectとBioSampleを選択
+### 4\. BioProjectとBioSampleを選択 <a name=""></a>
 
   - GEA 登録で参照する BioProject を一つ選択
   - GEA 登録で参照する複数 BioSample を選択。通常の GEA 登録は一つ以上のサンプルで構成されます
 
-### 5\. IDFとSDRFを作成
+### 5\. IDFとSDRFを作成 <a name=""></a>
 
-#### IDF
+#### IDF <a name="idf"></a>
 
   - [IDF(Investigation Description Format)](/gea/metadata.html#idf)
     ファイルで実験デザイン、プロトコールや文献情報といった実験全体を記述します
 
-#### SDRF ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
+#### SDRF <a name="sdrf"></a> ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
 
   - [SDRF(Sample and Data RelationshipFormat)](/gea/metadata.html#sdrf) ファイルでサンプル属性とサンプル、アレイ、データファイル間の関係性を記述します
   - 選択した BioProject と BioSample の内容から生成された SDRF テンプレートファイルに必要な情報を追加します
 
-### 6\. IDFとSDRFを投稿しデータファイルを検証する
+### 6\. IDFとSDRFを投稿しデータファイルを検証する 
 
   - 登録ウェブシステムから IDF と SDRF を投稿するとアップロードしたデータファイルの[検証処理](/gea/validation.html)が自動的に始まります
   - 検証処理を通過した登録が査定されます
 
-## 登録前のチェックリスト
+## 登録前のチェックリスト <a name="checklist"></a>
 
 {::options parse_block_html="true" /}
 <div class="accordion-menu">
@@ -91,9 +91,9 @@ GEA では一つの登録に異なる種類のテクノロジー（マイクロ�
 </div>
 </div>
 
-## Microarray experiment の登録
+## Microarray experiment の登録 <a name="array-sub"></a>
 
-### 新規登録の作成
+### 新規登録の作成 <a name="create-new-submission"></a>
 
 [D-way(https://trace.ddbj.nig.ac.jp/D-way)](https://ddbj.nig.ac.jp/D-way/) にログインするとトップページが表示されます。上部の GEA メニューから GEA 登録サイトに移動します。
 
@@ -126,7 +126,7 @@ DDBJ センターから登録者に問い合わせた後三か月以上回答が
 | Public           | 公開されている状態                     |
 
 {::options parse_block_html="true"/}
-### 生データと解析済みファイルのアップロード<a name="upload-data"></a>
+### 生データと解析済みファイルのアップロード<a name="upload-data"></a> 
 
 {::options parse_block_html="true" /}
 <div class="accordion-menu">
@@ -274,7 +274,7 @@ ftp-private.ddbj.nig.ac.jp サーバに秘密鍵を使って ssh でログイン
 ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 </div>
 
-### Submission
+### Submission <a name="Submission"></a>
 
 四年以内の公開予定日指定、もしくは、データ処理後即日公開を選択します。登録者の名前と所属組織は公開されますがメールアドレスは公開されません。
 
@@ -286,7 +286,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 {% include image.html url="books/array-sub2.jpg" caption="登録管理情報を入力します" class="w550" %}
 {:/}
 
-### BioProject
+### BioProject <a name="BioProject"></a>
 
 自身のアカウントで登録済みのBioProjectを一つ選択します。 BioProject が未登録の場合は [BioProject登録サイト](/bioproject/submission.html#bioproject-submission)でプロジェクトを登録します。
 
@@ -296,7 +296,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 {% include image.html url="books/gea-bp.jpg" caption="GEA 登録で使う BioProject を一つ選択します" class="w550" %}
 {:/}
 
-### BioSample
+### BioSample <a name="BioSample"></a>
 
 自身のアカウントで登録済みの BioSample を選択します。 BioSample が未登録の場合は [BioSample登録サイト](/biosample/submission.html#biosample-submission)でサンプルを登録します。
 
@@ -306,7 +306,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 {% include image.html url="books/gea-bs.jpg" caption="GEA 登録で使うBioSampleを選択します" class="w550" %}
 {:/}
 
-### IDF
+### IDF <a name="idf"></a>
 
 [IDF(Investigation Description Format)](/gea/metadata.html#idf) の内容を入力します。
 
@@ -321,7 +321,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 {% include image.html url="books/array-idf.jpg" caption="IDF の内容を入力" class="w600" %}
 {:/}
 
-### SDRF
+### SDRF <a name="sdrf"></a>
 
 {::nomarkdown}
 {% include image.html url="books/array-sdrf.jpg" caption="SDRF テンプレートファイルをダウンロード" class="w400" %}
@@ -372,7 +372,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 {% include image.html url="books/array-sdrf2.jpg" caption="作成した SDRF ファイルを選択" class="w450" %}
 {:/}
 
-### Overview と投稿
+### Overview と投稿 <a name="submit"></a>
 
 最後の Overview タブで IDF と SDRF ファイルをダウンロードして内容をチェックします。修正が必要な場合はタブを戻ってメタデータを修正します。
 
@@ -382,7 +382,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 {% include image.html url="books/array-overview.jpg" caption="IDF と SDRF の内容を確認してから投稿" class="w450" %}
 {:/}
 
-### 検証処理
+### 検証処理 <a name="validation"></a>
 
 メタデータ投稿時に IDF と SDRF に記載されているデータファイルが対象の登録用ディレクトリにアップロードされていない場合、"Datafile is not uploaded" というエラーメッセージが表示され投稿が中断されます。
 
@@ -392,7 +392,7 @@ Validatorは[validation rule](/gea/validation.html)に従ってメタデータ�
 {% include image.html url="books/array-validation.jpg" caption="エラーとワーニングメッセージ" class="w500" %}
 {:/}
 
-### アクセッション番号
+### アクセッション番号 <a name="accession"></a>
 
 完成した GEA experiment に対して [GEA アクセッション番号](/gea/overview.html#acc)が発行されます。
 
@@ -402,9 +402,9 @@ Validatorは[validation rule](/gea/validation.html)に従ってメタデータ�
 {% include image.html url="books/array-accession.jpg" caption="GEA アクセッション番号" class="w500" %}
 {:/}
 
-## 更新
+## 更新 <a name="update-submission"></a>
 
-### 各データベースにおける更新方法
+### 各データベースにおける更新方法 <a name="update-in-each-database"></a>
 
 <table>
 <colgroup>
@@ -432,11 +432,11 @@ Validatorは[validation rule](/gea/validation.html)に従ってメタデータ�
 </tbody>
 </table>
 
-### アーカイブされた experiment の削除
+### アーカイブされた experiment の削除 <a name="withdraw-archived-objects"></a>
 
 アーカイブされた Experiment を削除する場合は [GEA チームに連絡](/contact.html)します。
 
-## 補足: MD5値<a name="supplement-md5"></a>
+## 補足: MD5値<a name="supplement-md5"></a> 
 
 MD5(Message Digest Algorithm 5) はハッシュ関数であり、与えられたファイルに対してハッシュ値 (MD5値、32桁の英数字)を出力します。ファイルが破損していると MD5 値が変化します。 DRA では、到着したファイルの MD5 値の一致をチェックすることで、ファイルの破損がないかどうか確認しています。
 

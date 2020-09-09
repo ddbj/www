@@ -6,14 +6,14 @@ category: tentative
 lang: ja
 ---
 
-## 背景
+## 背景 <a name="背景"></a>
 
 /locus\_tag qualifier は、2003年に導入されました。その導入当初は、ゲノムプロジェクトが
 その配列データを更新する際などに feature 継承をするための追跡用 ID として自由度の高い記載を可能としていました。
 
 しかし、[The American Society for Microbiology](https://www.asm.org/) からの要請を受けて、[2005年の国際実務者会議](/activities/icm-reports.html#2005)において、/locus\_tag qualifier の用法が再検討されました。その結果、/locus\_tag qualifier を恒久的に一意な ID として維持していくことを目指して、配列データの登録時に当該ゲノム専用の prefix を割り当てることにより、/locus\_tag を記載するように規則が変更されました。
 
-## ゲノム配列データの登録における /locus\_tag の適切な用法
+## ゲノム配列データの登録における /locus\_tag の適切な用法 <a name="ゲノム配列データの登録における_/locus_tag_の適切な用法"></a>
 
 国際実務者会議 (International Collaborators Meeting) において、ゲノムプロジェクトを INSDC
 に登録するように求めていく、と合意しています。各ゲノムプロジェクトに ID を割り当てることにより、複数の配列データを各ゲノムプロジェクトに関連付けることが可能になります。この Project ID は、[DDBJ フラットファイル](/ddbj/flat-file.html)においては [ACCESSION](/ddbj/flat-file.html#Accession) 行と [VERSION](/ddbj/flat-file.html#Version) 行の下に表示されます。ゲノムプロジェクトの登録は DDBJ, EMBL-Bank/EBI, GenBank/NCBI で行うことができます。登録者はゲノムプロジェクトの登録に際し、同時に /locus\_tag prefix の登録を行うことができます。

@@ -24,7 +24,7 @@ related_pages:
     url: /wabi_blast-help-e.html
 ---
 
-## About VecScreen
+## About VecScreen <a name="About_VecScreen"></a>
 
 VecScreen is a tool that can detect foreign DNAs such as vector, linker,
 adapter, and primer regions (we call vector contamination in this
@@ -34,7 +34,7 @@ against vector sequence database. The main unit of this tool is
 NCBI](//www.ncbi.nlm.nih.gov/tools/vecscreen/univec/).
 
 
-## Available Internet browsers
+## Available Internet browsers <a name="browser"></a>
 
 We confirmed that IE8 or newer, latest version of Firefox, Chrome, and
 Safari can work correctly. If you use VecScreen by an older version of
@@ -42,7 +42,7 @@ Internet browser, you may meet some trouble for executing the search.
 
 
 
-## How to use
+## How to use <a name="usage"></a>
 
 ![imagemap]({{ site.baseurl }}/assets/images/help/VecScreen-Usage.png)
 
@@ -51,7 +51,7 @@ Internet browser, you may meet some trouble for executing the search.
 [](#resultviewer "Result viewer")
 
 
-### Query
+### Query <a name="query"></a>
 
   - Please enter the query sequence(s) in FASTA format. Please put query
     sequence(s) on the text box or upload the query sequence(s) through
@@ -107,7 +107,7 @@ shorten the sequence length and retry the search.
 
 
 
-### WWW or Email
+### WWW or Email <a name="www"></a>
 
 When "WWW" is selected, the result is interactively displayed on the
 screen. If you would like to obtain the result by an email, please
@@ -116,7 +116,7 @@ by default.
 
 
 
-### Databases
+### Databases <a name="database"></a>
 
 Please select a vector database either UniVec or UniVec_Core. UniVec is
 selected in the default. The system uses the same database that can be
@@ -144,7 +144,7 @@ UniVec can do it.
 
 
 
-### Output format
+### Output format <a name="format"></a>
 
 Please select a type of result format. "HTML format, with alignment" is
 set in the default.
@@ -169,9 +169,7 @@ Text list, no alignment
 : Result is obtained in TEXT format. Summary of the result is only
 displayed([example]({{ site.baseurl }}/assets/images/help/VecScreen-TEXTwoAlign.png)).
 
-
-
-### There is no parameter settings
+### There is no parameter settings <a name="There_is_no_parameter_settings"></a>
 
 VecScreen does not have option for blastn parameters. The tool executes
 vecscreeen program that is obtained from NCBI. For details, please refer
@@ -179,14 +177,12 @@ the links below.
 [//www.ncbi.nlm.nih.gov/tools/vecscreen/about/](//www.ncbi.nlm.nih.gov/tools/vecscreen/about/)  
 [//www.ncbi.nlm.nih.gov/tools/vecscreen/univec/](//www.ncbi.nlm.nih.gov/tools/vecscreen/univec/)
 
-### Execution (Send to VecScreen)
+### Execution (Send to VecScreen) <a name="execute"></a>
 
 Vector contamination check starts when you click "Send to vecscreen".
 When you click "Clear" query sequence(s) is erased.
 
-
-
-### Result screen
+### Result screen <a name="result"></a>
 
 According the scores and e-value, the result are displayed with the
 classification of three categories, **Strong match**, **Moderate
@@ -198,10 +194,7 @@ region from vector hit position to the end are also detected as
 details, please refer to the URL below.
 [//www.ncbi.nlm.nih.gov/tools/vecscreen/about/#Categories](//www.ncbi.nlm.nih.gov/tools/vecscreen/about/#Categories)
 
-
-
-
-## Determination of the position of vector contamination
+## Determination of the position of vector contamination <a name="Determination_of_the_position_of_vector_contamination"></a>
 
 If you would like to carry out the detection of vector contamination
 automatically, the regions that are indicated by **Strong match** and
@@ -234,7 +227,7 @@ the cloning experiment.
 
 
 
-## Exceptions
+## Exceptions <a name="Exceptions"></a>
 
 UniVecデータベースの構成上，以下の配列をクエリーに用いた場合もベクターコンタミとして検出されることになりますのでご承知おきください。
 詳しくは，[//www.ncbi.nlm.nih.gov/tools/vecscreen/interpretation/#Exceptions](//www.ncbi.nlm.nih.gov/tools/vecscreen/interpretation/#Exceptions)
@@ -250,7 +243,7 @@ and Insertion Sequences, Other specialized elements from a variety of
 sources (including a few from humans)
 </div>
 
-## Request ID
+## Request ID <a name="requestid"></a>
 
 {: .float-left }
 After pressing the "Send to VecScreen" button, Request ID is displayed
@@ -264,7 +257,7 @@ the browser is closed.
 ![VecScreen-RequestID]({{ site.baseurl }}/assets/images/help/VecScreen-RequestID-e.png)
 
 {: .float-release }
-## Result viewer
+## Result viewer <a name="resultviewer"></a>
 
 {: .float-left }
 You can obtain the result from Request ID. Please click "Result viewer"
@@ -275,7 +268,7 @@ Request ID and click "display".
 ![VecScreen-ResultViewer]({{ site.baseurl }}/assets/images/help/VecScreen-ResultViewer-e.png)
 
 {: .float-release }
-## Time limit for viewing a result
+## Time limit for viewing a result <a name="Time_limit_for_viewing_a_result"></a>
 
 The result is eliminated in 7 days after execution.
 

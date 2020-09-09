@@ -101,6 +101,8 @@ collections:
     output: true
   news:
     output: true
+  sc:
+    output: true
 
 defaults:
   - scope:

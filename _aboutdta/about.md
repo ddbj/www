@@ -6,9 +6,7 @@ category: aboutdta
 lang: ja
 ---
 
-  - [連絡先](#contact)
-
-## 連絡先 <a id="contact"></a>
+## 連絡先 <a name="contact"></a>
 
 [メッセージフォーム](/contact.html)よりご連絡ください。
 

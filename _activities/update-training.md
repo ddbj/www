@@ -26,8 +26,7 @@ DDBJが主催する講習会の他に、研究機関の人材育成や大学等�
 
 <div class="section">
 
-## D-STEP 講習会  
-（DDBJ-Supercomputer Training & Educational Program）
+## D-STEP 講習会 <br> （DDBJ-Supercomputer Training & Educational Program） <a name="d-step"></a>
 
 本プログラムは、[ROIS](http://www.rois.ac.jp/)機構長裁量プログラム（データサイエンス高度人材育成プログラム）への取り組みの一環として、ビッグデータの解析、主として次世代ゲノムシーケンス（NGS)解析需要に対応できる人材を国内で育成することを目的としています。また本プログラムで、DDBJは[データサイエンス共同利用基盤施設](https://ds.rois.ac.jp/)の[ゲノムデータ解析支援センター](https://genome-info.nig.ac.jp/)ならびに[ライフサイエンス統合データベースセンター](http://dbcls.rois.ac.jp/)との連携を強化します。
 2017年度より2020年度までの間に、NGSデータの様々な配列解析手法やゲノム以外のビッグデータ解析（機械学習、AIなど）について、DDBJ内外からの幅広い分野の講師によるハンズオンを主とした講習会を実施する予定です。
@@ -36,7 +35,7 @@ DDBJが主催する講習会の他に、研究機関の人材育成や大学等�
 
 <div class="section">
 
-## All-in-one 合同講習会（NBDC, DBCLS, PDBj, DDBJ の合同講習会）
+## All-in-one 合同講習会（NBDC, DBCLS, PDBj, DDBJ の合同講習会） <a name="all-in-one"></a>
 
 日本の生命科学研究の推進には、研究者が観測・測定したデータを国内外に発信する一方、それら様々なデータを統合化して研究者に提供し活用していただくことが欠かせません。このような日本の基盤的生命科学データベースの構築・管理・運営を担っております[バイオサイエンスデータベースセンター（NBDC）](https://biosciencedbc.jp/)、[ライフサイエンス統合データベースセンター（DBCLS）](http://dbcls.rois.ac.jp/)，[日本蛋白質構造データバンク（PDBj）](https://pdbj.org/)、日本 DNA データバンク（DDBJ）の4機関が合同で講習会を開催しています。
 
@@ -44,13 +43,13 @@ DDBJが主催する講習会の他に、研究機関の人材育成や大学等�
 
 <div class="section">
 
-## 講習会 アーカイブ
+## 講習会 アーカイブ <a name="archive"></a>
 
-### 2019
+### 2019 <a name="2019"></a>
 
 <div class="section">
 
-#### 第5回 D-STEP 講習会（第２回メタボロミクスソフトウェア講習会）
+#### 第5回 D-STEP 講習会（第２回メタボロミクスソフトウェア講習会） <a name="d-5"></a>
 
 第2回メタボロミクスソフトウェア講習会」を[質量分析インフォマティクス研究会](http://ms-bio.info/)（[日本バイオインフォマティクス学会(JSBi)](https://www.jsbi.org/)）との共同開催で実施しました。
 
@@ -70,7 +69,7 @@ DDBJが主催する講習会の他に、研究機関の人材育成や大学等�
 
 <div class="section">
 
-#### 第39回 DDBJing 講習会 with 「先進ゲノム支援」情報解析講習会
+#### 第39回 DDBJing 講習会 with 「先進ゲノム支援」情報解析講習会 <a name="39"></a>
 
 本講習会は中級者向け情報解析講習会として、プログラミング言語「Python」を用いたRNA-seqデータの視覚化や多変量解析等のプログラミング実習を中心に実施しました。
 
@@ -104,7 +103,7 @@ DDBJが主催する講習会の他に、研究機関の人材育成や大学等�
 
 <div class="section">
 
-#### 第38回 DDBJing 講習会 with MS-BIO.info
+#### 第38回 DDBJing 講習会 with MS-BIO.info <a name="38"></a>
 
 本講習会のテーマは、主に質量分析を用いたリピドミクスで、国内外の研究者を対象としています。[60th International Conference on the Bioscience of Lipids (ICBL)](http://60th-icbl.tokyo/)
 のサテライトワークショップとして開催されました。
@@ -125,7 +124,7 @@ DDBJが主催する講習会の他に、研究機関の人材育成や大学等�
 
 <div class="section">
 
-#### 第4回 D-STEP 講習会 with RinkaiHackathon2019
+#### 第4回 D-STEP 講習会 with RinkaiHackathon2019 <a name="d-4"></a>
 
 本講習会は，RinkaiHackathon2019 with DDBJingの一部として実施されました。[島根大学](https://www.shimane-u.ac.jp/)との共同開催です。
 
@@ -144,7 +143,7 @@ DDBJが主催する講習会の他に、研究機関の人材育成や大学等�
 
 <div class="section">
 
-#### All-in-one 合同講習会 2018／統合データベース講習会：AJACS 番町２
+#### All-in-one 合同講習会 2018／統合データベース講習会：AJACS 番町２ <a name="a-2018"></a>
 
   - 日時： 2019年1月28日
 
@@ -164,11 +163,11 @@ DDBJが主催する講習会の他に、研究機関の人材育成や大学等�
 
 </div>
 
-### 2018
+### 2018 <a name="2018"></a>
 
 <div class="section">
 
-#### 第3回 D-STEP 講習会
+#### 第3回 D-STEP 講習会 <a name="d-3"></a>
 
   - 日時：2018年11月12日
 
@@ -195,7 +194,7 @@ DDBJが主催する講習会の他に、研究機関の人材育成や大学等�
 
 <div class="section">
 
-#### 第2回 D-STEP 講習会
+#### 第2回 D-STEP 講習会 <a name="d-2"></a>
 
   - 日時：2018年7月14日
   - 場所：国立遺伝学研究所 （静岡県三島市）
@@ -212,7 +211,7 @@ DDBJが主催する講習会の他に、研究機関の人材育成や大学等�
 
 <div class="section">
 
-#### 第37回 DDBJing 講習会 with RinkaiHackathon2018
+#### 第37回 DDBJing 講習会 with RinkaiHackathon2018 <a name="37"></a>
 
 本講習会は，RinkaiHackathon2018 with DDBJing
 の名前で、国内外の大学院生や研究員の方を対象として開催しました。全体は6月10日から13日までの４日間で、[日本バイオインフォマティクス学会(JSBi)](//www.jsbi.org/),[広島大学](//www.hiroshima-u.ac.jp/)との共同開催です。
@@ -234,7 +233,7 @@ DDBJが主催する講習会の他に、研究機関の人材育成や大学等�
 
 <div class="section">
 
-#### 第1回 D-STEP 講習会 & 第36回 DDBJing 講習会 in 三島
+#### 第1回 D-STEP 講習会 & 第36回 DDBJing 講習会 in 三島 <a name="d-1"></a>
 
   - 日時：2018年1月26日
 
@@ -255,11 +254,11 @@ DDBJが主催する講習会の他に、研究機関の人材育成や大学等�
 
 </div>
 
-### 2017
+### 2017 <a name="2017"></a>
 
 <div class="section">
 
-#### 第35回 DDBJing 講習会 in 沖縄工業高等専門学校（on-demand）
+#### 第35回 DDBJing 講習会 in 沖縄工業高等専門学校（on-demand） <a name="35"></a>
 
 本講習会は，沖縄工業高等専門学校より依頼を受けて，教職員，学生の方を対象として開催いたしました。内部向けの講習会の開催（on-demand）を希望される方は[こちら](/contact.html)からご連絡ください。
 
@@ -276,7 +275,7 @@ DDBJが主催する講習会の他に、研究機関の人材育成や大学等�
 
 <div class="section">
 
-#### All-in-one 合同講習会 2017 ～生命科学の最先端に触れてみよう～
+#### All-in-one 合同講習会 2017 ～生命科学の最先端に触れてみよう～ <a name="a-2017"></a>
 
   - 日時：2017年5月27日
   - 場所：三島市民文化会館（ゆうゆうホール）　小ホール（静岡県三島市）

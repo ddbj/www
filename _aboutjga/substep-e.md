@@ -6,7 +6,7 @@ category: aboutjga
 lang: en
 ---
 
-## JGA overview
+## JGA overview <a name="overview"></a>
 
 The [DNA Data Bank of Japan (DDBJ) Center](../) operates the Japanese Genotype-phenotype Archive (JGA) for human genotype and phenotype data in collaboration with [National Bioscience Database Center (NBDC)](http://humandbs.biosciencedbc.jp/en/).
 
@@ -21,9 +21,9 @@ The [DNA Data Bank of Japan (DDBJ) Center](../) operates the Japanese Genotype-p
 This page explains how to submit data to the JGA.  
 For JGA overview, see [this slide (Japanese only)](https://drive.google.com/file/d/12IaBZHub6s9fNK55S0r6x0U7MD2oQsk_).
 
-## Create metadata by using excel
+## Create metadata by using excel <a name="create-metadata-using-excel"></a>
 
-### Enter metadata into the excel
+### Enter metadata into the excel <a name="enter-metadata-into-excel"></a>
 
 Download and fill in the metadata in English. For the JGA metadata, see [this page](/jga/submission-e.html).
 
@@ -44,11 +44,11 @@ Do NOT include any white spaces in the names of files to be uploaded to JGA.
 When possible, concatenate the multiple data files in the Data/Analysis object to reduce the number of files per object for smoother download.
 </div>
 
-### Example metadata excel
+### Example metadata excel <a name="example-submission"></a>
 
 [Example metadata excel](https://docs.google.com/spreadsheets/d/1HHlxItj89fQv2oWUNBIHZ4VVGwbcC09WGD5tEiXAQZ4/edit#gid=744299318).
 
-### JGA submission tool
+### JGA submission tool <a name="jga-submission-tool"></a>
 
 Download the latest JGA submission tool (last updated: 2018-04-16，v3.5.0) and run the tool by executing JGATool.bat.
 
@@ -57,7 +57,7 @@ Download the latest JGA submission tool (last updated: 2018-04-16，v3.5.0) and 
 Execute in the Java 8. In the Java 7, the tool does not work. [How to use in the proxy envinronment.](#How_to_use_in_the_proxy_environment)
 </div>
 
-#### Windows
+#### Windows <a name="Windows"></a>
 
 [JGA submission tool (Windows)]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool.zip)
 
@@ -65,7 +65,7 @@ Execute the tool by double clicking the bat file in the expanded files.
 
 <span class="red">Java Runtime Environment Version 8 Update 45 and newer are required.</span>
 
-#### Unix
+#### Unix <a name="Unix"></a>
 
 [JGA submission tool (Unix)]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool_unix.zip)
 
@@ -73,7 +73,7 @@ Excecute the sh file by shell in the expanded files.
 
 <span class="red">Java SE Development Kit 8u45 and newer are required. Does not work in the OpenJDK.</span>
 
-### Upload the excel
+### Upload the excel <a name="upload-excel"></a>
 
 Execute the JGA tool and login it by using the login ID and password sent from [NBDC](http://humandbs.biosciencedbc.jp/).
 
@@ -101,7 +101,7 @@ After uploading the excel, contact the [JGA team](/contact-e.html).
 Do NOT send the metadata excel by e-mail.
 </div>
 
-### Download Excel/XML files
+### Download Excel/XML files <a name="download-excel-xml-files"></a>
 
 Users can download the excel with filename ended with "\_metadata.xlsx" and XML files by using the tool.
 
@@ -119,9 +119,9 @@ one-by-one to your computer.
 {% include image.html url="submission/jgadown2.jpg" caption="Download XML" class="w500" %}
 {:/}
 
-## Upload data files
+## Upload data files <a name="upload-data-files"></a>
 
-### Data file format
+### Data file format <a name="data-file-format"></a>
 
 In the JGA submission system, file and archive, compression formats are judged by the file extensions.
 
@@ -129,7 +129,7 @@ In the JGA submission system, file and archive, compression formats are judged b
   - Do not compress the bam file.
   - Do not tar archive the compressed files by gz or bzip, instead, tar.gz the un-compressed files.
 
-### File formats for submission
+### File formats for submission <a name="file-formats-submission"></a>
 
 Register the individual-level next-generation sequencing (NGS) fastq and bam files to the Data object and the microarray, variation, questionnaire files (non-NGS data) to the Analysis object.
 
@@ -137,7 +137,7 @@ Register the individual-level next-generation sequencing (NGS) fastq and bam fil
 It is important for making data reusable and reproducible that the processed data on which the conclusions in the related manuscript are based, are registered to JGA. Please submit processed data files such as VCF in Analysis objects.
 </div>
 
-### metadata XML file
+### metadata XML file <a name="metadata-xml-file"></a>
 
 Select the downloaded XML and data files and upload them to the target submission by using the tool.
 
@@ -145,7 +145,7 @@ Select the downloaded XML and data files and upload them to the target submissio
 {% include image.html url="submission/jgasub4.jpg" caption="Uplaod the metadata XML and data files" class="w500" %}
 {:/}
 
-### Validation of submitted files
+### Validation of submitted files <a name="validation-submitted-files"></a>
 
 Submitted metadata and data files are validated and the data files are uploaded in the encrypted form.
 
@@ -162,7 +162,7 @@ When an error message is shown, contact [the JGA team](/contact-e.html).
 {% include image.html url="submission/jgasub5.jpg" caption="Validated metadata XML and data files" class="w500" %}
 {:/}
 
-### How to select files
+### How to select files <a name="select-files"></a>
 
 Users can select multile files in the left window.
 
@@ -189,7 +189,7 @@ All files in the directory are selected by clicking the folder checkbox.
 {% include image.html url="submission/jga_dir_select.jpg" caption="Check the sub-directory" class="w500" %}
 {:/}
 
-### How to use in the proxy environment
+### How to use in the proxy environment <a name="use-proxy-environment"></a>
 
 To use the tool in the proxy environment, users need to configure the file.
 
@@ -209,7 +209,7 @@ When the proxy server require the authentication, enter the credentials in the w
 
 The v3.2.0 can handle the BASIC authentification but can not handle the Digest one.
 
-## Send the data files in hard disk
+## Send the data files in hard disk <a name="send-data-files-in-hard-disk"></a>
 
 When uploading files by the JGA tool takes too long time, for uploading large number and size of files, we accept the files in the hard disk drives.
 
@@ -220,7 +220,7 @@ Check the entire disk by anti-virus checker.<br>
 Shipping fee should be paid by the user.
 </div>
 
-### Encrypt data files
+### Encrypt data files <a name="encrypt-data-files"></a>
 
 Encrypt the data files by using the JGA data encryption tool and copy them into the hard disk. Upload the XML files by using the JGA submission tool and do not include them in the disk.
 
@@ -299,7 +299,7 @@ Error messages
 | \[code 13\] output dir is not a directory : \<target\> | \-o soecified path id not a directory.                                 |
 | \[code 14\] target is not a file : \<target\>          | \-t path id not a file.                                                |
 
-### Sending files
+### Sending files <a name="sending-files"></a>
 
 For the JGA submission, three files "encrypted data files", "key file" and "md5 file" are neccesary. Copy them to the hard disk.
 

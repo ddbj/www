@@ -9,9 +9,9 @@ lang: en
 Single amplified genome (SAG) data are produced through processes of single-cell isolation, cell lysis, whole genome amplification and
 sequencing. Because most cells contain a single or very few genome copies, introducing even trace amounts of contaminant DNA can severely affect SAG data quality. This page describes the guideline for SAG data submission to distinguish SAG from other genomes.
 
-## Single cell
+## Single cell <a name="single-cell"></a>
 
-### DDBJ
+### DDBJ <a name="multi-ddbj"></a> 
 
 source feature
 
@@ -24,7 +24,7 @@ source feature
     single-cell genome amplified by MDA (multiple displacement
     amplification)".
 
-### BioSample
+### BioSample <a name="multi-biosample"></a>
 
 Package and attributes
 
@@ -43,9 +43,9 @@ Package and attributes
     [sample\_type](/biosample/attribute-e.html?all=all#sample_type)=”single
     amplified genome”.
 
-## Multiple cells
+## Multiple cells <a name="multi-cells"></a>
 
-### DDBJ
+### DDBJ <a name="multi-ddbj"></a>
 
 source feature
 
@@ -58,7 +58,7 @@ source feature
     genomes".
   - Describe isolation source in /isolation\_source.
 
-### BioSample <a name="single-biosample"></a>
+### BioSample <a name="single-biosample"></a> 
 
 Package and attributes
 
@@ -79,7 +79,7 @@ Package and attributes
     souce in
     [isolation\_source](/biosample/attribute.html?all=all#isolation_source).
 
-## Real-world examples
+## Real-world examples <a name="real-examples"></a>
 
   - BioProject:
     [PRJDB8357](https://www.ncbi.nlm.nih.gov/bioproject/632761)

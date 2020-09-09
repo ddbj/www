@@ -6,7 +6,7 @@ category: aboutjga
 lang: ja
 ---
 
-## JGA データの利用申請
+## JGA データの利用申請 <a name="request"></a>
 
 利用したい JGA データの Study (例 JGAS00000000025) と Dataset (例 JGAD00000000025) アクセッション番号を添え、 [National Bioscience Database Center (NBDC)](https://humandbs.biosciencedbc.jp/data-use) に利用を申請します。
 
@@ -19,9 +19,9 @@ lang: ja
 
 このページでは JGA データの利用手順を説明しています。
 
-## データの GUI tool によるダウンロード
+## データの GUI tool によるダウンロード <a name="data-download-using-gui-tool"></a>
 
-### JGA GUI download tool
+### JGA GUI download tool <a name="jga-gui-download-tool"></a>
 
 JGA GUI download tool (最終更新日: 2018-04-16，v3.5.0) をダウンロード、JGATool.bat からツールを起動します。
 
@@ -30,7 +30,7 @@ JGA GUI download tool (最終更新日: 2018-04-16，v3.5.0) をダウンロー�
 Java 8 で実行してください。Java 7 では動作しません。 [プロキシ環境での使用方法について](#%E3%83%97%E3%83%AD%E3%82%AD%E3%82%B7%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AE%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95)
 </div>
 
-#### Windows
+#### Windows <a name="Windows"></a>
 
 [Windows 用 JGA submission tool]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool.zip)
 
@@ -38,7 +38,7 @@ Java 8 で実行してください。Java 7 では動作しません。 [プロ�
 
 <span class="red">動作環境: Java Runtime Environment Version 8 Update 45 以上</span>
 
-#### Unix
+#### Unix <a name="Unix"></a>
 
 [Unix 用 JGA submission tool]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool_unix.zip)
 
@@ -46,7 +46,7 @@ Java 8 で実行してください。Java 7 では動作しません。 [プロ�
 
 <span class="red">動作環境: Java SE Development Kit 8u45 以上。OpenJDK では動作しません。</span>
 
-### ログイン
+### ログイン <a name="login-by-using-cui"></a>
 
 JGA tool を起動し，[NBDC](http://humandbs.biosciencedbc.jp/) 担当者から通知されるユーザ ID とパスワードでログインします。
 
@@ -81,7 +81,7 @@ Dataset ディレクトリの左にある矢印をクリックし，含まれて
 {% include image.html url="books/jgadown02.jpg" caption="ファイル毎のダウンロード" class="w500" %}
 {:/}
 
-### プロキシ環境での使用方法
+### プロキシ環境での使用方法 <a name="download-via-a-proxy-server"></a>
 
 プロキシ環境でツールを使用するためにはプロキシサーバに関する設定作業が必要になります。
 
@@ -99,7 +99,7 @@ port=
 ツールにログイン後，プロキシサーバが認証を要求している場合，認証情報を入力するウィンドウが表示されるので適宜情報を入力します。2016-11-17
 にリリースした v3.2.0 では BASIC 認証には対応していますが Digest 認証には未対応です。
 
-### メタデータのウェブサイトでの閲覧
+### メタデータのウェブサイトでの閲覧 <a name="view-metadata-in-website"></a>
 
 メタデータはウェブサイトで閲覧することもできます。
 
@@ -146,7 +146,7 @@ JGA tool と同様，NBDC から通知される利用アカウントのユーザ
 {% include image.html url="books/jgadown09.jpg" caption="同時ログイン数が１を超えている場合のエラー" class="w500" %}
 {:/}
 
-### データファイルのディスク郵送
+### データファイルのディスク郵送 <a name="data-file-transfer-by-hard-disk"></a>
 
 {::options parse_block_html="true" /}
 <div class="attention red">
@@ -166,9 +166,9 @@ JGA tool と同様，NBDC から通知される利用アカウントのユーザ
 
 </address>
 
-## データの CUI tool によるダウンロード
+## データの CUI tool によるダウンロード <a name="data-download-using-cui-tool"></a>
 
-### JGA CUI download tool
+### JGA CUI download tool <a name="jga-cui-download-tool"></a>
 
 JGA CUI download tool (最終更新日: 2018-04-16，v3.5.0) をダウンロードします。現在は Unix 版のみの提供となります。
 
@@ -176,7 +176,7 @@ JGA CUI download tool (最終更新日: 2018-04-16，v3.5.0) をダウンロー�
 
 [Unix 用 JGA tool]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool_unix.zip)
 
-### ログイン
+### ログイン <a name="login-by-using-cui"></a>
 
 ツールを配置したディレクトリで JGA tool を実行します。
 
@@ -212,7 +212,7 @@ JGA Login Password :
 JGA download tool は可能な限り良好なネットワーク環境にあるマシンで使ってください。通信速度が遅い無線 LAN で接続された PC などでの使用は避けてください。
 </div>
 
-### プロキシ環境での実行
+### プロキシ環境での実行 <a name="download-via-the-proxy-server"></a>
 
 プロキシ環境では proxy.properties ファイルを編集しプロキシサーバとポートを設定します。 プロキシが Basic 認証を要求する場合は以下を実行します。
 
@@ -231,7 +231,7 @@ Proxy server password :
 
 設定後にツールを実行します。ダイジェスト認証には対応していません。
 
-### コマンドラインオプションと引数
+### コマンドラインオプションと引数 <a name="command-line-options-arguments"></a>
 
 ```
 -h,--help
@@ -244,7 +244,7 @@ Proxy server password :
 -o,--output-dir
 ```
 
-### 利用権限のある Dataset，オブジェクトとファイル一覧の取得
+### 利用権限のある Dataset，オブジェクトとファイル一覧の取得 <a name="dataset-object-data-files"></a>
 
 利用権限のある Dataset 一覧の取得。
 

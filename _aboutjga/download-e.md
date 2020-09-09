@@ -6,7 +6,7 @@ category: aboutjga
 lang: en
 ---
 
-## JGA data use request
+## JGA data use request <a name="request"></a>
 
 Apply data use request to [National Bioscience Database Center (NBDC)](https://humandbs.biosciencedbc.jp/en/data-use) with the JGA Study (e.g., JGAS00000000025) and Dataset (e.g., JGAD00000000025) accession numbers.
 
@@ -19,9 +19,9 @@ NBDC will notify user ID and password to approved users. The download account wi
 
 This page explains how to use the JGA data.
 
-## Download data by using the GUI tool
+## Download data by using the GUI tool <a name="data-download-using-gui-tool"></a>
 
-### JGA GUI download tool
+### JGA GUI download tool <a name="jga-gui-download-tool"></a>
 
 Download the JGA GUI download tool (last updated: 2018-04-16，v3.5.0).
 
@@ -29,13 +29,13 @@ Download the JGA GUI download tool (last updated: 2018-04-16，v3.5.0).
 Use this tool in Java 8. This tool does not work in Java 7.
 </div>
 
-#### Windows
+#### Windows <a name="Windows"></a>
 
 [JGA download tool for Windows]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool.zip)
 
 Run the tool by clicking the "bat" file in the folder.
 
-#### Unix
+#### Unix <a name="Unix"></a>
 
 [JGA download tool for Unix]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool_unix.zip)
 
@@ -43,7 +43,7 @@ Run the tool by executing the sh file in the directory.
 
 Use "Java SE Development Kit 8" and not OpenJDK.
 
-### Login
+### Login <a name="login-by-using-cui"></a> 
 
 Run the JGA tool and login the JGA system with user ID and password notified by [NBDC](http://humandbs.biosciencedbc.jp/en/).
 
@@ -80,7 +80,7 @@ You can expand the directory tree by clicking the arrowhead left to the dataset 
 {% include image.html url="books/jgadown02.jpg" caption="Download data set" class="w500" %}
 {:/}
 
-### Download via a proxy server
+### Download via a proxy server <a name="download-via-a-proxy-server"></a>
 
 To use the tool via the proxy server, you need to set the name and port number of the proxy server.
 
@@ -97,7 +97,7 @@ port=
 
 After login, when the proxy requires user authentication, enter the authentication information in the displayed window. The v3.2.0 (2016-11-17) tool is compatible with the BASIC authentication but not with the Digest authentication.
 
-### View metadata in website
+### View metadata in website <a name="view-metadata-in-website"></a>
 
 Users can view JGA metadata also in website.
 
@@ -145,7 +145,7 @@ The following error is displayed when access from single account exceeds "1". Lo
 {% include image.html url="books/jgadown09.jpg" caption="Error when access from single account exceeds 1" class="w500" %}
 {:/}
 
-### Data file transfer by hard disk
+### Data file transfer by hard disk <a name="data-file-transfer-by-hard-disk"></a>
 
 {::options parse_block_html="true" /}
 <div class="attention red">
@@ -161,9 +161,9 @@ Kodama Yuichi
 1111 Yata, Mishima, Shizuoka 411-8540, Japan  
 Phone:+81-55-981-6853
 
-## Download data by using the CUI tool
+## Download data by using the CUI tool <a name="data-download-using-cui-tool"></a>
 
-### JGA CUI download tool
+### JGA CUI download tool <a name="jga-cui-download-tool"></a>
 
 Download the JGA CUI download tool (Last updated: 2018-04-16, v3.5.0). At present, only the Unix tool is available.
 
@@ -171,7 +171,7 @@ Download the JGA CUI download tool (Last updated: 2018-04-16, v3.5.0). At presen
 
 [Unix JGA tool]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool_unix.zip)
 
-### Login
+### Login <a name="login-by-using-cui"></a>
 
 Run the JGA tool in the tool directory.
 
@@ -203,7 +203,7 @@ JGA Login Password  :
 
 After configuration, run the tool.
 
-### Download via the proxy server
+### Download via the proxy server <a name="download-via-the-proxy-server"></a>
 
 Configure the proxy server and port by editting the proxy.properties file. Execute as below for the proxy BASIC authentification.
 
@@ -222,7 +222,7 @@ Proxy server password  :
 
 After configuration, run the tool. The tool dose not handle the Digest authentification.
 
-### Command line options and arguments.
+### Command line options and arguments. <a name="command-line-options-arguments"></a>
 
 ```
 -h,--help
@@ -235,7 +235,7 @@ After configuration, run the tool. The tool dose not handle the Digest authentif
 -o,--output-dir 
 ```
 
-### List approved Dataset, object and data files
+### List approved Dataset, object and data files <a name="dataset-object-data-files"></a>
 
 List all approved Datasets.
 

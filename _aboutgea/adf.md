@@ -6,7 +6,7 @@ category: aboutgea
 lang: ja
 ---
 
-## Array design format (ADF) ファイル
+## Array design format (ADF) ファイル <a name="what-adf"></a>
 
 ADF (Array Design Format) ファイルはマイクロアレイチップに関する情報を記述するファイルです。ADF は
 [main] タグで区切られた二つのセクションから構成されます。
@@ -23,7 +23,7 @@ ADF の例（一部）:
 {% include image.html url="magetab/adf1.png" caption="ADF の例（一部）" class="w600" %}
 {:/}
 
-## ADF メタデータヘッダー
+## ADF メタデータヘッダー <a name="adf-meta"></a>
 
 各行（フィールド）はヘッダー（下の例では太字）で始めます。ヘッダーは controlled vocabulary を一回のみ記載します。GEA
 が提供している ADF
@@ -51,7 +51,7 @@ ADF ヘッダーフィールドリスト (* 必須フィールド):
 | 12  | Term Source Name                  | クロスリファレンスするリソース名。例 Reporter Database Entry [uniprot]。 クロスリファレンスしたリソース名を [] に記載することで URL を辿ってリソースを特定することができます (下のヘッダー13を参照)。 | [クロス参照リソースリスト](https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=1479684386)                                                                                         | uniprot                                                                                                                                                                                                          |
 | 13  | Term Source File                  | Term Source Name (上のヘッダー12参照) に記載されたリソースがホストされている URL。                                                                          | 有効な URL                                                                                                                                                                                                         | http://www.uniprot.org                                                                                                                                                                                           |
 
-## ADF テーブルセクション
+## ADF テーブルセクション <a name="adf-table"></a>
 
 ADF テーブルセクション中のヘッダーも controlled vocabulary を使います。GEA が提供している ADF
 テンプレートファイルには正しいヘッダーが含まれているのでゼロから作成する必要はありません。テンプレート中のヘッダーは編集しないでください。
@@ -61,7 +61,7 @@ ADF テーブルセクション中のヘッダーも controlled vocabulary を�
   - [reporter_only_array_ADF_template.xls]({{ site.baseurl }}/assets/files/magetab/adf/reporter_only_array_ADF_template.xls)
   - [spotted_array_ADF_template.xls]({{ site.baseurl }}/assets/files/magetab/adf/spotted_array_ADF_template.xls)
 
-### Feature、reporter と composite element
+### Feature、reporter と composite element <a name="feature"></a>
 
 **Feature (スポットアレイのみ):**
 
@@ -149,7 +149,7 @@ chrName:start position-end position 形式で記載します（例 chr1:1234-567
 {% include image.html url="magetab/adf4.png" caption="Reporter の ADF アノテーション" class="w450" %}
 {:/}
 
-### Repoter role - experimental もしくは control
+### Repoter role - experimental もしくは control <a name="reporter-role"></a>
 
 各 Reporter の role、experimental もしくは control、を Reporter Group [role]
 カラムに記入します。
@@ -175,7 +175,7 @@ ADF テーブルでの reporter role の例。
 {% include image.html url="magetab/adf5.png" caption="Reporter role" class="w500" %}
 {:/}
 
-### 生物種による reporter grouping（複数生物種 ADF の場合のみ）
+### 生物種による reporter grouping（複数生物種 ADF の場合のみ） <a name="reporter-groupings"></a>
 
 アレイが一つ以上の生物種からデザインされている場合、由来する生物種を Reporter Group [species]
 カラムで示すことができます。NCBI Taxonomy に登録されている学名を記載します。例
@@ -187,7 +187,7 @@ Homo sapiens。
 {% include image.html url="magetab/adf6.png" caption="生物種による reporter grouping（複数生物種 ADF の場合のみ）" class="w500" %}
 {:/}
 
-### Composite element のアノテーション
+### Composite element のアノテーション <a name="ann-composite-elements"></a>
 
 Composite element のアノテーションは Composite Element Database Entry [xxx]
 カラムを使って外部データベース参照によって記述します。加えて Composite Element Comment カラムを

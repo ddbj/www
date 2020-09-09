@@ -18,9 +18,9 @@ related_pages:
     url: /ddbj/location-e.html)
 ---
 
-## Before Nucleotide Sequence Submission
+## Before Nucleotide Sequence Submission <a name="responsibility"></a>
 
-### Purpose and Significance of Nucleotide Sequence Submission
+### Purpose and Significance of Nucleotide Sequence Submission <a name="purpose"></a>
 
 In many scientific journals, it is required to assign and to describe
 [INSDC accession number](/acc_def-e.html) for a nucleotide sequence on
@@ -39,7 +39,7 @@ If you submit nucleotide sequences to DDBJ, you can get [NO priority for
 patent](/policies-e.html#priority).
 
 
-### New Submission or Update?
+### New Submission or Update? <a name="update"></a>
 
 When you wonder your sequence data should be newly submitted or your
 previous entry should be modified, do not hesitate to contact us at
@@ -53,7 +53,7 @@ us at [Application Form for Data Update
 Requests](/ddbj/updt-form-e.html).
 
 
-### Rights and Duties of Submitter<a name="right"></a>
+### Rights and Duties of Submitter<a name="right"></a> 
 
 For sequence submission to DDBJ, it is required for submitters to
 provide not only nucleotide sequence but also address of [submitters and
@@ -91,7 +91,7 @@ registration information of an entry, DDBJ maintains neutrality for both
 opinions.
 
 
-### Releases of Primary Citation and Sequence Data
+### Releases of Primary Citation and Sequence Data <a name="citation"></a>
 
 During preparation/submission of [primary citation](#pcite), DDBJ can
 store your registration information privately in the meantime. If
@@ -117,9 +117,9 @@ Reference;
     Policies](/insdc-e.html#policy)
 
 
-## Required items for nucleotide sequence submission
+## Required items for nucleotide sequence submission <a name="item"></a>
 
-### Submitters
+### Submitters <a name="submitters"></a>
 
 The items, affiliation, postal address and phone number of [contact
 person](#contact) and all names of [submitters](#submitter) submitters
@@ -139,7 +139,7 @@ In principle, we cannot accept any sequence data from a student
 without whose advisers in names of submitter.
 
 
-### Date of data release to the public
+### Date of data release to the public <a name="hold-date"></a>
 
 Submitters can select the status of their data, either "immediately
 release" or "hold until published". "hold date" is the date to start the
@@ -151,7 +151,7 @@ Reference: [Principle of "Hold-Until-Published" data
 release](/data-release-policy-e.html)
 
 
-### Number of sequences
+### Number of sequences <a name="number"></a>
 
 If you would like to have consecutive accession numbers, you should fix
 the number of entries before your submission.
@@ -171,7 +171,7 @@ See also [representative submissions of identical sequences for
 variation studies](/ddbj/represent-e.html), in detail.
 
 
-### Scientific paper, REFERENCE
+### Scientific paper, REFERENCE <a name="reference"></a>
 
 You have to describe authors and title of the main paper for the
 sequence, as a [primary citation](#pcite). Even though you have no plan
@@ -182,7 +182,7 @@ You can describe just referred papers which does not describe about the
 submitting sequence, if necessary.
 
 
-### Biological knowledge related to nucleotide sequence
+### Biological knowledge related to nucleotide sequence <a name="bio-inf"></a>
 
 Whether the species is identified or not, it is required to describe the
 relevant information on the biological origin of your sequence with
@@ -202,7 +202,7 @@ Notice: protein coding sequence; CDS feature should have gene and product.
 DDBJ](/ddbj/cds-e.html#product) before your submission.
 
 
-### Nucleotide sequences
+### Nucleotide sequences <a name="sequence"></a>
 
 You can use [IUPAC nucleotide base
 codes](/ddbj/code-e.html#nucleotide-1) to describe your nucleotide
@@ -222,9 +222,9 @@ sequences with our web
 service;[VecScreen](http://ddbj.nig.ac.jp/vecscreen/?lang=en).
 
 
-## Workflow of the data submission to DDBJ
+## Workflow of the data submission to DDBJ <a name="workflow"></a>
 
-### 1 Data Submission
+### 1 Data Submission <a name="accept"></a>
 
 (A) Nucleotide Sequence Submission System  
 : DDBJ generally recommends you to use [Nucleotide Sequence Submission
@@ -242,7 +242,7 @@ System](/ddbj/websub-e.html).
     Submission System.
 
 
-### 2 Annotation
+### 2 Annotation <a name="annotation"></a>
 
 We annotate in accordance with our rules and the international rules
 agreed upon by the DDBJ/ENA/GenBank consortium. In the annotation
@@ -250,7 +250,7 @@ process, we may contact the Contact Person to make inquiry about the
 data.
 
 
-### 3 Assignment and Notification of Accession Number
+### 3 Assignment and Notification of Accession Number <a name="accession number"></a>
 
 We inform an accession number (unique number assigned by the
 International Nucleotide Sequence Database Collaboration) to the Contact
@@ -262,7 +262,7 @@ If you do not hear from us within this time period, please [contact
 us](/contact-e.html#to-ddbj).
 
 
-### 4 Report of Data Releasing
+### 4 Report of Data Releasing <a name="releasing"></a>
 
 We notify data release to the Contact Person by E-mail. Once the data
 are released, please confirm the data by one of the retrieval tools
@@ -276,7 +276,7 @@ the necessary information. Please refer to
 number) for details.
 
 
-### 5 General Information
+### 5 General Information <a name="information"></a>
 
 <table>
   <tbody>
@@ -296,7 +296,7 @@ number) for details.
 </table>
 
 
-## Sequence Data Transition<a name="data_flow"></a>
+## Sequence Data Transition<a name="data_flow"></a> 
 
 Following figure shows the dataflow from new submission to release and update at DDBJ.
 
@@ -337,7 +337,7 @@ Following figure shows the dataflow from new submission to release and update at
   </li>
 </ol>
 
-## Terms<a name="terms"></a>
+## Terms<a name="terms"></a> 
 
 Submitter <a name="submitter"></a>
 : Submitter of the [entry](#entry) is the person who have

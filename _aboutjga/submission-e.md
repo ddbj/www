@@ -6,7 +6,7 @@ category: aboutjga
 lang: en
 ---
 
-## Submission Guide
+## Submission Guide <a name="submission"></a>
 
 The JGA accepts only de-identified data approved by NBDC. The users apply for data submission directly to the [NBDC](http://humandbs.biosciencedbc.jp/en/) and the JGA will only accept submissions once the information of a successful application process has been passed from the NBDC to the JGA.
 
@@ -35,13 +35,13 @@ Currently, there is no requirement for authors to use a specific JGA accession i
 
 An example of accession number citation: "Genotype data has been deposited at the Japanese Genotype-phenotype Archive (JGA, http://trace.ddbj.nig.ac.jp/jga), which is hosted by the DDBJ, under accession number JGASXXXXXXXXX."
 
-## Sequence data file (raw/unaligned and aligned)
+## Sequence data file (raw/unaligned and aligned) <a name="sequence"></a>
 
 Supported JGA data submission formats are described below. If you have data in any other format or have any questions please [contact the JGA](/contact-e.html) .
 
 Data files should be de-multiplexed prior to submission so that each data object is submitted with files containing data for a single sample only.
 
-### BAM format
+### BAM format <a name="bam-format"></a>
 
 Binary Alignment/Map files (BAM) represent one of the preferred JGA submission formats. BAM is a compressed version of the Sequence
 Alignment/Map (SAM) format (see [SAMv1.pdf](https://samtools.github.io/hts-specs/SAMv1.pdf)). BAM files can be decompressed to a human-readable text format (SAM) using SAM/BAM-specific utilities (e.g. [samtools](http://www.htslib.org/)) and can contain unaligned sequences as well.  
@@ -49,7 +49,7 @@ JGA strongly recommends to submit BAM including unaligned reads as primary data 
 
 The BAM files are nearly optimal in terms of compression and should be submitted uncompressed.
 
-### Fastq format
+### Fastq format <a name="fastq-format"></a>
 
 Primary sequence data submissions of single and paired reads are accepted as [Fastq](http://en.wikipedia.org/wiki/FASTQ_format#Quality) files that meet the following the requirements:
 
@@ -85,13 +85,13 @@ GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
 ...
 ```
 
-### SFF format
+### SFF format <a name="sff-format"></a>
 
 The recommended submission format for the 454 platform is SFF.
 
 The SFF files are nearly optimal in terms of compression and should be submitted uncompressed.
 
-## Array based (Genotypes, SNP, Expression)
+## Array based (Genotypes, SNP, Expression) <a name="array"></a>
 
 The JGA accepts processed data from all types of array based technologies, such as genotypes, gene expression, methylations, etc.
 
@@ -99,18 +99,18 @@ We are very flexible regarding these submissions and would accept all types of f
 
 We recommend that both raw data (CELs) and analysis files be submitted, which will enable potential users of the data to recreate your results cited in the paper as well as view the described results.
 
-## Variation data file
+## Variation data file <a name="variations"></a>
 
 The JGA supports submissions of sequence variations in [VCF format](http://en.wikipedia.org/wiki/Variant_Call_Format) . The vcf files are accepted as secondary analysis object.
 
-## Other data files
+## Other data files <a name="other"></a>
 
 Analysis can refer to multiple Data and Sample objects and summary data summarizing data files of these objects can be registered to the Analysis. Example analysis files are listed below.
 
   - A reference sequence GFF3 file assembled by using multiple sequence files in a objects.
   - A table file summarizes normalized array data files in Analysis.
 
-## Metadata
+## Metadata <a name="metadata"></a>
 
 The JGA data model is created by extending the [Sequence Read Archive's model](/dra/submission-e.html). The JGA metadata are composed of the XML objects.
 
@@ -124,7 +124,7 @@ JGA XML schema: [JGA xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 {% include image.html url="submission/jga_metadata_2.jpg" caption="Example: separate policies for control and case." class="w500" %}
 {:/}
 
-### Summary information for public display
+### Summary information for public display <a name="public"></a>
 
 When JGA submissions are released, following metadata objects will be public on the JGA and NBDC websites to display summary of submissions.
 
@@ -145,43 +145,43 @@ Policy:
 
 </div>
 
-### Submission
+### Submission <a name="Submission"></a>
 
 The submission XML is used to describe the submission transaction. It contains contact details of the submitter.
 
 XML schema: [JGA.submission.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-### Study
+### Study <a name="Study"></a>
 
 The study XML describes your study in detail. It contains a title, a study type and an abstract, as it would appear in the publication. After publication, the study can be updated to include the PubMed ID of the paper containing the submitted data.
 
 XML schema: [JGA.study.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-### Sample
+### Sample <a name="Sample"></a>
 
 The sample XML describes each of the samples used in your submission. A sample generally corresponds to a participant. Whilst the mandatory fields are minimal we highly recommend to describe the sample in as much detail as possible including subject phenotypes.
 
 XML schema: [JGA.sample.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-### Experiment
+### Experiment <a name="Experiment"></a>
 
 The experiment XML is used to describe each unique set of experimental setup details. This includes the library preparation details, next generation sequencing platforms. The experiment XML can represent next generation sequencing experiments.
 
 XML schema: [JGA.experiment.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-### Data
+### Data <a name="Data"></a>
 
 The data XML describes the next generation sequencing data files and their relationship with the experiments. The data XML serves as a file container.
 
 XML schema: [JGA.data.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-### Analysis
+### Analysis <a name="Analysis"></a>
 
 The Analysis XML can be used to submit array data, analyzed and summarized data to JGA. Variation data can be submitted as VCF files. Only one VCF file can be submitted in each analysis and the samples used within the VCF files must be associated with JGA Samples. Optimally the VCF file would be associated with an INSDC reference assembly and sequences either by using accessions or by using commonly used labels.
 
 XML schema: [JGA.analysis.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-### Data set
+### Data set <a name="Dataset"></a>
 
 The dataset XML describes the data files, defined by the Data XML and Analysis XML, that make up the dataset and links the collection of data files to a specified Policy (Data Access Agreement). When a Study contains datasets with different policies, separate Datasets need to be created.
 
@@ -189,7 +189,7 @@ In general, policy is determined by informed consent with participants.
 
 XML schema: [JGA.dataset.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-### Policy
+### Policy <a name="Policy"></a>
 
 The Policy XML describes the Data Access Agreement (DAA). If only [NBDC policy](http://humandbs.biosciencedbc.jp/en/nbdc-policy) is associated with a submission, submitters do not need to create a new policy.
 
@@ -197,7 +197,7 @@ If additional policies are needed, you need to register a policy to NBDC and ref
 
 XML schema: [JGA.policy.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-## Analysis only submission
+## Analysis only submission <a name="analysis_only"></a>
 
 To submitting only aggregated data or data which are not suitable for Sample-Experiment-Data, these data can be submitted as Sample-Analysis instead of Sample-Experiment-Data.
 
@@ -211,6 +211,6 @@ To submitting only aggregated data or data which are not suitable for Sample-Exp
 
 To submitting Analysis only data, please contact [JGA team](/contact-e.html) .
 
-## Update submissions
+## Update submissions <a name="update"></a>
 
 To update your submissions, please [contact to the JGA team](/contact-e.html) .

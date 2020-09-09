@@ -27,6 +27,7 @@ Quote from Mail Magazine : No.62&63 (Sep.02,2011) ～ No.71&72
 (Jul.26,2012) and April 2013 Issue.  
 *Please note about different of last information.
 
+{:.text-align-end}
 Hideo Aono (DDBJ Patent Annotator)
 
 

@@ -357,7 +357,7 @@ BLAST検索 の検索条件や結果通知方法などを HTTPパラメーター
     <td rowspan="8">HTTP パラメーター</td>
     <td><code class="language-plaintext highlighter-rouge">querySequence</code></td>
     <td>
-<a href="#parameter-querySequence">multi FASTA 形式の検索配列データ</a>
+<a href="#parameter-querySequence">multi FASTA 形式の検索配列データ</a><br>
               <pre class="code"><code class="language-plaintext highlighter-rouge">例: &gt;my query sequence 1
 CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
 GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG

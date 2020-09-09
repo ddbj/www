@@ -20,7 +20,7 @@ related_pages:
 
 Parser is a software tool developed by DDBJ for checking the format and the syntax of the [sequence](/ddbj/file-format-e.html#sequence) and [annotation](/ddbj/file-format-e.html#annotation) files.
 
-## Install
+## Install <a name="install"></a>
 
 <ol>
   <li>
@@ -119,7 +119,7 @@ exit $RETVAL
   </li>
 </ol>
 
-## Execution
+## Execution <a name="exec"></a>
 
 Execute jParser.sh by the command below;
 

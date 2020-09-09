@@ -22,9 +22,9 @@ In this site, error messages outputted from checking tools for nucleotide sequen
 If you find any error message, please make some appropriate correction.  
 If you have any problems and/or questions, please [contact us](/contact-e.html) with error messages.
 
-### Parser
+### Parser <a name="Parser"></a>
 
-#### Format
+#### Format <a name="agpparser-1"></a>
 
 {::nomarkdown}[Code Number]:[Level]:[Type]:[File]:[Region]:[Body Text]{:/}
 
@@ -50,7 +50,7 @@ If you have any problems and/or questions, please [contact us](/contact-e.html) 
   </tbody>
 </table>
 
-#### Error messeages
+#### Error messeages <a name="parser-2"></a>
 
 Terms and numbers closed with brackets ( **\[** and **\]** ) and started from **\#**, are substituted by each real value that is used in your submission.
 
@@ -66,9 +66,9 @@ Terms closed with brackets ( **\[** and **\]** ) and not started from \# are the
 
 -----
 
-### TransChecker Error Messages
+### TransChecker Error Messages <a name="transChecker"></a>
 
-#### Format
+#### Format <a name="agpparser-1"></a>
 
 {::nomarkdown}[Code Number]:[Level]: [Body Text]{:/}
 
@@ -97,7 +97,7 @@ TC0019:ER2: Stop codon is found in mid of CDS location.
 //
 ```
 
-#### Error message
+#### Error message <a name="agpparser-2"></a>
 
 Terms and numbers closed with brackets ( **\[** and **\]** ) and started from **\#**, are substituted by each real value that is used in your submission.
 
@@ -113,9 +113,9 @@ Terms closed with brackets ( \[ and \] ) and not started from \# are the reserve
 
 -----
 
-### AGP Parser Error Messages
+### AGP Parser Error Messages <a name="AGP Parser"></a>
 
-#### Format
+#### Format <a name="agpparser-1"></a>
 
 {::nomarkdown}[Code Number]:[Level]:[Region]:[Body Text] or [Code Number]:[Level]:[Body Text]{:/}
 
@@ -132,7 +132,7 @@ Terms closed with brackets ( \[ and \] ) and not started from \# are the reserve
   </tbody>
 </table>
 
-#### Error message
+#### Error message <a name="agpparser-2"></a>
 
 Terms and numbers closed with brackets ( **\[** and **\]** ) and started from **\#**, are substituted by each real value that is used in your submission.
 
