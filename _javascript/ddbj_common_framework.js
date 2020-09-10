@@ -54,16 +54,6 @@
   const HEADER_RIGHT_MENU = [
     {
       label: {
-        ja: 'ログイン',
-        en: 'Login'
-      },
-      uri: {
-        ja: 'https://ddbj.nig.ac.jp/D-way',
-        en: 'https://ddbj.nig.ac.jp/D-way'
-      }
-    },
-    {
-      label: {
         ja: '利用規約',
         en: 'Terms'
       },
