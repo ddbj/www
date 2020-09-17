@@ -3319,14 +3319,6 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_includes/category-tab.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_includes/category-tab.html",
-		"oF": 0
-		},
 	"/_includes/footer.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -4630,7 +4622,7 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/assets/css/common_framework.css",
-		"oF": 2,
+		"oF": 3,
 		"oS": 0,
 		"sct": 0
 		},
@@ -4718,19 +4710,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/_sass/object/component/_arrowed-link.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 1
-		},
-	"/_sass/object/component/_category-tab.sass": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 2,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_sass/object/component/_category-tab.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
@@ -7585,6 +7564,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/assets/css/colorbox-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/assets/css/common_framework.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/assets/css/common_framework-min.css",
 		"oF": 0,
 		"oS": 3
 		},
