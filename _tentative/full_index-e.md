@@ -1,9 +1,9 @@
 ---
 layout: indexed_content
 title: The DDBJ/ENA/GenBank Feature Table Definition
-pathname: full_index
+pathname: full_index-e
 category: tentative
-lang: ja
+lang: en
 ---
 
 The original site; [The DDBJ/ENA/GenBank Feature Table Definition](http://www.insdc.org/documents/feature-table) Version 10.9 November 2019

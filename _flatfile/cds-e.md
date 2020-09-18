@@ -96,6 +96,7 @@ describe the names of gene and product as follows;
     one of the most representative abbreviation in 'gene', and
     other(s) in
     [gene_synonym](/ddbj/qualifiers-e.html#gene_synonym) qualifier.
+
 [product](/ddbj/qualifiers-e.html#product): name of the product associated with the feature, e.g. the polypeptide of a CDS  
 : Example: trypsinogen
 : Notices:
