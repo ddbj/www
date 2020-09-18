@@ -54,16 +54,6 @@
   const HEADER_RIGHT_MENU = [
     {
       label: {
-        ja: 'ログイン',
-        en: 'Login'
-      },
-      uri: {
-        ja: 'https://ddbj.nig.ac.jp/D-way',
-        en: 'https://ddbj.nig.ac.jp/D-way'
-      }
-    },
-    {
-      label: {
         ja: '利用規約',
         en: 'Terms'
       },
@@ -695,10 +685,11 @@
     display: inline-block;
     background-color: white;
     color: black;
-    width: 20px;
-    border-radius: 100%;
+    border-radius: 10px;
     text-align: center;
     font-size: 10px;
+    padding: 0 8px;
+    margin-right: -2px;
   }
   #DDBJ_CommonHeader > .DDBJ_inner > .DDBJ_logocontainer > .DDBJ_logotype {
     margin-left: 16px;
@@ -1016,7 +1007,7 @@
             `).join('')}
           </ul>
           <ul class="DDBJ_menu -DDBJ_right">
-            <li>
+            <!--li>
               <form id="DDBJ_searchform">
                 <select id="DDBJ_searchformselect">
                   <option>Web sites</option>
@@ -1024,11 +1015,11 @@
                 <input type="search" id="DDBJ_searchformfield">
                 <buttonid="DDBJ_searchformbutton"></button>
               </form>
-            </li>
+            </li-->
             ${HEADER_RIGHT_MENU.map(item => `
             <li><a href="${item.uri[language]}">${item.label[language]}</a></li>
             `).join('')}
-            <li class="DDBJ_language"><a href="${otherLanguageLink}">${language === 'ja' ? 'EN' : 'JA'}</a></li>
+            <li class="DDBJ_language"><a href="${otherLanguageLink}">${language === 'ja' ? 'English' : 'Japanese'}</a></li>
           </ul>
         </div>
       </nav>
