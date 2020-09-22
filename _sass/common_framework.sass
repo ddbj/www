@@ -21,8 +21,7 @@ $PADDING_VERTICAL_COMMON_HEADER: 10px
   a
     color: white
   > .DDBJ_inner
-    +inner
-    max-width: $WIDTH_MAX_PX
+    margin: 0 auto
     padding: 0 10px
     height: $HEIGHT_COMMON_HEADER
     display: flex
@@ -43,9 +42,6 @@ $PADDING_VERTICAL_COMMON_HEADER: 10px
           text-decoration: none
       > .DDBJ_language
         padding-right: 1.5rem
-        display: none
-        &.-DDBJ_available
-          display: block
         > a
           display: inline-block
           background-color: white
@@ -186,9 +182,15 @@ $PADDING_VERTICAL_COMMON_HEADER: 10px
       .DDBJ_menu
         display: block
         > *
+          height: auto
           line-height: $HEIGHT_COMMON_HEADER
-          padding-left: 18px
-
+          padding: 0 18px
+        > .DDBJ_language
+          > a
+            line-height: 30px
+            border-radius: 15px
+            padding: 0 15px            
+            margin-left: -3px
       > .DDBJ_navigation
         flex-grow: 0
         //background-color: $COLOR_KEY_STRONG
