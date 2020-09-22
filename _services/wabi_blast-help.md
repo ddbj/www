@@ -12,7 +12,7 @@ related_pages:
     url: /wabi_mafft-help.html
 ---
 
-## 概要
+## 概要 <a name="overview"></a>
 
 WABI は、 BLAST を利用するための Web API を提供しています。
 
@@ -29,15 +29,15 @@ WABI は、 BLAST を利用するための Web API を提供しています。
   - 指定された [Request ID](#parameter-Request-ID) に対する
     [BLAST検索結果](#search-result) を返します。
 
-## WABI BLAST での検索
+## WABI BLAST での検索 <a name="search"></a>
 
-### BLAST検索ジョブ<a name="search-job"></a>
+### BLAST検索ジョブ<a name="search-job"></a> 
 
 BLAST の検索ジョブは、まず実行待ちのキューに登録されます。そしてリソースを確保でき次第、実行されます。
 
 参照: [検索ジョブの状態](#search-status)
 
-### 検索ジョブの状態<a name="search-status"></a>
+### 検索ジョブの状態<a name="search-status"></a> 
 
 WABI の検索ジョブは、次のように状態が遷移して行きます。
 
@@ -88,7 +88,7 @@ WABI の検索ジョブは、次のように状態が遷移して行きます。
 12 }
 ```
 
-### BLAST 検索条件 <a name="search-criteria"></a>
+### BLAST 検索条件 <a name="search-criteria"></a> 
 
 WABI に [BLAST検索ジョブを登録](#URI_POST) したときに指定したパラメーター値の情報です。
 
@@ -107,7 +107,7 @@ WABI に [BLAST検索ジョブを登録](#URI_POST) したときに指定した�
 10 }
 ```
 
-### BLAST 検索結果 <a name="search-result"></a>
+### BLAST 検索結果 <a name="search-result"></a> 
 
 BLAST検索処理 の結果です。 `blastall` コマンドの `"-o"` オプションでファイル出力された内容などと同じです。
 
@@ -143,7 +143,7 @@ BLAST検索処理 の結果です。 `blastall` コマンドの `"-o"` オプシ
         
 ```
 
-### BLAST 検索結果画像<a name="search-image"></a>
+### BLAST 検索結果画像<a name="search-image"></a> 
 
 WABI の BLAST検索ジョブ は、 BLAST検索結果を元にしてグラフィカル表示用画像を出力します。
 
@@ -151,7 +151,7 @@ WABI の BLAST検索ジョブ は、 BLAST検索結果を元にしてグラフ�
 
 [![Detail view_6_1]({{ site.baseurl }}/assets/images/help/wabi_blast_imagedata.png){:.w500}]({{ site.baseurl }}/assets/images/help/wabi_blast_imagedata.png ){:.group1}
 
-## WABI BLAST の使用例
+## WABI BLAST の使用例 <a name="usage_example"></a>
 
 {::options parse_block_html="true" /}
 <div class="accordion-menu">
@@ -184,6 +184,8 @@ blast_condition.txt
 
 pom.xml
 : <script src="https://gist.github.com/ddbj-repo/4978b238ca7dbb94ebeebae0184cd6ce.js"></script>
+
+#### 実行例 <a name="java_execution_example"></a>
 
 前準備 (一度だけ実施する必要あり)
 : 
@@ -252,7 +254,7 @@ blast_condition.txt
   result  www
   ```
 
-#### 実行例
+#### 実行例 <a name="perl_execution_example"></a>
 
 前準備 (一度だけ実施する必要あり)
 : 
@@ -309,7 +311,7 @@ blast_condition.txt
   result  www
   ```
 
-#### 実行例
+#### 実行例 <a name="ruby_execution_example"></a>
 
 実行手順
 :   
@@ -320,7 +322,7 @@ blast_condition.txt
 実際の例
 : <script src="https://gist.github.com/ddbj-repo/d9e1d2d44aaecdb890ec12196dc52dbd.js"></script>
 
-#### 実行結果例
+#### 実行結果例 <a name="wabi_blast_2013-0606-1336-31-681-634313"></a>
 
 wabi_blast_2013-0606-1336-31-681-634313.txt
 : <script src="https://gist.github.com/ddbj-repo/aea641167c10b4c56ec08b1c4e230f2a.js"></script>
@@ -329,9 +331,9 @@ wabi_blast_2013-0606-1336-31-681-634313.txt
 </div>
 </div>
 
-## WABI BLAST の詳細
+## WABI BLAST の詳細 <a name="details"></a>
 
-### URI POST /blast (検索ジョブの登録)<a name="URI_POST"></a>
+### URI POST /blast (検索ジョブの登録)<a name="URI_POST"></a> 
 
 [BLAST検索のジョブ](#search-job) をキューに投入して、 [Request
 ID](#parameter-Request-ID) を返します。  
@@ -419,7 +421,7 @@ GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC</code></pre><br>
   </tbody>
 </table>
 
-#### 処理の流れ
+#### 処理の流れ <a name="処理の流れ"></a>
 
   1. 入力値を検証します。  
       入力値エラーが見つかった場合は、処理を中断して `HTTP ステータス 400 Bad Request` を返します。
@@ -427,7 +429,7 @@ GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC</code></pre><br>
   3. キューに投入されたジョブの情報を、 `format` で指定された形式にして、返します。  
       ただし、利用不可能な `format` 値だった場合は `HTTP ステータス 404 Not Found` を返します。
 
-#### 入力値の検証内容
+#### 入力値の検証内容 <a name="入力値の検証内容"></a>
 
 <table>
   <tbody>
@@ -514,7 +516,7 @@ GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC</code></pre><br>
   </tbody>
 </table>
 
-#### 応答データの内容　
+#### 応答データの内容 <a name="応答データの内容"></a>
 
 正常終了した場合
 : 
@@ -684,7 +686,7 @@ HTTP ステータス 400
   </tbody>
 </table>
 
-#### 処理の流れ
+#### 処理の流れ <a name="処理の流れ"></a>
 
 1. 入力値を検証します。  
     入力値エラーが見つかった場合は、処理を中断して `HTTP ステータス 400 Bad Request` を返します。
@@ -694,7 +696,7 @@ HTTP ステータス 400
 3. 取得した [現在の状態](#search-status) 情報を `format` で指定された形式に整形して返します。  
     ただし、利用不可能な `format` 値だった場合は `HTTP ステータス 404 Not Found` を返します。
 
-#### 入力値の検証内容
+#### 入力値の検証内容 <a name="入力値の検証内容"></a>
 
 <table>
   <tbody>
@@ -738,7 +740,7 @@ HTTP ステータス 400
   </tbody>
 </table>
 
-#### 応答データの内容　
+#### 応答データの内容 <a name="応答データの内容"></a>
 
 正常終了した場合
 : 
@@ -752,7 +754,7 @@ HTTP ステータス 400
   - 応答データの中からキー `error-messages` で取得できるエラーメッセージ情報には、入力値エラーとなったパラメーター名の情報等が含まれます。
   - その他、リクエスト情報やエラーの原因などの情報を含みますが、書式は随時更新いたします。<br>実行の成否判定のためには HTTP ステータスを利用してください。
 
-#### 入出力データの例
+#### 入出力データの例 <a name="入出力データの例"></a>
 
 入力値の例
 
@@ -856,7 +858,7 @@ HTTP ステータス 400
   </tbody>
 </table>
 
-#### 処理の流れ
+#### 処理の流れ <a name="処理の流れ"></a>
 
 1. 入力値を検証します。  
     入力値エラーが見つかった場合は、処理を中断して `HTTP ステータス 400 Bad Request` を返します。
@@ -866,7 +868,7 @@ HTTP ステータス 400
 3. 取得した [検索条件](#search-criteria) 情報を `format` で指定された形式に整形して返します。  
     ただし、利用不可能な `format` 値だった場合は `HTTP ステータス 404 Not Found` を返します。
 
-#### 入力値の検証内容
+#### 入力値の検証内容 <a name="入力値の検証内容"></a>
 
 <table>
     <tbody>
@@ -910,7 +912,7 @@ HTTP ステータス 400
     </tbody>
   </table>
 
-#### 応答データの内容
+#### 応答データの内容 <a name="応答データの内容"></a>
 
 正常終了した場合
 : 
@@ -924,7 +926,7 @@ HTTP ステータス 400
   - 応答データの中からキー `error-messages` で取得できるエラーメッセージ情報には、入力値エラーとなったパラメーター名の情報等が含まれます。
   - 実行の成否判定のためには HTTP ステータスを利用してください。
 
-#### 入出力データの例　
+#### 入出力データの例 <a name="入出力データの例"></a>
 
 入力値の例
 
@@ -1009,7 +1011,7 @@ HTTP ステータス 404
   </tbody>
 </table>
 
-#### 処理の流れ
+#### 処理の流れ <a name="処理の流れ"></a>
 
 1. 入力値を検証します。  
     入力値エラーが見つかった場合は、処理を中断して `HTTP ステータス 400 Bad Request` を返します。
@@ -1020,7 +1022,7 @@ HTTP ステータス 404
 3. 取得した [検索結果](#search-result) 情報を `format` で指定された形式に整形して返します。  
     ただし、利用不可能な `format` 値だった場合は `HTTP ステータス 404 Not Found` を返します。
 
-#### 入力値の検証内容
+#### 入力値の検証内容 <a name="入力値の検証内容"></a>
 
 <table>
   <tbody>
@@ -1064,7 +1066,7 @@ HTTP ステータス 404
   </tbody>
 </table>
 
-#### 応答データの内容
+#### 応答データの内容 <a name="応答データの内容"></a>
 
 正常終了した場合
 : 
@@ -1078,7 +1080,7 @@ HTTP ステータス 404
   - 応答データの中からキー `error-messages` で取得できるエラーメッセージ情報には、入力値エラーとなったパラメーター名の情報等が含まれます。
   - 実行の成否判定のためには HTTP ステータスを利用してください。
 
-#### 入出力データの例
+#### 入出力データの例 <a name="入出力データの例"></a>
 
 入力値の例
 
@@ -1181,7 +1183,7 @@ HTTP ステータス 400
   </tbody>
 </table>
 
-#### 処理の流れ  
+#### 処理の流れ <a name="処理の流れ"></a>
 
 1. 入力値を検証します。  
     入力値エラーが見つかった場合は、処理を中断して `HTTP ステータス 400 Bad Request` を返します。
@@ -1193,7 +1195,7 @@ HTTP ステータス 400
     で指定された形式で返します。  
     ただし、利用不可能な `format` 値だった場合は `HTTP ステータス 404 Not Found` を返します。
 
-#### 入力値の検証内容
+#### 入力値の検証内容 <a name="入力値の検証内容"></a>
 
 <table>
   <tbody>
@@ -1236,7 +1238,7 @@ HTTP ステータス 400
   </tbody>
 </table>
 
-#### 応答データの内容
+#### 応答データの内容 <a name="応答データの内容"></a>
 
 正常終了した場合
 : 
@@ -1250,7 +1252,7 @@ HTTP ステータス 400
   - 応答データの中からキー `error-messages` で取得できるエラーメッセージ情報には、入力値エラーとなったパラメーター名の情報等が含まれます。
   - 実行の成否判定のためには HTTP ステータスを利用してください。
 
-#### 入出力データの例
+#### 入出力データの例 <a name="入出力データの例"></a>
 
 入力値の例
 
@@ -1335,7 +1337,7 @@ WABI BLAST のヘルプ情報を返します。
   </tbody>
 </table>
 
-#### Help-Command
+#### Help-Command <a name="Help-Command"></a>
 
 <table>
   <thead>
@@ -1379,7 +1381,7 @@ WABI BLAST のヘルプ情報を返します。
   </tbody>
 </table>
 
-#### 応答データの内容
+#### 応答データの内容 <a name="応答データの内容"></a>
 
 正常終了した場合
 : 
@@ -1389,7 +1391,7 @@ WABI BLAST のヘルプ情報を返します。
 : 
   - 指定可能な Help-Command 等の情報を返します。
 
-#### 入出力データの例
+#### 入出力データの例 <a name="入出力データの例"></a>
 
 入力値の例
 
@@ -1440,9 +1442,9 @@ WABI BLAST のヘルプ情報を返します。
 </div>
 </div>
 
-## WABI BLAST パラメータ
+## WABI BLAST パラメータ <a name="parameter"></a>
 
-### requestId：Request ID<a name="parameter-Request-ID"></a>
+### requestId：Request ID<a name="parameter-Request-ID"></a> 
 
 WABI に登録されている全ての [BLAST検索ジョブ](#search-job)
 の中から処理対象としているジョブを識別するための文字列です。  
@@ -1463,7 +1465,7 @@ wabi_blast_1111-1111-1111-11-111-111111
 
 参考：[BLAST ヘルプ Request ID](/blast-help.html#request%20id)
 
-### querySequence：検索配列データ<a name="parameter-querySequence"></a>
+### querySequence：検索配列データ<a name="parameter-querySequence"></a> 
 
   - FASTA 形式で検索配列を指定してください。
   - 配列名を付ける場合は、先頭に `">"` を付けた配列名の行を各配列の前においてください。
@@ -1508,7 +1510,7 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 
 参考：[BLAST ヘルプ Query:検索配列名，検索配列データ]({{site.baseurl}}/services/blast-help.html#query)
 
-### datasets：データセット<a name="parameter-datasets"></a>
+### datasets：データセット<a name="parameter-datasets"></a> 
 
 データセットは、 Web画面のフォームで入力を補助するために用意されていますが、現在、 WABI では使われていません。
 
@@ -1532,9 +1534,9 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 
 参考：[BLAST ヘルプ 塩基配列（データベース，DIVISION）]({{site.baseurl}}/services/blast-help.html#nucleotide)
 
-### database：データベース<a name="parameter-database"></a>
+### database：データベース <a name="parameter-database"></a> 
 
-#### 塩基配列データベース
+#### 塩基配列データベース <a name="塩基配列データベース"></a>
 
 塩基配列データベース値の例と意味は次の通りです。  
 ※ 最新の値は、こちらの API [GET /blast/help/{Help-Command}
@@ -1652,7 +1654,7 @@ Refseq NA データベース値
 |  `refseq-model-rna-R_norvegicus`  |  R. norvegicus  |  ラット  |
 |  `refseq-model-rna-X_tropicalis`  |  X. tropicalis  |  アフリカツメガエル  |
 
-#### アミノ酸配列データベース
+#### アミノ酸配列データベース <a name="アミノ酸配列データベース"></a>
 
 アミノ酸配列データベース値の例と意味は次の通りです。
 
@@ -1895,7 +1897,7 @@ WABI からの応答データの形式を次の中から指定できます。
 1
 ```
 
-## その他
+## その他 <a name="other"></a>
 
 検索結果は 7日間 保存されます。  
 ( [「Request ID，検索結果表示」]({{site.baseurl}}/services/blast-help.html#result) の「検索結果閲覧期間」より。)  

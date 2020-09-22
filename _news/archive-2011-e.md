@@ -36,12 +36,12 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn111206"><a href="#wn111206">Release of MGA data of human (Homo sapiens)</a></h2>
   <div class="news_date">December 06,2011</div>
-  <div class="news_content"><dl> <dd>DDBJ newly released 5'SAGE tags, MGA data, derived from human (<i>Homo sapiens</i>), which had been submitted by <a href="http://www.u-tokyo.ac.jp/en/" target="_blank">University of Tokyo</a>.<strong>The accession numbers</strong> are as follows;
+  <div class="news_content"><dl> <dd>DDBJ newly released 5'SAGE tags, MGA data, derived from human (<i>Homo sapiens</i>), which had been submitted by <a href="http://www.u-tokyo.ac.jp/en/" target="_blank">University of Tokyo</a>.<strong>The accession numbers</strong> are as follows;<br>
 <pre><code>AEAAA0000001-AEAAA0026367 (26,367 entries)AEAAB0000001-AEAAB0012114 (12,114 entries)
 AEAAC0000001-AEAAC0021096 (21,096 entries)AEAAD0000001-AEAAD0024262 (24,262 entries)
 AEAAE0000001-AEAAE0023437 (23,437 entries)AEAAF0000001-AEAAF0030485 (30,485 entries)
 AEAAG0000001-AEAAG0021798 (21,798 entries)AEAAH0000001-AEAAH0040734 (40,734 entries)
-AEAAI0000001-AEAAI0029614 (29,614 entries)AEAAJ0000001-AEAAJ0030206 (30,206 entries)</code></pre><strong>Anonymous FTP</strong>: <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/mga/AE_resource_index.html">AE_resource_index</a><strong>Related site:</strong> <a href="/ddbj/mga-e.html">About Mass sequence Genome for Sequence (MGA) entry</a></dd> </dl></div>
+AEAAI0000001-AEAAI0029614 (29,614 entries)AEAAJ0000001-AEAAJ0030206 (30,206 entries)</code></pre><br><strong>Anonymous FTP</strong>: <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/mga/AE_resource_index.html">AE_resource_index</a><strong>Related site:</strong> <a href="/ddbj/mga-e.html">About Mass sequence Genome for Sequence (MGA) entry</a></dd> </dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -243,7 +243,7 @@ AK388430 - AK388473AK388475 - AK388499AK388501 - AK388575</div></dd> </dl></div>
 <div class="news_post_list">
   <h2 class="news_title" id ="wn110817"><a href="#wn110817">The fax number changed to "Mandatory"</a></h2>
   <div class="news_date">August 17,2011</div>
-  <div class="news_content"><a href="http://sakura.ddbj.nig.ac.jp/sakura_en.html">SAKURA</a> is a nucleotide sequence data submission system through the WWW server at DDBJ.The input of the fax number changed to "Mandatory(Marked with <img src="{{ site.baseurl }}/assets/images/news/M1.gif" title="M" width="20" height="20" class="alignnone size-full wp-image-11384">)" on 15 August 2011. You can't proceed further if you fail to fill up any one of the fields.<a href="{{ site.baseurl }}/assets/images/news/110817-e.fax_.gif"><img src="{{ site.baseurl }}/assets/images/news/110817-e.fax_.gif" title="110817-e.fax" width="633" height="244" class="alignnone size-full wp-image-11309"></a>Generally, DDBJ contacts submitters via E-mail. However, in case of breakdown of communication via E-mail by any reason, DDBJ would contact submitters via fax.So, please let us know your fax number, if possible.Please choose "If you do not have any fax machine, please check it." if you do not have the fax.Thank you for your understanding and cooperation.</div>
+  <div class="news_content"><a href="http://sakura.ddbj.nig.ac.jp/sakura_en.html">SAKURA</a> is a nucleotide sequence data submission system through the WWW server at DDBJ.The input of the fax number changed to "Mandatory(Marked with <img src="{{ site.baseurl }}/assets/images/news/M1.gif" title="M" width="20" height="20" class="alignnone size-full wp-image-11384">)" on 15 August 2011. You can't proceed further if you fail to fill up any one of the fields.<a href="{{ site.baseurl }}/assets/images/news/110817-e.fax_.gif"><img src="{{ site.baseurl }}/assets/images/news/110817-e.fax_.gif" title="110817-e.fax" width="633" height="244" class="alignnone size-full wp-image-11309"></a><br>Generally, DDBJ contacts submitters via E-mail. However, in case of breakdown of communication via E-mail by any reason, DDBJ would contact submitters via fax.So, please let us know your fax number, if possible.Please choose "If you do not have any fax machine, please check it." if you do not have the fax.Thank you for your understanding and cooperation.</div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -544,14 +544,14 @@ AK388430 - AK388473AK388475 - AK388499AK388501 - AK388575</div></dd> </dl></div>
 <div class="news_post_list">
   <h2 class="news_title" id ="wn110207_2"><a href="#wn110207_2">Apologies for the trouble of in DDBJ release 84</a></h2>
   <div class="news_date">February 07,2011</div>
-  <div class="news_content">In DDBJ release 84(released on Dec. 2010), trouble was found in a part. Details are as follows:<br><br><br><ul><li><strong>Situation:</strong> The data that had to be excluded was included.</li><li><strong>Services:</strong> Anonymous FTP, ARSA, Homology Search, DAD, NIG supercomputer(supernig)</li><li><strong>Measure:</strong> DDBJ will releases "DDBJ release 84.1".</li></ul><strong>Corresponding Files:</strong>
+  <div class="news_content">In DDBJ release 84(released on Dec. 2010), trouble was found in a part. Details are as follows:<br><br><br><ul><li><strong>Situation:</strong> The data that had to be excluded was included.</li><li><strong>Services:</strong> Anonymous FTP, ARSA, Homology Search, DAD, NIG supercomputer(supernig)</li><li><strong>Measure:</strong> DDBJ will releases "DDBJ release 84.1".</li></ul><strong>Corresponding Files:</strong><br>
 <pre><code> BCT (33 entries)  / ddbjbct2.seq.gz, ddbjbct8.seq.gz, ddbjbct9.seq.gz ENV (217 entries) /
 ddbjenv4.seq.gz, ddbjenv5.seq.gz EST (1 entry)     / ddbjest145.seq.gz HUM (21 entries)  
 / ddbjhum6.seq.gz INV (9 entries)   / ddbjinv4.seq.gz PLN (2 entries)   
 / ddbjpln5.seq.gz, ddbjpln7.seq.gz ROD (27 entries)  / ddbjrod5.seq.gz SYN (1 entry)     
 / ddbjsyn.seq.gz VRL (33 entries)  / ddbjvrl1.seq.gz,  VRT (403 entries)
 / ddbjvrt1.seq.gz, ddbjvrt3.seq.gz, ddbjvrt4.seq.gz CON (16,633 entries) 
-/ ddbjcon5.seq.gz, ddbjcon6.seq.gz, ddbjcon7.seq.gz, ddbjcon8.seq.gz, ddbjcon11.seq.gz</code></pre>We apologize for your inconvenience. </div>
+/ ddbjcon5.seq.gz, ddbjcon6.seq.gz, ddbjcon7.seq.gz, ddbjcon8.seq.gz, ddbjcon11.seq.gz</code></pre><br>We apologize for your inconvenience. </div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Maintenance</span>
