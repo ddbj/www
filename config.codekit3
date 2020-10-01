@@ -2356,6 +2356,14 @@
 		"oAP": "/_config.yml",
 		"oF": 0
 		},
+	"/_data/annual-reports.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_data/annual-reports.yml",
+		"oF": 0
+		},
 	"/_data/jsonld/_services_index.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -6219,6 +6227,25 @@
 		"oAP": "/build/_site",
 		"oF": 0
 		},
+	"/_statistics/ddbj-release-e.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_statistics/ddbj-release-e.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"/_statistics/ddbj-release.md": {
 		"cB": 0,
 		"cS": 0,
@@ -6325,6 +6352,25 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_statistics/gea-submission-e.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_statistics/index-e.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_statistics/index-e.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -6588,6 +6634,25 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/_tentative/account-integration-e.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_tentative/account-integration-e.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"/_tentative/account-integration.md": {
 		"cB": 0,
 		"cS": 0,
@@ -6816,6 +6881,25 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/_tentative/covid19-e.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_tentative/covid19-e.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"/_tentative/covid19.md": {
 		"cB": 0,
 		"cS": 0,
@@ -6949,6 +7033,25 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/_tentative/full_index-e.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_tentative/full_index-e.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"/_tentative/full_index.md": {
 		"cB": 0,
 		"cS": 0,
@@ -6960,6 +7063,25 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_tentative/full_index.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_tentative/group-e.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_tentative/group-e.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -7473,6 +7595,25 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_tentative/single-amplified-genome.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_tentative/single-cell-e.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_tentative/single-cell-e.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -8117,6 +8258,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/assets/images/books/account_dway_only-e.png": {
+		"ft": 32768,
+		"iS": 38157,
+		"oA": 0,
+		"oAP": "/assets/images/books/account_dway_only-e.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/images/books/account_dway_only.png": {
 		"ft": 32768,
 		"iS": 37686,
@@ -8139,6 +8291,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/assets/images/books/account_integration-e.png": {
+		"ft": 32768,
+		"iS": 117714,
+		"oA": 0,
+		"oAP": "/assets/images/books/account_integration-e.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/images/books/account_integration.png": {
 		"ft": 32768,
 		"iS": 113520,
@@ -8150,11 +8313,33 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/images/books/account_jga_dway-e.png": {
+		"ft": 32768,
+		"iS": 41564,
+		"oA": 0,
+		"oAP": "/assets/images/books/account_jga_dway-e.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/images/books/account_jga_dway.png": {
 		"ft": 32768,
 		"iS": 40249,
 		"oA": 0,
 		"oAP": "/assets/images/books/account_jga_dway.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/books/account_jga_only-e.png": {
+		"ft": 32768,
+		"iS": 37058,
+		"oA": 0,
+		"oAP": "/assets/images/books/account_jga_only-e.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -10053,6 +10238,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/assets/images/books/subgrp_nbdc-e.png": {
+		"ft": 32768,
+		"iS": 47292,
+		"oA": 0,
+		"oAP": "/assets/images/books/subgrp_nbdc-e.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/assets/images/books/subgrp_nbdc.png": {
 		"ft": 32768,
 		"iS": 44464,
@@ -10069,6 +10265,17 @@
 		"iS": 25838,
 		"oA": 0,
 		"oAP": "/assets/images/books/subgrp_nbdc_update.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/books/usergrp_nbdc-e.png": {
+		"ft": 32768,
+		"iS": 22603,
+		"oA": 0,
+		"oAP": "/assets/images/books/usergrp_nbdc-e.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -17481,14 +17688,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/CNAME",
-		"oF": 0
-		},
-	"/convert.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/convert.html",
 		"oF": 0
 		},
 	"/Gemfile": {
