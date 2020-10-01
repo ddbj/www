@@ -58,8 +58,8 @@
         en: 'Terms'
       },
       uri: {
-        ja: '/policies.html',
-        en: '/policies-e.html'
+        ja: 'https://ddbj.github.io/www/policies.html',
+        en: 'https://ddbj.github.io/www/policies-e.html'
       }
     },
     {
@@ -68,8 +68,8 @@
         en: 'Contact'
       },
       uri: {
-        ja: '/contact.html',
-        en: '/contact-e.html'
+        ja: 'https://ddbj.github.io/www/contact.html',
+        en: 'https://ddbj.github.io/www/contact-e.html'
       }
     }
   ];
