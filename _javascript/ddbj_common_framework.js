@@ -6,8 +6,8 @@
         en: 'Services'
       },
       uri: {
-        ja: 'https://ddbj.github.io/www/services/',
-        en: 'https://ddbj.github.io/www/services/index-e.html'
+        ja: 'https://www.ddbj.nig.ac.jp/services.html',
+        en: 'https://www.ddbj.nig.ac.jp/services-e.html'
       }
     },
     {
@@ -26,8 +26,8 @@
         en: 'Statistics'
       },
       uri: {
-        ja: 'https://ddbj.github.io/www/statistics/',
-        en: 'https://ddbj.github.io/www/statistics/index-e.html'
+        ja: 'https://www.ddbj.nig.ac.jp/statistics.html',
+        en: 'https://www.ddbj.nig.ac.jp/statistics-e.html'
       }
     },
     {
@@ -36,8 +36,8 @@
         en: 'Activities'
       },
       uri: {
-        ja: 'https://ddbj.github.io/www/activities/',
-        en: 'https://ddbj.github.io/www/activities/index-e.html'
+        ja: 'https://www.ddbj.nig.ac.jp/activities.html',
+        en: 'https://www.ddbj.nig.ac.jp/activities-e.html'
       }
     },
     {
@@ -46,8 +46,8 @@
         en: 'About Us'
       },
       uri: {
-        ja: 'https://ddbj.github.io/www/aboutus/aboutus',
-        en: 'https://ddbj.github.io/www/aboutus/aboutus-e.html'
+        ja: 'https://www.ddbj.nig.ac.jp/aboutus.html',
+        en: 'https://www.ddbj.nig.ac.jp/aboutus-e.html'
       }
     }
   ];
@@ -58,8 +58,8 @@
         en: 'Terms'
       },
       uri: {
-        ja: 'https://ddbj.github.io/www/policies.html',
-        en: 'https://ddbj.github.io/www/policies-e.html'
+        ja: 'https://www.ddbj.nig.ac.jp/policies.html',
+        en: 'https://www.ddbj.nig.ac.jp/policies-e.html'
       }
     },
     {
@@ -68,8 +68,8 @@
         en: 'Contact'
       },
       uri: {
-        ja: 'https://ddbj.github.io/www/contact.html',
-        en: 'https://ddbj.github.io/www/contact-e.html'
+        ja: 'https://www.ddbj.nig.ac.jp/contact.html',
+        en: 'https://www.ddbj.nig.ac.jp/contact-e.html'
       }
     }
   ];
