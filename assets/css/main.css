@@ -523,6 +523,102 @@ input, textarea, select, button {
   .md-content .news_date {
     font-size: 80%;
     color: #333; }
+  .md-content .allstaff .list_width {
+    list-style: none;
+    display: flex;
+    margin-bottom: 1.5rem; }
+    .md-content .allstaff .list_width .list_staff {
+      display: flex;
+      width: 30%; }
+      .md-content .allstaff .list_width .list_staff .staff_photo {
+        margin-right: 1.5rem; }
+      .md-content .allstaff .list_width .list_staff .staff_explanation .staff_name, .md-content .allstaff .list_width .list_staff .staff_explanation .staff_name_en {
+        font-weight: bold; }
+  .md-content .timeline-nav {
+    padding: 1.5rem 0 1.5rem 5rem; }
+    .md-content .timeline-nav > li {
+      list-style: none; }
+      .md-content .timeline-nav > li:before {
+        content: '';
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        border-radius: 100%;
+        background: #000;
+        position: relative;
+        left: -10px; }
+  .md-content .timeline > li {
+    display: flex;
+    border-bottom: 1.5px solid #d2cac4;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    margin-left: 0; }
+    .md-content .timeline > li:first-child {
+      border-top: 1.5px solid #d2cac4; }
+    .md-content .timeline > li ul li {
+      list-style: disc; }
+    .md-content .timeline > li .timeline-date {
+      font-size: 3.5rem;
+      color: #6D5C3F;
+      margin-top: -0.5rem;
+      margin-left: 7rem;
+      margin-right: 8rem; }
+    .md-content .timeline > li .timeline-content > h3 {
+      font-size: 1.5rem;
+      border-bottom: none;
+      margin-bottom: 0; }
+    .md-content .timeline > li .timeline-content > p {
+      font-size: 1.3rem; }
+    .md-content .timeline > li .timeline-content > table {
+      border: none; }
+      .md-content .timeline > li .timeline-content > table td {
+        border-bottom: none; }
+    .md-content .timeline > li .timeline-content > .ddbj, .md-content .timeline > li .timeline-content .science {
+      position: relative; }
+      .md-content .timeline > li .timeline-content > .ddbj:before, .md-content .timeline > li .timeline-content .science:before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        display: inline-block;
+        border-radius: 50%;
+        position: absolute;
+        top: 8px;
+        left: -20px; }
+    .md-content .timeline > li .timeline-content > .jan:after, .md-content .timeline > li .timeline-content .dec:after, .md-content .timeline > li .timeline-content .feb:after, .md-content .timeline > li .timeline-content .mar:after, .md-content .timeline > li .timeline-content .nov:after, .md-content .timeline > li .timeline-content .jul:after, .md-content .timeline > li .timeline-content .apr:after, .md-content .timeline > li .timeline-content .may:after, .md-content .timeline > li .timeline-content .sep:after, .md-content .timeline > li .timeline-content .oct:after, .md-content .timeline > li .timeline-content .aug:after {
+      content: "";
+      color: #FF7300;
+      font-weight: bold;
+      position: absolute;
+      top: -1px;
+      left: -50px; }
+    .md-content .timeline > li .timeline-content > .jan:after {
+      content: "Jan."; }
+    .md-content .timeline > li .timeline-content > .dec:after {
+      content: "Dec."; }
+    .md-content .timeline > li .timeline-content > .feb:after {
+      content: "Feb."; }
+    .md-content .timeline > li .timeline-content > .mar:after {
+      content: "Mar."; }
+    .md-content .timeline > li .timeline-content > .nov:after {
+      content: "Nov."; }
+    .md-content .timeline > li .timeline-content > .jul:after {
+      content: "Jul."; }
+    .md-content .timeline > li .timeline-content > .apr:after {
+      content: "Apr."; }
+    .md-content .timeline > li .timeline-content > .may:after {
+      content: "May."; }
+    .md-content .timeline > li .timeline-content > .aug:after {
+      content: "Aug."; }
+    .md-content .timeline > li .timeline-content > .sep:after {
+      content: "Sep."; }
+    .md-content .timeline > li .timeline-content > .oct:after {
+      content: "Oct."; }
+    .md-content .timeline > li .timeline-content > .ddbj:before {
+      background-color: #FF7300; }
+    .md-content .timeline > li .timeline-content > .science:before {
+      background-color: #009B00; }
+    .md-content .timeline > li .timeline-content > .science:after {
+      color: #009B00; }
   .md-content .flow {
     color: #000000;
     list-style: none;
@@ -858,7 +954,7 @@ input, textarea, select, button {
         margin-left: auto;
         padding-bottom: 2rem;
         width: 23rem;
-        height: 93rem;
+        height: 100vh;
         position: sticky;
         overflow: scroll;
         top: 0; }

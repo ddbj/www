@@ -305,6 +305,131 @@ $MARGIN_BOTTOM: 1rem
     font-size: 80%
     color: #333
 
+  // DDBJ 運営スタッフ レイアウトここから
+
+  .allstaff
+    .list_width
+      list-style: none
+      display: flex
+      margin-bottom: 1.5rem
+      .list_staff
+        display: flex
+        width: 30%
+        .staff_photo
+          margin-right: 1.5rem
+        .staff_explanation
+          .staff_name,.staff_name_en
+            font-weight: bold
+
+  // DDBJ 運営スタッフ レイアウトここまで
+
+  // DDBJ 30年の歩み レイアウトここから
+  .timeline-nav
+    padding: 1.5rem 0 1.5rem 5rem
+    >li
+      list-style: none
+      &:before
+        content: ''
+        width: 10px
+        height: 10px
+        display: inline-block
+        border-radius: 100%
+        background: #000
+        position: relative
+        left: -10px
+  .timeline
+    >li
+      display: flex
+      border-bottom: 1.5px solid $COLOR_LIGHT_GRAY
+      padding-top: 1rem
+      padding-bottom: 1.5rem
+      margin-left: 0
+      &:first-child
+        border-top: 1.5px solid $COLOR_LIGHT_GRAY
+      ul
+        li
+          list-style: disc
+      .timeline-date
+        font-size: 3.5rem
+        color: $COLOR_BROWN
+        margin-top: -0.5rem
+        margin-left: 7rem
+        margin-right: 8rem
+      .timeline-content
+        >h3
+          font-size: 1.5rem
+          border-bottom: none
+          margin-bottom: 0
+        >p
+          font-size: 1.3rem
+        >table
+          border: none
+          td
+            border-bottom: none
+        >.ddbj,.science
+          position: relative
+          &:before
+            content:  ""     
+            width:  7px               
+            height:  7px              
+            display:  inline-block     
+            border-radius:  50%
+            position: absolute
+            top: 8px
+            left: -20px
+        >.jan,.dec,.feb,.mar,.nov,.jul,.apr,.may,.sep,.oct,.aug
+          &:after
+            content:  ""
+            color: $COLOR_KEY
+            font-weight: bold
+            position: absolute
+            top: -1px
+            left: -50px
+        >.jan
+          &:after
+            content:  "Jan."
+        >.dec
+          &:after
+            content:  "Dec."
+        >.feb
+          &:after
+            content:  "Feb."
+        >.mar
+          &:after
+            content:  "Mar."
+        >.nov
+          &:after
+            content:  "Nov."
+        >.jul
+          &:after
+            content:  "Jul."
+        >.apr
+          &:after
+            content:  "Apr."
+        >.may
+          &:after
+            content:  "May."
+        >.aug
+          &:after
+            content:  "Aug."
+        >.sep
+          &:after
+            content:  "Sep."
+        >.oct
+          &:after
+            content:  "Oct."
+        >.ddbj
+          &:before
+            background-color: $COLOR_KEY
+        >.science
+          &:before
+            background-color: $COLOR_GREEN
+          &:after
+            color: $COLOR_GREEN
+
+
+  // DDBJ 30年の歩み レイアウトここまで
+
   .flow
     color: #000000 
     list-style: none
