@@ -3,44 +3,61 @@ items:
     title:
       en: Example
       ja: 例
-    report_url:
+    report:
       en: Report URL
       ja: 報告書リンク
-    budget_pdf_url:
+    budget_pdf:
       en: Budget PDF URL
       ja: 予算 PDF リンク
-    budget_excel_url:
+    budget_excel:
       en: Budget Excel URL
       ja: 予算 Excel リンク
-    self_evaluation_url:
+    self_evaluation:
       en: Self evaluation URL
       ja: 自己評価報告書リンク
   - date: 2019-1-1
     title:
       en: FY2019
       ja: 2019年度
-    report_url:
+    report:
       en: https://drive.google.com/file/d/1II3o6P4FmkVYabfJtrcKsEzg1iJsKntg
       ja: https://drive.google.com/file/d/1II3o6P4FmkVYabfJtrcKsEzg1iJsKntg
-    budget_pdf_url:
+    budget_pdf:
       en: https://drive.google.com/file/d/1l2uAohGHdAoFcdTVTiPi-3uk-bW1kYRz
       ja: https://drive.google.com/file/d/1l2uAohGHdAoFcdTVTiPi-3uk-bW1kYRz
-    budget_excel_url:
+    budget_excel:
       en: https://drive.google.com/file/d/1wWWAG3aVhZ7zESQxRZk3Lj9Ne9Fh7RBr
       ja: https://drive.google.com/file/d/1wWWAG3aVhZ7zESQxRZk3Lj9Ne9Fh7RBr
   - date: 2018-1-1
     title:
       en: FY2018
       ja: 2018年度
-    report_url:
+    report:
       en: https://drive.google.com/file/d/1S4m0dkdwQjKtRBiAZjBgdKW-ZjZdMQPs/
       ja: https://drive.google.com/file/d/1S4m0dkdwQjKtRBiAZjBgdKW-ZjZdMQPs/
-    budget_pdf_url:
+    budget_pdf:
       en: https://drive.google.com/file/d/1rlzRxuTPqARhr-cKimaEF2CYRe887z7V/
       ja: https://drive.google.com/file/d/1rlzRxuTPqARhr-cKimaEF2CYRe887z7V/
-    budget_excel_url:
+    budget_excel:
       en: https://drive.google.com/file/d/1oJqUbz_n23mWlW3YawhDvKW7ArPp68e-/
       ja: https://drive.google.com/file/d/1oJqUbz_n23mWlW3YawhDvKW7ArPp68e-/
-    self_evaluation_url:
+    self_evaluation:
       en: https://drive.google.com/file/d/17LUdcT47zy7OSO3uSwWZoN_BCiu1R-zb
       ja: https://drive.google.com/file/d/17LUdcT47zy7OSO3uSwWZoN_BCiu1R-zb
+
+dictionary:
+  tag:
+    en: Annual Report
+    ja: 年次報告書
+  report:
+    en: Annual Report
+    ja: 年次報告書
+  budget_pdf:
+    en: Budget (PDF)
+    ja: 予算内訳（PDF）
+  budget_excel:
+    en: Budget (Excel)
+    ja: 予算内訳（エクセル）
+  self_evaluation:
+    en: Self evaluation report
+    ja: 自己評価報告書

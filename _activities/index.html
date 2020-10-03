@@ -3,24 +3,6 @@ layout: children
 title: 活動活動
 lang: ja
 ---
-<ul>
-{% for service in site.activities%}
-  {% unless service.title == "activities" %}
-    {% if service.service_link != null %}
-      <li>
-        <a href="{{ service.service_link }}">{{ service.title }}</a>
-        <a href="{{ service.pathname }}">help</a>
-        <br>
-      </li>
-    {% else %}
-      <li>
-        <a href="{{ service.pathname }}">{{ service.title }}</a>
-        <br>
-      </li>
-    {% endif %}
-  {% endunless %}
-{% endfor %}
-</ul>
 
 <div id="NavigationAndMainView">
   <div class="inner -stretched">
@@ -30,8 +12,58 @@ lang: ja
         <ul class="tags"></ul>
       </nav>
     </nav>
-    <main class="mainview -beige">
-      HOGEHOGE
+    <main class="mainview">
+      <ul>
+
+        {% for activity in site.data.annual_reports.items %}
+          <li class="activity-view">
+            <div class="upper">
+              <h2 class="title">{{ activity.title[page.lang] }}</h2>
+              <ul class="tags">
+                <li class="date"><time>{{ activity.date | date: "%Y" }}</time></li>
+                <li class="tag-view" data-tag="annual_report">{{ site.data.annual_reports.dictionary.tag[page.lang] }}</li>
+              </ul>
+            </div>
+            <div class="bottom">
+              <a href="{{ activity.report[page.lang] }}">{{ site.data.annual_reports.dictionary.report[page.lang] }}</a>
+              {% if activity.budget_pdf %}
+              &nbsp;/&nbsp;<a href="{{ activity.budget_pdf[page.lang] }}">{{ site.data.annual_reports.dictionary.budget_pdf[page.lang] }}</a>
+              {% endif %}
+              {% if activity.budget_excel %}
+              &nbsp;/&nbsp;<a href="{{ activity.budget_excel[page.lang] }}">{{ site.data.annual_reports.dictionary.budget_excel[page.lang] }}</a>
+              {% endif %}
+              {% if activity.self_evaluation %}
+              &nbsp;&nbsp;/&nbsp;&nbsp;<a href="{{ activity.self_evaluation[page.lang] }}">{{ site.data.annual_reports.dictionary.self_evaluation[page.lang] }}</a>
+              {% endif %}
+            </div>
+          </li>
+        {% endfor %}
+
+      </ul>
     </main>
   </div>
 </div>
+
+<ul>
+{% for service in site.activities%}
+  {% unless service.title == "activities" %}
+      <li>
+        <p>****</p>
+        <a href="{{ service.url }}">{{ service.title }}</a>
+        <br>
+        title: {{ service.title }}
+        <br>
+        collection: {{ service.collection }}
+        <br>
+        dir: {{ service.dir }}
+        <br>
+        path: {{ service.path }}
+        <br>
+        <a href="{{ service.pathname }}">help</a>
+        <br>
+        <a href="{{ service.pathname }}">{{ service.title }}</a>
+        <br>
+      </li>
+  {% endunless %}
+{% endfor %}
+</ul>

@@ -8,7 +8,7 @@ export default function servicesView() {
     const categoryTags = {}, affiliationTags = {};
     const services = servicesView_.querySelectorAll('.service')
     for (const service of services) {
-      const tags = service.querySelectorAll('.tags > .service-tag');
+      const tags = service.querySelectorAll('.tags > .tag-view');
       for (const tag of tags) {
         let array;
         if (tag.classList.contains('-reverse')) {
@@ -27,12 +27,12 @@ export default function servicesView() {
     // ファセット検索用ビューの生成
     let html = '';
     const facetSearchTags = document.querySelector('.facet-search > .tags');
-    html += Object.keys(categoryTags).map(tag => `<li class="service-tag" data-tag="${tag}">${tag}<span class="count">${categoryTags[tag].length}</span></li>`).join('');
-    html += Object.keys(affiliationTags).map(tag => `<li class="service-tag -reverse" data-tag="${tag}">${tag}<span class="count">${affiliationTags[tag].length}</span></li>`).join('');
+    html += Object.keys(categoryTags).map(tag => `<li class="tag-view" data-tag="${tag}">${tag}<span class="count">${categoryTags[tag].length}</span></li>`).join('');
+    html += Object.keys(affiliationTags).map(tag => `<li class="tag-view -reverse" data-tag="${tag}">${tag}<span class="count">${affiliationTags[tag].length}</span></li>`).join('');
     facetSearchTags.innerHTML = html;
     // インタラクション
     const selectedTags = [];
-    const $selectedTags = $('.service-tag', facetSearchTags);
+    const $selectedTags = $('.tag-view', facetSearchTags);
     $selectedTags.on('click', e => {
       const tag = e.target.dataset.tag;
       // 選択中のタグに追加・削除
@@ -52,7 +52,7 @@ export default function servicesView() {
         });
         for (const service of services) {
           let isHidden = true;
-          const tags = Array.from(service.querySelectorAll('.tags > .service-tag'), tag => tag.dataset.tag);
+          const tags = Array.from(service.querySelectorAll('.tags > .tag-view'), tag => tag.dataset.tag);
           for (const tag of tags) {
             if (selectedTags.indexOf(tag) !== -1) {
               isHidden = false;
