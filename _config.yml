@@ -67,8 +67,6 @@ collections:
     output: true
   activities:
     output: true
-  icm:
-    output: true
   aboutus:
     output: true
   tentative:

@@ -3365,6 +3365,14 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/_includes/activity-view.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_includes/activity-view.html",
+		"oF": 0
+		},
 	"/_includes/footer.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -4901,7 +4909,7 @@
 		"oAP": "/_sass/object/component/_tag-view.css",
 		"oF": 0,
 		"oS": 0,
-		"sct": 1
+		"sct": 0
 		},
 	"/_sass/object/component/_tags-view.sass": {
 		"aP": 0,

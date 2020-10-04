@@ -15,6 +15,7 @@ items:
     self_evaluation:
       en: Self evaluation URL
       ja: 自己評価報告書リンク
+    category: annual_report
   - date: 2019-1-1
     title:
       en: FY2019
@@ -28,6 +29,7 @@ items:
     budget_excel:
       en: https://drive.google.com/file/d/1wWWAG3aVhZ7zESQxRZk3Lj9Ne9Fh7RBr
       ja: https://drive.google.com/file/d/1wWWAG3aVhZ7zESQxRZk3Lj9Ne9Fh7RBr
+    category: annual_report
   - date: 2018-1-1
     title:
       en: FY2018
@@ -44,6 +46,7 @@ items:
     self_evaluation:
       en: https://drive.google.com/file/d/17LUdcT47zy7OSO3uSwWZoN_BCiu1R-zb
       ja: https://drive.google.com/file/d/17LUdcT47zy7OSO3uSwWZoN_BCiu1R-zb
+    category: annual_report
 
 dictionary:
   tag:

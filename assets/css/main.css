@@ -129,6 +129,24 @@ input, textarea, select, button {
     width: 100%;
     min-width: auto; } }
 
+.activity-view {
+  padding: 1.6rem;
+  border-bottom: solid 0.1rem #d2cac4;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  display: block; }
+  .activity-view > .upper > .title {
+    font-size: 1.6rem; }
+  .activity-view > .upper > .tags > * {
+    display: inline-block; }
+    .activity-view > .upper > .tags > * + * {
+      margin-left: .4rem; }
+  .activity-view > .upper > .tags > .date {
+    font-weight: bold;
+    color: #6D5C3F; }
+  .activity-view > .bottom {
+    margin-top: 0.4rem; }
+
 .appearance-switch > .button {
   display: inline-block;
   width: 1em;
@@ -190,13 +208,13 @@ input, textarea, select, button {
     margin-bottom: 1.2rem; }
   .facet-search > .tags {
     margin-left: -.9rem; }
-    .facet-search > .tags > .service-tag {
+    .facet-search > .tags > .tag-view {
       border-radius: 1.2em;
       margin-bottom: .4rem;
       line-height: 2.0;
       font-size: 1.2rem;
       cursor: pointer; }
-      .facet-search > .tags > .service-tag > .count {
+      .facet-search > .tags > .tag-view > .count {
         position: absolute;
         top: .5em;
         right: .5em;
@@ -782,7 +800,7 @@ input, textarea, select, button {
     border-left: solid 1px #d2cac4;
     margin-right: -.4rem; } }
 
-.service-tag {
+.tag-view {
   font-weight: bold;
   line-height: 1.6;
   background-color: #FCC93D;
@@ -790,7 +808,7 @@ input, textarea, select, button {
   border-radius: .8em;
   padding: 0 .8em;
   position: relative; }
-  .service-tag > .count {
+  .tag-view > .count {
     font-size: .8rem;
     background-color: white;
     vertical-align: middle;
@@ -801,15 +819,15 @@ input, textarea, select, button {
     min-width: 2em;
     position: relative;
     top: -.2em; }
-  .service-tag.-reverse {
+  .tag-view.-reverse {
     background-color: #6D5C3F;
     color: white; }
-    .service-tag.-reverse > .count {
+    .tag-view.-reverse > .count {
       color: #1C1B19; }
-  .service-tag.-disable {
+  .tag-view.-disable {
     background-color: #F5F4F2;
     color: #736357; }
-    .service-tag.-disable > .count {
+    .tag-view.-disable > .count {
       color: #736357; }
 
 .tags-view > .tag {
@@ -912,7 +930,7 @@ input, textarea, select, button {
       #ServicesView > .container > .service > .upper > .tags {
         list-style: none;
         margin: 0 -.2rem .8rem; }
-        #ServicesView > .container > .service > .upper > .tags > .service-tag {
+        #ServicesView > .container > .service > .upper > .tags > .tag-view {
           display: inline-block; }
       #ServicesView > .container > .service > .description {
         font-size: 1.2rem;
