@@ -6,8 +6,8 @@
         en: 'Services'
       },
       uri: {
-        ja: 'https://ddbj.github.io/www/services/',
-        en: 'https://ddbj.github.io/www/services/index-e.html'
+        ja: 'https://www.ddbj.nig.ac.jp/services.html',
+        en: 'https://www.ddbj.nig.ac.jp/services-e.html'
       }
     },
     {
@@ -26,8 +26,8 @@
         en: 'Statistics'
       },
       uri: {
-        ja: 'https://ddbj.github.io/www/statistics/',
-        en: 'https://ddbj.github.io/www/statistics/index-e.html'
+        ja: 'https://www.ddbj.nig.ac.jp/statistics.html',
+        en: 'https://www.ddbj.nig.ac.jp/statistics-e.html'
       }
     },
     {
@@ -36,8 +36,8 @@
         en: 'Activities'
       },
       uri: {
-        ja: 'https://ddbj.github.io/www/activities/',
-        en: 'https://ddbj.github.io/www/activities/index-e.html'
+        ja: 'https://www.ddbj.nig.ac.jp/activities.html',
+        en: 'https://www.ddbj.nig.ac.jp/activities-e.html'
       }
     },
     {
@@ -46,8 +46,8 @@
         en: 'About Us'
       },
       uri: {
-        ja: 'https://ddbj.github.io/www/aboutus/aboutus',
-        en: 'https://ddbj.github.io/www/aboutus/aboutus-e.html'
+        ja: 'https://www.ddbj.nig.ac.jp/aboutus.html',
+        en: 'https://www.ddbj.nig.ac.jp/aboutus-e.html'
       }
     }
   ];
@@ -58,8 +58,8 @@
         en: 'Terms'
       },
       uri: {
-        ja: '/policies.html',
-        en: '/policies-e.html'
+        ja: 'https://www.ddbj.nig.ac.jp/policies.html',
+        en: 'https://www.ddbj.nig.ac.jp/policies-e.html'
       }
     },
     {
@@ -68,8 +68,8 @@
         en: 'Contact'
       },
       uri: {
-        ja: '/contact.html',
-        en: '/contact-e.html'
+        ja: 'https://www.ddbj.nig.ac.jp/contact.html',
+        en: 'https://www.ddbj.nig.ac.jp/contact-e.html'
       }
     }
   ];
@@ -645,14 +645,9 @@
   }
   #DDBJ_CommonHeader > .DDBJ_inner {
     margin: 0 auto;
-    max-width: 128rem;
-    max-width: 1280px;
     padding: 0 10px;
     height: 40px;
     display: flex;
-  }
-  #DDBJ_CommonHeader > .DDBJ_inner.-stretched {
-    max-width: 100%;
   }
   #DDBJ_CommonHeader > .DDBJ_inner .DDBJ_spcollapsemenubutton {
     display: none;
@@ -676,10 +671,6 @@
   }
   #DDBJ_CommonHeader > .DDBJ_inner .DDBJ_menu > .DDBJ_language {
     padding-right: 1.5rem;
-    display: none;
-  }
-  #DDBJ_CommonHeader > .DDBJ_inner .DDBJ_menu > .DDBJ_language.-DDBJ_available {
-    display: block;
   }
   #DDBJ_CommonHeader > .DDBJ_inner .DDBJ_menu > .DDBJ_language > a {
     display: inline-block;
@@ -866,8 +857,15 @@
       display: block;
     }
     #DDBJ_CommonHeader > .DDBJ_inner .DDBJ_menu > * {
+      height: auto;
       line-height: 40px;
-      padding-left: 18px;
+      padding: 0 18px;
+    }
+    #DDBJ_CommonHeader > .DDBJ_inner .DDBJ_menu > .DDBJ_language > a {
+      line-height: 30px;
+      border-radius: 15px;
+      padding: 0 15px;
+      margin-left: -3px;
     }
     #DDBJ_CommonHeader > .DDBJ_inner > .DDBJ_navigation {
       flex-grow: 0;
@@ -941,49 +939,12 @@
   }
   `; // TODO: 最終的にはCSS読み込みは自動化したい
   
-  // language
-  let language = document.getElementsByTagName('html')[0].getAttribute('lang');
-  language = language === 'ja' ? 'ja' : 'en';
-  let href = location.href;
-  href = href.indexOf('#') ? href : href.slice(0, href.indexOf('#'));
-  href = href.indexOf('?') ? href : href.slice(0, href.indexOf('?'));
-  let otherLanguageLink;
-  switch (language) {
-    case 'ja':
-      if (href.slice(-1) === '/') {
-        otherLanguageLink = href + 'index-e.html';
-      } else if (href.slice(-5) === '.html') {
-        otherLanguageLink = href.slice(0, -5) + '-e';
-      } else {
-        otherLanguageLink = href + '-e';
-      }
-      break;
-    default: // en
-      if (href.slice(-2) === '-e') {
-        otherLanguageLink = href.slice(0, -2);
-      } else if (href.slice(-7) === '-e.html') {
-        otherLanguageLink = href.slice(0, -7);
-      }
-      break;
-  }
-  fetch(otherLanguageLink)
-    .then(response => {
-      if (!response.ok) {
-        throw Error(response.status);
-      }
-      return response;
-    })
-    .then(response => {
-      document.querySelector('.DDBJ_language').classList.add('-DDBJ_available');
-    })
-    .catch(() => {
-      console.log('error')
-    });
-
   const script = document.getElementById('DDBJ_common_framework');
   script.style.display = '';
   script.style.height = '';
   const body = document.querySelector('body');
+  let language = document.getElementsByTagName('html')[0].getAttribute('lang');
+  language = language === 'ja' ? 'ja' : 'en';
 
   // add stylesheet
   const style = document.createElement('style');
@@ -1019,7 +980,6 @@
             ${HEADER_RIGHT_MENU.map(item => `
             <li><a href="${item.uri[language]}">${item.label[language]}</a></li>
             `).join('')}
-            <li class="DDBJ_language"><a href="${otherLanguageLink}">${language === 'ja' ? 'English' : 'Japanese'}</a></li>
           </ul>
         </div>
       </nav>
@@ -1040,7 +1000,52 @@
     this.classList.toggle('-opened');
   }
 
+  // language switcher
+  DDBJ_languageSwitcher();
+
+  // make footer
   window.addEventListener('load', DDBJ_makeFooter, false);
+
+  function DDBJ_languageSwitcher() {
+    console.log(script.dataset.ddbjHomePage)
+    if (script.dataset.ddbjHomePage !== 'true') return;
+    let href = location.href;
+    href = href.indexOf('#') ? href : href.slice(0, href.indexOf('#'));
+    href = href.indexOf('?') ? href : href.slice(0, href.indexOf('?'));
+    let otherLanguageLink;
+    switch (language) {
+      case 'ja':
+        if (href.slice(-1) === '/') {
+          otherLanguageLink = href + 'index-e.html';
+        } else if (href.slice(-5) === '.html') {
+          otherLanguageLink = href.slice(0, -5) + '-e';
+        } else {
+          otherLanguageLink = href + '-e';
+        }
+        break;
+      default: // en
+        if (href.slice(-2) === '-e') {
+          otherLanguageLink = href.slice(0, -2);
+        } else if (href.slice(-7) === '-e.html') {
+          otherLanguageLink = href.slice(0, -7);
+        }
+        break;
+    }
+    fetch(otherLanguageLink)
+      .then(response => {
+        if (!response.ok) {
+          throw Error(response.status);
+        }
+        return response;
+      })
+      .then(() => {
+        //document.querySelector('.DDBJ_language').classList.add('-DDBJ_available');
+        document.querySelector('.DDBJ_menu.-DDBJ_right').innerHTML += `<li class="DDBJ_language"><a href="${otherLanguageLink}">${language === 'ja' ? 'English' : 'Japanese'}</a></li>`;
+      })
+      .catch(() => {
+        console.log('error')
+      });
+  }
 
   function DDBJ_makeFooter() {
     // generate bottom menu

@@ -20,14 +20,9 @@
 }
 #DDBJ_CommonHeader > .DDBJ_inner {
   margin: 0 auto;
-  max-width: 128rem;
-  max-width: 1280px;
   padding: 0 10px;
   height: 40px;
   display: flex;
-}
-#DDBJ_CommonHeader > .DDBJ_inner.-stretched {
-  max-width: 100%;
 }
 #DDBJ_CommonHeader > .DDBJ_inner .DDBJ_spcollapsemenubutton {
   display: none;
@@ -51,10 +46,6 @@
 }
 #DDBJ_CommonHeader > .DDBJ_inner .DDBJ_menu > .DDBJ_language {
   padding-right: 1.5rem;
-  display: none;
-}
-#DDBJ_CommonHeader > .DDBJ_inner .DDBJ_menu > .DDBJ_language.-DDBJ_available {
-  display: block;
 }
 #DDBJ_CommonHeader > .DDBJ_inner .DDBJ_menu > .DDBJ_language > a {
   display: inline-block;
@@ -241,8 +232,15 @@
     display: block;
   }
   #DDBJ_CommonHeader > .DDBJ_inner .DDBJ_menu > * {
+    height: auto;
     line-height: 40px;
-    padding-left: 18px;
+    padding: 0 18px;
+  }
+  #DDBJ_CommonHeader > .DDBJ_inner .DDBJ_menu > .DDBJ_language > a {
+    line-height: 30px;
+    border-radius: 15px;
+    padding: 0 15px;
+    margin-left: -3px;
   }
   #DDBJ_CommonHeader > .DDBJ_inner > .DDBJ_navigation {
     flex-grow: 0;

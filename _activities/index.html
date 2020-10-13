@@ -2,22 +2,86 @@
 layout: children
 title: 活動
 lang: ja
+tag_label:
+  icm:
+    en: The Reports for International Collaborators Meetings
+    ja: 国際実務者会議報告
 ---
-<ul>
+
+<div id="NavigationAndMainView">
+  <div class="inner -stretched">
+    <nav class="subview">
+      <nav class="facet-search">
+        <h2 class="title">タグ</h2>
+        <ul class="tags"></ul>
+      </nav>
+    </nav>
+    <main class="mainview">
+      <ul>
+
+        {% for activity in site.data.annual_reports.items %}
+          {% assign label = activity.title[page.lang] %}
+          {% assign tag_label = site.data.annual_reports.dictionary.tag[page.lang] %}
+          {% capture body %}
+            <a href="{{ activity.report[page.lang] }}">{{ site.data.annual_reports.dictionary.report[page.lang] }}</a>
+            {% if activity.budget_pdf %}
+            &nbsp;/&nbsp;<a href="{{ activity.budget_pdf[page.lang] }}">{{ site.data.annual_reports.dictionary.budget_pdf[page.lang] }}</a>
+            {% endif %}
+            {% if activity.budget_excel %}
+            &nbsp;/&nbsp;<a href="{{ activity.budget_excel[page.lang] }}">{{ site.data.annual_reports.dictionary.budget_excel[page.lang] }}</a>
+            {% endif %}
+            {% if activity.self_evaluation %}
+            &nbsp;&nbsp;/&nbsp;&nbsp;<a href="{{ activity.self_evaluation[page.lang] }}">{{ site.data.annual_reports.dictionary.self_evaluation[page.lang] }}</a>
+            {% endif %}
+          {% endcapture %}
+          {% include activity-view.html tag="annual_report" %}
+        {% endfor %}
+
+        {% assign activities = site.activities | where: "category", "icm" %}
+        {% for activity in activities %}
+          {% assign label = activity.label %}
+          {% assign tag_label = page.tag_label.icm[page.lang] %}
+          {% assign body = activity.content | strip_html | truncate: 100 %}
+          {% include activity-view.html tag="icm" foo="baa" %}
+        {% endfor %}
+      
+      </ul>
+    </main>
+  </div>
+</div>
+
+<div style="padding: 2rem; font-size: 1.4rem; line-height: 1.5;">
+  {% assign icms = site.activities | where: "category", "icm" %}
+  {% for activity in icms %}
+  <p>{{ activity.label }}</p>
+  {% endfor %}
+</div>
+
+<hr>
+
+<ul style="padding: 2rem; font-size: 1.4rem; line-height: 1.5;">
 {% for service in site.activities%}
   {% unless service.title == "activities" %}
-    {% if service.service_link != null %}
-      <li>
-        <a href="{{ service.service_link }}">{{ service.title }}</a>
+      <li style="margin-bottom: 1.6rem">
+        <a href="{{ service.url }}">{{ service.title }}</a>
+        <br>
+        title: {{ service.title }}
+        <br>
+        collection: {{ service.collection }}
+        <br>
+        dir: {{ service.dir }}
+        <br>
+        path: {{ service.path }}
+        <br>
+        category: {{ service.category }}
+        <br>
+        label: {{ service.label }}
+        <br>
         <a href="{{ service.pathname }}">help</a>
         <br>
-      </li>
-    {% else %}
-      <li>
         <a href="{{ service.pathname }}">{{ service.title }}</a>
         <br>
       </li>
-    {% endif %}
   {% endunless %}
 {% endfor %}
 </ul>
