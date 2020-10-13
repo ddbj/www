@@ -21,9 +21,10 @@ tag_label:
 
         {% for activity in site.data.annual_reports.items %}
           {% assign label = activity.title[page.lang] %}
+          {% assign date = activity.date %}
           {% assign tag_label = site.data.annual_reports.dictionary.tag[page.lang] %}
           {% capture body %}
-            <a href="{{ activity.report[page.lang] }}">{{ site.data.annual_reports.dictionary.report[page.lang] }}</a>
+            <a href="{{ activity.report_url[page.lang] }}">{{ site.data.annual_reports.dictionary.report_url[page.lang] }}</a>
             {% if activity.budget_pdf %}
             &nbsp;/&nbsp;<a href="{{ activity.budget_pdf[page.lang] }}">{{ site.data.annual_reports.dictionary.budget_pdf[page.lang] }}</a>
             {% endif %}
@@ -39,10 +40,11 @@ tag_label:
 
         {% assign activities = site.activities | where: "category", "icm" %}
         {% for activity in activities %}
-          {% assign label = activity.label %}
+          {% assign label = activity.title %}
+          {% assign date = activity.start_date %}
           {% assign tag_label = page.tag_label.icm[page.lang] %}
           {% assign body = activity.content | strip_html | truncate: 100 %}
-          {% include activity-view.html tag="icm" foo="baa" %}
+          {% include activity-view.html tag="icm" %}
         {% endfor %}
       
       </ul>

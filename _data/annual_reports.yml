@@ -3,7 +3,7 @@ items:
     title:
       en: Example
       ja: 例
-    report:
+    report_url:
       en: Report URL
       ja: 報告書リンク
     budget_pdf:
@@ -20,7 +20,7 @@ items:
     title:
       en: FY2019
       ja: 2019年度
-    report:
+    report_url:
       en: https://drive.google.com/file/d/1II3o6P4FmkVYabfJtrcKsEzg1iJsKntg
       ja: https://drive.google.com/file/d/1II3o6P4FmkVYabfJtrcKsEzg1iJsKntg
     budget_pdf:
@@ -34,7 +34,7 @@ items:
     title:
       en: FY2018
       ja: 2018年度
-    report:
+    report_url:
       en: https://drive.google.com/file/d/1S4m0dkdwQjKtRBiAZjBgdKW-ZjZdMQPs/
       ja: https://drive.google.com/file/d/1S4m0dkdwQjKtRBiAZjBgdKW-ZjZdMQPs/
     budget_pdf:
@@ -52,7 +52,7 @@ dictionary:
   tag:
     en: Annual Report
     ja: 年次報告書
-  report:
+  report_url:
     en: Annual Report
     ja: 年次報告書
   budget_pdf:
