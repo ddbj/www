@@ -6,6 +6,9 @@ tag_label:
   icm:
     en: The Reports for International Collaborators Meetings
     ja: 国際実務者会議報告
+  training:
+    en: Training events
+    ja: 講習会
 ---
 
 <div id="NavigationAndMainView">
@@ -45,6 +48,15 @@ tag_label:
           {% assign tag_label = page.tag_label.icm[page.lang] %}
           {% assign body = activity.content | strip_html | truncate: 100 %}
           {% include activity-view.html tag="icm" %}
+        {% endfor %}
+
+        {% assign activities = site.activities | where: "category", "training" %}
+        {% for activity in activities %}
+          {% assign label = activity.title %}
+          {% assign date = activity.start_date %}
+          {% assign tag_label = page.tag_label.training[page.lang] %}
+          {% assign body = activity.content | strip_html | truncate: 100 %}
+          {% include activity-view.html tag="training" %}
         {% endfor %}
       
       </ul>
