@@ -800,6 +800,18 @@ input, textarea, select, button {
     border-left: solid 1px #d2cac4;
     margin-right: -.4rem; } }
 
+.staff-view > .wrapper > .list {
+  list-style: none;
+  display: flex;
+  margin-bottom: 1.5rem; }
+  .staff-view > .wrapper > .list > .staff {
+    display: flex;
+    width: 30%; }
+    .staff-view > .wrapper > .list > .staff > .photo {
+      margin-right: 1.5rem; }
+    .staff-view > .wrapper > .list > .staff > .explanation > .name {
+      font-weight: bold; }
+
 .tag-view {
   font-weight: bold;
   line-height: 1.6;
@@ -836,6 +848,101 @@ input, textarea, select, button {
   text-decoration: none; }
   .tags-view > .tag + .tag {
     margin-left: .5em; }
+
+.timeline-view > .nav {
+  padding: 1.5rem 0 1.5rem 5rem; }
+  .timeline-view > .nav > li {
+    font-size: 1.4rem;
+    list-style: none;
+    padding: .4rem 0;
+    line-height: 1.6;
+    margin-left: 2rem; }
+    .timeline-view > .nav > li:before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      border-radius: 100%;
+      background: #000;
+      position: relative;
+      left: -10px; }
+
+.timeline-view > .timeline > li {
+  display: flex;
+  border-bottom: 1.5px solid #d2cac4;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  margin-left: 0;
+  line-height: 1.6; }
+  .timeline-view > .timeline > li:first-child {
+    border-top: 1.5px solid #d2cac4; }
+  .timeline-view > .timeline > li ul li {
+    list-style: disc;
+    padding: 0; }
+  .timeline-view > .timeline > li > .date {
+    font-size: 3.5rem;
+    color: #6D5C3F;
+    margin-top: -0.5rem;
+    margin-left: 7rem;
+    margin-right: 8rem; }
+  .timeline-view > .timeline > li > .content > h3 {
+    font-size: 1.5rem;
+    border-bottom: none;
+    margin-bottom: 0; }
+  .timeline-view > .timeline > li > .content > p {
+    font-size: 1.3rem; }
+    .timeline-view > .timeline > li > .content > p img {
+      margin-top: 1rem; }
+  .timeline-view > .timeline > li > .content > table {
+    border: none; }
+    .timeline-view > .timeline > li > .content > table td {
+      border-bottom: none; }
+  .timeline-view > .timeline > li > .content > .ddbj, .timeline-view > .timeline > li > .content .science {
+    position: relative; }
+    .timeline-view > .timeline > li > .content > .ddbj:before, .timeline-view > .timeline > li > .content .science:before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      display: inline-block;
+      border-radius: 50%;
+      position: absolute;
+      top: 8px;
+      left: -20px; }
+  .timeline-view > .timeline > li > .content > .jan:after, .timeline-view > .timeline > li > .content .dec:after, .timeline-view > .timeline > li > .content .feb:after, .timeline-view > .timeline > li > .content .mar:after, .timeline-view > .timeline > li > .content .nov:after, .timeline-view > .timeline > li > .content .jul:after, .timeline-view > .timeline > li > .content .apr:after, .timeline-view > .timeline > li > .content .may:after, .timeline-view > .timeline > li > .content .sep:after, .timeline-view > .timeline > li > .content .oct:after, .timeline-view > .timeline > li > .content .aug:after {
+    content: "";
+    color: #FF7300;
+    font-weight: bold;
+    position: absolute;
+    top: -1px;
+    left: -50px; }
+  .timeline-view > .timeline > li > .content > .jan:after {
+    content: "Jan."; }
+  .timeline-view > .timeline > li > .content > .dec:after {
+    content: "Dec."; }
+  .timeline-view > .timeline > li > .content > .feb:after {
+    content: "Feb."; }
+  .timeline-view > .timeline > li > .content > .mar:after {
+    content: "Mar."; }
+  .timeline-view > .timeline > li > .content > .nov:after {
+    content: "Nov."; }
+  .timeline-view > .timeline > li > .content > .jul:after {
+    content: "Jul."; }
+  .timeline-view > .timeline > li > .content > .apr:after {
+    content: "Apr."; }
+  .timeline-view > .timeline > li > .content > .may:after {
+    content: "May."; }
+  .timeline-view > .timeline > li > .content > .aug:after {
+    content: "Aug."; }
+  .timeline-view > .timeline > li > .content > .sep:after {
+    content: "Sep."; }
+  .timeline-view > .timeline > li > .content > .oct:after {
+    content: "Oct."; }
+  .timeline-view > .timeline > li > .content > .ddbj:before {
+    background-color: #FF7300; }
+  .timeline-view > .timeline > li > .content > .science:before {
+    background-color: #009B00; }
+  .timeline-view > .timeline > li > .content > .science:after {
+    color: #009B00; }
 
 #Body {
   background-color: white; }
@@ -876,7 +983,7 @@ input, textarea, select, button {
         margin-left: auto;
         padding-bottom: 2rem;
         width: 23rem;
-        height: 93rem;
+        height: 100vh;
         position: sticky;
         overflow: scroll;
         top: 0; }

@@ -1629,6 +1629,25 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/_aboutus/ddbj-30-years.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_aboutus/ddbj-30-years.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"/_aboutus/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1686,6 +1705,44 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_aboutus/insdc.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_aboutus/staff-e.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_aboutus/staff-e.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_aboutus/staff.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_aboutus/staff.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -3660,6 +3717,14 @@
 		"oAP": "/_layouts/post.html",
 		"oF": 0
 		},
+	"/_layouts/timeline.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_layouts/timeline.html",
+		"oF": 0
+		},
 	"/_layouts/top.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -4925,6 +4990,19 @@
 		"oS": 0,
 		"sct": 1
 		},
+	"/_sass/object/component/_staff-view.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_sass/object/component/_staff-view.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/_sass/object/component/_tag-view.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -4950,6 +5028,19 @@
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
+		},
+	"/_sass/object/component/_timeline-view.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_sass/object/component/_timeline-view.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
 		},
 	"/_sass/object/project/_Body.sass": {
 		"aP": 0,
@@ -16281,6 +16372,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/assets/images/staff/fujisawa.jpg": {
+		"ft": 16384,
+		"iS": 3988,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/staff/fujisawa.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/images/staff/fukuda-old.jpg": {
 		"ft": 16384,
 		"iS": 4239,
@@ -16345,6 +16447,17 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/assets/images/staff/iizuka.jpg": {
+		"ft": 16384,
+		"iS": 4362,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/staff/iizuka.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/assets/images/staff/ishikawa.jpg": {
@@ -16413,12 +16526,34 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/assets/images/staff/kawasaki_t.jpg": {
+		"ft": 16384,
+		"iS": 4517,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/staff/kawasaki_t.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/images/staff/kawashima.jpg": {
 		"ft": 16384,
 		"iS": 4992,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/assets/images/staff/kawashima.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/staff/kawazoe.jpg": {
+		"ft": 16384,
+		"iS": 21934,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/staff/kawazoe.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -16633,6 +16768,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/assets/images/staff/okada.jpg": {
+		"ft": 16384,
+		"iS": 21068,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/staff/okada.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/images/staff/okido-old.jpg": {
 		"ft": 16384,
 		"iS": 18247,
@@ -16798,6 +16944,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/assets/images/staff/takaki.jpg": {
+		"ft": 16384,
+		"iS": 10804,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/staff/takaki.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/images/staff/takiguchi.jpg": {
 		"ft": 16384,
 		"iS": 5433,
@@ -16886,12 +17043,34 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/assets/images/staff/tu.jpg": {
+		"ft": 16384,
+		"iS": 3863,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/staff/tu.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/images/staff/watanabe.jpg": {
 		"ft": 16384,
 		"iS": 4308,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/assets/images/staff/watanabe.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/assets/images/staff/watanabe_t.jpg": {
+		"ft": 16384,
+		"iS": 3754,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/staff/watanabe_t.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
