@@ -12,7 +12,7 @@ lang: ja
       </nav>
     </nav>
     <main class="mainview -beige">
-      <div id="ServicesView" data-appearance-type="panel">
+      <div id="ServicesView" class="tagging-list-view" data-appearance-type="panel">
         <nav class="appearance-switch">
           <div class="button -current" data-appearance-value="panel" title="Panel view"></div>
           <div class="button" data-appearance-value="list" title="List view"></div>
@@ -20,7 +20,7 @@ lang: ja
         <ul class="container">
 
           {% for service in site.data.services.items %}
-          <li class="service">
+          <li class="service taggingitem">
             <div class="upper">
               <h2 class="title">
                 <a href="{{ service.service_link[page.lang] }}">{{ service.name }}</a>

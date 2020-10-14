@@ -1,14 +1,14 @@
 /* global $ */
 
 // サービス一覧
-export default function servicesView() {
-  const servicesView_ = document.getElementById('ServicesView');
-  if (servicesView_) {
+export default function taggingListView() {
+  const taggingListView = document.querySelector('.tagging-list-view');
+  if (taggingListView) {
     // タグの収集
     const categoryTags = {}, affiliationTags = {};
-    const services = servicesView_.querySelectorAll('.service')
-    for (const service of services) {
-      const tags = service.querySelectorAll('.tags > .tag-view');
+    const taggingItems = taggingListView.querySelectorAll('.taggingitem')
+    for (const item of taggingItems) {
+      const tags = item.querySelectorAll('.tags > .tag-view');
       for (const tag of tags) {
         let array;
         if (tag.classList.contains('-reverse')) {
@@ -21,7 +21,7 @@ export default function servicesView() {
         if (!array[tag.dataset.tag]) {
           array[tag.dataset.tag] = [];
         }
-        array[tag.dataset.tag].push(service);
+        array[tag.dataset.tag].push(item);
       }
     }
     // ファセット検索用ビューの生成
@@ -50,7 +50,7 @@ export default function servicesView() {
             elm.classList.remove('-disable');
           }
         });
-        for (const service of services) {
+        for (const service of taggingItems) {
           let isHidden = true;
           const tags = Array.from(service.querySelectorAll('.tags > .tag-view'), tag => tag.dataset.tag);
           for (const tag of tags) {
@@ -68,7 +68,7 @@ export default function servicesView() {
       } else {
         // 無選択の場合、全部選択
         $selectedTags.each((index, elm) => elm.classList.remove('-disable'));
-        services.forEach(service => service.classList.remove('-hidden'));
+        taggingItems.forEach(service => service.classList.remove('-hidden'));
       }
     });
 

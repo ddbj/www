@@ -842,6 +842,9 @@ input, textarea, select, button {
     .tag-view.-disable > .count {
       color: #736357; }
 
+.tagging-list-view .taggingitem.-hidden {
+  display: none; }
+
 .tags-view > .tag {
   color: #FF7300;
   font-weight: bold;
@@ -1051,8 +1054,6 @@ input, textarea, select, button {
             display: inline-block; }
             #ServicesView > .container > .service > .links > ul > li + li {
               margin-left: 1rem; }
-      #ServicesView > .container > .service.-hidden {
-        display: none; }
   #ServicesView[data-appearance-type="panel"] > .container {
     display: flex;
     flex-wrap: wrap;

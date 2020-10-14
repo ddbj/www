@@ -3579,17 +3579,6 @@
 		"sC": 3,
 		"tS": 1
 		},
-	"/_javascript/servicesView.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/_javascript/servicesView-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/_javascript/switchAppearance.js": {
 		"bF": 0,
 		"ft": 64,
@@ -3597,6 +3586,17 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/_javascript/switchAppearance-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/_javascript/taggingListView.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_javascript/taggingListView-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -5012,6 +5012,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/_sass/object/component/_tag-view.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/_sass/object/component/_tagging-list-view.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_sass/object/component/_tagging-list-view.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
