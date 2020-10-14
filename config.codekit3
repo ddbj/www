@@ -2394,6 +2394,14 @@
 		"oAP": "/_config.yml",
 		"oF": 0
 		},
+	"/_data/achievements.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_data/achievements.yml",
+		"oF": 0
+		},
 	"/_data/annual_reports.yml": {
 		"cB": 0,
 		"ft": 8192,

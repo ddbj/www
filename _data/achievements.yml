@@ -1,0 +1,46 @@
+items:
+
+  - date: 1-1-1
+    id:
+    title:
+    url:
+    author:
+    info:
+    pubmed_id:
+    keyword: paper or presentation or book
+    
+  - date: 2020-03-26
+    id: 
+    title: "DDBJ Data Analysis Challenge: a machine learning competition to predict Arabidopsis chromatin feature annotations from DNA sequences."
+    url: https://www.ncbi.nlm.nih.gov/pubmed/32213716
+    author: Kaminuma E, Baba Y, Mochizuki M, Matsumoto H, Ozaki H, Okayama T, Kato T, Oki S, Fujisawa T, Nakamura Y et al
+    info: Genes Genet Syst 2020 Mar 26;():.
+    pubmed_id: 32213716
+    keyword: paper
+    
+  - date: 2019-11-20
+    id: 
+    title: ゲノム科学＋DDBJ入門
+    author: 中村　保一
+    info: 静岡大学大学院・統合オミックス特論II
+    keyword: presentation
+    
+  - date: 2019-12-01
+    id: 
+    title: RNA-Seqデータ解析　WETラボのための鉄板レシピ (実験医学別冊)(Chapter 9論文投稿に必須! データを登録・公開する)
+    url: https://www.yodosha.co.jp/yodobook/book/9784758122436/
+    author: 児玉 悠一
+    info: 羊土社
+    keyword: book
+
+
+dictionary:
+  paper:
+    en: Papers
+    ja: 論文
+  presentation:
+    en: Presentations
+    ja: 講演発表
+  book:
+    en: Books
+    ja: 出版物
