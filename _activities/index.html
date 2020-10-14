@@ -86,39 +86,3 @@ tag_label:
     </main>
   </div>
 </div>
-
-<div style="padding: 2rem; font-size: 1.4rem; line-height: 1.5;">
-  {% assign icms = site.activities | where: "category", "icm" %}
-  {% for activity in icms %}
-  <p>{{ activity.label }}</p>
-  {% endfor %}
-</div>
-
-<hr>
-
-<ul style="padding: 2rem; font-size: 1.4rem; line-height: 1.5;">
-{% for service in site.activities%}
-  {% unless service.title == "activities" %}
-      <li style="margin-bottom: 1.6rem">
-        <a href="{{ service.url }}">{{ service.title }}</a>
-        <br>
-        title: {{ service.title }}
-        <br>
-        collection: {{ service.collection }}
-        <br>
-        dir: {{ service.dir }}
-        <br>
-        path: {{ service.path }}
-        <br>
-        category: {{ service.category }}
-        <br>
-        label: {{ service.label }}
-        <br>
-        <a href="{{ service.pathname }}">help</a>
-        <br>
-        <a href="{{ service.pathname }}">{{ service.title }}</a>
-        <br>
-      </li>
-  {% endunless %}
-{% endfor %}
-</ul>
