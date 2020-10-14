@@ -146,6 +146,37 @@ input, textarea, select, button {
     color: #6D5C3F; }
   .tagging-item-view > .bottom {
     margin-top: 0.4rem; }
+    .tagging-item-view > .bottom.-collapsed {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      height: 1.5rem;
+      position: relative;
+      padding-left: 1.5rem; }
+      .tagging-item-view > .bottom.-collapsed > .collapsedbutton {
+        position: absolute;
+        width: .7rem;
+        height: .7rem;
+        border-top: solid .2rem black;
+        border-right: solid .2rem black;
+        transform: rotate(45deg);
+        top: .5rem;
+        left: 0;
+        cursor: pointer;
+        transition: transform 0.2s, top 0.2s; }
+      .tagging-item-view > .bottom.-collapsed > * {
+        display: inline; }
+      .tagging-item-view > .bottom.-collapsed.-opened {
+        text-overflow: initial;
+        overflow: auto;
+        white-space: normal;
+        height: auto; }
+        .tagging-item-view > .bottom.-collapsed.-opened > .collapsedbutton {
+          transform: rotate(135deg);
+          top: .3rem;
+          left: .1rem; }
+        .tagging-item-view > .bottom.-collapsed.-opened > * {
+          display: inherit; }
 
 .appearance-switch > .button {
   display: inline-block;

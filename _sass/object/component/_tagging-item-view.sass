@@ -17,3 +17,34 @@
         color: $COLOR_BROWN
   > .bottom
     margin-top: 0.4rem
+    &.-collapsed
+      text-overflow: ellipsis
+      overflow: hidden
+      white-space: nowrap
+      height: 1.5rem
+      position: relative
+      padding-left: 1.5rem
+      > .collapsedbutton
+        position: absolute
+        width: .7rem
+        height: .7rem
+        border-top: solid .2rem black
+        border-right: solid .2rem black
+        transform: rotate(45deg)
+        top: .5rem
+        left: 0
+        cursor: pointer
+        transition: transform $DURATION_GUI, top $DURATION_GUI
+      > *
+        display: inline
+      &.-opened
+        text-overflow: initial
+        overflow: auto
+        white-space: normal
+        height: auto
+        > .collapsedbutton
+          transform: rotate(135deg)
+          top: .3rem
+          left: .1rem
+        > *
+          display: inherit

@@ -76,5 +76,13 @@ export default function taggingListView() {
       }
     });
 
+    // アイテムのインタラクション
+    taggingListView.querySelectorAll('.bottom.-collapsed').forEach(elm => {
+      console.log(elm)
+      const collapsedbutton = elm.querySelector('.collapsedbutton');
+      collapsedbutton.addEventListener('click', () => {
+        elm.classList.toggle('-opened');
+      });
+    })
   }
 }
