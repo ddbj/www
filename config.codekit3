@@ -3031,7 +3031,7 @@
 		"oAP": "/_download/index.html",
 		"oF": 1
 		},
-	"/_faq/faq.md": {
+	"/_faq/ja/acceptable-sequence-format.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -3041,7 +3041,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_faq/faq.html",
+		"oAP": "/_faq/ja/acceptable-sequence-format.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -3049,6 +3049,14 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"/_faq/ja/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_faq/ja/index.html",
+		"oF": 0
 		},
 	"/_flatfile/cds-e.md": {
 		"cB": 0,
@@ -3422,25 +3430,6 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_flatfile/qualifiers.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"/_icm/2020.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_icm/2020.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -4834,19 +4823,6 @@
 		"oS": 0,
 		"sct": 1
 		},
-	"/_sass/object/component/_activity-view.sass": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 2,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/_sass/object/component/_activity-view.css",
-		"oF": 0,
-		"oS": 0,
-		"sct": 0
-		},
 	"/_sass/object/component/_appearance-switch.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -5012,6 +4988,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/_sass/object/component/_tag-view.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/_sass/object/component/_tagging-item-view.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_sass/object/component/_tagging-item-view.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0

@@ -129,22 +129,22 @@ input, textarea, select, button {
     width: 100%;
     min-width: auto; } }
 
-.activity-view {
+.tagging-item-view {
   padding: 1.6rem;
   border-bottom: solid 0.1rem #d2cac4;
   font-size: 1.2rem;
   line-height: 1.5;
   display: block; }
-  .activity-view > .upper > .title {
+  .tagging-item-view > .upper > .title {
     font-size: 1.6rem; }
-  .activity-view > .upper > .tags > * {
+  .tagging-item-view > .upper > .tags > * {
     display: inline-block; }
-    .activity-view > .upper > .tags > * + * {
+    .tagging-item-view > .upper > .tags > * + * {
       margin-left: .4rem; }
-  .activity-view > .upper > .tags > .date {
+  .tagging-item-view > .upper > .tags > .date {
     font-weight: bold;
     color: #6D5C3F; }
-  .activity-view > .bottom {
+  .tagging-item-view > .bottom {
     margin-top: 0.4rem; }
 
 .appearance-switch > .button {
@@ -211,7 +211,10 @@ input, textarea, select, button {
     .facet-search > .tags > .tag-view {
       border-radius: 1.2em;
       margin-bottom: .4rem;
-      line-height: 2.0;
+      padding-top: .6rem;
+      padding-bottom: .6rem;
+      padding-right: 2.6rem;
+      line-height: 1;
       font-size: 1.2rem;
       cursor: pointer; }
       .facet-search > .tags > .tag-view > .count {

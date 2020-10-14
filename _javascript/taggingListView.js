@@ -5,7 +5,7 @@ export default function taggingListView() {
   const taggingListView = document.querySelector('.tagging-list-view');
   if (taggingListView) {
     // タグの収集
-    const categoryTags = {}, affiliationTags = {};
+    const categoryTags = {}, affiliationTags = {}, tagLabels = {};
     const taggingItems = taggingListView.querySelectorAll('.taggingitem')
     for (const item of taggingItems) {
       const tags = item.querySelectorAll('.tags > .tag-view');
@@ -20,6 +20,7 @@ export default function taggingListView() {
         }
         if (!array[tag.dataset.tag]) {
           array[tag.dataset.tag] = [];
+          tagLabels[tag.dataset.tag] = tag.textContent;
         }
         array[tag.dataset.tag].push(item);
       }
@@ -27,8 +28,11 @@ export default function taggingListView() {
     // ファセット検索用ビューの生成
     let html = '';
     const facetSearchTags = document.querySelector('.facet-search > .tags');
-    html += Object.keys(categoryTags).map(tag => `<li class="tag-view" data-tag="${tag}">${tag}<span class="count">${categoryTags[tag].length}</span></li>`).join('');
-    html += Object.keys(affiliationTags).map(tag => `<li class="tag-view -reverse" data-tag="${tag}">${tag}<span class="count">${affiliationTags[tag].length}</span></li>`).join('');
+    for (const array of [categoryTags, affiliationTags]) {
+      for (const tag in array) {
+        html += `<li class="tag-view${affiliationTags[tag] === undefined ? '' : ' -reverse'}" data-tag="${tag}">${tagLabels[tag]}<span class="count">${array[tag].length}</span></li>`;
+      }
+    }
     facetSearchTags.innerHTML = html;
     // インタラクション
     const selectedTags = [];
