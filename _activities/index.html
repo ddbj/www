@@ -70,6 +70,7 @@ tag_label:
           {% assign tag_label = page.tag_label.icm[page.lang] %}
           {% assign body = activity.content | strip_html | truncate: 100 %}
           {% include activity-view.html tag="icm" %}
+<<<<<<< HEAD
         {% endfor %}
 
         {% comment %} 講習会 {% endcomment %}
@@ -80,6 +81,8 @@ tag_label:
           {% assign tag_label = activity.keyword %}
           {% assign body = activity.content | strip_html | truncate: 100 %}
           {% include activity-view.html tag="training" %}
+=======
+>>>>>>> staff.md,ddbj-30-years.md
         {% endfor %}
       
       </ul>
