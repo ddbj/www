@@ -1,26 +1,9 @@
 items:
-  - date: 1-1-1
-    title:
-      en: Example
-      ja: 例
-    report:
-      en: Report URL
-      ja: 報告書リンク
-    budget_pdf:
-      en: Budget PDF URL
-      ja: 予算 PDF リンク
-    budget_excel:
-      en: Budget Excel URL
-      ja: 予算 Excel リンク
-    self_evaluation:
-      en: Self evaluation URL
-      ja: 自己評価報告書リンク
-    category: annual_report
   - date: 2019-1-1
     title:
       en: FY2019
       ja: 2019年度
-    report:
+    report_url:
       en: https://drive.google.com/file/d/1II3o6P4FmkVYabfJtrcKsEzg1iJsKntg
       ja: https://drive.google.com/file/d/1II3o6P4FmkVYabfJtrcKsEzg1iJsKntg
     budget_pdf:
@@ -34,7 +17,7 @@ items:
     title:
       en: FY2018
       ja: 2018年度
-    report:
+    report_url:
       en: https://drive.google.com/file/d/1S4m0dkdwQjKtRBiAZjBgdKW-ZjZdMQPs/
       ja: https://drive.google.com/file/d/1S4m0dkdwQjKtRBiAZjBgdKW-ZjZdMQPs/
     budget_pdf:
@@ -47,12 +30,75 @@ items:
       en: https://drive.google.com/file/d/17LUdcT47zy7OSO3uSwWZoN_BCiu1R-zb
       ja: https://drive.google.com/file/d/17LUdcT47zy7OSO3uSwWZoN_BCiu1R-zb
     category: annual_report
+  - date: 2017-1-1
+    title:
+      en: FY2017
+      ja: 2017年度
+    report_url:
+      en: https://drive.google.com/file/d/1Sx_XNqebCdjskbmCFmvZZB_YC5AVnamg/edit
+      ja: https://drive.google.com/file/d/1Sx_XNqebCdjskbmCFmvZZB_YC5AVnamg/edit
+    budget_pdf:
+      en: https://drive.google.com/file/d/15nggfQoRjN0yixs87pLQ-vekBmzFAigT/edit
+      ja: https://drive.google.com/file/d/15nggfQoRjN0yixs87pLQ-vekBmzFAigT/edit
+    budget_excel:
+      en: https://drive.google.com/file/d/1V8mIaKQE1G6Lcp0DYGesBJIl2Bt2aZoW/edit
+      ja: https://drive.google.com/file/d/1V8mIaKQE1G6Lcp0DYGesBJIl2Bt2aZoW/edit
+    category: annual_report
+  - date: 2016-1-1
+    title:
+      en: FY2016
+      ja: 2016年度
+    report_url:
+      en: https://drive.google.com/file/d/1UA1mm1vIyDja9FexDnULEdNsMOBYTwhB/edit
+      ja: https://drive.google.com/file/d/1UA1mm1vIyDja9FexDnULEdNsMOBYTwhB/edit
+  - date: 2015-1-1
+    title:
+      en: FY2015
+      ja: 2015年度
+    report_url:
+      en: https://drive.google.com/file/d/1CVAlhIMtMXx-ccKkmS-qrhE8DZntoB09/edit
+      ja: https://drive.google.com/file/d/1CVAlhIMtMXx-ccKkmS-qrhE8DZntoB09/edit
+  - date: 2014-1-1
+    title:
+      en: FY2014
+      ja: 2014年度
+    report_url:
+      en: https://drive.google.com/file/d/1WOU4lb5WXAKqKQVslcxFQZrBoXXn_FoB/edit
+      ja: https://drive.google.com/file/d/1WOU4lb5WXAKqKQVslcxFQZrBoXXn_FoB/edit
+  - date: 2013-1-1
+    title:
+      en: FY2013
+      ja: 2013年度
+    report_url:
+      en: https://drive.google.com/file/d/1Cc7hZkVUnLNZUZYHnnFTQ8P-wKPasBOB/edit
+      ja: https://drive.google.com/file/d/1Cc7hZkVUnLNZUZYHnnFTQ8P-wKPasBOB/edit
+  - date: 2012-1-1
+    title:
+      en: FY2012
+      ja: 2012年度
+    report_url:
+      en: https://drive.google.com/file/d/1uYjCKyLDuGPD0QLzqnVMb1qxrE5997Jp/edit
+      ja: https://drive.google.com/file/d/1uYjCKyLDuGPD0QLzqnVMb1qxrE5997Jp/edit
+  - date: 2011-1-1
+    title:
+      en: FY2011
+      ja: 2011年度
+    report_url:
+      en: https://drive.google.com/file/d/17iwNrg_nUbcADGnpUY7cNuj29KVQQezm/edit
+      ja: https://drive.google.com/file/d/17iwNrg_nUbcADGnpUY7cNuj29KVQQezm/edit
+  - date: 2010-1-1
+    title:
+      en: FY2010
+      ja: 2010年度
+    report_url:
+      en: https://drive.google.com/file/d/1ftlSLmWbBd_VQ-MRHCpO6PTQ9gQJTa4x/edit
+      ja: https://drive.google.com/file/d/1ftlSLmWbBd_VQ-MRHCpO6PTQ9gQJTa4x/edit
 
 dictionary:
   tag:
     en: Annual Report
     ja: 年次報告書
-  report:
+  report_url:
     en: Annual Report
     ja: 年次報告書
   budget_pdf:
