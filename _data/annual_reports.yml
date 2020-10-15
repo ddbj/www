@@ -1,24 +1,4 @@
 items:
-<<<<<<< HEAD
-  - date: 1-1-1
-    title:
-      en: Example
-      ja: 例
-    report_url:
-      en: Report URL
-      ja: 報告書リンク
-    budget_pdf:
-      en: Budget PDF URL
-      ja: 予算 PDF リンク
-    budget_excel:
-      en: Budget Excel URL
-      ja: 予算 Excel リンク
-    self_evaluation:
-      en: Self evaluation URL
-      ja: 自己評価報告書リンク
-    category: annual_report
-=======
->>>>>>> staff.md,ddbj-30-years.md
   - date: 2019-1-1
     title:
       en: FY2019
