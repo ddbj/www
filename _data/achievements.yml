@@ -1,14 +1,5 @@
 items:
 
-  - date: 1-1-1
-    id:
-    title:
-    url:
-    author:
-    info:
-    pubmed_id:
-    keyword: paper or presentation or book
-    
   - date: 2020-03-26
     id: 
     title: "DDBJ Data Analysis Challenge: a machine learning competition to predict Arabidopsis chromatin feature annotations from DNA sequences."
@@ -17,12 +8,1360 @@ items:
     info: Genes Genet Syst 2020 Mar 26;():.
     pubmed_id: 32213716
     keyword: paper
-    
+
+  - date: 2020-01-08
+    id: 
+    title: "DDBJ Database updates and computational infrastructure enhancement."
+    url: https://pubmed.ncbi.nlm.nih.gov/31724722
+    author: Ogasawara O, Kodama Y, Mashima J, Kosuge T, Fujisawa T
+    info: Nucleic Acids Res 2020 Jan 8;48(D1):D45-D50.
+    pubmed_id: 31724722
+    keyword: paper
+
+  - date: 2019-01-01
+    id: 
+    title: "Generating Publication-Ready Prokaryotic Genome Annotations with DFAST."
+    url: https://pubmed.ncbi.nlm.nih.gov/31020563
+    author: Tanizawa Y, Fujisawa T, Arita M, Nakamura Y
+    info: Methods Mol Biol 2019;1962():215-226.
+    pubmed_id: 31020563
+    keyword: paper
+
+  - date: 2019-01-01
+    id: 
+    title: "TogoGenome/TogoStanza: modularized Semantic Web genome database."
+    url: https://pubmed.ncbi.nlm.nih.gov/30624651
+    author: Katayama T, Kawashima S, Okamoto S, Moriya Y, Chiba H, Naito Y, Fujisawa T, Mori H, Takagi T
+    info: Database (Oxford) 2019 Jan 1;2019():.
+    pubmed_id: 30624651
+    keyword: paper
+
+  - date: 2019-01-08
+    id: 
+    title: "DDBJ update: the Genomic Expression Archive (GEA) for functional genomics data."
+    url: https://pubmed.ncbi.nlm.nih.gov/30357349
+    author: Kodama Y, Mashima J, Kosuge T, Ogasawara O
+    info: Nucleic Acids Res 2019 Jan 8;47(D1):D69-D73.
+    pubmed_id: 30357349
+    keyword: paper
+
+  - date: 2018-12-01
+    id: 
+    title: "ChIP-Atlas: a data-mining suite powered by full integration of public ChIP-seq data."
+    url: https://pubmed.ncbi.nlm.nih.gov/30413482
+    author: Oki S, Ohta T, Shioi G, Hatanaka H, Ogasawara O, Okuda Y, Kawaji H, Nakaki R, Sese J, Meno C
+    info: EMBO Rep 2018 Dec;19(12):.
+    pubmed_id: 30413482
+    keyword: paper
+
+  - date: 2018-03-01
+    id: 
+    title: "MACON: a web tool for computing DNA methylation data obtained by the Illumina Infinium Human DNA methylation BeadArray."
+    url: https://pubmed.ncbi.nlm.nih.gov/29343101
+    author: Iida N, Okuda Y, Ogasawara O, Yamashita S, Takeshima H, Ushijima T
+    info: Epigenomics 2018 Mar;10(3):249-258.
+    pubmed_id: 29343101
+    keyword: paper
+
+  - date: 2019-01-01
+    id: 
+    title: "Minimum Information about an Uncultivated Virus Genome (MIUViG)."
+    url: https://pubmed.ncbi.nlm.nih.gov/30556814
+    author: Roux S, Adriaenssens EM, Dutilh BE, Koonin EV, Kropinski AM, Krupovic M, Kuhn JH, Lavigne R, Brister JR, Varsani A et al
+    info: Nat Biotechnol 2019 Jan;37(1):29-37.
+    pubmed_id: 30556814
+    keyword: paper
+
+  - date: 2018-01-04
+    id: 
+    title: "DNA Data Bank of Japan: 30th anniversary."
+    url: https://pubmed.ncbi.nlm.nih.gov/29040613
+    author: Mashima J, Kodama Y, Fujisawa T, Katayama T, Okuda Y, Kaminuma E, Ogasawara O, Okubo K, Nakamura Y, Takagi T
+    info: Nucleic Acids Res 2018 Jan 4;46(D1):D30-D35. 
+    pubmed_id: 29040613
+    keyword: paper
+
+  - date: 2017-07-01
+    id: 
+    title: "次世代シーケンサーデータの解析手法 第10回 DDBJ への塩基配列の登録（実践編)"
+    url: http://www.iu.a.u-tokyo.ac.jp/~kadota/JSLAB_10_kadota.pdf
+    author: 谷澤 靖洋、藤澤 貴智、真島 淳、李 慶範、遠野 雅徳、坂本 光央、大熊 盛也、中村 保一、清水 謙多郎、門田 幸二
+    info: 日本乳酸菌学会誌 28(2) 94-100 2017年7月
+    pubmed_id: 
+    keyword: paper
+
+  - date: 2017-03-01
+    id: 
+    title: "次世代シーケンサーデータの解析手法 第9回 ゲノムアノテーションとその可視化、DDBJ への登録"
+    url: http://www.iu.a.u-tokyo.ac.jp/~kadota/JSLAB_9_kadota.pdf
+    author: 谷澤 靖洋、真島 淳、藤澤 貴智、李 慶範、中村 保一、清水 謙多郎、門田 幸二
+    info: 日本乳酸菌学会誌 28(1) 3-11 2017年3月
+    pubmed_id: 
+    keyword: paper
+
+  - date: 2017-01-04
+    id: 
+    title: "DNA Data Bank of Japan."
+    url: https://pubmed.ncbi.nlm.nih.gov/27924010
+    author: Mashima J, Kodama Y, Fujisawa T, Katayama T, Okuda Y, Kaminuma E, Ogasawara O, Okubo K, Nakamura Y, Takagi T
+    info: Nucleic Acids Res 2017 Jan 4;45(D1):D25-D31.
+    pubmed_id: 27924010
+    keyword: paper
+
+  - date: 2016-01-04
+    id: 
+    title: "DNA data bank of Japan (DDBJ) progress report."
+    url: https://pubmed.ncbi.nlm.nih.gov/26578571
+    author: Mashima J, Kodama Y, Kosuge T, Fujisawa T, Katayama T, Nagasaki H, Okuda Y, Kaminuma E, Ogasawara O, Okubo K et al
+    info: Nucleic Acids Res 2016 Jan 4;44(D1):D51-7.
+    pubmed_id: 26578571
+    keyword: paper
+
+  - date: 2016-01-04
+    id: 
+    title: "The International Nucleotide Sequence Database Collaboration."
+    url: https://pubmed.ncbi.nlm.nih.gov/26657633
+    author: Cochrane G, Karsch-Mizrachi I, Takagi T
+    info: Nucleic Acids Res 2016 Jan 4;44(D1):D48-50.
+    pubmed_id: 26657633
+    keyword: paper
+
+  - date: 2015-01-01
+    id: 
+    title: "The DDBJ Japanese Genotype-phenotype Archive for genetic and phenotypic human data."
+    url: https://pubmed.ncbi.nlm.nih.gov/25477381
+    author: Kodama Y, Mashima J, Kosuge T, Katayama T, Fujisawa T, Kaminuma E, Ogasawara O, Okubo K, Takagi T, Nakamura Y
+    info: Nucleic Acids Res 2015 Jan;43(Database issue):D18-22.
+    pubmed_id: 25477381
+    keyword: paper
+
+  - date: 2014-01-15
+    id: 
+    title: "Toward richer metadata for microbial sequences: replacing strain-level NCBI taxonomy taxids with BioProject, BioSample and Assembly records."
+    url: https://pubmed.ncbi.nlm.nih.gov/25197497
+    author: Federhen S, Clark K, Barrett T, Parkinson H, Ostell J, Kodama Y, Mashima J, Nakamura Y, Cochrane G, Karsch-Mizrachi I
+    info: Stand Genomic Sci 2014 Jun 15;9(3):1275-7.
+    pubmed_id: 25197497
+    keyword: paper
+
+  - date: 2014-01-01
+    id: 
+    title: "DDBJ progress report: a new submission system for leading to a correct annotation."
+    url: https://pubmed.ncbi.nlm.nih.gov/24194602
+    author: Kosuge T, Mashima J, Kodama Y, Fujisawa T, Kaminuma E, Ogasawara O, Okubo K, Takagi T, Nakamura Y
+    info: Nucleic Acids Res 2014 Jan;42(Database issue):D44-9.
+    pubmed_id: 24194602
+    keyword: paper
+
+  - date: 2013-08-01
+    id: 
+    title: "DDBJ read annotation pipeline: a cloud computing-based pipeline for high-throughput analysis of next-generation sequencing data."
+    url: https://pubmed.ncbi.nlm.nih.gov/23657089
+    author: Nagasaki H, Mochizuki T, Kodama Y, Saruhashi S, Morizaki S, Sugawara H, Ohyanagi H, Kurata N, Okubo K, Takagi T et al
+    info: DNA Res 2013 Aug;20(4):383-90.
+    pubmed_id: 23657089
+    keyword: paper
+
+  - date: 2013-01-01
+    id: 
+    title: "DDBJ new system and service refactoring."
+    url: https://pubmed.ncbi.nlm.nih.gov/23180790
+    author: Ogasawara O, Mashima J, Kodama Y, Kaminuma E, Nakamura Y, Okubo K, Takagi T
+    info: Nucleic Acids Res 2013 Jan;41(Database issue):D25-9.
+    pubmed_id: 23180790
+    keyword: paper
+
+  - date: 2013-01-01
+    id: 
+    title: "The International Nucleotide Sequence Database Collaboration."
+    url: https://pubmed.ncbi.nlm.nih.gov/23180798
+    author: Nakamura Y, Cochrane G, Karsch-Mizrachi I
+    info: Nucleic Acids Res 2013 Jan;41(Database issue):D21-4.
+    pubmed_id: 23180798
+    keyword: paper
+
+  - date: 2012-01-01
+    id: 
+    title: "The DNA Data Bank of Japan launches a new resource, the DDBJ Omics Archive of functional genomics experiments."
+    url: https://pubmed.ncbi.nlm.nih.gov/22110025
+    author: Kodama Y, Mashima J, Kaminuma E, Gojobori T, Ogasawara O, Takagi T, Okubo K, Nakamura Y
+    info: Nucleic Acids Res 2012 Jan;40(Database issue):D38-42.
+    pubmed_id: 22110025
+    keyword: paper
+
+  - date: 2012-01-01
+    id: 
+    title: "The International Nucleotide Sequence Database Collaboration."
+    url: https://pubmed.ncbi.nlm.nih.gov/22080546
+    author: Karsch-Mizrachi I, Nakamura Y, Cochrane G
+    info: Nucleic Acids Res 2012 Jan;40(Database issue):D33-7.
+    pubmed_id: 22080546
+    keyword: paper
+
+  - date: 2012-01-01
+    id: 
+    title: "The Sequence Read Archive: explosive growth of sequencing data."
+    url: https://pubmed.ncbi.nlm.nih.gov/22009675
+    author: Kodama Y, Shumway M, Leinonen R
+    info: Nucleic Acids Res 2012 Jan;40(Database issue):D54-6.
+    pubmed_id: 22009675
+    keyword: paper
+
+  - date: 2011-01-01
+    id: 
+    title: "The sequence read archive."
+    url: https://pubmed.ncbi.nlm.nih.gov/21062823
+    author: Leinonen R, Sugawara H, Shumway M
+    info: Nucleic Acids Res 2011 Jan;39(Database issue):D19-21.
+    pubmed_id: 21062823
+    keyword: paper
+
+  - date: 2011-01-01
+    id: 
+    title: "DDBJ progress report."
+    url: https://pubmed.ncbi.nlm.nih.gov/21062814
+    author: Kaminuma E, Kosuge T, Kodama Y, Aono H, Mashima J, Gojobori T, Sugawara H, Ogasawara O, Takagi T, Okubo K, Nakamura Y.
+    info: Nucleic Acids Res 2011 Jan;39(Database issue):D22-7.
+    pubmed_id: 21062814
+    keyword: paper
+
+  - date: 2011-01-01
+    id: 
+    title: "The International Nucleotide Sequence Database Collaboration."
+    url: https://pubmed.ncbi.nlm.nih.gov/21106499
+    author: Cochrane G, Karsch-Mizrachi I, Nakamura Y
+    info: Nucleic Acids Res 2011 Jan;39(Database issue):D15-8.
+    pubmed_id: 21106499
+    keyword: paper
+
+  - date: 2010-01-01
+    id: 
+    title: "Biological databases at DNA Data Bank of Japan in the era of next-generation sequencing technologies."
+    url: https://pubmed.ncbi.nlm.nih.gov/20865494
+    author: Kodama Y, Kaminuma E, Saruhashi S, Ikeo K, Sugawara H, Tateno Y, Nakamura Y
+    info: Adv Exp Med Biol 2010;680():125-35.
+    pubmed_id: 20865494
+    keyword: paper
+
+  - date: 2010-01-01
+    id: 
+    title: "Archiving next generation sequencing data."
+    url: https://pubmed.ncbi.nlm.nih.gov/19965774
+    author: Shumway M, Cochrane G, Sugawara H
+    info: Nucleic Acids Res 2010 Jan;38(Database issue):D870-1.
+    pubmed_id: 19965774
+    keyword: paper
+
+  - date: 2010-01-01
+    id: 
+    title: "DDBJ launches a new archive database with analytical tools for next-generation sequence data."
+    url: https://pubmed.ncbi.nlm.nih.gov/19850725
+    author: Kaminuma E, Mashima J, Kodama Y, Gojobori T, Ogasawara O, Okubo K, Takagi T, Nakamura Y
+    info: Nucleic Acids Res 2010 Jan;38(Database issue):D33-8.
+    pubmed_id: 19850725
+    keyword: paper
+
+  - date: 2009-01-01
+    id: 
+    title: "Web API for biology with a workflow navigation system."
+    url: https://pubmed.ncbi.nlm.nih.gov/19417067
+    author: Kwon Y, Shigemoto Y, Kuwana Y, Sugawara H
+    info: Nucleic Acids Res 2009 Jul;37(Web Server issue):W11-6.
+    pubmed_id: 19417067
+    keyword: paper
+
+  - date: 2009-01-01
+    id: 
+    title: "DDBJ dealing with mass data produced by the second generation sequencer."
+    url: https://pubmed.ncbi.nlm.nih.gov/18927114
+    author: Sugawara H, Ikeo K, Fukuchi S, Gojobori T, Tateno Y
+    info: Nucleic Acids Res 2009 Jan;37(Database issue):D16-8.
+    pubmed_id: 18927114
+    keyword: paper
+
   - date: 2019-11-20
     id: 
     title: ゲノム科学＋DDBJ入門
     author: 中村　保一
     info: 静岡大学大学院・統合オミックス特論II
+    keyword: presentation
+
+  - date: 2019-11-13
+    id: 
+    title: BioSample とは
+    author: 福田　亜沙美
+    info: 2019年度 ROIS-DS-JOINT共同研究集会 Annotathon2019 （生命科学データベースの利用価値向上のためのアノテーションマラソン）
+    keyword: presentation
+
+  - date: 2019-10-16
+    id: 
+    title: Database and supercomputer resources for human data at DDBJ
+    author: 児玉 悠一、福田 亜沙美、八谷 剛史、秦 千比呂、真島 淳、藤澤 貴智、川嶋 実苗、豊岡 理人、三橋 信孝、小笠原 理
+    info: <a href="https://www.ashg.org/meetings/">The Annual Meeting of the American Society of Human Genetics 2019</a>
+    keyword: presentation
+
+  - date: 2019-10-05
+    id: 
+    title: DDBJサービス
+    author: 李 慶範
+    info: トーゴーの日シンポジウム2019　～バイオデータベース：つないで使う～
+    keyword: presentation
+
+  - date: 2019-09-20
+    id: 
+    title: How to deal with controlled-access data in DNA Data Bank of Japan
+    author: Yasukazu Nakamura
+    info: CODATA： the next-generation data-driven science
+    keyword: presentation
+
+  - date: 2019-09-18
+    id: 
+    title: We are ready to 10 k microbe genomes
+    author: Yasukazu Nakamura
+    info: A high-level CODATA data policy meeting
+    keyword: presentation
+
+  - date: 2019-08-04
+    id: 
+    title: 植物ゲノムの進化研究とDDBJと遺伝研スーパーコンピュータ活用法
+    author: 中村　保一
+    info: 木村資生進化学セミナー
+    keyword: presentation
+
+  - date: 2019-08-01
+    id: 
+    title: DDBJ and the INSDC are faced with Big Data
+    author: 中村　保一
+    info: 国際生物学連合（IUBS）2019
+    keyword: presentation
+
+  - date: 2019-07-04
+    id: 
+    title: DDBJ – 日本DNAデータバンクとNGS – Next Generation Sequencing によるゲノム解析の最新状況
+    author: 中村　保一
+    info: 山梨大学 学術研究会
+    keyword: presentation
+
+  - date: 2019-06-04
+    id: 
+    title: ynlab & DDBJ’s activities
+    author: 中村　保一
+    info: GOBii Workshop
+    keyword: presentation
+
+  - date: 2019-04-24
+    id: 
+    title: DDBJ： Asian gateway to the INSDC
+    author: 中村　保一
+    info: NAGP Bioinformtion center workshop 2019
+    keyword: presentation
+
+  - date: 2019-04-09
+    id: 
+    title: DDBJ (DNA Data Bank of Japan) activity
+    author: 大城戸利久, 児玉悠一, 小菅武英, 真島 淳
+    info: Biocuration2019
+    keyword: presentation
+
+  - date: 2019-02-22
+    id: 
+    title: INSDC の一員としての DDBJ 事業の紹介と塩基配列決定の国際動向・INSDC への塩基配列データの登録と管理の実際
+    author: 中村　保一
+    info: 製品評価技術基盤機構NITEバイオテクノロジーセンターセミナー
+    keyword: presentation
+
+  - date: 2019-02-08
+    id: 
+    title: 日本DNAデータバンクこれまでの30年とこれから
+    author: 中村　保一
+    info: 情報・システム研究機構シンポジウム2018 SDGsに向けた新しい取り組み
+    keyword: presentation
+
+  - date: 2019-01-29
+    id: 
+    title: ゲノム時代の生命情報・DDBJセンターが果たしてきた役割
+    author: 青野 英雄
+    info: <a href="/training/archives.html#a-2018">All-in-one 合同講習会 2018／統合データベース講習会：AJACS 番町２</a>
+    keyword: presentation
+
+  - date: 2018-11-29
+    id: 
+    title: DDBJ センターにおけるデータベースサービスのこれまでとこれから
+    author: 児玉　悠一
+    info: <a href="https://www2.aeplan.co.jp/mbsj2018/">第41回日本分子生物学会年会</a> ワークショップ： いかにして公共データベースを生命科学研究に活用するか? (オーガナイザー)
+    keyword: presentation
+
+  - date: 2018-11-26
+    id: 
+    title: Introduction of the INSDC, data submission & genome annotation
+    author: 中村　保一
+    info: 8th World Data Center for Microorganisms (WDCM) / Global Catalogue of Microorganisms GCM 2.0 10K type strain microbe sequencing project meeting
+    keyword: presentation
+
+  - date: 2018-11-21
+    id: 
+    title: DDBJ / the INSDC is ready for GCM 2.0
+    author: 中村　保一
+    info: 8th WDCM / GCM 2.0 meeting
+    keyword: presentation
+
+  - date: 2018-10-18
+    id: 
+    title: Resources for archiving, sharing and analysis of controlled-access human data at DDBJ Center.
+    author: 児玉　悠一
+    info: <a href="https://www.ashg.org/meetings/">The Annual Meeting of the American Society of Human Genetics 2018</a>
+    keyword: presentation
+
+  - date: 2018-10-05
+    id: 
+    title: DDBJ -登録データの拡充-
+    author: 大城戸利久, 小菅武英, 児玉悠一, 真島 淳
+    info: トーゴーの日シンポジウム2018　～バイオデータベース：つないで使う～
+    keyword: presentation
+
+  - date: 2018-09-16
+    id: 
+    title: DDBJ： Asian gateway to the INSDC
+    author: 中村　保一
+    info: Agricultural Bioscience International Conference 2018
+    keyword: presentation
+
+  - date: 2018-09-10
+    id: 
+    title: 大量塩基配列情報処理によるゲノム解析とデータベース構築
+    author: 中村　保一
+    info: 第一回植物インフォ研究会
+    keyword: presentation
+
+  - date: 2018-09-03
+    id: 
+    title: ゲノム解析手法のトレンドとDDBJ・遺伝研スーパーコンピュータ
+    author: 中村　保一
+    info: 第二回木村資生記念進化学セミナー
+    keyword: presentation
+
+  - date: 2018-08-30
+    id: 
+    title: Genome analyses using NGS for next-generation model species
+    author: 中村　保一
+    info: The 16th KJC Bioinformatics Symposium
+    keyword: presentation
+
+  - date: 2018-08-29
+    id: 
+    title: 次世代シークエンスデータベースの紹介と歩き方
+    author: 児玉　悠一
+    info: <a href="https://events.biosciencedbc.jp/training/ajacs71">統合データベース講習会:AJACS番町１</a>
+    keyword: presentation
+
+  - date: 2018-08-04
+    id: 
+    title: 塩基配列データの爆発的増加とDDBJをとりまく現状
+    author: 中村　保一
+    info: 遺伝研研究会・生命情報データの拡大と分子進化研究の進展
+    keyword: presentation
+
+  - date: 2018-07-14
+    id: 
+    title: DDBJ/INSDC, NIG supercomputer & Large-genome assembly and annotation tools
+    author: 中村　保一
+    info: DDBJ D-step training course 2018
+    keyword: presentation
+
+  - date: 2018-06-26
+    id: 
+    title: DDBJ/INSDC/DFAST
+    author: 中村　保一
+    info: GCM 2.0 workshop
+    keyword: presentation
+
+  - date: 2018-01-17
+    id: 
+    title: 次世代シークエンスデータベースの紹介と使い方
+    author: 児玉　悠一
+    info: <a href="https://events.biosciencedbc.jp/training/ajacs68">統合データベース講習会：AJACS浜松</a>
+    keyword: presentation
+
+  - date: 2017-12-16
+    id: 
+    title: MarpolDB _ marchantia.info; a genome DB for the Liverwort
+    author: 中村 保一
+    info: <a href="//www.nibb.ac.jp/conf65/">Renaissance of Marchantia polymorpha</a>
+    keyword: presentation
+
+  - date: 2017-12-06
+    id: 
+    title: MicrobeDB.jp
+    author: 中村 保一
+    info: <a href="//www2.aeplan.co.jp/conbio2017/">日本分子生物学会年会</a> NBDC ConBioフォーラム「生命科学のデータベース活用法」
+    keyword: presentation
+
+  - date: 2017-12-05
+    id: 
+    title: DDBJ Sequence Read Archive（DRA）と Japanese Genotype-phenotype Archive（JGA）の紹介
+    author: 福田 亜沙美
+    info: <a href="http://www.clst.riken.jp/ja/topics/event/171205event/">シーケンサー利用技術講習会 第14回　CAGEデータ解析およびFANTOM5データベース利用実技講習会</a>
+    keyword: presentation
+
+  - date: 2017-11-16
+    id: 
+    title: DDBJ にゲノムデータが来るとき
+    author: 真島 淳
+    info: Annotathon 2017
+    keyword: presentation
+
+  - date: 2017-10-26
+    id: 
+    title: DDBJ and the INSDC
+    author: 中村 保一
+    info: <a href="http://www.icg-12.org/">ICG-12</a>
+    keyword: presentation
+
+  - date: 2017-10-19
+    id: 
+    title: Controlled-access databases for genetic and phenotypic human data in Japan.
+    author: 児玉 悠一, 福田 亜沙美, 真島 淳, 箕輪 真理, 川嶋 実苗, 宮崎 和典, 三橋 信孝, 神沼 英里, 小笠原 理, 大久保 公策, 中村 保一, 高木 利久
+    info: <a href="//www.ashg.org/2017meeting/">The Annual Meeting of the American Society of Human Genetics 2017</a>
+    keyword: presentation
+
+  - date: 2017-10-10
+    id: 
+    title: DDBJ and the INSDC
+    author: 中村 保一
+    info: <a href="http://bigd.big.ac.cn/conference/bdf2017">The Big Data Forum for Life and Health Sciences</a>
+    keyword: presentation
+
+  - date: 2017-10-05
+    id: 
+    title: DDBJ
+    author: 中村 保一
+    info: <a href="https://events.biosciencedbc.jp/sympo/togo2017">トーゴーの日シンポジウム</a>
+    keyword: presentation
+
+  - date: 2017-09-14
+    id: 
+    title: ゲノム科学・ゲノムDBの現場から
+    author: 中村 保一
+    info: 静岡大学大学院・統合オミックス特論II
+    keyword: presentation
+
+  - date: 2017-07-19
+    id: 
+    title: DDBJ
+    author: 中村 保一
+    info: <a href="https://meetings.ggbn.org/conference/ggbn/2017ws-as/">GGBN Asian regional workshop</a>
+    keyword: presentation
+
+  - date: 2017-07-04
+    id: 
+    title: NBRPゲノム情報等整備プログラムの状況“CyanoBase
+    author: 中村 保一
+    info: NBRP藻類・運営会議
+    keyword: presentation
+
+  - date: 2017-06-20
+    id: 
+    title: How to make bio-DB’s and services sustainable?
+    author: 中村 保一
+    info: <a href="http://cjk-bioinfo.org/2017/index.html">日中韓バイオインフォマティクスシンポジウム</a>
+    keyword: presentation
+
+  - date: 2017-01-24
+    id: 
+    title: 拡大する公共データベースの役割
+    author: 児玉 悠一
+    info: 静岡県立大学 食品栄養科学部 学部講義
+    keyword: presentation
+
+  - date: 2016-12-01
+    id: 
+    title: DDBJデータ解析チャレンジ報告：機械学習コンペティションのタスク設計とルール設定
+    author: 神沼英里, 馬場雪乃, 望月正弘, 松本拡高, 尾崎遼, 岡山利次, 加藤卓也, 沖真弥, 小笠原理, 鹿島久嗣, 高木利久
+    info: <a href="http://www.aeplan.co.jp/mbsj2016/">第39回日本分子生物学会年会</a>
+    keyword: presentation
+
+  - date: 2016-12-01
+    id: 
+    title: DDBJ センターにおける一次データベースの展開
+    author: 児玉 悠一
+    info: 第39回日本分子生物学会年会　フォーラム： いかにして使えるデータベースを維持し続けるか?
+    keyword: presentation
+
+  - date: 2016-10-20
+    id: 
+    title: JGA： Japanese Genotype-phenotype Archive
+    author: 児玉 悠一, 真島 淳, 箕輪 真理, 川嶋 実苗, 宮崎 和典, 三橋 信孝, 神沼 英里, 小笠原 理, 大久保 公策, 中村 保一, 高木 利久
+    info: <a href="//www.ashg.org/2016meeting/">The Annual Meeting of the American Society of Human Genetics 2016</a>
+    keyword: presentation
+
+  - date: 2016-02-08
+    id: 
+    title: 生命科学とオープンデータ
+    author: 高木 利久
+    info: <a href="http://www.rois.ac.jp/sympo/2015/index.html">オープンサイエンスにおける研究データのオープン化〜大学のデータ駆動型学術研究を加速するために〜</a>
+    keyword: presentation
+
+  - date: 2016-01-10
+    id: 
+    title: Database Resources of DNA Data Bank of Japan
+    author: 児玉 悠一, 真島 淳, 神沼 英里, 小笠原 理, 大久保 公策, 中村 保一, 高木 利久
+    info: <a href="https://pag.confex.com/pag/xxiv/webprogram/Paper21911.html">The Plant and Animal Genome XXIV Conference (PAG)</a>
+    keyword: presentation
+
+  - date: 2015-12-16
+    id: 
+    title: 次世代シークエンスデータの登録
+    author: 児玉 悠一
+    info: <a href="http://www.clst.riken.jp/ja/topics/event/151216event/">第13回シーケンサー利用技術講習会 第13回CAGEデータ解析実技講習会</a>
+    keyword: presentation
+
+  - date: 2015-10-05
+    id: 
+    title: DDBJ
+    author: 中村 保一
+    info: <a href="https://events.biosciencedbc.jp/sympo/togo2015"> トーゴーの日シンポジウム2015</a>
+    keyword: presentation
+
+  - date: 2015-07-27
+    id: 
+    title: NGS の配列解析とデータベースへの案内
+    author: 中村 保一
+    info: <a href="http://www.nodai-genome.org/seminar_2015.html">東京農業大学生物資源ゲノム解析センター 2015年度セミナー（文部科学省「私立大学戦略的研究基盤形成支援事業」） </a>
+    keyword: presentation
+
+  - date: 2015-07-18
+    id: 
+    title: NIG Supercomputer
+    author: 小笠原 理
+    info: <a href="/activities.html">初めての All-in-one 合同講習会 ～生命科学DB・ツールの使い方～</a>
+    keyword: presentation
+
+  - date: 2015-07-18
+    id: 
+    title: DDBJ へのデータ登録
+    author: 真島 淳
+    info: <a href="/activities.html">初めての All-in-one 合同講習会 ～生命科学DB・ツールの使い方～</a>
+    keyword: presentation
+
+  - date: 2015-07-18
+    id: 
+    title: DDBJ のデータベースと検索・解析
+    author: 中村 保一
+    info: <a href="/activities.html">初めての All-in-one 合同講習会 ～生命科学DB・ツールの使い方～</a>
+    keyword: presentation
+
+  - date: 2015-07-01
+    id: 
+    title: DDBJ PipelineのQ&A対応まとめと解析ツール利用傾向
+    author: 神沼 英里
+    info: <a href="http://www.ngs-field.org/ngs4th/">NGS現場の会 第4回研究会</a>
+    keyword: presentation
+
+  - date: 2015-06-05
+    id: 
+    title: DDBJ と NIG Super Computer による大量配列情報解析
+    author: 中村 保一
+    info: <a href="http://www.cancer-hypoxia.org/old/13th_conference.htm">がんとハイポキシア研究会「データベースとハイポキシア研究」（遺伝研共同研究研究会）</a>
+    keyword: presentation
+
+  - date: 2015-03-05
+    id: 
+    title: DDBJと新型シーケンサ解析パイプラインの使い方
+    author: 中村 保一
+    info: <a href="https://events.biosciencedbc.jp/training/ajacs52">統合データベース講習会：AJACS府中</a>
+    keyword: presentation
+
+  - date: 2015-02-28
+    id: 
+    title: DDBJと新型シーケンサ解析パイプラインの使い方
+    author: 中村 保一
+    info: 新学術ゲノム支援・情報解析講習会
+    keyword: presentation
+
+  - date: 2015-02-03
+    id: 
+    title: 塩基配列データベースを中心とした生物学系研究の情報基盤について
+    author: 小笠原 理
+    info: <a href="//www.nii.ac.jp/service/openforum/archives/2014/forum_2/">平成26年度第2回学術情報基盤オープンフォーラム</a>
+    keyword: presentation
+
+  - date: 2014-12-07
+    id: 
+    title: INSDC・DDBJ の MIxS に関するとりくみと活用
+    author: 中村 保一
+    info: <a href="http://www.speciesbiology.org/archives/2014_10_15_16_13_23.html">第46回 種生物学シンポジウム</a>
+    keyword: presentation
+
+  - date: 2014-11-26
+    id: 
+    title: Enhancement of DDBJ nucleotide sequence submission system
+    author: 小菅 武英, 藤澤 貴智, 真島 淳, 筒井 波留, 江嶋 真由美, 神沼 英里, 高木 利久, 中村 保一
+    info: <a href="http://www.aeplan.co.jp/mbsj2014/">第37回日本分子生物学会年会</a>
+    keyword: presentation
+
+  - date: 2014-10-05
+    id: 
+    title: DDBJ
+    author: 中村 保一
+    info: <a href="https://events.biosciencedbc.jp/sympo/togo2014">トーゴーの日シンポジウム2014</a>
+    keyword: presentation
+
+  - date: 2014-09-26
+    id: 
+    title: 遺伝研スパコンとコマンドラインでのNGSデータ使い倒し講座
+    author: 神沼 英里
+    info: <a href="//www.nacos.com/jsb/06/06PDF/126program.pdf">日本育種学会第126回講演会</a>
+    keyword: presentation
+
+  - date: 2014-08-29
+    id: 
+    title: ビッグデータ時代のゲノム情報解析とクラウドソーシング
+    author: 神沼 英里
+    info: <a href="http://www.scj.go.jp/ja/event/pdf2/195-s-0829.pdf">日本学術会議学術フォーラム「生命情報ビッグデータ時代における新しい生命科学」</a>
+    keyword: presentation
+
+  - date: 2014-08-22
+    id: 
+    title: 国立遺伝学研究所スーパーコンピューターの概要と利用法
+    author: 中村 保一, 望月 孝子
+    info: <a href="http://www.knt.co.jp/ec/2014/jspcmb32/symposium.html">第32回 日本植物細胞分子生物学会年会　バイオインフォマティクス講習会II （2014）</a>
+    keyword: presentation
+
+  - date: 2014-08-20
+    id: 
+    title: JGA へのデータ登録
+    author: 児玉 悠一
+    info: 2014年度ゲノム支援拡大班会議
+    keyword: presentation
+
+  - date: 2014-07-22
+    id: 
+    title: DDBJ配列解析サービス (DDBJ Pipeline)
+    author: 神沼 英里
+    info: 遺伝研スーパーコンピュータユーザー会
+    keyword: presentation
+
+  - date: 2014-03-22
+    id: 
+    title: NGS 解析ツール： DDBJ Read Annotation Pipeline
+    author: 神沼 英里
+    info: <a href="//www.nacos.com/jsb/06/06PDF/125program.pdf">第125回日本育種学会講演会「NGS 使い倒し講座 - Breeding Informatics 研究 XII」</a>
+    keyword: presentation
+
+  - date: 2013-12-05
+    id: 
+    title: 次世代シーケンサによる研究のこれからとそれを支えるインフラ／技術／制度
+    author: 児玉 悠一, 仲里 猛
+    info: <a href="http://www.aeplan.co.jp/mbsj2013/">第36回日本分子生物学会年会</a>
+    keyword: presentation
+
+  - date: 2013-11-27
+    id: 
+    title: 拡大する公共データベースの役割
+    author: 児玉 悠一
+    info: <a href="http://www.iu.a.u-tokyo.ac.jp/main_past_seminar.html">東京大学大学院農学生命科学研究科 アグリバイオインフォマティクスセミナー</a>
+    keyword: presentation
+
+  - date: 2013-11-19
+    id: 
+    title: DDBJ スパコン概要
+    author: 中村 保一
+    info: ゲノム支援 平成25年度情報解析講習会
+    keyword: presentation
+    
+  - date: 2013-10-25
+    id: 
+    title: 新世代シークエンスデータの登録
+    author: 児玉 悠一
+    info: シーケンサー利用技術講習会 -第10回 サンプルQC、RNAseqライブラリー作製/データ解析実習講習会
+    keyword: presentation
+
+  - date: 2013-10-04
+    id: 
+    title: DDBJ
+    author: 中村 保一
+    info: <a href="https://events.biosciencedbc.jp/sympo/togo2013">トーゴーの日シンポジウム2013</a>
+    keyword: presentation
+
+  - date: 2013-09-04
+    id: 
+    title: DDBJ Pipelineと植物・微生物denovoアセンブリの知見紹介
+    author: 谷澤靖洋, 望月孝子, 長崎英樹, 藤澤貴智, 神沼英里, 遠野雅徳, 清水徳朗, 中村保一
+    info: <a href="http://meeting3.ngs-field.org/">NGS現場の会 第３回研究会</a>
+    keyword: presentation
+
+  - date: 2013-09-02
+    id: 
+    title: ソーシャルゲノムアノテーション
+    author: 中村 保一
+    info: <a href="http://bioinf.mind.meiji.ac.jp/sympo/">明治大学・科学技術研究所シンポジウム「大規模オミックス情報解析がもたらす生命科学の新たな展開」</a>
+    keyword: presentation
+
+  - date: 2013-08-30
+    id: 
+    title: DDBJと新型シーケンサ解析パイプラインの使い方
+    author: 中村 保一
+    info: <a href="https://events.biosciencedbc.jp/training/ajacs42">統合データベース講習会：AJACS富山</a>
+    keyword: presentation
+
+  - date: 2013-08-30
+    id: 
+    title: データベースの統合はなぜ必要か？
+    author: 高木 利久
+    info: <a href="https://events.biosciencedbc.jp/training/ajacs42">統合データベース講習会：AJACS富山</a>
+    keyword: presentation
+
+  - date: 2013-08-29
+    id: 
+    title: 配列データのDDBJ/DRA/JGA登録方法
+    author: 中村 保一
+    info: 新学術ゲノム支援拡大全体会議
+    keyword: presentation
+
+  - date: 2013-06-17
+    id: 
+    title: Introduction of DNA Data Bank of Japan activities.
+    author: 中村 保一
+    info: <a href="http://www.saitou-naruya-laboratory.org/meetings/CJK_Bioinformatics_11.html">第11回 日韓中バイオインフォマティクストレーニングコース</a>
+    keyword: presentation
+
+  - date: 2013-01-13
+    id: 
+    title: 国内の主要なDBの使い方（DDBJ, PDBj, KEGG）
+    author: 中村 保一
+    info: <a href="https://events.biosciencedbc.jp/training/ajacs36">統合データベース講習会：AJACS駿河</a>
+    keyword: presentation
+
+  - date: 2012-12-11
+    id: 
+    title: DDBJパイプラインによるゼニゴケゲノム解析とゲノムアノテーションデータベースの構築
+    author: 長崎 英樹, 藤澤 貴智, 望月 孝子, 猿橋 智, 神沼 英里, 石崎 公庸, 大和 勝幸, 河内 孝之, 中村 保一
+    info: <a href="http://www2.convention.co.jp/mbsj2012/">第35回日本分子生物学会年会</a>
+    keyword: presentation
+
+  - date: 2012-11-09
+    id: 
+    title: ますます多様化・大規模化する生命情報に求められる情報技術とは？
+    author: 高木 利久
+    info: <a href="http://www.rois.ac.jp/sympo/2012/">情報・システム研究機構シンポジウム2012 「生命科学のビッグデータ革命 - 仮想から現実へ -」</a>
+    keyword: presentation
+
+  - date: 2012-11-03
+    id: 
+    title: たくさんのゲノム情報をみんなで共有するために
+    author: 中村 保一
+    info: 国立遺伝学研究所 公開講演会2012「知りたい！生命科学の最先端」＋大学院説明会 2012
+    keyword: presentation
+
+  - date: 2012-10-27
+    id: 
+    title: 生物研究の基盤 データベースとしての DDBJ事業： 継承と変革
+    author: 中村 保一
+    info: 第49回 日本癌治療学会学術集会
+    keyword: presentation
+
+  - date: 2012-10-05
+    id: 
+    title: 日本DNAデータバンク (DDBJ)
+    author: 中村 保一
+    info: <a href="https://events.biosciencedbc.jp/sympo/togo2012">トーゴーの日シンポジウム2012</a>
+    keyword: presentation
+
+  - date: 2012-09-14
+    id: 
+    title: 新型シークエンサのアーカイブ配列と解析パイプライン：系統間SNP解析を事例として
+    author: 神沼 英里, 望月 孝子, 長崎 英樹, 児玉 悠一, 猿橋 智, 大久保 公策, 高木 利久, 大柳 一, 倉田 のり, 清水 徳朗, 中村 保一
+    info: <a href="#">第122回日本育種会講演会ワークショップ</a>
+    keyword: presentation
+
+  - date: 2012-08-09
+    id: 
+    title: 国際塩基配列データベース共同体(INSDC) -拡張するprimary databaseの活動-
+    author: 大城戸 利久
+    info: バイオインフォマティクス講習会2012
+    keyword: presentation
+
+  - date: 2012-07-24
+    id: 
+    title: DNA Data Bank of Japan： trad and new databases
+    author: 中村 保一
+    info: Information Sources in Biotechnology： Key Databases for Patenting Biotechnology. A seminar organized by The European Bioinformatics Institute and FCO Science and Innovation Network
+    keyword: presentation
+
+  - date: 2012-07-06
+    id: 
+    title: 新型シーケンサによる生物学へのビッグデータ解析時代の到来
+    author: 中村 保一
+    info: 岡山大学資源植物科学研究所　大麦・野生植物資源研究センターセミナー
+    keyword: presentation
+
+  - date: 2012-05-24
+    id: 
+    title: New resources of DNA Data Bank of Japan： DDBJ Omics Archive and BioProject
+    author: 長崎 英樹, 望月 孝子, 児玉 悠一, 猿橋 智, 高木 利久, 大久保 公策, 神沼 英里, 中村 保一
+    info: <a href="http://www.ngs-field.org/top-page/service/meeting2/">NGS現場の会 第2回研究会</a>
+    keyword: presentation
+
+  - date: 2012-05-24
+    id: 
+    title: Sequence Read Archive： explosive growth of sequencing data
+    author: 児玉 悠一, 野崎 亜沙美, 神沼 英里, 中村 保一, 小笠原 理, 大久保 公策, 高木 利久
+    info: <a href="http://www.ngs-field.org/top-page/service/meeting2/">NGS現場の会 第2回研究会</a>
+    keyword: presentation
+
+  - date: 2012-05-09
+    id: 
+    title: NGS由来大量データレポジトリDRAと解析支援パイプラインの提供
+    author: 中村 保一
+    info: 理研シンポジウム・データ駆動型生命情報科学の挑戦
+    keyword: presentation
+
+  - date: 2012-03-29
+    id: 
+    title: 高速DNAシークエンサ・アーカイブDBとクラウド計算資源利用法
+    author: 神沼 英里, 望月 孝子, 長崎 英樹, 児玉 悠一, 猿橋 智, 小笠原 理, 高木 利久, 大久保 公策, 中村 保一
+    info: <a href="//www.nacos.com/jsb/06/06PDF/121program.pdf">第121回日本育種会年会</a>
+    keyword: presentation
+
+  - date: 2012-03-24
+    id: 
+    title: DRA&DDBJパイプライン
+    author: 中村 保一
+    info: 新学術領域研究「ゲノム支援」情報解析講習会
+    keyword: presentation
+
+  - date: 2012-03-02
+    id: 
+    title: DDBJのサービス紹介
+    author: 中村 保一
+    info: <a href="https://events.biosciencedbc.jp/training/ajacs29">NBDC主催統合データベース講習会：AJACS本郷11</a>
+    keyword: presentation
+
+  - date: 2012-01-14
+    id: 
+    title: DDBJ Sequence Read Archive and a cloud-computing based annotation tool for new-generation sequencing data
+    author: 長崎 英樹, 望月 孝子, 神沼 英里, 児玉 悠一, 猿橋 智, 高木 利久, 大久保 公策, 中村 保一
+    info: The International Plant & Animal Genome XX Conference
+    keyword: presentation
+
+  - date: 2011-12-09
+    id: 
+    title: 日本DNAデータバンク(DDBJ)での新規電算機システムによる超並列型シーケンサ由来の大規模塩基配列情報解析支援の試み
+    author: 中村 保一
+    info: 第12回IPABシンポジウム 2011年12月9日
+    keyword: presentation
+    
+  - date: 2011-12-02
+    id: 
+    title: New resources of DNA Data Bank of Japan： DDBJ Omics Archive and BioProject
+    author: 児玉 悠一, 野崎 亜沙美, 李 慶範, 真島 淳, 神沼 英里, 高木 利久, 大久保 公策, 中村 保一
+    info: <a href="http://www.aeplan.co.jp/mbsj2011/">第34回日本分子生物学会年会</a>
+    keyword: presentation
+
+  - date: 2011-12-02
+    id: 
+    title: DDBJ created a new Web-based nucleotide sequence data submission tool, code name： D-easy
+    author: 小菅 武英, 真島 淳, 筒井 波留, 江嶋 真由美, 神沼 英里, 高木 利久, 大久保 公策, 中村 保一
+    info: <a href="http://www.aeplan.co.jp/mbsj2011/">第34回日本分子生物学会年会</a>
+    keyword: presentation
+
+  - date: 2011-12-02
+    id: 
+    title: 新型シーケンサ・アーカイブ配列のクラウド型解析パイプラインDDBJ Pipeline進捗： de novoアセンブル配列注釈ワークフロー
+    author: 長崎 英樹, 望月 孝子, 児玉 悠一, 猿橋 智, 高木 利久, 大久保 公策, 神沼 英里, 中村 保一
+    info: <a href="http://www.aeplan.co.jp/mbsj2011/">第34回日本分子生物学会年会</a>
+    keyword: presentation
+
+  - date: 2011-12-02
+    id: 
+    title: DDBJ Sequence Read Archive の紹介
+    author: 児玉 悠一
+    info: 第6回インフォマティクス情報交換会
+    keyword: presentation
+
+  - date: 2011-11-28
+    id: 
+    title: DDBJ Sequence Read Archive and a cloud-computing based analytical pipeline for next-generation sequencing reads
+    author: 猿橋 智, 望月 孝子, 長崎 英樹, 児玉 悠一, 野崎 亜沙美, 李 慶範, 大城戸 利久, 横山 会美, 神沼 英里, 菅原 秀明, 大久保 公策, 高木 利久, 中村 保一
+    info: SOL&ICuGI 2011： 8th Solanaceae and 2nd Cucurbitaceae Genome Joint Conference
+    keyword: presentation
+
+  - date: 2011-11-28
+    id: 
+    title: 次世代シーケンサーデーターのDRA (DDBJ Sequence Read Archive) への登録
+    author: 児玉 悠一
+    info: シーケンサー利用技術講習会 - 第7回ロシュ・ダイアグノスティックス社 Genome Sequencer jr編
+    keyword: presentation
+
+  - date: 2011-10-09
+    id: 
+    title: DDBJ Read Annotation Pipeline 次世代シーケンサ由来配列データ解析パイプライン 解析目的別ワークフローの構築
+    author: 望月 孝子, 児玉 悠一, 猿橋 智, 長崎 英樹, 神沼 英里, 菅原 秀明, 大久保 公策, 高木 利久, 中村 保一
+    info: 「生命情報科学若手の会」第２回研究会
+    keyword: presentation
+
+  - date: 2011-10-05
+    id: 
+    title: 日本DNAデータバンク (DDBJ)
+    author: 中村 保一, 小笠原理, 神沼 英里, 高木 利久, 大久保 公策
+    info: <a href="https://events.biosciencedbc.jp/sympo/togo2011/">トーゴーの日シンポジウム2011</a>
+    keyword: presentation
+
+  - date: 2011-08-19
+    id: 
+    title: 次世代シーケンサーのアーカイブDBとクラウド型データ解析システムの紹介
+    author: 神沼 英里
+    info: 第154回農林交流センターワークショップ
+    keyword: presentation
+
+  - date: 2011-07-10
+    id: 
+    title: DDBJ Sequence Read Archive and a cloud-computing based annotation tool for next-generation sequencing data
+    author: 長崎 英樹, 望月 孝子, 児玉 悠一, 猿橋 智, 高木 利久, 大久保 公策, 神沼 英里, 中村 保一
+    info: The 2nd International Conference on the Progress of “1000 Plant & Animal Reference Genomes Project”
+    keyword: presentation
+
+  - date: 2011-05-28
+    id: 
+    title: DDBJ Read Annotation Pipeline： 新型シーケンサ由来配列のクラウド型解析パイプライン
+    author: 猿橋 智, 児玉 悠一, 李 慶範, 大城戸 利久, 横山 会美, 長崎 英樹, 望月 孝子, 神沼 英里, 菅原 秀明, 高木 利久, 大久保 公策, 中村 保一
+    info: <a href="http://www.ngs-field.org/top-page/service/meeting1/">NGS 現場の会・第一回研究会</a>
+    keyword: presentation
+
+  - date: 2011-03-20
+    id: 
+    title: DDBJ Read Annotation Pipeline： 新型シーケンサ由来配列のクラウド型パイプライン
+    author: 長崎 英樹，望月 孝子，神沼 英里，渡邊 成樹，児玉 悠一，猿橋 智，菅原 秀明，高木 利久, 大久保 公策, 中村 保一
+    info: 第52回日本植物生理学会年会
+    keyword: presentation
+
+  - date: 2011-03-14
+    id: 
+    title: DNA Data Bank of Japan ～新型シークエンサからのデータ登録・解析
+    author: 猿橋 智, 児玉 悠一, 李 慶範, 大城戸 利久, 横山 会美, 長崎 英樹, 望月 孝子, 神沼 英里, 菅原 秀明, 高木 利久, 大久保 公策, 中村 保一
+    info: 第5回日本ゲノム微生物学会年会
+    keyword: presentation
+
+  - date: 2011-01-28
+    id: 
+    title: 新型シークエンサ配列解析のためのクラウド型計算機資源利用法
+    author: 神沼 英里
+    info: <a href="http://www.med.tohoku.ac.jp/news/819.html">東北大学グローバルCOE 第7回Network Medicine 特論</a>
+    keyword: presentation
+
+  - date: 2011-01-15
+    id: 
+    title: DDBJ Read Annotation Pipeline： A cloud based pipeline for high-throughput analysis of next generation sequencing data
+    author: 長崎 英樹, 望月 孝子, 渡邊 成樹, Morizaki, S., 児玉 悠一, 猿橋 智, 高木 利久, 大久保 公策, 神沼 英里, 中村 保一
+    info: Plant and Animal Genome XIX Conference
+    keyword: presentation
+
+  - date: 2010-12-08
+    id: 
+    title: DDBJ Read Annotation Pipeline： 新型シーケンサ由来配列のクラウド型パイプライン
+    author: 長崎 英樹, 望月 孝子, 渡邊 成樹, Morizaki, S., 児玉 悠一, 猿橋 智, 高木 利久, 大久保 公策, 神沼 英里, 中村 保一
+    info: Plant and Animal Genome XIX Conference
+    keyword: presentation
+
+  - date: 2010-12-07
+    id: 
+    title: DDBJ Sequence Read Archive / DDBJ Omics Archive
+    author: 児玉 悠一, 猿橋 智, 神沼 英里, 菅原 秀明, 高木 利久, 大久保 公策, 中村保一
+    info: 第33回日本分子生物学会年会
+    keyword: presentation
+
+  - date: 2010-10-14
+    id: 
+    title: DDBJ Read Annotation Pipeline： A Cloud Computing Based Analytical Tool for Next-generation Sequencing Data
+    author: 中村 保一
+    info: <a href="http://hinv.jp/biocuration2010/">Biocuration 2010</a>
+    keyword: presentation
+
+  - date: 2010-10-11
+    id: 
+    title: DDBJ Sequence Read Archive / DDBJ Omics Archive
+    author: 児玉 悠一, 猿橋 智, 神沼 英里, 菅原 秀明, 高木 利久, 大久保 公策, 中村 保一
+    info: 4th Biocuration Conference
+    keyword: presentation
+
+  - date: 2010-10-05
+    id: 
+    title: DDBJ Sequence Read Archive / DDBJ Omics Archive
+    author: 児玉 悠一, 猿橋 智, 神沼 英里, 菅原 秀明, 高木 利久, 大久保 公策, 中村 保一
+    info: <a href="https://events.biosciencedbc.jp/sympo/godo">統合データベースプロジェクトシンポジウム「ライフサイエンスの未来へ〜10年先のデータベースを考える〜」</a>
+    keyword: presentation
+
+  - date: 2010-09-15
+    id: 
+    title: DDBJ Sequence Read Annotation Pipeline; A cloud computing-based analytical tool for next-generation sequencing data
+    author: 神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 大久保 公策, 高木 利久, 中村 保一
+    info: 10th Cold Spring Harbor Laboratory/Wellcome Trust conference on Genome Informatics
+    keyword: presentation
+
+  - date: 2010-09-10
+    id: 
+    title: 次世代シーケンサのアーカイブDBとクラウド型解析パイプライン
+    author: 神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 大久保 公策, 高木 利久, 中村 保一
+    info: 第148回農林交流センターワークショップ 「次世代シーケンサーを利用したゲノム解析の実際」
+    keyword: presentation
+
+  - date: 2010-08-09
+    id: 
+    title: Parsing the Legacy DDBJ-- old but new
+    author: 小笠原 理
+    info: ライフサイエンス・データベース講習会 in 名大
+    keyword: presentation
+
+  - date: 2010-08-09
+    id: 
+    title: DDBJの新型シーケンサへの対応 ― データアーカイブDRAと解析パイプライン
+    author: 中村 保一
+    info: ライフサイエンス・データベース講習会 in 名大
+    keyword: presentation
+
+  - date: 2010-08-09
+    id: 
+    title: DDBJ past and future
+    author: 大久保 公策
+    info: ライフサイエンス・データベース講習会 in 名大
+    keyword: presentation
+
+  - date: 2010-08-04
+    id: 
+    title: 次世代シークエンサの活用法/データの解析法
+    author: 中村 保一
+    info: <a href="http://motdb.dbcls.jp/?AJACS21">DBCLS講習会 AJACS21 みちのく</a>
+    keyword: presentation
+
+  - date: 2010-07-15
+    id: 
+    title: 次世代シーケンサーデータのDRA(DDBJ Read Archive)への登録
+    author: 児玉 悠一
+    info: <a href="http://www.osc.riken.jp/event/100714/">シーケンサー利用技術講習会 - 第3回ライフテクノロジーズジャパン社 SOLiDTM　Systems編</a>
+    keyword: presentation
+
+  - date: 2010-07-13
+    id: 
+    title: DDBJ Omics Archive and DDBJ Read Annotation Pipeline： archive and analyze quantitative data from next generation platforms
+    author: 児玉 悠一
+    info: 13th International MGED Meeting
+    keyword: presentation
+
+  - date: 2010-07-09
+    id: 
+    title: DDBJ Read Annotation Pipeline： A web-based analytical tool for next-generation sequencing data
+    author: 神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 大久保 公策, 高木 利久, 中村 保一
+    info: <a href="//www.iscb.org/archive/conferences/iscb/ismb2010.html">18th Annual International Conference on Intelligent Systems for Molecular Biology(ISMB2010)</a>
+    keyword: presentation
+
+  - date: 2010-07-02
+    id: 
+    title: 次世代シーケンサのアーカイブDBとクラウド型解析パイプライン
+    author: 神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 大久保 公策, 高木 利久, 中村 保一
+    info: <a href="https://kikaku.nias.affrc.go.jp/meeting/ricews2010/">NIASシンポジウム「イネ遺伝学・分子生物学ワークショップ2010」</a>
+    keyword: presentation
+
+  - date: 2010-06-21
+    id: 
+    title: DDBJ Read Archive (DRA) の紹介
+    author: 児玉 悠一
+    info: <a href="http://www.cbi.or.jp/cbi/seminar/2010.06.21.00.html">第309回 CBI 学会研究講演会</a>
+    keyword: presentation
+
+  - date: 2010-06-07
+    id: 
+    title: Plant SNP annotation using a web-based pipeline tool for next-generation sequencing data
+    author: 神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 大久保 公策, 高木 利久, 中村 保一
+    info: The 21th International Conference on Arabidopsis Research 
+    keyword: presentation
+
+  - date: 2010-06-04
+    id: 
+    title: 次世代シークエンサの活用法
+    author: 神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 高木 利久, 大久保 公策, 中村 保一
+    info: <a href="http://motdb.dbcls.jp/?AJACS18">DBCLS 講習会 AJACS18</a>
+    keyword: presentation
+
+  - date: 2010-05-26
+    id: 
+    title: DDBJ Read Archive - Public archive for output data from next-generation sequencer
+    author: 猿橋 智, 児玉 悠一, 神沼 英里, 五條堀 孝, 高木 利久, 大久保 公策, 菅原 秀明, 中村 保一
+    info: The 5th NIG Poster Workshop
+    keyword: presentation
+
+  - date: 2010-05-26
+    id: 
+    title: 協調作業・共同研究コラボレーション・ツールとして Google Apps の DDBJ における利用例 ～DDBJ から NIG 全体への利用をめざして～
+    author: 小菅 武英, 望月 孝子, *渡邊 成樹, 真島 淳, 神沼 英里, 大久保 公策, 高木 利久, 中村 保一
+    info: The 5th NIG Poster Workshop
+    keyword: presentation
+
+  - date: 2010-05-26
+    id: 
+    title: A Cloud computing based Analysis System for the Next Generation sequencing Data
+    author: 望月 孝子, 神沼 英里, 児玉 悠一, 猿橋 智, 菅原 秀明, 大久保 公策, 高木 利久, 中村 保一
+    info: The 5th NIG Poster Workshop
+    keyword: presentation
+
+  - date: 2010-03-19
+    id: 
+    title: 次世代シークエンサデータのアーカイブ登録と解析パイプライン
+    author: 神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 高木 利久, 大久保 公策, 中村 保一
+    info: 第51回日本植物生理学会年会 データベース講習会
+    keyword: presentation
+
+  - date: 2010-02-18
+    id: 
+    title: 次世代シーケンサーデータの DRA(DDBJ Read Archive)への登録
+    author: 児玉 悠一
+    info: <a href="http://www.osc.riken.jp/event/100217/">第２回シーケンサー利用技術講習会 イルミナ社 Genome Analyzer（通称Solexa）編</a>
+    keyword: presentation
+
+  - date: 2009-12-17
+    id: 
+    title: 次世代シーケンサーデータのDRA(DDBJ Sequence Read Archive)への登録
+    author: 児玉 悠一
+    info: <a href="http://www.osc.riken.jp/event/091216/">第１回シーケンサー利用技術講習会 ロシュ・ダイアグノスティックス社 Genome Sequencer FLX System編</a>
+    keyword: presentation
+
+  - date: 2009-12-14
+    id: 
+    title: DDBJ Sequence Read Archive and DDBJ Read Annotation Pipeline： An archive database and an analytical tool for next-generation sequence data
+    author: Eli Kaminuma, Yuichi Kodama, Satoshi Saruhashi, Takeshi Konno, Takako Mochizuki, Hidemasa Bono, Hideaki Sugawara, Kousaku Okubo, Toshihisa Takagi, Yasukazu Nakamura
+    info: The 20th International Conference on Genome Informatics
+    keyword: presentation
+
+  - date: 2009-12-14
+    id: 
+    title: Consecutive Update of the Microbial Genome Re-Annotation Database, GTPS
+    author: Takehide Kosuge, Yasumasa Shigemoto, Yoshikazu Kuwana, Hideaki Sugawara
+    info: The 20th International Conference on Genome Informatics
+    keyword: presentation
+
+  - date: 2009-12-09
+    id: 
+    title: 次世代シーケンサーのハイスループット・データ解析システム「DDBJ Short Read Annotation Pipeline」の構築
+    author: 神沼 英里, 児玉 悠一, 大久保 公策, 高木 利久, 中村 保一
+    info: 第32回日本分子生物学会年会
+    keyword: presentation
+
+  - date: 2009-12-09
+    id: 
+    title: 「DDBJ Sequence Read Archive」：次世代シークエンサーからの出力データのためのアーカイブ
+    author: 児玉 悠一,猿橋 智, 五條堀 孝, 舘野 義男, 神沼 英里, 中村 保一, 菅原 秀明
+    info: 第32回日本分子生物学会年会
+    keyword: presentation
+
+  - date: 2009-12-01
+    id: 
+    title: DDBJにおける次世代シーケンサデータへの対応
+    author: 神沼 英里, 児玉 悠一, 望月 孝子, 猿橋 智, 中村 保一
+    info: ライフサイエンス統合データベースセンター(DBCLS) セミナー
+    keyword: presentation
+
+  - date: 2009-12-01
+    id: 
+    title: DDBJ： 配列データのフロー
+    author: 真島 淳, 中村 保一
+    info: ライフサイエンス統合データベースセンター(DBCLS) セミナー
+    keyword: presentation
+
+  - date: 2009-11-30
+    id: 
+    title: DNA Data Bank of Japan (DDBJ) の新展開
+    author: 神沼 英里, 中村 保一
+    info: 情報・システム研究機構シンポジム「情報とシステム2009」
+    keyword: presentation
+
+  - date: 2009-11-31
+    id: 
+    title: 共同利用としてのライフサイエンス基盤－日本DNAデータバンク（DDBJ）とライフサイエンス統合データベース（LSDB）
+    author: 五條堀 孝
+    info: 情報・システム研究機構シンポジム「情報とシステム2009」
+    keyword: presentation
+
+  - date: 2009-11-17
+    id: 
+    title: DDBJ Sequence Read Archiveのご紹介（新型シークエサへの対応）
+    author: 猿橋 智, 児玉 悠一, 神沼 英里, 五條堀 孝, 舘野 義男, 中村 保一, 菅原 秀明
+    info: バイオインフォマティクス推進センター事業（BIRD）第5回研究開発成果報告会
+    keyword: presentation
+
+  - date: 2009-10-05
+    id: 
+    title: Systematic Organization of Gene Expression Data in Japan
+    author: 坊農 秀雅, 神沼 英里, 児玉 悠一, 中村 保一, 大久保 公策, 高木 利久
+    info: 12th International MGED Meeting
+    keyword: presentation
+
+  - date: 2009-10-05
+    id: 
+    title: CIBEX
+    author: 児玉 悠一, 舘野 義男, 池尾 一穂
+    info: 12th International MGED Meeting
+    keyword: presentation
+
+  - date: 2009-08-19
+    id: 
+    title: 遺伝子データバンクについて（DNA Data Bank of Japan, DDBJ）
+    author: 李 慶範
+    info: Korean Bioinformation Center (KOBIC) セミナー
+    keyword: presentation
+
+  - date: 2009-08-06
+    id: 
+    title: DDBJ Sequence Read Archive
+    author: 児玉 悠一
+    info: 理化学研究所 横浜研究所 所内セミナー
+    keyword: presentation
+
+  - date: 2009-08-04
+    id: 
+    title: Short Readデータ解析例の紹介
+    author: 神沼 英里
+    info: ライフサイエンス統合データベースセンター(DBCLS) セミナー
+    keyword: presentation
+
+  - date: 2009-06-26
+    id: 
+    title: DDBJ Sequence Read Archive
+    author: 児玉 悠一
+    info: 第23回システムバイオロジー研究会
+    keyword: presentation
+
+  - date: 2009-06-12
+    id: 
+    title: DNA Data Bank of Japan (DDBJ)
+    author: 神沼 英里, 中村 保一, 高木 利久
+    info: <a href="https://events.biosciencedbc.jp/sympo/sympo2009">統合データベースプロジェクト シンポジウム 2009「データベースが拓くこれからのライフサイエンス」</a>
+    keyword: presentation
+
+  - date: 2009-06-12
+    id: 
+    title: 次世代シークエンサの出力データのためのアーカイブについて
+    author: 児玉 悠一, 猿橋 智, 五條堀 孝, 舘野 義男, 中村 保一, 菅原秀明
+    info: <a href="https://events.biosciencedbc.jp/sympo/sympo2009">統合データベースプロジェクト シンポジウム 2009「データベースが拓くこれからのライフサイエンス」</a>
+    keyword: presentation
+
+  - date: 2009-05-26
+    id: 
+    title: Constructing a high-throughput annotation pipeline of next generation sequencing reads
+    author: 神沼 英里, 中村 保一, 高木 利久
+    info: 遺伝学研究所内部交流セミナー The 4th NIG Poster Workshop
+    keyword: presentation
+
+  - date: 2009-05-26
+    id: 
+    title: 次世代シークエンサの出力データのためのアーカイブについて
+    author: 児玉 悠一, 猿橋 智, 五條堀 孝, 舘野 義男, 中村 保一, 菅原 秀明
+    info: 遺伝学研究所内部交流セミナー The 4th NIG Poster Workshop
+    keyword: presentation
+
+  - date: 2009-04-16
+    id: 
+    title: DDBJ Activities： Contribution to the Research in Information Biology
+    author: 真島 淳, 小菅 武英, 大城戸 利久, 児玉 悠一, 池尾 一穂, 菅原 秀明, 舘野 義男, 五條堀 孝
+    info: The 3rd International Biocuration Conference
     keyword: presentation
     
   - date: 2019-12-01
