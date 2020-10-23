@@ -5,20 +5,21 @@ $MARGIN_BOTTOM: 1rem
   line-height: 1.8
   .highlight
     overflow: auto
-  a[href^="http"],a[href^="//"]
-    &:after
-      content: ''
-      background-image: url(../images/parts/external_link.png)
-      background-repeat: no-repeat
-      width: 1.6rem
-      height: 1.6rem
-      margin: 0 .4rem
-      display: inline-block
-      background-size: 1.4rem
-      vertical-align: middle
-  a[href*="ddbj.nig.ac.jp"]
-    &:after
-      display: none
+  a
+    &[href^="http"],&[href^="//"]
+      &:after
+        content: ''
+        background-image: url(../images/parts/external_link.png)
+        background-repeat: no-repeat
+        width: 1.6rem
+        height: 1.6rem
+        margin: 0 .4rem
+        display: inline-block
+        background-size: 1.4rem
+        vertical-align: middle
+    &[href*="ddbj.nig.ac.jp"],&[href*="youtu.be"],&.withoutpseudoelement
+      &:after
+        display: none
   .group1
     text-decoration: none
   img

@@ -325,7 +325,7 @@ input, textarea, select, button {
     display: inline-block;
     background-size: 1.4rem;
     vertical-align: middle; }
-  .md-content a[href*="ddbj.nig.ac.jp"]:after {
+  .md-content a[href*="ddbj.nig.ac.jp"]:after, .md-content a[href*="youtu.be"]:after, .md-content a.withoutpseudoelement:after {
     display: none; }
   .md-content .group1 {
     text-decoration: none; }
