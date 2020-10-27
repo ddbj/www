@@ -108,8 +108,9 @@ Figure2: Benchmark result of models
   Kaminuma E, Baba Y, Mochizuki M, Matsumoto H, Ozaki H, Okayama T, Kato T, Oki S, Fujisawa T, Nakamura Y et al  
   *Genes Genet Syst* 2020 Mar 26;():. Pubmed: [32213716](https://www.ncbi.nlm.nih.gov/pubmed/32213716)
 
-## DDBJデータ解析チャレンジ Q& <a name="faq"></a>
+## DDBJデータ解析チャレンジ Q&A <a name="faq"></a>
 
+{:.challenge-faq}
 DDBJデータ解析チャレンジの内容や結果は論文に投稿できますか？  
 : DDBJチャレンジ報告論文をジャーナルに投稿予定です。上位入賞者の方には、共著者としてご参加いただきます。詳しくは チャレンジ賞 を参照ください。
 

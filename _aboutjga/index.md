@@ -1,13 +1,12 @@
 ---
 layout: indexed_content
+title: Japanese Genotype-phenotype Archive
 pathname: index
 category: aboutjga
 lang: ja
 ---
 
-<div id="content_part">
-
-## 概要
+## 概要 <a name="introduction"></a>
 
 Japanese Genotype-phenotype Archive (JGA)
 は個人レベルの遺伝学的なデータと匿名化された表現型情報を保存し，提供しています。
@@ -22,14 +21,14 @@ Japanese Genotype-phenotype Archive (JGA)
 Bioscience Database Center (NBDC)](http://biosciencedbc.jp/)
 と共同で運営されています。
 
-## データの利用
+## データの利用 <a name="access"></a>
 
 JGA はデータを格納する際にそのデータに適用される利用制限ポリシーを登録しますが，利用者のデータ利用の可否については
 [JST/NBDC](http://humandbs.biosciencedbc.jp/) が審査します。 利用者は
 [NBDC](http://humandbs.biosciencedbc.jp/) にデータの利用を申請し，JGA は NBDC
 からの利用承認連絡を受け，利用者にデータへの安全なアクセスを提供します。
 
-## データの登録
+## データの登録 <a name="submission"></a>
 
 JGA は JST/NBDC で承認された匿名化されたデータだけを受け付けています
 ([ヒトを対象とした研究データの登録について](/policies.html#human))。
@@ -42,44 +41,4 @@ NBDC からデータ提供の承認連絡を受けた登録者は [JGA に連絡
 また，JGA はサンプルの表現型についてのデータをも登録しています。その他のヒトに関するデータについては，[NBDC
 ヒトデータ審査委員会事務局](http://humandbs.biosciencedbc.jp/)にご相談下さい。
 
-<div id="db-top-navi-box" class="clearfix">
 
-<div class="box-layer">
-
-[](https://ddbj.nig.ac.jp/jga/viewer/view/studies "検索")
-
-<div class="top-navi-box">
-
-<div class="icon">
-
-![](/images/parts/search_icon.svg "検索")
-
-</div>
-
-## 検索
-
-</div>
-
-[](/jga/substep.html "ハンドブック")
-
-<div class="top-navi-box">
-
-<div class="icon">
-
-![](/images/parts/book_icon.svg "ハンドブック")
-
-</div>
-
-## ハンドブック
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div id="news_part">
-
-</div>

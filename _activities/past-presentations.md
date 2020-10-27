@@ -1,14 +1,25 @@
 ---
-layout: 年表
+layout: indexed_content
 title: DDBJ スタッフの講演発表（2001-2006）
 pathname: past-presentations
 category: _activities
 lang: ja
+related_pages:
+  - title: DDBJ データ解析チャレンジ
+    url: /activities/ddbj-challenge.html
+  - title: DDBJ スタッフの論文 (2009-)
+    url: /activities/
+  - title: DDBJ スタッフの講演発表 (2009-)
+    url: /activities/
+  - title: DDBJ スタッフの出版物 (2009-)
+    url: /activities/
+  - title: 発行物アーカイブ
+    url: /activities/pub-archives.html
+  - title: DDBJ Annual Report
+    url: /activities/
+  - title: 国際実務者会議報告一覧
+    url: /activities/
 ---
-
-# DDBJ スタッフの講演発表（2001-2006）
-
-<div id="pub-list" class="switch">
 
 ## 2006 <a name="2006"></a>
 
@@ -149,5 +160,3 @@ lang: ja
   - 五條堀孝　「ヒト遺伝子統合データベースの構築とその活用」、慶応義塾大学「COE特別講義　「バイオインフォマティックス特論」、慶應義塾大学（神奈川）2006/12/19
 
   - 池尾一穂　「バイオインフォマティクスの現状と応用」バイオインフォマティクスセミナー、サッポロビール（株）価値創造フロンティア研究所（焼津）2006/12
-
-</div>

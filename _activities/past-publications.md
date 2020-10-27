@@ -1,11 +1,27 @@
 ---
-layout: 年表
+layout: indexed_content
 title: DDBJスタッフの出版物（1996–2008）
 pathname: past-publications
 category: _activities
 lang: ja
+related_pages:
+  - title: DDBJ スタッフの講演発表（2001-2006）
+    url: /activities/past-presentations.html
+  - title: DDBJ データ解析チャレンジ
+    url: /activities/ddbj-challenge.html
+  - title: DDBJ スタッフの論文 (2009-)
+    url: /activities/
+  - title: DDBJ スタッフの講演発表 (2009-)
+    url: /activities/
+  - title: DDBJ スタッフの出版物 (2009-)
+    url: /activities/
+  - title: 発行物アーカイブ
+    url: /activities/pub-archives.html
+  - title: DDBJ Annual Report
+    url: /activities/
+  - title: 国際実務者会議報告一覧
+    url: /activities/
 ---
-# DDBJスタッフの出版物（1996–2008）
 
 ## 2006 <a name="2006"></a>
 

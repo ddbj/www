@@ -1,24 +1,20 @@
 ---
-layout: 発行物アーカイブ
+layout: indexed_content
 title: 発行物アーカイブ
 pathname: pub-archives
 category: _activities
 lang: ja
 ---
 
-# 発行物アーカイブ
-
 DDBJ センターの過去の発行物は [Google Drive](https://drive.google.com/drive/u/2/folders/1Q9-RtK-maEp7HsYq0i9k-MxOTSldMr7G) から公開しています。
 
 ## News <a name="news"></a>
 
-|                                       |                                       |                                       |                                       |                                       |
-| ------------------------------------- | ------------------------------------- | ------------------------------------- | ------------------------------------- | ------------------------------------- |
-| [1996](/archives/ja/news-1996-j.html) | [1997](/archives/ja/news-1997-j.html) | [1998](/archives/ja/news-1998-j.html) | [1999](/archives/ja/news-1999-j.html) | [2000](/archives/ja/news-2000-j.html) |
-| [2001](/archives/ja/news-2001-j.html) | [2002](/archives/ja/news-2002-j.html) | [2003](/archives/ja/news-2003-j.html) | [2004](/archives/ja/news-2004-j.html) | [2005](/archives/ja/news-2005-j.html) |
-| [2006](/archives/ja/news-2006-j.html) | [2007](/archives/ja/news-2007-j.html) | [2008](/archives/ja/news-2008-j.html) | [2009](/archives/ja/news-2009-j.html) | [2010](/archives/ja/news-2010-j.html) |
-| [2011](/archives/ja/news-2011-j.html) | [2012](/archives/ja/news-2012-j.html) | [2013](/archives/ja/news-2013-j.html) | [2014](/archives/ja/news-2014-j.html) | [2015](/archives/ja/news-2015-j.html) |
-| [2016](/archives/ja/news-2016-j.html) |                                       |                                       |                                       |                                       |
+| [1996](/news/archive-1996.html) | [1997](/news/archive-1997.html) | [1998](/news/archive-1998.html) | [1999](/news/archive-1999.html) | [2000](/news/archive-2000.html) |
+| [2001](/news/archive-2001.html) | [2002](/news/archive-2002.html) | [2003](/news/archive-2003.html) | [2004](/news/archive-2004.html) | [2005](/news/archive-2005.html) |
+| [2006](/news/archive-2006.html) | [2007](/news/archive-2007.html) | [2008](/news/archive-2008.html) | [2009](/news/archive-2009.html) | [2010](/news/archive-2010.html) |
+| [2011](/news/archive-2011.html) | [2012](/news/archive-2012.html) | [2013](/news/archive-2013.html) | [2014](/news/archive-2014.html) | [2015](/news/archive-2015.html) |
+| [2016](/news/archive-2016.html) |                                       |                                       |                                       |                                       |
 
 ## Web 版 DDBJ Mail Magazine <a name="mag"></a>
 
@@ -26,8 +22,6 @@ DDBJ センターの過去の発行物は [Google Drive](https://drive.google.co
 
 DDBJ Mail Magazine は、2013年10月より Web 版を廃止しEメール配信のみとなりました。[登録はこちら](/subscribe.html)
 
-|                                                                                         |                                                                                         |                                                                                         |                                                                                         |                                                                                         |
-| --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | [No.85](https://drive.google.com/file/d/1S8PcjiLhvOoy34SQpLb5g8EjWn2Gs8Z8) (2013.09.03) | [No.84](https://drive.google.com/file/d/1GPfMSDI86QF0iTL4EdLjPAIhhPa9WcoW) (2013.07.18) | [No.83](https://drive.google.com/file/d/1lw4WMRnZIL5qPZ707KKD46izoN6Xe-Gb) (2013.06.05) | [No.82](https://drive.google.com/file/d/1g2R_dZzrmOPCDTDxvbppNHK2HJoOqm2h) (2013.04.18) | [No.81](https://drive.google.com/file/d/1o5fyp92KOVZOf_LhpJEs-l0I9P9ZwgQ3) (2013.03.14) |
 | [No.80](https://drive.google.com/file/d/15Vn0jBQN6UrPzBtBNY4vrrOrTSj8VPiR) (2013.03.01) | [No.79](https://drive.google.com/file/d/1LQtFaKI6penRGG7A7BRcW4z2nGkHvwdJ) (2013.02.07) | [No.78](https://drive.google.com/file/d/1gs53vYqbxMDRrRrzTmTgHY5teAyuk7Ut) (2013.01.11) | [No.77](https://drive.google.com/file/d/1sqmrxBQRh4jks-Ptl7oqw80Ghy5w2fTn) (2012.12.06) | [No.76](https://drive.google.com/file/d/1aU1uKTK2Mqa2UgBE9zP9v5WlDbflIcuD) (2012.11.07) |
 | [No.75](https://drive.google.com/file/d/1t7gh-awMeYU1BXdps_FzObrPkB_g3F9j) (2012.10.05) | [No.74](https://drive.google.com/file/d/1tIu1pGbzPmpjzLrURwUcNZuUOySkdXbh) (2012.09.06) | [No.73](https://drive.google.com/file/d/1buIJ24Yg6QjVecq70G2WT1DVDyUCBUvr) (2012.08.08) | [No.72](https://drive.google.com/file/d/1LqPLcdVnhvZL2ZVRb--HzpcVyQ0OtZSF) (2012.07.11) | [No.71](https://drive.google.com/file/d/1pVuVz8gQgNeV0ymvp13vy2bXwXnOc8bw) (2012.06.05) |
@@ -53,8 +47,6 @@ DDBJ Mail Magazine は、2013年10月より Web 版を廃止しEメール配信�
 
 DDBJ および生命情報研究センターの活動報告。
 
-|                                                                                 |                                                                                 |                                                                                 |                                                                                 |                                                                                 |                                                                                 |
-| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
 | [March 2009](https://drive.google.com/file/d/1_PylGS_Ekw8j7vxXHIElCjD2Sw-GSHTQ) | [March 2008](https://drive.google.com/file/d/1cEOf5fuf_BpEZ4KxciHtktf22lhweAXa) | [March 2007](https://drive.google.com/file/d/11O1x5ro6FP6Jc5uF-V5WjY-x1VPWqxQ4) | [March 2006](https://drive.google.com/file/d/1RUd6UtgsEgm0zRqcNTntjvARZZKby5Mb) | [March 2005](https://drive.google.com/file/d/1J1TaSzjmVjjKSQv_nrVpBf0OwjCm1GSc) | [March 2004](https://drive.google.com/file/d/1tBmFsA6LGn6gdN_99LRy46MRfkQXlVbl) |
 | [March 2003](https://drive.google.com/file/d/1kDxJw2x7hVZDX6w7djY6XBhx5fgm_nOU) | [March 2002](https://drive.google.com/file/d/1uHkebT1GYufCIRAzVUDrxJvo5_O-LfZW) | [March 2001](https://drive.google.com/file/d/1PFUaYMbmM7WN6K67qzV2gIf4Qq-KMuJn) | [March 2000](https://drive.google.com/file/d/1gUrxSS26VQpBTwmb1DqP2ulpmqnp9W6_) | [March 1999](https://drive.google.com/file/d/1Hjj41AmvAx5dqIzjYNHj1jgYf-wBodzM) | [March 1998](https://drive.google.com/file/d/1td2chHkldkgg3YfzXMyI9_YPe6lwkawa) |
 
@@ -64,8 +56,6 @@ DDBJ および生命情報研究センターの活動報告。
 
 DDBJ 利用者向けの，DDBJ に関するニュース。
 
-|                                                                                      |                                                                                      |                                                                                      |                                                                                      |                                                                                      |
-| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
 | [No.17](https://drive.google.com/file/d/1XFL0P35ALJxldveqn7i2_0wdJyX7A-9f) (2002.02) | [No.16](https://drive.google.com/file/d/1gMCpY39v02wFc6ohQqbjwvN1MrgAECAM) (2001.12) | [No.15](https://drive.google.com/file/d/1j8wgvx0Y5FhleDjcnBZ_0OYScwjyElX_) (2001.07) | [No.14](https://drive.google.com/file/d/1i6_XVbR4ZbBfmavG7M8Y3Q36MayklW19) (2000.12) | [No.13](https://drive.google.com/file/d/1OefXFQI87aVEnGJCKyvVOq4X3bdDc75j) (2000.07) |
 | [No.12](https://drive.google.com/file/d/1sS_seXHyYHj3H52Fday6QuMWyxxC1UeO) (1999.11) | [No.11](https://drive.google.com/file/d/1P6TaepSnmWdPDGoqX9ca4XmRXYcFv0WM) (1999.07) | [No.10](https://drive.google.com/file/d/1TVlImRNjmHWqn6k5DKZ1IM_W6wq7HSIB) (1998.12) | [No.9](https://drive.google.com/file/d/1Vx975ZfxdhThoeoVK38P49UqYwD2wO0c) (1998.07)  | [No.8](https://drive.google.com/file/d/1WFh0X-jZ6VDLJfykn7r5KATozFS9F4vm) (1997.10)  |
 | [No.7](https://drive.google.com/file/d/1_AXuV_1Oz7Lzej78nns4E9tQi8QOCjfW) (1997.06)  | [No.6](https://drive.google.com/file/d/1OVn42oeDNs02U7xf657sLt7IonFJH4iZ) (1996.11)  | [No.5](https://drive.google.com/file/d/1asigzNh_czF41V4nCyrLCwW0kwjsnro7) (1995.06)  | [No.4](https://drive.google.com/file/d/11R1kXuSF48wn7DMvRNwq5lr1FYB31zv_) (1994.05)  | [No.3](https://drive.google.com/file/d/1Fz5mwxNDKZKWqIBYP9E2MqCYxZxviRwc) (1993.07)  |
@@ -77,8 +67,6 @@ DDBJ 利用者向けの，DDBJ に関するニュース。
 
 DDBJ 利用者向けの，DDBJ に関するニュース。
 
-|    |    |    |    |
-| ---- | ---- | ---- | ---- |
 |  [No.17](https://drive.google.com/file/d/1MoZZ8kQE7o9OT6VSbz35h5uB75WWOa41) (1997.03)  |  [No.16](https://drive.google.com/file/d/1ojP8Q_oPrBAtSpbYJAHM67qNufNPSOeJ) (1996.03)  |  [No.15](https://drive.google.com/file/d/1JBkzjRJ1RwtQ2sQYB3rqruakZGA1RYFu) (1995.02)  |  [No.14](https://drive.google.com/file/d/1ap3UK8VRoLbYS7LMrkF65AiK5s3tyz8m) (1993.12)  |
 |  [No.13](https://drive.google.com/file/d/1OqxLvuhCyk2DD8l6j1FbE2u-6ij1UQAg) (1993.02)  |  [No.12](https://drive.google.com/file/d/1a4x7FQRBoTMQhU0yTalQkf-xXnDMuAL4) (1992.08)  |  [No.11](https://drive.google.com/file/d/1t-uIaoEs_gtBlA1PCnuc97B4Xl8q3WwS) (1992.01)  |  [No.11 別冊](https://drive.google.com/file/d/1fK-ww0vYXUH-YHrCUwUYcBCMAZq-E5H3) (1992.01)  |
 |  [No.10](https://drive.google.com/file/d/1Yqij6CSgfi_ZhdeVrsTfeTKSzfsOqGGJ) (1991.03)  |  [No.10 別冊](https://drive.google.com/file/d/1AkEC4se6A5lqEMB2wwbwl0ofm3WBtZJr) (1991.07)  |  [No.9](https://drive.google.com/file/d/1BTxK_y7H8qkZbB6fIGXtzUxs9wP3TFXE) (1990.05)  |  [No.8](https://drive.google.com/file/d/1dBMaJwUFKzEeA9bdRFF69REGzAf78Jni) (1989.03)  |
@@ -92,8 +80,6 @@ DDBJ 利用者向けの，DDBJ に関するニュース。
 
 国立遺伝学研究所内向けの，DDBJ の活動に関するニュース。
 
-|                                                                                         |                                                                                         |                                                                                         |                                                                                         |                                                                                         |
-| --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | [No.80](https://drive.google.com/file/d/11XU7x4TxXI7VMDqZJDG4mH0zTVpnsivl) (2001.11.30) | [No.79](https://drive.google.com/file/d/1gIKvV1e4Ah3uy5jH6RLwpvdFwcJCmzHt) (2001.9.28)  | No.78                                                                                   | [No.77](https://drive.google.com/file/d/1px1Wz8w5_yPmbnzpBcEpLxi5fxzQ7rJJ) (2001.05.31) | [No.76](https://drive.google.com/file/d/1NF8q1Lm218ptAInspQvZho4SyokE5EGg) (2001.03.30) |
 | [No.75](https://drive.google.com/file/d/1s1O9XjKF6Hw7qOZ9-mCg5eiSHHwJtTOS) (2001.01.31) | [No.74](https://drive.google.com/file/d/1UtD3gAW4KmAwaFOZ7qJC4Wi3qhJdH64h) (2000.11.30) | [No.73](https://drive.google.com/file/d/1tNlh1GhhFIx3_AYgZjZP1RxaDvy5dRAa) (2000.09.30) | [No.72](https://drive.google.com/file/d/1NieXG9GB6ooiL1OSRVrUWRJRqYPWkr4W) (2000.07.31) | [No.71](https://drive.google.com/file/d/1zSoSus0W3qow42M0sbAT8FJ1fJYkzIY1) (2000.05.31) |
 | [No.70](https://drive.google.com/file/d/1AKJCMgxLMl7WMvlNRuJpuQlli4x5GFsA) (2000.03.30) | [No.69](https://drive.google.com/file/d/1xII6LYadZn2b2_xS9WbcnvhhhaYS4J75) (2000.01.31) | [No.68](https://drive.google.com/file/d/1SebX9W8H-f78QBKuTDPELni89iDE3-Y7) (1999.11.30) | [No.67](https://drive.google.com/file/d/1ET9wgUyHXyi5mgWJXRtYIWHg6lTtzOwA) (1999.09.30) | [No.66](https://drive.google.com/file/d/16cmae1pxjQ9NDqKLkzCkIKRCB3q-m2rk) (1999.07.30) |

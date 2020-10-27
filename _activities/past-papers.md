@@ -1,17 +1,29 @@
 ---
-layout: 年表
+layout: indexed_content
 title: DDBJ スタッフの論文 (1996-2008)
 pathname: past-papers
 category: _activities
 lang: ja
+related_pages:
+  - title: DDBJ スタッフの講演発表（2001-2006）
+    url: /activities/past-presentations.html
+  - title: DDBJ データ解析チャレンジ
+    url: /activities/ddbj-challenge.html
+  - title: DDBJ スタッフの論文 (2009-)
+    url: /activities/
+  - title: DDBJ スタッフの講演発表 (2009-)
+    url: /activities/
+  - title: DDBJ スタッフの出版物 (2009-)
+    url: /activities/
+  - title: 発行物アーカイブ
+    url: /activities/pub-archives.html
+  - title: DDBJ Annual Report
+    url: /activities/
+  - title: 国際実務者会議報告一覧
+    url: /activities/
 ---
 
-# DDBJ スタッフの論文 (1996-2008)
-
-Bold are CIB-DDBJ members. Some of the publications in Japanese are
-excluded.
-
-<div id="pub-list" class="switch">
+Bold are CIB-DDBJ members. Some of the publications in Japanese are excluded.
 
 ## 2008 <a name="2008"></a>
 
@@ -58,5 +70,3 @@ excluded.
   - **Tateno Y,** Fukami-Kobayashi K, and Inoko H. (2008) Evolution of MHC class I complex region with special reference to fragmentary LINE sequences. In: Quantum Bio-Informatics, pp412-426, Eds, L. Accardi, W. Freudenberg and M. Ohya, World Scientific Press, New Jersey.
   - Yamaguchi-Kabata Y, Shimada MK, Hayakawa Y, Minoshima S, Chakraborty R, **Gojobori T,** and Imanishi T. (2008) Distribution and effects of nonsense polymorphisms in human genes. PLos One. 3 (10): e3393.
   - Genome Information Integration Project And H-Invitation 2 (DDBJ からは、**Okido T, Mashima J, Lee K-B, Nozaki A, Sakai K, Suzuki Y, Ikeo K, Saitou N, Sugawara H, Fukuchi S, Tateno Y, Gojobori T.**) (2008) The H-Invitational Database (H-InvDB), a comprehensive annotation resource for human genes and transcripts. Nucleic Acids Res., 2008, 36 Database issue: D793-D799.
-
-</div>
