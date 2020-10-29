@@ -12,4 +12,4 @@ lang: en
 
 ## How to suspend and resume my submission?
 
-<p>See <a href=\"/ddbj/websub-help-e.html#flow-2-1\">How to suspend/resume</a>. </p>
+<p>See <a href="/ddbj/websub-help-e.html#flow-2-1">How to suspend/resume</a>. </p>

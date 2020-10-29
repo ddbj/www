@@ -12,4 +12,4 @@ lang: en
 
 ## How to submit only annotation for previously reported sequences?
 
-<p>If your annotation meets the requirements of <a href=\"/ddbj/tpa-table-e.html\">TPA Submission Guidelines</a>, DDBJ can accept it as <a href=\"/ddbj/tpa-e.html\">TPA (Third Party Data)</a>. </p>
+<p>If your annotation meets the requirements of <a href="/ddbj/tpa-table-e.html">TPA Submission Guidelines</a>, DDBJ can accept it as <a href="/ddbj/tpa-e.html">TPA (Third Party Data)</a>. </p>

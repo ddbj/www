@@ -12,4 +12,4 @@ lang: en
 
 ## What is changed in the new JGA system released in 29th September 2020?
 
-<p>Please see '<a href=\"/jga/update-202009-e.html\">The new JGA system</a>' page.</p>
+<p>Please see '<a href="/jga/update-202009-e.html">The new JGA system</a>' page.</p>

@@ -19,11 +19,12 @@ lang: en
   <ul class="disc">
     <li>Release of the BioProject records DO NOT trigger release of the other linked data.</li>
     <li>Release of the BioSample records DO NOT trigger release of the other linked data, however, DO trigger release of the referencing BioProject.</li>
-    <li>Release of the DDBJ and DRA nucleotide sequence data DO trigger release of the linked BioProject and BioSample records.</li>n
-    <li>Release of the DRA data DO NOT trigger release of the DDBJ records.</li>n</ul>
+    <li>Release of the DDBJ and DRA nucleotide sequence data DO trigger release of the linked BioProject and BioSample records.</li>
+    <li>Release of the DRA data DO NOT trigger release of the DDBJ records.</li>
+  </ul>
 </div>
 <p id="release_unit" class="attention no_top">All metadata and sequencing data in a DRA submission are released at once.</p>
-<figure><a href="/images/books/bp-bs-seq_release.jpg" title="Release of linked BioProject/BioSample/sequence records"><img src="/images/books/bp-bs-seq_release.jpg" alt="Release of linked BioProject/BioSample/sequence records" title="Release of linked BioProject/BioSample/sequence records" class="w450"></a>
+<figure><a href="{{ site.baseurl }}/assets/images/books/bp-bs-seq_release.jpg" title="Release of linked BioProject/BioSample/sequence records"><img src="{{ site.baseurl }}/assets/images/books/bp-bs-seq_release.jpg" alt="Release of linked BioProject/BioSample/sequence records" title="Release of linked BioProject/BioSample/sequence records" class="w450"></a>
   <figcaption class="caption">Release of linked BioProject/BioSample/sequence records</figcaption>
 </figure>
 <p>DRA Handbook: <a href="/dra/submission-e.html#data-release">Release of DRA</a><br>BioProject Handbook: <a href="/bioproject/submission-e.html#data-release">Release of BioProject</a><br>BioSample Handbook: <a href="/biosample/submission-e.html#sample-release">Release of BioSample</a></p>

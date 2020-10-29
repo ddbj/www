@@ -12,4 +12,4 @@ lang: en
 
 ## How can I describe DEFINITION?
 
-<p>Since DEFINITION is constructed by DDBJ according to <a href=\"/ddbj/flat-file-e.html#DefinitionB\">rules</a>, there is no field to enter it. </p>
+<p>Since DEFINITION is constructed by DDBJ according to <a href="/ddbj/flat-file-e.html#DefinitionB">rules</a>, there is no field to enter it. </p>

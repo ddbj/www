@@ -12,4 +12,9 @@ lang: en
 
 ## Please see the DDBJ publication archive.
 
-The services that exist for communicating information about DDBJ are as follows. Choose whichever resource is most appropriate for your purposes.<br><ul><li><a href=\"/subscribe-e.html\">DDBJ Mail Magazine</a></li><li><a href=\"/announcements-e.html\">RSS feed</a></li><li><a href=\"https://twitter.com/DDBJ_topics\">Twitter</a></li></ul>
+The services that exist for communicating information about DDBJ are as follows. Choose whichever resource is most appropriate for your purposes.<br>
+<ul>
+  <li><a href="/subscribe-e.html">DDBJ Mail Magazine</a></li>
+  <li><a href="/announcements-e.html">RSS feed</a></li>
+  <li><a href="https://twitter.com/DDBJ_topics">Twitter</a></li>
+</ul>

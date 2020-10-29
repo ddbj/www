@@ -12,4 +12,4 @@ lang: en
 
 ## How to change the contact person, belonging, institution, etc..
 
-<p>Contact us from <a href=\"/ddbj/updt-form-e.html\">this form</a> with \"Change description about the contact person\" in [Subject]. </p>
+<p>Contact us from <a href="/ddbj/updt-form-e.html">this form</a> with "Change description about the contact person" in [Subject]. </p>

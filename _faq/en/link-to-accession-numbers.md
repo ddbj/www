@@ -12,4 +12,4 @@ lang: en
 
 ## Is there a way to link directly to data (accession numbers) registered in the DDBJ?
 
-See <a href=\"/getentry-help-e.html#ge_createlinks\">How to Create Links to DDBJ Entries</a>.
+See <a href="/getentry-help-e.html#ge_createlinks">How to Create Links to DDBJ Entries</a>.
