@@ -4,6 +4,19 @@ title: 発行物アーカイブ
 pathname: pub-archives
 category: _activities
 lang: ja
+related_pages:
+  - title: DDBJ データ解析チャレンジ
+    url: /activities/ddbj-challenge.html
+  - title: DDBJ スタッフの論文 (2009-)
+    url: /activities/
+  - title: DDBJ スタッフの講演発表 (2009-)
+    url: /activities/
+  - title: DDBJ スタッフの出版物 (2009-)
+    url: /activities/
+  - title: DDBJ Annual Report
+    url: /activities/
+  - title: 国際実務者会議報告一覧
+    url: /activities/
 ---
 
 DDBJ センターの過去の発行物は [Google Drive](https://drive.google.com/drive/u/2/folders/1Q9-RtK-maEp7HsYq0i9k-MxOTSldMr7G) から公開しています。

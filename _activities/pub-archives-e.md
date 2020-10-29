@@ -4,17 +4,25 @@ title: DDBJ Publications Archive
 pathname: pub-archives-e
 category: _activities
 lang: en
+related_pages:
+  - title: DDBJ staff papers (2009-)
+    url: /activities/index-e.html
+  - title: DDBJ staff presentations (2009-)
+    url: /activities/index-e.html
+  - title: DDBJ Annual Reports
+    url: /activities/index-e.html
+  - title: The Reports for International Collaborators Meetings
+    url: /activities/index-e.html
 ---
 
-All published materials are available at [Google
-Drive](https://drive.google.com/drive/u/2/folders/1Q9-RtK-maEp7HsYq0i9k-MxOTSldMr7G).
+All published materials are available at [Google Drive](https://drive.google.com/drive/u/2/folders/1Q9-RtK-maEp7HsYq0i9k-MxOTSldMr7G).
 
 ## News <a name="news"></a>
 
-| [1998](/archives/en/news-1998-e.html) | [1999](/archives/en/news-1999-e.html) | [2000](/archives/en/news-2000-e.html) | [2001](/archives/en/news-2001-e.html) | [2002](/archives/en/news-2002-e.html) |
-| [2003](/archives/en/news-2003-e.html) | [2004](/archives/en/news-2004-e.html) | [2005](/archives/en/news-2005-e.html) | [2006](/archives/en/news-2006-e.html) | [2007](/archives/en/news-2007-e.html) |
-| [2008](/archives/en/news-2008-e.html) | [2009](/archives/en/news-2009-e.html) | [2010](/archives/en/news-2010-e.html) | [2011](/archives/en/news-2011-e.html) | [2012](/archives/en/news-2012-e.html) |
-| [2013](/archives/en/news-2013-e.html) | [2014](/archives/en/news-2014-e.html) | [2015](/archives/en/news-2015-e.html) | [2016](/archives/en/news-2016-e.html) |                                       |
+| [1998](/news/archive-1998-e.html) | [1999](/news/archive-1999-e.html) | [2000](/news/archive-2000-e.html) | [2001](/news/archive-2001-e.html) | [2002](/news/archive-2002-e.html) |
+| [2003](/news/archive-2003-e.html) | [2004](/news/archive-2004-e.html) | [2005](/news/archive-2005-e.html) | [2006](/news/archive-2006-e.html) | [2007](/news/archive-2007-e.html) |
+| [2008](/news/archive-2008-e.html) | [2009](/news/archive-2009-e.html) | [2010](/news/archive-2010-e.html) | [2011](/news/archive-2011-e.html) | [2012](/news/archive-2012-e.html) |
+| [2013](/news/archive-2013-e.html) | [2014](/news/archive-2014-e.html) | [2015](/news/archive-2015-e.html) | [2016](/news/archive-2016-e.html) |                                       |
 
 ## DDBJ Mail Magazine <a name="mag"></a>
 
