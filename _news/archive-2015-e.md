@@ -5,7 +5,7 @@ pathname: archive-2015-e
 category: news
 lang: en
 ---
-p
+
 <div class="news_post firstpost">
   <h2 class="news_title" id="wn151217"><a href="#wn151217">(Correction) Suspension of the DDBJ activity during the New Year Holidays</a></h2>
   <div class="news_date">2015年12月24日</div>
