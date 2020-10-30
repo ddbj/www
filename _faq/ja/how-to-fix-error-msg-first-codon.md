@@ -10,7 +10,7 @@ date: 2014-06-04T15:51:12
 lang: ja
 ---
 
-## "First codon [***] is not a start codon." / "Final codon [***] is not a stop codon." というエラーが表示されました
+## "First codon [\*\*\*] is not a start codon." / "Final codon [***] is not a stop codon." というエラーが表示されました
 
 <p>これらの error message は <a href="/ddbj/cds.html">CDS (protein coding sequence) feature</a> のアミノ酸翻訳の結果が、5'末端 または 3'末端において適切ではなかったことを示しています。<br>当該 CDS が全長ではなく部分配列の場合、その feature location には部分配列であることを示すフラグが必要です。<br>部分配列の場合、<a href="/ddbj/location.html">location の記述法</a>に示されている記載ルールに従い、5' end not complete を示す "<strong>&lt;</strong>"、3' end not complete を示す "<strong>&gt;</strong>" のフラグを適切に加えて入力してください。<br>
   <!-- Nucleotide Sequence Submission System -->

@@ -12,4 +12,4 @@ lang: en
 
 ## How to describe organism name, if the species is not identified or not defined?
 
-<p>See <a href=\"/ddbj/organism-e.html\">Organism qualifier</a>. <br>For detail, see either of following cases; <br><a href=\"/ddbj/organism-e.html#unidentified\">2. In case of unidentified species names, proposing a new species etc.</a><br><a href=\"/ddbj/organism-e.html#env\">3. environmental sample</a><br></p>
+<p>See <a href="/ddbj/organism-e.html">Organism qualifier</a>. <br>For detail, see either of following cases; <br><a href="/ddbj/organism-e.html#unidentified">2. In case of unidentified species names, proposing a new species etc.</a><br><a href="/ddbj/organism-e.html#env">3. environmental sample</a><br></p>
