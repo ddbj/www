@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: "To use [translation] qualifier, [exception] qualifier is required in the [CDS] feature." というエラーが表示されました
+title: '"To use [translation] qualifier, [exception] qualifier is required in the [CDS] feature." というエラーが表示されました'
 category: faq
 db:
   - ddbj

@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: How to fix error message： "First codon [***] is not a start codon." / "Final codon [***] is not a stop codon."?
+title: 'How to fix error message: "First codon [***] is not a start codon." / "Final codon [***] is not a stop codon."?'
 category: faq
 db:
   - ddbj
@@ -10,7 +10,7 @@ date: 2014-07-04T15:30:54
 lang: en
 ---
 
-## How to fix error message： "First codon [\*\*\*] is not a start codon." / "Final codon [***] is not a stop codon."?
+## How to fix error message: "First codon [\*\*\*] is not a start codon." / "Final codon [***] is not a stop codon."?
 
 <p>These errors mean amino acid translation for <a href="/ddbj/cds-e.html">CDS (protein coding sequence) feature</a> is not appropriate in the 5' or 3' end, respectively. <br>When the CDS feature is not complete (i.e. partial) at 5' and/or 3' ends, its location is required to include flag for 'not complete'. <br>According to rules on <a href="/ddbj/location-e.html">Description of Location</a>, partial sequences should be appropriately specified with flags for 5' end not complete, "<strong>&lt;</strong>", and/or for 3' end not complete, "<strong>&gt;</strong>" on its feature location. </p>
 <table class="t04">

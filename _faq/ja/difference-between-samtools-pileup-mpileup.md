@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: [Set optional parameters 画面] SAMtools pileup とSAMtools mpileup の違いがわからない
+title: '[Set optional parameters 画面] SAMtools pileup とSAMtools mpileup の違いがわからない'
 category: faq
 db:
   - pipeline

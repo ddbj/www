@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: [Job Status 画面] 表左上のDeleteボタンが機能しません。また、表示されるファイル名を変更したいです。
+title: '[Job Status 画面] 表左上のDeleteボタンが機能しません。また、表示されるファイル名を変更したいです。'
 category: faq
 db:
   - pipeline

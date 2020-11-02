@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: [Detail view 画面] samtools sort out.bam out2 このコマンドで、BAMのソーティングをして out2.srt.bamという出力形式になるのでしょうか？
+title: '[Detail view 画面] samtools sort out.bam out2 このコマンドで、BAMのソーティングをして out2.srt.bamという出力形式になるのでしょうか？'
 category: faq
 db:
   - pipeline

@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: [Import public DRA タブ] DRAに登録したデータが、インポートできません。
+title: '[Import public DRA タブ] DRAに登録したデータが、インポートできません。'
 category: faq
 db:
   - pipeline

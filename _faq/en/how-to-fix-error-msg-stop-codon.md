@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: How to fix error message： "Stop codon ‘*’ is found in the range."?
+title: 'How to fix error message: "Stop codon ‘*’ is found in the range."?'
 category: faq
 db:
   - ddbj
@@ -10,7 +10,7 @@ date: 2014-07-07T17:41:01
 lang: en
 ---
 
-## How to fix error message： "Stop codon ‘*’ is found in the range."?
+## How to fix error message: "Stop codon ‘*’ is found in the range."?
 
 <p>In general, see <a href="/ddbj/cds-e.html#stop">How to describe CDS feature, when termination codon is found in the range</a>. <br>You can also see <a href="/ddbj/cds-e.html">Protein Coding Sequence; CDS feature</a> to describe CDS feature. <br>Following items are case study for the error. </p>
 <p><strong>1.</strong> Did you correctly specify /<a href="/ddbj/qualifiers-e.html#codon_start">codon_start</a> qualifier to indicate reading frame of the CDS feature?<br> Select 1, 2 or 3, appropriately. </p>

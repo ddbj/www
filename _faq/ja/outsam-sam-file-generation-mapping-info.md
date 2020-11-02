@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: [Detail view 画面] out.sam がマッピング情報のSAMファイル生成なのか？
+title: '[Detail view 画面] out.sam がマッピング情報のSAMファイル生成なのか？'
 category: faq
 db:
   - pipeline

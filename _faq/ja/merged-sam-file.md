@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: [Detail view 画面] samtools view -hX out.bam>out.samXとmerged SAMがどのようなファイルなのかわかりません
+title: '[Detail view 画面] samtools view -hX out.bam>out.samXとmerged SAMがどのようなファイルなのかわかりません'
 category: faq
 db:
   - pipeline

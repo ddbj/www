@@ -1,15 +1,24 @@
 ---
-layout: 年表
+layout: indexed_content
 title: DDBJ staff papers（1996-2008）
 pathname: past-papers-e
 category: _activities
 lang: en
+related_pages:
+  - title: DDBJ staff papers (2009-)
+    url: /activities/index-e.html
+  - title: DDBJ staff presentations (2009-)
+    url: /activities/index-e.html
+  - title: DDBJ Publications Archive
+    url: /activities/pub-archives-e.html
+  - title: The Reports for International Collaborators Meetings
+    url: /activities/index-e.html
+  - title: DDBJ Annual Reports
+    url: /activities/index-e.html
 ---
 
 Bold are CIB-DDBJ members. Some of the publications in Japanese are
 excluded.
-
-<div id="pub-list" class="switch">
 
 ## 2008 <a name="2008"></a>
 
@@ -1868,7 +1877,3 @@ excluded.
     sequences. In The Proceedings of the Seventh Workshop on Genome
     Informatics, Akutsu T., Asai K., Hagiya M., Kuhara S., Miyano S. and
     Nakai K., (eds.), Universal Academy Press(Tokyo). 204-205.
-
-## All <a name="all"></a>
-
-</div>

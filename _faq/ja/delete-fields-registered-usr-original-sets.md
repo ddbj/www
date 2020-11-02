@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: [Specifying Database of Reference Genome 画面] User original setsに登録した項目は削除できない？
+title: '[Specifying Database of Reference Genome 画面] User original setsに登録した項目は削除できない？'
 category: faq
 db:
   - pipeline

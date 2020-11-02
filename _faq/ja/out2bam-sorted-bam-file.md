@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: [Detail view 画面] out2.bamはソートされたBAMファイルなのか？
+title: '[Detail view 画面] out2.bamはソートされたBAMファイルなのか？'
 category: faq
 db:
   - pipeline

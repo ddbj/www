@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: "MGA:No entry name is found other than [ COMMON ], without feature [ DATATYPE/type=MGA ]." というエラーが表示されました
+title: '"MGA:No entry name is found other than [ COMMON ], without feature [ DATATYPE/type=MGA ]." というエラーが表示されました'
 category: faq
 db:
   - ddbj

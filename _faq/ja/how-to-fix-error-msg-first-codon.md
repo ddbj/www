@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: "First codon [***] is not a start codon." / "Final codon [***] is not a stop codon." というエラーが表示されました
+title:  '"First codon [***] is not a start codon." / "Final codon [***] is not a stop codon." というエラーが表示されました'
 category: faq
 db:
   - ddbj

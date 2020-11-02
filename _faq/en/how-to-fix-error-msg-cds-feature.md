@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: How to fix error message： "To use [translation] qualifier, [exception] qualifier is required in the [CDS] feature." ?
+title: 'How to fix error message: "To use [translation] qualifier, [exception] qualifier is required in the [CDS] feature." ?'
 category: faq
 db:
   - ddbj
@@ -10,7 +10,7 @@ date: 2014-07-04T17:21:10
 lang: en
 ---
 
-## How to fix error message： "To use [translation] qualifier, [exception] qualifier is required in the [CDS] feature." ?
+## How to fix error message: "To use [translation] qualifier, [exception] qualifier is required in the [CDS] feature." ?
 
 <p>This error message is outputted, because you select /<a href="/ddbj/qualifiers-e.html#translation">translation</a> for <a href="/ddbj/cds-e.html#translation">CDS feature</a> by dialog of [Select Qualifier] button. <br>Generally, since /translation qualifier is automatically created according to items under CDS feature, do not enter any amino acid sequence. <br>So, you can fix the error by removing /translation qualifier. </p>
 <p>For your information, /translation qualifier is required only in case describing with /<a href="/ddbj/qualifiers-e.html#exception">exception</a> qualifier. <br>Typically, /exception qualifier indicates "RNA editing" is occurred on mRNA. In that case, conceptual amino acid translation of genome sequence is different from protein product of real mRNA molecules. </p>

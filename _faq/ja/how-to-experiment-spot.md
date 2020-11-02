@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: [Set optional parameters 画面] 空白欄に何を入れていいのかわかりません
+title: '[Set optional parameters 画面] 空白欄に何を入れていいのかわかりません'
 category: faq
 db:
   - pipeline

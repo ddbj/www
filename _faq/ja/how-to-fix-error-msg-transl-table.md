@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: "Invalid value [***] for [transl_table] qualifier." というエラーが表示されました
+title: '"Invalid value [***] for [transl_table] qualifier." というエラーが表示されました'
 category: faq
 db:
   - ddbj

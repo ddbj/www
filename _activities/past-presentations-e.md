@@ -1,9 +1,20 @@
 ---
-layout: 年表
+layout: indexed_content
 title: DDBJ staff presentations (2001-2008)
 pathname: past-presentations-e
 category: _activities
 lang: en
+related_pages:
+  - title: DDBJ staff papers (2009-)
+    url: /activities/index-e.html
+  - title: DDBJ staff presentations (2009-)
+    url: /activities/index-e.html
+  - title: DDBJ Publications Archive
+    url: /activities/pub-archives-e.html
+  - title: DDBJ Annual Reports
+    url: /activities/index-e.html
+  - title: The Reports for International Collaborators Meetings
+    url: /activities/index-e.html
 ---
 
 ## 2008 <a name="2008"></a>

@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: [Set optional parameters 画面] BWAのuniq optionの質問です。Please choose uniq mode.の４択の違いは？
+title: '[Set optional parameters 画面] BWAのuniq optionの質問です。Please choose uniq mode.の４択の違いは？'
 category: faq
 db:
   - pipeline

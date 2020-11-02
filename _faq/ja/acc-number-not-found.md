@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: [Import public DRA タブ] DRA Searchでは見れるアクセッション番号を入力しても、見つかりませんと言われます。
+title: '[Import public DRA タブ] DRA Searchでは見れるアクセッション番号を入力しても、見つかりませんと言われます。'
 category: faq
 db:
   - pipeline

@@ -6,21 +6,21 @@ category: _activities
 lang: en
 related_pages:
   - title: DDBJ Publications Archive
-    url: /archives/pub-archives-e.html
+    url: /activities/pub-archives-e.html
   - title: DDBJ staff papers (2009-)
-    url: /activities/papers-e.html
+    url: /activities/index-e.html
   - title: DDBJ staff presentations (2009-)
-    url: /activities/presentations-e.html
+    url: /activities/index-e.html
   - title: DDBJ staff presentations (2001-2008)
     url: /activities/past-presentations-e.html
   - title: The Reports for International Collaborators Meetings
-    url: /activities/icm-reports-e.html
+    url: /activities/index-e.html
   - title: DDBJ staff papers（1996-2008）
     url: /activities/past-papers-e.html
   - title: DDBJ Annual Reports
-    url: /activities/annualreport-e.html
+    url: /activities/index-e.html
   - title: DDBJ Mail Magazine
-    url: /subscribe-e.html
+    url: /activities/subscribe-e.html
 ---
 
 Quote from Mail Magazine : No.62&63 (Sep.02,2011) ～ No.71&72

@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: [Set optional parameters 画面] BWAの時、Step3)でUniqを選択すると？
+title: '[Set optional parameters 画面] BWAの時、Step3)でUniqを選択すると？'
 category: faq
 db:
   - pipeline

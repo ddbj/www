@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: "Stop codon ‘*’ is found in the range." というエラーが表示されました
+title: '"Stop codon ‘*’ is found in the range." というエラーが表示されました'
 category: faq
 db:
   - ddbj
