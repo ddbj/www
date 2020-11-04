@@ -19,48 +19,13 @@ resources.
 
 ## DDBJ Data Analysis Challenge 2016 <a name="2016"></a>
 
-<div class="news_post_container glossary">
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Date</th>
-<th>Content</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Jun 27, 2016</td>
-<td><span class="bold">Start Accepting Applications:</span><br />
-NIG Supercomputer System application<br />
-NIG Supercomputer System OSS Installation request</td>
-</tr>
-<tr class="even">
-<td>Jul 6, 2016</td>
-<td><span class="bold">Start Date</span></td>
-</tr>
-<tr class="odd">
-<td>Aug 21, 2016</td>
-<td><span class="bold">Deadline for Applications:</span><br />
-NIG Supercomputer System application<br />
-NIG Supercomputer System OSS Installation request</td>
-</tr>
-<tr class="even">
-<td>Aug 31, 2016</td>
-<td><span class="bold">End Date</span></td>
-</tr>
-<tr class="odd">
-<td>Sep 30, 2016</td>
-<td><span class="bold">Result</span></td>
-</tr>
-</tbody>
-</table>
-
-</div>
+|  Date  |  Content  |
+| ---- | ---- |
+|  Jun 27, 2016	  |  Start Accepting Applications:<br/>NIG Supercomputer System application<br/>NIG Supercomputer System OSS Installation request  |
+|  Jul 6, 2016	  |  Start Date  |
+|  Aug 21, 2016	  |  Deadline for Applications:<br/>NIG Supercomputer System application<br/>NIG Supercomputer System OSS Installation request  |
+|  Aug 31, 2016  |  End Date  |
+|  Sep 30, 2016  |  Result  |
 
 ### Challenge Task <a name="task-2016"></a>
 
@@ -111,109 +76,21 @@ University website.
 
 ### Award <a name="winners-2016"></a>
 
-<div class="main_table format">
-
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td>1st Prize of DDBJ Challenge Awards 2016</td>
-<td>Information and Mathematical Science and Bioinformatics Co., Ltd.<br />
-MOCHIZUKI Masahiro</td>
-</tr>
-<tr class="even">
-<td>2nd Prize of DDBJ Challenge Awards 2016</td>
-<td>RIKEN ACCC Bioinformatics Research Unit<br />
-MATSUMOTO Hirotaka(representative*), OZAKI Haruka(*)<br />
-*They participated in this Challenge as a team.</td>
-</tr>
-<tr class="odd">
-<td>3rd Prize of DDBJ Challenge Awards 2016</td>
-<td>BITS Co., Ltd.<br />
-OKAYAMA Toshitsugu</td>
-</tr>
-<tr class="even">
-<td>Student Prize of DDBJ Challenge Awards 2016</td>
-<td>Master's Degree Program 1, Graduate School of Information Science and Technology, The University of Tokyo<br />
-KATO Takuya</td>
-</tr>
-</tbody>
-</table>
-
-</div>
+|  1st Prize of DDBJ Challenge Awards 2016  |  Information and Mathematical Science and Bioinformatics Co., Ltd.<br/>MOCHIZUKI Masahiro  |
+|  2nd Prize of DDBJ Challenge Awards 2016  |  RIKEN ACCC Bioinformatics Research Unit<br/>MATSUMOTO Hirotaka(representative*), OZAKI Haruka(*)<br/>*They participated in this Challenge as a team.  |
+|  3rd Prize of DDBJ Challenge Awards 2016  |  BITS Co., Ltd.<br/>OKAYAMA Toshitsugu  |
+|  Student Prize of DDBJ Challenge Awards 2016  |  Master's Degree Program 1, Graduate School of Information Science and Technology, The University of Tokyo<br/>KATO Takuya  |
 
 #### Result <a name="result-2016"></a>
 
-<div class="main_table format">
-
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>DDBJ<br />
-Challenge<br />
-Award</th>
-<th>AUC</th>
-<th>Model Design</th>
-<th>Tool Version</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1st Prize</td>
-<td>0.94564</td>
-<td>*2 Classifiers(Extremely Randomized Trees, CNN)<br />
-*Ensemble Learning(Stacking)<br />
-*External Data(Genomic Position, Gene Structure Annotation)</td>
-<td>python=3.5<br />
-scikit-learn=0.17.1<br />
-chainer=1.10.0</td>
-</tr>
-<tr class="even">
-<td>2nd Prize</td>
-<td>0.89859</td>
-<td>*2 Classifiers(CNN, Product of Genomic Distance Decay Parameter and Nearest Training Data Output)<br />
-*Ensemble Learning(Averaged)<br />
-*External Data(Genomic Position)</td>
-<td>julia=0.4.6<br />
-python=2.7.10<br />
-skflow(tensorflow=0.8.0)</td>
-</tr>
-<tr class="odd">
-<td>3rd Prize</td>
-<td>0.85428</td>
-<td>*7 Classifiers(<span class="st">Naive Bayes for Multivariate Bernoulli Models</span>, Logistic Regression, Random Forest, Gradient Boosting, <span class="st">Extremely Randomized Trees</span>, eXtreme Gradient Boosting, CNN)<br />
-*Ensemble Learning (Stacking)</td>
-<td>python=2.7.11<br />
-numpy=1.10.4<br />
-scikit-learn=0.17<br />
-chainer=1.11.0<br />
-xgboost=0.4a30</td>
-</tr>
-<tr class="even">
-<td>Student Prize</td>
-<td>0.84318</td>
-<td>*3 Classifiers(LeNet like CNN, DeepBind like CNN, Variable filter DeepBind like CNN)<br />
-*Ensemble Learning(Soft Voting)</td>
-<td>python=2.7<br />
-lasagne=0.2.dev1</td>
-</tr>
-</tbody>
-</table>
-
-</div>
+|  DDBJ<br>Challenge<br>Award  |  AUC  |  Model Design  |  Tool Version  |
+| ---- | ---- | ---- | ---- |
+|  1st Prize  |  0.94564  |  *2 Classifiers(Extremely Randomized Trees, CNN)<br/>*Ensemble Learning(Stacking)<br/>*External Data(Genomic Position, Gene Structure Annotation)  |  python=3.5<br/>scikit-learn=0.17.1<br/>chainer=1.10.0  |
+|  2nd Prize  |  0.89859  |  *2 Classifiers(CNN, Product of Genomic Distance Decay Parameter and Nearest Training Data Output<br>*Ensemble Learning(Averaged)<br/>*External Data(Genomic Position)  |  julia=0.4.6<br/>python=2.7.10<br/>skflow(tensorflow=0.8.0)  |
+|  3rd Prize  |  0.85428  |  *7 Classifiers(<span class="st">Naive Bayes for Multivariate Bernoulli Models</span>, Logistic Regression, Random Forest, Gradient Boosting, <span class="st">Extremely Randomized Trees</span>, eXtreme Gradient Boosting, CNN<br>*Ensemble Learning (Stacking)  |  python=2.7.11<br/>numpy=1.10.4<br/>scikit-learn=0.17<br/>chainer=1.11.0<br/>xgboost=0.4a30 |
+|  Student Prize  |  0.84318  |  *3 Classifiers(LeNet like CNN, DeepBind like CNN, Variable filter DeepBind like CNN)<br/>*Ensemble Learning(Soft Voting)  |  python=2.7<br/>lasagne=0.2.dev1  |
 
 #### Citation <a name="citation"></a>
-
-<div id="pub-list">
 
   - <span class="title">[DDBJ Data Analysis Challenge: a machine
     learning competition to predict Arabidopsis chromatin feature
@@ -226,8 +103,6 @@ lasagne=0.2.dev1</td>
     <span class="pubmed-id">Pubmed:
     [32213716](https://www.ncbi.nlm.nih.gov/pubmed/32213716)</span>
     </span>
-
-</div>
 
 ## DDBJ Challenge Committee <a name="committee"></a>
 
