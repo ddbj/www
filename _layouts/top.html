@@ -15,52 +15,39 @@ layout: default
         <p class="description">{{ page.description }}</p>
       </header>
 
-      <ul id="TopServiceGroups">
-        <li class="group">
-          <a href="services/">
+      {% if page.tab_menu %}
+      <nav class="tab-menu-view">
+        <ul>
+          {% for item in page.tab_menu %}
+          <li class="{% if item.children %} -haschild{% endif %}{% if page.current_tab == item.id %} -current{% endif %}">
+            <a href="{{ item.url }}">{{ item.title }}</a>
+            {% if item.children %}
+            <ul>
+              {% for childitem in item.children %}
+              <li>
+                <a href="{{ childitem.url }}">{{ childitem.title }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      {% endif %}
+
+      <ul class="panel-view-container">
+        {% for panel in page.panels %}
+        <li class="panel">
+          <a href="{{panel.url}}">
             <h2 class="title">
-              <img src="assets/images/icon-search_analysis.png"/>
-              サービス
+              <img src="{{panel.icon}}"/>
+              <span>{{panel.title}}</span>
             </h2>
-            <p class="description">[[サービス用の文言]]</p>
+            <p class="description">{{panel.description}}</p>
           </a>
         </li>
-        <li class="group">
-          <a href="https://sc.ddbj.nig.ac.jp/ja">
-            <h2 class="title">
-              <img src="assets/images/icon-super_computer.png"/>
-              スパコン
-            </h2>
-            <p class="description">遺伝研スーパーコンピューターシステムをご利用いただけます。</p>
-          </a>
-        </li>
-        <li class="group">
-          <a href="statistics/">
-            <h2 class="title">
-              <img src="assets/images/icon-statistics.png"/>
-              統計
-            </h2>
-            <p class="description">DDBJの保有する各種データの統計情報です。</p>
-          </a>
-        </li>
-        <li class="group">
-          <a href="activities/">
-            <h2 class="title">
-              <img src="assets/images/icon-activities.png"/>
-              活動・講習会
-            </h2>
-            <p class="description">DDBJスタッフによる論文・著書・コラムや、DDBJの主催するシンポジウムなどをご紹介します。</p>
-          </a>
-        </li>
-        <li class="group">
-          <a href="aboutus/">
-            <h2 class="title">
-              <img src="assets/images/icon-about.png"/>
-              センターについて
-            </h2>
-            <p class="description">生命情報・DDBJセンターについてご紹介します。</p>
-          </a>
-        </li>
+        {% endfor %}
       </ul>
   
     </section>

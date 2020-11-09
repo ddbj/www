@@ -1,0 +1,60 @@
+$PANEL_GAP_SIZE: 2rem
+
+.panel-view-container
+  display: flex
+  flex-wrap: wrap
+  list-style: none
+  align-items: stretch
+  > .panel
+    box-shadow: $SHADOW_DEPTH2
+    padding: 3.6rem 1.8rem
+    color: inherit
+    background-color: white
+    border: solid 1px $COLOR_BEIGE
+    transition: background-color $DURATION_GUI
+    margin-right: $PANEL_GAP_SIZE
+    margin-bottom: $PANEL_GAP_SIZE
+    &:hover
+      background-color: $COLOR_HOVER
+    > a
+      display: block
+      text-decoration: none
+      > .title
+        display: flex
+        align-items: center
+        justify-content: center
+        > img
+          height: 5.9rem
+          vertical-align: middle
+          margin-left: -.8rem
+        > span
+          font-size: 1.6rem
+          line-height: 1
+          font-weight: normal
+      > .description
+        margin-top: 1rem
+        font-size: 1.2rem
+        line-height: 1.6rem
+
+@media screen and (min-width: $WIDTH_SP) and (max-width: 1024px)
+  .panel-view-container
+    > .panel
+      flex-basis: calc((100% - #{$PANEL_GAP_SIZE} * 2) / 2)
+
+@media screen and (min-width: 1025px)
+  .panel-view-container
+    > .panel
+      flex-basis: calc((100% - #{$PANEL_GAP_SIZE} * 3) / 3)
+
+
+@media screen and (max-width: $WIDTH_SP)
+  .panel-view-container
+    > .panel
+      width: 50%
+      margin: 0
+      flex-basis: auto
+      &.-double
+        width: 100%
+      > a
+        width: auto
+        height: 100%

@@ -1,0 +1,66 @@
+.tab-menu-view
+  border-bottom: solid .1rem $COLOR_LIGHT_GRAY
+  > ul
+    > li
+      display: inline-block
+      > a
+        font-size: 1.6rem
+        line-height: 3rem
+        text-decoration: none
+        display: block
+        padding: 0 1rem
+        background-color: #DDDAD7
+        border-top: solid .1rem $COLOR_LIGHT_GRAY
+        border-left: solid .1rem $COLOR_LIGHT_GRAY
+        border-right: solid .1rem $COLOR_LIGHT_GRAY
+        position: relative
+        top: .1rem
+        transsition: background $DURATION_GUI, color $DURATION_GUI
+      &.-current
+        > a
+          background-color: white
+      &.-haschild
+        > a
+          &::after
+            content: ""
+            display: inline-block
+            border-right: .4rem solid transparent
+            border-top: .5rem solid $COLOR_BLACK
+            border-left: .4rem solid transparent 
+            margin: 0 0 .2rem .5rem
+            transsition: border $DURATION_GUI
+        &:hover
+          > a
+            &::after
+              border-top-color: white
+      > ul
+        position: absolute
+        background-color: white
+        box-shadow: 0 .2rem .3rem rgba(black, .3)
+        transition: transform $DURATION_GUI, opacity $DURATION_GUI
+        opacity: 0
+        pointer-events: none
+        transform: translateY(-1rem)
+        > li
+          > a
+            display: block
+            font-size: 1.4rem
+            line-height: 2.9rem
+            text-decoration: none
+            padding: 0 1rem
+            color: $COLOR_BLACK
+            transition: background-color $DURATION_GUI
+          &:hover
+            > a
+              background-color: $COLOR_HOVER
+          + li
+            border-top: solid .1rem $COLOR_LIGHT_GRAY
+      &:hover
+        > a
+          background-color: $COLOR_KEY
+          color: white
+        > ul
+          opacity: 1
+          pointer-events: auto
+          transform: translateY(0)
+

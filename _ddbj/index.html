@@ -3,10 +3,13 @@ layout: top
 title: DDBJ Annotated/Assembled Sequences
 description: DDBJ（DNA Data Bank of Japan）は国際塩基配列データベースを共同構築する INSDC（International Nucleotide Sequence Database Collaboration）の一員として、アノテーションが付与された/アセンブルされた塩基配列データを共有しています。
 category: ddbj
-menu:
-  - title: Home
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
     url: /ddbj/index.html
-  - title: Submission
+  - id: submission
+    title: Submission
     url: /ddbj/submission.html
     children:
       - title: 塩基配列の登録
@@ -17,14 +20,16 @@ menu:
         url: /ddbj/mss.html
       - title: 登録データの修正・更新
         url: /ddbj/updt.html
-  - title: Search
+  - id: search
+    title: Search
     url: http://ddbj.nig.ac.jp/arsa/?lang=ja
     children:
       - title: getentry
         url: http://getentry.ddbj.nig.ac.jp/top-j.html
       - title: ARSA
         url: http://ddbj.nig.ac.jp/arsa/?lang=ja
-  - title: Flat file
+  - id: flat_file
+    title: Flat file
     url: /ddbj/flat-file.html
     children:
       - title: Feature key の定義
@@ -43,7 +48,8 @@ menu:
         url: /ddbj/code.html
       - title: 登録の見本
         url: /ddbj/example.html
-  - title: Data categories
+  - id: data_categories
+    title: Data categories
     url: /ddbj/data-categories.html
     children:
       - title: Genome project のデータ登録
@@ -80,88 +86,31 @@ menu:
         url: /ddbj/htc.html
       - title: Third Party Data (TPA)
         url: /ddbj/tpa.html
-  - title: FAQ
+  - id: faq
+    title: FAQ
     url: /ddbj/faq.html
-  - title: Other
+  - id: other
+    title: Other
     children:
       - title: Patent
         url: /ddbj/pat-data.html
       - title: MGA
         url: /ddbj/mga.html
+panels:
+- title: キーワード検索
+  url: services/
+  icon: ../assets/images/icon-search_analysis.png
+- title: 塩基配列の登録
+  url: services/
+  icon: ../assets/images/icon-search_analysis.png
+- title: 塩基配列登録システム
+  url: services/
+  icon: ../assets/images/icon-search_analysis.png
+- title: Mass Submission System
+  url: services/
+  icon: ../assets/images/icon-search_analysis.png
+- title: 登録データの修正・更新
+  url: services/
+  icon: ../assets/images/icon-search_analysis.png
+
 ---
-<div id='TopBody'>
-  <main class='inner'>
-    <ul id='TopServiceGroups'>
-      <li class='group'>
-        <a href="services/">
-          <h2 class='title'>
-            <img src='assets/images/icon-search_analysis.png'/>
-            サービス
-          </h2>
-          <p class='description'>[[サービス用の文言]]</p>
-        </a>
-      </li>
-      <li class='group'>
-        <a href="https://sc.ddbj.nig.ac.jp/ja">
-          <h2 class='title'>
-            <img src='assets/images/icon-super_computer.png'/>
-            スパコン
-          </h2>
-          <p class='description'>遺伝研スーパーコンピューターシステムをご利用いただけます。</p>
-        </a>
-      </li>
-      <li class='group'>
-        <a href="statistics/">
-          <h2 class='title'>
-            <img src='assets/images/icon-statistics.png'/>
-            統計
-          </h2>
-          <p class='description'>DDBJの保有する各種データの統計情報です。</p>
-        </a>
-      </li>
-      <li class='group'>
-        <a href="activities/">
-          <h2 class='title'>
-            <img src='assets/images/icon-activities.png'/>
-            活動・講習会
-          </h2>
-          <p class='description'>DDBJスタッフによる論文・著書・コラムや、DDBJの主催するシンポジウムなどをご紹介します。</p>
-        </a>
-      </li>
-      <li class='group'>
-        <a href="aboutus/">
-          <h2 class='title'>
-            <img src='assets/images/icon-about.png'/>
-            センターについて
-          </h2>
-          <p class='description'>生命情報・DDBJセンターについてご紹介します。</p>
-        </a>
-      </li>
-    </ul>
-    <aside id='TopNews'>
-      <div class='container'>
-        <h2 class='title'>NEWS</h2>
-        <ul class='list'>
-        {% for post in site.categories.ja limit:5 %}
-          <li class="item">
-            {% if  post.priority%}
-            <article class="news priority">
-            {% else %}
-            <article class="news">
-            {% endif %}
-              <a href="{{ site.baseurl }}{{post.url}}">
-                <div class="metadata">
-                  <time>{{post.date | date: '%Y年%m月%d日'}}</time>
-                  <div class="tags">{% include post_meta.html %}</div>
-                </div>
-                <h3 class="title">{{post.title}}</h3>
-              </a>
-            </article>
-          </li>
-        {% endfor %}
-        </ul>
-        <a class="arrowed-link" href="/www/news.html">more</a>
-      </div>
-    </aside>
-  </main>
-</div>
