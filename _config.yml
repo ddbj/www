@@ -61,6 +61,8 @@ collections:
     output: true
   submission:
     output: true
+  ddbj:
+    output: true
   download:
     output: true
   statistics:
