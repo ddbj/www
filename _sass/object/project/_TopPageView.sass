@@ -1,0 +1,64 @@
+#TopPageView
+  background-color: white
+  > .inner
+    +inner
+    padding: 0 $PADDING_BASE $PADDING_BASE
+    display: flex
+    > .maincolumn
+      width: 82.4rem
+      flex-grow: 2
+      > header
+        padding-top: 3rem
+        &[data-category="top"]
+          display: flex
+          align-items: center
+        > .logotype
+          text-indent: -9999px
+          background: url(../images/logotype.svg) no-repeat 0 0
+          width: 18rem
+          height: 6.5rem
+          margin-right: 3rem
+        > .title
+          font-size: 3.2rem
+          font-weight: normal
+          line-height: 1
+          margin-bottom: .8rem
+        > .description
+          font-size: 1.4rem
+          line-height: 1.5
+          padding-right: 3rem
+      > .tab-menu-view
+        margin-top: 2rem
+      > .panel-view-container
+        padding-top: 3.6rem
+        padding-right: 1rem
+    > .pickup-news-view
+      width: 32rem
+
+@media screen and (max-width: $WIDTH_SP)
+  #TopPageView
+    > .inner
+      +inner-sp
+      padding: 2rem 0
+      flex-direction: column
+      > .maincolumn
+        order: 2
+        width: auto
+        > header
+          padding: 1rem
+          > .logotype
+            margin: 2rem auto 1.6rem
+            width: 36vw
+            height: 13vw
+            top: 0
+            left: 0
+          > .description
+            top: 0
+            left: 0
+            text-align: center
+        > *
+          margin: 0 auto
+          position: relative
+      > .pickup-news-view
+        order: 1
+        width: auto

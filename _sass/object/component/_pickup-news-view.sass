@@ -1,10 +1,10 @@
 $PADDING: 1.6rem
-#TopNews
+.pickup-news-view
+  padding-top: 3rem
   > .container
     background-color: white
     box-shadow: $SHADOW_DEPTH2
     position: relative
-    top: -3.8rem
     > .title
       padding: 0 $PADDING
       height: 3.8rem
@@ -50,10 +50,10 @@ $PADDING: 1.6rem
       display: block
       text-align: right
       &:hover
-        background-color: rgba($COLOR_KEY_LIGHT, .15)
+        background-color: $COLOR_HOVER
 
 @media screen and (max-width: $WIDTH_SP)
-  #TopNews
+  .pickup-news-view
     padding: 0 2rem
     > .container
       top: 0
