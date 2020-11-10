@@ -69,31 +69,25 @@ collections:
     output: true
   aboutus:
     output: true
-  tentative:
+  dra:
     output: true
-  datacategories:
+  dta:
     output: true
-  aboutdra:
+  gea:
     output: true
-  aboutdta:
+  bioproject:
     output: true
-  aboutgea:
-    output: true
-  aboutbioproject:
-    output: true
-  aboutbiosample:
+  biosample:
     output: true
   jvar-snp:
     output: true
   jvar-sv:
     output: true
-  aboutjga:
+  jga:
     output: true
-  aboutagd:
+  agd:
     output: true
-  aboutsc:
-    output: true
-  flatfile:
+  sc:
     output: true
   other:
     output: true
@@ -102,6 +96,8 @@ collections:
   news:
     output: true
   sc:
+    output: true
+  documents:
     output: true
 
 defaults:
