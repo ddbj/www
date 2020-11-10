@@ -12,4 +12,4 @@ lang: ja
 
 ## DDBJ の検索・解析ソフトの原著論文，関連論文を紹介して下さい
 
-DDBJ HP のサービスより、 <a href="/services/services/references.html">関連論文</a>をご覧下さい。
+DDBJ HP のサービスより、 <a href="/services/services/services/references.html">関連論文</a>をご覧下さい。

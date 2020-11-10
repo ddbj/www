@@ -5,11 +5,11 @@ category: documents
 lang: ja
 related_pages:
   - title: 登録データ種別
-    url: /documents/documents/data-categories.html
+    url: /documents/documents/documents/data-categories.html
   - title: 国際塩基配列データベースのアクセッション番号
     url: /documents/accessions.html
   - title: データ公開原則
-    url: /documents/documents/data-release-policy.html
+    url: /documents/documents/documents/data-release-policy.html
 ---
 
 ## For conventional sequence data (two or one letter) <a name="gen"></a>

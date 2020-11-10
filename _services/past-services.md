@@ -17,9 +17,9 @@ related_pages:
   - title: TXSearch ヘルプ
     url: /services/txsearch.html
   - title: 関連論文
-    url: /services/services/references.html
+    url: /services/services/services/references.html
   - title: WABI (Web API for Biology)
-    url: /services/services/wabi.html
+    url: /services/services/services/wabi.html
   - title: WABI BLAST ヘルプ
     url: /services/wabi-blast.html
   - title: WABI ClustalW ヘルプ

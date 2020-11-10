@@ -51,7 +51,7 @@ It is required to validate formats of sequence file by [UME](/ddbj/ume-e.html) o
   - In principle, please remove the base code 'n' locating 5' or 3' end of sequences. For especially EST submissions, please do not send the raw outputs of a sequencer. You should screen your sequences to remove unreliable output(s) often locating at 5'-end.
   - Remove the sequences derived from vector, linker or adaptor.If you would like to submit some artificially constructed sequence itself, such as an expression vector etc., you do not have to remove that.
   - Please be sure to input the end flag \[//\] at the end of each sequence.
-  - In case of [CON entry](/documents/data-categories-e.html#con), [AGP file](#agp) can be used as a substitute for sequence file.
+  - In case of [CON entry](/documents/documents/data-categories-e.html#con), [AGP file](#agp) can be used as a substitute for sequence file.
 
 ## Annotation File<a name="annotation"></a> 
 
@@ -330,7 +330,7 @@ Example: DATE/hold\_date in annotation file
   - Delimiters (i.e. -- (hyphen), / (slash) etc.) is not allowed to use for Value of hold\_date.
   - Do not enter any DATE, if your data should be open to public immediately.
   - DATE should be included for [COMMON](#common) entry. If the date is not common to all entries, please prepare the file for each.
-  - If you set a hold\_date, your data will be released according to [Principle of "Hold-Until-Published" data release](/documents/data-release-policy-e.html).
+  - If you set a hold\_date, your data will be released according to [Principle of "Hold-Until-Published" data release](/documents/documents/data-release-policy-e.html).
 
 ### COMMENT/ST\_COMMENT<a name="comment"></a> 
 
@@ -434,7 +434,7 @@ Example: source and CDS features in annotation file(<span class="red">Requierd</
 
 ### DIVISION<a name="division"></a>
 
-DIVISION feature in annotation file indicates that entries are corresponding only to one of [CON](/documents/data-categories-e.html#con) / [ENV](/ddbj/documents/documents/data-categories.html#env) / [EST](/documents/data-categories-e.html#est) / [GSS](/documents/data-categories-e.html#est) / [HTC](/documents/data-categories-e.html#est) / [HTG](/documents/data-categories-e.html#est) / [STS](/documents/data-categories-e.html#est) / [SYN](/documents/data-categories-e.html#env) / [TSA](/documents/data-categories-e.html#tsa).
+DIVISION feature in annotation file indicates that entries are corresponding only to one of [CON](/documents/documents/data-categories-e.html#con) / [ENV](/ddbj/documents/documents/documents/data-categories.html#env) / [EST](/documents/documents/data-categories-e.html#est) / [GSS](/documents/documents/data-categories-e.html#est) / [HTC](/documents/documents/data-categories-e.html#est) / [HTG](/documents/documents/data-categories-e.html#est) / [STS](/documents/documents/data-categories-e.html#est) / [SYN](/documents/documents/data-categories-e.html#env) / [TSA](/documents/documents/data-categories-e.html#tsa).
 
 Example: DIVISION in annotation file
 
@@ -512,7 +512,7 @@ Specified values for KEYWORD/keyword(<span class="red">Requierd</span>)
     <tr>
       <td><a href="/ddbj/htg.html">HTG</a></td>
       <td><span class="red">HTG</span>, <a href="#htg">some other terms</a></td>
-      <td>Depending on the <a href="/ddbj/documents/documents/data-categories.html#est">phase</a>. Please contact us before your submission.</td>
+      <td>Depending on the <a href="/ddbj/documents/documents/documents/data-categories.html#est">phase</a>. Please contact us before your submission.</td>
     </tr>
     <tr>
       <td><a href="/ddbj/gss.html">GSS</a></td>

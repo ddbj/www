@@ -21,6 +21,6 @@ lang: en
 </dl>
 <p>In case of 3) or 4), we will check and support it. <br>Please contact us from <a href="/contact-e.html#to-ddbj">contact form</a> by selecting the item, "Updating Submitted Data" with accession numbers.</p>
 <dl><dt>References</dt>
-  <dd><a href="/documents/data-release-policy-e.html">Principle of "Hold-Until-Published" data release</a></dd>
+  <dd><a href="/documents/documents/data-release-policy-e.html">Principle of "Hold-Until-Published" data release</a></dd>
   <dd><a href="/faq/en/cannot-find-accession-number-cited-paper-e.html">Can not find the sequence data, though the accession number cited on a paper.</a></dd>
 </dl>

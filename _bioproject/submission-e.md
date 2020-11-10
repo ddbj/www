@@ -111,11 +111,11 @@ Project presentation examples:
 [Neanderthal Metagenome](https://www.ncbi.nlm.nih.gov/bioproject/18309)  
 [Escherichia coli O104:H4](https://www.ncbi.nlm.nih.gov/bioproject/68275)
 
-You can submit an umbrella project from [DDBJ submission system](https://ddbj.nig.ac.jp/D-way/)in the same way as primary project. <span class="red">To remind the DDBJ BioProject team, you need to enter "this is an umbrella project" in the [Private comments to DDBJ staff](/bioproject/submission-e.html#Private_comments). </span>Registered umbrella project cannot be kept private, but some fields can be omitted.
+You can submit an umbrella project from [DDBJ submission system](https://ddbj.nig.ac.jp/D-way/)in the same way as primary project. <span class="red">To remind the DDBJ BioProject team, you need to enter "this is an umbrella project" in the [Private comments to DDBJ staff](/bioproject/services/index.html#Private_comments). </span>Registered umbrella project cannot be kept private, but some fields can be omitted.
 
 To group primary projects under an umbrella, please follow the steps below.  
 First, submit and release an umbrella project. If necessary, please share the assigned PRJDB number with relevant researchers.  
-When submitting related primary projects, please provide the PRJDB number of parent umbrella in the [Umbrella BioProject](/bioproject/submission-e.html#Area_linked-project). Released primary projects are automatically linked to the specified umbrella project.
+When submitting related primary projects, please provide the PRJDB number of parent umbrella in the [Umbrella BioProject](/bioproject/services/index.html#Area_linked-project). Released primary projects are automatically linked to the specified umbrella project.
 
 If you want to add already registered primary projects to the umbrella, please [e-mail](/contact-e.html)the PRJDB numbers of umbrella and related primary projects to the DDBJ BioProject team.
 
@@ -899,7 +899,7 @@ Public projects are exchanged among
 
 ### Update <a name="update"></a>
 
-Registered projects can be updated. Please [contact the BioProject staff](/contact.html)to update the projects.
+Registered projects can be updated. Please [contact the BioProject staff](/contact-ddbj.html)to update the projects.
 
 ### Link experimental data and project <a name="link-experimental-data-project"></a>
 

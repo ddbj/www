@@ -12,41 +12,41 @@ lang: ja
 <form id="sample_attr_form" method="get" action="">
   <div id="main_index" class="biosample_attr">
     <div id="sample_type">
-      <a href="/biosample/submission.html#Area_core-package" class="title">Sample type (Core Package)</a>
+      <a href="/biosample/services/index.html#Area_core-package" class="title">Sample type (Core Package)</a>
       <ul>
         <li>
-        <div class="radio"><input type="radio" id="Core_MIxS" name="Core" value="MIxS"></div> <!-- .radio --><label class="clearfix" for="MIxS"><a href="/biosample/submission.html#MIxS_Sample">Genome, metagenome or marker sequences (MIxS compliant)</a></label>
+        <div class="radio"><input type="radio" id="Core_MIxS" name="Core" value="MIxS"></div> <!-- .radio --><label class="clearfix" for="MIxS"><a href="/biosample/services/index.html#MIxS_Sample">Genome, metagenome or marker sequences (MIxS compliant)</a></label>
           <ul>
             <li>
-              <div class="radio"><input type="radio" id="MIMS.me" name="SampleType" value="MIMS.me"></div> <!-- .radio --><label class="clearfix" for="MIMS.me">Environmental/Metagenome Genomic Sequences <a href="/biosample/submission.html#Meta_Genomic_Sequences_Sample">(MIMS)</a></label>
+              <div class="radio"><input type="radio" id="MIMS.me" name="SampleType" value="MIMS.me"></div> <!-- .radio --><label class="clearfix" for="MIMS.me">Environmental/Metagenome Genomic Sequences <a href="/biosample/services/index.html#Meta_Genomic_Sequences_Sample">(MIMS)</a></label>
             </li>
             <li>
-              <div class="radio"><input type="radio" id="MIGS.ba" name="SampleType" value="MIGS.ba"></div> <!-- .radio --><label class="clearfix" for="MIGS.ba">Cultured Bacterial/Archaeal Genomic Sequences <a href="/biosample/submission.html#Genomic_Sequences_Sample">(MIGS)</a></label>
+              <div class="radio"><input type="radio" id="MIGS.ba" name="SampleType" value="MIGS.ba"></div> <!-- .radio --><label class="clearfix" for="MIGS.ba">Cultured Bacterial/Archaeal Genomic Sequences <a href="/biosample/services/index.html#Genomic_Sequences_Sample">(MIGS)</a></label>
             </li>
             <li>
-              <div class="radio"><input type="radio" id="MIGS.eu" name="SampleType" value="MIGS.eu"></div> <!-- .radio --><label class="clearfix" for="MIGS.eu">Eukaryotic Genomic Sequences <a href="/biosample/submission.html#Genomic_Sequences_Sample">(MIGS)</a></label>
+              <div class="radio"><input type="radio" id="MIGS.eu" name="SampleType" value="MIGS.eu"></div> <!-- .radio --><label class="clearfix" for="MIGS.eu">Eukaryotic Genomic Sequences <a href="/biosample/services/index.html#Genomic_Sequences_Sample">(MIGS)</a></label>
             </li>
             <li>
-              <div class="radio"><input type="radio" id="MIGS.vi" name="SampleType" value="MIGS.vi"></div> <!-- .radio --><label class="clearfix" for="MIGS.vi">Viral Genomic Sequences <a href="/biosample/submission.html#Genomic_Sequences_Sample">(MIGS)</a></label>
+              <div class="radio"><input type="radio" id="MIGS.vi" name="SampleType" value="MIGS.vi"></div> <!-- .radio --><label class="clearfix" for="MIGS.vi">Viral Genomic Sequences <a href="/biosample/services/index.html#Genomic_Sequences_Sample">(MIGS)</a></label>
             </li>
             <li>
-              <div class="radio"><input type="radio" id="MIMARKS.specimen" name="SampleType" value="MIMARKS.specimen"></div> <!-- .radio --><label class="clearfix" for="MIMARKS.specimen">Specimen Marker Sequences <a href="/biosample/submission.html#Marker_Sequences_Sample">(MIMARKS)</a></label>
+              <div class="radio"><input type="radio" id="MIMARKS.specimen" name="SampleType" value="MIMARKS.specimen"></div> <!-- .radio --><label class="clearfix" for="MIMARKS.specimen">Specimen Marker Sequences <a href="/biosample/services/index.html#Marker_Sequences_Sample">(MIMARKS)</a></label>
             </li>
             <li>
-              <div class="radio"><input type="radio" id="MIMARKS.survey" name="SampleType" value="MIMARKS.survey"></div> <!-- .radio --><label class="clearfix" for="MIMARKS.survey">Survey related Marker Sequences <a href="/biosample/submission.html#Marker_Sequences_Sample">(MIMARKS)</a></label>
+              <div class="radio"><input type="radio" id="MIMARKS.survey" name="SampleType" value="MIMARKS.survey"></div> <!-- .radio --><label class="clearfix" for="MIMARKS.survey">Survey related Marker Sequences <a href="/biosample/services/index.html#Marker_Sequences_Sample">(MIMARKS)</a></label>
             </li>
           </ul>
         </li>
         <li>
-          <div class="radio"><input type="radio" id="Core_FunctionalGenomics" name="Core" value="FunctionalGenomics"></div> <!-- .radio --><label class="clearfix" for="FunctionalGenomics"><a href="/biosample/submission.html#functional_genomics_samples">Functional genomics samples (e.g. transcriptome, epigenetics etc)</a></label>
+          <div class="radio"><input type="radio" id="Core_FunctionalGenomics" name="Core" value="FunctionalGenomics"></div> <!-- .radio --><label class="clearfix" for="FunctionalGenomics"><a href="/biosample/services/index.html#functional_genomics_samples">Functional genomics samples (e.g. transcriptome, epigenetics etc)</a></label>
         </li>
         <li>
-          <div class="radio"><input type="radio" id="Core_Generic" name="Core" value="Generic"></div> <!-- .radio --><label class="clearfix" for="Generic"><a href="/biosample/submission.html#General_Sample">Other samples (e.g. transcriptome, epigenetics etc)</a></label>
+          <div class="radio"><input type="radio" id="Core_Generic" name="Core" value="Generic"></div> <!-- .radio --><label class="clearfix" for="Generic"><a href="/biosample/services/index.html#General_Sample">Other samples (e.g. transcriptome, epigenetics etc)</a></label>
         </li>
       </ul>
     </div> <!-- #sample_type -->
     <div id="env_package">
-      <a href="/biosample/submission.html#Environmental_package" class="title">Environmental package (MIxS Sample)</a>
+      <a href="/biosample/services/index.html#Environmental_package" class="title">Environmental package (MIxS Sample)</a>
       <ul>
         <li>
           <div class="radio"><input type="radio" id="No_package" name="Package" value="No_package"></div> <!-- .radio --><label class="clearfix" for="No_package">No package</label>

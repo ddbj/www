@@ -19,9 +19,9 @@ related_pages:
   - title: VecScreen Help
     url: /services/vecscreen-e.html
   - title: References
-    url: /services/references-e.html
+    url: /services/services/references-e.html
   - title: Services in past
-    url: /services/past-services-e.html
+    url: /services/services/past-services-e.html
 ---
 
 ## WABI (Web API for Biology)

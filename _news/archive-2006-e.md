@@ -1017,7 +1017,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn060517"><a href="#wn060517">The genome data are available from GIB by FTP</a></h2>
   <div class="news_date">May 17,2006</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a><br>    is the comprehensive data repository of complete genomes of the<br>    microorganisms and eukaryota. The FTP download site was opened to the<br>    public.  The genome sequence and annotation are download-able strain<br>    by strain from the top page of<br>    GIB (http://gib.genes.nig.ac.jp/)<br>    and also <a href="/services/past-services-e.html#gib">ftp://ftpgib.genes.nig.ac.jp/</a>.</dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker)</a><br>    is the comprehensive data repository of complete genomes of the<br>    microorganisms and eukaryota. The FTP download site was opened to the<br>    public.  The genome sequence and annotation are download-able strain<br>    by strain from the top page of<br>    GIB (http://gib.genes.nig.ac.jp/)<br>    and also <a href="/services/services/past-services-e.html#gib">ftp://ftpgib.genes.nig.ac.jp/</a>.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>

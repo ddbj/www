@@ -21,7 +21,7 @@ lang: ja
 
 <div class="box-layer">
 
-[](/bioproject/submission.html "ハンドブック")
+[](/bioproject/services/index.html "ハンドブック")
 
 <div class="top-navi-box">
 

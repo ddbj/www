@@ -8,7 +8,7 @@ related_pages:
     url: services/updt-form.html
 ---
 
-[登録データ種別](/documents/documents/data-categories.html)をご確認ください。
+[登録データ種別](/documents/documents/documents/data-categories.html)をご確認ください。
 
 ## DRA: DDBJ Sequece Read Archive, BioProject または BioSampleの場合 <a name="DRA__DDBJ_Sequece_Read_Archive,_BioProject_または_BioSampleの場合"></a>
 

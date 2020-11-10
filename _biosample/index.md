@@ -28,7 +28,7 @@ BioSample の主な目的:
 
 <div class="box-layer">
 
-[](/biosample/submission.html)
+[](/biosample/services/index.html)
 
 <div class="top-navi-box">
 

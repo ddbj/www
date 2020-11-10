@@ -63,7 +63,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn001019_2"><a href="#wn001019_2">Thermoplasma acidophilum was added to GIB</a></h2>
   <div class="news_date">October 19,2000</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Thermoplasma acidophilum</i> was<br>released, we incorporated it to GIB,and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Thermoplasma acidophilum</i> was<br>released, we incorporated it to GIB,and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -81,7 +81,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn001010"><a href="#wn001010">Bacillus halodurans C-125 and Halobacterium sp. NRC-1 were added to GIB</a></h2>
   <div class="news_date">October 10,2000</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB</a>(Genome Information Broker for Microbial Genomes) provides a comprehensive<br>view of the complete microbial genome sequences. Because the genome sequencedata of <i>Bacillus halodurans C-125</i> and<br><i>Halobacterium sp. NRC-1</i> were released, we incorporated them to GIB,and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB</a>(Genome Information Broker for Microbial Genomes) provides a comprehensive<br>view of the complete microbial genome sequences. Because the genome sequencedata of <i>Bacillus halodurans C-125</i> and<br><i>Halobacterium sp. NRC-1</i> were released, we incorporated them to GIB,and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -90,7 +90,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn000918"><a href="#wn000918">Buchnera sp. APS was added to GIB</a></h2>
   <div class="news_date">September 18,2000</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB</a> (Genome Information Broker for Microbial Genomes) provides a comprehensive<br>view of the complete microbial genome sequences. Because the genome sequencedata of <i>Buchnera sp. APS</i> was released,<br>we incorporated it to GIB,and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB</a> (Genome Information Broker for Microbial Genomes) provides a comprehensive<br>view of the complete microbial genome sequences. Because the genome sequencedata of <i>Buchnera sp. APS</i> was released,<br>we incorporated it to GIB,and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -108,7 +108,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn000907"><a href="#wn000907">Pseudomonas aeruginosa PA01 was added to GIB</a></h2>
   <div class="news_date">September 07,2000</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB</a>(Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences.Because the genome sequencedata of <i>Pseudomonas aeruginosa PA01</i> was<br>released, we incorporated it to GIB,and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB</a>(Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences.Because the genome sequencedata of <i>Pseudomonas aeruginosa PA01</i> was<br>released, we incorporated it to GIB,and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -189,7 +189,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn000807"><a href="#wn000807">Vibrio cholerae N16961 was added to GIB</a></h2>
   <div class="news_date">August 07,2000</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB</a>(Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Vibrio cholerae N16961</i> was released, we incorporated it to GIB,and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB</a>(Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Vibrio cholerae N16961</i> was released, we incorporated it to GIB,and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -207,7 +207,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn000725"><a href="#wn000725">Chlamydophila pneumoniae strain J138 was added to GIB</a></h2>
   <div class="news_date">July 25,2000</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB</a> (Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences.Because the genome sequencedata of <i>Chlamydophila pneumoniae strain J138</i> was released, we incorporated it to GIB, and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB</a> (Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences.Because the genome sequencedata of <i>Chlamydophila pneumoniae strain J138</i> was released, we incorporated it to GIB, and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -225,7 +225,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn000719"><a href="#wn000719">Xylella fastidiosa was added to GIB</a></h2>
   <div class="news_date">July 19,2000</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB</a> (Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Xylella fastidiosa</i> was released,<br>we incorporated it to GIB,and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB</a> (Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Xylella fastidiosa</i> was released,<br>we incorporated it to GIB,and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -360,7 +360,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn000412"><a href="#wn000412">Neisseria meningitidis Z2491 was added to GIB</a></h2>
   <div class="news_date">April 12,2000</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB</a>(Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences.Because the genome sequencedata of <i>Neisseria meningitidis</i> Z2491 was released,we incorporated them to GIB,and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB</a>(Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences.Because the genome sequencedata of <i>Neisseria meningitidis</i> Z2491 was released,we incorporated them to GIB,and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -369,7 +369,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn000315"><a href="#wn000315">Chlamydophila pneumoniae AR39, Chlamydia muridarum and Neisseria meningitidiswere added to GIB</a></h2>
   <div class="news_date">March 15,2000</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB</a>(Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences.Because the genome sequencedata of <i>Chlamydophila pneumoniae</i> AR39,<i>Chlamydia muridarum</i> and <i>Neisseria meningitidis</i> were released,we incorporated them to GIB,and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB</a>(Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences.Because the genome sequencedata of <i>Chlamydophila pneumoniae</i> AR39,<i>Chlamydia muridarum</i> and <i>Neisseria meningitidis</i> were released,we incorporated them to GIB,and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -405,7 +405,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn000223"><a href="#wn000223">Ureaplasma urealyticum and Campylobacter jejuni NCTC11168 were added to GIB</a></h2>
   <div class="news_date">February 23,2000</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB</a> (Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Ureaplasma urealyticum</i> and <i>Campylobacter jejuni NCTC11168</i> were released, we incorporated them to GIB,and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB</a> (Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Ureaplasma urealyticum</i> and <i>Campylobacter jejuni NCTC11168</i> were released, we incorporated them to GIB,and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -459,7 +459,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn000105"><a href="#wn000105">Deinococcus radiodurans was added to GIB</a></h2>
   <div class="news_date">January 05,2000</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB</a> (Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Deinococcus radiodurans</i> were released, we incorporated them to GIB,and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB</a> (Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Deinococcus radiodurans</i> were released, we incorporated them to GIB,and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>

@@ -31,7 +31,7 @@ lang: en
   <dd>・Supplementary Information</dd>
 </dl>
 <div class="attention no_color">
-  <dl><dt><a href="/documents/data-categories-e.html">What is data type?</a></dt><dt>In case of either *1 or *2, please take following steps before MSS submission.</dt>
+  <dl><dt><a href="/documents/documents/data-categories-e.html">What is data type?</a></dt><dt>In case of either *1 or *2, please take following steps before MSS submission.</dt>
     <dd>Please register your project information in <a href="/bioproject/index-e.html">ioProject Database</a> to get BioProject ID.</dd>
     <dd>Please register biological source materials used in experimental assays in <a href="/biosample/index-e.html">BioSample Database</a> to get BioSample ID.</dd><dt>In case of *2, please also do the following procedure.</dt>
     <dd>complete genome or draft genome with feature annotation, you also have to get a <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> through BioProject submission.</dd>

@@ -5,11 +5,11 @@ category: documents
 lang: ja
 related_pages:
   - title: 登録データ種別
-    url: /documents/documents/data-categories.html
+    url: /documents/documents/documents/data-categories.html
   - title: 国際塩基配列データベースのアクセッション番号
     url: /documents/accessions.html
   - title: Prefix Letter List
-    url: /documents/documents/prefix.html
+    url: /documents/documents/documents/prefix.html
 ---
 
 ### 「データ公開」を行う時期

@@ -55,7 +55,7 @@ atttgaacacacctgctgtggctgtaactctgagatgtgctaaataaaccctctt
     以外にも、必要に応じて、各種[核酸コード](/ddbj/code.html#nucleotide-1)が使用可能です。
   - 終端子として配列情報終了フラグ(//)を必ず入力してください。
   - 途中にスペース、空行が入らないようにしてください。
-  - [CON](/ddbj/documents/documents/data-categories.html#con) に該当する場合は、配列ファイルは [AGP
+  - [CON](/ddbj/documents/documents/documents/data-categories.html#con) に該当する場合は、配列ファイルは [AGP
     ファイル](#agp)で代替することができます。
 
 ## アノテーションファイル<a name="annotation"></a> 
@@ -310,7 +310,7 @@ REFERENCE で使用する Qualifier のリスト
   - DATE にはデータの公開予定日(hold\_date)を年月日の順で、半角数字 8 桁(例：20181125)で入力してください。
   - \- \[hyphen\] や / \[slash\] などの区切り文字を使用した場合はエラーとなります。
   - 登録作業後、データの即時公開をご希望の場合には、DATE を入力しないでください。
-  - 公開予定日をご指定いただいた場合は、[データ公開原則](/documents/documents/data-release-policy.html)に基づいて、公開作業を行ないます。
+  - 公開予定日をご指定いただいた場合は、[データ公開原則](/documents/documents/documents/data-release-policy.html)に基づいて、公開作業を行ないます。
 
 ### COMMENT/ST\_COMMENT <a name="comment"></a>
 
@@ -434,15 +434,15 @@ Table Definition](/ddbj/full_index.html)をご参照ください。
 
 ### DIVISION<a name="division"></a> 
 
-DIVISION は、登録データが [CON](/ddbj/documents/documents/data-categories.html#con) /
-[ENV](/ddbj/documents/documents/data-categories.html#env) /
-[EST](/ddbj/documents/documents/data-categories.html#est) /
-[GSS](/ddbj/documents/documents/data-categories.html#est) /
-[HTC](/ddbj/documents/documents/data-categories.html#est) /
-[HTG](/ddbj/documents/documents/data-categories.html#est) /
-[STS](/ddbj/documents/documents/data-categories.html#est) /
-[SYN](/ddbj/documents/documents/data-categories.html#env) /
-[TSA](/ddbj/documents/documents/data-categories.html#tsa) のいずれかに該当することを示します。
+DIVISION は、登録データが [CON](/ddbj/documents/documents/documents/data-categories.html#con) /
+[ENV](/ddbj/documents/documents/documents/data-categories.html#env) /
+[EST](/ddbj/documents/documents/documents/data-categories.html#est) /
+[GSS](/ddbj/documents/documents/documents/data-categories.html#est) /
+[HTC](/ddbj/documents/documents/documents/data-categories.html#est) /
+[HTG](/ddbj/documents/documents/documents/data-categories.html#est) /
+[STS](/ddbj/documents/documents/documents/data-categories.html#est) /
+[SYN](/ddbj/documents/documents/documents/data-categories.html#env) /
+[TSA](/ddbj/documents/documents/documents/data-categories.html#tsa) のいずれかに該当することを示します。
 
 例: アノテーションファイル内の DIVISION
 
@@ -530,7 +530,7 @@ methodological keywords](/ddbj/keyword.html)をご参照ください。
       <span class="red">HTG</span>, <a href="#htg">その他</a>
       </td>
       <td>
-      <a href="/ddbj/documents/documents/data-categories.html#est">phase</a> に依存、登録毎にご連絡いたします。</td>
+      <a href="/ddbj/documents/documents/documents/data-categories.html#est">phase</a> に依存、登録毎にご連絡いたします。</td>
     </tr>
     <tr>
       <td><a href="/ddbj/gss.html">GSS</a></td>
@@ -663,7 +663,7 @@ DBLINK は、 BioProject ID、BioSample ID、Sequence Read Archive (DRA/ERA/SRA)
     BioSample ID を記載してください。
   - 登録データが次世代シーケンサ由来のアセンブルで、raw reads が Sequence Read Archive
     に登録されている場合、Qualifier: sequence read archive の
-    Value に対応する [Run データのアクセッション番号](/documents/documents/prefix.html#dra)を入力してください。
+    Value に対応する [Run データのアクセッション番号](/documents/documents/documents/prefix.html#dra)を入力してください。
   - [BioProject Database](/bioproject/index.html), [BioSample
     Database](/biosample/index.html), [Sequence Read
     Archive](/dra/index.html) もご参照ください。

@@ -7,9 +7,9 @@ related_pages:
   - title: 国際塩基配列データベースのアクセッション番号
     url: /documents/accessions.html
   - title: データ公開原則
-    url: /documents/documents/data-release-policy.html
+    url: /documents/documents/documents/data-release-policy.html
   - title: Prefix Letter List
-    url: /documents/documents/prefix.html
+    url: /documents/documents/documents/prefix.html
 ---
 
 ## DDBJ に登録可能なデータ <a name="accept"></a>

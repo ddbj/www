@@ -71,7 +71,7 @@ lang: en
   - ### ![](/images/logos/database-org.svg)Databases
 
   - [Annotated/Assembled Sequences
-    (DDBJ)](/ddbj/index-e.html "Annotated/Assembled Sequences (DDBJ)")
+    (DDBJ)](/ddbj/index.html "Annotated/Assembled Sequences (DDBJ)")
 
   - [Sequence Read Archive
     (DRA)](/dra/index-e.html "Sequence Read Archive")
@@ -150,18 +150,18 @@ BI-DDBJ Web Sites Annotated/Assembled Sequences Sequence Read Archive
 <div id="header-bottom">
 
   - [Home](/biosample/index-e.html)
-  - [Handbook](/biosample/submission-e.html)
+  - [Handbook](/biosample/services/index.html)
   - [Sample
     Attribute![](/images/parts/arrow_down.svg)](/biosample/attribute-e.html)
       - [Example
         files](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482)
   - [Validation Rules](/biosample/validation-e.html)
-  - [FAQ](/biosample/faq-e.html)
+  - [FAQ](/faq/en/index-e.html)
   - [Search](http://ddbj.nig.ac.jp/BSSearch/)
   - [Download![](/images/parts/arrow_down.svg)](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/biosample)
       - [XML
         Schema](https://github.com/ddbj/pub/tree/master/docs/biosample/xsd)
-  - [About Biosample](/biosample/about-e.html)
+  - [About Biosample](/biosample/about-biosample-e.html)
 
 </div>
 
@@ -207,7 +207,7 @@ The general aims of this project include:
 
 <div class="box-layer">
 
-[](/biosample/submission-e.html "How to submit")
+[](/biosample/services/index.html "How to submit")
 
 <div class="top-navi-box">
 
@@ -292,7 +292,7 @@ The general aims of this project include:
   - ### Databases
 
   - [Annotated/Assembled Sequences
-    (DDBJ)](/ddbj/index-e.html "Annotated/Assembled Sequences (DDBJ)")
+    (DDBJ)](/ddbj/index.html "Annotated/Assembled Sequences (DDBJ)")
 
   - [Sequence Read Archive
     (DRA)](/dra/index-e.html "Sequence Read Archive")
@@ -323,10 +323,10 @@ The general aims of this project include:
 
   - ### DDBJ Information
 
-  - [Training](/training-e.html)
+  - [Training](/activities/index-e.html)
 
   - [DDBJ
-    RSS![](/images/parts/rss_icon.svg)](/announcements-e.html "News feeds from DDBJ")
+    RSS![](/images/parts/rss_icon.svg)](/data-feed-e.html "News feeds from DDBJ")
 
   - [DDBJ on
     Twitter![](/images/parts/twitter_icon.svg)](https://twitter.com/DDBJ_topics "DDBJ Twitter")
@@ -376,9 +376,9 @@ The general aims of this project include:
     Disclaimers](/policies-e.html "Policies and Disclaimers")
   - [News](/news/en/index-e.html "News archives")
   - [FAQs](/faq/en/index-e.html "Frequently asked questions")
-  - [Sitemap](/sitemap-e.html "Sitemap")
+  - [Sitemap](/sitemaps-e.html "Sitemap")
   - [Calendar](/calendar-e.html "DDBJ Center Calendar")
-  - [Address](/access-e.html "DDBJ Center address")
+  - [Address](/ddbj-access-e.html "DDBJ Center address")
   - [Contact](/contact-e.html "Contact to DDBJ Center")
   - Last modified: 2018-02-19
 

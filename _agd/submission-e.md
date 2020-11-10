@@ -102,7 +102,7 @@ Analysis can refer to multiple Data and Sample objects and summary data summariz
 
 ## Metadata <a name="metadata"></a>
 
-The AGD data model is created by extending the [Sequence Read Archive's model](/dra/submission-e.html). The AGD metadata are composed of the XML objects.
+The AGD data model is created by extending the [Sequence Read Archive's model](/dra/services/index.html). The AGD metadata are composed of the XML objects.
 
 AGD XML schema: [AGD xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 

@@ -82,7 +82,7 @@ GEA の Experiment と Array design に対して以下の形式のアクセッ�
 
 ## データ公開 <a name="rel"></a>
 
-関連する論文が公表されるまでデータを非公開にすることができます。四年後までの公開予定日を設定し、随時延長することができます。登録されたデータは[データ公開原則](/documents/documents/data-release-policy.html)に従って公開されます。
+関連する論文が公表されるまでデータを非公開にすることができます。四年後までの公開予定日を設定し、随時延長することができます。登録されたデータは[データ公開原則](/documents/documents/documents/data-release-policy.html)に従って公開されます。
 
 ## Reviewer access <a name="reviewer-access"></a>
 

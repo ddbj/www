@@ -102,7 +102,7 @@ DDBJ. DDBJ must maintain registration information as confidential until
 publication of the entry.
 
 The hold data will be open to the public according to [principle of data
-release](/documents/documents/data-release-policy.html).
+release](/documents/documents/documents/data-release-policy.html).
 
 In principle, [even submitters cannot remove their own
 entry](/ddbj/update-e.html#q9) if the entry has already been released
@@ -148,7 +148,7 @@ necessary
 If you selected "hold until published", it is required to specify the
 "hold date" of your data.  
 Reference: [Principle of "Hold-Until-Published" data
-release](/documents/data-release-policy-e.html)
+release](/documents/documents/data-release-policy-e.html)
 
 
 ### Number of sequences <a name="number"></a>
@@ -318,7 +318,7 @@ Following figure shows the dataflow from new submission to release and update at
     </li>
   <li>
     Release of Sequence Data<br>
-    DDBJ releases the submitted data that specified to be open to the public immediately, as soon as possible after processing. The submitted entry that is specified to hold until publication will be released according to <a href="/documents/data-release-policy-e.html">principle of data release</a>. When the accession number of the hold entry is published, the entry will be released with no exception and no permission from the submitter. Everyone can request DDBJ to release the unpublished data whose accession numbers are on the published papers.
+    DDBJ releases the submitted data that specified to be open to the public immediately, as soon as possible after processing. The submitted entry that is specified to hold until publication will be released according to <a href="/documents/documents/data-release-policy-e.html">principle of data release</a>. When the accession number of the hold entry is published, the entry will be released with no exception and no permission from the submitter. Everyone can request DDBJ to release the unpublished data whose accession numbers are on the published papers.
     </li>
   <li>
     Availability of Released Data<br>
@@ -372,7 +372,7 @@ Hold date  <a name="holddate"></a>
 : "Hold date" is the date to start the distribution of the entry.
 Submitter can specify the date, if necessary  
 Reference: [Principle of "Hold-Until-Published" data
-release](/documents/data-release-policy-e.html)
+release](/documents/documents/data-release-policy-e.html)
 
 Working day <a name="working-day"></a>
 : DDBJ Center takes days off not only every Saturday and Sunday but

@@ -71,7 +71,7 @@ lang: en
   - ### ![](/images/logos/database-org.svg)Databases
 
   - [Annotated/Assembled Sequences
-    (DDBJ)](/ddbj/index-e.html "Annotated/Assembled Sequences (DDBJ)")
+    (DDBJ)](/ddbj/index.html "Annotated/Assembled Sequences (DDBJ)")
 
   - [Sequence Read Archive
     (DRA)](/dra/index-e.html "Sequence Read Archive")
@@ -150,13 +150,13 @@ BI-DDBJ Web Sites Annotated/Assembled Sequences Sequence Read Archive
 <div id="header-bottom">
 
   - [Home](/bioproject/index-e.html)
-  - [Handbook](/bioproject/submission-e.html)
+  - [Handbook](/bioproject/services/index.html)
   - [FAQ](/bioproject/faq-e.html)
   - [Search](http://ddbj.nig.ac.jp/BPSearch/)
   - [Download![](/images/parts/arrow_down.svg)](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/bioproject)
       - [XML
         Schema](https://github.com/ddbj/pub/tree/master/docs/bioproject/xsd)
-  - [About BioProject](/bioproject/about-e.html)
+  - [About BioProject](/bioproject/about-bioproject-e.html)
 
 </div>
 
@@ -190,7 +190,7 @@ are exchanged with the [EBI](https://www.ebi.ac.uk/) and
 
 <div class="box-layer">
 
-[](/bioproject/submission-e.html "How to submit")
+[](/bioproject/services/index.html "How to submit")
 
 <div class="top-navi-box">
 
@@ -275,7 +275,7 @@ are exchanged with the [EBI](https://www.ebi.ac.uk/) and
   - ### Databases
 
   - [Annotated/Assembled Sequences
-    (DDBJ)](/ddbj/index-e.html "Annotated/Assembled Sequences (DDBJ)")
+    (DDBJ)](/ddbj/index.html "Annotated/Assembled Sequences (DDBJ)")
 
   - [Sequence Read Archive
     (DRA)](/dra/index-e.html "Sequence Read Archive")
@@ -306,10 +306,10 @@ are exchanged with the [EBI](https://www.ebi.ac.uk/) and
 
   - ### DDBJ Information
 
-  - [Training](/training-e.html)
+  - [Training](/activities/index-e.html)
 
   - [DDBJ
-    RSS![](/images/parts/rss_icon.svg)](/announcements-e.html "News feeds from DDBJ")
+    RSS![](/images/parts/rss_icon.svg)](/data-feed-e.html "News feeds from DDBJ")
 
   - [DDBJ on
     Twitter![](/images/parts/twitter_icon.svg)](https://twitter.com/DDBJ_topics "DDBJ Twitter")
@@ -359,9 +359,9 @@ are exchanged with the [EBI](https://www.ebi.ac.uk/) and
     Disclaimers](/policies-e.html "Policies and Disclaimers")
   - [News](/news/en/index-e.html "News archives")
   - [FAQs](/faq/en/index-e.html "Frequently asked questions")
-  - [Sitemap](/sitemap-e.html "Sitemap")
+  - [Sitemap](/sitemaps-e.html "Sitemap")
   - [Calendar](/calendar-e.html "DDBJ Center Calendar")
-  - [Address](/access-e.html "DDBJ Center address")
+  - [Address](/ddbj-access-e.html "DDBJ Center address")
   - [Contact](/contact-e.html "Contact to DDBJ Center")
   - Last modified: 2018-04-11
 

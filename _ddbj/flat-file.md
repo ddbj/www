@@ -385,7 +385,7 @@ DBLINK      BioProject:PRJDA12345
 KEYWORDS は、過去の登録においては、遺伝子名 ([gene](/ddbj/qualifiers.html#gene))、産物名
 ([product](/ddbj/qualifiers.html#product)) の索引に用いられていました。
 
-現在は、[データの詳細種別](/documents/documents/data-categories.html#detail) ([EST](/ddbj/est.html),
+現在は、[データの詳細種別](/documents/documents/documents/data-categories.html#detail) ([EST](/ddbj/est.html),
 [TSA](/ddbj/tsa.html), [HTC](/ddbj/htc.html), [HTG](/ddbj/htg.html),
 [GSS](/ddbj/gss.html), [WGS](/ddbj/wgs.html), [TPA](/ddbj/tpa.html)
 など)、配列の特性、実験手法、ゲノム配列の完成度などに関する情報などが、必要に応じて、記載されます。[INSDC agreed

@@ -31,7 +31,7 @@ lang: ja
   <dd>・補足情報（日本語可）</dd>
 </dl>
 <div class="attention no_color">
-  <dl><dt><a href="/documents/documents/data-categories.html">データ種別とは？</a></dt><dt>*1, *2 を登録する場合は、MSS での登録に先立ち、以下の順序で手続きを行ってください。</dt>
+  <dl><dt><a href="/documents/documents/documents/data-categories.html">データ種別とは？</a></dt><dt>*1, *2 を登録する場合は、MSS での登録に先立ち、以下の順序で手続きを行ってください。</dt>
     <dd> <a href="/bioproject/index.html">BioProject Database</a> で、 BioProject ID を取得してください。</dd>
     <dd> 配列の由来（リソース）情報を <a href="/biosample/index.html">BioSample Database</a> に登録し、BioSample ID を取得して下さい。</dd><dt>*2 に該当する場合は、以下の手続きも併せて行ってください。</dt>
     <dd>feature annotation を伴うゲノム配列の場合は、<a href="/ddbj/locus_tag.html">locus tag prefix</a> を取得しておく必要があります。<br>locus_tag prefix は <a href="/bioproject/index.html">BioProject Database</a> に登録する際に取得します。</dd>

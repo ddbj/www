@@ -1118,7 +1118,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn060517"><a href="#wn060517">GIB FTPダウンロードサイト公開</a></h2>
   <div class="news_date">2006年05月17日</div>
-  <div class="news_content">GIB(Genome Information Broker) は，DDBJ の真正細菌・古細菌・真核生物ゲノムの統合検索サイトです。このたび，FTP ダウンロードサイトを公開しました。 GIB トップページの「DOWNLOAD」，または<a href="/services/past-services-e.html#gib">ftp://ftpgib.genes.nig.ac.jp/</a> よりアクセス可能です。これに伴いデータの一括取得が可能になりました。どうぞご利用ください。</div>
+  <div class="news_content">GIB(Genome Information Broker) は，DDBJ の真正細菌・古細菌・真核生物ゲノムの統合検索サイトです。このたび，FTP ダウンロードサイトを公開しました。 GIB トップページの「DOWNLOAD」，または<a href="/services/services/past-services-e.html#gib">ftp://ftpgib.genes.nig.ac.jp/</a> よりアクセス可能です。これに伴いデータの一括取得が可能になりました。どうぞご利用ください。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>

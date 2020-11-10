@@ -387,7 +387,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn090610"><a href="#wn090610">GIB temporary down</a></h2>
   <div class="news_date">June 10,2009</div>
-  <div class="news_content"><a href="/services/past-services-e.html#gib" target="_blank">GIB (Genome Information Broker)</a> will be unavailable at the following schedule, because of the maintenance works.<ul><li><b>Date:</b> June 30(Tue), 2009 at 9:00(JST) - July 2(Thu) at 17:00 (JST)</li></ul><dd>Thank you very much for your understanding and cooperation.<br><dd><font class="red"> Maintenance works finished, and the service is available. Thank you for your cooperation.(Jul. 1, 2009 at 14:45 JST) </font></dd></dd></div>
+  <div class="news_content"><a href="/services/services/past-services-e.html#gib" target="_blank">GIB (Genome Information Broker)</a> will be unavailable at the following schedule, because of the maintenance works.<ul><li><b>Date:</b> June 30(Tue), 2009 at 9:00(JST) - July 2(Thu) at 17:00 (JST)</li></ul><dd>Thank you very much for your understanding and cooperation.<br><dd><font class="red"> Maintenance works finished, and the service is available. Thank you for your cooperation.(Jul. 1, 2009 at 14:45 JST) </font></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>

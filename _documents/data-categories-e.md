@@ -9,7 +9,7 @@ related_pages:
   - title: Accession Number Assigned by INSD
     url: /documents/accessions.html
   - title: Principle of “Hold-Until-Published” data release
-    url: /documents/data-release-policy-e.html
+    url: /documents/documents/data-release-policy-e.html
 ---
 
 

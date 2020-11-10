@@ -42,7 +42,7 @@ Mass Submission System (MSS) は、比較的大規模な塩基配列データ (r
 
 </div>
 
-データの種別については[登録データ種別](/documents/documents/data-categories.html)をご確認ください。
+データの種別については[登録データ種別](/documents/documents/documents/data-categories.html)をご確認ください。
 
 上記の条件を満たさない配列の登録は、[Web 版塩基配列登録システム (NSSS: DDBJ Nucleotide Sequence Submission System](/ddbj/web-submission.html)) のご利用をお勧めしております。
 
@@ -143,7 +143,7 @@ SCP によるファイル転送
 ### 5\. データ公開 <a name="flow-5"></a>
 
 登録時に即日公開を希望した場合は、可能な限り速やかに公開します。  
-[公開予定日](/ddbj/services/index.html#hold-date)([hold\_date](/ddbj/file-format.html#annotation))を指定した場合は、[公開原則](/documents/documents/data-release-policy.html)に基づいて公開します。
+[公開予定日](/ddbj/services/index.html#hold-date)([hold\_date](/ddbj/file-format.html#annotation))を指定した場合は、[公開原則](/documents/documents/documents/data-release-policy.html)に基づいて公開します。
 
 登録された塩基配列データは、配列ファイルとアノテーションファイルの内容に基づき、DDBJ の定めるフォーマットにしたがった[フラットファイル (flat file)](/ddbj/flat-file.html) の形式で公開されています。  
 [アノテーションファイルとフラットファイルの対応関係](/ddbj/file-format.html#sample)もご参照ください。

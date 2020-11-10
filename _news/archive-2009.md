@@ -473,7 +473,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn090610"><a href="#wn090610">GIB サービスの一時休止</a></h2>
   <div class="news_date">2009年06月10日</div>
-  <div class="news_content"><a href="/services/past-services-e.html#gib" target="_blank">GIB (Genome Information Broker) </a>サービスをシステムメンテナンスの為，下記の日程にて一時休止します。<ul><li><b>休止日時：</b>2009年6月30日（火） 9時より 7月2日（木） 17時まで</li><li><b>理由：</b>システムメンテナンス（OS バージョンアップ）</li></ul><p>皆様には大変ご迷惑をお掛けいたしますが，ご理解とご協力をお願いいたします。</p><p><font class="red">保守作業は終了しました。ご協力ありがとうございました。（7月1日14時45分）</font></p></div>
+  <div class="news_content"><a href="/services/services/past-services-e.html#gib" target="_blank">GIB (Genome Information Broker) </a>サービスをシステムメンテナンスの為，下記の日程にて一時休止します。<ul><li><b>休止日時：</b>2009年6月30日（火） 9時より 7月2日（木） 17時まで</li><li><b>理由：</b>システムメンテナンス（OS バージョンアップ）</li></ul><p>皆様には大変ご迷惑をお掛けいたしますが，ご理解とご協力をお願いいたします。</p><p><font class="red">保守作業は終了しました。ご協力ありがとうございました。（7月1日14時45分）</font></p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>

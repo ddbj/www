@@ -61,7 +61,7 @@ OS
 ## Submission <a name="Submission"></a>
 
 The first-time submission  
-: Please read the descriptions of "[Nucleotide Sequence Submission](/ddbj/services/index.html)" and "[Categories for Sequence Data](/documents/data-categories-e.html)".
+: Please read the descriptions of "[Nucleotide Sequence Submission](/ddbj/services/index.html)" and "[Categories for Sequence Data](/documents/documents/data-categories-e.html)".
 : Maximum number of 1 submission: 1024 (depends on PC environment/sequence length) 
 : [TPA data](/ddbj/tpa-e.html) submission is also acceptable via this system.
 : Check your sequences by [VecScreen](http://ddbj.nig.ac.jp/vecscreen/) to exclude vector sequences before submission.。

@@ -31,7 +31,7 @@ AGD で発行される管理用 ID は論文で引用することはできませ
 
 ## 塩基配列データ (raw/unaligned と aligned) <a name="sequence"></a>
 
-AGD でサポートしているファイル形式を以下に示します。 異なるファイル形式をもっている場合や不明な点がある場合は [AGD に連絡](/contact.html)してください。
+AGD でサポートしているファイル形式を以下に示します。 異なるファイル形式をもっている場合や不明な点がある場合は [AGD に連絡](/contact-ddbj.html)してください。
 
 データファイルが複数サンプルに由来するデータを含んでいる場合，投稿する前にファイルをサンプルごとに分割します。 そうすることによって Run は１つのサンプルに由来するデータファイルだけを持つようになります。
 
@@ -110,7 +110,7 @@ Analysis に登録することができます。Analysis に登録できるフ�
 
 ## メタデータ <a name="metadata"></a>
 
-AGD データモデルは [Sequence Read Archive](/dra/submission.html) のモデルを拡張してつくられています。 AGD メタデータは XML オブジェクトで構成されています。
+AGD データモデルは [Sequence Read Archive](/dra/services/index.html) のモデルを拡張してつくられています。 AGD メタデータは XML オブジェクトで構成されています。
 
 AGD XML schema: [AGD xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
@@ -205,8 +205,8 @@ XML schema: [AGD.policy.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 {% include image.html url="submission/samples-analysis.jpg" caption="Sample を集計した Analysis データ登録" class="w500" %}
 {:/}
 
-Sample-Analysis セットでデータ登録をする場合は [JGA チームに連絡](/contact.html)します。
+Sample-Analysis セットでデータ登録をする場合は [JGA チームに連絡](/contact-ddbj.html)します。
 
 ## 登録の更新 <a name="update"></a>
 
-登録を更新するためには [AGD チームに連絡](/contact.html)します。
+登録を更新するためには [AGD チームに連絡](/contact-ddbj.html)します。

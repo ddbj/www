@@ -81,7 +81,7 @@ Accessions numbers are generated when sufficient metadata and data files are pro
 
 ## Data release <a name="rel"></a>
 
-The data can be kept private until your paper is published. You can set the hold date for a maximum of 4 years and can change it. Registered records are released according to the [Data Release Policy](/documents/data-release-policy-e.html).
+The data can be kept private until your paper is published. You can set the hold date for a maximum of 4 years and can change it. Registered records are released according to the [Data Release Policy](/documents/documents/data-release-policy-e.html).
 
 ## Reviewer access <a name="reviewer-access"></a>
 

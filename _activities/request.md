@@ -132,7 +132,7 @@ FEATURES 情報に関する変更の場合は
 
 DDBJ は，[The International Nucleotide Sequence Databases Collaboration(INSDC )](http://www.insdc.org/) を構成する primary database ですので，すべての塩基配列について， その配列が受け入れ基準を満たしており，これを広く一般に公開することを目的とするならば，学術論文の投稿予定の有無に関わらず登録を受けつけ， アクセッション番号を発行しています。
 
-参照：[DDBJ に登録可能なデータ](/ddbj/documents/documents/data-categories.html)
+参照：[DDBJ に登録可能なデータ](/ddbj/documents/documents/documents/data-categories.html)
 
 DDBJ では，データ登録用入力システムとして，SAKURA システムと [大量登録システム（MSS）](/ddbj/mss.html)を用意しております。SAKURA は，１エントリ単位で，対話型入力システムです。MSS は，[EST](/ddbj/flatfile.html#divisionB), [WGS](/ddbj/wgs.html), 全ゲノム規模などの登録をする場合に多くの方が利用していますが， 「事前に一部データをサンプルとして提示して頂き，アノテーション内容（入力事項）をどのように記載するべきかなど， 登録者とDDBJ 担当者との間で事前調整をした後に，全データについての，登録用ファイルを電子メールまたは ftp でお送くり頂く」方式となっています。
 

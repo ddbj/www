@@ -36,7 +36,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn011218"><a href="#wn011218">Agrobacterium tumefaciens C58 (Dupont) was added to GIB</a></h2>
   <div class="news_date">December 18,2001</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences. Because the genome sequence data of <i>Agrobacterium tumefaciens C58 (Dupont)</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Institute: University of Washington</small><br><dd><small>Reference: The Genome of the Natural Genetic Engineer Agrobacterium tumefaciens C58, Science 294 (5550), 2317-2323 (2001)</small></dd></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences. Because the genome sequence data of <i>Agrobacterium tumefaciens C58 (Dupont)</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Institute: University of Washington</small><br><dd><small>Reference: The Genome of the Natural Genetic Engineer Agrobacterium tumefaciens C58, Science 294 (5550), 2317-2323 (2001)</small></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -45,7 +45,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn011212"><a href="#wn011212">Ralstonia solanacearum GMI1000 was added to GIB</a></h2>
   <div class="news_date">December 12,2001</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences. Because the genome sequence data of <i>Ralstonia solanacearum GMI1000</i> was released, we incorporated it to GIB, and now you can search<br>those data.<br><dd><small>Institute: Genoscope and CNRS UMR-8030</small><br><dd><small>Reference: Genome sequence of the plant pathogen Ralstonia solanacearum, Unpublished</small></dd></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences. Because the genome sequence data of <i>Ralstonia solanacearum GMI1000</i> was released, we incorporated it to GIB, and now you can search<br>those data.<br><dd><small>Institute: Genoscope and CNRS UMR-8030</small><br><dd><small>Reference: Genome sequence of the plant pathogen Ralstonia solanacearum, Unpublished</small></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -81,7 +81,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn011205"><a href="#wn011205">Nostoc sp. PCC 7120 was added to GIB</a></h2>
   <div class="news_date">December 05,2001</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Nostoc sp. PCC 7120</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Institute: Kazusa DNA Research Institute</small><br><dd><small>Reference: Complete Genomic Sequence of the Filamentous Nitrogen-fixing Cyanobacterium Anabaena sp. strain PCC 7120, DNA Res. 8, 205-213 (2001)</small></dd></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Nostoc sp. PCC 7120</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Institute: Kazusa DNA Research Institute</small><br><dd><small>Reference: Complete Genomic Sequence of the Filamentous Nitrogen-fixing Cyanobacterium Anabaena sp. strain PCC 7120, DNA Res. 8, 205-213 (2001)</small></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -153,7 +153,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn011101"><a href="#wn011101">Listeria innocua Clip11262 and Listeria monocytogenes EGD-e were added to GIB</a></h2>
   <div class="news_date">November 01,2001</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.<br><dd>Because the genome sequence data of <i>Listeria innocua Clip11262</i> and <i>Listeria monocytogenes EGD-e</i> were released, we incorporated them to GIB, and now you can search those data.<br><small><br><dd>Institute: Institut Pasteur<br><dd>Reference:Comparative genomics of Listeria species, Science 294, 849-852 (2001)</dd></dd></small></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.<br><dd>Because the genome sequence data of <i>Listeria innocua Clip11262</i> and <i>Listeria monocytogenes EGD-e</i> were released, we incorporated them to GIB, and now you can search those data.<br><small><br><dd>Institute: Institut Pasteur<br><dd>Reference:Comparative genomics of Listeria species, Science 294, 849-852 (2001)</dd></dd></small></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -162,7 +162,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn011031"><a href="#wn011031">&gt;Salmonella typhi CT18 was added to GIB</a></h2>
   <div class="news_date">October 31,2001</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker forMicrobial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.<br><dd>Because the genome sequence data of <i>Salmonella typhi CT18</i> was released, we incorporated it to GIB, and now you can search those data.<br><small><br><dd>Reference:<br>Complete genome sequence of a multiple drug resistant Salmonella enterica serovar Typhi CT18, Nature 413, 848-852 (2001)</dd></small></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker forMicrobial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.<br><dd>Because the genome sequence data of <i>Salmonella typhi CT18</i> was released, we incorporated it to GIB, and now you can search those data.<br><small><br><dd>Reference:<br>Complete genome sequence of a multiple drug resistant Salmonella enterica serovar Typhi CT18, Nature 413, 848-852 (2001)</dd></small></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -180,7 +180,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn011029_2"><a href="#wn011029_2">Salmonella typhimurium LT2 was added to GIB</a></h2>
   <div class="news_date">October 29,2001</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.<br><dd>Because the following genome sequence data of <i>Salmonella typhimurium LT2</i>was released, we incorporated it to GIB, and now you can search those data.<br><small><br><dd>Reference:<br>The complete genome sequence of Salmonella enterica serovar Typhimurium LT2:features revealed by comparison to related genomes, Nature 413, 852-856 (2001)</dd></small></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.<br><dd>Because the following genome sequence data of <i>Salmonella typhimurium LT2</i>was released, we incorporated it to GIB, and now you can search those data.<br><small><br><dd>Reference:<br>The complete genome sequence of Salmonella enterica serovar Typhimurium LT2:features revealed by comparison to related genomes, Nature 413, 852-856 (2001)</dd></small></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -216,7 +216,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn011016"><a href="#wn011016">Yersina pestis CO92 was added to GIB</a></h2>
   <div class="news_date">October 16,2001</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.<br><dd>Because the genome sequence data of <i>Yersina pestis CO92</i> was released, we incorporated it to GIB, and now you can search those data.<br><small><br><dd>Reference:<br>Genome sequence of Yersinia pestis, the causative agent of plague, Nature 413, 523-527(2001)<br></dd></small></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.<br><dd>Because the genome sequence data of <i>Yersina pestis CO92</i> was released, we incorporated it to GIB, and now you can search those data.<br><small><br><dd>Reference:<br>Genome sequence of Yersinia pestis, the causative agent of plague, Nature 413, 523-527(2001)<br></dd></small></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -252,7 +252,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn011001"><a href="#wn011001">Version-up of GIB</a></h2>
   <div class="news_date">October 01,2001</div>
-  <div class="news_content"><dd>We enhanced <a href="/services/past-services-e.html#gib">GIB</a> to version 3.0 to accommodate rapidly increasing genomic information.  GIB 3.0 uses distributed RDBs  on multiple PC-Linux platforms and a homology search server on Unix platform.  The WWW server communicates with these servers by use of<br>CORBA and XML.  The new version of GIB stores, processes and displays all the features in the Flat Files including CDS and RNA.  In a comparative genomes page of GIB 3.0, you can select multiple genomes that you are interested in.  The user interface is improved in GIB 3.0 as well.</dd></div>
+  <div class="news_content"><dd>We enhanced <a href="/services/services/past-services-e.html#gib">GIB</a> to version 3.0 to accommodate rapidly increasing genomic information.  GIB 3.0 uses distributed RDBs  on multiple PC-Linux platforms and a homology search server on Unix platform.  The WWW server communicates with these servers by use of<br>CORBA and XML.  The new version of GIB stores, processes and displays all the features in the Flat Files including CDS and RNA.  In a comparative genomes page of GIB 3.0, you can select multiple genomes that you are interested in.  The user interface is improved in GIB 3.0 as well.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -261,7 +261,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn010918"><a href="#wn010918">Streptococcus pneumoniae R6,Rickettsia conorii and Sulfolobus tokodaii were added to GIB</a></h2>
   <div class="news_date">September 18,2001</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.<br><dd>Because the following genome sequencedata were released, we incorporated them to GIB, and now you can search those data.<br><dd><i>Streptococcus pneumoniae R6</i><br><small><br><dd>Institute: Eli Lilly and Company:  Genome of the Bacterium<br><dd>Reference: Streptococcus pneumoniae Strain R6, J. Bacteriol. 183 (19),5709-5717 (2001)<br></dd></dd></small><br><dd><i>Rickettsia conorii</i><br><small><br><dd>Institute:  Genoscope, Universite de la Mediterranee<br><dd>Reference:  Mechanisms of Evolution in Rickettsia conorii and Rickettsia prowazekii, Science 293, 2093-2098 (2001)<br></dd></dd></small><br><dd><i>Sulfolobus tokodaii</i><br><small><br><dd>Institute:  National Institute of Technology and Evaluation<br><dd>Reference:  Complete genome sequence of an Aerobic Thermoacidophilic Crenarchaeon, Sulfolobus tokodaii strain7. DNA Res.(2001) In press<br></dd></dd></small></dd></dd></dd></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.<br><dd>Because the following genome sequencedata were released, we incorporated them to GIB, and now you can search those data.<br><dd><i>Streptococcus pneumoniae R6</i><br><small><br><dd>Institute: Eli Lilly and Company:  Genome of the Bacterium<br><dd>Reference: Streptococcus pneumoniae Strain R6, J. Bacteriol. 183 (19),5709-5717 (2001)<br></dd></dd></small><br><dd><i>Rickettsia conorii</i><br><small><br><dd>Institute:  Genoscope, Universite de la Mediterranee<br><dd>Reference:  Mechanisms of Evolution in Rickettsia conorii and Rickettsia prowazekii, Science 293, 2093-2098 (2001)<br></dd></dd></small><br><dd><i>Sulfolobus tokodaii</i><br><small><br><dd>Institute:  National Institute of Technology and Evaluation<br><dd>Reference:  Complete genome sequence of an Aerobic Thermoacidophilic Crenarchaeon, Sulfolobus tokodaii strain7. DNA Res.(2001) In press<br></dd></dd></small></dd></dd></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -297,7 +297,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn010817"><a href="#wn010817">Agrobacterium tumefaciens was added to GIB</a></h2>
   <div class="news_date">August 17,2001</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes) </a> provides a comprehensive view of the complete microbial genome sequences.<br><dd>Because the genome sequencedata of <i>Agrobacterium tumefaciens</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Reference: Complete Genome Sequence of Agrobacterium tumefaciens C58 (Rhizobium radiobacter C58), the Causative Agent of Crown Gall Disease in Plants, Unpublishe</small></dd></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes) </a> provides a comprehensive view of the complete microbial genome sequences.<br><dd>Because the genome sequencedata of <i>Agrobacterium tumefaciens</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Reference: Complete Genome Sequence of Agrobacterium tumefaciens C58 (Rhizobium radiobacter C58), the Causative Agent of Crown Gall Disease in Plants, Unpublishe</small></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -306,7 +306,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn010810"><a href="#wn010810">Shinorhizobium meliloti was added to GIB</a></h2>
   <div class="news_date">August 10,2001</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes) </a> provides a comprehensive view of the complete microbial genome sequences.<br><dd>Because the genome sequencedata of <i>Shinorhizobium meliloti</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Reference:<br>Analysis of the chromosome sequence of the legume symbiont Sinorhizobium meliloti, Unpublished</small></dd></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes) </a> provides a comprehensive view of the complete microbial genome sequences.<br><dd>Because the genome sequencedata of <i>Shinorhizobium meliloti</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Reference:<br>Analysis of the chromosome sequence of the legume symbiont Sinorhizobium meliloti, Unpublished</small></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -324,7 +324,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn010807"><a href="#wn010807">Arbidopsis thaliana was added to GIB</a></h2>
   <div class="news_date">August 07,2001</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes) </a> provides a comprehensive view of the complete microbial genome sequences.<br>GIB is now not only for microbes but also Arbidopsis thaliana. The genome sequence of Arabidopsis thaliana is retirievable in the Genome Information Broker (GIB)</dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes) </a> provides a comprehensive view of the complete microbial genome sequences.<br>GIB is now not only for microbes but also Arbidopsis thaliana. The genome sequence of Arabidopsis thaliana is retirievable in the Genome Information Broker (GIB)</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -342,7 +342,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn010731"><a href="#wn010731">Clostidium acetobutylicum was added to GIB</a></h2>
   <div class="news_date">July 31,2001</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes) </a> provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Clostidium acetobutylicum</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Reference:<br>Genome Sequence and Comparative Analysis of the Solvent-Producing BacteriumClostridium acetobutylicum, J. Bacteriol. 183 (16), 4823-4838 (2001)</small></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes) </a> provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Clostidium acetobutylicum</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Reference:<br>Genome Sequence and Comparative Analysis of the Solvent-Producing BacteriumClostridium acetobutylicum, J. Bacteriol. 183 (16), 4823-4838 (2001)</small></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -360,7 +360,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn010725_2"><a href="#wn010725_2">Streptococcus pneumoniae was added to GIB</a></h2>
   <div class="news_date">July 25,2001</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes) </a> provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Streptococcus pneumoniae</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Reference: Complete Genome Sequence of a virulent isolate of<br>Streptococcus pneumoniae, Science 293 (5529), 498-506 (2001)</small></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes) </a> provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Streptococcus pneumoniae</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Reference: Complete Genome Sequence of a virulent isolate of<br>Streptococcus pneumoniae, Science 293 (5529), 498-506 (2001)</small></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -423,7 +423,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn010607"><a href="#wn010607">Thermoplasma volcanium was added to GIB</a></h2>
   <div class="news_date">June 07,2001</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a><br>provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Thermoplasma volcanium</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Reference: Determination of the complete genomic DNA sequence<br>of Thermoplasma volcanium, Proc. Natl. Acad. Sci. U.S.A. 97, 14257-14262 (2000)<br></small></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a><br>provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Thermoplasma volcanium</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Reference: Determination of the complete genomic DNA sequence<br>of Thermoplasma volcanium, Proc. Natl. Acad. Sci. U.S.A. 97, 14257-14262 (2000)<br></small></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -432,7 +432,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn010531"><a href="#wn010531">Mesorhizobium loti was added to GIB</a></h2>
   <div class="news_date">May 31,2001</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Mesorhizobium loti</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Reference: Complete genome structure of the nitrogen-fixing symbiotic bacterium Mesorhizobium loti., DNA Res. 7, 331-338 (2000)</small></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Mesorhizobium loti</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Reference: Complete genome structure of the nitrogen-fixing symbiotic bacterium Mesorhizobium loti., DNA Res. 7, 331-338 (2000)</small></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -459,7 +459,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn010522"><a href="#wn010522">Mycoplasma pulmonis was added to GIB</a></h2>
   <div class="news_date">May 22,2001</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.  Because the genome sequencedata of <i>Mycoplasma pulmonis</i> was released, we incorporated it to GIB,and now you can search those data.<br><dd><small>Reference: The complete genome sequence of the murine respiratory pathogen Mycoplasma pulmonis, Nucleic Acids Res. 29(10), 2145-2153(2001)</small></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.  Because the genome sequencedata of <i>Mycoplasma pulmonis</i> was released, we incorporated it to GIB,and now you can search those data.<br><dd><small>Reference: The complete genome sequence of the murine respiratory pathogen Mycoplasma pulmonis, Nucleic Acids Res. 29(10), 2145-2153(2001)</small></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -495,7 +495,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn010514"><a href="#wn010514">Staphylococcus aureus Mu50,Sulfolobus solfataricus and Mycobacterium tuberculosis CDC1551 were added to GIB</a></h2>
   <div class="news_date">May 14,2001</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.  Because the following genome sequencedata were released, we incorporated them to GIB,and now you can search those data.<br><dd><i>Staphylococcus aureus Mu50</i><br><small><br><dd>Reference:<br>Whole genome sequencing of methicillin-resistant Staphylococcus aureus, the major hospital pathogen, Lancet 357, 1225-1240 (2001)<br><dd>Institute:<br>University of Tsukuba College of Medical Technology and Nursing</dd></dd></small><br><dd><i>Sulfolobus solfataricus</i><br><small><br><dd>Reference:<br>Unpublished<br><dd>Institute:<br>Copenhagen University<br></dd></dd></small><br><dd><i>Mycobacterium tuberculosis CDC1551</i><br><small><br><dd>Reference:<br>Whole genome comparison of Mycobacterium tuberculosis clinical and laboratory strains, Unpublished<br><dd>Institute:<br>The Institute for Genomic Research<br></dd></dd></small></dd></dd></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.  Because the following genome sequencedata were released, we incorporated them to GIB,and now you can search those data.<br><dd><i>Staphylococcus aureus Mu50</i><br><small><br><dd>Reference:<br>Whole genome sequencing of methicillin-resistant Staphylococcus aureus, the major hospital pathogen, Lancet 357, 1225-1240 (2001)<br><dd>Institute:<br>University of Tsukuba College of Medical Technology and Nursing</dd></dd></small><br><dd><i>Sulfolobus solfataricus</i><br><small><br><dd>Reference:<br>Unpublished<br><dd>Institute:<br>Copenhagen University<br></dd></dd></small><br><dd><i>Mycobacterium tuberculosis CDC1551</i><br><small><br><dd>Reference:<br>Whole genome comparison of Mycobacterium tuberculosis clinical and laboratory strains, Unpublished<br><dd>Institute:<br>The Institute for Genomic Research<br></dd></dd></small></dd></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -522,7 +522,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn010426"><a href="#wn010426">Staphylococcus aureus was added to GIB</a></h2>
   <div class="news_date">April 26,2001</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.  Because the genome sequencedata of <i>Staphylococcus aureus</i> was released, we incorporated it to GIB,and now you can search those data.<br><dd><small>Reference: Whole genome sequencing of meticillin-resistant Stapylococcus aureus, The Lancet 357, 1225-1240 (2001)</small></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.  Because the genome sequencedata of <i>Staphylococcus aureus</i> was released, we incorporated it to GIB,and now you can search those data.<br><dd><small>Reference: Whole genome sequencing of meticillin-resistant Stapylococcus aureus, The Lancet 357, 1225-1240 (2001)</small></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -549,7 +549,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn010416"><a href="#wn010416">Streptococcus pyogenes was added to GIB</a></h2>
   <div class="news_date">April 16,2001</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.  Because the genome sequencedata of <i>Streptococcus pyogenes</i>was released, we incorporated it to GIB,and now you can search<br>those data.<br><dd><small>Reference: Complete genome sequence of an M1 strain of Streptococcus pyogenes., Proc. Natl. Acad. Sci. U.S.A. 98 (8), 4658-4663 (2001)</small></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.  Because the genome sequencedata of <i>Streptococcus pyogenes</i>was released, we incorporated it to GIB,and now you can search<br>those data.<br><dd><small>Reference: Complete genome sequence of an M1 strain of Streptococcus pyogenes., Proc. Natl. Acad. Sci. U.S.A. 98 (8), 4658-4663 (2001)</small></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -585,7 +585,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn010327"><a href="#wn010327">Caulobacter crescentus was added to GIB</a></h2>
   <div class="news_date">March 27,2001</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Caulobacter crescentus</i> was released, we incorporated it to GIB,and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Caulobacter crescentus</i> was released, we incorporated it to GIB,and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -612,7 +612,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn010305"><a href="#wn010305">Mycobacterium leprae was added to GIB</a></h2>
   <div class="news_date">March 05,2001</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.Because the genome sequencedata of <i>Mycobacterium leprae</i> was released, we incorporated it to GIB,and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.Because the genome sequencedata of <i>Mycobacterium leprae</i> was released, we incorporated it to GIB,and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -675,7 +675,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn010205"><a href="#wn010205">Pasteurella multocida and Lactococcus lactis were added to GIB</a></h2>
   <div class="news_date">February 05,2001</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Pasteurella multocida</i> and <i>Lactococcus lactis</i> were released, we incorporated them to GIB,and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Pasteurella multocida</i> and <i>Lactococcus lactis</i> were released, we incorporated them to GIB,and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -684,7 +684,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn010205_2"><a href="#wn010205_2">E.coli O157:H7 was added to GIB</a></h2>
   <div class="news_date">February 05,2001</div>
-  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.<br>Because the genome sequencedata of <i>E.coli O157:H7</i> was released, we incorporated it to GIB,and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.<br>Because the genome sequencedata of <i>E.coli O157:H7</i> was released, we incorporated it to GIB,and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>

@@ -7,9 +7,9 @@ related_pages:
   - title: Prefix Letter List
     url: /prefix-e.html
   - title: Categories for Sequence Data
-    url: /documents/data-categories-e.html
+    url: /documents/documents/data-categories-e.html
   - title: Principle of “Hold-Until-Published” data release
-    url: /documents/data-release-policy-e.html
+    url: /documents/documents/data-release-policy-e.html
 ---
 
 ## Definition <a name="definition"></a>
@@ -31,7 +31,7 @@ INSD accession number is composed of alphabet letters and digits.
 The alphabet part is called "prefix". See [the prefix
 list](/prefix-e.html).  
 The formats of INSD accession numbers are varied in accordance with
-[categories of data](/documents/data-categories-e.html) as follows.
+[categories of data](/documents/documents/data-categories-e.html) as follows.
 
 Annotated/Assembled Data
 

@@ -61,7 +61,7 @@ Submission System (NSSS)](/ddbj/web-submission-e.html) .
 
 If you are to submit reads from sequencers, please refer [DRA; DDBJ
 Sequence Read Archive](/dra/index-e.html).  
-Please confirm [Categories for Sequence Data](/documents/data-categories-e.html).
+Please confirm [Categories for Sequence Data](/documents/documents/data-categories-e.html).
 
 ## The Flow of MSS <a name="flow"></a>
 
@@ -211,7 +211,7 @@ If you do not set any hold-date, your data will be released
 immediately.  
 When you set a [hold-date](/ddbj/services/index.html#hold-date) for your
 data, we will release your data according to [Principle of
-"Hold-Until-Published" data release](/documents/data-release-policy-e.html).
+"Hold-Until-Published" data release](/documents/documents/data-release-policy-e.html).
 
 Based on your sequence and annotation files, your data will be processed
 and publicized into the DDBJ format, so called "[flat

@@ -7,7 +7,7 @@ related_pages:
   - title: Prefix Letter List
     url: /prefix-e.html
   - title: Categories for Sequence Data
-    url: /documents/data-categories-e.html
+    url: /documents/documents/data-categories-e.html
   - title: Accession Number Assigned by INSD
     url: /documents/accessions.html
 ---

@@ -8,7 +8,7 @@ related_pages:
     url: services/updt-form-e.html
 ---
 
-See [Categories for Sequence Data](/documents/data-categories-e.html).
+See [Categories for Sequence Data](/documents/documents/data-categories-e.html).
 
 ### DRA: DDBJ Sequece Read Archive, BioProject or BioSample
 

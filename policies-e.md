@@ -101,7 +101,7 @@ The copyrights of the contents published on the websites are the properties of t
 
 ### Data and services
 
-When you kindly describe about using our data and services on academic papers etc., in general, please use [the latest article for DDBJ](/services/references-e.html#ddbj) on Nucleic Acids Res. Database issue as a reference.
+When you kindly describe about using our data and services on academic papers etc., in general, please use [the latest article for DDBJ](/services/services/references-e.html#ddbj) on Nucleic Acids Res. Database issue as a reference.
 
 However, please note the following points.
 
@@ -110,7 +110,7 @@ In case of citation for each sequence record
 If you discuss about the data in detail, please use [primary citation](/ddbj/services/index.html#pcite) for the data as a reference.
 
 In case of citation for each service provided at DDBJ Center  
-: In general, please use [original article for each service](/services/references-e.html) as a reference.
+: In general, please use [original article for each service](/services/services/references-e.html) as a reference.
 
 #### Copyright and limitation of using DDBJ data <a name="copyright"></a>
 
@@ -160,7 +160,7 @@ JPO/KIPO/EPO/USPTO, you do not have to submit the sequence to DDBJ.
 
 Once released from DDBJ, the sequence data becomes part of the public domain, i.e. "official notice".  
 So, when you submit the sequence related to your patent application to DDBJ, set [hold date](/ddbj/services/index.html#holddate) as required.  
-See also [Principle of “Hold-Until-Published” data release](/documents/data-release-policy-e.html).
+See also [Principle of “Hold-Until-Published” data release](/documents/documents/data-release-policy-e.html).
 
 For the impact of DDBJ submission on the patent examination, you should directly confirm to the Patent Office that you applied.  
 DDBJ takes no responsibility for any property or priority issues of the released data.

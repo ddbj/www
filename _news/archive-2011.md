@@ -158,7 +158,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn111003"><a href="#wn111003">GIB サービス再開</a></h2>
   <div class="news_date">2011年10月03日</div>
-  <div class="news_content">節電のために停止しておりました，<a href="/services/past-services-e.html#gib" target="_blank">GIB</a> のサービスを10月3日（月）より再開しました。<br>ユーザのみなさまには，大変長らくお待たせいたしました。<br>どうぞご利用下さい。<br><br></div>
+  <div class="news_content">節電のために停止しておりました，<a href="/services/services/past-services-e.html#gib" target="_blank">GIB</a> のサービスを10月3日（月）より再開しました。<br>ユーザのみなさまには，大変長らくお待たせいたしました。<br>どうぞご利用下さい。<br><br></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>

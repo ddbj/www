@@ -8,7 +8,7 @@ lang: ja
 
 ## 連絡先 <a name="contact"></a>
 
-[メッセージフォーム](/contact.html)よりご連絡ください。
+[メッセージフォーム](/contact-ddbj.html)よりご連絡ください。
 
 {::options parse_block_html="true" /}
 <address>
@@ -19,4 +19,4 @@ FAX : 055-981-6849
 
 </address>
 
-[DDBJ サービスへの問い合わせ](/contact.html#to-ddbj)
+[DDBJ サービスへの問い合わせ](/contact-ddbj.html#to-ddbj)

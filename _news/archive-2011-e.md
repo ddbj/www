@@ -122,7 +122,7 @@ AEAAI0000001-AEAAI0029614 (29,614 entries)AEAAJ0000001-AEAAJ0030206 (30,206 entr
 <div class="news_post_list">
   <h2 class="news_title" id ="wn111003"><a href="#wn111003">Resumed GIB</a></h2>
   <div class="news_date">October 03,2011</div>
-  <div class="news_content"><a href="/services/past-services-e.html#gib" target="_blank">GIB</a> has been resumed since October 3, 2011.<br>For electricity conservation,　we stopped and kept you waiting for a long time.<br>Please use it.</div>
+  <div class="news_content"><a href="/services/services/past-services-e.html#gib" target="_blank">GIB</a> has been resumed since October 3, 2011.<br>For electricity conservation,　we stopped and kept you waiting for a long time.<br>Please use it.</div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
