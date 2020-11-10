@@ -8,7 +8,7 @@ related_pages:
     url: services/updt-form-e.html
 ---
 
-See [Categories for Sequence Data](/data-categories-e.html).
+See [Categories for Sequence Data](/documents/data-categories-e.html).
 
 ### DRA: DDBJ Sequece Read Archive, BioProject or BioSample
 
@@ -30,7 +30,7 @@ See [Categories for Sequence Data](/data-categories-e.html).
 ### Narrowly-defined DDBJ, as a counterpart of GenBank and EMBL-Bank
 
 Making requests  
-: We only accept updating requests from [the original submitter](/ddbj/submission-e.html#submitter) of the entry.<br> 
+: We only accept updating requests from [the original submitter](/ddbj/services/index.html#submitter) of the entry.<br> 
 Therefore if you are not the submitter you will need authorization from the submitter before making requests for the entry.
 
 Accepting your requests  
@@ -38,12 +38,12 @@ Accepting your requests
 We will contact you only if we have queries or require further information.
 
 How to accepting your requests  
-: Depending on the content of your request, we recommend you using a [Application form](/ddbj/updt-form-e.html) or sending by E-email.
+: Depending on the content of your request, we recommend you using a [Application form](/ddbj/update-form-e.html) or sending by E-email.
 
 <table>
   <tbody>
     <tr>
-      <th class="first" rowspan="4"><a href="/ddbj/updt-form-e.html">Application Form</a></th>
+      <th class="first" rowspan="4"><a href="/ddbj/update-form-e.html">Application Form</a></th>
       <td class="second">When your paper was published</td>
     </tr>
     <tr>

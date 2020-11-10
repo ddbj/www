@@ -9,7 +9,7 @@ lang: ja
 <div class="news_post firstpost">
   <h2 class="news_title" id="wn061228"><a href="#wn061228">DDBJ リリース 68 完成</a></h2>
   <div class="news_date">2006年12月28日</div>
-  <div class="news_content">DDBJ が管理・収集している塩基配列データベースは，リリースとして定期的に年4回オンライン上で公開しています。12月28日に DDBJ リリース68 を完成しました。リリース68 のエントリ数は 64,267,978，総塩基数は 68,259,314,742 です。今回のリリースより全てのファイルサイズの最大が 1.5 GB に変更になりました。<br><a href="/download.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
+  <div class="news_content">DDBJ が管理・収集している塩基配列データベースは，リリースとして定期的に年4回オンライン上で公開しています。12月28日に DDBJ リリース68 を完成しました。リリース68 のエントリ数は 64,267,978，総塩基数は 68,259,314,742 です。今回のリリースより全てのファイルサイズの最大が 1.5 GB に変更になりました。<br><a href="/services/index.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -108,7 +108,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn061215"><a href="#wn061215">相同性検索データベースに 16S rRNA データを追加</a></h2>
   <div class="news_date">2006年12月15日</div>
-  <div class="news_content">DDBJ が WWW と E-mail で提供している相同性検索サービスのうち，FASTA， BLAST， SSEARCH の検索対象 データベースに，DDBJ 定期リリースから16S rRNA 配列データを取り出したデータセットを追加しました。詳細は下記の通りです。<br><ul><br><li><b>データベース名：</b>16S rRNA (Prokaryotes)<br></li><li><b>作成方法：</b><ol><li> DDBJ 定期リリースの BCT ディビジョンのフラットファイルを対象に，以下の条件を満たす配列を抽出する。（300bp 以下は除外）</li></ol><ul><li> Feature の Key が "rRNA"</li><li>product 行に "16S", "RRS", "SSU" が含まれる</li></ul></li><li>その後，配列の strand チェックを行い，アンチセンス配列と思われるものを除外した。</li><li><b>Anonymous FTPサイト</b>：<ul><li>ファイル名 ：<a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/16S/">16S.seq.gz</a> (FASTA 形式）</li><li><a href="/download.html">「FTP を利用したリリースデータ取得」ページ</a>からもご利用になれます。</li></ul></li></ul></div>
+  <div class="news_content">DDBJ が WWW と E-mail で提供している相同性検索サービスのうち，FASTA， BLAST， SSEARCH の検索対象 データベースに，DDBJ 定期リリースから16S rRNA 配列データを取り出したデータセットを追加しました。詳細は下記の通りです。<br><ul><br><li><b>データベース名：</b>16S rRNA (Prokaryotes)<br></li><li><b>作成方法：</b><ol><li> DDBJ 定期リリースの BCT ディビジョンのフラットファイルを対象に，以下の条件を満たす配列を抽出する。（300bp 以下は除外）</li></ol><ul><li> Feature の Key が "rRNA"</li><li>product 行に "16S", "RRS", "SSU" が含まれる</li></ul></li><li>その後，配列の strand チェックを行い，アンチセンス配列と思われるものを除外した。</li><li><b>Anonymous FTPサイト</b>：<ul><li>ファイル名 ：<a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/16S/">16S.seq.gz</a> (FASTA 形式）</li><li><a href="/services/index.html">「FTP を利用したリリースデータ取得」ページ</a>からもご利用になれます。</li></ul></li></ul></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -207,7 +207,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn061128"><a href="#wn061128">DDBJ メールマガジン No.29 配信</a></h2>
   <div class="news_date">2006年11月28日</div>
-  <div class="news_content">DDBJ では，隔月でメールマガジンを配信しています。本日第29号を配信しました。 今回は，12月開催の DDBJing 講習会のご案内や，来年実施のコンピュータシステム更新のお知らせなど，重要かつ有用な記事が満載です。ホームページでもご覧になれますが，お申し込みいただいた方にはメール配信をいたします。<br>配信を希望される方は，<a href="/subscribe.html">申込み・変更ページ</a>で簡単に手続きできますので，この機会に是非お申し込み下さい。</div>
+  <div class="news_content">DDBJ では，隔月でメールマガジンを配信しています。本日第29号を配信しました。 今回は，12月開催の DDBJing 講習会のご案内や，来年実施のコンピュータシステム更新のお知らせなど，重要かつ有用な記事が満載です。ホームページでもご覧になれますが，お申し込みいただいた方にはメール配信をいたします。<br>配信を希望される方は，<a href="/subscribe-ddbj.html">申込み・変更ページ</a>で簡単に手続きできますので，この機会に是非お申し込み下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -297,7 +297,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn061110"><a href="#wn061110">「第３回 DDBJing &amp; PDBjing 講習会 in 東工大」開催決定</a></h2>
   <div class="news_date">2006年11月10日</div>
-  <div class="news_content">DDBJ では，塩基配列の登録や DDBJ が提供しているデータベース検索・解析サービスをユーザの方々により有効に利用していただくために，全国各地で「DDBJing 講習会」を開催しています。 講習会では，DDBJ のスタッフが中心となっておこなう講議や実習を通して，サービスについての理解を深め，具体的な使い方を学んでいただいています。<br>2006年12月21-22日に東京工業大学大岡山キャンパス情報ネットワーク演習棟での講習会の開催が決定しましたのでご案内します。 今回は本年2月に開催された講習会と同じく，PDBj（日本蛋白質構造データバンク）との共同開催で，DDBJ ならびに PDBj が提供しているアミノ酸・タンパク質に関するサービスの利用法についての実習と，タンパク質ならびにゲノム研究に関する講議を行ないます。 PC を用いた実習の時間を多く設け，より実践的な知識を身に付けていただける講議内容を予定していますので是非ご参加下さい。11月16日より参加申し込み受け付けを開始予定です。 詳細は<a href="/training.html">DDBJing 講習会のページ</a>をご覧下さい。 皆様のご参加をお待ちしています！   <ul><li>日時：2006年12月21日（木）13時から17時まで<br> 　 　 　     12月22日（金）10時から17時まで</li><li>場所：東京工業大学大岡山キャンパス・大岡山北地区情報ネットワーク演習棟</li><li>対象：DDBJ，PDBj を利用される方をどなたでも歓迎します（定員30名・参加費無料）</li><li>講習内容： PC は，会場に備え付けの PC (MacOSX) を利用していただきます。</li></ul></div>
+  <div class="news_content">DDBJ では，塩基配列の登録や DDBJ が提供しているデータベース検索・解析サービスをユーザの方々により有効に利用していただくために，全国各地で「DDBJing 講習会」を開催しています。 講習会では，DDBJ のスタッフが中心となっておこなう講議や実習を通して，サービスについての理解を深め，具体的な使い方を学んでいただいています。<br>2006年12月21-22日に東京工業大学大岡山キャンパス情報ネットワーク演習棟での講習会の開催が決定しましたのでご案内します。 今回は本年2月に開催された講習会と同じく，PDBj（日本蛋白質構造データバンク）との共同開催で，DDBJ ならびに PDBj が提供しているアミノ酸・タンパク質に関するサービスの利用法についての実習と，タンパク質ならびにゲノム研究に関する講議を行ないます。 PC を用いた実習の時間を多く設け，より実践的な知識を身に付けていただける講議内容を予定していますので是非ご参加下さい。11月16日より参加申し込み受け付けを開始予定です。 詳細は<a href="/activities/index.html">DDBJing 講習会のページ</a>をご覧下さい。 皆様のご参加をお待ちしています！   <ul><li>日時：2006年12月21日（木）13時から17時まで<br> 　 　 　     12月22日（金）10時から17時まで</li><li>場所：東京工業大学大岡山キャンパス・大岡山北地区情報ネットワーク演習棟</li><li>対象：DDBJ，PDBj を利用される方をどなたでも歓迎します（定員30名・参加費無料）</li><li>講習内容： PC は，会場に備え付けの PC (MacOSX) を利用していただきます。</li></ul></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -441,7 +441,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn061020_2"><a href="#wn061020_2">塩基配列登録のための参考資料の更新</a></h2>
   <div class="news_date">2006年10月20日</div>
-  <div class="news_content"><a href="/activities/icm-reports.html#2006">第19回国際実務者会議</a>による決定事項に基づき，<a href="/ddbj/flat-file.html">塩基配列登録に関する参考資料</a>が更新されました。</div>
+  <div class="news_content"><a href="/activities/index.html#2006">第19回国際実務者会議</a>による決定事項に基づき，<a href="/ddbj/flat-file.html">塩基配列登録に関する参考資料</a>が更新されました。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -515,7 +515,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn061006_2"><a href="#wn061006_2">DDBJ メールマガジン No.28 配信</a></h2>
   <div class="news_date">2006年10月06日</div>
-  <div class="news_content">DDBJ では，隔月で<a href="/subscribe.html">メールマガジン</a>を配信しています。 10月4日に，第28号を配信しました。今回は，DDBJ リリース 67 完成のお知らせや第19回国際実務者会議報告が掲載されています。DDBJ スタッフのコラム第17回は，DDBJ チーフアノテータ 真島淳氏による「DDBJ は誰のモノか？」です。カタカナ文字のカッコ良さそうな職業ですが，公共のデータベース運営の裏方には苦労も多く，ちょっぴり愚痴も。<br>このメールマガジンの配信を希望される方は，<a href="/subscribe.html">申込み・変更</a>ページでメールアドレス・氏名・所属などを記入していただくだけで，手続きは完了します。</div>
+  <div class="news_content">DDBJ では，隔月で<a href="/subscribe-ddbj.html">メールマガジン</a>を配信しています。 10月4日に，第28号を配信しました。今回は，DDBJ リリース 67 完成のお知らせや第19回国際実務者会議報告が掲載されています。DDBJ スタッフのコラム第17回は，DDBJ チーフアノテータ 真島淳氏による「DDBJ は誰のモノか？」です。カタカナ文字のカッコ良さそうな職業ですが，公共のデータベース運営の裏方には苦労も多く，ちょっぴり愚痴も。<br>このメールマガジンの配信を希望される方は，<a href="/subscribe-ddbj.html">申込み・変更</a>ページでメールアドレス・氏名・所属などを記入していただくだけで，手続きは完了します。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -524,7 +524,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn061004"><a href="#wn061004">DAD rel. 37 公開</a></h2>
   <div class="news_date">2006年10月04日</div>
-  <div class="news_content">10月4日よりDAD (DDBJ amino acid database) Rel. 37 を公開しています。 DAD rel. 37 はエントリ数が 3,452,697，総アミノ残基数が 1,052,890,111 aa となっています。<br><a href="/download.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
+  <div class="news_content">10月4日よりDAD (DDBJ amino acid database) Rel. 37 を公開しています。 DAD rel. 37 はエントリ数が 3,452,697，総アミノ残基数が 1,052,890,111 aa となっています。<br><a href="/services/index.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -533,7 +533,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn060929"><a href="#wn060929">DDBJ リリース 67 完成</a></h2>
   <div class="news_date">2006年09月29日</div>
-  <div class="news_content">DDBJ が管理・収集している塩基配列データベースは，リリースとして定期的に年4回オンライン上で公開しています。9月29日に DDBJ リリース67 を完成しました。リリース67 のエントリ数は 61,144,621，総塩基数は 65,443,024,193 です。<br><a href="/download.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
+  <div class="news_content">DDBJ が管理・収集している塩基配列データベースは，リリースとして定期的に年4回オンライン上で公開しています。9月29日に DDBJ リリース67 を完成しました。リリース67 のエントリ数は 61,144,621，総塩基数は 65,443,024,193 です。<br><a href="/services/index.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -542,7 +542,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn060929_2"><a href="#wn060929_2">第19回国際実務者会議報告公開</a></h2>
   <div class="news_date">2006年09月29日</div>
-  <div class="news_content">DDBJ, EMBL-Bank/EBI, GenBank/NCBI の３大国際 DNA データバンクは，国際塩基配列データベース共同構築の運営・推進を図るために，国際実務者会議を年１回開催し，三極の活動の年次報告や，<a href="http://www.insdc.org/">INSDC; International Nucleotide Sequence Database Collaboration</a> 運用上の実務的な問題を討論しています。2006年5月に米国で開催された第19回国際実務者会議でのの決定事項から，ユーザの皆様に関連のある内容を，<a href="/activities/icm-reports.html#2006">「第19回国際実務者会議報告報告」</a>としてDDBJ HP で公開しました。この報告は，10月3日に配信予定の DDBJ メールマガジンNo.28 にも掲載されます。</div>
+  <div class="news_content">DDBJ, EMBL-Bank/EBI, GenBank/NCBI の３大国際 DNA データバンクは，国際塩基配列データベース共同構築の運営・推進を図るために，国際実務者会議を年１回開催し，三極の活動の年次報告や，<a href="http://www.insdc.org/">INSDC; International Nucleotide Sequence Database Collaboration</a> 運用上の実務的な問題を討論しています。2006年5月に米国で開催された第19回国際実務者会議でのの決定事項から，ユーザの皆様に関連のある内容を，<a href="/activities/index.html#2006">「第19回国際実務者会議報告報告」</a>としてDDBJ HP で公開しました。この報告は，10月3日に配信予定の DDBJ メールマガジンNo.28 にも掲載されます。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -740,7 +740,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn060804"><a href="#wn060804">DDBJ メールマガジン No.27 配信</a></h2>
   <div class="news_date">2006年08月04日</div>
-  <div class="news_content">DDBJ では，隔月で<a href="/subscribe.html">メールマガジン</a>を配信しています。8月4日に，第27号を配信しました。今回の内容は相同性検索バージョンアップ ，ClustalW web ページ画面レイアウト変更と機能追加 ，DDBJing 講習会資料ダウンロードページ更新などです。 DDBJ スタッフによるよしなしごと小欄第16回は，大量遺伝情報研究室の福地 佐斗志 助手による「夢見る頃を過ぎても」です。<br>このメールマガジンの配信を希望される方は，<a href="/subscribe.html">申込み・変更</a>ページでメールアドレス・氏名・所属などを記入していただくだけで，手続きは完了します。</div>
+  <div class="news_content">DDBJ では，隔月で<a href="/subscribe-ddbj.html">メールマガジン</a>を配信しています。8月4日に，第27号を配信しました。今回の内容は相同性検索バージョンアップ ，ClustalW web ページ画面レイアウト変更と機能追加 ，DDBJing 講習会資料ダウンロードページ更新などです。 DDBJ スタッフによるよしなしごと小欄第16回は，大量遺伝情報研究室の福地 佐斗志 助手による「夢見る頃を過ぎても」です。<br>このメールマガジンの配信を希望される方は，<a href="/subscribe-ddbj.html">申込み・変更</a>ページでメールアドレス・氏名・所属などを記入していただくだけで，手続きは完了します。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -821,7 +821,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn060719"><a href="#wn060719">DAD rel. 36 公開</a></h2>
   <div class="news_date">2006年07月19日</div>
-  <div class="news_content">7月14日よりDAD (DDBJ amino acid database) Rel. 36 を公開しています。 DAD rel. 36 はエントリ数が 3,223,773，総アミノ残基数が 986,599,459 aa となっています。<br><a href="/download.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
+  <div class="news_content">7月14日よりDAD (DDBJ amino acid database) Rel. 36 を公開しています。 DAD rel. 36 はエントリ数が 3,223,773，総アミノ残基数が 986,599,459 aa となっています。<br><a href="/services/index.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -947,7 +947,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn060629_2"><a href="#wn060629_2">DDBJ リリース 66 完成</a></h2>
   <div class="news_date">2006年06月29日</div>
-  <div class="news_content">DDBJ が管理・収集している塩基配列データベースは，リリースとして定期的に年4回オンライン上で公開しています。6月29日に DDBJ リリース66 を完成しました。リリース66 のエントリ数は 58,176,628，総塩基数は<br> 62,945,843,881 です。<br><a href="/download.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
+  <div class="news_content">DDBJ が管理・収集している塩基配列データベースは，リリースとして定期的に年4回オンライン上で公開しています。6月29日に DDBJ リリース66 を完成しました。リリース66 のエントリ数は 58,176,628，総塩基数は<br> 62,945,843,881 です。<br><a href="/services/index.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -1064,7 +1064,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn060605"><a href="#wn060605">DDBJ メールマガジン No.26 配信</a></h2>
   <div class="news_date">2006年06月05日</div>
-  <div class="news_content">DDBJ では，隔月で<a href="/subscribe.html">メールマガジン</a>を配信しています。本日第26号を配信しました。今回の内容は GIB FTP ダウンロードサイト公開，H-Invitational データベースの更新，新規統計 Journal ランキング上位100の追加などです。 DDBJ スタッフによるよしなしごと小欄第15回は，4月にアメリカ芸術科学アカデミー 外国人名誉会員に選出された生命情報・DDBJ 研究センター長 五條堀 孝 教授による「DDBJ 20周年を迎えて」です。<br>このメールマガジンの配信を希望される方は， <a href="/subscribe.html">申込み・変更</a> ページでメールアドレス・氏名・所属などを記入していただくだけで，手続きは完了します。</div>
+  <div class="news_content">DDBJ では，隔月で<a href="/subscribe-ddbj.html">メールマガジン</a>を配信しています。本日第26号を配信しました。今回の内容は GIB FTP ダウンロードサイト公開，H-Invitational データベースの更新，新規統計 Journal ランキング上位100の追加などです。 DDBJ スタッフによるよしなしごと小欄第15回は，4月にアメリカ芸術科学アカデミー 外国人名誉会員に選出された生命情報・DDBJ 研究センター長 五條堀 孝 教授による「DDBJ 20周年を迎えて」です。<br>このメールマガジンの配信を希望される方は， <a href="/subscribe-ddbj.html">申込み・変更</a> ページでメールアドレス・氏名・所属などを記入していただくだけで，手続きは完了します。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -1118,7 +1118,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn060517"><a href="#wn060517">GIB FTPダウンロードサイト公開</a></h2>
   <div class="news_date">2006年05月17日</div>
-  <div class="news_content">GIB(Genome Information Broker) は，DDBJ の真正細菌・古細菌・真核生物ゲノムの統合検索サイトです。このたび，FTP ダウンロードサイトを公開しました。 GIB トップページの「DOWNLOAD」，または<a href="/past-services-e.html#gib">ftp://ftpgib.genes.nig.ac.jp/</a> よりアクセス可能です。これに伴いデータの一括取得が可能になりました。どうぞご利用ください。</div>
+  <div class="news_content">GIB(Genome Information Broker) は，DDBJ の真正細菌・古細菌・真核生物ゲノムの統合検索サイトです。このたび，FTP ダウンロードサイトを公開しました。 GIB トップページの「DOWNLOAD」，または<a href="/services/past-services-e.html#gib">ftp://ftpgib.genes.nig.ac.jp/</a> よりアクセス可能です。これに伴いデータの一括取得が可能になりました。どうぞご利用ください。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -1415,7 +1415,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn060403_3"><a href="#wn060403_3">DDBJ リリース 65 完成</a></h2>
   <div class="news_date">2006年04月03日</div>
-  <div class="news_content">DDBJ が管理・収集している塩基配列データベースは，リリースとして定期的に年4回オンライン上で公開しています。 3月30日に DDBJ リリース65 を完成しました。リリース65 のエントリ数は 55,890,995，総塩基数は 60,564,721,635 です。<br><a href="/download.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
+  <div class="news_content">DDBJ が管理・収集している塩基配列データベースは，リリースとして定期的に年4回オンライン上で公開しています。 3月30日に DDBJ リリース65 を完成しました。リリース65 のエントリ数は 55,890,995，総塩基数は 60,564,721,635 です。<br><a href="/services/index.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -1433,7 +1433,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn060330"><a href="#wn060330">DDBJ メールマガジン No.25 配信</a></h2>
   <div class="news_date">2006年03月30日</div>
-  <div class="news_content">DDBJ では，隔月でメールマガジンを配信しています。本日第25号を配信しました。今回の内容は DDBJing 講習会開催決定，getentry 検索結果取得方法に新機能追加，Web 版 BLAST 結果表示画面に機能追加などです。DDBJ スタッフによるよしなしごと小欄第14回は大遺伝子発現解析研究室の小笠原 理 助手による「ハプロタイプブロックについて一言」です。<br>このメールマガジンの配信を希望される方は， <a href="/subscribe.html">申込み・変更</a>ページでメールアドレス・氏名・所属などを記入していただくだけで，手続きは完了します。</div>
+  <div class="news_content">DDBJ では，隔月でメールマガジンを配信しています。本日第25号を配信しました。今回の内容は DDBJing 講習会開催決定，getentry 検索結果取得方法に新機能追加，Web 版 BLAST 結果表示画面に機能追加などです。DDBJ スタッフによるよしなしごと小欄第14回は大遺伝子発現解析研究室の小笠原 理 助手による「ハプロタイプブロックについて一言」です。<br>このメールマガジンの配信を希望される方は， <a href="/subscribe-ddbj.html">申込み・変更</a>ページでメールアドレス・氏名・所属などを記入していただくだけで，手続きは完了します。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -1847,7 +1847,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn060112"><a href="#wn060112">DAD rel. 34 公開</a></h2>
   <div class="news_date">2006年01月12日</div>
-  <div class="news_content">1月11日よりDAD (DDBJ amino acid database) Rel. 34 を公開しています。 DAD rel. 34 はエントリ数が 2,799,119，総アミノ残基数が 859,887,417 aa となっています。<br><a href="/download.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
+  <div class="news_content">1月11日よりDAD (DDBJ amino acid database) Rel. 34 を公開しています。 DAD rel. 34 はエントリ数が 2,799,119，総アミノ残基数が 859,887,417 aa となっています。<br><a href="/services/index.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>

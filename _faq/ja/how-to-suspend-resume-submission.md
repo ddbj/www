@@ -12,4 +12,4 @@ lang: ja
 
 ## 登録作業を中断したり再開したりするには、どうすれば良いですか
 
-<p><a href="/ddbj/websub-help.html#flow-2-1">入力の中断・再開方法</a> をご参照ください。<!-- Nucleotide Sequence Submission System --></p>
+<p><a href="/ddbj/web-submission-help.html#flow-2-1">入力の中断・再開方法</a> をご参照ください。<!-- Nucleotide Sequence Submission System --></p>

@@ -5,31 +5,31 @@ category: services
 lang: ja
 related_pages:
   - title: BLAST ヘルプ
-    url: /blast-help.html
+    url: /services/blast.html
   - title: getentry ヘルプ
-    url: /getentry-help.html
+    url: /services/getentry.html
   - title: VecScreen ヘルプ
-    url: /vecscreen-help.html
+    url: /services/vecscreen.html
   - title: ClustalW ヘルプ
-    url: /clustalw-help.html
+    url: /services/clustalw.html
   - title: TXSearch ヘルプ
-    url: /txsearch-help.html
+    url: /services/txsearch.html
   - title: 過去のサービス
-    url: /past-services.html
+    url: /services/services/past-services.html
   - title: 関連論文
-    url: /references.html
+    url: /services/services/references.html
   - title: WABI (Web API for Biology)
-    url: /wabi.html
+    url: /services/services/wabi.html
   - title: WABI BLAST ヘルプ
-    url: /wabi_blast-help.html
+    url: /services/wabi-blast.html
   - title: WABI ClustalW ヘルプ
-    url: /wabi_clustalw-help.html
+    url: /services/wabi-clustalw.html
   - title: WABI VecScreen ヘルプ
-    url: /wabi_vecscreen-help.html
+    url: /services/wabi-vecscreen.html
   - title: WABI MAFFT ヘルプ
-    url: /wabi_mafft-help.html
+    url: /services/wabi-mafft.html
   - title: Pipeline ヘルプ
-    url: /pipeline-help.html
+    url: /services/pipeline.html
 ---
 
 ## 検索対象データベース
@@ -182,7 +182,7 @@ Feature/Qualifier の部分一致検索 Feature Key 、 Qualifier Name 、 Quali
             <td><span>mt</span></td>
             <td>
 <a href="/ddbj/flat-file.html#MoleculeType"><span>LOCUS</span> に記載された「塩基配列の分子タイプ」</a><br>
-                <a href="/column/patent.html#4">PRT はJPO, KIPO 経由のアミノ酸特許配列データ</a>
+                <a href="/activities/patent.html#4">PRT はJPO, KIPO 経由のアミノ酸特許配列データ</a>
 </td>
             <td><span>mRNA</span></td>
           </tr>

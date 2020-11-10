@@ -807,7 +807,7 @@ FEATURES             Location/Qualifiers
 
 ### F01) polymorphism and variation <a name="F01"></a>
 
-[多型関連研究における同一配列の代表データ登録](/ddbj/represent.html)もご参照ください。
+[多型関連研究における同一配列の代表データ登録](/ddbj/representative-sequence.html)もご参照ください。
 
 <pre><code>DEFINITION  Homo sapiens IGF1R mRNA for insulin-like growth factor I receptor,
             partial cds. 

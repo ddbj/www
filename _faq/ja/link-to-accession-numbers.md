@@ -12,4 +12,4 @@ lang: ja
 
 ## DDBJ に登録されたデータ（アクセッション番号）へ直接リンクを張る方法はありますか。
 
-<a href="/getentry-help.html#ge_createlinks">DDBJ エントリへのリンク設定方法</a>  をご参照ください。
+<a href="/services/getentry.html#ge_createlinks">DDBJ エントリへのリンク設定方法</a>  をご参照ください。

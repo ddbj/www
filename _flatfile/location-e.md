@@ -27,7 +27,7 @@ is as follows.
 
 
 The following description of location can not be entered on [Nucleotide
-Sequence Submission System](/ddbj/websub-e.html).  
+Sequence Submission System](/ddbj/web-submission-e.html).  
 Please describe details at "Submission Information"; on Nucleotide
 Sequence Submission System, or use [Mass Submission System](mss-e.html).
 

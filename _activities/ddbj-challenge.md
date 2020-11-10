@@ -158,4 +158,4 @@ DDBJ Challenge Committee
 
 本チャレンジは遺伝研所内倫理審査委員会(IRB)により倫理審査承認を受けております。
 
-お問い合わせ：[DDBJへのお問い合わせ](/contact.html#to-ddbj) の「講習会」からご連絡ください。
+お問い合わせ：[DDBJへのお問い合わせ](/contact-ddbj.html#to-ddbj) の「講習会」からご連絡ください。

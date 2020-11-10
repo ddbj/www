@@ -10,25 +10,25 @@ related_pages:
   - title: DDBJ スタッフの講演発表（2001-2006）
     url: /activities/past-presentations.html
   - title: 相同性検索プログラムBLASTの内部構造
-    url: /column/blast_doc.html
+    url: /activities/blast-doc.html
   - title: DDBJ アノテータの業務紹介
-    url: /column/annotator.html
+    url: /activities/curators.html
   - title: 「ユーザーの皆様へ，お願いです！」
-    url: /column/request.html
+    url: /activities/request.html
   - title: DDBJ での特許関連配列データの公開業務の紹介
-    url: /column/patent.html
+    url: /activities/patent.html
   - title: DDBJ スタッフコラム
-    url: /column/staffcolumn.html
+    url: /activities/staff-column.html
   - title: 遺伝子とゲノム
-    url: /column/genegenome.html
+    url: /activities/gene-genome.html
   - title: 進化ゲノム学とは
-    url: /column/introevog.html
+    url: /activities/introevog.html
   - title: FASTAとBLASTについて
-    url: /column/homology_doc.html
+    url: /activities/homology-doc.html
   - title: DDBJ Mail Magazine
-    url: /subscribe.html
+    url: /subscribe-ddbj.html
   - title: DDBJ データ解析チャレンジ
-    url: /activities/ddbj-challenge.html
+    url: /activities/training-ddbj-challenge.html
 ---
 
 DDBJ の塩基配列解析ツール「DDBJ Read Annotation Pipeline」ついて，「DDBJ Read Annotation Pipeline」開発担当者 が DDBJ Mail Magazine に連載したコラムをまとめました。

@@ -150,7 +150,7 @@ JGA tool と同様，NBDC から通知される利用アカウントのユーザ
 
 {::options parse_block_html="true" /}
 <div class="attention red">
-データファイルのディスク郵送を希望する場合は必ず事前に [JGA にご連絡ください](/contact.html)。
+データファイルのディスク郵送を希望する場合は必ず事前に [JGA にご連絡ください](/contact-ddbj.html)。
 </div>
 
 利用承認された，郵送を希望するDataset を格納するために十分な容量の USB 接続ハードディスク (ファイルシステムは NTFS、ext3 もしくは ext4 にしてください) をご用意ください。ファイルシステムは事前に必ずウイルスチェックを実施し，空の状態でお送りください。

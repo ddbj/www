@@ -12,4 +12,4 @@ lang: ja
 
 ## vector 配列のコンタミを除くには どうすればよいでしょうか
 
-<p><a href="/ddbj/submission.html#sequence">塩基配列登録の前に</a>をご参照ください。<br>ご登録の前に <a href="http://ddbj.nig.ac.jp/vecscreen/?lang=ja">VecScreen</a> にてご確認をお願いいたします。</p>
+<p><a href="/ddbj/services/index.html#sequence">塩基配列登録の前に</a>をご参照ください。<br>ご登録の前に <a href="http://ddbj.nig.ac.jp/vecscreen/?lang=ja">VecScreen</a> にてご確認をお願いいたします。</p>

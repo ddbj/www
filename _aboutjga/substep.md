@@ -25,7 +25,7 @@ JGA 全体の説明については[こちらの資料](https://drive.google.com/
 
 ### エクセルファイルへの記入 <a name="enter-metadata-into-excel"></a>
 
-メタデータ記入用エクセルファイルを下記よりダウンロードし、内容を英語で記入してください。メタデータの説明は[こちらのページ](/jga/submission.html)をご参考ください。
+メタデータ記入用エクセルファイルを下記よりダウンロードし、内容を英語で記入してください。メタデータの説明は[こちらのページ](/jga/services/index.html)をご参考ください。
 
 [![JGA メタデータ記入用エクセル]({{ site.baseurl }}/assets/images/parts/download.png "JGA メタデータ記入用エクセル"){:.w40}.]({{ site.baseurl }}/assets/files/submission/JGA_metadata.xlsx)
 
@@ -91,7 +91,7 @@ JGA tool を起動し，[NBDC](http://humandbs.biosciencedbc.jp/) 担当者か�
 
 エクセルファイルがサーバにセキュアにアップロードされます。下部ウィンドウにエラーメッセージが表示されますが無視してください。
 
-エクセルファイルをアップロードした後，[メールで JGA 担当者にご連絡ください](/contact.html)。
+エクセルファイルをアップロードした後，[メールで JGA 担当者にご連絡ください](/contact-ddbj.html)。
 
 {::nomarkdown}
 {% include image.html url="submission/jgasub3.jpg" caption="アップロードされたエクセルファイル" class="w500" %}
@@ -148,13 +148,13 @@ Data オブジェクトに fastq や bam ファイルなどの個人レベルの
 メタデータとデータファイルに以下の検証処理が実施され，データファイルは暗号化されて JGA サーバにアップロードされます。
 
   - メタデータ XML の [JGA XML schema](https://github.com/ddbj/pub/tree/master/docs/jga) に対する検証
-  - [メタデータオブジェクト](/jga/submission.html#metadata)相互の関係
+  - [メタデータオブジェクト](/jga/services/index.html#metadata)相互の関係
   - Data と Analysis XML に記載されているデータファイルの存在チェック
-  - データファイルアップロード前後での [md5 値](/dra/submission.html#supplement-md5)の一致チェック
+  - データファイルアップロード前後での [md5 値](/dra/services/index.html#supplement-md5)の一致チェック
 
-全ての検証処理を通過すると，下部ウィンドウに \[INFO\] upload succeeded. を表示されます。登録が査定され，問題がなければ [JGA アクセッション番号](/jga/submission.html#accession)が発行されます。
+全ての検証処理を通過すると，下部ウィンドウに \[INFO\] upload succeeded. を表示されます。登録が査定され，問題がなければ [JGA アクセッション番号](/jga/services/index.html#accession)が発行されます。
 
-エラーメッセージが表示された場合は[メールで JGA 担当者にご連絡ください](/contact.html)。
+エラーメッセージが表示された場合は[メールで JGA 担当者にご連絡ください](/contact-ddbj.html)。
 
 {::nomarkdown}
 {% include image.html url="submission/jgasub5.jpg" caption="検証処理を通過したメタデータ XML とデータファイル" class="w500" %}

@@ -5,11 +5,11 @@ category: services
 lang: ja
 related_pages:
   - title: WABI BLAST ヘルプ
-    url: /wabi_blast-help.html
+    url: /services/wabi-blast.html
   - title: WABI ClustalW ヘルプ
-    url: /wabi_clustalw-help.html
+    url: /services/wabi-clustalw.html
   - title: WABI MAFFT ヘルプ
-    url: /wabi_mafft-help.html
+    url: /services/wabi-mafft.html
 ---
 
 ## VECSCREEN の job の投入 <a name="job"></a>

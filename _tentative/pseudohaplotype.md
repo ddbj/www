@@ -38,7 +38,7 @@ Principal と Alternate pseudohaplotype に対応するプロジェクトをそ�
 サンプルは pseudohaplotype で共通であるため、一つのゲノム用サンプルを登録します。
 
   - パッケージはゲノム用の
-    [MIGS](/biosample/submission.html#Genomic_Sequences_Sample) を選択。
+    [MIGS](/biosample/services/index.html#Genomic_Sequences_Sample) を選択。
   - Principal と alternate pseudohaplotype が由来する共通サンプルを一つ登録。
   - Pseudohaplotype に遺伝子アノテーションを付与する場合、Principal と Alternate で使う共通の
     [locus tag prefix](/ddbj/locus_tag.html) を locus\_tag\_prefix

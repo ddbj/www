@@ -1017,7 +1017,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn020201"><a href="#wn020201">第６回 DDBJing 講習会開催</a></h2>
   <div class="news_date">2002年02月01日</div>
-  <div class="news_content">1月30, 31日に国立遺伝学研究所生命情報・ DDBJ 研究センターにて第６回DDBJing 講習会を開催しました。 参加者は２９名で，PC 持参でインターネットを利用した講議を受けました。 DDBJing 講習会については<a href="/training.html">こちらのページ</a>をご覧下さい。</div>
+  <div class="news_content">1月30, 31日に国立遺伝学研究所生命情報・ DDBJ 研究センターにて第６回DDBJing 講習会を開催しました。 参加者は２９名で，PC 持参でインターネットを利用した講議を受けました。 DDBJing 講習会については<a href="/activities/index.html">こちらのページ</a>をご覧下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>

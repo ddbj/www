@@ -319,7 +319,7 @@ Please [contact GEA team](/contact-e.html) to submit additional files.
 
 Sequencing raw data files need to be pre-registered to DDBJ Sequence
 Read Archive (DRA). Please see the [accepted data
-files](/dra/submission-e.html#run-data-files) for DRA.
+files](/dra/services/index.html#run-data-files) for DRA.
 
 
 ### Processed data files <a name="seq_proc"></a>

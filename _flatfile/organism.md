@@ -63,11 +63,11 @@ taxonomy database に登録されていない「生物名」の場合は、塩�
 <a name="private"></a>
 DDBJ から当該塩基配列データが公開されるまでは、taxonomy database においても、「生物名」は公開されません。  
 また、taxonomy database に登録された生物名であっても、必要であれば、いつでも生物名の更新をご依頼ください。  
-更新依頼は、[登録データの修正・更新](/ddbj/updt.html)をご参照ください。
+更新依頼は、[登録データの修正・更新](/ddbj/update.html)をご参照ください。
 
 原則として、「生物名」には、taxonomy database における "scientific name" 以外は、記載できませんが、taxonomy database における synonym あるいは lineage などの扱いに疑問がある場合は、典拠となる論文などを示していただくことにより、taxonomy database の修正を管理者に依頼し検討することができます。  
 ただし、lineage 解釈などの問題は諸説の１つを採用する方針であり、これに関しましては、ご希望に添えないこともあり得ます。  
-Taxonomy database の間違いなどを発見された場合は、[ご連絡](/contact.html#to-ddbj)ください。  
+Taxonomy database の間違いなどを発見された場合は、[ご連絡](/contact-ddbj.html#to-ddbj)ください。  
 学名のスペルミスなどに関しましては修正します。
 
 ## 生物名入力におけるカテゴリー (Category) について<a name="deasy"></a> 

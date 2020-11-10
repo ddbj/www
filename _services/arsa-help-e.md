@@ -7,21 +7,21 @@ related_pages:
   - title: BLAST Help
     url: /blast-help-e.html
   - title: getentry Help
-    url: /getentry-help-e.html
+    url: /services/getentry-e.html
   - title: TXSearch Help
-    url: /txsearch-help-e.html
+    url: /services/txsearch-e.html
   - title: ClustalW Help
-    url: /clustalw-help-e.html
+    url: /services/clustalw-e.html
   - title: VecScreen Help
-    url: /vecscreen-help-e.html
+    url: /services/vecscreen-e.html
   - title: References
-    url: /references-e.html
+    url: /services/references-e.html
   - title: Services in past
-    url: /past-services-e.html
+    url: /services/past-services-e.html
   - title: WABI (Web API for Biology)
     url: /wabi-e.html
   - title: WABI BLAST Help
-    url: /wabi_blast-help-e.html
+    url: /services/wabi-blast-e.html
 ---
 
 ## Searchable DataBases <a name="database"></a>

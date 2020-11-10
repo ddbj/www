@@ -20,13 +20,13 @@ files.</span>
 In both de-multiplexed and multiplexed submissions, describe methods,
 name and version of kit (e.g., Smart-seq2, 10x, Drop-seq) used for
 single-cell library construction in [Library Construction
-Protocol](/dra/submission-e.html#Library_Construction_Protocol) of the
+Protocol](/dra/services/index.html#Library_Construction_Protocol) of the
 DRA Experiment. For 10x technology, describe version of 10x chemistry
 (e.g., v1, v2).
 
 #### Data file formats <a name="data-file-format"></a>
 
-Submit raw data in [fastq or bam](/dra/submission-e.html#run-data-files)
+Submit raw data in [fastq or bam](/dra/services/index.html#run-data-files)
 to DRA. Include barcode sequences.
 
 For 10x bam files without barcode sequences, submit fastq instead.
@@ -54,7 +54,7 @@ information in sample attributes.
 
 ### DRA <a name="multiplexed-dra"></a> 
 
-Submit [fastq or bam](/dra/submission-e.html#run-data-files)
+Submit [fastq or bam](/dra/services/index.html#run-data-files)
 de-multiplexed for each cell (sample).
 
 ### GEA <a name="de-multiplexed-gea"></a>
@@ -77,7 +77,7 @@ of cells) in BioSample.
 
 ### DRA <a name="multiplexed-dra"></a>
 
-Submit [fastq or bam](/dra/submission-e.html#run-data-files) including
+Submit [fastq or bam](/dra/services/index.html#run-data-files) including
 barcode sequences. For 10x bam files without barcode sequences, submit
 fastq ([Generating FASTQs with cellranger
 mkfastq](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/mkfastq)).

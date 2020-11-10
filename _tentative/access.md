@@ -25,7 +25,7 @@ TEL : 055-981-6853
 そのため、電話によるお問い合わせは受け付けておりません。  
 何卒ご了承ください。
 
-お問い合わせは [フォーム]({{ site.baseurl }}/home/contact.html) をご利用ください。
+お問い合わせは [フォーム]({{ site.baseurl }}/home/contact-ddbj.html) をご利用ください。
 
 ## 遺伝研構内の地図 <a name="cibmap"></a>
 

@@ -46,7 +46,7 @@ DDBJ では[情報・システム研究機構](http://www.rois.ac.jp/) (ROIS) �
 : アクセス制限データベース [Japanese Genotype-phenotype Archive (JGA)](/jga/index.html) へご登録ください。<br>JGA にデータを登録するためには、事前に[科学技術振興機構 バイオサイエンスデータベースセンター（NBDC）ヒトデータ審査委員会事務局](https://humandbs.biosciencedbc.jp/data-submission)に登録予定データの提供申請書を提出し、委員会で審査の上、承認されている必要があります。
 
 アクセス制限が必要ではない場合  
-: 非アクセス制限データベースである [DDBJ Sequence Read Archive (DRA)](/dra/index.html)、または、[DDBJ データベース](/ddbj/websub.html)へご登録ください。<br>個人識別符号（\*2）に該当するデータを非アクセス制限データベースへ登録するためには、事前に [NBDC ヒトデータ審査委員会事務局](https://humandbs.biosciencedbc.jp/data-submission)に登録予定データの提供申請書を提出し、委員会で審査の上、承認されている必要があります。原則として「[登録の前に](#before)」の確認項目二点に加え、インフォームド・コンセント説明同意文書内にデータがデータベースから制限なく一般公開される旨が記載されている必要があります。<br>個人識別符号に該当しないデータ登録に対して審査を希望する場合は [NBDC ヒトデータ審査委員会事務局](https://humandbs.biosciencedbc.jp/data-submission)にお問い合わせください。
+: 非アクセス制限データベースである [DDBJ Sequence Read Archive (DRA)](/dra/index.html)、または、[DDBJ データベース](/ddbj/web-submission.html)へご登録ください。<br>個人識別符号（\*2）に該当するデータを非アクセス制限データベースへ登録するためには、事前に [NBDC ヒトデータ審査委員会事務局](https://humandbs.biosciencedbc.jp/data-submission)に登録予定データの提供申請書を提出し、委員会で審査の上、承認されている必要があります。原則として「[登録の前に](#before)」の確認項目二点に加え、インフォームド・コンセント説明同意文書内にデータがデータベースから制限なく一般公開される旨が記載されている必要があります。<br>個人識別符号に該当しないデータ登録に対して審査を希望する場合は [NBDC ヒトデータ審査委員会事務局](https://humandbs.biosciencedbc.jp/data-submission)にお問い合わせください。
 
 \*2 個人識別符号については [NBDC の FAQ](https://humandbs.biosciencedbc.jp/faq#faq-5) を参照してください。
 個人識別符号の定義は[個人情報保護委員会](//www.ppc.go.jp/)の[「個人情報の保護に関する法律についてのガイドライン（通則編）」](//www.ppc.go.jp/personal/legal/)に示されています。  
@@ -58,7 +58,7 @@ DDBJ では[情報・システム研究機構](http://www.rois.ac.jp/) (ROIS) �
   - [ヒトゲノム・遺伝子解析研究に関する倫理指針](http://www.lifescience.mext.go.jp/bioethics/hito_genom.html)
   - [NBDC ヒトデータ共有ガイドライン](https://humandbs.biosciencedbc.jp/guidelines/data-sharing-guidelines)
   - [NBDC ヒトデータベース よくあるご質問（FAQ）](https://humandbs.biosciencedbc.jp/faq)
-  - [ヒトデータに関するデータベース事業について研究対象者等に公開すべき事項](/reaserch-participant-notification.html)
+  - [ヒトデータに関するデータベース事業について研究対象者等に公開すべき事項](/human-data-sharing.html)
 
 ## 使用許諾 <a name="license"></a>
 
@@ -76,7 +76,7 @@ DDBJ では[情報・システム研究機構](http://www.rois.ac.jp/) (ROIS) �
   - [AMED Genome group sharing Database (AGD)](/agd/index.html) に関しましては、NBDCグループ共有データベースの[データ利用規定](//gr-sharingdbs.biosciencedbc.jp/agd-data-use) に従います。
   - DDBJ センターが二次的利用・提供しているデータ・サービスに関しましては、各提供元の規定に従います。
   - DDBJ を介して利用可能なソフトウエアの利用制限は各提供元に従います。
-  - DDBJ が [anonymous FTP](/download.html) によるダウンロードや各サービスで提供しているデータの利用制限は、以下から参照可能な利用規定に準拠します。
+  - DDBJ が [anonymous FTP](/services/index.html) によるダウンロードや各サービスで提供しているデータの利用制限は、以下から参照可能な利用規定に準拠します。
 
 | database                                                                      | FTP | getentry | ARSA | BLAST |
 | ----------------------------------------------------------------------------- | --- | -------- | ---- | ----- |
@@ -98,15 +98,15 @@ DDBJ では[情報・システム研究機構](http://www.rois.ac.jp/) (ROIS) �
 
 ### データとサービス
 
-学術論文などで引用いただける場合、通常は、Nucleic Acids Res. Database issue における [DDBJ に関する最新論文](/references.html#ddbj)の引用をお願いいたします。
+学術論文などで引用いただける場合、通常は、Nucleic Acids Res. Database issue における [DDBJ に関する最新論文](/services/services/references.html#ddbj)の引用をお願いいたします。
 
 ただし、以下の点についてご注意ください。
 
 個別の配列データを引用する場合  
-: 通常は[アクセッション番号](/acc_def.html)を、必要に応じて、そのバージョンとともに引用することで十分です。<br>個別のデータに関して詳細な内容について言及する場合は各配列データの [primary citation](/ddbj/submission.html#pcite) を引用することが適切です。
+: 通常は[アクセッション番号](/documents/accessions.html)を、必要に応じて、そのバージョンとともに引用することで十分です。<br>個別のデータに関して詳細な内容について言及する場合は各配列データの [primary citation](/ddbj/services/index.html#pcite) を引用することが適切です。
 
 DDBJ センターが提供する個別のサービスについて引用する場合  
-: 通常は[各サービスに関するオリジナル論文](/references.html)を引用する方が適切です。
+: 通常は[各サービスに関するオリジナル論文](/services/services/references.html)を引用する方が適切です。
 
 #### DDBJ データの著作権について <a name="copyright"></a>
 
@@ -138,7 +138,7 @@ DDBJ は GenBank や EMBL-Bank 同様なんらの利用制限も付加しませ�
 以下もご参照ください。
 
   - [登録データの取り扱いについて](/insdc.html#policy)
-  - [登録に附随する権利と義務](/ddbj/submission.html#right)
+  - [登録に附随する権利と義務](/ddbj/services/index.html#right)
 
 ## 特許・知的所有権と優先権 <a name="ownership"></a>
 
@@ -151,15 +151,15 @@ DDBJ は GenBank や EMBL-Bank 同様なんらの利用制限も付加しませ�
 
 参照  
 : 特許出願に含まれる塩基配列の公開例:[DL000001](http://getentry.ddbj.nig.ac.jp/getentry/na/DL000001/?filetype=html)
-: [特許出願に含まれる配列データの提供](/ddbj/pat-data.html)
+: [特許出願に含まれる配列データの提供](/ddbj/patent-data.html)
 
 そのため、当該配列が JPO/KIPO/EPO/USPTO への出願書類に記載されている場合、DDBJ に別途ご登録いただく必要はございません。
 
 ### 特許出願に関連する塩基配列の登録に関する注意
 
 DDBJ から公開された配列は「公知」の扱いになります。  
-特許出願に関連する塩基配列を DDBJ に登録する場合、必要に応じて、[公開予定日](/ddbj/submission.html#holddate)を指定してください。  
-その際は[データ公開原則](/data-release-policy.html)にご注意ください。
+特許出願に関連する塩基配列を DDBJ に登録する場合、必要に応じて、[公開予定日](/ddbj/services/index.html#holddate)を指定してください。  
+その際は[データ公開原則](/documents/documents/data-release-policy.html)にご注意ください。
 
 DDBJ への登録が特許審査に与える影響に関しましては、直接、出願する特許庁へ ご確認ください。  
 DDBJ は配列データの登録・公開により生じた 所有権、優先権などに関する いかなる問題にも、一切の責任を負いません。
@@ -167,7 +167,7 @@ DDBJ は配列データの登録・公開により生じた 所有権、優先�
 日本国特許庁から送られた配列データは原本のまま保持しなければならないため、後に変更・修正を加える場合、別途、DDBJ へ新規に登録する扱いになります。最終的には両者ともに公開されます。
 
 特許出願と並行して、別途、DDBJ へ登録・公開をご希望の場合は、データ登録前に
-[お問い合わせ](/contact.html)の「塩基配列登録システム（NSSS）」を選択してご連絡ください。
+[お問い合わせ](/contact-ddbj.html)の「塩基配列登録システム（NSSS）」を選択してご連絡ください。
 
 ### データの優先権 <a name="priority"></a>
 
@@ -201,7 +201,7 @@ DDBJ では、上位機構である [情報・システム研究機構](http://w
 DDBJ センターは 提供するデータが正しくあるべく維持に努めますが、一方で、DDBJ センターは 提供するデータに関してその完全性、正確さ、信頼性についていかなる種類の表明も保証もしておりません。加えて、いかなる法的責任、商業的、その他の目的の適性義務、あるいは、データの使用が特許その他のいかなる権利の侵害にも相当しないといった点に関して DDBJ センターは責任義務を負わないものとします。このため、DDBJ センターの提供したデータが
 どのように解釈され、信用され、使用された場合でも、それは厳密に使用者の自己責任の下で行われたことになります。
 
-[特許出願に含まれる配列データの提供](/ddbj/pat-data.html)もあわせて ご参照ください。
+[特許出願に含まれる配列データの提供](/ddbj/patent-data.html)もあわせて ご参照ください。
 
 ## 推奨するブラウザ <a name="browser"></a>
 

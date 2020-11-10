@@ -28,19 +28,19 @@ GEA はマイクロアレイや次世代シークエンサから出力される�
 <li>HiC-seq</li>
 <li>methyl-seq、bisulfite-seq</li>
 </ul>
-<p>データが GEA に登録可能かどうか不明な場合は<a href="/contact.html">お問い合わせください</a>。</p>
+<p>データが GEA に登録可能かどうか不明な場合は<a href="/contact-ddbj.html">お問い合わせください</a>。</p>
 </td>
 <td>
 <ul>
 <li>アクセス制限が必要なヒトデータ (<a href="/jga/index.html">JGA</a> に登録してください)</li>
-<li>アセンブルされた転写産物 (<a href="/dra/submission.html">DRA</a> と <a href="/ddbj/tsa.html">DDBJ Transcriptome Shotgun Assembly</a> に登録してください)</li>
-<li>全ゲノムシークエンス (<a href="/dra/submission.html">DRA</a> と <a href="/ddbj/wgs.html">DDBJ WGS</a> に登録してください)</li>
-<li>メタゲノムシークエンス (<a href="/dra/submission.html">DRA</a> と <a href="/ddbj/environmental.html">DDBJ Environmental sequence</a> に登録してください)</li>
-<li>リシークエンス、塩基配列変異やコピー数変異 (<a href="/dra/submission.html">DRA</a> と <a href="https://www.ncbi.nlm.nih.gov/snp/docs/submission/hts_launch_and_introductory_material/">NCBI (human-only)</a> もしくは <a href="https://www.ebi.ac.uk/eva/">EBI variation resource</a> に登録してください)</li>
-<li>survey シークエンスやエキソームシークエンス (<a href="/dra/submission.html">DRA</a> に登録してください)</li>
+<li>アセンブルされた転写産物 (<a href="/dra/services/index.html">DRA</a> と <a href="/ddbj/tsa.html">DDBJ Transcriptome Shotgun Assembly</a> に登録してください)</li>
+<li>全ゲノムシークエンス (<a href="/dra/services/index.html">DRA</a> と <a href="/ddbj/wgs.html">DDBJ WGS</a> に登録してください)</li>
+<li>メタゲノムシークエンス (<a href="/dra/services/index.html">DRA</a> と <a href="/ddbj/environmental.html">DDBJ Environmental sequence</a> に登録してください)</li>
+<li>リシークエンス、塩基配列変異やコピー数変異 (<a href="/dra/services/index.html">DRA</a> と <a href="https://www.ncbi.nlm.nih.gov/snp/docs/submission/hts_launch_and_introductory_material/">NCBI (human-only)</a> もしくは <a href="https://www.ebi.ac.uk/eva/">EBI variation resource</a> に登録してください)</li>
+<li>survey シークエンスやエキソームシークエンス (<a href="/dra/services/index.html">DRA</a> に登録してください)</li>
 <li>メタボロミクスやプロテオミクスデータ (プロテオミクスデータは <a href="https://jpostdb.org/">jPOST</a> に登録してください)</li>
 </ul>
-<p>これらのデータの登録先については <a href="/submission.html">DDBJ ウェブサイト</a>を参照してください。</p>
+<p>これらのデータの登録先については <a href="/services/index.html">DDBJ ウェブサイト</a>を参照してください。</p>
 </td>
 </tbody>
 </table>
@@ -49,7 +49,7 @@ GEA はマイクロアレイや次世代シークエンサから出力される�
 <div class="attention">
   <span class="red">ヒトを対象とした研究データの登録について</span>  
   : 研究対象者に由来するデータを DDBJ
-    センターが運営するデータベースに登録する場合、研究対象者の尊厳及び人権は、適用されるべき法令、指針、ガイドライン、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。原則として、研究対象者を直接特定し得る情報はメタデータから取り除いてください。 ヒトを対象とした研究データを登録する場合は「[ヒトを対象とした研究データの登録について](/policies.html#human)」を熟読してください。
+    センターが運営するデータベースに登録する場合、研究対象者の尊厳及び人権は、適用されるべき法令、指針、ガイドライン、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。原則として、研究対象者を直接特定し得る情報はメタデータから取り除いてください。 ヒトを対象とした研究データを登録する場合は「[ヒトを対象とした研究データの登録について](/service-policy.html#human)」を熟読してください。
 </div>
 
 ## 登録ファイル <a name="sub-files"></a>
@@ -65,10 +65,10 @@ GEA はマイクロアレイや次世代シークエンサから出力される�
 
 ### シークエンシング実験 <a name="seqxp"></a>
 
-[シークエンシング実験の登録](/gea/submit-seq.html)
+[シークエンシング実験の登録](/gea/submit-sequence.html)
 
   - [IDF と SDRF メタデータ](/gea/metadata.html)
-  - [生データ (先行して](/gea/datafile.html#seq_raw) [DRA](/dra/submission.html) に登録しておく必要があります)
+  - [生データ (先行して](/gea/datafile.html#seq_raw) [DRA](/dra/services/index.html) に登録しておく必要があります)
   - [解析済みデータ](/gea/datafile.html#seq_proc)
 
 ## アクセッション番号 <a name="acc"></a>
@@ -82,7 +82,7 @@ GEA の Experiment と Array design に対して以下の形式のアクセッ�
 
 ## データ公開 <a name="rel"></a>
 
-関連する論文が公表されるまでデータを非公開にすることができます。四年後までの公開予定日を設定し、随時延長することができます。登録されたデータは[データ公開原則](/data-release-policy.html)に従って公開されます。
+関連する論文が公表されるまでデータを非公開にすることができます。四年後までの公開予定日を設定し、随時延長することができます。登録されたデータは[データ公開原則](/documents/documents/data-release-policy.html)に従って公開されます。
 
 ## Reviewer access <a name="reviewer-access"></a>
 
@@ -90,4 +90,4 @@ GEA データベースに非公開 experiment と array design が登録され�
 
 ## 更新 <a name="update"></a>
 
-GEA に登録されたデータを更新・削除する場合は [GEA チームに連絡](/contact.html)してください。
+GEA に登録されたデータを更新・削除する場合は [GEA チームに連絡](/contact-ddbj.html)してください。

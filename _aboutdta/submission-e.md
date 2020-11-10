@@ -24,7 +24,7 @@ Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi).
 
 {::options parse_block_html="true" /}
 <div class="attention red">
-[DDBJ Sequence Read Archive](/dra/submission-e.html#dra)accepts trace
+[DDBJ Sequence Read Archive](/dra/services/index.html#dra)accepts trace
 data. Please consider to submit trace data to DRA.
 </div>
 
@@ -1320,7 +1320,7 @@ F-3NB691000033  3NB691000033    3NB691  3NB691000033    ./traces/F-3NB691000033.
 
 DTA creates a directory for data submission. Please contact to [the DTA
 team](/contact-e.html). Transfer files by SCP according to the
-[manual](/dra/submission-e.html#upload-sequence-data).
+[manual](/dra/services/index.html#upload-sequence-data).
 
 #### Submission directory example <a name="Submission_directory_example"></a>
 

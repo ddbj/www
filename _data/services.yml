@@ -7,7 +7,7 @@ items:
     help:
       en: getentry-help-e
       ja: getentry-help
-    wabi: https://www.ddbj.nig.ac.jp/getentry-help.html#ge_program
+    wabi: https://www.ddbj.nig.ac.jp/services/getentry.html#ge_program
     description:
       en: DDBJ annotated/assembled data retrieval by accession numbers
       ja: アクセッション番号などによる DDBJ annotated/assembled 塩基配列エントリの検索
@@ -27,7 +27,7 @@ items:
     help:
       en: arsa-help-e
       ja: arsa-help
-    wabi: https://www.ddbj.nig.ac.jp/arsa-help.html
+    wabi: https://www.ddbj.nig.ac.jp/services/arsa.html
     description:
       en: DDBJ annotated/assembled data retrieval by accession numbers and keywords
       ja: 高速なキーワードによる DDBJ annotated/assembled 塩基配列エントリの検索
@@ -82,7 +82,7 @@ items:
     help:
       en: blast-help-e
       ja: blast-help
-    wabi: https://www.ddbj.nig.ac.jp/wabi_blast-help.html
+    wabi: https://www.ddbj.nig.ac.jp/services/wabi-blast.html
     description:
       en: Nucleotide homology search
       ja: 塩基配列による相同性検索
@@ -144,7 +144,7 @@ items:
     help:
       en: vecscreen-help-e
       ja: vecscreen-help
-    wabi: https://www.ddbj.nig.ac.jp/wabi_vecscreen-help.html
+    wabi: https://www.ddbj.nig.ac.jp/services/wabi-vecscreen.html
     description:
       en: Vector search to screen contamination in nucleic acid sequences.
       ja: ベクター配列データベースを対象にした相同性検索サービス
@@ -159,12 +159,12 @@ items:
   - name: ClustalW
     formal_name: ClustalW
     service_link:
-      en: https://www.ddbj.nig.ac.jp/wabi_mafft-help.html
-      ja: https://www.ddbj.nig.ac.jp/wabi_mafft-help.html
+      en: https://www.ddbj.nig.ac.jp/services/wabi-mafft.html
+      ja: https://www.ddbj.nig.ac.jp/services/wabi-mafft.html
     help:
       en: wabi_clustalw-help-e
       ja: wabi_clustalw-help
-    wabi: https://www.ddbj.nig.ac.jp/wabi_clustalw-help.html
+    wabi: https://www.ddbj.nig.ac.jp/services/wabi-clustalw.html
     description:
       en: Multiple alignment and tree-making
       ja: 塩基・アミノ酸配列の多重整列と系統樹作成
@@ -180,7 +180,7 @@ items:
     help:
       en: wabi_mafft-help-e
       ja: wabi_mafft-help
-    wabi: https://www.ddbj.nig.ac.jp/wabi_mafft-help.html
+    wabi: https://www.ddbj.nig.ac.jp/services/wabi-mafft.html
     description:
       en: Fast multiple alignment tool for nucleotide and amino acid sequences.
       ja: 高速・高精度な核酸・アミノ酸配列のマルチプルアラインメントツール
@@ -193,7 +193,7 @@ items:
     formal_name: Web API for Biology
     service_link:
       en: https://www.ddbj.nig.ac.jp/wabi-e.html
-      ja: https://www.ddbj.nig.ac.jp/wabi.html
+      ja: https://www.ddbj.nig.ac.jp/services/services/wabi.html
     help:
       en: wabi-e
       ja: wabi
@@ -314,7 +314,7 @@ items:
   - name: DDBJ
     formal_name: DNA DataBank of Japan
     service_link:
-      en: https://www.ddbj.nig.ac.jp/ddbj/index-e.html
+      en: https://www.ddbj.nig.ac.jp/ddbj/index.html
       ja: https://www.ddbj.nig.ac.jp/ddbj/index.html
     description:
       en: An annotated collection of genome, gene and transcript sequences.
@@ -331,8 +331,8 @@ items:
   - name: NSSS
     formal_name: DDBJ Nucleotide Sequence Submission System
     service_link:
-      en: https://www.ddbj.nig.ac.jp/ddbj/websub-e.html
-      ja: https://www.ddbj.nig.ac.jp/ddbj/websub.html
+      en: https://www.ddbj.nig.ac.jp/ddbj/web-submission-e.html
+      ja: https://www.ddbj.nig.ac.jp/ddbj/web-submission.html
     description:
       en: Interactive nucleotide sequence submission system via web wizard
       ja: ウェブフォームの塩基配列登録システム

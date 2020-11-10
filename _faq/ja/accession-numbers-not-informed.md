@@ -22,5 +22,5 @@ lang: ja
     <li><b>"submission_validated"</b><br> DRA スタッフが査定中です。しばらくお待ちください。</li>
   </ul>
 </div>
-<p>お急ぎの場合は <a href="/contact.html">DRA チーム</a>までご連絡ください。</p>
+<p>お急ぎの場合は <a href="/contact-ddbj.html">DRA チーム</a>までご連絡ください。</p>
 </html>

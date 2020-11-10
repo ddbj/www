@@ -171,7 +171,7 @@ a: taxonomic divisions
 
 b: other divisions
 
-|  [PAT](/ddbj/pat-data-e.html)  |  sequence data related to patent application<br>The data those which Japan Patent Office (JPO), United States Patent and Trademark Office (USPTO), European Patent Office (EPO), and Korean Intellectual Property Office (KIPO) collected, processed and released.  |
+|  [PAT](/ddbj/patent-data-e.html)  |  sequence data related to patent application<br>The data those which Japan Patent Office (JPO), United States Patent and Trademark Office (USPTO), European Patent Office (EPO), and Korean Intellectual Property Office (KIPO) collected, processed and released.  |
 |  [ENV](/ddbj/env-e.html)  |  sequences obtained via environmental sampling methods  |
 |  SYN  |  synthetic constructs; artificially constructed sequences  |
 |  [EST](/ddbj/est-e.html)  |  expressed sequence tags; short single pass cDNA sequences  |
@@ -395,7 +395,7 @@ DBLINK      BioProject:PRJDA12345
 The KEYWORDS lines were used for indexing ([gene](/ddbj/qualifiers-e.html#gene)) and 
 ([product](/ddbj/qualifiers-e.html#product)) names in the past.
 
-For now, KEYWORDS lines are used to indicate [the detail category of the data](/data-categories-e.html#detail) ([EST](/ddbj/est-e.html),
+For now, KEYWORDS lines are used to indicate [the detail category of the data](/documents/data-categories-e.html#detail) ([EST](/ddbj/est-e.html),
 [TSA](/ddbj/tsa-e.html), [HTC](/ddbj/htc-e.html), [HTG](/ddbj/htg-e.html),
 [GSS](/ddbj/gss-e.html), [WGS](/ddbj/wgs-e.html), [TPA](/ddbj/tpa-e.html) etc) information about experimental method, "finishing level" of genome sequencing and else, if necessary. See also [INSDC agreed methodological keywords](/ddbj/keyword-e.html).
 
@@ -439,7 +439,7 @@ The phylogenic lineage information based on the Unified Taxonomy Database is sta
 
 The information of submitter(s) is described as REFERENCE 1 (except old entries and some [CON](/ddbj/con-e.html) entries).
 
-In the case of [Nucleotide Sequence Submission System](/ddbj/websub-e.html), REFERENCE 1 is processed with the information entered on "Contact person" and "Submitter" pages. In the case of Mass Submission System, REFERENCE 1 is processed with the information entered in annotation file.
+In the case of [Nucleotide Sequence Submission System](/ddbj/web-submission-e.html), REFERENCE 1 is processed with the information entered on "Contact person" and "Submitter" pages. In the case of Mass Submission System, REFERENCE 1 is processed with the information entered in annotation file.
 
 ```
 REFERENCE   1   (bases 1 to 450)
@@ -520,7 +520,7 @@ When the submitters wish to keep their contact information disclosed, it will be
 <h3><a href="#Reference2A">REFERENCE 2</a></h3>
 </div>
 
-The information of references related to the submitted sequence is indicated on REFERENCE line (other than ([REFERENCE 1](#Reference1B)). Since REFERENCE 2 indicates [the publication status of the sequence](/ddbj/submission-e.html#pcite), the reference which does not describe about the submitting sequence is indicated as REFERENCE 3 or after, not as REFERENCE 2.
+The information of references related to the submitted sequence is indicated on REFERENCE line (other than ([REFERENCE 1](#Reference1B)). Since REFERENCE 2 indicates [the publication status of the sequence](/ddbj/services/index.html#pcite), the reference which does not describe about the submitting sequence is indicated as REFERENCE 3 or after, not as REFERENCE 2.
 
 When DDBJ notices a paper publication with an accession number, DDBJ will update the entry with the accession number, if necessary. During the process of the update, the prepublication paper(s) described in the line(s), REFERENCE 2 and/or later, will be revised without any notice to submitters, if applicable; i.e. When the submitted data, submitters' affiliation, author names, title, and journal name of the prepublication paper, are enough reasonable to be revised.
 

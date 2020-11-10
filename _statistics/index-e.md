@@ -56,7 +56,7 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 {: #ddbj-submission}
 ## Data Submission to DDBJ
 
-- Web Submission: [Submission to Nucleotide Sequence Submission System](/ddbj/websub.html)
+- Web Submission: [Submission to Nucleotide Sequence Submission System](/ddbj/web-submission.html)
 - MSS Submission: [Submission to Mass Submission System](/ddbj/mss.html)
 - Submission: Number of submission to DDBJ
 

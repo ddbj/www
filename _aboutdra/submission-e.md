@@ -186,14 +186,14 @@ information, enter the information in the BioProject.
 
 [BioProject ID](#DRA_BioProjectID)<a name="DRA_BioProjectID"></a><span class="red">*</span>  
 : Select a project registered to
-[BioProject](/bioproject/index-e.html) or submit a new project. For submission to BioProject, please refer to the [BioProject Handbook](/bioproject/submission-e.html).
+[BioProject](/bioproject/index-e.html) or submit a new project. For submission to BioProject, please refer to the [BioProject Handbook](/bioproject/services/index.html).
 
 ### BioSample <a name="BioSample"></a> 
 
 [BioSample ID](#DRA_BioSampleID)<a name="DRA_BioSampleID"></a><span class="red">*</span>  
 : Select samples registered to [BioSample](/biosample/index-e.html) or
 create and submit new samples. For submission to BioSample, please
-refer to [BioSample Handbook](/biosample/submission-e.html).
+refer to [BioSample Handbook](/biosample/services/index.html).
 
 ### Experiment <a name="Experiment"></a> 
 
@@ -712,13 +712,13 @@ tools or future genome assembilies.
   If references are found in [list](/files/ref/ref-file.txt), references can be specified by their accession.version number (for example, NC_000001.11). [Version number](/ddbj/flat-file-e.html#Version)is necessary. Accession numbers for references can be searched in [NCBI Assembly](https://www.ncbi.nlm.nih.gov/assembly/).
 
 3. #### Specify reference by supplying multi-fasta <a name="Specify_reference_by_supplying_multi-fasta"></a>
-  If references are not found in the [list](/files/ref/ref-file.txt), submit a reference file in multi-fasta format. Select "reference_fasta" in the [Run file type](/dra/submission-e.html#File_Type). The reference name in the bam header and reference sequence are linked by the name in bam header and fasta defline via the mapping table. If sequence length is different between @SQ-LN and multi-fasta, a warning is raised.
+  If references are not found in the [list](/files/ref/ref-file.txt), submit a reference file in multi-fasta format. Select "reference_fasta" in the [Run file type](/dra/services/index.html#File_Type). The reference name in the bam header and reference sequence are linked by the name in bam header and fasta defline via the mapping table. If sequence length is different between @SQ-LN and multi-fasta, a warning is raised.
 
 4. #### Specify reference by both INSDC/RefSeq accession number and multi-fasta <a name="Specify_reference_by_both_INSDC/RefSeq_accession_number_and_multi-fasta"></a>
   If a part of references are found in [list](/files/ref/ref-file.txt), these references can be specified by their accession.version number (for example, NC_000001.11). The rest of references needs to be supplied by uploading a multi-fasta file. In the SN-reference mapping table, list accession.version numbers and sequence names of multi-fasta deflines.
 
 5. #### SN-reference mapping table <a name="SN-reference_mapping_table"></a>
-  A tab delimited text file describing mapping between "SN in SQ line in BAM header" and "accession OR sequence name in fasta file". Select "tab" in the [Run file type](/dra/submission-e.html#File_Type)
+  A tab delimited text file describing mapping between "SN in SQ line in BAM header" and "accession OR sequence name in fasta file". Select "tab" in the [Run file type](/dra/services/index.html#File_Type)
 
   BAM header
 
@@ -949,12 +949,12 @@ platforms.
 
 ### 3. Submit project and sample information 
 
-#### [BioProject](/bioproject/submission-e.html) <a name="_BioProject_"></a>
+#### [BioProject](/bioproject/services/index.html) <a name="_BioProject_"></a>
 
   - A description of the reseach effort
   - "Why" you sequenced your samples
 
-#### [BioSample](/biosample/submission-e.html)<a name="_BioSample_"></a>![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv} 
+#### [BioSample](/biosample/services/index.html)<a name="_BioSample_"></a>![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv} 
 
   - A description of biologically or physically unique specimens
   - "What" you sequenced
@@ -1270,7 +1270,7 @@ second panel is for BioProject submission. Submitter information is
 copied with that of DRA submission.
 
 For BioProject metadata, please see the [BioProject
-Handbook](/bioproject/submission-e.html#metadata).
+Handbook](/bioproject/services/index.html#metadata).
 
 {::nomarkdown}
 {% include image.html url="books/hdra-bp02.jpg" caption="BioProject submission" class="w450" %}
@@ -1352,7 +1352,7 @@ submission, please see the ["FAQ: How many samples do I need for my DRA
 submission?"](/faq/en/samples-for-sra-e.html)
 
 For BioSample metadata, please see the [BioSample
-Handbook](/biosample/submission-e.html#metadata).
+Handbook](/biosample/services/index.html#metadata).
 
 {::nomarkdown}
 {% include image.html url="books/hdra-bs02.jpg" caption="BioSample submission" class="w450" %}
@@ -1360,10 +1360,10 @@ Handbook](/biosample/submission-e.html#metadata).
 
 Select a sample type in the "SAMPLE TYPE". For genome samples, minimum
 sample attributes are defined by
-[MIxS](/biosample/submission-e.html#sample-attributes).
+[MIxS](/biosample/services/index.html#sample-attributes).
 
 For the Sample type, please see the [BioSample
-Handbook](/biosample/submission-e.html#Sample_type).
+Handbook](/biosample/services/index.html#Sample_type).
 
 {::nomarkdown}
 {% include image.html url="books/hdra-bs03.jpg" caption="Select a sample type" class="w450" %}
@@ -1652,7 +1652,7 @@ Click the [Validate data files] and validate uploaded data files.
 The files are validated in the following order.
 
 [FAQ: How to deal with validation
-errors?](/dra/faq-e.html#data-validation-error)
+errors?](/faq/en/index-e.html#data-validation-error)
 
 #### MD5 Check <a name="MD5_Check"></a>
 
@@ -1681,7 +1681,7 @@ stopping the validation by clicking the [Stop validation] button.
 After revision, click the [Validate data files] button and start
 validation again.
 
-[FAQ: How to deal with validation errors?](/dra/faq-e.html#data-validation-error)
+[FAQ: How to deal with validation errors?](/faq/en/index-e.html#data-validation-error)
 
 {::nomarkdown}
 {% include image.html url="books/hdra-error.jpg" caption="Stop validation" class="w450" %}

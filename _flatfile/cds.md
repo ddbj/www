@@ -27,9 +27,9 @@ related_pages:
 ## 概要 <a name="outline"></a>
 
 feature key の中でも、タンパク質のコーディング領域を記述する CDS はデータベース中に多数、記載されています。  
-CDS feature の location はアミノ酸翻訳の対象となる塩基配列を開始コドンから終止 ドンまでの位置を基本に示します。CDS には、その位置情報、[codon\_start](/ddbj/qualifiers.html#codon_start)、由 生物のコドン表 ([transl\_table](/ddbj/qualifiers.html#transl_table) に記載されます)、な びに [transl\_except](/ddbj/qualifiers.html#transl_except) の記述に基づいて、アミノ酸翻訳を行ない、[translation](/ddbj/qualifiers html#translation) を付加します (ただし、[pseudo](/ddbj/qualifiers.html#pseudo)、または、[pseudogene]( ddbj/qualifiers.html#pseudogene) の指定がある場合にはアミノ酸翻訳は行いません)。
+CDS feature の location はアミノ酸翻訳の対象となる塩基配列を開始コドンから終止 ドンまでの位置を基本に示します。CDS には、その位置情報、[codon\_start](/ddbj/qualifiers.html#codon_start)、由 生物のコドン表 ([transl\_table](/ddbj/qualifiers.html#transl_table) に記載されます)、な びに [transl\_except](/ddbj/qualifiers.html#transl_except) の記述に基づいて、アミノ酸翻訳を行ない、[translation](/ddbj/qualifiers.html#translation) を付加します (ただし、[pseudo](/ddbj/qualifiers.html#pseudo)、または、[pseudogene]( ddbj/qualifiers.html#pseudogene) の指定がある場合にはアミノ酸翻訳は行いません)。
 
-登録者からの報告に基づいて、対応するタンパク質の名称や機能が CDS 下位の適切な qualifier ([product](/ddbj/qualifiers.html#product)、[function](/ddbj/qualifiers html#function)、etc.)に記入されます。また、これらの情報が実験的に確認されたもの あるときには [experiment](/ddbj/qualifiers.html#experiment)、配列の類似性検索等で類推さ たものであるときには [inference](/ddbj/qualifiers.html#inference) という qualifier を用いて注釈されることがあります。
+登録者からの報告に基づいて、対応するタンパク質の名称や機能が CDS 下位の適切な qualifier ([product](/ddbj/qualifiers.html#product)、[function](/ddbj/qualifiers.html#function)、etc.)に記入されます。また、これらの情報が実験的に確認されたもの あるときには [experiment](/ddbj/qualifiers.html#experiment)、配列の類似性検索等で類推さ たものであるときには [inference](/ddbj/qualifiers.html#inference) という qualifier を用いて注釈されることがあります。
 
 なお、INSDCは、類似性や相同性の判定基準を定めておりませんので、類似タンパク質であるとの判断は、すべて登録者の判断に基づきます。  
 また、タンパク質のモチーフ、２次構造以上の構造に関する情報は、原則としてフラットファイルには記載されないことになっています。
@@ -73,7 +73,7 @@ CDS feature では、[product](/ddbj/qualifiers.html#product) qualifier に産�
     guidelines](https://www.ncbi.nlm.nih.gov/genome/doc/internatprot_nomenguide/)
     に準拠することを推奨します。
 : 強制力はありませんし、これに合致しない命名法を採択する生物種も多く、酵素名などの記載原則とは一部、矛盾します。しかし、それは承知の上で、どのように命名すれば良いかわからない、という登録者の方々への指針、閲覧利用者がその特徴を理解する際の一助として提示しております。
-: なお、登録完了後でも、記載の修正は随時受付けておりますので、[登録データの修正・更新](/ddbj/updt.html)をご参照の上、お知らせ下さい。
+: なお、登録完了後でも、記載の修正は随時受付けておりますので、[登録データの修正・更新](/ddbj/update.html)をご参照の上、お知らせ下さい。
 
 ## 途中に出現する終止コドンへの対応 <a name="stop"></a>
 

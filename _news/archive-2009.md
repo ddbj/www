@@ -18,7 +18,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn091225"><a href="#wn091225">DDBJ リリース 80.0 完成</a></h2>
   <div class="news_date">2009年12月25日</div>
-  <div class="news_content"><ul><li>エントリ数：112,314,250    塩基数：109,636,862,252</li><li>今リリースより DDBJ flat file の source 行の記述形式が変更に（organism name と organelle name の表示順序が変更）なりました。また，一部の DDBJ flat file で，一般名表記が含まれるようになりました。詳細は <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.80.txt">DDBJ Release Note</a> をご覧下さい。</li><li><a href="/stats/relinfo.html">現在公開されているリリースの情報</a></li></ul></div>
+  <div class="news_content"><ul><li>エントリ数：112,314,250    塩基数：109,636,862,252</li><li>今リリースより DDBJ flat file の source 行の記述形式が変更に（organism name と organelle name の表示順序が変更）なりました。また，一部の DDBJ flat file で，一般名表記が含まれるようになりました。詳細は <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.80.txt">DDBJ Release Note</a> をご覧下さい。</li><li><a href="/latest-releases.html">現在公開されているリリースの情報</a></li></ul></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -45,7 +45,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn091207"><a href="#wn091207">DDBJ メールマガジン No.46 配信</a></h2>
   <div class="news_date">2009年12月07日</div>
-  <div class="news_content">DDBJ では，隔月でメールマガジンを配信しています。12月4日に第46号を配信しました。今回の記事は，「年末年始休業のお知らせ」，「微生物ゲノムデータベース GIB の機能拡張」，「ＳＡＫＵＲＡ de "Ｑ" 第3回」などです。ホームページでもご覧になれますが，お申し込み頂いた方にはメール配信をいたします。配信を希望される方は，<a href="/subscribe.html">申込み・変更ページ</a>で簡単に手続きができますので，この機会に是非お申し込み下さい。</div>
+  <div class="news_content">DDBJ では，隔月でメールマガジンを配信しています。12月4日に第46号を配信しました。今回の記事は，「年末年始休業のお知らせ」，「微生物ゲノムデータベース GIB の機能拡張」，「ＳＡＫＵＲＡ de "Ｑ" 第3回」などです。ホームページでもご覧になれますが，お申し込み頂いた方にはメール配信をいたします。配信を希望される方は，<a href="/subscribe-ddbj.html">申込み・変更ページ</a>で簡単に手続きができますので，この機会に是非お申し込み下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -180,7 +180,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn091015"><a href="#wn091015">DAD リリース 49.0 公開</a></h2>
   <div class="news_date">2009年10月15日</div>
-  <div class="news_content"><ul><li>公開日：2009年10月14日</li><li>エントリ数：15,359,639    総アミノ残基数：4,200,060,817 </li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.49.txt">DAD Release Note</a></li><li><a href="/stats/relinfo.html">現在公開されているリリースの情報</a></li></ul></div>
+  <div class="news_content"><ul><li>公開日：2009年10月14日</li><li>エントリ数：15,359,639    総アミノ残基数：4,200,060,817 </li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.49.txt">DAD Release Note</a></li><li><a href="/latest-releases.html">現在公開されているリリースの情報</a></li></ul></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -198,7 +198,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn091007"><a href="#wn091007">DDBJ メールマガジン No.45 配信</a></h2>
   <div class="news_date">2009年10月07日</div>
-  <div class="news_content">DDBJ では，隔月でメールマガジンを配信しています。10月6日に第45号を配信しました。今回の記事は，「平成21年度ＤＤＢＪオープンシステムプロジェクト」の募集，anonymous FTP のディレクトリ構成変更，「第22回国際実務者会議」の報告，「WABI ワークショップ開催」のお知らせなどです。ホームページでもご覧になれますが，お申し込み頂いた方にはメール配信をいたします。配信を希望される方は，<a href="/subscribe.html">申込み・変更ページ</a>で簡単に手続きができますので，この機会に是非お申し込み下さい。</div>
+  <div class="news_content">DDBJ では，隔月でメールマガジンを配信しています。10月6日に第45号を配信しました。今回の記事は，「平成21年度ＤＤＢＪオープンシステムプロジェクト」の募集，anonymous FTP のディレクトリ構成変更，「第22回国際実務者会議」の報告，「WABI ワークショップ開催」のお知らせなどです。ホームページでもご覧になれますが，お申し込み頂いた方にはメール配信をいたします。配信を希望される方は，<a href="/subscribe-ddbj.html">申込み・変更ページ</a>で簡単に手続きができますので，この機会に是非お申し込み下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -216,7 +216,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn090925"><a href="#wn090925">DDBJ リリース 79.0 完成</a></h2>
   <div class="news_date">2009年09月25日</div>
-  <div class="news_content"><ul><li>エントリ数：108,593,519    塩基数：106,684,379,504</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.79.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo.html">現在公開されているリリースの情報</a></li></ul></div>
+  <div class="news_content"><ul><li>エントリ数：108,593,519    塩基数：106,684,379,504</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.79.txt">DDBJ Release Note</a></li><li><a href="/latest-releases.html">現在公開されているリリースの情報</a></li></ul></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -284,7 +284,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn090917"><a href="#wn090917">anonymous FTP のディレクトリ構成変更: dra ディレクトリ新設，trace から dta へのディレクトリ名変更</a></h2>
   <div class="news_date">2009年09月17日</div>
-  <div class="news_content"><a href="/download.html">FTP</a> の ddbj_database (DDBJ由来データ) 配下のディレクトリに tpa を新設しました。<br>これまでは, <a href="/ddbj/tpa.html">TPA</a>(Third-Party Annotaion) データは, ddbj, ddbjnew (デイリー更新データ), wgs のディレクトリに散在していましたが, 今後は TPA関連データを tpa ディレクトリ配下に一元化して提供いたします。ddbj_database 以下の構成の詳細は，同ディレクトリ内の<a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/README.TXT"> README.TXT </a>をご参照下さい。定期監視されている場合は, お早めの変更をお願いいたします。</div>
+  <div class="news_content"><a href="/services/index.html">FTP</a> の ddbj_database (DDBJ由来データ) 配下のディレクトリに tpa を新設しました。<br>これまでは, <a href="/ddbj/tpa.html">TPA</a>(Third-Party Annotaion) データは, ddbj, ddbjnew (デイリー更新データ), wgs のディレクトリに散在していましたが, 今後は TPA関連データを tpa ディレクトリ配下に一元化して提供いたします。ddbj_database 以下の構成の詳細は，同ディレクトリ内の<a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/README.TXT"> README.TXT </a>をご参照下さい。定期監視されている場合は, お早めの変更をお願いいたします。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -311,7 +311,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn090820"><a href="#wn090820">DDBJ メールマガジン No.44 配信</a></h2>
   <div class="news_date">2009年08月20日</div>
-  <div class="news_content">DDBJ では，隔月でメールマガジンを配信しています。8月20日に第44号を配信しました。今回の記事は，生命情報・DDBJ 研究センターと日本 DNA データバンクの新スタッフ紹介，「DDBJ Sequence Read Archive」と「DDBJ Trace Archive」ウェブサイト公開のお知らせ，新連載「ＳＡＫＵＲＡ de "Ｑ"」などです。ホームページでもご覧になれますが，お申し込み頂いた方にはメール配信をいたします。配信を希望される方は，<a href="/subscribe.html">申込み・変更ページ</a>で簡単に手続きができますので，この機会に是非お申し込み下さい。</div>
+  <div class="news_content">DDBJ では，隔月でメールマガジンを配信しています。8月20日に第44号を配信しました。今回の記事は，生命情報・DDBJ 研究センターと日本 DNA データバンクの新スタッフ紹介，「DDBJ Sequence Read Archive」と「DDBJ Trace Archive」ウェブサイト公開のお知らせ，新連載「ＳＡＫＵＲＡ de "Ｑ"」などです。ホームページでもご覧になれますが，お申し込み頂いた方にはメール配信をいたします。配信を希望される方は，<a href="/subscribe-ddbj.html">申込み・変更ページ</a>で簡単に手続きができますので，この機会に是非お申し込み下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -428,7 +428,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn090714"><a href="#wn090714">DAD リリース 48.0 公開</a></h2>
   <div class="news_date">2009年07月14日</div>
-  <div class="news_content"><ul><li>公開日：2009年7月14日</li><li>エントリ数：14,710,673    総アミノ残基数：3,992,515,218 </li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.48.txt">DAD Release Note</a></li><li><a href="/stats/relinfo.html">現在公開されているリリースの情報</a></li></ul></div>
+  <div class="news_content"><ul><li>公開日：2009年7月14日</li><li>エントリ数：14,710,673    総アミノ残基数：3,992,515,218 </li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.48.txt">DAD Release Note</a></li><li><a href="/latest-releases.html">現在公開されているリリースの情報</a></li></ul></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -455,7 +455,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn090623"><a href="#wn090623">DDBJ リリース 78.0 完成</a></h2>
   <div class="news_date">2009年06月23日</div>
-  <div class="news_content"><ul><li>エントリ数：105,737,359    塩基数：104,597,360,291</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.78.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo.html">現在公開されているリリースの情報</a></li></ul></div>
+  <div class="news_content"><ul><li>エントリ数：105,737,359    塩基数：104,597,360,291</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.78.txt">DDBJ Release Note</a></li><li><a href="/latest-releases.html">現在公開されているリリースの情報</a></li></ul></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -473,7 +473,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn090610"><a href="#wn090610">GIB サービスの一時休止</a></h2>
   <div class="news_date">2009年06月10日</div>
-  <div class="news_content"><a href="/past-services-e.html#gib" target="_blank">GIB (Genome Information Broker) </a>サービスをシステムメンテナンスの為，下記の日程にて一時休止します。<ul><li><b>休止日時：</b>2009年6月30日（火） 9時より 7月2日（木） 17時まで</li><li><b>理由：</b>システムメンテナンス（OS バージョンアップ）</li></ul><p>皆様には大変ご迷惑をお掛けいたしますが，ご理解とご協力をお願いいたします。</p><p><font class="red">保守作業は終了しました。ご協力ありがとうございました。（7月1日14時45分）</font></p></div>
+  <div class="news_content"><a href="/services/past-services-e.html#gib" target="_blank">GIB (Genome Information Broker) </a>サービスをシステムメンテナンスの為，下記の日程にて一時休止します。<ul><li><b>休止日時：</b>2009年6月30日（火） 9時より 7月2日（木） 17時まで</li><li><b>理由：</b>システムメンテナンス（OS バージョンアップ）</li></ul><p>皆様には大変ご迷惑をお掛けいたしますが，ご理解とご協力をお願いいたします。</p><p><font class="red">保守作業は終了しました。ご協力ありがとうございました。（7月1日14時45分）</font></p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -500,7 +500,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn090514"><a href="#wn090514">DDBJ メールマガジン No.43 配信</a></h2>
   <div class="news_date">2009年05月14日</div>
-  <div class="news_content">DDBJ では，隔月でメールマガジンを配信しています。5月14日に第43号を配信しました。今回は，6月17-18日に開催する「第21回DDBJing 講習会 in 三島」のご案内や，5月末が期限の国立遺伝学研究所大型計算機（superni<br>g）利用申請継続手続きについての再度のご案内などです。ホームページでもご覧になれますが，お申込み頂いた方にはメール配信をいたします。配信を希望される方は，<a href="/subscribe.html">申込み・変更ページ</a>で簡単に手続きができますので，この機会に是非お申し込み下さい。</div>
+  <div class="news_content">DDBJ では，隔月でメールマガジンを配信しています。5月14日に第43号を配信しました。今回は，6月17-18日に開催する「第21回DDBJing 講習会 in 三島」のご案内や，5月末が期限の国立遺伝学研究所大型計算機（superni<br>g）利用申請継続手続きについての再度のご案内などです。ホームページでもご覧になれますが，お申込み頂いた方にはメール配信をいたします。配信を希望される方は，<a href="/subscribe-ddbj.html">申込み・変更ページ</a>で簡単に手続きができますので，この機会に是非お申し込み下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -563,7 +563,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn090427"><a href="#wn090427">DDBJ メールマガジン No.42 配信</a></h2>
   <div class="news_date">2009年04月27日</div>
-  <div class="news_content">DDBJ では，隔月でメールマガジンを配信しています。4月27日に第42号を配信しました。今回の記事は，微生物ゲノム再アノテーションデータベース2009年版公開，国立遺伝学研究所大型計算機（supernig）利用申請継続手続きのご案内などです。ホームページでもご覧になれますが，お申し込み頂いた方にはメール配信をいたします。配信を希望される方は，<a href="/subscribe.html">申込み・変更ページ</a>で簡単に手続きができますので，この機会に是非お申し込み下さい。</div>
+  <div class="news_content">DDBJ では，隔月でメールマガジンを配信しています。4月27日に第42号を配信しました。今回の記事は，微生物ゲノム再アノテーションデータベース2009年版公開，国立遺伝学研究所大型計算機（supernig）利用申請継続手続きのご案内などです。ホームページでもご覧になれますが，お申し込み頂いた方にはメール配信をいたします。配信を希望される方は，<a href="/subscribe-ddbj.html">申込み・変更ページ</a>で簡単に手続きができますので，この機会に是非お申し込み下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -599,7 +599,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn090415_3"><a href="#wn090415_3">DAD リリース 47.0 公開</a></h2>
   <div class="news_date">2009年04月15日</div>
-  <div class="news_content"><ul><li>公開日：2009年4月13日</li><li>エントリ数：14,237,430    総アミノ残基数：3,845,458,844aa</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.47.txt">DAD Release Note</a></li><li><a href="/stats/relinfo.html">現在公開されているリリースの情報</a></li></ul></div>
+  <div class="news_content"><ul><li>公開日：2009年4月13日</li><li>エントリ数：14,237,430    総アミノ残基数：3,845,458,844aa</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.47.txt">DAD Release Note</a></li><li><a href="/latest-releases.html">現在公開されているリリースの情報</a></li></ul></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -644,7 +644,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn090324"><a href="#wn090324">DDBJ リリース 77.0 完成</a></h2>
   <div class="news_date">2009年03月24日</div>
-  <div class="news_content"><ul><li>エントリ数：102,099,156    塩基数：101,765,388,414</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.77.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo.html">現在公開されているリリースの情報</a></li></ul></div>
+  <div class="news_content"><ul><li>エントリ数：102,099,156    塩基数：101,765,388,414</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.77.txt">DDBJ Release Note</a></li><li><a href="/latest-releases.html">現在公開されているリリースの情報</a></li></ul></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -752,7 +752,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn090116_2"><a href="#wn090116_2">DAD リリース 46.0 公開</a></h2>
   <div class="news_date">2009年01月16日</div>
-  <div class="news_content"><ul><li>エントリ数：13,526,116    総アミノ残基数：3,599,816,846aa</li><li>今リリースでの変更点：<br>    2008年10月に DDBJ/EMBL/GenBank Feature Table: Definition が改訂されました</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.46.txt">DAD Release Note</a></li><li><a href="/stats/relinfo.html">現在公開されているリリースの情報</a></li></ul></div>
+  <div class="news_content"><ul><li>エントリ数：13,526,116    総アミノ残基数：3,599,816,846aa</li><li>今リリースでの変更点：<br>    2008年10月に DDBJ/EMBL/GenBank Feature Table: Definition が改訂されました</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.46.txt">DAD Release Note</a></li><li><a href="/latest-releases.html">現在公開されているリリースの情報</a></li></ul></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>

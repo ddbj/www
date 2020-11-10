@@ -160,7 +160,7 @@ a: 由来生物種に基づく分類
 
 b: 生物分類に基づかない分類
 
-|  [PAT](/ddbj/pat-data.html)  |  特許出願に含まれる塩基配列データ<br>Japan Patent Office (JPO), European Patent Office (EPO), United States Patent and Trademark Office (USPTO), Korean Intellectual Property Office (KIPO) が収集・処理したデータ  |
+|  [PAT](/ddbj/patent-data.html)  |  特許出願に含まれる塩基配列データ<br>Japan Patent Office (JPO), European Patent Office (EPO), United States Patent and Trademark Office (USPTO), Korean Intellectual Property Office (KIPO) が収集・処理したデータ  |
 |  [ENV](/ddbj/env.html)  |  PCR, DGGE、あるいは、その他の方法で直接、分子を単離した環境上のサンプルに由来した配列  |
 |  SYN  |  synthetic constructs<br>人為的に構成された配列  |
 |  [EST](/ddbj/est.html)  |  expressed sequence tags<br>short single pass の cDNA 配列  |
@@ -385,7 +385,7 @@ DBLINK      BioProject:PRJDA12345
 KEYWORDS は、過去の登録においては、遺伝子名 ([gene](/ddbj/qualifiers.html#gene))、産物名
 ([product](/ddbj/qualifiers.html#product)) の索引に用いられていました。
 
-現在は、[データの詳細種別](/data-categories.html#detail) ([EST](/ddbj/est.html),
+現在は、[データの詳細種別](/documents/documents/data-categories.html#detail) ([EST](/ddbj/est.html),
 [TSA](/ddbj/tsa.html), [HTC](/ddbj/htc.html), [HTG](/ddbj/htg.html),
 [GSS](/ddbj/gss.html), [WGS](/ddbj/wgs.html), [TPA](/ddbj/tpa.html)
 など)、配列の特性、実験手法、ゲノム配列の完成度などに関する情報などが、必要に応じて、記載されます。[INSDC agreed
@@ -433,7 +433,7 @@ SOURCE      Homo sapiens (human)
 データベースに登録した登録者の情報が記載されています。ただし古いデータに関してはこの限りではありません。またデータバンクが独自に構築する
 [CON エントリ](/ddbj/con.html)の場合、登録者情報にあたる REFERENCE 1 は表示されない場合があります。
 
-[塩基配列登録システム](/ddbj/websub.html)をご利用いただいた場合には Contact person と Submitter
+[塩基配列登録システム](/ddbj/web-submission.html)をご利用いただいた場合には Contact person と Submitter
 の入力内容に基づいて作成されます。MSS をご利用いただいた場合は登録時のファイルに基づいて作成されます。
 
 ```
@@ -478,7 +478,7 @@ REFERENCE   1   (bases 1 to 450)
 に到着した日付けです。  
 プライマリアクセッション番号であれば、そのエントリを更新しても受付日は変わりません。
 
-２行目以降には、[コンタクトパーソン (Contact person)](/ddbj/submission.html#contact)
+２行目以降には、[コンタクトパーソン (Contact person)](/ddbj/services/index.html#contact)
 の氏名、所属等の情報が表示されます。
 
 ```
@@ -495,8 +495,8 @@ E-mail アドレスと電話番号, FAX番号について
 
   - DDBJ への登録に関しましては，E-mail アドレスと電話番号,
     FAX番号は原則，非表示としますが，表示しておく必要がある場合は， [DDBJ
-    へのお問い合わせ](/contact.html#to-ddbj) からご連絡いただければ，個別に対応いたします。表示・非表示は「E-mailアドレス」「電話番号」「FAX番号」それぞれ個別に指定可能です。
-  - E-mailアドレスと電話番号，FAX番号を非表示の場合、研究上の問題に関して，各配列の登録者への連絡が必要な場合はメッセージを転送いたします。お手数ですが、[ DDBJエントリ登録者へのご質問・ご要望の転送フォーム](/contact.html#to-submitters)からご連絡ください。その際は簡単な理由(「clone
+    へのお問い合わせ](/contact-ddbj.html#to-ddbj) からご連絡いただければ，個別に対応いたします。表示・非表示は「E-mailアドレス」「電話番号」「FAX番号」それぞれ個別に指定可能です。
+  - E-mailアドレスと電話番号，FAX番号を非表示の場合、研究上の問題に関して，各配列の登録者への連絡が必要な場合はメッセージを転送いたします。お手数ですが、[ DDBJエントリ登録者へのご質問・ご要望の転送フォーム](/contact-ddbj.html#to-submitters)からご連絡ください。その際は簡単な理由(「clone
     譲渡を希望」など)を書き添えてください。
 
 E-mailアドレスと電話番号，FAX番号が非表示の場合
@@ -526,7 +526,7 @@ E-mailアドレスと電話番号，FAX番号が非表示の場合
 </div>
 
 REFERENCE 2 以降 ([REFERENCE 1](#Reference1B) 以外) の
-REFERENCEには[そのエントリに関連する論文情報](/ddbj/submission.html#pcite)が表示されます。
+REFERENCEには[そのエントリに関連する論文情報](/ddbj/services/index.html#pcite)が表示されます。
 参考文献にあたるものは、原則として REFERENCE 3 以降に表示します。
 
 アクセッション番号の掲載された論文が公開された場合、DDBJ は対応エントリの更新作業を行うことがあります。このとき、登録時に

@@ -21,11 +21,11 @@ Assembly、MAG）を含んでいます。
 
 ### 1\) Raw reads (Run) <a name="run"></a>
 
-メタゲノムプロジェクトの生シークエンスデータは [DRA Run](/dra/submission.html) に登録します。
+メタゲノムプロジェクトの生シークエンスデータは [DRA Run](/dra/services/index.html) に登録します。
 
 #### BioProject <a name="mag-bioproject"></a>
 
-[メタゲノム/環境サンプルプロジェクト](/bioproject/submission.html#Project-type)として
+[メタゲノム/環境サンプルプロジェクト](/bioproject/services/index.html#Project-type)として
 BioProject を登録します。生物名は [metagenome organism
 names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/)
 から適切なものを選び、"xyz metagenome" (例 soil metagenome)
@@ -35,7 +35,7 @@ names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=40
 
 パッケージとして ["Genome, metagenome or marker sequences (MIxS compliant) -
 Environmental/Metagenome Genomic Sequences
-(MIMS)"](/biosample/submission.html#Meta_Genomic_Sequences_Sample)
+(MIMS)"](/biosample/services/index.html#Meta_Genomic_Sequences_Sample)
 を選択します。メタゲノムサンプルの場合、生物名は [metagenome organism
 names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/)
 から適切なものを選び、"xyz metagenome" (例 soil metagenome)
@@ -43,12 +43,12 @@ names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=40
 
 #### DRA <a name="mag-dra"></a>
 
-生シークエンスデータを [DRA Run](/dra/submission.html) に登録します。
+生シークエンスデータを [DRA Run](/dra/services/index.html) に登録します。
 
 ### 2\) Primary metagenome (Analysis) <a name="primary-metagenome"></a>
 
 生データをアセンブルしたコンティグ配列は fasta/bam ファイル等を [DRA
-Analysis](/dra/submission.html#Analysis_Type)（Analysis type = "De Novo
+Analysis](/dra/services/index.html#Analysis_Type)（Analysis type = "De Novo
 Assembly"）に登録します。
 
 #### BioProject <a name="mag-bioproject"></a>
@@ -62,13 +62,13 @@ Assembly"）に登録します。
 #### DRA <a name="mag-dra"></a>
 
 生シークエンスデータをアセンブルしたコンティグ配列を fasta/bam ファイル等で [DRA
-Analysis](/dra/submission.html#Analysis_Type)（Analysis type = "De Novo
+Analysis](/dra/services/index.html#Analysis_Type)（Analysis type = "De Novo
 Assembly"）に登録します。1) の生シークエンスデータが登録された DRA Run とセットで Analysis を登録します。
 
 ### 3\) Binned metagenome (Analysis) <a name="binned-metagenome"></a>
 
 生物の分類毎にビニングされたアセンブリ配列は [DRA
-Analysis](/dra/submission.html#Analysis_Type)（Analysis type = "De Novo
+Analysis](/dra/services/index.html#Analysis_Type)（Analysis type = "De Novo
 Assembly"）に登録します。生物毎に短いコンティグがわずかしかない場合や生物が BLAST
 類似性のみに基づいてビニングされている場合等が該当します。
 
@@ -83,7 +83,7 @@ Assembly"）に登録します。生物毎に短いコンティグがわずか�
 #### DRA <a name="mag-dra"></a>
 
 生物の分類毎にビニングされたアセンブリ配列を fasta/bam ファイル等で [DRA
-Analysis](/dra/submission.html#Analysis_Type)（Analysis type = "De Novo
+Analysis](/dra/services/index.html#Analysis_Type)（Analysis type = "De Novo
 Assembly"）に登録し、description に使用した解析ソフトウェアやビニング方法に関する情報を記載します。1)
 の生シークエンスデータが登録された DRA Run とセットで Analysis を登録します。
 
@@ -94,13 +94,13 @@ division](/ddbj/env.html) にゲノムエントリとして登録します。
 
 #### BioProject <a name="mag-bioproject"></a>
 
-[メタゲノム/環境サンプルプロジェクト](/bioproject/submission.html#Project-type)として
+[メタゲノム/環境サンプルプロジェクト](/bioproject/services/index.html#Project-type)として
 BioProject を登録します。BioProject は DRA と共通のプロジェクトを使うことができます。
 
 #### BioSample <a name="mag-biosample"></a>
 
 MAG 用にバーチャルなサンプルを登録します。パッケージは ["Other
-samples"](/biosample/submission.html#General_Sample) を選択し、生物名には
+samples"](/biosample/services/index.html#General_Sample) を選択し、生物名には
 uncultured が冠されていない、MAG が由来する生物種名を記載します (例 Methanosarcina
 thermophila)。1) の DRA Run 登録に使用する "xyz metagenome" MIMS サンプルとは別にバーチャルな
 MAG 用サンプルが必要な点に注意してください。

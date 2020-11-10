@@ -10,25 +10,25 @@ related_pages:
   - title: DDBJ スタッフの講演発表（2001-2006）
     url: /activities/past-presentations.html
   - title: 相同性検索プログラムBLASTの内部構造
-    url: /column/blast_doc.html
+    url: /activities/blast-doc.html
   - title: DDBJ の塩基配列解析ツールについて
-    url: /column/ddbjpipeline.html
+    url: /activities/ddbj-pipeline.html
   - title: 「ユーザーの皆様へ，お願いです！」
-    url: /column/request.html
+    url: /activities/request.html
   - title: DDBJ での特許関連配列データの公開業務の紹介
-    url: /column/patent.html
+    url: /activities/patent.html
   - title: DDBJ スタッフコラム
-    url: /column/staffcolumn.html
+    url: /activities/staff-column.html
   - title: 遺伝子とゲノム
-    url: /column/genegenome.html
+    url: /activities/gene-genome.html
   - title: 進化ゲノム学とは
-    url: /column/introevog.html
+    url: /activities/introevog.html
   - title: FASTAとBLASTについて
-    url: /column/homology_doc.html
+    url: /activities/homology-doc.html
   - title: DDBJ Mail Magazine
-    url: /subscribe.html
+    url: /subscribe-ddbj.html
   - title: DDBJ データ解析チャレンジ
-    url: /activities/ddbj-challenge.html
+    url: /activities/training-ddbj-challenge.html
 ---
 
 ユーザーの皆様に DDBJ について業務内容を知って頂きより身近に感じていただけるよう，DDBJ アノテータが DDBJ Mail Magazine にリレー連載したコラムをまとめました。
@@ -46,7 +46,7 @@ DDBJ チーフアノテータ　真島　淳
 
 ### 1.DDBJ の抱える primary database 特有の事情
 
-「[INSDC](http://www.insdc.org/) は primary database を構築している」という主張は [GenBank](//www.ncbi.nlm.nih.gov/genbank/) ([NCBI](//www.ncbi.nlm.nih.gov/)) と [EMBL-Bank](//www.ebi.ac.uk/ena/) ([ENA](//www.ebi.ac.uk/ena/about/about)/[EBI](//www.ebi.ac.uk/)) との対話において頻出しますが, 今一つ一般的には浸透していません。 primary database とは, おそらく一般には「個々の研究者が自らデータを登録する仕組みで収集されたデータベース」というようなことを指すと思います。[DDBJ におけるデータのサイクル](/ddbj/submission.html#flow)を図に示しています。
+「[INSDC](http://www.insdc.org/) は primary database を構築している」という主張は [GenBank](//www.ncbi.nlm.nih.gov/genbank/) ([NCBI](//www.ncbi.nlm.nih.gov/)) と [EMBL-Bank](//www.ebi.ac.uk/ena/) ([ENA](//www.ebi.ac.uk/ena/about/about)/[EBI](//www.ebi.ac.uk/)) との対話において頻出しますが, 今一つ一般的には浸透していません。 primary database とは, おそらく一般には「個々の研究者が自らデータを登録する仕組みで収集されたデータベース」というようなことを指すと思います。[DDBJ におけるデータのサイクル](/ddbj/services/index.html#flow)を図に示しています。
 
 ![]({{ site.baseurl }}/assets/images/ddbj/workflow.gif){:.float-left}
 
@@ -70,13 +70,13 @@ primary database の場合, そのコンテンツに関する responsibility と
 
 ### 3.需要に応えるために拡張してきた INSDC の歴史
 
-実は, 英語が苦手な私が NCBI や EBI の仕事仲間たちと[毎年 meeting して](/activities/icm-reports.html), 英語で discussion し, 比較的頻繁にメールし合うということも思えば不思議な縁です。
+実は, 英語が苦手な私が NCBI や EBI の仕事仲間たちと[毎年 meeting して](/activities/index.html), 英語で discussion し, 比較的頻繁にメールし合うということも思えば不思議な縁です。
 
 一般には, なかなか理解してもらえない [feature](/ddbj/features.html) とか [qualifier](/ddbj/qualifiers.html) の拡張・統廃合は, 毎年, 議論されます。 2007 年と少し前になりますが, 過去の象徴的な事例を 拙稿 (署名していませんが): [RNA ワールドへの対応](news/archive.html?y=2007#071207)にまとめています。 RNA ワールドと言っても化学進化の類の意ではありません。miRNA などに代表されるタンパク質コードの伝令を担わない RNA 産物の記載需要が増えた時期と ncRNA feature 導入についての解説です。 イチイチ署名してませんが, DDBJ のホームページコンテンツには私が書いた文書が多数あります。
 
 上記は書式を時代に合わせる, という１例でしたが, 今度は, 配列決定法の変遷の話題。 EST 受付開始まで行きますと, 少々昔に過ぎて, 私も知らない時代ですが, 当時としては大きな拡張であったろうと思います。 ただ, この時点では DDBJ の中では legacy とか traditional と称している従来の枠組を逸脱する拡張ではありませんでした。 IT 分野の文脈では何故かレガシーに過去の厄介モノの意を含ませる風潮がありますが, 実際の語義は良くも悪くも引き継がれる対象であり, これからも継続すると思います。
 
-この数年で その従来の枠組を逸脱する拡張をしてきました。 [2003 年](/activities/icm-reports.html#2003)に, ゲノム概要配列の量産の時代に合わせて WGS という枠組を拡張・新設しました。 少し古い記事ですが, WGS のデータ量は新設後, [短期間で飛躍的に増大し](/news/archive-j.html?y=2008#080606)ました。 2009 年には, いわゆる次世代型とか新世代型などと呼ばれる sequencing platform の普及と配列量産による需要に対応すべく, INSDC に Sequence Read Archive (SRA) が加わりました。 (当時は Short Read Archive と呼ばれていました。) DDBJ も [DDBJ Seauence Read Archive
+この数年で その従来の枠組を逸脱する拡張をしてきました。 [2003 年](/activities/index.html#2003)に, ゲノム概要配列の量産の時代に合わせて WGS という枠組を拡張・新設しました。 少し古い記事ですが, WGS のデータ量は新設後, [短期間で飛躍的に増大し](/news/archive-j.html?y=2008#080606)ました。 2009 年には, いわゆる次世代型とか新世代型などと呼ばれる sequencing platform の普及と配列量産による需要に対応すべく, INSDC に Sequence Read Archive (SRA) が加わりました。 (当時は Short Read Archive と呼ばれていました。) DDBJ も [DDBJ Seauence Read Archive
 (DRA)](/dra/index.html) を新設し対応しています。
 
 時期的には前後しますが, [2003 年から](activities/icm-reports.html#2003), primary database を逸脱する枠組の拡張が始まりました。 [Third Party Annotation (TPA)](/ddbj/tpa.html) という別枠で, 配列決定を伴わない配列引用による annotation/assemble/re-assemble の登録を受け付けています。 ただし, データの信頼度を高めるためのハードルとして peer-reviewed な論文公開を伴わないかぎり, データを公開しないという規則の元で運用しています。
@@ -89,6 +89,6 @@ primary database の場合, そのコンテンツに関する responsibility と
 
 今後のリレー連載への繋ぎの文章として, 次回以降は, 実際の現場で何が起こっているか, を中心に展開していくことと思います。 多分, 私ではない人が これから書くことですので, 内容は推定です。
 
-1) 欠点はあると思いますが, とにかく利用してくれている研究者は多い SAKURA からの登録がどのように扱われているか？ 2) EST, WGS, 全ゲノム規模 などの登録を扱う[Mass Submission System](/ddbj/mss.html) からの登録受付の実情, 3) それら全てのデータを登録受付後に更新・維持管理をする [update 担当](/ddbj/updt.html) が処理する種々の修正依頼, 4) 配列決定の手法も多様化しつつあり, データ量も増え, 立ち上げから対応に追われている [DDBJ Seauence Read Archive (DRA)](/dra/index.html) に関する事情などが予定されています。
+1) 欠点はあると思いますが, とにかく利用してくれている研究者は多い SAKURA からの登録がどのように扱われているか？ 2) EST, WGS, 全ゲノム規模 などの登録を扱う[Mass Submission System](/ddbj/mss.html) からの登録受付の実情, 3) それら全てのデータを登録受付後に更新・維持管理をする [update 担当](/ddbj/update.html) が処理する種々の修正依頼, 4) 配列決定の手法も多様化しつつあり, データ量も増え, 立ち上げから対応に追われている [DDBJ Seauence Read Archive (DRA)](/dra/index.html) に関する事情などが予定されています。
 
 また, 機会があれば, annotator とシステム仕様策定とか, 新システム検討の関係について述べることがあるかもしれません。 予定していませんが, 私が再登場する回があるかもしれません。 でも, それはないことを密かに願っています。

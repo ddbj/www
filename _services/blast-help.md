@@ -5,36 +5,36 @@ category: services
 lang: ja
 related_pages:
   - title: ARSA ヘルプ
-    url: /arsa-help.html
+    url: /services/arsa.html
   - title: getentry ヘルプ
-    url: /getentry-help.html
+    url: /services/getentry.html
   - title: VecScreen ヘルプ
-    url: /vecscreen-help.html
+    url: /services/vecscreen.html
   - title: ClustalW ヘルプ
-    url: /clustalw-help.html
+    url: /services/clustalw.html
   - title: TXSearch ヘルプ
-    url: /txsearch-help.html
+    url: /services/txsearch.html
   - title: 過去のサービス
-    url: /past-services.html
+    url: /services/services/past-services.html
   - title: 関連論文
-    url: /references.html
+    url: /services/services/references.html
   - title: WABI (Web API for Biology)
-    url: /wabi.html
+    url: /services/services/wabi.html
   - title: WABI BLAST ヘルプ
-    url: /wabi_blast-help.html
+    url: /services/wabi-blast.html
   - title: WABI ClustalW ヘルプ
-    url: /wabi_clustalw-help.html
+    url: /services/wabi-clustalw.html
   - title: WABI VecScreen ヘルプ
-    url: /wabi_vecscreen-help.html
+    url: /services/wabi-vecscreen.html
   - title: WABI MAFFT ヘルプ
-    url: /wabi_mafft-help.html
+    url: /services/wabi-mafft.html
   - title: Pipeline ヘルプ
-    url: /pipeline-help.html
+    url: /services/pipeline.html
 ---
 
 DDBJ では，Web版 BLAST の他に，以下の方法でも BLAST サービスを提供しています。
 
-* [WABI BLAST]({{site.baseurl}}/services/wabi_blast-help.html)
+* [WABI BLAST]({{site.baseurl}}/services/services/wabi-blast.html)
 * [NIG スーパーコンピュータ](https://sc.ddbj.nig.ac.jp/ja/system-guide/software)
 
 ## Program：プログラム<a name="program"></a> <a name=""></a>
@@ -216,9 +216,9 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  DAD (daily updates)  |  DAD 定期リリース後の新着データ  |
 |  RefSeq AA  |  Refseq(Protein)  |
 
-<span class="red">*</span>特許データの利用に際しては，[特許データ利用に関する注意](/ddbj/pat-data.html)をご参照ください。
+<span class="red">*</span>特許データの利用に際しては，[特許データ利用に関する注意](/ddbj/patent-data.html)をご参照ください。
 
-<span class="red">*</span>現在のバージョンは [こちら](/stats/relinfo.html) からご確認ください。
+<span class="red">*</span>現在のバージョンは [こちら](/latest-releases.html) からご確認ください。
 
 #### DIVISION(DAD) <a name="DIVISIONDAD"></a>
 

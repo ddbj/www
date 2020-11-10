@@ -16,7 +16,7 @@ lang: ja
 <dl><dt>参考</dt>
   <dd>
     <ul>
-      <li><a href="/policies.html#ownership">特許・知的所有権と優先権</a></li>
+      <li><a href="/service-policy.html#ownership">特許・知的所有権と優先権</a></li>
     </ul>
   </dd>
 </dl>

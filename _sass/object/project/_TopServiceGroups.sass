@@ -1,0 +1,47 @@
+#TopServiceGroups
+  display: flex
+  flex-wrap: wrap
+  list-style: none
+  padding-top: 3.6rem
+  > .group
+    margin-right: 2rem
+    margin-bottom: 2rem    
+    flex-basis: 25rem
+    > a
+      padding: 3.6rem 0
+      text-decoration: none
+      color: inherit
+      background-color: white
+      display: block
+      width: 25rem
+      height: 20rem
+      border: solid 1px $COLOR_BEIGE
+      transition: border-color $DURATION_GUI
+      &:hover
+        border-color: $COLOR_KEY_STRONG
+      > .title
+        text-align: center
+        font-size: 1.6rem
+        font-weight: normal
+        margin-bottom: 1rem
+        > img
+          height: 5.9rem
+          vertical-align: middle
+          margin-left: -.8rem
+      > .description
+        padding: 0 3.6rem
+        font-size: 1.2rem
+        line-height: 1.6rem
+      
+@media screen and (max-width: $WIDTH_SP)
+  #TopServiceGroups
+    > .group
+      width: 50%
+      margin: 0
+      flex-basis: auto
+      &.-double
+        width: 100%
+      > a
+        width: auto
+        height: 100%
+

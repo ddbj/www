@@ -810,7 +810,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn050207"><a href="#wn050207">Data were added to GIB</a></h2>
   <div class="news_date">February 07,2005</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences. Because the genome sequence data of <i>Ehrlichia ruminantium Gardel</i>, <i>Ehrlichia ruminantium Welgevonden (CIRAD)</i>, <i>Wolbachia endosymbiont TRS of Brugia malayi</i> and <i>Xanthomonas oryzae pv. oryzae KACC10331</i> were released, we incorporated them to GIB, and now you can search those data. <dd><small>References (Institutes): </small><dd><small><b><i>Ehrlichia ruminantium Gardel</i> (CIRAD):</b> Nucleic Acids Res, Unpublished</small><dd><small><b><i>Ehrlichia ruminantium Welgevonden (CIRAD)</i> (CIRAD):</b> Nucleic Acids Res, Unpublished</small><dd><small><b><i>Wolbachia endosymbiont TRS of Brugia malayi</i> (New England Biolabs ):</b> The Wolbachia genome of Brugia malayi: endosymbiont evolution within a human pathogenic nematode, PLoS Biol. (2005) In press</small><dd><small><b><i>Xanthomonas oryzae pv. oryzae KACC10331</i> (National Institute of Agricultural Biotechnology):</b> The genome sequence of Xanthomonas oryzae pathovar oryzae KACC10331, the bacterial blight pathogen of rice, Nucleic Acids Res. 33 (2), 577-586 (2005)</small></dd></dd></dd></dd></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences. Because the genome sequence data of <i>Ehrlichia ruminantium Gardel</i>, <i>Ehrlichia ruminantium Welgevonden (CIRAD)</i>, <i>Wolbachia endosymbiont TRS of Brugia malayi</i> and <i>Xanthomonas oryzae pv. oryzae KACC10331</i> were released, we incorporated them to GIB, and now you can search those data. <dd><small>References (Institutes): </small><dd><small><b><i>Ehrlichia ruminantium Gardel</i> (CIRAD):</b> Nucleic Acids Res, Unpublished</small><dd><small><b><i>Ehrlichia ruminantium Welgevonden (CIRAD)</i> (CIRAD):</b> Nucleic Acids Res, Unpublished</small><dd><small><b><i>Wolbachia endosymbiont TRS of Brugia malayi</i> (New England Biolabs ):</b> The Wolbachia genome of Brugia malayi: endosymbiont evolution within a human pathogenic nematode, PLoS Biol. (2005) In press</small><dd><small><b><i>Xanthomonas oryzae pv. oryzae KACC10331</i> (National Institute of Agricultural Biotechnology):</b> The genome sequence of Xanthomonas oryzae pathovar oryzae KACC10331, the bacterial blight pathogen of rice, Nucleic Acids Res. 33 (2), 577-586 (2005)</small></dd></dd></dd></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -846,7 +846,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn050126"><a href="#wn050126">Genome data was added to GIB</a></h2>
   <div class="news_date">January 26,2005</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.Because the genome sequence data of <i>Gluconobacter oxydans 621H</i> was released by Goettingen Genomics Laboratory, we incorporated it to GIB, and now you can search those data.<dd><small>Reference: Complete genome sequence of the acetogenic bacterium Gluconobacter oxydans, Nat. Biotechnol. (2005) In press</small></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.Because the genome sequence data of <i>Gluconobacter oxydans 621H</i> was released by Goettingen Genomics Laboratory, we incorporated it to GIB, and now you can search those data.<dd><small>Reference: Complete genome sequence of the acetogenic bacterium Gluconobacter oxydans, Nat. Biotechnol. (2005) In press</small></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -864,7 +864,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn050120"><a href="#wn050120">Statistics [Top 30 organisms according to the total number of nucleotides] Update</a></h2>
   <div class="news_date">January 20,2005</div>
-  <div class="news_content"><dd><a href="../breakdown_stats/top30/top30.html">Top 30 organisms according to the total number of nucleotides</a> (- DDBJ rel.60) in <a href="/statistics.html">DDBJ statistics</a> was updated with releasing DDBJ Rel. 60.Click the organism name to view the graph of change.</dd></div>
+  <div class="news_content"><dd><a href="../breakdown_stats/top30/top30.html">Top 30 organisms according to the total number of nucleotides</a> (- DDBJ rel.60) in <a href="/statistics/index.html">DDBJ statistics</a> was updated with releasing DDBJ Rel. 60.Click the organism name to view the graph of change.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -873,7 +873,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn050120_2"><a href="#wn050120_2">Data was added to GIB</a></h2>
   <div class="news_date">January 20,2005</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences. Because the genome sequence data of <i>Staphylococcus epidermidis RP62A</i> was released by TIGR, we incorporated it to GIB, and now you can search this data. <dd><small>Reference: </small><dd><small><b><i>Staphylococcus epidermidis RP62A </i></b>genome sequence, Unpublished (2004)</small></dd></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences. Because the genome sequence data of <i>Staphylococcus epidermidis RP62A</i> was released by TIGR, we incorporated it to GIB, and now you can search this data. <dd><small>Reference: </small><dd><small><b><i>Staphylococcus epidermidis RP62A </i></b>genome sequence, Unpublished (2004)</small></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>

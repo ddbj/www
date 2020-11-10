@@ -12,8 +12,8 @@ lang: en
 
 ## Can not find the sequence data, though the accession number cited on a paper.
 
-<p>DDBJ releases sequence data submitted with a <a href="/ddbj/submission-e.html#holddate">hold date</a> according to <a href="/data-release-policy-e.html">Principle of “Hold-Until-Published” data release</a>. </p>
-<p>Please confirm if the ID on the paper is <a href="/acc_def-e.html">Accession Number Assigned by INSD</a> or not. </p>
+<p>DDBJ releases sequence data submitted with a <a href="/ddbj/services/index.html#holddate">hold date</a> according to <a href="/documents/data-release-policy-e.html">Principle of “Hold-Until-Published” data release</a>. </p>
+<p>Please confirm if the ID on the paper is <a href="/documents/accessions.html">Accession Number Assigned by INSD</a> or not. </p>
 <p>If accession numbers on the paper, please contact us from <a href="/contact-e.html#to-ddbj">contact form</a> by selecting the item, "Updating Submitted Data" with following items.</p>
 <ul>
   <li>Accession numbers on the paper</li>

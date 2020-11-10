@@ -5,18 +5,18 @@ category: services
 lang: ja
 related_pages:
   - title: 登録データ種別
-    url: /data-categories.html
+    url: /documents/documents/data-categories.html
   - title: 国際塩基配列データベースのアクセッション番号
-    url: /acc_def.html
+    url: /documents/accessions.html
   - title: Prefix Letter List
-    url: /prefix.html
+    url: /documents/documents/prefix.html
 ---
 
 ### 「データ公開」を行う時期
 
-1. [登録者](/ddbj/submission.html#submitter)から公開依頼の連絡を受けた場合
+1. [登録者](/ddbj/services/index.html#submitter)から公開依頼の連絡を受けた場合
 
-2. 当該[アクセッション番号](/acc_def.html)の公表を確認した場合
+2. 当該[アクセッション番号](/documents/accessions.html)の公表を確認した場合
 - 登録者以外の第三者が過失により他人のアクセッション番号を公表した場合などは該当しません。
 - 公表とは、アクセッション番号を不特定多数の対象に知らせる行為
     (学術論文 (in press での on-line preview
@@ -29,7 +29,7 @@ related_pages:
     行](/ddbj/tsa.html#Primary)、[CONTIG 行](/ddbj/con.html#Contig)で
     DDBJ のアクセッション番号が参照されていた場合、DRA メタデータとして
     BioProject, BioSample が引用される場合のすべてが該当します。
-3. [公開予定日](/ddbj/submission.html#holddate)が到来した場合
+3. [公開予定日](/ddbj/services/index.html#holddate)が到来した場合
 
 {::options parse_block_html="true" /}
 <div class="attention red">
@@ -58,12 +58,12 @@ related_pages:
     -   公開予定日を延期する場合は、遅くとも
         その２業務日前までにアクセッション番号と新公開予定日をお知らせください。
     -   年末年始など [DDBJ
-        の休業期間中](/ddbj/submission.html#holiday)に公開予定日が到来したデータの公開作業は休業明けに順次、行ないます。予め、ご了承ください。
+        の休業期間中](/ddbj/services/index.html#holiday)に公開予定日が到来したデータの公開作業は休業明けに順次、行ないます。予め、ご了承ください。
 
-:   データ公開、[公開予定日延長](/ddbj/updt.html#q5)の依頼は
-    [申し込みフォーム](/ddbj/updt-form.html) 、または
+:   データ公開、[公開予定日延長](/ddbj/update.html#q5)の依頼は
+    [申し込みフォーム](/ddbj/update-form.html) 、または
     ![](/images/news/ad_updt.gif)へのメールにて ご連絡ください
-    詳細は [登録データの変更・更新](/ddbj/updt.html) をご参照ください。
+    詳細は [登録データの変更・更新](/ddbj/update.html) をご参照ください。
 
 登録データの取り扱いについて
 :   登録データの取り扱いについては、[INSDC

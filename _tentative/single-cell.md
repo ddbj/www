@@ -13,12 +13,12 @@ lang: ja
 
 ### ライブラリー情報 <a name="library"></a>
 
-分割・混合登録に関係なく、DRA Experiment の [Library Construction Protocol](/dra/submission.html#Library_Construction_Protocol) にシングルセルライブラリー構築手法（例
+分割・混合登録に関係なく、DRA Experiment の [Library Construction Protocol](/dra/services/index.html#Library_Construction_Protocol) にシングルセルライブラリー構築手法（例
 Smart-seq2、10x、Drop-seq）、使用したキットの名前とバージョンを記入します。 10x の場合は 10x chemistry のバージョン (例 v1、v2) も記入します。
 
 #### データファイル形式 <a name="data-file-format"></a>
 
-DRA の生データとしては基本的に [fastq もしくは bam](/dra/submission.html#run-data-files) を登録します。混合登録の場合はバーコードやリンカー配列を含めてください。
+DRA の生データとしては基本的に [fastq もしくは bam](/dra/services/index.html#run-data-files) を登録します。混合登録の場合はバーコードやリンカー配列を含めてください。
 
 10x で bam にタグやバーコード配列が含まれていない場合は fastq ファイルを登録します。参考: [Generating FASTQs with cellranger mkfastq](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/mkfastq)
 
@@ -40,7 +40,7 @@ DRA の生データとしては基本的に [fastq もしくは bam](/dra/submis
 
 ### DRA <a name="multiplexed-dra"></a> 
 
-サンプル（細胞）毎に分割された [fastq もしくは bam](/dra/submission.html#run-data-files) を登録します。
+サンプル（細胞）毎に分割された [fastq もしくは bam](/dra/services/index.html#run-data-files) を登録します。
 
 ### GEA <a name="de-multiplexed-gea"></a>
 
@@ -60,7 +60,7 @@ DRA の生データとしては基本的に [fastq もしくは bam](/dra/submis
 
 ### DRA <a name="multiplexed-dra"></a>
 
-バーコード配列を含んだライブラリー毎の [fastq もしくは bam](/dra/submission.html#run-data-files) を登録します。10x で bam にバーコード配列が含まれていない場合は fastq ファイルを登録します。参考: [Generating FASTQs with cellranger mkfastq](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/mkfastq)
+バーコード配列を含んだライブラリー毎の [fastq もしくは bam](/dra/services/index.html#run-data-files) を登録します。10x で bam にバーコード配列が含まれていない場合は fastq ファイルを登録します。参考: [Generating FASTQs with cellranger mkfastq](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/mkfastq)
 
 ### GEA <a name="multiplexed-gea"></a>
 

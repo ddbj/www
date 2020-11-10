@@ -486,7 +486,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn000419"><a href="#wn000419">DDBJ/CIB Report 発行</a></h2>
   <div class="news_date">2000年04月19日</div>
-  <div class="news_content">ＤＤＢＪでは定期発行物として「DDBJ/CIB Report」を年１回， 「ＤＤＢＪオフラインニュース」を年２回発行しています。 ３月下旬に「DDBJ/CIB Report 2000」約3000部をＤＤＢＪ利用者に発送しました。 今回の内容は，国内外のゲノムプロジェクト・関連Webサイト紹介や， 寺子屋『情報生物学』第１回資料，生命情報研究センター（CIB）の活動報告などです。 ＤＤＢＪの定期発行物はWWW上でも公開しています。 ＤＤＢＪのホームページの「ＤＤＢＪへようこそ／ <a href="/archives/pub-archives.html">ＤＤＢＪの発行物</a>」 (http://www.ddbj.nig.ac.jp/ddbjnew/pub-j.html）をご覧下さい。</div>
+  <div class="news_content">ＤＤＢＪでは定期発行物として「DDBJ/CIB Report」を年１回， 「ＤＤＢＪオフラインニュース」を年２回発行しています。 ３月下旬に「DDBJ/CIB Report 2000」約3000部をＤＤＢＪ利用者に発送しました。 今回の内容は，国内外のゲノムプロジェクト・関連Webサイト紹介や， 寺子屋『情報生物学』第１回資料，生命情報研究センター（CIB）の活動報告などです。 ＤＤＢＪの定期発行物はWWW上でも公開しています。 ＤＤＢＪのホームページの「ＤＤＢＪへようこそ／ <a href="/activities/archives.html">ＤＤＢＪの発行物</a>」 (http://www.ddbj.nig.ac.jp/ddbjnew/pub-j.html）をご覧下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>

@@ -18,5 +18,5 @@ lang: ja
 <hr>
 <p>また、不特定多数の機関が国際塩基配列データベースを随時コピーして独自のデータベースを構築しております。<br>これらのデータベースからの削除は DDBJ ではサポートできかねます。それぞれの管理者へ直接、ご依頼いただくことになります。</p>
 <dl><dt>参考</dt>
-  <dd><a href="/insdc-status-e.html">INSDC Status Document</a></dd>
+  <dd><a href="/insdc-status-e">INSDC Status Document</a></dd>
 </dl>

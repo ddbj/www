@@ -16,7 +16,7 @@ lang: ja
 <p>もし、論文投稿の関係などで、特許出願と並行してアクセッション番号の取得が必要な場合は、特許取得に支障がないか、まずは特許庁へ直接ご確認をお願いいたします。その後でDDBJ へその旨を添えてご登録ください。</p>
 <p>塩基配列データがDDBJ から公開された場合、「公知」の扱いになりますので注意が必要です。</p>
 <dl><dt>参考</dt>
-  <dd><a href="/ddbj/pat-data.html">特許出願に含まれる配列データの提供</a></dd>
-  <dd><a href="/policies.html#ownership">特許・知的所有権と優先権</a></dd>
-  <dd><a href="/column/patent.html">DDBJ での特許関連配列データの公開業務の紹介</a></dd>
+  <dd><a href="/ddbj/patent-data.html">特許出願に含まれる配列データの提供</a></dd>
+  <dd><a href="/service-policy.html#ownership">特許・知的所有権と優先権</a></dd>
+  <dd><a href="/activities/patent.html">DDBJ での特許関連配列データの公開業務の紹介</a></dd>
 </dl>

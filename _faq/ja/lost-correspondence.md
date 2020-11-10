@@ -12,7 +12,7 @@ lang: ja
 
 ## 登録済で未公開の配列とアクセッション番号との対応がわからなくなりました
 
-<p><a href="/contact.html#to-ddbj">DDBJ へのお問い合わせ</a> より，以下の情報をご連絡下さい。</p>
+<p><a href="/contact-ddbj.html#to-ddbj">DDBJ へのお問い合わせ</a> より，以下の情報をご連絡下さい。</p>
 <ul>
   <li>コンタクトパーソンのメールアドレス</li>
   <li>アクセッション番号またはEntryID</li>

@@ -112,7 +112,7 @@ describe the names of gene and product as follows;
   - If the name and function are not known, we recommend to describe as "hypothetical protein".
   - It is recommended to comply with [the international protein nomenclature guidelines](https://www.ncbi.nlm.nih.gov/genome/doc/internatprot_nomenguide/).
 : Though we recognize that there are many exceptions in which the gene nomenclature of some model organisms do not fall into the above rule, we recommend the above rule, because we wish to make contents of DDBJ/ENA/GenBank as useful as possible.
-: Please do not hesitate to contact us when you like to update the informnation of protein in your entry after once submitted to DDBJ. See also the page, [Data Updates/Correction: after getting your accession number](/ddbj/updt-e.html), when you like to update your data.
+: Please do not hesitate to contact us when you like to update the informnation of protein in your entry after once submitted to DDBJ. See also the page, [Data Updates/Correction: after getting your accession number](/ddbj/update-e.html), when you like to update your data.
 
 ## How to describe CDS feature, when termination codon is found in the range <a name="stop"></a>
 

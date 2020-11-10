@@ -92,7 +92,7 @@ Login ID:
 
 ## DRA への登録権限を追加 <a name="enable-dra-submission-in-account"></a>
 
-[DDBJ Sequence Read Archive (DRA)](/dra/index.html) へデータを登録するため，アカウントにcenter name と公開鍵を登録します。 [Centername](/dra/submission.html#Submission_Center_Name) は DRAが組織に対して割り振っている略号です。 公開鍵はユーザの認証に用いられます。
+[DDBJ Sequence Read Archive (DRA)](/dra/index.html) へデータを登録するため，アカウントにcenter name と公開鍵を登録します。 [Centername](/dra/services/index.html#Submission_Center_Name) は DRAが組織に対して割り振っている略号です。 公開鍵はユーザの認証に用いられます。
 
 ### 公開鍵/秘密鍵ペアの生成 <a name="generate-key-pair"></a>
 
@@ -202,7 +202,7 @@ Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
 {% include image.html url="books/center.jpg" caption="center name を登録" class="w400" %}
 {:/}
 
-適切な center が登録されていない場合，[Apply new center name\] をクリックし，組織のフルネームとともに center の新規登録を [DDBJ](/contact.html) に申請します。
+適切な center が登録されていない場合，[Apply new center name\] をクリックし，組織のフルネームとともに center の新規登録を [DDBJ](/contact-ddbj.html) に申請します。
 
 Center name が登録されると，下部の "Public Key"
 エリアから公開鍵をアップロードできるようになります。公開鍵ファイルを選択し，[Register

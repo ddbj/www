@@ -16,8 +16,8 @@ lang: ja
 <dl><dt>参照</dt>
   <dd>
     <ul>
-      <li><a href="/ddbj/submission.html#responsibility">塩基配列登録の前に</a></li>
-      <li><a href="/ddbj/submission.html">塩基配列の登録</a></li>
+      <li><a href="/ddbj/services/index.html#responsibility">塩基配列登録の前に</a></li>
+      <li><a href="/ddbj/services/index.html">塩基配列の登録</a></li>
     </ul>
   </dd>
 </dl>

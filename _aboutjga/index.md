@@ -13,7 +13,7 @@ Japanese Genotype-phenotype Archive (JGA)
 データが収集された個人との間の同意に基づく協定により，JGA のデータ利用は特定の研究目的に制限されています。 JGA
 は厳格なプロトコールに従い，情報を管理，格納，提供しています。
 登録処理が終わった全てのデータは暗号化されます。 JGA
-チームには[こちらから連絡](/contact.html)することができます。  
+チームには[こちらから連絡](/contact-ddbj.html)することができます。  
 なお，JGA に登録されるデータおよびデータの利用についての審査は[独立行政法人科学技術振興機構
 (JST)/バイオサイエンスデータベースセンター
 (NBDC)](http://humandbs.biosciencedbc.jp/) が実施しています。 JGA
@@ -31,9 +31,9 @@ JGA はデータを格納する際にそのデータに適用される利用制�
 ## データの登録 <a name="submission"></a>
 
 JGA は JST/NBDC で承認された匿名化されたデータだけを受け付けています
-([ヒトを対象とした研究データの登録について](/policies.html#human))。
+([ヒトを対象とした研究データの登録について](/service-policy.html#human))。
 登録者は [JST/NBDC](http://humandbs.biosciencedbc.jp/) に JGA へのデータ提供を申請し，
-NBDC からデータ提供の承認連絡を受けた登録者は [JGA に連絡](/contact.html)します。 JGA
+NBDC からデータ提供の承認連絡を受けた登録者は [JGA に連絡](/contact-ddbj.html)します。 JGA
 チームはその連絡を受け，登録者に登録手順を別途案内します。
 
 データの受領後，JGA はデータベースへの格納のためにデータを処理し，同時に投稿されたオリジナルなファイル形式も保存します。 JGA

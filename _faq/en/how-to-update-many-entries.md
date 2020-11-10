@@ -16,7 +16,7 @@ lang: en
 <dl><dt>(1) Update information is in common of all entries.</dt>
   <dd>Example: change reference or submitters information, postpone the hold-date, etc..</dd>
 </dl>
-<p>In principle, send your request via <a href="/ddbj/updt-form-e.html">Application Form for Data Update Requests</a>. </p>
+<p>In principle, send your request via <a href="/ddbj/update-form-e.html">Application Form for Data Update Requests</a>. </p>
 <p> </p>
 <dl><dt>(2) Contents of corrections are different among entries. </dt>
   <dd>Example: change each clone or gene name of all entries, etc..</dd><dt>(3) Extensive correction of data</dt>

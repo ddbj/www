@@ -37,7 +37,7 @@ JGA は NBDC で承認された利用制限ポリシーを持つ，匿名化さ�
 
 ## 塩基配列データ (raw/unaligned と aligned) <a name="sequence"></a>
 
-JGA でサポートしているファイル形式を以下に示します。 異なるファイル形式をもっている場合や不明な点がある場合は [JGA に連絡](/contact.html)してください。
+JGA でサポートしているファイル形式を以下に示します。 異なるファイル形式をもっている場合や不明な点がある場合は [JGA に連絡](/contact-ddbj.html)してください。
 
 データファイルが複数サンプルに由来するデータを含んでいる場合，投稿する前にファイルをサンプルごとに分割します。 そうすることによって Run は１つのサンプルに由来するデータファイルだけを持つようになります。
 
@@ -115,7 +115,7 @@ Analysis は複数の Data もしくは Sample を参照することができる
 
 ## メタデータ <a name="metadata"></a>
 
-JGA データモデルは [Sequence Read Archive](/dra/submission.html) のモデルを拡張してつくられています。 JGA メタデータは XML オブジェクトで構成されています。
+JGA データモデルは [Sequence Read Archive](/dra/services/index.html) のモデルを拡張してつくられています。 JGA メタデータは XML オブジェクトで構成されています。
 
 JGA XML schema: [JGA xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
@@ -212,8 +212,8 @@ XML schema: [JGA.policy.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 {% include image.html url="submission/samples-analysis.jpg" caption="Sample を集計した Analysis データ登録" class="w500" %}
 {:/}
 
-Sample-Analysis セットでデータ登録をする場合は [JGA チームに連絡](/contact.html)します。
+Sample-Analysis セットでデータ登録をする場合は [JGA チームに連絡](/contact-ddbj.html)します。
 
 ## 登録の更新 <a name="update"></a>
 
-登録を更新するためには [JGA チームに連絡](/contact.html)します。
+登録を更新するためには [JGA チームに連絡](/contact-ddbj.html)します。

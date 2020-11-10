@@ -22,7 +22,7 @@ lang: ja
 | 467                               | 登録配列の467番目の塩基                                                                                        |
 | 123^124                           | 登録配列の123番目と124番目の間                                                                                   |
 
-以下の Location の記述法は、[塩基配列登録システム](/ddbj/websub.html)では入力することができません。  
+以下の Location の記述法は、[塩基配列登録システム](/ddbj/web-submission.html)では入力することができません。  
 塩基配列登録システムの"Submission Information"の入力欄にその旨を説明していただくか、[Mass Submission System](mss.html)をご利用下さい。
 
 | Location記述例                        | 意味                                                                                    |

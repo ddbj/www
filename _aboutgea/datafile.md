@@ -235,7 +235,7 @@ protein アクセッション番号) を記載するようにしてください�
 
 一細胞解析における spike-in やデータ解析に必要な追加ファイルを additional file として登録することができます（例
 [E-MTAB-3624](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3624/)）。登録を希望する場合は
-[GEA チームに連絡](/contact.html)してください。
+[GEA チームに連絡](/contact-ddbj.html)してください。
 
 ## シークエンシングデータ <a name="seq_data"></a>
 
@@ -245,7 +245,7 @@ protein アクセッション番号) を記載するようにしてください�
 ### 生データファイル <a name="seq_raw"></a> 
 
 次世代シークエンスの生データは DDBJ Sequence Read Archive (DRA) に事前登録する必要があります。[DRA
-に登録可能なファイルリスト](/dra/submission.html#run-data-files)をご覧ください。
+に登録可能なファイルリスト](/dra/services/index.html#run-data-files)をご覧ください。
 
 ### 解析データファイル <a name="seq_proc"></a>
 
@@ -254,7 +254,7 @@ protein アクセッション番号) を記載するようにしてください�
 BAM、SAM、BED）からさらに解析を進めたデータに基づいていることが一般的であるため、
 GEA はアライメントファイルが解析データファイルとして登録されることを想定していません。
 標準的なアライメントファイルのみが解析データである場合は
-[GEA に連絡](/contact.html)してください。
+[GEA に連絡](/contact-ddbj.html)してください。
 
 解析データファイルの要件は実験の性質に依存するため完全には定められていません。
 
@@ -288,4 +288,4 @@ format FAQ](http://www.genome.ucsc.edu/FAQ/FAQformat.html) を参照してくだ
 
 一細胞解析における spike-in やデータ解析に必要な追加ファイルを additional file として登録することができます（例
 [E-MTAB-3624](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3624/)）。登録を希望する場合は
-[GEA チームに連絡](/contact.html)してください。
+[GEA チームに連絡](/contact-ddbj.html)してください。

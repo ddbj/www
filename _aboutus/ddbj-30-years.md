@@ -8,8 +8,8 @@ lang: ja
 
 <ul class="nav">
     <li><a href="/files/pdf/30th/shinbun_all.pdf">「遺伝子バンク30年」第1回 - 第16回（静岡新聞連載記事）</a></li>
-    <li><a href="/stats/release.html#total_data">DDBJ Database Release History</a>（DDBJリリースのエントリ数、塩基数の推移）</li>
-    <li><a href="/statistics.html">DDBJ ニュースレター アーカイブ</a>（過去のDDBJ発行物アーカイブ）</li>
+    <li><a href="/statistics/ddbj-release.html#total_data">DDBJ Database Release History</a>（DDBJリリースのエントリ数、塩基数の推移）</li>
+    <li><a href="/statistics/index.html">DDBJ ニュースレター アーカイブ</a>（過去のDDBJ発行物アーカイブ）</li>
     <li><a href="/files/pdf/30th/NIG_and_DDBJ_Symposium.pdf">2017年国立遺伝学研究所 国際シンポジウム／DDBJ ３０周年記念シンポジウム</a></li>
 </ul>
 <ul class="timeline">

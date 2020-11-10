@@ -6,31 +6,31 @@ category: services
 lang: ja
 related_pages:
   - title: ARSA ヘルプ
-    url: services/arsa-help.html
+    url: services/services/arsa.html
   - title: BLAST ヘルプ
-    url: services/blast-help.html
+    url: services/services/blast.html
   - title: VecScreen ヘルプ
-    url: services/vecscreen-help.html
+    url: services/services/vecscreen.html
   - title: ClustalW ヘルプ
-    url: services/clustalw-help.html
+    url: services/services/clustalw.html
   - title: TXSearch ヘルプ
-    url: services/txsearch-help.html
+    url: services/services/txsearch.html
   - title: 過去のサービス
-    url: services/past-services.html
+    url: services/services/services/past-services.html
   - title: 関連論文
-    url: services/references.html
+    url: services/services/services/references.html
   - title: WABI (Web API for Biology)
-    url: services/wabi.html
+    url: services/services/services/wabi.html
   - title: WABI BLAST ヘルプ
-    url: services/wabi_blast-help.html
+    url: services/services/wabi-blast.html
   - title: WABI ClustalW ヘルプ
-    url: services/wabi_clustalw-help.html
+    url: services/services/wabi-clustalw.html
   - title: WABI VecScreen ヘルプ
-    url: services/wabi_vecscreen-help.html
+    url: services/services/wabi-vecscreen.html
   - title: WABI MAFFT ヘルプ
-    url: services/wabi_mafft-help.html
+    url: services/services/wabi-mafft.html
   - title: Pipeline ヘルプ
-    url: services/pipeline-help.html
+    url: services/services/pipeline.html
 ---
 
 ## getentryの機能について <a name="getentry_の機能について"></a>

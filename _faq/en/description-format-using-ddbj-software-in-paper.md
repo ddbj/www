@@ -12,4 +12,4 @@ lang: en
 
 ## What format should I use when including results obtained with DDBJ search and analysis software in a journal publication?
 
-The format differs from journal to journal; please ask the publisher. In your publications, please cite the original papers for the appropriate tools and state that you used DDBJ software for searching and analyzing gene sequence data.<br><br>Please see the DDBJ home page <a href="/references-e.html">References</a> about the original papers and other related papers on the DDBJ search and analysis software.
+The format differs from journal to journal; please ask the publisher. In your publications, please cite the original papers for the appropriate tools and state that you used DDBJ software for searching and analyzing gene sequence data.<br><br>Please see the DDBJ home page <a href="/services/references-e.html">References</a> about the original papers and other related papers on the DDBJ search and analysis software.

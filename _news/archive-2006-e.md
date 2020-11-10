@@ -405,7 +405,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn061020_2"><a href="#wn061020_2">Guidance for Nucleotide Sequence Submission updated</a></h2>
   <div class="news_date">October 20,2006</div>
-  <div class="news_content"><dd>According to the decision in <a href="/activities/icm-reports-e.html#2006">the 19th International Collaborators Meeting</a>, <a href="/ddbj/flat-file-e.html">Guidance for Nucleotide Sequence Submission</a> has been updated on October 19, 2006.</dd></div>
+  <div class="news_content"><dd>According to the decision in <a href="/activities/index-e.html#2006">the 19th International Collaborators Meeting</a>, <a href="/ddbj/flat-file-e.html">Guidance for Nucleotide Sequence Submission</a> has been updated on October 19, 2006.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -495,7 +495,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn060929_2"><a href="#wn060929_2">Report for The 19th International Collaborators Meeting</a></h2>
   <div class="news_date">September 29,2006</div>
-  <div class="news_content"><dd> DDBJ, EMBL-Bank/EBI, GenBank/NCBI hold the international collaborators meetings in every May for the porpose of the operation  and the implement of the collaborative construction of the international nucleotide sequence database.<dd>In the meeting, the three banks report each bank activities in the past year, and discussed some practical matters to maintain and to develop the nucleotide sequence database<br>under <a href="http://www.insdc.org/">INSDC; International Nucleotide Sequence Database collaboration</a>. <dd><a href="/activities/icm-reports-e.html#2006"> The report for The 19th International Collaborators Meeting</a> was placed on the DDBJ HP.   This report will also be provided in the  DDBJ Mail Magazine No.28.</dd></dd></dd></div>
+  <div class="news_content"><dd> DDBJ, EMBL-Bank/EBI, GenBank/NCBI hold the international collaborators meetings in every May for the porpose of the operation  and the implement of the collaborative construction of the international nucleotide sequence database.<dd>In the meeting, the three banks report each bank activities in the past year, and discussed some practical matters to maintain and to develop the nucleotide sequence database<br>under <a href="http://www.insdc.org/">INSDC; International Nucleotide Sequence Database collaboration</a>. <dd><a href="/activities/index-e.html#2006"> The report for The 19th International Collaborators Meeting</a> was placed on the DDBJ HP.   This report will also be provided in the  DDBJ Mail Magazine No.28.</dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -1017,7 +1017,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn060517"><a href="#wn060517">The genome data are available from GIB by FTP</a></h2>
   <div class="news_date">May 17,2006</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a><br>    is the comprehensive data repository of complete genomes of the<br>    microorganisms and eukaryota. The FTP download site was opened to the<br>    public.  The genome sequence and annotation are download-able strain<br>    by strain from the top page of<br>    GIB (http://gib.genes.nig.ac.jp/)<br>    and also <a href="/past-services-e.html#gib">ftp://ftpgib.genes.nig.ac.jp/</a>.</dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a><br>    is the comprehensive data repository of complete genomes of the<br>    microorganisms and eukaryota. The FTP download site was opened to the<br>    public.  The genome sequence and annotation are download-able strain<br>    by strain from the top page of<br>    GIB (http://gib.genes.nig.ac.jp/)<br>    and also <a href="/services/past-services-e.html#gib">ftp://ftpgib.genes.nig.ac.jp/</a>.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>

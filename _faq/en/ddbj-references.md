@@ -12,4 +12,4 @@ lang: en
 
 ## Where can I find the original papers and other related papers on the DDBJ search and analysis software?
 
-Please see the DDBJ home page <a href="/references-e.html">References</a>.
+Please see the DDBJ home page <a href="/services/references-e.html">References</a>.

@@ -6,7 +6,7 @@ category: _activities
 lang: ja
 related_pages:
   - title: DDBJ データ解析チャレンジ
-    url: /activities/ddbj-challenge.html
+    url: /activities/training-ddbj-challenge.html
   - title: DDBJ スタッフの論文 (2009-)
     url: /activities/
   - title: DDBJ スタッフの講演発表 (2009-)

@@ -9,11 +9,11 @@ lang: en
 ## Definition of Terms <a name="Definition_of_Terms"></a>
 
 <span style="font-weight:bold">Web submission</span>: Data submission to
-DDBJ via [Nucleotide Sequence Submission System](/ddbj/websub-e.html)  
+DDBJ via [Nucleotide Sequence Submission System](/ddbj/web-submission-e.html)  
 <span style="font-weight:bold">MSS</span>: Data submission to DDBJ via
 [Mass Submission System](/ddbj/mss-e.html)  
 <span style="font-weight:bold">Submitter</span>: Number of groups of
-[submitters](/ddbj/submission-e.html#submitter)  
+[submitters](/ddbj/services/index.html#submitter)  
 <span style="font-weight:bold">Session</span>: Number of times to load
 submitted data into DDBJ  
 <span style="font-weight:bold">Japan</span>: Submitted from Japanese

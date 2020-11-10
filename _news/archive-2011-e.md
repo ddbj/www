@@ -122,7 +122,7 @@ AEAAI0000001-AEAAI0029614 (29,614 entries)AEAAJ0000001-AEAAJ0030206 (30,206 entr
 <div class="news_post_list">
   <h2 class="news_title" id ="wn111003"><a href="#wn111003">Resumed GIB</a></h2>
   <div class="news_date">October 03,2011</div>
-  <div class="news_content"><a href="/past-services-e.html#gib" target="_blank">GIB</a> has been resumed since October 3, 2011.<br>For electricity conservation,　we stopped and kept you waiting for a long time.<br>Please use it.</div>
+  <div class="news_content"><a href="/services/past-services-e.html#gib" target="_blank">GIB</a> has been resumed since October 3, 2011.<br>For electricity conservation,　we stopped and kept you waiting for a long time.<br>Please use it.</div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -140,7 +140,7 @@ AEAAI0000001-AEAAI0029614 (29,614 entries)AEAAJ0000001-AEAAJ0030206 (30,206 entr
 <div class="news_post_list">
   <h2 class="news_title" id ="wn110926_2"><a href="#wn110926_2">DDBJ Rel. 87.0, DAD (DDBJ amino acid database) Rel. 57.0 Completed</a></h2>
   <div class="news_date">September 26,2011</div>
-  <div class="news_content"><dl><dd><b>DDBJ Rel. 87.0</b><ul><li>Date: Sep. 26, 2011</li><li>142,339,601 entries    131,276,394,833 bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.87.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul><b>DAD (DDBJ amino acid database) Rel. 57.0</b><ul><li>Date: Sep. 26, 2011</li><li>21,596,317 entries    6,173,068,786 aa (total number of residues)</li> <li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.57.txt">DAD Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul></dd></dl></div>
+  <div class="news_content"><dl><dd><b>DDBJ Rel. 87.0</b><ul><li>Date: Sep. 26, 2011</li><li>142,339,601 entries    131,276,394,833 bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.87.txt">DDBJ Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul><b>DAD (DDBJ amino acid database) Rel. 57.0</b><ul><li>Date: Sep. 26, 2011</li><li>21,596,317 entries    6,173,068,786 aa (total number of residues)</li> <li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.57.txt">DAD Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul></dd></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -158,7 +158,7 @@ AEAAI0000001-AEAAI0029614 (29,614 entries)AEAAJ0000001-AEAAJ0030206 (30,206 entr
 <div class="news_post_list">
   <h2 class="news_title" id ="wn110922"><a href="#wn110922">The Report for the 24th International Collaborators Meeting</a></h2>
   <div class="news_date">September 22,2011</div>
-  <div class="news_content"><a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a>, consisted of DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a> and <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a>, hold the international collaborators meeting every year.In 2011, the meeting was held at Osaka in Japan, 23-27 May, to discuss  practical matters to maintain and update nucleotide sequence data  archives; <a href="/index.html" target="_blank">DDBJ</a>, <a href="http://www.ebi.ac.uk/embl/" target="_blank">EMBL-Bank</a>, <a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>, Sequence Read Archive (SRA) and Trace Archive.Though there were still aftermaths of the Great East Japan Earthquake,   DDBJ could host ICM2011 with understanding and cooperation of NCBI and  EBI.The outcomes of the meeting are summarized <a href="/activities/icm-reports-e.html#2011">here</a>.</div>
+  <div class="news_content"><a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a>, consisted of DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a> and <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a>, hold the international collaborators meeting every year.In 2011, the meeting was held at Osaka in Japan, 23-27 May, to discuss  practical matters to maintain and update nucleotide sequence data  archives; <a href="/index.html" target="_blank">DDBJ</a>, <a href="http://www.ebi.ac.uk/embl/" target="_blank">EMBL-Bank</a>, <a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>, Sequence Read Archive (SRA) and Trace Archive.Though there were still aftermaths of the Great East Japan Earthquake,   DDBJ could host ICM2011 with understanding and cooperation of NCBI and  EBI.The outcomes of the meeting are summarized <a href="/activities/index-e.html#2011">here</a>.</div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -324,7 +324,7 @@ AK388430 - AK388473AK388475 - AK388499AK388501 - AK388575</div></dd> </dl></div>
 <div class="news_post_list">
   <h2 class="news_title" id ="wn110620"><a href="#wn110620">DDBJ Rel. 86.0, DAD (DDBJ amino acid database) Rel. 56.0 Completed</a></h2>
   <div class="news_date">June 20,2011</div>
-  <div class="news_content"><dl><dd><b>DDBJ Rel. 86.0</b><ul><li>Date: Jun. 20, 2011</li><li>138,030,308 entries    128,745,918,079 bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.86.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul><b>DAD (DDBJ amino acid database) Rel. 56.0</b><ul><li>Date: Jun. 20, 2011</li><li>20,742,576 entries    5,912,174,430aa (total number of residues)</li> <li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.56.txt">DAD Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul></dd></dl></div>
+  <div class="news_content"><dl><dd><b>DDBJ Rel. 86.0</b><ul><li>Date: Jun. 20, 2011</li><li>138,030,308 entries    128,745,918,079 bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.86.txt">DDBJ Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul><b>DAD (DDBJ amino acid database) Rel. 56.0</b><ul><li>Date: Jun. 20, 2011</li><li>20,742,576 entries    5,912,174,430aa (total number of residues)</li> <li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.56.txt">DAD Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul></dd></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -423,7 +423,7 @@ AK388430 - AK388473AK388475 - AK388499AK388501 - AK388575</div></dd> </dl></div>
 <div class="news_post_list">
   <h2 class="news_title" id ="wn110331"><a href="#wn110331">DDBJ Rel. 85.0, DAD (DDBJ amino acid database) Rel. 55.0 Completed</a></h2>
   <div class="news_date">March 31,2011</div>
-  <div class="news_content"><dl><dd><strong>DDBJ Rel. 85.0</strong><ul><li>Date: Mar. 30, 2011</li><li>132,302,771 entries    124,516,775,718 bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.85.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul></dd><dd><strong>DAD (DDBJ amino acid database) Rel. 55.0</strong><ul><li>Date: Mar. 30, 2011</li><li>19,723,681 entries    5,576,482,211 aa (total number of residues)</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.55.txt">DAD Release Note</a></li></ul></dd></dl></div>
+  <div class="news_content"><dl><dd><strong>DDBJ Rel. 85.0</strong><ul><li>Date: Mar. 30, 2011</li><li>132,302,771 entries    124,516,775,718 bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.85.txt">DDBJ Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul></dd><dd><strong>DAD (DDBJ amino acid database) Rel. 55.0</strong><ul><li>Date: Mar. 30, 2011</li><li>19,723,681 entries    5,576,482,211 aa (total number of residues)</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.55.txt">DAD Release Note</a></li></ul></dd></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -486,7 +486,7 @@ AK388430 - AK388473AK388475 - AK388499AK388501 - AK388575</div></dd> </dl></div>
 <div class="news_post_list">
   <h2 class="news_title" id ="wn110223"><a href="#wn110223">DAD Rel. 54.1 released</a></h2>
   <div class="news_date">February 23,2011</div>
-  <div class="news_content"><dl>DAD released Rel.54.1, because a part of trouble had been found in Rel.54 (released on Jan. 2011).<br><br><br><dd><ul><li>Date: Feb. 23, 2011</li><li>18,867,609 entries:    5,305,638,923aa (total number of residues)</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.54.1.txt">DAD Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul></dd>Reference: <a href="/archives/5131.html">Apologies for the trouble of in DAD release 54.</a></dl> </div>
+  <div class="news_content"><dl>DAD released Rel.54.1, because a part of trouble had been found in Rel.54 (released on Jan. 2011).<br><br><br><dd><ul><li>Date: Feb. 23, 2011</li><li>18,867,609 entries:    5,305,638,923aa (total number of residues)</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.54.1.txt">DAD Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul></dd>Reference: <a href="/archives/5131.html">Apologies for the trouble of in DAD release 54.</a></dl> </div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -513,7 +513,7 @@ AK388430 - AK388473AK388475 - AK388499AK388501 - AK388575</div></dd> </dl></div>
 <div class="news_post_list">
   <h2 class="news_title" id ="wn110222"><a href="#wn110222">DDBJ Rel. 84.1 released</a></h2>
   <div class="news_date">February 22,2011</div>
-  <div class="news_content"><dl>DDBJ released Rel.84.1, because a part of trouble had been found in Rel.84 (released on Dec. 2010).<br><br><br><dd><ul><li>Date: Feb. 21, 2011</li><li>128,607,035 entries:    120,919,136,706 bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.84.1.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul></dd>Reference: <a href="/archives/5136.html">Apologies for the trouble of in DDBJ release 84.</a></dl> </div>
+  <div class="news_content"><dl>DDBJ released Rel.84.1, because a part of trouble had been found in Rel.84 (released on Dec. 2010).<br><br><br><dd><ul><li>Date: Feb. 21, 2011</li><li>128,607,035 entries:    120,919,136,706 bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.84.1.txt">DDBJ Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul></dd>Reference: <a href="/archives/5136.html">Apologies for the trouble of in DDBJ release 84.</a></dl> </div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -569,7 +569,7 @@ ddbjenv4.seq.gz, ddbjenv5.seq.gz EST (1 entry)     / ddbjest145.seq.gz HUM (21 e
 <div class="news_post_list">
   <h2 class="news_title" id ="wn110204"><a href="#wn110204">DDBJ/EMBL/GenBank Feature Table Definition revised</a></h2>
   <div class="news_date">February 04,2011</div>
-  <div class="news_content"><dl><dd><a href="/ddbj/full_index-e.html">Feature Table Definition(FT-Doc)</a> is the common annotation manual among the three banks(DDBJ, EMBL-Bank, GenBank) for the construction of the DDBJ/EMBL/GenBank International Nucleotide Sequence Database. Following the decision at an <a href="/activities/icm-reports-e.html">International Collaborators Meeting(ICM)</a> held annually in May, this FT-Doc is updated every year. In January 2011, FT-Doc is updated, based on <a href="/activities/icm-reports-e.html#2010">the 23rd International Collaborators Meeting</a>. </dd></dl></div>
+  <div class="news_content"><dl><dd><a href="/ddbj/full_index-e.html">Feature Table Definition(FT-Doc)</a> is the common annotation manual among the three banks(DDBJ, EMBL-Bank, GenBank) for the construction of the DDBJ/EMBL/GenBank International Nucleotide Sequence Database. Following the decision at an <a href="/activities/index-e.html">International Collaborators Meeting(ICM)</a> held annually in May, this FT-Doc is updated every year. In January 2011, FT-Doc is updated, based on <a href="/activities/index-e.html#2010">the 23rd International Collaborators Meeting</a>. </dd></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -596,7 +596,7 @@ ddbjenv4.seq.gz, ddbjenv5.seq.gz EST (1 entry)     / ddbjest145.seq.gz HUM (21 e
 <div class="news_post_list">
   <h2 class="news_title" id ="wn110114"><a href="#wn110114">DAD (DDBJ amino acid database) Rel. 54.0 Released</a></h2>
   <div class="news_date">January 14,2011</div>
-  <div class="news_content"><dl><dd><ul><li>Date: Jan. 14, 2011</li><li>18,867,995 entries    5,305,737,486aa (total number of residues)</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.54.txt">DAD Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul></dd></dl></div>
+  <div class="news_content"><dl><dd><ul><li>Date: Jan. 14, 2011</li><li>18,867,995 entries    5,305,737,486aa (total number of residues)</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.54.txt">DAD Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul></dd></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>

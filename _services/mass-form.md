@@ -28,7 +28,7 @@ related_pages:
 
 <!-- end list -->
 
-  - メールが届かない場合は[「お問い合わせ」](/contact.html#to-ddbj)の「Mass Submission System(MSS)」からご連絡下さい。
+  - メールが届かない場合は[「お問い合わせ」](/contact-ddbj.html#to-ddbj)の「Mass Submission System(MSS)」からご連絡下さい。
   - [DDBJ からのメールを迷惑メールとしないように設定](/precautions.html)をお願いいたします。
 
 ## MSS 利用 申し込みフォーム <a name="MSS_利用_申し込みフォーム"></a>

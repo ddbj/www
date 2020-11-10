@@ -92,7 +92,7 @@ Please do not hesitate to contact us when you like to update the
 organism name of your sequence data, once submitted to taxonomy
 database.  
 See also the page, [Data Updates/Correction: after getting your
-accession number](/ddbj/updt-e.html), when you like to update your data.
+accession number](/ddbj/update-e.html), when you like to update your data.
 
 In principle, the organism name is required to be one of "scientific
 name" in taxonomy database. If you have any questions or comments for
@@ -105,7 +105,7 @@ taxonomy database, do not hesitate to [contact us](/contact-e.html#to-ddbj) to c
 
 ## "Category" of organism name <a name="deasy"></a>
 
-During submission through [Nucleotide Sequence Submission System](/ddbj/websub-e.html) you have to select "Category" of organism
+During submission through [Nucleotide Sequence Submission System](/ddbj/web-submission-e.html) you have to select "Category" of organism
 name. Here shows a flowchart for judging "Category" of organism on Nucleotide Sequence Submission System
 
 ![]({{ site.baseurl }}/assets/images/ddbj/organism-e.png){:.w600}

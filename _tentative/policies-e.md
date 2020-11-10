@@ -49,7 +49,7 @@ Controlled-access database
 Before submitting your data to JGA, you need an approval for data submission from [National Bioscience Database Center (NBDC)](https://humandbs.biosciencedbc.jp/en/data-submission) of Japan Science and Technology Agency.
 
 Unrestricted-access database  
-: Submit your data to unrestricted-access databases [DDBJ Sequence Read Archive (DRA)](/dra/index-e.html) or [DDBJ](/ddbj/websub-e.html).  
+: Submit your data to unrestricted-access databases [DDBJ Sequence Read Archive (DRA)](/dra/index-e.html) or [DDBJ](/ddbj/web-submission-e.html).  
 To submit human data corresponding to personal identification code (\*2), you need an approval for data submission from [NBDC](https://humandbs.biosciencedbc.jp/en/data-submission). In principle, the two points of "[Before submitting your data"](#before) " must be fulfilled, and the informed consent documents must explain that the human data are deposited to database and are shared publicly.  
 
 \*2 Personal identification code is defined in the [guideline (Japanese only)](//www.ppc.go.jp/) of the [Personal Information Protection Commission](//www.ppc.go.jp/en/).
@@ -60,7 +60,7 @@ To submit human data corresponding to personal identification code (\*2), you ne
   - Japanese only] [Ethical Guidelines for Medical and Health Research Involving Human Subjects](http://www.lifescience.mext.go.jp/bioethics/ekigaku.html)
   - Japanese only] [Ethical Guidelines for Human Genome and Genetic Sequencing Research](http://www.lifescience.mext.go.jp/bioethics/hito_genom.html)
   - [NBDC Human Data Sharing Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines)
-  - [Notification for research participants regarding our database activities for human data](/reaserch-participant-notification-e.html)
+  - [Notification for research participants regarding our database activities for human data](/human-data-sharing-e.html)
 
 ## Licenses <a name="license"></a>
 
@@ -101,16 +101,16 @@ The copyrights of the contents published on the websites are the properties of t
 
 ### Data and services
 
-When you kindly describe about using our data and services on academic papers etc., in general, please use [the latest article for DDBJ](/references-e.html#ddbj) on Nucleic Acids Res. Database issue as a reference.
+When you kindly describe about using our data and services on academic papers etc., in general, please use [the latest article for DDBJ](/services/references-e.html#ddbj) on Nucleic Acids Res. Database issue as a reference.
 
 However, please note the following points.
 
 In case of citation for each sequence record  
-: In general, it is enough to describe [accession number](/acc_def.html) (and its version, if necessary) in your publication.  
-If you discuss about the data in detail, please use [primary citation](/ddbj/submission-e.html#pcite) for the data as a reference.
+: In general, it is enough to describe [accession number](/documents/accessions.html) (and its version, if necessary) in your publication.  
+If you discuss about the data in detail, please use [primary citation](/ddbj/services/index.html#pcite) for the data as a reference.
 
 In case of citation for each service provided at DDBJ Center  
-: In general, please use [original article for each service](/references-e.html) as a reference.
+: In general, please use [original article for each service](/services/references-e.html) as a reference.
 
 #### Copyright and limitation of using DDBJ data <a name="copyright"></a>
 
@@ -139,7 +139,7 @@ Director, OKUBO Kousaku
 See also following sites;
 
   - [INSDC policy](/insdc-e.html#policy)
-  - [Rights and Duties of Submitter](/ddbj/submission-e.html#right)
+  - [Rights and Duties of Submitter](/ddbj/services/index.html#right)
 
 ## Patent, Intellectual Property and Priority<a name="ownership"></a> 
 
@@ -151,7 +151,7 @@ Similarly, DDBJ services also include the nucleotide data transferred from [Kore
 
 References:  
 : An example of Sequence data included in patent applications: [DL000001](http://getentry.ddbj.nig.ac.jp/getentry/na/DL000001/?filetype=html)
-: [Sequence data included in patent applications](/ddbj/pat-data-e.html)
+: [Sequence data included in patent applications](/ddbj/patent-data-e.html)
 
 Therefore, when the sequence is included in patent applications to
 JPO/KIPO/EPO/USPTO, you do not have to submit the sequence to DDBJ.
@@ -159,8 +159,8 @@ JPO/KIPO/EPO/USPTO, you do not have to submit the sequence to DDBJ.
 ### Notice: Sequence Data Submission Related to Patent Applications
 
 Once released from DDBJ, the sequence data becomes part of the public domain, i.e. "official notice".  
-So, when you submit the sequence related to your patent application to DDBJ, set [hold date](/ddbj/submission-e.html#holddate) as required.  
-See also [Principle of “Hold-Until-Published” data release](/data-release-policy-e.html).
+So, when you submit the sequence related to your patent application to DDBJ, set [hold date](/ddbj/services/index.html#holddate) as required.  
+See also [Principle of “Hold-Until-Published” data release](/documents/data-release-policy-e.html).
 
 For the impact of DDBJ submission on the patent examination, you should directly confirm to the Patent Office that you applied.  
 DDBJ takes no responsibility for any property or priority issues of the released data.

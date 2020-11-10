@@ -9,7 +9,7 @@ lang: en
 <div class="news_post firstpost">
   <h2 class="news_title" id="wn141225"><a href="#wn141225">DDBJ Rel. 99.0, DAD Rel. 69.0 Completed</a></h2>
   <div class="news_date">2014年12月25日</div>
-  <div class="news_content"><p><span class="font-bold">DDBJ Rel. 99.0</span></p><ul><li>Date: Dec. 25, 2014</li><li>178,825,615 entries     184,410,381,191 bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.99.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul><span class="font-bold">DAD (DDBJ amino acid database) Rel. 69.0</span><ul><li>Date: Dec. 25, 2014</li><li>36,947,790 entries     11,288,302,791 aa (total number of residues)</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.69.txt">DAD Release Note</a></li></ul></div>
+  <div class="news_content"><p><span class="font-bold">DDBJ Rel. 99.0</span></p><ul><li>Date: Dec. 25, 2014</li><li>178,825,615 entries     184,410,381,191 bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.99.txt">DDBJ Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul><span class="font-bold">DAD (DDBJ amino acid database) Rel. 69.0</span><ul><li>Date: Dec. 25, 2014</li><li>36,947,790 entries     11,288,302,791 aa (total number of residues)</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.69.txt">DAD Release Note</a></li></ul></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Data Release</span>
@@ -18,7 +18,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn141210"><a href="#wn141210">Suspension of the DDBJ activity during the New Year Holidays</a></h2>
   <div class="news_date">December 24,2014</div>
-  <div class="news_content"><p>We at DDBJ will temporarily close for the New Year Holidays from December 27(Sat) 2014 to January 4(Sun) 2015.<br>Please note that <a href="/ddbj/websub-e.html">DDBJ Nucleotide Sequence Submission System</a> will be unavailable. Schedule is as follows.<br>NIG SuperComputer and DDBJ network services (except <a href="/ddbj/websub-e.html">DDBJ Nucleotide Sequence Submission System</a>) <br>are available during the New Year Holidays.</p><p>During this period, DDBJ will continue to receive inquiries from E-mail and "Contact" web form.<br>But, please note that replies from DDBJ is after the reopening of the office in January, 2015.</p><table><tbody><tr><td>DDBJ office close</td><td>Dec. 27(Sat), 2014 - Jan. 4(Sun), 2015</td></tr><tr><td style="border-color: #999999;">DDBJ Nucleotide Sequence Submission System</td><td style="border-color: #999999;">Dec. 25(Thu), 2014 at 17:00<br>     - Jan. 5(Mon), 2015 at 10:00(JST)</td></tr><tr><td>Data release suspension</td><td>Dec. 25(Thu), 2014 - Jan. 5(Mon), 2015</td></tr><tr><td style="border-color: #999999;">Reply for inquiries<br>(submission, search/analysis, NIG SuperComputer)</td><td style="border-color: #999999;">Dec. 27(Sat), 2014 - Jan. 4(Sun), 2015</td></tr><tr><td>DRA, BioProject, BioSample, JGA Accession No. issue</td><td>Dec. 27(Sat), 2014 - Jan. 4(Sun), 2015</td></tr></tbody></table><p>Thank you for your understanding and cooperation.</p><p>ecember 10, 2014</p></div>
+  <div class="news_content"><p>We at DDBJ will temporarily close for the New Year Holidays from December 27(Sat) 2014 to January 4(Sun) 2015.<br>Please note that <a href="/ddbj/web-submission-e.html">DDBJ Nucleotide Sequence Submission System</a> will be unavailable. Schedule is as follows.<br>NIG SuperComputer and DDBJ network services (except <a href="/ddbj/web-submission-e.html">DDBJ Nucleotide Sequence Submission System</a>) <br>are available during the New Year Holidays.</p><p>During this period, DDBJ will continue to receive inquiries from E-mail and "Contact" web form.<br>But, please note that replies from DDBJ is after the reopening of the office in January, 2015.</p><table><tbody><tr><td>DDBJ office close</td><td>Dec. 27(Sat), 2014 - Jan. 4(Sun), 2015</td></tr><tr><td style="border-color: #999999;">DDBJ Nucleotide Sequence Submission System</td><td style="border-color: #999999;">Dec. 25(Thu), 2014 at 17:00<br>     - Jan. 5(Mon), 2015 at 10:00(JST)</td></tr><tr><td>Data release suspension</td><td>Dec. 25(Thu), 2014 - Jan. 5(Mon), 2015</td></tr><tr><td style="border-color: #999999;">Reply for inquiries<br>(submission, search/analysis, NIG SuperComputer)</td><td style="border-color: #999999;">Dec. 27(Sat), 2014 - Jan. 4(Sun), 2015</td></tr><tr><td>DRA, BioProject, BioSample, JGA Accession No. issue</td><td>Dec. 27(Sat), 2014 - Jan. 4(Sun), 2015</td></tr></tbody></table><p>Thank you for your understanding and cooperation.</p><p>ecember 10, 2014</p></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -81,7 +81,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn141216"><a href="#wn141216">URL Change of TXSearch</a></h2>
   <div class="news_date">December 16,2014</div>
-  <div class="news_content">DDBJ provides a taxonomy database retrieval system called TXSearch, to refer taxonomic names of organisms for your submission of nucleotide sequences to DDBJ.<br>DDBJ changed the URL and the interface of TXSearch.The former URL will not work after December 31, 2014.  So, please change your bookmark, etc. at your earliest convenience.<span class="icon_square"><a href="http://ddbj.nig.ac.jp/tx_search/">http://ddbj.nig.ac.jp/tx_search/</a></span><br><img src="{{ site.baseurl }}/assets/images/news/txhelp01_top-e.gif" alt="txhelp01_top-e" width="400" height="289" class="alignnone size-full wp-image-40454"><br>For the detailed explanation, please refer to the ，<a href="/txsearch-help-e.html">"TXSearch Help"</a> page.<br>DDBJ will continue to improve our services. Your reviews and comments will be helpful for DDBJ's improvement. Please send your comments from <a href="/address-e.html">"Contact Us"</a> page. (Please select the item "Web Support ")</div>
+  <div class="news_content">DDBJ provides a taxonomy database retrieval system called TXSearch, to refer taxonomic names of organisms for your submission of nucleotide sequences to DDBJ.<br>DDBJ changed the URL and the interface of TXSearch.The former URL will not work after December 31, 2014.  So, please change your bookmark, etc. at your earliest convenience.<span class="icon_square"><a href="http://ddbj.nig.ac.jp/tx_search/">http://ddbj.nig.ac.jp/tx_search/</a></span><br><img src="{{ site.baseurl }}/assets/images/news/txhelp01_top-e.gif" alt="txhelp01_top-e" width="400" height="289" class="alignnone size-full wp-image-40454"><br>For the detailed explanation, please refer to the ，<a href="/services/txsearch-e.html">"TXSearch Help"</a> page.<br>DDBJ will continue to improve our services. Your reviews and comments will be helpful for DDBJ's improvement. Please send your comments from <a href="/address-e.html">"Contact Us"</a> page. (Please select the item "Web Support ")</div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -225,7 +225,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn141002"><a href="#wn141002">DDBJ Rel. 98.0, DAD Rel. 68.0 Completed</a></h2>
   <div class="news_date">October 02,2014</div>
-  <div class="news_content"><p><span class="font-bold">DDBJ Rel. 98.0</span></p><ul><li>Date: Oct. 2, 2014</li><li>174,391,281 entries     166,692,710,729 bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.98.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul><span class="font-bold">DAD (DDBJ amino acid database) Rel. 68.0</span><ul><li>Date: Oct. 2, 2014</li><li>35,066,241 entries     10,653,219,680 aa (total number of residues)</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.68.txt">DAD Release Note</a></li></ul></div>
+  <div class="news_content"><p><span class="font-bold">DDBJ Rel. 98.0</span></p><ul><li>Date: Oct. 2, 2014</li><li>174,391,281 entries     166,692,710,729 bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.98.txt">DDBJ Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul><span class="font-bold">DAD (DDBJ amino acid database) Rel. 68.0</span><ul><li>Date: Oct. 2, 2014</li><li>35,066,241 entries     10,653,219,680 aa (total number of residues)</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.68.txt">DAD Release Note</a></li></ul></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Data Release</span>
@@ -288,7 +288,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn140904"><a href="#wn140904">The Report for the 27th International Collaborators Meeting</a></h2>
   <div class="news_date">September 04,2014</div>
-  <div class="news_content"><p><a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a>, consisted of DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a> and <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a>, hold the international collaborators meeting every year. <br>In 2014, the meeting was <a href="/news/en/wn140520-e.html">held at DDBJ</a>, 20-22 May, to discuss practical matters to maintain and update nucleotide sequence data archives; <a href="/index-e.html" target="_blank">DDBJ</a>, <a href="http://www.ebi.ac.uk/ena/" target="_blank">ENA</a>, <a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>, Sequence Read Archive (SRA) and Trace Archive. <br>The outcomes of the meeting are summarized <a href="/activities/icm-reports-e.html#2014">here</a>. </p></div>
+  <div class="news_content"><p><a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a>, consisted of DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a> and <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a>, hold the international collaborators meeting every year. <br>In 2014, the meeting was <a href="/news/en/wn140520-e.html">held at DDBJ</a>, 20-22 May, to discuss practical matters to maintain and update nucleotide sequence data archives; <a href="/index-e.html" target="_blank">DDBJ</a>, <a href="http://www.ebi.ac.uk/ena/" target="_blank">ENA</a>, <a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>, Sequence Read Archive (SRA) and Trace Archive. <br>The outcomes of the meeting are summarized <a href="/activities/index-e.html#2014">here</a>. </p></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -342,7 +342,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="2014-08-06"><a href="#2014-08-06">Web submission system loads fastq files with variable read length</a></h2>
   <div class="news_date">August 06,2014</div>
-  <div class="news_content"><p>The DRA web submission system can load fastq files with variable read length. <a href="/dra/submission-e.html#fastq">Handbook.</a></p>·fastq files with constact read length: Select fastq in the file type of Run.<br>·fastq files with variable read length: Select generic_fastq in the file type of Run.</div>
+  <div class="news_content"><p>The DRA web submission system can load fastq files with variable read length. <a href="/dra/services/index.html#fastq">Handbook.</a></p>·fastq files with constact read length: Select fastq in the file type of Run.<br>·fastq files with variable read length: Select generic_fastq in the file type of Run.</div>
   <div class="news_category">
     <span class="service">Services: dra</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -495,7 +495,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn140619"><a href="#wn140619">DDBJ Rel. 97.0, DAD Rel. 67.0 Completed</a></h2>
   <div class="news_date">June 19,2014</div>
-  <div class="news_content"><p><span class="font-bold">DDBJ Rel. 97.0</span></p><ul><li>Date: Jun. 19, 2014</li><li>172,402,324 entries     161,078,598,329 bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.97.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul><span class="font-bold">DAD (DDBJ amino acid database) Rel. 67.0</span><ul><li>Date: Jun. 19, 2014</li><li>33,234,287 entries     10,031,547,300 aa (total number of residues)</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.67.txt">DAD Release Note</a></li></ul></div>
+  <div class="news_content"><p><span class="font-bold">DDBJ Rel. 97.0</span></p><ul><li>Date: Jun. 19, 2014</li><li>172,402,324 entries     161,078,598,329 bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.97.txt">DDBJ Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul><span class="font-bold">DAD (DDBJ amino acid database) Rel. 67.0</span><ul><li>Date: Jun. 19, 2014</li><li>33,234,287 entries     10,031,547,300 aa (total number of residues)</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.67.txt">DAD Release Note</a></li></ul></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Data Release</span>
@@ -639,7 +639,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn140513"><a href="#wn140513">New DRA submission system is released</a></h2>
   <div class="news_date">May 13,2014</div>
-  <div class="news_content"><p>We have released the new DRA submission system.<br>For major changes, please see the <a href="http://www.slideshare.net/DDBJslide/new-dra-submission-system-starts">slides</a> and <a href="/dra/submission-e.html">new handbook</a>.</p><p><span class="icon_d-triangle"> <a href="/dra/index-e.html">DDBJ Sequence Read Archive</a></span></p></div>
+  <div class="news_content"><p>We have released the new DRA submission system.<br>For major changes, please see the <a href="http://www.slideshare.net/DDBJslide/new-dra-submission-system-starts">slides</a> and <a href="/dra/services/index.html">new handbook</a>.</p><p><span class="icon_d-triangle"> <a href="/dra/index-e.html">DDBJ Sequence Read Archive</a></span></p></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -648,7 +648,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="2014-05-13"><a href="#2014-05-13">New DRA submission system is released.</a></h2>
   <div class="news_date">May 13,2014</div>
-  <div class="news_content"><p>We have released the new DRA submission system. For major changes, please see the <a href="http://www.slideshare.net/DDBJslide/new-dra-submission-system-starts">slides</a> and <a href="/dra/submission-e.html">new handbook</a>.</p>(6th, June, 2014)<p><span class="red">For submissions with status "new" which had been created before 12th, May, 2014, addition or deletion of metadata objects could cause errors. It is recommended that download metadata as a tab-delimited text file and upload it into a newly created submission.</span></p></div>
+  <div class="news_content"><p>We have released the new DRA submission system. For major changes, please see the <a href="http://www.slideshare.net/DDBJslide/new-dra-submission-system-starts">slides</a> and <a href="/dra/services/index.html">new handbook</a>.</p>(6th, June, 2014)<p><span class="red">For submissions with status "new" which had been created before 12th, May, 2014, addition or deletion of metadata objects could cause errors. It is recommended that download metadata as a tab-delimited text file and upload it into a newly created submission.</span></p></div>
   <div class="news_category">
     <span class="service">Services: dra</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -666,7 +666,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn140421"><a href="#wn140421">Release of EST data of domesticated barley (Hordeum vulgare subsp. vulgare)</a></h2>
   <div class="news_date">April 21,2014</div>
-  <div class="news_content"><p>DDBJ released <a href="/ddbj/est-e.html">EST</a> data derived from domesticated barley (<em>Hordeum vulgare subsp. vulgare</em>), which had been submitted by National Institute of Agrobiological Sciences. <br><strong><a href="/acc_def-e.html">The accession numbers</a></strong> are as follows.  They are available on <a href="http://getentry.ddbj.nig.ac.jp/top-e.html" target="_blank">getentry</a>.</p><p><strong>5' EST</strong>: DK584720-DK744249 (159,530 entries)<br><strong>3' EST</strong>: DK744250-DK887267 (143,018 entries)</p></div>
+  <div class="news_content"><p>DDBJ released <a href="/ddbj/est-e.html">EST</a> data derived from domesticated barley (<em>Hordeum vulgare subsp. vulgare</em>), which had been submitted by National Institute of Agrobiological Sciences. <br><strong><a href="/documents/accessions.html">The accession numbers</a></strong> are as follows.  They are available on <a href="http://getentry.ddbj.nig.ac.jp/top-e.html" target="_blank">getentry</a>.</p><p><strong>5' EST</strong>: DK584720-DK744249 (159,530 entries)<br><strong>3' EST</strong>: DK744250-DK887267 (143,018 entries)</p></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Data Release</span>
@@ -684,7 +684,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="2014-04-18-2"><a href="#2014-04-18-2">BioProject web pages are merged into single Handbook</a></h2>
   <div class="news_date">April 18,2014</div>
-  <div class="news_content">The BioProject web pages are merged into single <a href="/bioproject/submission-e.html">DDBJ BioProject Handbook</a>.</div>
+  <div class="news_content">The BioProject web pages are merged into single <a href="/bioproject/services/index.html">DDBJ BioProject Handbook</a>.</div>
   <div class="news_category">
     <span class="service">Services: bioproject</span>
     <span class="keyword">Keywords: </span>
@@ -693,7 +693,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="2014-04-18"><a href="#2014-04-18">BioSample web pages are merged into single Handbook</a></h2>
   <div class="news_date">April 18,2014</div>
-  <div class="news_content">The BioSample web pages are merged into single <a href="/biosample/submission-e.html">DDBJ BioSample Handbook</a>.</div>
+  <div class="news_content">The BioSample web pages are merged into single <a href="/biosample/services/index.html">DDBJ BioSample Handbook</a>.</div>
   <div class="news_category">
     <span class="service">Services: biosample</span>
     <span class="keyword">Keywords: </span>
@@ -756,7 +756,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="2014-03-20"><a href="#2014-03-20">Pages are merged into one page</a></h2>
   <div class="news_date">March 20,2014</div>
-  <div class="news_content">DDBJ Trace Archive overview, metadata and submission pages are merged into <a href="/dta/submission-e.html">one page</a>.</div>
+  <div class="news_content">DDBJ Trace Archive overview, metadata and submission pages are merged into <a href="/dta/services/index.html">one page</a>.</div>
   <div class="news_category">
     <span class="service">Services: dta</span>
     <span class="keyword">Keywords: </span>
@@ -765,7 +765,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn140318"><a href="#wn140318">DDBJ Rel. 96.0, DAD Rel. 66.0 Completed</a></h2>
   <div class="news_date">March 18,2014</div>
-  <div class="news_content"><p><span class="font-bold">DDBJ Rel. 96.0</span></p><ul><li>Date: Mar. 18, 2014</li><li>171,164,046 entries     158,539,702,882 bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.96.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul><span class="font-bold">DAD (DDBJ amino acid database) Rel. 66.0</span><ul><li>Date: Mar. 18, 2014</li><li>30,887,377 entries     9,253,624,263 aa (total number of residues)</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.66.txt">DAD Release Note</a></li></ul></div>
+  <div class="news_content"><p><span class="font-bold">DDBJ Rel. 96.0</span></p><ul><li>Date: Mar. 18, 2014</li><li>171,164,046 entries     158,539,702,882 bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.96.txt">DDBJ Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul><span class="font-bold">DAD (DDBJ amino acid database) Rel. 66.0</span><ul><li>Date: Mar. 18, 2014</li><li>30,887,377 entries     9,253,624,263 aa (total number of residues)</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.66.txt">DAD Release Note</a></li></ul></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Data Release</span>
@@ -891,7 +891,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn140130_2"><a href="#wn140130_2">PDB 2014-01-25 released</a></h2>
   <div class="news_date">January 30,2014</div>
-  <div class="news_content"><p>PDB 2014-01-25 was released.</p><ul><li><b><a href="/stats/relinfo-e.html" title="breakdown_stats">Latest Release Information</a></b></li></ul></div>
+  <div class="news_content"><p>PDB 2014-01-25 was released.</p><ul><li><b><a href="/latest-releases-e.html" title="breakdown_stats">Latest Release Information</a></b></li></ul></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Data Release</span>
@@ -900,7 +900,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn140130"><a href="#wn140130">UniProt 2014_01 released</a></h2>
   <div class="news_date">January 30,2014</div>
-  <div class="news_content"><p>UniProt 2014_01 was released.</p><ul><li><b><a href="/stats/relinfo-e.html" title="breakdown_stats">Latest Release Information</a></b></li></ul></div>
+  <div class="news_content"><p>UniProt 2014_01 was released.</p><ul><li><b><a href="/latest-releases-e.html" title="breakdown_stats">Latest Release Information</a></b></li></ul></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Data Release</span>
@@ -909,7 +909,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn140124"><a href="#wn140124">PDB 2014-01-18 released</a></h2>
   <div class="news_date">January 24,2014</div>
-  <div class="news_content"><p>PDB 2014-01-18 was released.</p><ul><li><b><a href="/stats/relinfo-e.html" title="breakdown_stats">Latest Release Information</a></b></li></ul></div>
+  <div class="news_content"><p>PDB 2014-01-18 was released.</p><ul><li><b><a href="/latest-releases-e.html" title="breakdown_stats">Latest Release Information</a></b></li></ul></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Data Release</span>
@@ -936,7 +936,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn140116_2"><a href="#wn140116_2">PDB 2014-01-11 released</a></h2>
   <div class="news_date">January 16,2014</div>
-  <div class="news_content"><p>PDB 2014-01-11 was released.</p><ul><li><b><a href="/stats/relinfo-e.html" title="breakdown_stats">Latest Release Information</a></b></li></ul></div>
+  <div class="news_content"><p>PDB 2014-01-11 was released.</p><ul><li><b><a href="/latest-releases-e.html" title="breakdown_stats">Latest Release Information</a></b></li></ul></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Data Release</span>
@@ -945,7 +945,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn140116"><a href="#wn140116">PDB 2014-01-04 released</a></h2>
   <div class="news_date">January 16,2014</div>
-  <div class="news_content"><p>PDB 2014-01-04 was released.</p><ul><li><b><a href="/stats/relinfo-e.html" title="breakdown_stats">Latest Release Information</a></b></li></ul></div>
+  <div class="news_content"><p>PDB 2014-01-04 was released.</p><ul><li><b><a href="/latest-releases-e.html" title="breakdown_stats">Latest Release Information</a></b></li></ul></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Data Release</span>

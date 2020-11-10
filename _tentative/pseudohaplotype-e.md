@@ -36,7 +36,7 @@ Create separate BioProject for each principal and alternate pseudohaplotype and 
 
 Because the sample is shared by pseudohaplotypes, create single BioSample.
 
-  - Select [MIGS](/biosample/submission-e.html#Genomic_Sequences_Sample)
+  - Select [MIGS](/biosample/services/index.html#Genomic_Sequences_Sample)
     package.
   - Create a common BioSample for principal and alternate
     pseudohaplotype.

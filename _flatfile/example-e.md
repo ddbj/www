@@ -810,7 +810,7 @@ FEATURES             Location/Qualifiers
 
 ### F01) polymorphism and variation <a name="F01"></a>
 
-See also [representative submissions of identical sequences for variation studies](/ddbj/represent-e.html).
+See also [representative submissions of identical sequences for variation studies](/ddbj/representative-sequence-e.html).
 
 <pre><code>DEFINITION  Homo sapiens IGF1R mRNA for insulin-like growth factor I receptor,
             partial cds. 

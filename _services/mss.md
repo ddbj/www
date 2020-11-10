@@ -17,7 +17,7 @@ related_pages:
   - title: validator エラーメッセージ
     url: /ddbj/validator.html
   - title: MSS 利用申し込み
-    url: /ddbj/mass-form.html
+    url: /ddbj/mss-form.html
 ---
 
 <span class="red">ヒトを対象とした研究データの登録について</span>
@@ -25,7 +25,7 @@ related_pages:
 ヒトを対象とした全ての研究において DDBJ に送付するデータの由来である個人 (研究対象者)
 の尊厳及び人権は、適用されるべき法律、規定、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。  
 原則として、研究対象者を直接特定し得る参照情報は、登録データから取り除いてください。  
-ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#human)をご覧ください。
+ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/service-policy.html#human)をご覧ください。
 
 ## MSS とは？ <a name="outline"></a>
 
@@ -42,9 +42,9 @@ Mass Submission System (MSS) は、比較的大規模な塩基配列データ (r
 
 </div>
 
-データの種別については[登録データ種別](/data-categories.html)をご確認ください。
+データの種別については[登録データ種別](/documents/documents/data-categories.html)をご確認ください。
 
-上記の条件を満たさない配列の登録は、[Web 版塩基配列登録システム (NSSS: DDBJ Nucleotide Sequence Submission System](/ddbj/websub.html)) のご利用をお勧めしております。
+上記の条件を満たさない配列の登録は、[Web 版塩基配列登録システム (NSSS: DDBJ Nucleotide Sequence Submission System](/ddbj/web-submission.html)) のご利用をお勧めしております。
 
 また、シークエンサからの出力配列 (reads) を登録する場合は [DRA; DDBJ Sequence Read
 Archive](/dra/index.html) をご参照ください。
@@ -55,7 +55,7 @@ Archive](/dra/index.html) をご参照ください。
 
 ### 1\. 申し込み <a name="flow-1"></a>
 
-MSS の利用をご希望の場合は、[MSS 申し込みフォーム](/ddbj/mass-form.html)からご連絡ください。  
+MSS の利用をご希望の場合は、[MSS 申し込みフォーム](/ddbj/mss-form.html)からご連絡ください。  
 DDBJ で受付した後に、より詳細な手順および作業を支援するソフトウェアをご紹介いたします。
 
 ### 2\. 登録ファイルの準備 <a name="flow-2"></a>
@@ -135,7 +135,7 @@ DDBJ で送付されたデータを査定し、不具合があれば修正箇所
 電子メールに添付して送信する  
 SCP によるファイル転送  
 : ファイルサイズが合計で 10 M byte を超える場合は、公開鍵と秘密鍵を用いた SCP によるファイル転送をお勧めいたします。
-: ファイル転送を利用するには、[DDBJ Submission Portal D-way](https://ddbj.nig.ac.jp/D-way/) にて[登録アカウント](/account.html)を取得する必要があります。<br>詳細手順につきましては、[ファイルのアップロード方法](/dra/submission.html#upload-sequence-data)またはチュートリアル動画をご参照ください。
+: ファイル転送を利用するには、[DDBJ Submission Portal D-way](https://ddbj.nig.ac.jp/D-way/) にて[登録アカウント](/account.html)を取得する必要があります。<br>詳細手順につきましては、[ファイルのアップロード方法](/dra/services/index.html#upload-sequence-data)またはチュートリアル動画をご参照ください。
 : **チュートリアル動画**
 : 鍵ペアの作成（[Windows](https://youtu.be/mggRnbxr0gQ) / [macOS](https://youtu.be/h9LbhwROtOM)）
 : データの転送（[Windows](https://youtu.be/ZxIfewrk8lI) / [macOS](https://youtu.be/A2hPlGZEW_o)）
@@ -143,7 +143,7 @@ SCP によるファイル転送
 ### 5\. データ公開 <a name="flow-5"></a>
 
 登録時に即日公開を希望した場合は、可能な限り速やかに公開します。  
-[公開予定日](/ddbj/submission.html#hold-date)([hold\_date](/ddbj/file-format.html#annotation))を指定した場合は、[公開原則](/data-release-policy.html)に基づいて公開します。
+[公開予定日](/ddbj/services/index.html#hold-date)([hold\_date](/ddbj/file-format.html#annotation))を指定した場合は、[公開原則](/documents/documents/data-release-policy.html)に基づいて公開します。
 
 登録された塩基配列データは、配列ファイルとアノテーションファイルの内容に基づき、DDBJ の定めるフォーマットにしたがった[フラットファイル (flat file)](/ddbj/flat-file.html) の形式で公開されています。  
 [アノテーションファイルとフラットファイルの対応関係](/ddbj/file-format.html#sample)もご参照ください。

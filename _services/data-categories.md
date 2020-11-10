@@ -5,16 +5,16 @@ category: services
 lang: ja
 related_pages:
   - title: 国際塩基配列データベースのアクセッション番号
-    url: /acc_def.html
+    url: /documents/accessions.html
   - title: データ公開原則
-    url: /data-release-policy.html
+    url: /documents/documents/data-release-policy.html
   - title: Prefix Letter List
-    url: /prefix.html
+    url: /documents/documents/prefix.html
 ---
 
 ## DDBJ に登録可能なデータ <a name="accept"></a>
 
-DDBJ では, [Primary entry](/ddbj/submission.html#primary_entry)
+DDBJ では, [Primary entry](/ddbj/services/index.html#primary_entry)
 のデータとして登録依頼のあったデータにつきましては,
 ２次的な引用やコンピューターで予測したものでなく,
 登録者が実験的に決定した, もしくは,
@@ -43,7 +43,7 @@ Archive](/dra/index.html) へのご登録をお願いいたします。
 
 DDBJ では, 配列が同一であっても独立に配列決定されたデータならば,
 基本的には,
-配列データの個別登録を受け付けております。[多型関連研究において同一配列が多数得られた場合](/ddbj/represent.html)は代表データを登録する形式でも
+配列データの個別登録を受け付けております。[多型関連研究において同一配列が多数得られた場合](/ddbj/representative-sequence.html)は代表データを登録する形式でも
 受け付けています。
 
 由来する個体などを含めて同一な場合,

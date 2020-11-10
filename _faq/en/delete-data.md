@@ -13,7 +13,7 @@ lang: en
 ## How to delete my data?
 
 <p>In principle, following two conditions are required to delete your sequence data; </p>
-<p>1) The sequence data has not yet been publicized<br>2) The accession number of the data has not yet been <a href="/data-release-policy-e.html">published</a>. <br></p>
+<p>1) The sequence data has not yet been publicized<br>2) The accession number of the data has not yet been <a href="/documents/data-release-policy-e.html">published</a>. <br></p>
 <p>Please send your request from <a href="/contact-e.html#to-ddbj">contact form</a> with the following contents in clear English.</p>
 <ul>
   <li>Accession numbers:</li>
@@ -23,5 +23,5 @@ lang: en
 <dl><dt>References</dt>
   <dd><a href="/faq/en/restore-released-data-private-e.html">How to restore the released data to private?</a></dd>
   <dd><a href="/faq/en/why-retracted-data-available-e.html">Why is the retracted data still available?</a></dd>
-  <dd><a href="/insdc-status-e.html">INSDC Status Document</a></dd>
+  <dd><a href="/insdc-status-e">INSDC Status Document</a></dd>
 </dl>

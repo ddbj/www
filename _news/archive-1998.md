@@ -45,7 +45,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn981214"><a href="#wn981214">DDBJ オフラインニュースNo. 10発行</a></h2>
   <div class="news_date">1998年12月14日</div>
-  <div class="news_content">ＤＤＢＪでは定期発行物として「DDBJ News Letter」を年1回， 「DDBJオフラインニュース」を年2回お届けしています。 1998年12月に「 DDBJオフラインニュース No. 10」約6,000部を発行しました。<br>このオフラインニュースは，当ホームページ <a href="/archives/pub-archives.html">ＤＤＢＪの発行物</a> から参照いただけます。 また，配布を希望される方はddbj@ddbj.nig.ac.jpまでご連絡下さい。</div>
+  <div class="news_content">ＤＤＢＪでは定期発行物として「DDBJ News Letter」を年1回， 「DDBJオフラインニュース」を年2回お届けしています。 1998年12月に「 DDBJオフラインニュース No. 10」約6,000部を発行しました。<br>このオフラインニュースは，当ホームページ <a href="/activities/archives.html">ＤＤＢＪの発行物</a> から参照いただけます。 また，配布を希望される方はddbj@ddbj.nig.ac.jpまでご連絡下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -297,7 +297,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn980701"><a href="#wn980701">DDBJ オフラインニュースNo. 9発行</a></h2>
   <div class="news_date">1998年07月01日</div>
-  <div class="news_content">ＤＤＢＪでは定期発行物として「DDBJ News Letter」を年1回， 「DDBJオフラインニュース」を年2回お届けしています。 1998年7月に「DDBJオフラインニュース No. 9」約6,000部を配布しました。<br>このオフラインニュースは，当ホームページ <a href="/archives/pub-archives.html"> ＤＤＢＪの発行物</a> から参照いただけます。 また，配布を希望される方はddbj@ddbj.nig.ac.jpまでご連絡下さい。</div>
+  <div class="news_content">ＤＤＢＪでは定期発行物として「DDBJ News Letter」を年1回， 「DDBJオフラインニュース」を年2回お届けしています。 1998年7月に「DDBJオフラインニュース No. 9」約6,000部を配布しました。<br>このオフラインニュースは，当ホームページ <a href="/activities/archives.html"> ＤＤＢＪの発行物</a> から参照いただけます。 また，配布を希望される方はddbj@ddbj.nig.ac.jpまでご連絡下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>

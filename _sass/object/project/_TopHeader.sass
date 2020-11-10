@@ -1,0 +1,58 @@
+#TopHeader
+  > .inner
+    +inner
+    height: 14.6rem
+    position: relative
+    > .first
+      > *
+        position: absolute
+      > .logotype
+        text-indent: -9999px
+        background: url(../images/logotype.svg) no-repeat 0 0
+        width: 18rem
+        height: 6.5rem
+        top: 3.2rem
+        left: 3.4rem
+      > .mission
+        font-size: 1.4rem
+        line-height: 1.5
+        top: 3.2rem
+        left: 24.2rem
+    > .second
+      > .search-box
+        position: absolute
+        top: 3.7rem
+        right: $PADDING_BASE
+
+@media screen and (max-width: $WIDTH_SP)
+  #TopHeader
+    > .inner
+      +inner-sp
+      height: auto
+      > .first
+        padding: 1rem
+        > *
+          margin: 0 auto
+          position: relative
+        > .logotype
+          margin: 2rem auto 1.6rem
+          width: 36vw
+          height: 13vw
+          top: 0
+          left: 0
+        > .mission
+          top: 0
+          left: 0
+          text-align: center
+      > .second
+        padding: 1rem 1rem 2rem
+        > .search-box
+          text-align: center
+          position: relative
+          top: 0
+          right: 0
+          > select
+            display: block
+            margin: 0 auto .6rem
+
+

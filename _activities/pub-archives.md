@@ -6,7 +6,7 @@ category: _activities
 lang: ja
 related_pages:
   - title: DDBJ データ解析チャレンジ
-    url: /activities/ddbj-challenge.html
+    url: /activities/training-ddbj-challenge.html
   - title: DDBJ スタッフの論文 (2009-)
     url: /activities/
   - title: DDBJ スタッフの講演発表 (2009-)
@@ -33,7 +33,7 @@ DDBJ センターの過去の発行物は [Google Drive](https://drive.google.co
 
 配信期間：2002.05.31-2013.09.03
 
-DDBJ Mail Magazine は、2013年10月より Web 版を廃止しEメール配信のみとなりました。[登録はこちら](/subscribe.html)
+DDBJ Mail Magazine は、2013年10月より Web 版を廃止しEメール配信のみとなりました。[登録はこちら](/subscribe-ddbj.html)
 
 | [No.85](https://drive.google.com/file/d/1S8PcjiLhvOoy34SQpLb5g8EjWn2Gs8Z8) (2013.09.03) | [No.84](https://drive.google.com/file/d/1GPfMSDI86QF0iTL4EdLjPAIhhPa9WcoW) (2013.07.18) | [No.83](https://drive.google.com/file/d/1lw4WMRnZIL5qPZ707KKD46izoN6Xe-Gb) (2013.06.05) | [No.82](https://drive.google.com/file/d/1g2R_dZzrmOPCDTDxvbppNHK2HJoOqm2h) (2013.04.18) | [No.81](https://drive.google.com/file/d/1o5fyp92KOVZOf_LhpJEs-l0I9P9ZwgQ3) (2013.03.14) |
 | [No.80](https://drive.google.com/file/d/15Vn0jBQN6UrPzBtBNY4vrrOrTSj8VPiR) (2013.03.01) | [No.79](https://drive.google.com/file/d/1LQtFaKI6penRGG7A7BRcW4z2nGkHvwdJ) (2013.02.07) | [No.78](https://drive.google.com/file/d/1gs53vYqbxMDRrRrzTmTgHY5teAyuk7Ut) (2013.01.11) | [No.77](https://drive.google.com/file/d/1sqmrxBQRh4jks-Ptl7oqw80Ghy5w2fTn) (2012.12.06) | [No.76](https://drive.google.com/file/d/1aU1uKTK2Mqa2UgBE9zP9v5WlDbflIcuD) (2012.11.07) |

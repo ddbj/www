@@ -112,7 +112,7 @@ Analysis can refer to multiple Data and Sample objects and summary data summariz
 
 ## Metadata <a name="metadata"></a>
 
-The JGA data model is created by extending the [Sequence Read Archive's model](/dra/submission-e.html). The JGA metadata are composed of the XML objects.
+The JGA data model is created by extending the [Sequence Read Archive's model](/dra/services/index.html). The JGA metadata are composed of the XML objects.
 
 JGA XML schema: [JGA xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 

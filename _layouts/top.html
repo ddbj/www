@@ -1,86 +1,23 @@
 ---
 layout: default
 ---
-<div id="TopPageView">
+<header id="TopHeader">
   <div class="inner">
-
-    <section class="maincolumn">
-
-      <header data-category="{{ page.category }}">
-        {% if page.category == 'top' %}
-        <h1 class="logotype">{{ page.title }}</h1>
-        {% else %}
-        <h1 class="title">{{ page.title }}</h1>
-        {% endif %}
-        <p class="description">{{ page.description }}</p>
-      </header>
-
-      {% if page.tab_menu %}
-      <nav class="tab-menu-view">
-        <ul>
-          {% for item in page.tab_menu %}
-          <li class="{% if item.children %} -haschild{% endif %}{% if page.current_tab == item.id %} -current{% endif %}">
-            <a href="{{ item.url }}">{{ item.title }}</a>
-            {% if item.children %}
-            <ul>
-              {% for childitem in item.children %}
-              <li>
-                <a href="{{ childitem.url }}">{{ childitem.title }}</a>
-              </li>
-              {% endfor %}
-            </ul>
-            {% endif %}
-          </li>
-          {% endfor %}
-        </ul>
-      </nav>
-      {% endif %}
-
-      <ul class="panel-view-container">
-        {% for panel in page.panels %}
-        <li class="panel">
-          <a href="{{panel.url}}">
-            <h2 class="title">
-              <img src="{{panel.icon}}"/>
-              <span>{{panel.title}}</span>
-            </h2>
-            <p class="description">{{panel.description}}</p>
-          </a>
-        </li>
-        {% endfor %}
-      </ul>
-  
-    </section>
-
-    <aside class="pickup-news-view">
-      <div class="container">
-        <h2 class="title">NEWS</h2>
-        <ul class="list">
-        {% for post in site.categories.ja limit:5 %}
-          <li class="item">
-            {% if  post.priority%}
-            <article class="news priority">
-            {% else %}
-            <article class="news">
-            {% endif %}
-              <a href="{{ site.baseurl }}{{post.url}}">
-                <div class="metadata">
-                  <time>{{post.date | date: '%Y年%m月%d日'}}</time>
-                  <div class="tags">{% include post_meta.html %}</div>
-                </div>
-                <h3 class="title">{{post.title}}</h3>
-              </a>
-            </article>
-          </li>
-        {% endfor %}
-        </ul>
-        <a class="arrowed-link" href="/www/news.html">more</a>
-      </div>
-    </aside>
-
+    <div class="first">
+      <h1 class="logotype">DDBJ</h1>
+      <p class="mission">生命情報・DDBJ センターは<br>生命科学研究から生み出されるデータの<br>共有・解析サービスを提供することで<br>広く研究活動をサポートしています</p>
+    </div>
+    <div class="second">
+      <form class="search-box" action="https://www.google.com/cse">
+        <select id="search-target">
+          <option value="web" selected>BI-DDBJ Web Sites</option>
+          <option value="ddbj">Annotated/Assembled Sequences</option>
+          <option value="dra">Sequence Read Archive</option>
+        </select>
+        <input id="search-text" type="text" placeholder="custom search">
+        <button id="search-button"></button>
+      </form>
+    </div>
   </div>
-</div>
-
-
-
+</header>
 {{ content }}

@@ -7,7 +7,7 @@ lang: ja
 
 ## 1\. Contact person <a name="flow-1"></a>
 
-[コンタクトパーソン](/ddbj/submission.html#contact)情報を入力します。
+[コンタクトパーソン](/ddbj/services/index.html#contact)情報を入力します。
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp1-1_j.png "コンタクトパーソン情報入力画面"){:.w600}
 
@@ -60,7 +60,7 @@ lang: ja
 ## 4\. Reference <a name="flow-4"></a>
 
 [論文 (Reference) 情報](/ddbj/flat-file.html#Reference2) を入力します。  
-配列に関する[主論文 (Primary citation)](/ddbj/submission.html#pcite) を第一 reference に入力してください。
+配列に関する[主論文 (Primary citation)](/ddbj/services/index.html#pcite) を第一 reference に入力してください。
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp4_j.png){:.w600}
 

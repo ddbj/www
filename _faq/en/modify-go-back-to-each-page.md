@@ -16,10 +16,10 @@ lang: en
   <!-- Nucleotide Sequence Submission System -->
 </p>
 <dl><dt><span style="color: #ff0000">※Caution</span></dt>
-  <dd>After inputting feature annotation on <a href="/ddbj/websub-help-e.html#flow-7">7.Annotation</a>, if you do either of followings, feature annotation will be removed.
+  <dd>After inputting feature annotation on <a href="/ddbj/web-submission-help-e.html#flow-7">7.Annotation</a>, if you do either of followings, feature annotation will be removed.
     <ul>
-      <li>modify your sequences on <a href="/ddbj/websub-help-e.html#flow-5">5.Sequence</a></li>
-      <li>change your template on <a href="/ddbj/websub-help-e.html#flow-6">6.Template</a></li>
+      <li>modify your sequences on <a href="/ddbj/web-submission-help-e.html#flow-5">5.Sequence</a></li>
+      <li>change your template on <a href="/ddbj/web-submission-help-e.html#flow-6">6.Template</a></li>
     </ul>
   </dd>
 </dl>

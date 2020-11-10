@@ -25,11 +25,11 @@ Controlled-access databases
 2. Information to be used and provided
 
 Unrestricted-access databases  
-: [Data Submission](/submission-e.html)
+: [Data Submission](/services/index.html)
 
 Controlled-access databases  
-: [JGA submission steps](/jga/substep-e.html)
-: [Japanese only] [AGD submission steps](/agd/substep.html)
+: [JGA submission steps](/jga/submission-step-e.html)
+: [Japanese only] [AGD submission steps](/agd/submission-step.html)
 
 3. Users
 

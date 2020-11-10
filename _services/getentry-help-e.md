@@ -5,23 +5,23 @@ category: services
 lang: en
 related_pages:
   - title: ARSA Help
-    url: /arsa-help-e.html
+    url: /services/arsa-e.html
   - title: BLAST Help
     url: /blast-help-e.html
   - title: TXSearch Help
-    url: /txsearch-help-e.html
+    url: /services/txsearch-e.html
   - title: ClustalW Help
-    url: /clustalw-help-e.html
+    url: /services/clustalw-e.html
   - title: VecScreen Help
-    url: /vecscreen-help-e.html
+    url: /services/vecscreen-e.html
   - title: References
-    url: /references-e.html
+    url: /services/references-e.html
   - title: Services in past
-    url: /past-services-e.html
+    url: /services/past-services-e.html
   - title: WABI (Web API for Biology)
     url: /wabi-e.html
   - title: WABI BLAST Help
-    url: /wabi_blast-help-e.html
+    url: /services/wabi-blast-e.html
 ---
 
 ## About getentry <a name="About_getentry"></a>
@@ -151,7 +151,7 @@ DDBJ/EMBL/GenBank includes the following databases.
 "4 letters + 8 digits" accession numbers(WGS and TSA) and TPA are not
 contained in the DDBJ releases.
 
-Please refrer the [Latest Release Information](/stats/relinfo-e.html),
+Please refrer the [Latest Release Information](/latest-releases-e.html),
 for the current status of searchable databases and related information.
 
 
@@ -205,7 +205,7 @@ Database
       <td>3D structure database of protein</td>
     </tr>
     <tr>
-      <th><a href="/stats/relnote.html">DAD</a></th>
+      <th><a href="/ddbj-releases.html">DAD</a></th>
       <td>translated sequences database extracting from DDBJ</td>
     </tr>
     <tr>
@@ -215,7 +215,7 @@ Database
   </tbody>
 </table>
 
-Please refrer [Latest Release Information](/stats/relinfo-e.html), for
+Please refrer [Latest Release Information](/latest-releases-e.html), for
 the current status of searchable databases and related information.
 
 #### Output Format <a name="Output_Format"></a>
@@ -445,7 +445,7 @@ example (upper:Get method / lower: smart URL)
     </tr>
     <tr>
       <th>dad</th>
-      <td><a href="/stats/relnote.html">DAD</a></td>
+      <td><a href="/ddbj-releases.html">DAD</a></td>
       <td>translated sequences database extracting from DDBJ</td>
     </tr>
     <tr>
@@ -473,7 +473,7 @@ DDBJ/EMBL/GenBank includes the following databases.
 4 letters + 8 digits" accession numbers(WGS and TSA) and TPA are not
 contained in the DDBJ releases.
 
-Please refrer [Latest Release Information](/stats/relinfo-e.html) , for
+Please refrer [Latest Release Information](/latest-releases-e.html) , for
 the current status of searchable databases and related information.
 </div>
 

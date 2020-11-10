@@ -19,4 +19,4 @@ lang: en
   <li>text</li>
   <li>compress (gz)</li>
 </ul><span class="icon_square font-bold"> Limit </span>: Set an upper limit number of the result.<br> When you specify the Limit "0", there is no upper limit of the data acquisition.
-<p>For more information about each value, please see <a href="/getentry-help-e.html">getenry HELP</a>.</p>
+<p>For more information about each value, please see <a href="/services/getentry-e.html">getenry HELP</a>.</p>

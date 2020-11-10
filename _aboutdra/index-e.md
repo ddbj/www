@@ -71,7 +71,7 @@ lang: en
   - ### ![](/images/logos/database-org.svg)Databases
 
   - [Annotated/Assembled Sequences
-    (DDBJ)](/ddbj/index-e.html "Annotated/Assembled Sequences (DDBJ)")
+    (DDBJ)](/ddbj/index.html "Annotated/Assembled Sequences (DDBJ)")
 
   - [Sequence Read Archive
     (DRA)](/dra/index-e.html "Sequence Read Archive")
@@ -150,17 +150,17 @@ BI-DDBJ Web Sites Annotated/Assembled Sequences Sequence Read Archive
 <div id="header-bottom">
 
   - [Home](/dra/index-e.html)
-  - [Handbook![](/images/parts/arrow_down.svg)](/dra/submission.html)
+  - [Handbook![](/images/parts/arrow_down.svg)](/dra/services/index.html)
       - [Metadata
         examples](https://docs.google.com/spreadsheets/d/1DTdUQ-WWOMjOA2eYQWmFYUB24hJysuwhvHLJoDFX4rc/edit#gid=0)
-  - [FAQ](/dra/faq-e.html)
+  - [FAQ](/faq/en/index-e.html)
   - [Search](http://ddbj.nig.ac.jp/DRASearch/)
   - [Downloads![](/images/parts/arrow_down.svg)](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq)
       - [FASTQ](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq)
       - [SRA](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/sralite/ByExp/litesra/)
       - [XML
         Schema](https://github.com/ddbj/pub/tree/master/docs/dra/xsd)
-  - [About DRA](/dra/about-e.html)
+  - [About DRA](/dra/about-dra-e.html)
 
 </div>
 
@@ -202,7 +202,7 @@ Sequence Read Archive (ERA)](https://www.ebi.ac.uk/ena/).
 
 </div>
 
-[](/dra/submission-e.html "How to submit")
+[](/dra/services/index.html "How to submit")
 
 <div class="top-navi-box">
 
@@ -287,7 +287,7 @@ Sequence Read Archive (ERA)](https://www.ebi.ac.uk/ena/).
   - ### Databases
 
   - [Annotated/Assembled Sequences
-    (DDBJ)](/ddbj/index-e.html "Annotated/Assembled Sequences (DDBJ)")
+    (DDBJ)](/ddbj/index.html "Annotated/Assembled Sequences (DDBJ)")
 
   - [Sequence Read Archive
     (DRA)](/dra/index-e.html "Sequence Read Archive")
@@ -318,10 +318,10 @@ Sequence Read Archive (ERA)](https://www.ebi.ac.uk/ena/).
 
   - ### DDBJ Information
 
-  - [Training](/training-e.html)
+  - [Training](/activities/index-e.html)
 
   - [DDBJ
-    RSS![](/images/parts/rss_icon.svg)](/announcements-e.html "News feeds from DDBJ")
+    RSS![](/images/parts/rss_icon.svg)](/data-feed-e.html "News feeds from DDBJ")
 
   - [DDBJ on
     Twitter![](/images/parts/twitter_icon.svg)](https://twitter.com/DDBJ_topics "DDBJ Twitter")
@@ -371,9 +371,9 @@ Sequence Read Archive (ERA)](https://www.ebi.ac.uk/ena/).
     Disclaimers](/policies-e.html "Policies and Disclaimers")
   - [News](/news/en/index-e.html "News archives")
   - [FAQs](/faq/en/index-e.html "Frequently asked questions")
-  - [Sitemap](/sitemap-e.html "Sitemap")
+  - [Sitemap](/sitemaps-e.html "Sitemap")
   - [Calendar](/calendar-e.html "DDBJ Center Calendar")
-  - [Address](/access-e.html "DDBJ Center address")
+  - [Address](/ddbj-access-e.html "DDBJ Center address")
   - [Contact](/contact-e.html "Contact to DDBJ Center")
   - Last modified: 2018-02-08
 

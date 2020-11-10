@@ -18,5 +18,5 @@ lang: en
 <hr>
 <p>In addition, there are a number of databases constructed by occasionally using data from INSD. <br>DDBJ can not support to delete data from such databases. If you are to delete the cited data on other databases, you have to contact managing staff of each database, directly. </p>
 <dl><dt>Reference</dt>
-  <dd><a href="/insdc-status-e.html">INSDC Status Document</a></dd>
+  <dd><a href="/insdc-status-e">INSDC Status Document</a></dd>
 </dl>

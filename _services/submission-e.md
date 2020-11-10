@@ -23,12 +23,12 @@ related_pages:
 ### Purpose and Significance of Nucleotide Sequence Submission <a name="purpose"></a>
 
 In many scientific journals, it is required to assign and to describe
-[INSDC accession number](/acc_def-e.html) for a nucleotide sequence on
+[INSDC accession number](/documents/accessions.html) for a nucleotide sequence on
 the research paper. DDBJ is a member of [International Nucleotide
 Sequence Database Collaboration (INSDC)](http://www.insdc.org/).
 
 When you wish to publicize your sequence through DDBJ, and your sequence
-is [acceptable](/acc_def-e.html) for DDBJ, you can submit your sequence
+is [acceptable](/documents/accessions.html) for DDBJ, you can submit your sequence
 to DDBJ, even if you have no plan to publication of any research paper
 related to the sequence.
 
@@ -43,14 +43,14 @@ patent](/policies-e.html#priority).
 
 When you wonder your sequence data should be newly submitted or your
 previous entry should be modified, do not hesitate to contact us at
-[Contact form](/ddbj/updt-form-e.html) "Data updates / Corrections".
+[Contact form](/ddbj/update-form-e.html) "Data updates / Corrections".
 
-[Nucleotide Sequence Submission System](/ddbj/websub-e.html) is a tool
+[Nucleotide Sequence Submission System](/ddbj/web-submission-e.html) is a tool
 only for new submission, so, do not use Nucleotide Sequence Submission
 System to send your update request. If you need to modify your previous
-entry, see [the link for update request](/ddbj/updt-e.html), and contact
+entry, see [the link for update request](/ddbj/update-e.html), and contact
 us at [Application Form for Data Update
-Requests](/ddbj/updt-form-e.html).
+Requests](/ddbj/update-form-e.html).
 
 
 ### Rights and Duties of Submitter<a name="right"></a> 
@@ -69,7 +69,7 @@ entry are indicated in the [REFERENCE
 
 Following the progress of research, personnel change, and/or correction
 of some error, [submitters of the entry can revise and/or
-update](/ddbj/updt-e.html) their own nucleotide sequence and
+update](/ddbj/update-e.html) their own nucleotide sequence and
 registration information.
 
 As mentioned above and [the page to explain dataflow](#data_flow), the
@@ -96,16 +96,16 @@ opinions.
 During preparation/submission of [primary citation](#pcite), DDBJ can
 store your registration information privately in the meantime. If
 necessary, submitters have to include a [hold
-date](/ddbj/submission-e.html#holddate) in their registration
+date](/ddbj/services/index.html#holddate) in their registration
 information. Then, the entry with a hold date is stored privately at
 DDBJ. DDBJ must maintain registration information as confidential until
 publication of the entry.
 
 The hold data will be open to the public according to [principle of data
-release](/data-release-policy.html).
+release](/documents/documents/data-release-policy.html).
 
 In principle, [even submitters cannot remove their own
-entry](/ddbj/updt-e.html#q9) if the entry has already been released
+entry](/ddbj/update-e.html#q9) if the entry has already been released
 and/or the accession number is publicized in Journal etc.
 
 However, DDBJ can suppress the entry in many of its services following
@@ -148,7 +148,7 @@ necessary
 If you selected "hold until published", it is required to specify the
 "hold date" of your data.  
 Reference: [Principle of "Hold-Until-Published" data
-release](/data-release-policy-e.html)
+release](/documents/data-release-policy-e.html)
 
 
 ### Number of sequences <a name="number"></a>
@@ -168,7 +168,7 @@ appropriate set of entries; basically, the number of entries should be
 equal to multiplication of numbers of sequence polymorphisms and sampled
 populations.  
 See also [representative submissions of identical sequences for
-variation studies](/ddbj/represent-e.html), in detail.
+variation studies](/ddbj/representative-sequence-e.html), in detail.
 
 
 ### Scientific paper, REFERENCE <a name="reference"></a>
@@ -228,7 +228,7 @@ service;[VecScreen](http://ddbj.nig.ac.jp/vecscreen/?lang=en).
 
 (A) Nucleotide Sequence Submission System  
 : DDBJ generally recommends you to use [Nucleotide Sequence Submission
-System](/ddbj/websub-e.html).
+System](/ddbj/web-submission-e.html).
 
 (B) Mass Submission System (MSS)  
 : We recommend the use of [Mass Submission System (MSS)](/ddbj/mss-e.html) if:
@@ -270,9 +270,9 @@ accessible from the DDBJ homepage (e.g.,
 [getentry](http://getentry.ddbj.nig.ac.jp/top-e.html)).
 
 If you would like to update your data, please send a request mail from
-[Application Form for Data Update Requests](/ddbj/updt-form-e.html) with
+[Application Form for Data Update Requests](/ddbj/update-form-e.html) with
 the necessary information. Please refer to
-[Updates/Correction](/ddbj/updt-e.html) (after getting your accession
+[Updates/Correction](/ddbj/update-e.html) (after getting your accession
 number) for details.
 
 
@@ -290,7 +290,7 @@ number) for details.
     </tr>
     <tr>
       <th>For updating submitted data</th>
-      <td><a href="/ddbj/updt-form-e.html">Application Form for Data Update Requests</a></td>
+      <td><a href="/ddbj/update-form-e.html">Application Form for Data Update Requests</a></td>
     </tr>            
   </tbody>
 </table>
@@ -310,7 +310,7 @@ Following figure shows the dataflow from new submission to release and update at
     </li>
   <li>
     Nucleotide Sequence Submission<br>
-    Basically, DDBJ accepts nucleotide sequence submissions via <a href="/ddbj/websub-e.html">Nucleotide Sequence Submission System</a> or <a href="/ddbj/mss-e.html">Mass Submission System</a>. DDBJ issues an accession number for each sequence after processing submitted data.
+    Basically, DDBJ accepts nucleotide sequence submissions via <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System</a> or <a href="/ddbj/mss-e.html">Mass Submission System</a>. DDBJ issues an accession number for each sequence after processing submitted data.
     </li>
   <li>
     Hold until Publication<br>
@@ -318,7 +318,7 @@ Following figure shows the dataflow from new submission to release and update at
     </li>
   <li>
     Release of Sequence Data<br>
-    DDBJ releases the submitted data that specified to be open to the public immediately, as soon as possible after processing. The submitted entry that is specified to hold until publication will be released according to <a href="/data-release-policy-e.html">principle of data release</a>. When the accession number of the hold entry is published, the entry will be released with no exception and no permission from the submitter. Everyone can request DDBJ to release the unpublished data whose accession numbers are on the published papers.
+    DDBJ releases the submitted data that specified to be open to the public immediately, as soon as possible after processing. The submitted entry that is specified to hold until publication will be released according to <a href="/documents/data-release-policy-e.html">principle of data release</a>. When the accession number of the hold entry is published, the entry will be released with no exception and no permission from the submitter. Everyone can request DDBJ to release the unpublished data whose accession numbers are on the published papers.
     </li>
   <li>
     Availability of Released Data<br>
@@ -372,7 +372,7 @@ Hold date  <a name="holddate"></a>
 : "Hold date" is the date to start the distribution of the entry.
 Submitter can specify the date, if necessary  
 Reference: [Principle of "Hold-Until-Published" data
-release](/data-release-policy-e.html)
+release](/documents/data-release-policy-e.html)
 
 Working day <a name="working-day"></a>
 : DDBJ Center takes days off not only every Saturday and Sunday but

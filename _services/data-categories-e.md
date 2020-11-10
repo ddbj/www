@@ -7,9 +7,9 @@ related_pages:
   - title: Prefix Letter List
     url: /prefix-e.html
   - title: Accession Number Assigned by INSD
-    url: /acc_def-e.html
+    url: /documents/accessions.html
   - title: Principle of “Hold-Until-Published” data release
-    url: /data-release-policy-e.html
+    url: /documents/data-release-policy-e.html
 ---
 
 
@@ -18,7 +18,7 @@ related_pages:
 ## Acceptable data for DDBJ <a name="accept"></a>
 
 For the request of [Primary
-entry](/ddbj/submission-e.html#primary_entry) submission, in principle,
+entry](/ddbj/services/index.html#primary_entry) submission, in principle,
 DDBJ accepts any nucleotide sequences that are experimentally determined
 by submitters, but can not accept computational predicted and/or cited
 sequences.
@@ -46,7 +46,7 @@ Policies](/insdc-e.html#policy)
 Basically, DDBJ accepts all sequence data that are independently
 determined, even though seqences are identical each other. For variation
 studies, DDBJ also accepts [submissions of representative
-data](/ddbj/represent-e.html).
+data](/ddbj/representative-sequence-e.html).
 
 If you determine many sequences derived from the same indivisual, we
 strongly recommend to update sequence data submitted previously, rather
@@ -59,7 +59,7 @@ does not restrict them.
 
 ### Annotated/assembled sequences <a name="ann"></a>
 
-[DDBJ](/ddbj/index-e.html)  
+[DDBJ](/ddbj/index.html)  
 : Narrowly-defined DDBJ. DDBJ is a counterpart of GenBank and ENA
 (EMBL-Bank) to accept sequences with feature annotation and to
 provide them in [flat file](/ddbj/flat-file-e.html).

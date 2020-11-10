@@ -5,23 +5,23 @@ category: services
 lang: en
 related_pages:
   - title: WABI BLAST Help
-    url: /wabi_blast-help-e.html
+    url: /services/wabi-blast-e.html
   - title: ARSA Help
-    url: /arsa-help-e.html
+    url: /services/arsa-e.html
   - title: BLAST Help
     url: /blast-help-e.html
   - title: getentry Help
-    url: /getentry-help-e.html
+    url: /services/getentry-e.html
   - title: TXSearch Help
-    url: /txsearch-help-e.html
+    url: /services/txsearch-e.html
   - title: ClustalW Help
-    url: /clustalw-help-e.html
+    url: /services/clustalw-e.html
   - title: VecScreen Help
-    url: /vecscreen-help-e.html
+    url: /services/vecscreen-e.html
   - title: References
-    url: /references-e.html
+    url: /services/references-e.html
   - title: Services in past
-    url: /past-services-e.html
+    url: /services/past-services-e.html
 ---
 
 ## WABI (Web API for Biology)
@@ -54,9 +54,9 @@ http://ddbj.nig.ac.jp/wabi/blast/wabi_blast_1111-1111-1111-11-111-111111?info=re
 
 WABI currently provides the following web APIs:
 
-  - [BLAST](/wabi_blast-help-e.html)
-  - [getentry](/getentry-help-e.html#ge_program)
-  - [ARSA](/arsa-help-e.html)
-  - [ClustalW](/wabi_clustalw-help.html) (only available in Japanese)
-  - [VecScreen](/wabi_vecscreen-help.html) (only available in Japanese)
-  - [MAFFT](/wabi_mafft-help.html) (only available in Japanese)
+  - [BLAST](/services/wabi-blast-e.html)
+  - [getentry](/services/getentry-e.html#ge_program)
+  - [ARSA](/services/arsa-e.html)
+  - [ClustalW](/services/wabi-clustalw.html) (only available in Japanese)
+  - [VecScreen](/services/wabi-vecscreen.html) (only available in Japanese)
+  - [MAFFT](/services/wabi-mafft.html) (only available in Japanese)

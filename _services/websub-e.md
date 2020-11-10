@@ -5,7 +5,7 @@ category: services
 lang: en
 related_pages:
   - title: Nucleotide Sequence Submission
-    url: services/submission-e.html
+    url: services/services/index.html
   - title: Example of Submission
     url: flatfile/exsample-e.html
   - title: Feature Key
@@ -45,9 +45,9 @@ Before submission, read ["Submission of research data from human subjects"](/pol
 
 <div class="nsss-icon">
 
-[![]({{ site.baseurl }}/assets/images/parts/info_icon.svg)](/ddbj/websub-help-e.html)
+[![]({{ site.baseurl }}/assets/images/parts/info_icon.svg)](/ddbj/web-submission-help-e.html)
 
-[NSSS HELP](/ddbj/websub-help-e.html)
+[NSSS HELP](/ddbj/web-submission-help-e.html)
 
 </div>
 
@@ -61,7 +61,7 @@ OS
 ## Submission <a name="Submission"></a>
 
 The first-time submission  
-: Please read the descriptions of "[Nucleotide Sequence Submission](/ddbj/submission-e.html)" and "[Categories for Sequence Data](/data-categories-e.html)".
+: Please read the descriptions of "[Nucleotide Sequence Submission](/ddbj/services/index.html)" and "[Categories for Sequence Data](/documents/data-categories-e.html)".
 : Maximum number of 1 submission: 1024 (depends on PC environment/sequence length) 
 : [TPA data](/ddbj/tpa-e.html) submission is also acceptable via this system.
 : Check your sequences by [VecScreen](http://ddbj.nig.ac.jp/vecscreen/) to exclude vector sequences before submission.。
@@ -80,7 +80,7 @@ Recommended browsers
 ## Updates/ Questions <a name="Updates/_Questions"></a>
 
   - This system accepts only new submissions. DO NOT send update request via this system.  
-    After getting accession number(s), send request/question from [Update.](/ddbj/updt-e.html).
+    After getting accession number(s), send request/question from [Update.](/ddbj/update-e.html).
   - If you encounter any problem during submission, please contact us with "Submission ID" through [contact form](/contact-e.html).
 
 {::options parse_block_html="true" /}

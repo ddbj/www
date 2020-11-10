@@ -6,11 +6,11 @@ category: _aboutus
 lang: en
 related_pages:
   - title: Faculty Staff of DDBJ
-    url: /staff-e.html
+    url: /ddbj-staff-e.html
   - title: INSDC
     url: /insdc-e.html
   - title: INSDC Status Document
-    url: /insdc-status-e.html
+    url: /insdc-status-e
 ---
 
 DDBJ Center collects nucleotide sequence data as a member of [INSDC(International Nucleotide Sequence Database Collaboration)](http://www.insdc.org/) and provides freely available nucleotide sequence data and supercomputer system, to support research　activities in life science.
@@ -58,7 +58,7 @@ Database Advisory Committee (an outside committee of NIG), and also by
 the advisory board to INSDC, [International Advisory
 Committee](/insdc-e.html#iac).
 
-[A list of current staff of DDBJ.](/staff-e.html)
+[A list of current staff of DDBJ.](/ddbj-staff-e.html)
 
 
 
@@ -74,7 +74,7 @@ in Europe and [NCBI](https://www.ncbi.nlm.nih.gov/) in USA.
 
 DDBJ Center is officially certified to collect nucleotide sequences from
 researchers and to issue [the internationally recognized accession
-number](/acc_def-e.html) to data submitters. The accession number issued
+number](/documents/accessions.html) to data submitters. The accession number issued
 for each sequence data is unique on the database and internationally
 recognized to guarantee the submitter the property of the submitted and
 published data. Since DDBJ Center exchanges the released data with
@@ -98,10 +98,10 @@ following links in detail.
 Refer to:
 
   - [Sequence data included in patent
-    applications](/ddbj/pat-data-e.html)
+    applications](/ddbj/patent-data-e.html)
   - [Patent, Intellectual Property and
     Priority](/policies-e.html#ownership)
-  - [Patent column from DDBJ](/column/patent-e.html)
+  - [Patent column from DDBJ](/activities/patent-e.html)
 
 
 
@@ -134,13 +134,13 @@ through [web services](/services-e.html) or on NIG Supercomputer.
 ### Training course and publication <a name="Training_course_and_publication"></a>
 
 DDBJ holds a training course for bioinformatics,
-[DDBJing](/training.html) (in Japanese), to teach how to submit
+[DDBJing](/activities/index.html) (in Japanese), to teach how to submit
 nucleotide sequence data and how to use our services for analyzing life
 science data.
 
 We announce [the latest information for DDBJ
 activities](/news/en/index-e.html).  
-See also [our publications](/activities/publications.html).
+See also [our publications](/activities/index.html).
 
 
 

@@ -19,8 +19,8 @@ lang: ja
   <dd>公表された論文等をお知らせください。</dd><dt>4）1998年1月1日以前に登録されたデータの場合</dt>
   <dd>公開予定日到来後も非公開である可能性があります。</dd>
 </dl>
-<p>3) と 4) の場合は <a href="/contact.html#to-ddbj">DDBJへのお問い合わせ</a> よりご連絡ください。</p>
+<p>3) と 4) の場合は <a href="/contact-ddbj.html#to-ddbj">DDBJへのお問い合わせ</a> よりご連絡ください。</p>
 <dl><dt>参考</dt>
-  <dd><a href="/data-release-policy.html">データ公開原則</a></dd>
+  <dd><a href="/documents/documents/data-release-policy.html">データ公開原則</a></dd>
   <dd><a href="/faq/ja/cannot-find-accession-number-cited-paper.html">論文に掲載されているアクセッション番号が検索できません</a></dd>
 </dl>

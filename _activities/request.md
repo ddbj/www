@@ -10,25 +10,25 @@ related_pages:
   - title: DDBJ スタッフの講演発表（2001-2006）
     url: /activities/past-presentations.html
   - title: 相同性検索プログラムBLASTの内部構造
-    url: /column/blast_doc.html
+    url: /activities/blast-doc.html
   - title: DDBJ の塩基配列解析ツールについて
-    url: /column/ddbjpipeline.html
+    url: /activities/ddbj-pipeline.html
   - title: DDBJ アノテータの業務紹介
-    url: /column/annotator.html
+    url: /activities/curators.html
   - title: DDBJ での特許関連配列データの公開業務の紹介
-    url: /column/patent.html
+    url: /activities/patent.html
   - title: DDBJ スタッフコラム
-    url: /column/staffcolumn.html
+    url: /activities/staff-column.html
   - title: 遺伝子とゲノム
-    url: /column/genegenome.html
+    url: /activities/gene-genome.html
   - title: 進化ゲノム学とは
-    url: /column/introevog.html
+    url: /activities/introevog.html
   - title: FASTAとBLASTについて
-    url: /column/homology_doc.html
+    url: /activities/homology-doc.html
   - title: DDBJ Mail Magazine
-    url: /subscribe.html
+    url: /subscribe-ddbj.html
   - title: DDBJ データ解析チャレンジ
-    url: /activities/ddbj-challenge.html
+    url: /activities/training-ddbj-challenge.html
 ---
 
 ユーザーの皆様が DDBJ に登録をする際に参考にして頂く為のアドバイスを，DDBJ 登録担当者が Mail Magazine に連載したコラムをまとめました。
@@ -48,11 +48,11 @@ DDBJ の登録担当者は，ユーザーの皆様へすみやかにアクセッ
 : 塩基配列の修正・更新を行える権利を有するのは登録者のみです。
     登録者がひとりでは，連絡が取れなくなる可能性がありますので，複数の方を登録者に指定頂くことを推奨しています。
 3. vector 配列のコンタミのチェックは必ず行って下さい  
-: 登録配列中に vector 配列が含まれている場合には，配列の修正が必要となります。 ご登録の前にベクタースクリーニングをお願いいたします。 [DDBJ Vector Screening System](/vecscreen-help.html) をご利用下さい。
+: 登録配列中に vector 配列が含まれている場合には，配列の修正が必要となります。 ご登録の前にベクタースクリーニングをお願いいたします。 [DDBJ Vector Screening System](/services/vecscreen.html) をご利用下さい。
 4. 同一配列であっても複数個で登録して下さい  
 : 基本的には，配列が同一であっても，独立に配列決定を行ったデータであれば，個別に配列を受け付けます。つまり，決定した配列すべての登録をお願いします。  
     しかし，場合によっては，/frequency qualifier で出現頻度とサンプル総数を記載し代表データのみに集約して登録することも可能です。 その場合，配列多型 (haplotype, allele) および/または，観測した集団(country, lat\_lon, host など)の記載の単一性を維持可能な単位を考慮して，各々のサンプル単位に集約することが推奨されます。
-    [多型関連研究における同一配列の代表データ登録](/ddbj/represent.html)
+    [多型関連研究における同一配列の代表データ登録](/ddbj/representative-sequence.html)
     をご覧下さい。
 5. 配列由来種の生物名で種が特定出来ない，どのように登録すればよいか判らない，そんな質問が多くあります  
 : まずは，[Organism qualifier に記載する生物名](/ddbj/organism.html)DDBJ をご一読下さい。  
@@ -82,7 +82,7 @@ DDBJ では，皆様からお預かりした貴重なデータを，滞りなく
     「DDBJ から何も連絡がないのに（と思っていたが実は予告メールは送信済み），意に反してデータが公開されてしまった」となりませんよう，非公開データについては，ご自身で公開予定日の管理をお願いします。登録データが，データベースから公開されてしまった場合には以下のように扱われますのでご注意下さい。  
     [FAQ] [公開を取り消したデータが，現在も参照できるのはなぜですか？](/faq/ja/why-retracted-data-available.html)
 3. ”メールトラブル” 問題  
-: 近年，宛先アドレスに到達していないにもかかわらず，エラーリターンにならないメールが増えてきました。 こちらでは登録者宛に連絡しているつもりでも現実には連絡ができていない場合もあります。 「DDBJ からの連絡がちっとも無い」と思われる場合には，お手数ですが [お問い合わせ](/contact.html#to-ddbj) からご連絡をお願いします。また，[迷惑メール対策機能](/precautions.html) もご確認下さい。 その他，連絡先アドレス（コンタクトパーソンメールアドレス）が利用不可能となっている場合もあります。 アドレスの変更がありましたらすみやかに [お問い合わせ](/contact.html#to-ddbj) の「塩基配列データの更新・修正」までお知らせ下さい。
+: 近年，宛先アドレスに到達していないにもかかわらず，エラーリターンにならないメールが増えてきました。 こちらでは登録者宛に連絡しているつもりでも現実には連絡ができていない場合もあります。 「DDBJ からの連絡がちっとも無い」と思われる場合には，お手数ですが [お問い合わせ](/contact-ddbj.html#to-ddbj) からご連絡をお願いします。また，[迷惑メール対策機能](/precautions.html) もご確認下さい。 その他，連絡先アドレス（コンタクトパーソンメールアドレス）が利用不可能となっている場合もあります。 アドレスの変更がありましたらすみやかに [お問い合わせ](/contact-ddbj.html#to-ddbj) の「塩基配列データの更新・修正」までお知らせ下さい。
 4. ”修正しないとデータが公開できない” 問題  
 : 主に新種の生物名に関連する場合では，データ公開前に生物名の修正が必要となります。 この変更作業は GenBank との密接な情報交換を伴いますので時間が必要になります。どうぞご注意下さい。 その他の feature 情報の変更が必要な場合には，下記の定義に則ってご指定下さい。
       - [Feature key の定義](/ddbj/features.html)
@@ -104,11 +104,11 @@ DDBJ では，皆様からお預かりした貴重なデータを，滞りなく
     「公開予定日」は必ずご自身で管理して下さい。理由は [その２](#2) で記載しています。
 
 3. 文献情報の更新  
-: [論文が公開されました](/ddbj/updt.html#q1) に従い，お知らせ下さい。
+: [論文が公開されました](/ddbj/update.html#q1) に従い，お知らせ下さい。
     論文に使用していないデータでも，関係配列として文献情報の更新・公開を行う事が可能です。 JOURNAL 名欄は，NCBI のJournals DB を基に表示していますので，希望される略称での表示とならない場合がありますが，その場合にはご相談下さい。 論文がインターネットなどで閲覧できない場合には，お手元に論文のコピーがありましたら添付書類としてお送り下さい。 なお，論文受理の段階で当該論文がweb 上で先行公開される場合では，非公開を希望されてもDDBJ 公開原則が適用され，直ちに公開されますのでご注意下さい。
 
 4. コンタクトパーソン情報の更新  
-: [コンタクトパーソン情報, 住所, 所属情報を変更したい](/ddbj/updt.html#q3) に従い，お知らせ下さい。 たとえ公開完了済みのデータであっても，コンタクトパーソンメールアドレスが変更になった場合は必ずお知らせ下さい。 その際対象となるアクセッション番号はもれなくご記載下さい。 公開データで表示される内容とは異なる連絡先を登録する事も可能です。
+: [コンタクトパーソン情報, 住所, 所属情報を変更したい](/ddbj/update.html#q3) に従い，お知らせ下さい。 たとえ公開完了済みのデータであっても，コンタクトパーソンメールアドレスが変更になった場合は必ずお知らせ下さい。 その際対象となるアクセッション番号はもれなくご記載下さい。 公開データで表示される内容とは異なる連絡先を登録する事も可能です。
 
 5. 登録内容は永久にメンテナンスされ続けます  
 : アクセッション番号が発行されてしまうと，あるいは論文が公開されてしまうと，そこでDDBJ の仕事は終わりになる，と思われがちですが，そうではありません。そのデータは将来にわたって永久に管理され続けます。 例えば，将来，新発見があり，過去のデータについて，修正の指摘があった場合には，DDBJ はそのデータの登録者の確認を取った後に，データを正しい内容に修正していく必要があります。 そのため，コンタクトパーソンの連絡先アドレス（非公開）は常に最新の内容になるよう，修正され続けていくのです。
@@ -118,7 +118,7 @@ DDBJ では，皆様からお預かりした貴重なデータを，滞りなく
 
 FEATURES 情報に関する変更の場合は
 : 
-  - [登録データの修正・更新](/ddbj/updt.html)
+  - [登録データの修正・更新](/ddbj/update.html)
   - [Feature key の定義](/ddbj/features.html)
   - [Qualifier key の定義](/ddbj/qualifiers.html)
   - [Organism qualifier に記載する生物名](/ddbj/organism.html)
@@ -132,7 +132,7 @@ FEATURES 情報に関する変更の場合は
 
 DDBJ は，[The International Nucleotide Sequence Databases Collaboration(INSDC )](http://www.insdc.org/) を構成する primary database ですので，すべての塩基配列について， その配列が受け入れ基準を満たしており，これを広く一般に公開することを目的とするならば，学術論文の投稿予定の有無に関わらず登録を受けつけ， アクセッション番号を発行しています。
 
-参照：[DDBJ に登録可能なデータ](/ddbj/data-categories.html)
+参照：[DDBJ に登録可能なデータ](/ddbj/documents/documents/data-categories.html)
 
 DDBJ では，データ登録用入力システムとして，SAKURA システムと [大量登録システム（MSS）](/ddbj/mss.html)を用意しております。SAKURA は，１エントリ単位で，対話型入力システムです。MSS は，[EST](/ddbj/flatfile.html#divisionB), [WGS](/ddbj/wgs.html), 全ゲノム規模などの登録をする場合に多くの方が利用していますが， 「事前に一部データをサンプルとして提示して頂き，アノテーション内容（入力事項）をどのように記載するべきかなど， 登録者とDDBJ 担当者との間で事前調整をした後に，全データについての，登録用ファイルを電子メールまたは ftp でお送くり頂く」方式となっています。
 
@@ -143,7 +143,7 @@ MSS で使用する登録ファイル作成には，少々コツが必要です�
 
 SAKURA とMSS，どちらでもお好きな方をご利用頂けますが，「500,000 bp より大きい配列」 「WGS」「[MGA](/ddbj/others.html#mga)」 については，MSS のみで受け付けております。
 
-実際の登録にあたり， ご自身のデータをどう登録するのがふさわしいのかわからない，とお悩みの方は [お問い合わせ](/contact.html#to-ddbj) から，どうぞお気軽にご相談下さい。
+実際の登録にあたり， ご自身のデータをどう登録するのがふさわしいのかわからない，とお悩みの方は [お問い合わせ](/contact-ddbj.html#to-ddbj) から，どうぞお気軽にご相談下さい。
 
 以下では，過去にありました質問の一部を記載しています。
 

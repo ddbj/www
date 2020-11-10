@@ -12,4 +12,4 @@ lang: en
 
 ## How to postpone the hold date?
 
-<p>Contact us from <a href="/ddbj/updt-form-e.html">this form</a> by selecting "Change the hold-date" in [Subject]. </p>
+<p>Contact us from <a href="/ddbj/update-form-e.html">this form</a> by selecting "Change the hold-date" in [Subject]. </p>

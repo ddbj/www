@@ -27,7 +27,7 @@ imported into INSD via EMBL-Bank/ENA and GenBank, respectively.
 started from February 2008.  
 You can distinguish the nucleotide sequence data included in patent
 applications by [prefix](/prefix-e.html) of [accession
-numbers](/acc_def-e.html).
+numbers](/documents/accessions.html).
 
 The nucleotide sequence data included in patent applications can be
 searched or browsed from the following DDBJ services. Please note that

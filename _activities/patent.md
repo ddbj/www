@@ -10,25 +10,25 @@ related_pages:
   - title: DDBJ スタッフの講演発表（2001-2006）
     url: /activities/past-presentations.html
   - title: 相同性検索プログラムBLASTの内部構造
-    url: /column/blast_doc.html
+    url: /activities/blast-doc.html
   - title: DDBJ の塩基配列解析ツールについて
-    url: /column/ddbjpipeline.html
+    url: /activities/ddbj-pipeline.html
   - title: DDBJ アノテータの業務紹介
-    url: /column/annotator.html
+    url: /activities/curators.html
   - title: 「ユーザーの皆様へ，お願いです！」
-    url: /column/request.html
+    url: /activities/request.html
   - title: DDBJ スタッフコラム
-    url: /column/staffcolumn.html
+    url: /activities/staff-column.html
   - title: 遺伝子とゲノム
-    url: /column/genegenome.html
+    url: /activities/gene-genome.html
   - title: 進化ゲノム学とは
-    url: /column/introevog.html
+    url: /activities/introevog.html
   - title: FASTAとBLASTについて
-    url: /column/homology_doc.html
+    url: /activities/homology-doc.html
   - title: DDBJ Mail Magazine
-    url: /subscribe.html
+    url: /subscribe-ddbj.html
   - title: DDBJ データ解析チャレンジ
-    url: /activities/ddbj-challenge.html
+    url: /activities/training-ddbj-challenge.html
 ---
 
 DDBJ Mail Magazine 連載期間：No.50（2010年5月27日発行）〜No.54（2010年11月1日発行）,
@@ -74,7 +74,7 @@ JPO から DDBJ に月に1度の定期公開データ，不定期の追加公開
 
 JPO の特許データには，出願人から提出された配列(塩基配列/アミノ酸配列)，生物名，出願人名，発明者名，公開公報番号，公報公開日，出願番号，出願日，優先日および優先出願番号，コメント，配列の特徴を示す Feature 情報などが記載される。 DDBJ では，JPO から送付されるデータを公開フラットファイルフォーマット(FF)に変換し，公開を行っている。また同一の公報番号に複数の配列が含まれる場合は，各配列ごとにアクセッション番号が付与される。
 
-参考： 「[特許・知的所有権と優先権](/policies.html#ownership)」
+参考： 「[特許・知的所有権と優先権](/service-policy.html#ownership)」
 
 #### 3-4) 特許出願中の塩基配列の DDBJ への登録および公開
 
@@ -171,7 +171,7 @@ KIPO が保持する特許データの多くが，DDBJ からの公開に至っ�
 [getentry](http://getentry.ddbj.nig.ac.jp/top-j.html) では表1に示す様にアクセッション番号もしくは特許公報番号を指定することで，塩基配列データおよびアミノ酸配列データのエントリー検索が可能である。塩基配列データはアクセッション番号検索の他に，特許公報番号でも検索を行うことができる。特許公報番号の検索では JPO 以外に，KIPO，[米国特許商標庁(USPTO)](//www.uspto.gov/)，[欧州特許庁(EPO)](//www.epo.org/) 由来データの検索が可能である。しかしアミノ酸配列データではアクセッション番号検索のみで，特許公報番号での検索は行うことはできない。
 
 <table>
-    <caption>表1：塩基配列/アミノ酸配列データの検索条件<br>＊各特許庁の特許公報番号の種類と検索に指定する入力フォーマットは，<a href="/getentry-help.html#parameter">getentry の HELP</a> を参照。</caption>
+    <caption>表1：塩基配列/アミノ酸配列データの検索条件<br>＊各特許庁の特許公報番号の種類と検索に指定する入力フォーマットは，<a href="/services/getentry.html#parameter">getentry の HELP</a> を参照。</caption>
     <thead>
       <tr>
         <th></th>

@@ -16,7 +16,7 @@ lang: en
 <hr>
 <p><span class="bold">Subject</span>: MSS application<br><span class="bold">To</span>: <a href="mailto:mass@ddbj.nig.ac.jp">Mass Submission System (MSS)</a> (click the service name to send an e-mail)<br><span class="bold">Body</span>: (<span class="red">*</span> Required)</p>
 <dl><dt>About using MSS</dt>
-  <dd>・Have you ever used this system for your submission? <span class="red">*</span><br><span style="margin-left: 20px">Yes / No</span></dd><dt><a href="/ddbj/submission-e.html#contact">Contact Person</a> Information</dt>
+  <dd>・Have you ever used this system for your submission? <span class="red">*</span><br><span style="margin-left: 20px">Yes / No</span></dd><dt><a href="/ddbj/services/index.html#contact">Contact Person</a> Information</dt>
   <dd>・Contact person's name <span class="red">*</span></dd>
   <dd>・Contact person's E-mail address <span class="red">*</span></dd>
   <dd>・Contact person's affiliation <span class="red">*</span></dd><dt>If you are not a contact person but a person in charge of the submission, please fill in the following items.</dt>
@@ -31,7 +31,7 @@ lang: en
   <dd>・Supplementary Information</dd>
 </dl>
 <div class="attention no_color">
-  <dl><dt><a href="/data-categories-e.html">What is data type?</a></dt><dt>In case of either *1 or *2, please take following steps before MSS submission.</dt>
+  <dl><dt><a href="/documents/data-categories-e.html">What is data type?</a></dt><dt>In case of either *1 or *2, please take following steps before MSS submission.</dt>
     <dd>Please register your project information in <a href="/bioproject/index-e.html">ioProject Database</a> to get BioProject ID.</dd>
     <dd>Please register biological source materials used in experimental assays in <a href="/biosample/index-e.html">BioSample Database</a> to get BioSample ID.</dd><dt>In case of *2, please also do the following procedure.</dt>
     <dd>complete genome or draft genome with feature annotation, you also have to get a <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> through BioProject submission.</dd>

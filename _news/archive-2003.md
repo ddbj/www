@@ -18,7 +18,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn031224"><a href="#wn031224">DDBJ リリース 56 完成</a></h2>
   <div class="news_date">2003年12月24日</div>
-  <div class="news_content"><dd>DDBJ が管理・収集している塩基配列データベースは，<br>リリースとして定期的に年4回オンライン上で公開しています。<br>12月に DDBJ リリース56 を完成しました。<br>リリース56 のエントリ数は 30,405,173，総塩基数は 36,079,046,032 塩基です。<br><dd><a href="/download.html">FTPによる定期リリースおよび新着データのダウンロードサイト</a></dd></dd></div>
+  <div class="news_content"><dd>DDBJ が管理・収集している塩基配列データベースは，<br>リリースとして定期的に年4回オンライン上で公開しています。<br>12月に DDBJ リリース56 を完成しました。<br>リリース56 のエントリ数は 30,405,173，総塩基数は 36,079,046,032 塩基です。<br><dd><a href="/services/index.html">FTPによる定期リリースおよび新着データのダウンロードサイト</a></dd></dd></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -95,7 +95,7 @@ BASE COUNT    123456789 a    123456789 c    123456789 g    123456789 t</code></p
 <div class="news_post_list">
   <h2 class="news_title" id="wn031128"><a href="#wn031128">DDBJ メールマガジン第11号配信</a></h2>
   <div class="news_date">2003年11月28日</div>
-  <div class="news_content">DDBJ では奇数月末にメールマガジンを配信しています。本日第11号を配信しました。今回の内容はフラットファイルフォーマット一部変更・チンパンジー22番染色体ゲノム配列公開・DDBJ 登録データ新門認定・GIBダウンロードメニュー追加・BLAST, FASTA, SSEARCH バージョンアップ・Taxonomy database についての説明・DDBJ 年末年始休業のおしらせ・DDBJ の活動紹介です。配信を希望される方は<a href="/subscribe.html">メールマガジンのサイト</a>緑色のボタン「申込み・変更」をクリックして，メールアドレスなどを入力して下さい。氏名・所属などを記入していただくだけで，手続きは完了します。</div>
+  <div class="news_content">DDBJ では奇数月末にメールマガジンを配信しています。本日第11号を配信しました。今回の内容はフラットファイルフォーマット一部変更・チンパンジー22番染色体ゲノム配列公開・DDBJ 登録データ新門認定・GIBダウンロードメニュー追加・BLAST, FASTA, SSEARCH バージョンアップ・Taxonomy database についての説明・DDBJ 年末年始休業のおしらせ・DDBJ の活動紹介です。配信を希望される方は<a href="/subscribe-ddbj.html">メールマガジンのサイト</a>緑色のボタン「申込み・変更」をクリックして，メールアドレスなどを入力して下さい。氏名・所属などを記入していただくだけで，手続きは完了します。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -194,7 +194,7 @@ BASE COUNT    123456789 a    123456789 c    123456789 g    123456789 t</code></p
 <div class="news_post_list">
   <h2 class="news_title" id="wn031024"><a href="#wn031024">DAD, SWISS-PROT リリース公開</a></h2>
   <div class="news_date">2003年10月24日</div>
-  <div class="news_content">10月23日よりDAD (DDBJ amino acid database) Rel. 25 を公開しています。 DAD rel. 25 はエントリ数が 1,547,330，総アミノ残基数が 478,115,729 aa となっています。同じく10月23日よりSWISS-PROT Rel. 42 を公開しています。 SWISS-PROT rel. 42 はエントリ数が 135,850，総アミノ残基数が 50,046,799 aa となっています。<a href="/download.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
+  <div class="news_content">10月23日よりDAD (DDBJ amino acid database) Rel. 25 を公開しています。 DAD rel. 25 はエントリ数が 1,547,330，総アミノ残基数が 478,115,729 aa となっています。同じく10月23日よりSWISS-PROT Rel. 42 を公開しています。 SWISS-PROT rel. 42 はエントリ数が 135,850，総アミノ残基数が 50,046,799 aa となっています。<a href="/services/index.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -293,7 +293,7 @@ BASE COUNT    123456789 a    123456789 c    123456789 g    123456789 t</code></p
 <div class="news_post_list">
   <h2 class="news_title" id="wn030930_2"><a href="#wn030930_2">統計「登録塩基数上位30種の順位推移」更新</a></h2>
   <div class="news_date">2003年09月30日</div>
-  <div class="news_content">DDBJ リリース55 公開にともない，<a href="/statistics.html">DDBJ の統計</a>で公開している登録塩基数を生物種別にランキングした登録塩基数上位30種の順位推移（～DDBJ rel.55）を更新しました。前回のリリースで７７位の<i> Zea mays subsp. mays</i>（トウモロコシ）が２８位にランクインしました。 生物種をクリックして推移のグラフをご覧下さい。</div>
+  <div class="news_content">DDBJ リリース55 公開にともない，<a href="/statistics/index.html">DDBJ の統計</a>で公開している登録塩基数を生物種別にランキングした登録塩基数上位30種の順位推移（～DDBJ rel.55）を更新しました。前回のリリースで７７位の<i> Zea mays subsp. mays</i>（トウモロコシ）が２８位にランクインしました。 生物種をクリックして推移のグラフをご覧下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -329,7 +329,7 @@ BASE COUNT    123456789 a    123456789 c    123456789 g    123456789 t</code></p
 <div class="news_post_list">
   <h2 class="news_title" id="wn030911"><a href="#wn030911">「DDBJing 講習会 in 遺伝学会」開催</a></h2>
   <div class="news_date">2003年09月11日</div>
-  <div class="news_content">DDBJ では全国各地で<a href="/training.html">「DDBJing 講習会」</a>を開催しています。 DDBJing 講習会は，塩基配列の登録方法や DDBJ が提供しているデータベース検索・解析サービスをユーザの方々により深く理解して利用していただく助けになることを目指しています。9月24日に日本遺伝学会第75回大会会場の一室をお借りして DDBJing 講習会を開催します。 今回は事前の申し込みは必要ありません。 どうぞお気軽にご参加下さい。<ul><li>日時：2003年9月24日（水）12:30 - 13:30 </li><li>場所：東北大学　川内北キャンパス Ｂ会場 (B201) </li><li> 内容：DDBJ の利用法　～データベースとソフトウエア～</li><li> 講師：池尾一穂　助教授（国立遺伝学研究所　生命情報・DDBJ 研究センター）</li><li>対象：DDBJ を利用される方をどなたでも歓迎します（参加費無料） </li></ul></div>
+  <div class="news_content">DDBJ では全国各地で<a href="/activities/index.html">「DDBJing 講習会」</a>を開催しています。 DDBJing 講習会は，塩基配列の登録方法や DDBJ が提供しているデータベース検索・解析サービスをユーザの方々により深く理解して利用していただく助けになることを目指しています。9月24日に日本遺伝学会第75回大会会場の一室をお借りして DDBJing 講習会を開催します。 今回は事前の申し込みは必要ありません。 どうぞお気軽にご参加下さい。<ul><li>日時：2003年9月24日（水）12:30 - 13:30 </li><li>場所：東北大学　川内北キャンパス Ｂ会場 (B201) </li><li> 内容：DDBJ の利用法　～データベースとソフトウエア～</li><li> 講師：池尾一穂　助教授（国立遺伝学研究所　生命情報・DDBJ 研究センター）</li><li>対象：DDBJ を利用される方をどなたでも歓迎します（参加費無料） </li></ul></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -410,7 +410,7 @@ BASE COUNT    123456789 a    123456789 c    123456789 g    123456789 t</code></p
 <div class="news_post_list">
   <h2 class="news_title" id="wn030811"><a href="#wn030811">SFgate-WAIS URL 変更</a></h2>
   <div class="news_date">2003年08月11日</div>
-  <div class="news_content">SFgate-WAIS は，DDBJ web site 「<a href="/services.html">データベース検索</a>」で提供しているキーワード検索サービスです。2003年8月18日より SFgate-WAIS の URL を以下のように変更しますので，ブックマーク・リンクされている方は URL を更新して下さい。旧 URL は9月16日まで利用可能です。今回の URL の変更は，SFgate-WAIS のサーバが使用する port 番号の変更（現行8080番から標準ポート80番へ）に伴うものです。この変更により port 番号の設定が原因で SFgate-WAIS にアクセスできないという状況は解決されます。サービス内容に変更はありません。利用者の皆様には大変お手数をおかけしますが，ご理解とご協力をお願いします。  変更後 URL  日本語　<a href->http://dbsearch.ddbj.nig.ac.jp/dbsearch-j.html</a>  英語　　<a href="http://dbsearch.ddbj.nig.ac.jp/dbsearch-e.html">http://dbsearch.ddbj.nig.ac.jp/dbsearch-e.html</a>    （旧 URL http://ftp2.ddbj.nig.ac.jp:8080/dbsearch-j-new.html）</div>
+  <div class="news_content">SFgate-WAIS は，DDBJ web site 「<a href="/services/index.html">データベース検索</a>」で提供しているキーワード検索サービスです。2003年8月18日より SFgate-WAIS の URL を以下のように変更しますので，ブックマーク・リンクされている方は URL を更新して下さい。旧 URL は9月16日まで利用可能です。今回の URL の変更は，SFgate-WAIS のサーバが使用する port 番号の変更（現行8080番から標準ポート80番へ）に伴うものです。この変更により port 番号の設定が原因で SFgate-WAIS にアクセスできないという状況は解決されます。サービス内容に変更はありません。利用者の皆様には大変お手数をおかけしますが，ご理解とご協力をお願いします。  変更後 URL  日本語　<a href->http://dbsearch.ddbj.nig.ac.jp/dbsearch-j.html</a>  英語　　<a href="http://dbsearch.ddbj.nig.ac.jp/dbsearch-e.html">http://dbsearch.ddbj.nig.ac.jp/dbsearch-e.html</a>    （旧 URL http://ftp2.ddbj.nig.ac.jp:8080/dbsearch-j-new.html）</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -482,7 +482,7 @@ BASE COUNT    123456789 a    123456789 c    123456789 g    123456789 t</code></p
 <div class="news_post_list">
   <h2 class="news_title" id="wn030724_2"><a href="#wn030724_2">統計「磁気媒体を用いた DNA データベース配布状況」公開終了</a></h2>
   <div class="news_date">2003年07月24日</div>
-  <div class="news_content"><a href="/statistics.html">DDBJ の統計</a>ページにありました「磁気媒体を用いた DNA データベース配布状況」の公開を終了しました。<a href="/download.html">FTP によるダウンロードサービス</a>が主流になり，配布件数が減ったためです。</div>
+  <div class="news_content"><a href="/statistics/index.html">DDBJ の統計</a>ページにありました「磁気媒体を用いた DNA データベース配布状況」の公開を終了しました。<a href="/services/index.html">FTP によるダウンロードサービス</a>が主流になり，配布件数が減ったためです。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -545,7 +545,7 @@ BASE COUNT    123456789 a    123456789 c    123456789 g    123456789 t</code></p
 <div class="news_post_list">
   <h2 class="news_title" id="wn030709"><a href="#wn030709">SQmatch URL 変更のおしらせ</a></h2>
   <div class="news_date">2003年07月09日</div>
-  <div class="news_content">SQmatch は DDBJ が開発し，DDBJ web site 「<a href="/services.html">データベース検索</a>」で提供しているサービスです。DDBJ リリースと DAD リリースを対象に，UNIX コマンドの grep のように遺伝子配列への正規表現によるパターンマッチができるので， FASTA/BLAST では処理できない短い断片や "N" を含む配列の検索に有効です。2003年7月16日 より SQmatch の URL を以下のように変更しますので，ブックマーク・リンクされている方は URL を更新して下さい。旧 URL は変更後２ヶ月間（9月16日まで）利用可能です。今回の URL の変更は， SQmatch のサーバが使用する port 番号の変更（現行8080番から標準ポート80番へ）に伴うものです。この変更により port 番号の設定が原因で SQmatch にアクセスできないという状況は解決されます。サービス内容に変更はありません。利用者の皆様には大変お手数をおかけしますが，ご理解とご協力をお願いします。変更後 URL日本語　<a href="http://sqmatch.ddbj.nig.ac.jp/top-j.html">http://sqmatch.ddbj.nig.ac.jp/top-j.html</a>英語　　<a href="http://sqmatch.ddbj.nig.ac.jp/top-e.html">http://sqmatch.ddbj.nig.ac.jp/top-e.html</a></div>
+  <div class="news_content">SQmatch は DDBJ が開発し，DDBJ web site 「<a href="/services/index.html">データベース検索</a>」で提供しているサービスです。DDBJ リリースと DAD リリースを対象に，UNIX コマンドの grep のように遺伝子配列への正規表現によるパターンマッチができるので， FASTA/BLAST では処理できない短い断片や "N" を含む配列の検索に有効です。2003年7月16日 より SQmatch の URL を以下のように変更しますので，ブックマーク・リンクされている方は URL を更新して下さい。旧 URL は変更後２ヶ月間（9月16日まで）利用可能です。今回の URL の変更は， SQmatch のサーバが使用する port 番号の変更（現行8080番から標準ポート80番へ）に伴うものです。この変更により port 番号の設定が原因で SQmatch にアクセスできないという状況は解決されます。サービス内容に変更はありません。利用者の皆様には大変お手数をおかけしますが，ご理解とご協力をお願いします。変更後 URL日本語　<a href="http://sqmatch.ddbj.nig.ac.jp/top-j.html">http://sqmatch.ddbj.nig.ac.jp/top-j.html</a>英語　　<a href="http://sqmatch.ddbj.nig.ac.jp/top-e.html">http://sqmatch.ddbj.nig.ac.jp/top-e.html</a></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -572,7 +572,7 @@ BASE COUNT    123456789 a    123456789 c    123456789 g    123456789 t</code></p
 <div class="news_post_list">
   <h2 class="news_title" id="wn030704_3"><a href="#wn030704_3">DAD rel. 24 公開</a></h2>
   <div class="news_date">2003年07月04日</div>
-  <div class="news_content">7月3日よりDAD (DDBJ amino acid database) Rel. 24を公開しています。DAD rel. 24 はエントリ数が 1,429,344， 総アミノ残基数が 441,769,888 aaとなっています。<a href="/download.html">FTPによる定期リリースおよび新着データのダウンロードサイト</a></div>
+  <div class="news_content">7月3日よりDAD (DDBJ amino acid database) Rel. 24を公開しています。DAD rel. 24 はエントリ数が 1,429,344， 総アミノ残基数が 441,769,888 aaとなっています。<a href="/services/index.html">FTPによる定期リリースおよび新着データのダウンロードサイト</a></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -581,7 +581,7 @@ BASE COUNT    123456789 a    123456789 c    123456789 g    123456789 t</code></p
 <div class="news_post_list">
   <h2 class="news_title" id="wn030701"><a href="#wn030701">DDBJing 講習会 in 高知 参加受付開始</a></h2>
   <div class="news_date">2003年07月01日</div>
-  <div class="news_content">DDBJ では全国各地で<a href="/training.html">「DDBJing 講習会」</a>を開催しています。 DDBJing 講習会は，塩基配列の登録方法や DDBJ が提供しているデータベース検索・解析サービスをユーザの方々により深く理解して利用していただく助けになることを目指しています。8月29日（金）に高知医科大学で開催する DDBJing 講習会の参加受付を本日より開始しました。 四国および近県の皆様どうぞご参加下さい！</div>
+  <div class="news_content">DDBJ では全国各地で<a href="/activities/index.html">「DDBJing 講習会」</a>を開催しています。 DDBJing 講習会は，塩基配列の登録方法や DDBJ が提供しているデータベース検索・解析サービスをユーザの方々により深く理解して利用していただく助けになることを目指しています。8月29日（金）に高知医科大学で開催する DDBJing 講習会の参加受付を本日より開始しました。 四国および近県の皆様どうぞご参加下さい！</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -608,7 +608,7 @@ BASE COUNT    123456789 a    123456789 c    123456789 g    123456789 t</code></p
 <div class="news_post_list">
   <h2 class="news_title" id="wn030623"><a href="#wn030623">統計「登録塩基数上位30種の順位推移」更新</a></h2>
   <div class="news_date">2003年06月23日</div>
-  <div class="news_content">DDBJ リリース54 公開にともない，<a href="/statistics.html">DDBJ の統計</a>で公開している登録塩基数を生物種別にランキングした登録塩基数上位30種の順位推移（～DDBJ rel.54）を更新しました。前回のリリースで９８位の Macaca mulatta（アカゲザル）が１１位にランクインしました。 生物種をクリックして推移のグラフをご覧下さい。</div>
+  <div class="news_content">DDBJ リリース54 公開にともない，<a href="/statistics/index.html">DDBJ の統計</a>で公開している登録塩基数を生物種別にランキングした登録塩基数上位30種の順位推移（～DDBJ rel.54）を更新しました。前回のリリースで９８位の Macaca mulatta（アカゲザル）が１１位にランクインしました。 生物種をクリックして推移のグラフをご覧下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -762,7 +762,7 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC    </code></pre><p>・検索結果
 <div class="news_post_list">
   <h2 class="news_title" id="wn030513"><a href="#wn030513">EPD データのミラー開始</a></h2>
   <div class="news_date">2003年05月13日</div>
-  <div class="news_content">相同性検索でサービスしている EPD (Eukaryotic Promotor Database) データの定期更新を行うために，DDBJ で<a href="ftp://ftp.ddbj.nig.ac.jp/mirror_database/epd/">EPD のミラー</a>を開始しました。<a href="/download.html">DDBJ データのダウンロード用サイト(Anonymous FTP of the DDBJ(DDBJ リリースデータ) )</a>および <a href="/infobio/links-j.html">「その他の生命情報webリンク」</a>にもリンクが張ってあります。どうぞ御利用下さい。</div>
+  <div class="news_content">相同性検索でサービスしている EPD (Eukaryotic Promotor Database) データの定期更新を行うために，DDBJ で<a href="ftp://ftp.ddbj.nig.ac.jp/mirror_database/epd/">EPD のミラー</a>を開始しました。<a href="/services/index.html">DDBJ データのダウンロード用サイト(Anonymous FTP of the DDBJ(DDBJ リリースデータ) )</a>および <a href="/infobio/links-j.html">「その他の生命情報webリンク」</a>にもリンクが張ってあります。どうぞ御利用下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -843,7 +843,7 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC    </code></pre><p>・検索結果
 <div class="news_post_list">
   <h2 class="news_title" id="wn030423_4"><a href="#wn030423_4">DDBJ メールマガジンのご案内</a></h2>
   <div class="news_date">2003年04月23日</div>
-  <div class="news_content">DDBJ では新サービスの案内やおしらせをメールマガジンで配信しています。<br>このメールマガジンは登録していただいたアドレスにヘッドラインと URL のみをお届けし，興味のある記事はサイトにアクセスしてご覧いただく形式です。<br>隔月配信で，現在<a href="/subscribe.html">第６号を公開しています</a>。<br>DDBJ からユーザの方々に情報をお届けすることのできる手段ですので，この機会にぜひお申し込み下さい。<br><a href="/subscribe.html">web とメールでお申し込みいただくことができます</a>。<br><dd>本日よりトップページにリンク項目を追加しました。</dd></div>
+  <div class="news_content">DDBJ では新サービスの案内やおしらせをメールマガジンで配信しています。<br>このメールマガジンは登録していただいたアドレスにヘッドラインと URL のみをお届けし，興味のある記事はサイトにアクセスしてご覧いただく形式です。<br>隔月配信で，現在<a href="/subscribe-ddbj.html">第６号を公開しています</a>。<br>DDBJ からユーザの方々に情報をお届けすることのできる手段ですので，この機会にぜひお申し込み下さい。<br><a href="/subscribe-ddbj.html">web とメールでお申し込みいただくことができます</a>。<br><dd>本日よりトップページにリンク項目を追加しました。</dd></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -996,7 +996,7 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC    </code></pre><p>・検索結果
 <div class="news_post_list">
   <h2 class="news_title" id="wn030314"><a href="#wn030314">FTPのダウンロードサイトを公開</a></h2>
   <div class="news_date">2003年03月14日</div>
-  <div class="news_content">DDBJ のFTPのダウンロードサイトはDDBJの定期リリースと新着データをダウンロードできる anonymous ftp サイトですが，従来のサイトは場所がわかりにくく，そのためユーザーの方に御不便をおかけしていました。 このたび新たに<a href="/download.html">ダウンロード用サイト</a>を追加し，公開いたしました。 またこのサイトでは，データは，ダウンロード（ファイル転送）をしやすくするため，ファイルを分割し，ファイルサイズを小さくしています。どうぞ御利用下さい。</div>
+  <div class="news_content">DDBJ のFTPのダウンロードサイトはDDBJの定期リリースと新着データをダウンロードできる anonymous ftp サイトですが，従来のサイトは場所がわかりにくく，そのためユーザーの方に御不便をおかけしていました。 このたび新たに<a href="/services/index.html">ダウンロード用サイト</a>を追加し，公開いたしました。 またこのサイトでは，データは，ダウンロード（ファイル転送）をしやすくするため，ファイルを分割し，ファイルサイズを小さくしています。どうぞ御利用下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>

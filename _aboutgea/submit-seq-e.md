@@ -17,15 +17,15 @@ lang: en
 
 BioProject and BioSample registration is required for DRA submission.
 
-#### [BioProject](/bioproject/submission-e.html) <a name="BioProject"></a>
+#### [BioProject](/bioproject/services/index.html) <a name="BioProject"></a>
 
   - A description of the reseach effort.
 
-#### [BioSample](/biosample/submission-e.html)<a name="_BioSample"></a> ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
+#### [BioSample](/biosample/services/index.html)<a name="_BioSample"></a> ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
 
   - A description of biologically or physically unique samples used to generate experimental data.
 
-#### [DRA](/dra/submission-e.html)<a name="_DRA"></a> ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
+#### [DRA](/dra/services/index.html)<a name="_DRA"></a> ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
 
   - Raw sequencing reads and alignments.
 
@@ -262,7 +262,7 @@ You can delete an un-submitted GEA submission.
 
 ### DRA <a name="DRA"></a>
 
-Select a DRA submission registered in your account. If DRA submission is not registered, please go to the [DRA submission site](/dra/submission-e.html#dra-submission) and submit DRA.
+Select a DRA submission registered in your account. If DRA submission is not registered, please go to the [DRA submission site](/dra/services/index.html#dra-submission) and submit DRA.
 
 To use DRA submissions obtained in the other account, please [contact GEA team](/contact-e.html).
 
@@ -272,7 +272,7 @@ To use DRA submissions obtained in the other account, please [contact GEA team](
 
 ### BioProject <a name="BioProject"></a>
 
-Select a project registered in your account. If a BioProject is not registered, please go to the [BioProject submission site](/bioproject/submission-e.html#bioproject-submission) and submit a project.
+Select a project registered in your account. If a BioProject is not registered, please go to the [BioProject submission site](/bioproject/services/index.html#bioproject-submission) and submit a project.
 
 Select a BioProject used in the DRA submission when the GEA experiment and DRA submission belong to same project (usual case). When the GEA experiment and DRA submission belong to different projects, select a BioProject not used in the DRA submission.
 
@@ -385,8 +385,8 @@ The validator checks submitted IDF and SDRF files according to the [validation r
 </thead>
 <tbody>
 <tr>
-<td><a href="/ddbj/index-e.html">Annotated sequence database</a></td>
-<td><a href="/ddbj/updt-form-e.html">Request updates from web form</a></td>
+<td><a href="/ddbj/index.html">Annotated sequence database</a></td>
+<td><a href="/ddbj/update-form-e.html">Request updates from web form</a></td>
 </tr>
 <tr>
 <td>Sequence Read Archive (DRA)</td>

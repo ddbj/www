@@ -180,7 +180,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn990802"><a href="#wn990802">DDBJ Rel. 38 Completed</a></h2>
   <div class="news_date">August 02,1999</div>
-  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public and distributed in the magnetic media.We completed DDBJ Release 38 in July 30, 1999. DDBJ Release 38 consists of 4,294,369 entries, and the number of bases reached 3,098,519,597.Proportions of entries collected in Japan, U. S. A. and Europe are 11%, 81.8% and 7.9%.On the last release, the number of entries collected in Japan exceeded European ones for the first time. At this release 38, the difference increased.<br><dd>We had put new system VERSION number (Nucleotide ID and Protein ID) into operation from release 37. According to this, NID and PID will be terminated on release 39 (October 1999) .<br><dd><a href="../statistics-e.html">Please see DDBJ statitics for more information</a></dd></dd></dd></div>
+  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public and distributed in the magnetic media.We completed DDBJ Release 38 in July 30, 1999. DDBJ Release 38 consists of 4,294,369 entries, and the number of bases reached 3,098,519,597.Proportions of entries collected in Japan, U. S. A. and Europe are 11%, 81.8% and 7.9%.On the last release, the number of entries collected in Japan exceeded European ones for the first time. At this release 38, the difference increased.<br><dd>We had put new system VERSION number (Nucleotide ID and Protein ID) into operation from release 37. According to this, NID and PID will be terminated on release 39 (October 1999) .<br><dd><a href="../statistics/index-e.html">Please see DDBJ statitics for more information</a></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -198,7 +198,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn990728"><a href="#wn990728">Pyrococcus abyssi was added to GIB</a></h2>
   <div class="news_date">July 28,1999</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences. Because the genome sequence data of <i>Pyrococcus abyssi</i> were released, we incorporated them to GIB, and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences. Because the genome sequence data of <i>Pyrococcus abyssi</i> were released, we incorporated them to GIB, and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -234,7 +234,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn990628_2"><a href="#wn990628_2">Aeropyrum pernix was added to GIB</a></h2>
   <div class="news_date">June 28,1999</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.Because the complete genome sequence data of <i>Aeropyrum pernix</i> were released by DDBJ, we incorporated them to GIB, and now you can search those data.Accession numbers of those data are AP000058-AP000064.</dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.Because the complete genome sequence data of <i>Aeropyrum pernix</i> were released by DDBJ, we incorporated them to GIB, and now you can search those data.Accession numbers of those data are AP000058-AP000064.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -243,7 +243,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn990610"><a href="#wn990610">Thermotoga maritima was added to GIB</a></h2>
   <div class="news_date">June 10,1999</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.Because the complete genome sequence data of <i>Thermotoga maritima</i> were released, we incorporated them to GIB, and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences.Because the complete genome sequence data of <i>Thermotoga maritima</i> were released, we incorporated them to GIB, and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>

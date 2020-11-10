@@ -15,11 +15,11 @@ lang: en
 
 ### 2\. Register a BioProject and BioSample(s)
 
-#### [BioProject](/bioproject/submission-e.html) <a name="BioProject"></a>
+#### [BioProject](/bioproject/services/index.html) <a name="BioProject"></a>
 
   - A description of the reseach effort.
 
-#### [BioSample](/biosample/submission-e.html) <a name="_BioSample"></a> ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv} 
+#### [BioSample](/biosample/services/index.html) <a name="_BioSample"></a> ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv} 
 
   - A description of biologically or physically unique samples used to generate experimental data.
 
@@ -269,7 +269,7 @@ You can delete an un-submitted GEA submission at "Delete submission".
 
 ### BioProject <a name="BioProject"></a>
 
-Select a submitted project registered in your account. If a BioProject is not registered, please go to the [BioProject submission site](/bioproject/submission-e.html#bioproject-submission) and submit a project.
+Select a submitted project registered in your account. If a BioProject is not registered, please go to the [BioProject submission site](/bioproject/services/index.html#bioproject-submission) and submit a project.
 
 To use a project obtained in the other account, please [contact GEA team](/contact-e.html).
 
@@ -279,7 +279,7 @@ To use a project obtained in the other account, please [contact GEA team](/conta
 
 ### BioSample <a name="BioSample"></a>
 
-Select submitted BioSamples registered in your account. If BioSamples are not registered, please go to the [BioSample submission site](/biosample/submission-e.html#biosample-submission) and submit samples.
+Select submitted BioSamples registered in your account. If BioSamples are not registered, please go to the [BioSample submission site](/biosample/services/index.html#biosample-submission) and submit samples.
 
 To use samples obtained in the other account, please [contact GEA team](/contact-e.html).
 
@@ -400,8 +400,8 @@ You can allow reviewers access to private records by [communicating a reviewer a
 </thead>
 <tbody>
 <tr>
-<td><a href="/ddbj/index-e.html">Annotated sequence database</a></td>
-<td><a href="/ddbj/updt-form-e.html">Request updates from web form</a></td>
+<td><a href="/ddbj/index.html">Annotated sequence database</a></td>
+<td><a href="/ddbj/update-form-e.html">Request updates from web form</a></td>
 </tr>
 <tr>
 <td>Sequence Read Archive (DRA)</td>

@@ -7,7 +7,7 @@ lang: en
 
 ## 1\. Contact person <a name="flow-1"></a>
 
-Enter [contact person's](/ddbj/submission-e.html#contact) information here.
+Enter [contact person's](/ddbj/services/index.html#contact) information here.
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp1-1_e.png "contact information entry screen"){:.w600}
 
@@ -61,7 +61,7 @@ Related page
 
 ## 4\. Reference <a name="flow-4"></a>
 
-Enter [reference information](/ddbj/flat-file-e.html#Reference2) on the page. Please enter [primary citation](/ddbj/submission-e.html#pcite) on the 1st reference.
+Enter [reference information](/ddbj/flat-file-e.html#Reference2) on the page. Please enter [primary citation](/ddbj/services/index.html#pcite) on the 1st reference.
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp4_e.png){:.w600}
 

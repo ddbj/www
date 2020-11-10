@@ -6,7 +6,7 @@ category: _aboutus
 lang: ja
 related_pages:
   - title: DDBJ 運営スタッフ
-    url: /staff.html
+    url: /ddbj-staff.html
   - title: INSDC
     url: /insdc.html
 ---
@@ -18,7 +18,7 @@ DDBJ; DNA Data Bank of Japan は生命科学の研究活動をサポートする
 生命科学のめざましい発展の基盤として、塩基配列から得られる知識は欠かすことのできないものとなっており、今日の生物学の研究では、コンピュータが実験器具と同等に必要になっています。たいへんなスピードで蓄積している塩基配列データなどの生命情報の処理や解析にはコンピュータ科学・情報技術が必須であり、これが生命情報学を誕生させ、発展させている原動力となっています。DDBJ
 センターは、コンピュータを使った生命情報の解析・処理のための環境と人材を整備しつつ、国内外における生命情報学の分野で主要な役割を果たすことを目的とした活動を行なっています。
 
-INSD データは目的や国籍に拘わらず、[閲覧転用していただける世界科学の共有財](/policies.html#copyright)であり、
+INSD データは目的や国籍に拘わらず、[閲覧転用していただける世界科学の共有財](/service-policy.html#copyright)であり、
 世界中の研究者は DDBJ、ENA、NCBI の何れかを通じて INSD にデータを登録することができます。DDBJ センターの事業の柱は、
 INSD
 を使って研究者の方々がデータを公開共有する際に、なるべくストレスなく同じ規則に従った表現で、できるだけ豊かな情報を記入していただくような仕組みをつくり、公共財の質の向上を図ることです。
@@ -38,7 +38,7 @@ Genetics)](https://www.nig.ac.jp/) 内で運営されています。
 DDBJ センター事業は所外委員会である DNA データ研究利用委員会に加えて、EBI, NCBI, DDBJ
 がそれぞれ委嘱する外部委員会である[国際諮問委員会](/insdc.html#iac)によって監督されています。
 
-[現在の DDBJ 運営スタッフの一覧](/staff.html)はこちらをご覧ください。
+[現在の DDBJ 運営スタッフの一覧](/ddbj-staff.html)はこちらをご覧ください。
 
 
 　
@@ -54,7 +54,7 @@ DDBJ センター事業は所外委員会である DNA データ研究利用委�
 [NCBI](https://www.ncbi.nlm.nih.gov/) と共に、国際塩基配列データベース (INSD) を構築・維持する
 [INSDC](/insdc.html) の一員として、塩基配列データを収集・提供するデータバンク活動で国際的に貢献 しています。
 
-DDBJ で登録を受け付けた全ての塩基配列データには、DDBJ が[アクセッション番号](/acc_def.html) (accession
+DDBJ で登録を受け付けた全ての塩基配列データには、DDBJ が[アクセッション番号](/documents/accessions.html) (accession
 number)
 を発行しています。アクセッション番号は、塩基配列データベースに登録される塩基配列データに対して個別に与えられ、その配列データに固有のものです。DDBJ
 に登録されたデータは、公開時に NCBI と ENA/EBI に送られますので、DDBJ が発行したアクセッション番号は、NCBI,
@@ -69,9 +69,9 @@ ENA/EBI でも共通です。
 
 参照：
 
-  - [特許出願に含まれる配列データの利用に関する注意](/ddbj/pat-data.html)
-  - [特許・知的所有権と優先権](/policies.html#ownership)
-  - [DDBJ での特許関連配列データの公開業務の紹介](/column/patent.html)
+  - [特許出願に含まれる配列データの利用に関する注意](/ddbj/patent-data.html)
+  - [特許・知的所有権と優先権](/service-policy.html#ownership)
+  - [DDBJ での特許関連配列データの公開業務の紹介](/activities/patent.html)
 
 
 
@@ -88,8 +88,8 @@ ENA/EBI でも共通です。
 
 塩基配列データベースのより広い利用を目指し、ひいては生命情報学の発展に寄与するため、DDBJ
 では国際塩基配列データベースをはじめとしてさまざまな生命情報データベースを国立遺伝学研究所スーパーコンピュータシステム上
-および [WWW サービス](/services.html)として公開しています。  
-[FTP によるデータベースの一括取得](/download.html)もご利用ください。
+および [WWW サービス](/services/index.html)として公開しています。  
+[FTP によるデータベースの一括取得](/services/index.html)もご利用ください。
 
 #### データ解析用ソフトウェアツールの開発・提供 <a name="データ解析用ソフトウェアツールの開発・提供"></a>
 
@@ -101,11 +101,11 @@ ENA/EBI でも共通です。
 ### 教育 および 広報 <a name="教育_および_広報"></a>
 
 DDBJ では、利用者の方々に塩基配列データの登録方法や 提供しているサービスを、より深く理解し有効に活用していただくために、各地で
-[DDBJing 講習会](/training.html)を開催しております。
+[DDBJing 講習会](/activities/index.html)を開催しております。
 
-サイト内で[DDBJ の活動に関する最新情報](/news/ja/index.html)をお知らせしております。希望者には、その概要を
-[DDBJ Mail Magazine](/subscribe.html) にて定期的に配信しております。  
-[DDBJ 活動に関する出版物](/activities/publications.html) もご覧ください。
+サイト内で[DDBJ の活動に関する最新情報](/news/index.html)をお知らせしております。希望者には、その概要を
+[DDBJ Mail Magazine](/subscribe-ddbj.html) にて定期的に配信しております。  
+[DDBJ 活動に関する出版物](/activities/index.html) もご覧ください。
 
 ## 沿革 <a name="history"></a>
 
