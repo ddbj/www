@@ -2,13 +2,13 @@ $MARGIN_PANEL: 2rem
 
 #ServicesView
   margin-right: #{ $MARGIN_PANEL * 0.5 }
-  padding: 5rem 3rem 3rem 3rem
+  padding: 2.5rem 3rem 3rem 3rem
   position: relative
   > .appearance-switch
     font-size: 1.8rem
     position: absolute
     display: block
-    top: 1.6rem
+    top: -.5rem
     right: 3rem
   > .container
     list-style: none
@@ -17,6 +17,7 @@ $MARGIN_PANEL: 2rem
     > .service
       position: relative
       background-color: white
+      box-shadow: $SHADOW_DEPTH2
       transition: margin $DURATION_GUI, padding $DURATION_GUI, width $DURATION_GUI
       > .upper
         > .title
