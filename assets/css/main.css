@@ -129,13 +129,7 @@ input, textarea, select, button {
     min-width: auto; } }
 
 .tagging-item-view {
-  padding: 1.6rem;
-  border-bottom: solid 0.1rem #ccc;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  display: block; }
-  .tagging-item-view > .upper > .title {
-    font-size: 1.6rem; }
+  list-style: none; }
   .tagging-item-view > .upper > .tags > * {
     display: inline-block; }
     .tagging-item-view > .upper > .tags > * + * {
@@ -1046,8 +1040,21 @@ input, textarea, select, button {
     .tag-view.-disable > .count {
       color: #736357; }
 
-.tagging-list-view .taggingitem.-hidden {
-  display: none; }
+.tagging-list-view {
+  padding: 0 0 3rem 3rem; }
+  .tagging-list-view .taggingitem {
+    margin-bottom: .4rem;
+    padding: 1rem 1.2rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.18); }
+    .tagging-list-view .taggingitem.-hidden {
+      display: none; }
+    .tagging-list-view .taggingitem > .upper > .title {
+      font-size: 1.6rem;
+      line-height: 1.2; }
 
 .tags-view > .tag {
   color: #FF7300;
@@ -1198,8 +1205,6 @@ input, textarea, select, button {
       width: calc( (100vw - 128rem) + (128rem - 23rem)); }
       #NavigationAndMainView > .inner > .mainview > * {
         max-width: calc(128rem - 23rem - 4.2rem); }
-      #NavigationAndMainView > .inner > .mainview > .tagging-list-view {
-        margin-top: 10px; }
 
 #PageHeader {
   background-color: white; }
@@ -1217,30 +1222,24 @@ input, textarea, select, button {
 
 #ServicesView {
   margin-right: 1rem;
-  padding: 2.5rem 3rem 3rem 3rem;
+  padding-top: 2.5rem;
   position: relative; }
   #ServicesView > .appearance-switch {
     font-size: 1.8rem;
     position: absolute;
     display: block;
     top: -.5rem;
-    right: 3rem; }
+    right: 0; }
   #ServicesView > .container {
     list-style: none;
     position: relative;
     transition: margin 0.2s; }
     #ServicesView > .container > .service {
-      position: relative;
-      background-color: white;
-      box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.18);
       transition: margin 0.2s, padding 0.2s, width 0.2s; }
       #ServicesView > .container > .service > .upper > .title {
-        font-size: 1.8rem;
-        line-height: 1.2;
         position: relative;
         margin-bottom: .6rem; }
       #ServicesView > .container > .service > .upper > .tags {
-        list-style: none;
         margin: 0 -.2rem .8rem; }
         #ServicesView > .container > .service > .upper > .tags > .tag-view {
           display: inline-block; }
@@ -1256,6 +1255,13 @@ input, textarea, select, button {
             display: inline-block; }
             #ServicesView > .container > .service > .links > ul > li + li {
               margin-left: 1rem; }
+  #ServicesView[data-appearance-type="list"] > .container > .service > .upper > * {
+    display: inline-block;
+    vertical-align: middle; }
+  #ServicesView[data-appearance-type="list"] > .container > .service > .upper > .tags {
+    margin-left: 1rem; }
+  #ServicesView[data-appearance-type="list"] > .container > .service > .links {
+    top: 1rem; }
   #ServicesView[data-appearance-type="panel"] > .container {
     display: flex;
     flex-wrap: wrap;
@@ -1266,17 +1272,6 @@ input, textarea, select, button {
       width: calc( 100% / 3 - 2rem); }
       #ServicesView[data-appearance-type="panel"] > .container > .service > .links {
         bottom: 1rem; }
-  #ServicesView[data-appearance-type="list"] > .container > .service {
-    padding: 1rem 1.2rem; }
-    #ServicesView[data-appearance-type="list"] > .container > .service + .service {
-      margin-top: .4rem; }
-    #ServicesView[data-appearance-type="list"] > .container > .service > .upper > * {
-      display: inline-block;
-      vertical-align: middle; }
-    #ServicesView[data-appearance-type="list"] > .container > .service > .upper > .tags {
-      margin-left: 1rem; }
-    #ServicesView[data-appearance-type="list"] > .container > .service > .links {
-      top: 1rem; }
 
 #TopPageView {
   background-color: white; }
