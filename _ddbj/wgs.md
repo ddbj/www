@@ -73,39 +73,39 @@ WGSデータの登録は [Mass Submission System (MSS)](/ddbj/mss.html) で受�
 
 WGS エントリの特徴
 
-  - [アクセッション番号](#AccessionB) は[アルファベット 4 文字と数字 8
-    桁](#bulk_sequence)を基本とします。
-  - [KEYWORDS](#KeywordsB) 行には "WGS" とゲノムとしての完成度を示す規定値が表示されます。
+  - [アクセッション番号](#AccessionA) は アルファベット 4 文字と数字 8
+    桁 を基本とします。
+  - [KEYWORDS](#KeywordsA) 行には "WGS" とゲノムとしての完成度を示す規定値が表示されます。
 
 <!-- end list -->
 
-<pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">ZZZZ01000001</a>              <a id="SequenceLengthA" href="#SequenceLengthB">123456 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">DNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">HUM</a> <a id="ModificationDateA" href="#ModificationDateB">01-MAY-2003</a>
-<a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Homo sapiens DNA, chromosome 7, A01234B01. 
-<a id="AccessionA" href="#AccessionB">ACCESSION</a>   ZZZZ01000001 ZZZZ01000000
-<a id="VersionA" href="#VersionB">VERSION</a>     ZZZZ01000001.1
-<a id="DblinkA" href="#DblinkB">DBLINK</a>      BioProject:PRJDA12345
+<pre><code><a id="LocusA" href="/ddbj/flat-file#LocusB">LOCUS</a>       <a id="LocusNameA" href="/ddbj/flat-file#LocusNameB">ZZZZ01000001</a>              <a id="SequenceLengthA" href="/ddbj/flat-file#SequenceLengthB">123456 bp</a>    <a id="MoleculeTypeA" href="/ddbj/flat-file#MoleculeTypeB">DNA</a>    <a id="MoleculeFormA" href="/ddbj/flat-file#MoleculeFormB">linear</a>   <a id="DivisionA" href="/ddbj/flat-file#DivisionB">HUM</a> <a id="ModificationDateA" href="/ddbj/flat-file#ModificationDateB">01-MAY-2003</a>
+<a id="DefinitionA" href="/ddbj/flat-file#DefinitionB">DEFINITION</a>  Homo sapiens DNA, chromosome 7, A01234B01. 
+<a id="AccessionA" href="/ddbj/flat-file#AccessionB">ACCESSION</a>   ZZZZ01000001 ZZZZ01000000
+<a id="VersionA" href="/ddbj/flat-file#VersionB">VERSION</a>     ZZZZ01000001.1
+<a id="DblinkA" href="/ddbj/flat-file#DblinkB">DBLINK</a>      BioProject:PRJDA12345
             BioSample:SAMD01234567
             Sequence Read Archive:DRR012345, DRR012346
-<a id="KeywordsA" href="#KeywordsB">KEYWORDS</a>    WGS; STANDARD_DRAFT.
-<a id="SourceA" href="#SourceB">SOURCE</a>      Homo sapiens
-  <a id="OrganismA" href="#OrganismB">ORGANISM</a>  Homo sapiens
+<a id="KeywordsA" href="/ddbj/flat-file#KeywordsB">KEYWORDS</a>    WGS; STANDARD_DRAFT.
+<a id="SourceA" href="/ddbj/flat-file#SourceB">SOURCE</a>      Homo sapiens
+  <a id="OrganismA" href="/ddbj/flat-file#OrganismB">ORGANISM</a>  Homo sapiens
             Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
             Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
             Catarrhini; Hominidae; Homo.
-<a id="Reference1A" href="#Reference1B">REFERENCE   1</a>  (bases 1 to 123456)
-  <a id="AuthorsA" href="#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
-  <a id="TitleA" href="#TitleB">TITLE</a>     Direct Submission
-  <a id="JournalA" href="#JournalB">JOURNAL</a>   Submitted (01-APR-2003) to the DDBJ/EMBL/GenBank databases.
+<a id="Reference1A" href="/ddbj/flat-file#Reference1B">REFERENCE   1</a>  (bases 1 to 123456)
+  <a id="AuthorsA" href="/ddbj/flat-file#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
+  <a id="TitleA" href="/ddbj/flat-file#TitleB">TITLE</a>     Direct Submission
+  <a id="JournalA" href="/ddbj/flat-file#JournalB">JOURNAL</a>   Submitted (01-APR-2003) to the DDBJ/EMBL/GenBank databases.
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
-<a id="Reference2A" href="#Reference2B">REFERENCE   2</a>
+<a id="Reference2A" href="/ddbj/flat-file#Reference2B">REFERENCE   2</a>
   AUTHORS   Mishima,H., Shizuoka,T. and Fuji,I.
   TITLE     Human whole genome shotgun sequence
   JOURNAL   Unpublished (2003)
-<a id="CommentA" href="#CommentB">COMMENT</a>     Whole genome shotgun sequencing project.
-<a id="FeaturesA" href="#FeaturesB">FEATURES</a>             Location/Qualifiers
-     <a id="FeaturesSourceA" href="#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..123456</a>
+<a id="CommentA" href="/ddbj/flat-file#CommentB">COMMENT</a>     Whole genome shotgun sequencing project.
+<a id="FeaturesA" href="/ddbj/flat-file#FeaturesB">FEATURES</a>             Location/Qualifiers
+     <a id="FeaturesSourceA" href="/ddbj/flat-file#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..123456</a>
                      /<a href="/ddbj/qualifiers.html#db_xref">db_xref</a>="taxon:9606"
                      /<a href="/ddbj/qualifiers.html#chromosome">chromosome</a>="7"
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
@@ -113,4 +113,4 @@ WGS エントリの特徴
                      /<a href="/ddbj/qualifiers.html#submitter_seqid">submitter_seqid</a>="A01234B01"
 
 -- The rest is snipped --
-<a id="EndA" href="#EndB">//</a></code></pre>
+<a id="EndA" href="/ddbj/flat-file#EndB">//</a></code></pre>

@@ -28,7 +28,7 @@ related_pages:
 
 DDBJ を含む国際塩基配列データベースに登録された塩基配列は公開された後には、[誰でも全てを制限なしに利用可能](/insdc.html#policy)となります。
 
-なお、DDBJ に塩基配列データを登録しても、データに関する[優先権、特許権](/service-policy.html#priority)などは生じませんので、ご注意ください。
+なお、DDBJ に塩基配列データを登録しても、データに関する[優先権、特許権](/policies.html#priority)などは生じませんので、ご注意ください。
 
 参照: [FAQ\] [DDBJ に登録すればデータの優先権は確保されますか。特許申請するべきですか](/faq/ja/priorities-for-data.html)
 
@@ -59,7 +59,7 @@ DDBJ から塩基配列を公開する際には、登録情報を DDBJ の定め
 
 [Primary citation](#pcite) が投稿中であるなどの場合、当該論文が公表されるまでの間、DDBJ は登録情報を非公開の状態で保持することが可能です。その場合、登録者は塩基配列登録に際し、登録情報に[公開予定日 (Hold date)](#holddate)を含めなければなりません。公開予定日を設定した場合、登録情報は非公開の状態で維持されます。非公開の登録情報に関しては、DDBJ は登録者以外に対して守秘義務があります。
 
-非公開の登録情報は[データ公開原則](/documents/documents/documents/data-release-policy.html)に従い、公開予定日到来などの理由により公開されます。
+非公開の登録情報は[データ公開原則](/documents/data-release-policy.html)に従い、公開予定日到来などの理由により公開されます。
 
 一度公開された登録情報は、DDBJ 側に重大な過失があった場合を除き、原則として、非公開の状態に戻すことができません。
 
@@ -85,7 +85,7 @@ DDBJ から塩基配列を公開する際には、登録情報を DDBJ の定め
 登録者は登録時に即日公開、一定期間の非公開を選択することが可能です。  
 公開予定日とは DDBJ で公開作業を開始する日付けです。  
 即日公開ではない登録の場合は、公開予定日の設定が必要になります。  
-参照: [データ公開原則](/documents/documents/documents/data-release-policy.html)
+参照: [データ公開原則](/documents/data-release-policy.html)
 
 ### 登録件数 <a name="number"></a>
 
@@ -196,7 +196,7 @@ DDBJ のキュレータが、公開に必要な事項を、国際塩基配列デ
   <li>
     配列データ公開<br>
     登録時に即時公開を指定された場合は、作業完了後、すぐに公開いたします。公開予定日
-      が指定された場合は、<a href="/documents/documents/documents/data-release-policy.html">公開原則</a>に基づき公開されます。論文出版などによるアクセッション番号の公表が確認された場合は例外なく公開します。また「アクセッション番号の公表」に基づく公開請求は、誰にでも可能です。
+      が指定された場合は、<a href="/documents/data-release-policy.html">公開原則</a>に基づき公開されます。論文出版などによるアクセッション番号の公表が確認された場合は例外なく公開します。また「アクセッション番号の公表」に基づく公開請求は、誰にでも可能です。
     </li>
   <li>
     公開データの利用<br>
@@ -236,10 +236,10 @@ DDBJ のキュレータが、公開に必要な事項を、国際塩基配列デ
 : 受付日 (Accept Date) とは、原則として、アクセッション番号を発行可能な元データが DDBJ に到着した日付けです。
 
 公開予定日 (Hold Date) <a name="holddate"></a>
-: 公開予定日とは DDBJ で公開作業を開始する日付けです。登録者が必要に応じて設定します。<br>参照: [データ公開原則](/documents/documents/documents/data-release-policy.html)
+: 公開予定日とは DDBJ で公開作業を開始する日付けです。登録者が必要に応じて設定します。<br>参照: [データ公開原則](/documents/data-release-policy.html)
 
 業務日  <a name="working-day"></a>
-: DDBJ センターは土曜日と日曜日に加えて、[国民の祝日](//eco.mtk.nao.ac.jp/koyomi/faq/holiday.html)、年末年始(12月29日から翌年の1月３日)、[情報・システム研究機構](http://www.rois.ac.jp//index.html)の定める夏季休業日(８月中の２日間) には業務を休止します。[DDBJ Calendar](/calendar.html) もご参照ください。
+: DDBJ センターは土曜日と日曜日に加えて、[国民の祝日](//eco.mtk.nao.ac.jp/koyomi/faq/holiday.html)、年末年始(12月29日から翌年の1月３日)、[情報・システム研究機構](http://www.rois.ac.jp//index.html)の定める夏季休業日(８月中の２日間) には業務を休止します。DDBJ Calendar もご参照ください。
 
 フラットファイル (flat file)  <a name="flatfile"></a>
 : フラットファイルとは、DDBJ のデータ公開形式です。<br>参照: [DDBJ のデータ公開形式 (flat file) の説明](/ddbj/flat-file.html)

@@ -5,21 +5,21 @@ category: ddbj
 lang: ja
 related_pages:
   - title: 登録ファイル形式
-    url: services/file-format.html
+    url: /ddbj/file-format.html
   - title: MSS データファイル用チェックツール
     url: /ddbj/mss-tool.html
   - title: UME ユーザーマニュアル
-    url: services/ume.html
+    url: /ddbj/ume.html
   - title: Parser ユーザーマニュアル
-    url: services/parser.html
+    url: /ddbj/parser.html
   - title: validator エラーメッセージ
-    url: services/validator.html
+    url: /ddbj/validator.html
   - title: MSS 利用申し込み
-    url: services/mass-form.html
+    url: /ddbj/mss-form.html
 ---
 
 transChecker は Mass Submission System (MSS) を利用して DDBJ に登録する際に必要な
-[配列ファイル](/ddbj/file-format.html#sequence) と [アノテーションファイル](/ddbj/file-format-j.html#annotation) の記載を元に、[CDS feature](/ddbj/cds.html) のアミノ酸翻訳チェックを行うツールです。
+[配列ファイル](/ddbj/file-format.html#sequence) と [アノテーションファイル](/ddbj/file-format.html#annotation) の記載を元に、[CDS feature](/ddbj/cds.html) のアミノ酸翻訳チェックを行うツールです。
 
 ## インストール <a name="install"></a>
 

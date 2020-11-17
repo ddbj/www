@@ -101,7 +101,7 @@ the taxonomy database, DDBJ can ask managers of taxonomy database any
 modification based on evidence papers or references from you. In this
 regard, however, in case of different opinions in phylogenetic lineages,
 the claim would be often rejected. When you find misspelled name in
-taxonomy database, do not hesitate to [contact us](/contact-e.html#to-ddbj) to correct it.
+taxonomy database, do not hesitate to [contact us](/contact-ddbj-e.html#to-ddbj) to correct it.
 
 ## "Category" of organism name <a name="deasy"></a>
 

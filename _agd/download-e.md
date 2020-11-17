@@ -149,7 +149,7 @@ The following error is displayed when access from single account exceeds "1". Lo
 
 {::options parse_block_html="true" /}
 <div class="attention red">
-For all hard drive request please contact [AGD team](/contact-e.html) and let us know the permitted datasets you would like to have transferred.
+For all hard drive request please contact [AGD team](/contact-ddbj-e.html) and let us know the permitted datasets you would like to have transferred.
 </div>
 
 <span class="red">If you would like the data in hard disk, please prepare the USB hard disk drive (filesystem should be NTFS, ext3 or ext4) with enough space for the approved dataset. Be sure to virus check the entire filesystem and send us the empty drive.</span>

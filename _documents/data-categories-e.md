@@ -5,11 +5,11 @@ category: documents
 lang: en
 related_pages:
   - title: Prefix Letter List
-    url: /prefix-e.html
+    url: /documents/prefix-e.html
   - title: Accession Number Assigned by INSD
     url: /documents/accessions.html
   - title: Principle of “Hold-Until-Published” data release
-    url: /documents/documents/data-release-policy-e.html
+    url: /documents/data-release-policy-e.html
 ---
 
 
@@ -18,7 +18,7 @@ related_pages:
 ## Acceptable data for DDBJ <a name="accept"></a>
 
 For the request of [Primary
-entry](/ddbj/services/index.html#primary_entry) submission, in principle,
+entry](/ddbj/submission.html#primary_entry) submission, in principle,
 DDBJ accepts any nucleotide sequences that are experimentally determined
 by submitters, but can not accept computational predicted and/or cited
 sequences.

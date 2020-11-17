@@ -15,15 +15,15 @@ lang: ja
 
 ### 2\. BioProject、BioSample と Sequence Read Archive(DRA)に登録 
 
-#### [BioProject](/bioproject/services/index.html) <a name="BioProject"></a>
+#### [BioProject](/bioproject/submission.html) <a name="BioProject"></a>
 
   - 研究プロジェクトの内容
 
-#### [BioSample](/biosample/services/index.html)<a name="_BioSample"></a> ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
+#### [BioSample](/biosample/submission.html)<a name="_BioSample"></a> ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
 
   - 実験データを得るのに使われた生物学的、物理的にユニークなサンプル
 
-#### [DRA](/dra/services/index.html)<a name="_DRA"></a> ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
+#### [DRA](/dra/submission.html)<a name="_DRA"></a> ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
 
   - 生シークエンスリードとアライメント
 
@@ -280,7 +280,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 ### DRA <a name="DRA"></a>
 
-自身のアカウントで登録した DRA submission を一つ選択します。DRA が未登録の場合は [DRA登録サイト](/dra/services/index.html#dra-submission)で DRA を登録します。
+自身のアカウントで登録した DRA submission を一つ選択します。DRA が未登録の場合は [DRA登録サイト](/dra/submission.html#dra-submission)で DRA を登録します。
 
 他のアカウントで登録された DRA を参照したい場合は [GEA チームに連絡](/contact-ddbj.html)します。
 
@@ -290,7 +290,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 ### BioProject <a name="BioProject"></a>
 
-自身のアカウントで登録済みの BioProject を一つ選択します。BioProject が未登録の場合は [BioProject登録サイト](/bioproject/services/index.html#bioproject-submission)でプロジェクトを登録します。
+自身のアカウントで登録済みの BioProject を一つ選択します。BioProject が未登録の場合は [BioProject登録サイト](/bioproject/submission.html#bioproject-submission)でプロジェクトを登録します。
 
 GEA と DRA submission が同じプロジェクトである場合は DRA submission で使用した BioProject を一つ選択します。 GEA と DRA submission が異なるプロジェクトである場合は DRA submission で使用した BioProject ではない BioProject を一つ選択します
 

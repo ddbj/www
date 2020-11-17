@@ -18,5 +18,5 @@ lang: en
 </dl>
 <dl><dt>References</dt>
   <dd><a href="/faq/en/reject-submission-e.html">Is there any case to reject submission to DDBJ?</a></dd>
-  <dd><a href="/documents/documents/data-categories-e.html">Acceptable data for DDBJ</a></dd>
+  <dd><a href="/documents/data-categories-e.html">Acceptable data for DDBJ</a></dd>
 </dl>

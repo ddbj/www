@@ -15,11 +15,11 @@ lang: ja
 
 ### 2\. BioProjectとBioSampleを登録 
 
-#### [BioProject](/bioproject/services/index.html) <a name="BioProject"></a>
+#### [BioProject](/bioproject/submission.html) <a name="BioProject"></a>
 
   - 研究プロジェクトの内容
 
-#### [BioSample](/biosample/services/index.html)<a name="_BioSample"></a> ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
+#### [BioSample](/biosample/submission.html)<a name="_BioSample"></a> ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
 
   - 実験データを得るのに使われた生物学的、物理的にユニークなサンプル
 
@@ -288,7 +288,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 ### BioProject <a name="BioProject"></a>
 
-自身のアカウントで登録済みのBioProjectを一つ選択します。 BioProject が未登録の場合は [BioProject登録サイト](/bioproject/services/index.html#bioproject-submission)でプロジェクトを登録します。
+自身のアカウントで登録済みのBioProjectを一つ選択します。 BioProject が未登録の場合は [BioProject登録サイト](/bioproject/submission.html#bioproject-submission)でプロジェクトを登録します。
 
 他のアカウントで登録された BioProject を参照したい場合は [GEA チームに連絡](/contact-ddbj.html)します。
 
@@ -298,7 +298,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 ### BioSample <a name="BioSample"></a>
 
-自身のアカウントで登録済みの BioSample を選択します。 BioSample が未登録の場合は [BioSample登録サイト](/biosample/services/index.html#biosample-submission)でサンプルを登録します。
+自身のアカウントで登録済みの BioSample を選択します。 BioSample が未登録の場合は [BioSample登録サイト](/biosample/submission.html#biosample-submission)でサンプルを登録します。
 
 他のアカウントで登録された BioSample を参照したい場合は [GEA チームに連絡](/contact-ddbj.html)します。
 

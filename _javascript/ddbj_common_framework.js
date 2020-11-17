@@ -58,7 +58,7 @@
         en: 'Terms'
       },
       uri: {
-        ja: 'https://www.ddbj.nig.ac.jp/service-policy.html',
+        ja: 'https://www.ddbj.nig.ac.jp/policies.html',
         en: 'https://www.ddbj.nig.ac.jp/policies-e.html'
       }
     },
@@ -69,7 +69,7 @@
       },
       uri: {
         ja: 'https://www.ddbj.nig.ac.jp/contact-ddbj.html',
-        en: 'https://www.ddbj.nig.ac.jp/contact-e.html'
+        en: 'https://www.ddbj.nig.ac.jp/contact-ddbj-e.html'
       }
     }
   ];
@@ -535,7 +535,7 @@
       },
       uri: {
         en: 'https://www.ddbj.nig.ac.jp/policies-e.html',
-        ja: 'https://www.ddbj.nig.ac.jp/service-policy.html'
+        ja: 'https://www.ddbj.nig.ac.jp/policies.html'
       }
     },
     {
@@ -549,7 +549,7 @@
       },
       uri: {
         en: 'https://www.ddbj.nig.ac.jp/news/en/index-e.html',
-        ja: 'https://www.ddbj.nig.ac.jp/news/index.html'
+        ja: 'https://www.ddbj.nig.ac.jp/news/ja'
       }
     },
     {
@@ -618,7 +618,7 @@
         ja: 'DDBJ センターに連絡'
       },
       uri: {
-        en: 'https://www.ddbj.nig.ac.jp/contact-e.html',
+        en: 'https://www.ddbj.nig.ac.jp/contact-ddbj-e.html',
         ja: 'https://www.ddbj.nig.ac.jp/contact-ddbj.html'
       }
     }

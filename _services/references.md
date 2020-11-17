@@ -17,9 +17,9 @@ related_pages:
   - title: TXSearch ヘルプ
     url: /services/txsearch.html
   - title: 過去のサービス
-    url: /services/services/services/past-services.html
+    url: /services/past-services.html
   - title: WABI (Web API for Biology)
-    url: /services/services/services/wabi.html
+    url: /services/wabi.html
   - title: WABI BLAST ヘルプ
     url: /services/wabi-blast.html
   - title: WABI ClustalW ヘルプ
@@ -91,7 +91,7 @@ related_pages:
 
 <!-- end list -->
 
-- [DDBJ 活動に関する論文(2009-)](activities/papers.html)
+- [DDBJ 活動に関する論文(2009-)](/activities/index.html)
 - [DDBJ が過去に提供していたサービスについての論文](past-services.html#reference)
 
 

@@ -79,7 +79,7 @@ redistribute the data.
   - For [AMED Genome group sharing Database (AGD)](/agd/index-e.html), licensed under [Data Use (in Japanese)](//gr-sharingdbs.biosciencedbc.jp/agd-data-use) of NBDC Human Data group sharing Database.
   - Mirroring data and services provided from DDBJ are licensed by original providers, respectively.
   - Use policy of each software available through DDBJ is regulated by each software provider.
-  - Use policy of each data povided through [anonymous FTP](/download-e.html) and/or other services at DDBJ is regulated by each document available from the following table.
+  - Use policy of each data povided through [anonymous FTP](/services/index-e.html) and/or other services at DDBJ is regulated by each document available from the following table.
 
 | database                                                                      | FTP | getentry | ARSA | BLAST |
 | ----------------------------------------------------------------------------- | --- | -------- | ---- | ----- |
@@ -101,16 +101,16 @@ The copyrights of the contents published on the websites are the properties of t
 
 ### Data and services
 
-When you kindly describe about using our data and services on academic papers etc., in general, please use [the latest article for DDBJ](/services/services/references-e.html#ddbj) on Nucleic Acids Res. Database issue as a reference.
+When you kindly describe about using our data and services on academic papers etc., in general, please use [the latest article for DDBJ](/services/references-e.html#ddbj) on Nucleic Acids Res. Database issue as a reference.
 
 However, please note the following points.
 
 In case of citation for each sequence record  
-: In general, it is enough to describe [accession number](/documents/accessions.html) (and its version, if necessary) in your publication.  
-If you discuss about the data in detail, please use [primary citation](/ddbj/services/index.html#pcite) for the data as a reference.
+: In general, it is enough to describe [accession number](/documents/accessions-e.html) (and its version, if necessary) in your publication.  
+If you discuss about the data in detail, please use [primary citation](/ddbj/submission-e.html#pcite) for the data as a reference.
 
 In case of citation for each service provided at DDBJ Center  
-: In general, please use [original article for each service](/services/services/references-e.html) as a reference.
+: In general, please use [original article for each service](/services/references-e.html) as a reference.
 
 #### Copyright and limitation of using DDBJ data <a name="copyright"></a>
 
@@ -139,7 +139,7 @@ Director, OKUBO Kousaku
 See also following sites;
 
   - [INSDC policy](/insdc-e.html#policy)
-  - [Rights and Duties of Submitter](/ddbj/services/index.html#right)
+  - [Rights and Duties of Submitter](/ddbj/submission.html#right)
 
 ## Patent, Intellectual Property and Priority<a name="ownership"></a> 
 
@@ -159,15 +159,15 @@ JPO/KIPO/EPO/USPTO, you do not have to submit the sequence to DDBJ.
 ### Notice: Sequence Data Submission Related to Patent Applications
 
 Once released from DDBJ, the sequence data becomes part of the public domain, i.e. "official notice".  
-So, when you submit the sequence related to your patent application to DDBJ, set [hold date](/ddbj/services/index.html#holddate) as required.  
-See also [Principle of “Hold-Until-Published” data release](/documents/documents/data-release-policy-e.html).
+So, when you submit the sequence related to your patent application to DDBJ, set [hold date](/ddbj/submission.html#holddate) as required.  
+See also [Principle of “Hold-Until-Published” data release](/documents/data-release-policy-e.html).
 
 For the impact of DDBJ submission on the patent examination, you should directly confirm to the Patent Office that you applied.  
 DDBJ takes no responsibility for any property or priority issues of the released data.
 
 Since we have to keep the original sequence data from JPO, "as is", if you need to modify or to correct the sequence, you have to submit the sequence to DDBJ newly. i.e. Both old and new ones will be finally open to the public.
 
-If you are to submit sequence data related to your patent application, you should [consult DDBJ](/contact-e.html) before submission.
+If you are to submit sequence data related to your patent application, you should [consult DDBJ](/contact-ddbj-e.html) before submission.
 
 ### Patent Priority and Other Priority <a name="priority"></a>
 

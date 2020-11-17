@@ -13,14 +13,14 @@ DTA から登録された trace データは [NCBI Trace Archive](https://www.nc
 
 {::options parse_block_html="true" /}
 <div class="attention red">
-trace データは [DDBJ Sequence Read Archive](/dra/services/index.html#dra) で受付けています。特に理由がない限り DRA に登録してください。
+trace データは [DDBJ Sequence Read Archive](/dra/submission.html#dra) で受付けています。特に理由がない限り DRA に登録してください。
 </div>
 
 ## メタデータ <a id="metadata"></a> 
 
 必要な項目は [STRATEGY](#STRATEGY) と [TRACE_TYPE_CODE](#TRACE_TYPE_CODE) の組み合わせで決まります。 メタデータは [NCBI Trace Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi?cmd=retrieve&f=retrieve&m=obtain&s=search) で検索することができます。
 
-必須項目は [Validation Table](/files/submission/field_matrix_current.xls) で確認してください。
+必須項目は [Validation Table]({{ site.baseurl }}/assets/files/submission/field_matrix_current.xls) で確認してください。
 
 必須<span class="red">*</span>  
 STRATEGY と TRACE_TYPE_CODE の組み合わせによっては必須 <span class="conditionally_required">*</span>
@@ -1171,7 +1171,7 @@ STRATEGY と TRACE_TYPE_CODE の組み合わせによっては必須 <span class
 <span class="red">ヒトを対象とした全ての研究において DDBJ に送付するデータの由来である個人 (被験者)
 の情報・プライバシーは，適用されるべき法律，規定，登録者が所属している機関の方針に従い，登録者の責任において保護されている必要があります。  
 原則として，被験者を直接特定し得る参照情報は，登録データから取り除いてください。  
-ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/service-policy.html#human)をご覧ください。</span>
+ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#human)をご覧ください。</span>
 </div>
 
 ### TI 番号 <a name="ti-number"></a>
@@ -1198,7 +1198,7 @@ TOP_DIRECTORY/traces/FLJ/FLJA1U0002.scf
 TOP_DIRECTORY/traces/FLJ/FLJA1U0003.scf
 ```
 
-[メタデータ](#metadata)ファイルは XML かタブ区切りテキストファイル形式にします。 STRATEGY と TRACE_TYPE_CODE の組み合わせで必須になるメタデータ項目一覧は [Validation Table](/files/submission/field_matrix_current.xls) をご覧ください。どちらの形式のメタデータでも最初に共通項目のセクションを含めることができます。 このセクションには各 trace に共通する項目を記載します。
+[メタデータ](#metadata)ファイルは XML かタブ区切りテキストファイル形式にします。 STRATEGY と TRACE_TYPE_CODE の組み合わせで必須になるメタデータ項目一覧は [Validation Table]({{ site.baseurl }}/assets/files/submission/field_matrix_current.xls) をご覧ください。どちらの形式のメタデータでも最初に共通項目のセクションを含めることができます。 このセクションには各 trace に共通する項目を記載します。
 
 以下は TRACEINFO メタデータファイルの例です。
 
@@ -1258,7 +1258,7 @@ F-3NB691000033  3NB691000033    3NB691  3NB691000033    ./traces/F-3NB691000033.
 
 ### 登録用ファイルのアップロード <a name="upload-submission-files"></a>
 
-[DTA チームに連絡](/contact-ddbj.html)し，登録用ディレクトリの作成を依頼します。 [マニュアル](/dra/services/index.html#upload-sequence-data)に従いファイルを SCP で転送します。
+[DTA チームに連絡](/contact-ddbj.html)し，登録用ディレクトリの作成を依頼します。 [マニュアル](/dra/submission.html#upload-sequence-data)に従いファイルを SCP で転送します。
 
 #### 登録ディレクトリの例 <a name="登録ディレクトリの例">
 

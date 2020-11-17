@@ -1,0 +1,27 @@
+"Investigation Title"	"Identification of cyclic genes of the mouse segmentation clock"						
+"Experimental Design"	time_series_design	development_or_differentiation_design	co_expression_design				
+"Experimental Factor Name"	ORGANISMPART	INDIVIDUAL	TIME				
+"Experimental Factor Type"	organism_part	individual	time				
+							
+"Person Last Name"	"Dequﾂant"						
+"Person First Name"	Mary-Lee						
+"Person Mid Initial"							
+"Person Affiliation"	"Stowers Institute For Medical Research"						
+"Person Roles"	submitter						
+							
+"Quality Control Types"	biological_replicate						
+"Public Release Date"	"2006-10-30"						
+							
+Comment[ArrayExpressSubmissionDate]	"2006-10-30"						
+							
+"Publication Author List"	"Mary-Lee Dequﾂant, Earl Glynn, Karin Gaudenz, Matthias Wahl, Jie Chen, Arcady Mushegian, Olivier Pourquiﾂ"						
+"Publication Title"	"A complex oscillating network of signaling genes underlies the mouse segmentation clock"						
+"Experiment Description"	"A microarray time series was generated to identify cyclic genes of the segmentation clock in the mouse. The right posterior half presomitic mesoderms (PSM) from 17 mouse embryos were dissected while the contralateral side of the embryo containing the left PSM was immediately fixed to be analyzed by in situ hybridization using a Lfng probe to order the samples along the segmentation clock oscillation cycle. Probes were produced from RNA extracted from the 17 dissected posterior half PSMs using a two-step amplification protocol and were hybridized to Affymetrix GeneChip MOE430A. The reproducibility of the amplification procedure was initially assessed by comparing array data generated from the right and the left posterior PSM from the same embryo. Because of the symmetry of the paraxial mesoderm along the left-right axis, left and right samples are expected to show overtly similar gene expression. RNA was amplified from three such sample pairs (1, a and b; 2, a and b; 3, a and b) and hybridized on Murine Genome U74Av2 array (MG-U74Av2) "						
+							
+"Protocol Name"	P-MLD6-1	P-MLD6-2	P-MLD6-3	P-MLD6-4	P-MLD6-5	P-MLD6-6	P-MLD6-7
+"Protocol Type"	specified_biomaterial_action	nucleic_acid_extraction	labeling	hybridization	image_acquisition	feature_extraction	bioassay_data_transformation
+"Protocol Description"	"CD-1 mouse embryos (9.0 days post-coitus [dpc]) were dissected in cold Tyrode's solution prepared in RNAse-free conditions. Mouse embryos from each litter were dissected one by one, while the rest of the embryos were kept on ice. No more than three embryos per litter were dissected in order to limit the time between removal of the uterus and embryo dissection to reduce the risk of RNA degradation. The time spent for dissection per embryo was limited to 15-20 min. After tail bud removal, the right posterior side was cut out and treated with dispase (2 mg/mL) for 1 min prior to dissecting the posterior half presomitic mesoderm (PSM). The posterior half PSM was dissected using tungsten needles to remove the surrounding structures (e.g., the ectoderm, neural tube, endoderm and lateral plate) and stored in Trizol (Invitrogen) at -80C  for RNA extraction."	"Total RNA was isolated from each dissected posterior half PSM (containing around 5,000 cells) using Trizol."	"Amplification of the samples was performed as described in GeneChip Eukaryotic small sample target labeling Assay version II. Total RNA from each sample was used to generate first-strand cDNA by using a T7-linked oligo (dT) primer. After second-strand synthesis, in vitro transcription was performed with unlabelled ribonucleotides yielding 1.2 to 2.4 ug of cRNA. Using 400ng of cRNA from the first round of amplification, a second round of cDNA synthesis was then performed followed by in vitro transcription with biotinylated UTP and CTP (Enzo BioArray high-yield RNA transcript labeling kit) yielding 65 to 93 ug of biotinylated cRNA. RNA quality was confirmed after each round of amplification by A260/A280 ratio (> 2.0) and Bioanalyzer analysis (mean size transcripts 2Kb after 1st round and 1Kb after 2nd round). The biotin-labeled cRNA samples were fragmented to sizes < 200bp (checked by Bioanalyzer)."	"Arrays were hybridized according to the manufacturer's instructions. Each chip was hybridized to 13 ug fragmented cRNA."	"Arrays were scanned with a GeneArray scanner (Agilent G2500A) at the Microarray Core Facility of the Stowers Institute for Medical Research"	"The array readout was processed using Affymetrix Microarray Suite (MAS) 5.0"	"Scaling normalisation (target signal 150) using Affymetrix MAS 5.0 was done for the .CHP files submitted to this database"
+"Protocol Parameters"							
+"Protocol Software"							
+							
+"SDRF File"	E-TABM-163_sdrf.txt						

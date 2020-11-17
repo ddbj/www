@@ -45,7 +45,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn101220"><a href="#wn101220">Sequin によるデータ登録受付終了のお知らせ</a></h2>
   <div class="news_date">2010年12月20日</div>
-  <div class="news_content">DDBJ ではこれまで， SAKURA・大量登録システム(MSS)・入力支援ソフト Sequin による塩基配列データの登録を受け付けてきましたが，2011年1月末日をもちまして，Sequin による受付を終了することになりました。DDBJ への登録には，SAKURA，あるいは大量登録システム(MSS) をご利用頂くことにより，Sequin での登録に比べ，はるかに迅速かつ正確な登録が可能です。今後はこちらをご利用下さい。 <strong>（参考）</strong> <a href="/ddbj/services/index.html#flow">塩基配列の登録</a><br><br>(A) Web 経由の塩基配列登録システム<a href="http://sakura.ddbj.nig.ac.jp/top-j.html" target="_blank"> SAKURA</a> を利用<br><br>(B) <a href="/ddbj/mss-e.html">大量登録システム(MSS)</a> を利用 なお，止むを得ない理由でSequin での登録をご希望の場合には，お手数ですが GenBank へご登録下さい。<strong>（参考）</strong><a href="http://www.ncbi.nlm.nih.gov/Sequin/" target="_blank">http://www.ncbi.nlm.nih.gov/Sequin/</a> <br><br>ご理解とご協力をよろしくお願いいたします。</div>
+  <div class="news_content">DDBJ ではこれまで， SAKURA・大量登録システム(MSS)・入力支援ソフト Sequin による塩基配列データの登録を受け付けてきましたが，2011年1月末日をもちまして，Sequin による受付を終了することになりました。DDBJ への登録には，SAKURA，あるいは大量登録システム(MSS) をご利用頂くことにより，Sequin での登録に比べ，はるかに迅速かつ正確な登録が可能です。今後はこちらをご利用下さい。 <strong>（参考）</strong> <a href="/ddbj/submission.html#flow">塩基配列の登録</a><br><br>(A) Web 経由の塩基配列登録システム<a href="http://sakura.ddbj.nig.ac.jp/top-j.html" target="_blank"> SAKURA</a> を利用<br><br>(B) <a href="/ddbj/mss-e.html">大量登録システム(MSS)</a> を利用 なお，止むを得ない理由でSequin での登録をご希望の場合には，お手数ですが GenBank へご登録下さい。<strong>（参考）</strong><a href="http://www.ncbi.nlm.nih.gov/Sequin/" target="_blank">http://www.ncbi.nlm.nih.gov/Sequin/</a> <br><br>ご理解とご協力をよろしくお願いいたします。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: メンテナンス</span>
@@ -270,7 +270,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn100922"><a href="#wn100922">DDBJ リリース 83.0 完成 2010.9.16</a></h2>
   <div class="news_date">2010年09月22日</div>
-  <div class="news_content"><dl><dd><ul><li><strong>エントリ数：</strong> 124,079,491   <strong>塩基数：</strong> 117,728,717,442</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.83.txt">DDBJ Release Note(Rel.83)</a></li><li><a href="/latest-releases.html">現在公開されているリリースの情報</a></li><li>FASTA 形式に変更をおこないました。（<a href="/ddbj%E3%83%BBdad-%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%AA%E3%82%89%E3%81%B3%E3%81%AB%E6%96%B0%E7%9D%80%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE-fasta-%E5%BD%A2%E5%BC%8F%E5%A4%89%E6%9B%B4%E3%80%80/">DDBJ・DAD リリースならびに新着データの FASTA 形式変更</a>）。</li><li>今リリース後に，<a href="/activities/index.html#2010">2010年5月に開催された第23回国際実務者会議での決定</a>に基づいて，<a href="/ddbj/full_index-e.html">DDBJ/EMBL/GenBank Feature Table: Definition</a> が改訂される予定です。</li></ul></dd></dl></div>
+  <div class="news_content"><dl><dd><ul><li><strong>エントリ数：</strong> 124,079,491   <strong>塩基数：</strong> 117,728,717,442</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.83.txt">DDBJ Release Note(Rel.83)</a></li><li><a href="/latest-releases.html">現在公開されているリリースの情報</a></li><li>FASTA 形式に変更をおこないました。（<a href="/ddbj%E3%83%BBdad-%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%AA%E3%82%89%E3%81%B3%E3%81%AB%E6%96%B0%E7%9D%80%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE-fasta-%E5%BD%A2%E5%BC%8F%E5%A4%89%E6%9B%B4%E3%80%80/">DDBJ・DAD リリースならびに新着データの FASTA 形式変更</a>）。</li><li>今リリース後に，<a href="/activities/icm/2010">2010年5月に開催された第23回国際実務者会議での決定</a>に基づいて，<a href="/ddbj/feature-table-e.html">DDBJ/EMBL/GenBank Feature Table: Definition</a> が改訂される予定です。</li></ul></dd></dl></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -433,7 +433,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn100402"><a href="#wn100402">相同性検索の RESULT RETRIEVER における解析結果表示の不具合のお詫び</a></h2>
   <div class="news_date">2010年04月02日</div>
-  <div class="news_content"><dl><dd>DDBJ の<a href="/searches.html">相同性検索</a>の RESULT RETRIEVER にて，以下の時間帯に解析結果が表示出来ない状態となっていたことが判明いたしました。<ul><li><strong>時間：</strong> 2010年04月01日 9:30 - 2010年04月02日 12:00(JST)</li><li><strong>状況：</strong> RESULT RETRIEVER （結果を E-mail で受け取る指定にした場合の結果の閲覧画面）にて，解析結果が表示されない</li><li><strong>原因：</strong> 相同性検索サービスの一部終了作業の影響による</li><li><strong>対応：</strong> RESULT RETRIEVER にて解析結果が表示出来る状態に戻した</li></ul></dd><dd>ユーザの皆様にご迷惑をお掛けいたしました事を深くお詫び申し上げます。皆様のご理解とご協力をお願いいたします。 </dd></dl></div>
+  <div class="news_content"><dl><dd>DDBJ の<a href="/services/index.html">相同性検索</a>の RESULT RETRIEVER にて，以下の時間帯に解析結果が表示出来ない状態となっていたことが判明いたしました。<ul><li><strong>時間：</strong> 2010年04月01日 9:30 - 2010年04月02日 12:00(JST)</li><li><strong>状況：</strong> RESULT RETRIEVER （結果を E-mail で受け取る指定にした場合の結果の閲覧画面）にて，解析結果が表示されない</li><li><strong>原因：</strong> 相同性検索サービスの一部終了作業の影響による</li><li><strong>対応：</strong> RESULT RETRIEVER にて解析結果が表示出来る状態に戻した</li></ul></dd><dd>ユーザの皆様にご迷惑をお掛けいたしました事を深くお詫び申し上げます。皆様のご理解とご協力をお願いいたします。 </dd></dl></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: メンテナンス</span>
@@ -469,7 +469,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn100326"><a href="#wn100326">DDBJ リリース 81.0 完成</a></h2>
   <div class="news_date">2010年03月26日</div>
-  <div class="news_content"><dl><dd><ul><li><strong>エントリ数：</strong> 116,720,237   <strong>塩基数：</strong> 112,394,932,676</li><li>今リリースより，TPA はリリースに含めません。詳細は，<a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.81.txt">DDBJ Release Note</a> をご覧下さい。</li><li><a href="/latest-releases.html">現在公開されているリリースの情報</a></li></ul><strong>次回以降のリリースにおける予定</strong><ul><li>DDBJ リリース83.0は，システム開発のため公開日を3ヶ月延伸し，2010年12月に公開です。このため2010年は，リリース公開が3回になる予定です。</li><li><a href="/ddbj/full_index-e.html">Feature Table Definition(FT-Doc)</a> は，2010年4月改訂予定です。</li></ul></dd></dl></div>
+  <div class="news_content"><dl><dd><ul><li><strong>エントリ数：</strong> 116,720,237   <strong>塩基数：</strong> 112,394,932,676</li><li>今リリースより，TPA はリリースに含めません。詳細は，<a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.81.txt">DDBJ Release Note</a> をご覧下さい。</li><li><a href="/latest-releases.html">現在公開されているリリースの情報</a></li></ul><strong>次回以降のリリースにおける予定</strong><ul><li>DDBJ リリース83.0は，システム開発のため公開日を3ヶ月延伸し，2010年12月に公開です。このため2010年は，リリース公開が3回になる予定です。</li><li><a href="/ddbj/feature-table-e.html">Feature Table Definition(FT-Doc)</a> は，2010年4月改訂予定です。</li></ul></dd></dl></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -604,7 +604,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn100210"><a href="#wn100210">相同性検索ならびに ClustalW サービスの一時停止</a></h2>
   <div class="news_date">2010年02月10日</div>
-  <div class="news_content"><dl><dd>DDBJ が WWW で提供している<a href="/searches.html" target="_blank">相同性検索ならびに ClustalW</a> を下記の日程でサービスを停止します。<ul><li><strong>停止日時：</strong> 2010年2月16日（火）9:00 - 17:00 （サービス再開次第，HP にてお知らせします）</li><li><strong>対象サービス：</strong> 相同性検索（FASTA, BLAST, PSI-BLAST, SSEARCH, HMMPFAM），ClustalW</li><li><strong>休止理由：</strong> 保守作業のため</li></ul></dd><dd>ご迷惑をお掛けいたしますが，ご理解とご協力をお願いいたします。 </dd><dd><span class="red">保守作業は終了しました。ご協力ありがとうございました。（2月16日17時00分）</span> </dd></dl></div>
+  <div class="news_content"><dl><dd>DDBJ が WWW で提供している<a href="/services/index.html" target="_blank">相同性検索ならびに ClustalW</a> を下記の日程でサービスを停止します。<ul><li><strong>停止日時：</strong> 2010年2月16日（火）9:00 - 17:00 （サービス再開次第，HP にてお知らせします）</li><li><strong>対象サービス：</strong> 相同性検索（FASTA, BLAST, PSI-BLAST, SSEARCH, HMMPFAM），ClustalW</li><li><strong>休止理由：</strong> 保守作業のため</li></ul></dd><dd>ご迷惑をお掛けいたしますが，ご理解とご協力をお願いいたします。 </dd><dd><span class="red">保守作業は終了しました。ご協力ありがとうございました。（2月16日17時00分）</span> </dd></dl></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: メンテナンス</span>
@@ -694,7 +694,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn100104"><a href="#wn100104">DDBJ/EMBL/GenBank Feature Table Definition 改訂</a></h2>
   <div class="news_date">2010年01月04日</div>
-  <div class="news_content"><dl><dd><a href="/ddbj/full_index-e.html">Feature Table Definition(FT-Doc)</a> は， DDBJ/EMBL-Bank/GenBank 国際塩基配列データベース構築のために，DDBJ, EMBL-Bank, GenBank が 三者間で定めた共通のアノテーション規範です。毎年5月に開催される<a href="/activities/index.html">国際実務者会議</a>での決定を受けて改訂が行われ，公開データベースにもその改訂が反映されています。<a href="/activities/index.html#2009">第22会国際実務者会議</a>（2009年5月に米国 NCBI で開催）での決定事項を基に，2009年12月にFeature Table Definition が改訂されました。 </dd></dl> <a style="text-decoration:none;" href="http://www.dimensionscs.com/www/suffolk-law-campus-cruiser.com/" title="suffolk law campus cruiser">suffolk law campus cruiser</a> .</div>
+  <div class="news_content"><dl><dd><a href="/ddbj/feature-table-e.html">Feature Table Definition(FT-Doc)</a> は， DDBJ/EMBL-Bank/GenBank 国際塩基配列データベース構築のために，DDBJ, EMBL-Bank, GenBank が 三者間で定めた共通のアノテーション規範です。毎年5月に開催される<a href="/activities/index.html">国際実務者会議</a>での決定を受けて改訂が行われ，公開データベースにもその改訂が反映されています。<a href="/activities/icm/2009">第22会国際実務者会議</a>（2009年5月に米国 NCBI で開催）での決定事項を基に，2009年12月にFeature Table Definition が改訂されました。 </dd></dl> <a style="text-decoration:none;" href="http://www.dimensionscs.com/www/suffolk-law-campus-cruiser.com/" title="suffolk law campus cruiser">suffolk law campus cruiser</a> .</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>

@@ -66,12 +66,12 @@ Notes on the EST submission
 
 Aspects of EST
 
-  - In principle, no [feature](#FeaturesB) information is provided
+  - In principle, no [feature](/ddbj/flat-file-e#FeaturesB) information is provided
     except source.
 
-  - [LOCUS](#LocusA) line provides the division name, "EST".
+  - [LOCUS](/ddbj/flat-file-e#LocusB) line provides the division name, "EST".
 
-  - [KEYWORDS](#KeywordsA) line provides the keywords name, "EST" and
+  - [KEYWORDS](/ddbj/flat-file-e#KeywordsB) line provides the keywords name, "EST" and
     one of following three terms.
     
     Since following controlled vocabularies indicate strategies of
@@ -87,7 +87,7 @@ Aspects of EST
 
   - In the case of 3' EST, to distinguish whether your sequences are
     corresponding to anti-sense or sense strand, please describe either
-    of following two [COMMENT](#CommentA)s.
+    of following two [COMMENT](/ddbj/flat-file-e#CommentB)s.
     
 
     | For anti-sense strand | 3'-EST sequences are presented as anti-sense strand. |
@@ -95,43 +95,43 @@ Aspects of EST
     
 <!-- end list -->
 
-<pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">HY000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">300 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">EST</a> <a id="ModificationDateA" href="#ModificationDateB">15-OCT-2008</a>
-<a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Mus musculus mRNA, clone: 2310009A01, 3' end sequence, expressed 
+<pre><code><a id="LocusA" href="/ddbj/flat-file-e#LocusB">LOCUS</a>       <a id="LocusNameA" href="/ddbj/flat-file-e#LocusNameB">HY000000</a>              <a id="SequenceLengthA" href="/ddbj/flat-file-e#SequenceLengthB">300 bp</a>    <a id="MoleculeTypeA" href="/ddbj/flat-file-e#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="/ddbj/flat-file-e#MoleculeFormB">linear</a>   <a id="DivisionA" href="/ddbj/flat-file-e#DivisionB">EST</a> <a id="ModificationDateA" href="/ddbj/flat-file-e#ModificationDateB">15-OCT-2008</a>
+<a id="DefinitionA" href="/ddbj/flat-file-e#DefinitionB">DEFINITION</a>  Mus musculus mRNA, clone: 2310009A01, 3' end sequence, expressed 
             in tongue.
-<a id="AccessionA" href="#AccessionB">ACCESSION</a>   HY000000
-<a id="VersionA" href="#VersionB">VERSION</a>     HY000000.1
-<a id="KeywordsA" href="#KeywordsB">KEYWORDS</a>    EST; 3'-end sequence (3'-EST).
-<a id="SourceA" href="#SourceB">SOURCE</a>      Mus musculus (house mouse)
-  <a id="OrganismA" href="#OrganismB">ORGANISM</a>  Mus musculus
+<a id="AccessionA" href="/ddbj/flat-file-e#AccessionB">ACCESSION</a>   HY000000
+<a id="VersionA" href="/ddbj/flat-file-e#VersionB">VERSION</a>     HY000000.1
+<a id="KeywordsA" href="/ddbj/flat-file-e#KeywordsB">KEYWORDS</a>    EST; 3'-end sequence (3'-EST).
+<a id="SourceA" href="/ddbj/flat-file-e#SourceB">SOURCE</a>      Mus musculus (house mouse)
+  <a id="OrganismA" href="/ddbj/flat-file-e#OrganismB">ORGANISM</a>  Mus musculus
             Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
             Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia;
             Sciurognathi; Muroidea; Muridae; Murinae; Mus; Mus.
-<a id="Reference1A" href="#Reference1B">REFERENCE   1</a>  (bases 1 to 300)
-  <a id="AuthorsA" href="#AuthorsB">AUTHORS</a>   Mishima,H., Yamada,T. and Liu,G.Q.
-  <a id="TitleA" href="#TitleB">TITLE</a>     Direct Submission
-  <a id="JournalA" href="#JournalB">JOURNAL</a>   Submitted (30-SEP-2008) to the DDBJ/EMBL/GenBank databases.
+<a id="Reference1A" href="/ddbj/flat-file-e#Reference1B">REFERENCE   1</a>  (bases 1 to 300)
+  <a id="AuthorsA" href="/ddbj/flat-file-e#AuthorsB">AUTHORS</a>   Mishima,H., Yamada,T. and Liu,G.Q.
+  <a id="TitleA" href="/ddbj/flat-file-e#TitleB">TITLE</a>     Direct Submission
+  <a id="JournalA" href="/ddbj/flat-file-e#JournalB">JOURNAL</a>   Submitted (30-SEP-2008) to the DDBJ/EMBL/GenBank databases.
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
-<a id="Reference2A" href="#Reference2B">REFERENCE   2</a>
+<a id="Reference2A" href="/ddbj/flat-file-e#Reference2B">REFERENCE   2</a>
   AUTHORS   Mishima,H., Yamada,T., Park,C.S. and Liu,G.Q.
   TITLE     Mus musculus EST
   JOURNAL   Unpublished (2008)
-<a id="CommentA" href="#CommentB">COMMENT</a>             3'-EST sequences are presented as anti-sense strand.
-<a id="FeaturesA" href="#FeaturesB">FEATURES</a>             Location/Qualifiers
-     <a id="FeaturesSourceA" href="#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..300</a>
-                     /<a href="/ddbj/qualifiers.html#clone">clone</a>="2310009A01"
-                     /<a href="/ddbj/qualifiers.html#clone_lib">clone_lib</a>="full-length enriched mouse cDNA library A01"
-                     /<a href="/ddbj/qualifiers.html#db_xref">db_xref</a>="taxon:10090"
-                     /<a href="/ddbj/qualifiers.html#dev_stage">dev_stage</a>="adult"
-                     /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="mRNA"
-                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Mus musculus"
-                     /<a href="/ddbj/qualifiers.html#sex">sex</a>="male"
-                     /<a href="/ddbj/qualifiers.html#tissue_type">tissue_type</a>="tongue"
+<a id="CommentA" href="/ddbj/flat-file-e#CommentB">COMMENT</a>             3'-EST sequences are presented as anti-sense strand.
+<a id="FeaturesA" href="/ddbj/flat-file-e#FeaturesB">FEATURES</a>             Location/Qualifiers
+     <a id="FeaturesSourceA" href="/ddbj/flat-file-e#FeaturesSourceB">source</a>          <a href="/ddbj/location-e.html">1..300</a>
+                     /<a href="/ddbj/qualifiers-e.html#clone">clone</a>="2310009A01"
+                     /<a href="/ddbj/qualifiers-e.html#clone_lib">clone_lib</a>="full-length enriched mouse cDNA library A01"
+                     /<a href="/ddbj/qualifiers-e.html#db_xref">db_xref</a>="taxon:10090"
+                     /<a href="/ddbj/qualifiers-e.html#dev_stage">dev_stage</a>="adult"
+                     /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="mRNA"
+                     /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Mus musculus"
+                     /<a href="/ddbj/qualifiers-e.html#sex">sex</a>="male"
+                     /<a href="/ddbj/qualifiers-e.html#tissue_type">tissue_type</a>="tongue"
 <a id="BaseCountA" href="#BaseCountB">BASE COUNT</a>          86 a          90 c          73 g           51 t
 <a id="OriginA" href="#OriginB">ORIGIN</a>
         1 attaatataa gctaaatatg tttttcaata tatattgata atagaatatc aacaatttgg
         :
         -- The rest of nucleotide sequence is omitted --
         :
-<a id="EndA" href="#EndB">//</a></code></pre>
+<a id="EndA" href="/ddbj/flat-file-e#EndB">//</a></code></pre>

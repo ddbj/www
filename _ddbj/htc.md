@@ -70,30 +70,30 @@ HTC/full length insert cDNA の特徴
 
 <!-- end list -->
 
-<pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">AK000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">1450 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">HTC</a> <a id="ModificationDateA" href="#ModificationDateB">15-OCT-2008</a>
-<a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Mus musculus mRNA for hypothetical protein, complete cds, clone: 
+<pre><code><a id="LocusA" href="/ddbj/flat-file#LocusB">LOCUS</a>       <a id="LocusNameA" href="/ddbj/flat-file#LocusNameB">AK000000</a>              <a id="SequenceLengthA" href="/ddbj/flat-file#SequenceLengthB">1450 bp</a>    <a id="MoleculeTypeA" href="/ddbj/flat-file#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="/ddbj/flat-file#MoleculeFormB">linear</a>   <a id="DivisionA" href="/ddbj/flat-file#DivisionB">HTC</a> <a id="ModificationDateA" href="/ddbj/flat-file#ModificationDateB">15-OCT-2008</a>
+<a id="DefinitionA" href="/ddbj/flat-file#DefinitionB">DEFINITION</a>  Mus musculus mRNA for hypothetical protein, complete cds, clone: 
             2310009A01, full insert sequence. 
-<a id="AccessionA" href="#AccessionB">ACCESSION</a>   AK000000
-<a id="VersionA" href="#VersionB">VERSION</a>     AK000000.1
-<a id="KeywordsA" href="#KeywordsB">KEYWORDS</a>    HTC; HTC_FLI; CAP trapper.
-<a id="SourceA" href="#SourceB">SOURCE</a>      Mus musculus (house mouse)
-  <a id="OrganismA" href="#OrganismB">ORGANISM</a>  Mus musculus
+<a id="AccessionA" href="/ddbj/flat-file#AccessionB">ACCESSION</a>   AK000000
+<a id="VersionA" href="/ddbj/flat-file#VersionB">VERSION</a>     AK000000.1
+<a id="KeywordsA" href="/ddbj/flat-file#KeywordsB">KEYWORDS</a>    HTC; HTC_FLI; CAP trapper.
+<a id="SourceA" href="/ddbj/flat-file#SourceB">SOURCE</a>      Mus musculus (house mouse)
+  <a id="OrganismA" href="/ddbj/flat-file#OrganismB">ORGANISM</a>  Mus musculus
             Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
             Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia;
             Sciurognathi; Muroidea; Muridae; Murinae; Mus; Mus.
-<a id="Reference1A" href="#Reference1B">REFERENCE   1</a>  (bases 1 to 1450)
-  <a id="AuthorsA" href="#AuthorsB">AUTHORS</a>   Mishima,H., Yamada,T. and Liu,G.Q.
-  <a id="TitleA" href="#TitleB">TITLE</a>     Direct Submission
-  <a id="JournalA" href="#JournalB">JOURNAL</a>   Submitted (30-SEP-2008) to the DDBJ/EMBL/GenBank databases.
+<a id="Reference1A" href="/ddbj/flat-file#Reference1B">REFERENCE   1</a>  (bases 1 to 1450)
+  <a id="AuthorsA" href="/ddbj/flat-file#AuthorsB">AUTHORS</a>   Mishima,H., Yamada,T. and Liu,G.Q.
+  <a id="TitleA" href="/ddbj/flat-file#TitleB">TITLE</a>     Direct Submission
+  <a id="JournalA" href="/ddbj/flat-file#JournalB">JOURNAL</a>   Submitted (30-SEP-2008) to the DDBJ/EMBL/GenBank databases.
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
-<a id="Reference2A" href="#Reference2B">REFERENCE   2</a>
+<a id="Reference2A" href="/ddbj/flat-file#Reference2B">REFERENCE   2</a>
   AUTHORS   Mishima,H., Yamada,T., Park,C.S. and Liu,G.Q.
   TITLE     Mus musculus full-length enriched cDNA
   JOURNAL   Unpublished (2008)
-<a id="FeaturesA" href="#FeaturesB">FEATURES</a>             Location/Qualifiers
-     <a id="FeaturesSourceA" href="#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..1450</a>
+<a id="FeaturesA" href="/ddbj/flat-file#FeaturesB">FEATURES</a>             Location/Qualifiers
+     <a id="FeaturesSourceA" href="/ddbj/flat-file#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..1450</a>
                      /<a href="/ddbj/qualifiers.html#clone">clone</a>="2310009A01"
                      /<a href="/ddbj/qualifiers.html#clone_lib">clone_lib</a>="full-length enriched mouse cDNA library A01"
                      /<a href="/ddbj/qualifiers.html#db_xref">db_xref</a>="taxon:10090"
@@ -114,4 +114,4 @@ HTC/full length insert cDNA の特徴
         :
         -- The rest of nucleotide sequence is omitted --
         :
-<a id="EndA" href="#EndB">//</a></code></pre>
+<a id="EndA" href="/ddbj/flat-file#EndB">//</a></code></pre>

@@ -90,7 +90,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn141216"><a href="#wn141216">TXSearch のURL 変更</a></h2>
   <div class="news_date">2014年12月16日</div>
-  <div class="news_content">DDBJでは，国際塩基配列データベース(<a href="/insdc.html#insd">INSD</a>) にデータを登録する際に生物分類名を確認する等のために，taxonomy database を検索するためのシステム TXSearch を公開しています。<br>このたび，TXSearch のインターフェースならびに URL の変更を行いました。<br>旧URLは　2014年12月31日以降はご利用できません。ブックマーク等されている方は早めの変更をお願いいたします。<span class="icon_square"><a href="http://ddbj.nig.ac.jp/tx_search/?lang=ja">http://ddbj.nig.ac.jp/tx_search/</a></span><br><img src="{{ site.baseurl }}/assets/images/news/txhelp01_top-j.gif" alt="txhelp01_top-j" width="400" height="290" class="alignnone size-full wp-image-40425"><br>新画面の使用方法については，<a href="/services/txsearch.html">TXSearch ヘルプ</a> をご覧ください。DDBJ では，今後さらに，皆様からのご意見をもとにして，より使やすい検索システムを目指して改善を進めていきます。ご意見やご要望がありましたら　「<a href="/address.html">お問い合わせ</a>」ページの「ウェブサービス(getentry, ARSA, BLAST, ClustalWなど) よりご連絡ください。</div>
+  <div class="news_content">DDBJでは，国際塩基配列データベース(<a href="/insdc.html#insd">INSD</a>) にデータを登録する際に生物分類名を確認する等のために，taxonomy database を検索するためのシステム TXSearch を公開しています。<br>このたび，TXSearch のインターフェースならびに URL の変更を行いました。<br>旧URLは　2014年12月31日以降はご利用できません。ブックマーク等されている方は早めの変更をお願いいたします。<span class="icon_square"><a href="http://ddbj.nig.ac.jp/tx_search/?lang=ja">http://ddbj.nig.ac.jp/tx_search/</a></span><br><img src="{{ site.baseurl }}/assets/images/news/txhelp01_top-j.gif" alt="txhelp01_top-j" width="400" height="290" class="alignnone size-full wp-image-40425"><br>新画面の使用方法については，<a href="/services/txsearch.html">TXSearch ヘルプ</a> をご覧ください。DDBJ では，今後さらに，皆様からのご意見をもとにして，より使やすい検索システムを目指して改善を進めていきます。ご意見やご要望がありましたら　「<a href="/ddbj-access.html">お問い合わせ</a>」ページの「ウェブサービス(getentry, ARSA, BLAST, ClustalWなど) よりご連絡ください。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -117,7 +117,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn141121"><a href="#wn141121">Feature Table Definition 改訂</a></h2>
   <div class="news_date">2014年11月21日</div>
-  <div class="news_content"><p><a href="/ddbj/full_index-e.html">The DDBJ/ENA/GenBank Feature Table Definition</a> は、DDBJ, ENA, GenBank が三者間で定めた feature 記載によるアノテーションの共通規範です。<br><a href="/ddbj/full_index-e.html">Feature Table Definition</a> は 2014年11月に version 10.4 に改訂されました。</p></div>
+  <div class="news_content"><p><a href="/ddbj/feature-table-e.html">The DDBJ/ENA/GenBank Feature Table Definition</a> は、DDBJ, ENA, GenBank が三者間で定めた feature 記載によるアノテーションの共通規範です。<br><a href="/ddbj/feature-table-e.html">Feature Table Definition</a> は 2014年11月に version 10.4 に改訂されました。</p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -153,7 +153,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="2014-11-12"><a href="#2014-11-12">Project data type を複数選択できるようになりました</a></h2>
   <div class="news_date">2014年11月12日</div>
-  <div class="news_content">BioProject で <a href="/bioproject/services/index.html#Project_data_type">Project data type</a> を複数選択できるようになりました。Genome Sequencing と Transcriptome or Gene Expression を選択し，ゲノムシークエンシングと遺伝子発現解析といった異なる研究を一つのプロジェクトにまとめることができます。</div>
+  <div class="news_content">BioProject で <a href="/bioproject/submission.html#Project_data_type">Project data type</a> を複数選択できるようになりました。Genome Sequencing と Transcriptome or Gene Expression を選択し，ゲノムシークエンシングと遺伝子発現解析といった異なる研究を一つのプロジェクトにまとめることができます。</div>
   <div class="news_category">
     <span class="service">サービス: bioproject</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -333,7 +333,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn140904"><a href="#wn140904">第27回国際実務者会議 報告</a></h2>
   <div class="news_date">2014年09月04日</div>
-  <div class="news_content"><p>DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a>, <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a> で構成される <a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a> は、その共同事業の運営・推進を図るために、国際実務者会議を年１回開催しています。<br>2014年は 5月20日-22日に <a href="/news/ja/wn140520.html">DDBJ で開催</a>され、<a href="/index.html" target="_blank">DDBJ</a>、<a href="http://www.ebi.ac.uk/ena/" target="_blank">ENA</a>、<a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>、Sequence Read Archive (SRA)、Trace Archive を運営する上での実務的な問題を討論しました。<br>会議の報告は <a href="/activities/index.html#2014">こちら</a> をご覧ください。</p></div>
+  <div class="news_content"><p>DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a>, <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a> で構成される <a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a> は、その共同事業の運営・推進を図るために、国際実務者会議を年１回開催しています。<br>2014年は 5月20日-22日に <a href="/news/ja/wn140520.html">DDBJ で開催</a>され、<a href="/index.html" target="_blank">DDBJ</a>、<a href="http://www.ebi.ac.uk/ena/" target="_blank">ENA</a>、<a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>、Sequence Read Archive (SRA)、Trace Archive を運営する上での実務的な問題を討論しました。<br>会議の報告は <a href="/activities/icm/2014">こちら</a> をご覧ください。</p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -387,7 +387,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="2014-08-06"><a href="#2014-08-06">登録システムがリード長が一定ではない fastq ファイルに対応</a></h2>
   <div class="news_date">2014年08月06日</div>
-  <div class="news_content"><p>DRA 登録システムがリード長が一定ではない fastq ファイルに対応いたしました。<a href="/dra/services/index.html#fastq">マニュアル</a></p>・リード長が揃っている fastq ファイル: Run の file type で fastq を選択<br>・リード長が一定ではない fastq ファイル: Run の file type で generic_fastq を選択</div>
+  <div class="news_content"><p>DRA 登録システムがリード長が一定ではない fastq ファイルに対応いたしました。<a href="/dra/submission.html#fastq">マニュアル</a></p>・リード長が揃っている fastq ファイル: Run の file type で fastq を選択<br>・リード長が一定ではない fastq ファイル: Run の file type で generic_fastq を選択</div>
   <div class="news_category">
     <span class="service">サービス: dra</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -513,7 +513,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn140703"><a href="#wn140703">DDBJ 登録統計の紹介</a></h2>
   <div class="news_date">2014年07月03日</div>
-  <div class="news_content"><p>DDBJ への塩基配列データ登録について、月別の統計ページを開設しました。<br>主に登録回数をベースに DDBJ の活動を可視化しています。<br><br><a href="/stats/ddbj_submissions-e.html">DDBJ への登録回数と登録者数</a></p></div>
+  <div class="news_content"><p>DDBJ への塩基配列データ登録について、月別の統計ページを開設しました。<br>主に登録回数をベースに DDBJ の活動を可視化しています。<br><br><a href="/statistics/index-e.html">DDBJ への登録回数と登録者数</a></p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -531,7 +531,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn140627"><a href="#wn140627">「第29回 DDBJing 講習会 in 三島」の様子をYouTube にアップしました</a></h2>
   <div class="news_date">2014年06月27日</div>
-  <div class="news_content"><p>6月12日（木）に国立遺伝学研究所 DDBJ研究センターで実施された「第29回 DDBJing 講習会 in 三島」の講義の様子をYouTube にアップしました。<br>また，講義で使用した資料をダウンロードすることもできます。<br><a href="/ddbjing-archives.html#29">講習会アーカイブ</a>より閲覧，またはダウンロードして下さい。</p><p>講習会については，<a href="/activities/index.html">DDBJing 講習会</a>をご覧下さい。</p></div>
+  <div class="news_content"><p>6月12日（木）に国立遺伝学研究所 DDBJ研究センターで実施された「第29回 DDBJing 講習会 in 三島」の講義の様子をYouTube にアップしました。<br>また，講義で使用した資料をダウンロードすることもできます。<br><a href="/activities/index.html#29">講習会アーカイブ</a>より閲覧，またはダウンロードして下さい。</p><p>講習会については，<a href="/activities/index.html">DDBJing 講習会</a>をご覧下さい。</p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -693,7 +693,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn140513"><a href="#wn140513">新しい DRA 登録システムをリリース</a></h2>
   <div class="news_date">2014年05月13日</div>
-  <div class="news_content"><p>新しい DRA 登録システムをリリースいたしました。<br>主な変更点については <a href="http://www.slideshare.net/DDBJslide/dra-33537338">変更点をまとめたスライド</a>，<a href="/dra/services/index.html">新しいマニュアル</a> をご覧ください。</p><p><span class="icon_d-triangle"> <a href="/dra/index.html">DDBJ Sequence Read Archive</a></span></p></div>
+  <div class="news_content"><p>新しい DRA 登録システムをリリースいたしました。<br>主な変更点については <a href="http://www.slideshare.net/DDBJslide/dra-33537338">変更点をまとめたスライド</a>，<a href="/dra/submission.html">新しいマニュアル</a> をご覧ください。</p><p><span class="icon_d-triangle"> <a href="/dra/index.html">DDBJ Sequence Read Archive</a></span></p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -702,7 +702,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="2014-05-13"><a href="#2014-05-13">新しい DRA 登録システムをリリース</a></h2>
   <div class="news_date">2014年05月13日</div>
-  <div class="news_content"><p>新しい DRA 登録システムをリリースいたしました。主な変更点については<a href="http://www.slideshare.net/DDBJslide/dra-33537338">変更点をまとめたスライド</a>，<a href="/dra/services/index.html">新しいマニュアル</a>をご覧ください。</p>(2014年6月6日)<p><span class="attention_text">2014年5月12日以前に作成されたステータスが new の登録の投稿作業を再開する場合，オブジェクトの追加・削除でエラーが発生する可能性があります。メタデータの内容をタブ区切りテキストファイルとしてダウンロードし，新しく作成した登録に内容をコピーし，投稿作業を再開することを推奨いたします。</span></p></div>
+  <div class="news_content"><p>新しい DRA 登録システムをリリースいたしました。主な変更点については<a href="http://www.slideshare.net/DDBJslide/dra-33537338">変更点をまとめたスライド</a>，<a href="/dra/submission.html">新しいマニュアル</a>をご覧ください。</p>(2014年6月6日)<p><span class="attention_text">2014年5月12日以前に作成されたステータスが new の登録の投稿作業を再開する場合，オブジェクトの追加・削除でエラーが発生する可能性があります。メタデータの内容をタブ区切りテキストファイルとしてダウンロードし，新しく作成した登録に内容をコピーし，投稿作業を再開することを推奨いたします。</span></p></div>
   <div class="news_category">
     <span class="service">サービス: dra</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -729,7 +729,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="2014-04-18-2"><a href="#2014-04-18-2">BioProject の説明を１ページにまとめました</a></h2>
   <div class="news_date">2014年04月18日</div>
-  <div class="news_content">BioProject の説明を <a href="/bioproject/services/index.html">DDBJ BioProject Handbook</a> にまとめました</div>
+  <div class="news_content">BioProject の説明を <a href="/bioproject/submission.html">DDBJ BioProject Handbook</a> にまとめました</div>
   <div class="news_category">
     <span class="service">サービス: bioproject</span>
     <span class="keyword">キーワード: </span>
@@ -738,7 +738,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="2014-04-18"><a href="#2014-04-18">BioSample の説明を１ページにまとめました</a></h2>
   <div class="news_date">2014年04月18日</div>
-  <div class="news_content">BioSample の説明を <a href="/biosample/services/index.html">DDBJ BioSample Handbook</a> にまとめました</div>
+  <div class="news_content">BioSample の説明を <a href="/biosample/submission.html">DDBJ BioSample Handbook</a> にまとめました</div>
   <div class="news_category">
     <span class="service">サービス: biosample</span>
     <span class="keyword">キーワード: </span>
@@ -801,7 +801,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="2014-03-20"><a href="#2014-03-20">説明を１ページにまとめました</a></h2>
   <div class="news_date">2014年03月20日</div>
-  <div class="news_content">DDBJ Trace Archive の概要，メタデータ，登録手順を<a href="/dta/services/index.html">一つのページ</a>にまとめました。</div>
+  <div class="news_content">DDBJ Trace Archive の概要，メタデータ，登録手順を<a href="/dta/submission.html">一つのページ</a>にまとめました。</div>
   <div class="news_category">
     <span class="service">サービス: dta</span>
     <span class="keyword">キーワード: </span>

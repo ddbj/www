@@ -58,41 +58,41 @@ TLS 登録における注意事項
 
 TLS エントリの特徴
 
-  - [アクセッション番号](#AccessionA) は[アルファベット 4 文字と数字 8
-    桁](#bulk_sequence)を基本とします。
+  - [アクセッション番号](#AccessionA) は アルファベット 4 文字と数字 8
+    桁 を基本とします。
   - [DEFINITION](#DefinitionA) 行は "TLS:" で始まります。
   - [KEYWORDS](#KeywordsA) 行には "TLS" と "Targeted Locus Study" が表示されます。
 
 <!-- end list -->
 
-<pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">TZZZ01000001</a>             <a id="SequenceLengthA" href="#SequenceLengthB">800 bp</a>   <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>     <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">TLS</a> <a id="ModificationDateA" href="#ModificationDateB">15-NOV-2017</a>
-<a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  TLS: Uncultured bacterium OTU:MS213 gene for 16S ribosomal RNA, 
+<pre><code><a id="LocusA" href="/ddbj/flat-file#LocusB">LOCUS</a>       <a id="LocusNameA" href="/ddbj/flat-file#LocusNameB">TZZZ01000001</a>             <a id="SequenceLengthA" href="/ddbj/flat-file#SequenceLengthB">800 bp</a>   <a id="MoleculeTypeA" href="/ddbj/flat-file#MoleculeTypeB">mRNA</a>     <a id="MoleculeFormA" href="/ddbj/flat-file#MoleculeFormB">linear</a>   <a id="DivisionA" href="/ddbj/flat-file#DivisionB">TLS</a> <a id="ModificationDateA" href="/ddbj/flat-file#ModificationDateB">15-NOV-2017</a>
+<a id="DefinitionA" href="/ddbj/flat-file#DefinitionB">DEFINITION</a>  TLS: Uncultured bacterium OTU:MS213 gene for 16S ribosomal RNA, 
             partial sequence.
-<a id="AccessionA" href="#AccessionB">ACCESSION</a>   TZZZ01000001
-<a id="VersionA" href="#VersionB">VERSION</a>     TZZZ01000001.1
-<a id="DblinkA" href="#DblinkB">DBLINK</a>      BioProject:PRJDA43211
+<a id="AccessionA" href="/ddbj/flat-file#AccessionB">ACCESSION</a>   TZZZ01000001
+<a id="VersionA" href="/ddbj/flat-file#VersionB">VERSION</a>     TZZZ01000001.1
+<a id="DblinkA" href="/ddbj/flat-file#DblinkB">DBLINK</a>      BioProject:PRJDA43211
             Sequence Read Archive: DRR800001
             BioSample: SAMD98765439
-<a id="KeywordsA" href="#KeywordsB">KEYWORDS</a>    TLS; Targeted Locus Study; ENV.
-<a id="SourceA" href="#SourceB">SOURCE</a>      uncultured bacterium
-  <a id="OrganismA" href="#OrganismB">ORGANISM</a>  uncultured bacterium
+<a id="KeywordsA" href="/ddbj/flat-file#KeywordsB">KEYWORDS</a>    TLS; Targeted Locus Study; ENV.
+<a id="SourceA" href="/ddbj/flat-file#SourceB">SOURCE</a>      uncultured bacterium
+  <a id="OrganismA" href="/ddbj/flat-file#OrganismB">ORGANISM</a>  uncultured bacterium
             Bacteria; environmental samples.
-<a id="Reference1A" href="#Reference1B">REFERENCE   1</a>  (bases 1 to 800)
-  <a id="AuthorsA" href="#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
-  <a id="TitleA" href="#TitleB">TITLE</a>     Direct Submission
-  <a id="JournalA" href="#JournalB">JOURNAL</a>   Submitted (30-SEP-2017) to the DDBJ/EMBL/GenBank databases.
+<a id="Reference1A" href="/ddbj/flat-file#Reference1B">REFERENCE   1</a>  (bases 1 to 800)
+  <a id="AuthorsA" href="/ddbj/flat-file#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
+  <a id="TitleA" href="/ddbj/flat-file#TitleB">TITLE</a>     Direct Submission
+  <a id="JournalA" href="/ddbj/flat-file#JournalB">JOURNAL</a>   Submitted (30-SEP-2017) to the DDBJ/EMBL/GenBank databases.
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
-<a id="Reference2A" href="#Reference2B">REFERENCE   2</a>  
+<a id="Reference2A" href="/ddbj/flat-file#Reference2B">REFERENCE   2</a>  
   AUTHORS   Mishima,H., Shizuoka,T. and Fuji,I.
   TITLE     Metagenomic Taxonomy Profile in Sea Water
   JOURNAL   TLS Biol 15, 161-170 (2017)
-<a id="CommentA" href="#CommentB">COMMENT</a>     ##Assembly-Data-START##
+<a id="CommentA" href="/ddbj/flat-file#CommentB">COMMENT</a>     ##Assembly-Data-START##
             Assembly Method       :: FLASH v. 2015
             Sequencing Technology :: Illumina
             ##Assembly-Data-END##
-<a id="FeaturesA" href="#FeaturesB">FEATURES</a>             Location/Qualifiers
+<a id="FeaturesA" href="/ddbj/flat-file#FeaturesB">FEATURES</a>             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..301</a>
                      /<a href="/ddbj/qualifiers.html#altitude">altitude</a>="-20 m"
                      /<a href="/ddbj/qualifiers.html#db_xref">country</a>="Pacific Ocean"
@@ -111,4 +111,4 @@ TLS エントリの特徴
         :
         -- The rest of nucleotide sequence is omitted --
         :
-<a id="EndA" href="#EndB">//</a></code></pre>
+<a id="EndA" href="/ddbj/flat-file#EndB">//</a></code></pre>

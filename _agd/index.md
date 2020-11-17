@@ -21,7 +21,7 @@ AGD へのデータ提供およびデータの利用についての審査は [NB
 
 ## データの登録 <a name="submission"></a>
 
-AGD は NBDC でデータ提供を承認された匿名化されたデータだけを受け付けています ([ヒトを対象とした研究データの登録について](/service-policy.html#human))。登録者は [NBDC](http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines) に AGD へのデータ提供を申請し， NBDC からデータ提供の承認連絡を受けた登録者は [AGD に連絡](/contact-ddbj.html)します。
+AGD は NBDC でデータ提供を承認された匿名化されたデータだけを受け付けています ([ヒトを対象とした研究データの登録について](/policies.html#human))。登録者は [NBDC](http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines) に AGD へのデータ提供を申請し， NBDC からデータ提供の承認連絡を受けた登録者は [AGD に連絡](/contact-ddbj.html)します。
 AGD チームはその連絡を受け，登録者に登録手順を別途案内します。
 
 データの受領後，AGD はデータベースへの格納のためにデータを処理し，同時に投稿されたオリジナルなファイルを保存します。 AGD では多岐にわたるデータを受け付けており，アレイと新世代シークエンサーからの生データ，遺伝子型・構造変異，統計解析などの解析処理されたデータを保存しています。

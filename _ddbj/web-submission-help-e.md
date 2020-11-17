@@ -7,7 +7,7 @@ lang: en
 
 ## 1\. Contact person <a name="flow-1"></a>
 
-Enter [contact person's](/ddbj/services/index.html#contact) information here.
+Enter [contact person's](/ddbj/submission.html#contact) information here.
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp1-1_e.png "contact information entry screen"){:.w600}
 
@@ -61,7 +61,7 @@ Related page
 
 ## 4\. Reference <a name="flow-4"></a>
 
-Enter [reference information](/ddbj/flat-file-e.html#Reference2) on the page. Please enter [primary citation](/ddbj/services/index.html#pcite) on the 1st reference.
+Enter [reference information](/ddbj/flat-file-e.html#Reference2) on the page. Please enter [primary citation](/ddbj/submission.html#pcite) on the 1st reference.
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp4_e.png){:.w600}
 
@@ -174,7 +174,7 @@ gctgtaactctgagatgtgctaaataaaccctctttctcaaaaaaaaaaaaaaaa
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp5-3-1_e.png){:.w600}
 
-You can download the assembly sample [from here (tab-delimited text format)](/files/example/NSSShelp-tpa-sample.txt).
+You can download the assembly sample [from here (tab-delimited text format)]({{ site.baseurl }}/assets/files/example/NSSShelp-tpa-sample.txt).
 
 #### The example indicates following information. <a name="The_example_indicates_following_information."></a>
 
@@ -303,7 +303,7 @@ Related page
 
 #### Uploadable file format <a name="flow-7-6-1"></a>
 
-  - You can download [sample annotation file from here](/files/example/mtDNA.txt).
+  - You can download [sample annotation file from here]({{ site.baseurl }}/assets/files/example/mtDNA.txt).
 
   - Please refer to ["Making MSS Files for preparation of annotation file"](/ddbj/file-format-e.html#annotation) for detail.
 
@@ -360,7 +360,7 @@ Related page
 
 ### How to obtain amino acid sequence <a name="flow-7-8"></a>
 
-Please refer to the page, ["How to confirm translated amino acid sequences (i.e. /translation qualifier) for CDS features"](/faq/en/how-to-confirm-translated-amino-acid-seq-e.html).
+Please refer to the page, ["How to confirm translated amino acid sequences (i.e. /translation qualifier) for CDS features"](/faq/en/how-to-confirm-translated-amino-acid-seq.html).
 
 As an alternative way, you can use the following Web services.  
 ORFfinder (NCBI)  

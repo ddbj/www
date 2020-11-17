@@ -15,12 +15,12 @@ lang: ja
 ## 論文情報を追加するには？
 
 <div class="term_def">
-  <dl> <dt>            <a href="/ddbj/services/index.html">DDBJ 塩基配列データ </a>          </dt>
+  <dl> <dt>            <a href="/ddbj/submission.html">DDBJ 塩基配列データ </a>          </dt>
     <dd>
       <p><a href="/ddbj/update.html">登録データの修正・更新の当該項目</a>を参照の上，<a href="/faq/ja/paper-published.html">登録データの修正・更新申し込み</a>の「論文が公開されました」から担当者に連絡します。配列エントリの<a href="/ddbj/flat-file.html#Reference2">フラットファイル</a>に論文情報が記載されます。</p>
     </dd> <dt>            <a href="/dra/index.html">DRA</a>          </dt>
     <dd>
-      <p>DRA 番号を引用している論文情報は<a href="/dra/services/index.html#metadata">参照している BioProject</a> に追加します。<a href="/contact-ddbj.html#to-ddbj">BioProject チームに論文情報の追加を依頼</a>します。</p>
+      <p>DRA 番号を引用している論文情報は<a href="/dra/submission.html#metadata">参照している BioProject</a> に追加します。<a href="/contact-ddbj.html#to-ddbj">BioProject チームに論文情報の追加を依頼</a>します。</p>
     </dd> <dt>            <a href="/bioproject/index.html">BioProject</a>          </dt>
     <dd>
       <p><a href="/contact-ddbj.html#to-ddbj">BioProject に論文情報の追加を依頼</a>します。基本的に <a href="/faq/index.html#project-accession">BioProject 番号の論文中での引用は推奨していません</a>。</p>

@@ -5,19 +5,19 @@ category: ddbj
 lang: en
 related_pages:
   - title: Submission File Format
-    url: /ddbj/file-format-e.html)
+    url: /ddbj/file-format-e.html
   - title: Validation tools for MSS data files
-    url: /ddbj/mss-tool-e.html)
+    url: /ddbj/mss-tool-e.html
   - title: UME User’s manual
-    url: /ddbj/ume-e.html)
+    url: /ddbj/ume-e.html
   - title: Parser User’s Manual
-    url: /ddbj/parser-e.html)
+    url: /ddbj/parser-e.html
   - title: transChecker User’s Manual
-    url: /ddbj/transchecker-e.html)
+    url: /ddbj/transchecker-e.html
   - title: Validator error message
-    url: /ddbj/validator-e.html)
+    url: /ddbj/validator-e.html
   - title: Application form for MSS
-    url: /ddbj/mss-form-e.html)
+    url: /ddbj/mss-form-e.html
 ---
 
 <span class="red">Submission of research data from human subjects</span>
@@ -44,7 +44,7 @@ We at DDBJ recommend using MSS when:
     System (NSSS)  
     → [EST](/ddbj/est-e.html), STS, [TSA](/ddbj/tsa-e.html),
     [HTC](/ddbj/htc-e.html), [GSS](/ddbj/gss-e.html),
-    [HTG](/sub/htg-e.html), [WGS](/ddbj/wgs-e.html),
+    [HTG](/ddbj/htg-e.html), [WGS](/ddbj/wgs-e.html),
     [CON](/ddbj/con-e.html), [TLS](/ddbj/tls-e.html)
   - the submission with long sequences.  
     → greater than 500 kb in its length
@@ -61,7 +61,7 @@ Submission System (NSSS)](/ddbj/web-submission-e.html) .
 
 If you are to submit reads from sequencers, please refer [DRA; DDBJ
 Sequence Read Archive](/dra/index-e.html).  
-Please confirm [Categories for Sequence Data](/documents/documents/data-categories-e.html).
+Please confirm [Categories for Sequence Data](/documents/data-categories-e.html).
 
 ## The Flow of MSS <a name="flow"></a>
 
@@ -197,7 +197,7 @@ to use file transfer by SCP using public/private key pair.
 D-way](https://ddbj.nig.ac.jp/D-way/) to get D-way login account and
 to upload files.  
 For detail, see [Upload sequence
-data](/dra/services/index.html#upload-sequence-data%0A) or Tutorial
+data](/dra/submission.html#upload-sequence-data%0A) or Tutorial
 movies.
 : **Tutorial movies**
 : Generate key pair（[Windows](https://youtu.be/Aos7KR6XwUw) /
@@ -209,9 +209,9 @@ movies.
 
 If you do not set any hold-date, your data will be released
 immediately.  
-When you set a [hold-date](/ddbj/services/index.html#hold-date) for your
+When you set a [hold-date](/ddbj/submission.html#hold-date) for your
 data, we will release your data according to [Principle of
-"Hold-Until-Published" data release](/documents/documents/data-release-policy-e.html).
+"Hold-Until-Published" data release](/documents/data-release-policy-e.html).
 
 Based on your sequence and annotation files, your data will be processed
 and publicized into the DDBJ format, so called "[flat

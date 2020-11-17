@@ -70,7 +70,7 @@ DDBJ では[情報・システム研究機構](http://www.rois.ac.jp/) (ROIS) �
 
 別途、規定がない限り、DDBJ センターが提供するデータ、サービスの利用に制限はなく、データの改変、再配布は自由です。
 
-  - [INSDC 活動](/insdc-j.html)に由来するデータは [INSDC policy](/insdc.html#policy) に従います。
+  - [INSDC 活動](/insdc.html)に由来するデータは [INSDC policy](/insdc.html#policy) に従います。
   - [Japanese Genotype-phenotype Archive (JGA)](/jga/index.html)
     に関しましては、NBDCヒトデータベースの[データ利用規定](https://humandbs.biosciencedbc.jp/data-use) に従います。
   - [AMED Genome group sharing Database (AGD)](/agd/index.html) に関しましては、NBDCグループ共有データベースの[データ利用規定](//gr-sharingdbs.biosciencedbc.jp/agd-data-use) に従います。
@@ -98,15 +98,15 @@ DDBJ では[情報・システム研究機構](http://www.rois.ac.jp/) (ROIS) �
 
 ### データとサービス
 
-学術論文などで引用いただける場合、通常は、Nucleic Acids Res. Database issue における [DDBJ に関する最新論文](/services/services/services/references.html#ddbj)の引用をお願いいたします。
+学術論文などで引用いただける場合、通常は、Nucleic Acids Res. Database issue における [DDBJ に関する最新論文](/services/references.html#ddbj)の引用をお願いいたします。
 
 ただし、以下の点についてご注意ください。
 
 個別の配列データを引用する場合  
-: 通常は[アクセッション番号](/documents/accessions.html)を、必要に応じて、そのバージョンとともに引用することで十分です。<br>個別のデータに関して詳細な内容について言及する場合は各配列データの [primary citation](/ddbj/services/index.html#pcite) を引用することが適切です。
+: 通常は[アクセッション番号](/documents/accessions.html)を、必要に応じて、そのバージョンとともに引用することで十分です。<br>個別のデータに関して詳細な内容について言及する場合は各配列データの [primary citation](/ddbj/submission.html#pcite) を引用することが適切です。
 
 DDBJ センターが提供する個別のサービスについて引用する場合  
-: 通常は[各サービスに関するオリジナル論文](/services/services/services/references.html)を引用する方が適切です。
+: 通常は[各サービスに関するオリジナル論文](/services/references.html)を引用する方が適切です。
 
 #### DDBJ データの著作権について <a name="copyright"></a>
 
@@ -138,7 +138,7 @@ DDBJ は GenBank や EMBL-Bank 同様なんらの利用制限も付加しませ�
 以下もご参照ください。
 
   - [登録データの取り扱いについて](/insdc.html#policy)
-  - [登録に附随する権利と義務](/ddbj/services/index.html#right)
+  - [登録に附随する権利と義務](/ddbj/submission.html#right)
 
 ## 特許・知的所有権と優先権 <a name="ownership"></a>
 
@@ -158,8 +158,8 @@ DDBJ は GenBank や EMBL-Bank 同様なんらの利用制限も付加しませ�
 ### 特許出願に関連する塩基配列の登録に関する注意
 
 DDBJ から公開された配列は「公知」の扱いになります。  
-特許出願に関連する塩基配列を DDBJ に登録する場合、必要に応じて、[公開予定日](/ddbj/services/index.html#holddate)を指定してください。  
-その際は[データ公開原則](/documents/documents/documents/data-release-policy.html)にご注意ください。
+特許出願に関連する塩基配列を DDBJ に登録する場合、必要に応じて、[公開予定日](/ddbj/submission.html#holddate)を指定してください。  
+その際は[データ公開原則](/documents/data-release-policy.html)にご注意ください。
 
 DDBJ への登録が特許審査に与える影響に関しましては、直接、出願する特許庁へ ご確認ください。  
 DDBJ は配列データの登録・公開により生じた 所有権、優先権などに関する いかなる問題にも、一切の責任を負いません。

@@ -6,29 +6,29 @@ category: ddbj
 lang: en
 related_pages:
   - title: Data Submission from Genome Project
-    url: datacategories/genome-e.html
+    url: /ddbj/genome-e.html
   - title: WGS
-    url: datacategories/wgs-e.html
+    url: /ddbj/wgs-e.html
   - title: CON
-    url: datacategories/con-e.html
+    url: /ddbj/con-e.html
   - title: GSS
-    url: datacategories/gss-e.html
+    url: /ddbj/gss-e.html
   - title: HTG
-    url: datacategories/htg-e.html
+    url: /ddbj/htg-e.html
   - title: Submission of environmental sequences
-    url: datacategories/environmental-e.html
+    url: /ddbj/environmental-e.html
   - title: ENV
-    url: datacategories/env-e.html
+    url: /ddbj/env-e.html
   - title: TLS
-    url: datacategories/tls-e.html
+    url: /ddbj/tls-e.html
   - title: Data Submission from Transcriptome Project
-    url: datacategories/transcriptome-e.html
+    url: /ddbj/transcriptome-e.html
   - title: EST
-    url: datacategories/est-a.html
+    url: /ddbj/est-a.html
   - title: HTC
-    url: datacategories/htc-e.html
+    url: /ddbj/htc-e.html
   - title: Third Party Data (TPA)
-    url: datacategories/tpa-e.html
+    url: /ddbj/tpa-e.html
 ---
 
 Since 2008, INSDC has accepted the sequence data of "Transcriptome Shotgun Assembly (TSA)" categorised into TSA division for assembled cDNA sequences.
@@ -67,7 +67,7 @@ The sequence alignment rules between TSA and primary entries
 
 Aspects of TSA
 
-  - Basically, each TSA sequence submitted to DDBJ is assigned an [accession number](#AccessionA) that [consists of 4 alphabet characters and 8 digits](#bulk_sequence).
+  - Basically, each TSA sequence submitted to DDBJ is assigned an [accession number](#AccessionA) that consists of 4 alphabet characters and 8 digits.
   - [LOCUS](#LocusA) line provides the division name, "TSA".
   - "TSA:" is shown at the beginning of [DEFINITION](#DefinitionA) line.
   - "TSA" and "Transcriptome Shotgun Assembly" are indicated in [KEYWORDS](#KeywordsA) line.
@@ -75,75 +75,75 @@ Aspects of TSA
 
 In case of citing [DDBJ Read Archive](/dra/index-e.html)
 
-<pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">IZZY01000001</a>              <a id="SequenceLengthA" href="#SequenceLengthB">800 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">TSA</a> <a id="ModificationDateA" href="#ModificationDateB">15-OCT-2015</a>
-<a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  TSA: Mus musculus RNA, contig1_1.
-<a id="AccessionA" href="#AccessionB">ACCESSION</a>   IZZY01000001
-<a id="VersionA" href="#VersionB">VERSION</a>     IZZY01000001.1
-<a id="DblinkA" href="#DblinkB">DBLINK</a>      BioProject:PRJDA43210
+<pre><code><a id="LocusA" href="/ddbj/flat-file-e#LocusB">LOCUS</a>       <a id="LocusNameA" href="/ddbj/flat-file-e#LocusNameB">IZZY01000001</a>              <a id="SequenceLengthA" href="/ddbj/flat-file-e#SequenceLengthB">800 bp</a>    <a id="MoleculeTypeA" href="/ddbj/flat-file-e#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="/ddbj/flat-file-e#MoleculeFormB">linear</a>   <a id="DivisionA" href="/ddbj/flat-file-e#DivisionB">TSA</a> <a id="ModificationDateA" href="/ddbj/flat-file-e#ModificationDateB">15-OCT-2015</a>
+<a id="DefinitionA" href="/ddbj/flat-file-e#DefinitionB">DEFINITION</a>  TSA: Mus musculus RNA, contig1_1.
+<a id="AccessionA" href="/ddbj/flat-file-e#AccessionB">ACCESSION</a>   IZZY01000001
+<a id="VersionA" href="/ddbj/flat-file-e#VersionB">VERSION</a>     IZZY01000001.1
+<a id="DblinkA" href="/ddbj/flat-file-e#DblinkB">DBLINK</a>      BioProject:PRJDA43210
             Sequence Read Archive: DRR900001
             BioSample: SAMD98765431
-<a id="KeywordsA" href="#KeywordsB">KEYWORDS</a>    TSA; Transcriptome Shotgun Assembly.
-<a id="SourceA" href="#SourceB">SOURCE</a>      Mus musculus (house mouse)
-  <a id="OrganismA" href="#OrganismB">ORGANISM</a>  Mus musculus
+<a id="KeywordsA" href="/ddbj/flat-file-e#KeywordsB">KEYWORDS</a>    TSA; Transcriptome Shotgun Assembly.
+<a id="SourceA" href="/ddbj/flat-file-e#SourceB">SOURCE</a>      Mus musculus (house mouse)
+  <a id="OrganismA" href="/ddbj/flat-file-e#OrganismB">ORGANISM</a>  Mus musculus
             Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
             Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia;
             Sciurognathi; Muroidea; Muridae; Murinae; Mus; Mus.
-<a id="Reference1A" href="#Reference1B">REFERENCE   1</a>  (bases 1 to 800)
-  <a id="AuthorsA" href="#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
-  <a id="TitleA" href="#TitleB">TITLE</a>     Direct Submission
-  <a id="JournalA" href="#JournalB">JOURNAL</a>   Submitted (30-SEP-2008) to the DDBJ/EMBL/GenBank databases.
+<a id="Reference1A" href="/ddbj/flat-file-e#Reference1B">REFERENCE   1</a>  (bases 1 to 800)
+  <a id="AuthorsA" href="/ddbj/flat-file-e#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
+  <a id="TitleA" href="/ddbj/flat-file-e#TitleB">TITLE</a>     Direct Submission
+  <a id="JournalA" href="/ddbj/flat-file-e#JournalB">JOURNAL</a>   Submitted (30-SEP-2008) to the DDBJ/EMBL/GenBank databases.
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
-<a id="Reference2A" href="#Reference2B">REFERENCE   2</a>
+<a id="Reference2A" href="/ddbj/flat-file-e#Reference2B">REFERENCE   2</a>
   AUTHORS   Mishima,H., Shizuoka,T. and Fuji,I.
   TITLE     Transcriptome shotgun assembly of mouse
   JOURNAL   TSA Biol 12, 61-70 (2015)
-<a id="CommentA" href="#CommentB">COMMENT</a>     ##Assembly-Data-START##
+<a id="CommentA" href="/ddbj/flat-file-e#CommentB">COMMENT</a>     ##Assembly-Data-START##
             Assembly Method       :: Velvet v.1.1.05
             Sequencing Technology :: Illumina GAIIx
             ##Assembly-Data-END##            
-<a id="FeaturesA" href="#FeaturesB">FEATURES</a>             Location/Qualifiers
-     <a id="FeaturesSourceA" href="#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..800</a>
-                     /<a href="/ddbj/qualifiers.html#db_xref">db_xref</a>="taxon:10090"
-                     /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="transcribed RNA"
-                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Mus musculus"
-                     /<a href="/ddbj/qualifiers.html#submitter_seqid">submitter_seqid</a>="contig1_1"
+<a id="FeaturesA" href="/ddbj/flat-file-e#FeaturesB">FEATURES</a>             Location/Qualifiers
+     <a id="FeaturesSourceA" href="/ddbj/flat-file-e#FeaturesSourceB">source</a>          <a href="/ddbj/location-e.html">1..800</a>
+                     /<a href="/ddbj/qualifiers-e.html#db_xref">db_xref</a>="taxon:10090"
+                     /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="transcribed RNA"
+                     /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Mus musculus"
+                     /<a href="/ddbj/qualifiers-e.html#submitter_seqid">submitter_seqid</a>="contig1_1"
 <a id="BaseCountA" href="#BaseCountB">BASE COUNT</a>          199 a          203 c          198 g          200 t
 <a id="OriginA" href="#OriginB">ORIGIN</a>
         1 attaatataa gctaaatatg tttttcaata tatattgata atagaatatc aacaatttgg
         :
         -- The rest of nucleotide sequence is omitted --
         :
-<a id="EndA" href="#EndB">//</a></code></pre>
+<a id="EndA" href="/ddbj/flat-file-e#EndB">//</a></code></pre>
 
 In case of citing [EST](/ddbj/est-e.html)
 
-<pre class="code flat-file"><code><a href="#LocusB">LOCUS</a>       <a href="#LocusNameB">IZZY01000001</a>              <a href="#SequenceLengthB">800 bp</a>    <a href="#MoleculeTypeB">mRNA</a>    <a href="#ModificationDateB">linear</a>   <a href="#DivisionB">TSA</a> <a href="#ModificationDateB">15-OCT-2015</a>
-<a href="#DefinitionB">DEFINITION</a>  TSA: Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate
+<pre class="code flat-file"><code><a href="/ddbj/flat-file-e#LocusB">LOCUS</a>       <a href="/ddbj/flat-file-e#LocusNameB">IZZY01000001</a>              <a href="/ddbj/flat-file-e#SequenceLengthB">800 bp</a>    <a href="/ddbj/flat-file-e#MoleculeTypeB">mRNA</a>    <a href="/ddbj/flat-file-e#ModificationDateB">linear</a>   <a href="/ddbj/flat-file-e#DivisionB">TSA</a> <a href="/ddbj/flat-file-e#ModificationDateB">15-OCT-2015</a>
+<a href="/ddbj/flat-file-e#DefinitionB">DEFINITION</a>  TSA: Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate
             dehydrogenase, complete cds.
-<a href="#AccessionB">ACCESSION</a>   IZZY01000001
-<a href="#VersionB">VERSION</a>     IZZY01000001.1
-<a href="#DblinkB">DBLINK</a>      BioProject:PRJDA43211
+<a href="/ddbj/flat-file-e#AccessionB">ACCESSION</a>   IZZY01000001
+<a href="/ddbj/flat-file-e#VersionB">VERSION</a>     IZZY01000001.1
+<a href="/ddbj/flat-file-e#DblinkB">DBLINK</a>      BioProject:PRJDA43211
             BioSample: SAMD98765433
-<a href="#KeywordsB">KEYWORDS</a>    TSA; Transcriptome Shotgun Assembly.
-<a href="#SourceB">SOURCE</a>      Homo sapiens (human)
-  <a href="#OrganismB">ORGANISM</a>  Homo sapiens
+<a href="/ddbj/flat-file-e#KeywordsB">KEYWORDS</a>    TSA; Transcriptome Shotgun Assembly.
+<a href="/ddbj/flat-file-e#SourceB">SOURCE</a>      Homo sapiens (human)
+  <a href="/ddbj/flat-file-e#OrganismB">ORGANISM</a>  Homo sapiens
             Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
             Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
             Catarrhini; Hominidae; Homo.
-<a href="#Reference1B">REFERENCE   1</a>  (bases 1 to 800)
-  <a href="#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
-  <a href="#TitleB">TITLE</a>     Direct Submission
-  <a href="#JournalB">JOURNAL</a>   Submitted (30-SEP-2008) to the DDBJ/EMBL/GenBank databases.
+<a href="/ddbj/flat-file-e#Reference1B">REFERENCE   1</a>  (bases 1 to 800)
+  <a href="/ddbj/flat-file-e#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
+  <a href="/ddbj/flat-file-e#TitleB">TITLE</a>     Direct Submission
+  <a href="/ddbj/flat-file-e#JournalB">JOURNAL</a>   Submitted (30-SEP-2008) to the DDBJ/EMBL/GenBank databases.
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
-<a href="#Reference2B">REFERENCE   2</a>
+<a href="/ddbj/flat-file-e#Reference2B">REFERENCE   2</a>
   AUTHORS   Mishima,H., Shizuoka,T. and Fuji,I.
   TITLE     EST assembly of human
   JOURNAL   TSA Biol 12, 61-70 (2008)
-<a href="#CommentB">COMMENT</a>           
+<a href="/ddbj/flat-file-e#CommentB">COMMENT</a>           
 <a id="PrimaryA" href="#PrimaryB">PRIMARY</a>     TSA_SPAN            PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
             1-599               ZZ000004.1         2-598
             1-669               ZZ000005.1         11-679
@@ -154,18 +154,18 @@ In case of citing [EST](/ddbj/est-e.html)
             59-369              ZZ000010.1         13-322
             605-800             ZZ000011.1         1-196               c
             1451-1550           ZZ000003.1         201-300
-<a href="#FeaturesB">FEATURES</a>             Location/Qualifiers
-     <a href="#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..800</a>
-                     /<a href="/ddbj/qualifiers.html#db_xref">db_xref</a>="taxon:9606"
-                     /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="transcribed RNA"
-                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Homo sapiens"
-     <a href="/ddbj/features.html#cds">CDS</a>             <a href="/ddbj/location.html">73..669</a>
-                     /<a href="/ddbj/qualifiers.html#codon_start">codon_start</a>=1
-                     /<a href="/ddbj/qualifiers.html#gene">gene</a>="GAPD"
-                     /<a href="/ddbj/qualifiers.html#product">product</a>="glyceraldehyde-3-phosphate dehydrogenase"
-                     /<a href="/ddbj/qualifiers.html#protein_id">protein_id</a>="LZZ00001.1"
-                     /<a href="/ddbj/qualifiers.html#transl_table">transl_table</a>=1
-                     /<a href="/ddbj/qualifiers.html#translation">translation</a>="MWYQSLVIIEKLNLEANIGKLINTKDNINIRCRLSHTEEHSWHS
+<a href="/ddbj/flat-file-e#FeaturesB">FEATURES</a>             Location/Qualifiers
+     <a href="/ddbj/flat-file-e#FeaturesSourceB">source</a>          <a href="/ddbj/location-e.html">1..800</a>
+                     /<a href="/ddbj/qualifiers-e.html#db_xref">db_xref</a>="taxon:9606"
+                     /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="transcribed RNA"
+                     /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Homo sapiens"
+     <a href="/ddbj/features.html#cds">CDS</a>             <a href="/ddbj/location-e.html">73..669</a>
+                     /<a href="/ddbj/qualifiers-e.html#codon_start">codon_start</a>=1
+                     /<a href="/ddbj/qualifiers-e.html#gene">gene</a>="GAPD"
+                     /<a href="/ddbj/qualifiers-e.html#product">product</a>="glyceraldehyde-3-phosphate dehydrogenase"
+                     /<a href="/ddbj/qualifiers-e.html#protein_id">protein_id</a>="LZZ00001.1"
+                     /<a href="/ddbj/qualifiers-e.html#transl_table">transl_table</a>=1
+                     /<a href="/ddbj/qualifiers-e.html#translation">translation</a>="MWYQSLVIIEKLNLEANIGKLINTKDNINIRCRLSHTEEHSWHS
                      -- The rest of amino acid sequence is omitted -- "
 <a href="#BaseCountB">BASE COUNT</a>          199 a          203 c          198 g          200 t
 <a href="#OriginB">ORIGIN</a>
@@ -173,4 +173,4 @@ In case of citing [EST](/ddbj/est-e.html)
         :
         -- The rest of nucleotide sequence is omitted --
         :
-<a href="#EndB">//</a></code></pre>
+<a href="/ddbj/flat-file-e#EndB">//</a></code></pre>

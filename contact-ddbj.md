@@ -17,7 +17,7 @@ DDBJ より連絡がない場合は，お知らせください。
 
 お問い合わせの前に [DDBJ へのよくある質問（FAQ）](/faq/ja/index.html)もご覧ください。
 
-※[お問い合わせフォームが表示されない場合は？](/faq/ja/index.html#contact-form-not-displayed)
+※[お問い合わせフォームが表示されない場合は？](/faq/ja/contact-form-not-displayed)
 
 <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfNXpFy7TUC7HHFJZ0O7G1_cS4DjKIYTStb3s9JlC2orbo9Ew/viewform?embedded=true" width="760" height="1500" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>-->
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeyWbdUll6ESiuraInJ2UzUuiCSoWYZ0v-zARc049_y5Z2-7A/viewform?embedded=true" width="760" height="1500" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>

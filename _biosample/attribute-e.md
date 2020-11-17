@@ -24,7 +24,7 @@ lang: en
 
   - [Login & Submit](https://ddbj.nig.ac.jp/D-way)
   - [Policies and Disclaimers](/policies-e.html)
-  - [Contact](/contact-e.html)
+  - [Contact](/contact-ddbj-e.html)
   - [Japanese](/biosample/attribute.html)
 
 </div>
@@ -151,7 +151,7 @@ BI-DDBJ Web Sites Annotated/Assembled Sequences Sequence Read Archive
 <div id="header-bottom">
 
   - [Home](/biosample/index-e.html)
-  - [Handbook](/biosample/services/index.html)
+  - [Handbook](/biosample/submission.html)
   - [Sample
     Attribute![](/images/parts/arrow_down.svg)](/biosample/attribute-e.html)
       - [Example
@@ -191,7 +191,7 @@ List all sample attributes
 <div id="sample_type">
 
 [Sample type (Core
-Package)](/biosample/services/index.html#Area_core-package)
+Package)](/biosample/submission.html#Area_core-package)
 
   - 
     
@@ -200,7 +200,7 @@ Package)](/biosample/services/index.html#Area_core-package)
     </div>
     
     [Genome, metagenome or marker sequences (MIxS
-    compliant)](/biosample/services/index.html#MIxS_Sample)
+    compliant)](/biosample/submission.html#MIxS_Sample)
     
       - 
         
@@ -209,7 +209,7 @@ Package)](/biosample/services/index.html#Area_core-package)
         </div>
         
         Environmental/Metagenome Genomic Sequences
-        [(MIMS)](/biosample/services/index.html#Meta_Genomic_Sequences_Sample)
+        [(MIMS)](/biosample/submission.html#Meta_Genomic_Sequences_Sample)
     
       - 
         
@@ -218,7 +218,7 @@ Package)](/biosample/services/index.html#Area_core-package)
         </div>
         
         Cultured Bacterial/Archaeal Genomic Sequences
-        [(MIGS)](/biosample/services/index.html#Genomic_Sequences_Sample)
+        [(MIGS)](/biosample/submission.html#Genomic_Sequences_Sample)
     
       - 
         
@@ -227,7 +227,7 @@ Package)](/biosample/services/index.html#Area_core-package)
         </div>
         
         Eukaryotic Genomic Sequences
-        [(MIGS)](/biosample/services/index.html#Genomic_Sequences_Sample)
+        [(MIGS)](/biosample/submission.html#Genomic_Sequences_Sample)
     
       - 
         
@@ -236,7 +236,7 @@ Package)](/biosample/services/index.html#Area_core-package)
         </div>
         
         Viral Genomic Sequences
-        [(MIGS)](/biosample/services/index.html#Genomic_Sequences_Sample)
+        [(MIGS)](/biosample/submission.html#Genomic_Sequences_Sample)
     
       - 
         
@@ -245,7 +245,7 @@ Package)](/biosample/services/index.html#Area_core-package)
         </div>
         
         Specimen Marker Sequences
-        [(MIMARKS)](/biosample/services/index.html#Marker_Sequences_Sample)
+        [(MIMARKS)](/biosample/submission.html#Marker_Sequences_Sample)
     
       - 
         
@@ -254,7 +254,7 @@ Package)](/biosample/services/index.html#Area_core-package)
         </div>
         
         Survey related Marker Sequences
-        [(MIMARKS)](/biosample/services/index.html#Marker_Sequences_Sample)
+        [(MIMARKS)](/biosample/submission.html#Marker_Sequences_Sample)
 
   - 
     
@@ -263,7 +263,7 @@ Package)](/biosample/services/index.html#Area_core-package)
     </div>
     
     [Functional genomics samples (e.g. transcriptome, epigenetics
-    etc)](/biosample/services/index.html#functional_genomics_samples)
+    etc)](/biosample/submission.html#functional_genomics_samples)
 
   - 
     
@@ -272,7 +272,7 @@ Package)](/biosample/services/index.html#Area_core-package)
     </div>
     
     [Other samples (e.g. transcriptome, epigenetics
-    etc)](/biosample/services/index.html#General_Sample)
+    etc)](/biosample/submission.html#General_Sample)
 
 </div>
 
@@ -435,7 +435,7 @@ packages.](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wb
   - [Sitemap](/sitemaps-e.html "Sitemap")
   - [Calendar](/calendar-e.html "DDBJ Center Calendar")
   - [Address](/ddbj-access-e.html "DDBJ Center address")
-  - [Contact](/contact-e.html "Contact to DDBJ Center")
+  - [Contact](/contact-ddbj-e.html "Contact to DDBJ Center")
   - Last modified: 2019-02-26
 
 </div>

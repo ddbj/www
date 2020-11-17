@@ -9,7 +9,7 @@ lang: en
 <div class="news_post firstpost">
   <h2 class="news_title" id="wn061228"><a href="#wn061228">DDBJ Rel. 68 Completed</a></h2>
   <div class="news_date">2006年12月28日</div>
-  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public. We completed DDBJ Release 68 in Dec. 28, 2006.  DDBJ Release 68 consists of 64,267,978 entries, and the number of bases reached 68,259,314,742. We changed the maximum file size from 300 MB to 1.5 GB<dd><a href="/download-e.html">FTP site for periodical release and new data download</a></dd></dd></div>
+  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public. We completed DDBJ Release 68 in Dec. 28, 2006.  DDBJ Release 68 consists of 64,267,978 entries, and the number of bases reached 68,259,314,742. We changed the maximum file size from 300 MB to 1.5 GB<dd><a href="/services/index-e.html">FTP site for periodical release and new data download</a></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -90,7 +90,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn061215"><a href="#wn061215">16S rRNA is newly added to DDBJ homology search databases</a></h2>
   <div class="news_date">December 15,2006</div>
-  <div class="news_content"><dd>DDBJ provides homology search services by <a href="/services-e.html">WWW</a> and <a href="othernet-e.html">E-mail</a>. "16S rRNA" is newly added to the searchable databases in FASTA, BLAST, and SSESRCH services. Deatils are as follows.<ul><li><b>Database: </b>16S rRNA (Prokaryotes)</li><li><b>method: </b><ol><li>The 16S rRNA sequences which meets the following conditions were extracted from BCT division of the latest DDBJ periodical release.</li></ol><ul><li>include "rRNA" in  Feature Key</li><li>include 16S", "RRS" or "SSU"  in the product line of Qulifier Key.</li></ul></li><li>After extraction, the sequences whose length is 300bp or less and which ar recognized as the antisense were removed.</li><li><b>Anonymous FTP: </b><ul><li>File Name : <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/16S/">16S.seq.gz</a> (FASTA format) </li><li>This data is also available from <a href="/download-e.html">"Anonymous FTP of the DDBJ"</a>.</li></ul></li></ul></dd></div>
+  <div class="news_content"><dd>DDBJ provides homology search services by <a href="/services-e.html">WWW</a> and <a href="othernet-e.html">E-mail</a>. "16S rRNA" is newly added to the searchable databases in FASTA, BLAST, and SSESRCH services. Deatils are as follows.<ul><li><b>Database: </b>16S rRNA (Prokaryotes)</li><li><b>method: </b><ol><li>The 16S rRNA sequences which meets the following conditions were extracted from BCT division of the latest DDBJ periodical release.</li></ol><ul><li>include "rRNA" in  Feature Key</li><li>include 16S", "RRS" or "SSU"  in the product line of Qulifier Key.</li></ul></li><li>After extraction, the sequences whose length is 300bp or less and which ar recognized as the antisense were removed.</li><li><b>Anonymous FTP: </b><ul><li>File Name : <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/16S/">16S.seq.gz</a> (FASTA format) </li><li>This data is also available from <a href="/services/index-e.html">"Anonymous FTP of the DDBJ"</a>.</li></ul></li></ul></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -405,7 +405,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn061020_2"><a href="#wn061020_2">Guidance for Nucleotide Sequence Submission updated</a></h2>
   <div class="news_date">October 20,2006</div>
-  <div class="news_content"><dd>According to the decision in <a href="/activities/index-e.html#2006">the 19th International Collaborators Meeting</a>, <a href="/ddbj/flat-file-e.html">Guidance for Nucleotide Sequence Submission</a> has been updated on October 19, 2006.</dd></div>
+  <div class="news_content"><dd>According to the decision in <a href="/activities/icm/2006-e">the 19th International Collaborators Meeting</a>, <a href="/ddbj/flat-file-e.html">Guidance for Nucleotide Sequence Submission</a> has been updated on October 19, 2006.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -477,7 +477,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn061004"><a href="#wn061004">DAD rel. 37 was released</a></h2>
   <div class="news_date">October 04,2006</div>
-  <div class="news_content"><dd>DDBJ amino acid database (DAD) Release37 was released on Oct. 04, 2006 at DDBJ.  DAD Release 37 consists of 3,452,697 entries, and the total number of residues reached 1,052,890,111. <dd><a href="/download-e.html">FTP site for DB download</a></dd></dd></div>
+  <div class="news_content"><dd>DDBJ amino acid database (DAD) Release37 was released on Oct. 04, 2006 at DDBJ.  DAD Release 37 consists of 3,452,697 entries, and the total number of residues reached 1,052,890,111. <dd><a href="/services/index-e.html">FTP site for DB download</a></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -486,7 +486,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn060929"><a href="#wn060929">DDBJ Rel. 67 Completed</a></h2>
   <div class="news_date">September 29,2006</div>
-  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public. We completed DDBJ Release 67 in Sep. 30, 2006.  DDBJ Release 67 consists of 61,144,621 entries, and the number of bases reached 65,443,024,193.<dd><a href="/download-e.html">FTP site for periodical release and new data download</a></dd></dd></div>
+  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public. We completed DDBJ Release 67 in Sep. 30, 2006.  DDBJ Release 67 consists of 61,144,621 entries, and the number of bases reached 65,443,024,193.<dd><a href="/services/index-e.html">FTP site for periodical release and new data download</a></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -495,7 +495,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn060929_2"><a href="#wn060929_2">Report for The 19th International Collaborators Meeting</a></h2>
   <div class="news_date">September 29,2006</div>
-  <div class="news_content"><dd> DDBJ, EMBL-Bank/EBI, GenBank/NCBI hold the international collaborators meetings in every May for the porpose of the operation  and the implement of the collaborative construction of the international nucleotide sequence database.<dd>In the meeting, the three banks report each bank activities in the past year, and discussed some practical matters to maintain and to develop the nucleotide sequence database<br>under <a href="http://www.insdc.org/">INSDC; International Nucleotide Sequence Database collaboration</a>. <dd><a href="/activities/index-e.html#2006"> The report for The 19th International Collaborators Meeting</a> was placed on the DDBJ HP.   This report will also be provided in the  DDBJ Mail Magazine No.28.</dd></dd></dd></div>
+  <div class="news_content"><dd> DDBJ, EMBL-Bank/EBI, GenBank/NCBI hold the international collaborators meetings in every May for the porpose of the operation  and the implement of the collaborative construction of the international nucleotide sequence database.<dd>In the meeting, the three banks report each bank activities in the past year, and discussed some practical matters to maintain and to develop the nucleotide sequence database<br>under <a href="http://www.insdc.org/">INSDC; International Nucleotide Sequence Database collaboration</a>. <dd><a href="/activities/icm/2006-e"> The report for The 19th International Collaborators Meeting</a> was placed on the DDBJ HP.   This report will also be provided in the  DDBJ Mail Magazine No.28.</dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -738,7 +738,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn060719"><a href="#wn060719">DAD rel. 36 was released</a></h2>
   <div class="news_date">July 19,2006</div>
-  <div class="news_content"><dd>DDBJ amino acid database (DAD) Release36 was released on Jul. 19, 2006 at DDBJ.  DAD Release 36 consists of 3,223,773 entries,   and the total number of residues reached 986,599,459. <dd><a href="/download-e.html">FTP site for DB download</a></dd></dd></div>
+  <div class="news_content"><dd>DDBJ amino acid database (DAD) Release36 was released on Jul. 19, 2006 at DDBJ.  DAD Release 36 consists of 3,223,773 entries,   and the total number of residues reached 986,599,459. <dd><a href="/services/index-e.html">FTP site for DB download</a></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -864,7 +864,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn060629"><a href="#wn060629">DDBJ Rel. 66 Completed</a></h2>
   <div class="news_date">June 29,2006</div>
-  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public. We completed DDBJ Release 66 in June 29, 2006.  DDBJ Release 66 consists of 58,176,628 entries, and the number of bases reached 62,945,843,881.<dd><a href="/download-e.html">FTP site for periodical release and new data download</a></dd></dd></div>
+  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public. We completed DDBJ Release 66 in June 29, 2006.  DDBJ Release 66 consists of 58,176,628 entries, and the number of bases reached 62,945,843,881.<dd><a href="/services/index-e.html">FTP site for periodical release and new data download</a></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -1017,7 +1017,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn060517"><a href="#wn060517">The genome data are available from GIB by FTP</a></h2>
   <div class="news_date">May 17,2006</div>
-  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker)</a><br>    is the comprehensive data repository of complete genomes of the<br>    microorganisms and eukaryota. The FTP download site was opened to the<br>    public.  The genome sequence and annotation are download-able strain<br>    by strain from the top page of<br>    GIB (http://gib.genes.nig.ac.jp/)<br>    and also <a href="/services/services/past-services-e.html#gib">ftp://ftpgib.genes.nig.ac.jp/</a>.</dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a><br>    is the comprehensive data repository of complete genomes of the<br>    microorganisms and eukaryota. The FTP download site was opened to the<br>    public.  The genome sequence and annotation are download-able strain<br>    by strain from the top page of<br>    GIB (http://gib.genes.nig.ac.jp/)<br>    and also <a href="/services/past-services-e.html#gib">ftp://ftpgib.genes.nig.ac.jp/</a>.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -1314,7 +1314,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn060403_3"><a href="#wn060403_3">DDBJ Rel. 65 Completed</a></h2>
   <div class="news_date">April 03,2006</div>
-  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is<br>    quarterly released online to the public.<br>    We completed DDBJ Release 65 in March 30, 2006.<br>    DDBJ Release 65 consists of 55,890,995 entries, and the number of bases<br>    reached 60,564,721,635.<dd><a href="/download-e.html">FTP site for<br>    periodical release and new data download</a></dd></dd></div>
+  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is<br>    quarterly released online to the public.<br>    We completed DDBJ Release 65 in March 30, 2006.<br>    DDBJ Release 65 consists of 55,890,995 entries, and the number of bases<br>    reached 60,564,721,635.<dd><a href="/services/index-e.html">FTP site for<br>    periodical release and new data download</a></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -1440,7 +1440,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn060227_3"><a href="#wn060227_3">System failure on Homology search services</a></h2>
   <div class="news_date">February 27,2006</div>
-  <div class="news_content"><dd>The system failures were found in DDBJ's<br>    <a href="/searches.html">homology search<br>    services.</a> If you used DDBJ's homology search services during the<br>    following period, your search result might not be correct. The details<br>    are as follows.<ul><li><b>Period :</b> February 19, 2006<br> -</li><li><b>Affected services :</b>all homology search programs (WWW, E-mail)<br>    except for PSI-BLAST</li><li><b>Affected database :</b> nucleotide sequence database</li><li><b>Affected divisions :</b>     BCT (bacteria)<br>    GSS (genome survey sequences)<br>    INV¡Êinvertebrates¡Ë<br>    MAM¡Êmammals other than primates and rodents)<br>    PLN (plants)<br>    ROD¡Êrodents¡Ë<br>    SYN¡Êsynthetic DNAs¡Ë<br>    VRT¡Êvertebrates other than mammals¡Ë<br>    VRL¡Êviruses¡Ë    </li></ul><dd>The recovery of the system will be notified on this page as soon as the<br>    reparing works are finished.  We apologize for the inconvenience.</dd></dd></div>
+  <div class="news_content"><dd>The system failures were found in DDBJ's<br>    <a href="/services/index.html">homology search<br>    services.</a> If you used DDBJ's homology search services during the<br>    following period, your search result might not be correct. The details<br>    are as follows.<ul><li><b>Period :</b> February 19, 2006<br> -</li><li><b>Affected services :</b>all homology search programs (WWW, E-mail)<br>    except for PSI-BLAST</li><li><b>Affected database :</b> nucleotide sequence database</li><li><b>Affected divisions :</b>     BCT (bacteria)<br>    GSS (genome survey sequences)<br>    INV¡Êinvertebrates¡Ë<br>    MAM¡Êmammals other than primates and rodents)<br>    PLN (plants)<br>    ROD¡Êrodents¡Ë<br>    SYN¡Êsynthetic DNAs¡Ë<br>    VRT¡Êvertebrates other than mammals¡Ë<br>    VRL¡Êviruses¡Ë    </li></ul><dd>The recovery of the system will be notified on this page as soon as the<br>    reparing works are finished.  We apologize for the inconvenience.</dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -1674,7 +1674,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn060112"><a href="#wn060112">DAD rel. 34 was released</a></h2>
   <div class="news_date">January 12,2006</div>
-  <div class="news_content"><dd>DDBJ amino acid database (DAD) Release34 was released on Jan. 11, 2006<br>    at DDBJ.  DAD Release 34 consists of 2,799,119 entries,<br>    and the total number of residues reached 859,887,417. <dd><a href="/download-e.html">FTP site for DB download</a></dd></dd></div>
+  <div class="news_content"><dd>DDBJ amino acid database (DAD) Release34 was released on Jan. 11, 2006<br>    at DDBJ.  DAD Release 34 consists of 2,799,119 entries,<br>    and the total number of residues reached 859,887,417. <dd><a href="/services/index-e.html">FTP site for DB download</a></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>

@@ -14,7 +14,7 @@ lang: ja
 
 ## BioProject/BioSample/塩基配列データの連動公開の仕組みは？
 
-<p>相互にリンクされている <a href="/bioproject/index.html">BioProject</a>，<a href="/biosample/index.html">BioSample</a>，<a href="/ddbj/services/index.html">DDBJ</a> と <a href="/dra/index.html">DRA</a> に登録された塩基配列データの連動公開の仕組みは以下のようになっています。</p>
+<p>相互にリンクされている <a href="/bioproject/index.html">BioProject</a>，<a href="/biosample/index.html">BioSample</a>，<a href="/ddbj/submission.html">DDBJ</a> と <a href="/dra/index.html">DRA</a> に登録された塩基配列データの連動公開の仕組みは以下のようになっています。</p>
 <div class="sub_index">
   <ul class="disc">
     <li>BioProject の公開はリンクされているデータの連動公開を引き起こしません。</li>
@@ -26,4 +26,4 @@ lang: ja
 <figure><a href="{{ site.baseurl }}/assets/images/books/bp-bs-seq_release.jpg" title="BioProject/BioSample/塩基配列データの連動公開"><img src="{{ site.baseurl }}/assets/images/books/bp-bs-seq_release.jpg" alt="BioProject/BioSample/塩基配列データの連動公開" title="BioProject/BioSample/塩基配列データの連動公開" class="w450"></a>
   <figcaption class="caption">BioProject/BioSample/塩基配列データの連動公開</figcaption>
 </figure>
-<p>DRA Handbook: <a href="/dra/services/index.html#data-release">DRA のデータ公開</a><br>BioProject Handbook: <a href="/bioproject/services/index.html#data-release">BioProject のデータ公開</a><br>BioSample Handbook: <a href="/biosample/services/index.html#sample-release">BioSample のデータ公開</a></p>
+<p>DRA Handbook: <a href="/dra/submission.html#data-release">DRA のデータ公開</a><br>BioProject Handbook: <a href="/bioproject/submission.html#data-release">BioProject のデータ公開</a><br>BioSample Handbook: <a href="/biosample/submission.html#sample-release">BioSample のデータ公開</a></p>

@@ -18,5 +18,5 @@ lang: ja
 </dl>
 <dl><dt>参考</dt>
   <dd><a href="/faq/ja/reject-submission.html">送付した配列データが登録されないということはあるのですか</a></dd>
-  <dd><a href="/documents/documents/documents/data-categories.html">DDBJ に登録可能なデータ</a></dd>
+  <dd><a href="/documents/data-categories.html">DDBJ に登録可能なデータ</a></dd>
 </dl>

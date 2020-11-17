@@ -5,11 +5,11 @@ category: documents
 lang: ja
 related_pages:
   - title: 登録データ種別
-    url: /documents/documents/documents/data-categories.html
+    url: /documents/data-categories.html
   - title: データ公開原則
-    url: /documents/documents/documents/data-release-policy.html
+    url: /documents/data-release-policy.html
   - title: Prefix Letter List
-    url: /documents/documents/documents/prefix.html
+    url: /documents/prefix.html
 ---
 
 
@@ -27,26 +27,26 @@ INSD が正式に発行する**アクセッション番号**は、データに�
 ## INSD アクセッション番号の書式 <a name="format"></a>
 
 INSD アクセッション番号は アルファベット＋数字 で構成されています。
-アルファベットの部分を[プレフィックス](/documents/documents/documents/prefix.html)と呼びます。
-アクセッション番号の書式は [登録データ種別](/documents/documents/documents/data-categories.html)
+アルファベットの部分を[プレフィックス](/documents/prefix.html)と呼びます。
+アクセッション番号の書式は [登録データ種別](/documents/data-categories.html)
 によって、以下のように異なります。
 
 Annotated/Assembled Data
 
 |  conventional  |  アルファベット１文字＋５桁の数字: 例 A12345<br>アルファベット２文字＋６桁の数字: 例 AB123456<br>アルファベット２文字＋８桁の数字: 例 AB12345678  |
-|  bulk<br>[WGS](/ddbj/wgs.html),[TSA](/ddbj/tsa.html),[TLS](/ddbj/tls.html)  |  アルファベット４文字 ([For Large Scale Data](/documents/documents/documents/prefix.html#large))＋８～１０ 桁の数字: 例 ABCD01012345<br>アルファベット６文字 ([For Large Scale Data](/documents/documents/documents/prefix.html#large))＋８～１０ 桁の数字: 例 ABCDEF01012345  |
+|  bulk<br>[WGS](/ddbj/wgs.html),[TSA](/ddbj/tsa.html),[TLS](/ddbj/tls.html)  |  アルファベット４文字 ([For Large Scale Data](/documents/prefix.html#large))＋８～１０ 桁の数字: 例 ABCD01012345<br>アルファベット６文字 ([For Large Scale Data](/documents/prefix.html#large))＋８～１０ 桁の数字: 例 ABCDEF01012345  |
 |  [MGA](/ddbj/mga.html)  |  アルファベット５文字＋７ 桁以上の数字: 例 ABCDE1234567  |
-|  [protein_id](/ddbj/qualifiers.html#protein_id)  |  アルファベット３文字 ([protein_id prefix list](/documents/documents/documents/prefix.html#protein))＋５桁の数字: 例 ABC12345<br>アルファベット３文字 ([protein_id prefix list](/documents/documents/documents/prefix.html#protein))＋７桁の数字: 例 ABC1234567 |
+|  [protein_id](/ddbj/qualifiers.html#protein_id)  |  アルファベット３文字 ([protein_id prefix list](/documents/prefix.html#protein))＋５桁の数字: 例 ABC12345<br>アルファベット３文字 ([protein_id prefix list](/documents/prefix.html#protein))＋７桁の数字: 例 ABC1234567 |
 
 シークエンサ出力データ
 
 |  [Trace Archive](/dta/index.html)  |  アルファベット２文字 (TI のみ) ＋１ 桁以上の数字: 例 TI12345678  |
-|  [Sequece Read Archive](/dra/index.html)  |  アルファベット３文字 ([SRA prefix list](/documents/documents/documents/prefix.html#dra)) ＋６ 桁以上の数字: 例 DRA000001  |
+|  [Sequece Read Archive](/dra/index.html)  |  アルファベット３文字 ([SRA prefix list](/documents/prefix.html#dra)) ＋６ 桁以上の数字: 例 DRA000001  |
 
 研究プロジェクト・サンプル
 
-|  [BioProject](/bioproject/index.html)  |  アルファベット５文字 ([BioProject prefix list](/documents/documents/documents/prefix.html#project)) ＋１ 桁以上の数字: 例 PRJDA123  |
-|  [BioSample](/biosample/index.html)  |  アルファベット４文字 ([BioSample prefix](/documents/documents/documents/prefix.html#sample)) ＋８桁の数字: 例 SAMD00000001  |
+|  [BioProject](/bioproject/index.html)  |  アルファベット５文字 ([BioProject prefix list](/documents/prefix.html#project)) ＋１ 桁以上の数字: 例 PRJDA123  |
+|  [BioSample](/biosample/index.html)  |  アルファベット４文字 ([BioSample prefix](/documents/prefix.html#sample)) ＋８桁の数字: 例 SAMD00000001  |
 
 ## アクセッション番号と混同されるもの <a name="confuse"></a>
 

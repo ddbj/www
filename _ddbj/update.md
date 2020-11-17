@@ -5,10 +5,10 @@ category: ddbj
 lang: ja
 related_pages:
   - title: 登録データの修正・更新申し込み
-    url: services/updt-form.html
+    url: /ddbj/update-form.html
 ---
 
-[登録データ種別](/documents/documents/documents/data-categories.html)をご確認ください。
+[登録データ種別](/documents/data-categories.html)をご確認ください。
 
 ## DRA: DDBJ Sequece Read Archive, BioProject または BioSampleの場合 <a name="DRA__DDBJ_Sequece_Read_Archive,_BioProject_または_BioSampleの場合"></a>
 
@@ -32,7 +32,7 @@ related_pages:
 ## GenBank, EMBL-Bank に相当する狭義の DDBJ の場合 <a name="GenBank,_EMBL-Bank_に相当する狭義の_DDBJ_の場合"></a>
 
 依頼者について  
-: データを更新、あるいは、訂正等を加える場合、[登録者](/ddbj/services/index.html#submitter)としてデータに登録されている方からご連絡ください。<br>依頼者が登録者に含まれていない場合、登録者から連絡し直していただく必要があります。
+: データを更新、あるいは、訂正等を加える場合、[登録者](/ddbj/submission.html#submitter)としてデータに登録されている方からご連絡ください。<br>依頼者が登録者に含まれていない場合、登録者から連絡し直していただく必要があります。
 
 更新依頼の受付  
 : 更新依頼を受け付けましたら、追って返信メールを差し上げます。<br>ご依頼に関して、質問・確認事項がありましたら、ご連絡いたします。

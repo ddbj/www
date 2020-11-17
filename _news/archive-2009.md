@@ -162,7 +162,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn091026"><a href="#wn091026">BLAST での結果表示画面不具合のお詫び</a></h2>
   <div class="news_date">2009年10月26日</div>
-  <div class="news_content">DDBJ が WWW で提供している<a href="/searches.html" target="_blank">相同性検索サービス</a>の<br>うち，BLAST の Text View での結果表示画面にて，不具合が発生していたことが判明しました。詳細は以下の通りです。<ul><li>期間：2007年2月27日から2009年10月22日まで </li><li>対象サービス：BLAST </li><li>不具合の内容：BLAST の結果表示方法で Text View を選択した場合，結果表示画面にて，ClustalW 解析を行うための配列選択用<br>のチェックボックスの位置がずれていた。そのため，配列を選択して「GO TO CLUSTALW」をクリックした時に，選択した配列の1つ下の<br>配列が入力されてしまっていた。<br>なお，この不具合は表示のみに限定され，BLAST の検索結果には問題ありませんでした。 </li><li>対応：チェックボックスと配列が正しく並ぶように修正し，現在は正しく配置されています。 </li></ul><p>ユーザの皆様には長期間にわたりご迷惑をお掛けいたしました事を深くお詫び申し上ると共に，今後このような事態が発生することのないよう努めます。</p></div>
+  <div class="news_content">DDBJ が WWW で提供している<a href="/services/index.html" target="_blank">相同性検索サービス</a>の<br>うち，BLAST の Text View での結果表示画面にて，不具合が発生していたことが判明しました。詳細は以下の通りです。<ul><li>期間：2007年2月27日から2009年10月22日まで </li><li>対象サービス：BLAST </li><li>不具合の内容：BLAST の結果表示方法で Text View を選択した場合，結果表示画面にて，ClustalW 解析を行うための配列選択用<br>のチェックボックスの位置がずれていた。そのため，配列を選択して「GO TO CLUSTALW」をクリックした時に，選択した配列の1つ下の<br>配列が入力されてしまっていた。<br>なお，この不具合は表示のみに限定され，BLAST の検索結果には問題ありませんでした。 </li><li>対応：チェックボックスと配列が正しく並ぶように修正し，現在は正しく配置されています。 </li></ul><p>ユーザの皆様には長期間にわたりご迷惑をお掛けいたしました事を深くお詫び申し上ると共に，今後このような事態が発生することのないよう努めます。</p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -365,7 +365,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn090803"><a href="#wn090803">（緊急）相同性検索ならびに ClustalW サービスの一時休止</a></h2>
   <div class="news_date">2009年08月03日</div>
-  <div class="news_content">DDBJ が WWW で提供している<a href="/searches.html" target="_blank">相同性検索ならびに ClustalW</a> が，8月2日（日）6:00(JST)頃より停止し，現在検索・解析が行えない状態です。現在，原因の特定と復旧作業を急いでおります。サービス再開次第，HP にてお知らせいたします。<p>ご迷惑をお掛けいたしますが，ご理解とご協力をお願いいたします。<br><font class="red">復旧作業が終了し，サービスを再開しました。長時間にわたるサービス休止により，ユーザの皆様に大変ご迷惑をお掛けしましたことをお詫びいたします。（8月3日 17時40分）</font></p></div>
+  <div class="news_content">DDBJ が WWW で提供している<a href="/services/index.html" target="_blank">相同性検索ならびに ClustalW</a> が，8月2日（日）6:00(JST)頃より停止し，現在検索・解析が行えない状態です。現在，原因の特定と復旧作業を急いでおります。サービス再開次第，HP にてお知らせいたします。<p>ご迷惑をお掛けいたしますが，ご理解とご協力をお願いいたします。<br><font class="red">復旧作業が終了し，サービスを再開しました。長時間にわたるサービス休止により，ユーザの皆様に大変ご迷惑をお掛けしましたことをお詫びいたします。（8月3日 17時40分）</font></p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -446,7 +446,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn090707"><a href="#wn090707">相同性検索ならびに ClustalW サービスの一時休止</a></h2>
   <div class="news_date">2009年07月07日</div>
-  <div class="news_content">DDBJ が WWW で提供している<a href="/searches.html" target="_blank">相同性検索ならびに ClustalW</a> を下記の日程でサービスを休止します。<br>ul&gt;<li><b>休止日時</b> 2009年7月13日（月）11:30 - 13:30 (JST)（サービス再開次第，HP にてお知らせします）</li><li><b>対象サービス：</b> 相同性検索（FASTA, BLAST, PSI-BLAST, SSEARCH, HMMPFAM），ClustalW</li><li><b>休止理由：</b> システムメンテナンスのため</li><p>ご迷惑をお掛けいたしますが，ご理解とご協力をお願いいたします。<br><font class="red">メンテナンス作業は終了しました。ご協力ありがとうございました。（7月13日14時00分）</font></p></div>
+  <div class="news_content">DDBJ が WWW で提供している<a href="/services/index.html" target="_blank">相同性検索ならびに ClustalW</a> を下記の日程でサービスを休止します。<br>ul&gt;<li><b>休止日時</b> 2009年7月13日（月）11:30 - 13:30 (JST)（サービス再開次第，HP にてお知らせします）</li><li><b>対象サービス：</b> 相同性検索（FASTA, BLAST, PSI-BLAST, SSEARCH, HMMPFAM），ClustalW</li><li><b>休止理由：</b> システムメンテナンスのため</li><p>ご迷惑をお掛けいたしますが，ご理解とご協力をお願いいたします。<br><font class="red">メンテナンス作業は終了しました。ご協力ありがとうございました。（7月13日14時00分）</font></p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -473,7 +473,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn090610"><a href="#wn090610">GIB サービスの一時休止</a></h2>
   <div class="news_date">2009年06月10日</div>
-  <div class="news_content"><a href="/services/services/past-services-e.html#gib" target="_blank">GIB (Genome Information Broker) </a>サービスをシステムメンテナンスの為，下記の日程にて一時休止します。<ul><li><b>休止日時：</b>2009年6月30日（火） 9時より 7月2日（木） 17時まで</li><li><b>理由：</b>システムメンテナンス（OS バージョンアップ）</li></ul><p>皆様には大変ご迷惑をお掛けいたしますが，ご理解とご協力をお願いいたします。</p><p><font class="red">保守作業は終了しました。ご協力ありがとうございました。（7月1日14時45分）</font></p></div>
+  <div class="news_content"><a href="/services/past-services-e.html#gib" target="_blank">GIB (Genome Information Broker) </a>サービスをシステムメンテナンスの為，下記の日程にて一時休止します。<ul><li><b>休止日時：</b>2009年6月30日（火） 9時より 7月2日（木） 17時まで</li><li><b>理由：</b>システムメンテナンス（OS バージョンアップ）</li></ul><p>皆様には大変ご迷惑をお掛けいたしますが，ご理解とご協力をお願いいたします。</p><p><font class="red">保守作業は終了しました。ご協力ありがとうございました。（7月1日14時45分）</font></p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -482,7 +482,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn090605"><a href="#wn090605">相同性検索（Blast，Psi-Blast）検索不具合のお詫び</a></h2>
   <div class="news_date">2009年06月05日</div>
-  <div class="news_content">DDBJ が WWW で提供している<a href="/searches.html" target="_blank">相同性検索サービス</a>のうち ，Blast，Psi-Blast にて，下記の期間中，一部不具合が発生していたことが判明しました。詳細は以下の通りです。<ul><li>期間：2009年6月2日（火）20:32 (JST) - 6月3日（水）15:00 (JST) </li><li>対象サービス：BLAST，PSI-BLAST </li><li>対象データ：アミノ酸デフォルトデータ，Uniprot，Uniprot/TrEMBL </li><li>不具合の状況：上記条件で検索した場合、結果がヘッダのみで、検索結果が表示されない </li><li>原因：対象データのfastaデータに想定を超える長大データが存在したため </li><li>対応：既に対応が完了し，現在は正常に検索・解析を行なうことが可能です。 </li></ul><p>該当期間中にご利用いただきました解析については，再度，検索・解析の実行をお願いいたします。<br>ユーザの皆様にご迷惑をお掛けいたしました事を深くお詫び申し上げます。皆様のご理解とご協力をお願いいたします。</p></div>
+  <div class="news_content">DDBJ が WWW で提供している<a href="/services/index.html" target="_blank">相同性検索サービス</a>のうち ，Blast，Psi-Blast にて，下記の期間中，一部不具合が発生していたことが判明しました。詳細は以下の通りです。<ul><li>期間：2009年6月2日（火）20:32 (JST) - 6月3日（水）15:00 (JST) </li><li>対象サービス：BLAST，PSI-BLAST </li><li>対象データ：アミノ酸デフォルトデータ，Uniprot，Uniprot/TrEMBL </li><li>不具合の状況：上記条件で検索した場合、結果がヘッダのみで、検索結果が表示されない </li><li>原因：対象データのfastaデータに想定を超える長大データが存在したため </li><li>対応：既に対応が完了し，現在は正常に検索・解析を行なうことが可能です。 </li></ul><p>該当期間中にご利用いただきました解析については，再度，検索・解析の実行をお願いいたします。<br>ユーザの皆様にご迷惑をお掛けいたしました事を深くお詫び申し上げます。皆様のご理解とご協力をお願いいたします。</p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -590,7 +590,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn090415_2"><a href="#wn090415_2">getentry で韓国特許を検索した場合の結果の不具合についてのお詫び</a></h2>
   <div class="news_date">2009年04月15日</div>
-  <div class="news_content"><a href="http://getentry.ddbj.nig.ac.jp/top-j.html">getentry</a> は DDBJ が WWW で提供しているアクセッション番号などによる高速なエントリ検索システムです。このたび，DDBJ が getentry で公開している韓国特許庁の特許データのアミノ酸データに関して，一時的に誤ったデータを公開していたことが判明いたしました。詳細は以下の通りです。<ul><li><b>対象データベース :</b> Protein データベースの Patent</li><li><b>該当アクセッション番号</b>：DI500718 - DI613550 のうち4,541 エントリ（<a href="/files/pdf/koreanpatent090414.pdf">別紙参照</a>）</li><li><b>公開されていた期間</b>： 2009年3月31日から4月8日まで</li><li><b>原因</b>：既公開データに関して誤りのあった部分を修正し再公開する作業において，特許番号とアクセッション番号の対応関係がずれてしまった</li><li><b>対応</b>：問題があった修正分データは削除済で，現在は修正前の状態に戻っています。再公開分のデータについては，是正が完了次第，再公開する予定です。<font class="red">誤ったデータを是正の上，再公開致しました。現在は，<a href="http://getentry.ddbj.nig.ac.jp/top-j.html">getentry</a> にて，正しいデータが取得できます。( 5月 1日) </font></li></ul><p>ユーザの皆さまにはご迷惑をお掛けしますことをお詫びいたします。</p></div>
+  <div class="news_content"><a href="http://getentry.ddbj.nig.ac.jp/top-j.html">getentry</a> は DDBJ が WWW で提供しているアクセッション番号などによる高速なエントリ検索システムです。このたび，DDBJ が getentry で公開している韓国特許庁の特許データのアミノ酸データに関して，一時的に誤ったデータを公開していたことが判明いたしました。詳細は以下の通りです。<ul><li><b>対象データベース :</b> Protein データベースの Patent</li><li><b>該当アクセッション番号</b>：DI500718 - DI613550 のうち4,541 エントリ（<a href="{{ site.baseurl }}/assets/files/pdf/koreanpatent090414.pdf">別紙参照</a>）</li><li><b>公開されていた期間</b>： 2009年3月31日から4月8日まで</li><li><b>原因</b>：既公開データに関して誤りのあった部分を修正し再公開する作業において，特許番号とアクセッション番号の対応関係がずれてしまった</li><li><b>対応</b>：問題があった修正分データは削除済で，現在は修正前の状態に戻っています。再公開分のデータについては，是正が完了次第，再公開する予定です。<font class="red">誤ったデータを是正の上，再公開致しました。現在は，<a href="http://getentry.ddbj.nig.ac.jp/top-j.html">getentry</a> にて，正しいデータが取得できます。( 5月 1日) </font></li></ul><p>ユーザの皆さまにはご迷惑をお掛けしますことをお詫びいたします。</p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -626,7 +626,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn090408"><a href="#wn090408">微生物ゲノム再アノテーションデータベース2009年版公開</a></h2>
   <div class="news_date">2009年04月08日</div>
-  <div class="news_content"><a href="http://gtps.ddbj.nig.ac.jp/index_jp.php" target="_blank">GTPS(Gene Trek Prokaryote Space)</a> は，公開された原核生物のゲノム配列全件について，さまざまな解析を行ってその結果をもとにORFの確からしさにランキングを付与した再アノテーションデータベースです。これまで毎年更新してきましたが，2009年3月25日に690株のゲノムに対して再解析したデータベースを公開しました。今回は，データベースの更新に加えて，トップページやゲノムビューア，フィーチャビューアに共通メニューを設けるとともに<a href="http://gtps.ddbj.nig.ac.jp/procedure/index_jp.php" target="_blank">解析手順を分かりやすく説明したページ</a>も新たに公開しました。<br><table class="table_toumei"><tr><td class="td_toumei" align="center"><img src="{{ site.baseurl }}/assets/images/news/gtps090402-j.jpg"><br>新 GTPS トップページ。赤く囲んだ部分が共通メニュー</td><td class="td_toumei" align="center" valign="top"><img src="{{ site.baseurl }}/assets/images/news/gtps09040202-j.jpg"><br>解析手順をわかりやすく説明したページ</td></tr></table><p><span class="font-bold">参考：</span>GTPS について (DDBJ データバンク構築局　　小菅武英) <a href="/files/pdf/activities/DDBJ-CIB2007.pdf">DDBJ/CIR Report(2007)</a> 20ページ</p></div>
+  <div class="news_content"><a href="http://gtps.ddbj.nig.ac.jp/index_jp.php" target="_blank">GTPS(Gene Trek Prokaryote Space)</a> は，公開された原核生物のゲノム配列全件について，さまざまな解析を行ってその結果をもとにORFの確からしさにランキングを付与した再アノテーションデータベースです。これまで毎年更新してきましたが，2009年3月25日に690株のゲノムに対して再解析したデータベースを公開しました。今回は，データベースの更新に加えて，トップページやゲノムビューア，フィーチャビューアに共通メニューを設けるとともに<a href="http://gtps.ddbj.nig.ac.jp/procedure/index_jp.php" target="_blank">解析手順を分かりやすく説明したページ</a>も新たに公開しました。<br><table class="table_toumei"><tr><td class="td_toumei" align="center"><img src="{{ site.baseurl }}/assets/images/news/gtps090402-j.jpg"><br>新 GTPS トップページ。赤く囲んだ部分が共通メニュー</td><td class="td_toumei" align="center" valign="top"><img src="{{ site.baseurl }}/assets/images/news/gtps09040202-j.jpg"><br>解析手順をわかりやすく説明したページ</td></tr></table><p><span class="font-bold">参考：</span>GTPS について (DDBJ データバンク構築局　　小菅武英) <a href="{{ site.baseurl }}/assets/files/pdf/activities/DDBJ-CIB2007.pdf">DDBJ/CIR Report(2007)</a> 20ページ</p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>

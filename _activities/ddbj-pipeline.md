@@ -91,4 +91,4 @@ Sequence Read Archive (DRA)](/dra/index.html) のアカウントで利用可能�
 
 筆者が執筆者の一人でもあります [羊土社](https://www.yodosha.co.jp/index.html) から出版の [「使えるデータベース・ウェブツール](https://www.yodosha.co.jp/jikkenigaku/book/9784758103176/index.html)」 も併せてご覧下さい。
 
-また，2011年6月30日に講師を務めました「第24回 DDBJing 講習会 in 東京」での[講義資料](/ddbjing-archives.html) もご参照下さい。
+また，2011年6月30日に講師を務めました「第24回 DDBJing 講習会 in 東京」での[講義資料](/activities/index.html) もご参照下さい。

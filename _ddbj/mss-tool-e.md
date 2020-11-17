@@ -5,17 +5,17 @@ category: ddbj
 lang: en
 related_pages:
   - title: Submission File Format
-    url: services/file-format-e.html
+    url: /ddbj/file-format-e.html
   - title: UME User’s manual
-    url: services/ume-e.html
+    url: /ddbj/ume-e.html
   - title: Parser User’s Manual
-    url: services/parser-e.html
+    url: /ddbj/parser-e.html
   - title: transChecker User’s Manual
-    url: services/transchecker-e.html
+    url: /ddbj/transchecker-e.html
   - title: Validator error message
-    url: services/validator-e.html
+    url: /ddbj/validator-e.html
   - title: Application form for MSS
-    url: services/mass-form-e.html
+    url: /ddbj/mss-form-e.html
 ---
 
 ## System requirements <a name="system"></a>

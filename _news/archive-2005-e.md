@@ -9,7 +9,7 @@ lang: en
 <div class="news_post firstpost">
   <h2 class="news_title" id="wn051228"><a href="#wn051228">DDBJ Rel. 64 Completed</a></h2>
   <div class="news_date">2005年12月28日</div>
-  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public.We completed DDBJ Release 64 in Dec. 28, 2005.DDBJ Release 64 consists of 52,272,669 entries, and the number of bases reached 56,098,558,378.<dd>In the present release, some of index files (ddbjacc.idx, ddbjjou.idx, and ddbjkey.idx) are greater than 2 GB in the file size.  For details, please refer to <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.64.txt">Release note</a><dd><a href="/download-e.html">FTP site for periodical release and new data download</a></dd></dd></dd></div>
+  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public.We completed DDBJ Release 64 in Dec. 28, 2005.DDBJ Release 64 consists of 52,272,669 entries, and the number of bases reached 56,098,558,378.<dd>In the present release, some of index files (ddbjacc.idx, ddbjjou.idx, and ddbjkey.idx) are greater than 2 GB in the file size.  For details, please refer to <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.64.txt">Release note</a><dd><a href="/services/index-e.html">FTP site for periodical release and new data download</a></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -18,7 +18,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn051228_2"><a href="#wn051228_2">PRI division data were misclassified as HUM in release 63</a></h2>
   <div class="news_date">December 28,2005</div>
-  <div class="news_content"><dd>The 37 PRI entries (see the list) were included in the HUM division of DDBJ previous release 63 by our mistake. Details are as follows.<dd><b>Corresponding release</b><br>    DDBJ release 63 (September 2005)<dd><b>Relevant Accession numbers</b><br>    See <a href="/files/pdf/051228-list.html">the list</a><dd><b>Measures:</b><br>    These 37 entries are correctly included in the PRI division of DDBJ<br>    release 64 (December 2005)<br>    On the getentry and anonymous FTP, the corrected entries have already<br>    been available.<dd><b>Affected DDBJ services and period:</b><br>    All services including the following services<br>    - getentry (eearly October, 2005 - 2005/12/28)<br>    - Anonymous FTP (2005/9/30 - 2005/12/28)<br>    - SRS, ARSA, Homology Search services (early October, 2005 - mid-January,<br>      2006 *)<br>    *Please note that some services will be affected by this trouble even<br>    after release 64 is released, for a short time.<br>    We apologize for our mistake very much.</dd></dd></dd></dd></dd></div>
+  <div class="news_content"><dd>The 37 PRI entries (see the list) were included in the HUM division of DDBJ previous release 63 by our mistake. Details are as follows.<dd><b>Corresponding release</b><br>    DDBJ release 63 (September 2005)<dd><b>Relevant Accession numbers</b><br>    See <a href="{{ site.baseurl }}/assets/files/pdf/051228-list.html">the list</a><dd><b>Measures:</b><br>    These 37 entries are correctly included in the PRI division of DDBJ<br>    release 64 (December 2005)<br>    On the getentry and anonymous FTP, the corrected entries have already<br>    been available.<dd><b>Affected DDBJ services and period:</b><br>    All services including the following services<br>    - getentry (eearly October, 2005 - 2005/12/28)<br>    - Anonymous FTP (2005/9/30 - 2005/12/28)<br>    - SRS, ARSA, Homology Search services (early October, 2005 - mid-January,<br>      2006 *)<br>    *Please note that some services will be affected by this trouble even<br>    after release 64 is released, for a short time.<br>    We apologize for our mistake very much.</dd></dd></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -144,7 +144,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn051122"><a href="#wn051122">Incomplete release of WGS data at FTP</a></h2>
   <div class="news_date">November 22,2005</div>
-  <div class="news_content"><dd>DDBJ releases <a href="/ddbj/wgs-e.html">WGS data</a> at <a href="/download-e.html">anonymous ftp</a> site. <dd>WGS data were not released from September 8th to November 10th at DDBJ ftp site. We had already added the un-released data, and now all wgs data are available.<dd>We apologize for this very much. <dd><a href="/files/pdf/051121-list.html">List of released files</a></dd></dd></dd></dd></div>
+  <div class="news_content"><dd>DDBJ releases <a href="/ddbj/wgs-e.html">WGS data</a> at <a href="/services/index-e.html">anonymous ftp</a> site. <dd>WGS data were not released from September 8th to November 10th at DDBJ ftp site. We had already added the un-released data, and now all wgs data are available.<dd>We apologize for this very much. <dd><a href="{{ site.baseurl }}/assets/files/pdf/051121-list.html">List of released files</a></dd></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -315,7 +315,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn051019"><a href="#wn051019">DAD rel. 33 was released</a></h2>
   <div class="news_date">October 19,2005</div>
-  <div class="news_content"><dd>DDBJ amino acid database (DAD) Release 33 was released on Oct. 19, 2005　at DDBJ.  DAD Release 33 consists of 2,587,809 entries, and the total number of residues reached 794,393,760. <dd><a href="/download-e.html">FTP site for DB download</a></dd></dd></div>
+  <div class="news_content"><dd>DDBJ amino acid database (DAD) Release 33 was released on Oct. 19, 2005　at DDBJ.  DAD Release 33 consists of 2,587,809 entries, and the total number of residues reached 794,393,760. <dd><a href="/services/index-e.html">FTP site for DB download</a></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -342,7 +342,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn051004_2"><a href="#wn051004_2">Chimpanzee Genome sequencing completed</a></h2>
   <div class="news_date">October 04,2005</div>
-  <div class="news_content"><dd>Draft sequence of the chimpanzee genome was analyzed by the Chimpanzee Sequencing and Analysis Consortium, and published in <a href="http://www.nature.com/nature/journal/v437/n7055/full/nature04072.html">Nature. 2005 Sep 1;437(7055):69-87.</a><dd>Chimpanzee is the humankind's closest living relative. Comparison of the genomes between human and chimpanzee will assist understanding human specific functions and the mechanism of evolution from primates to human.<dd>The data was submitted to DDBJ/EMBL/GenBank International Nucleotide Sequence Databases as <a href="/ddbj/wgs-e.html">whole genome shotgun (WGS) </a>sequences data which is available via DDBJ <a href="http://getentry.ddbj.nig.ac.jp/top-e.html">getentry </a>system. Or the data is also available by downloading from <a href="/download-e.html">anonymous ftp of the DDBJ" page</a> or WGS ftp site (AACZ.gz, AADA.gz).<dd>Chimpanzee chromosome 22 DNA sequencing had already been completed by The International Chimpanzee Chromosome 22 Consortium in last May, and  the result was published in <a href="http://www.nature.com/nature/journal/v429/n6990/full/nature02564.html">Nature</a>.</dd></dd></dd></dd></div>
+  <div class="news_content"><dd>Draft sequence of the chimpanzee genome was analyzed by the Chimpanzee Sequencing and Analysis Consortium, and published in <a href="http://www.nature.com/nature/journal/v437/n7055/full/nature04072.html">Nature. 2005 Sep 1;437(7055):69-87.</a><dd>Chimpanzee is the humankind's closest living relative. Comparison of the genomes between human and chimpanzee will assist understanding human specific functions and the mechanism of evolution from primates to human.<dd>The data was submitted to DDBJ/EMBL/GenBank International Nucleotide Sequence Databases as <a href="/ddbj/wgs-e.html">whole genome shotgun (WGS) </a>sequences data which is available via DDBJ <a href="http://getentry.ddbj.nig.ac.jp/top-e.html">getentry </a>system. Or the data is also available by downloading from <a href="/services/index-e.html">anonymous ftp of the DDBJ" page</a> or WGS ftp site (AACZ.gz, AADA.gz).<dd>Chimpanzee chromosome 22 DNA sequencing had already been completed by The International Chimpanzee Chromosome 22 Consortium in last May, and  the result was published in <a href="http://www.nature.com/nature/journal/v429/n6990/full/nature02564.html">Nature</a>.</dd></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -369,7 +369,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn050930"><a href="#wn050930">DDBJ Rel. 63 Completed</a></h2>
   <div class="news_date">September 30,2005</div>
-  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public.We completed DDBJ Release 63 in Sep, 30, 2005. DDBJ Release 63 consists of 47,741,593 entries, and the number of bases reached 52,246,110,341.<dd><a href="/download-e.html">FTP site for periodical release and new data download</a></dd></dd></div>
+  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public.We completed DDBJ Release 63 in Sep, 30, 2005. DDBJ Release 63 consists of 47,741,593 entries, and the number of bases reached 52,246,110,341.<dd><a href="/services/index-e.html">FTP site for periodical release and new data download</a></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -477,7 +477,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn050804"><a href="#wn050804">DDBJ release 62.0 revised as 62.1</a></h2>
   <div class="news_date">August 04,2005</div>
-  <div class="news_content"><dd>Duplication of the AE006470 was found in the DDBJ release 62.0 (released on June 2005).<dd>Nature of inconsistency: The entry AE006470 was found in both BCT and CON divisions.<dd>Measures implemented: The AE006470 in the BCT division is the latest one, so we removed the old AE006470 in the CON division and released again on August 4, 2005.<dd>Corrected file: ddbjcon.seq<dd>We DDBJ regret our mistake.<dd><a href="/download-e.html">FTP site for periodical release and new data download</a></dd></dd></dd></dd></dd></dd></div>
+  <div class="news_content"><dd>Duplication of the AE006470 was found in the DDBJ release 62.0 (released on June 2005).<dd>Nature of inconsistency: The entry AE006470 was found in both BCT and CON divisions.<dd>Measures implemented: The AE006470 in the BCT division is the latest one, so we removed the old AE006470 in the CON division and released again on August 4, 2005.<dd>Corrected file: ddbjcon.seq<dd>We DDBJ regret our mistake.<dd><a href="/services/index-e.html">FTP site for periodical release and new data download</a></dd></dd></dd></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -486,7 +486,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn050726"><a href="#wn050726">DAD rel. 32 was released</a></h2>
   <div class="news_date">July 26,2005</div>
-  <div class="news_content"><dd>DDBJ amino acid database (DAD) Release32 was released on Jul. 26, 2005　at DDBJ.  DAD Release consists of 2,429,195 entries,and the total number of residues reached 745,907,868 aa. <dd><a href="/download-e.html">FTP site for DB download</a></dd></dd></div>
+  <div class="news_content"><dd>DDBJ amino acid database (DAD) Release32 was released on Jul. 26, 2005　at DDBJ.  DAD Release consists of 2,429,195 entries,and the total number of residues reached 745,907,868 aa. <dd><a href="/services/index-e.html">FTP site for DB download</a></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -549,7 +549,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn050630"><a href="#wn050630">DDBJ Rel. 62 Completed</a></h2>
   <div class="news_date">June 30,2005</div>
-  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public.We completed DDBJ Release 62 in Jun. 30, 2005.DDBJ Release 62 consists of 45,249,444 entries, and the number of bases reached 49,158,155,283.<a href="#050614">Env division</a> started from this release.<dd><a href="/download-e.html">FTP site for periodical release and new data download</a></dd></dd></div>
+  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public.We completed DDBJ Release 62 in Jun. 30, 2005.DDBJ Release 62 consists of 45,249,444 entries, and the number of bases reached 49,158,155,283.<a href="#050614">Env division</a> started from this release.<dd><a href="/services/index-e.html">FTP site for periodical release and new data download</a></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -639,7 +639,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn050425"><a href="#wn050425">DAD rel. 31 was released</a></h2>
   <div class="news_date">April 25,2005</div>
-  <div class="news_content"><dd>DDBJ amino acid database (DAD) Release 31 was released on Apr. 25, 2005 at DDBJ.  DAD Release consists of 2,309,392 entries,and the total number of residues reached 709,797,357. <dd><a href="/download-e.html">FTP site for DB download</a></dd></dd></div>
+  <div class="news_content"><dd>DDBJ amino acid database (DAD) Release 31 was released on Apr. 25, 2005 at DDBJ.  DAD Release consists of 2,309,392 entries,and the total number of residues reached 709,797,357. <dd><a href="/services/index-e.html">FTP site for DB download</a></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -657,7 +657,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn050406"><a href="#wn050406">DDBJ Rel. 61 Completed</a></h2>
   <div class="news_date">April 06,2005</div>
-  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public.We completed DDBJ Release 61 in Apr. 6, 2005.DDBJ Release 61 consists of 43,118,204 entries, and the number of bases reached 47,099,081,750.The style of release note has been changed, dramatically. <dd><a href="/download-e.html">FTP site for periodical release and new data download</a></dd></dd></div>
+  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public.We completed DDBJ Release 61 in Apr. 6, 2005.DDBJ Release 61 consists of 43,118,204 entries, and the number of bases reached 47,099,081,750.The style of release note has been changed, dramatically. <dd><a href="/services/index-e.html">FTP site for periodical release and new data download</a></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -810,7 +810,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn050207"><a href="#wn050207">Data were added to GIB</a></h2>
   <div class="news_date">February 07,2005</div>
-  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences. Because the genome sequence data of <i>Ehrlichia ruminantium Gardel</i>, <i>Ehrlichia ruminantium Welgevonden (CIRAD)</i>, <i>Wolbachia endosymbiont TRS of Brugia malayi</i> and <i>Xanthomonas oryzae pv. oryzae KACC10331</i> were released, we incorporated them to GIB, and now you can search those data. <dd><small>References (Institutes): </small><dd><small><b><i>Ehrlichia ruminantium Gardel</i> (CIRAD):</b> Nucleic Acids Res, Unpublished</small><dd><small><b><i>Ehrlichia ruminantium Welgevonden (CIRAD)</i> (CIRAD):</b> Nucleic Acids Res, Unpublished</small><dd><small><b><i>Wolbachia endosymbiont TRS of Brugia malayi</i> (New England Biolabs ):</b> The Wolbachia genome of Brugia malayi: endosymbiont evolution within a human pathogenic nematode, PLoS Biol. (2005) In press</small><dd><small><b><i>Xanthomonas oryzae pv. oryzae KACC10331</i> (National Institute of Agricultural Biotechnology):</b> The genome sequence of Xanthomonas oryzae pathovar oryzae KACC10331, the bacterial blight pathogen of rice, Nucleic Acids Res. 33 (2), 577-586 (2005)</small></dd></dd></dd></dd></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences. Because the genome sequence data of <i>Ehrlichia ruminantium Gardel</i>, <i>Ehrlichia ruminantium Welgevonden (CIRAD)</i>, <i>Wolbachia endosymbiont TRS of Brugia malayi</i> and <i>Xanthomonas oryzae pv. oryzae KACC10331</i> were released, we incorporated them to GIB, and now you can search those data. <dd><small>References (Institutes): </small><dd><small><b><i>Ehrlichia ruminantium Gardel</i> (CIRAD):</b> Nucleic Acids Res, Unpublished</small><dd><small><b><i>Ehrlichia ruminantium Welgevonden (CIRAD)</i> (CIRAD):</b> Nucleic Acids Res, Unpublished</small><dd><small><b><i>Wolbachia endosymbiont TRS of Brugia malayi</i> (New England Biolabs ):</b> The Wolbachia genome of Brugia malayi: endosymbiont evolution within a human pathogenic nematode, PLoS Biol. (2005) In press</small><dd><small><b><i>Xanthomonas oryzae pv. oryzae KACC10331</i> (National Institute of Agricultural Biotechnology):</b> The genome sequence of Xanthomonas oryzae pathovar oryzae KACC10331, the bacterial blight pathogen of rice, Nucleic Acids Res. 33 (2), 577-586 (2005)</small></dd></dd></dd></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -846,7 +846,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn050126"><a href="#wn050126">Genome data was added to GIB</a></h2>
   <div class="news_date">January 26,2005</div>
-  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.Because the genome sequence data of <i>Gluconobacter oxydans 621H</i> was released by Goettingen Genomics Laboratory, we incorporated it to GIB, and now you can search those data.<dd><small>Reference: Complete genome sequence of the acetogenic bacterium Gluconobacter oxydans, Nat. Biotechnol. (2005) In press</small></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.Because the genome sequence data of <i>Gluconobacter oxydans 621H</i> was released by Goettingen Genomics Laboratory, we incorporated it to GIB, and now you can search those data.<dd><small>Reference: Complete genome sequence of the acetogenic bacterium Gluconobacter oxydans, Nat. Biotechnol. (2005) In press</small></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -855,7 +855,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn050124"><a href="#wn050124">Release of a large amount of transcript sequences in new category MGA (Mass sequence for Genome Annotation)</a></h2>
   <div class="news_date">January 24,2005</div>
-  <div class="news_content"><dd>The International Nucleotide Sequence Databases (INSD) discussed the issue of receiving and releasing huge amounts of transcript sequence, each of which is a 5' end short-length transcript approximately 20 bp in length. They are produced by the CAGE (Cap Analysis Genome Expression) method and thus called the CAGE sequences.  INSD then agreed that the sequences be submitted and released as a new category, MGA (Mass sequence for Genome Annotation), because the sequences are of new type and not fit to any of the extant divisions or categories.<dd> <dd><b>Definition of MGA</b><dd>MGA is defined as those sequences which are produced in large quantity in view of genome annotation.<dd> <dd>The first set of MGA was released on January 24, 2005.  The MGA data for mouse were submitted from Dr. Yoshihide Hayashizaki and his colleagues of the Genome Sciences Center at RIKEN.  The total number of sequence entries this time is 383,264.  The MGA data can be downloaded at the ftp site,<dd> <dd>URL:<a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/mga/project_index.html">ftp://ftp.ddbj.nig.ac.jp/ddbj_database/mga/project_index.html</a><dd> <dd>You can jump to the above ftp site from "<a href="/download-e.html">Anonymous FTP of the DDBJ</a>" page of DDBJ HP.<dd>Most of the present MGA sequences are associated with the gene expression data which have already been released at CIBEX (<a href="//cibex.nig.ac.jp/data/index.html">http://cibex.nig.ac.jp/index.jsp</a>), one of the international gene expression databases, operated at the Center for Information Biology and DNA Data Bank of Japan.</dd></dd></dd></dd></dd></dd></dd></dd></dd></dd></dd></div>
+  <div class="news_content"><dd>The International Nucleotide Sequence Databases (INSD) discussed the issue of receiving and releasing huge amounts of transcript sequence, each of which is a 5' end short-length transcript approximately 20 bp in length. They are produced by the CAGE (Cap Analysis Genome Expression) method and thus called the CAGE sequences.  INSD then agreed that the sequences be submitted and released as a new category, MGA (Mass sequence for Genome Annotation), because the sequences are of new type and not fit to any of the extant divisions or categories.<dd> <dd><b>Definition of MGA</b><dd>MGA is defined as those sequences which are produced in large quantity in view of genome annotation.<dd> <dd>The first set of MGA was released on January 24, 2005.  The MGA data for mouse were submitted from Dr. Yoshihide Hayashizaki and his colleagues of the Genome Sciences Center at RIKEN.  The total number of sequence entries this time is 383,264.  The MGA data can be downloaded at the ftp site,<dd> <dd>URL:<a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/mga/project_index.html">ftp://ftp.ddbj.nig.ac.jp/ddbj_database/mga/project_index.html</a><dd> <dd>You can jump to the above ftp site from "<a href="/services/index-e.html">Anonymous FTP of the DDBJ</a>" page of DDBJ HP.<dd>Most of the present MGA sequences are associated with the gene expression data which have already been released at CIBEX (<a href="//cibex.nig.ac.jp/data/index.html">http://cibex.nig.ac.jp/index.jsp</a>), one of the international gene expression databases, operated at the Center for Information Biology and DNA Data Bank of Japan.</dd></dd></dd></dd></dd></dd></dd></dd></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -873,7 +873,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn050120_2"><a href="#wn050120_2">Data was added to GIB</a></h2>
   <div class="news_date">January 20,2005</div>
-  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences. Because the genome sequence data of <i>Staphylococcus epidermidis RP62A</i> was released by TIGR, we incorporated it to GIB, and now you can search this data. <dd><small>Reference: </small><dd><small><b><i>Staphylococcus epidermidis RP62A </i></b>genome sequence, Unpublished (2004)</small></dd></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences. Because the genome sequence data of <i>Staphylococcus epidermidis RP62A</i> was released by TIGR, we incorporated it to GIB, and now you can search this data. <dd><small>Reference: </small><dd><small><b><i>Staphylococcus epidermidis RP62A </i></b>genome sequence, Unpublished (2004)</small></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -882,7 +882,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn050118"><a href="#wn050118">PIR rel. 80 was released</a></h2>
   <div class="news_date">January 18,2005</div>
-  <div class="news_content"><dd>PIR Release 80 was released on Jan. 21, 2005 at DDBJ.  PIR Release consists of 283,416 entries,and the total number of residues reached 96,216,763. <dd><a href="/download-e.html">FTP site for DB download</a></dd></dd></div>
+  <div class="news_content"><dd>PIR Release 80 was released on Jan. 21, 2005 at DDBJ.  PIR Release consists of 283,416 entries,and the total number of residues reached 96,216,763. <dd><a href="/services/index-e.html">FTP site for DB download</a></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -891,7 +891,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn050118_2"><a href="#wn050118_2">DAD rel. 30 was released</a></h2>
   <div class="news_date">January 18,2005</div>
-  <div class="news_content"><dd>DDBJ amino acid database (DAD) Release 30 was released on Jan. 18, 2005at DDBJ.  DAD Release consists of 2,169,069 entries,and the total number of residues reached 669,311,612. <dd><a href="/download-e.html">FTP site for DB download</a></dd></dd></div>
+  <div class="news_content"><dd>DDBJ amino acid database (DAD) Release 30 was released on Jan. 18, 2005at DDBJ.  DAD Release consists of 2,169,069 entries,and the total number of residues reached 669,311,612. <dd><a href="/services/index-e.html">FTP site for DB download</a></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>

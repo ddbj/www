@@ -110,7 +110,7 @@ Analysis に登録することができます。Analysis に登録できるフ�
 
 ## メタデータ <a name="metadata"></a>
 
-AGD データモデルは [Sequence Read Archive](/dra/services/index.html) のモデルを拡張してつくられています。 AGD メタデータは XML オブジェクトで構成されています。
+AGD データモデルは [Sequence Read Archive](/dra/submission.html) のモデルを拡張してつくられています。 AGD メタデータは XML オブジェクトで構成されています。
 
 AGD XML schema: [AGD xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 

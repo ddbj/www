@@ -5,17 +5,17 @@ category: services
 lang: en
 related_pages:
   - title: Example of Submission
-    url: /ddbj/example-e.html)
+    url: /ddbj/example-e.html
   - title: Feature Key
-    url: /ddbj/features-e.html)
+    url: /ddbj/features-e.html
   - title: Qualifier key
-    url: /ddbj/qualifiers-e.html)
+    url: /ddbj/qualifiers-e.html
   - title: Organism qualifier
-    url: /ddbj/organism-e.html)
+    url: /ddbj/organism-e.html
   - title: Protein Coding Sequence; CDS feature
-    url: /ddbj/cds-e.html)
+    url: /ddbj/cds-e.html
   - title: Description of Location
-    url: /ddbj/location-e.html)
+    url: /ddbj/location-e.html
 ---
 
 ## Before Nucleotide Sequence Submission <a name="responsibility"></a>
@@ -23,12 +23,12 @@ related_pages:
 ### Purpose and Significance of Nucleotide Sequence Submission <a name="purpose"></a>
 
 In many scientific journals, it is required to assign and to describe
-[INSDC accession number](/documents/accessions.html) for a nucleotide sequence on
+[INSDC accession number](/documents/accessions-e.html) for a nucleotide sequence on
 the research paper. DDBJ is a member of [International Nucleotide
 Sequence Database Collaboration (INSDC)](http://www.insdc.org/).
 
 When you wish to publicize your sequence through DDBJ, and your sequence
-is [acceptable](/documents/accessions.html) for DDBJ, you can submit your sequence
+is [acceptable](/documents/accessions-e.html) for DDBJ, you can submit your sequence
 to DDBJ, even if you have no plan to publication of any research paper
 related to the sequence.
 
@@ -82,7 +82,7 @@ is modified following user's claim or not.
 Basically, it is required for the submitters to response user's inquiry
 about their own entry. When you wish to contact to the submitter(s) of
 an entry of your interest, please contact us through [the inquiry
-form](/contact-e.html#to-submitter) with reasons briefly, then we will
+form](/contact-ddbj-e.html#to-submitter) with reasons briefly, then we will
 forward your message to the submitter(s). So, [do not block E-mails from
 DDBJ](/precautions-e.html).
 
@@ -96,13 +96,13 @@ opinions.
 During preparation/submission of [primary citation](#pcite), DDBJ can
 store your registration information privately in the meantime. If
 necessary, submitters have to include a [hold
-date](/ddbj/services/index.html#holddate) in their registration
+date](/ddbj/submission.html#holddate) in their registration
 information. Then, the entry with a hold date is stored privately at
 DDBJ. DDBJ must maintain registration information as confidential until
 publication of the entry.
 
 The hold data will be open to the public according to [principle of data
-release](/documents/documents/documents/data-release-policy.html).
+release](/documents/data-release-policy-e.html).
 
 In principle, [even submitters cannot remove their own
 entry](/ddbj/update-e.html#q9) if the entry has already been released
@@ -148,7 +148,7 @@ necessary
 If you selected "hold until published", it is required to specify the
 "hold date" of your data.  
 Reference: [Principle of "Hold-Until-Published" data
-release](/documents/documents/data-release-policy-e.html)
+release](/documents/data-release-policy-e.html)
 
 
 ### Number of sequences <a name="number"></a>
@@ -259,7 +259,7 @@ address" field.
 This notification is normally sent within five business days after
 receipt of the data.  
 If you do not hear from us within this time period, please [contact
-us](/contact-e.html#to-ddbj).
+us](/contact-ddbj-e.html#to-ddbj).
 
 
 ### 4 Report of Data Releasing <a name="releasing"></a>
@@ -282,11 +282,11 @@ number) for details.
   <tbody>
     <tr>
       <th>For general inquiry on DDBJ</th>
-      <td><a href="/contact-e.html#to-ddbj">Contact form</a></td>
+      <td><a href="/contact-ddbj-e.html#to-ddbj">Contact form</a></td>
     </tr>
     <tr>
       <th>For data submission</th>
-      <td><a href="/contact-e.html#to-ddbj">Contact form</a></td>
+      <td><a href="/contact-ddbj-e.html#to-ddbj">Contact form</a></td>
     </tr>
     <tr>
       <th>For updating submitted data</th>
@@ -318,7 +318,7 @@ Following figure shows the dataflow from new submission to release and update at
     </li>
   <li>
     Release of Sequence Data<br>
-    DDBJ releases the submitted data that specified to be open to the public immediately, as soon as possible after processing. The submitted entry that is specified to hold until publication will be released according to <a href="/documents/documents/data-release-policy-e.html">principle of data release</a>. When the accession number of the hold entry is published, the entry will be released with no exception and no permission from the submitter. Everyone can request DDBJ to release the unpublished data whose accession numbers are on the published papers.
+    DDBJ releases the submitted data that specified to be open to the public immediately, as soon as possible after processing. The submitted entry that is specified to hold until publication will be released according to <a href="/documents/data-release-policy-e.html">principle of data release</a>. When the accession number of the hold entry is published, the entry will be released with no exception and no permission from the submitter. Everyone can request DDBJ to release the unpublished data whose accession numbers are on the published papers.
     </li>
   <li>
     Availability of Released Data<br>
@@ -330,7 +330,7 @@ Following figure shows the dataflow from new submission to release and update at
   </li>
   <li>
     Feed back for Released Data<br>
-    If you have comments or questions for released data, please contact the submitters of each entry. If you can not directly contact the submitters, please contact us through <a href="/contact-e.html">the inquiry form</a> with reasons
+    If you have comments or questions for released data, please contact the submitters of each entry. If you can not directly contact the submitters, please contact us through <a href="/contact-ddbj-e.html">the inquiry form</a> with reasons
   </li>
   <li>
     <a href="#right">Only submitters of the entry can update and modify the entry</a>. After data madification, the submitter of the entry can also specify either of immediate release or hold until publication. However, in principle, if the entry have already been open to the public, the entry can not restore hold.
@@ -361,7 +361,7 @@ representative to correspond with DDBJ and its users.
     file](/ddbj/flat-file-e.html).
 When you wishes to contact to the submitter(s) of an entry of your
 interest, please contact us with [the inquiry
-form](/contact-e.html#to-submitters) with reasons briefly, then we
+form](/contact-ddbj-e.html#to-submitters) with reasons briefly, then we
 will forward your message to the submitter(s).
 
 Accept date <a name="acceptdate"></a>
@@ -372,7 +372,7 @@ Hold date  <a name="holddate"></a>
 : "Hold date" is the date to start the distribution of the entry.
 Submitter can specify the date, if necessary  
 Reference: [Principle of "Hold-Until-Published" data
-release](/documents/documents/data-release-policy-e.html)
+release](/documents/data-release-policy-e.html)
 
 Working day <a name="working-day"></a>
 : DDBJ Center takes days off not only every Saturday and Sunday but
@@ -381,7 +381,7 @@ holidays](//eco.mtk.nao.ac.jp/koyomi/faq/holiday.html.en), year-end
 and new year holidays (from December 29th to January 3rd) and summer
 holidays of [the Research Organization of Information and
 Systems](http://www.rois.ac.jp/en/index.html) (two days in August).
-See also [DDBJ Calendar](/calendar-e.html).
+See also DDBJ Calendar.
 
 Flat file <a name="flatfile"></a>
 : "Flat file" is the DDBJ format for distribution.  

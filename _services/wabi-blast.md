@@ -21,7 +21,7 @@ WABI は、 BLAST を利用するための Web API を提供しています。
     ID](#parameter-Request-ID) を返します。  
     検索ジョブは、キューに登録されると「待機」→「実行」→「完了」と状態が遷移して行きます。  
     状態が「完了」になると検索結果を閲覧できますが、閲覧期間は実行後 7日間 です。  
-    ( [「Request ID，検索結果表示」]({{site.baseurl}}/services/services/blast.html#result) の「検索結果閲覧期間」より。)
+    ( [「Request ID，検索結果表示」]({{site.baseurl}}/services/blast.html#result) の「検索結果閲覧期間」より。)
   - 指定された [Request ID](#parameter-Request-ID) に対する
     [BLAST検索ジョブの状態](#search-job) を返します。
   - 指定された [Request ID](#parameter-Request-ID) に対する
@@ -1508,7 +1508,7 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
   - 検索時間が長くなり過ぎてタイムアウトする。
 </div>
 
-参考：[BLAST ヘルプ Query:検索配列名，検索配列データ]({{site.baseurl}}/services/services/blast.html#query)
+参考：[BLAST ヘルプ Query:検索配列名，検索配列データ]({{site.baseurl}}/services/blast.html#query)
 
 ### datasets：データセット<a name="parameter-datasets"></a> 
 
@@ -1532,7 +1532,7 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 | `refseq_na`      | RefSeq NA                                          |
 | `refseq_aa`      | RefSeq AA                                          |
 
-参考：[BLAST ヘルプ 塩基配列（データベース，DIVISION）]({{site.baseurl}}/services/services/blast.html#nucleotide)
+参考：[BLAST ヘルプ 塩基配列（データベース，DIVISION）]({{site.baseurl}}/services/blast.html#nucleotide)
 
 ### database：データベース <a name="parameter-database"></a> 
 
@@ -1748,7 +1748,7 @@ Refseq AA データベース値
 |  `refseq-model-protein-R_norvegicus`  |  R. norvegicus  |  ラット  |
 |  `refseq-model-protein-X_tropicalis`  |  X. tropicalis  |  アフリカツメガエル  |
 
-参考：[BLAST ヘルプ 塩基配列（データベース，DIVISION）]({{site.baseurl}}/services/services/blast.html#nucleotide)
+参考：[BLAST ヘルプ 塩基配列（データベース，DIVISION）]({{site.baseurl}}/services/blast.html#nucleotide)
 
 ### program：BLASTプログラム<a name="parameter-program"></a>
 
@@ -1765,7 +1765,7 @@ Refseq AA データベース値
 |  blastp  |  アミノ酸配列  |  アミノ酸配列  |  あなたのアミノ酸配列をアミノ酸配列データベースと 比較します。  |
 |  blastx  |  塩基配列  |  アミノ酸配列  |  あなたの塩基配列を表裏合わせて６通りの読み枠で翻訳しながら，アミノ酸配列データベースと 比較します。  |
 
-参考：[BLAST ヘルプ Program：プログラム]({{site.baseurl}}/services/services/blast.html#program)
+参考：[BLAST ヘルプ Program：プログラム]({{site.baseurl}}/services/blast.html#program)
 
 ### parameters：BLASTプログラムのオプション指定<a name="parameter-parameters"></a>
 
@@ -1836,7 +1836,7 @@ BLAST プログラムのオプションの例:
 -v 100 -b 100 -e 10 -F F -W 11
 ```
 
-参考：[BLAST ヘルプ Optional Parameters]({{site.baseurl}}/services/services/blast.html#parameters)
+参考：[BLAST ヘルプ Optional Parameters]({{site.baseurl}}/services/blast.html#parameters)
 
 ### format：応答データの形式<a name="parameter-format"></a>
 
@@ -1900,6 +1900,6 @@ WABI からの応答データの形式を次の中から指定できます。
 ## その他 <a name="other"></a>
 
 検索結果は 7日間 保存されます。  
-( [「Request ID，検索結果表示」]({{site.baseurl}}/services/services/blast.html#result) の「検索結果閲覧期間」より。)  
+( [「Request ID，検索結果表示」]({{site.baseurl}}/services/blast.html#result) の「検索結果閲覧期間」より。)  
 その期間中であれば、 [Request ID](#parameter-Request-ID) を指定して `GET` リクエストすることで、
 [処理結果を参照する](#URI_GET_result) ことが可能です。

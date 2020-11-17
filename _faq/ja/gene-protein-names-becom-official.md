@@ -17,7 +17,7 @@ lang: ja
   <dd>
     <ul>
       <li><a href="/ddbj/cds.html#product">DDBJ の遺伝子命名に関する考え方</a></li>
-      <li><a href="/service-policy.html#priority">データの優先権</a></li>
+      <li><a href="/policies.html#priority">データの優先権</a></li>
     </ul>
   </dd>
 </dl>

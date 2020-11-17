@@ -26,7 +26,7 @@ related_pages:
   - title: FASTAとBLASTについて
     url: /activities/homology-doc.html
   - title: DDBJ Annual Report
-    url: /activities/annual-reports.html
+    url: /activities/index.html
   - title: DDBJ Mail Magazine
     url: /subscribe-ddbj.html
   - title: DDBJ データ解析チャレンジ

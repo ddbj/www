@@ -198,7 +198,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn090917"><a href="#wn090917">Change in the anonymous FTP site: Made a new directory "dra", renamed "trace" to "dta"</a></h2>
   <div class="news_date">September 17,2009</div>
-  <div class="news_content">A new directory, "dra", was made under "ddbj_database" of DDBJ anonymous <a href="/download-e.html">FTP</a> site.<br>Now, all of released data from DDBJ Sequence Read Archive can be downloaded from the new "dra" directory.<br><br> "trace" directory was renamed to "dta", according to the official launch of DDBJ Trace Archive (DTA). For details of the change in "ddbj_database" directory and its subdirectories, see <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/README.TXT">README.TXT</a> in the<br>directory.<br>If you automatically monitor DDBJ anonymous FTP, please confirm your monitoring program if necessary.</div>
+  <div class="news_content">A new directory, "dra", was made under "ddbj_database" of DDBJ anonymous <a href="/services/index-e.html">FTP</a> site.<br>Now, all of released data from DDBJ Sequence Read Archive can be downloaded from the new "dra" directory.<br><br> "trace" directory was renamed to "dta", according to the official launch of DDBJ Trace Archive (DTA). For details of the change in "ddbj_database" directory and its subdirectories, see <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/README.TXT">README.TXT</a> in the<br>directory.<br>If you automatically monitor DDBJ anonymous FTP, please confirm your monitoring program if necessary.</div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -225,7 +225,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn090828"><a href="#wn090828">Change of directory structure of anonymous FTP site: Made a new directory "tpa" </a></h2>
   <div class="news_date">August 28,2009</div>
-  <div class="news_content">A new directory, "tpa", was made under "ddbj_database" of DDBJ anonymous <a href="/download-e.html">FTP</a> site.<br>Before this change, <a href="/ddbj/tpa-e.html">TPA</a> (Third-Party Annotaion) data were separated into three directories; "ddbj",<br>"ddbjnew" (for daily updates), and "wgs".  Now, all of TPA associated data can be downloaded from<br>the new "tpa" directory.<br><br>For details of the change in "ddbj_database" directory and its subdirectories, see <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/README.TXT">README.TXT</a> in the<br>directory.<br>If you automatically monitor DDBJ anonymous FTP, please confirm your monitoring program if<br>necessary.</div>
+  <div class="news_content">A new directory, "tpa", was made under "ddbj_database" of DDBJ anonymous <a href="/services/index-e.html">FTP</a> site.<br>Before this change, <a href="/ddbj/tpa-e.html">TPA</a> (Third-Party Annotaion) data were separated into three directories; "ddbj",<br>"ddbjnew" (for daily updates), and "wgs".  Now, all of TPA associated data can be downloaded from<br>the new "tpa" directory.<br><br>For details of the change in "ddbj_database" directory and its subdirectories, see <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/README.TXT">README.TXT</a> in the<br>directory.<br>If you automatically monitor DDBJ anonymous FTP, please confirm your monitoring program if<br>necessary.</div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -279,7 +279,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn090803"><a href="#wn090803">(Urgent!)Homology Search and ClustalW temporary down </a></h2>
   <div class="news_date">August 03,2009</div>
-  <div class="news_content">DDBJ's <a href="/services-e.html" target="_blank">Homology Search and ClustalW services provided via WWW</a> is currently unavailable since Aug. 2(Sun) 6:00(JST). At present, we are doing recovery efforts for the earliest resume. The resume will be notified on this DDBJ HP.  Thank you for your understanding and cooperation.<dd><font class="red">The service was resumed. DDBJ awfully apologize for your inconvenience caused by the long time suspension (Aug. 3, 2009 at 17:40 JST)</font></dd></div>
+  <div class="news_content">DDBJ's <a href="/services/index-e.html" target="_blank">Homology Search and ClustalW services provided via WWW</a> is currently unavailable since Aug. 2(Sun) 6:00(JST). At present, we are doing recovery efforts for the earliest resume. The resume will be notified on this DDBJ HP.  Thank you for your understanding and cooperation.<dd><font class="red">The service was resumed. DDBJ awfully apologize for your inconvenience caused by the long time suspension (Aug. 3, 2009 at 17:40 JST)</font></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -360,7 +360,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn090707"><a href="#wn090707">Homology Search and ClustalW temporary down</a></h2>
   <div class="news_date">July 07,2009</div>
-  <div class="news_content">DDBJ's <a href="/services-e.html" target="_blank">Homology Search and ClustalW services provided via WWW</a> is temporarily unavailable in the following schedule for the system maintenance.<ul><li><b>Date &amp; Time.</b> Jul. 13, 2009 (Mon) at 11:30 - 13:30 (JST) (We will announce on this page when it resumes.):</li><li><b>Unavailable services:</b><br>  - Homology search (FASTA, BLAST, PSI-BLAST, SSEARCH, HMMPFAM)<br>  - ClustalW</li></ul><p>Thank you for your understanding and cooperation.</p><dd><font class="red">Maintenance works was finished. Thank you for your cooperation.(Jul. 13, 2009 at 14:00 JST)</font></dd></div>
+  <div class="news_content">DDBJ's <a href="/services/index-e.html" target="_blank">Homology Search and ClustalW services provided via WWW</a> is temporarily unavailable in the following schedule for the system maintenance.<ul><li><b>Date &amp; Time.</b> Jul. 13, 2009 (Mon) at 11:30 - 13:30 (JST) (We will announce on this page when it resumes.):</li><li><b>Unavailable services:</b><br>  - Homology search (FASTA, BLAST, PSI-BLAST, SSEARCH, HMMPFAM)<br>  - ClustalW</li></ul><p>Thank you for your understanding and cooperation.</p><dd><font class="red">Maintenance works was finished. Thank you for your cooperation.(Jul. 13, 2009 at 14:00 JST)</font></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -387,7 +387,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn090610"><a href="#wn090610">GIB temporary down</a></h2>
   <div class="news_date">June 10,2009</div>
-  <div class="news_content"><a href="/services/services/past-services-e.html#gib" target="_blank">GIB (Genome Information Broker)</a> will be unavailable at the following schedule, because of the maintenance works.<ul><li><b>Date:</b> June 30(Tue), 2009 at 9:00(JST) - July 2(Thu) at 17:00 (JST)</li></ul><dd>Thank you very much for your understanding and cooperation.<br><dd><font class="red"> Maintenance works finished, and the service is available. Thank you for your cooperation.(Jul. 1, 2009 at 14:45 JST) </font></dd></dd></div>
+  <div class="news_content"><a href="/services/past-services-e.html#gib" target="_blank">GIB (Genome Information Broker)</a> will be unavailable at the following schedule, because of the maintenance works.<ul><li><b>Date:</b> June 30(Tue), 2009 at 9:00(JST) - July 2(Thu) at 17:00 (JST)</li></ul><dd>Thank you very much for your understanding and cooperation.<br><dd><font class="red"> Maintenance works finished, and the service is available. Thank you for your cooperation.(Jul. 1, 2009 at 14:45 JST) </font></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>

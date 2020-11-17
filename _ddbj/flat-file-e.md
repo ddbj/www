@@ -44,37 +44,37 @@ The entry submitted to DDBJ is processed and publicized according to the
 DDBJ format for distribution (flat file). The flat file includes the
 sequence and the information of submitters, references, source
 organisms, and "feature" information, etc. The "feature" is defined by
-[The DDBJ/ENA/GenBank Feature Table Definition](/ddbj/full_index-e.html)
+[The DDBJ/ENA/GenBank Feature Table Definition](/ddbj/feature-table-e.html)
 to describe the biological nature such as gene function and other
 property of the nucleotide sequence.
 
 ## The virtual sample of DDBJ flat file <a name="The_virtual_sample_of_DDBJ_flat_file"></a>
 
-<pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">AB000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">450 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">HUM</a> <a id="ModificationDateA" href="#ModificationDateB">01-JUN-2009</a>
-<a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate
+<pre><code><a id="LocusA" href="/ddbj/flat-file#LocusB">LOCUS</a>       <a id="LocusNameA" href="/ddbj/flat-file#LocusNameB">AB000000</a>              <a id="SequenceLengthA" href="/ddbj/flat-file#SequenceLengthB">450 bp</a>    <a id="MoleculeTypeA" href="/ddbj/flat-file#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="/ddbj/flat-file#MoleculeFormB">linear</a>   <a id="DivisionA" href="/ddbj/flat-file#DivisionB">HUM</a> <a id="ModificationDateA" href="/ddbj/flat-file#ModificationDateB">01-JUN-2009</a>
+<a id="DefinitionA" href="/ddbj/flat-file#DefinitionB">DEFINITION</a>  Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate
             dehydrogenase, partial cds.
-<a id="AccessionA" href="#AccessionB">ACCESSION</a>   AB000000
-<a id="VersionA" href="#VersionB">VERSION</a>     AB000000.1
-<a id="KeywordsA" href="#KeywordsB">KEYWORDS</a>    .
-<a id="SourceA" href="#SourceB">SOURCE</a>      Homo sapiens (human)
-  <a id="OrganismA" href="#OrganismB">ORGANISM</a>  Homo sapiens
+<a id="AccessionA" href="/ddbj/flat-file#AccessionB">ACCESSION</a>   AB000000
+<a id="VersionA" href="/ddbj/flat-file#VersionB">VERSION</a>     AB000000.1
+<a id="KeywordsA" href="/ddbj/flat-file#KeywordsB">KEYWORDS</a>    .
+<a id="SourceA" href="/ddbj/flat-file#SourceB">SOURCE</a>      Homo sapiens (human)
+  <a id="OrganismA" href="/ddbj/flat-file#OrganismB">ORGANISM</a>  Homo sapiens
             Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
             Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
             Catarrhini; Hominidae; Homo.
-<a id="Reference1A" href="#Reference1B">REFERENCE   1</a>  (bases 1 to 450)
-  <a id="AuthorsA" href="#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
-  <a id="TitleA" href="#TitleB">TITLE</a>     Direct Submission
-  <a id="JournalA" href="#JournalB">JOURNAL</a>   Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.
+<a id="Reference1A" href="/ddbj/flat-file#Reference1B">REFERENCE   1</a>  (bases 1 to 450)
+  <a id="AuthorsA" href="/ddbj/flat-file#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
+  <a id="TitleA" href="/ddbj/flat-file#TitleB">TITLE</a>     Direct Submission
+  <a id="JournalA" href="/ddbj/flat-file#JournalB">JOURNAL</a>   Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
-<a id="Reference2A" href="#Reference2B">REFERENCE   2</a>
+<a id="Reference2A" href="/ddbj/flat-file#Reference2B">REFERENCE   2</a>
   AUTHORS   Mishima,H., Shizuoka,T. and Fuji,I.
   TITLE     Glyceraldehyde-3-phosphate dehydrogenase expressed in human liver
   JOURNAL   Unpublished (2009)
-<a id="CommentA" href="#CommentB">COMMENT</a>     Human cDNA sequencing project.
-<a id="FeaturesA" href="#FeaturesB">FEATURES</a>             Location/Qualifiers
-     <a id="FeaturesSourceA" href="#FeaturesSourceB">source</a>          <a href="/ddbj/location-e.html">1..450</a>
+<a id="CommentA" href="/ddbj/flat-file#CommentB">COMMENT</a>     Human cDNA sequencing project.
+<a id="FeaturesA" href="/ddbj/flat-file#FeaturesB">FEATURES</a>             Location/Qualifiers
+     <a id="FeaturesSourceA" href="/ddbj/flat-file#FeaturesSourceB">source</a>          <a href="/ddbj/location-e.html">1..450</a>
                      /<a href="/ddbj/qualifiers-e.html#chromosome">chromosome</a>="12"
                      /<a href="/ddbj/qualifiers-e.html#clone">clone</a>="GT200015"
                      /<a href="/ddbj/qualifiers-e.html#clone_lib">clone_lib</a>="lambda gt11 human liver cDNA (GeneTech.
@@ -103,7 +103,7 @@ property of the nucleotide sequence.
       301 tgagaaggag gtcaccgtgt tcggctgcag gaaccctaag gagatcccat ggggtgagac
       361 tagcgctgag tttgttgtgg agtacactgg tgttttcact gacaaggaca aggccgttgc
       421 tcaacttaag ggtggtgcta agaaggtctg
-<a id="EndA" href="#EndB">//</a></code></pre>
+<a id="EndA" href="/ddbj/flat-file#EndB">//</a></code></pre>
 
 Flat file displays the information provided by submitters with DDBJ
 format.  
@@ -181,7 +181,7 @@ b: other divisions
 |  [HTG](/ddbj/htg-e.html)  |  high throughput genomic sequences;<br>The sequence submitted mainly from genome sequencing projects which regarded a clone as a sequencing unit.   |
 |  STS  |  sequence tagged sites<br>The tag site for genome sequencing. The information of chromosome, map, PCR_condition is necessary for this division.  |
 |  UNA  |  the data not annotated<br>The UNA division is not used recently.  |
-|  [CON](con-j-e.html)  |  Contig / Constructed<br>To conjugate a series of entries, such as those submitted from a genome project, each of the three data banks constructs an entry and assign an accession number to a large scale sequence dataset. Such entries are classified into the CON division. The entry in the CON division has the information of joined accession numbers instead of the sequence data. The corresponding entries of the CON entry have been submitted to other divisions.  |
+|  [CON](con-e.html)  |  Contig / Constructed<br>To conjugate a series of entries, such as those submitted from a genome project, each of the three data banks constructs an entry and assign an accession number to a large scale sequence dataset. Such entries are classified into the CON division. The entry in the CON division has the information of joined accession numbers instead of the sequence data. The corresponding entries of the CON entry have been submitted to other divisions.  |
 
 {::options parse_block_html="true" /}
 <div id="ModificationDateB">
@@ -289,7 +289,7 @@ This line shows accession number of the entry data.
 
 Conventional sequence data  
 : A unique accession number is issued to the data submitter by each of the three data banks. The accession number is composed of 1 alphabet character and 5 digits (ex. A12345) or 2 alphabet characters and 6 digits (ex. AB123456). The former style was used in 1980s, but later the latter style was introduced because of data explosion.
-<br>The alphabet part is called "prefix". Please refer [the prefix list](/ddbj/prefix-e.html).
+<br>The alphabet part is called "prefix". Please refer [the prefix list](/documents/prefix-e.html).
 
 : If multiple entries are united to an entry, or if an entry is extensively modified after the submission, the responsible data banks may assign a new accession number to it. In these cases, the new accession number is called the primary accession number, and the old accession number(s) is/are called the secondary accession number(s). In the flat file, the primary accession number is indicated first, then the secondary accession number(s) follows. You can find the same updated entry with both the primary and the secondary accession numbers.
 
@@ -303,7 +303,7 @@ Conventional sequence data
   |  ```AB888888 AB777777```  |  secondary accession number  |
 
 Bulk sequence data; WGS, TSA, TLS  
-: The accession number assigned to each entry of [WGS](/ddbj/wgs-e.html), [TSA](/ddbj/tsa-e.html) and TLS data consists of 4 alphabet characters and 8 (sometimes 9 or 10, if necessary) digits.<br>The alphabet part is called [prefix](/ddbj/prefix-e.html).<br>See also [For Large Scale Data (four prefix)](/ddbj/prefix-e.html#large).<br>Example:ZZZZ01000001
+: The accession number assigned to each entry of [WGS](/ddbj/wgs-e.html), [TSA](/ddbj/tsa-e.html) and TLS data consists of 4 alphabet characters and 8 (sometimes 9 or 10, if necessary) digits.<br>The alphabet part is called [prefix](/documents/prefix-e.html).<br>See also [For Large Scale Data (four prefix)](/documents/prefix-e.html#large).<br>Example:ZZZZ01000001
 
 : | ZZZZ (4 letters) | Prefix to distinguish each project, project_id                 |
   | 01 (2 digits)        | Version number of the data set, set_version                |
@@ -395,7 +395,7 @@ DBLINK      BioProject:PRJDA12345
 The KEYWORDS lines were used for indexing ([gene](/ddbj/qualifiers-e.html#gene)) and 
 ([product](/ddbj/qualifiers-e.html#product)) names in the past.
 
-For now, KEYWORDS lines are used to indicate [the detail category of the data](/documents/documents/data-categories-e.html#detail) ([EST](/ddbj/est-e.html),
+For now, KEYWORDS lines are used to indicate [the detail category of the data](/documents/data-categories-e.html#detail) ([EST](/ddbj/est-e.html),
 [TSA](/ddbj/tsa-e.html), [HTC](/ddbj/htc-e.html), [HTG](/ddbj/htg-e.html),
 [GSS](/ddbj/gss-e.html), [WGS](/ddbj/wgs-e.html), [TPA](/ddbj/tpa-e.html) etc) information about experimental method, "finishing level" of genome sequencing and else, if necessary. See also [INSDC agreed methodological keywords](/ddbj/keyword-e.html).
 
@@ -491,8 +491,8 @@ Even if the entry is updated, "Accept Date" is NOT changed. Then, the informatio
 
 E-mail address, phone & fax nos.
 
-  - To follow the Japanese law of protecting personal information, DDBJ will delete both phone and fax numbers, and E-mail address from the flat files of the entries submitted to DDBJ.However, if you wish to disclose any of the three items, please contact us with [contact form](/contact-e.html#to-ddbj), specifying the item(s) to be disclosed.
-  - When you wish to contact to the submitter(s) of an entry of your interest,please contact us with [the inquiry form](/contact-e.html#to-submitters) with reasons briefly;i.e. asking to transfer cloned sequences, etc, then we will forward your messeage to the submitter(s).
+  - To follow the Japanese law of protecting personal information, DDBJ will delete both phone and fax numbers, and E-mail address from the flat files of the entries submitted to DDBJ.However, if you wish to disclose any of the three items, please contact us with [contact form](/contact-ddbj-e.html#to-ddbj), specifying the item(s) to be disclosed.
+  - When you wish to contact to the submitter(s) of an entry of your interest,please contact us with [the inquiry form](/contact-ddbj-e.html#to-submitters) with reasons briefly;i.e. asking to transfer cloned sequences, etc, then we will forward your messeage to the submitter(s).
 
 Phone and fax numbers and E-mail address are deleted.
 
@@ -520,7 +520,7 @@ When the submitters wish to keep their contact information disclosed, it will be
 <h3><a href="#Reference2A">REFERENCE 2</a></h3>
 </div>
 
-The information of references related to the submitted sequence is indicated on REFERENCE line (other than ([REFERENCE 1](#Reference1B)). Since REFERENCE 2 indicates [the publication status of the sequence](/ddbj/services/index.html#pcite), the reference which does not describe about the submitting sequence is indicated as REFERENCE 3 or after, not as REFERENCE 2.
+The information of references related to the submitted sequence is indicated on REFERENCE line (other than ([REFERENCE 1](#Reference1B)). Since REFERENCE 2 indicates [the publication status of the sequence](/ddbj/submission.html#pcite), the reference which does not describe about the submitting sequence is indicated as REFERENCE 3 or after, not as REFERENCE 2.
 
 When DDBJ notices a paper publication with an accession number, DDBJ will update the entry with the accession number, if necessary. During the process of the update, the prepublication paper(s) described in the line(s), REFERENCE 2 and/or later, will be revised without any notice to submitters, if applicable; i.e. When the submitted data, submitters' affiliation, author names, title, and journal name of the prepublication paper, are enough reasonable to be revised.
 
@@ -629,7 +629,7 @@ For MGA data
 
 Biological features of a submitted sequence data are described with "Feature" key (the biological nature of the annotated feature), "Location" (the region of the sequence which corresponds to Feature), and "Qualifier" (supplementary information about Feature). In principle, EST or GSS entries are not described with any features except the "source" key.
 
-FEATURES are indicated on the basis of the information provided by submitter and modified by databanks to describe the appropriate annotation. The rules of feature description agreed with three databanks are explained at [The DDBJ/ENA/GenBank Feature Table Definition](/ddbj/full_index-e.html) in detail.
+FEATURES are indicated on the basis of the information provided by submitter and modified by databanks to describe the appropriate annotation. The rules of feature description agreed with three databanks are explained at [The DDBJ/ENA/GenBank Feature Table Definition](/ddbj/feature-table-e.html) in detail.
 
 Feature keys are briefly classified into 3 groups;
 

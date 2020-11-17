@@ -1,0 +1,27 @@
+"Investigation Title"	"WGA-LCM and Genomewide Survey of Lung Cancer"						
+"Experimental Design"	"genotyping_design	disease_state_design	optimization_design"				
+"Experimental Factor Name"	DISEASESTAGING	INDIVIDUAL	DISEASESTATE	LINEAR_AMPLIFICATION			
+"Experimental Factor Type"	disease_staging	individual	disease_state	linear_amplification			
+							
+"Person Last Name"	Bird						
+"Person First Name"	Helen						
+"Person Mid Initial"							
+"Person Email"	H.E.Bird@warwick.ac.uk						
+"Person Affiliation"	"Warwick University"						
+"Person Roles"	submitter						
+							
+"Public Release Date"	"2006-10-01"						
+							
+Comment[ArrayExpressSubmissionDate]	"2006-08-11"						
+							
+"Publication Author List"	"Bird H; Snead DRJ; Hey Y; Brown PE; Davis SA; James S; Knowles MA; Hurst CD; Blanks A; Pepper SD & Snead DRJ; Brown PE; James S; Davis SA; Suortamo S; Pandey S; Blanks A; Grammatopoulos D; Vohra H; Bird H"						
+"Publication Title"	"Validation of a method for processing laser captures microdissected samples for analysis using high density single nucleotide polymorphism arrays & Genomewide loss of heterozygosity in small cell and non-small cell lung cancer and precursor bronchial epithelium"						
+"Experiment Description"	"A series of experiments were performed to validate whole genome amplification of genomic DNA from laser captured microdissectates and the technique was then applied to serial samples of developing lung cancers to identify early events.  10K Affymetrix SNP arrays were used."						
+							
+"Protocol Name"	P-EXML-2	P-EXML-3	P-EXML-4	P-EXML-6	P-EXML-8	P-EXML-9	P-EXML-10
+"Protocol Type"	grow	specified_biomaterial_action	nucleic_acid_extraction	labeling	hybridization	hybridization	image_acquisition
+"Protocol Description"	"Resected tumour, tissue of bronchial origin and  lymph node were snap frozen in liquid nitrogen. Frozen sections were cut and stained with haematoxylin and eosin."	"LCM was performed using the Nikon Slﾵ cut instrument (Nikon UK Ltd.) on frozen sections which had been stored at -80ﾺC. Target lesions were visualised directly, excised and captured on to the adhesive cap of the LCM tubes (Nikon UK Ltd.). Captured cells were stored at -80ﾺC prior to WGA and microarray analysis."	"For cell lines: DNA was extracted from the bladder tumour-derived cell line, J82, and from the patient-matched normal cell line (J82EBV, immortalised normal lymphoblasts). Aliquots of J82 tumour cell line DNA and of J82EBV normal cell line DNA were adjusted to either 250ng/5ﾵL (for non-WGA controls), 3ng/3ﾵL or 1ng/3ﾵL (for WGA) to start the next step of the protocol. <br><br>For patient tissue: For non-WGA controls, complete sections were taken and DNA extracted using the DNeasy Tissue Kit (Qiagen, Crawley, UK). <br><br>For WGA samples: Captured cells were resuspended in 15ﾵL proteinase K buffer. <br><br>For all WGA samples: Triplicate 5ﾵL aliquots of material were subject to WGA, pooled and quantified. 1ng or 3ng cell line DNA was diluted and triplicate WGA reactions were set up as before. The recommended reaction volumes were increased by by 2.5-fold (GE Healthcare, Amersham, UK) according to Rook et al, Am J Path (2004)."	"Protocol was followed exactly according to manufacturer's instructions (Affymetrix, High Wycombe, UK), starting with 250ng DNA in all cases."	"80ﾵL hybridisation cocktail was hybridisaed overnight at 48ﾺC according to manufacturer's instructions (Affymetrix, High Wycombe, UK). Mapping10K_Xba131 arrays were processed with DNAARRAY_WS2 on Fluidics 400"	"80ﾵL hybridisation cocktail was hybridisaed overnight at 48ﾺC according to manufacturer's instructions (Affymetrix, High Wycombe, UK). Mapping10K_Xba142 arrays were processed with Mini_Mapping10Kv1_450 on Fluidics 450"	"CEL files were analysed in GDAS using the same default settings for Xba131 and Xba142 arrays: HCRBound = 0.070000, CallZoneBound=0.800000, DSBound = 0.080000, GenderAttributeName = Gender, MaleAttributeValue = M, FemaleAttributeValue = F"
+"Protocol Parameters"			amount_of_starting_material;amplification_method;processing_centre				
+"Protocol Software"							
+							
+"SDRF File"	E-TABM-134_sdrf.txt						

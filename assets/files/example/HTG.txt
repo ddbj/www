@@ -1,0 +1,67 @@
+COMMON	SUBMITTER		contact	Hanako Mishima
+			ab_name	Mishima,H.
+			ab_name	Yamada,T.
+			ab_name	Park,C.S.
+			ab_name	Liu,G.Q.
+			email	mishima@ddbj.nig.ac.jp
+			phone	81-55-981-6853
+			fax	81-55-981-6849
+			institute	National Institute of Genetics
+			department	DNA Data Bank of Japan
+			country	Japan
+			state	Shizuoka
+			city	Mishima
+			street	Yata 1111
+			zip	411-8540
+	REFERENCE		ab_name	Mishima,H.
+			ab_name	Yamada,T.
+			ab_name	Park,C.S.
+			ab_name	Liu,G.Q.
+			title	Arabidopsis thaliana DNA
+			status	Unpublished
+			year	2017
+	DATE		hold_date	20191130
+	DIVISION		division	HTG
+	KEYWORD		keyword	HTG
+			keyword	HTGS_PHASE1
+ENT001	source	1..E	clone	CIC5D1
+			clone_lib	AT01 BAC
+			organism	Arabidopsis thaliana
+			mol_type	genomic DNA
+			chromosome	1
+			ecotype	columbia
+			ff_definition	@@[organism]@@ DNA, BAC clone: @@[clone]@@, chromosome @@[chromosome]@@, *** SEQUENCING IN PROGRESS ***
+	assembly_gap	5001..5100	estimated_length	unknown
+			gap_type	within scaffold
+			linkage_evidence	within clone
+	assembly_gap	24001..24100	estimated_length	unknown
+			gap_type	within scaffold
+			linkage_evidence	within clone
+	assembly_gap	32001..32100	estimated_length	unknown
+			gap_type	within scaffold
+			linkage_evidence	within clone
+	assembly_gap	55001..55100	estimated_length	unknown
+			gap_type	within scaffold
+			linkage_evidence	within clone
+ENT002	source	1..E	clone	CIC6D5
+			clone_lib	AT01 BAC
+			organism	Arabidopsis thaliana
+			mol_type	genomic DNA
+			chromosome	6
+			ecotype	columbia
+			ff_definition	@@[organism]@@ DNA, BAC clone: @@[clone]@@, chromosome @@[chromosome]@@, *** SEQUENCING IN PROGRESS ***
+	assembly_gap	7001..7100	estimated_length	unknown
+			gap_type	within scaffold
+			linkage_evidence	within clone
+	assembly_gap	28001..28100	estimated_length	unknown
+			gap_type	within scaffold
+			linkage_evidence	within clone
+	assembly_gap	36001..36100	estimated_length	unknown
+			gap_type	within scaffold
+			linkage_evidence	within clone
+	assembly_gap	65001..65100	estimated_length	unknown
+			gap_type	within scaffold
+			linkage_evidence	within clone
+	assembly_gap	83001..83100	estimated_length	unknown
+			gap_type	within scaffold
+			linkage_evidence	within clone

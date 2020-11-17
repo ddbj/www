@@ -16,7 +16,7 @@ related_pages:
   - title: DDBJ スタッフの出版物 (2009-)
     url: /activities/
   - title: 発行物アーカイブ
-    url: /activities/pub-archives.html
+    url: /activities/archives.html
   - title: DDBJ Annual Report
     url: /activities/
   - title: 国際実務者会議報告一覧
@@ -173,8 +173,7 @@ excluded.
     (2008) Ab initio fragment molecular orbital (FMO) analysis of the
     structure of the phosphoinositide-binding peptide from gelsol.
     Journal of Molecular Structure: THEOCHEM Online publication
-    complete: 14-JAN-2009 DOI information: 10. 1016/ j. theochem. 2008.
-    12. 003.
+    complete: 14-JAN-2009 DOI information: 10. 1016/ j. theochem. 2008.12. 003.
   - Takeda J, **Suzuki Y,** Sakate R, Sato Y, Seki M, Irie T, Takeuchi
     N, Ueda T, Nakao M, Sugano S, **Gojobori T,** and Imanishi T. (2008)
     Low conservation and species-specific evolution of alternative
@@ -1421,8 +1420,7 @@ excluded.
   - Nagano N., **Ota M.** and **Nishikawa K.** (1999) Strong hydrophobic
     nature of cysteine residues in proteins. FEBS Lett. 1458 (1): 69-71.
   - Nakamura Y., **Gojobori T.**, and Ikemura T. (1999) Codon usage
-    tabulated from the international DNA sequence databases; its status
-    1999. Nucl. Acids Res. 27: 292.
+    tabulated from the international DNA sequence databases; its status 1999. Nucl. Acids Res. 27: 292.
   - **Nishikawa K.** (1999) Protein structure prediction The
     Encyclopedia of Molecular Biology (Ed., T.E. Creighton), John Wiley
     & Sons, Inc.

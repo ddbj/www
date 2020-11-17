@@ -17,11 +17,11 @@ related_pages:
   - title: TXSearch ヘルプ
     url: /services/txsearch.html
   - title: 過去のサービス
-    url: /services/services/services/past-services.html
+    url: /services/past-services.html
   - title: 関連論文
-    url: /services/services/services/references.html
+    url: /services/references.html
   - title: WABI (Web API for Biology)
-    url: /services/services/services/wabi.html
+    url: /services/wabi.html
   - title: WABI BLAST ヘルプ
     url: /services/wabi-blast.html
   - title: WABI ClustalW ヘルプ
@@ -51,7 +51,7 @@ related_pages:
 2. [Mapping(Reference Alignment)](#mapping)
 3. [*de novo* Assembly](#assembly)
 
-### Preprocessing <a name="DetailPreprocessing"></a>
+### Preprocessing <a name="preprocess"></a>
 
 fastq形式ファイルのQSを各種グラフで参照できます。fastq形式ファイルの編集ができます。
 
@@ -150,7 +150,7 @@ Genomics 1988, 2(3):231-239.
 - [English manual](//sites.google.com/a/g.nig.ac.jp/pipeline_help/)
 - [DBCLS togotv Tutorial video 1 (JP) - Reference Genome Mapping](//togotv.dbcls.jp/20100617.html)
 - [DBCLS togotv Tutorial video 2 (JP) - De novo Assembly](//togotv.dbcls.jp/20110226.html#p01)
-6. DRAアカウント登録はこちらのページです。 [please see the page.](/dra/index-j.html)
+6. DRAアカウント登録はこちらのページです。 [please see the page.](/dra/index.html)
 
 [![]({{ site.baseurl }}/assets/images/help/LOGIN_20120522_1.png)]({{ site.baseurl }}/assets/images/help/LOGIN_20120522_1.png){:.group1}
 
@@ -243,7 +243,7 @@ Genomics 1988, 2(3):231-239.
 ### Preprocessing処理での結果ファイル<a name="Preprocessing"></a>
 
 1. Preprocessingを選択します。
-2. Preprocessing結果ファイルは、「JOB番号\_ファイル名\_e」で表示されています。<br>（BWA Unmap結果ファイルは、「JOB番号_ファイル名.unmapped」で表示されています。
+2. Preprocessing結果ファイルは、「JOB番号\_ファイル名\_e」で表示されています。<br>（BWA Unmap結果ファイルは、「JOB番号_ファイル名.unmapped」で表示されています。<a name="Unmapped"></a>
 3. 使用するファイルをチェックします。
 
 [![]({{ site.baseurl }}/assets/images/help/Selecting-Query-Files_Preprocessing_21.png)]({{ site.baseurl }}/assets/images/help/Selecting-Query-Files_Preprocessing_21.png){:.group1}

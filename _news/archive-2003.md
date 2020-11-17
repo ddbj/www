@@ -419,7 +419,7 @@ BASE COUNT    123456789 a    123456789 c    123456789 g    123456789 t</code></p
 <div class="news_post_list">
   <h2 class="news_title" id="wn030808"><a href="#wn030808">古代DNAデータベースのURL変更</a></h2>
   <div class="news_date">2003年08月08日</div>
-  <div class="news_content">古代 DNA データベース (Ancient Genome Encyclopedia: AGE) は遺跡から発掘された人骨の DNA をはじめとする古代 DNA に関するデータベースで，遺伝研・集団遺伝の斎藤成也教授と東大・院・理の植田信太郎教授がデザインし，DDBJ が構築・運営しているデータベースです。現在，文献情報を中心に会議の話題など古代 DNA に関する様々な情報を収集し，紹介しています。サーバ変更のため， URL が変更になりました。ブックマーク・リンクされている方は URL を更新のうえ，どうぞご利用下さい。新URL 日本語版　<a href="/aDNA/index-j.html">http://www.ddbj.nig.ac.jp/aDNA/index-j.html</a>            英語版　　http://www.ddbj.nig.ac.jp/aDNA/(旧 URL　http://spinner.lab.nig.ac.jp/aDNA/)</div>
+  <div class="news_content">古代 DNA データベース (Ancient Genome Encyclopedia: AGE) は遺跡から発掘された人骨の DNA をはじめとする古代 DNA に関するデータベースで，遺伝研・集団遺伝の斎藤成也教授と東大・院・理の植田信太郎教授がデザインし，DDBJ が構築・運営しているデータベースです。現在，文献情報を中心に会議の話題など古代 DNA に関する様々な情報を収集し，紹介しています。サーバ変更のため， URL が変更になりました。ブックマーク・リンクされている方は URL を更新のうえ，どうぞご利用下さい。新URL 日本語版　<a href="/aDNA/index.html">http://www.ddbj.nig.ac.jp/aDNA/index.html</a>            英語版　　http://www.ddbj.nig.ac.jp/aDNA/(旧 URL　http://spinner.lab.nig.ac.jp/aDNA/)</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>

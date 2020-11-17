@@ -306,7 +306,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn020912"><a href="#wn020912">アノテーションジャンボリー "H-Invitational" 開催</a></h2>
   <div class="news_date">2002年09月12日</div>
-  <div class="news_content">8/25 から 9/3 にかけて東京お台場で Human Full-Length cDNA Annotation Invitational (H-Invitational) が開催されました。<br>この会議は JBIRC と DDBJ の共催で，ヒト完全長 cDNA をアノテーションし，利用価値の高いデータベースを作成することを目的としています。 各国からおよそ120名の研究者が参加し，DDBJ からは，国立遺伝学研究所の教官であるスタッフ９名とアノテータ４名が参加しました。<br>Nature 419, 3-4 (2002) にレポートが掲載されました。<br><br>詳細は<a href="/files/pdf/H-Inv.ppt">こちらの資料 (PPT, 2.6MB, 2004年8月更新) </a>をご覧下さい。</div>
+  <div class="news_content">8/25 から 9/3 にかけて東京お台場で Human Full-Length cDNA Annotation Invitational (H-Invitational) が開催されました。<br>この会議は JBIRC と DDBJ の共催で，ヒト完全長 cDNA をアノテーションし，利用価値の高いデータベースを作成することを目的としています。 各国からおよそ120名の研究者が参加し，DDBJ からは，国立遺伝学研究所の教官であるスタッフ９名とアノテータ４名が参加しました。<br>Nature 419, 3-4 (2002) にレポートが掲載されました。<br><br>詳細は<a href="{{ site.baseurl }}/assets/files/pdf/H-Inv.ppt">こちらの資料 (PPT, 2.6MB, 2004年8月更新) </a>をご覧下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>

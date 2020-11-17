@@ -5,11 +5,11 @@ category: documents
 lang: ja
 related_pages:
   - title: 登録データ種別
-    url: /documents/documents/documents/data-categories.html
+    url: /documents/data-categories.html
   - title: 国際塩基配列データベースのアクセッション番号
     url: /documents/accessions.html
   - title: データ公開原則
-    url: /documents/documents/documents/data-release-policy.html
+    url: /documents/data-release-policy.html
 ---
 
 ## For conventional sequence data (two or one letter) <a name="gen"></a>
@@ -440,7 +440,7 @@ SRX     NCBI       Experiment object
 SRZ     NCBI       Analysis object
 ```
 
-See also [DRA metadata outline](/dra/services/index.html#metadata)
+See also [DRA metadata outline](/dra/submission.html#metadata)
 
 ## For BioProject <a name="project"></a>
 

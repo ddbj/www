@@ -22,7 +22,7 @@ lang: ja
 
 DDBJ のデータベースに登録されているサンプルが多様であること、また、サンプルの適切な記載方法が研究内容により異なることから BioSample の定義は柔軟なものになっています。 BioSample の典型的な例としては細胞株、組織の生検、生物個体や環境サンプルなどが挙げられます。
 
-Biological/Technical replicate は "replicate" というユーザ定義の属性を使い "biological replicate 1"、"biological replicate 2" のようにしてサンプルを区別します。[FAQ: 塩基配列登録にはいくつのサンプルが必要ですか?](/faq/index.html#samples-for-sra)
+Biological/Technical replicate は "replicate" というユーザ定義の属性を使い "biological replicate 1"、"biological replicate 2" のようにしてサンプルを区別します。[FAQ: 塩基配列登録にはいくつのサンプルが必要ですか?](/faq/ja/samples-for-sra)
 
 BioSample はサンプルについての以下のような情報を含みます:
 
@@ -240,7 +240,7 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
   {::options parse_block_html="true" /}
   <div class="attention">
   ヒトを対象とした研究データの登録について
-  : <span class="red">研究対象者に由来するデータを DDBJ センターが運営するデータベースに登録する場合、研究対象者の尊厳及び人権は、適用されるべき法令、指針、ガイドライン、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。原則として、研究対象者を直接特定し得る情報はメタデータから取り除いてください。ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/service-policy.html#human)を熟読してください。</span>
+  : <span class="red">研究対象者に由来するデータを DDBJ センターが運営するデータベースに登録する場合、研究対象者の尊厳及び人権は、適用されるべき法令、指針、ガイドライン、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。原則として、研究対象者を直接特定し得る情報はメタデータから取り除いてください。ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#human)を熟読してください。</span>
   </div>
 
 ## サンプルの登録 <a name="sample-submission"></a>
@@ -413,7 +413,7 @@ Validation ルールとメッセージについては [Validation rules ペー�
 
 登録した Sample データは一定期間非公開にすることができます。 DDBJ レコードが公開されると、引用されている BioSample データは自動的に公開されます。この BioSample アクセッション番号を引用している非公開の DDBJ レコードが公開されることはありませんが、引用されている BioProject は連動公開されます。
 
-FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp_bs_seq_release.html)
+FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp-bs-seq-release.html)
 
 ### サンプルの更新 <a name="update-biosample"></a>
 

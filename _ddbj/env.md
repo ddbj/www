@@ -66,37 +66,37 @@ phytoplasmas といった対象は環境サンプルとは扱いません。
 
 環境サンプル(ENV)の特徴
 
-  - [LOCUS](#LocusB) 行に表示される DIVISION は、"ENV" です。
-  - [KEYWORDS](#KeywordsB) 行には "ENV" が表示されます。
-  - 例外もありますが、多くの場合、[ORGANISM](#OrganismB) 行の lineage には "environmental
+  - [LOCUS](/ddbj/flat-file#LocusB) 行に表示される DIVISION は、"ENV" です。
+  - [KEYWORDS](/ddbj/flat-file#KeywordsB) 行には "ENV" が表示されます。
+  - 例外もありますが、多くの場合、[ORGANISM](/ddbj/flat-file#OrganismB) 行の lineage には "environmental
     samples" が表示されます。
 
 <!-- end list -->
 
-<pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">AB000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">450 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">ENV</a> <a id="ModificationDateA" href="#ModificationDateB">16-DEC-2012</a>
-<a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Uncultured Acetobacter sp. gene for 16S ribosomal RNA, partial
+<pre><code><a id="LocusA" href="/ddbj/flat-file#LocusB">LOCUS</a>       <a id="LocusNameA" href="/ddbj/flat-file#LocusNameB">AB000000</a>              <a id="SequenceLengthA" href="/ddbj/flat-file#SequenceLengthB">450 bp</a>    <a id="MoleculeTypeA" href="/ddbj/flat-file#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="/ddbj/flat-file#MoleculeFormB">linear</a>   <a id="DivisionA" href="/ddbj/flat-file#DivisionB">ENV</a> <a id="ModificationDateA" href="/ddbj/flat-file#ModificationDateB">16-DEC-2012</a>
+<a id="DefinitionA" href="/ddbj/flat-file#DefinitionB">DEFINITION</a>  Uncultured Acetobacter sp. gene for 16S ribosomal RNA, partial
             sequence, clone: M12-34.
-<a id="AccessionA" href="#AccessionB">ACCESSION</a>   AB000000
-<a id="VersionA" href="#VersionB">VERSION</a>     AB000000.1
-<a id="KeywordsA" href="#KeywordsB">KEYWORDS</a>    ENV.
-<a id="SourceA" href="#SourceB">SOURCE</a>      uncultured Acetobacter sp.
-  <a id="OrganismA" href="#OrganismB">ORGANISM</a>  uncultured Acetobacter sp.
+<a id="AccessionA" href="/ddbj/flat-file#AccessionB">ACCESSION</a>   AB000000
+<a id="VersionA" href="/ddbj/flat-file#VersionB">VERSION</a>     AB000000.1
+<a id="KeywordsA" href="/ddbj/flat-file#KeywordsB">KEYWORDS</a>    ENV.
+<a id="SourceA" href="/ddbj/flat-file#SourceB">SOURCE</a>      uncultured Acetobacter sp.
+  <a id="OrganismA" href="/ddbj/flat-file#OrganismB">ORGANISM</a>  uncultured Acetobacter sp.
             Bacteria; Proteobacteria; Alphaproteobacteria; Rhodospirillales;
             Acetobacteraceae; Acetobacter; environmental samples.
-<a id="Reference1A" href="#Reference1B">REFERENCE   1</a>  (bases 1 to 450)
-  <a id="AuthorsA" href="#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
-  <a id="TitleA" href="#TitleB">TITLE</a>     Direct Submission
-  <a id="JournalA" href="#JournalB">JOURNAL</a>   Submitted (15-DEC-2012) to the DDBJ/EMBL/GenBank databases.
+<a id="Reference1A" href="/ddbj/flat-file#Reference1B">REFERENCE   1</a>  (bases 1 to 450)
+  <a id="AuthorsA" href="/ddbj/flat-file#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
+  <a id="TitleA" href="/ddbj/flat-file#TitleB">TITLE</a>     Direct Submission
+  <a id="JournalA" href="/ddbj/flat-file#JournalB">JOURNAL</a>   Submitted (15-DEC-2012) to the DDBJ/EMBL/GenBank databases.
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
-<a id="Reference2A" href="#Reference2B">REFERENCE   2</a>
+<a id="Reference2A" href="/ddbj/flat-file#Reference2B">REFERENCE   2</a>
   AUTHORS   Mishima,H., Shizuoka,T. and Fuji,I.
   TITLE     Phylogenetic Profile of Sediment in Japan
   JOURNAL   Env Biol 12, 34-36 (2013)
-<a id="CommentA" href="#CommentB">COMMENT</a>
-<a id="FeaturesA" href="#FeaturesB">FEATURES</a>             Location/Qualifiers
-     <a id="FeaturesSourceA" href="#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..450</a>
+<a id="CommentA" href="/ddbj/flat-file#CommentB">COMMENT</a>
+<a id="FeaturesA" href="/ddbj/flat-file#FeaturesB">FEATURES</a>             Location/Qualifiers
+     <a id="FeaturesSourceA" href="/ddbj/flat-file#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..450</a>
                      /<a href="/ddbj/qualifiers.html#clone">clone</a>="M12-34"
                      /<a href="/ddbj/qualifiers.html#country">country</a>="Japan:Osaka"
                      /db_xref="taxon:114714"
@@ -112,4 +112,4 @@ phytoplasmas といった対象は環境サンプルとは扱いません。
         :
         -- The rest of nucleotide sequence is omitted --
         :
-<a id="EndA" href="#EndB">//</a></code></pre>
+<a id="EndA" href="/ddbj/flat-file#EndB">//</a></code></pre>

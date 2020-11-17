@@ -7,16 +7,16 @@ category: www
 lang: ja
 related_pages:
   - title: DB の out/in 統計量
-    url: ./index.html
+    url: /statistics/index.html
   - title: DDBJ 定期リリース統計
-    url: ./ddbj-release
+    url: /statistics/ddbj-release
   - title: リリースノート (DDBJ, 16S rRNA, DAD)
-    url: ./relnote
+    url: ./ddbj-releases
 ---
 
 ## 最新リリースの情報
 
-[リリースノート (DDBJ, 16S rRNA, DAD)]({{site.baseurl}}/statistics/relnote.html)
+[リリースノート (DDBJ, 16S rRNA, DAD)]({{site.baseurl}}/ddbj-releases.html)
 
 |  Database  |  Release  |  Date  |  DDBJ date  |  Entries  |  Bases  |  Rate of increase  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |

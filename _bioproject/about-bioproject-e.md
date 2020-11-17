@@ -8,7 +8,7 @@ lang: en
 
 ## Contact <a name="contact"></a>
 
-Please contact us from [Message form](/contact-e.html).
+Please contact us from [Message form](/contact-ddbj-e.html).
 
 {::options parse_block_html="true" /}
 <address>
@@ -19,4 +19,4 @@ Address : DDBJ BioProject, DDBJ Center, National Institute of Genetics at 1111 Y
 
 </address>
 
-[Ask questions about DDBJ services.](/contact-e.html#to-ddbj)
+[Ask questions about DDBJ services.](/contact-ddbj-e.html#to-ddbj)

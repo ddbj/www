@@ -7,7 +7,7 @@ related_pages:
   - title: ARSA Help
     url: /services/arsa-e.html
   - title: BLAST Help
-    url: /blast-help-e.html
+    url: /services/blast-e.html
   - title: TXSearch Help
     url: /services/txsearch-e.html
   - title: ClustalW Help
@@ -15,11 +15,11 @@ related_pages:
   - title: VecScreen Help
     url: /services/vecscreen-e.html
   - title: References
-    url: /services/services/references-e.html
+    url: /services/references-e.html
   - title: Services in past
-    url: /services/services/past-services-e.html
+    url: /services/past-services-e.html
   - title: WABI (Web API for Biology)
-    url: /wabi-e.html
+    url: /services/wabi-e.html
   - title: WABI BLAST Help
     url: /services/wabi-blast-e.html
 ---

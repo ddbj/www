@@ -31,4 +31,4 @@ lang: ja
 
 これらの Location 記述法を組み合わせることによって、これ以外の様々な位置情報を記述することができます。
 
-より詳しい Location の記述ルールに関する情報は、[Feature Table Definition](/ddbj/full_index.html): [3.4 Location](/ddbj/full_index.html#3.4) を ご参照ください。
+より詳しい Location の記述ルールに関する情報は、[Feature Table Definition](/ddbj/feature-table.html): [3.4 Location](/ddbj/feature-table.html#3.4) を ご参照ください。

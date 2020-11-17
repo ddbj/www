@@ -1,0 +1,24 @@
+"Investigation Title"	"Lung cancers"						
+"Experimental Design"	cell_type_comparison_design	stimulus_or_stress_design	compound_treatment_design	disease_state_design			
+"Experimental Factor Name"	COMPOUND	DISEASESTATE	DISEASESTAGING	CELLLINE	INDIVIDUAL		
+"Experimental Factor Type"	compound	disease_state	disease_staging	cell_line	individual		
+							
+"Person Last Name"	Yanaihara						
+"Person First Name"	Nozomu						
+"Person Mid Initial"							
+"Person Affiliation"	"Laboratory of Human Carcinogenesis, NCI, NIH"						
+"Person Roles"	submitter						
+							
+"Public Release Date"	"2006-07-01"						
+							
+Comment[ArrayExpressSubmissionDate]	"2005-06-20"						
+							
+"Experiment Description"	"Distinct miRNA expression significance in human lung cancers and lung cancer cell lines."						
+							
+"Protocol Name"	P-MEXP-9141	P-MEXP-9142	P-MEXP-9143	P-MEXP-9144	P-MEXP-9145	P-MEXP-9146	P-MEXP-9147
+"Protocol Type"	grow	compound_based_treatment	nucleic_acid_extraction	labeling	hybridization	image_acquisition	bioassay_data_transformation
+"Protocol Description"	"Human NSCLC cell lines were cultured with 10% FCS containing RPMI 1640 at 37C with 5% CO2."	"For the first 48h, cells were incubated with medium containing 1.0 uM 5-aza-dC, and then for another 24h with the addition of 1.0 uM TSA."	"Total RNA was isolated with TRIzol according to the manufacturer's protocol."	"Five micrograms of total RNA were separately added to reaction mix in a final volume of 12 ul, containing 1 ug of [3'-(N)8-(A)12-biotin-(A)12-biotin-5_] oligonucleotide primer. The mixture was incubated for 10 min at 70C and chilled on ice. With the mixture remaining on ice, 4 ul of 5x first-strand buffer, 2 ul of 0.1 M DTT, 1 ul of 10 mM dNTP mix, and 1 ul of SuperScript II RNaseH reverse transcriptase (200 units/ul) was added to a final volume of 20 ul, and the mixture was incubated for 90 min in a 37C water bath. After incubation for first-strand cDNA synthesis, 3.5 ul of 0.5 M NaOH/50 mM EDTA was added into 20 ul of first-strand reaction mix and incubated at 65C for 15 min to denature the RNA/DNA hybrids and degrade RNA templates. Then, 5 ul of 1 M Tris-HCI (pH 7.6) was added to neutralize the reaction mix, and labeled targets were stored in 28.5 ul at -80C until chip hybridization."	"The microarrays were hybridized in 6xSSPE (0.9M sodium chloride/60mM sodium phosphate/8 mM EDTA, pH 7.4)/30% formamide at 25C for 18 h, washed in 0.75x TNT (Tris HCl/sodium chloride/Tween 20) at 37C for 40 min, and processed by using direct detection of the biotin-containing transcripts by Streptavidin-Alexa647 conjugate."	"Processed slides were scanned by using a PerkinElmer ScanArray XL5K Scanner with the laser set to 635 nm, at power 80 and PMT 70 settings, and a scan resolution of 10 microm.Images were quantified by QUANTARRAY software (PerkinElmer). Signal intensities for each spot were calculated by subtracting local background (based on the median intensity of the area surrounding each spot) from total intensities."	"An average value of the three spot replicates of each miRNA were normalized and analyzed in BRB-ArrayTools version 3.2.3.  After excluding negative values that is hybridization intensity below background, normalization was performed by using a per-chip on median normalization method and normalization to median array as reference."
+"Protocol Parameters"	medium	compound		"RNA labelled"	"RNA hybridized; Hyb temperature"		
+"Protocol Software"							
+							
+"SDRF File"	E-TABM-22_sdrf.txt						

@@ -16,8 +16,8 @@ lang: en
 <dl><dt>References</dt>
   <dd>
     <ul>
-      <li><a href="/ddbj/services/index.html#responsibility">Before Nucleotide Sequence Submission</a></li>
-      <li><a href="/ddbj/services/index.html">Nucleotide Sequence Submission</a></li>
+      <li><a href="/ddbj/submission.html#responsibility">Before Nucleotide Sequence Submission</a></li>
+      <li><a href="/ddbj/submission.html">Nucleotide Sequence Submission</a></li>
     </ul>
   </dd>
 </dl>

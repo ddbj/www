@@ -30,7 +30,7 @@ lang: ja
 
 ### BioProject <a name="grant_bp"></a>
 
-D-way BioProject 登録システムで [Grants]({{ site.baseurl }}/aboutbioproject/services/index.html#Area_grants) の各項目に以下を記入します。
+D-way BioProject 登録システムで [Grants]({{ site.baseurl }}/bioproject/submission.html#Area_grants) の各項目に以下を記入します。
 
   - **Agency:** Japanese Ministry of Education, Culture, Sports, Science and Technology
   - **Agency abbreviation:** MEXT
@@ -41,7 +41,7 @@ D-way BioProject 登録システムで [Grants]({{ site.baseurl }}/aboutbioproje
 
 ### DDBJ 塩基配列データ <a name="grant_ddbj"></a>
 
-アノテーションを付加した塩基配列データを [DDBJ]({{ site.baseurl }}/services/services/index.html) に登録する場合，[structured COMMENT]({{ site.baseurl }}/flatfile/flat-file.html#Comment) に以下のように記載します。
+アノテーションを付加した塩基配列データを [DDBJ]({{ site.baseurl }}/ddbj/submission.html) に登録する場合，[structured COMMENT]({{ site.baseurl }}/ddbj/flat-file.html#Comment) に以下のように記載します。
 
 | COMMENT | ##Grant-START##     |                                             |
 |         | Agency abbreviation | :: MEXT                                     |
@@ -53,6 +53,6 @@ D-way BioProject 登録システムで [Grants]({{ site.baseurl }}/aboutbioproje
 
 ## 更新履歴 <a name="history"></a>
 
-2015-04-08: メタデータ用のエクセルファイル (_20150408) を公開。[BioProject](/files/submission/BioProject_template_20150408.xlsx), [BioSample](/files/submission/BioSample_template_20150408.xlsx), [DRA](/files/submission/DRA_template_20150408.xlsx)
+2015-04-08: メタデータ用のエクセルファイル (_20150408) を公開。[BioProject]({{ site.baseurl }}/assets/files/submission/BioProject_template_20150408.xlsx), [BioSample]({{ site.baseurl }}/assets/files/submission/BioSample_template_20150408.xlsx), [DRA]({{ site.baseurl }}/assets/files/submission/DRA_template_20150408.xlsx)
 
-2014-11-14: メタデータ用のエクセルファイル (_20141113) を公開。[BioProject](/files/submission/BioProject_template_20141113.xlsx), [BioSample](/files/submission/BioSample_template_20141113.xlsx), [DRA](/files/submission/DRA_template_20141113.xlsx)
+2014-11-14: メタデータ用のエクセルファイル (_20141113) を公開。[BioProject]({{ site.baseurl }}/assets/files/submission/BioProject_template_20141113.xlsx), [BioSample]({{ site.baseurl }}/assets/files/submission/BioSample_template_20141113.xlsx), [DRA]({{ site.baseurl }}/assets/files/submission/DRA_template_20141113.xlsx)

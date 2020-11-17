@@ -33,35 +33,35 @@ related_pages:
 
 塩基配列データベースは、データの単位である「エントリ」の集合として構成されています。 DDBJ に登録されたそれぞれのエントリは、DDBJ
 の定めるフォーマットにしたがった「フラットファイル」 (flat file) の形式で公開されています。
-フラットファイルには、塩基配列のほか、配列の登録者、関連文献、由来生物種、Feature 情報などが表示されています。 Feature 情報とは、その塩基配列のもつ生物学的特徴や遺伝子の機能、特性等に関する情報を記述したもので、記述形式は、 [The DDBJ/ENA/GenBank Feature Table Definition](/ddbj/full_index.html) (国際塩基配列データベースが定める記述形式) によって定められています。
+フラットファイルには、塩基配列のほか、配列の登録者、関連文献、由来生物種、Feature 情報などが表示されています。 Feature 情報とは、その塩基配列のもつ生物学的特徴や遺伝子の機能、特性等に関する情報を記述したもので、記述形式は、 [The DDBJ/ENA/GenBank Feature Table Definition](/ddbj/feature-table.html) (国際塩基配列データベースが定める記述形式) によって定められています。
 
 ## DDBJ フォーマットの例<a name="DDBJ_フォーマットの例"></a>
 
-<pre class="code flat-file"><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">AB000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">450 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">HUM</a> <a id="ModificationDateA" href="#ModificationDateB">01-JUN-2009</a>
-<a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate
+<pre class="code flat-file"><code><a id="LocusA" href="/ddbj/flat-file#LocusB">LOCUS</a>       <a id="LocusNameA" href="/ddbj/flat-file#LocusNameB">AB000000</a>              <a id="SequenceLengthA" href="/ddbj/flat-file#SequenceLengthB">450 bp</a>    <a id="MoleculeTypeA" href="/ddbj/flat-file#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="/ddbj/flat-file#MoleculeFormB">linear</a>   <a id="DivisionA" href="/ddbj/flat-file#DivisionB">HUM</a> <a id="ModificationDateA" href="/ddbj/flat-file#ModificationDateB">01-JUN-2009</a>
+<a id="DefinitionA" href="/ddbj/flat-file#DefinitionB">DEFINITION</a>  Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate
             dehydrogenase, partial cds.
-<a id="AccessionA" href="#AccessionB">ACCESSION</a>   AB000000
-<a id="VersionA" href="#VersionB">VERSION</a>     AB000000.1
-<a id="KeywordsA" href="#KeywordsB">KEYWORDS</a>    .
-<a id="SourceA" href="#SourceB">SOURCE</a>      Homo sapiens (human)
-  <a id="OrganismA" href="#OrganismB">ORGANISM</a>  Homo sapiens
+<a id="AccessionA" href="/ddbj/flat-file#AccessionB">ACCESSION</a>   AB000000
+<a id="VersionA" href="/ddbj/flat-file#VersionB">VERSION</a>     AB000000.1
+<a id="KeywordsA" href="/ddbj/flat-file#KeywordsB">KEYWORDS</a>    .
+<a id="SourceA" href="/ddbj/flat-file#SourceB">SOURCE</a>      Homo sapiens (human)
+  <a id="OrganismA" href="/ddbj/flat-file#OrganismB">ORGANISM</a>  Homo sapiens
             Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
             Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
             Catarrhini; Hominidae; Homo.
-<a id="Reference1A" href="#Reference1B">REFERENCE   1</a>  (bases 1 to 450)
-  <a id="AuthorsA" href="#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
-  <a id="TitleA" href="#TitleB">TITLE</a>     Direct Submission
-  <a id="JournalA" href="#JournalB">JOURNAL</a>   Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.
+<a id="Reference1A" href="/ddbj/flat-file#Reference1B">REFERENCE   1</a>  (bases 1 to 450)
+  <a id="AuthorsA" href="/ddbj/flat-file#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
+  <a id="TitleA" href="/ddbj/flat-file#TitleB">TITLE</a>     Direct Submission
+  <a id="JournalA" href="/ddbj/flat-file#JournalB">JOURNAL</a>   Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
-<a id="Reference2A" href="#Reference2B">REFERENCE   2</a>
+<a id="Reference2A" href="/ddbj/flat-file#Reference2B">REFERENCE   2</a>
   AUTHORS   Mishima,H., Shizuoka,T. and Fuji,I.
   TITLE     Glyceraldehyde-3-phosphate dehydrogenase expressed in human liver
   JOURNAL   Unpublished (2009)
-<a id="CommentA" href="#CommentB">COMMENT</a>     Human cDNA sequencing project.
-<a id="FeaturesA" href="#FeaturesB">FEATURES</a>             Location/Qualifiers
-     <a id="FeaturesSourceA" href="#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..450</a>
+<a id="CommentA" href="/ddbj/flat-file#CommentB">COMMENT</a>     Human cDNA sequencing project.
+<a id="FeaturesA" href="/ddbj/flat-file#FeaturesB">FEATURES</a>             Location/Qualifiers
+     <a id="FeaturesSourceA" href="/ddbj/flat-file#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..450</a>
                      /<a href="/ddbj/qualifiers.html#chromosome">chromosome</a>="12"
                      /<a href="/ddbj/qualifiers.html#clone">clone</a>="GT200015"
                      /<a href="/ddbj/qualifiers.html#clone_lib">clone_lib</a>="lambda gt11 human liver cDNA (GeneTech.
@@ -90,7 +90,7 @@ related_pages:
       301 tgagaaggag gtcaccgtgt tcggctgcag gaaccctaag gagatcccat ggggtgagac
       361 tagcgctgag tttgttgtgg agtacactgg tgttttcact gacaaggaca aggccgttgc
       421 tcaacttaag ggtggtgcta agaaggtctg
-<a id="EndA" href="#EndB">//</a></code></pre>
+<a id="EndA" href="/ddbj/flat-file#EndB">//</a></code></pre>
 
 フラットファイルは登録者から提供される情報に基づいて、一定の形式に則って作成されています。
 登録者の研究上の着眼点の違いなどにより、配列が類似している登録の場合でもフラットファイルに記載される内容は異なることがあります。
@@ -170,7 +170,7 @@ b: 生物分類に基づかない分類
 |  [HTG](/ddbj/htg.html)  |  high throughput genomic sequences<br>ゲノムプロジェクトに由来し，頻繁に update されることが期待されるデータで，段階に応じて以下の 3 phase に分類されます。その配列がいずれの phase であるかは KEYWORD 行に記載されます。配列が更新されると phase が上がり，finish した後は生物種による division に移されます。<br>{::nomarkdown}<ul><li>phase0; piece contig が構築される以前の配列 </li><li>phase1; 構築された piece contig の向きや順序が未確定の配列 </li><li>phase2; piece contig の向きや順序が確定した unfinished の配列</li></ul>{:/}    |
 |  STS  |  sequence tagged sites<br>Genome sequencing の tag となる配列。chromosome, map, PCR_condition 等の情報が必要です。  |
 |  UNA  |  未注釈データ<br>最近は UNA division は使用していません。  |
-|  [CON](con-j.html)  |  Contig / Constructed<br>ゲノムプロジェクトのように個々に登録された一連の配列データをデータバンク側が結合し，１つのアクセッション番号を付与した長大なデータ。CON division に格納されるエントリには長大な配列を構成する配列のアクセッション番号が記載され，塩基配列は記載されません。また，すでに登録されている個々のデータのエントリは、他の division に保存されています。<br>CON division への直接のデータ登録は受け付けていません。まず、CON エントリを構成する個々の配列データを登録して頂きます。その上で CON エントリの構築が適当と判断された場合に、データバンク側で CON エントリを構築します。CON エントリを構成する個々の配列データが更新された場合には、CON エントリもバンク側で更新します。  |
+|  [CON](con.html)  |  Contig / Constructed<br>ゲノムプロジェクトのように個々に登録された一連の配列データをデータバンク側が結合し，１つのアクセッション番号を付与した長大なデータ。CON division に格納されるエントリには長大な配列を構成する配列のアクセッション番号が記載され，塩基配列は記載されません。また，すでに登録されている個々のデータのエントリは、他の division に保存されています。<br>CON division への直接のデータ登録は受け付けていません。まず、CON エントリを構成する個々の配列データを登録して頂きます。その上で CON エントリの構築が適当と判断された場合に、データバンク側で CON エントリを構築します。CON エントリを構成する個々の配列データが更新された場合には、CON エントリもバンク側で更新します。  |
 
 {::options parse_block_html="true" /}
 <div id="ModificationDateB">
@@ -278,7 +278,7 @@ Bacillus 属 16S rRNA の部分配列
 INSD が発行する登録番号をアクセッション番号と呼んでいます。
 
 Conventional sequence data  
-: アルファベット１文字＋５桁の数字（例 A12345）または、アルファベット２文字＋６桁の数字（例 AB123456）で構成されています。<br>アルファベットの部分をプレフィックスと呼びます。<br>[プレフィックスのリスト](/ddbj/prefix-e.html)も ご参照ください。
+: アルファベット１文字＋５桁の数字（例 A12345）または、アルファベット２文字＋６桁の数字（例 AB123456）で構成されています。<br>アルファベットの部分をプレフィックスと呼びます。<br>[プレフィックスのリスト](/documents/prefix.html)も ご参照ください。
 
 : 複数のエントリを統合した場合や、データ登録後に内容が大幅に変更された場合などには、新規にアクセッション番号を発行することがあります。この際、新規のアクセッション番号（プライマリアクセッション番号）に対して、既存のアクセッション番号はセカンダリアクセッション番号となります。フラットファイルには先頭にプライマリアクセッション番号、２つ目以降にセカンダリアクセッション番号を記載します。プライマリアクセッション番号、あるいはセカンダリアクセッション番号、どちらの番号で検索しても，同じ変更後のデータが検索されます。
 
@@ -292,7 +292,7 @@ Conventional sequence data
   |  ```AB888888 AB777777```  |  セカンダリアクセッション番号  |
 
 Bulk sequence data; WGS, TSA, TLS  
-: [WGS](/ddbj/wgs.html), [TSA](/ddbj/tsa.html), TLS に発行されるアクセッション番号はアルファベット 4 文字 ＋ 8 桁（9 または 10 桁になることがあります）の数字で構成されます。<br>アルファベットの部分を[プレフィックス](/ddbj/prefix-e.html)と呼びます。<br>[For Large Scale Data (four prefix)](/ddbj/prefix-e.html#large)も ご参照ください。<br>例：ZZZZ01000001
+: [WGS](/ddbj/wgs.html), [TSA](/ddbj/tsa.html), TLS に発行されるアクセッション番号はアルファベット 4 文字 ＋ 8 桁（9 または 10 桁になることがあります）の数字で構成されます。<br>アルファベットの部分を[プレフィックス](/documents/prefix.html)と呼びます。<br>[For Large Scale Data (four prefix)](/documents/prefix-e.html#large)も ご参照ください。<br>例：ZZZZ01000001
 : 
   | ZZZZ（アルファベット 4文字） | プロジェクトを区別する prefix                           |
   | 01（2桁の数字）           | データセットのバージョン番号                               |
@@ -385,7 +385,7 @@ DBLINK      BioProject:PRJDA12345
 KEYWORDS は、過去の登録においては、遺伝子名 ([gene](/ddbj/qualifiers.html#gene))、産物名
 ([product](/ddbj/qualifiers.html#product)) の索引に用いられていました。
 
-現在は、[データの詳細種別](/documents/documents/documents/data-categories.html#detail) ([EST](/ddbj/est.html),
+現在は、[データの詳細種別](/documents/data-categories.html#detail) ([EST](/ddbj/est.html),
 [TSA](/ddbj/tsa.html), [HTC](/ddbj/htc.html), [HTG](/ddbj/htg.html),
 [GSS](/ddbj/gss.html), [WGS](/ddbj/wgs.html), [TPA](/ddbj/tpa.html)
 など)、配列の特性、実験手法、ゲノム配列の完成度などに関する情報などが、必要に応じて、記載されます。[INSDC agreed
@@ -478,7 +478,7 @@ REFERENCE   1   (bases 1 to 450)
 に到着した日付けです。  
 プライマリアクセッション番号であれば、そのエントリを更新しても受付日は変わりません。
 
-２行目以降には、[コンタクトパーソン (Contact person)](/ddbj/services/index.html#contact)
+２行目以降には、[コンタクトパーソン (Contact person)](/ddbj/submission.html#contact)
 の氏名、所属等の情報が表示されます。
 
 ```
@@ -526,7 +526,7 @@ E-mailアドレスと電話番号，FAX番号が非表示の場合
 </div>
 
 REFERENCE 2 以降 ([REFERENCE 1](#Reference1B) 以外) の
-REFERENCEには[そのエントリに関連する論文情報](/ddbj/services/index.html#pcite)が表示されます。
+REFERENCEには[そのエントリに関連する論文情報](/ddbj/submission.html#pcite)が表示されます。
 参考文献にあたるものは、原則として REFERENCE 3 以降に表示します。
 
 アクセッション番号の掲載された論文が公開された場合、DDBJ は対応エントリの更新作業を行うことがあります。このとき、登録時に
@@ -644,7 +644,7 @@ MGA データの生成手法
 
 Feature
 情報は、原則として登録者からの報告に基づいて記述され，それらの記述が適正になされるよう、データバンクが補足訂正を行ないます。記述項目と記述方法については、国際塩基配列データベースが定める
-[The DDBJ/ENA/GenBank Feature Table Definition](/ddbj/full_index-e.html)
+[The DDBJ/ENA/GenBank Feature Table Definition](/ddbj/feature-table-e.html)
 に詳しく説明されています。
 
 配列の特徴を記述するための feature key は、下記のように分類できます。

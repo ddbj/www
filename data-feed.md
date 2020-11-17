@@ -12,8 +12,8 @@ DDBJ センターからのお知らせと DDBJ サービスに関する更新や
 
 
 {: .feeds}
-[![\*]({{ site.baseurl }}/assets/images/parts/rss.png)購読](/rss/news-center-ja.xml)
-| [お知らせ一覧](/news/index.html)
+[![\*]({{ site.baseurl }}/assets/images/parts/rss.png)購読]({{ site.baseurl }}/assets/rss/news-center-ja.xml)
+| [お知らせ一覧](/news/ja)
 
 ## データベース <a name="database"></a>
 ### Nucleotide Sequence Database
@@ -21,45 +21,45 @@ DDBJ センターからのお知らせと DDBJ サービスに関する更新や
 Nucleotide Sequence Database に関する更新や変更のお知らせ。
 
 {: .feeds}
-[![\*]({{ site.baseurl }}/assets/images/parts/rss.png)購読](/rss/news-ddbj-ja.xml)
-| [お知らせ一覧](/news/index.html?db=ddbj)
+[![\*]({{ site.baseurl }}/assets/images/parts/rss.png)購読]({{ site.baseurl }}/assets/rss/news-ddbj-ja.xml)
+| [お知らせ一覧](/news/ja?db=ddbj)
 
 ### Sequence Read Archive
 
 DDBJ Sequence Read Archive に関する更新や変更のお知らせ。
 
 {: .feeds}
-[![\*]({{ site.baseurl }}/assets/images/parts/rss.png)購読](/rss/news-dra-ja.xml)
-| [お知らせ一覧](/news/index.html?db=dra)
+[![\*]({{ site.baseurl }}/assets/images/parts/rss.png)購読]({{ site.baseurl }}/assets/rss/news-dra-ja.xml)
+| [お知らせ一覧](/news/ja?db=dra)
 
 ### Genomic Expression Archive
 
 Genomic Expression Archive に関する更新や変更のお知らせ。
 
 {: .feeds}
-[![\*]({{ site.baseurl }}/assets/images/parts/rss.png)購読](/rss/news-gea-ja.xml)
-| [お知らせ一覧](/news/index.html?db=gea)
+[![\*]({{ site.baseurl }}/assets/images/parts/rss.png)購読]({{ site.baseurl }}/assets/rss/news-gea-ja.xml)
+| [お知らせ一覧](/news/ja?db=gea)
 
 ### BioProject
 
 BioProject に関する更新や変更のお知らせ。
 
 {: .feeds}
-[![\*]({{ site.baseurl }}/assets/images/parts/rss.png)購読](/rss/news-bioproject-ja.xml)
-|[お知らせ一覧](/news/index.html?db=bioproject)
+[![\*]({{ site.baseurl }}/assets/images/parts/rss.png)購読]({{ site.baseurl }}/assets/rss/news-bioproject-ja.xml)
+|[お知らせ一覧](/news/ja?db=bioproject)
 
 ### BioSample
 
 BioSample に関する更新や変更のお知らせ。
 
 {: .feeds}
-[![\*]({{ site.baseurl }}/assets/images/parts/rss.png)購読](/rss/news-biosample-ja.xml)
-|[お知らせ一覧](/news/index.html?db=biosample)
+[![\*]({{ site.baseurl }}/assets/images/parts/rss.png)購読]({{ site.baseurl }}/assets/rss/news-biosample-ja.xml)
+|[お知らせ一覧](/news/ja?db=biosample)
 
 ### Japanese Genotype-phenotype Archive
 
 Japanese Genotype-phenotype Archive に関する更新や変更のお知らせ。
 
 {: .feeds}
-[![\*]({{ site.baseurl }}/assets/images/parts/rss.png)購読](/rss/news-jga-ja.xml)
-| [お知らせ一覧](/news/index.html?db=jga)
+[![\*]({{ site.baseurl }}/assets/images/parts/rss.png)購読]({{ site.baseurl }}/assets/rss/news-jga-ja.xml)
+| [お知らせ一覧](/news/ja?db=jga)

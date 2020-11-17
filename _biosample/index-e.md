@@ -23,7 +23,7 @@ lang: en
 
   - [Login & Submit](https://ddbj.nig.ac.jp/D-way)
   - [Policies and Disclaimers](/policies-e.html)
-  - [Contact](/contact-e.html)
+  - [Contact](/contact-ddbj-e.html)
   - [Japanese](/biosample/index.html)
 
 </div>
@@ -150,7 +150,7 @@ BI-DDBJ Web Sites Annotated/Assembled Sequences Sequence Read Archive
 <div id="header-bottom">
 
   - [Home](/biosample/index-e.html)
-  - [Handbook](/biosample/services/index.html)
+  - [Handbook](/biosample/submission.html)
   - [Sample
     Attribute![](/images/parts/arrow_down.svg)](/biosample/attribute-e.html)
       - [Example
@@ -207,7 +207,7 @@ The general aims of this project include:
 
 <div class="box-layer">
 
-[](/biosample/services/index.html "How to submit")
+[](/biosample/submission.html "How to submit")
 
 <div class="top-navi-box">
 
@@ -379,7 +379,7 @@ The general aims of this project include:
   - [Sitemap](/sitemaps-e.html "Sitemap")
   - [Calendar](/calendar-e.html "DDBJ Center Calendar")
   - [Address](/ddbj-access-e.html "DDBJ Center address")
-  - [Contact](/contact-e.html "Contact to DDBJ Center")
+  - [Contact](/contact-ddbj-e.html "Contact to DDBJ Center")
   - Last modified: 2018-02-19
 
 </div>

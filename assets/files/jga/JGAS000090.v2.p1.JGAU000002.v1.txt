@@ -1,0 +1,26 @@
+# Name:	COM_Asthma
+# Description:	 The goal of the EVE Consortium, which includes GWAS datasets from nine research groups in the United States, is not only to increase the power to identify SNPs, genes and pathways associated with asthma risk by combining studies but also to provide a better understanding of the patterns of variation in asthma risk genes or variants in the three major ethnic groups in the United States and to provide a more comprehensive understanding of the differences in genetic risk patterns between European-American, African-American and African-Caribbean, and Latino individuals. The results reported here are based on analyses of >2 million SNPs in 3,246 cases with asthma, 3,385 non-asthmatic controls, 1,702 asthma case-parent trios, and 355 family based cases and 468 family-based controls, comprising three ethnic groups: European American, African American and African Caribbean, and Latino. We performed four genome-wide investigations: one meta-analysis in each of three ethnic groups and one in the combined sample.
+# Method:	The meta-analysis searched for asthma susceptibility variants for which the same allele was associated with asthma in the different studies. For each study, we constructed a test statistic that had a standard normal distribution under the null hypothesis of no association and captured the direction of the effect (meaning the statistic was positive if the reference allele was associated with an increased risk of asthma). The meta-analysis test statistic was calculated as a linear combination of the individual study scores with weights proportional to the square root of the number of cases (or trios). Pvalues were obtained using normal approximations. Odds ratios were calculated by combining linearly log odds ratios with weights reflecting the standard errors from the genome-wide association studies.
+# Human genome build:	38
+# dbSNP build:	141
+
+# SNP ID:	Marker accession
+# P-value:	testing p-value
+# Chr ID:	chromosome
+# Chr Position:	chromosome position
+# Allele1:	genomic allele 1
+# Allele2:	genomic allele 2
+# CI low:	the lower limit of 95% confidence interval
+# CI high:	the higher limit of 95% confidence interval
+
+
+SNP ID	Marker Type	P-value	Chr ID	Chr Position	Rank	Allele1	Allele2	Sample size	Effect Allele	Odds ratio	CI low	CI high	Bin ID
+rs2511	SNP	0.00108618670779337	1	248849447		G	T	10899	G	1.13918067175935	0.995704582899045	1.30333095297369	125
+rs6020	SNP	0.00685701463120814	1	169549874		C	T	6596	C	0.843885252376495	0.746516340617382	0.953954093743729	85
+rs6035	SNP	0.00055138523653242	1	169552611		T	C	10899	C	0.852098110410173	0.743789755257476	0.976177992009643	85
+rs11677	SNP	0.00891332553074253	1	19975471		G	A	10899	A	1.06937282952855	0.950898069427508	1.20260865522883	10
+rs14000	SNP	0.00164563199124457	1	109279887		T	C	10899	C	0.907599085885095	0.803382649874343	1.02533469054665	55
+rs17739	SNP	0.00690250265432124	1	223780251		C	T	10899	C	1.02784593644995	0.948011050514881	1.11440396027335	112
+rs157231	SNP	0.000673028176243928	1	28902106		G	A	10899	A	0.931233504214274	0.829658658494358	1.04524412599389	15
+rs157232	SNP	0.000429581648848654	1	28903237		A	G	10899	A	1.05933447480369	0.94366503275543	1.18918206201929	15
+rs169216	SNP	0.00951263628736854	1	77089796		C	T	10899	C	1.03294612445013	0.95246747971337	1.12022480425016	39

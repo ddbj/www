@@ -5,24 +5,24 @@ category: ddbj
 lang: en
 related_pages:
   - title: Submission File Format
-    url: services/file-format-e.html
+    url: /ddbj/file-format-e.html
   - title: Validation tools for MSS data files
-    url: services/mss-tool-e.html
+    url: /ddbj/mss-tool-e.html
   - title: UME User’s manual
-    url: services/ume-e.html
+    url: /ddbj/ume-e.html
   - title: Parser User’s Manual
-    url: services/parser-e.html
+    url: /ddbj/parser-e.html
   - title: transChecker User’s Manual
-    url: services/transchecker-e.html
+    url: /ddbj/transchecker-e.html
   - title: Application form for MSS
-    url: services/mass-form-e.html
+    url: /ddbj/mss-form-e.html
 ---
 
 ## Validator error message
 
 In this site, error messages outputted from checking tools for nucleotide sequence data submission are briefly explained.  
 If you find any error message, please make some appropriate correction.  
-If you have any problems and/or questions, please [contact us](/contact-e.html) with error messages.
+If you have any problems and/or questions, please [contact us](/contact-ddbj-e.html) with error messages.
 
 ### Parser <a name="Parser"></a>
 

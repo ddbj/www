@@ -164,7 +164,7 @@ columns. Don't forget to add the database name and URL to the Term
 Source Name and Term Source File fields of the ADF header.
 
 If the database you would like to cite is not already on the list,
-please [contact us](/contact-e.html) with the database URL and we will
+please [contact us](/contact-ddbj-e.html) with the database URL and we will
 look into adding it to the list of allowed databases.
 
 We rely on accession numbers and not free-text names, because accessions

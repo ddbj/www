@@ -5,17 +5,17 @@ category: ddbj
 lang: ja
 related_pages:
   - title: 登録ファイル形式
-    url: services/file-format.html
+    url: /ddbj/file-format.html
   - title: MSS データファイル用チェックツール
-    url: services/mss-tool.html
+    url: /ddbj/mss-tool.html
   - title: UME ユーザーマニュアル
-    url: services/ume.html
+    url: /ddbj/ume.html
   - title: Parser ユーザーマニュアル
-    url: services/parser.html
+    url: /ddbj/parser.html
   - title: transChecker ユーザーマニュアル
-    url: services/transchecker.html
+    url: /ddbj/transchecker.html
   - title: MSS 利用申し込み
-    url: services/mass-form.html
+    url: /ddbj/mss-form.html
 ---
 
 ## validator エラーメッセージ

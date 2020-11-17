@@ -5,11 +5,11 @@ category: documents
 lang: en
 related_pages:
   - title: Prefix Letter List
-    url: /prefix-e.html
+    url: /documents/prefix-e.html
   - title: Categories for Sequence Data
-    url: /documents/documents/data-categories-e.html
+    url: /documents/data-categories-e.html
   - title: Principle of “Hold-Until-Published” data release
-    url: /documents/documents/data-release-policy-e.html
+    url: /documents/data-release-policy-e.html
 ---
 
 ## Definition <a name="definition"></a>
@@ -29,31 +29,31 @@ property of the submitted and published data.
 
 INSD accession number is composed of alphabet letters and digits.  
 The alphabet part is called "prefix". See [the prefix
-list](/prefix-e.html).  
+list](/documents/prefix-e.html).  
 The formats of INSD accession numbers are varied in accordance with
-[categories of data](/documents/documents/data-categories-e.html) as follows.
+[categories of data](/documents/data-categories-e.html) as follows.
 
 Annotated/Assembled Data
 
 | conventinal | 1 alphabet letter and 5 digits: ex. A12345<br />2 alphabet letters and 6 digits: ex. AB123456<br />2 alphabet letters and 8 digits: ex. AB12345678 |
-| bulk<br />[WGS](/ddbj/wgs-e.html), [TSA](/ddbj/tsa-e.html), [TLS](/ddbj/tls-e.html) | 4 alphabet letters ([For Large Scale Data](/prefix-e.html#large)) and 8 to 10 digits: ex. ABCD01012345<br />6 alphabet letters ([For Large Scale Data](/prefix-e.html#large)) and 9 to 11 digits: ex. ABCDEF010123456 |
+| bulk<br />[WGS](/ddbj/wgs-e.html), [TSA](/ddbj/tsa-e.html), [TLS](/ddbj/tls-e.html) | 4 alphabet letters ([For Large Scale Data](/documents/prefix-e.html#large)) and 8 to 10 digits: ex. ABCD01012345<br />6 alphabet letters ([For Large Scale Data](/documents/prefix-e.html#large)) and 9 to 11 digits: ex. ABCDEF010123456 |
 | [MGA](/ddbj/mga-e.html) | 5 alphabet letters and 7 or more digits: ex. ABCDE1234567 |
-| [protein_id](/ddbj/qualifiers-e.html#protein_id) | 3 alphabet letters ([protein_id prefix list](/prefix-e.html#protein)) and 5 digits: ex. ABC12345<br />3 alphabet letters ([protein_id prefix list](/prefix-e.html#protein)) and 7 digits: ex. ABC1234567 |
+| [protein_id](/ddbj/qualifiers-e.html#protein_id) | 3 alphabet letters ([protein_id prefix list](/documents/prefix-e.html#protein)) and 5 digits: ex. ABC12345<br />3 alphabet letters ([protein_id prefix list](/documents/prefix-e.html#protein)) and 7 digits: ex. ABC1234567 |
 
 
 Raw Output Data from Sequencers
 
 
 | [Trace Archive](/dta/index-e.html)        | 2 alphabet letters (TI only) and 1 or more digits: ex. TI12345678                              |
-| [Sequece Read Archive](/dra/index-e.html) | 3 alphabet letters ([SRA prefix list](/prefix-e.html#dra)) and 6 or more digits: ex. DRA000001 |
+| [Sequece Read Archive](/dra/index-e.html) | 3 alphabet letters ([SRA prefix list](/documents/prefix-e.html#dra)) and 6 or more digits: ex. DRA000001 |
 
 
 
 Project/Sample
 
 
-| [BioProject](/bioproject/index-e.html) | 5 alphabet letters ([BioProject prefix list](/prefix-e.html#project)) and 1 or more digits: ex. PRJDA123 |
-| [BioSample](/biosample/index-e.html)   | 4 alphabet letters ([BioSample prefix](/prefix-e.html#sample)) and 8 digits: ex. SAMD00000001            |
+| [BioProject](/bioproject/index-e.html) | 5 alphabet letters ([BioProject prefix list](/documents/prefix-e.html#project)) and 1 or more digits: ex. PRJDA123 |
+| [BioSample](/biosample/index-e.html)   | 4 alphabet letters ([BioSample prefix](/documents/prefix-e.html#sample)) and 8 digits: ex. SAMD00000001            |
 
 
 

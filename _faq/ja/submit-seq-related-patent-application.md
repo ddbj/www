@@ -17,6 +17,6 @@ lang: ja
 <p>塩基配列データがDDBJ から公開された場合、「公知」の扱いになりますので注意が必要です。</p>
 <dl><dt>参考</dt>
   <dd><a href="/ddbj/patent-data.html">特許出願に含まれる配列データの提供</a></dd>
-  <dd><a href="/service-policy.html#ownership">特許・知的所有権と優先権</a></dd>
+  <dd><a href="/policies.html#ownership">特許・知的所有権と優先権</a></dd>
   <dd><a href="/activities/patent.html">DDBJ での特許関連配列データの公開業務の紹介</a></dd>
 </dl>

@@ -45,7 +45,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn121130"><a href="#wn121130">DDBJ/EMBL/GenBank Feature Table Definition revised</a></h2>
   <div class="news_date">November 30,2012</div>
-  <div class="news_content"><dl><dd><a href="/ddbj/full_index-e.html">Feature Table Definition</a> is the common annotation manual among the three banks (DDBJ, EMBL-Bank, GenBank) for the construction of the DDBJ/EMBL/GenBank International Nucleotide Sequence Database. It was revised to version 10.2 in November 2012.</dd></dl></div>
+  <div class="news_content"><dl><dd><a href="/ddbj/feature-table-e.html">Feature Table Definition</a> is the common annotation manual among the three banks (DDBJ, EMBL-Bank, GenBank) for the construction of the DDBJ/EMBL/GenBank International Nucleotide Sequence Database. It was revised to version 10.2 in November 2012.</dd></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -167,7 +167,7 @@ FT   /note="genetic maker"</code></pre><br><span><b>[DDBJ FTP site]</b></span><b
 <div class="news_post_list">
   <h2 class="news_title" id ="wn120928"><a href="#wn120928">The Report for the 25th International Collaborators Meeting</a></h2>
   <div class="news_date">September 28,2012</div>
-  <div class="news_content"><dl><dd><a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a>, consisted of DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a> and <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a>, hold the international collaborators meeting every year.<br>In 2012, the meeting was held at NCBI in USA, 11-13 June, to discuss practical matters to maintain and update nucleotide sequence data archives; <a href="/index.html" target="_blank">DDBJ</a>, <a href="http://www.ebi.ac.uk/embl/" target="_blank">EMBL-Bank</a>, <a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>, Sequence Read Archive (SRA) and Trace Archive.<br>The outcomes of the meeting are summarized <a href="/activities/index-e.html#2012">here</a>.</dd></dl></div>
+  <div class="news_content"><dl><dd><a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a>, consisted of DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a> and <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a>, hold the international collaborators meeting every year.<br>In 2012, the meeting was held at NCBI in USA, 11-13 June, to discuss practical matters to maintain and update nucleotide sequence data archives; <a href="/index.html" target="_blank">DDBJ</a>, <a href="http://www.ebi.ac.uk/embl/" target="_blank">EMBL-Bank</a>, <a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>, Sequence Read Archive (SRA) and Trace Archive.<br>The outcomes of the meeting are summarized <a href="/activities/icm/2012-e">here</a>.</dd></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -327,7 +327,7 @@ FT   /note="genetic maker"</code></pre><br><span><b>[DDBJ FTP site]</b></span><b
 <div class="news_post_list">
   <h2 class="news_title" id ="wn120629"><a href="#wn120629">DDBJ/EMBL/GenBank Feature Table Definition revised</a></h2>
   <div class="news_date">June 29,2012</div>
-  <div class="news_content"><dl><dd><a href="/ddbj/full_index-e.html">Feature Table Definition (FT-Doc)</a> is the common annotation manual among the three banks (DDBJ, EMBL-Bank, GenBank) for the construction of the DDBJ/EMBL/GenBank International Nucleotide Sequence Database. Feature Table Definition was revised in May 2012. Version is 10.1.</dd></dl></div>
+  <div class="news_content"><dl><dd><a href="/ddbj/feature-table-e.html">Feature Table Definition (FT-Doc)</a> is the common annotation manual among the three banks (DDBJ, EMBL-Bank, GenBank) for the construction of the DDBJ/EMBL/GenBank International Nucleotide Sequence Database. Feature Table Definition was revised in May 2012. Version is 10.1.</dd></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>

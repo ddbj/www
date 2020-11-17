@@ -90,7 +90,7 @@ DDBJ BioProject に登録されたプライマリープロジェクトは「即�
 
 「非公開」の場合，登録されたプライマリープロジェクトはリンクされている DDBJ，DRA，DTA，DOR レコードが公開されるまで非公開に保たれます。プロジェクトデータの公開予定日を設定することはできません。 プライマリープロジェクトはリンクされている DDBJ レコードが公開されると自動的に公開されます。 一方，プライマリープロジェクトの公開はリンクされている DDBJ レコードの公開を引き起こしません。あるプライマリープロジェクトにおいて，リンクされているレコードの公開は同一プロジェクトに属している他のレコードの公開を引き起こしません。DDBJ レコードの公開はリンクしているプロジェクトの公開とは独立しています。
 
-FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp_bs_seq_release.html)
+FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp-bs-seq-release.html)
 
 {::nomarkdown}
 {% include image.html url="submission/um_pri_visibility.jpg" caption="アンブレラプロジェクトとプライマリープロジェクト間の関係の可視性" class="w500" %}
@@ -109,12 +109,12 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 [Neanderthal Metagenome](https://www.ncbi.nlm.nih.gov/bioproject/18309)  
 [Escherichia coli O104:H4](https://www.ncbi.nlm.nih.gov/bioproject/68275)
 
-アンブレラプロジェクトは通常のプライマリープロジェクトと同様[登録アカウントシステム](https://ddbj.nig.ac.jp/D-way/)から登録します。<span class="red">登録の際には必ず [Private comments to DDBJ staff](/bioproject/services/index.html#Private_comments) にこの登録がアンブレラであることを記入し DDBJ BioProject チームに伝えてください。 </span> アンブレラプロジェクトを非公開にすることはできません。
+アンブレラプロジェクトは通常のプライマリープロジェクトと同様[登録アカウントシステム](https://ddbj.nig.ac.jp/D-way/)から登録します。<span class="red">登録の際には必ず [Private comments to DDBJ staff](/bioproject/submission.html#Private_comments) にこの登録がアンブレラであることを記入し DDBJ BioProject チームに伝えてください。 </span> アンブレラプロジェクトを非公開にすることはできません。
 
 アンブレラ単位でプライマリープロジェクトをまとめる場合，次の手順で行ってください。  
 まずはアンブレラを登録し，公開します。必要に応じて，登録者以外の関係者にもアンブレラに付与された PRJDB 番号を周知してください。
 
-以降，関連するプライマリープロジェクトを登録する際には [Umbrella BioProject](/bioproject/services/index.html#Area_linked-project) に親となるアンブレラの PRJDB 番号を記入してください。 登録したプライマリープロジェクトが公開されると，自動的に指定したアンブレラに関連付けられます。
+以降，関連するプライマリープロジェクトを登録する際には [Umbrella BioProject](/bioproject/submission.html#Area_linked-project) に親となるアンブレラの PRJDB 番号を記入してください。 登録したプライマリープロジェクトが公開されると，自動的に指定したアンブレラに関連付けられます。
 
 過去に登録したプライマリープロジェクトをアンブレラの傘下に追加したい場合は，アンブレラと追加したいプライマリープロジェクトの PRJDB 番号を [DDBJ BioProject にお知らせください](/contact-ddbj.html)。
 
@@ -789,7 +789,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
   {::options parse_block_html="true" /}
   <div class="attention">
   ヒトを対象とした研究データの登録について
-  : <span class="red">研究対象者に由来するデータを DDBJ センターが運営するデータベースに登録する場合，研究対象者の尊厳及び人権は，適用されるべき法令，指針，ガイドライン，登録者が所属している機関の方針に従い，登録者の責任において保護されている必要があります。原則として，研究対象者を直接特定し得る情報はメタデータから取り除いてください。ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/service-policy.html#human)を熟読してください。</span>
+  : <span class="red">研究対象者に由来するデータを DDBJ センターが運営するデータベースに登録する場合，研究対象者の尊厳及び人権は，適用されるべき法令，指針，ガイドライン，登録者が所属している機関の方針に従い，登録者の責任において保護されている必要があります。原則として，研究対象者を直接特定し得る情報はメタデータから取り除いてください。ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#human)を熟読してください。</span>
   </div>
 
 ## プロジェクトの登録 <a name="project-submission"></a>

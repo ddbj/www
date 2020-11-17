@@ -6,31 +6,31 @@ category: ddbj
 lang: en
 related_pages:
   - title: Data Submission from Genome Project
-    url: /ddbj/genome-e.html)
+    url: /ddbj/genome-e.html
   - title: WGS
-    url: /ddbj/wgs-e.html)
+    url: /ddbj/wgs-e.html
   - title: CON
-    url: /ddbj/con-e.html)
+    url: /ddbj/con-e.html
   - title: GSS
-    url: /ddbj/gss-e.html)
+    url: /ddbj/gss-e.html
   - title: HTG
-    url: /ddbj/htg-e.html)
+    url: /ddbj/htg-e.html
   - title: Submission of environmental sequences
-    url: /ddbj/environmental-e.html)
+    url: /ddbj/environmental-e.html
   - title: ENV
-    url: /ddbj/env-e.html)
+    url: /ddbj/env-e.html
   - title: TLS
-    url: /ddbj/tls-e.html)
+    url: /ddbj/tls-e.html
   - title: Data Submission from Transcriptome Project
-    url: /ddbj/transcriptome-e.html)
+    url: /ddbj/transcriptome-e.html
   - title: TSA
-    url: /ddbj/tsa-e.html)
+    url: /ddbj/tsa-e.html
   - title: EST
-    url: /ddbj/est-e.html)
+    url: /ddbj/est-e.html
   - title: HTC
-    url: /ddbj/htc-e.html)
+    url: /ddbj/htc-e.html
   - title: Third Party Data (TPA)
-    url: /ddbj/tpa-e.html)
+    url: /ddbj/tpa-e.html
 ---
 
 ## [Division](/ddbj/flat-file-e.html#Division) conventional sequence data <a name="division"></a>

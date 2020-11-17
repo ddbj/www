@@ -22,4 +22,4 @@ lang: en
   <dd>Example: change each clone or gene name of all entries, etc..</dd><dt>(3) Extensive correction of data</dt>
   <dd>Example: change more than 30 features due to the sequence update, etc..</dd>
 </dl>
-<p>In case of (2) or (3), we would like to know the number of entries, the correction item, etc. to specify the file format for your request. <br>Contact us in advance from <a href="/contact-e.html#to-ddbj">contact form</a>. <br>In general, we handle update requests within several days but for a large number of entries, it might take us time in updating the data. <br>Be sure to contact us beforehand when you request the release of data which accompanies correction.</p>
+<p>In case of (2) or (3), we would like to know the number of entries, the correction item, etc. to specify the file format for your request. <br>Contact us in advance from <a href="/contact-ddbj-e.html#to-ddbj">contact form</a>. <br>In general, we handle update requests within several days but for a large number of entries, it might take us time in updating the data. <br>Be sure to contact us beforehand when you request the release of data which accompanies correction.</p>

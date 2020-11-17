@@ -22,8 +22,8 @@ class="separater">\|</span>[Next news »](/news/en/201005-e.html)
 
 The new JGA system was released. Please see [this
 page](/jga/update-202009-e.html) for the changed points. Manuals:
-[Submission steps](/jga/services/index.html), [How to access
-data](/jga/services/index.html).
+[Submission steps](/jga/download.html), [How to access
+data](/jga/download.html).
 
 <span class="faq_category">Service: DDBJ Center, JGA</span> <span
 class="faq_category">Keywords: Announcement</span>

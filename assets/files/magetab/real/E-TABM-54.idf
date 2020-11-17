@@ -1,0 +1,21 @@
+"Investigation Title"	"Bordetella pertussis comparative genome hybridization"	
+"Experimental Design"	strain_or_line_design	comparative_genome_hybridization
+"Experimental Factor Name"	STRAINORLINE	CLINICAL_INFORMATION
+"Experimental Factor Type"	strain_or_line	clinical_information
+		
+"Person Last Name"	Cummings	
+"Person First Name"	Craig	
+"Person Mid Initial"		
+"Person Email"	cummings@pmgm2.stanford.edu	
+"Person Roles"	submitter	
+		
+"Quality Control Types"	technical_replicate	biological_replicate
+"Public Release Date"	"2005-12-31"	
+		
+		
+"Experiment Description"	"Comparative genome hybridization (CGH) of sample of 137 Bordetella pertussis strains"	
+		
+"SDRF File"	E-TABM-54_sdrf.txt	
+		
+"Term Source Name"	ArrayExpress	
+"Term Source File"	http://www.ebi.ac.uk/arrayexpress/	

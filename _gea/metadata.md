@@ -56,7 +56,7 @@ IDF はタグと対応する値が組み合わされたタブ区切りテキス�
 <!-- end list -->
 
 [Experimental Design](#Experimental_Design)<a name="Experimental_Design"></a>  
-: 実験のデザイン。[controlled term]("https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=1804523015") から該当するものを選びます。
+: 実験のデザイン。[controlled term](https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=1804523015) から該当するものを選びます。
 
 <!-- end list -->
 

@@ -115,7 +115,7 @@ CDS と考えていた領域の途中に終止コドンが存在していた場�
       - [note](/ddbj/qualifiers.html#note) qualifier に "pseudogene of [protein name]" などの記載もお願いします。
       - [pseudogene](/ddbj/qualifiers.html#pseudogene) qualifier の規定値に関しましては、[Controlled vocabulary for /pseudogene qualifier](/ddbj/pseudogene.html) で解説されています。
       - この CDS feature に相当するタンパク質産物は存在しないことになりますので、[product](/ddbj/qualifiers.html#product) qualifier は、原則、記載しないでください。
-    [登録の見本 B06](/ddbj/example-j.html#B06) もご参照ください。
+    [登録の見本 B06](/ddbj/example.html#B06) もご参照ください。
   - c) 生体内に末端を欠失したタンパク質産物が存在すると推定される場合  
     想定される truncated なタンパク質産物の location を CDS feature で指定します。  
     したがって、location は短いものとなります。
@@ -138,7 +138,7 @@ CDS と考えていた領域の途中に終止コドンが存在していた場�
     想定される CDS location を示し、[exception](/ddbj/qualifiers.html#exception) qualifier を付加します。  
     このとき、[translation](/ddbj/qualifiers.html#translation) qualifier で示す翻訳アミノ酸配列は conceptual translation ではなく、transcript の配列、近縁種などの事例から確認、または、推定された記載を採用します。  
     原則、[inference](/ddbj/qualifiers.html#inference) qualifier に推定した根拠の記載をお願いします。
-    [登録の見本 B09](/ddbj/example-j.html#B09) もご参照ください。
+    [登録の見本 B09](/ddbj/example.html#B09) もご参照ください。
     塩基配列登録システム では、"Submission Information" boxに、詳細な説明をお願いします。
   - f) selenocystein、あるいは、pyrrolysine に翻訳される場合 想定される CDS location を示し、[transl\_except](/ddbj/qualifiers.html#transl_except) を付加します。  
     その記載に基づき、終止コドンと扱わずにアミノ酸翻訳します。
@@ -219,7 +219,7 @@ CDS feature の location に join を用いて記載する場合、mRNA が成�
 
 </div>
 
-以上の情報から、塩基配列と CDS feature の組み合わせは、塩基配列の86番目の塩基から450番目の塩基までが以下のように[一文字表記](/ddbj/code-j.html#amino-1)でアミノ酸配列に翻訳されます。
+以上の情報から、塩基配列と CDS feature の組み合わせは、塩基配列の86番目の塩基から450番目の塩基までが以下のように[一文字表記](/ddbj/code.html#amino-1)でアミノ酸配列に翻訳されます。
 
 ``` code flat-file
       86 atg gcg aag att aag atc ggg atc aat ggg ttc ggg agg atc ggg 

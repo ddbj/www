@@ -57,11 +57,11 @@ EST 登録における注意事項
 
 EST エントリの特徴
 
-  - 原則として、source feature 以外の [feature](#FeaturesB) は記載されません。
+  - 原則として、source feature 以外の [feature](/ddbj/flat-file#FeaturesB) は記載されません。
 
-  - [LOCUS](#LocusA) 行に表示される DIVISION は、"EST" です。
+  - [LOCUS](/ddbj/flat-file#LocusB) 行に表示される DIVISION は、"EST" です。
 
-  - [KEYWORDS](#KeywordsA) 行には "EST" と次のいずれかが表示されます。
+  - [KEYWORDS](/ddbj/flat-file#KeywordsB) 行には "EST" と次のいずれかが表示されます。
     
     以下の controlled vocabulary は EST を得る際の手法、strategy を示すものであり、実際に RNA
     transcript の 5' 末端、または、3' 末端に相当する配列であることを保証するものではありません。
@@ -70,7 +70,7 @@ EST エントリの特徴
     | 3'EST の場合   | 3'-end sequence (3'-EST) |
     | 上記を特定できない場合 | unspecified EST          |
 
-  - [COMMENT](#CommentA) 行には，登録される塩基配列が anti-sense 鎖側，sense
+  - [COMMENT](/ddbj/flat-file#CommentB) 行には，登録される塩基配列が anti-sense 鎖側，sense
     鎖側のどちらであるかを示すため，次のいずれかを COMMENT に記載します。
     
     3'EST 登録の場合にのみ該当します。
@@ -80,31 +80,31 @@ EST エントリの特徴
     
 <!-- end list -->
 
-<pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">HY000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">300 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">EST</a> <a id="ModificationDateA" href="#ModificationDateB">15-OCT-2008</a>
-<a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Mus musculus mRNA, clone: 2310009A01, 3' end sequence, expressed 
+<pre><code><a id="LocusA" href="/ddbj/flat-file#LocusB">LOCUS</a>       <a id="LocusNameA" href="/ddbj/flat-file#LocusNameB">HY000000</a>              <a id="SequenceLengthA" href="/ddbj/flat-file#SequenceLengthB">300 bp</a>    <a id="MoleculeTypeA" href="/ddbj/flat-file#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="/ddbj/flat-file#MoleculeFormB">linear</a>   <a id="DivisionA" href="/ddbj/flat-file#DivisionB">EST</a> <a id="ModificationDateA" href="/ddbj/flat-file#ModificationDateB">15-OCT-2008</a>
+<a id="DefinitionA" href="/ddbj/flat-file#DefinitionB">DEFINITION</a>  Mus musculus mRNA, clone: 2310009A01, 3' end sequence, expressed 
             in tongue.
-<a id="AccessionA" href="#AccessionB">ACCESSION</a>   HY000000
-<a id="VersionA" href="#VersionB">VERSION</a>     HY000000.1
-<a id="KeywordsA" href="#KeywordsB">KEYWORDS</a>    EST; 3'-end sequence (3'-EST).
-<a id="SourceA" href="#SourceB">SOURCE</a>      Mus musculus (house mouse)
-  <a id="OrganismA" href="#OrganismB">ORGANISM</a>  Mus musculus
+<a id="AccessionA" href="/ddbj/flat-file#AccessionB">ACCESSION</a>   HY000000
+<a id="VersionA" href="/ddbj/flat-file#VersionB">VERSION</a>     HY000000.1
+<a id="KeywordsA" href="/ddbj/flat-file#KeywordsB">KEYWORDS</a>    EST; 3'-end sequence (3'-EST).
+<a id="SourceA" href="/ddbj/flat-file#SourceB">SOURCE</a>      Mus musculus (house mouse)
+  <a id="OrganismA" href="/ddbj/flat-file#OrganismB">ORGANISM</a>  Mus musculus
             Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
             Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia;
             Sciurognathi; Muroidea; Muridae; Murinae; Mus; Mus.
-<a id="Reference1A" href="#Reference1B">REFERENCE   1</a>  (bases 1 to 300)
-  <a id="AuthorsA" href="#AuthorsB">AUTHORS</a>   Mishima,H., Yamada,T. and Liu,G.Q.
-  <a id="TitleA" href="#TitleB">TITLE</a>     Direct Submission
-  <a id="JournalA" href="#JournalB">JOURNAL</a>   Submitted (30-SEP-2008) to the DDBJ/EMBL/GenBank databases.
+<a id="Reference1A" href="/ddbj/flat-file#Reference1B">REFERENCE   1</a>  (bases 1 to 300)
+  <a id="AuthorsA" href="/ddbj/flat-file#AuthorsB">AUTHORS</a>   Mishima,H., Yamada,T. and Liu,G.Q.
+  <a id="TitleA" href="/ddbj/flat-file#TitleB">TITLE</a>     Direct Submission
+  <a id="JournalA" href="/ddbj/flat-file#JournalB">JOURNAL</a>   Submitted (30-SEP-2008) to the DDBJ/EMBL/GenBank databases.
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
-<a id="Reference2A" href="#Reference2B">REFERENCE   2</a>
+<a id="Reference2A" href="/ddbj/flat-file#Reference2B">REFERENCE   2</a>
   AUTHORS   Mishima,H., Yamada,T., Park,C.S. and Liu,G.Q.
   TITLE     Mus musculus EST
   JOURNAL   Unpublished (2008)
-<a id="CommentA" href="#CommentB">COMMENT</a>             3'-EST sequences are presented as anti-sense strand.
-<a id="FeaturesA" href="#FeaturesB">FEATURES</a>             Location/Qualifiers
-     <a id="FeaturesSourceA" href="#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..300</a>
+<a id="CommentA" href="/ddbj/flat-file#CommentB">COMMENT</a>             3'-EST sequences are presented as anti-sense strand.
+<a id="FeaturesA" href="/ddbj/flat-file#FeaturesB">FEATURES</a>             Location/Qualifiers
+     <a id="FeaturesSourceA" href="/ddbj/flat-file#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..300</a>
                      /<a href="/ddbj/qualifiers.html#clone">clone</a>="2310009A01"
                      /<a href="/ddbj/qualifiers.html#clone_lib">clone_lib</a>="full-length enriched mouse cDNA library A01"
                      /<a href="/ddbj/qualifiers.html#db_xref">db_xref</a>="taxon:10090"
@@ -119,4 +119,4 @@ EST エントリの特徴
         :
         -- The rest of nucleotide sequence is omitted --
         :
-<a id="EndA" href="#EndB">//</a></code></pre>
+<a id="EndA" href="/ddbj/flat-file#EndB">//</a></code></pre>

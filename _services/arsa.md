@@ -15,11 +15,11 @@ related_pages:
   - title: TXSearch ヘルプ
     url: /services/txsearch.html
   - title: 過去のサービス
-    url: /services/services/services/past-services.html
+    url: /services/past-services.html
   - title: 関連論文
-    url: /services/services/services/references.html
+    url: /services/references.html
   - title: WABI (Web API for Biology)
-    url: /services/services/services/wabi.html
+    url: /services/wabi.html
   - title: WABI BLAST ヘルプ
     url: /services/wabi-blast.html
   - title: WABI ClustalW ヘルプ
@@ -156,32 +156,32 @@ Feature/Qualifier の部分一致検索 Feature Key 、 Qualifier Name 、 Quali
           <tr>
             <td><span>PrimaryAccessionNumber</span></td>
             <td><span>pa</span></td>
-            <td><a href="/ddbj/flat-file.html#Accession"><span>ACCESSION</span> の先頭に記載された「Accession 番号」</a></td>
+            <td><a href="/ddbj/flat-file.html#AccessionB"><span>ACCESSION</span> の先頭に記載された「Accession 番号」</a></td>
             <td><span>AB999999</span></td>
           </tr>
           <tr>
             <td><span>AccessionNumber</span></td>
             <td><span>an</span></td>
-            <td><a href="/ddbj/flat-file.html#Accession"><span>ACCESSION</span> に記載された「Accession 番号」</a></td>
+            <td><a href="/ddbj/flat-file.html#AccessionB"><span>ACCESSION</span> に記載された「Accession 番号」</a></td>
             <td><span>AB999999, AB888888, AB777777</span></td>
           </tr>
           <tr>
             <td><span>Division</span></td>
             <td><span>dv</span></td>
-            <td><a href="/ddbj/flat-file.html#Division"><span>LOCUS</span> に記載された「Division」</a></td>
+            <td><a href="/ddbj/flat-file.html#DivisionB"><span>LOCUS</span> に記載された「Division」</a></td>
             <td><span>HUM</span></td>
           </tr>
           <tr>
             <td><span>SequenceLength</span></td>
             <td><span>sl</span></td>
-            <td><a href="/ddbj/flat-file.html#SequenceLength"><span>LOCUS</span> に記載された「配列長」</a></td>
+            <td><a href="/ddbj/flat-file.html#SequenceLengthB"><span>LOCUS</span> に記載された「配列長」</a></td>
             <td><span>450</span></td>
           </tr>
           <tr>
             <td><span>MolecularType</span></td>
             <td><span>mt</span></td>
             <td>
-<a href="/ddbj/flat-file.html#MoleculeType"><span>LOCUS</span> に記載された「塩基配列の分子タイプ」</a><br>
+<a href="/ddbj/flat-file.html#MoleculeTypeB"><span>LOCUS</span> に記載された「塩基配列の分子タイプ」</a><br>
                 <a href="/activities/patent.html#4">PRT はJPO, KIPO 経由のアミノ酸特許配列データ</a>
 </td>
             <td><span>mRNA</span></td>
@@ -189,62 +189,62 @@ Feature/Qualifier の部分一致検索 Feature Key 、 Qualifier Name 、 Quali
           <tr>
             <td><span>MolecularForm</span></td>
             <td><span>mf</span></td>
-            <td><a href="/ddbj/flat-file.html#MoleculeForm"><span>LOCUS</span> に記載された「塩基配列の分子形態」</a></td>
+            <td><a href="/ddbj/flat-file.html#MoleculeFormB"><span>LOCUS</span> に記載された「塩基配列の分子形態」</a></td>
             <td><span>linear</span></td>
           </tr>
           <tr>
             <td><span>Date</span></td>
             <td><span>dt</span></td>
-            <td><a href="/ddbj/flat-file.html#ModificationDate"><span>LOCUS</span> に記載された「データの最終公開日」</a></td>
+            <td><a href="/ddbj/flat-file.html#ModificationDateB"><span>LOCUS</span> に記載された「データの最終公開日」</a></td>
             <td><span>01-JUN-2009</span></td>
           </tr>
           <tr>
             <td><span>Definition</span></td>
             <td><span>df</span></td>
-            <td><a href="/ddbj/flat-file.html#Definition"><span>DEFINITION</span> に記載されたテキスト</a></td>
+            <td><a href="/ddbj/flat-file.html#DefinitionB"><span>DEFINITION</span> に記載されたテキスト</a></td>
             <td><span>Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate<br>
               dehydrogenase, partial cds.</span></td>
           </tr>
           <tr>
             <td><span>Comment</span></td>
             <td><span>cm</span></td>
-            <td><a href="/ddbj/flat-file.html#Comment"><span>COMMENT</span> に記載されたテキスト</a></td>
+            <td><a href="/ddbj/flat-file.html#CommentB"><span>COMMENT</span> に記載されたテキスト</a></td>
             <td><span>Human cDNA sequencing project.</span></td>
           </tr>
           <tr>
             <td><span>Keyword</span></td>
             <td><span>kw</span></td>
-            <td><a href="/ddbj/flat-file.html#Keywords"><span>KEYWORDS</span> に記載されたテキスト</a></td>
+            <td><a href="/ddbj/flat-file.html#KeywordsB"><span>KEYWORDS</span> に記載されたテキスト</a></td>
             <td><span>HTC, HTC_FLI, oligo capping</span></td>
           </tr>
           <tr>
             <td><span>Organism</span></td>
             <td><span>og</span></td>
-            <td><a href="/ddbj/flat-file.html#Organism"><span>ORGANISM</span> に記載された「由来生物名」</a></td>
+            <td><a href="/ddbj/flat-file.html#OrganismB"><span>ORGANISM</span> に記載された「由来生物名」</a></td>
             <td><span>Homo sapiens</span></td>
           </tr>
           <tr>
             <td><span>Lineage</span></td>
             <td><span>ln</span></td>
-            <td><a href="/ddbj/flat-file.html#Organism"><span>ORGANISM</span> に記載された「生物学的分類」</a></td>
+            <td><a href="/ddbj/flat-file.html#OrganismB"><span>ORGANISM</span> に記載された「生物学的分類」</a></td>
             <td><span>Eukaryota, Metazoa, ..., Hominidae, Homo</span></td>
           </tr>
           <tr>
             <td><span>ReferenceAuthor</span></td>
             <td><span>ra</span></td>
-            <td><a href="/ddbj/flat-file.html#Reference1"><span>REFERENCE</span> の <span>AUTHORS</span> に記載されたテキスト</a></td>
+            <td><a href="/ddbj/flat-file.html#Reference1B"><span>REFERENCE</span> の <span>AUTHORS</span> に記載されたテキスト</a></td>
             <td><span>Mishima,H. , Shizuoka,T. , Fuji,I.</span></td>
           </tr>
           <tr>
             <td><span>ReferenceTitle</span></td>
             <td><span>rt</span></td>
-            <td><a href="/ddbj/flat-file.html#Reference1"><span>REFERENCE</span> の <span>TITLE</span> に記載されたテキスト</a></td>
+            <td><a href="/ddbj/flat-file.html#Reference1B"><span>REFERENCE</span> の <span>TITLE</span> に記載されたテキスト</a></td>
             <td><span>Direct Submission , Glyceraldehyde-3-phosphate dehydrogenase expressed in human liver</span></td>
           </tr>
           <tr>
             <td><span>ReferenceJournal</span></td>
             <td><span>rj</span></td>
-            <td><a href="/ddbj/flat-file.html#Reference1"><span>REFERENCE</span> の <span>JOURNAL</span> に記載されたテキスト</a></td>
+            <td><a href="/ddbj/flat-file.html#Reference1B"><span>REFERENCE</span> の <span>JOURNAL</span> に記載されたテキスト</a></td>
             <td><span>Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.<br>
               Contact:Hanako Mishima<br>
               National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,<br>
@@ -260,7 +260,7 @@ Feature/Qualifier の部分一致検索 Feature Key 、 Qualifier Name 、 Quali
           <tr>
             <td><span>Feature</span></td>
             <td><span>fe</span></td>
-            <td><a href="/ddbj/flat-file.html#Features"><span>FEATURES</span> に記載された「Feature 単位のテキスト」</a></td>
+            <td><a href="/ddbj/flat-file.html#FeaturesB"><span>FEATURES</span> に記載された「Feature 単位のテキスト」</a></td>
             <td><pre><code>source 1..450
 /chromosome="12" 
 /clone="GT200015" 
@@ -284,7 +284,7 @@ VFTDKDKAVAQLKGGAKKV" </code></pre></td>
           <tr>
             <td><span>FeatureQualifier</span></td>
             <td><span>fq</span></td>
-            <td><a href="/ddbj/flat-file.html#Features"><span>FEATURES</span> に記載された「Qualifier 単位のテキスト」</a></td>
+            <td><a href="/ddbj/flat-file.html#FeaturesB"><span>FEATURES</span> に記載された「Qualifier 単位のテキスト」</a></td>
             <td><pre><code>source 1..450
 source /chromosome=12
 CDS /translation=MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT

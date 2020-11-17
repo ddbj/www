@@ -33,7 +33,7 @@ Read Archive (ERA)](https://www.ebi.ac.uk/ena/) との国際協力のもと，�
 
 </div>
 
-[](/dra/services/index.html "ハンドブック")
+[](/dra/submission.html "ハンドブック")
 
 <div class="top-navi-box">
 

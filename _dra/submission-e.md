@@ -75,7 +75,7 @@ order for the two files to be correctly processed as paired-end.
 intended for downstream usage or that otherwise needs an archival
 home. Submit alignment data in bam file to Run. Please [contact to
 DRA team to ask mirroring of analysis
-data.](/contact-e.html)Analysis files are provided on the DDBJ ftp
+data.](/contact-ddbj-e.html)Analysis files are provided on the DDBJ ftp
 site and not indexed by the
 [DRASearch](http://ddbj.nig.ac.jp/DRASearch).
 
@@ -111,7 +111,7 @@ Include paired-end read files in a Run.
 
 #### Technical and biological replicates (paired-end) <a name="ex_replicates"></a>
 
-[Related FAQ: How many samples do I need for my DRA submission?](/faq/en/samples-for-sra-e.html)
+[Related FAQ: How many samples do I need for my DRA submission?](/faq/en/samples-for-sra.html)
 
 {::nomarkdown}
 {% include image.html url="submission/obj_exreplicate.jpg" caption="Technical and biological replicates (paired-end)" class="w450" %}
@@ -186,14 +186,14 @@ information, enter the information in the BioProject.
 
 [BioProject ID](#DRA_BioProjectID)<a name="DRA_BioProjectID"></a><span class="red">*</span>  
 : Select a project registered to
-[BioProject](/bioproject/index-e.html) or submit a new project. For submission to BioProject, please refer to the [BioProject Handbook](/bioproject/services/index.html).
+[BioProject](/bioproject/index-e.html) or submit a new project. For submission to BioProject, please refer to the [BioProject Handbook](/bioproject/submission-e.html).
 
 ### BioSample <a name="BioSample"></a> 
 
 [BioSample ID](#DRA_BioSampleID)<a name="DRA_BioSampleID"></a><span class="red">*</span>  
 : Select samples registered to [BioSample](/biosample/index-e.html) or
 create and submit new samples. For submission to BioSample, please
-refer to [BioSample Handbook](/biosample/services/index.html).
+refer to [BioSample Handbook](/biosample/submission-e.html).
 
 ### Experiment <a name="Experiment"></a> 
 
@@ -709,16 +709,16 @@ tools or future genome assembilies.
   The alignment data can be submitted in the BAM format. The bam files should be readable by [SAMtools](http://samtools.sourceforge.net/) and [picard](https://broadinstitute.github.io/picard/). The BAM files are nearly optimal in terms of compression and should be submitted uncompressed.
 
 2. #### Specify reference by INSDC/RefSeq accession number <a name="Specify_reference_by_INSDC/RefSeq_accession_number"></a>
-  If references are found in [list](/files/ref/ref-file.txt), references can be specified by their accession.version number (for example, NC_000001.11). [Version number](/ddbj/flat-file-e.html#Version)is necessary. Accession numbers for references can be searched in [NCBI Assembly](https://www.ncbi.nlm.nih.gov/assembly/).
+  If references are found in [list]({{ site.baseurl }}/assets/files/ref/ref-file.txt), references can be specified by their accession.version number (for example, NC_000001.11). [Version number](/ddbj/flat-file-e.html#Version)is necessary. Accession numbers for references can be searched in [NCBI Assembly](https://www.ncbi.nlm.nih.gov/assembly/).
 
 3. #### Specify reference by supplying multi-fasta <a name="Specify_reference_by_supplying_multi-fasta"></a>
-  If references are not found in the [list](/files/ref/ref-file.txt), submit a reference file in multi-fasta format. Select "reference_fasta" in the [Run file type](/dra/services/index.html#File_Type). The reference name in the bam header and reference sequence are linked by the name in bam header and fasta defline via the mapping table. If sequence length is different between @SQ-LN and multi-fasta, a warning is raised.
+  If references are not found in the [list]({{ site.baseurl }}/assets/files/ref/ref-file.txt), submit a reference file in multi-fasta format. Select "reference_fasta" in the [Run file type](/dra/submission-e.html#File_Type). The reference name in the bam header and reference sequence are linked by the name in bam header and fasta defline via the mapping table. If sequence length is different between @SQ-LN and multi-fasta, a warning is raised.
 
 4. #### Specify reference by both INSDC/RefSeq accession number and multi-fasta <a name="Specify_reference_by_both_INSDC/RefSeq_accession_number_and_multi-fasta"></a>
-  If a part of references are found in [list](/files/ref/ref-file.txt), these references can be specified by their accession.version number (for example, NC_000001.11). The rest of references needs to be supplied by uploading a multi-fasta file. In the SN-reference mapping table, list accession.version numbers and sequence names of multi-fasta deflines.
+  If a part of references are found in [list]({{ site.baseurl }}/assets/files/ref/ref-file.txt), these references can be specified by their accession.version number (for example, NC_000001.11). The rest of references needs to be supplied by uploading a multi-fasta file. In the SN-reference mapping table, list accession.version numbers and sequence names of multi-fasta deflines.
 
 5. #### SN-reference mapping table <a name="SN-reference_mapping_table"></a>
-  A tab delimited text file describing mapping between "SN in SQ line in BAM header" and "accession OR sequence name in fasta file". Select "tab" in the [Run file type](/dra/services/index.html#File_Type)
+  A tab delimited text file describing mapping between "SN in SQ line in BAM header" and "accession OR sequence name in fasta file". Select "tab" in the [Run file type](/dra/submission-e.html#File_Type)
 
   BAM header
 
@@ -893,7 +893,7 @@ perform this analysis and submit at least the motif_summary.csv file
 for prokaryotes via as a DRA Analysis object. Please submit these files
 as data files of the Analysis with [Sequence Annotation
 type](#Analysis_Type)in addition to sequencing reads in Run. For
-assistance, [contact us](/contact-e.html).
+assistance, [contact us](/contact-ddbj-e.html).
 
 [NCBI guidelines of PacBio Base Modification Files](https://www.ncbi.nlm.nih.gov/genbank/basemodificationfiles)
 
@@ -949,12 +949,12 @@ platforms.
 
 ### 3. Submit project and sample information 
 
-#### [BioProject](/bioproject/services/index.html) <a name="_BioProject_"></a>
+#### [BioProject](/bioproject/submission-e.html) <a name="_BioProject_"></a>
 
   - A description of the reseach effort
   - "Why" you sequenced your samples
 
-#### [BioSample](/biosample/services/index.html)<a name="_BioSample_"></a>![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv} 
+#### [BioSample](/biosample/submission-e.html)<a name="_BioSample_"></a>![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv} 
 
   - A description of biologically or physically unique specimens
   - "What" you sequenced
@@ -1198,7 +1198,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 When sending submission files too large for e-mail attachment,
 submitters can upload the files for the [DDBJ Mass Submission System
 (MSS)](/ddbj/mss-e.html) by using the DRA file server. After [contacting
-the MSS team](/contact-e.html#to-ddbj), upload the files to the
+the MSS team](/contact-ddbj-e.html#to-ddbj), upload the files to the
 /submission/[submitter ID]/mass directory.
 </div>
 
@@ -1259,7 +1259,7 @@ Submit a new project by clicking [New submission], or select a project
 registered in the account.
 
 Only one project can be submitted. To reference a project obtained in
-the other account, please [contact DRA team](/contact-e.html).
+the other account, please [contact DRA team](/contact-ddbj-e.html).
 
 {::nomarkdown}
 {% include image.html url="books/hdra-bp01.jpg" caption="Submit a new BioProject or select submitted one" class="w450" %}
@@ -1270,7 +1270,7 @@ second panel is for BioProject submission. Submitter information is
 copied with that of DRA submission.
 
 For BioProject metadata, please see the [BioProject
-Handbook](/bioproject/services/index.html#metadata).
+Handbook](/bioproject/submission-e.html#metadata).
 
 {::nomarkdown}
 {% include image.html url="books/hdra-bp02.jpg" caption="BioProject submission" class="w450" %}
@@ -1302,7 +1302,7 @@ submit again.
 
 <div class="attention red">
 When multiple prefixes are necessary, please [contact
-us](/contact-e.html).
+us](/contact-ddbj-e.html).
 </div>
 
 {::nomarkdown}
@@ -1336,7 +1336,7 @@ with pressing the "Shift". Filter samples by entering text in the upper
 box, and click [Select filtered BioSamples] to select all filtered
 samples.
 
-To reference samples obtained in the other account, please [contact us](/contact-e.html).
+To reference samples obtained in the other account, please [contact us](/contact-ddbj-e.html).
 
 {::nomarkdown}
 {% include image.html url="books/hdra-bs01.jpg" caption="Submit new samples or select submitted ones" class="w450" %}
@@ -1349,10 +1349,10 @@ that of DRA submission.
 Biological and technical replicates are represented by separate
 BioSamples. Regarding necessary number of sample for sequence
 submission, please see the ["FAQ: How many samples do I need for my DRA
-submission?"](/faq/en/samples-for-sra-e.html)
+submission?"](/faq/en/samples-for-sra.html)
 
 For BioSample metadata, please see the [BioSample
-Handbook](/biosample/services/index.html#metadata).
+Handbook](/biosample/submission-e.html#metadata).
 
 {::nomarkdown}
 {% include image.html url="books/hdra-bs02.jpg" caption="BioSample submission" class="w450" %}
@@ -1360,10 +1360,10 @@ Handbook](/biosample/services/index.html#metadata).
 
 Select a sample type in the "SAMPLE TYPE". For genome samples, minimum
 sample attributes are defined by
-[MIxS](/biosample/services/index.html#sample-attributes).
+[MIxS](/biosample/submission-e.html#sample-attributes).
 
 For the Sample type, please see the [BioSample
-Handbook](/biosample/services/index.html#Sample_type).
+Handbook](/biosample/submission-e.html#Sample_type).
 
 {::nomarkdown}
 {% include image.html url="books/hdra-bs03.jpg" caption="Select a sample type" class="w450" %}
@@ -1652,7 +1652,7 @@ Click the [Validate data files] and validate uploaded data files.
 The files are validated in the following order.
 
 [FAQ: How to deal with validation
-errors?](/faq/en/index-e.html#data-validation-error)
+errors?](/faq/en/data-validation-error)
 
 #### MD5 Check <a name="MD5_Check"></a>
 
@@ -1681,7 +1681,7 @@ stopping the validation by clicking the [Stop validation] button.
 After revision, click the [Validate data files] button and start
 validation again.
 
-[FAQ: How to deal with validation errors?](/faq/en/index-e.html#data-validation-error)
+[FAQ: How to deal with validation errors?](/faq/en/data-validation-error)
 
 {::nomarkdown}
 {% include image.html url="books/hdra-error.jpg" caption="Stop validation" class="w450" %}
@@ -1757,7 +1757,7 @@ and D. In the case D, an entire DRA submission contains cited DRR Run(s)
 is made public.
 
 FAQ: [How are linked BioProject/BioSample/sequence data
-released?](/faq/en/bp_bs_seq_release-e.html)
+released?](/faq/en/bp-bs-seq-release.html)
 
 When the data is released, in a few days, the released data will become
 searchable at [DRASearch](http://ddbj.nig.ac.jp/DRASearch)and the data
@@ -1773,9 +1773,9 @@ The list of available fastq files at the DRA file server:
 
 |  Database  |  Update  |
 | ---- | ---- |
-|  [Annotated sequence database](/index-e.html)  |  [Request updates from web form](/services/updt-form-e.html)  |
-|  Sequence Read Archive (DRA)  |  [Login D-way and update metadata](#change-hold-date)<br/>[To add or delete sequencing data, request updates from web form](/aboutus/contact-e.html)  |
-|  BioProject/BioSample  |  [Request updates from web form](/aboutus/contact-e.html)  |
+|  [Annotated sequence database](/index-e.html)  |  [Request updates from web form](/ddbj/update-form-e.html)  |
+|  Sequence Read Archive (DRA)  |  [Login D-way and update metadata](#change-hold-date)<br/>[To add or delete sequencing data, request updates from web form](/contact-ddbj-e.html)  |
+|  BioProject/BioSample  |  [Request updates from web form](/contact-ddbj-e.html)  |
 
 ### Change hold date <a name="change-hold-date"></a> 
 
@@ -1804,7 +1804,7 @@ BioProject and BioSample records to add data files.
 
 Similar to Run, data files cannot be directly added to the archived
 Analysis. To replace archived Analysis, please [contact to the DRA
-team](/contact-e.html).
+team](/contact-ddbj-e.html).
 
 Login [D-way](https://ddbj.nig.ac.jp/D-way/)and create a new submission
 by clicking the [New submission]. Select the BioProject and BioSample
@@ -1832,12 +1832,12 @@ assigned.
 {% include image.html url="books/add_run.jpg" caption="Add data files to existing sample" class="w400" %}
 {:/}
 
-To add data files to the existing DRA submission, please [contact us](/contact-e.html).
+To add data files to the existing DRA submission, please [contact us](/contact-ddbj-e.html).
 
 ### Withdraw archived objects <a name="withdraw-archived-objects"></a>
 
 To withdrawing archived Experiment, Run and Analysis objects, please
-[contact us](/contact-e.html).
+[contact us](/contact-ddbj-e.html).
 
 ## Supplement: MD5 <a name="supplement-md5"></a> 
 

@@ -54,8 +54,8 @@ be automatically converted to small letter.
 [References]
 
   - Cornish-Bowden, A. Nucl Acid Res 13, 3021-3030 (1985)
-  - [Feature Table Definition](/ddbj/full_index-e.html): [7.4.1
-    Nucleotide base codes (IUPAC)](/ddbj/full_index-e.html#7.4.1)
+  - [Feature Table Definition](/ddbj/feature-table-e.html): [7.4.1
+    Nucleotide base codes (IUPAC)](/ddbj/feature-table-e.html#7.4.1)
 
 ### Modified Base Abbreviations <a name="nucleotide-2"></a>
 
@@ -129,8 +129,8 @@ Example
     in Cornish_Bowden, A. Nucl Acid Res 13, 3021-3030 (1985)the
     IUPAC-IUB declined to recommend a set of abbreviations for modified
     nucleotides)
-  - [Feature Table Definition](/ddbj/full_index-e.html): [7.4.2 Modified
-    base abbreviations](/ddbj/full_index-e.html#7.4.2)
+  - [Feature Table Definition](/ddbj/feature-table-e.html): [7.4.2 Modified
+    base abbreviations](/ddbj/feature-table-e.html#7.4.2)
 
 
 
@@ -187,8 +187,8 @@ Those that are not included in "Amino acid codes", please refer to
   - IUPAC-IUB Joint Commission on Biochemical Nomenclature.Nomenclature
     and Symbolism for Amino Acids and Peptides. Eur. J. Biochem. 138:
     9-37 (1984).
-  - [Feature Table Definition](/ddbj/full_index-e.html): [7.4.3 Amino
-    acid abbreviations](/ddbj/full_index-e.html#7.4.3)
+  - [Feature Table Definition](/ddbj/feature-table-e.html): [7.4.3 Amino
+    acid abbreviations](/ddbj/feature-table-e.html#7.4.3)
 
 
 ### Modified and Unusual Amino Acids <a name="amino-2"></a>
@@ -236,4 +236,4 @@ feature](/ddbj/cds-e.html).
 
 [References]
 
-  - [Feature Table Definition](/ddbj/full_index-e.html): [7.4.4 Modified and unusual Amino Acids](/ddbj/full_index-e.html#7.4.4)
+  - [Feature Table Definition](/ddbj/feature-table-e.html): [7.4.4 Modified and unusual Amino Acids](/ddbj/feature-table-e.html#7.4.4)

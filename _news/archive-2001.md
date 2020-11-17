@@ -468,7 +468,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn010628"><a href="#wn010628">DDBJKIT 公開終了</a></h2>
   <div class="news_date">2001年06月28日</div>
-  <div class="news_content">DDBJ HP で公開していた DDBJKIT の公開を終了しました。 DDBJ の活動紹介，検索解析サービスの案内，Q and A や各種申請書などは DDBJing という項目がありますので，今後はこちらをご覧下さい。 URL は <a href="/activities/index.html">http://www.ddbj.nig.ac.jp/ddbjing/ddbjingtop-j.html </a>です。</div>
+  <div class="news_content">DDBJ HP で公開していた DDBJKIT の公開を終了しました。 DDBJ の活動紹介，検索解析サービスの案内，Q and A や各種申請書などは DDBJing という項目がありますので，今後はこちらをご覧下さい。 URL は <a href="/activities/training.html">http://www.ddbj.nig.ac.jp/ddbjing/ddbjingtop-j.html </a>です。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>

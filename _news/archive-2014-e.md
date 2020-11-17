@@ -99,7 +99,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn141121"><a href="#wn141121">Feature Table Definition revised</a></h2>
   <div class="news_date">November 21,2014</div>
-  <div class="news_content"><p><a href="/ddbj/full_index-e.html">The DDBJ/ENA/GenBank Feature Table Definition</a> is the common annotation manual of feature descriptions for DDBJ, ENA and GenBank. <br>It was revised to version 10.4 in November 2014. </p></div>
+  <div class="news_content"><p><a href="/ddbj/feature-table-e.html">The DDBJ/ENA/GenBank Feature Table Definition</a> is the common annotation manual of feature descriptions for DDBJ, ENA and GenBank. <br>It was revised to version 10.4 in November 2014. </p></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -288,7 +288,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn140904"><a href="#wn140904">The Report for the 27th International Collaborators Meeting</a></h2>
   <div class="news_date">September 04,2014</div>
-  <div class="news_content"><p><a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a>, consisted of DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a> and <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a>, hold the international collaborators meeting every year. <br>In 2014, the meeting was <a href="/news/en/wn140520-e.html">held at DDBJ</a>, 20-22 May, to discuss practical matters to maintain and update nucleotide sequence data archives; <a href="/index-e.html" target="_blank">DDBJ</a>, <a href="http://www.ebi.ac.uk/ena/" target="_blank">ENA</a>, <a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>, Sequence Read Archive (SRA) and Trace Archive. <br>The outcomes of the meeting are summarized <a href="/activities/index-e.html#2014">here</a>. </p></div>
+  <div class="news_content"><p><a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a>, consisted of DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a> and <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a>, hold the international collaborators meeting every year. <br>In 2014, the meeting was <a href="/news/en/wn140520-e.html">held at DDBJ</a>, 20-22 May, to discuss practical matters to maintain and update nucleotide sequence data archives; <a href="/index-e.html" target="_blank">DDBJ</a>, <a href="http://www.ebi.ac.uk/ena/" target="_blank">ENA</a>, <a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>, Sequence Read Archive (SRA) and Trace Archive. <br>The outcomes of the meeting are summarized <a href="/activities/icm/2014-e">here</a>. </p></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -342,7 +342,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="2014-08-06"><a href="#2014-08-06">Web submission system loads fastq files with variable read length</a></h2>
   <div class="news_date">August 06,2014</div>
-  <div class="news_content"><p>The DRA web submission system can load fastq files with variable read length. <a href="/dra/services/index.html#fastq">Handbook.</a></p>·fastq files with constact read length: Select fastq in the file type of Run.<br>·fastq files with variable read length: Select generic_fastq in the file type of Run.</div>
+  <div class="news_content"><p>The DRA web submission system can load fastq files with variable read length. <a href="/dra/submission-e.html#fastq">Handbook.</a></p>·fastq files with constact read length: Select fastq in the file type of Run.<br>·fastq files with variable read length: Select generic_fastq in the file type of Run.</div>
   <div class="news_category">
     <span class="service">Services: dra</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -468,7 +468,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn140703"><a href="#wn140703">Introduction of Statistics of Submissions to DDBJ</a></h2>
   <div class="news_date">July 03,2014</div>
-  <div class="news_content"><p>We open a new web site to show statistics of sequence data submissions to DDBJ. <br>It visualizes DDBJ activities mainly based on number of times to load submitted data to DDBJ. <br><br><a href="/stats/ddbj_submissions-e.html">Monthly Data Submitter and Session to DDBJ</a><br></p></div>
+  <div class="news_content"><p>We open a new web site to show statistics of sequence data submissions to DDBJ. <br>It visualizes DDBJ activities mainly based on number of times to load submitted data to DDBJ. <br><br><a href="/statistics/index-e.html">Monthly Data Submitter and Session to DDBJ</a><br></p></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -639,7 +639,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn140513"><a href="#wn140513">New DRA submission system is released</a></h2>
   <div class="news_date">May 13,2014</div>
-  <div class="news_content"><p>We have released the new DRA submission system.<br>For major changes, please see the <a href="http://www.slideshare.net/DDBJslide/new-dra-submission-system-starts">slides</a> and <a href="/dra/services/index.html">new handbook</a>.</p><p><span class="icon_d-triangle"> <a href="/dra/index-e.html">DDBJ Sequence Read Archive</a></span></p></div>
+  <div class="news_content"><p>We have released the new DRA submission system.<br>For major changes, please see the <a href="http://www.slideshare.net/DDBJslide/new-dra-submission-system-starts">slides</a> and <a href="/dra/submission-e.html">new handbook</a>.</p><p><span class="icon_d-triangle"> <a href="/dra/index-e.html">DDBJ Sequence Read Archive</a></span></p></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -648,7 +648,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="2014-05-13"><a href="#2014-05-13">New DRA submission system is released.</a></h2>
   <div class="news_date">May 13,2014</div>
-  <div class="news_content"><p>We have released the new DRA submission system. For major changes, please see the <a href="http://www.slideshare.net/DDBJslide/new-dra-submission-system-starts">slides</a> and <a href="/dra/services/index.html">new handbook</a>.</p>(6th, June, 2014)<p><span class="red">For submissions with status "new" which had been created before 12th, May, 2014, addition or deletion of metadata objects could cause errors. It is recommended that download metadata as a tab-delimited text file and upload it into a newly created submission.</span></p></div>
+  <div class="news_content"><p>We have released the new DRA submission system. For major changes, please see the <a href="http://www.slideshare.net/DDBJslide/new-dra-submission-system-starts">slides</a> and <a href="/dra/submission-e.html">new handbook</a>.</p>(6th, June, 2014)<p><span class="red">For submissions with status "new" which had been created before 12th, May, 2014, addition or deletion of metadata objects could cause errors. It is recommended that download metadata as a tab-delimited text file and upload it into a newly created submission.</span></p></div>
   <div class="news_category">
     <span class="service">Services: dra</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -666,7 +666,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn140421"><a href="#wn140421">Release of EST data of domesticated barley (Hordeum vulgare subsp. vulgare)</a></h2>
   <div class="news_date">April 21,2014</div>
-  <div class="news_content"><p>DDBJ released <a href="/ddbj/est-e.html">EST</a> data derived from domesticated barley (<em>Hordeum vulgare subsp. vulgare</em>), which had been submitted by National Institute of Agrobiological Sciences. <br><strong><a href="/documents/accessions.html">The accession numbers</a></strong> are as follows.  They are available on <a href="http://getentry.ddbj.nig.ac.jp/top-e.html" target="_blank">getentry</a>.</p><p><strong>5' EST</strong>: DK584720-DK744249 (159,530 entries)<br><strong>3' EST</strong>: DK744250-DK887267 (143,018 entries)</p></div>
+  <div class="news_content"><p>DDBJ released <a href="/ddbj/est-e.html">EST</a> data derived from domesticated barley (<em>Hordeum vulgare subsp. vulgare</em>), which had been submitted by National Institute of Agrobiological Sciences. <br><strong><a href="/documents/accessions-e.html">The accession numbers</a></strong> are as follows.  They are available on <a href="http://getentry.ddbj.nig.ac.jp/top-e.html" target="_blank">getentry</a>.</p><p><strong>5' EST</strong>: DK584720-DK744249 (159,530 entries)<br><strong>3' EST</strong>: DK744250-DK887267 (143,018 entries)</p></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Data Release</span>
@@ -684,7 +684,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="2014-04-18-2"><a href="#2014-04-18-2">BioProject web pages are merged into single Handbook</a></h2>
   <div class="news_date">April 18,2014</div>
-  <div class="news_content">The BioProject web pages are merged into single <a href="/bioproject/services/index.html">DDBJ BioProject Handbook</a>.</div>
+  <div class="news_content">The BioProject web pages are merged into single <a href="/bioproject/submission-e.html">DDBJ BioProject Handbook</a>.</div>
   <div class="news_category">
     <span class="service">Services: bioproject</span>
     <span class="keyword">Keywords: </span>
@@ -693,7 +693,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="2014-04-18"><a href="#2014-04-18">BioSample web pages are merged into single Handbook</a></h2>
   <div class="news_date">April 18,2014</div>
-  <div class="news_content">The BioSample web pages are merged into single <a href="/biosample/services/index.html">DDBJ BioSample Handbook</a>.</div>
+  <div class="news_content">The BioSample web pages are merged into single <a href="/biosample/submission-e.html">DDBJ BioSample Handbook</a>.</div>
   <div class="news_category">
     <span class="service">Services: biosample</span>
     <span class="keyword">Keywords: </span>
@@ -756,7 +756,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="2014-03-20"><a href="#2014-03-20">Pages are merged into one page</a></h2>
   <div class="news_date">March 20,2014</div>
-  <div class="news_content">DDBJ Trace Archive overview, metadata and submission pages are merged into <a href="/dta/services/index.html">one page</a>.</div>
+  <div class="news_content">DDBJ Trace Archive overview, metadata and submission pages are merged into <a href="/dta/submission-e.html">one page</a>.</div>
   <div class="news_category">
     <span class="service">Services: dta</span>
     <span class="keyword">Keywords: </span>

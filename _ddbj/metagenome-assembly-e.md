@@ -35,12 +35,12 @@ the BioProject/BioSample/DRA/DDBJ.
 ### 1\) Raw reads (Run) <a name="run"></a>
 
 Unassembled raw sequence data should be submitted to [DRA
-Run](/dra/services/index.html).
+Run](/dra/submission-e.html).
 
 #### BioProject <a name="mag-bioproject"></a>
 
 Register your BioProject as a [metagenome/environmental
-project](/bioproject/services/index.html#Project-type). For the organism
+project](/bioproject/submission-e.html#Project-type). For the organism
 name, choose the most appropriate "xyz metagenome" (e.g., soil
 metagenome) from this list of [metagenome organism
 names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/)
@@ -52,7 +52,7 @@ of the project.
 
 Register your BioSample by using the ["Genome, metagenome or marker
 sequences (MIxS compliant) - Environmental/Metagenome Genomic Sequences
-(MIMS)"](/biosample/services/index.html#Meta_Genomic_Sequences_Sample)
+(MIMS)"](/biosample/submission-e.html#Meta_Genomic_Sequences_Sample)
 package. For the organism name, choose the most appropriate "xyz
 metagenome" (e.g., soil metagenome) from this list of [metagenome
 organism
@@ -64,13 +64,13 @@ for the experimental data.
 #### DRA <a name="mag-dra"></a>
 
 Submit unassembled raw sequence data to [DRA
-Run](/dra/services/index.html).
+Run](/dra/submission-e.html).
 
 ### 2\) Primary metagenome (Analysis) <a name="primary-metagenome"></a>
 
 Assembled contigs derived from the raw sequence data should be submitted
 in fasta/bam files to the [DRA
-Analysis](/dra/services/index.html#Analysis_Type) (Analysis type = 'De
+Analysis](/dra/submission-e.html#Analysis_Type) (Analysis type = 'De
 Novo Assembly').
 
 #### BioProject <a name="mag-bioproject"></a>
@@ -84,7 +84,7 @@ Same as 1) Raw reads (Run).
 #### DRA <a name="mag-dra"></a>
 
 Submit assembled contigs derived from the raw sequence data in fasta/bam
-files to the [DRA Analysis](/dra/services/index.html#Analysis_Type)
+files to the [DRA Analysis](/dra/submission-e.html#Analysis_Type)
 (Analysis type = 'De Novo Assembly'). Submit the Analysis along with the
 Run registered in 1).
 
@@ -92,7 +92,7 @@ Run registered in 1).
 
 Binned metagenome assemblies derived from a subset of the raw sequence
 data should be submitted in fasta/bam files to the [DRA
-Analysis](/dra/services/index.html#Analysis_Type) (Analysis type = 'De
+Analysis](/dra/submission-e.html#Analysis_Type) (Analysis type = 'De
 Novo Assembly'). Example cases are when there are only a few short
 contigs for each organism, or when the organisms were binned based only
 on BLAST similarity.
@@ -109,7 +109,7 @@ Same as 1) Raw reads (Run).
 
 Submit binned metagenome assemblies derived from the raw sequence data
 in fasta/bam files to the [DRA
-Analysis](/dra/services/index.html#Analysis_Type) (Analysis type = 'De
+Analysis](/dra/submission-e.html#Analysis_Type) (Analysis type = 'De
 Novo Assembly'). Include information of analysis software used and
 organism bin in the description. Submit the Analysis along with the Run
 registered in 1).
@@ -123,7 +123,7 @@ as genome entries of [ENV division](/ddbj/env-e.html).
 #### BioProject <a name="mag-bioproject"></a>
 
 Register your BioProject as a [metagenome/environmental
-project](/bioproject/services/index.html#Project-type). If you have
+project](/bioproject/submission-e.html#Project-type). If you have
 already registered a BioProject for submission of the corresponding raw
 reads to DRA, then, in general, you would use the BioProject when you
 submit the MAG to DDBJ.
@@ -131,7 +131,7 @@ submit the MAG to DDBJ.
 #### BioSample <a name="mag-biosample"></a>
 
 Register a virtual BioSample by using the ["Other
-samples"](/biosample/services/index.html#General_Sample) package. Describe
+samples"](/biosample/submission-e.html#General_Sample) package. Describe
 an organism name without 'uncultured' (e.g., Methanosarcina thermophila)
 in the taxonomy database from which the MAG was derived. Please note
 that a virtual BioSample derived from the MIMS metagenomic sample used

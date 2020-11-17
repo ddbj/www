@@ -38,7 +38,7 @@ Principal と Alternate pseudohaplotype に対応するプロジェクトをそ�
 サンプルは pseudohaplotype で共通であるため、一つのゲノム用サンプルを登録します。
 
   - パッケージはゲノム用の
-    [MIGS](/biosample/services/index.html#Genomic_Sequences_Sample) を選択。
+    [MIGS](/biosample/submission.html#Genomic_Sequences_Sample) を選択。
   - Principal と alternate pseudohaplotype が由来する共通サンプルを一つ登録。
   - Pseudohaplotype に遺伝子アノテーションを付与する場合、Principal と Alternate で使う共通の
     [locus tag prefix](/ddbj/locus_tag.html) を locus\_tag\_prefix
@@ -51,16 +51,16 @@ Principal と Alternate pseudohaplotype に対応するプロジェクトをそ�
 Principal と Alternate pseudohaplotype をそれぞれ登録します。
 
   - Principal pseudohaplotype
-      - [DBLINK](”/ddbj/file-format.html#dblink”) で BioProject 1
+      - [DBLINK](/ddbj/file-format.html#dblink) で BioProject 1
         (Principal) を参照します。
-      - [ST\_COMMENT](”/ddbj/file-format.html#comment”)
+      - [ST\_COMMENT](/ddbj/file-format.html#comment)
         に所定のコメントを記載します。  
         Genome-Assembly-Data ST\_COMMENT: Diploid :: Principal
         Pseudohaplotype
   - Alternate pseudohaplotype
-      - [DBLINK](”/ddbj/file-format.html#dblink”) で BioProject 2
+      - [DBLINK](/ddbj/file-format.html#dblink) で BioProject 2
         (Alternate) を参照します。
-      - [ST\_COMMENT](”/ddbj/file-format.html#comment”)
+      - [ST\_COMMENT](/ddbj/file-format.html#comment)
         に所定のコメントを記載します。  
         Genome-Assembly-Data ST\_COMMENT: Diploid :: Alternate
         Pseudohaplotype

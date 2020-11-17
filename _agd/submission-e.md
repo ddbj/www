@@ -25,7 +25,7 @@ Following internal IDs are issued to metadata objects with prefixes.
 
 ## Sequence data file (raw/unaligned and aligned) <a name="sequence"></a>
 
-Supported AGD data submission formats are described below. If you have data in any other format or have any questions please [contact the AGD](/contact-e.html).
+Supported AGD data submission formats are described below. If you have data in any other format or have any questions please [contact the AGD](/contact-ddbj-e.html).
 
 Data files should be de-multiplexed prior to submission so that each data object is submitted with files containing data for a single sample only.
 
@@ -102,7 +102,7 @@ Analysis can refer to multiple Data and Sample objects and summary data summariz
 
 ## Metadata <a name="metadata"></a>
 
-The AGD data model is created by extending the [Sequence Read Archive's model](/dra/services/index.html). The AGD metadata are composed of the XML objects.
+The AGD data model is created by extending the [Sequence Read Archive's model](/dra/submission.html). The AGD metadata are composed of the XML objects.
 
 AGD XML schema: [AGD xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
@@ -197,8 +197,8 @@ To submitting only aggregated data or data which are not suitable for Sample-Exp
 {% include image.html url="submission/samples-analysis.jpg" caption="Analysis data aggregating Samples" class="w500" %}
 {:/}
 
-To submitting Analysis only data, please contact [JGA team](/contact-e.html).
+To submitting Analysis only data, please contact [JGA team](/contact-ddbj-e.html).
 
 ## Update submissions <a name="update"></a>
 
-To update your submissions, please [contact to the AGD team](/contact-e.html).
+To update your submissions, please [contact to the AGD team](/contact-ddbj-e.html).

@@ -28,7 +28,7 @@ AGD download tool (最終更新日: 2018-11-21，v3.5.0) をダウンロード�
 
 {::options parse_block_html="true" /}
 <div class="attention red">
-Java 8 で実行してください。Java 7 では動作しません。[プロキシ環境での使用方法について](#%E3%83%97%E3%83%AD%E3%82%AD%E3%82%B7%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AE%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95)
+Java 8 で実行してください。Java 7 では動作しません。[プロキシ環境での使用方法について](#download-via-proxy-server)
 </div>
 
 #### Windows

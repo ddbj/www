@@ -5,24 +5,24 @@ pathname: geneticcode-e
 category: ddbj
 lang: en
 related_pages:
-  - title: DDBJ flat file format]
-    url: (/ddbj/flat-file-e.html)
-  - title: Feature Key]
-    url: (/ddbj/features-e.html)
-  - title: Qualifier key]
-    url: (/ddbj/qualifiers-e.html)
-  - title: Organism qualifier]
-    url: (/ddbj/organism-e.html)
-  - title: Description of Location]
-    url: (/ddbj/location-e.html)
-  - title: Protein Coding Sequence; CDS feature]
-    url: (/ddbj/cds-e.html)
-  - title: Codes Used in Sequence Description]
-    url: (/ddbj/code-e.html)
-  - title: Example of Submission]
-    url: (/ddbj/example-e.html)
-  - title: The Genetic Codes]
-    url: (/ddbj/codontable-e.html)
+  - title: DDBJ flat file format
+    url: /ddbj/flat-file-e.html
+  - title: Feature Key
+    url: /ddbj/features-e.html
+  - title: Qualifier key
+    url: /ddbj/qualifiers-e.html
+  - title: Organism qualifier
+    url: /ddbj/organism-e.html
+  - title: Description of Location
+    url: /ddbj/location-e.html
+  - title: Protein Coding Sequence; CDS feature
+    url: /ddbj/cds-e.html
+  - title: Codes Used in Sequence Description
+    url: /ddbj/code-e.html
+  - title: Example of Submission
+    url: /ddbj/example-e.html
+  - title: The Genetic Codes
+    url: /ddbj/codontable-e.html
 
 ---
 

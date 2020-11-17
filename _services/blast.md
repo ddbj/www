@@ -15,11 +15,11 @@ related_pages:
   - title: TXSearch ヘルプ
     url: /services/txsearch.html
   - title: 過去のサービス
-    url: /services/services/services/past-services.html
+    url: /services/past-services.html
   - title: 関連論文
-    url: /services/services/services/references.html
+    url: /services/references.html
   - title: WABI (Web API for Biology)
-    url: /services/services/services/wabi.html
+    url: /services/wabi.html
   - title: WABI BLAST ヘルプ
     url: /services/wabi-blast.html
   - title: WABI ClustalW ヘルプ
@@ -34,7 +34,7 @@ related_pages:
 
 DDBJ では，Web版 BLAST の他に，以下の方法でも BLAST サービスを提供しています。
 
-* [WABI BLAST]({{site.baseurl}}/services/services/wabi-blast.html)
+* [WABI BLAST]({{site.baseurl}}/services/wabi-blast.html)
 * [NIG スーパーコンピュータ](https://sc.ddbj.nig.ac.jp/ja/system-guide/software)
 
 ## Program：プログラム<a name="program"></a> <a name=""></a>
@@ -168,7 +168,7 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  GSS  |  GSS  |  ゲノム研究関連 (genome survey sequences)  |
 |  STS  |  STS  |  sequence tagged sites  |
 
-<span class="red">*</span>特許データの利用に際しては，[特許データ利用に関する注意]({{site.baseurl}}/home/pat-data.html)をご参照ください。
+<span class="red">*</span>特許データの利用に際しては，[特許データ利用に関する注意]({{site.baseurl}}/ddbj/patent-data.html)をご参照ください。
 
 #### データベースオプション（RefSeq） <a name="データベースオプション（RefSeq）"></a>
 

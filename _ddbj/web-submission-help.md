@@ -7,7 +7,7 @@ lang: ja
 
 ## 1\. Contact person <a name="flow-1"></a>
 
-[コンタクトパーソン](/ddbj/services/index.html#contact)情報を入力します。
+[コンタクトパーソン](/ddbj/submission.html#contact)情報を入力します。
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp1-1_j.png "コンタクトパーソン情報入力画面"){:.w600}
 
@@ -60,7 +60,7 @@ lang: ja
 ## 4\. Reference <a name="flow-4"></a>
 
 [論文 (Reference) 情報](/ddbj/flat-file.html#Reference2) を入力します。  
-配列に関する[主論文 (Primary citation)](/ddbj/services/index.html#pcite) を第一 reference に入力してください。
+配列に関する[主論文 (Primary citation)](/ddbj/submission.html#pcite) を第一 reference に入力してください。
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp4_j.png){:.w600}
 
@@ -176,7 +176,7 @@ gctgtaactctgagatgtgctaaataaaccctctttctcaaaaaaaaaaaaaaaa
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp5-3-1_j.png){:.w600}
 
-Assembly information のサンプルは**[ここから](/files/example/NSSShelp-tpa-sample.txt)**ダウンロードできます。(タブ区切りテキスト形式)
+Assembly information のサンプルは**[ここから]({{ site.baseurl }}/assets/files/example/NSSShelp-tpa-sample.txt)**ダウンロードできます。(タブ区切りテキスト形式)
 
 #### 上記入力例の意味 <a name="上記入力例の意味"></a>
 
@@ -322,7 +322,7 @@ Assembly information のサンプルは**[ここから](/files/example/NSSShelp-
 
 #### アップロード可能なアノテーションファイル <a name="flow-7-6-1"></a>
 
-  - サンプルファイルを[ここから](/files/example/mtDNA.txt)ダウンロードできます。
+  - サンプルファイルを[ここから]({{ site.baseurl }}/assets/files/example/mtDNA.txt)ダウンロードできます。
 
   - アノテーションファイル作成方法に関する手引きは、[登録ファイル形式、アノテーションファイル](/ddbj/file-format.html#annotation)をご覧ください。
 
@@ -372,7 +372,7 @@ Assembly information のサンプルは**[ここから](/files/example/NSSShelp-
 
 Error/warning メッセージの詳細については、[Validator エラーメッセージ](/ddbj/validator.html)をご覧ください。  
 例のようにコード番号から直接リンクすることも可能です。  
-例：[https://www.ddbj.nig.ac.jp/ddbj/validator.html\#JP0015](/ddbj/validator-j.html#JP0015)
+例：[https://www.ddbj.nig.ac.jp/ddbj/validator.html\#JP0015](/ddbj/validator.html#JP0015)
 
 関連するページ  
 : [Feature key の定義](/ddbj/features.html) / [Qualifier key の定義](/ddbj/qualifiers.html) / [Organism qualifier に記載する生物名](/ddbj/organism.html) / [タンパク質コード配列; CDS feature について](/ddbj/cds.html)

@@ -75,32 +75,32 @@ HTG の特徴
 
 <!-- end list -->
 
-<pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">AP000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">121001 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">DNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">HTG</a> <a id="ModificationDateA" href="#ModificationDateB">15-OCT-2008</a>
-<a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Arabidopsis thaliana DNA, chromosome 1, BAC clone: CIC5D1, ***
+<pre><code><a id="LocusA" href="/ddbj/flat-file#LocusB">LOCUS</a>       <a id="LocusNameA" href="/ddbj/flat-file#LocusNameB">AP000000</a>              <a id="SequenceLengthA" href="/ddbj/flat-file#SequenceLengthB">121001 bp</a>    <a id="MoleculeTypeA" href="/ddbj/flat-file#MoleculeTypeB">DNA</a>    <a id="MoleculeFormA" href="/ddbj/flat-file#MoleculeFormB">linear</a>   <a id="DivisionA" href="/ddbj/flat-file#DivisionB">HTG</a> <a id="ModificationDateA" href="/ddbj/flat-file#ModificationDateB">15-OCT-2008</a>
+<a id="DefinitionA" href="/ddbj/flat-file#DefinitionB">DEFINITION</a>  Arabidopsis thaliana DNA, chromosome 1, BAC clone: CIC5D1, ***
             SEQUENCING IN PROGRESS ***, 10 unordered pieces.
-<a id="AccessionA" href="#AccessionB">ACCESSION</a>   AP000000
-<a id="VersionA" href="#VersionB">VERSION</a>     AP000000.1
-<a id="DblinkA" href="#DblinkB">DBLINK</a>      BioProject:PRJDB04321
-<a id="KeywordsA" href="#KeywordsB">KEYWORDS</a>    HTG; HTGS_PHASE1.
-<a id="SourceA" href="#SourceB">SOURCE</a>      Arabidopsis thaliana (thale cress)
-  <a id="OrganismA" href="#OrganismB">ORGANISM</a>  Arabidopsis thaliana
+<a id="AccessionA" href="/ddbj/flat-file#AccessionB">ACCESSION</a>   AP000000
+<a id="VersionA" href="/ddbj/flat-file#VersionB">VERSION</a>     AP000000.1
+<a id="DblinkA" href="/ddbj/flat-file#DblinkB">DBLINK</a>      BioProject:PRJDB04321
+<a id="KeywordsA" href="/ddbj/flat-file#KeywordsB">KEYWORDS</a>    HTG; HTGS_PHASE1.
+<a id="SourceA" href="/ddbj/flat-file#SourceB">SOURCE</a>      Arabidopsis thaliana (thale cress)
+  <a id="OrganismA" href="/ddbj/flat-file#OrganismB">ORGANISM</a>  Arabidopsis thaliana
             Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
             Spermatophyta; Magnoliophyta; eudicotyledons; core eudicotyledons;
             rosids; malvids; Brassicales; Brassicaceae; Camelineae;
             Arabidopsis.
-<a id="Reference1A" href="#Reference1B">REFERENCE   1</a>  (bases 1 to 423)
-  <a id="AuthorsA" href="#AuthorsB">AUTHORS</a>    Mishima,H., Yamada,T. and Liu,G.Q.
-  <a id="TitleA" href="#TitleB">TITLE</a>     Direct Submission
-  <a id="JournalA" href="#JournalB">JOURNAL</a>   Submitted (30-SEP-2008) to the DDBJ/EMBL/GenBank databases.
+<a id="Reference1A" href="/ddbj/flat-file#Reference1B">REFERENCE   1</a>  (bases 1 to 423)
+  <a id="AuthorsA" href="/ddbj/flat-file#AuthorsB">AUTHORS</a>    Mishima,H., Yamada,T. and Liu,G.Q.
+  <a id="TitleA" href="/ddbj/flat-file#TitleB">TITLE</a>     Direct Submission
+  <a id="JournalA" href="/ddbj/flat-file#JournalB">JOURNAL</a>   Submitted (30-SEP-2008) to the DDBJ/EMBL/GenBank databases.
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
-<a id="Reference2A" href="#Reference2B">REFERENCE   2</a>
+<a id="Reference2A" href="/ddbj/flat-file#Reference2B">REFERENCE   2</a>
   AUTHORS   Mishima,H., Yamada,T., Park,C.S. and Liu,G.Q.
   TITLE     Arabidopsis thaliana DNA
   JOURNAL   Unpublished (2008)
-<a id="FeaturesA" href="#FeaturesB">FEATURES</a>             Location/Qualifiers
-     <a id="FeaturesSourceA" href="#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..121001</a>
+<a id="FeaturesA" href="/ddbj/flat-file#FeaturesB">FEATURES</a>             Location/Qualifiers
+     <a id="FeaturesSourceA" href="/ddbj/flat-file#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..121001</a>
                      /<a href="/ddbj/qualifiers.html#chromosome">chromosome</a>="1"
                      /<a href="/ddbj/qualifiers.html#clone">clone</a>="CIC5D1"
                      /<a href="/ddbj/qualifiers.html#clone_lib">clone_lib</a>="AT01 BAC"
@@ -132,4 +132,4 @@ HTG の特徴
         :
         -- The rest of nucleotide sequence is omitted --
         :
-<a id="EndA" href="#EndB">//</a></code></pre>
+<a id="EndA" href="/ddbj/flat-file#EndB">//</a></code></pre>

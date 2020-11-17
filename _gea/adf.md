@@ -128,7 +128,7 @@ Database Entry [xxx] の []
 Database Entry [xxx] カラムを使います。ADF ヘッダーの Term Source Name と Term Source
 File フィールドにデータベースの名前と URL を記載します。
 
-引用したいデータベースがリストに無い場合はデータベースの URL を [GEA チームに連絡](/contact-e.html)します。
+引用したいデータベースがリストに無い場合はデータベースの URL を [GEA チームに連絡](/contact-ddbj-e.html)します。
 
 アクセッション番号の方がフリーテキストの名前よりも安定で追跡可能であるため、エントリへのリンクは名前ではなくアクセッション番号に依存しています。加えて各データベースはアクセッション番号のフォーマットを定めているためコンピュータによる解析が容易です。例えば
 [NCBI RefSeq curated cDNAs](https://www.ncbi.nlm.nih.gov/refseq/about/)

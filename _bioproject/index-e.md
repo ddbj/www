@@ -23,7 +23,7 @@ lang: en
 
   - [Login & Submit](https://ddbj.nig.ac.jp/D-way)
   - [Policies and Disclaimers](/policies-e.html)
-  - [Contact](/contact-e.html)
+  - [Contact](/contact-ddbj-e.html)
   - [Japanese](/bioproject/index.html)
 
 </div>
@@ -150,7 +150,7 @@ BI-DDBJ Web Sites Annotated/Assembled Sequences Sequence Read Archive
 <div id="header-bottom">
 
   - [Home](/bioproject/index-e.html)
-  - [Handbook](/bioproject/services/index.html)
+  - [Handbook](/bioproject/submission.html)
   - [FAQ](/bioproject/faq-e.html)
   - [Search](http://ddbj.nig.ac.jp/BPSearch/)
   - [Download![](/images/parts/arrow_down.svg)](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/bioproject)
@@ -190,7 +190,7 @@ are exchanged with the [EBI](https://www.ebi.ac.uk/) and
 
 <div class="box-layer">
 
-[](/bioproject/services/index.html "How to submit")
+[](/bioproject/submission.html "How to submit")
 
 <div class="top-navi-box">
 
@@ -362,7 +362,7 @@ are exchanged with the [EBI](https://www.ebi.ac.uk/) and
   - [Sitemap](/sitemaps-e.html "Sitemap")
   - [Calendar](/calendar-e.html "DDBJ Center Calendar")
   - [Address](/ddbj-access-e.html "DDBJ Center address")
-  - [Contact](/contact-e.html "Contact to DDBJ Center")
+  - [Contact](/contact-ddbj-e.html "Contact to DDBJ Center")
   - Last modified: 2018-04-11
 
 </div>

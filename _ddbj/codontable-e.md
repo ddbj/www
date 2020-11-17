@@ -6,21 +6,21 @@ category: ddbj
 lang: en
 related_pages:
   - title: Description of Location
-    url: /ddbj/location-e.html)
+    url: /ddbj/location-e.html
   - title: Protein Coding Sequence; CDS feature
-    url: /ddbj/cds-e.html)
+    url: /ddbj/cds-e.html
   - title: Example of Submission
-    url: /ddbj/example-e.html)
+    url: /ddbj/example-e.html
   - title: Codes Used in Sequence Description
-    url: /ddbj/code-e.html)
+    url: /ddbj/code-e.html
   - title: Organism qualifier
-    url: /ddbj/organism-e.html)
+    url: /ddbj/organism-e.html
   - title: Feature Key
-    url: /ddbj/features-e.html)p
+    url: /ddbj/features-e.html
   - title: Qualifier key
-    url: /ddbj/qualifiers-e.html)
+    url: /ddbj/qualifiers-e.html
   - title: The Genetic Codes
-    url: /ddbj/geneticcode-e.html)
+    url: /ddbj/geneticcode-e.html
 ---
 
 ## Defiition of /transl_table qualifier <a name="Defiition_of_/transl_table_qualifier"></a>

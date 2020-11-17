@@ -7,7 +7,7 @@ related_pages:
   - title: DDBJ 塩基配列登録システム HELP
     url: /ddbj/web-submission-help.html
   - title: 塩基配列の登録
-    url: /ddbj/services/index.html
+    url: /ddbj/submission.html
   - title: 登録の見本
     url: /ddbj/example.html
   - title: Feature key
@@ -29,7 +29,7 @@ related_pages:
 
 ヒトを対象とした全ての研究において DDBJ に送付するデータの由来である個人 (研究対象者)の尊厳及び人権は、適用されるべき法律、規定、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。  
 原則として、研究対象者を直接特定し得る参照情報は、登録データから取り除いてください。  
-ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/service-policy.html#human)をご覧ください。
+ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#human)をご覧ください。
 
 </div>
 
@@ -43,9 +43,9 @@ Web 版塩基配列登録システム（DDBJ Nucleotide Sequence Submission Syst
 
 <div class="nsss-icon">
 
-[![]({{ site.baseurl }}/assets/images/parts/pdf_icon.svg)](/files/pdf/ddbj/websubHelp_full-j.pdf)
+[![]({{ site.baseurl }}/assets/images/parts/pdf_icon.svg)]({{ site.baseurl }}/assets/files/pdf/ddbj/websubHelp_full-j.pdf)
 
-[マニュアル](/files/pdf/ddbj/websubHelp_full-j.pdf)
+[マニュアル]({{ site.baseurl }}/assets/files/pdf/ddbj/websubHelp_full-j.pdf)
 
 </div>
 
@@ -76,7 +76,7 @@ Web 版塩基配列登録システム（DDBJ Nucleotide Sequence Submission Syst
 </div>
 
 新規登録を開始する  
-: 初めて登録する場合には「[塩基配列の登録](/ddbj/services/index.html)」,「[登録データ種別](data-categories.html)」について ご一読ください。
+: 初めて登録する場合には「[塩基配列の登録](/ddbj/submission.html)」,「[登録データ種別](data-categories.html)」について ご一読ください。
 : １度に登録可能なエントリ数は 1024件までです(最大数はPC環境や配列長に依存します)。
 : 本ツールで[TPA データ](/ddbj/tpa.html)の登録も可能です。
 : 登録する配列から vector 由来の配列を除いてください。[VecScreen](http://ddbj.nig.ac.jp/vecscreen/)で確認できます。

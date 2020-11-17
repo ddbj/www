@@ -17,7 +17,7 @@ So, [do not block E-mails from DDBJ](precautions-e.html).
 
 ## Contact form
 
-※[How can I contact you when the form is not available?](/faq/en/index-e.html#contact-form-not-displayed)
+※[How can I contact you when the form is not available?](/faq/en/contact-form-not-displayed)
 
 <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScgY6STG6yQ5NLSc7bv2mQuOcehz-00V4OyHEjkNtnqd1PZHA/viewform?embedded=true" width="760" height="1500" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>-->
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeNrBMkr9lV6IaWCJCXeGBddDF3tJXcv6SQCQ5lYWETmiuRAg/viewform?embedded=true" width="760" height="1500" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>

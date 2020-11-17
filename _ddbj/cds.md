@@ -27,7 +27,7 @@ related_pages:
 ## 概要 <a name="outline"></a>
 
 feature key の中でも、タンパク質のコーディング領域を記述する CDS はデータベース中に多数、記載されています。  
-CDS feature の location はアミノ酸翻訳の対象となる塩基配列を開始コドンから終止 ドンまでの位置を基本に示します。CDS には、その位置情報、[codon\_start](/ddbj/qualifiers.html#codon_start)、由 生物のコドン表 ([transl\_table](/ddbj/qualifiers.html#transl_table) に記載されます)、な びに [transl\_except](/ddbj/qualifiers.html#transl_except) の記述に基づいて、アミノ酸翻訳を行ない、[translation](/ddbj/qualifiers.html#translation) を付加します (ただし、[pseudo](/ddbj/qualifiers.html#pseudo)、または、[pseudogene]( ddbj/qualifiers.html#pseudogene) の指定がある場合にはアミノ酸翻訳は行いません)。
+CDS feature の location はアミノ酸翻訳の対象となる塩基配列を開始コドンから終止 ドンまでの位置を基本に示します。CDS には、その位置情報、[codon\_start](/ddbj/qualifiers.html#codon_start)、由 生物のコドン表 ([transl\_table](/ddbj/qualifiers.html#transl_table) に記載されます)、な びに [transl\_except](/ddbj/qualifiers.html#transl_except) の記述に基づいて、アミノ酸翻訳を行ない、[translation](/ddbj/qualifiers.html#translation) を付加します (ただし、[pseudo](/ddbj/qualifiers.html#pseudo)、または、[pseudogene]( /ddbj/qualifiers.html#pseudogene) の指定がある場合にはアミノ酸翻訳は行いません)。
 
 登録者からの報告に基づいて、対応するタンパク質の名称や機能が CDS 下位の適切な qualifier ([product](/ddbj/qualifiers.html#product)、[function](/ddbj/qualifiers.html#function)、etc.)に記入されます。また、これらの情報が実験的に確認されたもの あるときには [experiment](/ddbj/qualifiers.html#experiment)、配列の類似性検索等で類推さ たものであるときには [inference](/ddbj/qualifiers.html#inference) という qualifier を用いて注釈されることがあります。
 
@@ -108,7 +108,7 @@ b) pseudogene と見做される場合<a name="stop_b"></a>
   - [note](/ddbj/qualifiers.html#note) qualifier に "pseudogene of [protein name]" などの記載もお願いします。
   - [pseudogene](/ddbj/qualifiers.html#pseudogene) qualifier の規定値に関しましては、[Controlled vocabulary for /pseudogene qualifier](/ddbj/pseudogene.html) で解説されています。
   - この CDS feature に相当するタンパク質産物は存在しないことになりますので、[product](/ddbj/qualifiers.html#product) qualifier は、原則、記載しないでください。
-: [登録の見本 B06](/ddbj/example-j.html#B06) もご参照ください。
+: [登録の見本 B06](/ddbj/example.html#B06) もご参照ください。
 
 c) 生体内に末端を欠失したタンパク質産物が存在すると推定される場合<a name="stop_c"></a>  
 : 想定される truncated なタンパク質産物の location を CDS feature で指定します。<br>したがって、location は短いものとなります。
@@ -129,7 +129,7 @@ d) ribosomal slippage<a name="stop_d"></a>
 e) RNA editing<a name="stop_e"></a>  
 : <span class="red">ゲノムに対して記載することが基本となります。</span>
 : 想定される CDS location を示し、[exception](/ddbj/qualifiers.html#exception) qualifier を付加します。<br>このとき、[translation](/ddbj/qualifiers.html#translation) qualifier で示す翻訳アミノ酸配列は conceptual translation ではなく、transcript の配列、近縁種などの事例から確認、または、推定された記載を採用します。<br>原則、[inference](/ddbj/qualifiers.html#inference) qualifier に推定した根拠の記載をお願いします。
-: [登録の見本 B09](/ddbj/example-j.html#B09) もご参照ください。
+: [登録の見本 B09](/ddbj/example.html#B09) もご参照ください。
 : 塩基配列登録システム では、"Submission Information" boxに、詳細な説明をお願いします。
 
 f) selenocystein、あるいは、pyrrolysine に翻訳される場合<a name="stop_f"></a>
@@ -177,7 +177,7 @@ CDS feature の location に join を用いて記載する場合、mRNA が成�
 |  <code>/codon_start=1</code>  |  コドンの読み枠の開始位置が上記の location で指定される１番目の塩基（塩基配列の86番目）であることを示します。  |
 |  <code>/transl_table=1</code>  |  塩基配列は [The Genetic Codes](/ddbj/geneticcode.html) の 1 の表に従ってアミノ酸翻訳されることを示します。  |
 
-以上の情報から、塩基配列と CDS feature の組み合わせは、塩基配列の86番目の塩基から450番目の塩基までが以下のように[一文字表記](/ddbj/code-j.html#amino-1)でアミノ酸配列に翻訳されます。
+以上の情報から、塩基配列と CDS feature の組み合わせは、塩基配列の86番目の塩基から450番目の塩基までが以下のように[一文字表記](/ddbj/code.html#amino-1)でアミノ酸配列に翻訳されます。
 
 ``` 
       86 atg gcg aag att aag atc ggg atc aat ggg ttc ggg agg atc ggg 

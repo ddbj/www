@@ -6,7 +6,7 @@ category: _activities
 lang: en
 related_pages:
   - title: DDBJ Publications Archive
-    url: /activities/pub-archives-e.html
+    url: /activities/archives-e.html
   - title: DDBJ staff papers (2009-)
     url: /activities/index-e.html
   - title: DDBJ staff presentations (2009-)
@@ -20,7 +20,7 @@ related_pages:
   - title: DDBJ Annual Reports
     url: /activities/index-e.html
   - title: DDBJ Mail Magazine
-    url: /activities/subscribe-ddbj-e.html
+    url: /subscribe-ddbj-e.html
 ---
 
 Quote from Mail Magazine : No.62&63 (Sep.02,2011) ～ No.71&72

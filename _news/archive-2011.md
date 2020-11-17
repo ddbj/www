@@ -18,7 +18,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn111222"><a href="#wn111222">DDBJ/EMBL/GenBank Feature Table Definition 改訂</a></h2>
   <div class="news_date">2011年12月22日</div>
-  <div class="news_content"><dl><dd><a href="/ddbj/full_index-e.html">Feature Table Definition (FT-Doc)</a> は， DDBJ/EMBL-Bank/GenBank 国際塩基配列データベース構築のために，DDBJ, EMBL-Bank, GenBank が三者間で定めた共通のアノテーション規範です。2011年12月に Feature Table Definition が改訂されました。 Version は，10.0 です。</dd></dl></div>
+  <div class="news_content"><dl><dd><a href="/ddbj/feature-table-e.html">Feature Table Definition (FT-Doc)</a> は， DDBJ/EMBL-Bank/GenBank 国際塩基配列データベース構築のために，DDBJ, EMBL-Bank, GenBank が三者間で定めた共通のアノテーション規範です。2011年12月に Feature Table Definition が改訂されました。 Version は，10.0 です。</dd></dl></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -41,7 +41,7 @@ lang: ja
 ・AEAAC0000001-AEAAC0021096 (21,096 entries)・AEAAD0000001-AEAAD0024262 (24,262 entries)
 ・AEAAE0000001-AEAAE0023437 (23,437 entries)・AEAAF0000001-AEAAF0030485 (30,485 entries)
 ・AEAAG0000001-AEAAG0021798 (21,798 entries)・AEAAH0000001-AEAAH0040734 (40,734 entries)
-・AEAAI0000001-AEAAI0029614 (29,614 entries)・AEAAJ0000001-AEAAJ0030206 (30,206 entries)</code></pre><strong>Anonymous FTP 一括取得：</strong> <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/mga/AE_resource_index.html">AE_resource_index</a><br><strong>関連ページ：</strong> <a href="/ddbj/mga.html">MGA 配列データについて</a></dd> </dl></div>
+・AEAAI0000001-AEAAI0029614 (29,614 entries)・AEAAJ0000001-AEAAJ0030206 (30,206 entries)</code></pre><br><strong>Anonymous FTP 一括取得：</strong> <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/mga/AE_resource_index.html">AE_resource_index</a><br><strong>関連ページ：</strong> <a href="/ddbj/mga.html">MGA 配列データについて</a></dd> </dl></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -50,7 +50,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn111130_2"><a href="#wn111130_2">DDBJ メールマガジン No.66 配信</a></h2>
   <div class="news_date">2011年11月30日</div>
-  <div class="news_content"><p style="padding-left: 30px;"><strong><img src="{{ site.baseurl }}/assets/images/news/mag-title5.gif" title="mag-title" width="300" height="55"></strong></p><br><br><p style="padding-left: 30px;"><strong>No. 66</strong> (2011年11月30日発行) は，<a href="/files/pdf/activities/No66.pdf">こちらへ</a><br>【目次】<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8">「第25回 DDBJing 講習会 in 三島」 開催のお知らせ<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8"> 第34回日本分子生物学会年会 ブース出展・ポスター発表<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8"> DDBJ 年末年始休業のお知らせ<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8"> 国立遺伝学研究所ならびに DDBJ ネットワークの一時不通<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8"> "SAKURA de Ｑ" 第１０回 （ユーザから寄せられる SAKURA に関する Q and A です） </p>ホームページからもご覧になれますが，お申し込み頂いた方にはメール配信をいたします。<br>配信を希望される方は，<a href="/subscribe-ddbj.html">申込・変更ページ</a> で簡単に手続きができますので，この機会に是非お申し込み下さい。</div>
+  <div class="news_content"><p style="padding-left: 30px;"><strong><img src="{{ site.baseurl }}/assets/images/news/mag-title5.gif" title="mag-title" width="300" height="55"></strong></p><br><br><p style="padding-left: 30px;"><strong>No. 66</strong> (2011年11月30日発行) は，<a href="{{ site.baseurl }}/assets/files/pdf/activities/No66.pdf">こちらへ</a><br>【目次】<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8">「第25回 DDBJing 講習会 in 三島」 開催のお知らせ<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8"> 第34回日本分子生物学会年会 ブース出展・ポスター発表<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8"> DDBJ 年末年始休業のお知らせ<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8"> 国立遺伝学研究所ならびに DDBJ ネットワークの一時不通<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8"> "SAKURA de Ｑ" 第１０回 （ユーザから寄せられる SAKURA に関する Q and A です） </p>ホームページからもご覧になれますが，お申し込み頂いた方にはメール配信をいたします。<br>配信を希望される方は，<a href="/subscribe-ddbj.html">申込・変更ページ</a> で簡単に手続きができますので，この機会に是非お申し込み下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -86,7 +86,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn111027"><a href="#wn111027">DDBJ メールマガジン No.65 配信</a></h2>
   <div class="news_date">2011年10月27日</div>
-  <div class="news_content"><p style="padding-left: 30px;"><strong><img src="{{ site.baseurl }}/assets/images/news/mag-title5.gif" title="mag-title" width="300" height="55"></strong></p><br><br><p style="padding-left: 30px;"><strong>No. 65</strong> (2011年10月27日発行) は，<a href="/files/pdf/activities/No65.pdf">こちらへ</a><br>【目次】<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8"> 「第25回 DDBJing 講習会 in 三島」開催のお知らせ<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8"> 国立遺伝学研究所の停電による公開サービスの停止<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8"> DDBJ BioProject サービス提供開始<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8"> DDBJ の塩基配列解析ツールについて(後編)<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8"> 大量データの公開 (10月)<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8"> GIB サービス再開<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8"> DDBJ アノテータの業務紹介～６．開発ユニットより</p>ホームページからもご覧になれますが，お申し込み頂いた方にはメール配信をいたします。<br>配信を希望される方は，<a href="/subscribe-ddbj.html">申込・変更ページ</a> で簡単に手続きができますので，この機会に是非お申し込み下さい。</div>
+  <div class="news_content"><p style="padding-left: 30px;"><strong><img src="{{ site.baseurl }}/assets/images/news/mag-title5.gif" title="mag-title" width="300" height="55"></strong></p><br><br><p style="padding-left: 30px;"><strong>No. 65</strong> (2011年10月27日発行) は，<a href="{{ site.baseurl }}/assets/files/pdf/activities/No65.pdf">こちらへ</a><br>【目次】<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8"> 「第25回 DDBJing 講習会 in 三島」開催のお知らせ<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8"> 国立遺伝学研究所の停電による公開サービスの停止<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8"> DDBJ BioProject サービス提供開始<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8"> DDBJ の塩基配列解析ツールについて(後編)<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8"> 大量データの公開 (10月)<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8"> GIB サービス再開<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8"> DDBJ アノテータの業務紹介～６．開発ユニットより</p>ホームページからもご覧になれますが，お申し込み頂いた方にはメール配信をいたします。<br>配信を希望される方は，<a href="/subscribe-ddbj.html">申込・変更ページ</a> で簡単に手続きができますので，この機会に是非お申し込み下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -113,7 +113,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn111025"><a href="#wn111025">DDBJ BioProject サービス提供開始</a></h2>
   <div class="news_date">2011年10月25日</div>
-  <div class="news_content"><a href="/bioproject/index.html" target="_new">BioProject</a> は研究プロジェクトとプロジェクトに由来するデータをまとめるためのデータベースです。INSDC が運営するデータベースに登録されたデータが BioProject ID を引用することで，データがプロジェクト単位でグループ化されます。<br>DDBJ BioProject は登録されたプロジェクトデータに対して国際的に認可されたプレフィックス 'PRJD' で始まるアクセッション番号を発行します。公開されたプロジェクトデータは EBI，NCBI と交換，共有されます。<br><br>BioProject データを登録するためには DDBJ 登録管理システム <a href="https://ddbj.nig.ac.jp/D-way/" target="_new">D-way</a> のアカウントが必要になります。<a href="/files/manual/D-way_manual.pdf" target="_new">D-way 登録アカウントマニュアル</a> に従いアカウントを取得後，D-way ウェブサイトからプロジェクトデータを投稿してください。<br><br></div>
+  <div class="news_content"><a href="/bioproject/index.html" target="_new">BioProject</a> は研究プロジェクトとプロジェクトに由来するデータをまとめるためのデータベースです。INSDC が運営するデータベースに登録されたデータが BioProject ID を引用することで，データがプロジェクト単位でグループ化されます。<br>DDBJ BioProject は登録されたプロジェクトデータに対して国際的に認可されたプレフィックス 'PRJD' で始まるアクセッション番号を発行します。公開されたプロジェクトデータは EBI，NCBI と交換，共有されます。<br><br>BioProject データを登録するためには DDBJ 登録管理システム <a href="https://ddbj.nig.ac.jp/D-way/" target="_new">D-way</a> のアカウントが必要になります。<a href="{{ site.baseurl }}/assets/files/manual/D-way_manual.pdf" target="_new">D-way 登録アカウントマニュアル</a> に従いアカウントを取得後，D-way ウェブサイトからプロジェクトデータを投稿してください。<br><br></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -158,7 +158,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn111003"><a href="#wn111003">GIB サービス再開</a></h2>
   <div class="news_date">2011年10月03日</div>
-  <div class="news_content">節電のために停止しておりました，<a href="/services/services/past-services-e.html#gib" target="_blank">GIB</a> のサービスを10月3日（月）より再開しました。<br>ユーザのみなさまには，大変長らくお待たせいたしました。<br>どうぞご利用下さい。<br><br></div>
+  <div class="news_content">節電のために停止しておりました，<a href="/services/past-services-e.html#gib" target="_blank">GIB</a> のサービスを10月3日（月）より再開しました。<br>ユーザのみなさまには，大変長らくお待たせいたしました。<br>どうぞご利用下さい。<br><br></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -203,7 +203,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn110922"><a href="#wn110922">第24回国際実務者会議 報告</a></h2>
   <div class="news_date">2011年09月22日</div>
-  <div class="news_content">DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a>, <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a> で構成される <a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a> は, その共同事業の運営・推進を図るために, 国際実務者会議を年１回開催しています。2011年は 5月23日-27日に 大阪で開催され, <a href="/index.html" target="_blank">DDBJ</a>, <a href="http://www.ebi.ac.uk/embl/" target="_blank">EMBL-Bank</a>, <a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>, Sequence Read Archive (SRA), Trace Archive を運営する上での実務的な問題を討論しました。慣例通りであれば, 三島で開催するところでしたが, 当時は震災に関連した電力不足の懸念などもあり, EBI と NCBI の理解と協力を得て大阪で開催となりました。会議の報告は <a href="/activities/index.html#2011">こちら</a> をご覧下さい。</div>
+  <div class="news_content">DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a>, <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a> で構成される <a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a> は, その共同事業の運営・推進を図るために, 国際実務者会議を年１回開催しています。2011年は 5月23日-27日に 大阪で開催され, <a href="/index.html" target="_blank">DDBJ</a>, <a href="http://www.ebi.ac.uk/embl/" target="_blank">EMBL-Bank</a>, <a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>, Sequence Read Archive (SRA), Trace Archive を運営する上での実務的な問題を討論しました。慣例通りであれば, 三島で開催するところでしたが, 当時は震災に関連した電力不足の懸念などもあり, EBI と NCBI の理解と協力を得て大阪で開催となりました。会議の報告は <a href="/activities/icm/2011">こちら</a> をご覧下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -266,7 +266,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn110831"><a href="#wn110831">DDBJ BioProject ウェブサイト公開</a></h2>
   <div class="news_date">2011年08月31日</div>
-  <div class="news_content"><a href="/bioproject/index.html">BioProject</a> は研究プロジェクトと <a href="http://www.insdc.org/">INSDC</a> が運営するアーカイブに存在するプロジェクト由来データを組織化するデータベースです。<a href="http://www.insdc.org/">INSDC</a> が運営する複数のデータベースに登録されたデータが BioProject ID を参照することにより，プロジェクトとプロジェクトに由来するデータセットがグループ化されます。<a href="/index-j.html">DDBJ</a> では <a href="/index-j.html">DDBJ 塩基配列データベース</a>, <a href="/dra/index.html">Sequence Read Archive</a>, <a href="/dta/index.html">Trace Archive</a> にあるデータがまとめられます。BioProject データはプロジェクトの対象範囲，実験材料，目的，研究費の提供元や研究カテゴリなどの情報を含んでいます。BioProject は既存の NCBI Genome Project を拡張，再デザインしたものです。<br><br><a href="/bioproject/index.html">DDBJ BioProject</a> は登録されたプロジェクトデータに対して国際的に認可されたプレフィックス 'PRJD' で始まるアクセッション番号を発行します。公開されたプロジェクトデータは　<a href="http://www.ebi.ac.uk/">EBI</a>，<a href="http://www.ncbi.nlm.nih.gov/bioproject">NCBI</a> と交換，共有されます。<br><br>※<span class="red">BioProject データベースは段階的にリリースされます。登録システムのリリース後，BioProject データの登録受付を開始します。</span></div>
+  <div class="news_content"><a href="/bioproject/index.html">BioProject</a> は研究プロジェクトと <a href="http://www.insdc.org/">INSDC</a> が運営するアーカイブに存在するプロジェクト由来データを組織化するデータベースです。<a href="http://www.insdc.org/">INSDC</a> が運営する複数のデータベースに登録されたデータが BioProject ID を参照することにより，プロジェクトとプロジェクトに由来するデータセットがグループ化されます。<a href="/index.html">DDBJ</a> では <a href="/index.html">DDBJ 塩基配列データベース</a>, <a href="/dra/index.html">Sequence Read Archive</a>, <a href="/dta/index.html">Trace Archive</a> にあるデータがまとめられます。BioProject データはプロジェクトの対象範囲，実験材料，目的，研究費の提供元や研究カテゴリなどの情報を含んでいます。BioProject は既存の NCBI Genome Project を拡張，再デザインしたものです。<br><br><a href="/bioproject/index.html">DDBJ BioProject</a> は登録されたプロジェクトデータに対して国際的に認可されたプレフィックス 'PRJD' で始まるアクセッション番号を発行します。公開されたプロジェクトデータは　<a href="http://www.ebi.ac.uk/">EBI</a>，<a href="http://www.ncbi.nlm.nih.gov/bioproject">NCBI</a> と交換，共有されます。<br><br>※<span class="red">BioProject データベースは段階的にリリースされます。登録システムのリリース後，BioProject データの登録受付を開始します。</span></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -356,7 +356,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn110628"><a href="#wn110628">DDBJ メールマガジン No.62 配信</a></h2>
   <div class="news_date">2011年06月28日</div>
-  <div class="news_content">DDBJ では，メールマガジンを配信しています。6月28日に <a href="/files/pdf/activities/No62.pdf">第62号</a> を配信しました。 今回の記事は，「DDBJ リリース 86.0，DAD リリース 56.0 完成 」，「日本特許庁の特許塩基配列データ 公開」 ，リレー連載コラム「DDBJ アノテータの業務紹介」 などです。ホームページでもご覧になれますが，お申し込み頂いた方にはメール配信をいたします。配信を希望される方は，<a href="/subscribe-ddbj.html">申込・変更ページ</a> で簡単に手続きができますので，この機会に是非お申し込み下さい。</div>
+  <div class="news_content">DDBJ では，メールマガジンを配信しています。6月28日に <a href="{{ site.baseurl }}/assets/files/pdf/activities/No62.pdf">第62号</a> を配信しました。 今回の記事は，「DDBJ リリース 86.0，DAD リリース 56.0 完成 」，「日本特許庁の特許塩基配列データ 公開」 ，リレー連載コラム「DDBJ アノテータの業務紹介」 などです。ホームページでもご覧になれますが，お申し込み頂いた方にはメール配信をいたします。配信を希望される方は，<a href="/subscribe-ddbj.html">申込・変更ページ</a> で簡単に手続きができますので，この機会に是非お申し込み下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -433,7 +433,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn110531_2"><a href="#wn110531_2">DDBJ メールマガジン No.61 配信</a></h2>
   <div class="news_date">2011年05月31日</div>
-  <div class="news_content">DDBJ では，メールマガジンを配信しています。5月31日に <a href="/files/pdf/activities/No61.pdf">第61号</a> を配信しました。 今回の記事は，「DDBJing 講習会 in 東京」，「"困った de Ｑ" 第５回」 ，リレー連載コラム「DDBJ アノテータの業務紹介」 などです。ホームページでもご覧になれますが，お申し込み頂いた方にはメール配信をいたします。配信を希望される方は，<a href="/subscribe-ddbj.html">申込・変更ページ</a> で簡単に手続きができますので，この機会に是非お申し込み下さい。</div>
+  <div class="news_content">DDBJ では，メールマガジンを配信しています。5月31日に <a href="{{ site.baseurl }}/assets/files/pdf/activities/No61.pdf">第61号</a> を配信しました。 今回の記事は，「DDBJing 講習会 in 東京」，「"困った de Ｑ" 第５回」 ，リレー連載コラム「DDBJ アノテータの業務紹介」 などです。ホームページでもご覧になれますが，お申し込み頂いた方にはメール配信をいたします。配信を希望される方は，<a href="/subscribe-ddbj.html">申込・変更ページ</a> で簡単に手続きができますので，この機会に是非お申し込み下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -469,7 +469,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn110427_2"><a href="#wn110427_2">DDBJ メールマガジン No.60 配信</a></h2>
   <div class="news_date">2011年04月27日</div>
-  <div class="news_content">DDBJ では，メールマガジンを配信しています。4月27日に <a href="/files/pdf/activities/No60.pdf">第60号</a> を配信しました。今回の記事は，「"困った de Ｑ" 第４回」「DDBJ アノテータの業務紹介～ ３.大量登録システム(MSS) の利用（前編）」などです。ホームページでもご覧になれますが，お申し込み頂いた方にはメール配信をいたします。配信を希望される方は，<a href="/subscribe-ddbj.html">申込・変更ページ</a> で簡単に手続きができますので，この機会に是非お申し込み下さい。 </div>
+  <div class="news_content">DDBJ では，メールマガジンを配信しています。4月27日に <a href="{{ site.baseurl }}/assets/files/pdf/activities/No60.pdf">第60号</a> を配信しました。今回の記事は，「"困った de Ｑ" 第４回」「DDBJ アノテータの業務紹介～ ３.大量登録システム(MSS) の利用（前編）」などです。ホームページでもご覧になれますが，お申し込み頂いた方にはメール配信をいたします。配信を希望される方は，<a href="/subscribe-ddbj.html">申込・変更ページ</a> で簡単に手続きができますので，この機会に是非お申し込み下さい。 </div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -687,7 +687,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn110204"><a href="#wn110204">DDBJ/EMBL/GenBank Feature Table Definition 改訂</a></h2>
   <div class="news_date">2011年02月04日</div>
-  <div class="news_content"><a href="/ddbj/full_index-e.html">Feature Table Definition(FT-Doc)</a> は， DDBJ/EMBL-Bank/GenBank 国際塩基配列データベー構築のために，DDBJ, EMBL-Bank, GenBank が 三者間で定めた共通のアノテーション規範です。毎年5月に開催される<a href="/activities/index.html">国際実務者会議</a>での決定を受けて改訂が行われ，公開データベースにもその改訂が反映されています。<a href="/activities/index.html#2010">第23会国際実務者会議</a>（2010年5月に英国 EBI で開催）での決定事項を基に，2011年1月にFeature Table Definition が改訂されました。</div>
+  <div class="news_content"><a href="/ddbj/feature-table-e.html">Feature Table Definition(FT-Doc)</a> は， DDBJ/EMBL-Bank/GenBank 国際塩基配列データベー構築のために，DDBJ, EMBL-Bank, GenBank が 三者間で定めた共通のアノテーション規範です。毎年5月に開催される<a href="/activities/index.html">国際実務者会議</a>での決定を受けて改訂が行われ，公開データベースにもその改訂が反映されています。<a href="/activities/icm/2010">第23会国際実務者会議</a>（2010年5月に英国 EBI で開催）での決定事項を基に，2011年1月にFeature Table Definition が改訂されました。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -696,7 +696,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn110201"><a href="#wn110201">DDBJ メールマガジン No.57 配信</a></h2>
   <div class="news_date">2011年02月01日</div>
-  <div class="news_content">DDBJ では，メールマガジンを配信しています。2月1日に <a href="/files/pdf/activities/No57.pdf">第57号</a> を配信しました。今回の記事は，Nucleic Acids Research に DDBJ に関する論文掲載，FTP の dra ディレクトリの構成変更，「ユーザーの皆様へ，お願いです！」その４．登録したいデータの量が多くて困った時のヒント集などです。ホームページでもご覧になれますが，お申し込み頂いた方にはメール配信をいたします。配信を希望される方は，<a href="/subscribe-ddbj.html">申込・変更ページ</a> で簡単に手続きができますので，この機会に是非お申し込み下さい。</div>
+  <div class="news_content">DDBJ では，メールマガジンを配信しています。2月1日に <a href="{{ site.baseurl }}/assets/files/pdf/activities/No57.pdf">第57号</a> を配信しました。今回の記事は，Nucleic Acids Research に DDBJ に関する論文掲載，FTP の dra ディレクトリの構成変更，「ユーザーの皆様へ，お願いです！」その４．登録したいデータの量が多くて困った時のヒント集などです。ホームページでもご覧になれますが，お申し込み頂いた方にはメール配信をいたします。配信を希望される方は，<a href="/subscribe-ddbj.html">申込・変更ページ</a> で簡単に手続きができますので，この機会に是非お申し込み下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>

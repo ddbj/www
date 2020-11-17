@@ -39,7 +39,7 @@ related_pages:
 実際には併用されることも多いのですが、下図では典型的な手法の各段階を模式的に示しています。  
 なお、大規模なゲノム配列決定プロジェクトは [BioProject](/bioproject/index.html) と [BioSample](/biosample/index.html) にも ご登録ください。
 
-**重要:**[ヒトを対象とした研究データの登録について](/service-policy.html#human)
+**重要:**[ヒトを対象とした研究データの登録について](/policies.html#human)
 
 [INSDC standards for genome assembly submission](/ddbj/assembly.html) もご参照ください。
 

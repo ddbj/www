@@ -15,7 +15,7 @@ lang: en
 <p>In principle, DDBJ can not restore any published data. <br>See also following item about access restriction. </p>
 <p>In principle, you cannot remove your sequence data from DDBJ retrieval system: <a href="http://getentry.ddbj.nig.ac.jp/top-e.html">getentry</a>, if it has already been open to the public (If DDBJ wrongly published your data because of any mistakes, the data should be removed as soon as possible.). </p>
 <p>However, if there is some specific reason for removing your sequence data (i.e. some error is found, etc.), we can restrict access to your sequence data. </p>
-<p>Please send your request from <a href="/contact-e.html#to-ddbj">contact form</a> with the following contents.</p>
+<p>Please send your request from <a href="/contact-ddbj-e.html#to-ddbj">contact form</a> with the following contents.</p>
 <ul>
   <li>Accession numbers:</li>
   <li>Reason in brief:</li>

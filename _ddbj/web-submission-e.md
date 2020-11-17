@@ -5,19 +5,19 @@ category: ddbj
 lang: en
 related_pages:
   - title: Nucleotide Sequence Submission
-    url: services/services/index.html
+    url: /ddbj/submission-e.html
   - title: Example of Submission
-    url: flatfile/exsample-e.html
+    url: /ddbj/example-e.html
   - title: Feature Key
-    url: flatfile/features-e.html
+    url: /ddbj/features-e.html
   - title: Qualifier key
-    url: flatfile/qualifiers-e.html
+    url: /ddbj/qualifiers-e.html
   - title: Organism qualifier
-    url: flatfile/organism-e.html
+    url: /ddbj/organism-e.html
   - title: Protein Coding Sequence; CDS feature
-    url: flatfile/env-e.html
+    url: /ddbj/env-e.html
   - title: Description of Location
-    url: flatfile/location-e.html
+    url: /ddbj/location-e.html
 ---
 
 {::options parse_block_html="true" /}
@@ -37,9 +37,9 @@ Before submission, read ["Submission of research data from human subjects"](/pol
 
 <div class="nsss-icon">
 
-[![]({{ site.baseurl }}/assets/images/parts/pdf_icon.svg)](/files/pdf/ddbj/websubHelp_full-e.pdf)
+[![]({{ site.baseurl }}/assets/images/parts/pdf_icon.svg)]({{ site.baseurl }}/assets/files/pdf/ddbj/websubHelp_full-e.pdf)
 
-[Manual](/files/pdf/ddbj/websubHelp_full-e.pdf)
+[Manual]({{ site.baseurl }}/assets/files/pdf/ddbj/websubHelp_full-e.pdf)
 
 </div>
 
@@ -61,7 +61,7 @@ OS
 ## Submission <a name="Submission"></a>
 
 The first-time submission  
-: Please read the descriptions of "[Nucleotide Sequence Submission](/ddbj/services/index.html)" and "[Categories for Sequence Data](/documents/documents/data-categories-e.html)".
+: Please read the descriptions of "[Nucleotide Sequence Submission](/ddbj/submission.html)" and "[Categories for Sequence Data](/documents/data-categories-e.html)".
 : Maximum number of 1 submission: 1024 (depends on PC environment/sequence length) 
 : [TPA data](/ddbj/tpa-e.html) submission is also acceptable via this system.
 : Check your sequences by [VecScreen](http://ddbj.nig.ac.jp/vecscreen/) to exclude vector sequences before submission.。
@@ -81,7 +81,7 @@ Recommended browsers
 
   - This system accepts only new submissions. DO NOT send update request via this system.  
     After getting accession number(s), send request/question from [Update.](/ddbj/update-e.html).
-  - If you encounter any problem during submission, please contact us with "Submission ID" through [contact form](/contact-e.html).
+  - If you encounter any problem during submission, please contact us with "Submission ID" through [contact form](/contact-ddbj-e.html).
 
 {::options parse_block_html="true" /}
 <div class="start-button">

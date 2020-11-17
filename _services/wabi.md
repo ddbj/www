@@ -25,9 +25,9 @@ related_pages:
   - title: TXSearch ヘルプ
     url: /services/txsearch.html
   - title: 過去のサービス
-    url: /services/services/services/past-services.html
+    url: /services/past-services.html
   - title: 関連論文
-    url: /services/services/services/references.html
+    url: /services/references.html
   - title: Pipeline ヘルプ
     url: /services/pipeline.html
 ---
@@ -60,9 +60,9 @@ http://ddbj.nig.ac.jp/wabi/blast/wabi_blast_1111-1111-1111-11-111-111111?info=re
 
 現在 WABI は、次のサービスの Web API を提供しています。
 
-  - [BLAST]({{site.baseurl}}/services/services/wabi-blast.html)
-  - [getentry]({{site.baseurl}}/services/services/getentry.html)
-  - [ARSA]({{site.baseurl}}/services/services/arsa.html)
-  - [ClustalW]({{site.baseurl}}/services/services/wabi-clustalw.html)
-  - [VecScreen]({{site.baseurl}}/services/services/wabi-vecscreen.html)
-  - [MAFFT]({{site.baseurl}}/services/services/wabi-mafft.html)
+  - [BLAST]({{site.baseurl}}/services/wabi-blast.html)
+  - [getentry]({{site.baseurl}}/services/getentry.html)
+  - [ARSA]({{site.baseurl}}/services/arsa.html)
+  - [ClustalW]({{site.baseurl}}/services/wabi-clustalw.html)
+  - [VecScreen]({{site.baseurl}}/services/wabi-vecscreen.html)
+  - [MAFFT]({{site.baseurl}}/services/wabi-mafft.html)

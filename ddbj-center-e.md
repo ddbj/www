@@ -74,7 +74,7 @@ in Europe and [NCBI](https://www.ncbi.nlm.nih.gov/) in USA.
 
 DDBJ Center is officially certified to collect nucleotide sequences from
 researchers and to issue [the internationally recognized accession
-number](/documents/accessions.html) to data submitters. The accession number issued
+number](/documents/accessions-e.html) to data submitters. The accession number issued
 for each sequence data is unique on the database and internationally
 recognized to guarantee the submitter the property of the submitted and
 published data. Since DDBJ Center exchanges the released data with
@@ -120,9 +120,9 @@ memory-sharing computers, and high-capacity, high-speed disk devices.
 #### Biological database management: tools for depositing and retrieving <a name="Biological_database_management__tools_for_depositing_and_retrieving"></a>
 
 We provide databases maintained by DDBJ and others through [web
-services](/services-e.html) or on NIG Supercomputer.  
+services](/services/) or on NIG Supercomputer.  
 You can collectively download databases from [our FTP
-site](download-e.html).
+site](/services/).
 
 #### Providing software tools for analyzing biological  <a name="Providing_software_tools_for_analyzing_biological_data"></a>
 
@@ -139,7 +139,7 @@ nucleotide sequence data and how to use our services for analyzing life
 science data.
 
 We announce [the latest information for DDBJ
-activities](/news/en/index-e.html).  
+activities](/news/en).  
 See also [our publications](/activities/index.html).
 
 

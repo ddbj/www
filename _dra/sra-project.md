@@ -8,24 +8,24 @@ lang: ja
 
 ## 共同研究プロジェクトデータの取り扱い <a name="project"></a>
 
-ここでは共同研究プロジェクトに由来するデータを [DDBJ Sequence Read Archive (DRA)]({{ site.baseurl }}/aboutdra/index.html) サーバを介して，
+ここでは共同研究プロジェクトに由来するデータを [DDBJ Sequence Read Archive (DRA)]({{ site.baseurl }}/dra/index.html) サーバを介して，
 
   - シークエンス拠点から共同研究者へデータを転送する
   - 共同研究者が DRA へデータを登録する
 
 方法を解説しています。これによりプロジェクトで得られたデータを共同研究者間で共有することができます。
 
-DRA へのデータ登録方法については [DRA Handbook]({{ site.baseurl }}/aboutdra/services/index.html) をご覧ください。
+DRA へのデータ登録方法については [DRA Handbook]({{ site.baseurl }}/dra/submission.html) をご覧ください。
 
 ## データ転送の準備 <a name="transfer"></a>
 
 ### D-way アカウントの取得・連絡 <a name="create-dway-account"></a>
 
-[アカウント Handbook]({{ site.baseurl }}/tentative/account.html) に従い DDBJ データ登録システムである D-way のアカウントを取得します。
+[アカウント Handbook]({{ site.baseurl }}/account.html) に従い DDBJ データ登録システムである D-way のアカウントを取得します。
 
 ### 転送用ディレクトリ <a name="directory-for-transfer"></a>
 
-[DRA に転送用ディレクトリの作成を依頼します]({{ site.baseurl }}/aboutus/contact-ddbj.html)。DRA チームは依頼に基づき DRA データ受付サーバに転送用ディレクトリ "transfer" を作成し，依頼者に連絡します。
+[DRA に転送用ディレクトリの作成を依頼します]({{ site.baseurl }}/contact-ddbj.html)。DRA チームは依頼に基づき DRA データ受付サーバに転送用ディレクトリ "transfer" を作成し，依頼者に連絡します。
 
   - DRAデータ受付サーバ: ftp-private.ddbj.nig.ac.jp
   - 送り手側: transfer/プロジェクト名/受け手のアカウント名/
@@ -44,7 +44,7 @@ DRA へのデータ登録方法については [DRA Handbook]({{ site.baseurl }}
 
 ### データの作成・アップロード <a name="create-data-upload"></a>
 
-送り手側であるシークエンス拠点 S が [DRA Handbook]({{ site.baseurl }}/aboutdra/services/index.html) 中の FTP クライアント，もしくは，コマンドで操作します。
+送り手側であるシークエンス拠点 S が [DRA Handbook]({{ site.baseurl }}/dra/submission.html) 中の FTP クライアント，もしくは，コマンドで操作します。
 
 #### ランデータ <a name="ランデータ"></a>
 
@@ -64,18 +64,17 @@ D-way で DRA 新規登録を作成し，Save XML で XML ファイルとして�
 
 ## 受け手側での操作 <a name="receiver"></a>
 
-### D-wayでの新規登録作成 <a name="create-new-submission
-"></a>
+### D-wayでの新規登録作成 <a name="create-new-submission"></a>
 
 DRA ウェブサイトから共同研究者の [D-way](https://ddbj.nig.ac.jp/D-way/) アカウントにログインします。
 
-[DRA Handbook]({{ site.baseurl }}/aboutdra/services/index.html) に従い新規登録 (例: lab_a-0001)
+[DRA Handbook]({{ site.baseurl }}/dra/submission.html) に従い新規登録 (例: lab_a-0001)
 を作成します。対応する登録用ディレクトリ
 (submission/lab_a/lab_a-0001) が受付サーバの登録者用ディレクトリに作成されます。
 
 ### データのコピー・取得 <a name="upload-download"></a>
 
-[DRA Handbook]({{ site.baseurl }}/aboutdra/services/index.html) に従い，transfer 以下に作成された受渡し用ディレクトリに送り手はデータをアップロードします。受け手はデータをダウンロードします。
+[DRA Handbook]({{ site.baseurl }}/dra/submission.html) に従い，transfer 以下に作成された受渡し用ディレクトリに送り手はデータをアップロードします。受け手はデータをダウンロードします。
 
 ### メタデータの読み込み・作成 <a name="create-metadata"></a>
 

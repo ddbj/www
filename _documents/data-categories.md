@@ -7,14 +7,14 @@ related_pages:
   - title: 国際塩基配列データベースのアクセッション番号
     url: /documents/accessions.html
   - title: データ公開原則
-    url: /documents/documents/documents/data-release-policy.html
+    url: /documents/data-release-policy.html
   - title: Prefix Letter List
-    url: /documents/documents/documents/prefix.html
+    url: /documents/prefix.html
 ---
 
 ## DDBJ に登録可能なデータ <a name="accept"></a>
 
-DDBJ では, [Primary entry](/ddbj/services/index.html#primary_entry)
+DDBJ では, [Primary entry](/ddbj/submission.html#primary_entry)
 のデータとして登録依頼のあったデータにつきましては,
 ２次的な引用やコンピューターで予測したものでなく,
 登録者が実験的に決定した, もしくは,

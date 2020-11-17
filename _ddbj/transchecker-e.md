@@ -5,17 +5,17 @@ category: ddbj
 lang: en
 related_pages:
   - title: Submission File Format
-    url: services/file-format-e.html
+    url: /ddbj/file-format-e.html
   - title: Validation tools for MSS data files
-    url: services/mss-tool-e.html
+    url: /ddbj/mss-tool-e.html
   - title: UME User’s manual
-    url: services/ume-e.html
+    url: /ddbj/ume-e.html
   - title: Parser User’s Manual
-    url: services/parser-e.html
+    url: /ddbj/parser-e.html
   - title: Validator error message
-    url: services/validator-e.html
+    url: /ddbj/validator-e.html
   - title: Application form for MSS
-    url: services/mass-form-e.html
+    url: /ddbj/mss-form-e.html
 ---
 
 TransChecker is a software tool developed by DDBJ for checking translation into amino acid sequence from [CDS features](/ddbj/cds-e.html) that are described in

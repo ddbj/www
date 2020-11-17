@@ -15,11 +15,11 @@ lang: en
 
 ### 2\. Register a BioProject and BioSample(s)
 
-#### [BioProject](/bioproject/services/index.html) <a name="BioProject"></a>
+#### [BioProject](/bioproject/submission-e.html) <a name="BioProject"></a>
 
   - A description of the reseach effort.
 
-#### [BioSample](/biosample/services/index.html) <a name="_BioSample"></a> ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv} 
+#### [BioSample](/biosample/submission-e.html) <a name="_BioSample"></a> ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv} 
 
   - A description of biologically or physically unique samples used to generate experimental data.
 
@@ -62,7 +62,7 @@ metadata can be submitted as a tab-delimited text file.
 At the moment GEA submission interface only supports one type of two-color workflow ([see graphic here](/gea/example-e.html#sdrf_example2)), where two samples are connected with one common raw data file, which includes both channels.
 If you select the dual-channel option in the IDF tab, it will expect that you provide one file for the two samples that were hybridized together. Some recent two-color microarray technologies generate two separate raw data files (usually one for each channel), which will cause validation to fail (if you connect a single file per sample).
 
-If you have separate files for each channel, please [contact GEA team](/contact-e.html).
+If you have separate files for each channel, please [contact GEA team](/contact-ddbj-e.html).
 
 [« Close](javascript:void(0)){: .close-content-btn}
 </div>
@@ -74,7 +74,7 @@ If you have separate files for each channel, please [contact GEA team](/contact-
 <div class="accordion-content">
 
 Refer to [ArrayExpress Single-cell submission guide](https://www.ebi.ac.uk/arrayexpress/help/single-cell_submission_guide.html).
-Please [contact GEA team](/contact-e.html) to upload any additional files for custom spike-ins or to facilitate data analysis.
+Please [contact GEA team](/contact-ddbj-e.html) to upload any additional files for custom spike-ins or to facilitate data analysis.
 
 [« Close](javascript:void(0)){: .close-content-btn}
 </div>
@@ -85,7 +85,7 @@ Please [contact GEA team](/contact-e.html) to upload any additional files for cu
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">More than one technology per experiment</a></h4>
 <div class="accordion-content">
 
-GEA will ask you for the technology and name of the array, and applies it to the whole submission. If you have used different types of technologies for the same set of samples, we ask you to create separate submissions. Please make sure that the submissions have distinct titles (even though they may belong to the same study), in order to avoid mistakes. If you have samples from more than one array design in your experiment, it is possible to submit only one experiment. If you wish to do this, please [contact GEA team](/contact-e.html).
+GEA will ask you for the technology and name of the array, and applies it to the whole submission. If you have used different types of technologies for the same set of samples, we ask you to create separate submissions. Please make sure that the submissions have distinct titles (even though they may belong to the same study), in order to avoid mistakes. If you have samples from more than one array design in your experiment, it is possible to submit only one experiment. If you wish to do this, please [contact GEA team](/contact-ddbj-e.html).
 
 [« Close](javascript:void(0)){: .close-content-btn}
 </div>
@@ -269,9 +269,9 @@ You can delete an un-submitted GEA submission at "Delete submission".
 
 ### BioProject <a name="BioProject"></a>
 
-Select a submitted project registered in your account. If a BioProject is not registered, please go to the [BioProject submission site](/bioproject/services/index.html#bioproject-submission) and submit a project.
+Select a submitted project registered in your account. If a BioProject is not registered, please go to the [BioProject submission site](/bioproject/submission-e.html#bioproject-submission) and submit a project.
 
-To use a project obtained in the other account, please [contact GEA team](/contact-e.html).
+To use a project obtained in the other account, please [contact GEA team](/contact-ddbj-e.html).
 
 {::nomarkdown}
 {% include image.html url="books/gea-bp.jpg" caption="Select a BioProject for the GEA experiment" class="w550" %}
@@ -279,9 +279,9 @@ To use a project obtained in the other account, please [contact GEA team](/conta
 
 ### BioSample <a name="BioSample"></a>
 
-Select submitted BioSamples registered in your account. If BioSamples are not registered, please go to the [BioSample submission site](/biosample/services/index.html#biosample-submission) and submit samples.
+Select submitted BioSamples registered in your account. If BioSamples are not registered, please go to the [BioSample submission site](/biosample/submission-e.html#biosample-submission) and submit samples.
 
-To use samples obtained in the other account, please [contact GEA team](/contact-e.html).
+To use samples obtained in the other account, please [contact GEA team](/contact-ddbj-e.html).
 
 {::nomarkdown}
 {% include image.html url="books/gea-bs.jpg" caption="Select BioSamples for the GEA experiment" class="w550" %}
@@ -294,7 +294,7 @@ Enter information for [IDF (Investigation Description Format)](/gea/metadata-e.h
 [Example IDF](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=0)
 
   - Protocol: Pre-checked protocols are mandatory.
-  - Publication: Describe associated publications by PubMed ID or DOI. For unpublished manuscript, please [inform us](/contact-e.html) the publication ID after assignment.
+  - Publication: Describe associated publications by PubMed ID or DOI. For unpublished manuscript, please [inform us](/contact-ddbj-e.html) the publication ID after assignment.
   - Array Design: When an array design is available in [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA, enter an array design accession number "A-XXXX-n". When an array design is not available, [register a new array design](/gea/adf-e.html) by uploading an array design file into the GEA submission directory.
   - Data File Type: Raw and processed data files are required for microarray experiment submission. We strongly recommend to submitting raw and processed data file per sample. [Accepted Data Files Formats for microarray experiment](/gea/datafile-e.html#array_data).
 
@@ -406,22 +406,22 @@ You can allow reviewers access to private records by [communicating a reviewer a
 <tr>
 <td>Sequence Read Archive (DRA)</td>
 <td><a href="https://ddbj.nig.ac.jp/D-way/">Login D-way and update metadata</a><br />
-<a href="/contact-e.html">To add or delete sequencing data, request updates from web form</a></td>
+<a href="/contact-ddbj-e.html">To add or delete sequencing data, request updates from web form</a></td>
 </tr>
 <tr>
 <td>Genomic Expression Archive (GEA)</td>
-<td><a href="/contact-e.html">Request updates from web form</a></td>
+<td><a href="/contact-ddbj-e.html">Request updates from web form</a></td>
 </tr>
 <tr>
 <td>BioProject/BioSample</td>
-<td><a href="/contact-e.html">Request updates from web form</a></td>
+<td><a href="/contact-ddbj-e.html">Request updates from web form</a></td>
 </tr>
 </tbody>
 </table>
 
 ### Withdraw archived objects <a name="withdraw-archived-objects"></a>
 
-To withdrawing archived Experiment, please [contact us](/contact-e.html).
+To withdrawing archived Experiment, please [contact us](/contact-ddbj-e.html).
 
 ## Supplement: MD5<a name="supplement-md5"></a>
 

@@ -39,7 +39,7 @@ Transcriptome の各段階と登録データの種別の対応を示します。
 下図では典型的な手法の各段階を模式的に示しています。  
 なお、次世代シークエンサをご使用の際は、[BioProject](/bioproject/index.html) と [BioSample](/biosample/index.html) にも ご登録ください。
 
-**重要:**[ヒトを対象とした研究データの登録について](/service-policy.html#human)
+**重要:**[ヒトを対象とした研究データの登録について](/policies.html#human)
 
 ![]({{ site.baseurl }}/assets/images/ddbj/transcriptome.png)
 

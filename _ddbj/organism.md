@@ -72,7 +72,7 @@ Taxonomy database の間違いなどを発見された場合は、[ご連絡](/c
 
 ## 生物名入力におけるカテゴリー (Category) について<a name="deasy"></a> 
 
-DDBJ が運用している WWW 経由の[塩基配列登録システム](/ddbj/websub-j.html)では登録の際に、生物名入力において Category を選択します。  
+DDBJ が運用している WWW 経由の[塩基配列登録システム](/ddbj/websub.html)では登録の際に、生物名入力において Category を選択します。  
 下図に Category を判断するためのフローチャートを示します。
 
 ![]({{ site.baseurl }}/assets/images/ddbj/organism-j.png){:.w600}
@@ -252,7 +252,7 @@ taxonomy database 登録申請のための参考情報
 
 環境サンプル (environmental sample) とは、PCR、DGGE、あるいは、その他の方法で直接、分子を単離した環境上のサンプルに由来する配列です。  
 よく混同されますが、<span class="red">環境サンプルとは「野生型」という意味ではありません。</span>  
-環境サンプルの定義については[環境サンプルの説明](/ddbj/env-j.html)もご参照ください。  
+環境サンプルの定義については[環境サンプルの説明](/ddbj/env.html)もご参照ください。  
 <span class="red">環境サンプル由来の混合培養系も、環境サンプルと扱います。</span>
 
 環境サンプルの場合、原則、判明している範囲での lineage に "uncultured" を冠して「生物名」を記載します。

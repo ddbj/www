@@ -36,9 +36,9 @@ Package and attributes
     and names with “uncultured” can not be used. Use an organism name
     same as SAG entry.
   - Describe identification or description of the specific individual in
-    [isolate](/biosample/attribute.html?all=all#isolate) and isolation
+    [isolate](/biosample/attribute-e.html?all=all#isolate) and isolation
     souce in
-    [isolation\_source](/biosample/attribute.html?all=all#isolation_source).
+    [isolation\_source](/biosample/attribute-e.html?all=all#isolation_source).
   - As a keyword, add
     [sample\_type](/biosample/attribute-e.html?all=all#sample_type)=”single
     amplified genome”.
@@ -75,9 +75,9 @@ Package and attributes
     group is the combination of the individual BioSamples:
     SAMD00192892-SAMD00192901.”
   - Describe identification or description of the specific individual in
-    [isolate](/biosample/attribute.html?all=all#isolate) and isolation
+    [isolate](/biosample/attribute-e.html?all=all#isolate) and isolation
     souce in
-    [isolation\_source](/biosample/attribute.html?all=all#isolation_source).
+    [isolation\_source](/biosample/attribute-e.html?all=all#isolation_source).
 
 ## Real-world examples <a name="real-examples"></a>
 

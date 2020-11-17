@@ -9,7 +9,7 @@ lang: en
 {::options parse_block_html="true" /}
 <div class="attention red">
 The DRA metadata submission tool cannot describe technical reads (adapter, primer and barcode sequences). When sequencing data contain technical reads to be submitted,
-[submitters need to create ExperimentXML files](/dra/services/index.html#create-metadata-in-xml-files)
+[submitters need to create ExperimentXML files](/dra/submission.html#create-metadata-in-xml-files)
 and describe technical reads in the \<SPOT_DESCRIPTOR>.
 </div>
 
@@ -56,7 +56,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/services/index.html#Instrument)
+[Platform](/dra/submission.html#Instrument)
 
 | Platform | Instrument Model    |
 | -------- | ------------------- |
@@ -127,7 +127,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/services/index.html#Instrument)
+[Platform](/dra/submission.html#Instrument)
 
 | Platform | Instrument Model    |
 | -------- | ------------------- |
@@ -168,7 +168,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/services/index.html#Instrument)
+[Platform](/dra/submission.html#Instrument)
 
 | Platform | Instrument Model             | Sequence Length |
 | -------- | ---------------------------- | --------------- |
@@ -217,7 +217,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/services/index.html#Instrument)
+[Platform](/dra/submission.html#Instrument)
 
 | Platform | Instrument Model             | Sequence Length |
 | -------- | ---------------------------- | --------------- |
@@ -260,7 +260,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/services/index.html#Instrument)
+[Platform](/dra/submission.html#Instrument)
 
 | Platform  | Instrument Model    | Sequence Length |
 | --------- | ------------------- | --------------- |
@@ -310,7 +310,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/services/index.html#Instrument)
+[Platform](/dra/submission.html#Instrument)
 
 | Platform  | Instrument Model    | Sequence Length |
 | --------- | ------------------- | --------------- |
@@ -351,7 +351,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/services/index.html#Instrument)
+[Platform](/dra/submission.html#Instrument)
 
 | Platform    | Instrument Model       | Sequence Length |
 | ----------- | ---------------------- | --------------- |
@@ -388,7 +388,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/services/index.html#Instrument)
+[Platform](/dra/submission.html#Instrument)
 
 | Platform     | Instrument Model |
 | ------------ | ---------------- |
@@ -441,7 +441,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/services/index.html#Instrument)
+[Platform](/dra/submission.html#Instrument)
 
 | Platform     | Instrument Model |
 | ------------ | ---------------- |

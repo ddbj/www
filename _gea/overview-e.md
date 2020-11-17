@@ -30,14 +30,14 @@ Microarray-based and sequencing-based submissions should follow the [MIAME](http
 <li>HiC-seq</li>
 <li>methyl-seq, bisulfite-seq</li>
 </ul>
-<p>If you have questions about whether GEA can accept your data type, please <a href="/contact-e.html">contact us</a>.</p></td>
+<p>If you have questions about whether GEA can accept your data type, please <a href="/contact-ddbj-e.html">contact us</a>.</p></td>
 <td><ul>
 <li>human data that require controlled access (submit to <a href="/jga/index-e.html">JGA</a>)</li>
-<li>transcript assemblies (submit directly to <a href="/dra/services/index.html">DRA</a> and the <a href="/ddbj/tsa-e.html">Transcriptome Shotgun Assembly of DDBJ</a>)</li>
-<li>whole genome sequencing (submit directly to <a href="/dra/services/index.html">DRA</a> and <a href="/ddbj/wgs-e.html">WGS of DDBJ</a> )</li>
-<li>metagenomic sequencing (submit directly to <a href="/dra/services/index.html">DRA</a> and <a href="/ddbj/environmental-e.html">environmental sequences of DDBJ</a>)</li>
-<li>resequencing, variation or copy number projects (submit directly to <a href="/dra/services/index.html">DRA</a> and the appropriate <a href="https://www.ncbi.nlm.nih.gov/snp/docs/submission/hts_launch_and_introductory_material/">NCBI (human-only)</a> and <a href="https://www.ebi.ac.uk/eva/">EBI variation resources</a>)</li>
-<li>survey sequencing, whole exome (submit directly to <a href="/dra/services/index.html">DRA</a>)</li>
+<li>transcript assemblies (submit directly to <a href="/dra/submission-e.html">DRA</a> and the <a href="/ddbj/tsa-e.html">Transcriptome Shotgun Assembly of DDBJ</a>)</li>
+<li>whole genome sequencing (submit directly to <a href="/dra/submission-e.html">DRA</a> and <a href="/ddbj/wgs-e.html">WGS of DDBJ</a> )</li>
+<li>metagenomic sequencing (submit directly to <a href="/dra/submission-e.html">DRA</a> and <a href="/ddbj/environmental-e.html">environmental sequences of DDBJ</a>)</li>
+<li>resequencing, variation or copy number projects (submit directly to <a href="/dra/submission-e.html">DRA</a> and the appropriate <a href="https://www.ncbi.nlm.nih.gov/snp/docs/submission/hts_launch_and_introductory_material/">NCBI (human-only)</a> and <a href="https://www.ebi.ac.uk/eva/">EBI variation resources</a>)</li>
+<li>survey sequencing, whole exome (submit directly to <a href="/dra/submission-e.html">DRA</a>)</li>
 <li>metabolomics and proteomics data (submit proteomics data to <a href="https://jpostdb.org/">jPOST</a>)</li>
 </ul>
 <p>For information on how to submit these types of data, please refer to the <a href="/services/index.html">DDBJ website</a>.</p></td>
@@ -67,7 +67,7 @@ Microarray-based and sequencing-based submissions should follow the [MIAME](http
 [Submit sequencing experiment](/gea/submit-sequence-e.html)
 
   - [Metadata IDF and SDRF](/gea/metadata-e.html)
-  - [Raw data (should be pre-registered to](/gea/datafile-e.html#seq_raw) [DRA](/dra/services/index.html))
+  - [Raw data (should be pre-registered to](/gea/datafile-e.html#seq_raw) [DRA](/dra/submission-e.html))
   - [Processed data](/gea/datafile-e.html#seq_proc)
 
 ## Accession numbers <a name="acc"></a>
@@ -81,7 +81,7 @@ Accessions numbers are generated when sufficient metadata and data files are pro
 
 ## Data release <a name="rel"></a>
 
-The data can be kept private until your paper is published. You can set the hold date for a maximum of 4 years and can change it. Registered records are released according to the [Data Release Policy](/documents/documents/data-release-policy-e.html).
+The data can be kept private until your paper is published. You can set the hold date for a maximum of 4 years and can change it. Registered records are released according to the [Data Release Policy](/documents/data-release-policy-e.html).
 
 ## Reviewer access <a name="reviewer-access"></a>
 
@@ -89,4 +89,4 @@ Submitters are able to generate an access token for journal reviewers after a pr
 
 ## Update <a name="update"></a>
 
-After submitting data to GEA, please [contact us](/contact-e.html) to update or withdraw your data.
+After submitting data to GEA, please [contact us](/contact-ddbj-e.html) to update or withdraw your data.

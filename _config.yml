@@ -99,6 +99,8 @@ collections:
     output: true
   documents:
     output: true
+  ddbj:
+    output: true
 
 defaults:
   - scope:

@@ -13,7 +13,7 @@ lang: en
 - Send an automatic  
   confirmation e-mail
 - Send a work completion e-mail  
-  ([within the next 5 working days](/calendar-e.html))
+  within the next 5 working days
 
 <!-- end list -->
 
@@ -24,7 +24,7 @@ lang: en
 
 ### Application Form for Data Update Requests
 
-※[How can I contact you when the form is not available?](/faq/en/index-e.html#data-update-request-form-not-displayed)
+※[How can I contact you when the form is not available?](/faq/en/data-update-request-form-not-displayed)
 
 <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgkl8aSa6ZNpzQfUJRaM0r_ipF0DoOLqutjF1BAmM7PK5PQw/viewform?embedded=true" width="760" height="2000" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>-->
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdcMBbaxAD2gFRRgBLYJaRKVrPmr7Ctt42u9J22FErNuNqzSQ/viewform?embedded=true" width="760" height="2000" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>

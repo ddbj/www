@@ -245,7 +245,7 @@ protein アクセッション番号) を記載するようにしてください�
 ### 生データファイル <a name="seq_raw"></a> 
 
 次世代シークエンスの生データは DDBJ Sequence Read Archive (DRA) に事前登録する必要があります。[DRA
-に登録可能なファイルリスト](/dra/services/index.html#run-data-files)をご覧ください。
+に登録可能なファイルリスト](/dra/submission.html#run-data-files)をご覧ください。
 
 ### 解析データファイル <a name="seq_proc"></a>
 

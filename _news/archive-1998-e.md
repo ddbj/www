@@ -62,7 +62,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn981118"><a href="#wn981118">GIB; Rickettsia prowazekii and new function</a></h2>
   <div class="news_date">November 18,1998</div>
-  <div class="news_content"><dd><a href="/services/services/past-services-e.html#gib">The Genome Inforamtion Broker (GIB)</a> now includes the data of <i>Rickettsia prowazekii</i>.<br><dd>In addition, a new function to search 19 genomes at once either by ORFs/genes/productsis or BLAST is now available.<br><dd>You can find them from http://mol.genes.nig.ac.jp/gib/ .</dd></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">The Genome Inforamtion Broker (GIB)</a> now includes the data of <i>Rickettsia prowazekii</i>.<br><dd>In addition, a new function to search 19 genomes at once either by ORFs/genes/productsis or BLAST is now available.<br><dd>You can find them from http://mol.genes.nig.ac.jp/gib/ .</dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -188,7 +188,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn980722"><a href="#wn980722">Treponema pallidum and Chlamydia trachomatis Genome</a></h2>
   <div class="news_date">July 22,1998</div>
-  <div class="news_content"><dd>The Genome Inforamtion Broker (GIB) now includes the data of Treponema pallidum and Chlamydia trachomatis.<br><dd>You can find them from <a href="/services/services/past-services-e.html#gib">here</a>.</dd></dd></div>
+  <div class="news_content"><dd>The Genome Inforamtion Broker (GIB) now includes the data of Treponema pallidum and Chlamydia trachomatis.<br><dd>You can find them from <a href="/services/past-services-e.html#gib">here</a>.</dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>

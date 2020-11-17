@@ -13,7 +13,7 @@ DDBJ via [Nucleotide Sequence Submission System](/ddbj/web-submission-e.html)
 <span style="font-weight:bold">MSS</span>: Data submission to DDBJ via
 [Mass Submission System](/ddbj/mss-e.html)  
 <span style="font-weight:bold">Submitter</span>: Number of groups of
-[submitters](/ddbj/services/index.html#submitter)  
+[submitters](/ddbj/submission.html#submitter)  
 <span style="font-weight:bold">Session</span>: Number of times to load
 submitted data into DDBJ  
 <span style="font-weight:bold">Japan</span>: Submitted from Japanese

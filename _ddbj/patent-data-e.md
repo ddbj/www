@@ -26,8 +26,8 @@ imported into INSD via EMBL-Bank/ENA and GenBank, respectively.
 \* The procedure to import KIPO sequence data into INSD through DDBJ was
 started from February 2008.  
 You can distinguish the nucleotide sequence data included in patent
-applications by [prefix](/prefix-e.html) of [accession
-numbers](/documents/accessions.html).
+applications by [prefix](/documents/prefix-e.html) of [accession
+numbers](/documents/accessions-e.html).
 
 The nucleotide sequence data included in patent applications can be
 searched or browsed from the following DDBJ services. Please note that

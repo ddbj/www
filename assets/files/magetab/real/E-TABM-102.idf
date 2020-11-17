@@ -1,0 +1,33 @@
+"Investigation Title"	"Transcription profiling of wild-type and ATF3 -/-mouse bone marrow macrophages stimulated with lipopolysaccharide after 1, 2, 4, 8 and 24 hours"			
+"Experimental Design"	compound_treatment_design	genetic_modification_design	time_series_design	
+"Experimental Design Term Source REF"	"MGED Ontology"	"MGED Ontology"	"MGED Ontology"	
+"Experimental Factor Name"	COMPOUND	DOSE	TIME	GENOTYPE
+"Experimental Factor Type"	compound	dose	time	genotype
+				
+"Person Last Name"	Marzolf			
+"Person First Name"	Bruz			
+"Person Mid Initial"				
+"Person Affiliation"	"Institute for Systems Biology"			
+"Person Roles"	submitter			
+"Person Roles Term Source REF"	"MGED Ontology"			
+				
+"Quality Control Types"	biological_replicate			
+"Quality Control Term Source REF"	"MGED Ontology"			
+"Public Release Date"	"2006-05-30"			
+				
+Comment[ArrayExpressSubmissionDate]	"2006-05-30"			
+				
+"Publication Author List"	"Mark Gilchrist; Vesteinn Thorsson; Bin Li; Alistair G. Rust; Martin Korb; Kathleen Kennedy; Tsonwin Hai; Hamid Bolouri and Alan Aderem"			
+"Publication Title"	"Systems biology approaches identify ATF3 as a negative regulator of Toll-like receptor 4"			
+"Experiment Description"	"Time course data from lipopolysaccharide-stimulated wild-type and ATF3 -/- mouse bone marrow macrophages were collected to investigate the transcriptional network in Toll-like recepter 4-activated macrophages."			
+				
+"Protocol Name"	P-TABM-gilchrist1	P-TABM-gilchrist2		
+"Protocol Type"	grow	specified_biomaterial_action		
+"Protocol Description"	"Flush femurs from C57BL/6 mice (Jackson Laboratories) with complete RPMI (RPMI 1640 supplemented with 10% FCS, 2mM L-glutamine, 100 IU/mL penicillin and 100ug/mL streptomycin, all from Cellgro, Mediatech, except the FCS which is from from Hyclone). Plate bone marrow cells on non-tissue culture treated plastic in complete RPMI supplemented with recombinant human M-CSF (rhM-CSF) at 50 ng/mL (Chiron). On day 3, wash the cells two times with complete RPMI and then grow for 4 more days in complete RPMI supplemented with 50 ng/mL of rhM-CSF."	"On day 7, stimulate the cells with 10 ng/mL lipopolysaccharide (S. Minnesota, List) for 1, 2, 4, 8 and 24 hours without changing the media."		
+"Protocol Term Source REF"	"MGED Ontology"	"MGED Ontology"		
+				
+"SDRF File"	E-TABM-102_sdrf.txt			
+				
+"Term Source Name"	"MGED Ontology"	"ArrayExpress"	"Cell Type Ontology"	
+"Term Source File"	http://mged.sourceforge.net/ontologies/MGEDontology.php	http://www.ebi.ac.uk/arrayexpress/	http://obo.cvs.sourceforge.net/*checkout*/obo/obo/ontology/anatomy/cell_type/cell.obo	
+"Term Source Version"	"1.3.1.1"			

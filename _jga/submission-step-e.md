@@ -25,7 +25,7 @@ For JGA overview, see [this slide (Japanese only)](https://drive.google.com/file
 
 ### Enter metadata into the excel <a name="enter-metadata-into-excel"></a>
 
-Download and fill in the metadata in English. For the JGA metadata, see [this page](/jga/services/index.html).
+Download and fill in the metadata in English. For the JGA metadata, see [this page](/jga/download-e.html).
 
 [![JGA metadata excel]({{ site.baseurl }}/assets/images/parts/download.png "JGA metadata excel"){:.w40}]({{ site.baseurl }}/assets/files/submission/JGA_metadata.xlsx)
 
@@ -54,7 +54,7 @@ Download the latest JGA submission tool (last updated: 2018-04-16，v3.5.0) and 
 
 {::options parse_block_html="true" /}
 <div class="attention red">
-Execute in the Java 8. In the Java 7, the tool does not work. [How to use in the proxy envinronment.](#How_to_use_in_the_proxy_environment)
+Execute in the Java 8. In the Java 7, the tool does not work. [How to use in the proxy envinronment.](#use-proxy-environment)
 </div>
 
 #### Windows <a name="Windows"></a>
@@ -91,7 +91,7 @@ In the Submission ID of the right window, select the JGA submission id (for exam
 
 The excel file is uploaded to the JGA server securely. Ignore the error messages in the bottom window.
 
-After uploading the excel, contact the [JGA team](/contact-e.html).
+After uploading the excel, contact the [JGA team](/contact-ddbj-e.html).
 
 {::nomarkdown}
 {% include image.html url="submission/jgasub3.jpg" caption="Uploaded excel file" class="w500" %}
@@ -150,13 +150,13 @@ Select the downloaded XML and data files and upload them to the target submissio
 Submitted metadata and data files are validated and the data files are uploaded in the encrypted form.
 
   - The metadata XML files are validated against [JGA XML schema](https://github.com/ddbj/pub/tree/master/docs/jga).
-  - [The relationships between each metadata object](/jga/services/index.html#metadata)
+  - [The relationships between each metadata object](/jga/download-e.html#metadata)
   - Existence of the files listed in the Data and Analysis XML
-  - Checksum validation before and after uploading. [MD5](/dra/services/index.html#supplement-md5)
+  - Checksum validation before and after uploading. [MD5](/dra/submission-e.html#supplement-md5)
 
-If the all validation steps succeed, "\[INFO\] upload succeeded" is displayed in the bottom window. The [JGA accessions](/jga/services/index.html#accession) will be issued after reviewing.
+If the all validation steps succeed, "\[INFO\] upload succeeded" is displayed in the bottom window. The [JGA accessions](/jga/download-e.html#accession) will be issued after reviewing.
 
-When an error message is shown, contact [the JGA team](/contact-e.html).
+When an error message is shown, contact [the JGA team](/contact-ddbj-e.html).
 
 {::nomarkdown}
 {% include image.html url="submission/jgasub5.jpg" caption="Validated metadata XML and data files" class="w500" %}

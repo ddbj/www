@@ -16,7 +16,7 @@ lang: en
 <p>Please select either of following ways. </p>
 <ul>
   <li>In this time, canceling the request for update, when you can publish updated data, contact us again. </li>
-  <li>Submit the updated data as a new data with <a href="/ddbj/services/index.html#holddate">hold date</a>. When the new data is published, the accession number of the old data will become a secondary accession number for the new data. <br># Please inform us during submitting the new data to link it to the old data. </li>
+  <li>Submit the updated data as a new data with <a href="/ddbj/submission.html#holddate">hold date</a>. When the new data is published, the accession number of the old data will become a secondary accession number for the new data. <br># Please inform us during submitting the new data to link it to the old data. </li>
 </ul>
 <dl><dt>Reference</dt>
   <dd>

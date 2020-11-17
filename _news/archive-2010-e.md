@@ -36,7 +36,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn101220"><a href="#wn101220">DDBJ will terminate accepting submission by 'Sequin'</a></h2>
   <div class="news_date">December 20,2010</div>
-  <div class="news_content">DDBJ has accepted nucleotide sequence data submissions by SAKURA, MSS(Mass Submission System), or 'Sequin'. However, DDBJ will terminate accepting submission by 'Sequin' as of the end of January, 2011. Alternatively, by using SAKURA or MSS, you can submit your data easily and quickly by far. Please use SAKURA or MSS hereafter.Please use SAKURA or Mass Submission System (MSS) for your future submission to DDBJ. <strong>Reference:</strong> <a href="/ddbj/services/index.html#flow">Workflow of the data submission to DDBJ</a>(A) <a href="http://sakura.ddbj.nig.ac.jp/top-e.html" target="_blank">SAKURA</a>(B) <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a> If you need 'Sequin' submission by unavoidable reason, please send your data to GenBank.<strong>Reference:</strong> <a href="http://www.ncbi.nlm.nih.gov/Sequin/" target="_blank">http://www.ncbi.nlm.nih.gov/Sequin/</a>Thank you very much for your understanding and cooperation.</div>
+  <div class="news_content">DDBJ has accepted nucleotide sequence data submissions by SAKURA, MSS(Mass Submission System), or 'Sequin'. However, DDBJ will terminate accepting submission by 'Sequin' as of the end of January, 2011. Alternatively, by using SAKURA or MSS, you can submit your data easily and quickly by far. Please use SAKURA or MSS hereafter.Please use SAKURA or Mass Submission System (MSS) for your future submission to DDBJ. <strong>Reference:</strong> <a href="/ddbj/submission.html#flow">Workflow of the data submission to DDBJ</a>(A) <a href="http://sakura.ddbj.nig.ac.jp/top-e.html" target="_blank">SAKURA</a>(B) <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a> If you need 'Sequin' submission by unavoidable reason, please send your data to GenBank.<strong>Reference:</strong> <a href="http://www.ncbi.nlm.nih.gov/Sequin/" target="_blank">http://www.ncbi.nlm.nih.gov/Sequin/</a>Thank you very much for your understanding and cooperation.</div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Maintenance</span>
@@ -216,7 +216,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn100902_2"><a href="#wn100902_2">The Report for the 23rd International Collaborators Meeting</a></h2>
   <div class="news_date">September 02,2010</div>
-  <div class="news_content"><dl><dd>International Nucleotide Sequence Database Collaboration (INSDC), consisted of DDBJ, EBI and NCBI, hold the international collaborators meeting every year.In 2010, the meeting was held at EBI in UK, 19-21 May, to discuss practical matters to maintain and update nucleotide sequence data archives; DDBJ, EMBL-Bank, GenBank, Sequence Read Archive and Trace Archive. As a result of travel disruptions relating to the Icelandic volcano, the meeting was shorter than expected. Despite these difficulties, we believe that we made significant progress at the meeting. The outcomes of the meeting are summarized <a href="/activities/index-e.html#2010">here.</a> </dd></dl></div>
+  <div class="news_content"><dl><dd>International Nucleotide Sequence Database Collaboration (INSDC), consisted of DDBJ, EBI and NCBI, hold the international collaborators meeting every year.In 2010, the meeting was held at EBI in UK, 19-21 May, to discuss practical matters to maintain and update nucleotide sequence data archives; DDBJ, EMBL-Bank, GenBank, Sequence Read Archive and Trace Archive. As a result of travel disruptions relating to the Icelandic volcano, the meeting was shorter than expected. Despite these difficulties, we believe that we made significant progress at the meeting. The outcomes of the meeting are summarized <a href="/activities/icm/2010-e">here.</a> </dd></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -378,7 +378,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn100514"><a href="#wn100514">DDBJ/EMBL/GenBank Feature Table Definition revised</a></h2>
   <div class="news_date">May 14,2010</div>
-  <div class="news_content"><dl><dd><a href="/ddbj/full_index-e.html">Feature Table Definition (FT-Doc)</a> is the common annotation manual among the three banks (DDBJ, EMBL-Bank, GenBank) for the construction of the DDBJ/EMBL/GenBank International Nucleotide Sequence Database. Feature Table Definition was revised in April 2010. Version is 8.3. </dd></dl></div>
+  <div class="news_content"><dl><dd><a href="/ddbj/feature-table-e.html">Feature Table Definition (FT-Doc)</a> is the common annotation manual among the three banks (DDBJ, EMBL-Bank, GenBank) for the construction of the DDBJ/EMBL/GenBank International Nucleotide Sequence Database. Feature Table Definition was revised in April 2010. Version is 8.3. </dd></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -486,7 +486,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wh100326"><a href="#wh100326">DDBJ Rel. 81 Completed</a></h2>
   <div class="news_date">March 26,2010</div>
-  <div class="news_content"><dl><dd><ul><li>116,720,237 entries:    112,394,932,676 bases</li><li>TPA category data have been excluded from DDBJ periodical release. For details, please refer the <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.81.txt">DDBJ Release Note</a>.</li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul><strong>Future DDBJ release schedules</strong><ul><li>DDBJ Rel. 83 is going to be release in December 2010.</li><li><a href="/ddbj/full_index-e.html">Feature Table Definition(FT-Doc)</a> is revised in April 2010.</li></ul></dd></dl></div>
+  <div class="news_content"><dl><dd><ul><li>116,720,237 entries:    112,394,932,676 bases</li><li>TPA category data have been excluded from DDBJ periodical release. For details, please refer the <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.81.txt">DDBJ Release Note</a>.</li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul><strong>Future DDBJ release schedules</strong><ul><li>DDBJ Rel. 83 is going to be release in December 2010.</li><li><a href="/ddbj/feature-table-e.html">Feature Table Definition(FT-Doc)</a> is revised in April 2010.</li></ul></dd></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -594,7 +594,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn100210"><a href="#wn100210">Homology Search and ClustalW temporary down</a></h2>
   <div class="news_date">February 10,2010</div>
-  <div class="news_content"><dl><dd>DDBJ's <a href="/services-e.html" target="_blank">Homology Search and ClustalW services provided via WWW</a> is temporarily unavailable in the following schedule for the system maintenance.<ul><li><strong>Date &amp; Time:</strong> Feb. 16, 2010 (Tue.) at 9:00 - 17:00 (JST) (We will announce on this page when it resumes.)</li><li><strong>Unavailable services:</strong>  - Homology Search (FASTA, BLAST, PSI-BLAST, SSEARCH, HMMPFAM)  - ClustalW</li></ul>Thank you for your cooperation. </dd><dd><span class="red">Maintenance works was finished. Thank you for your cooperation.(Feb. 16, 2010 at 17:00 JST)</span> </dd></dl></div>
+  <div class="news_content"><dl><dd>DDBJ's <a href="/services/index-e.html" target="_blank">Homology Search and ClustalW services provided via WWW</a> is temporarily unavailable in the following schedule for the system maintenance.<ul><li><strong>Date &amp; Time:</strong> Feb. 16, 2010 (Tue.) at 9:00 - 17:00 (JST) (We will announce on this page when it resumes.)</li><li><strong>Unavailable services:</strong>  - Homology Search (FASTA, BLAST, PSI-BLAST, SSEARCH, HMMPFAM)  - ClustalW</li></ul>Thank you for your cooperation. </dd><dd><span class="red">Maintenance works was finished. Thank you for your cooperation.(Feb. 16, 2010 at 17:00 JST)</span> </dd></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Maintenance</span>
@@ -675,7 +675,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn100104"><a href="#wn100104">DDBJ/EMBL/GenBank Feature Table Definition revised</a></h2>
   <div class="news_date">January 04,2010</div>
-  <div class="news_content"><dl><dd><a href="/ddbj/full_index-e.html">Feature Table Definition(FT-Doc)</a> is the common annotation manual among the three banks(DDBJ, EMBL-Bank, GenBank) for the construction of the DDBJ/EMBL/GenBank International Nucleotide Sequence Database. Following the decision at an <a href="/activities/index-e.html">International Collaborators Meeting(ICM)</a> held annually in May, this FT-Doc is updated every year. In December 2009, FT-Doc is updated, based on <a href="/activities/index-e.html#2009">the 22nd International Collaborators Meeting</a>. </dd></dl> <!-- ########## end one news --><!-- ########## start one news --></div>
+  <div class="news_content"><dl><dd><a href="/ddbj/feature-table-e.html">Feature Table Definition(FT-Doc)</a> is the common annotation manual among the three banks(DDBJ, EMBL-Bank, GenBank) for the construction of the DDBJ/EMBL/GenBank International Nucleotide Sequence Database. Following the decision at an <a href="/activities/index-e.html">International Collaborators Meeting(ICM)</a> held annually in May, this FT-Doc is updated every year. In December 2009, FT-Doc is updated, based on <a href="/activities/icm/2009-e">the 22nd International Collaborators Meeting</a>. </dd></dl> <!-- ########## end one news --><!-- ########## start one news --></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>

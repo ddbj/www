@@ -25,8 +25,8 @@ items:
       en: http://ddbj.nig.ac.jp/arsa/
       ja: http://ddbj.nig.ac.jp/arsa/
     help:
-      en: arsa-help-e
-      ja: arsa-help
+      en: arsa-e
+      ja: arsa
     wabi: https://www.ddbj.nig.ac.jp/services/arsa.html
     description:
       en: DDBJ annotated/assembled data retrieval by accession numbers and keywords
@@ -61,8 +61,8 @@ items:
       en: http://ddbj.nig.ac.jp/tx_search/?lang=en
       ja: http://ddbj.nig.ac.jp/tx_search/?lang=ja
     help:
-      en: txsearch-help-e
-      ja: txsearch-help
+      en: txsearch-e
+      ja: txsearch
     description:
       en: Taxonomy database search
       ja: 生物分類データベース検索
@@ -80,8 +80,8 @@ items:
       en: http://blast.ddbj.nig.ac.jp/blastn?lang=en
       ja: http://blast.ddbj.nig.ac.jp/blastn?lang=ja
     help:
-      en: blast-help-e
-      ja: blast-help
+      en: blast-e
+      ja: blast
     wabi: https://www.ddbj.nig.ac.jp/services/wabi-blast.html
     description:
       en: Nucleotide homology search
@@ -142,8 +142,8 @@ items:
       en: http://ddbj.nig.ac.jp/vecscreen/
       ja: http://ddbj.nig.ac.jp/vecscreen/vecscreen?lang=ja
     help:
-      en: vecscreen-help-e
-      ja: vecscreen-help
+      en: vecscreen-e
+      ja: vecscreen
     wabi: https://www.ddbj.nig.ac.jp/services/wabi-vecscreen.html
     description:
       en: Vector search to screen contamination in nucleic acid sequences.
@@ -162,8 +162,8 @@ items:
       en: https://www.ddbj.nig.ac.jp/services/wabi-mafft.html
       ja: https://www.ddbj.nig.ac.jp/services/wabi-mafft.html
     help:
-      en: wabi_clustalw-help-e
-      ja: wabi_clustalw-help
+      en: clustalw-e
+      ja: clustalw
     wabi: https://www.ddbj.nig.ac.jp/services/wabi-clustalw.html
     description:
       en: Multiple alignment and tree-making
@@ -178,8 +178,8 @@ items:
       en: http://clustalw.ddbj.nig.ac.jp/index.php?lang=en
       ja: http://clustalw.ddbj.nig.ac.jp/index.php?lang=ja
     help:
-      en: wabi_mafft-help-e
-      ja: wabi_mafft-help
+      en: wabi-mafft-e
+      ja: wabi-mafft
     wabi: https://www.ddbj.nig.ac.jp/services/wabi-mafft.html
     description:
       en: Fast multiple alignment tool for nucleotide and amino acid sequences.
@@ -193,7 +193,7 @@ items:
     formal_name: Web API for Biology
     service_link:
       en: https://www.ddbj.nig.ac.jp/wabi-e.html
-      ja: https://www.ddbj.nig.ac.jp/services/services/services/wabi.html
+      ja: https://www.ddbj.nig.ac.jp/services/wabi.html
     help:
       en: wabi-e
       ja: wabi

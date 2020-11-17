@@ -36,7 +36,7 @@ Create separate BioProject for each principal and alternate pseudohaplotype and 
 
 Because the sample is shared by pseudohaplotypes, create single BioSample.
 
-  - Select [MIGS](/biosample/services/index.html#Genomic_Sequences_Sample)
+  - Select [MIGS](/biosample/submission-e.html#Genomic_Sequences_Sample)
     package.
   - Create a common BioSample for principal and alternate
     pseudohaplotype.
@@ -54,16 +54,16 @@ Submit the principal and the alternate pseudohaplotype sequences.
 
   - Principal pseudohaplotype
       - Reference the BioProject 1 (Principal) in
-        [DBLINK](”/ddbj/file-format-e.html#dblink”).
+        [DBLINK](/ddbj/file-format-e.html#dblink).
       - Add the pre-defined comment in
-        [ST\_COMMENT](”/ddbj/file-format-e.html#comment”).  
+        [ST\_COMMENT](/ddbj/file-format-e.html#comment).  
         Genome-Assembly-Data ST\_COMMENT: Diploid :: Principal
         Pseudohaplotype
   - Alternate pseudohaplotype
       - Reference the BioProject 2 (Alternate) in
-        [DBLINK](”/ddbj/file-format-e.html#dblink”).
+        [DBLINK](/ddbj/file-format-e.html#dblink).
       - Add the pre-defined comment in
-        [ST\_COMMENT](”/ddbj/file-format-e.html#comment”).  
+        [ST\_COMMENT](/ddbj/file-format-e.html#comment).  
         Genome-Assembly-Data ST\_COMMENT: Diploid :: Alternate
         Pseudohaplotype
 

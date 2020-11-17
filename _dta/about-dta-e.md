@@ -8,7 +8,7 @@ lang: en
 
 ## Contact <a name="contact"></a>
 
-Please contact us from [Message form](/contact-e.html).
+Please contact us from [Message form](/contact-ddbj-e.html).
 
 {::options parse_block_html="true" /}
 <address>
@@ -20,4 +20,4 @@ Yata, Mishima, Shizuoka 411-8540, JAPAN
 
 </address>
 
-[Ask questions about DDBJ services.](/contact-e.html#to-ddbj)
+[Ask questions about DDBJ services.](/contact-ddbj-e.html#to-ddbj)

@@ -16,7 +16,7 @@ lang: ja
 <hr>
 <p><span class="bold">件名</span> ： MSS 利用申し込み<br><span class="bold">宛先</span> ： <a href="mailto:mass@ddbj.nig.ac.jp">Mass Submission System (MSS)</a> (クリックしてください)<br><span class="bold">本文</span> :（<span class="red">*</span>必須）</p>
 <dl><dt>MSS の利用について</dt>
-  <dd>・以前に MSS を利用されたことがありますか？ <span class="red">*</span><br><span style="margin-left: 20px">はい / いいえ</span></dd><dt><a href="/ddbj/services/index.html#contact">コンタクトパーソン</a>情報</dt>
+  <dd>・以前に MSS を利用されたことがありますか？ <span class="red">*</span><br><span style="margin-left: 20px">はい / いいえ</span></dd><dt><a href="/ddbj/submission.html#contact">コンタクトパーソン</a>情報</dt>
   <dd>・Contact person Name <span class="red">*</span></dd>
   <dd>・Contact person Email address <span class="red">*</span></dd>
   <dd>・Contact person Affiliation <span class="red">*</span></dd><dt>登録者情報（コンタクトパーソン以外の方が登録手続きを行う場合に記入してください。）</dt>
@@ -31,7 +31,7 @@ lang: ja
   <dd>・補足情報（日本語可）</dd>
 </dl>
 <div class="attention no_color">
-  <dl><dt><a href="/documents/documents/documents/data-categories.html">データ種別とは？</a></dt><dt>*1, *2 を登録する場合は、MSS での登録に先立ち、以下の順序で手続きを行ってください。</dt>
+  <dl><dt><a href="/documents/data-categories.html">データ種別とは？</a></dt><dt>*1, *2 を登録する場合は、MSS での登録に先立ち、以下の順序で手続きを行ってください。</dt>
     <dd> <a href="/bioproject/index.html">BioProject Database</a> で、 BioProject ID を取得してください。</dd>
     <dd> 配列の由来（リソース）情報を <a href="/biosample/index.html">BioSample Database</a> に登録し、BioSample ID を取得して下さい。</dd><dt>*2 に該当する場合は、以下の手続きも併せて行ってください。</dt>
     <dd>feature annotation を伴うゲノム配列の場合は、<a href="/ddbj/locus_tag.html">locus tag prefix</a> を取得しておく必要があります。<br>locus_tag prefix は <a href="/bioproject/index.html">BioProject Database</a> に登録する際に取得します。</dd>

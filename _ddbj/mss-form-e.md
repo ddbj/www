@@ -31,13 +31,13 @@ related_pages:
 <!-- end list -->
 
   - If you do not hear any response from DDBJ, please contact us from
-    [contact form](/contact-e.html#to-ddbj) by selecting the item, "Mass
+    [contact form](/contact-ddbj-e.html#to-ddbj) by selecting the item, "Mass
     Submission System (MSS)".
   - [Do not block E-mails from DDBJ](/precautions-e.html).
 
 ## Application Form for MSS <a name="Application_Form_for_MSS">
 
-※[How can I contact you when the form is not available?](/faq/en/index-e.html#mss-application-form-not-displayed)
+※[How can I contact you when the form is not available?](/faq/en/mss-application-form-not-displayed)
 
 <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc2HJLvmc8UrJDpmUxMl-gEjtVg3eS80ssH-TLe3g5eHGCuTA/viewform?embedded=true" width="800" height="2000" frameborder="0" marginheight="0" marginwidth="0">loading ...</iframe>-->
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdXTtgVQSGYRVAU7N4tAfCMtWF_9-USI4cIAbum6qkZ41PyJQ/viewform?embedded=true" width="800" height="2000" frameborder="0" marginheight="0" marginwidth="0">loading ...</iframe>

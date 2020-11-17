@@ -8,7 +8,7 @@ lang: en
 
 ## Contact <a name="contact"></a>
 
-Please contact us from [Message form](/contact-e.html).
+Please contact us from [Message form](/contact-ddbj-e.html).
 
 {::options parse_block_html="true" /}
 <address>
@@ -21,7 +21,7 @@ National Institute of Genetics" at "1111 Yata, Mishima, Shizuoka
 
 </address>
 
-[Ask questions about DDBJ services.](/contact-e.html#to-ddbj)
+[Ask questions about DDBJ services.](/contact-ddbj-e.html#to-ddbj)
 
 ## Reference <a name="reference"></a>
 

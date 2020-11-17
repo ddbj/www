@@ -15,11 +15,11 @@ related_pages:
   - title: ClustalW ヘルプ
     url: /services/clustalw.html
   - title: 過去のサービス
-    url: /services/services/services/past-services.html
+    url: /services/past-services.html
   - title: 関連論文
-    url: /services/services/services/references.html
+    url: /services/references.html
   - title: WABI (Web API for Biology)
-    url: /services/services/services/wabi.html
+    url: /services/wabi.html
   - title: WABI BLAST ヘルプ
     url: /services/wabi-blast.html
   - title: WABI ClustalW ヘルプ
@@ -32,7 +32,7 @@ related_pages:
     url: /services/pipeline.html
 ---
 
-TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/) の検索システムです。国際塩基配列データベース([INSD]({{site.baseurl}}/aboutus/insdc.html)) にデータを登録する際には、NCBI Taxonomy に基づいた生物名の表記を使用する必要があります。
+TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/) の検索システムです。国際塩基配列データベース([INSD]({{site.baseurl}}/insdc.html)) にデータを登録する際には、NCBI Taxonomy に基づいた生物名の表記を使用する必要があります。
 
 ## 検索（ウェブ検索フォームから） <a name="usage"></a>
 
@@ -87,8 +87,7 @@ TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxon
 
   |  検索に使用できるフィールド名  |    |
   | ---- | ---- |
-  |  
-  tax_id<br>scientific_name<br>common_name<br>synonym<br>acronym<br>anamorph<br>teleomorph<br>authority<br>blast_name<br>equivalent_name<br>in_part<br>includes<br>misnomer<br>misspelling<br>type_material  |  フィールド名を指定すれば絞り込み検索が可能となります。<br> フィールド名を指定しない場合、これらのフィールド全てを検索します。  |
+  |tax_id<br>scientific_name<br>common_name<br>synonym<br>acronym<br>anamorph<br>teleomorph<br>authority<br>blast_name<br>equivalent_name<br>in_part<br>includes<br>misnomer<br>misspelling<br>type_material  |  フィールド名を指定すれば絞り込み検索が可能となります。<br> フィールド名を指定しない場合、これらのフィールド全てを検索します。  |
   |  lineagerank  |  フィールド名の指定が必要です。  |
 
 - 完全一致検索の場合には、フィールド名を以下のように指定します。

@@ -23,7 +23,7 @@ lang: en
 
   - [Login & Submit](https://ddbj.nig.ac.jp/D-way)
   - [Policies and Disclaimers](/policies-e.html)
-  - [Contact](/contact-e.html)
+  - [Contact](/contact-ddbj-e.html)
   - [Japanese](/dra/index.html)
 
 </div>
@@ -150,7 +150,7 @@ BI-DDBJ Web Sites Annotated/Assembled Sequences Sequence Read Archive
 <div id="header-bottom">
 
   - [Home](/dra/index-e.html)
-  - [Handbook![](/images/parts/arrow_down.svg)](/dra/services/index.html)
+  - [Handbook![](/images/parts/arrow_down.svg)](/dra/submission.html)
       - [Metadata
         examples](https://docs.google.com/spreadsheets/d/1DTdUQ-WWOMjOA2eYQWmFYUB24hJysuwhvHLJoDFX4rc/edit#gid=0)
   - [FAQ](/faq/en/index-e.html)
@@ -202,7 +202,7 @@ Sequence Read Archive (ERA)](https://www.ebi.ac.uk/ena/).
 
 </div>
 
-[](/dra/services/index.html "How to submit")
+[](/dra/submission.html "How to submit")
 
 <div class="top-navi-box">
 
@@ -374,7 +374,7 @@ Sequence Read Archive (ERA)](https://www.ebi.ac.uk/ena/).
   - [Sitemap](/sitemaps-e.html "Sitemap")
   - [Calendar](/calendar-e.html "DDBJ Center Calendar")
   - [Address](/ddbj-access-e.html "DDBJ Center address")
-  - [Contact](/contact-e.html "Contact to DDBJ Center")
+  - [Contact](/contact-ddbj-e.html "Contact to DDBJ Center")
   - Last modified: 2018-02-08
 
 </div>

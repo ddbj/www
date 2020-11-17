@@ -92,7 +92,7 @@ Login ID:
 
 ## DRA への登録権限を追加 <a name="enable-dra-submission-in-account"></a>
 
-[DDBJ Sequence Read Archive (DRA)](/dra/index.html) へデータを登録するため，アカウントにcenter name と公開鍵を登録します。 [Centername](/dra/services/index.html#Submission_Center_Name) は DRAが組織に対して割り振っている略号です。 公開鍵はユーザの認証に用いられます。
+[DDBJ Sequence Read Archive (DRA)](/dra/index.html) へデータを登録するため，アカウントにcenter name と公開鍵を登録します。 [Centername](/dra/submission.html#Submission_Center_Name) は DRAが組織に対して割り振っている略号です。 公開鍵はユーザの認証に用いられます。
 
 ### 公開鍵/秘密鍵ペアの生成 <a name="generate-key-pair"></a>
 

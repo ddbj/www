@@ -5,17 +5,17 @@ category: ddbj
 lang: en
 related_pages:
   - title: Submission File Format
-    url: services/file-format-e.html
+    url: /ddbj/file-format-e.html
   - title: Validation tools for MSS data files
-    url: services/mss-tool-e.html
+    url: /ddbj/mss-tool-e.html
   - title: Parser User’s Manual
-    url: services/parser-e.html
+    url: /ddbj/parser-e.html
   - title: transChecker User’s Manual
-    url: services/transchecker-e.html
+    url: /ddbj/transchecker-e.html
   - title: Validator error message
-    url: services/validator-e.html
+    url: /ddbj/validator-e.html
   - title: Application form for MSS
-    url: services/mass-form-e.html
+    url: /ddbj/mss-form-e.html
 ---
 
 UME (Utilities for MSS file Error check) is a stand-alone tool to check syntax and format of [Sequence file](/ddbj/file-format-e.html#sequence) and [Annotation file](/ddbj/file-format-e.html#annotation) required for using Mass Submission System of DDBJ and to check amino acid translation of [CDS feature](/ddbj/cds-e.html) based on the description of each file. UME includes both Parser and transChecker.
