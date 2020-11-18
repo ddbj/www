@@ -2,33 +2,27 @@ $MARGIN_PANEL: 2rem
 
 #ServicesView
   margin-right: #{ $MARGIN_PANEL * 0.5 }
-  padding: 5rem 3rem 3rem 3rem
+  padding-top: 2.5rem
   position: relative
   > .appearance-switch
     font-size: 1.8rem
     position: absolute
     display: block
-    top: 1.6rem
-    right: 3rem
+    top: -.5rem
+    right: 0
   > .container
     list-style: none
     position: relative
     transition: margin $DURATION_GUI
     > .service
-      position: relative
-      background-color: white
       transition: margin $DURATION_GUI, padding $DURATION_GUI, width $DURATION_GUI
       > .upper
         > .title
-          font-size: 1.8rem
-          line-height: 1.2
           position: relative
           margin-bottom: .6rem
         > .tags
-          list-style: none
           margin: 0 -.2rem .8rem
           > .tag-view
-            //font-size: 1rem
             display: inline-block
       > .description
         font-size: 1.2rem
@@ -42,6 +36,17 @@ $MARGIN_PANEL: 2rem
             display: inline-block
             + li
               margin-left: 1rem
+  &[data-appearance-type="list"]
+    > .container
+      > .service
+        > .upper
+          > *
+            display: inline-block
+            vertical-align: middle
+          > .tags
+            margin-left: 1rem
+        > .links
+          top: 1rem
   &[data-appearance-type="panel"]
     > .container
       display: flex
@@ -53,17 +58,3 @@ $MARGIN_PANEL: 2rem
         width: calc( 100% / 3 - #{$MARGIN_PANEL} )
         > .links
           bottom: 1rem
-  &[data-appearance-type="list"]
-    > .container
-      > .service
-        padding: 1rem 1.2rem
-        + .service
-          margin-top: .4rem
-        > .upper
-          > *
-            display: inline-block
-            vertical-align: middle
-          > .tags
-            margin-left: 1rem
-        > .links
-          top: 1rem

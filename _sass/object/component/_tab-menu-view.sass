@@ -1,24 +1,25 @@
 .tab-menu-view
-  border-bottom: solid .1rem $COLOR_LIGHT_GRAY
+  border-bottom: solid .1rem $COLOR_BLACK
   > ul
     > li
       display: inline-block
       > a
+        top: .1rem
         font-size: 1.6rem
-        line-height: 3rem
+        line-height: 2.8rem
         text-decoration: none
         display: block
         padding: 0 1rem
         background-color: #DDDAD7
-        border-top: solid .1rem $COLOR_LIGHT_GRAY
-        border-left: solid .1rem $COLOR_LIGHT_GRAY
-        border-right: solid .1rem $COLOR_LIGHT_GRAY
         position: relative
-        top: .1rem
-        transsition: background $DURATION_GUI, color $DURATION_GUI
+        transition: background $DURATION_GUI, color $DURATION_GUI
       &.-current
         > a
+          line-height: 3rem
           background-color: white
+          border-top: solid .1rem $COLOR_BLACK
+          border-left: solid .1rem $COLOR_BLACK
+          border-right: solid .1rem $COLOR_BLACK
       &.-haschild
         > a
           &::after
@@ -28,7 +29,7 @@
             border-top: .5rem solid $COLOR_BLACK
             border-left: .4rem solid transparent 
             margin: 0 0 .2rem .5rem
-            transsition: border $DURATION_GUI
+            transition: border $DURATION_GUI
         &:hover
           > a
             &::after
@@ -36,11 +37,12 @@
       > ul
         position: absolute
         background-color: white
-        box-shadow: 0 .2rem .3rem rgba(black, .3)
+        box-shadow: $SHADOW_DEPTH2
         transition: transform $DURATION_GUI, opacity $DURATION_GUI
         opacity: 0
         pointer-events: none
         transform: translateY(-1rem)
+        z-index: $Z_TAB_MENU
         > li
           > a
             display: block

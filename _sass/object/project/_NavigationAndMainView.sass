@@ -8,7 +8,7 @@
     > .subview
       width: calc( (100vw - #{$WIDTH_MAX}) + #{$WIDTH_NAV_AND_MAIN_SUBVIEW} )
       min-width: $WIDTH_NAV_AND_MAIN_SUBVIEW
-      border-right: 1px solid #282725
+      max-width: $WIDTH_NAV_AND_MAIN_SUBVIEW
       > *
         margin-left: auto
         padding-bottom: 2rem
@@ -19,8 +19,6 @@
         top: 0
     > .mainview
       width: calc( (100vw - #{$WIDTH_MAX}) + (#{$WIDTH_MAX} - #{$WIDTH_NAV_AND_MAIN_SUBVIEW}) )
-      &.-beige
-        background-color: $COLOR_BEIGE
       > *
         max-width: calc(#{$WIDTH_MAX} - #{$WIDTH_NAV_AND_MAIN_SUBVIEW} - #{$PADDING_BASE})
   
