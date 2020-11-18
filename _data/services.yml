@@ -5,8 +5,8 @@ items:
       en: http://getentry.ddbj.nig.ac.jp/top-e.html
       ja: http://getentry.ddbj.nig.ac.jp/top-j.html
     help:
-      en: getentry-help-e
-      ja: getentry-help
+      en: getentry-e
+      ja: getentry
     wabi: https://www.ddbj.nig.ac.jp/services/getentry.html#ge_program
     description:
       en: DDBJ annotated/assembled data retrieval by accession numbers
