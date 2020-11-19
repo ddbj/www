@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: DDBJ Nucleotide Sequence Submission System HELP
-category: services
+category: ddbj
 lang: en
 ---
 
