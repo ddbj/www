@@ -35,8 +35,11 @@ export default function taggingListView() {
     }
     facetSearchTags.innerHTML = html;
     // インタラクション
-    const selectedTags = [];
+    const URIParameters = $.deparam(window.location.search.substr(1)).tags;
+    const selectedTags = URIParameters ? URIParameters : [];
     const $selectedTags = $('.tag-view', facetSearchTags);
+    updateTag();
+    // インタラクション
     $selectedTags.on('click', e => {
       const tag = e.target.dataset.tag;
       // 選択中のタグに追加・削除
@@ -45,6 +48,20 @@ export default function taggingListView() {
       } else {
         selectedTags.splice(selectedTags.indexOf(tag), 1);
       }
+      window.history.pushState(selectedTags, '', `${ window.location.origin }${ window.location.pathname }?${ $.param({tags: selectedTags}) }`);
+      updateTag();
+    });
+
+    // アイテムのインタラクション
+    taggingListView.querySelectorAll('.bottom.-collapsed').forEach(elm => {
+      const collapsedbutton = elm.querySelector('.collapsedbutton');
+      collapsedbutton.addEventListener('click', () => {
+        elm.classList.toggle('-opened');
+      });
+    })
+
+    // アイテムの表示更新
+    function updateTag() {
       if (selectedTags.length) {
         // 何か選択されている場合、選択されているもののみ表示
         $selectedTags.each((index, elm) => {
@@ -74,15 +91,9 @@ export default function taggingListView() {
         $selectedTags.each((index, elm) => elm.classList.remove('-disable'));
         taggingItems.forEach(service => service.classList.remove('-hidden'));
       }
-    });
-
-    // アイテムのインタラクション
-    taggingListView.querySelectorAll('.bottom.-collapsed').forEach(elm => {
-      console.log(elm)
-      const collapsedbutton = elm.querySelector('.collapsedbutton');
-      collapsedbutton.addEventListener('click', () => {
-        elm.classList.toggle('-opened');
-      });
-    })
+    }
+  
   }
+
+
 }
