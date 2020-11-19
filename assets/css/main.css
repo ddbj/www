@@ -1054,7 +1054,8 @@ input, textarea, select, button {
       display: none; }
     .tagging-list-view .taggingitem > .upper > .title {
       font-size: 1.6rem;
-      line-height: 1.2; }
+      line-height: 1.2;
+      margin-bottom: .4rem; }
 
 .tags-view > .tag {
   color: #FF7300;
