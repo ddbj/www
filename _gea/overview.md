@@ -3,6 +3,52 @@ layout: indexed_content
 title: GEA への登録
 pathname: overview
 category: gea
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /gea/index.html
+  - id: submission overview
+    title: Submission Overview
+    url: /gea/overview.html
+    children:
+      - title: Submit microarray experiment
+        url: /gea/submit-array.html
+      - title: Submit sequencing experiment
+        url: /gea/submit-sequence.html
+      - title: Metadata
+        url: /gea/metadata.html
+      - title: Data File
+        url: /gea/datafile.html
+      - title: Validation
+        url: /gea/validation.html
+      - title: Single-cell submission guide
+        url: /gea/single-cell.html
+      - title: Example
+        url: /gea/example.html
+      - title: Array Design
+        url: /gea/adf.html
+      - title: Data matrix
+        url: /gea/matrix.html
+      - title: Reviewer Access
+        url: /gea/reviewer-access.html
+  - id: faq
+    title: FAQ
+    url: /faq/ja/index.html
+  - id: search
+    title: Search (AOE)
+    url: http://aoe.dbcls.jp/
+    children:
+      - title: Search (ArrayExpress)
+        url: https://www.ebi.ac.uk/arrayexpress/browse.html
+      - title: RefEx
+        url: http://refex.dbcls.jp/
+  - id: downloads
+    title: Downloads
+    url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/gea
+  - id: about gea
+    title: About GEA
+    url: /gea/about-gea.html
 lang: ja
 ---
 
@@ -28,7 +74,7 @@ GEA はマイクロアレイや次世代シークエンサから出力される�
 <li>HiC-seq</li>
 <li>methyl-seq、bisulfite-seq</li>
 </ul>
-<p>データが GEA に登録可能かどうか不明な場合は<a href="/contact.html">お問い合わせください</a>。</p>
+<p>データが GEA に登録可能かどうか不明な場合は<a href="/contact-ddbj.html">お問い合わせください</a>。</p>
 </td>
 <td>
 <ul>
@@ -40,7 +86,7 @@ GEA はマイクロアレイや次世代シークエンサから出力される�
 <li>survey シークエンスやエキソームシークエンス (<a href="/dra/submission.html">DRA</a> に登録してください)</li>
 <li>メタボロミクスやプロテオミクスデータ (プロテオミクスデータは <a href="https://jpostdb.org/">jPOST</a> に登録してください)</li>
 </ul>
-<p>これらのデータの登録先については <a href="/submission.html">DDBJ ウェブサイト</a>を参照してください。</p>
+<p>これらのデータの登録先については <a href="/services/index.html">DDBJ ウェブサイト</a>を参照してください。</p>
 </td>
 </tbody>
 </table>
@@ -65,7 +111,7 @@ GEA はマイクロアレイや次世代シークエンサから出力される�
 
 ### シークエンシング実験 <a name="seqxp"></a>
 
-[シークエンシング実験の登録](/gea/submit-seq.html)
+[シークエンシング実験の登録](/gea/submit-sequence.html)
 
   - [IDF と SDRF メタデータ](/gea/metadata.html)
   - [生データ (先行して](/gea/datafile.html#seq_raw) [DRA](/dra/submission.html) に登録しておく必要があります)
@@ -82,7 +128,7 @@ GEA の Experiment と Array design に対して以下の形式のアクセッ�
 
 ## データ公開 <a name="rel"></a>
 
-関連する論文が公表されるまでデータを非公開にすることができます。四年後までの公開予定日を設定し、随時延長することができます。登録されたデータは[データ公開原則](/data-release-policy.html)に従って公開されます。
+関連する論文が公表されるまでデータを非公開にすることができます。四年後までの公開予定日を設定し、随時延長することができます。登録されたデータは[データ公開原則](/documents/data-release-policy.html)に従って公開されます。
 
 ## Reviewer access <a name="reviewer-access"></a>
 
@@ -90,4 +136,4 @@ GEA データベースに非公開 experiment と array design が登録され�
 
 ## 更新 <a name="update"></a>
 
-GEA に登録されたデータを更新・削除する場合は [GEA チームに連絡](/contact.html)してください。
+GEA に登録されたデータを更新・削除する場合は [GEA チームに連絡](/contact-ddbj.html)してください。

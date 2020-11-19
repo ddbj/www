@@ -5,34 +5,34 @@ category: services
 lang: ja
 related_pages:
   - title: ARSA ヘルプ
-    url: /arsa-help.html
+    url: /services/arsa.html
   - title: BLAST ヘルプ
-    url: /blast-help.html
+    url: /services/blast.html
   - title: getentry ヘルプ
-    url: /getentry-help.html
+    url: /services/getentry.html
   - title: VecScreen ヘルプ
-    url: /vecscreen-help.html
+    url: /services/vecscreen.html
   - title: ClustalW ヘルプ
-    url: /clustalw-help.html
+    url: /services/clustalw.html
   - title: 過去のサービス
-    url: /past-services.html
+    url: /services/past-services.html
   - title: 関連論文
-    url: /references.html
+    url: /services/references.html
   - title: WABI (Web API for Biology)
-    url: /wabi.html
+    url: /services/wabi.html
   - title: WABI BLAST ヘルプ
-    url: /wabi_blast-help.html
+    url: /services/wabi-blast.html
   - title: WABI ClustalW ヘルプ
-    url: /wabi_clustalw-help.html
+    url: /services/wabi-clustalw.html
   - title: WABI VecScreen ヘルプ
-    url: /wabi_vecscreen-help.html
+    url: /services/wabi-vecscreen.html
   - title: WABI MAFFT ヘルプ
-    url: /wabi_mafft-help.html
+    url: /services/wabi-mafft.html
   - title: Pipeline ヘルプ
-    url: /pipeline-help.html
+    url: /services/pipeline.html
 ---
 
-TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/) の検索システムです。国際塩基配列データベース([INSD]({{site.baseurl}}/aboutus/insdc.html)) にデータを登録する際には、NCBI Taxonomy に基づいた生物名の表記を使用する必要があります。
+TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/) の検索システムです。国際塩基配列データベース([INSD]({{site.baseurl}}/insdc.html)) にデータを登録する際には、NCBI Taxonomy に基づいた生物名の表記を使用する必要があります。
 
 ## 検索（ウェブ検索フォームから） <a name="usage"></a>
 
@@ -87,8 +87,7 @@ TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxon
 
   |  検索に使用できるフィールド名  |    |
   | ---- | ---- |
-  |  
-  tax_id<br>scientific_name<br>common_name<br>synonym<br>acronym<br>anamorph<br>teleomorph<br>authority<br>blast_name<br>equivalent_name<br>in_part<br>includes<br>misnomer<br>misspelling<br>type_material  |  フィールド名を指定すれば絞り込み検索が可能となります。<br> フィールド名を指定しない場合、これらのフィールド全てを検索します。  |
+  |tax_id<br>scientific_name<br>common_name<br>synonym<br>acronym<br>anamorph<br>teleomorph<br>authority<br>blast_name<br>equivalent_name<br>in_part<br>includes<br>misnomer<br>misspelling<br>type_material  |  フィールド名を指定すれば絞り込み検索が可能となります。<br> フィールド名を指定しない場合、これらのフィールド全てを検索します。  |
   |  lineagerank  |  フィールド名の指定が必要です。  |
 
 - 完全一致検索の場合には、フィールド名を以下のように指定します。

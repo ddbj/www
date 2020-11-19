@@ -27,7 +27,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn041224"><a href="#wn041224">DDBJ リリース 60 完成</a></h2>
   <div class="news_date">2004年12月24日</div>
-  <div class="news_content">DDBJ が管理・収集している塩基配列データベースは， リリースとして定期的に年4回オンライン上で公開しています。 12月に DDBJ リリース60 を完成しました。 リリース60 のエントリ数は 40,583,945，総塩基数は 44,416,752,273 塩基です。<br><a href="/download.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
+  <div class="news_content">DDBJ が管理・収集している塩基配列データベースは， リリースとして定期的に年4回オンライン上で公開しています。 12月に DDBJ リリース60 を完成しました。 リリース60 のエントリ数は 40,583,945，総塩基数は 44,416,752,273 塩基です。<br><a href="/services/index.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -279,7 +279,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn041013_2"><a href="#wn041013_2">DAD rel. 29 公開</a></h2>
   <div class="news_date">2004年10月13日</div>
-  <div class="news_content">10月13日よりDAD (DDBJ amino acid database) Rel. 29 を公開しています。 DAD rel. 29 はエントリ数が 1,990,271，総アミノ残基数が 612,044,833 aa となっています。<br><a href="/download.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
+  <div class="news_content">10月13日よりDAD (DDBJ amino acid database) Rel. 29 を公開しています。 DAD rel. 29 はエントリ数が 1,990,271，総アミノ残基数が 612,044,833 aa となっています。<br><a href="/services/index.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -315,7 +315,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn040930"><a href="#wn040930">DDBJ リリース 59 完成</a></h2>
   <div class="news_date">2004年09月30日</div>
-  <div class="news_content">DDBJ が管理・収集している塩基配列データベースは， リリースとして定期的に年4回オンライン上で公開しています。 9月30日に DDBJ リリース59 を完成しました。 リリース59 のエントリ数は 37,926,117，総塩基数は 42,245,956,937 塩基です。<br><a href="/download.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
+  <div class="news_content">DDBJ が管理・収集している塩基配列データベースは， リリースとして定期的に年4回オンライン上で公開しています。 9月30日に DDBJ リリース59 を完成しました。 リリース59 のエントリ数は 37,926,117，総塩基数は 42,245,956,937 塩基です。<br><a href="/services/index.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -369,7 +369,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn040913_2"><a href="#wn040913_2">SAKURA で登録可能な塩基配列長増加</a></h2>
   <div class="news_date">2004年09月13日</div>
-  <div class="news_content">国際塩基配列データベースでは１エントリの最大塩基配列長に関する規約（最大 350,000 bp）がありましたが，2004年6月より制限を撤廃しました。<br>DDBJ の提供する塩基配列データ登録システム<a href="http://sakura.ddbj.nig.ac.jp/top-j.html">SAKURA</a>では機能上の制約から登録可能な塩基配列長に制限がありますが，登録可能な配列長が増加しました。これまでは 20 bp ～ 350,000 bp でしたが，2004年9月より 20 bp ～ 500,000 bp になりました。<br>ただし 500,000 bp 以下であっても，ご使用になるコンピュータシステム，WWW ブラウザなどの環境により入力できないことがあります。詳細は <a href="http://sakura.ddbj.nig.ac.jp/top/sakuraBase-j.html">SAKURA の利用上の注意および制限</a>をご覧下さい。500,000 bp を超える配列を登録される場合は<a href="/ddbj/mass-form.html">大量登録システム</a>をご利用下さい。</div>
+  <div class="news_content">国際塩基配列データベースでは１エントリの最大塩基配列長に関する規約（最大 350,000 bp）がありましたが，2004年6月より制限を撤廃しました。<br>DDBJ の提供する塩基配列データ登録システム<a href="http://sakura.ddbj.nig.ac.jp/top-j.html">SAKURA</a>では機能上の制約から登録可能な塩基配列長に制限がありますが，登録可能な配列長が増加しました。これまでは 20 bp ～ 350,000 bp でしたが，2004年9月より 20 bp ～ 500,000 bp になりました。<br>ただし 500,000 bp 以下であっても，ご使用になるコンピュータシステム，WWW ブラウザなどの環境により入力できないことがあります。詳細は <a href="http://sakura.ddbj.nig.ac.jp/top/sakuraBase-j.html">SAKURA の利用上の注意および制限</a>をご覧下さい。500,000 bp を超える配列を登録される場合は<a href="/ddbj/mss-form.html">大量登録システム</a>をご利用下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -432,7 +432,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn040811"><a href="#wn040811">SWISS-PROT Rel.44 公開</a></h2>
   <div class="news_date">2004年08月11日</div>
-  <div class="news_content">8月11日より SWISS-PROT Rel.44 を公開しています。 SWISS-PROT Rel.44 はエントリ数が 153,871, 総アミノ残基数が 56,608,159 aa となっています。<br><a href="/download.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
+  <div class="news_content">8月11日より SWISS-PROT Rel.44 を公開しています。 SWISS-PROT Rel.44 はエントリ数が 153,871, 総アミノ残基数が 56,608,159 aa となっています。<br><a href="/services/index.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -540,7 +540,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn040716"><a href="#wn040716">WGS データ FTP サイトのファイル名変更</a></h2>
   <div class="news_date">2004年07月16日</div>
-  <div class="news_content">DDBJ/EMBL/GenBank が進行中のゲノム配列を管理・収集している <a href="/ddbj/wgs.html">WGS </a>データベースは，<a href="/download.html"> FTP による定期リリースおよび新着データのダウンロードサイト</a> からリンクしている FTP サイト，WGS データから提供しております。<br>これまでは各プロジェクトごとに生物名を基本としたファイル名で管理しておりましたが，プロジェクト数の増加に伴い，生物名を基本としたファイル名では管理・特定が困難になりました。 そこで，ファイル名をアクセッション番号 prefix をベースに管理する方向に変更し，別途 対応表を用意することにいたしました。 この変更は7月20日14時に行なう予定です。(作業終了しました。7/20)</div>
+  <div class="news_content">DDBJ/EMBL/GenBank が進行中のゲノム配列を管理・収集している <a href="/ddbj/wgs.html">WGS </a>データベースは，<a href="/services/index.html"> FTP による定期リリースおよび新着データのダウンロードサイト</a> からリンクしている FTP サイト，WGS データから提供しております。<br>これまでは各プロジェクトごとに生物名を基本としたファイル名で管理しておりましたが，プロジェクト数の増加に伴い，生物名を基本としたファイル名では管理・特定が困難になりました。 そこで，ファイル名をアクセッション番号 prefix をベースに管理する方向に変更し，別途 対応表を用意することにいたしました。 この変更は7月20日14時に行なう予定です。(作業終了しました。7/20)</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -549,7 +549,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn040716_2"><a href="#wn040716_2">SWISS-PROT Rel. 43 公開</a></h2>
   <div class="news_date">2004年07月16日</div>
-  <div class="news_content">7月16日より SWISS-PROT Rel. 43を公開しています。 SWISS-PROT Rel. 43はエントリ数が 146,720，総アミノ残基数が 54,093,154 aaとなっています。<br><a href="/download.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
+  <div class="news_content">7月16日より SWISS-PROT Rel. 43を公開しています。 SWISS-PROT Rel. 43はエントリ数が 146,720，総アミノ残基数が 54,093,154 aaとなっています。<br><a href="/services/index.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -594,7 +594,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn040709"><a href="#wn040709">DDBJ リリース58のデータ不具合についてのお詫び</a></h2>
   <div class="news_date">2004年07月09日</div>
-  <div class="news_content">この度，DDBJ リリース58 (2004年6月30日公開) のデータに一部不具合が御座いましたので，下記に説明させていただきます。<br><b>データ不具合の内容：</b><br>    一部のデータに「BASE COUNT」行が含まれていなかった。<br><b>対応：</b><br>    不具合のあったデータのみ修正し，本日（7月9日）公開し直しました。<br><b><a href="/files/pdf/040709.html" target='_blank"'>修正ファイル一覧：</a></b><br>ご迷惑をお掛けいたしましたことを，深くお詫び申し上げます。<br>今後ともご利用、宜しくお願いいたします。<table boeder="0" bgcolor="#CCFFCC"><tr><td>    <small>BASE COUNT 行について<br>    GenBank はリリース138（2003年10月）よりフラットファイルから BASE COUNT 行を廃止しました。DDBJ は BASE COUNT 行について，配列の性質を総括する情報の１つである GC 含有量の算出などに使えるためフラットファイルに載せるべき情報であると考えています。このため，DDBJ フォーマットのフラットファイルには引き続き BASE COUNT 行を残しています。</small>    </td></tr></table></div>
+  <div class="news_content">この度，DDBJ リリース58 (2004年6月30日公開) のデータに一部不具合が御座いましたので，下記に説明させていただきます。<br><b>データ不具合の内容：</b><br>    一部のデータに「BASE COUNT」行が含まれていなかった。<br><b>対応：</b><br>    不具合のあったデータのみ修正し，本日（7月9日）公開し直しました。<br><b><a href="{{ site.baseurl }}/assets/files/pdf/040709.html" target='_blank"'>修正ファイル一覧：</a></b><br>ご迷惑をお掛けいたしましたことを，深くお詫び申し上げます。<br>今後ともご利用、宜しくお願いいたします。<table boeder="0" bgcolor="#CCFFCC"><tr><td>    <small>BASE COUNT 行について<br>    GenBank はリリース138（2003年10月）よりフラットファイルから BASE COUNT 行を廃止しました。DDBJ は BASE COUNT 行について，配列の性質を総括する情報の１つである GC 含有量の算出などに使えるためフラットファイルに載せるべき情報であると考えています。このため，DDBJ フォーマットのフラットファイルには引き続き BASE COUNT 行を残しています。</small>    </td></tr></table></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -639,7 +639,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn040630"><a href="#wn040630">DDBJ リリース 58 完成</a></h2>
   <div class="news_date">2004年06月30日</div>
-  <div class="news_content">DDBJ が管理・収集している塩基配列データベースは， リリースとして定期的に年4回オンライン上で公開しています。 6月30日に DDBJ リリース58 を完成しました。 リリース58 のエントリ数は 34,917,581，総塩基数は 39,812,635,108 塩基です。<br><a href="/download.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
+  <div class="news_content">DDBJ が管理・収集している塩基配列データベースは， リリースとして定期的に年4回オンライン上で公開しています。 6月30日に DDBJ リリース58 を完成しました。 リリース58 のエントリ数は 34,917,581，総塩基数は 39,812,635,108 塩基です。<br><a href="/services/index.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -738,7 +738,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn040602"><a href="#wn040602">H-Invitational データベースの更新</a></h2>
   <div class="news_date">2004年06月02日</div>
-  <div class="news_content">5月31日に <a href="/whatsnew/whatsnew2009-j.html#091208" target="_blank">H-Invitational Database CIB-DDBJ Flat File Server</a>  および<a href="/whatsnew/whatsnew2009-j.html#091208" target="_blank">ミラーリング H-InvDB</a>（リリース番号：H-InvDB_1.3）のデータ内容を更新しました。<br>  <ul><br>    <li>cDNA および LOCUS エントリの更新データは2004年5月1日現在のデータです。<br>    </li><li> 全ての LOCUS エントリ (HIX) と一部の cDNA エントリ (HIT) のバーションが ".1" から ".2" に変わりました。<br>    </li><li>H-Invitaional Identifier（e.g HIT000000001 は cDNA エントリ，<br>        HIX0000001 は LOCUS エントリ）と国際塩基配列データベースのアクセッション番号およびデータ提供機関の対応表（ファイル名：acc2hinv_id.txt.gz）を <a href="ftp://hinv.ddbj.nig.ac.jp/" target="_blank">FTP サイト</a> に置きました。<br>  </li></ul></div>
+  <div class="news_content">5月31日に H-Invitational Database CIB-DDBJ Flat File Server  およびミラーリング H-InvDB（リリース番号：H-InvDB_1.3）のデータ内容を更新しました。<br>  <ul><br>    <li>cDNA および LOCUS エントリの更新データは2004年5月1日現在のデータです。<br>    </li><li> 全ての LOCUS エントリ (HIX) と一部の cDNA エントリ (HIT) のバーションが ".1" から ".2" に変わりました。<br>    </li><li>H-Invitaional Identifier（e.g HIT000000001 は cDNA エントリ，<br>        HIX0000001 は LOCUS エントリ）と国際塩基配列データベースのアクセッション番号およびデータ提供機関の対応表（ファイル名：acc2hinv_id.txt.gz）を <a href="ftp://hinv.ddbj.nig.ac.jp/" target="_blank">FTP サイト</a> に置きました。<br>  </li></ul></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -828,7 +828,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn040416"><a href="#wn040416">H-Invitational データベースの公開</a></h2>
   <div class="news_date">2004年04月16日</div>
-  <div class="news_content">H-Invitational (Human Full-length cDNA Annotation Invitational) はヒト完全長 cDNA (complementaryDNA) に対してさまざまなバイオインフォマティクス解析を実行し，機能アノテーションを付与した国際的プロジェクトで， 国立遺伝学研究所（現：大学共同利用機関法人　情報・システム研究機構　国立遺伝学研究所） 生命情報・DDBJ研究ンセンター（CIB-DDBJ）， 産業技術研究所　生物情報解析研究センター（AIST/JBIRC）， 社団法人バイオ産業情報化コンソーシアム（JBIC）によって共同主催されてきました。<br><br>CIB-DDBJ では H-Invitational で解析されたヒト完全長 cDNA データセットの機能アノテーションの成果を公開するためのデータベース， H-Invitational Database CIB-DDBJ Flat File Server を構築しました。 このデータベースでは H-Invitational で付与された機能アノテーションを国際塩基配列データベースの形式に準拠した形式のフラットファイルで表示しています（DDBJ 版フラットファイル）。 さらに，本サイトでは cDNA がマップされたヒトゲノム上の Locus 情報も提供しています。 全てのデータに対して，DDBJ 版フラットファイルだけでなく，JBIRC によって作成されたフラットファイル（JBIRC 版フラットファイル）および XML ファイルも提供しています。 これらのデータは FTP サイトから取得することができます．<p>また，JBIRC で公開されている H-Invitational Database (H-Inv DB) のミラーサイトも合わせてCIB-DDBJから公開しています。<br><br><b><a href="/whatsnew/whatsnew2009-j.html#091208">H-Invitational Database CIB-DDBJ Flat File Server</a></b><br><br><b><a href="/whatsnew/whatsnew2009-j.html#091208">ミラーリング H-Inv DB</a></b><br><br><b>プレスリリース</b><br>完全長ヒトcDNAに基づくヒト遺伝子統合データベースを全世界に一斉同時公開<br>世界最大のヒト遺伝子カタログ　 国際協同の下でミレニアムプロジェクトの成果を結集<br>社団法人バイオ産業情報化コンソーシアム<br>独立行政法人産業技術総合研究所生物情報解析研究センター<br>国立遺伝学研究所生命情報・ＤＤＢＪ研究センター<br><br><b>PLoS BIOLOGY</b><br><a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.0020162">Integrative Annotation of 21,037 Human Genes Validated by Full-Length cDNA Clones</a><br> <br><b>各報道機関の記事</b><br>Science Now<br>朝日新聞<br>共同通信<br>日経バイオテク<br>毎日新聞</p></div>
+  <div class="news_content">H-Invitational (Human Full-length cDNA Annotation Invitational) はヒト完全長 cDNA (complementaryDNA) に対してさまざまなバイオインフォマティクス解析を実行し，機能アノテーションを付与した国際的プロジェクトで， 国立遺伝学研究所（現：大学共同利用機関法人　情報・システム研究機構　国立遺伝学研究所） 生命情報・DDBJ研究ンセンター（CIB-DDBJ）， 産業技術研究所　生物情報解析研究センター（AIST/JBIRC）， 社団法人バイオ産業情報化コンソーシアム（JBIC）によって共同主催されてきました。<br><br>CIB-DDBJ では H-Invitational で解析されたヒト完全長 cDNA データセットの機能アノテーションの成果を公開するためのデータベース， H-Invitational Database CIB-DDBJ Flat File Server を構築しました。 このデータベースでは H-Invitational で付与された機能アノテーションを国際塩基配列データベースの形式に準拠した形式のフラットファイルで表示しています（DDBJ 版フラットファイル）。 さらに，本サイトでは cDNA がマップされたヒトゲノム上の Locus 情報も提供しています。 全てのデータに対して，DDBJ 版フラットファイルだけでなく，JBIRC によって作成されたフラットファイル（JBIRC 版フラットファイル）および XML ファイルも提供しています。 これらのデータは FTP サイトから取得することができます．<p>また，JBIRC で公開されている H-Invitational Database (H-Inv DB) のミラーサイトも合わせてCIB-DDBJから公開しています。<br><br><b>H-Invitational Database CIB-DDBJ Flat File Server</b><br><br><b>ミラーリング H-Inv DB</b><br><br><b>プレスリリース</b><br>完全長ヒトcDNAに基づくヒト遺伝子統合データベースを全世界に一斉同時公開<br>世界最大のヒト遺伝子カタログ　 国際協同の下でミレニアムプロジェクトの成果を結集<br>社団法人バイオ産業情報化コンソーシアム<br>独立行政法人産業技術総合研究所生物情報解析研究センター<br>国立遺伝学研究所生命情報・ＤＤＢＪ研究センター<br><br><b>PLoS BIOLOGY</b><br><a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.0020162">Integrative Annotation of 21,037 Human Genes Validated by Full-Length cDNA Clones</a><br> <br><b>各報道機関の記事</b><br>Science Now<br>朝日新聞<br>共同通信<br>日経バイオテク<br>毎日新聞</p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -918,7 +918,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn040325"><a href="#wn040325">DAD rel. 27 公開</a></h2>
   <div class="news_date">2004年03月25日</div>
-  <div class="news_content">3月25日よりDAD (DDBJ amino acid database) Rel. 27 を公開しています。 DAD rel.27 はエントリ数が1,743,365， 総アミノ残基数が 534,642,804 aa となっています。<br><a href="/download.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
+  <div class="news_content">3月25日よりDAD (DDBJ amino acid database) Rel. 27 を公開しています。 DAD rel.27 はエントリ数が1,743,365， 総アミノ残基数が 534,642,804 aa となっています。<br><a href="/services/index.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -936,7 +936,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn040323"><a href="#wn040323">DDBJ リリース 57 完成</a></h2>
   <div class="news_date">2004年03月23日</div>
-  <div class="news_content">DDBJ が管理・収集している塩基配列データベースは， リリースとして定期的に年4回オンライン上で公開しています。 3月23日に DDBJ リリース57 を完成しました。 リリース57 のエントリ数は 32,693,678，総塩基数は 38,008,449,840 塩基です。<br><a href="/download.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
+  <div class="news_content">DDBJ が管理・収集している塩基配列データベースは， リリースとして定期的に年4回オンライン上で公開しています。 3月23日に DDBJ リリース57 を完成しました。 リリース57 のエントリ数は 32,693,678，総塩基数は 38,008,449,840 塩基です。<br><a href="/services/index.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -1143,7 +1143,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn040109"><a href="#wn040109">DAD rel. 26 公開</a></h2>
   <div class="news_date">2004年01月09日</div>
-  <div class="news_content">1月9日よりDAD (DDBJ amino acid database) Rel. 26 を公開しています。 DAD rel. 26 はエントリ数が1,632,775， 総アミノ残基数が 503,160,878 aa となっています。<br><a href="/download.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
+  <div class="news_content">1月9日よりDAD (DDBJ amino acid database) Rel. 26 を公開しています。 DAD rel. 26 はエントリ数が1,632,775， 総アミノ残基数が 503,160,878 aa となっています。<br><a href="/services/index.html">FTP による定期リリースおよび新着データのダウンロードサイト</a></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -1179,7 +1179,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn040106_2"><a href="#wn040106_2">Gopher サービス終了</a></h2>
   <div class="news_date">2004年01月06日</div>
-  <div class="news_content">DDBJ では 2003年12月26日をもって Gopher サービスを停止致しました。 データの取得には <a href="/download.html">FTP サイト</a>をご利用下さい。</div>
+  <div class="news_content">DDBJ では 2003年12月26日をもって Gopher サービスを停止致しました。 データの取得には <a href="/services/index.html">FTP サイト</a>をご利用下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>

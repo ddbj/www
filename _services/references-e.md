@@ -5,23 +5,23 @@ category: services
 lang: en
 related_pages:
   - title: ARSA Help
-    url: /arsa-help-e.html
+    url: /services/arsa-e.html
   - title: BLAST Help
-    url: /blast-help-e.html
+    url: /services/blast-e.html
   - title: getentry Help
-    url: /getentry-help-e.html
+    url: /services/getentry-e.html
   - title: TXSearch Help
-    url: /txsearch-help-e.html
+    url: /services/txsearch-e.html
   - title: ClustalW Help
-    url: /clustalw-help-e.html
+    url: /services/clustalw-e.html
   - title: VecScreen Help
-    url: /vecscreen-help-e.html
+    url: /services/vecscreen-e.html
   - title: Services in past
-    url: /past-services-e.html
+    url: /services/past-services-e.html
   - title: WABI (Web API for Biology)
-    url: /wabi-e.html
+    url: /services/wabi-e.html
   - title: WABI BLAST Help
-    url: /wabi_blast-help-e.html
+    url: /services/wabi-blast-e.html
 ---
 
 ## Latest publication regarding DDBJ Center <a name="ddbj"></a>
@@ -111,7 +111,7 @@ related_pages:
 
 <br>
 
-  - [DDBJ activity papers（2009 - ）](activities/papers-e.html)
+  - [DDBJ activity papers（2009 - ）](/activities/index-e.html)
   - [Papers of the service that DDBJ provided in the
     past.](past-services-e.html#reference)
 

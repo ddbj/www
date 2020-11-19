@@ -5,11 +5,11 @@ category: services
 lang: ja
 related_pages:
   - title: WABI BLAST ヘルプ
-    url: /wabi_blast-help.html
+    url: /services/wabi-blast.html
   - title: WABI VecScreen ヘルプ
-    url: /wabi_vecscreen-help.html
+    url: /services/wabi-vecscreen.html
   - title: WABI MAFFT ヘルプ
-    url: /wabi_mafft-help.html
+    url: /services/wabi-mafft.html
 ---
 
 ## CLUSTALWのjobの投入 <a name="job"></a>

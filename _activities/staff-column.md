@@ -10,27 +10,27 @@ related_pages:
   - title: DDBJ スタッフの講演発表（2001-2006）
     url: /activities/past-presentations.html
   - title: 相同性検索プログラムBLASTの内部構造
-    url: /column/blast_doc.html
+    url: /activities/blast-doc.html
   - title: DDBJ の塩基配列解析ツールについて
-    url: /column/ddbjpipeline.html
+    url: /activities/ddbj-pipeline.html
   - title: DDBJ アノテータの業務紹介
-    url: /column/annotator.html
+    url: /activities/curators.html
   - title: 「ユーザーの皆様へ，お願いです！」
-    url: /column/request.html
+    url: /activities/request.html
   - title: DDBJ での特許関連配列データの公開業務の紹介
-    url: /column/patent.html
+    url: /activities/patent.html
   - title: 遺伝子とゲノム
-    url: /column/genegenome.html
+    url: /activities/gene-genome.html
   - title: 進化ゲノム学とは
-    url: /column/introevog.html
+    url: /activities/introevog.html
   - title: FASTAとBLASTについて
-    url: /column/homology_doc.html
+    url: /activities/homology-doc.html
   - title: DDBJ Annual Report
-    url: /activities/annualreport.html
+    url: /activities/index.html
   - title: DDBJ Mail Magazine
-    url: /subscribe.html
+    url: /subscribe-ddbj.html
   - title: DDBJ データ解析チャレンジ
-    url: /activities/ddbj-challenge.html
+    url: /activities/training-ddbj-challenge.html
 ---
 
 Mail Magazine 連載期間：No.12（2004年2月2日発行）〜 No.40（2008年10月8日発行）  

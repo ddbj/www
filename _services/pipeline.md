@@ -5,31 +5,31 @@ category: services
 lang: ja
 related_pages:
   - title: ARSA ヘルプ
-    url: /arsa-help.html
+    url: /services/arsa.html
   - title: BLAST ヘルプ
-    url: /blast-help.html
+    url: /services/blast.html
   - title: getentry ヘルプ
-    url: /getentry-help.html
+    url: /services/getentry.html
   - title: VecScreen ヘルプ
-    url: /vecscreen-help.html
+    url: /services/vecscreen.html
   - title: ClustalW ヘルプ
-    url: /clustalw-help.html
+    url: /services/clustalw.html
   - title: TXSearch ヘルプ
-    url: /txsearch-help.html
+    url: /services/txsearch.html
   - title: 過去のサービス
-    url: /past-services.html
+    url: /services/past-services.html
   - title: 関連論文
-    url: /references.html
+    url: /services/references.html
   - title: WABI (Web API for Biology)
-    url: /wabi.html
+    url: /services/wabi.html
   - title: WABI BLAST ヘルプ
-    url: /wabi_blast-help.html
+    url: /services/wabi-blast.html
   - title: WABI ClustalW ヘルプ
-    url: /wabi_clustalw-help.html
+    url: /services/wabi-clustalw.html
   - title: WABI VecScreen ヘルプ
-    url: /wabi_vecscreen-help.html
+    url: /services/wabi-vecscreen.html
   - title: WABI MAFFT ヘルプ
-    url: /wabi_mafft-help.html
+    url: /services/wabi-mafft.html
 ---
 
 ## Basic Analysis(Preprocessing/Mapping/*de novo* Assembly) <a name="basic"></a>
@@ -51,7 +51,7 @@ related_pages:
 2. [Mapping(Reference Alignment)](#mapping)
 3. [*de novo* Assembly](#assembly)
 
-### Preprocessing <a name="DetailPreprocessing"></a>
+### Preprocessing <a name="preprocess"></a>
 
 fastq形式ファイルのQSを各種グラフで参照できます。fastq形式ファイルの編集ができます。
 
@@ -150,7 +150,7 @@ Genomics 1988, 2(3):231-239.
 - [English manual](//sites.google.com/a/g.nig.ac.jp/pipeline_help/)
 - [DBCLS togotv Tutorial video 1 (JP) - Reference Genome Mapping](//togotv.dbcls.jp/20100617.html)
 - [DBCLS togotv Tutorial video 2 (JP) - De novo Assembly](//togotv.dbcls.jp/20110226.html#p01)
-6. DRAアカウント登録はこちらのページです。 [please see the page.](/dra/index-j.html)
+6. DRAアカウント登録はこちらのページです。 [please see the page.](/dra/index.html)
 
 [![]({{ site.baseurl }}/assets/images/help/LOGIN_20120522_1.png)]({{ site.baseurl }}/assets/images/help/LOGIN_20120522_1.png){:.group1}
 
@@ -243,7 +243,7 @@ Genomics 1988, 2(3):231-239.
 ### Preprocessing処理での結果ファイル<a name="Preprocessing"></a>
 
 1. Preprocessingを選択します。
-2. Preprocessing結果ファイルは、「JOB番号\_ファイル名\_e」で表示されています。<br>（BWA Unmap結果ファイルは、「JOB番号_ファイル名.unmapped」で表示されています。
+2. Preprocessing結果ファイルは、「JOB番号\_ファイル名\_e」で表示されています。<br>（BWA Unmap結果ファイルは、「JOB番号_ファイル名.unmapped」で表示されています。<a name="Unmapped"></a>
 3. 使用するファイルをチェックします。
 
 [![]({{ site.baseurl }}/assets/images/help/Selecting-Query-Files_Preprocessing_21.png)]({{ site.baseurl }}/assets/images/help/Selecting-Query-Files_Preprocessing_21.png){:.group1}

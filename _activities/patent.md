@@ -10,25 +10,25 @@ related_pages:
   - title: DDBJ スタッフの講演発表（2001-2006）
     url: /activities/past-presentations.html
   - title: 相同性検索プログラムBLASTの内部構造
-    url: /column/blast_doc.html
+    url: /activities/blast-doc.html
   - title: DDBJ の塩基配列解析ツールについて
-    url: /column/ddbjpipeline.html
+    url: /activities/ddbj-pipeline.html
   - title: DDBJ アノテータの業務紹介
-    url: /column/annotator.html
+    url: /activities/curators.html
   - title: 「ユーザーの皆様へ，お願いです！」
-    url: /column/request.html
+    url: /activities/request.html
   - title: DDBJ スタッフコラム
-    url: /column/staffcolumn.html
+    url: /activities/staff-column.html
   - title: 遺伝子とゲノム
-    url: /column/genegenome.html
+    url: /activities/gene-genome.html
   - title: 進化ゲノム学とは
-    url: /column/introevog.html
+    url: /activities/introevog.html
   - title: FASTAとBLASTについて
-    url: /column/homology_doc.html
+    url: /activities/homology-doc.html
   - title: DDBJ Mail Magazine
-    url: /subscribe.html
+    url: /subscribe-ddbj.html
   - title: DDBJ データ解析チャレンジ
-    url: /activities/ddbj-challenge.html
+    url: /activities/training-ddbj-challenge.html
 ---
 
 DDBJ Mail Magazine 連載期間：No.50（2010年5月27日発行）〜No.54（2010年11月1日発行）,
@@ -89,7 +89,7 @@ DDBJ が提供している検索サービスを使用することにより，先
 
 #### 4-1) 特許データの見分け方
 
-検索されたデータにおいて，アクセッション番号の先頭の英文字(プレフィックス)から特許データであるか，また特許データの由来特許庁を判断することができる。JPO の [プレフィックス](/search/patented_data-j.html) では，E, BD, DD, DJ, DL, DM, FU, FV, FWのアクセッション番号となっている。また特許データの [Division](/ddbj/locus.html#division) は PAT に分類される。そのため公開 FF のアクセッション番号，[LOCUS](/ddbj/flat-file.html#Locus) 
+検索されたデータにおいて，アクセッション番号の先頭の英文字(プレフィックス)から特許データであるか，また特許データの由来特許庁を判断することができる。JPO の プレフィックス では，E, BD, DD, DJ, DL, DM, FU, FV, FWのアクセッション番号となっている。また特許データの Division は PAT に分類される。そのため公開 FF のアクセッション番号，[LOCUS](/ddbj/flat-file.html#LocusB) 
 
 行を確認することで，特許データであるかを確認できる。
 
@@ -171,7 +171,7 @@ KIPO が保持する特許データの多くが，DDBJ からの公開に至っ�
 [getentry](http://getentry.ddbj.nig.ac.jp/top-j.html) では表1に示す様にアクセッション番号もしくは特許公報番号を指定することで，塩基配列データおよびアミノ酸配列データのエントリー検索が可能である。塩基配列データはアクセッション番号検索の他に，特許公報番号でも検索を行うことができる。特許公報番号の検索では JPO 以外に，KIPO，[米国特許商標庁(USPTO)](//www.uspto.gov/)，[欧州特許庁(EPO)](//www.epo.org/) 由来データの検索が可能である。しかしアミノ酸配列データではアクセッション番号検索のみで，特許公報番号での検索は行うことはできない。
 
 <table>
-    <caption>表1：塩基配列/アミノ酸配列データの検索条件<br>＊各特許庁の特許公報番号の種類と検索に指定する入力フォーマットは，<a href="/getentry-help.html#parameter">getentry の HELP</a> を参照。</caption>
+    <caption>表1：塩基配列/アミノ酸配列データの検索条件<br>＊各特許庁の特許公報番号の種類と検索に指定する入力フォーマットは，<a href="/services/getentry.html#parameter">getentry の HELP</a> を参照。</caption>
     <thead>
       <tr>
         <th></th>
@@ -213,7 +213,7 @@ KIPO が保持する特許データの多くが，DDBJ からの公開に至っ�
 表2：ARSA 入力条件例
 
 例1）JPO 由来データを対象に検索したい場合  
-: Advanced Search 画面において Division に PAT を選択し，Primary Accession Number の入力ボックスに E\|BD\|DD\|DJ\|DL\|DM\|FU\|FV\|FW のアクセッション番号プレフィックスを指定することで，JPO 由来データを対象にすることができる。 JPO のアクセッション番号プレフィックスについては順次追加されているため，[最新のプレフィックス](/search/patented_data-j.html)を確認の上，検索を実行して頂きたい。
+: Advanced Search 画面において Division に PAT を選択し，Primary Accession Number の入力ボックスに E\|BD\|DD\|DJ\|DL\|DM\|FU\|FV\|FW のアクセッション番号プレフィックスを指定することで，JPO 由来データを対象にすることができる。 JPO のアクセッション番号プレフィックスについては順次追加されているため， 最新のプレフィックス を確認の上，検索を実行して頂きたい。
 
 例2）同一公報由来の全塩基配列データを検索したい場合  
 : Advanced Search 画面において Division に PAT を選択し，Comment，Keywords，Journal のいずれかの入力ボックスに，配列番号なしの公開番号を入力して検索すると，同一公報由来の塩基配列データを検索することができる。

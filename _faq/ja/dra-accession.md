@@ -27,6 +27,6 @@ lang: ja
 <figure><a href="{{ site.baseurl }}/assets/images/books/sra_object.png" title="メタデータオブジェクト" class="cboxElement"> <img src="{{ site.baseurl }}/assets/images/books/sra_object.png" alt="メタデータオブジェクト" title="メタデータオブジェクト" class="w450"></a>
   <figcaption class="caption">メタデータオブジェクト</figcaption>
 </figure>
-<p>投稿論文で引用する粒度にあわせ，各オブジェクトを引用してください。<a href="/bioproject/faq.html#project-accession">原則として BioProject アクセッション番号の引用はしないでください</a>。</p>
+<p>投稿論文で引用する粒度にあわせ，各オブジェクトを引用してください。<a href="/faq/index.html#project-accession">原則として BioProject アクセッション番号の引用はしないでください</a>。</p>
 <p>規定については論文出版局にお問い合わせください。</p>
 </html>

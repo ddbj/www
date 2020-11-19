@@ -8,9 +8,9 @@ related_pages:
   - title: DDBJ 定期リリース統計
     url: ./ddbj-release
   - title: リリースノート (DDBJ, 16S rRNA, DAD)
-    url: ./relnote
+    url: /ddbj-releases
   - title: 最新リリースの情報
-    url: ./relinfo
+    url: /latest-releases
 addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script><script type='text/javascript' src='/www/assets/js/jquery.charts.js'></script>
 ---
 
@@ -59,7 +59,7 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 {: #ddbj-submission}
 ## DDBJ への登録数
 
-- Web Submission: [Nucleotide Sequence Submission System](/ddbj/websub.html) からの登録
+- Web Submission: [Nucleotide Sequence Submission System](/ddbj/web-submission.html) からの登録
 - MSS Submission: [Mass Submission System](/ddbj/mss.html) からの登録
 - Submission: 登録数
 

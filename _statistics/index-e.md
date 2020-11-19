@@ -8,9 +8,9 @@ related_pages:
   - title: DDBJ Periodic Release Statistics
     url: ./ddbj-release-e
   - title: Release Notes of DDBJ Releases
-    url: ./relnote-e
+    url: /ddbj-releases-e
   - title: Latest Release Information
-    url: ./relinfo-e
+    url: /latest-releases-e
 addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script><script type='text/javascript' src='/www/assets/js/jquery.charts.js'></script>
 ---
 
@@ -56,8 +56,8 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 {: #ddbj-submission}
 ## Data Submission to DDBJ
 
-- Web Submission: [Submission to Nucleotide Sequence Submission System](/ddbj/websub.html)
-- MSS Submission: [Submission to Mass Submission System](/ddbj/mss.html)
+- Web Submission: [Submission to Nucleotide Sequence Submission System](/ddbj/web-submission-e.html)
+- MSS Submission: [Submission to Mass Submission System](/ddbj/mss-e.html)
 - Submission: Number of submission to DDBJ
 
 <div id="ddbj-submission_stat_area"></div>

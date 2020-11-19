@@ -2,22 +2,114 @@
 layout: indexed_content
 title: DDBJ Nucleotide Sequence Submission System (NSSS)
 category: ddbj
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /ddbj/index-e.html
+  - id: submission
+    title: Submission
+    url: /ddbj/submission-e.html
+    children:
+      - title: Before Submission
+        url: /ddbj/submission-e.html
+      - title: Web submission
+        url: /ddbj/web-submission-e.html
+      - title: Mass Submission
+        url: /ddbj/mss-e.html
+      - title: Data Update
+        url: /ddbj/update-e.html
+  - id: search
+    title: Search
+    url: http://ddbj.nig.ac.jp/arsa/?lang=en
+    children:
+      - title: getentry
+        url: http://getentry.ddbj.nig.ac.jp/top-e.html
+      - title: ARSA
+        url: http://ddbj.nig.ac.jp/arsa/?lang=en
+  - id: flat_file
+    title: Flat file
+    url: /ddbj/flat-file-e.html
+    children:
+      - title: Feature key
+        url: /ddbj/features-e.html
+      - title: Qualifier key
+        url: /ddbj/qualifiers-e.html
+      - title: Organism qualifier
+        url: /ddbj/organism-e.html
+      - title: Description of Location
+        url: /ddbj/location-e.html
+      - title: Protein Coding Sequence
+        url: /ddbj/cds-e.html
+      - title: The Genetic Codes
+        url: /ddbj/geneticcode-e.html
+      - title: Codes Used in Sequence Description
+        url: /ddbj/code-e.html
+      - title: Example of Submission
+        url: /ddbj/example-e.html
+  - id: data_categories
+    title: Data categories
+    url: /ddbj/data-categories-e.html
+    children:
+      - title: Data Submission from Genome Project
+        url: /ddbj/genome-e.html
+      - title: Pseudohaplotype
+        url: /ddbj/pseudohaplotype-e.html
+      - title: WGS
+        url: /ddbj/wgs-e.html
+      - title: Metagenome Assembly
+        url: /ddbj/metagenome-assembly-e.html
+      - title: Single amplified genome
+        url: /ddbj/single-amplified-genome-e.html
+      - title: CON
+        url: /ddbj/con-e.html
+      - title: GSS
+        url: /ddbj/gss-e.html
+      - title: HTG
+        url: /ddbj/htg-e.html
+      - title: Submission of environmental sequences
+        url: /ddbj/environmental-e.html
+      - title: ENV
+        url: /ddbj/env-e.html
+      - title: TLS
+        url: /ddbj/tls-e.html
+      - title: Data Submission from Transcriptome Project
+        url: /ddbj/transcriptome-e.html
+      - title: TSA
+        url: /ddbj/tsa-e.html
+      - title: EST
+        url: /ddbj/est-e.html
+      - title: HTC
+        url: /ddbj/htc-e.html
+      - title: Third Party Data (TPA)
+        url: /ddbj/tpa-e.html
+  - id: faq
+    title: FAQ
+    url: /faq/en/index-e.html
+  - id: other
+    title: Other
+    url: /ddbj/index-e.html
+    children:
+      - title: Patent
+        url: /ddbj/patent-data-e.html
+      - title: MGA
+        url: /ddbj/mga-e.html
 lang: en
 related_pages:
   - title: Nucleotide Sequence Submission
-    url: services/submission-e.html
+    url: /ddbj/submission-e.html
   - title: Example of Submission
-    url: flatfile/exsample-e.html
+    url: /ddbj/example-e.html
   - title: Feature Key
-    url: flatfile/features-e.html
+    url: /ddbj/features-e.html
   - title: Qualifier key
-    url: flatfile/qualifiers-e.html
+    url: /ddbj/qualifiers-e.html
   - title: Organism qualifier
-    url: flatfile/organism-e.html
+    url: /ddbj/organism-e.html
   - title: Protein Coding Sequence; CDS feature
-    url: flatfile/env-e.html
+    url: /ddbj/env-e.html
   - title: Description of Location
-    url: flatfile/location-e.html
+    url: /ddbj/location-e.html
 ---
 
 {::options parse_block_html="true" /}
@@ -37,17 +129,17 @@ Before submission, read ["Submission of research data from human subjects"](/pol
 
 <div class="nsss-icon">
 
-[![]({{ site.baseurl }}/assets/images/parts/pdf_icon.svg)](/files/pdf/ddbj/websubHelp_full-e.pdf)
+[![]({{ site.baseurl }}/assets/images/parts/pdf_icon.svg)]({{ site.baseurl }}/assets/files/pdf/ddbj/websubHelp_full-e.pdf)
 
-[Manual](/files/pdf/ddbj/websubHelp_full-e.pdf)
+[Manual]({{ site.baseurl }}/assets/files/pdf/ddbj/websubHelp_full-e.pdf)
 
 </div>
 
 <div class="nsss-icon">
 
-[![]({{ site.baseurl }}/assets/images/parts/info_icon.svg)](/ddbj/websub-help-e.html)
+[![]({{ site.baseurl }}/assets/images/parts/info_icon.svg)](/ddbj/web-submission-help-e.html)
 
-[NSSS HELP](/ddbj/websub-help-e.html)
+[NSSS HELP](/ddbj/web-submission-help-e.html)
 
 </div>
 
@@ -61,7 +153,7 @@ OS
 ## Submission <a name="Submission"></a>
 
 The first-time submission  
-: Please read the descriptions of "[Nucleotide Sequence Submission](/ddbj/submission-e.html)" and "[Categories for Sequence Data](/data-categories-e.html)".
+: Please read the descriptions of "[Nucleotide Sequence Submission](/ddbj/submission.html)" and "[Categories for Sequence Data](/documents/data-categories-e.html)".
 : Maximum number of 1 submission: 1024 (depends on PC environment/sequence length) 
 : [TPA data](/ddbj/tpa-e.html) submission is also acceptable via this system.
 : Check your sequences by [VecScreen](http://ddbj.nig.ac.jp/vecscreen/) to exclude vector sequences before submission.。
@@ -80,8 +172,8 @@ Recommended browsers
 ## Updates/ Questions <a name="Updates/_Questions"></a>
 
   - This system accepts only new submissions. DO NOT send update request via this system.  
-    After getting accession number(s), send request/question from [Update.](/ddbj/updt-e.html).
-  - If you encounter any problem during submission, please contact us with "Submission ID" through [contact form](/contact-e.html).
+    After getting accession number(s), send request/question from [Update.](/ddbj/update-e.html).
+  - If you encounter any problem during submission, please contact us with "Submission ID" through [contact form](/contact-ddbj-e.html).
 
 {::options parse_block_html="true" /}
 <div class="start-button">

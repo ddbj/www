@@ -1,0 +1,81 @@
+#####################################################
+[IDF]
+#
+#
+# Please save this page to disk, and edit it using any spreadsheet program (e.g.,
+# Microsoft Excel, OpenOffice.org Calc). This file can be imported into either of 
+# these applications as a tab-delimited text file. It is highly recommended that
+# you set the cell format to plain text throughout the spreadsheet, to avoid
+# 'helpful' changes made by the spreadsheet application. Once you have completed
+# this spreadsheet please upload it using the submissions webpage alongside your
+# data files:
+#    DRA/DOR submission system D-way:
+#    https://trace.ddbj.nig.ac.jp/D-way/
+#
+# Please see http://trace.ddbj.nig.ac.jp/dor/magetab_overview_e.shtml
+# for information on filling in the IDF and SDRF sections below.
+#
+# All lines beginning with the '#' character are treated as comments and ignored.				
+
+
+# This section contains the top-level information for your experiment.				
+Investigation Title	PUT EXPERIMENT TITLE HERE			
+Experiment Description	PUT EXPERIMENT DESCRIPTION HERE			
+Experimental Design	cell_type_comparison_design	organism_part_comparison_design	in_vitro_design	co-expression_design
+Comment[AEExperimentType]	transcription profiling by high throughput sequencing			
+
+# Please create as many Experimental Factors here as you need to, cell type and organism_part are given as examples only, replace this with whatever is the main variable(s) in your experiment				
+# describe the variables investigated by your experiment.				
+Experimental Factor Name	CELLTYPE	ORGANISM_PART		
+Experimental Factor Type	cell_type	organism_part		
+
+# Quality Control Type examples: dye_swap_quality_control, biological_replicate, technical_replicate"				
+Quality Control Type				
+
+# Dates should be entered in the form YYYY-MM-DD. If you are using MS Excel,	
+# it is recommended that you set your spreadsheet to 'text' format throughout	
+# to help avoid any unwanted changes made by Excel.	
+Public Release Date	
+
+# Please list contact details in columns, below:
+Person Last Name	
+Person First Name	
+Person Mid Initials	
+Person Email	
+Person Phone	
+Person Address	
+Person Affiliation	
+Person Roles	submitter
+
+# Please list all publications associated with this submission, in columns:							
+PubMed ID							
+Publication Author List							
+Publication Title							
+Publication Status							
+
+# The next section describes the protocols used in your							
+# experiment. Please select your own Protocol Names (e.g. 'GROWTH',							
+# 'TREATMENT') for use within this spreadsheet, or re-use ArrayExpress/DOR							
+# protocols by using the assigned ArrayExpress/DOR protocol accession							
+# numbers in your SDRF. If you have already submitted protocols to							
+# ArrayExpress/DOR, you can retrieve these using this web page:"							
+#    http://www.ebi.ac.uk/arrayexpress/				
+Protocol Name	GROWTH	TREATMENT	EXTRACTION	SEQUENCING	DATA_GENERATION	NORMALIZATION	TRANSFORMATION
+Protocol Type	grow	specified_biomaterial_action	nucleic_acid_extraction	sequencing	scanning	bioassay_data_transformation	bioassay_data_transformation
+Protocol Description	<your growth protocol text here>	<your treatment protocol text here>	<your nucleic acid extraction protocol text here>	<your sequencing protocol text here>	<your data generation protocol text here>	<your normalization protocol text here>	<your transformation protocol text here>
+# You MUST sepcify the sequencing platform used, e.g. Illumina Genome Analyzer II, on the line below																												
+Protocol Hardware				<enter name of sequencing platform here>																								
+
+#####################################################																												
+[SDRF]																												
+# The SDRF section contains all the information linking your samples																												
+# to your data files. Please feel free to add as many new																												
+# Characteristics[] or FactorValue[] columns as necessary to																												
+# completely describe your experiment. See this web page for help with																												
+# supported data file formats:																												
+#   http://trace.ddbj.nig.ac.jp/dor/datafiles_seq_e.shtml																												
+#																												
+# The first line below has been filled in with example terms, where possible:																												
+Source Name	Material Type	Characteristics[Organism]	Characteristics[Age]	Unit[TimeUnit]	Characteristics[CellLine]	Characteristics[BioSourceType]	Characteristics[Sex]	Characteristics[BioSourceProvider]	Characteristics[CellType]	Protocol REF	Protocol REF	Protocol REF	Extract Name	Comment[LIBRARY_LAYOUT]	Comment[LIBRARY_SOURCE]	Comment[LIBRARY_STRATEGY]	Comment[LIBRARY_SELECTION]	Protocol REF	Assay Name	Technology Type	Protocol REF	Array Data File	Protocol REF	Derived Array Data File	Protocol REF	Derived Array Data Matrix File	Factor Value[CELLTYPE]	Factor Value[ORGANISMPART]
+# Unique IDs for biosources (experimental starting materials)	# MaterialType term from MGED ontology	# Sample latin species name	"# Sample Age value, e.g. 20 years"	# Time units for Characteristic	# Sample CellLine value	# Sample BioSourceType value	# Sample Sex value	# Sample BioSourceProvider value	# Sample CellType value	"# Growth protocol, where applicable"	# Sample treatment protocol	# RNA/DNA extraction	# Unique IDs for extracts (RNA or DNA)	# either SINGLE or PAIRED	"# one of GENOMIC, NON GENOMIC, SYNTHETIC, VIRAL RNA, OTHER"	"# one of WGS, WCS, CLONE, POOLCLONE, AMPLICON, BARCODE, CLONEEND, FINISHING, ChIP-Seq, MNase-Seq, EST, FL-cDNA, CTS, OTHER"	"# one of RANDOM, PCR, RANDOM PCR, RT-PCR, HMPR, MF, CF-S, CF-M, CF-H, CF-T, MSLL, cDNA, ChIP, MNase, other, unspecified"	# Sequencing protocol	# Unique IDs for assays	# Type of assay	# Data generation protocol	# Unprocessed data file e.g. SRF	# Data normalization	# Normalized data	# Protocol producing final data matrix file	# Final data matrix file(s)	# Value for CELLTYPE Experimental Factor	# Value for ORGANISM Experimental Factor
+Cell culture 1	cell	Homo sapiens		hours						GROWTH	TREATMENT	EXTRACTION	RNA Extract 1	SINGLE	GENOMIC	WGS	RANDOM	SEQUENCING	assay 1	high_throughput_sequencing	DATA_GENERATION		NORMALIZATION		TRANSFORMATION			

@@ -6,11 +6,11 @@ category: www
 lang: en
 related_pages:
   - title: DB out/in statistics
-    url: ./index-e.html
+    url: /statistics/index-e.html
   - title: DDBJ Periodic Release Statistics
-    url: ./ddbj-release-e
+    url: /statistics/ddbj-release-e
   - title: Latest Release Information
-    url: ./relinfo-e
+    url: ./latest-releases-e
 ---
 
 ## Release Notes of DDBJ Releases

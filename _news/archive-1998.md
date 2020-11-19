@@ -27,7 +27,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn981221_2"><a href="#wn981221_2">DDBJリリース36・37に関するおしらせ：配列のバージョン番号の採用</a></h2>
   <div class="news_date">1998年12月21日</div>
-  <div class="news_content">1998年５月に開催された第11回国際実務者会議で，DDBJ, EBI, NCBIは "Nucleotide Sequence ID"と"Protein ID"の導入を決定しました。 Nucleotide Sequence IDは「ACCESSION 番号＋バージョン番号」， Protein IDは「CDS に振る ID＋バージョン番号」で構成される， 特定の配列を示すための ID です。 Nucleotide Sequence IDとProtein IDによる配列の管理はDDBJ, EMBL, GenBank の三者同時に，1999年3月20日に開始し， ＤＤＢＪではリリース37のデータから対応します。 この作業のためＤＤＢＪでは次２回のリリース時期を調整します。 次回のリリース36は1999年１月上旬（従来は１月下旬）に， リリース37は３月（従来は４月）に公開する予定ですのでご注意下さい。<br>＊ Nucleotide SequenceIDとProtein IDについては1998年12月発行の <a href="/files/pdf/activities/offline-news10.pdf">「ＤＤＢＪオフラインニュース No. 10」</a> ＤＤＢＪからのおしらせ をご覧下さい。</div>
+  <div class="news_content">1998年５月に開催された第11回国際実務者会議で，DDBJ, EBI, NCBIは "Nucleotide Sequence ID"と"Protein ID"の導入を決定しました。 Nucleotide Sequence IDは「ACCESSION 番号＋バージョン番号」， Protein IDは「CDS に振る ID＋バージョン番号」で構成される， 特定の配列を示すための ID です。 Nucleotide Sequence IDとProtein IDによる配列の管理はDDBJ, EMBL, GenBank の三者同時に，1999年3月20日に開始し， ＤＤＢＪではリリース37のデータから対応します。 この作業のためＤＤＢＪでは次２回のリリース時期を調整します。 次回のリリース36は1999年１月上旬（従来は１月下旬）に， リリース37は３月（従来は４月）に公開する予定ですのでご注意下さい。<br>＊ Nucleotide SequenceIDとProtein IDについては1998年12月発行の <a href="{{ site.baseurl }}/assets/files/pdf/activities/offline-news10.pdf">「ＤＤＢＪオフラインニュース No. 10」</a> ＤＤＢＪからのおしらせ をご覧下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -45,7 +45,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn981214"><a href="#wn981214">DDBJ オフラインニュースNo. 10発行</a></h2>
   <div class="news_date">1998年12月14日</div>
-  <div class="news_content">ＤＤＢＪでは定期発行物として「DDBJ News Letter」を年1回， 「DDBJオフラインニュース」を年2回お届けしています。 1998年12月に「 DDBJオフラインニュース No. 10」約6,000部を発行しました。<br>このオフラインニュースは，当ホームページ <a href="/archives/pub-archives.html">ＤＤＢＪの発行物</a> から参照いただけます。 また，配布を希望される方はddbj@ddbj.nig.ac.jpまでご連絡下さい。</div>
+  <div class="news_content">ＤＤＢＪでは定期発行物として「DDBJ News Letter」を年1回， 「DDBJオフラインニュース」を年2回お届けしています。 1998年12月に「 DDBJオフラインニュース No. 10」約6,000部を発行しました。<br>このオフラインニュースは，当ホームページ <a href="/activities/archives.html">ＤＤＢＪの発行物</a> から参照いただけます。 また，配布を希望される方はddbj@ddbj.nig.ac.jpまでご連絡下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -297,7 +297,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn980701"><a href="#wn980701">DDBJ オフラインニュースNo. 9発行</a></h2>
   <div class="news_date">1998年07月01日</div>
-  <div class="news_content">ＤＤＢＪでは定期発行物として「DDBJ News Letter」を年1回， 「DDBJオフラインニュース」を年2回お届けしています。 1998年7月に「DDBJオフラインニュース No. 9」約6,000部を配布しました。<br>このオフラインニュースは，当ホームページ <a href="/archives/pub-archives.html"> ＤＤＢＪの発行物</a> から参照いただけます。 また，配布を希望される方はddbj@ddbj.nig.ac.jpまでご連絡下さい。</div>
+  <div class="news_content">ＤＤＢＪでは定期発行物として「DDBJ News Letter」を年1回， 「DDBJオフラインニュース」を年2回お届けしています。 1998年7月に「DDBJオフラインニュース No. 9」約6,000部を配布しました。<br>このオフラインニュースは，当ホームページ <a href="/activities/archives.html"> ＤＤＢＪの発行物</a> から参照いただけます。 また，配布を希望される方はddbj@ddbj.nig.ac.jpまでご連絡下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>

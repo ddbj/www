@@ -7,10 +7,10 @@ lang: ja
 ---
 
 <ul class="nav">
-    <li><a href="/files/pdf/30th/shinbun_all.pdf">「遺伝子バンク30年」第1回 - 第16回（静岡新聞連載記事）</a></li>
-    <li><a href="/stats/release.html#total_data">DDBJ Database Release History</a>（DDBJリリースのエントリ数、塩基数の推移）</li>
-    <li><a href="/statistics.html">DDBJ ニュースレター アーカイブ</a>（過去のDDBJ発行物アーカイブ）</li>
-    <li><a href="/files/pdf/30th/NIG_and_DDBJ_Symposium.pdf">2017年国立遺伝学研究所 国際シンポジウム／DDBJ ３０周年記念シンポジウム</a></li>
+    <li><a href="{{ site.baseurl }}/assets/files/pdf/30th/shinbun_all.pdf">「遺伝子バンク30年」第1回 - 第16回（静岡新聞連載記事）</a></li>
+    <li><a href="/statistics/ddbj-release.html#total_data">DDBJ Database Release History</a>（DDBJリリースのエントリ数、塩基数の推移）</li>
+    <li><a href="/statistics/index.html">DDBJ ニュースレター アーカイブ</a>（過去のDDBJ発行物アーカイブ）</li>
+    <li><a href="{{ site.baseurl }}/assets/files/pdf/30th/NIG_and_DDBJ_Symposium.pdf">2017年国立遺伝学研究所 国際シンポジウム／DDBJ ３０周年記念シンポジウム</a></li>
 </ul>
 <ul class="timeline">
     <li>
@@ -85,7 +85,7 @@ lang: ja
             <li>解析プログラムの提供（計算機資源の提供は無し）</li>
             </ul>
         <p>米国で開発されたDNA配列検索とアラインメントプログラムが日本で初めて富士通 F160M で稼働</p>
-        <p><a href="/files/pdf/activities/newsletter1.pdf"> ニュースレターNo1</a> 発行</p>
+        <p><a href="{{ site.baseurl }}/assets/files/pdf/activities/newsletter1.pdf"> ニュースレターNo1</a> 発行</p>
         </div>
     </li>
     <li>
@@ -105,7 +105,7 @@ lang: ja
         <div class="content">
         <p class="ddbj feb">遺伝情報研究センター棟竣工</p>
         <p class="ddbj mar">（FACOM M-380Q) 運用開始。公衆回線（電話、パケット）によるサービス開始</p>
-        <h3 class="ddbj jul"><a href="/files/pdf/30th/ddbjrelnote_01.pdf">DDBJ リリース1</a> 完成</h3>
+        <h3 class="ddbj jul"><a href="{{ site.baseurl }}/assets/files/pdf/30th/ddbjrelnote_01.pdf">DDBJ リリース1</a> 完成</h3>
         <p>66エントリ・108970 塩基<br>当初は DDBJ で入力したデータのみ</p>
         <p class="ddbj nov">電話回線、パケット回線による DDBJ へのオンラインアクセス可能に</p>
         <p class="ddbj dec">遺伝情報研究センター長　丸山毅夫教授死去</p>
@@ -137,7 +137,7 @@ lang: ja
     <li>
         <p class="date">1992</p>
         <div class="content">
-        <h3 class="ddbj jan"><a href="/files/pdf/30th/ddbjrelnote_10.pdf">Release10 公開</a></h3>
+        <h3 class="ddbj jan"><a href="{{ site.baseurl }}/assets/files/pdf/30th/ddbjrelnote_10.pdf">Release10 公開</a></h3>
         <p>今回より GenBank/EMBL のデータも含めた形となり、名実ともに「国際DNAデータベース」となった<br>
             59,233 エントリ・77,701,394 塩基<br>
             Feature Table 中のfeatrue key もGenBank/EMBL と共通のものを使用<br>

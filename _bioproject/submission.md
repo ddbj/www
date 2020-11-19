@@ -3,6 +3,29 @@ layout: indexed_content
 title: DDBJ BioProject Handbook
 pathname: submission
 category: bioproject
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /bioproject/index.html
+  - id: handbook
+    title: Handbook
+    url: /bioproject/submission.html
+  - id: faq
+    title: FAQ
+    url: /faq/ja/index.html
+  - id: search
+    title: Search
+    url: http://ddbj.nig.ac.jp/BPSearch/
+  - id: downloads
+    title: Downloads
+    url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/bioproject
+    children:
+      - title: XML Schema
+        url: https://github.com/ddbj/pub/tree/master/docs/bioproject/xsd
+  - id: about bioProject
+    title: About BioProject
+    url: /bioproject/about-bioproject.html
 lang: ja
 ---
 
@@ -90,7 +113,7 @@ DDBJ BioProject に登録されたプライマリープロジェクトは「即�
 
 「非公開」の場合，登録されたプライマリープロジェクトはリンクされている DDBJ，DRA，DTA，DOR レコードが公開されるまで非公開に保たれます。プロジェクトデータの公開予定日を設定することはできません。 プライマリープロジェクトはリンクされている DDBJ レコードが公開されると自動的に公開されます。 一方，プライマリープロジェクトの公開はリンクされている DDBJ レコードの公開を引き起こしません。あるプライマリープロジェクトにおいて，リンクされているレコードの公開は同一プロジェクトに属している他のレコードの公開を引き起こしません。DDBJ レコードの公開はリンクしているプロジェクトの公開とは独立しています。
 
-FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp_bs_seq_release.html)
+FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp-bs-seq-release.html)
 
 {::nomarkdown}
 {% include image.html url="submission/um_pri_visibility.jpg" caption="アンブレラプロジェクトとプライマリープロジェクト間の関係の可視性" class="w500" %}
@@ -116,7 +139,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 
 以降，関連するプライマリープロジェクトを登録する際には [Umbrella BioProject](/bioproject/submission.html#Area_linked-project) に親となるアンブレラの PRJDB 番号を記入してください。 登録したプライマリープロジェクトが公開されると，自動的に指定したアンブレラに関連付けられます。
 
-過去に登録したプライマリープロジェクトをアンブレラの傘下に追加したい場合は，アンブレラと追加したいプライマリープロジェクトの PRJDB 番号を [DDBJ BioProject にお知らせください](/contact.html)。
+過去に登録したプライマリープロジェクトをアンブレラの傘下に追加したい場合は，アンブレラと追加したいプライマリープロジェクトの PRJDB 番号を [DDBJ BioProject にお知らせください](/contact-ddbj.html)。
 
 <span class="red">公開されているアンブレラに関連付けたことによって非公開のプライマリープロジェクトが公開されることはありません。</span>
 
@@ -848,7 +871,7 @@ BioProject を新規登録する場合は左のタブから順番に内容を英
 prefix は NCBI が一括管理しています。プロジェクトを投稿する段階で，NCBI に prefix を予約しにいきます。予約済みの場合はエラーになるので，再度希望する prefix を入力して投稿します。
 
 <div class="attention red">
-複数の prefix の取得を希望する場合は [BioProject チームに連絡します](/contact.html)。
+複数の prefix の取得を希望する場合は [BioProject チームに連絡します](/contact-ddbj.html)。
 </div>
 
 {::nomarkdown}
@@ -905,7 +928,7 @@ prefix は NCBI が一括管理しています。プロジェクトを投稿す�
 
 ### プロジェクトの更新 <a name="update"></a>
 
-登録が完了したデータを更新することができます。[メッセージフォーム](/contact.html)よりご連絡ください。
+登録が完了したデータを更新することができます。[メッセージフォーム](/contact-ddbj.html)よりご連絡ください。
 
 ### プロジェクトと配列データのリンク <a name="link-experimental-data-project"></a>
 

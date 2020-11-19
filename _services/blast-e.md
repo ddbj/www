@@ -5,23 +5,23 @@ category: services
 lang: en
 related_pages:
   - title: ARSA Help
-    url: /arsa-help-e.html
+    url: /services/arsa-e.html
   - title: getentry Help
-    url: /getentry-help-e.html
+    url: /services/getentry-e.html
   - title: TXSearch Help
-    url: /txsearch-help-e.html
+    url: /services/txsearch-e.html
   - title: ClustalW Help
-    url: /clustalw-help-e.html
+    url: /services/clustalw-e.html
   - title: VecScreen Help
-    url: /vecscreen-help-e.html
+    url: /services/vecscreen-e.html
   - title: References
-    url: /references-e.html
+    url: /services/references-e.html
   - title: Services in past
-    url: /past-services-e.html
+    url: /services/past-services-e.html
   - title: WABI (Web API for Biology)
-    url: /wabi-e.html
+    url: /services/wabi-e.html
   - title: WABI BLAST Help
-    url: /wabi_blast-help-e.html
+    url: /services/wabi-blast-e.html
 ---
 
 ## PROGRAM <a name="program"></a>
@@ -213,7 +213,7 @@ specified each other.
 |  RefSeq AA  |  Refseq(Protein)  |
 
 {: .tablecaption}
-<span class="red">*</span> Please check the current version is from [here.](/stats/relinfo-e.html)
+<span class="red">*</span> Please check the current version is from [here.](/latest-releases-e.html)
 
 
 #### DIVISION(DAD) <a name="DIVISIONDAD"></a>

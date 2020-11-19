@@ -24,7 +24,7 @@ lang: ja
   </div>
   <div id="violated" class="faq">
     <p class="question">constraint violated while executing function within virtual database module</p>
-    <p class="answer"><a href="/dra/faq.html#data-files-sra">リード名が Run 単位でユニーク</a>ではない可能性があります。</p>
+    <p class="answer"><a href="/faq/index.html#data-files-sra">リード名が Run 単位でユニーク</a>ではない可能性があります。</p>
   </div>
   <div id="path_not_found" class="faq">
     <p class="question">path not found while accessing directory within file system module - no message text available</p>

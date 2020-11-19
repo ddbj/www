@@ -3,13 +3,57 @@ layout: indexed_content
 title: Example of metadata
 pathname: example-e
 category: dra
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /dra/index-e.html
+  - id: handbook
+    title: Handbook
+    url: /dra/submission-e.html
+    children:
+      - title: Metadata examples
+        url: https://docs.google.com/spreadsheets/d/1DTdUQ-WWOMjOA2eYQWmFYUB24hJysuwhvHLJoDFX4rc/edit#gid=0
+      - title: XML examples
+        url: /dra/example-e.html
+      - title: XML schema
+        url: https://github.com/ddbj/pub/tree/master/docs/dra
+  - id: faq
+    title: FAQ
+    url: /faq/en/index-e.html
+  - id: search
+    title: Search
+    url: https://ddbj.nig.ac.jp/DRASearch/
+  - id: downloads
+    title: Downloads
+    url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq
+    children:
+      - title: FASTQ
+        url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq
+      - title: SRA
+        url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/sralite/ByExp/litesra/
+      - title: XML Schema
+        url: https://github.com/ddbj/pub/tree/master/docs/dra/xsd
+  - id: about dra
+    title: About DRA
+    url: /dra/about-dra-e.html
+panels:
+- title: Search
+  url: https://ddbj.nig.ac.jp/DRASearch/
+  icon: ../assets/images/icon-search_analysis.png
+- title: How_to_submit
+  url: /dra/submission-e.html
+  icon: ../assets/images/icon-search_analysis.png
+- title: Login_and_submit
+  url: https://ddbj.nig.ac.jp/D-way/
+  icon: ../assets/images/icon-search_analysis.png
 lang: en
 ---
 
 {::options parse_block_html="true" /}
 <div class="attention red">
 The DRA metadata submission tool cannot describe technical reads (adapter, primer and barcode sequences). When sequencing data contain technical reads to be submitted,
-[submitters need to create ExperimentXML files](/dra/submission-e.html#create-metadata-in-xml-files)
+[submitters need to create ExperimentXML files](/dra/submission.html#create-metadata-in-xml-files)
 and describe technical reads in the \<SPOT_DESCRIPTOR>.
 </div>
 
@@ -56,7 +100,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/submission-e.html#Instrument)
+[Platform](/dra/submission.html#Instrument)
 
 | Platform | Instrument Model    |
 | -------- | ------------------- |
@@ -127,7 +171,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/submission-e.html#Instrument)
+[Platform](/dra/submission.html#Instrument)
 
 | Platform | Instrument Model    |
 | -------- | ------------------- |
@@ -168,7 +212,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/submission-e.html#Instrument)
+[Platform](/dra/submission.html#Instrument)
 
 | Platform | Instrument Model             | Sequence Length |
 | -------- | ---------------------------- | --------------- |
@@ -217,7 +261,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/submission-e.html#Instrument)
+[Platform](/dra/submission.html#Instrument)
 
 | Platform | Instrument Model             | Sequence Length |
 | -------- | ---------------------------- | --------------- |
@@ -260,7 +304,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/submission-e.html#Instrument)
+[Platform](/dra/submission.html#Instrument)
 
 | Platform  | Instrument Model    | Sequence Length |
 | --------- | ------------------- | --------------- |
@@ -310,7 +354,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/submission-e.html#Instrument)
+[Platform](/dra/submission.html#Instrument)
 
 | Platform  | Instrument Model    | Sequence Length |
 | --------- | ------------------- | --------------- |
@@ -351,7 +395,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/submission-e.html#Instrument)
+[Platform](/dra/submission.html#Instrument)
 
 | Platform    | Instrument Model       | Sequence Length |
 | ----------- | ---------------------- | --------------- |
@@ -388,7 +432,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/submission-e.html#Instrument)
+[Platform](/dra/submission.html#Instrument)
 
 | Platform     | Instrument Model |
 | ------------ | ---------------- |
@@ -441,7 +485,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 </SPOT_DESCRIPTOR>
 ```
 
-[Platform](/dra/submission-e.html#Instrument)
+[Platform](/dra/submission.html#Instrument)
 
 | Platform     | Instrument Model |
 | ------------ | ---------------- |

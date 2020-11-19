@@ -3,6 +3,38 @@ layout: indexed_content
 title: Sample attributes
 pathname: attribute-e
 category: biosample
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /biosample/index-e.html
+  - id: handbook
+    title: Handbook
+    url: /biosample/submission-e.html
+  - id: sample attribute
+    title: Sample Attribute
+    url: /biosample/attribute-e.html
+    children:
+      - title: Example files
+        url: https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482
+  - id: validation rules
+    title: Validation Rules
+    url: /biosample/validation-e.html
+  - id: faq
+    title: FAQ
+    url: /faq/en/index-e.html
+  - id: search
+    title: Search
+    url: http://ddbj.nig.ac.jp/BSSearch/
+  - id: downloads
+    title: Downloads
+    url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/biosample
+    children:
+      - title: XML Schema
+        url: https://github.com/ddbj/pub/tree/master/docs/biosample/xsd
+  - id: about bioProject
+    title: About BioProject
+    url: /biosample/about-biosample-e.html
 lang: en
 ---
 
@@ -24,7 +56,7 @@ lang: en
 
   - [Login & Submit](https://ddbj.nig.ac.jp/D-way)
   - [Policies and Disclaimers](/policies-e.html)
-  - [Contact](/contact-e.html)
+  - [Contact](/contact-ddbj-e.html)
   - [Japanese](/biosample/attribute.html)
 
 </div>
@@ -72,7 +104,7 @@ lang: en
   - ### ![](/images/logos/database-org.svg)Databases
 
   - [Annotated/Assembled Sequences
-    (DDBJ)](/ddbj/index-e.html "Annotated/Assembled Sequences (DDBJ)")
+    (DDBJ)](/ddbj/index.html "Annotated/Assembled Sequences (DDBJ)")
 
   - [Sequence Read Archive
     (DRA)](/dra/index-e.html "Sequence Read Archive")
@@ -151,18 +183,18 @@ BI-DDBJ Web Sites Annotated/Assembled Sequences Sequence Read Archive
 <div id="header-bottom">
 
   - [Home](/biosample/index-e.html)
-  - [Handbook](/biosample/submission-e.html)
+  - [Handbook](/biosample/submission.html)
   - [Sample
     Attribute![](/images/parts/arrow_down.svg)](/biosample/attribute-e.html)
       - [Example
         files](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482)
   - [Validation Rules](/biosample/validation-e.html)
-  - [FAQ](/biosample/faq-e.html)
+  - [FAQ](/faq/en/index-e.html)
   - [Search](http://ddbj.nig.ac.jp/BSSearch/)
   - [Download![](/images/parts/arrow_down.svg)](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/biosample)
       - [XML
         Schema](https://github.com/ddbj/pub/tree/master/docs/biosample/xsd)
-  - [About Biosample](/biosample/about-e.html)
+  - [About Biosample](/biosample/about-biosample-e.html)
 
 </div>
 
@@ -191,7 +223,7 @@ List all sample attributes
 <div id="sample_type">
 
 [Sample type (Core
-Package)](/biosample/submission-e.html#Area_core-package)
+Package)](/biosample/submission.html#Area_core-package)
 
   - 
     
@@ -200,7 +232,7 @@ Package)](/biosample/submission-e.html#Area_core-package)
     </div>
     
     [Genome, metagenome or marker sequences (MIxS
-    compliant)](/biosample/submission-e.html#MIxS_Sample)
+    compliant)](/biosample/submission.html#MIxS_Sample)
     
       - 
         
@@ -209,7 +241,7 @@ Package)](/biosample/submission-e.html#Area_core-package)
         </div>
         
         Environmental/Metagenome Genomic Sequences
-        [(MIMS)](/biosample/submission-e.html#Meta_Genomic_Sequences_Sample)
+        [(MIMS)](/biosample/submission.html#Meta_Genomic_Sequences_Sample)
     
       - 
         
@@ -218,7 +250,7 @@ Package)](/biosample/submission-e.html#Area_core-package)
         </div>
         
         Cultured Bacterial/Archaeal Genomic Sequences
-        [(MIGS)](/biosample/submission-e.html#Genomic_Sequences_Sample)
+        [(MIGS)](/biosample/submission.html#Genomic_Sequences_Sample)
     
       - 
         
@@ -227,7 +259,7 @@ Package)](/biosample/submission-e.html#Area_core-package)
         </div>
         
         Eukaryotic Genomic Sequences
-        [(MIGS)](/biosample/submission-e.html#Genomic_Sequences_Sample)
+        [(MIGS)](/biosample/submission.html#Genomic_Sequences_Sample)
     
       - 
         
@@ -236,7 +268,7 @@ Package)](/biosample/submission-e.html#Area_core-package)
         </div>
         
         Viral Genomic Sequences
-        [(MIGS)](/biosample/submission-e.html#Genomic_Sequences_Sample)
+        [(MIGS)](/biosample/submission.html#Genomic_Sequences_Sample)
     
       - 
         
@@ -245,7 +277,7 @@ Package)](/biosample/submission-e.html#Area_core-package)
         </div>
         
         Specimen Marker Sequences
-        [(MIMARKS)](/biosample/submission-e.html#Marker_Sequences_Sample)
+        [(MIMARKS)](/biosample/submission.html#Marker_Sequences_Sample)
     
       - 
         
@@ -254,7 +286,7 @@ Package)](/biosample/submission-e.html#Area_core-package)
         </div>
         
         Survey related Marker Sequences
-        [(MIMARKS)](/biosample/submission-e.html#Marker_Sequences_Sample)
+        [(MIMARKS)](/biosample/submission.html#Marker_Sequences_Sample)
 
   - 
     
@@ -263,7 +295,7 @@ Package)](/biosample/submission-e.html#Area_core-package)
     </div>
     
     [Functional genomics samples (e.g. transcriptome, epigenetics
-    etc)](/biosample/submission-e.html#functional_genomics_samples)
+    etc)](/biosample/submission.html#functional_genomics_samples)
 
   - 
     
@@ -272,14 +304,14 @@ Package)](/biosample/submission-e.html#Area_core-package)
     </div>
     
     [Other samples (e.g. transcriptome, epigenetics
-    etc)](/biosample/submission-e.html#General_Sample)
+    etc)](/biosample/submission.html#General_Sample)
 
 </div>
 
 <div id="env_package">
 
 [Environmental package (MIxS
-Sample)](/submission-e.html#Environmental_package)
+Sample)](/services/index.html#Environmental_package)
 
   - 
     
@@ -432,10 +464,10 @@ packages.](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wb
     Disclaimers](/policies-e.html "Policies and Disclaimers")
   - [News](/news/en/index-e.html "News archives")
   - [FAQs](/faq/en/index-e.html "Frequently asked questions")
-  - [Sitemap](/sitemap-e.html "Sitemap")
+  - [Sitemap](/sitemaps-e.html "Sitemap")
   - [Calendar](/calendar-e.html "DDBJ Center Calendar")
-  - [Address](/access-e.html "DDBJ Center address")
-  - [Contact](/contact-e.html "Contact to DDBJ Center")
+  - [Address](/ddbj-access-e.html "DDBJ Center address")
+  - [Contact](/contact-ddbj-e.html "Contact to DDBJ Center")
   - Last modified: 2019-02-26
 
 </div>

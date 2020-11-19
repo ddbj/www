@@ -20,7 +20,7 @@ trace データは [DDBJ Sequence Read Archive](/dra/submission.html#dra) で受
 
 必要な項目は [STRATEGY](#STRATEGY) と [TRACE_TYPE_CODE](#TRACE_TYPE_CODE) の組み合わせで決まります。 メタデータは [NCBI Trace Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi?cmd=retrieve&f=retrieve&m=obtain&s=search) で検索することができます。
 
-必須項目は [Validation Table](/files/submission/field_matrix_current.xls) で確認してください。
+必須項目は [Validation Table]({{ site.baseurl }}/assets/files/submission/field_matrix_current.xls) で確認してください。
 
 必須<span class="red">*</span>  
 STRATEGY と TRACE_TYPE_CODE の組み合わせによっては必須 <span class="conditionally_required">*</span>
@@ -1198,7 +1198,7 @@ TOP_DIRECTORY/traces/FLJ/FLJA1U0002.scf
 TOP_DIRECTORY/traces/FLJ/FLJA1U0003.scf
 ```
 
-[メタデータ](#metadata)ファイルは XML かタブ区切りテキストファイル形式にします。 STRATEGY と TRACE_TYPE_CODE の組み合わせで必須になるメタデータ項目一覧は [Validation Table](/files/submission/field_matrix_current.xls) をご覧ください。どちらの形式のメタデータでも最初に共通項目のセクションを含めることができます。 このセクションには各 trace に共通する項目を記載します。
+[メタデータ](#metadata)ファイルは XML かタブ区切りテキストファイル形式にします。 STRATEGY と TRACE_TYPE_CODE の組み合わせで必須になるメタデータ項目一覧は [Validation Table]({{ site.baseurl }}/assets/files/submission/field_matrix_current.xls) をご覧ください。どちらの形式のメタデータでも最初に共通項目のセクションを含めることができます。 このセクションには各 trace に共通する項目を記載します。
 
 以下は TRACEINFO メタデータファイルの例です。
 
@@ -1258,7 +1258,7 @@ F-3NB691000033  3NB691000033    3NB691  3NB691000033    ./traces/F-3NB691000033.
 
 ### 登録用ファイルのアップロード <a name="upload-submission-files"></a>
 
-[DTA チームに連絡](/contact.html)し，登録用ディレクトリの作成を依頼します。 [マニュアル](/dra/submission.html#upload-sequence-data)に従いファイルを SCP で転送します。
+[DTA チームに連絡](/contact-ddbj.html)し，登録用ディレクトリの作成を依頼します。 [マニュアル](/dra/submission.html#upload-sequence-data)に従いファイルを SCP で転送します。
 
 #### 登録ディレクトリの例 <a name="登録ディレクトリの例">
 
@@ -1276,4 +1276,4 @@ submission/submitter_id/dta/dta_submitter_id-0001
 
 ### データの更新 <a name="update"></a>
 
-データを更新するときは [DTA チームまでご連絡ください](/contact.html)。
+データを更新するときは [DTA チームまでご連絡ください](/contact-ddbj.html)。

@@ -16,10 +16,10 @@ lang: ja
   <!-- Nucleotide Sequence Submission System -->
 </p>
 <dl><dt><span style="color: #ff0000">注意</span></dt>
-  <dd><a href="/ddbj/websub-help.html#flow-7">7.Annotation</a> の画面でアノテーションを入力後、以下の操作を行うと入力したアノテーションが消去される仕様になっております。
+  <dd><a href="/ddbj/web-submission-help.html#flow-7">7.Annotation</a> の画面でアノテーションを入力後、以下の操作を行うと入力したアノテーションが消去される仕様になっております。
     <ul>
-      <li><a href="/ddbj/websub-help.html#flow-5">5.Sequence</a> 画面に戻って配列を変更する</li>
-      <li><a href="/ddbj/websub-help.html#flow-6">6.Template</a> 画面に戻ってテンプレートを変更する</li>
+      <li><a href="/ddbj/web-submission-help.html#flow-5">5.Sequence</a> 画面に戻って配列を変更する</li>
+      <li><a href="/ddbj/web-submission-help.html#flow-6">6.Template</a> 画面に戻ってテンプレートを変更する</li>
     </ul>
   </dd>
 </dl>

@@ -17,7 +17,7 @@ lang: ja
 </p>
 <p><strong>1.</strong> CDS の読み枠 (フレーム) を示す /<a href="/ddbj/qualifiers.html#codon_start">codon_start</a> は正しく記載されているでしょうか。<br> 1, 2, 3 から適切な読み枠を選択してください。</p>
 <dl><dt>参考:</dt>
-  <dd><a href="/ddbj/cds.html#frame" title="/sub/cds-j.html#frame">codon_start qualifier による翻訳開始の位置補正</a></dd>
+  <dd><a href="/ddbj/cds.html#frame" title="/sub/cds.html#frame">codon_start qualifier による翻訳開始の位置補正</a></dd>
   <dd><a href="/faq/ja/how-to-fix-error-msg-first-codon.html">“First codon [***] is not a start codon.” / “Final codon [***] is not a stop codon.” というエラーが表示されました</a></dd>
   <dd><a href="/faq/ja/how-to-fix-error-msg-codon-start.html">“Value of [ codon_start ] is not 1, but [###..###] is 5′ complete type.” というエラーが表示されました</a></dd>
 </dl>

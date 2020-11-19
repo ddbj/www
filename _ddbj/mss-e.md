@@ -2,22 +2,114 @@
 layout: indexed_content
 title: MSS - Mass Submission System
 category: ddbj
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /ddbj/index-e.html
+  - id: submission
+    title: Submission
+    url: /ddbj/submission-e.html
+    children:
+      - title: Before Submission
+        url: /ddbj/submission-e.html
+      - title: Web submission
+        url: /ddbj/web-submission-e.html
+      - title: Mass Submission
+        url: /ddbj/mss-e.html
+      - title: Data Update
+        url: /ddbj/update-e.html
+  - id: search
+    title: Search
+    url: http://ddbj.nig.ac.jp/arsa/?lang=en
+    children:
+      - title: getentry
+        url: http://getentry.ddbj.nig.ac.jp/top-e.html
+      - title: ARSA
+        url: http://ddbj.nig.ac.jp/arsa/?lang=en
+  - id: flat_file
+    title: Flat file
+    url: /ddbj/flat-file-e.html
+    children:
+      - title: Feature key
+        url: /ddbj/features-e.html
+      - title: Qualifier key
+        url: /ddbj/qualifiers-e.html
+      - title: Organism qualifier
+        url: /ddbj/organism-e.html
+      - title: Description of Location
+        url: /ddbj/location-e.html
+      - title: Protein Coding Sequence
+        url: /ddbj/cds-e.html
+      - title: The Genetic Codes
+        url: /ddbj/geneticcode-e.html
+      - title: Codes Used in Sequence Description
+        url: /ddbj/code-e.html
+      - title: Example of Submission
+        url: /ddbj/example-e.html
+  - id: data_categories
+    title: Data categories
+    url: /ddbj/data-categories-e.html
+    children:
+      - title: Data Submission from Genome Project
+        url: /ddbj/genome-e.html
+      - title: Pseudohaplotype
+        url: /ddbj/pseudohaplotype-e.html
+      - title: WGS
+        url: /ddbj/wgs-e.html
+      - title: Metagenome Assembly
+        url: /ddbj/metagenome-assembly-e.html
+      - title: Single amplified genome
+        url: /ddbj/single-amplified-genome-e.html
+      - title: CON
+        url: /ddbj/con-e.html
+      - title: GSS
+        url: /ddbj/gss-e.html
+      - title: HTG
+        url: /ddbj/htg-e.html
+      - title: Submission of environmental sequences
+        url: /ddbj/environmental-e.html
+      - title: ENV
+        url: /ddbj/env-e.html
+      - title: TLS
+        url: /ddbj/tls-e.html
+      - title: Data Submission from Transcriptome Project
+        url: /ddbj/transcriptome-e.html
+      - title: TSA
+        url: /ddbj/tsa-e.html
+      - title: EST
+        url: /ddbj/est-e.html
+      - title: HTC
+        url: /ddbj/htc-e.html
+      - title: Third Party Data (TPA)
+        url: /ddbj/tpa-e.html
+  - id: faq
+    title: FAQ
+    url: /faq/en/index-e.html
+  - id: other
+    title: Other
+    url: /ddbj/index-e.html
+    children:
+      - title: Patent
+        url: /ddbj/patent-data-e.html
+      - title: MGA
+        url: /ddbj/mga-e.html
 lang: en
 related_pages:
   - title: Submission File Format
-    url: /ddbj/file-format-e.html)
+    url: /ddbj/file-format-e.html
   - title: Validation tools for MSS data files
-    url: /ddbj/mss-tool-e.html)
+    url: /ddbj/mss-tool-e.html
   - title: UME User’s manual
-    url: /ddbj/ume-e.html)
+    url: /ddbj/ume-e.html
   - title: Parser User’s Manual
-    url: /ddbj/parser-e.html)
+    url: /ddbj/parser-e.html
   - title: transChecker User’s Manual
-    url: /ddbj/transchecker-e.html)
+    url: /ddbj/transchecker-e.html
   - title: Validator error message
-    url: /ddbj/validator-e.html)
+    url: /ddbj/validator-e.html
   - title: Application form for MSS
-    url: /ddbj/mass-form-e.html)
+    url: /ddbj/mss-form-e.html
 ---
 
 <span class="red">Submission of research data from human subjects</span>
@@ -44,7 +136,7 @@ We at DDBJ recommend using MSS when:
     System (NSSS)  
     → [EST](/ddbj/est-e.html), STS, [TSA](/ddbj/tsa-e.html),
     [HTC](/ddbj/htc-e.html), [GSS](/ddbj/gss-e.html),
-    [HTG](/sub/htg-e.html), [WGS](/ddbj/wgs-e.html),
+    [HTG](/ddbj/htg-e.html), [WGS](/ddbj/wgs-e.html),
     [CON](/ddbj/con-e.html), [TLS](/ddbj/tls-e.html)
   - the submission with long sequences.  
     → greater than 500 kb in its length
@@ -57,11 +149,11 @@ We at DDBJ recommend using MSS when:
 </div>
 
 Otherwise, DDBJ recommends using the [DDBJ Nucleotide Sequence
-Submission System (NSSS)](/ddbj/websub-e.html) .
+Submission System (NSSS)](/ddbj/web-submission-e.html) .
 
 If you are to submit reads from sequencers, please refer [DRA; DDBJ
 Sequence Read Archive](/dra/index-e.html).  
-Please confirm [Categories for Sequence Data](/data-categories-e.html).
+Please confirm [Categories for Sequence Data](/documents/data-categories-e.html).
 
 ## The Flow of MSS <a name="flow"></a>
 
@@ -69,7 +161,7 @@ Please confirm [Categories for Sequence Data](/data-categories-e.html).
 
 ### 1. Application <a name="flow-1"></a>
 
-Please apply for your submission from [MSS application　form](/ddbj/mass-form-e.html).
+Please apply for your submission from [MSS application　form](/ddbj/mss-form-e.html).
 
 After confirmation, we will introduce submission procedures in detail.
 
@@ -197,7 +289,7 @@ to use file transfer by SCP using public/private key pair.
 D-way](https://ddbj.nig.ac.jp/D-way/) to get D-way login account and
 to upload files.  
 For detail, see [Upload sequence
-data](/dra/submission-e.html#upload-sequence-data%0A) or Tutorial
+data](/dra/submission.html#upload-sequence-data%0A) or Tutorial
 movies.
 : **Tutorial movies**
 : Generate key pair（[Windows](https://youtu.be/Aos7KR6XwUw) /
@@ -209,9 +301,9 @@ movies.
 
 If you do not set any hold-date, your data will be released
 immediately.  
-When you set a [hold-date](/ddbj/submission-e.html#hold-date) for your
+When you set a [hold-date](/ddbj/submission.html#hold-date) for your
 data, we will release your data according to [Principle of
-"Hold-Until-Published" data release](/data-release-policy-e.html).
+"Hold-Until-Published" data release](/documents/data-release-policy-e.html).
 
 Based on your sequence and annotation files, your data will be processed
 and publicized into the DDBJ format, so called "[flat

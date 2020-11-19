@@ -3,6 +3,36 @@ layout: indexed_content
 title: Download steps
 pathname: download-e
 category: jga
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /jga/index-e.html
+  - id: browse researches at nbdc
+    title: Browse researches at NBDC
+    url: https://humandbs.biosciencedbc.jp/en/data-use/all-researches
+    children:
+      - title: DDBJ Search
+        url: https://ddbj.nig.ac.jp/search
+  - id: submission
+    title: Submission
+    url: /jga/submission-e.html
+    children:
+      - title: How to submit
+        url: /jga/submission-step-e.html
+      - title: How to access data
+        url: /jga/download-e.html
+      - title: Groups
+        url: /jga/group-e.html
+      - title: Example submission
+        url: https://docs.google.com/spreadsheets/d/1HHlxItj89fQv2oWUNBIHZ4VVGwbcC09WGD5tEiXAQZ4/edit#gid=744299318
+      - title: Updates in 2020
+        url: /jga/update-202009-e.html
+      - title: XML Schema
+        url: https://github.com/ddbj/pub/tree/master/docs/jga/xsd/
+  - id: faq
+    title: FAQ
+    url: /faq/en/index-e.html
 lang: en
 ---
 
@@ -149,7 +179,7 @@ The following error is displayed when access from single account exceeds "1". Lo
 
 {::options parse_block_html="true" /}
 <div class="attention red">
-For all hard drive request please contact [JGA team](/contact-e.html) and let us know the permitted datasets you would like to have transferred.
+For all hard drive request please contact [JGA team](/contact-ddbj-e.html) and let us know the permitted datasets you would like to have transferred.
 </div>
 
 <span class="red">If you would like the data in hard disk, please prepare the USB hard disk drive (filesystem should be NTFS, ext3 or ext4) with enough space for the approved dataset. Be sure to virus check the entire filesystem and send us the empty drive.</span>

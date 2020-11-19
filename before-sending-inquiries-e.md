@@ -9,7 +9,7 @@ lang: en
 ## Before sending inquiry to us
 
 Since we carry out DDBJ services within the limited number of members, we have to prioritize our tasks.  
-Please contact us via [web form](/contact-e.html#to-ddbj) or mail. 
+Please contact us via [web form](/contact-ddbj-e.html#to-ddbj) or mail. 
 In principle, we do not accept any inquiry via phone call.  
 Please see the following manners before sending your questions to us. If your inquiry violates the manners, we will assign lower priority to it.
 In cases of the extreme violations, we can not reply the questions.
@@ -44,7 +44,7 @@ Have you provided enough data to answer to your inquiry?
 It would overspend both of your time and our efforts.
 : Please describe your data concretely, not abstractly, if you do not have to conceal details of your data.
 : Some of DDBJ services assign IDs to the objects. So, please send the IDs for your objects, when something wrong with it. Then we can easily specify the corresponding objects, and we may be able to reply your inquiry earlier. Depending on services, such ID may be included in the URL. If so, please send the URL to us.
-: Please describe your PC environment, names of OS and browser that you use, if necessary. We assume that you use our services in the recommended environments. For our web services, please use [recommended browsers](/faq/en/recommended-os-browser-e.html).
+: Please describe your PC environment, names of OS and browser that you use, if necessary. We assume that you use our services in the recommended environments. For our web services, please use [recommended browsers](/faq/en/recommended-os-browser.html).
 : When you state only "It does not work", "I can not do ....", "I tried many things" or some, it expresses nothing to us. So, we could not understand what did you do. Please concretely describe the process of what you did and what kind of difficulty or trouble you encountered so that we can reproduce the situation.
 
 Error messages include many data.  

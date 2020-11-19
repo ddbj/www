@@ -5,23 +5,23 @@ category: services
 lang: en
 related_pages:
   - title: BLAST Help
-    url: /blast-help-e.html
+    url: /services/blast-e.html
   - title: getentry Help
-    url: /getentry-help-e.html
+    url: /services/getentry-e.html
   - title: TXSearch Help
-    url: /txsearch-help-e.html
+    url: /services/txsearch-e.html
   - title: ClustalW Help
-    url: /clustalw-help-e.html
+    url: /services/clustalw-e.html
   - title: VecScreen Help
-    url: /vecscreen-help-e.html
+    url: /services/vecscreen-e.html
   - title: References
-    url: /references-e.html
+    url: /services/references-e.html
   - title: Services in past
-    url: /past-services-e.html
+    url: /services/past-services-e.html
   - title: WABI (Web API for Biology)
-    url: /wabi-e.html
+    url: /services/wabi-e.html
   - title: WABI BLAST Help
-    url: /wabi_blast-help-e.html
+    url: /services/wabi-blast-e.html
 ---
 
 ## Searchable DataBases <a name="database"></a>
@@ -176,92 +176,92 @@ Reference: ['Available Fields'](http://ddbj.nig.ac.jp/arsa/quick_search?lang=en)
           <tr>
             <td><span>PrimaryAccessionNumber</span></td>
             <td><span>pa</span></td>
-            <td><a href="/ddbj/flat-file-e.html#Accession">"Accession number" that is described at the head of<span>ACCESSION</span></a></td>
+            <td><a href="/ddbj/flat-file-e.html#AccessionB">"Accession number" that is described at the head of<span>ACCESSION</span></a></td>
             <td><span>AB999999</span></td>
           </tr>
           <tr>
             <td><span>AccessionNumber</span></td>
             <td><span>an</span></td>
-            <td><a href="/ddbj/flat-file-e.html#Accession">"Accession number" in <span>ACCESSION</span></a></td>
+            <td><a href="/ddbj/flat-file-e.html#AccessionB">"Accession number" in <span>ACCESSION</span></a></td>
             <td><span>AB999999, AB888888, AB777777</span></td>
           </tr>
           <tr>
             <td><span>Division</span></td>
             <td><span>dv</span></td>
-            <td><a href="/ddbj/flat-file-e.html#Locus">"Division" in <span>LOCUS</span></a></td>
+            <td><a href="/ddbj/flat-file-e.html#LocusB">"Division" in <span>LOCUS</span></a></td>
             <td><span>HUM</span></td>
           </tr>
           <tr>
             <td><span>SequenceLength</span></td>
             <td><span>sl</span></td>
-            <td><a href="/ddbj/flat-file-e.html#Locus">"Sequence length" in <span>LOCUS</span></a></td>
+            <td><a href="/ddbj/flat-file-e.html#LocusB">"Sequence length" in <span>LOCUS</span></a></td>
             <td><span>450</span></td>
           </tr>
           <tr>
             <td><span>MolecularType</span></td>
             <td><span>mt</span></td>
-            <td><a href="/ddbj/flat-file-e.html#Locus">"Molecular type" in <span>LOCUS</span></a></td>
+            <td><a href="/ddbj/flat-file-e.html#LocusB">"Molecular type" in <span>LOCUS</span></a></td>
             <td><span>mRNA</span></td>
           </tr>
           <tr>
             <td><span>MolecularForm</span></td>
             <td><span>mf</span></td>
-            <td><a href="/ddbj/flat-file-e.html#Locus">"Molecular form" in <span>LOCUS</span></a></td>
+            <td><a href="/ddbj/flat-file-e.html#LocusB">"Molecular form" in <span>LOCUS</span></a></td>
             <td><span>linear</span></td>
           </tr>
           <tr>
             <td><span>Date</span></td>
             <td><span>dt</span></td>
-            <td><a href="/ddbj/flat-file-e.html#Locus">"Last published date"in <span>LOCUS</span></a></td>
+            <td><a href="/ddbj/flat-file-e.html#LocusB">"Last published date"in <span>LOCUS</span></a></td>
             <td><span>01-JUN-2009</span></td>
           </tr>
           <tr>
             <td><span>Definition</span></td>
             <td><span>df</span></td>
-            <td><a href="/ddbj/flat-file-e.html#Definition">Text in <span>DEFINITION</span></a></td>
+            <td><a href="/ddbj/flat-file-e.html#DefinitionB">Text in <span>DEFINITION</span></a></td>
             <td><span>Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate<br>
               dehydrogenase, partial cds.</span></td>
           </tr>
           <tr>
             <td><span>Comment</span></td>
             <td><span>cm</span></td>
-            <td><a href="/ddbj/flat-file-e.html#Comment">Text in <span>COMMENT</span></a></td>
+            <td><a href="/ddbj/flat-file-e.html#CommentB">Text in <span>COMMENT</span></a></td>
             <td><span>Human cDNA sequencing project.</span></td>
           </tr>
           <tr>
             <td><span>Keyword</span></td>
             <td><span>kw</span></td>
-            <td><a href="/ddbj/flat-file-e.html#Keywords">Text in <span>KEYWORDS</span></a></td>
+            <td><a href="/ddbj/flat-file-e.html#KeywordsB">Text in <span>KEYWORDS</span></a></td>
             <td><span>HTC, HTC_FLI, oligo capping</span></td>
           </tr>
           <tr>
             <td><span>Organism</span></td>
             <td><span>og</span></td>
-            <td><a href="/ddbj/flat-file-e.html#Source">ORGANISM in <span>ORGANISM</span></a></td>
+            <td><a href="/ddbj/flat-file-e.html#SourceB">ORGANISM in <span>ORGANISM</span></a></td>
             <td><span>Homo sapiens</span></td>
           </tr>
           <tr>
             <td><span>Lineage</span></td>
             <td><span>ln</span></td>
-            <td><a href="/ddbj/flat-file-e.html#Source">"Lineage" in <span>ORGANISM</span></a></td>
+            <td><a href="/ddbj/flat-file-e.html#SourceB">"Lineage" in <span>ORGANISM</span></a></td>
             <td><span>Eukaryota, Metazoa, ..., Hominidae, Homo</span></td>
           </tr>
           <tr>
             <td><span>ReferenceAuthor</span></td>
             <td><span>ra</span></td>
-            <td><a href="/ddbj/flat-file-e.html#Reference1">Text in <span>AUTHORS</span> of <span>REFERENCE</span></a></td>
+            <td><a href="/ddbj/flat-file-e.html#Reference1B">Text in <span>AUTHORS</span> of <span>REFERENCE</span></a></td>
             <td><span>Mishima,H. , Shizuoka,T. , Fuji,I.</span></td>
           </tr>
           <tr>
             <td><span>ReferenceTitle</span></td>
             <td><span>rt</span></td>
-            <td><a href="/ddbj/flat-file-e.html#Reference1">Text in <span>TITLE</span> of <span>REFERENCE</span></a></td>
+            <td><a href="/ddbj/flat-file-e.html#Reference1B">Text in <span>TITLE</span> of <span>REFERENCE</span></a></td>
             <td><span>Direct Submission , Glyceraldehyde-3-phosphate dehydrogenase expressed in human liver</span></td>
           </tr>
           <tr>
             <td><span>ReferenceJournal</span></td>
             <td><span>rj</span></td>
-            <td><a href="/ddbj/flat-file-e.html#Reference1">Text in <span>JOURNAL</span> of  <span>REFERENCE</span></a></td>
+            <td><a href="/ddbj/flat-file-e.html#Reference1B">Text in <span>JOURNAL</span> of  <span>REFERENCE</span></a></td>
             <td><span>Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.<br>
               Contact:Hanako Mishima<br>
               National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,<br>
@@ -277,7 +277,7 @@ Reference: ['Available Fields'](http://ddbj.nig.ac.jp/arsa/quick_search?lang=en)
           <tr>
             <td><span>Feature</span></td>
             <td><span>fe</span></td>
-            <td><a href="/ddbj/flat-file-e.html#Features">"Text of Feature" in <span>FEATURES</span></a></td>
+            <td><a href="/ddbj/flat-file-e.html#FeaturesB">"Text of Feature" in <span>FEATURES</span></a></td>
             <td><pre><code>source 1..450
 /chromosome="12" 
 /clone="GT200015" 
@@ -301,7 +301,7 @@ VFTDKDKAVAQLKGGAKKV" </code></pre></td>
           <tr>
             <td><span>FeatureQualifier</span></td>
             <td><span>fq</span></td>
-            <td><a href="/ddbj/flat-file-e.html#Features">"Text of Qualifier" in <span>FEATURES</span></a></td>
+            <td><a href="/ddbj/flat-file-e.html#FeaturesB">"Text of Qualifier" in <span>FEATURES</span></a></td>
             <td><pre><code>source 1..450
 source /chromosome=12
 CDS /translation=MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT

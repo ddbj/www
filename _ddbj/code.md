@@ -3,6 +3,98 @@ layout: indexed_content
 title: 配列の記載に用いる略号
 pathname: code
 category: ddbj
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /ddbj/index.html
+  - id: submission
+    title: Submission
+    url: /ddbj/submission.html
+    children:
+      - title: 塩基配列の登録
+        url: /ddbj/submission.html
+      - title: Web 版塩基配列登録システム
+        url: /ddbj/web-submission.html
+      - title: Mass Submission System
+        url: /ddbj/mss.html
+      - title: 登録データの修正・更新
+        url: /ddbj/update.html
+  - id: search
+    title: Search
+    url: http://ddbj.nig.ac.jp/arsa/?lang=ja
+    children:
+      - title: getentry
+        url: http://getentry.ddbj.nig.ac.jp/top-j.html
+      - title: ARSA
+        url: http://ddbj.nig.ac.jp/arsa/?lang=ja
+  - id: flat_file
+    title: Flat file
+    url: /ddbj/flat-file.html
+    children:
+      - title: Feature key の定義
+        url: /ddbj/features.html
+      - title: Qualifier key の定義
+        url: /ddbj/qualifiers.html
+      - title: Organism qualifier に記載する生物名
+        url: /ddbj/organism.html
+      - title: Location の記述法
+        url: /ddbj/location.html
+      - title: タンパク質コード配列
+        url: /ddbj/cds.html
+      - title: The Genetic Codes
+        url: /ddbj/geneticcode.html
+      - title: 配列の記載に用いる略号
+        url: /ddbj/code.html
+      - title: 登録の見本
+        url: /ddbj/example.html
+  - id: data_categories
+    title: Data categories
+    url: /ddbj/data-categories.html
+    children:
+      - title: Genome project のデータ登録
+        url: /ddbj/genome.html
+      - title: Pseudohaplotype
+        url: /ddbj/pseudohaplotype.html
+      - title: WGS
+        url: /ddbj/wgs.html
+      - title: メタゲノムアセンブリ
+        url: /ddbj/metagenome-assembly.html
+      - title: Single amplified genome
+        url: /ddbj/single-amplified-genome.html
+      - title: CON
+        url: /ddbj/con.html
+      - title: GSS
+        url: /ddbj/gss.html
+      - title: HTG
+        url: /ddbj/htg.html
+      - title: Environmental sequence の登録
+        url: /ddbj/environmental.html
+      - title: ENV
+        url: /ddbj/env.html
+      - title: TLS
+        url: /ddbj/tls.html
+      - title: Transcriptome Project のデータ登録
+        url: /ddbj/transcriptome.html
+      - title: TSA
+        url: /ddbj/tsa.html
+      - title: EST
+        url: /ddbj/est.html
+      - title: HTC
+        url: /ddbj/htc.html
+      - title: Third Party Data (TPA)
+        url: /ddbj/tpa.html
+  - id: faq
+    title: FAQ
+    url: /faq/ja/index.html
+  - id: other
+    title: Other
+    url: /ddbj/index-e.html
+    children:
+      - title: Patent
+        url: /ddbj/patent-data.html
+      - title: MGA
+        url: /ddbj/mga.html
 lang: ja
 related_pages:
   - title: The Genetic Codes
@@ -42,8 +134,8 @@ related_pages:
 | t    | t                | thymine in DNA; uracil in RNA |
 | m    | a or c           | amino                         |
 | r    | a or g           | purine                        |
-| w    | a or t           |    空白                        |
-| s    | c or g           |    空白                        |
+| w    | a or t           |                               |
+| s    | c or g           |                               |
 | y    | c or t           | pyrimidine                    |
 | k    | g or t           | keto                          |
 | v    | a or c or g      | not t                         |
@@ -55,7 +147,7 @@ related_pages:
 [参考文献]
 
   - Cornish-Bowden, A. Nucl Acid Res 13, 3021-3030 (1985)
-  - [Feature Table Definition](/ddbj/full_index.html): [7.4.1 Nucleotide base codes (IUPAC)](/ddbj/full_index.html#7.4.1)
+  - [Feature Table Definition](/ddbj/feature-table.html): [7.4.1 Nucleotide base codes (IUPAC)](/ddbj/feature-table.html#7.4.1)
 
 ### Modified Base Abbreviations <a name="nucleotide-2"></a>
 
@@ -128,8 +220,8 @@ related_pages:
     in Cornish\_Bowden, A. Nucl Acid Res 13, 3021-3030 (1985)the
     IUPAC-IUB declined to recommend a set of abbreviations for modified
     nucleotides)
-  - [Feature Table Definition](/ddbj/full_index.html): [7.4.2 Modified
-    base abbreviations](/ddbj/full_index.html#7.4.2)
+  - [Feature Table Definition](/ddbj/feature-table.html): [7.4.2 Modified
+    base abbreviations](/ddbj/feature-table.html#7.4.2)
 
 ## アミノ酸 <a name="amino"></a>
 
@@ -173,7 +265,7 @@ related_pages:
 [参考文献]
 
   - IUPAC-IUB Joint Commission on Biochemical Nomenclature.Nomenclature and Symbolism for Amino Acids and Peptides. Eur. J. Biochem. 138: 9-37 (1984).
-  - [Feature Table Definition](/ddbj/full_index.html): [7.4.3 Amino acid abbreviations](/ddbj/full_index.html#7.4.3)
+  - [Feature Table Definition](/ddbj/feature-table.html): [7.4.3 Amino acid abbreviations](/ddbj/feature-table.html#7.4.3)
 
 ### Modified and Unusual Amino Acids<a name="amino-2"></a> 
 
@@ -215,4 +307,4 @@ related_pages:
 
 [参考文献]
 
-  - [Feature Table Definition](/ddbj/full_index.html): [7.4.4 Modified and unusual Amino Acids](/ddbj/full_index.html#7.4.4)
+  - [Feature Table Definition](/ddbj/feature-table.html): [7.4.4 Modified and unusual Amino Acids](/ddbj/feature-table.html#7.4.4)

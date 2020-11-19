@@ -3,6 +3,52 @@ layout: indexed_content
 title: Submissions Overview
 pathname: overview-e
 category: gea
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /gea/index-e.html
+  - id: submission overview
+    title: Submission Overview
+    url: /gea/overview-e.html
+    children:
+      - title: Submit microarray experiment
+        url: /gea/submit-array-e.html
+      - title: Submit sequencing experiment
+        url: /gea/submit-sequence-e.html
+      - title: Metadata
+        url: /gea/metadata-e.html
+      - title: Data File
+        url: /gea/datafile-e.html
+      - title: Validation
+        url: /gea/validation-e.html
+      - title: Single-cell submission guide
+        url: /gea/single-cell-e.html
+      - title: Example
+        url: /gea/example-e.html
+      - title: Array Design
+        url: /gea/adf-e.html
+      - title: Data matrix
+        url: /gea/matrix-e.html
+      - title: Reviewer Access
+        url: /gea/reviewer-access-e.html
+  - id: faq
+    title: FAQ
+    url: /faq/en/index-e.html
+  - id: search
+    title: Search (AOE)
+    url: http://aoe.dbcls.jp/
+    children:
+      - title: RefEx
+        url: http://refex.dbcls.jp/index.php?lang=en
+      - title: Search (ArrayExpress)
+        url: https://www.ebi.ac.uk/arrayexpress/browse.html
+  - id: downloads
+    title: Downloads
+    url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/gea
+  - id: about gea
+    title: About GEA
+    url: /gea/about-gea-e.html
 lang: en
 ---
 
@@ -30,7 +76,7 @@ Microarray-based and sequencing-based submissions should follow the [MIAME](http
 <li>HiC-seq</li>
 <li>methyl-seq, bisulfite-seq</li>
 </ul>
-<p>If you have questions about whether GEA can accept your data type, please <a href="/contact-e.html">contact us</a>.</p></td>
+<p>If you have questions about whether GEA can accept your data type, please <a href="/contact-ddbj-e.html">contact us</a>.</p></td>
 <td><ul>
 <li>human data that require controlled access (submit to <a href="/jga/index-e.html">JGA</a>)</li>
 <li>transcript assemblies (submit directly to <a href="/dra/submission-e.html">DRA</a> and the <a href="/ddbj/tsa-e.html">Transcriptome Shotgun Assembly of DDBJ</a>)</li>
@@ -40,7 +86,7 @@ Microarray-based and sequencing-based submissions should follow the [MIAME](http
 <li>survey sequencing, whole exome (submit directly to <a href="/dra/submission-e.html">DRA</a>)</li>
 <li>metabolomics and proteomics data (submit proteomics data to <a href="https://jpostdb.org/">jPOST</a>)</li>
 </ul>
-<p>For information on how to submit these types of data, please refer to the <a href="/submission-e.html">DDBJ website</a>.</p></td>
+<p>For information on how to submit these types of data, please refer to the <a href="/services/index.html">DDBJ website</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -64,7 +110,7 @@ Microarray-based and sequencing-based submissions should follow the [MIAME](http
 
 ### Sequencing experiment <a name="seq-exp"></a>
 
-[Submit sequencing experiment](/gea/submit-seq-e.html)
+[Submit sequencing experiment](/gea/submit-sequence-e.html)
 
   - [Metadata IDF and SDRF](/gea/metadata-e.html)
   - [Raw data (should be pre-registered to](/gea/datafile-e.html#seq_raw) [DRA](/dra/submission-e.html))
@@ -81,7 +127,7 @@ Accessions numbers are generated when sufficient metadata and data files are pro
 
 ## Data release <a name="rel"></a>
 
-The data can be kept private until your paper is published. You can set the hold date for a maximum of 4 years and can change it. Registered records are released according to the [Data Release Policy](/data-release-policy-e.html).
+The data can be kept private until your paper is published. You can set the hold date for a maximum of 4 years and can change it. Registered records are released according to the [Data Release Policy](/documents/data-release-policy-e.html).
 
 ## Reviewer access <a name="reviewer-access"></a>
 
@@ -89,4 +135,4 @@ Submitters are able to generate an access token for journal reviewers after a pr
 
 ## Update <a name="update"></a>
 
-After submitting data to GEA, please [contact us](/contact-e.html) to update or withdraw your data.
+After submitting data to GEA, please [contact us](/contact-ddbj-e.html) to update or withdraw your data.

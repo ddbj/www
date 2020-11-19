@@ -3,6 +3,38 @@ layout: indexed_content
 title: DDBJ BioSample Handbook
 pathname: submission-e
 category: biosample
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /biosample/index-e.html
+  - id: handbook
+    title: Handbook
+    url: /biosample/submission-e.html
+  - id: sample attribute
+    title: Sample Attribute
+    url: /biosample/attribute-e.html
+    children:
+      - title: Example files
+        url: https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482
+  - id: validation rules
+    title: Validation Rules
+    url: /biosample/validation-e.html
+  - id: faq
+    title: FAQ
+    url: /faq/en/index-e.html
+  - id: search
+    title: Search
+    url: http://ddbj.nig.ac.jp/BSSearch/
+  - id: downloads
+    title: Downloads
+    url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/biosample
+    children:
+      - title: XML Schema
+        url: https://github.com/ddbj/pub/tree/master/docs/biosample/xsd
+  - id: about bioProject
+    title: About BioProject
+    url: /biosample/about-biosample-e.html
 lang: en
 ---
 
@@ -12,7 +44,7 @@ lang: en
 
 [The BioSample database](/biosample/index-e.html)was developed to serve as a central location in which to store descriptive information about biological samples used to generate experimental data in any of primary data archives.
 
-Following figure depicts how BioSample records are organized and linked with other objects. This example is composed of one umbrella project that encompasses three subprojects, each of which generated data derived from two BioSample records. Users can query either the BioProject or the BioSample database to retrieve the relevant records, and then navigate through links to the corresponding experimental data which continue to be stored in DDBJ's primary data archives, [DDBJ](/ddbj/index-e.html%20), [DRA](/dra/index-e.html) and [DOR](/dor/index-e.html).
+Following figure depicts how BioSample records are organized and linked with other objects. This example is composed of one umbrella project that encompasses three subprojects, each of which generated data derived from two BioSample records. Users can query either the BioProject or the BioSample database to retrieve the relevant records, and then navigate through links to the corresponding experimental data which continue to be stored in DDBJ's primary data archives, [DDBJ](/ddbj/index-e.html), [DRA](/dra/index-e.html) and [DOR](/dor/index-e.html).
 
 {::nomarkdown}
 {% include image.html url="submission/biosample_integration.jpg" caption="Overview of BioSample and BioProject integration with other DDBJ databases" class="w450" %}
@@ -22,7 +54,7 @@ Following figure depicts how BioSample records are organized and linked with oth
 
 Given the huge diversity of sample types handled by archival databases, and the fact that appropriate sample descriptions are often dependent on the context of the study, the definition of what a BioSample represents is deliberately flexible. Typical examples of a BioSample include a cell line, a primary tissue biopsy, an individual organism or an environmental isolate.
 
-Biological and technical replicates are represented by separate BioSamples with distinct 'replicate' attribute, e.g., 'biological replicate 1' and 'biological replicate 2'. [FAQ: How many samples do I need for my DRA submission?](/biosample/faq-e.html#samples-for-sra)
+Biological and technical replicates are represented by separate BioSamples with distinct 'replicate' attribute, e.g., 'biological replicate 1' and 'biological replicate 2'. [FAQ: How many samples do I need for my DRA submission?](/faq/en/samples-for-sra)
 
 Information about the sample will include:
 
@@ -60,7 +92,7 @@ Related news: [Changes in organism strain information management](/news/en/2013-
 
 ### Antibiogram <a name="antibiogram"></a>
 
-An antibiogram table can be included in a BioSample record (Example: [SAMN07958491](https://www.ncbi.nlm.nih.gov/biosample/SAMN07958491)). To submit the table, please contact [BioSample team](/contact-e.html).
+An antibiogram table can be included in a BioSample record (Example: [SAMN07958491](https://www.ncbi.nlm.nih.gov/biosample/SAMN07958491)). To submit the table, please contact [BioSample team](/contact-ddbj-e.html).
 
 For the antibiogram submission guidelines, please see the NCBI BioSample pages.
 
@@ -393,8 +425,8 @@ Hold date cannot be set for BioSample.
 
 The submitted sample data can be kept private. Sample data are automatically released when the linked DDBJ record(s) is published. The release of the BioSample record does not trigger the release of private DDBJ sequence record(s) referencing this BioSample accession.However, the release of the BioSample record does trigger the release of referencing BioProject.
 
-FAQ: [How are linked BioProject/BioSample/sequence data released?](/faq/en/bp_bs_seq_release-e.html)
+FAQ: [How are linked BioProject/BioSample/sequence data released?](/faq/en/bp-bs-seq-release.html)
 
 ### Update BioSample <a name="update-biosample"></a>
 
-It is possible to update data after registration. Please contact us from [Message form](/contact-e.html).
+It is possible to update data after registration. Please contact us from [Message form](/contact-ddbj-e.html).

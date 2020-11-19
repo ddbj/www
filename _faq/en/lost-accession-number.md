@@ -12,7 +12,7 @@ lang: en
 
 ## I lost my accession number
 
-<p>If you have specific ID for your data other than accession number, such as EntryID or any, contact us from <a href="/contact-e.html#to-ddbj">contact form</a> with ID and E-mail address of <a href="/ddbj/submission-e.html#contact">contact person</a>. <br>In case of uncertain, tell us following items as far as you know, then we will search your data. </p>
+<p>If you have specific ID for your data other than accession number, such as EntryID or any, contact us from <a href="/contact-ddbj-e.html#to-ddbj">contact form</a> with ID and E-mail address of <a href="/ddbj/submission.html#contact">contact person</a>. <br>In case of uncertain, tell us following items as far as you know, then we will search your data. </p>
 <ul>
   <li>Your name</li>
   <li>Your affiliation at the time of submission</li>

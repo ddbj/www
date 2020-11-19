@@ -19,4 +19,4 @@ lang: en
   <li>The line feed code of annotation file must be in LF (unix format) or CR-LF (windows format). </li>
   <li>You have to use correct names for <a href="/ddbj/features-e.html">feature</a> and <a href="/ddbj/qualifiers-e.html">qualifier</a> keys. </li>
 </ul>
-<p>If you still have any problem, contact us from <a href="/contact-e.html#to-ddbj">contact form</a>.</p>
+<p>If you still have any problem, contact us from <a href="/contact-ddbj-e.html#to-ddbj">contact form</a>.</p>

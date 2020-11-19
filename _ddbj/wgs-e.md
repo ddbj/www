@@ -3,32 +3,124 @@ layout: indexed_content
 title: WGS
 pathname: wgs-e
 category: ddbj
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /ddbj/index-e.html
+  - id: submission
+    title: Submission
+    url: /ddbj/submission-e.html
+    children:
+      - title: Before Submission
+        url: /ddbj/submission-e.html
+      - title: Web submission
+        url: /ddbj/web-submission-e.html
+      - title: Mass Submission
+        url: /ddbj/mss-e.html
+      - title: Data Update
+        url: /ddbj/update-e.html
+  - id: search
+    title: Search
+    url: http://ddbj.nig.ac.jp/arsa/?lang=en
+    children:
+      - title: getentry
+        url: http://getentry.ddbj.nig.ac.jp/top-e.html
+      - title: ARSA
+        url: http://ddbj.nig.ac.jp/arsa/?lang=en
+  - id: flat_file
+    title: Flat file
+    url: /ddbj/flat-file-e.html
+    children:
+      - title: Feature key
+        url: /ddbj/features-e.html
+      - title: Qualifier key
+        url: /ddbj/qualifiers-e.html
+      - title: Organism qualifier
+        url: /ddbj/organism-e.html
+      - title: Description of Location
+        url: /ddbj/location-e.html
+      - title: Protein Coding Sequence
+        url: /ddbj/cds-e.html
+      - title: The Genetic Codes
+        url: /ddbj/geneticcode-e.html
+      - title: Codes Used in Sequence Description
+        url: /ddbj/code-e.html
+      - title: Example of Submission
+        url: /ddbj/example-e.html
+  - id: data_categories
+    title: Data categories
+    url: /ddbj/data-categories-e.html
+    children:
+      - title: Data Submission from Genome Project
+        url: /ddbj/genome-e.html
+      - title: Pseudohaplotype
+        url: /ddbj/pseudohaplotype-e.html
+      - title: WGS
+        url: /ddbj/wgs-e.html
+      - title: Metagenome Assembly
+        url: /ddbj/metagenome-assembly-e.html
+      - title: Single amplified genome
+        url: /ddbj/single-amplified-genome-e.html
+      - title: CON
+        url: /ddbj/con-e.html
+      - title: GSS
+        url: /ddbj/gss-e.html
+      - title: HTG
+        url: /ddbj/htg-e.html
+      - title: Submission of environmental sequences
+        url: /ddbj/environmental-e.html
+      - title: ENV
+        url: /ddbj/env-e.html
+      - title: TLS
+        url: /ddbj/tls-e.html
+      - title: Data Submission from Transcriptome Project
+        url: /ddbj/transcriptome-e.html
+      - title: TSA
+        url: /ddbj/tsa-e.html
+      - title: EST
+        url: /ddbj/est-e.html
+      - title: HTC
+        url: /ddbj/htc-e.html
+      - title: Third Party Data (TPA)
+        url: /ddbj/tpa-e.html
+  - id: faq
+    title: FAQ
+    url: /faq/en/index-e.html
+  - id: other
+    title: Other
+    url: /ddbj/index-e.html
+    children:
+      - title: Patent
+        url: /ddbj/patent-data-e.html
+      - title: MGA
+        url: /ddbj/mga-e.html
 lang: en
 related_pages:
   - title: Data Submission from Genome Project
-    url: datacategories/genome-e.html
+    url: /ddbj/genome-e.html
   - title: CON
-    url: datacategories/con-e.html
+    url: /ddbj/con-e.html
   - title: GSS
-    url: datacategories/gss-e.html
+    url: /ddbj/gss-e.html
   - title: HTG
-    url: datacategories/htg-e.html
+    url: /ddbj/htg-e.html
   - title: Submission of environmental sequences
-    url: datacategories/environmental-e.html
+    url: /ddbj/environmental-e.html
   - title: ENV
-    url: datacategories/env-e.html
+    url: /ddbj/env-e.html
   - title: TLS
-    url: datacategories/tls-e.html
+    url: /ddbj/tls-e.html
   - title: Data Submission from Transcriptome Project
-    url: datacategories/transcriptome-e.html
+    url: /ddbj/transcriptome-e.html
   - title: TSA
-    url: datacategories/tsa-e.html
+    url: /ddbj/tsa-e.html
   - title: EST
-    url: datacategories/est-a.html
+    url: /ddbj/est-a.html
   - title: HTC
-    url: datacategories/htc-e.html
+    url: /ddbj/htc-e.html
   - title: Third Party Data (TPA)
-    url: datacategories/tpa-e.html
+    url: /ddbj/tpa-e.html
 ---
 
 The whole genome shotgun approach (the whole genome is once blasted into millions of fragment, which are sequenced and reassembled to produce a series of sequence 'scaffolds'.) has been used to sequence the genome of various organisms.
@@ -42,18 +134,18 @@ You can submit WGS data to DDBJ via [Mass Submission System (MSS)](/ddbj/mss-e.h
 
 <dl>
   <dt>Acceptable WGS data</dt>
-  <dd>In principle, DDBJ/ENA/GenBank can accept assemblies (i.e. overlapping reads) that are appropriately assembled sequences and can not accept redundant reads (i.e. raw read sequences). If you wish to publicize raw read sequences, we recommend you to contact <a href="/dra/index.html">DDBJ Sequence Read Archive (DRA)</a> instead of DDBJ/ENA/GenBank.
+  <dd>In principle, DDBJ/ENA/GenBank can accept assemblies (i.e. overlapping reads) that are appropriately assembled sequences and can not accept redundant reads (i.e. raw read sequences). If you wish to publicize raw read sequences, we recommend you to contact <a href="/dra/index-e.html">DDBJ Sequence Read Archive (DRA)</a> instead of DDBJ/ENA/GenBank.
   </dd>
   <dd>
     <ul>
-      <li>Prior to sequence data submission, it is required to submit to <a href="/bioproject/index.html">BioProject Database</a> and <a href="/biosample/index.html">BioSample Database</a>.</li>
+      <li>Prior to sequence data submission, it is required to submit to <a href="/bioproject/index-e.html">BioProject Database</a> and <a href="/biosample/index-e.html">BioSample Database</a>.</li>
       <li>DDBJ accepts following two formats for WGS submissions;
         <dl>
           <dt>a) WGS + scaffold CON:</dt> 
           <dd>The WGS entries are the contigs (overlapping reads with no gaps)</dd>
           <dd>The WGS entries can NOT have consequence "n"'s to represent sequencing gaps.</dd>
-          <dd>If you need to submit how the WGS entries are assembled together into scaffolds or chromosomes, you can submit <a href="/ddbj/file-format.html#agp">AGP file</a>.</dd>
-          <dd>DDBJ can accept scaffold (assembled contigs separated by gaps) as <a href="/ddbj/con.html">CON</a> entry", in AGP format.</dd>
+          <dd>If you need to submit how the WGS entries are assembled together into scaffolds or chromosomes, you can submit <a href="/ddbj/file-format-e.html#agp">AGP file</a>.</dd>
+          <dd>DDBJ can accept scaffold (assembled contigs separated by gaps) as <a href="/ddbj/con-e.html">CON</a> entry", in AGP format.</dd>
           <dt>b) WGS with gaps:</dt> 
           <dd>The WGS entries are the scaffolds (assembled contigs separated by gaps).</dd>
           <dd>The WGS entries can contain consequence "n"'s to represent sequencing gaps.</dd>
@@ -68,43 +160,43 @@ You can submit WGS data to DDBJ via [Mass Submission System (MSS)](/ddbj/mss-e.h
 
 Aspects of WGS
 
-  - Basically, each WGS sequence submitted to DDBJ is assigned an accession number that consists of [4 alphabet characters and 8 digits](#bulk_sequence).
-  - "WGS" and either of controlled terms indicating the degree of completion as genome sequence are indicated in [KEYWORDS](#KeywordsB) line.
+  - Basically, each WGS sequence submitted to DDBJ is assigned an accession number that consists of 4 alphabet characters and 8 digits .
+  - "WGS" and either of controlled terms indicating the degree of completion as genome sequence are indicated in [KEYWORDS](#KeywordsA) line.
 
 <!-- end list -->
 
-<pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">ZZZZ01000001</a>              <a id="SequenceLengthA" href="#SequenceLengthB">123456 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">DNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">HUM</a> <a id="ModificationDateA" href="#ModificationDateB">01-MAY-2003</a>
-<a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Homo sapiens DNA, chromosome 7, A01234B01. 
-<a id="AccessionA" href="#AccessionB">ACCESSION</a>   ZZZZ01000001 ZZZZ01000000
-<a id="VersionA" href="#VersionB">VERSION</a>     ZZZZ01000001.1
-<a id="DblinkA" href="#DblinkB">DBLINK</a>      BioProject:PRJDA12345
+<pre><code><a id="LocusA" href="/ddbj/flat-file-e#LocusB">LOCUS</a>       <a id="LocusNameA" href="/ddbj/flat-file-e#LocusNameB">ZZZZ01000001</a>              <a id="SequenceLengthA" href="/ddbj/flat-file-e#SequenceLengthB">123456 bp</a>    <a id="MoleculeTypeA" href="/ddbj/flat-file-e#MoleculeTypeB">DNA</a>    <a id="MoleculeFormA" href="/ddbj/flat-file-e#MoleculeFormB">linear</a>   <a id="DivisionA" href="/ddbj/flat-file-e#DivisionB">HUM</a> <a id="ModificationDateA" href="/ddbj/flat-file-e#ModificationDateB">01-MAY-2003</a>
+<a id="DefinitionA" href="/ddbj/flat-file-e#DefinitionB">DEFINITION</a>  Homo sapiens DNA, chromosome 7, A01234B01. 
+<a id="AccessionA" href="/ddbj/flat-file-e#AccessionB">ACCESSION</a>   ZZZZ01000001 ZZZZ01000000
+<a id="VersionA" href="/ddbj/flat-file-e#VersionB">VERSION</a>     ZZZZ01000001.1
+<a id="DblinkA" href="/ddbj/flat-file-e#DblinkB">DBLINK</a>      BioProject:PRJDA12345
             BioSample:SAMD01234567
             Sequence Read Archive:DRR012345, DRR012346
-<a id="KeywordsA" href="#KeywordsB">KEYWORDS</a>    WGS; STANDARD_DRAFT.
-<a id="SourceA" href="#SourceB">SOURCE</a>      Homo sapiens
-  <a id="OrganismA" href="#OrganismB">ORGANISM</a>  Homo sapiens
+<a id="KeywordsA" href="/ddbj/flat-file-e#KeywordsB">KEYWORDS</a>    WGS; STANDARD_DRAFT.
+<a id="SourceA" href="/ddbj/flat-file-e#SourceB">SOURCE</a>      Homo sapiens
+  <a id="OrganismA" href="/ddbj/flat-file-e#OrganismB">ORGANISM</a>  Homo sapiens
             Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
             Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
             Catarrhini; Hominidae; Homo.
-<a id="Reference1A" href="#Reference1B">REFERENCE   1</a>  (bases 1 to 123456)
-  <a id="AuthorsA" href="#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
-  <a id="TitleA" href="#TitleB">TITLE</a>     Direct Submission
-  <a id="JournalA" href="#JournalB">JOURNAL</a>   Submitted (01-APR-2003) to the DDBJ/EMBL/GenBank databases.
+<a id="Reference1A" href="/ddbj/flat-file-e#Reference1B">REFERENCE   1</a>  (bases 1 to 123456)
+  <a id="AuthorsA" href="/ddbj/flat-file-e#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
+  <a id="TitleA" href="/ddbj/flat-file-e#TitleB">TITLE</a>     Direct Submission
+  <a id="JournalA" href="/ddbj/flat-file-e#JournalB">JOURNAL</a>   Submitted (01-APR-2003) to the DDBJ/EMBL/GenBank databases.
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
-<a id="Reference2A" href="#Reference2B">REFERENCE   2</a>
+<a id="Reference2A" href="/ddbj/flat-file-e#Reference2B">REFERENCE   2</a>
   AUTHORS   Mishima,H., Shizuoka,T. and Fuji,I.
   TITLE     Human whole genome shotgun sequence
   JOURNAL   Unpublished (2003)
-<a id="CommentA" href="#CommentB">COMMENT</a>     Whole genome shotgun sequencing project.
-<a id="FeaturesA" href="#FeaturesB">FEATURES</a>             Location/Qualifiers
-     <a id="FeaturesSourceA" href="#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..123456</a>
-                     /<a href="/ddbj/qualifiers.html#db_xref">db_xref</a>="taxon:9606"
-                     /<a href="/ddbj/qualifiers.html#chromosome">chromosome</a>="7"
-                     /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
-                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Homo sapiens"
-                     /<a href="/ddbj/qualifiers.html#submitter_seqid">submitter_seqid</a>="A01234B01"
+<a id="CommentA" href="/ddbj/flat-file-e#CommentB">COMMENT</a>     Whole genome shotgun sequencing project.
+<a id="FeaturesA" href="/ddbj/flat-file-e#FeaturesB">FEATURES</a>             Location/Qualifiers
+     <a id="FeaturesSourceA" href="/ddbj/flat-file-e#FeaturesSourceB">source</a>          <a href="/ddbj/location-e.html">1..123456</a>
+                     /<a href="/ddbj/qualifiers-e.html#db_xref">db_xref</a>="taxon:9606"
+                     /<a href="/ddbj/qualifiers-e.html#chromosome">chromosome</a>="7"
+                     /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
+                     /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Homo sapiens"
+                     /<a href="/ddbj/qualifiers-e.html#submitter_seqid">submitter_seqid</a>="A01234B01"
 
 -- The rest is snipped --
-<a id="EndA" href="#EndB">//</a></code></pre>
+<a id="EndA" href="/ddbj/flat-file-e#EndB">//</a></code></pre>

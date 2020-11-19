@@ -12,4 +12,4 @@ lang: en
 
 ## Who should be the Contact person?
 
-<p>See <a href="/ddbj/submission-e.html#contact">Contact person</a>. <br>If your affiliation was changed after sequencing or when you belong two or more institutes, please describe the most responsible one as a representative. </p>
+<p>See <a href="/ddbj/submission.html#contact">Contact person</a>. <br>If your affiliation was changed after sequencing or when you belong two or more institutes, please describe the most responsible one as a representative. </p>

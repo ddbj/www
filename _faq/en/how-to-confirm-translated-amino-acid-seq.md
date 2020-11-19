@@ -15,7 +15,7 @@ lang: en
 <p>You can confirm amino acid sequences for <a href="/ddbj/cds-e.html">CDS features</a> as follows. </p>
 <dl>
   <dd>1. Download UME_win.zip (for Windows) or UME_mac.zip (for MacOSX) from <a href="/ddbj/mss-e.html#tool">Mass Submission System</a>. </dd>
-  <dd>2. Download both annotation and sequence files at <a href="/ddbj/websub-help-e.html#flow-8">8. Finish</a> on DDBJ Nucleotide Sequence Submission System. </dd>
+  <dd>2. Download both annotation and sequence files at <a href="/ddbj/web-submission-help-e.html#flow-8">8. Finish</a> on DDBJ Nucleotide Sequence Submission System. </dd>
   <dd>3. <a href="/ddbj/ume-e.html">Run UME</a> and load both annotation and sequence files. Then click [Execute] of transChecker. </dd>
 </dl>
 <p>The function to confirm amino acid sequences will be applied on DDBJ Nucleotide Sequence Submission System. </p><dt>References</dt>

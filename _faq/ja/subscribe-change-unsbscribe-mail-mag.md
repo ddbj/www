@@ -12,4 +12,4 @@ lang: ja
 
 ## DDBJ Mail Magazine（メールマガジン） の配信申込，変更，中止の方法
 
-<a href="/subscribe.html">DDBJ Mail Magazine</a> のページから手続きができます。
+<a href="/subscribe-ddbj.html">DDBJ Mail Magazine</a> のページから手続きができます。

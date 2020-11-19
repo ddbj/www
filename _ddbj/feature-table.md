@@ -3,6 +3,98 @@ layout: indexed_content
 title: The DDBJ/ENA/GenBank Feature Table Definition
 pathname: feature-table
 category: ddbj
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /ddbj/index.html
+  - id: submission
+    title: Submission
+    url: /ddbj/submission.html
+    children:
+      - title: 塩基配列の登録
+        url: /ddbj/submission.html
+      - title: Web 版塩基配列登録システム
+        url: /ddbj/web-submission.html
+      - title: Mass Submission System
+        url: /ddbj/mss.html
+      - title: 登録データの修正・更新
+        url: /ddbj/update.html
+  - id: search
+    title: Search
+    url: http://ddbj.nig.ac.jp/arsa/?lang=ja
+    children:
+      - title: getentry
+        url: http://getentry.ddbj.nig.ac.jp/top-j.html
+      - title: ARSA
+        url: http://ddbj.nig.ac.jp/arsa/?lang=ja
+  - id: flat_file
+    title: Flat file
+    url: /ddbj/flat-file.html
+    children:
+      - title: Feature key の定義
+        url: /ddbj/features.html
+      - title: Qualifier key の定義
+        url: /ddbj/qualifiers.html
+      - title: Organism qualifier に記載する生物名
+        url: /ddbj/organism.html
+      - title: Location の記述法
+        url: /ddbj/location.html
+      - title: タンパク質コード配列
+        url: /ddbj/cds.html
+      - title: The Genetic Codes
+        url: /ddbj/geneticcode.html
+      - title: 配列の記載に用いる略号
+        url: /ddbj/code.html
+      - title: 登録の見本
+        url: /ddbj/example.html
+  - id: data_categories
+    title: Data categories
+    url: /ddbj/data-categories.html
+    children:
+      - title: Genome project のデータ登録
+        url: /ddbj/genome.html
+      - title: Pseudohaplotype
+        url: /ddbj/pseudohaplotype.html
+      - title: WGS
+        url: /ddbj/wgs.html
+      - title: メタゲノムアセンブリ
+        url: /ddbj/metagenome-assembly.html
+      - title: Single amplified genome
+        url: /ddbj/single-amplified-genome.html
+      - title: CON
+        url: /ddbj/con.html
+      - title: GSS
+        url: /ddbj/gss.html
+      - title: HTG
+        url: /ddbj/htg.html
+      - title: Environmental sequence の登録
+        url: /ddbj/environmental.html
+      - title: ENV
+        url: /ddbj/env.html
+      - title: TLS
+        url: /ddbj/tls.html
+      - title: Transcriptome Project のデータ登録
+        url: /ddbj/transcriptome.html
+      - title: TSA
+        url: /ddbj/tsa.html
+      - title: EST
+        url: /ddbj/est.html
+      - title: HTC
+        url: /ddbj/htc.html
+      - title: Third Party Data (TPA)
+        url: /ddbj/tpa.html
+  - id: faq
+    title: FAQ
+    url: /faq/ja/index.html
+  - id: other
+    title: Other
+    url: /ddbj/index-e.html
+    children:
+      - title: Patent
+        url: /ddbj/patent-data.html
+      - title: MGA
+        url: /ddbj/mga.html
 lang: ja
 ---
 
@@ -117,7 +209,7 @@ coding for all features in the table.
 terminology whenever possible. For example, an item in the feature table such as: 
 
 Key             Location/Qualifiers
-<a href="#cds">CDS</a>             23..400
+<a href="#fCDS">CDS</a>             23..400
                   /<a href="#product">product</a>="alcohol dehydrogenase" 
                   /<a href="#q_gene">gene</a>="adhI"
 
@@ -128,7 +220,7 @@ called "adhI".
 
 A more complex description:
 Key             Location/Qualifiers
-<a href="#cds">CDS</a>             join(544..589,688..&gt;1032)
+<a href="#fCDS">CDS</a>             join(544..589,688..&gt;1032)
                   /<a href="#product">product</a>="T-cell receptor beta-chain"
 
 which might be read as: 
@@ -251,7 +343,7 @@ information:
 
 <pre>Key                     Description     
 
-<a href="#cds">CDS</a>                     Protein-coding sequence 
+<a href="#fCDS">CDS</a>                     Protein-coding sequence 
 <a href="#rep_origin">rep_origin</a>              Origin of replication
 <a href="#protein_bind">protein_bind</a>            Protein binding site on DNA
 <a href="#tRNA">tRNA</a>                    mature transfer RNA
@@ -356,7 +448,7 @@ version 2.1 of the Feature Table Definition Document (December 15, 1998)
                 /<a href="#regulatory_class">regulatory_class</a>="promoter"
 <a href="#mRNA">mRNA</a>            join(10..567,789..1320)
                 /<a href="#q_gene">gene</a>="ubc42"
-<a href="#cds">CDS</a>             join(54..567,789..1254)
+<a href="#fCDS">CDS</a>             join(54..567,789..1254)
                 /<a href="#q_gene">gene</a>="ubc42"
                 /<a href="#product">product</a>="ubiquitin conjugating enzyme"
                 /<a href="#function">function</a>="cell division control"
@@ -529,7 +621,7 @@ FT                   /<a href="#tissue_type">tissue_type</a>="leaves"
 FT                   /<a href="#clone_lib">clone_lib</a>="lambda gt10"
 FT                   /<a href="#clone">clone</a>="TRE361"
 FT                   /<a href="#mol_type">mol_type</a>="genomic DNA"
-FT   <a href="#cds">CDS</a>             14..1495
+FT   <a href="#fCDS">CDS</a>             14..1495
 FT                   /<a href="#db_xref">db_xref</a>="MENDEL:11000"
 FT                   /<a href="#db_xref">db_xref</a>="UniProtKB/Swiss-Prot:P26204"
 FT                   /<a href="#note">note</a>="non-cyanogenic"
@@ -548,7 +640,7 @@ Feature table format example (GenBank):
                      /<a href="#mol_type">mol_type</a>="genomic DNA"
      <a href="#gene">gene</a>            212..8668
                      /<a href="#q_gene">gene</a>="NF1"
-     <a href="#cds">CDS</a>             212..8668
+     <a href="#fCDS">CDS</a>             212..8668
                      /<a href="#q_gene">gene</a>="NF1"
                      /<a href="#note">note</a>="putative"
                      /<a href="#codon_start">codon_start</a>=1
@@ -567,7 +659,7 @@ Feature table format example (DDBJ):
                      /<a href="#tissue_type">tissue_type</a>="kidney"
                      /<a href="#mol_type">mol_type</a>="genomic DNA" 
      <a href="#mRNA">mRNA</a>            19..2128
-     <a href="#cds">CDS</a>             31..1212
+     <a href="#fCDS">CDS</a>             31..1212
                      /<a href="#codon_start">codon_start</a>=1
                      /<a href="#function">function</a>="Dual specificity protein tyrosine/threonine
                      kinase"
@@ -658,7 +750,7 @@ all cases but should be used as a guide whenever possible.
                 /<a href="#regulatory_class">regulatory_class</a>="promoter"
 <a href="#mRNA">mRNA</a>            join(10..567,789..1320)
                 /<a href="#q_gene">gene</a>="ubc42"
-<a href="#cds">CDS</a>             join(54..567,789..1254)
+<a href="#fCDS">CDS</a>             join(54..567,789..1254)
                 /<a href="#q_gene">gene</a>="ubc42"
                 /<a href="#product">product</a>="ubiquitin conjugating enzyme"
                 /<a href="#function">function</a>="cell division control"
@@ -693,18 +785,18 @@ all cases but should be used as a guide whenever possible.
 <a href="#regulatory">regulatory</a>      179..184
                 /<a href="#q_operon">operon</a>="gal"
                 /<a href="#regulatory_class">regulatory_class</a>="minus_10_signal"
-<a href="#cds">CDS</a>             405..1934
+<a href="#fCDS">CDS</a>             405..1934
                 /<a href="#q_operon">operon</a>="gal"
                 /<a href="#q_gene">gene</a>="galA"
                 /<a href="#product">product</a>="galactose permease"
                 /<a href="#function">function</a>="galactose transporter"
-<a href="#cds">CDS</a>             2003..3001
+<a href="#fCDS">CDS</a>             2003..3001
                 /<a href="#q_operon">operon</a>="gal"
                 /<a href="#q_gene">gene</a>="galM"
                 /<a href="#product">product</a>="aldose 1-epimerase"
                 /<a href="#EC_number">EC_number</a>="5.1.3.3"
                 /<a href="#function">function</a>="mutarotase"
-<a href="#cds">CDS</a>             3235..4537
+<a href="#fCDS">CDS</a>             3235..4537
                 /<a href="#q_operon">operon</a>="gal"
                 /<a href="#q_gene">gene</a>="galK"
                 /<a href="#product">product</a>="galactokinase"
@@ -732,19 +824,19 @@ all cases but should be used as a guide whenever possible.
                 /<a href="#organism">organism</a>="Escherichia coli"
                 /<a href="#mol_type">mol_type</a>="other DNA"
                 /<a href="#strain">strain</a>="K12"
-<a href="#cds">CDS</a>             join(complement(1..799),complement(5080..5120))
+<a href="#fCDS">CDS</a>             join(complement(1..799),complement(5080..5120))
                 /<a href="#q_gene">gene</a>="mob1"
                 /<a href="#product">product</a>="mobilization protein 1"
-<a href="#cds">CDS</a>             complement(1697..2512)
+<a href="#fCDS">CDS</a>             complement(1697..2512)
                 /<a href="#q_gene">gene</a>="Km"
                 /<a href="#product">product</a>="kanamycin resistance protein"
-<a href="#cds">CDS</a>             3037..3711
+<a href="#fCDS">CDS</a>             3037..3711
                 /<a href="#q_gene">gene</a>="rep1"
                 /<a href="#product">product</a>="replication protein 1"
-<a href="#cds">CDS</a>             complement(4170..4829)
+<a href="#fCDS">CDS</a>             complement(4170..4829)
                 /<a href="#q_gene">gene</a>="Cm"
                 /<a href="#product">product</a>="chloramphenicol resistance protein"
-<a href="#cds">CDS</a>             5139..5247
+<a href="#fCDS">CDS</a>             5139..5247
                 /<a href="#q_gene">gene</a>="GFP"
                 /<a href="#product">product</a>="green fluorescent protein" 
 </pre>
@@ -759,16 +851,16 @@ all cases but should be used as a guide whenever possible.
 <a href="#rep_origin">rep_origin</a>      6
                 /<a href="#direction">direction</a>=LEFT
                 /<a href="#note">note</a>="ori"
-<a href="#cds">CDS</a>             complement(join(21..349,567..795))
+<a href="#fCDS">CDS</a>             complement(join(21..349,567..795))
                 /<a href="#q_gene">gene</a>="trbC"
                 /<a href="#product">product</a>="transfer protein C"
-<a href="#cds">CDS</a>             803..1344
+<a href="#fCDS">CDS</a>             803..1344
                 /<a href="#q_gene">gene</a>="traN"
                 /<a href="#product">product</a>="transfer protein N"
-<a href="#cds">CDS</a>             1559..1985
+<a href="#fCDS">CDS</a>             1559..1985
                 /<a href="#q_gene">gene</a>="incA"
                 /<a href="#product">product</a>="incompatability protein A"
-<a href="#cds">CDS</a>             join(2004..2195,3..20)
+<a href="#fCDS">CDS</a>             join(2004..2195,3..20)
                 /<a href="#q_gene">gene</a>="finP"
                 /<a href="#product">product</a>="fertility inhibition protein P"
 </pre>
@@ -792,7 +884,7 @@ all cases but should be used as a guide whenever possible.
                 /<a href="#cell_line">cell_line</a>="hybridoma 1A4"
                 /<a href="#rearranged">rearranged</a>
                 /<a href="#mol_type">mol_type</a>="mRNA"
-<a href="#cds">CDS</a>             &lt;1..&gt;321
+<a href="#fCDS">CDS</a>             &lt;1..&gt;321
                 /<a href="#codon_start">codon_start</a>=1
                 /<a href="#q_gene">gene</a>="VFM1-DFL16.1-JH4"
                 /<a href="#product">product</a>="immunoglobulin heavy chain"
@@ -812,7 +904,7 @@ all cases but should be used as a guide whenever possible.
                 /<a href="#mol_type">mol_type</a>="mRNA"
 <a href="#sig_peptide">sig_peptide</a>     1..54
                 /<a href="#q_gene">gene</a>="TCR1A"
-<a href="#cds">CDS</a>             1..402
+<a href="#fCDS">CDS</a>             1..402
                 /<a href="#q_gene">gene</a>="TCR1A"
                 /<a href="#product">product</a>="T-cell receptor alpha chain"
 <a href="#mat_peptide">mat_peptide</a>     55..399
@@ -904,7 +996,7 @@ FT                   /<a href="#regulatory_class">regulatory_class</a>="ribosome
 FT   <a href="#regulatory">regulatory</a>      723..746
 FT                   /<a href="#q_gene">gene</a>="sod"
 FT                   /<a href="#regulatory_class">regulatory_class</a>="terminator"
-FT   <a href="#cds">CDS</a>             109..717
+FT   <a href="#fCDS">CDS</a>             109..717
 FT                   /<a href="#transl_table">transl_table</a>=11
 FT                   /<a href="#q_gene">gene</a>="sod"
 FT                   /<a href="#EC_number">EC_number</a>="1.15.1.1"
@@ -958,7 +1050,7 @@ FEATURES             Location/Qualifiers
                      /<a href="#regulatory_class">regulatory_class</a>="ribosome_binding_site"
      <a href="#gene">gene</a>            95..746
                      /<a href="#q_gene">gene</a>="sod"
-     <a href="#cds">CDS</a>             109..717
+     <a href="#fCDS">CDS</a>             109..717
                      /<a href="#q_gene">gene</a>="sod"
                      /<a href="#EC_number">EC_number</a>="1.15.1.1"
                      /<a href="#codon_start">codon_start</a>=1
@@ -1015,7 +1107,7 @@ FEATURES             Location/Qualifiers
                      /<a href="#regulatory_class">regulatory_class</a>="ribosome_binding_site"
      <a href="#gene">gene</a>            95..746
                      /<a href="#q_gene">gene</a>="sod"
-     <a href="#cds">CDS</a>             109..717
+     <a href="#fCDS">CDS</a>             109..717
                      /<a href="#q_gene">gene</a>="sod"
                      /<a href="#EC_number">EC_number</a>="1.15.1.1"
                      /<a href="#codon_start">codon_start</a>=1
@@ -1266,7 +1358,7 @@ Organism scope        eukaryotes
 <pre id="exon"><strong>Feature Key           exon</strong>
 
 Definition            region of genome that codes for portion of spliced <a href="#mRNA">mRNA</a>, 
-                      <a href="#rRNA">rRNA</a> and <a href="#tRNA">tRNA</a>; may contain <a href="#5UTR">5'UTR</a>, all <a href="#cds">CDS</a>s and <a href="#3UTR">3'UTR</a>; 
+                      <a href="#rRNA">rRNA</a> and <a href="#tRNA">tRNA</a>; may contain <a href="#5UTR">5'UTR</a>, all <a href="#fCDS">CDS</a>s and <a href="#3UTR">3'UTR</a>; 
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#citation">citation</a>=[number]
@@ -1434,7 +1526,7 @@ Definition            mature peptide or protein coding sequence; coding
                       sequence for the mature or final peptide or protein
                       product following post-translational modification; the
                       location does not include the stop codon (unlike the
-                      corresponding <a href="#cds">CDS</a>);
+                      corresponding <a href="#fCDS">CDS</a>);
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#citation">citation</a>=[number]
@@ -1579,7 +1671,7 @@ Molecule scope        DNA
 
 Definition            any transcript or RNA product that cannot be defined by
                       other RNA keys (<a href="#prim_transcript">prim_transcript</a>, <a href="#precursor_RNA">precursor_RNA</a>, <a href="#mRNA">mRNA</a>,
-                      <a href="#5UTR">5'UTR</a>, <a href="#3UTR">3'UTR</a>, <a href="#exon">exon</a>, <a href="#cds">CDS</a>, <a href="#sig_peptide">sig_peptide</a>, <a href="#transit_peptide">transit_peptide</a>,
+                      <a href="#5UTR">5'UTR</a>, <a href="#3UTR">3'UTR</a>, <a href="#exon">exon</a>, <a href="#fCDS">CDS</a>, <a href="#sig_peptide">sig_peptide</a>, <a href="#transit_peptide">transit_peptide</a>,
                       <a href="#mat_peptide">mat_peptide</a>, <a href="#intron">intron</a>, <a href="#polyA_site">polyA_site</a>, <a href="#ncRNA">ncRNA</a>, <a href="#rRNA">rRNA</a> and <a href="#tRNA">tRNA</a>);
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
@@ -1683,7 +1775,7 @@ Comment               value is limited to the restricted vocabulary for
 <pre id="mRNA"><strong>Feature Key           mRNA</strong>
 
 Definition            messenger RNA; includes 5'untranslated region (<a href="#5UTR">5'UTR</a>),
-                      coding sequences (<a href="#cds">CDS</a>, <a href="#exon">exon</a>) and 3'untranslated region
+                      coding sequences (<a href="#fCDS">CDS</a>, <a href="#exon">exon</a>) and 3'untranslated region
                       (<a href="#3UTR">3'UTR</a>);
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
@@ -1890,7 +1982,7 @@ Organism scope        eukaryotes and eukaryotic viruses
 
 Definition            any RNA species that is not yet the mature RNA product;
                       may include <a href="#ncRNA">ncRNA</a>, <a href="#rRNA">rRNA</a>, <a href="#tRNA">tRNA</a>, 5' untranslated region
-                      (<a href="#5UTR">5'UTR</a>), coding sequences (<a href="#cds">CDS</a>, <a href="#exon">exon</a>), intervening
+                      (<a href="#5UTR">5'UTR</a>), coding sequences (<a href="#fCDS">CDS</a>, <a href="#exon">exon</a>), intervening
                       sequences (<a href="#intron">intron</a>) and 3' untranslated region (<a href="#3UTR">3'UTR</a>);
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
@@ -1922,7 +2014,7 @@ Comment               used for RNA which may be the result of
 
 Definition            primary (initial, unprocessed) transcript;
                       may include <a href="#ncRNA">ncRNA</a>, <a href="#rRNA">rRNA</a>, <a href="#tRNA">tRNA</a>, 5' untranslated region
-                      (<a href="#5UTR">5'UTR</a>), coding sequences (<a href="#cds">CDS</a>, <a href="#exon">exon</a>), intervening
+                      (<a href="#5UTR">5'UTR</a>), coding sequences (<a href="#fCDS">CDS</a>, <a href="#exon">exon</a>), intervening
                       sequences (<a href="#intron">intron</a>) and 3' untranslated region (<a href="#3UTR">3'UTR</a>);
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
@@ -3737,10 +3829,10 @@ Example         /pop_variant="pop1"
 
 <pre id="product"><strong>Qualifier       /product=</strong>
 Definition      name of the product associated with the feature, e.g. the mRNA of an 
-                <a href="#mRNA">mRNA</a> feature, the polypeptide of a <a href="#cds">CDS</a>, the mature peptide of a 
+                <a href="#mRNA">mRNA</a> feature, the polypeptide of a <a href="#fCDS">CDS</a>, the mature peptide of a 
                 <a href="#mat_peptide">mat_peptide</a>, etc.
 Value format    "text"
-Example         /product="trypsinogen" (when qualifier appears in <a href="#cds">CDS</a> feature)
+Example         /product="trypsinogen" (when qualifier appears in <a href="#fCDS">CDS</a> feature)
                 /product="trypsin" (when qualifier appears in <a href="#mat_peptide">mat_peptide</a> feature)
                 /product="XYZ neural-specific transcript" (when qualifier appears in 
                 <a href="#mRNA">mRNA</a> feature)
@@ -3787,7 +3879,7 @@ Definition      indicates that this feature is a non-functional version of the
 Value format    none
 Example         /pseudo
 Comment         The qualifier /pseudo should be used to describe non-functional 
-                genes that are not formally described as pseudogenes, e.g. <a href="#cds">CDS</a> 
+                genes that are not formally described as pseudogenes, e.g. <a href="#fCDS">CDS</a> 
                 has no translation due to other reasons than pseudogenisation events.
                 Other reasons may include sequencing or assembly errors.
                 In order to annotate pseudogenes the qualifier /<a href="#pseudogene">pseudogene</a>= must be
@@ -4174,7 +4266,7 @@ Value format    &lt;base_range&gt;
 Example         /tag_peptide=90..122
 Comment         it is recommended that the amino acid sequence corresponding
                 to the /tag_peptide be annotated by describing a 5' partial 
-                <a href="#cds">CDS</a> feature; e.g. <a href="#cds">CDS</a>    &lt;90..122;
+                <a href="#fCDS">CDS</a> feature; e.g. <a href="#fCDS">CDS</a>    &lt;90..122;
 </pre>
 
 -----
@@ -4225,8 +4317,8 @@ Definition      automatically generated one-letter abbreviated amino acid
 Value format    IUPAC one-letter amino acid abbreviation, "X" is to be used
                 for AA exceptions.
 Example         /translation="MASTFPPWYRGCASTPSLKGLIMCTW"
-Comment         to be used with <a href="#cds">CDS</a> feature only; this is a mandatory qualifier 
-                in the <a href="#cds">CDS</a> feature key except where /<a href="#pseudogene">pseudogene</a>="TYPE" or /<a href="#pseudo">pseudo</a>
+Comment         to be used with <a href="#fCDS">CDS</a> feature only; this is a mandatory qualifier 
+                in the <a href="#fCDS">CDS</a> feature key except where /<a href="#pseudogene">pseudogene</a>="TYPE" or /<a href="#pseudo">pseudo</a>
                 is shown; see /<a href="#transl_table">transl_table</a> for definition and location of genetic
                 code tables. 
 </pre>
@@ -4278,7 +4370,7 @@ Definition      indicates that exons from two RNA molecules are ligated in
                 intermolecular reaction to form mature RNA 
 Value format    none 
 Example         /trans_splicing 
-Comment         should be used on features such as <a href="#cds">CDS</a>, <a href="#mRNA">mRNA</a> and other features
+Comment         should be used on features such as <a href="#fCDS">CDS</a>, <a href="#mRNA">mRNA</a> and other features
                 that are produced as a result of a trans-splicing event. This
                 qualifier should be used only when the splice event is indicated in
                 the "join" operator, eg join(complement(69611..69724),139856..140087) 

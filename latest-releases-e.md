@@ -6,16 +6,16 @@ category: www
 lang: en
 related_pages:
   - title: DB out/in statistics
-    url: ./index-e.html
+    url: /statistics/index-e.html
   - title: DDBJ Periodic Release Statistics
-    url: ./ddbj-release-e
+    url: /statistics/ddbj-release-e
   - title: Release Notes of DDBJ Releases
-    url: ./relnote-e
+    url: ./ddbj-releases-e
 ---
 
 ## Latest Release Information
 
-[Release notes (DDBJ, 16S rRNA, DAD)]({{site.baseurl}}/statistics/relnote-e.html)
+[Release notes (DDBJ, 16S rRNA, DAD)]({{site.baseurl}}/ddbj-releases-e.html)
 
 |  Database  |  Release  |  Date  |  DDBJ date  |  Entries  |  Bases  |  Rate of increase  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |

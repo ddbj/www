@@ -24,7 +24,7 @@ Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi).
 
 {::options parse_block_html="true" /}
 <div class="attention red">
-[DDBJ Sequence Read Archive](/dra/submission-e.html#dra)accepts trace
+[DDBJ Sequence Read Archive](/dra/submission.html#dra)accepts trace
 data. Please consider to submit trace data to DRA.
 </div>
 
@@ -33,11 +33,11 @@ data. Please consider to submit trace data to DRA.
 There are fields that are required for specific combinations of
 [STRATEGY](#STRATEGY)and [TRACE_TYPE_CODE](#TRACE_TYPE_CODE). You may
 check requirements in the [Validation
-Table](/files/submission/field_matrix_current.xls). Metadata can be
+Table]({{ site.baseurl }}/assets/files/submission/field_matrix_current.xls). Metadata can be
 searched at the [NCBI Trace
 Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi?cmd=retrieve&f=retrieve&m=obtain&s=search).
 
-[Trace Archive RFC](/files/specification/trace_rfc.pdf)
+[Trace Archive RFC]({{ site.baseurl }}/assets/files/specification/trace_rfc.pdf)
 
 Required<span class="red">*</span>  
 May be required, depending upon the trace type and strategy
@@ -1258,7 +1258,7 @@ TOP_DIRECTORY/traces/FLJ/FLJA1U0003.scf
 
 The [metadata](#metadata)file can be either in XML or in tab-delimited
 format. The metadata requirements are in the [Validation Table
-(spreadsheet format)](/files/submission/field_matrix_current.xls)for
+(spreadsheet format)]({{ site.baseurl }}/assets/files/submission/field_matrix_current.xls)for
 specific combinations of STRATEGY and TRACE_TYPE_CODE. Both types of
 metadata files can contain common fields section at the beginning of it.
 This section defines common for the submission values if any.
@@ -1319,8 +1319,8 @@ F-3NB691000033  3NB691000033    3NB691  3NB691000033    ./traces/F-3NB691000033.
 ### Upload submission files <a name="upload-submission-files"></a>
 
 DTA creates a directory for data submission. Please contact to [the DTA
-team](/contact-e.html). Transfer files by SCP according to the
-[manual](/dra/submission-e.html#upload-sequence-data).
+team](/contact-ddbj-e.html). Transfer files by SCP according to the
+[manual](/dra/submission.html#upload-sequence-data).
 
 #### Submission directory example <a name="Submission_directory_example"></a>
 
@@ -1349,4 +1349,4 @@ data release are concurrent events. </span>
 ### Update <a name="update"></a>
 
 To update the records, please contact to [the DTA
-team](/contact-e.html).
+team](/contact-ddbj-e.html).

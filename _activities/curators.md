@@ -10,25 +10,25 @@ related_pages:
   - title: DDBJ スタッフの講演発表（2001-2006）
     url: /activities/past-presentations.html
   - title: 相同性検索プログラムBLASTの内部構造
-    url: /column/blast_doc.html
+    url: /activities/blast-doc.html
   - title: DDBJ の塩基配列解析ツールについて
-    url: /column/ddbjpipeline.html
+    url: /activities/ddbj-pipeline.html
   - title: 「ユーザーの皆様へ，お願いです！」
-    url: /column/request.html
+    url: /activities/request.html
   - title: DDBJ での特許関連配列データの公開業務の紹介
-    url: /column/patent.html
+    url: /activities/patent.html
   - title: DDBJ スタッフコラム
-    url: /column/staffcolumn.html
+    url: /activities/staff-column.html
   - title: 遺伝子とゲノム
-    url: /column/genegenome.html
+    url: /activities/gene-genome.html
   - title: 進化ゲノム学とは
-    url: /column/introevog.html
+    url: /activities/introevog.html
   - title: FASTAとBLASTについて
-    url: /column/homology_doc.html
+    url: /activities/homology-doc.html
   - title: DDBJ Mail Magazine
-    url: /subscribe.html
+    url: /subscribe-ddbj.html
   - title: DDBJ データ解析チャレンジ
-    url: /activities/ddbj-challenge.html
+    url: /activities/training-ddbj-challenge.html
 ---
 
 ユーザーの皆様に DDBJ について業務内容を知って頂きより身近に感じていただけるよう，DDBJ アノテータが DDBJ Mail Magazine にリレー連載したコラムをまとめました。
@@ -64,22 +64,22 @@ primary database の場合, そのコンテンツに関する responsibility と
 
 ここで やっと annotator の業務の話になるのですが, DDBJ においては「国内外の一般研究者から送られてくる塩基配列とその付帯情報を公開可能な状態に整える作業」であり, これを「査定業務」と称しています。 この定義文のような文章は, 数年前に私が何かの書類提出用に業務を説明するために書きましたが, ほぼ そのまま使われていました。 もっとも DDBJ は, 20 年以上前から primary database を運営してますから, こんな文言が私が書く以前にはなかったことが不思議です。当たり前のように感じている活動の言語化は意外に難しいのかもしれません。 「査定」の英語が annotation で それをする人が annotator です。 ちなみに GenBank では同じような職種を indexer, EMBL-Bank では curator と呼んでいます。 DDBJ における「査定」を総括すると 登録者から送られてくる情報を 1) データベース記載規則に則る形式で 2) 登録者の意図する記載を 3) 正確に反映すること となるでしょうか。しかし, これが意外と難度の高い場面があります。
 
-登録者側では, 面倒な[「データベース記載規則」](/ddbj/full_index.html)など, 読み下すことは困難でしょうし, [最終記載](/ddbj/flat-file.html)を意識しながら, データ入力するといった作業は, 結構, 厄介です。 特殊な単語が頻出しますから, スペルチェックも大変です。学名の間違いなども日常茶飯事です。 また, 塩基配列決定が身近になり過ぎたこともあり, 登録をする人が生物学を知らない職種にまで広がり, 記載を読んでも疑問符で, 結局, メールで問い合わせて謎が解けるといったことも多々あります。 クダらないと感じるような修正・訂正から 非常に高度な生物学的過程の記述法に悩むレベルまで, 様々ですが, いつも登録者とメールして解決を図っています。
+登録者側では, 面倒な[「データベース記載規則」](/ddbj/feature-table.html)など, 読み下すことは困難でしょうし, [最終記載](/ddbj/flat-file.html)を意識しながら, データ入力するといった作業は, 結構, 厄介です。 特殊な単語が頻出しますから, スペルチェックも大変です。学名の間違いなども日常茶飯事です。 また, 塩基配列決定が身近になり過ぎたこともあり, 登録をする人が生物学を知らない職種にまで広がり, 記載を読んでも疑問符で, 結局, メールで問い合わせて謎が解けるといったことも多々あります。 クダらないと感じるような修正・訂正から 非常に高度な生物学的過程の記述法に悩むレベルまで, 様々ですが, いつも登録者とメールして解決を図っています。
 
 生命情報分野の大御所の某センセイが, DDBJ は GenBank をミラーしているだけ, という主旨のことを現場も見ずに書いていますが, 実際には結構, いろいろな仕事を annotator も他の職種の人もしています。 ただ, 内部からは逆に, annotator は 細かい修正などせず, もっと登録者の自己責任と割り切って効率化を図れ, とも言われているのです。 primary database も, ある程度は正確さとか, 品質とかを保つ努力は必要でしょうが, バランスの難しいところがあります。
 
 ### 3.需要に応えるために拡張してきた INSDC の歴史
 
-実は, 英語が苦手な私が NCBI や EBI の仕事仲間たちと[毎年 meeting して](/activities/icm-reports.html), 英語で discussion し, 比較的頻繁にメールし合うということも思えば不思議な縁です。
+実は, 英語が苦手な私が NCBI や EBI の仕事仲間たちと[毎年 meeting して](/activities/index.html), 英語で discussion し, 比較的頻繁にメールし合うということも思えば不思議な縁です。
 
 一般には, なかなか理解してもらえない [feature](/ddbj/features.html) とか [qualifier](/ddbj/qualifiers.html) の拡張・統廃合は, 毎年, 議論されます。 2007 年と少し前になりますが, 過去の象徴的な事例を 拙稿 (署名していませんが): [RNA ワールドへの対応](news/archive.html?y=2007#071207)にまとめています。 RNA ワールドと言っても化学進化の類の意ではありません。miRNA などに代表されるタンパク質コードの伝令を担わない RNA 産物の記載需要が増えた時期と ncRNA feature 導入についての解説です。 イチイチ署名してませんが, DDBJ のホームページコンテンツには私が書いた文書が多数あります。
 
 上記は書式を時代に合わせる, という１例でしたが, 今度は, 配列決定法の変遷の話題。 EST 受付開始まで行きますと, 少々昔に過ぎて, 私も知らない時代ですが, 当時としては大きな拡張であったろうと思います。 ただ, この時点では DDBJ の中では legacy とか traditional と称している従来の枠組を逸脱する拡張ではありませんでした。 IT 分野の文脈では何故かレガシーに過去の厄介モノの意を含ませる風潮がありますが, 実際の語義は良くも悪くも引き継がれる対象であり, これからも継続すると思います。
 
-この数年で その従来の枠組を逸脱する拡張をしてきました。 [2003 年](/activities/icm-reports.html#2003)に, ゲノム概要配列の量産の時代に合わせて WGS という枠組を拡張・新設しました。 少し古い記事ですが, WGS のデータ量は新設後, [短期間で飛躍的に増大し](/news/archive-j.html?y=2008#080606)ました。 2009 年には, いわゆる次世代型とか新世代型などと呼ばれる sequencing platform の普及と配列量産による需要に対応すべく, INSDC に Sequence Read Archive (SRA) が加わりました。 (当時は Short Read Archive と呼ばれていました。) DDBJ も [DDBJ Seauence Read Archive
+この数年で その従来の枠組を逸脱する拡張をしてきました。 [2003 年](/activities/icm/2003)に, ゲノム概要配列の量産の時代に合わせて WGS という枠組を拡張・新設しました。 少し古い記事ですが, WGS のデータ量は新設後, 短期間で飛躍的に増大しました。 2009 年には, いわゆる次世代型とか新世代型などと呼ばれる sequencing platform の普及と配列量産による需要に対応すべく, INSDC に Sequence Read Archive (SRA) が加わりました。 (当時は Short Read Archive と呼ばれていました。) DDBJ も [DDBJ Seauence Read Archive
 (DRA)](/dra/index.html) を新設し対応しています。
 
-時期的には前後しますが, [2003 年から](activities/icm-reports.html#2003), primary database を逸脱する枠組の拡張が始まりました。 [Third Party Annotation (TPA)](/ddbj/tpa.html) という別枠で, 配列決定を伴わない配列引用による annotation/assemble/re-assemble の登録を受け付けています。 ただし, データの信頼度を高めるためのハードルとして peer-reviewed な論文公開を伴わないかぎり, データを公開しないという規則の元で運用しています。
+時期的には前後しますが, [2003 年から](/activities/icm/2003), primary database を逸脱する枠組の拡張が始まりました。 [Third Party Annotation (TPA)](/ddbj/tpa.html) という別枠で, 配列決定を伴わない配列引用による annotation/assemble/re-assemble の登録を受け付けています。 ただし, データの信頼度を高めるためのハードルとして peer-reviewed な論文公開を伴わないかぎり, データを公開しないという規則の元で運用しています。
 
 生物学, 生命情報科学のコミュニティからの要請・需要の変化に応えるべく, 規則を変化させたり, 枠組を新設したり, いろいろな変化がありましたし, これからも変化することでしょう。 データベースには, システム・ストレージのインフラも大事なのですが, 仕様・枠組に関しても熟考が必要です。 特に, このような「継ぎ足し」のような拡張は通常の保守以上に厄介な局面も多いのです。 現在の課題は, 主に生物多様性研究と個人ゲノム研究の進行に伴うサンプルデータの記述とデータ連携 と感じていますが, それは別の機会に論じてみたいと思います。 ひょっとしたら, この後の回でこの点について何か書く人がいるかもしれません。
 
@@ -89,6 +89,6 @@ primary database の場合, そのコンテンツに関する responsibility と
 
 今後のリレー連載への繋ぎの文章として, 次回以降は, 実際の現場で何が起こっているか, を中心に展開していくことと思います。 多分, 私ではない人が これから書くことですので, 内容は推定です。
 
-1) 欠点はあると思いますが, とにかく利用してくれている研究者は多い SAKURA からの登録がどのように扱われているか？ 2) EST, WGS, 全ゲノム規模 などの登録を扱う[Mass Submission System](/ddbj/mss.html) からの登録受付の実情, 3) それら全てのデータを登録受付後に更新・維持管理をする [update 担当](/ddbj/updt.html) が処理する種々の修正依頼, 4) 配列決定の手法も多様化しつつあり, データ量も増え, 立ち上げから対応に追われている [DDBJ Seauence Read Archive (DRA)](/dra/index.html) に関する事情などが予定されています。
+1) 欠点はあると思いますが, とにかく利用してくれている研究者は多い SAKURA からの登録がどのように扱われているか？ 2) EST, WGS, 全ゲノム規模 などの登録を扱う[Mass Submission System](/ddbj/mss.html) からの登録受付の実情, 3) それら全てのデータを登録受付後に更新・維持管理をする [update 担当](/ddbj/update.html) が処理する種々の修正依頼, 4) 配列決定の手法も多様化しつつあり, データ量も増え, 立ち上げから対応に追われている [DDBJ Seauence Read Archive (DRA)](/dra/index.html) に関する事情などが予定されています。
 
 また, 機会があれば, annotator とシステム仕様策定とか, 新システム検討の関係について述べることがあるかもしれません。 予定していませんが, 私が再登場する回があるかもしれません。 でも, それはないことを密かに願っています。

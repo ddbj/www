@@ -3,12 +3,58 @@ layout: indexed_content
 title: About GEA
 pathname: about-gea-e
 category: gea
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /gea/index-e.html
+  - id: submission overview
+    title: Submission Overview
+    url: /gea/overview-e.html
+    children:
+      - title: Submit microarray experiment
+        url: /gea/submit-array-e.html
+      - title: Submit sequencing experiment
+        url: /gea/submit-sequence-e.html
+      - title: Metadata
+        url: /gea/metadata-e.html
+      - title: Data File
+        url: /gea/datafile-e.html
+      - title: Validation
+        url: /gea/validation-e.html
+      - title: Single-cell submission guide
+        url: /gea/single-cell-e.html
+      - title: Example
+        url: /gea/example-e.html
+      - title: Array Design
+        url: /gea/adf-e.html
+      - title: Data matrix
+        url: /gea/matrix-e.html
+      - title: Reviewer Access
+        url: /gea/reviewer-access-e.html
+  - id: faq
+    title: FAQ
+    url: /faq/en/index-e.html
+  - id: search
+    title: Search (AOE)
+    url: http://aoe.dbcls.jp/
+    children:
+      - title: RefEx
+        url: http://refex.dbcls.jp/index.php?lang=en
+      - title: Search (ArrayExpress)
+        url: https://www.ebi.ac.uk/arrayexpress/browse.html
+  - id: downloads
+    title: Downloads
+    url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/gea
+  - id: about gea
+    title: About GEA
+    url: /gea/about-gea-e.html
 lang: en
 ---
 
 ## Contact <a name="contact"></a>
 
-Please contact us from [Message form](/contact-e.html).
+Please contact us from [Message form](/contact-ddbj-e.html).
 
 {::options parse_block_html="true" /}
 <address>
@@ -20,4 +66,4 @@ Yata, Mishima, Shizuoka 411-8540, JAPAN
 
 </address>
 
-[Ask questions about DDBJ services.](/contact-e.html#to-ddbj)
+[Ask questions about DDBJ services.](/contact-ddbj-e.html#to-ddbj)

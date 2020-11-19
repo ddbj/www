@@ -2,20 +2,112 @@
 layout: indexed_content
 title: 登録ファイル形式
 category: ddbj
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /ddbj/index.html
+  - id: submission
+    title: Submission
+    url: /ddbj/submission.html
+    children:
+      - title: 塩基配列の登録
+        url: /ddbj/submission.html
+      - title: Web 版塩基配列登録システム
+        url: /ddbj/web-submission.html
+      - title: Mass Submission System
+        url: /ddbj/mss.html
+      - title: 登録データの修正・更新
+        url: /ddbj/update.html
+  - id: search
+    title: Search
+    url: http://ddbj.nig.ac.jp/arsa/?lang=ja
+    children:
+      - title: getentry
+        url: http://getentry.ddbj.nig.ac.jp/top-j.html
+      - title: ARSA
+        url: http://ddbj.nig.ac.jp/arsa/?lang=ja
+  - id: flat_file
+    title: Flat file
+    url: /ddbj/flat-file.html
+    children:
+      - title: Feature key の定義
+        url: /ddbj/features.html
+      - title: Qualifier key の定義
+        url: /ddbj/qualifiers.html
+      - title: Organism qualifier に記載する生物名
+        url: /ddbj/organism.html
+      - title: Location の記述法
+        url: /ddbj/location.html
+      - title: タンパク質コード配列
+        url: /ddbj/cds.html
+      - title: The Genetic Codes
+        url: /ddbj/geneticcode.html
+      - title: 配列の記載に用いる略号
+        url: /ddbj/code.html
+      - title: 登録の見本
+        url: /ddbj/example.html
+  - id: data_categories
+    title: Data categories
+    url: /ddbj/data-categories.html
+    children:
+      - title: Genome project のデータ登録
+        url: /ddbj/genome.html
+      - title: Pseudohaplotype
+        url: /ddbj/pseudohaplotype.html
+      - title: WGS
+        url: /ddbj/wgs.html
+      - title: メタゲノムアセンブリ
+        url: /ddbj/metagenome-assembly.html
+      - title: Single amplified genome
+        url: /ddbj/single-amplified-genome.html
+      - title: CON
+        url: /ddbj/con.html
+      - title: GSS
+        url: /ddbj/gss.html
+      - title: HTG
+        url: /ddbj/htg.html
+      - title: Environmental sequence の登録
+        url: /ddbj/environmental.html
+      - title: ENV
+        url: /ddbj/env.html
+      - title: TLS
+        url: /ddbj/tls.html
+      - title: Transcriptome Project のデータ登録
+        url: /ddbj/transcriptome.html
+      - title: TSA
+        url: /ddbj/tsa.html
+      - title: EST
+        url: /ddbj/est.html
+      - title: HTC
+        url: /ddbj/htc.html
+      - title: Third Party Data (TPA)
+        url: /ddbj/tpa.html
+  - id: faq
+    title: FAQ
+    url: /faq/ja/index.html
+  - id: other
+    title: Other
+    url: /ddbj/index-e.html
+    children:
+      - title: Patent
+        url: /ddbj/patent-data.html
+      - title: MGA
+        url: /ddbj/mga.html
 lang: ja
 related_pages:
   - title: MSS データファイル用チェックツール
     url: /ddbj/mss-tool.html
   - title: UME ユーザーマニュアル
-    url: services/ume.html
+    url: /ddbj/ume.html
   - title: Parser ユーザーマニュアル
-    url: services/parser.html
+    url: /ddbj/parser.html
   - title: transChecker ユーザーマニュアル
-    url: services/transchecker.html
+    url: /ddbj/transchecker.html
   - title: validator エラーメッセージ
-    url: services/validator.html
+    url: /ddbj/validator.html
   - title: MSS 利用申し込み
-    url: services/mass-form.html
+    url: /ddbj/mss-form.html
 ---
 
 ## 配列ファイル<a name="sequence"></a>
@@ -55,7 +147,7 @@ atttgaacacacctgctgtggctgtaactctgagatgtgctaaataaaccctctt
     以外にも、必要に応じて、各種[核酸コード](/ddbj/code.html#nucleotide-1)が使用可能です。
   - 終端子として配列情報終了フラグ(//)を必ず入力してください。
   - 途中にスペース、空行が入らないようにしてください。
-  - [CON](/ddbj/data-categories.html#con) に該当する場合は、配列ファイルは [AGP
+  - [CON](/documents/data-categories.html#con) に該当する場合は、配列ファイルは [AGP
     ファイル](#agp)で代替することができます。
 
 ## アノテーションファイル<a name="annotation"></a> 
@@ -129,8 +221,8 @@ Value
 
 | 名称                                                  | 更新日        | 備考                                                   |
 | --------------------------------------------------- | ---------- | ---------------------------------------------------- |
-| [Feature Table Definition](/ddbj/full_index.html)   | 2016/11/17 | version 10.6                                         |
-| [Feature/Qualifier 対応一覧表](/files/pdf/ddbj/fq-j.pdf) | 2016/11/09 |                                                      |
+| [Feature Table Definition](/ddbj/feature-table.html)   | 2016/11/17 | version 10.6                                         |
+| [Feature/Qualifier 対応一覧表]({{ site.baseurl }}/assets/files/pdf/ddbj/fq-j.pdf) | 2016/11/09 |                                                      |
 | [登録の見本](/ddbj/example.html)                         | 2014/11/27 | [DDBJ フラットファイル](/ddbj/flat-file.html)中の feature の記載例 |
 
 ### 共通情報 COMMON<a name="common"></a> 
@@ -310,7 +402,7 @@ REFERENCE で使用する Qualifier のリスト
   - DATE にはデータの公開予定日(hold\_date)を年月日の順で、半角数字 8 桁(例：20181125)で入力してください。
   - \- \[hyphen\] や / \[slash\] などの区切り文字を使用した場合はエラーとなります。
   - 登録作業後、データの即時公開をご希望の場合には、DATE を入力しないでください。
-  - 公開予定日をご指定いただいた場合は、[データ公開原則](/data-release-policy.html)に基づいて、公開作業を行ないます。
+  - 公開予定日をご指定いただいた場合は、[データ公開原則](/documents/data-release-policy.html)に基づいて、公開作業を行ないます。
 
 ### COMMENT/ST\_COMMENT <a name="comment"></a>
 
@@ -405,16 +497,16 @@ COMMENT" があります。詳細は以下をご覧ください。
 |       |                                 |                                                             | product                            | TATA-box binding protein |
 
 <span class="red">※</span> Biological feature の定義、記述方法の詳細については、[Feature
-Table Definition](/ddbj/full_index.html)をご参照ください。
+Table Definition](/ddbj/feature-table.html)をご参照ください。
 
 #### Feature/Location/Qualifier の書式 <a name="#describing_feature"></a>
 
-  - [Feature Table Definition](/ddbj/full_index.html) では、各 Qualifier の前に
+  - [Feature Table Definition](/ddbj/feature-table.html) では、各 Qualifier の前に
     / \[slash\] が記述されておりますが、アノテーションファイルでは / を入力しないでください。
   - source と organism、mol\_type は各エントリに最低１つ、必須となります。
   - Location の記載ルールは、[Location の記述法](/ddbj/location.html)を ご参照ください。
   - 各 Feature で使用可能な Qualifier は [Feature/Qualifier
-    対応表](/files/pdf/ddbj/fq-j.pdf) にて確認できます。 一部の Feature には、入力必須
+    対応表]({{ site.baseurl }}/assets/files/pdf/ddbj/fq-j.pdf) にて確認できます。 一部の Feature には、入力必須
     Qualifier が指定されています。 対象の Feature で、Mandatory qualifier
     と指定されているものは必ず入力してください。 大文字と小文字の区別, \_
     \[underscore\] の使用も対応表の表記に従ってください。
@@ -428,21 +520,21 @@ Table Definition](/ddbj/full_index.html)をご参照ください。
 #### Value の書式 <a name="#describing_value"></a>
 
   - 使用可能な文字種は Qualifier に依存します。詳細は [Feature Table
-    Definition](/ddbj/full_index.html)および、[Feature/Qualifier
-    の対応一覧表](/files/pdf/ddbj/fq-j.pdf)をご参照ください。
+    Definition](/ddbj/feature-table.html)および、[Feature/Qualifier
+    の対応一覧表]({{ site.baseurl }}/assets/files/pdf/ddbj/fq-j.pdf)をご参照ください。
   - Value type に従い、各 Qualifier で指定されている文字種を使用して、正しく入力してください。
 
 ### DIVISION<a name="division"></a> 
 
-DIVISION は、登録データが [CON](/ddbj/data-categories.html#con) /
-[ENV](/ddbj/data-categories.html#env) /
-[EST](/ddbj/data-categories.html#est) /
-[GSS](/ddbj/data-categories.html#est) /
-[HTC](/ddbj/data-categories.html#est) /
-[HTG](/ddbj/data-categories.html#est) /
-[STS](/ddbj/data-categories.html#est) /
-[SYN](/ddbj/data-categories.html#env) /
-[TSA](/ddbj/data-categories.html#tsa) のいずれかに該当することを示します。
+DIVISION は、登録データが [CON](/documents/data-categories.html#con) /
+[ENV](/documents/data-categories.html#env) /
+[EST](/documents/data-categories.html#est) /
+[GSS](/documents/data-categories.html#est) /
+[HTC](/documents/data-categories.html#est) /
+[HTG](/documents/data-categories.html#est) /
+[STS](/documents/data-categories.html#est) /
+[SYN](/documents/data-categories.html#env) /
+[TSA](/documents/data-categories.html#tsa) のいずれかに該当することを示します。
 
 例: アノテーションファイル内の DIVISION
 
@@ -530,7 +622,7 @@ methodological keywords](/ddbj/keyword.html)をご参照ください。
       <span class="red">HTG</span>, <a href="#htg">その他</a>
       </td>
       <td>
-      <a href="/ddbj/data-categories.html#est">phase</a> に依存、登録毎にご連絡いたします。</td>
+      <a href="/documents/data-categories.html#est">phase</a> に依存、登録毎にご連絡いたします。</td>
     </tr>
     <tr>
       <td><a href="/ddbj/gss.html">GSS</a></td>
@@ -663,7 +755,7 @@ DBLINK は、 BioProject ID、BioSample ID、Sequence Read Archive (DRA/ERA/SRA)
     BioSample ID を記載してください。
   - 登録データが次世代シーケンサ由来のアセンブルで、raw reads が Sequence Read Archive
     に登録されている場合、Qualifier: sequence read archive の
-    Value に対応する [Run データのアクセッション番号](/prefix.html#dra)を入力してください。
+    Value に対応する [Run データのアクセッション番号](/documents/prefix.html#dra)を入力してください。
   - [BioProject Database](/bioproject/index.html), [BioSample
     Database](/biosample/index.html), [Sequence Read
     Archive](/dra/index.html) もご参照ください。

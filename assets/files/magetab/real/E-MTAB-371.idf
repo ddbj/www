@@ -1,0 +1,29 @@
+Comment[ArrayExpressAccession]	E-MTAB-371
+Investigation Title	ChIP-seq of human myofibroblasts to determine PPARbeta/delta binding and H3K4 trimethylation and RNA polymerase II status
+Comment[Submitted Name]	Genome-wide analyses define different classes of PPARbetadelta target genes characterized by distinct modes of transcriptional regulation (Sequencing)
+Publication Title	
+Publication Author List	
+Publication DOI	
+PubMed ID	
+Experimental Design	individual_genetic_characteristics_design	in_vitro_design	compound_treatment_design	binding_site_identification_design	ChIP-seq
+Experimental Design Term Source REF			The MGED Ontology	The MGED Ontology	EFO
+Experiment Description	Genome-wide occupancy of PPARbeta/delta in human myofibroblast (WPMY-1 celline) was studied with ChIP-Seq. Additionally, H3K4 trimethylation and RNA polymerase II status was examined.			
+Experimental Factor Name	ANTIBODY	COMPOUND	DOSE	
+Experimental Factor Type	antibody	compound	dose	
+Quality Control Type				
+Public Release Date	2010-12-31			
+Person Last Name	Mueller					
+Person First Name	Rolf					
+Person Mid Initials						
+Person Email	rmueller@imt.uni-marburg.de					
+Person Phone	+49 6421 2866237					
+Person Address	Emil-Mannkopff Str. 2, D-35032 Marburg, Germany					
+Person Affiliation	Institute for Molecular Biology and Tumor Research					
+Person Roles	primary investigator					
+Protocol Name	P-MTAB-16934	P-MTAB-16935	P-MTAB-16936	P-MTAB-16937	P-MTAB-16938	P-MTAB-16939
+Protocol Type	grow	specified_biomaterial_action	nucleic_acid_extraction	sequencing	bioassay_data_transformation	bioassay_data_transformation
+Protocol Description	Cells were obtained from the ATCC and cultured in DMEM plus 10% fetal bovine serum.	Cells were exposed for 6h to the agonist GW501516 (300nM) or DMSO solvent control, after which they were harvested.  DMSO was added in a ratio of 1:10000 of the total media volume - in this case, 2 microliter.	After stimulation, the cells were fixed by addition of 37% formaldehyde to a final concentration of 1%. Incubation time was 10 min at room temperature. Glycine was added to a final concentration of 125 mM for 5 min. After two washes with ice-cold phosphate-buffered saline, the cells were pelleted for 5 min at 1200 g. Pellets were resuspended in cold hypotonic lysis buffer [5 mM PIPES, pH 8.0, 85 mM KCl, 0.5% (v/v) NP40, and protease inhibitor cocktail (Sigma)] at a ratio of 1 ml per 10^7 cells and incubated on ice for 20 min. Nuclei were pelleted by centrifugation as  before and resuspended in radioimmunoprecipitation assay buffer [10 mM Tris-HCl, pH 7.4, 150 mM NaCl, 1% (v/v) NP40, 1% sodium deoxycholate, 0.1% (w/v) SDS, 1 mM EDTA, and protease inhibitors] at a ratio of 1 ml per 10^7 nuclei. Soluble chromatin was prepared by sonication with a microtip using a sonifier  (S-250D; Branson Ultrasonics Corporation, Danbury, CT) set to 1-s pulse, 2-s pause. Sixty pulses were applied. After centrifugation at 16,000g for 15 min   in a tabletop centrifuge, the supernatant was collected. An aliquot was incubated overnight with proteinase K and RNase A at 65C and loaded on a 1% agarose gel to estimate shearing efficiency. The supernatant was precleared by addition of protein A Sepharose beads (Invitrogen), which were previously blocked in radioimmuno-precipitation assay buffer with 1 mg/ml bovine serum albumin, 0.4 mg/ml sonicated salmon sperm DNA (Stratagene), and protease inhibitors, coupled to rabbit IgG (Sigma I5006). After rotation for 1 h at 4C, the beads were removed by centrifugation. The supernatant was used for immunpreciptiations. Four micrograms of antibody were added to 300ul of precleared chromatin corresponding to 3 x 10^6 nuclei and incubated overnight at 4C with mild rotation. After addition of blocked Sepharose beads, incubation time was 1 h at 4C with mild rotation. The beads were washed once with 1 ml of chilled mixed micelle buffer [20 mM Tris, pH 8.1, 150 mM NaCl, 2 mM EDTA, 0.1% (w/v) SDS, and 1% (v/v) Triton X-100], once with buffer 500 [20 mM Tris, pH   8.1, 500 mM NaCl, 2 mM EDTA, 0.1% (w/v) SDS, and 1% (v/v) Triton X-100], twice with LiCl detergent buffer (10 mM Tris, pH 8.1, 250 mM LiCl, 1% (v/v) NP40,   1% (w/v) sodium deoxycholate, and 1 mM EDTA), and twice with room-temperature Tris-EDTA. Complexes were eluted twice with 25ul of elution buffer [1% SDS   (w/v) and 100 mM NaHCO3]. Supernatants were pooled; adjusted to 180 mM NaCl, 35 mM Tris, pH 6.5, and 9 mM EDTA; and incubated with 20 microgram of proteinase K  and 1ug of RNase A for 65C overnight. DNA was purified using a PCR purification kit (Qiagen, Hilden, Germany).	ChIP samples were sequenced on an Illumina IIx Genome Analyzer according to the manufacturers instructions.	Raw sequencing reads were approximately deduplicated using a bloom filter and aligned against hg19 (GRch37) with Bowtie 0.12.3 (unique, multi-aligend and failed-to-align reads into seperate files, maximum of 2 mismatches in seed, maximum mismatch quality sum of 70).	Peaks were called using MACS (1.3.7.1, gsize=2900000000, mfold=8). Genomic annotation was performed against Ensembl homo sapiens 58_37.																												
+Protocol Hardware				Illumina Genome Analyzer II																														
+Comment[SecondaryAccession]	ERP000333																																	
+Comment[SequenceDataURI]	http://www.ebi.ac.uk/ena/data/view/ERR018530-ERR018537																																	
+SDRF File	E-MTAB-371.sdrf.txt

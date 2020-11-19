@@ -1,0 +1,27 @@
+"Investigation Title"	"Micorarray analysis of gene expression in zebrafish development"		
+"Experimental Design"	development_or_differentiation_design	time_series_design	
+"Experimental Factor Name"	TIME	DEVELOPMENTALSTAGE	
+"Experimental Factor Type"	time	developmental_stage	
+			
+"Person Last Name"	Saric	Konantz	
+"Person First Name"	Marc	Martina	
+"Person Mid Initial"			
+"Person Affiliation"	"Max-Planck-Institute for Developmental Biology, T�bingen, Germany"		
+"Person Roles"	submitter	submitter	
+			
+"Quality Control Types"	biological_replicate	spike_quality_control	real_time_PCR_quality_control
+"Public Release Date"	"2005-08-18"		
+			
+Comment[ArrayExpressSubmissionDate]	"2005-08-18"		
+			
+"Publication Author List"	"Martina Konantz; Georg-Wilhelm Otto; Christian Weiler; Marc Saric; Robert Geisler"		
+"Publication Title"	"Micorarray analysis of gene expression in zebrafish development"		
+"Experiment Description"	"We are performing microarray experiments for expression profiling of zebrafish embryogenesis, both as a baseline for future analysis of mutant and other conditions and to validate our microarray technology.  For our purpose we used the Affymetrix zebrafish array which contains approximately 15,000 genes. This represents about 50 % of the estimated number of zebrafish genes.  Total RNA was collected from embryos at 16 different stages (zygote, shield stage, 75 % epiboly, 90 % epiboly, bud stage, 5-somite stage, 14-somite stage, prim-5 stage, 32 hpf and long-pec stage, 4d post fertilization (dpf),  5 dpf, 14 dpf, 30 dpf, 90 dpf, adult). Microarray analysis was performed with these stages in single colour experiments. After normalization, differential expressed genes were selected and further analyzed with GeneSpring software. In order to validate the microarray data and to assign biological functions we chose a few genes to do semi-quantitative real-time PCR. Many of the differentially expressed genes are unknown and could be candidates for regulatory genes identified in mutagenesis experiments.  We identified several genes known to be involved in zebrafish organogenesis as well as novel genes with unique temporal expression patterns."		
+			
+"Protocol Name"	P-TABM-55	P-TABM-56	P-AFFY-2
+"Protocol Type"	"grow, sacrifice, store"	"nucleic_acid_extraction, store"	labeling
+"Protocol Description"	"T�bingen wildtype-fish were maintained as described in N�sslein-Volhard and Dahm: Zebrafish, PAS Oxford Univ. Press ISBN 019963808 X. Staging was done by hours postfertilization (Kimmel et al) in liquid nitrogen and embryos were stored at  - 80 �C. "	"Briefly, total RNAs were prepared from every stages using TRIzol reagent (Invitrogen GmbH, Germany) with an added chlorophorm extraction before precipitation. Quality of embryonic RNA was assesed using the NanoDrop ND-1000 UV-Bis Spectrophotometer (NanoDrop Technologies, Wilmington, DE, USA). Samples where stored at -80�C"	"Affymetrix_IVT_protocol In vitro transcription cRNA labeling"
+"Protocol Parameters"			
+"Protocol Software"			
+			
+"SDRF File"	E-TABM-33_sdrf.txt		

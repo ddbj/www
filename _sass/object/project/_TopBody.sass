@@ -1,0 +1,26 @@
+#TopBody
+  background-color: rgba(253, 253, 253, 0.8)
+  > .inner
+    +inner
+    padding: 0 $PADDING_BASE $PADDING_BASE
+    display: flex
+    //align-items: flex-start
+    > #TopServiceGroups
+      width: 82.4rem
+      flex-grow: 2
+    > #TopNews
+      width: 32rem
+
+@media screen and (max-width: $WIDTH_SP)
+  #TopBody
+    > .inner
+      +inner-sp
+      padding: 2rem 0
+      flex-direction: column
+      > #TopServiceGroups
+        order: 2
+        width: auto
+      > #TopNews
+        order: 1
+        width: auto
+

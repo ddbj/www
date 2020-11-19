@@ -2,20 +2,112 @@
 layout: indexed_content
 title: Submission File Format
 category: ddbj
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /ddbj/index-e.html
+  - id: submission
+    title: Submission
+    url: /ddbj/submission-e.html
+    children:
+      - title: Before Submission
+        url: /ddbj/submission-e.html
+      - title: Web submission
+        url: /ddbj/web-submission-e.html
+      - title: Mass Submission
+        url: /ddbj/mss-e.html
+      - title: Data Update
+        url: /ddbj/update-e.html
+  - id: search
+    title: Search
+    url: http://ddbj.nig.ac.jp/arsa/?lang=en
+    children:
+      - title: getentry
+        url: http://getentry.ddbj.nig.ac.jp/top-e.html
+      - title: ARSA
+        url: http://ddbj.nig.ac.jp/arsa/?lang=en
+  - id: flat_file
+    title: Flat file
+    url: /ddbj/flat-file-e.html
+    children:
+      - title: Feature key
+        url: /ddbj/features-e.html
+      - title: Qualifier key
+        url: /ddbj/qualifiers-e.html
+      - title: Organism qualifier
+        url: /ddbj/organism-e.html
+      - title: Description of Location
+        url: /ddbj/location-e.html
+      - title: Protein Coding Sequence
+        url: /ddbj/cds-e.html
+      - title: The Genetic Codes
+        url: /ddbj/geneticcode-e.html
+      - title: Codes Used in Sequence Description
+        url: /ddbj/code-e.html
+      - title: Example of Submission
+        url: /ddbj/example-e.html
+  - id: data_categories
+    title: Data categories
+    url: /ddbj/data-categories-e.html
+    children:
+      - title: Data Submission from Genome Project
+        url: /ddbj/genome-e.html
+      - title: Pseudohaplotype
+        url: /ddbj/pseudohaplotype-e.html
+      - title: WGS
+        url: /ddbj/wgs-e.html
+      - title: Metagenome Assembly
+        url: /ddbj/metagenome-assembly-e.html
+      - title: Single amplified genome
+        url: /ddbj/single-amplified-genome-e.html
+      - title: CON
+        url: /ddbj/con-e.html
+      - title: GSS
+        url: /ddbj/gss-e.html
+      - title: HTG
+        url: /ddbj/htg-e.html
+      - title: Submission of environmental sequences
+        url: /ddbj/environmental-e.html
+      - title: ENV
+        url: /ddbj/env-e.html
+      - title: TLS
+        url: /ddbj/tls-e.html
+      - title: Data Submission from Transcriptome Project
+        url: /ddbj/transcriptome-e.html
+      - title: TSA
+        url: /ddbj/tsa-e.html
+      - title: EST
+        url: /ddbj/est-e.html
+      - title: HTC
+        url: /ddbj/htc-e.html
+      - title: Third Party Data (TPA)
+        url: /ddbj/tpa-e.html
+  - id: faq
+    title: FAQ
+    url: /faq/en/index-e.html
+  - id: other
+    title: Other
+    url: /ddbj/index-e.html
+    children:
+      - title: Patent
+        url: /ddbj/patent-data-e.html
+      - title: MGA
+        url: /ddbj/mga-e.html
 lang: en
 related_pages:
   - title: Validation tools for MSS data files
-    url: services/mss-tool-e.html
+    url: /ddbj/mss-tool-e.html
   - title: UME User’s manual
-    url: services/ume-e.html
+    url: /ddbj/ume-e.html
   - title: Parser User’s Manual
-    url: services/parser-e.html
+    url: /ddbj/parser-e.html
   - title: transChecker User’s Manual
-    url: services/transchecker-e.html
+    url: /ddbj/transchecker-e.html
   - title: Validator error message
-    url: services/validator-e.html
+    url: /ddbj/validator-e.html
   - title: Application form for MSS
-    url: services/mass-form-e.html
+    url: /ddbj/mss-form-e.html
 ---
 
 ## Sequence File<a name="sequence"></a>
@@ -51,7 +143,7 @@ It is required to validate formats of sequence file by [UME](/ddbj/ume-e.html) o
   - In principle, please remove the base code 'n' locating 5' or 3' end of sequences. For especially EST submissions, please do not send the raw outputs of a sequencer. You should screen your sequences to remove unreliable output(s) often locating at 5'-end.
   - Remove the sequences derived from vector, linker or adaptor.If you would like to submit some artificially constructed sequence itself, such as an expression vector etc., you do not have to remove that.
   - Please be sure to input the end flag \[//\] at the end of each sequence.
-  - In case of [CON entry](/data-categories-e.html#con), [AGP file](#agp) can be used as a substitute for sequence file.
+  - In case of [CON entry](/documents/data-categories-e.html#con), [AGP file](#agp) can be used as a substitute for sequence file.
 
 ## Annotation File<a name="annotation"></a> 
 
@@ -124,8 +216,8 @@ Other
 
 | Name                                                       | Refix Date | Remarks                                                        |
 | ---------------------------------------------------------- | ---------- | -------------------------------------------------------------- |
-| [Feature Table Definition](/ddbj/full_index-e.html)        | 2016/11/17 | version 10.6                                                   |
-| [Feature/Qualifier usage matrix](/files/pdf/ddbj/fq-e.pdf) | 2016/11/09 |                                                                |
+| [Feature Table Definition](/ddbj/feature-table-e.html)        | 2016/11/17 | version 10.6                                                   |
+| [Feature/Qualifier usage matrix]({{ site.baseurl }}/assets/files/pdf/ddbj/fq-e.pdf) | 2016/11/09 |                                                                |
 | [Example of Submission](/ddbj/example-e.html)              | 2014/11/27 | Examples of features in [DDBJ flat file](/ddbj/flat-file.html) |
 
 ### COMMON<a name="common"></a> 
@@ -210,7 +302,7 @@ List of Qualifiers for SUBMITTER
 
   - Basically it is necessary to enter one SUBMITTER for each entry. But [COMMON](#common) can be used for describing SUBMITTER that is common to all entries.  
     When SUBMITTER is written by using COMMON, SUBMITTER cannot be used for the other entries in the same annotation file.
-  - [Submitters](/ddbj/submission-e.html#submitter) are the persons who have the responsibility in the contents of the submitted data and have the right to update the data.
+  - [Submitters](/ddbj/submission.html#submitter) are the persons who have the responsibility in the contents of the submitted data and have the right to update the data.
   - Qualifier: ab\_name in SUBMITTER can be used repeatedly for multiple submitters and those submitters are shown in the released file in
     the order of this annotation file.
   - It is necessary to specify a contact person whom DDBJ will contact with about the data by using Qualifier: contact.
@@ -330,7 +422,7 @@ Example: DATE/hold\_date in annotation file
   - Delimiters (i.e. -- (hyphen), / (slash) etc.) is not allowed to use for Value of hold\_date.
   - Do not enter any DATE, if your data should be open to public immediately.
   - DATE should be included for [COMMON](#common) entry. If the date is not common to all entries, please prepare the file for each.
-  - If you set a hold\_date, your data will be released according to [Principle of "Hold-Until-Published" data release](/data-release-policy-e.html).
+  - If you set a hold\_date, your data will be released according to [Principle of "Hold-Until-Published" data release](/documents/data-release-policy-e.html).
 
 ### COMMENT/ST\_COMMENT<a name="comment"></a> 
 
@@ -414,14 +506,14 @@ Example: source and CDS features in annotation file(<span class="red">Requierd</
 |       | CDS                             | complement(join(3213..4981,9901..11677))                    | gene                               | tbpA                     |
 |       |                                 |                                                             | product                            | TATA-box binding protein |
 
-<span class="red">※</span>For detail definitions and descriptions of Biological features, please read [Feature Table Definition](/ddbj/full_index-e.html).
+<span class="red">※</span>For detail definitions and descriptions of Biological features, please read [Feature Table Definition](/ddbj/feature-table-e.html).
 
 #### Requirements for Describing Feature/Location/Qualifier <a name="#describing_feature"></a>
 
-  - In [Feature Table Definition](/ddbj/full_index-e.html), each Qualifier has a / \[slash\] on its head, however do not use slashes for Qualifiers in the annotation file.
+  - In [Feature Table Definition](/ddbj/feature-table-e.html), each Qualifier has a / \[slash\] on its head, however do not use slashes for Qualifiers in the annotation file.
   - Qualifiers marked with \* (organism、mol\_type) are mandatory items. Features, source and at least one other feature are mandatory items for each entry. Please be sure to input them correctly.
   - You can find the rule to describe Location on [Description of Location](/ddbj/location-e.html).
-  - You can see Qualifiers are legal for each Feature in [Feature/Qualifier Usage Matrix](/files/pdf/ddbj/fq-e.pdf). Some of
+  - You can see Qualifiers are legal for each Feature in [Feature/Qualifier Usage Matrix]({{ site.baseurl }}/assets/files/pdf/ddbj/fq-e.pdf). Some of
     Features have mandatory Qualifier(s). Please be sure to specify Features and Qualifiers according to their name in the table. They are strictly defined such as case-sensitive (to distinguish upper case or lower), to use "\_" \[underscore\], and so on.
   - See also [Sample annotation file](#sample) and [Example of Submission](/ddbj/example-e.html)
   - When you describe CDS features, [Protein Coding Sequence; CDS feature](/ddbj/cds-e.html) would be helpful.
@@ -429,12 +521,12 @@ Example: source and CDS features in annotation file(<span class="red">Requierd</
 
 #### Requirements for Describing Value <a name="#describing_value"></a>
 
-  - The legal character type for Values depends on the Qualifiers as shown in the table, [Feature/Qualifier Usage Matrix](/files/pdf/ddbj/fq-e.pdf) and [Feature Table Definition](/ddbj/full_index-e.html).
+  - The legal character type for Values depends on the Qualifiers as shown in the table, [Feature/Qualifier Usage Matrix]({{ site.baseurl }}/assets/files/pdf/ddbj/fq-e.pdf) and [Feature Table Definition](/ddbj/feature-table-e.html).
   - Please be sure to input (or not to input) Values in accordance with value types in tables.
 
 ### DIVISION<a name="division"></a>
 
-DIVISION feature in annotation file indicates that entries are corresponding only to one of [CON](/data-categories-e.html#con) / [ENV](/ddbj/data-categories.html#env) / [EST](/data-categories-e.html#est) / [GSS](/data-categories-e.html#est) / [HTC](/data-categories-e.html#est) / [HTG](/data-categories-e.html#est) / [STS](/data-categories-e.html#est) / [SYN](/data-categories-e.html#env) / [TSA](/data-categories-e.html#tsa).
+DIVISION feature in annotation file indicates that entries are corresponding only to one of [CON](/documents/data-categories-e.html#con) / [ENV](/documents/data-categories.html#env) / [EST](/documents/data-categories-e.html#est) / [GSS](/documents/data-categories-e.html#est) / [HTC](/documents/data-categories-e.html#est) / [HTG](/documents/data-categories-e.html#est) / [STS](/documents/data-categories-e.html#est) / [SYN](/documents/data-categories-e.html#env) / [TSA](/documents/data-categories-e.html#tsa).
 
 Example: DIVISION in annotation file
 
@@ -512,7 +604,7 @@ Specified values for KEYWORD/keyword(<span class="red">Requierd</span>)
     <tr>
       <td><a href="/ddbj/htg.html">HTG</a></td>
       <td><span class="red">HTG</span>, <a href="#htg">some other terms</a></td>
-      <td>Depending on the <a href="/ddbj/data-categories.html#est">phase</a>. Please contact us before your submission.</td>
+      <td>Depending on the <a href="/documents/data-categories.html#est">phase</a>. Please contact us before your submission.</td>
     </tr>
     <tr>
       <td><a href="/ddbj/gss.html">GSS</a></td>
@@ -603,7 +695,7 @@ Specified values for KEYWORD/keyword(<span class="red">Requierd</span>)
     
 ###### For HTG submissions<a name="htg"></a>
 
-  - For HTG submissions, we recommend to use keywords to indicate sequencing status of [HTG data](/sub/htg-e.html).
+  - For HTG submissions, we recommend to use keywords to indicate sequencing status of [HTG data](/ddbj/htg-e.html).
 
     Example I: containing unordered pieces(<span class="red">Requierd</span>)
 
@@ -637,7 +729,7 @@ Example: DBLINK in annotation file(<span class="red">Requierd</span>)
 
   - If you have registered your project to the [DDBJ BioProject Database](/bioproject/index-e.html), please enter the project ID in
     the Value for Qualifier: The sample ID of [DDBJ BioSample](/biosample/index-e.html) also writes in the Value of for Qualifier.
-  - An assembly from raw reads of Sequence Read Archive is required to have [run accession number(s)](/prefix-e.html#dra) in the Value for Qualifier.
+  - An assembly from raw reads of Sequence Read Archive is required to have [run accession number(s)](/documents/prefix-e.html#dra) in the Value for Qualifier.
   - See also [DDBJ BioProject Database](/bioproject/index-e.html), [DDBJ BioSample Database](/biosample/index-e.html) and [DDBJ Sequence Read Archive](/dra/index-e.html).
 
 ### locus\_tag <a name="locus_tag"></a>
@@ -713,7 +805,7 @@ Value formats of ff\_definition
 
 ### assembly\_gap: Sequencing Gap Region <a name="assembly_gap"></a>
 
-In cases of whole genome scale sequencing such as [HTG](/sub/htg-e.html) or large scale of assembled EST sequences such as [TSA](/ddbj/tsa-e.html) division, the entries may have some sequencing gaps that would be resulted from the process of assembling or the region difficult to read. You can indicate them by describing "n" in its sequence. In annotation file, you have to indicate the regions of sequencing gaps with [assembly\_gap](/ddbj/features-e.html#assembly_gap) features.
+In cases of whole genome scale sequencing such as [HTG](/ddbj/htg-e.html) or large scale of assembled EST sequences such as [TSA](/ddbj/tsa-e.html) division, the entries may have some sequencing gaps that would be resulted from the process of assembling or the region difficult to read. You can indicate them by describing "n" in its sequence. In annotation file, you have to indicate the regions of sequencing gaps with [assembly\_gap](/ddbj/features-e.html#assembly_gap) features.
 
 Example: assembly\_gap in annotation file(<span class="red">Requierd</span>)
 

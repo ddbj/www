@@ -14,5 +14,5 @@ lang: ja
 
 <dl><dt>MSS の場合</dt>
   <dd>first name のみ記載してください。<br>登録の際、関連する警告 warning が出力されますが、問題はありませんので無視してください。</dd><dt>塩基配列登録システム<!-- Nucleotide Sequence Submission System -->の場合</dt>
-  <dd>first name に加えてダミーの頭文字を記載してください。<br><a href="/ddbj/websub-help.html#flow-7a">最終確認画面</a>の通信欄 (Submission Information) において、その旨、お知らせください。</dd>
+  <dd>first name に加えてダミーの頭文字を記載してください。<br><a href="/ddbj/web-submission-help.html#flow-7a">最終確認画面</a>の通信欄 (Submission Information) において、その旨、お知らせください。</dd>
 </dl>

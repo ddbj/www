@@ -3,6 +3,52 @@ layout: indexed_content
 title: Accepted Data File Formats
 pathname: datafile-e
 category: gea
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /gea/index-e.html
+  - id: submission overview
+    title: Submission Overview
+    url: /gea/overview-e.html
+    children:
+      - title: Submit microarray experiment
+        url: /gea/submit-array-e.html
+      - title: Submit sequencing experiment
+        url: /gea/submit-sequence-e.html
+      - title: Metadata
+        url: /gea/metadata-e.html
+      - title: Data File
+        url: /gea/datafile-e.html
+      - title: Validation
+        url: /gea/validation-e.html
+      - title: Single-cell submission guide
+        url: /gea/single-cell-e.html
+      - title: Example
+        url: /gea/example-e.html
+      - title: Array Design
+        url: /gea/adf-e.html
+      - title: Data matrix
+        url: /gea/matrix-e.html
+      - title: Reviewer Access
+        url: /gea/reviewer-access-e.html
+  - id: faq
+    title: FAQ
+    url: /faq/en/index-e.html
+  - id: search
+    title: Search (AOE)
+    url: http://aoe.dbcls.jp/
+    children:
+      - title: RefEx
+        url: http://refex.dbcls.jp/index.php?lang=en
+      - title: Search (ArrayExpress)
+        url: https://www.ebi.ac.uk/arrayexpress/browse.html
+  - id: downloads
+    title: Downloads
+    url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/gea
+  - id: about gea
+    title: About GEA
+    url: /gea/about-gea-e.html
 lang: en
 ---
 
@@ -305,7 +351,7 @@ A spike-in list for single-cell analysis or supplementary files for data
 analysis can be attached to GEA experiment as "additional files"
 (example,
 [E-MTAB-3624](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3624/))
-Please [contact GEA team](/contact-e.html) to submit additional files.
+Please [contact GEA team](/contact-ddbj-e.html) to submit additional files.
 
 
 
@@ -319,7 +365,7 @@ Please [contact GEA team](/contact-e.html) to submit additional files.
 
 Sequencing raw data files need to be pre-registered to DDBJ Sequence
 Read Archive (DRA). Please see the [accepted data
-files](/dra/submission-e.html#run-data-files) for DRA.
+files](/dra/submission.html#run-data-files) for DRA.
 
 
 ### Processed data files <a name="seq_proc"></a>
@@ -329,7 +375,7 @@ conclusions in the related manuscript are based. We do not expect
 standard alignment files (e.g., BAM, SAM, BED) as processed data since
 conclusions are expected to be based on further-processed data. When
 standard alignments are the only processed data available, please [write
-to us](/contact-e.html) to inquire about whether your data are suitable
+to us](/contact-ddbj-e.html) to inquire about whether your data are suitable
 for submission to GEA. Requirements for processed data files are not
 fully standardized and will depend on the nature of the experiment.
 
@@ -384,4 +430,4 @@ A spike-in list for single-cell analysis or supplementary files for data
 analysis can be attached to GEA experiment as "additional files"
 (example,
 [E-MTAB-3624](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3624/))
-Please [contact GEA team](/contact-e.html) to submit additional files.
+Please [contact GEA team](/contact-ddbj-e.html) to submit additional files.

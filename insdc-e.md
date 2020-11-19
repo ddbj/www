@@ -6,9 +6,9 @@ category: www
 lang: en
 related_pages:
   - title: INSDC Status Document
-    url: /insdc-status-e.html
+    url: /insdc-status-e
   - title: Faculty Staff of DDBJ
-    url: /staff-e.html
+    url: /ddbj-staff-e.html
 ---
 
 DDBJ Center has been closely collaborating with [EBI; European
@@ -91,7 +91,7 @@ a year.
 
 ## ICM; International Collaborative Meeting <a name="icm"></a> 
 
-[International Collaborative Meeting](/activities/icm-reports-e.html)
+[International Collaborative Meeting](/activities/index-e.html)
 consists of working-level participants of INSDC and its fundamental
 principle is international collaboration. The meeting to discuss
 practical matters to maintain and update INSDC is held once a year.

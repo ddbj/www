@@ -1,0 +1,1 @@
+MetaColumn	MetaRow	Column	Row	Reporter Identifier	Reporter Name	Reporter BioSequence DatabaseEntry [database_code]	Reporter BioSequence Type	Reporter BioSequence Polymer Type	Reporter BioSequence [Actual Sequence]	Reporter Group [role]	Reporter Control Type

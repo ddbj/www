@@ -1,0 +1,47 @@
+COMMON	SUBMITTER		contact	Hanako Mishima
+			ab_name	Mishima,H.
+			ab_name	Yamada,T.
+			email	mishima@ddbj.nig.ac.jp
+			phone	81-55-981-6853
+			fax	81-55-981-6849
+			institute	National Institute of Genetics
+			department	DNA Data Bank of Japan
+			country	Japan
+			state	Shizuoka
+			city	Mishima
+			street	Yata 1111
+			zip	411-8540
+	REFERENCE		ab_name	Mishima,H.
+			ab_name	Yamada,T.
+			title	Plant mitochondrial DNA
+			status	Unpublished
+			year	2017
+	DATE		hold_date	20191130
+	TOPOLOGY		circular	
+ENT01	source	1..E	organelle	mitochondrion
+			organism	Abies nordmanniana subsp. equi-trojani
+			mol_type	genomic DNA
+			isolate	SM08
+			sub_species	equi-trojani
+	CDS	8607..9390	gene	COX3
+			note	TAA stop codon is completed by the addition of 3' A residues to the mRNA
+			product	cytochrome oxidase subunit 3
+			transl_except	(pos:9390,aa:TERM)
+			transl_table	1
+	tRNA	9391..9458	anticodon	(pos:9421..9423,aa:Gly)
+			note	codon recognized:GGA
+			product	tRNA-Gly
+	CDS	9459..9806	gene	ND3
+			product	NADH dehydrogenase subunit 3
+			transl_table	1
+	tRNA	complement(9808..9875)	anticodon	(pos:complement(9838..9840),aa:Arg)
+			product	tRNA-Arg
+ENT02	source	1..E	organelle	mitochondrion
+			organism	Abies nordmanniana
+			mol_type	genomic DNA
+			isolate	SM09
+	CDS	8607..9390	gene	COX3
+			note	TAA stop codon is completed by the addition of 3' A residues to the mRNA
+			product	cytochrome oxidase subunit 3
+			transl_except	(pos:9390,aa:TERM)
+			transl_table	1

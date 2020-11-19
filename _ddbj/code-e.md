@@ -3,6 +3,98 @@ layout: indexed_content
 title: Codes Used in Sequence Description
 pathname: code-e
 category: ddbj
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /ddbj/index-e.html
+  - id: submission
+    title: Submission
+    url: /ddbj/submission-e.html
+    children:
+      - title: Before Submission
+        url: /ddbj/submission-e.html
+      - title: Web submission
+        url: /ddbj/web-submission-e.html
+      - title: Mass Submission
+        url: /ddbj/mss-e.html
+      - title: Data Update
+        url: /ddbj/update-e.html
+  - id: search
+    title: Search
+    url: http://ddbj.nig.ac.jp/arsa/?lang=en
+    children:
+      - title: getentry
+        url: http://getentry.ddbj.nig.ac.jp/top-e.html
+      - title: ARSA
+        url: http://ddbj.nig.ac.jp/arsa/?lang=en
+  - id: flat_file
+    title: Flat file
+    url: /ddbj/flat-file-e.html
+    children:
+      - title: Feature key
+        url: /ddbj/features-e.html
+      - title: Qualifier key
+        url: /ddbj/qualifiers-e.html
+      - title: Organism qualifier
+        url: /ddbj/organism-e.html
+      - title: Description of Location
+        url: /ddbj/location-e.html
+      - title: Protein Coding Sequence
+        url: /ddbj/cds-e.html
+      - title: The Genetic Codes
+        url: /ddbj/geneticcode-e.html
+      - title: Codes Used in Sequence Description
+        url: /ddbj/code-e.html
+      - title: Example of Submission
+        url: /ddbj/example-e.html
+  - id: data_categories
+    title: Data categories
+    url: /ddbj/data-categories-e.html
+    children:
+      - title: Data Submission from Genome Project
+        url: /ddbj/genome-e.html
+      - title: Pseudohaplotype
+        url: /ddbj/pseudohaplotype-e.html
+      - title: WGS
+        url: /ddbj/wgs-e.html
+      - title: Metagenome Assembly
+        url: /ddbj/metagenome-assembly-e.html
+      - title: Single amplified genome
+        url: /ddbj/single-amplified-genome-e.html
+      - title: CON
+        url: /ddbj/con-e.html
+      - title: GSS
+        url: /ddbj/gss-e.html
+      - title: HTG
+        url: /ddbj/htg-e.html
+      - title: Submission of environmental sequences
+        url: /ddbj/environmental-e.html
+      - title: ENV
+        url: /ddbj/env-e.html
+      - title: TLS
+        url: /ddbj/tls-e.html
+      - title: Data Submission from Transcriptome Project
+        url: /ddbj/transcriptome-e.html
+      - title: TSA
+        url: /ddbj/tsa-e.html
+      - title: EST
+        url: /ddbj/est-e.html
+      - title: HTC
+        url: /ddbj/htc-e.html
+      - title: Third Party Data (TPA)
+        url: /ddbj/tpa-e.html
+  - id: faq
+    title: FAQ
+    url: /faq/en/index-e.html
+  - id: other
+    title: Other
+    url: /ddbj/index-e.html
+    children:
+      - title: Patent
+        url: /ddbj/patent-data-e.html
+      - title: MGA
+        url: /ddbj/mga-e.html
 lang: en
 related_pages:
   - title: DDBJ flat file format
@@ -54,8 +146,8 @@ be automatically converted to small letter.
 [References]
 
   - Cornish-Bowden, A. Nucl Acid Res 13, 3021-3030 (1985)
-  - [Feature Table Definition](/ddbj/full_index-e.html): [7.4.1
-    Nucleotide base codes (IUPAC)](/ddbj/full_index-e.html#7.4.1)
+  - [Feature Table Definition](/ddbj/feature-table-e.html): [7.4.1
+    Nucleotide base codes (IUPAC)](/ddbj/feature-table-e.html#7.4.1)
 
 ### Modified Base Abbreviations <a name="nucleotide-2"></a>
 
@@ -129,8 +221,8 @@ Example
     in Cornish_Bowden, A. Nucl Acid Res 13, 3021-3030 (1985)the
     IUPAC-IUB declined to recommend a set of abbreviations for modified
     nucleotides)
-  - [Feature Table Definition](/ddbj/full_index-e.html): [7.4.2 Modified
-    base abbreviations](/ddbj/full_index-e.html#7.4.2)
+  - [Feature Table Definition](/ddbj/feature-table-e.html): [7.4.2 Modified
+    base abbreviations](/ddbj/feature-table-e.html#7.4.2)
 
 
 
@@ -187,8 +279,8 @@ Those that are not included in "Amino acid codes", please refer to
   - IUPAC-IUB Joint Commission on Biochemical Nomenclature.Nomenclature
     and Symbolism for Amino Acids and Peptides. Eur. J. Biochem. 138:
     9-37 (1984).
-  - [Feature Table Definition](/ddbj/full_index-e.html): [7.4.3 Amino
-    acid abbreviations](/ddbj/full_index-e.html#7.4.3)
+  - [Feature Table Definition](/ddbj/feature-table-e.html): [7.4.3 Amino
+    acid abbreviations](/ddbj/feature-table-e.html#7.4.3)
 
 
 ### Modified and Unusual Amino Acids <a name="amino-2"></a>
@@ -236,4 +328,4 @@ feature](/ddbj/cds-e.html).
 
 [References]
 
-  - [Feature Table Definition](/ddbj/full_index-e.html): [7.4.4 Modified and unusual Amino Acids](/ddbj/full_index-e.html#7.4.4)
+  - [Feature Table Definition](/ddbj/feature-table-e.html): [7.4.4 Modified and unusual Amino Acids](/ddbj/feature-table-e.html#7.4.4)

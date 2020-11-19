@@ -3,6 +3,52 @@ layout: indexed_content
 title: Accepted Data File Formats
 pathname: datafile
 category: gea
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /gea/index.html
+  - id: submission overview
+    title: Submission Overview
+    url: /gea/overview.html
+    children:
+      - title: Submit microarray experiment
+        url: /gea/submit-array.html
+      - title: Submit sequencing experiment
+        url: /gea/submit-sequence.html
+      - title: Metadata
+        url: /gea/metadata.html
+      - title: Data File
+        url: /gea/datafile.html
+      - title: Validation
+        url: /gea/validation.html
+      - title: Single-cell submission guide
+        url: /gea/single-cell.html
+      - title: Example
+        url: /gea/example.html
+      - title: Array Design
+        url: /gea/adf.html
+      - title: Data matrix
+        url: /gea/matrix.html
+      - title: Reviewer Access
+        url: /gea/reviewer-access.html
+  - id: faq
+    title: FAQ
+    url: /faq/ja/index.html
+  - id: search
+    title: Search (AOE)
+    url: http://aoe.dbcls.jp/
+    children:
+      - title: Search (ArrayExpress)
+        url: https://www.ebi.ac.uk/arrayexpress/browse.html
+      - title: RefEx
+        url: http://refex.dbcls.jp/
+  - id: downloads
+    title: Downloads
+    url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/gea
+  - id: about gea
+    title: About GEA
+    url: /gea/about-gea.html
 lang: ja
 ---
 
@@ -235,7 +281,7 @@ protein アクセッション番号) を記載するようにしてください�
 
 一細胞解析における spike-in やデータ解析に必要な追加ファイルを additional file として登録することができます（例
 [E-MTAB-3624](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3624/)）。登録を希望する場合は
-[GEA チームに連絡](/contact.html)してください。
+[GEA チームに連絡](/contact-ddbj.html)してください。
 
 ## シークエンシングデータ <a name="seq_data"></a>
 
@@ -254,7 +300,7 @@ protein アクセッション番号) を記載するようにしてください�
 BAM、SAM、BED）からさらに解析を進めたデータに基づいていることが一般的であるため、
 GEA はアライメントファイルが解析データファイルとして登録されることを想定していません。
 標準的なアライメントファイルのみが解析データである場合は
-[GEA に連絡](/contact.html)してください。
+[GEA に連絡](/contact-ddbj.html)してください。
 
 解析データファイルの要件は実験の性質に依存するため完全には定められていません。
 
@@ -288,4 +334,4 @@ format FAQ](http://www.genome.ucsc.edu/FAQ/FAQformat.html) を参照してくだ
 
 一細胞解析における spike-in やデータ解析に必要な追加ファイルを additional file として登録することができます（例
 [E-MTAB-3624](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3624/)）。登録を希望する場合は
-[GEA チームに連絡](/contact.html)してください。
+[GEA チームに連絡](/contact-ddbj.html)してください。

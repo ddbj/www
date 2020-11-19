@@ -5,31 +5,31 @@ category: services
 lang: ja
 related_pages:
   - title: WABI BLAST ヘルプ
-    url: /wabi_blast-help.html
+    url: /services/wabi-blast.html
   - title: WABI ClustalW ヘルプ
-    url: /wabi_clustalw-help.html
+    url: /services/wabi-clustalw.html
   - title: WABI VecScreen ヘルプ
-    url: /wabi_vecscreen-help.html
+    url: /services/wabi-vecscreen.html
   - title: WABI MAFFT ヘルプ
-    url: /wabi_mafft-help.html
+    url: /services/wabi-mafft.html
   - title: ARSA ヘルプ
-    url: /arsa-help.html
+    url: /services/arsa.html
   - title: BLAST ヘルプ
-    url: /blast-help.html
+    url: /services/blast.html
   - title: getentry ヘルプ
-    url: /getentry-help.html
+    url: /services/getentry.html
   - title: VecScreen ヘルプ
-    url: /vecscreen-help.html
+    url: /services/vecscreen.html
   - title: ClustalW ヘルプ
-    url: /clustalw-help.html
+    url: /services/clustalw.html
   - title: TXSearch ヘルプ
-    url: /txsearch-help.html
+    url: /services/txsearch.html
   - title: 過去のサービス
-    url: /past-services.html
+    url: /services/past-services.html
   - title: 関連論文
-    url: /references.html
+    url: /services/references.html
   - title: Pipeline ヘルプ
-    url: /pipeline-help.html
+    url: /services/pipeline.html
 ---
 
 ## WABI (Web API for Biology)
@@ -60,9 +60,9 @@ http://ddbj.nig.ac.jp/wabi/blast/wabi_blast_1111-1111-1111-11-111-111111?info=re
 
 現在 WABI は、次のサービスの Web API を提供しています。
 
-  - [BLAST]({{site.baseurl}}/services/wabi_blast-help.html)
-  - [getentry]({{site.baseurl}}/services/getentry-help.html)
-  - [ARSA]({{site.baseurl}}/services/arsa-help.html)
-  - [ClustalW]({{site.baseurl}}/services/wabi_clustalw-help.html)
-  - [VecScreen]({{site.baseurl}}/services/wabi_vecscreen-help.html)
-  - [MAFFT]({{site.baseurl}}/services/wabi_mafft-help.html)
+  - [BLAST]({{site.baseurl}}/services/wabi-blast.html)
+  - [getentry]({{site.baseurl}}/services/getentry.html)
+  - [ARSA]({{site.baseurl}}/services/arsa.html)
+  - [ClustalW]({{site.baseurl}}/services/wabi-clustalw.html)
+  - [VecScreen]({{site.baseurl}}/services/wabi-vecscreen.html)
+  - [MAFFT]({{site.baseurl}}/services/wabi-mafft.html)

@@ -1,0 +1,48 @@
+COMMON	DATATYPE		type	TPA
+	KEYWORD		keyword	Third Party Data
+			keyword	TPA
+			keyword	TPA:experimental
+	SUBMITTER		contact	Hanako Mishima
+			ab_name	Mishima,H.
+			ab_name	Yamada,T.
+			email	mishima@ddbj.nig.ac.jp
+			phone	81-55-981-6853
+			fax	81-55-981-6849
+			institute	National Institute of Genetics
+			department	DNA Data Bank of Japan
+			country	Japan
+			state	Shizuoka
+			city	Mishima
+			street	Yata 1111
+			zip	411-8540
+	REFERENCE		ab_name	Mishima,H.
+			ab_name	Yamada,T.
+			title	Comparative genomics of aquaporin genes
+			year	2015
+			status	Unpublished
+FA01	PRIMARY_CONTIG	1..552	entry	ZZ000001.1
+			primary_bases	54872..55422
+	PRIMARY_CONTIG	553..705	entry	ZZ000002.5
+			primary_bases	1..153
+	source	1..705	organism	Homo sapiens
+			mol_type	mRNA
+			tissue_type	liver
+	CDS	1..705	gene	AQP9
+			product	aquaporin 9
+			codon_start	1
+BM123	PRIMARY_CONTIG	1..438	entry	ZZ000010.1
+			primary_bases	1..438
+	PRIMARY_CONTIG	377..695	entry	ZZ000011.1
+			primary_bases	1..320
+			complement	
+	PRIMARY_CONTIG	411..784	entry	ZZ000021.12
+			primary_bases	1..398
+	PRIMARY_CONTIG	790..1190	entry	ZZ000022.0
+			primary_bases	1..401
+	source	1..1191	organism	Shigella flexneri
+			strain	BM123
+			mol_type	genomic DNA
+	CDS	122..1069	gene	APQZ
+			product	aquaporin Z
+			transl_table	11
+			codon_start	1

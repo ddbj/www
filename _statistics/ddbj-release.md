@@ -8,9 +8,9 @@ related_pages:
   - title: DB の out/in 統計量
     url: ./index.html
   - title: リリースノート (DDBJ, 16S rRNA, DAD)
-    url: ./relnote
+    url: ./ddbj-releases
   - title: 最新リリースの情報
-    url: ./relinfo
+    url: ./latest-releases
 addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script><script type='text/javascript' src='/www/assets/js/jquery.charts.js'></script>
 ---
 

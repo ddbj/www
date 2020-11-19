@@ -3,6 +3,98 @@ layout: indexed_content
 title: /locus_tag qualifier の記載法
 pathname: locus_tag
 category: ddbj
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /ddbj/index.html
+  - id: submission
+    title: Submission
+    url: /ddbj/submission.html
+    children:
+      - title: 塩基配列の登録
+        url: /ddbj/submission.html
+      - title: Web 版塩基配列登録システム
+        url: /ddbj/web-submission.html
+      - title: Mass Submission System
+        url: /ddbj/mss.html
+      - title: 登録データの修正・更新
+        url: /ddbj/update.html
+  - id: search
+    title: Search
+    url: http://ddbj.nig.ac.jp/arsa/?lang=ja
+    children:
+      - title: getentry
+        url: http://getentry.ddbj.nig.ac.jp/top-j.html
+      - title: ARSA
+        url: http://ddbj.nig.ac.jp/arsa/?lang=ja
+  - id: flat_file
+    title: Flat file
+    url: /ddbj/flat-file.html
+    children:
+      - title: Feature key の定義
+        url: /ddbj/features.html
+      - title: Qualifier key の定義
+        url: /ddbj/qualifiers.html
+      - title: Organism qualifier に記載する生物名
+        url: /ddbj/organism.html
+      - title: Location の記述法
+        url: /ddbj/location.html
+      - title: タンパク質コード配列
+        url: /ddbj/cds.html
+      - title: The Genetic Codes
+        url: /ddbj/geneticcode.html
+      - title: 配列の記載に用いる略号
+        url: /ddbj/code.html
+      - title: 登録の見本
+        url: /ddbj/example.html
+  - id: data_categories
+    title: Data categories
+    url: /ddbj/data-categories.html
+    children:
+      - title: Genome project のデータ登録
+        url: /ddbj/genome.html
+      - title: Pseudohaplotype
+        url: /ddbj/pseudohaplotype.html
+      - title: WGS
+        url: /ddbj/wgs.html
+      - title: メタゲノムアセンブリ
+        url: /ddbj/metagenome-assembly.html
+      - title: Single amplified genome
+        url: /ddbj/single-amplified-genome.html
+      - title: CON
+        url: /ddbj/con.html
+      - title: GSS
+        url: /ddbj/gss.html
+      - title: HTG
+        url: /ddbj/htg.html
+      - title: Environmental sequence の登録
+        url: /ddbj/environmental.html
+      - title: ENV
+        url: /ddbj/env.html
+      - title: TLS
+        url: /ddbj/tls.html
+      - title: Transcriptome Project のデータ登録
+        url: /ddbj/transcriptome.html
+      - title: TSA
+        url: /ddbj/tsa.html
+      - title: EST
+        url: /ddbj/est.html
+      - title: HTC
+        url: /ddbj/htc.html
+      - title: Third Party Data (TPA)
+        url: /ddbj/tpa.html
+  - id: faq
+    title: FAQ
+    url: /faq/ja/index.html
+  - id: other
+    title: Other
+    url: /ddbj/index-e.html
+    children:
+      - title: Patent
+        url: /ddbj/patent-data.html
+      - title: MGA
+        url: /ddbj/mga.html
 lang: ja
 ---
 
@@ -11,7 +103,7 @@ lang: ja
 /locus\_tag qualifier は、2003年に導入されました。その導入当初は、ゲノムプロジェクトが
 その配列データを更新する際などに feature 継承をするための追跡用 ID として自由度の高い記載を可能としていました。
 
-しかし、[The American Society for Microbiology](https://www.asm.org/) からの要請を受けて、[2005年の国際実務者会議](/activities/icm-reports.html#2005)において、/locus\_tag qualifier の用法が再検討されました。その結果、/locus\_tag qualifier を恒久的に一意な ID として維持していくことを目指して、配列データの登録時に当該ゲノム専用の prefix を割り当てることにより、/locus\_tag を記載するように規則が変更されました。
+しかし、[The American Society for Microbiology](https://www.asm.org/) からの要請を受けて、[2005年の国際実務者会議](/activities/icm/2005)において、/locus\_tag qualifier の用法が再検討されました。その結果、/locus\_tag qualifier を恒久的に一意な ID として維持していくことを目指して、配列データの登録時に当該ゲノム専用の prefix を割り当てることにより、/locus\_tag を記載するように規則が変更されました。
 
 ## ゲノム配列データの登録における /locus\_tag の適切な用法 <a name="ゲノム配列データの登録における_/locus_tag_の適切な用法"></a>
 

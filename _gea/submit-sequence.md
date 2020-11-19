@@ -3,6 +3,52 @@ layout: indexed_content
 title: Submit sequencing experiment
 pathname: submit-sequence
 category: gea
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /gea/index.html
+  - id: submission overview
+    title: Submission Overview
+    url: /gea/overview.html
+    children:
+      - title: Submit microarray experiment
+        url: /gea/submit-array.html
+      - title: Submit sequencing experiment
+        url: /gea/submit-sequence.html
+      - title: Metadata
+        url: /gea/metadata.html
+      - title: Data File
+        url: /gea/datafile.html
+      - title: Validation
+        url: /gea/validation.html
+      - title: Single-cell submission guide
+        url: /gea/single-cell.html
+      - title: Example
+        url: /gea/example.html
+      - title: Array Design
+        url: /gea/adf.html
+      - title: Data matrix
+        url: /gea/matrix.html
+      - title: Reviewer Access
+        url: /gea/reviewer-access.html
+  - id: faq
+    title: FAQ
+    url: /faq/ja/index.html
+  - id: search
+    title: Search (AOE)
+    url: http://aoe.dbcls.jp/
+    children:
+      - title: Search (ArrayExpress)
+        url: https://www.ebi.ac.uk/arrayexpress/browse.html
+      - title: RefEx
+        url: http://refex.dbcls.jp/
+  - id: downloads
+    title: Downloads
+    url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/gea
+  - id: about gea
+    title: About GEA
+    url: /gea/about-gea.html
 lang: ja
 ---
 
@@ -68,7 +114,7 @@ lang: ja
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Single-cell sequencing experiment</a></h4>
 <div class="accordion-content">
 
-[ArrayExpress Single-cell submission guide](https://www.ebi.ac.uk/arrayexpress/help/single-cell_submission_guide.html)を参照してください。spike-in やデータ解析に必要な追加ファイルを登録する場合は [GEA チームに連絡](/contact.html)してください。
+[ArrayExpress Single-cell submission guide](https://www.ebi.ac.uk/arrayexpress/help/single-cell_submission_guide.html)を参照してください。spike-in やデータ解析に必要な追加ファイルを登録する場合は [GEA チームに連絡](/contact-ddbj.html)してください。
 
 [« 閉じる](javascript:void(0)){: .close-content-btn}
 </div>
@@ -80,7 +126,7 @@ lang: ja
 <div class="accordion-content">
 
 GEA では一つの登録に異なる種類のテクノロジー（マイクロアレイとシークエンシング）を含めることはできないため登録を分ける必要があります。間違いを防ぐためそれぞれの登録には同じ研究に属していても明確に区別できるタイトルを付けてください。
-一つの登録に異なるアレイデザインを含めることは可能なので、このような場合は [GEA チームに連絡](/contact.html)してください。
+一つの登録に異なるアレイデザインを含めることは可能なので、このような場合は [GEA チームに連絡](/contact-ddbj.html)してください。
 
 [« 閉じる](javascript:void(0)){: .close-content-btn}
 </div>
@@ -282,7 +328,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 自身のアカウントで登録した DRA submission を一つ選択します。DRA が未登録の場合は [DRA登録サイト](/dra/submission.html#dra-submission)で DRA を登録します。
 
-他のアカウントで登録された DRA を参照したい場合は [GEA チームに連絡](/contact.html)します。
+他のアカウントで登録された DRA を参照したい場合は [GEA チームに連絡](/contact-ddbj.html)します。
 
 {::nomarkdown}
 {% include image.html url="books/seq-dra.jpg" caption="GEA 登録で使う DRA submission を選択" class="w550" %}
@@ -294,7 +340,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 GEA と DRA submission が同じプロジェクトである場合は DRA submission で使用した BioProject を一つ選択します。 GEA と DRA submission が異なるプロジェクトである場合は DRA submission で使用した BioProject ではない BioProject を一つ選択します
 
-他のアカウントで登録された BioProject を参照したい場合は [GEA チームに連絡](/contact.html)します。
+他のアカウントで登録された BioProject を参照したい場合は [GEA チームに連絡](/contact-ddbj.html)します。
 
 {::nomarkdown}
 {% include image.html url="books/gea-bp.jpg" caption="GEA 登録で使う BioProject を一つ選択します" class="w550" %}
@@ -307,7 +353,7 @@ GEA と DRA submission が同じプロジェクトである場合は DRA submiss
 [IDFの例](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=30173120)
 
   - Protocol: チェック済みのプロトコールは必須です　
-  - Publication: 関連する文献を PubMed ID もしくは DOI で指定します。未公表の文献については ID が発行された後に [お知らせください](/contact.html)。
+  - Publication: 関連する文献を PubMed ID もしくは DOI で指定します。未公表の文献については ID が発行された後に [お知らせください](/contact-ddbj.html)。
   - Data File Type: シークエンシング実験の場合は解析済みデータが必須です。サンプル毎の解析済みデータファイルの登録を強く推奨します。[シークエンシング実験に登録可能なファイル形式](/gea/datafile.html#seq_data)。
 
 {::nomarkdown}
@@ -425,27 +471,27 @@ Validator は [validation rule](/gea/validation.html) に従ってメタデー�
 <tbody>
 <tr class="odd">
 <td><a href="/ddbj/index.html">Annotated sequence database</a></td>
-<td><a href="/ddbj/updt-form.html">ウェブフォームから依頼</a></td>
+<td><a href="/ddbj/update-form.html">ウェブフォームから依頼</a></td>
 </tr>
 <tr class="even">
 <td>Sequence Read Archive (DRA)</td>
 <td><a href="https://ddbj.nig.ac.jp/D-way/">D-way にログインして登録者自身で更新</a><br />
-<a href="/contact.html">(配列データの追加や削除はウェブフォームから依頼)</a></td>
+<a href="/contact-ddbj.html">(配列データの追加や削除はウェブフォームから依頼)</a></td>
 </tr>
 <tr class="odd">
 <td>Genomic Expression Archive (GEA)</td>
-<td><a href="/contact.html">ウェブフォームから依頼</a></td>
+<td><a href="/contact-ddbj.html">ウェブフォームから依頼</a></td>
 </tr>
 <tr class="even">
 <td>BioProject/BioSample</td>
-<td><a href="/contact.html">ウェブフォームから依頼</a></td>
+<td><a href="/contact-ddbj.html">ウェブフォームから依頼</a></td>
 </tr>
 </tbody>
 </table>
 
 ### アーカイブされた experiment の削除 <a name="withdraw-archived-objects"></a>
 
-アーカイブされた Experiment を削除する場合は [GEA チームに連絡](/contact.html)します。
+アーカイブされた Experiment を削除する場合は [GEA チームに連絡](/contact-ddbj.html)します。
 
 ## 補足: MD5 値<a name="supplement-md5"></a> 
 

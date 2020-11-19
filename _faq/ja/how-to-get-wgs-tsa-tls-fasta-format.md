@@ -19,4 +19,4 @@ lang: ja
   <li>テキスト</li>
   <li>圧縮ファイル(gz)</li>
 </ul><span class="icon_square font-bold"> 上限</span>：データの取得上限を設定します。<br> 0を指定すると上限なしの設定となります。
-<p>各項目の詳細は、<a href="/getentry-help.html">getentry ヘルプ</a> をご覧ください。</p>
+<p>各項目の詳細は、<a href="/services/getentry.html">getentry ヘルプ</a> をご覧ください。</p>

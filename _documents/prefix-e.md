@@ -5,11 +5,11 @@ category: documents
 lang: en
 related_pages:
   - title: Categories for Sequence Data
-    url: /data-categories-e.html
+    url: /documents/data-categories-e.html
   - title: Accession Number Assigned by INSD
-    url: /acc_def-e.html
+    url: /documents/accessions.html
   - title: Principle of “Hold-Until-Published” data release
-    url: /data-release-policy-e.html
+    url: /documents/data-release-policy-e.html
 ---
 
 ## For conventional sequence data (two or one letter) <a name="gen"></a>

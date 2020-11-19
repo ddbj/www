@@ -9,7 +9,7 @@ lang: ja
 <div class="news_post firstpost">
   <h2 class="news_title" id="wn141225"><a href="#wn141225">DDBJ リリース 99.0，DAD リリース 69.0 完成</a></h2>
   <div class="news_date">2014年12月25日</div>
-  <div class="news_content"><p><span class="font-bold">DDBJ リリース 99.0</span></p><ul><li><span class="font-bold">公開日：</span>2014年12月25日</li><li><span class="font-bold">エントリ数：</span>178,825,615     <span class="font-bold">塩基数：</span>184,410,381,191</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.99.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo.html">現在公開されているリリースの情報</a></li></ul><span class="font-bold">DAD (DDBJ amino acid database)  リリース 69.0</span><ul><li><span class="font-bold">公開日：</span>2014年12月25日</li><li><span class="font-bold">エントリ数：</span>36,947,790     <span class="font-bold">総アミノ酸残基数(aa)：</span>11,288,302,791</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.69.txt">DAD Release Note</a></li></ul></div>
+  <div class="news_content"><p><span class="font-bold">DDBJ リリース 99.0</span></p><ul><li><span class="font-bold">公開日：</span>2014年12月25日</li><li><span class="font-bold">エントリ数：</span>178,825,615     <span class="font-bold">塩基数：</span>184,410,381,191</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.99.txt">DDBJ Release Note</a></li><li><a href="/latest-releases.html">現在公開されているリリースの情報</a></li></ul><span class="font-bold">DAD (DDBJ amino acid database)  リリース 69.0</span><ul><li><span class="font-bold">公開日：</span>2014年12月25日</li><li><span class="font-bold">エントリ数：</span>36,947,790     <span class="font-bold">総アミノ酸残基数(aa)：</span>11,288,302,791</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.69.txt">DAD Release Note</a></li></ul></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: データ公開</span>
@@ -18,7 +18,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn141210"><a href="#wn141210">DDBJ 年末年始休業のお知らせ</a></h2>
   <div class="news_date">2014年12月24日</div>
-  <div class="news_content"><p>DDBJ では、2014年12月27日(土) から 2015年1月4日(日) までの間、年末年始休業いたします。<br>これに伴い、<a href="/ddbj/websub.html">Web版塩基配列登録システム</a> も停止いたします。<br>NIG SuperComputer および <a href="/ddbj/websub.html">Web版塩基配列登録システム</a> を除くDDBJ公開サービスは、<br>休業期間中もご利用いただけます。</p><p>年末年始休業中もメールおよび専用フォームからのお問い合わせは受け付けておりますが、<br>DDBJ からの対応は、2015年1月5日の業務再開後となります。</p><table><tbody><tr><td  >休業期間</td><td  >2014年12月27日(土)～2015年1月4日(日)</td></tr><tr><td>Web版塩基配列登録システム休止</td><td>2014年12月25日(木) 17時 ～ 2015年1月5日(月) 10時</td></tr><tr><td  >新規・再公開停止</td><td  >2014年12月25日(木) ～ 2015年1月5日(月)</td></tr><tr><td>登録、検索・解析、スパコン等に関する<br>利用申込やお問い合わせへの対応休止</td><td>2014年12月27日(土) ～ 2015年1月4日(日)</td></tr><tr><td  >DRA, BioProject, BioSample, JGA<br>アクセッション番号の発行とエラーサポート休止</td><td  >2014年12月27日(土) ～ 2015年1月4日(日)</td></tr></tbody></table><p>ご迷惑をお掛けいたしますが、ご理解とご協力をお願いいたします。</p><p>2014年12月10日</p></div>
+  <div class="news_content"><p>DDBJ では、2014年12月27日(土) から 2015年1月4日(日) までの間、年末年始休業いたします。<br>これに伴い、<a href="/ddbj/web-submission.html">Web版塩基配列登録システム</a> も停止いたします。<br>NIG SuperComputer および <a href="/ddbj/web-submission.html">Web版塩基配列登録システム</a> を除くDDBJ公開サービスは、<br>休業期間中もご利用いただけます。</p><p>年末年始休業中もメールおよび専用フォームからのお問い合わせは受け付けておりますが、<br>DDBJ からの対応は、2015年1月5日の業務再開後となります。</p><table><tbody><tr><td  >休業期間</td><td  >2014年12月27日(土)～2015年1月4日(日)</td></tr><tr><td>Web版塩基配列登録システム休止</td><td>2014年12月25日(木) 17時 ～ 2015年1月5日(月) 10時</td></tr><tr><td  >新規・再公開停止</td><td  >2014年12月25日(木) ～ 2015年1月5日(月)</td></tr><tr><td>登録、検索・解析、スパコン等に関する<br>利用申込やお問い合わせへの対応休止</td><td>2014年12月27日(土) ～ 2015年1月4日(日)</td></tr><tr><td  >DRA, BioProject, BioSample, JGA<br>アクセッション番号の発行とエラーサポート休止</td><td  >2014年12月27日(土) ～ 2015年1月4日(日)</td></tr></tbody></table><p>ご迷惑をお掛けいたしますが、ご理解とご協力をお願いいたします。</p><p>2014年12月10日</p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -90,7 +90,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn141216"><a href="#wn141216">TXSearch のURL 変更</a></h2>
   <div class="news_date">2014年12月16日</div>
-  <div class="news_content">DDBJでは，国際塩基配列データベース(<a href="/insdc.html#insd">INSD</a>) にデータを登録する際に生物分類名を確認する等のために，taxonomy database を検索するためのシステム TXSearch を公開しています。<br>このたび，TXSearch のインターフェースならびに URL の変更を行いました。<br>旧URLは　2014年12月31日以降はご利用できません。ブックマーク等されている方は早めの変更をお願いいたします。<span class="icon_square"><a href="http://ddbj.nig.ac.jp/tx_search/?lang=ja">http://ddbj.nig.ac.jp/tx_search/</a></span><br><img src="{{ site.baseurl }}/assets/images/news/txhelp01_top-j.gif" alt="txhelp01_top-j" width="400" height="290" class="alignnone size-full wp-image-40425"><br>新画面の使用方法については，<a href="/txsearch-help.html">TXSearch ヘルプ</a> をご覧ください。DDBJ では，今後さらに，皆様からのご意見をもとにして，より使やすい検索システムを目指して改善を進めていきます。ご意見やご要望がありましたら　「<a href="/address.html">お問い合わせ</a>」ページの「ウェブサービス(getentry, ARSA, BLAST, ClustalWなど) よりご連絡ください。</div>
+  <div class="news_content">DDBJでは，国際塩基配列データベース(<a href="/insdc.html#insd">INSD</a>) にデータを登録する際に生物分類名を確認する等のために，taxonomy database を検索するためのシステム TXSearch を公開しています。<br>このたび，TXSearch のインターフェースならびに URL の変更を行いました。<br>旧URLは　2014年12月31日以降はご利用できません。ブックマーク等されている方は早めの変更をお願いいたします。<span class="icon_square"><a href="http://ddbj.nig.ac.jp/tx_search/?lang=ja">http://ddbj.nig.ac.jp/tx_search/</a></span><br><img src="{{ site.baseurl }}/assets/images/news/txhelp01_top-j.gif" alt="txhelp01_top-j" width="400" height="290" class="alignnone size-full wp-image-40425"><br>新画面の使用方法については，<a href="/services/txsearch.html">TXSearch ヘルプ</a> をご覧ください。DDBJ では，今後さらに，皆様からのご意見をもとにして，より使やすい検索システムを目指して改善を進めていきます。ご意見やご要望がありましたら　「<a href="/ddbj-access.html">お問い合わせ</a>」ページの「ウェブサービス(getentry, ARSA, BLAST, ClustalWなど) よりご連絡ください。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -117,7 +117,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn141121"><a href="#wn141121">Feature Table Definition 改訂</a></h2>
   <div class="news_date">2014年11月21日</div>
-  <div class="news_content"><p><a href="/ddbj/full_index-e.html">The DDBJ/ENA/GenBank Feature Table Definition</a> は、DDBJ, ENA, GenBank が三者間で定めた feature 記載によるアノテーションの共通規範です。<br><a href="/ddbj/full_index-e.html">Feature Table Definition</a> は 2014年11月に version 10.4 に改訂されました。</p></div>
+  <div class="news_content"><p><a href="/ddbj/feature-table-e.html">The DDBJ/ENA/GenBank Feature Table Definition</a> は、DDBJ, ENA, GenBank が三者間で定めた feature 記載によるアノテーションの共通規範です。<br><a href="/ddbj/feature-table-e.html">Feature Table Definition</a> は 2014年11月に version 10.4 に改訂されました。</p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -270,7 +270,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn141002"><a href="#wn141002">DDBJ リリース 98.0，DAD リリース 68.0 完成</a></h2>
   <div class="news_date">2014年10月02日</div>
-  <div class="news_content"><p><span class="font-bold">DDBJ リリース 98.0</span></p><ul><li><span class="font-bold">公開日：</span>2014年10月2日</li><li><span class="font-bold">エントリ数：</span>174,391,281     <span class="font-bold">塩基数：</span>166,692,710,729</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.98.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo.html">現在公開されているリリースの情報</a></li></ul><span class="font-bold">DAD (DDBJ amino acid database)  リリース 68.0</span><ul><li><span class="font-bold">公開日：</span>2014年10月2日</li><li><span class="font-bold">エントリ数：</span>35,066,241     <span class="font-bold">総アミノ酸残基数(aa)：</span>10,653,219,680</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.68.txt">DAD Release Note</a></li></ul></div>
+  <div class="news_content"><p><span class="font-bold">DDBJ リリース 98.0</span></p><ul><li><span class="font-bold">公開日：</span>2014年10月2日</li><li><span class="font-bold">エントリ数：</span>174,391,281     <span class="font-bold">塩基数：</span>166,692,710,729</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.98.txt">DDBJ Release Note</a></li><li><a href="/latest-releases.html">現在公開されているリリースの情報</a></li></ul><span class="font-bold">DAD (DDBJ amino acid database)  リリース 68.0</span><ul><li><span class="font-bold">公開日：</span>2014年10月2日</li><li><span class="font-bold">エントリ数：</span>35,066,241     <span class="font-bold">総アミノ酸残基数(aa)：</span>10,653,219,680</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.68.txt">DAD Release Note</a></li></ul></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: データ公開</span>
@@ -306,7 +306,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn140912"><a href="#wn140912">DBCLS の検索ツールへのリンクを追加</a></h2>
   <div class="news_date">2014年09月12日</div>
-  <div class="news_content"><p>DDBJ の「<a href="/services.html">検索・解析</a>」ページに、<a href="http://dbcls.rois.ac.jp/">ライフサイエンス統合データベースセンター（DBCLS: Database Center for Life Science）</a> が開発した検索ツール群へのリンクを追加しました。</p></div>
+  <div class="news_content"><p>DDBJ の「<a href="/services/index.html">検索・解析</a>」ページに、<a href="http://dbcls.rois.ac.jp/">ライフサイエンス統合データベースセンター（DBCLS: Database Center for Life Science）</a> が開発した検索ツール群へのリンクを追加しました。</p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -333,7 +333,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn140904"><a href="#wn140904">第27回国際実務者会議 報告</a></h2>
   <div class="news_date">2014年09月04日</div>
-  <div class="news_content"><p>DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a>, <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a> で構成される <a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a> は、その共同事業の運営・推進を図るために、国際実務者会議を年１回開催しています。<br>2014年は 5月20日-22日に <a href="/news/ja/wn140520.html">DDBJ で開催</a>され、<a href="/index.html" target="_blank">DDBJ</a>、<a href="http://www.ebi.ac.uk/ena/" target="_blank">ENA</a>、<a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>、Sequence Read Archive (SRA)、Trace Archive を運営する上での実務的な問題を討論しました。<br>会議の報告は <a href="/activities/icm-reports.html#2014">こちら</a> をご覧ください。</p></div>
+  <div class="news_content"><p>DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a>, <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a> で構成される <a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a> は、その共同事業の運営・推進を図るために、国際実務者会議を年１回開催しています。<br>2014年は 5月20日-22日に <a href="/news/ja/wn140520.html">DDBJ で開催</a>され、<a href="/index.html" target="_blank">DDBJ</a>、<a href="http://www.ebi.ac.uk/ena/" target="_blank">ENA</a>、<a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>、Sequence Read Archive (SRA)、Trace Archive を運営する上での実務的な問題を討論しました。<br>会議の報告は <a href="/activities/icm/2014">こちら</a> をご覧ください。</p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -513,7 +513,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn140703"><a href="#wn140703">DDBJ 登録統計の紹介</a></h2>
   <div class="news_date">2014年07月03日</div>
-  <div class="news_content"><p>DDBJ への塩基配列データ登録について、月別の統計ページを開設しました。<br>主に登録回数をベースに DDBJ の活動を可視化しています。<br><br><a href="/stats/ddbj_submissions-e.html">DDBJ への登録回数と登録者数</a></p></div>
+  <div class="news_content"><p>DDBJ への塩基配列データ登録について、月別の統計ページを開設しました。<br>主に登録回数をベースに DDBJ の活動を可視化しています。<br><br><a href="/statistics/index-e.html">DDBJ への登録回数と登録者数</a></p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -531,7 +531,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn140627"><a href="#wn140627">「第29回 DDBJing 講習会 in 三島」の様子をYouTube にアップしました</a></h2>
   <div class="news_date">2014年06月27日</div>
-  <div class="news_content"><p>6月12日（木）に国立遺伝学研究所 DDBJ研究センターで実施された「第29回 DDBJing 講習会 in 三島」の講義の様子をYouTube にアップしました。<br>また，講義で使用した資料をダウンロードすることもできます。<br><a href="/ddbjing-archives.html#29">講習会アーカイブ</a>より閲覧，またはダウンロードして下さい。</p><p>講習会については，<a href="/training.html">DDBJing 講習会</a>をご覧下さい。</p></div>
+  <div class="news_content"><p>6月12日（木）に国立遺伝学研究所 DDBJ研究センターで実施された「第29回 DDBJing 講習会 in 三島」の講義の様子をYouTube にアップしました。<br>また，講義で使用した資料をダウンロードすることもできます。<br><a href="/activities/index.html#29">講習会アーカイブ</a>より閲覧，またはダウンロードして下さい。</p><p>講習会については，<a href="/activities/index.html">DDBJing 講習会</a>をご覧下さい。</p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -549,7 +549,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn140619"><a href="#wn140619">DDBJ リリース 97.0，DAD リリース 67.0 完成</a></h2>
   <div class="news_date">2014年06月19日</div>
-  <div class="news_content"><p><span class="font-bold">DDBJ リリース 97.0</span></p><ul><li><span class="font-bold">公開日：</span>2014年6月19日</li><li><span class="font-bold">エントリ数：</span>172,402,324     <span class="font-bold">塩基数：</span>161,078,598,329</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.97.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo.html">現在公開されているリリースの情報</a></li></ul><span class="font-bold">DAD (DDBJ amino acid database)  リリース 67.0</span><ul><li><span class="font-bold">公開日：</span>2014年6月19日</li><li><span class="font-bold">エントリ数：</span>33,234,287     <span class="font-bold">総アミノ酸残基数(aa)：</span>10,031,547,300</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.67.txt">DAD Release Note</a></li></ul></div>
+  <div class="news_content"><p><span class="font-bold">DDBJ リリース 97.0</span></p><ul><li><span class="font-bold">公開日：</span>2014年6月19日</li><li><span class="font-bold">エントリ数：</span>172,402,324     <span class="font-bold">塩基数：</span>161,078,598,329</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.97.txt">DDBJ Release Note</a></li><li><a href="/latest-releases.html">現在公開されているリリースの情報</a></li></ul><span class="font-bold">DAD (DDBJ amino acid database)  リリース 67.0</span><ul><li><span class="font-bold">公開日：</span>2014年6月19日</li><li><span class="font-bold">エントリ数：</span>33,234,287     <span class="font-bold">総アミノ酸残基数(aa)：</span>10,031,547,300</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.67.txt">DAD Release Note</a></li></ul></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: データ公開</span>
@@ -720,7 +720,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn140421"><a href="#wn140421">オオムギ (Hordeum vulgare subsp. vulgare) 由来 EST データの公開</a></h2>
   <div class="news_date">2014年04月21日</div>
-  <div class="news_content"><p>農業生物資源研究所から登録されたオオムギ (<em>Hordeum vulgare subsp. vulgare</em>) 由来の <a href="/ddbj/est.html">EST</a> データが公開されました。<br><strong><a href="/acc_def.html">アクセッション番号</a></strong>は以下の通りです。<a href="http://getentry.ddbj.nig.ac.jp/top-j.html" target="_blank">getentry</a> から検索可能です。</p><p><strong>5' EST</strong>: DK584720-DK744249 (159,530 entries)<br><strong>3' EST</strong>: DK744250-DK887267 (143,018 entries)</p></div>
+  <div class="news_content"><p>農業生物資源研究所から登録されたオオムギ (<em>Hordeum vulgare subsp. vulgare</em>) 由来の <a href="/ddbj/est.html">EST</a> データが公開されました。<br><strong><a href="/documents/accessions.html">アクセッション番号</a></strong>は以下の通りです。<a href="http://getentry.ddbj.nig.ac.jp/top-j.html" target="_blank">getentry</a> から検索可能です。</p><p><strong>5' EST</strong>: DK584720-DK744249 (159,530 entries)<br><strong>3' EST</strong>: DK744250-DK887267 (143,018 entries)</p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: データ公開</span>
@@ -810,7 +810,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn140318"><a href="#wn140318">DDBJ リリース 96.0，DAD リリース 66.0 完成</a></h2>
   <div class="news_date">2014年03月18日</div>
-  <div class="news_content"><p><span class="font-bold">DDBJ リリース 96.0</span></p><ul><li><span class="font-bold">公開日：</span>2014年3月18日</li><li><span class="font-bold">エントリ数：</span>171,164,046     <span class="font-bold">塩基数：</span>158,539,702,882</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.96.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo.html">現在公開されているリリースの情報</a></li></ul><span class="font-bold">DAD (DDBJ amino acid database)  リリース 66.0</span><ul><li><span class="font-bold">公開日：</span>2014年3月18日</li><li><span class="font-bold">エントリ数：</span>30,887,377     <span class="font-bold">総アミノ酸残基数(aa)：</span>9,253,624,263</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.66.txt">DAD Release Note</a></li></ul></div>
+  <div class="news_content"><p><span class="font-bold">DDBJ リリース 96.0</span></p><ul><li><span class="font-bold">公開日：</span>2014年3月18日</li><li><span class="font-bold">エントリ数：</span>171,164,046     <span class="font-bold">塩基数：</span>158,539,702,882</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.96.txt">DDBJ Release Note</a></li><li><a href="/latest-releases.html">現在公開されているリリースの情報</a></li></ul><span class="font-bold">DAD (DDBJ amino acid database)  リリース 66.0</span><ul><li><span class="font-bold">公開日：</span>2014年3月18日</li><li><span class="font-bold">エントリ数：</span>30,887,377     <span class="font-bold">総アミノ酸残基数(aa)：</span>9,253,624,263</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.66.txt">DAD Release Note</a></li></ul></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: データ公開</span>
@@ -954,7 +954,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn140130_2"><a href="#wn140130_2">PDB 2014-01-25 公開のお知らせ</a></h2>
   <div class="news_date">2014年01月30日</div>
-  <div class="news_content"><p>PDB 2014-01-25 が公開されました。</p><ul><li><b><a href="/stats/relinfo.html" title="breakdown_stats">現在公開されているリリースの情報</a></b></li></ul></div>
+  <div class="news_content"><p>PDB 2014-01-25 が公開されました。</p><ul><li><b><a href="/latest-releases.html" title="breakdown_stats">現在公開されているリリースの情報</a></b></li></ul></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: データ公開</span>
@@ -963,7 +963,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn140130"><a href="#wn140130">UniProt 2014_01 公開のお知らせ</a></h2>
   <div class="news_date">2014年01月30日</div>
-  <div class="news_content"><p>UniProt 2014_01が公開されました。</p><ul><li><b><a href="/stats/relinfo.html" title="breakdown_stats">現在公開されているリリースの情報</a></b></li></ul></div>
+  <div class="news_content"><p>UniProt 2014_01が公開されました。</p><ul><li><b><a href="/latest-releases.html" title="breakdown_stats">現在公開されているリリースの情報</a></b></li></ul></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: データ公開</span>
@@ -972,7 +972,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn140124"><a href="#wn140124">PDB 2014-01-18 公開のお知らせ</a></h2>
   <div class="news_date">2014年01月24日</div>
-  <div class="news_content"><p>PDB 2014-01-18 が公開されました。</p><ul><li><b><a href="/stats/relinfo.html" title="breakdown_stats">現在公開されているリリースの情報</a></b></li></ul></div>
+  <div class="news_content"><p>PDB 2014-01-18 が公開されました。</p><ul><li><b><a href="/latest-releases.html" title="breakdown_stats">現在公開されているリリースの情報</a></b></li></ul></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: データ公開</span>
@@ -999,7 +999,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn140116_2"><a href="#wn140116_2">PDB 2014-01-11公開のお知らせ</a></h2>
   <div class="news_date">2014年01月16日</div>
-  <div class="news_content"><p>PDB 2014-01-11 が公開されました。</p><ul><li><b><a href="/stats/relinfo.html" title="breakdown_stats">現在公開されているリリースの情報</a></b></li></ul></div>
+  <div class="news_content"><p>PDB 2014-01-11 が公開されました。</p><ul><li><b><a href="/latest-releases.html" title="breakdown_stats">現在公開されているリリースの情報</a></b></li></ul></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: データ公開</span>
@@ -1008,7 +1008,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn140116"><a href="#wn140116">PDB 2014-01-04公開のお知らせ</a></h2>
   <div class="news_date">2014年01月16日</div>
-  <div class="news_content"><p>PDB 2014-01-04が公開されました。</p><ul><li><b><a href="/stats/relinfo.html" title="breakdown_stats">現在公開されているリリースの情報</a></b></li></ul></div>
+  <div class="news_content"><p>PDB 2014-01-04が公開されました。</p><ul><li><b><a href="/latest-releases.html" title="breakdown_stats">現在公開されているリリースの情報</a></b></li></ul></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: データ公開</span>

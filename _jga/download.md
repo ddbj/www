@@ -3,6 +3,36 @@ layout: indexed_content
 title: 利用手順
 pathname: download
 category: jga
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /jga/index.html
+  - id: browse researches at nbdc
+    title: Browse researches at NBDC
+    url: https://humandbs.biosciencedbc.jp/data-use/all-researches
+    children:
+      - title: DDBJ Search
+        url: https://ddbj.nig.ac.jp/search
+  - id: submission
+    title: Submission
+    url: /jga/submission.html
+    children:
+      - title: How to submit
+        url: /jga/submission-step.html
+      - title: How to access data
+        url: /jga/download.html
+      - title: Groups
+        url: /jga/group.html
+      - title: Updates in 2020
+        url: /jga/update-202009.html
+      - title: Example submission
+        url: https://docs.google.com/spreadsheets/d/1HHlxItj89fQv2oWUNBIHZ4VVGwbcC09WGD5tEiXAQZ4/edit#gid=744299318
+      - title: XML Schema
+        url: https://github.com/ddbj/pub/tree/master/docs/jga/xsd/
+  - id: faq
+    title: FAQ
+    url: /faq/ja/index.html
 lang: ja
 ---
 
@@ -27,7 +57,7 @@ JGA GUI download tool (最終更新日: 2018-04-16，v3.5.0) をダウンロー�
 
 {::options parse_block_html="true" /}
 <div class="attention red">
-Java 8 で実行してください。Java 7 では動作しません。 [プロキシ環境での使用方法について](#%E3%83%97%E3%83%AD%E3%82%AD%E3%82%B7%E7%92%B0%E5%A2%83%E3%81%A7%E3%81%AE%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95)
+Java 8 で実行してください。Java 7 では動作しません。 [プロキシ環境での使用方法について](#download-via-a-proxy-server)
 </div>
 
 #### Windows <a name="Windows"></a>
@@ -150,7 +180,7 @@ JGA tool と同様，NBDC から通知される利用アカウントのユーザ
 
 {::options parse_block_html="true" /}
 <div class="attention red">
-データファイルのディスク郵送を希望する場合は必ず事前に [JGA にご連絡ください](/contact.html)。
+データファイルのディスク郵送を希望する場合は必ず事前に [JGA にご連絡ください](/contact-ddbj.html)。
 </div>
 
 利用承認された，郵送を希望するDataset を格納するために十分な容量の USB 接続ハードディスク (ファイルシステムは NTFS、ext3 もしくは ext4 にしてください) をご用意ください。ファイルシステムは事前に必ずウイルスチェックを実施し，空の状態でお送りください。

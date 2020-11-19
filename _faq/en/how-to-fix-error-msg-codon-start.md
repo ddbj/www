@@ -16,6 +16,6 @@ lang: en
 <p>See <a href="/ddbj/location-e.html">Description of Location</a> and modify the location with flag for "5' end not complete", for an example, from "1..300" to "&lt;1..300". <br>When the CDS feature is started with an initiation codon, correct /codon_start with "1". </p>
 <dl><dt>References:</dt>
   <dd><a href="/ddbj/cds-e.html#frame">Offset of the frame at translation initiation by codon_start</a></dd>
-  <dd><a href="/faq/en/how-to-fix-error-msg-first-codon-e.html">How to fix error message: "First codon [***] is not a start codon." / "Final codon [***] is not a stop codon."?</a></dd>
-  <dd><a href="/faq/en/how-to-fix-error-msg-stop-codon-e.html">How to fix error message: "Stop codon ‘*’ is found in the range."?</a></dd>
+  <dd><a href="/faq/en/how-to-fix-error-msg-first-codon.html">How to fix error message: "First codon [***] is not a start codon." / "Final codon [***] is not a stop codon."?</a></dd>
+  <dd><a href="/faq/en/how-to-fix-error-msg-stop-codon.html">How to fix error message: "Stop codon ‘*’ is found in the range."?</a></dd>
 </dl>

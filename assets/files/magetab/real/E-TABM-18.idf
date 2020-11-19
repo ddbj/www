@@ -1,0 +1,26 @@
+"Investigation Title"	Ecotype			
+"Experimental Design"	strain_or_line_design			
+"Experimental Factor Name"	ECOTYPE			
+"Experimental Factor Type"	ecotype			
+				
+"Person Last Name"	Lempe			
+"Person First Name"	Janne			
+"Person Mid Initial"				
+"Person Affiliation"	"Max Planck Institute for Developmental Biology, Department of Molecular Biology, Detlef Weigel"			
+"Person Roles"	submitter			
+				
+"Public Release Date"	"2005-06-15"			
+				
+Comment[ArrayExpressSubmissionDate]				
+				
+"Publication Author List"	"Janne Lempe;Sureshkumar Balasubramanian;Sridevi Sureshkumar;Anandita Singh;Markus Schmid;Detlef Weigel"			
+"Publication Title"	"Diversity of flowering responses in wild Arabidopsis thaliana strains"			
+"Experiment Description"	"Seedlings of 35 different Arabidopsis thaliana ecotypes were compared. Triplicates were performed of 10 ecotpyes, single arrays of 25 ecotypes. "			
+				
+"Protocol Name"	P-TABM-Janne5	P-TABM-Janne2	P-TABM-Janne6	P-TABM-Janne4
+"Protocol Type"	growth	extraction	pooling	labeling
+"Protocol Description"	"Plants were grown on soil for 4 days under continuous light  at 23ﾰC and  65% relative humidity. Most replicates were grown at the same time, exceptions to this are indicated by the 'replicate timepoint' parameter."	"pdf of the protocol (Probe preparation Development) can be downloaded at http://www.weigelworld.org/resources/microarray/AtGenExpress/; also at TAIR http://www.arabidopsis.org Protocol:501712557"	"above soil plant material of 15 seedlings was pooled per replicate"	"pdf of the protocol (Probe preparation Development) can be downloaded at http://www.weigelworld.org/resources/microarray/AtGenExpress/; also at TAIR http://www.arabidopsis.org Protocol:501712557"
+"Protocol Parameters"	"replicate timepoint"			
+"Protocol Software"				
+				
+"SDRF File"	E-TABM-18_sdrf.txt			

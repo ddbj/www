@@ -3,6 +3,38 @@ layout: indexed_content
 title: DDBJ BioSample Handbook
 pathname: submission
 category: biosample
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /biosample/index.html
+  - id: handbook
+    title: Handbook
+    url: /biosample/submission.html
+  - id: sample attribute
+    title: Sample Attribute
+    url: /biosample/attribute.html
+    children:
+      - title: Example files
+        url: https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482
+  - id: validation rules
+    title: Validation Rules
+    url: /biosample/validation.html
+  - id: faq
+    title: FAQ
+    url: /faq/ja/index.html
+  - id: search
+    title: Search
+    url: http://ddbj.nig.ac.jp/BSSearch/
+  - id: downloads
+    title: Downloads
+    url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/biosample
+    children:
+      - title: XML Schema
+        url: https://github.com/ddbj/pub/tree/master/docs/biosample/xsd
+  - id: about bioProject
+    title: About BioProject
+    url: /biosample/about-biosample.html
 lang: ja
 ---
 
@@ -22,7 +54,7 @@ lang: ja
 
 DDBJ のデータベースに登録されているサンプルが多様であること、また、サンプルの適切な記載方法が研究内容により異なることから BioSample の定義は柔軟なものになっています。 BioSample の典型的な例としては細胞株、組織の生検、生物個体や環境サンプルなどが挙げられます。
 
-Biological/Technical replicate は "replicate" というユーザ定義の属性を使い "biological replicate 1"、"biological replicate 2" のようにしてサンプルを区別します。[FAQ: 塩基配列登録にはいくつのサンプルが必要ですか?](/biosample/faq.html#samples-for-sra)
+Biological/Technical replicate は "replicate" というユーザ定義の属性を使い "biological replicate 1"、"biological replicate 2" のようにしてサンプルを区別します。[FAQ: 塩基配列登録にはいくつのサンプルが必要ですか?](/faq/ja/samples-for-sra)
 
 BioSample はサンプルについての以下のような情報を含みます:
 
@@ -62,7 +94,7 @@ BioSample の [organism](/biosample/attribute.html?all=all#organism) に記載�
 
 ### 薬剤感受性表 <a name="antibiogram"></a>
 
-BioSample レコードに薬剤感受性表（アンチバイオグラム、Antibiogram）を含めることができます（登録例: [SAMN07958491](https://www.ncbi.nlm.nih.gov/biosample/SAMN07958491)）。登録を希望する場合は [BioSample チーム](/contact.html)に連絡してください。
+BioSample レコードに薬剤感受性表（アンチバイオグラム、Antibiogram）を含めることができます（登録例: [SAMN07958491](https://www.ncbi.nlm.nih.gov/biosample/SAMN07958491)）。登録を希望する場合は [BioSample チーム](/contact-ddbj.html)に連絡してください。
 
 薬剤感受性表の登録ガイドラインは NCBI BioSample の各ページを参照してください。
 
@@ -413,8 +445,8 @@ Validation ルールとメッセージについては [Validation rules ペー�
 
 登録した Sample データは一定期間非公開にすることができます。 DDBJ レコードが公開されると、引用されている BioSample データは自動的に公開されます。この BioSample アクセッション番号を引用している非公開の DDBJ レコードが公開されることはありませんが、引用されている BioProject は連動公開されます。
 
-FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp_bs_seq_release.html)
+FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp-bs-seq-release.html)
 
 ### サンプルの更新 <a name="update-biosample"></a>
 
-登録が完了したデータを更新することができます。[メッセージフォーム](/contact.html)よりご連絡ください。
+登録が完了したデータを更新することができます。[メッセージフォーム](/contact-ddbj.html)よりご連絡ください。

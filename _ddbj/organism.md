@@ -3,6 +3,98 @@ layout: indexed_content
 title: Organism qualifier に記載する生物名
 pathname: organism
 category: ddbj
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /ddbj/index.html
+  - id: submission
+    title: Submission
+    url: /ddbj/submission.html
+    children:
+      - title: 塩基配列の登録
+        url: /ddbj/submission.html
+      - title: Web 版塩基配列登録システム
+        url: /ddbj/web-submission.html
+      - title: Mass Submission System
+        url: /ddbj/mss.html
+      - title: 登録データの修正・更新
+        url: /ddbj/update.html
+  - id: search
+    title: Search
+    url: http://ddbj.nig.ac.jp/arsa/?lang=ja
+    children:
+      - title: getentry
+        url: http://getentry.ddbj.nig.ac.jp/top-j.html
+      - title: ARSA
+        url: http://ddbj.nig.ac.jp/arsa/?lang=ja
+  - id: flat_file
+    title: Flat file
+    url: /ddbj/flat-file.html
+    children:
+      - title: Feature key の定義
+        url: /ddbj/features.html
+      - title: Qualifier key の定義
+        url: /ddbj/qualifiers.html
+      - title: Organism qualifier に記載する生物名
+        url: /ddbj/organism.html
+      - title: Location の記述法
+        url: /ddbj/location.html
+      - title: タンパク質コード配列
+        url: /ddbj/cds.html
+      - title: The Genetic Codes
+        url: /ddbj/geneticcode.html
+      - title: 配列の記載に用いる略号
+        url: /ddbj/code.html
+      - title: 登録の見本
+        url: /ddbj/example.html
+  - id: data_categories
+    title: Data categories
+    url: /ddbj/data-categories.html
+    children:
+      - title: Genome project のデータ登録
+        url: /ddbj/genome.html
+      - title: Pseudohaplotype
+        url: /ddbj/pseudohaplotype.html
+      - title: WGS
+        url: /ddbj/wgs.html
+      - title: メタゲノムアセンブリ
+        url: /ddbj/metagenome-assembly.html
+      - title: Single amplified genome
+        url: /ddbj/single-amplified-genome.html
+      - title: CON
+        url: /ddbj/con.html
+      - title: GSS
+        url: /ddbj/gss.html
+      - title: HTG
+        url: /ddbj/htg.html
+      - title: Environmental sequence の登録
+        url: /ddbj/environmental.html
+      - title: ENV
+        url: /ddbj/env.html
+      - title: TLS
+        url: /ddbj/tls.html
+      - title: Transcriptome Project のデータ登録
+        url: /ddbj/transcriptome.html
+      - title: TSA
+        url: /ddbj/tsa.html
+      - title: EST
+        url: /ddbj/est.html
+      - title: HTC
+        url: /ddbj/htc.html
+      - title: Third Party Data (TPA)
+        url: /ddbj/tpa.html
+  - id: faq
+    title: FAQ
+    url: /faq/ja/index.html
+  - id: other
+    title: Other
+    url: /ddbj/index-e.html
+    children:
+      - title: Patent
+        url: /ddbj/patent-data.html
+      - title: MGA
+        url: /ddbj/mga.html
 lang: ja
 related_pages:
   - title: The Genetic Codes
@@ -63,16 +155,16 @@ taxonomy database に登録されていない「生物名」の場合は、塩�
 <a name="private"></a>
 DDBJ から当該塩基配列データが公開されるまでは、taxonomy database においても、「生物名」は公開されません。  
 また、taxonomy database に登録された生物名であっても、必要であれば、いつでも生物名の更新をご依頼ください。  
-更新依頼は、[登録データの修正・更新](/ddbj/updt.html)をご参照ください。
+更新依頼は、[登録データの修正・更新](/ddbj/update.html)をご参照ください。
 
 原則として、「生物名」には、taxonomy database における "scientific name" 以外は、記載できませんが、taxonomy database における synonym あるいは lineage などの扱いに疑問がある場合は、典拠となる論文などを示していただくことにより、taxonomy database の修正を管理者に依頼し検討することができます。  
 ただし、lineage 解釈などの問題は諸説の１つを採用する方針であり、これに関しましては、ご希望に添えないこともあり得ます。  
-Taxonomy database の間違いなどを発見された場合は、[ご連絡](/contact.html#to-ddbj)ください。  
+Taxonomy database の間違いなどを発見された場合は、[ご連絡](/contact-ddbj.html#to-ddbj)ください。  
 学名のスペルミスなどに関しましては修正します。
 
 ## 生物名入力におけるカテゴリー (Category) について<a name="deasy"></a> 
 
-DDBJ が運用している WWW 経由の[塩基配列登録システム](/ddbj/websub-j.html)では登録の際に、生物名入力において Category を選択します。  
+DDBJ が運用している WWW 経由の[塩基配列登録システム](/ddbj/websub.html)では登録の際に、生物名入力において Category を選択します。  
 下図に Category を判断するためのフローチャートを示します。
 
 ![]({{ site.baseurl }}/assets/images/ddbj/organism-j.png){:.w600}
@@ -252,7 +344,7 @@ taxonomy database 登録申請のための参考情報
 
 環境サンプル (environmental sample) とは、PCR、DGGE、あるいは、その他の方法で直接、分子を単離した環境上のサンプルに由来する配列です。  
 よく混同されますが、<span class="red">環境サンプルとは「野生型」という意味ではありません。</span>  
-環境サンプルの定義については[環境サンプルの説明](/ddbj/env-j.html)もご参照ください。  
+環境サンプルの定義については[環境サンプルの説明](/ddbj/env.html)もご参照ください。  
 <span class="red">環境サンプル由来の混合培養系も、環境サンプルと扱います。</span>
 
 環境サンプルの場合、原則、判明している範囲での lineage に "uncultured" を冠して「生物名」を記載します。

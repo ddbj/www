@@ -12,4 +12,4 @@ lang: en
 
 ## What should be provided when information is unavailable?
 
-Please see the <a href="/biosample/submission-e.html#missing-value-reporting">Missing value reporting</a>.
+Please see the <a href="/biosample/submission.html#missing-value-reporting">Missing value reporting</a>.

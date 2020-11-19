@@ -18,7 +18,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn091226"><a href="#wn091226">PRF Release 124 released </a></h2>
   <div class="news_date">December 26,2009</div>
-  <div class="news_content"><ul><li>Date: December 26, 2008</li><li>entries: 1,040,20   total number of residues: 343,709,341</li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul></div>
+  <div class="news_content"><ul><li>Date: December 26, 2008</li><li>entries: 1,040,20   total number of residues: 343,709,341</li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -27,7 +27,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn091225"><a href="#wn091225">DDBJ Rel. 80 Completed </a></h2>
   <div class="news_date">December 25,2009</div>
-  <div class="news_content"><ul><li>112,314,250 entries:    109,636,862,252  bases</li><li>In the present release, the format of the SOURCE line in DDBJ flat file has been changed (change of the order of organism name and organelle name, and inclusion of a common name in some of DDBJ flat files). For details, please refer the  <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.80.txt">DDBJ Release Note</a>.</li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul></div>
+  <div class="news_content"><ul><li>112,314,250 entries:    109,636,862,252  bases</li><li>In the present release, the format of the SOURCE line in DDBJ flat file has been changed (change of the order of organism name and organelle name, and inclusion of a common name in some of DDBJ flat files). For details, please refer the  <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.80.txt">DDBJ Release Note</a>.</li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -171,7 +171,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn091014"><a href="#wn091014">DAD (DDBJ amino acid database) Rel. 49.0 Released </a></h2>
   <div class="news_date">October 14,2009</div>
-  <div class="news_content"><ul><li>Date: Oct 14, 2009</li><li>15,359,639 entries:    4,200,060,817 aa (total number of residues)</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.49.txt">DAD Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul></div>
+  <div class="news_content"><ul><li>Date: Oct 14, 2009</li><li>15,359,639 entries:    4,200,060,817 aa (total number of residues)</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.49.txt">DAD Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -189,7 +189,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn090925"><a href="#wn090925">DDBJ Rel. 79 Completed </a></h2>
   <div class="news_date">September 25,2009</div>
-  <div class="news_content"><ul><li>108,593,519 entries:    106,684,379,504  bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.79.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul></div>
+  <div class="news_content"><ul><li>108,593,519 entries:    106,684,379,504  bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.79.txt">DDBJ Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -198,7 +198,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn090917"><a href="#wn090917">Change in the anonymous FTP site: Made a new directory "dra", renamed "trace" to "dta"</a></h2>
   <div class="news_date">September 17,2009</div>
-  <div class="news_content">A new directory, "dra", was made under "ddbj_database" of DDBJ anonymous <a href="/download-e.html">FTP</a> site.<br>Now, all of released data from DDBJ Sequence Read Archive can be downloaded from the new "dra" directory.<br><br> "trace" directory was renamed to "dta", according to the official launch of DDBJ Trace Archive (DTA). For details of the change in "ddbj_database" directory and its subdirectories, see <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/README.TXT">README.TXT</a> in the<br>directory.<br>If you automatically monitor DDBJ anonymous FTP, please confirm your monitoring program if necessary.</div>
+  <div class="news_content">A new directory, "dra", was made under "ddbj_database" of DDBJ anonymous <a href="/services/index-e.html">FTP</a> site.<br>Now, all of released data from DDBJ Sequence Read Archive can be downloaded from the new "dra" directory.<br><br> "trace" directory was renamed to "dta", according to the official launch of DDBJ Trace Archive (DTA). For details of the change in "ddbj_database" directory and its subdirectories, see <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/README.TXT">README.TXT</a> in the<br>directory.<br>If you automatically monitor DDBJ anonymous FTP, please confirm your monitoring program if necessary.</div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -225,7 +225,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn090828"><a href="#wn090828">Change of directory structure of anonymous FTP site: Made a new directory "tpa" </a></h2>
   <div class="news_date">August 28,2009</div>
-  <div class="news_content">A new directory, "tpa", was made under "ddbj_database" of DDBJ anonymous <a href="/download-e.html">FTP</a> site.<br>Before this change, <a href="/ddbj/tpa-e.html">TPA</a> (Third-Party Annotaion) data were separated into three directories; "ddbj",<br>"ddbjnew" (for daily updates), and "wgs".  Now, all of TPA associated data can be downloaded from<br>the new "tpa" directory.<br><br>For details of the change in "ddbj_database" directory and its subdirectories, see <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/README.TXT">README.TXT</a> in the<br>directory.<br>If you automatically monitor DDBJ anonymous FTP, please confirm your monitoring program if<br>necessary.</div>
+  <div class="news_content">A new directory, "tpa", was made under "ddbj_database" of DDBJ anonymous <a href="/services/index-e.html">FTP</a> site.<br>Before this change, <a href="/ddbj/tpa-e.html">TPA</a> (Third-Party Annotaion) data were separated into three directories; "ddbj",<br>"ddbjnew" (for daily updates), and "wgs".  Now, all of TPA associated data can be downloaded from<br>the new "tpa" directory.<br><br>For details of the change in "ddbj_database" directory and its subdirectories, see <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/README.TXT">README.TXT</a> in the<br>directory.<br>If you automatically monitor DDBJ anonymous FTP, please confirm your monitoring program if<br>necessary.</div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -279,7 +279,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn090803"><a href="#wn090803">(Urgent!)Homology Search and ClustalW temporary down </a></h2>
   <div class="news_date">August 03,2009</div>
-  <div class="news_content">DDBJ's <a href="/services-e.html" target="_blank">Homology Search and ClustalW services provided via WWW</a> is currently unavailable since Aug. 2(Sun) 6:00(JST). At present, we are doing recovery efforts for the earliest resume. The resume will be notified on this DDBJ HP.  Thank you for your understanding and cooperation.<dd><font class="red">The service was resumed. DDBJ awfully apologize for your inconvenience caused by the long time suspension (Aug. 3, 2009 at 17:40 JST)</font></dd></div>
+  <div class="news_content">DDBJ's <a href="/services/index-e.html" target="_blank">Homology Search and ClustalW services provided via WWW</a> is currently unavailable since Aug. 2(Sun) 6:00(JST). At present, we are doing recovery efforts for the earliest resume. The resume will be notified on this DDBJ HP.  Thank you for your understanding and cooperation.<dd><font class="red">The service was resumed. DDBJ awfully apologize for your inconvenience caused by the long time suspension (Aug. 3, 2009 at 17:40 JST)</font></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -342,7 +342,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn090714"><a href="#wn090714">DAD (DDBJ amino acid database) Rel. 48.0 Released </a></h2>
   <div class="news_date">July 14,2009</div>
-  <div class="news_content"><ul><li>Date: Jul 14, 2009</li><li>14,237,430 entries:    3,992,515,218 aa (total number of residues)</li><li>Changes in the present release:<br>    nothing particular</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.47.txt">DAD Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul></div>
+  <div class="news_content"><ul><li>Date: Jul 14, 2009</li><li>14,237,430 entries:    3,992,515,218 aa (total number of residues)</li><li>Changes in the present release:<br>    nothing particular</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.47.txt">DAD Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -360,7 +360,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn090707"><a href="#wn090707">Homology Search and ClustalW temporary down</a></h2>
   <div class="news_date">July 07,2009</div>
-  <div class="news_content">DDBJ's <a href="/services-e.html" target="_blank">Homology Search and ClustalW services provided via WWW</a> is temporarily unavailable in the following schedule for the system maintenance.<ul><li><b>Date &amp; Time.</b> Jul. 13, 2009 (Mon) at 11:30 - 13:30 (JST) (We will announce on this page when it resumes.):</li><li><b>Unavailable services:</b><br>  - Homology search (FASTA, BLAST, PSI-BLAST, SSEARCH, HMMPFAM)<br>  - ClustalW</li></ul><p>Thank you for your understanding and cooperation.</p><dd><font class="red">Maintenance works was finished. Thank you for your cooperation.(Jul. 13, 2009 at 14:00 JST)</font></dd></div>
+  <div class="news_content">DDBJ's <a href="/services/index-e.html" target="_blank">Homology Search and ClustalW services provided via WWW</a> is temporarily unavailable in the following schedule for the system maintenance.<ul><li><b>Date &amp; Time.</b> Jul. 13, 2009 (Mon) at 11:30 - 13:30 (JST) (We will announce on this page when it resumes.):</li><li><b>Unavailable services:</b><br>  - Homology search (FASTA, BLAST, PSI-BLAST, SSEARCH, HMMPFAM)<br>  - ClustalW</li></ul><p>Thank you for your understanding and cooperation.</p><dd><font class="red">Maintenance works was finished. Thank you for your cooperation.(Jul. 13, 2009 at 14:00 JST)</font></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -369,7 +369,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn090623"><a href="#wn090623">DDBJ Rel. 78 Completed </a></h2>
   <div class="news_date">June 23,2009</div>
-  <div class="news_content"><ul><li>102,099,156 entries:    101,765,388,414  bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.78.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul></div>
+  <div class="news_content"><ul><li>102,099,156 entries:    101,765,388,414  bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.78.txt">DDBJ Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -387,7 +387,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn090610"><a href="#wn090610">GIB temporary down</a></h2>
   <div class="news_date">June 10,2009</div>
-  <div class="news_content"><a href="/past-services-e.html#gib" target="_blank">GIB (Genome Information Broker)</a> will be unavailable at the following schedule, because of the maintenance works.<ul><li><b>Date:</b> June 30(Tue), 2009 at 9:00(JST) - July 2(Thu) at 17:00 (JST)</li></ul><dd>Thank you very much for your understanding and cooperation.<br><dd><font class="red"> Maintenance works finished, and the service is available. Thank you for your cooperation.(Jul. 1, 2009 at 14:45 JST) </font></dd></dd></div>
+  <div class="news_content"><a href="/services/past-services-e.html#gib" target="_blank">GIB (Genome Information Broker)</a> will be unavailable at the following schedule, because of the maintenance works.<ul><li><b>Date:</b> June 30(Tue), 2009 at 9:00(JST) - July 2(Thu) at 17:00 (JST)</li></ul><dd>Thank you very much for your understanding and cooperation.<br><dd><font class="red"> Maintenance works finished, and the service is available. Thank you for your cooperation.(Jul. 1, 2009 at 14:45 JST) </font></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -486,7 +486,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn090415_3"><a href="#wn090415_3">DAD (DDBJ amino acid database) Rel. 47.0 Released </a></h2>
   <div class="news_date">April 15,2009</div>
-  <div class="news_content"><ul><li>Date: April 13, 2009</li><li>14,237,430entries:    3,845,458,844aa (total number of residues)</li><li>Changes in the present release:<br>    nothing particular</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.47.txt">DAD Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul></div>
+  <div class="news_content"><ul><li>Date: April 13, 2009</li><li>14,237,430entries:    3,845,458,844aa (total number of residues)</li><li>Changes in the present release:<br>    nothing particular</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.47.txt">DAD Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -531,7 +531,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn090324"><a href="#wn090324">DDBJ Rel. 77 Completed </a></h2>
   <div class="news_date">March 24,2009</div>
-  <div class="news_content"><ul><li>102,099,156 entries:    101,765,388,414  bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.77.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul></div>
+  <div class="news_content"><ul><li>102,099,156 entries:    101,765,388,414  bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.77.txt">DDBJ Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -630,7 +630,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn090116"><a href="#wn090116">Fix of the problem displaying CON entries in the getentry </a></h2>
   <div class="news_date">January 16,2009</div>
-  <div class="news_content"><a href="http://getentry.ddbj.nig.ac.jp/top-e.html">getentry</a> is the entry retrieval system by accession numbers etc., which is provided by DDBJ via WWW and WebAPI.<br><br>In June, 2008, in displaying the sequences of CON entries, 2 problems had happened.<br>Details are as follows.<dd><b>Problems happened in June, 2008</b><br>(1) When a cited piece entry is described with "complement" operator in a CON entry, the sequence span cited from the piece entry is processed as the forward strand, whereas it should be processed into the complementary sequence (Fixed in Jul, 2008)<br>(2) When the piece entry of retrieved CON entry contains a CON entry, it can not be processed correctly.</dd><dd><b>Problems fixed in January, 2009</b><br>(1) <b>Contents of the problems </b><br>In the getentry, to get the conjugated sequences of CON entries, two methods (display on browser and FTP) are provided. However, neither of two methods works properly in the case of retrieving CON entries under the following conditions.<ul><li>When you specify "total nt seq FASTA" as <a href="/getentry-help-e.html#output">output format</a>, and "www", "E-Mail" or "FTP" as <a href="/getentry-help-e.html#result">Results</a></li><li>When you specify "Flat file (DDBJ)" as <a href="/getentry-help-e.html#output">output format</a>, and "www" as <a href="/getentry-help-e.html#result">Results</a></li></ul><p>(2)<b>Affected services: </b>getentry, ARSA,  Web API (GetEntry )<br>(3)<b>Measure completed date: </b>January 13, 2009<br>(4)<b>Reference:</b> <a href="/whatsnew/whatsnew2008-e.html#08062002">Apology for the defective results of CON entries in getentry(June 20, 2008)</a></p></dd><dd>We sincerely apologize for your long time inconvenience.</dd></div>
+  <div class="news_content"><a href="http://getentry.ddbj.nig.ac.jp/top-e.html">getentry</a> is the entry retrieval system by accession numbers etc., which is provided by DDBJ via WWW and WebAPI.<br><br>In June, 2008, in displaying the sequences of CON entries, 2 problems had happened.<br>Details are as follows.<dd><b>Problems happened in June, 2008</b><br>(1) When a cited piece entry is described with "complement" operator in a CON entry, the sequence span cited from the piece entry is processed as the forward strand, whereas it should be processed into the complementary sequence (Fixed in Jul, 2008)<br>(2) When the piece entry of retrieved CON entry contains a CON entry, it can not be processed correctly.</dd><dd><b>Problems fixed in January, 2009</b><br>(1) <b>Contents of the problems </b><br>In the getentry, to get the conjugated sequences of CON entries, two methods (display on browser and FTP) are provided. However, neither of two methods works properly in the case of retrieving CON entries under the following conditions.<ul><li>When you specify "total nt seq FASTA" as <a href="/services/getentry-e.html#output">output format</a>, and "www", "E-Mail" or "FTP" as <a href="/services/getentry-e.html#result">Results</a></li><li>When you specify "Flat file (DDBJ)" as <a href="/services/getentry-e.html#output">output format</a>, and "www" as <a href="/services/getentry-e.html#result">Results</a></li></ul><p>(2)<b>Affected services: </b>getentry, ARSA,  Web API (GetEntry )<br>(3)<b>Measure completed date: </b>January 13, 2009<br>(4)<b>Reference:</b> <a href="/whatsnew/whatsnew2008-e.html#08062002">Apology for the defective results of CON entries in getentry(June 20, 2008)</a></p></dd><dd>We sincerely apologize for your long time inconvenience.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -639,7 +639,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn090116_2"><a href="#wn090116_2">DAD (DDBJ amino acid database) Rel. 46.0 Released </a></h2>
   <div class="news_date">January 16,2009</div>
-  <div class="news_content"><ul><li>13,526,116 entries:    3,599,816,846aa (total number of residues)</li><li>Changes in the present release:<br>    DDBJ/EMBL/GenBank Feature Table: Defin was revised in October, 2008</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.46.txt">DAD Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul></div>
+  <div class="news_content"><ul><li>13,526,116 entries:    3,599,816,846aa (total number of residues)</li><li>Changes in the present release:<br>    DDBJ/EMBL/GenBank Feature Table: Defin was revised in October, 2008</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.46.txt">DAD Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>

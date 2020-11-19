@@ -12,7 +12,7 @@ lang: en
 
 ## How to submit more than one sequence at once?
 
-<p>On <a href="/ddbj/websub-help-e.html#flow-5">5.Sequence</a>, input all of your sequences in <strong><a href="/faq/en/acceptable-sequence-format-e.html">multi-FASTA format</a></strong>. We will assign consequent accession numbers for your sequences.<br>Moving to <a href="/ddbj/websub-help-e.html#flow-7">7.Annotation</a>, you can enter feature annotation for each sequence at once. </p>
+<p>On <a href="/ddbj/web-submission-help-e.html#flow-5">5.Sequence</a>, input all of your sequences in <strong><a href="/faq/en/acceptable-sequence-format-e.html">multi-FASTA format</a></strong>. We will assign consequent accession numbers for your sequences.<br>Moving to <a href="/ddbj/web-submission-help-e.html#flow-7">7.Annotation</a>, you can enter feature annotation for each sequence at once. </p>
 <dl><dt><span style="color: #ff0000">Caution</span></dt>
   <dd>※ All of following items must be unified for all sequences. You can not specify thenm for each sequence.
     <ul>
@@ -22,5 +22,5 @@ lang: en
       <li>Reference</li>
     </ul>
   </dd>
-  <dd>※ You can select only one template on <a href="/ddbj/websub-help-e.html#flow-6">6.Template</a> for all sequences. You can not select a template for each sequence. </dd>
+  <dd>※ You can select only one template on <a href="/ddbj/web-submission-help-e.html#flow-6">6.Template</a> for all sequences. You can not select a template for each sequence. </dd>
 </dl>

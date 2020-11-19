@@ -2,6 +2,98 @@
 layout: indexed_content
 title: MSS - Mass Submission System
 category: ddbj
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /ddbj/index.html
+  - id: submission
+    title: Submission
+    url: /ddbj/submission.html
+    children:
+      - title: 塩基配列の登録
+        url: /ddbj/submission.html
+      - title: Web 版塩基配列登録システム
+        url: /ddbj/web-submission.html
+      - title: Mass Submission System
+        url: /ddbj/mss.html
+      - title: 登録データの修正・更新
+        url: /ddbj/update.html
+  - id: search
+    title: Search
+    url: http://ddbj.nig.ac.jp/arsa/?lang=ja
+    children:
+      - title: getentry
+        url: http://getentry.ddbj.nig.ac.jp/top-j.html
+      - title: ARSA
+        url: http://ddbj.nig.ac.jp/arsa/?lang=ja
+  - id: flat_file
+    title: Flat file
+    url: /ddbj/flat-file.html
+    children:
+      - title: Feature key の定義
+        url: /ddbj/features.html
+      - title: Qualifier key の定義
+        url: /ddbj/qualifiers.html
+      - title: Organism qualifier に記載する生物名
+        url: /ddbj/organism.html
+      - title: Location の記述法
+        url: /ddbj/location.html
+      - title: タンパク質コード配列
+        url: /ddbj/cds.html
+      - title: The Genetic Codes
+        url: /ddbj/geneticcode.html
+      - title: 配列の記載に用いる略号
+        url: /ddbj/code.html
+      - title: 登録の見本
+        url: /ddbj/example.html
+  - id: data_categories
+    title: Data categories
+    url: /ddbj/data-categories.html
+    children:
+      - title: Genome project のデータ登録
+        url: /ddbj/genome.html
+      - title: Pseudohaplotype
+        url: /ddbj/pseudohaplotype.html
+      - title: WGS
+        url: /ddbj/wgs.html
+      - title: メタゲノムアセンブリ
+        url: /ddbj/metagenome-assembly.html
+      - title: Single amplified genome
+        url: /ddbj/single-amplified-genome.html
+      - title: CON
+        url: /ddbj/con.html
+      - title: GSS
+        url: /ddbj/gss.html
+      - title: HTG
+        url: /ddbj/htg.html
+      - title: Environmental sequence の登録
+        url: /ddbj/environmental.html
+      - title: ENV
+        url: /ddbj/env.html
+      - title: TLS
+        url: /ddbj/tls.html
+      - title: Transcriptome Project のデータ登録
+        url: /ddbj/transcriptome.html
+      - title: TSA
+        url: /ddbj/tsa.html
+      - title: EST
+        url: /ddbj/est.html
+      - title: HTC
+        url: /ddbj/htc.html
+      - title: Third Party Data (TPA)
+        url: /ddbj/tpa.html
+  - id: faq
+    title: FAQ
+    url: /faq/ja/index.html
+  - id: other
+    title: Other
+    url: /ddbj/index-e.html
+    children:
+      - title: Patent
+        url: /ddbj/patent-data.html
+      - title: MGA
+        url: /ddbj/mga.html
 lang: ja
 related_pages:
   - title: 登録ファイル形式
@@ -17,7 +109,7 @@ related_pages:
   - title: validator エラーメッセージ
     url: /ddbj/validator.html
   - title: MSS 利用申し込み
-    url: /ddbj/mass-form.html
+    url: /ddbj/mss-form.html
 ---
 
 <span class="red">ヒトを対象とした研究データの登録について</span>
@@ -42,9 +134,9 @@ Mass Submission System (MSS) は、比較的大規模な塩基配列データ (r
 
 </div>
 
-データの種別については[登録データ種別](/data-categories.html)をご確認ください。
+データの種別については[登録データ種別](/documents/data-categories.html)をご確認ください。
 
-上記の条件を満たさない配列の登録は、[Web 版塩基配列登録システム (NSSS: DDBJ Nucleotide Sequence Submission System](/ddbj/websub.html)) のご利用をお勧めしております。
+上記の条件を満たさない配列の登録は、[Web 版塩基配列登録システム (NSSS: DDBJ Nucleotide Sequence Submission System](/ddbj/web-submission.html)) のご利用をお勧めしております。
 
 また、シークエンサからの出力配列 (reads) を登録する場合は [DRA; DDBJ Sequence Read
 Archive](/dra/index.html) をご参照ください。
@@ -55,7 +147,7 @@ Archive](/dra/index.html) をご参照ください。
 
 ### 1\. 申し込み <a name="flow-1"></a>
 
-MSS の利用をご希望の場合は、[MSS 申し込みフォーム](/ddbj/mass-form.html)からご連絡ください。  
+MSS の利用をご希望の場合は、[MSS 申し込みフォーム](/ddbj/mss-form.html)からご連絡ください。  
 DDBJ で受付した後に、より詳細な手順および作業を支援するソフトウェアをご紹介いたします。
 
 ### 2\. 登録ファイルの準備 <a name="flow-2"></a>
@@ -143,7 +235,7 @@ SCP によるファイル転送
 ### 5\. データ公開 <a name="flow-5"></a>
 
 登録時に即日公開を希望した場合は、可能な限り速やかに公開します。  
-[公開予定日](/ddbj/submission.html#hold-date)([hold\_date](/ddbj/file-format.html#annotation))を指定した場合は、[公開原則](/data-release-policy.html)に基づいて公開します。
+[公開予定日](/ddbj/submission.html#hold-date)([hold\_date](/ddbj/file-format.html#annotation))を指定した場合は、[公開原則](/documents/data-release-policy.html)に基づいて公開します。
 
 登録された塩基配列データは、配列ファイルとアノテーションファイルの内容に基づき、DDBJ の定めるフォーマットにしたがった[フラットファイル (flat file)](/ddbj/flat-file.html) の形式で公開されています。  
 [アノテーションファイルとフラットファイルの対応関係](/ddbj/file-format.html#sample)もご参照ください。

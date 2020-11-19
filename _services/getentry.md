@@ -6,31 +6,31 @@ category: services
 lang: ja
 related_pages:
   - title: ARSA ヘルプ
-    url: services/arsa-help.html
+    url: /services/arsa.html
   - title: BLAST ヘルプ
-    url: services/blast-help.html
+    url: /services/blast.html
   - title: VecScreen ヘルプ
-    url: services/vecscreen-help.html
+    url: /services/vecscreen.html
   - title: ClustalW ヘルプ
-    url: services/clustalw-help.html
+    url: /services/clustalw.html
   - title: TXSearch ヘルプ
-    url: services/txsearch-help.html
+    url: /services/txsearch.html
   - title: 過去のサービス
-    url: services/past-services.html
+    url: /services/past-services.html
   - title: 関連論文
-    url: services/references.html
+    url: /services/references.html
   - title: WABI (Web API for Biology)
-    url: services/wabi.html
+    url: /services/wabi.html
   - title: WABI BLAST ヘルプ
-    url: services/wabi_blast-help.html
+    url: /services/wabi-blast.html
   - title: WABI ClustalW ヘルプ
-    url: services/wabi_clustalw-help.html
+    url: /services/wabi-clustalw.html
   - title: WABI VecScreen ヘルプ
-    url: services/wabi_vecscreen-help.html
+    url: /services/wabi-vecscreen.html
   - title: WABI MAFFT ヘルプ
-    url: services/wabi_mafft-help.html
+    url: /services/wabi-mafft.html
   - title: Pipeline ヘルプ
-    url: services/pipeline-help.html
+    url: /services/pipeline.html
 ---
 
 ## getentryの機能について <a name="getentry_の機能について"></a>
@@ -57,7 +57,7 @@ related_pages:
     </tr>
     <tr>
       <th>出力形式</th>
-      <td><a href="{{site.baseurl}}/services/flat-file.html">フラットファイル（DDBJ）</a></td>
+      <td><a href="{{site.baseurl}}/ddbj/flat-file.html">フラットファイル（DDBJ）</a></td>
     </tr>
     <tr>
       <th>取得方法</th>
@@ -151,7 +151,7 @@ DDBJ リリース には、 TPA、 アルファベット４文字＋８桁の数
 
 MGA データの新規登録は受け付けておりません。
 
-getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報]({{site.baseurl}}/statistics/relinfo.html) でご確認ください。
+getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報]({{site.baseurl}}/latest-releases.html) でご確認ください。
 
 
 出力形式
@@ -203,7 +203,7 @@ getentry で検索可能な各データベースのリリース番号や公開�
       <td>タンパク質の立体構造データベース</td>
     </tr>
     <tr>
-      <th><a href="{{site.baseurl}}/statistics/relnote.html">DAD</a></th>
+      <th><a href="{{site.baseurl}}/ddbj-releases.html">DAD</a></th>
       <td>DDBJ からアミノ酸翻訳配列データを抽出して作成したデータベース</td>
     </tr>
     <tr>
@@ -214,7 +214,7 @@ getentry で検索可能な各データベースのリリース番号や公開�
   </tbody>
 </table>
 
-getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報]({{site.baseurl}}/statistics/relinfo.html) でご確認ください。
+getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報]({{site.baseurl}}/latest-releases.html) でご確認ください。
 
 #### 出力形式 <a name="出力形式"></a>
 
@@ -423,7 +423,7 @@ smart URL      | http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold itali
     </tr>
     <tr>
       <th>dad</th>
-      <td><a href="{{site.baseurl}}/statistics/relnote.html">DAD</a></td>
+      <td><a href="{{site.baseurl}}/ddbj-releases.html">DAD</a></td>
       <td>DDBJ からアミノ酸翻訳配列データを抽出して作成したデータベース</td>
     </tr>
     <tr>
@@ -450,7 +450,7 @@ DDBJ リリース には、 TPA、 アルファベット４文字＋８桁の数
 
 MGA データの新規登録は受け付けておりません。
 
-getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報]({{site.baseurl}}/statistics/relinfo.html) でご確認ください。
+getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報]({{site.baseurl}}/latest-releases.html) でご確認ください。
 </div>
 
 **入力例** <span class="normal">（上段はGET method , 下段は　smart URL ）</span>

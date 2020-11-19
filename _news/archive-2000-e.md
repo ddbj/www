@@ -63,7 +63,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn001019_2"><a href="#wn001019_2">Thermoplasma acidophilum was added to GIB</a></h2>
   <div class="news_date">October 19,2000</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Thermoplasma acidophilum</i> was<br>released, we incorporated it to GIB,and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker for Microbial Genomes)</a> provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Thermoplasma acidophilum</i> was<br>released, we incorporated it to GIB,and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -81,7 +81,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn001010"><a href="#wn001010">Bacillus halodurans C-125 and Halobacterium sp. NRC-1 were added to GIB</a></h2>
   <div class="news_date">October 10,2000</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB</a>(Genome Information Broker for Microbial Genomes) provides a comprehensive<br>view of the complete microbial genome sequences. Because the genome sequencedata of <i>Bacillus halodurans C-125</i> and<br><i>Halobacterium sp. NRC-1</i> were released, we incorporated them to GIB,and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB</a>(Genome Information Broker for Microbial Genomes) provides a comprehensive<br>view of the complete microbial genome sequences. Because the genome sequencedata of <i>Bacillus halodurans C-125</i> and<br><i>Halobacterium sp. NRC-1</i> were released, we incorporated them to GIB,and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -90,7 +90,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn000918"><a href="#wn000918">Buchnera sp. APS was added to GIB</a></h2>
   <div class="news_date">September 18,2000</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB</a> (Genome Information Broker for Microbial Genomes) provides a comprehensive<br>view of the complete microbial genome sequences. Because the genome sequencedata of <i>Buchnera sp. APS</i> was released,<br>we incorporated it to GIB,and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB</a> (Genome Information Broker for Microbial Genomes) provides a comprehensive<br>view of the complete microbial genome sequences. Because the genome sequencedata of <i>Buchnera sp. APS</i> was released,<br>we incorporated it to GIB,and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -108,7 +108,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn000907"><a href="#wn000907">Pseudomonas aeruginosa PA01 was added to GIB</a></h2>
   <div class="news_date">September 07,2000</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB</a>(Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences.Because the genome sequencedata of <i>Pseudomonas aeruginosa PA01</i> was<br>released, we incorporated it to GIB,and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB</a>(Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences.Because the genome sequencedata of <i>Pseudomonas aeruginosa PA01</i> was<br>released, we incorporated it to GIB,and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -189,7 +189,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn000807"><a href="#wn000807">Vibrio cholerae N16961 was added to GIB</a></h2>
   <div class="news_date">August 07,2000</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB</a>(Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Vibrio cholerae N16961</i> was released, we incorporated it to GIB,and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB</a>(Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Vibrio cholerae N16961</i> was released, we incorporated it to GIB,and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -207,7 +207,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn000725"><a href="#wn000725">Chlamydophila pneumoniae strain J138 was added to GIB</a></h2>
   <div class="news_date">July 25,2000</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB</a> (Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences.Because the genome sequencedata of <i>Chlamydophila pneumoniae strain J138</i> was released, we incorporated it to GIB, and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB</a> (Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences.Because the genome sequencedata of <i>Chlamydophila pneumoniae strain J138</i> was released, we incorporated it to GIB, and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -225,7 +225,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn000719"><a href="#wn000719">Xylella fastidiosa was added to GIB</a></h2>
   <div class="news_date">July 19,2000</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB</a> (Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Xylella fastidiosa</i> was released,<br>we incorporated it to GIB,and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB</a> (Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Xylella fastidiosa</i> was released,<br>we incorporated it to GIB,and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -252,7 +252,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn000703"><a href="#wn000703">Improvement of homology search service</a></h2>
   <div class="news_date">July 03,2000</div>
-  <div class="news_content"><dd><a href="/E-mail/homology.html">DDBJ homology search services</a>(FASTA, BLAST, PSI-BLAST, SSEARCH) were updated on June 19th. The interfaces were changed and Blast server got faster than before.<br><dd>The default target division was changed from "all DNA data" to "all except EST, HTG, GSS, STS, SYN, UNA divisions".<br>It is also effective when "DDBJ ALL" or "DDBJ updates" is selected. By this change, you can search well-annotated DNA sequence data efficiently.</dd></dd></div>
+  <div class="news_content"><dd>DDBJ homology search services(FASTA, BLAST, PSI-BLAST, SSEARCH) were updated on June 19th. The interfaces were changed and Blast server got faster than before.<br><dd>The default target division was changed from "all DNA data" to "all except EST, HTG, GSS, STS, SYN, UNA divisions".<br>It is also effective when "DDBJ ALL" or "DDBJ updates" is selected. By this change, you can search well-annotated DNA sequence data efficiently.</dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -297,7 +297,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn000512_3"><a href="#wn000512_3">The Human Chromosome 21 Sequencing Completed</a></h2>
   <div class="news_date">May 12,2000</div>
-  <div class="news_content"><dd>The Chromosome 21 Mapping and Sequencing Consortium completed the sequencing of the human chromosome #21 and submitted the data to DDBJ/EMBL/GenBank International Nucleotide Sequence Database.The Chromosome 21 Mapping and Sequencing Consortium consists of Japanese and German teams.<p></p><dd>Japanese team:<br><dd><a href="http://hgp.gsc.riken.go.jp/"> * RIKEN Genomic Sciences Center,<br>Human Genome Research Group</a> ( Headed by Dr. Yoshiyuki Sakaki)<br><dd><a href="http://adenine.dmb.med.keio.ac.jp/"> * Keio University School of<br>Medicine, Dept. of Molecular Biology</a> ( Headed by Dr. Nobuyoshi Shimizu)<p></p><dd>German team:<br><dd><a href="http://genome.imb-jena.de/"> - Institute of Molecular Biotechnology</a><br><dd><a href="http://genome.gbf.de/"> - GBF, Dept. of Genome Analysis</a><br><dd><a href="http://chr21.rz-berlin.mpg.de/"> - Max-Planck Institute for Molecular Genetics</a><p>In total we have made public <a href="/files/pdf/acc-list-e.html">106 entries</a> ( about 33 Mbases) of HUM division sequence data. Japanese team was in charge  of 75 entries.<br>We constructed the CON entry assembled by 105 entries on q arm of Chr #21.Accession numbers is <b>BA000005</b>. From below, the DNA sequence(s) having reference to BA000005 can be transferred (by ftp) or displayed directly.</p><p><a href="http://atom.ddbj.nig.ac.jp:8000/cgi-bin/contig/ddbj_ftp-e.pl?BA000005"> o transfer all the relevant DDBJ entries in DDBJ format </a><br><a href="http://atom.ddbj.nig.ac.jp:8000/cgi-bin/contig/contig_ftp-e2.pl?BA000005"> o transfer all the DNA sequences separately in FASTA format </a><br><a href="http://atom.ddbj.nig.ac.jp:8000/cgi-bin/contig/contig_show2.pl?BA000005"> o display all the DNA sequences separately in FASTA format </a></p><p><font class="red">WARNING) </font><br>A large amount of data will be trasferred if you select "display".So, please be careful about memory overflow on the client side.  Also, the combined DNA sequence will not be created if there are gaps between entries.</p><p><small><br><b>About CON division:</b><br>The CON division is to show the order of related sequences in a genome, and expressed by join and the accession numbers of the sequences.The contents of the CON division are compiled by the three data banks not by the data submitter.</small></p><table style="border: double;"><tr><td><small><b>Submitted by RIKEN, 54 entries </b><br>AP001660, AP001666, AP001667, AP001669, AP001670, AP001671, AP001672,AP001674, AP001675, AP001676, AP001677, AP001678, AP001679, AP001680,AP001681, AP001683, AP001684, AP001685, AP001686, AP001687, AP001688,AP001689, AP001690, AP001691, AP001692, AP001693, AP001694, AP001695,AP001705, AP001706, AP001708, AP001709, AP001710, AP001711, AP001712,AP001713, AP001714, AP001715, AP001716, AP001717, AP001718, AP001719,AP001720, AP001721, AP001728, AP001729, AP001730, AP001731, AP001742,AP001744, AP001750, AP001759, AP001760, AP001761,<br><b>Submitted by Keio University, 21 entries </b><br>AP001696, AP001697, AP001698, AP001699, AP001700, AP001724, AP001725,AP001726, AP001727, AP001732, AP001741, AP001743, AP001745, AP001746,AP001747, AP001748, AP001749, AP001751, AP001752, AP001753, AP001754,<br></small></td></tr></table></dd></dd></dd></dd></dd></dd></dd></dd></div>
+  <div class="news_content"><dd>The Chromosome 21 Mapping and Sequencing Consortium completed the sequencing of the human chromosome #21 and submitted the data to DDBJ/EMBL/GenBank International Nucleotide Sequence Database.The Chromosome 21 Mapping and Sequencing Consortium consists of Japanese and German teams.<p></p><dd>Japanese team:<br><dd><a href="http://hgp.gsc.riken.go.jp/"> * RIKEN Genomic Sciences Center,<br>Human Genome Research Group</a> ( Headed by Dr. Yoshiyuki Sakaki)<br><dd><a href="http://adenine.dmb.med.keio.ac.jp/"> * Keio University School of<br>Medicine, Dept. of Molecular Biology</a> ( Headed by Dr. Nobuyoshi Shimizu)<p></p><dd>German team:<br><dd><a href="http://genome.imb-jena.de/"> - Institute of Molecular Biotechnology</a><br><dd><a href="http://genome.gbf.de/"> - GBF, Dept. of Genome Analysis</a><br><dd><a href="http://chr21.rz-berlin.mpg.de/"> - Max-Planck Institute for Molecular Genetics</a><p>In total we have made public <a href="{{ site.baseurl }}/assets/files/pdf/acc-list-e.html">106 entries</a> ( about 33 Mbases) of HUM division sequence data. Japanese team was in charge  of 75 entries.<br>We constructed the CON entry assembled by 105 entries on q arm of Chr #21.Accession numbers is <b>BA000005</b>. From below, the DNA sequence(s) having reference to BA000005 can be transferred (by ftp) or displayed directly.</p><p><a href="http://atom.ddbj.nig.ac.jp:8000/cgi-bin/contig/ddbj_ftp-e.pl?BA000005"> o transfer all the relevant DDBJ entries in DDBJ format </a><br><a href="http://atom.ddbj.nig.ac.jp:8000/cgi-bin/contig/contig_ftp-e2.pl?BA000005"> o transfer all the DNA sequences separately in FASTA format </a><br><a href="http://atom.ddbj.nig.ac.jp:8000/cgi-bin/contig/contig_show2.pl?BA000005"> o display all the DNA sequences separately in FASTA format </a></p><p><font class="red">WARNING) </font><br>A large amount of data will be trasferred if you select "display".So, please be careful about memory overflow on the client side.  Also, the combined DNA sequence will not be created if there are gaps between entries.</p><p><small><br><b>About CON division:</b><br>The CON division is to show the order of related sequences in a genome, and expressed by join and the accession numbers of the sequences.The contents of the CON division are compiled by the three data banks not by the data submitter.</small></p><table style="border: double;"><tr><td><small><b>Submitted by RIKEN, 54 entries </b><br>AP001660, AP001666, AP001667, AP001669, AP001670, AP001671, AP001672,AP001674, AP001675, AP001676, AP001677, AP001678, AP001679, AP001680,AP001681, AP001683, AP001684, AP001685, AP001686, AP001687, AP001688,AP001689, AP001690, AP001691, AP001692, AP001693, AP001694, AP001695,AP001705, AP001706, AP001708, AP001709, AP001710, AP001711, AP001712,AP001713, AP001714, AP001715, AP001716, AP001717, AP001718, AP001719,AP001720, AP001721, AP001728, AP001729, AP001730, AP001731, AP001742,AP001744, AP001750, AP001759, AP001760, AP001761,<br><b>Submitted by Keio University, 21 entries </b><br>AP001696, AP001697, AP001698, AP001699, AP001700, AP001724, AP001725,AP001726, AP001727, AP001732, AP001741, AP001743, AP001745, AP001746,AP001747, AP001748, AP001749, AP001751, AP001752, AP001753, AP001754,<br></small></td></tr></table></dd></dd></dd></dd></dd></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -360,7 +360,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn000412"><a href="#wn000412">Neisseria meningitidis Z2491 was added to GIB</a></h2>
   <div class="news_date">April 12,2000</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB</a>(Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences.Because the genome sequencedata of <i>Neisseria meningitidis</i> Z2491 was released,we incorporated them to GIB,and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB</a>(Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences.Because the genome sequencedata of <i>Neisseria meningitidis</i> Z2491 was released,we incorporated them to GIB,and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -369,7 +369,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn000315"><a href="#wn000315">Chlamydophila pneumoniae AR39, Chlamydia muridarum and Neisseria meningitidiswere added to GIB</a></h2>
   <div class="news_date">March 15,2000</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB</a>(Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences.Because the genome sequencedata of <i>Chlamydophila pneumoniae</i> AR39,<i>Chlamydia muridarum</i> and <i>Neisseria meningitidis</i> were released,we incorporated them to GIB,and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB</a>(Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences.Because the genome sequencedata of <i>Chlamydophila pneumoniae</i> AR39,<i>Chlamydia muridarum</i> and <i>Neisseria meningitidis</i> were released,we incorporated them to GIB,and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -405,7 +405,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn000223"><a href="#wn000223">Ureaplasma urealyticum and Campylobacter jejuni NCTC11168 were added to GIB</a></h2>
   <div class="news_date">February 23,2000</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB</a> (Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Ureaplasma urealyticum</i> and <i>Campylobacter jejuni NCTC11168</i> were released, we incorporated them to GIB,and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB</a> (Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Ureaplasma urealyticum</i> and <i>Campylobacter jejuni NCTC11168</i> were released, we incorporated them to GIB,and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -459,7 +459,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn000105"><a href="#wn000105">Deinococcus radiodurans was added to GIB</a></h2>
   <div class="news_date">January 05,2000</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB</a> (Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Deinococcus radiodurans</i> were released, we incorporated them to GIB,and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB</a> (Genome Information Broker for Microbial Genomes) provides a comprehensive view of the complete microbial genome sequences. Because the genome sequencedata of <i>Deinococcus radiodurans</i> were released, we incorporated them to GIB,and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>

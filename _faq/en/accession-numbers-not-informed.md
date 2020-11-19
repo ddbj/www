@@ -22,4 +22,4 @@ lang: en
   </ul>
 </div>
 <!-- .sub_index -->
-<p>Please contact <a href="/contact-e.html">DRA team</a>, when necessary.</p>
+<p>Please contact <a href="/contact-ddbj-e.html">DRA team</a>, when necessary.</p>

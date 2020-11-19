@@ -3,6 +3,29 @@ layout: indexed_content
 title: DDBJ BioProject Handbook
 pathname: submission-e
 category: bioproject
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /bioproject/index-e.html
+  - id: handbook
+    title: Handbook
+    url: /bioproject/submission-e.html
+  - id: faq
+    title: FAQ
+    url: /faq/en/index-e.html
+  - id: search
+    title: Search
+    url: http://ddbj.nig.ac.jp/BPSearch/
+  - id: downloads
+    title: Downloads
+    url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/bioproject
+    children:
+      - title: XML Schema
+        url: https://github.com/ddbj/pub/tree/master/docs/bioproject/xsd
+  - id: about bioProject
+    title: About BioProject
+    url: /bioproject/about-bioproject-e.html
 lang: en
 ---
 
@@ -91,7 +114,7 @@ You can "immediately release" or "hold" the registered primary project.
 
 The submitted primary project data can be kept private until the linked DDBJ, DRA, DTA and DOR records made be public. Hold date of the project data cannot be specified. Primary project data are automatically released when the linked DDBJ record(s) is published. On the other hand, publication of the primary project data do not cause automatic release of the linked DDBJ record(s). Thus, under a primary project, publication of a data record does not cause the indirect release of the other records. Publication of the DDBJ records is independent from the release of the linked project(s).
 
-FAQ: [How are linked BioProject/BioSample/sequence data released?](/faq/en/bp_bs_seq_release-e.html)
+FAQ: [How are linked BioProject/BioSample/sequence data released?](/faq/en/bp-bs-seq-release.html)
 
 {::nomarkdown}
 {% include image.html url="submission/um_pri_visibility.jpg" caption="Visibility of relationships between a public umbrella and primary projects." class="w450" %}
@@ -117,7 +140,7 @@ To group primary projects under an umbrella, please follow the steps below.
 First, submit and release an umbrella project. If necessary, please share the assigned PRJDB number with relevant researchers.  
 When submitting related primary projects, please provide the PRJDB number of parent umbrella in the [Umbrella BioProject](/bioproject/submission-e.html#Area_linked-project). Released primary projects are automatically linked to the specified umbrella project.
 
-If you want to add already registered primary projects to the umbrella, please [e-mail](/contact-e.html)the PRJDB numbers of umbrella and related primary projects to the DDBJ BioProject team.
+If you want to add already registered primary projects to the umbrella, please [e-mail](/contact-ddbj-e.html)the PRJDB numbers of umbrella and related primary projects to the DDBJ BioProject team.
 
 <span class="red">Private primary projects are not released by linking to public umbrella project.</span>
 
@@ -840,7 +863,7 @@ Please leave the prefix box empty, when a prefix is not necessary for [WGS](/ddb
 Prefix is managed by NCBI. When a project is submitted, our system tries to reserve prefix to NCBI. When the prefix has already been reserved, anerror message will be displayed. Please enter a different prefix and submit again.
 
 <div class="attention red">
-When multiple prefixes are necessary, please [contact us](/contact-e.html).
+When multiple prefixes are necessary, please [contact us](/contact-ddbj-e.html).
 </div>
 
 {::nomarkdown}
@@ -899,7 +922,7 @@ Public projects are exchanged among
 
 ### Update <a name="update"></a>
 
-Registered projects can be updated. Please [contact the BioProject staff](/contact.html)to update the projects.
+Registered projects can be updated. Please [contact the BioProject staff](/contact-ddbj-e.html)to update the projects.
 
 ### Link experimental data and project <a name="link-experimental-data-project"></a>
 

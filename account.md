@@ -202,7 +202,7 @@ Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
 {% include image.html url="books/center.jpg" caption="center name を登録" class="w400" %}
 {:/}
 
-適切な center が登録されていない場合，[Apply new center name\] をクリックし，組織のフルネームとともに center の新規登録を [DDBJ](/contact.html) に申請します。
+適切な center が登録されていない場合，[Apply new center name\] をクリックし，組織のフルネームとともに center の新規登録を [DDBJ](/contact-ddbj.html) に申請します。
 
 Center name が登録されると，下部の "Public Key"
 エリアから公開鍵をアップロードできるようになります。公開鍵ファイルを選択し，[Register

@@ -10,7 +10,7 @@ related_pages:
   - title: DDBJ staff presentations (2009-)
     url: /activities/index-e.html
   - title: DDBJ Publications Archive
-    url: /activities/pub-archives-e.html
+    url: /activities/archives-e.html
   - title: DDBJ Annual Reports
     url: /activities/index-e.html
   - title: The Reports for International Collaborators Meetings

@@ -3,6 +3,52 @@ layout: indexed_content
 title: Submit sequencing experiment
 pathname: submit-sequence-e
 category: gea
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /gea/index-e.html
+  - id: submission overview
+    title: Submission Overview
+    url: /gea/overview-e.html
+    children:
+      - title: Submit microarray experiment
+        url: /gea/submit-array-e.html
+      - title: Submit sequencing experiment
+        url: /gea/submit-sequence-e.html
+      - title: Metadata
+        url: /gea/metadata-e.html
+      - title: Data File
+        url: /gea/datafile-e.html
+      - title: Validation
+        url: /gea/validation-e.html
+      - title: Single-cell submission guide
+        url: /gea/single-cell-e.html
+      - title: Example
+        url: /gea/example-e.html
+      - title: Array Design
+        url: /gea/adf-e.html
+      - title: Data matrix
+        url: /gea/matrix-e.html
+      - title: Reviewer Access
+        url: /gea/reviewer-access-e.html
+  - id: faq
+    title: FAQ
+    url: /faq/en/index-e.html
+  - id: search
+    title: Search (AOE)
+    url: http://aoe.dbcls.jp/
+    children:
+      - title: RefEx
+        url: http://refex.dbcls.jp/index.php?lang=en
+      - title: Search (ArrayExpress)
+        url: https://www.ebi.ac.uk/arrayexpress/browse.html
+  - id: downloads
+    title: Downloads
+    url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/gea
+  - id: about gea
+    title: About GEA
+    url: /gea/about-gea-e.html
 lang: en
 ---
 
@@ -68,7 +114,7 @@ BioProject and BioSample registration is required for DRA submission.
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Single-cell sequencing experiment</a></h4>
 <div class="accordion-content">
 
-Refer to [ArrayExpress Single-cell submission guide](https://www.ebi.ac.uk/arrayexpress/help/single-cell_submission_guide.html). Please [contact GEA team](/contact-e.html) to upload any additional files for custom spike-ins or to facilitate data analysis.
+Refer to [ArrayExpress Single-cell submission guide](https://www.ebi.ac.uk/arrayexpress/help/single-cell_submission_guide.html). Please [contact GEA team](/contact-ddbj-e.html) to upload any additional files for custom spike-ins or to facilitate data analysis.
 
 [« Close](javascript:void(0)){: .close-content-btn}
 </div>
@@ -79,7 +125,7 @@ Refer to [ArrayExpress Single-cell submission guide](https://www.ebi.ac.uk/array
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">More than one technology per experiment</a></h4>
 <div class="accordion-content">
 
-GEA will ask you for the technology and name of the array, and applies it to the whole submission. If you have used different types of technologies for the same set of samples, we ask you to create separate submissions. Please make sure that the submissions have distinct titles (even though they may belong to the same study), in order to avoid mistakes. If you have samples from more than one array design in your experiment, it is possible to submit only one experiment. If you wish to do this, please [contact GEA team](/contact-e.html).
+GEA will ask you for the technology and name of the array, and applies it to the whole submission. If you have used different types of technologies for the same set of samples, we ask you to create separate submissions. Please make sure that the submissions have distinct titles (even though they may belong to the same study), in order to avoid mistakes. If you have samples from more than one array design in your experiment, it is possible to submit only one experiment. If you wish to do this, please [contact GEA team](/contact-ddbj-e.html).
 
 [« Close](javascript:void(0)){: .close-content-btn}
 </div>
@@ -264,7 +310,7 @@ You can delete an un-submitted GEA submission.
 
 Select a DRA submission registered in your account. If DRA submission is not registered, please go to the [DRA submission site](/dra/submission-e.html#dra-submission) and submit DRA.
 
-To use DRA submissions obtained in the other account, please [contact GEA team](/contact-e.html).
+To use DRA submissions obtained in the other account, please [contact GEA team](/contact-ddbj-e.html).
 
 {::nomarkdown}
 {% include image.html url="books/seq-dra.jpg" caption="Select a DRA submission for the GEA experiment" class="w550" %}
@@ -276,7 +322,7 @@ Select a project registered in your account. If a BioProject is not registered, 
 
 Select a BioProject used in the DRA submission when the GEA experiment and DRA submission belong to same project (usual case). When the GEA experiment and DRA submission belong to different projects, select a BioProject not used in the DRA submission.
 
-To use a project obtained in the other account, please [contact GEA team](/contact-e.html).
+To use a project obtained in the other account, please [contact GEA team](/contact-ddbj-e.html).
 
 {::nomarkdown}
 {% include image.html url="books/seq-bp.jpg" caption="Select a BioProject for the GEA experiment" class="w550" %}
@@ -289,7 +335,7 @@ Enter information for [IDF (Investigation Description Format)](/gea/metadata-e.h
 [Example IDF](/gea/example-e.html#idf).
 
   - Protocol: Pre-checked protocols are mandatory.
-  - Publication: Describe associated publications by PubMed ID or DOI. For unpublished manuscript, please [inform us](/contact-e.html) the ID after assignment.
+  - Publication: Describe associated publications by PubMed ID or DOI. For unpublished manuscript, please [inform us](/contact-ddbj-e.html) the ID after assignment.
   - Data File Type: Processed data files are required for sequencing experiment submission. [Accepted Data Files Formats for sequencing experiment](/gea/datafile-e.html#seq_data). We strongly recommend to submitting processed data file per sample.
 
 {::nomarkdown}
@@ -385,28 +431,28 @@ The validator checks submitted IDF and SDRF files according to the [validation r
 </thead>
 <tbody>
 <tr>
-<td><a href="/ddbj/index-e.html">Annotated sequence database</a></td>
-<td><a href="/ddbj/updt-form-e.html">Request updates from web form</a></td>
+<td><a href="/ddbj/index.html">Annotated sequence database</a></td>
+<td><a href="/ddbj/update-form-e.html">Request updates from web form</a></td>
 </tr>
 <tr>
 <td>Sequence Read Archive (DRA)</td>
 <td><a href="https://ddbj.nig.ac.jp/D-way/">Login D-way and update metadata</a><br />
-<a href="/contact-e.html">To add or withdraw sequencing data, request updates from web form</a></td>
+<a href="/contact-ddbj-e.html">To add or withdraw sequencing data, request updates from web form</a></td>
 </tr>
 <tr>
 <td>Genomic Expression Archive (GEA)</td>
-<td><a href="/contact-e.html">Request updates from web form</a></td>
+<td><a href="/contact-ddbj-e.html">Request updates from web form</a></td>
 </tr>
 <tr>
 <td>BioProject/BioSample</td>
-<td><a href="/contact-e.html">Request updates from web form</a></td>
+<td><a href="/contact-ddbj-e.html">Request updates from web form</a></td>
 </tr>
 </tbody>
 </table>
 
 ### Withdraw archived objects <a name="withdraw-archived-objects"></a>
 
-To withdrawing archived Experiment, please [contact us](/contact-e.html).
+To withdrawing archived Experiment, please [contact us](/contact-ddbj-e.html).
 
 ## Supplement: MD5<a name="supplement-md5"></a> 
 

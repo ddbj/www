@@ -1,0 +1,48 @@
+COMMON	DIVISION		division	TSA
+	KEYWORD		keyword	TSA
+			keyword	Transcriptome Shotgun Assembly
+	DBLINK		project	PRJDB43210
+			biosample	SAMD80000000
+	SUBMITTER		contact	Hanako Mishima
+			ab_name	Mishima,H.
+			ab_name	Yamada,T.
+			email	mishima@ddbj.nig.ac.jp
+			phone	81-55-981-6853
+			fax	81-55-981-6849
+			institute	National Institute of Genetics
+			department	DNA Data Bank of Japan
+			country	Japan
+			state	Shizuoka
+			city	Mishima
+			street	Yata 1111
+			zip	411-8540
+	REFERENCE		ab_name	Mishima,H.
+			ab_name	Yamada,T.
+			title	Glyceraldehyde-3-phosphate dehydrogenase of human
+			status	Unpublished
+			year	2017
+	DATE		hold_date	20191130
+FA01	PRIMARY_CONTIG	1..598	entry	ZZ000004.1
+			primary_bases	2..599
+	PRIMARY_CONTIG	1..669	entry	ZZ000005.1
+			primary_bases	11..679
+	PRIMARY_CONTIG	2..596	entry	ZZ000006.0
+			primary_bases	1..595
+	PRIMARY_CONTIG	2..575	entry	ZZ000007.1
+			primary_bases	1..574
+	PRIMARY_CONTIG	5..676	entry	ZZ000008.1
+			primary_bases	1..672
+	PRIMARY_CONTIG	6..725	entry	ZZ000009.1
+			primary_bases	1..720
+	PRIMARY_CONTIG	59..369	entry	ZZ000010.1
+			primary_bases	13..322
+	PRIMARY_CONTIG	605..800	entry	ZZ000011.1
+			primary_bases	1..196
+			complement	
+	source	1..E	organism	Homo sapiens
+			mol_type	mRNA
+			tissue_type	liver
+			submitter_seqid	est_FA01
+	CDS	73..669	gene	GAPD
+			product	glyceraldehyde-3-phosphate dehydrogenase
+			codon_start	1

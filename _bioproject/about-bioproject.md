@@ -3,12 +3,35 @@ layout: indexed_content
 title: BioProject について
 pathname: about-bioproject
 category: bioproject
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /bioproject/index.html
+  - id: handbook
+    title: Handbook
+    url: /bioproject/submission.html
+  - id: faq
+    title: FAQ
+    url: /faq/ja/index.html
+  - id: search
+    title: Search
+    url: http://ddbj.nig.ac.jp/BPSearch/
+  - id: downloads
+    title: Downloads
+    url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/bioproject
+    children:
+      - title: XML Schema
+        url: https://github.com/ddbj/pub/tree/master/docs/bioproject/xsd
+  - id: about bioProject
+    title: About BioProject
+    url: /bioproject/about-bioproject.html
 lang: ja
 ---
 
 ## 連絡先 <a name="contact"></a>
 
-[メッセージフォーム](/contact.html)よりご連絡ください。
+[メッセージフォーム](/contact-ddbj.html)よりご連絡ください。
 
 {::options parse_block_html="true" /}
 <address>
@@ -19,4 +42,4 @@ FAX : 055-981-6849
 
 </address>
 
-[DDBJ サービスへの問い合わせ](/contact.html#to-ddbj)
+[DDBJ サービスへの問い合わせ](/contact-ddbj.html#to-ddbj)

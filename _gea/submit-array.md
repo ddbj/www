@@ -3,6 +3,52 @@ layout: indexed_content
 title: Submit microarray experiment
 pathname: submit-array
 category: gea
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /gea/index.html
+  - id: submission overview
+    title: Submission Overview
+    url: /gea/overview.html
+    children:
+      - title: Submit microarray experiment
+        url: /gea/submit-array.html
+      - title: Submit sequencing experiment
+        url: /gea/submit-sequence.html
+      - title: Metadata
+        url: /gea/metadata.html
+      - title: Data File
+        url: /gea/datafile.html
+      - title: Validation
+        url: /gea/validation.html
+      - title: Single-cell submission guide
+        url: /gea/single-cell.html
+      - title: Example
+        url: /gea/example.html
+      - title: Array Design
+        url: /gea/adf.html
+      - title: Data matrix
+        url: /gea/matrix.html
+      - title: Reviewer Access
+        url: /gea/reviewer-access.html
+  - id: faq
+    title: FAQ
+    url: /faq/ja/index.html
+  - id: search
+    title: Search (AOE)
+    url: http://aoe.dbcls.jp/
+    children:
+      - title: Search (ArrayExpress)
+        url: https://www.ebi.ac.uk/arrayexpress/browse.html
+      - title: RefEx
+        url: http://refex.dbcls.jp/
+  - id: downloads
+    title: Downloads
+    url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/gea
+  - id: about gea
+    title: About GEA
+    url: /gea/about-gea.html
 lang: ja
 ---
 
@@ -62,7 +108,7 @@ lang: ja
 
 GEA 登録インターフェースは二つのサンプルが一つの生データファイルにリンクしているタイプのtwo-colorワークフローのみをサポートしています([例を参照](/gea/example.html#sdrf_example2))。 IDF タブで dual-channel オプションが選択された場合、同時にハイブリダイズした二サンプルに由来する一つのデータファイルが提供されることを想定しています。いくつかの two-color マイクロアレイプラットフォームでは通常それぞれのチャンネルに対応した別々の生データファイルが生成されます。このようなケースでそれぞれのサンプルに一つのファイルを結びつけると検証処理でエラーになります。
 
-各チャンネルに対応した別々のファイルを登録する場合は [GEA チームに連絡](/contact.html)してください。
+各チャンネルに対応した別々のファイルを登録する場合は [GEA チームに連絡](/contact-ddbj.html)してください。
 
 [« 閉じる](javascript:void(0)){: .close-content-btn}
 </div>
@@ -73,7 +119,7 @@ GEA 登録インターフェースは二つのサンプルが一つの生デー�
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Single-cell sequencing experiment</a></h4>
 <div class="accordion-content">
 
-[ArrayExpress Single-cell submissionguide](https://www.ebi.ac.uk/arrayexpress/help/single-cell_submission_guide.html) を参照してください。 spike-in やデータ解析に必要な追加ファイルを登録する場合は [GEA チームに連絡](/contact.html)してください。
+[ArrayExpress Single-cell submissionguide](https://www.ebi.ac.uk/arrayexpress/help/single-cell_submission_guide.html) を参照してください。 spike-in やデータ解析に必要な追加ファイルを登録する場合は [GEA チームに連絡](/contact-ddbj.html)してください。
 
 [« 閉じる](javascript:void(0)){: .close-content-btn}
 </div>
@@ -85,7 +131,7 @@ GEA 登録インターフェースは二つのサンプルが一つの生デー�
 <div class="accordion-content">
 
 GEA では一つの登録に異なる種類のテクノロジー（マイクロアレイとシークエンシング）を含めることはできないため登録を分ける必要があります。間違いを防ぐためそれぞれの登録には同じ研究に属していても明確に区別できるタイトルを付けてください。
-一つの登録に異なるアレイデザインを含めることは可能なので、このような場合は [GEA チームに連絡](/contact.html)してください。
+一つの登録に異なるアレイデザインを含めることは可能なので、このような場合は [GEA チームに連絡](/contact-ddbj.html)してください。
 
 [« 閉じる](javascript:void(0)){: .close-content-btn}
 </div>
@@ -290,7 +336,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 自身のアカウントで登録済みのBioProjectを一つ選択します。 BioProject が未登録の場合は [BioProject登録サイト](/bioproject/submission.html#bioproject-submission)でプロジェクトを登録します。
 
-他のアカウントで登録された BioProject を参照したい場合は [GEA チームに連絡](/contact.html)します。
+他のアカウントで登録された BioProject を参照したい場合は [GEA チームに連絡](/contact-ddbj.html)します。
 
 {::nomarkdown}
 {% include image.html url="books/gea-bp.jpg" caption="GEA 登録で使う BioProject を一つ選択します" class="w550" %}
@@ -300,7 +346,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 自身のアカウントで登録済みの BioSample を選択します。 BioSample が未登録の場合は [BioSample登録サイト](/biosample/submission.html#biosample-submission)でサンプルを登録します。
 
-他のアカウントで登録された BioSample を参照したい場合は [GEA チームに連絡](/contact.html)します。
+他のアカウントで登録された BioSample を参照したい場合は [GEA チームに連絡](/contact-ddbj.html)します。
 
 {::nomarkdown}
 {% include image.html url="books/gea-bs.jpg" caption="GEA 登録で使うBioSampleを選択します" class="w550" %}
@@ -313,7 +359,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 [IDFの例](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=0)
 
   - Protocol: チェック済みのプロトコールは必須です
-  - Publication: 関連する文献を PubMed ID もしくは DOI で指定します。未公表の文献についてはIDが発行された後に[お知らせください](/contact.html)。
+  - Publication: 関連する文献を PubMed ID もしくは DOI で指定します。未公表の文献についてはIDが発行された後に[お知らせください](/contact-ddbj.html)。
   - Array Design: [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA にアレイデザインが登録されている場合は "A-XXXX-n" のアクセッション番号を記入します。アレイデザインが未登録の場合は GEA 登録用ディレクトリにアレイデザインファイルをアップロードして [新規アレイデザインを登録](/gea/adf.html) します。
   - Data File Type: マイクロアレイ実験の場合は生データと解析済みデータが必須です。サンプル毎の生データ・解析済みデータファイルの登録を強く推奨します[マイクロアレイ実験に登録可能なファイル形式](/gea/datafile.html#array_data)。
 
@@ -417,24 +463,24 @@ Validatorは[validation rule](/gea/validation.html)に従ってメタデータ�
 </thead>
 <tbody>
 <td><a href="/ddbj/index.html">Annotated sequence database</a></td>
-<td><a href="/ddbj/updt-form.html">ウェブフォームから依頼</a></td>
+<td><a href="/ddbj/update-form.html">ウェブフォームから依頼</a></td>
 <tr class="even">
 <td>Sequence Read Archive(DRA)</td>
 <td><a href="https://ddbj.nig.ac.jp/D-way/">D-way にログインして登録者自身で更新</a><br />
-<a href="/contact.html">(配列データの追加や削除はウェブフォームから依頼)</a></td>
+<a href="/contact-ddbj.html">(配列データの追加や削除はウェブフォームから依頼)</a></td>
 </tr>
 <td>Genomic Expression Archive(GEA)</td>
-<td><a href="/contact.html">ウェブフォームから依頼</a></td>
+<td><a href="/contact-ddbj.html">ウェブフォームから依頼</a></td>
 <tr class="even">
 <td>BioProject/BioSample</td>
-<td><a href="/contact.html">ウェブフォームから依頼</a></td>
+<td><a href="/contact-ddbj.html">ウェブフォームから依頼</a></td>
 </tr>
 </tbody>
 </table>
 
 ### アーカイブされた experiment の削除 <a name="withdraw-archived-objects"></a>
 
-アーカイブされた Experiment を削除する場合は [GEA チームに連絡](/contact.html)します。
+アーカイブされた Experiment を削除する場合は [GEA チームに連絡](/contact-ddbj.html)します。
 
 ## 補足: MD5値<a name="supplement-md5"></a> 
 

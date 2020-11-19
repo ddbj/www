@@ -6,7 +6,7 @@ category: _activities
 lang: en
 related_pages:
   - title: DDBJ Publications Archive
-    url: /activities/pub-archives-e.html
+    url: /activities/archives-e.html
   - title: DDBJ staff papers (2009-)
     url: /activities/index-e.html
   - title: DDBJ staff presentations (2009-)
@@ -20,7 +20,7 @@ related_pages:
   - title: DDBJ Annual Reports
     url: /activities/index-e.html
   - title: DDBJ Mail Magazine
-    url: /activities/subscribe-e.html
+    url: /subscribe-ddbj-e.html
 ---
 
 Quote from Mail Magazine : No.62&63 (Sep.02,2011) ～ No.71&72
@@ -120,7 +120,7 @@ organization at next column.
 
 ### 1. Introduction
 
-[In previous column](/column/patent-e.html#1), I introduced about patent
+[In previous column](/activities/patent-e.html#1), I introduced about patent
 data for Japan Patent Office (JPO). In this column, I would like to
 introduce about patent data of Korean Intellectual Property Office
 (KIPO) and data search service in DDBJ.  
@@ -244,8 +244,8 @@ At next column, I will introduce about the structure of DDBJ Flat Files
 ### 1. Introduction
 
 I introduced about patent data of Japan Patent Office (JPO) in [first
-column](/column/patent-e.html#1) and Korean Intellectual Property Office
-(KIPO) in [second column](/column/patent-e.html#2). In this time, I
+column](/activities/patent-e.html#1) and Korean Intellectual Property Office
+(KIPO) in [second column](/activities/patent-e.html#2). In this time, I
 would like to explain about Flat File (FF) structure for JPO nucleotide
 and amino acid sequence data as two parts. I will introduce about JPO
 data property, summary of FF structure and relationship between patent

@@ -19,7 +19,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn041224"><a href="#wn041224">DDBJ Rel. 60 Completed</a></h2>
   <div class="news_date">December 24,2004</div>
-  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public.We completed DDBJ Release 64 in Dec. 24, 2004. DDBJ Release 60 consists of 40,583,945 entries, and the number of bases reached 44,416,752,273.<dd><a href="/download-e.html">FTP site for periodical release and new data download</a></dd></dd></div>
+  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public.We completed DDBJ Release 64 in Dec. 24, 2004. DDBJ Release 60 consists of 40,583,945 entries, and the number of bases reached 44,416,752,273.<dd><a href="/services/index-e.html">FTP site for periodical release and new data download</a></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -172,7 +172,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn041025"><a href="#wn041025">Statistics [Top 30 organisms according to the total number of nucleotides] Update</a></h2>
   <div class="news_date">October 25,2004</div>
-  <div class="news_content"><dd><a href="../breakdown_stats/top30/top30.html">Top 30 organisms according to the total number of nucleotides</a> (- DDBJ rel.59) in <a href="../statistics-e.html">DDBJ statistics</a> was updated with releasing DDBJ Rel. 59.<i>Mus musculus molossinus</i> (a species of mouse) ranked in 21th, it was 3131th at previous release.Click the organism name to view the graph of change.</dd></div>
+  <div class="news_content"><dd>Top 30 organisms according to the total number of nucleotides (- DDBJ rel.59) in <a href="../statistics/index-e.html">DDBJ statistics</a> was updated with releasing DDBJ Rel. 59.<i>Mus musculus molossinus</i> (a species of mouse) ranked in 21th, it was 3131th at previous release.Click the organism name to view the graph of change.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -235,7 +235,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn041013_2"><a href="#wn041013_2">DAD rel. 29 was released</a></h2>
   <div class="news_date">October 13,2004</div>
-  <div class="news_content"><dd>DDBJ amino acid database (DAD) Release 29 was released on Oct. 13, 2004 at DDBJ.  DAD Release consists of 1,990,271 entries,and the total number of residues reached 612,044,833. <dd><a href="/download-e.html">FTP site for DB download</a></dd></dd></div>
+  <div class="news_content"><dd>DDBJ amino acid database (DAD) Release 29 was released on Oct. 13, 2004 at DDBJ.  DAD Release consists of 1,990,271 entries,and the total number of residues reached 612,044,833. <dd><a href="/services/index-e.html">FTP site for DB download</a></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -271,7 +271,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040930"><a href="#wn040930">DDBJ Rel. 59 Completed</a></h2>
   <div class="news_date">September 30,2004</div>
-  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public.We completed DDBJ Release 59 in Sep. 30, 2004.DDBJ Release 59 consists of 37,926,117 entries, and the number of bases reached 42,245,956,937.<dd><a href="/download-e.html">FTP site for periodical release and new data download</a></dd></dd></div>
+  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public.We completed DDBJ Release 59 in Sep. 30, 2004.DDBJ Release 59 consists of 37,926,117 entries, and the number of bases reached 42,245,956,937.<dd><a href="/services/index-e.html">FTP site for periodical release and new data download</a></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -280,7 +280,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040927"><a href="#wn040927">Genome data were added to GIB</a></h2>
   <div class="news_date">September 27,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Mannheimia succiniciproducens MBEL55E</i> and <i>Legionella pneumophila subsp. pneumophila Philadelphia 1</i> were released, we incorporated them to GIB, and now you can search those data.<dd><small>Reference: </small><dd><small><i>Mannheimia succiniciproducens MBEL55E</i> (Joint Genome Institute): The genome sequence of the capnophilic rumen bacterium Mannheimia succiniciproducens, Nat.  Biotechnol. Sep 19 (2004)</small><dd><small><i>Legionella pneumophila subsp. pneumophila Philadelphia 1</i> (Columbia University): The Genomic Sequence of the Accidental Pathogen Legionella pneumophila, Science 305 (5692), 1966-1968 (2004)</small></dd></dd></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Mannheimia succiniciproducens MBEL55E</i> and <i>Legionella pneumophila subsp. pneumophila Philadelphia 1</i> were released, we incorporated them to GIB, and now you can search those data.<dd><small>Reference: </small><dd><small><i>Mannheimia succiniciproducens MBEL55E</i> (Joint Genome Institute): The genome sequence of the capnophilic rumen bacterium Mannheimia succiniciproducens, Nat.  Biotechnol. Sep 19 (2004)</small><dd><small><i>Legionella pneumophila subsp. pneumophila Philadelphia 1</i> (Columbia University): The Genomic Sequence of the Accidental Pathogen Legionella pneumophila, Science 305 (5692), 1966-1968 (2004)</small></dd></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -289,7 +289,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040924"><a href="#wn040924">Genome data was added to GIB</a></h2>
   <div class="news_date">September 24,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Burkholderia mallei ATCC 23344</i> was released by TIGR, we incorporated it to GIB, and now you can search those data.<dd><small>Reference: Structural flexibility in the Burkholderia mallei genome, Proc. Natl. Acad. Sci. U.S.A. 101 (39), 14247-14251 (2004)</small></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Burkholderia mallei ATCC 23344</i> was released by TIGR, we incorporated it to GIB, and now you can search those data.<dd><small>Reference: Structural flexibility in the Burkholderia mallei genome, Proc. Natl. Acad. Sci. U.S.A. 101 (39), 14247-14251 (2004)</small></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -298,7 +298,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040917"><a href="#wn040917">Genome data were added to GIB</a></h2>
   <div class="news_date">September 17,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Bacillus cereus ZK</i> and <i>Bacillus licheniformis ATCC 14580</i> were released, we incorporated them to GIB, and now you can search those data.<dd><small>Reference: </small><dd><small><i>Bacillus cereus ZK</i> (Joint Genome Institute): Complete genome sequence of Bacillus cereus ZK, Unpublished.</small><dd><small><i>Bacillus licheniformis ATCC 14580</i> (Novozymes Biotech Inc.):<br>    Complete genome sequence of the industrial bacterium Bacillus licheniformis and comparisons with closely related Bacillus species, Genome Biol. 5, R77 (2004)</small></dd></dd></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Bacillus cereus ZK</i> and <i>Bacillus licheniformis ATCC 14580</i> were released, we incorporated them to GIB, and now you can search those data.<dd><small>Reference: </small><dd><small><i>Bacillus cereus ZK</i> (Joint Genome Institute): Complete genome sequence of Bacillus cereus ZK, Unpublished.</small><dd><small><i>Bacillus licheniformis ATCC 14580</i> (Novozymes Biotech Inc.):<br>    Complete genome sequence of the industrial bacterium Bacillus licheniformis and comparisons with closely related Bacillus species, Genome Biol. 5, R77 (2004)</small></dd></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -325,7 +325,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040902"><a href="#wn040902">Genome data was added to GIB</a></h2>
   <div class="news_date">September 02,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Symbiobacterium  thermophilum IAM1486</i> was released by Kitasato Institute for Life Sciences, we incorporated it to GIB, and now you can search those data.<dd><small>Reference: Complete genome sequence of an uncultured bacterium Symbiobacterium thermophilum, Unpublished (2004)</small></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Symbiobacterium  thermophilum IAM1486</i> was released by Kitasato Institute for Life Sciences, we incorporated it to GIB, and now you can search those data.<dd><small>Reference: Complete genome sequence of an uncultured bacterium Symbiobacterium thermophilum, Unpublished (2004)</small></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -334,7 +334,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040830"><a href="#wn040830">Genome data were added to GIB</a></h2>
   <div class="news_date">August 30,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Borrelia garinii PBi</i> and <i>Yersinia pseudotuberculosis IP32953</i> were released, we incorporated them to GIB, and now you can search those data.<dd><small>Reference: </small><dd><small><i>Borrelia garinii PBi</i> (Institute of Molecular Biotechnology, Beutenbergstr): Comparative analysis of the Borrelia garinii genome, Unpublished.</small><dd><small><i>Yersinia pseudotuberculosis IP32953</i> (Oak Ridge National Laboratory): Insights into the genome evolution of Yersinia pestis through whole genome comparison with Yersinia pseudotuberculosis, Unpublished.</small></dd></dd></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Borrelia garinii PBi</i> and <i>Yersinia pseudotuberculosis IP32953</i> were released, we incorporated them to GIB, and now you can search those data.<dd><small>Reference: </small><dd><small><i>Borrelia garinii PBi</i> (Institute of Molecular Biotechnology, Beutenbergstr): Comparative analysis of the Borrelia garinii genome, Unpublished.</small><dd><small><i>Yersinia pseudotuberculosis IP32953</i> (Oak Ridge National Laboratory): Insights into the genome evolution of Yersinia pestis through whole genome comparison with Yersinia pseudotuberculosis, Unpublished.</small></dd></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -343,7 +343,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040823"><a href="#wn040823">Genome data was added to GIB</a></h2>
   <div class="news_date">August 23,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Rickettsia typhi wilmington</i> was released by Human Genome Sequencing Center, we incorporated it to GIB, and now you can search those data.<dd><small>Reference: Complete Genome Sequence of Rickettsia typhi and Comparison with Sequences of Other Rickettsiae, J. Bacteriol. 186 (17), 5842-5855 (2004)</small></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Rickettsia typhi wilmington</i> was released by Human Genome Sequencing Center, we incorporated it to GIB, and now you can search those data.<dd><small>Reference: Complete Genome Sequence of Rickettsia typhi and Comparison with Sequences of Other Rickettsiae, J. Bacteriol. 186 (17), 5842-5855 (2004)</small></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -352,7 +352,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040820"><a href="#wn040820">Genome data was added to GIB</a></h2>
   <div class="news_date">August 20,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Desulfotalea psychrophila LSv54</i> was released by e.gene Biotechnologie GmbH, we incorporated it to GIB, and now you can search those data.<dd><small>Reference: The genome of Desulfotalea psychrophila, a sulphate-reducing bacterium from permanently cold Arctic sediments.Environ Microbiol. 2004 Sep 6(9) 887-902</small></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Desulfotalea psychrophila LSv54</i> was released by e.gene Biotechnologie GmbH, we incorporated it to GIB, and now you can search those data.<dd><small>Reference: The genome of Desulfotalea psychrophila, a sulphate-reducing bacterium from permanently cold Arctic sediments.Environ Microbiol. 2004 Sep 6(9) 887-902</small></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -379,7 +379,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040806"><a href="#wn040806">Genome data was added to GIB</a></h2>
   <div class="news_date">August 06,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Leifsonia xyli subsp. xyli CTCB07</i> was released by University of Campinas, we incorporated it to GIB, and now you can search those data.<dd><small>Reference: The genome sequence of the Gram-positive sugarcane pathogen Leifsonia xyli subsp. xyli, Mol. Plant Microbe Interact. 17 (8), 827-836 (2004)</small></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Leifsonia xyli subsp. xyli CTCB07</i> was released by University of Campinas, we incorporated it to GIB, and now you can search those data.<dd><small>Reference: The genome sequence of the Gram-positive sugarcane pathogen Leifsonia xyli subsp. xyli, Mol. Plant Microbe Interact. 17 (8), 827-836 (2004)</small></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -388,7 +388,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040805"><a href="#wn040805">Genome data was added to GIB</a></h2>
   <div class="news_date">August 05,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Streptococcus pyogenes MGAS10394</i> was released by NIH, we incorporated it to GIB, and now you can search those data.<dd><small>Reference: Progress toward Characterization of the Group A Streptococcus Metagenome: Complete Genome Sequence of a Macrolide-Resistant Serotype M6 Strain, J. Infect. Dis. 190 (4), 727-738 (2004)</small></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Streptococcus pyogenes MGAS10394</i> was released by NIH, we incorporated it to GIB, and now you can search those data.<dd><small>Reference: Progress toward Characterization of the Group A Streptococcus Metagenome: Complete Genome Sequence of a Macrolide-Resistant Serotype M6 Strain, J. Infect. Dis. 190 (4), 727-738 (2004)</small></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -397,7 +397,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040803"><a href="#wn040803">Genome data was added to GIB</a></h2>
   <div class="news_date">August 03,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Propionibacterium acnes KPA171202</i> was released by Goettingen Genomics Laboratory, we incorporated it to GIB, and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Propionibacterium acnes KPA171202</i> was released by Goettingen Genomics Laboratory, we incorporated it to GIB, and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -424,7 +424,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040727"><a href="#wn040727">S&amp;W SEARCH service reopening</a></h2>
   <div class="news_date">July 27,2004</div>
-  <div class="news_content"><dd>We resumed <a href="/search/swsearch-e.html">S&amp;W SEARCH</a> service on Jul. 26. The request received between system troubles is performed in order. Thank you very much for your understanding and cooperation.</dd></div>
+  <div class="news_content"><dd>We resumed S&amp;W SEARCH service on Jul. 26. The request received between system troubles is performed in order. Thank you very much for your understanding and cooperation.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -433,7 +433,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040726"><a href="#wn040726">Statistics [Top 30 organisms according to the total number of nucleotides] Update</a></h2>
   <div class="news_date">July 26,2004</div>
-  <div class="news_content"><dd><a href="../breakdown_stats/top30/top30.html">Top 30 organisms according to the total number of nucleotides</a> (- DDBJ rel.58) in <a href="../statistics-e.html">DDBJ statistics</a> was updated in accordance with release of DDBJ Rel. 58.Click the organism name to view the graph of change.</dd></div>
+  <div class="news_content"><dd>Top 30 organisms according to the total number of nucleotides (- DDBJ rel.58) in <a href="../statistics/index-e.html">DDBJ statistics</a> was updated in accordance with release of DDBJ Rel. 58.Click the organism name to view the graph of change.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -442,7 +442,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040722"><a href="#wn040722">Genome data was added to GIB</a></h2>
   <div class="news_date">July 22,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of  <i>Mesoplasma florum L1</i> was released by MIT, we incorporated it to GIB, and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of  <i>Mesoplasma florum L1</i> was released by MIT, we incorporated it to GIB, and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -451,7 +451,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040716"><a href="#wn040716">The modification of file names for WGS data on the FTP site</a></h2>
   <div class="news_date">July 16,2004</div>
-  <div class="news_content"><dd>DDBJ/EMBL/GenBank are collecting and maintaining the sequences from the proceeding genome projects as <a href="/ddbj/wgs-e.html">WGS</a> database. DDBJ provides the data on the page, <a href="/download-e.html">Anonymous FTP of the DDBJ</a>, at the site, WGS data.<br><dd>Up to now, DDBJ named WGS data files at the FTP site after their organism names. However, since the number of WGS projects is significantly increasing, it is inconvenient to maintain the correspondence between files and projects. From now on, DDBJ has modified the naming convention and has renamed the WGS data files after the prefixes of their accession numbers. You can see the organism name corresponding to each file in the  summary table.It will start from 14:00 on Jul. 20.</dd></dd></div>
+  <div class="news_content"><dd>DDBJ/EMBL/GenBank are collecting and maintaining the sequences from the proceeding genome projects as <a href="/ddbj/wgs-e.html">WGS</a> database. DDBJ provides the data on the page, <a href="/services/index-e.html">Anonymous FTP of the DDBJ</a>, at the site, WGS data.<br><dd>Up to now, DDBJ named WGS data files at the FTP site after their organism names. However, since the number of WGS projects is significantly increasing, it is inconvenient to maintain the correspondence between files and projects. From now on, DDBJ has modified the naming convention and has renamed the WGS data files after the prefixes of their accession numbers. You can see the organism name corresponding to each file in the  summary table.It will start from 14:00 on Jul. 20.</dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -460,7 +460,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040716_2"><a href="#wn040716_2">SWISS-PROT Rel. 43 was released</a></h2>
   <div class="news_date">July 16,2004</div>
-  <div class="news_content"><dd>SWISS-PROT Rel. 43 was released on Jul. 16, 2004 at DDBJ. SWISS-PROT Rel. 43 consists of 146,720 entries, and the total number of residues reached 54,093,154.<br><dd><a href="/download-e.html">FTP site for periodical release and new data download</a></dd></dd></div>
+  <div class="news_content"><dd>SWISS-PROT Rel. 43 was released on Jul. 16, 2004 at DDBJ. SWISS-PROT Rel. 43 consists of 146,720 entries, and the total number of residues reached 54,093,154.<br><dd><a href="/services/index-e.html">FTP site for periodical release and new data download</a></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -469,7 +469,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040715"><a href="#wn040715">Inconsistency of some entries of DDBJ Release 58</a></h2>
   <div class="news_date">July 15,2004</div>
-  <div class="news_content"><dd>Inconsistency was found in some entries of the latest DDBJ Release 58 (released on June 30, 2004).<br><dd><b>Nature of inconsistency:</b><br>    Description of "BASE COUNT" line was not included in some data.<br><dd><b>Measures implemented:</b><br>    Defected data were corrected, and released again on July 9.<br><dd><b><a href="/files/pdf/040709.html">List of corrected files:</a></b><br><dd>We DDBJ regret our mistake.<br><dd><pre class="highlight"><code>[Note on "BASE COUNT" line]<br>  Although GenBank had dropped the BASE COUNT line from their flat file format from GenBank Release 138 (Oct. 2003), we DDBJ still keep the BASE COUNT line in DDBJ flat file format, because we believe that this information is useful, such as computing the GC contents.</code></pre></dd></dd></dd></dd></dd></dd></div>
+  <div class="news_content"><dd>Inconsistency was found in some entries of the latest DDBJ Release 58 (released on June 30, 2004).<br><dd><b>Nature of inconsistency:</b><br>    Description of "BASE COUNT" line was not included in some data.<br><dd><b>Measures implemented:</b><br>    Defected data were corrected, and released again on July 9.<br><dd><b><a href="{{ site.baseurl }}/assets/files/pdf/040709.html">List of corrected files:</a></b><br><dd>We DDBJ regret our mistake.<br><dd><pre class="highlight"><code>[Note on "BASE COUNT" line]<br>  Although GenBank had dropped the BASE COUNT line from their flat file format from GenBank Release 138 (Oct. 2003), we DDBJ still keep the BASE COUNT line in DDBJ flat file format, because we believe that this information is useful, such as computing the GC contents.</code></pre></dd></dd></dd></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -487,7 +487,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040713"><a href="#wn040713">Genome data were added to GIB</a></h2>
   <div class="news_date">July 13,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.Because the following two genome sequence data were released, we incorporated it to GIB, and now you can search those data.<br><dd><small><i>Erwinia carotovora subsp. atroseptica SCRI1043</i> (Sanger Institute): <br>The genome sequence of the enterobacterial phytopathogen Erwinia carotovora subsp. atroseptica SCRI1043 and functional genomic identification of novel virulence factors, Unpublished.</small><br><dd><small><i>Acinetobacter sp. ADP1</i> (Genoscope): <br> Unique features revealed by the genome sequence of Acinetobacter sp. ADP1, a versatile and naturally transformation competent bacterium, Unpublished.</small></dd></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.Because the following two genome sequence data were released, we incorporated it to GIB, and now you can search those data.<br><dd><small><i>Erwinia carotovora subsp. atroseptica SCRI1043</i> (Sanger Institute): <br>The genome sequence of the enterobacterial phytopathogen Erwinia carotovora subsp. atroseptica SCRI1043 and functional genomic identification of novel virulence factors, Unpublished.</small><br><dd><small><i>Acinetobacter sp. ADP1</i> (Genoscope): <br> Unique features revealed by the genome sequence of Acinetobacter sp. ADP1, a versatile and naturally transformation competent bacterium, Unpublished.</small></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -514,7 +514,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040702"><a href="#wn040702">Genome data was added to GIB</a></h2>
   <div class="news_date">July 02,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences. Because the following two genome sequence data were released, we incorporated it to GIB, and now you can search those data.<br><dd><small><i>Bacillus thuringiensis serovar konkukian str. 97-27</i> (Joint Genome Institute): <br>Complete genome sequence of Bacillus thuringiensis 97-27, Unpublished</small><br><dd><small><i>Bacillus anthracis str. Sterne</i> (Joint Genome Institute): <br><br>    Complete genome sequence of Bacillus anthracis Sterne, Unpublished</small></dd></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences. Because the following two genome sequence data were released, we incorporated it to GIB, and now you can search those data.<br><dd><small><i>Bacillus thuringiensis serovar konkukian str. 97-27</i> (Joint Genome Institute): <br>Complete genome sequence of Bacillus thuringiensis 97-27, Unpublished</small><br><dd><small><i>Bacillus anthracis str. Sterne</i> (Joint Genome Institute): <br><br>    Complete genome sequence of Bacillus anthracis Sterne, Unpublished</small></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -523,7 +523,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040701"><a href="#wn040701">Genome data was added to GIB</a></h2>
   <div class="news_date">July 01,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.Because the following four genome sequence data were released, we incorporated it to GIB, and now you can search those data.<br><dd><small><i>Staphylococcus aureus subsp. aureus MRSA252</i> (The Sanger Institute):<br>Complete genomes of two clinical Staphylococcus aureus strains: evidence for the rapid evolution of virulence and drug resistance, Proc. Natl. Acad. Sci. U.S.A. 101(26), 9786-9791(2004).</small><br><dd><small><i>Staphylococcus aureus subsp. aureus MSSA476</i> (The Sanger Institute):<br>Complete genomes of two clinical Staphylococcus aureus strains: evidence for the rapid evolution of virulence and drug resistance,Proc. Natl. Acad. Sci. U.S.A. 101(26), 9786-9791(2004)</small><br><dd><small><i>Bartonella henselae Houston-1</i> (Uppsala University):<br>The louse-borne human pathogen Bartonella quintana is a genomic derivative of the zoonotic agent Bartonella henselae, Proc. Natl. Acad. Sci. U.S.A. 101, 9716-9721 (2004) </small><br><dd><small><i>Bartonella quintana Toulouse</i> (Uppsala Universit):<br>The louse-borne human pathogen Bartonella quintana is a genomic derivative of the zoonotic agent Bartonella henselae, Proc. Natl. Acad. Sci. U.S.A. 101, 9716-9721 (2004) </small></dd></dd></dd></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.Because the following four genome sequence data were released, we incorporated it to GIB, and now you can search those data.<br><dd><small><i>Staphylococcus aureus subsp. aureus MRSA252</i> (The Sanger Institute):<br>Complete genomes of two clinical Staphylococcus aureus strains: evidence for the rapid evolution of virulence and drug resistance, Proc. Natl. Acad. Sci. U.S.A. 101(26), 9786-9791(2004).</small><br><dd><small><i>Staphylococcus aureus subsp. aureus MSSA476</i> (The Sanger Institute):<br>Complete genomes of two clinical Staphylococcus aureus strains: evidence for the rapid evolution of virulence and drug resistance,Proc. Natl. Acad. Sci. U.S.A. 101(26), 9786-9791(2004)</small><br><dd><small><i>Bartonella henselae Houston-1</i> (Uppsala University):<br>The louse-borne human pathogen Bartonella quintana is a genomic derivative of the zoonotic agent Bartonella henselae, Proc. Natl. Acad. Sci. U.S.A. 101, 9716-9721 (2004) </small><br><dd><small><i>Bartonella quintana Toulouse</i> (Uppsala Universit):<br>The louse-borne human pathogen Bartonella quintana is a genomic derivative of the zoonotic agent Bartonella henselae, Proc. Natl. Acad. Sci. U.S.A. 101, 9716-9721 (2004) </small></dd></dd></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -532,7 +532,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040630"><a href="#wn040630">DDBJ Rel. 58 Completed</a></h2>
   <div class="news_date">June 30,2004</div>
-  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public. We completed DDBJ Release 58 in Jun. 30, 2004.DDBJ Release 58 consists of 34,917,581 entries, and the number of bases reached 39,812,635,108.<br><dd><a href="/download-e.html">FTP site for periodical release and new data download</a></dd></dd></div>
+  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public. We completed DDBJ Release 58 in Jun. 30, 2004.DDBJ Release 58 consists of 34,917,581 entries, and the number of bases reached 39,812,635,108.<br><dd><a href="/services/index-e.html">FTP site for periodical release and new data download</a></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -577,7 +577,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040616"><a href="#wn040616">Genome data was added to GIB</a></h2>
   <div class="news_date">June 16,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Corynebacterium glutamicum ATCC 13032 (U.Bielefeld)</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Institute: University Bielefeld</small><br><dd><small>Reference: The complete Corynebacterium glutamicum ATCC 13032 genome sequence and its impact on the production of L-aspartate-derived amino acids and vitamins, J. Biotechnol. 104(1-3), 5-25(2003). </small></dd></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Corynebacterium glutamicum ATCC 13032 (U.Bielefeld)</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Institute: University Bielefeld</small><br><dd><small>Reference: The complete Corynebacterium glutamicum ATCC 13032 genome sequence and its impact on the production of L-aspartate-derived amino acids and vitamins, J. Biotechnol. 104(1-3), 5-25(2003). </small></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -595,7 +595,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040611"><a href="#wn040611">Genome data was added to GIB</a></h2>
   <div class="news_date">June 11,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.Because the genome sequence data of <i>Picrophilus torridus DSM 9790</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Institute: University of Goettingen</small><br><dd><small>Reference: Genome sequence of Picrophilus torridus and its implications for life around pH 0, Proc. Natl. Acad. Sci. U.S.A. 101, 9091-9096 (2004)</small></dd></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.Because the genome sequence data of <i>Picrophilus torridus DSM 9790</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Institute: University of Goettingen</small><br><dd><small>Reference: Genome sequence of Picrophilus torridus and its implications for life around pH 0, Proc. Natl. Acad. Sci. U.S.A. 101, 9091-9096 (2004)</small></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -622,7 +622,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040525"><a href="#wn040525">Mycoplasma mobile 163K was added to GIB</a></h2>
   <div class="news_date">May 25,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a>　provides an integrated search of Bacteria, Archaea, Eukaryota complete　genome sequences.Because the genome sequence data of <i>Mycoplasma mobile 163K</i>　was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Institute: Harvard Medical School</small></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a>　provides an integrated search of Bacteria, Archaea, Eukaryota complete　genome sequences.Because the genome sequence data of <i>Mycoplasma mobile 163K</i>　was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Institute: Harvard Medical School</small></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -631,7 +631,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040521"><a href="#wn040521">Bacillus anthracis str. Ames 0581 was added to GIB</a></h2>
   <div class="news_date">May 21,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a>　provides an integrated search of Bacteria, Archaea, Eukaryota complete　genome sequences. Because the genome sequence data of <i>Bacillus anthracis str. Ames 0581</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Institute: TIGR</small></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a>　provides an integrated search of Bacteria, Archaea, Eukaryota complete　genome sequences. Because the genome sequence data of <i>Bacillus anthracis str. Ames 0581</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Institute: TIGR</small></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -667,7 +667,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040507"><a href="#wn040507">Data were added to GIB</a></h2>
   <div class="news_date">May 07,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences. Because the genome sequence data of <i>Parachlamydia sp. UWE25</i> (by University of Vienna), <i>Desulfovibrio vulgaris Hildenborough</i>   <i>Photobacterium profundum ss9</i> (by TIGR),  and <i>Listeria monocytogenes 4b F2365</i> (by CRIBI) were released, we incorporated them to GIB, and now you can search those data.</dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences. Because the genome sequence data of <i>Parachlamydia sp. UWE25</i> (by University of Vienna), <i>Desulfovibrio vulgaris Hildenborough</i>   <i>Photobacterium profundum ss9</i> (by TIGR),  and <i>Listeria monocytogenes 4b F2365</i> (by CRIBI) were released, we incorporated them to GIB, and now you can search those data.</dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -721,7 +721,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040407"><a href="#wn040407">Thermus thermophilus HB27 was added to GIB</a></h2>
   <div class="news_date">April 07,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.Because the genome sequence data of <i>Thermus thermophilus HB27</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Institute: Goettingen Genomics Laboratory</small></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.Because the genome sequence data of <i>Thermus thermophilus HB27</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Institute: Goettingen Genomics Laboratory</small></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -748,7 +748,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040405_2"><a href="#wn040405_2">Statistics [Top 30 organisms according to the total number of nucleotides] Update</a></h2>
   <div class="news_date">April 05,2004</div>
-  <div class="news_content"><dd><a href="../breakdown_stats/top30/top30.html">Top 30 organisms according to the total number of nucleotides</a> (- DDBJ rel.57) in <a href="../statistics-e.html">DDBJ statistics</a> was updated in accordance with release of DDBJ Rel. 57.<br><dd><i>Xenopus tropicalis</i>¡Êa species of clawed frog) which was newly categorized at Rel.57 ranked in 20th.Click the organism name to view the graph of change.</dd></dd></div>
+  <div class="news_content"><dd><a href="../breakdown_stats/top30/top30.html">Top 30 organisms according to the total number of nucleotides</a> (- DDBJ rel.57) in <a href="../statistics/index-e.html">DDBJ statistics</a> was updated in accordance with release of DDBJ Rel. 57.<br><dd><i>Xenopus tropicalis</i>¡Êa species of clawed frog) which was newly categorized at Rel.57 ranked in 20th.Click the organism name to view the graph of change.</dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -766,7 +766,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040325"><a href="#wn040325">DAD rel. 27 was released</a></h2>
   <div class="news_date">March 25,2004</div>
-  <div class="news_content"><dd>DDBJ amino acid database (DAD) Release 27 was released on Mar. 25, 2004 at DDBJ.  DAD Release consists of 1,743,365 entries,and the total number of residues reached 534,642,804.<br><dd><a href="/download-e.html">FTP site for DB download</a></dd></dd></div>
+  <div class="news_content"><dd>DDBJ amino acid database (DAD) Release 27 was released on Mar. 25, 2004 at DDBJ.  DAD Release consists of 1,743,365 entries,and the total number of residues reached 534,642,804.<br><dd><a href="/services/index-e.html">FTP site for DB download</a></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -775,7 +775,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040325_2"><a href="#wn040325_2">Leptospira interrogans serovar Copenhageni str. Fiocruz L1-130 was added to GIB</a></h2>
   <div class="news_date">March 25,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.Because the genome sequence data of <i>Leptospira interrogans serovar Copenhageni str. Fiocruz L1-130</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Institute: Instituto Butantan</small></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.Because the genome sequence data of <i>Leptospira interrogans serovar Copenhageni str. Fiocruz L1-130</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Institute: Instituto Butantan</small></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -784,7 +784,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040323"><a href="#wn040323">DDBJ Rel. 57 Completed</a></h2>
   <div class="news_date">March 23,2004</div>
-  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public.We completed DDBJ Release 57 in Mar. 23, 2004.DDBJ Release 57 consists of 32,693,678 entries, and the number of bases reached 38,008,449,840.<br><dd><a href="/download-e.html">FTP site for periodical release and new data download</a></dd></dd></div>
+  <div class="news_content"><dd>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public.We completed DDBJ Release 57 in Mar. 23, 2004.DDBJ Release 57 consists of 32,693,678 entries, and the number of bases reached 38,008,449,840.<br><dd><a href="/services/index-e.html">FTP site for periodical release and new data download</a></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -802,7 +802,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040317"><a href="#wn040317">Yersinia pestis biovar Mediaevails str. 91001was added to GIB</a></h2>
   <div class="news_date">March 17,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Yersinia pestis biovar Mediaevails str. 91001</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Institute: The Institute of Microbiology and Epidemiology</small></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Yersinia pestis biovar Mediaevails str. 91001</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Institute: The Institute of Microbiology and Epidemiology</small></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -811,7 +811,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040305"><a href="#wn040305">Methanococcus maripaludis strain S2 was added to GIB</a></h2>
   <div class="news_date">March 05,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Methanococcus maripaludis strain S2</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Institute: University of Washington</small><br><dd><small>Reference: Complete genome sequence of the mesophilic<br>    hydrogenotrophic methanogen Methanococcus maripaludis, Unpublished.</small></dd></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Methanococcus maripaludis strain S2</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Institute: University of Washington</small><br><dd><small>Reference: Complete genome sequence of the mesophilic<br>    hydrogenotrophic methanogen Methanococcus maripaludis, Unpublished.</small></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -820,7 +820,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040227"><a href="#wn040227">Bacillus cereus ATCC 10987 was added to GIB</a></h2>
   <div class="news_date">February 27,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Bacillus cereus ATCC 10987</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Institute: TIGR</small><br><dd><small>Reference: The genome sequence of Bacillus cereus ATCC 10987 reveals metabolic adaptations and a large plasmid related to Bacillus anthracis pXO1.</small></dd></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Bacillus cereus ATCC 10987</i> was released, we incorporated it to GIB, and now you can search those data.<br><dd><small>Institute: TIGR</small><br><dd><small>Reference: The genome sequence of Bacillus cereus ATCC 10987 reveals metabolic adaptations and a large plasmid related to Bacillus anthracis pXO1.</small></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -856,7 +856,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040210"><a href="#wn040210">Data were added to GIB</a></h2>
   <div class="news_date">February 10,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences. Because the genome sequence data were released, we incorporated them to GIB, and now you can search those data.<br><dd><small><b>Org (Institutes):</b> Reference</small><br><dd><small><b><i>Lactobacillus johnsonii NCC 533</i> (Nestle):</b><br>    The genome sequence of the probiotic intestinal bacterium Lactobacillus johnsonii NCC 533, Proc. Natl. Acad. Sci. U.S.A. (2004) In press</small><br><dd><small><b><i>Treponema denticola ATCC 35405</i> (TIGR):</b><br>    Comparison of the genome of the oral pathogen, Treponema denticola, with other spirochete genomes, Unpublished </small><br><dd><small><b><i>Wolbachia endosymbiont of Drosophila melanogaster</i> (TIGR):</b></small><br><dd><small><b><i>Mycoplasma mycoides subsp. mycoides SC</i> (KTH):</b><br>    The genome sequence of Mycoplasma mycoides subsp. mycoides SC, type strain PG1T, the causative agent of contagious bovine pleuropneumonia (CBPP),Genome Res. 14, 221-227(2004).</small></dd></dd></dd></dd></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences. Because the genome sequence data were released, we incorporated them to GIB, and now you can search those data.<br><dd><small><b>Org (Institutes):</b> Reference</small><br><dd><small><b><i>Lactobacillus johnsonii NCC 533</i> (Nestle):</b><br>    The genome sequence of the probiotic intestinal bacterium Lactobacillus johnsonii NCC 533, Proc. Natl. Acad. Sci. U.S.A. (2004) In press</small><br><dd><small><b><i>Treponema denticola ATCC 35405</i> (TIGR):</b><br>    Comparison of the genome of the oral pathogen, Treponema denticola, with other spirochete genomes, Unpublished </small><br><dd><small><b><i>Wolbachia endosymbiont of Drosophila melanogaster</i> (TIGR):</b></small><br><dd><small><b><i>Mycoplasma mycoides subsp. mycoides SC</i> (KTH):</b><br>    The genome sequence of Mycoplasma mycoides subsp. mycoides SC, type strain PG1T, the causative agent of contagious bovine pleuropneumonia (CBPP),Genome Res. 14, 221-227(2004).</small></dd></dd></dd></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -865,7 +865,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040203"><a href="#wn040203">Data were added to GIB</a></h2>
   <div class="news_date">February 03,2004</div>
-  <div class="news_content"><dd><a href="/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Bdellovibrio bacteriovorus HD100</i> and <i>Mycobacterium avium subsp. paratuberculosis str. k10</i> were released, we incorporated them to GIB, and now you can search those data.<br><dd><small>References (Institutes): </small><br><dd><small><b><i>Bdellovibrio bacteriovorus HD100</i> (Max-Planck-Institute):</b> A Predator unmasked: The life cycle of Bdellovibrio bacteriovorus from a genomic perspective, Unpublished.</small></dd></dd></dd></div>
+  <div class="news_content"><dd><a href="/services/past-services-e.html#gib">GIB (Genome Information Broker)</a> provides an integrated search of Bacteria, Archaea, Eukaryota complete genome sequences.  Because the genome sequence data of <i>Bdellovibrio bacteriovorus HD100</i> and <i>Mycobacterium avium subsp. paratuberculosis str. k10</i> were released, we incorporated them to GIB, and now you can search those data.<br><dd><small>References (Institutes): </small><br><dd><small><b><i>Bdellovibrio bacteriovorus HD100</i> (Max-Planck-Institute):</b> A Predator unmasked: The life cycle of Bdellovibrio bacteriovorus from a genomic perspective, Unpublished.</small></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -883,7 +883,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040202_2"><a href="#wn040202_2">Updates of "Conference on information biology"</a></h2>
   <div class="news_date">February 02,2004</div>
-  <div class="news_content"><dd>Following conferences were added to "Conference on information biology".<ul><li><a href="http://www.jbirc.aist.go.jp/WASH3/" target="_blank">WASH-3</a> (February 24, 2004) </li><li><a href="/files/pdf/japan-korea03.pdf" target="_blank">The 3rd Japan-Korea Bioinformatics Training Course</a> (March 16-19, 2004) </li></ul></dd></div>
+  <div class="news_content"><dd>Following conferences were added to "Conference on information biology".<ul><li><a href="http://www.jbirc.aist.go.jp/WASH3/" target="_blank">WASH-3</a> (February 24, 2004) </li><li><a href="{{ site.baseurl }}/assets/files/pdf/japan-korea03.pdf" target="_blank">The 3rd Japan-Korea Bioinformatics Training Course</a> (March 16-19, 2004) </li></ul></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>
@@ -892,7 +892,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn040202_3"><a href="#wn040202_3">Version-up of ClustalW</a></h2>
   <div class="news_date">February 02,2004</div>
-  <div class="news_content"><dd>ClustalW (multiple alignment and tree-making program) of<br>    <a href="/E-mail/homology.html">DDBJ analysis<br>    service</a> provided through web and e-mail was updated today.<br><dd>Version number:  1.80 -&gt;  1.83<br><dd>By this upgrade, the alignment result in fasta format can be outputted.Moreover, an alignment in the specified region can be executed by using newly added SEQNO_RANGE option.  Furthermore, you can specify the display of alignment score.  Please use. A part of user interface is also changed by these changes.<br><dd>Reference: Chenna R. et al. (2003) Multiple sequence alignment with the Clustal series of programs. Nucleic Acids Res. 31(13):3497-500.</dd></dd></dd></dd></div>
+  <div class="news_content"><dd>ClustalW (multiple alignment and tree-making program) of<br>    DDBJ analysis<br>    service provided through web and e-mail was updated today.<br><dd>Version number:  1.80 -&gt;  1.83<br><dd>By this upgrade, the alignment result in fasta format can be outputted.Moreover, an alignment in the specified region can be executed by using newly added SEQNO_RANGE option.  Furthermore, you can specify the display of alignment score.  Please use. A part of user interface is also changed by these changes.<br><dd>Reference: Chenna R. et al. (2003) Multiple sequence alignment with the Clustal series of programs. Nucleic Acids Res. 31(13):3497-500.</dd></dd></dd></dd></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>

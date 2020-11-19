@@ -15,7 +15,7 @@ lang: ja
 <p><a href="/ddbj/cds.html">CDS features</a> のアミノ酸配列を確認するには、以下の操作を行ってください。</p>
 <dl>
   <dd>1. <a href="/ddbj/mss.html#tool">Mass Submission System</a> より UME_win.zip (Windows 用) または UME_mac.zip (MacOSX 用) をダウンロードしてください。</dd>
-  <dd>2. DDBJ 塩基配列登録システムの <a href="/ddbj/websub-help.html#flow-8">8. Finish</a>で、アノテーションファイルと塩基配列ファイルをダウンロードしてください。</dd>
+  <dd>2. DDBJ 塩基配列登録システムの <a href="/ddbj/web-submission-help.html#flow-8">8. Finish</a>で、アノテーションファイルと塩基配列ファイルをダウンロードしてください。</dd>
   <dd>3. <a href="/ddbj/ume.html">UME を起動</a>し、アノテーションファイルと塩基配列ファイルを UME に読み込ませ、transChecker Execute をクリックしてください。</dd>
 </dl>
 <p>

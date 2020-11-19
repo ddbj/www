@@ -7,9 +7,9 @@ related_pages:
   - title: Prefix Letter List
     url: /prefix-e.html
   - title: Categories for Sequence Data
-    url: /data-categories-e.html
+    url: /documents/data-categories-e.html
   - title: Accession Number Assigned by INSD
-    url: /acc_def-e.html
+    url: /documents/accessions.html
 ---
 
 
@@ -20,7 +20,7 @@ following three conditions is met:
 
 1. The [submitter](/ddbj/submission-e.html#submitter) requests to
 release the data.
-2. The [accession number](/acc_def-e.html) has published and it has
+2. The [accession number](/documents/accessions-e.html) has published and it has
 been confirmed.
   - We do not release the data when its accession number was published
     wrongly by other than the submitter.
@@ -79,12 +79,12 @@ Management of data release schedule
     [holidays](/ddbj/submission-e.html#holiday) in order after the
     start of our work.
 : If you want to release your data or [to postpone the hold-date of
-your data](/ddbj/updt-e.html), please contact us via [web form](/ddbj/updt-form-e.html).  
-See [Data Updates/Corrections](/ddbj/updt-e.html) in detail.
+your data](/ddbj/update-e.html), please contact us via [web form](/ddbj/update-form-e.html).  
+See [Data Updates/Corrections](/ddbj/update-e.html) in detail.
 
 Overview of International Nucleotide Sequence Databases Policies  
 : Refer to [INSDC policy](/insdc-e.html#policy).
 : [FAQ] [Why is the retracted data still
-available?](/faq/en/why-retracted-data-available-e.html)
+available?](/faq/en/why-retracted-data-available.html)
 
 

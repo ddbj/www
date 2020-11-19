@@ -12,4 +12,4 @@ lang: ja
 
 ## 未公開のデータを公開する条件を教えてください
 
-<p><a href="/data-release-policy.html">データ公開原則</a>、ならびに <a href="/insdc.html#policy">登録データの取り扱いについて</a> をご覧ください。</p>
+<p><a href="/documents/data-release-policy.html">データ公開原則</a>、ならびに <a href="/insdc.html#policy">登録データの取り扱いについて</a> をご覧ください。</p>

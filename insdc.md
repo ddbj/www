@@ -6,7 +6,7 @@ category: www
 lang: ja
 related_pages:
   - title: DDBJ 運営スタッフ
-    url: /staff.html
+    url: /ddbj-staff.html
 ---
 
 DDBJ センターは、欧州の [EBI; European Bioinformatics Institute](https://www.ebi.ac.uk/) で運営されている [ENA; European Nucleotide Archive](https://www.ebi.ac.uk/ena) および 米国の [NCBI; National Center for Biotechnology Information](https://www.ncbi.nlm.nih.gov/) と、インターネットを経由したデータと情報の相互交換と定期的に開催する２つの会議、[国際実務者会議](#icm)と[国際諮問委員会](#iac)、を通じて密接に連携し、INSD; International Nucleotide Sequence Database を構築しています。   
@@ -71,7 +71,7 @@ DDBJ は、1980年代の事業開始当初から、欧州の EMBL-Bank/[EBI](htt
 
 ## 国際実務者会議 ICM; International Collaborative Meeting<a name="icm"></a> 
 
-[国際実務者会議](/activities/icm-reports.html)は、INSDC の実務者で構成されています。ICM
+[国際実務者会議](/activities/index.html)は、INSDC の実務者で構成されています。ICM
 は、国際協調を基本理念とし,INSDC 運営上の実務的な問題を解決していくための協議会で、年１度開催されます。
 
 ## 登録データに取り扱いについて<a name="policy"></a> 

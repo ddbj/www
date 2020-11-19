@@ -18,7 +18,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn121218"><a href="#wn121218">DDBJ Rel. 91.0, DAD (DDBJ amino acid database) Rel. 61.0 Completed</a></h2>
   <div class="news_date">December 18,2012</div>
-  <div class="news_content"><dl><dd><b>DDBJ Rel. 91.0</b><br><ul><li>Date: Dec. 18, 2012</li><li>160,729,709 entries     148,418,537,672 bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.91.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul><b>DAD (DDBJ amino acid database) Rel. 61.0</b><br><ul><li>Date: Dec. 18, 2012</li><li>25,302,083 entries     7,351,129,523 aa (total number of residues)</li> <li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.61.txt">DAD Release Note</a></li></ul></dd></dl></div>
+  <div class="news_content"><dl><dd><b>DDBJ Rel. 91.0</b><br><ul><li>Date: Dec. 18, 2012</li><li>160,729,709 entries     148,418,537,672 bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.91.txt">DDBJ Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul><b>DAD (DDBJ amino acid database) Rel. 61.0</b><br><ul><li>Date: Dec. 18, 2012</li><li>25,302,083 entries     7,351,129,523 aa (total number of residues)</li> <li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.61.txt">DAD Release Note</a></li></ul></dd></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -36,7 +36,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn121203"><a href="#wn121203">Suspension of the DDBJ activity during the New Year Holidays </a></h2>
   <div class="news_date">December 03,2012</div>
-  <div class="news_content">We at DDBJ will temporally close our office during  the New Year Holidays, in observance of the Japanese custom, <a href="/ddbj/websub-e.html">New DDBJ Nucleotide Sequence Submission System</a>  and data release are also closed.<br>However, the computer search/analysis and FTP are available as usual.<br><br>Inquiries for data submission, data update, search/analysis, supercomputer account application, etc.,  web form posting and E-mail sending are available throughout the holidays. But, please note in advance that replies from DDBJ is after the reopening of the office in 2013.[generate_table class=t04]DDBJ office close:</div>
+  <div class="news_content">We at DDBJ will temporally close our office during  the New Year Holidays, in observance of the Japanese custom, <a href="/ddbj/web-submission-e.html">New DDBJ Nucleotide Sequence Submission System</a>  and data release are also closed.<br>However, the computer search/analysis and FTP are available as usual.<br><br>Inquiries for data submission, data update, search/analysis, supercomputer account application, etc.,  web form posting and E-mail sending are available throughout the holidays. But, please note in advance that replies from DDBJ is after the reopening of the office in 2013.[generate_table class=t04]DDBJ office close:</div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -45,7 +45,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn121130"><a href="#wn121130">DDBJ/EMBL/GenBank Feature Table Definition revised</a></h2>
   <div class="news_date">November 30,2012</div>
-  <div class="news_content"><dl><dd><a href="/ddbj/full_index-e.html">Feature Table Definition</a> is the common annotation manual among the three banks (DDBJ, EMBL-Bank, GenBank) for the construction of the DDBJ/EMBL/GenBank International Nucleotide Sequence Database. It was revised to version 10.2 in November 2012.</dd></dl></div>
+  <div class="news_content"><dl><dd><a href="/ddbj/feature-table-e.html">Feature Table Definition</a> is the common annotation manual among the three banks (DDBJ, EMBL-Bank, GenBank) for the construction of the DDBJ/EMBL/GenBank International Nucleotide Sequence Database. It was revised to version 10.2 in November 2012.</dd></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -81,7 +81,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn121031_2"><a href="#wn121031_2">Submission through "SAKURA" was terminated</a></h2>
   <div class="news_date">October 31,2012</div>
-  <div class="news_content">Submission through "SAKURA" was terminated on October 31, 2012 at 17:00(JST).<br>Thank you for having used for a long time.<br><br>From now on, please use <a href="/ddbj/websub-e.html" title="DDBJ Nucleotide Sequence Submission System">"A new DDBJ Nucleotide Sequence Submission System"</a>.You can download <a href="{{ site.baseurl }}/assets/files/pdf/websubHelp_full_e.pdf" title="Deasy_help">HELP file of the submission system(PDF)</a>.<br><br>　Reference: <a href="/news/en/wn120928_4-e.html" title="New DDBJ Nucleotide Sequence Submission System will be available on Oct. 3, 2012">New DDBJ Nucleotide Sequence Submission System will be available on Oct. 3, 2012</a></div>
+  <div class="news_content">Submission through "SAKURA" was terminated on October 31, 2012 at 17:00(JST).<br>Thank you for having used for a long time.<br><br>From now on, please use <a href="/ddbj/web-submission-e.html" title="DDBJ Nucleotide Sequence Submission System">"A new DDBJ Nucleotide Sequence Submission System"</a>.You can download <a href="{{ site.baseurl }}/assets/files/pdf/websubHelp_full_e.pdf" title="Deasy_help">HELP file of the submission system(PDF)</a>.<br><br>　Reference: <a href="/news/en/wn120928_4-e.html" title="New DDBJ Nucleotide Sequence Submission System will be available on Oct. 3, 2012">New DDBJ Nucleotide Sequence Submission System will be available on Oct. 3, 2012</a></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -90,7 +90,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="2012-10-25"><a href="#2012-10-25">DRA Submission FAQ website is available</a></h2>
   <div class="news_date">October 25,2012</div>
-  <div class="news_content">DRA <a href="/dra/faq-e.html">Submission FAQ</a> website is available.</div>
+  <div class="news_content">DRA <a href="/faq/en/index-e.html">Submission FAQ</a> website is available.</div>
   <div class="news_category">
     <span class="service">Services: dra</span>
     <span class="keyword">Keywords: </span>
@@ -117,7 +117,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn121003"><a href="#wn121003">New DDBJ Nucleotide Sequence Submission System</a></h2>
   <div class="news_date">October 03,2012</div>
-  <div class="news_content">A new DDBJ Nucleotide Sequence Submission System has been released today. <br><a href="/ddbj/websub-e.html">http://www.ddbj.nig.ac.jp/sub/websub-e.html</a><br>You can download <a href="{{ site.baseurl }}/assets/files/pdf/websubHelp_full_e.pdf" target="_blank">HELP file of the submission system(PDF).</a></div>
+  <div class="news_content">A new DDBJ Nucleotide Sequence Submission System has been released today. <br><a href="/ddbj/web-submission-e.html">http://www.ddbj.nig.ac.jp/sub/websub-e.html</a><br>You can download <a href="{{ site.baseurl }}/assets/files/pdf/websubHelp_full_e.pdf" target="_blank">HELP file of the submission system(PDF).</a></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -135,7 +135,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn120928_4"><a href="#wn120928_4">New DDBJ Nucleotide Sequence Submission System will be available on Oct. 3, 2012</a></h2>
   <div class="news_date">September 28,2012</div>
-  <div class="news_content"><dl><dd><a href="/ddbj/websub-e.html" title="A new DDBJ Nucleotide Sequence Submission System">A new DDBJ Nucleotide Sequence Submission System</a> will be released on October 3, 2012. <br>This system has much more effective interface to input annotation than <a href="http://sakura.ddbj.nig.ac.jp/sakura_en.html" title="SAKURA" target="_blank">SAKURA</a>.We also revise the error check function. The new submission system is equipped with "jParser", which is also used in <a href="/ddbj/mss-e.html" title="MSS" target="_blank"> Mass Submission System (MSS)</a>.<br><br><hr>Submission through "SAKURA" will be terminated on October 31, 2012 at 17:00(JST). Please check the following notes. </dd></dl><div id="list_l1p">Notes about SAKURA</div><dl><dd><ul> <li>Data of saved entries and templates, whose submission is in progress, are not transferred into the new submission system. </li><li>Please complete your submission prior to the termination of SAKURA.<br></li></ul></dd></dl></div>
+  <div class="news_content"><dl><dd><a href="/ddbj/web-submission-e.html" title="A new DDBJ Nucleotide Sequence Submission System">A new DDBJ Nucleotide Sequence Submission System</a> will be released on October 3, 2012. <br>This system has much more effective interface to input annotation than <a href="http://sakura.ddbj.nig.ac.jp/sakura_en.html" title="SAKURA" target="_blank">SAKURA</a>.We also revise the error check function. The new submission system is equipped with "jParser", which is also used in <a href="/ddbj/mss-e.html" title="MSS" target="_blank"> Mass Submission System (MSS)</a>.<br><br><hr>Submission through "SAKURA" will be terminated on October 31, 2012 at 17:00(JST). Please check the following notes. </dd></dl><div id="list_l1p">Notes about SAKURA</div><dl><dd><ul> <li>Data of saved entries and templates, whose submission is in progress, are not transferred into the new submission system. </li><li>Please complete your submission prior to the termination of SAKURA.<br></li></ul></dd></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -144,7 +144,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn120928_3"><a href="#wn120928_3">DDBJ Rel. 90.0, DAD (DDBJ amino acid database) Rel. 60.0 Completed</a></h2>
   <div class="news_date">September 28,2012</div>
-  <div class="news_content"><dl><dd><b>DDBJ Rel. 90.0</b><ul><li>Date: Sep. 28, 2012</li><li>156,952,755 entries    144,754,534,372 bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.90.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul><br><b>DAD (DDBJ amino acid database) Rel. 60.0</b><ul><li>Date: Sep. 28, 2012</li><li>24,480,625 entries    7,093,168,589 aa (total number of residues)</li> <li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.60.txt">DAD Release Note</a></li></ul></dd></dl></div>
+  <div class="news_content"><dl><dd><b>DDBJ Rel. 90.0</b><ul><li>Date: Sep. 28, 2012</li><li>156,952,755 entries    144,754,534,372 bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.90.txt">DDBJ Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul><br><b>DAD (DDBJ amino acid database) Rel. 60.0</b><ul><li>Date: Sep. 28, 2012</li><li>24,480,625 entries    7,093,168,589 aa (total number of residues)</li> <li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.60.txt">DAD Release Note</a></li></ul></dd></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -167,7 +167,7 @@ FT   /note="genetic maker"</code></pre><br><span><b>[DDBJ FTP site]</b></span><b
 <div class="news_post_list">
   <h2 class="news_title" id ="wn120928"><a href="#wn120928">The Report for the 25th International Collaborators Meeting</a></h2>
   <div class="news_date">September 28,2012</div>
-  <div class="news_content"><dl><dd><a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a>, consisted of DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a> and <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a>, hold the international collaborators meeting every year.<br>In 2012, the meeting was held at NCBI in USA, 11-13 June, to discuss practical matters to maintain and update nucleotide sequence data archives; <a href="/index.html" target="_blank">DDBJ</a>, <a href="http://www.ebi.ac.uk/embl/" target="_blank">EMBL-Bank</a>, <a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>, Sequence Read Archive (SRA) and Trace Archive.<br>The outcomes of the meeting are summarized <a href="/activities/icm-reports-e.html#2012">here</a>.</dd></dl></div>
+  <div class="news_content"><dl><dd><a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a>, consisted of DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a> and <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a>, hold the international collaborators meeting every year.<br>In 2012, the meeting was held at NCBI in USA, 11-13 June, to discuss practical matters to maintain and update nucleotide sequence data archives; <a href="/index.html" target="_blank">DDBJ</a>, <a href="http://www.ebi.ac.uk/embl/" target="_blank">EMBL-Bank</a>, <a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>, Sequence Read Archive (SRA) and Trace Archive.<br>The outcomes of the meeting are summarized <a href="/activities/icm/2012-e">here</a>.</dd></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -176,7 +176,7 @@ FT   /note="genetic maker"</code></pre><br><span><b>[DDBJ FTP site]</b></span><b
 <div class="news_post_list">
   <h2 class="news_title" id ="wn120927"><a href="#wn120927">DDBJ Original version was added to the ClustalW</a></h2>
   <div class="news_date">September 27,2012</div>
-  <div class="news_content"><dl><dd><a href="http://clustalw.ddbj.nig.ac.jp/index.php?lang=en" title="clustalw" target="_blank">ClustalW</a> is a general purpose multiple sequence alignment program for DNA or proteins.<br>DDBJ added DDBJ Original version (Version 1.83, Modified by Dr. Kirill Kryukov) options of the ClustalW. <br><br>In the "Version 1.83", you can specify the detailed option parameters for Tree calculation and Bootstrap.<br>Please refer to ClustalW HELP "<a href="/clustalw-help-e.html#ddbjoriginal" title="ddbjoriginal" target="_blank">DDBJ Original version (Version 1.83, Modified by Dr. Kirill Kryukov) options</a>" for details. </dd></dl></div>
+  <div class="news_content"><dl><dd><a href="http://clustalw.ddbj.nig.ac.jp/index.php?lang=en" title="clustalw" target="_blank">ClustalW</a> is a general purpose multiple sequence alignment program for DNA or proteins.<br>DDBJ added DDBJ Original version (Version 1.83, Modified by Dr. Kirill Kryukov) options of the ClustalW. <br><br>In the "Version 1.83", you can specify the detailed option parameters for Tree calculation and Bootstrap.<br>Please refer to ClustalW HELP "<a href="/services/clustalw-e.html#ddbjoriginal" title="ddbjoriginal" target="_blank">DDBJ Original version (Version 1.83, Modified by Dr. Kirill Kryukov) options</a>" for details. </dd></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -327,7 +327,7 @@ FT   /note="genetic maker"</code></pre><br><span><b>[DDBJ FTP site]</b></span><b
 <div class="news_post_list">
   <h2 class="news_title" id ="wn120629"><a href="#wn120629">DDBJ/EMBL/GenBank Feature Table Definition revised</a></h2>
   <div class="news_date">June 29,2012</div>
-  <div class="news_content"><dl><dd><a href="/ddbj/full_index-e.html">Feature Table Definition (FT-Doc)</a> is the common annotation manual among the three banks (DDBJ, EMBL-Bank, GenBank) for the construction of the DDBJ/EMBL/GenBank International Nucleotide Sequence Database. Feature Table Definition was revised in May 2012. Version is 10.1.</dd></dl></div>
+  <div class="news_content"><dl><dd><a href="/ddbj/feature-table-e.html">Feature Table Definition (FT-Doc)</a> is the common annotation manual among the three banks (DDBJ, EMBL-Bank, GenBank) for the construction of the DDBJ/EMBL/GenBank International Nucleotide Sequence Database. Feature Table Definition was revised in May 2012. Version is 10.1.</dd></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -336,7 +336,7 @@ FT   /note="genetic maker"</code></pre><br><span><b>[DDBJ FTP site]</b></span><b
 <div class="news_post_list">
   <h2 class="news_title" id ="wn120627"><a href="#wn120627">DDBJ Rel. 89.0, DAD (DDBJ amino acid database) Rel. 59.0 Completed</a></h2>
   <div class="news_date">June 27,2012</div>
-  <div class="news_content"><dl><dd><b>DDBJ Rel. 89.0</b><ul><li>Date: Jun. 27, 2012</li><li>153,273,314 entries    141,016,380,296 bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.89.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul><br><br><b>DAD (DDBJ amino acid database) Rel. 59.0</b><ul><li>Date: Jun. 27, 2012</li><li>23,734,064 entries    6,866,234,533 aa (total number of residues)</li> <li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.59.txt">DAD Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul></dd></dl></div>
+  <div class="news_content"><dl><dd><b>DDBJ Rel. 89.0</b><ul><li>Date: Jun. 27, 2012</li><li>153,273,314 entries    141,016,380,296 bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.89.txt">DDBJ Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul><br><br><b>DAD (DDBJ amino acid database) Rel. 59.0</b><ul><li>Date: Jun. 27, 2012</li><li>23,734,064 entries    6,866,234,533 aa (total number of residues)</li> <li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.59.txt">DAD Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul></dd></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -435,7 +435,7 @@ FT   /note="genetic maker"</code></pre><br><span><b>[DDBJ FTP site]</b></span><b
 <div class="news_post_list">
   <h2 class="news_title" id ="wn120323"><a href="#wn120323">NIG starts the application for new supercomputer system</a></h2>
   <div class="news_date">March 23,2012</div>
-  <div class="news_content"><dl><dd>National Institute of Genetics new supercomputer system are updated in March, we start the operation this system from March 21, 2012.<br><br>The new supercomputer system have more than 350 high‐throughput cluster machines with the latest CPU , a server with 10TB memory, large capacity storage total of 5PB.Their connected with high-speed transfer network.<br><br>For using, you need to apply for a supercomputer account from "<a href="/system/supercom/supercom-apl.html">Apply the use of super computer system</a> (in Japanese)".<br>For more information, please refer to the "<a href="/training.html#supercom">New supercomputer introduction</a> (in Japanese)" and "<a href="http://sc.ddbj.nig.ac.jp/index.php/ja-application/ja-nig-application">How to use the super computer system</a> (in Japanese)".</dd></dl></div>
+  <div class="news_content"><dl><dd>National Institute of Genetics new supercomputer system are updated in March, we start the operation this system from March 21, 2012.<br><br>The new supercomputer system have more than 350 high‐throughput cluster machines with the latest CPU , a server with 10TB memory, large capacity storage total of 5PB.Their connected with high-speed transfer network.<br><br>For using, you need to apply for a supercomputer account from "<a href="/system/supercom/supercom-apl.html">Apply the use of super computer system</a> (in Japanese)".<br>For more information, please refer to the "<a href="/activities/index.html#supercom">New supercomputer introduction</a> (in Japanese)" and "<a href="http://sc.ddbj.nig.ac.jp/index.php/ja-application/ja-nig-application">How to use the super computer system</a> (in Japanese)".</dd></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -489,7 +489,7 @@ FT   /note="genetic maker"</code></pre><br><span><b>[DDBJ FTP site]</b></span><b
 <div class="news_post_list">
   <h2 class="news_title" id ="wn120112"><a href="#wn120112">DDBJ Rel. 88.0, DAD (DDBJ amino acid database) Rel. 58.0 Completed  </a></h2>
   <div class="news_date">January 12,2012</div>
-  <div class="news_content"><dl><dd><b>DDBJ Rel. 88.0</b><ul><li>Date: Jan. 12, 2012</li><li>145,861,965 entries    134,956,109,049 bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.88.txt">DDBJ Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul>- Since DDBJ is planning to improve its systems substantially, during the first quarter in 2012, DDBJ will skip to make up its next periodical release in March 2012.<br>So, DDBJ periodical release 89 will be prepared in June 2012.<br><br><b>DAD (DDBJ amino acid database) Rel. 58.0</b><ul><li>Date: Jan. 12, 2012</li><li>22,451,011 entries    6,457,504,280 aa (total number of residues)</li> <li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.58.txt">DAD Release Note</a></li><li><a href="/stats/relinfo-e.html">Latest Release Information</a></li></ul>- Since DDBJ is planning to improve its systems substantially, during the first quarter in 2012, DDBJ will skip to make up the next periodical release of DAD in March 2012.<br>So, DAD periodical release 59 will be prepared in June 2012.</dd></dl></div>
+  <div class="news_content"><dl><dd><b>DDBJ Rel. 88.0</b><ul><li>Date: Jan. 12, 2012</li><li>145,861,965 entries    134,956,109,049 bases</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.88.txt">DDBJ Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul>- Since DDBJ is planning to improve its systems substantially, during the first quarter in 2012, DDBJ will skip to make up its next periodical release in March 2012.<br>So, DDBJ periodical release 89 will be prepared in June 2012.<br><br><b>DAD (DDBJ amino acid database) Rel. 58.0</b><ul><li>Date: Jan. 12, 2012</li><li>22,451,011 entries    6,457,504,280 aa (total number of residues)</li> <li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.58.txt">DAD Release Note</a></li><li><a href="/latest-releases-e.html">Latest Release Information</a></li></ul>- Since DDBJ is planning to improve its systems substantially, during the first quarter in 2012, DDBJ will skip to make up the next periodical release of DAD in March 2012.<br>So, DAD periodical release 59 will be prepared in June 2012.</dd></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>

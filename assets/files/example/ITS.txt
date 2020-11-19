@@ -1,0 +1,41 @@
+COMMON	SUBMITTER		contact	Hanako Mishima
+			ab_name	Mishima,H.
+			ab_name	Yamada,T.
+			ab_name	Park,C.S.
+			ab_name	Liu,G.Q.
+			email	mishima@ddbj.nig.ac.jp
+			phone	81-55-981-6853
+			fax	81-55-981-6849
+			institute	National Institute of Genetics
+			department	DNA Data Bank of Japan
+			country	Japan
+			state	Shizuoka
+			city	Mishima
+			street	Yata 1111
+			zip	411-8540
+	REFERENCE		ab_name	Mishima,H.
+			ab_name	Yamada,T.
+			ab_name	Kim,K.-H.
+			ab_name	Liu,G.Q.
+			title	Diversity of fungus DNA
+			status	Unpublished
+			year	2017
+	DATE		hold_date	20191130
+ENT01	source	1..E	isolate	MUMH29s
+			organism	Erysiphe trifolii var. trifolii
+			variety	trifolii
+			mol_type	genomic DNA
+			host	Trifolium vulgaris
+			tissue_type	conidia
+	rRNA	<1..4	product	18S rRNA
+	misc_RNA	5..224	note	internal transcribed spacer 1
+	rRNA	225..378	product	5.8S rRNA
+	misc_RNA	379..562	note	internal transcribed spacer 2
+	rRNA	563..>597	product	28S rRNA
+ENT02	source	1..E	isolate	MUMH30s
+			organism	Erysiphe trifolii var. trifolii
+			variety	trifolii
+			mol_type	genomic DNA
+			host	Trifolium vulgaris
+			tissue_type	conidia
+	misc_RNA	<1..>597	note	contains 18S rRNA, ITS1, 5.8S rRNA, ITS2 and 28S rRNA

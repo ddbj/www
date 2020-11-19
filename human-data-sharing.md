@@ -14,7 +14,7 @@ lang: ja
 1. 情報の利用目的及び利用方法
 
 非アクセス制限データベース  
-: [DDBJ センターについて](aboutus.html#mission)
+: [DDBJ センターについて](ddbj-center.html#mission)
 
 アクセス制限データベース  
 : [JGA](/jga/index.html)
@@ -24,11 +24,11 @@ lang: ja
 2. 利用し、又は提供する情報の項目
 
 非アクセス制限データベース  
-: [データ登録](/submission.html)
+: [データ登録](/services/index.html)
 
 アクセス制限データベース  
-: [JGA 登録手順](/jga/substep.html)
-: [AGD 登録手順](/agd/substep.html)
+: [JGA 登録手順](/jga/submission-step.html)
+: [AGD 登録手順](/agd/submission-step.html)
 
 3. 利用する者の範囲
 
@@ -36,6 +36,6 @@ lang: ja
 
 4. 情報の管理について責任を有する者の氏名又は名称
 
-[DDBJ センター長](staff.html)
+[DDBJ センター長](ddbj-staff.html)
 
-ご不明な点がある場合は[こちら](/contact.html)からお問い合わせください。
+ご不明な点がある場合は[こちら](/contact-ddbj.html)からお問い合わせください。

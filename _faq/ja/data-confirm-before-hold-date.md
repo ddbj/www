@@ -12,4 +12,4 @@ lang: ja
 
 ## 登録したデータの内容を公開予定日より前に確認できますか
 
-<p>当該データの <a href="/ddbj/submission.html#terms">登録者</a> としてご登録いただいている方からの依頼ならば可能です。<br>アクセッション番号を明記の上 <a href="/contact.html#to-ddbj">DDBJへのお問い合わせ</a> よりご依頼ください。</p>
+<p>当該データの <a href="/ddbj/submission.html#terms">登録者</a> としてご登録いただいている方からの依頼ならば可能です。<br>アクセッション番号を明記の上 <a href="/contact-ddbj.html#to-ddbj">DDBJへのお問い合わせ</a> よりご依頼ください。</p>

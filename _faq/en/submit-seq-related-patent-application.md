@@ -16,7 +16,7 @@ lang: en
 <p>However, if you apply to any other Patent Office, or if you need to publish a paper during patent application, confirm at Patent Office whether you can submit the data to DDBJ or not. </p>
 <p>Note that when the sequence data is published from DDBJ, the data becomes a part of the public domain, as "official notice". </p>
 <dl><dt>References</dt>
-  <dd><a href="/ddbj/pat-data-e.html">Sequence data included in patent applications</a></dd>
+  <dd><a href="/ddbj/patent-data-e.html">Sequence data included in patent applications</a></dd>
   <dd><a href="/policies-e.html#ownership">Patent, Intellectual Property and Priority</a></dd>
-  <dd><a href="/column/patent-e.html">Patent column from DDBJ</a></dd>
+  <dd><a href="/activities/patent-e.html">Patent column from DDBJ</a></dd>
 </dl>

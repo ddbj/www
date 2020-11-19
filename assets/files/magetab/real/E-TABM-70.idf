@@ -1,0 +1,28 @@
+"Investigation Title"	IGR_PLOIDY_STUDY_GK									
+"Experimental Design"	compound_treatment_design									
+"Experimental Factor Name"	CELLLINE	PLOIDY								
+"Experimental Factor Type"	cell_line	ploidy								
+										
+"Person Last Name"	Dessen									
+"Person First Name"	Philippe									
+"Person Mid Initial"										
+"Person Email"	dessen@igr.fr									
+"Person Address"	"Centre Natiol de la Recherche Scientifique, UMR8125,�; Unit� de G�nomique Fonctionnelle, Institut Gustave Roussy, 39 rue Camille-Desmoulins, F-94805 Villejuif, France; INSERM U-517, Faculty of Medicine and Pharmacy, 7 Boulevard Jeanne d;Arc, 21033 Dijon, France�; INSERM U362,Institut Gustave Roussy, 39 rue Camille-Desmoulins, F-94805 Villejuif, France; Unit� d�Immunologie, ERM0208 INSERM, IFR54, Institut Gustave Roussy, Villejuif, France"									
+"Person Roles"	submitter									
+										
+"Quality Control Types"	dye_swap_quality_control									
+"Public Release Date"	"2006-01-23"									
+										
+Comment[ArrayExpressSubmissionDate]	"2005-12-19"									
+										
+"Publication Author List"	"Maria Castedo; Arud Coquelle; Sonia Vivet; Audrey Kauffmann; Marie O. Pequignot; Noelia Casares; Alexander Valent; Shahul Mouhamad; Elise Schmitt; Nazanine Modjtahedi; William Vainchenker; Laurence Zitvogel; Vladimir Lazar; Carmen Garrido; Guido Kroemer"									
+"Publication Title"	"Apoptosis regulation in tetraploid cells"									
+"Experiment Description"	"During the oncogenic process, tetraploidy is a candidate intermediate stage leading from diploidy to aneuploidy. The aim of our experiment was to establish tetraploid clones and to characterize their transcriptome."									
+										
+"Protocol Name"	P_IGR_SAMPLE_04_TETRA_1	P_IGR_SAMPLE_04_TETRA_2	P_IGR_EXTRACT_04	P_IGR_POOL_04A	P_IGR_POOL_04B	P_IGR_LABEL_CY3_04	P_IGR_LABEL_CY5_04	P_IGR_HYBRID_04	P_IGR_SCANNING_04	P_IGR_TRANSFORM_04
+"Protocol Type"	compound_based_treatment	compound_based_treatment	nucleic_acid_extraction	pool	pool	labeling	labeling	hybridization	image_acquisition	"Transformation protocol"
+"Protocol Description"	"RKO cells were grown in McCoy' 5A medium supplemented with 10%FCS. In order to generate tetraploid and diploid clones, the cell line RKO containing ~5% tetraploid cells was subcloned by limiting dilution into diploid and tetraploid clones. One diploid clone was transfected with a cDNA encoding H2B-GFP, selected in blasticidine (20 ﾵg/ml), FACS-separated into subsets of cells enriched in a diploid or tetraploid DNA content to generate diploﾕd and tetraploid H2B-GFP-expressing clones. "	"Tetraploid HCT116 clones were generated upon treatment with cytochalasin D (0.6 ﾵg/ml, 48h) or nocodazole (100nM, 48h).  For microarray assay, established diploid and tetraploid clones were collected during exponential growth with a cell scrapper in 1ml RLT lysis buffer with beta-mercaptoethanol (10ml/ml)."	"Total RNA was isolated from using Rneasy micro elute kit (Qiagen, Courtaboeuf, France) according to manufacturer instructions. Briefly Cells was mixed with 350 ul RLT buffer with Beta Mercaptoethanol 1%. Then add 350 ul ethanol 70% and mixed thoroughly by"	"Pools of RNA (Pool1 or Pool2), obtained by mixing equal amounts (500 ng) of total RNA from each of the 8 cell line samples, constituted the reference in each group. "	"Pools of RNA (Pool1 or Pool2), obtained by mixing equal amounts (500 ng) of total RNA from each of the 8 cell line samples, constituted the reference in each group. "	"(500 ng, Amplification=RNA polymerases). Agilent oligo Cy5 or Cy3 probes labeling protocol. Kit used for probe labeling: Agilent Fluorescent Low input Linear Amplification kit (G2554A) adapted for small amount of total RNA (500 ng total RNA per reaction)."	"(500 ng, Amplification=RNA polymerases). Agilent oligo Cy5 or Cy3 probes labeling protocol. Kit used for probe labeling: Agilent Fluorescent Low input Linear Amplification kit (G2554A) adapted for small amount of total RNA (500 ng total RNA per reaction)."	" Agilent Hybridization Protocol (Chamber type: Agilent SureHyb Chamber; Quantity of labelled extract: 1 ug; duration: 17 hours; volume: 650 ul ; Temperature in ﾰC: 60). Add the following components in clean 1.5 ml tubes. 1 ug linearly amplified cRNA la"	"Scanning was performed with a Agilent 2565 AA DNA Microarray scanner using defaults parameters (100ﾡ PMT, 10 um resolution, at 20ﾡC in low ozone concentration environment. Microarray images were alysed by using Feature Extraction software version A.7.5.1 from Agilent technologies. Defaults settings were used."	"Raw data files from the Agilent Feature Extraction software A.6.1.1 for image alysis were then imported into Resolver(TM) system for gene expression data alysis from Rosetta Inpharmatics. Then combined experiments were generated, to obtain average values from the replicates and dye swap experiments in order to avoid dye incorporation bias. Microarray data were processed and combined using the Rosetta Resolver system described in Stoughton and Dai (2002)."
+"Protocol Parameters"										
+"Protocol Software"										
+										
+"SDRF File"	E-TABM-70_sdrf.txt									

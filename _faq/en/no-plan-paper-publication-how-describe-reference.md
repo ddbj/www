@@ -19,4 +19,4 @@ lang: en
   <li>title: tentative title to explain your data </li>
   <li>ab_name (authors): abbreviation of tentative author(s) (often the same as ab_name of SUBMITTER) </li>
 </ul>
-<p>When you change your plan after sequence data submission, i.e. if you publish a paper, contact us from <a href="/ddbj/updt-form-e.html">this form</a> to send request with subject "Our paper was published". </p>
+<p>When you change your plan after sequence data submission, i.e. if you publish a paper, contact us from <a href="/ddbj/update-form-e.html">this form</a> to send request with subject "Our paper was published". </p>

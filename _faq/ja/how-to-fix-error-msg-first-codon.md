@@ -38,5 +38,5 @@ lang: ja
 </table>
 <dl><dt>参照</dt>
   <dd><a href="/faq/ja/how-to-fix-error-msg-stop-codon.html">“Stop codon ‘*’ is found in the range.” というエラーが表示されました</a></dd>
-  <dd><a href="/ddbj/cds.html#frame" title="/sub/cds-j.html#frame">codon_start qualifier による翻訳開始の位置補正</a></dd>
+  <dd><a href="/ddbj/cds.html#frame" title="/sub/cds.html#frame">codon_start qualifier による翻訳開始の位置補正</a></dd>
 </dl>
