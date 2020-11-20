@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Is it possible to specify BOOTSTRAP when performing analyses with ClustalW?
 category: faq
 db:

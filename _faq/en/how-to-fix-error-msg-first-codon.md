@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 'How to fix error message: "First codon [***] is not a start codon." / "Final codon [***] is not a stop codon."?'
 category: faq
 db:

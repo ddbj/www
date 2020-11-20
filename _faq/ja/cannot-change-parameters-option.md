@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: パラメーター（オプション）の変更ができません
 category: faq
 db:

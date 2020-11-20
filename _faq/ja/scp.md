@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: scp でファイルの転送ができません
 category: faq
 db:

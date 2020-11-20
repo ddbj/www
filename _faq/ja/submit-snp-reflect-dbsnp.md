@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: SNP のデータを DDBJ に登録すると dbSNP にも反映されますか
 category: faq
 db:

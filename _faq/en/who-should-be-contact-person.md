@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Who should be the Contact person?
 category: faq
 db:

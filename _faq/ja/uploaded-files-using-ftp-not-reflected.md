@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: FTPでアップロードしたファイルがwebに反映されません
 category: faq
 db:

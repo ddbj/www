@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to change the contact person, belonging, institution, etc..
 category: faq
 db:

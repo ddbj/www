@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 登録を受け付けているデータの種類を教えてください
 category: faq
 db:

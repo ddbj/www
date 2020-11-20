@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: /translation qualifier で示されるアミノ酸配列の翻訳は間違いではないでしょうか
 category: faq
 db:

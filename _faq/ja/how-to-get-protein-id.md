@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: protein_id を取得するには、どうすればよいでしょうか
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 人為的に構築した塩基配列を登録する場合、どのような生物名を記載すればよいでしょうか
 category: faq
 db:

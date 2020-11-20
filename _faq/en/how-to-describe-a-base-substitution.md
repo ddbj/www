@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to describe a base substitution that causes an amino acid substitution?
 category: faq
 db:

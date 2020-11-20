@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to confirm translated amino acid sequences (i.e. /translation qualifier) for CDS features?
 category: faq
 db:

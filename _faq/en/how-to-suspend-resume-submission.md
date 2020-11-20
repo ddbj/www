@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to suspend and resume my submission?
 category: faq
 db:

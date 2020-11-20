@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Validate data files ボタンをクリックできず検証処理を開始できません
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to submit more than one sequence at once?
 category: faq
 db:

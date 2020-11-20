@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: RNA seq など配列による発現定量のデータは、どのように登録すればよいですか
 category: faq
 db:

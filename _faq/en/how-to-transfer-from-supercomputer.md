@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to transfer data files from the NIG supercomputer to my DRA directory?
 category: faq
 db:

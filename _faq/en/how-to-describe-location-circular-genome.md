@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: In a circular genome, when a feature is located in the base range joined from the last base to the first base, how to describe the location of the feature?
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: ClustalW で3種類の記号 "*", ".", ":" の意味は何ですか
 category: faq
 db:

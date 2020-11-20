@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: '[Detail view 画面] out2.bamはソートされたBAMファイルなのか？'
 category: faq
 db:

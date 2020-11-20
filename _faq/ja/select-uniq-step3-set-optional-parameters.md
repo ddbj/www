@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: '[Set optional parameters 画面] BWAの時、Step3)でUniqを選択すると？'
 category: faq
 db:

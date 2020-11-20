@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: DDBJ のサービスが推奨するOSとブラウザについて
 category: faq
 db:

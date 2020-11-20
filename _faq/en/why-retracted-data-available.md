@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Why is the retracted data still available?
 category: faq
 db:

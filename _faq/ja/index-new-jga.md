@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 新しく公開された JGA データが DDBJ Search でみることができません
 category: faq
 db:

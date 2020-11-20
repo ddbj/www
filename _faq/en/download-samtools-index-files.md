@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Can I download SAMtools index files?
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: DDBJ から公開されたデータは EMBL-Bank, GenBank ではどのように公開されますか
 category: faq
 db:

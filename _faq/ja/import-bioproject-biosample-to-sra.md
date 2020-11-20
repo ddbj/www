@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: BioProject/BioSample 番号の DRA 登録での指定方法は?
 category: faq
 db:

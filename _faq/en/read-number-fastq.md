@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Why is reads number of fastq less than that of SRA file?
 category: faq
 db:

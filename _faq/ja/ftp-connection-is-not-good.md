@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: FTP接続ができません
 category: faq
 db:

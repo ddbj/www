@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: DDBJ Mail Magazine（メールマガジン） の配信申込，変更，中止の方法
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 論文の投稿予定がありませんが、どのように REFERENCE を入力すればよいでしょうか
 category: faq
 db:

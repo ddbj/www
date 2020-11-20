@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 現在のpipelineの機能では、varFilterを用いたSNP抽出はできない？
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: DDBJ 塩基配列登録システムを使って登録済みデータを修正できますか
 category: faq
 db:

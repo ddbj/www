@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: アミノ酸配列 (/translation qualifier) は どのようにして入力するのでしょうか
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 既に公開されている配列を更新する際に更新後の情報をしばらく非公開にできますか
 category: faq
 db:

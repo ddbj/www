@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: どのように公開予定日を変更したらいいのでしょうか?
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How are linked BioProject/BioSample/sequence data released?
 category: faq
 db:

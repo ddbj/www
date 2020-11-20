@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: コンタクトパーソン情報を変更したい
 category: faq
 db:

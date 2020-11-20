@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 配列の登録者に連絡を取りたいのですが
 category: faq
 db:

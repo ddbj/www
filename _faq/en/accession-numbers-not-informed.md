@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: I have not received accession numbers yet - is something wrong?
 category: faq
 db:

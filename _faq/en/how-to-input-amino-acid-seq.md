@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How can I input amino acid sequence (/translation qualifier) for CDS feature?
 category: faq
 db:

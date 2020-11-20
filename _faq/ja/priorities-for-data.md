@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: DDBJ に登録すればデータに関する優先権は確保されますか
 category: faq
 db:

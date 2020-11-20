@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Application form for Data Update Requests is not displayed
 category: faq
 db:

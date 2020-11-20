@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: It’s taking a long time to run jobs, does this mean there is a problem?
 category: faq
 db:

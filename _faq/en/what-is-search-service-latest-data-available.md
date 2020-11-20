@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: What is the search service that the latest data are available at the earliest period?
 category: faq
 db:

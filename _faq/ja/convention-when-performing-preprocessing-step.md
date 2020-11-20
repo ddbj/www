@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Preprocessing処理を行うにあたっては、ファイル名などの決まりがあるのでしょうか
 category: faq
 db:

@@ -3,20 +3,6 @@ layout: children
 title: よくある質問
 lang: ja
 db_labels:
-  bioproject: BioProject
-  biosample: BioSample
-  dra: Sequence Read Archive (DRA)
-  ddbj: Annotated/Assembled Sequences (DDBJ)
-  gea: Genomic Expression Archive (GEA)
-  jga: Japanese Genotype-phenotype Archive (JGA)
-  agd: AMED Genome Group Sharing Database (AGD)
-  top: DDBJ Center
-  pipeline: Pipeline
-  getentry: getentry
-  arsa: ARSA
-  blast: BLAST
-  ftp: FTP
-  clustalw: ClustalW
 ---
 <div id="NavigationAndMainView">
   <div class="inner">
@@ -43,7 +29,8 @@ db_labels:
                 {% endfor %}
                 {% assign dbs = faq.db %}
                 {% for db in dbs %}
-                <li class="tag-view" data-tag="{{ db }}">{% if page.db_labels[db] %}{{ page.db_labels[db] }}{% else %}[{{ db }}]{% endif %}</li>
+                <p>{{ site.data.tag_formal_names[db] }}</p>
+                <li class="tag-view" data-tag="{{ db }}">{% if site.data.tag_formal_names[db] %}{{ site.data.tag_formal_names[db] }}{% else %}[{{ db }}]{% endif %}</li>
                 {% endfor %}
               </ul>
             </div>

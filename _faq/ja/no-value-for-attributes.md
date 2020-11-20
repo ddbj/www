@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 必須のサンプル属性に対する値がない場合は?
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 投稿論文では，どのアクセッション番号を引用するべきですか？
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: What happens if you select Uniq in Step 3 of Set optional parameters?
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Do I have to register a separate BioProject/BioSample for each genome I am sequencing?
 category: faq
 db:

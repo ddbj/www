@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Can not find the sequence data, though the accession number cited on a paper.
 category: faq
 db:

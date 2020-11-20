@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 入力した配列の一部が「N」(X) に置き換わってしまいました
 category: faq
 db:

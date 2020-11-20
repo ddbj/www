@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How many samples do I need for my DRA submission?
 category: faq
 db:

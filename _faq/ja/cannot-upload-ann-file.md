@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: アノテーションファイルを upload することができません
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: DDBJ の検索・解析ソフトの原著論文，関連論文を紹介して下さい
 category: faq
 db:

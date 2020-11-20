@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 論文に DDBJ を利用したことについて引用したいと思います。文献を紹介してください。
 category: faq
 db:

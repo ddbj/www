@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Can I delete the fields registered in User original sets?
 category: faq
 db:

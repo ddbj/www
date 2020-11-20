@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: de novo assembly(trinity)でresultのfasta fileが表示されないjobがあります。
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: What is the difference between env_biome, env_feature and env_material?
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: What rules govern the order in which BLAST search results are displayed?
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How can I check my sequence to exclude vector contamination?
 category: faq
 db:

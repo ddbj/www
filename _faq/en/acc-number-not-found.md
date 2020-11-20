@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: I entered an accession number that is shown in the DRA Search display in the [Import Public DRA tab], but I got an error message saying that the number was not found.
 category: faq
 db:

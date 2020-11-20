@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: After submission of SNP data to DDBJ, will it automatically reflect to dbSNP?
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: I would like to link to the DDBJ website or to include some Web screenshots on my website
 category: faq
 db:

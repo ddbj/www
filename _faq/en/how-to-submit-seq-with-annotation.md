@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to submit sequence data with annotation to DDBJ?
 category: faq
 db:

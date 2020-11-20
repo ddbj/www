@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How do I send data currently stored on the DDBJ supercomputer to Pipeline? Similarly, how do I send data to the supercomputer after the Pipeline analysis?
 category: faq
 db:

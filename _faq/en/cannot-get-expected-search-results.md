@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: I did not obtain the search results that I was expecting. Did I make a mistake in conducting my search?
 category: faq
 db:

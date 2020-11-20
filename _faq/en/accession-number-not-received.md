@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: I have not yet received accession number, how many days does it take to get accession number?
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to deal with validation errors?
 category: faq
 db:

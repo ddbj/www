@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: We would like to cite the article of DDBJ.
 category: faq
 db:

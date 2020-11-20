@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 'How to fix error message: "MGA:No entry name is found other than [ COMMON ], without feature [ DATATYPE/type=MGA ]."?'
 category: faq
 db:

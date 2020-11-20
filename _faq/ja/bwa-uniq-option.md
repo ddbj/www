@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: '[Set optional parameters 画面] BWAのuniq optionの質問です。Please choose uniq mode.の４択の違いは？'
 category: faq
 db:

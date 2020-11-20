@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to describe a submiter or an author who has first name only?
 category: faq
 db:

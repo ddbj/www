@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: １つの塩基配列に複数の feature を記載する方法は？
 category: faq
 db:

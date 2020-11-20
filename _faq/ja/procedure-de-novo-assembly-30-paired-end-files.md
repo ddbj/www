@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: ペアエンドのファイル30個をde novo assemblyする手順を教えてください
 category: faq
 db:

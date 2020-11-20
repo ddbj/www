@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 登録作業を中断したり再開したりするには、どうすれば良いですか
 category: faq
 db:

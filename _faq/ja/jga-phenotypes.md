@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 必須属性以外に記載すべき変数や表現型は？
 category: faq
 db:

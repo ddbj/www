@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: DDBJ の検索・解析ソフトを用いた結果を論文に載せるときの記載形式はありますか
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Do GEA, ArrayExpress and GEO exchange data?
 category: faq
 db:

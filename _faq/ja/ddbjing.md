@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: DDBJing 講習会について教えて下さい
 category: faq
 db:

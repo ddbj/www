@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: アミノ酸配列の登録方法を教えてください
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 特許出願に関連する塩基配列を DDBJ に登録できますか
 category: faq
 db:

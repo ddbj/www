@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: On the process of submission of a paper to a journal, we have to show the referee our nucleotide sequence submitted as "Hold-Until-Published" status...
 category: faq
 db:

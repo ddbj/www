@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 登録済で未公開の配列とアクセッション番号との対応がわからなくなりました
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How are the data released from DDBJ published at EMBL-Bank, GenBank?
 category: faq
 db:

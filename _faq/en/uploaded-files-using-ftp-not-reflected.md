@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: The files that I uploaded using FTP are not reflected on the Web.
 category: faq
 db:

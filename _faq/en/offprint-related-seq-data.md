@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Should we send offprint related to our sequence data?
 category: faq
 db:

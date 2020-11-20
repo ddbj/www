@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to describe organism name for artificially constructed sequence?
 category: faq
 db:

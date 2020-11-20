@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 新しくアカウント登録をおこなったが、メールが届きません
 category: faq
 db:

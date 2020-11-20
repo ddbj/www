@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: I can not scp transfer my files.
 category: faq
 db:

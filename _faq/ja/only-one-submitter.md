@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 登録者は独りでも問題ありませんか?
 category: faq
 db:

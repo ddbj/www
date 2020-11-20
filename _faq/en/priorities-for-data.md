@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: If I submit sequence data to DDBJ, can I get priorities for the data?
 category: faq
 db:

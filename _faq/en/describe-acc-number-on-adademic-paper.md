@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to describe accession numbers on the academic paper?
 category: faq
 db:

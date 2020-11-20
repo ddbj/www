@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Lost correspondence of sequence data submitted as "Hold-Until-Published" status
 category: faq
 db:

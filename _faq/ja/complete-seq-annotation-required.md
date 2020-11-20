@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 全ゲノム配列を登録する際に、アノテーションは必要でしょうか
 category: faq
 db:

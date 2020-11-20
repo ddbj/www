@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How can I describe DEFINITION?
 category: faq
 db:

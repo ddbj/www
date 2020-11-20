@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: DDBJ に登録されたデータ（アクセッション番号）へ直接リンクを張る方法はありますか。
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Is out.sam SAM file generation for mapping information?
 category: faq
 db:

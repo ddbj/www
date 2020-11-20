@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: What are the browser that the DDBJ service supports?
 category: faq
 db:

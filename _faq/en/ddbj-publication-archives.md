@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Please see the DDBJ publication archive.
 category: faq
 db:

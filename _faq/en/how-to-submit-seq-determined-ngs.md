@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to submit sequence data determined by Next Generation Sequencers?
 category: faq
 db:

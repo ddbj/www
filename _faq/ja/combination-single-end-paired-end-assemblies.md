@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: IlluminaやRoche454のsingle end , paired end データを組み合わせての、アセンブリは可能ですか？
 category: faq
 db:

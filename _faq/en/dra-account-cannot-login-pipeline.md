@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: I have a DRA account, but I can’t log in to Pipeline
 category: faq
 db:

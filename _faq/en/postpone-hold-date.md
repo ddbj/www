@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to postpone the hold date?
 category: faq
 db:

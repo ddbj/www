@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 最新データが最も早く参照できる検索サービスは何ですか
 category: faq
 db:

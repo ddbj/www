@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Does DDBJ offer data search and analysis services?
 category: faq
 db:

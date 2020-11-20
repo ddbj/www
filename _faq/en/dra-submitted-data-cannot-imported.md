@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Data registered for DRA under the [Import Public DRA tab] cannot be imported.
 category: faq
 db:

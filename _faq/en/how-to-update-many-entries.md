@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to update many entries with a number of corrections?
 category: faq
 db:

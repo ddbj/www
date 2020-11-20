@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: When updating published sequence data, can I hold updated version in the mean time?
 category: faq
 db:

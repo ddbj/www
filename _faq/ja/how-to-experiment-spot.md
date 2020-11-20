@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: '[Set optional parameters 画面] 空白欄に何を入れていいのかわかりません'
 category: faq
 db:

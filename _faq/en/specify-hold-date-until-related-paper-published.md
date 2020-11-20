@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: I like to hold my sequence data until publication of related paper, should l specify the hold date?
 category: faq
 db:

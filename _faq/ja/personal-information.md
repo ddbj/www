@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 個人情報漏れは大丈夫ですか
 category: faq
 db:

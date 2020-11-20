@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How many data can I submit by using Mass Submission System?
 category: faq
 db:

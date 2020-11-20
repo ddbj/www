@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 'How to fix error message: "Stop codon ‘*’ is found in the range."?'
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Which accession numbers should be cited in publication?
 category: faq
 db:

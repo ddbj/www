@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 論文中で BioSample アクセッション番号を引用すべきですか？
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Is there an appropriate way to submit submissions containing many metadata objects?
 category: faq
 db:

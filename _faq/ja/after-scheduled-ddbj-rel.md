@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 「DDBJ 定期リリース後」とは具体的にいつですか
 category: faq
 db:

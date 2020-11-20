@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Which should I use to submit to DDBJ, Nucleotide Sequence Submission System or Mass Submission System?
 category: faq
 db:

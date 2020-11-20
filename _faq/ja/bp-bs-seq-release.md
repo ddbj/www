@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: BioProject/BioSample/塩基配列データの連動公開の仕組みは？
 category: faq
 db:

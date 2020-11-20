@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How are my data files processed?
 category: faq
 db:

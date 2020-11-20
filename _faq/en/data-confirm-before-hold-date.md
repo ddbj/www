@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Before the hold date, how can we confirm contents of the data?
 category: faq
 db:

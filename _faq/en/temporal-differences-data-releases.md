@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How long are the temporal differences of data releases among DDBJ, EMBL-Bank and GenBank?
 category: faq
 db:

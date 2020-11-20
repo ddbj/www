@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Though I am not the original submitter of the sequence data, can I correct an error in the data?
 category: faq
 db:

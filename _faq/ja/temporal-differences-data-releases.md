@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: DDBJ/EMBL/GenBank で最新データが公開される時間的な差はどのくらいですか
 category: faq
 db:

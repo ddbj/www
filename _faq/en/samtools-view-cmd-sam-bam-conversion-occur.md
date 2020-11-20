@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: With the command samtools view -bS -o out.bam out.sam, will SAM--->BAM conversion occur?
 category: faq
 db:

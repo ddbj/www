@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Do we have to submit sequence data to DDBJ, when the journal has no requirement to do so?
 category: faq
 db:

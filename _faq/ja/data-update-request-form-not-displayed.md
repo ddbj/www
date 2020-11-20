@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 登録データの修正・更新申し込みフォームが表示されません
 category: faq
 db:

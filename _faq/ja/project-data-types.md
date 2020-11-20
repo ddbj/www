@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: データの種類ごとに別々のプロジェクトが必要ですか？
 category: faq
 db:

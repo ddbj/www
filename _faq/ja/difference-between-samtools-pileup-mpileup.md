@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: '[Set optional parameters 画面] SAMtools pileup とSAMtools mpileup の違いがわからない'
 category: faq
 db:

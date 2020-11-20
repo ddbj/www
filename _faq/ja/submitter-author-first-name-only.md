@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: first name のみの登録者、論文著者は どのように記載すれば よいでしょうか
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to submit sequence-based expression data like as RNA seq?
 category: faq
 db:

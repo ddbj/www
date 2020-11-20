@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: JGA サーバに scp/ssh アクセスできません
 category: faq
 db:

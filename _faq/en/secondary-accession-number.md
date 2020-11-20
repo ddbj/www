@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: What is secondary accession number?
 category: faq
 db:

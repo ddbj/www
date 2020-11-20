@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: What is the date in LOCUS line?
 category: faq
 db:

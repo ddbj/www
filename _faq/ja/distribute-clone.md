@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: クローンを配布して欲しい
 category: faq
 db:

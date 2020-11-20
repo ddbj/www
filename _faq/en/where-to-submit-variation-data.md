@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Where to submit variation data, such as single nucleotide variations, structural variations, copy number variations (CNVs) and so on?
 category: faq
 db:

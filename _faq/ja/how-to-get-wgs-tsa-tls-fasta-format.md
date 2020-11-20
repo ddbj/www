@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: WGS、TSA、TLSデータのFASTA形式のファイルを取得するにはどうしたらいいですか？
 category: faq
 db:

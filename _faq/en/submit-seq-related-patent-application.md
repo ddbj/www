@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Can we submit sequence data related to patent application?
 category: faq
 db:

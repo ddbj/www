@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: GEA、ArrayExpress と GEO はデータ交換していますか？
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: What kinds of data are acceptable at DDBJ?
 category: faq
 db:

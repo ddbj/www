@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: My FTP connection is not good
 category: faq
 db:

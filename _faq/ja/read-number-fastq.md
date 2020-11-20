@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: DRA で公開されている fastq のリード数が生データのそれよりも少ないのは何故でしょうか?
 category: faq
 db:

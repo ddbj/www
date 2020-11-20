@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 画面を戻って入力済の内容を修正可能でしょうか
 category: faq
 db:
