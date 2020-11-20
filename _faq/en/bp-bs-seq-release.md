@@ -12,7 +12,7 @@ date: 2014-12-15T11:41:03
 lang: en
 ---
 
-## How are linked BioProject/BioSample/sequence data released?
+
 
 <p>Linked <a href="/bioproject/index-e.html">BioProject</a>, <a href="/biosample/index-e.html">BioSample</a>, <a href="/ddbj/submission.html">DDBJ</a> and <a href="/dra/index-e.html">DRA</a> data are released as follows.</p>
 <div class="sub_index">

@@ -10,7 +10,7 @@ date: 2014-06-04T16:24:59
 lang: ja
 ---
 
-## "Stop codon ‘*’ is found in the range." というエラーが表示されました
+
 
 <p>一般的な対応方法については <a href="/ddbj/cds.html#stop">途中に出現する終止コドンへの対応</a> をご確認ください。<br><a href="/ddbj/cds.html">タンパク質コード配列; CDS feature について</a> も ぜひ ご覧ください。<br>以下では代表的な事例について説明しています。
   <!-- Nucleotide Sequence Submission System -->

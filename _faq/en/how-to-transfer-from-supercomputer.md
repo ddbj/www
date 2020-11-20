@@ -10,7 +10,7 @@ date: 2014-12-12T15:22:30
 lang: en
 ---
 
-## How to transfer data files from the NIG supercomputer to my DRA directory?
+
 
 <h4 class="bold">If the private key was generated on Unix/Mac OS X</h4>
 <p>Transfer your private key to the NIG supercomputer (Linux). Next, transfer the files by executing.</p>

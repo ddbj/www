@@ -8,7 +8,7 @@ date: 2014-05-30T17:14:31
 lang: ja
 ---
 
-## ジョブがエラーになる
+
 
 <p>
   &lt;パターン1&gt;<br><span style="font-size: 15px; color:rgb(0,0,255)">Status画面で、Statusが「error」でStart timeが「表示されていない」場合</span>

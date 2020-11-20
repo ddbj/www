@@ -10,7 +10,7 @@ date: 2014-06-30T18:41:35
 lang: en
 ---
 
-## How to describe a submiter or an author who has first name only?
+
 
 <dl><dt>In case of Mass Submission System</dt>
   <dd>Describe first name, only. <br>Though some warning will be outputted, please ignore them. </dd><dt>In case of Nucleotide Sequence Submission System</dt>

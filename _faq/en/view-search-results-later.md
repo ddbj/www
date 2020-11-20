@@ -10,7 +10,7 @@ date: 2015-06-04T16:06:17
 lang: en
 ---
 
-## Is it possible to view search results at a later time?
+
 
 <html>
 <dl class="d-triangle"><dt>Search results may be accessed via the following URL, which contains a Request ID field.</dt>

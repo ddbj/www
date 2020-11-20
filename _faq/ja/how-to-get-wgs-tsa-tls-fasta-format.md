@@ -10,7 +10,7 @@ date: 2016-05-19T11:10:18
 lang: ja
 ---
 
-## WGS、TSA、TLSデータのFASTA形式のファイルを取得するにはどうしたらいいですか？
+
 
 <p>WGS、TSA、TLSデータのFASTA形式のファイルを取得するには、<a href="http://getentry.ddbj.nig.ac.jp/top-j.html">getentry</a> で以下を指定し、検索を行ってください。</p>
 <p><span class="icon_square font-bold"> ID</span>：検索対象の Accession 番号を指定します。<br><span class="icon_square font-bold"> 出力形式</span>：<span class="font-bold">"全塩基配列 FASTA"</span> を選択します。<br><span class="icon_square font-bold"> 取得方法</span>：以下から選択します。<br></p>

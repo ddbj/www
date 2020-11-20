@@ -10,7 +10,7 @@ date: 2014-06-03T16:09:25
 lang: ja
 ---
 
-## 送付した配列データが登録されないということはあるのですか
+
 
 <p><a href="/documents/data-categories.html">DDBJ に登録可能なデータ</a> をご参照ください。 <br>不明な点は<a href="/contact-ddbj.html#to-ddbj">DDBJへのお問い合わせ</a> よりお願いいたします。</p>
 <dl><dt>参考</dt>

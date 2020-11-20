@@ -12,7 +12,7 @@ date: 2014-07-03T16:28:42
 lang: en
 ---
 
-## The amino acid sequence in the value of /translation qualifier seems to be incorrect.
+
 
 <p>The rule to translate nucleotide sequence into amino acid sequence is specified in accordance with agreements of <a href="/insdc-e.html">International Nucleotide Sequence Database Collaboration</a>. <br>The codon table using a CDS feature is specified in the value of /<a href="/ddbj/qualifiers-e.html#transl_table">transl_table</a> qualifier as a number of <a href="/ddbj/geneticcode-e.html">The Genetic Codes</a>. </p>
 <p>There are three points frequently misunderstood. </p>

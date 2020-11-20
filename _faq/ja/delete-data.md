@@ -10,7 +10,7 @@ date: 2014-05-30T18:17:23
 lang: ja
 ---
 
-## DDBJ に登録したデータを抹消したい
+
 
 <p>原則として、下記を満たす場合に限り対応可能です。<br>1) 配列データが、かつて一度も公開されたことがない<br>2) そのアクセッション番号が<a href="/documents/data-release-policy.html">公表</a>されていない<br><br><a href="/contact-ddbj.html#to-ddbj">DDBJへのお問い合わせ</a> より、以下の項目についてお知らせください。</p>
 <ul>

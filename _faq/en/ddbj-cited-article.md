@@ -10,7 +10,7 @@ date: 2014-06-18T16:07:48
 lang: en
 ---
 
-## We would like to cite the article of DDBJ.
+
 
 <p>When you kindly describe about using DDBJ on academic papers etc., in general, please use <a href="/services/references-e.html">the latest article for DDBJ</a> on Nucleic Acids Res. Database issue as a reference. </p>
 <p>However, please note followings.</p>

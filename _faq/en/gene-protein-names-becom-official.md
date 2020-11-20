@@ -10,7 +10,7 @@ date: 2014-06-26T11:32:51
 lang: en
 ---
 
-## If I submit sequence data with gene and protein names, will the names become official?
+
 
 <p>DDBJ does not have any right for the gene nomenclature. Also, DDBJ does not make any official collaboration with any committee of gene nomenclature. If there is no particular incident, the descriptions related to gene nomenclature are described as provided by submitter. <br>Even if you name a gene during your sequence data submission to DDBJ, there is no guarantee that the gene name is accepted at research communities. </p>
 <dl><dt>References</dt>

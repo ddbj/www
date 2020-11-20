@@ -10,7 +10,7 @@ date: 2014-06-10T10:09:43
 lang: en
 ---
 
-## How to update our sequence?
+
 
 <p>Please send your request from <a href="/contact-ddbj-e.html#to-ddbj">contact form</a> with the following contents in clear English.</p>
 <ul>

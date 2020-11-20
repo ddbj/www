@@ -10,7 +10,7 @@ date: 2016-05-19T11:11:12
 lang: en
 ---
 
-## How do I get a FASTA format of WGS, TSA, or TLS entries?
+
 
 <p>To get a FASTA format of WGS, TSA, or TLS entries, please use "<a href="http://getentry.ddbj.nig.ac.jp/top-e.html">getentry</a>", specifying the following values.</p>
 <p><span class="icon_square font-bold"> ID </span>: Specify the Accession Number.<br><span class="icon_square font-bold"> Output format </span>: Select <span class="font-bold">"total nt seq FASTA"</span> for the result.<br><span class="icon_square font-bold"> Result </span>: Select one from the following filetype for the output.<br></p>

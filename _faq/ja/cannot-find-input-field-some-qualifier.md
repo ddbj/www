@@ -10,7 +10,7 @@ date: 2014-06-04T15:47:29
 lang: ja
 ---
 
-## 入力画面上に入力したい qualifier の欄がありません
+
 
 <p><strong>[Select Qualifier]</strong> をクリックし、必要な qualifier にチェックを入れて [Save] することで qualifier 入力欄が <a href="/ddbj/web-submission-help.html#flow-7">7.Annotation</a> の入力画面に追加されます。</p>
 <!-- Nucleotide Sequence Submission System -->

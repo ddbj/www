@@ -10,7 +10,7 @@ date: 2014-07-24T10:47:06
 lang: ja
 ---
 
-## env_biome，env_feature，env_material の違いは？
+
 
 <p>これら三つのサンプル属性では生息している生物に影響する環境について記述します。</p>
 <h3 id="biome"><a href="/biosample/attribute-e.html?all=all#env_biome">env_biome</a></h3>

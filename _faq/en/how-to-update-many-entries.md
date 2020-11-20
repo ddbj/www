@@ -10,7 +10,7 @@ date: 2014-06-10T10:20:34
 lang: en
 ---
 
-## How to update many entries with a number of corrections?
+
 
 <p>If you are making update request for large number of entries, or many changes of features/locations/qualifiers due to sequence modification, see followings.</p>
 <dl><dt>(1) Update information is in common of all entries.</dt>

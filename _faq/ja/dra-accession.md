@@ -10,7 +10,7 @@ date: 2014-04-21T11:59:04
 lang: ja
 ---
 
-## 投稿論文では，どのアクセッション番号を引用するべきですか？
+
 
 <html>
 <p> DRA 登録は以下のプレフィックスのオブジェクトから構成されます。 <a href="/prefix-e.html">Prefix Letter List</a> </p>

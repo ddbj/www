@@ -10,7 +10,7 @@ date: 2014-07-01T17:32:00
 lang: en
 ---
 
-## Is there any reference for Feature/Qualifier?
+
 
 <p>See followings. </p>
 <ul>

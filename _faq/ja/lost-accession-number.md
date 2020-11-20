@@ -10,7 +10,7 @@ date: 2014-06-03T16:35:47
 lang: ja
 ---
 
-## アクセッション番号を紛失してしまいました
+
 
 <p>EntryID などデータを特定できる ID がわかる場合、<a href="/ddbj/submission.html#contact">コンタクトパーソン (contact person)</a>のメールアドレスと共に <a href="/contact-ddbj.html#to-ddbj">DDBJへのお問い合わせ</a> よりご連絡ください。<br>不明な場合、以下の情報をわかる範囲で お知らせいただければ調査します。</p>
 <ul>

@@ -11,7 +11,7 @@ date: 2014-07-24T10:49:53
 lang: en
 ---
 
-## What is the difference between env_biome, env_feature and env_material?
+
 
 <p>These three sample attributes describe environmental systems have influences on living organisms.</p>
 <h3 id="biome"><a href="/biosample/attribute-e.html?all=all#env_biome">env_biome</a></h3>

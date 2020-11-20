@@ -10,7 +10,7 @@ date: 2020-10-15T11:19:00
 lang: ja
 ---
 
-## JGA サーバに scp/ssh アクセスできません
+
 
 <p>以下の基本的な点をご確認ください。</p>
 <div class="sub_index">

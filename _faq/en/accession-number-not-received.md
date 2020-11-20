@@ -10,7 +10,7 @@ date: 2014-07-01T16:13:15
 lang: en
 ---
 
-## I have not yet received accession number, how many days does it take to get accession number?
+
 
 <p>We cannot answer the days to issue accession number(s) because it depend on the contents of your submission.<br>If you do not receive any email from DDBJ after 5 working days, please contact us from <a href="/contact-ddbj-e.html#to-ddbj">contact form</a>. See <a href="/calendar-e.html">DDBJ Calendar</a> about working days of DDBJ Center.
   <p>Please make sure <a href="/ddbj/precautions-e.html">not to block E-mails from DDBJ</a>.</p>

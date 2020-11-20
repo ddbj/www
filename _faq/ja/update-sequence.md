@@ -10,7 +10,7 @@ date: 2014-05-30T18:09:07
 lang: ja
 ---
 
-## 配列を更新したい
+
 
 <p>依頼者のお名前、ご所属を明記の上、以下の項目について <a href="/contact-ddbj.html#to-ddbj">DDBJへのお問い合わせ</a> よりお知らせください。nn<br>宛先: <img src="{{ site.baseurl }}/assets/images/news/ad_updt.gif" alt="ddbjupdt#64;ddbj.nig.ac.jp" title="ad_updt" width="180" height="19" class="alignnone size-full wp-image-1298"></p>
 <ul>

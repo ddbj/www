@@ -10,7 +10,7 @@ date: 2014-07-07T11:37:33
 lang: en
 ---
 
-## I can not upload my annotation file
+
 
 <p>Confirm following points. </p>
 <ul>

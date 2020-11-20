@@ -10,7 +10,7 @@ date: 2014-06-13T18:20:06
 lang: en
 ---
 
-## How to delete my data?
+
 
 <p>In principle, following two conditions are required to delete your sequence data; </p>
 <p>1) The sequence data has not yet been publicized<br>2) The accession number of the data has not yet been <a href="/documents/data-release-policy-e.html">published</a>. <br></p>

@@ -8,7 +8,7 @@ date: 2014-09-17T15:28:09
 lang: en
 ---
 
-## My job generated an error
+
 
 <p>( Pattern 1 )<br><span style="font-size: 15px; color:rgb(0,0,255)">If on the Status screen, the Status shows as “error” and the Start time as “not displayed”.</span></p>
 <ul>

@@ -10,7 +10,7 @@ date: 2016-02-26T13:36:10
 lang: ja
 ---
 
-## 単一塩基変異 (SNV)、構造多型 (structural variation)、コピー数変異 (CNV) データなどは どこに登録すれば良いのでしょうか
+
 
 <p>DDBJ では、SNV, CGH analysis, microarray, variation といったデータを扱う公的データベースが存在しませんが、NCBI または EBI にて登録が可能です。<br>適宜、下記へご登録ください。詳細は各データベースにお尋ねください。</p>
 <p><a href="http://www.ncbi.nlm.nih.gov/">NCBI</a>: <a href="http://www.ncbi.nlm.nih.gov/geo/">Gene Expression Omnibus (GEO)</a>, <a href="http://www.ncbi.nlm.nih.gov/SNP/">dbSNP</a>, <a href="http://www.ncbi.nlm.nih.gov/dbvar">dbVar</a>, <a href="http://www.ncbi.nlm.nih.gov/clinvar/">ClinVar</a><br><a href="http://www.ebi.ac.uk/">EBI</a>: <a href="http://www.ebi.ac.uk/arrayexpress/">ArrayExpress</a>, <a href="http://www.ebi.ac.uk/eva/">European Variation Archive (EVA)</a>, <a href="http://www.ebi.ac.uk/dgva">Database of Genomic Variants archive (DGVa)</a></p>

@@ -10,7 +10,7 @@ date: 2014-06-03T15:40:02
 lang: ja
 ---
 
-## first name のみの登録者、論文著者は どのように記載すれば よいでしょうか
+
 
 <dl><dt>MSS の場合</dt>
   <dd>first name のみ記載してください。<br>登録の際、関連する警告 warning が出力されますが、問題はありませんので無視してください。</dd><dt>塩基配列登録システム<!-- Nucleotide Sequence Submission System -->の場合</dt>

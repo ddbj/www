@@ -10,7 +10,7 @@ date: 2015-06-04T14:50:20
 lang: en
 ---
 
-## How do I interpret the search results?
+
 
 Search results are displayed in the following order.
 <ol>

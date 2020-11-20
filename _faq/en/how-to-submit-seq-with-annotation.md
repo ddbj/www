@@ -10,7 +10,7 @@ date: 2014-06-16T16:05:27
 lang: en
 ---
 
-## How to submit sequence data with annotation to DDBJ?
+
 
 <p>Select from following two ways. </p>
 <ul>

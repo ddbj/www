@@ -12,7 +12,7 @@ date: 2014-06-03T17:08:55
 lang: ja
 ---
 
-## /translation qualifier で示されるアミノ酸配列の翻訳は間違いではないでしょうか
+
 
 <p>アミノ酸翻訳の仕様は<a href="/insdc.html">国際塩基配列データベース</a>の規約で決まっています。<br>当該 CDS feature がアミノ酸翻訳される際の遺伝暗号表は /<a href="/ddbj/qualifiers.html#transl_table">transl_table</a> qualifier に <a href="/ddbj/geneticcode-e.html">The Genetic Codes</a> の番号で示されます。<br>よく誤解される点を３つ挙げておきます。</p>
 <ul>

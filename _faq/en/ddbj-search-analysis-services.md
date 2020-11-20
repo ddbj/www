@@ -11,7 +11,7 @@ date: 2015-06-08T11:44:25
 lang: en
 ---
 
-## Does DDBJ offer data search and analysis services?
+
 
 There are two ways of searching and analyzing data, as discussed below. Please select the option that is appropriate for your needs.
 <ul>

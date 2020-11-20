@@ -10,7 +10,7 @@ date: 2015-04-02T12:01:07
 lang: en
 ---
 
-## Which accession numbers should be cited in publication?
+
 
 <html>
 <p>A DRA submission is composed of following objects with unique prefix.<a href="/prefix-e.html">LINK : Prefix Letter List</a> </p>

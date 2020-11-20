@@ -10,7 +10,7 @@ date: 2014-01-23T11:25:53
 lang: en
 ---
 
-## I have not received accession numbers yet - is something wrong?
+
 
 <p>Please login to the submission system and check the status of your submission.</p>
 <div class="sub_index">

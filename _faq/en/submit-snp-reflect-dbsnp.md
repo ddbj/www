@@ -10,7 +10,7 @@ date: 2014-06-30T16:02:54
 lang: en
 ---
 
-## After submission of SNP data to DDBJ, will it automatically reflect to dbSNP?
+
 
 <p>Though you can submit sequence data including SNP (Single Nucleotide Polymorphisms) to DDBJ, the data will not automatically reflect to dbSNP. <br><a href="http://www.ncbi.nlm.nih.gov/SNP/">dbSNP</a> is an independent database from <a href="/insdc-e.html">INSDC</a>, operated by NCBI. <br>For SNP data, we recommend you to submit to dbSNP. </p>
 <p>In case of submission to DDBJ, see format of feature annotation at <a href="/ddbj/example-e.html#B13">B13) polymorphism and variation</a> on <a href="/ddbj/example-e.html">Example of Submission</a>. </p>

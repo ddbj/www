@@ -8,7 +8,7 @@ date: 2017-04-27T12:00:32
 lang: ja
 ---
 
-## RNA-seqワークフローを使いたいのですが、どうしたらいいですか？
+
 
 <div>RNA-seq定量化は、DDBJ Pipelineでは現在サポートを終了しております。（DNApod_Pitagora-Galaxyは、SNP注釈用です)</div>
 <div>Pipeline後続RNA-seq定量化の選択肢は、下記があります。</div>

@@ -9,7 +9,7 @@ date: 2013-10-08T10:31:22
 lang: ja
 ---
 
-## 公開されているデータをダウンロードする方法を教えてください
+
 
 <p>DDBJ ftp サーバ <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq">ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq</a> からダウンロードしてください。</p>
 <h4 class="bold">wget</h4>

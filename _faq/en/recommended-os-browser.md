@@ -11,7 +11,7 @@ date: 2015-04-24T14:26:54
 lang: en
 ---
 
-## What are the browser that the DDBJ service supports?
+
 
 DDBJ recommend using the following OS and browsers to use our services. <br>
 <dl class="d-triangle"><dt>DDBJ HP</dt>

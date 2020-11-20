@@ -10,7 +10,7 @@ date: 2014-06-19T18:54:39
 lang: en
 ---
 
-## Can we submit sequence data related to patent application?
+
 
 <p>Nucleotide sequence data related to patent applications are transferred from Japan Patent Office to DDBJ. <br>So, usually, you do not have to submit such sequence data to DDBJ. </p>
 <p>However, if you apply to any other Patent Office, or if you need to publish a paper during patent application, confirm at Patent Office whether you can submit the data to DDBJ or not. </p>

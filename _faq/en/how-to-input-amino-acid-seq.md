@@ -10,7 +10,7 @@ date: 2014-07-03T15:54:55
 lang: en
 ---
 
-## How can I input amino acid sequence (/translation qualifier) for CDS feature?
+
 
 <p>The amino acid sequence for <a href="/ddbj/cds-e.html">CDS feature</a> will be automatically translated from nucleotide sequence according to location and other items, and reflected into <a href="/ddbj/qualifiers-e.html#translation">/translation qualifier</a>. So, in general, do not enter it. </p>
 <dl><dt>References</dt>

@@ -10,7 +10,7 @@ date: 2014-06-02T16:11:21
 lang: ja
 ---
 
-## 論文に DDBJ を利用したことについて引用したいと思います。文献を紹介してください。
+
 
 <p>学術論文などで DDBJ について引用いただける場合、通常は、Nucleic Acids Res. Database issue における <a href="/services/references.html">DDBJ に関する最新論文</a>の引用をお願いいたします。</p>
 <p>ただし、以下の点についてご注意ください。</p>

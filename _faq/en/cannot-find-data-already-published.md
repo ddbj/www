@@ -10,7 +10,7 @@ date: 2014-07-03T10:48:53
 lang: en
 ---
 
-## I can not find sequence data that should be published.
+
 
 <p>There are some possibilities as followings. </p>
 <dl><dt>1) In case of the meantime of data distribution: </dt>

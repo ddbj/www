@@ -11,7 +11,7 @@ date: 2014-06-04T17:01:19
 lang: en
 ---
 
-## What is the relationship between BioSamples, SRA Experiments, SRA Runs, and my data files?
+
 
 <p>BioSample is descriptive information about the biological source materials, or samples, used to generate experimental data in any of primary data archives. Biological and technical replicates need to be registered as separate BioSamples distinguished by the "replicate" attribute having values such as "biological replicate 1" and "biological replicate 2".</p>
 <p>Each SRA Experiment is a unique sequencing library for a specific sample. Importantly, much of the descriptive information that is displayed in the public record of your data is captured at the level of the DRA Experiment. </p>

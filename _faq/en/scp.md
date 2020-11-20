@@ -10,7 +10,7 @@ date: 2014-11-19T14:07:21
 lang: en
 ---
 
-## I can not scp transfer my files.
+
 
 <p>First, confirm the following basic points.</p>
 <div class="sub_index">

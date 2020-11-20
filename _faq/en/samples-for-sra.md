@@ -11,7 +11,7 @@ date: 2014-06-04T12:15:52
 lang: en
 ---
 
-## How many samples do I need for my DRA submission?
+
 
 <p>BioSample is descriptive information about the biological source materials, or samples, used to generate experimental data in any of primary data archives. Biological and technical replicates are represented by separate BioSamples with distinct 'replicate' attribute, e.g., 'replicate = biological replicate 1'.</p>
 <p>For environmental samples, each physical isolate should be considered a BioSample, whereas uniquely attributable reads within an isolate are not. Note that a given DRA data file can be linked to a single BioSample only.</p>Basic guidance for BioSample registration are:
