@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAGE-TAB の例</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">MAGE-TAB の例</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/gea">gea</a>
+          </li>
+          <li>
+            <a href="">MAGE-TAB の例</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/gea/index.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/gea/overview.html">Submission Overview</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/gea/submit-array.html">Submit microarray experiment</a>
+        </li>
+        
+        <li>
+          <a href="/gea/submit-sequence.html">Submit sequencing experiment</a>
+        </li>
+        
+        <li>
+          <a href="/gea/metadata.html">Metadata</a>
+        </li>
+        
+        <li>
+          <a href="/gea/datafile.html">Data File</a>
+        </li>
+        
+        <li>
+          <a href="/gea/validation.html">Validation</a>
+        </li>
+        
+        <li>
+          <a href="/gea/single-cell.html">Single-cell submission guide</a>
+        </li>
+        
+        <li>
+          <a href="/gea/example.html">Example</a>
+        </li>
+        
+        <li>
+          <a href="/gea/adf.html">Array Design</a>
+        </li>
+        
+        <li>
+          <a href="/gea/matrix.html">Data matrix</a>
+        </li>
+        
+        <li>
+          <a href="/gea/reviewer-access.html">Reviewer Access</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/ja/index.html">FAQ</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="http://aoe.dbcls.jp/">Search (AOE)</a>
+      
+      <ul>
+        
+        <li>
+          <a href="https://www.ebi.ac.uk/arrayexpress/browse.html">Search (ArrayExpress)</a>
+        </li>
+        
+        <li>
+          <a href="http://refex.dbcls.jp/">RefEx</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/gea">Downloads</a>
+      
+    </li>
+    
+    <li class="">
+      <a href="/gea/about-gea.html">About GEA</a>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="idf-例-">IDF 例 <a name="idf"></a></h2>
+
+<p><a href="https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=0">IDF
+スプレッドシート例</a></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="/gea/metadata-e.html#Comment_idf">Comment[GEAAccession]</a></td>
+      <td>E-GEAD-369</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MAGE-TAB Version</td>
+      <td>1.1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/gea/metadata-e.html#Investigation_Title">Investigation Title</a></td>
+      <td>Transcriptional profiling of Arabidopsis leaves exposed to elevated temperature</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/gea/metadata-e.html#Experiment_Description">Experiment Description</a></td>
+      <td>We investigated genome-wide … biological replicates were analyzed.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/gea/metadata-e.html#Experimental_Design">Experimental Design</a></td>
+      <td>stimulus or stress design</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/gea/metadata-e.html#Experimental_Factor_Name">Experimental Factor Name</a></td>
+      <td>temperature</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/gea/metadata-e.html#Experimental_Factor_Type">Experimental Factor Type</a></td>
+      <td>temperature</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/gea/metadata-e.html#Person_Last_Name">Person Last Name</a></td>
+      <td>Test</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/gea/metadata-e.html#Person_First_Name">Person First Name</a></td>
+      <td>Tarou</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/gea/metadata-e.html#Person_Affiliation">Person Affiliation</a></td>
+      <td>DDBJ Center, National Institute of Genetics</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/gea/metadata-e.html#Person_Roles">Person Roles</a></td>
+      <td>submitter</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/gea/metadata-e.html#Public_Release_Date">Public Release Date</a></td>
+      <td>2018-06-22</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/gea/metadata-e.html#PubMed_ID">PubMed ID</a></td>
+      <td>29040613</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/gea/metadata-e.html#Protocol_Name">Protocol Name</a></td>
+      <td>P-GEAD-535</td>
+      <td>…</td>
+    </tr>
+    <tr>
+      <td><a href="/gea/metadata-e.html#Protocol_Type">Protocol Type</a></td>
+      <td>sample collection protocol</td>
+      <td>…</td>
+    </tr>
+    <tr>
+      <td><a href="/gea/metadata-e.html#Protocol_Description">Protocol Description</a></td>
+      <td>Plants were sown on GM medium … 22 degrees celsius.</td>
+      <td>…</td>
+    </tr>
+    <tr>
+      <td><a href="/gea/metadata-e.html#SDRF_File">SDRF File</a></td>
+      <td>E-GEAD-369.sdrf.txt</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/gea/metadata-e.html#Comment_idf">Comment[Number of channel]</a></td>
+      <td>single-channel</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/gea/metadata-e.html#Comment_idf">Comment[Array Design REF]</a></td>
+      <td>A-AFFY-2</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/gea/metadata-e.html#Comment_idf">Comment[AEExperimentType]</a></td>
+      <td>transcription profiling by array</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/gea/metadata-e.html#Comment_idf">Comment[BioProject]</a></td>
+      <td>PRJDB3647</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/gea/metadata-e.html#Comment_idf">Comment[Public Release Date]</a></td>
+      <td>2018-06-22</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/gea/metadata-e.html#Comment_idf">Comment[Last Update Date]</a></td>
+      <td>2018-06-22</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>サポートされている IDF タグの全リストは <a href="/gea/metadata-e.html#idf">IDF ページ</a>をご覧ください。</p>
+
+<h2 id="sdrf-概念的な例-">SDRF 概念的な例 <a name="sdrf_con"></a></h2>
+
+<p><a href="https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=657626667">SDRF
+スプレッドシート例</a></p>
+
+<ul>
+  <li><a href="#sdrf_example1">Example 1: サンプル毎の生データと解析済みデータファイル</a></li>
+  <li><a href="#sdrf_example2">Example 2: Two-color マイクロアレイ</a></li>
+  <li><a href="#sdrf_example3">Example 3: サンプル毎の次世代シークエンス DRA 生データ (Run)
+と解析済みデータファイル、及び、解析済みマトリックスファイル</a></li>
+</ul>
+
+<p>以下の例では概念上重要なカラムに限定した SDRF グラフと対応する表を示しています。青色のカラムヘッダーはグラフノード（Name
+カラム）を表しています。</p>
+
+<h3 id="example-1-サンプル毎の生データと解析済みデータファイル-">Example 1: サンプル毎の生データと解析済みデータファイル <a name="sdrf_example1"></a></h3>
+
+<p>単純なマイクロアレイ実験。各サンプルに対して１つの生データファイルと解析済みデータファイルがあるケース。</p>
+
+<a class="group1" href="/assets/images/magetab/sdrf1.png" title="各サンプルに対して１つの生データファイルと解析済みデータファイルがあるケース">
+  <figure class="image">
+    <img src="/assets/images/magetab/sdrf1.png" alt="各サンプルに対して１つの生データファイルと解析済みデータファイルがあるケース" class="w400">
+    <figcaption>各サンプルに対して１つの生データファイルと解析済みデータファイルがあるケース</figcaption>
+  </figure>
+</a>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Source Name</td>
+      <td>Protocol REF</td>
+      <td>Assay Name</td>
+      <td>Array Data File</td>
+      <td>Derived Array Data File</td>
+    </tr>
+    <tr>
+      <td>Source 1</td>
+      <td>P-GEAD-10</td>
+      <td>Hybridization 1</td>
+      <td>Data1.CEL</td>
+      <td>Processed1.txt</td>
+    </tr>
+    <tr>
+      <td>Source 2</td>
+      <td>P-GEAD-10</td>
+      <td>Hybridization 2</td>
+      <td>Data2.CEL</td>
+      <td>Processed2.txt</td>
+    </tr>
+    <tr>
+      <td>Source 3</td>
+      <td>P-GEAD-10</td>
+      <td>Hybridization 3</td>
+      <td>Data3.CEL</td>
+      <td>Processed3.txt</td>
+    </tr>
+    <tr>
+      <td>Source 4</td>
+      <td>P-GEAD-10</td>
+      <td>Hybridization 4</td>
+      <td>Data4.CEL</td>
+      <td>Processed4.txt</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="tablecaption">各サンプルに対して１つの生データファイルと解析済みデータファイルがあるケース</p>
+
+<h3 id="example-2-two-color-マイクロアレイ-">Example 2: Two-color マイクロアレイ <a name="sdrf_example2"></a></h3>
+
+<a class="group1" href="/assets/images/magetab/sdrf2.png" title="Two-color マイクロアレイ">
+  <figure class="image">
+    <img src="/assets/images/magetab/sdrf2.png" alt="Two-color マイクロアレイ" class="w400">
+    <figcaption>Two-color マイクロアレイ</figcaption>
+  </figure>
+</a>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Source Name</td>
+      <td>Extract Name</td>
+      <td>Labeled Extract Name</td>
+      <td>Label</td>
+      <td>Assay Name</td>
+    </tr>
+    <tr>
+      <td>Source 1a</td>
+      <td>Extract 1a</td>
+      <td>LabeledExtract 1a Cy3</td>
+      <td>Cy3</td>
+      <td>Hybridization 1</td>
+    </tr>
+    <tr>
+      <td>Source 1b</td>
+      <td>Extract 1b</td>
+      <td>LabeledExtract 1b Cy5</td>
+      <td>Cy5</td>
+      <td>Hybridization 1</td>
+    </tr>
+    <tr>
+      <td>Source 2a</td>
+      <td>Extract 2a</td>
+      <td>LabeledExtract 2a Cy3</td>
+      <td>Cy3</td>
+      <td>Hybridization 2</td>
+    </tr>
+    <tr>
+      <td>Source 2b</td>
+      <td>Extract 2b</td>
+      <td>LabeledExtract 2b Cy5</td>
+      <td>Cy5</td>
+      <td>Hybridization 2</td>
+    </tr>
+    <tr>
+      <td>Source 3a</td>
+      <td>Extract 3a</td>
+      <td>LabeledExtract 3a Cy3</td>
+      <td>Cy3</td>
+      <td>Hybridization 3</td>
+    </tr>
+    <tr>
+      <td>Source 3b</td>
+      <td>Extract 3b</td>
+      <td>LabeledExtract 3b Cy5</td>
+      <td>Cy5</td>
+      <td>Hybridization 3</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="tablecaption">Two-color マイクロアレイ</p>
+
+<h3 id="example-3-サンプル毎の次世代シークエンス-dra-生データ-run-と解析済みデータファイル及び解析済みマトリックスファイル--">Example 3: サンプル毎の次世代シークエンス DRA 生データ (Run) と解析済みデータファイル、及び、解析済みマトリックスファイル  <a name="sdrf_example3"></a></h3>
+
+<p>単純な次世代シークエンス実験。サンプル毎の次世代シークエンス DRA 生データ (Run)
+と解析済みデータファイル、及び、解析済みマトリックスファイル</p>
+
+<a class="group1" href="/assets/images/magetab/sdrf3.png" title="サンプル毎の次世代シークエンス DRA 生データ (Run)
+と解析済みデータファイル、及び、解析済みマトリックスファイル">
+  <figure class="image">
+    <img src="/assets/images/magetab/sdrf3.png" alt="サンプル毎の次世代シークエンス DRA 生データ (Run)
+と解析済みデータファイル、及び、解析済みマトリックスファイル" class="w500">
+    <figcaption>サンプル毎の次世代シークエンス DRA 生データ (Run)
+と解析済みデータファイル、及び、解析済みマトリックスファイル</figcaption>
+  </figure>
+</a>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Source Name</td>
+      <td>Protocol REF</td>
+      <td>Assay Name</td>
+      <td>Array Data File</td>
+      <td>Derived Array Data File</td>
+      <td>Derived Array Data Matrix File</td>
+    </tr>
+    <tr>
+      <td>Source 1</td>
+      <td>P-GEAD-20</td>
+      <td>Sequencing 1</td>
+      <td>DRR000001</td>
+      <td>Processed1.txt</td>
+      <td>Processed-matrix.txt</td>
+    </tr>
+    <tr>
+      <td>Source 2</td>
+      <td>P-GEAD-20</td>
+      <td>Sequencing 2</td>
+      <td>DRR000002</td>
+      <td>Processed2.txt</td>
+      <td>Processed-matrix.txt</td>
+    </tr>
+    <tr>
+      <td>Source 3</td>
+      <td>P-GEAD-20</td>
+      <td>Sequencing 3</td>
+      <td>DRR000003</td>
+      <td>Processed3.txt</td>
+      <td>Processed-matrix.txt</td>
+    </tr>
+    <tr>
+      <td>Source 4</td>
+      <td>P-GEAD-20</td>
+      <td>Sequencing 4</td>
+      <td>DRR000004</td>
+      <td>Processed4.txt</td>
+      <td>Processed-matrix.txt</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="tablecaption">サンプル毎の次世代シークエンス DRA 生データ (Run) と解析済みデータファイル、及び、解析済みマトリックスファイル</p>
+
+<h2 id="mage-tab-実際の例-">MAGE-TAB 実際の例 <a name="tab_real"></a></h2>
+
+<p><a href="https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=657626667">SDRF スプレッドシート例</a></p>
+
+<p>以下は ArrayExpress に実際に登録されているマイクロアレイとシークエンシング実験の MAGE-TAB 例です。</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Accession Number</td>
+      <td>IDF Text</td>
+      <td>SDRF Text</td>
+      <td>Experiment Summary</td>
+      <td>Platform</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-TABM-18">E-TABM-18</a></td>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress/files/E-TABM-18/E-TABM-18.idf.txt">idf text</a></td>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress/files/E-TABM-18/E-TABM-18.sdrf.txt">sdrf text</a></td>
+      <td>Transcription profiling of 35 different Arabidopsis thaliana ecotypes</td>
+      <td>Affymetrix</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-TABM-985">E-TABM-985</a></td>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress/files/E-TABM-985/E-TABM-985.idf.txt">idf text</a></td>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress/files/E-TABM-985/E-TABM-985.sdrf.txt">sdrf text</a></td>
+      <td>Transcription profiling by array of mouse testis development, dye swap design</td>
+      <td>Compugen</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MEXP-2665">E-MEXP-2665</a></td>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress/files/E-MEXP-2665/E-MEXP-2665.idf.txt">idf text</a></td>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress/files/E-MEXP-2665/E-MEXP-2665.sdrf.txt">sdrf text</a></td>
+      <td>ChIP-chip by array of mouse cell lines and fresh tissues</td>
+      <td>Multiple platforms</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-TABM-855">E-TABM-855</a></td>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress/files/E-TABM-855/E-TABM-855.idf.txt">idf text</a></td>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress/files/E-TABM-855/E-TABM-855.sdrf.txt">sdrf text</a></td>
+      <td>Genotyping of human lymphoblastoid cell lines from pairs of HapMap indiviudals</td>
+      <td>Illumina GoldenGate SNP array</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-371">E-MTAB-371</a></td>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-371/E-MTAB-371.idf.txt">idf text</a></td>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-371/E-MTAB-371.sdrf.txt">sdrf text</a></td>
+      <td>ChIP-seq of human myofibroblasts</td>
+      <td>Illumina Sequencing</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-6311">E-MTAB-6311</a></td>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6311/E-MTAB-6311.idf.txt">idf text</a></td>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6311/E-MTAB-6311.sdrf.txt">sdrf text</a></td>
+      <td>Transcription changes in zebrafish embryos of different developmental ages after exposure to cyanide (two factor values)</td>
+      <td>Affymetrix</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-GEOD-26444">E-GEOD-26444</a></td>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress/files/E-GEOD-26444/E-GEOD-26444.idf.txt">idf text</a></td>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress/files/E-GEOD-26444/E-GEOD-26444.sdrf.txt">sdrf text</a></td>
+      <td>Deep sequencing-based analysis of the anaerobic stimulon</td>
+      <td>SOLiD sequencing</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-GEOD-24366">E-GEOD-24366</a></td>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress/files/E-GEOD-24366/E-GEOD-24366.idf.txt">idf text</a></td>
+      <td><a href="https://www.ebi.ac.uk/arrayexpress/files/E-GEOD-24366/E-GEOD-24366.sdrf.txt">sdrf text</a></td>
+      <td>Global changes following N-deprivation in Chlamydomonas</td>
+      <td>454 sequencing</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="tablecaption">MAGE-TAB 実際の例</p>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

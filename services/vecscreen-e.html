@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VecScreen</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">VecScreen</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/services">services</a>
+          </li>
+          <li>
+            <a href="">VecScreen</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="about-vecscreen-">About VecScreen <a name="About_VecScreen"></a></h2>
+
+<p>VecScreen is a tool that can detect foreign DNAs such as vector, linker,
+adapter, and primer regions (we call vector contamination in this
+document) involved in nucleotide sequences (query) by using blast search
+against vector sequence database. The main unit of this tool is
+<a href="//www.ncbi.nlm.nih.gov/tools/vecscreen/univec/">vecscreen program obtainable from
+NCBI</a>.</p>
+
+<h2 id="available-internet-browsers-">Available Internet browsers <a name="browser"></a></h2>
+
+<p>We confirmed that IE8 or newer, latest version of Firefox, Chrome, and
+Safari can work correctly. If you use VecScreen by an older version of
+Internet browser, you may meet some trouble for executing the search.</p>
+
+<h2 id="how-to-use-">How to use <a name="usage"></a></h2>
+
+<p><img src="/assets/images/help/VecScreen-Usage-e.png" alt="imagemap" /></p>
+
+<p><a href="#query" title="Query"></a> <a href="#www" title="WWW or Email"></a> <a href="#database" title="Databases"></a>
+<a href="#format" title="Output format"></a> <a href="#execute" title="Execute"></a>
+<a href="#resultviewer" title="Result viewer"></a></p>
+
+<h3 id="query-">Query <a name="query"></a></h3>
+
+<ul>
+  <li>Please enter the query sequence(s) in FASTA format. Please put query
+sequence(s) on the text box or upload the query sequence(s) through
+“File Upload”.</li>
+  <li>When query consist of multiple sequences, you need to add each
+sequence name by using “&gt;” (right angle bracket) to the line just
+before each sequence (multi FASTA format, see example below).</li>
+  <li>When you investigate a single sequence, you do not have to add a
+name to the sequence, however, if you would like to assign a name to
+the query, you should describe the name with “&gt;” (right angle
+bracket) before the first line of the sequence.</li>
+</ul>
+
+<!-- end list -->
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  FASTA format
+  &gt;my query sequence 1
+  caccctctcttcactggaaaggacaccatgagcacggaaagcatgatccaggacgtggaa
+  gctggccgaggaggcgctccccaggaagacagcagggccccagggctccaggcggtgctg
+  gttcctcagcctcttctccttcctgctcgtggcaggcgccgccac
+  
+
+  Multiple sequences (multi FASTA)
+  &gt;my query sequence 1
+  caccctctcttcactggaaaggacaccatgagcacggaaagcatgatccaggacgtggaa
+  gctggccgaggaggcgctccccaggaagacagcagggccccagggctccaggcggtgctg
+  gttcctcagcctcttctccttcctgctcgtggcaggcgccgccac
+  &gt;my query sequence 2
+  ggccagggcacccagtctgagaacagctgcacccgcttcccaggcaacctgcctcacatg
+  cttcgagacctccgagatgccttcagcagagtgaagactttctttcaaatgaaggatcag
+  ctggacaacatattgttaaaggagtccttgctggaggactttaag
+  &gt;my query sequence 3
+  atgggtctcacctcccaactgcttccccctctgttcttcctgctagcatgtgccggcaac
+  tttgcccacggacacaactgccatatcgccttacgggagatcatcgaaactctgaacagc
+  ctcacagagcagaagactctgtgcaccaagttgaccataacggac
+      
+</code></pre></div></div>
+
+<div class="attention">
+  <p>When the query sequence size is too big (a large number of sequences, or
+each sequence is very long), the result might not be displayed on the
+web screen normally because of the following reasons.</p>
+
+  <ul>
+    <li>Internet browser cannot display the result because of vastness of
+result size.</li>
+    <li>VecScreen terminate abnormally because of lacks of memory.</li>
+    <li>Timeout occurs because of a long time for analysis.</li>
+  </ul>
+
+  <p>In such a case, you should reduce number of nucleotide sequences or
+shorten the sequence length and retry the search.</p>
+</div>
+
+<h3 id="www-or-email-">WWW or Email <a name="www"></a></h3>
+
+<p>When “WWW” is selected, the result is interactively displayed on the
+screen. If you would like to obtain the result by an email, please
+select “E-mail” and enter your email address correctly. WWW is selected
+by default.</p>
+
+<h3 id="databases-">Databases <a name="database"></a></h3>
+
+<p>Please select a vector database either UniVec or UniVec_Core. UniVec is
+selected in the default. The system uses the same database that can be
+obtained from <a href="ftp://ftp.ncbi.nih.gov/pub/UniVec/">ftp://ftp.ncbi.nih.gov/pub/UniVec/</a>.</p>
+
+<dl>
+  <dt>UniVec</dt>
+  <dd>UniVec is a non-redundant vector database consists of many vector,
+linker, adapter, and primer sequences. When UniVec is selected,
+users must remove false positive hit from the result by their manual
+check. You should choose UniVec when you would like to obtain
+maximum detection of vector contamination by allowing false positive
+hit.</dd>
+  <dt>UniVec_Core</dt>
+  <dd>UniVec_Core is a subset of UniVec database. UniVec_Core is
+designed so that the users can automatically detect vector
+contamination without manually reviewing the result. It is expected
+that the result involves minimum size of false positive hits.</dd>
+</dl>
+
+<p>UniVec_Core contains oligonucleotide and vector sequences from
+bacteria, phage, yeast, and synthetic construct and does not involve
+vector sequences such as mammalian-derived sequence. Therefore,
+UniVec_Core is sometimes unable to detect vector contamination that
+UniVec can do it.</p>
+
+<h3 id="output-format-">Output format <a name="format"></a></h3>
+
+<p>Please select a type of result format. “HTML format, with alignment” is
+set in the default.</p>
+
+<dl>
+  <dt>HTML format, with alignment</dt>
+  <dd>Result is obtained in HTML format. Graphic viewer showing vector
+contamination region on query, summary of the result, and alignment
+are displayed((<a href="/assets/images/help/VecScreen-HTMLwAlign.png">example</a>).</dd>
+  <dt>HTML format, no alignment</dt>
+  <dd>Result is obtained in HTML format. Graphic viewer showing vector
+contamination region on query and summary of the result are
+displayed(<a href="/assets/images/help/VecScreen-HTMLwoAlign.png">example</a>).</dd>
+  <dt>Text list, with alignment</dt>
+  <dd>Result is obtained in TEXT format. Summary of the result and
+alignment are
+displayed(<a href="/assets/images/help/VecScreen-TEXTwAlign.png">example</a>).</dd>
+  <dt>Text list, no alignment</dt>
+  <dd>Result is obtained in TEXT format. Summary of the result is only
+displayed(<a href="/assets/images/help/VecScreen-TEXTwoAlign.png">example</a>).</dd>
+</dl>
+
+<h3 id="there-is-no-parameter-settings-">There is no parameter settings <a name="There_is_no_parameter_settings"></a></h3>
+
+<p>VecScreen does not have option for blastn parameters. The tool executes
+vecscreeen program that is obtained from NCBI. For details, please refer
+the links below.<br />
+<a href="//www.ncbi.nlm.nih.gov/tools/vecscreen/about/">//www.ncbi.nlm.nih.gov/tools/vecscreen/about/</a><br />
+<a href="//www.ncbi.nlm.nih.gov/tools/vecscreen/univec/">//www.ncbi.nlm.nih.gov/tools/vecscreen/univec/</a></p>
+
+<h3 id="execution-send-to-vecscreen-">Execution (Send to VecScreen) <a name="execute"></a></h3>
+
+<p>Vector contamination check starts when you click “Send to vecscreen”.
+When you click “Clear” query sequence(s) is erased.</p>
+
+<h3 id="result-screen-">Result screen <a name="result"></a></h3>
+
+<p>According the scores and e-value, the result are displayed with the
+classification of three categories, <strong>Strong match</strong>, <strong>Moderate
+match</strong>, and <strong>Weak match</strong>, which indicates the order of the
+probability of vector contamination (<strong>Strong</strong> &gt; <strong>Moderate</strong> &gt;
+<strong>Weak</strong>). The &lt;50-bp region between the two vector hit position or the
+region from vector hit position to the end are also detected as
+<strong>Suspect Origin</strong> which suggests possible vector contamination. For
+details, please refer to the URL below.
+<a href="//www.ncbi.nlm.nih.gov/tools/vecscreen/about/#Categories">//www.ncbi.nlm.nih.gov/tools/vecscreen/about/#Categories</a></p>
+
+<h2 id="determination-of-the-position-of-vector-contamination-">Determination of the position of vector contamination <a name="Determination_of_the_position_of_vector_contamination"></a></h2>
+
+<p>If you would like to carry out the detection of vector contamination
+automatically, the regions that are indicated by <strong>Strong match</strong> and
+<strong>Moderate match</strong> are usually taken as vector contamination. <strong>Weak
+match</strong> shows a possibility of vector contamination and <strong>Suspect
+origin</strong> also suggests the contamination. The two categories, <strong>Weak
+match</strong> and <strong>Suspect origin</strong> doesn’t always show the vector
+contamination.</p>
+
+<p>Strictly speaking, you should determine the correct position of the
+vector contamination from the VecScreen results by taking into
+consideration of vector, adapter, linker, primer sequences used by
+cloning experiment and cloning method.</p>
+
+<p>Please refer to the URL below for detailed explanation of the result.
+<a href="//www.ncbi.nlm.nih.gov/tools/vecscreen/interpretation/">//www.ncbi.nlm.nih.gov/tools/vecscreen/interpretation/</a></p>
+
+<h2 id="notes-when-the-result-is-not-correct">Notes when the result is not correct</h2>
+
+<p>VecScreen is not a perfect tool that can detect entire vector
+contamination. When query sequences that are not covered with UniVec
+database were used, it is expected that the VecScreen cannot detect at
+all. Or VecScreen may underestimate vector contamination region or
+predict the results as lower categories even though VecScreen can detect
+a similar sequences from UniVec. You should carry out vector trimming
+with consideration of foreign DNA and method that are actually used for
+the cloning experiment.</p>
+
+<h2 id="exceptions-">Exceptions <a name="Exceptions"></a></h2>
+
+<p>UniVecデータベースの構成上，以下の配列をクエリーに用いた場合もベクターコンタミとして検出されることになりますのでご承知おきください。
+詳しくは，<a href="//www.ncbi.nlm.nih.gov/tools/vecscreen/interpretation/#Exceptions">//www.ncbi.nlm.nih.gov/tools/vecscreen/interpretation/#Exceptions</a>
+をご覧ください。</p>
+
+<div class="attention">
+  <p>Virus genomes, Yeast and bacterial biosynthetic genes, Transcriptional
+signals from bacteria, yeast, a few mammals, and other model organisms,
+Bacterial and yeast repressor and activator genes, Bacterial genes
+mediating antibiotic resistance, Bacterial plasmid genes and replication
+origins, Yeast replication elements, Bacteriophage genomes, Transposons
+and Insertion Sequences, Other specialized elements from a variety of
+sources (including a few from humans)</p>
+</div>
+
+<h2 id="request-id-">Request ID <a name="requestid"></a></h2>
+
+<p class="float-left">After pressing the “Send to VecScreen” button, Request ID is displayed
+on the screen. The same ID is also shown at the top of the result
+screen. Do not forget the ID because it is necessary for using the
+“Result Viewer” and/or inquiring to DDBJ for your search. You can view
+your result using “Request ID” at any time until the cutoff date even if
+the browser is closed.</p>
+
+<p class="float-right"><img src="/assets/images/help/VecScreen-RequestID-e.png" alt="VecScreen-RequestID" /></p>
+
+<h2 class="float-release" id="result-viewer-">Result viewer <a name="resultviewer"></a></h2>
+
+<p class="float-left">You can obtain the result from Request ID. Please click “Result viewer”
+on the left side of VecScreen to change the screen. Then, enter the
+Request ID and click “display”.</p>
+
+<p class="float-right"><img src="/assets/images/help/VecScreen-ResultViewer-e.png" alt="VecScreen-ResultViewer" /></p>
+
+<h2 class="float-release" id="time-limit-for-viewing-a-result-">Time limit for viewing a result <a name="Time_limit_for_viewing_a_result"></a></h2>
+
+<p>The result is eliminated in 7 days after execution.</p>
+
+
+      </div>
+      
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              
+              <li>
+                <a href="/services/arsa-e.html">ARSA Help</a>
+              </li>
+              
+              <li>
+                <a href="/services/blast-e.html">BLAST Help</a>
+              </li>
+              
+              <li>
+                <a href="/services/getentry-e.html">getentry Help</a>
+              </li>
+              
+              <li>
+                <a href="/services/txsearch-e.html">TXSearch Help</a>
+              </li>
+              
+              <li>
+                <a href="/services/clustalw-e.html">ClustalW Help</a>
+              </li>
+              
+              <li>
+                <a href="/services/references-e.html">References</a>
+              </li>
+              
+              <li>
+                <a href="/services/past-services-e.html">Services in past</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-e.html">WABI (Web API for Biology)</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-blast-e.html">WABI BLAST Help</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

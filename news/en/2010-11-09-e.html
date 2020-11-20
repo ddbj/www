@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLAST Web API against RefSeq datatabase was opened to the public from WABI</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">BLAST Web API against RefSeq datatabase was opened to the public from WABI</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/news">news</a>
+          </li>
+          <li>
+            <a href="">BLAST Web API against RefSeq datatabase was opened to the public from WABI</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h4>Following databases of RefSeq has been added to <a href="/news/archive-e.html?y=2009#090813">High Speed BLAST API</a> in addition to DDBJ.</h4>
+
+<dl>
+    <dd>
+
+        <ul>
+            <li>Reference genomic sequences (<a href="http://xml.nig.ac.jp/script/BC002967.pl">sample program 1</a>, <a href="http://xml.nig.ac.jp/script/HQ188503.pl">sample program 2</a>)</li>
+            <li>Reference mRNA sequences (<a href="http://xml.nig.ac.jp/script/BC002967_rna.pl">sample program</a>)</li>
+        </ul>
+    </dd>
+</dl>
+<p>Furthermore, Reference proteins (<a href="http://xml.nig.ac.jp/script/AAH02967.pl">sample program</a>) has been added as a reference database of usual BLAST API.</p>
+
+<h4>Use case and execution time</h4>
+<p>It is possible to do a fast BLAST search against RefSeq databases as well as DDBJ. For example, the following case can be calculated only in a minute. It may change according to whether our server accepts a lot of jobs or not.</p>
+
+<dl>
+    <dt><img src="/assets/images/tr-blue-s.gif" />Case 1. Comparison between full length cDNA of human and multiple genomes</dt>
+    <dd>Sample program can be available <a href="http://xml.nig.ac.jp/script/BC002967.pl">here</a>.</dd>
+    <dd><strong>Condition: </strong>
+
+        <ul>
+            <li>Program: blastn</li>
+            <li>Reference database: Reference genomic sequences (2 million sequences, Total 140 billion bases)</li>
+            <li>Query: Full length cDNA of human gene ALDH2 (DDBJ Accession: <a href="http://getentry.ddbj.nig.ac.jp/search/get_entry?database=ddbj&amp;accnumber=BC002967">BC002967</a>, Sequence length: 2050 bp)</li>
+            <li>Parameter: -b 100 -v 100</li>
+        </ul>
+    </dd>
+    <dd><strong>Result:</strong>Human and a list of homologous species such as horse, dog, chimpanzee, orangutan and rhesus monkey can be obtained. Furthermore, chromosome number and the position on it of their genome or whole genome shotgun can also be obtained. </dd>
+    <dt><img src="/assets/images/tr-blue-s.gif" />Case 2. Comparison between environmental DNA sequence and multiple genome</dt>
+    <dd>Sample program can be available <a href="http://xml.nig.ac.jp/script/HQ188503.pl">here</a>. </dd>
+    <dd><strong>Condition: </strong>
+
+        <ul>
+            <li>Program: blastn</li>
+            <li>Reference database: Reference genomic sequences (2 million sequences, Total 140 billion bases)</li>
+            <li>Query: Environmental DNA sequence (DDBJ Accession: <a href="http://getentry.ddbj.nig.ac.jp/search/get_entry?database=ddbj&amp;accnumber=HQ188503">HQ188503</a>, Sequence length: 508 bp)</li>
+            <li>Parameter: -b 100 -v 100 -W 28 -X 20 (equivalent to megablast)</li>
+        </ul>
+    </dd>
+    <dd><strong>Result: </strong>A list of the psychrophilic bacterial species of Shewanella genus can be obtained. Furthermore, the homologous region of their genomes can be also obtained. It is verified that those regions are 16S ribosomal RNA by checking annotations of genomes.Please refer to <a href="http://xml.nig.ac.jp/refseq_blast_api.html">the page</a> for details. </dd>
+</dl>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

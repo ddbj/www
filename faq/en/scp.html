@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I can not scp transfer my files.</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title -small">
+      <h1 class="title">I can not scp transfer my files.</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/faq/en/">FAQ</a>
+            
+          </li>
+          <li>
+            <a>I can not scp transfer my files.</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<main id="SimpleView">
+  <div class="inner">
+    <article class="md-content">
+      <p>First, confirm the following basic points.</p>
+<div class="sub_index">
+  <ul class="disc">
+    <li>Authentification is by using SSH key not by password.</li>
+    <li>A private key is pair of a public key registered in a D-way submission account.</li>
+    <li>A private key file has read permission.</li>
+    <li>A private key file permission is set as others cannot access. For example, rw-------.</li>
+    <li>A passphrase for private key is correctly entered.</li>
+  </ul>
+</div>
+<p>When transferring data files by using a private key generated in the other operating system, please check format of a private key. <a href="/account-e.html#convert-private-key">Convert private key</a></p>
+<p><span class="bold">In Unix/Mac OS X</span>: Convert a key in the Windows PuTTY file format into the OpenSSH.</p>
+<p><span class="bold">In Windows WinSCP:</span> Convert a key in the Unix/Mac OS X OpenSSH file format into the Windows PuTTY format.</p>
+<p>When these are correct, because we do not support technical details regarding use of third-party softwares, please refer to websites of softwares or confirm your system administrators whether scp (port 22) is allowed or not.</p>
+
+    </article>
+  </div>
+</main>
+
+  
+
+</body>
+</html>

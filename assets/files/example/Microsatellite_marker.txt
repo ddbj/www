@@ -1,0 +1,41 @@
+COMMON	SUBMITTER		contact	Hanako Mishima
+			ab_name	Mishima,H.
+			ab_name	Yamada,T.
+			email	mishima@ddbj.nig.ac.jp
+			phone	81-55-981-6853
+			fax	81-55-981-6849
+			institute	National Institute of Genetics
+			department	DNA Data Bank of Japan
+			country	Japan
+			state	Shizuoka
+			city	Mishima
+			street	Yata 1111
+			zip	411-8540
+	REFERENCE		ab_name	Mishima,H.
+			ab_name	Yamada,T.
+			title	Bovine microsatellite markers
+			status	Unpublished
+			year	2017
+	DATE		hold_date	20191130
+	DIVISION		division	STS
+	KEYWORD		keyword	STS
+ENT01	source	1..E	organism	Bos taurus
+			chromosome	11
+			map	11p
+			mol_type	genomic DNA
+	repeat_region	60..200	rpt_type	tandem
+			rpt_unit_seq	ta
+			satellite	microsatellite: 3456P
+	primer_bind	20..40	PCR_conditions	denaturation 94degC 2 min; 30 cycles 94degC 30 sec, 56degC 1 min, 72degC 1 min; final extention 72degC 1 min
+			note	forward primer
+	primer_bind	complement(254..274)	note	reverse primer
+ENT02	source	1..E	organism	Bos taurus
+			chromosome	11
+			map	11p
+			mol_type	genomic DNA
+	repeat_region	60..200	rpt_type	tandem
+			rpt_unit_seq	ta
+			satellite	microsatellite: 3458P
+	primer_bind	20..40	PCR_conditions	denaturation 94degC 2 min; 30 cycles 94degC 30 sec, 56degC 1 min, 72degC 1 min; final extention 72degC 1 min
+			note	forward primer
+	primer_bind	complement(210..230)	note	reverse primer

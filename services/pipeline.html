@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pipeline</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">Pipeline</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/services">services</a>
+          </li>
+          <li>
+            <a href="">Pipeline</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="basic-analysispreprocessingmappingde-novo-assembly-">Basic Analysis(Preprocessing/Mapping/<em>de novo</em> Assembly) <a name="basic"></a></h2>
+
+<p><span class="red"><strong>＜注意事項＞</strong> </span></p>
+
+<ul>
+  <li>問題がございましたらpipeline_dev@ddbj.nig.ac.jpまでお問い合わせください。</li>
+  <li>Error終了したJOBは、順番にpipelineチームが原因を解析しております。<br />
+対処策をメールで連絡させて頂く事がございます。</li>
+  <li>JOB投入数の制限は、外しました。</li>
+  <li><a href="/faq/ja/index.html?db=pipeline">FAQはこちらです。</a></li>
+  <li><a href="https://www.slideshare.net/DDBJslide/ddbjing27-ddbj-pipeline">DDBJing
+講習会(2013.7.4)資料</a></li>
+</ul>
+
+<p><strong>基礎解析部では以下の処理を行います。<br />
+それぞれ画面遷移が異なりますので表の「順」と「画面」でご確認ください。</strong></p>
+
+<ol>
+  <li><a href="#preprocess">Preprocessing</a></li>
+  <li><a href="#mapping">Mapping(Reference Alignment)</a></li>
+  <li><a href="#assembly"><em>de novo</em> Assembly</a></li>
+</ol>
+
+<h3 id="preprocessing-">Preprocessing <a name="preprocess"></a></h3>
+
+<p>fastq形式ファイルのQSを各種グラフで参照できます。fastq形式ファイルの編集ができます。</p>
+
+<p><span class="red"><strong>＜注意事項＞</strong></span><br />
+ファイルをアップロードする場合、paired-endでは、ファイル名を拡張子の直前で、_1, _2 として区別して下さい。(
+例：test_data_1.fastq , test_data_2.fastq )</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>順</th>
+      <th>画面</th>
+      <th>項目</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#login">LOGIN</a></td>
+      <td>User ID, Password</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><a href="#Registration_form">Registration form</a></td>
+      <td>User ID, Email address, First name, Last name, Institution with department, Country, Address, Postal/Zip code, Telephone number, Purpose of utilizaion</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#SlctQuery">Selecting Query Files</a></td>
+      <td>query files(fasta/fastq)</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>＊FTP Uploadの場合、<a href="#RgstFqFa">Registration of fasta/fastq files</a></td>
+      <td>read layout(single-end/paired-end)選択, Instrument model選択, Study title</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#SetPrmtPrePro">Set Perameters for Preprocessing</a></td>
+      <td>query用fastqファイル編集(QSによるトリム及び、各種条件でのリード除去）</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#Run">Run Confirmation</a></td>
+      <td>Email address</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="#Status">Status - Preprocessing/Mapping/<em>de novo</em> Assembly</a></td>
+      <td>実行ジョブstatus確認</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><a href="#View">Detail view</a></td>
+      <td>fastqファイル, QS Average(PDF), QS Count(PDF), QS Error(PDF)</td>
+    </tr>
+  </tbody>
+</table>
+
+<dl>
+  <dt>+ fastqファイル</dt>
+  <dd>read編集（指定QS未満をトリム他、各種条件による選別）、片側のみのpaired-endリード削除</dd>
+  <dt>+ QS Average(PDF),　QS Count(PDF)</dt>
+  <dd>編集前のQSの平均と標準偏差を計算、グラフ作成</dd>
+  <dt>+ QS Error(PDF)</dt>
+  <dd>編集後のリード位置毎の削除割合を計算、グラフ作成</dd>
+</dl>
+
+<p>Preprocessing処理後のファイルは、「Preprocessingタブ(下図黄色ハイライト)」でMapping/<em>de novo</em>
+Assemblyのクエリとして選択できるようになります。クエリファイルの先頭は、JOB番号です（下では3845がJOB番号）。</p>
+
+<p><a href="/assets/images/help/PreprocessingStart.png" class="group1"><img src="/assets/images/help/PreprocessingStart.png" alt="" /></a></p>
+
+<h3 id="mapping-reference-alignment">Mapping (Reference Alignment)<a name="mapping"></a></h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>順</th>
+      <th>画面</th>
+      <th>項目</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#login">LOGIN</a></td>
+      <td>User ID, Password</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><a href="#Registration_form">Registration form</a></td>
+      <td>User ID, Email address, First name, Last name, Institution with department, Country, Address, Postal/Zip code, Telephone number, Purpose of utilizaion</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#SlctQuery">Selecting Query Files</a></td>
+      <td>query files(fasta/fastq)</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>＊FTP Uploadの場合、<a href="#RgstFqFa">Registration of fasta/fastq files</a></td>
+      <td>read layout(single-end/paired-end)選択, Instrument model選択, Study title</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#SlctTool">Selecting Tools for Basic analysis of DDBJ ANNOTAION PIPELINE</a></td>
+      <td>tool選択</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#Generating">Generating Query Sets from Query Read Files</a></td>
+      <td>query用fastqファイルのreadファイル選択</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="#Reference">Specifying Database of Reference Genome</a></td>
+      <td>reference genomeのセット</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><a href="#StOpt">Set Options</a></td>
+      <td>tool毎のoption, ‘uniq’選択, DNA polymorphism抽出方法選択</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><a href="#Run">Run Confirmation</a></td>
+      <td>Email address</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><a href="#Status">Status - Preprocessing/Mapping/<em>de novo</em> Assembly</a></td>
+      <td>実行ジョブstatus確認</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><a href="#View">Detail view</a></td>
+      <td>Error Rate, Coverage, Depth, Map ratio, コマンド毎の結果ファイル（samフォーマット）</td>
+    </tr>
+  </tbody>
+</table>
+
+<dl>
+  <dt>+ ErrorRate (mapping, graph)</dt>
+  <dd>Percentage error of mapped sequence to reference sequence is
+calculated by read position.</dd>
+  <dt>+ Coverage (mapping, numeric data)</dt>
+  <dd>Sum of the length of all contigs/G,<br />
+where<br />
+G = Size (bp) of Reference Genome <span class="red">excluding “N”
+nucleotides
+L = Sequence Length (bp),<br />
+N = # sequences.</span></dd>
+  <dt>+ Depth (mapping, numeric data)</dt>
+  <dd>The average of total sequence length (length of all sequence reads
+in a contig including gaps)/contig<br />
+Length <span class="red">excluding “N” nucleotides.</span><br />
+Reference: Lander ES, Waterman MS, Genomic mapping by fingerprinting
+random<br />
+clones: a mathematical analysis.<br />
+Genomics 1988, 2(3):231-239.</dd>
+  <dt>+ Map ratio (mapping, numeric data)</dt>
+  <dd>Number of mapped reads* / Number of reads<br />
+*: the number of reads, which were mapped in both ends.</dd>
+</dl>
+
+<h3 id="de-novo-assembly-"><em>de novo</em> Assembly <a name="assembly"></a></h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>順</th>
+      <th>画面</th>
+      <th>項目</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td><a href="#login">LOGIN</a></td>
+      <td>User ID, Password</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><a href="#Registration_form">Registration form</a></td>
+      <td>User ID, Email address, First name, Last name, Institution with department, Country, Address, Postal/Zip code, Telephone number, Purpose of utilizaion</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href="#SlctQuery">Selecting Query Files</a></td>
+      <td>query files(fasta/fastq)</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>＊FTP Uploadの場合、<a href="#RgstFqFa">Registration of fasta/fastq files</a></td>
+      <td>read layout(single-end/paired-end)選択, Instrument model選択, Study title</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td><a href="#SlctTool">Selecting Tools for Basic analysis of DDBJ ANNOTAION PIPELINE</a></td>
+      <td>tool選択</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td><a href="#Generating">Generating Query Sets from Query Read Files</a></td>
+      <td>query用fastqファイルのreadファイル選択</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td><a href="#StOpt">Set Options</a></td>
+      <td>tool毎のoption, ‘uniq’選択, DNA polymorphism抽出方法選択</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td><a href="#Run">Run Confirmation</a></td>
+      <td>Email address</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><a href="#Status">Status - Preprocessing/Mapping/<em>de novo</em> Assembly</a></td>
+      <td>実行ジョブstatus確認</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><a href="#View">Detail view</a></td>
+      <td>Contig数, Total contig size, Maximum contig size, Minimum contig size, N50 contig size, コマンド毎の結果ファイル (samフォーマット）</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="login">LOGIN<a name="login"></a></h2>
+
+<ol>
+  <li>システム利用に際してのアナウンスは、”twitter”で行ってます。</li>
+  <li>PipelineのIDをお持ちでない場合、「新規アカウント作成」で、登録画面へ遷移します。</li>
+  <li>試験的に使用したい方は「”guest”としてログイン」で、デモ画面を確認できます。</li>
+  <li>“動作中JOBの確認”では、”guest”としてStatus画面へ遷移し、JOBの実行状況が確認できます。</li>
+  <li>マニュアルおよびチュートリアルが用意されています。
+    <ul>
+      <li><a href="//sites.google.com/a/g.nig.ac.jp/pipeline_help/">English manual</a></li>
+      <li><a href="//togotv.dbcls.jp/20100617.html">DBCLS togotv Tutorial video 1 (JP) - Reference Genome Mapping</a></li>
+      <li><a href="//togotv.dbcls.jp/20110226.html#p01">DBCLS togotv Tutorial video 2 (JP) - De novo Assembly</a></li>
+    </ul>
+  </li>
+  <li>DRAアカウント登録はこちらのページです。 <a href="/dra/index.html">please see the page.</a></li>
+</ol>
+
+<p><a href="/assets/images/help/LOGIN_20120522_1.png" class="group1"><img src="/assets/images/help/LOGIN_20120522_1.png" alt="" /></a></p>
+
+<h2 id="registration-form">Registration form<a name="Registration_form"></a></h2>
+
+<h3 id="アカウント登録-">アカウント登録 <a name="account"></a></h3>
+
+<p><span class="red"><strong>＜注意事項＞</strong></span></p>
+
+<ul>
+  <li>スーパーコンピュータの新システム移行に伴い、既にアカウントをお持ちの方も登録内容に追加項目があります。</li>
+  <li>②に該当する項目をAdditional input(追加項目ページ)から入力します。</li>
+  <li>登録が完了すると、User ID, Initial passwordが、Email address宛に自動配信されます。
+    <ol>
+      <li>Email addressの記入には十分注意して下さい。</li>
+      <li>新システム移行に伴い、新たに追加した項目です。</li>
+      <li>全ての記入項目を確認後、登録します。</li>
+    </ol>
+  </li>
+</ul>
+
+<p><a href="/assets/images/help/RegistrationForm_4_2.png" class="group1"><img src="/assets/images/help/RegistrationForm_4_2.png" alt="" /></a></p>
+
+<h3 id="パスワードの変更-">パスワードの変更 <a name="password"></a></h3>
+
+<ol>
+  <li>passwordの変更は、各画面の左側メニュー (Change password) からいつでも行えます。</li>
+  <li>パスワードは確認の為、再入力します。</li>
+  <li>全ての記入項目を確認後、実行します。</li>
+</ol>
+
+<p><a href="/assets/images/help/RegistrationForm_2_2.png" class="group1"><img src="/assets/images/help/RegistrationForm_2_2.png" alt="" /></a>
+<a href="/assets/images/help/Change-password_21.png" class="group1"><img src="/assets/images/help/Change-password_21.png" alt="" /></a></p>
+
+<h2 id="selecting-query-files">Selecting Query Files<a name="SlctQuery"></a></h2>
+
+<ul>
+  <li><a href="#private">DRA(DDBJ Sequence Read Archive)に登録したデータ</a></li>
+  <li><a href="#local">HTTPでのアップロード（新規、既存ファイル）</a></li>
+  <li><a href="#FTP">FTPでのアップロード（新規、既存ファイル）</a></li>
+  <li><a href="#import">DRA databaseからDRA/ERA/SRA のFASTQファイルをインポート</a></li>
+  <li><a href="#Preprocessing">Preprocessing処理での結果ファイル</a></li>
+  <li><a href="#Unmapped">BWA(mapping tool)でのUnmap結果ファイル</a></li>
+</ul>
+
+<h3 id="draddbj-sequence-read-archiveに登録したデータ">DRA(DDBJ Sequence Read Archive)に登録したデータ<a name="private"></a></h3>
+
+<ol>
+  <li>Private DRA entryを選択します。</li>
+  <li>metadataを選択します。</li>
+  <li>Queryにするファイルを選択します。</li>
+</ol>
+
+<p><a href="/assets/images/help/Selecting-Query-Files_Private-DRA-entry_2.png" class="group1"><img src="/assets/images/help/Selecting-Query-Files_Private-DRA-entry_2.png" alt="" /></a></p>
+
+<h3 id="httpでのアップロード新規既存ファイル">HTTPでのアップロード（新規、既存ファイル）<a name="local"></a></h3>
+
+<h4 id="新規にhttpアップロードする場合-">新規にHTTPアップロードする場合 <a name="新規にHTTPアップロードする場合"></a></h4>
+
+<ol>
+  <li>HTTP Uploadを選択します。</li>
+  <li>”ファイルを選択”をクリックしローカルからファイルを選択します。</li>
+  <li>”UPLOAD”をクリックします。</li>
+  <li>ファイルアップロードが完了するとファイル名が表示されます。Aliasを入力できます。</li>
+  <li>リロードすると表の中にファイルが表示されています。</li>
+</ol>
+
+<p><a href="/assets/images/help/Selecting-Query-Files_HTTP-Upload_4.png" class="group1"><img src="/assets/images/help/Selecting-Query-Files_HTTP-Upload_4.png" alt="" /></a></p>
+
+<h4 id="既にhttpアップロードしたファイルから選択する場合-">既にHTTPアップロードしたファイルから選択する場合 <a name="既にHTTPアップロードしたファイルから選択する場合"></a></h4>
+
+<ol>
+  <li>HTTP Uploadを選択します。</li>
+  <li>既にアップロード済みのファイルから選択します。</li>
+</ol>
+
+<p><a href="/assets/images/help/Selecting-Query-Files_HTTP-Upload_R_2.png" class="group1"><img src="/assets/images/help/Selecting-Query-Files_HTTP-Upload_R_2.png" alt="" /></a></p>
+
+<h3 id="ftpでのアップロード新規既存ファイル">FTPでのアップロード（新規、既存ファイル）<a name="FTP"></a></h3>
+
+<ol>
+  <li>FTP Uploadを選択します。</li>
+  <li>新規にファイルをアップロードする場合は、[Add new files]をクリックします。<br />—–&gt;<a href="#RgstFqFa">Registration of fastq/fasta files画面へ遷移します。</a></li>
+  <li>既にFTPアップロードしたファイルを使用する時は、リストから選びます。</li>
+</ol>
+
+<p><a href="/assets/images/help/Selecting-Query-Files_FTP-Upload_51.png" class="group1"><img src="/assets/images/help/Selecting-Query-Files_FTP-Upload_51.png" alt="" /></a></p>
+
+<h3 id="dra-databaseからdraerasra-のfastqファイルをインポート">DRA databaseからDRA/ERA/SRA のFASTQファイルをインポート<a name="import"></a></h3>
+
+<ol>
+  <li>Import public DRAを選択します。</li>
+  <li><a href="http://ddbj.nig.ac.jp/DRASearch">Accession
+ Numberを検索したい場合</a>はこちらからできます。</li>
+  <li>Accession Numberを入力します。</li>
+  <li>Add my DRA entry をクリックします。</li>
+  <li>インポートが終了すると、Statusが”queued”から”done”に変わります。（ページ再読み込み）</li>
+  <li>Private DRA entryを選択して下さい。インポートしたデータが使用可能となっております。</li>
+</ol>
+
+<!-- end list -->
+
+<ul>
+  <li>インポートが終了するとメールが届きます。</li>
+  <li>Statusが”failed”の時は、再実行してください。</li>
+  <li>Statusが”preparing”の時は、まだDRAにファイルが準備されておりません。後日、再実行してください。</li>
+</ul>
+
+<p><a href="/assets/images/help/Selecting-Query-Files_Import-public-DRA_41.png" class="group1"><img src="/assets/images/help/Selecting-Query-Files_Import-public-DRA_41.png" alt="" /></a></p>
+
+<h3 id="preprocessing処理での結果ファイル">Preprocessing処理での結果ファイル<a name="Preprocessing"></a></h3>
+
+<ol>
+  <li>Preprocessingを選択します。</li>
+  <li>Preprocessing結果ファイルは、「JOB番号_ファイル名_e」で表示されています。<br />（BWA Unmap結果ファイルは、「JOB番号_ファイル名.unmapped」で表示されています。<a name="Unmapped"></a></li>
+  <li>使用するファイルをチェックします。</li>
+</ol>
+
+<p><a href="/assets/images/help/Selecting-Query-Files_Preprocessing_21.png" class="group1"><img src="/assets/images/help/Selecting-Query-Files_Preprocessing_21.png" alt="" /></a></p>
+
+<h2 id="registration-of-fastqfasta-files">Registration of fastq/fasta files<a name="RgstFqFa"></a></h2>
+
+<h3 id="新規にftpでfastafastqファイルをアップロードする方法-">新規にFTPでFASTA/FASTQファイルをアップロードする方法 <a name="ftpupload"></a></h3>
+
+<h4 id="by-ftprecommended">By FTP(Recommended)</h4>
+
+<ul>
+  <li>1. Upload FASTA/FASTQ files
+    <ol>
+      <li><a href="//www.evernote.com/shard/s205/sh/dadca23e-38bc-4b13-a8b1-1c592f5b31e2/439158c40652ddb7d47f2b60ce022291">FTPクライアントによる転送方法については、こちらのページ</a>をご参照ください。</li>
+      <li>FTP clientをローカルPCにインストールし、DDBJのサーバーへFTP転送します。</li>
+      <li>FTP setting内容です。（loginできない場合、パスワード変更を行って下さい。）</li>
+      <li>（FTPでの転送ができない場合、時間がかかりますがHTTPでの転送も可能です。）</li>
+      <li>アップロードが終了したら、画面をリロードしてください。下のリストにファイルが追加されます。</li>
+      <li>アップロードしたファイルをチェックし、次へ進みます。</li>
+    </ol>
+  </li>
+</ul>
+
+<p><a href="/assets/images/help/Registration_-filesUpload_31.png" class="group1"><img src="/assets/images/help/Registration_-filesUpload_31.png" alt="" /></a></p>
+
+<ul>
+  <li>2. Select a FASTA/FASTQ file（Uploadしたファイルの注釈付け１）
+    <ol>
+      <li>Read layoutでSingle-end又は、Paired-endを選択します。</li>
+      <li>read fileを選択します。（paired_endの場合はread1と対になるread2も選択）</li>
+      <li>次へ進みます。</li>
+    </ol>
+  </li>
+</ul>
+
+<p>＜Single_endの場合＞</p>
+
+<p><a href="/assets/images/help/Registration-of-fastqfasta-files_Select-a-FASTAFASTQ-file_11.png" class="group1"><img src="/assets/images/help/Registration-of-fastqfasta-files_Select-a-FASTAFASTQ-file_11.png" alt="" /></a></p>
+
+<p>＜Paired_endの場合＞</p>
+
+<p><a href="/assets/images/help/Registration-of-fastqfasta-files_Select-a-FASTAFASTQ-file_21.png" class="group1"><img src="/assets/images/help/Registration-of-fastqfasta-files_Select-a-FASTAFASTQ-file_21.png" alt="" /></a></p>
+
+<ul>
+  <li>3. Input a specification（Uploadしたファイルの注釈付け２）
+    <ol>
+      <li>シークエンサの機種を選択します。</li>
+      <li>Study titleを入力します。</li>
+      <li>登録(SUBMITをクリック)します。
+<img src="/assets/images/help/Registration-of-fastqfasta-files_Input-a-specification_11.png" alt="" /></li>
+      <li>処理終了、Assembly/Mapplingをクリックすると、<a href="#FTP">Selecting Query Files画面</a>に遷移します。<br />
+＊Uploadしたファイルを使用して解析が可能になっています。</li>
+    </ol>
+  </li>
+</ul>
+
+<p><a href="/assets/images/help/Registration-complete_12.png" class="group1"><img src="/assets/images/help/Registration-complete_12.png" alt="" /></a></p>
+
+<h4 id="by-httpslower-">By HTTP(slower) <a name="By_HTTPslower"></a></h4>
+
+<ol>
+  <li>Browse and Uploadをクリックします。</li>
+  <li>ローカルPCからファイルを選択します。開始するとUpload経過が表示されます。
+<a href="/assets/images/help/Registration_-filesUpload_HTTP_11.png" class="group1"><img src="/assets/images/help/Registration_-filesUpload_HTTP_11.png" alt="" /></a></li>
+  <li>Uploadが完了したらページ再読み込みします。
+<a href="/assets/images/help/Registration_-filesUpload_HTTP_21.png" class="group1"><img src="/assets/images/help/Registration_-filesUpload_HTTP_21.png" alt="" /></a></li>
+  <li>ファイルがリストに追加されています。
+<a href="/assets/images/help/Registration_-filesUpload_HTTP_31.png" class="group1"><img src="/assets/images/help/Registration_-filesUpload_HTTP_31.png" alt="" /></a></li>
+</ol>
+
+<h2 id="set-parameters-for-preprocessing">Set Parameters for Preprocessing<a name="SetPrmtPrePro"></a></h2>
+
+<h3 id="preprocessing処理によるfastq形式ファイルの編集-">Preprocessing処理によるFastq形式ファイルの編集 <a name="Fastqformat"></a></h3>
+
+<ol>
+  <li>QVタイプを選択します。<a href="//en.wikipedia.org/wiki/FASTQ_format#Encoding">（参照：2.2
+Encoding）</a></li>
+  <li>5’, 3’両端から、「指定QV」より大きい値の塩基が出現するまでトリムします。<br />
+（トリム後のリード長が24bp以下の場合、そのリードを取り除きます。）</li>
+  <li>「指定QV」未満の塩基が、トリム後のリード長の「指定％」より多い場合は、そのリードを取り除きます。</li>
+  <li>ペアードエンドリードの場合、片方が条件 ② 、③ により取り除かれた場合、もう一方も取り除かれます。</li>
+</ol>
+
+<p><a href="/assets/images/help/SetParametersForPreprocessing_21.png" class="group1"><img src="/assets/images/help/SetParametersForPreprocessing_21.png" alt="" /></a></p>
+
+<h2 id="selecting-tools-for-basic-analysis-of-ddbj-annotation-pipeline">Selecting Tools for Basic analysis of DDBJ ANNOTATION PIPELINE<a name="SlctTool"></a></h2>
+
+<h3 id="解析ツールの選択-">解析ツールの選択 <a name="selecttool"></a></h3>
+
+<ol>
+  <li>まず最初に処理 ( Reference Genome Mapping または、<em>de novo</em> Assembly )
+ を選択します。</li>
+  <li>ツールを選択します。</li>
+  <li>この後でオプションの指定等あります。<br />
+ ツールのマニュアル（Help列：本マーク）をよくお読み下さい。</li>
+  <li><em>de novo</em> Assembly の場合で、結果contigをqueryとして、続けて Mapping
+ (BLAT使用)する場は、下の、Mapping Contigs by de novo Assemble to
+ Reference Sequences.を選択します。</li>
+</ol>
+
+<p><a href="/assets/images/help/Selecting-Tools-for-Basic-Analysis-of-DDBJ-ANNOTATION-PIPELINE_41.png" class="group1"><img src="/assets/images/help/Selecting-Tools-for-Basic-Analysis-of-DDBJ-ANNOTATION-PIPELINE_41.png" alt="" /></a></p>
+
+<h2 id="generating-query-sets-from-query-read-files">Generating Query Sets from Query Read Files<a name="Generating"></a></h2>
+
+<h3 id="クエリーファイルを一つのジョブで実行-">クエリーファイルを一つのジョブで実行 <a name="Query1"></a></h3>
+
+<ol>
+  <li>編集したいファイルにチェックを入れます。</li>
+  <li>confirmをクリックします。
+<a href="/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_61.png" class="group1"><img src="/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_61.png" alt="" /></a></li>
+  <li>確認</li>
+  <li>次へ</li>
+</ol>
+
+<p><a href="/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_71.png" class="group1"><img src="/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_71.png" alt="" /></a></p>
+
+<h3 id="クエリーファイルを複数のジョブで実行-">クエリーファイルを複数のジョブで実行 <a name="Query2"></a></h3>
+
+<ol>
+  <li>一つのジョブとして編集したいファイルにチェックを入れます。</li>
+  <li>confirmをクリックします。
+<a href="/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_111.png" class="group1"><img src="/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_111.png" alt="" /></a></li>
+  <li>確認
+<a href="/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_121.png" class="group1"><img src="/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_121.png" alt="" /></a></li>
+  <li>残りのファイルの内、別のジョブとして編集したいファイルにチェックを入れます。</li>
+  <li>confirmをクリックします。
+<a href="/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_131.png" class="group1"><img src="/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_131.png" alt="" /></a></li>
+  <li>クエリセット１、２ができます。（JOBが２つ投入）</li>
+  <li>次へ</li>
+</ol>
+
+<p><a href="/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_141.png" class="group1"><img src="/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_141.png" alt="" /></a></p>
+
+<h3 id="mate-pairedを使用してdenovoassemblysoapdenovovelvetのみ-">Mate-pairedを使用してdenovoAssembly(SOAPdenovo,Velvetのみ) <a name="MatePair"></a></h3>
+
+<ol>
+  <li>編集したいファイルにチェックを入れます。</li>
+  <li>先にPair-Endをセットします。（その後Mate-Pairをセットします）
+<a href="/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_91.png" class="group1"><img src="/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_91.png" alt="" /></a></li>
+  <li>確認</li>
+  <li>次へ</li>
+</ol>
+
+<p><a href="/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_101.png" class="group1"><img src="/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_101.png" alt="" /></a></p>
+
+<h2 id="specifying-database-of-reference-genome">Specifying Database of Reference Genome<a name="Reference"></a></h2>
+
+<h3 id="major-genomeとして登録されているreferenceを使用する場合-">Major genomeとして登録されているreferenceを使用する場合 <a name="MajorGenome"></a></h3>
+
+<ol>
+  <li>Major genome setsを選択します。</li>
+  <li>Organisms,Genome setsを選択します。</li>
+  <li>染色体を選択します。</li>
+  <li>次へ</li>
+</ol>
+
+<p><a href="/assets/images/help/Specifying-Database-of-Reference-Genome_11.png" class="group1"><img src="/assets/images/help/Specifying-Database-of-Reference-Genome_11.png" alt="" /></a></p>
+
+<h3 id="自分で登録したreference-user-original-sets-を使用する場合-">自分で登録したreference (User original sets) を使用する場合 <a name="ReferenceOriginal"></a></h3>
+
+<ol>
+  <li>User original setsを選択します。</li>
+  <li>Genome setsを選択します。</li>
+  <li>次へ</li>
+</ol>
+
+<p><a href="/assets/images/help/Specifying-Database-of-Reference-Genome_21.png" class="group1"><img src="/assets/images/help/Specifying-Database-of-Reference-Genome_21.png" alt="" /></a></p>
+
+<h3 id="自分でreferenceをuser-original-setsへ登録する場合-">自分でreferenceを(User original setsへ)登録する場合 <a name="ReferenceSet"></a></h3>
+
+<ol>
+<li> Download or upload referenceを選択します。</li>
+[アクセッション番号(INSD)からのダウンロードの場合]
+<li>アクセッション番号(INSD)を入れ"LOAD"をクリックします。</li>
+[ローカルPCからのアップロードの場合]
+<li class="decrement">"ファイルを選択"をクリックし、ローカルPCからファイルを選択したら"UPLOAD"をクリックします。</li>
+<li> ファイルが表示されます。</li>
+<li> "CREATE DATASET"をクリックするとCreate Genome Dataset画面へ遷移します。
+<figure><a href="/assets/images/help/SpecifyingDatabase_61.png"><img src="/assets/images/help/SpecifyingDatabase_61.png" alt="" /></a></figure>
+</li>
+<li> genomeset の記述を変更できます。</li>
+<li> "CREATE GENOMESET"をクリックするとSpecifying Database of Reference Genome画面に戻ります。
+<figure><a href="/assets/images/help/SpecifyingDatabase_21.png"><img src="/assets/images/help/SpecifyingDatabase_21.png" alt="" /></a></figure>
+</li>
+<li> ダウンロードしたファイルが"User original sets"に追加され、選択した状態となっています。
+<figure><a href="/assets/images/help/SpecifyingDatabase_31.png"><img src="/assets/images/help/SpecifyingDatabase_31.png" alt="" /></a></figure>
+</li>
+</ol>
+
+<h2 id="set-options">Set Options<a name="StOpt"></a></h2>
+
+<h3 id="setting-for-de-novo-assembly-">Setting for <em>De Novo</em> Assembly <a name="SetOptionAssembly"></a></h3>
+
+<ol>
+  <li>オプションを指定します。</li>
+  <li><a href="/ddbj/wgs.html">WGS配列データ</a>としてDDBJに登録する場合は該当にチェックします。</li>
+  <li>次へ<br />
+＊ツールにより、画面は若干異なります。</li>
+</ol>
+
+<p><a href="/assets/images/help/Setting-for-De-Novo-Assembly_velvet_1.png" class="group1"><img src="/assets/images/help/Setting-for-De-Novo-Assembly_velvet_1.png" alt="" /></a></p>
+
+<h3 id="setting-for-reference-genome-mapping-">Setting for Reference Genome Mapping <a name="SetOptionMapping"></a></h3>
+
+<ol>
+  <li>オプションを指定します。</li>
+  <li>‘Uniq’指定ができます。</li>
+  <li>DNA polymorphism抽出方法を選択します。</li>
+  <li><a href="/ddbj/wgs.html">WGS配列データ</a>としてDDBJに登録する場合は該当にチェックします。</li>
+  <li>次へ<br />
+＊ツールにより、画面は若干異なります。</li>
+</ol>
+
+<p><a href="/assets/images/help/SetOption_Bwa_21.png" class="group1"><img src="/assets/images/help/SetOption_Bwa_21.png" alt="" /></a></p>
+
+<h2 id="run-confirmation">Run Confirmation<a name="Run"></a></h2>
+
+<h3 id="mappingde-novo-assembly-">Mapping/<em>de novo</em> Assembly <a name="RunMappingAssembly"></a></h3>
+
+<ol>
+  <li>ジョブが終了した際の連絡メールアドレスを記入します。</li>
+  <li>内容を確認したら、”RUN”をクリックします。</li>
+  <li>PopUp表示で再確認します。”OK”で実行。The reservation was completed.画面へ遷移します。</li>
+  <li>“STATUS”をクリックすると、Mapping, <em>de novo</em> Assembly 各Status ページへ遷移します。</li>
+</ol>
+
+<p><span class="red">＊guestユーザーでは、RUNボタンが表示されません</span></p>
+
+<p>＜Mapping (tool:bwa)の例＞</p>
+
+<p><a href="/assets/images/help/Run-Confirmation_31.png" class="group1"><img src="/assets/images/help/Run-Confirmation_31.png" alt="" /></a></p>
+
+<p><a href="/assets/images/help/RunConfirmation_PreProcess_31.png" class="group1"><img src="/assets/images/help/RunConfirmation_PreProcess_31.png" alt="" /></a></p>
+
+<p><em>＜de novo</em> Assembly (tool:velvet)の例＞</p>
+
+<p><a href="/assets/images/help/Run-Confirmation_21.png" class="group1"><img src="/assets/images/help/Run-Confirmation_21.png" alt="" /></a></p>
+
+<p><a href="/assets/images/help/RunConfirmation_PreProcess_311.png" class="group1"><img src="/assets/images/help/RunConfirmation_PreProcess_311.png" alt="" /></a></p>
+
+<h3 id="preprocessing--1">Preprocessing <a name="RunPreprocessing"></a></h3>
+
+<ol>
+  <li>ジョブが終了した際の連絡メールアドレスを記入します。</li>
+  <li>内容を確認します。</li>
+  <li>“RUN”をクリックすると、The reservation was completed.画面へ遷移します。</li>
+  <li>“STATUS”をクリックすると、Status-PreProcess画面へ遷移します。</li>
+</ol>
+
+<p><a href="/assets/images/help/RunConfirmation_PreProcess_21.png" class="group1"><img src="/assets/images/help/RunConfirmation_PreProcess_21.png" alt="" /></a></p>
+
+<p><a href="/assets/images/help/RunConfirmation_PreProcess_312.png" class="group1"><img src="/assets/images/help/RunConfirmation_PreProcess_312.png" alt="" /></a></p>
+
+<h2 id="status-mappingde-novo-assemblypreprocess">Status-Mapping/<em>de novo</em> Assembly/PreProcess<a name="Status"></a></h2>
+
+<h3 id="ジョブ実行状況の確認-">ジョブ実行状況の確認 <a name="jobstatus"></a></h3>
+
+<ol>
+  <li>”Show Only Your Own Job”をチェックします。</li>
+  <li>Reloadをクリックすると、ログインユーザーの結果のみ抽出されます。</li>
+  <li>実行したジョブのStatusが確認できます。( generating/running/complete/error )</li>
+  <li>“View”クリックで、実行状況の詳細画面へ遷移します。</li>
+  <li>他のStatus画面へも遷移できます。</li>
+</ol>
+
+<p><a href="/assets/images/help/Status-Mapping_31.png" class="group1"><img src="/assets/images/help/Status-Mapping_31.png" alt="" /></a></p>
+
+<h2 id="detail-view">Detail view<a name="View"></a></h2>
+
+<h3 id="mapping-">Mapping <a name="DetailMapping"></a></h3>
+
+<ol>
+  <li>統計結果が表示されます。</li>
+  <li>実行ログの確認ができます。</li>
+  <li>各種コマンド結果ファイルがダウンロードできます。</li>
+</ol>
+
+<p><a href="/assets/images/help/DetailViewMapping5_1.png" class="group1"><img src="/assets/images/help/DetailViewMapping5_1.png" alt="" /></a></p>
+
+<h4 id="統計結果のダウンロード-">統計結果のダウンロード <a name="統計結果のダウンロード"></a></h4>
+
+<dl>
+  <dt>＜Position errors＞</dt>
+  <dd><a href="/assets/images/help/Detail-view_2.png" class="group1"><img src="/assets/images/help/Detail-view_2.png" alt="Detail view_2" class="w450" /></a></dd>
+  <dd>
+    <dl>
+      <dt>+ ErrorRate (mapping, graph).</dt>
+      <dd>Percentage error of mapped sequence to reference sequence is calculated by read position.</dd>
+    </dl>
+  </dd>
+  <dt>＜Map ratio＞</dt>
+  <dd>
+    <dl>
+      <dt>+ Map ratio (mapping, numeric data)</dt>
+      <dd>Number of mapped reads* / Number of reads<br />
+*: the number of reads, which were mapped in both ends.</dd>
+    </dl>
+  </dd>
+  <dt>＜Depth, Coverage＞</dt>
+  <dd>
+    <dl>
+      <dt>+ Depth (mapping, numeric data)</dt>
+      <dd>he average of total sequence length (length of all sequence reads in a contig including gaps)/contig Length <span class="red">excluding “N” nucleotides. </span> 
+Reference: Lander ES, Waterman MS, Genomic mapping by fingerprinting random clones: a mathematical analysis.<br />
+Genomics 1988, 2(3):231-239.</dd>
+    </dl>
+  </dd>
+  <dd>
+    <dl>
+      <dt>+ Coverage (mapping, numeric data)</dt>
+      <dd>Sum of the length of all contigs/G,<br />
+where<br />
+G = Size (bp) of Reference Genome <span class="red">excluding “N” nucleotides.</span><br />
+L = Sequence Length (bp),<br />
+N = # sequences.</dd>
+    </dl>
+  </dd>
+</dl>
+
+<h3 id="de-novo-assembly--1"><em>de novo</em> Assembly <a name="DetailAssembly"></a></h3>
+
+<ol>
+  <li>統計結果が表示されます。</li>
+  <li>実行ログの確認ができます。</li>
+  <li>各種コマンド結果ファイルがダウンロードできます。</li>
+</ol>
+
+<p><a href="/assets/images/help/DetailViewAssembly1_1.png" class="group1"><img src="/assets/images/help/DetailViewAssembly1_1.png" alt="" /></a></p>
+
+<h4 id="統計量のダウンロード-">統計量のダウンロード <a name="統計量のダウンロード"></a></h4>
+
+<p>＜<em>de novo</em> Assembly statistics＞</p>
+
+<p><a href="/assets/images/help/Detail-view_6_1.png" class="group1"><img src="/assets/images/help/Detail-view_6_1.png" alt="Detail view_6_1" /></a></p>
+
+<h3 id="preprocessing--2">Preprocessing <a name="DetailPreprocessing"></a></h3>
+
+<ol>
+  <li>編集後Fastqファイル及び、各種グラフのダウンロードが行えます。</li>
+  <li>実行ログの確認ができます。</li>
+</ol>
+
+<p><a href="/assets/images/help/DetailViewPreprocess6_1.png" class="group1"><img src="/assets/images/help/DetailViewPreprocess6_1.png" alt="" /></a></p>
+
+<h4 id="編集済みファイル各種グラフのダウンロード-">編集済みファイル、各種グラフのダウンロード <a name="_編集済みファイル、各種グラフのダウンロード"></a></h4>
+
+<dl>
+  <dt>＜Fastq Download＞</dt>
+  <dd>編集後のFastqファイルがダウンロードできます。</dd>
+  <dt>＜QS Average(PDF)＞</dt>
+  <dd>編集前のQS標準偏差</dd>
+</dl>
+
+<p><a href="/assets/images/help/DetailViewPreprocess2_1.png" class="group1"><img src="/assets/images/help/DetailViewPreprocess2_1.png" alt="" /></a></p>
+
+<dl>
+  <dt>＜QS Count(PDF)＞</dt>
+  <dd>編集前のQS平均</dd>
+</dl>
+
+<p><a href="/assets/images/help/DetailViewPreprocess3_1.png" class="group1"><img src="/assets/images/help/DetailViewPreprocess3_1.png" alt="" /></a></p>
+
+<dl>
+  <dt>＜QS Error(PDF)＞</dt>
+  <dd>編集後のリード位置毎の削除割合</dd>
+</dl>
+
+<p><a href="/assets/images/help/DetailViewPreprocess4_1.png" class="group1"><img src="/assets/images/help/DetailViewPreprocess4_1.png" alt="" /></a></p>
+
+
+      </div>
+      
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              
+              <li>
+                <a href="/services/arsa.html">ARSA ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/blast.html">BLAST ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/getentry.html">getentry ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/vecscreen.html">VecScreen ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/clustalw.html">ClustalW ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/txsearch.html">TXSearch ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/past-services.html">過去のサービス</a>
+              </li>
+              
+              <li>
+                <a href="/services/references.html">関連論文</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi.html">WABI (Web API for Biology)</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-blast.html">WABI BLAST ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-clustalw.html">WABI ClustalW ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-vecscreen.html">WABI VecScreen ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-mafft.html">WABI MAFFT ヘルプ</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

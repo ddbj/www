@@ -1,0 +1,1752 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDBJ BioProject Handbook</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">DDBJ BioProject Handbook</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/bioproject">bioproject</a>
+          </li>
+          <li>
+            <a href="">DDBJ BioProject Handbook</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/bioproject/index-e.html">Home</a>
+      
+    </li>
+    
+    <li class="">
+      <a href="/bioproject/submission-e.html">Handbook</a>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/en/index-e.html">FAQ</a>
+      
+    </li>
+    
+    <li class="">
+      <a href="http://ddbj.nig.ac.jp/BPSearch/">Search</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/bioproject">Downloads</a>
+      
+      <ul>
+        
+        <li>
+          <a href="https://github.com/ddbj/pub/tree/master/docs/bioproject/xsd">XML Schema</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/bioproject/about-bioproject-e.html">About BioProject</a>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="overview-">Overview <a name="overview"></a></h2>
+
+<h3 id="purpose-">Purpose <a name="purpose"></a></h3>
+
+<p>New sequencing technologies have significantly increased the volume of data that can be generated. Coupled with this, research is increasingly collaborative and data resulting from collaboration can include distinct types of data which may be submitted by more than one research group to more than one archival database.</p>
+
+<p>The BioProject resource organizes both the projects and the data from those projects which is deposited into several archival databases maintained by members of the <a href="http://www.insdc.org/">INSDC</a>. This allows searching by characteristics of these projects, using the project description and project content across the <a href="http://www.insdc.org/">INSDC</a>-associated databases.</p>
+
+<a class="group1" href="/assets/images/submission/biosample_integration.jpg" title="Overview of BioSample and BioProject integration with other DDBJ
+databases">
+  <figure class="image">
+    <img src="/assets/images/submission/biosample_integration.jpg" alt="Overview of BioSample and BioProject integration with other DDBJ
+databases" class="w450">
+    <figcaption>Overview of BioSample and BioProject integration with other DDBJ
+databases</figcaption>
+  </figure>
+</a>
+
+<h3 id="project-">Project <a name="project"></a></h3>
+
+<p>The definition of a set of related data, a ‘project’ is very flexible and supports the need to define a complex project and various distinct sub-projects using different parameters.</p>
+
+<p>For example, BioProject records can be established for:</p>
+
+<ul>
+  <li>Genome sequencing and assembly</li>
+  <li>Metagenomes</li>
+  <li>Transcriptome sequencing and expression</li>
+  <li>Targeted locus sequencing</li>
+  <li>Genetic or RH Maps</li>
+  <li>Epigenetics</li>
+  <li>Phenotype or Genotype</li>
+  <li>Variation detection</li>
+</ul>
+
+<p>BioProject represents a submission, initiative, or group of data that is logically related in some manner, or is of interest to retrieve as a distinct dataset. A project may be identified in terms of distinctions in the type of data produced.</p>
+
+<h3 id="complex-project-">Complex project <a name="complex-project"></a></h3>
+
+<p>By selecting <a href="#Project_data_type">Project Data Types</a>(for example, “Genome Sequencing” and “Transcriptome or Gene Expression”), multiple studies can be merged into single project.</p>
+
+<p>In the project spanning multiple species, enter a taxonomic classification common to the species (e.g., genus name).</p>
+
+<p>In the <a href="#BioProject_Sample_scope">Sample scope</a>, <a href="#Material">Material</a>and <a href="#Capture">Capture</a>, select “Other” if appropriate ones are not available.</p>
+
+<p>A series of publications can be listed in the <a href="#Publication">Publication</a>.</p>
+
+<h3 id="primary-and-umbrella-projects">Primary and Umbrella projects<a name="primary-and-umbrella"></a></h3>
+
+<p>There are two basic types of projects; primary and umbrella projects.</p>
+
+<dl>
+  <dt>Primary project:</dt>
+  <dd>Submitted projects which are intended to represent and be linked to current or future data submissions. <span class="red">Primary projects can be kept private.</span></dd>
+  <dt>Umbrella project:</dt>
+  <dd>
+    <p>Administrative project that is created to group multiple projects that are related by a single effort from a single submitter or group of submitters. Umbrella projects may be created automatically using a rule-based logic or may be created by database staff upon request or upon identification of a needed grouping. <span class="red">Umbrella projects cannot be kept private.</span></p>
+
+    <p>Umbrella projects exist to provide an organizational structure to a large collaborative project and to group projects that are related via funding or submitting source or collaboration. Submitted primary projects are linked to data as it is submitted, and are linked to one or many umbrella projects. Submitted primary projects are not directly linked to other primary projects; they are linked indirectly by way of links to the umbrella project.</p>
+
+    <div class="attention red">  
+
+Nucleotide sequence data can not directly refer an umbrella project. Sequence data are linked to an umbrella via a primary project.
+
+</div>
+  </dd>
+</dl>
+
+<h3 id="bioproject-hierarchy-">BioProject hierarchy <a name="bioproject-hierarchy"></a></h3>
+
+<p>Definition of an umbrella project may be done in collaboration with a funding source. For example, there may be a top-most administrative project to represent the overarching initiative (“Genome Support Project”), with a secondary layer of primary projects defining core components of this initiative (reference genomes, rRNA sequencing, metagenomes, etc.).</p>
+
+<p>Some large initiatives are represented by more than one layer of umbrella projects (see Figure B below); for instance, a top-most level may identify the largest definition of the collaboration; a second level of umbrella projects identify the primary categories of data production; and finally a third layer represents the projects that actually generate the data that is submitted. The Human Microbiome project is an example of this type of complex hierarchy where the top-most project, <a href="https://www.ncbi.nlm.nih.gov/bioproject?term=PRJNA43021">PRJNA43021</a>, represents the most inclusive definition of the initiative, and a secondary level (such as <a href="https://www.ncbi.nlm.nih.gov/bioproject?term=PRJNA28331">PRJNA28331</a>) identifies a major sub-project to sequence multiple reference genomes each of which has a distinct project accession.</p>
+
+<a class="group1" href="/assets/images/submission/bp_org.jpg" title="Schematic diagram of BioProject hierarchies. (A)Two layers. (B)Three layers.">
+  <figure class="image">
+    <img src="/assets/images/submission/bp_org.jpg" alt="Schematic diagram of BioProject hierarchies. (A)Two layers. (B)Three layers." class="w450">
+    <figcaption>Schematic diagram of BioProject hierarchies. (A)Two layers. (B)Three layers.</figcaption>
+  </figure>
+</a>
+
+<dl>
+  <dt>Two layers (A)</dt>
+  <dd>Initiatives may be organized as a single Umbrella project with one or many submitted projects that are connected to data. Example: <a href="https://www.ncbi.nlm.nih.gov/bioproject/18309">Neanderthal Metagenome</a>.</dd>
+  <dt>Three layers (B)</dt>
+  <dd>Very large initiatives which have distinct sub-projects may have two levels of Umbrella project. For example, a top-level Umbrella project groups all components of the initiative; mid-level Umbrella projects reflect two distinct branches of the project (such as sequencing vs. epigenetics); and several primary projects denote distinct project data types (e.g., genome sequencing, transcriptome, epigenetics, etc.). Example: <a href="https://www.ncbi.nlm.nih.gov/bioproject/43021">NIH Human Microbiome Project (HMP) Roadmap Project</a>.</dd>
+</dl>
+
+<h3 id="data-release-">Data release <a name="data-release"></a></h3>
+
+<a class="group1" href="/assets/images/submission/release_re.jpg" title="Triggering of data release between primary projects and data records.">
+  <figure class="image">
+    <img src="/assets/images/submission/release_re.jpg" alt="Triggering of data release between primary projects and data records." class="w450">
+    <figcaption>Triggering of data release between primary projects and data records.</figcaption>
+  </figure>
+</a>
+
+<p>You can “immediately release” or “hold” the registered primary project.</p>
+
+<p>The submitted primary project data can be kept private until the linked DDBJ, DRA, DTA and DOR records made be public. Hold date of the project data cannot be specified. Primary project data are automatically released when the linked DDBJ record(s) is published. On the other hand, publication of the primary project data do not cause automatic release of the linked DDBJ record(s). Thus, under a primary project, publication of a data record does not cause the indirect release of the other records. Publication of the DDBJ records is independent from the release of the linked project(s).</p>
+
+<p>FAQ: <a href="/faq/en/bp-bs-seq-release.html">How are linked BioProject/BioSample/sequence data released?</a></p>
+
+<a class="group1" href="/assets/images/submission/um_pri_visibility.jpg" title="Visibility of relationships between a public umbrella and primary projects.">
+  <figure class="image">
+    <img src="/assets/images/submission/um_pri_visibility.jpg" alt="Visibility of relationships between a public umbrella and primary projects." class="w450">
+    <figcaption>Visibility of relationships between a public umbrella and primary projects.</figcaption>
+  </figure>
+</a>
+
+<p><span class="red">An umbrella project cannot be kept private.</span>An umbrella project can have public and private primary projects. Hierarchical relationship between the public umbrella project and the un-released primary project is invisible.</p>
+
+<p>Released project data are exchanged with the other two INSDC partners <a href="https://www.ncbi.nlm.nih.gov/bioproject">NCBI</a>and <a href="https://www.ebi.ac.uk/">EBI</a>BioProject databases.</p>
+
+<h3 id="use-an-umbrella-project-">Use an umbrella project <a name="use-umbrella-project"></a></h3>
+
+<p>Please group related primary projects by using an umbrella project. An umbrella project can group and present outputs from research project.</p>
+
+<p>NCBI visualizes data under an umbrella project with some statistics for easy navigation.</p>
+
+<p>Project presentation examples:<br />
+<a href="https://www.ncbi.nlm.nih.gov/bioproject/18309">Neanderthal Metagenome</a><br />
+<a href="https://www.ncbi.nlm.nih.gov/bioproject/68275">Escherichia coli O104:H4</a></p>
+
+<p>You can submit an umbrella project from <a href="https://ddbj.nig.ac.jp/D-way/">DDBJ submission system</a>in the same way as primary project. <span class="red">To remind the DDBJ BioProject team, you need to enter “this is an umbrella project” in the <a href="/bioproject/submission-e.html#Private_comments">Private comments to DDBJ staff</a>. </span>Registered umbrella project cannot be kept private, but some fields can be omitted.</p>
+
+<p>To group primary projects under an umbrella, please follow the steps below.<br />
+First, submit and release an umbrella project. If necessary, please share the assigned PRJDB number with relevant researchers.<br />
+When submitting related primary projects, please provide the PRJDB number of parent umbrella in the <a href="/bioproject/submission-e.html#Area_linked-project">Umbrella BioProject</a>. Released primary projects are automatically linked to the specified umbrella project.</p>
+
+<p>If you want to add already registered primary projects to the umbrella, please <a href="/contact-ddbj-e.html">e-mail</a>the PRJDB numbers of umbrella and related primary projects to the DDBJ BioProject team.</p>
+
+<p><span class="red">Private primary projects are not released by linking to public umbrella project.</span></p>
+
+<h2 id="metadata-">Metadata<a name="metadata"></a> <a name=""></a></h2>
+
+<p>Required <span class="red">*</span><br />
+Conditionally required <span class="conditionally_required">*</span></p>
+
+<h3 id="submitter-">Submitter <a name="Submitter"></a></h3>
+
+<h4 id="submitter--1">Submitter <a name="Area_bioproject-submitter"></a></h4>
+
+<p>Contact information of submitter(s). Questions and notifications about a submission are contacted to the e-mail address(es) listed here. Personal contact information is considered confidential and is collected to be used by DDBJ BioProject staff should questions arise; the general information about the research center is used for public display.</p>
+
+<dl>
+  <dt><a href="#BioProject_First_name">First name</a><a name="BioProject_First_name"></a></dt>
+  <dd>Submitter’s first name.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioProject_Last_name">Last name</a><span class="red">*</span><a name="BioProject_Last_name"></a></dt>
+  <dd>Submitter’s last name.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioProject_E-mail">E-mail</a> <span class="red">*</span><a name="BioProject_E-mail"></a></dt>
+  <dd>E-mail address. Enter an address from the organizations domain.</dd>
+</dl>
+
+<h4 id="organization-">Organization <a name="Area_organization"></a></h4>
+
+<p>Organization to which a contact person belongs.</p>
+
+<dl>
+  <dt><a href="#BioProject_Submitting_organization">Submitting organization</a><span class="red">*</span><a name="BioProject_Submitting_organization"></a></dt>
+  <dd>full name of organization.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioProject_Submitting_organization_URL">Submitting organization URL</a><a name="BioProject_Submitting_organization_URL"></a></dt>
+  <dd>The URL of submitter’s organization.</dd>
+</dl>
+
+<h4 id="data-release--1">Data Release <a name="Area_data-release"></a></h4>
+
+<p>Select “Hold” or “Release”. You cannot specify hold date. Please see <a href="#Release_of_projects">Release of projects</a> for detailed release mechanism.</p>
+
+<dl>
+  <dt><a href="#BioProject_Hold">Hold</a><a name="BioProject_Hold"></a></dt>
+  <dd>Released concurrently when the DDBJ, DRA, DTA and DOR record(s) citing this ID is released.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioProject_Release">Release</a><a name="BioProject_Release"></a></dt>
+  <dd>Release project data immediately. Private DDBJ record(s) citing this ID is not released.</dd>
+</dl>
+
+<h3 id="general-info-">General info <a name="General-info"></a></h3>
+
+<h4 id="project-description-">Project Description <a name="Area_project-description"></a></h4>
+
+<p>An informative paragraph that describes the project and provides informative context for the displayed project record.</p>
+
+<dl>
+  <dt><a href="#Project_title">Project title</a><span class="red">*</span><a name="Project_title"></a></dt>
+  <dd>Very short descriptive name of the project for caption, labels, etc for public display. For example: Chromosome Y sequencing, Global studies of microbial diversity on human skin.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Public_description">Description</a><span class="red">*</span><a name="Public_description"></a></dt>
+  <dd>Description (a paragraph) of the project goals and purposes. Provide enough information (more than 100 characters) in the description for other users to interpret the data.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Private_comments">Private comments to DDBJ staff</a><a name="Private_comments"></a></dt>
+  <dd>Use this field if you have questions for database support staff. The content is not made public. If you intend to submit an umbrella project, please inform us that “this is umbrella project”.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Relevance">Relevance</a><a name="Relevance"></a></dt>
+  <dd>Select the primary general relevance of the study.
+
+    <table>
+      <thead>
+        <tr>
+          <th>Relevance</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Agricultural</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>Medical</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>Industrial</td>
+          <td>Could include bio-remediation, bio-fuels and other areas of research where there are areas of mass production.</td>
+        </tr>
+        <tr>
+          <td>Environmental</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>Evolution</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>ModelOrganism</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>Other</td>
+          <td>Unspecified major impact categories to be defined in the “Relevance description”.</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Relevance_description">Relevance description</a><span class="conditionally_required">*</span><a name="Relevance_description"></a></dt>
+  <dd>Describe the relevance when the Other is selected.</dd>
+</dl>
+
+<h4 id="umbrella-bioproject">Umbrella BioProject<a name="Area_linked-project"></a></h4>
+
+<p>If you are registering a project that is part of an initiative which is already registered in the BioProject database, then please tell us the existing BioProject accession number and provide a general description of the larger initiative. This information is needed for <a href="#primary-and-umbrella">project linking</a>.</p>
+
+<dl>
+  <dt><a href="#Initiative_description">Initiative description</a><span class="conditionally_required">*</span><a name="Initiative_description"></a></dt>
+  <dd>Description of an initiative.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioProject_BioProject_ID">Umbrella BioProject accession</a><span class="conditionally_required">*</span><a name="BioProject_BioProject_ID"></a></dt>
+  <dd>A BioProject accession number of an initiative which is already registered in the BioProject database.</dd>
+</dl>
+
+<h4 id="external-links-">External Links <a name="Area_external-links"></a></h4>
+
+<p>An URL may be provided, with a label for the resource, to reference a resource that is directly relevant to the submitted project.</p>
+
+<dl>
+  <dt><a href="#URL_link_description">Link description</a><a name="URL_link_description"></a></dt>
+  <dd>Display name of web site that is related to this study.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioProject_URL">URL</a><a name="BioProject_URL"></a></dt>
+  <dd>URL of web site that is related to this study.</dd>
+</dl>
+
+<h4 id="grants-">Grants <a name="Area_grants"></a></h4>
+
+<p>Funding information for a project.</p>
+
+<dl>
+  <dt><a href="#Agency">Agency</a><a name="Agency"></a></dt>
+  <dd>Name of funding agency. For example: Japan Society for the Promotion of Science.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Agency_abbreviation">Agency abbreviation</a><a name="Agency_abbreviation"></a></dt>
+  <dd>Abbreviation of funding agency. For example: JSPS.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Grant_ID">Grant ID</a><a name="Grant_ID"></a></dt>
+  <dd>Grant number is collected to support searches (e.g., publications often cite Grant numbers). For example: JSPS KAKENHI Grant Number 12345678.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Grant_title">Grant title</a><a name="Grant_title"></a></dt>
+  <dd>Grant title may also support searches.</dd>
+</dl>
+
+<h4 id="consortium-">Consortium <a name="Area_consortium"></a></h4>
+
+<dl>
+  <dt><a href="#Consortium_name">Consortium name</a><a name="Consortium_name"></a></dt>
+  <dd>If study is carried out as part of a consortium, provide the consortium name.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Consortium_URL">Consortium URL</a><a name="Consortium_URL"></a></dt>
+  <dd>If the consortium maintains a web site, provide the URL.</dd>
+</dl>
+
+<h3 id="project-type-">Project type <a name="Project-type"></a></h3>
+
+<h4 id="project-data-type">Project data type<a name="Project_data_type"></a></h4>
+
+<dl>
+  <dt><a href="#Project_data_type">Project data type</a><span class="red">*</span><a name="Project_data_type"></a></dt>
+  <dd>
+    <p>A general label indicating the primary study goal. Select appropriate types. <a href="/news/en/2014-11-12-e.html">News: A BioProject record can have multiple project data types</a></p>
+
+    <p>NCBI individually assigns the <a href="https://www.ncbi.nlm.nih.gov/books/NBK54364/def-item/project-data-type/">Project data type</a> based on the experimental data linked to the project. This type is not used by <a href="https://www.ebi.ac.uk/ena/submit/project-format">EBI</a>.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Project Data type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Genome Sequencing</td>
+          <td>whole, or partial, genome sequencing project (with or without a genome assembly)</td>
+        </tr>
+        <tr>
+          <td>Clone Ends</td>
+          <td>clone-end sequencing project</td>
+        </tr>
+        <tr>
+          <td>Epigenomics</td>
+          <td>DNA methylation, histone modification, chromatin accessibility datasets</td>
+        </tr>
+        <tr>
+          <td>Exome</td>
+          <td>exome resequencing project</td>
+        </tr>
+        <tr>
+          <td>Map</td>
+          <td>project that results in non-sequence map data such as genetic map, radiation hybrid map, cytogenetic map, optical map, and etc.</td>
+        </tr>
+        <tr>
+          <td>Metagenome</td>
+          <td>sequence analysis of environmental samples</td>
+        </tr>
+        <tr>
+          <td>Phenotype and Genotype</td>
+          <td>project correlating phenotype and genotype</td>
+        </tr>
+        <tr>
+          <td>Proteome</td>
+          <td>large scale proteomics experiment including mass spec. analysis</td>
+        </tr>
+        <tr>
+          <td>Random Survey</td>
+          <td>sequence generated from a random sampling of the collected sample; not intended to be comprehensive sampling of the material.</td>
+        </tr>
+        <tr>
+          <td>Targeted Locus (Loci)</td>
+          <td>project to sequence specific loci, such as a 16S rRNA sequencing</td>
+        </tr>
+        <tr>
+          <td>Transcriptome or Gene Expression</td>
+          <td>large scale RNA sequencing or expression analysis. Includes cDNA, EST, RNA_seq, and microarray.</td>
+        </tr>
+        <tr>
+          <td>Variation</td>
+          <td>project with a primary goal of identifying large or small sequence variation across populations.</td>
+        </tr>
+        <tr>
+          <td>Other</td>
+          <td>a free text description is provided to indicate Other data type</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Project_data_type_description">Project data type description</a><span class="conditionally_required">*</span><a name="Project_data_type_description"></a></dt>
+  <dd>Describe the project data type when the Other is selected.</dd>
+</dl>
+
+<h4 id="sample-scopematerialcapturemethodology-">Sample scope/Material/Capture/Methodology <a name="Area_sample-scopematerialcapturemethodology"></a></h4>
+
+<dl>
+  <dt><a href="#BioProject_Sample_scope">Sample scope</a><span class="red">*</span><a name="BioProject_Sample_scope"></a></dt>
+  <dd>The scope and purity of the biological sample used for the study.
+
+    <table>
+      <thead>
+        <tr>
+          <th>Sample scope</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monoisolate</td>
+          <td>A single animal, cultured cell-line, inbred population (or possibly a heterogeneous population when a single genome assembly is generated from the pooled sample; not preferred).</td>
+        </tr>
+        <tr>
+          <td>Multiisolate</td>
+          <td>Multiple individuals, a population (representation of a species).</td>
+        </tr>
+        <tr>
+          <td>Multi-species</td>
+          <td>Sample represents multiple species.</td>
+        </tr>
+        <tr>
+          <td>Environment</td>
+          <td>Species content of the sample is not known.</td>
+        </tr>
+        <tr>
+          <td>Synthetic</td>
+          <td>Sample is synthetically created by a machine.</td>
+        </tr>
+        <tr>
+          <td>Other</td>
+          <td>Specify the sample scope that was used in the “Target description”.</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Material">Material</a><span class="red">*</span><a name="Material"></a></dt>
+  <dd>The type of material that is isolated from the sample for use in the experimental study.
+
+    <table>
+      <thead>
+        <tr>
+          <th>Material</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Genome</td>
+          <td>A whole genome initiative. May be only the nuclear genome. Use for DNA of a metagenome sample.</td>
+        </tr>
+        <tr>
+          <td>Partial Genome</td>
+          <td>One or more chromosomes or replicons were experimentally purified.</td>
+        </tr>
+        <tr>
+          <td>Transcriptome</td>
+          <td>Transcript data.</td>
+        </tr>
+        <tr>
+          <td>Reagent</td>
+          <td>Material studied was obtained by chemical reaction, precipitation.</td>
+        </tr>
+        <tr>
+          <td>Proteome</td>
+          <td>Protein or peptide data.</td>
+        </tr>
+        <tr>
+          <td>Phenotype</td>
+          <td>Phenotypic descriptive data.</td>
+        </tr>
+        <tr>
+          <td>Other</td>
+          <td>Specify the material that was used in the “Target description”.</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Capture">Capture</a><span class="red">*</span><a name="Capture"></a></dt>
+  <dd>The scale, or type, of information that the study is designed to generate from the sample material.
+
+    <table>
+      <thead>
+        <tr>
+          <th>Capture</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Whole</td>
+          <td>The project makes use of the whole sample material (most common case).</td>
+        </tr>
+        <tr>
+          <td>Clone Ends</td>
+          <td>Capturing clone end data.</td>
+        </tr>
+        <tr>
+          <td>Exome</td>
+          <td>Capturing exon-specific data.</td>
+        </tr>
+        <tr>
+          <td>Targeted Locus/Loci</td>
+          <td>Capturing specific loci (gene, genomic region, barcode standard).</td>
+        </tr>
+        <tr>
+          <td>Random Survey</td>
+          <td>Not using whole sample, an incomplete survey of the sample.</td>
+        </tr>
+        <tr>
+          <td>Other</td>
+          <td>Specify the scale or type of the captured material in the “Target description”.</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Target_description">Target description</a><span class="conditionally_required">*</span><a name="Target_description"></a></dt>
+  <dd>Describe the Sample scope/Material/Capture when the Other(s) is selected.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Methodology">Methodology</a><span class="red">*</span><a name="Methodology"></a></dt>
+  <dd>The core experimental approach used to obtain the data that is submitted to archival databases.
+
+    <table>
+      <thead>
+        <tr>
+          <th>Methodology</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sequencing</td>
+          <td>Sequencing using Sanger, 454, Illumina, etc wit</td>
+        </tr>
+        <tr>
+          <td>Array</td>
+          <td>Data/Sequence are generated by hybridization arrays.</td>
+        </tr>
+        <tr>
+          <td>Mass Spectroscopy</td>
+          <td>Data are generated by mass spectroscopy.</td>
+        </tr>
+        <tr>
+          <td>Other</td>
+          <td>Please provide data description in the “Methodogy description”.</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Methodology_description">Methodology description</a><span class="conditionally_required">*</span><a name="Methodology_description"></a></dt>
+  <dd>Describe the methodology type when the Other is selected.</dd>
+</dl>
+
+<h4 id="objective-">Objective <a name="Area_objective"></a></h4>
+
+<p>Project goals with respect to the type of data that will be generated and submitted to an INSDC-associated database. Select all relevant menu options.</p>
+
+<dl>
+  <dt><a href="#Objective">Objective</a><span class="red">*</span><a name="Objective"></a></dt>
+  <dd>Project goals with respect to the type of data that will be generated and submitted to an INSDC-associated database. Select all relevant menu options.
+
+    <table>
+      <thead>
+        <tr>
+          <th>Objective</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Raw Sequence Reads</td>
+          <td>Submission of raw sequencing information as it comes out of machine.</td>
+        </tr>
+        <tr>
+          <td>Sequence</td>
+          <td>Sequence which is not raw - meaning processed (clipped, matepaired, oriented).</td>
+        </tr>
+        <tr>
+          <td>Analysis</td>
+          <td>Higher level interpretation of the data.</td>
+        </tr>
+        <tr>
+          <td>Assembly</td>
+          <td>Experiment will result in assemblies (genome or transcriptome).</td>
+        </tr>
+        <tr>
+          <td>Annotation</td>
+          <td>Experiment wil result in Annotation.</td>
+        </tr>
+        <tr>
+          <td>Variation</td>
+          <td>Submission of variations.</td>
+        </tr>
+        <tr>
+          <td>Epigenetic Markers</td>
+          <td>Experiment will result in Epigenetic markers.</td>
+        </tr>
+        <tr>
+          <td>Expression</td>
+          <td>Submission of gene expression.</td>
+        </tr>
+        <tr>
+          <td>Maps</td>
+          <td>Experiment will result in cytogenetic, physical, Rh, etc…maps.</td>
+        </tr>
+        <tr>
+          <td>Phenotype</td>
+          <td>Experiment will deliver phenotypes.</td>
+        </tr>
+        <tr>
+          <td>Other</td>
+          <td> </td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<h4 id="locus-tag-prefix-">Locus tag prefix <a name="Area_locus-tag-prefix"></a></h4>
+
+<dl>
+  <dt><a href="#Locus_tag_prefix">Locus tag prefix</a><span class="conditionally_required">*</span><a name="Locus_tag_prefix"></a></dt>
+  <dd>Locus tag prefix generation box will appear when [Project data type=”Genome Sequencing” or “Metagenome”] AND [Capture=”Whole”] AND [Objective=”Sequence” or “Annotation” or “Assembly”].
+
+    <p>Registration of a unique locus tag prefix is required for studies that result in genome assemblies. Please leave the prefix box empty, when a prefix is not necessary for <a href="/ddbj/wgs-e.html">WGS</a> only submission.</p>
+
+    <p><a href="/ddbj/locus_tag-e.html">Locus tag prefix guideline</a>.</p>
+
+    <p>Locus tag prefix format<br />
+The locus_tag prefix can contain only alpha-numeric characters and it must be 3-12 characters long. It should start with a letter, but numerals can be in the 2nd position or later in the string. (ex. A1C). There should be no symbols, such as -_* in the prefix. The locus_tag prefix is to be separated from the tag value by an underscore ‘_’, eg A1C_00001.</p>
+
+    <p>DDBJ BioProject limits the maximum tag length to 12 characters. In the BioProject submission system, the locus tag is displayed in capital letters. However, the tag is reserved in case-insensitive manner.</p>
+  </dd>
+</dl>
+
+<h3 id="target-">Target <a name="Target"></a></h3>
+
+<h4 id="organism-information-">Organism information <a name="Area_organism-information"></a></h4>
+
+<p>Taxonomy and description of target organism.</p>
+
+<dl>
+  <dt><a href="#BioProject_Organism_name">Organism name</a><span class="red">*</span><a name="BioProject_Organism_name"></a><a name="BioProject_Organism_name"></a></dt>
+  <dd>
+    <p>Organism name in the <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html">Taxonomy database</a>. Unclassified sequences including metagenome and environmental samples may be found at <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&amp;id=12908&amp;lvl=3&amp;lin=f&amp;keep=1&amp;srchmode=1&amp;unlock">here</a>.</p>
+
+    <p>In the project spanning multiple species, enter a taxonomic classification common to the species (e.g., genus name).</p>
+
+    <p>If you intend to submit un-registered novel organism, please provide us the <a href="/ddbj/organism-e.html">detailed organism information</a> in the <a href="#Novel_organism">Description of novel organism</a> and proposed organism name in the Organism Name.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioProject_Taxonomy_ID">Taxonomy ID</a><a name="BioProject_Taxonomy_ID"></a></dt>
+  <dd><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html">NCBI Taxonomy ID</a></dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Strain_breed_cultivar">Strain, breed, cultivar</a><a name="Strain_breed_cultivar"></a></dt>
+  <dd>Microbial strain name, or eukaryotic breed or cultivar name. Please provide this or “Isolate name or label”</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Isolate_name_label">Isolate name or label</a><a name="Isolate_name_label"></a></dt>
+  <dd>A label for an isolated sample, or name of an individual animal (e.g., Clint). Please provide this or “Strain, breed, cultivar”.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioProject_Description">Description</a><a name="BioProject_Description"></a></dt>
+  <dd>A brief description, to elaborate upon the brief label.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Novel_organism">Description of novel organism</a><a name="Novel_organism"></a></dt>
+  <dd>Enter necessary information to register an organism to the <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/">taxonomy database</a>.</dd>
+</dl>
+
+<h4 id="environmental-sample-information-">Environmental sample information <a name="Area_environmental-sample-information"></a></h4>
+
+<p>This section appears instead of the <a href="#BioProject_Organism_name">Organism information</a> when the Sample scope=”Environment” in the Target.</p>
+
+<dl>
+  <dt><a href="#Environmental_sample_name">Environmental sample name</a><span class="red">*</span><a name="Environmental_sample_name"></a></dt>
+  <dd>Unclassified sequences including metagenome and environmental samples may be found at <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&amp;id=12908&amp;lvl=3&amp;lin=f&amp;keep=1&amp;srchmode=1&amp;unlock">here</a>. If an appropriate name was not found, describe a novel name you propose and details of sample information in the <a href="#Environmental_sample_description">Environmental sample description</a>.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Environmental_sample_description">Environmental sample description</a><a name="Environmental_sample_description"></a></dt>
+  <dd>Describe details of sample information.</dd>
+</dl>
+
+<h4 id="general-properties-">General Properties <a name="Area_general-properties"></a></h4>
+
+<p>General properties of target organism.</p>
+
+<dl>
+  <dt><a href="#Cellularity">Cellularity</a><a name="Cellularity"></a></dt>
+  <dd>Select a cellularity.
+
+    <table>
+      <thead>
+        <tr>
+          <th>Cellularity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Unicellular</td>
+        </tr>
+        <tr>
+          <td>Multicellular</td>
+        </tr>
+        <tr>
+          <td>Colonial</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Reproduction">Reproduction</a><a name="Reproduction"></a></dt>
+  <dd>Select a Reproduction.
+
+    <table>
+      <thead>
+        <tr>
+          <th>Reproduction</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sexual</td>
+        </tr>
+        <tr>
+          <td>Asexual</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Haploid_genome_size">Haploid genome size</a><a name="Haploid_genome_size"></a></dt>
+  <dd>Haploid genome size in Kb, Mb or cM.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Ploidy">Ploidy</a><a name="Ploidy"></a></dt>
+  <dd>Select a Ploidy.
+
+    <table>
+      <thead>
+        <tr>
+          <th>Ploidy</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Haploid</td>
+        </tr>
+        <tr>
+          <td>Diploid</td>
+        </tr>
+        <tr>
+          <td>Polyploid</td>
+        </tr>
+        <tr>
+          <td>Allopolyploid</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<h4 id="organism-replicons-">Organism Replicons <a name="Area_organism-replicons"></a></h4>
+
+<p>Describe how many replicons this organism has, how they are named (e.g., 1, 2, 3 vs. I, II, III), the replicon type (chromosome etc.), and the subcellular structure that the replicon is located in.</p>
+
+<dl>
+  <dt><a href="#Replicon_name">Name</a><a name="Replicon_name"></a></dt>
+  <dd>The preferred standard for the replicon name.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Replicon_type">Type</a><a name="Replicon_type"></a></dt>
+  <dd>Select a replicon type.
+
+    <table>
+      <thead>
+        <tr>
+          <th>Replicon type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Chromosome</td>
+        </tr>
+        <tr>
+          <td>Plasmid</td>
+        </tr>
+        <tr>
+          <td>Linkage Group</td>
+        </tr>
+        <tr>
+          <td>Segment</td>
+        </tr>
+        <tr>
+          <td>Other</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Location">Location</a><a name="Location"></a></dt>
+  <dd>The replicon subcellular location. For instance, the nucleus, or a differentiated organella. Please select “Nuclear or Prokaryote” for the chromosomes of eularyotes, bacteria or archaea.
+
+    <table>
+      <thead>
+        <tr>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Nuclear or Prokaryote</td>
+        </tr>
+        <tr>
+          <td>Macronuclear</td>
+        </tr>
+        <tr>
+          <td>Nucleomorph</td>
+        </tr>
+        <tr>
+          <td>Mitochondrion</td>
+        </tr>
+        <tr>
+          <td>Kinetoplast</td>
+        </tr>
+        <tr>
+          <td>Chloroplast</td>
+        </tr>
+        <tr>
+          <td>Chromoplast</td>
+        </tr>
+        <tr>
+          <td>Plastid</td>
+        </tr>
+        <tr>
+          <td>Virion or Phage</td>
+        </tr>
+        <tr>
+          <td>Proviral or Prophage</td>
+        </tr>
+        <tr>
+          <td>Viroid</td>
+        </tr>
+        <tr>
+          <td>Extrachrom</td>
+        </tr>
+        <tr>
+          <td>Cyanelle</td>
+        </tr>
+        <tr>
+          <td>Apicoplast</td>
+        </tr>
+        <tr>
+          <td>Leucoplast</td>
+        </tr>
+        <tr>
+          <td>Proplastid</td>
+        </tr>
+        <tr>
+          <td>Hydrogenosome</td>
+        </tr>
+        <tr>
+          <td>Chromatophore</td>
+        </tr>
+        <tr>
+          <td>Other</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Size">Size</a><a name="Size"></a></dt>
+  <dd>The size and unit of measurement for the estimated genome size.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Replicon_description">Description</a><a name="Replicon_description"></a></dt>
+  <dd>A description of any unusual features of the replicon.</dd>
+</dl>
+
+<h4 id="phenotype-">Phenotype <a name="Area_phenotype"></a></h4>
+
+<p>Phenotype of target organism.</p>
+
+<dl>
+  <dt><a href="#Disease">Disease</a><a name="Disease"></a></dt>
+  <dd>Enter a disease name.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioticRelationship">Biotic Relationship</a><a name="BioticRelationship"></a></dt>
+  <dd>Select a BioticRelationship.
+
+    <table>
+      <thead>
+        <tr>
+          <th>BioticRelationship</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>FreeLiving</td>
+        </tr>
+        <tr>
+          <td>Commensal</td>
+        </tr>
+        <tr>
+          <td>Symbiont</td>
+        </tr>
+        <tr>
+          <td>Episymbiont</td>
+        </tr>
+        <tr>
+          <td>Intracellular</td>
+        </tr>
+        <tr>
+          <td>Parasite</td>
+        </tr>
+        <tr>
+          <td>Host</td>
+        </tr>
+        <tr>
+          <td>Endosymbiont</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#TrophicLevel">Trophic Level</a><a name="TrophicLevel"></a></dt>
+  <dd>Select a TrophicLevel.
+
+    <table>
+      <thead>
+        <tr>
+          <th>TrophicLevel</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Autotroph</td>
+        </tr>
+        <tr>
+          <td>Heterotroph</td>
+        </tr>
+        <tr>
+          <td>Mixotroph</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<h4 id="prokaryote-morphology-">Prokaryote Morphology <a name="Area_prokaryote-morphology"></a></h4>
+
+<p>When the target organism is prokaryote, please describe the general morphology if known.</p>
+
+<dl>
+  <dt><a href="#Shape">Shape</a><a name="Shape"></a></dt>
+  <dd>Select all relevant menu options.
+
+    <table>
+      <thead>
+        <tr>
+          <th>Shape</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bacilli</td>
+          <td>rod-shaped</td>
+        </tr>
+        <tr>
+          <td>Cocci</td>
+          <td>spherical-shaped</td>
+        </tr>
+        <tr>
+          <td>Spirilla</td>
+          <td>spiral-shaped</td>
+        </tr>
+        <tr>
+          <td>Coccobacilli</td>
+          <td>elongated coccal form</td>
+        </tr>
+        <tr>
+          <td>Filamentous</td>
+          <td>filament-shaped (bacilli thar occur in long threads)</td>
+        </tr>
+        <tr>
+          <td>Vibrios</td>
+          <td>vibrio-shaped (short, slightly curved rods)</td>
+        </tr>
+        <tr>
+          <td>Fusobacteria</td>
+          <td>fusiform or spindle-shaped (rods with tapered ends)</td>
+        </tr>
+        <tr>
+          <td>SquareShaped</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>CurvedShaped</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>Tailed</td>
+          <td> </td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Gram">Gram</a><a name="Gram"></a></dt>
+  <dd>Choose gram positive or negative.
+
+    <table>
+      <thead>
+        <tr>
+          <th>Gram</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Positive</td>
+        </tr>
+        <tr>
+          <td>Negative</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Motility">Motility</a><a name="Motility"></a></dt>
+  <dd>Choose a Motility.
+
+    <table>
+      <thead>
+        <tr>
+          <th>Motility</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>No</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Enveloped">Enveloped</a><a name="Enveloped"></a></dt>
+  <dd>Choose enveloped or not.
+
+    <table>
+      <thead>
+        <tr>
+          <th>Enveloped</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>No</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Endospores">Endospores</a><a name="Endospores"></a></dt>
+  <dd>Choose target bacteria forms endospores or not.
+
+    <table>
+      <thead>
+        <tr>
+          <th>Endospores</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>No</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<h4 id="ecological-environment-">Ecological Environment <a name="Area_ecological-environment"></a></h4>
+
+<p>The general habitat for any organism. Please indicate additional extremophile parameters if known.</p>
+
+<dl>
+  <dt><a href="#Habitat">Habitat</a><a name="Habitat"></a></dt>
+  <dd>Choose a Habitat.
+
+    <table>
+      <thead>
+        <tr>
+          <th>Habitat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HostAssociated</td>
+        </tr>
+        <tr>
+          <td>Aquatic</td>
+        </tr>
+        <tr>
+          <td>Terrestrial</td>
+        </tr>
+        <tr>
+          <td>Specialized</td>
+        </tr>
+        <tr>
+          <td>Multiple</td>
+        </tr>
+        <tr>
+          <td>Unknown</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Salinity">Salinity</a><a name="Salinity"></a></dt>
+  <dd>Choose a Salinity.
+
+    <table>
+      <thead>
+        <tr>
+          <th>Salinity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>NonHalophilic</td>
+        </tr>
+        <tr>
+          <td>Mesophilic</td>
+        </tr>
+        <tr>
+          <td>ModerateHalophilic</td>
+        </tr>
+        <tr>
+          <td>ExtremeHalophilic</td>
+        </tr>
+        <tr>
+          <td>Unknown</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#OxygenReq">Oxygen requirement</a><a name="OxygenReq"></a></dt>
+  <dd>Choose an Oxygen requirement.
+
+    <table>
+      <thead>
+        <tr>
+          <th>OxygenReq</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Aerobic</td>
+        </tr>
+        <tr>
+          <td>Microaerophilic</td>
+        </tr>
+        <tr>
+          <td>Facultative</td>
+        </tr>
+        <tr>
+          <td>Anaerobic</td>
+        </tr>
+        <tr>
+          <td>Unknown</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#TemperatureRange">Temperature range</a><a name="TemperatureRange"></a></dt>
+  <dd>Choose a temperature range.
+
+    <table>
+      <thead>
+        <tr>
+          <th>TemperatureRange</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cryophilic</td>
+        </tr>
+        <tr>
+          <td>Psychrophilic</td>
+        </tr>
+        <tr>
+          <td>Mesophilic</td>
+        </tr>
+        <tr>
+          <td>Thermophilic</td>
+        </tr>
+        <tr>
+          <td>Hyperthermophilic</td>
+        </tr>
+        <tr>
+          <td>Unknown</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#OptimumTemperature">Optimum Temperature</a><a name="OptimumTemperature"></a></dt>
+  <dd>Optimum temperature in Celsius.</dd>
+</dl>
+
+<h3 id="publication">Publication<a name="Publication"></a></h3>
+
+<dl>
+  <dt><a href="#BioProject_PubMed_ID">PubMed ID</a><a name="BioProject_PubMed_ID"></a></dt>
+  <dd>The PubMed ID(s) will be used to populate the publication information.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioProject_DOI">DOI</a><a name="BioProject_DOI"></a></dt>
+  <dd>Provide a DOI if a PubMed ID is not available. Provide the additional reference information.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioProject_Reference_title">Reference title</a><span class="red">*</span><a name="BioProject_Reference_title"></a></dt>
+  <dd>A title of reference.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioProject_Journal_title">Journal title</a><span class="red">*</span><a name="BioProject_Journal_title"></a></dt>
+  <dd>A title of journal.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioProject_Year">Year</a><span class="red">*</span><a name="BioProject_Year"></a></dt>
+  <dd>Publication year.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioProject_Volume">Volume</a><span class="red">*</span><a name="BioProject_Volume"></a></dt>
+  <dd>Journal volume.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioProject_Issue">Issue</a><span class="red">*</span><a name="BioProject_Issue"></a></dt>
+  <dd>Journal issue.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioProject_Pages_from">Pages from</a><span class="red">*</span><a name="BioProject_Pages_from"></a></dt>
+  <dd>Reference start page.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioProject_Pages_to">Pages to</a><span class="red">*</span><a name="BioProject_Pages_to"></a></dt>
+  <dd>Reference end page.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioProject_First_name_publication">First name</a><span class="red">*</span><a name="BioProject_First_name_publication"></a></dt>
+  <dd>First name of author.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioProject_MI">MI</a><a name="BioProject_MI"></a></dt>
+  <dd>Middle initial.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioProject_Last_name_publication">Last name</a><span class="red">*</span><a name="BioProject_Last_name_publication"></a></dt>
+  <dd>Last name of author.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioProject_Suffix">Suffix</a><a name="BioProject_Suffix"></a></dt>
+  <dd>Suffix for author.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioProject_This_publication_has_multiple_authors">This publication has multiple authors</a><a name="BioProject_This_publication_has_multiple_authors"></a></dt>
+  <dd>If this is checked, then “et al” is added to the author name provided above.</dd>
+</dl>
+
+<h3 id="xml-schema-">XML schema <a name="xml-schema"></a></h3>
+
+<p><a href="https://github.com/ddbj/pub/tree/master/docs/bioproject">BioProject XML schema</a></p>
+
+<h1 id="submission-to-bioproject">Submission to BioProject</h1>
+
+<div class="attention">
+  <dl>
+    <dt>Submission of research data from human subjects</dt>
+    <dd><span class="red">For submitting data from human subjects (human data) to the databases of DDBJ center, it is submitter’s responsibility to ensure that the dignity and right of human subject are protected in accordance with all applicable laws, ordinances, guidelines and policies of submitter’s institution. In principle, make sure to remove any direct personal identifiers of human subjects from your data to be submitted. Before submitting human data, read the “<a href="/policies-e.html#human">Submission of research data from human subjects</a>”.</span></dd>
+  </dl>
+</div>
+
+<h2 id="submission-to-bioproject-">Submission to BioProject <a name="project-submission"></a></h2>
+
+<h3 id="cases-requiring-project-registration-">Cases requiring project registration <a name="project-registration"></a></h3>
+
+<p>Registration for a BioProject accession is required in the following cases.</p>
+
+<ul>
+  <li>submit sequencing data to DRA</li>
+  <li>submit genome sequences to DDBJ</li>
+</ul>
+
+<p>Registration for a BioProject accession is encouraged in the following cases.</p>
+
+<ul>
+  <li>projects that result in a very large volume of data submissions</li>
+  <li>submissions from multiple members of a collaboration</li>
+  <li>submissions to multiple archival databases</li>
+</ul>
+
+<p>Registration for a BioProject accession is not required in the following cases. Register an accession if necessary.</p>
+
+<ul>
+  <li>small datasets for which the results are found in one (or a small number) of accession numbers such as a single plasmid, viral or organelle genome sequencing study</li>
+</ul>
+
+<p>A BioProject accession is required for submission to <a href="/dra/index-e.html">Sequence Read Archive</a>, and microbial and eukaryotic genomes
+submissions to the DDBJ. If you obtain a BioProject accession from DDBJ, please submit your related biological data to the <a href="http://www.ddbj.nig.ac.jp">DDBJ</a>, <a href="/dra/index-e.html">Sequence Read Archive</a>and <a href="/dta/index-e.html">Trace Archive</a>.</p>
+
+<div class="attention red">
+  <p><a href="/news/en/2014-02-12-e.html">The INSDC stopped to assigning strain-level taxonomy ID to microbes whose genomes have been submitted to the INSDC.</a></p>
+</div>
+
+<h3 id="submit-a-new-bioproject-submission-">Submit a new BioProject submission <a name="new-bioproject-submission"></a></h3>
+
+<p>According to the <a href="/account-e.html">Account Handbook</a>, obtain a submission account.</p>
+
+<p>Submit a new project by clicking the [New submission].</p>
+
+<div class="attention red">
+  <p>If there is no reply from submitters after three months of initial contact, submissions will be cancelled.</p>
+</div>
+
+<a class="group1" href="/assets/images/books/hbp-01.jpg" title="Submit a new BioProject">
+  <figure class="image">
+    <img src="/assets/images/books/hbp-01.jpg" alt="Submit a new BioProject" class="w450">
+    <figcaption>Submit a new BioProject</figcaption>
+  </figure>
+</a>
+
+<p>To submit a BioProject, enter content from left to right tabs. Submitter information is copied with account information.</p>
+
+<p>For BioProject metadata, please see <a href="#metadata">here</a>.</p>
+
+<a class="group1" href="/assets/images/books/hbp-02.jpg" title="Enter project content">
+  <figure class="image">
+    <img src="/assets/images/books/hbp-02.jpg" alt="Enter project content" class="w450">
+    <figcaption>Enter project content</figcaption>
+  </figure>
+</a>
+
+<p>To submit genome assemblies to DDBJ, a unique <a href="/ddbj/locus_tag-e.html">Locus tag prefix</a>is necessary.</p>
+
+<p>Locus tag prefix generation box will appear when [Project data type=”Genome Sequencing” or “Metagenome”] AND [Capture=”Whole”] AND [Objective=”Sequence” or “Annotation” or “Assembly”]. Registration of a unique locus tag prefix is required for studies that result in genome assemblies.</p>
+
+<p>The locus_tag prefix can contain only alpha-numeric characters and it must be at least 3 characters long. It should start with a letter, but numerals can be in the 2nd position or later in the string. (ex. A1C). There should be no symbols, such as -_* in the prefix. The locus_tag prefix is to be separated from the tag value by an underscore ‘_’, eg A1C_00001.</p>
+
+<p>Please leave the prefix box empty, when a prefix is not necessary for <a href="/ddbj/wgs-e.html">WGS</a>only submission.</p>
+
+<p>Prefix is managed by NCBI. When a project is submitted, our system tries to reserve prefix to NCBI. When the prefix has already been reserved, anerror message will be displayed. Please enter a different prefix and submit again.</p>
+
+<div class="attention red">
+  <p>When multiple prefixes are necessary, please <a href="/contact-ddbj-e.html">contact us</a>.</p>
+</div>
+
+<a class="group1" href="/assets/images/books/hbp-03.jpg" title="Reserve a locus tag prefix">
+  <figure class="image">
+    <img src="/assets/images/books/hbp-03.jpg" alt="Reserve a locus tag prefix" class="w450">
+    <figcaption>Reserve a locus tag prefix</figcaption>
+  </figure>
+</a>
+
+<p>Check the content in “OVERVIEW” and submit a project by clicking the [Submit].</p>
+
+<a class="group1" href="/assets/images/books/hbp-04.jpg" title="Submit BioProject">
+  <figure class="image">
+    <img src="/assets/images/books/hbp-04.jpg" alt="Submit BioProject" class="w450">
+    <figcaption>Submit BioProject</figcaption>
+  </figure>
+</a>
+
+<p>The “OVERVIEW” tab continue to display submitted content. Updates will not be reflected in the “OVERVIEW” tab.</p>
+
+<h3 id="accession-number-">Accession number <a name="accession-number"></a></h3>
+
+<p>Temporary numbers with prefix PSUB are automatically assigned to submitted projects. Projects can be referred by the PSUB numbers until official accession numbers will be assigned. DDBJ BioProject staff review submissions and issue accession numbers with prefix PRJD to completed projects. Submitters can view accession numbers and submission status in your <a href="https://ddbj.nig.ac.jp/D-way/">submission account</a>.</p>
+
+<div class="attention red">
+  <ul>
+    <li>Do NOT cite numbers with prefix PSUB in publication.</li>
+    <li>Do not double submit the projects which have been registered to EBI and NCBI.</li>
+  </ul>
+</div>
+
+<h3 id="submit-an-umbrella-project-">Submit an umbrella project <a name="submit-umbrella-project"></a></h3>
+
+<p>Umbrella project can be submitted as primary project in <a href="https://ddbj.nig.ac.jp/D-way/">submission account</a>. <span class="red">Be sure to tell the DDBJ BioProject staff that submitting project is umbrella by writing so in the <a href="#Private_comments">Private comments to DDBJ staff</a>. </span>Umbrell project cannot be kept private.</p>
+
+<a class="group1" href="/assets/images/books/hbp-05.jpg" title="Tell DDBJ staff that submitting project is umbrella">
+  <figure class="image">
+    <img src="/assets/images/books/hbp-05.jpg" alt="Tell DDBJ staff that submitting project is umbrella" class="w450">
+    <figcaption>Tell DDBJ staff that submitting project is umbrella</figcaption>
+  </figure>
+</a>
+
+<h3 id="link-primary-project-to-umbrella-">Link primary project to umbrella <a name="link-primary-project-umbrella"></a></h3>
+
+<p>When submitting project, in the <a href="#Area_linked-project">Umbrella BioProject</a>, enter abstract and accession number of an umbrella to be linked. The DDBJ BioProject staff link the submitted primary project to the umbrella based on this information.</p>
+
+<a class="group1" href="/assets/images/books/hbp-06.jpg" title="Link to umbrella">
+  <figure class="image">
+    <img src="/assets/images/books/hbp-06.jpg" alt="Link to umbrella" class="w450">
+    <figcaption>Link to umbrella</figcaption>
+  </figure>
+</a>
+
+<h3 id="release-of-projects-">Release of projects <a name="project-release"></a></h3>
+
+<p>Registered projects can be released in the following two ways:</p>
+
+<ul>
+  <li>Release immediately after registration.</li>
+  <li>Release when records citing the BioProject accession are made public.</li>
+</ul>
+
+<p>The projects can be kept private. If DDBJ records citing the BioProject accession are made public, <a href="#data-release">cited projects are automatically released</a>. Private DDBJ records citing this BioProject accession are not made public.</p>
+
+<div class="attention red">
+  <p>Hold date cannot be set for BioProject.</p>
+</div>
+
+<p>Public projects are exchanged among
+<a href="https://www.ncbi.nlm.nih.gov/bioproject">NCBI</a>and
+<a href="https://www.ebi.ac.uk/">EBI</a>BioProject databases.</p>
+
+<h3 id="update-">Update <a name="update"></a></h3>
+
+<p>Registered projects can be updated. Please <a href="/contact-ddbj-e.html">contact the BioProject staff</a>to update the projects.</p>
+
+<h3 id="link-experimental-data-and-project-">Link experimental data and project <a name="link-experimental-data-project"></a></h3>
+
+<p>For the SRA submission, select the BioProject accession that you registered in advance in the Study.</p>
+
+<p>For genome and TSA submissions to the DDBJ, enter the BioProject accession in the DBLINK.</p>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

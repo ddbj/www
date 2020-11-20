@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GEA への登録</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">GEA への登録</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/gea">gea</a>
+          </li>
+          <li>
+            <a href="">GEA への登録</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/gea/index.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/gea/overview.html">Submission Overview</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/gea/submit-array.html">Submit microarray experiment</a>
+        </li>
+        
+        <li>
+          <a href="/gea/submit-sequence.html">Submit sequencing experiment</a>
+        </li>
+        
+        <li>
+          <a href="/gea/metadata.html">Metadata</a>
+        </li>
+        
+        <li>
+          <a href="/gea/datafile.html">Data File</a>
+        </li>
+        
+        <li>
+          <a href="/gea/validation.html">Validation</a>
+        </li>
+        
+        <li>
+          <a href="/gea/single-cell.html">Single-cell submission guide</a>
+        </li>
+        
+        <li>
+          <a href="/gea/example.html">Example</a>
+        </li>
+        
+        <li>
+          <a href="/gea/adf.html">Array Design</a>
+        </li>
+        
+        <li>
+          <a href="/gea/matrix.html">Data matrix</a>
+        </li>
+        
+        <li>
+          <a href="/gea/reviewer-access.html">Reviewer Access</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/ja/index.html">FAQ</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="http://aoe.dbcls.jp/">Search (AOE)</a>
+      
+      <ul>
+        
+        <li>
+          <a href="https://www.ebi.ac.uk/arrayexpress/browse.html">Search (ArrayExpress)</a>
+        </li>
+        
+        <li>
+          <a href="http://refex.dbcls.jp/">RefEx</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/gea">Downloads</a>
+      
+    </li>
+    
+    <li class="">
+      <a href="/gea/about-gea.html">About GEA</a>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="概要-">概要 <a name="over"></a></h2>
+
+<p>GEA はマイクロアレイや次世代シークエンサから出力される機能ゲノミクスデータを受け付けています。主要な experiment type としては transcription profiling (mRNA と miRNA)、chromatin immunoprecipitation (ChIP) と SNP genotyping が挙げられます。GEA における experiment type の<a href="/gea/experiment-types.html">全リスト</a>。</p>
+
+<p>マイクロアレイとシークエンシング実験の submission はそれぞれ <a href="http://fged.org/projects/miame/">MIAME</a> と <a href="http://fged.org/projects/minseqe/">MINSEQE</a> ガイドラインに準拠する必要があります。</p>
+
+<table>
+<tr>
+<th>GEA が受付けているデータ</th>
+<th>GEA が受付けていないデータ</th>
+</tr>
+<tbody>
+<td>
+<p>定量的な遺伝子発現、遺伝子発現制御やエピジェネティクス解析をしている研究やその他の機能ゲノミクス研究から得られたデータ。</p>
+<p>例:</p>
+<ul>
+<li>mRNA プロファイリング、RNA-seq</li>
+<li>small RNA プロファイリング、miRNA-seq</li>
+<li>ChIP-Seq</li>
+<li>HiC-seq</li>
+<li>methyl-seq、bisulfite-seq</li>
+</ul>
+<p>データが GEA に登録可能かどうか不明な場合は<a href="/contact-ddbj.html">お問い合わせください</a>。</p>
+</td>
+<td>
+<ul>
+<li>アクセス制限が必要なヒトデータ (<a href="/jga/index.html">JGA</a> に登録してください)</li>
+<li>アセンブルされた転写産物 (<a href="/dra/submission.html">DRA</a> と <a href="/ddbj/tsa.html">DDBJ Transcriptome Shotgun Assembly</a> に登録してください)</li>
+<li>全ゲノムシークエンス (<a href="/dra/submission.html">DRA</a> と <a href="/ddbj/wgs.html">DDBJ WGS</a> に登録してください)</li>
+<li>メタゲノムシークエンス (<a href="/dra/submission.html">DRA</a> と <a href="/ddbj/environmental.html">DDBJ Environmental sequence</a> に登録してください)</li>
+<li>リシークエンス、塩基配列変異やコピー数変異 (<a href="/dra/submission.html">DRA</a> と <a href="https://www.ncbi.nlm.nih.gov/snp/docs/submission/hts_launch_and_introductory_material/">NCBI (human-only)</a> もしくは <a href="https://www.ebi.ac.uk/eva/">EBI variation resource</a> に登録してください)</li>
+<li>survey シークエンスやエキソームシークエンス (<a href="/dra/submission.html">DRA</a> に登録してください)</li>
+<li>メタボロミクスやプロテオミクスデータ (プロテオミクスデータは <a href="https://jpostdb.org/">jPOST</a> に登録してください)</li>
+</ul>
+<p>これらのデータの登録先については <a href="/services/index.html">DDBJ ウェブサイト</a>を参照してください。</p>
+</td>
+</tbody>
+</table>
+
+<div class="attention">
+  <dl>
+    <dt><span class="red">ヒトを対象とした研究データの登録について</span></dt>
+    <dd>研究対象者に由来するデータを DDBJ
+センターが運営するデータベースに登録する場合、研究対象者の尊厳及び人権は、適用されるべき法令、指針、ガイドライン、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。原則として、研究対象者を直接特定し得る情報はメタデータから取り除いてください。 ヒトを対象とした研究データを登録する場合は「<a href="/policies.html#human">ヒトを対象とした研究データの登録について</a>」を熟読してください。</dd>
+  </dl>
+</div>
+
+<h2 id="登録ファイル-">登録ファイル <a name="sub-files"></a></h2>
+
+<h3 id="マイクロアレイ実験-">マイクロアレイ実験 <a name="arrayxp"></a></h3>
+
+<p><a href="/gea/submit-array.html">マイクロアレイ実験の登録</a></p>
+
+<ul>
+  <li><a href="/gea/metadata.html">IDF と SDRF メタデータ</a></li>
+  <li><a href="/gea/datafile.html#array_data">生データ</a></li>
+  <li><a href="/gea/datafile.html#array-proc">解析済みデータ</a></li>
+  <li><a href="/gea/adf.html">（必要であれば）アレイデザインファイル</a></li>
+</ul>
+
+<h3 id="シークエンシング実験-">シークエンシング実験 <a name="seqxp"></a></h3>
+
+<p><a href="/gea/submit-sequence.html">シークエンシング実験の登録</a></p>
+
+<ul>
+  <li><a href="/gea/metadata.html">IDF と SDRF メタデータ</a></li>
+  <li><a href="/gea/datafile.html#seq_raw">生データ (先行して</a> <a href="/dra/submission.html">DRA</a> に登録しておく必要があります)</li>
+  <li><a href="/gea/datafile.html#seq_proc">解析済みデータ</a></li>
+</ul>
+
+<h2 id="アクセッション番号-">アクセッション番号 <a name="acc"></a></h2>
+
+<p>GEA の Experiment と Array design に対して以下の形式のアクセッション番号が発行されます (n は整数)。中央の四文字コードについては ArrayExpress <a href="https://www.ebi.ac.uk/arrayexpress/help/accession_codes.html">accession codes</a> をご覧ください。</p>
+
+<ul>
+  <li>Experiment: E-GEAD-n</li>
+  <li>Array design: A-GEAD-n</li>
+</ul>
+
+<p>十分なメタデータとデータファイルが提供された登録に対してアクセッション番号が発行されます。</p>
+
+<h2 id="データ公開-">データ公開 <a name="rel"></a></h2>
+
+<p>関連する論文が公表されるまでデータを非公開にすることができます。四年後までの公開予定日を設定し、随時延長することができます。登録されたデータは<a href="/documents/data-release-policy.html">データ公開原則</a>に従って公開されます。</p>
+
+<h2 id="reviewer-access-">Reviewer access <a name="reviewer-access"></a></h2>
+
+<p>GEA データベースに非公開 experiment と array design が登録された後、登録者は査読者用のアクセストークンを発行することができます。トークンを発行してジャーナルの編集者と査読者に伝える手順については <a href="/gea/reviewer-access.html">reviewer accesss</a> ページをご覧ください。</p>
+
+<h2 id="更新-">更新 <a name="update"></a></h2>
+
+<p>GEA に登録されたデータを更新・削除する場合は <a href="/contact-ddbj.html">GEA チームに連絡</a>してください。</p>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

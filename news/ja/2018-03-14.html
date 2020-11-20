@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDBJ BioSample への validator 導入（2018年3月16日）</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">DDBJ BioSample への validator 導入（2018年3月16日）</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/news">news</a>
+          </li>
+          <li>
+            <a href="">DDBJ BioSample への validator 導入（2018年3月16日）</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <p>DDBJ BioSample では BioSample レコードの品質を保ちつつ登録処理を効率化するため validator を2018年3月16日に登録システムに導入いたしました。</p>
+
+<p>D-way BioSample 登録システムの ATTRIBUTES タブでサンプル属性が記載されたタブ区切りテキストファイルをアップロードすると validator によるチェックが自動実行されます。チェック後にエラーやワーニングメッセージが表示された場合はメッセージに従ってサンプル情報を必要に応じて修正し再度ファイルをアップロードしてください。エラーがある状態では次のタブに進むことはできずサンプルを登録することはできません。</p>
+
+<p>選択された package と taxonomy の lineage、入力された organism と taxonomy id 間の整合性チェックは RDF 化された taxonomy データベースを利用したセマンティック・ウェブ技術により実現されています。</p>
+
+<p>Validator によるチェック内容とメッセージの説明は <a href="/biosample/validation.html">Validation Rules ページ</a>をご覧ください。Validator 導入に伴う大きな変更点は以下になります。</p>
+
+<h3 id="novel-organism">新規生物の場合</h3>
+
+<p><a href="https://www.ncbi.nlm.nih.gov/taxonomy">NCBI Taxonomy</a> に登録されていない新しい生物名を登録する場合は <a href="/contact-ddbj.html">BioSample チーム</a> に新規生物の Taxonomy データベースへの登録を依頼し、生物名が登録されてから BioSample を登録してください。</p>
+
+<p>2-3週間以内に<a href="/biosample/attribute.html?all=all#taxonomy_id">サンプル属性 taxonomy_id</a> が必須から任意になり、新規生物の場合は organism に希望する生物名を記入し taxonomy_id は空にして投稿するという運用に変更になる予定です。</p>
+
+<h3 id="novel-organism">サンプルを区別する属性の記入推奨</h3>
+
+<p>サンプルを属性値で構造化して区別するため、sample name、title、bioproject_id と description 以外の属性値でサンプルをできるだけ区別してください。<a href="/biosample/validation.html#BS_R0024">validation rule: BS_R0024</a></p>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

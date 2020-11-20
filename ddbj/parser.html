@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parser ユーザーマニュアル</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">Parser ユーザーマニュアル</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/ddbj">ddbj</a>
+          </li>
+          <li>
+            <a href="">Parser ユーザーマニュアル</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/ddbj/index.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/submission.html">Submission</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/submission.html">塩基配列の登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/web-submission.html">Web 版塩基配列登録システム</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/mss.html">Mass Submission System</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/update.html">登録データの修正・更新</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="http://ddbj.nig.ac.jp/arsa/?lang=ja">Search</a>
+      
+      <ul>
+        
+        <li>
+          <a href="http://getentry.ddbj.nig.ac.jp/top-j.html">getentry</a>
+        </li>
+        
+        <li>
+          <a href="http://ddbj.nig.ac.jp/arsa/?lang=ja">ARSA</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/flat-file.html">Flat file</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/features.html">Feature key の定義</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/qualifiers.html">Qualifier key の定義</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/organism.html">Organism qualifier に記載する生物名</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/location.html">Location の記述法</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/cds.html">タンパク質コード配列</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/geneticcode.html">The Genetic Codes</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/code.html">配列の記載に用いる略号</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/example.html">登録の見本</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/data-categories.html">Data categories</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/genome.html">Genome project のデータ登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/pseudohaplotype.html">Pseudohaplotype</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/wgs.html">WGS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/metagenome-assembly.html">メタゲノムアセンブリ</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/single-amplified-genome.html">Single amplified genome</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/con.html">CON</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/gss.html">GSS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/htg.html">HTG</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/environmental.html">Environmental sequence の登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/env.html">ENV</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tls.html">TLS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/transcriptome.html">Transcriptome Project のデータ登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tsa.html">TSA</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/est.html">EST</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/htc.html">HTC</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tpa.html">Third Party Data (TPA)</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/ja/index.html">FAQ</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/index-e.html">Other</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/patent-data.html">Patent</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/mga.html">MGA</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <p>Parser は、Mass Submission System (MSS) を利用して DDBJ に登録する際に必要な
+<a href="/ddbj/file-format.html#sequence">配列ファイル</a> と <a href="/ddbj/file-format.html#annotation">アノテーションファイル</a> のフォーマットチェックを行うツールです。</p>
+
+<h2 id="インストール-">インストール <a name="install"></a></h2>
+
+<ol>
+  <li>
+    <a href="/ddbj/mss-tool.html">MSS データファイル用チェックツール</a>から Parser.tar.gz を取得
+  </li>
+  <li>
+    tar.gz ファイルを gunzip コマンドで解凍<br />
+<pre>
+<code>
+$ gunzip Parser.tar.gz
+</code>
+</pre>
+  </li>
+  <li>
+    tar ファイルを tar コマンドで展開<br />
+<pre>
+<code>
+$ tar xvf Parser.tar
+</code>
+</pre>
+  </li>
+  <li>
+    ディレクトリが生成される<br />
+    下記の要領でディレクトリの中身を見ると、以下のようになっています。<br />
+    <pre>
+      <code>
+$ cd jParser
+$ ls -FC
+jParser.sh*  jar/    license.txt resource/
+      </code>
+    </pre><br />
+    <table>
+      <tbody>
+        <tr>
+          <th>jParser.sh</th>
+          <td>実行シェルスクリプト</td>
+        </tr>
+        <tr>
+          <th>jar/</th>
+          <td>java のクラスライブラリ格納ディレクトリ(改変不可)</td>
+        </tr>
+        <tr>
+          <th>license.txt</th>
+          <td>使用許諾(改変不可)</td>
+        </tr>
+        <tr>
+          <th>resources/</th>
+          <td>検査条件などのリソースファイル格納ディレクトリ(改変不可)</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    ファイルの編集<br />
+    jParser.sh を実行する前にファイルの中身を、インストールしたコンピュータの環境にあわせるために変更する必要があります。viなどのエディタで編集して下さい。
+    <pre>
+      <code>
+#!/bin/sh
+
+# Parser installed directory
+PARSER_DIR=./
+
+# Set maximum Java heap size
+HEAP_SIZE=128m
+
+# Parser's resource files(qual.list, ... *.list) path
+# Don't change.
+RESOURCE_FILE_PATH=$PARSER_DIR/resource
+
+# Parser's main class
+# Don't change.
+PARSER=tsunami.util.excel.ExcelParser
+
+# Execution Command
+# Don't change.
+java -Xmx$HEAP_SIZE -classpath $PARSER_DIR/jar/jParser.jar 
+-DPARSER_RESOURCE_PATH=$RESOURCE_FILE_PATH $PARSER -Cclean $@
+
+RETVAL=$?
+
+exit $RETVAL
+#EOF
+      </code>
+    </pre>
+
+    <dl>
+      <dt>[PARSER_DIR 変数]</dt>
+      <dd>jParser ディレクトリのある場所をフルパスで入力して下さい。</dd>
+      <dd>例) PARSER_DIR=/home/mass/jParser</dd>
+      <dt>[HEAP_SIZE 変数]</dt>
+      <dd>jParser が使用できる最大メモリ量を指定してください。</dd>
+      <dd>例) HEAP_SIZE=128m</dd>
+    </dl>
+  </li>
+  <li>
+  PATH を指定する<br />
+  PAHT に jParser.sh が設置してあるディレクトリを指定して下さい。
+  </li>
+</ol>
+
+<h2 id="実行-">実行 <a name="exec"></a></h2>
+
+<p>任意のディレクトリで下記の通りに、コマンドを実行して下さい。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ jParser.sh[space]-x[アノテーションファイル名][space]-s[塩基配列ファイル名]
+</code></pre></div></div>
+
+<p>例</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ jParser.sh -xsample.ann -ssample.fasta
+</code></pre></div></div>
+
+<p>ファイル名は絶対パス・相対パスのどちらでも指定できます。<br />
+<strong>macOS: ファイル名とフォルダ名について</strong>
+<a href="/ddbj/file-format.html#sequence">配列ファイル</a>、<a href="/ddbj/file-format.html#annotation">アノテーションファイル</a>のファイル名またはフォルダ名にマルチバイト文字が含まれていますと一部のバージョンの macOS では正常に動作しない場合がありますので、ファイル名とフォルダ名にマルチバイト文字を混在させないようにご注意ください。</p>
+
+<dl>
+  <dt>-x[<span class="font-br font-normal">アノテーションファイル名</span>]</dt>
+  <dd>このオプションは必須です。指定されていない場合、本ツールは終了します。 アノテーションファイルは、登録データの登録者、REFERENCE、Feature/Qualifierの情報等を記述したタブ区切りテキストファイルです。 書式の詳細に関しては、<a href="/ddbj/file-format.html#annotation">登録ファイル形式：アノテーションファイル</a> をご参照下さい。</dd>
+  <dt>-s[<span class="font-br font-normal">塩基配列ファイル名</span>]</dt>
+  <dd>このオプションは必須です。指定されていない場合、本ツールは終了します。 塩基配列ファイルは、全登録データの配列をFASTA形式で記述したテキストファイルです。 書式の詳細に関しては、<a href="/ddbj/file-format.html#sequence">登録ファイル形式：配列ファイル</a>をご参照下さい。</dd>
+</dl>
+
+<div class="attention">
+
+  <p>Parser は、エラーが発生している場合は、エラーメッセージを出力します。<br />
+エラーメッセージの意味は <a href="/ddbj/validator.html#parser">Parser エラーメッセージ</a> をご覧ください。</p>
+
+</div>
+
+      </div>
+      
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              
+              <li>
+                <a href="/ddbj/file-format.html">登録ファイル形式</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/mss-tool.html">MSS データファイル用チェックツール</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/ume.html">UME ユーザーマニュアル</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/transchecker.html">transChecker ユーザーマニュアル</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/validator.html">validator エラーメッセージ</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/mss-form.html">MSS 利用申し込み</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

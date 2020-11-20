@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" version="2.0">
+<channel>
+<title>DNA Data Bank of Japan News</title>
+<link>/rss/news-ddbj-en.xml</link>
+<atom:link href="/rss/news-ddbj-en.xml" rel="self" type="application/rss+xml"/>
+<description>DNA Data Bank of Japan News</description>
+<language>en</language>
+<pubDate>Thu, 12 Nov 2020 15:30:00 +0900</pubDate>
+<image>
+<url>/images/thumbnail/logo_ddbj.png</url>
+<title>DNA Data Bank of Japan News</title>
+<link>/rss/news-ddbj-en.xml</link>
+<width>90</width>
+<height>32</height>
+</image>
+<item>
+<title>Release of sequence data of sparkling enope squid (Watasenia scintillans)</title>
+<link>/news/en/201112_2-e.html</link>
+<pubDate>Thu, 12 Nov 2020 15:30:00 +0900</pubDate>
+<description>DDBJ released sequence data of sparkling enope squid (Watasenia scintillans), which had been submitted by Shimane University. The accession numbers are as follows. They are available on getentry or DRASearch. WGSBLWP01000001-BLWP01491107 (491,107 entries) BLWP.gzDRAgenome DRR219451-DRR219453 (DRA009937)transcriptome DRR219454-DRR219455 (DRA009937)
+</description>
+<guid>/news/en/201112_2-e.html</guid>
+</item>
+<item>
+<title>(Nov. 27 - Dec. 3) Suspension DDBJ services due to NIG Supercomputer maintenace</title>
+<link>/news/en/201110-e.html</link>
+<pubDate>Tue, 10 Nov 2020 09:00:00 +0900</pubDate>
+<description>NIG Supercomputer will be unavailable due to scheduled maintenance on the following schedule.November 27(Fri) 17:00 -  December 3 (Thu) 24:00 (JST)DDBJ services will also be unavailable.We will announce on this page and Twitter when the schedule is fixed.We apologize for any inconvenience this may cause you.</description>
+<guid>/news/en/201110-e.html</guid>
+</item>
+<item>
+<title>(November 26 - December 3) Suspension of DDBJ services due to NIG Supercomputer maintenance</title>
+<link>/news/en/201110_2-e.html</link>
+<pubDate>Tue, 10 Nov 2020 09:00:00 +0900</pubDate>
+<description>Due to NIG Supercomputer maintenance, submission, search and analysis services of DDBJ Center will be unavailable on the following schedule.ServicesSchedule (JST)・DDBJ Nucleotide Sequence Submission SystemNovember 25(Wed) 18:00 ～ December 4(Fri) 18:00(JST) ・DRA validation・GEA validationNovember 26(Thr) 14:00 ～ December 4(Fri) 12:00(JST)・D-way・DRA Search・BioProject Search・BioSample Search・GEA reviewer access・NBDC Application System・AGD Submission/Download Tool・AGD Meta Viewer・AgdRestNovember 27(Fri) 13:00 ～ December 3(Thr) 24:00(JST)・NIG Supercomputer・DDBJ FTP Service・getentry・ARSA・BLAST・ClustalWNovember 27(Fri) 17:00 ～ December 3(Thr) 24:00(JST)Thank you for your understanding and cooperation. 
+</description>
+<guid>/news/en/201110_2-e.html</guid>
+</item>
+<item>
+<title>Release of sequence data of yellow-lipped sea krait (Laticauda colubrina)</title>
+<link>/news/en/201106-e.html</link>
+<pubDate>Fri, 6 Nov 2020 09:00:00 +0900</pubDate>
+<description>DDBJ released sequence data of yellow-lipped sea krait (Laticauda colubrina), which had been submitted by Kyoto University. The accession numbers are as follows. They are available on getentry or DRASearch. WGSBLBF01000001-BLBF01020583 (20,583 entries) BLBF.gz
+</description>
+<guid>/news/en/201106-e.html</guid>
+</item>
+<item>
+<title>Feature Table Definition revised</title>
+<link>/news/en/201106_2-e.html</link>
+<pubDate>Fri, 6 Nov 2020 09:00:00 +0900</pubDate>
+<description>The DDBJ/ENA/GenBank Feature Table Definition is the common annotation manual of feature descriptions for DDBJ, ENA and GenBank.It was revised to version 11.0.</description>
+<guid>/news/en/201106_2-e.html</guid>
+</item>
+<item>
+<title>Release of sequence data of two bat species (Rousettus aegyptiacus and Rousettus leschenaultii)</title>
+<link>/news/en/201102-e.html</link>
+<pubDate>Mon, 2 Nov 2020 16:30:00 +0900</pubDate>
+<description>DDBJ released sequence data of two bat species (Rousettus aegyptiacus and Rousettus leschenaultii), which had been submitted by the National Institute of Genetics. The accession numbers are as follows. They are available on getentry or DRASearch. Egyptian rousette (Rousettus aegyptiacus)WGS BNJL01000001-BNJL01004947 (4,947 entries) BNJL.gzDRA DRR016094-DRR016103 (DRA001680)Leschenault's rousette (Rousettus leschenaultii)WGS BNJM01000001-BNJM01008141 (8,141 entries) BNJM.gzDRA DRR239112-DRR239118 (DRA010589)
+</description>
+<guid>/news/en/201102-e.html</guid>
+</item>
+<item>
+<title>BioProject/BioSample/DRA/D-way systems are unstable</title>
+<link>/news/en/201009_2-e.html</link>
+<pubDate>Fri, 9 Oct 2020 19:30:00 +0900</pubDate>
+<description>BioProject/BioSample/DRA/D-way have been unstable, and time-outs have occurred frequently. We may re-start the sytem, so we would like to ask users to save submission data frequently We apologize for the inconvenience this may cause. We are checking our systems.</description>
+<guid>/news/en/201009_2-e.html</guid>
+</item>
+</channel>
+</rss>

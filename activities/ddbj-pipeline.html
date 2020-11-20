@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDBJ の塩基配列解析ツールについて</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">DDBJ の塩基配列解析ツールについて</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/_activities">_activities</a>
+          </li>
+          <li>
+            <a href="">DDBJ の塩基配列解析ツールについて</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <p>DDBJ の塩基配列解析ツール「DDBJ Read Annotation Pipeline」ついて，「DDBJ Read Annotation Pipeline」開発担当者 が DDBJ Mail Magazine に連載したコラムをまとめました。</p>
+
+<p>連載期間：No.64（2011年9月29日発行），No.65（2011年10月27日発行）※最新の情報とは内容が異なる場合がありますのでご注意下さい。</p>
+
+<h2 id="ddbj-の塩基配列解析ツールについて前編-">DDBJ の塩基配列解析ツールについて(前編) <a name="1"></a></h2>
+
+<p class="text-align-end">国立遺伝学研究所　大量遺伝情報研究室　長崎英樹</p>
+
+<p>近年登場した高速シーケンサから文字通り桁違いの塩基配列情報が生成されています。費用や時間の節約と引き換えに，その膨大な配列情報の解析には大量のデータ処理が可能な計算機インフラやそれらを操作するための技能が必要となり多くの研究者を悩ませています。<br />
+DDBJ では高速シーケンサ由来の大量配列データを取り扱う為に，クラウドコンピューティングを基盤とした塩基配列解析ツール「DDBJ Read Annotation Pipeline (以下DDBJ パイプライン)」を構築して広くユーザの方々に使ってもらおうとしています。クラウドコンピューティングとは大規模なデータ解析をインターネット越しに行う新しい計算機技術です。</p>
+
+<p>DDBJ パイプラインは，<a href="https://p.ddbj.nig.ac.jp/pipeline/Login.do">http://p.ddbj.nig.ac.jp/</a> <span></span>よりアクセスできます(図1)。トップページから取得したユーザアカウントか，DDBJ が公開している高速シーケンサの出力データベース <a href="/dra/index.html">DDBJ
+Sequence Read Archive (DRA)</a> のアカウントで利用可能となります。DDBJ パイプラインは，参照ゲノム配列に対するマッピングまたはde novo アセンブリを行なう「基礎処理部」とSNP 検出や発現解析等の高度な解析を行う「高次処理部」から構成されています。基礎処理部は公開済みで，高次処理部は試験運用中です。</p>
+
+<p><a class="group1" href="/assets/images/ddbj/column_19.jpg" title="図1：DDBJ パイプライン トップページ([http://p.ddbj.nig.ac.jp/])"></a></p>
+<figure class="image">
+    <img src="/assets/images/ddbj/column_19.jpg" alt="図1：DDBJ パイプライン トップページ([http://p.ddbj.nig.ac.jp/])" class="" />
+    <figcaption>図1：DDBJ パイプライン トップページ([http://p.ddbj.nig.ac.jp/])</figcaption>
+  </figure>
+<p>&lt;/a&gt;</p>
+
+<h2 id="ddbj-の塩基配列解析ツールについて後編-">DDBJ の塩基配列解析ツールについて（後編） <a name="2"></a></h2>
+
+<p class="text-align-end">国立遺伝学研究所　大量遺伝情報研究室　長崎英樹</p>
+
+<p>前回DDBJ パイプラインの概要とパイプラインが参照ゲノム配列に対するマッピングまたはde novo アセンブリを行なう基礎処理部とSNP 検出や発現解析等の高度な解析を行う高次処理部で構成されていることについて触れましたが，今回はその内容についてお話しさせていただきます。</p>
+
+<ol>
+  <li>
+    <dl>
+      <dt>基礎処理部</dt>
+      <dd>新型シーケンサ配列の研究で一般的に利用されているBWA をはじめとする解析ツールを実装しています(表1)。2011年7月現在で実装している解析ツールの詳細な解説は 「実験医学増刊 Vol.29 No.15 使えるデータベース・ウェブツール (ISBN 978-4-7581-0317-6)」 にまとめてありますので併せてご覧ください。</dd>
+      <dd>解析の処理ステップはパイプライン側で設定してあり，マッピングのミスマッチ率設定などのオプションはユーザが画面上で入力します。DDBJ パイプラインの特徴として，DDBJ への配列登録支援機能，マッピング結果等の統計量計算機能，公開されているDRA/ERA/SRA のアクセッション番号を入力すると，DRA のFTP サーバからクエリ配列用に公開配列を取得する配列取得機能があります。</dd>
+    </dl>
+  </li>
+  <li>
+    <dl>
+      <dt>高次処理部</dt>
+      <dd>ゲノム配列データ解析用web アプリケーションであるGalaxy のインターフェイスを利用しており，基礎解析部で生成した結果ファイルを基にSNP 検出や発現，クロマチン免疫沈降シーケンス (ChIP-Seq) 解析を行います。また，de novo アセンブリで作成したコンティグ中の遺伝子構造予測にも最近対応させています(図2)。</dd>
+      <dd>DDBJ パイプラインには現在，基礎マッピング処理に分散解析サーバ10～33台，高次処理に同3台，基礎アセンブリ処理に250GBメモリの計算機を，クラウド資源として割り当てています。</dd>
+      <dd>DDBJ におきましては，新型シーケンサ配列，解析した結果をDDBJ を通して登録，公開していただくことを推奨しております。DDBJ ではオンラインでの登録で使用するツールも準備しており，その解説についてはまたの機会にお話いたします。</dd>
+    </dl>
+  </li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>種類</th>
+      <th>ツール名</th>
+      <th>備考</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>マッピング</td>
+      <td>BLAT</td>
+      <td>発現データはイントロンを想定したギャップを考慮したマッピングが可能</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>MAQ</td>
+      <td>高速シークエンサ登場初期にショートリードに対応。開発はBWA に引き継がれる</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>BWA</td>
+      <td>MAQ より速く，より長いリードに対応(Roche 社のTitanium のリードもオプションで対応)</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>SOAP2</td>
+      <td>メモリ消費量少なく，より高速。精度はBWA より弱冠落ちる</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Bowtie</td>
+      <td>ギャップは考慮しないが処理は速い</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>TopHat</td>
+      <td>RNA-Seq のリードを内部でBowtie を利用してマッピング。スプライスジャンクションを特定する</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Cufflinks</td>
+      <td>マッピングされたRNA-Seq をアセンブルして発現量を正規化</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>SAMtools</td>
+      <td>共通フォーマットに変換されたマッピング結果を解析するためのソフトウェアパッケージ</td>
+    </tr>
+    <tr>
+      <td><em>de novo</em> アセンブル</td>
+      <td>SOAPdenovo</td>
+      <td>ヒト，パンダ等大型ゲノムのアセンブルで使用された。メモリ消費は多めだが，高速</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>ABySS</td>
+      <td>並列処理に対応したアセンブラ。アセンブルのアルゴリズムは基本的にSOAPdenovo と同じ(de bruijn graph)</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Edena</td>
+      <td>高速シークエンサ登場初期に開発されたアセンブラ</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>SOLiD<sup>TM</sup> System de novo Accessory Tools</td>
+      <td>高速シークエンサSOLiD のデータ解析用パイプライン。アセンブルプログラムVelvetとDNA -アミノ酸配列アライメントプログラムMUMmer を実行する</td>
+    </tr>
+    <tr>
+      <td>WEB インターフェイス</td>
+      <td>Galaxy</td>
+      <td>解析ツール，実行しているジョブを統合管理する。DDBJ パイプラインでは高次解析で使用</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="tablecaption">表1：DDBJ パイプラインで稼働しているツール</p>
+
+<a class="group1" href="/assets/images/ddbj/mag65-pipeline2.2.jpg" title="図2：高次処理部 de novo アセンブルによるコンティグ解析画面">
+  <figure class="image">
+    <img src="/assets/images/ddbj/mag65-pipeline2.2.jpg" alt="図2：高次処理部 de novo アセンブルによるコンティグ解析画面" class="w600">
+    <figcaption>図2：高次処理部 de novo アセンブルによるコンティグ解析画面</figcaption>
+  </figure>
+</a>
+
+<hr />
+
+<p>筆者が執筆者の一人でもあります <a href="https://www.yodosha.co.jp/index.html">羊土社</a> から出版の <a href="https://www.yodosha.co.jp/jikkenigaku/book/9784758103176/index.html">「使えるデータベース・ウェブツール</a>」 も併せてご覧下さい。</p>
+
+<p>また，2011年6月30日に講師を務めました「第24回 DDBJing 講習会 in 東京」での<a href="/activities/index.html">講義資料</a> もご参照下さい。</p>
+
+      </div>
+      
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              
+              <li>
+                <a href="/activities/past-papers.html">DDBJ スタッフの論文 (1996-2008)</a>
+              </li>
+              
+              <li>
+                <a href="/activities/past-presentations.html">DDBJ スタッフの講演発表（2001-2006）</a>
+              </li>
+              
+              <li>
+                <a href="/activities/blast-doc.html">相同性検索プログラムBLASTの内部構造</a>
+              </li>
+              
+              <li>
+                <a href="/activities/curators.html">DDBJ アノテータの業務紹介</a>
+              </li>
+              
+              <li>
+                <a href="/activities/request.html">「ユーザーの皆様へ，お願いです！」</a>
+              </li>
+              
+              <li>
+                <a href="/activities/patent.html">DDBJ での特許関連配列データの公開業務の紹介</a>
+              </li>
+              
+              <li>
+                <a href="/activities/staff-column.html">DDBJ スタッフコラム</a>
+              </li>
+              
+              <li>
+                <a href="/activities/gene-genome.html">遺伝子とゲノム</a>
+              </li>
+              
+              <li>
+                <a href="/activities/introevog.html">進化ゲノム学とは</a>
+              </li>
+              
+              <li>
+                <a href="/activities/homology-doc.html">FASTAとBLASTについて</a>
+              </li>
+              
+              <li>
+                <a href="/subscribe-ddbj.html">DDBJ Mail Magazine</a>
+              </li>
+              
+              <li>
+                <a href="/activities/training-ddbj-challenge.html">DDBJ データ解析チャレンジ</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

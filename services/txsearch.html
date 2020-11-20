@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TXSearch</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">TXSearch</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/services">services</a>
+          </li>
+          <li>
+            <a href="">TXSearch</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <p>TXSearch は、DDBJ が提供する <a href="//www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/">NCBI Taxonomy</a> の検索システムです。国際塩基配列データベース(<a href="/insdc.html">INSD</a>) にデータを登録する際には、NCBI Taxonomy に基づいた生物名の表記を使用する必要があります。</p>
+
+<h2 id="検索ウェブ検索フォームから-">検索（ウェブ検索フォームから） <a name="usage"></a></h2>
+
+<h4 id="トップページtree画面httpddbjnigacjptx_search-">トップページ（Tree画面）：<a href="http://ddbj.nig.ac.jp/tx_search/">http://ddbj.nig.ac.jp/tx_search/</a> <a name="トップページ（Tree画面）：http_//ddbj.nig.ac.jp/tx_search/_"></a></h4>
+
+<p><img src="/assets/images/help/txhelp01.gif" alt="トップページ" /></p>
+
+<h3 id="検索フォームへの入力方法-">検索フォームへの入力方法 <a name="search"></a></h3>
+
+<p>検索フォームのテキスト入力欄に検索したい名前や数字を入力し、「送信」をクリックまたはリターンキーを押します。</p>
+
+<p><img src="/assets/images/help/txhelp03.gif" alt="検索フォームへの入力" /></p>
+
+<ul>
+  <li>1文字のワイルドカード”?”と複数文字のワイルドカード”*“が使用できます。</li>
+  <li>
+    <p>論理演算子(AND, OR, NOT)は以下のように入力します。</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>AND</td>
+          <td>スペース　または AND または &amp;&amp;</td>
+        </tr>
+        <tr>
+          <td>OR</td>
+          <td>OR または</td>
+        </tr>
+        <tr>
+          <td>NOT</td>
+          <td>NOT</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <p>Example を利用することもできます。</p>
+
+    <ol>
+      <li>検索ボックス下の”Example” をクリックすると、いくつか簡単な例が表示されます。</li>
+      <li>例の中から１つを選んでクリックすると、検索ボックスに入力されます。</li>
+      <li>生物名やtaxonomy_id などを、検索したいものに変更します。</li>
+    </ol>
+
+    <p><img src="/assets/images/help/txhelp02.gif" alt="検索フォーム Example" /></p>
+  </li>
+  <li>
+    <p>デフォルトでは以下のフィールドを検索します。</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>tax_id</td>
+          <td>anamorph</td>
+          <td>in_part</td>
+        </tr>
+        <tr>
+          <td>scientific_name</td>
+          <td>teleomorph</td>
+          <td>includes</td>
+        </tr>
+        <tr>
+          <td>common_name</td>
+          <td>authority</td>
+          <td>misnomer</td>
+        </tr>
+        <tr>
+          <td>synonym</td>
+          <td>blast_name</td>
+          <td>misspelling</td>
+        </tr>
+        <tr>
+          <td>acronym</td>
+          <td>equivalent_name</td>
+          <td>type_material</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>特定のフィールドに限定して検索する場合には、<a href="#f-shitei">フィールド名を指定</a>します。</p>
+  </li>
+  <li>結果が1000件を超える場合は最初（scientific_name で昇順）の 1000件分のみ結果を返します。この表示件数の上限を変更することはできません。<br /> 結果を1000件以下にするためには、<a href="#refine">絞り込み検索</a>を行ってください。</li>
+</ul>
+
+<h3 id="絞り込み検索-">絞り込み検索 <a name="refine"></a></h3>
+
+<p>複数フィールドの組み合わせや、フィールド名を指定して絞り込み検索を行います。</p>
+
+<ul>
+  <li>結果が1000件を超える場合は最初（scientific_name で昇順）の 1000件分のみ結果を返します。この表示件数の上限を変更することはできませんので、絞り込み検索を行って1000件以下になるようにしてください。</li>
+  <li>テキスト入力欄に solr の standard query parser parameters の q パラメータを入力することで、より詳細な検索ができます</li>
+  <li>フィールドの指定方法<a name="f-shitei"></a><br /><span class="red">フィールド名：値</span>（例　tax_id:9606)</li>
+  <li>複数フィールドの指定方法<br />“フィールド名：値” を論理演算子をはさんで並べます（例　scientific_name:(Homo Sapiens) &amp;&amp; rank:species)</li>
+  <li>
+    <p>検索に使用できるフィールド名は以下の通りです</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>検索に使用できるフィールド名</th>
+          <th> </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>tax_id<br />scientific_name<br />common_name<br />synonym<br />acronym<br />anamorph<br />teleomorph<br />authority<br />blast_name<br />equivalent_name<br />in_part<br />includes<br />misnomer<br />misspelling<br />type_material</td>
+          <td>フィールド名を指定すれば絞り込み検索が可能となります。<br /> フィールド名を指定しない場合、これらのフィールド全てを検索します。</td>
+        </tr>
+        <tr>
+          <td>lineagerank</td>
+          <td>フィールド名の指定が必要です。</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <p>完全一致検索の場合には、フィールド名を以下のように指定します。</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>scientific_name_ex</td>
+        </tr>
+        <tr>
+          <td>common_name_ex</td>
+        </tr>
+        <tr>
+          <td>synonym_ex</td>
+        </tr>
+        <tr>
+          <td>acronym_ex</td>
+        </tr>
+        <tr>
+          <td>anamorph_ex</td>
+        </tr>
+        <tr>
+          <td>teleomorph_ex</td>
+        </tr>
+        <tr>
+          <td>authority_ex</td>
+        </tr>
+        <tr>
+          <td>blast_name_ex</td>
+        </tr>
+        <tr>
+          <td>equivalent_name_ex</td>
+        </tr>
+        <tr>
+          <td>in_part_ex</td>
+        </tr>
+        <tr>
+          <td>includes_ex</td>
+        </tr>
+        <tr>
+          <td>misnomer_ex</td>
+        </tr>
+        <tr>
+          <td>misspelling_ex</td>
+        </tr>
+        <tr>
+          <td>type_material_ex</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<h3 id="検索の入力例-">検索の入力例 <a name="example"></a></h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>入力文字列</th>
+      <th>検索内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>human AND lineage:Mammalia</td>
+      <td>デフォルト検索フィールドに “human “を含み linage が Mammalia であるものを検索</td>
+    </tr>
+    <tr>
+      <td>human AND rank:subspecies</td>
+      <td>デフォルト検索フィールドに “human “を含み rank: が subspecies であるものを検索</td>
+    </tr>
+    <tr>
+      <td>human AND NOT(lineage:Eukaryota)</td>
+      <td>デフォルト検索フィールドに “human “を含み linage が Eukaryota でないものを検索</td>
+    </tr>
+    <tr>
+      <td>tax_id:9606</td>
+      <td>tax_id が 9606 を検索</td>
+    </tr>
+    <tr>
+      <td>Homo Sapiens</td>
+      <td>デフォルト検索フィールド内で Homo (AND) Sapiens を検索</td>
+    </tr>
+    <tr>
+      <td>scientific_name:”Homo sapiens”</td>
+      <td>scientific_name が “Homo sapiens” を検索</td>
+    </tr>
+    <tr>
+      <td>scientific_name:(Homo sapiens)</td>
+      <td>scientific_name に “Homo”と “sapiens” を含むものを検索</td>
+    </tr>
+    <tr>
+      <td>scientific_name:Homo sapiens</td>
+      <td>scientific_name に”Homo” を含み、デフォルト検索フィールドに “sapiens” を含むものを検索</td>
+    </tr>
+    <tr>
+      <td>scientific_name_ex:”Homo sapiens”</td>
+      <td>scientific_name が “Homo sapiens” であるものを検索（完全一致）<br /> （注意）名前にスペースが含まれる場合、前後に “ （ダブルクォート） をつけることが必須です。</td>
+    </tr>
+    <tr>
+      <td>50000</td>
+      <td>デフォルト検索フィールドに “50000” を含むものを検索 (“Crinipellis sp. GDGM 50000” のように　名前に”50000” を含むものと、tax_id が “50000” の “Sarracenia alabamensis” がヒットします。どちらか一方のみを検索したい場合には、<a href="#f-shitei">フィールド名を指定</a>します。）</td>
+    </tr>
+    <tr>
+      <td>tax_id:(741158 OR 63221)<br />または<br />tax_id:(741158 || 63221)</td>
+      <td>tax_id が 741158 または 63221　を検索</td>
+    </tr>
+    <tr>
+      <td>scientific_name:(Acetobacter c*)</td>
+      <td>scientific_name に “Acetobacter” と “C で始まる0文字以上の任意の文字列” を含むものを検索</td>
+    </tr>
+    <tr>
+      <td>scientific_name:(Acetobacter sp*)</td>
+      <td>scientific_name に “Acetobacter” と “spで始まる0文字以上の任意の文字列” を含むものを検索</td>
+    </tr>
+    <tr>
+      <td>tax_id:960?</td>
+      <td>tax_id が　960? (? は任意の１文字）を検索</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="検索結果-">検索結果 <a name="result"></a></h2>
+
+<h3 id="search-resulttaxon-information-画面-">Search Result(Taxon Information 画面) <a name="taxinfo"></a></h3>
+
+<p>検索フォームから検索した場合の結果表示画面です。</p>
+
+<p><img src="/assets/images/help/txhelp04.gif" alt="検索結果" /></p>
+
+<ul>
+  <li>指定した taxonomy id の taxon の scientific name, taxonomy id, rank, division code, genetic code, mitochondrial genetic code, scientific name 以外の name class の名前, lineage が表示されます。</li>
+  <li>taxonomy id は <a href="//www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/">NCBI Taxonomy Browser</a> へリンクしています。</li>
+  <li>genetic code id, mitochondrial genetic code id は <a href="/ddbj/geneticcode.html">Genetic code table</a> へリンクしています。</li>
+  <li>lineage 中の名前は、その taxon をトップにしたツリー画面へリンクしています。</li>
+</ul>
+
+<h3 id="tree-画面-">Tree 画面 <a name="tree"></a></h3>
+
+<p>Search Result/Taxon Information 画面で lineage 中の名前をクリックすると、その taxon をトップにしたツリー画面が表示されます。</p>
+
+<p><img src="/assets/images/help/txhelp05.gif" alt="Tree 画面" /></p>
+
+<ol>
+  <li>scientific name はTaxon Information画面へのリンク。</li>
+  <li>taxonomy id は <a href="//www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/">NCBI Taxonomy Browser</a> へのリンクになっています。</li>
+  <li>scientific name の左にある三角形のアイコンをクリックすると、その taxon の下の階層のツリーを開閉します。</li>
+  <li>ツリーのトップの scientific name の右にある↑をクリックすると、1階層上がったツリーを表示します。この時、表示する階層数が1つ増やされます。<br />URL 中の depth パラメータの値を変更すると表示する階層数が変更されます。</li>
+</ol>
+
+<h2 id="taxonomy_id-や検索語を-url-に含めた表示方法-">taxonomy_id や検索語を URL に含めた表示方法 <a name="url"></a></h2>
+
+<p>taxonomy_id や検索語を含んだ URL を指定して、検索結果を直接表示したり Taxon Information ページ、またはツリー画面にリンクを張ることができます。</p>
+
+<h3 id="taxonomy_id-をurl-に含める場合-">taxonomy_id をURL に含める場合 <a name="taxnonmy"></a></h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>パラメータ</th>
+      <th>詳細</th>
+      <th>入力例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id="tx_id">
+      <th>id <span class="red">(必須）</span>
+    </th>
+      <td>検索対象の taxonomy_id を指定します。</td>
+      <td>
+        <ul class="disc">
+          <li>taxonomy_id :9606 をツリー表示<br />
+          <a class="external" href="http://ddbj.nig.ac.jp/tx_search/9606?view=tree">//ddbj.nig.ac.jp/tx_search/9606?view=tree</a><br />
+          <a class="external" href="http://ddbj.nig.ac.jp/tx_search/9606">//ddbj.nig.ac.jp/tx_search/9606</a>
+          </li>
+          <li>taxonomy_id :63221 をTaxon Information 表示<br />
+          <a class="external" href="http://ddbj.nig.ac.jp/tx_search/63221?view=info">//ddbj.nig.ac.jp/tx_search/63221?view=info</a>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr id="tx_view">
+      <th>view</th>
+      <td>表示画面を指定します。<br />省略した場合は ツリー画面 が指定されます。</td>
+      <td>
+        <ul class="disc">
+          <li>taxonomy_id :63221 をTaxon Information 表示<br />
+          <a class="external" href="http://ddbj.nig.ac.jp/tx_search/63221?view=info">//ddbj.nig.ac.jp/tx_search/63221?view=info</a>
+          </li>
+          <li>taxonomy_id :63221 をツリー表示<br />
+          <a class="external" href="http://ddbj.nig.ac.jp/tx_search/63221">//ddbj.nig.ac.jp/tx_search/63221</a>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr id="tx_depth">
+      <th>depth</th>
+      <td>表示するツリーの階層数を指定します。<br />省略した場合は 2 が指定されます。</td>
+      <td>
+        <ul class="disc">
+          <li>taxonomy_id :63221 を5 階層まで表示<br />
+          <a class="external" href="http://ddbj.nig.ac.jp/tx_search/63221?depth=5">//ddbj.nig.ac.jp/tx_search/63221?depth=5</a>
+          </li>
+          <li>taxonomy_id :9606 をデフォルトの2階層表示<br />
+          <a class="external" href="http://ddbj.nig.ac.jp/tx_search/9606">//ddbj.nig.ac.jp/tx_search/9606</a>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="検索語をurl-に含める場合-">検索語をURL に含める場合 <a name="検索語をURL_に含める場合"></a></h3>
+
+<dl>
+  <dt>URL の指定方法</dt>
+  <dd>//ddbj.nig.ac.jp/tx_search/search?query=xxx&amp;lang=en</dd>
+</dl>
+
+<p>（xxxの部分に検索語が入ります。）</p>
+
+<dl>
+  <dt>入力例</dt>
+  <dd>
+    <ul>
+      <li>scientific_name:(Homo sapiens) の検索結果<br />
+<a href="http://ddbj.nig.ac.jp/tx_search/search?query=scientific_name%3A%28Homo+sapiens%29&amp;lang=en">//ddbj.nig.ac.jp/tx_search/search?query=scientific_name%3A%28Homo+sapiens%29&amp;lang=en</a></li>
+    </ul>
+  </dd>
+  <dd>
+    <ul>
+      <li>scientific_name が Homo sapiens に完全一致の検索結果<br />
+<a href="http://ddbj.nig.ac.jp/tx_search/search?query=scientific_name_ex%3A%22Homo+sapiens%22&amp;lang=en">//ddbj.nig.ac.jp/tx_search/search?query=scientific_name_ex%3A%22Homo+sapiens%22&amp;lang=en</a></li>
+    </ul>
+  </dd>
+</dl>
+
+      </div>
+      
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              
+              <li>
+                <a href="/services/arsa.html">ARSA ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/blast.html">BLAST ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/getentry.html">getentry ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/vecscreen.html">VecScreen ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/clustalw.html">ClustalW ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/past-services.html">過去のサービス</a>
+              </li>
+              
+              <li>
+                <a href="/services/references.html">関連論文</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi.html">WABI (Web API for Biology)</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-blast.html">WABI BLAST ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-clustalw.html">WABI ClustalW ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-vecscreen.html">WABI VecScreen ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-mafft.html">WABI MAFFT ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/pipeline.html">Pipeline ヘルプ</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

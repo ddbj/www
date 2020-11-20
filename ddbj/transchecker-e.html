@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transChecker User’s Manual</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">transChecker User’s Manual</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/ddbj">ddbj</a>
+          </li>
+          <li>
+            <a href="">transChecker User’s Manual</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/ddbj/index-e.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/submission-e.html">Submission</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/submission-e.html">Before Submission</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/web-submission-e.html">Web submission</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/mss-e.html">Mass Submission</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/update-e.html">Data Update</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="http://ddbj.nig.ac.jp/arsa/?lang=en">Search</a>
+      
+      <ul>
+        
+        <li>
+          <a href="http://getentry.ddbj.nig.ac.jp/top-e.html">getentry</a>
+        </li>
+        
+        <li>
+          <a href="http://ddbj.nig.ac.jp/arsa/?lang=en">ARSA</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/flat-file-e.html">Flat file</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/features-e.html">Feature key</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/qualifiers-e.html">Qualifier key</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/organism-e.html">Organism qualifier</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/location-e.html">Description of Location</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/cds-e.html">Protein Coding Sequence</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/geneticcode-e.html">The Genetic Codes</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/code-e.html">Codes Used in Sequence Description</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/example-e.html">Example of Submission</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/data-categories-e.html">Data categories</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/genome-e.html">Data Submission from Genome Project</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/pseudohaplotype-e.html">Pseudohaplotype</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/wgs-e.html">WGS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/metagenome-assembly-e.html">Metagenome Assembly</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/single-amplified-genome-e.html">Single amplified genome</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/con-e.html">CON</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/gss-e.html">GSS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/htg-e.html">HTG</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/environmental-e.html">Submission of environmental sequences</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/env-e.html">ENV</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tls-e.html">TLS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/transcriptome-e.html">Data Submission from Transcriptome Project</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tsa-e.html">TSA</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/est-e.html">EST</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/htc-e.html">HTC</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tpa-e.html">Third Party Data (TPA)</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/en/index-e.html">FAQ</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/index-e.html">Other</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/patent-data-e.html">Patent</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/mga-e.html">MGA</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <p>TransChecker is a software tool developed by DDBJ for checking translation into amino acid sequence from <a href="/ddbj/cds-e.html">CDS features</a> that are described in
+<a href="/ddbj/file-format-e.html#sequence">sequence</a> and <a href="/ddbj/file-format-e.html#annotation">annotation</a> files.</p>
+
+<h2 id="install-">Install <a name="install"></a></h2>
+<ol>
+  <li>
+    Access and get transChecker.tar.gz file from <a href="/ddbj/mss-tool-e.html">Validation tools for MSS data files</a>.
+  </li>     
+  <li>  
+    Uncompress tar.gz file.<br />
+<pre>
+<code>
+$ gunzip transChecker.tar.gz
+</code>  
+</pre> 
+  </li>   
+  <li>
+    Extract the file tar command<br />
+<pre>
+<code>
+$ tar xvf transChecker.tar
+</code>
+</pre> 
+  </li>  
+  <li>
+    directory is created<br />
+    Check the contents of the directory。<br />
+    <pre>
+      <code>  
+$ cd transChecker
+$ ls -FC
+jar/license.txt   transChecker.sh*
+      </code>
+    </pre>
+    <br />
+    <table>
+      <tbody>
+        <tr>
+          <th>jar/</th>
+          <td>directory which includes class-library of Java (DO NOT change)</td>
+        </tr>
+        <tr>
+          <th>license.txt</th>
+          <td>End-user license agreement (DO NOT change)</td>
+        </tr>
+        <tr>
+          <th>transChecker.sh</th>
+          <td>executable file</td>
+        </tr>
+      </tbody>
+    </table>
+</li>
+<li>Change the file jParser.sh according to your system environment.<br />
+    <pre>
+      <code>
+
+#!/bin/sh
+
+# Installed directory
+TRANS_DIR=./
+
+# Set maximum Java heap size
+HEAP_SIZE=128m
+
+# Execution Command
+# Don't change.
+java -Xmx$HEAP_SIZE -jar $TRANS_DIR/jar/transChecker.jar -Cclean $@
+
+RETVAL=$?
+
+exit $RETVAL
+#EOF
+      </code>
+    </pre>
+  <dl>
+    <dt>[TRANS_DIR parameter]</dt>
+    <dd>Enter the full path name of jParser directory.</dd>
+    <dd>ex) PARSER_DIR=/home/mass/jParser</dd>
+    <dt>[HEAP_SIZE parameter]</dt>
+    <dd>Enter the maximum memory of jParser.</dd>
+    <dd>例) HEAP_SIZE=128m</dd>
+  </dl>
+  </li>  
+  <li>
+    Set PATH<br />
+    Set PATH the directory which includes jParser.sh.
+  </li>
+</ol>
+
+<h2 id="execution-">Execution <a name="exec"></a></h2>
+
+<p>Execute transChecker.sh by the command below;</p>
+
+<div class="attention">
+  <p>$ transChecker.sh[space]-x[annotation file name][space]-s[nucleotide sequence file name][space]-e[executed log file name][space]-o[amino acid sequence file name][space]-t[file name for alignments of nucleotide and amino acid sequences]</p>
+</div>
+
+<p>ex)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ transChecker.sh -xsample.ann -ssample.fasta -eerrmsg.txt -orsl.fasta -taln.txt
+</code></pre></div></div>
+
+<p>You can specify locations of files in both ways, relative and full path names.</p>
+
+<p><strong>macOS: Regarding the available file names</strong><br />
+DO NOT use multibyte character(s) for any file or folder name of <a href="/ddbj/file-format-e.html#sequence">Sequence file</a> or <a href="/ddbj/file-format-e.html#annotation">Annotation file</a> when you use our tools on some versions of macOS. Tools may not work when multibyte character is included in the file or folder name.</p>
+
+<dl>
+  <dt>-x[<span class="font-br font-normal">annotation file name</span>]</dt>
+  <dd>This option is required. When the option is not specified, this tool is terminated. Annotation file is a kind of tab-delimited text. Please refer to <a href="/ddbj/file-format-e.html#annotation">Submission File Format：Annotation File</a> , in detail. The file should be checked with Parser tool before using transChecker.</dd>
+  <dt>-s[<span class="font-br font-normal">nucleotide sequence file name</span>]</dt>
+  <dd>This option is required. When the option is not specified, this tool is terminated. Sequence file is a kind of fasta format text. Please refer to <a href="/ddbj/file-format-e.html#sequence">Submission File Format：Sequence File</a>, in detail. The file should be checked with Parser tool before using transChecker.</dd>
+  <dt>-e[<span class="font-br font-normal">executed log file name</span>]</dt>
+  <dd>This option is to specify the output file for the error messages found on the process of creating CDS translation. When this option is not specified, error messages are dumped into stdout. See also <a href="/ddbj/validator-e.html#transchecker">transChecker Error Messages</a>.</dd>
+  <dt>-o[<span class="font-br font-normal">amino acid sequence file name</span>]</dt>
+  <dd>This option is to specify the output file for translated amino acid sequences. When this option is not specified, no amino acid sequence is dumped. See also <a href="#output-1-1">Format of amino acid sequences</a>.</dd>
+  <dt>-t[<span class="font-br font-normal">file name for alignments of nucleotide and amino acid sequences</span>]</dt>
+  <dd>This option is to specify the output file for alignments of nucleotide and amino acid sequences. When this option is not specified, no alignment is dumped. See also <a href="#output-1-2">Format of amino acid sequences</a>.</dd>
+</dl>
+
+<h3 id="format-of-amino-acid-sequences-">Format of amino acid sequences <a name="exec-1"></a></h3>
+
+<p>he transChecker provides two options for translated amino acid sequences.<br />
+Even though some errors are occurred, the sequence of <a href="/ddbj/cds-e.html">CDS feature</a> is translated into amino acid as is, however, some translation processes are likely skipped because of severe errors.</p>
+
+<h4 id="fasta-like-format">FASTA-like format<a name="output-1-1"></a></h4>
+
+<p>The amino acid sequences are in a kind of fasta format as follows.</p>
+
+<p>Format</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;[Entry name].[Serial Number][space][CDS feature location]
+[Amino acid sequence (60 letters/line)]
+//
+</code></pre></div></div>
+
+<p>For example</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;entry1.1 89..406
+MLARISELTKIGTTIFIVAIDQVAEPNSWGSSQLVLLAKIAGALKAIPPNPVCTSRHRQA
+ASVSPFRSAIVGTLLQLEAIKNLLTVSVDTIQQNGVLFIFVALLR
+//
+&gt;entry1.2 684..1325
+MSIGILGTKLGMTQIFDESGKAVPVTVIQAGPCPITQIKTVATDGYNAIQIGFLEVREKQ
+LSKPELGHLSKAGAPPLRHLLEYRVPSTDGLELGQALTADRFEAGQKVDVQGHTIGRGFT
+GYQKRHGFARGPMSHGSKNHRLPGSTGAGTTPGRVYPGKRMAGRSGNDKTTIRGLTVVRV
+DADRNLLLVKGSVPGKPGALLNITPATVVGQQA
+//
+</code></pre></div></div>
+
+<h4 id="alignment-with-nucleotide-sequence">Alignment with nucleotide sequence<a name="output-1-2"></a></h4>
+
+<p>The alignments for nucleotide and translated amino acid sequences are in the following format.</p>
+
+<p>Format</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;[Entry name].[Serial Number][space][CDS feature location]
+/codon_start=[value of codon_start; in case of null, 1]
+/transl_table=[value of transl_table; in case of null,1]
+[Nucleotide number][Nucleotide sequence (60 letters/line)]
+[Amino acid number][Amino acid sequence (20 letters/line)]
+[空行]
+:
+//
+</code></pre></div></div>
+
+<p>For example</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ENT01.1 &lt;1..179
+/codon_start=3
+/transl_table=1
+         1 tgtacccactcaattttgtaaccccgggtatcatgctcccaggtgcattgatgttggatt
+         1   Y  P  L  N  F  V  T  P  G  I  M  L  P  G  A  L  M  L  D  F
+
+        61 tcacgatgtatctgacgcgtaactggctggtgaccgcattggttggaggtggattctttg
+        21   T  M  Y  L  T  R  N  W  L  V  T  A  L  V  G  G  G  F  F  G
+
+       121 gtctgctgttttacccaggtaactggccaatctttggcccgacccatctgccaatctaa
+        41   L  L  F  Y  P  G  N  W  P  I  F  G  P  T  H  L  P  I  
+//
+&gt;ENT02.1 101..280
+/codon_start=1
+/transl_table=1
+         1 atgtacccactcaattttgtaaccccgggtatcatgctcccaggtgcattgatgttggat
+         1 M  Y  P  L  N  F  V  T  P  G  I  M  L  P  G  A  L  M  L  D
+
+        61 ttcacgatgtatctgacgcgtaactggctggtgaccgcattggttggaggtggattcttt
+        21 F  T  M  Y  L  T  R  N  W  L  V  T  A  L  V  G  G  G  F  F
+
+       121 ggtctgctgttttacccaggtaactggccaatctttggcccgacccatctgccaatctaa
+        41 G  L  L  F  Y  P  G  N  W  P  I  F  G  P  T  H  L  P  I  
+//
+</code></pre></div></div>
+
+<div class="attention">
+  <p>When an error occurs, the transChecker outputs an error message.<br />
+Please reffer: <a href="/ddbj/validator-e.html#transchecker">transChecker Error Messages</a>, in detail.</p>
+</div>
+
+      </div>
+      
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              
+              <li>
+                <a href="/ddbj/file-format-e.html">Submission File Format</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/mss-tool-e.html">Validation tools for MSS data files</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/ume-e.html">UME User’s manual</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/parser-e.html">Parser User’s Manual</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/validator-e.html">Validator error message</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/mss-form-e.html">Application form for MSS</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

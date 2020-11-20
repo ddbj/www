@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INSD-XML upgraded to ver 1.4  </title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">INSD-XML upgraded to ver 1.4  </h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/news">news</a>
+          </li>
+          <li>
+            <a href="">INSD-XML upgraded to ver 1.4  </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <p>DDBJ upgraded the INSD-XML data format version from 1.3 to 1.4, on October 31, 2006. In DDBJ, INSD-XML data are provided at WWW getentry and anonymous FTP.</p>
+
+<ol>
+    <li>
+        <font color="#ff0000">1.INSD-XML ver 1.4 is applied on the all data other than MGA at WWW getentry, and is applied on all the data excluding WGS and MGA at anonymous FTP.</font><br />(Because the original notice was incorrect, this article was rectified. We apologize for it.(Dec.7))
+    </li>
+    <li>2.Output format of getentry was changed from ver 1.3 to 1.4. When you do the search specifying DNA as the target database and INSD as the output format, the results are outputted in the ver 1.4 format.</li>
+    <li>3.At anonymous FTP, both 1.3 and 1.4 format data are available until the distribution of DDBJ release 68 (around the end of this year).
+
+        <dl class="dot">
+            <dt>INSD-XML version 1.3</dt>
+            <dd><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbj/xml/insdxml/v1.3/">DDBJ release data</a> </dd>
+            <dd><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbjnew/xml/insdxml/v1.3/">DDBJNEW data</a>
+    <li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbj/xml/insdxml/v1.3/INSD_INSDSeq.dtd%20">DTD</a></li>
+    </dd>
+    <dt>INSD-XML version 1.4</dt>
+    <dd><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbj/xml/insdxml_current/">DDBJ release data</a></dd>
+    <dd><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbjnew/xml/insdxml_current/">DDBJNEW data</a></dd>
+    <dd><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbj/xml/insdxml_current/INSD_INSDSeq.dtd">DTD</a></dd>
+    </dl>
+    </li>
+    <li>4.Hierarchy of anonymous FTP site (where XML data are placed) was also reconstructed. DDBJ release and DDBJ new data are subject to this change.
+
+        <ul>
+            <li>DDBJ-XML was moved from xml/ to xml/ddbjxml/</li>
+            <li>INSD-XML was moved from insd/ to xml/insdxml</li>
+            <li>To obtain the latest version INSD-XML data, please visit xml/insixmlcurrent/ </li>
+        </ul>
+    </li>
+</ol>
+
+<table>
+    <tr>
+        <td valign="top">xml/</td>
+        <td valign="top"> : </td>
+        <td>DDBJ-XML data allocated<font color="#ff0000">*</font>
+        </td>
+    </tr>
+    <tr>
+        <td valign="top">xml/insd/</td>
+        <td valign="top"> : </td>
+        <td>INSD-XML v1.3 data allocated<font color="#ff0000">*</font>
+        </td>
+    </tr>
+    <tr>
+        <td valign="top">xml/ddbjxml/</td>
+        <td valign="top"> : </td>
+        <td> DDBJ-XML data allocated</td>
+    </tr>
+    <tr>
+        <td valign="top">xml/insdxml/</td>
+        <td valign="top"> : </td>
+        <td>INSD-XML data allocated</td>
+    </tr>
+    <tr>
+        <td valign="top">xml/insdxml/v1.3/</td>
+        <td valign="top"> : </td>
+        <td>INSD-XML v1.3 data allocated<font color="#ff0000">*</font>
+        </td>
+    </tr>
+    <tr>
+        <td valign="top">xml/insdxml/v1.4/</td>
+        <td valign="top"> : </td>
+        <td>INSD-XML v1.4 data allocated</td>
+    </tr>
+    <tr>
+        <td valign="top">xml/insdxml_current/</td>
+        <td valign="top"> : </td>
+        <td>INSD-XML latest version data directory</td>
+    </tr>
+</table>
+
+<p>
+    <font size="2">
+        <font color="#ff0000">*</font> xml/ , xml/insd/ and xml/insdxml/v1.3/ are deleted after the release of DDBJ release68 (scheduled in the end of December, 2006)
+    </font>
+</p>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

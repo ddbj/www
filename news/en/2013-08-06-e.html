@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apologies for defects in TPA data from EMBL-Bank</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">Apologies for defects in TPA data from EMBL-Bank</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/news">news</a>
+          </li>
+          <li>
+            <a href="">Apologies for defects in TPA data from EMBL-Bank</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <p>Some disorders were found in the process of sorting TPA data from EMBL-Bank. <br />Details are as follows:</p>
+
+<dl>
+    <dd><strong>Coverage:</strong> Subset of TPA data from EMBL-Bank, 865 entries with following accession numbers. <br />
+        <pre><code>  HE804769-HE804772  HG322958-HG323812  BN001513-BN001519  FR749997</code></pre><strong>Period:</strong> From 2013.04.24 to 2013.07.27 <br /><strong>Services:</strong> anonymous FTP，getentry<br /><strong>Situation:</strong>In anonymous FTP: Intrinsically, TPA data should be separated into a directory (/ddbj_database/tpa/ddbjnew/) to distinguish from primary data. However, following TPA entries were included in the same files with primary data.<br />
+        <pre><code>directory: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbjnew/file name: DDBJNEWr93.043.dat.gz （contains HG322958-HG323812）           DDBJNEWr93.046.dat.gz （contains HG322958-HG323812）           DDBJNEWr93.050.dat.gz （contains BN001513-BN001519,FR749997）           DDBJNEWr93.054.dat.gz （contains HG322958-HG323812）           DDBJNEWr93.056.dat.gz （contains HG322958-HG323812）           DDBJNEWr93.065.dat.gz （contains HG322958-HG323812）</code></pre>In getentry: The TPA entries were not loaded into getentry. <br /><br /><strong>Measure:</strong> We have fixed the relevant software tool.<br />For anonymous FTP: The TPA entries will be reallocated correctly after DDBJ periodical release 94. <br />For getentry: The TPA entries have been loaded into getentry.
+    </dd>
+</dl>
+
+<p>We apologize for your inconvenience.</p>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

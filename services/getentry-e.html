@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>getentry</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">getentry</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/services">services</a>
+          </li>
+          <li>
+            <a href="">getentry</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="about-getentry-">About getentry <a name="About_getentry"></a></h2>
+
+<ul>
+  <li>getentry is the DDBJ flat file search system, by accession numbers.</li>
+  <li>getentry is, as well as a simple web form, available by WebAPI
+program which calls up the data directly.</li>
+  <li>WebAPI also provides a <a href="#ge_program">gethistory</a> (revision history
+search) function.</li>
+  <li>Keyword search of DDBJ flat file is now avialable in
+<a href="http://ddbj.nig.ac.jp/arsa">ARSA</a></li>
+  <li>DRA data retrieval is unavilable in getentry, please refer <a href="http://ddbj.nig.ac.jp/DRASearch">DRA
+Search</a></li>
+</ul>
+
+<h2 id="search-from-web-browser-">Search from Web Browser <a name="Search_from_Web_Browser"></a></h2>
+
+<p>URL : <a href="http://getentry.ddbj.nig.ac.jp/top-e.html">http://getentry.ddbj.nig.ac.jp/top-e.html</a></p>
+
+<h3 id="default-value-">Default value <a name="Default_value"></a></h3>
+
+<table>
+  <tbody>
+    <tr>
+      <th>ID</th>
+      <td>Accession Number</td>
+    </tr>
+    <tr>
+      <th>Database</th>
+      <td><a href="http://www.insdc.org/">DNA database:DDBJ/EMBL/GenBank INSD.</a></td>
+    </tr>
+    <tr>
+      <th>Output format</th>
+      <td><a href="/ddbj/flat-file-e.html">flatfile（DDBJ）</a></td>
+    </tr>
+    <tr>
+      <th>Result</th>
+      <td>html</td>
+    </tr>
+    <tr>
+      <th>Limit</th>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="id-">ID <a name="ID_"></a></h3>
+
+<p>Input the Accession Number(s). Multiple number search, range search, and
+version seach are available.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <th>version search</th>
+        <td>
+          <ul>
+            <li>If you do not have a version number, you will find the latest version.</li>
+            <li>If you search with a version number, you will find the version specified.</li>
+          </ul>
+        </td>
+      <td>AB669632.1<br />
+      AB669632.2</td>
+    </tr>
+    <tr>
+      <th>multiple number search</th>
+        <td>
+          <ul>
+            <li>You can specify more than one accession numbers, separating with comma (",").</li>
+            <li>When more than one accession numbers being separated by "," are specified, output order is the same with the input order.</li>
+            <li>Range search can be done by connecting the two accession number with hyphen ("-") .</li>
+            <li>Version search is available</li>
+          </ul>
+        </td>
+      <td>AB669632.1,AB669632.2,AB669633.1,AB669633.2<br />
+      AK377101 - AK377200,AK377210,AK377211</td>
+    </tr>
+    <tr>
+      <th>range search</th>
+        <td>
+          <ul>
+            <li>Range search can accept the truncation both in the low and high numbers of the range.</li>
+            <li>By separating with comma (", "), more than one range search can be specified.</li>
+            <li>Version search is ignored.</li>
+          </ul>
+        </td>
+      <td>FY782000-FY7830<br />
+      AK377101 - AK377200,AK377211- AK388100</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="database-and-output-format-">Database and Output format <a name="Database_and_Output_format"></a></h3>
+
+<p>Select the database. The output format should be selected from either
+“database specific format” or FASTA.</p>
+
+<h4 id="dna-database-">DNA database <a name="DNA_database"></a></h4>
+
+<p>Database</p>
+
+<table>
+  <tbody>
+    <tr>
+      <th>DDBJ/EMBL/GenBank </th>
+      <td><a href="http://www.insdc.org/">International Nucleotide Sequence Databases（INSD）</a></td>
+    </tr>
+    <tr>
+      <th>MGA</th>
+      <td><a href="/ddbj/mga-e.html">Mass sequence for Genome Annotation(MGA)</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>DDBJ/EMBL/GenBank includes the following databases.</p>
+
+<ul>
+  <li>DDBJ periodical release</li>
+  <li>daily updates</li>
+  <li>accession numbers consisting of “4 letters + 8 digits”<br />
+（<a href="/ddbj/wgs-e.html">WGS(Whole Genome Shotgun)</a>, some
+<a href="/ddbj/tsa-e.html">TSA(Transcriptome Shotgun Assembly)</a>）</li>
+  <li><a href="/ddbj/tpa-e.html">TPA(Third Party Data)</a></li>
+</ul>
+
+<p>“4 letters + 8 digits” accession numbers(WGS and TSA) and TPA are not
+contained in the DDBJ releases.</p>
+
+<p>Please refrer the <a href="/latest-releases-e.html">Latest Release Information</a>,
+for the current status of searchable databases and related information.</p>
+
+<p>Output format</p>
+
+<table>
+  <tbody>
+    <tr>
+      <th>flatfile(DDBJ)</th>
+      <td><a href="/ddbj/flat-file-e.html">DDBJ flat file format</a></td>
+    </tr>
+    <tr>
+      <th>Total nt seq FASTA</th>
+      <td><a href="#nfasta">nucleotide total sequence in FASTA format</a></td>
+    </tr>
+    <tr>
+      <th>CDS Amino acid seq FASTA</th>
+      <td><a href="#trans">amino acid translated sequence of CDS region in FASTA format</a></td>
+    </tr>
+    <tr>
+      <th>CDS nt seq FASTA</th>
+      <td><a href="#cdsfasta">nucleotide sequence of CDS region in FASTA</a></td>
+    </tr>
+    <tr>
+      <th>INSD-XML_v1.4</th>
+      <td><a href="#xml">INSD-XML_v1.4 format</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>These 5 format types are selectable only after specification of
+“DDBJ/EMBL/GenBank”.</p>
+
+<p>When the MGA is selected as the target database, only “flatfile” can be
+specified.</p>
+
+<h4 id="protein-database-">Protein database <a name="Protein_database"></a></h4>
+
+<p>Database</p>
+
+<table>
+  <tbody>
+    <tr>
+      <th><a href="https://www.uniprot.org/">UniProt</a></th>
+      <td>Amino acid database (UniProt/Swiss-Prot and UniProt/TrEMBL)</td>
+    </tr>
+    <tr>
+      <th><a href="https://www.rcsb.org">PDB</a></th>
+      <td>3D structure database of protein</td>
+    </tr>
+    <tr>
+      <th><a href="/ddbj-releases.html">DAD</a></th>
+      <td>translated sequences database extracting from DDBJ</td>
+    </tr>
+    <tr>
+      <th>Patent</th>
+      <td>Amino acid data from <a href="https://www.jpo.go.jp/e/index.html">JPO</a> and <a href="//www.kipo.go.kr">KIPO</a>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Please refrer <a href="/latest-releases-e.html">Latest Release Information</a>, for
+the current status of searchable databases and related information.</p>
+
+<h4 id="output-format-">Output Format <a name="Output_Format"></a></h4>
+
+<table>
+  <tbody>
+    <tr>
+      <th colspan="2">default </th>
+      <td>Database specific format</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th rowspan="3" class="borderbtm">FASTA</th>
+      <th><a href="#trans">Amino acid seq FASTA </a></th>
+      <td>Amino acid sequence in FASTA format</td>
+      <td>available in UniProt, DAD, Patent</td>
+    </tr>
+    <tr>
+      <th><a href="#dadfasta">Nucleotide seq FASTA (for DAD)</a></th>
+      <td>Nucleotide sequence in FASTA format</td>
+      <td>DAD limited</td>
+</tr>
+    <tr>
+      <th><a href="#seqres">seqres</a></th>
+      <td>PDB specific amino acid sequence FASTA format</td>
+      <td>PDB limited</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Output format of Protein database search differs depending on the
+selected target databases.</p>
+
+<h3 id="filetype-of-the-result-">Filetype of the Result <a name="Filetype_of_the_Result"></a></h3>
+
+<table>
+  <tbody>
+    <tr>
+      <th>default</th>
+      <td>html</td>
+    </tr>
+    <tr>
+      <th>html</th>
+      <td>HTML (with link to ACCESSION, ORGANISM, etc)</td>
+    </tr>
+    <tr>
+      <th>text</th>
+      <td>text</td>
+    </tr>
+    <tr>
+      <th>gz</th>
+      <td>gzip compressed</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The name of the gzip files corresponding to the specified formats are as
+follows.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[DNA]flatfile</td>
+      <td>flatfile.txt.gz</td>
+    </tr>
+    <tr>
+      <td>[DNA]xml</td>
+      <td>insd.xml.gz</td>
+    </tr>
+    <tr>
+      <td>[DNA]fasta</td>
+      <td>fasta_na.txt.gz</td>
+    </tr>
+    <tr>
+      <td>[DNA]trans</td>
+      <td>cds_aa.txt.gz</td>
+    </tr>
+    <tr>
+      <td>[DNA]cds</td>
+      <td>cds_na.txt.gz</td>
+    </tr>
+    <tr>
+      <td>[Protein]flatfile</td>
+      <td>flatfile.txt.gz</td>
+    </tr>
+    <tr>
+      <td>[Protein]fasta</td>
+      <td>fasta_aa.txt.gz</td>
+    </tr>
+    <tr>
+      <td>[Protein]cds</td>
+      <td>cds_aa.txt.gz</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="limitupper-limit-of-the-data-acquisition-">Limit（upper limit of the data acquisition） <a name="Limit（upper_limit_of_the_data_acquisition）"></a></h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td>default</td>
+      <td>10 entries</td>
+    </tr>
+    <tr>
+      <td>specify the number</td>
+      <td>specified number of entries</td>
+    </tr>
+    <tr>
+      <td>0≥</td>
+      <td>no limit</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="search-by-webapi-">Search by WebAPI <a name="ge_program"></a></h2>
+
+<p>getentry is available from WebAPI program, as well as a simple web form,
+which calls up the data directly.</p>
+
+<h3 id="program-">Program <a name="Program"></a></h3>
+
+<p>WebAPI of getentry consists of two following programs.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <th>getentry</th>
+      <td>Get the flat file of the specified accession number (ID of entries in the database)</td>
+    </tr>
+    <tr>
+      <th>gethistory</th>
+      <td>Get the revision history of the specified accession number (ID of entries in the database)<br />
+      Revision history of the amino acid sequence derived from the Patent Office has not been taken so far.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="how-to-specify-the-parameter-">How to Specify the Parameter <a name="How_to_Specify_the_Parameter"></a></h3>
+
+<p>There are the following 2 methods.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>GET method</td>
+      <td>http://getentry.ddbj.nig.ac.jp/getentry?database=<strong><em>database name</em></strong>&amp;accession_number=<strong><em>accession number</em></strong>&amp;<strong><em>additional parameters (optional)</em></strong></td>
+    </tr>
+    <tr>
+      <td>smart URL</td>
+      <td>http://getentry.ddbj.nig.ac.jp/getentry/<strong><em>database name</em></strong>/<strong><em>accession number</em></strong><br />http://getentry.ddbj.nig.ac.jp/getentry/<strong><em>database name</em></strong>/<strong><em>accession number</em></strong>/?<strong><em>additional parameters (optional)</em></strong><br />http://getentry.ddbj.nig.ac.jp/getentry/<strong><em>database name</em></strong>/<strong><em>accession number</em></strong>/<strong><em>revision ID</em></strong>/?<strong><em>additional parameters (optional)</em></strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>example</p>
+
+<ul>
+  <li>
+    <p>AB601234 by Get method<br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=ddbj&amp;accession_number=AB601234">http://getentry.ddbj.nig.ac.jp/getentry?database=ddbj&amp;accession_number=AB601234</a></p>
+  </li>
+  <li>
+    <p>BD500001(amino acid sequence data originated from Patent Office) by
+smart URL<br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001">http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001</a></p>
+  </li>
+</ul>
+
+<h3 id="specifiable-parameters-in-getentry-">Specifiable Parameters in getentry <a name="parameter"></a></h3>
+
+<h4 id="accession-番号mandatoryspecify-the-accession-number-">accession 番号<span class="red">(mandatory)</span>：Specify the accession number. <a name="ge_accession"></a></h4>
+
+<table>
+  <tbody>
+    <tr>
+      <th>version number</th>
+      <td>
+        <ul>
+          <li>If you do not have a version number, you will find the latest version.</li>
+          <li>If you search with a version number, you will find the version specified.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th>multiple accession search</th>
+      <td>
+        <ul>
+          <li>You can specify more than one accession number, separated by ",".</li>
+          <li>When more than one accession numbers being separated by "," are specified, output order is the same with the input order.</li>
+          <li>Range search can be done by connecting the two accession number with "-" .</li>
+          <li>Version number is avilable.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th>range search</th>
+      <td>
+        <ul>
+          <li>The range search can accept the truncation in the low and high numbers of the range .</li>
+          <li>By separating with ", ", more than one range search can be specified.</li>
+          <li>Version number is ignored.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="attention">
+In case of not existing the target result and/or can not be displayed in
+the screen, no result are displayed in the screen, nor counted in the
+limit number.
+
+Please change the number of the entries viewed in the screen if
+necessay. The default is 10.
+
+It may take a long time to display a large number of results.According
+to the performance of the browser, all of that might not be displayed.
+</div>
+
+<p>example (upper:Get method / lower: smart URL)</p>
+
+<ul>
+  <li>
+    <p>AB055395<br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=AB055395">http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=AB055395</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB055395">http://getentry.ddbj.nig.ac.jp/getentry/na/AB055395</a></p>
+  </li>
+  <li>
+    <p>multiple accessions（multiple items, view 100 results）<br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=AK377101%20-%20AK377200,AK377210,AK377211-%20AK388100&amp;limit=100">http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=AK377101 - AK377200,AK377210,AK377211-AK388100&amp;limit=100</a> <br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AK377101%20-%20AK377200,AK377210,AK377211-%20AK388100?limit=100">http://getentry.ddbj.nig.ac.jp/getentry/na/AK377101 - AK377200,AK377210,AK377211- AK388100?limit=100</a></p>
+  </li>
+  <li>
+    <p>multiple accessions（range search, view 1000 results）<br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=FY782000-FY783000&amp;limit=1000">http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=FY782000-FY783000&amp;limit=1000</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/na/FY782000-FYFY783000?limit=1000">http://getentry.ddbj.nig.ac.jp/getentry/na/FY782000-FYFY783000?limit=1000</a></p>
+  </li>
+  <li>
+    <p>multiple accessions with version numbers：<br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=AB669632.1,AB669632.2,AB669633.1,AB669633.2,AB669634.1">http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=AB669632.1,AB669632.2,AB669633.1,AB669633.2,AB669634.1</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB669632.1,AB669632.2,AB669633.1,AB66963.2,AB669634.1">http://getentry.ddbj.nig.ac.jp/getentry/na/AB669632.1,AB669632.2,AB669633.1,AB66963.2,AB669634.1</a></p>
+  </li>
+  <li>
+    <p>range search with version numbers：version search is ignored(latest
+version is searched)
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=AB669632.1-AB6696356.1">http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=AB669632.1-AB6696356.1</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB669632.1-AB6696356.1">http://getentry.ddbj.nig.ac.jp/getentry/na/AB669632.1-AB6696356.1</a></p>
+  </li>
+</ul>
+
+<h4 id="databaseoptionalspecify-the-database-for-searching-">database<span class="red">(optional)</span>：Specify the database for searching. <a name="ge_db"></a></h4>
+
+<table>
+  <tbody>
+    <tr>
+      <th rowspan="2">DNA</th>
+      <th>na</th>
+      <td>DDBJ/EMBL/GenBank </td>
+      <td><a href="http://www.insdc.org/">International Nucleotide Sequence Databases（INSD）</a></td>
+    </tr>
+    <tr>
+      <th>mga</th>
+      <td>MGA</td>
+      <td><a href="/ddbj/mga-e.html">Mass sequence for Genome Annotation(MGA)</a></td>
+    </tr>
+    <tr>
+      <th rowspan="5" class="borderbtm">Protein</th>
+      <th>aa</th>
+      <td>DAD, Patent, UniProt, PDB </td>
+      <td>search these 4 dbs in this order</td>
+    </tr>
+    <tr>
+      <th>uniprot</th>
+      <td><a href="https://www.uniprot.org/">UniProt</a></td>
+      <td>Amino acid database (UniProt/Swiss-Prot and UniProt/TrEMBL)</td>
+    </tr>
+    <tr>
+      <th>pdb</th>
+      <td><a href="https://www.rcsb.org/">PDB</a></td>
+      <td>3D structure database of protein</td>
+    </tr>
+    <tr>
+      <th>dad</th>
+      <td><a href="/ddbj-releases.html">DAD</a></td>
+      <td>translated sequences database extracting from DDBJ</td>
+    </tr>
+    <tr>
+      <th>patent_aa</th>
+      <td>Patent</td>
+      <td>Amino acid data from <a href="https://www.jpo.go.jp/e/index.html">JPO</a> and <a href="//www.kipo.go.kr">KIPO</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="attention">
+  <p>Omitting the database specification is processed as t</p>
+
+  <p>DDBJ/EMBL/GenBank includes the following databases.</p>
+
+  <ul>
+    <li>DDBJ periodical release</li>
+    <li>DDBJ daily updates</li>
+    <li>accession numbers consisting of “4 letters + 8 digits”<br />
+（<a href="/ddbj/wgs-e.html">WGS(Whole Genome Shotgun)</a>, some
+<a href="/ddbj/tsa-e.html">TSA(Transcriptome Shotgun Assembly)</a>）</li>
+    <li><a href="/ddbj/tpa-e.html">TPA(Third Party Data)</a></li>
+  </ul>
+
+  <p>4 letters + 8 digits” accession numbers(WGS and TSA) and TPA are not
+contained in the DDBJ releases.</p>
+
+  <p>Please refrer <a href="/latest-releases-e.html">Latest Release Information</a> , for
+the current status of searchable databases and related information.</p>
+</div>
+
+<p>example  (upper:Get method / lower: smart
+URL)</p>
+
+<ul>
+  <li>
+    <p>TSA( IAAA01000001) search<br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=IAAA01000001">http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=IAAA01000001</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/na/IAAA01000001">http://getentry.ddbj.nig.ac.jp/getentry/na/IAAA01000001</a></p>
+  </li>
+  <li>
+    <p>WGS(BAET01000001) search<br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=BAET01000001">http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=BAET01000001</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/na/BAET01000001">http://getentry.ddbj.nig.ac.jp/getentry/na/BAET01000001</a></p>
+  </li>
+  <li>
+    <p>AB628096, not selecting the database<br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?accession_number=AB628096">http://getentry.ddbj.nig.ac.jp/getentry?accession_number=AB628096</a></p>
+  </li>
+  <li>
+    <p>MGA( AAAAA0000001)search<br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=mga&amp;accession_number=AAAAA0000001">http://getentry.ddbj.nig.ac.jp/getentry?database=mga&amp;accession_number=AAAAA0000001</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/mga/AAAAA0000001">http://getentry.ddbj.nig.ac.jp/getentry/mga/AAAAA0000001</a></p>
+  </li>
+  <li>
+    <p>Patent amino acid data search<br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=patent_aa&amp;accession_number=DI500001">http://getentry.ddbj.nig.ac.jp/getentry?database=patent_aa&amp;accession_number=DI500001</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/DI500001">http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/DI500001</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=aa&amp;accession_number=BD500001">http://getentry.ddbj.nig.ac.jp/getentry?database=aa&amp;accession_number=BD500001</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/aa/BD500001">http://getentry.ddbj.nig.ac.jp/getentry/aa/BD500001</a></p>
+  </li>
+  <li>
+    <p>DAD search<br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=dad&amp;accession_number=AB000714-1">http://getentry.ddbj.nig.ac.jp/getentry?database=dad&amp;accession_number=AB000714-1</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/dad/AB000714-1">http://getentry.ddbj.nig.ac.jp/getentry/dad/AB000714-1</a></p>
+  </li>
+  <li>
+    <p>UniProt search<br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=aa&amp;accession_number=P06213">http://getentry.ddbj.nig.ac.jp/getentry?database=aa&amp;accession_number=P06213</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/aa/P06213">http://getentry.ddbj.nig.ac.jp/getentry/aa/P06213</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=uniprot&amp;accession_number=P06213">http://getentry.ddbj.nig.ac.jp/getentry?database=uniprot&amp;accession_number=P06213</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/uniprot/P06213">http://getentry.ddbj.nig.ac.jp/getentry/uniprot/P06213</a></p>
+  </li>
+</ul>
+
+<h4 id="revisionoptional-search-the-revised-entry-at-the-specified-time-">revision<span class="red">(optional)</span>： Search the revised entry at the specified time. <a name="ge_revision"></a></h4>
+
+<table>
+  <tbody>
+    <tr>
+      <th>general</th>
+      <td>yyyy-MM-dd hh:mm:ss</td>
+    </tr>
+    <tr>
+      <th>release</th>
+      <td>yyyy-MM-dd hh:mm:ss release</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="attention">
+  <p>When both the version number and revision are specified, revision takes
+priority.</p>
+</div>
+
+<p>example  (upper:Get method / lower: smart
+URL)</p>
+
+<ul>
+  <li>
+    <p>AB479935 as of 2011-05-31 23:07:30<br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=AB479935&amp;revision=2011-05-31%2023:07:30">http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=AB479935&amp;revision=2011-05-31 23:07:30</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB479935?revision=2011-05-31%2023:07:30">http://getentry.ddbj.nig.ac.jp/getentry/na/AB479935?revision=2011-05-31 23:07:30</a></p>
+  </li>
+  <li>
+    <p>Update history is avilable using <a href="#gh_accession">gethistory</a>.<br />
+<a href="http://getentry.ddbj.nig.ac.jp/gethistory?database=na&amp;accession_number=AB479935">http://getentry.ddbj.nig.ac.jp/gethistory?database=na&amp;accession_number=AB479935</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/gethistory/na/AB479935">http://getentry.ddbj.nig.ac.jp/gethistory/na/AB479935</a></p>
+  </li>
+</ul>
+
+<h4 id="formatoptional-">format<span class="red">(optional)</span> <a name="ge_format"></a></h4>
+
+<table>
+  <tbody>
+    <tr>
+      <th>default</th>
+      <td>flatfile</td>
+    </tr>
+    <tr>
+      <th>flatfile</th>
+      <td><a href="/ddbj/flat-file-e.html">DDBJ flat file format</a></td>
+    </tr>
+    <tr>
+      <th>xml</th>
+      <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbj/xml/insdxml/v1.4/">INSDSeq-XML version 1.4</a></td>
+    </tr>
+    <tr>
+      <th rowspan="2">fasta</th>
+      <td>[DNA]Total nt seq FASTA</td>
+    </tr>
+    <tr>
+      <td>[Protein]Amino acid seq FASTA</td>
+    </tr>
+    <tr>
+      <th>trans</th>
+      <td>[DNA]CDS amino acid seq FASTA</td>
+    </tr>
+    <tr>
+      <th rowspan="2">cds</th>
+      <td>[DNA] CDS nt seq FASTA</td>
+    </tr>
+    <tr>
+      <td>[DAD] Nucleotide seq FASTA (for DAD)</td>
+    </tr>
+    <tr>
+      <th>seqres</th>
+      <td>[Protein] PDB amino acid</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Available output formats by specified database are as follows.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>DNA database</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DDBJ / EMBL / GenBank / MGA</td>
+      <td>flatfile(DDBJ), <br />Total nt seq FASTA, <br />CDS amino acid seq FASTA, <br />CDS nt seq FASTA, <br />INSD-XML_v1.4</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein database</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>UniProt</td>
+      <td>default, Amino acid seq FASTA</td>
+    </tr>
+    <tr>
+      <td>PDB</td>
+      <td>default, seqres</td>
+    </tr>
+    <tr>
+      <td>DAD</td>
+      <td>default, Amino acid seq FASTA, nt seq FASTA</td>
+    </tr>
+    <tr>
+      <td>Patent</td>
+      <td>default, Amino acid seq FASTA</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>example  (upper:Get method / lower: smart
+URL)</p>
+
+<ul>
+  <li>AB628096 in the flatfile format<br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?accession_number=AB628096">http://getentry.ddbj.nig.ac.jp/getentry?accession_number=AB628096</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096">http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096</a></li>
+</ul>
+
+<!-- end list -->
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LOCUS       AB628096                 390 bp    RNA     linear   VRL 24-FEB-2012
+DEFINITION  Human rhinovirus C gene for polyprotein, partial cds, strain:
+            HRV/Yamaguchi/2010/89.
+ACCESSION   AB628096
+VERSION     AB628096.1
+KEYWORDS    .
+SOURCE      Human rhinovirus C
+  ORGANISM  Human rhinovirus C
+            Viruses; ssRNA positive-strand viruses, no DNA stage;
+            Picornavirales; Picornaviridae; Enterovirus.
+REFERENCE   1  (bases 1 to 390)
+  AUTHORS   Kobayashi,M., Arakawa,M., Okamoto,R., Tsukagoshi,H., Ryo,A.,
+            Mizuta,K., Hasegawa,S., Hirano,R., Wakiguchi,H., Kudo,K.,
+            Tanaka,R., Morita,Y., Noda,M., Kozawa,K., Ichiyama,T., Shirabe,K.
+            and Kimura,H.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (06-MAY-2011) to the DDBJ/EMBL/GenBank databases.
+            Contact:Miho Kobayashi
+            Gunma Prefectural Institute of Public Health and Environmental
+            Sciences; Kamiokimachi 378, Maebashi, Gunma 371-0052, Japan
+REFERENCE   2  
+  AUTHORS   Arakawa,M., Okamoto-Nakagawa,R., Toda,S., Tsukagoshi,H.,
+            Kobayashi,M., Ryo,A., Mizuta,K., Hasegawa,S., Hirano,R.,
+            Wakiguchi,H., Kudo,K., Tanaka,R., Morita,Y., Noda,M., Kozawa,K.,
+            Ichiyama,T., Shirabe,K. and Kimura,H.
+  TITLE     Molecular epidemiological study of human rhinovirus species A, B
+            and C from patients with acute respiratory illnesses in Japan
+  JOURNAL   J. Med. Microbiol. 61, 410-419 (2012)
+  REMARK    DOI:10.1099/jmm.0.035006-0
+COMMENT     
+FEATURES             Location/Qualifiers
+     source          1..390
+                     /collection_date="14-Jan-2010"
+                     /country="Japan:Yamaguchi"
+                     /db_xref="taxon:463676"
+                     /host="Homo sapiens"
+                     /isolation_source="Nasopharyngeal swab"
+                     /mol_type="genomic RNA"
+                     /organism="Human rhinovirus C"
+                     /strain="HRV/Yamaguchi/2010/89"
+     CDS             1..&gt;390
+                     /codon_start=1
+                     /product="polyprotein"
+                     /protein_id="BAK22546.1"
+                     /transl_table=1
+                     /translation="MGAQVSKQNVGSHENSVSATGGSVIKYFNINYYKDSASSGLTKQ
+                     DFSQDPSKFTQPLAEALTNPALMSPTVEACGMSDRLKQITIGNSTITTQDTLNSILAY
+                     GEWPKYLSDLDASSVDKPTHPETSSDRF"
+BASE COUNT          124 a           95 c           77 g           94 t
+ORIGIN      
+        1 atgggcgcac aggtgagcaa gcaaaatgtc ggctcgcacg aaaattcagt ctcagccacg
+       61 ggtggatccg tgattaagta tttcaacatc aattactaca aggattctgc tagctctggc
+      121 ttgactaaac aagatttttc ccaagaccca tcgaaattca cacaacctct agcagaagca
+      181 cttacaaatc cagctttaat gtcaccaact gttgaagcat gtgggatgtc cgataggctt
+      241 aaacaaatta ctatcgggaa ttccactata acaacacaag atacactaaa ctctatactg
+      301 gcatatgggg agtggcccaa atacttgagt gacctggacg cttcctcagt ggataagcct
+      361 acccacccag agacatcatc tgatagattt
+//
+
+      
+</code></pre></div></div>
+
+<ul>
+  <li>Amino acid patent data in Amino acid FASTA format<br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=patent_aa&amp;accession_number=BD500001&amp;format=fasta">http://getentry.ddbj.nig.ac.jp/getentry?database=patent_aa&amp;accession_number=BD500001&amp;format=fasta</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001?format=fasta">http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001?format=fasta</a></li>
+</ul>
+
+<!-- end list -->
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;BD500001|JP 2000316586-A/3: Recombinant microorganism expressing small rubber particle-bound protein  (SRPP).
+
+MAEEVEEERLKYLDFVRAAGVYAVDSFSTLYLYAKDISGPLKPGVDTIENVVKTVVTPVY
+YIPLEAVKFVDKTVDVSVTSLDGVVPPVIKQVSAQTYSVAQDAPRIVLDVASSVFNTGVQ
+EGAKALYANLEPKAEQYAVITWRALNKLPLVPQVANVVVPTAVYFSEKYNDVVRGTTEQG
+YRVSSYLPLLPTEKITKVFGDEAS
+ 
+      
+</code></pre></div></div>
+
+<ul>
+  <li>AB601234 in nucleotide fasta format<a name="nfasta"></a>
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?accession_number=AB601234&amp;format=fasta">http://getentry.ddbj.nig.ac.jp/getentry?accession_number=AB601234&amp;format=fasta</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB601234?format=fasta">http://getentry.ddbj.nig.ac.jp/getentry/na/AB601234?format=fasta</a></li>
+</ul>
+
+<!-- end list -->
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;AB601234|AB601234.1 Ainsliaea faurieana chs gene for chalcone synthase, partial cds, haplotype: 2.
+
+ggaccttgctaaaaacaataagggctcacatgtccttgttgtctgctctgagatcattgc
+ttccatttttcgtagaccagataagaaccacattgtcagccaagctctctttggggatgg
+agcttctgcgctcattgtgggttcagacccagacttctccaaggaacatccattattcaa
+gattgtgtctacaactcagacaatcttacagaacactgaaagggcgatgaacttacaatt
+gagggaagaagggttgaccattcacctgcacagggatgtaccccagatgacatcaaagaa
+tatagaggaggcattagtgcacatatttttgccactgggcataagagactggaactcg
+ 
+      
+</code></pre></div></div>
+
+<ul>
+  <li>AB601234 in xml format <a name="xml"></a>
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=AB601234&amp;format=xml">http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=AB601234&amp;format=xml</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB601234/?format=xml">http://getentry.ddbj.nig.ac.jp/getentry/na/AB601234/?format=xml</a></li>
+</ul>
+
+<!-- end list -->
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?xml version="1.0"?&gt;
+
+&lt;!DOCTYPE INSDSet SYSTEM "INSD_INSDSeq.dtd"&gt;
+-&lt;INSDSet&gt;
+ -&lt;INSDSeq&gt; &lt;INSDSeq_locus&gt;AB601234&lt;/INSDSeq_locus&gt;
+  &lt;INSDSeq_length&gt;358&lt;/INSDSeq_length&gt;
+   &lt;INSDSeq_moltype&gt;DNA&lt;/INSDSeq_moltype&gt;
+    &lt;INSDSeq_topology&gt;linear&lt;/INSDSeq_topology&gt;
+     &lt;INSDSeq_division&gt;PLN&lt;/INSDSeq_division&gt;
+      &lt;INSDSeq_update-date&gt;18-MAY-2011&lt;/INSDSeq_update-date&gt;
+       &lt;INSDSeq_definition&gt;Ainsliaea faurieana chs gene for chalcone ......
+         &lt;INSDSeq_primary-accession&gt;AB601234&lt;/INSDSeq_primary-accession&gt;
+         &lt;INSDSeq_accession-version&gt;AB601234.1&lt;/INSDSeq_accession-version&gt;
+          &lt;INSDSeq_source&gt;Ainsliaea faurieana&lt;/INSDSeq_source&gt;
+           &lt;INSDSeq_organism&gt;Ainsliaea faurieana&lt;/INSDSeq_organism&gt;
+            &lt;INSDSeq_taxonomy&gt;Eukaryota; Viridiplantae; Streptophyta; .......
+             -&lt;INSDSeq_references&gt;
+              -&lt;INSDReference&gt;
+              &lt;INSDReference_reference&gt;1&lt;/INSDReference_reference&gt;
+               &lt;INSDReference_position&gt;1..358&lt;/INSDReference_position&gt;
+                -&lt;INSDReference_authors&gt; &lt;INSDAuthor&gt;Mitsui,Y.&lt;/INSDAuthor&gt;
+                 &lt;INSDAuthor&gt;Setoguchi,H.&lt;/INSDAuthor&gt; &lt;/INSDReference_authors&gt;
+                  &lt;INSDReference_title&gt;Direct Submission&lt;/INSDReference_title&gt;
+                   &lt;INSDReference_journal&gt;Submitted (17-NOV-2010) to the DDBJ/.....
+                    -&lt;INSDReference&gt;
+
+                                   -------   以下略    -----
+      
+</code></pre></div></div>
+
+<ul>
+  <li>HE963104 in CDS nucleotide fasta format<a name="cdsfasta"></a>
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=%20HE963104&amp;format=cds">http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=
+HE963104&amp;format=cds</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/na/HE963104/?format=cds">http://getentry.ddbj.nig.ac.jp/getentry/na/HE963104/?format=cds</a></li>
+</ul>
+
+<!-- end list -->
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &gt;HE963104-1|CCJ27876.1|111|&lt;1..111|Streptococcus thermophilus|predicted.....
+gggttgtcctgtgatgagggaatgctggcagtaggaggacttggtgctgtaggtggcccg
+tggggagctgtcggtggggtgttagtaggtgcagccttatactgtttctaa
+
+&gt;HE963104-2|CCJ27877.1|201|130..330|Streptococcus thermophilus|hypothetical.....
+atgaataataaacaacttgaaagatttaaaaaactggatacaaatgcattgtctaatgta
+agtggtcaaggctatggtgctcaatgtgttattggtactgccggaatgacgattgtcggt
+gcagctttctttggcatcgcaggtgcaggagctggatttgcaggcggtagcacagcattt
+tgttatggtacagctgaataa
+
+&gt;HE963104-3|CCJ27878.1|219|686..&gt;904|Streptococcus thermophilus|.....
+atggcaactcaaacaattgaaaactttaacacccttaacctcgaaacacttgctagtgtt
+gaaggaggtggatgtggttggagaggcgcaggtggagcgactgttcaaggagctatcggg
+ggagcgtttggaggtaatgtagttttaccagttgtaggctcagttcctggttatctagct
+ggtggtgttctaggtggtgcaggtggtactgttgcctat
+ 
+
+      
+</code></pre></div></div>
+
+<ul>
+  <li>JQ677812 in CDS Amino acid translated FASTA format<a name="trans"></a>
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=JQ677812&amp;format=trans">http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=JQ677812&amp;format=trans</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/na/JQ677812/?format=trans">http://getentry.ddbj.nig.ac.jp/getentry/na/JQ677812/?format=trans</a></li>
+</ul>
+
+<!-- end list -->
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;JQ677812-1|AFN26948.1|74|Triticum aestivum (bread wheat) HKT1;5
+HLAGYSLMLVYLSVVSGARAVLTGKRISLHTFSVFTVVSTFANCGFVPNNEAMIAFRSFP
+GLLLLVMPHVLLGI
+      
+</code></pre></div></div>
+
+<ul>
+  <li>DAD (AB000714-1) in nucleotide sequence FASTA format <a name="dadfasta"></a>
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=dad&amp;accession_number=AB000714-1&amp;format=cds">http://getentry.ddbj.nig.ac.jp/getentry?database=dad&amp;accession_number=AB000714-1&amp;format=cds</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/dad/AB000714-1/?format=cds">http://getentry.ddbj.nig.ac.jp/getentry/dad/AB000714-1/?format=cds</a></li>
+</ul>
+
+<!-- end list -->
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;AB000714-1|BAA22986.1|663|199..861|Homo sapiens|RVP1
+atgtccatgggcctggagatcacgggcaccgcgctggccgtgctgggctggctgggcacc
+atcgtgtgctgcgcgttgcccatgtggcgcgtgtcggccttcatcggcagcaacatcatc
+acgtcgcagaacatctgggagggcctgtggatgaactgcgtggtgcagagcaccggccag
+atgcagtgcaaggtgtacgactcgctgctggcactgccacaggaccttcaggcggcccgc
+gccctcatcgtggtggccatcctgctggccgccttcgggctgctagtggcgctggtgggc
+gcccagtgcaccaactgcgtgcaggacgacacggccaaggccaagatcaccatcgtggca
+ggcgtgctgttccttctcgccgccctgctcaccctcgtgccggtgtcctggtcggccaac
+accattatccgggacttctacaaccccgtggtgcccgaggcgcagaagcgcgagatgggc
+gcgggcctgtacgtgggctgggcggccgcggcgctgcagctgctggggggcgcgctgctc
+tgctgctcgtgtcccccacgcgagaagaagtacacggccaccaaggtcgtctactccgcg
+ccgcgctccaccggcccgggagccagcctgggcacaggctacgaccgcaaggactacgtc
+taa
+      
+</code></pre></div></div>
+
+<ul>
+  <li>View the PDBs in the amino acid FASTA <a name="seqres"></a>
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=pdb&amp;accession_number=0-Z&amp;format=seqres&amp;limit=5">http://getentry.ddbj.nig.ac.jp/getentry?database=pdb&amp;accession_number=0-Z&amp;format=seqres&amp;limit=5</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/pdb/0-Z/?format=seqres&amp;limit=5">http://getentry.ddbj.nig.ac.jp/getentry/pdb/0-Z/?format=seqres&amp;limit=5</a></li>
+</ul>
+
+<!-- end list -->
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &gt;100d_A mol:na length:10  DNA/RNA (5'-R(*CP*)-D(*CP*GP*GP*CP*GP*CP*CP*G
+CCGGCGCCGG
+&gt;100d_B mol:na length:10  DNA/RNA (5'-R(*CP*)-D(*CP*GP*GP*CP*GP*CP*CP*G
+CCGGCGCCGG
+&gt;101d_A mol:na length:12  DNA (5'-D(*CP*GP*CP*GP*AP*AP*TP*TP*(CBR)P*GP*
+CGCGAATTCGCG
+&gt;101d_B mol:na length:12  DNA (5'-D(*CP*GP*CP*GP*AP*AP*TP*TP*(CBR)P*GP*
+CGCGAATTCGCG
+&gt;101m_A mol:protein length:154  MYOGLOBIN
+----（以下略）----
+      
+</code></pre></div></div>
+
+<h4 id="filetypeoptionalspecify-the-filetype-for-the-result-">filetype<span class="red">(optional)</span>：Specify the filetype for the result <a name="ge_filetype"></a></h4>
+
+<table>
+  <tbody>
+    <tr>
+      <th>default</th>
+      <td>text</td>
+    </tr>
+    <tr>
+      <th>html</th>
+      <td>HTML（links to ACCESSION, ORGANISM, etc）</td>
+    </tr>
+    <tr>
+      <th>text</th>
+      <td>TEXT</td>
+    </tr>
+    <tr>
+      <th>gz</th>
+      <td>gz compressed</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The name of the gzip files corresponding to the specified formats are as
+follows.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[DNA]flatfile</td>
+      <td>flatfile.txt.gz</td>
+    </tr>
+    <tr>
+      <td>[DNA]xml</td>
+      <td>insd.xml.gz</td>
+    </tr>
+    <tr>
+      <td>[DNA]fasta</td>
+      <td>fasta_na.txt.gz</td>
+    </tr>
+    <tr>
+      <td>[DNA]trans</td>
+      <td>cds_aa.txt.gz</td>
+    </tr>
+    <tr>
+      <td>[DNA]cds</td>
+      <td>cds_na.txt.gz</td>
+    </tr>
+    <tr>
+      <td>[Protein]flatfile</td>
+      <td>flatfile.txt.gz</td>
+    </tr>
+    <tr>
+      <td>[Protein]fasta</td>
+      <td>fasta_aa.txt.gz</td>
+    </tr>
+    <tr>
+      <td>[Protein]cds</td>
+      <td>cds_aa.txt.gz</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>example  (upper:Get method / lower: smart
+URL)</p>
+
+<ul>
+  <li>download gz of AK377185-AK378194(1000 entries)<br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=AK377185-AK378194&amp;filetype=gz&amp;limit=1000">http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=AK377185-AK378194&amp;filetype=gz&amp;limit=1000</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AK377185-AK378194?filetype=gz&amp;limit=1000">http://getentry.ddbj.nig.ac.jp/getentry/na/AK377185-AK378194?filetype=gz&amp;limit=1000</a></li>
+</ul>
+
+<p>Following is shown on the display</p>
+
+<p><img src="/assets/images/help/getentry-gz-e.gif" alt="" title="getentry-gz" /></p>
+
+<ul>
+  <li>FW383979 in html<br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=FW383979&amp;filetype=html">http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=FW383979&amp;filetype=html</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB601234/?filetype=html">http://getentry.ddbj.nig.ac.jp/getentry/na/AB601234/?filetype=html</a></li>
+</ul>
+
+<!-- end list -->
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>LOCUS       FW383979                2675 bp    DNA     linear   PAT 14-OCT-2010
+DEFINITION  JP 2006521812-A/1: GENETIC POLYMORPHISMS ASSOCIATED WITH RHEUMATOID
+            ARTHRITIS, METHODS OF DETECTION AND USES THEREOF.
+ACCESSION   FW383979
+VERSION     FW383979.1
+KEYWORDS    JP 2006521812-A/1.
+SOURCE      Homo sapiens (human)
+  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+REFERENCE   1  (bases 1 to 2675)
+  AUTHORS   Alexander,H.C., Bigobikku,A.B. and Kagiru,M.
+  TITLE     GENETIC POLYMORPHISMS ASSOCIATED WITH RHEUMATOID
+            ARTHRITIS, METHODS 
+            OF DETECTION AND USES THEREOF 
+  JOURNAL   Patent: JP 2006521812-A 1 28-Sep-2006;
+            APLERA CORPORATION
+COMMENT     OS   Homo sapiens
+            PN   JP 2006521812-A/1
+            PD   28-Sep-2006
+</code></pre></div></div>
+
+<h4 id="show_suppressedoptionalto-display-the-suppressed-data-">show_suppressed<span class="red">(optional)</span>：To display the suppressed data. <a name="ge_show_suppressed"></a></h4>
+
+<table>
+  <tbody>
+    <tr>
+      <th>true</th>
+      <td>display the suppressed data.</td>
+    </tr>
+    <tr>
+      <th>false</th>
+      <td>NOT display the suppressed data</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>example  (upper:Get method / lower: smart
+URL)</p>
+
+<ul>
+  <li>HE602933 (suppressed)<br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=HE602933&amp;show_suppressed=true">http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=HE602933&amp;show_suppressed=true</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/na/HE602933?show_suppressed=true">http://getentry.ddbj.nig.ac.jp/getentry/na/HE602933?show_suppressed=true</a></li>
+</ul>
+
+<h4 id="limitoptional-sets-an-upper-limit-of-the-data-acquisition-">limit<span class="red">(optional)</span>： Sets an upper limit of the data acquisition <a name="ge_limit"></a></h4>
+
+<table>
+  <tbody>
+    <tr>
+      <th>default</th>
+      <td>10 entries</td>
+    </tr>
+    <tr>
+      <th>specify the number</th>
+      <td>specified number of entries</td>
+    </tr>
+    <tr>
+      <th>0</th>
+      <td>no limit</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>example  (upper:Get method / lower: smart
+URL)</p>
+
+<ul>
+  <li>view all results of FY736910 - FY762881(25,972 entries)<br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=FY736910%20-%20FY762881&amp;limit=0">http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=FY736910
+-
+FY762881&amp;limit=0</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/na/FY736910%20-%20FY762881?limit=0">http://getentry.ddbj.nig.ac.jp/getentry/na/FY736910 -
+FY762881?limit=0</a></li>
+</ul>
+
+<h4 id="traceoptionalwhen-secondary-accession-numberis-specified-the-result-transfers-to-that-of-primary-accession-number-">trace<span class="red">(optional)</span>：When Secondary Accession numberis specified, the result transfers to that of Primary Accession number <a name="ge_trace"></a></h4>
+
+<table>
+  <tbody>
+    <tr>
+      <th>true</th>
+      <td>display Primary Accession number</td>
+    </tr>
+    <tr>
+      <th>false</th>
+      <td>display Secondary Accession number</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>example  (upper:Get method / lower: smart
+URL)</p>
+
+<ul>
+  <li>show the primary of AB233943(primary)-AF530906(secondary)<br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=AF530906&amp;format=flatfile&amp;trace=true">http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=AF530906&amp;format=flatfile&amp;trace=true</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AF530906/?format=flatfile&amp;trace=true">http://getentry.ddbj.nig.ac.jp/getentry/na/AF530906/?format=flatfile&amp;trace=true</a></li>
+</ul>
+
+<h3 id="pecifiable-parameters-in-gethistory-">pecifiable parameters in gethistory <a name="gethistory"></a></h3>
+
+<h4 id="accession-numbermandatoryspecify-the-accession-number-for-searchingspecification-method-is-the-same-as-getentry">accession number<a name="gh_accession"></a><span class="red">(mandatory)</span>：Specify the accession number for searching.Specification method is the same as <a href="#ge_accession">getentry</a></h4>
+
+<div class="attention">
+  <p>History of the amino acid sequence derived from the Patent Office is not
+available.</p>
+</div>
+
+<p>example  (upper:Get method / lower: smart
+URL)</p>
+
+<ul>
+  <li>history search of AB628096<br />
+<a href="http://getentry.ddbj.nig.ac.jp/gethistory?database=na&amp;accession_number=AB628096">http://getentry.ddbj.nig.ac.jp/gethistory?database=na&amp;accession_number=AB628096</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/gethistory/na/AB628096">http://getentry.ddbj.nig.ac.jp/gethistory/na/AB628096</a></li>
+</ul>
+
+<!-- end list -->
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>AB628096
+1 2012-05-25 12:00:00 release 2012-05-25 12:00:00 release live
+1 2012-02-24 07:02:55         2012-02-24 07:02:55         live
+1 2011-11-25 11:27:22 release 2011-11-25 11:27:22 release live
+1 2011-10-22 23:01:47         2011-10-22 23:01:47         live
+1 2011-08-26 10:33:50 release 2011-08-26 10:33:50 release live
+1 2011-05-27 12:38:45 release 2011-05-27 12:38:45 release live
+1 2011-05-11 23:09:49         2011-05-11 23:09:49         live
+      
+</code></pre></div></div>
+
+<h4 id="databaseoptionalspecify-the-database-for-searching--1">database<span class="red">(optional)</span>：Specify the database for searching. <a name="gh_db"></a></h4>
+
+<table>
+  <tbody>
+    <tr>
+      <th>default</th>
+      <td>na</td>
+    </tr>
+    <tr>
+      <th>DNA</th>
+      <td>na</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="attention">
+  <p>When the specified database does not correspond to gethistory function,
+an empty result is returned.</p>
+</div>
+
+<p>example  (upper:Get method / lower: smart
+URL)</p>
+
+<ul>
+  <li>history search of WGS( BAET01000001)<br />
+<a href="http://getentry.ddbj.nig.ac.jp/gethistory?database=na&amp;accession_number=BAET01000001">http://getentry.ddbj.nig.ac.jp/gethistory?database=na&amp;accession_number=BAET01000001</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/gethistory/na/BAET01000001">http://getentry.ddbj.nig.ac.jp/gethistory/na/BAET01000001</a></li>
+</ul>
+
+<!-- end list -->
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>BAET01000001   BAET01000001 
+1 2015-09-15 16:20:47 2015-09-15 16:20:47 live   
+1 2014-06-28 09:14:29 2014-06-28 09:14:29 live   
+1 2012-06-07 07:05:36 2012-06-07 07:05:36 live   
+1 2012-06-01 07:05:51 2012-06-01 07:05:51 live   
+1 2012-03-10 07:10:00 2012-03-10 07:10:00 live   
+1 2012-03-10 07:03:37 2012-03-10 07:03:37 live   
+1 2012-02-21 07:03:15 2012-02-21 07:03:15 live   
+      
+</code></pre></div></div>
+
+<h4 id="filetypeoptionalspecify-the-filetype-for-the-result--1">filetype<span class="red">(optional)</span>：Specify the filetype for the result. <a name="gh_filetype"></a></h4>
+
+<table>
+  <tbody>
+    <tr>
+      <th>default</th>
+      <td>text</td>
+    </tr>
+    <tr>
+      <th>html</th>
+      <td>HTML</td>
+    </tr>
+    <tr>
+      <th>text</th>
+      <td>TEXT</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>example  (upper:Get method / lower: smart
+URL)</p>
+
+<ul>
+  <li>display the result of AB628096 history search in html format<br />
+<a href="http://getentry.ddbj.nig.ac.jp/gethistory?database=na&amp;accession_number=AB628096&amp;filetype=html">http://getentry.ddbj.nig.ac.jp/gethistory?database=na&amp;accession_number=AB628096&amp;filetype=html</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/gethistory/na/AB628096/?filetype=html">http://getentry.ddbj.nig.ac.jp/gethistory/na/AB628096/?filetype=html</a></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>accession</th>
+      <th>version</th>
+      <th>revision</th>
+      <th>change</th>
+      <th>state</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AB628096</td>
+      <td>1</td>
+      <td><a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2015-05-29+18%3A00%3A00+release/?format=flatfile&amp;filetype=text&amp;trace=false&amp;show_suppressed=true">2015-05-29 18:00:00 release</a></td>
+      <td>2015-05-29 18:00:00 release</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2015-02-27+14%3A00%3A00+release/?format=flatfile&amp;filetype=text&amp;trace=false&amp;show_suppressed=true">2015-02-27 14:00:00 release</a></td>
+      <td>2015-02-27 14:00:00 release</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2014-11-25+13%3A00%3A00+release/?format=flatfile&amp;filetype=text&amp;trace=false&amp;show_suppressed=true">2014-11-25 13:00:00 release</a></td>
+      <td>2014-11-25 13:00:00 release</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2014-08-29+21%3A00%3A00+release/?format=flatfile&amp;filetype=text&amp;trace=false&amp;show_suppressed=true">2014-08-29 21:00:00 release</a></td>
+      <td>2014-08-29 21:00:00 release</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2014-05-30+12%3A00%3A00+release/?format=flatfile&amp;filetype=text&amp;trace=false&amp;show_suppressed=true">2014-05-30 12:00:00 release</a></td>
+      <td>2014-05-30 12:00:00 release</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2014-02-21+12%3A00%3A00+release/?format=flatfile&amp;filetype=text&amp;trace=false&amp;show_suppressed=true">2014-02-21 12:00:00 release</a></td>
+      <td>2014-02-21 12:00:00 release</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2013-11-29+12%3A00%3A00+release/?format=flatfile&amp;filetype=text&amp;trace=false&amp;show_suppressed=true">2013-11-29 12:00:00 release</a></td>
+      <td>2013-11-29 12:00:00 release</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2013-08-30+07%3A00%3A00+release/?format=flatfile&amp;filetype=text&amp;trace=false&amp;show_suppressed=true">2013-08-30 07:00:00 release</a></td>
+      <td>2013-08-30 07:00:00 release</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2013-05-24+12%3A00%3A00+release/?format=flatfile&amp;filetype=text&amp;trace=false&amp;show_suppressed=true">2013-05-24 12:00:00 release</a></td>
+      <td>2013-05-24 12:00:00 release</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2013-02-22+12%3A00%3A00+release/?format=flatfile&amp;filetype=text&amp;trace=false&amp;show_suppressed=true">2013-02-22 12:00:00 release</a></td>
+      <td>2013-02-22 12:00:00 release</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-11-22+15%3A00%3A00+release/?format=flatfile&amp;filetype=text&amp;trace=false&amp;show_suppressed=true">2012-11-22 15:00:00 release</a></td>
+      <td>2012-11-22 15:00:00 release</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-08-24+12%3A00%3A00+release/?format=flatfile&amp;filetype=text&amp;trace=false&amp;show_suppressed=true">2012-08-24 12:00:00 release</a></td>
+      <td>2012-08-24 12:00:00 release</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-05-25+12%3A00%3A00+release/?format=flatfile&amp;filetype=text&amp;trace=false&amp;show_suppressed=true">2012-05-25 12:00:00 release</a></td>
+      <td>2012-05-25 12:00:00 release</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-02-24+07%3A17%3A46/?format=flatfile&amp;filetype=text&amp;trace=false&amp;show_suppressed=true">2012-02-24 07:17:46</a></td>
+      <td>2012-02-24 07:17:46</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-02-24+07%3A02%3A55/?format=flatfile&amp;filetype=text&amp;trace=false&amp;show_suppressed=true">2012-02-24 07:02:55</a></td>
+      <td>2012-02-24 07:02:55</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-11-25+11%3A27%3A22+release/?format=flatfile&amp;filetype=text&amp;trace=false&amp;show_suppressed=true">2011-11-25 11:27:22 release</a></td>
+      <td>2011-11-25 11:27:22 release</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-10-22+23%3A01%3A47/?format=flatfile&amp;filetype=text&amp;trace=false&amp;show_suppressed=true">2011-10-22 23:01:47</a></td>
+      <td>2011-10-22 23:01:47</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-08-26+10%3A33%3A50+release/?format=flatfile&amp;filetype=text&amp;trace=false&amp;show_suppressed=true">2011-08-26 10:33:50 release</a></td>
+      <td>2011-08-26 10:33:50 release</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-05-27+12%3A38%3A45+release/?format=flatfile&amp;filetype=text&amp;trace=false&amp;show_suppressed=true">2011-05-27 12:38:45 release</a></td>
+      <td>2011-05-27 12:38:45 release</td>
+      <td>live</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td><a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-05-11+23%3A09%3A49/?format=flatfile&amp;filetype=text&amp;trace=false&amp;show_suppressed=true">2011-05-11 23:09:49</a></td>
+      <td>2011-05-11 23:09:49</td>
+      <td>live</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="how-to-create-links-to-ddbj-entries-">How to Create Links to DDBJ Entries <a name="ge_createlinks"></a></h2>
+
+<h3 id="you-can-create-links-to-individual-ddbj-entries-">You can create links to individual DDBJ entries. <a name="You_can_create_links_to_individual_DDBJ_entries."></a></h3>
+
+<p>http://getentry.ddbj.nig.ac.jp/getentry?database=database
+name&amp;accession_number=accession number&amp;additional parameters
+(optional)<br />
+http://getentry.ddbj.nig.ac.jp/getentry/database name/accession number<br />
+http://getentry.ddbj.nig.ac.jp/getentry/database name/accession
+number/?additional parameters (optional)</p>
+
+<p>For example, a link to AB000001 is<br />
+http://getentry.ddbj.nig.ac.jp/getentry?database=na&amp;accession_number=AB000001<br />
+http://getentry.ddbj.nig.ac.jp/getentry/na/AB000001</p>
+
+<p>For example,a link to BD500001, an entry of the amino acid sequence
+originated in the Patent is not available.<br />
+http://getentry.ddbj.nig.ac.jp/getentry?database=aa&amp;accession_number=BD500001<br />
+http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001</p>
+
+<p>As a practical case, please crick the following number to see how the
+entry can be viewed.
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/na/AB000001">AB000001</a><br />
+<a href="http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001">BD500001</a></p>
+
+<div class="attention">
+  <p>Creating links to DRA entries is different from the above method. Please
+refer to the <a href="/dra/index.html">DRA Web site</a>.</p>
+</div>
+
+      </div>
+      
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              
+              <li>
+                <a href="/services/arsa-e.html">ARSA Help</a>
+              </li>
+              
+              <li>
+                <a href="/services/blast-e.html">BLAST Help</a>
+              </li>
+              
+              <li>
+                <a href="/services/txsearch-e.html">TXSearch Help</a>
+              </li>
+              
+              <li>
+                <a href="/services/clustalw-e.html">ClustalW Help</a>
+              </li>
+              
+              <li>
+                <a href="/services/vecscreen-e.html">VecScreen Help</a>
+              </li>
+              
+              <li>
+                <a href="/services/references-e.html">References</a>
+              </li>
+              
+              <li>
+                <a href="/services/past-services-e.html">Services in past</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-e.html">WABI (Web API for Biology)</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-blast-e.html">WABI BLAST Help</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

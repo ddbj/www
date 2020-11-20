@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download steps</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">Download steps</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/agd">agd</a>
+          </li>
+          <li>
+            <a href="">Download steps</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="agd-data-use-request-">AGD data use request <a name="request"></a></h2>
+
+<p>Apply data use request to <a href="http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines">National Bioscience Database Center (NBDC)</a> with the AGD Study (e.g., AGDS_00000000005) and Dataset (e.g., AGDD_00000000005) IDs.</p>
+
+<div class="attention red">
+  <p>Approved users should follow the <a href="https://gr-sharingdbs.biosciencedbc.jp/group-security-guidelines-for-users">NBDC Security Guidelines for Human Data (for Data Users)</a>.</p>
+</div>
+
+<p>NBDC will notify user ID and password to approved users. The download account will expire in three months after assignment.</p>
+
+<p>This page explains how to use the AGD data.</p>
+
+<h2 id="download-data-">Download data <a name="download-data"></a></h2>
+
+<h3 id="agd-download-tool-">AGD download tool <a name="agd-download-tool"></a></h3>
+
+<p>Download the AGD download tool (last updated: 2018-11-22，v3.5.0).</p>
+
+<div class="attention red">
+  <p>Use this tool in Java 8. This tool does not work in Java 7.</p>
+</div>
+
+<h4 id="windows">Windows</h4>
+
+<p><a href="/assets/files/submission/3-5-0/AGD_tool.zip">AGD download tool for Windows</a></p>
+
+<p>Run the tool by clicking the “bat” file in the folder.</p>
+
+<h4 id="unix">Unix</h4>
+
+<p><a href="/assets/files/submission/3-5-0/AGD_tool_unix.zip">AGD download tool for Unix</a></p>
+
+<p>Run the tool by executing the sh file in the directory.</p>
+
+<p>Use “Java SE Development Kit 8” and not OpenJDK.</p>
+
+<h3 id="login-">Login <a name="login"></a></h3>
+
+<p>Run the AGD tool and login the AGD system with user ID and password notified by <a href="http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines">NBDC</a>.</p>
+
+<div class="attention red">
+  <p>AGD submission and download tool is the same software behave in different mode according to the account used.</p>
+</div>
+
+<a class="group1" href="/assets/images/submission/agdsub1.jpg" title="Login the AGD tool">
+  <figure class="image">
+    <img src="/assets/images/submission/agdsub1.jpg" alt="Login the AGD tool" class="w200">
+    <figcaption>Login the AGD tool</figcaption>
+  </figure>
+</a>
+
+<p>The left window is your local computer and the right window is the secure AGD file server.</p>
+
+<p>In the right window, data sets approved to use are listed. Check the data sets you want to download. Total number of files and size are displayed at below.</p>
+
+<a class="group1" href="/assets/images/books/agddown01.jpg" title="Select data sets to download">
+  <figure class="image">
+    <img src="/assets/images/books/agddown01.jpg" alt="Select data sets to download" class="w500">
+    <figcaption>Select data sets to download</figcaption>
+  </figure>
+</a>
+
+<p>Click the [Download] button and the tool download and decrypt the data sets. The number of parallel download can be adusted from 1-5 at
+“Parallel Download count”.</p>
+
+<p>When this process finishes, decrypted data set are downloaded to your local computer.</p>
+
+<p>In the created directory with data set accession number, the metadata
+XML and data files have been downloaded.</p>
+
+<a class="group1" href="/assets/images/books/agddown03.jpg" title="metadata XML and data files">
+  <figure class="image">
+    <img src="/assets/images/books/agddown03.jpg" alt="metadata XML and data files" class="w300">
+    <figcaption>metadata XML and data files</figcaption>
+  </figure>
+</a>
+
+<p>You can expand the directory tree by clicking the arrowhead left to the dataset directory icon. By selecting each data directory and file, you can download individual files.</p>
+
+<a class="group1" href="/assets/images/books/agddown02.jpg" title="Download data set">
+  <figure class="image">
+    <img src="/assets/images/books/agddown02.jpg" alt="Download data set" class="w500">
+    <figcaption>Download data set</figcaption>
+  </figure>
+</a>
+
+<h3 id="download-via-a-proxy-server-">Download via a proxy server <a name="download-via-proxy-server"></a></h3>
+
+<p>To use the tool via the proxy server, you need to set the name and port number of the proxy server.</p>
+
+<p>Edit the “proxy.properties” file in the tool folder and enter the name (server=) and port number (port=) of the proxy server.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Enter the server name and port number of the proxy server to connect the AGD server via the proxy.
+# For example:
+# server=proxy.example.ac.jp
+# port=8080
+server=
+port=
+</code></pre></div></div>
+
+<p>After login, when the proxy requires user authentication, enter the authentication information in the displayed window. The v3.5.0 (2018-11-21) tool is compatible with the BASIC authentication but not with the Digest authentication.</p>
+
+<h3 id="view-metadata-in-website-">View metadata in website <a name="view-metadata-in-website"></a></h3>
+
+<p>Users can view AGD metadata also in website.</p>
+
+<p>From the <a href="https://ddbj.nig.ac.jp/agd/viewer/view/studies">“AGD studies” page</a>, move to the AGD datasets page.</p>
+
+<a class="group1" href="/assets/images/books/agddown04.jpg" title="AGD studies">
+  <figure class="image">
+    <img src="/assets/images/books/agddown04.jpg" alt="AGD studies" class="w500">
+    <figcaption>AGD studies</figcaption>
+  </figure>
+</a>
+
+<p>Select data sets with data use permission.</p>
+
+<a class="group1" href="/assets/images/books/agddown05.jpg" title="Select data sets to view metadata">
+  <figure class="image">
+    <img src="/assets/images/books/agddown05.jpg" alt="Select data sets to view metadata" class="w500">
+    <figcaption>Select data sets to view metadata</figcaption>
+  </figure>
+</a>
+
+<p>As in the AGD tool, login the website by using user ID and password notified by NBDC.</p>
+
+<a class="group1" href="/assets/images/books/agddown06.jpg" title="Login with data use account">
+  <figure class="image">
+    <img src="/assets/images/books/agddown06.jpg" alt="Login with data use account" class="w300">
+    <figcaption>Login with data use account</figcaption>
+  </figure>
+</a>
+
+<p>Users can view metadata in the website after login.</p>
+
+<a class="group1" href="/assets/images/books/agddown07.jpg" title="Users can view metadata in the website after login">
+  <figure class="image">
+    <img src="/assets/images/books/agddown07.jpg" alt="Users can view metadata in the website after login" class="w500">
+    <figcaption>Users can view metadata in the website after login</figcaption>
+  </figure>
+</a>
+
+<p>Logout from the metadata view site</p>
+
+<div class="attention red">
+  <p>Access to the metadata view site is limited to 1 from same account. After viewing metadata, do NOT close your browser but logout at right-top “Logout”.<br />
+When an error “Maximum sessions of 1 for this principal exceeded” is displayed, login again after 30 min interval.</p>
+</div>
+
+<p>After viewing metadata, do NOT close your browser but logout at right-top “Logout”.</p>
+
+<a class="group1" href="/assets/images/books/agddown08.jpg" title="Logout from metadata view site">
+  <figure class="image">
+    <img src="/assets/images/books/agddown08.jpg" alt="Logout from metadata view site" class="w500">
+    <figcaption>Logout from metadata view site</figcaption>
+  </figure>
+</a>
+
+<p>The following error is displayed when access from single account exceeds “1”. Login again after 30 min interval.</p>
+
+<a class="group1" href="/assets/images/books/jgadown09.jpg" title="Error when access from single account exceeds 1">
+  <figure class="image">
+    <img src="/assets/images/books/jgadown09.jpg" alt="Error when access from single account exceeds 1" class="w500">
+    <figcaption>Error when access from single account exceeds 1</figcaption>
+  </figure>
+</a>
+
+<h3 id="data-file-transfer-by-hard-disk-">Data file transfer by hard disk <a name="data-file-transfer-by-hard-disk"></a></h3>
+
+<div class="attention red">
+  <p>For all hard drive request please contact <a href="/contact-ddbj-e.html">AGD team</a> and let us know the permitted datasets you would like to have transferred.</p>
+</div>
+
+<p><span class="red">If you would like the data in hard disk, please prepare the USB hard disk drive (filesystem should be NTFS, ext3 or ext4) with enough space for the approved dataset. Be sure to virus check the entire filesystem and send us the empty drive.</span></p>
+
+<p>Please send your disk to the following address. Be sure to label your disk.</p>
+
+<address>
+
+  <p>Postal code: 411-8540<br />
+Kodama Yuichi<br />
+1111 Yata, Mishima, Shizuoka 411-8540, Japan<br />
+Phone:+81-55-981-6853</p>
+
+</address>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

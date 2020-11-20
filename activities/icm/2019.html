@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>第32回 国際実務者会議 2019年5月15-17日 英国ヒンクストン</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">第32回 国際実務者会議 2019年5月15-17日 英国ヒンクストン</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/icm">icm</a>
+          </li>
+          <li>
+            <a href="">第32回 国際実務者会議 2019年5月15-17日 英国ヒンクストン</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="2019-">2019 <a name="2019"></a></h2>
+
+<h3 id="第32回-国際実務者会議-2019年5月15-17日-英国ヒンクストン">第32回 国際実務者会議 2019年5月15-17日 英国ヒンクストン</h3>
+
+<p>DDBJ センター, <a href="//www.ebi.ac.uk/">EBI</a>, <a href="//www.ncbi.nlm.nih.gov/">NCBI</a> で構成される <a href="http://www.insdc.org/">International Nucleotide Sequence Database Collaboration (INSDC)</a> は、その共同事業の運営・推進を図るために、国際実務者会議を年１回開催しています。<br />
+2019年は 5月15日-17日に EBI で開催され、<a href="/index.html">DDBJ</a>、<a href="//www.ebi.ac.uk/ena/">ENA</a>、<a href="//www.ncbi.nlm.nih.gov/genbank/index.html">GenBank</a>、Sequence Read Archive (SRA) を運営する上での実務的な問題を討論しました。<br />
+会議の報告を以下に まとめました。</p>
+
+<h4 id="検討事項と今後の課題">検討事項と今後の課題</h4>
+
+<dl>
+  <dt>メタゲノムデータの区分と受け入れ</dt>
+  <dd>メタゲノムを扱うためのアセンブル・解析手法が発展し、そのデータ登録が増加しています。メタゲノムデータを 3 つのレベルに分類し、
+    <ol>
+      <li>primary metagenome assemblies with environmental samples</li>
+      <li>binned metagenome assemblies with binned samples</li>
+      <li>MAGs with MIMAG samples (<a href="//www.nature.com/articles/nbt.3893">Nat. Biotechnol. 35:725-731 (2017)</a> 参照)
+  1) と 2) は SRA Analysis object へ、3) はフラットファイルとして受け入れる方針で進めます。</li>
+    </ol>
+  </dd>
+  <dt>Negative control 用の「生物名」</dt>
+  <dd>対照実験用に BioSample などに無生物を記載するようなケースがあり、そのための dummy として無生物の「生物名」を追加することを検討しています。</dd>
+  <dt>由来生物種の記載が疑わしい配列データについて</dt>
+  <dd>Average Nucleotide Identity 解析から配列と記載されている生物名の対応が疑わしいケースへの対応について話し合いました。</dd>
+</dl>
+
+<h4 id="sra-に関連する検討事項-">SRA に関連する検討事項 <a name="2019-sra"></a></h4>
+
+<ul>
+  <li>Single-cell sequencing 解析などにおいてサンプル数が大量である場合は、BioSample を個別に記載するのではなく、代表的な記載に代えて良いことを確認しました。個別の記載は必要に応じて GEO, ArrayExpress, GEA で受け付けます。</li>
+  <li>PacBio を用いたゲノムの登録に際し、methylation 解析の motif summary file の提供を求めていきます。</li>
+  <li>現状、INSDC メンバー間で共有対象になっていない SRA Analysis object の共有について議論しました。</li>
+</ul>
+
+<h4 id="feature-と-qualifier-の記載則改訂-">Feature と Qualifier の記載則改訂 <a name="2019-ft"></a></h4>
+
+<p>一部、先行して <a href="/ddbj/qualifiers.html#gap_type">/gap_type</a>, <a href="/ddbj/qualifiers.html#linkage_evidence">/linkage_evidence</a> qualifier
+の定義には適用されてきましたが、<a href="//www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/">AGP フォーマットの定義</a>が <a href="//www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/proposed-version-2-1/">version 2.1 へ改訂</a>されます。これに伴い、<a href="/ddbj/qualifiers.html#linkage_evidence">/linkage_evidence</a> qualifier の規定値に ‘proximity ligation’ が追加され、今後の登録では ‘strobe’ が廃止されます。<br />
+2019年10月以降 <a href="/ddbj/feature-table.html">Feature Table Definition</a> の改訂後に適用されます。</p>
+
+<h4 id="data-access-policy">Data Access Policy</h4>
+
+<dl>
+  <dt>Preprint とデータ公開</dt>
+  <dd>近年、preprint server を介した成果公開が増加しており、preprint に INSDC accession number が記載されている場合にも、関連配列データを公開する方針で一致しました。これに関連して <a href="/insdc-status-e">status 定義</a>を見直しました。</dd>
+  <dt>Access and Benefit-Sharing (ABS)</dt>
+  <dd>国連が「国家管轄権外区域における海洋生物多様性(<a href="//www.un.org/bbnj/">BBNJ</a>)」に関する決議作成に取り組む準備委員会を設立し、「遺伝資源の取得の機会とその利用から生ずる利益の公正かつ衡平な配分 (ABS)」について検討しています。INSDC 構成員にも参考意見が求められています。<a href="/activities/icm/2018">2018 年</a>の生物多様性条約第14回締約国会議 (COP14) と名古屋議定書に関する議論とも関連しますが、INSDC はアクセス制限することなく、すべての配列データを公開する<a href="/insdc.html#policy">方針</a>の重要性について意見表明します。</dd>
+  <dt>NCBI における SRA data の cloud 移行</dt>
+  <dd>NCBI が SRA データを <a href="//www.nih.gov/news-events/news-releases/nih-makes-strides-accelerate-discoveries-cloud">cloudに移行していく方針</a>についての対応課題について議論しました。</dd>
+</dl>
+
+
+      </div>
+      
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              
+              <li>
+                <a href="/activities/training-ddbj-challenge.html">DDBJ データ解析チャレンジ</a>
+              </li>
+              
+              <li>
+                <a href="/activities/">DDBJ スタッフの論文 (2009-)</a>
+              </li>
+              
+              <li>
+                <a href="/activities/">DDBJ スタッフの講演発表 (2009-)</a>
+              </li>
+              
+              <li>
+                <a href="/activities/">DDBJ スタッフの出版物 (2009-)</a>
+              </li>
+              
+              <li>
+                <a href="/activities/archives.html">発行物アーカイブ</a>
+              </li>
+              
+              <li>
+                <a href="/activities/">DDBJ Annual Report</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

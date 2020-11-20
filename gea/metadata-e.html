@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metadata</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">Metadata</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/gea">gea</a>
+          </li>
+          <li>
+            <a href="">Metadata</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/gea/index-e.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/gea/overview-e.html">Submission Overview</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/gea/submit-array-e.html">Submit microarray experiment</a>
+        </li>
+        
+        <li>
+          <a href="/gea/submit-sequence-e.html">Submit sequencing experiment</a>
+        </li>
+        
+        <li>
+          <a href="/gea/metadata-e.html">Metadata</a>
+        </li>
+        
+        <li>
+          <a href="/gea/datafile-e.html">Data File</a>
+        </li>
+        
+        <li>
+          <a href="/gea/validation-e.html">Validation</a>
+        </li>
+        
+        <li>
+          <a href="/gea/single-cell-e.html">Single-cell submission guide</a>
+        </li>
+        
+        <li>
+          <a href="/gea/example-e.html">Example</a>
+        </li>
+        
+        <li>
+          <a href="/gea/adf-e.html">Array Design</a>
+        </li>
+        
+        <li>
+          <a href="/gea/matrix-e.html">Data matrix</a>
+        </li>
+        
+        <li>
+          <a href="/gea/reviewer-access-e.html">Reviewer Access</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/en/index-e.html">FAQ</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="http://aoe.dbcls.jp/">Search (AOE)</a>
+      
+      <ul>
+        
+        <li>
+          <a href="http://refex.dbcls.jp/index.php?lang=en">RefEx</a>
+        </li>
+        
+        <li>
+          <a href="https://www.ebi.ac.uk/arrayexpress/browse.html">Search (ArrayExpress)</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/gea">Downloads</a>
+      
+    </li>
+    
+    <li class="">
+      <a href="/gea/about-gea-e.html">About GEA</a>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="mage-tab-">MAGE-TAB <a name="mage-tab"></a></h2>
+
+<p>The MicroArray Gene Expression Tabular (<a href="http://fged.org/projects/mage-tab/">MAGE-TAB</a>) format has been developed and adopted by the functional genomics community as a means of representing and communicating data about a functional genomics experiment in a structured and standardised way. It was designed for data collection and annotation, as well as for data exchange between tools and databases, including submission tools to public repositories such as ArrayExpress and GEA. The full <a href="http://fged.org/projects/mage-tab/">specification</a> outlines the format.</p>
+
+<a class="group1" href="/assets/images/magetab/magetab_over.jpg" title="Relationships between IDF, SDRF, ADF and raw and processed data files">
+  <figure class="image">
+    <img src="/assets/images/magetab/magetab_over.jpg" alt="Relationships between IDF, SDRF, ADF and raw and processed data files" class="w450">
+    <figcaption>Relationships between IDF, SDRF, ADF and raw and processed data files</figcaption>
+  </figure>
+</a>
+
+<h2 id="idf-">IDF <a name="idf"></a></h2>
+
+<p>The IDF (Investigation Description Format) file is used to give an overview of the experiment, including the experimental design, protocols, publication information and submitter details.</p>
+
+<h3 id="idf-example-">IDF example <a name="idf_ex"></a></h3>
+
+<p><a href="/gea/example-e.html#idf">IDF example</a></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="#Comment_idf">Comment[GEAAccession]</a></td>
+      <td>E-GEAD-369</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MAGE-TAB Version</td>
+      <td>1.1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Investigation_Title">Investigation Title</a></td>
+      <td>Transcriptional profiling of Arabidopsis leaves exposed to elevated temperature</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Experiment_Description">Experiment Description</a></td>
+      <td>We investigated genome-wide … biological replicates were analyzed.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Experimental_Design">Experimental Design</a></td>
+      <td>stimulus or stress design</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Experimental_Factor_Name">Experimental Factor Name</a></td>
+      <td>temperature</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Experimental_Factor_Type">Experimental Factor Type</a></td>
+      <td>temperature</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Person_Last_Name">Person Last Name</a></td>
+      <td>Test</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Person_First_Name">Person First Name</a></td>
+      <td>Tarou</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Person_Affiliation">Person Affiliation</a></td>
+      <td>DDBJ Center, National Institute of Genetics</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Person_Roles">Person Roles</a></td>
+      <td>submitter</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Public_Release_Date">Public Release Date</a></td>
+      <td>2018-06-22</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#PubMed_ID">PubMed ID</a></td>
+      <td>29040613</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Protocol_Name">Protocol Name</a></td>
+      <td>P-GEAD-535</td>
+      <td>…</td>
+    </tr>
+    <tr>
+      <td><a href="#Protocol_Type">Protocol Type</a></td>
+      <td>sample collection protocol</td>
+      <td>…</td>
+    </tr>
+    <tr>
+      <td><a href="#Protocol_Description">Protocol Description</a></td>
+      <td>Plants were sown on GM medium … 22 degrees celsius.</td>
+      <td>…</td>
+    </tr>
+    <tr>
+      <td><a href="#SDRF_File">SDRF File</a></td>
+      <td>E-GEAD-369.sdrf.txt</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Comment_idf">Comment[Number of channel]</a></td>
+      <td>single-channel</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Comment_idf">Comment[Array Design REF]</a></td>
+      <td>A-AFFY-2</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Comment_idf">Comment[AEExperimentType]</a></td>
+      <td>transcription profiling by array</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Comment_idf">Comment[BioProject]</a></td>
+      <td>PRJDB3647</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Comment_idf">Comment[Public Release Date]</a></td>
+      <td>2018-06-22</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Comment_idf">Comment[Last Update Date]</a></td>
+      <td>2018-06-22</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="idf-tags-">IDF tags <a name="idf_tags"></a></h3>
+
+<p>The IDF component of a MAGE-TAB document consists of a set of unique tags attached to their corresponding values in a simple tab-delimited text format. For example, “Experiment Description” should be followed by a free-text description of the experiment. Most of the following fields can be used with more than one value, so that multiple protocols, persons, experimental factors etc. can be defined in a single IDF file. In these cases, the different “objects” are separated by tabs. Those fields which can contain only one value are indicated below.</p>
+
+<dl>
+  <dt><a href="#Investigation_Title">Investigation Title</a><a name="Investigation_Title"></a></dt>
+  <dd>The overall title of the investigation. This tag can only have one value.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Experimental_Design">Experimental Design</a><a name="Experimental_Design"></a></dt>
+  <dd>The experiment design types which are applicable to this study. These terms should come from <a href="https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=1804523015">controlled terms</a>.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt>Experimental Factor Name<a name="Experimental_Factor_Name"></a></dt>
+  <dd>A user-defined name for each experimental factor studied by the experiment. These experimental factors represent the variables within the investigation (e.g. growth condition, genotype, organism part). The actual values of these variables will be listed in the SDRF file, in “Factor Value[&lt;factor name&gt;]” columns. GEA copies the Factor Value names in SDRF to IDF.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt>Experimental Factor Type<a name="Experimental_Factor_Type"></a></dt>
+  <dd>A term describing the type of each experimental factor. GEA uses the Experimental Factor Name for the Experimental Factor Type.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Person_Last_Name">Person Last Name</a><a name="Person_Last_Name"></a></dt>
+  <dd>The last name of each person associated with the experiment.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Person_First_Name">Person First Name</a><a name="Person_First_Name"></a></dt>
+  <dd>The first name of each person associated with the experiment.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Person_Mid_Initials">Person Mid Initials</a><a name="Person_Mid_Initials"></a></dt>
+  <dd>
+    <p></p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Person_Affiliation">Person Affiliation</a><a name="Person_Affiliation"></a></dt>
+  <dd>The organization affiliation for each person associated with the experiment.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Person_Roles">Person Roles</a><a name="Person_Roles"></a></dt>
+  <dd>The role(s) performed by each person. GEA only permits “submitter” role.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Public_Release_Date">Public Release Date</a><a name="Public_Release_Date"></a></dt>
+  <dd>The date on which the experimental data was released. This tag can only have one value.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#PubMed_ID">PubMed ID</a><a name="PubMed_ID"></a></dt>
+  <dd>The PubMed IDs of the publication(s) associated with this investigation (where available).</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Publication_DOI">Publication DOI</a><a name="Publication_DOI"></a></dt>
+  <dd>A Digital Object Identifier (DOI) for each publication (where available). When PubMed ID and DOI are available, use PubMed ID.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Experiment_Description">Experiment Description</a><a name="Experiment_Description"></a></dt>
+  <dd>A short paragraph describing the experiment as free-text. This tag can only have one value. The text should clearly explain what you did in your experiment - this will help the curation team to check and process your MAGE-TAB document.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt>Protocol Name<a name="Protocol_Name"></a></dt>
+  <dd>The names of the protocols used within the MAGE-TAB document. These will be referenced in the SDRF in the “Protocol REF” columns by procotol’s temporary IDs (e.g. ESUB000350_Protocol_1) or accessions (e.g. P-GEAD-100). GEA does not support protocol reference across experiments.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt>Protocol Type<a name="Protocol_Type"></a></dt>
+  <dd>The type of the protocol. Pre-defined types are as follows. <a href="https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=961166619">Necessary protocol sets</a> are different between Microarray and Sequencing experiments.
+
+    <ul>
+      <li>array scanning and feature extraction protocol</li>
+      <li>conversion protocol</li>
+      <li>dissection protocol</li>
+      <li>growth protocol</li>
+      <li>high throughput sequence alignment protocol</li>
+      <li>normalization data transformation protocol</li>
+      <li>nucleic acid extraction protocol</li>
+      <li>nucleic acid hybridization to array protocol</li>
+      <li>nucleic acid labeling protocol</li>
+      <li>nucleic acid library construction protocol</li>
+      <li>nucleic acid sequencing protocol</li>
+      <li>sample collection protocol</li>
+      <li>treatment protocol</li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Protocol_Description">Protocol Description</a><a name="Protocol_Description"></a></dt>
+  <dd>A free-text description of the protocol. This text is included in a single tab-delimited field.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#SDRF_File">SDRF File</a><a name="SDRF_File"></a></dt>
+  <dd>The name(s) of the SDRF file(s) accompanying this IDF file. GEA automatically embeds the value.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Comment_idf">Comment[&lt;user-defined tag&gt;]</a><a name="Comment_idf"></a></dt>
+  <dd>A user- or archive-defined value which is associated with the investigation. Following Comment tags are used by GEA.
+
+    <ul>
+      <li>Comment[GEAAccession]</li>
+      <li>Comment[AEExperimentType]</li>
+      <li>Comment[Number of channel]</li>
+      <li>Comment[Array Design REF]</li>
+      <li>Comment[BioProject]</li>
+      <li>Comment[Public Release Date]</li>
+      <li>Comment[Last Update Date]</li>
+      <li>Comment[AdditionalFile:TXT]</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="sdrf-">SDRF <a name="sdrf"></a></h2>
+
+<p>The SDRF (Sample and Data Relationship Format) describes the sample characteristics and the relationship between samples, arrays, data files etc. The information in the SDRF is organized so that it follows the natural flow of a functional genomics experiment. It begins with describing your samples and finishes with the names of the data files generated from the analysis of the experiment results. For single-channel microarray data one row in the SDRF is equal to one hybridization. For two-channel microarray data one row is equal to one channel. For sequencing submissions you generally create one row per raw file (Run) including paired sequencing.</p>
+
+<a class="group1" href="/assets/images/magetab/sdrf.jpg" title="SDRF overall structure">
+  <figure class="image">
+    <img src="/assets/images/magetab/sdrf.jpg" alt="SDRF overall structure" class="w450">
+    <figcaption>SDRF overall structure</figcaption>
+  </figure>
+</a>
+
+<h3 id="sdrf-sections-">SDRF sections <a name="sdrf_sections"></a></h3>
+
+<dl>
+  <dt><a href="#Protocols_section">Protocols</a><a name="Protocols_section"></a></dt>
+  <dd>In most cases, each treatment within an experiment will be represented simply by a <a href="#Protocol_REF">Protocol REF</a> column containing references to the <a href="#Protocol_Name">Protocol Names</a> defined in the IDF.
+
+    <p>In un-registered submission, protocols in IDF are assigned temporal IDs (e.g., ESUB000001_Protocol_1) and are referenced by SDRF by these IDs. After accession numbers are assigned, these protocols are referenced by their accession numbers (P-GEAD-n).</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td><a href="#Protocol_Name">Protocol Name</a></td>
+          <td>ESUB000500_Protocol_1</td>
+          <td>ESUB000500_Protocol_2</td>
+        </tr>
+        <tr>
+          <td><a href="#Protocol_Type">Protocol Type</a></td>
+          <td>nucleic acid extraction protocol</td>
+          <td>labelling protocol</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>The SDRF describing the use of these protocols might look as follows:</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td><a href="#Protocol_REF">Protocol REF</a></td>
+          <td><a href="#Protocol_REF">Protocol REF</a></td>
+        </tr>
+        <tr>
+          <td>OSUB000500_Protocol_2</td>
+          <td>OSUB000500_Protocol_3</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Sources_section">Sources</a><a name="Sources_section"></a></dt>
+  <dd>Sources are the starting material for the experiment. The section starts with a <a href="#Source_Name">Source Name</a> column, which will typically be followed by several <a href="#Characteristics">Characteristics</a> columns.
+
+    <div class="attention red">
+
+      <p>In the GEA submission system, a sample_name of relevant BioSample is commonly used for Names of Source, Extract, Labeled Extract and Assay columns.</p>
+
+    </div>
+
+    <table>
+      <tbody>
+        <tr>
+          <td><a href="#Source_Name">Source Name</a></td>
+          <td><a href="#Characteristics">Characteristics[organism]</a></td>
+          <td><a href="#Characteristics">Characteristics[ecotype]</a></td>
+        </tr>
+        <tr>
+          <td>Arabidopsis control for heat stress_rep 1</td>
+          <td>Arabidopsis thaliana</td>
+          <td>Col-0</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Additional columns which may be used to annotate Sources are: <a href="#Provider">Provider</a> and <a href="#Comment_sdrf">Comment</a>.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Extracts_section">Extracts</a><a name="Extracts_section"></a></dt>
+  <dd>Extracts refer to the extracted nucleic acid used in the experiment.
+
+    <table>
+      <tbody>
+        <tr>
+          <td><a href="#Source_Name">Source Name</a></td>
+          <td><a href="#Protocol_REF">Protocol REF</a></td>
+          <td><a href="#Extract_Name">Extract Name</a></td>
+          <td><a href="#Material_Type">Material Type</a></td>
+        </tr>
+        <tr>
+          <td>Arabidopsis control for heat stress_rep 1</td>
+          <td>OSUB000500_Protocol_2</td>
+          <td>Arabidopsis control for heat stress_rep 1</td>
+          <td>total RNA</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Columns which may be used to annotate Extracts are: <a href="#Characteristics">Characteristics[]</a>, <a href="#Material_Type">Material Type</a> and <a href="#Comment_sdrf">Comment</a>.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt>Labeled Extracts<a name="Labeled_Extracts_section"></a></dt>
+  <dd>The Labeled Extracts in an experiment are those materials which have been conjugated to a label, prior to hybridization on an array. Typically there is only one labeled extract step. For microarray experiment submission to GEA, a <a href="#Label">Label</a> column must be included with the <a href="#Labeled_Extract_Name">Labeled Extract Name</a> column to indicate which label (and therefore scanner channel) corresponds to which sample:
+
+    <table>
+      <tbody>
+        <tr>
+          <td><a href="#Extract_Name">Extract Name</a></td>
+          <td><a href="#Material_Type">Material Type</a></td>
+          <td><a href="#Protocol_REF">Protocol REF</a></td>
+          <td><a href="#Labeled_Extract_Name">Labeled Extract Name</a></td>
+          <td><a href="#Label">Label</a></td>
+        </tr>
+        <tr>
+          <td>Arabidopsis control for heat stress_rep 1</td>
+          <td>total RNA</td>
+          <td>OSUB000500_Protocol_3</td>
+          <td>Arabidopsis control for heat stress_rep 1</td>
+          <td>biotin</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Columns which may be used to annotate Labeled Extracts are: <a href="#Characteristics">Characteristics[]</a>, <a href="#Material_Type">Material Type</a> and <a href="#Comment_sdrf">Comment</a>.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt>Assays<a name="Assays_section"></a></dt>
+  <dd>The hybridization of labeled extract to an array or the sequencing of a library is a key step in the SDRF, since it connects the “materials” section of the SDRF to the “data” section. For an array submission to GEA, an <a href="#Array_Design_REF">Array Design REF</a> column must be included with the <a href="#Assay_Name">Assay Name</a> column, indicating which array design was used
+
+    <table>
+      <tbody>
+        <tr>
+          <td><a href="#Labeled_Extract_Name">Labeled Extract Name</a></td>
+          <td><a href="#Label">Label</a></td>
+          <td><a href="#Assay_Name">Assay Name</a></td>
+          <td><a href="#Technology_Type">Technology Type</a></td>
+          <td><a href="#Array_Design_REF">Array Design REF</a></td>
+        </tr>
+        <tr>
+          <td>Arabidopsis control for heat stress_rep 1</td>
+          <td>biotin</td>
+          <td>Arabidopsis control for heat stress_rep 1</td>
+          <td>array assay</td>
+          <td>A-AFFY-2</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>It is also possible to use <a href="#Comment_sdrf">Comment</a> columns to annotate both “Assay Name” columns. Note that the values in Assay Name columns may be used in <a href="/gea/matrix-e.html">Data Matrix</a> files to link columns of data to individual assays.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Raw_Data_Files_section">Raw Data Files</a><a name="Raw_Data_Files_section"></a></dt>
+  <dd>The raw data files generated by an investigation should be listed in an <a href="#Array_Data_File">Array Data File</a> column following the <a href="#Assay_Name">Assay Name</a> column.
+
+    <table>
+      <tbody>
+        <tr>
+          <td><a href="#Assay_Name">Assay Name</a></td>
+          <td><a href="#Technology_Type">Technology Type</a></td>
+          <td><a href="#Array_Design_REF">Array Design REF</a></td>
+          <td><a href="#Array_Data_File">Array Data File</a></td>
+        </tr>
+        <tr>
+          <td>Arabidopsis control for heat stress_rep 1</td>
+          <td>array assay</td>
+          <td>A-AFFY-2</td>
+          <td>Arabidopsis_control_rep_1.CEL</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><a href="#Comment_sdrf">Comment</a> columns can be used to add information relating to the raw files.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Processed_Data_Files_section">Processed Data Files</a><a name="Processed_Data_Files_section"></a></dt>
+  <dd>The processed data files which have been derived from the raw data should be listed in a <a href="#Derived_Array_Data_File">Derived Array Data File</a> column for both microarray- and sequencing-based experiments. Note that this generally only applies to processed data arranged into one file per assay. If your files contain processed data columns for more than one assay, you should reformat these into the <a href="/gea/matrix-e.html">Data Matrix format</a> and include them instead in a <a href="#Derived_Array_Data_Matrix_File">Derived Array Data Matrix File</a> column.
+
+    <table>
+      <tbody>
+        <tr>
+          <td><a href="#Assay_Name">Assay Name</a></td>
+          <td><a href="#Technology_Type">Technology Type</a></td>
+          <td><a href="#Array_Design_REF">Array Design REF</a></td>
+          <td><a href="#Array_Data_File">Array Data File</a></td>
+          <td><a href="#Derived_Array_Data_File">Derived Array Data File</a></td>
+        </tr>
+        <tr>
+          <td>Arabidopsis control for heat stress_rep 1</td>
+          <td>array assay</td>
+          <td>A-AFFY-2</td>
+          <td>Arabidopsis_control_rep_1.CEL</td>
+          <td>Arabidopsis_control_rep_1.processed.txt</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Factor_Values_section">Factor Values</a><a name="Factor_Values_section"></a></dt>
+  <dd>The factor values for an experiment are the values of the variables under investigation. For example, an experiment studying the effect of different temparature (heat stress) on a cell culture would have “temparature” as an experimental variable with “Unit” column to indicate the unit.
+
+    <table>
+      <tbody>
+        <tr>
+          <td><a href="#Source_Name">Source Name</a></td>
+          <td><a href="#Comment_sdrf">Comment[description]</a></td>
+          <td><a href="#Assay_Name">Assay Name</a></td>
+          <td><a href="#Factor_Value">Factor Value[temparature]</a></td>
+          <td><a href="#Unit">Unit[temperature unit]</a></td>
+        </tr>
+        <tr>
+          <td>Arabidopsis control for heat stress rep 1</td>
+          <td>Arabidopsis control for heat stress, biological replicate 1</td>
+          <td>Arabidopsis control for heat stress rep 1</td>
+          <td>22</td>
+          <td>degree_C</td>
+        </tr>
+        <tr>
+          <td>Arabidopsis heat stress rep 1</td>
+          <td>Arabidopsis heat stress, biological replicate 1</td>
+          <td>Arabidopsis heat stress rep 1</td>
+          <td>37</td>
+          <td>degree_C</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Note that there is inevitably duplication between factor values and values entered elsewhere in the SDRF. It is particularly common to have the “Factor Value” column duplicate either a <a href="#Characteristics">Characteristics[]</a> column.</p>
+
+    <p>Factor Value columns must be placed at the end (i.e., the far right) of the SDRF.</p>
+
+    <p>GEA lists the variable in the IDF as “Experimental Factor Name” with associated Type (usually same with the name).</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td><a href="#Experimental_Factor_Name">Experimental Factor Name</a></td>
+          <td>temperature</td>
+        </tr>
+        <tr>
+          <td><a href="#Experimental_Factor_Type">Experimental Factor Type</a></td>
+          <td>temperature</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<h3 id="all-valid-sdrf-column-headings-">All valid SDRF column headings <a name="SDRF_headings"></a></h3>
+
+<dl>
+  <dt><a href="#Source_Name">Source Name</a><a name="Source_Name"></a></dt>
+  <dd>Used as an identifier within the MAGE-TAB document. This column contains user-defined names (by default, a sample name of corresponding BioSample is used) for the <a href="#Sources_section">Source</a> materials. The following columns can be used to annotate “Source Name” columns:
+
+    <ul>
+      <li><a href="#Characteristics">Characteristics[]</a></li>
+      <li><a href="#Provider">Provider</a></li>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Sample_Name">Sample Name</a><a name="Sample_Name"></a></dt>
+  <dd>Used as an identifier within the MAGE-TAB document. This column contains user-defined names (by default, a sample name of corresponding BioSample is used) for each <a href="#Sources_section">Sample</a> material. The following columns can be used to annotate “Sample Name” columns:
+
+    <ul>
+      <li><a href="#Characteristics">Characteristics[]</a></li>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Extract_Name">Extract Name</a><a name="Extract_Name"></a></dt>
+  <dd>Used as an identifier within the MAGE-TAB document. This column contains user-defined names (by default, a sample name of corresponding BioSample is used) for each <a href="#Extracts_section">Extract</a> material. The following columns can be used to annotate “Extract Name” columns:
+
+    <ul>
+      <li><a href="#Material_Type">Material Type</a></li>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Labeled_Extract_Name">Labeled Extract Name</a><a name="Labeled_Extract_Name"></a></dt>
+  <dd>Used as an identifier within the MAGE-TAB document. This column contains user-defined names (by default, a sample name of corresponding BioSample is used) for each <a href="#Labeled_Extracts_section">Labeled Extract</a> material. The following columns can be used to annotate “Labeled Extract” Name columns:
+
+    <ul>
+      <li><a href="#Label">Label</a> (required for array submissions)</li>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Assay_Name">Assay Name</a><a name="Assay_Name"></a></dt>
+  <dd>Used as an identifier within the MAGE-TAB document. This column contains user-defined names (by default, a sample name of corresponding BioSample is used) for each <a href="#Assays_section">Assay</a>. The following columns can be used to annotate “Assay Name” columns:
+
+    <ul>
+      <li><a href="#Array_Design_REF">Array Design REF</a> (required for array submissions)</li>
+      <li><a href="#Technology_Type">Technology Type</a> (“array assay” for microarray and “sequencing assay” for sequencing experiment)</li>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+
+    <p>All “Assay Name” columns must be followed by a “Technology Type” column.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Scan_Name">Scan Name</a><a name="Scan_Name"></a></dt>
+  <dd>Used as an identifier within the MAGE-TAB document. This optional column contains user-defined names for each <a href="#Assays_section">Scan</a> event. The following columns can be used to annotate “Scan Name” columns:
+
+    <ul>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Normalization_Name">Normalization Name</a><a name="Normalization_Name"></a></dt>
+  <dd>Used as an identifier within the MAGE-TAB document. This optional column contains user-defined names for each <a href="#Processed_Data_Files_section">Normalization</a> event. The following columns can be used to annotate “Normalization Name” columns:
+
+    <ul>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Array_Data_File">Array Data File</a><a name="Array_Data_File"></a></dt>
+  <dd>This column contains a list of <a href="#Raw_Data_Files_section">raw data files</a>, one for each row of the SDRF file, linking these data files to their respective assays. The following columns can be used to annotate “Array Data File” columns:
+
+    <ul>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Derived_Array_Data_File">Derived Array Data File</a><a name="Derived_Array_Data_File"></a></dt>
+  <dd>This column contains a list of microarray and sequencing <a href="#Processed_Data_Files_section">processed data files</a>, one for each row of the SDRF file, linking these data files to their respective assays. The following columns can be used to annotate “Derived Array Data File” columns:
+
+    <ul>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Array_Data_Matrix_File">Array Data Matrix File</a><a name="Array_Data_Matrix_File"></a></dt>
+  <dd>This column contains a list of microarray and sequencing raw data matrix files, where data from multiple assays is stored in a single file, and the data mapped to each assay via the <a href="/gea/matrix-e.html">Data Matrix</a> format itself. The following columns can be used to annotate “Array Data Matrix File” columns:
+
+    <ul>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Derived_Array_Data_Matrix_File">Derived Array Data Matrix File</a><a name="Derived_Array_Data_Matrix_File"></a></dt>
+  <dd>This column contains a list of microarray and sequencing processed data matrix files, where data from multiple assays is stored in a single file, and the data mapped to each assay (or scan, or normalization) via the <a href="/gea/matrix-e.html">Data Matrix</a> format itself. The following columns can be used to annotate “Derived Array Data Matrix File” columns:
+
+    <ul>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Array_Design_REF">Array Design REF</a><a name="Array_Design_REF"></a></dt>
+  <dd>This column contains references to the array design used for each assay. For GEA submissions this should be an ArrayExpress/GEA accession number, e.g. “A-AFFY-2”. An array design accession can be found at <a href="https://www.ebi.ac.uk/arrayexpress/arrays/browse.html">ArrayExpress array design search page</a>. The following columns can be used to annotate “Array Design REF” columns:
+
+    <ul>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Protocol_REF">Protocol REF</a><a name="Protocol_REF"></a></dt>
+  <dd>This column contains references to <a href="#Protocol_Name">Protocol Names</a> defined in the IDF. Before registration, a protocol is referenced by its temporal ID like “ESUB000500_Protocol_1”. After registration, this ID is replaced by a protocol accession number like “P-GEAD-100”. The following columns can be used to annotate “Protocol REF” columns:
+
+    <ul>
+      <li><a href="#Parameter_Value">Parameter Value[]</a></li>
+      <li><a href="#Performer">Performer</a></li>
+      <li><a href="#Date">Date</a></li>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Characteristics">Characteristics[&lt;category term&gt;]</a><a name="Characteristics"></a></dt>
+  <dd>Controlled vocabulary term or measurement. Used as an attribute column following <a href="#Source_Name">Source Name</a>, <a href="#Sample_Name">Sample Name</a>, <a href="#Extract_Name">Extract Name</a>, or <a href="#Labeled_Extract_Name">Labeled Extract Name</a>. This column contains terms describing each material according to the characteristics category indicated in the column header. For example, a column headed “Characteristics[organism]” would contain organism names, for example “Homo sapiens”. These terms may be user-defined (the default), from an external ontology source (<a href="https://www.ncbi.nlm.nih.gov/taxonomy">NCBI Taxonomy</a> for organism name), or a measurement (indicated using a Unit[] column).
+
+    <ul>
+      <li><a href="#Term_Source_REF">Term Source REF</a></li>
+      <li><a href="#Unit">Unit[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Provider">Provider</a><a name="Provider"></a></dt>
+  <dd>Used as an attribute column following <a href="#Source_Name">Source Name</a>. A free-text string identifying the organization or person from which the Source was obtained.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Material_Type">Material Type</a><a name="Material_Type"></a></dt>
+  <dd><a href="https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=986287710">Controlled vocabulary term</a>. Used as an attribute column following <a href="#Source_Name">Source Name</a>, <a href="#Sample_Name">Sample Name</a>, <a href="#Extract_Name">Extract Name</a>, or <a href="#Labeled_Extract_Name">Labeled Extract Name</a>. This column contains the following controlled terms describing the type of each material.
+
+    <ul>
+      <li>total RNA</li>
+      <li>polyA RNA</li>
+      <li>cytoplasmic RNA</li>
+      <li>nuclear RNA</li>
+      <li>genomic DNA</li>
+      <li>protein</li>
+      <li>other</li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Label">Label</a><a name="Label"></a></dt>
+  <dd>Controlled vocabulary term. Used as an attribute column following <a href="#Labeled_Extract_Name">Labeled Extract Name</a>. The label compound which is conjugated to an Extract to create the Labeled Extract. Examples: Cy3, Cy5, biotin, alexa_546. The following columns can be used to annotate Label columns:
+
+    <ul>
+      <li><a href="#Term_Source_REF">Term Source REF</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Technology_Type">Technology Type</a><a name="Technology_Type"></a></dt>
+  <dd><a href="https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=156878890">Controlled vocabulary term</a>. Used as an attribute column following <a href="#Assay_Name">Assay Name</a>. GEA auto-fills “array assay” for array submission and “sequencing assay” for sequencing submission. The following columns can be used to annotate Technology Type columns:
+
+    <ul>
+      <li><a href="#Term_Source_REF">Term Source REF</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Factor_Value">Factor Value[&lt;experiment factor name&gt;]</a><a name="Factor_Value"></a></dt>
+  <dd>Controlled vocabulary term or measurement. This column contains terms describing the experimental factor values (i.e., variables) for each row of the SDRF. The Experimental Factor Name to which it pertains should be indicated in the column heading.
+
+    <p>Example SDRF:</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td><a href="#Factor_Value">Factor Value[tissue]</a></td>
+        </tr>
+        <tr>
+          <td>gall bladder</td>
+        </tr>
+        <tr>
+          <td>kidney</td>
+        </tr>
+        <tr>
+          <td>liver</td>
+        </tr>
+        <tr>
+          <td>intestine</td>
+        </tr>
+        <tr>
+          <td>pancreas</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>In the example above, the column terms would be treated as describing tissues. For more precise control over the treatment of these terms, the optional form “Factor Value[]()” is available, e.g. “Factor Value[growthconditionEF](Nutrients)”.</p>
+
+    <p>When a combination of more than one variables are studied, factor values are described by more than one columns. Example SDRF:</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td><a href="#Factor_Value">Factor Value[compound]</a></td>
+          <td><a href="#Factor_Value">Factor Value[dose]</a></td>
+          <td><a href="#Unit">Unit[molar mass unit]</a></td>
+        </tr>
+        <tr>
+          <td>none</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>potassium cyanide</td>
+          <td>25</td>
+          <td>micromolar</td>
+        </tr>
+        <tr>
+          <td>potassium cyanide</td>
+          <td>35</td>
+          <td>micromolar</td>
+        </tr>
+        <tr>
+          <td>potassium cyanide</td>
+          <td>50</td>
+          <td>micromolar</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<p>The factor name shoud be defined in accompanying IDF (GEA auto-fills the factor name in SDRF to IDF):</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="#Experimental_Factor_Name">Experimental Factor Name</a></td>
+      <td>tissue</td>
+    </tr>
+    <tr>
+      <td><a href="#Experimental_Factor_Type">Experimental Factor Type</a></td>
+      <td>tissue</td>
+    </tr>
+  </tbody>
+</table>
+
+<dl>
+  <dt><a href="#Performer">Performer</a><a name="Performer"></a></dt>
+  <dd>Used as an attribute column following <a href="#Protocol_REF">Protocol REF</a>. The name of the researcher or center where the protocol was carried out.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Date">Date</a><a name="Date"></a></dt>
+  <dd>Used as an attribute column following <a href="#Protocol_REF">Protocol REF</a>. The date (and time, where available) upon which the protocol was performed, in the following format: YYYY-MM-DD.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Parameter_Value">Parameter Value[&lt;protocol parameter&gt;]</a><a name="Parameter_Value"></a></dt>
+  <dd>Used as an attribute column following <a href="#Protocol_REF">Protocol REF</a> columns. This column contains values for the protocol parameters referenced in the column header. The following columns can be used to annotate Parameter Value[] columns:
+
+    <ul>
+      <li><a href="#Unit">Unit[]</a></li>
+      <li><a href="#Term_Source_REF">Term Source REF</a></li>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+
+    <p>For example, if a Protocol Name “Array Hybridization” is defined in the accompanying IDF, with Protocol Parameters “hyb temp”, the following would be valid:</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td><a href="#Protocol_REF">Protocol REF</a></td>
+          <td><a href="#Parameter_Value">Parameter Value[hyb temp]</a></td>
+          <td><a href="#Unit">Unit[temperature unit]</a></td>
+        </tr>
+        <tr>
+          <td>Array Hybridization</td>
+          <td>55</td>
+          <td>degree celsius</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Unit">Unit[&lt;unit category&gt;]</a><a name="Unit"></a></dt>
+  <dd>Controlled vocabulary term. Used as an attribute column following <a href="#Characteristics">Characteristics[]</a>, <a href="#Factor_Value">Factor Value[]</a> or <a href="#Parameter_Value">Parameter Value[]</a>. This column contains terms describing the unit(s) to be applied to the values in the preceding column. The type of unit is included in the column heading, e.g. “Unit[volume unit]”. These unit types should correspond to <a href="http://purl.obolibrary.org/obo/UO_0000000">Unit</a> subclasses from <a href="/efo/">EFO</a>. The following columns can be used to annotate Unit[] columns:
+
+    <ul>
+      <li><a href="#Term_Source_REF">Term Source REF</a></li>
+    </ul>
+
+    <p>The Term Source REF column in this case would point to the ontology from which the Unit terms are taken.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Description">Description</a><a name="Description"></a></dt>
+  <dd>Used as an attribute column following <a href="#Source_Name">Source Name</a>, <a href="#Sample_Name">Sample Name</a>, <a href="#Extract_Name">Extract Name</a>, or <a href="#Labeled_Extract_Name">Labeled Extract Name</a>. A free-text description to be attached to the corresponding material. To be used sparingly, if at all - most annotations should be provided using controlled vocabulary terms, using <a href="#Characteristics">Characteristics[]</a> columns.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Term_Source_REF">Term Source REF</a><a name="Term_Source_REF"></a></dt>
+  <dd>Used as an attribute column following any controlled vocabulary column (e.g., <a href="#Characteristics">Characteristics[]</a>), or column allowing reference of external entities (e.g., <a href="#Protocol_REF">Protocol REF</a>). This column contains references to ontology or database Term Sources defined in the IDF, and from which the values in the previous column were taken. The following columns can be used to annotate Term Source REF columns. <span class="red">At the point of submission, GEA does not require ontology usage as ArrayExpress</span>.
+
+    <ul>
+      <li><a href="#Term_Accession_Number">Term Accession Number</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Term_Accession_Number">Term Accession Number</a><a name="Term_Accession_Number"></a></dt>
+  <dd>Used as an attribute column following <a href="#Term_Source_REF">Term Source REF</a> columns. This column contains the accession numbers from the term source used to identify the ontology or database terms in question. For example:
+
+    <table>
+      <tbody>
+        <tr>
+          <td><a href="#Source_Name">Source Name</a></td>
+          <td><a href="#Characteristics">Characteristics[disease]</a></td>
+          <td><a href="#Term_Source_REF">Term Source REF</a></td>
+          <td><a href="#Term_Accession_Number">Term Accession Number</a></td>
+        </tr>
+        <tr>
+          <td>Sample 1</td>
+          <td>acute lymphoblastic leukemia</td>
+          <td>EFO</td>
+          <td>EFO_0000220</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>(This example relies on the <a href="https://www.ebi.ac.uk/efo/">EFO</a> Term Source having been pre-defined in the <a href="/gea/metadata-e.html#idf">IDF</a> accompanying the SDRF.) <span class="red">At the point of submission, GEA does not require ontology usage as ArrayExpress</span>.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Comment_sdrf">Comment[&lt;comment name&gt;]</a><a name="Comment_sdrf"></a></dt>
+  <dd>This column can be used to annotate the main graph node and edge columns listed above. It is included as an extensibility mechanism, and should not generally be used to encode meaningful biological annotation. The column heading should contain a name for the type ofvalues included in the column.</dd>
+</dl>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

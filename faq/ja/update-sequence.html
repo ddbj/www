@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>配列を更新したい</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title -small">
+      <h1 class="title">配列を更新したい</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/faq/ja/">よくある質問</a>
+            
+          </li>
+          <li>
+            <a>配列を更新したい</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<main id="SimpleView">
+  <div class="inner">
+    <article class="md-content">
+      <p>依頼者のお名前、ご所属を明記の上、以下の項目について <a href="/contact-ddbj.html#to-ddbj">DDBJへのお問い合わせ</a> よりお知らせください。nn<br />宛先: <img src="/assets/images/news/ad_updt.gif" alt="ddbjupdt#64;ddbj.nig.ac.jp" title="ad_updt" width="180" height="19" class="alignnone size-full wp-image-1298" /></p>
+<ul>
+  <li>アクセッション番号:</li>
+  <li>変更箇所:</li>
+  <li>更新後の総塩基数:</li>
+  <li>配列の更新に伴う Feature の塩基番号など、変更項目の詳細:</li>
+  <li>更新後の全長配列: 以下のフォーマットでお願いします。</li>
+</ul>
+<pre class="code">&gt;AB******   &lt;--- 当該データのアクセッション番号<br />aaaaaaaaaattttttttttggggggggggccccccccccaaaaaaaaaatttttttttt<br />ggggggggggccccccccccaaaaaaaaaattttttttttggggggggggcccccccccc<br />//<br />&gt;AB******<br />aaaaaaaaaattttttttttggggggggggccccccccccaaaaaaaaaatttttttttt<br />ggggggggggccccccccccaaaaaaaaaattttttttttggggggggggcccccccccc<br />aaaaaaaaaat<br />//</pre>
+<ul>
+  <li>ヘッダ行; リダイレクション "&gt;" のあとにスペースなしでアクセッション番号。</li>
+  <li>塩基配列; 半角６０文字/行の fasta 類似フォーマットです。</li>
+  <li>終了フラグ; "//" を入力してください。</li>
+</ul>
+
+    </article>
+  </div>
+</main>
+
+  
+
+</body>
+</html>

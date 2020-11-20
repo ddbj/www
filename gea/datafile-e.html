@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accepted Data File Formats</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">Accepted Data File Formats</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/gea">gea</a>
+          </li>
+          <li>
+            <a href="">Accepted Data File Formats</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/gea/index-e.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/gea/overview-e.html">Submission Overview</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/gea/submit-array-e.html">Submit microarray experiment</a>
+        </li>
+        
+        <li>
+          <a href="/gea/submit-sequence-e.html">Submit sequencing experiment</a>
+        </li>
+        
+        <li>
+          <a href="/gea/metadata-e.html">Metadata</a>
+        </li>
+        
+        <li>
+          <a href="/gea/datafile-e.html">Data File</a>
+        </li>
+        
+        <li>
+          <a href="/gea/validation-e.html">Validation</a>
+        </li>
+        
+        <li>
+          <a href="/gea/single-cell-e.html">Single-cell submission guide</a>
+        </li>
+        
+        <li>
+          <a href="/gea/example-e.html">Example</a>
+        </li>
+        
+        <li>
+          <a href="/gea/adf-e.html">Array Design</a>
+        </li>
+        
+        <li>
+          <a href="/gea/matrix-e.html">Data matrix</a>
+        </li>
+        
+        <li>
+          <a href="/gea/reviewer-access-e.html">Reviewer Access</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/en/index-e.html">FAQ</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="http://aoe.dbcls.jp/">Search (AOE)</a>
+      
+      <ul>
+        
+        <li>
+          <a href="http://refex.dbcls.jp/index.php?lang=en">RefEx</a>
+        </li>
+        
+        <li>
+          <a href="https://www.ebi.ac.uk/arrayexpress/browse.html">Search (ArrayExpress)</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/gea">Downloads</a>
+      
+    </li>
+    
+    <li class="">
+      <a href="/gea/about-gea-e.html">About GEA</a>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="important-notes-on-file-preparation-">Important notes on file preparation: <a name="notes"></a></h2>
+
+<ol>
+  <li>Submit raw or raw matrix file(s) for every sample/hybridization of
+your experiment.</li>
+  <li>Make sure the file names are constructed only from alphanumerals
+[A-Z,a-z,0-9], underscores [_], hyphens [-] and dots [.],
+with no whitespaces, brackets, other punctuations or symbols.</li>
+  <li>Any spreadsheet/matrix file should be saved in tab-delimited text
+(*.txt) format and not Excel format (*.xls, *.xlsx)</li>
+</ol>
+
+<h2 id="microarray-file-formats-">Microarray file formats <a name="array_data"></a></h2>
+
+<h3 id="raw-data-file-formats-">Raw data file formats <a name="ar-raw"></a></h3>
+
+<p><strong>Per assay raw file (recommended):</strong></p>
+
+<p>The “native” files generated by the microarray scanner software. Make
+sure you do not change/edit the native files in any way, and submit one
+raw file per hybridization assay. One assay can consist of just one
+channel, as in Affymetrix experiments, or two channels, as in spotted
+arrays often with red and green channels from two different
+dyes/fluorophores.</p>
+
+<p>Commercial microarray manufacturers have developed different raw data
+file formats over the years. If you are unsure about whether your raw
+files are in an accepted format, please check the list below.</p>
+
+<p><strong>Raw Matrix (not recommended):</strong></p>
+
+<p>A raw file in tab-delimited text (.txt) format, that contains data from
+more than one hybridization assay (probes in rows and assays in
+columns). The format requirements are strict (except for Illumina
+GenomeStudio data files). See <a href="/gea/matrix-e.html">matrix guidelines and
+examples</a>.</p>
+
+<h3 id="accepted-formats-by-platform-">Accepted formats by platform <a name="ar_raw"></a></h3>
+
+<p>The raw data file platform is recognized by using column headings in the
+file’s header:</p>
+
+<ul>
+  <li>Common platforms:
+    <ul>
+      <li><a href="#affymetrix">Affymetrix</a></li>
+      <li><a href="#agilent">Agilent</a></li>
+      <li><a href="#illumina">Illumina</a></li>
+      <li><a href="#genepix">GenePix</a></li>
+      <li><a href="#nimblescan">NimbleScan</a></li>
+    </ul>
+  </li>
+  <li>Others:
+    <ul>
+      <li><a href="#scanalyze">ScanAlyze</a></li>
+      <li><a href="#scanarray-quantarry">ScanArray</a></li>
+      <li><a href="#scanarray-quantarry">QuantArray</a></li>
+      <li><a href="#arrayvision">Arrayvision</a></li>
+      <li><a href="#spotfinder">Spotfinder</a></li>
+      <li><a href="#bluefuse">BlueFuse</a></li>
+      <li><a href="#ucsfspot">UCSF Spot</a></li>
+      <li><a href="#appliedbiosystems">Applied Biosystems</a></li>
+      <li><a href="#codelink">CodeLink</a></li>
+      <li><a href="#imagene">Imagene</a></li>
+      <li><a href="#csirospot">CSIRO Spot</a></li>
+      <li><a href="#generic">Generic (for spotted arrays, non-platform specific)</a></li>
+    </ul>
+  </li>
+</ul>
+
+<dl>
+  <dt>Affymetrix <a name="affymetrix"></a></dt>
+  <dd>Our system recognizes .CEL and .EXP files using both the old GDAC
+formats and the newer GCOS/XDA formats.</dd>
+  <dt>Agilent <a name="agilent"></a></dt>
+  <dd>A file containing these headings is recognized as Agilent format
+file:</dd>
+</dl>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Row</td>
+      <td>Col</td>
+      <td>PositionX</td>
+      <td>PositionY</td>
+    </tr>
+  </tbody>
+</table>
+
+<dl>
+  <dt>Illumina <a name="illumina"></a></dt>
+  <dd>Illumina raw data files are usually either in plain text or binary
+format. Plain text files are generated by the <a href="https://www.illumina.com/techniques/microarrays/array-data-analysis-experimental-design/genomestudio.html">Illumina GenomeStudio
+software</a>.
+The binary “IDAT” files (stands for “intensity data file”) are
+generated by the scanner and can be parsed using R/BioConductor
+packages such as
+<a href="http://www.bioconductor.org/packages/release/bioc/html/illuminaio.html">illuminaio</a>).
+IDAT is the preferred file format, as it is a binary format,
+containing all information required to analyse the data. In
+contrast, plain-text files can be missing information such as which
+are the control probes; this is sometimes provided in a separate
+file, but not always, and heterogeneity in raw data file formats
+makes systematic analysis of data difficult. Another disadvantage of
+plain-text files is that they are susceptible to human-introduced
+errors, as it is easy for someone to open the file in a text editor
+or spreadsheet program and accidentally change its content. If
+you’re submitting a GenomeStudio text file, below is an example of
+the expected column headings:</dd>
+</dl>
+
+<table>
+  <tbody>
+    <tr>
+      <td>PROBE_ID</td>
+      <td>Assay_Name_1.QT1</td>
+      <td>Assay_Name_1.QT2</td>
+      <td>Assay_Name_2.QT1</td>
+      <td>Assay_Name_2.QT2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>PROBE_IDs are always in the format of “ILMN_123456”. QT stands for
+quantitation type, i.e. the type of measurement recorded in the
+column, e.g. AVGSignal. You can have as many quantitation types as
+required. Order the columns by sample names, then by quantitation
+types.</p>
+
+<dl>
+  <dt>GenePix <a name="genepix"></a></dt>
+  <dd>GenePix format files (usually with file extension .gpr or .txt) are
+recognised using the following column headings:</dd>
+</dl>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Block</td>
+      <td>Column</td>
+      <td>Row</td>
+      <td>X</td>
+      <td>Y</td>
+    </tr>
+  </tbody>
+</table>
+
+<dl>
+  <dt>NimbleScan <a name="nimblescan"></a></dt>
+  <dd>NimbleScan files (Feature, Probe and Pair) all contain the following
+headings:</dd>
+</dl>
+
+<table>
+  <tbody>
+    <tr>
+      <td>PROBE_ID</td>
+      <td>X</td>
+      <td>Y</td>
+    </tr>
+  </tbody>
+</table>
+
+<dl>
+  <dt>ScanAlyze <a name="scanalyze"></a></dt>
+  <dd>The following column headings are recognized as being from a
+ScanAlyze format file:</dd>
+</dl>
+
+<table>
+  <tbody>
+    <tr>
+      <td>GRID</td>
+      <td>COL</td>
+      <td>ROW</td>
+      <td>LEFT</td>
+      <td>TOP</td>
+      <td>RIGHT</td>
+      <td>BOT</td>
+    </tr>
+  </tbody>
+</table>
+
+<dl>
+  <dt>ScanArray/QuantArray <a name="scanarray-quantarry"></a></dt>
+  <dd>ScanArray Express files are recognized from the following headings:</dd>
+</dl>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Array Column</td>
+      <td>Array Row</td>
+      <td>Spot Column</td>
+      <td>Spot Row</td>
+      <td>X</td>
+      <td>Y</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>while the older QuantArray format has these headings:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Array Column</td>
+      <td>Array Row</td>
+      <td>Column</td>
+      <td>Row</td>
+    </tr>
+  </tbody>
+</table>
+
+<dl>
+  <dt>ArrayVision <a name="arrayvision"></a></dt>
+  <dd>The following column headings are recognized as indicating an
+ArrayVision format file:</dd>
+</dl>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Primary</td>
+      <td>Secondary</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Newer “lg2” ArrayVision files are identified by the following column
+headings:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Spot labels</td>
+    </tr>
+  </tbody>
+</table>
+
+<dl>
+  <dt>Spotfinder <a name="spotfinder"></a></dt>
+  <dd>Spotfinder files are recognized by the following column headings:</dd>
+</dl>
+
+<table>
+  <tbody>
+    <tr>
+      <td>MC</td>
+      <td>MR</td>
+      <td>SC</td>
+      <td>SR</td>
+    </tr>
+  </tbody>
+</table>
+
+<dl>
+  <dt>BlueFuse <a name="bluefuse"></a></dt>
+  <dd>A file containing the following headings is recognized as a BlueFuse
+file:</dd>
+</dl>
+
+<table>
+  <tbody>
+    <tr>
+      <td>COL</td>
+      <td>ROW</td>
+      <td>SUBGRIDCOL</td>
+      <td>SUBGRIDROW</td>
+    </tr>
+  </tbody>
+</table>
+
+<dl>
+  <dt>UCSF Spot <a name="ucsfspot"></a></dt>
+  <dd>UCSF Spot files are recognized by the following column headings:</dd>
+</dl>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Arr-colx</td>
+      <td>Arr-coly</td>
+      <td>Spot-colx</td>
+      <td>Spot-coly</td>
+    </tr>
+  </tbody>
+</table>
+
+<dl>
+  <dt>Applied Biosystems <a name="appliedbiosystems"></a></dt>
+  <dd>Files generated by Applied Biosystems software have the following
+headings:</dd>
+</dl>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Probe_ID</td>
+      <td>Gene_ID</td>
+    </tr>
+  </tbody>
+</table>
+
+<dl>
+  <dt>CodeLink <a name="codelink"></a></dt>
+  <dd>CodeLink Expression Analysis files are identified using the
+following:</dd>
+</dl>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Logical_row</td>
+      <td>Logical_col</td>
+      <td>Center_X</td>
+      <td>Center_Y</td>
+    </tr>
+  </tbody>
+</table>
+
+<dl>
+  <dt>ImaGene <a name="imagene"></a></dt>
+  <dd>ImaGene files are recognized using the following columns:</dd>
+</dl>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Meta Column</td>
+      <td>Meta Row</td>
+      <td>Column</td>
+      <td>Row</td>
+      <td>Field</td>
+      <td>Gene ID</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The ImaGene 3.0 format is also supported:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Meta_col</td>
+      <td>Meta_row</td>
+      <td>Sub_col</td>
+      <td>Sub_row</td>
+      <td>Name</td>
+      <td>Selected</td>
+    </tr>
+  </tbody>
+</table>
+
+<dl>
+  <dt>CSIRO Spot <a name="csirospot"></a></dt>
+  <dd>CSIRO Spot files contain the following columns:</dd>
+</dl>
+
+<table>
+  <tbody>
+    <tr>
+      <td>grid_c</td>
+      <td>grid_r</td>
+      <td>spot_c</td>
+      <td>spot_r</td>
+      <td>indexs</td>
+    </tr>
+  </tbody>
+</table>
+
+<dl>
+  <dt>Generic (for spotted arrays, non-platform specific) <a name="generic"></a></dt>
+  <dd>If your raw data file contains BlockColumn/BlockRow/Column/Row
+fields denoting <a href="/gea/adf-e.html#feature">probe location on a spotted array</a>, you can use this generic format
+with four columns followed by columns of data:</dd>
+</dl>
+
+<table>
+  <tbody>
+    <tr>
+      <td>MetaColumn</td>
+      <td>MetaRow</td>
+      <td>Column</td>
+      <td>Row</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="processed-data-files-">Processed data files <a name="seq_proc"></a></h3>
+
+<p>Processed files are generated from raw files by procedures such as
+background correction, normalization, and further statistical analyses
+(e.g. calculating fold-changes and associated p-values). The final
+processed data are defined as the data on which the conclusions in the
+related manuscript are based. We accept either “native” processed files
+from microarray scanner software (e.g. “.chp” files from Affymetrix
+scanners, output files from GenomeStudio software for Illumina
+BeadChip), or two-dimensional spreadsheet files in tab-delimited text
+(.txt) format. For the latter, the probes/probesets/gene names are in
+rows, and data from one or more hybridizations are in columns. We accept
+processed files from the following scenarios:</p>
+
+<ul>
+  <li>one processed file per hybridization (recommended), i.e. you have a
+  series of processed files.</li>
+  <li>one spreadsheet (“matrix”) file containing normalised data from all
+  hybridizations (not recommended).</li>
+  <li>several spreadsheet (“matrix”) files containing normalised data from
+  different stages of data processing, e.g. one file containing
+  normalized probe intensities and another containing fold-change data
+  summarized at the gene level.</li>
+</ul>
+
+<h3 id="processed-text-file-format-">Processed text file format <a name="array-proc-format"></a></h3>
+
+<p>In the two-dimensional table, you should have probes/genes in rows and
+samples/data in columns:</p>
+
+<p>Probes/genes in rows: Where possible, as row headers, you should use
+official probe names/identifiers, matching those in the array design
+file, so one can map each row of data to the correct probe. Put the
+probe identifiers in the first column under a heading Reporter
+Identifier (for probes) or CompositeSequence Identifier (for “composite”
+collation of probes, most common example being Affymetrix probe sets).
+If probe identifiers are not available, try to use proper gene symbols
+or other identifiers (e.g. GenBank cDNA accession, UniProt protein
+accession).</p>
+
+<p>Samples/Data in columns: Where possible, label each data column with the
+same sample names as you declare on the SDRF. This would allow mapping
+of a column of data to correct sample(s).</p>
+
+<p>A processed .txt file containing data from one single hybridization
+should look like this:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Reporter Identifier</th>
+      <th>sample 1 normalised intensity</th>
+      <th>sample 1 background</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>probe_name_1</strong></td>
+      <td>233.5</td>
+      <td>69.1</td>
+    </tr>
+    <tr>
+      <td><strong>probe_name_2</strong></td>
+      <td>129.4</td>
+      <td>27.6</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>And here is an example where gene names are used as row headings:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Human HGNC gene name</th>
+      <th>sample 1 normalised intensity</th>
+      <th>sample 1 background</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>CDKN2A</strong></td>
+      <td>233.5</td>
+      <td>69.1</td>
+    </tr>
+    <tr>
+      <td><strong>BRCA2</strong></td>
+      <td>129.4</td>
+      <td>27.6</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Processed “matrixes” summarising data from multiple hybridizations
+should look like the following. Again, as for per-hybridization
+processed files, if probe identifiers are not available, try to use
+proper gene symbols or other identifiers (e.g. GenBank cDNA accession,
+UniProt protein accession).</p>
+
+<p>Matrix of normalised values per sample:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Reporter<br />Identifier</th>
+      <th>sample 1<br />normalised</th>
+      <th>sample 2<br />normalised</th>
+      <th>sample 3<br />normalised</th>
+      <th>sample 4<br />normalised</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>probe_name_1</strong></td>
+      <td>26.9</td>
+      <td>44.3</td>
+      <td>62.3</td>
+      <td>58.5</td>
+    </tr>
+    <tr>
+      <td><strong>probe_name_2</strong></td>
+      <td>22.9</td>
+      <td>43.7</td>
+      <td>58.2</td>
+      <td>67.4</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>GenBank<br />accession</th>
+      <th>sample 1<br />normalised</th>
+      <th>sample 2<br />normalised</th>
+      <th>sample 3<br />normalised</th>
+      <th>sample 4<br />normalised</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>BC000578</strong></td>
+      <td>26.9</td>
+      <td>44.3</td>
+      <td>62.3</td>
+      <td>58.5</td>
+    </tr>
+    <tr>
+      <td><strong>M31642</strong></td>
+      <td>22.9</td>
+      <td>43.7</td>
+      <td>58.2</td>
+      <td>67.4</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Matrix of summarised values (one column of data maps to multiple
+samples):</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Reporter Identifier</th>
+      <th>drug A treated average</th>
+      <th>drug B treated average</th>
+      <th>untreated control average</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>probe_name_1</strong></td>
+      <td>44.6</td>
+      <td>89.3</td>
+      <td>290.15</td>
+    </tr>
+    <tr>
+      <td><strong>probe_name_2</strong></td>
+      <td>98.3</td>
+      <td>36.7</td>
+      <td>100.52</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="additional-files-">Additional files <a name="seq-additional"></a></h3>
+
+<p>A spike-in list for single-cell analysis or supplementary files for data
+analysis can be attached to GEA experiment as “additional files”
+(example,
+<a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3624/">E-MTAB-3624</a>)
+Please <a href="/contact-ddbj-e.html">contact GEA team</a> to submit additional files.</p>
+
+<h2 id="sequencing-data-">Sequencing data <a name="seq_data"></a></h2>
+
+<ul>
+  <li><a href="#seq_raw">Raw data files</a></li>
+  <li><a href="#seq_proc">Processed data files</a></li>
+</ul>
+
+<h3 id="raw-data-files-">Raw data files <a name="seq_raw"></a></h3>
+
+<p>Sequencing raw data files need to be pre-registered to DDBJ Sequence
+Read Archive (DRA). Please see the <a href="/dra/submission.html#run-data-files">accepted data
+files</a> for DRA.</p>
+
+<h3 id="processed-data-files--1">Processed data files <a name="seq_proc"></a></h3>
+
+<p>The final processed data are defined as the data on which the
+conclusions in the related manuscript are based. We do not expect
+standard alignment files (e.g., BAM, SAM, BED) as processed data since
+conclusions are expected to be based on further-processed data. When
+standard alignments are the only processed data available, please <a href="/contact-ddbj-e.html">write
+to us</a> to inquire about whether your data are suitable
+for submission to GEA. Requirements for processed data files are not
+fully standardized and will depend on the nature of the experiment.</p>
+
+<p>Expression profiling analysis usually generates quantitative data for
+features of interest. Features of interest may be genes, transcripts,
+exons, miRNA, or some other genetic entity. Two levels of data are often
+generated:</p>
+
+<ul>
+  <li>raw counts of sequencing reads for the features of interest, and/or</li>
+  <li>normalized abundance measurements, e.g., output from Cufflinks,
+Cuffdiff, DESeq, edgeR, etc.</li>
+</ul>
+
+<p>Either or both of these data types may be supplied as processed data.
+They may be formatted either as a matrix table or individual files for
+each sample (recommended). Provide complete data with values for all
+features (e.g., genes) and all samples, not only lists of
+differentially-expressed genes.</p>
+
+<p>ChIP-Seq data might include peak files with quantitative data, tag
+density files, etc. Common formats include WIG, bigWig, bedGraph.</p>
+
+<p>Features (e.g., genes, transcripts) in processed data files should be
+traceable using public accession numbers or chromosome coordinates. The
+<a href="https://www.ncbi.nlm.nih.gov/assembly/">reference assembly</a> used (e.g.,
+hg19, mm9, GCF_000001405.13) should be provided in normalization data
+transformation protocol and/or high throughput sequence alignment
+protocol. In addition, a description of the format and content of
+processed data files should be provided in these protocols.</p>
+
+<p>If you provide WIG, bedGraph, GFF, or GTF files, please refer to the
+<a href="http://www.genome.ucsc.edu/FAQ/FAQformat.html">UCSC file format FAQ</a>
+for format requirements.</p>
+
+<h3 id="processed-matrix-files-for-advanced-users-">Processed matrix files (for advanced users) <a name="matrix"></a></h3>
+
+<p>For submitters who are familiar with MAGE-TAB specification, we also
+accept matrix files in strict MAGE-TAB format, which allows each data
+point in the file (in a given row and a given column) to be mapped to a
+particular assay in the experiment and to a particular probe/probe set
+in the array design file in a human readable way and also
+programmatically. Check out <a href="/gea/matrix-e.html">this guide</a> on the
+strict matrix format for more information.</p>
+
+<h3 id="additional-files--1">Additional files <a name="seq-additional"></a></h3>
+
+<p>A spike-in list for single-cell analysis or supplementary files for data
+analysis can be attached to GEA experiment as “additional files”
+(example,
+<a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3624/">E-MTAB-3624</a>)
+Please <a href="/contact-ddbj-e.html">contact GEA team</a> to submit additional files.</p>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

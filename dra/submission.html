@@ -1,0 +1,2563 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDBJ Sequence Read Archive Handbook</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">DDBJ Sequence Read Archive Handbook</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/dra">dra</a>
+          </li>
+          <li>
+            <a href="">DDBJ Sequence Read Archive Handbook</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/dra/index.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/dra/submission.html">Handbook</a>
+      
+      <ul>
+        
+        <li>
+          <a href="https://docs.google.com/spreadsheets/d/1DTdUQ-WWOMjOA2eYQWmFYUB24hJysuwhvHLJoDFX4rc/edit#gid=0">Metadata examples</a>
+        </li>
+        
+        <li>
+          <a href="/dra/example.html">XML examples</a>
+        </li>
+        
+        <li>
+          <a href="https://github.com/ddbj/pub/tree/master/docs/dra">XML schema</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/ja/index.html">FAQ</a>
+      
+    </li>
+    
+    <li class="">
+      <a href="https://ddbj.nig.ac.jp/DRASearch/">Search</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq">Downloads</a>
+      
+      <ul>
+        
+        <li>
+          <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq">FASTQ</a>
+        </li>
+        
+        <li>
+          <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/sralite/ByExp/litesra/">SRA</a>
+        </li>
+        
+        <li>
+          <a href="https://github.com/ddbj/pub/tree/master/docs/dra/xsd">XML Schema</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/dra/about-dra.html">About DRA</a>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h1 id="ddbj-sequence-read-archive">DDBJ Sequence Read Archive</h1>
+
+<p><a href="/dra/index.html">DDBJ Sequence Read Archive (DRA)</a> は Roche 454 GS System®、Illumina Genome Analyzer®、Applied Biosystems SOLiD® System などの次世代シークエンサからの出力データのためのデータベースです。 DRA は <a href="/insdc.html">International Nucleotide Sequence Database Collaboration (INSDC)</a> のメンバーであり、 <a href="https://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi">NCBI Sequence Read Archive (SRA)</a> と <a href="https://www.ebi.ac.uk/ena/">EBI Sequence Read Archive (ERA)</a> との国際協力のもと、運営されています。</p>
+
+<p>公開された Analysis 以外のデータは3極で自動的にミラーリングされます。</p>
+
+<p>従来のキャピラリ式シークエンサからの出力データは fastq ファイルとして DRA に登録することができます。 クロマトグラムの登録を希望する場合は <a href="/dta/index.html">DDBJ Trace Archive</a> に登録します。</p>
+
+<h2 id="メタデータ-">メタデータ <a name="metadata"></a></h2>
+
+<h3 id="メタデータオブジェクト-">メタデータオブジェクト <a name="metadata-objects"></a></h3>
+
+<p>メタデータにはシークエンスデータがどのようにして得られたのかが記載されています。 メタデータは <a href="#Submission">Submission</a>、<a href="#BioProject">BioProject</a>、<a href="#BioSample">BioSample</a>、<a href="#Experiment">Experiment</a>、<a href="#Run">Run</a>、<a href="#Analysis">Analysis</a> の各オブジェクトで構成されます。 各オブジェクトは XML スキーマで定義され、相互に関連付けられています。アクセッション番号はオブジェクトに して発行されます。 オブジェクトの構造とアクセッション番号は DDBJ/EBI/NCBI で共通です。 Experiment Run、Analysis は SRA のオブジェクトで、BioProject と BioSample は外部データベースのオブジェクトにな ます。</p>
+
+<p>メタデータの詳細は対応する XML スキーマをご覧ください。<a href="https://github.com/ddbj/pub/tree/master/docs/dra">DRA XML schema</a></p>
+
+<dl>
+  <dt><a href="#Submission">Submission</a></dt>
+  <dd>登録するオブジェクトをとりまとめるオブジェクト。</dd>
+  <dt><a href="#BioProject">BioProject</a></dt>
+  <dd>研究プロジェクト全体の概要。プロジェクトは複数のサンプルやデータセットを含むことが一般的です。</dd>
+  <dt><a href="#BioSample">BioSample</a></dt>
+  <dd>生物学的なサンプルに関する記述。サンプルはユニークな属性をもった BioSample として登録します。</dd>
+  <dt><a href="#Experiment">Experiment</a></dt>
+  <dd>BioSample に由来するシークエンス用ライブラリーとシークエンスの手法について記載します。 Experiment は１つの BioProject と１つの BioSample を参照します。 複数の Experiment は１ BioSample を参照することができますが、逆に１つの Experiment が複数の BioSample を参照することはできません。</dd>
+  <dt><a href="#Run">Run</a></dt>
+  <dd>シークエンス用ライブラリー (Experiment) に由来するファイルをまとめます。 Experiment を介してデータファイルは特定のサンプルにリンクされます。 Run に含まれる全てのファイルは１つの SRA/fastq ファイルにマージされ、Run のアクセッション番号がファイル名になります。そのため、異なるサンプ replicate に由来するファイルは同じ Run に含めるべきではありません。 一方、ペアード タファイルは同じ Run に含め、リードが正しくペアとして処理されるようにします。</dd>
+  <dt><a href="#Analysis">Analysis</a></dt>
+  <dd>Run に格納されたデータを解析したデータで、しかるべき登録先がないようなデータを登録します。Analysis は DDBJ/EBI/NCBI で交換していません。 交換を希望する場合は <a href="/contact-ddbj.html">DRA チームに連絡します</a>。 Analysis は <a href="http://ddbj.nig.ac.jp/DRASearch">DRASearch</a> でインデックスされず、ftp でのファイル公開のみになります。</dd>
+</dl>
+
+<a class="group1" href="/assets/images/books/sra_object.png" title="データモデル">
+  <figure class="image">
+    <img src="/assets/images/books/sra_object.png" alt="データモデル" class="w450">
+    <figcaption>データモデル</figcaption>
+  </figure>
+</a>
+
+<h3 id="オブジェクトの構成例-">オブジェクトの構成例 <a name="organization-metadata-objects"></a></h3>
+
+<p>登録者は実際のデータにあわせて柔軟にオブジェクトを構成することができます。</p>
+
+<ul>
+  <li><a href="#ex_simple">最もシンプルなケース</a></li>
+  <li><a href="#ex_samples">三つの菌株の比較ゲノム解析 (ペアエンド)</a></li>
+  <li><a href="#ex_replicates">(Technical, Biological) replicate がある場合 (ペアエンド)</a></li>
+  <li><a href="#ex_submissions">関連するデータが別々の論文に発表される場合</a></li>
+</ul>
+
+<h4 id="最もシンプルなケース-">最もシンプルなケース <a name="ex_simple"></a></h4>
+
+<a class="group1" href="/assets/images/submission/obj_ex1.jpg" title="最もシンプルなケース">
+  <figure class="image">
+    <img src="/assets/images/submission/obj_ex1.jpg" alt="最もシンプルなケース" class="w450">
+    <figcaption>最もシンプルなケース</figcaption>
+  </figure>
+</a>
+
+<h4 id="三つの菌株の比較ゲノム解析-ペアエンド-">三つの菌株の比較ゲノム解析 (ペアエンド) <a name="ex_samples"></a></h4>
+
+<p>ペアリードファイルは同じ Run に含めます。</p>
+
+<a class="group1" href="/assets/images/submission/obj_ex2.jpg" title="三つの菌株の比較ゲノム解析 (ペアエンド)">
+  <figure class="image">
+    <img src="/assets/images/submission/obj_ex2.jpg" alt="三つの菌株の比較ゲノム解析 (ペアエンド)" class="w450">
+    <figcaption>三つの菌株の比較ゲノム解析 (ペアエンド)</figcaption>
+  </figure>
+</a>
+
+<h4 id="technical-biological-replicate-がある場合-ペアエンド-">(Technical, Biological) replicate がある場合 (ペアエンド) <a name="ex_replicates"></a></h4>
+
+<p><a href="/faq/ja/samples-for-sra">関連する FAQ: 塩基配列登録にはいくつのサンプルが必要ですか?</a></p>
+
+<a class="group1" href="/assets/images/submission/obj_exreplicate.jpg" title="(Technical, Biological) replicate がある場合　(ペアエンド)">
+  <figure class="image">
+    <img src="/assets/images/submission/obj_exreplicate.jpg" alt="(Technical, Biological) replicate がある場合　(ペアエンド)" class="w450">
+    <figcaption>(Technical, Biological) replicate がある場合　(ペアエンド)</figcaption>
+  </figure>
+</a>
+
+<h4 id="関連するデータが別々の論文に発表される場合-">関連するデータが別々の論文に発表される場合 <a name="ex_submissions"></a></h4>
+
+<a class="group1" href="/assets/images/submission/obj_ex3.jpg" title="関連するデータが別々の論文に発表される場合">
+  <figure class="image">
+    <img src="/assets/images/submission/obj_ex3.jpg" alt="関連するデータが別々の論文に発表される場合" class="w450">
+    <figcaption>関連するデータが別々の論文に発表される場合</figcaption>
+  </figure>
+</a>
+
+<p>メタデータ各項目の説明</p>
+
+<p>必須<span class="red">*</span><br />
+条件によって必須<span class="conditionally_required">*</span></p>
+
+<h3 id="submission-">Submission <a name="Submission"></a></h3>
+
+<h4 id="center-name-">Center Name <a name="Area_center-name"></a></h4>
+
+<p>登録者が所属する組織に関する情報を記載します。</p>
+
+<dl>
+  <dt><a href="#Submission_Center_Name">Center Name</a><a name="Submission_Center_Name"></a><span class="red">*</span></dt>
+  <dd>登録者が所属する組織の Center Name。<a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/meta/list/centerlist">Center Name リスト。</a>DDBJ/EBI/NCBI
+SRA にデータを登録する際にはこの Center Name が必要です。</dd>
+</dl>
+
+<p>メタデータ作成ツールはアカウント情報から Center Name を自動的に取得します。</p>
+
+<p><span class="red">Center Name は登録の所有権を示すものではなく、SRA が運用上使用している略称です。所有権は <a href="#Area_submitter-submission">Submitter</a> に記載される登録者にあります。</span></p>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Laboratory_Name">Lab Name</a><a name="Laboratory_Name"></a><span class="red">*</span></dt>
+  <dd>登録者が所属する研究室やグループ名。アカウントに登録されている “Lab/Group”、”Department (2)”、”Department (1)”、”Organization” がカンマで連結されたテキストが初期表示されます。</dd>
+</dl>
+
+<h4 id="hold-until-">Hold Until <a name="Area_hold-until"></a></h4>
+
+<p>公開方法を指定します。</p>
+
+<dl>
+  <dt><a href="#Hold_Until">Hold Until</a><a name="Hold_Until"></a><span class="conditionally_required">*</span></dt>
+  <dd>公開予定日を設定します。最長で4年後まで設定でき、延長することができます。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Immediate_Release">Immediate Release</a><a name="Immediate_Release"></a><span class="conditionally_required">*</span></dt>
+  <dd>即日公開。登録作業が終わり次第、データが公開されます。</dd>
+</dl>
+
+<h4 id="submitter-">Submitter <a name="Area_submitter-submission"></a></h4>
+
+<p>登録者の名前とメールアドレスのリストです。責任者 (principal investigator) を含めてください。登録に関する連絡は記入された全てのアドレスに対して行われます。<span class="red">責任者以外の人が登録作業をした場合、その作業者を含めてください。</span>登録者情報は公開されません。登録者情報を明示したい場合は BioProject に記載してください。</p>
+
+<dl>
+  <dt><a href="#Contact_Name">Name</a><a name="Contact_Name"></a><span class="red">*</span></dt>
+  <dd>登録者の名前。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Contact_E-mail">E-mail</a><a name="Contact_E-mail"></a><span class="red">*</span></dt>
+  <dd>登録者の電子メールアドレス。</dd>
+</dl>
+
+<h3 id="bioproject-">BioProject <a name="BioProject"></a></h3>
+
+<dl>
+  <dt><a href="#DRA_BioProjectID">BioProject ID</a><a name="DRA_BioProjectID"></a><span class="red">*</span></dt>
+  <dd><a href="/bioproject/index.html">BioProject</a> に登録済みのプロジェクトから該当するものを１つ選択するか、新規に BioProject を登録します。BioProject の登録方法は <a href="/bioproject/submission.html">BioProject Handbook</a> を参照してください。</dd>
+</dl>
+
+<h3 id="biosample-">BioSample <a name="BioSample"></a></h3>
+
+<dl>
+  <dt><a href="#DRA_BioSampleID">BioSample ID</a><a name="DRA_BioSampleID"></a><span class="red">*</span></dt>
+  <dd><a href="/biosample/index.html">BioSample</a> に登録済みのサンプルから該当するものを選択するか、新たにサンプルを登録し BioSample の登録方法は <a href="/biosample/submission.html">BioSample Handbook</a> をてください。</dd>
+</dl>
+
+<h3 id="experiment-">Experiment <a name="Experiment"></a></h3>
+
+<dl>
+  <dt><a href="#Experiment_Alias">Alias</a><a name="Experiment_Alias"></a></dt>
+  <dd>自動的に Experiment に付けられる名前。アクセッション番号のないオブジェクトは Alias で参照されます。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioSample_Used">BioSample Used</a><a name="BioSample_Used"></a><span class="red">*</span></dt>
+  <dd>Experiment が参照している BioSample を選択します。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Experiment_Title">Title</a><a name="Experiment_Title"></a><span class="red">*</span></dt>
+  <dd>検索結果で表示される Experiment の短いタイトル。 自動的に “[Sequencing Instrument Model] [paired end] sequencing of [BioSample ID]” というタイトル（例 “Illumina HiSeq 2000 paired end sequencing of SAMD00025741”）が構築されます。 独自のタイトルを入力する場合は、Experiment の内容をタブ区切りテキストファイルとしてダウンロードし、Title カラムにユニークなテキストを入力しアップロードします。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Library_Name">Library Name</a><a name="Library_Name"></a></dt>
+  <dd>ライブラリーの名前。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Library_Source">Library Source</a><a name="Library_Source"></a><span class="red">*</span></dt>
+  <dd>ライブラリー構築に用いた試料。
+
+    <table>
+      <thead>
+        <tr>
+          <th>Library Source</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>GENOMIC</td>
+          <td>Genomic DNA (includes PCR products from genomic DNA).</td>
+        </tr>
+        <tr>
+          <td>TRANSCRIPTOMIC</td>
+          <td>Transcription products or non genomic DNA (EST, cDNA, RT-PCR, screened libraries).</td>
+        </tr>
+        <tr>
+          <td>METAGENOMIC</td>
+          <td>Mixed material from metagenome.</td>
+        </tr>
+        <tr>
+          <td>METATRANSCRIPTOMIC</td>
+          <td>Transcription products from community targets.</td>
+        </tr>
+        <tr>
+          <td>SYNTHETIC</td>
+          <td>Synthetic DNA.</td>
+        </tr>
+        <tr>
+          <td>VIRAL RNA</td>
+          <td>Viral RNA.</td>
+        </tr>
+        <tr>
+          <td>OTHER</td>
+          <td>Other, unspecified, or unknown library source material.</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Library_Selection">Library Selection</a><a name="Library_Selection"></a><span class="red">*</span></dt>
+  <dd>シークエンスに用いたライブラリを構築するためのサンプルの選別や濃縮方法。
+
+    <table>
+      <thead>
+        <tr>
+          <th>Library Selection</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>RANDOM</td>
+          <td>Random shearing only.</td>
+        </tr>
+        <tr>
+          <td>PCR</td>
+          <td>Source material was selected by designed primers.</td>
+        </tr>
+        <tr>
+          <td>RANDOM PCR</td>
+          <td>Source material was selected by randomly generated primers.</td>
+        </tr>
+        <tr>
+          <td>RT-PCR</td>
+          <td>Source material was selected by reverse transcription PCR.</td>
+        </tr>
+        <tr>
+          <td>HMPR</td>
+          <td>Hypo-methylated partial restriction digest.</td>
+        </tr>
+        <tr>
+          <td>MF</td>
+          <td>Methyl Filtrated.</td>
+        </tr>
+        <tr>
+          <td>repeat fractionation</td>
+          <td>Selection for less repetitive (and more gene rich) sequence through Cot filtration (CF) or other fractionation techniques based on DNA kinetics.</td>
+        </tr>
+        <tr>
+          <td>size fractionation</td>
+          <td>Physical selection of size appropriate targets.</td>
+        </tr>
+        <tr>
+          <td>MSLL</td>
+          <td>Methylation Spanning Linking Library.</td>
+        </tr>
+        <tr>
+          <td>cDNA</td>
+          <td>complementary DNA.</td>
+        </tr>
+        <tr>
+          <td>cDNA_randomPriming</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>cDNA_oligo_dT</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>PolyA</td>
+          <td>PolyA selection or enrichment for messenger RNA (mRNA); should replace cDNA enumeration.</td>
+        </tr>
+        <tr>
+          <td>Oligo-dT</td>
+          <td>enrichment of messenger RNA (mRNA) by hybridization to Oligo-dT.</td>
+        </tr>
+        <tr>
+          <td>Inverse rRNA</td>
+          <td>depletion of ribosomal RNA by oligo hybridization.</td>
+        </tr>
+        <tr>
+          <td>ChIP</td>
+          <td>Chromatin immunoprecipitation.</td>
+        </tr>
+        <tr>
+          <td>MNase</td>
+          <td>Micrococcal Nuclease (MNase) digestion.</td>
+        </tr>
+        <tr>
+          <td>DNAse</td>
+          <td>Deoxyribonuclease (DNase) digestion.</td>
+        </tr>
+        <tr>
+          <td>Hybrid Selection</td>
+          <td>Selection by hybridization in array or solution.</td>
+        </tr>
+        <tr>
+          <td>Reduced Representation</td>
+          <td>Reproducible genomic subsets, often generated by restriction fragment size selection, containing a manageable number of loci to facilitate re-sampling.</td>
+        </tr>
+        <tr>
+          <td>Restriction Digest</td>
+          <td>DNA fractionation using restriction enzymes.</td>
+        </tr>
+        <tr>
+          <td>5-methylcytidine antibody</td>
+          <td>Selection of methylated DNA fragments using an antibody raised against 5-methylcytosine or 5-methylcytidine (m5C)MBD2 protein methyl-CpG binding domain : Enrichment by methyl-CpG binding domain.</td>
+        </tr>
+        <tr>
+          <td>MBD2 protein methyl-CpG binding domain</td>
+          <td>MBD2 protein methyl-CpG binding domain.</td>
+        </tr>
+        <tr>
+          <td>CAGE</td>
+          <td>Cap-analysis gene expression.</td>
+        </tr>
+        <tr>
+          <td>RACE</td>
+          <td>Rapid Amplification of cDNA Ends.</td>
+        </tr>
+        <tr>
+          <td>MDA</td>
+          <td>multiple displacement amplification.</td>
+        </tr>
+        <tr>
+          <td>padlock probes capture method</td>
+          <td>Padlock Probes capture strategy to be used in conjuction with Bisulfite-Seq.</td>
+        </tr>
+        <tr>
+          <td>other</td>
+          <td>Other library enrichment, screening, or selection process.</td>
+        </tr>
+        <tr>
+          <td>unspecified</td>
+          <td>Library enrichment, screening, or selection is not specified.</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Library_Strategy">Library Strategy</a><a name="Library_Strategy"></a><span class="red">*</span></dt>
+  <dd>ライブラリーの構築手法。
+
+    <table>
+      <thead>
+        <tr>
+          <th>Library Strategy</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>WGS</td>
+          <td>Whole genome shotgun.</td>
+        </tr>
+        <tr>
+          <td>WGA</td>
+          <td>Whole genome amplification.</td>
+        </tr>
+        <tr>
+          <td>WXS</td>
+          <td>Random sequencing of exonic regions selected from the genome.</td>
+        </tr>
+        <tr>
+          <td>RNA-Seq</td>
+          <td>Random sequencing of whole transcriptome.</td>
+        </tr>
+        <tr>
+          <td>miRNA-Seq</td>
+          <td>Micro RNA and other small non-coding RNA sequencing.</td>
+        </tr>
+        <tr>
+          <td>ncRNA-Seq</td>
+          <td>Capture of other non-coding RNA types, including post-translation modification types such as snRNA (small nuclear RNA) or snoRNA (small nucleolar RNA), or expression regulation types such as siRNA (small interfering RNA) or piRNA/piwi/RNA (piwi-interacting RNA).</td>
+        </tr>
+        <tr>
+          <td>ssRNA-seq</td>
+          <td>strand-specific RNA sequencing</td>
+        </tr>
+        <tr>
+          <td>WCS</td>
+          <td>Whole chromosome (or other replicon) shotgun.</td>
+        </tr>
+        <tr>
+          <td>CLONE</td>
+          <td>Genomic clone based (hierarchical) sequencing.</td>
+        </tr>
+        <tr>
+          <td>POOLCLONE</td>
+          <td>Shotgun of pooled clones (usually BACs and Fosmids).</td>
+        </tr>
+        <tr>
+          <td>AMPLICON</td>
+          <td>Sequencing of overlapping or distinct PCR or RT-PCR products.</td>
+        </tr>
+        <tr>
+          <td>CLONEEND</td>
+          <td>Clone end (5’, 3’, or both) sequencing.</td>
+        </tr>
+        <tr>
+          <td>FINISHING</td>
+          <td>Sequencing intended to finish (close) gaps in existing coverage.</td>
+        </tr>
+        <tr>
+          <td>RAD-Seq</td>
+          <td>Restriction Site Associated DNA Sequence</td>
+        </tr>
+        <tr>
+          <td>ChIP-Seq</td>
+          <td>Direct sequencing of chromatin immunoprecipitates.</td>
+        </tr>
+        <tr>
+          <td>MNase-Seq</td>
+          <td>Direct sequencing following MNase digestion.</td>
+        </tr>
+        <tr>
+          <td>DNase-Hypersensitivity</td>
+          <td>Sequencing of hypersensitive sites, or segments of open chromatin that are more readily cleaved by DNaseI.</td>
+        </tr>
+        <tr>
+          <td>Bisulfite-Seq</td>
+          <td>Sequencing following treatment of DNA with bisulfite to convert cytosine residues to uracil depending on methylation status.</td>
+        </tr>
+        <tr>
+          <td>EST</td>
+          <td>Single pass sequencing of cDNA templates.</td>
+        </tr>
+        <tr>
+          <td>FL-cDNA</td>
+          <td>Full-length sequencing of cDNA templates.</td>
+        </tr>
+        <tr>
+          <td>CTS</td>
+          <td>Concatenated Tag Sequencing.</td>
+        </tr>
+        <tr>
+          <td>MRE-Seq</td>
+          <td>Methylation-Sensitive Restriction Enzyme Sequencing strategy.</td>
+        </tr>
+        <tr>
+          <td>MeDIP-Seq</td>
+          <td>Methylated DNA Immunoprecipitation Sequencing strategy.</td>
+        </tr>
+        <tr>
+          <td>MBD-Seq</td>
+          <td>Direct sequencing of methylated fractions sequencing strategy.</td>
+        </tr>
+        <tr>
+          <td>Tn-Seq</td>
+          <td>Gene fitness determination through transposon seeding.</td>
+        </tr>
+        <tr>
+          <td>FAIRE-seq</td>
+          <td>Formaldehyde Assisted Isolation of Regulatory Elements</td>
+        </tr>
+        <tr>
+          <td>SELEX</td>
+          <td>Systematic Evolution of Ligands by EXponential enrichment</td>
+        </tr>
+        <tr>
+          <td>RIP-Seq</td>
+          <td>Direct sequencing of RNA immunoprecipitates (includes CLIP-Seq, HITS-CLIP and PAR-CLIP).</td>
+        </tr>
+        <tr>
+          <td>ChIA-PET</td>
+          <td>Direct sequencing of proximity-ligated chromatin immunoprecipitates.</td>
+        </tr>
+        <tr>
+          <td>Hi-C</td>
+          <td>Chromosome Conformation Capture technique where a biotin-labeled nucleotide is incorporated at the ligation junction, enabling selective purification of chimeric DNA ligation junctions followed by deep sequencing</td>
+        </tr>
+        <tr>
+          <td>ATAC-seq</td>
+          <td>Assay for Transposase-Accessible Chromatin (ATAC) strategy is used to study genome-wide chromatin accessibility. alternative method to DNase-seq that uses an engineered Tn5 transposase to cleave DNA and to integrate primer DNA sequences into the cleaved genomic DNA</td>
+        </tr>
+        <tr>
+          <td>Targeted-Capture</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>Tethered Chromatin Conformation Capture</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>Synthetic-Long-Read</td>
+          <td>binning and barcoding of large DNA fragments to facilitate assembly of the fragment</td>
+        </tr>
+        <tr>
+          <td>Other</td>
+          <td>Library strategy not listed.</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Library_Construction_Protocol">Library Construction Protocol</a><a name="Library_Construction_Protocol"></a></dt>
+  <dd>DNA の断片化 (DNA fragmentation)、アダプター配列などのライゲーション (DNA ligation) や濃縮
+(DNA enrichment) 方法をフリーテキストで記載します。キットを使用した場合はキットの名前とバージョン (あれば) を含めます (例 Illumina Nextera DNA Library Preparation Kit)。</dd>
+</dl>
+
+<p>参考: Alnasir J, Shanahan HP. Investigation into the annotation of protocol sequencing steps in the sequence read archive. Gigascience. 2015 May 9;4:23. doi: 10.1186/s13742-015-0064-7. eCollection 2015. PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25960871/">25960871</a> (Open Access)</p>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Instrument">Instrument</a><a name="Instrument"></a><span class="red">*</span></dt>
+  <dd>シークエンサの機種を選択します。
+
+    <table>
+      <thead>
+        <tr>
+          <th>Instrument Model</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>454 GS</td>
+        </tr>
+        <tr>
+          <td>454 GS 20</td>
+        </tr>
+        <tr>
+          <td>454 GS FLX</td>
+        </tr>
+        <tr>
+          <td>454 GS FLX+</td>
+        </tr>
+        <tr>
+          <td>454 GS FLX Titanium</td>
+        </tr>
+        <tr>
+          <td>454 GS Junior</td>
+        </tr>
+        <tr>
+          <td>Illumina Genome Analyzer</td>
+        </tr>
+        <tr>
+          <td>Illumina Genome Analyzer II</td>
+        </tr>
+        <tr>
+          <td>Illumina Genome Analyzer IIx</td>
+        </tr>
+        <tr>
+          <td>Illumina HiSeq 1000</td>
+        </tr>
+        <tr>
+          <td>Illumina HiSeq 1500</td>
+        </tr>
+        <tr>
+          <td>Illumina HiSeq 2000</td>
+        </tr>
+        <tr>
+          <td>Illumina HiSeq 2500</td>
+        </tr>
+        <tr>
+          <td>Illumina HiSeq 3000</td>
+        </tr>
+        <tr>
+          <td>Illumina HiSeq 4000</td>
+        </tr>
+        <tr>
+          <td>Illumina NovaSeq 6000</td>
+        </tr>
+        <tr>
+          <td>Illumina MiSeq</td>
+        </tr>
+        <tr>
+          <td>Illumina MiniSeq</td>
+        </tr>
+        <tr>
+          <td>Illumina iSeq 100</td>
+        </tr>
+        <tr>
+          <td>Illumina HiScanSQ</td>
+        </tr>
+        <tr>
+          <td>HiSeq X Five</td>
+        </tr>
+        <tr>
+          <td>HiSeq X Ten</td>
+        </tr>
+        <tr>
+          <td>NextSeq 500</td>
+        </tr>
+        <tr>
+          <td>NextSeq 550</td>
+        </tr>
+        <tr>
+          <td>Helicos HeliScope</td>
+        </tr>
+        <tr>
+          <td>AB SOLiD System</td>
+        </tr>
+        <tr>
+          <td>AB SOLiD System 2.0</td>
+        </tr>
+        <tr>
+          <td>AB SOLiD System 3.0</td>
+        </tr>
+        <tr>
+          <td>AB SOLiD 3 Plus System</td>
+        </tr>
+        <tr>
+          <td>AB SOLiD 4 System</td>
+        </tr>
+        <tr>
+          <td>AB SOLiD 4hq System</td>
+        </tr>
+        <tr>
+          <td>AB SOLiD PI System</td>
+        </tr>
+        <tr>
+          <td>AB 5500 Genetic Analyzer</td>
+        </tr>
+        <tr>
+          <td>AB 5500xl Genetic Analyzer</td>
+        </tr>
+        <tr>
+          <td>AB 5500xl-W Genetic Analysis System</td>
+        </tr>
+        <tr>
+          <td>Complete Genomics</td>
+        </tr>
+        <tr>
+          <td>MinION</td>
+        </tr>
+        <tr>
+          <td>GridION</td>
+        </tr>
+        <tr>
+          <td>PromethION</td>
+        </tr>
+        <tr>
+          <td>PacBio RS</td>
+        </tr>
+        <tr>
+          <td>PacBio RS II</td>
+        </tr>
+        <tr>
+          <td>Sequel</td>
+        </tr>
+        <tr>
+          <td>Ion Torrent PGM</td>
+        </tr>
+        <tr>
+          <td>Ion Torrent Proton</td>
+        </tr>
+        <tr>
+          <td>Ion Torrent S5</td>
+        </tr>
+        <tr>
+          <td>Ion Torrent S5 XL</td>
+        </tr>
+        <tr>
+          <td>AB 310 Genetic Analyzer</td>
+        </tr>
+        <tr>
+          <td>AB 3130 Genetic Analyzer</td>
+        </tr>
+        <tr>
+          <td>AB 3130xL Genetic Analyzer</td>
+        </tr>
+        <tr>
+          <td>AB 3500 Genetic Analyzer</td>
+        </tr>
+        <tr>
+          <td>AB 3500xL Genetic Analyzer</td>
+        </tr>
+        <tr>
+          <td>AB 3730 Genetic Analyzer</td>
+        </tr>
+        <tr>
+          <td>AB 3730xL Genetic Analyzer</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Spot_Type">Spot Type</a><a name="Spot_Type"></a><span class="red">*</span></dt>
+  <dd>データファイル中のリード構成を選択します。
+
+    <table>
+      <thead>
+        <tr>
+          <th>Spot Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>single</td>
+          <td>Single read</td>
+        </tr>
+        <tr>
+          <td>paired (FF)</td>
+          <td>Paired reads with same direction.</td>
+        </tr>
+        <tr>
+          <td>paired (FR)</td>
+          <td>Paired reads with opposite direction.</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Nominal_Length">Nominal Length</a><a name="Nominal_Length"></a><span class="conditionally_required">*</span></dt>
+  <dd>ペアエンドライブラリを構築した際のインサートサイズ。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Nominal_Sdev">Nominal Sdev</a><a name="Nominal_Sdev"></a></dt>
+  <dd>インサートサイズの標準偏差</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Spot_Length">Spot Length</a><a name="Spot_Length"></a><span class="red">*</span></dt>
+  <dd>データファイル中のリードの長さを記載します。ペアードの場合は両リードの合計長 (ギャップ長は除きます) を記入します。
+
+    <ul>
+      <li>Spot length が一定の場合、一定の値を記入</li>
+      <li>リード長が一定ではない 454 プラットフォームの場合、フロー数を記入</li>
+      <li>不定長の fastq の場合、平均長を記入</li>
+    </ul>
+  </dd>
+</dl>
+
+<h3 id="run-">Run <a name="Run"></a></h3>
+
+<dl>
+  <dt><a href="#Run_Alias">Alias</a><a name="Run_Alias"></a></dt>
+  <dd>自動的に Run に付けられる名前。アクセッション番号のないオブジェクトは Alias で参照されます。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Run_Title">Title</a><a name="Run_Title"></a><span class="red">*</span></dt>
+  <dd>Run の短いタイトル。ユニークなタイトルを付けます。 検索結果で表示される Run の短いタイトル。 自動的に “[Sequencing Instrument Model] [paired end] sequencing of [BioSample ID]” というタイトル（例 “Illumina HiSeq 2000 paired end sequencing of SAMD00025741”）が構築されます。 独自のタイトルを入力する場合は、Run の内容をタブ区切りテキストファイルとしてダウンロードし、Title カラムにユニークなテキストを入力しアップロードします。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Experiment_Referenced">Experiment Referenced</a><a name="Experiment_Referenced"></a><span class="red">*</span></dt>
+  <dd>Run が属する Experiment を選択します。</dd>
+</dl>
+
+<h4 id="data-files-for-run-">Data files for Run <a name="Area_data-files-for-run"></a></h4>
+
+<p>Run に含めるデータファイルを選択します。</p>
+
+<dl>
+  <dt><a href="#Run_Analysis">Run/Analysis</a><a name="Run_Analysis"></a></dt>
+  <dd>データファイルが Run もしくは Analysis に属しているのかを指定します。ウェブ画面上では入力できず、属している Run もしくは Analysis の alias が選択されると自動的に入力されます。タブ区切りテキストファイルで入力する場合には、Run もしくは Analysis を入力します。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#File_Name">File Name</a><a name="File_Name"></a><span class="red">*</span></dt>
+  <dd>シークエンスデータファイル名。DRA サーバにアップロードされているファイル名が自動的に入力されます。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Run_Analysis_contains_files">Run/Analysis contains files</a><a name="Run_Analysis_contains_files"></a><span class="red">*</span></dt>
+  <dd>データファイルが属する Run を選択します。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#File_Type">File Type</a><a name="File_Type"></a><span class="red">*</span></dt>
+  <dd>シークエンスデータのファイル形式。リード長が一定ではない fastq ファイルの場合は  “generic_fastq”、一定の場合は “fastq” を選択します。
+
+    <table>
+      <thead>
+        <tr>
+          <th>File Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>generic_fastq</td>
+          <td>fastq files with variable read length</td>
+        </tr>
+        <tr>
+          <td>fastq</td>
+          <td>fastq files with constant read length</td>
+        </tr>
+        <tr>
+          <td>sff</td>
+          <td>454 Standard Flowgram Format file</td>
+        </tr>
+        <tr>
+          <td>hdf5</td>
+          <td>PacBio hdf5 Format file</td>
+        </tr>
+        <tr>
+          <td>bam</td>
+          <td>Binary SAM format for use by loaders that combine alignment and sequencing data</td>
+        </tr>
+        <tr>
+          <td>tab</td>
+          <td>A tab-delimited table maps “SN in SQ line of BAM header” and “reference fasta file”</td>
+        </tr>
+        <tr>
+          <td>reference_fasta</td>
+          <td>Reference sequence file in single fasta format used to construct SRA archive file format. Filename must end with “.fa”</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#MD5_Checksum">MD5 Checksum</a><a name="MD5_Checksum"></a><span class="red">*</span></dt>
+  <dd>データファイルの MD5 チェックサム値。<a href="#supplement-md5">MD5 チェックサム値の取得方法</a></dd>
+</dl>
+
+<h3 id="analysis-">Analysis <a name="Analysis"></a></h3>
+
+<dl>
+  <dt><a href="#Analysis_Alias">Alias</a><a name="Analysis_Alias"></a></dt>
+  <dd>自動的に Analysis に付けられる名前。アクセッション番号のないオブジェクトは Alias で参照されます。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Analysis_Title">Title</a><a name="Analysis_Title"></a><span class="red">*</span></dt>
+  <dd>Analysis オブジェクトのタイトル。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Analysis_Description">Description</a><a name="Analysis_Description"></a><span class="red">*</span></dt>
+  <dd>Analysis の内容を記述します。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Analysis_Type">Analysis Type</a><a name="Analysis_Type"></a><span class="red">*</span></dt>
+  <dd>Analysis の種類を選択します。アライメントデータは Run に登録します。
+
+    <table>
+      <thead>
+        <tr>
+          <th>Analysis Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>De Novo Assembly</td>
+          <td>A placement of sequences including trace, SRA, GI records into a multiple alignment from which a consensus is computed..</td>
+        </tr>
+        <tr>
+          <td>Sequence Annotation</td>
+          <td>Per sequence annotation of named attributes and values.<br /> Example: Processed sequencing data for submission to dbEST without assembly.<br /> Reads have already been submitted to one of the sequence read archives in raw form.<br /> The fasta data submitted under this analysis object result from the following treatments, which may serve to filter reads from the raw dataset:<br />     - sequencing adapter removal<br />     - low quality trimming<br />- poly-A tail removal<br />- strand orientation <br />- contaminant removal.</td>
+        </tr>
+        <tr>
+          <td>Abundance Measurement</td>
+          <td>Identify the tools and processing steps used to produce the abundance measurements (coverage tracks).</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<h4 id="data-files-for-analysis-">Data files for Analysis <a name="Area_data-files-for-analysis"></a></h4>
+
+<p>Analysis に含めるデータファイルを選択します。</p>
+
+<dl>
+  <dt><a href="#Run_Analysis_for_Analysis">Run/Analysis</a><a name="Run_Analysis_for_Analysis"></a></dt>
+  <dd>データファイルが Run もしくは Analysis に属しているのかを指定します。ウェブ画面上では入力できず、属している Run もしくは Analysis の alias が選択されると自動的に入力されます。タブ区切りテキストファイルで入力する場合には、Run もしくは Analysis を入力します。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Analysis_File_Name">File Name</a><a name="Analysis_File_Name"></a><span class="red">*</span></dt>
+  <dd>解析データのファイル名。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Analysis_Run_Analysis_contains_files">Run/Analysis contains files</a><a name="Analysis_Run_Analysis_contains_files"></a><span class="red">*</span></dt>
+  <dd>データファイルが属する Analysis を選択します。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Analysis_File_Type">File Type</a><a name="Analysis_File_Type"></a><span class="red">*</span></dt>
+  <dd>解析データのファイル形式。
+
+    <table>
+      <thead>
+        <tr>
+          <th>File Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>bam</td>
+          <td>Binary form of the Sequence alignment/map format for read placements, from the SAM tools project.<br />See <a href="http://sourceforge.net/projects/samtools/">http://sourceforge.net/projects/samtools/</a>.</td>
+        </tr>
+        <tr>
+          <td>tab</td>
+          <td>A tab delimited text file that can be viewed as a spreadsheet. The first line should contain column headers..</td>
+        </tr>
+        <tr>
+          <td>ace</td>
+          <td>Multiple alignment file output from the phred assembler and similar programs.<br />See <a href="http://www.phrap.org/consed/distributions/README.16.0.txt">http://www.phrap.org/consed/distributions/README.16.0.txt</a> for a description of the ACE file format..</td>
+        </tr>
+        <tr>
+          <td>fasta</td>
+          <td>Sequence data format indicating sequence base calls.The format is simple: a header line initiated with the &gt; character, data lines following with base calls..</td>
+        </tr>
+        <tr>
+          <td>wig</td>
+          <td>The wiggle (WIG) format allows display of continuous-valued data in track format.This display type is useful for GC percent, probability scores, and transcriptome data.<br /> See <a href="http://genome.ucsc.edu/goldenPath/help/wiggle.html">http://genome.ucsc.edu/goldenPath/help/wiggle.html</a> for a description of the Wiggle Track format..</td>
+        </tr>
+        <tr>
+          <td>bed</td>
+          <td>BED format provides a flexible way to define the data lines that are displayed in an annotation track.<br /> See <a href="http://genome.ucsc.edu/FAQ/FAQformat#format1">http://genome.ucsc.edu/FAQ/FAQformat#format1</a> for a description of the BED format..</td>
+        </tr>
+        <tr>
+          <td>vcf</td>
+          <td>Variant Call Format.<br />See <a href="http://www.1000genomes.org/wiki/analysis/variant%20call%20format/vcf-variant-call-format-version-41">http://www.1000genomes.org/wiki/analysis/variant%20call%20format/vcf-variant-call-format-version-41</a> for a description of the VCF format.</td>
+        </tr>
+        <tr>
+          <td>maf</td>
+          <td>Mutation Annotation Format</td>
+        </tr>
+        <tr>
+          <td>gff</td>
+          <td>General Feature Format</td>
+        </tr>
+        <tr>
+          <td>csv</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>tsv</td>
+          <td> </td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Analysis_MD5_Checksum">MD5 Checksum</a><a name="Analysis_MD5_Checksum"></a><span class="red">*</span></dt>
+  <dd>Analysis データファイルの MD5 チェックサム値。<a href="#supplement-md5">MD5 チェックサム値の取得方法補足</a></dd>
+</dl>
+
+<h2 id="run-データファイル-">Run データファイル <a name="run-data-files"></a></h2>
+
+<p>アライメントデータやシークエンスデータを登録します。</p>
+
+<div class="attention red">
+  <ul>
+    <li>fasta は受け付けていません。最低限 quality score 付きのベース/カラーコールデータが必要です。</li>
+    <li>ファイル名は英数字 [A-Z,a-z,0-9]、アンダースコア [_]、ハイフン [-] とドット [.] のみから構成され、空白文字、カッコ、句読点やシンボルを含まないこと。</li>
+    <li>バーコード配列で由来サンプルが区別されたデータファイルは登録前に分割し、由来サンプルごとに BioSample を作成します。各 BioSample には１つかそれ以上のユニークなデータファイルがリンクされている状態にします。</li>
+    <li>fastq ファイルの場合、ペアリードは別々のファイルとして登録します。bam や sff ファイルの場合、分割する必要はありません。</li>
+    <li>データファイルは登録用ディレクトリの直下に置いてください。基本的に tar などのアーカイブファイルのなかにディレクトリを作成しないでください。</li>
+    <li>BAM、SFF や HDF5 などのバイナリーファイルは圧縮しないでください。</li>
+  </ul>
+</div>
+
+<h3 id="登録するデータファイルの形式について--">登録するデータファイルの形式について <a name="formats-sequencing-data-files"></a> <a name=""></a></h3>
+
+<p>DRA のメタデータ作成ツールは technical read (アダプター、プライマーやバーコード配列) を記載することに対応していません。 「technical read を含む生データを登録する場合」や「<a href="https://github.com/ddbj/pub/tree/master/docs/dra">DRA XML schema</a> 中にはあるがツール中には無い項目をメタデータに記載する場合」は<a href="#create-metadata-in-xml-files">メタデータを XML ファイルで登録する</a>必要があります (<a href="/ddbj/example.html">XML の記載例</a>)。</p>
+
+<p>一般的な形式</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Format</th>
+      <th>Platform</th>
+      <th>Recommended</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#BAM_file">BAM</a></td>
+      <td>all platforms</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><a href="#fastq">fastq</a></td>
+      <td>all platforms</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>プラットフォーム特異的な形式</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Format</th>
+      <th>Platform</th>
+      <th>Recommended</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#454">SFF</a></td>
+      <td>454 and Ion Torrent</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><a href="#Pacific_Biosciences">PacBio HDF</a></td>
+      <td>PacBio</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td><a href="#SOLiD">SOLiD csfasta/qual</a></td>
+      <td>SOLiD</td>
+      <td>No (please convert to fastq/bam)</td>
+    </tr>
+    <tr>
+      <td><a href="#Illumina_Native_Data">Illumina qseq and scarf</a></td>
+      <td>Illumina</td>
+      <td>No (please convert to fastq/bam)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="bam-ファイル-">BAM ファイル <a name="BAM_file"></a></h3>
+
+<p>Binary Alignment/Map (BAM) ファイルは DRA への登録にとって好ましいファイル形式の一つです。BAM は Sequence Alignment/Map (SAM) ファイル形式のバイナリー圧縮です (詳細は <a href="https://samtools.github.io/hts-specs/SAMv1.pdf">SAMv1.pdf</a>)。BAM ファイルは SAM/BAM 用ツール (例えば <a href="http://www.htslib.org/">samtools</a>) で human-readable なテキスト形式である SAM に変換することができます。BAM はアライメントされなかった unaligned read を含めることができます。DRA はプライマリーデータとして Run に unaligned read を含む BAM を登録することを推奨しています。</p>
+
+<p>SAM はリードの既知リファレンス配列へのアライメントに関する情報と生リードデータを含んだタブ区切りテキストファイルです。 SAM ファイルは二つの主要なセクション、ヘッダーとアライメント（シークエンスリード）セクション、から構成されます。 ここでは「BAM ファイルの DRA への登録」という観点で SAM フォーマットについて説明していることに留意してください（DRA は SAM ファイルでの登録を受付けていません）。 より詳細なファイルフォーマット仕様は <a href="http://www.htslib.org/">samtools ウェブサイト</a>を参照してください。</p>
+
+<p>SAM ヘッダーの例:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@HD    VN:1.4    SO:coordinate
+@SQ    SN:CHROMOSOME_I    LN:15072423
+UR:ftp://ftp.ncbi.nlm.nih.gov/genbank/genomes/Eukaryotes/invertebrates/Caenorhabditis_elegans/
+WBcel215/Primary_Assembly/assembled_chromosomes/FASTA/chrI.fa.gz    AS:ce10    
+SP:Caenorhabditis elegans
+ 
+@SQ    SN:CHROMOSOME_II    LN:15279345    
+UR:ftp://ftp.ncbi.nlm.nih.gov/genbank/genomes/Eukaryotes/invertebrates/Caenorhabditis_elegans/
+WBcel215/Primary_Assembly/assembled_chromosomes/FASTA/chrII.fa.gz     AS:ce10    
+SP:Caenorhabditis elegans  
+ 
+@RG    ID:1    PL:ILLUMINA    LB:C_ele_05    DS:WGS of C elegans    PG:BamIndexDecoder
+@PG    ID:bwa    PN:bwa    VN:0.5.10-tpx
+</code></pre></div></div>
+
+<p>SAM アライメントの例:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>3658435    145    CHROMOSOME_I    1    0    100M    CHROMOSOME_II    2716898    0    
+GCCTAAGCCTAAGCCTAAGCCTAAGCCTAAGCCTAAGCCTAAGCCTAAGCCTAAGCCTAAGCCTAAGCCTAAGCCTAAGCCTAAGCCTAAGCCT
+AAGCCT    
+@CCC?:CCCCC@CCCEC&gt;AFDFDBEGHEAHCIGIHHGIGEGJGGIIIHFHIHGF@HGGIGJJJJJIJJJJJJJJJJJJJJJJJJJJJHHHHHFF
+FFFCCC    RG:Z:1    NH:i:1    NM:i:0
+    
+5482659    65    CHROMOSOME_I    1    0    100M    CHROMOSOME_II    11954696    0    
+GCCTAAGCCTAAGCCTAAGCCTAAGCCTAAGCCTAAGCCTAAGCCTAAGCCTAAGCCTAAGCCTAAGCCTAAGCCTAAGCCTAAGCCTAAGCCT
+AAGCCT    
+CCCFFFFFHHGHGJJGIJHIJIJJJJJIJJJJJIJJGIJJJJJIIJIIJFJJJJJFIJJJJIIIIGIIJHHHHDEEFFFEEEEEDDDDCDCCCA
+AA?CC:    RG:Z:1    NH:i:1    NM:i:0
+</code></pre></div></div>
+
+<h4 id="bam-ファイル処理-">BAM ファイル処理 <a name="BAM_ファイル処理"></a></h4>
+
+<p>ヘッダーとアライメントセクションは整合的である必要があります: 各アライメントリードの RNAME (リファレンス配列の名前、3フィールド目) はヘッダー中の SN タグ値 (例 CHROMOSOME_I) と一致している必要があります。加えて、アライメントリードの任意フィールドである read group (RG:Z:) はヘッダー中の read group ID と一致している必要があります (例 1)。 また、2フィールド目の FLAG フィールドはデータに対して正しい値がセットされていることが重要です。 DRA ファイル処理パイプラインは不正な FLAG 値を補正しますが、不正な値が多すぎる場合はエラーになり す。DRA はアライメントセクション中の任意かつ非標準のタグ/フィールド値は保持しません。 しかし、ヘッダーセクション全体は保持されます。</p>
+
+<p>SAM フォーマットはリードのリファレンスへの全体マッチを表すイコールサイン (=) の sequence フィールドでの使用、もしくは、アスタリスク (*) の sequence と quality 両フィールドでの使用を許容していますが、DRA 処理パイプラインはこれらの値を認 しません。</p>
+
+<p>予期せぬ表記方法で記されたペアリードは適切に認識されず不適切な SRA ファイル形成をもたらします（ペアリードがシングルフラグメントとして扱われてしまいます）。例えば、リー 名の後ろに :0 と :1 と付されたリードはペアのリード１と２として認識されません。これらの表記方法が使用されている 合、:0 と :1 を削除して同じリード名を使ったほうがよいです。特定のシークエンサから出力される標準的な表記方法は正し 認識されます。 例えば、Illumina のリード名に付された /1 と /2 は標準的な表記方法です。 ペアリードに対して SAM BAM flag に適切なビット値 (multi-segment template 1-bit、first segment 64-bit と last segment 128-bit) が設定されていない場合、もしくは、ペアリードが別々の bam ファイルに分かれ いる場合は適正な SRA ファイルが生成されません。</p>
+
+<p>Run にアライメントデータを登録する場合は、「BAM」、「INSDC, refseq アクセッション番号 OR リファレンス配列マルチ fasta、それから bam SN リファレンス名、との対応表」が必要です。1 Run に 1 bam ファイルを登録します。</p>
+
+<p>Run ではなく Analysis に登録する場合対応表は不要ですが、アライメントされなかったリードを含めた bam を Run に登録することを強く推奨します。</p>
+
+<div class="attention red">
+  <p>PacBio や IonTorrent などでリファレンス配列がない bam ファイル (unmapped bam でありヘッダーに SQ 行がない) が出力データの場合、対応表やリファレンス fasta を指定する必要はありません</p>
+</div>
+
+<div class="attention red">
+  <p>将来、新しいツールで再解析や再アライメントする際に重要であるため、bam ファイルのみを登録するときはアライメントされなかったリード (unaligned reads) を含めてください。</p>
+</div>
+
+<a class="group1" href="/assets/images/books/bam-mapping.jpg" title="bam とリファレンス配列の対応付け">
+  <figure class="image">
+    <img src="/assets/images/books/bam-mapping.jpg" alt="bam とリファレンス配列の対応付け" class="w500">
+    <figcaption>bam とリファレンス配列の対応付け</figcaption>
+  </figure>
+</a>
+
+<ol>
+  <li>
+    <h4 id="bam-">BAM <a name="BAM"></a></h4>
+    <p>アライメントデータを BAM フォーマットで登録することができます。BAM ファイルは <a href="http://samtools.sourceforge.net/">SAMtools</a> と <a href="https://broadinstitute.github.io/picard/">picard</a> で読み込める形式になっている必要があります。圧縮していない BAM ファイルをアップロードしてください。 <br />
+  Run の <a href="#File_Type">File Type</a> には “bam” を選択します。</p>
+  </li>
+  <li>
+    <h4 id="リファレンスを-insdcrefseq-アクセッション番号で指定-">リファレンスを INSDC/RefSeq アクセッション番号で指定 <a name="リファレンスを_INSDC/RefSeq_アクセッション番号で指定"></a></h4>
+    <p>リファレンス配列が<a href="/assets/files/ref/ref-file.txt">リスト</a>にある場合、アクセッション番号.バージョン番号 (例 NC_000001.11) でリファレンスを参照することができます。 <a href="/ddbj/flat-file.html#Version">配列のバージョン番号</a>は必須です。リファレンスゲノム配列のアクセッション番号は<a href="https://www.ncbi.nlm.nih.gov/assembly/">NCBI Assembly</a> で検索することができます。</p>
+  </li>
+  <li>
+    <h4 id="リファレンスをマルチ-fasta-で提供-">リファレンスをマルチ fasta で提供 <a name="リファレンスをマルチ_fasta_で提供"></a></h4>
+    <p>リファレンス配列が<a href="/assets/files/ref/ref-file.txt">リスト</a>にない場合、リファレンス配列をマルチ fasta ファイルで提供します。真核生物のオルガネラ配列等短い配列は番号指定に対応していないケースがあります。
+  Run の <a href="#File_Type">File Type</a> には “reference_fasta” を選択します。bam ヘッダーで定義されたリファレンスとマルチ fasta 中の配列は対応表を介して defline 中の配列名でリンクされます。 bam SQ 行 LN タグのリファレンス配列長とマルチ fasta 中の配列長が異なっている場合ワーニングになります。</p>
+  </li>
+  <li>
+    <h4 id="insdcrefseq-アクセッション番号とマルチ-fasta-が混在するケース-">INSDC/RefSeq アクセッション番号とマルチ fasta が混在するケース <a name="INSDC/RefSeq_アクセッション番号とマルチ_fasta_が混在するケース"></a></h4>
+    <p>一部のリファレンス配列が<a href="/assets/files/ref/ref-file.txt">リスト</a>にある場合、アクセッション.バージョン番号 (例 NC_000001.11) で一部のリファレンスを指定し、残りのリファレンス配列はマルチ fasta ファイルで提供します。混在しているケースでは、対応表にアクセッション.バージョン番号とマルチ fasta 中の defline 中の配列名を記載します。</p>
+  </li>
+  <li>
+    <h4 id="sn-リファレンス配列の対応表-">SN-リファレンス配列の対応表 <a name="SN-リファレンス配列の対応表"></a></h4>
+    <p>ご自分で独自に作成するファイルです。「BAM ファイルヘッダーの SQ 行中の SN 値」と「アクセッション番号 OR リファレンスマルチ fasta ファイル中の配列名」との対応関係をタブ区切りで記載します。 Run の <a href="#File_Type">File Type</a> には “tab” を選択します。</p>
+  </li>
+</ol>
+
+<p>BAM ファイルヘッダー
+<!-- end list --></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@HD VN:1.0 GO:none SO:coordinate
+@SQ SN:chr1 LN:249698942
+@SQ SN:chr2 LN:242508799
+@SQ SN:chr3 LN:198450956
+...
+</code></pre></div></div>
+
+<p>SN-リファレンス配列の対応表。例では SN:chr1 にリファレンス fasta ファイル中の配列 ref1 が対応。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chr1 ref1
+chr2 ref2
+chr3 ref3
+...
+</code></pre></div></div>
+
+<p>リファレンスマルチ fasta。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;ref1
+CGGTGGGGGTGGTGTTAGTACCCCATCTTGTAGGTCTGAAACACAAAGTGTGGGGTGTCT
+...
+&gt;ref2
+TCCACCAACGTTAGAAGGCCTTGGCCCCCAGAGAGCCAATTTCACAATCCAGAAGTCCCC
+...
+&gt;ref3
+GTGTGTGACCAGGGAGGTCCCCGGCCCAGCTCCCATCCCAGAACCCAGCTCACCTACCTT
+...
+</code></pre></div></div>
+
+<p>SN-リファレンス配列の対応表。例では SN:chr1 に NC_000001.11 が対応。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chr1 NC_000001.11
+chr2 NC_000002.12
+chr3 NC_000003.12
+...
+</code></pre></div></div>
+
+<h3 id="fastq-">fastq <a name="fastq"></a></h3>
+
+<p>Run の filetype はリード長が一定・不定によって異なります。</p>
+
+<ul>
+  <li>リード長が揃っている fastq ファイルの場合、Run の file type で <span class="red">fastq</span> を選択します。ペアードデータの場合、対になっているファイル中でペアとなっているリードが同じ順番で記載されている必要があります。</li>
+  <li>リード長が一定ではない fastq ファイル: Run の file type で <span class="red">generic_fastq</span> を選択します。</li>
+</ul>
+
+<p>fastq の形式。詳しくは<a href="https://www.ncbi.nlm.nih.gov/sra/docs/submitformats/#fastq-files">NCBI のサイト</a>をご覧ください。</p>
+
+<ul>
+  <li>Quality value は phred 形式にしてください。オフセットはデフォルトで 33 (!) になります。64 (@) の場合は <a href="#create-metadata-in-xml-files">Run XML を編集</a>して ascii_offset=”@” にしてください。</li>
+  <li>DRA のメタデータ作成インターフェースは Technical read (アダプター、リンカー、バーコード配列)
+記載に対応していないため、Technical read を含める場合は <a href="#formats-sequencing-data-files">登録するデータファイルの形式について</a> を参考に technical read が記載された Experiment XML を登録してください (<a href="/ddbj/example.html">XML の記載例</a>)。Technical reads が除去されている場合、XML 登録は必要ありません。</li>
+  <li>ペアードリードは別々の fastq ファイルとして登録してください。リード名にペアリードを同定するためのサフィックス (例 ‘/1’ と ‘/2’) が含まれている必要があります。</li>
+  <li>各リードの最初の行は ‘@’ で始まっている必要があります。</li>
+  <li>ベースコールと Quality value は ‘+’ で始まる行で区切られている必要があります。</li>
+  <li>fastq ファイルは gzip もしくは bzip2 で圧縮してください。</li>
+</ul>
+
+<h3 id="454-">454 <a name="454"></a></h3>
+
+<p>454 からのシークエンスデータは sff ファイル か fastq/bam ファイルで登録します。</p>
+
+<p>sff ファイル中のリード名は、プレート内の位置情報とユニークな run id を反映した情報を含んでいるので、sff ファイルを書き変えないでください。</p>
+
+<p>sffファイル形式はすでに最適化されており、ファイルをさらに圧縮する必要はありません。圧縮していない sff ファイルを送付してください。</p>
+
+<p>sff ファイルに２つ以上のサンプルに由来するデータが含まれている場合は、sff から生成した fastq
+ファイルをサンプルごとに分割して登録してください。</p>
+
+<h3 id="illumina-genome-analyzer-">Illumina Genome Analyzer <a name="Illumina-Genome-Analyzer"></a></h3>
+
+<h4 id="illumina-native-data-">Illumina Native Data <a name="Illumina_Native_Data"></a></h4>
+
+<h5 id="illumina-pipeline-v14-以降">Illumina pipeline v1.4 以降</h5>
+
+<p>qseq ファイルでの登録は受け付けておりません。fastq/bam ファイルに変換してから登録してください。</p>
+
+<h3 id="solid-">SOLiD <a name="SOLiD"></a></h3>
+
+<h4 id="solid-native-format-">SOLiD Native Format <a name="SOLiD_Native_Format"></a></h4>
+
+<p>SOLiD native ファイルでの登録は受け付けておりません。fastq/bam ファイルに変換してから登録してください。</p>
+
+<h3 id="ion-torrent-">Ion Torrent <a name="Ion-Torrent"></a></h3>
+
+<p>sff ファイルもしくは fastq/bam ファイルを登録します。</p>
+
+<h3 id="helicos-heliscope-">Helicos Heliscope <a name="Helicos-Heliscope"></a></h3>
+
+<p>quality value をすべて “14” として作成した fastq/bma ファイルを登録します。</p>
+
+<h3 id="complete-genomics-">Complete Genomics <a name="Complete-Genomics"></a></h3>
+
+<p><a href="#fastq">fastq ファイル</a>を登録します。</p>
+
+<h3 id="pacific-biosciences-">Pacific Biosciences <a name="Pacific-Biosciences"></a></h3>
+
+<h4 id="hdf5-">HDF5 <a name="hdf5"></a></h4>
+
+<p>Pacific Biosciences は生データを格納するためにディレクトリ様構造を持つ HDF5 ファイルを使用しています。DRA は bas.h5 と bax.h5 両方のファイル形式での登録を受け付けています。RS II から出力されるデータは、１ の Run に *.bas.h5 １ファイルと *.bax.h5 ３ファイルを登録します。ファイル名を変更しないでください。</p>
+
+<div class="attention red">
+  <p>Run に HDF5 以外のデータを含めないでください。</p>
+</div>
+
+<h4 id="bam--1">bam <a name="pacbio_bam"></a></h4>
+
+<p>以下の unaligned bam ファイルの登録をサポートしています。1 Run に 1 bamファイルを指定してください。
+unaligned bamの場合、リファレンス配列や対応表の指定は必要ありません。</p>
+
+<ul>
+  <li>subread BAM files (*.subreads.bam)</li>
+  <li>CCS read BAM files (*.ccs.bam)</li>
+</ul>
+
+<h4 id="fastq--1">fastq <a name="pacbio_fastq"></a></h4>
+
+<p>リード長は可変なので <a href="#fastq">generic_fastq</a> を Run の filetype で指定してください。</p>
+
+<h3 id="oxford-nanopore-">Oxford Nanopore <a name="Oxford-Nanopore"></a></h3>
+
+<p>fastq/bam ファイルを登録します。</p>
+
+<h3 id="キャピラリシークエンサ-">キャピラリシークエンサ <a name="Capillary-sequencing-platform"></a></h3>
+
+<p>fastq/bam ファイルを登録します。</p>
+
+<h2 id="analysis-データファイル-">Analysis データファイル <a name="analysis-data-files"></a></h2>
+
+<h3 id="pacbio-base-modification-files-">PacBio Base Modification Files <a name="Pacbio-Base-Modification-Files"></a></h3>
+
+<p><a href="http://www.pacb.com">PacBio</a> シークエンサーは塩基配列に加え、塩基のメチル化状態を解析することができ、そのデータを共有することは研究者コミュニティにとって重要です。 例えば、修飾された塩基の正確な位置情報は DNA メチルトランスフェラーゼの特異性の解析に用いることができます。 PacBio の解析ソフトウェア(RS_Modification_and_Motif_Analysis) はこれらの修飾塩基配列情報を抽出し、以下のいくつかのファイルに出力します:</p>
+
+<ul>
+  <li>motif_summary.csv</li>
+  <li>modifications.csv</li>
+  <li>modifications.gff</li>
+  <li>motifs.gff</li>
+</ul>
+
+<p>この解析結果ファイル、原核生物については少なくとも motif_summary.csv ファイルを DRA Analysis として登録することは研究者コミュニティにとって貴重なデータになります。 Run に加え、これらのファイルを <a href="#Analysis_Type">Sequence Annotation type</a> Analysis として是非ご登録ください。 サポートが必要な場合は <a href="/contact-ddbj.html">DRA チームにご連絡ください</a>。</p>
+
+<p><a href="https://www.ncbi.nlm.nih.gov/genbank/basemodificationfiles">NCBI guidelines of PacBio Base Modification Files</a></p>
+
+<h1 id="dra-へのデータ登録-">DRA へのデータ登録 <a name="dra-submission"></a></h1>
+
+<div class="attention red">
+  <p>研究責任者 (principal investigator) の許可なくデータを登録しないでください。</p>
+</div>
+
+<div class="attention">
+  <dl>
+    <dt>ヒトを対象とした研究データの登録について</dt>
+    <dd><span class="red">研究対象者に由来するデータを DDBJ センターが運営するデータベースに登録する場合、研究対象者の尊厳及び人権は、適用されるべき法令、指針、ガイドライン、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。原則として、研究対象者を直接特定し得る情報はメタデータから取り除いてください。
+ヒトを対象とした研究データを登録する場合は<a href="/policies.html#human">「ヒトを対象とした研究データの登録について」</a>を熟読してください。</span></dd>
+  </dl>
+</div>
+
+<div class="attention">
+  <dl>
+    <dt>特許に関連するデータの登録</dt>
+    <dd><span class="red">登録するデータが特許に関連する場合は、<a href="/policies.html#disclaimer">「特許に関連する塩基配列の登録に関する注意、データの優先権」</a>の内容を必ずご確認ください。</span></dd>
+  </dl>
+</div>
+
+<p>次世代シークエンサからのデータを DRA に登録するためにはメタデータとシークエンスデータが必要です。</p>
+
+<p>アセンブルした配列データは <a href="/index.html">DDBJ</a> へ登録します。<a href="/services/mss.html">DDBJ Mass Submission System (MSS)</a> が、次世代シークエンサから生み出されるゲノムや大量データの登録受付先になります。</p>
+
+<h2 id="dra-登録の流れ-">DRA 登録の流れ <a name="dra-data-submission"></a></h2>
+
+<h3 id="1-登録アカウントを作成">1. 登録アカウントを作成</h3>
+
+<ul>
+  <li><a href="/account.html">D-way 登録アカウント</a>を作成</li>
+  <li><a href="/account.html#enable-dra-submission-in-account">公開鍵と center name をアカウントに登録</a>し、DRA 登録を可能に</li>
+</ul>
+
+<h3 id="2-dra-登録を作成しデータファイルをアップロード">2. DRA 登録を作成しデータファイルをアップロード</h3>
+
+<ul>
+  <li>新規 DRA 登録を作成 (<a href="/account.html#enable-dra-submission-in-account">アカウントに DRA 登録権限を付与しておきます</a>)<br />
+データは DRA 登録 (Submission) 単位で公開されます。</li>
+  <li>BioProject、BioSample、Experiment と Run を投稿する前にデータファイルを scp でアップロード</li>
+</ul>
+
+<h3 id="3-プロジェクトとサンプル情報を登録">3. プロジェクトとサンプル情報を登録</h3>
+
+<h4 id="bioproject-study-"><a href="/bioproject//submission.html">BioProject (Study)</a> <a name="__________BioProject_Study________"></a></h4>
+
+<ul>
+  <li>研究プロジェクトの内容</li>
+  <li>「なぜ」そのサンプルをシークエンスしたのか</li>
+</ul>
+
+<h4 id="biosample-sample-"><a href="/bioproject//submission.html">BioSample (Sample)</a><a name="__________BioSample_Sample________"></a> <img src="/assets/images/parts/tsv.png" alt="" class="tsv" /></h4>
+
+<ul>
+  <li>生物学的、物理的にユニークなサンプル</li>
+  <li>「何を」シークエンスしたのか</li>
+</ul>
+
+<p><img src="/assets/images/parts/tsv.png" alt="" class="tsv" />メタデータをタブ区切りテキストファイルで登録できます</p>
+
+<h3 id="4-experiment-と-run-を登録">4. Experiment と Run を登録</h3>
+
+<h4 id="dra-experiment--">DRA Experiment <a name="DRA_Experiment"> <img src="/assets/images/parts/tsv.png" alt="" class="tsv" /></a></h4>
+
+<ul>
+  <li>特定のサンプルから構築したライブラリーについての説明</li>
+  <li>「どのように」シークエンスをしたのか</li>
+  <li>複数の Experiment は一つの Sample を参照できるが、逆はできない</li>
+</ul>
+
+<h4 id="dra-run--">DRA Run <a name="DRA_Run"></a> <img src="/assets/images/parts/tsv.png" alt="" class="tsv" /></h4>
+
+<ul>
+  <li>Experiment と Run を投稿した後、データファイルの検証処理を開始</li>
+  <li>Run にリンクしている全てのデータファイルは 1 つの SRA ファイルにマージされます</li>
+</ul>
+
+<h3 id="5-シークエンスデータファイルの検証処理">5. シークエンスデータファイルの検証処理</h3>
+
+<ul>
+  <li>シークエンスデータファイルをアーカイブ用 SRA ファイルに変換する処理を開始</li>
+  <li>検証処理を通った登録が査定されアクセッション番号が発行される</li>
+</ul>
+
+<h2 id="dra-へのデータ登録方法-">DRA へのデータ登録方法 <a name="how-to-submit-dra-data"></a></h2>
+
+<p>アカウント取得から BioProject/BioSample/DRA の登録まで全てをカバーした <a href="https://togotv.dbcls.jp/20190523.html">TogoTV</a> (22分12秒、作成:2019年)</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6IDeMaLDuQQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<p>BioProject/BioSample/DRA の登録方法 (6分50秒、作成:2015年)</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GbAVB3Zg1tw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h3 id="登録アカウント-">登録アカウント <a name="submission-account"></a></h3>
+
+<p><a href="/index.html">日本 DNA データバンク (DDBJ) センター</a> は <a href="/bioproject/index.html">BioProject</a> 、<a href="/biosample/index.html">BioSample</a> と <a href="/dra/index.html">DRA</a> への登録をユーザアカウントで管理しています。</p>
+
+<p><a href="/account.html">登録アカウントマニュアル</a>に従い、登録アカウントを取得し、DRA 登録権限をアカウントに追加します。</p>
+
+<h3 id="データ構成-">データ構成 <a name="organize-data"></a></h3>
+
+<p>オブジェクトの構成例は<a href="#index_id2">こちら</a>をご覧ください。 Submission 中では１つの BioProject のみ登録できます。 BioSample、Experiment、Run は複数登録することができます。サンプル数を中心に考えるとデータを構成しやすくなります。</p>
+
+<p>ここでは３つのバクテリア菌株のゲノム配列をペアーエンドでシークエンスしたデータを登録する場合を例に説明します。</p>
+
+<a class="group1" href="/assets/images/books/datamodel1.jpg" title="三つの菌株のゲノム配列を登録">
+  <figure class="image">
+    <img src="/assets/images/books/datamodel1.jpg" alt="三つの菌株のゲノム配列を登録" class="w450">
+    <figcaption>三つの菌株のゲノム配列を登録</figcaption>
+  </figure>
+</a>
+
+<h3 id="新規登録の作成-">新規登録の作成 <a name="create-new-submission"></a></h3>
+
+<p><a href="https://ddbj.nig.ac.jp/D-way/">D-way (https://ddbj.nig.ac.jp/D-way)</a> にログインします。上部の DRA メニューから DRA のデータ登録一覧ページへ進みます。</p>
+
+<p>[New submission] をクリックし、新規登録を作成します。<br />
+同時に、データ受付サーバ (ftp-private.ddbj.nig.ac.jp) に対応するディレクトリがホーム直下に作成されます。<a href="#upload-sequence-data">データファイルはこのディレクトリにアップロードします</a>。</p>
+
+<div class="attention red">
+  <p>DDBJ センターから登録者に問い合わせた後三か月以上回答が無い場合は Submission をキャンセルいたします。</p>
+</div>
+
+<div class="attention red">
+  <p>オブジェクトは Submission 単位で公開されます。オブジェクトを異なる時期に公開したい場合は Submission を分けて登録してください。</p>
+</div>
+
+<a class="group1" href="/assets/images/books/hdra01.jpg" title="新規 DRA 登録の作成">
+  <figure class="image">
+    <img src="/assets/images/books/hdra01.jpg" alt="新規 DRA 登録の作成" class="w450">
+    <figcaption>新規 DRA 登録の作成</figcaption>
+  </figure>
+</a>
+
+<p>登録のステータスには以下のものがあります。”submission_validated” と “data_error”
+になった登録が査定されます。</p>
+
+<p class="tablecaption">DRA 登録のステータス一覧</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>ステータス</th>
+      <th>状態</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>New</td>
+      <td>メタデータの投稿前</td>
+    </tr>
+    <tr>
+      <td>metadata_submitted</td>
+      <td>メタデータが投稿された</td>
+    </tr>
+    <tr>
+      <td>data_validating</td>
+      <td>データファイルの検証処理中</td>
+    </tr>
+    <tr>
+      <td>data_error</td>
+      <td>データファイルの検証処理エラー</td>
+    </tr>
+    <tr>
+      <td>submission_validated</td>
+      <td>メタデータとデータファイルの検証処理が完了</td>
+    </tr>
+    <tr>
+      <td>completed</td>
+      <td>アクセッション番号が発行された</td>
+    </tr>
+    <tr>
+      <td>confidential</td>
+      <td>公開用ファイルの作成処理が完了し、非公開に保たれている状態</td>
+    </tr>
+    <tr>
+      <td>Public</td>
+      <td>公開されている状態</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="シークエンスデータのアップロード-">シークエンスデータのアップロード <a name="upload-sequence-data"></a></h3>
+
+<p><span class="red">メタデータを作成する前に登録するシークエンスデータファイルをアップロードします。先にメタデータを作成する場合は適当なファイルをアップロードしてください。</span></p>
+
+<div class="accordion-menu">
+  <h4 class="toggle-content-btn"><a href="javascript:void(0)">ターミナルによるシークエンスデータの転送 (Linux/Mac OS X)</a></h4>
+  <div class="accordion-content">
+
+    <p>ファイルを SCP 転送します。</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ scp &lt;Your Files&gt; &lt;D-way Login ID&gt;@ftp-private.ddbj.nig.ac.jp:~/&lt;DRA Submission ID&gt;
+</code></pre></div>    </div>
+
+    <ul>
+      <li>
+        <Your Files=""> 転送するファイル。例: file1 file2 (file1とfile2)、file*
+(fileではじまる全てのファイル)
+</Your>
+      </li>
+      <li>
+        <D-way Login="" ID=""> D-way の Login ID (例 test07)
+</D-way>
+      </li>
+      <li>
+        <DRA Submission="" ID=""> DRA 登録の Submission ID (例: test07-0018)
+</DRA>
+      </li>
+      <li>コマンドの例: scp strainA_1.fastq test07@ftp-private.ddbj.nig.ac.jp:~/test07-0018</li>
+    </ul>
+
+    <p>鍵を作成したときに指定したパスフレーズを入力します。</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Enter passphrase for key '/home/you/.ssh/id_rsa': 
+</code></pre></div>    </div>
+
+    <p>サーバにログインし、直接ファイルを操作することができます。サーバに SSH でログインします。</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ssh &lt;D-way Login ID&gt;@ftp-private.ddbj.nig.ac.jp
+</code></pre></div>    </div>
+
+    <p>鍵を作成したときに指定したパスフレーズを入力します。</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Enter passphrase for key '/home/you/.ssh/id_rsa':
+</code></pre></div>    </div>
+
+    <p>ログインに成功すると、次のコマンドプロンプトが表示されます。</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[test07@dradata ~]$
+</code></pre></div>    </div>
+
+    <p>サーバのログイン環境は、登録者専用のプライベート環境になっていて、登録者以外はアクセスすることができません。実行できるコマンドは下記のものに制限されています。不要なファイルの削除は登録者が実施することができます。</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
+</code></pre></div>    </div>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« 閉じる</a></p>
+  </div>
+</div>
+
+<div class="accordion-menu">
+  <h4 class="toggle-content-btn"><a href="javascript:void(0)">WinSCP によるシークエンスデータの転送 (Windows)</a></h4>
+  <div class="accordion-content">
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZxIfewrk8lI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+    <p>DRA への登録 ～データの転送 (Windows)～</p>
+
+    <p><a href="http://winscp.net/eng/download.php">WinSCP (http://winscp.net/eng/download.php)</a> をインストールし、起動します。</p>
+
+    <p>以下のように設定した後、 右中央にある [Advanced…] をクリックします。</p>
+
+    <div class="attention red">
+      <p>転送モードはバイナリモードにします。テキストモードで転送しないでください。</p>
+    </div>
+
+    <ul>
+      <li><strong>File protocol:</strong> SFTP</li>
+      <li><strong>Host name:</strong> ftp-private.ddbj.nig.ac.jp</li>
+      <li><strong>Port number:</strong> 22</li>
+      <li><strong>User name:</strong> (D-way の Login ID を入力)</li>
+      <li><strong>Password:</strong> (空欄のまま)</li>
+    </ul>
+
+    <p><a href="/assets/images/books/winscp1_400.jpg" title="秘密鍵の選択１" class="group1"><img src="/assets/images/books/winscp1_400.jpg" alt="秘密鍵の登録１" title="秘密鍵の登録１" class="w300" /></a></p>
+
+    <p>“Authentication” にある “Private key file” で、事前に作成した PuTTY 形式の秘密鍵を選択します。</p>
+
+    <p><a href="/assets/images/books/winscp2_400.jpg" title="秘密鍵の選択2" class="group1"><img src="/assets/images/books/winscp2_400.jpg" alt="秘密鍵の登録2" title="秘密鍵の登録2" class="w300" /></a></p>
+
+    <p>最後に、下中央にある [Login] をクリックします。</p>
+
+    <p><a href="/assets/images/books/winscp3_400.jpg" title="winSCPへのログイン" class="group1"><img src="/assets/images/books/winscp3_400.jpg" alt="winSCPへのログイン" title="winSCPへのログイン" class="w300" /></a></p>
+
+    <p>初回接続時には警告メッセージが表示されますが、“はい” を選択してください
+(次回から表示されません)。次の画面では、鍵を作成した際に指定したパスフレーズを入力します。</p>
+
+    <p>ログインに成功すると、左側のウィンドウにユーザの PC のフォルダ、右側のウィンドウにデータ受付サーバの登録者専用ディレクトリが表示されます。 左側ウィンドウでファイルを選択し右側ウィンドウへドラッグ＆ドロップし、サーバへファイルを転送します。</p>
+
+    <p><a href="/assets/images/books/winscp4_400.jpg" title="ファイルの転送" class="group1"><img src="/assets/images/books/winscp4_400.jpg" alt="ファイルの転送" title="ファイルの転送" class="w400" /></a></p>
+
+    <p>転送したファイルは、ファイルを選択し [削除] ボタンをクリックすることで削除できます。</p>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« 閉じる</a></p>
+  </div>
+</div>
+
+<div class="accordion-menu">
+  <h4 class="toggle-content-btn"><a href="javascript:void(0)">Cyberduck によるシークエンスデータの転送 (Mac OS X)</a></h4>
+  <div class="accordion-content">
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/A2hPlGZEW_o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+    <p>DRA への登録 ～データの転送 (Mac)～</p>
+
+    <p><a href="http://cyberduck.ch">Cyberduck (http://cyberduck.ch)</a> をインストールし、起動します。</p>
+
+    <p>トップ画面で “Open Connection” を選択します。</p>
+
+    <p><a href="/assets/images/books/Cyberduck_1.jpg" title="open_connection" class="group1"><img src="/assets/images/books/Cyberduck_1.jpg" alt="open_connection" title="open_connection" class="w300" /></a></p>
+
+    <p>使用する転送方式で “SFTP (SSH File Transfer Protocol)” を選択します。</p>
+
+    <p><a href="/assets/images/books/Cyberduck_2.jpg" title="SFTP" class="group1"><img src="/assets/images/books/Cyberduck_2.jpg" alt="SFTP" title="SFTP" class="w300" /></a></p>
+
+    <p>Cyberduck の起動画面で、以下のように設定し More Options の “Use Public Key
+Authentication” をチェックします。</p>
+
+    <ul>
+      <li><strong>Server:</strong> ftp-private.ddbj.nig.ac.jp</li>
+      <li><strong>Port:</strong> 22</li>
+      <li><strong>Username:</strong> (D-wayのLogin IDを入力)</li>
+      <li><strong>Password:</strong> (空欄のまま)</li>
+      <li><strong>Add to Keychain:</strong> (チェックを入れる)</li>
+    </ul>
+
+    <p><a href="/assets/images/books/Cyberduck_3.jpg" title="key_authentication" class="group1"><img src="/assets/images/books/Cyberduck_3.jpg" alt="key_authentication" title="key_authentication" class="w300" /></a></p>
+
+    <p>秘密鍵 (private key) はデフォルトで “ユーザのホームフォルダ .ssh フォルダ (Finder からは見えない隠しフォルダ) &gt; id_rsa” に保存されています。</p>
+
+    <p><a href="/assets/images/books/Cyberduck_4.jpg" title="private_key" class="group1"><img src="/assets/images/books/Cyberduck_4.jpg" alt="private_key" title="private_key" class="w300" /></a></p>
+
+    <p>初回接続時には警告メッセージが表示されますが “常に” を選択してください (次回から表示されません)。</p>
+
+    <p>ログインに成功すると、データ受付サーバの登録者専用ディレクトリが表示されます。登録者の PC
+にあるファイルを選択しウィンドウにドラッグ＆ドロップすることで、ファイルをサーバに転送します。</p>
+
+    <p><a href="/assets/images/books/Cyberduck_5.jpg" title="transfer" class="group1"><img src="/assets/images/books/Cyberduck_5.jpg" alt="transfer" title="transfer" class="w400" /></a></p>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« 閉じる</a></p>
+  </div>
+</div>
+
+<div class="attention red">
+  <p>ftp-private.ddbj.nig.ac.jp サーバに秘密鍵を使って ssh でログインすることができます。
+実行できるコマンドは下記のものに制限されています。不要なファイルの削除は登録者が実施することができます。<br />
+ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip</p>
+</div>
+
+<div class="attention red">
+  <p><a href="/services/mss.html">DDBJ 大量登録システム (Mass Submission System, MSS)</a> 用の登録ファイルでサイズがメール添付の上限を超えるような場合は DRA サーバを利用することができます。 <a href="/contact-ddbj.html#to-ddbj">MSS チームに連絡</a>した後、ファイルを /submission/ [submitter ID]/mass にアップロードします。</p>
+</div>
+
+<h3 id="ウェブツールでのメタデータ作成-">ウェブツールでのメタデータ作成 <a name="create-metadata-using-tool"></a></h3>
+
+<p>作成した新規登録をクリックし、登録詳細ページへ移動します。</p>
+
+<a class="group1" href="/assets/images/books/hdra02.jpg" title="登録詳細ページへ移動">
+  <figure class="image">
+    <img src="/assets/images/books/hdra02.jpg" alt="登録詳細ページへ移動" class="w450">
+    <figcaption>登録詳細ページへ移動</figcaption>
+  </figure>
+</a>
+
+<p>登録詳細ページ中の [Enter / Update metadata] をクリックし、メタデータ作成ツールを起動します。</p>
+
+<a class="group1" href="/assets/images/books/hdra03.jpg" title="メタデータ作成ツールを起動">
+  <figure class="image">
+    <img src="/assets/images/books/hdra03.jpg" alt="メタデータ作成ツールを起動" class="w450">
+    <figcaption>メタデータ作成ツールを起動</figcaption>
+  </figure>
+</a>
+
+<p>新規登録に対応するファイルサーバのディレクトリにデータファイルがアップロードされていない場合、下記のようなメッセージが表示されます。<a href="#upload-sequence-data">データファイルをアップロードします</a>。</p>
+
+<p>先にメタデータを作成しておきたい場合は、適当なファイルをアップロードしておきます。</p>
+
+<a class="group1" href="/assets/images/books/hdra-not-uploaded.jpg" title="データファイルがアップロードされていない場合">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-not-uploaded.jpg" alt="データファイルがアップロードされていない場合" class="w200">
+    <figcaption>データファイルがアップロードされていない場合</figcaption>
+  </figure>
+</a>
+
+<p>メタデータは Submission、BioProject、BioSample、Experiment、Run、Analysis (任意)
+オブジェクトで構成されています。 メタデータ作成ツールの画面上で、各項目に内容を英語で入力していきます。</p>
+
+<p>入力画面で必須項目は赤色のアスタリスク記号 (<span class="red">＊</span>) で示されています。</p>
+
+<p>画面の下部にある [Save] や次のオブジェクトへの移動ボタンをクリックすると入力内容がチェックされます。エラーが表示された場合は内容を修正してください。</p>
+
+<h4 id="submission--1">Submission <a name="submission"></a></h4>
+
+<p>公開予定日を4年以内に設定します。 登録者には実作業者と責任者を含む複数名を指定してください。登録者情報は一般に公開されません。</p>
+
+<div class="attention red">
+  <p>オブジェクトは Submission 単位で公開されます。オブジェクトを異なる時期に公開したい場合は Submission を分けて登録してください。</p>
+</div>
+
+<a class="group1" href="/assets/images/books/hdra-submission01.jpg" title="Submission に登録情報を入力">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-submission01.jpg" alt="Submission に登録情報を入力" class="w450">
+    <figcaption>Submission に登録情報を入力</figcaption>
+  </figure>
+</a>
+
+<h4 id="study-">Study <a name="study"></a></h4>
+
+<p>[register a project] をクリックして新規にプロジェクトを登録するか、もしくは、自身のアカウントで登録したプロジェクト一覧から、該当するものを1つ選びます。
+従来通りプロジェクトを BioProject から個別に登録することもできます。</p>
+
+<p>複数のプロジェクトを登録することはできません。 自身のアカウント以外で取得されたプロジェクトを参照したい場合は <a href="/contact-ddbj.html">DRA チームに連絡してください</a>。</p>
+
+<a class="group1" href="/assets/images/books/hdra-bp01.jpg" title="BioProject の新規登録、もしくは選択">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-bp01.jpg" alt="BioProject の新規登録、もしくは選択" class="w450">
+    <figcaption>BioProject の新規登録、もしくは選択</figcaption>
+  </figure>
+</a>
+
+<p>BioProject を新規登録する場合は左のタブから順番に内容を英語で入力していきます。二段目が BioProject になります。登録者などの情報は DRA Submission で入力した内容が引き写されます。</p>
+
+<p>各項目の説明は <a href="/bioproject/submission.html#metadata">BioProject Handbook</a> を参照してください。</p>
+
+<a class="group1" href="/assets/images/books/hdra-bp02.jpg" title="BioProject の新規登録">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-bp02.jpg" alt="BioProject の新規登録" class="w450">
+    <figcaption>BioProject の新規登録</figcaption>
+  </figure>
+</a>
+
+<p>ゲノムをアセンブルするプロジェクトでは、アセンブリに対してユニークな <a href="/ddbj/locus_tag.html">Locus tag
+prefix</a> が必要です。</p>
+
+<p>[Project data type=”Genome Sequencing” or “Metagenome”] AND [Capture=”Whole”] AND<br />
+[Objective=”Sequence” or “Annotation” or “Assembly”] で Locus tag prefix 入力ボックスが現れます。</p>
+
+<p>プレフィックスには３-12文字の英数字のみを含めることができます。先頭は英文字にします。数字は２文字目以降で使用できます (例: A1C)。
+シンボル (-_*) を含めることはできません。プレフィックスとタグの値はアンダースコア ‘_’ で区切ります (例: A1C_00001)。</p>
+
+<p><a href="/ddbj/wgs.html">WGS</a> の登録のみで prefix を使用しない場合は入力欄を空にしてください。</p>
+
+<p>prefix は NCBI が一括管理しています。プロジェクトを投稿する段階で、NCBI に prefix を予約しにいきます。予約済みの場合はエラーになるので、再度希望する prefix を入力して投稿します。</p>
+
+<div class="attention red">
+  <p>複数の prefix の取得を希望する場合は <a href="/contact-ddbj.html">DRA チームに連絡します</a></p>
+</div>
+
+<a class="group1" href="/assets/images/books/hdra-bpltag.jpg" title="Locus tag prefix の取得">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-bpltag.jpg" alt="Locus tag prefix の取得" class="w450">
+    <figcaption>Locus tag prefix の取得</figcaption>
+  </figure>
+</a>
+
+<p>最後の “OVERVIEW” で内容を確認したうえで [Submit BioProject] をクリックして投稿します。</p>
+
+<a class="group1" href="/assets/images/books/hdra-bp03.jpg" title="BioProject の投稿">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-bp03.jpg" alt="BioProject の投稿" class="w450">
+    <figcaption>BioProject の投稿</figcaption>
+  </figure>
+</a>
+
+<p>BioProject を投稿した後、Study では投稿したプロジェクトが選択されている状態になります。</p>
+
+<a class="group1" href="/assets/images/books//hdra-bp04.jpg" title="投稿されたプロジェクトが選択される">
+  <figure class="image">
+    <img src="/assets/images/books//hdra-bp04.jpg" alt="投稿されたプロジェクトが選択される" class="w450">
+    <figcaption>投稿されたプロジェクトが選択される</figcaption>
+  </figure>
+</a>
+
+<h4 id="sample-">Sample <a name="sample"></a></h4>
+
+<p>[register sample(s)] でサンプルを新規に登録するか、もしくは、自身のアカウントで作成した BioSample 一覧から、該当するものを全て選択します。</p>
+
+<p>一つのチェックボックスを選択し、続いて Shift キーを押しながら次のボックスをクリックすると、サンプルが範囲選択されます。
+また、カラム上部のボックスにテキストを入力しサンプルを絞った状態で [Select filtered
+BioSamples] をクリックすると、フィルターされたサンプルが全て選択されます。</p>
+
+<div class="attention red">
+  <p>1 submission で登録できるサンプル数の上限は約 2,000 になります。</p>
+</div>
+
+<p>自身のアカウント以外で取得された BioSample を参照したい場合は <a href="/contact-ddbj.html">DRA チームに連絡してください</a>。</p>
+
+<a class="group1" href="/assets/images/books/hdra-bs01.jpg" title="BioSample の新規登録 or 選択">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-bs01.jpg" alt="BioSample の新規登録 or 選択" class="w450">
+    <figcaption>BioSample の新規登録 or 選択</figcaption>
+  </figure>
+</a>
+
+<p>BioSample を新規登録する場合は左のタブから順番に内容を英語で入力していきます。二段目が BioSample になります。登録者などの情報は DRA Submission で入力した内容が引き写されます。</p>
+
+<p>各項目の説明は <a href="/biosample/submission.html#metadata">BioSample Handbook</a> を参照してください。</p>
+
+<a class="group1" href="/assets/images/books/hdra-bs02.jpg" title="BioSample の新規登録">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-bs02.jpg" alt="BioSample の新規登録" class="w450">
+    <figcaption>BioSample の新規登録</figcaption>
+  </figure>
+</a>
+
+<p>“SAMPLE TYPE” でサンプルの種類を選択します。</p>
+
+<p>Sample type については <a href="/biosample/submission.html#Sample_type">BioSample Handbook</a> を参照してください。</p>
+
+<a class="group1" href="/assets/images/books/hdra-bs03.jpg" title="Sample type の選択">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-bs03.jpg" alt="Sample type の選択" class="w450">
+    <figcaption>Sample type の選択</figcaption>
+  </figure>
+</a>
+
+<p>Sample type に応じた属性入力用テンプレートファイルをダウンロードします。</p>
+
+<p>必須・任意・ユーザが定義した一連の属性でサンプルを記述することが、登録作業の中心になります。</p>
+
+<p><a href="/biosample/attribute.html">BioSample 属性の説明</a>。独自の属性を追加したい場合は、右端に属性名と値を追加します。</p>
+
+<p><a href="https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482">サンプル属性ファイルの記入例</a></p>
+
+<p>ファイルはタブで区切られているので、エクセルなどの表計算ソフトで編集することができます。一行目には属性名が記載されています。* が必須属性です。</p>
+
+<p>二行目以降に１行１サンプルで入力していきます。BioProject アクセッション番号が発行されていないプロジェクトの場合 <a href="/biosample/attribute.html?all=all#bioproject_id">bioproject_id</a> には PSUB 番号を入力します。値がない属性には、適宜 “missing” や “not applicable” などを記入します。</p>
+
+<p>Biological/Technical replicate は別々の BioSample として登録します。登録に必要なサンプル数は <a href="/faq/ja/samples-for-sra">FAQ: 塩基配列登録にはいくつのサンプルが必要ですか?</a>
+を参照してください。</p>
+
+<a class="group1" href="/assets/images/books/hdra-bs04.jpg" title="サンプル属性テンプレートファイルのダウンロード">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-bs04.jpg" alt="サンプル属性テンプレートファイルのダウンロード" class="w450">
+    <figcaption>サンプル属性テンプレートファイルのダウンロード</figcaption>
+  </figure>
+</a>
+
+<p>サンプル属性ファイルを選択して Continue をクリックすると validator がルールに基づいてアップロードされたファイルをチェックします。Error や Warning メッセージが表示された場合は必要に応じて内容を修正して再度アップロードします。Error が解消されない限り次のタブに進んで内容を submit することはできません。</p>
+
+<p>Validation ルールとメッセージについては <a href="/biosample/validation.html">Validation rules ページ</a>をご覧ください。</p>
+
+<a class="group1" href="/assets/images/books/hdra-bs04-2.jpg" title="BBioSample の validation。この例では sample "genome bacteria strain C" の collection_date に将来の日付が記入されているエラーと geo_loc_name 中の国名と緯度経度が一致していない warning が表示されています。">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-bs04-2.jpg" alt="BBioSample の validation。この例では sample "genome bacteria strain C" の collection_date に将来の日付が記入されているエラーと geo_loc_name 中の国名と緯度経度が一致していない warning が表示されています。" class="w500">
+    <figcaption>BBioSample の validation。この例では sample "genome bacteria strain C" の collection_date に将来の日付が記入されているエラーと geo_loc_name 中の国名と緯度経度が一致していない warning が表示されています。</figcaption>
+  </figure>
+</a>
+
+<p>最後の “OVERVIEW” で内容を確認したうえで投稿します。”ATTRIBUTES” で属性ファイルをダウンロードすることができます。</p>
+
+<div class="attention red">
+  <p>登録後は最新の属性ファイルをダウンロードすることができます。</p>
+</div>
+
+<a class="group1" href="/assets/images/books/hdra-bs05.jpg" title="BioSample の投稿">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-bs05.jpg" alt="BioSample の投稿" class="w450">
+    <figcaption>BioSample の投稿</figcaption>
+  </figure>
+</a>
+
+<p>BioSample を投稿した後、Sample では投稿したサンプルが選択されている状態になります。</p>
+
+<a class="group1" href="/assets/images/books/hdra-bs06.jpg" title="投稿されたサンプルが選択される">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-bs06.jpg" alt="投稿されたサンプルが選択される" class="w450">
+    <figcaption>投稿されたサンプルが選択される</figcaption>
+  </figure>
+</a>
+
+<h4 id="experiment--1">Experiment <a name="experiment"></a></h4>
+
+<p>初期状態では選択された BioSample と同数の Experiment と Run が自動生成され、それぞれの BioSample - Experiment - Run がリンクされています。Experiment/Run の自動生成は Experiment タブの初回表示時にのみ行われ、自動生成後に BioSample を選択し直した場合には自動生成されません。</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>BioProject</td>
+      <td>- BioSample (1)</td>
+      <td>- Experiment (1)</td>
+      <td>- Run (1)</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>- BioSample (2)</td>
+      <td>- Experiment (2)</td>
+      <td>- Run (2)</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>- BioSample (3)</td>
+      <td>- Experiment (3)</td>
+      <td>- Run (3)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>下の例では３つの Experiment が自動的に作成され、それぞれがユニークな BioSample を参照しています。</p>
+
+<p>[Add new Experiment(s)] で Experiment の追加、右端の [Delete] で Experiment の削除をすることができます。Run から参照されている Experiment は削除することができません。</p>
+
+<a class="group1" href="/assets/images/books/hdra-experiment01.jpg" title="各 BioSample を参照している Experiment が自動的に作成される">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-experiment01.jpg" alt="各 BioSample を参照している Experiment が自動的に作成される" class="w450">
+    <figcaption>各 BioSample を参照している Experiment が自動的に作成される</figcaption>
+  </figure>
+</a>
+
+<p>タブ区切りテキストファイルでまとめて Experiment を作成することができます。まず [Save] で内容を保存し、Alias (例 test07-0040_Experiment_0001 ～ 0003) を確定します。Alias はアクセッション番号が発行されるまでのオブジェクトの仮の名称になります。</p>
+
+<p>[Download TSV file] で内容をタブ区切りテキストファイルとしてダウンロードします。</p>
+
+<a class="group1" href="/assets/images/books/hdra-experiment02.jpg" title="Save して Alias
+を確定し、タブ区切りテキストファイルをダウンロード">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-experiment02.jpg" alt="Save して Alias
+を確定し、タブ区切りテキストファイルをダウンロード" class="w450">
+    <figcaption>Save して Alias
+を確定し、タブ区切りテキストファイルをダウンロード</figcaption>
+  </figure>
+</a>
+
+<p>エクセルなどの表計算ソフトでメタデータをまとめて作成することができます。</p>
+
+<p>“Title” は空であれば、自動的に “[Sequencing Instrument Model] [paired end] sequencing of [BioSample ID]” というタイトル（例 “Illumina HiSeq 2000 paired end sequencing of SAMD00025741”）が構築されます。独自の Title を付けたい場合は、”Title” 欄にテキストを入力します。</p>
+
+<p>“BioSample Used” は “SSUB BioSample Submission ID” : “Sample name” (例 SSUB003746 : Genome bacteria strain A) で指定します。”:” の両側の空白は無視されます。</p>
+
+<a class="group1" href="/assets/images/books/hdra-experiment03.jpg" title="Experiment テンプレートファイル">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-experiment03.jpg" alt="Experiment テンプレートファイル" class="w450">
+    <figcaption>Experiment テンプレートファイル</figcaption>
+  </figure>
+</a>
+
+<p>入力内容をタブ区切りテキストファイルとして保存し、選択したうえで [Upload TSV file] をクリックして読み込ませます。</p>
+
+<a class="group1" href="/assets/images/books/hdra-experiment04.jpg" title="Experiment をタブ区切りテキストファイルとしてアップロード">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-experiment04.jpg" alt="Experiment をタブ区切りテキストファイルとしてアップロード" class="w450">
+    <figcaption>Experiment をタブ区切りテキストファイルとしてアップロード</figcaption>
+  </figure>
+</a>
+
+<div class="attention red">
+  <p>エクセルなどの表計算ソフト独自の形式ではなくタブ区切りテキストファイルとしてアップロードします。</p>
+</div>
+
+<h4 id="run--1">Run <a name="run"></a></h4>
+
+<p>初期状態で選択された BioSample と同数の Experiment と Run が作成されており、それぞれの Run はユニークな Experiment を参照しています。</p>
+
+<p>下の例では３つの Run が作成され、それぞれが作成された Experiment を参照しています。</p>
+
+<p>[Add another Run(s)] で Run の追加、右端の [Delete] で Run の削除をすることができます。ファイルが紐づいている Run は削除することができません。</p>
+
+<a class="group1" href="/assets/images/books/hdra-run01.jpg" title="Save して Alias を確定">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-run01.jpg" alt="Save して Alias を確定" class="w450">
+    <figcaption>Save して Alias を確定</figcaption>
+  </figure>
+</a>
+
+<p>[Save] で Run の Alias を確定すると、内容をタブ区切りテキストファイルでまとめて編集できるようになります。</p>
+
+<p>[Select data files for Run] で Run とアップロードしたデータファイルをリンクする画面に移動します。</p>
+
+<a class="group1" href="/assets/images/books/hdra-run02.jpg" title="ファイルと Run をリンクする画面へ移動">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-run02.jpg" alt="ファイルと Run をリンクする画面へ移動" class="w450">
+    <figcaption>ファイルと Run をリンクする画面へ移動</figcaption>
+  </figure>
+</a>
+
+<p>ディレクトリにアップロードされているファイル一覧が表示されます。ファイルが属すべき Run の Alias を “Run/Analysis contains files” で選択します。</p>
+
+<p>続いて <a href="#File_Type">File type</a> と <a href="#supplement-md5">MD5 Checksum</a> を入力します。タブ区切りテキストファイルでまとめて内容を入力する場合、データファイルを区別するため Run に登録するファイルの左端の Run/Analysis に “Run” と入力します。</p>
+
+<div class="attention red">
+  <p>ペアリードが含まれるファイルは同じ Run に含めます。リード名からペアは自動で判定されます。Run に含まれているファイルは１つにまとめられます。</p>
+</div>
+
+<div class="attention red">
+  <p>リード長が一定ではない fastq ファイルの場合、filetype には “generic_fastq” を選択します。</p>
+</div>
+
+<a class="group1" href="/assets/images/books/hdra-runfinish.jpg" title="データファイルの属性を入力し Run に結び付ける">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-runfinish.jpg" alt="データファイルの属性を入力し Run に結び付ける" class="w450">
+    <figcaption>データファイルの属性を入力し Run に結び付ける</figcaption>
+  </figure>
+</a>
+
+<p>Analysis (任意) が不要な場合は [Submit / Update DRA metadata] をクリックし、メタデータを投稿します。</p>
+
+<a class="group1" href="/assets/images/books/hdra-submit01.jpg" title="DRA メタデータの投稿">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-submit01.jpg" alt="DRA メタデータの投稿" class="w450">
+    <figcaption>DRA メタデータの投稿</figcaption>
+  </figure>
+</a>
+
+<p>メタデータの投稿後、データファイルを検証する処理を開始します。”Validate uploaded data files to finish this submission” をクリックします。</p>
+
+<a class="group1" href="/assets/images/books/hdra-submit02.jpg" title="メタデータ投稿後、データファイルの検証に進む">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-submit02.jpg" alt="メタデータ投稿後、データファイルの検証に進む" class="w450">
+    <figcaption>メタデータ投稿後、データファイルの検証に進む</figcaption>
+  </figure>
+</a>
+
+<h4 id="analysis-任意-">Analysis (任意) <a name="analysis"></a></h4>
+
+<p>必要な数の Analysis を作成後、それぞれの Analysis について詳細を入力します。不要な Analysis は [Delete] ボタンで削除することができます。</p>
+
+<p>[Select data files for Analysis] ボタンをクリックし、ファイルと Analysis を結び付ける画面に移動します。</p>
+
+<a class="group1" href="/assets/images/books/hdra-analysis01.jpg" title="Analysis の入力">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-analysis01.jpg" alt="Analysis の入力" class="w450">
+    <figcaption>Analysis の入力</figcaption>
+  </figure>
+</a>
+
+<p>データファイルの属性を入力し、Analysis とリンクさせます。タブ区切りテキストファイルでまとめて内容を入力する場合、Analysis に登録するファイルを区別するために左端の Run/Analysis に “Analysis” と入力します。</p>
+
+<a class="group1" href="/assets/images/books/hdra-analysisfile01.jpg" title="データファイルと Analysis のリンク">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-analysisfile01.jpg" alt="データファイルと Analysis のリンク" class="w450">
+    <figcaption>データファイルと Analysis のリンク</figcaption>
+  </figure>
+</a>
+
+<p>[Enter / Update metadata] をクリックして内容を投稿し、データファイルの検証に進みます。Analysis 用のファイルは md5 しかチェックされません。</p>
+
+<div class="accordion-menu">
+  <h3 class="toggle-content-btn"><a href="javascript:void(0)" name="create-metadata-in-xml-files">XML でのメタデータ登録方法</a></h3>
+  <div class="accordion-content">
+
+    <p>メタデータ作成ツールは technical read (アダプター、プライマーやバーコード配列) を記載することに対応していません。
+「technical read を含む生データを登録する場合」や「<a href="https://github.com/ddbj/pub/tree/master/docs/dra">DRA XML schema</a> 中にはあるがツール中には無い項目をメタデータに記載する場合」は メタデータを XML で登録、もしくは登録した XML を編集してアップロードします。</p>
+
+    <ol>
+      <li>
+        <p>DRA 新規登録を作成し、データファイルをアップロードします。</p>
+      </li>
+      <li>Submission、Experiment、Run XML を作成します。アクセッション番号が未発行の BioProject と
+BioSample を Experiment から参照する場合、以下のように記載します。
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;STUDY_REF&gt;
+   &lt;IDENTIFIERS&gt;
+     &lt;PRIMARY_ID label="BioProject Submission ID"&gt;PSUB004220&lt;/PRIMARY_ID&gt;
+   &lt;/IDENTIFIERS&gt;
+ &lt;/STUDY_REF&gt;
+</code></pre></div>        </div>
+        <p><br /></p>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;SAMPLE_DESCRIPTOR&gt;
+   &lt;IDENTIFIERS&gt;
+     &lt;PRIMARY_ID label="BioSample Submission ID"&gt;SSUB003742 : sample name&lt;/PRIMARY_ID&gt;
+   &lt;/IDENTIFIERS&gt;
+ &lt;/SAMPLE_DESCRIPTOR&gt;
+</code></pre></div>        </div>
+      </li>
+      <li>XML を検証します。以下の Unix コマンドで XML をスキーマに対して検証することができます。エラーになる XML
+をアップロードすることはできません。
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.submission.xsd?view=co test07-0018.Submission.xml
+ xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.experiment.xsd?view=co test07-0018.Experiment.xml
+ xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.run.xsd?view=co test07-0018.Run.xml
+ xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.analysis.xsd?view=co test07-0018.Analysis.xml
+</code></pre></div>        </div>
+      </li>
+      <li>チェックした XML をアップロードします。Submission、Experiment、Run、Analysis (任意) の XML ファイルを選択し、同時にアップロードします。
+ アップロードされた XML について「SRA xsd に対する妥当性」と「オブジェクト間の関係性」がチェックされます。エラーが発生した場合はファイルを修正してください。<br />
+ <a href="/assets/images/books/hdra-xmlupload.jpg" title="作成した XML のアップロード" class="group1"><img src="/assets/images/books/hdra-xmlupload.jpg" alt="作成した XML のアップロード" title="作成した XML のアップロード" class="w500" /></a></li>
+    </ol>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« 閉じる</a></p>
+  </div>
+</div>
+
+<div class="accordion-menu">
+  <h3 class="toggle-content-btn"><a href="javascript:void(0)">XML でのメタデータ編集方法</a></h3>
+  <div class="accordion-content">
+
+    <p>メタデータ作成ツールは technical read (アダプター、プライマーやバーコード配列) を記載することに対応していません。
+「technical read を含む生データを登録する場合」や「<a href="https://github.com/ddbj/pub/tree/master/docs/dra">DRA XML schema</a> 中にはあるがツール中には無い項目をメタデータに記載する場合」は メタデータを XML で登録、もしくは登録した XML を編集してアップロードします。</p>
+
+    <ol>
+      <li><a href="#create-metadata-using-tool">メタデータ作成ツールでメタデータを作成し、投稿します。</a></li>
+      <li>“metadata_submitted” になった登録の Submission、Experiment、Run、Analysis (任意) を XML ファイルとしてダウンロードします。
+ <a href="/assets/images/books/hdra-xmldownload.jpg" title="ツールで作成したメタデータを XML としてダウンロード" class="group1"><img src="/assets/images/books/hdra-xmldownload.jpg" alt="ツールで作成したメタデータを XML としてダウンロード" title="ツールで作成したメタデータを XML としてダウンロード" class="w500" /></a></li>
+      <li>XML を編集します。ファイル中のリードの構成を記載する SPOT_DESCRIPTOR
+  については<a href="/dra/example.html">記入例</a>を参考にしてください。 その他の項目については、<a href="https://github.com/ddbj/pub/tree/master/docs/dra">DRA XML schema</a> 中の説明を参照してください。</li>
+      <li>アクセッション番号が未発行の BioProject と BioSample を  Experiment から参照する場合、以下のように記載します。
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;STUDY_REF&gt;
+   &lt;IDENTIFIERS&gt;
+     &lt;PRIMARY_ID label="BioProject Submission ID"&gt;PSUB004220&lt;/PRIMARY_ID&gt;
+   &lt;/IDENTIFIERS&gt;
+ &lt;/STUDY_REF&gt;
+</code></pre></div>        </div>
+        <p><br /></p>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;SAMPLE_DESCRIPTOR&gt;
+   &lt;IDENTIFIERS&gt;
+     &lt;PRIMARY_ID label="BioSample Submission ID"&gt;SSUB003742 : sample name&lt;/PRIMARY_ID&gt;
+   &lt;/IDENTIFIERS&gt;
+ &lt;/SAMPLE_DESCRIPTOR&gt;
+</code></pre></div>        </div>
+      </li>
+      <li>XML を検証します。以下の Unix コマンドで XML をスキーマに対して検証することができます。エラーになる XML をアップロードすることはできません。
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.submission.xsd?view=co test07-0018.Submission.xml
+ xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.experiment.xsd?view=co test07-0018.Experiment.xml
+ xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.run.xsd?view=co test07-0018.Run.xml
+ xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.analysis.xsd?view=co test07-0018.Analysis.xml
+</code></pre></div>        </div>
+      </li>
+      <li>編集した XML をアップロードします。Submission、Experiment、Run、Analysis (任意) の XML ファイルを選択し、同時にアップロードします。
+  アップロードされた XML について「SRA xsd に対する妥当性」と「オブジェクト間の関係性」がチェックされます。エラーが発生した場合はファイルを修正してください。<br />
+  <a href="/assets/images/books/hdra-xmlupload.jpg" title="編集した XML のアップロード" class="group1"><img src="/assets/images/books/hdra-xmlupload.jpg" alt="編集した XML のアップロード" title="編集した XML のアップロード" class="w500" /></a></li>
+    </ol>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« 閉じる</a></p>
+  </div>
+</div>
+
+<h3 id="データファイルの検証-">データファイルの検証 <a name="validation-data-files"></a></h3>
+
+<p>転送したシークエンスデータファイルをアーカイブ用 SRA ファイルに変換する過程で MD5 値とシークエンスデータの整合性が検証されます。</p>
+
+<p>“Data Files” に「Run と Analysis (任意) のメタデータに記載されているファイル名」と「データ受付サーバにアップロードされたファイル名と MD5 値」が一覧表示されます。</p>
+
+<p>メタデータに記載されている全てのファイルがアップロードされている場合、[Validate data files] がクリックできる状態になります。</p>
+
+<p>アップロードされているファイルのうちメタデータに記載されていないものは無視されます。</p>
+
+<p>登録詳細画面中の [Validate data files] をクリックし、シークエンスデータファイルの検証処理を開始します。</p>
+
+<a class="group1" href="/assets/images/books/hdra-validate.jpg" title="シークエンスデータの検証処理を開始">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-validate.jpg" alt="シークエンスデータの検証処理を開始" class="w450">
+    <figcaption>シークエンスデータの検証処理を開始</figcaption>
+  </figure>
+</a>
+
+<p>検証処理は以下の順番で実行されます。</p>
+
+<h4 id="md5-check-">MD5 Check <a name="MD5_Check"></a></h4>
+
+<p>メタデータに記載されている MD5 値と、実際のファイルの MD5 値とが一致するかチェックされ、一致しない場合はエラーが表示されます。
+エラーの場合は [Enter / Update metadata] からメタデータを修正するか、ファイルを再アップロードしてください。</p>
+
+<h4 id="data-check-">Data Check <a name="Data_Check"></a></h4>
+
+<p>シークエンスデータからアーカイブ用の SRA
+ファイルを作成します。この過程でシークエンスデータファイルのフォーマットとメタデータとの整合性が検証されます。
+作成に失敗するとエラーが表示されます。エラーが発生した場合は [Stop validation] をクリックして検証処理を停止した後、メタデータを修正、もしくは、データファイルを再アップロードします。
+ファイルサイズが大きい場合は検証処理に時間がかかります。</p>
+
+<p>問題が無ければ登録のステータスが “submission_validated” になり、検証 されたファイルが別ディレクトリに移されます。</p>
+
+<p>登録のステータスが “submission_validated” になると DRA スタッフが査定を始めます。 DRA スタッフから指示があるまで D-way を操作せずにお待ちください。</p>
+
+<h4 id="data_error-になった場合-">data_error になった場合 <a name="data_error"></a></h4>
+
+<p>検証処理のいずれかのステップでエラーになると、ステータスが “data_error” になります。 [Stop validation] をクリックして検証処理を停止してから、メタデータの編集やファイルの再アップロードを行い、再度 [Validate data files] をクリックしてください。</p>
+
+<p><a href="/faq/ja/data-validation-error">FAQ: データファイルの validation エラーへの対処方法は？</a></p>
+
+<a class="group1" href="/assets/images/books/hdra-error.jpg" title="検証処理を停止">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-error.jpg" alt="検証処理を停止" class="w450">
+    <figcaption>検証処理を停止</figcaption>
+  </figure>
+</a>
+
+<p>ステータスが “metadata_submitted” に戻るので、必要に応じてメタデータの修正、データファイルの再アップロードを行います。</p>
+
+<a class="group1" href="/assets/images/books/hdra-edit.jpg" title="データを修正">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-edit.jpg" alt="データを修正" class="w450">
+    <figcaption>データを修正</figcaption>
+  </figure>
+</a>
+
+<h3 id="アクセッション番号の発行-">アクセッション番号の発行 <a name="accession-numbers"></a></h3>
+
+<p>メタデータとシークエンスデータに問題がなければ、プレフィックス DR (Submission (DRA)、Experiment (DRX)、Run (DRR)、Analysis (DRZ)) のアクセッション番号が発行され、ステータスが “completed” になります。アクセッション番号は “Component” に表示されます。</p>
+
+<p>また、Submission に記載されている登録者には、アクセッション番号がメールで通知されます。</p>
+
+<a class="group1" href="/assets/images/books/hdra-accession.jpg" title="DRA アクセッション番号">
+  <figure class="image">
+    <img src="/assets/images/books/hdra-accession.jpg" alt="DRA アクセッション番号" class="w450">
+    <figcaption>DRA アクセッション番号</figcaption>
+  </figure>
+</a>
+
+<h3 id="アーカイブ済み-fastqsra-ファイルの期間限定アクセス提供-">アーカイブ済み fastq/SRA ファイルの期間限定アクセス提供 <a name="fastq-sra-files"></a></h3>
+
+<p>登録者がアーカイブ済みデータファイルを確認できるようにするため、アクセッション番号が発行された Run の fastq/SRA ファイルはファイルサーバ (ftp-private.ddbj.nig.ac.jp) 上の登録者がアクセスできる場所にコピーされます。
+ディスク容量の圧迫を防ぐため、コピーされたファイルは作成から一ヶ月後に自動的に削除されます。</p>
+
+<div class="attention red">
+  <p>ディスク空き容量の予期せぬ急減等により、コピーした fastq/SRA ファイルの一ヶ月以内の削除やコピー機能の一時停止が実施されることがあります。
+できるだけ事前にウェブサイト等で周知いたしますが、直前になることもあり得ることをご了承ください。</p>
+</div>
+
+<ul>
+  <li>(submitter’s home)/report/dra/(DRA submission accession)/fastq/</li>
+  <li>(submitter’s home)/report/dra/(DRA submission accession)/sra/</li>
+</ul>
+
+<p>例</p>
+
+<ul>
+  <li>/report/dra/DRA000001/fastq/DRR000001.fastq.bz2</li>
+  <li>/report/dra/DRA000001/fastq/DRR000002.fastq.bz2</li>
+  <li>/report/dra/DRA000001/fastq/DRR000002_1.fastq.bz2</li>
+  <li>/report/dra/DRA000001/fastq/DRR000002_2.fastq.bz2</li>
+  <li>/report/dra/DRA000001/sra/DRR000001.sra</li>
+  <li>/report/dra/DRA000001/sra/DRR000002.sra</li>
+</ul>
+
+<h3 id="データ公開-">データ公開 <a name="data-release"></a></h3>
+
+<p>登録データのデータベースへの取り込みが完了するとステータスが “confidential” になり、即日公開が指定されている場合以外は、以下の原則に則り、データが公開されるまで非公開で保持されます。</p>
+
+<p>DRA では以下の場合にデータを公開しています。</p>
+
+<div class="attention red">
+  <p>オブジェクトは Submission 単位で公開されます。オブジェクトを異なる時期に公開したい場合は Submission を分けて登録してください。</p>
+</div>
+
+<ul>
+  <li>A. 登録者から公開依頼の連絡を受けた場合</li>
+  <li>B. 登録者がアクセッション番号を公表した事を確認した場合。<br />
+登録者以外の第三者が過失により他人のアクセッション番号を論文や学会等で公表した場合などは該当しません。<br />
+公表とは、アクセッション番号を不特定多数の対象に知らせる行為 (学術論文、学会、インターネット、報道機関などを媒体とした発表)
+を指します。</li>
+  <li>C. 公開予定日が到来した場合</li>
+  <li>D. DRA Run (DRR) アクセッション番号を引用している DDBJ/EMBL-Bank/GenBank レコード
+(<a href="/ddbj/tsa.html">TSA</a>、<a href="/ddbj/wgs.html">WGS</a>, <a href="/ddbj/con.html">CON</a>
+など) が公開された場合</li>
+</ul>
+
+<p>B, C または D の場合は登録者の了解がなくても例外なく公開します。D の場合、引用されている DRR 番号を含む DRA
+登録全体が公開されます。</p>
+
+<p>FAQ:
+<a href="/faq/ja/bp-bs-seq-release.html">BioProject/BioSample/塩基配列データの連動公開の仕組みは？</a></p>
+
+<p>データが公開されると、数日間のうちに <a href="http://ddbj.nig.ac.jp/DRASearch">DRASearch</a> で検索可能になり
+<a href="https://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi">NCBI SRA</a> にミラーリングされます。</p>
+
+<p>DRA ファイルサーバに存在する fastq ファイル一覧:
+<a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/meta/list/fastqlist">fastqlist</a></p>
+
+<h2 id="登録の更新-">登録の更新 <a name="update-submission"></a></h2>
+
+<h3 id="各データベースにおける更新方法-">各データベースにおける更新方法 <a name="update-in-each-database"></a></h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>データベース</th>
+      <th>更新方法</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/index.html">Annotated sequence database</a></td>
+      <td><a href="/ddbj/update-form.html">ウェブフォームから依頼</a></td>
+    </tr>
+    <tr>
+      <td>Sequence Read Archive (DRA)</td>
+      <td><a href="#change-hold-date">D-way にログインして登録者自身で更新</a><br /><a href="/contact-ddbj.html">配列データの追加や削除はウェブフォームから依頼)</a></td>
+    </tr>
+    <tr>
+      <td>BioProject/BioSample</td>
+      <td><a href="/contact-ddbj.html">ウェブフォームから依頼</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="公開予定日の変更-">公開予定日の変更 <a name="change-hold-date"></a></h3>
+
+<p>公開予定日は最長で4年後まで指定でき、繰り返し更新することができます。Hold Date の [Change] をクリックし、公開予定日変更ページに移動し、予定日を変更します。</p>
+
+<p><a href="/assets/images/books/hdra-hold.jpg" title="公開予定日の変更" class="group1"><img src="/assets/images/books/hdra-hold.jpg" alt="公開予定日の変更" title="公開予定日の変更" class="w400" /></a></p>
+
+<p>データを即日公開する場合は “Release Now” をクリックします。作業した日の深夜に公開処理が実施され、<a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/">ftp にデータファイルが公開</a>され、数日以内に <a href="http://ddbj.nig.ac.jp/DRASearch">DRA 検索システム</a>にインデックスされます。</p>
+
+<h3 id="メタデータの更新-">メタデータの更新 <a name="update-metadata"></a></h3>
+
+<p>[Enter / Update metadata] からメタデータを編集します。編集不可項目はブロックされています。
+必要な編集が完了後、メタデータ作成ツールの [Submit/Update DRA metadata] ボタンをクリックし、更新内容を DRA データベースに反映させます。</p>
+
+<p>関連する文献が公表された場合は、pubmed ID を含む文献情報を添えて <a href="/bioproject/index.html">BioProject チーム</a> に追加を依頼します。</p>
+
+<h3 id="データファイルの追加-">データファイルの追加 <a name="add-data-files"></a></h3>
+
+<p>DRA では登録が完了した Run データファイルの追加・変更はできません。別の Submission で新しく Experiment-Run のセットを追加し、既存の BioProject や BioSample を参照することでデータを追加します。</p>
+
+<p>Run と同様登録が完了した Analysis データファイルの追加・変更はできません。Analysis を差し替える場合は <a href="/contact-ddbj.html">DRA チームにご連絡ください</a>。</p>
+
+<p><a href="https://ddbj.nig.ac.jp/D-way/">D-way</a> にログインし、[New submission] をクリックし、新規 DRA 登録を作成します。 作成した新規登録でデータを追加する対象の BioProject と BioSample を選択します。</p>
+
+<ul>
+  <li>新たにサンプルを追加する場合は BioProject を共有し、新規登録で BioSample - Experiment - Run を追加します。</li>
+  <li>既存のサンプルにデータを追加する場合は BioProject と BioSample を共有し、新規登録で Experiment - Run を追加します。</li>
+</ul>
+
+<p>続いて DRA Experiment と Run タブで、Experiment、Run オブジェクトとデータファイルを追加します。</p>
+
+<p>メタデータを submit し、ファイルの検証処理を実行します。追加された Experiment/Run オブジェクトに対してアクセッション番号が発行されます。</p>
+
+<div class="attention red">
+  <p>追加したデータに対応する BioProject 番号は同一ですが、Submission に対する DRA 番号は異なります。</p>
+</div>
+
+<a class="group1" href="/assets/images/books/add_data_files.jpg" title="サンプルの追加">
+  <figure class="image">
+    <img src="/assets/images/books/add_data_files.jpg" alt="サンプルの追加" class="w400">
+    <figcaption>サンプルの追加</figcaption>
+  </figure>
+</a>
+
+<a class="group1" href="/assets/images/books/add_run.jpg" title="サンプルへのデータ追加">
+  <figure class="image">
+    <img src="/assets/images/books/add_run.jpg" alt="サンプルへのデータ追加" class="w400">
+    <figcaption>サンプルへのデータ追加</figcaption>
+  </figure>
+</a>
+
+<p>登録が完了した DRA 登録にデータファイルを直接追加する場合は <a href="/contact-ddbj.html">DRA チームに連絡してください</a>。</p>
+
+<h3 id="オブジェクトの削除-">オブジェクトの削除 <a name="withdraw-archived-objects"></a></h3>
+
+<p>Experiment、Run や Analysis などのオブジェクトを削除する場合は <a href="/contact-ddbj.html">DRA チームに連絡してください</a>。</p>
+
+<h2 id="補足-md5-値-">補足: MD5 値 <a name="supplement-md5"></a></h2>
+
+<p>MD5 (Message Digest Algorithm 5) はハッシュ関数であり、与えられたファイルに対してハッシュ値 (MD5値、32桁の英数字) を出力します。ファイルが破損していると MD5 値が変化します。 DRA では、到着したファイルの MD5 値の一致をチェックすることで、ファイルの破損がないかどうか確認しています。</p>
+
+<div class="accordion-menu">
+  <h3 class="toggle-content-btn"><a href="javascript:void(0)" name="obtain-md5-number-linux">MD5 値の取得 (Linux)</a></h3>
+  <div class="accordion-content">
+
+    <p>ファイルの MD5 値を取得します。</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ md5sum file1 file2
+9F6E6800CFAE7749EB6C486619254B9C file1
+B636E0063E29709B6082F324C76D0911 file2
+</code></pre></div>    </div>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« 閉じる</a></p>
+  </div>
+</div>
+
+<div class="accordion-menu">
+  <h3 class="toggle-content-btn"><a href="javascript:void(0)" name="obtain-md5-number-mac-os-x">MD5 値の取得 (Mac OS X)</a></h3>
+  <div class="accordion-content">
+
+    <p>ファイルの MD5 値を取得します。</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ md5 file1 file2
+9F6E6800CFAE7749EB6C486619254B9C file1
+B636E0063E29709B6082F324C76D0911 file2
+</code></pre></div>    </div>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« 閉じる</a></p>
+  </div>
+</div>
+
+<div class="accordion-menu">
+  <h3 class="toggle-content-btn"><a href="javascript:void(0)" name="obtain-md5-number-windows">MD5 値の取得 (Windows)</a></h3>
+  <div class="accordion-content">
+
+    <p><a href="http://sourceforge.net/projects/fsumfe/">Fsum Frontend (http://sourceforge.net/projects/fsumfe/)</a>
+をインストールし、起動します。<br />
+まず、 “md5” にチェックを入れてください。</p>
+
+    <p><a href="/assets/images/books/Fsum1.jpg" title="md5 を選択" class="group1"><img src="/assets/images/books/Fsum1.jpg" alt="md5 を選択" title="md5 を選択" class="w400" /></a></p>
+
+    <p>[+] ボタンをクリックし、必要なシークエンスデータファイルを開いてください。同時に複数のファイルを選択することが可能です。</p>
+
+    <p><a href="/assets/images/books/Fsum2.jpg" title="シークエンスデータファイルを選択" class="group1"><img src="/assets/images/books/Fsum2.jpg" alt="シークエンスデータファイルを選択" title="シークエンスデータファイルを選択" class="w400" /></a></p>
+
+    <p>最後に、[Calculate hashes] ボタンをクリックしてください。各ファイルの MD5 値が表示されます。[Export] ボタンから、MD5 値の一覧表 (.html, .csv, .xml) を作成することができます。</p>
+
+    <p><a href="/assets/images/books/Fsum3.jpg" title="MD5 値の計算を開始" class="group1"><img src="/assets/images/books/Fsum3.jpg" alt="MD5 値の計算を開始" title="MD5 値の計算を開始" class="w400" /></a></p>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« 閉じる</a></p>
+  </div>
+</div>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>scp でファイルの転送ができません</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title -small">
+      <h1 class="title">scp でファイルの転送ができません</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/faq/ja/">よくある質問</a>
+            
+          </li>
+          <li>
+            <a>scp でファイルの転送ができません</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<main id="SimpleView">
+  <div class="inner">
+    <article class="md-content">
+      <p>以下の基本的な点をご確認ください。</p>
+<div class="sub_index">
+  <ul class="disc">
+    <li>scp 接続時にパスワードではなく鍵認証になっているかどうか</li>
+    <li>D-way アカウントに登録した公開鍵と指定している秘密鍵がペアになっているかどうか</li>
+    <li>秘密鍵ファイルが読み込みを許可する権限設定になっているかどうか</li>
+    <li>秘密鍵ファイルの権限が他人がアクセスできないように設定されているかどうか？（例 rw-------）</li>
+    <li>鍵作成時に指定したパスフレーズを正しく入力しているかどうか</li>
+  </ul>
+</div>
+<p>鍵を生成した時のコンピュータの OS と異なる環境でデータを転送しようとしている場合，秘密鍵の形式が合っているかどうかご確認ください。<a href="/account.html#convert-private-key">秘密鍵ファイルの変換</a></p>
+<p><span class="bold">転送環境 Unix/Mac OS X</span>: Windows で作成した PuTTY 形式の秘密鍵は OpenSSH 形式に変換します。</p>
+<p><span class="bold">転送環境 Windows WinSCP:</span> Unix/Mac OS X で作成した OpenSSH 形式の秘密鍵は PuTTY 形式に変換します。</p>
+<p>上記でも問題が解決しない場合、DDBJ センターではサードパーティ製ソフトウェアの細かい使い方に関するサポートは提供しておりませんので、ソフトウェアのウェブサイト等をご参照頂くか、所属組織のシステム管理者に scp (ポート 22) の通信を許可しているかどうか、ご確認ください。</p>
+
+    </article>
+  </div>
+</main>
+
+  
+
+</body>
+</html>

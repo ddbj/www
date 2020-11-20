@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Apology for the defective results of CON entries in getentry </title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title"> Apology for the defective results of CON entries in getentry </h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/news">news</a>
+          </li>
+          <li>
+            <a href=""> Apology for the defective results of CON entries in getentry </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <html> <a href="http://getentry.ddbj.nig.ac.jp/top-e.html">getentry</a> is the entry retrieval system by accession numbers etc., which is provided by DDBJ via <a href="http://getentry.ddbj.nig.ac.jp/top-e.html">WWW</a> and <a href="/search/explain/getentry_exp-e.html">E-mail</a> servers.<br />In the case of sequence display of CON entry, We found there were two problems to display sequences of CON entries.<br />Datails are as follows;
+
+<p></p>
+
+<ul><br />
+    <li><b>Condition : </b><br />
+
+        <ol><br />
+            <li>When a cited piece entry is described with "complement" operator in a CON entry, the sequence span cited from the piece entry is processed as the forward strand.<br />It should be processed into the complementary sequence.<font color="#ff0000">   Fixed ( Jul. 3, 2008 ) </font><br /></li>
+            <li>When the piece entry of retrieved CON entry containes a CON entry, it can not be processed correctly.<a href="/whatsnew/whatsnew2009-e.html">
+                    <font color="#ff0000">   Fixed ( Jan. 16, 2009 ) </font>
+                </a><br /></li>
+        </ol><br />
+    </li>
+    <li><b>Affected parts : </b><br />We have provided two types of methods to get the conjugated sequences of CON entries; display on browser and FTP. However, neither of two methods works properly in the case of retrieving CON entries under the following conditions.<br />
+
+        <ol><br />
+            <li>When you specify "total nt seq FASTA" as <a href="/services/getentry-e.html#output">output format</a>, and "www" , "E-Mail" or "FTP" as <a href="/services/getentry-e.html#result">Results</a>.<br /></li>
+            <li>When you specify "Flat file (DDBJ)" as <a href="/services/getentry-e.html#output">output format</a>, and "www" as <a href="/services/getentry-e.html#result">Results</a>.<br />Then, click each of following links in the result;<br />
+
+                <ul><br />
+                    <li>transfer all the DNA sequences separately in FASTA format <br /></li>
+                    <li>display all the DNA sequences separately in FASTA format <br /> <br /></li>
+                    <li>transfer the combined DNA sequence in FASTA format (Constructed sequence according to CONTIG line)<br /> <br /></li>
+                    <li>display the combined DNA sequence in FASTA format (constructed sequence according to CONTIG line)<br /></li>
+                </ul>
+            </li>
+        </ol><br />
+    </li>
+    <li><b>Affected services : </b>getentry, ARSA, and Web API (GetEntry)<br /></li>
+    <li><b>Measure : </b>Recovery work takes a little longer. We will provide an announcement on this page as soon as the problems are solved.<br /><br /></li>
+</ul>
+<dd>We sincerely apologize for your inconveniece.</dd>
+</html>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trace Archive</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">Trace Archive</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/dta">dta</a>
+          </li>
+          <li>
+            <a href="">Trace Archive</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="trace-archive-の概要-">Trace Archive の概要 <a name="overview"></a></h2>
+
+<p><a href="index.html">DDBJ Trace Archive (DTA)</a> は，配列決定プロジェクトからのシングルパスリードの DNA sequence chromatograms (traces), base calls, quality estimates のためのデータベースです。 Trace Archive は <a href="/insdc.html#insd">International Nucleotide Sequence Database Collaboration (INSDC)</a> のメンバーとして，DDBJ，<a href="https://www.ncbi.nlm.nih.gov/Traces/trace.cgi">NCBI</a> と <a href="https://www.ebi.ac.uk/ena/">EBI</a> が国際協力して運営しています。<a href="https://www.ncbi.nlm.nih.gov/Traces/trace.cgi">NCBI Trace Archive</a> が ID を発行管理しています。
+DTA から登録された trace データは <a href="https://www.ncbi.nlm.nih.gov/Traces/trace.cgi">NCBI Trace Archive</a> で検索，取得することができます。</p>
+
+<div class="attention red">
+  <p>trace データは <a href="/dra/submission.html#dra">DDBJ Sequence Read Archive</a> で受付けています。特に理由がない限り DRA に登録してください。</p>
+</div>
+
+<h2 id="メタデータ-">メタデータ <a id="metadata"></a></h2>
+
+<p>必要な項目は <a href="#STRATEGY">STRATEGY</a> と <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> の組み合わせで決まります。 メタデータは <a href="https://www.ncbi.nlm.nih.gov/Traces/trace.cgi?cmd=retrieve&amp;f=retrieve&amp;m=obtain&amp;s=search">NCBI Trace Archive</a> で検索することができます。</p>
+
+<p>必須項目は <a href="/assets/files/submission/field_matrix_current.xls">Validation Table</a> で確認してください。</p>
+
+<p>必須<span class="red">*</span><br />
+STRATEGY と TRACE_TYPE_CODE の組み合わせによっては必須 <span class="conditionally_required">*</span></p>
+
+<h3 id="metadata-field-list-">Metadata Field List <a name="Metadata-Field-List"></a></h3>
+
+<dl>
+  <dt><a href="#ACCESSION">ACCESSION</a><a name="ACCESSION"></a></dt>
+  <dd>DDBJ/EMBL/GenBank アクセッション番号
+
+    <p>  Type: varchar(30)<br />
+  Example: AC22227</p>
+
+    <p><a href="#ACCESSION">ACCESSION</a> は配列データを配列データベース (DDBJ/EMBL/GenBank) に登録することで割り振られます。いくつかの種類の trace (特に WGS) では記載できません。アクセッション番号により Trace Archive の１次配列データと配列データベースの２次配列データが結び付きます。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#AMPLIFICATION_FORWARD">AMPLIFICATION_FORWARD</a><a name="AMPLIFICATION_FORWARD"></a><span class="conditionally_required">*</span></dt>
+  <dd>テンプレートの増幅用フォワードプライマーの塩基配列
+
+    <p>  Type: varchar(100)<br />
+  Example: GGATTCTGACTAACGAGC</p>
+
+    <p>配列決定のために用いられたテンプレート増幅用プライマーの配列を記載します。次の場合に必須です:<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=PCR or RT-PCR。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#AMPLIFICATION_REVERSE">AMPLIFICATION_REVERSE</a><a name="AMPLIFICATION_REVERSE"></a><span class="conditionally_required">*</span></dt>
+  <dd>テンプレートの増幅用リバースプライマーの塩基配列
+
+    <p>  Type: varchar(100)<br />
+  Example: GGATTCTGACTAACGAGC</p>
+
+    <p>配列決定のために用いられたテンプレート増幅用プライマーの配列を記載します。次の場合に必須です:<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=PCR or RT-PCR。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#AMPLIFICATION_SIZE">AMPLIFICATION_SIZE</a><a name="AMPLIFICATION_SIZE"></a></dt>
+  <dd>プライマーペアによる増幅断片長
+
+    <p>  Type: int<br />
+  Example: 500</p>
+
+    <p><a href="#AMPLIFICATION_SIZE">AMPLIFICATION_SIZE</a> には<a href="#AMPLIFICATION_FORWARD">AMPLIFICATION_FORWARD</a> と<a href="#AMPLIFICATION_REVERSE">AMPLIFICATION_REVERSE</a>のプライマーペアによって増幅される断片の長さを塩基対数で記載します。<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=PCR の場合はゲノム DNA，<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=RT-PCR の場合は転写産物を増幅した断片長になります。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#ANONYMIZED_ID">ANONYMIZED_ID</a><a name="ANONYMIZED_ID"></a></dt>
+  <dd>個人に対する匿名化された ID
+
+    <p>  Type: varchar(100)<br />
+  Example: 2222anonym</p>
+
+    <p>ドナーの匿名性を保護するプロジェクトで使用します。多くの場合 Trace Archive の匿名化された ID と表現型情報が得られた個人の ID とを結びつけるアクセスが制限されたデータベースが存在します。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#ATTEMPT">ATTEMPT</a><a name="ATTEMPT"></a></dt>
+  <dd>センターによって試みられたプロジェクトの回数 and/or Trace Archive への登録回数
+
+    <p>  Type: tinyint(1-255)<br />
+  Example: 2</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BASE_FILE">BASE_FILE</a><a name="BASE_FILE"></a></dt>
+  <dd>ベースコールが記載されたファイル名
+
+    <p>  Type: varchar(200)<br />
+  Example: ./mytraces/123clone.fasta</p>
+
+    <p>trace ファイルがベースコールを含んでいない場合，ベースコールが含まれた別のファイルを登録します。<a href="#BASE_FILE">BASE_FILE</a> でファイルを指定します。trace (通常は scf) ファイル中のベースコール情報は <a href="#BASE_FILE">BASE_FILE</a> のもので上書きされます。<a href="#BASE_FILE">BASE_FILE</a> と trace ファイルのベースコールが同じ場合は BASE_FILE を登録しないでください。<a href="#BASE_FILE">BASE_FILE</a> と<a href="#QUAL_FILE">QUAL_FILE</a> の両方を登録する場合は，あわせて peak index 情報を<a href="#PEAK_FILE">PEAK_FILE</a> として別ファイルで登録します。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CENTER_NAME">CENTER_NAME</a><a name="CENTER_NAME"></a><span class="red">*</span></dt>
+  <dd>センター名の略称
+
+    <p>  Type: varchar(50)<br />
+  Example: WUGSC</p>
+
+    <p>DDBJ Trace Archive にデータを登録する前にセンター名の略称を登録します。この略称は <a href="#CENTER_NAME">CENTER_NAME</a> で使われます。登録されている <a href="#CENTER_NAME">CENTER_NAME</a> の一覧:<br />
+<a href="https://www.ncbi.nlm.nih.gov/Traces/trace.cgi?view=submitting_centers">http://www.ncbi.nlm.nih.gov/Traces/trace.cgi?view=submitting_centers</a><br />
+<span class="red">Sequence Read Archive の center name とは別になります。</span></p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CENTER_PROJECT">CENTER_PROJECT</a><a name="CENTER_PROJECT"></a><span class="red">*</span></dt>
+  <dd>センター独自のプロジェクト名
+
+    <p>  Type: varchar(100)<br />
+  Example: HBBB</p>
+
+    <p><a href="#CENTER_PROJECT">CENTER_PROJECT</a>はシークエンスセンター内部で使用するプロジェクト名です。この項目は関連する trace をまとめるのに役立ちます。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CHEMISTRY">CHEMISTRY</a><a name="CHEMISTRY"></a></dt>
+  <dd>シークエンス反応で使われたケミストリー
+
+    <p>  Type: varchar(50)<br />
+  Example: BIGDYEV3.0</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CHEMISTRY_TYPE">CHEMISTRY_TYPE</a><a name="CHEMISTRY_TYPE"></a></dt>
+  <dd>シークエンス反応で使われたケミストリーの種類
+
+    <p>  Type: char(50)<br />
+  Example: P</p>
+
+    <p><a href="#CHEMISTRY_TYPE">CHEMISTRY_TYPE</a>で使用可能な語句:<br />
+Primer<br />
+Terminator<br />
+p=primer<br />
+t=terminator</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CHROMOSOME">CHROMOSOME</a><a name="CHROMOSOME"></a></dt>
+  <dd>trace が由来する染色体
+
+    <p>  Type: varchar(8)<br />
+  Example: 11</p>
+
+    <p><a href="#CHROMOSOME">CHROMOSOME</a>は trace が由来する染色体を示します。遺伝子名や cytogenetic position は染色体情報としては適していません。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CLIP_QUALITY_LEFT">CLIP_QUALITY_LEFT</a><a name="CLIP_QUALITY_LEFT"></a></dt>
+  <dd>信頼性評価に基づくリードの左クリップ位置 (塩基対数)
+
+    <p>  Type: int<br />
+  Example: 56</p>
+
+    <p><a href="#CLIP_QUALITY_LEFT">CLIP_QUALITY_LEFT</a>は信頼性が低いためクリップされるべきリードの始まりの部分です。ベースコールの信頼性が高い領域をその最初の塩基位置で示します。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CLIP_QUALITY_RIGHT">CLIP_QUALITY_RIGHT</a><a name="CLIP_QUALITY_RIGHT"></a></dt>
+  <dd>信頼性評価に基づくリードの右クリップ位置 (塩基対数)
+
+    <p>  Type: int<br />
+  Example: 256</p>
+
+    <p><a href="#CLIP_QUALITY_RIGHT">CLIP_QUALITY_RIGHT</a>は信頼性が低いためクリップされるべきリードの終わりの部分です。ベースコールの信頼性が高い領域をその最後の塩基位置で示します。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CLIP_VECTOR_LEFT">CLIP_VECTOR_LEFT</a><a name="CLIP_VECTOR_LEFT"></a><span class="conditionally_required">*</span></dt>
+  <dd>ベクター配列に基づくリードの左クリップ位置 (塩基対数)
+
+    <p>  Type: int<br />
+  Example: 75</p>
+
+    <p><a href="#CLIP_VECTOR_LEFT">CLIP_VECTOR_LEFT</a> はベクター配列に基づきクリップされるべきリードの始まりの部分です。非ベクター配列の最初の塩基の位置で示します。この項目はほとんど全ての <a href="#STRATEGY">STRATEGY</a> と <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> の組み合わせで必須です。   この情報は <a href="#INSERT_FLANK_LEFT">INSERT_FLANK_LEFT</a> が記載されている場合，もしくは，[TRACE_TYPE_CODE](#TRACE_TYPE_CODE span&gt;=PCR orRT-PCR の場合には省略できます。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CLIP_VECTOR_RIGHT">CLIP_VECTOR_RIGHT</a><a name="CLIP_VECTOR_RIGHT"></a><span class="conditionally_required">*</span></dt>
+  <dd>ベクター配列に基づくリードの右クリップ位置 (塩基対数)
+
+    <p>  Type: int<br />
+  Example: 275</p>
+
+    <p><a href="#CLIP_VECTOR_RIGHT">CLIP_VECTOR_RIGHT</a> はベクター配列に基づきクリップされるべきリードの終わりの部分です。非ベクター配列の最後の塩基の位置で示します 項目はほとんど全ての<a href="#STRATEGY">STRATEGY</a> と <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> の組み合わせで必須です。<br />この情報は <a href="#INSERT_FLANK_RIGHT">INSERT_FLANK_RIGHT</a> が記載されている場合，もしくは，<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=PCR or RT-PCR の場合には省略できます。<br />注意: 多くのセンターではベクター配列解析と信頼性評価を一緒に行っており，１セットのクリップ情報しかない場合がありま の場合は<a href="#CLIP_VECTOR_LEFT">CLIP_VECTOR_LEFT</a>と<a href="#CLIP_VECTOR_RIGHT">CLIP_VECTOR_RIGHT</a> に値を記入します。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CLONE_ID">CLONE_ID</a><a name="CLONE_ID"></a><span class="conditionally_required">*</span></dt>
+  <dd>trace が由来するクローン名
+
+    <p>  Type: varchar(30)<br />
+  Example: RP23-1123F10</p>
+
+    <p><a href="#CLONE_ID">CLONE_ID</a> は個々の BAC，PAC や cDNA クローンの ID です。クローンが Clone Registry
+(<a href="https://www.ncbi.nlm.nih.gov/clone/">http://www.ncbi.nlm.nih.gov/clone/</a>) に登録されている場合はstandard clone registry nomenclature (<a href="https://www.ncbi.nlm.nih.gov/clone/content/overview/">http://www.ncbi.nlm.nih.gov/clone/content/overview/</a>)に従って記載します。<br />
+次の <a href="#STRATEGY">STRATEGY</a>と <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> の組み合わせで必須です:<br />
+<a href="#STRATEGY">STRATEGY</a>=cDNA;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any<br />
+<a href="#STRATEGY">STRATEGY</a>=EST;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any<br />
+<a href="#STRATEGY">STRATEGY</a>=CLONEEND;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=CLONEEND<br />
+<a href="#STRATEGY">STRATEGY</a>=CLONE;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any<br />
+<a href="#STRATEGY">STRATEGY</a>=ENCODE;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=SHOTGUN;PrimerWalk;
+CLONEEND<br />
+<a href="#STRATEGY">STRATEGY</a>=FINISHING;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CLONE_ID_LIST">CLONE_ID_LIST</a><a name="CLONE_ID_LIST"></a><span class="conditionally_required">*</span></dt>
+  <dd>セミコロンで区切られたクローンのリスト (Strategy が PoolClone の場合)
+
+    <p>  Type: varchar(30)<br />
+  Example: RP23-200A2;RP23-500P1</p>
+
+    <p><a href="#CLONE_ID_LIST">CLONE_ID_LIST</a>は <a href="#STRATEGY">STRATEGY</a>=PoolClone の場合にのみ必須です。この場合はセミコロンで区切ったクローンのリストを記載します。クローンが Clone Registry (<a href="https://www.ncbi.nlm.nih.gov/clone/">http://www.ncbi.nlm.nih.gov/clone/</a>) に登録されている場合は standard cloneregistry nomenclature (<a href="https://www.ncbi.nlm.nih.gov/clo content/overview/">http://www.ncbi.nlm.nih.gov/clone/content/overview/</a>) に従って記載します。<br />
+注意:リストに含まれるクローン数に制限はありませんが，個々のクローンのサイズは 30 バイトに制限されています。<br />
+次の <a href="#STRATEGY">STRATEGY</a> と <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> の組み合わせで必須です:   <a href="#STRATEGY">STRATEGY</a>=PoolClone;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#COLLECTION_DATE">COLLECTION_DATE</a><a name="COLLECTION_DATE"></a><span class="conditionally_required">*</span></dt>
+  <dd>環境サンプルが採取された日時 (例 Mar 2 2006 12:00AM)
+
+    <p>  Type: datetime<br />
+  Example: Mar 2 2006 12:00AM</p>
+
+    <p><a href="#COLLECTION_DATE">COLLECTION_DATE</a>は環境サンプルが採取された日時を示します。<br />
+次の <a href="#STRATEGY">STRATEGY</a>と <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>の組み合わせで必須です:<br />
+<a href="#STRATEGY">STRATEGY</a>=Env Sample-Geo; <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any<a href="#STRATEGY">STRATEGY</a>=Env Sample-Host; <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CVECTOR_ACCESSION">CVECTOR_ACCESSION</a><a name="CVECTOR_ACCESSION"></a></dt>
+  <dd>クローニングベクター配列の DDBJ/EMBL/GenBank アクセッション番号
+
+    <p>  Type: varchar(50)<br />
+  Example: AY451994</p>
+
+    <p><a href="#CVECTOR_ACCESSION">CVECTOR_ACCESSION</a>は使用されたクローニングベクターのアクセッション番号です。この番号は<a href="#CLONE_ID">CLONE_ID</a>に記入されたベクターに対応します。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CVECTOR_CODE">CVECTOR_CODE</a><a name="CVECTOR_CODE"></a></dt>
+  <dd>センターがクローニングベクターに付けたコード
+
+    <p>  Type: varchar(50)<br />
+  Example: PBACE3.6</p>
+
+    <p><a href="#CVECTOR_CODE">CVECTOR_CODE</a>には登録者がクローニングベクターに付けたコードを記入します。使われた全てのクローニングベクターの配列は DDBJ/EMBL/GenBank に登録することが推奨されます。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#DEPTH">DEPTH</a><a name="DEPTH"></a></dt>
+  <dd>環境サンプルが採取された深度 (メーター)
+
+    <p>  Type: float<br />
+  Example: 10M</p>
+
+    <p><a href="#DEPTH">DEPTH</a>は水圏や土壌から採取された環境サンプルで記載できます。この値が NULL のときはサンプルが環境の表面から採取されたものとみなされます。この項目は環境サンプルにのみ記載可能ですが必須ではありません。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#ELEVATION">ELEVATION</a><a name="ELEVATION"></a></dt>
+  <dd>環境サンプルが採取された高度 (メーター)
+
+    <p>  Type: float<br />
+  Example: 500</p>
+
+    <p>この値が NULL のときはサンプルは海水位で取得されたものとみなされます。この項目はいくつかの環境サンプルでのみ記載可能ですが必須ではありません。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#ENVIRONMENT_TYPE">ENVIRONMENT_TYPE</a><a name="ENVIRONMENT_TYPE"></a><span class="conditionally_required">*</span></dt>
+  <dd>環境サンプルが採取された環境の種類
+
+    <p>  Type: varchar(250)<br />
+  Example: sea water</p>
+
+    <p><a href="#ENVIRONMENT_TYPE">ENVIRONMENT_TYPE</a>では環境サンプルが取得された環境の種類を記載します。<a href="#LATITUDE">LATITUDE</a> と <a href="#LONGITUDE">LONGITUDE</a>で地理上の位置を示せますが，ある位置には 環境が存在し得ます (土壌，泥，木の根など)。<br />
+次の <a href="#STRATEGY">STRATEGY</a> と <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> の組み合わせで必須です:<br />
+<a href="#STRATEGY">STRATEGY</a>=PoolClone;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any<br />
+<a href="#STRATEGY">STRATEGY</a>=Env Sample-Geo; <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#EXTENDED_DATA">EXTENDED_DATA</a><a name="EXTENDED_DATA"></a></dt>
+  <dd>EXTENDED_DATA block 中の&lt;field&gt;タグのなかに記載された任意の追加情報<br />
+
+    <p>  Type: varchar()<br />
+  Example:</p>
+
+    <p>&lt;extended_data&gt;<br />
+        &lt;field name=’SamplingSiteMonthChlorophyllLevel’&gt;1.4 mg_mm&lt;/field&gt;<br />
+        &lt;field name=’SamplingSiteYearlyChlorophyllLevel’&gt;1.12 mg_mm&lt;/field&gt;<br />
+        &lt;field name=’SamplingSiteYearlyChlorophyllLevelStdError’&gt;0.19 mg_mm&lt;/field&gt;<br />
+&lt;/extended_data&gt;<br />
+‘=’ と区切り文字の ‘|’ は name とその値には使用できません。これらの記号の混入以外はチェックされません。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#FEATURE_ID_FILE">FEATURE_ID_FILE</a><a name="FEATURE_ID_FILE"></a></dt>
+  <dd>チップ上の feature とその位置を記載したファイル
+
+    <p>  Type: varchar(200)<br />
+  Example: ./mytraces/chip2.cdf</p>
+
+    <p><a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=”CHIP”のとき <a href="#FEATURE_ID_FILE">FEATURE_ID_FILE</a>でチップ上の feature の位置と配列を記載したファイルを指定します。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#FEATURE_ID_FILE_NAME">FEATURE_ID_FILE_NAME</a><a name="FEATURE_ID_FILE_NAME"></a><span class="conditionally_required">*</span></dt>
+  <dd>共通の FEATURE_ID_FILE (先に登録します) へのリファレンス
+
+    <p>  Type: varchar(200)<br />
+  Example:</p>
+
+    <p>この項目は <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=”CHIP” のときに必須です。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#FEATURE_SIGNAL_FILE">FEATURE_SIGNAL_FILE</a><a name="FEATURE_SIGNAL_FILE"></a></dt>
+  <dd>チップ上の feature のシグナルと分散が記載されたファイル
+
+    <p>  Type: varchar(200)<br />
+  Example: ./mytraces/chip2.signal</p>
+
+    <p><a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=”CHIP”のときにチップ上の feature のシグナルと分散が記載されたファイルを <a href="#FEATURE_SIGNAL_FILE">FEATURE_SIGNAL_FILE</a>で指定します。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#FEATURE_SIGNAL_FILE_NAME">FEATURE_SIGNAL_FILE_NAME</a><a name="FEATURE_SIGNAL_FILE_NAME"></a><span class="conditionally_required">*</span></dt>
+  <dd>共通の FEATURE_SIGNAL_FILE (先に登録します) へのリファレンス
+
+    <p>  Type: varchar(200)<br />
+  Example:</p>
+
+    <p>この項目は <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=”CHIP” のときに必須です。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#GENE_NAME">GENE_NAME</a><a name="GENE_NAME"></a></dt>
+  <dd>遺伝子名や遺伝子の ID
+
+    <p>  Type: varchar(100)<br />
+  Example: transporter 1</p>
+
+    <p>フリーテキスト。主に <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=’Re-sequencing’ or’ENCODE’ のときに使われます。研究対象の遺伝子を遺伝子名や何らかの ID で参照します。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#HI_FILTER_SIZE">HI_FILTER_SIZE</a><a name="HI_FILTER_SIZE"></a></dt>
+  <dd>環境サンプルを分取したフィルターで一番大きいサイズ
+
+    <p>  Type: varchar(50)<br />
+  Example: 50 micron</p>
+
+    <p><a href="#HI_FILTER_SIZE">HI_FILTER_SIZE</a>は環境サンプルでのみ記載可能ですが必須ではありません。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#HOST_CONDITION">HOST_CONDITION</a><a name="HOST_CONDITION"></a></dt>
+  <dd>環境サンプルが採取されたホストの状態
+
+    <p>  Type: varchar(100)<br />
+  Example: HIV-positive</p>
+
+    <p><a href="#HOST_CONDITION">HOST_CONDITION</a>は環境サンプルでのみ記載可能でホストのコンディション
+(healthy, sick など) を記載します。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#HOST_ID">HOST_ID</a><a name="HOST_ID"></a><span class="conditionally_required">*</span></dt>
+  <dd>環境サンプルが取得されたホストに付けられた固有の ID
+
+    <p>  Type: varchar(100)<br />
+  Example: yerkes pedigree #C0479 ‘Clint’</p>
+
+    <p><a href="#HOST_ID">HOST_ID</a>は環境サンプルでのみ記載可能でホストを特定するのに利用されます。<br />
+次の <a href="#STRATEGY">STRATEGY</a>と <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> の組み合わせで必須です:<br />
+<a href="#STRATEGY">STRATEGY</a>=Env Sample-Host; <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#HOST_LOCATION">HOST_LOCATION</a><a name="HOST_LOCATION"></a><span class="conditionally_required">*</span></dt>
+  <dd>環境サンプルが採取されたホスト上の特定の場所
+
+    <p>  Type: varchar(100)<br />
+  Example: rumen</p>
+
+    <p><a href="#HOST_LOCATION">HOST_LOCATION</a>には環境サンプルが採取されたホスト上の特定の場所，例えば dental plaque，hindgut，root surfaces を記載します。<br />
+次の <a href="#STRATEGY">STRATEGY</a>と <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> の組み合わせで必須です:<br />
+<a href="#STRATEGY">STRATEGY</a>=Env Sample-Host; <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#HOST_SPECIES">HOST_SPECIES</a><a name="HOST_SPECIES"></a><span class="conditionally_required">*</span></dt>
+  <dd>環境サンプルが採取されたホスト
+
+    <p>  Type: varchar(100)<br />
+  Example: Pan troglodytes</p>
+
+    <p><a href="#HOST_SPECIES">HOST_SPECIES</a>は環境サンプルでのみ記載可能です。<br />
+次の <a href="#STRATEGY">STRATEGY</a> と <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> の組み合わせで必須です:<br />
+<a href="#STRATEGY">STRATEGY</a>=Env Sample-Host; <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#INDIVIDUAL_ID">INDIVIDUAL_ID</a><a name="INDIVIDUAL_ID"></a></dt>
+  <dd>trace が由来する個人やサンプルの ID
+
+    <p>  Type: varchar(100)<br />
+  Example: NA12345</p>
+
+    <p><a href="#INDIVIDUAL_ID">INDIVIDUAL_ID</a>は trace と個人とを結び付けるセンター独自の ID です。この項目は主に population を対象とした研究で使用します。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#INSERT_FLANK_LEFT">INSERT_FLANK_LEFT</a><a name="INSERT_FLANK_LEFT"></a><span class="conditionally_required">*</span></dt>
+  <dd>クローニング部位の左に隣接する塩基配列
+
+    <p>  Type: varchar(100)<br />
+  Example: AAGGTGCGATGCAGTGGCAGTAGCAGTGTCGACGTGACGATTCGTCCGGA</p>
+
+    <p><a href="#INSERT_FLANK_LEFT">INSERT_FLANK_LEFT</a> ではクローニング部位の左に隣接するリンカーを含む塩基配列 (50-100 塩基) を記入します。この情報によりユーザは独自にベクターをトリミングすることができます。この項目はほとんど全ての <a href="#STRATEGY">STRATEGY</a> と <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> で必須です。この項目は <a href="#CLIP_VECTOR_LEFT">CLIP_VECTOR_LEFT</a> がある場合には省略できますが，<a href="#INSERT_FLANK_LEFT">INSERT_FLANK_LEFT</a> への記入を推奨しています。クローニングステップがない場合は ‘NONE’ と記入します。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#INSERT_FLANK_RIGHT">INSERT_FLANK_RIGHT</a><a name="INSERT_FLANK_RIGHT"></a><span class="conditionally_required">*</span></dt>
+  <dd>クローニング部位の右に隣接する塩基配列
+
+    <p>  Type: varchar(100)<br />
+  Example: AAGGCGCGATGCAGTGAGCGAGGCTGACGTCGGCTAGCGTCGCGTCGGGT</p>
+
+    <p><a href="#INSERT_FLANK_RIGHT">INSERT_FLANK_RIGHT</a> ではクローニング部位の右に隣接するリンカーを含む塩基配列 (50-100 塩基)　を記入します。この情報によりユーザは独自にベクターをトリミングすることができます。この項目はほとんど全ての <a href="#STRATEGY">STRATEGY</a> と <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> で必須です。この項目は <a href="#CLIP_VECTOR_RIGHT">CLIP_VECTOR_RIGHT</a> がある場合には省略できますが，<a href="#INSERT_FLANK_RIGHT">INSERT_FLANK_RIGHT</a> への記入を推奨しています。クローニングステップがない場合は ‘NONE’ と記入します。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#INSERT_SIZE">INSERT_SIZE</a><a name="INSERT_SIZE"></a><span class="conditionally_required">*</span></dt>
+  <dd>インサートの平均塩基配列長 (TEMPLATE_ID の値で参照されます)
+
+    <p>  Type:int<br />
+  Example: 2000</p>
+
+    <p><a href="#INSERT_SIZE">INSERT_SIZE</a>は配列決定されるクローンの期待されるインサート長を示します。あるライブラリーに対して見積もられたインサートの平均長に基づいて記入します。この情報は全ゲノムアセンブリなどの実験にとって重要です。<br />
+次の <a href="#STRATEGY">STRATEGY</a> と <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> の組み合わせで必須です:<br />
+<a href="#STRATEGY">STRATEGY</a>=Any;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=WGS<br />
+<a href="#STRATEGY">STRATEGY</a>=Any;<br />
+<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=WCS<br />
+<a href="#STRATEGY">STRATEGY</a>=cDNA;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=CLONEEND<br />
+<a href="#STRATEGY">STRATEGY</a>=CLONEEND;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=CLONEEND</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#INSERT_STDEV">INSERT_STDEV</a><a name="INSERT_STDEV"></a><span class="conditionally_required">*</span></dt>
+  <dd>INSERT_SIZE の標準偏差
+
+    <p>  Type: int<br />
+  Example: 200</p>
+
+    <p><a href="#INSERT_STDEV">INSERT_STDEV</a>はインサート長の標準偏差です。この値は概算値です。<br />
+次の <a href="#STRATEGY">STRATEGY</a> と
+<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>
+の組み合わせで必須です:<br />
+<a href="#STRATEGY">STRATEGY</a>=Any;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=WGS<br />
+<a href="#STRATEGY">STRATEGY</a>=Any;<br />
+<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=WCS<br />
+<a href="#STRATEGY">STRATEGY</a>=cDNA;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=CLONEEND<br />
+<a href="#STRATEGY">STRATEGY</a>=CLONEEND;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=CLONEEND</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#LATITUDE">LATITUDE</a><a name="LATITUDE"></a><span class="conditionally_required">*</span></dt>
+  <dd>サンプル採取地点の緯度 (standard GPS notation に基づく)
+
+    <p>  Type: float<br />
+  Example: 54.736</p>
+
+    <p>環境サンプルの取得地点の緯度。緯度の範囲は　[-90,90] で，赤道を 0 とし，赤道より北を正の値で，南を負の値で表します。<br />
+次の <a href="#STRATEGY">STRATEGY</a> と <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> の組み合わせで必須です:<br />
+<a href="#STRATEGY">STRATEGY</a>=Env Sample-Geo;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#LIBRARY_ID">LIBRARY_ID</a><a name="LIBRARY_ID"></a><span class="conditionally_required">*</span></dt>
+  <dd>CLONE_ID に記載されたクローンのソースライブラリー
+
+    <p>  Type: varchar(100)<br />
+  Example: RP23</p>
+
+    <p><a href="#LIBRARY_ID">LIBRARY_ID</a> にはクローンのソースライブラリーを記載します。多くのゲノムライブラリーはClone Registry (<a href="https://www.ncbi.nlm.nih.gov/clone">http://www.ncbi.nlm.nih.gov/clone</a>)に既に登録されており，これらのライブラリーについてはstandard nomenclature (<a href="https://www.ncbi.nlm.nih.gov/clone/content/overview/">http://www.ncbi.nlm.nih.gov/clone/content/overview/</a>)に従った名称を使用します。<br />
+次の <a href="#STRATEGY">STRATEGY</a> と <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> の組み合わせで必須です:<br />
+<a href="#STRATEGY">STRATEGY</a>=cDNA;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any<br />
+<a href="#STRATEGY">STRATEGY</a>=EST;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any<br />
+<a href="#STRATEGY">STRATEGY</a>=CLONEEND;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=CLONEEND<br />
+<a href="#STRATEGY">STRATEGY</a>=CLONE;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any<br />
+<a href="#STRATEGY">STRATEGY</a>=ENCODE;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=SHOTGUN;PrimerWalk;
+CLONEEND</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#LONGITUDE">LONGITUDE</a><a name="LONGITUDE"></a><span class="conditionally_required">*</span></dt>
+  <dd>サンプル採取地点の経度 (standard GPS notation に基づく)
+
+    <p>  Type: float<br />
+  Example: -86.403</p>
+
+    <p>環境サンプルデータの取得地点の経度。グリニッジ子午線を 0° として，子午線よりも東は +180°，西は -180° です。<br />
+次の <a href="#STRATEGY">STRATEGY</a> と <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> の組み合わせで必須です:<br />
+<a href="#STRATEGY">STRATEGY</a>=Env Sample-Geo; <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#LO_FILTER_SIZE">LO_FILTER_SIZE</a><a name="LO_FILTER_SIZE"></a></dt>
+  <dd>環境サンプルを分取したフィルターで一番小さいサイズ
+
+    <p>  Type: varchar(50)<br />
+  Example: 25 micron</p>
+
+    <p><a href="#LO_FILTER_SIZE">LO_FILTER_SIZE</a>は環境サンプルでのみ記載可能ですが必須ではありません。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#NCBI_PROJECT_ID">NCBI_PROJECT_ID</a><a name="NCBI_PROJECT_ID"></a></dt>
+  <dd>INSDC によって管理されている BioProject ID
+
+    <p>  Type: int<br />
+  Example: 7</p>
+
+    <p><a href="#NCBI_PROJECT_ID">NCBI_PROJECT_ID</a>は trace と <a href="/bioproject/index.html">BioProject database</a> を結びつけ，プロジェクト単位でのデータ取得を可能にします。シークエンス拠点はゲノム配列データを登録する前に <a href="/bioproject/index.html">DDBJ BioProject</a> にプロジェクトを登録することができます。プロジェクト登録の時点で配列データを登録する必要はありません。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#ORGANISM_NAME">ORGANISM_NAME</a><a name="ORGANISM_NAME"></a><span class="conditionally_required">*</span></dt>
+  <dd>BARCODE プロジェクトにおいて trace が由来する生物種名
+
+    <p>  Type: varchar(100)<br />
+  Example: Acanthocybium solandri</p>
+
+    <p><a href="#ORGANISM_NAME">ORGANISM_NAME</a>は BARCODE データにおいてリードを生物種ごとに分類するのに使われます。生物種名は<a href="https://www.ncbi.nlm.nih.gov/Taxonomy/">Taxonomy Browser</a> に従って記載します。全ての BARCODE データでは<a href="#SPECIES_CODE">SPECIES_CODE</a>=”BARCODESPECIES” になります。<a href="#STRATEGY">STRATEGY</a>=BARCODE の場合に必須です。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#PEAK_FILE">PEAK_FILE</a><a name="PEAK_FILE"></a></dt>
+  <dd>peak value が記載されたファイル
+
+    <p>  Type: varchar(200)<br />
+  Example: ./mytraces/123clone.peak 説明については</p>
+
+    <p><a href="#BASE_FILE">BASE_FILE</a>をご覧ください。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#PH">PH</a><a name="PH"></a></dt>
+  <dd>環境サンプルが採取された場所の pH
+
+    <p>  Type: float<br />
+  Example: 7.2</p>
+
+    <p><a href="#PH">PH</a>は環境サンプルでのみ記載可能ですが必須ではありません。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#PICK_GROUP_ID">PICK_GROUP_ID</a><a name="PICK_GROUP_ID"></a></dt>
+  <dd>同じ時に取得された trace をまとめる ID
+
+    <p>  Type: int<br />
+  Example: 939065</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#PLACE_NAME">PLACE_NAME</a><a name="PLACE_NAME"></a></dt>
+  <dd>生物学的サンプルが得られた地点の国名 and/or 一般に通用する名称
+
+    <p>  Type: varchar(250)<br />
+  Example: Octopus</p>
+
+    <p>Springs
+<a href="#PLACE_NAME">PLACE_NAME</a>は環境サンプルでのみ記載可能ですが必須ではありません。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#PLATE_ID">PLATE_ID</a><a name="PLATE_ID"></a></dt>
+  <dd>登録者が付けたプレート ID
+
+    <p>  Type: varchar(32)<br />
+  Example: 203</p>
+
+    <p><a href="#PLATE_ID">PLATE_ID</a>と<a href="#WELL_ID">WELL_ID</a>はシークエンステンプレートが保存された場所を指し示します(<a href="#CLONE_ID">CLONE_ID</a>
+に記載されたクローンの保存場所ではありません)。この情報はこぼれたり何かが混入したプレートを同定するのに役立ちます。プレートを使用しない実験の場合は
+‘0’ を記入します。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#POPULATION_ID">POPULATION_ID</a><a name="POPULATION_ID"></a></dt>
+  <dd>登録者が trace (もしくは trace のグループ) が由来する population に付けた ID
+
+    <p>  Type: varchar(100)<br />
+  Example: CEPH</p>
+
+    <p><a href="#POPULATION_ID">POPULATION_ID</a>は集団を特定するのに使われます。この情報は population study (通常 <a href="#STRATEGY">STRATEGY</a>=SNP)　で使用されます。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#PREP_GROUP_ID">PREP_GROUP_ID</a><a name="PREP_GROUP_ID"></a></dt>
+  <dd>同じ時に調整された trace をまとめる ID
+
+    <p>  Type:varchar(30)<br />
+  Example: A2</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#PRIMER">PRIMER</a><a name="PRIMER"></a></dt>
+  <dd>シークエンス反応で使われたプライマー配列
+
+    <p>  Type: varchar(200)<br />
+  Example:GAATACCTACGATCGCC</p>
+
+    <p><a href="#PRIMER">PRIMER</a>にはシークエンスプライマーの塩基配列を記入します。センターが多種類のプライマーを使っている場合は<a href="#PRIMER_CODE">PRIMER_CODE</a> に primer code のリストを記載します。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#PRIMER_CODE">PRIMER_CODE</a><a name="PRIMER_CODE"></a></dt>
+  <dd>シークエンスプライマーに対するコード
+
+    <p>  Type: varchar(30)<br />
+  Example: Sp6</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#PRIMER_LIST">PRIMER_LIST</a><a name="PRIMER_LIST"></a><span class="conditionally_required">*</span></dt>
+  <dd>マッピング実験 (例 AFLP) で使われた ‘;’ で区切られたプライマーのリスト
+
+    <p>  Type: varchar(100)<br />
+  Example:AAGGTCTGCGCGTGTC;AGCTGCGTACGTAATCG;</p>
+
+    <p>この項目は<a href="#STRATEGY">STRATEGY</a>=”AFLP” と <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=”PCR” の組み合わせのときに必須です。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#PROGRAM_ID">PROGRAM_ID</a><a name="PROGRAM_ID"></a><span class="red">*</span></dt>
+  <dd>trace ファイルを作成するのに使われたプログラム
+
+    <p>  Type: varchar(100)<br />
+  Example: phred-19990722h</p>
+
+    <p>ベースコールに使われたプログラムをフリーテキストで記載します。プログラムの名前，バージョン番号や日付はとても有用です。<br />
+例:</p>
+    <ul>
+      <li>phred-19980904e</li>
+      <li>abi-3.1</li>
+      <li>ATQA</li>
+      <li>TraceTuner</li>
+      <li>Licor</li>
+      <li>Megabase</li>
+      <li>Beckman</li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#PROJECT_NAME">PROJECT_NAME</a><a name="PROJECT_NAME"></a></dt>
+  <dd>異なるセンターからの trace をまとめる共通したプロジェクト名
+
+    <p>  Type: varchar(50)<br />
+  Example: New</p>
+
+    <p>Project シークエンス拠点は共通したプロジェクト名を用いることで，あるプロジェクトから産みだされる全ての trace をグループ化することができます。記載可能なプロジェクト名は制限されています。この項目を利用する場合は事前に DDBJ Trace Archive に連絡し，全てのプロジェクト参加者が同意しているプロジェクト名を伝えます。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#QUAL_FILE">QUAL_FILE</a><a name="QUAL_FILE"></a></dt>
+  <dd>quality score を含んだファイル
+
+    <p>  Type: varchar(200)<br />
+  Example: ./mytraces/123clone.fasta.qs</p>
+
+    <p>trace ファイルが quality score を含んでいない場合，quality score が含まれた別のファイルを登録します。<a href="#QUAL_FILE">QUAL_FILE</a> でファイルを指定します。trace (通常は scf) ファイル中の quality score は <a href="#QUAL_FILE">QUAL_FILE</a> のもので上書きされます。<a href="#QUAL_FILE">QUAL_FILE</a> と trace ファイルの quality score が同じ場合は QUAL_FILE を登録しないでください。<a href="#BASE_FILE">BASE_FILE</a> と<a href="#QUAL_FILE">QUAL_FILE</a> の両方を登録する場合は，あわせて peak index 情報を<a href="#PEAK_FILE">PEAK_FILE</a> として別ファイルで登録します。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#REFERENCE_ACCESSION">REFERENCE_ACCESSION</a><a name="REFERENCE_ACCESSION"></a><span class="conditionally_required">*</span></dt>
+  <dd>リシークエンスプロジェクトで使用されるリファレンス配列のアクセッション番号 (配列を特定するためにバージョン番号も併記します)。 Comparative study の場合はプライマーデザインの情報も付け加えます。
+
+    <p>  Type: varchar(50)<br />
+  Example: NT_029829.1</p>
+
+    <p>次の <a href="#STRATEGY">STRATEGY</a> と <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> の組み合わせで必須です:<br />
+<a href="#STRATEGY">STRATEGY</a>=Re-sequencing;Comparative <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#REFERENCE_ACC_MAX">REFERENCE_ACC_MAX</a><a name="REFERENCE_ACC_MAX"></a><span class="conditionally_required">*</span></dt>
+  <dd>リシークエンスや比較ゲノム解析における amplicon の終了位置
+
+    <p>  Type: int<br />
+  Example: 30929</p>
+
+    <p>この項目は[REFERENCE_ACCESSIOxx(#REFERENCE_ACCESSION)の accession.versionで特定されたリファレンス配列の終端の座標を記入します。スタートを (０ではなく) １とした塩基対座標で記入します。<br />
+次の <a href="#STRATEGY">STRATEGY</a> と <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> の組み合わせで必須です:<br />
+<a href="#STRATEGY">STRATEGY</a>=Re-sequencing; <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=SHOTGUN; PCR;RT-PCR</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#REFERENCE_ACC_MIN">REFERENCE_ACC_MIN</a><a name="REFERENCE_ACC_MIN"></a><span class="conditionally_required">*</span></dt>
+  <dd>リシークエンスや比較ゲノム解析における amplicon の開始位置
+
+    <p>  Type: int<br />
+  Example: 29829</p>
+
+    <p>この項目は<a href="#REFERENCE_ACCESSION">REFERENCE_ACCESSION</a>の accession.versionで特定されたリファレンス配列の開始座標を記入します。スタートを (０ではなく) １とした塩基対座標で記入します。<br />
+次の <a href="#STRATEGY">STRATEGY</a> と <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> の組み合わせで必須です: <br />
+<a href="#STRATEGY">STRATEGY</a>=Re-sequencing;  <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=SHOTGUN; PCR;RT-PCR</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#REFERENCE_OFFSET">REFERENCE_OFFSET</a><a name="REFERENCE_OFFSET"></a><span class="conditionally_required">*</span></dt>
+  <dd>リシークエンス解析でスタートの位置を決める REFERENCE_ACCESSION　で指定された配列におけるオフセット値
+
+    <p>  Type: int<br />
+  Example: 1520899</p>
+
+    <p>この項目は<a href="#REFERENCE_ACCESSION">REFERENCE_ACCESSION</a>の accession.versionで特定されたリファレンス配列の終端の座標を記入します。スタートを (０ではなく) １とした塩基対座標で記入します。<br />
+次の <a href="#STRATEGY">STRATEGY</a> と <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> の組み合わせで必須です:<br />
+<a href="#STRATEGY">STRATEGY</a>=Re-sequencing; <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=CHIP</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#REFERENCE_SET_MAX">REFERENCE_SET_MAX</a><a name="REFERENCE_SET_MAX"></a></dt>
+  <dd>リシークエンスされた領域全体の終了位置。この領域は複数の amplicon を含むことがあります
+
+    <p>  Type: int<br />
+  Example: 29829</p>
+
+    <p>この項目には<a href="#REFERENCE_ACCESSION">REFERENCE_ACCESSION</a>の accession.versionで指定されたリシークエンスされた領域全体の終了位置を記入します。スタートを (０ではなく) １とした塩基対座標で記入します。
+REFERENCE_ACC_[MIN|MAX] と REFERENCE_SET_[MIN|MAX]のセットは同じ REFERENCE_ACC を参照する必要があります。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#REFERENCE_SET_MIN">REFERENCE_SET_MIN</a><a name="REFERENCE_SET_MIN"></a></dt>
+  <dd>リシークエンスされた領域全体の開始位置。この領域は複数の amplicon を含むことがあります
+
+    <p>  Type: int<br />
+  Example: 29829</p>
+
+    <p>この項目には<a href="#REFERENCE_ACCESSION">REFERENCE_ACCESSION</a>の accession.versionで指定されたリシークエンスされた領域全体の開始位置を記入します。
+スタート を (０ではなく) １とした塩基対座標で記入します。REFERENCE_ACC_[MIN|MAX] と REFERENCE_SET_[MIN|MAX]のセットは同じ REFERENCE_ACC を参照する必要があります。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#RUN_DATE">RUN_DATE</a><a name="RUN_DATE"></a></dt>
+  <dd>シークエンス反応が行われた日付
+
+    <p>  Type: datetime<br />
+  Example: 2000-10-28</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#RUN_GROUP_ID">RUN_GROUP_ID</a><a name="RUN_GROUP_ID"></a></dt>
+  <dd>同じシークエンサーでランされた trace につける ID
+
+    <p>  Type: varchar(30)<br />
+  Example: group2</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#RUN_LANE">RUN_LANE</a><a name="RUN_LANE"></a></dt>
+  <dd>trace のレーン，もしくはキャピラリ
+
+    <p>  Type: int<br />
+  Example: 1<br />
+<a href="#RUN_LANE">RUN_LANE</a>には trace が得られたレーンやキャピラリを記入します。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#RUN_MACHINE_ID">RUN_MACHINE_ID</a><a name="RUN_MACHINE_ID"></a></dt>
+  <dd>trace が得られたシークエンサーの ID
+
+    <p>  Type: varchar(30)<br />
+  Example: machine2</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#RUN_MACHINE_TYPE">RUN_MACHINE_TYPE</a><a name="RUN_MACHINE_TYPE"></a></dt>
+  <dd>trace が得られたシークエンサーのモデル名
+
+    <p>  Type: varchar(30)<br />
+  Example: ABI 310</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#SALINITY">SALINITY</a><a name="SALINITY"></a></dt>
+  <dd>環境サンプルが採取された場所の千分率で表された塩濃度
+
+    <p>  Type: float<br />
+  Example: 20<br />
+<a href="#SALINITY">SALINITY</a>は環境サンプルでのみ記載可能ですが必須ではありません。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#SEQ_LIB_ID">SEQ_LIB_ID</a><a name="SEQ_LIB_ID"></a><span class="conditionally_required">*</span></dt>
+  <dd>シークエンスに使用された M13/PUC ライブラリー
+
+    <p>  Type: varchar(255)<br />
+  Example: 22194</p>
+
+    <p>シークエンスに用いられた M13/PUC ベースのクローンに対してセンターが独自に付けた ID を記入します。この ID で trace を ligation event でまとめることができるようになります。<br />
+次の <a href="#STRATEGY">STRATEGY</a> と <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> の組み合わせで必須です:<br />
+<a href="#STRATEGY">STRATEGY</a>=Any;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=SHOTGUN   <br /><a href="#STRATEGY">STRATEGY</a>=Any;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=WGS/WCS</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#SOURCE_TYPE">SOURCE_TYPE</a><a name="SOURCE_TYPE"></a><span class="red">*</span></dt>
+  <dd>DNA のソース
+
+    <p>  Type: varchar(50)<br />
+  Example: GENOMIC DNA</p>
+
+    <p><a href="#SOURCE_TYPE">SOURCE_TYPE</a>に記載可能なコードとその説明は以下です:</p>
+    <ul>
+      <li>G=Genomic DNA (ゲノム DNA からの PCR 産物を含む)</li>
+      <li>N=Non Genomic DNA (EST, cDNA, RT-PCR, screenedlibraries)</li>
+      <li>VIRAL RNA=Viral RNA</li>
+      <li>SYNTHETIC=Synthetic DNA</li>
+    </ul>
+
+    <p>記載可能なコードは G，N，GENOMIC，NON GENOMIC，VIRAL RNA，SYNTHETIC です。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#SPECIES_CODE">SPECIES_CODE</a><a name="SPECIES_CODE"></a><span class="red">*</span></dt>
+  <dd>trace が得られた生物種
+
+    <p>  Type: varchar(100)<br />
+  Example: Homo sapiens</p>
+
+    <p><a href="#SPECIES_CODE">SPECIES_CODE</a>は分類学上の生物種名でリードを分類するのに使われます。この項目はコントロールされています。<br />Trace Archive に含まれている生物種名のリスト:<a href="https://www.ncbi.nlm.nih.gov/Traces/trace.cgi?cmd=stat&amp;f=xml_list_species&amp;m=obtain&amp;s=species">http://www.ncbi.nlm.nih.gov/Traces/trace.cgi?cmd=stat&amp;f=xml_list_species&amp;m=obtain&amp;s=species</a>リストに含まれていない生物を登録する場合は，データを投稿する前に DDBJ Trace Archive に連絡します。trace が由来する生物を分類できない場合は，環境サンプルには ‘ENVIRONMENTAL SEQUENCE’ を人工物には ‘ARTIFICIAL SEQUENCE’ を使用することができます。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#STRAIN">STRAIN</a><a name="STRAIN"></a><span class="conditionally_required">*</span></dt>
+  <dd>trace が由来する strain
+
+    <p>  Type: varchar(50)<br />
+  Example: C57BL/6J</p>
+
+    <p><a href="#STRATEGY">STRATEGY</a>=”SNP” のときに必須です。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#STRATEGY">STRATEGY</a><a name="STRATEGY"></a><span class="red">*</span></dt>
+  <dd>実験的な strategy
+
+    <p>  Type: varchar(50)<br />
+  Example: MODEL VERIFY</p>
+
+    <p>trace を得る上で採用された実験上の <a href="#STRATEGY">STRATEGY</a>。値はコントロールされていますが，登録者はリストへの新しい用語の追加を申請することができます。</p>
+
+    <p>記載可能な用語 (このリストは拡張され続けています):</p>
+    <ul>
+      <li>AFLP: Amplified Fragment Length Polymorphism</li>
+      <li>BARCODE: DNA sequence analysis of a uniform target gene toenable
+species identification</li>
+      <li>CCS: Concatenated cDNA sequencing</li>
+      <li>cDNA: Sequences generated in the process of sequencing
+cDNAclones</li>
+      <li>CF-S: Cot-filtered single/low-copy genomic DNA</li>
+      <li>CF-M: Cot-filtered moderately repetitive genomic DNA</li>
+      <li>CF-H: Cot-filtered highly repetitive genomic DNA</li>
+      <li>CF-T: Cot-filtered theoretical single-copy DNA</li>
+      <li>CLONE: Genomic clone based (hierarchical) sequencing</li>
+      <li>CLONEEND: Sequences generated from the end of a
+clone(BAC/PAC/Fosmid or cDNA)</li>
+      <li>Comparative: Sequences obtained using primers design fromrelated
+species</li>
+      <li>CTS: Concatenated Tag Sequencing</li>
+      <li>Env Sample-GEO: Geographically generated environmentalsample</li>
+      <li>Env Sample-Host: Environmental samples collected from aspecific
+host</li>
+      <li>EST: single pass sequencing of cDNA templates</li>
+      <li>FINISHING: a read specifically made for finishing, could
+beeither BAC finishing or Whole Genome Assembly (WGA) finishing</li>
+      <li>MODEL VERIFY: Sequences obtained to verify proposed genemodels</li>
+      <li>PoolClone: Pools of clones (BACs mostly)</li>
+      <li>SNP: Reads used for SNP identification</li>
+      <li>TARGETED LOCUS: Sequences obtained from templates generated
+byprimers designed to amplify a specific genetic locus</li>
+      <li>Re-sequencing: Re-sequencing of targeted genomic regions</li>
+      <li>RT-PCR: Sequences obtained using templates generated by
+ReverseTranscriptase Polymerase Chain Reaction</li>
+      <li>WGA: Whole Genome Assembly</li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#SUBMISSION_TYPE">SUBMISSION_TYPE</a><a name="SUBMISSION_TYPE"></a><span class="red">*</span></dt>
+  <dd>submission の種類
+
+    <p>  Type: varchar(50)<br />
+  Example: NEW</p>
+
+    <p>記載可能な値:</p>
+    <ul>
+      <li>NEW: 新しいデータを登録するとき</li>
+      <li>UPDATE:trace とメタデータを更新するとき。以前のデータは TI とともに保存され，更新された trace には新しい
+TI が付与され active になります。</li>
+      <li>UPDATEINFO:登録済みの trace を変えることなくメタデータのみを更新するとき</li>
+      <li>WITHDRAW:trace を withdraw するとき</li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#SVECTOR_ACCESSION">SVECTOR_ACCESSION</a><a name="SVECTOR_ACCESSION"></a></dt>
+  <dd>シークエンスベクターの DDBJ/EMBL/GenBank アクセッション番号
+
+    <p>  Type: varchar(50)<br />
+  Example: X52325</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#SVECTOR_CODE">SVECTOR_CODE</a><a name="SVECTOR_CODE"></a></dt>
+  <dd>センターが独自にシークエンスベクターに付けたコード
+
+    <p>  Type: varchar(50)<br />
+  Example: pBluescript SK(+)</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#TEMPERATURE">TEMPERATURE</a><a name="TEMPERATURE"></a></dt>
+  <dd>環境サンプルが採取された地点の温度 (<sup>o</sup>C)
+
+    <p>  Type: float<br />
+  Example: 30</p>
+
+    <p><a href="#TEMPERATURE">TEMPERATURE</a>は環境サンプルでのみ記載可能ですが必須ではありません。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#TEMPLATE_ID">TEMPLATE_ID</a><a name="TEMPLATE_ID"></a></dt>
+  <dd>登録者がシークエンスしたテンプレートに付けた ID
+
+    <p>  Type: varchar(50)<br />
+  Example: HBBBA2211</p>
+
+    <p><a href="#TEMPLATE_ID">TEMPLATE_ID</a>は実際にシークエンスされたテンプレートを同定するのに使われます。この情報と TRACE_END を組み合わせ，ある２つの trace が同じクローンの両側から得られた ‘mate_pairs’ かどうか判断しています。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#TRACE_END">TRACE_END</a><a name="TRACE_END"></a></dt>
+  <dd>リードに含まれるテンプレートの向き
+
+    <p>  Type: varchar(50)<br />
+  Example: F</p>
+
+    <p><a href="#TRACE_END">TRACE_END</a> は以下の値を持てます:</p>
+    <ul>
+      <li>F: FORWARD</li>
+      <li>R: REVERSE</li>
+      <li>N: UNKNOWN</li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#TRACE_FILE">TRACE_FILE</a><a name="TRACE_FILE"></a><span class="red">*</span></dt>
+  <dd>ルートからの trace ファイルまでの絶対パス
+
+    <p>  Type: varchar(200)<br />
+  Example: ./traces/TRACE001.scf</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#TRACE_FORMAT">TRACE_FORMAT</a><a name="TRACE_FORMAT"></a><span class="red">*</span></dt>
+  <dd>trace のファイル形式
+
+    <p>  Type: varchar(20)<br />
+  Example: scf</p>
+
+    <p><a href="#TRACE_FORMAT">TRACE_FORMAT</a>は以下の値を持てます:</p>
+    <ul>
+      <li>SCF - DNA シークエンス装置から出力される標準的なフォーマット</li>
+      <li>ABI - ABI-tracefile は trace データと塩基配列を含むバイナリーファイルです</li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#TRACE_NAME">TRACE_NAME</a><a name="TRACE_NAME"></a><span class="red">*</span></dt>
+  <dd>登録者が trace に付ける名前
+
+    <p>  Type: varchar(250)<br />
+  Example: HBBBA1U2211</p>
+
+    <p><a href="#TRACE_NAME">TRACE_NAME</a>はセンター単位でユニークであればよく，センター間でユニークである必要はありません。Trace
+Archive では <a href="#TRACE_NAME">TRACE_NAME</a> と <a href="#CENTER_NAME">CENTER_NAME</a> の組み合わせがユニークなキーとして働きます。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a><a name="TRACE_TYPE_CODE"></a><span class="red">*</span></dt>
+  <dd>trace が取得されたシークエンス strategy
+
+    <p>  Type: varchar(50)<br />
+  Example: wgs</p>
+
+    <p><a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>
+には trace を得るのに使われたシークエンス strategy を記入します。</p>
+
+    <p>取り得る値:</p>
+    <ul>
+      <li>CHIP: Sequences obtained using microarrays (also called DNAchips
+or gene chips)</li>
+      <li>CLONEEND: Sequences generated from the end of a large
+insert(BAC/PAC/Fosmid) or cDNA clone</li>
+      <li>EST: Single Pass Expressed Sequence Tag</li>
+      <li>HTP SELEX: High throughput SELEX</li>
+      <li>OTHER: Other than PCR, PrimerWalk, SHOTGUN or TRANSPOSON
+forFINISHING
+<a href="#STRATEGY">STRATEGY</a></li>
+      <li>PCR: Sequences obtained using templates generated by
+genomicPolymerase Chain Reaction</li>
+      <li>PrimerWalk: Sequences generated through a primer walkingstep</li>
+      <li>RT-PCR: Sequences obtained using templates generated by
+ReverseTranscriptase Polymerase Chain Reaction</li>
+      <li>SHOTGUN: Shotgun sequencing of clones (genomic or cDNA)</li>
+      <li>TRANSPOSON: Sequences obtained using templates generated
+bytransposons</li>
+      <li>WCS: Whole Chromosome Shotgun</li>
+      <li>WGS: Whole Genome Shotgun</li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#TRANSPOSON_ACC">TRANSPOSON_ACC</a><a name="TRANSPOSON_ACC"></a><span class="conditionally_required">*</span></dt>
+  <dd>シークエンステンプレートを生成するのに使われたトランスポゾンの DDBJ/EMBL/GenBank アクセッション番号
+
+    <p>  Type: varchar(50)<br />
+  Example: X00913</p>
+
+    <p>次の <a href="#STRATEGY">STRATEGY</a> と <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> の組み合わせの時に必須です:
+<a href="#STRATEGY">STRATEGY</a>=Any;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=TRANSPOSON</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#TRANSPOSON_CODE">TRANSPOSON_CODE</a><a name="TRANSPOSON_CODE"></a><span class="conditionally_required">*</span></dt>
+  <dd>シークエンステンプレートを生成するのに使われたトランスポゾンにセンターが付けたコード
+
+    <p>  Type: varchar(50)<br />
+  Example: Mu transposon</p>
+
+    <p>次の <a href="#STRATEGY">STRATEGY</a> と <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> の組み合わせの時に必須です:
+<a href="#STRATEGY">STRATEGY</a>=Any;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=TRANSPOSON</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#WELL_ID">WELL_ID</a><a name="WELL_ID"></a></dt>
+  <dd>シークエンス反応が行われたウェルにセンターが付けた ID
+
+    <p>  Type: varchar(50)<br />
+  Example: A1</p>
+
+    <p><a href="#WELL_ID">WELL_ID</a> は <a href="#PLATE_ID">PLATE_ID</a> と一緒にシークエンス反応が行われた場所を特定するのに利用されます
+(<a href="#PLATE_ID">WELL_ID</a> も参照)。通常シークエンス反応は標準的な 96 もしくは 384 穴プレートで行われます
+(下の標準的なウェルの配置図を参照)。<br />
+<img src="/assets/images/submission/96well.jpg" alt="標準的な 96 穴プレートの配置" title="標準的な 96 穴プレートの配置" /><br />
+標準的な 96 穴プレートの配置<br />
+<img src="/assets/images/submission/384well.jpg" alt="標準的な 384 穴プレートの配置" title="標準的な 384 穴プレートの配置" /><br />
+標準的な 384 穴プレートの配置</p>
+  </dd>
+</dl>
+
+<h3 id="internal-fields-list-">Internal Fields List <a name="Internal-Fields-List"></a></h3>
+
+<dl>
+  <dt><a href="#BASECALL_LENGTH">BASECALL_LENGTH</a><a name="BASECALL_LENGTH"></a></dt>
+  <dd>trace の塩基長
+
+    <p>  Type: int<br />
+  Example: 396</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BASES_20">BASES_20</a><a name="BASES_20"></a></dt>
+  <dd>quality score が 20 を超える塩基数
+
+    <p>  Type: smallint<br />
+  Example: 50</p>
+
+    <p>注意:quality score がない登録がいくつか存在します。これは ABI ファイルだけが登録され， quality
+call が別ファイルで登録されなかったためです。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BASES_40">BASES_40</a><a name="BASES_40"></a></dt>
+  <dd>quality score が 40 を超える塩基数
+
+    <p>  Type: smallint<br />
+  Example: 50</p>
+
+    <p>注意:quality score がない登録がいくつか存在します。これは ABI ファイルだけが登録され， quality call が別ファイルで登録されなかったためです。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BASES_60">BASES_60</a><a name="BASES_60"></a></dt>
+  <dd>quality score が 60 を超える塩基数
+
+    <p>  Type: smallint<br />
+  Example: 50</p>
+
+    <p>注意:quality score がない登録がいくつか存在します。これは ABI ファイルだけが登録され， quality call が別ファイルで登録されなかったためです。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#LOAD_DATE">LOAD_DATE</a><a name="LOAD_DATE"></a></dt>
+  <dd>データがロードされた日付
+
+    <p>  Type: smalldatetime<br />
+  Example: Jan 8 2001 11:59AM</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#MATE_PAIR">MATE_PAIR</a><a name="MATE_PAIR"></a></dt>
+  <dd>同じテンプレートの逆方向から得られたリードの TI 番号
+
+    <p>  Type: int<br />
+  Example: 203682255 MATE PAIR</p>
+
+    <p>は同じテンプレートの両方向 (FORWARD と REVERSE) から得られたリード。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#REPLACED_BY">REPLACED_BY</a><a name="REPLACED_BY"></a></dt>
+  <dd>“active” な TI を置き換えた TI
+
+    <p>  Type: int<br />
+  Example: 304753779</p>
+
+    <p>この項目は最新のデータセットを指し示します。trace が更新された場合<a href="#REPLACED_BY">REPLACED_BY</a> は新しい<a href="#TI">TI</a>が入力されます。メタデータのみが更新された場合は
+replaced_by=0 で表示されません。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#STATE">STATE</a><a name="STATE"></a></dt>
+  <dd>trace の status
+
+    <p>  Type: varchar<br />
+  Example: active</p>
+
+    <p>取り得る値:</p>
+    <ul>
+      <li>active</li>
+      <li>updated</li>
+      <li>withdrawn</li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#TAXID">TAXID</a><a name="TAXID"></a></dt>
+  <dd>NCBI Taxonomy ID
+
+    <p>  Type: int<br />
+  Example: 10090</p>
+
+    <p>DDBJ Trace Archive と <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?">NCBI Taxonomy Browser</a> とを結びつけます。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#TI">TI</a><a name="TI"></a></dt>
+  <dd>trace 固有のアクセッション番号
+
+    <p>  Type: int<br />
+  Example: 304753779</p>
+
+    <p>trace がデータベースにロードされた時点で TI が付与されます。どのようなレコードでも TI で取得できます。</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#UPDATE_DATE">UPDATE_DATE</a><a name="UPDATE_DATE"></a></dt>
+  <dd>データが update/replace された日時
+
+    <p>  Type: smalldatetime<br />
+  Example: Jul 19 2001 3:48PM</p>
+
+    <p>最後に更新された日時が記録されます。</p>
+  </dd>
+</dl>
+
+<h2 id="trace-データの登録-">trace データの登録 <a name="trace-data-submission"></a></h2>
+
+<div class="attention">
+  <p>ヒトを対象とした研究データの登録について<br />
+<span class="red">ヒトを対象とした全ての研究において DDBJ に送付するデータの由来である個人 (被験者)
+の情報・プライバシーは，適用されるべき法律，規定，登録者が所属している機関の方針に従い，登録者の責任において保護されている必要があります。<br />
+原則として，被験者を直接特定し得る参照情報は，登録データから取り除いてください。<br />
+ヒトを対象とした研究データを登録する場合は<a href="/policies.html#human">「ヒトを対象とした研究データの登録について」</a>をご覧ください。</span></p>
+</div>
+
+<h3 id="ti-番号-">TI 番号 <a name="ti-number"></a></h3>
+
+<p><a href="index.html">DDBJ Trace Archive (DTA)</a> への登録には<a href="#metadata">メタデータ</a>と <a href="#TRACE_FORMAT">trace</a> ファイルが必要です。 ユニークなアクセッション番号 (<a href="#TI">TI 番号</a>) は trace データが <a href="https://www.ncbi.nlm.nih.gov/Traces">NCBI Trace Archive</a> に登録されるときに割り振られます。 TI 番号が発行されたデータは即日公開されます。</p>
+
+<p><span class="red"> TI 番号発行後，データは即日公開されます。 </span></p>
+
+<h3 id="登録に必要なファイル-">登録に必要なファイル <a name="create-submission-files"></a></h3>
+
+<p>テキストファイル (TRACEINFO ファイル) に trace データに関するメタデータを記述し，trace ファイルの場所を指定します。 トップディレクトリを作成し，全てのメタデータファイルをトップディレクトリ下に配置します。 また trace ファイルは，トップディレクトリ下に１つ以上のディレクトリを作成し，その内に配置します。 trace ファイル (<a href="#TRACE_FORMAT">SCF</a>，<a href="#TRACE_FORMAT">ABI</a> フォーマットのどちらの場合 も) はトップレベルではなく，サブディレクトリのなかに配置されている必要があります。 サブディレクトリ名 は trace やプロジェクトの名前を使うことを推奨します。 さらにサブディレクトリを作成し trace をグループに分けることができます。</p>
+
+<p>以下は登録ディレクトリの構成例です。</p>
+
+<h4 id="登録ディレクトリの構成例-">登録ディレクトリの構成例 <a name="登録ディレクトリの構成例"></a></h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TOP_DIRECTORY/
+TOP_DIRECTORY/TRACEINFO
+TOP_DIRECTORY/traces
+TOP_DIRECTORY/traces/FLJ/
+TOP_DIRECTORY/traces/FLJ/FLJA1U0001.scf
+TOP_DIRECTORY/traces/FLJ/FLJA1U0002.scf
+TOP_DIRECTORY/traces/FLJ/FLJA1U0003.scf
+</code></pre></div></div>
+
+<p><a href="#metadata">メタデータ</a>ファイルは XML かタブ区切りテキストファイル形式にします。 STRATEGY と TRACE_TYPE_CODE の組み合わせで必須になるメタデータ項目一覧は <a href="/assets/files/submission/field_matrix_current.xls">Validation Table</a> をご覧ください。どちらの形式のメタデータでも最初に共通項目のセクションを含めることができます。 このセクションには各 trace に共通する項目を記載します。</p>
+
+<p>以下は TRACEINFO メタデータファイルの例です。</p>
+
+<h4 id="traceinfo-xml-ファイルの例-">TRACEINFO xml ファイルの例 <a name="TRACEINFO_xml_ファイルの例"></a></h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?xml version="1.0"?&gt;
+&lt;trace_volume&gt;
+   &lt;common_fields&gt;
+      &lt;center_name&gt;CENTER NAME ACRONYM IS HERE&lt;/center_name&gt;
+      &lt;center_project&gt;FLJ&lt;/center_project&gt;
+      &lt;source_type&gt;N&lt;/source_type&gt;
+      &lt;species_code&gt;HOMO SAPIENS&lt;/species_code&gt;
+      &lt;strategy&gt;EST&lt;/strategy&gt;
+      &lt;submission_type&gt;NEW&lt;/submission_type&gt;
+      &lt;trace_format&gt;SCF&lt;/trace_format&gt;
+      &lt;trace_type_code&gt;EST&lt;/trace_type_code&gt;
+   &lt;/common_fields&gt;
+   &lt;trace&gt;
+      &lt;trace_name&gt;F-3NB691000020&lt;/trace_name&gt;
+      &lt;trace_file&gt;./traces/F-3NB691000020.scf&lt;/trace_file&gt;
+      &lt;clone_id&gt;3NB691000020&lt;/clone_id&gt;
+      &lt;library_id&gt;3NB691&lt;/library_id&gt;
+      &lt;template_id&gt;3NB691000020&lt;/template_id&gt;
+   &lt;/trace&gt;
+   &lt;trace&gt;
+      &lt;trace_name&gt;F-3NB691000033&lt;/trace_name&gt;
+      &lt;trace_file&gt;./traces/F-3NB691000033.scf&lt;/trace_file&gt;
+      &lt;clone_id&gt;3NB691000033&lt;/clone_id&gt;
+      &lt;library_id&gt;3NB691&lt;/library_id&gt;
+      &lt;template_id&gt;3NB691000033&lt;/template_id&gt;
+   &lt;/trace&gt;
+     --- more information ---
+&lt;/trace_volume&gt;
+</code></pre></div></div>
+
+<h4 id="traceinfo-タブ区切りテキストファイルの例-">TRACEINFO タブ区切りテキストファイルの例 <a name="TRACEINFO_タブ区切りテキストファイルの例"></a></h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>center_name = CENTER NAME ACRONYM IS HERE
+center_project = FLJ
+source_type = N
+species_code = HOMO SAPIENS
+strategy = EST
+submission_type = NEW
+trace_format = SCF
+trace_type_code = EST
+trace_name  clone_id    library_id  template_id trace_file
+F-3NB691000020  3NB691000020    3NB691  3NB691000020    ./traces/F-3NB691000020.scf
+F-3NB691000033  3NB691000033    3NB691  3NB691000033    ./traces/F-3NB691000033.scf
+--- more information ---
+</code></pre></div></div>
+
+<h3 id="アカウントの取得-">アカウントの取得 <a name="create-account"></a></h3>
+
+<p><a href="/account.html">DDBJ 登録用アカウント</a>を取得します。</p>
+
+<h3 id="登録用ファイルのアップロード-">登録用ファイルのアップロード <a name="upload-submission-files"></a></h3>
+
+<p><a href="/contact-ddbj.html">DTA チームに連絡</a>し，登録用ディレクトリの作成を依頼します。 <a href="/dra/submission.html#upload-sequence-data">マニュアル</a>に従いファイルを SCP で転送します。</p>
+
+<h4 id="登録ディレクトリの例-">登録ディレクトリの例 <a name="登録ディレクトリの例"></a></h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>submission/submitter_id/dta/dta_submitter_id-0001
+</code></pre></div></div>
+
+<p><span class="red"> DTA の登録用ディレクトリは <a href="/dra/index.html">DDBJ Sequence Read Archive</a> とは別になります。 </span></p>
+
+<h3 id="登録の完了-">登録の完了 <a name="completion-submission"></a></h3>
+
+<p>登録の完了後，登録者が公開を指示するまで DTA はデータを非公開にします。 データ公開の指示があれば DTA は NCBI Trace Archive にデータをアップロードします。データが NCBI Trace Archive にロードされると TI 番号が発行されデータは公開されます。</p>
+
+<p><span class="red">TI 番号の発行とデータ公開は同時になります。</span></p>
+
+<h3 id="データの更新-">データの更新 <a name="update"></a></h3>
+
+<p>データを更新するときは <a href="/contact-ddbj.html">DTA チームまでご連絡ください</a>。</p>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

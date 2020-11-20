@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>getentry での FTP による結果取得機能の不具合について　</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">getentry での FTP による結果取得機能の不具合について　</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/news">news</a>
+          </li>
+          <li>
+            <a href="">getentry での FTP による結果取得機能の不具合について　</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <html>getentry は DDBJ が WWW および E-mail で提供しているアクセッション番号などによる高速なエントリ検索システムです。<br />このたび，12/13の夜より FTP 転送用ファイルが作成できない状態になっていたことが判明いたしました。詳細は下記のとおりです。<br />
+
+<ul><br />
+    <li><b>現象：</b>
+
+        <ol>
+            <li>WWW 版 getentry で結果取得方法に FTP ファイル転送を選択した場合に，FTP 転送用ファイルが作成されない状態になっていた</li>
+            <li>E-mail 版 getentry で下記条件のクエリが入力された場合に，FTP 転送用ファイルが作成されない状態になっていた</li>
+        </ol>
+
+        <ul>
+            <li>10件以上のエントリ</li>
+            <li>データベース：DDBJ</li>
+            <li>ID：Accession</li>
+        </ul>
+
+        <p></p>
+    </li>
+    <li><b>発生期間：</b><br />12/13(水) 19:30頃 から 12/14(木) 16:05頃<br />ただし，getentry の FTP 転送用ファイルは 24時間で削除されるため，データが削除された際に空き領域ができ，上記時間内でもファイルが作成できている場合もあります。<br /></li>
+    <li><b>原因：</b><br />E-mail 版 getentry で入力されたクエリの検索結果が巨大サイズ(途中で作成が終了したため，実際のサイズは不明)であったために FTP ファイル転送機能の使用ディスクの空き領域を全て使用してしまったことによる。<br /></li>
+    <li><b>影響：</b><br />上記の検索結果ファイルを別ディスクに退避させるまでの期間に他のユーザが検索を行ない，結果取得方法にFTP ファイル転送を選択した場合，結果を取得できませんでした。大変申し訳ありませんが，再度検索を実行して下さい。<br /></li>
+</ul>
+<dd>現在は，この状況は全て解決しており，正常に検索結果を取得することが可能です。ご迷惑をおかけしたことをお詫びいたします。</dd>
+</html>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

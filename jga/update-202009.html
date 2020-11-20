@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新 JGA システムにおける変更点</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">新 JGA システムにおける変更点</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/jga">jga</a>
+          </li>
+          <li>
+            <a href="">新 JGA システムにおける変更点</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/jga/index.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="https://humandbs.biosciencedbc.jp/data-use/all-researches">Browse researches at NBDC</a>
+      
+      <ul>
+        
+        <li>
+          <a href="https://ddbj.nig.ac.jp/search">DDBJ Search</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/jga/submission.html">Submission</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/jga/submission-step.html">How to submit</a>
+        </li>
+        
+        <li>
+          <a href="/jga/download.html">How to access data</a>
+        </li>
+        
+        <li>
+          <a href="/jga/group.html">Groups</a>
+        </li>
+        
+        <li>
+          <a href="/jga/update-202009.html">Updates in 2020</a>
+        </li>
+        
+        <li>
+          <a href="https://docs.google.com/spreadsheets/d/1HHlxItj89fQv2oWUNBIHZ4VVGwbcC09WGD5tEiXAQZ4/edit#gid=744299318">Example submission</a>
+        </li>
+        
+        <li>
+          <a href="https://github.com/ddbj/pub/tree/master/docs/jga/xsd/">XML Schema</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/ja/index.html">FAQ</a>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="新しい-jga-システムのリリース">新しい JGA システムのリリース<a name="update-202009"></a></h2>
+
+<p>2020年9月29日に新しい Japanese Genotype-phenotype Archive (JGA)
+システムと NBDC
+の<a href="https://humandbs.ddbj.nig.ac.jp/nbdc/application/">データ提供・利用申請システム</a>
+(<a href="https://humandbs.ddbj.nig.ac.jp/nbdc/application/">https://humandbs.ddbj.nig.ac.jp/nbdc/application/</a>)
+がリリースされます。このページでは新システムにおける変更点をまとめています。</p>
+
+<h2 id="d-way-へのアカウント統合">D-way へのアカウント統合<a name="account-integration"></a></h2>
+
+<p>生命情報・DDBJ センターでは BioProject/BioSample/DRA/GEA
+にデータを登録するための D-way アカウント、及び、JGA
+データを登録・ダウンロードするための JGA
+用アカウントシステムを別々に運用していました。しかし、9月29日以降、JGA
+アカウントは D-way アカウントに統合され、D-way アカウントで
+BioProject/BioSample/DRA/JGA/NBDC
+申請システムが利用できるようになります。</p>
+
+<p>アカウントを持っていない方で JGA にデータを登録したい、もしくは、JGA
+のデータを利用したい方は <a href="https://ddbj.nig.ac.jp/D-way/">D-way</a>
+でアカウントを取得し、NBDC にデータ提供・利用を申請してください。JGA
+システムの利用権限は NBDC で申請が承認された後に付与されます。既に D-way
+アカウントをお持ちの方は既存アカウントで NBDC
+にデータ提供と利用を申請することができます。詳細は<a href="/account-integration.html">こちらのページ</a>をご覧ください。</p>
+
+<div class="attention red">
+
+  <p>D-way でアカウントを作成してから NBDC 申請システムで利用できるようになるまで10分程度かかります。</p>
+
+</div>
+
+<a class="group1" href="/assets/images/books/integration_d_way.png" title="D-way へのアカウント統合">
+  <figure class="image">
+    <img src="/assets/images/books/integration_d_way.png" alt="D-way へのアカウント統合" class="w300">
+    <figcaption>D-way へのアカウント統合</figcaption>
+  </figure>
+</a>
+
+<h2 id="グループ">グループ<a name="group"></a></h2>
+
+<p>登録 (submission) や NBDC
+への提供・利用申請はグループを介して管理されるようになります。グループを介することでアカウントを共有することなく、研究代表者
+(PI)
+と登録担当者がデータを共同管理したり、グループのメンバーを追加・削除することでアクセス権限を適切に保つことができるようになります。詳細は<a href="/group.html">こちらのページ</a>をご覧ください。</p>
+
+<p>グループを作成したユーザがグループのオーナー (owner)
+となり、別アカウントの保持者に当該グループへの招待メールを送信することができるようになります。招待された人がグループへの追加を受諾すると、メンバーとして追加されます。また、オーナーはメンバーの承諾を得ることなくグループからメンバーを削除することができます。</p>
+
+<h3 id="提供申請グループ">提供申請グループ<a name="subgrp"></a></h3>
+
+<p>NBDC への提供申請 (例 J-DS000001) は登録者グループ (例 subgrp1)
+を介して管理されます。提供申請が承認されると、申請にリンクした JGA
+submission (例 JSUB000001) が NBDC
+により作成され、データが登録できるようになります。</p>
+
+<p>更新申請 (例 J-DS000001-002)
+は提供申請と同じグループから申請される必要があります。更新申請が承認されると、リンクした
+JGA submission
+が作成され、データが追加できるようになります。新規申請と更新申請は
+J-DS000001-001 のような枝番で管理されます。</p>
+
+<p>オーナーはメンバーの承諾を得ることなくメンバーをグループから削除することができますが、メンバーの追加は
+NBDC に依頼する必要があります。</p>
+
+<p>登録者は全てメンバーとして含まれている必要があります。登録に関する連絡はグループメンバーに対してのみ送られます。</p>
+
+<a class="group1" href="/assets/images/books/subgrp_nbdc.png" title="提供申請グループ">
+  <figure class="image">
+    <img src="/assets/images/books/subgrp_nbdc.png" alt="提供申請グループ" class="w400">
+    <figcaption>提供申請グループ</figcaption>
+  </figure>
+</a>
+
+<h3 id="利用申請グループ">利用申請グループ<a name="usergrp"></a></h3>
+
+<p>NBDC への利用申請 (例 J-DU000001) は利用者グループ (例 usergrp1)
+を介して管理されます。利用申請が承認されると、承認された JGA Dataset (例
+JGAD000001) がダウンロードできるようになります。</p>
+
+<p>利用者グループのメンバーには利用申請の申請者やデータを実際にダウンロードする人だけを含めます。
+ダウンロードされたデータを共同利用する人は研究分担者として記載する必要はありますが、メンバーに含める必要はありません。</p>
+
+<p>オーナーはメンバーの承諾を得ることなくグループからメンバーを削除することができますが、メンバーの追加は
+NBDC に依頼する必要があります。</p>
+
+<a class="group1" href="/assets/images/books/usergrp_nbdc.png" title="利用申請グループ">
+  <figure class="image">
+    <img src="/assets/images/books/usergrp_nbdc.png" alt="利用申請グループ" class="w400">
+    <figcaption>利用申請グループ</figcaption>
+  </figure>
+</a>
+
+<h2 id="登録と利用手順">登録と利用手順<a name="steps"></a></h2>
+
+<p>NBDC の申請システムと JGA
+システムは共通のアカウント・グループを使っているため、両システムをシームレスに利用できるようになります。同じアカウントで「NBDC
+への提供申請 → JGA 登録」と「NBDC への利用申請 →
+データのダウンロード」ができるようになります。<a href="/jga/submission-step.html">提供手順</a>と<a href="/jga/download.html">利用手順</a>の詳細は各ページをご覧ください。</p>
+
+<a class="group1" href="/assets/images/books/nbdc-jga.png" title="登録と利用手順">
+  <figure class="image">
+    <img src="/assets/images/books/nbdc-jga.png" alt="登録と利用手順" class="w600">
+    <figcaption>登録と利用手順</figcaption>
+  </figure>
+</a>
+
+<h2 id="scp-によるデータ転送">scp によるデータ転送<a name="transfer"></a></h2>
+
+<p>JGA のデータアップロード・ダウンロードツールは廃止され、scp
+でデータをアップロード・ダウンロードするようになります。</p>
+
+<h2 id="データの暗号化フローの変更">データの暗号化フローの変更<a name="encryption"></a></h2>
+
+<p>データの登録時、データファイルは平文でアップロードする方式に変更になります
+(通信経路は scp
+で暗号化されます)。アクセッション番号発行後は従来通り暗号化してデータを保管いたします。</p>
+
+<p>データの利用時、セキュリティ強化のため利用承認されたメタデータとデータファイルは利用申請時に登録した公開鍵で暗号化された状態で提供されます。利用者はデータを
+scp
+でダウンロードした後、秘密鍵で復号してからデータを利用するようになります。詳細は<a href="/jga/download.html#public-key-for-dataset-encryption">こちらのページ</a>をご覧ください。</p>
+
+<h2 id="検索システムの刷新">検索システムの刷新<a name="search"></a></h2>
+
+<p>https://ddbj.nig.ac.jp/jga/viewer/view/studies で提供していた JGA
+Study/Dataset ブラウザーは新しい検索システム DDBJ Search
+(<a href="https://ddbj.nig.ac.jp/search">https://ddbj.nig.ac.jp/search</a>) に置き換えられます。DDBJ Search
+は今後も継続して開発していきます。</p>
+
+<h2 id="アクセッション番号の桁数変更">アクセッション番号の桁数変更<a name="accessions"></a></h2>
+
+<p>将来のバージョン番号導入に備えるため、以下のように JGA
+アクセッション番号の桁数を変更いたします。DDBJ Search
+では11桁の旧番号でアクセスしても新番号データが返されるように対応する予定です。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>オブジェクト</th>
+      <th>プレフィックス</th>
+      <th>現行桁数</th>
+      <th>新規桁数</th>
+      <th>新規番号の例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Study</td>
+      <td>JGAS</td>
+      <td>11</td>
+      <td>6</td>
+      <td>JGAS000001</td>
+    </tr>
+    <tr>
+      <td>Data set</td>
+      <td>JGAD</td>
+      <td>11</td>
+      <td>6</td>
+      <td>JGAD000001</td>
+    </tr>
+    <tr>
+      <td>Policy</td>
+      <td>JGAP</td>
+      <td>11</td>
+      <td>6</td>
+      <td>JGAP000001</td>
+    </tr>
+    <tr>
+      <td>Sample</td>
+      <td>JGAN</td>
+      <td>11</td>
+      <td>9</td>
+      <td>JGAN000000001</td>
+    </tr>
+    <tr>
+      <td>Experiment</td>
+      <td>JGAX</td>
+      <td>11</td>
+      <td>9</td>
+      <td>JGAX000000001</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>JGAR</td>
+      <td>11</td>
+      <td>9</td>
+      <td>JGAR000000001</td>
+    </tr>
+    <tr>
+      <td>Analysis</td>
+      <td>JGAZ</td>
+      <td>11</td>
+      <td>9</td>
+      <td>JGAZ000000001</td>
+    </tr>
+    <tr>
+      <td>Submission</td>
+      <td>JGA</td>
+      <td>11</td>
+      <td>6</td>
+      <td>JGA000001</td>
+    </tr>
+    <tr>
+      <td>DAC</td>
+      <td>JGAC</td>
+      <td>11</td>
+      <td>6</td>
+      <td>JGAC000001</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="過去の提供利用申請の取り込み">過去の提供・利用申請の取り込み<a name="future"></a></h2>
+
+<p>NBDC
+申請システムには過去の提供・利用申請は取り込まれていません。今後、準備を進め一括で過去の提供・利用申請をシステムに取り込み、適切な提供・利用申請グループにリンクする予定です。</p>
+
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

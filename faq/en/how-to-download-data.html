@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How do I download files?</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title -small">
+      <h1 class="title">How do I download files?</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/faq/en/">FAQ</a>
+            
+          </li>
+          <li>
+            <a>How do I download files?</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<main id="SimpleView">
+  <div class="inner">
+    <article class="md-content">
+      <p>Download files from DDBJ ftp server at <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq">ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq</a>.</p>
+<h4 class="bold">wget</h4>
+<p>wget is a convenient way to download files over FTP.</p>
+<pre><code>wget ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/DRA000/DRA000001/DRX000001/DRR000001.fastq.bz2</code></pre>
+<h4 class="bold">ascp</h4>
+<p>Aspera ascp command line client can be dowloaded <a href="http://downloads.asperasoft.com/downloadsconnect">here</a>.Please select the correct operating system. The ascp command line client is distributed as part of the Aspera connect high-performance transfer browser plug-in.</p>
+<p>Your command should look similar to this:</p>
+<pre><code>ascp -i <span class="italic">&lt;aspera connect SSH key&gt;</span> <span class="italic">&lt;option&gt;</span> -P 33001 anonftp@ascp.ddbj.nig.ac.jp:<span class="italic">&lt;file or files to download&gt;</span> <span class="italic">&lt;download location&gt;</span></code></pre>
+<p>Examples:</p>
+<pre><code>ascp -i <span class="italic">&lt;aspera connect SSH key&gt;</span> -QT -l 300m -P 33001 anonftp@ascp.ddbj.nig.ac.jp:/ddbj_database/dra/fastq/DRA000/DRA000001/DRX000001/DRR000001.fastq.bz2 .</code></pre>
+
+    </article>
+  </div>
+</main>
+
+  
+
+</body>
+</html>

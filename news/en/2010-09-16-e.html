@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDBJ·DAD Release/daily-update FASTA format change</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">DDBJ·DAD Release/daily-update FASTA format change</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/news">news</a>
+          </li>
+          <li>
+            <a href="">DDBJ·DAD Release/daily-update FASTA format change</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <html>The nucleotide sequence database collected and maintained by DDBJ is quarterly released online to the public as the "DDBJ/DAD periodical releases". Moreover, updated data after the cutoff date of the periodical release are released as "ddbjnew/dadnew" every day.The FASTA format for the DDBJ/DAD periodical and daily update is changed. The details are as follows<span class="icon_square">Changed Data (These are available at <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database">anonymous FTP</a>)</span>
+
+<table class="table_ddbjing_02wide">
+    <tr>
+        <td class="td_ddbjing_02" align="center">Data Type</td>
+        <td class="td_ddbjing_02" align="center">Change</td>
+        <td class="td_ddbjing_02" align="center">Coverage</td>
+    </tr>
+    <tr>
+        <td class="td_ddbjing_02">ddbjnew/fasta</td>
+        <td class="td_ddbjing_02">Upper-case letters → Lower-case letters</td>
+        <td class="td_ddbjing_02" rowspan="3" valign="top">DDBJ Rel.83 and <br /> DDBJNEW issued after DDBJ Rel.83 cutoff date</td>
+    </tr>
+    <tr>
+        <td class="td_ddbjing_02">ddbjnew/cdsdb</td>
+        <td class="td_ddbjing_02" rowspan="2">Removal of "//" from the end of the entry </td>
+    </tr>
+    <tr>
+        <td class="td_ddbjing_02">dadnew/fasta</td>
+    </tr>
+</table><span class="icon_square">Change in the Services</span>
+
+<table class="table_ddbjing_02wide">
+    <tr>
+        <td class="td_ddbjing_02" align="center">Database</td>
+        <td class="td_ddbjing_02" align="center">Change</td>
+        <td class="td_ddbjing_02" align="center">Coverage</td>
+    </tr>
+    <tr>
+        <td class="td_ddbjing_02" colspan="3" bgcolor="#ddffff"><a href="http://getentry.ddbj.nig.ac.jp/" target="_blank"><b>getentry</b></a></td>
+    </tr>
+    <tr>
+        <td class="td_ddbjing_02" colspan="3" bgcolor="#ffcccc">DNA database</td>
+    </tr>
+    <tr>
+        <td class="td_ddbjing_02">CDS amino acid seq FASTA</td>
+        <td class="td_ddbjing_02" rowspan="2">Removal of "//" from the end of the entry</td>
+        <td class="td_ddbjing_02" rowspan="2">DDBJ Rel.83 and <br /> DDBJNEW issued after DDBJ Rel.83 cutoff date</td>
+    </tr>
+    <tr>
+        <td class="td_ddbjing_02">CDS nt seq FASTA</td>
+    </tr>
+    <tr>
+        <td class="td_ddbjing_02" colspan="3" bgcolor="#ffcccc">PROTEIN database</td>
+    </tr>
+    <tr>
+        <td class="td_ddbjing_02">amino acid seq FASTA</td>
+        <td class="td_ddbjing_02" rowspan="2">Removal of "//" from the end of the entry</td>
+        <td class="td_ddbjing_02" rowspan="2">DDBJ Rel.83 and <br /> DDBJNEW issued after DDBJ Rel.83 cutoff date</td>
+    </tr>
+    <tr>
+        <td class="td_ddbjing_02">nt seq FASTA (for DAD)</td>
+    </tr>
+    <tr>
+        <td class="td_ddbjing_02" colspan="3"> </td>
+    </tr>
+    <tr>
+        <td class="td_ddbjing_02" colspan="3" bgcolor="#ccffff"><a href="/activities/index.html#supernig"><b>supernig</b></a></td>
+    </tr>
+    <tr>
+        <td class="td_ddbjing_02">ddbj, ddbjnew/fasta</td>
+        <td class="td_ddbjing_02">Upper-case letters → Lower-case letters</td>
+        <td class="td_ddbjing_02" valign="top">DDBJ periodical release</td>
+    </tr>
+    <tr>
+        <td class="td_ddbjing_02">dad/fasta</td>
+        <td class="td_ddbjing_02">Removal of "//" from the end of the entry</td>
+        <td class="td_ddbjing_02" valign="top">DAD periodical release</td>
+    </tr>
+</table>
+</html>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

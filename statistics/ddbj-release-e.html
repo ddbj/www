@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDBJ Periodic Release Statistics</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script><script type='text/javascript' src='/www/assets/js/jquery.charts.js'></script>
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">DDBJ Periodic Release Statistics</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/statistics">statistics</a>
+          </li>
+          <li>
+            <a href="">DDBJ Periodic Release Statistics</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="total-data-volume">Proportion of each archive in total data volume</h2>
+
+<h3 id="total-data-volume-sequence">Sequences</h3>
+
+<div id="prop-seq-chart"></div>
+
+<div id="prop-seq-table"></div>
+
+<p><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=1634110914">Source data
+table</a></p>
+
+<h3 id="total-data-volume-base">Bases</h3>
+
+<div id="prop-base-chart"></div>
+
+<div id="prop-base-table"></div>
+
+<p>Note:</p>
+
+<p><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=1634110914">Source data
+table</a></p>
+
+<h2 id="data-category">Data category distribution at each archive</h2>
+
+<h3 id="data-category-sequence">Sequences</h3>
+
+<div id="chart-div-all-seq"></div>
+
+<div id="table-div-all-seq"></div>
+
+<h3 id="data-category-base">Bases</h3>
+
+<div id="chart-div-all-base"></div>
+
+<div id="table-div-all-base"></div>
+
+<p><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=1205720210">Source data
+table</a></p>
+
+<h2 id="data-category-each-archive">Proportion of each archive in each data category</h2>
+
+<h3 id="sequences">Sequences</h3>
+
+<div id="chart-prop-category-seq"></div>
+
+<div id="table-prop-category-seq"></div>
+
+<h3 id="bases">Bases</h3>
+
+<div id="chart-prop-category-base"></div>
+
+<div id="table-prop-category-base"></div>
+
+<p><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=1410841210">Source data
+table</a></p>
+
+<h2 id="organism">Organism distribution in Taxonomic &amp; ENV divisions at each archive</h2>
+
+<h3 id="sequences-1">Sequences</h3>
+
+<div id="chart-tax-prop-seq"></div>
+
+<div id="table-tax-prop-seq"></div>
+
+<h3 id="bases-1">Bases</h3>
+
+<div id="chart-tax-prop-base"></div>
+
+<div id="table-tax-prop-base"></div>
+
+<p><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=487423773">Source data
+table</a></p>
+
+<h2 id="organism-ranking">Organism ranking by bases</h2>
+
+<div id="table_organism_ranking"></div>
+
+<p><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=20026687">Source data
+table</a></p>
+
+<h2 id="journal-ranking">Journal ranking by counts in sequence records</h2>
+
+<div id="table_journal_ranking"></div>
+
+<p><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=811062981">Source data
+table</a></p>
+
+      </div>
+      
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              
+              <li>
+                <a href="./index-e.html">DB out/in statistics</a>
+              </li>
+              
+              <li>
+                <a href="./ddbj-releases-e">Release Notes of DDBJ Releases</a>
+              </li>
+              
+              <li>
+                <a href="./latest-releases-e">Latest Release Information</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

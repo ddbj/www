@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TXSearch</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">TXSearch</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/services">services</a>
+          </li>
+          <li>
+            <a href="">TXSearch</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <p>TXSearch is a <a href="//www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/">NCBI
+Taxonomy</a> retrieval
+system provided by DDBJ. When you submit nucleotide sequence data to
+International Nucleotide Sequence Database(<a href="/insdc-e.html#insd">INSD</a>),
+you need to use the organism name description based on NCBI Taxonomy.</p>
+
+<h2 id="search-from-the-web-form-">Search (from the web form) <a name="usage"></a></h2>
+
+<h4 id="top-page-tree-screenhttpddbjnigacjptx_search-">Top page (Tree screen)：<a href="http://ddbj.nig.ac.jp/tx_search/">http://ddbj.nig.ac.jp/tx_search/</a> <a name="Top_page_Tree_screen：http_//ddbj.nig.ac.jp/tx_search/_"></a></h4>
+
+<p><img src="/assets/images/help/txhelp01.gif" alt="Top page" /></p>
+
+<h3 id="search-from-the-web-form--1">Search from the Web Form <a name="search"></a></h3>
+
+<p>Enter the words and/or numericals into the box, then click the “send”
+button or press the “Enter” key.</p>
+
+<p><img src="/assets/images/help/txhelp03.gif" alt="Enter to search form" /></p>
+
+<ul>
+  <li>
+    <p>“Wild Card” (“?” stands for any single character, and “*” for any
+number of characters) is available.</p>
+  </li>
+  <li>
+    <p>Boolean Operators (AND, OR, NOT) can be entered as follows.</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>AND</td>
+          <td>“space”　or “AND” or “&amp;&amp;”</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>OR</td>
+          <td>“OR” or “</td>
+          <td> </td>
+          <td>”</td>
+        </tr>
+        <tr>
+          <td>NOT</td>
+          <td>“NOT”</td>
+          <td> </td>
+          <td> </td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <p>To use the “Example” is an easy way.</p>
+
+    <ul>
+      <li><span class="red">(1)</span> Click the “Example” under the search box, some examples are displayed.</li>
+      <li><span class="red">(2)</span> Select the one and click it, then its text is entered into the search box.</li>
+      <li><span class="red">(3)</span> Modify the text to suit your purpose. (e.g. organism names, taxonomy_id)</li>
+    </ul>
+
+    <p><img src="/assets/images/help/txhelp02.gif" alt="Search form, Example" /></p>
+  </li>
+  <li>
+    <p>Default search fields are as follows.</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>tax_id</td>
+          <td>anamorph</td>
+          <td>in_part</td>
+        </tr>
+        <tr>
+          <td>scientific_name</td>
+          <td>teleomorph</td>
+          <td>includes</td>
+        </tr>
+        <tr>
+          <td>common_name</td>
+          <td>authority</td>
+          <td>misnomer</td>
+        </tr>
+        <tr>
+          <td>synonym</td>
+          <td>blast_name</td>
+          <td>misspelling</td>
+        </tr>
+        <tr>
+          <td>acronym</td>
+          <td>equivalent_name</td>
+          <td>type_material</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>If you search some particular fields, <a href="#f-shitei">specify the field</a>
+by refine search.</p>
+  </li>
+  <li>
+    <p>Because the maximum number of results displayed in the screen is
+fixed in 1000 (in ascending order of scientific_name), to view the
+all results, please execute the <a href="#refine">refine search</a> to narrow
+the number down to 1000.</p>
+  </li>
+</ul>
+
+<h3 id="refine-search-">Refine Search <a name="refine"></a></h3>
+
+<p>You can narrow the scope of your search by specifying some particular
+fields, and/or combining some field searches.</p>
+
+<ul>
+  <li>When the result is more than 1000, please execute the refine search
+so that less than 1000 is included in the search result (In this
+system the maximum result display number is fixed as 1000 which is
+unmodifiable)</li>
+  <li><span id="f-shitei">The description to search a specific field is,
+<span class="red bold">field name：value</span> (e.g.
+tax_id:9606)</span></li>
+  <li>Multiple fields<br />
+Connect “field name：value” units, separating by space (e.g.
+scientific_name:(Homo Sapiens) &amp;&amp; rank:species)</li>
+  <li>
+    <p><span id="k-field">Following fields can be specified</span></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Searchable fields</th>
+          <th> </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>tax_id<br />scientific_name<br />common_name<br />synonym<br />acronym<br />anamorph<br />teleomorph<br />authority<br />blast_name<br />equivalent_name<br />in_part<br />includes<br />misnomer<br />misspelling<br />type_material</td>
+          <td>When the field name is specified, specified field is searched.<br />When the field is not specified, all these field is searched.</td>
+        </tr>
+        <tr>
+          <td>lineagerank</td>
+          <td>To search these fields, you need to specify the field-name and its value.</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <p>Exact matching, please specify the field name as follows.</p>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>scientific_name_ex</td>
+        </tr>
+        <tr>
+          <td>common_name_ex</td>
+        </tr>
+        <tr>
+          <td>synonym_ex</td>
+        </tr>
+        <tr>
+          <td>acronym_ex</td>
+        </tr>
+        <tr>
+          <td>anamorph_ex</td>
+        </tr>
+        <tr>
+          <td>teleomorph_ex</td>
+        </tr>
+        <tr>
+          <td>authority_ex</td>
+        </tr>
+        <tr>
+          <td>blast_name_ex</td>
+        </tr>
+        <tr>
+          <td>equivalent_name_ex</td>
+        </tr>
+        <tr>
+          <td>in_part_ex</td>
+        </tr>
+        <tr>
+          <td>includes_ex</td>
+        </tr>
+        <tr>
+          <td>misnomer_ex</td>
+        </tr>
+        <tr>
+          <td>misspelling_ex</td>
+        </tr>
+        <tr>
+          <td>type_material_ex</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<h3 id="search-examples-">Search Examples <a name="example"></a></h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Text</th>
+      <th>what you search</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>human AND lineage:Mammalia</td>
+      <td>search the taxon which contains “human” in the default search fields, and linage is “Mammalia”</td>
+    </tr>
+    <tr>
+      <td>human AND rank:subspecies</td>
+      <td>search the taxon which contains “human” in the default search fields, and rank is “subspecies”</td>
+    </tr>
+    <tr>
+      <td>human AND NOT(lineage:Eukaryota)</td>
+      <td>search the taxon which contains “human” in the default search fields, and linage is NOT “Eukaryota”</td>
+    </tr>
+    <tr>
+      <td>tax_id:9606</td>
+      <td>tax_id is 9606</td>
+    </tr>
+    <tr>
+      <td>Homo Sapiens</td>
+      <td>search the taxon which contains both “Homo” AND “Sapiens” in the default fields</td>
+    </tr>
+    <tr>
+      <td>scientific_name:”Homo sapiens”</td>
+      <td>search the taxon whose scientific_name includes “Homo sapiens”</td>
+    </tr>
+    <tr>
+      <td>scientific_name:(Homo sapiens)</td>
+      <td>search the taxon which contains both “Homo” and “sapiens” in the scientific_name field.</td>
+    </tr>
+    <tr>
+      <td>scientific_name:Homo sapiens</td>
+      <td>search the taxon which contains both “Homo” in the scientific_name field, and contains “sapiens” in the default search fields.</td>
+    </tr>
+    <tr>
+      <td>scientific_name_ex:”Homo sapiens”</td>
+      <td>search the taxon whose scientific_name is “Homo sapiens” (Exact search).<br /><span class="red">(Note)</span> When the search words contains a space, the words should be enclosed in double quotation marks.</td>
+    </tr>
+    <tr>
+      <td>50000</td>
+      <td>search the taxon which contains “50000” in the default search fields.<br />(In this case, both the taxon which contains “50000” in the name, such as “Crinipellis sp. GDGM 50000”, and “Sarracenia alabamensis” whose tax_id is “50000” are retrieved. To search either one, you should <a href="#f-shitei">specify the field name</a> you want to retrieve.）</td>
+    </tr>
+    <tr>
+      <td>tax_id:(741158 OR 63221)<br />or<br />tax_id:(741158 || 63221)</td>
+      <td>searchs tax_id field either 741158 OR 63221　</td>
+    </tr>
+    <tr>
+      <td>scientific_name:(Acetobacter c*)</td>
+      <td>search the taxon which contains both “Acetobacter” and “the strings” containing any number of characters starting with “c” in the scientific_name field.</td>
+    </tr>
+    <tr>
+      <td>scientific_name:(Acetobacter sp*)</td>
+      <td>search the taxon which contains both “Acetobacter” and “the strings” containing any number of characters starting with “sp” in the scientific_name field.</td>
+    </tr>
+    <tr>
+      <td>tax_id:960?</td>
+      <td>search the tax_id field in 960? (? is one character)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="search-result-">Search Result <a name="result"></a></h2>
+
+<h3 id="search-result-taxon-information-screen-">Search Result (Taxon Information screen) <a name="taxinfo"></a></h3>
+
+<p>This is the result screen of the search by the web form.</p>
+
+<p><img src="/assets/images/help/txhelp04.gif" alt="Search result" /></p>
+
+<ul>
+  <li>Scientific name, taxonomy id, rank, division code, genetic code,
+mitochondrial genetic code, names other than scientific name, and
+lineage of specified taxonomy id’s taxon are displayed.</li>
+  <li>taxonomy id links to <a href="//www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/">NCBI Taxonomy
+Browser</a>.</li>
+  <li>genetic code id, mitochondrial genetic code id links to <a href="/ddbj/geneticcode-e.html">Genetic
+code table</a>.</li>
+  <li>Each name in the lineage line links to the tree.</li>
+</ul>
+
+<h3 id="tree-screen-">Tree Screen <a name="tree"></a></h3>
+
+<p>Click the name in the lineage, then the tree will be displayed on the
+screen.</p>
+
+<p><img src="/assets/images/help/txhelp05.gif" alt="Tree screen" /></p>
+
+<ul>
+  <li><span class="red">(1)</span> scientific name links to Taxon
+Information screen.</li>
+  <li><span class="red">(2)</span> taxonomy id links to <a href="//www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/">NCBI Taxonomy
+Browser</a>.</li>
+  <li><span class="red">(3)</span> Delta icon left side of scientific name
+developes taxonomic tree of lower rank.</li>
+  <li><span class="red">(4)</span> The right hand arrow icon of top
+scientific name developes upper level tree.<br />
+If you click it, more 1 ranks are displayed.</li>
+  <li>You can change the number of ranks displayed on the browser by the
+modification of depth parameter value in the URL.</li>
+</ul>
+
+<h2 id="method-including-taxonomy_id-into-the-url-">Method including taxonomy_id into the URL <a name="url"></a></h2>
+
+<p>You can make the URL which include taxonomy_id. Using this, you can
+display the search result directly, and/or link to the Taxon Information
+page.</p>
+
+<h3 id="when-including-taxonomy_id-in-url-">When including taxonomy_id in URL <a name="taxnonmy"></a></h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameters</th>
+      <th>Details</th>
+      <th>Examples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id <span class="red">(required item）</span></td>
+      <td>specifies target taxonomy id.</td>
+      <td><ul><li>taxonomy_id :9606 in the Tree view<br /><a href="http://ddbj.nig.ac.jp/tx_search/9606?view=tree" class="external">//ddbj.nig.ac.jp/tx_search/9606?view=tree</a><br /><a href="http://ddbj.nig.ac.jp/tx_search/9606" class="external">//ddbj.nig.ac.jp/tx_search/9606</a></li><li>taxonomy_id :63221 in Taxon Information view<br /><a href="http://ddbj.nig.ac.jp/tx_search/63221?view=info" class="external">//ddbj.nig.ac.jp/tx_search/63221?view=info</a></li></ul></td>
+    </tr>
+    <tr>
+      <td>view</td>
+      <td>View of Tree of Taxon information.<br />In case of not specified, automatically tree view is selected.</td>
+      <td><ul><li>taxonomy_id :63221 in the Taxon Information view<br /><a href="http://ddbj.nig.ac.jp/tx_search/63221?view=info" class="external">//ddbj.nig.ac.jp/tx_search/63221?view=info</a></li><li>taxonomy_id :63221 in the Tree view<br /><a href="http://ddbj.nig.ac.jp/tx_search/63221" class="external">//ddbj.nig.ac.jp/tx_search/63221</a></li></ul></td>
+    </tr>
+    <tr>
+      <td>depth</td>
+      <td>specifies number of hierarchy.<br />Default is 2.</td>
+      <td><ul><li>display taxonomy_id :9592 in 5 hierarchies<br /><a href="http://ddbj.nig.ac.jp/tx_search/63221?depth=5" class="external">//ddbj.nig.ac.jp/tx_search/63221?depth=5</a></li><li>display taxonomy_id :9606 by default<br /><a href="http://ddbj.nig.ac.jp/tx_search/9606" class="external">//ddbj.nig.ac.jp/tx_search/9606</a></li></ul></td>
+    </tr>
+  </tbody>
+</table>
+
+      </div>
+      
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              
+              <li>
+                <a href="/services/arsa-e.html">ARSA Help</a>
+              </li>
+              
+              <li>
+                <a href="/services/blast-e.html">BLAST Help</a>
+              </li>
+              
+              <li>
+                <a href="/services/getentry-e.html">getentry Help</a>
+              </li>
+              
+              <li>
+                <a href="/services/clustalw-e.html">ClustalW Help</a>
+              </li>
+              
+              <li>
+                <a href="/services/vecscreen-e.html">VecScreen Help</a>
+              </li>
+              
+              <li>
+                <a href="/services/references-e.html">References</a>
+              </li>
+              
+              <li>
+                <a href="/services/past-services-e.html">Services in past</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-e.html">WABI (Web API for Biology)</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-blast-e.html">WABI BLAST Help</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

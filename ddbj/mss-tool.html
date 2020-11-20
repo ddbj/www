@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MSS データファイル用チェックツール</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">MSS データファイル用チェックツール</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/ddbj">ddbj</a>
+          </li>
+          <li>
+            <a href="">MSS データファイル用チェックツール</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/ddbj/index.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/submission.html">Submission</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/submission.html">塩基配列の登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/web-submission.html">Web 版塩基配列登録システム</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/mss.html">Mass Submission System</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/update.html">登録データの修正・更新</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="http://ddbj.nig.ac.jp/arsa/?lang=ja">Search</a>
+      
+      <ul>
+        
+        <li>
+          <a href="http://getentry.ddbj.nig.ac.jp/top-j.html">getentry</a>
+        </li>
+        
+        <li>
+          <a href="http://ddbj.nig.ac.jp/arsa/?lang=ja">ARSA</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/flat-file.html">Flat file</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/features.html">Feature key の定義</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/qualifiers.html">Qualifier key の定義</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/organism.html">Organism qualifier に記載する生物名</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/location.html">Location の記述法</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/cds.html">タンパク質コード配列</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/geneticcode.html">The Genetic Codes</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/code.html">配列の記載に用いる略号</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/example.html">登録の見本</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/data-categories.html">Data categories</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/genome.html">Genome project のデータ登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/pseudohaplotype.html">Pseudohaplotype</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/wgs.html">WGS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/metagenome-assembly.html">メタゲノムアセンブリ</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/single-amplified-genome.html">Single amplified genome</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/con.html">CON</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/gss.html">GSS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/htg.html">HTG</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/environmental.html">Environmental sequence の登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/env.html">ENV</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tls.html">TLS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/transcriptome.html">Transcriptome Project のデータ登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tsa.html">TSA</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/est.html">EST</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/htc.html">HTC</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tpa.html">Third Party Data (TPA)</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/ja/index.html">FAQ</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/index-e.html">Other</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/patent-data.html">Patent</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/mga.html">MGA</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="実行環境-">実行環境 <a name="system"></a></h2>
+
+<h3 id="ハードウェア-">ハードウェア <a name="system-1"></a></h3>
+
+<ul>
+  <li>インストールのための 20 MB 以上のハードディスク領域</li>
+  <li>512 MB 以上 (推奨 1 GB 以上) の RAM</li>
+</ul>
+
+<h3 id="ソフトウェア-">ソフトウェア <a name="system-2"></a></h3>
+
+<ul>
+  <li>実行には Java 8 以降が必要です。</li>
+  <li>DDBJ では、推奨 OS として以下の環境で動作確認を行っております。<br />
+Windows: Windows 10<br />
+unix/macOS: Ubuntu 16.04 LTS, macOS High Sierra</li>
+</ul>
+
+<p><span class="red">※</span>UME (Utilities for MSS file Error check) は<a href="//www.apache.org/">Apache Software Foundation</a> により開発されたソフトウェアを含んでいます。</p>
+
+<h2 id="ダウンロード-">ダウンロード <a name="download"></a></h2>
+
+<p>下記から 必要なパッケージを選択してダウンロードしてください。<br />
+インストール、使用方法は、各マニュアルを参照してください。</p>
+
+<table>
+    <caption></caption> 
+    <thead>
+      <tr>
+      <th>名称</th>
+      <th>OS</th>
+      <th>更新日</th>
+      <th>ドキュメント</th>
+      <th>ファイル形式 / 備考</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/UME_win_V1.49.zip">UME_win_V1.49.zip</a></td>
+      <td>Windows</td>
+      <td rowspan="2">2020/04/07</td>
+      <td rowspan="2"><a href="/ddbj/ume.html">UME ユーザーマニュアル</a></td>
+      <td rowspan="2">zip 形式<br />UMEにはParser / transCheckerが付属しています</td>
+      </tr>
+      <tr>
+      <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/UME_unix_V1.49.zip">UME_unix_V1.49.zip</a></td>
+      <td>unix/macOS</td>
+      </tr>
+      <tr>
+      <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/Parser_V6.62.tar.gz">Parser_V6.62.tar.gz</a></td>
+      <td>unix/macOS</td>
+      <td>2020/04/07</td>
+      <td><a href="/ddbj/parser.html">Parser ユーザーマニュアル</a></td>
+      <td>tar (gzipped) 形式<br />UME を使用する場合は不要です。</td>
+      </tr>
+      <tr>
+      <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/transChecker_V2.21.tar.gz">transChecker_V2.21.tar.gz</a></td>
+      <td>unix/macOS</td>
+      <td>2017/05/17</td>
+      <td><a href="/ddbj/transchecker.html">transChecker ユーザーマニュアル</a></td>
+      <td>tar (gzipped) 形式<br />UME を使用する場合は不要です。</td>
+      </tr>
+    </tbody>
+</table>
+
+<h2 id="使用許諾-">使用許諾 <a name="license"></a></h2>
+
+<p><strong>Please read the following agreement carefully before you use the software for Mass Submission System.</strong></p>
+
+<p>NOTICE TO USERS:<br />
+Carefully read the following agreement. Use of the tools for Mass Submission System provided by DDBJ with this agreement (hereinafter collectively called “the Software”) constitutes your acceptance of these terms. If you do not agree to the terms of this agreement, do not install and/or use the Software. User’s use of the Software is conditioned upon compliance by user with the terms of this agreement.</p>
+
+<ol>
+  <li>All copyright related to the Software except the following third-party software (included in only “UME”) must belong to the DDBJ:<br />
+a) Axis 1.1<br />
+b) Xerces 1.4.4<br />
+The Software includes the source code thereof and documentation thereto.</li>
+  <li>In the event you provide to any third party all or any portion of the Software, prior written consent of DDBJ is required.</li>
+  <li>You agree that you will not attempt to reverse compile, modify, translate, or disassemble the Software in whole or in part.</li>
+  <li>Except as required by law, DDBJ will not be liable to you for any damages arising out of the use or inability to use of the Software.</li>
+  <li>Requirements specified in this agreement are subject to change without notice.</li>
+</ol>
+
+      </div>
+      
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              
+              <li>
+                <a href="/ddbj/file-format.html">登録ファイル形式</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/ume.html">UME ユーザーマニュアル</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/parser.html">Parser ユーザーマニュアル</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/transchecker.html">transChecker ユーザーマニュアル</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/validator.html">validator エラーメッセージ</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/mss-form.html">MSS 利用申し込み</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

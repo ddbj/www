@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>キーワード検索 ARSA の機能更新と本運用開始　</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">キーワード検索 ARSA の機能更新と本運用開始　</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/news">news</a>
+          </li>
+          <li>
+            <a href="">キーワード検索 ARSA の機能更新と本運用開始　</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <html>DDBJ では，高速キーワード検索システム <a href="http://arsa.ddbj.nig.ac.jp/top-j.html" target="_blank">ARSA(All-round Retrieval of Sequence and Annotation)</a> の試験運用を終えて 2007年6月より，いよいよ本運用を始めました。<br />ARSA は，下記のような特徴を有しています。
+
+<ol>
+    <li>DDBJ（国際塩基配列データベース）を始めとする23種類のデータベースを対象に高速なキーワード検索を実現</li>
+    <li>複雑な検索条件や大量のヒットがある条件で検索しても，23種類すべてのデータベースに対して一定の検索レスポンスを提供</li>
+    <li>DDBJ を対象にした検索では，Features/Qualifiers を指定した詳細な条件による検索が可能</li>
+</ol>
+
+<p>さらに，このたび，これまでの試験運用の間のご意見をもとに次の機能を付加しました</p>
+
+<table border="0">
+    <tr>
+        <td valign="top">
+
+            <ul>
+                <li>複数データベースからの結果を一括ダウンロードを可能に(右図1)</li>
+                <li>DDBJ 以外のデータベースでも表示項目の選択を可能に(右図2)</li>
+                <li>結果画面でデータベースを再選択可能に(右図3) </li>
+                <li>結果画面で表示項目を再選択可能に(右図4)</li>
+                <li>結果画面で表示件数を再選択可能に (右図5)</li>
+                <li>結果画面の下部にページジャンプのリンクを追加 </li>
+            </ul>
+        </td>
+        <td valign="top"><a href="/assets/images/news/ARSA07080302.gif"><img src="/assets/images/news/ARSA07080303.gif" width="194" height="204" align="right" alt="ARSA" /></a></td>
+    </tr>
+</table>
+
+<p>その他にも細かな仕様改善を加えました。</p>
+
+<ul>
+    <li>TSV 形式でのダウンロード時の拡張子変更(.csv -&gt; .txt)</li>
+    <li>NarrowSearch の名称を RefineSearch に変更</li>
+    <li>SimpleQuery の廃止</li>
+    <li>HTTP ダウンロードの廃止(FTPダウンロードへの一本化) </li>
+</ul>
+
+<p>また，Java や Perl から ARSA の機能を呼べるように API を充実いたしました（詳細は，DDBJの <a href="http://www.xml.nig.ac.jp/wsdl/index.jsp">Webサービス</a> をご参照ください）</p>
+
+<p>DDBJ では，今後さらに，皆様からのご意見をもとにして，より使いやすく強力なキーワード検索システムを目指して機能拡張を進めていきます。<a href="http://arsa.ddbj.nig.ac.jp/top-j.html" target="_blank">ARSA</a> にて 「<b>Your Comment</b>」 をクリックして，批判とご提案をご記入下さい。</p>
+</html>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

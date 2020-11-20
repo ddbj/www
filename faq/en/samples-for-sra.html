@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How many samples do I need for my DRA submission?</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title -small">
+      <h1 class="title">How many samples do I need for my DRA submission?</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/faq/en/">FAQ</a>
+            
+          </li>
+          <li>
+            <a>How many samples do I need for my DRA submission?</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<main id="SimpleView">
+  <div class="inner">
+    <article class="md-content">
+      <p>BioSample is descriptive information about the biological source materials, or samples, used to generate experimental data in any of primary data archives. Biological and technical replicates are represented by separate BioSamples with distinct 'replicate' attribute, e.g., 'replicate = biological replicate 1'.</p>
+<p>For environmental samples, each physical isolate should be considered a BioSample, whereas uniquely attributable reads within an isolate are not. Note that a given DRA data file can be linked to a single BioSample only.</p>
+<p>Basic guidance for BioSample registration are:</p>
+<div class="sub_index">
+  <ul class="disc">
+    <li>Register a separate BioSample for each unique source, e.g.,RNA from the wings is a separate BioSample than RNA from legs if those two sources were sequenced independently.</li>
+    <li>A genome assembly can have only one BioSample. For a genome assembled from reads of multiple BioSamples, register a new BioSample and indicate which other BioSamples were used to generate the assembly. For example, if the reads from a male and from a female were submitted to DRA separately but the reads were combined to assemble the genome, register a new BioSample for the male plus the female, providing the accessions of the male and the female BioSamples in the new BioSample registration. Example genome entry.&lt;/ahref&gt;
+    </li>
+    <li>Endosymbionts: Because sequences are annotated by genome, one would need separate BioSamples for an insect and its endosymbiont. In the insect genome assembly submission, we recommend indicating that the endosymbiont’s BioSample is separate and references the insect BioSample.</li>
+  </ul>
+</div>
+<p>Examples:</p>
+<div class="sub_index">
+  <ul class="disc">
+    <li>23,000 unique 16S amplicons from a single seawater collection point - 1 BioSample (1 sample was collected and then analyzed to deduce 16S diversity)</li>
+    <li>3 "identical" transgenic mice treated with the same drug as part of an experiment - 3 BioSamples (biological and technical replicates are represented by separate BioSamples)</li>
+    <li>To examine gene expression profiles, CHO cells infected with a virus and sampled at 0, 2, 4, and 8 hours post infection - 4 BioSamples (4 time points)</li>
+    <li>To analyze differences in gene expression levels, RNA-seq data from a single male anteater taken from the brain, heart, lungs, testes, and liver - 5 BioSamples (5 different tissues isolated)</li>
+  </ul>
+</div>
+
+    </article>
+  </div>
+</main>
+
+  
+
+</body>
+</html>

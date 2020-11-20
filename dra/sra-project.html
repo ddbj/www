@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DRA 共同研究プロジェクトデータの取扱い</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">DRA 共同研究プロジェクトデータの取扱い</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/dra">dra</a>
+          </li>
+          <li>
+            <a href="">DRA 共同研究プロジェクトデータの取扱い</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/dra/index.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/dra/submission.html">Handbook</a>
+      
+      <ul>
+        
+        <li>
+          <a href="https://docs.google.com/spreadsheets/d/1DTdUQ-WWOMjOA2eYQWmFYUB24hJysuwhvHLJoDFX4rc/edit#gid=0">Metadata examples</a>
+        </li>
+        
+        <li>
+          <a href="/dra/example.html">XML examples</a>
+        </li>
+        
+        <li>
+          <a href="https://github.com/ddbj/pub/tree/master/docs/dra">XML schema</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/ja/index.html">FAQ</a>
+      
+    </li>
+    
+    <li class="">
+      <a href="https://ddbj.nig.ac.jp/DRASearch/">Search</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq">Downloads</a>
+      
+      <ul>
+        
+        <li>
+          <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq">FASTQ</a>
+        </li>
+        
+        <li>
+          <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/sralite/ByExp/litesra/">SRA</a>
+        </li>
+        
+        <li>
+          <a href="https://github.com/ddbj/pub/tree/master/docs/dra/xsd">XML Schema</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/dra/about-dra.html">About DRA</a>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="共同研究プロジェクトデータの取り扱い-">共同研究プロジェクトデータの取り扱い <a name="project"></a></h2>
+
+<p>ここでは共同研究プロジェクトに由来するデータを <a href="/dra/index.html">DDBJ Sequence Read Archive (DRA)</a> サーバを介して，</p>
+
+<ul>
+  <li>シークエンス拠点から共同研究者へデータを転送する</li>
+  <li>共同研究者が DRA へデータを登録する</li>
+</ul>
+
+<p>方法を解説しています。これによりプロジェクトで得られたデータを共同研究者間で共有することができます。</p>
+
+<p>DRA へのデータ登録方法については <a href="/dra/submission.html">DRA Handbook</a> をご覧ください。</p>
+
+<h2 id="データ転送の準備-">データ転送の準備 <a name="transfer"></a></h2>
+
+<h3 id="d-way-アカウントの取得連絡-">D-way アカウントの取得・連絡 <a name="create-dway-account"></a></h3>
+
+<p><a href="/account.html">アカウント Handbook</a> に従い DDBJ データ登録システムである D-way のアカウントを取得します。</p>
+
+<h3 id="転送用ディレクトリ-">転送用ディレクトリ <a name="directory-for-transfer"></a></h3>
+
+<p><a href="/contact-ddbj.html">DRA に転送用ディレクトリの作成を依頼します</a>。DRA チームは依頼に基づき DRA データ受付サーバに転送用ディレクトリ “transfer” を作成し，依頼者に連絡します。</p>
+
+<ul>
+  <li>DRAデータ受付サーバ: ftp-private.ddbj.nig.ac.jp</li>
+  <li>送り手側: transfer/プロジェクト名/受け手のアカウント名/</li>
+  <li>受け手側: transfer/プロジェクト名/送り手のアカウント名/</li>
+</ul>
+
+<p>受け手側ディレクトリは対応する送り手側ディレクトリにマウントされており，受け手側は送り手側がアップロードしたファイルを閲覧・コピーすることができます。削除と移動はできません。 作業完了後，送り手側でファイルを削除してください。</p>
+
+<p><a href="/assets/images/books/sra_project1.png" title="DRA サーバを介した共同研究者へのデータ受渡し" class="group1"><img src="/assets/images/books/sra_project1.png" alt="" class="w450" /></a></p>
+
+<p>以下ではシークエンス拠点 S (アカウント: center_s) がプロジェクト (project_X) のデータを共同研究者 A (アカウント: lab_a) に転送し，共同研究者 A がデータを DRA に登録する場合を例に手順を説明します。</p>
+
+<p>適宜，center_s を送り手側のアカウント，lab_a を登録者のアカウント，project_X
+を関係するプロジェクト名に読み替えてください。 シークエンス拠点，共同研究者やプロジェクトが増えた場合は DRA に連絡し，転送用ディレクトリの追加を依頼します。</p>
+
+<h2 id="送り手側での操作-">送り手側での操作 <a name="sender"></a></h2>
+
+<h3 id="データの作成アップロード-">データの作成・アップロード <a name="create-data-upload"></a></h3>
+
+<p>送り手側であるシークエンス拠点 S が <a href="/dra/submission.html">DRA Handbook</a> 中の FTP クライアント，もしくは，コマンドで操作します。</p>
+
+<h4 id="ランデータ-">ランデータ <a name="ランデータ"></a></h4>
+
+<p>データ受付サーバにログインし transfer/project_X/lab_a にランデータをアップロードします。</p>
+
+<h4 id="メタデータ-">メタデータ <a name="メタデータ"></a></h4>
+
+<p>D-way で DRA 新規登録を作成し，Save XML で XML ファイルとして保存します。新規登録は Submit しなければ使いまわすことができます。</p>
+
+<p>[Save XML] ボタンをクリックし，メタデータを XML ファイルとしてローカルのコンピュータ (PC) に保存します。データ受付サーバにログインし，保存した XML ファイルをランデータと同様に transfer/project_X/lab_a にアップロードします。 もしくは，XML ファイルをメールで共同研究者に送付します。</p>
+
+<p>必要に応じて lab_a の下にサブディレクトリを作成し submission ごとにファイルを区分けします。 アップロードが完了したらファイル情報を共同研究者 A に連絡します。</p>
+
+<p><span class="red">データは関係者同士で直接やり取りしてください。</span></p>
+
+<p>シークエンス拠点で多数のメタデータを DRA サーバ上で作成・管理したい場合は，メタデータ作成専用アカウントを DRA で発行します。</p>
+
+<h2 id="受け手側での操作-">受け手側での操作 <a name="receiver"></a></h2>
+
+<h3 id="d-wayでの新規登録作成-">D-wayでの新規登録作成 <a name="create-new-submission"></a></h3>
+
+<p>DRA ウェブサイトから共同研究者の <a href="https://ddbj.nig.ac.jp/D-way/">D-way</a> アカウントにログインします。</p>
+
+<p><a href="/dra/submission.html">DRA Handbook</a> に従い新規登録 (例: lab_a-0001)
+を作成します。対応する登録用ディレクトリ
+(submission/lab_a/lab_a-0001) が受付サーバの登録者用ディレクトリに作成されます。</p>
+
+<h3 id="データのコピー取得-">データのコピー・取得 <a name="upload-download"></a></h3>
+
+<p><a href="/dra/submission.html">DRA Handbook</a> に従い，transfer 以下に作成された受渡し用ディレクトリに送り手はデータをアップロードします。受け手はデータをダウンロードします。</p>
+
+<h3 id="メタデータの読み込み作成-">メタデータの読み込み・作成 <a name="create-metadata"></a></h3>
+
+<p><a href="https://ddbj.nig.ac.jp/D-way/">D-way にログイン</a>，対応する submission
+(lab_a-0001) を選択した後，メタデータ作成ツールを起動します。 PC に保存した XML ファイル (例 Run.xml) に対応するオブジェクトタブ (例 Run) 中の [Load XML] をクリックし，ファイルをロードします。</p>
+
+<p>XML ファイルの内容が読み込まれます。ロードしたアカウント (lab_a) が Alias と Submission ID
+を自動的に上書きします。他の XML ファイルも同様に読み込み，情報を追加します。メタデータを完成させ
+DRA に登録します。</p>
+
+<h2 id="共同研究プロジェクトのメタデータ-">共同研究プロジェクトのメタデータ <a name="metadata"></a></h2>
+
+<h4 id="center-name-submissionstudysampleexperimentrunanalysis-">Center Name (Submission，Study，Sample，Experiment，Run，Analysis) <a name="Center_Name_Submission，Study，Sample，Experiment，Run，Analysis"></a></h4>
+
+<p>Submission，Study，Sample，Experiment，Run，Analysis それぞれについて責任を負う組織の Center Name を記入します。</p>
+
+<p>Center Name が空の XML ファイルをメタデータ作成ツールで読み込むと D-way アカウントの Center Name が自動的に入力されます。シークエンス拠点側で Center Name を空にした XML ファイルを作成し登録者に渡すと，登録者側で Center Name を書き換える手間を省くことができます。</p>
+
+<h4 id="contact-submission-">Contact (Submission) <a name="Contact_Submission"></a></h4>
+
+<p>Submission に関する連絡 (公開，更新，内容に関する第三者からの問い合わせ) に応じる人の名前とメールアドレスを列挙します。</p>
+
+<h4 id="project-id-study-">Project ID (Study) <a name="Project_ID_Study"></a></h4>
+
+<p>研究グループレベルでのプロジェクトに対して Project ID を D-way から申請，取得します。大型の研究プロジェクトに対しては DDBJ が独自に ID を付与します。</p>
+
+<h4 id="center-project-name-study-">Center Project Name (Study) <a name="Center_Project_Name_Study"></a></h4>
+
+<p>各研究グループで独自のプロジェクト名を付けます。</p>
+
+<h4 id="url-link-study-">URL Link (Study) <a name="URL_Link_Study"></a></h4>
+
+<p>共同研究プロジェクトのウェブサイトを記入します。</p>
+
+<p>例)<br />
+Label = MEXT Genome Support Project<br />
+URL = http://www.genome-sci.jp/</p>
+
+<h4 id="study-attribute-study-">Study Attribute (Study) <a name="Study_Attribute_Study"></a></h4>
+
+<p>共同研究プロジェクトで統一されたキーワードを付与します。キーワードによりプロジェクト単位でのレコード検索が可能になります。</p>
+
+<p>例)<br />
+Tag = grant<br />
+Value = KAKENHI on Innovative Areas - Genome Support Project</p>
+
+<h4 id="run-center-run-">Run Center (Run) <a name="Run_Center_Run"></a></h4>
+
+<p>ランを実行したシークエンス拠点の Center Name を記入します。</p>
+
+<h4 id="analysis-center-analysis-">Analysis Center (Analysis) <a name="Analysis_Center_Analysis"></a></h4>
+
+<p>解析を実行した組織の Center Name を記入します。</p>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

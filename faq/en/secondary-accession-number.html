@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What is secondary accession number?</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title -small">
+      <h1 class="title">What is secondary accession number?</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/faq/en/">FAQ</a>
+            
+          </li>
+          <li>
+            <a>What is secondary accession number?</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<main id="SimpleView">
+  <div class="inner">
+    <article class="md-content">
+      <p><a href="/insdc-e.html#insd">INSD; International Nucleotide Sequence Database</a> are composed of DDBJ, ENA and NCBI, and collect experimentally determined nucleotide sequence data. <br />A unique <strong>accession number</strong> issued by INSD for each submitted sequence data is defined as <a href="/documents/accessions.html">the INSD accession number</a>. <br />On <a href="/ddbj/flat-file-e.html">DDBJ flat file</a>, the accession number is described in <a href="/ddbj/flat-file-e.html#AccessionB">ACCESSION</a> line. </p>
+<p>If multiple entries are united to an entry, or if an entry is extensively modified after the submission, the responsible data banks may assign a new accession number to it. In these cases, the new accession number is called the primary accession number, and the old accession number(s) is/are called the secondary accession number(s). </p>
+<p>In the flat file, the primary accession number is indicated first, then the secondary accession number(s) follows. </p>
+<pre class="flatfile"><strong>example</strong>ACCESSION   <span style="border-bottom:solid 3px #ff0000;">AB999999</span> <span style="border-bottom:solid 3px #0000ff;">AB888888</span> <span style="border-bottom:solid 3px #0000ff;">AB777777</span></pre>
+<dl>
+  <dd><span style="color: #ff0000">AB999999 -- primary accession number</span></dd>
+  <dd><span style="color: #0000ff">AB888888 AB777777 -- secondary accession number</span></dd>
+</dl>
+<p>You can find the same updated entry with both the primary and the secondary accession numbers, in general. <br />However, if the old entry with secondary accession number has previously been open to the public, the old one is not removed. So, you can find the old record by <a href="http://getentry.ddbj.nig.ac.jp/top-e.html">getentry</a>. </p>
+<dl><dt>References</dt>
+  <dd><a href="/services/getentry-e.html">getentry HELP</a></dd>
+  <dd><a href="/insdc-status-e">INSDC Status Document</a>: Replaced</dd>
+  <dd><a href="/faq/en/why-retracted-data-available-e.html">Why is the retracted data still available?</a></dd>
+</dl>
+
+    </article>
+  </div>
+</main>
+
+  
+
+</body>
+</html>

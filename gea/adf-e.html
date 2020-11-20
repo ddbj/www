@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array design</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">Array design</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/gea">gea</a>
+          </li>
+          <li>
+            <a href="">Array design</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/gea/index-e.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/gea/overview-e.html">Submission Overview</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/gea/submit-array-e.html">Submit microarray experiment</a>
+        </li>
+        
+        <li>
+          <a href="/gea/submit-sequence-e.html">Submit sequencing experiment</a>
+        </li>
+        
+        <li>
+          <a href="/gea/metadata-e.html">Metadata</a>
+        </li>
+        
+        <li>
+          <a href="/gea/datafile-e.html">Data File</a>
+        </li>
+        
+        <li>
+          <a href="/gea/validation-e.html">Validation</a>
+        </li>
+        
+        <li>
+          <a href="/gea/single-cell-e.html">Single-cell submission guide</a>
+        </li>
+        
+        <li>
+          <a href="/gea/example-e.html">Example</a>
+        </li>
+        
+        <li>
+          <a href="/gea/adf-e.html">Array Design</a>
+        </li>
+        
+        <li>
+          <a href="/gea/matrix-e.html">Data matrix</a>
+        </li>
+        
+        <li>
+          <a href="/gea/reviewer-access-e.html">Reviewer Access</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/en/index-e.html">FAQ</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="http://aoe.dbcls.jp/">Search (AOE)</a>
+      
+      <ul>
+        
+        <li>
+          <a href="http://refex.dbcls.jp/index.php?lang=en">RefEx</a>
+        </li>
+        
+        <li>
+          <a href="https://www.ebi.ac.uk/arrayexpress/browse.html">Search (ArrayExpress)</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/gea">Downloads</a>
+      
+    </li>
+    
+    <li class="">
+      <a href="/gea/about-gea-e.html">About GEA</a>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="array-design-format-adf-file-">Array design format (ADF) file <a name="what-adf"></a></h2>
+
+<p>The ADF (Array Design Format) file captures information about a
+microarray chip. The file contains two section, separated by a [main]
+tag:</p>
+
+<ul>
+  <li>A multi-row metadata header (e.g. who submitted the array design,
+how the probes or composite “probe sets” were designed); followed by</li>
+  <li>A table with columns of annotation for each probe/probe set in rows,
+e.g. unique probe identifier, probe sequences, probe coordinate
+location (on spotted arrays), cross-references to other databases,
+where the probes map to in the genome, and so on.</li>
+</ul>
+
+<p>The ADF file is always in tab-delimited text (*.txt) format, and will
+open in any spreadsheet program for viewing or editing.</p>
+
+<p>Here is a snippet of an ADF document:</p>
+
+<a class="group1" href="/assets/images/magetab/adf1.png" title="A snippet of an ADF document">
+  <figure class="image">
+    <img src="/assets/images/magetab/adf1.png" alt="A snippet of an ADF document" class="w600">
+    <figcaption>A snippet of an ADF document</figcaption>
+  </figure>
+</a>
+
+<h2 id="adf-metadata-header-">ADF metadata header <a name="adf-meta"></a></h2>
+
+<p>Each row (field) of metadata starts with a heading (bold in the table
+below), each appearing only once and coming from a controlled
+vocabulary. The headings would be pre-filled for you when you download
+one of our ADF templates so you don’t need to insert them from scratch.
+Please do not edit the headings, but fill in each field as much as
+possible, like the blue text below:</p>
+
+<a class="group1" href="/assets/images/magetab/adf2.png" title="ADF metadata header">
+  <figure class="image">
+    <img src="/assets/images/magetab/adf2.png" alt="ADF metadata header" class="w600">
+    <figcaption>ADF metadata header</figcaption>
+  </figure>
+</a>
+
+<p>A glossary of the ADF header fields (* denotes mandatory fields):</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>No.</th>
+      <th>ADF header field</th>
+      <th>What is it?</th>
+      <th>Allowed values</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>* Array Design Name</td>
+      <td>An informative title of the array design. Should include the name of the manufacturer (e.g. Agilent) or the lab which designed it, the species, version number, purpose of the array (e.g. genotyping), the number of probes/features (e.g 450k)</td>
+      <td> </td>
+      <td>Agilent human micoRNA microarray miRBase Release 14.0, 8x15k (GridName 029297, 82 cols x 192 rows)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Version</td>
+      <td>Version (or revision) number of the array design.</td>
+      <td> </td>
+      <td>version 3.0</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>* Provider</td>
+      <td>Name of the array design’s submitter.</td>
+      <td> </td>
+      <td>Mishima Taro</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>* Comment[Organism]</td>
+      <td>The species from which the probe sequences were derived from.</td>
+      <td>Must use scientific name in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi">NCBI Taxonomy</a>. Separate names by semicolon for multi-species arrays.</td>
+      <td>Homo sapiens</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>* Comment[Description]</td>
+      <td>A concise description of how the microarray is designed and what it is for. Include URLs to stable online resources if possible.</td>
+      <td> </td>
+      <td>This custom commercial microarray consists of 84881 (86205 total including 1324 control probes) 60-mer oligonucleotide probes derived from the genomes and EST database of Emiliania huxleyi strain (… etc…)</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>* Comment[Public Release Date]</td>
+      <td>Enter “Hold” to keep pre-published array designs private (inform us to release). Otherwise, insert the date of submission.</td>
+      <td>Must use YYYY-MM-DD format for submission date.</td>
+      <td>2014-04-25</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Printing Protocol</td>
+      <td>How the probes were printed on the array. Include URLs to stable online resources if possible. Especially important if you are submitting a custom array printed with non-propreitary methods.</td>
+      <td> </td>
+      <td>The 60-mer oligonucleotides were synthessized in situ using Agilent inkjet SurePrint technology. Four arrays were printed on each 1 x 3-inch glass slide (…etc…)</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Technology Type</td>
+      <td>Printing/synthesis technology used when creating the microarray.</td>
+      <td>“in situ oligo features”, “spotted antibody features”, “spotted colony features”, “spotted ds DNA features”, “spotted protein features”, “spotted_ss_PCR_amplicon_features”, “spotted_ss_oligo_features”</td>
+      <td>in situ oligo features</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Surface Type</td>
+      <td>The chemical coating on the surface of the substrate (see below). Probes are immobilised by the coating.</td>
+      <td>polylysine, aminosilane, “other surface type”</td>
+      <td>polylysine</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Substrate Type</td>
+      <td>The material/substrate of the microarray.</td>
+      <td>glass, nitrocellulose, nylon, silicon, “other substrate type”</td>
+      <td>glass</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Sequence Polymer Type</td>
+      <td>The polymer that makes up the probes.</td>
+      <td>DNA, RNA, protein</td>
+      <td>DNA</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Term Source Name</td>
+      <td>In the ADF table, for each cross-reference provided, e.g. Reporter Database Entry [uniprot], the cross-referenced resource’s name needs to be entered here, so the resource can be looked up via the URL in Term Source File (see header number 13 below).</td>
+      <td>External database names from this <a href="https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=1479684386">allowed list</a></td>
+      <td>uniprot</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Term Source File</td>
+      <td>The URL where an external database resource mentioned in Term Source Name (see header number 12 above) is hosted.</td>
+      <td>A valid URL.</td>
+      <td>http://www.uniprot.org</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="adf-table-">ADF table <a name="adf-table"></a></h2>
+
+<p>Just like the metadata header fields, column headings in the ADF table
+come from a controlled vocabulary. Please use one of the ADF templates,
+where correct headings have been prefilled for you, saving you inserting
+them from scratch. Please don’t change the column headings in the
+template.</p>
+
+<ul>
+  <li><a href="/assets/files/magetab/adf/composite_element_array_ADF_template.xls">composite_element_array_ADF_template.xls</a></li>
+  <li><a href="/assets/files/magetab/adf/commercial_array_header_template.xls">commercial_array_header_template.xls</a></li>
+  <li><a href="/assets/files/magetab/adf/reporter_only_array_ADF_template.xls">reporter_only_array_ADF_template.xls</a></li>
+  <li><a href="/assets/files/magetab/adf/spotted_array_ADF_template.xls">spotted_array_ADF_template.xls</a></li>
+</ul>
+
+<h3 id="features-reporters-and-composite-elements-">Features, reporters and composite elements <a name="feature"></a></h3>
+
+<p><strong>Features (for spotted arrays only):</strong></p>
+
+<p>Each spot on the array is called a feature. The position of each feature
+is described by 4 coordinates, each has its dedicated column in the ADF
+table: Block Column, Block Row, Column and Row. Each set of 4
+coordinates represents a unique position on the microarray, so features
+cannot be duplicated on an array. Include all features in your ADF file,
+even if there is nothing spotted there (e.g. control spots). Here is a
+schematic diagram showing the 4 coordinates:</p>
+
+<a class="group1" href="/assets/images/magetab/adf_column.jpg" title="image of the Block Column and Block Row coordinate">
+  <figure class="image">
+    <img src="/assets/images/magetab/adf_column.jpg" alt="image of the Block Column and Block Row coordinate" class="w300">
+    <figcaption>image of the Block Column and Block Row coordinate</figcaption>
+  </figure>
+</a>
+
+<p><strong>Reporters (mandatory, for all arrays):</strong></p>
+
+<p>This is what is usually referred to as a “probe”. Each reporter has a
+particular sequence and a defined role (experimental or control). Give
+each reporter a unique name in the Reporter Name column, i.e. each name
+in the column should only appear once, except for spotted arrays (arrays
+with “features”, see above), where the same probe can be printed at
+multiple locations on the same array, so the same reporter name can be
+repeated at different feature locations.</p>
+
+<p><strong>Composite elements (optional, for all arrays):</strong></p>
+
+<p>These allow you to provide an additional level of information showing
+which reporters are related, e.g. derived from the same gene or
+transcript. E.g. if you have different reporters that are designed from
+two exons of a gene, you can indicate that the reporters belong to the
+same “composite element” (i.e. a “composite” collation of reporters).
+Give each composite element a unique name in the Composite Element Name
+column. Affymetrix array designs will always have composite elements
+because they are based on “probe sets” and not simply “probes”.</p>
+
+<p>Here is a snippet from a hypothetical example of an array design,
+showing seven features, two reporters and one composite element:</p>
+
+<a class="group1" href="/assets/images/magetab/adf3.png" title="Feature, reporter and composite element">
+  <figure class="image">
+    <img src="/assets/images/magetab/adf3.png" alt="Feature, reporter and composite element" class="w450">
+    <figcaption>Feature, reporter and composite element</figcaption>
+  </figure>
+</a>
+
+<h3 id="annotation-of-reporters-">Annotation of reporters <a name="ann-reporters"></a></h3>
+
+<p>Annotate each reporter by providing its sequence, cross-referenced
+accessions in external databases (e.g. RefSeq accession numbers of the
+cDNA sequences from which the reporters were designed), and/or its
+genomic mapping location. Use the Reporter Sequence column for the
+sequence, and one or more Reporter Database Entry [xxx] columns for
+the cross-references and mapping location.</p>
+
+<p>If a reporter appears multiple times in an ADF table, e.g. for spotted
+arrays where the same reporter is printed at different locations on the
+microarray, annotation for the same reporter must be consistent (i.e.
+identical) across the entire ADF table.</p>
+
+<p>For reporters with no cross-references, e.g. a blank control spot, leave
+annotation blank. Do not put down custom values such as “NA”, “empty” or
+“unmapped”, as curators will validate the annotation values against
+expected formats and custom values will not be accepted.</p>
+
+<p><strong>Reporter Sequence:</strong></p>
+
+<p>Use <a href="http://www.bioinformatics.org/sms/iupac.html">single-letter IUPAC
+codes</a> for all arrays
+(including peptide arrays). All experimental reporters and control
+reporters of type “array control biosequence” should have sequence
+annotation. In contrast, control reporters which are empty (e.g. nothing
+spotted on the array), buffer-only or label-only should not have
+sequence annotation. See section below for more details on experimental
+and control reporters.</p>
+
+<p><strong>Cross references to external databases:</strong></p>
+
+<p>Look up the abbreviated name of the cross-referenced database from <a href="https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=1479684386">this allowed list</a>,
+and insert it inside the square brackets of the column heading Reporter
+Database Entry [xxx], e.g. Reporter Database Entry [genbank]. Then,
+fill the column with the appropriate accession. You can enter multiple
+accessions from the same database by separating them with semicolons,
+e.g. AJ12345;BX45678. For annotations from different database sources,
+they must be provided in separate Reporter Database Entry [xxx]
+columns. Don’t forget to add the database name and URL to the Term
+Source Name and Term Source File fields of the ADF header.</p>
+
+<p>If the database you would like to cite is not already on the list,
+please <a href="/contact-ddbj-e.html">contact us</a> with the database URL and we will
+look into adding it to the list of allowed databases.</p>
+
+<p>We rely on accession numbers and not free-text names, because accessions
+are usually stable and traceable (even for deprecated ones). Morever,
+each database usually enforces a certain format for the accessions,
+which makes computational data-mining a lot easier. E.g. <a href="https://www.ncbi.nlm.nih.gov/refseq/about/">NCBI RefSeq curated cDNAs</a> always have
+accessions start with NM_ followed by a few digits.</p>
+
+<p><strong>Genomic mapping location:</strong></p>
+
+<p>Instead of an abbreviated database name, enter chromosome_coordinate:
+inside the square brackets of Reporter Database Entry [xxx], e.g.
+Reporter Database Entry [chromosome_coordinate:GRCh38]. Try to use
+official genome assembly names from public databases (ENA, GenBank or
+DDBJ), e.g
+<a href="https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.38">GRCh38</a> for the
+human genome assembly. Genomic coordinates in the column should follow
+this format: chrName:start position-end position, e.g. chr1:1234-5678.</p>
+
+<p>This is how the hypothetical reporter annotations would be like. Notice
+how you can enter multiple accessions from the same database by
+separating them with semicolons:</p>
+
+<a class="group1" href="/assets/images/magetab/adf4.png" title="ADF annotation of reporters">
+  <figure class="image">
+    <img src="/assets/images/magetab/adf4.png" alt="ADF annotation of reporters" class="w450">
+    <figcaption>ADF annotation of reporters</figcaption>
+  </figure>
+</a>
+
+<h3 id="repoter-role---experimental-or-control-">Repoter role - experimental or control <a name="reporter-role"></a></h3>
+
+<p>For each reporter, enter its role: experimental or control in the
+Reporter Group [role] column.</p>
+
+<p>For each control reporter, describe what type of control it is in the
+Control Type column. (Do not fill in this column for any experimental
+reporters.) The allowed control type values taken from Experimental
+Factor Ontology (EFO). Here is a glossary:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Allowed terms</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="http://www.ebi.ac.uk/efo/EFO_0005433">array control biosequence</a></td>
+      <td>E.g. a spiked sequence from E. coli for a human microarray. <a href="#ann-reporters">Reporter Sequence</a> must be provided.</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.ebi.ac.uk/efo/EFO_0005434">array control buffer</a></td>
+      <td>Buffer spotted on the array. Do not provide <a href="#ann-reporters">Reporter Sequence</a>.</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.ebi.ac.uk/efo/EFO_0005435">array control empty</a></td>
+      <td>Nothing spotted on the array (blank). Do not provide <a href="#ann-reporters">Reporter Sequence</a>.</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.ebi.ac.uk/efo/EFO_0005436">array control genomic DNA</a></td>
+      <td>E.g. salmon sperm DNA</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.ebi.ac.uk/efo/EFO_0005438">array control label</a></td>
+      <td>Landing lights. Do not provide <a href="#ann-reporters">Reporter Sequence</a>.</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.ebi.ac.uk/efo/EFO_0005439">array control reporter size</a></td>
+      <td>Size standards.</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.ebi.ac.uk/efo/EFO_0000375">array control spike calibration</a></td>
+      <td>E.g. the same spike sequence introduced at varying concentrations</td>
+    </tr>
+    <tr>
+      <td><a href="http://www.ebi.ac.uk/efo/EFO_0005440">array control design</a></td>
+      <td>(when none of the above applies, i.e. a control was used, but no further details available)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Here is an example of reporter roles in the ADF table:</p>
+
+<a class="group1" href="/assets/images/magetab/adf5.png" title="Reporter role">
+  <figure class="image">
+    <img src="/assets/images/magetab/adf5.png" alt="Reporter role" class="w500">
+    <figcaption>Reporter role</figcaption>
+  </figure>
+</a>
+
+<h3 id="reporter-grouping-by-species-multi-species-adfs-only-">Reporter grouping by species (multi-species ADFs only) <a name="reporter-groupings"></a></h3>
+
+<p>Where reporters were designed from more than one species, you can
+indicate the species source in the Reporter Group [species] column.
+Use species name from Latin binomial nomenclature where possible, e.g.
+Homo sapiens.</p>
+
+<p>An example of a microarray with probes derived from viral and human
+microRNA sequences:</p>
+
+<a class="group1" href="/assets/images/magetab/adf6.png" title="Reporter grouping by species (multi-species ADFs only)">
+  <figure class="image">
+    <img src="/assets/images/magetab/adf6.png" alt="Reporter grouping by species (multi-species ADFs only)" class="w500">
+    <figcaption>Reporter grouping by species (multi-species ADFs only)</figcaption>
+  </figure>
+</a>
+
+<h3 id="annotation-of-composite-elements-">Annotation of composite elements <a name="ann-composite-elements"></a></h3>
+
+<p>Annotation of composite elements is usually in the form of
+cross-references to external databases, in a very similar way as for
+reporters, using one or more Composite Element Database Entry [xxx]
+columns. In addition, a Composite Element Comment column can be added to
+insert free-text comments or descriptions for each element.</p>
+
+<a class="group1" href="/assets/images/magetab/adf7.png" title="ADF annotation of composite elements">
+  <figure class="image">
+    <img src="/assets/images/magetab/adf7.png" alt="ADF annotation of composite elements" class="w500">
+    <figcaption>ADF annotation of composite elements</figcaption>
+  </figure>
+</a>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

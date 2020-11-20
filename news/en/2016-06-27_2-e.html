@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDBJ Data Analysis Challenge (Closed)</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">DDBJ Data Analysis Challenge (Closed)</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/news">news</a>
+          </li>
+          <li>
+            <a href="">DDBJ Data Analysis Challenge (Closed)</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <div style="font-size: 300%; text-align: center; margin-bottom: 1em;"><span class="font-bold">DDBJ Data Analysis Challenge</span></div>
+<div class="bgc_orange">"DDBJ Data Analysis Challenge 2016" was closed. Thank you very much for your participation.</div>
+<p>“DDBJ Data Analysis Challenge” is a machine learning competition using “‘International Nucleotide Sequence Database’ data”, which is one of the life science big data provided by DDBJ. Even college students and/or researchers outside of life science field, can get an opportunity of studying “Machine Learning and Data Mining”, through this Challenge. And, to join this Challenge more easily, DDBJ provides NIG Supercomputer System as your computer resources.&lt;h2&gt;Participants&lt;/h2&gt;Anyone can participate in this Challenge. And if you hope, you can use NIG Supercomputer System for your data analysis. (Use of NIG Supercomputer System is subject to “<span class="font-bold"><a href="http://sc.ddbj.nig.ac.jp/index.php/en/criteria-for-issuing-user-login-accounts">Criteria for issuing user login accounts</a></span>”. Please read this page before applying NIG Supercomputer System.)&lt;h2&gt;Time Line and Due Dates&lt;/h2&gt;</p>
+<div id="mainbox" class="clearfix">
+    <div id="main_l">
+
+        <dl>
+            <dt><span class="icon_square"> Start Accepting Applications: June 27, 2016</span></dt>
+            <dd>NIG Supercomputer System application<br />NIG Supercomputer System OSS Installation request</dd>
+            <dt><span class="icon_square"> Start Date: July 6, 2016</span></dt>
+            <dt><span class="icon_square"> Deadline for Applications: August 21, 2016</span></dt>
+            <dd>NIG Supercomputer System application<br />NIG Supercomputer System OSS Installation request</dd>
+            <dt><span class="icon_square"> End Date: August 31, 2016</span></dt>
+            <dt><span class="icon_square"> Result: September 30, 2016</span></dt>
+        </dl>
+    </div>
+    <div id="main_r">
+
+        <dl>
+            <dt><a href="/assets/images/news/ddbj-challenge2016-e.png"><img src="/assets/images/news/ddbj-challenge2016-e-0.5.png" alt="ddbj-challenge2016-0.5" width="436" height="322" class="alignnone size-full wp-image-46020" /></a></dt>
+            <dt><span class="icon_d-triangle"></span> <a href="/assets/images/news/ddbj-challenge2016-e.png">DDBJ Data Analysis Challenge Schdule Detail</a></dt>
+        </dl>
+    </div>
+</div>
+<h2>Challenge Task</h2>
+<p>DNA Data Bank of Japan (DDBJ) supports a big data resource called by DDBJ Sequence Read Archive (DDBJ SRA), which contains DNA sequences genearated from high-throughput DNA sequencers. The secondary analytical database, ChIP-Atlas database (Dr.Oki of Kyushu Univ.) provides the annotation data of chromatin feature regions on genome sequences. At this challenge task, please predict whether genomic regions corresponding to input DNA sequences includes chromatin feature regions. Chromatin feature region is related to on-off function of gene expression, and corresponds to peak regions on a genome sequence of the ChIP-Atlas database. In the ChIP-Atlas database, a combination of tissue/celltype conditions (CellType class) and functional Type (Antigen class) are curated as one experimental condition. Challenge’s target species is a plant. The number of conditions for the target plant is often over 100. The number of conditions in the challenge is reduced and composed of eight conditions for saving time of try and error on data modelling.————————————Input training data: 60,000 DNA sequenceInput test data: 10,000 DNA sequenceOutput training data: 8 conditions correct answer sets ————————————-<span class="icon_d-triangle"> Input</span>One input sequence is composed of 200 bases, that is a ACGT sequence fragment with 200 length, where the sequence is encoded as 01 code [Example: AATGC … = 10001000000100100100 …] so that the length of a sequence is 800 digits.Corresponding code: A = 1000, C = 0100, G = 0010, T = 0001, Other exceptions = 0000 <span class="icon_d-triangle"> OutputOutput correct answer sets of 8 conditions is also encoded as 01 code. True answer is one, which means that the input DNA sequence contains chromatin feature regions.Likewise zero is false answer so that it does not include the chromatin feature region.On the submit stage, please submit the probability of true prediction with 10,000 rows (test axis) and 8 columns (condition axis) in BigData University website.</span></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;dl&gt;
+    &lt;dt&gt;&lt;span class="icon_square"&gt; Data&lt;/span&gt;&lt;/dt&gt;
+    &lt;dd&gt;(1) set up in &lt;a href="http://universityofbigdata.net/?lang=en" target="_blank"&gt;University of Big Data&lt;/a&gt; (DDBJ-challenge.mat)&lt;/dd&gt;
+    &lt;dd&gt;(2) NIG Supercomputer Phase2 /home/challenge/data/DDBJ-challenge.mat&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2&gt;Submit a Challenge&lt;/h2&gt;To submit a challenge, please enroll in "&lt;span class="font-bold"&gt;&lt;a href="http://universityofbigdata.net/?lang=en" target="_blank"&gt;University of Big Data&lt;/a&gt;&lt;/span&gt;". When you sign up, your Google account is required.Please submit the probability of true prediction with 10,000 rows (test axis) and 8 columns (condition axis) in University of Big Data website.When you submit a challenge, intermediate ranks and intermediate scores are displayed in University of Big Data website. Intermediate ranks are displayed by nickname.&lt;h2&gt;Challenge Award&lt;/h2&gt;We will announce the Top 3 DDBJ Challenge winners on September 30, 2016. (If you wish to remain anonymous, we will announce a nickname.) Final ranks will be released by nickname in University of Big Data website on September 1, 2016, 0:00 (JST).To submit a paper about the reports on DDBJ Data Analysis Challenge, the award winners join as a co-author. For this reason, the top three Challenge winners will be submit the report for the data model. Also, we will release their reports by online.We publish all DDBJ Data Analysis Challenge participant's nickname in Acknowledgments of a paper.&lt;span class="icon_d-triangle font-bold"&gt; &lt;a href="/news/en/wn160930-e.html"&gt;Award Winners of the DDBJ Data Analysis Challenge 2016&lt;/a&gt;&lt;/span&gt; (September 30)&lt;h2&gt;Use of NIG Supercomputer System&lt;/h2&gt;
+
+&lt;dl&gt;
+    &lt;dt&gt;&lt;span class="icon_square"&gt; NIG Supercomputer System application will be stated on June 27, 2016.&lt;/span&gt;&lt;/dt&gt;
+    &lt;dt&gt;&lt;span class="icon_square"&gt; NIG Supercomputer System application&lt;/span&gt;&lt;/dt&gt;
+    &lt;dd&gt;At the application, please read "&lt;span class="font-bold"&gt;&lt;a href="http://sc.ddbj.nig.ac.jp/index.php/en/criteria-for-issuing-user-login-accounts"&gt;Criteria for issuing user login accounts&lt;/a&gt;&lt;/span&gt;".&lt;/dd&gt;
+    &lt;dd&gt;We accept NIG Supercomputer System application request from June 27 to August 21, 2016 &lt;span class="font-bold"&gt;&lt;a href="http://sc.ddbj.nig.ac.jp/index.php/en/en-new-application"&gt;from here&lt;/a&gt;&lt;/span&gt;. Please fill in the Purpose of use, "&lt;span class="font-bold font-red"&gt;DDBJ Challenge&lt;/span&gt;". (&lt;span class="font-bold"&gt;&lt;a href="/assets/images/news/NIGSupRegistENG.png"&gt;example form&lt;/a&gt;&lt;/span&gt;)&lt;/dd&gt;
+    &lt;dd&gt;Your accout is valid until August 31, 2016(JST).&lt;/dd&gt;
+    &lt;dd&gt;If you would like to continue to use NIG Supercomputer System for your own Life Science research, please apply to renew your account &lt;span class="font-bold"&gt;&lt;a href="/address-e.html"&gt;from here&lt;/a&gt;&lt;/span&gt;.&lt;/dd&gt;
+    &lt;dd&gt;Please specify the following items, when you apply.&lt;/dd&gt;
+    &lt;dd&gt;&lt;span class="icon_d-triangle font-bold"&gt; Select topic: Please specify "NIG Supercomputer System".&lt;/span&gt;&lt;/dd&gt;
+    &lt;dd&gt;&lt;span class="icon_d-triangle font-bold"&gt; Subject: Application for Continuing DDBJ Challenge account&lt;/span&gt;&lt;/dd&gt;
+    &lt;dd&gt;&lt;span class="font-bold font-red"&gt;*&lt;/span&gt; At the end of each fiscal year, a report must be submitted on the results or progress made in using the NIG Supercomputer.&lt;/dd&gt;
+    &lt;dd&gt;We send the password by postal mail, within two weeks after your application.&lt;/dd&gt;
+    &lt;dd&gt;&lt;span class="font-bold font-red"&gt; If you already have NIG Supercomputer account&lt;/span&gt;: We create a group for DDBJ Data Analysis Challenge in Supercomputer account, please apply &lt;span class="font-bold"&gt;&lt;a href="https://docs.google.com/a/nig.ac.jp/forms/d/1HtpPS6OWQs2cAUkJle4hzKGBZnjQOFRgEGTNQEMMWJI/viewform?c=0&amp;amp;w=1" target="_blank"&gt;from here&lt;/a&gt;&lt;/span&gt;.&lt;/dd&gt;
+    &lt;dt&gt;&lt;span class="icon_square"&gt; NIG Supercomputer System OSS Installation request&lt;/span&gt;&lt;/dt&gt;
+    &lt;dd&gt;We accept NIG Supercomputer System OSS Installation request from June 27 to August 21, 2016 &lt;span class="font-bold"&gt;&lt;a href="http://sc.ddbj.nig.ac.jp/index.php/en/en-oss-install-aplication"&gt;from here&lt;/a&gt;&lt;/span&gt;.&lt;/dd&gt;
+    &lt;dd&gt;&lt;span class="font-bold font-red"&gt;*&lt;/span&gt; Please note that installation takes 7 - 10 days after sending your request, and in some cases installation is unavailable.&lt;/dd&gt;
+    &lt;dt&gt;&lt;span class="icon_square"&gt; Please refer the following site about basic procedures for using NIG Supercomputer System.&lt;/span&gt;&lt;/dt&gt;
+    &lt;dd&gt;&lt;span class="icon_d-triangle font-bold"&gt; &lt;a href="https://sc.ddbj.nig.ac.jp/index.php/en/en-howtouse"&gt;Login connection, submit SGE job&lt;/a&gt;&lt;/span&gt;&lt;/dd&gt;
+    &lt;dd&gt;&lt;span class="icon_d-triangle font-bold"&gt; &lt;a href="https://sc.ddbj.nig.ac.jp/index.php/programming#link20"&gt;Set up your programming environment&lt;/a&gt; (R, MATLAB, Python)&lt;/span&gt;&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2&gt;Use of MATLAB&lt;/h2&gt;During the period, MathWorks Japan Inc. provides software of MATLAB for DDBJ Data Analysis Challenge.
+
+&lt;dl&gt;
+    &lt;dt&gt;&lt;span class="icon_square"&gt; MATLAB is available only DDBJ Data Analysis Challenge participants.&lt;/span&gt;&lt;/dt&gt;
+    &lt;dt&gt;&lt;span class="icon_square"&gt; There are two ways to use MATLAB R2016a.&lt;/span&gt;&lt;/dt&gt;
+    &lt;dd&gt;(1) Install on local PC
+    &lt;dd&gt;(2) NIG Supercomputer GPU node&lt;/dd&gt;
+    &lt;/dd&gt;
+    &lt;dt&gt;&lt;span class="icon_square"&gt; Download MATLAB on local PC, please apply &lt;a href="https://jp.mathworks.com/academia/student-competitions/software-request-registration-data-analytics.html" target="_blank"&gt;from here&lt;/a&gt;.&lt;/span&gt;&lt;/dt&gt;
+    &lt;dd&gt;(It can be applied regardless of student.)&lt;/dd&gt;
+    &lt;dd&gt;Please specify the following items, when you apply.
+    &lt;dd&gt;&lt;span class="icon_d-triangle font-bold"&gt; University name: Please enter your company name or school name.&lt;/span&gt;&lt;/dd&gt;
+    &lt;dd&gt;&lt;span class="icon_d-triangle font-bold"&gt; Team name: Please enter your name or a nickname.&lt;/span&gt;&lt;/dd&gt;
+    &lt;dd&gt;&lt;span class="icon_d-triangle font-bold"&gt; Team member: Please enter "1".&lt;/span&gt;&lt;/dd&gt;
+    &lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2&gt;Contact us&lt;/h2&gt;
+
+&lt;dl&gt;
+    &lt;dt&gt;&lt;span class="icon_square"&gt; Question about DDBJ Data Analysis Challenge&lt;/span&gt;&lt;/dt&gt;
+    &lt;dt&gt;&lt;span class="icon_square"&gt; Question about NIG Supercomputer System application, OSS Installation request&lt;/span&gt;&lt;/dt&gt;
+    &lt;dd&gt;Please send your question from "&lt;span class="font-bold"&gt;&lt;a href="/address-e.html"&gt;Contact us&lt;/a&gt;&lt;/span&gt;" web form.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;h2&gt;Links&lt;/h2&gt;
+
+&lt;dl&gt;
+    &lt;dt&gt;&lt;span class="icon_square"&gt; &lt;a href="http://www.mathworks.com/solutions/machine-learning/index.html" target="_blank"&gt;Machine Learning Solution Page&lt;/a&gt;&lt;/span&gt;&lt;/dt&gt;
+    &lt;dt&gt;&lt;span class="icon_square"&gt; &lt;a href="http://www.mathworks.com/discovery/deep-learning.html"&gt;Deep Learning with MATLAB&lt;/a&gt;
+    &lt;dt&gt;
+    &lt;dt&gt;&lt;span class="icon_square"&gt; &lt;a href="http://jp.mathworks.com/help/nnet/examples/training-a-deep-neural-network-for-digit-classification.html" target="_blank"&gt;Training a Deep Neural Network for Digit Classification&lt;/a&gt; – Example Code for MATLAB&lt;/span&gt;&lt;/dt&gt;
+    &lt;dt&gt;&lt;span class="icon_square"&gt; &lt;a href="http://www.mathworks.com/videos/machine-learning-with-matlab-100694.html" target="_blank"&gt;Machine Learning Made Easy&lt;/a&gt; (Web Seminar)&lt;/span&gt;&lt;/dt&gt;
+    &lt;dt&gt;&lt;span class="icon_square"&gt; &lt;a href="http://jp.mathworks.com/videos/machine-learning-with-matlab-81984.html" target="_blank"&gt;Machine Learning with MATLAB&lt;/a&gt; (Web Seminar)&lt;/span&gt;&lt;/dt&gt;
+    &lt;/dt&gt; &lt;/span&gt;&lt;/dt&gt;
+</code></pre></div></div>
+<p>&lt;/dl&gt;</p>
+<h2>Corporate Sponsor</h2>
+
+<dl>
+    <dt><span class="icon_square"> <a href="http://mathworks.com/" target="_blank">Mathworks Japan</a></span></dt>
+    <dd>During the period, MathWorks Japan Inc. provides software of MATLAB for DDBJ Data Analysis Challenge.</dd>
+    <dd><span class="icon_d-triangle"> <a href="/files/news/Complimentary_Software_Offer.pdf" target="_blank">About license configuration</a></span></dd>
+</dl>
+<h2>DDBJ Challenge Committee</h2>
+<p><span class="icon_square"> <span class="font-bold">DDBJ Challenge Comittee</span></span>Eli Kaminuma, PhD : Center for Information Biology, National Institute of Genetics, Assistant ProfessorHisashi Kashima, PhD : Department of Intelligence Science and Technology, Kyoto University, ProfessorToshihisa Takagi, PhD : Center for Information Biology, National Institute of Genetics, ProfessorDDBJ Data Analysis Challenge has been approved ethical review by NIG Institutional Review Board (IRB).&lt;/span&gt;</p>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

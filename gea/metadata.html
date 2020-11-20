@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metadata</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">Metadata</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/gea">gea</a>
+          </li>
+          <li>
+            <a href="">Metadata</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/gea/index.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/gea/overview.html">Submission Overview</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/gea/submit-array.html">Submit microarray experiment</a>
+        </li>
+        
+        <li>
+          <a href="/gea/submit-sequence.html">Submit sequencing experiment</a>
+        </li>
+        
+        <li>
+          <a href="/gea/metadata.html">Metadata</a>
+        </li>
+        
+        <li>
+          <a href="/gea/datafile.html">Data File</a>
+        </li>
+        
+        <li>
+          <a href="/gea/validation.html">Validation</a>
+        </li>
+        
+        <li>
+          <a href="/gea/single-cell.html">Single-cell submission guide</a>
+        </li>
+        
+        <li>
+          <a href="/gea/example.html">Example</a>
+        </li>
+        
+        <li>
+          <a href="/gea/adf.html">Array Design</a>
+        </li>
+        
+        <li>
+          <a href="/gea/matrix.html">Data matrix</a>
+        </li>
+        
+        <li>
+          <a href="/gea/reviewer-access.html">Reviewer Access</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/ja/index.html">FAQ</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="http://aoe.dbcls.jp/">Search (AOE)</a>
+      
+      <ul>
+        
+        <li>
+          <a href="https://www.ebi.ac.uk/arrayexpress/browse.html">Search (ArrayExpress)</a>
+        </li>
+        
+        <li>
+          <a href="http://refex.dbcls.jp/">RefEx</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/gea">Downloads</a>
+      
+    </li>
+    
+    <li class="">
+      <a href="/gea/about-gea.html">About GEA</a>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="mage-tab-">MAGE-TAB <a name="mage-tab"></a></h2>
+
+<p>MicroArray Gene Expression Tabular (<a href="http://fged.org/projects/mage-tab/">MAGE-TAB</a>) は機能ゲノミクスデータを構造化・標準化された方法で表現するための研究者コミュニティで開発、採用された形式です。MAGE-TAB はデータの収集とアノテーションに加え、ArrayExpress や GEA といったデータベース間でデータを交換する用途にも使えるように設計されています。<a href="http://fged.org/projects/mage-tab/">MAGE-TAB の仕様書</a></p>
+
+<a class="group1" href="/assets/images/magetab/magetab_over.jpg" title="IDF，SDRF，ADFと生データファイル，解析処理されたデータファイル間の関係">
+  <figure class="image">
+    <img src="/assets/images/magetab/magetab_over.jpg" alt="IDF，SDRF，ADFと生データファイル，解析処理されたデータファイル間の関係" class="w450">
+    <figcaption>IDF，SDRF，ADFと生データファイル，解析処理されたデータファイル間の関係</figcaption>
+  </figure>
+</a>
+
+<h2 id="idf-">IDF <a name="idf"></a></h2>
+
+<p>IDF (Investigation Description Format) ファイルは実験デザイン、プロトコール、文献情報や登録者情報といった実験全体を記述するファイルです。</p>
+
+<h3 id="idf-例-">IDF 例 <a name="idf_ex"></a></h3>
+
+<p><a href="https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=0">IDF の例</a></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="#Comment_idf">Comment[GEAAccession]</a></td>
+      <td>E-GEAD-369</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>MAGE-TAB Version</td>
+      <td>1.1</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Investigation_Title">Investigation Title</a></td>
+      <td>Transcriptional profiling of Arabidopsis leaves exposed to elevated temperature</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Experiment_Description">Experiment Description</a></td>
+      <td>We investigated genome-wide … biological replicates were analyzed.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Experimental_Design">Experimental Design</a></td>
+      <td>stimulus or stress design</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Experimental_Factor_Name">Experimental Factor Name</a></td>
+      <td>temperature</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Experimental_Factor_Type">Experimental Factor Type</a></td>
+      <td>temperature</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Person_Last_Name">Person Last Name</a></td>
+      <td>Test</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Person_First_Name">Person First Name</a></td>
+      <td>Tarou</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Person_Affiliation">Person Affiliation</a></td>
+      <td>DDBJ Center, National Institute of Genetics</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Person_Roles">Person Roles</a></td>
+      <td>submitter</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Public_Release_Date">Public Release Date</a></td>
+      <td>2018-06-22</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#PubMed_ID">PubMed ID</a></td>
+      <td>29040613</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Protocol_Name">Protocol Name</a></td>
+      <td>P-GEAD-535</td>
+      <td>…</td>
+    </tr>
+    <tr>
+      <td><a href="#Protocol_Type">Protocol Type</a></td>
+      <td>sample collection protocol</td>
+      <td>…</td>
+    </tr>
+    <tr>
+      <td><a href="#Protocol_Description">Protocol Description</a></td>
+      <td>Plants were sown on GM medium … 22 degrees celsius.</td>
+      <td>…</td>
+    </tr>
+    <tr>
+      <td><a href="#SDRF_File">SDRF File</a></td>
+      <td>E-GEAD-369.sdrf.txt</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Comment_idf">Comment[Number of channel]</a></td>
+      <td>single-channel</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Comment_idf">Comment[Array Design REF]</a></td>
+      <td>A-AFFY-2</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Comment_idf">Comment[AEExperimentType]</a></td>
+      <td>transcription profiling by array</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Comment_idf">Comment[BioProject]</a></td>
+      <td>PRJDB3647</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Comment_idf">Comment[Public Release Date]</a></td>
+      <td>2018-06-22</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="#Comment_idf">Comment[Last Update Date]</a></td>
+      <td>2018-06-22</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="idf-タグ-">IDF タグ <a name="idf_tags"></a></h3>
+
+<p>IDF はタグと対応する値が組み合わされたタブ区切りテキストファイルです。例えば “Experiment Description” には Experiment のフリーテキストでの説明を記載します。一つ以上の値が許容されているフィールド、例えばプロトコール、登録者や experimental factor は一つの IDF ファイルで複数定義することができます（値はタブで区切ります）。一つの値しか持てないフィールドは以下に示してあります。</p>
+
+<dl>
+  <dt><a href="#Investigation_Title">Investigation Title</a><a name="Investigation_Title"></a></dt>
+  <dd>研究全体に付けるタイトル。このタグは１つの値しか持てません。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Experimental_Design">Experimental Design</a><a name="Experimental_Design"></a></dt>
+  <dd>実験のデザイン。<a href="https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=1804523015">controlled term</a> から該当するものを選びます。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt>Experimental Factor Name<a name="Experimental_Factor_Name"></a></dt>
+  <dd>実験の Experimental factor は実験の変数 (growth condition, genotype, organism part 等) です。Factor の値は SDRF の “Factor Value[&lt;factor name&gt;]” カラムに記入します。GEA は SDRF の Factor value の名前を IDF にコピーします。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt>Experimental Factor Type<a name="Experimental_Factor_Type"></a></dt>
+  <dd>Experimental factor の type。GEA では Experimental Factor Name を Experimental Factor Type として使っています。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Person_Last_Name">Person Last Name</a><a name="Person_Last_Name"></a></dt>
+  <dd>登録者のラストネーム (公開されます)。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Person_First_Name">Person First Name</a><a name="Person_First_Name"></a></dt>
+  <dd>登録者のファーストネーム (公開されます)。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Person_Mid_Initials">登録者のミドルネーム (公開されます)。</a><a name="Person_Mid_Initials"></a></dt>
+  <dd>
+    <p></p>
+    <!-- end list -->
+  </dd>
+  <dt><a href="#Person_Affiliation">Person Affiliation</a><a name="Person_Affiliation"></a></dt>
+  <dd>登録者の所属する組織 (公開されます)。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Person_Roles">Person Roles</a><a name="Person_Roles"></a></dt>
+  <dd>Person の役割。GEA では “submitter” のみ使用可能です。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Public_Release_Date">Public Release Date</a><a name="Public_Release_Date"></a></dt>
+  <dd>データの初回公開日。日付は “YYYY-MM-DD” 形式で記入します (例: 2011-10-10)。このフィールドは１つの値しか持てません。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#PubMed_ID">PubMed ID</a><a name="PubMed_ID"></a></dt>
+  <dd>登録データを引用している文献の PubMed ID。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Publication_DOI">Publication DOI</a><a name="Publication_DOI"></a></dt>
+  <dd>登録データを引用している文献の Digital Object Identifier (DOI)。PubMed ID がある場合は PubMed ID を記載します。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Experiment_Description">Experiment Description</a><a name="Experiment_Description"></a></dt>
+  <dd>実験をフリーテキストで記述します。このフィールドは１つの値しか持てません。説明文は「実験で何をしたか」を明確に説明します。この説明文はキュレータがデータをチェックする上で役に立ちます。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt>Protocol Name<a name="Protocol_Name"></a></dt>
+  <dd>プロトコールの名前。プロトコールは SDRF の “Protocol REF” カラムでプロトコールの一時的な ID (例 ESUB000350_Protocol_1) もしくはアクセッション番号 (例 P-GEAD-100) で参照されます。GEA は Experiment を跨ったプロトコールの参照をサポートしていません。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt>Protocol Type<a name="Protocol_Type"></a></dt>
+  <dd>プロトコールの種類。事前に定義されている type は以下になります。Microarray と Sequencing experiment で<a href="https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=961166619">必須 protocol セット</a>が異なります。
+
+    <ul>
+      <li>array scanning and feature extraction protocol</li>
+      <li>conversion protocol</li>
+      <li>dissection protocol</li>
+      <li>growth protocol</li>
+      <li>high throughput sequence alignment protocol</li>
+      <li>normalization data transformation protocol</li>
+      <li>nucleic acid extraction protocol</li>
+      <li>nucleic acid hybridization to array protocol</li>
+      <li>nucleic acid labeling protocol</li>
+      <li>nucleic acid library construction protocol</li>
+      <li>nucleic acid sequencing protocol</li>
+      <li>sample collection protocol</li>
+      <li>treatment protocol</li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Protocol_Description">Protocol Description</a><a name="Protocol_Description"></a></dt>
+  <dd>プロトコールをフリーテキストで記述します。このテキストはタブで区切られた１フィールド内に収めます。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#SDRF_File">SDRF File</a><a name="SDRF_File"></a></dt>
+  <dd>IDF に随伴する SDRF ファイル名。GEA は自動的にファイル名を埋め込みます。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Comment_idf">Comment[&lt;user-defined tag&gt;]</a><a name="Comment_idf"></a></dt>
+  <dd>ユーザもしくはアーカイブが独自に定義するフィールド。GEA は以下の Comment タグを使っています。
+
+    <ul>
+      <li>Comment[GEAAccession]</li>
+      <li>Comment[AEExperimentType]</li>
+      <li>Comment[Number of channel]</li>
+      <li>Comment[Array Design REF]</li>
+      <li>Comment[BioProject]</li>
+      <li>Comment[Public Release Date]</li>
+      <li>Comment[Last Update Date]</li>
+      <li>Comment[AdditionalFile:TXT]</li>
+    </ul>
+  </dd>
+</dl>
+
+<h2 id="sdrf-">SDRF <a name="sdrf"></a></h2>
+
+<p>SDRF (Sample and Data Relationship Format) サンプル属性及びサンプル、アレイ、データファイル間の関係性を記述します。SDRF は機能ゲノミクス実験の自然な流れを再現できるように構成されています。SDRF は用いられた大元の Source サンプルから始まり、最後はサンプルから得られたデータファイルで終わります。Single-channel のマイクロアレイ実験ではSDRF１行が１ハイブリダイゼーションに対応します。Two-channel マイクロアレイでは１行は１チャンネルに対応します。シークエンシング実験では１行は基本的に１生データファイル（Run、ペアードシークエンスを含む）に対応します。</p>
+
+<a class="group1" href="/assets/images/magetab/sdrf.jpg" title="SDRF の全体構造">
+  <figure class="image">
+    <img src="/assets/images/magetab/sdrf.jpg" alt="SDRF の全体構造" class="w450">
+    <figcaption>SDRF の全体構造</figcaption>
+  </figure>
+</a>
+
+<h3 id="sdrf-セクション-">SDRF セクション <a name="sdrf_sections"></a></h3>
+
+<dl>
+  <dt><a href="#Protocols_section">Protocols</a><a name="Protocols_section"></a></dt>
+  <dd>多くの場合実験における「処理（Treatment）」は IDF で定義された <a href="#Protocol_Name">Protocol Name</a> を参照する <a href="#Protocol_REF">Protocol REF</a> カラムで表されます。</dd>
+</dl>
+
+<p>アクセッション番号が発行される前の段階では IDF で定義されたプロトコールには一時的な ID (例 ESUB000001_Protocol_1) がアサインされ、SDRF からはこの ID で参照されます。アクセッション番号発行後、これらのプロトコールはアクセッション番号 (P-GEAD-n) で参照されます。</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="#Protocol_Name">Protocol Name</a></td>
+      <td>ESUB000500_Protocol_1</td>
+      <td>ESUB000500_Protocol_2</td>
+    </tr>
+    <tr>
+      <td><a href="#Protocol_Type">Protocol Type</a></td>
+      <td>nucleic acid extraction protocol</td>
+      <td>labelling protocol</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>SDRF は以下のようになります。</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="#Protocol_REF">Protocol REF</a></td>
+      <td><a href="#Protocol_REF">Protocol REF</a></td>
+    </tr>
+    <tr>
+      <td>OSUB000500_Protocol_2</td>
+      <td>OSUB000500_Protocol_3</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Sources_section">Sources</a><a name="Sources_section"></a></dt>
+  <dd>Source は実験の出発材料です。このセクションは <a href="#Source_Name">Source Name</a> カラムで始まり、典型的にはいくつかの <a href="#Characteristics">Characteristics</a> カラムが続きます。</dd>
+</dl>
+
+<div class="attention red">
+  <p>GEA の登録システムでは対応する BioSample の sample_name が Source Name、Extract Name、Labeled Extract Name と Assay Name に共通で使用されます。</p>
+</div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="#Source_Name">Source Name</a></td>
+      <td><a href="#Characteristics">Characteristics[organism]</a></td>
+      <td><a href="#Characteristics">Characteristics[ecotype]</a></td>
+    </tr>
+    <tr>
+      <td>Arabidopsis control for heat stress_rep 1</td>
+      <td>Arabidopsis thaliana</td>
+      <td>Col-0</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>追加で Source Name を注釈するカラム: <a href="#Provider">Provider</a> と <a href="#Comment_sdrf">Comment</a>.</p>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Extracts_section">Extracts</a><a name="Extracts_section"></a></dt>
+  <dd>Extract は実験で抽出された核酸のことです。</dd>
+</dl>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="#Source_Name">Source Name</a></td>
+      <td><a href="#Protocol_REF">Protocol REF</a></td>
+      <td><a href="#Extract_Name">Extract Name</a></td>
+      <td><a href="#Material_Type">Material Type</a></td>
+    </tr>
+    <tr>
+      <td>Arabidopsis control for heat stress_rep 1</td>
+      <td>OSUB000500_Protocol_2</td>
+      <td>Arabidopsis control for heat stress_rep 1</td>
+      <td>total RNA</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Extracts を注釈するカラム: <a href="#Characteristics">Characteristics[]</a>、<a href="#Material_Type">Material Type</a> と <a href="#Comment_sdrf">Comment</a>。</p>
+
+<!-- end list -->
+
+<dl>
+  <dt>Labeled Extracts<a name="Labeled_Extracts_section"></a></dt>
+  <dd>Labeled Extracts アレイにハイブリダイズする前にラベルされた核酸のことです。マイクロアレイ実験ではどのサンプルにどのラベル（スキャナーのチャンネル）が対応するか記述する <a href="#Label">Label</a> カラムが <a href="#Labeled_Extract_Name">Labeled Extract Name</a> カラムに付加されている必要があります。</dd>
+</dl>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="#Extract_Name">Extract Name</a></td>
+      <td><a href="#Material_Type">Material Type</a></td>
+      <td><a href="#Protocol_REF">Protocol REF</a></td>
+      <td><a href="#Labeled_Extract_Name">Labeled Extract Name</a></td>
+      <td><a href="#Label">Label</a></td>
+    </tr>
+    <tr>
+      <td>Arabidopsis control for heat stress_rep 1</td>
+      <td>total RNA</td>
+      <td>OSUB000500_Protocol_3</td>
+      <td>Arabidopsis control for heat stress_rep 1</td>
+      <td>biotin</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Labeled Extract を注釈するカラム:
+<a href="#Characteristics">Characteristics[]</a>、<a href="#Material_Type">Material
+Type</a> と <a href="#Comment_sdrf">Comment</a>。</p>
+
+<!-- end list -->
+
+<dl>
+  <dt>Assays<a name="Assays_section"></a></dt>
+  <dd>Labeled extract のアレイへのハイブリダイゼーション、もしくは、ライブラリーのシークエンシングは SDRFにおいて「材料（material）」と「データ（data）」セクションをつなぐ要となるステップです。マイクロアレイ実験ではアレイデザインを示す<a href="#Array_Design_REF">Array Design REF</a> カラムが <a href="#Assay_Name">Assay Name</a> に付加されている必要があります。</dd>
+</dl>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="#Labeled_Extract_Name">Labeled Extract Name</a></td>
+      <td><a href="#Label">Label</a></td>
+      <td><a href="#Assay_Name">Assay Name</a></td>
+      <td><a href="#Technology_Type">Technology Type</a></td>
+      <td><a href="#Array_Design_REF">Array Design REF</a></td>
+    </tr>
+    <tr>
+      <td>Arabidopsis control for heat stress_rep 1</td>
+      <td>biotin</td>
+      <td>Arabidopsis control for heat stress_rep 1</td>
+      <td>array assay</td>
+      <td>A-AFFY-2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Assay Name カラムを注釈する <a href="#Comment_sdrf">Comment</a> カラムを含めることができます。Assay Name カラムの値は <a href="/gea/matrix.html">Data Matrix</a> ファイル中でデータカラムと個々のアッセイをリンクするのに使われることがあることに注意が必要です。</p>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Raw_Data_Files_section">Raw Data Files</a><a name="Raw_Data_Files_section"></a></dt>
+  <dd>生データファイルは <a href="#Assay_Name">Assay Name</a> カラムに続く <a href="#Array_Data_File">Array Data File</a> カラムにリストする必要があります。</dd>
+</dl>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="#Assay_Name">Assay Name</a></td>
+      <td><a href="#Technology_Type">Technology Type</a></td>
+      <td><a href="#Array_Design_REF">Array Design REF</a></td>
+      <td><a href="#Array_Data_File">Array Data File</a></td>
+    </tr>
+    <tr>
+      <td>Arabidopsis control for heat stress_rep 1</td>
+      <td>array assay</td>
+      <td>A-AFFY-2</td>
+      <td>Arabidopsis_control_rep_1.CEL</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>生データファイルに関する情報を補足するのに <a href="#Comment_sdrf">Comment</a> カラムを使うことができます。</p>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Processed_Data_Files_section">Processed Data Files</a><a name="Processed_Data_Files_section"></a></dt>
+  <dd>マイクロアレイとシークエンシング実験の両方において生データから派生した解析済みデータファイルは <a href="#Derived_Array_Data_File">Derived Array DataFile</a>カラムにリストします。アッセイ毎に一つの解析済みデータファイルがある場合にこのカラムを使います。複数アッセイからのデータが含まれている場合は解析済みデータファイルを <a href="/gea/matrix.html">Data Matrix format</a> に変換しこのカラムではなく <a href="#Derived_Array_Data_Matrix_File">Derived Array Data Matrix File</a> カラムにファイル名を記載します。</dd>
+</dl>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="#Assay_Name">Assay Name</a></td>
+      <td><a href="#Technology_Type">Technology Type</a></td>
+      <td><a href="#Array_Design_REF">Array Design REF</a></td>
+      <td><a href="#Array_Data_File">Array Data File</a></td>
+      <td><a href="#Derived_Array_Data_File">Derived Array Data File</a></td>
+    </tr>
+    <tr>
+      <td>Arabidopsis control for heat stress_rep 1</td>
+      <td>array assay</td>
+      <td>A-AFFY-2</td>
+      <td>Arabidopsis_control_rep_1.CEL</td>
+      <td>Arabidopsis_control_rep_1.processed.txt</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Factor_Values_section">Factor Values</a><a name="Factor_Values_section"></a></dt>
+  <dd>Factor valueは実験で解析対象になっている変数のことです。例えば異なる温度（熱ストレス）が培養細胞に与える影響を調べている場合、単位を示す “Unit” カラムが付いた “temparature” が Factor value になります。</dd>
+</dl>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="#Source_Name">Source Name</a></td>
+      <td><a href="#Comment_sdrf">Comment[description]</a></td>
+      <td><a href="#Assay_Name">Assay Name</a></td>
+      <td><a href="#Factor_Value">Factor Value[temparature]</a></td>
+      <td><a href="#Unit">Unit[temperature unit]</a></td>
+    </tr>
+    <tr>
+      <td>Arabidopsis control for heat stress rep 1</td>
+      <td>Arabidopsis control for heat stress, biological replicate 1</td>
+      <td>Arabidopsis control for heat stress rep 1</td>
+      <td>22</td>
+      <td>degree_C</td>
+    </tr>
+    <tr>
+      <td>Arabidopsis heat stress rep 1</td>
+      <td>Arabidopsis heat stress, biological replicate 1</td>
+      <td>Arabidopsis heat stress rep 1</td>
+      <td>37</td>
+      <td>degree_C</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Factor value は通常 SDRF の他のカラムと重複します。”Factor Value” カラムは <a href="#Characteristics">Characteristics[]</a> カラムと重複することが多いです。</p>
+
+<p>Factor Value カラムは SDRF の最後（最も右）に配置する必要があります。</p>
+
+<p>GEA は IDF で変数を “Experimental Factor Name” と Type（通常 Name と同じ）として定義します。</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="#Experimental_Factor_Name">Experimental Factor Name</a></td>
+      <td>temperature</td>
+    </tr>
+    <tr>
+      <td><a href="#Experimental_Factor_Type">Experimental Factor Type</a></td>
+      <td>temperature</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="有効な-sdrf-カラムヘッダー-">有効な SDRF カラムヘッダー <a name="SDRF_headings"></a></h3>
+
+<dl>
+  <dt><a href="#Source_Name">Source Name</a><a name="Source_Name"></a></dt>
+  <dd>MAGE-TAB で identifier として使われます。このカラムには <a href="#Sources_section">Source</a> material に対してユーザが定義する値 (デフォルトでは対応する BioSample の sample_name が使われます) を記入します。以下のカラムが “Source Name” を注釈するのに使えます。
+
+    <ul>
+      <li><a href="#Characteristics">Characteristics[]</a></li>
+      <li><a href="#Provider">Provider</a></li>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Sample_Name">Sample Name</a><a name="Sample_Name"></a></dt>
+  <dd>MAGE-TAB で identifier として使われます。このカラムには <a href="#Sources_section">Sample</a> material に対してユーザが定義する値 (デフォルトでは対応する BioSample の sample_name が使われます) を記入します。以下のカラムが “Sample Name” を注釈するのに使えます。
+
+    <ul>
+      <li><a href="#Characteristics">Characteristics[]</a></li>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Extract_Name">Extract Name</a><a name="Extract_Name"></a></dt>
+  <dd>MAGE-TAB で identifier として使われます。このカラムには <a href="#Extracts_section">Extract</a> material に対してユーザが定義する値 (デフォルトでは対応する BioSample の sample_name が使われます) を記入します。以下のカラムが “Extract Name” を注釈するのに使えます。
+
+    <ul>
+      <li><a href="#Material_Type">Material Type</a></li>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Labeled_Extract_Name">Labeled Extract Name</a><a name="Labeled_Extract_Name"></a></dt>
+  <dd>MAGE-TAB で identifier として使われます。このカラムには <a href="#Labeled_Extracts_section">Labeled Extract</a> material に対してユーザが定義する値
+(デフォルトでは対応する BioSample の sample_name が使われます) を記入します。以下のカラムが “Labeled Extract Name” を注釈するのに使えます。
+
+    <ul>
+      <li><a href="#Label">Label</a> (required for array submissions)</li>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Assay_Name">Assay Name</a><a name="Assay_Name"></a></dt>
+  <dd>MAGE-TAB で identifier として使われます。このカラムには <a href="#Assays_section">Assay</a> に対してユーザが定義する値 (デフォルトでは対応する BioSample の sample_name が使われます) を記入します。以下のカラムが “Assay Name” を注釈するのに使えます。
+
+    <ul>
+      <li><a href="#Array_Design_REF">Array Design REF</a> (required for array
+submissions)</li>
+      <li><a href="#Technology_Type">Technology Type</a> (“array assay” for
+microarray and “sequencing assay” for sequencing experiment)</li>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<p>All “Assay Name” columns must be followed by a “Technology Type” column.</p>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Scan_Name">Scan Name</a><a name="Scan_Name"></a></dt>
+  <dd>MAGE-TAB で identifier として使われます。このカラムには <a href="#Assays_section">Scan</a> イベントに対してユーザが定義する値 (デフォルトでは対応する BioSample の sample_name が使われます) を記入します。以下のカラムが “Scan Name” を注釈するのに使えます。
+
+    <ul>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Normalization_Name">Normalization Name</a><a name="Normalization_Name"></a></dt>
+  <dd>MAGE-TAB で identifier として使われます。このカラムには <a href="#Processed_Data_Files_section">Normalization</a> イベントに対してユーザが定義する値 (デフォルトでは対応する BioSample の sample_name が使われます) を記入します。以下のカラムが “Normalization Name” を注釈するのに使えます。
+
+    <ul>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Array_Data_File">Array Data File</a><a name="Array_Data_File"></a></dt>
+  <dd>このカラムは<a href="#Raw_Data_Files_section">生データファイル</a>を SDRF １行について１ファイルリストして個々のアッセイとデータファイルを結びつけるのに使います。以下のカラムが “Array Data File” カラムを注釈するのに使えます。
+
+    <ul>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Derived_Array_Data_File">Derived Array Data File</a><a name="Derived_Array_Data_File"></a></dt>
+  <dd>このカラムはマイクロアレイとシークエンシング実験において<a href="#Processed_Data_Files_section">解析済みデータファイル</a>を SDRF １行について１ファイルリストして個々のアッセイと解析済みデータファイルを結びつけるのに使います。以下のカラムが “Derived Array Data File” カラムを注釈するのに使えます。
+
+    <ul>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Array_Data_Matrix_File">Array Data Matrix File</a><a name="Array_Data_Matrix_File"></a></dt>
+  <dd>このカラムではマイクロアレイとシークエンシング実験において複数アッセイからのデータを含む生データファイルを記載します。データとアッセイは <a href="/gea/matrix.html">Data Matrix</a> 形式ファイル中で対応付けられます。以下のカラムが “Array Data Matrix File” カラムを注釈するのに使えます。
+
+    <ul>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Derived_Array_Data_Matrix_File">Derived Array Data Matrix File</a><a name="Derived_Array_Data_Matrix_File"></a></dt>
+  <dd>このカラムではマイクロアレイとシークエンシング実験において複数アッセイからのデータを含む解析済みデータファイルを記載します。データとアッセイ（もしくは Scan や Normalization） は <a href="/gea/matrix.html">Data Matrix</a> 形式ファイル中で対応付けられます。以下のカラムが “Derived Array Data Matrix File” カラムを注釈するのに使えます。
+
+    <ul>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Array_Design_REF">Array Design REF</a><a name="Array_Design_REF"></a></dt>
+  <dd>このカラムはアッセイで使われたアレイデザインを参照します。GEA 登録では ArrayExpress/GEA アレイデザインアクセッション番号（例”A-AFFY-2”）、もしくは、番号が無い場合はアレイデザインファイル名を記載します。アレイデザインアクセッション番号は <a href="https://www.ebi.ac.uk/arrayexpress/arrays/browse.html">ArrayExpress array design search page</a> で検索できます。以下のカラムが “Array Design REF” カラムを注釈するのに使えます。
+
+    <ul>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Protocol_REF">Protocol REF</a><a name="Protocol_REF"></a></dt>
+  <dd>このカラムは IDF で定義された <a href="#Protocol_Name">Protocol Names</a> への参照を記載します。アクセッション番号発行前はプロトコールは “ESUB000500_Protocol_1” のような一時的な ID で参照されます。アクセッション番号発行後、この ID は “P-GEAD-100” のようなプロトコールアクセッション番号で置換されます。以下のカラムが “Protocol REF” カラムを注釈するのに使えます。
+
+    <ul>
+      <li><a href="#Parameter_Value">Parameter Value[]</a></li>
+      <li><a href="#Performer">Performer</a></li>
+      <li><a href="#Date">Date</a></li>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Characteristics">Characteristics[&lt;category term&gt;]</a><a name="Characteristics"></a></dt>
+  <dd>Controlled vocabulary term もしくは測定値を記載します。<a href="#Source_Name">Source Name</a>、<a href="#Sample_Name">Sample Name</a>、<a href="#Extract_Name">Extract Name</a> もしくは <a href="#Labeled_Extract_Name">Labeled Extract Name</a> の属性カラムとして使われます。ヘッダー中に示されるカテゴリーに従った属性値を記入して material を記述します。例えば “Characteristics[organism]” は　”Homo sapiens”　等の生物名を含みます。デフォルトでは登録者が値を定義しますが、外部オントロジーの値 (例えば organism name に対する <a href="https://www.ncbi.nlm.nih.gov/taxonomy">NCBI Taxonomy</a>)や計測値 (Unit[] カラムで単位を掲示) を記入することもあります。以下のカラムが “Characteristics[<category term="">]" カラムを注釈するのに使えます。
+</category>
+    <ul>
+      <li><a href="#Term_Source_REF">Term Source REF</a></li>
+      <li><a href="#Unit">Unit[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Provider">Provider</a><a name="Provider"></a></dt>
+  <dd><a href="#Source_Name">Source Name</a> を注釈するカラムとして使えます。Source が由来する組織名や提供者名を記載します。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Material_Type">Material Type</a><a name="Material_Type"></a></dt>
+  <dd><a href="https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=986287710">Controlled vocabulary term</a>。<a href="#Source_Name">Source Name</a>、<a href="#Sample_Name">Sample Name</a>、<a href="#Extract_Name">Extract Name</a> もしくは <a href="#Labeled_Extract_Name">Labeled Extract Name</a> を注釈するカラムとして使えます。このカラムには以下の選択肢から各 material を記述する語句を記入します。
+
+    <ul>
+      <li>total RNA</li>
+      <li>polyA RNA</li>
+      <li>cytoplasmic RNA</li>
+      <li>nuclear RNA</li>
+      <li>genomic DNA</li>
+      <li>protein</li>
+      <li>other</li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Label">Label</a><a name="Label"></a></dt>
+  <dd>Controlled vocabulary term. <a href="#Labeled_Extract_Name">Labeled Extract Name</a> を注釈するカラムとして使えます。抽出核酸を標識して Labeled Extract を生成したラベル化合物名を記入します。例: Cy3、Cy5、biotin、alexa_546。 以下のカラムが “Label” カラムを注釈するのに使えます。
+
+    <ul>
+      <li><a href="#Term_Source_REF">Term Source REF</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Technology_Type">Technology Type</a><a name="Technology_Type"></a></dt>
+  <dd><a href="https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=156878890">Controlled vocabulary term</a>。 <a href="#Assay_Name">Assay Name</a> カラムを注釈するカラムとして使います。GEA はマイクロアレイ実験に対して “array assay”、シークエンシング実験に対して “sequencing assay” を自動で埋め込みます。以下のカラムが “Technology Type” カラムを注釈するのに使えます。
+
+    <ul>
+      <li><a href="#Term_Source_REF">Term Source REF</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Factor_Value">Factor Value[&lt;experiment factor name&gt;]</a><a name="Factor_Value"></a></dt>
+  <dd>Controlled vocabulary term もしくは計測値。このカラムでは SDRF の各行の experimental factor values (変数) を記載します。Factor value の変数名をヘッダー中に Experimental Factor Name として定義します。</dd>
+</dl>
+
+<p>Example SDRF:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="#Factor_Value">Factor Value[tissue]</a></td>
+    </tr>
+    <tr>
+      <td>gall bladder</td>
+    </tr>
+    <tr>
+      <td>kidney</td>
+    </tr>
+    <tr>
+      <td>liver</td>
+    </tr>
+    <tr>
+      <td>intestine</td>
+    </tr>
+    <tr>
+      <td>pancreas</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>上の例では tissue という変数の値が記載されています。さらに詳細に値を定義するために任意の形式として “Factor Value[]()” を用いることができます。例 “Factor Value[growthconditionEF](Nutrients)”。</p>
+
+<p>変数の組み合わせが解析された場合、一つ以上の Factor Value を記述します。SDRF の例:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="#Factor_Value">Factor Value[compound]</a></td>
+      <td><a href="#Factor_Value">Factor Value[dose]</a></td>
+      <td><a href="#Unit">Unit[molar mass unit]</a></td>
+    </tr>
+    <tr>
+      <td>none</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>potassium cyanide</td>
+      <td>25</td>
+      <td>micromolar</td>
+    </tr>
+    <tr>
+      <td>potassium cyanide</td>
+      <td>35</td>
+      <td>micromolar</td>
+    </tr>
+    <tr>
+      <td>potassium cyanide</td>
+      <td>50</td>
+      <td>micromolar</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Factor name は組になる IDF で定義します（GEA は SDRF 中の Factor name を IDF にコピーします）:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="#Experimental_Factor_Name">Experimental Factor Name</a></td>
+      <td>tissue</td>
+    </tr>
+    <tr>
+      <td><a href="#Experimental_Factor_Type">Experimental Factor Type</a></td>
+      <td>tissue</td>
+    </tr>
+  </tbody>
+</table>
+
+<dl>
+  <dt><a href="#Performer">Performer</a><a name="Performer"></a></dt>
+  <dd><a href="#Protocol_REF">Protocol REF</a> に続く注釈カラムとして使うことができます。プロトコールが実施された組織名もしくは研究者名を記載します。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Date">Date</a><a name="Date"></a></dt>
+  <dd><a href="#Protocol_REF">Protocol REF</a> に続く注釈カラムとして使うことができます。プロトコールの実施日（とあれば時間）を “YYYY-MM-DD” 形式で記載します。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Parameter_Value">Parameter Value[&lt;protocol parameter&gt;]</a><a name="Parameter_Value"></a></dt>
+  <dd><a href="#Protocol_REF">Protocol REF</a> に続く注釈カラムとして使うことができます。このカラムはカラムヘッダー中に含まれるプロトコールのパラメータを記述するのに使うことができます。以下のカラムが “Parameter Value” カラムを注釈するのに使えます。
+
+    <ul>
+      <li><a href="#Unit">Unit[]</a></li>
+      <li><a href="#Term_Source_REF">Term Source REF</a></li>
+      <li><a href="#Comment_sdrf">Comment[]</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<p>例えば “Array Hybridization” という名のプロトコールが Protocol Parameters “hyb temp” と共に IDF で定義されている場合、以下のような記載をすることができます。</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="#Protocol_REF">Protocol REF</a></td>
+      <td><a href="#Parameter_Value">Parameter Value[hyb temp]</a></td>
+      <td><a href="#Unit">Unit[temperature unit]</a></td>
+    </tr>
+    <tr>
+      <td>Array Hybridization</td>
+      <td>55</td>
+      <td>degree celsius</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Unit">Unit[&lt;unit category&gt;]</a><a name="Unit"></a></dt>
+  <dd>Controlled vocabulary term。<a href="#Characteristics">Characteristics[]</a>、<a href="#Factor_Value">Factor Value[]</a> もしくは <a href="#Parameter_Value">Parameter
+Value[]</a> に続く注釈カラムとして使うことができます。このカラムは先行するカラムの単位を示すために使います。単位の種類はカラムヘッダー中に “Unit[volume unit]” のように示します。種類は <a href="/efo/">EFO</a> の <a href="http://purl.obolibrary.org/obo/UO_0000000">Unit</a> サブクラスから適切なものを記載します。以下のカラムが “Unit[&lt;unit category&gt;]” カラムを注釈するのに使えます。
+
+    <ul>
+      <li><a href="#Term_Source_REF">Term Source REF</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<p>このケースにおいて Term Source REF は Unit の値が由来するオントロジーを示すのに使います。</p>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Description">Description</a><a name="Description"></a></dt>
+  <dd><a href="#Source_Name">Source Name</a>、<a href="#Sample_Name">Sample Name</a>、<a href="#Extract_Name">Extract Name</a> もしくは <a href="#Labeled_Extract_Name">Labeled Extract Name</a> を注釈するカラムとして使うことができます。対応する material に対するフリーテキストでの説明を記載します。できるだけこのカラムは使わずに <a href="#Characteristics">Characteristics[]</a> カラムを使って構造的に material を記述します。</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Term_Source_REF">Term Source REF</a><a name="Term_Source_REF"></a></dt>
+  <dd>どのような controlled vocabulary カラム (例 <a href="#Characteristics">Characteristics[]</a>)、もしくは、外部エンティティを参照できるカラム (例 <a href="#Protocol_REF">Protocol REF</a>) に対しても使うことができます。このカラムは先行するカラム中の値が由来する IDF で定義されたオントロジーやデータベースを参照することができます。以下のカラムが “Term Source REF” カラムを注釈するのに使えます。<span class="red">GEA では ArrayExpress のように登録時点で構造化してオントロジーを適用することはしていません。</span>
+
+    <ul>
+      <li><a href="#Term_Accession_Number">Term Accession Number</a></li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Term_Accession_Number">Term Accession Number</a><a name="Term_Accession_Number"></a></dt>
+  <dd><a href="#Term_Source_REF">Term Source REF</a> カラムを注釈するカラムとして使うことができます。オントロジーやデータベース中の記入された値に対するアクセッション番号を記入します。例:</dd>
+</dl>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="#Source_Name">Source Name</a></td>
+      <td><a href="#Characteristics">Characteristics[disease]</a></td>
+      <td><a href="#Term_Source_REF">Term Source REF</a></td>
+      <td><a href="#Term_Accession_Number">Term Accession Number</a></td>
+    </tr>
+    <tr>
+      <td>Sample 1</td>
+      <td>acute lymphoblastic leukemia</td>
+      <td>EFO</td>
+      <td>EFO_0000220</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>(この例は <a href="https://www.ebi.ac.uk/efo/">EFO</a> Term Source が SDRF とペアになっている <a href="/gea/metadata.html#idf">IDF</a> で定義されていることを前提にしています)<br />
+<span class="red">GEA では ArrayExpressのように登録時点で構造化してオントロジーを適用することはしていません。</span></p>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Comment_sdrf">Comment[&lt;comment name&gt;]</a><a name="Comment_sdrf"></a></dt>
+  <dd>このカラムは node と edge カラムを注釈するために使うことができます。このカラムは拡張性を持たすためにあり、生物学的に意味のある事柄を記載するために用いられることを意図していません。カラムヘッダー中に値の種類に対する名前を記載する必要があります。</dd>
+</dl>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

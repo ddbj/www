@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fix of the problem displaying CON entries in the getentry </title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">Fix of the problem displaying CON entries in the getentry </h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/news">news</a>
+          </li>
+          <li>
+            <a href="">Fix of the problem displaying CON entries in the getentry </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <html><a href="http://getentry.ddbj.nig.ac.jp/top-e.html">getentry</a> is the entry retrieval system by accession numbers etc., which is provided by DDBJ via WWW and WebAPI.<br /><br />In June, 2008, in displaying the sequences of CON entries, 2 problems had happened.<br />Details are as follows.<dd><b>Problems happened in June, 2008</b><br />(1) When a cited piece entry is described with "complement" operator in a CON entry, the sequence span cited from the piece entry is processed as the forward strand, whereas it should be processed into the complementary sequence (Fixed in Jul, 2008)<br />(2) When the piece entry of retrieved CON entry contains a CON entry, it can not be processed correctly.</dd>
+<dd><b>Problems fixed in January, 2009</b><br />(1) <b>Contents of the problems </b><br />In the getentry, to get the conjugated sequences of CON entries, two methods (display on browser and FTP) are provided. However, neither of two methods works properly in the case of retrieving CON entries under the following conditions.
+
+    <ul>
+        <li>When you specify "total nt seq FASTA" as <a href="/services/getentry-e.html#output">output format</a>, and "www", "E-Mail" or "FTP" as <a href="/services/getentry-e.html#result">Results</a></li>
+        <li>When you specify "Flat file (DDBJ)" as <a href="/services/getentry-e.html#output">output format</a>, and "www" as <a href="/services/getentry-e.html#result">Results</a></li>
+    </ul>
+
+    <p>(2)<b>Affected services: </b>getentry, ARSA, Web API (GetEntry )<br />(3)<b>Measure completed date: </b>January 13, 2009<br />(4)<b>Reference:</b> <a href="/whatsnew/whatsnew2008-e.html#08062002">Apology for the defective results of CON entries in getentry(June 20, 2008)</a></p>
+</dd>
+<dd>We sincerely apologize for your long time inconvenience.</dd>
+</html>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

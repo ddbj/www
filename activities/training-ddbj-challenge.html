@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDBJ データ解析チャレンジ</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">DDBJ データ解析チャレンジ</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/_activities">_activities</a>
+          </li>
+          <li>
+            <a href="">DDBJ データ解析チャレンジ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <p>DDBJ データ解析チャレンジでは、DDBJ 保有のビッグデータである塩基配列公開データベースを用いて、チャレンジ課題の機械学習モデルの精度を競います。<br />
+構築モデルは京都大学の<a href="http://universityofbigdata.net/competition/5749873794088960">ビッグデータ大学</a>に投稿します。<br />
+参加者がビッグデータ解析の経験を積める様に、学生やライフサイエンス専門外の方にも、<a href="https://sc.ddbj.nig.ac.jp/ja">遺伝研スーパーコンピュータ</a>の計算機環境を提供します。<br />
+初日には参加者向けに<a href="/activities/training/2016-07-06.html">キックオフ講習会</a>を行い、課題やスパコンの使い方を説明します。</p>
+
+<h2 id="ddbj-データ解析チャレンジ-2016-">DDBJ データ解析チャレンジ 2016 <a name="2016"></a></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>日程</th>
+      <th>内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2016年6月27日(月)</td>
+      <td>キックオフ講習会 参加受付開始、遺伝研スパコン期間利用申請、OSSインストール申請受付開始</td>
+    </tr>
+    <tr>
+      <td>2016年7月6日(水)</td>
+      <td>課題投稿の受付開始、<a href="/activities/training/2016-07-06.html">キックオフ講習会</a></td>
+    </tr>
+    <tr>
+      <td>2016年8月21日(日)</td>
+      <td>遺伝研スパコン期間利用申請、OSSインストール申請受付の締切</td>
+    </tr>
+    <tr>
+      <td>2016年8月31日(水)</td>
+      <td>課題投稿の締切</td>
+    </tr>
+    <tr>
+      <td>2016年9月30日(金)</td>
+      <td>結果発表</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="チャレンジ課題-">チャレンジ課題 <a name="task-2016"></a></h3>
+
+<p>DNA配列からクロマチン特徴を予測します。<a href="/dra/index.html">DDBJ Sequence Read Archive(DDBJ
+SRA)</a>からクロマチン特徴を注釈したデータベースに「ChIP-Atlas(九大沖博士、DBCLS大田博士)」があります。ChIP-Atlasデータベースに未掲載の生物種を対象として、DNA配列がクロマチン特徴領域か否かを予測します。</p>
+
+<dl>
+  <dt>背景と意義</dt>
+  <dd>ゲノム研究分野では、GWAS解析やQTL解析により疾患・病害リスクとなるDNA多型の同定が進められています。DNA多型の疾患・病害リスクの解釈には、オープンクロマチン領域情報、ヒストン修飾情報、転写因子結合部位情報などの遺伝子発現のオンオフに関わるクロマチン特徴情報が重要です。クロマチン特徴は組織条件が変わるとオンオフが変わります。一方、近年ゲノム機能解析データの蓄積や計算機性能の向上により、DNA配列からクロマチン特徴を組織条件を含めてモデル化を行い、全条件のクロマチン特徴の一挙予測が可能になりました。全条件モデルを組み合わせると、疾患・病害リスクと関連するDNA多型を数多くの候補の中から絞り込む事が可能になります。
+DDBJでは、高速DNAシークエンサ由来のビッグデータDDBJ
+SRAを提供しています。SRAを再解析したクロマチン特徴注釈データベース「ChIP-Atlas」を使えば、大規模なクロマチン特徴予測モデルの構築が可能になります。DNA多型候補の絞込み精度は、土台である遺伝子発現オンオフ特徴（＝本チャレンジではクロマチン特徴）の精度に依存する為、高精度のクロマチン特徴予測モデルの構築が必要です。本チャレンジではChIP-Atlas注釈情報とDNA配列を用いて、高精度クロマチン特徴予測モデルの構築を目指します。</dd>
+  <dt>データ説明と予測課題</dt>
+  <dd>課題データは、CellTypeクラスと
+Antigenクラスの組合わせ8条件で構成されています。8条件の訓練データを用いてモデルを構築し、テスト配列の予測結果を投稿して下さい。課題の8条件は、AntigenクラスはDNase-seq,Histone,RNA
+polymerase,TFs(Transcriptional
+factors)の4条件を含めて構成しています。生物種はChIP-Atlasデータベースに未掲載のモデル植物シロイヌナズナです。DNA配列ゲノム版は、TAIR10です。</dd>
+  <dd>-----------------------------------<br />
+入力訓練データ ：60,000 DNA配列<br />
+入力テストデータ：10,000 DNA配列<br />
+出力訓練データ　：8条件の正解(真偽)<br />
+-----------------------------------</dd>
+  <dd>＜入力＞<br />
+1配列は、対象生物のゲノム上の200塩基(200個のACGTの並び)フラグメントで構成されています。<br />
+1配列は、01コードで保存しており1行800データです。[例：AATGC…=10001000000100100100…]<br />
+対応コード：A=1000,C=0100,G=0010,T=0001, その他の例外=0000<br />
+＜出力＞<br />
+出力訓練データ（正解データ）は01コードです。1が真で、DNA配列はクロマチン特徴領域を含む。0が偽でクロマチン特徴領域を含まない、に相当します。<br />
+＜課題＞<br />
+入力テストデータの予測結果として、1万行8列で真の予測確率をビッグデータ大学に投稿して下さい。(列間区切はスペース)</dd>
+  <dt>チャレンジ効果</dt>
+  <dd>課題のクロマチン特徴予測モデルが高精度になれば、遺伝子発現オンオフに関わる(即ち疾患・病害リスクとなる）DNA多型の絞込み精度向上に繋がります。構築したシロイヌナズナのクロマチン特徴予測モデルは、他の植物へ応用可能な為に植物研究コミュニティに貢献する事が出来ます。</dd>
+</dl>
+
+<h3 id="表彰-">表彰 <a name="winners-2016"></a></h3>
+
+<table>
+  <tbody>
+    <tr>
+      <td><strong>最優秀賞<br />1st Prize of DDBJ Challenge Awards 2016</strong></td>
+      <td><strong>株式会社 情報数理バイオ　研究開発部 ライフサイエンスグループ<br />望月 正弘</strong></td>
+    </tr>
+    <tr>
+      <td>優秀賞<br />2nd Prize of DDBJ Challenge Awards 2016</td>
+      <td>国立研究開発法人 理化学研究所 情報基盤センター バイオインフォマティクス研究開発ユニット<br />松本 拡高(代表)、尾崎 遼(チームとして2名で参加)</td>
+    </tr>
+    <tr>
+      <td>優良賞<br />3rd Prize of DDBJ Challenge Awards 2016</td>
+      <td>ビッツ株式会社<br />岡山 利次</td>
+    </tr>
+    <tr>
+      <td>学生賞<br />Student Prize of DDBJ Challenge Awards 2016</td>
+      <td>東京大学大学院 情報理工学系研究科 修士課程1年<br />加藤 卓也</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="tablecaption">今回「DNA配列からのクロマチン特徴予測」のチャレンジ課題について、38名が参加して、延べ360回のモデル投稿がありました。</p>
+
+<h4 id="最優秀賞モデルの概要-">最優秀賞モデルの概要 <a name="summary-2016"></a></h4>
+
+<p>望月氏のモデルは、<span class="red">Extremely Randomized Trees</span>(ERT, 参考文献1) と <span class="red">Convolutional Neural Network</span>(CNN, 参考文献2) の2種類の分類器を基盤として、<span class="red">Stacked Generalization</span>(Stacking, 参考文献3) アンサンブル学習法で精度向上を図っています。</p>
+
+<p>特徴量は、チャレンジのクエリ配列だけでなく<span class="red">外部特徴量(ゲノム座標、遺伝子注釈情報)を組み入れています</span>。1つ目のERTモデルはゲノム座標が特徴量でn(配列数) x m(染色体数)の行列です。ゲノム座標はクエリ配列をシロイヌナズナTAIR10ゲノム参照配列(参考文献 4)にアライメントして得ます。このERTモデルをGenomic Coordinates Based Model(GCBM)とします。<br />
+2つ目のCNNモデルの特徴量は、クエリ配列と遺伝子注釈情報(TAIRからGFFファイルをダウンロード)です。Figure 1の様にforward/reverse strand別で遺伝子注釈情報を組み込んでいます。遺伝子注釈情報は定量値で、定義は次式になります。</p>
+
+<p><img src="/assets/images/activities/ddbjchal_2016_teigi.png" alt="" /></p>
+
+<p>変数rは減衰率で、変数dは遺伝子の1塩基目からの距離です。変数rが0なら特徴量は1になり、遺伝子中に対象塩基が含まれる事を表します。変数rが0より大きい時は、遺伝子開始塩基からの勾配値が与えられます。このCNNモデルをGene Annotated Sequences Based Model(GASBM)とします。</p>
+
+<p><strong>Figure1: Structure of the neural network of GASBM</strong>
+<img src="/assets/images/activities/ddbjchal_2016_figure1.png" alt="" /></p>
+
+<p>Figure2はベンチマーク結果です。ERT-GCBMモデルとCNN-GASBMモデルのパラメータ値などの詳細は、他の受賞者モデルも含めた全体解説(データクレンジング、特徴量選択、モデル訓練と予測法)と共に、報告論文で公開する予定です。</p>
+
+<p>Figure2: Benchmark result of models
+<img src="/assets/images/activities/ddbjchal_2016_figure2.png" alt="" /></p>
+
+<p><strong>Reference</strong></p>
+
+<ul>
+  <li>[1]　Geurts, P., Ernst, D. &amp; Wehenkel, L. Extremely randomized
+trees. Machine Learning 63, 3-42 (2006).</li>
+  <li>[2]　LeCun, Yann, et al. “Gradient-based learning applied to
+document recognition.” Proceedings of the IEEE 86.11 (1998):
+2278-2324.</li>
+  <li>[3]　Wolpert, D. H. Stacked generalization. Neural Networks 5,
+241-259 (1992).</li>
+  <li>[4]　<a href="https://www.arabidopsis.org/">https://www.arabidopsis.org/</a></li>
+</ul>
+
+<h4 id="受賞モデルの精度結果-">受賞モデルの精度結果 <a name="result-2016"></a></h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>DDBJ<br />Challenge<br />Award</th>
+      <th>AUC</th>
+      <th>Model Design</th>
+      <th>Tool Version</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1st Prize</td>
+      <td>0.94564</td>
+      <td><em>2 Classifiers(Extremely Randomized Trees, CNN)<br /></em>Ensemble Learning(Stacking)<br />*External Data(Genomic Position, Gene Structure Annotation)</td>
+      <td>python=3.5<br />scikit-learn=0.17.1<br />chainer=1.10.0</td>
+    </tr>
+    <tr>
+      <td>2nd Prize</td>
+      <td>0.89859</td>
+      <td><em>2 Classifiers(CNN, Product of Genomic Distance Decay Parameter and Nearest Training Data Output)<br /></em>Ensemble Learning(Averaged)<br />*External Data(Genomic Position)</td>
+      <td>julia=0.4.6<br />python=2.7.10<br />skflow(tensorflow=0.8.0)</td>
+    </tr>
+    <tr>
+      <td>3rd Prize</td>
+      <td>0.85428</td>
+      <td><em>7 Classifiers(Naive Bayes for Multivariate Bernoulli Models, Logistic Regression, Random Forest, Gradient Boosting, Extremely Randomized Trees, eXtreme Gradient Boosting, CNN)<br /></em>Ensemble Learning (Stacking)</td>
+      <td>python=2.7.11<br />numpy=1.10.4<br />scikit-learn=0.17<br />chainer=1.11.0<br />xgboost=0.4a30</td>
+    </tr>
+    <tr>
+      <td>Student Prize</td>
+      <td>0.84318</td>
+      <td><em>3 Classifiers(LeNet like CNN, DeepBind like CNN, Variable filter DeepBind like CNN)<br /></em>Ensemble Learning(Soft Voting)</td>
+      <td>python=2.7<br />lasagne=0.2.dev1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="論文-">論文 <a name="citation"></a></h4>
+
+<ul>
+  <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/32213716">DDBJ Data Analysis Challenge: a machine learning competition to predict Arabidopsis chromatin feature annotations from DNA sequences.</a><br />
+Kaminuma E, Baba Y, Mochizuki M, Matsumoto H, Ozaki H, Okayama T, Kato T, Oki S, Fujisawa T, Nakamura Y et al<br />
+<em>Genes Genet Syst</em> 2020 Mar 26;():. Pubmed: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32213716">32213716</a></li>
+</ul>
+
+<h2 id="ddbjデータ解析チャレンジ-qa-">DDBJデータ解析チャレンジ Q&amp;A <a name="faq"></a></h2>
+
+<dl class="challenge-faq">
+  <dt>DDBJデータ解析チャレンジの内容や結果は論文に投稿できますか？</dt>
+  <dd>DDBJチャレンジ報告論文をジャーナルに投稿予定です。上位入賞者の方には、共著者としてご参加いただきます。詳しくは チャレンジ賞 を参照ください。</dd>
+  <dt>自分の PC に機械学習のためのプログラミング言語の開発環境を準備した方がいいですか？</dt>
+  <dd>NIG スパコンには、R, MATLAB, Python などの機械学習ツールがインストールされていますので、NIG スパコンにログインして作業を行う場合は、ご自身のPC内に開発環境を作成する必要はありません。（NIG スパコンを利用する場合はアカウント申請が必要です。） ローカルPC で作業を行う場合には、ご自身で環境整備をして頂く必要があります。ローカルPCには期間中のみ無料利用できるMATLABをインストール可能です。</dd>
+  <dt>チャレンジで利用した遺伝研スパコンのアカウントは、チャレンジ終了後どうなりますか？</dt>
+  <dd>利用終了後の9月1日から、アカウントは使用できなくなります。 ライフサイエンス研究の為に使用したい方は、アカウント継続申請を こちら からリクエストしてください。 継続申請フォームには下記を入力してください。 お問い合わせ種別：「その他」を選択してください。 お問い合わせ件名：「チャレンジアカウントの継続申請」を入力してください。</dd>
+  <dt>遺伝研スパコンを必ず使う必要がありますか？</dt>
+  <dd>遺伝研スパコンを使っても、使わなくてもどちらでも結構です。</dd>
+  <dt>遺伝研スパコンの利用申請時に、フリーランス(または会社員)なので責任者を記入できないです。</dt>
+  <dd>フリーランスの方は経歴情報を、会社員の方はご所属の会社情報を、<a href="https://sc2.ddbj.nig.ac.jp/index.php/ja-question2">遺伝研スパコンお問い合わせ窓口</a> までご連絡ください。</dd>
+  <dt>Tutorialでは遺伝研スパコンのメモリ要求は24GBです。自分のプログラムではメモリエラーになりました。</dt>
+  <dd>TutorialはMATLAB線形判別分析用のメモリ設定になっています。最大64GBまで設定可能 (-l mem_req=64G , -l s_vmem=64G) なので、プログラム毎に最適な値を指定してください。64GBを超えた値を設定すると、core dump 出力でジョブは強制終了しますので御注意ください。</dd>
+  <dt>配列データに0000コードを発見しました。また0000コードのみでクロマチン情報有の配列がありました。</dt>
+  <dd>ゲノム領域の一部で塩基未決定の場合があり、課題では0000コードに設定しています。課題中の未決定塩基のみの配列は、あるピーク領域中の断片として、そのクロマチン情報が出力値に入っています。参加の皆様自身で、良い対処策を御考案下さい。</dd>
+  <dt>challenge.q使用率が100%になっていて、使えなくて困っています。</dt>
+  <dd>challenge.qノード数を16に変更しました。またリソースの占有を防ぐ為に、challenge.qの同時使用可能スロット数を150に変更しました。</dd>
+  <dt>DDBJ-challenge.mat以外の外部データ利用は許可されていますか？</dt>
+  <dd>外部データ利用を許可していますが、下記の様に条件を設定します。<br />
+パラメータ(注1)の外部利用＝可<br />
+転移学習用Pretrained Modelの利用＝可(注2)<br />
+(注1)＝馬場博士スライドp.15参照
+<a href="https://drive.google.com/file/d/1EmJMw_4cDUTcm_A5kx5U75G5JZrE2rWH/edit"><img src="/assets/images/parts/pdf_icon.svg" alt="" class="pdf" /></a><br />
+(注2)＝不正を防ぐ為に、外部入力配列は植物を禁止します</dd>
+  <dt>testデータを訓練に使用(semi-supervised learning)して良いですか？</dt>
+  <dd>はい、良いです。</dd>
+  <dt>Deep Learning用ライブラリを遺伝研スパコンへインストールするとエラーが出ます。</dt>
+  <dd>UC Berkeley の <a href="http://caffe.berkeleyvision.org/">Caffe</a>, Preferred Networks社 <a href="https://chainer.org/">Chainer</a> のインストール方法を スパコンHP に掲載しましたのでご参照ください。</dd>
+</dl>
+
+<h2 id="ddbj-チャレンジ実施委員会-">DDBJ チャレンジ実施委員会 <a name="committee"></a></h2>
+
+<dl>
+  <dt>DDBJ Challenge Committee</dt>
+  <dd>神沼英里 : 国立遺伝学研究所 生命情報研究センター　助教
+鹿島久嗣 : 京都大学大学院 情報学研究科　教授
+高木利久 : 国立遺伝学研究所 生命情報研究センター　教授</dd>
+</dl>
+
+<p>本チャレンジは遺伝研所内倫理審査委員会(IRB)により倫理審査承認を受けております。</p>
+
+<p>お問い合わせ：<a href="/contact-ddbj.html#to-ddbj">DDBJへのお問い合わせ</a> の「講習会」からご連絡ください。</p>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

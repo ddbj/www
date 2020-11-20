@@ -1,0 +1,43 @@
+COMMON	DATATYPE		type	WGS
+	KEYWORD		keyword	WGS
+			keyword	NON_CONTIGUOUS_FINISHED
+	DBLINK		project	PRJDB12345
+			biosample	SAMD90000001
+			sequence read archive	DRR990000
+	SUBMITTER		contact	Hanako Mishima
+			consrtm	Zimmermannella faecalis genome sequencing consortium
+			ab_name	Mishima,H.
+			ab_name	Yamada,T.
+			ab_name	Park,C.S.
+			ab_name	Liu,G.Q.
+			email	mishima@ddbj.nig.ac.jp
+			phone	81-55-981-6853
+			fax	81-55-981-6849
+			institute	National Institute of Genetics
+			department	DNA Data Bank of Japan
+			country	Japan
+			state	Shizuoka
+			city	Mishima
+			street	Yata 1111
+			zip	411-8540
+	REFERENCE		ab_name	Mishima,H.
+			ab_name	Yamada,T.
+			ab_name	Kim,K.-H.
+			ab_name	Park,C.S.
+			ab_name	Liu,G.Q.
+			title	Mouse whole genome shotgun sequence
+			status	Unpublished
+			year	2017
+	DATE		hold_date	20191130
+	COMMENT		line	Please visit our web page
+			line	URL:http://www.ddbj.nig.ac.jp/
+	ST_COMMENT		tagset_id	Genome-Assembly-Data
+			Assembly Method	Velevt v. 2.0
+			Assembly Name	Mmus_assembly01
+			Genome Coverage	60x
+			Sequencing Technology	454 GS FLX; ABI 3730
+	source	1..E	organism	Mus musculus 
+			mol_type	genomic DNA
+			strain	15706
+			ff_definition	@@[organism]@@ @@[strain]@@ DNA, @@[submitter_seqid]@@
+			submitter_seqid	@@[entry]@@

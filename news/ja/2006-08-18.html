@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web 版 getentry での contig エントリの一部検索不具合に関するおわび　</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">Web 版 getentry での contig エントリの一部検索不具合に関するおわび　</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/news">news</a>
+          </li>
+          <li>
+            <a href="">Web 版 getentry での contig エントリの一部検索不具合に関するおわび　</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <html>getentry は DDBJ が WWW および E-mail で提供してている アクセッション番号などによる高速なエントリ検索システムです。このたび，一部のエントリが web 版 <a href="http://getentry.ddbj.nig.ac.jp/top-j.html">getentry</a>で表示できない状態が発生していたことが判明いたしました。<br />表示できなかったエントリは，DDBJ ならびに GenBank から公開された contig エントリのピースエントリになっている contig エントリで，2006年6月8日に DDBJ が公開した CON 7296エントリ（<a href="2006-j.html#060421wgs">2006年4月20日に公開したメダカ strain Hd-rR WGS 22万エントリ</a>に対応）の一部も含まれています。<br />詳細は以下の通りですが，該当期間にweb 版 getentry を用いて， 以下の「状況」欄に該当する内容で検索を行なったと思われる方は，お手数をお掛け致しますが再度検索を実行して下さいますようお願い申し上げます。<br />なお，e-mail 版の getentry はこの影響を受けていませんでした。 web 版ついても対応作業が完了し，現在は正常に検索結果を得ることができます。<br />長期間にわたって正しい検索ができない状況が続いていたことにより，ユーザの皆様にご迷惑をお掛けいたしましたことを深くお詫び申し上げると共に，今後このような事態が発生することのないよう最大限の努力をいたします。
+
+<ul>
+    <li><b>期間：</b><br />[DDBJ 由来エントリ] 2006年4月24日から5月24日<br />[GenBank 由来エントリ] 2005年1月4日<sup>
+            <font color="#ff0000">*</font>
+        </sup>から2006年5月24日<br />
+        <font color="#ff0000">*</font><small>上記 CH エントリをピースとしているエントリの初公開日から算出した発生日（例：CM000126）</small>
+    </li>
+    <li><b>原因：</b>web 用検索プログラムの不具合</li>
+    <li><b>状況：</b>上記期間に次の条件で検索を行なった場合正しい結果を得ることができませんでした。</li>
+
+    <p> ID指定に［Accession］を，データベースに［DNAデータベース］を，出力形式に［フラットファイル (DDBJ)］を，取得方法に［画面表示］を選択し，クエリ入力欄に下記の対象エントリを入力して検索を実行した場合</p>
+    <li><b>表示不可エントリ：</b>（<a href="/whatsnew/getentry-error-060818.html">--&gt;番号リストはこちら</a>）<br />[DDBJ 由来エントリ] 1121 エントリ<br />[GenBank 由来エントリ] 1092 エントリ</li>
+</ul>
+</html>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

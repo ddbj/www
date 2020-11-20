@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>メタデータの例</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">メタデータの例</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/dra">dra</a>
+          </li>
+          <li>
+            <a href="">メタデータの例</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/dra/index.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/dra/submission.html">Handbook</a>
+      
+      <ul>
+        
+        <li>
+          <a href="https://docs.google.com/spreadsheets/d/1DTdUQ-WWOMjOA2eYQWmFYUB24hJysuwhvHLJoDFX4rc/edit#gid=0">Metadata examples</a>
+        </li>
+        
+        <li>
+          <a href="/dra/example.html">XML examples</a>
+        </li>
+        
+        <li>
+          <a href="https://github.com/ddbj/pub/tree/master/docs/dra">XML schema</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/ja/index.html">FAQ</a>
+      
+    </li>
+    
+    <li class="">
+      <a href="https://ddbj.nig.ac.jp/DRASearch/">Search</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq">Downloads</a>
+      
+      <ul>
+        
+        <li>
+          <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq">FASTQ</a>
+        </li>
+        
+        <li>
+          <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/sralite/ByExp/litesra/">SRA</a>
+        </li>
+        
+        <li>
+          <a href="https://github.com/ddbj/pub/tree/master/docs/dra/xsd">XML Schema</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/dra/about-dra.html">About DRA</a>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <div class="attention red">
+  <p>メタデータ作成ツールは technical read (アダプター，プライマーやバーコード配列) の記載に対応していません。<br />
+<a href="/dra/submission.html#create-metadata-in-xml-files">Technical read を含むデータを登録する場合は Experiment XML を作成</a>し，下記の例を参考に&lt;SPOT_DESCRIPTOR&gt;で technical read を記載する必要があります。</p>
+</div>
+
+<h2 id="experiment-spot-platform-">Experiment (Spot, Platform) <a name="Experiment"></a></h2>
+
+<h3 id="454-single-reads-">454 single reads <a name="454_single"></a></h3>
+
+<h4 id="リード">リード</h4>
+
+<p>Read composition</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Read Index :</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Read :</td>
+      <td>TCAG</td>
+      <td>ATAGAGTTGATCCTGGCTCAT……………</td>
+    </tr>
+    <tr>
+      <td>Base Coordinate :</td>
+      <td>1</td>
+      <td><div class="float-left">5</div><div class="float-right">80</div></td>
+    </tr>
+    <tr>
+      <td>Read Type :</td>
+      <td>Adapter</td>
+      <td>Forward</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="メタデータ">メタデータ</h4>
+
+<p>Spot (Read Spec)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Read Index</th>
+      <th>Read Class</th>
+      <th>Read Type</th>
+      <th>Ordering Method</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Technical Read</td>
+      <td>Adapter</td>
+      <td>BaseCoord = 1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Application Read</td>
+      <td>Forward</td>
+      <td>BaseCoord = 5</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Experiment XML (SPOT_DESCRIPTOR)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;SPOT_DESCRIPTOR&gt;
+  &lt;SPOT_DECODE_SPEC&gt;
+    &lt;READ_SPEC&gt;
+      &lt;READ_INDEX&gt;0&lt;/READ_INDEX&gt;
+      &lt;READ_CLASS&gt;Technical Read&lt;/READ_CLASS&gt;
+      &lt;READ_TYPE&gt;Adapter&lt;/READ_TYPE&gt;
+      &lt;BASE_COORD&gt;1&lt;/BASE_COORD&gt;
+    &lt;/READ_SPEC&gt;
+    &lt;READ_SPEC&gt;
+      &lt;READ_INDEX&gt;1&lt;/READ_INDEX&gt;
+      &lt;READ_CLASS&gt;Application Read&lt;/READ_CLASS&gt;
+      &lt;READ_TYPE&gt;Forward&lt;/READ_TYPE&gt;
+      &lt;BASE_COORD&gt;5&lt;/BASE_COORD&gt;
+    &lt;/READ_SPEC&gt;
+  &lt;/SPOT_DECODE_SPEC&gt;
+&lt;/SPOT_DESCRIPTOR&gt;
+</code></pre></div></div>
+
+<p><a href="/dra/submission.html#Instrument">Platform</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th>Instrument Model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LS454</td>
+      <td>454 GS FLX Titanium</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="454-paired-reads-">454 paired reads <a name="454_paired"></a></h3>
+
+<h4 id="リード-1">リード</h4>
+
+<p>Read composition</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Read Index :</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Read :</td>
+      <td>TCAG</td>
+      <td>ATAGAGT……………CCTGG</td>
+      <td>TCGTAT……………TATTACG</td>
+      <td>CTCAT……………</td>
+    </tr>
+    <tr>
+      <td>Base Coordinate :</td>
+      <td>1</td>
+      <td>5</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Read Type :</td>
+      <td>Adapter</td>
+      <td>Forward</td>
+      <td>Linker</td>
+      <td>Forward</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="メタデータ-1">メタデータ</h4>
+
+<p>Spot (Read Spec)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Read Index</th>
+      <th>Read Class</th>
+      <th>Read Type</th>
+      <th>Ordering Method</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Technical Read</td>
+      <td>Adapter</td>
+      <td>BaseCoord = 1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Application Read</td>
+      <td>Forward</td>
+      <td>BaseCoord = 5</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Technical Read</td>
+      <td>Linker</td>
+      <td>ExpectedBasecallTable</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Application Read</td>
+      <td>Forward</td>
+      <td>RelativeOrder</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Expected Basecall Table</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Base Call</th>
+      <th>Min Match</th>
+      <th>Max Mismatch</th>
+      <th>Match Edge</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TCGTATAACTTCGTATAATGTATGCTATACGAAGTTATTACG</td>
+      <td>38</td>
+      <td>5</td>
+      <td>full</td>
+    </tr>
+    <tr>
+      <td>CGTAATAACTTCGTATAGCATACATTATACGAAGTTATACGA</td>
+      <td>38</td>
+      <td>5</td>
+      <td>full</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Experiment XML (SPOT_DESCRIPTOR)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;SPOT_DESCRIPTOR&gt;
+  &lt;SPOT_DECODE_SPEC&gt;
+    &lt;READ_SPEC&gt;
+      &lt;READ_INDEX&gt;0&lt;/READ_INDEX&gt;
+      &lt;READ_CLASS&gt;Technical Read&lt;/READ_CLASS&gt;
+      &lt;READ_TYPE&gt;Adapter&lt;/READ_TYPE&gt;
+      &lt;BASE_COORD&gt;1&lt;/BASE_COORD&gt;
+    &lt;/READ_SPEC&gt;
+    &lt;READ_SPEC&gt;
+      &lt;READ_INDEX&gt;1&lt;/READ_INDEX&gt;
+      &lt;READ_CLASS&gt;Application Read&lt;/READ_CLASS&gt;
+      &lt;READ_TYPE&gt;Forward&lt;/READ_TYPE&gt;
+      &lt;BASE_COORD&gt;5&lt;/BASE_COORD&gt;
+    &lt;/READ_SPEC&gt;
+    &lt;READ_SPEC&gt;
+      &lt;READ_INDEX&gt;2&lt;/READ_INDEX&gt;
+      &lt;READ_CLASS&gt;Technical Read&lt;/READ_CLASS&gt;
+      &lt;READ_TYPE&gt;Linker&lt;/READ_TYPE&gt;
+      &lt;EXPECTED_BASECALL_TABLE&gt;
+        &lt;BASECALL min_match="38" max_mismatch="5" match_edge="full"&gt;TCGTATAACTTCGTATAATGTATGCTATACGAAGTTATTACG&lt;/BASECALL&gt;
+        &lt;BASECALL min_match="38" max_mismatch="5" match_edge="full"&gt;CGTAATAACTTCGTATAGCATACATTATACGAAGTTATACGA&lt;/BASECALL&gt;
+      &lt;/EXPECTED_BASECALL_TABLE&gt;          
+    &lt;/READ_SPEC&gt;   
+    &lt;READ_SPEC&gt;
+      &lt;READ_INDEX&gt;3&lt;/READ_INDEX&gt;
+      &lt;READ_CLASS&gt;Application Read&lt;/READ_CLASS&gt;
+      &lt;READ_TYPE&gt;Forward&lt;/READ_TYPE&gt;
+      &lt;RELATIVE_ORDER follows_read_index="2"/&gt;
+    &lt;/READ_SPEC&gt;        
+  &lt;/SPOT_DECODE_SPEC&gt;      
+&lt;/SPOT_DESCRIPTOR&gt;
+</code></pre></div></div>
+
+<p><a href="/dra/submission.html#Instrument">Platform</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th>Instrument Model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LS454</td>
+      <td>454 GS FLX Titanium</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="illumina-single-reads-">Illumina single reads <a name="illumina_single"></a></h3>
+
+<h4 id="リード-2">リード</h4>
+
+<p>Read composition</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Read Index :</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Read :</td>
+      <td>ATAGAGTTGATCCTGG……………CCTGGCTCA</td>
+    </tr>
+    <tr>
+      <td>Base Coordinate :</td>
+      <td><div class="float-left">１</div><div class="float-right">72</div></td>
+    </tr>
+    <tr>
+      <td>Read Type :</td>
+      <td>Forward</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="メタデータ-2">メタデータ</h4>
+
+<p>Spot (Read Spec)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Read Index</th>
+      <th>Read Class</th>
+      <th>Read Type</th>
+      <th>Ordering Method</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Application Read</td>
+      <td>Forward</td>
+      <td>BaseCoord = 1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Experiment XML (SPOT_DESCRIPTOR)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;SPOT_DESCRIPTOR&gt;
+  &lt;SPOT_DECODE_SPEC&gt;
+    &lt;SPOT_LENGTH&gt;72&lt;/SPOT_LENGTH&gt;
+    &lt;READ_SPEC&gt;
+      &lt;READ_INDEX&gt;0&lt;/READ_INDEX&gt;
+      &lt;READ_CLASS&gt;Application Read&lt;/READ_CLASS&gt;
+      &lt;READ_TYPE&gt;Forward&lt;/READ_TYPE&gt;
+      &lt;BASE_COORD&gt;1&lt;/BASE_COORD&gt;
+    &lt;/READ_SPEC&gt;
+  &lt;/SPOT_DECODE_SPEC&gt;
+&lt;/SPOT_DESCRIPTOR&gt;
+</code></pre></div></div>
+
+<p><a href="/dra/submission.html#Instrument">Platform</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th>Instrument Model</th>
+      <th>Sequence Length</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Illumina</td>
+      <td>Illumina Genome Analyzer IIx</td>
+      <td>72</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="illumina-paired-reads-">Illumina paired reads <a name="illumina_paired"></a></h3>
+
+<h4 id="リード-3">リード</h4>
+
+<p>Read composition</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Read Index :</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Read :</td>
+      <td>ATAGAGTTGATCCTGG……………</td>
+      <td>CCTGGCTCATCAGTTGAT……………</td>
+    </tr>
+    <tr>
+      <td>Base Coordinate :</td>
+      <td>1</td>
+      <td><div class="float-left">101</div><div class="float-right">200</div></td>
+    </tr>
+    <tr>
+      <td>Read Type :</td>
+      <td>Forward</td>
+      <td>Reverse</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="メタデータ-3">メタデータ</h4>
+
+<p>Spot (Read Spec)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Read Index</th>
+      <th>Read Class</th>
+      <th>Read Type</th>
+      <th>Ordering Method</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Application Read</td>
+      <td>Forward</td>
+      <td>BaseCoord = 1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Application Read</td>
+      <td>Reverse</td>
+      <td>BaseCoord = 101</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Experiment XML (SPOT_DESCRIPTOR)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;SPOT_DESCRIPTOR&gt;
+  &lt;SPOT_DECODE_SPEC&gt;
+  &lt;SPOT_LENGTH&gt;200&lt;/SPOT_LENGTH&gt;
+    &lt;READ_SPEC&gt;
+      &lt;READ_INDEX&gt;0&lt;/READ_INDEX&gt;
+      &lt;READ_CLASS&gt;Application Read&lt;/READ_CLASS&gt;
+      &lt;READ_TYPE&gt;Forward&lt;/READ_TYPE&gt;
+      &lt;BASE_COORD&gt;1&lt;/BASE_COORD&gt;
+    &lt;/READ_SPEC&gt;
+    &lt;READ_SPEC&gt;
+      &lt;READ_INDEX&gt;1&lt;/READ_INDEX&gt;
+      &lt;READ_CLASS&gt;Application Read&lt;/READ_CLASS&gt;
+      &lt;READ_TYPE&gt;Reverse&lt;/READ_TYPE&gt;
+      &lt;BASE_COORD&gt;101&lt;/BASE_COORD&gt;
+    &lt;/READ_SPEC&gt;
+  &lt;/SPOT_DECODE_SPEC&gt;
+&lt;/SPOT_DESCRIPTOR&gt;
+</code></pre></div></div>
+
+<p><a href="/dra/submission.html#Instrument">Platform</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th>Instrument Model</th>
+      <th>Sequence Length</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Illumina</td>
+      <td>Illumina Genome Analyzer IIx</td>
+      <td>200</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="illumina-paired-reads-10x-genomics-">Illumina paired reads 10x Genomics <a name="illumina_paired_10x"></a></h3>
+
+<h4 id="リード-4">リード</h4>
+
+<p>Read composition</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Read Index :</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Read :</td>
+      <td>ATTCCTCG</td>
+      <td>CCA…..ACT</td>
+      <td>GG………………….</td>
+      <td>CT………………….</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Base Coordinate :</td>
+      <td>1</td>
+      <td>9</td>
+      <td>23</td>
+      <td>123</td>
+      <td>223</td>
+    </tr>
+    <tr>
+      <td>Read Type :</td>
+      <td>Adapter</td>
+      <td>Adapter</td>
+      <td>Forward</td>
+      <td>Reverse</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="メタデータ-4">メタデータ</h4>
+
+<p>Spot (Read Spec)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Read Index</th>
+      <th>Read Class</th>
+      <th>Read Type</th>
+      <th>Ordering Method</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Technical Read</td>
+      <td>Adapter</td>
+      <td>BaseCoord = 1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Technical Read</td>
+      <td>Adapter</td>
+      <td>BaseCoord = 9</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Application Read</td>
+      <td>Forward</td>
+      <td>BaseCoord = 23</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Application Read</td>
+      <td>Reverse</td>
+      <td>BaseCoord = 123</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Experiment XML (SPOT_DESCRIPTOR)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;SPOT_DESCRIPTOR&gt;
+  &lt;SPOT_DECODE_SPEC&gt;
+  &lt;SPOT_LENGTH&gt;223&lt;/SPOT_LENGTH&gt;
+    &lt;READ_SPEC&gt;
+      &lt;READ_INDEX&gt;0&lt;/READ_INDEX&gt;
+      &lt;READ_CLASS&gt;Technical Read&lt;/READ_CLASS&gt;
+      &lt;READ_TYPE&gt;Adapter&lt;/READ_TYPE&gt;
+      &lt;BASE_COORD&gt;1&lt;/BASE_COORD&gt;
+    &lt;/READ_SPEC&gt;
+    &lt;READ_SPEC&gt;
+      &lt;READ_INDEX&gt;1&lt;/READ_INDEX&gt;
+      &lt;READ_CLASS&gt;Technical Read&lt;/READ_CLASS&gt;
+      &lt;READ_TYPE&gt;Adapter&lt;/READ_TYPE&gt;
+      &lt;BASE_COORD&gt;9&lt;/BASE_COORD&gt;
+    &lt;/READ_SPEC&gt;
+    &lt;READ_SPEC&gt;
+      &lt;READ_INDEX&gt;2&lt;/READ_INDEX&gt;
+      &lt;READ_CLASS&gt;Application Read&lt;/READ_CLASS&gt;
+      &lt;READ_TYPE&gt;Forward&lt;/READ_TYPE&gt;
+      &lt;BASE_COORD&gt;23&lt;/BASE_COORD&gt;
+    &lt;/READ_SPEC&gt;    
+    &lt;READ_SPEC&gt;
+      &lt;READ_INDEX&gt;3&lt;/READ_INDEX&gt;
+      &lt;READ_CLASS&gt;Application Read&lt;/READ_CLASS&gt;
+      &lt;READ_TYPE&gt;Reverse&lt;/READ_TYPE&gt;
+      &lt;BASE_COORD&gt;123&lt;/BASE_COORD&gt;
+    &lt;/READ_SPEC&gt;
+  &lt;/SPOT_DECODE_SPEC&gt;
+&lt;/SPOT_DESCRIPTOR&gt;
+</code></pre></div></div>
+
+<p><a href="/dra/submission.html#Instrument">Platform</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th>Instrument Model</th>
+      <th>Sequence Length</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Illumina</td>
+      <td>Illumina Genome Analyzer IIx</td>
+      <td>223</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="solid-single-reads-">SOLiD single reads <a name="SOLiD_single"></a></h3>
+
+<h4 id="リード-5">リード</h4>
+
+<p>Read composition</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Read Index :</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Read :</td>
+      <td>TTGATCCTGG……………CGCTCA</td>
+    </tr>
+    <tr>
+      <td>Base Coordinate :</td>
+      <td><div class="float-left">1</div><div class="float-right">50</div></td>
+    </tr>
+    <tr>
+      <td>Read Type :</td>
+      <td>Forward</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="メタデータ-5">メタデータ</h4>
+
+<p>Spot (Read Spec)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Read Index</th>
+      <th>Read Class</th>
+      <th>Read Type</th>
+      <th>Ordering Method</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Application Read</td>
+      <td>Forward</td>
+      <td>BaseCoord = 1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Experiment XML (SPOT_DESCRIPTOR)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;SPOT_DESCRIPTOR&gt;
+  &lt;SPOT_DECODE_SPEC&gt;
+  &lt;SPOT_LENGTH&gt;50&lt;/SPOT_LENGTH&gt;
+    &lt;READ_SPEC&gt;
+      &lt;READ_INDEX&gt;0&lt;/READ_INDEX&gt;
+      &lt;READ_CLASS&gt;Application Read&lt;/READ_CLASS&gt;
+      &lt;READ_TYPE&gt;Forward&lt;/READ_TYPE&gt;
+      &lt;BASE_COORD&gt;1&lt;/BASE_COORD&gt;
+    &lt;/READ_SPEC&gt;
+  &lt;/SPOT_DECODE_SPEC&gt;
+&lt;/SPOT_DESCRIPTOR&gt;
+</code></pre></div></div>
+
+<p><a href="/dra/submission.html#Instrument">Platform</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th>Instrument Model</th>
+      <th>Sequence Length</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ABI SOLID</td>
+      <td>AB SOLiD System 3.0</td>
+      <td>50</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="solid-paired-reads-">SOLiD paired reads <a name="SOLiD_paired"></a></h3>
+
+<h4 id="リード-6">リード</h4>
+
+<p>Read composition</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Read Index :</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Read :</td>
+      <td>ATCCTGG……………</td>
+      <td>CATCAGTTGAT……………</td>
+    </tr>
+    <tr>
+      <td>Base Coordinate :</td>
+      <td>1</td>
+      <td><div class="float-left">26</div><div class="float-right">50</div></td>
+    </tr>
+    <tr>
+      <td>Read Type :</td>
+      <td>Forward</td>
+      <td>Forward</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="メタデータ-6">メタデータ</h4>
+
+<p>Spot (Read Spec)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Read Index</th>
+      <th>Read Class</th>
+      <th>Read Type</th>
+      <th>Ordering Method</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Application Read</td>
+      <td>Forward</td>
+      <td>BaseCoord = 1</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>Application Read</td>
+      <td>Forward</td>
+      <td>BaseCoord = 26</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Experiment XML (SPOT_DESCRIPTOR)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;SPOT_DESCRIPTOR&gt;
+  &lt;SPOT_DECODE_SPEC&gt;
+  &lt;SPOT_LENGTH&gt;50&lt;/SPOT_LENGTH&gt;
+    &lt;READ_SPEC&gt;
+      &lt;READ_INDEX&gt;0&lt;/READ_INDEX&gt;
+      &lt;READ_CLASS&gt;Application Read&lt;/READ_CLASS&gt;
+      &lt;READ_TYPE&gt;Forward&lt;/READ_TYPE&gt;
+      &lt;BASE_COORD&gt;1&lt;/BASE_COORD&gt;
+    &lt;/READ_SPEC&gt;
+    &lt;READ_SPEC&gt;
+      &lt;READ_INDEX&gt;1&lt;/READ_INDEX&gt;
+      &lt;READ_CLASS&gt;Application Read&lt;/READ_CLASS&gt;
+      &lt;READ_TYPE&gt;Forward&lt;/READ_TYPE&gt;
+      &lt;BASE_COORD&gt;26&lt;/BASE_COORD&gt;
+    &lt;/READ_SPEC&gt;
+  &lt;/SPOT_DECODE_SPEC&gt;
+&lt;/SPOT_DESCRIPTOR&gt;
+</code></pre></div></div>
+
+<p><a href="/dra/submission.html#Instrument">Platform</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th>Instrument Model</th>
+      <th>Sequence Length</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ABI SOLID</td>
+      <td>AB SOLiD System 3.0</td>
+      <td>50</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ion-torrent-single-reads-">Ion torrent single reads <a name="Ion_single"></a></h3>
+
+<h4 id="リード-7">リード</h4>
+
+<p>Read composition</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Read Index :</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Read :</td>
+      <td>AGCCGTATATAG……………CGTCAGAA</td>
+    </tr>
+    <tr>
+      <td>Base Coordinate :</td>
+      <td><div class="float-left">1</div><div class="float-right">(x)</div></td>
+    </tr>
+    <tr>
+      <td>Read Type :</td>
+      <td>Forward</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="メタデータ-7">メタデータ</h4>
+
+<p>Spot (Read Spec)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Read Index</th>
+      <th>Read Class</th>
+      <th>Read Type</th>
+      <th>Ordering Method</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Application Read</td>
+      <td>Forward</td>
+      <td>BaseCoord = 1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Experiment XML (SPOT_DESCRIPTOR)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;SPOT_DESCRIPTOR&gt;
+  &lt;SPOT_DECODE_SPEC&gt;
+    &lt;READ_SPEC&gt;
+      &lt;READ_INDEX&gt;0&lt;/READ_INDEX&gt;
+      &lt;READ_CLASS&gt;Application Read&lt;/READ_CLASS&gt;
+      &lt;READ_TYPE&gt;Forward&lt;/READ_TYPE&gt;
+      &lt;BASE_COORD&gt;1&lt;/BASE_COORD&gt;
+    &lt;/READ_SPEC&gt;
+  &lt;/SPOT_DECODE_SPEC&gt;
+&lt;/SPOT_DESCRIPTOR&gt;
+</code></pre></div></div>
+
+<p><a href="/dra/submission.html#Instrument">Platform</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th>Instrument Model</th>
+      <th>Sequence Length</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ion torrent</td>
+      <td>Ion torrent PGM/Proton</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="pacbio-single-reads-standard-sequencing-">PacBio single reads (Standard sequencing) <a name="PacBio_standard"></a></h3>
+
+<h4 id="メタデータ-8">メタデータ</h4>
+
+<p>Spot (Read Spec)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Adapter Spec</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ATCTCTCTCTTTTCCTCCTCCTCCGTTGTTGTTGTTGAGAGAGAT</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Read Index</th>
+      <th>Read Class</th>
+      <th>Read Type</th>
+      <th>Ordering Method</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Application Read</td>
+      <td>Forward</td>
+      <td>BaseCoord = 1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Experiment XML (SPOT_DESCRIPTOR)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;SPOT_DESCRIPTOR&gt;
+  &lt;SPOT_DECODE_SPEC&gt;
+    &lt;READ_SPEC&gt;
+      &lt;READ_INDEX&gt;0&lt;/READ_INDEX&gt;
+      &lt;READ_CLASS&gt;Application Read&lt;/READ_CLASS&gt;
+      &lt;READ_TYPE&gt;Forward&lt;/READ_TYPE&gt;
+      &lt;BASE_COORD&gt;1&lt;/BASE_COORD&gt;
+    &lt;/READ_SPEC&gt;
+  &lt;/SPOT_DECODE_SPEC&gt;
+&lt;/SPOT_DESCRIPTOR&gt;
+</code></pre></div></div>
+
+<p><a href="/dra/submission.html#Instrument">Platform</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th>Instrument Model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pacbio Smart</td>
+      <td>PacBio RS</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Experiment Attribute</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tag</th>
+      <th>Value</th>
+      <th>Units</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sequencing Protocol</td>
+      <td>Standard sequencing</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Insert size</td>
+      <td>8000</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Experiment XML (EXPERIMENT_ATTRIBUTES)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;EXPERIMENT_ATTRIBUTES&gt;
+  &lt;EXPERIMENT_ATTRIBUTE&gt;
+    &lt;TAG&gt;Sequencing Protocol&lt;/TAG&gt;
+    &lt;VALUE&gt;Standard sequencing&lt;/VALUE&gt;
+  &lt;/EXPERIMENT_ATTRIBUTE&gt;
+  &lt;EXPERIMENT_ATTRIBUTE&gt;
+    &lt;TAG&gt;Insert size&lt;/TAG&gt;
+    &lt;VALUE&gt;8000&lt;/VALUE&gt;
+  &lt;/EXPERIMENT_ATTRIBUTE&gt;    
+&lt;/EXPERIMENT_ATTRIBUTES&gt;
+</code></pre></div></div>
+
+<h3 id="pacbio-single-reads-circular-consensus-sequencing-">PacBio single reads (Circular consensus sequencing) <a name="PacBio_CCS"></a></h3>
+
+<h4 id="メタデータ-9">メタデータ</h4>
+
+<p>Spot (Read Spec)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Read Index</th>
+      <th>Read Class</th>
+      <th>Read Type</th>
+      <th>Ordering Method</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Application Read</td>
+      <td>Other</td>
+      <td>BaseCoord = 1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Experiment XML (SPOT_DESCRIPTOR)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;SPOT_DESCRIPTOR&gt;
+  &lt;SPOT_DECODE_SPEC&gt;
+    &lt;READ_SPEC&gt;
+      &lt;READ_INDEX&gt;0&lt;/READ_INDEX&gt;
+      &lt;READ_CLASS&gt;Application Read&lt;/READ_CLASS&gt;
+      &lt;READ_TYPE&gt;Forward&lt;/READ_TYPE&gt;
+      &lt;BASE_COORD&gt;1&lt;/BASE_COORD&gt;
+    &lt;/READ_SPEC&gt;
+  &lt;/SPOT_DECODE_SPEC&gt;
+&lt;/SPOT_DESCRIPTOR&gt;
+</code></pre></div></div>
+
+<p><a href="/dra/submission.html#Instrument">Platform</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th>Instrument Model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pacbio Smart</td>
+      <td>PacBio RS</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Experiment Attribute</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tag</th>
+      <th>Value</th>
+      <th>Units</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sequencing Protocol</td>
+      <td>Circular consensus sequencing</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Insert size</td>
+      <td>700</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Experiment XML (EXPERIMENT_ATTRIBUTES)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;EXPERIMENT_ATTRIBUTES&gt;
+  &lt;EXPERIMENT_ATTRIBUTE&gt;
+    &lt;TAG&gt;Sequencing Protocol&lt;/TAG&gt;
+    &lt;VALUE&gt;Circular consensus sequencing&lt;/VALUE&gt;
+  &lt;/EXPERIMENT_ATTRIBUTE&gt;
+  &lt;EXPERIMENT_ATTRIBUTE&gt;
+    &lt;TAG&gt;Insert size&lt;/TAG&gt;
+    &lt;VALUE&gt;700&lt;/VALUE&gt;
+  &lt;/EXPERIMENT_ATTRIBUTE&gt;    
+&lt;/EXPERIMENT_ATTRIBUTES&gt;
+</code></pre></div></div>
+
+<h2 id="data-validation-でエラーになる典型的な例-">data validation でエラーになる典型的な例 <a name="errors"></a></h2>
+
+<p>data validation でエラーになった場合， validation
+プロセスを停止し，メタデータを修正するかデータファイルを再アップロードしてください。</p>
+
+<ul>
+  <li><a href="#no_application">Application read のないリード</a></li>
+  <li><a href="#inconsistent_base">矛盾する塩基座標を持つリード</a></li>
+  <li><a href="#cannot_specified">位置の特定できない Relative order を持ったリード</a></li>
+</ul>
+
+<h3 id="application-read-のないリード-">Application read のないリード <a name="no_application"></a></h3>
+
+<h4 id="リード-8">リード</h4>
+
+<p>Read composition</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Read Index :</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Read :</td>
+      <td>ATCCGG</td>
+      <td>CATCAGTTGAT…………………………………………………</td>
+    </tr>
+    <tr>
+      <td>Base Coordinate :</td>
+      <td>1</td>
+      <td><div class="float-left">7</div><div class="float-right">50</div></td>
+    </tr>
+    <tr>
+      <td>Read Type :</td>
+      <td>Primer</td>
+      <td>Linker <span class="red">(少なくとも一つの application を持っている必要がある)</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="矛盾する塩基座標を持つリード-">矛盾する塩基座標を持つリード <a name="inconsistent_base"></a></h3>
+
+<h4 id="リード-1">リード 1</h4>
+
+<p>Read composition</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Read Index :</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Read :</td>
+      <td>ATCCGG……………</td>
+      <td>CATCAG……………</td>
+    </tr>
+    <tr>
+      <td>Base Coordinate :</td>
+      <td>1</td>
+      <td><span class="red">1 (1 以上である必要がある)</span></td>
+    </tr>
+    <tr>
+      <td>Read Type :</td>
+      <td>Forward</td>
+      <td>Reverse</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="リード-2">リード 2</h4>
+
+<p>Read composition</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Read Index :</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Read :</td>
+      <td>TCAG</td>
+      <td>ATAGAGTTG………</td>
+      <td>TCGTATAACTTCGTATAATGTATGCTATACGAAGTT</td>
+    </tr>
+    <tr>
+      <td>Base Coordinate :</td>
+      <td>1</td>
+      <td>5</td>
+      <td><span class="red">4 (5 以上である必要がある)</span></td>
+    </tr>
+    <tr>
+      <td>Read Type :</td>
+      <td>Adapter</td>
+      <td>Forward</td>
+      <td>Reverse</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="リード-3">リード 3</h4>
+
+<p>Read composition</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Read Index :</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Read :</td>
+      <td>ATCCGGGTGTGTCATCAG</td>
+      <td>CATCAG……………</td>
+    </tr>
+    <tr>
+      <td>Base Coordinate :</td>
+      <td><span class="red">2 (1 から始まる必要がある)</span></td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Read Type :</td>
+      <td>Adapter</td>
+      <td>Forward</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="位置の特定できない-relative-order-を持ったリード-">位置の特定できない Relative order を持ったリード <a name="cannot_specified"></a></h3>
+
+<h4 id="リード-9">リード</h4>
+
+<p>Read composition</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Read Index :</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Read :</td>
+      <td>TCAG</td>
+      <td>ATAGA……………</td>
+      <td>…………………</td>
+      <td>CTCAT…………………………………………………………</td>
+    </tr>
+    <tr>
+      <td>Base Coordinate :</td>
+      <td>1</td>
+      <td>5</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Read Type :</td>
+      <td>Adapter</td>
+      <td>Forward</td>
+      <td>Linker</td>
+      <td>Forward <span class="red">(この forward の位置が特定できない)</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="メタデータ-10">メタデータ</h4>
+
+<p>Spot (Read Spec)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Read Index</th>
+      <th>Read Class</th>
+      <th>Read Type</th>
+      <th>Ordering Method</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Technical Read</td>
+      <td>Adapter</td>
+      <td>BaseCoord = 1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Application Read</td>
+      <td>Forward</td>
+      <td>BaseCoord = 5</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Technical Read</td>
+      <td>Linker</td>
+      <td>RelativeOrder</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Application Read</td>
+      <td>Forward</td>
+      <td>RelativeOrder</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="experiment-pipeline-">Experiment (Pipeline) <a name="Experiment_pipeline"></a></h2>
+
+<h3 id="experiment-xml-pipeline-の例1-">Experiment XML Pipeline の例1 <a name="pipeline1"></a></h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;PROCESSING&gt;
+  &lt;PIPELINE&gt;
+    &lt;PIPE_SECTION section_name="Base Caller"&gt;
+      &lt;STEP_INDEX&gt;1&lt;/STEP_INDEX&gt;
+      &lt;PREV_STEP_INDEX&gt;NIL&lt;/PREV_STEP_INDEX&gt;
+      &lt;PROGRAM&gt;Casava&lt;/PROGRAM&gt;
+      &lt;VERSION&gt;V1.8.3_V3.2.1&lt;/VERSION&gt;
+      &lt;NOTES/&gt;
+    &lt;/PIPE_SECTION&gt;
+    &lt;PIPE_SECTION section_name="Quality Scores"&gt;
+      &lt;STEP_INDEX&gt;2&lt;/STEP_INDEX&gt;
+      &lt;PREV_STEP_INDEX&gt;1&lt;/PREV_STEP_INDEX&gt;
+      &lt;PROGRAM&gt;Casava&lt;/PROGRAM&gt;
+      &lt;VERSION&gt;V1.8.3_V3.2.1&lt;/VERSION&gt;
+      &lt;NOTES/&gt;
+    &lt;/PIPE_SECTION&gt;
+  &lt;/PIPELINE&gt;
+&lt;/PROCESSING&gt;
+</code></pre></div></div>
+
+<h3 id="experiment-xml-pipeline-の例2-">Experiment XML Pipeline の例2 <a name="pipeline1"></a></h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;PROCESSING&gt;
+  &lt;PIPELINE&gt;
+    &lt;PIPE_SECTION&gt;
+      &lt;STEP_INDEX&gt;1&lt;/STEP_INDEX&gt;
+      &lt;PREV_STEP_INDEX/&gt;
+      &lt;PROGRAM&gt;bwa&lt;/PROGRAM&gt;
+      &lt;VERSION&gt;0.5.9-r16&lt;/VERSION&gt;
+      &lt;NOTES&gt;BWA-MEM algorithm alignment&lt;/NOTES&gt;
+    &lt;/PIPE_SECTION&gt;
+    &lt;PIPE_SECTION&gt;
+      &lt;STEP_INDEX&gt;2&lt;/STEP_INDEX&gt;
+      &lt;PREV_STEP_INDEX&gt;1&lt;/PREV_STEP_INDEX&gt;
+      &lt;PROGRAM&gt;Picard&lt;/PROGRAM&gt;
+      &lt;VERSION&gt;1.74(1243)&lt;/VERSION&gt;
+      &lt;NOTES&gt;Duplicate reads marked&lt;/NOTES&gt;
+    &lt;/PIPE_SECTION&gt;
+    &lt;PIPE_SECTION&gt;
+      &lt;STEP_INDEX&gt;3&lt;/STEP_INDEX&gt;
+      &lt;PREV_STEP_INDEX&gt;2&lt;/PREV_STEP_INDEX&gt;
+      &lt;PROGRAM&gt;GATK&lt;/PROGRAM&gt;
+      &lt;VERSION&gt;1.4-29&lt;/VERSION&gt;
+      &lt;NOTES&gt;Indel realignment&lt;/NOTES&gt;
+    &lt;/PIPE_SECTION&gt;
+    &lt;PIPE_SECTION&gt;
+      &lt;STEP_INDEX&gt;4&lt;/STEP_INDEX&gt;
+      &lt;PREV_STEP_INDEX&gt;3&lt;/PREV_STEP_INDEX&gt;
+      &lt;PROGRAM&gt;GATK&lt;/PROGRAM&gt;
+      &lt;VERSION&gt;1.4-29&lt;/VERSION&gt;
+      &lt;NOTES&gt;Base quality score recalibration&lt;/NOTES&gt;
+    &lt;/PIPE_SECTION&gt;
+  &lt;/PIPELINE&gt;
+&lt;/PROCESSING&gt;
+</code></pre></div></div>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

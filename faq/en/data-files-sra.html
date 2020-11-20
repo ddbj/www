@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How are my data files processed?</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title -small">
+      <h1 class="title">How are my data files processed?</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/faq/en/">FAQ</a>
+            
+          </li>
+          <li>
+            <a>How are my data files processed?</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<main id="SimpleView">
+  <div class="inner">
+    <article class="md-content">
+      <p>Uploaded data files are processed per Run. All files under a Run are merged into single <a href="http://www.ncbi.nlm.nih.gov/books/NBK47539/#SRA_Overview_BK.SRA_Architecture">binary SRA file</a> by using <a href="http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc">SRA toolkit</a>. During this conversion, length and format of all reads are checked.</p>
+<p>Read names are editted and identifiers (DRR accession number + serial number) are automatically inserted (<a href="http://trace.ncbi.nlm.nih.gov/Traces/sra/?view=run_browser&amp;run=DRR000001">example: DRR000001</a>). <span class="red">Original read names should be unique in a Run.</span> A DRR accession number is used as a filename. If the <a href="/dra/submission.html#File_Type">"generic_fastq"</a> is selected for the filetype, read names are replaced with the DRR accession number + serial number. (<a href="http://trace.ncbi.nlm.nih.gov/Traces/sra/?view=run_browser&amp;run=DRR030615">example: DRR030615</a>).</p>
+<p class="no_bottom">Example of read names:</p>
+<pre class="code"><code>@DRR000001.1 3060N:7:1:1116:340 length=36nnGATGGTAAGATAGAAGCAGTTGAAGTTTACAAACCGnn+DRR000001.1 3060N:7:1:1116:340 length=36nnIIIII%IIIIIIIIII7IHII26:C6EI)+,9,%%*nn@DRR000001.2 3060N:7:1:1114:186 length=36nnGATATTGGCCTGCAGAAGTTCTTCCTGAAAGATGATnn+DRR000001.2 3060N:7:1:1114:186 length=36nnIIIIIIIIIIIIIGI8IIDI6II;?:,+9+&gt;.A1,Inn@DRR000001.3 3060N:7:1:945:361 length=36nnGTCAGGATCGGTCTCGCCTTTTAATAGAGGGAGATAnn+DRR000001.3 3060N:7:1:945:361 length=36nnIIIIIIIIIIIIIIII=3IIII&gt;&gt;I;-52/./+.I,</code></pre>
+<p>When "PAIRED" is selected in Experiment, paired reads are grouped in a Run.</p>
+<p>DRA generates fastq from SRA files by using <a href="http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc">SRA toolkit</a> and provide sequencing data in both file formats.</p>
+<p>More than two fastq files are provided for paired reads. Paired reads are divided into a file with "_1" (example, DRR000001_1.fastq.bz2) and "_2" (example, DRR000001_2.fastq.bz2). Reads without pair are provided in a file without "_1" nor "_2" (example, DRR000001.fastq.bz2).</p>
+
+    </article>
+  </div>
+</main>
+
+  
+
+</body>
+</html>

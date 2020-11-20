@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>セカンダリアクセッション番号とは何ですか</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title -small">
+      <h1 class="title">セカンダリアクセッション番号とは何ですか</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/faq/ja/">よくある質問</a>
+            
+          </li>
+          <li>
+            <a>セカンダリアクセッション番号とは何ですか</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<main id="SimpleView">
+  <div class="inner">
+    <article class="md-content">
+      <p>DDBJ を含む<a href="/insdc.html">国際塩基配列データベース</a> が、登録された塩基配列データに対して発行する番号を<a href="/documents/accessions.html">アクセッション番号 (accession number)</a> と呼んでいます。<br /><a href="/ddbj/flat-file.html">DDBJ 公開形式 (flat file)</a> においては <a href="/ddbj/flat-file.html#AccessionB">ACCESSION</a> 行に記載されています。</p>
+<p>複数エントリの統合、大幅な内容変更など、既に登録された塩基配列の更新に相当する場合でも、新規に登録し直して アクセッション番号を発行することがあります。 この際に、新規のアクセッション番号 (プライマリアクセッション番号) に対して、既存のアクセッション番号をセカンダリアクセッション番号とすることがあります。</p>
+<p>flat file には、先頭にプライマリアクセッション番号、２つ目以降にセカンダリアクセッション番号を記載します。</p>
+<pre class="flatfile"><strong>例</strong>ACCESSION   <span style="border-bottom:solid 3px #ff0000;">AB999999</span> <span style="border-bottom:solid 3px #0000ff;">AB888888</span> <span style="border-bottom:solid 3px #0000ff;">AB777777</span></pre>
+<dl>
+  <dd><span style="color: #ff0000">AB999999 -- primary accession number</span></dd>
+  <dd><span style="color: #0000ff">AB888888 AB777777 -- secondary accession number</span></dd>
+</dl>
+<p>通常は、プライマリアクセッション番号とセカンダリアクセッション番号のどちらで検索しても、変更後のデータが返ります。</p>
+<p>ただし、セカンダリアクセッション番号のエントリが既に公開済みの場合、データベース上から抹消される訳ではありませんので、<a href="http://getentry.ddbj.nig.ac.jp/top-j.html">getentry</a> では、直接番号を指定することで検索と閲覧が可能です。</p>
+<dl><dt>参考</dt>
+  <dd>
+    <ul>
+      <li><a href="/services/getentry.html">getentry ヘルプ</a></li>
+      <li><a href="/insdc-status-e">INSDC Status Document</a>: Replaced</li>
+      <li><a href="/faq/ja/why-retracted-data-available.html">公開を取り消したデータが現在も参照できるのはなぜですか?</a></li>
+    </ul>
+  </dd>
+</dl>
+
+    </article>
+  </div>
+</main>
+
+  
+
+</body>
+</html>

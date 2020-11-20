@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trace Archive</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">Trace Archive</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/dta">dta</a>
+          </li>
+          <li>
+            <a href="">Trace Archive</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="trace-archive-overview-">Trace Archive overview <a name="overview"></a></h2>
+
+<p><a href="/index-e.html">DDBJ Trace Archive (DTA)</a>is a permanent repository of
+DNA sequence chromatograms (traces), base calls, and quality estimates
+for single-pass reads from various large-scale sequencing projects. DTA
+is a member of the <a href="/insdc-e.html">International Nucleotide Sequence Database
+Collaboration (INSDC)</a>and collects the data in a
+collaboration with
+<a href="https://www.ncbi.nlm.nih.gov/Traces/trace.cgi">NCBI</a>and
+<a href="https://www.ebi.ac.uk/ena/">EBI</a>. <a href="https://www.ncbi.nlm.nih.gov/Traces/trace.cgi">NCBI Trace
+Archive</a>issues and
+manages IDs.</p>
+
+<p>Released data can be searched and retrieved at the <a href="https://www.ncbi.nlm.nih.gov/Traces/trace.cgi">NCBI Trace
+Archive</a>.</p>
+
+<div class="attention red">
+  <p><a href="/dra/submission.html#dra">DDBJ Sequence Read Archive</a>accepts trace
+data. Please consider to submit trace data to DRA.</p>
+</div>
+
+<h2 id="metadata-">Metadata <a id="metadata"></a></h2>
+
+<p>There are fields that are required for specific combinations of
+<a href="#STRATEGY">STRATEGY</a>and <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>. You may
+check requirements in the <a href="/assets/files/submission/field_matrix_current.xls">Validation
+Table</a>. Metadata can be
+searched at the <a href="https://www.ncbi.nlm.nih.gov/Traces/trace.cgi?cmd=retrieve&amp;f=retrieve&amp;m=obtain&amp;s=search">NCBI Trace
+Archive</a>.</p>
+
+<p><a href="/assets/files/specification/trace_rfc.pdf">Trace Archive RFC</a></p>
+
+<p>Required<span class="red">*</span><br />
+May be required, depending upon the trace type and strategy
+employed<span class="conditionally_required">*</span></p>
+
+<h3 id="metadata-field-list-">Metadata Field List <a name="Metadata-Field-List"></a></h3>
+
+<dl>
+  <dt><a href="#ACCESSION">ACCESSION</a><a name="ACCESSION"></a></dt>
+  <dd>DDBJ/EMBL/Genbank accession number
+
+    <p>  Type: varchar(30)<br />
+  Example: AC22227</p>
+
+    <p>The <a href="#ACCESSION">ACCESSION</a> is assigned upon deposition to a public repository (DDBJ/EMBL/Genbank). This field will not be applicable to all trace types (primarily WGS). However, if this field contains a validaccession identifier correlation between the primary sequence data (in Trace) and the secondary sequence data (in the public repository) is facilitated.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#AMPLIFICATION_FORWARD">AMPLIFICATION_FORWARD</a><a name="AMPLIFICATION_FORWARD"></a><span class="conditionally_required">*</span></dt>
+  <dd>The forward amplification primer sequence
+
+    <p>  Type: varchar(100)<br />
+  Example: GGATTCTGACTAACGAGC</p>
+
+    <p>The <a href="#AMPLIFICATION_FORWARD">AMPLIFICATION_FORWARD</a> field is to allow submitters to define the primers used to amplify templates for sequencing. This field is required when <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=PCR or RT-PCR.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#AMPLIFICATION_REVERSE">AMPLIFICATION_REVERSE</a><a name="AMPLIFICATION_REVERSE"></a><span class="conditionally_required">*</span></dt>
+  <dd>The reverse amplification primer sequence.
+
+    <p>  Type: varchar(100)<br />
+  Example: GGATTCTGACTAACGAGC</p>
+
+    <p>The <a href="#AMPLIFICATION_REVERSE">AMPLIFICATION_REVERSE</a> field is to allow submitters to define the primers used to amplify templates for sequencing. This field is required when <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=PCR or RT-PCR.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#AMPLIFICATION_SIZE">AMPLIFICATION_SIZE</a><a name="AMPLIFICATION_SIZE"></a></dt>
+  <dd>The expected amplification size for a pair of primers.
+
+    <p>  Type: int<br />
+  Example: 500</p>
+
+    <p>The <a href="#AMPLIFICATION_SIZE">AMPLIFICATION_SIZE</a> field allows submitters to define the expected amplification size for a pair of primers (defined in the <a href="#AMPLIFICATION_FORWARD">AMPLIFICATION_FORWARD</a> and <a href="#AMPLIFICATION_REVERSE">AMPLIFICATION_REVERSE</a>fields). This number should be given in base pairs. If <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=PCR, the amplification size is based on amplification of genomic DNA. If the <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=RT-PCR, then the amplification size is based on amplification of transcript.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#ANONYMIZED_ID">ANONYMIZED_ID</a><a name="ANONYMIZED_ID"></a></dt>
+  <dd>Anonymous ID for an individual.
+
+    <p>  Type: varchar(100)<br />
+  Example:2222anonym</p>
+
+    <p>Used in projects to maintain the anonymity of donors. In many cases, there may be a controlled access database that can map many anonymized_ids in the trace archive to a single individual id for which phenotypic information may be available.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#ATTEMPT">ATTEMPT</a><a name="ATTEMPT"></a></dt>
+  <dd>Number of times the sequencing project has been attempted by the
+center and/or submitted to the Trace Archive.
+
+    <p>  Type: tinyint(1-255)<br />
+  Example: 2</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BASE_FILE">BASE_FILE</a><a name="BASE_FILE"></a></dt>
+  <dd>File name with base calls.
+
+    <p>  Type: varchar(200)<br />
+  Example: ./mytraces/123clone.fasta</p>
+
+    <p>Trace files which do not include the basecalls must provide this information in a separate file. The file designations are recorde din the <a href="#BASE_FILE">BASE_FILE</a> field of the metadata file. If basecalls are provided in separate files the information in these files will overwrite any information in the trace (usually *.scf) file. If the base calls that would be provided in the <a href="#BASE_FILE">BASE_FILE</a> are the same as the information in the trace file, DO NOT PROVIDE THE FILE. If the center provides the<a href="#BASE_FILE">BASE_FILE</a> and<a href="#QUAL_FILE">QUAL_FILE</a>, then the peak index information should also be provided in a file called<a href="#PEAK_FILE">PEAK_FILE</a>.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CENTER_NAME">CENTER_NAME</a><a name="CENTER_NAME"></a><span class="red">*</span></dt>
+  <dd>Name of the sequencing center.
+
+    <p>  Type: varchar(50)<br />
+  Example: WUGSC</p>
+
+    <p>Sequencing centers wishing to submit data must contact the DDBJ Trace Archive administrators to determine a center abbreviation. This abbreviation issued in the <a href="#CENTER_NAME">CENTER_NAME</a>field. This field has a controlled vocabulary. For the complete list of submitting centers see: <a href="https://www.ncbi.nlm.nih.gov/Traces/trace.cgi?view=submitting_centers">http://www.ncbi.nlm.nih.gov/Traces/trace.cgi?view=submitting_centers</a></p>
+
+    <p><span class="red">These center names are controlled separately from those of the Sequence Read Archive</span></p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CENTER_PROJECT">CENTER_PROJECT</a><a name="CENTER_PROJECT"></a><span class="red">*</span></dt>
+  <dd>Center defined project name.
+
+    <p>  Type: varchar(100)<br />
+  Example: HBBB</p>
+
+    <p>The <a href="#CENTER_PROJECT">CENTER_PROJECT</a> reflects a sequencing center’s internal designation for a specific sequencing project.This field can be useful for grouping related traces.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CHEMISTRY">CHEMISTRY</a><a name="CHEMISTRY"></a></dt>
+  <dd>Description of the chemistry used in the sequencing reaction.
+
+    <p>  Type: varchar(50)<br />
+  Example: BIGDYEV3.0</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CHEMISTRY_TYPE">CHEMISTRY_TYPE</a><a name="CHEMISTRY_TYPE"></a></dt>
+  <dd>Type of chemistry used in the sequencing reaction.
+
+    <p>  Type: char(50)<br />
+  Example: P</p>
+
+    <p>The <a href="#CHEMISTRY_TYPE">CHEMISTRY_TYPE</a> uses a controlled list. <br />  Accepted values are:<br /> PrimerTerminatorp=primer; t=terminator</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CHROMOSOME">CHROMOSOME</a><a name="CHROMOSOME"></a></dt>
+  <dd>Chromosome to which the trace is assigned.
+
+    <p>  Type: varchar(8)<br />
+  Example: 11</p>
+
+    <p>The <a href="#CHROMOSOME">CHROMOSOME</a>indicates to which chromosome a trace has been assigned. Gene names or cytogenetic positions are not appropriate substitutes for chromosome information.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CLIP_QUALITY_LEFT">CLIP_QUALITY_LEFT</a><a name="CLIP_QUALITY_LEFT"></a></dt>
+  <dd>Left clip of the read, in base pairs, based on quality analysis.
+
+    <p>  Type: int<br />
+  Example: 56</p>
+
+    <p>The <a href="#CLIP_QUALITY_LEFT">CLIP_QUALITY_LEFT</a> field indicates the base at the beginning of the sequence at which the read should be clipped due to poor quality sequence. The given value would be the first base of the high quality region of the trace.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CLIP_QUALITY_RIGHT">CLIP_QUALITY_RIGHT</a><a name="CLIP_QUALITY_RIGHT"></a></dt>
+  <dd>Right clip of the read, in base pairs, based on quality analysis.
+
+    <p>  Type: int<br />
+  Example: 256</p>
+
+    <p>The <a href="#CLIP_QUALITY_RIGHT">CLIP_QUALITY_RIGHT</a> field indicates the base at the end of the sequence at which the read should be clipped due to poor quality sequence. The given value would be the last base of the high quality region of the trace.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CLIP_VECTOR_LEFT">CLIP_VECTOR_LEFT</a><a name="CLIP_VECTOR_LEFT"></a><span class="conditionally_required">*</span></dt>
+  <dd>Left clip of the read, in base pairs, based on vector sequence.
+
+    <p>  Type: int<br />
+  Example: 75</p>
+
+    <p>The <a href="#CLIP_VECTOR_LEFT">CLIP_VECTOR_LEFT</a> field indicates the base at the beginning of the sequence at which the read should be clipped due to vector sequence. The given value would be the first base of non-vector sequence. This field is required for almost all combinations of <a href="#STRATEGY">STRATEGY</a> and <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>. This information can be omitted if the <a href="#INSERT_FLANK_LEFT">INSERT_FLANK_LEFT</a> field is populated or <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> is PCR or RT-PCR.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CLIP_VECTOR_RIGHT">CLIP_VECTOR_RIGHT</a><a name="CLIP_VECTOR_RIGHT"></a><span class="conditionally_required">*</span></dt>
+  <dd>Right clip of the read, in base pairs, based on vector sequence.
+
+    <p>  Type: int<br />
+  Example: 275</p>
+
+    <p>The <a href="#CLIP_VECTOR_RIGHT">CLIP_VECTOR_RIGHT</a> field indicates the base at the end of the sequence at which the read should be clipped due to vector sequence. The given value would be the last non-vector sequence. This field is required for almost all combinations of <a href="#STRATEGY">STRATEGY</a>and <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>. This information can be omitted if the <a href="#INSERT_FLANK_RIGHT">INSERT_FLANK_RIGHT</a> field is populated or <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> is PCR or RT-PCR.NOTE: Many centers combine vector and quality analysis, and thus have only one set of clip values. Inthis case, the set of values should be placed in the <a href="#CLIP_VECTOR_LEFT">CLIP_VECTOR_LEFT</a>/<a href="#CLIP_VECTOR_RIGHT">CLIP_VECTOR_RIGHT</a> fields.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CLONE_ID">CLONE_ID</a><a name="CLONE_ID"></a><span class="conditionally_required">*</span></dt>
+  <dd>The name of the clone from which the trace was derived.
+
+    <p>  Type: varchar(30)<br />
+  Example: RP23-1123F10</p>
+
+    <p>The <a href="#CLONE_ID">CLONE_ID</a> field issued to store the identifier related to an individual clone, for example a BAC clone, PAC clone or cDNA clone. If the clone is registered with the clone registry(<a href="https://www.ncbi.nlm.nih.gov/clone/">http://www.ncbi.nlm.nih.gov/clone/</a>), standard clone registry nomenclature (<a href="https://www.ncbi.nlm.nih.gov/clone/content/overview/">http://www.ncbi.nlm.nih.gov/clone/content/overview/</a>) should be used.<br />This field is required for the following combination of <a href="#STRATEGY">STRATEGY</a>and <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>:<br />   <a href="#STRATEGY">STRATEGY</a>=cDNA;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any<br />   <a href="#STRATEGY">STRATEGY</a>=EST;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any<br />  <a href="#STRATEGY">STRATEGY</a>=CLONEEND;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=CLONEEND <br />  <a href="#STRATEGY">STRATEGY</a>=CLONE;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any<br />   <a href="#STRATEGY">STRATEGY</a>=ENCODE;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=SHOTGUN;<br />   PrimerWalk; CLONEEND <a href="#STRATEGY">STRATEGY</a>=FINISHING;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CLONE_ID_LIST">CLONE_ID_LIST</a><a name="CLONE_ID_LIST"></a><span class="conditionally_required">*</span></dt>
+  <dd>Semi-colon delimited list of clones if the Strategy is PoolClone.
+
+    <p>  Type: varchar(30)<br />
+  Example: RP23-200A2;RP23-500P1</p>
+
+    <p>The <a href="#CLONE_ID_LIST">CLONE_ID_LIST</a>field is used only if <a href="#STRATEGY">STRATEGY</a>=PoolClone.
+In this case, the list of clones is provided as a semicolon delimited list. If the clones are registered with the Clone Registry (<a href="https://www.ncbi.nlm.nih.gov/clone/">http://www.ncbi.nlm.nih.gov/clone/</a>), standard clone registry nomenclature (<a href="https://www.ncbi.nlm.nih.gov/clone/content/overview/">http://www.ncbi.nlm.nih.gov/clone/content/overview/</a>) should be used (see <a href="#CLONE_ID">CLONE_ID</a> field).Note: The list of clones is not limited, but the size of the individual clone within the list is limited to 30 bytes.<br />
+This field is required for the following combination of <a href="#STRATEGY">STRATEGY</a> and <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>:   <a href="#STRATEGY">STRATEGY</a>=PoolClone;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#COLLECTION_DATE">COLLECTION_DATE</a><a name="COLLECTION_DATE"></a><span class="conditionally_required">*</span></dt>
+  <dd>The full date, in “Mar 2 2006 12:00AM” format, on which an
+environmental sample was collected.
+
+    <p>  Type: datetime<br />
+  Example: Mar 2 2006 12:00AM</p>
+
+    <p>The <a href="#COLLECTION_DATE">COLLECTION_DATE</a> field is used to define the date and time on which an environmental sample was collected.<br /> This field is required for the following combination of <a href="#STRATEGY">STRATEGY</a>and <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>: <br /> <a href="#STRATEGY">STRATEGY</a>=Env Sample-Geo; <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any  <br /> <a href="#STRATEGY">STRATEGY</a>=Env Sample-Host; <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CVECTOR_ACCESSION">CVECTOR_ACCESSION</a><a name="CVECTOR_ACCESSION"></a></dt>
+  <dd>Repository (DDBJ/EMBL/Genbank) accession identifier for the cloning vector.
+
+    <p>  Type: varchar(50)<br />
+  Example: AY451994</p>
+
+    <p>The <a href="#CVECTOR_ACCESSION">CVECTOR_ACCESSION</a> field holds the accession number for the cloning vector used. This cloning vector relates to the clone named in the <a href="#CLONE_ID">CLONE_ID</a> field.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#CVECTOR_CODE">CVECTOR_CODE</a><a name="CVECTOR_CODE"></a></dt>
+  <dd>Center defined code for the cloning vector.
+
+    <p>  Type: varchar(50)<br />
+  Example: PBACE3.6</p>
+
+    <p>The <a href="#CVECTOR_CODE">CVECTOR_CODE</a> field holds the user defined identifier for the cloning vector. Submitters are encouraged to submit all vector sequence information to public repositories.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#DEPTH">DEPTH</a><a name="DEPTH"></a></dt>
+  <dd>Depth (in meters) at which an environmental sample was collected.
+
+    <p>  Type: float<br />
+  Example: 10M</p>
+
+    <p>The <a href="#DEPTH">DEPTH</a> field is applicable to water samples and earth samples. If the value of this field is NULL, it is anticipated the sample was taken from the surface of the environment. While this field is only applicable to environmental samples, it is not required.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#ELEVATION">ELEVATION</a><a name="ELEVATION"></a></dt>
+  <dd>Elevation (in meters) at which an environmental sample was
+collected.
+
+    <p>  Type: float<br />
+  Example: 500</p>
+
+    <p>If the value of this field is NULL it is assumed the data were obtained at sea level. The field <a href="#ELEVATION">ELEVATION</a> is only applicable to some environmental sample data, but is not a required field.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#ENVIRONMENT_TYPE">ENVIRONMENT_TYPE</a><a name="ENVIRONMENT_TYPE"></a><span class="conditionally_required">*</span></dt>
+  <dd>Type of environment from which an environmental sample was
+collected.
+
+    <p>  Type: varchar(250)<br />
+  Example: sea water</p>
+
+    <p>The <a href="#ENVIRONMENT_TYPE">ENVIRONMENT_TYPE</a> field is used to describe the specific environment from which an environmental sample was taken. While the <a href="#LATITUDE">LATITUDE</a> and <a href="#LONGITUDE">LONGITUDE</a> fields describe the location many types of environmental types could exist at this location (for example, soil, sludge, tree roots, etc).<br />
+This field would be required for the following combination of <a href="#STRATEGY">STRATEGY</a> and <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>:   <a href="#STRATEGY">STRATEGY</a>=Env Sample -Geo; <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#EXTENDED_DATA">EXTENDED_DATA</a><a name="EXTENDED_DATA"></a></dt>
+  <dd>Extra ancillary information wrapped around in a EXTENDED_DATA
+block, where actual values are provided with a special tag.
+
+    <p>  Type: varchar()<br />
+  Example:</p>
+
+    <p>&lt;extended_data&gt;<br />
+        &lt;field name=’SamplingSiteMonthChlorophyllLevel’&gt;1.4 mg_mm&lt;/field&gt;<br />
+        &lt;field name=’SamplingSiteYearlyChlorophyllLevel’&gt;1.12 mg_mm&lt;/field&gt;<br />
+        &lt;field name=’SamplingSiteYearlyChlorophyllLevelStdError’&gt;0.19 mg_mm&lt;/field&gt;<br />
+&lt;/extended_data&gt;<br />
+The ‘=’ sign and the field separator character ‘|’ should be
+excluded from names and their values. No other validity checks will
+be performed on the data.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+<dl>
+  <dt><a href="#FEATURE_ID_FILE">FEATURE_ID_FILE</a><a name="FEATURE_ID_FILE"></a></dt>
+  <dd>File describing the features and their locations on a chip.
+
+    <p>  Type: varchar(200)<br />
+  Example: ./mytraces/chip2.cdf</p>
+
+    <p>The <a href="#FEATURE_ID_FILE">FEATURE_ID_FILE</a> provides the location and sequence of the features for a given chip when <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=”CHIP”.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#FEATURE_ID_FILE_NAME">FEATURE_ID_FILE_NAME</a><a name="FEATURE_ID_FILE_NAME"></a><span class="conditionally_required">*</span></dt>
+  <dd>Reference to a common FEATURE_ID_FILE which should be submitted first.
+
+    <p>  Type: varchar(200)<br />
+  Example:</p>
+
+    <p>This field is required when <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=”CHIP”.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#FEATURE_SIGNAL_FILE">FEATURE_SIGNAL_FILE</a><a name="FEATURE_SIGNAL_FILE"></a></dt>
+  <dd>File giving the signal and variance for features on a chip.
+
+    <p>  Type: varchar(200)<br />
+  Example: ./mytraces/chip2.signal</p>
+
+    <p>The <a href="#FEATURE_SIGNAL_FILE">FEATURE_SIGNAL_FILE</a> provides the signal and variance of signal for the features on a given chip when <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=”CHIP”.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#FEATURE_SIGNAL_FILE_NAME">FEATURE_SIGNAL_FILE_NAME</a><a name="FEATURE_SIGNAL_FILE_NAME"></a><span class="conditionally_required">*</span></dt>
+  <dd>Reference to a common FEATURE_SIGNAL_FILE which should be
+submitted first.
+
+    <p>  Type: varchar(200)<br />
+  Example:</p>
+
+    <p>This field is required when <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=”CHIP”.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#GENE_NAME">GENE_NAME</a><a name="GENE_NAME"></a></dt>
+  <dd>Gene name or some other common identifier.
+
+    <p>  Type: varchar(100)<br />
+  Example: transporter 1</p>
+
+    <p>Free text. Mainly this field would be for <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=’Re-sequencing’ or’ENCODE’. When a group is analyzing a particular gene, they may want to refer to that gene by it’s name or some other common identifier.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#HI_FILTER_SIZE">HI_FILTER_SIZE</a><a name="HI_FILTER_SIZE"></a></dt>
+  <dd>The largest filter used to stratify an environmental sample.
+
+    <p>  Type: varchar(50)<br />
+  Example: 50 micron</p>
+
+    <p>The <a href="#HI_FILTER_SIZE">HI_FILTER_SIZE</a> field is applicable only to environmental sample data but is not a required field.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#HOST_CONDITION">HOST_CONDITION</a><a name="HOST_CONDITION"></a></dt>
+  <dd>The condition of the host from which an environmental sample was
+obtained.
+
+    <p>  Type: varchar(100)<br />
+  Example: HIV-positive</p>
+
+    <p>The <a href="#HOST_CONDITION">HOST_CONDITION</a> field is only applicable to environmental sample data and is used to describe the condition (healthy, sick, etc) of the host from which a sample was taken.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#HOST_ID">HOST_ID</a><a name="HOST_ID"></a><span class="conditionally_required">*</span></dt>
+  <dd>Unique identifier for the specific host from which an environmental sample was taken.
+
+    <p>  Type: varchar(100)<br />
+  Example: yerkes pedigree #C0479 ‘Clint’</p>
+
+    <p>The <a href="#HOST_IDENTIFIER">HOST_IDENTIFIER</a> field is only applicable to environmental sample data and is used to capture the unique name for the specific host from which a sample was obtained.  <br />
+This field would be required for the following combination of<a href="#STRATEGY">STRATEGY</a> and <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>:   <a href="#STRATEGY">STRATEGY</a>=Env Sample-Host; <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#HOST_LOCATION">HOST_LOCATION</a><a name="HOST_LOCATION"></a><span class="conditionally_required">*</span></dt>
+  <dd>Specific location on the host from which an environmental sample was collected.
+
+    <p>  Type: varchar(100)<br />
+  Example: rumen</p>
+
+    <p>The <a href="#HOST_LOCATION">HOST_LOCATION</a> field is only applicable to environmental sample data and is used to describe the specific part of the host from which the sample was obtained, for   example: dental plaque, hindgut, root surfaces.<br />  This field would be required for the following combination of<a href="#STRATEGY">STRATEGY</a> and <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>:   <a href="#STRATEGY">STRATEGY</a>=Env Sample-Host; <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#HOST_SPECIES">HOST_SPECIES</a><a name="HOST_SPECIES"></a><span class="conditionally_required">*</span></dt>
+  <dd>The host from which an environmental sample was obtained.
+
+    <p>  Type: varchar(100)<br />
+  Example: Pan troglodytes</p>
+
+    <p>The <a href="#HOST_SPECIES">HOST_SPECIES</a> field is only applicable to environmental sample data. <br /> 
+This field would be required for the following combination of <a href="#STRATEGY">STRATEGY</a> and <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>:   <a href="#STRATEGY">STRATEGY</a>=Env Sample-Host; <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#INDIVIDUAL_ID">INDIVIDUAL_ID</a><a name="INDIVIDUAL_ID"></a></dt>
+  <dd>Publicly available identifier to denote a specific individual or
+sample from which a trace was derived.
+
+    <p>  Type: varchar(100)<br />
+  Example: NA12345</p>
+
+    <p>The <a href="#INDIVIDUAL_ID">INDIVIDUAL_ID</a>field provides a center specific unique id that can associate as pecific trace to an individual. This will be used primarily for population based studies.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#INSERT_FLANK_LEFT">INSERT_FLANK_LEFT</a><a name="INSERT_FLANK_LEFT"></a><span class="conditionally_required">*</span></dt>
+  <dd>Flanking sequence at the cloning junction.
+
+    <p>  Type: varchar(100)<br />
+  Example: AAGGTGCGATGCAGTGGCAGTAGCAGTGTCGACGTGACGATTCGTCCGGA</p>
+
+    <p>The <a href="#INSERT_FLANK_LEFT">INSERT_FLANK_LEFT</a> field should provide from 50 up to 100 bases of sequence (including linkers) to the left of the cloning junction. This information will allow users to perform their own vector trimming of reads. This field is required for almost all combinations of <a href="#STRATEGY">STRATEGY</a> and <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>. This field can be omitted if <a href="#CLIP_VECTOR_LEFT">CLIP_VECTOR_LEFT</a> is populated.However, <a href="#INSERT_FLANK_LEFT">INSERT_FLANK_LEFT</a> is the preferred choice. If there was no cloning step involved in the sequencing, please populate the field with ‘NONE’.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#INSERT_FLANK_RIGHT">INSERT_FLANK_RIGHT</a><a name="INSERT_FLANK_RIGHT"></a><span class="conditionally_required">*</span></dt>
+  <dd>Flanking sequence at the cloning junction.
+
+    <p>  Type: varchar(100)<br />
+  Example: AAGGCGCGATGCAGTGAGCGAGGCTGACGTCGGCTAGCGTCGCGTCGGGT</p>
+
+    <p>The <a href="#INSERT_FLANK_RIGHT">INSERT_FLANK_RIGHT</a> field should provide from 50 up to 100 bases of sequence (including linkers) to the right of the cloning junction. This information will allow users to perform their own vector trimming of reads. This field is required for almost all combinations of <a href="#STRATEGY">STRATEGY</a> and <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>. This field can be omitted if <a href="#CLIP_VECTOR_RIGHT">CLIP_VECTOR_RIGHT</a> is populated.However, <a href="#INSERT_FLANK_RIGHT">INSERT_FLANK_RIGHT</a> is the preferred choice. If there was no cloning step involved in the sequencing, please populate the field with ‘NONE’. It is anticipated that if <a href="#INSERT_FLANK_LEFT">INSERT_FLANK_LEFT</a> is populated that <a href="#INSERT_FLANK_RIGHT">INSERT_FLANK_RIGHT</a> will also be populated. It is not anticipated that a mixture of clip values and junction sequence will be specified. (i.e. <a href="#CLIP_VECTOR_LEFT">CLIP_VECTOR_LEFT</a> and<a href="#INSERT_FLANK_RIGHT">INSERT_FLANK_RIGHT</a> populated for the same record.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#INSERT_SIZE">INSERT_SIZE</a><a name="INSERT_SIZE"></a><span class="conditionally_required">*</span></dt>
+  <dd>Expected size of the insert (referred to by the value in the
+TEMPLATE_ID field) in base pairs
+
+    <p>  Type: int<br />
+  Example: 2000</p>
+
+    <p>The <a href="#INSERT_SIZE">INSERT_SIZE</a>field
+indicates the expected insert size of the clone that is sequenced.
+It is understood that this is an estimate based upon the average
+insert sizes found in a given library. However, this information is
+critical for certain experiments, such as whole genome assembly.<br /><br />
+This field would be required for the following combination of
+<a href="#STRATEGY">STRATEGY</a>and <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>:  <br /> <a href="#STRATEGY">STRATEGY</a>=Any;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=WGS<a href="#STRATEGY">STRATEGY</a>=Any;  <br /> <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=WCS<a href="#STRATEGY">STRATEGY</a>=cDNA;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=CLONEEND<a href="#STRATEGY">STRATEGY</a>=CLONEEND;  <br /> <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=CLONEEND</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#INSERT_STDEV">INSERT_STDEV</a><a name="INSERT_STDEV"></a><span class="conditionally_required">*</span></dt>
+  <dd>Approximate standard deviation of value in INSERT_SIZE field.
+
+    <p>  Type: int<br />
+  Example: 200</p>
+
+    <p>The <a href="#INSERT_STDEV">INSERT_STDEV</a>field reflects the approximate standard deviation of the insert size. It is understood that this information is an approximation and may change as better data is obtained. This field would be required for the following combination of <a href="#STRATEGY">STRATEGY</a> and <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>:  <br /> <a href="#STRATEGY">STRATEGY</a>=Any;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=WGS<a href="#STRATEGY">STRATEGY</a>=Any;  <br /> <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=WCS<a href="#STRATEGY">STRATEGY</a>=cDNA; <br />  <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=CLONEEND<a href="#STRATEGY">STRATEGY</a>=CLONEEND;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=CLONEEND</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#LATITUDE">LATITUDE</a><a name="LATITUDE"></a><span class="conditionally_required">*</span>  </dt>
+  <dt>The latitude measurement (using standard GPS notation) from which a</dt>
+  <dd>sample was collected.
+
+    <p>  Type: float <br />
+  Example: 54.736</p>
+
+    <p>The <a href="#LATITUDE">LATITUDE</a> field is required to describe the collection of some environmental sample data. The latitude range is [-90,90] with the equator as 0 latitude and positive values of latitude are north of the equator. This field would be required for the following combination of<a href="#STRATEGY">STRATEGY</a> and<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>:  <br /> <a href="#STRATEGY">STRATEGY</a>=Env Sample- Geo;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#LIBRARY_ID">LIBRARY_ID</a><a name="LIBRARY_ID"></a><span class="conditionally_required">*</span></dt>
+  <dd>The source of the clone identified in the CLONE_ID field
+
+    <p>  Type: varchar(100) <br />
+  Example: RP23</p>
+
+    <p>The <a href="#LIBRARY_ID">LIBRARY_ID</a> field documents the source library of the archival clone resource. Many genomic libraries have been registered with the Clone Registry (<a href="https://www.ncbi.nlm.nih.gov/clone">http://www.ncbi.nlm.nih.gov/clone</a>) and the standard nomenclature (<a href="https://www.ncbi.nlm.nih.gov/clone/content/overview/">http://www.ncbi.nlm.nih.gov/clone/content/overview/</a>) should be used for these libraries.  This field would be requiredfor the following combination of <a href="#STRATEGY">STRATEGY</a> and <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>:  <br /> <a href="#STRATEGY">STRATEGY</a>=cDNA;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any<a href="#STRATEGY">STRATEGY</a>=EST;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any  <br /> <a href="#STRATEGY">STRATEGY</a>=CLONEEND;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=CLONEEND<a href="#STRATEGY">STRATEGY</a>=CLONE;  <br /> <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any<a href="#STRATEGY">STRATEGY</a>=ENCODE;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=SHOTGUN;PrimerWalk; CLONEEND</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#LONGITUDE">LONGITUDE</a><a name="LONGITUDE"></a><span class="conditionally_required">*</span></dt>
+  <dd>The longitude measurement (using standard GPS notation) from which a sample was collected.
+
+    <p>  Type: float<br />
+  Example: -86.403</p>
+
+    <p>The <a href="#LONGITUDE">LONGITUDE</a> field is required to describe the collection of some environmental sample data. The longitude is ranging from 0° at the Prime Meridian to +180° eastward and -180° westward.  <br /> This field would be required for the following combination of <a href="#STRATEGY">STRATEGY</a>and <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>: <br />  <a href="#STRATEGY">STRATEGY</a>=Env Sample-Geo; <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#LO_FILTER_SIZE">LO_FILTER_SIZE</a><a name="LO_FILTER_SIZE"></a></dt>
+  <dd>The smallest filter size used to stratify an environmental sample.
+
+    <p>  Type: varchar(50)<br />
+  Example: 25 micron</p>
+
+    <p>The <a href="#LO_FILTER_SIZE">LO_FILTER_SIZE</a> field is only applicable to environmental sample data but is not a required field.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#NCBI_PROJECT_ID">NCBI_PROJECT_ID</a><a name="NCBI_PROJECT_ID"></a></dt>
+  <dd>BioProject ID generated by the INSDC.
+
+    <p>  Type: int<br />
+  Example: 7</p>
+
+    <p><a href="#NCBI_PROJECT_ID">NCBI_PROJECT_ID</a> field would allow to link traces to <a href="/bioproject/index-e.html">BioProject database</a> and easily retrieve sets of traces from each Project. Genome sequencing centers may apply their project to the <a href="/bioproject/index-e.html">DDBJ BioProject</a> prior the submission of genomic sequence data. Submitters need not submit sequencing data at the time they register their project.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#ORGANISM_NAME">ORGANISM_NAME</a><a name="ORGANISM_NAME"></a><span class="conditionally_required">*</span></dt>
+  <dd>Description of species for BARCODE project from which trace is
+derived.
+
+    <p>  Type: varchar(100)<br />
+  Example: Acanthocybium solandri</p>
+
+    <p>The <a href="#ORGANISM_NAME">ORGANISM_NAME</a> field is used to classify the read by species for BARCODE data, using proper taxonomic name in accordance with <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/">Taxonomy Browser</a>. <a href="#SPECIES_CODE">SPECIES_CODE</a>=”BARCODESPECIES” for all traces from this project. This field would be required for the <a href="#STRATEGY">STRATEGY</a>=BARCODE.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#PEAK_FILE">PEAK_FILE</a><a name="PEAK_FILE"></a></dt>
+  <dd>Name of file that contains the list of peak values.
+
+    <p>  Type: varchar(200)<br />
+  Example: ./mytraces/123clone.peak</p>
+
+    <p>Consult the <a href="#BASE_FILE">BASE_FILE</a> field description for more information.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#PH">PH</a><a name="PH"></a></dt>
+  <dd>The pH at which an environmental sample was collected.
+
+    <p>  Type: float<br />
+  Example: 7.2</p>
+
+    <p>The <a href="#PH">PH</a> field is only applicable to environmental sample data but is not a required field.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#PICK_GROUP_ID">PICK_GROUP_ID</a><a name="PICK_GROUP_ID"></a></dt>
+  <dd>Id to group traces picked at the same time.
+
+    <p>  Type: int<br />
+  Example: 939065</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#PLACE_NAME">PLACE_NAME</a><a name="PLACE_NAME"></a></dt>
+  <dd>Country in which the biological sample was collected and/or common
+name for a given location.
+
+    <p>  Type: varchar(250)<br />
+  Example: Octopus Springs</p>
+
+    <p>The <a href="#PLACE_NAME">PLACE_NAME</a> field is applicable to environmental sample data, but is not required.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#PLATE_ID">PLATE_ID</a><a name="PLATE_ID"></a></dt>
+  <dd>Submitter defined plate id.
+
+    <p>  Type: varchar(32) <br />
+  Example: 203</p>
+
+    <p>The <a href="#PLATE_ID">PLATE_ID</a> and <a href="#WELL_ID">WELL_ID</a> fields are intended to identify the storage location of the sequencing template (not the library well coordinate of an archival clone named in the<a href="#CLONE_ID">CLONE_ID</a> field). This may enable flipped or contaminated trays to be easily identified. If a particular experiment did not require the use of a plate, please populate this field with ‘0’.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#POPULATION_ID">POPULATION_ID</a><a name="POPULATION_ID"></a></dt>
+  <dd>Center provided id to designate a population from which a trace (or group of traces) was derived.
+
+    <p>  Type: varchar(100)<br />
+  Example: CEPH</p>
+
+    <p>The <a href="#POPULATION_ID">POPULATION_ID</a> field is used to capture center specific designations of groups of individuals. This will likely only be useful in population studies(usually <a href="#STRATEGY">STRATEGY</a>=SNP).</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#PREP_GROUP_ID">PREP_GROUP_ID</a><a name="PREP_GROUP_ID"></a></dt>
+  <dd>ID that defines groups of traces prepared at the same time.
+
+    <p>  Type: varchar(30)<br />
+  Example: A2</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#PRIMER">PRIMER</a><a name="PRIMER"></a></dt>
+  <dd>The primer sequence (used in the sequencing reaction).
+
+    <p>  Type: varchar(200)<br />
+  Example: GAATACCTACGATCGCC</p>
+
+    <p>The value of the <a href="#PRIMER">PRIMER</a> field is the actual base sequence of the sequencing primer used. If a center uses a primer extensively, the primer sequence can be entered into the list of primer codes and the <a href="#PRIMER_CODE">PRIMER_CODE</a> field can be used.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#PRIMER_CODE">PRIMER_CODE</a><a name="PRIMER_CODE"></a></dt>
+  <dd>Identifier for the sequencing primer used.
+
+    <p>  Type: varchar(30)<br />
+  Example: Sp6</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#PRIMER_LIST">PRIMER_LIST</a><a name="PRIMER_LIST"></a><span class="conditionally_required">*</span></dt>
+  <dd>A ‘;’ delimited list of primers used in a mapping experiment (such
+as AFLP).
+
+    <p>  Type: varchar(100)<br />
+  Example: AAGGTCTGCGCGTGTC;AGCTGCGTACGTAATCG;</p>
+
+    <p>This field is required if <a href="#STRATEGY">STRATEGY</a>=”AFLP” and          <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=”PCR”.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#PROGRAM_ID">PROGRAM_ID</a><a name="PROGRAM_ID"></a><span class="red">*</span></dt>
+  <dd>The program used to create the trace file.
+
+    <p>  Type: varchar(100)<br />
+  Example: phred-19990722h</p>
+
+    <p>The <a href="#PROGRAM_ID">PROGRAM_ID</a> field is used to indicate the base calling program. This field is free text. Program name, version numbers or dates are very useful.  <br /> 
+More example values:</p>
+    <ul>
+      <li>phred-19980904e</li>
+      <li>abi-3.1</li>
+      <li>ATQA</li>
+      <li>TraceTuner</li>
+      <li>Licor</li>
+      <li>Megabase</li>
+      <li>Beckman</li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#PROJECT_NAME">PROJECT_NAME</a><a name="PROJECT_NAME"></a></dt>
+  <dd>Term by which to group traces from different centers based on a
+common project.
+
+    <p>  Type: varchar(50)<br />
+  Example: New Project</p>
+
+    <p>In this way sequencing centers that are working on the same large project can group all of the traces for this project using a common term. This field has a controlled vocabulary. Sequencing centers wishing to submit data must contact the DDBJ Trace Archive to determine a name that all members of the project agree on.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#QUAL_FILE">QUAL_FILE</a><a name="QUAL_FILE"></a></dt>
+  <dd>Name of file containing the quality scores.
+
+    <p>  Type: varchar(200)<br />
+  Example: ./mytraces/123clone.fasta.qs</p>
+
+    <p>Trace files which do not include the quality scores must provide this information in a separate file. The file designations are recorded in the <a href="#QUAL_FILE">QUAL_FILE</a> fields of the metadata file. The actual quality scores are stored in the file designated in the<a href="#QUAL_FILE">QUAL_FILE</a> field. If quality scores are provided in separate files the information in these files will overwrite any information in the trace (usually *.scf) file. If the quality scores that would be provided in the <a href="#QUAL_FILE">QUAL_FILE</a> are the same as the information in the trace file, DO NOT PROVIDE THE FILE. However, it is important to note that if some formats do not include the quality scores, then these values must be provided as ancillary information. If the center provides the<a href="#BASE_FILE">BASE_FILE</a> and<a href="#QUAL_FILE">QUAL_FILE</a>, then the peak index information should also be provided in a file called<a href="#PEAK_FILE">PEAK_FILE</a>.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#REFERENCE_ACCESSION">REFERENCE_ACCESSION</a><a name="REFERENCE_ACCESSION"></a><span class="conditionally_required">*</span></dt>
+  <dd>Reference accession (use accession and version to specify a
+particular instance of a sequence) used as the basis for a
+re-sequencing project. In case of Comparative strategy show the
+basis for primers design.
+
+    <p>  Type: varchar(50)<br />
+  Example: NT_029829.1</p>
+
+    <p>This field is required for the following combination of<a href="#STRATEGY">STRATEGY</a> and <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>: <br /> 
+<a href="#STRATEGY">STRATEGY</a>=Re-sequencing;Comparative <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=Any</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#REFERENCE_ACC_MAX">REFERENCE_ACC_MAX</a><a name="REFERENCE_ACC_MAX"></a><span class="conditionally_required">*</span></dt>
+  <dd>Finish position for a particular amplicon in re-sequencing or
+comparative projects.
+
+    <p>  Type: int<br />
+  Example: 30929</p>
+
+    <p>This field points to the finishing coordinate of the accession.version described in the <a href="#REFERENCE_ACCESSION">REFERENCE_ACCESSION</a> field. All coordinates should be in 1 base coordinates (i.e.sequences start at base 1, not base 0). This field is required for the following combination of <a href="#STRATEGY">STRATEGY</a> and <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>:<br />
+<a href="#STRATEGY">STRATEGY</a>=Re-sequencing; <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=SHOTGUN; PCR;RT-PCR</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#REFERENCE_ACC_MIN">REFERENCE_ACC_MIN</a><a name="REFERENCE_ACC_MIN"></a><span class="conditionally_required">*</span></dt>
+  <dd>Start position for a particular amplicon in re-sequencing or
+comparative projects.
+
+    <p>  Type: int<br />
+  Example: 29829</p>
+
+    <p>This field points to the starting coordinate of theaccession.version described in the<a href="#REFERENCE_ACCESSION">REFERENCE_ACCESSION</a>field. All coordinates should be in 1 base coordinates (i.e.sequences start at base 1, not base 0). This field is required forthe following combination of <a href="#STRATEGY">STRATEGY</a> and <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>:<br />   <a href="#STRATEGY">STRATEGY</a>=Re-sequencing; <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=SHOTGUN; PCR;RT-PCR</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#REFERENCE_OFFSET">REFERENCE_OFFSET</a><a name="REFERENCE_OFFSET"></a><span class="conditionally_required">*</span></dt>
+  <dd>Sequence offset of accession specified in REFERENCE_ACCESSION field
+to define the coordinate start position used as the basis for a
+re-sequencing project.
+
+    <p>  Type: int<br />
+  Example: 1520899</p>
+
+    <p>This field points to the starting coordinate of theaccession.version described in the<a href="#REFERENCE_ACCESSION">REFERENCE_ACCESSION</a>field. All coordinates should be in 1 base coordinates (i.e.sequences start at base 1, not base 0). This field is required forthe following combination of <a href="#STRATEGY">STRATEGY</a> and <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>: <br /> 
+<a href="#STRATEGY">STRATEGY</a>=Re-sequencing; <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=CHIP</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#REFERENCE_SET_MAX">REFERENCE_SET_MAX</a><a name="REFERENCE_SET_MAX"></a></dt>
+  <dd>Finish position for a entire re-sequencing region. This region may
+include several amplicons.
+
+    <p>  Type: int<br />
+  Example: 29829　　</p>
+
+    <p>This field points to the starting coordinate of theaccession.version 
+described in the <a href="#REFERENCE_ACCESSION">REFERENCE_ACCESSION</a> field for a 
+entire re-sequencing region. All coordinates should be in 1 base 
+coordinates (i.e. sequences start at base 1, not base 0).The REFERENCE_ACC_
+[MIN|MAX] and REFERENCE_SET_[MIN|MAX] should refer to the same 
+REFERENCE_ACC.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#REFERENCE_SET_MIN">REFERENCE_SET_MIN</a><a name="REFERENCE_SET_MIN"></a></dt>
+  <dd>Start position for a entire re-sequencing region. This region may
+include several amplicons.
+
+    <p>  Type: int<br />
+  Example: 29829</p>
+
+    <p>This field points to the starting coordinate of theaccession.version 
+described in the <a href="#REFERENCE_ACCESSION">REFERENCE_ACCESSION</a> field for a 
+entire re-sequencing region. All coordinates should be in 1 base 
+coordinates (i.e. sequences start at base 1, not base 0).The REFERENCE_ACC_
+[MIN|MAX] and REFERENCE_SET_[MIN|MAX] should refer to the same 
+REFERENCE_ACC.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#RUN_DATE">RUN_DATE</a><a name="RUN_DATE"></a></dt>
+  <dd>Date the sequencing reaction was run.
+
+    <p>  Type: datetime<br />
+  Example: 2000-10-28</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#RUN_GROUP_ID">RUN_GROUP_ID</a><a name="RUN_GROUP_ID"></a></dt>
+  <dd>ID used to group traces run on the same machine.
+
+    <p>  Type: varchar(30)<br />
+  Example: group2</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#RUN_LANE">RUN_LANE</a><a name="RUN_LANE"></a></dt>
+  <dd>Lane or capillary of the trace.
+
+    <p>  Type: int<br />
+  Example: 1</p>
+
+    <p>The <a href="#RUN_LANE">RUN_LANE</a> documents the specific lane or capillary on which a trace was obtained.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#RUN_MACHINE_ID">RUN_MACHINE_ID</a><a name="RUN_MACHINE_ID"></a></dt>
+  <dd>ID of the specific sequencing machine on which a trace was obtained.
+
+    <p>  Type: varchar(30)<br />
+  Example: machine2</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#RUN_MACHINE_TYPE">RUN_MACHINE_TYPE</a><a name="RUN_MACHINE_TYPE"></a></dt>
+  <dd>Type or model of machine on which a trace was obtained.
+
+    <p>  Type: varchar(30)<br />
+  Example: ABI 310</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#SALINITY">SALINITY</a><a name="SALINITY"></a></dt>
+  <dd>The salinity at which an environmental sample was collected measured
+in parts per thousand units (promille).
+
+    <p>  Type: float<br />
+  Example: 20</p>
+  </dd>
+</dl>
+
+<p>The <a href="#SALINITY">SALINITY</a> field is only applicable to environmental sample data but is not a required field.</p>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#SEQ_LIB_ID">SEQ_LIB_ID</a><a name="SEQ_LIB_ID"></a><span class="conditionally_required">*</span></dt>
+  <dd>Center specified M13/PUC library that is actually sequenced.
+
+    <p>  Type: varchar(255) <br />
+  Example: 22194</p>
+
+    <p>The <a href="#SEQ_LIB_ID">SEQ_LIB_ID</a> field is the center identifier for the M13/PUC based clone that is actually sequenced. This will allow grouping of traces by the actual ligation event and is applicable to most projects. Thi svalue will be unique within a given center.   This field would be required for the following combination of <a href="#STRATEGY">STRATEGY</a> and <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>: <br /> <a href="#STRATEGY">STRATEGY</a>=Any;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=SHOTGUN<br /> <a href="#STRATEGY">STRATEGY</a>=Any;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=WGS/WCS</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#SOURCE_TYPE">SOURCE_TYPE</a><a name="SOURCE_TYPE"></a><span class="red">*</span></dt>
+  <dd>Source of the DNA.
+
+    <p>  Type: varchar(50)<br />
+  Example: GENOMIC DNA</p>
+
+    <p>The <a href="#SOURCE_TYPE">SOURCE_TYPE</a>field consists of a code. Possible values are:</p>
+    <ul>
+      <li>G=Genomic DNA (includes PCR products from genomic DNA)</li>
+      <li>N=Non Genomic DNA (EST, cDNA, RT-PCR, screened libraries)</li>
+      <li>VIRAL RNA=Viral RNA</li>
+      <li>SYNTHETIC=Synthetic DNA</li>
+    </ul>
+
+    <p>Accepted values are G, N, GENOMIC, NON GENOMIC, VIRAL RNA,SYNTHETIC</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#SPECIES_CODE">SPECIES_CODE</a><a name="SPECIES_CODE"></a><span class="red">*</span></dt>
+  <dd>Description of species from which trace is derived.
+
+    <p>  Type: varchar(100)<br />
+  Example: Homo sapiens</p>
+
+    <p>The <a href="#SPECIES_CODE">SPECIES_CODE</a>field
+is used to classify the read by species, using proper taxonomic
+names where possible. This field currently is maintained as a
+controlled vocabulary. For a list of species currently contained
+within the Trace Archive, see:
+<a href="https://www.ncbi.nlm.nih.gov/Traces/trace.cgi?cmd=stat&amp;f=xml_list_species&amp;m=obtain&amp;s=species">http://www.ncbi.nlm.nih.gov/Traces/trace.cgi?cmd=stat&amp;f=xml_list_species&amp;m=obtain&amp;s=species</a>To
+submit a new species, please contact the DDBJ Trace Archive prior to
+submission. For cases in which it is unclear ofthe taxonomic origin
+of a specific trace the taxonomic classification ‘ENVIRONMENTAL
+SEQUENCE’ can be used in a case of environmental samples or
+‘ARTIFICIAL SEQUENCE’ in a case of artificial material.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#STRAIN">STRAIN</a><a name="STRAIN"></a><span class="conditionally_required">*</span></dt>
+  <dd>Strain from which a trace is derived.
+
+    <p>  Type: varchar(50) <br />
+  Example: C57BL/6J　　</p>
+
+    <p><a href="#STRAIN">STRAIN</a> is required for <a href="#STRATEGY">STRATEGY</a>=”SNP”</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#STRATEGY">STRATEGY</a><a name="STRATEGY"></a><span class="red">*</span></dt>
+  <dd>Experimental STRATEGY.
+
+    <p>  Type: varchar(50)<br />
+  Example: MODEL VERIFY</p>
+
+    <p>Experimental <a href="#STRATEGY">STRATEGY</a> used when obtaining the trace. It is proposed that this would be a controlled vocabulary, but that submitters would contribute to this list as needed to define various experiments and projects.</p>
+
+    <p>Current values (this list would continually be expanding):</p>
+    <ul>
+      <li>AFLP: Amplified Fragment Length Polymorphism</li>
+      <li>BARCODE: DNA sequence analysis of a uniform target gene to
+enable species identification</li>
+      <li>CCS: Concatenated cDNA sequencing</li>
+      <li>cDNA: Sequences generated in the process of sequencing cDNA
+clones</li>
+      <li>CF-S: Cot-filtered single/low-copy genomic DNA</li>
+      <li>CF-M: Cot-filtered moderately repetitive genomic DNA</li>
+      <li>CF-H: Cot-filtered highly repetitive genomic DNA</li>
+      <li>CF-T: Cot-filtered theoretical single-copy DNA</li>
+      <li>CLONE: Genomic clone based (hierarchical) sequencing</li>
+      <li>CLONEEND: Sequences generated from the end of a
+clone(BAC/PAC/Fosmid or cDNA)</li>
+      <li>Comparative: Sequences obtained using primers design from
+related species</li>
+      <li>CTS: Concatenated Tag Sequencing</li>
+      <li>Env Sample-GEO: Geographically generated environmental sample</li>
+      <li>Env Sample-Host: Environmental samples collected from a specific
+host</li>
+      <li>EST: single pass sequencing of cDNA templates</li>
+      <li>FINISHING: a read specifically made for finishing, could be
+either BAC finishing or Whole Genome Assembly (WGA) finishing</li>
+      <li>MODEL VERIFY: Sequences obtained to verify proposed gene models</li>
+      <li>PoolClone: Pools of clones (BACs mostly)</li>
+      <li>SNP: Reads used for SNP identification</li>
+      <li>TARGETED LOCUS: Sequences obtained from templates generated by
+primers designed to amplify a specific genetic locus</li>
+      <li>Re-sequencing: Re-sequencing of targeted genomic regions</li>
+      <li>RT-PCR: Sequences obtained using templates generated by Reverse
+Transcriptase Polymerase Chain Reaction</li>
+      <li>WGA: Whole Genome Assembly</li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#SUBMISSION_TYPE">SUBMISSION_TYPE</a><a name="SUBMISSION_TYPE"></a><span class="red">*</span></dt>
+  <dd>Type of submission.
+
+    <p>  Type: varchar(50)<br />
+  Example: NEW</p>
+
+    <p>The <a href="#SUBMISSION_TYPE">SUBMISSION_TYPE</a> field allowed values:</p>
+    <ul>
+      <li>NEW: use to submit new data</li>
+      <li>UPDATE: use to renew traces and their ancillary information.
+Previous data will be saved with their TI’s; new traces with the
+same trace_name’s will receive new TI’s and they will become
+active</li>
+      <li>UPDATEINFO: use to update or add ancillary information for
+already existing traces without re-submitting the entire package
+of data</li>
+      <li>WITHDRAW: use to withdraw traces</li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#SVECTOR_ACCESSION">SVECTOR_ACCESSION</a><a name="SVECTOR_ACCESSION"></a></dt>
+  <dd>DDBJ/EMBL/Genbank accession of the sequencing vector.
+
+    <p>  Type: varchar(50)<br />
+  Example: X52325</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#SVECTOR_CODE">SVECTOR_CODE</a><a name="SVECTOR_CODE"></a></dt>
+  <dd>Center defined code for the sequencing vector.
+
+    <p>  Type: varchar(50)<br />
+  Example: pBluescript SK(+)</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#TEMPERATURE">TEMPERATURE</a><a name="TEMPERATURE"></a></dt>
+  <dd>The temperature (in <sup>o</sup>C) at which an environmental sample was collected.
+
+    <p>  Type: float<br />
+  Example: 30</p>
+
+    <p>The <a href="#TEMPERATURE">TEMPERATURE</a>field
+is only applicable to environmental sample data but it is not a
+required field.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#TEMPLATE_ID">TEMPLATE_ID</a><a name="TEMPLATE_ID"></a></dt>
+  <dd>Submitter defined identifier for the sequencing template.
+
+    <p>  Type: varchar(50)  <br />
+  Example: HBBBA2211</p>
+
+    <p>The <a href="#TEMPLATE_ID">TEMPLATE_ID</a>field
+is used to uniquely identify the actual template that is sequenced.
+This field, in conjunction with the TRACE_END field, can be used to
+identify traces that should be marked as ‘mate_pairs’because they
+come from opposite ends of the same clone.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#TRACE_END">TRACE_END</a><a name="TRACE_END"></a></dt>
+  <dd>Defines the end of the template contained in the read.
+
+    <p>  Type: varchar(50)<br />
+  Example: F</p>
+
+    <p>The <a href="#TRACE_END">TRACE_END</a> field can have the following values:</p>
+    <ul>
+      <li>F: FORWARD</li>
+      <li>R: REVERSE</li>
+      <li>N: UNKNOWN</li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#TRACE_FILE">TRACE_FILE</a><a name="TRACE_FILE"></a><span class="red">*</span></dt>
+  <dd>Filename with the trace, relative to the top of the volume.
+
+    <p>  Type: varchar(200)<br />
+  Example: ./traces/TRACE001.scf</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#TRACE_FORMAT">TRACE_FORMAT</a><a name="TRACE_FORMAT"></a><span class="red">*</span></dt>
+  <dd>Format of the trace file.
+
+    <p>  Type: varchar(20)<br />
+  Example: scf　　</p>
+
+    <p>The <a href="#TRACE_FORMAT">TRACE_FORMAT</a>field can have the following values:</p>
+    <ul>
+      <li>SCF - A standard file format for data from DNA sequencing
+instruments.</li>
+      <li>ABI - A ABI-trace file is a binary file including the trace data
+and the sequence.</li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#TRACE_NAME">TRACE_NAME</a><a name="TRACE_NAME"></a><span class="red">*</span></dt>
+  <dd>Center defined trace identifier.
+
+    <p>  Type: varchar(250)<br />
+  Example: HBBBA1U2211</p>
+
+    <p>The <a href="#TRACE_NAME">TRACE_NAME</a> field
+must be unique within a center, but is not required to be unique
+between centers. The combination of
+<a href="#TRACE_NAME">TRACE_NAME</a> and
+<a href="#CENTER_NAME">CENTER_NAME</a> act
+as a unique key within the Trace Archive.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a><a name="TRACE_TYPE_CODE"></a><span class="red">*</span></dt>
+  <dd>Sequencing strategy by which the trace was obtained.
+
+    <p>  Type: varchar(50)<br />
+  Example: wgs The field</p>
+
+    <p><a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a> reflects the sequencing <a href="#STRATEGY">STRATEGY</a> used to obtain the trace.</p>
+
+    <p>Current values:</p>
+    <ul>
+      <li>CHIP: Sequences obtained using microarrays (also called DNAchips
+or gene chips)</li>
+      <li>CLONEEND: Sequences generated from the end of a large
+insert(BAC/PAC/Fosmid) or cDNA clone</li>
+      <li>EST: Single Pass Expressed Sequence Tag</li>
+      <li>HTP SELEX: High throughput SELEX</li>
+      <li>OTHER: Other than PCR, PrimerWalk, SHOTGUN or TRANSPOSON for
+FINISHING
+<a href="#STRATEGY">STRATEGY</a></li>
+      <li>PCR: Sequences obtained using templates generated by genomic
+Polymerase Chain Reaction</li>
+      <li>PrimerWalk: Sequences generated through a primer walkingstep</li>
+      <li>RT-PCR: Sequences obtained using templates generated by Reverse
+Transcriptase Polymerase Chain Reaction</li>
+      <li>SHOTGUN: Shotgun sequencing of clones (genomic or cDNA)</li>
+      <li>TRANSPOSON: Sequences obtained using templates generated
+bytransposons</li>
+      <li>WCS: Whole Chromosome Shotgun</li>
+      <li>WGS: Whole Genome Shotgun</li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#TRANSPOSON_ACC">TRANSPOSON_ACC</a><a name="TRANSPOSON_ACC"></a><span class="conditionally_required">*</span></dt>
+  <dd>DDBJ/EMBL/Genbank accession for transposon used in generating
+sequencing template.
+
+    <p>  Type: varchar(50)<br />
+  Example: X00913　　</p>
+
+    <p>The <a href="#TRANSPOSON_ACC">TRANSPOSON_ACC</a> would be required for the following combination of <a href="#STRATEGY">STRATEGY</a> and <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>: <br /> 
+<a href="#STRATEGY">STRATEGY</a>=Any;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=TRANSPOSON</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#TRANSPOSON_CODE">TRANSPOSON_CODE</a><a name="TRANSPOSON_CODE"></a><span class="conditionally_required">*</span></dt>
+  <dd>Center defined code for transposon used in generating sequencing
+template.
+
+    <p>  Type: varchar(50)<br />
+  Example: Mu transposon</p>
+
+    <p>This <a href="#TRANSPOSON_CODE">TRANSPOSON_CODE</a> field would be required for the following combination of <a href="#STRATEGY">STRATEGY</a> and <a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>:<br /> <a href="#STRATEGY">STRATEGY</a>=Any;<a href="#TRACE_TYPE_CODE">TRACE_TYPE_CODE</a>=TRANSPOSON</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#WELL_ID">WELL_ID</a><a name="WELL_ID"></a></dt>
+  <dd>Center defined well identifier for the sequencing reaction.
+
+    <p>  Type: varchar(50)<br />
+  Example: A1 The field</p>
+
+    <p><a href="#WELL_ID">WELL_ID</a> in
+combination with the field
+<a href="#PLATE_ID">PLATE_ID</a>, is used to
+define the storage location of the sequencing reaction (see note
+with the
+field<a href="#PLATE_ID">PLATE_ID</a>).
+Typically,sequencing reactions are performed in standard microtiter
+dishes having either 96 or 384 wells (see standard configurations
+below).<br />
+<img src="/assets/images/submission/96well.jpg" alt="Standard 96 well microtiter
+configuration" title="Standard 96 well microtiter configuration" /><br />
+Standard 96 well microtiter configuration<br />
+<img src="/assets/images/submission/384well.jpg" alt="Standard 384 well microtiter
+configuration" title="Standard 384 well microtiter configuration" /><br />
+Standard 384 well microtiter configuration</p>
+  </dd>
+</dl>
+
+<h3 id="internal-fields-list-">Internal Fields List <a name="Internal-Fields-List"></a></h3>
+
+<dl>
+  <dt><a href="#BASECALL_LENGTH">BASECALL_LENGTH</a><a name="BASECALL_LENGTH"></a></dt>
+  <dd>Length of the trace in base pairs.
+
+    <p>  Type: int<br />
+  Example: 396</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BASES_20">BASES_20</a><a name="BASES_20"></a></dt>
+  <dd>Number of base pairs for which quality score exceed 20.
+
+    <p>  Type: smallint <br />
+  Example: 50</p>
+
+    <p>Warning: There are some
+depositions that do not have quality scores. This is likely due to
+the center submitting ABI files and not providing quality calls
+separately.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BASES_40">BASES_40</a><a name="BASES_40"></a></dt>
+  <dd>Number of base pairs for which quality score exceed 40.
+
+    <p>  Type: smallint <br />
+  Example: 50</p>
+
+    <p>Warning: There are some
+deposition sthat do not have quality scores. This is likely due to
+the center submitting ABI files and not providing quality calls
+separately.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BASES_60">BASES_60</a><a name="BASES_60"></a></dt>
+  <dd>Number of base pairs for which quality score exceed 60.
+
+    <p>  Type: smallint <br />
+  Example: 50</p>
+
+    <p>Warning: There are some
+depositions that do not have quality scores. This is likely due to
+the center submitting ABI files and not providing quality calls
+separately.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#LOAD_DATE">LOAD_DATE</a><a name="LOAD_DATE"></a></dt>
+  <dd>Date on which the data was loaded.
+
+    <p>  Type: smalldatetime<br />
+  Example: Jan 8 2001 11:59AM</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#MATE_PAIR">MATE_PAIR</a><a name="MATE_PAIR"></a></dt>
+  <dd>TI’s of the reads obtained from the other end of the same template.
+
+    <p>  Type: int <br />
+  Example: 203682255</p>
+
+    <p>MATE PAIR is the
+pair of reads obtained from two ends of the same template (FORWARD
+and REVERSE).</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#REPLACED_BY">REPLACED_BY</a><a name="REPLACED_BY"></a></dt>
+  <dd>TI that replaced the current TI as “active”.
+
+    <p>  Type: int<br />
+  Example: 304753779</p>
+
+    <p>This field points to the more recent data set. If trace was updated then the
+<a href="#REPLACED_BY">REPLACED_BY</a> field
+stores the<a href="#TI">TI</a> for the new
+trace. If only ancillary information has been updated, then
+replaced_by=0 and is not shown.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#STATE">STATE</a><a name="STATE"></a></dt>
+  <dd>Indicates the status of the trace.
+
+    <p>  Type: varchar<br />
+  Example: active</p>
+
+    <p>Possible values:</p>
+    <ul>
+      <li>active</li>
+      <li>updated</li>
+      <li>withdrawn</li>
+    </ul>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#TAXID">TAXID</a><a name="TAXID"></a></dt>
+  <dd>NCBI Taxonomy ID.
+
+    <p>  Type: int<br />
+  Example: 10090</p>
+
+    <p>This field links DDBJ Trace Archive with <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?">NCBI Taxonomy Browser</a>.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#TI">TI</a><a name="TI"></a></dt>
+  <dd>Trace unique internal Identifier.
+
+    <p>  Type: int<br />
+  Example: 304753779</p>
+
+    <p>It is given for a record at the loading stage, and any record,or number of records can be obtain by their identifiers.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#UPDATE_DATE">UPDATE_DATE</a><a name="UPDATE_DATE"></a></dt>
+  <dd>Date on which the data was updated/replaced.
+
+    <p>  Type: smalldatetime<br />
+  Example: Jul 19 2001 3:48PM</p>
+
+    <p>This field is used to store the date of the last update.</p>
+  </dd>
+</dl>
+
+<h2 id="submit-trace-data-">Submit trace data <a name="trace-data-submission"></a></h2>
+
+<div class="attention">
+  <p>Data submission of human subjects research<br />
+<span class="red">For all data from human subjects researches submitted to DDBJ, it is
+submitter’s responsibility to ensure that the privacy of participant
+(human subject) is protected in accordance with all applicable laws,
+regulations and policies of submitter’s institute.<br />
+In principle, make sure to remove any direct personal identifiers of
+human subjects from your submissions.<br />
+Before submitting data from human subjects researches, read the “<a href="/policies-e.html#human">Data
+submission of human subjects research</a>”.</span></p>
+</div>
+
+<h3 id="create-submission-files-">Create submission files <a name="create-submission-files"></a></h3>
+
+<p>The metadata file (TRACEINFO file) describes the submitted data as well
+as points to the location of the chromatograms. All submissions when
+extracted should have a top directory. All metadata files should be
+placed under that directory. In case when the submission should contain
+trace files at least one more directory should be introduced to the top
+directory and all trace files should be placed under that directory. The
+trace files (either in <a href="#TRACE_FORMAT">SCF</a>or in
+<a href="#TRACE_FORMAT">ABI</a>format) should not appear in the top level
+directory, but rather should be in a subdirectory. It is suggested to
+use the name of the traces or the name of the project for
+subdirectories. There may be subdirectories within and this is
+encouraged to group traces. Below are examples of the submission
+directory hierarchy.</p>
+
+<h4 id="submission-directory-hierarchy-example-">Submission directory hierarchy example <a name="Submission_directory_hierarchy_example"></a></h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TOP_DIRECTORY/
+TOP_DIRECTORY/TRACEINFO
+TOP_DIRECTORY/traces
+TOP_DIRECTORY/traces/FLJ/
+TOP_DIRECTORY/traces/FLJ/FLJA1U0001.scf
+TOP_DIRECTORY/traces/FLJ/FLJA1U0002.scf
+TOP_DIRECTORY/traces/FLJ/FLJA1U0003.scf
+</code></pre></div></div>
+
+<p>The <a href="#metadata">metadata</a>file can be either in XML or in tab-delimited
+format. The metadata requirements are in the <a href="/assets/files/submission/field_matrix_current.xls">Validation Table
+(spreadsheet format)</a>for
+specific combinations of STRATEGY and TRACE_TYPE_CODE. Both types of
+metadata files can contain common fields section at the beginning of it.
+This section defines common for the submission values if any.</p>
+
+<p>Below are examples of TRACEINFO metadata files.</p>
+
+<h4 id="traceinfo-xml-example-">TRACEINFO xml example <a name="TRACEINFO_xml_example"></a></h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?xml version="1.0"?&gt;
+&lt;trace_volume&gt;
+   &lt;common_fields&gt;
+      &lt;center_name&gt;CENTER NAME ACRONYM IS HERE&lt;/center_name&gt;
+      &lt;center_project&gt;FLJ&lt;/center_project&gt;
+      &lt;source_type&gt;N&lt;/source_type&gt;
+      &lt;species_code&gt;HOMO SAPIENS&lt;/species_code&gt;
+      &lt;strategy&gt;EST&lt;/strategy&gt;
+      &lt;submission_type&gt;NEW&lt;/submission_type&gt;
+      &lt;trace_format&gt;SCF&lt;/trace_format&gt;
+      &lt;trace_type_code&gt;EST&lt;/trace_type_code&gt;
+   &lt;/common_fields&gt;
+   &lt;trace&gt;
+      &lt;trace_name&gt;F-3NB691000020&lt;/trace_name&gt;
+      &lt;trace_file&gt;./traces/F-3NB691000020.scf&lt;/trace_file&gt;
+      &lt;clone_id&gt;3NB691000020&lt;/clone_id&gt;
+      &lt;library_id&gt;3NB691&lt;/library_id&gt;
+      &lt;template_id&gt;3NB691000020&lt;/template_id&gt;
+   &lt;/trace&gt;
+   &lt;trace&gt;
+      &lt;trace_name&gt;F-3NB691000033&lt;/trace_name&gt;
+      &lt;trace_file&gt;./traces/F-3NB691000033.scf&lt;/trace_file&gt;
+      &lt;clone_id&gt;3NB691000033&lt;/clone_id&gt;
+      &lt;library_id&gt;3NB691&lt;/library_id&gt;
+      &lt;template_id&gt;3NB691000033&lt;/template_id&gt;
+   &lt;/trace&gt;
+     --- more information ---
+&lt;/trace_volume&gt;
+</code></pre></div></div>
+
+<h4 id="traceinfo-tab-delimited-text-example-">TRACEINFO tab-delimited text example <a name="TRACEINFO_tab-delimited_text_example"></a></h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>center_name = CENTER NAME ACRONYM IS HERE
+center_project = FLJ
+source_type = N
+species_code = HOMO SAPIENS
+strategy = EST
+submission_type = NEW
+trace_format = SCF
+trace_type_code = EST
+trace_name  clone_id    library_id  template_id trace_file
+F-3NB691000020  3NB691000020    3NB691  3NB691000020    ./traces/F-3NB691000020.scf
+F-3NB691000033  3NB691000033    3NB691  3NB691000033    ./traces/F-3NB691000033.scf
+--- more information ---            
+</code></pre></div></div>
+
+<h3 id="upload-submission-files-">Upload submission files <a name="upload-submission-files"></a></h3>
+
+<p>DTA creates a directory for data submission. Please contact to <a href="/contact-ddbj-e.html">the DTA
+team</a>. Transfer files by SCP according to the
+<a href="/dra/submission.html#upload-sequence-data">manual</a>.</p>
+
+<h4 id="submission-directory-example-">Submission directory example <a name="Submission_directory_example"></a></h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>submission/submitter_id/dta/dta_submitter_id-0001
+</code></pre></div></div>
+
+<p><span class="red">Directory for the DTA submission is
+separated from those for the <a href="/dra/index-e.html">DDBJ Sequence Read
+Archive</a>. </span></p>
+
+<h3 id="completion-of-submission-">Completion of submission <a name="completion-submission"></a></h3>
+
+<p>After submission files become complete, DTA can keep the data private
+until the submitters instruct us to release the data. After instruction
+of data release, DTA uploads the files to the NCBI Trace Archive. As
+soon as the data are loaded to the NCBI Trace Archive, TI numbers are
+assigned and the data become public.</p>
+
+<p><span class="red">Please note that TI number assignment and
+data release are concurrent events. </span></p>
+
+<h3 id="update-">Update <a name="update"></a></h3>
+
+<p>To update the records, please contact to <a href="/contact-ddbj-e.html">the DTA
+team</a>.</p>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

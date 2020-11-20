@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A new high speed BLAST API was opened to the public from WABI</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">A new high speed BLAST API was opened to the public from WABI</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/news">news</a>
+          </li>
+          <li>
+            <a href="">A new high speed BLAST API was opened to the public from WABI</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <html><a href="http://www.xml.nig.ac.jp/parallel_blast.html" target="new">High speed BLAST service</a> was opened to the public in <a href="http://www.xml.nig.ac.jp/index.html" target="new">Web API for Biology (WABI)</a>. High speed BLAST is fast for searching against large databases such as whole DDBJ. The computing time is shortened below the half compared with existing service. For example, it is possible to execute BLAST in about 3 minutes at high speed BLAST though it takes 10 minutes in existing service. It is a search of the entire DDBJ as the reference database by one query of DNA sequence whose accession number is AB000001 and which is 660 bp.<br />
+
+<dl class="square">
+    <dt>BLAST can be done at high speed</dt>
+    <dd>High speed BLAST is executed at high speed by doing NCBI BLAST on multiple servers of PC cluster. It is faster than NCBI BLAST on 1 node.</dd>
+    <dt>Efficient calculation by dividing database</dt>
+    <dd>In NCBI BLAST, if a large-scale database is referred, it is likely to become extremely slow because the memory utilization exceeds the memory capacity of the server. In high speed BLAST, it calculates efficiently and at high speed so that the reference database is divided to be stored in the memory of the server.</dd>
+    <dt>Effect of speed-up by high speed BLAST</dt>
+    <dd>The following table indicates that the computing time is shortened below the half compared with NCBI BLAST. However, it doesn't contain waiting time if a lot of jobs are requested at the same time. Moreover, it may change by the state of the server such as cache of databases.
+
+        <table class="table_ddbjing_02wide">
+            <tr>
+                <td class="td_ddbjing_02" align="center"><b>Query</b></td>
+                <td class="td_ddbjing_02" align="center"><b>Computing time of<br />NCBI BLAST</b></td>
+                <td class="td_ddbjing_02" align="center"><b>Computing time of<br />high speed BLAST</b></td>
+            </tr>
+            <tr>
+                <td>DNA sequence length:36 bp(DDBJ Accession Number:DM013333)</td>
+                <td align="center">10min</td>
+                <td align="center">2min</td>
+            </tr>
+            <tr>
+                <td>DNA sequence length:660 bp(DDBJAccession Number:AB000001)</td>
+                <td align="center">10min</td>
+                <td align="center">3min</td>
+            </tr>
+            <tr>
+                <td>DNA sequence length:3031 bp(DDBJAccession Number:AB489118)</td>
+                <td align="center">10min</td>
+                <td align="center">3min</td>
+            </tr>
+        </table>
+    </dd>
+    <dt>How to use the high speed BLAS</dt>
+    <dd>Please see the <a href="http://www.xml.nig.ac.jp/parallel_blast.html" target="new">detailed information</a>, and the <a href="http://www.xml.nig.ac.jp/wabi/Method?&amp;lang=en&amp;serviceName=Blast&amp;methodName=searchParallel&amp;mode=methodDetail" target="new">instruction</a> for your usage.</dd>
+</dl>
+</html>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

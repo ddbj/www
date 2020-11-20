@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation tools for MSS data files</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">Validation tools for MSS data files</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/ddbj">ddbj</a>
+          </li>
+          <li>
+            <a href="">Validation tools for MSS data files</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/ddbj/index-e.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/submission-e.html">Submission</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/submission-e.html">Before Submission</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/web-submission-e.html">Web submission</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/mss-e.html">Mass Submission</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/update-e.html">Data Update</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="http://ddbj.nig.ac.jp/arsa/?lang=en">Search</a>
+      
+      <ul>
+        
+        <li>
+          <a href="http://getentry.ddbj.nig.ac.jp/top-e.html">getentry</a>
+        </li>
+        
+        <li>
+          <a href="http://ddbj.nig.ac.jp/arsa/?lang=en">ARSA</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/flat-file-e.html">Flat file</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/features-e.html">Feature key</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/qualifiers-e.html">Qualifier key</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/organism-e.html">Organism qualifier</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/location-e.html">Description of Location</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/cds-e.html">Protein Coding Sequence</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/geneticcode-e.html">The Genetic Codes</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/code-e.html">Codes Used in Sequence Description</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/example-e.html">Example of Submission</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/data-categories-e.html">Data categories</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/genome-e.html">Data Submission from Genome Project</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/pseudohaplotype-e.html">Pseudohaplotype</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/wgs-e.html">WGS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/metagenome-assembly-e.html">Metagenome Assembly</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/single-amplified-genome-e.html">Single amplified genome</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/con-e.html">CON</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/gss-e.html">GSS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/htg-e.html">HTG</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/environmental-e.html">Submission of environmental sequences</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/env-e.html">ENV</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tls-e.html">TLS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/transcriptome-e.html">Data Submission from Transcriptome Project</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tsa-e.html">TSA</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/est-e.html">EST</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/htc-e.html">HTC</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tpa-e.html">Third Party Data (TPA)</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/en/index-e.html">FAQ</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/index-e.html">Other</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/patent-data-e.html">Patent</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/mga-e.html">MGA</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="system-requirements-">System requirements <a name="system"></a></h2>
+
+<h3 id="hardware-">Hardware <a name="system-1"></a></h3>
+
+<ul>
+  <li>About 20 MB of hard disk space to install.</li>
+  <li>At least 512 MB of RAM. More RAM, 1 GB or over, is recommended.</li>
+</ul>
+
+<h3 id="software-">Software <a name="system-2"></a></h3>
+
+<ul>
+  <li>Each tool requires <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java Development Kit 8 (JDK8)</a> installed properly on a PC that it runs.</li>
+  <li>DDBJ recommends either of following operating systems, because DDBJ has tested the program only on these environments.<br />
+Windows: Windows 10<br />
+unix/macOS: Ubuntu 16.04 LTS, macOS High Sierra</li>
+</ul>
+
+<p><span class="red">*</span>UME (Utilities for MSS file Error check) includes software developed by <a href="//www.apache.org/">the Apache Software Foundation</a>.</p>
+
+<h2 id="download-">Download <a name="download"></a></h2>
+
+<p>Download either of following UME archive packages that suits for your system environment.<br />
+Please refer each manuals for how to install and use.</p>
+
+<table>
+    <caption></caption> 
+    <thead>
+      <tr>
+      <th>Name</th>
+      <th>OS</th>
+      <th>Refix Date</th>
+      <th>Documents</th>
+      <th>Remarks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/UME_win_V1.49.zip">UME_win_V1.49.zip</a></td>
+      <td>Windows</td>
+      <td rowspan="2">2020/04/07</td>
+      <td rowspan="2"><a href="/ddbj/ume-e.html">UME User’s manual</a></td>
+      <td rowspan="2">UME contains Parser and transChecker.</td>
+      </tr>
+      <tr>
+      <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/UME_unix_V1.49.zip">UME_unix_V1.49.zip</a></td>
+      <td>unix/macOS</td>
+      </tr>
+      <tr>
+      <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/Parser_V6.62.tar.gz">Parser_V6.62.tar.gz</a></td>
+      <td>unix/macOS</td>
+      <td>2020/04/07</td>
+      <td><a href="/ddbj/parser-e.html">Parser User's Manual</a></td>
+      <td></td>
+      </tr>
+      <tr>
+      <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/transChecker_V2.21.tar.gz">transChecker_V2.21.tar.gz</a></td>
+      <td>unix/macOS</td>
+      <td>2017/05/17</td>
+      <td><a href="/ddbj/transchecker-e.html">transChecker User's Manual</a></td>
+      <td></td>
+      </tr>
+    </tbody>
+</table>
+
+<h2 id="end-user-license-agreement-">End-User License Agreement <a name="license"></a></h2>
+
+<p><strong>Please read the following agreement carefully before you use the software for Mass Submission System.</strong></p>
+
+<p>NOTICE TO USERS:<br />
+Carefully read the following agreement. Use of the tools for Mass Submission System provided by DDBJ with this agreement (hereinafter collectively called “the Software”) constitutes your acceptance of these terms. If you do not agree to the terms of this agreement, do not install and/or use the Software. User’s use of the Software is conditioned upon compliance by user with the terms of this agreement.</p>
+
+<ol>
+  <li>All copyright related to the Software except the following third-party software (included in only “UME”) must belong to the DDBJ:<br />
+a) Axis 1.1<br />
+b) Xerces 1.4.4<br />
+The Software includes the source code thereof and documentation thereto.</li>
+  <li>In the event you provide to any third party all or any portion of the Software, prior written consent of DDBJ is required.</li>
+  <li>You agree that you will not attempt to reverse compile, modify, translate, or disassemble the Software in whole or in part.</li>
+  <li>Except as required by law, DDBJ will not be liable to you for any damages arising out of the use or inability to use of the Software.</li>
+  <li>Requirements specified in this agreement are subject to change without notice.</li>
+</ol>
+
+      </div>
+      
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              
+              <li>
+                <a href="/ddbj/file-format-e.html">Submission File Format</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/ume-e.html">UME User’s manual</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/parser-e.html">Parser User’s Manual</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/transchecker-e.html">transChecker User’s Manual</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/validator-e.html">Validator error message</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/mss-form-e.html">Application form for MSS</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

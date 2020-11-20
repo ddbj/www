@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDBJ 公開形式 Flat file</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">DDBJ 公開形式 Flat file</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/ddbj">ddbj</a>
+          </li>
+          <li>
+            <a href="">DDBJ 公開形式 Flat file</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/ddbj/index.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/submission.html">Submission</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/submission.html">塩基配列の登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/web-submission.html">Web 版塩基配列登録システム</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/mss.html">Mass Submission System</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/update.html">登録データの修正・更新</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="http://ddbj.nig.ac.jp/arsa/?lang=ja">Search</a>
+      
+      <ul>
+        
+        <li>
+          <a href="http://getentry.ddbj.nig.ac.jp/top-j.html">getentry</a>
+        </li>
+        
+        <li>
+          <a href="http://ddbj.nig.ac.jp/arsa/?lang=ja">ARSA</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/flat-file.html">Flat file</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/features.html">Feature key の定義</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/qualifiers.html">Qualifier key の定義</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/organism.html">Organism qualifier に記載する生物名</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/location.html">Location の記述法</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/cds.html">タンパク質コード配列</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/geneticcode.html">The Genetic Codes</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/code.html">配列の記載に用いる略号</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/example.html">登録の見本</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/data-categories.html">Data categories</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/genome.html">Genome project のデータ登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/pseudohaplotype.html">Pseudohaplotype</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/wgs.html">WGS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/metagenome-assembly.html">メタゲノムアセンブリ</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/single-amplified-genome.html">Single amplified genome</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/con.html">CON</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/gss.html">GSS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/htg.html">HTG</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/environmental.html">Environmental sequence の登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/env.html">ENV</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tls.html">TLS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/transcriptome.html">Transcriptome Project のデータ登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tsa.html">TSA</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/est.html">EST</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/htc.html">HTC</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tpa.html">Third Party Data (TPA)</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/ja/index.html">FAQ</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/index-e.html">Other</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/patent-data.html">Patent</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/mga.html">MGA</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <p>「DDBJ/EMBL-Bank/GenBank 国際塩基配列データベース」は、全世界の研究者が実験によって決定したDNA (または RNA)
+の塩基配列データ <span class="red">*</span> を、DDBJ/EMBL-Bank/GenBank 国際 DNA
+データバンクが、三者間で定めたデータ構築規範に沿って収集・編集することにより構築されています。（<span class="red">*</span>旧運用では, 論文に記載されていた塩基配列を取り込む journal scan 方式の塩基配列データ収集も実施していました。）</p>
+
+<p>また、データベースの中には、日本の<a href="//www.jpo.go.jp/index.html">Japan Patent Office (JPO)</a>、韓国の <a href="//www.kipo.go.kr/">Korean Intellectual Property Office (KIPO)</a> 、欧州の <a href="//www.epo.org/">European Patent Office (EPO)</a>、米国の <a href="https://www.uspto.gov/">United States Patent and Trademark Office (USPTO)</a> が収集・処理した塩基配列データも含まれています。</p>
+
+<p>塩基配列データベースは、データの単位である「エントリ」の集合として構成されています。 DDBJ に登録されたそれぞれのエントリは、DDBJ
+の定めるフォーマットにしたがった「フラットファイル」 (flat file) の形式で公開されています。
+フラットファイルには、塩基配列のほか、配列の登録者、関連文献、由来生物種、Feature 情報などが表示されています。 Feature 情報とは、その塩基配列のもつ生物学的特徴や遺伝子の機能、特性等に関する情報を記述したもので、記述形式は、 <a href="/ddbj/feature-table.html">The DDBJ/ENA/GenBank Feature Table Definition</a> (国際塩基配列データベースが定める記述形式) によって定められています。</p>
+
+<h2 id="ddbj-フォーマットの例">DDBJ フォーマットの例<a name="DDBJ_フォーマットの例"></a></h2>
+
+<pre class="code flat-file"><code><a id="LocusA" href="/ddbj/flat-file#LocusB">LOCUS</a>       <a id="LocusNameA" href="/ddbj/flat-file#LocusNameB">AB000000</a>              <a id="SequenceLengthA" href="/ddbj/flat-file#SequenceLengthB">450 bp</a>    <a id="MoleculeTypeA" href="/ddbj/flat-file#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="/ddbj/flat-file#MoleculeFormB">linear</a>   <a id="DivisionA" href="/ddbj/flat-file#DivisionB">HUM</a> <a id="ModificationDateA" href="/ddbj/flat-file#ModificationDateB">01-JUN-2009</a>
+<a id="DefinitionA" href="/ddbj/flat-file#DefinitionB">DEFINITION</a>  Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate
+            dehydrogenase, partial cds.
+<a id="AccessionA" href="/ddbj/flat-file#AccessionB">ACCESSION</a>   AB000000
+<a id="VersionA" href="/ddbj/flat-file#VersionB">VERSION</a>     AB000000.1
+<a id="KeywordsA" href="/ddbj/flat-file#KeywordsB">KEYWORDS</a>    .
+<a id="SourceA" href="/ddbj/flat-file#SourceB">SOURCE</a>      Homo sapiens (human)
+  <a id="OrganismA" href="/ddbj/flat-file#OrganismB">ORGANISM</a>  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Hominidae; Homo.
+<a id="Reference1A" href="/ddbj/flat-file#Reference1B">REFERENCE   1</a>  (bases 1 to 450)
+  <a id="AuthorsA" href="/ddbj/flat-file#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
+  <a id="TitleA" href="/ddbj/flat-file#TitleB">TITLE</a>     Direct Submission
+  <a id="JournalA" href="/ddbj/flat-file#JournalB">JOURNAL</a>   Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.
+            Contact:Hanako Mishima
+            National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
+            Mishima, Shizuoka 411-8540, Japan
+<a id="Reference2A" href="/ddbj/flat-file#Reference2B">REFERENCE   2</a>
+  AUTHORS   Mishima,H., Shizuoka,T. and Fuji,I.
+  TITLE     Glyceraldehyde-3-phosphate dehydrogenase expressed in human liver
+  JOURNAL   Unpublished (2009)
+<a id="CommentA" href="/ddbj/flat-file#CommentB">COMMENT</a>     Human cDNA sequencing project.
+<a id="FeaturesA" href="/ddbj/flat-file#FeaturesB">FEATURES</a>             Location/Qualifiers
+     <a id="FeaturesSourceA" href="/ddbj/flat-file#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..450</a>
+                     /<a href="/ddbj/qualifiers.html#chromosome">chromosome</a>="12"
+                     /<a href="/ddbj/qualifiers.html#clone">clone</a>="GT200015"
+                     /<a href="/ddbj/qualifiers.html#clone_lib">clone_lib</a>="lambda gt11 human liver cDNA (GeneTech.
+                     No.20)"
+                     /<a href="/ddbj/qualifiers.html#db_xref">db_xref</a>="taxon:9606"
+                     /<a href="/ddbj/qualifiers.html#map">map</a>="12p13"
+                     /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="mRNA"
+                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Homo sapiens"
+                     /<a href="/ddbj/qualifiers.html#tissue_type">tissue_type</a>="liver"
+     <a id="CDSA" href="#CDSB">CDS</a>             <a href="/ddbj/location.html">86..&gt;450</a>
+                     /<a href="/ddbj/qualifiers.html#codon_start">codon_start</a>=1
+                     /<a href="/ddbj/qualifiers.html#gene">gene</a>="GAPD"
+                     /<a href="/ddbj/qualifiers.html#product">product</a>="glyceraldehyde-3-phosphate dehydrogenase"
+                     /<a href="/ddbj/qualifiers.html#protein_id">protein_id</a>="BAA12345.1"
+                     /<a href="/ddbj/qualifiers.html#transl_table">transl_table</a>=1
+                     /<a href="/ddbj/qualifiers.html#translation">translation</a>="MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT
+                     YMFKYDTVHGQWKHHEVKVKDSKTLLFGEKEVTVFGCRNPKEIPWGETSAEFVVEYTG
+                     VFTDKDKAVAQLKGGAKKV"
+<a id="BaseCountA" href="#BaseCountB">BASE COUNT</a>          102 a          119 c          131 g           98 t
+<a id="OriginA" href="#OriginB">ORIGIN</a>
+        1 cccacgcgtc cggtcgcatc gcacttgtag ctctcgaccc ccgcatctca tccctcctct
+       61 cgcttagttc agatcgaaat cgcaaatggc gaagattaag atcgggatca atgggttcgg
+      121 gaggatcggg aggctcgtgg ccagggtggc cctgcagagc gacgacgtcg agctcgtcgc
+      181 cgtcaacgac cccttcatca ccaccgacta catgacatac atgttcaagt atgacactgt
+      241 gcacggccag tggaagcatc atgaggttaa ggtgaaggac tccaagaccc ttctcttcgg
+      301 tgagaaggag gtcaccgtgt tcggctgcag gaaccctaag gagatcccat ggggtgagac
+      361 tagcgctgag tttgttgtgg agtacactgg tgttttcact gacaaggaca aggccgttgc
+      421 tcaacttaag ggtggtgcta agaaggtctg
+<a id="EndA" href="/ddbj/flat-file#EndB">//</a></code></pre>
+
+<p>フラットファイルは登録者から提供される情報に基づいて、一定の形式に則って作成されています。
+登録者の研究上の着眼点の違いなどにより、配列が類似している登録の場合でもフラットファイルに記載される内容は異なることがあります。
+検索結果を参照される際にはご注意下さい。</p>
+
+<h2 id="field-comments-">FIELD COMMENTS <a name="FIELD_COMMENTS"></a></h2>
+
+<div id="LocusB">
+  <h3><a href="#LocusA">LOCUS</a></h3>
+</div>
+
+<p>Locus名、配列長、塩基配列の分子タイプ、塩基配列の分子形態、Division、データの最終公開日が記載されています。</p>
+
+<div id="LocusNameB">
+  <h4><a href="#LocusNameA">Locus 名</a></h4>
+</div>
+
+<p>Locus 名は、 データベース中でそのエントリのみが持つユニークな名前が付けられています。<br />
+DDBJ
+では、1996年7月以降公開されたデータに、<a href="#AccessionB">アクセッション番号</a>と同じ名前を付けています。（GenBank、EMBL
+も独自の命名法を取っています。）</p>
+
+<div id="SequenceLengthB">
+  <h4><a href="#SequenceLengthA">配列長</a></h4>
+</div>
+
+<p>このエントリの配列の長さです。（注意：MGA データの Master record 上では、配列長は記載されません。）</p>
+
+<div id="MoleculeTypeB">
+  <h4><a href="#MoleculeTypeA">塩基配列の分子タイプ</a></h4>
+</div>
+
+<p>source feature の /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a> qualifier
+に示される分子種に基づいて DNA, RNA, mRNA, rRNA, tRNA，cRNA のいずれかの分子タイプが記載されます。</p>
+
+<div id="MoleculeFormB">
+  <h4><a href="#MoleculeFormA">塩基配列の分子形態</a></h4>
+</div>
+
+<p>塩基配列の分子形態が、線状（linear）か、環状（circular）かを示します。エントリが完全長で，かつ circular
+の形態をとる場合には，”circular” と記載されます。</p>
+
+<div id="DivisionB">
+  <h4><a href="#DivisionA">Division</a></h4>
+</div>
+
+<p>DDBJ では以下の21の division にデータを分類しています。</p>
+
+<p>a: 由来生物種に基づく分類</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>HUM</td>
+      <td>ヒト</td>
+    </tr>
+    <tr>
+      <td>PRI</td>
+      <td>霊長類 (ヒトを除く)</td>
+    </tr>
+    <tr>
+      <td>ROD</td>
+      <td>齧歯類</td>
+    </tr>
+    <tr>
+      <td>MAM</td>
+      <td>哺乳類 (ヒト，霊長類，齧歯類を除く)</td>
+    </tr>
+    <tr>
+      <td>VRT</td>
+      <td>脊椎動物 (ヒト，霊長類，齧歯類，哺乳類を除く)</td>
+    </tr>
+    <tr>
+      <td>INV</td>
+      <td>無脊椎動物</td>
+    </tr>
+    <tr>
+      <td>PLN</td>
+      <td>植物・真菌類　など</td>
+    </tr>
+    <tr>
+      <td>BCT</td>
+      <td>バクテリア</td>
+    </tr>
+    <tr>
+      <td>VRL</td>
+      <td>ウイルス</td>
+    </tr>
+    <tr>
+      <td>PHG</td>
+      <td>バクテリオファージ</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>b: 生物分類に基づかない分類</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="/ddbj/patent-data.html">PAT</a></td>
+      <td>特許出願に含まれる塩基配列データ<br />Japan Patent Office (JPO), European Patent Office (EPO), United States Patent and Trademark Office (USPTO), Korean Intellectual Property Office (KIPO) が収集・処理したデータ</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/env.html">ENV</a></td>
+      <td>PCR, DGGE、あるいは、その他の方法で直接、分子を単離した環境上のサンプルに由来した配列</td>
+    </tr>
+    <tr>
+      <td>SYN</td>
+      <td>synthetic constructs<br />人為的に構成された配列</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/est.html">EST</a></td>
+      <td>expressed sequence tags<br />short single pass の cDNA 配列</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/tsa.html">TSA</a></td>
+      <td>transcriptome shotgun assemblies<br />再構成された (assembled) mRNA 配列</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/gss.html">GSS</a></td>
+      <td>genome survey sequences<br />short single pass のゲノム配列</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/htc.html">HTC</a></td>
+      <td>high throughput cDNA sequences<br />EST 以外の大規模 cDNA 配列プロジェクトに由来し，更新が期待されるデータ。<br />配列が finish した後，生物種による division に移される場合があります。</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/htg.html">HTG</a></td>
+      <td>high throughput genomic sequences<br />ゲノムプロジェクトに由来し，頻繁に update されることが期待されるデータで，段階に応じて以下の 3 phase に分類されます。その配列がいずれの phase であるかは KEYWORD 行に記載されます。配列が更新されると phase が上がり，finish した後は生物種による division に移されます。<br /><ul><li>phase0; piece contig が構築される以前の配列 </li><li>phase1; 構築された piece contig の向きや順序が未確定の配列 </li><li>phase2; piece contig の向きや順序が確定した unfinished の配列</li></ul></td>
+    </tr>
+    <tr>
+      <td>STS</td>
+      <td>sequence tagged sites<br />Genome sequencing の tag となる配列。chromosome, map, PCR_condition 等の情報が必要です。</td>
+    </tr>
+    <tr>
+      <td>UNA</td>
+      <td>未注釈データ<br />最近は UNA division は使用していません。</td>
+    </tr>
+    <tr>
+      <td><a href="con.html">CON</a></td>
+      <td>Contig / Constructed<br />ゲノムプロジェクトのように個々に登録された一連の配列データをデータバンク側が結合し，１つのアクセッション番号を付与した長大なデータ。CON division に格納されるエントリには長大な配列を構成する配列のアクセッション番号が記載され，塩基配列は記載されません。また，すでに登録されている個々のデータのエントリは、他の division に保存されています。<br />CON division への直接のデータ登録は受け付けていません。まず、CON エントリを構成する個々の配列データを登録して頂きます。その上で CON エントリの構築が適当と判断された場合に、データバンク側で CON エントリを構築します。CON エントリを構成する個々の配列データが更新された場合には、CON エントリもバンク側で更新します。</td>
+    </tr>
+  </tbody>
+</table>
+
+<div id="ModificationDateB">
+  <h4><a href="#ModificationDateA">データの最終公開日</a></h4>
+</div>
+
+<p>そのデータの公開日が記載されます。データが更新され再公開されると日付は変わります。</p>
+
+<div id="DefinitionB">
+  <h3><a href="#DefinitionA">DEFINITION</a></h3>
+</div>
+
+<p>データの定義や遺伝子などに関する情報が簡単に記載されています。一定の記述ルールに従ってデータバンク側で作成しています。<br />
+ただし、<a href="/ddbj/mss.html">Mass Submission System</a>
+からの登録では、登録者に作成していただくことがあります。</p>
+
+<p>[記載例]</p>
+
+<dl>
+  <dt>トウモロコシ catalase gene の完全配列</dt>
+  <dd>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  DEFINITION  Zea mays Cat3 gene for catalase, complete cds.
+</code></pre></div>    </div>
+  </dd>
+  <dd>
+    <p>書式: [organism name] [gene name] gene for [product name], complete cds.</p>
+    <ul>
+      <li>organism name は原則としてscientific name.</li>
+      <li>gene name は locus を示す象徴的な略号。</li>
+      <li>product name は産物、CDS の場合はタンパク質、の一般名。</li>
+      <li>タンパク質の全長配列を含むことを示す “complete cds” を記述。</li>
+    </ul>
+  </dd>
+  <dt>ヒト glyceraldehyde-3-phosphate dehydrogenase の cDNA 部分配列</dt>
+  <dd>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  DEFINITION  Homo sapiens mRNA for glyceraldehyde-3-phosphate 
+          dehydrogenase, partial cds.
+</code></pre></div>    </div>
+  </dd>
+  <dd>
+    <p>書式: [organism name] mRNA for [product name], partial cds.</p>
+    <ul>
+      <li>gene name が記載されていない場合は省略。</li>
+      <li>タンパク質の部分配列を含むことを示す “partial cds” を記述。</li>
+    </ul>
+  </dd>
+  <dt>Bacillus 属 16S rRNA の部分配列</dt>
+  <dd>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  DEFINITION  Bacillus sp. AZ25 gene for 16S rRNA, partial 
+          sequence.
+</code></pre></div>    </div>
+  </dd>
+  <dd>
+    <p>書式: [organism name] [strain name] gene for [product name], partial sequence.</p>
+    <ul>
+      <li>種を特定できない場合、種内比較の場合などでは strain name などを識別子として記載。</li>
+      <li>部分配列を含むことを示す “partial sequence” を記述。</li>
+    </ul>
+  </dd>
+  <dt>複数の CDS がある ラット mitochondria DNA の配列</dt>
+  <dd>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  DEFINITION  Rattus norvegicus mitochondrial genes for cytochrome 
+          c oxidase subunit II, ATPase subunit 6, cytochrome c 
+          oxidase subunit III, partial and complete cds.
+</code></pre></div>    </div>
+  </dd>
+  <dd>
+    <p>書式: [organism name] [gene name 1], [gene name 2], …. genes for [product name 1], [product name 2], ….. , partial and complete cds.</p>
+    <ul>
+      <li>5’側から3’側へ順番に gene name, product name をならべる</li>
+      <li>partial, complete and partial cds は省略して partial and complete cds
+とする。</li>
+      <li>gene name, product name が１対１で対応しない時は、原則、gene name のみ あるいは
+product name のみを記述。</li>
+      <li>長くなりすぎる場合は map position などで表記。</li>
+      <li>妥当と判断される場合は gene cluster, operon などを用いて表記。</li>
+    </ul>
+  </dd>
+  <dt>ヒト肝臓 EST の 3’末端の配列</dt>
+  <dd>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  DEFINITION  Homo sapiens cDNA, clone:ABC123, 3' end, expressed 
+          in liver.
+</code></pre></div>    </div>
+  </dd>
+  <dd>
+    <p>書式: [organism name] cDNA, clone:[clone name], [その他の情報].</p>
+    <ul>
+      <li>clone name の記載が必要。</li>
+    </ul>
+  </dd>
+  <dt>マウス chromosome 1q の GSS</dt>
+  <dd>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  DEFINITION  Mus musculus DNA, clone:1H11A14, 1q region.
+</code></pre></div>    </div>
+  </dd>
+  <dd>
+    <p>書式: [organism name] DNA, clone:[clone name], [その他の情報].</p>
+    <ul>
+      <li>clone name の記載が必要。</li>
+    </ul>
+  </dd>
+  <dt>ヒト GAPD，TPA (Third Party Data) の配列</dt>
+  <dd>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  DEFINITION  TPA_exp: Homo sapiens GAPD mRNA forglyceraldehyde-3-phosphate 
+          dehydrogenase, complete cds.
+</code></pre></div>    </div>
+  </dd>
+  <dd>
+    <p>書式: [TPA header]: [organism name] [gene name] mRNA for [product name], complete cds.</p>
+    <ul>
+      <li><a href="/ddbj/tpa.html">TPA (Third Party data)</a> のデータの場合、TPA_exp: (TPA:experimental の場合)、または、TPA_inf: (TPA:inferential の場合) が行頭に記述される。</li>
+    </ul>
+  </dd>
+</dl>
+
+<div id="AccessionB">
+  <h3><a href="#AccessionA">ACCESSION</a></h3>
+</div>
+
+<p>INSD が発行する登録番号をアクセッション番号と呼んでいます。</p>
+
+<dl>
+  <dt>Conventional sequence data</dt>
+  <dd>アルファベット１文字＋５桁の数字（例 A12345）または、アルファベット２文字＋６桁の数字（例 AB123456）で構成されています。<br />アルファベットの部分をプレフィックスと呼びます。<br /><a href="/documents/prefix.html">プレフィックスのリスト</a>も ご参照ください。</dd>
+  <dd>
+    <p>複数のエントリを統合した場合や、データ登録後に内容が大幅に変更された場合などには、新規にアクセッション番号を発行することがあります。この際、新規のアクセッション番号（プライマリアクセッション番号）に対して、既存のアクセッション番号はセカンダリアクセッション番号となります。フラットファイルには先頭にプライマリアクセッション番号、２つ目以降にセカンダリアクセッション番号を記載します。プライマリアクセッション番号、あるいはセカンダリアクセッション番号、どちらの番号で検索しても，同じ変更後のデータが検索されます。</p>
+  </dd>
+  <dd>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ACCESSION   AB999999 AB888888 AB777777
+</code></pre></div>    </div>
+  </dd>
+  <dd>
+    <table>
+      <tbody>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">AB999999</code></td>
+          <td>プライマリアクセッション番号</td>
+        </tr>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">AB888888 AB777777</code></td>
+          <td>セカンダリアクセッション番号</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+  <dt>Bulk sequence data; WGS, TSA, TLS</dt>
+  <dd><a href="/ddbj/wgs.html">WGS</a>, <a href="/ddbj/tsa.html">TSA</a>, TLS に発行されるアクセッション番号はアルファベット 4 文字 ＋ 8 桁（9 または 10 桁になることがあります）の数字で構成されます。<br />アルファベットの部分を<a href="/documents/prefix.html">プレフィックス</a>と呼びます。<br /><a href="/documents/prefix-e.html#large">For Large Scale Data (four prefix)</a>も ご参照ください。<br />例：ZZZZ01000001</dd>
+  <dd>
+    <table>
+      <tbody>
+        <tr>
+          <td>ZZZZ（アルファベット 4文字）</td>
+          <td>プロジェクトを区別する prefix</td>
+        </tr>
+        <tr>
+          <td>01（2桁の数字）</td>
+          <td>データセットのバージョン番号</td>
+        </tr>
+        <tr>
+          <td>000001（6桁の数字）</td>
+          <td>エントリ（各配列の）番号（エントリ数に応じて 7 桁または 8 桁になる場合があります）</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+  <dd>データセットが更新されるとデータセットのバージョン番号が上がります。 例：ZZZZ02000001</dd>
+  <dd>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ACCESSION   ZZZZ01000001 ZZZZ01000000
+</code></pre></div>    </div>
+  </dd>
+  <dd>
+    <table>
+      <tbody>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">ZZZZ01000001</code></td>
+          <td>プライマリアクセッション番号</td>
+        </tr>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">ZZZZ01000000</code></td>
+          <td>セットＩＤ</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+  <dt>MGA データ</dt>
+  <dd>Master record に表示される番号はリソースセットに対する番号でデータバンク側が割り振ります。</dd>
+  <dd>番号はアルファベット 5 文字＋ 7 桁の数字（例 ABCDE0000001）で構成されており、当該リソース配下の配列エントリのアクセッション番号は “MGA行” に記載されています。</dd>
+  <dd>例：ABCDE0000001</dd>
+  <dd>
+    <table>
+      <tbody>
+        <tr>
+          <td>AB（1-2番目の文字）</td>
+          <td>プロジェクト毎に割り振られるID (プロジェクトID *1)</td>
+        </tr>
+        <tr>
+          <td>CDE（3-5番目の文字）</td>
+          <td>各プロジェクトにおけるリソース *2に割り振られるID</td>
+        </tr>
+        <tr>
+          <td>0000001（7桁の数字）</td>
+          <td>リソース配下の配列エントリに割り振られる番号</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>*1 各プロジェクトIDに関しては<a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/mga/project_index.html">プロジェクトインデックス</a> をご参照ください。<br />*2 リソースとは得られた配列の由来が同一であるものの単位を指します。</p>
+  </dd>
+  <dd>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ACCESSION   ZZZZZ0000000
+</code></pre></div>    </div>
+  </dd>
+  <dd>
+    <table>
+      <tbody>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">ZZZZZ0000000</code></td>
+          <td>リソースセットに対するアクセッション番号</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<div id="VersionB">
+  <h3><a href="#VersionA">VERSION</a></h3>
+</div>
+
+<p>アクセッション番号とバージョン番号で構成されています。</p>
+
+<p>はじめて公開されたデータは、バージョン番号は “1”
+が記載されています。当該エントリの配列が訂正・更新された場合には、バージョン番号が更新されます。通常、配列が訂正・更新された場合にアクセッション番号が変更されることはありません。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>VERSION      AB000000.1
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">AB000000</code></td>
+      <td>アクセッション番号</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+      <td>バージョン番号</td>
+    </tr>
+  </tbody>
+</table>
+
+<dl>
+  <dt>MGA データ</dt>
+  <dd>リソースに対して割り振られた登録番号とバージョン番号で構成されています。ここで表記される登録番号は<a href="#Accession_MGA">アクセッション行</a>と同じ番号（例：ZZZZZ0000000）と表記されます。
+MGA では配列の更新を認めておりませんので、バージョン番号は「１」のままとなります。</dd>
+  <dd>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  VERSION    ZZZZZ0000000.1
+</code></pre></div>    </div>
+  </dd>
+  <dd>
+    <table>
+      <tbody>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">ZZZZZ000000</code></td>
+          <td>登録番号</td>
+        </tr>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">1</code></td>
+          <td>バージョン番号</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<div id="DblinkB">
+  <h3><a href="#DblinkA">DBLINK</a></h3>
+</div>
+
+<p>BioProject, BioSample の accession number, Sequence Read Archive の Run
+accession number 他、特定データベースへのリンクを記載します。</p>
+
+<p>DBLINK 行は 2009 年に記載情報を拡張したため PROJECT 行から変更されました。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DBLINK      BioProject:PRJDA12345
+            BioSample:SAMD01234567
+            Sequence Read Archive:DRR012345, DRR012346     
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">BioProject</code></td>
+      <td>リンクしているデータベースの名称: <a href="/bioproject/index.html">BioProject Database</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">PRJDA12345</code></td>
+      <td>データベースにおいてリンクしている ID: BioProject accession number</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">BioSample</code></td>
+      <td>リンクしているデータベースの名称: <a href="/biosample/index.html">BioSample Database</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">SAMD01234567</code></td>
+      <td>データベースにおいてリンクしている ID: BioSample accession number</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Sequence Read Archive</code></td>
+      <td>リンクしているデータベースの名称: <a href="/dra/index.html">Sequence Read Archive</a> (SRA)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DRR012345, DRR012346</code></td>
+      <td>データベースにおいてリンクしている ID: SRA Run accession number</td>
+    </tr>
+  </tbody>
+</table>
+
+<div id="KeywordsB">
+  <h3><a href="#KeywordsA">KEYWORDS</a></h3>
+</div>
+
+<p>KEYWORDS は、過去の登録においては、遺伝子名 (<a href="/ddbj/qualifiers.html#gene">gene</a>)、産物名
+(<a href="/ddbj/qualifiers.html#product">product</a>) の索引に用いられていました。</p>
+
+<p>現在は、<a href="/documents/data-categories.html#detail">データの詳細種別</a> (<a href="/ddbj/est.html">EST</a>,
+<a href="/ddbj/tsa.html">TSA</a>, <a href="/ddbj/htc.html">HTC</a>, <a href="/ddbj/htg.html">HTG</a>,
+<a href="/ddbj/gss.html">GSS</a>, <a href="/ddbj/wgs.html">WGS</a>, <a href="/ddbj/tpa.html">TPA</a>
+など)、配列の特性、実験手法、ゲノム配列の完成度などに関する情報などが、必要に応じて、記載されます。<a href="/ddbj/keyword-e.html">INSDC agreed
+methodological keywords</a> もご参照ください。</p>
+
+<div id="SourceB">
+  <h3><a href="#SourceA">SOURCE</a></h3>
+</div>
+
+<p>配列データが由来する生物の学名 (と存在する場合は一般名) を Taxonomy Database
+の登録に基づいて示します。また、核由来でない場合はオルガネラタイプも示します。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SOURCE      Homo sapiens (human)
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Homo sapiens (human)</code></td>
+      <td>配列データが由来する生物の学名と一般名</td>
+    </tr>
+  </tbody>
+</table>
+
+<div id="OrganismB">
+  <h4><a href="#OrganismA">ORGANISM</a></h4>
+</div>
+
+<p>由来生物の生物名と系統関係（lineage）を示します。</p>
+
+<p>１行目に配列データが由来する生物の学名、あるいは Unified Taxonomy Database に登録された生物名が記述されています。</p>
+
+<p>２行目以降に Unified Taxonomy Database に基づく生物学的分類が記述されています。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ORGANISM  Homo sapiens
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi
+            Mammalia; Eutheria; Primates; Catarrhini; Hominidae; Homo.
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Homo sapiens</code></td>
+      <td>配列データが由来する生物の学名と一般名</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria; Primates; Catarrhini; Hominidae; Homo.</code></td>
+      <td>Homo sapiens 系統 (lineage)</td>
+    </tr>
+  </tbody>
+</table>
+
+<div id="Reference1B">
+  <h3><a href="#Reference1A">REFERENCE 1</a></h3>
+</div>
+
+<p>データベースに登録した登録者の情報が記載されています。ただし古いデータに関してはこの限りではありません。またデータバンクが独自に構築する
+<a href="/ddbj/con.html">CON エントリ</a>の場合、登録者情報にあたる REFERENCE 1 は表示されない場合があります。</p>
+
+<p><a href="/ddbj/web-submission.html">塩基配列登録システム</a>をご利用いただいた場合には Contact person と Submitter
+の入力内容に基づいて作成されます。MSS をご利用いただいた場合は登録時のファイルに基づいて作成されます。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>REFERENCE   1   (bases 1 to 450)
+</code></pre></div></div>
+
+<p>注意：MGA データの Master record 上では “(bases 1 to 450)” の部分が表示されません</p>
+
+<div id="AuthorsB">
+  <h4><a href="#AuthorsA">AUTHORS</a></h4>
+</div>
+
+<p>原則としてそのエントリの登録者 (Submitter(s)) を記載します。登録者 (Submitter(s))
+とは、原則として、登録内容に責任を持つことが出来る人で登録内容に変更を加える
+(update する) 権利を有します。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> AUTHORS   Mishima,H. and Shizuoka,T.
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Mishima,H. and Shizuoka,T</code></td>
+      <td>このエントリの登録者</td>
+    </tr>
+  </tbody>
+</table>
+
+<div id="TitleB">
+  <h4><a href="#TitleA">TITLE</a></h4>
+</div>
+
+<p>“Direct Submission” が常に表示されます。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  TITLE     Direct Submission
+</code></pre></div></div>
+
+<div id="JournalB">
+  <h4><a href="#JournalA">JOURNAL</a></h4>
+</div>
+
+<p>１行目にはそのエントリの受付日 (Accept Date) が表示されます。受付日 (Accept Date)
+とは、原則として、アクセッション番号を発行可能な元データが DDBJ
+に到着した日付けです。<br />
+プライマリアクセッション番号であれば、そのエントリを更新しても受付日は変わりません。</p>
+
+<p>２行目以降には、<a href="/ddbj/submission.html#contact">コンタクトパーソン (Contact person)</a>
+の氏名、所属等の情報が表示されます。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  JOURNAL   Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.
+            Contact:Hanako Mishima
+            National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
+            Mishima, Shizuoka 411-8540, Japan
+</code></pre></div></div>
+
+<table>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.</code></td>
+      <td>このエントリが2008年11月30日に登録されたことを示します。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Contact:Hanako Mishima</code><br /><code class="language-plaintext highlighter-rouge">National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,</code><br /> <code class="language-plaintext highlighter-rouge">Mishima, Shizuoka 411-8540, Japan</code></td>
+      <td>このエントリのコンタクトパーソン（Hanako Mishima）の所属と住所が記載されます。</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>E-mail アドレスと電話番号, FAX番号について</p>
+
+<ul>
+  <li>DDBJ への登録に関しましては，E-mail アドレスと電話番号,
+FAX番号は原則，非表示としますが，表示しておく必要がある場合は， <a href="/contact-ddbj.html#to-ddbj">DDBJ
+へのお問い合わせ</a> からご連絡いただければ，個別に対応いたします。表示・非表示は「E-mailアドレス」「電話番号」「FAX番号」それぞれ個別に指定可能です。</li>
+  <li>E-mailアドレスと電話番号，FAX番号を非表示の場合、研究上の問題に関して，各配列の登録者への連絡が必要な場合はメッセージを転送いたします。お手数ですが、<a href="/contact-ddbj.html#to-submitters"> DDBJエントリ登録者へのご質問・ご要望の転送フォーム</a>からご連絡ください。その際は簡単な理由(「clone
+譲渡を希望」など)を書き添えてください。</li>
+</ul>
+
+<p>E-mailアドレスと電話番号，FAX番号が非表示の場合</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  JOURNAL   Submitted (30-NOV-2000) to the DDBJ/EMBL/GenBank databases.
+            Contact:Hanako Mishima
+            National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
+            Mishima, Shizuoka 411-8540, Japan
+</code></pre></div></div>
+
+<p>登録者が，E-mailアドレスと電話番号，FAX番号の表示をご希望の場合</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  JOURNAL   Submitted (30-NOV-2000) to the DDBJ/EMBL/GenBank databases.
+            Contact:Hanako Mishima
+            National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
+            Mishima, Shizuoka 411-8540, Japan
+            E-mail :mishima@supernig.nig.ac.jp
+            Phone  :81-55-981-6853
+            Fax    :81-55-981-6849
+</code></pre></div></div>
+
+<div id="Reference2B">
+  <h3><a href="#Reference2A">REFERENCE 2</a></h3>
+</div>
+
+<p>REFERENCE 2 以降 (<a href="#Reference1B">REFERENCE 1</a> 以外) の
+REFERENCEには<a href="/ddbj/submission.html#pcite">そのエントリに関連する論文情報</a>が表示されます。
+参考文献にあたるものは、原則として REFERENCE 3 以降に表示します。</p>
+
+<p>アクセッション番号の掲載された論文が公開された場合、DDBJ は対応エントリの更新作業を行うことがあります。このとき、登録時に
+REFERENCE 2 以降に記載された投稿予定の論文情報は、関連する情報 (登録者所属、著者名、タイトル、投稿予定雑誌など)
+との間に十分な整合性がある場合、特に登録者に知らせることなく書き換えることがあります。</p>
+
+<dl>
+  <dt>登録する塩基配列に関する論文を投稿、あるいは、その準備をしている, または既に論文が出版されている場合</dt>
+  <dd>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  REFERENCE   2
+AUTHORS   Mishima,H., Shizuoka,T. and Fuji,I.
+TITLE     Glyceraldehyde-3-phosphate dehydrogenase expressed in human liver
+JOURNAL   Unpublished (2009)
+</code></pre></div>    </div>
+  </dd>
+  <dd>
+    <table>
+      <tbody>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">AUTHORS</code></td>
+          <td>論文の著者名、まだ出版されていない場合は予定される著者名が表示されます。</td>
+        </tr>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">TITLE</code></td>
+          <td>論文のタイトル、まだ出版されていない場合は予定されるタイトルが表示されます。</td>
+        </tr>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">JOURNAL</code></td>
+          <td>論文が出版された場合、あるいは In Press の場合には、論文の雑誌名等が表示されます。<br />まだ出版されていない場合は “Unpublished” と表示されます。</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+  <dt>データベース上でのみ公開し、今後、論文等を投稿しない場合</dt>
+  <dd>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  REFERENCE   2
+AUTHORS   Mishima,H., Shizuoka,T. and Fuji,I.
+TITLE     Glyceraldehyde-3-phosphate dehydrogenase expressed in human liver
+JOURNAL   Published Only in Database(2009)
+</code></pre></div>    </div>
+  </dd>
+  <dd>
+    <table>
+      <tbody>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">AUTHORS</code></td>
+          <td>そのエントリの登録時に入力した Authors (論文の著者にあたる方) が表示されます。</td>
+        </tr>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">TITLE</code></td>
+          <td>登録時に入力した TITLE (論文のタイトルにあたるもの) が表示されます。</td>
+        </tr>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">JOURNAL</code></td>
+          <td>“Published Only in Database” と表示されます。<br />カッコ内の数字は、そのエントリーが初めて公開された年が記載されます。</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<div id="CommentB">
+  <h3><a href="#CommentA">COMMENT</a></h3>
+</div>
+
+<p>FEATURES/Location/Qualifiers
+で記述できないその他の情報やコメントなどが記載されています。例えば、登録者の所属が複数ある場合、<a href="#Reference1B">REFERENCE
+1</a> で記載されていない方を記載することがあります。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>COMMENT     Human cDNA sequencing project.
+</code></pre></div></div>
+
+<dl>
+  <dt>Structured COMMENT</dt>
+  <dd>Structured COMMENT は feature/qualifier で未定義なデータセットを一群の登録で共有することを目的とした記載法です。<br />Structured COMMENTを利用して、登録者とデータ利用者のコミュニティでフラットファイルを介してデータセットを公開・共有することが可能になります。<br />データセットを [項目名] と [項目の値] の組で構造化された COMMENT 行に記載します。<br />genome project (<a href="/ddbj/wgs.html">WGS</a> を含む), transcriptome project (<a href="/ddbj/tsa.html">TSA</a> を含む) など一部の配列データ登録に際し、記載を義務付けられている structured COMMENT が存在します。</dd>
+  <dd>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  COMMENT     ##Genome-Assembly-Data-START##
+          Finishing Goal           :: Finished
+          Current Finishing Status :: High Quality Draft
+          Assembly Method          :: Newbler v. 2.3
+          Genome Coverage          :: 30x
+          Sequencing Technology    :: 454 GS Junior; Illumina GA II
+          ##Genome-Assembly-Data-END##
+</code></pre></div>    </div>
+  </dd>
+  <dd>この例はゲノムプロジェクトで記載を義務付けている Genome-Assembly-Data という補足情報のデータセットです。<br />##Genome-Assembly-Data-START## と##Genome-Assembly-Data-END## の間にある記述内容は “ :: ” で区切られ、補足情報の項目とその値の組になっています。</dd>
+  <dd>
+    <table>
+      <tbody>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">##Genome-Assembly-Data-START##</code></td>
+          <td>Genome-Assembly-Data という名称で定義される structured COMMENT の記載開始行。</td>
+        </tr>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">##Genome-Assembly-Data-END##</code></td>
+          <td>Genome-Assembly-Data という名称で定義される structured COMMENT の記載終了行。</td>
+        </tr>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">Finishing Goal           :: Finished</code></td>
+          <td>Genome-Assembly-Data という名称で定義される structured COMMENT の記載終了行。</td>
+        </tr>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">Current Finishing Status :: High Quality Draft</code></td>
+          <td>ゲノムプロジェクトの現在の到達レベルが、High Quality Draft であることを示します。</td>
+        </tr>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">Assembly Method          :: Newbler v. 2.3</code></td>
+          <td>配列をアセンブルする際に用いたソフトウェアが Newbler で、そのバージョンが 2.3 であったことを示します。</td>
+        </tr>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">Genome Coverage          :: 30x</code></td>
+          <td>実際に読んだ延べ配列長がそのゲノム配列の長さの約30倍に相当することを示しています。</td>
+        </tr>
+        <tr>
+          <td><code class="language-plaintext highlighter-rouge">Sequencing Technology    :: 454 GS Junior; Illumina GA II</code></td>
+          <td>配列決定に用いたシークエンサーが 454 GS Junior と Illumina GA II であることを示しています。</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+  <dt>MGA データの生成手法</dt>
+  <dd><a href="/ddbj/mga.html">MGA データ</a>には、登録配列が生成されるまでの過程（シーケンス用サンプルの調製法、生の配列データから登録配列への処理方法など）が記載されています。</dd>
+  <dd>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  COMMENT     The CAGE (cap analysis gene expression) is based on preparation
+          and sequencing of concatamers of DNA tags deriving from the
+          initial 20/21 nucleotides from 5' end mRNAs.
+          Full-length cDNAs were at first selected with the Cap-Trapper
+          method. Then, a specific linker (Linker1, some linker contain 5 bp
+          sequences that have 15 variations for each rna sample) containing
+          the ClassIIs restriction enzyme site MmeI was then ligated to the
+          single-strand cDNA and then the second strand of cDNA synthesized.
+          The resulting double-stranded cDNA was cleaved by the restriction
+          enzyme MmeI and a second linker (Linker2) was ligated to the 2 bp
+          overhang at the MmeI cleaved site, to produce a 5' 20/21 tag
+          having two linkers at both sides. The ligation products were
+          separated from unmodified DNA with magnetic beads. The 5' end cDNA
+          tags were released from the beads, and the DNA fragments were
+          amplified in a PCR step by using the two linker-specific primers
+          (Primer1 (uni-PCR), Primer2 (MmeI-PCR)). The desired 32-37 bp tags
+          were purified and ligated to form concatamers, and then the
+          concatamer were fractionated and ligated to the plasmid ZErO-2.
+          The ligations were finally electroporated into DH10b cells
+          (Invitrogen) and obtained plasmids were sequenced with forward
+          primers.
+          CAGE libraries were sequenced with forward primers essentially as
+          described with minor modifications to use zeocin for selection of
+          recombinants. We used in-house developed algorithms for the
+          extraction of tags and for masking the vectors. CAGE tags were
+          extracted with the following parameters: vector masking, minimum
+          12 bp recognition allowed; linker (13 bp) masking: maximum
+          mismatch, 2 bp allowed; XmaJI site maximum mismatch, 2 bp allowed;
+          tag length, 17-24 bp.
+          Linker1: "Upper oligonucleotide GN6":
+          biotin-agagagagacctcgagtaactataacggtcctaaggtagcgacctagg (5 bp)
+          tccgacGNNNNN and "Upper oligonucleotide N6":
+</code></pre></div>    </div>
+  </dd>
+</dl>
+
+<div id="FeaturesB">
+  <h3><a href="#FeaturesA">FEATURES</a></h3>
+</div>
+
+<p>登録配列の生物学的な特徴を、feature key （特徴を表す項目）、location （配列上の位置情報）および Qualifier
+（特徴をさらに特定する項目）を用いて記述します。EST と GSS には原則として source 以外の feature key
+は記述されません。</p>
+
+<p>Feature
+情報は、原則として登録者からの報告に基づいて記述され，それらの記述が適正になされるよう、データバンクが補足訂正を行ないます。記述項目と記述方法については、国際塩基配列データベースが定める
+<a href="/ddbj/feature-table-e.html">The DDBJ/ENA/GenBank Feature Table Definition</a>
+に詳しく説明されています。</p>
+
+<p>配列の特徴を記述するための feature key は、下記のように分類できます。</p>
+
+<ol>
+  <li>由来生物の特徴を記述するための feature key (source)<br />すべてのエントリに必須で、/organism と /mol_type も必須の qualifier になっています。</li>
+  <li>配列の中の一定の領域がもつ生物学的機能を記述するための feature key<br />生物学的特徴を限定的に記述する key (e.g. TATA_signal) から、より幅広く記述するための key<br />（e.g.misc_feature） などに分類されていて、できるだけ具体的な記述がなされるように構成されています。<br />e.g. CDS, rRNA, etc.</li>
+  <li>配列の差違や変更を記述するための feature key<br />e.g. variation, conflict, etc.</li>
+</ol>
+
+<p>Feature key の中で、最も頻繁に使用されるのはタンパク質のコーディング領域を記述する CDS です。 <a href="/ddbj/cds.html">CDS feature</a>の説明ページもご参照ください。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FEATURES             Location/Qualifiers
+     source          1..450
+                     /chromosome="12"
+                     /clone="GT200015"
+                     /clone_lib="lambda gt11 human liver cDNA (GeneTech.
+                     No.20)"
+                     /db_xref="taxon:9606"
+                     /map="12p13"
+                     /mol_type="mRNA"
+                     /organism="Homo sapiens"
+                     /tissue_type="liver"
+     CDS             86..&gt;450
+                     /codon_start=1
+                     /gene="GAPD"
+                     /product="glyceraldehyde-3-phosphate dehydrogenase"
+                     /protein_id="BAA12345.1"
+                     /transl_table=1
+                     /translation="MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT
+                     YMFKYDTVHGQWKHHEVKVKDSKTLLFGEKEVTVFGCRNPKEIPWGETSAEFVVEYTG
+                     VFTDKDKAVAQLKGGAKKV"
+</code></pre></div></div>
+
+<div id="FeaturesSourceB">
+  <h3><a href="#FeaturesSourceA">source</a></h3>
+</div>
+
+<p>配列の生物学的な由来を示します</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">source    1..450</code></td>
+      <td>配列の1番目から450番目までが，以下の qualifier で記述された source に由来するものであることを示します。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">/chromosome="12"</code></td>
+      <td>この配列が１２番染色体由来であることを示します。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">/clone="GT200015"</code></td>
+      <td>配列の得られたcloneの名称</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">/clone_lib="lambda gt11 human liver cDNA (GeneTech. No.20)"</code></td>
+      <td>配列の得られた clone library の名称</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">/map="12p13"</code></td>
+      <td>この配列が 12p13 に位置することを示します。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">/db_xref="taxon:9606"</code></td>
+      <td>この配列が taxonomy database において ID: 9606 に対応する生物 (ヒト) 由来であることを示します。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">/mol_type="mRNA"</code></td>
+      <td>mRNA に由来する配列であることを示します。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">/organism="Homo sapiens"</code></td>
+      <td>この配列がヒト由来であることを示します。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">/tissue_type="liver"</code></td>
+      <td>この配列が肝臓由来であることを示します。</td>
+    </tr>
+  </tbody>
+</table>
+
+<div id="CDSB">
+  <h3><a href="#CDSA">CDS</a></h3>
+</div>
+
+<p>タンパク質 (ペプチド) のアミノ酸 (終止コドンを含む) をコードする配列</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">CDS      86..&gt;450</code></td>
+      <td>配列の86番目から450番目までが，以下の qualifier で記述されたタンパク質をコードする領域であることを示します。詳しい Location の記述ルールについては，<a href="/ddbj/location.html">Location の記述法</a> を参照して下さい。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">/codon_start=1</code></td>
+      <td><a href="/ddbj/cds.html#frame">コドンの読み枠</a> の開始位置が指定した location の1番目（登録配列の86番目）であることを示します。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">/gene="GAPD"</code></td>
+      <td>gene symbol,<a href="/ddbj/qualifiers.html#gene">こちら</a>もご参照ください。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">/product="glyceraldehyde-3-phosphate dehydrogenase"</code></td>
+      <td>product name,<a href="/ddbj/qualifiers.html#product">こちら</a>もご参照ください。　</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">/protein_id="BAA12345.1"</code></td>
+      <td>ID は３文字のアルファベットと５つの数字で構成されています。<br />ピリオドの後の数字はその protein ID の version 番号です。<br /> 配列の更新などによって CDS の翻訳配列が変更になった場合には protein ID は変わりませんが，version 番号が上がります。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">/transl_table=1</code></td>
+      <td>genetic code table 1 に従って翻訳されることを示します。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">/translation=&amp;quot;MAKIKIGINGFGRIG（中略）DKDKAVAQLKGGAKKV&amp;quot;</code></td>
+      <td>CDS のアミノ酸翻訳配列が<a href="/ddbj/code.html#amino-1">Amino Acid Codes</a> のリストにある１文字表記で記述されます。<br />その他のアミノ酸の場合は全て X で表記されます。<br /><a href="/ddbj/qualifiers.html#exception">exception</a> qualifier が入力された場合を除き，入力された CDS feature の情報をもとに自動翻訳します。<br />ただし、<a href="/ddbj/qualifiers.html#pseudogene">pseudogene</a> または <a href="/ddbj/qualifiers.html#pseudo">pseudo</a> が指定されている場合は記載されません。</td>
+    </tr>
+  </tbody>
+</table>
+
+<div id="EndB">
+  <h3><a href="#EndA">//</a></h3>
+</div>
+
+<p>全ての配列が記載された次の行に “//” のマークが記載され，エントリの終了を示します。</p>
+
+
+      </div>
+      
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              
+              <li>
+                <a href="/ddbj/location.html">Location の記述法</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/cds.html">タンパク質コード配列; CDS feature について</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/example.html">登録の見本</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/code.html">配列の記載に用いる略号</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/organism.html">Organism qualifier に記載する生物名</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/features.html">Feature key</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/qualifiers.html">Qualifier key</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/codontable.html">The Genetic Codes</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/geneticcode.html">The Genetic Codes</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to transfer data files from the NIG supercomputer to my DRA directory?</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title -small">
+      <h1 class="title">How to transfer data files from the NIG supercomputer to my DRA directory?</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/faq/en/">FAQ</a>
+            
+          </li>
+          <li>
+            <a>How to transfer data files from the NIG supercomputer to my DRA directory?</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<main id="SimpleView">
+  <div class="inner">
+    <article class="md-content">
+      <h4 class="bold">If the private key was generated on Unix/Mac OS X</h4>
+<p>Transfer your private key to the NIG supercomputer (Linux). Next, transfer the files by executing.</p>
+<pre><code>scp <span class="italic">&lt;Your Files&gt;</span> <span class="italic">&lt;D-way Login ID&gt;</span>@dradata.ddbj.nig.ac.jp:~/<span class="italic">&lt;Submission ID&gt;</span></code></pre>
+<div class="sub_index">
+  <ul>
+    <li>&lt;Your Files&gt; Files to be transferred. <br />Ex: file1 file2 (file1 and file2), file* (all files whose filenames start with “file”)</li>
+    <li>&lt;D-way Login ID&gt; D-way Login ID (ex. drauser)</li>
+    <li>&lt;Submission ID&gt; Submission ID (ex. drauser-0003)</li>
+  </ul>
+</div>
+<h4 class="bold">If the private key was generated on Windows PC</h4>
+<p>After <a href="/account-e.html#convert-private-key">the conversion of the key into the OpenSSH format used in Linux</a>, transfer the private key to the supercomputer.Then, specify the private key using -i option of scp.</p>
+<pre><code>scp -i <span class="italic">&lt;Private Key&gt;</span> <span class="italic">&lt;Your Files&gt;</span> <span class="italic">&lt;D-way Login ID&gt;</span>@dradata.ddbj.nig.ac.jp:~/ <span class="italic">&lt;Submission ID&gt;</span></code></pre>
+<div class="sub_index">
+  <ul>
+    <li>&lt;Private Key&gt; The private key file path (ex. /home/mishima/id.rsa)　</li>
+  </ul>
+</div>
+
+    </article>
+  </div>
+</main>
+
+  
+
+</body>
+</html>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登録手順</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">登録手順</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/jga">jga</a>
+          </li>
+          <li>
+            <a href="">登録手順</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/jga/index.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="https://humandbs.biosciencedbc.jp/data-use/all-researches">Browse researches at NBDC</a>
+      
+      <ul>
+        
+        <li>
+          <a href="https://ddbj.nig.ac.jp/search">DDBJ Search</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/jga/submission.html">Submission</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/jga/submission-step.html">How to submit</a>
+        </li>
+        
+        <li>
+          <a href="/jga/download.html">How to access data</a>
+        </li>
+        
+        <li>
+          <a href="/jga/group.html">Groups</a>
+        </li>
+        
+        <li>
+          <a href="/jga/update-202009.html">Updates in 2020</a>
+        </li>
+        
+        <li>
+          <a href="https://docs.google.com/spreadsheets/d/1HHlxItj89fQv2oWUNBIHZ4VVGwbcC09WGD5tEiXAQZ4/edit#gid=744299318">Example submission</a>
+        </li>
+        
+        <li>
+          <a href="https://github.com/ddbj/pub/tree/master/docs/jga/xsd/">XML Schema</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/ja/index.html">FAQ</a>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="jga-概要-">JGA 概要 <a name="overview"></a></h2>
+
+<p><a href="/index.html">日本 DNA データバンク (DDBJ) センター</a>は利用制限が必要なヒト由来のデータのためのデータベースとして　Japanese Genotype-phenotype Archive (JGA) を <a href="http://humandbs.biosciencedbc.jp/">National Bioscience Database Center (NBDC)</a> と共同で運営しています。</p>
+
+<div class="attention red">
+  <ul>
+    <li>JGA はオープンなデータベースである INSDC とは別のデータベースです。</li>
+    <li>JGA の登録システムは DDBJ センターのオープンデータ登録システムである <a href="https://ddbj.nig.ac.jp/D-way/">D-way</a> とは別になります。</li>
+    <li>JGA にデータを登録するためには <a href="http://humandbs.biosciencedbc.jp/data-submission">NBDC へのデータ提供申請とヒトデータ審査委員会での承認</a>が必要です。</li>
+    <li>JGA 登録アカウントのアカウント名とパスワードは <a href="http://humandbs.biosciencedbc.jp/">NBDC</a> から通知されます。</li>
+  </ul>
+</div>
+
+<p>このページでは JGA へのデータ登録手順を説明しています。<br />
+JGA 全体の説明については<a href="https://drive.google.com/file/d/12IaBZHub6s9fNK55S0r6x0U7MD2oQsk_">こちらの資料</a>をご参照ください。</p>
+
+<h2 id="エクセルでのメタデータ作成-">エクセルでのメタデータ作成 <a name="create-metadata-using-excel"></a></h2>
+
+<h3 id="エクセルファイルへの記入-">エクセルファイルへの記入 <a name="enter-metadata-into-excel"></a></h3>
+
+<p>メタデータ記入用エクセルファイルを下記よりダウンロードし、内容を英語で記入してください。メタデータの説明は<a href="/jga/download.html">こちらのページ</a>をご参考ください。</p>
+
+<p><a href="/assets/files/submission/JGA_metadata.xlsx"><img src="/assets/images/parts/download.png" alt="JGA メタデータ記入用エクセル" title="JGA メタデータ記入用エクセル" class="w40" />.</a></p>
+
+<p>last updated: 2019-06-07</p>
+
+<div class="attention red">
+  <p>必ずエクセルのファイル名は _metadata.xlsx で終わるようにしてください。_metadata より前は Submission ID や NBDC hum 番号など識別のために自由に名前を付けることができます。</p>
+</div>
+
+<div class="attention red">
+  <p>JGA にアップロードするファイル名には空白を含めないでください。</p>
+</div>
+
+<div class="attention red">
+  <p>Data/Analysis
+オブジェクトに複数のファイルが含まれる場合は，可能な限りファイルを結合し１つにまとめてください。ファイルのアップロード・ダウンロードで不具合が発生する可能性があります。</p>
+</div>
+
+<h3 id="エクセルの記入例-">エクセルの記入例 <a name="example-submission"></a></h3>
+
+<p><a href="https://docs.google.com/spreadsheets/d/1HHlxItj89fQv2oWUNBIHZ4VVGwbcC09WGD5tEiXAQZ4/edit#gid=744299318">メタデータエクセルの記入例</a></p>
+
+<h3 id="jga-submission-tool-">JGA submission tool <a name="jga-submission-tool"></a></h3>
+
+<p>JGA submission tool (最終更新日: 2018-04-16，v3.5.0) をダウンロードし、JGATool.bat からツールを起動します。</p>
+
+<div class="attention red">
+  <p>Java 8 で実行してください。Java 7 では動作しません。<a href="#use-proxy-environment">プロキシ環境での使用方法について</a></p>
+</div>
+
+<h4 id="windows-">Windows <a name="Windows"></a></h4>
+
+<p><a href="/assets/files/submission/3-5-0/JGA_tool.zip">Windows 用 JGA submission tool</a></p>
+
+<p>展開したフォルダに含まれる bat ファイルをダブルクリックして起動。</p>
+
+<p><span class="red">動作環境: Java Runtime Environment Version 8 Update 45 以上</span></p>
+
+<h4 id="unix-">Unix <a name="Unix"></a></h4>
+
+<p><a href="/assets/files/submission/3-5-0/JGA_tool_unix.zip">Unix 用 JGA submission tool</a></p>
+
+<p>展開したフォルダに含まれる sh ファイルをシェルで実行して起動。</p>
+
+<p><span class="red">動作環境: Java SE Development Kit 8u45 以上。OpenJDK では動作しません。</span></p>
+
+<h3 id="エクセルをアップロード-">エクセルをアップロード <a name="upload-excel"></a></h3>
+
+<p>JGA tool を起動し，<a href="http://humandbs.biosciencedbc.jp/">NBDC</a> 担当者から通知されるアカウントとパスワードでログインします。</p>
+
+<a class="group1" href="/assets/images/submission/jgasub1.jpg" title="JGA tool へのログイン">
+  <figure class="image">
+    <img src="/assets/images/submission/jgasub1.jpg" alt="JGA tool へのログイン" class="w200">
+    <figcaption>JGA tool へのログイン</figcaption>
+  </figure>
+</a>
+
+<p>左ウィンドウがお手許のコンピュータ，右ウィンドウが JGA のセキュアなファイルサーバになります。</p>
+
+<p>右ウィンドウ上部の Submission ID で対象となる JGA 登録の ID (例 example-0003) をプルダウンメニューから選択します。 左ウィンドウでメタデータを記入したエクセルファイル (例 JGA_example-0003_metadata.xlsx) を選択し，Encrypt &amp; Upload をクリックします。</p>
+
+<a class="group1" href="/assets/images/submission/jgasub2.jpg" title="対象 submission とエクセルファイルの選択">
+  <figure class="image">
+    <img src="/assets/images/submission/jgasub2.jpg" alt="対象 submission とエクセルファイルの選択" class="w500">
+    <figcaption>対象 submission とエクセルファイルの選択</figcaption>
+  </figure>
+</a>
+
+<p>エクセルファイルがサーバにセキュアにアップロードされます。下部ウィンドウにエラーメッセージが表示されますが無視してください。</p>
+
+<p>エクセルファイルをアップロードした後，<a href="/contact-ddbj.html">メールで JGA 担当者にご連絡ください</a>。</p>
+
+<a class="group1" href="/assets/images/submission/jgasub3.jpg" title="アップロードされたエクセルファイル">
+  <figure class="image">
+    <img src="/assets/images/submission/jgasub3.jpg" alt="アップロードされたエクセルファイル" class="w500">
+    <figcaption>アップロードされたエクセルファイル</figcaption>
+  </figure>
+</a>
+
+<div class="attention red">
+  <p>メタデータが記入されたエクセルファイルはメールで送付しないでください。</p>
+</div>
+
+<h3 id="エクセルxml-をダウンロード-">エクセル/XML をダウンロード <a name="download-excel-xml-files"></a></h3>
+
+<p>JGA ファイルサーバ上にある「ファイル名が _metadata.xlsx で終わるエクセル」と「XML ファイル」は tool でダウンロードすることができます。</p>
+
+<p>ダウンロードしたいエクセルファイル (例 JGA_example-0003_r1_metadata.xlsx) を右クリックし，表示されるメニューの Download を選択します。対象のファイルが左ウィンドウで表示されているローカルマシンにダウンロードされます。</p>
+
+<a class="group1" href="/assets/images/submission/jgadown1.jpg" title="エクセルのダウンロード">
+  <figure class="image">
+    <img src="/assets/images/submission/jgadown1.jpg" alt="エクセルのダウンロード" class="w500">
+    <figcaption>エクセルのダウンロード</figcaption>
+  </figure>
+</a>
+
+<p>ダウンロードしたい XML ファイル (例 example-0003_Data.xml) を右クリックし，表示されるメニューの Download を選択します。対象のファイルが左ウィンドウで表示されているローカルマシンにダウンロードされます。必要な XML ファイルを１つずつダウンロードします。</p>
+
+<a class="group1" href="/assets/images/submission/jgadown2.jpg" title="XML のダウンロード">
+  <figure class="image">
+    <img src="/assets/images/submission/jgadown2.jpg" alt="XML のダウンロード" class="w500">
+    <figcaption>XML のダウンロード</figcaption>
+  </figure>
+</a>
+
+<h2 id="登録ファイルのアップロード-">登録ファイルのアップロード <a name="upload-data-files"></a></h2>
+
+<h3 id="データファイル形式-">データファイル形式 <a name="data-file-format"></a></h3>
+
+<p>JGA 登録システムではファイルの拡張子でアーカイブ・圧縮形式を判定し、ファイルを処理しています。</p>
+
+<ul>
+  <li>拡張子 zip、tar、tar.gz、tgz、tar.bz2、tbz2、gz、bz2 のファイルは標準的な方法でアーカイブ・圧縮されているファイルと判定され、展開・解凍処理されます。拡張子とアーカイブ・圧縮形式が一致していないファイルや、これら以外の形式でアーカイブ・圧縮されたファイルはエラーになります。</li>
+  <li>bam ファイルは圧縮しないでください。</li>
+  <li>gz や bzip 圧縮したファイルをさらに tar でアーカイブせず、tar.gz 等でアーカイブしたファイルを圧縮してください。</li>
+</ul>
+
+<h3 id="登録するデータ-">登録するデータ <a name="file-formats-submission"></a></h3>
+
+<p>Data オブジェクトに fastq や bam ファイルなどの個人レベルの次世代シークエンスデータを登録します。Analysis にアレイデータ，変異解析，質問票などの次世代シークエンス以外のデータや各種ドキュメントを登録します。</p>
+
+<div class="attention red">
+  <p>データの再利用性，再現性のためには論文での主張の基になっている解析データが登録されることが重要です。できるだけ VCF などの解析データを Analysis に登録してください。</p>
+</div>
+
+<h3 id="メタデータ-xml-ファイル-">メタデータ XML ファイル <a name="metadata-xml-file"></a></h3>
+
+<p>ダウンロードした XML ファイルとデータファイルを JGA tool で選択し，対象 submission にまとめてアップロードします。</p>
+
+<a class="group1" href="/assets/images/submission/jgasub4.jpg" title="メタデータ XML ファイルとデータファイルのアップロード">
+  <figure class="image">
+    <img src="/assets/images/submission/jgasub4.jpg" alt="メタデータ XML ファイルとデータファイルのアップロード" class="w500">
+    <figcaption>メタデータ XML ファイルとデータファイルのアップロード</figcaption>
+  </figure>
+</a>
+
+<h3 id="登録ファイルの検証処理-">登録ファイルの検証処理 <a name="validation-submitted-files"></a></h3>
+
+<p>メタデータとデータファイルに以下の検証処理が実施され，データファイルは暗号化されて JGA サーバにアップロードされます。</p>
+
+<ul>
+  <li>メタデータ XML の <a href="https://github.com/ddbj/pub/tree/master/docs/jga">JGA XML schema</a> に対する検証</li>
+  <li><a href="/jga/download.html#metadata">メタデータオブジェクト</a>相互の関係</li>
+  <li>Data と Analysis XML に記載されているデータファイルの存在チェック</li>
+  <li>データファイルアップロード前後での <a href="/dra/submission.html#supplement-md5">md5 値</a>の一致チェック</li>
+</ul>
+
+<p>全ての検証処理を通過すると，下部ウィンドウに [INFO] upload succeeded. を表示されます。登録が査定され，問題がなければ <a href="/jga/download.html#accession">JGA アクセッション番号</a>が発行されます。</p>
+
+<p>エラーメッセージが表示された場合は<a href="/contact-ddbj.html">メールで JGA 担当者にご連絡ください</a>。</p>
+
+<a class="group1" href="/assets/images/submission/jgasub5.jpg" title="検証処理を通過したメタデータ XML とデータファイル">
+  <figure class="image">
+    <img src="/assets/images/submission/jgasub5.jpg" alt="検証処理を通過したメタデータ XML とデータファイル" class="w500">
+    <figcaption>検証処理を通過したメタデータ XML とデータファイル</figcaption>
+  </figure>
+</a>
+
+<h3 id="複数ファイルの選択方法-">複数ファイルの選択方法 <a name="select-files"></a></h3>
+
+<p>左ウィンドウに表示されているファイルを複数選択することができます。</p>
+
+<h4 id="範囲選択">範囲選択</h4>
+
+<p>始点となるファイルのファイル名部分 (チェックボックスではありません) を選択します。続いて終点となるファイル名を Shift キーを押しながら選択すると，ファイルが範囲選択されます。選択した状態で右クリックメニューから “check (selected item)” を選び，範囲選択したファイルをチェックします。</p>
+
+<a class="group1" href="/assets/images/submission/jga_range_select.jpg" title="範囲選択したファイルのチェック">
+  <figure class="image">
+    <img src="/assets/images/submission/jga_range_select.jpg" alt="範囲選択したファイルのチェック" class="w500">
+    <figcaption>範囲選択したファイルのチェック</figcaption>
+  </figure>
+</a>
+
+<h4 id="複数選択">複数選択</h4>
+
+<p>Control キーを押しながらファイルを選択していくと，ファイルが複数選択されます。選択した状態で右クリックメニューから “check (selected item)” を選び，選択したファイルをチェックします。</p>
+
+<a class="group1" href="/assets/images/submission/jga_multi_select.jpg" title="複数選択したファイルのチェック">
+  <figure class="image">
+    <img src="/assets/images/submission/jga_multi_select.jpg" alt="複数選択したファイルのチェック" class="w500">
+    <figcaption>複数選択したファイルのチェック</figcaption>
+  </figure>
+</a>
+
+<h4 id="サブディレクトリ選択">サブディレクトリ選択</h4>
+
+<p>ファイルが含まれているサブディレクトリをチェックすると，配下の全てのファイルがチェックされます。</p>
+
+<a class="group1" href="/assets/images/submission/jga_dir_select.jpg" title="サブディレクトリごとチェック">
+  <figure class="image">
+    <img src="/assets/images/submission/jga_dir_select.jpg" alt="サブディレクトリごとチェック" class="w500">
+    <figcaption>サブディレクトリごとチェック</figcaption>
+  </figure>
+</a>
+
+<h3 id="プロキシ環境での使用方法-">プロキシ環境での使用方法 <a name="use-proxy-environment"></a></h3>
+
+<p>プロキシ環境でツールを使用するためにはプロキシサーバの設定が必要になります。</p>
+
+<p>ツールが格納されているフォルダ中の “proxy.properties” を開きプロキシサーバ名 (server=) とポート番号 (port=) を設定します。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Enter the server name and port number of the proxy server
+  to connect the JGA server via the proxy.
+# For example:
+# server=proxy.example.ac.jp
+# port=8080
+server=
+port=
+</code></pre></div></div>
+
+<p>プロキシサーバが認証を要求している場合，ツールにログイン後に表示されるウィンドウに認証情報を入力します。</p>
+
+<p>2016-11-17 にリリースした v3.2.0 で BASIC 認証に対応しましたが Digest 認証には未対応です。</p>
+
+<h2 id="ハードディスクでのデータファイル送付-">ハードディスクでのデータファイル送付 <a name="send-data-files-in-hard-disk"></a></h2>
+
+<p>JGA ツールでの転送に多大な時間を要する，ファイル選択画面がフリーズするなど，大容量・多件数のファイル転送が困難な場合には，ハードディスクでデータを受け付けています。</p>
+
+<div class="attention red">
+  <p>JGA 担当者に事前連絡してからディスクを送付するようにしてください。<br />
+ディスクフォーマットは NTFS、ext3 もしくは ext4 にしてください。<br />
+郵送前にディスクをアンチウイルスソフトでチェックしてください。送料は全額登録者負担になります。</p>
+</div>
+
+<h3 id="データの暗号化-">データの暗号化 <a name="encrypt-data-files"></a></h3>
+
+<p>JGA データ暗号化ツールを使ってデータファイルを暗号化し，ディスクにコピーし郵送します。XML メタデータファイルは JGA Submission Tool でアップロードし，ディスクに含めないでください。</p>
+
+<p><a href="/assets/files/submission/jga-data-encrypt.tar.gz"><img src="/assets/images/parts/download.png" alt="JGA データ暗号化ツール" title="JGA データ暗号化ツール" class="w40" />.</a></p>
+
+<p>last updated: 2015-12-09</p>
+
+<div class="attention red">
+  <p>個別のデータファイルごとに暗号化してください。ファイルをディレクトリや tar でまとめて暗号化しないでください。</p>
+</div>
+
+<p>ツールの動作環境</p>
+
+<ul>
+  <li>暗号化対象データの総サイズ分の空きディスク領域が必要です。</li>
+  <li>CentOS 6.4 で動作確認を行っています。</li>
+  <li>Java Runtime Environment Version 8 Update 45 以上の Java 実行環境が必要です。</li>
+</ul>
+
+<p>取得した “jga-data-encrypt.tar.gz” ファイルを tar コマンドで解凍します。
+下記のような構成のディレクトリが生成されます。内部のディレクトリ構成は変更しないでください。</p>
+
+<p>jga-data-encrypt.sh (実行シェルスクリプト) jar/ -&gt; 実行ファイル格納ディレクトリ (改変不可)</p>
+
+<p>ツールを配置したディレクトリに移動し，下記の要領でコマンドを実行します。<br />
+sh jga-data-encrypt.sh[space]-t[対象ファイルパス][space]-o[出力先ディレクトリパス]<br />
+例)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sh jga-data-encrypt.sh -t target.fastq -o output
+</code></pre></div></div>
+
+<p>コマンドラインオプション</p>
+
+<p>-t –target<br />
+暗号化対象ファイルのファイルパスを指定します。<br />
+指定可能なファイルは１ファイルです。複数ファイル（*ワイルドカードでの指定）の指定やディレクトリを指定することはできません。<br />
+複数のファイルを一括で暗号化する場合はシェルスクリプトを組んでください。</p>
+
+<p>-o –output<br />
+暗号化したファイル，暗号化鍵，MD5 ファイルを出力するディレクトリのパスを指定します。<br />
+指定されたパスにディレクトリが存在しない場合，実行時にディレクトリが作成されます。</p>
+
+<p>出力されるファイル</p>
+
+<p>出力ディレクトリには，暗号化対象1ファイルに対して以下の3種類のファイルが出力されます。</p>
+
+<ol>
+  <li>
+    <p>暗号化された対象ファイル (.encrypt)<br />
+ファイル名は [暗号化前のファイル名].encrypt になります。 (例: 暗号化前のファイル名が file1.fastq の場合 file1.fastq.encrypt)</p>
+  </li>
+  <li>
+    <p>鍵ファイル (.encrypt.dat)<br />
+暗号化に使用された鍵ファイルです。暗号化対象ファイル1つにつき1鍵ファイルが生成され，公開鍵で暗号化された状態で出力されます。 ファイル名は [暗号化された対象ファイル名].dat となります。 (例: 暗号化前のファイル名が file1.fastq の場合、file1.fastq.encrypt.dat)</p>
+  </li>
+</ol>
+
+<p>暗号化前後の MD5 ファイル (.md5)<br />
+暗号化対象ファイルの暗号化前後の MD5 値を記録したファイルです。暗号化対象1ファイルに対して1つの MD5 ファイルが生成されます。
+ファイル名は [暗号化前のファイル名].md5 となります。 (例: 暗号化前のファイル名が file1.fastq の場合、file1.fastq.md5 となります)</p>
+
+<p>出力メッセージ</p>
+
+<p>本ツールのメッセージはログファイル (ツールを設置したディレクトリ内の [実行サーバ host 名].jga-data-encrypt.log ファイル) および標準出力に出力されます。標準出力に表示される標準的なメッセージは以下の通りです。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sh jgacmd.sh -t /home/hoge/file.txt -o /tmp/output
+START encrypt file ←処理開始
+start encryption : /home/hoge/file.txt ←対象ファイル名
+encryption complete : /tmp/output /file.txt.encrypt ←出力ファイル名
+FINISH encrypt file ←処理完了
+</code></pre></div></div>
+
+<p>エラーメッセージ</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>メッセージ</th>
+      <th>内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[code 11] encryption error : &lt;target&gt;</td>
+      <td>ファイルの暗号化処理でエラーが発生しました</td>
+    </tr>
+    <tr>
+      <td>[code 12] make md5 file error : &lt;target&gt;</td>
+      <td>ファイルのMD5取得、MD5書き込み処理でエラーが発生しました</td>
+    </tr>
+    <tr>
+      <td>[code 13] output dir is not a directory : &lt;target&gt;</td>
+      <td>-o に指定されたパスがディレクトリではありません</td>
+    </tr>
+    <tr>
+      <td>[code 14] target is not a file : &lt;target&gt;</td>
+      <td>-t に指定されたパスが通常ファイルではありません</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="データの送付-">データの送付 <a name="sending-files"></a></h3>
+
+<p>JGA にデータを登録するためには「暗号化された対象ファイル」「鍵ファイル」「暗号化前後のMD5ファイル」の３点セットが必要です。各対象データファイルについて生成される３ファイルを全てディスクにコピーします。</p>
+
+<p>メタデータ XML ファイルはディスクにはコピーせず，JGA Submission Tool でアップロードします。</p>
+
+<p><span class="red">送料は全額登録者負担になります。</span></p>
+
+<p>USB 接続のハードディスクにデータをコピーし，<span class="red">宛先が記入された返送用の着払い伝票を同封して</span>下記宛にお送りください。<span class="red">ハードディスクにラベルを貼って区別しやすくすることを推奨いたします。</span></p>
+
+<address>
+
+  <p>〒411-8540<br />
+静岡県三島市谷田1111 国立遺伝学研究所 生命情報研究センター W201 JGA 担当者<br />
+電話:055-981-6853</p>
+
+</address>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

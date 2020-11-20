@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WABI VecScreen</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">WABI VecScreen</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/services">services</a>
+          </li>
+          <li>
+            <a href="">WABI VecScreen</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="vecscreen-の-job-の投入-">VECSCREEN の job の投入 <a name="job"></a></h2>
+
+<p>以下のパラメーターを POST します。<br />
+format, result は必須です。<br />
+result に mail を指定した場合は address も必須となります。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>パラメーター</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>format</td>
+      <td>request ID を返す際の応答データの形式。<br />text, json, xml, bigfile, imagefile, requestfile が受け付けられますが、job投入時に意味があるのは text, json, xml の3つです。</td>
+    </tr>
+    <tr>
+      <td>querySequence</td>
+      <td>vecscreen 実行時に vecscreen に渡す配列ファイル。<br />FASTAフォーマットを使用します。</td>
+    </tr>
+    <tr>
+      <td>database</td>
+      <td>vecscreen実行時に使用するデータベース。<br />UniVec（多数のベクターだけでなくリンカー・アダプター・プライマー配列から、効率的な検索のために冗長な部分を除いて作成された塩基配列データベース。データベースに含まれる配列は、少数の疑陽性ヒットを許容することで contamination の検出を最大にするように選ばれています。）<br />または UniVec_Core（疑陽性のヒット数を最小にするように選ばれた UniVec のサブセット。）を指定します。</td>
+    </tr>
+    <tr>
+      <td>parameters</td>
+      <td>出力ファイルのフォーマットの指定として、”-f 0”（HTML format, with alignments (default)）, “-f 1”（HTML format, no alignments）, “-f 2”（Text list, with alignments）, “-f 3”（Text list, no alignments）のいずれかを記述します。</td>
+    </tr>
+    <tr>
+      <td>result</td>
+      <td>結果通知方法。<br />www, mail のいずれか。<br />mail の場合、job 完了時に address に記述したメールアドレスに対して検索終了の通知が送信されます。<br />www の場合は何もしないので、POST 時に返された request ID を使って GET で job の状態を調べる。</td>
+    </tr>
+    <tr>
+      <td>address</td>
+      <td>result で mail を指定した場合に検索終了の通知を受け取るメールアドレス。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="vecscreen-の結果の取得-">VECSCREEN の結果の取得 <a name="result"></a></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>パラメーター</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET vecscreen/{id}?info=status</td>
+      <td>job が走っている、キューにたまっている、終わっている、存在しない、ということを返します。</td>
+    </tr>
+    <tr>
+      <td>GET vecscreen/{id}?info=request</td>
+      <td>プログラム実行条件を返します。<br />存在しない場合は、エラーを返します。</td>
+    </tr>
+    <tr>
+      <td>GET vecscreen/{id}?info=result</td>
+      <td>job が終わっていたら結果（multiple alignment, profile alignment を実行した場合は alignment の結果、-TREE を実行した場合は .ph ファイル、-BOOTSTRAP を実行した場合は .phb ファイル、-CONVERT を実行した場合はフォーマット変換後のファイル）を返します。<br />終わってない・存在しない場合は、エラーを返します。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="サンプルスクリプト-">サンプルスクリプト <a name="sample"></a></h2>
+
+<p>vecscreen-client.pl
+<script src="//gist.github.com/ddbj-repo/62a1a3390d0cf4e2df701c20704df498.js"></script></p>
+
+<h3 id="複数配列のベクター配列のチェック-">複数配列のベクター配列のチェック <a name="sample1"></a></h3>
+
+<p>conf.json</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "urlStr": "http://ddbj-staging.nig.ac.jp/wabi/vecscreen/",
+  "fasta": "/home/hoge/script/vec.fasta",
+  "database": "UniVec",
+  "parameters": "-f 0",
+  "result": "www",
+  "address": ""
+}
+
+</code></pre></div></div>
+
+<p>vec.fasta</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;1
+tgaattcgagctcggtacccggggatcctctagagtcgacctgcaggcatgcaagcttggc
+&gt;2
+ggaattcgagctcggtacccggggatcctctagagtcgacctgcaggcatgcaagcttggc
+&gt;3
+agaattcgagctcggtacccggggatcctctagagtcgacctgcaggcatgcaagcttggc
+&gt;4
+cgaattcgagctcggtacccggggatcctctagagtcgacctgcaggcatgcaagcttggc
+</code></pre></div></div>
+
+<p>multi fastaデータをvecscreenにかけてベクター配列の有無をチェックする</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>hoge@huga ~/script $ perl vecscreen-client.pl vecscreen_conf.json
+request-ID: wabi_vecscreen_2013-1009-1446-20-728-899018
+waiting
+finished
+Search result is outputed to wabi_vecscreen_2013-1009-1446-20-728-899018.txt
+
+</code></pre></div></div>
+
+<p>出力された wabi_vecscreen_2013-1009-1446-20-728-899018.txt は、ジョブ実行時に
+parameters を “-f 0” としているので実際は html ファイルである。</p>
+
+      </div>
+      
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              
+              <li>
+                <a href="/services/wabi-blast.html">WABI BLAST ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-clustalw.html">WABI ClustalW ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-mafft.html">WABI MAFFT ヘルプ</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

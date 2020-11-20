@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AGD への登録</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">AGD への登録</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/agd">agd</a>
+          </li>
+          <li>
+            <a href="">AGD への登録</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="登録概要-">登録概要 <a name="submission"></a></h2>
+
+<p>AGD は NBDC で承認された利用制限ポリシーを持つ，匿名化されたデータだけを受け付けています。 登録者は <a href="http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines">NBDC</a> に AGD へのデータ提供を申請し， AGD は NBDC から正式に提供が承認された連絡を受け，登録者に登録手順を案内します。</p>
+
+<p>AGD データを利用するためには，<a href="http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines">NBDC</a> に利用を申請し，承認される必要があります。</p>
+
+<p>メタデータオブジェクトに対して以下のプレフィックス付き管理用 ID が割り振られます。</p>
+
+<div class="attention red">
+AGD で発行される管理用 ID は論文で引用することはできません。論文投稿に必要なアクセッション番号は JGA や DRA から取得する必要があります。AGD は研究者間でのデータ共有 (制限共有) を実現するために DDBJ グループクラウドで提供するデータベースです。
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>プレフィックス</th>
+      <th>メタデータオブジェクト</th>
+      <th>数字の桁数</th>
+      <th>例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AGD_</td>
+      <td>Submission</td>
+      <td>11</td>
+      <td>AGD_00000000001</td>
+    </tr>
+    <tr>
+      <td>AGDS_</td>
+      <td>Study</td>
+      <td>11</td>
+      <td>AGDS_00000000001</td>
+    </tr>
+    <tr>
+      <td>AGDN_</td>
+      <td>Sample</td>
+      <td>11</td>
+      <td>AGDN_00000000001</td>
+    </tr>
+    <tr>
+      <td>AGDX_</td>
+      <td>Experiment</td>
+      <td>11</td>
+      <td>AGDX_00000000001</td>
+    </tr>
+    <tr>
+      <td>AGDR_</td>
+      <td>Data</td>
+      <td>11</td>
+      <td>AGDR_00000000001</td>
+    </tr>
+    <tr>
+      <td>AGDZ_</td>
+      <td>Analysis</td>
+      <td>11</td>
+      <td>AGDZ_00000000001</td>
+    </tr>
+    <tr>
+      <td>AGDD_</td>
+      <td>Data set</td>
+      <td>11</td>
+      <td>AGDD_00000000001</td>
+    </tr>
+    <tr>
+      <td>AGDP_</td>
+      <td>Policy</td>
+      <td>11</td>
+      <td>AGDP_00000000001</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="塩基配列データ-rawunaligned-と-aligned-">塩基配列データ (raw/unaligned と aligned) <a name="sequence"></a></h2>
+
+<p>AGD でサポートしているファイル形式を以下に示します。 異なるファイル形式をもっている場合や不明な点がある場合は <a href="/contact-ddbj.html">AGD に連絡</a>してください。</p>
+
+<p>データファイルが複数サンプルに由来するデータを含んでいる場合，投稿する前にファイルをサンプルごとに分割します。 そうすることによって Run は１つのサンプルに由来するデータファイルだけを持つようになります。</p>
+
+<h3 id="bam-形式-">BAM 形式 <a name="bam-format"></a></h3>
+
+<p>Binary Alignment/Map (BAM) ファイルは AGD への登録にとって好ましいファイル形式の一つです。BAM は Sequence Alignment/Map (SAM) ファイル形式のバイナリー圧縮です (詳細は <a href="https://samtools.github.io/hts-specs/SAMv1.pdf">SAMv1.pdf</a>)。BAM ファイルは SAM/BAM 用ツール (例えば <a href="http://www.htslib.org/">samtools</a>) で human-readable なテキスト形式である SAM に変換することができます。BAM はアライメントされなかった unaligned read を含めることができます。<br />
+AGD はプライマリーデータとして Data に unaligned read を含む BAM を登録することを強く推奨しています。</p>
+
+<p>圧縮という観点で BAM ファイルはほぼ最適化されているので，ファイルをさらに圧縮する必要はありません。</p>
+
+<h3 id="fastq-形式-">Fastq 形式 <a name="fastq-format"></a></h3>
+
+<p>シングルとペアードの塩基配列データは下記の条件を満たした <a href="http://en.wikipedia.org/wiki/FASTQ_format#Quality">Fastq</a> ファイルでの登録を推奨しています。</p>
+
+<ul>
+  <li>Quality score が <a href="http://en.wikipedia.org/wiki/Phred_quality_score">Phred</a> スケールである。 初期の Solexa パイプラインから出力された quality score は Phred
+スケールに変換されている必要があります。 ASCII とスペース区切りの数字で表された quality score をサポートしています。 Phred quality score のオフセットが 33 か 64 であるかは自動的に判定されます。</li>
+  <li>Technical リード (アダプター，リンカー，バーコード配列) が取り除かれている。</li>
+  <li>シングルリードは一つの Fastq ファイルで登録します。</li>
+  <li>ペアードリードは分割し，二つの Fastq ファイルとして登録します。 リード名はペアの最初か二つ目のリードかを区別する ‘/1’ と ‘/2’ のような suffix を持っている必要があります。 リードの正規表現は “^(.*)([\\.|:|/|_])([12])$” になります。</li>
+  <li>それぞれのリードが ‘@’ で始まる。</li>
+  <li>ベースコールと quality score が ‘+’ で始める行で分けられている。</li>
+  <li>Fastq ファイルは gzip か bzip2 で圧縮されている。</li>
+</ul>
+
+<p>シングルリードを含む Fastq ファイルの例:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@read_name
+GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
++
+!''*((((***+))%%%++)(%%%%).1***-+*''))**55CCF&gt;&gt;&gt;&gt;&gt;&gt;CCCCCCC65
+...
+</code></pre></div></div>
+
+<p>ペアードリードを含む Fastq ファイルの例:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@read_name/1
+GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
++
+!''*((((***+))%%%++)(%%%%).1***-+*''))**55CCF&gt;&gt;&gt;&gt;&gt;&gt;CCCCCCC65
+@read_name/2
+GATTTGGGGTTCAAAGCAGTATCGATCAAATAGTAAATCCATTTGTTCAACTCACAGTTT
++
+!''*((((***+))%%%++)(%%%%).1***-+*''))**55CCF&gt;&gt;&gt;&gt;&gt;&gt;CCCCCCC65
+...
+</code></pre></div></div>
+
+<h3 id="sff-形式-">SFF 形式 <a name="sff-format"></a></h3>
+
+<p>454 プラットフォームからのデータは，SFF での登録が推奨されます。</p>
+
+<p>圧縮という観点で SFF ファイルはほぼ最適化されているので，ファイルをさらに圧縮する必要はありません。</p>
+
+<h2 id="アレイデータ-遺伝子型タイピングsnp遺伝子発現-">アレイデータ (遺伝子型タイピング，SNP，遺伝子発現) <a name="array"></a></h2>
+
+<p>AGD は全ての種類のアレイプラットフォームからのデータを受け付けています。例えば，genotypes，遺伝子発現やメチル化解析データなどです。</p>
+
+<p>AGD はこれらのデータの登録に柔軟に対応しており，Data にアレイ実験から得られたあらゆる種類のデータファイルを格納することができます。</p>
+
+<p>AGD は生データ (例 CEL) と解析したデータの両方を登録することを推奨します。これらは利用者が結果をみるためだけではなく，論文で示されている結果を再現するためにも役立ちます。</p>
+
+<p>AGD はサンプルに関連した表現型 (phenotype) 情報も Analysis にアーカイブしています。</p>
+
+<h2 id="変異データ-">変異データ <a name="variations"></a></h2>
+
+<p>AGD は variation データの <a href="http://en.wikipedia.org/wiki/Variant_Call_Format">VCF 形式</a>での登録を推奨しています。 AGD Analysis に vcf ファイルを登録することができます。</p>
+
+<h2 id="その他のデータ-">その他のデータ <a name="other"></a></h2>
+
+<p>Analysis は複数の Data もしくは Sample を参照することができるので，これらのオブジェクトに登録されているデータを解析，集計したデータを
+Analysis に登録することができます。Analysis に登録できるファイルの例を以下にリストします。</p>
+
+<ul>
+  <li>複数 Data に登録された配列データから作成したリファレンス配列 GFF3 ファイル</li>
+  <li>複数 Data に登録されたアレイデータを正規化し表にまとめたファイル</li>
+  <li>複数 Sample の表現型情報を一覧できる表形式ファイル</li>
+</ul>
+
+<h2 id="メタデータ-">メタデータ <a name="metadata"></a></h2>
+
+<p>AGD データモデルは <a href="/dra/submission.html">Sequence Read Archive</a> のモデルを拡張してつくられています。 AGD メタデータは XML オブジェクトで構成されています。</p>
+
+<p>AGD XML schema: <a href="https://github.com/ddbj/pub/tree/master/docs/jga">AGD xsd</a></p>
+
+<a class="group1" href="/assets/images/submission/jga_metadata_1.jpg" title="単一の Policy が適用されている例">
+  <figure class="image">
+    <img src="/assets/images/submission/jga_metadata_1.jpg" alt="単一の Policy が適用されている例" class="w500">
+    <figcaption>単一の Policy が適用されている例</figcaption>
+  </figure>
+</a>
+
+<a class="group1" href="/assets/images/submission/jga_metadata_2.jpg" title="Control と Case で Policy が異なる例">
+  <figure class="image">
+    <img src="/assets/images/submission/jga_metadata_2.jpg" alt="Control と Case で Policy が異なる例" class="w500">
+    <figcaption>Control と Case で Policy が異なる例</figcaption>
+  </figure>
+</a>
+
+<h3 id="公開される項目-">公開される項目 <a name="public"></a></h3>
+
+<p>AGD メタデータのうち以下のオブジェクトは登録の概要を示すため，データの制限共有開始後に公開されます。</p>
+
+<div class="dl-list">
+
+  <dl>
+    <dt>Submission:</dt>
+    <dd>登録者の連絡先以外の全ての内容</dd>
+    <dt>Study:</dt>
+    <dd>全ての内容</dd>
+    <dt>Data set:</dt>
+    <dd>全ての内容と含まれる Sample 数とファイルサイズ。</dd>
+    <dt>Policy:</dt>
+    <dd>全ての内容</dd>
+  </dl>
+
+</div>
+
+<h3 id="submission-">Submission <a name="Submission"></a></h3>
+
+<p>登録プロセスを管理します。登録者の連絡先情報を含みます。</p>
+
+<p>XML schema: <a href="https://github.com/ddbj/pub/tree/master/docs/jga">AGD.submission.xsd</a></p>
+
+<h3 id="study-">Study <a name="Study"></a></h3>
+
+<p>研究を記述します。 研究のタイトル，study type と論文に使われるようなアブストラクトを含みます。 論文公表後，登録したデータを使った論文の PubMed ID を追加し，論文情報を更新します。</p>
+
+<p>XML schema: <a href="https://github.com/ddbj/pub/tree/master/docs/jga">AGD.study.xsd</a></p>
+
+<h3 id="sample-">Sample <a name="Sample"></a></h3>
+
+<p>研究で使った各サンプルを記載します。一般的に Sample は個人に対応します。 必須項目は少ないですが，できるだけ詳細な情報を記入し，サンプルについての有用な情報を提供することを推奨します。</p>
+
+<p>XML schema: <a href="https://github.com/ddbj/pub/tree/master/docs/jga">AGD.sample.xsd</a></p>
+
+<h3 id="experiment-">Experiment <a name="Experiment"></a></h3>
+
+<p>実験のセットアップを記述します。サンプルの調整からデータの取得にいたるまでのプロトコールや使ったシークエンサやアレイを記載します。シークエンシングとアレイ実験の両方に対応しています。</p>
+
+<p>XML schema: <a href="https://github.com/ddbj/pub/tree/master/docs/jga">AGD.experiment.xsd</a></p>
+
+<h3 id="data-">Data <a name="Data"></a></h3>
+
+<p>データファイルについての情報と，それらと Experiment との関係を記述します。ファイルをまとめる役割を果たします。</p>
+
+<p>XML schema: <a href="https://github.com/ddbj/pub/tree/master/docs/jga">AGD.data.xsd</a></p>
+
+<h3 id="analysis-">Analysis <a name="Analysis"></a></h3>
+
+<p>データを解析，集計した結果を登録します。また，サンプルの表現型情報をまとめた表を登録することができます。 変異データは VCF ファイルとして登録することができます。 それぞれの Analysis には一つの VCF ファイルしか登録できません。また，VCF で使われたサンプルは AGD Sample に対応している必要があります。 使用したリファレンス配列を INSDC のアクセッション番号，もしくは広く使われているラベル名で記載します。</p>
+
+<p>XML schema: <a href="https://github.com/ddbj/pub/tree/master/docs/jga">AGD.analysis.xsd</a></p>
+
+<h3 id="data-set-">Data set <a name="Dataset"></a></h3>
+
+<p>Data XML と Analysis XML に記載されているデータファイルを,ポリシー (利用制限事項) が適用されるデータセットという単位にまとめます。 全てのデータに対して同じポリシーが適用される場合，Data set を作成する必要はありません。 ポリシーが複数ある場合 (Control と Case で適用されるポリシーが異なる場合など)，対応する Data set を作成する必要があります。</p>
+
+<p>一般的にポリシーは個人 (Sample) との間のインフォームドコンセントによって規定されます。</p>
+
+<p>XML schema: <a href="https://github.com/ddbj/pub/tree/master/docs/jga">AGD.dataset.xsd</a></p>
+
+<h3 id="policy-">Policy <a name="Policy"></a></h3>
+
+<p>データ利用制限ポリシーを記載します。</p>
+
+<p>XML schema: <a href="https://github.com/ddbj/pub/tree/master/docs/jga">AGD.policy.xsd</a></p>
+
+<h2 id="analysis-のみの登録-">Analysis のみの登録 <a name="analysis_only"></a></h2>
+
+<p>集計されたデータ，もしくは，Experiment-Data に格納するのが適切ではないデータを登録する場合は Sample-Experiment-Data ではなく Sample-Analysis セットでデータを登録することができます。</p>
+
+<a class="group1" href="/assets/images/submission/sample-analysis.jpg" title="Sample に１対１対応する Analysis データ登録">
+  <figure class="image">
+    <img src="/assets/images/submission/sample-analysis.jpg" alt="Sample に１対１対応する Analysis データ登録" class="w500">
+    <figcaption>Sample に１対１対応する Analysis データ登録</figcaption>
+  </figure>
+</a>
+
+<a class="group1" href="/assets/images/submission/samples-analysis.jpg" title="Sample を集計した Analysis データ登録">
+  <figure class="image">
+    <img src="/assets/images/submission/samples-analysis.jpg" alt="Sample を集計した Analysis データ登録" class="w500">
+    <figcaption>Sample を集計した Analysis データ登録</figcaption>
+  </figure>
+</a>
+
+<p>Sample-Analysis セットでデータ登録をする場合は <a href="/contact-ddbj.html">JGA チームに連絡</a>します。</p>
+
+<h2 id="登録の更新-">登録の更新 <a name="update"></a></h2>
+
+<p>登録を更新するためには <a href="/contact-ddbj.html">AGD チームに連絡</a>します。</p>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

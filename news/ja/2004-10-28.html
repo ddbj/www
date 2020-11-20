@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>一部 CON エントリの修正のおしらせ　</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">一部 CON エントリの修正のおしらせ　</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/news">news</a>
+          </li>
+          <li>
+            <a href="">一部 CON エントリの修正のおしらせ　</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <p>国際塩基配列データベースに登録する際の１エントリ当たりの配列長は，以前まで 350 kbp 以下に制限されていました。 そのため，これを超える長さの配列を登録する場合には 350 kbp 以下に分断したエントリ（ピースエントリ）として登録していました。 併せてピースエントリを統合する情報を CON (Contig/Constructed) エントリとして構築し公開していました。<br />しかしながら，2004年6月に配列長制限を撤廃いたしました。 これに伴い，過去に登録を受け付ける際，ピースエントリとして分割した配列を元の連続した配列に集約し１エントリとして再公開を行ないます。<br />以下の要領でピースエントリと CON エントリを集約し，１エントリに修正いたします。</p>
+
+<ul>
+    <li>CON エントリのアクセッション番号を残し，これに集約します。 </li>
+    <li>ピースエントリ自体は非公開化され，そのアクセッション番号はセカンダリーアクセッション番号(*)となります。 </li>
+    <li>ピースエントリに記載されていた feature 情報と配列は，集約された１つのエントリに継承されます。 </li>
+    <li>集約後は CON エントリではなく，各生物に対応した division に移行します。</li>
+</ul>
+
+<p>* 修正後に getentry などの検索ツールでピースエントリのアクセッション番号を検索した場合，CON エントリのアクセッション番号を持つ集約されたエントリが結果として返ります。<br />CON エントリの詳細については、下記をご参照ください。<br /><a href="/ddbj/flat-file.html#LocusB">http://www.ddbj.nig.ac.jp/sub/locus-j.html</a></p>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

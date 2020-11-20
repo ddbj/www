@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDBJ 塩基配列登録システム HELP</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">DDBJ 塩基配列登録システム HELP</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/ddbj">ddbj</a>
+          </li>
+          <li>
+            <a href="">DDBJ 塩基配列登録システム HELP</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/ddbj/index.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/submission.html">Submission</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/submission.html">塩基配列の登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/web-submission.html">Web 版塩基配列登録システム</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/mss.html">Mass Submission System</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/update.html">登録データの修正・更新</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="http://ddbj.nig.ac.jp/arsa/?lang=ja">Search</a>
+      
+      <ul>
+        
+        <li>
+          <a href="http://getentry.ddbj.nig.ac.jp/top-j.html">getentry</a>
+        </li>
+        
+        <li>
+          <a href="http://ddbj.nig.ac.jp/arsa/?lang=ja">ARSA</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/flat-file.html">Flat file</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/features.html">Feature key の定義</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/qualifiers.html">Qualifier key の定義</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/organism.html">Organism qualifier に記載する生物名</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/location.html">Location の記述法</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/cds.html">タンパク質コード配列</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/geneticcode.html">The Genetic Codes</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/code.html">配列の記載に用いる略号</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/example.html">登録の見本</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/data-categories.html">Data categories</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/genome.html">Genome project のデータ登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/pseudohaplotype.html">Pseudohaplotype</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/wgs.html">WGS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/metagenome-assembly.html">メタゲノムアセンブリ</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/single-amplified-genome.html">Single amplified genome</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/con.html">CON</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/gss.html">GSS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/htg.html">HTG</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/environmental.html">Environmental sequence の登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/env.html">ENV</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tls.html">TLS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/transcriptome.html">Transcriptome Project のデータ登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tsa.html">TSA</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/est.html">EST</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/htc.html">HTC</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tpa.html">Third Party Data (TPA)</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/ja/index.html">FAQ</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/index-e.html">Other</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/patent-data.html">Patent</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/mga.html">MGA</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="1-contact-person-">1. Contact person <a name="flow-1"></a></h2>
+
+<p><a href="/ddbj/submission.html#contact">コンタクトパーソン</a>情報を入力します。</p>
+
+<p><img src="/assets/images/help/NSSShelp1-1_j.png" alt="" title="コンタクトパーソン情報入力画面" class="w600" /></p>
+
+<p>コンタクトパーソンメールアドレス宛に登録開始用のリンクを含むメールが自動的に送信されます。</p>
+
+<p><img src="/assets/images/help/NSSShelp1-2_j.png" alt="" class="w600" /></p>
+
+<h2 id="2-hold-date-">2. Hold date <a name="flow-2"></a></h2>
+
+<p>公開日 (Hold date) をカレンダーから選択するか、即公開を希望する場合は “Release immediately” チェックを加えます。</p>
+
+<p><img src="/assets/images/help/NSSShelp2-1_j.png" alt="" class="w600" /></p>
+
+<ul>
+  <li>
+    <p>年末・年始はDDBJが公開作業を停止するため選択できません</p>
+  </li>
+  <li>
+    <p>選択できる日付は最大3年後までです</p>
+  </li>
+</ul>
+
+<h3 id="入力の中断再開方法-">入力の中断・再開方法 <a name="flow-2-1"></a></h3>
+
+<ul>
+  <li>
+    <p>“Next”
+をクリックしてからブラウザでブックマークしてください。ブラウザを閉じた後でもブックマークしたURLを用いて再開することが可能です。</p>
+  </li>
+  <li>
+    <p>7.Annotation のページでは “Next” クリック以前であっても入力内容は保存されます。ブックマークから再開できます。</p>
+  </li>
+</ul>
+
+<h2 id="3-submitter-">3. Submitter <a name="flow-3"></a></h2>
+
+<p>登録者 (Submitter) 名を入力します。</p>
+
+<p><img src="/assets/images/help/NSSShelp3-1_j.png" alt="" class="w600" /></p>
+
+<div class="attention">
+
+  <p><strong>Submitter には、例のように氏名の略記を記載してください。</strong></p>
+
+  <p><strong>format：</strong><br />Last name[comma]Initial of first name[period]Initial of middle name[period]</p>
+
+  <p><strong>例：</strong><br />Miyashita,Y.<br />Robertson,G.R.<br />Mishima-Tokai,H.<br />Kim,C.S.<br />Wang,Y.Q.</p>
+
+</div>
+
+<dl>
+  <dt>関連するページ</dt>
+  <dd><a href="/ddbj/flat-file.html#Reference1">REFERENCE 1</a> / <a href="/ddbj/flat-file.html">DDBJ のデータ公開形式 (flat file) の説明</a></dd>
+</dl>
+
+<!-- end list -->
+
+<ul>
+  <li>登録者は複数名を指定いただけるよう、お願いしております。<br />
+登録者が１名のみの場合、将来、修正が必要になった際に私どもから登録者本人への連絡がとれない場面に遭遇することもございます。1名の登録者のみでの登録も可能ですが、複数の登録者を記載いただけるよう推奨しております。たとえば、実作業者と研究指導者(責任者)、論文著者から登録者に加えるなど、２名以上の登録者記載に関しましてご協力をお願いいたします。</li>
+</ul>
+
+<h2 id="4-reference-">4. Reference <a name="flow-4"></a></h2>
+
+<p><a href="/ddbj/flat-file.html#Reference2">論文 (Reference) 情報</a> を入力します。<br />
+配列に関する<a href="/ddbj/submission.html#pcite">主論文 (Primary citation)</a> を第一 reference に入力してください。</p>
+
+<p><img src="/assets/images/help/NSSShelp4_j.png" alt="" class="w600" /></p>
+
+<div class="attention">
+
+  <p><strong>論文の著者は例のように氏名の略記を記載してください。</strong></p>
+
+  <p><strong>format：</strong><br />Last name[comma]Initial of first name[period]Initial of middle name[period]</p>
+
+  <p><strong>例：</strong><br />Miyashita,Y.<br />Robertson,G.R.<br />Mishima-Tokai,H.<br />Kim,C.S.<br />Wang,Y.Q.</p>
+
+</div>
+
+<dl>
+  <dt>関連するページ</dt>
+  <dd><a href="/ddbj/flat-file.html#Reference2">REFERENCE 2</a> / <a href="/ddbj/flat-file.html">DDBJ のデータ公開形式 (flat file) の説明</a></dd>
+</dl>
+
+<h3 id="reference-の例-">Reference の例 <a name="flow-4-1"></a></h3>
+
+<h4 id="status-unpublished-">Status: Unpublished <a name="flow-4-1-1"></a></h4>
+
+<p><img src="/assets/images/help/NSSShelp4-1-1_j.png" alt="" class="w600" /></p>
+
+<h4 id="status-in-press-">Status: In press <a name="flow-4-1-2"></a></h4>
+
+<p><img src="/assets/images/help/NSSShelp4-1-2_j.png" alt="" class="w600" /></p>
+
+<h4 id="status-published-">Status: Published <a name="flow-4-1-3"></a></h4>
+
+<p><img src="/assets/images/help/NSSShelp4-1-3_j.png" alt="" class="w600" /></p>
+
+<h3 id="journal-name-">Journal name <a name="flow-4-2"></a></h3>
+
+<p>Journal name を ISO abbreviation で入力してください。Journal の full name を入力していくと候補が現れますので、マウスで選択することで Journal の ISO abbreviation を入力できます。</p>
+
+<p><img src="/assets/images/help/NSSShelp4-2_j.png" alt="" class="w600" /></p>
+
+<p>Journal の ISO abbreviation は <a href="//www.ncbi.nlm.nih.gov/nlmcatalog">NLM Catalog</a> で調べることができます。</p>
+
+<p><img src="/assets/images/help/NSSShelp4-2-1_j.png" alt="" class="w600" /></p>
+
+<h2 id="5-sequence-">5. Sequence <a name="flow-5"></a></h2>
+
+<p>塩基配列を入力します。<br />
+<a href="/ddbj/tpa.html">TPA</a> の submission を行う場合には、assembly information も同時に入力します。</p>
+
+<p><img src="/assets/images/help/NSSShelp5_j.png" alt="" class="w600" /></p>
+
+<h3 id="塩基配列のフォーマットについて-">塩基配列のフォーマットについて <a name="flow-5-1"></a></h3>
+
+<ul>
+  <li>
+    <p>Multi-FASTA 形式の塩基配列をペースト(またはアップロード)可能です。</p>
+  </li>
+  <li>
+    <p>Entry name (エントリー名) は、２４文字までの半角・英数記号(ただしスペース、”[double-quote]、?[question]、￥[yen sign]、\[back-slash]を含まない)を用いて設定してください。</p>
+  </li>
+  <li>
+    <p>Entry name には、それぞれ異なる名称を付けてください。<br />
+同じ Entry name が使用されている場合はエラーとなるため Entry name の修正が必要になります。</p>
+  </li>
+  <li>
+    <p>各エントリーの区切りとして // [double slash] を挿入する必要はありませんが、// をエントリーの区切りとして使用しても構いません(例１、例２)。</p>
+  </li>
+  <li>
+    <p>本システムでは // 無しの塩基配列を入力した場合、各エントリーの区切りとして // が自動的に挿入されます。</p>
+  </li>
+  <li>
+    <p>塩基配列は、a, c, g, t, m, r, w, s, y, k, v, h, d, b, n のいずれかで構成される必要があります。</p>
+  </li>
+  <li>
+    <p>塩基配列中の スペース、数字は自動的に削除されます。</p>
+  </li>
+  <li>
+    <p>塩基配列中の大文字は自動的に小文字に変換されます。</p>
+  </li>
+</ul>
+
+<p>例１</p>
+
+<pre><code class="language-code">&gt;CLN01
+ggacaggctgccgcaggagccaggccgggagcaggtggtggaagacagacctgtaggtgg
+aagaggcttcgggggagccggagaactgggccagaccccacaggtgcaggctgccctgtc
+tgcgcttcagtcgtgggcgaagcctgaggaaaaagagagagaggctcaaggaagagagga
+tgaggcaggagaatcgcttgaaccccggaggcggaggttgcagtgagccgagattacgcc
+accgcactccagcctgggcgacagagtgagactccatctcaaaaaaaaaaaaaaaaaa
+&gt;CLN02
+ctcacacagatgctgcgcacaccagtggttgtaacaatgccgtttgcctccttcaggtct
+gaagcctgaggtgcgctcgtggtcagtgaagagggcaaaaagagagagaggctcaaagga
+tgcgcttcagtcgtgggcgaagcctgaggaaaaagagagagaggctcaaggaagagagga
+tagtcattcatataaatttgaacacacctgctgtgcctagacaagtgtctttctgtaaga
+gctgtaactctgagatgtgctaaataaaccctctttctcaaaaaaaaaaaaaaaa
+        
+</code></pre>
+
+<p>例２</p>
+
+<pre><code class="language-code">&gt;CLN01
+ggacaggctgccgcaggagccaggccgggagcaggtggtggaagacagacctgtaggtgg
+aagaggcttcgggggagccggagaactgggccagaccccacaggtgcaggctgccctgtc
+tgcgcttcagtcgtgggcgaagcctgaggaaaaagagagagaggctcaaggaagagagga
+tgaggcaggagaatcgcttgaaccccggaggcggaggttgcagtgagccgagattacgcc
+accgcactccagcctgggcgacagagtgagactccatctcaaaaaaaaaaaaaaaaaa
+//
+&gt;CLN02
+ctcacacagatgctgcgcacaccagtggttgtaacaatgccgtttgcctccttcaggtct
+gaagcctgaggtgcgctcgtggtcagtgaagagggcaaaaagagagagaggctcaaagga
+tgcgcttcagtcgtgggcgaagcctgaggaaaaagagagagaggctcaaggaagagagga
+tagtcattcatataaatttgaacacacctgctgtgcctagacaagtgtctttctgtaaga
+gctgtaactctgagatgtgctaaataaaccctctttctcaaaaaaaaaaaaaaaa
+//
+        
+</code></pre>
+
+<h3 id="tpa-塩基配列の入力-">TPA 塩基配列の入力 <a name="flow-5-2"></a></h3>
+
+<p><img src="/assets/images/help/NSSShelp5-2_j.png" alt="" class="w600" /></p>
+
+<h3 id="tpa-における-assembly-information-の書式-">TPA における Assembly Information の書式 <a name="flow-5-3"></a></h3>
+
+<h4 id="入力例-">入力例 <a name="flow-5-3-1"></a></h4>
+
+<p><img src="/assets/images/help/NSSShelp5-3-1_j.png" alt="" class="w600" /></p>
+
+<p>Assembly information のサンプルは<strong><a href="/assets/files/example/NSSShelp-tpa-sample.txt">ここから</a></strong>ダウンロードできます。(タブ区切りテキスト形式)</p>
+
+<h4 id="上記入力例の意味-">上記入力例の意味 <a name="上記入力例の意味"></a></h4>
+
+<p><strong>Entry name FA01</strong><br />TPA 塩基配列 1-552 の領域は ZZ000001.1 の 54872-55422 に対応<br />TPA 塩基配列 553-705 の領域は ZZ000002.5 の 1-153 に対応</p>
+
+<p><strong>Entry name BM123</strong><br />TPA 塩基配列 1-438 の領域は ZZ000010.1 の 1-438 に対応<br />TPA 塩基配列 377-695 の領域は ZZ000011.1 の complement(1-320) に対応<br />TPA 塩基配列 411-790 の領域は ZZ000021.12 の 1-398 に対応<br />TPA 塩基配列 790-1191 の領域は ZZ000022.0 の 1-401 に対応</p>
+
+<p>いずれも <a href="/ddbj/tpa.html#alignment-rule">TPA とプライマリーエントリの配列アラインメントに関する規則</a>
+に従います。</p>
+
+<h3 id="assembly-information-入力規則-">Assembly Information 入力規則 <a name="flow-5-4"></a></h3>
+
+<ul>
+  <li>
+    <p>第1行目は</p>
+
+    <ul>
+      <li><span style="font-size: 11px;">[tab or space]TPA_SPAN[tab or space]PRIMARY_IDENTIFIER[tab or space]PRIMARY_SPAN[tab or space]COMPLEMENT</span><br />
+である必要があります。</li>
+    </ul>
+  </li>
+  <li>
+    <p>空行を含めないでください。</p>
+  </li>
+  <li>
+    <p>Entry name は第１列に記載します、Entry name のある行でエントリーごとの Assembly 情報が区切られることになります。</p>
+  </li>
+  <li>
+    <p>TPA_SPAN</p>
+
+    <ul>
+      <li>X..Y or X-Y</li>
+      <li>X と Y は数字です。TPA 配列上の領域を記載します。</li>
+      <li>例: 100..2000   100-2000</li>
+    </ul>
+  </li>
+  <li>
+    <p>PRIMARY_IDENTIFIER</p>
+
+    <ul>
+      <li>accession number.version</li>
+      <li>引用するプライマリエントリのアクセッション番号をバージョン番号とともに入力します。<br />
+未公開のアクセッション番号の場合はバージョン番号を 0 にしてください。</li>
+      <li>例: AB123456.1   AB987654.0</li>
+    </ul>
+  </li>
+  <li>
+    <p>PRIMARY_SPAN</p>
+
+    <ul>
+      <li>X..Y or X-Y</li>
+      <li>X と Y は数字です。プライマリエントリからの引用領域を入力します。抜き出した領域がTPA_SPANの領域と対応している必要があります。<a href="/ddbj/tpa.html#alignment-rule">TPA とプライマリーエントリの配列アラインメントに関する規則</a>もご覧ください。</li>
+    </ul>
+  </li>
+  <li>
+    <p>COMPLEMENT</p>
+
+    <ul>
+      <li>空欄 または c</li>
+      <li>プライマリエントリから相補鎖領域を引用する場合にのみ c を指定します。</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="6-template-">6. Template <a name="flow-6"></a></h2>
+
+<p>アノテーションに適合する template を選択します。</p>
+
+<p><img src="/assets/images/help/NSSShelp6_j.png" alt="" class="w600" /></p>
+
+<h2 id="7-annotation-">7. Annotation <a name="flow-7"></a></h2>
+
+<h3 id="アノテーション画面---template-で-other-以外を選択したとき-">アノテーション画面 - Template で “other” 以外を選択したとき <a name="flow-7-1"></a></h3>
+
+<div class="highlight">
+
+  <p><img src="/assets/images/help/NSSShelp7-1_j.png" alt="" /></p>
+
+</div>
+
+<dl>
+  <dt>関連するページ</dt>
+  <dd><a href="/ddbj/features.html">Feature key の定義</a> / <a href="/ddbj/qualifiers.html">Qualifier key の定義</a> / <a href="/ddbj/organism.html">Organism qualifier に記載する生物名</a> / <a href="/ddbj/cds.html">タンパク質コード配列; CDS feature について</a></dd>
+</dl>
+
+<h3 id="アノテーション画面---template-で-other-を選択したとき-">アノテーション画面 - Template で “other” を選択したとき <a name="flow-7-2"></a></h3>
+
+<div class="highlight">
+
+  <p><img src="/assets/images/help/NSSShelp7-2_j.png" alt="" /></p>
+
+</div>
+
+<dl>
+  <dt>関連するページ</dt>
+  <dd><a href="/ddbj/features.html">Feature key の定義</a> / <a href="/ddbj/qualifiers.html">Qualifier key の定義</a> / <a href="/ddbj/organism.html">Organism qualifier に記載する生物名</a> / <a href="/ddbj/cds.html">タンパク質コード配列; CDS feature について</a></dd>
+</dl>
+
+<h3 id="アノテーションの入力方法-">アノテーションの入力方法 <a name="flow-7-3"></a></h3>
+
+<h4 id="edit-ボタン-">“Edit” ボタン <a name="flow-7-3-1"></a></h4>
+
+<p><img src="/assets/images/help/NSSShelp7-3-1_j.png" alt="" class="w600" /></p>
+
+<h4 id="select-qualifier-ボタン-">“Select Qualifier” ボタン <a name="flow-7-3-2"></a></h4>
+
+<p><img src="/assets/images/help/NSSShelp7-3-2_j.png" alt="" class="w600" /></p>
+
+<h4 id="pen--note-ボタン-">“Pen &amp; Note” ボタン <a name="flow-7-3-3"></a></h4>
+
+<p><img src="/assets/images/help/NSSShelp7-3-3_j.png" alt="" class="w600" /></p>
+
+<h4 id="edit-colum-ボタン-">“Edit Colum” ボタン <a name="flow-7-3-4"></a></h4>
+
+<p><img src="/assets/images/help/NSSShelp7-3-4_j.png" alt="" class="w600" /></p>
+
+<h4 id="セルのダブルクリック-template-で-other-選択時の場合は-qualifier-のクリック--">セルのダブルクリック (Template で “other” 選択時の場合は Qualifier のクリック)  <a name="flow-7-3-5"></a></h4>
+
+<p><img src="/assets/images/help/NSSShelp7-3-5_j.png" alt="" class="w600" /></p>
+
+<h3 id="生物名-organism-name-">生物名 (Organism name) <a name="flow-7-4"></a></h3>
+
+<p><img src="/assets/images/help/NSSShelp7-4_j.png" alt="" class="w600" /></p>
+
+<p>学名を入力後、”OK” をクリックします。<br />
+入力した名称が NCBI Taxonomy database に無い場合、リストから該当するカテゴリーを選択します。
+詳細は、<a href="/ddbj/organism.html#deasy">生物名入力におけるカテゴリ (Category) について</a> をご覧ください。</p>
+
+<p><img src="/assets/images/help/NSSShelp7-4-1_j.png" alt="" class="w600" /></p>
+
+<dl>
+  <dt>関連するページ</dt>
+  <dd><a href="/ddbj/organism.html">Organism qualifier に記載する生物名</a></dd>
+</dl>
+
+<h3 id="アノテーション例-">アノテーション例 <a name="flow-7-5"></a></h3>
+
+<h4 id="16s-rrna-">16S rRNA <a name="flow-7-5-1"></a></h4>
+
+<div class="highlight">
+
+  <p><img src="/assets/images/help/NSSShelp7-5-1_j.png" alt="" /></p>
+
+</div>
+
+<h4 id="cds-">CDS <a name="flow-7-5-2"></a></h4>
+
+<div class="highlight">
+
+  <p><img src="/assets/images/help/NSSShelp7-5-2_j.png" alt="" /></p>
+
+</div>
+
+<h4 id="mitochondrial-genome-">Mitochondrial genome <a name="flow-7-5-3"></a></h4>
+
+<div class="highlight">
+
+  <p><img src="/assets/images/help/NSSShelp7-5-3_j.png" alt="" /></p>
+
+</div>
+
+<h3 id="アノテーションファイルのアップロード方法-">アノテーションファイルのアップロード方法 <a name="flow-7-6"></a></h3>
+
+<div class="highlight">
+
+  <p><img src="/assets/images/help/NSSShelp7-6_j.png" alt="" /></p>
+
+</div>
+
+<h4 id="アップロード可能なアノテーションファイル-">アップロード可能なアノテーションファイル <a name="flow-7-6-1"></a></h4>
+
+<ul>
+  <li>
+    <p>サンプルファイルを<a href="/assets/files/example/mtDNA.txt">ここから</a>ダウンロードできます。</p>
+  </li>
+  <li>
+    <p>アノテーションファイル作成方法に関する手引きは、<a href="/ddbj/file-format.html#annotation">登録ファイル形式、アノテーションファイル</a>をご覧ください。</p>
+  </li>
+  <li>
+    <p>annotation file には、<a href="/ddbj/file-format.html#biological_feature">Biological Feature 部分</a>のみを含めてください。</p>
+  </li>
+  <li>
+    <p>WGS, CON, AGP, EST, GSS, STS, HTG, HTC, TSA ファイルの upload
+には対応していません。これらの登録については、<a href="/ddbj/mss.html">Mass Submission System(MSS)</a>をご利用ください。</p>
+  </li>
+  <li>
+    <p>アップロードされたアノテーションファイルの先頭には、”1. Contact person”、”2. Hold date”、”3. Submitter”、”4. Reference” に入力された内容が COMMON 情報として挿入されます。</p>
+  </li>
+  <li>
+    <p>“COMMON” を含むアノテーションファイルをアップロードした場合、COMMON は “1. Contact person”、”2. Hold date”、”3. Submitter”、”4. Reference” に入力された内容に置換されます。</p>
+  </li>
+  <li>
+    <p>TPA 登録においては、PRIMARY_CONTIG をアノテーションファイルに含めないでください。”5. Sequence” 内 Assembly Information に入力された内容が自動的に変換され、アノテーションファイルの各エントリーに挿入されます。</p>
+  </li>
+</ul>
+
+<!-- end list -->
+
+<dl>
+  <dt>関連するページ</dt>
+  <dd><a href="/ddbj/features.html">Feature key の定義</a> / <a href="/ddbj/qualifiers.html">Qualifier key の定義</a> / <a href="/ddbj/organism.html">Organism qualifier に記載する生物名</a> / <a href="/ddbj/cds.html">タンパク質コード配列; CDS feature について</a></dd>
+</dl>
+
+<div class="highlight">
+
+  <p><img src="/assets/images/help/NSSShelp7-6-1_j.png" alt="" /></p>
+
+</div>
+
+<h4 id="アノテーションファイルのアップロードエラーとなる主な原因-">アノテーションファイルのアップロードエラーとなる主な原因 <a name="flow-7-6-2"></a></h4>
+
+<ul>
+  <li>
+    <p>エクセルを使用して作成した場合は、テキストエディタにコピーしてからテキストファイルとして保存してください。アノテーションファイルは、タブ区切りテキストファイルである必要があります。</p>
+  </li>
+  <li>
+    <p>“5. Sequence” で入力した配列名 (Entry name) をアノテーションファイルに入力していないか、入力順序が一致していない場合にはアップロードできません。</p>
+  </li>
+  <li>
+    <p>アノテーションファイルのタブ区切りで構成されるカラムが崩れている場合はアップロードできません。</p>
+  </li>
+  <li>
+    <p>余計なスペース、不正文字(全角文字、unicode文字、unprintable character)がファイル中に含まれている場合もアップロードできません。</p>
+  </li>
+</ul>
+
+<h3 id="errorwarning-">Error/Warning <a name="flow-7-7"></a></h3>
+
+<ul>
+  <li>
+    <p>“Confirm” クリック後、エラーが生じなければ、”Next” ボタンがクリック可能になり次のステップ(Final page)に進めます。</p>
+  </li>
+  <li>
+    <p>Error や Warning がある場合、アノテーション入力領域の下にメッセージが表示されます。</p>
+  </li>
+  <li>
+    <p>Error が生じた場合は、画面をスクロールアップしアノテーション入力領域におけるエラー対象エントリーを修正してください。</p>
+  </li>
+  <li>
+    <p>Submitter、Reference、Sequence に Error/Warning が生じた場合、画面上部にあるプログレスバー内の各ページをクリックし、修正してください。修正後は各ページにおいて “Next” ボタンをクリックした後、プログレスバーの “7.Annotation” をクリックすると Annotation 入力画面に戻ることができます。</p>
+  </li>
+  <li>
+    <p>Warning があっても、”Next” がクリック可能になります。Warning が生じた場合は入力内容を見直した上で、問題がある場合のみ修正してください。入力内容に問題がなければ “Next” をクリックしてください。</p>
+  </li>
+</ul>
+
+<p>Error/warning メッセージの詳細については、<a href="/ddbj/validator.html">Validator エラーメッセージ</a>をご覧ください。<br />
+例のようにコード番号から直接リンクすることも可能です。<br />
+例：<a href="/ddbj/validator.html#JP0015">https://www.ddbj.nig.ac.jp/ddbj/validator.html#JP0015</a></p>
+
+<dl>
+  <dt>関連するページ</dt>
+  <dd><a href="/ddbj/features.html">Feature key の定義</a> / <a href="/ddbj/qualifiers.html">Qualifier key の定義</a> / <a href="/ddbj/organism.html">Organism qualifier に記載する生物名</a> / <a href="/ddbj/cds.html">タンパク質コード配列; CDS feature について</a></dd>
+</dl>
+
+<h3 id="アミノ酸配列を得るには-">アミノ酸配列を得るには <a name="flow-7-8"></a></h3>
+
+<p><a href="/faq/ja/how-to-confirm-translated-amino-acid-seq.html">CDS feature の翻訳アミノ酸配列 (/translation qualifier) を確認する方法</a>を参考にしてください。</p>
+
+<p>または以下の Web サービスを利用することで、塩基配列から翻訳されるアミノ酸配列を知ることができます。<br />
+ORFfinder (NCBI)<br />
+<a href="//www.ncbi.nlm.nih.gov/orffinder/">https://www.ncbi.nlm.nih.gov/orffinder/</a><br />
+EMBOSS Transeq (EBI)<br />
+<a href="//www.ebi.ac.uk/Tools/st/emboss_transeq/">https://www.ebi.ac.uk/Tools/st/emboss_transeq/</a></p>
+
+<h2 id="final-page-">Final page <a name="flow-7a"></a></h2>
+
+<p>“Confirm” 後 “Next” クリックで最終確認画面が表示されます。</p>
+
+<p><img src="/assets/images/help/NSSShelp7a_j.png" alt="" class="w600" /></p>
+
+<h2 id="8-finish-">8. Finish <a name="flow-8"></a></h2>
+
+<p>Finish 画面が現れた時点で submission 完了となります。<br />
+入力された内容は自動的に DDBJ の登録用サーバーに転送されます。同時にSubmission 完了を知らせる Email が contact person の Email アドレス宛に送信されます。</p>
+
+<p><img src="/assets/images/help/NSSShelp8-1_j.png" alt="" class="w600" /></p>
+
+<p>完了を通知するメール。</p>
+
+<p><img src="/assets/images/help/NSSShelp8-2_j.png" alt="" class="w600" /></p>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

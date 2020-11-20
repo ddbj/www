@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transChecker ユーザーマニュアル</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">transChecker ユーザーマニュアル</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/ddbj">ddbj</a>
+          </li>
+          <li>
+            <a href="">transChecker ユーザーマニュアル</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/ddbj/index.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/submission.html">Submission</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/submission.html">塩基配列の登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/web-submission.html">Web 版塩基配列登録システム</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/mss.html">Mass Submission System</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/update.html">登録データの修正・更新</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="http://ddbj.nig.ac.jp/arsa/?lang=ja">Search</a>
+      
+      <ul>
+        
+        <li>
+          <a href="http://getentry.ddbj.nig.ac.jp/top-j.html">getentry</a>
+        </li>
+        
+        <li>
+          <a href="http://ddbj.nig.ac.jp/arsa/?lang=ja">ARSA</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/flat-file.html">Flat file</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/features.html">Feature key の定義</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/qualifiers.html">Qualifier key の定義</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/organism.html">Organism qualifier に記載する生物名</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/location.html">Location の記述法</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/cds.html">タンパク質コード配列</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/geneticcode.html">The Genetic Codes</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/code.html">配列の記載に用いる略号</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/example.html">登録の見本</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/data-categories.html">Data categories</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/genome.html">Genome project のデータ登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/pseudohaplotype.html">Pseudohaplotype</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/wgs.html">WGS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/metagenome-assembly.html">メタゲノムアセンブリ</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/single-amplified-genome.html">Single amplified genome</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/con.html">CON</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/gss.html">GSS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/htg.html">HTG</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/environmental.html">Environmental sequence の登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/env.html">ENV</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tls.html">TLS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/transcriptome.html">Transcriptome Project のデータ登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tsa.html">TSA</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/est.html">EST</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/htc.html">HTC</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tpa.html">Third Party Data (TPA)</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/ja/index.html">FAQ</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/index-e.html">Other</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/patent-data.html">Patent</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/mga.html">MGA</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <p>transChecker は Mass Submission System (MSS) を利用して DDBJ に登録する際に必要な
+<a href="/ddbj/file-format.html#sequence">配列ファイル</a> と <a href="/ddbj/file-format.html#annotation">アノテーションファイル</a> の記載を元に、<a href="/ddbj/cds.html">CDS feature</a> のアミノ酸翻訳チェックを行うツールです。</p>
+
+<h2 id="インストール-">インストール <a name="install"></a></h2>
+
+<ol>
+  <li>
+    <a href="/ddbj/mss-tool.html">MSS データフイル用チェックツール</a>から transChecker.tar.gz を取得 
+  </li>     
+  <li>  
+    tar.gz ファイルを gunzip コマンドで解凍<br />
+<pre>
+<code>
+$ gunzip transChecker.tar.gz
+</code>   
+</pre>
+  </li>   
+  <li>
+    tar ファイルを tar コマンドで展開<br />
+<pre>
+<code>
+$ tar xvf transChecker.tar
+</code>
+</pre>
+  </li>  
+  <li>
+    ディレクトリが生成される<br />
+    下記の要領で、ディレクトリの中身を見ると以下のようになっています。<br />
+    <pre>
+      <code> 
+$ cd transChecker
+$ ls -FC
+jar/license.txt   transChecker.sh*
+      </code>
+    </pre>
+    <br />
+    <table>
+      <tbody>
+        <tr>
+          <th>jar/</th>
+          <td>java のクラスライブラリ格納ディレクトリ(改変不可)</td>
+        </tr>
+        <tr>
+          <th>license.txt</th>
+          <td>使用許諾(改変不可)</td>
+        </tr>
+        <tr>
+          <th>transChecker.sh</th>
+          <td>実行シェルスクリプト</td>
+        </tr>
+      </tbody>
+    </table>
+</li>
+<li>ファイルの編集<br />
+    transChecker.sh を実行する前にファイルの中身を、インストールしたコンピュータの環境にあわせるために変更する必要があります。vi などのエディタで編集して下さい。
+    <pre>
+      <code>
+#!/bin/sh
+
+# Installed directory
+TRANS_DIR=./
+
+# Set maximum Java heap size
+HEAP_SIZE=128m
+
+# Execution Command
+# Don't change.
+java -Xmx$HEAP_SIZE -jar $TRANS_DIR/jar/transChecker.jar -Cclean $@
+
+RETVAL=$?
+
+exit $RETVAL
+#EOF
+      </code>
+    </pre>
+
+  <dl>
+    <dt>[TRANS_DIR 変数]</dt>
+    <dd>transChecker ディレクトリのある場所をフルパスで入力して下さい。</dd>
+    <dd>例) TRANS_DIR=/home/mass/transChecker</dd>
+    <dt>[HEAP_SIZE 変数]</dt>
+    <dd>transChecker が使用できる最大メモリ量を指定してください。</dd>
+    <dd>例) HEAP_SIZE=128m</dd>
+  </dl>
+  </li>  
+  <li>
+    PATH を指定する<br />
+    PATH に transChecker.sh が設置してあるディレクトリを指定して下さい。
+  </li>
+</ol>
+
+<h2 id="実行-">実行 <a name="exec"></a></h2>
+
+<p>任意のディレクトリで下記の通りに、コマンドを実行して下さい。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ transChecker.sh[space]-x[アノテーションファイル名][space]-s[塩基配列ファイル名][space]
+-e[実行結果保存用ファイル名][space]-o[アミノ酸配列ファイル名][space]-t[塩基配列とアミノ酸配列のアラインメントのファイル名]
+</code></pre></div></div>
+
+<p>例</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ transChecker.sh -xsample.ann -ssample.fasta -eerrmsg.txt -orsl.fasta -taln.txt
+</code></pre></div></div>
+
+<p>ファイル名は絶対パス・相対パスのどちらでも指定できます。<br />
+<strong>macOS: ファイル名とフォルダ名について</strong>
+<a href="/ddbj/file-format.html#sequence">配列ファイル</a>、<a href="/ddbj/file-format.html#annotation">アノテーションファイル</a>のファイル名またはフォルダ名にマルチバイト文字が含まれていますと一部のバージョンの macOS では正常に動作しない場合がありますので、ファイル名とフォルダ名にマルチバイト文字を混在させないようにご注意ください。</p>
+
+<dl>
+  <dt>-x[<span class="font-br font-normal">アノテーションファイル名</span>]</dt>
+  <dd>このオプションは必須です。指定されていない場合、本ツールは終了します。 アノテーションファイル はタブ区切りのテキストファイルです。書式の詳細に関しては、<a href="/ddbj/file-format.html#annotation">登録ファイル形式：アノテーションファイル</a> をご参照下さい。 また、transChecker 実行前に Parser によるチェックでエラーがないことをご確認ください。</dd>
+  <dt>-s[<span class="font-br font-normal">塩基配列ファイル名</span>]</dt>
+  <dd>このオプションは必須です。指定されていない場合、本ツールは終了します。 塩基配列ファイル は fasta 形式のテキストファイルです。書式の詳細に関しては、<a href="/ddbj/file-format.html#sequence">登録ファイル形式：配列ファイル</a> をご参照下さい。 また、transChecker 実行前に Parser によるチェックでエラーがないことをご確認ください。</dd>
+  <dt>-e[<span class="font-br font-normal">実行結果保存用ファイル名</span>]</dt>
+  <dd>アミノ酸配列への翻訳過程で生じたエラーメッセージを出力するファイルの名称を指定します。このオプションが指定されていない場合は、エラーメッセージは、stdout で出力されます。 エラーメッセージが出力された場合は、適宜、対処をお願いいたします。 出力フォーマットとエラーメッセージの意味は <a href="/ddbj/validator.html#transChecker">transChecker エラーメッセージ一覧</a> をご参照ください。</dd>
+  <dt>-o[<span class="font-br font-normal">アミノ酸配列ファイル名</span>]</dt>
+  <dd>翻訳結果のアミノ酸配列を出力するファイルの名称を指定します。 このオプションが指定されていない場合、アミノ酸配列は出力されません。出力フォーマットは <a href="#output-1-1">FASTA-like format</a> をご参照ください。</dd>
+  <dt>-t[<span class="font-br font-normal">塩基配列とアミノ酸配列のアラインメントのファイル名</span>]</dt>
+  <dd>翻訳結果を塩基配列とアミノ酸配列のアラインメントとして出力するファイルの名称を指定します。このオプションが指定されていない場合、アラインメントは出力されません。出力フォーマットは <a href="#output-1-2">塩基配列とのアラインメント</a> をご参照ください。</dd>
+</dl>
+
+<h3 id="アミノ酸配列のフォーマット-">アミノ酸配列のフォーマット <a name="exec-1"></a></h3>
+
+<p>transChecker では２種類の形式を用意しています。<br />
+エラーがある場合でも、CDS feature で示される塩基配列に対応するアミノ酸配列をその状態で出力しますが、エラーの程度により出力されないこともあります。</p>
+
+<h4 id="fasta-like-format-">FASTA-like format <a name="output-1-1"></a></h4>
+
+<p>以下に示す FASTA に類似の形式で出力します。</p>
+
+<p>書式</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;[Entry name].[Serial Number][space][CDS feature location]
+[翻訳結果アミノ酸配列 (60 文字/行)]
+//
+</code></pre></div></div>
+
+<p>出力例</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;entry1.1 89..406
+MLARISELTKIGTTIFIVAIDQVAEPNSWGSSQLVLLAKIAGALKAIPPNPVCTSRHRQA
+ASVSPFRSAIVGTLLQLEAIKNLLTVSVDTIQQNGVLFIFVALLR
+//
+&gt;entry1.2 684..1325
+MSIGILGTKLGMTQIFDESGKAVPVTVIQAGPCPITQIKTVATDGYNAIQIGFLEVREKQ
+LSKPELGHLSKAGAPPLRHLLEYRVPSTDGLELGQALTADRFEAGQKVDVQGHTIGRGFT
+GYQKRHGFARGPMSHGSKNHRLPGSTGAGTTPGRVYPGKRMAGRSGNDKTTIRGLTVVRV
+DADRNLLLVKGSVPGKPGALLNITPATVVGQQA
+//
+</code></pre></div></div>
+
+<h4 id="塩基配列とのアラインメント">塩基配列とのアラインメント<a name="output-1-2"></a></h4>
+
+<p>塩基配列と翻訳アミノ酸配列のアラインメントを以下に示す書式で出力します。</p>
+
+<p>書式</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;[Entry name].[Serial Number][space][CDS feature location]
+/codon_start=[codon_start の値; 指定なしの場合 1]
+/transl_table=[transl_table の値; 指定なしの場合 1]
+[塩基番号][塩基配列 (60 文字/行)]
+[アミノ酸番号][翻訳結果アミノ酸配列 (20 文字/行)]
+[空行]
+:
+//
+</code></pre></div></div>
+
+<p>出力例</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ENT01.1 &lt;1..179
+/codon_start=3
+/transl_table=1
+         1 tgtacccactcaattttgtaaccccgggtatcatgctcccaggtgcattgatgttggatt
+         1   Y  P  L  N  F  V  T  P  G  I  M  L  P  G  A  L  M  L  D  F
+
+        61 tcacgatgtatctgacgcgtaactggctggtgaccgcattggttggaggtggattctttg
+        21   T  M  Y  L  T  R  N  W  L  V  T  A  L  V  G  G  G  F  F  G
+
+       121 gtctgctgttttacccaggtaactggccaatctttggcccgacccatctgccaatctaa
+        41   L  L  F  Y  P  G  N  W  P  I  F  G  P  T  H  L  P  I  
+//
+&gt;ENT02.1 101..280
+/codon_start=1
+/transl_table=1
+         1 atgtacccactcaattttgtaaccccgggtatcatgctcccaggtgcattgatgttggat
+         1 M  Y  P  L  N  F  V  T  P  G  I  M  L  P  G  A  L  M  L  D
+
+        61 ttcacgatgtatctgacgcgtaactggctggtgaccgcattggttggaggtggattcttt
+        21 F  T  M  Y  L  T  R  N  W  L  V  T  A  L  V  G  G  G  F  F
+
+       121 ggtctgctgttttacccaggtaactggccaatctttggcccgacccatctgccaatctaa
+        41 G  L  L  F  Y  P  G  N  W  P  I  F  G  P  T  H  L  P  I  
+//
+</code></pre></div></div>
+
+<div class="attention">
+
+  <p>transChecker は、エラーが発生している場合は、エラーメッセージを出力します。<br />
+エラーメッセージの意味は <a href="/ddbj/validator.html#transchecker">transChecker エラーメッセージ</a> をご覧ください。</p>
+
+</div>
+
+      </div>
+      
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              
+              <li>
+                <a href="/ddbj/file-format.html">登録ファイル形式</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/mss-tool.html">MSS データファイル用チェックツール</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/ume.html">UME ユーザーマニュアル</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/parser.html">Parser ユーザーマニュアル</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/validator.html">validator エラーメッセージ</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/mss-form.html">MSS 利用申し込み</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

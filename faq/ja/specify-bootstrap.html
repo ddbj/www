@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClustalW での解析時に BOOTSTRAP を指定することはできますか</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title -small">
+      <h1 class="title">ClustalW での解析時に BOOTSTRAP を指定することはできますか</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/faq/ja/">よくある質問</a>
+            
+          </li>
+          <li>
+            <a>ClustalW での解析時に BOOTSTRAP を指定することはできますか</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<main id="SimpleView">
+  <div class="inner">
+    <article class="md-content">
+      <p>ClustalW では，全ての解析時に BOOTSTRAP の計算を実行致します。<br />出力ファイルの最後にある [Download Tree File] を選択して頂くと， .phb ファイルをダウンロードすることができます。<br /><br />ただし，入力フォームで [FORMAT] と [CLUSTERING] の選択が以下の様な組み合わせのときには .phb ファイルは作成されません。<br /></p>
+<table id="mktable_noline">
+  <tr>
+    <td id="mktable_left_noline" style="font-weight:bold; width:100px;"> [FORMAT] </td>
+    <td id="mktable_left_noline" style="font-weight:bold;"> [CLUSTERING]</td>
+  </tr>
+  <tr>
+    <td id="mktable_left_noline" style="width:100px;"> PHYLIP</td>
+    <td id="mktable_left_noline"> NJ</td>
+  </tr>
+  <tr>
+    <td id="mktable_left_noline" style="width:100px;"> NEXUS</td>
+    <td id="mktable_left_noline"> NJ</td>
+  </tr>
+  <tr>
+    <td id="mktable_left_noline" style="width:100px;"> PHYLIP</td>
+    <td id="mktable_left_noline"> UPGMA</td>
+  </tr>
+  <tr>
+    <td id="mktable_left_noline" style="width:100px;"> NEXUS</td>
+    <td id="mktable_left_noline"> UPGMA</td>
+  </tr>
+</table>
+
+    </article>
+  </div>
+</main>
+
+  
+
+</body>
+</html>

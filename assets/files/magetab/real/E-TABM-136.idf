@@ -1,0 +1,24 @@
+"Investigation Title"	"Functionality of Intergenic Transcription: An Evolutionary Comparison"		
+"Experimental Design"	organism_part_comparison_design	species_comparison_design	
+"Experimental Factor Name"	ORGANISM	ORGANISMPART	"LYMPHOBLASTOID CELLLINE"
+"Experimental Factor Type"	organism	organism_part	"lymphoblastoid cell_line"
+			
+"Person Last Name"	Khaitovich		
+"Person First Name"	Philipp		
+"Person Mid Initial"			
+"Person Email"	khaitovich@eva.mpg.de		
+"Person Roles"	submitter		
+			
+"Quality Control Types"	biological_replicate_design		
+"Public Release Date"	"2006-09-30"		
+			
+Comment[ArrayExpressSubmissionDate]	"2006-08-18"		
+			
+"Publication Author List"	"Philipp Khaitovich; Janet Kelso; Henriette Franz; Johann Visagie; Thomas Giger; Sabrina Joerchel; Ekkehard Petzold; Richard E. Green; Michael Lachmann; Svante P��bo"		
+"Publication Title"	"Functionality of Intergenic Transcription: An Evolutionary Comparison"		
+"Experiment Description"	"Although a large proportion of human transcription occurs outside the boundaries of known genes, the functional significance of this transcription remains unknown. We have compared the expression patterns of known genes as well as intergenic transcripts within the ENCODE regions between humans and chimpanzees in brain, heart, testis and lymphoblastoid cell lines. We find that intergenic transcripts show patterns of tissue-specific conservation of their expression which are comparable to exonic transcripts of known genes. This suggests that intergenic transcripts are subject to functional constraints that restrict their rate of evolutionary change as well as putative positive selection to an extent comparable to that of classical protein-coding genes. In brain and testis, we find that part of this intergenic transcription is caused by wide-spread use of alternative promoters. Further, we find that about half of the expression differences between humans and chimpanzees are due to intergenic transcripts. In order to transfer genetic information encoded in the genomic sequence of an organism into functional features, the genomic sequence must be transcribed. According to the current genome annotation, the human genome produces transcripts from 20,000ﾖ25,000 protein-coding genes and a smaller number of non-coding genes. Recently, the introduction of tiling arrays that enable the measurement of transcription regardless of previous annotation challenged this view by providing evidence that a large proportion of transcription occurs outside of annotated genes. It has been suggested that these transcripts represent previously unidentified functional RNAs as well as extensions of known genes. However, their lack of conservation between species on the DNA sequence level raises questions about their functionality. In this study we assess the functionality of these novel transcripts by testing the extent to which their expression is conserved between humans and chimpanzees in different tissues. Surprisingly, we find the expression of known and novel transcripts to be conserved to the same relative extent when different tissues are compared. This suggests that both known and novel transcripts are equally affected by adaptive and stabilizing selection in different tissues during human and chimpanzee evolution. Further, in terms of absolute numbers, about half of the expression differences between humans and chimpanzees in any given tissue are due to intergenic transcripts."		
+			
+"SDRF File"	E-TABM-136_sdrf.txt		
+			
+"Term Source Name"	ArrayExpress		
+"Term Source File"	http://www.ebi.ac.uk/arrayexpress/		

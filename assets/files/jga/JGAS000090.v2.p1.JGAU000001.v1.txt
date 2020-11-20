@@ -1,0 +1,15 @@
+Name	Description	Type	Values
+subject_id	Subject ID is de-identified ID for patient.	string	
+sample_id	Sample ID is de-identified ID for sample.	string	
+Name	Description	string	
+sample_name	Name of sample	string	
+title	Title of sample	string	
+description	Description of sample	string	
+subject_id	Subject ID	string	
+sex	sex of subject	string	male,female
+affection_status	case or control	string	
+tissue	tissue of sample	string	liver,blood
+population	population of subject	string	
+histological_type	cell type	string	
+is_tumor	tumor or not	string	yes,no
+age	age at sample collection	integer	

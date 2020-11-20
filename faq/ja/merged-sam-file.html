@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[Detail view 画面] samtools view -hX out.bam>out.samXとmerged SAMがどのようなファイルなのかわかりません</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title -small">
+      <h1 class="title">[Detail view 画面] samtools view -hX out.bam>out.samXとmerged SAMがどのようなファイルなのかわかりません</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/faq/ja/">よくある質問</a>
+            
+          </li>
+          <li>
+            <a>[Detail view 画面] samtools view -hX out.bam>out.samXとmerged SAMがどのようなファイルなのかわかりません</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<main id="SimpleView">
+  <div class="inner">
+    <article class="md-content">
+      <p>merged.samは、Detail view画面「Download merged pileup file」枠内のファイルの事であると思いますが、これは染色体ごとのsamの結果を１つに合わせたものとなっております。out.samX は&lt;pre&gt;samtools view -hXUsage: samtools view [options]<in.bam>|<in.sam>[region1 [...]]Options: -h     print header for the SAM output            -X     output FLAG in string (samtools-C specific)</in.sam></in.bam>&lt;/pre&gt;<br />samとsamXで2カラムめの表記が変わります。以下をご参考ください。<br /><a href="http://sourceforge.net/apps/mediawiki/samtools/index.php?title=SAM_FAQ#The_integer_FLAG_field_is_not_friendly_to_eyes" rel="nofollow" style="text-decoration:underline;background-color:initial;font-weight:bold;padding-top:2px;padding-right:2px;padding-bottom:2px;padding-left:2px">http://sourceforge.net/apps/mediawiki/samtools/index.php?title=SAM_FAQ#The_integer_FLAG_field_is_not_friendly_to_eyes</a><br />merged SAMは染色体１本の場合out.sam(Downloadのファイルは圧縮されているが）中身は同じです。</p>
+
+    </article>
+  </div>
+</main>
+
+  
+
+</body>
+</html>

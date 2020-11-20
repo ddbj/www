@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single-cell submission guide</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">Single-cell submission guide</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/gea">gea</a>
+          </li>
+          <li>
+            <a href="">Single-cell submission guide</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/gea/index-e.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/gea/overview-e.html">Submission Overview</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/gea/submit-array-e.html">Submit microarray experiment</a>
+        </li>
+        
+        <li>
+          <a href="/gea/submit-sequence-e.html">Submit sequencing experiment</a>
+        </li>
+        
+        <li>
+          <a href="/gea/metadata-e.html">Metadata</a>
+        </li>
+        
+        <li>
+          <a href="/gea/datafile-e.html">Data File</a>
+        </li>
+        
+        <li>
+          <a href="/gea/validation-e.html">Validation</a>
+        </li>
+        
+        <li>
+          <a href="/gea/single-cell-e.html">Single-cell submission guide</a>
+        </li>
+        
+        <li>
+          <a href="/gea/example-e.html">Example</a>
+        </li>
+        
+        <li>
+          <a href="/gea/adf-e.html">Array Design</a>
+        </li>
+        
+        <li>
+          <a href="/gea/matrix-e.html">Data matrix</a>
+        </li>
+        
+        <li>
+          <a href="/gea/reviewer-access-e.html">Reviewer Access</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/en/index-e.html">FAQ</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="http://aoe.dbcls.jp/">Search (AOE)</a>
+      
+      <ul>
+        
+        <li>
+          <a href="http://refex.dbcls.jp/index.php?lang=en">RefEx</a>
+        </li>
+        
+        <li>
+          <a href="https://www.ebi.ac.uk/arrayexpress/browse.html">Search (ArrayExpress)</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/gea">Downloads</a>
+      
+    </li>
+    
+    <li class="">
+      <a href="/gea/about-gea-e.html">About GEA</a>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="how-to-submit-single-cell-data-">How to submit single-cell data <a name="single-cell-data"></a></h2>
+
+<p>For single-cell gene expression data, submit raw data to DRA and
+processed data to GEA. <span class="red">Submit
+de-multiplexed (divided) sample and data files in the case of dozens
+cells (samples). In the case of more number of cells and de-multiplexed
+data affect reproducibility, submit multiplexed (mixed) sample and data
+files.</span></p>
+
+<h3 id="library-information-">Library information <a name="library"></a></h3>
+
+<p>In both de-multiplexed and multiplexed submissions, describe methods,
+name and version of kit (e.g., Smart-seq2, 10x, Drop-seq) used for
+single-cell library construction in <a href="/dra/submission-e.html#Library_Construction_Protocol">Library Construction
+Protocol</a> of the
+DRA Experiment. For 10x technology, describe version of 10x chemistry
+(e.g., v1, v2).</p>
+
+<h4 id="data-file-formats-">Data file formats <a name="data-file-format"></a></h4>
+
+<p>Submit raw data in <a href="/dra/submission-e.html#run-data-files">fastq or bam</a>
+to DRA. Include barcode sequences.</p>
+
+<p>For 10x bam files without barcode sequences, submit fastq instead.
+Please see <a href="https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/mkfastq">Generating FASTQs with cellranger
+mkfastq</a></p>
+
+<h4 id="gea-experiment-type-">GEA Experiment Type <a name="experiment-type"></a></h4>
+
+<p>Select ‘RNA-seq of coding RNA from single cells’ or ‘RNA-seq of non
+coding RNA from single cells’. <a href="https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=1327621011">GEA Experiment
+Type</a></p>
+
+<h2 id="de-multiplexed-submission-">De-multiplexed submission <a name="de-multiplexed"></a></h2>
+
+<h3 id="biosample-">BioSample <a name="biosample"></a></h3>
+
+<p>Create a sample for each cell in BioSample and describe cell-specific
+information in sample attributes.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>*sample_name</th>
+      <th>…</th>
+      <th>single_cell_identifier</th>
+      <th>inferred_cell_type</th>
+      <th>single_cell_well_quality</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sample 1</td>
+      <td>…</td>
+      <td>cell 1</td>
+      <td>cell type A</td>
+      <td>OK</td>
+    </tr>
+    <tr>
+      <td>sample 2</td>
+      <td>…</td>
+      <td>cell 2</td>
+      <td>cell type B</td>
+      <td>OK</td>
+    </tr>
+    <tr>
+      <td>sample 3</td>
+      <td>…</td>
+      <td>cell 3</td>
+      <td>not applicable</td>
+      <td>2 cells</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="dra-">DRA <a name="multiplexed-dra"></a></h3>
+
+<p>Submit <a href="/dra/submission-e.html#run-data-files">fastq or bam</a>
+de-multiplexed for each cell (sample).</p>
+
+<h3 id="gea-">GEA <a name="de-multiplexed-gea"></a></h3>
+
+<p>Submit <a href="/gea/datafile-e.html#seq_proc">processed data files</a>
+de-multiplexed for each cell (sample).</p>
+
+<h2 id="multiplexed-submission-">Multiplexed submission <a name="multiplexed"></a></h2>
+
+<h3 id="biosample--1">BioSample <a name="biosample"></a></h3>
+
+<p>Create a sample for each library (usually contains hundreds to thousands
+of cells) in BioSample.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>*sample_name</th>
+      <th>…</th>
+      <th>tissue</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>library 1</td>
+      <td>…</td>
+      <td>liver</td>
+    </tr>
+    <tr>
+      <td>library 2</td>
+      <td>…</td>
+      <td>heart</td>
+    </tr>
+    <tr>
+      <td>library 3</td>
+      <td>…</td>
+      <td>brain</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="dra--1">DRA <a name="multiplexed-dra"></a></h3>
+
+<p>Submit <a href="/dra/submission-e.html#run-data-files">fastq or bam</a> including
+barcode sequences. For 10x bam files without barcode sequences, submit
+fastq (<a href="https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/mkfastq">Generating FASTQs with cellranger
+mkfastq</a>).</p>
+
+<h3 id="gea--1">GEA <a name="multiplexed-gea"></a></h3>
+
+<p>Since there is no information about the individual cells at the sample
+annotation or file level, <span class="red">include the analysis results, cell-specific
+attributes, read count matrix and barcode sequences in</span> <a href="/gea/datafile-e.html#seq_proc">processed data
+files</a>.</p>
+
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

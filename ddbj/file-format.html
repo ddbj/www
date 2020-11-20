@@ -1,0 +1,2724 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登録ファイル形式</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">登録ファイル形式</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/ddbj">ddbj</a>
+          </li>
+          <li>
+            <a href="">登録ファイル形式</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/ddbj/index.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/submission.html">Submission</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/submission.html">塩基配列の登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/web-submission.html">Web 版塩基配列登録システム</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/mss.html">Mass Submission System</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/update.html">登録データの修正・更新</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="http://ddbj.nig.ac.jp/arsa/?lang=ja">Search</a>
+      
+      <ul>
+        
+        <li>
+          <a href="http://getentry.ddbj.nig.ac.jp/top-j.html">getentry</a>
+        </li>
+        
+        <li>
+          <a href="http://ddbj.nig.ac.jp/arsa/?lang=ja">ARSA</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/flat-file.html">Flat file</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/features.html">Feature key の定義</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/qualifiers.html">Qualifier key の定義</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/organism.html">Organism qualifier に記載する生物名</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/location.html">Location の記述法</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/cds.html">タンパク質コード配列</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/geneticcode.html">The Genetic Codes</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/code.html">配列の記載に用いる略号</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/example.html">登録の見本</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/data-categories.html">Data categories</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/genome.html">Genome project のデータ登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/pseudohaplotype.html">Pseudohaplotype</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/wgs.html">WGS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/metagenome-assembly.html">メタゲノムアセンブリ</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/single-amplified-genome.html">Single amplified genome</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/con.html">CON</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/gss.html">GSS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/htg.html">HTG</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/environmental.html">Environmental sequence の登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/env.html">ENV</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tls.html">TLS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/transcriptome.html">Transcriptome Project のデータ登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tsa.html">TSA</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/est.html">EST</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/htc.html">HTC</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tpa.html">Third Party Data (TPA)</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/ja/index.html">FAQ</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/index-e.html">Other</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/patent-data.html">Patent</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/mga.html">MGA</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="配列ファイル">配列ファイル<a name="sequence"></a></h2>
+
+<p>配列ファイルは、全登録データの配列を FASTA に類似した形式で記述したテキストファイルです。 配列ファイルは、1つの配列データは、”&gt;” で始まる1行のヘッダ行と、2行目以降の実際のシーケンス文字列で構成されます。DDBJ では、エントリ間は配列情報終了フラグ (//) で区切ります。</p>
+
+<p>例: 配列ファイル</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;CLN01  &lt;-- 1件目のエントリ名
+ggacaggctgccgcaggagccaggccgggagcaggaagaggcttcgggggagccggagaa
+ctgggccagatgcgcttcgtgggcgaagcctgaggaaaaagagagtgaggcaggagaatc
+gcttgaaccccggaggcggaaccgcactccagcctgggcgacagagtgagactta
+//      &lt;-- 配列情報終了フラグ
+&gt;CLN02  &lt;-- 2件目のエントリ名
+ctcacacagatgcgcgcacaccagtggttgtaacagaagcctgaggtgcgctcgtggtca
+gaagagggcatgcgcttcagtcgtgggcgaagcctgaggaaaaaatagtcattcatataa
+atttgaacacacctgctgtggctgtaactctgagatgtgctaaataaaccctctt
+//      &lt;-- 配列情報終了フラグ
+</code></pre></div></div>
+
+<h3 id="書式と構文-">書式と構文 <a name="agp_format"></a></h3>
+
+<p>必ず、<a href="/ddbj/ume.html">UME</a> または <a href="/ddbj/parser.html">Parser</a> を用いて、配列ファイルとアノテーションファイルの書式をご確認ください。</p>
+
+<ul>
+  <li>ベクター，リンカー，アダプターなどの配列（technical
+readと呼びます）は必ず除去してください。ただし、ベクターなどの配列自体を報告する場合は、除去する必要はありません。</li>
+  <li>特殊なケースを除き，最初(5’端)と最後(3’端)の塩基は n にならないように，末端の n は除去してください。また、特に EST
+などの場合，シークエンサ出力をそのまま送付するのではなく、末端の信頼できない出力を削除するなど精査してください。</li>
+  <li>エントリ名は行頭の「&gt;」に続けて、 space, “ double-quote, = equal, | pipe, &gt;
+greater-than, [] angled brackets, \ back-slash を含まない半角英数字 32
+文字以内で記載してください。</li>
+  <li>エントリ名はエントリ毎にユニークな文字列を記載してください。clone 名，isolate
+名といった個々のエントリによって異なる名称の使用が一般的です。</li>
+  <li>配列ファイルと<a href="#annotation">アノテーションファイル</a>の各エントリは、同一のエントリ名により対応づけます。アノテーション情報と配列は、対応するエントリに同じエントリ名をつけ、同じ順番になるようにそれぞれ入力してください。入力されたエントリ順にアクセッション番号を発行いたします。</li>
+  <li>塩基配列には a，t，g，c
+以外にも、必要に応じて、各種<a href="/ddbj/code.html#nucleotide-1">核酸コード</a>が使用可能です。</li>
+  <li>終端子として配列情報終了フラグ(//)を必ず入力してください。</li>
+  <li>途中にスペース、空行が入らないようにしてください。</li>
+  <li><a href="/documents/data-categories.html#con">CON</a> に該当する場合は、配列ファイルは <a href="#agp">AGP
+ファイル</a>で代替することができます。</li>
+</ul>
+
+<h2 id="アノテーションファイル">アノテーションファイル<a name="annotation"></a></h2>
+
+<p>アノテーションファイルは、全登録データの登録者, REFERENCE、Feature/Qualifierの情報等を記述した、Entry, Feature, Location, Qualifier, Value の５列からなるタブ区切りテキストファイルです。<br />
+スクリプト、(MS Excel などの) 表計算ソフト、テキストエディタ等で作成が可能です。</p>
+
+<p>例:アノテーションファイル （<span class="red">入力必須項目</span>）</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#common">COMMON</a></td>
+      <td><span class="red">SUBMITTER</span></td>
+      <td> </td>
+      <td><span class="red">ab_name</span></td>
+      <td>Robertson,G.R.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ab_name</td>
+      <td>Mishima,H.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">contact</span></td>
+      <td>Hanako Mishima</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">email</span></td>
+      <td>mishima@ddbj.nig.ac.jp</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">phone</span></td>
+      <td>81-55-981-6853</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>fax</td>
+      <td>81-55-981-6853</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>phext</td>
+      <td>3207</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">institute</span></td>
+      <td>National Institute of Genetics</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>department</td>
+      <td>DNA Data Bank of Japan</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">country</span></td>
+      <td>Japan</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>state</td>
+      <td>Shizuoka</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">city</span></td>
+      <td>Mishima</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">street</span></td>
+      <td>Yata 1111</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">zip</span></td>
+      <td>411-8540</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><span class="red">REFERENCE</span></td>
+      <td> </td>
+      <td><span class="red">title</span></td>
+      <td>Mouse Genome Sequencing</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">ab_name</span></td>
+      <td>Robertson,G.R.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ab_name</td>
+      <td>Mishima,H</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">year</span></td>
+      <td>2017</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">status</span></td>
+      <td>Unpublished</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>COMMENT</td>
+      <td> </td>
+      <td>line</td>
+      <td>Please visit our website</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>line</td>
+      <td>URL: http://www.ddbj.nig.ac.jp/</td>
+    </tr>
+    <tr>
+      <td>CLN01</td>
+      <td><span class="red">source</span></td>
+      <td><span class="red">1..12297</span></td>
+      <td><span class="red">organism</span></td>
+      <td>Mus musculus</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">mol_type</span></td>
+      <td>genomic DNA</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>clone</td>
+      <td>PC0110</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>chromosome</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>CDS</td>
+      <td><span class="small_80">join(&lt;1..456,609..879,1070..1213)</span></td>
+      <td>product</td>
+      <td>protein kinase</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>codon_start</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>CLN02</td>
+      <td><span class="red">source</span></td>
+      <td><span class="red">1..12393</span></td>
+      <td><span class="red">organism</span></td>
+      <td>Mus musculus</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">mol_type</span></td>
+      <td>genomic DNA</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>clone</td>
+      <td>PC0210</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>chromosome</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>CDS</td>
+      <td>9365..9640</td>
+      <td>product</td>
+      <td>hypothetical protein</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="書式と構文">書式と構文</h3>
+
+<p>必ず、<a href="/ddbj/ume.html">UME</a> または <a href="/ddbj/parser.html">Parser</a>
+を用いて、配列ファイルとアノテーションファイルの書式をご確認ください。</p>
+
+<dl>
+  <dt>Entry</dt>
+  <dd><a href="#sequence">登録ファイル形式：配列ファイル</a>で示した配列ファイルと対応するエントリ名を入力してください。</dd>
+  <dd>エントリ名を入力後、次のエントリが始まる行までは、Entry カラムには何も入力しないでください。</dd>
+  <dt>Feature</dt>
+  <dd><a href="#biological_feature">Biological feature</a> と 独自に規定された DDBJ 登録用 feature の２つのタイプがあります。各 Feature の記載方法については以下で解説します。</dd>
+  <dd>Feature 入力後、次の Feature が始まる行までは、Feature カラムには何も入力しないでください。</dd>
+  <dt>Location</dt>
+  <dd><a href="#biological_feature">Biological feature</a> と <a href="#primary_contig">PRIMARY_CONTIG</a> で Feature の記載に隣接するカラムにのみ、記載が必要です。</dd>
+  <dt>Qualifier</dt>
+  <dd>各行に 1つ記載します。記載可能な Qualifier は Feature に依存します。詳細は以下で解説します。</dd>
+  <dt>Value</dt>
+  <dd>Qualifier に依存します。各 Qualifier の説明に従って記載してください。</dd>
+  <dt>その他</dt>
+  <dd>アノテーションファイルでは、空行が存在した時点でファイルの終わりと判断されます。従って、複数エントリを入力する場合は、登録する全てのエントリの入力が終わるまで、途中に空行を作らずに入力してください。</dd>
+</dl>
+
+<h3 id="biological-feature-記載に関する参照先-">Biological Feature 記載に関する参照先 <a name="describing"></a></h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>名称</th>
+      <th>更新日</th>
+      <th>備考</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/ddbj/feature-table.html">Feature Table Definition</a></td>
+      <td>2016/11/17</td>
+      <td>version 10.6</td>
+    </tr>
+    <tr>
+      <td><a href="/assets/files/pdf/ddbj/fq-j.pdf">Feature/Qualifier 対応一覧表</a></td>
+      <td>2016/11/09</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/example.html">登録の見本</a></td>
+      <td>2014/11/27</td>
+      <td><a href="/ddbj/flat-file.html">DDBJ フラットファイル</a>中の feature の記載例</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="共通情報-common">共通情報 COMMON<a name="common"></a></h3>
+
+<h4 id="common-の入力について-">COMMON の入力について <a name="common_entry"></a></h4>
+
+<ul>
+  <li>アノテーションファイルでは全てのエントリに共通な情報を入力するために COMMON というエントリ名を使用することができます。</li>
+  <li>COMMON エントリに記載された情報はデータベースに読み込まれる際に全てのエントリに反映されます。</li>
+  <li>通常 COMMON は SUBMITTER/REFERENCE/COMMENT 等で使用しますが, Feature
+以下(Feature, Location, Qualifier,
+Value)の情報が全てのエントリに共通であれば、<a href="#biological_feature">Biological
+feature</a> でも記載できます。</li>
+</ul>
+
+<h4 id="common-の活用-">COMMON の活用 <a name="use_common"></a></h4>
+
+<dl>
+  <dt>location に使用可能なメタ塩基番号’E’</dt>
+  <dd>例: COMMON に rRNA feature を記載
+
+    <table>
+      <thead>
+        <tr>
+          <th>Entry</th>
+          <th>Feature</th>
+          <th>Location</th>
+          <th>Qualifier</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>COMMON</td>
+          <td>rRNA</td>
+          <td>&lt;1..&gt;<strong>E</strong></td>
+          <td>product</td>
+          <td>16S rRNA</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+  <dd>
+    <p>配列長が異なるために Location が異なることを除けば、Feature 以下の Qualifier, Value の情報が全てのエントリで共通に記載可能なケース（例：rRNA 部分配列による系統解析など）があります。</p>
+  </dd>
+  <dd>そのような場合には、COMMON エントリに Feature を記載し location には、最後の塩基番号の代わりにメタ塩基番号として、<strong>E</strong> を記載することにより、全てのエントリに共通となる Feature を COMMON エントリに記載することが可能です。</dd>
+  <dt>clone, submitter_seqid, note, ff_definition に使用可能なメタ表記 ‘@@[entry]@@’</dt>
+  <dd>例: COMMON に source feature を記載
+
+    <table>
+      <thead>
+        <tr>
+          <th>Entry</th>
+          <th>Feature</th>
+          <th>Location</th>
+          <th>Qualifier</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>COMMON</td>
+          <td>source</td>
+          <td>1..<strong>E</strong></td>
+          <td>organism</td>
+          <td>Homo sapiens</td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td>mol_type</td>
+          <td>genomic DNA</td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td>submitter_seqid</td>
+          <td><strong>@@[entry]@@</strong></td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td>ff_definition</td>
+          <td><strong>@@[organism]@@</strong> DNA, <strong>@@[submitter_seqid]@@</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+  <dd>
+    <p>Location および clone 名や contig 名を除けば、Feature: source の Qualifier, Value の情報が全てのエントリで共通に記載可能なケース（例： EST, GSS, TSA, TLS, WGS, WGS scaffold (CON division)など）があります。</p>
+  </dd>
+  <dd>
+    <p>そのような場合、エントリ名に clone 名 または contig 名を使用する場合に限り、Feature: source を COMMON エントリに記載することが可能です。</p>
+
+    <ul>
+      <li>Location には、最後の塩基番号の代わりにメタ塩基番号として、<strong>E</strong>
+を記載します。</li>
+      <li>例に示した <strong>@@[entry]@@</strong>
+の形式で記載すると、配列ファイルから引用したエントリ名に置換されます。
+<strong>@@[entry]@@</strong> を記載は clone,
+submitter_seqid, note, ff_definition の Value に限定しています。</li>
+    </ul>
+  </dd>
+</dl>
+
+<h3 id="submitter-">SUBMITTER <a name="submitter"></a></h3>
+
+<p>例: アノテーションファイル内の SUBMITTER　（<span class="red">入力必須項目</span>）</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>COMMON</td>
+      <td><span class="red">SUBMITTER</span></td>
+      <td> </td>
+      <td><span class="red">ab_name</span></td>
+      <td>Robertson,G.R.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ab_name</td>
+      <td>Mishima,H.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>consrtm</td>
+      <td>Mouse Genome Consortium</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">contact</span></td>
+      <td>Hanako Mishima</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">email</span></td>
+      <td>mishima@ddbj.nig.ac.jp</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>url</td>
+      <td>http://www.ddbj.nig.ac.jp</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">phone</span></td>
+      <td>81-55-981-6853</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>fax</td>
+      <td>81-55-981-6853</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>phext</td>
+      <td>3207</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">institute</span></td>
+      <td>National Institute of Genetics</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>department</td>
+      <td>DNA Data Bank of Japan</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">country</span></td>
+      <td>Japan</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>state</td>
+      <td>Shizuoka</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">city</span></td>
+      <td>Mishima</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">street</span></td>
+      <td>Yata 1111</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">zip</span></td>
+      <td>411-8540</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>SUBMITTER で使用する Qualifier のリスト</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Qualifier</th>
+      <th>Value 使用可能文字(注意事項)</th>
+      <th>Value 文字上限数</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ab_name (登録者名)</td>
+      <td>英, .[period], ,[comma], -[hyphen], ‘ [apostrophe]</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>contact (コンタクトパーソン)</td>
+      <td>英, .[period], ,[comma], -[hyphen], ‘ [apostrophe],  [space] (first, middle, last name の順で間に space を入れて入力)</td>
+      <td>first(64),middle(128), last(64)</td>
+    </tr>
+    <tr>
+      <td>consrtm (コンソーシアム名)</td>
+      <td>英, 数,  [space], -[hyphen], ‘ [apostrophe], .[period], _[underscore], .[comma], ( ) # &amp; @ / ; : + *</td>
+      <td>255</td>
+    </tr>
+    <tr>
+      <td>email</td>
+      <td>英, 数, @, .[period], -[hyphen], _[underscore]</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td><url></url></td>
+      <td>[space] 以外</td>
+      <td>255</td>
+    </tr>
+    <tr>
+      <td>phone, fax, phext</td>
+      <td>数, -[hyphen] (国番号の頭に + はつけない)</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>institute, department</td>
+      <td>[back-slash], ` [back-quote] 以外</td>
+      <td>255</td>
+    </tr>
+    <tr>
+      <td>country, state</td>
+      <td>英, 数,  [space], -[hyphen], ‘[apostrophe], .[period], _[underscore], ,[comma], ( ) # &amp; @ / ; : + *</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>city</td>
+      <td>英, 数,  [space], -[hyphen], ‘[apostrophe], .[period], _[underscore], ,[comma], ( ) # &amp; @ / ; : + *</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>street</td>
+      <td>英, 数,  [space], -[hyphen], ‘[apostrophe], .[period], _[underscore], ,[comma], ( ) # &amp; @ / ; : + *</td>
+      <td>255</td>
+    </tr>
+    <tr>
+      <td>zip</td>
+      <td>英, 数, -[hyphen]</td>
+      <td>16</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="submitter-の書式-">SUBMITTER の書式 <a name="describing_submitter"></a></h4>
+
+<ul>
+  <li>SUBMITTER は各エントリに一件必ず入力していただく必要がありますが、全件共通の SUBMITTER を入力する場合には
+<a href="#common">COMMON</a> エントリに入力してください。<br />
+エントリ毎に異なる SUBMITTER を入力したい場合には個々のエントリに記載してください。なお、COMMON エントリに
+SUBMITTER を記載した場合は、他の全てのエントリで SUBMITTER を使用することはできません。</li>
+  <li>SUBMITTER の Qualifier: ab_name
+には複数の<a href="/ddbj/submission.html#submitter">登録者</a>を入力できます。DDBJ
+の<a href="/ddbj/flat-file.html">フラットファイル</a>には、ここで入力された順番に登録者が記載されます。複数の登録者の記載を強く推奨しています。<br />
+登録者の中から一名、コンタクトパーソン を Qualifier: contact で再度指定してください。contact の Value
+には、full name を記載してください。</li>
+  <li>
+    <p>Qualifier: ab_name の Value には、論文等の著者名に準ずる形式で、氏名の略記を記載してください。</p>
+
+    <dl>
+      <dt>形式:</dt>
+      <dd>last name[comma]first name の頭文字[period]middle name
+  の頭文字[period]</dd>
+      <dt>例:</dt>
+      <dd>Miyashita,Y.</dd>
+      <dd>Robertson,G.R.</dd>
+    </dl>
+
+    <p>形式によって (氏名にハイフンを含む等)、Parser によるチェックで WAR
+レベルのメッセージが表示されることがありますが、記述内容に問題がない場合は、そのまま記載可能です。</p>
+  </li>
+  <li>ab_name 以外の Qualifier の Value
+には、コンタクトパーソンの情報をそれぞれ一件ずつしか入力できません。複数の研究機関の情報を入力したい場合には、別途、ご連絡ください。</li>
+</ul>
+
+<h3 id="reference-">REFERENCE <a name="reference"></a></h3>
+
+<p>例: アノテーションファイル内の REFERENCE （<span class="red">入力必須項目</span>）</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td><span class="red">REFERENCE</span></td>
+      <td> </td>
+      <td><span class="red">title</span></td>
+      <td>Sequence and analysis of mouse ch.8</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">ab_name</span></td>
+      <td>Robertson,G.R.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ab_name</td>
+      <td>Mishima,H.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">status</span></td>
+      <td>Published</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">year</span></td>
+      <td>2003</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>journal</td>
+      <td>Nature</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>volume</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>start_page</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>end_page</td>
+      <td>20</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>REFERENCE で使用する Qualifier のリスト</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Qualifier</th>
+      <th>Value 使用可能文字(注意事項)</th>
+      <th>Value 文字上限数</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>title (論文のタイトル)</td>
+      <td>[back-slash], ` [back-quote] 以外</td>
+      <td>255</td>
+    </tr>
+    <tr>
+      <td>ab_name (著者名)</td>
+      <td>英, .[period], ,[comma], -[hyphen], ‘ [apostrophe]</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>consrtm (コンソーシアム名)</td>
+      <td>英, 数, [space], -[hyphen], ‘ [apostrophe], .[period], _[underscore],<br />,[comma], ( ) # &amp; @ / ; : + *</td>
+      <td>255</td>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td>以下の何れか<br />Unpublished, In press, Published</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>year</td>
+      <td>数(西暦4桁)</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>journal</td>
+      <td>[back-slash], ` [back-quote] 以外 (PubMed type abbreviation を入力)</td>
+      <td>128</td>
+    </tr>
+    <tr>
+      <td>volume, start_page, end_page</td>
+      <td>英, 数, -[hyphen]</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="reference-の書式-">REFERENCE の書式 <a name="describing_reference"></a></h4>
+
+<ul>
+  <li>REFERENCE は各エントリに最低１つ、必須となります。</li>
+  <li>
+    <dl>
+      <dt>Qualifier: ab_name の Value には、論文等の著者名に準ずる形式で、氏名の略記を記載してください。</dt>
+      <dt>形式:</dt>
+      <dd>last name[comma]first name の頭文字[period]middle name の頭文字[period]</dd>
+      <dt>例:</dt>
+      <dd>Miyashita,Y.</dd>
+      <dd>Robertson,G.R.</dd>
+    </dl>
+
+    <p>形式によって (氏名にハイフンを含む等)、Parser によるチェックで WAR
+レベルのメッセージが表示されることがありますが、記述内容に問題がない場合は、そのまま記載可能です。</p>
+  </li>
+  <li>status が “In Press” の場合は、Qualifier: journal も必須となります。</li>
+  <li>status が “Published” の場合は、Qualifier: journal, volume, start_page,
+end_page も必須となります。</li>
+  <li>今後論文に投稿する予定のない場合にも、status を “Unpublished” として REFERENCE を入力してください。</li>
+  <li>journal には雑誌の PubMed type abbreviation を入力して下さい。</li>
+  <li>REFERENCE を複数入力する場合には、登録する塩基配列を掲載する予定の論文、あるいは、既に掲載されている論文情報を
+REFERENCE の筆頭に入力し、参考文献はそれ以降に入力してください。</li>
+  <li>登録する塩基配列に関する REFERENCE 情報が全件に共通する場合は、<a href="#common">COMMON</a>
+エントリに入力してください。エントリ毎に異なる参考文献の情報を入力したい場合には個々のエントリに記載してください。</li>
+  <li>COMMON エントリと個々のエントリの双方に REFERENCE を入力した場合には、COMMON
+の情報から順に、フラットファイル上に反映されます。</li>
+</ul>
+
+<h3 id="date-">DATE <a name="date"></a></h3>
+
+<p>例: アノテーションファイル内の DATE と hold_date</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>COMMON</td>
+      <td>DATE</td>
+      <td> </td>
+      <td>hold_date</td>
+      <td>20181125</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="date-の書式-">DATE の書式 <a name="describing_date"></a></h4>
+
+<ul>
+  <li>DATE、hold_date は必ず <a href="#common">COMMON</a>
+エントリに入力してください。公開予定日が異なる場合には、ファイルを公開予定日毎に分けて作成してください。</li>
+  <li>DATE にはデータの公開予定日(hold_date)を年月日の順で、半角数字 8 桁(例：20181125)で入力してください。</li>
+  <li>- [hyphen] や / [slash] などの区切り文字を使用した場合はエラーとなります。</li>
+  <li>登録作業後、データの即時公開をご希望の場合には、DATE を入力しないでください。</li>
+  <li>公開予定日をご指定いただいた場合は、<a href="/documents/data-release-policy.html">データ公開原則</a>に基づいて、公開作業を行ないます。</li>
+</ul>
+
+<h3 id="commentst_comment-">COMMENT/ST_COMMENT <a name="comment"></a></h3>
+
+<p>例: アノテーションファイル内の COMMENT と ST_COMMENT</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>COMMENT</td>
+      <td> </td>
+      <td>line</td>
+      <td>This clone was obtained at our laboratory.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>COMMENT</td>
+      <td> </td>
+      <td>line</td>
+      <td>Please visit our web site.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>line</td>
+      <td>URL:http://www.ddbj.nig.ac.jp</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>ST_COMMENT</td>
+      <td> </td>
+      <td>tagset_id</td>
+      <td>Genome-Assembly-Data</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Assembly Method</td>
+      <td>GS De Novo Assembler v. 2.0</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Assembly Name</td>
+      <td>Mmus_1.0</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Genome Coverage</td>
+      <td>50x</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Sequencing Technology</td>
+      <td>454 GS FLX; ABI 3730</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><span class="red">※</span> COMMENT には “一般 COMMENT” と “structured
+COMMENT” があります。詳細は以下をご覧ください。</p>
+
+<h4 id="comment-一般-comment-の書式-">COMMENT (一般 COMMENT) の書式 <a name="describing_comment"></a></h4>
+
+<ul>
+  <li>一般 COMMENT は必要に応じて登録者が自由な記述形式で内容を入力することができます。</li>
+  <li>COMMENT は <a href="/ddbj/flat-file.html">DDBJ フラットファイル</a>上では 60
+文字(スペースを含む)で自動的に改行されますが、任意の位置で改行したい場合には、Qualifier:
+line を指定して改行位置で Value を分けてください。</li>
+  <li>Qualifier: line の Value には、 [back-slash] 以外の文字を使用可能です。</li>
+  <li>全件共通の COMMENT は <a href="#common">COMMON</a> エントリに入力してください。エントリ毎に異なる COMMENT
+を入力する場合には個々のエントリに記載してください。</li>
+  <li>内容の異なる COMMENT を入力する場合には、COMMENT と COMMENT の間に空行を入れるため、COMMENT
+Feature をそれぞれに作成してください。</li>
+  <li>COMMON エントリと個々のエントリの双方に COMMENT を入力した場合には、COMMON
+から順に、フラットファイル上に反映されます。また、複数の
+COMMENT を入力した場合は、アノテーションファイルに入力した順番でフラットファイル上に反映されます。</li>
+  <li><a href="#est">EST の場合</a>、特殊な COMMENT の記載が必要なことがあります。</li>
+</ul>
+
+<h4 id="st_comment-structured-comment-の書式-">ST_COMMENT (structured COMMENT) の書式 <a name="describing_st_comment"></a></h4>
+
+<ul>
+  <li>
+    <p>ST_COMMENT は一定のルールに従って構造化された COMMENT (<a href="/ddbj/flat-file.html#Comment">structured
+COMMENT</a>) を記載するための feature です。</p>
+  </li>
+  <li>
+    <p>ST_COMMENT はユーザー定義も可能ですが、<a href="/ddbj/genome.html">Genome Project</a>
+(<a href="/ddbj/wgs.html">WGS</a> も含む)、<a href="/ddbj/transcriptome.html">Transcriptome
+Project</a> (<a href="/ddbj/tsa.html">TSA</a> も含む)
+などの登録には既定書式があり、記載する必要があります。</p>
+  </li>
+  <li>
+    <p>ST_COMMENT はデータセット名 (tagset_id) と項目名 (ユーザー定義 Qualifier) 、各項目の値
+(Value)で構成されます。</p>
+  </li>
+  <li>
+    <p>Structured COMMENT の開始行ではQualifier に tagset_id 、Value に COMMENT
+のタイトルを入力します。</p>
+
+    <p>Genome Project の場合は tagset_id に Genome-Assembly-Data を入力します。<br />
+Transcriptome Project の場合は tagset_id に Assembly-Data を入力します。</p>
+  </li>
+  <li>
+    <p>項目名を Qualifier として入力します。各項目に対応する具体的な内容を Value に入力します。</p>
+
+    <p>Genome-Assembly-Data で使用する Qualifier のリスト
+（<span class="red">入力必須項目</span>）</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Qualifier</th>
+          <th>意味・内容</th>
+          <th>備考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="red">Assembly Method</span></td>
+          <td>アセンブルに使用したソフトの名前とそのバージョン。</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>Assembly Name</td>
+          <td>ゲノムアセンブリの名称・バージョン。 真核生物の場合、必須。</td>
+          <td>推奨書式： [organism の種名 (or 一般名)] + [version 数値] （例；Btau_4.0）</td>
+        </tr>
+        <tr>
+          <td><span class="red">Genome Coverage</span></td>
+          <td>ゲノム配列決定の深度、被覆度換算。</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td><span class="red">Sequencing Technology</span></td>
+          <td>配列解析に使用されたシークエンサー。</td>
+          <td> </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Assembly-Data で使用する Qualifier のリスト （<span class="red">入力必須項目</span>）</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Qualifier</th>
+          <th>意味・内容</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="red">Assembly Method</span></td>
+          <td>アセンブルに使用したソフトの名前とそのバージョン。必須。</td>
+        </tr>
+        <tr>
+          <td>Assembly Name</td>
+          <td>アセンブリの名称・バージョン。</td>
+        </tr>
+        <tr>
+          <td>Coverage</td>
+          <td>配列決定の深度、被覆度換算。</td>
+        </tr>
+        <tr>
+          <td><span class="red">Sequencing Technology</span></td>
+          <td>配列解析に使用されたシークエンサー。必須。</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <p>記載の可否や内容等については登録毎に個別に対応しますので、MSS の担当者にお問い合わせください。</p>
+  </li>
+</ul>
+
+<h3 id="biological-feature">Biological Feature<a name="biological_feature"></a></h3>
+
+<p>例: アノテーションファイル内の source と CDS feature　（<span class="red">入力必須項目</span>）</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td><span class="red">source</span></td>
+      <td><span class="red">1..12297</span></td>
+      <td><span class="red">organism</span></td>
+      <td>Mus musculus</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">mol_type</span></td>
+      <td>genomic_DNA</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>chromosome</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>clone</td>
+      <td>PC0110</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><span class="red">CDS</span></td>
+      <td><span class="red">join(&lt;1..456,609..879,1070..1213)</span></td>
+      <td><span class="red">product</span></td>
+      <td>protein kinase</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>codon_start</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>rRNA</td>
+      <td>1279..3000</td>
+      <td>product</td>
+      <td>18S rRNA</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>CDS</td>
+      <td>complement(join(3213..4981,9901..11677))</td>
+      <td>gene</td>
+      <td>tbpA</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>product</td>
+      <td>TATA-box binding protein</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><span class="red">※</span> Biological feature の定義、記述方法の詳細については、<a href="/ddbj/feature-table.html">Feature
+Table Definition</a>をご参照ください。</p>
+
+<h4 id="featurelocationqualifier-の書式-">Feature/Location/Qualifier の書式 <a name="#describing_feature"></a></h4>
+
+<ul>
+  <li><a href="/ddbj/feature-table.html">Feature Table Definition</a> では、各 Qualifier の前に
+/ [slash] が記述されておりますが、アノテーションファイルでは / を入力しないでください。</li>
+  <li>source と organism、mol_type は各エントリに最低１つ、必須となります。</li>
+  <li>Location の記載ルールは、<a href="/ddbj/location.html">Location の記述法</a>を ご参照ください。</li>
+  <li>各 Feature で使用可能な Qualifier は <a href="/assets/files/pdf/ddbj/fq-j.pdf">Feature/Qualifier
+対応表</a> にて確認できます。 一部の Feature には、入力必須
+Qualifier が指定されています。 対象の Feature で、Mandatory qualifier
+と指定されているものは必ず入力してください。 大文字と小文字の区別, _
+[underscore] の使用も対応表の表記に従ってください。</li>
+  <li>あわせて、<a href="#sample">アノテーションファイルのサンプル</a> と <a href="/ddbj/example.html">登録の見本</a>も
+ご参照ください。</li>
+  <li>CDS の記載に際しましては、<a href="/ddbj/cds.html">タンパク質コード配列; CDS feature について</a>を
+ご参照ください。</li>
+  <li>CDS feature を含むデータは、必ず、<a href="/ddbj/ume.html">UME</a> または
+<a href="/ddbj/transchecker.html">transChecker</a> を用いてアミノ酸翻訳をご確認ください。</li>
+</ul>
+
+<h4 id="value-の書式-">Value の書式 <a name="#describing_value"></a></h4>
+
+<ul>
+  <li>使用可能な文字種は Qualifier に依存します。詳細は <a href="/ddbj/feature-table.html">Feature Table
+Definition</a>および、<a href="/assets/files/pdf/ddbj/fq-j.pdf">Feature/Qualifier
+の対応一覧表</a>をご参照ください。</li>
+  <li>Value type に従い、各 Qualifier で指定されている文字種を使用して、正しく入力してください。</li>
+</ul>
+
+<h3 id="division">DIVISION<a name="division"></a></h3>
+
+<p>DIVISION は、登録データが <a href="/documents/data-categories.html#con">CON</a> /
+<a href="/documents/data-categories.html#env">ENV</a> /
+<a href="/documents/data-categories.html#est">EST</a> /
+<a href="/documents/data-categories.html#est">GSS</a> /
+<a href="/documents/data-categories.html#est">HTC</a> /
+<a href="/documents/data-categories.html#est">HTG</a> /
+<a href="/documents/data-categories.html#est">STS</a> /
+<a href="/documents/data-categories.html#env">SYN</a> /
+<a href="/documents/data-categories.html#tsa">TSA</a> のいずれかに該当することを示します。</p>
+
+<p>例: アノテーションファイル内の DIVISION</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>COMMON</td>
+      <td>DIVISION</td>
+      <td> </td>
+      <td>division</td>
+      <td>EST</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="division-の書式-">DIVISION の書式 <a name="DIVISION_の書式"></a></h4>
+
+<ul>
+  <li>Qualifier : division の Value にdivision
+の名称を示すアルファベット３文字を大文字で入力してください。</li>
+  <li>DIVISION は、原則として <a href="#common">COMMON</a> エントリに入力してください。</li>
+</ul>
+
+<h3 id="datatype">DATATYPE<a name="datatype"></a></h3>
+
+<p>DATATYPE は、登録データが <a href="/ddbj/wgs.html">WGS</a>, <a href="/ddbj/tls.html">TLS</a>,
+<a href="/ddbj/tpa.html">TPA</a>, TPA-WGS の何れかに該当することを示します。</p>
+
+<p>例: アノテーションファイル内の DATATYPE</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>COMMON</td>
+      <td>DATATYPE</td>
+      <td> </td>
+      <td>type</td>
+      <td>WGS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="datatype-の書式-">DATATYPE の書式 <a name="DATATYPE_の書式"></a></h4>
+
+<ul>
+  <li>Qualifier: type の Value に WGS, TLS, TPA, TPA-WGS の何れかを入力してください。</li>
+  <li>DATATYPE は <a href="#common">COMMON</a> エントリに入力してください。</li>
+</ul>
+
+<h3 id="keyword-">KEYWORD <a name="keyword"></a></h3>
+
+<p>KEYWORD には、<a href="#division">DIVISION</a> と <a href="#datatype">DATATYPE</a>
+で示されたデータ種別を基本に、細分化した情報,
+実験手法に関する情報などを、原則として、規定値で記載します。<br />
+INSDC が合意した KEYWORD 名と規定値、並びに各 KEYWORD 名の定義につきましては、<a href="/ddbj/keyword.html">INSDC agreed
+methodological keywords</a>をご参照ください。</p>
+
+<p>例: アノテーションファイル内の KEYWORD</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td><span class="font-bold">KEYWORD</span></td>
+      <td> </td>
+      <td><span class="font-bold">keyword</span></td>
+      <td><span class="font-bold">ENV</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>データ種別ごとの keyword の Value<span class="red">入力必須項目</span></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>データ種別</th>
+      <th>keyword の Value</th>
+      <th>注意事項</th>
+    </tr>
+  </thead>
+  <tbody>           
+    <tr>
+      <td><a href="/ddbj/wgs.html">WGS</a></td>
+      <td><span class="red">WGS</span></td>
+      <td>
+      <a href="#wgs_con">WGS, scaffold CON の場合</a> もご参照ください。</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/env.html">ENV</a></td>
+      <td><span class="red">ENV</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2"><a href="/ddbj/est.html">EST</a></td>
+      <td><span class="red">EST</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>その他</td>
+      <td>
+      <a href="#est">EST の場合</a> 参照</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/htc.html">HTC</a></td>
+      <td>
+      <span class="red">HTC</span>, その他</td>
+      <td>その他については、登録毎にご連絡いたします。</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/htg.html">HTG</a></td>
+      <td>
+      <span class="red">HTG</span>, <a href="#htg">その他</a>
+      </td>
+      <td>
+      <a href="/documents/data-categories.html#est">phase</a> に依存、登録毎にご連絡いたします。</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/gss.html">GSS</a></td>
+      <td><span class="red">GSS</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>STS</td>
+      <td><span class="red">STS</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2"><a href="/ddbj/tpa.html">TPA</a></td>
+      <td><span class="red">TPA, Third Party Data</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>
+      <span class="red">TPA:inferential</span> or <span class="red">TPA:experimental</span>
+      </td>
+      <td>どちらか一方が必須</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/tsa.html">TSA</a></td>
+      <td><span class="red">TSA, Transcriptome Shotgun Assembly</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/tls.html">TLS</a></td>
+      <td><span class="red">TLS, Targeted Locus Study</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>その他</td>
+      <td></td>
+      <td>登録毎にご連絡いたします。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="keyword-の書式-">KEYWORD の書式 <a name="KEYWORD_の書式"></a></h4>
+
+<ul>
+  <li>Qualifier: keyword の Value に該当する規定値を入力してください。</li>
+  <li>詳細な記載方法に関しましては、登録毎にご連絡いたします。</li>
+</ul>
+
+<h6 id="wgs-scaffold-con-の場合">WGS, scaffold CON の場合<a name="wgs_con"></a></h6>
+
+<ul>
+  <li>
+    <p>WGS や WGS エントリを primary エントリに引用した scaffold 配列（CON
+エントリ）では、登録される塩基配列の完成度を示すため、次のいずれかを
+KEYWORD に記載してください。</p>
+
+    <ul>
+      <li>STANDARD_DRAFT</li>
+      <li>HIGH_QUALITY_DRAFT</li>
+      <li>IMPROVED_HIGH_QUALITY_DRAFT</li>
+      <li>NON_CONTIGUOUS_FINISHED</li>
+    </ul>
+
+    <p>例: WGS draft genome（<span class="red">入力必須項目</span>）</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Entry</th>
+          <th>Feature</th>
+          <th>Location</th>
+          <th>Qualifier</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> </td>
+          <td><span class="red">KEYWORD</span></td>
+          <td> </td>
+          <td><span class="red">keyword</span></td>
+          <td><span class="red">WGS</span></td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td><span class="red">keyword</span></td>
+          <td><span class="red">STANDARD_DRAFT</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h6 id="est-の場合">EST の場合<a name="est"></a></h6>
+  </li>
+  <li>
+    <p>EST では、EST に加えて、以下のいずれかを keyword に必ず記載してください。</p>
+
+    <ul>
+      <li>5’ EST の場合 — 5’-end sequence (5’-EST)</li>
+      <li>3’ EST の場合 — 3’-end sequence (3’-EST)</li>
+      <li>上記を特定できない場合 — unspecified EST</li>
+    </ul>
+
+    <p>例: 5’ EST（<span class="red">入力必須項目</span>）</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Entry</th>
+          <th>Feature</th>
+          <th>Location</th>
+          <th>Qualifier</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> </td>
+          <td><span class="red">KEYWORD</span></td>
+          <td> </td>
+          <td><span class="red">keyword</span></td>
+          <td><span class="red">EST</span></td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td><span class="red">keyword</span></td>
+          <td><span class="red">5’-end sequence (5’-EST)</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <p>3’ EST では、登録される塩基配列が anti-sense 鎖側、sense 鎖側のどちらであるかを示すため、次のいずれかを
+<a href="#comment">COMMENT</a> に記載してください。</p>
+
+    <p>例: anti-sense 鎖の登録（<span class="red">入力必須項目</span>）</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Entry</th>
+          <th>Feature</th>
+          <th>Location</th>
+          <th>Qualifier</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> </td>
+          <td><span class="red">COMMENT</span></td>
+          <td> </td>
+          <td><span class="red">line</span></td>
+          <td><span class="red">3’-EST sequences are presented as anti-sense strand.</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>例: sense 鎖の登録（<span class="red">入力必須項目</span>）</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Entry</th>
+          <th>Feature</th>
+          <th>Location</th>
+          <th>Qualifier</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> </td>
+          <td><span class="red">COMMENT</span></td>
+          <td> </td>
+          <td><span class="red">line</span></td>
+          <td><span class="red">3’-EST sequences are presented as sense strand.</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<h6 id="htg-の場合">HTG の場合<a name="htg"></a></h6>
+
+<ul>
+  <li>
+    <p>HTG では、その配列決定の段階を示す keyword の記載を推奨しています。</p>
+
+    <p>例I: 向きが不明な piece を含む場合（<span class="red">入力必須項目</span>）</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Entry</th>
+          <th>Feature</th>
+          <th>Location</th>
+          <th>Qualifier</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> </td>
+          <td><span class="red">KEYWORD</span></td>
+          <td> </td>
+          <td><span class="red">keyword</span></td>
+          <td><span class="red">HTG</span></td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td><span class="red">keywrod</span></td>
+          <td><span class="red">HTGS_PHASE1</span></td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td><span class="red">keyword</span></td>
+          <td><span class="red">HTGS_DRAFT</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>例 II: 向きが不明な piece が含まない場合（<span class="red">入力必須項目</span>）</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Entry</th>
+          <th>Feature</th>
+          <th>Location</th>
+          <th>Qualifier</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> </td>
+          <td><span class="red">KEYWORD</span></td>
+          <td> </td>
+          <td><span class="red">keyword</span></td>
+          <td><span class="red">HTG</span></td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td><span class="red">keyword</span></td>
+          <td><span class="red">HTGS_DRAFT</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<h3 id="dblink-">DBLINK <a name="dblink"></a></h3>
+
+<p>DBLINK は、 BioProject ID、BioSample ID、Sequence Read Archive (DRA/ERA/SRA) 他, 特定データベースへのリンクを記載します。</p>
+
+<p>例: アノテーションファイル内の DBLINK（<span class="red">入力必須項目</span>）</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td><span class="red">DBLINK</span></td>
+      <td> </td>
+      <td><span class="red">project</span></td>
+      <td><span class="red">PRJDB12345</span></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">biosample</span></td>
+      <td><span class="red">SAMD90000000</span></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">sequence read archive</span></td>
+      <td><span class="red">DRR999000</span></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">sequence read archive</span></td>
+      <td><span class="red">DRR999001</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="dblink-の書式">DBLINK の書式<a name="DBLINK_の書式"></a></h4>
+
+<ul>
+  <li>登録データが BioProject Database、BioSample Database に登録されている場合は、Qualifier:
+project の Value に BioProject ID、Qualifier: biosample の Value に
+BioSample ID を記載してください。</li>
+  <li>登録データが次世代シーケンサ由来のアセンブルで、raw reads が Sequence Read Archive
+に登録されている場合、Qualifier: sequence read archive の
+Value に対応する <a href="/documents/prefix.html#dra">Run データのアクセッション番号</a>を入力してください。</li>
+  <li><a href="/bioproject/index.html">BioProject Database</a>, <a href="/biosample/index.html">BioSample
+Database</a>, <a href="/dra/index.html">Sequence Read
+Archive</a> もご参照ください。</li>
+</ul>
+
+<h3 id="locus_tag-">locus_tag <a name="locus_tag"></a></h3>
+
+<p>アノテーションが付加された全ゲノム規模の登録に関しましては、タンパク質産物
+(<a href="/ddbj/cds.html">CDS</a>)、あるいは、転写産物(rRNA, tRNA など)を示す
+<a href="#biological_feature">Biological feature</a> に
+<a href="/ddbj/locus_tag.html">locus_tag</a> を付加することを推奨しています。<br />
+locus_tag prefix は事前に <a href="/bioproject/index.html">BioProject Database</a> で
+BioProject ID を申請する際に取得して下さい。</p>
+
+<h3 id="source-ff_definition-">source: ff_definition <a name="source"></a></h3>
+
+<p>ff_definition は、The DDBJ/EMBL/GenBank Feature Table: Definition
+には定義されていない DDBJ 登録専用 Qualifier
+です。必要な場合にのみ、１エントリに１つ記載します。</p>
+
+<p>例: アノテーションファイル内の ff_definition</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>source</td>
+      <td>1..516</td>
+      <td>organism</td>
+      <td>Mus musculus</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>mol_type</td>
+      <td>mRNA</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ff_definition</td>
+      <td><strong>@@[organism]@@</strong> mRNA, clone: <strong>@@[clone]@@</strong></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>clone</td>
+      <td>PC0110</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>ff_definition 記述フォーマット</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>データ種別</th>
+      <th>ff_definition記述フォーマット</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/ddbj/wgs.html">WGS</a></td>
+      <td>@@[organism]@@ @@[strain]@@ DNA, @@[submitter_seqid]@@, [other information]</td>
+    </tr>
+    <tr>
+      <td>BAC/YAC genomic clones in unfinished phase (<a href="/ddbj/htg.html">HTG</a>)</td>
+      <td>@@[organism]@@ DNA, chromosome @@[map]@@, [BAC/YAC] clone: @@[clone]@@, *** SEQUENCING IN PROGRESS ***</td>
+    </tr>
+    <tr>
+      <td>BAC/YAC genomic clones in finished phase</td>
+      <td>@@[organism]@@ DNA, chromosome @@[map]@@, [BAC/YAC] clone: @@[clone]@@</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/est.html">EST</a></td>
+      <td>@@[organism]@@ mRNA, clone: @@[clone]@@, [other information]</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/est.html">EST</a></td>
+      <td>@@[organism]@@ cDNA, clone: @@[clone]@@, [other information]</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/gss.html">GSS</a></td>
+      <td>@@[organism]@@ DNA, clone: @@[clone]@@, [other information]</td>
+    </tr>
+    <tr>
+      <td>STS</td>
+      <td>@@[organism]@@ DNA, @@[map]@@, [marker name], sequence tagged site</td>
+    </tr>
+    <tr>
+      <td>その他</td>
+      <td>登録毎にご連絡いたします。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="source-ff_definition-の書式-">source: ff_definition の書式 <a name="source__ff_definition_の書式"></a></h4>
+
+<ul>
+  <li><a href="#biological_feature">Biological feature</a> である source に Qualifier:
+ff_definition を入力します。</li>
+  <li>ff_definition の記載内容は、DDBJ <a href="/ddbj/flat-file.html">フラットファイル</a> において
+DEFINITION 行に反映されます。詳細は<a href="#sample">サンプルとフラットファイルとの対応</a> をご参照ください。</li>
+  <li>ff_definition の Value には、通常、同じ source feature 内にある他の Qualifier から
+Value を引用することが多いため、引用のためのメタ表記を用意しております。例に示したように
+<strong>@@[organism]@@</strong>,
+<strong>@@[clone]@@</strong> の形式で、Value を引用する Qualifier
+の名称を <strong>@@[</strong> と
+<strong>]@@</strong> で括り記載しておきますと、DEFINITION 行に反映する際に対象
+Value に置換されます。</li>
+  <li>上記表に示した記述フォーマットを基本としますが、ff_definition の詳細な記載方法に関しましては、登録毎にご連絡いたします。</li>
+</ul>
+
+<h3 id="assembly_gap-sequencing-gap-region-">assembly_gap: Sequencing Gap Region <a name="assembly_gap"></a></h3>
+
+<p><a href="/ddbj/htg.html">HTG</a> に代表される大規模ゲノム配列やESTアセンブルによるトランスクリプトーム
+(<a href="/ddbj/tsa.html">TSA</a>) 配列の登録などにおいて、アセンブル途上、難読領域であるなどの理由により生じる
+sequencing gap を示すために配列ファイルでは、配列中に ‘n’ を記載します。このとき、アノテーションファイルでは、その
+sequencing gap 領域を下記の要領で、assembly_gap feature を用いて示す必要があります。</p>
+
+<p>例: アノテーションファイル内の assembly_gap（<span class="red">入力必須項目</span>）</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>assembly_gap</td>
+      <td>101..200</td>
+      <td>estimated_length</td>
+      <td><span class="red">unknown</span></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>gap_type</td>
+      <td><span class="red">within scaffold</span></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>linkage_evidence</td>
+      <td><span class="red">paired-ends</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="assembly_gap-sequencing-gap-region-の書式-">assembly_gap: Sequencing Gap Region の書式 <a name="assembly_gap__Sequencing_Gap_Region_の書式"></a></h4>
+
+<ul>
+  <li>assembly_gap feature は Biological feature の１つですが、特殊な書式になります。</li>
+  <li>assembly_gap では、location に join, order, complement を使用することはできません。</li>
+</ul>
+
+<h6 id="長さが不明の場合">長さが不明の場合</h6>
+
+<p>長さが判明していないギャップ領域については、登録者によって指定された一律の長さ (1000 bp未満のreasonableな長さ) の ‘n’
+で記述する規則となっております。<br />
+また、Qualifier: estimated_length で Value に unknown と記載します。<br />
+但し、CON divisionではない transcriptome エントリ (TSA division など) には、Value に
+unknown を記載することができません。</p>
+
+<h6 id="長さが予測されている場合">長さが予測されている場合</h6>
+
+<p>長さが判明しているギャップ領域については、配列の相当位置に推定される長さの ‘n’ で記述する規則となっております。 また、Qualifier:
+estimated_length で Value に known と記載します。</p>
+
+<h3 id="topology-">TOPOLOGY <a name="topology"></a></h3>
+
+<p>TOPOLOGY は登録塩基配列全体の形状が環状で、最初の塩基と最後の塩基が実際には連続している場合に記載する必要があります。<br />
+例：環状ウイルスゲノムの全長など</p>
+
+<p>例: アノテーションファイル内の TOPOLOGY</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>TOPOLOGY</td>
+      <td> </td>
+      <td>circular</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="topology-の書式-">TOPOLOGY の書式 <a name="TOPOLOGY_の書式"></a></h4>
+
+<ul>
+  <li>DDBJ <a href="/ddbj/flat-file.html">フラットファイル</a>では、topology は <a href="/ddbj/flat-file.html#Locus">LOCUS 行</a>に反映されます。詳細は<a href="#sample">アノテーションファイルのサンプル</a>を参照してください。</li>
+</ul>
+
+<h3 id="tpatsa-primary_contig-プライマリーエントリ引用">TPA/TSA: PRIMARY_CONTIG プライマリーエントリ引用<a name="primary_contig"></a></h3>
+
+<p>PRIMARY_CONTIG, entry, および primary_bases
+は、プライマリーエントリからの配列引用情報を記載するために設けられた
+TPA/TSA データ登録専用の Feature, Qualifier です。</p>
+
+<p>例: アノテーションファイル内の PRIMARY_CONTIG</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>PRIMARY_CONTIG</td>
+      <td>1..438</td>
+      <td>entry</td>
+      <td>ZZ000010.1</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>primary_bases</td>
+      <td>1..438</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>PRIMARY_CONTIG</td>
+      <td>377..696</td>
+      <td>entry</td>
+      <td>ZZ000011.1</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>primary_bases</td>
+      <td>1..320</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>complement</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>PRIMARY_CONTIG</td>
+      <td>590..1191</td>
+      <td>entry</td>
+      <td>ZZ000022.0</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>primary_bases</td>
+      <td>1..601</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>PRIMARY_CONTIG feature で使用可能な qualifier</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Qualifier</th>
+      <th>Value 記述時の注意事項</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>entry</td>
+      <td>引用するエントリのアクセッション番号を(バージョン番号とともに)入力する</td>
+    </tr>
+  <tr>
+    <td>primary_bases</td>
+    <td>引用したプライマリーシークエンスの位置情報<br />各配列の領域を入力する 例) 1..500</td>
+  </tr>
+    <tr>
+      <td>complement</td>
+      <td>引用するエントリが相補鎖である場合に入力が必要</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="tpatsa-primary_contig-プライマリーエントリ引用-の書式-">TPA/TSA: PRIMARY_CONTIG プライマリーエントリ引用 の書式 <a name="TPA/TSA__PRIMARY_CONTIG_プライマリーエントリ引用_の書式"></a></h4>
+
+<ul>
+  <li>
+    <p><a href="#datatype">DATATYPE/type</a> で TPA、もしくは <a href="#division">DIVISION/division</a> で TSA を指定しておく必要があります。</p>
+  </li>
+  <li>
+    <p>PRIMARY_CONTIG には、引用後の結果として配列(TPA/TSA)上の位置情報、および、引用したプライマリーシークエンスの(バージョンの付いた)アクセッション番号とその位置情報を必ず入力していただきます。</p>
+  </li>
+  <li>
+    <p>Location に join, order, complement を使用することはできません。同じ entry を引用する場合も location 単位で PRIMARY_CONTIG を複数記述してください。</p>
+  </li>
+  <li>
+    <p>プライマリーシークエンスが DDBJ/EMBL-Bank/GenBank に登録されている場合は、バージョンの付いたアクセッション番号を記載します。引用したアクセッション番号のデータが、TPA/TSA データ登録時点では、まだ公開されていない場合は、バージョン番号は、0 [zero]と入力してください。</p>
+  </li>
+  <li>
+    <p>詳細は<a href="#sample">サンプルとフラットファイルとの対応</a>を参照してください。</p>
+
+    <ul>
+      <li>TPA (Third Party Data)： <a href="#TPA">サンプル</a></li>
+      <li>TSA (Transcriptome Shotgun Assembly)： <a href="#TSA">サンプル</a></li>
+      <li>TSA; assembled from short reads： <a href="#TSA_SRA_assemble_Ann">サンプル</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="サンプルアノテーション">サンプルアノテーション<a name="sample"></a></h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td rowspan="6">一般データ</td>
+      <td>タンパク質コード領域</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=505600445">CDS</a></td>
+    </tr>
+    <tr>
+      <td>リボソーマル RNA</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=1380986730">16S_rRNA</a></td>
+    </tr>
+    <tr>
+      <td>ITS 領域 (Internal Transcribed Spacer)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=162924670">ITS</a></td>
+    </tr>
+    <tr>
+      <td>マイクロサテライトマーカー</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=282901241">Microsatellite marker</a></td>
+    </tr>
+    <tr>
+      <td>ミトコンドリア</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=545461927">mtDNA</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/env.html">ENV</a> (環境サンプル)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=585575811">ENV</a></td>
+    </tr>
+    <tr>
+      <td rowspan="8">ゲノムデータ関連</td>
+      <td><a href="/ddbj/genome.html">complete genome sequence (Bacteria)</a></td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=862924679">complete_genome_BCT</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/wgs.html">WGS</a> (Whole Genome Shotgun) without annotation</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=382116224">WGS</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/wgs.html">WGS</a> (Whole Genome Shotgun) with annotation</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">WGS_annotation</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/wgs.html">WGS</a>; piece of scaffold CON</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=595699065">WGS_piece_CON</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/con.html">CON</a> entries for WGS scaffold</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1885054586">WGS_scaffold</a></td>
+    </tr>
+    <tr>
+      <td>AGP file for <a href="/ddbj/con.html">CON</a> entries</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1672995780">AGP</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/gss.html">GSS</a> (Genome Survey Sequences)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=460036592">GSS</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/htg.html">HTG</a> (High Throughput Genomic Sequences)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=199977055">HTG</a></td>
+    </tr>
+    <tr id="TSA">
+      <td rowspan="4">大量転写物配列関連</td>
+      <td><a href="/ddbj/tsa.html">TSA</a> (Transcriptome Shotgun Assembly); assembled from EST</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=2130672006">TSA</a></td>
+    </tr>
+    <tr id="TSA_SRA_assemble_NoANN">
+      <td><a href="/ddbj/tsa.html">TSA</a>; assembled from short reads without annotation</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=931177555">TSA_SRA_assemble_NoANN</a></td>
+    </tr>
+    <tr id="TSA_SRA_assemble_Ann">
+      <td><a href="/ddbj/tsa.html">TSA</a>; assembled from short reads with annotation</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1607251813">TSA_SRA_assemble_Ann</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/est.html">EST</a> (Expressed Sequence Tags)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1753678626">EST</a></td>
+    </tr>
+    <tr>
+      <td>TLS (Targeted Locus Study)</td>
+      <td><a href="/ddbj/tls.html">TLS (Targeted Locus Study)</a></td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=580470761">TLS</a></td>
+    </tr>
+    <tr>
+      <td rowspan="3"><a href="/ddbj/tpa.html">TPA</a> (Third Party Data)</td>
+      <td><a href="/ddbj/tpa.html">TPA</a> (Third Party Data)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=123381270">TPA</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/tpa.html">TPA</a> assembly (Third Party Data)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=80322930">TPA-assembly_WGS</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/tpa.html">TPA</a> assembly (Third Party Data)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1394019205">TPA-assembly</a></td>
+    </tr>
+    <tr id="ann2-ff">
+      <td>アノテーション:フラットファイル</td>
+      <td>タンパク質コード領域</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=961825804">ann2-ff</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="agp-ファイル">AGP ファイル<a name="agp"></a></h2>
+
+<p>AGP ファイルは <a href="/ddbj/con.html">CON</a> エントリの登録に必要です。 AGP ファイルは CON エントリを構築する際のピースエントリの順序、種類、方向等が記載された、9列からなるタブ区切りテキストファイルです。
+スクリプト、(MS Excel などの) 表計算ソフト、テキストエディタ等で作成が可能です。</p>
+
+<p>AGP ファイルの書式は、UCSC, EBI および NCBI により開発されました。</p>
+
+<p>例： AGP ファイル</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>#1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>scaffold1</td>
+      <td>1</td>
+      <td>1345</td>
+      <td>1</td>
+      <td>W</td>
+      <td>BZZZ01123456.1</td>
+      <td>1</td>
+      <td>1345</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>scaffold1</td>
+      <td>1346</td>
+      <td>2845</td>
+      <td>2</td>
+      <td>N</td>
+      <td>1500</td>
+      <td>scaffold</td>
+      <td>yes</td>
+      <td>align_genus</td>
+    </tr>
+    <tr>
+      <td>scaffold1</td>
+      <td>2846</td>
+      <td>4301</td>
+      <td>3</td>
+      <td>W</td>
+      <td>BZZZ01123457.1</td>
+      <td>1</td>
+      <td>1456</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>scaffold1</td>
+      <td>4302</td>
+      <td>4401</td>
+      <td>4</td>
+      <td>U</td>
+      <td>100</td>
+      <td>scaffold</td>
+      <td>yes</td>
+      <td>align_genus</td>
+    </tr>
+    <tr>
+      <td>scaffold1</td>
+      <td>4402</td>
+      <td>5631</td>
+      <td>5</td>
+      <td>W</td>
+      <td>BZZZ01123458.1</td>
+      <td>1</td>
+      <td>1230</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>scaffold2</td>
+      <td>1</td>
+      <td>650</td>
+      <td>1</td>
+      <td>W</td>
+      <td>BZZZ01123486.1</td>
+      <td>1</td>
+      <td>1345</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>scaffold2</td>
+      <td>651</td>
+      <td>750</td>
+      <td>2</td>
+      <td>N</td>
+      <td>100</td>
+      <td>scaffold</td>
+      <td>yes</td>
+      <td>align_genus</td>
+    </tr>
+    <tr>
+      <td>scaffold2</td>
+      <td>751</td>
+      <td>2980</td>
+      <td>3</td>
+      <td>W</td>
+      <td>BZZZ01123488.1</td>
+      <td>1</td>
+      <td>1230</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="書式と構文--1">書式と構文 <a name="agp_format"></a></h3>
+
+<p>AGPファイルは、<a href="/ddbj/ume.html">UME</a> (Utilities for MSS Error
+check)でチェックすることが可能です。</p>
+
+<ul>
+  <li>AGP ファイルは 9 カラムで構成されています。</li>
+  <li>タブ区切りテキスト形式で作成してください。</li>
+  <li>途中にスペース、空行が入らないようにしてください。</li>
+  <li># で始まる行はコメント扱いとなります。データには反映されません。ファイルの先頭に記載してください。</li>
+</ul>
+
+<p>各カラムにおける記述内容（カラム 1 - カラム 5）</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>カラム</th>
+      <th>内容</th>
+      <th colspan="2">入力項目・注意事項</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>object</td>
+      <td colspan="2">CONエントリ名<br />(chromosome, scaffold, contig 等に対する固有の名称)<br />アノテーションファイルのエントリ名と対応するエントリ名を入力する</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>object_beg</td>
+      <td colspan="2">CON エントリにおける component/gap の開始位置</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>object_end</td>
+      <td colspan="2">CON エントリにおける component/gap の終了位置</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>part_number</td>
+      <td colspan="2">CON エントリを構成する component/gap の順序</td>
+    </tr>
+    <tr>
+      <td class="borderbtm" rowspan="10">5</td>
+      <td class="borderbtm" rowspan="10">component_type</td>
+      <td colspan="2">component の種類を示す規定値: A, D, F, G, O, P, W, N, U のいずれか</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>Active Finishing; finishing に向けて更新され得る段階</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>Draft HTG; HTG phase1, phase2, あるいは不明な draft 段階<br />つまり finished レベルに達していない HTG</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>Finished HTG; phase3, finished レベルの HTG</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>Whole Genome Finishing</td>
+    </tr>
+    <tr>
+      <td>O</td>
+      <td>Other sequence; WGS, HTG に該当しないもの</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>Pre Draft</td>
+    </tr>
+    <tr>
+      <td>W</td>
+      <td>WGS contig; ピースエントリが WGS エントリである場合</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>サイズが特定・予測されている gap</td>
+    </tr>
+    <tr>
+      <td>U</td>
+      <td>サイズ不明の gap、100 塩基とすること</td>
+    </tr>
+  </tbody>
+</table>
+<p class="tablecaption">* component: より大きな配列を構築するために使用される配列 (ピースエントリ)</p>
+
+<p><span class="icon_d-triangle">6 以降のカラムは、カラム 5 の value に依存して記述内容が異なります。</span></p>
+
+<p>各カラムにおける記述内容（カラム 6 - カラム 9）：カラム 5 が “N”と”U”以外の場合</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>カラム</th>
+      <th>内容</th>
+      <th colspan="2">入力項目・注意事項</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>6</td>
+      <td>component_id</td>
+      <td colspan="2">component のアクセッション番号とバージョン番号、<br />あるいは component のエントリ名</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>component_beg</td>
+      <td colspan="2">component の開始位置</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>component_end</td>
+      <td colspan="2">component の終了位置</td>
+    </tr>
+    <tr>
+      <td class="borderbtm" rowspan="7">9</td>
+      <td class="borderbtm" rowspan="7">orientation</td>
+      <td colspan="2">component の相対的な配列の方向。規定値は下記：</td>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td>プラス、順鎖</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>マイナス、相補鎖</td>
+    </tr>
+    <tr>
+      <td>?</td>
+      <td>不明</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>ゼロ、不明 (deprecated)</td>
+    </tr>
+    <tr>
+      <td>na</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td colspan="2">ただし、"?"、"0"、"na" も順鎖と扱う。</td>
+    </tr>
+  </tbody>
+</table>
+<p class="tablecaption">* component: より大きな配列を構築するために使用される配列 (ピースエントリ)</p>
+
+<ul>
+  <li>
+    <p>長さが判明していないギャップ領域については、一律 100 個の n で記述する規則となっています。 component_type の
+value に”U”、gap_length の value に “100” と記載します。</p>
+  </li>
+  <li>
+    <p>カラム 5 が “N”あるいは”U”の場合、連続性の情報は gap_type および linkage の組み合わせで与えられます。
+以下の表を参考にしてください。</p>
+
+    <p>例: アノテーションファイル内の COMMENT と ST_COMMENT</p>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>gap_type</th>
+      <th>linkage</th>
+      <th>解説・注意事項</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td colspan="3">scaffold 内の gap: gap 前後の配列が１つの scaffold に収まる場合、連鎖している</td></tr>
+    <tr>
+      <td>scaffold</td>
+      <td>yes</td>
+      <td>scaffold を分けずに記載すること<br />gap 前後の配列が連鎖する証拠があることを示す</td>
+    </tr>
+    <tr>
+      <td>repeat</td>
+      <td>yes</td>
+      <td>scaffold を分けずに記載すること<br />gap に未解消の繰り返し単位が存在し、前後の配列が連鎖する証拠がある場合は 'yes' とする</td>
+    </tr>
+    <tr><td colspan="3">scaffold を分ける gap: gap 前後の配列が分かれた scaffold に それぞれ位置し、連鎖するか否か不明</td></tr>
+    <tr>
+      <td>contig</td>
+      <td>no</td>
+      <td>scaffold を分けて記載すること<br />gap 前後の配列が連鎖する証拠がなく、連鎖するか否か不明</td>
+    </tr>
+    <tr>
+      <td>repeat</td>
+      <td>no</td>
+      <td>scaffold を分けて記載すること<br />gap に未解消の繰り返し単位が存在し、前後の配列が連鎖する証拠がない場合は 'no' とする</td>
+    </tr>
+    <tr>
+      <td>centromere<br />short_arm<br />heterochromatin<br />telomer</td>
+      <td>no</td>
+      <td>scaffold を分けて記載すること<br />これら生物学的 gap は chromosome に沿った scaffold の間に配置すること</td>
+    </tr>
+    <tr><td colspan="3">使用禁止となる gap type と linkage の組み合わせ</td></tr>
+    <tr>
+      <td>contig</td>
+      <td>yes</td>
+      <td>この組み合わせは使用禁止<br />もし、gap 前後の配列が連鎖する証拠があるならば、gap type は contig ではなく scaffold とすべきである</td>
+    </tr>
+    <tr>
+      <td>scaffold</td>
+      <td>no</td>
+      <td>この組み合わせは使用禁止<br />もし、gap 前後の配列が連鎖する証拠がないならば、gap type は scaffold ではなく contig とすべきである</td>
+    </tr>
+    <tr>
+      <td>centromere<br />short_arm<br />heterochromatin<br />telomere</td>
+      <td>yes</td>
+      <td>この組み合わせは使用禁止<br />これら生物学的 gap は scaffold 内では使用しないこと</td>
+    </tr>
+  </tbody>
+</table>
+
+      </div>
+      
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              
+              <li>
+                <a href="/ddbj/mss-tool.html">MSS データファイル用チェックツール</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/ume.html">UME ユーザーマニュアル</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/parser.html">Parser ユーザーマニュアル</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/transchecker.html">transChecker ユーザーマニュアル</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/validator.html">validator エラーメッセージ</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/mss-form.html">MSS 利用申し込み</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

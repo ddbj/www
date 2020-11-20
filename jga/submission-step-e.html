@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JGA submission steps</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">JGA submission steps</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/jga">jga</a>
+          </li>
+          <li>
+            <a href="">JGA submission steps</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/jga/index-e.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="https://humandbs.biosciencedbc.jp/en/data-use/all-researches">Browse researches at NBDC</a>
+      
+      <ul>
+        
+        <li>
+          <a href="https://ddbj.nig.ac.jp/search">DDBJ Search</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/jga/submission-e.html">Submission</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/jga/submission-step-e.html">How to submit</a>
+        </li>
+        
+        <li>
+          <a href="/jga/download-e.html">How to access data</a>
+        </li>
+        
+        <li>
+          <a href="/jga/group-e.html">Groups</a>
+        </li>
+        
+        <li>
+          <a href="https://docs.google.com/spreadsheets/d/1HHlxItj89fQv2oWUNBIHZ4VVGwbcC09WGD5tEiXAQZ4/edit#gid=744299318">Example submission</a>
+        </li>
+        
+        <li>
+          <a href="/jga/update-202009-e.html">Updates in 2020</a>
+        </li>
+        
+        <li>
+          <a href="https://github.com/ddbj/pub/tree/master/docs/jga/xsd/">XML Schema</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/en/index-e.html">FAQ</a>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="jga-overview-">JGA overview <a name="overview"></a></h2>
+
+<p>The <a href="../">DNA Data Bank of Japan (DDBJ) Center</a> operates the Japanese Genotype-phenotype Archive (JGA) for human genotype and phenotype data in collaboration with <a href="http://humandbs.biosciencedbc.jp/en/">National Bioscience Database Center (NBDC)</a>.</p>
+
+<div class="attention red">
+  <ul>
+    <li>JGA is a controlled-access database and is different from the other INSDC unrestricted-access databases.</li>
+    <li>Submission account system of the JGA is separated from the <a href="https://ddbj.nig.ac.jp/D-way/">D-way</a> account system for the other DDBJ Center’s unrestricted-access databases.</li>
+    <li>To submit data to the JGA, an approval from <a href="https://humandbs.biosciencedbc.jp/en/data-submission">NBDC</a> is necessary.</li>
+    <li>Login details for the JGA submission account are notified from <a href="http://humandbs.biosciencedbc.jp/en">NBDC</a>.</li>
+  </ul>
+</div>
+
+<p>This page explains how to submit data to the JGA.<br />
+For JGA overview, see <a href="https://drive.google.com/file/d/12IaBZHub6s9fNK55S0r6x0U7MD2oQsk_">this slide (Japanese only)</a>.</p>
+
+<h2 id="create-metadata-by-using-excel-">Create metadata by using excel <a name="create-metadata-using-excel"></a></h2>
+
+<h3 id="enter-metadata-into-the-excel-">Enter metadata into the excel <a name="enter-metadata-into-excel"></a></h3>
+
+<p>Download and fill in the metadata in English. For the JGA metadata, see <a href="/jga/download-e.html">this page</a>.</p>
+
+<p><a href="/assets/files/submission/JGA_metadata.xlsx"><img src="/assets/images/parts/download.png" alt="JGA metadata excel" title="JGA metadata excel" class="w40" /></a></p>
+
+<p>last updated: 2019-06-07</p>
+
+<div class="attention red">
+  <p>The excel file name must end with “_metadata.xlsx”. Before the “_metadata”, Submission ID and NBDC hum number can be freely added.</p>
+</div>
+
+<div class="attention red">
+  <p>Do NOT include any white spaces in the names of files to be uploaded to JGA.</p>
+</div>
+
+<div class="attention red">
+  <p>When possible, concatenate the multiple data files in the Data/Analysis object to reduce the number of files per object for smoother download.</p>
+</div>
+
+<h3 id="example-metadata-excel-">Example metadata excel <a name="example-submission"></a></h3>
+
+<p><a href="https://docs.google.com/spreadsheets/d/1HHlxItj89fQv2oWUNBIHZ4VVGwbcC09WGD5tEiXAQZ4/edit#gid=744299318">Example metadata excel</a>.</p>
+
+<h3 id="jga-submission-tool-">JGA submission tool <a name="jga-submission-tool"></a></h3>
+
+<p>Download the latest JGA submission tool (last updated: 2018-04-16，v3.5.0) and run the tool by executing JGATool.bat.</p>
+
+<div class="attention red">
+  <p>Execute in the Java 8. In the Java 7, the tool does not work. <a href="#use-proxy-environment">How to use in the proxy envinronment.</a></p>
+</div>
+
+<h4 id="windows-">Windows <a name="Windows"></a></h4>
+
+<p><a href="/assets/files/submission/3-5-0/JGA_tool.zip">JGA submission tool (Windows)</a></p>
+
+<p>Execute the tool by double clicking the bat file in the expanded files.</p>
+
+<p><span class="red">Java Runtime Environment Version 8 Update 45 and newer are required.</span></p>
+
+<h4 id="unix-">Unix <a name="Unix"></a></h4>
+
+<p><a href="/assets/files/submission/3-5-0/JGA_tool_unix.zip">JGA submission tool (Unix)</a></p>
+
+<p>Excecute the sh file by shell in the expanded files.</p>
+
+<p><span class="red">Java SE Development Kit 8u45 and newer are required. Does not work in the OpenJDK.</span></p>
+
+<h3 id="upload-the-excel-">Upload the excel <a name="upload-excel"></a></h3>
+
+<p>Execute the JGA tool and login it by using the login ID and password sent from <a href="http://humandbs.biosciencedbc.jp/">NBDC</a>.</p>
+
+<a class="group1" href="/assets/images/submission/jgasub1.jpg" title="Login the JGA tool">
+  <figure class="image">
+    <img src="/assets/images/submission/jgasub1.jpg" alt="Login the JGA tool" class="w200">
+    <figcaption>Login the JGA tool</figcaption>
+  </figure>
+</a>
+
+<p>The left window is your local computer and the right one is secure JGA server.</p>
+
+<p>In the Submission ID of the right window, select the JGA submission id (for example, example-0003) in the pulldown menu. In the left window, select the metadata excel (for example, JGA_example-0003_metadata.xlsx) and click the “Encrypt &amp; Upload”.</p>
+
+<a class="group1" href="/assets/images/submission/jgasub2.jpg" title="Select the submission and metadata excel.">
+  <figure class="image">
+    <img src="/assets/images/submission/jgasub2.jpg" alt="Select the submission and metadata excel." class="w500">
+    <figcaption>Select the submission and metadata excel.</figcaption>
+  </figure>
+</a>
+
+<p>The excel file is uploaded to the JGA server securely. Ignore the error messages in the bottom window.</p>
+
+<p>After uploading the excel, contact the <a href="/contact-ddbj-e.html">JGA team</a>.</p>
+
+<a class="group1" href="/assets/images/submission/jgasub3.jpg" title="Uploaded excel file">
+  <figure class="image">
+    <img src="/assets/images/submission/jgasub3.jpg" alt="Uploaded excel file" class="w500">
+    <figcaption>Uploaded excel file</figcaption>
+  </figure>
+</a>
+
+<div class="attention red">
+  <p>Do NOT send the metadata excel by e-mail.</p>
+</div>
+
+<h3 id="download-excelxml-files-">Download Excel/XML files <a name="download-excel-xml-files"></a></h3>
+
+<p>Users can download the excel with filename ended with “_metadata.xlsx” and XML files by using the tool.</p>
+
+<p>Right-click the excel (for example, JGA_example-0003_r1_metadata.xlsx) and select Download from the menu. Then the selected excel file is downloaded to your computer.</p>
+
+<a class="group1" href="/assets/images/submission/jgadown1.jpg" title="Download excel">
+  <figure class="image">
+    <img src="/assets/images/submission/jgadown1.jpg" alt="Download excel" class="w500">
+    <figcaption>Download excel</figcaption>
+  </figure>
+</a>
+
+<p>Right-click the XML file (for example, example-0003_Data.xml) and
+select the “Download” in the menu. Users can download the XML files
+one-by-one to your computer.</p>
+
+<a class="group1" href="/assets/images/submission/jgadown2.jpg" title="Download XML">
+  <figure class="image">
+    <img src="/assets/images/submission/jgadown2.jpg" alt="Download XML" class="w500">
+    <figcaption>Download XML</figcaption>
+  </figure>
+</a>
+
+<h2 id="upload-data-files-">Upload data files <a name="upload-data-files"></a></h2>
+
+<h3 id="data-file-format-">Data file format <a name="data-file-format"></a></h3>
+
+<p>In the JGA submission system, file and archive, compression formats are judged by the file extensions.</p>
+
+<ul>
+  <li>The extensions, zip, tar, tar.gz, tgz, tar.bz2, tbz2, gz, bz2 are treated as the standard archive and compression formats. The other files with other archive and compression formats cause errors.</li>
+  <li>Do not compress the bam file.</li>
+  <li>Do not tar archive the compressed files by gz or bzip, instead, tar.gz the un-compressed files.</li>
+</ul>
+
+<h3 id="file-formats-for-submission-">File formats for submission <a name="file-formats-submission"></a></h3>
+
+<p>Register the individual-level next-generation sequencing (NGS) fastq and bam files to the Data object and the microarray, variation, questionnaire files (non-NGS data) to the Analysis object.</p>
+
+<div class="attention red">
+  <p>It is important for making data reusable and reproducible that the processed data on which the conclusions in the related manuscript are based, are registered to JGA. Please submit processed data files such as VCF in Analysis objects.</p>
+</div>
+
+<h3 id="metadata-xml-file-">metadata XML file <a name="metadata-xml-file"></a></h3>
+
+<p>Select the downloaded XML and data files and upload them to the target submission by using the tool.</p>
+
+<a class="group1" href="/assets/images/submission/jgasub4.jpg" title="Uplaod the metadata XML and data files">
+  <figure class="image">
+    <img src="/assets/images/submission/jgasub4.jpg" alt="Uplaod the metadata XML and data files" class="w500">
+    <figcaption>Uplaod the metadata XML and data files</figcaption>
+  </figure>
+</a>
+
+<h3 id="validation-of-submitted-files-">Validation of submitted files <a name="validation-submitted-files"></a></h3>
+
+<p>Submitted metadata and data files are validated and the data files are uploaded in the encrypted form.</p>
+
+<ul>
+  <li>The metadata XML files are validated against <a href="https://github.com/ddbj/pub/tree/master/docs/jga">JGA XML schema</a>.</li>
+  <li><a href="/jga/download-e.html#metadata">The relationships between each metadata object</a></li>
+  <li>Existence of the files listed in the Data and Analysis XML</li>
+  <li>Checksum validation before and after uploading. <a href="/dra/submission-e.html#supplement-md5">MD5</a></li>
+</ul>
+
+<p>If the all validation steps succeed, “[INFO] upload succeeded” is displayed in the bottom window. The <a href="/jga/download-e.html#accession">JGA accessions</a> will be issued after reviewing.</p>
+
+<p>When an error message is shown, contact <a href="/contact-ddbj-e.html">the JGA team</a>.</p>
+
+<a class="group1" href="/assets/images/submission/jgasub5.jpg" title="Validated metadata XML and data files">
+  <figure class="image">
+    <img src="/assets/images/submission/jgasub5.jpg" alt="Validated metadata XML and data files" class="w500">
+    <figcaption>Validated metadata XML and data files</figcaption>
+  </figure>
+</a>
+
+<h3 id="how-to-select-files-">How to select files <a name="select-files"></a></h3>
+
+<p>Users can select multile files in the left window.</p>
+
+<h4 id="range-selection">Range selection</h4>
+
+<p>Select the stating filename and then select the ending filename with pressing Shift, the files in the range are selected. Right click the “check (selected item)” and check the selected files.</p>
+
+<a class="group1" href="/assets/images/submission/jga_range_select.jpg" title="Range select the files">
+  <figure class="image">
+    <img src="/assets/images/submission/jga_range_select.jpg" alt="Range select the files" class="w500">
+    <figcaption>Range select the files</figcaption>
+  </figure>
+</a>
+
+<h4 id="how-to-select-distinct-files">How to select distinct files</h4>
+
+<p>Select the distinct files by pressing the Control, then select the “check (selected item)” and check the selected files.</p>
+
+<a class="group1" href="/assets/images/submission/jga_multi_select.jpg" title="Check the selected files">
+  <figure class="image">
+    <img src="/assets/images/submission/jga_multi_select.jpg" alt="Check the selected files" class="w500">
+    <figcaption>Check the selected files</figcaption>
+  </figure>
+</a>
+<h4 id="select-sub-directory">Select sub-directory</h4>
+
+<p>All files in the directory are selected by clicking the folder checkbox.</p>
+
+<a class="group1" href="/assets/images/submission/jga_dir_select.jpg" title="Check the sub-directory">
+  <figure class="image">
+    <img src="/assets/images/submission/jga_dir_select.jpg" alt="Check the sub-directory" class="w500">
+    <figcaption>Check the sub-directory</figcaption>
+  </figure>
+</a>
+
+<h3 id="how-to-use-in-the-proxy-environment-">How to use in the proxy environment <a name="use-proxy-environment"></a></h3>
+
+<p>To use the tool in the proxy environment, users need to configure the file.</p>
+
+<p>Edit the “proxy.properties” in the tool folder and enter the proxy name (server=) and port number (port=).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Enter the server name and port number of the proxy server 
+  to connect the JGA server via the proxy.
+# For example:
+# server=proxy.example.ac.jp
+# port=8080
+server=
+port=
+</code></pre></div></div>
+
+<p>When the proxy server require the authentication, enter the credentials in the window after logging in the tool.</p>
+
+<p>The v3.2.0 can handle the BASIC authentification but can not handle the Digest one.</p>
+
+<h2 id="send-the-data-files-in-hard-disk-">Send the data files in hard disk <a name="send-data-files-in-hard-disk"></a></h2>
+
+<p>When uploading files by the JGA tool takes too long time, for uploading large number and size of files, we accept the files in the hard disk drives.</p>
+
+<div class="attention red">
+  <p>Be sure to inform the JGA team before sending your disk to us.<br />
+Disk format should be NTFS, ext3 or ext4.<br />
+Check the entire disk by anti-virus checker.<br />
+Shipping fee should be paid by the user.</p>
+</div>
+
+<h3 id="encrypt-data-files-">Encrypt data files <a name="encrypt-data-files"></a></h3>
+
+<p>Encrypt the data files by using the JGA data encryption tool and copy them into the hard disk. Upload the XML files by using the JGA submission tool and do not include them in the disk.</p>
+
+<p><a href="/assets/files/submission/jga-data-encrypt.tar.gz"><img src="/assets/images/parts/download.png" alt="JGA data encryption tool" title="JGA data encryption tool" class="w40" /></a></p>
+
+<p>last updated: 2015-12-09</p>
+
+<div class="attention red">
+  <p>Encrypt the file one-by-one. Do NOT encrypt tar archived files or directory.</p>
+</div>
+
+<p>Operating envinronment</p>
+
+<ul>
+  <li>The disk space as large as the total size of the target files is necessary.</li>
+  <li>Confirmed in CentOS 6.4</li>
+  <li>Java Runtime Environment Version 8 Update 45 newer is neccesary.</li>
+</ul>
+
+<p>Expand the “jga-data-encrypt.tar.gz” by tar command. Following directories are expanded. Do NOT change the directory structure.</p>
+
+<p>jga-data-encrypt.sh (shell script) jar/ -&gt; directory for execution files (do NOT change this directory)</p>
+
+<p>Move to the tool directory and execute the command.<br />
+sh jga-data-encrypt.sh[space]-t[target files][space]-o[output directory path]<br />
+example)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sh jga-data-encrypt.sh -t target.fastq -o output
+</code></pre></div></div>
+
+<p>Command options</p>
+
+<p>-t –target<br />
+Sepecify the path to target files.<br />
+The tool can encrypt one file. Multiple files by wild card cannot be
+specified.<br />
+Use shell script to encrypt multiple files.</p>
+
+<p>-o –output<br />
+Path to the directory to output encrypted files, encryption key and the
+MD5 file.<br />
+When the directory is not found, the directory is automatically
+created.</p>
+
+<p>Output files</p>
+
+<p>In the output directory, the following 3 files are generated per 1
+target file.</p>
+
+<ol>
+  <li>
+    <p>encrypted file (.encrypt)<br />
+The encrypted filename is [filename before encryption].encrypt (for example, file1.fastq will be file1.fastq.encrypt)</p>
+  </li>
+  <li>
+    <p>key file (.encrypt.dat)<br />
+The key file used for encryption. One key file is generated per one target file. The key file is encrypted by the public key. The filename is [encrypted target file name].dat. (for example, file1.fastq will be file1.fastq.encrypt.dat)</p>
+  </li>
+</ol>
+
+<p>MD5 file before and after encryption(.md5)<br />
+The file recording the MD5 checksum values before and after encryption. One MD5 file is generated per one target file. The filename is [unencrypted filename].md5. (for example, file1.fastq will be file1.fastq.md5)</p>
+
+<p>Output messages</p>
+
+<p>The tool’s messages are recorded in the log file ([server hostname].jga-data-encrypt.log in the tool directory) and shown on the standard screen. Normal messages are as follows.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sh jgacmd.sh -t /home/hoge/file.txt -o /tmp/output
+START encrypt file ←start processing
+start encryption : /home/hoge/file.txt ←target filename
+encryption complete : /tmp/output /file.txt.encrypt ←output filename
+FINISH encrypt file ←processing finished
+</code></pre></div></div>
+
+<p>Error messages</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Message</th>
+      <th>Meaning</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[code 11] encryption error : &lt;target&gt;</td>
+      <td>An error occurred during encryption process.</td>
+    </tr>
+    <tr>
+      <td>[code 12] make md5 file error : &lt;target&gt;</td>
+      <td>An error occurred during obtaining the md5 or writing md5 to the file.</td>
+    </tr>
+    <tr>
+      <td>[code 13] output dir is not a directory : &lt;target&gt;</td>
+      <td>-o soecified path id not a directory.</td>
+    </tr>
+    <tr>
+      <td>[code 14] target is not a file : &lt;target&gt;</td>
+      <td>-t path id not a file.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="sending-files-">Sending files <a name="sending-files"></a></h3>
+
+<p>For the JGA submission, three files “encrypted data files”, “key file” and “md5 file” are neccesary. Copy them to the hard disk.</p>
+
+<p>Do NOT copy the metadata in the disk, instead, upload the metadata by using the JGA Submission Tool.</p>
+
+<p>Copy the data to the USB hard disk and send the disk to the address below. <span class="red">Shipping fee should be paid by the user. Include the cash on delibery slip for rerurn filled with the return address</span>. <span class="red">We recommend to label the disk.</span></p>
+
+<address>
+
+  <p>JGA team<br /> 
+1111 Yata, Mishima, Shizuoka 411-8540, Japan<br />
+Phone:+81-55-981-6853</p>
+
+</address>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDBJ フラットファイルフォーマット一部変更　</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">DDBJ フラットファイルフォーマット一部変更　</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/news">news</a>
+          </li>
+          <li>
+            <a href="">DDBJ フラットファイルフォーマット一部変更　</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <html>
+<dd>2003年12月公開予定の DDBJ release 56 より，フラットファイル BASE COUNT 行のフォーマットを変更します*。<br />これは DDBJ/EMBL/GenBank 国際塩基配列データベースが決定した，登録可能な配列長制限（350,000 bp／1エントリ）の撤廃に対応するための変更です。<br />これまで BASE COUNT 行では配列中の acgt および others の数を各６桁で記述していましたが，変更後は acgt の数を９桁分で記述し，others の記述を廃止することになります。<br />変更後のフォーマットは以下の例をご覧下さい。<br />上記制限の撤廃にあたり，GenBank はリリース138（2003年10月）よりフラットファイルから BASE COUNT 行を廃止しました。<br />DDBJ では GC 含有量は配列の性質を総括する情報の１つであり，フラットファイルに載せるべき情報であるという観点から，DDBJ フォーマットのフラットファイルには引き続き BASE COUNT 行を残しています。<br />* 新着データ（daily update）はリリース公開に先だち，12月3日公開データからこの形式で公開します。<br />
+
+    <dl><br />
+        <dd>
+
+            <table border="0">
+                <tr>
+                    <pre><code>  <b>記述例）現在</b>  1    6   11   16   21   26   31   36   41   46   51   56   61   66   71  &#124;----&#124;----&#124;----&#124;----&#124;----&#124;----&#124;----&#124;----&#124;----&#124;----&#124;----&#124;----&#124;----&#124;----&#124;  BASE COUNT   123456 a 123456 c 123456 g 123456 t 123456 others  <b><font color="#FF0000">記述例）変更後</font></b>  1    6   11   16   21   26   31   36   41   46   51   56   61   66   71  &#124;----&#124;----&#124;----&#124;----&#124;----&#124;----&#124;----&#124;----&#124;----&#124;----&#124;----&#124;----&#124;----&#124;----&#124;  BASE COUNT    123456789 a    123456789 c    123456789 g    123456789 t</code></pre>
+                </tr>
+            </table>
+        </dd>
+    </dl>DDBJ フォーマットのフラットファイルについての詳細は，DDBJ ホームページ以下のサイトををご覧下さい。塩基配列登録のための参考資料／<a href="/ddbj/flat-file.html">資料10 DDBJ のデータ公開形式 (flat file) の説明</a>皆様のご理解とご協力をお願い申し上げます。ご質問がありましたら ddbj@ddbj.nig.ac.jp までご連絡下さい。
+</dd>
+</html>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

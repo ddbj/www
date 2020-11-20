@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UME ユーザーマニュアル</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">UME ユーザーマニュアル</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/ddbj">ddbj</a>
+          </li>
+          <li>
+            <a href="">UME ユーザーマニュアル</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/ddbj/index.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/submission.html">Submission</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/submission.html">塩基配列の登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/web-submission.html">Web 版塩基配列登録システム</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/mss.html">Mass Submission System</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/update.html">登録データの修正・更新</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="http://ddbj.nig.ac.jp/arsa/?lang=ja">Search</a>
+      
+      <ul>
+        
+        <li>
+          <a href="http://getentry.ddbj.nig.ac.jp/top-j.html">getentry</a>
+        </li>
+        
+        <li>
+          <a href="http://ddbj.nig.ac.jp/arsa/?lang=ja">ARSA</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/flat-file.html">Flat file</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/features.html">Feature key の定義</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/qualifiers.html">Qualifier key の定義</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/organism.html">Organism qualifier に記載する生物名</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/location.html">Location の記述法</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/cds.html">タンパク質コード配列</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/geneticcode.html">The Genetic Codes</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/code.html">配列の記載に用いる略号</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/example.html">登録の見本</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/data-categories.html">Data categories</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/genome.html">Genome project のデータ登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/pseudohaplotype.html">Pseudohaplotype</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/wgs.html">WGS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/metagenome-assembly.html">メタゲノムアセンブリ</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/single-amplified-genome.html">Single amplified genome</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/con.html">CON</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/gss.html">GSS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/htg.html">HTG</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/environmental.html">Environmental sequence の登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/env.html">ENV</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tls.html">TLS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/transcriptome.html">Transcriptome Project のデータ登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tsa.html">TSA</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/est.html">EST</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/htc.html">HTC</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tpa.html">Third Party Data (TPA)</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/ja/index.html">FAQ</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/index-e.html">Other</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/patent-data.html">Patent</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/mga.html">MGA</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <p>UME (Utilities for MSS file Error check) は Mass Submission System (MSS) を利用して DDBJ に登録する際に必要な <a href="/ddbj/file-format.html#sequence">配列ファイル</a> と<a href="/ddbj/file-format.html#annotation">アノテーションファイル</a> のフォーマットチェックと、それらファイルの記載を元に <a href="/ddbj/cds.html">CDS feature</a> のアミノ酸翻訳チェックを行うツールです。Parser と transChecker を内包しています。</p>
+
+<h2 id="基本機能-">基本機能 <a name="function"></a></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>名称</th>
+      <th>機能</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#validation-2">Parser</a></td>
+      <td><a href="/ddbj/file-format.html#sequence">配列ファイル</a> と<a href="/ddbj/file-format.html#annotation">アノテーションファイル</a><br />の構文とフォーマットを検証します。<br />登録ファイルを DDBJ 送付する際には、必ず Parser を用いてファイルの確認を行い、エラーのない状態にしてから送付してください。</td>
+    </tr>
+    <tr>
+      <td><a href="#validation-3">transChecker</a></td>
+      <td><a href="/ddbj/cds.html">CDS (タンパク質をコードする配列)</a>feature でアミノ酸翻訳の可否とその配列を検証します。</td>
+    </tr>
+    <tr>
+      <td><a href="#validation-4">FFconv</a></td>
+      <td><a href="/ddbj/file-format.html#sequence">配列ファイル</a> と <a href="/ddbj/file-format.html#annotation">アノテーションファイル</a> から、擬似的な <a href="/ddbj/flat-file.html">フラットファイル</a> を作成します。</td>
+    </tr>
+    <tr>
+      <td><a href="#agpparser">AGPParser</a></td>
+      <td>contig(<a href="/ddbj/con.html">CON エントリ</a>) を登録する場合、<a href="/ddbj/file-format.html#agp">AGPファイル</a> と <a href="/ddbj/file-format.html#annotation">アノテーションファイル</a> の構文とフォーマットを検証します。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="インストール-">インストール <a name="install"></a></h2>
+
+<p>UME パッケージを <a href="/ddbj/mss-tool.html">MSS データファイルチェック用ツール</a> からダウンロードし、以下の点に注意して、解凍してください。<br />
+その後、UME フォルダ内にある UME アイコンをダブルクリックして起動します。</p>
+
+<dl>
+  <dt>Windows: zip ファイルの展開表示</dt>
+  <dd>Windows では、zip ファイルが圧縮状態のままでも、フォルダのように閲覧可能な場合があります。<br />UME 実行時には、ファイルを解凍しておく必要がありますので、ご注意ください。</dd>
+  <dt>unix/macOS: ファイルの解凍方法</dt>
+  <dd>解凍ソフトを使用するか、以下のコマンドを用いて解凍してください。</dd>
+</dl>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gunzip UME_unix.zip
+</code></pre></div></div>
+
+<dl>
+  <dt>macOS: ファイル名とフォルダ名について</dt>
+  <dd><a href="/ddbj/file-format.html#sequence">配列ファイル</a>、<a href="/ddbj/file-format.html#annotation">アノテーションファイル</a>、<a href="/ddbj/file-format.html#agp">AGP ファイル</a> のファイル名またはフォルダ名に、マルチバイト文字が含まれていますと一部のバージョンの macOS では正常に動作しない場合がありますので、ファイル名とフォルダ名にマルチバイト文字を混在させないようにご注意ください。</dd>
+</dl>
+
+<h2 id="初期設定-">初期設定 <a name="initial"></a></h2>
+
+<h3 id="ume-の起動-">UME の起動 <a name="initial-1"></a></h3>
+
+<p>UME フォルダ内にある UME アイコン(ご使用の PC の環境設定に依存して何らかの拡張子が表示されることがあります)をダブルクリックして起動します。</p>
+
+<p>macOS の場合、UME アイコンをクリックしても起動できないことがあります。<br />
+その場合はターミナルから下記のようにコマンド実行してください。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd UME  # UME を展開したディレクトリに移動してください。
+$ ./UME.sh
+</code></pre></div></div>
+
+<p><img src="/assets/images/ddbj/UME1-j.png" alt="" title="UME の起動" /></p>
+
+<dl>
+  <dt>lib フォルダ</dt>
+  <dd>UME が使用するライブラリファイルがあります。正常に動作しなくなる恐れがありますので、絶対に内部は変更しないでください。移動もしないでください。</dd>
+  <dt>resource フォルダ</dt>
+  <dd>UME が使用するリソースファイルがあります。正常に動作しなくなる恐れがありますので、絶対に内部は変更しないでください。移動もしないでください。</dd>
+  <dt>sample フォルダ</dt>
+  <dd>DDBJ 登録用のサンプルファイルがあります。</dd>
+  <dt>UME ファイル</dt>
+  <dd>ダブルクリックすると UME が起動します。</dd>
+  <dt>license ファイル</dt>
+  <dd>使用許諾に関するテキストファイルです。ご一読ください。 内容は <a href="/ddbj/mss-tool.html#license">使用許諾</a>と同じです。</dd>
+</dl>
+
+<h3 id="メモリの初期設定-">メモリの初期設定 <a name="initial-2"></a></h3>
+
+<p>UME を起動しましたら、メモリ割り当てサイズを調節します。 デフォルトは 512 Mbytes ですが、ご使用の PCのスペックに合わせて変更してください。</p>
+
+<p><a href="/assets/images/ddbj/UME2.png"><img src="/assets/images/ddbj/UME2.png" alt="" /></a></p>
+
+<ol>
+  <li>画面上部のメニューから Config をクリックします。</li>
+  <li>Max memory for runtime のプルダウンメニューから、クリックして選択します。</li>
+</ol>
+
+<h2 id="登録用ファイルの検証-">登録用ファイルの検証 <a name="validation"></a></h2>
+
+<h3 id="check-パネルの構成-">Check パネルの構成 <a name="validation-1"></a></h3>
+
+<p>下図で赤い四角で囲んだ部分にある Check タブをクリックしますと、この表示になります。<br />
+UME を起動後、最初に開いているパネルです。</p>
+
+<p><img src="/assets/images/ddbj/UME3.png" alt="" title="Check パネルの構成" /></p>
+
+<ol>
+  <li>処理対象とする <a href="/ddbj/file-format.html#annotation">アノテーションファイル</a> と<a href="/ddbj/file-format.html#sequence">配列ファイル</a> (Fasta File)をそれぞれ指定します。</li>
+  <li>Execute をクリックしますと、(1) で指定したファイルを Parser で検証します。</li>
+  <li>Execute をクリックしますと、(1) で指定したファイルから transChecker でアミノ酸翻訳を確認します。</li>
+  <li>Execute をクリックしますと、(1) で指定したファイルから FFconv で擬似フラットファイルを作成します。</li>
+  <li>Exit をクリックしますと、UME を終了します。</li>
+</ol>
+
+<h3 id="parser-構文チェックツール">Parser: 構文チェックツール<a name="validation-2"></a></h3>
+
+<p>以下の手順で Parser による登録ファイルの構文チェックを実行してください。</p>
+
+<p><img src="/assets/images/ddbj/UME5.png" alt="" title="Parser 構文チェックツール" class="w600" /></p>
+
+<p>Check タブをクリックし、Check パネルを表示させます。</p>
+
+<ol>
+  <li>処理対象とする <a href="/ddbj/file-format.html#annotation">アノテーションファイル</a> と<a href="/ddbj/file-format.html#sequence">配列ファイル</a> をそれぞれ指定します。</li>
+  <li>Execute をクリックしますと、(1) で指定したファイルを Parser でチェックします。</li>
+  <li>Save log in file をチェックした場合は、Parser の実行結果をテキストファイルに保存します。</li>
+  <li>Parser の実行結果表示ウィンドウが開きます。</li>
+  <li>Parser チェックの進行状況を表示します。</li>
+  <li>Parser チェックの実行結果を表示します。</li>
+  <li>Save をクリックしますと、(6) の内容をテキストファイルに保存します。</li>
+  <li>Close をクリックしますと、この結果表示ウィンドウを閉じます。</li>
+</ol>
+
+<div class="attention">
+
+  <p>Parser は、エラーが発生している場合は、エラーメッセージを出力します。<br />
+エラーメッセージの意味は <a href="/ddbj/validator.html#parser">Parser エラーメッセージ</a> をご覧ください。</p>
+
+</div>
+
+<h3 id="transchecker-アミノ酸翻訳検証ツール">transChecker: アミノ酸翻訳検証ツール<a name="validation-3"></a></h3>
+
+<p>登録データ中に <a href="/ddbj/cds.html">CDS feature</a> を含む場合 transChecker によるアミノ酸翻訳チェックをお願いします。<br />
+ただし、transChecker を実行する前に、<a href="#validation-2">Parser</a> でエラーが出力されない状態にしておく必要があります。Parser でエラーが検出される場合は、transChecker を実行することが出来ませんのでご注意ください。<br />
+以下の手順で transChecker によるアミノ酸翻訳チェックを実行します。</p>
+
+<p><img src="/assets/images/ddbj/UME6.png" alt="" title="transChecker" class="w600" /></p>
+
+<p>Check タブをクリックし、 Check パネル を表示させます。</p>
+
+<ol>
+  <li>処理対象とする <a href="/ddbj/file-format.html#annotation">アノテーションファイル</a> と <a href="/ddbj/file-format.html#sequence">配列ファイル</a> をそれぞれ指定します。</li>
+  <li>Execute をクリックしますと、(1) で指定したファイルを transChecker でチェックします。</li>
+  <li>Save log in file をチェックした場合は、transChecker の実行結果をテキストファイルに保存します。</li>
+  <li>Save translated sequences in file をチェックした場合は、transChecker 実行時に出力される翻訳アミノ酸配列を選択された書式でテキストファイルに保存します。<br />翻訳アミノ酸配列の出力書式は以下の２通りです。
+    <table>
+      <tbody>
+        <tr>
+          <td class="first"><a href="/ddbj/transchecker.html#output-1-1">FASTA-like format</a></td>
+          <td class="second">Translate in FASTA format を選択した場合</td>
+        </tr>
+        <tr>
+          <td class="first"><a href="/ddbj/transchecker.html#output-1-2">塩基配列とのアラインメント</a></td>
+          <td class="second">Translate in alignment with nucleotide sequence</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>transChecker の実行結果表示ウィンドウが開きます。</li>
+  <li>transChecker チェックの進行状況を表示します。</li>
+  <li>transChecker チェックの実行結果、エラーメッセージなどを表示します。</li>
+  <li>Save をクリックしますと、(7) の内容をテキストファイルに保存します。</li>
+  <li>transChecker チェックの実行結果、翻訳アミノ酸配列を (4) で選択した書式で表示します。</li>
+  <li>Save をクリックしますと、(9) の内容をテキストファイルに保存します。</li>
+  <li>Close をクリックしますと、この結果表示ウィンドウを閉じます。</li>
+</ol>
+
+<div class="attention">
+
+  <p>transChecker は、エラーが発生している場合は、エラーメッセージを出力します。<br />
+エラーメッセージの意味は <a href="/ddbj/validator.html#transchecker">transChecker エラーメッセージ</a> をご覧ください。</p>
+
+</div>
+
+<h3 id="ffconv-擬似フラットファイル作成ツール">FFconv: 擬似フラットファイル作成ツール<a name="validation-4"></a></h3>
+
+<p>FFconv を使用して <a href="/ddbj/file-format.html#annotation">アノテーションファイル</a> と <a href="/ddbj/file-format.html#sequence">配列ファイル</a> を <a href="/ddbj/flat-file.html">DDBJ フラットファイル</a>に変換し確認することが可能です。</p>
+
+<p>ただし、FFconv を実行する前に、<a href="#validation-2">Parser</a> でエラーが出力されない状態にしておく必要があります。Parser でエラーが検出される場合、FFconv を実行することが出来ませんので、ご注意ください。</p>
+
+<p>FFconv は以下の手順で実行します。</p>
+
+<p><img src="/assets/images/ddbj/UME7.png" alt="" title="FFconv" class="w600" /></p>
+
+<p>Check タブをクリックし、 Check パネル を表示させます。</p>
+
+<ol>
+  <li>処理対象とする <a href="/ddbj/file-format.html#annotation">アノテーションファイル</a> と <a href="/ddbj/file-format.html#sequence">配列ファイル</a> をそれぞれ指定します。</li>
+  <li>Execute をクリックしますと、(1) で指定したファイルから FFconv で擬似 DDBJ フラットファイルを作成します。</li>
+  <li>Save flat file in file をチェックした場合は、FFconv の実行結果、擬似 DDBJ フラットファイルをテキストファイルに保存します。</li>
+  <li>FFconv の実行結果表示ウィンドウが開きます。</li>
+  <li>FFconv の進行状況を表示します。</li>
+  <li>FFconv の実行結果を表示します。</li>
+  <li>Save をクリックしますと、(6) の内容をテキストファイルに保存します。</li>
+  <li>FFconv の実行結果、擬似 DDBJ フラットファイルを表示します。</li>
+  <li>Save をクリックしますと、(8) の内容をテキストファイルに保存します。</li>
+  <li>Close をクリックしますと、この結果表示ウィンドウを閉じます。</li>
+</ol>
+
+<h2 id="contig-登録用ファイルの検証">Contig 登録用ファイルの検証<a name="agpparser"></a></h2>
+
+<h3 id="contig-パネルの構成-">Contig パネルの構成 <a name="panel-2"></a></h3>
+
+<p>下図で赤い四角で囲んだ部分にある Contig タブをクリックしますと、この表示になります。</p>
+
+<p><img src="/assets/images/ddbj/UME4.png" alt="" title="Contig 登録用ファイルの検証" /></p>
+
+<ol>
+  <li>処理対象とする <a href="/ddbj/file-format.html#annotation">アノテーションファイル</a> を指定します。</li>
+  <li>処理対象とする <a href="/ddbj/file-format.html#agp">AGPファイル</a> を指定します。</li>
+  <li>(2) で引用の対象とする 塩基配列ファイル を指定します。</li>
+  <li>Execute をクリックしますと、指定したファイルを AGPParser でチェックします。</li>
+  <li>Exit をクリックしますと、UME を終了します。</li>
+</ol>
+
+<h3 id="agpparser-実行-">AGPParser 実行 <a name="agpparser-2"></a></h3>
+
+<p>AGPParser は <a href="/ddbj/file-format.html#agp">AGPファイル</a> のフォーマットをチェックします。<br />
+<a href="/ddbj/file-format.html#annotation">アノテーションファイル</a> または AGPファイルで引用する配列で構成される multi-fasta ファイルを指定した場合、相互の整合性をチェックします。</p>
+
+<p><img src="/assets/images/ddbj/UME8.png" alt="" title="AGPParser 実行" class="w600" /></p>
+
+<p>Contig タブをクリックし、 Contig パネル を表示させます。</p>
+
+<ol>
+  <li>処理対象とする <a href="/ddbj/file-format.html#annotation">アノテーションファイル</a> を指定します。必須ではありません。</li>
+  <li>処理対象とする <a href="/ddbj/file-format.html#agp">AGPファイル</a> を指定します。必須です。</li>
+  <li>処理対象とする引用配列の <a href="/ddbj/file-format.html#sequence">配列ファイル</a> を指定します。必須ではありません。</li>
+  <li>Execute をクリックしますと、(1)～(3) で指定したファイルを AGPParser でチェックします。</li>
+  <li>Construct sequence from AGP and multi-fasta files をチェックした場合は、2つのファイルの記載にしたがって塩基配列を作成し、テキストファイルに保存します。</li>
+  <li>Save log in file をチェックした場合は、AGPParser の実行結果をテキストファイルに保存します。</li>
+  <li>AGPParser の実行結果表示ウィンドウが開きます。</li>
+  <li>AGPParser の進行状況を表示します。</li>
+  <li>AGPParser の実行結果を表示します。</li>
+  <li>Save をクリックしますと、(9) の内容をテキストファイルに保存します。</li>
+  <li>Close をクリックしますと、この結果表示ウィンドウを閉じます。</li>
+</ol>
+
+<div class="attention">
+
+  <p>AGPparser は、エラーが発生している場合は、エラーメッセージを出力します。<br />
+エラーメッセージの意味は <a href="/ddbj/validator.html#parser">AGPparser エラーメッセージ</a> をご覧ください。</p>
+
+</div>
+
+      </div>
+      
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              
+              <li>
+                <a href="/ddbj/file-format.html">登録ファイル形式</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/mss-tool.html">MSS データファイル用チェックツール</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/parser.html">Parser ユーザーマニュアル</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/transchecker.html">transChecker ユーザーマニュアル</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/validator.html">validator エラーメッセージ</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/mss-form.html">MSS 利用申し込み</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+experiment_accession    sample_accession    experiment_title    experiment_description  library_name    library_source  library_selection   library_strategy    library_construction_protocol   library_layout  insert_size instrument_model    run_accession   reference   run_file    run_filesize
+JGAX000001026   JGAN000000006   WGS of t-all patient 1  t-all patienst WGS description  library 1   GENOMIC RANDOM  WGS protocol 1  PAIRED  100 Illumina HiSeq 2500 JGAR000000020       2 fastq 10 GB
+JGAX000001027   JGAN000000007   WGS of t-all patient 2  t-all patienst WGS description  library 2   GENOMIC RANDOM  WGS protocol 1  PAIRED  100 Illumina HiSeq 2500 JGAR000000021   GRCh37      
+JGAX000001027   JGAN000000007   WGS of t-all patient 3  t-all patienst WGS description  library 3   GENOMIC RANDOM  WGS protocol 1  PAIRED  100 Illumina HiSeq 2500 JGAR000000022       2 fastq 11 GB

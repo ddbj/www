@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validator implementation to the DDBJ BioSample submission system (16th, March, 2018)</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">Validator implementation to the DDBJ BioSample submission system (16th, March, 2018)</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/news">news</a>
+          </li>
+          <li>
+            <a href="">Validator implementation to the DDBJ BioSample submission system (16th, March, 2018)</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <p>DDBJ BioSample has implemented validator to the submission system to improve the submission process while keeping quality of submitted records on 16th, March.</p>
+
+<p>In the ATTRIBUTES tab of the D-way BioSample submission system, the validator automatically checks uploaded text file describing sample attributes. Please revise and re-upload your sample records according to the error and warning messages displayed. Submitters can not submit the BioSamples until all errors are resolved.</p>
+
+<p>Consistencies between the selected package and taxonomic lineage, the organism and taxonomy id are checked by using semantic web technologies utilizing the RDF version of the taxonomy database.</p>
+
+<p>For rules and messages of the validator, please see <a href="https://www.ddbj.nig.ac.jp/biosample/validation-e.html">Validation page</a>. Upon the validator release, two points are changed.</p>
+
+<h3 id="novel-organism">Novel organism</h3>
+
+<p>To submit a novel organism not registered in <a href="https://www.ncbi.nlm.nih.gov/taxonomy">NCBI Taxonomy</a>, please <a href="/contact-e.html">request the BioSample team</a>to register a novel organism to the Taxonomy database in advance to BioSample submission.</p>
+
+<p>Within 2-3 weeks, <a href="/biosample/attribute-e.html?all=all#taxonomy_id">the mandatory taxonomy_id attribute</a> will be made optional. After this migration, when submitting BioSample with novel organism, please enter a proposed name in the organism field and leave the taxonomy_id empty.</p>
+
+<h3 id="novel-organism">Differentiating sample attributes</h3>
+
+<p>To distinguish samples in structural way, please differentiate samples with distinct attributes other than sample name, title, bioproject_id and description. <a href="/biosample/validation-e.html#BS_R0024">validation rule: BS_R0024</a></p>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

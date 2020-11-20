@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLAST</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">BLAST</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/services">services</a>
+          </li>
+          <li>
+            <a href="">BLAST</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <p>DDBJ では，Web版 BLAST の他に，以下の方法でも BLAST サービスを提供しています。</p>
+
+<ul>
+  <li><a href="/services/wabi-blast.html">WABI BLAST</a></li>
+  <li><a href="https://sc.ddbj.nig.ac.jp/ja/system-guide/software">NIG スーパーコンピュータ</a></li>
+</ul>
+
+<h2 id="programプログラム-">Program：プログラム<a name="program"></a> <a name=""></a></h2>
+
+<p>解析の用途に合わせ，以下のプログラムのいずれかを左カラムより選択します。<br />
+デフォルトでは，blastn が設定されてます。megablast は新たに追加されたプログラムです。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>プログラム</th>
+      <th>クエリ</th>
+      <th>データベース</th>
+      <th>説明</th>
+      <th>　　　　　　</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>megablast</td>
+      <td>塩基配列</td>
+      <td>塩基配列</td>
+      <td>あなたの塩基配列を塩基配列データベースと比較します。 <br /> 長大な塩基配列で相同性検索を行いたい場合，blastn より高速に検索結果が得られます。</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>blastn</td>
+      <td>塩基配列</td>
+      <td>塩基配列</td>
+      <td>あなたの塩基配列を塩基配列データベースと比較します。</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>tblastn</td>
+      <td>アミノ酸配列</td>
+      <td>塩基配列</td>
+      <td>あなたのアミノ酸配列に対して，塩基配列データベースを表裏合わせて６通りの読み枠で翻訳しながら比較します。</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>tblastx</td>
+      <td>塩基配列</td>
+      <td>塩基配列</td>
+      <td>あなたの塩基配列を表裏合わせて６通りの読み枠で翻訳しながら，同様に翻訳された塩基配列データベースと比較します。</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>blastp</td>
+      <td>アミノ酸配列</td>
+      <td>アミノ酸配列</td>
+      <td>あなたのアミノ酸配列をアミノ酸配列データベースと比較します。</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>blastx</td>
+      <td>塩基配列</td>
+      <td>アミノ酸配列</td>
+      <td>あなたの塩基配列を表裏合わせて６通りの読み枠で翻訳しながら，アミノ酸配列データベースと比較します。</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="query検索配列名検索配列データ-">Query：検索配列名，検索配列データ<a name="query"></a> <a name=""></a></h2>
+
+<ul>
+  <li>FASTA 形式で検索配列を入力して下さい。</li>
+  <li>データを直接テキストボックスに入力するか，データを格納したファイルを指定（ファイルアップロード機能）します。</li>
+  <li>検索する配列が複数の場合は，各配列を区別するために配列名が必要です。先頭に「&gt;」をつけた配列名の行を各配列の前においてください (multi FASTA 形式)。</li>
+  <li>検索する配列がひとつの場合は，配列名は必要ありません。配列名をつける場合は，先頭に「&gt;」をつけた配列名の行を配列の前において下さい。</li>
+</ul>
+
+<p>FASTA 形式</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;my query sequence 1
+CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
+GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
+GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
+</code></pre></div></div>
+
+<p>複数配列の入力例 (multi FASTA 形式)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;my query sequence 1
+CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
+GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
+GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
+&gt;my query sequence 2
+GGCCAGGGCACCCAGTCTGAGAACAGCTGCACCCGCTTCCCAGGCAACCTGCCTCACATG
+CTTCGAGACCTCCGAGATGCCTTCAGCAGAGTGAAGACTTTCTTTCAAATGAAGGATCAG
+CTGGACAACATATTGTTAAAGGAGTCCTTGCTGGAGGACTTTAAG
+&gt;my query sequence 3
+ATGGGTCTCACCTCCCAACTGCTTCCCCCTCTGTTCTTCCTGCTAGCATGTGCCGGCAAC
+TTTGCCCACGGACACAACTGCCATATCGCCTTACGGGAGATCATCGAAACTCTGAACAGC
+CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
+</code></pre></div></div>
+
+<div class="attention">
+  <p>配列サイズが巨大な場合，配列数が多い場合などは，以下のような理由で結果を正常に取得出来ない場合があります。<br />
+そのような場合は，配列数を少なくするか配列を短くする等して再度お試し下さい。</p>
+
+  <ul>
+    <li>結果が巨大になりブラウザで表示出来ない</li>
+    <li>検索時間が長くなり過ぎてタイムアウトする</li>
+  </ul>
+
+</div>
+
+<h2 id="data-sets-">Data Sets <a name="data sets"></a></h2>
+
+<h3 id="塩基配列データベースdivision-">塩基配列（データベース，DIVISION）<a name="nucleotide"></a> <a name=""></a></h3>
+
+<h4 id="データベース-">データベース <a name="データベース"></a></h4>
+
+<p>検索対象となるデータベースを指定します。 以下の選択肢からひとつを選びます。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>塩基配列データベース</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DDBJ ALL</td>
+      <td>DDBJ 定期リリース + 新着データ</td>
+    </tr>
+    <tr>
+      <td>DDBJ New</td>
+      <td>DDBJ 定期リリース後の新着データ</td>
+    </tr>
+    <tr>
+      <td>16S rRNA</td>
+      <td>DDBJ 定期リリースから 16S rRNA 配列を取り出したデータ</td>
+    </tr>
+    <tr>
+      <td>RefSeq NA</td>
+      <td>RefSeq (Genomics + RNA)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="division-ddbj-all--ddbj-new-">DIVISION (DDBJ ALL / DDBJ New) <a name="DIVISION_DDBJ_ALL_/_DDBJ_New"></a></h4>
+
+<p>DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，検索対象とする DIVISION の指定が可能です(複数可)。デフォルトでは、Standard divisions のうち　SYN, ENV を除いた 10 divisions が選択されています。 EST については登録数の多い21の生物種から選択することが出来ます。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Standard divisions</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Human</td>
+      <td>HUM</td>
+      <td>ヒト</td>
+    </tr>
+    <tr>
+      <td>Primates</td>
+      <td>PRI</td>
+      <td>霊長類 （ヒトを除く）</td>
+    </tr>
+    <tr>
+      <td>Rodents</td>
+      <td>ROD</td>
+      <td>齧歯類</td>
+    </tr>
+    <tr>
+      <td>Mammals</td>
+      <td>MAM</td>
+      <td>哺乳類 （ヒト、霊長類、齧歯類を除く）</td>
+    </tr>
+    <tr>
+      <td>Vertebrates</td>
+      <td>VRT</td>
+      <td>脊椎動物 （ヒト、霊長類、齧歯類、哺乳類を除く）</td>
+    </tr>
+    <tr>
+      <td>Invertebrates</td>
+      <td>INV</td>
+      <td>無脊椎動物</td>
+    </tr>
+    <tr>
+      <td>Plants</td>
+      <td>PLN</td>
+      <td>植物・酵母・藻類</td>
+    </tr>
+    <tr>
+      <td>Bacteria</td>
+      <td>BCT</td>
+      <td>バクテリア（原核生物）</td>
+    </tr>
+    <tr>
+      <td>Viruses</td>
+      <td>VRL</td>
+      <td>ウイルス</td>
+    </tr>
+    <tr>
+      <td>Phages</td>
+      <td>PHG</td>
+      <td>バクテリオファージ</td>
+    </tr>
+    <tr>
+      <td>Synthetic DNAs</td>
+      <td>SYN</td>
+      <td>合成配列 （合成遺伝子）</td>
+    </tr>
+    <tr>
+      <td>ENV</td>
+      <td>ENV</td>
+      <td>環境サンプル (environmental samples)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>High throughput divisions</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HTC</td>
+      <td>HTC</td>
+      <td>High Throughput cDNAs</td>
+    </tr>
+    <tr>
+      <td>HTG</td>
+      <td>HTG</td>
+      <td>High Throughput Genomic sequences</td>
+    </tr>
+    <tr>
+      <td>TSA</td>
+      <td>TSA</td>
+      <td>Transcriptome Shotgun Assembly</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>EST divisions</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A.thaliana</td>
+      <td>Arabidopsis thaliana （シロイヌナズナ）</td>
+    </tr>
+    <tr>
+      <td>B.taurus</td>
+      <td>Bos taurus （ウシ）</td>
+    </tr>
+    <tr>
+      <td>C.elegans</td>
+      <td>Caenorhabditis elegans （線虫）</td>
+    </tr>
+    <tr>
+      <td>C.reinhardtii</td>
+      <td>Chlamydomonas reinhardtii （クラミドモナス）</td>
+    </tr>
+    <tr>
+      <td>C.intestinalis</td>
+      <td>Ciona intestinalis （カタユウレイボヤ）</td>
+    </tr>
+    <tr>
+      <td>D.rerio</td>
+      <td>Danio rerio （ゼブラフィッシュ）</td>
+    </tr>
+    <tr>
+      <td>D.discoideum</td>
+      <td>Dictyostelium discoideum （キイロタマホコリカビ）</td>
+    </tr>
+    <tr>
+      <td>D.melanogaster</td>
+      <td>D.melanogaster （ショウジョウバエ）</td>
+    </tr>
+    <tr>
+      <td>G.gallus</td>
+      <td>Gallus gallus （ニワトリ）</td>
+    </tr>
+    <tr>
+      <td>G.max</td>
+      <td>Glycine max （ダイズ）</td>
+    </tr>
+    <tr>
+      <td>H.sapiens</td>
+      <td>Homo sapiens （ヒト）</td>
+    </tr>
+    <tr>
+      <td>H.vulgare</td>
+      <td>Hordeum vulgare （亜種も統合）</td>
+    </tr>
+    <tr>
+      <td>M.truncatula</td>
+      <td>Medicago truncatula （特殊ライブラリも統合）</td>
+    </tr>
+    <tr>
+      <td>M.musculus</td>
+      <td>Mus musculus （ハツカネズミ）</td>
+    </tr>
+    <tr>
+      <td>O.sativa</td>
+      <td>Oryza sativa （亜種レベルも統合）</td>
+    </tr>
+    <tr>
+      <td>R.norvegicus</td>
+      <td>Rattus norvegicus （Rattus sp. も統合）</td>
+    </tr>
+    <tr>
+      <td>S.lycopersicum</td>
+      <td>Solanum lycopersicum （トマト）</td>
+    </tr>
+    <tr>
+      <td>T.aestivum</td>
+      <td>Triticum aestivum （コムギ）</td>
+    </tr>
+    <tr>
+      <td>X.laevis</td>
+      <td>Xenopus laevis （アフリカツメガエル）</td>
+    </tr>
+    <tr>
+      <td>X.tropicalis</td>
+      <td>Xenopus tropicalis （アフリカツメガエル）</td>
+    </tr>
+    <tr>
+      <td>Z.mays</td>
+      <td>Zea mays （トウモロコシ）</td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>上記以外 （Others）</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>その他</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Patent</td>
+      <td>PAT</td>
+      <td>特許データ</td>
+    </tr>
+    <tr>
+      <td>Unannotated Seq</td>
+      <td>UNA</td>
+      <td>未注釈データ</td>
+    </tr>
+    <tr>
+      <td>GSS</td>
+      <td>GSS</td>
+      <td>ゲノム研究関連 (genome survey sequences)</td>
+    </tr>
+    <tr>
+      <td>STS</td>
+      <td>STS</td>
+      <td>sequence tagged sites</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><span class="red">*</span>特許データの利用に際しては，<a href="/ddbj/patent-data.html">特許データ利用に関する注意</a>をご参照ください。</p>
+
+<h4 id="データベースオプションrefseq-">データベースオプション（RefSeq） <a name="データベースオプション（RefSeq）"></a></h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>定期リリース（genomic/RNA)</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fungi</td>
+      <td>菌類</td>
+    </tr>
+    <tr>
+      <td>Invertebrate</td>
+      <td>無脊椎動物</td>
+    </tr>
+    <tr>
+      <td>Microbial</td>
+      <td>細菌</td>
+    </tr>
+    <tr>
+      <td>Mitochondrion</td>
+      <td>ミトコンドリア</td>
+    </tr>
+    <tr>
+      <td>Plant</td>
+      <td>植物</td>
+    </tr>
+    <tr>
+      <td>Plasmid</td>
+      <td>プラスミド</td>
+    </tr>
+    <tr>
+      <td>Plastid</td>
+      <td>色素体</td>
+    </tr>
+    <tr>
+      <td>Protozoa</td>
+      <td>原生生物</td>
+    </tr>
+    <tr>
+      <td>Vertebrate Mammalian</td>
+      <td>哺乳類</td>
+    </tr>
+    <tr>
+      <td>Vertebrate Other</td>
+      <td>哺乳類以外の脊椎動物</td>
+    </tr>
+    <tr>
+      <td>Viral</td>
+      <td>ウィルス</td>
+    </tr>
+    <tr>
+      <td>Daily Updates</td>
+      <td>Daily Updates</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>モデル生物（Genomic)</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>H. sapiens</td>
+      <td>ヒト</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>モデル生物（RNA)</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>B. taurus</td>
+      <td>ウシ</td>
+    </tr>
+    <tr>
+      <td>D. rerio</td>
+      <td>メダカ</td>
+    </tr>
+    <tr>
+      <td>H. sapiens</td>
+      <td>ヒト</td>
+    </tr>
+    <tr>
+      <td>M. musculus</td>
+      <td>マウス</td>
+    </tr>
+    <tr>
+      <td>R. norvegicus</td>
+      <td>ラット</td>
+    </tr>
+    <tr>
+      <td>X. tropicalis</td>
+      <td>アフリカツメガエル</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="アミノ酸配列データベースdivision-">アミノ酸配列（データベース，DIVISION） <a name="protein"></a></h3>
+
+<h4 id="データベース--1">データベース <a name="データベース"></a></h4>
+
+<p>デフォルトは　UniProt(Swiss-Prot + TrEMBL)です。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Proterin Databases</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>UniProt (Swiss-Prot + TrEMBL)</td>
+      <td>Swiss-Prot + TrEMBL</td>
+    </tr>
+    <tr>
+      <td>UniProt (Swiss-Prot)</td>
+      <td>Swiss-Prot</td>
+    </tr>
+    <tr>
+      <td>UniProt (TrEMBL)</td>
+      <td>TrEMBL</td>
+    </tr>
+    <tr>
+      <td>Patent</td>
+      <td>JPO，EPO，USPTO，KIPO の全データ <br /> （Patent　を選択すると４つ全てにチェックが入ります。個々の選択は可能です。不要なチェックを外してください。）</td>
+    </tr>
+    <tr>
+      <td>DAD (periodical release + daily updates)</td>
+      <td>DAD 定期リリース + 新着データ</td>
+    </tr>
+    <tr>
+      <td>DAD (daily updates)</td>
+      <td>DAD 定期リリース後の新着データ</td>
+    </tr>
+    <tr>
+      <td>RefSeq AA</td>
+      <td>Refseq(Protein)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><span class="red">*</span>特許データの利用に際しては，<a href="/ddbj/patent-data.html">特許データ利用に関する注意</a>をご参照ください。</p>
+
+<p><span class="red">*</span>現在のバージョンは <a href="/latest-releases.html">こちら</a> からご確認ください。</p>
+
+<h4 id="divisiondad-">DIVISION(DAD) <a name="DIVISIONDAD"></a></h4>
+
+<p>検索対象とする DIVISION を指定します。以下の選択肢から指定が可能です(複数可)。デフォルトでは、Standard divisions のうち　SYN, ENV を除いた 10 divisions が選択されています。 EST については登録数の多い21種のデータから選択することが出来ます。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Standard divisions</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Human</td>
+      <td>HUM</td>
+      <td>ヒト</td>
+    </tr>
+    <tr>
+      <td>Primates</td>
+      <td>PRI</td>
+      <td>霊長類 （ヒトを除く）</td>
+    </tr>
+    <tr>
+      <td>Rodents</td>
+      <td>ROD</td>
+      <td>齧歯類</td>
+    </tr>
+    <tr>
+      <td>Mammals</td>
+      <td>MAM</td>
+      <td>哺乳類 （ヒト、霊長類、齧歯類を除く）</td>
+    </tr>
+    <tr>
+      <td>Vertebrates</td>
+      <td>VRT</td>
+      <td>脊椎動物 （ヒト、霊長類、齧歯類、哺乳類を除く）</td>
+    </tr>
+    <tr>
+      <td>Invertebrates</td>
+      <td>INV</td>
+      <td>無脊椎動物</td>
+    </tr>
+    <tr>
+      <td>Plants</td>
+      <td>PLN</td>
+      <td>植物・酵母・藻類</td>
+    </tr>
+    <tr>
+      <td>Bacteria</td>
+      <td>BCT</td>
+      <td>バクテリア（原核生物）</td>
+    </tr>
+    <tr>
+      <td>Viruses</td>
+      <td>VRL</td>
+      <td>ウイルス</td>
+    </tr>
+    <tr>
+      <td>Phages</td>
+      <td>PHG</td>
+      <td>バクテリオファージ</td>
+    </tr>
+    <tr>
+      <td>Synthetic DNAs</td>
+      <td>SYN</td>
+      <td>合成配列 （合成遺伝子）</td>
+    </tr>
+    <tr>
+      <td>ENV</td>
+      <td>ENV</td>
+      <td>環境サンプル (environmental samples)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>High throughput divisions</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HTC</td>
+      <td>HTC</td>
+      <td>High Throughput cDNAs</td>
+    </tr>
+    <tr>
+      <td>HTG</td>
+      <td>HTG</td>
+      <td>High Throughput Genomic sequences</td>
+    </tr>
+    <tr>
+      <td>TSA</td>
+      <td>TSA</td>
+      <td>Transcriptome Shotgun Assembly</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>EST divisions</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A.thaliana</td>
+      <td>Arabidopsis thaliana （シロイヌナズナ）</td>
+    </tr>
+    <tr>
+      <td>B.taurus</td>
+      <td>Bos taurus （ウシ）</td>
+    </tr>
+    <tr>
+      <td>C.elegans</td>
+      <td>Caenorhabditis elegans （線虫）</td>
+    </tr>
+    <tr>
+      <td>C.reinhardtii</td>
+      <td>Chlamydomonas reinhardtii （クラミドモナス）</td>
+    </tr>
+    <tr>
+      <td>C.intestinalis</td>
+      <td>Ciona intestinalis （カタユウレイボヤ）</td>
+    </tr>
+    <tr>
+      <td>D.rerio</td>
+      <td>Danio rerio （ゼブラフィッシュ）</td>
+    </tr>
+    <tr>
+      <td>D.discoideum</td>
+      <td>Dictyostelium discoideum （キイロタマホコリカビ）</td>
+    </tr>
+    <tr>
+      <td>D.melanogaster</td>
+      <td>D.melanogaster （ショウジョウバエ）</td>
+    </tr>
+    <tr>
+      <td>G.gallus</td>
+      <td>Gallus gallus （ニワトリ）</td>
+    </tr>
+    <tr>
+      <td>G.max</td>
+      <td>Glycine max （ダイズ）</td>
+    </tr>
+    <tr>
+      <td>H.sapiens</td>
+      <td>Homo sapiens （ヒト）</td>
+    </tr>
+    <tr>
+      <td>H.vulgare</td>
+      <td>Hordeum vulgare （亜種も統合）</td>
+    </tr>
+    <tr>
+      <td>M.truncatula</td>
+      <td>Medicago truncatula （特殊ライブラリも統合）</td>
+    </tr>
+    <tr>
+      <td>M.musculus</td>
+      <td>Mus musculus （ハツカネズミ）</td>
+    </tr>
+    <tr>
+      <td>O.sativa</td>
+      <td>Oryza sativa （亜種レベルも統合）</td>
+    </tr>
+    <tr>
+      <td>R.norvegicus</td>
+      <td>Rattus norvegicus （Rattus sp. も統合）</td>
+    </tr>
+    <tr>
+      <td>S.lycopersicum</td>
+      <td>Solanum lycopersicum （トマト）</td>
+    </tr>
+    <tr>
+      <td>T.aestivum</td>
+      <td>Triticum aestivum （コムギ）</td>
+    </tr>
+    <tr>
+      <td>X.laevis</td>
+      <td>Xenopus laevis （アフリカツメガエル）</td>
+    </tr>
+    <tr>
+      <td>X.tropicalis</td>
+      <td>Xenopus tropicalis （アフリカツメガエル）</td>
+    </tr>
+    <tr>
+      <td>Z.mays</td>
+      <td>Zea mays （トウモロコシ）</td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>上記以外 （Others）</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>その他</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Patent</td>
+      <td>PAT</td>
+      <td>特許データ</td>
+    </tr>
+    <tr>
+      <td>Unannotated Seq</td>
+      <td>UNA</td>
+      <td>未注釈データ</td>
+    </tr>
+    <tr>
+      <td>GSS</td>
+      <td>GSS</td>
+      <td>ゲノム研究関連 (genome survey sequences)</td>
+    </tr>
+    <tr>
+      <td>STS</td>
+      <td>STS</td>
+      <td>sequence tagged sites</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="データベースオプションrefseq--1">データベースオプション（RefSeq） <a name="データベースオプション（RefSeq）"></a></h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>定期リリース(Protein)</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fungi</td>
+      <td>菌類</td>
+    </tr>
+    <tr>
+      <td>Invertebrate</td>
+      <td>無脊椎動物</td>
+    </tr>
+    <tr>
+      <td>Microbial</td>
+      <td>細菌</td>
+    </tr>
+    <tr>
+      <td>Mitochondrion</td>
+      <td>ミトコンドリア</td>
+    </tr>
+    <tr>
+      <td>Plant</td>
+      <td>植物</td>
+    </tr>
+    <tr>
+      <td>Plasmid</td>
+      <td>プラスミド</td>
+    </tr>
+    <tr>
+      <td>Plastid</td>
+      <td>色素体</td>
+    </tr>
+    <tr>
+      <td>Protozoa</td>
+      <td>原生生物</td>
+    </tr>
+    <tr>
+      <td>Vertebrate Mammalian</td>
+      <td>哺乳類</td>
+    </tr>
+    <tr>
+      <td>Vertebrate Other</td>
+      <td>哺乳類以外の脊椎動物</td>
+    </tr>
+    <tr>
+      <td>Viral</td>
+      <td>ウィルス</td>
+    </tr>
+    <tr>
+      <td>Daily Updates</td>
+      <td>Daily Updates</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>モデル生物（RNA)</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>B. taurus</td>
+      <td>ウシ</td>
+    </tr>
+    <tr>
+      <td>D. rerio</td>
+      <td>メダカ</td>
+    </tr>
+    <tr>
+      <td>H. sapiens</td>
+      <td>ヒト</td>
+    </tr>
+    <tr>
+      <td>M. musculus</td>
+      <td>マウス</td>
+    </tr>
+    <tr>
+      <td>R. norvegicus</td>
+      <td>ラット</td>
+    </tr>
+    <tr>
+      <td>X. tropicalis</td>
+      <td>アフリカツメガエル</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="optional-parameters">Optional Parameters<a name="parameters"></a></h2>
+
+<h3 id="scores検索結果一覧の表示数-">SCORES：検索結果一覧の表示数 <a name="scores"></a></h3>
+
+<p>相同性スコアの順位表を，第何位まで表示するかを指定します。<br />
+デフォルトは100位までです。<br />
+検索結果に期待される対象が含まれない場合，この値をより大きな値にすると，結果が改善される可能性があります。</p>
+
+<h3 id="alignments整列-アライメント-">ALIGNMENTS：整列 （アライメント） <a name="alignments"></a></h3>
+
+<p>相同な配列との整列を，相同性スコアの順で第何位まで表示させるかを指定します。<br />
+検索結果に期待される対象が含まれない場合，この値をより大きな値にすると，結果が改善される可能性があります。</p>
+
+<h3 id="expect期待値e-value-">EXPECT：期待値（E-value） <a name="expect value"></a></h3>
+
+<p>出力される配列に関して統計的な閾値を指定します。デフォルトは１０ですが，これは偶然に一致する配列が１０本あるという条件を意味しており，この条件よりも偶然に一致する配列が少ないと統計的に計算された配列が出力されます。<br />
+多くの相同な配列を出力させるには，この値を大きく指定します。逆に，非常に高い相同性を持つ配列だけを出力させるには，この値を小さく指定します。<br />
+また，指数表記で指定可能です。(例：1.0E+1)</p>
+
+<h3 id="scoring-matrixアミノ酸置換表-">SCORING MATRIX：アミノ酸置換表 <a name="scoring matrix"></a></h3>
+
+<p>アミノ酸配列の置換行列の表を指定します。<br />
+blastx, blastp, tblastn, tblastx で指定可能です。指定可能な置換行列は以下のとおりです。<br />
+デフォルトでは BLOSUM62 が設定されます。</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>PAM30</td>
+      <td>PAM30 substitution matrix</td>
+    </tr>
+    <tr>
+      <td>PAM70</td>
+      <td>PAM70 substitution matrix</td>
+    </tr>
+    <tr>
+      <td>PAM250</td>
+      <td>PAM250 substitution matrix</td>
+    </tr>
+    <tr>
+      <td>BLOSUM45</td>
+      <td>BLOSUM Clustered Scoring Matrix</td>
+    </tr>
+    <tr>
+      <td>BLOSUM50</td>
+      <td>BLOSUM Clustered Scoring Matrix</td>
+    </tr>
+    <tr>
+      <td>BLOSUM62</td>
+      <td>BLOSUM Clustered Scoring Matrix</td>
+    </tr>
+    <tr>
+      <td>BLOSUM80</td>
+      <td>BLOSUM Clustered Scoring Matrix</td>
+    </tr>
+    <tr>
+      <td>BLOSUM90</td>
+      <td>BLOSUM Clustered Scoring Matrix</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="filterフィルター-">FILTER：フィルター <a name="filter"></a></h3>
+
+<p>検索配列データのフィルタリング(マスキング)を指定します。デフォルトではフィルタリングを行います。<br />
+フィルタリングにより，問い合わせ配列のうち構造の複雑度が低い領域を無視することができます。<br />
+一般に proline-rich 領域や poly-A tail などの領域は構造的な偏りが反映されて異常に高いスコアで一致する傾向がありますが，フィルタリングによりそのような有意でない一致を結果から除くことができます。<br />
+blastn 使用時には Tatusov and Lipman によるDUSTプログラムにより，他の場合は Wootton &amp; Federhen (Computers and Chemistry, 1993) による SEG プログラムによりフィルタリングされます。<br />
+フィルタプログラムによって見つけられた低複雑度領域は，塩基配列の場合 “N”，アミノ酸配列の場合 “X” の文字で置き換えられます。</p>
+
+<h3 id="word-size-">WORD SIZE <a name="word size"></a></h3>
+
+<p>自然数を入力します。デフォルトでは blastn の megablast の場合は 28，blastn の blastn の場合は11，<br />
+blastp，blastx，tblastn，tblastx の場合は 3 です。<br />
+blastn の場合は，wordsize を 11 以外の数に変えるべきではありません。</p>
+
+<h2 id="request-id検索結果表示-">Request ID，検索結果表示 <a name="result"></a></h2>
+
+<h3 id="request-id-">Request ID <a name="request id"></a></h3>
+
+<p>検索実行後の画面に Request ID が表示されますので，必ず控えて下さい。（問い合わせや Result Viewer （後述）で結果を見たい時などに必要です）</p>
+
+<p>Request ID:wabi_blast_2013-0314-1407-23-16-946732</p>
+
+<p><img src="/assets/images/help/blast_help_01.gif" alt="blast_requestID" /></p>
+
+<h3 id="結果画面に表示される情報-">結果画面に表示される情報 <a name="result screen"></a></h3>
+<p><img src="/assets/images/help/blast_help_02.gif" alt="検索画面に表示される情報" /></p>
+
+<h3 id="結果中のアクセッション番号の検索表示-">結果中のアクセッション番号の検索・表示 <a name="view flatfile"></a></h3>
+<p>該当するアクセッション番号にチェックを入れて、”getentry”　ボタンをクリックすると、getentry　の結果が表示されます。</p>
+
+<p><img src="/assets/images/help/blast_help_03.gif" alt="結果中のアクセッション番号の検索・表示" /></p>
+
+<h3 id="検索結果の閲覧-">検索結果の閲覧 <a name="result viewer"></a></h3>
+
+<h4 id="result-viewer-">Result Viewer <a name="Result_Viewer"></a></h4>
+
+<p>ブラウザを閉じてしまっても、Result Viewer を用いてRequest ID から結果を閲覧することができます。<br />
+検索結果閲覧期間は、実行後７日間です。</p>
+
+<p><img src="/assets/images/help/blast_help_04.gif" alt="Result Viewer" /></p>
+
+<h2 id="clustalw-set-up-">ClustalW Set up <a name="setup"></a></h2>
+
+<p>チェックボックスで ClustalW で解析を行いたい配列を選択して”ClustalW”　ボタンをクリックすると、選択した配列が入力された状態でClustalW 画面が開きます。</p>
+
+<ol>
+  <li><img src="/assets/images/help/blast_help_05.gif" alt="ClustalW セットアップ（１）" /></li>
+  <li><img src="/assets/images/help/blast_help_06.gif" alt="ClustalW セットアップ（2）" /></li>
+</ol>
+
+<h2 id="原著論文関連論文および参考文献-">原著論文，関連論文および参考文献 <a name="reference"></a></h2>
+
+<h3 id="原著論文-">原著論文 <a name="original_articles"></a></h3>
+
+<ul>
+  <li>Altschul SF, Madden TL, Schaffer AA, Zhang J, Zhang Z, Miller W, Lipman DJ. (1997) <a href="//nar.oxfordjournals.org/content/25/17/3389.short">Gapped BLAST and PSI-BLAST: a new generation of protein database search programs.</a> Nucleic Acids Res. 25(17):3389-3402.</li>
+</ul>
+
+<h3 id="関連論文-">関連論文 <a name="related_articles"></a></h3>
+
+<ul>
+  <li>Zhang J, Madden TL. (1997) <a href="//genome.cshlp.org/content/7/6/649.full?sid=53d7f440-e944-4873-9c3f-768c56705bcc">PowerBLAST: A New Network BLAST Application for Interactive or Automated Sequence Analysis and Annotation.</a> Genome Res.7(6):649-656.</li>
+  <li>Madden TL, Tatusov RL, Zhang J. (1996) Applications of network BLAST server. Methods Enzymol. 266:131-141.</li>
+  <li>Gish W, States DJ. (1993) <a href="//www.nature.com/ng/journal/v3/n3/abs/ng0393-266.html">Identification of protein coding regions by database similarity search.</a> Nat Genet. 3(3):266-272.</li>
+  <li>Altschul SF, Gish W, Miller W, Myers EW, Lipman DJ. (1990) Basic local alignment search tool. J Mol Biol. 215(3):403-10.</li>
+  <li>Karlin S, Altschul SF. (1990) <a href="//www.pnas.org/content/87/6/2264.short">Methods for assessing the statistical significance of molecular sequence features by using general scoring  schemes.</a> Proc Natl Acad Sci U S A. 87(6):2264-2268.</li>
+</ul>
+
+<h3 id="参考文献-">参考文献 <a name="reference_list"></a></h3>
+
+<ul>
+  <li>「改訂　第２版　バイオデータベースとウェブツールの手とり足とり活用法」（羊土社）<br />
+編集／中村保一，石川　淳，磯合　敦，平川美夏，坊農秀雅  ISBN978-4-7581-0811-9</li>
+  <li>[BLAST] Ian Korf, Mark Yandell and Joseph Bedell, OREILLY</li>
+</ul>
+
+
+      </div>
+      
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              
+              <li>
+                <a href="/services/arsa.html">ARSA ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/getentry.html">getentry ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/vecscreen.html">VecScreen ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/clustalw.html">ClustalW ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/txsearch.html">TXSearch ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/past-services.html">過去のサービス</a>
+              </li>
+              
+              <li>
+                <a href="/services/references.html">関連論文</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi.html">WABI (Web API for Biology)</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-blast.html">WABI BLAST ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-clustalw.html">WABI ClustalW ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-vecscreen.html">WABI VecScreen ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-mafft.html">WABI MAFFT ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/pipeline.html">Pipeline ヘルプ</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

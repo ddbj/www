@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>18th ICM: May 16-18 2005, Mishima, Japan</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">18th ICM: May 16-18 2005, Mishima, Japan</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/icm">icm</a>
+          </li>
+          <li>
+            <a href="">18th ICM: May 16-18 2005, Mishima, Japan</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="2005-">2005 <a name="2005"></a></h2>
+
+<h3 id="18th-icm-may-16-18-2005-mishima-japan">18th ICM: May 16-18 2005, Mishima, Japan</h3>
+
+<p>To operate and implement the collaborative construction of the international nucleotide sequence database, the three data banks; DDBJ, EMBL-Bank/EBI, GenBank/NCBI hold the international collaborators meeting every year.In 2005, the meeting was held at DDBJ in Mishima, 16-18 May.</p>
+
+<p>DDBJ, EMBL-Bank, GenBank reported each databank activities in the last year, discussed practical matters to maintain and to update the nucleotide sequence database. The outcomes of the meeting are summarized below.</p>
+
+<h4 id="the-items-discussed-and-to-be-studied">The Items; Discussed and To Be Studied</h4>
+
+<p>The international nucleotide sequence database constructed by the collaboration among DDBJ, EMBL-Bank and GenBank was agreed to be calledINSDC; International Nucleotide Sequence Database Collaboration. INSDC has made public its web site; <a href="http://www.insdc.org/">//www.insdc.org/</a></p>
+
+<p>Since 2003, we have discussed the format of INSDSeq-XML.DDBJ has made the trial data in INSDSeq-XML format available at its FTP site and its retrival tool, getentry, in advance of EMBL-Bank and GenBank</p>
+
+<p>Since 2004, we have accepted the submission of <a href="/ddbj/mga-e.html">MGA data</a>. We reconsidered the rules for acceptance and the format for distribution.</p>
+
+<p>Since 2002, we have accepted <a href="/ddbj/tpa-e.html">TPA submission</a>. In the past, some biological evidence was required for the TPA submission. Now, we are planning to accept the inferred sequences by non-experimental evidence. We will continue to discuss the guideline for acceptance and classification of TPA submissions.</p>
+
+<p>Since 2003, the /<a href="/ddbj/qualifiers-e.html#locus_tag">locus_tag</a> qualifier has been used as the identifier for the tracking purpose by many genome projects. In the past, we allowed submitters to use the flexible prefixes for their locus_tag. However, since we are afraid that it would cause some disruption in the future, we will manage and assign prefixes of locus_tag to keep uniquness through the whole database. In association with it, we will improve our flat file format to include the project ID that can be utilized to specify the project (mainly for genome projects).</p>
+
+<p>Relating to their strandness and partiality, rRNA sequences are not consistently annotated in the database. It was agreed that we should check them,and also that the same preference for plus stranded annotation should be applied to other single feature.</p>
+
+<h4 id="changes-to-the-feature-table-document-features-and-qualifiers">Changes to the Feature Table Document: Features and Qualifiers</h4>
+
+<p>For features, especially <a href="/ddbj/cds-e.html">CDS</a>, the database users demand the information if the feature description is based on some biological experiment or only inference based on sequence similarity or so.<br />
+To make the evidence information available, evidence qualifier will be split into two new qualifiers, /<a href="/ddbj/qualifiers-e.html#experiment">experiment</a> and /<a href="/ddbj/qualifiers-e.html#inference">inference</a>;</p>
+
+<dl>
+  <dt>a) An argument of the feature based on some biological experiment</dt>
+  <dd>
+    <ul>
+      <li>instead of /evidence=experimental</li>
+      <li>/experiment=”free text” (less than 1000 letters)</li>
+    </ul>
+  </dd>
+  <dt>b) An argument of the feature not based on any biological experiment</dt>
+  <dd>
+    <ul>
+      <li>instead of /evidence=not_experimental</li>
+      <li>/inference=”[TYPE]( same species):[evidence basis]”</li>
+      <li>The values of [TYPE] will be controlled by the list.</li>
+    </ul>
+  </dd>
+  <dt>- note -  </dt>
+  <dt>The old qualifier, /evidence=experimental or not_experimental, will be replaced by folowings, respectively;</dt>
+  <dd>
+    <ul>
+      <li>/experiment=”experimental evidence, no additional details recorded”</li>
+      <li>/inference=”non-experimental evidence, no additional details
+   recorded”</li>
+    </ul>
+  </dd>
+</dl>
+
+<p>Recently, the number of the entries for the research of environmental sampling and divergence of the life (e.g. the BARCODE project) is significantly increased. For these submission, it is important to describe the information on specification of the specimen from which the sequence is obtained. So, five new qualifiers will become legal on the <a href="/ddbj/features-e.html#source">source</a> feature;</p>
+
+<ul>
+  <li>/<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>=”DD MMM
+YYYY”, “MMM YYYY” or “YYYY”
+    <ul>
+      <li>DD ; two-digit for the date,</li>
+      <li>MMM ; three letter for the month abbreviation</li>
+      <li>YYYY; four-digit for the year</li>
+    </ul>
+  </li>
+  <li>/<a href="/ddbj/qualifiers-e.html#lat_lon">lat_lon</a>=”###.## [N or
+S], ###.## [E or W]”</li>
+  <li>/<a href="/ddbj/qualifiers-e.html#collected_by">collected_by</a>=”[Name of
+the person who collected the specimen.]””</li>
+  <li>/<a href="/ddbj/qualifiers-e.html#identified_by">identified_by</a>=”[Name of
+the person who identified the specimen.]”</li>
+  <li>/<a href="/ddbj/qualifiers-e.html#PCR_primers">PCR_primers</a>=”fwd_name:[name],fwd_seq:[sequence],rev_name:[name],
+rev_seq:[sequence]”</li>
+</ul>
+
+<p>The /pseudo qualifier will be legal on
+<a href="/ddbj/features-e.html#intron">intron</a> and
+<a href="/ddbj/features-e.html#misc_RNA">misc_RNA</a> features.</p>
+
+<p>The /rpt_unit qualifier will be split into two new qualifiers;
+/rpt_unit_range and
+/<a href="/ddbj/qualifiers-e.html#rpt_unit_seq">rpt_unit_seq</a> will be
+introduced.</p>
+
+<p>Two new qualifiers,
+/<a href="/ddbj/qualifiers-e.html#ribosomal_slippage">ribosomal_slippage</a> and
+/<a href="/ddbj/qualifiers-e.html#trans_splicing">trans_splicing</a> will be valid
+on the <a href="/ddbj/features-e.html#cds">CDS</a> feature.</p>
+
+<p>“hydrogenosome” will be added to the list of legal values for the
+/<a href="/ddbj/qualifiers-e.html#organelle">organelle</a> qualifier.</p>
+
+<h4 id="changes-to-other-items">Changes to Other Items</h4>
+
+<p><a href="/ddbj/location-e.html">The rules for the description of location</a> will
+be changed;</p>
+
+<p>Combinations of “join” and “order” operators in one location will be
+illegal.</p>
+
+<p>The use of two identical location construction operators within one
+location will be illegal.<br />
+i.e. “100..100” will be illegal.</p>
+
+<p>The usage of “^” will be restricted to adjacent nucleotides<br />
+i.e. “100^200” will be illegal.</p>
+
+<p>The use of range (m.n) descriptor within location spans will be
+illegal.<br />
+i.e. “(5.10)..100” will be illegal.</p>
+
+      </div>
+      
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              
+              <li>
+                <a href="/activities/archives-e.html">DDBJ Publications Archive</a>
+              </li>
+              
+              <li>
+                <a href="/activities/index-e.html">DDBJ staff papers (2009-)</a>
+              </li>
+              
+              <li>
+                <a href="/activities/index-e.html">DDBJ staff presentations (2009-)</a>
+              </li>
+              
+              <li>
+                <a href="/activities/past-presentations-e.html">DDBJ staff presentations (2001-2008)</a>
+              </li>
+              
+              <li>
+                <a href="/activities/past-papers-e.html">DDBJ staff papers（1996-2008）</a>
+              </li>
+              
+              <li>
+                <a href="/activities/index-e.html">DDBJ Annual Reports</a>
+              </li>
+              
+              <li>
+                <a href="/activities/patent-e.html">Patent column from DDBJ</a>
+              </li>
+              
+              <li>
+                <a href="/subscribe-ddbj-e.html">DDBJ Mail Magazine</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

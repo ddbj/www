@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit sequencing experiment</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">Submit sequencing experiment</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/gea">gea</a>
+          </li>
+          <li>
+            <a href="">Submit sequencing experiment</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/gea/index-e.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/gea/overview-e.html">Submission Overview</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/gea/submit-array-e.html">Submit microarray experiment</a>
+        </li>
+        
+        <li>
+          <a href="/gea/submit-sequence-e.html">Submit sequencing experiment</a>
+        </li>
+        
+        <li>
+          <a href="/gea/metadata-e.html">Metadata</a>
+        </li>
+        
+        <li>
+          <a href="/gea/datafile-e.html">Data File</a>
+        </li>
+        
+        <li>
+          <a href="/gea/validation-e.html">Validation</a>
+        </li>
+        
+        <li>
+          <a href="/gea/single-cell-e.html">Single-cell submission guide</a>
+        </li>
+        
+        <li>
+          <a href="/gea/example-e.html">Example</a>
+        </li>
+        
+        <li>
+          <a href="/gea/adf-e.html">Array Design</a>
+        </li>
+        
+        <li>
+          <a href="/gea/matrix-e.html">Data matrix</a>
+        </li>
+        
+        <li>
+          <a href="/gea/reviewer-access-e.html">Reviewer Access</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/en/index-e.html">FAQ</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="http://aoe.dbcls.jp/">Search (AOE)</a>
+      
+      <ul>
+        
+        <li>
+          <a href="http://refex.dbcls.jp/index.php?lang=en">RefEx</a>
+        </li>
+        
+        <li>
+          <a href="https://www.ebi.ac.uk/arrayexpress/browse.html">Search (ArrayExpress)</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/gea">Downloads</a>
+      
+    </li>
+    
+    <li class="">
+      <a href="/gea/about-gea-e.html">About GEA</a>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="gea-submission-flow-">GEA submission flow <a name="gea-submission-flow"></a></h2>
+
+<h3 id="1-obtain-a-submission-account">1. Obtain a submission account</h3>
+
+<ul>
+  <li>Create a <a href="https://ddbj.nig.ac.jp/D-way/">D-way submission account</a>.</li>
+  <li>To enable GEA submission, <a href="/account-e.html#enable-dra-submission-in-account">register a public key and a center name to your account</a>.</li>
+</ul>
+
+<h3 id="2-register-a-bioproject-biosamples-and-sequence-read-archive-dra">2. Register a BioProject, BioSamples and Sequence Read Archive (DRA)</h3>
+
+<p>BioProject and BioSample registration is required for DRA submission.</p>
+
+<h4 id="bioproject-"><a href="/bioproject/submission-e.html">BioProject</a> <a name="BioProject"></a></h4>
+
+<ul>
+  <li>A description of the reseach effort.</li>
+</ul>
+
+<h4 id="biosample-"><a href="/biosample/submission-e.html">BioSample</a><a name="_BioSample"></a> <img src="/assets/images/parts/tsv.png" alt="" class="tsv" /></h4>
+
+<ul>
+  <li>A description of biologically or physically unique samples used to generate experimental data.</li>
+</ul>
+
+<h4 id="dra-"><a href="/dra/submission-e.html">DRA</a><a name="_DRA"></a> <img src="/assets/images/parts/tsv.png" alt="" class="tsv" /></h4>
+
+<ul>
+  <li>Raw sequencing reads and alignments.</li>
+</ul>
+
+<p><img src="/assets/images/parts/tsv.png" alt="" class="tsv" />metadata can be submitted as a tab-delimited text file.</p>
+
+<h3 id="3-upload-processed-data-files">3. Upload processed data files</h3>
+
+<ul>
+  <li>Upload processed data files into the GEA submission directory.</li>
+</ul>
+
+<h3 id="4-select-a-dra-submission">4. Select a DRA submission</h3>
+
+<ul>
+  <li>Select a DRA submission which contains raw sequencing reads for the GEA submission.</li>
+  <li>Select DRA submissions when the GEA experiment has processed data from raw sequencing reads in multiple DRA submissions.</li>
+</ul>
+
+<h3 id="5-select-a-bioproject">5. Select a BioProject</h3>
+
+<ul>
+  <li>Select a BioProject used in the DRA submission when the GEA experiment and DRA submission belong to same project.</li>
+  <li>Select a BioProject not used in the DRA submission when the GEA experiment and DRA submission belong to different projects.</li>
+</ul>
+
+<h3 id="6-prepare-idf-and-sdrf">6. Prepare IDF and SDRF</h3>
+
+<h4 id="idf-">IDF <a name="idf"></a></h4>
+
+<ul>
+  <li>The IDF (Investigation Description Format) file is used to give an overview of the experiment, including the experimental design, protocols and publication information.</li>
+</ul>
+
+<h4 id="sdrf-">SDRF <a name="sdrf"></a><img src="/assets/images/parts/tsv.png" alt="" class="tsv" /></h4>
+
+<ul>
+  <li>The SDRF (Sample and Data Relationship Format) describes the sample characteristics and the relationship between samples, data files etc.</li>
+  <li>SDRF template is generated from selected BioProject, BioSample(s) and DRA submission(s). Enter additional information.</li>
+</ul>
+
+<h3 id="7-submit-idf-and-sdrf-and-validate-data-files">7. Submit IDF and SDRF and validate data files</h3>
+
+<ul>
+  <li>After submitting IDF and SDRF metadata in the submission web system, validation of the uploaded data files are automatically started.</li>
+  <li>The submission passed validation will be reviewed.</li>
+</ul>
+
+<h2 id="pre-submission-checklist-">Pre-submission checklist <a name="checklist"></a></h2>
+
+<div class="accordion-menu">
+  <h4 class="toggle-content-btn"><a href="javascript:void(0)">Single-cell sequencing experiment</a></h4>
+  <div class="accordion-content">
+
+    <p>Refer to <a href="https://www.ebi.ac.uk/arrayexpress/help/single-cell_submission_guide.html">ArrayExpress Single-cell submission guide</a>. Please <a href="/contact-ddbj-e.html">contact GEA team</a> to upload any additional files for custom spike-ins or to facilitate data analysis.</p>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« Close</a></p>
+  </div>
+</div>
+
+<div class="accordion-menu">
+  <h4 class="toggle-content-btn"><a href="javascript:void(0)">More than one technology per experiment</a></h4>
+  <div class="accordion-content">
+
+    <p>GEA will ask you for the technology and name of the array, and applies it to the whole submission. If you have used different types of technologies for the same set of samples, we ask you to create separate submissions. Please make sure that the submissions have distinct titles (even though they may belong to the same study), in order to avoid mistakes. If you have samples from more than one array design in your experiment, it is possible to submit only one experiment. If you wish to do this, please <a href="/contact-ddbj-e.html">contact GEA team</a>.</p>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« Close</a></p>
+  </div>
+</div>
+
+<h2 id="sequencing-experiment-submission-">Sequencing experiment submission <a name="seq-sub"></a></h2>
+
+<h3 id="create-a-new-submission-">Create a new submission <a name="create-new-submission"></a></h3>
+
+<p>Login <a href="https://ddbj.nig.ac.jp/D-way/">the D-way (https://trace.ddbj.nig.ac.jp/D-way)</a> and the top page is displayed. Move to the GEA submission site from the “GEA” menu at the top.</p>
+
+<p>Create a new microarray experiment submission by selecting “Sequencing” and clicking the [New submission]. At the same time, in the DDBJ file server (ftp-private.ddbj.nig.ac.jp), a corresponding subdirectory is created under the submitter’s GEA upload directory. <a href="#upload-data">Upload data files to this subdirectory</a>.</p>
+
+<div class="attention red">
+
+  <p>If there is no reply from submitters after three months of initial contact, submissions will be cancelled.</p>
+
+</div>
+
+<a class="group1" href="/assets/images/books/seq-sub1.jpg" title="Create a new submission">
+  <figure class="image">
+    <img src="/assets/images/books/seq-sub1.jpg" alt="Create a new submission" class="w450">
+    <figcaption>Create a new submission</figcaption>
+  </figure>
+</a>
+
+<p>List of submission status is as follows. The GEA team reviews submission whose status is in “submission_validated” or “data_error”.</p>
+
+<p class="tablecaption">List of submission status</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Status</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>New</td>
+      <td>Metadata are not submitted.</td>
+    </tr>
+    <tr>
+      <td>Data Submitted</td>
+      <td>Metadata and data files are submitted.</td>
+    </tr>
+    <tr>
+      <td>Data Validating</td>
+      <td>Validating data files.</td>
+    </tr>
+    <tr>
+      <td>Validation Error</td>
+      <td>Error occurred in data validation process.</td>
+    </tr>
+    <tr>
+      <td>Data Validated</td>
+      <td>Metadata and data are validated.</td>
+    </tr>
+    <tr>
+      <td>Curating</td>
+      <td>Curator is reviewing the submission.</td>
+    </tr>
+    <tr>
+      <td>Accession Issued</td>
+      <td>Accession number is issued to the submission.</td>
+    </tr>
+    <tr>
+      <td>Confidential</td>
+      <td>Archive files are created and submission is kept private</td>
+    </tr>
+    <tr>
+      <td>Public</td>
+      <td>Released to public.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="upload-processed-data-files">Upload processed data files<a name="upload-data"></a></h3>
+
+<div class="accordion-menu">
+  <h4 class="toggle-content-btn"><a href="javascript:void(0)">Upload files by using terminal (Linux/Mac OS X)</a></h4>
+  <div class="accordion-content">
+
+    <p>Upload files by executing,</p>
+
+    <ul>
+      <li>&lt;Your Files&gt; Files to be transferred. Ex: file1 file2 (file1 and file2), file* (all files whose filenames start with “file”)</li>
+      <li>&lt;D-way Login ID&gt; D-way Login ID (ex. test07)</li>
+      <li>&lt;GEA Submission ID&gt; GEA Submission ID (ex. ESUB000350)</li>
+      <li>command example: scp Arabidopsis_control_rep_1.CEL test07@ftp-private.ddbj.nig.ac.jp:~/gea/ESUB000350</li>
+    </ul>
+
+    <p>Enter the passphrase set for the keys.</p>
+
+    <p>You can directly handle the transferred files by logging in the server. SSH login the server by executing,</p>
+
+    <p>Enter the passphrase set for the keys.</p>
+
+    <p>After logging in successfully, the following prompt is displayed.</p>
+
+    <p>The login environment is private for the submitter. Users other than the submitter cannot access the data. Executable commands are restricted to the following ones. Users can delete unnecessary files.</p>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« Close</a></p>
+  </div>
+</div>
+
+<div class="accordion-menu">
+  <h4 class="toggle-content-btn"><a href="javascript:void(0)">Upload files by using WinSCP (Windows)</a></h4>
+  <div class="accordion-content">
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gJqgCvUc0Y8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+    <p>Submission to DRA ～upload data files (Windows)～</p>
+
+    <p>Install and run the <a href="http://winscp.net/eng/download.php">“WinSCP” (http://winscp.net/eng/download.php)</a>.</p>
+
+    <p>Set items as below and click the [Advanced…] button.</p>
+
+    <div class="attention red">
+
+      <p>Be sure to select the “binary mode” for file transfer. Do NOT select the “text mode”.</p>
+
+    </div>
+
+    <ul>
+      <li>File protocol: SFTP</li>
+      <li>Host name: ftp-private.ddbj.nig.ac.jp</li>
+      <li>Port number: 22</li>
+      <li>User name: (D-way Login ID)</li>
+      <li>Password: (Leave empty)</li>
+    </ul>
+
+    <p><a href="/assets/images/books/winscp1_400.jpg" title="privatekey1"><img src="/assets/images/books/winscp1_400.jpg" alt="" class="w300" /></a></p>
+
+    <p>Please select the private key, which you created beforehand, from “Private key file” in “Authentication”.</p>
+
+    <p><a href="/assets/images/books/winscp2_400.jpg" title="privatekey2"><img src="/assets/images/books/winscp2_400.jpg" alt="" class="w300" /></a></p>
+
+    <p>Last, click the [Login] button in the lower center</p>
+
+    <p><a href="/assets/images/books/winscp3_400.jpg" title="login to winSCP"><img src="/assets/images/books/winscp3_400.jpg" alt="" class="w300" /></a></p>
+
+    <p>At the first time of login, a warning message is displayed; however, please select “Yes” (this message will not be displayed again). Next, enter the passphrase set for the keys.</p>
+
+    <p>After login successfully, a folder of your PC is displayed at left, and your private directory in the server is displayed at right. Select the files at the left window and drag &amp; drop them into the right window to transfer the files to the server.</p>
+
+    <p><a href="/assets/images/books/winscp4_400.jpg" title="transfer files"><img src="/assets/images/books/winscp4_400.jpg" alt="" class="w500" /></a></p>
+
+    <p>You can delete the transferred files by selecting the files and clicking the [Delete] button.</p>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« Close</a></p>
+  </div>
+</div>
+
+<div class="accordion-menu">
+  <h4 class="toggle-content-btn"><a href="javascript:void(0)">Upload sequence data by using Cyberduck (Mac OS X)</a></h4>
+  <div class="accordion-content">
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/aO2aVafS3ZE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+    <p>Submission to DRA ～upload data files (Mac) ～</p>
+
+    <p>Download and install <a href="http://cyberduck.ch">the Cyberduck (http://cyberduck.ch)</a>.</p>
+
+    <p>Run the Cyberduck and click the [Open Connection] button in the Cyberduck menu.</p>
+
+    <p><a href="/assets/images/books/Cyberduck_1.jpg" title="open connection"><img src="/assets/images/books/Cyberduck_1.jpg" alt="" class="w300" /></a></p>
+
+    <p>Select “SFTP (SSH File Transfer Protocol)” .</p>
+
+    <p><a href="/assets/images/books/Cyberduck_2.jpg" title="SFTP in the WinSCP"><img src="/assets/images/books/Cyberduck_2.jpg" alt="" class="w300" /></a></p>
+
+    <p>Set as follows and tick off “Use Public Key Authentication” in the More Options.</p>
+
+    <ul>
+      <li>Server: ftp-private.ddbj.nig.ac.jp</li>
+      <li>Port: 22</li>
+      <li>Username: (D-way Login ID)</li>
+      <li>Password: (Leave empty)</li>
+      <li>Add to Keychain: (Check)</li>
+    </ul>
+
+    <p><a href="/assets/images/books/Cyberduck_3.jpg" title="key authentication"><img src="/assets/images/books/Cyberduck_3.jpg" alt="" class="w300" /></a></p>
+
+    <p>By default, the private key is created in “User’s home folder &gt; .ssh folder (invisible in Finder) &gt; id_rsa”.</p>
+
+    <p><a href="/assets/images/books/Cyberduck_4.jpg" title="private_key"><img src="/assets/images/books/Cyberduck_4.jpg" alt="" class="w300" /></a></p>
+
+    <p>At the first time of login, a warning message is displayed; however, please select “Always” (this message will not be displayed again).</p>
+
+    <p>After login successfully, your private directory in the server is displayed in the window. Select the files in your PC and drag &amp; drop them into the window to transfer the files to the server.</p>
+
+    <p><a href="/assets/images/books/Cyberduck_5.jpg" title="transfer"><img src="/assets/images/books/Cyberduck_5.jpg" alt="" class="w500" /></a></p>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« Close</a></p>
+  </div>
+</div>
+
+<div class="attention red">
+
+  <p>Users can ssh login ftp-private.ddbj.nig.ac.jp server by using a private key. Executable commands are restricted to the following ones. Users can delete unnecessary files.<br />
+ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip</p>
+
+</div>
+
+<h3 id="submission-">Submission <a name="Submission"></a></h3>
+
+<p>Set the hold date within four years. Submitters’ name and affiliation will be public but e-mail address will not be disclosed.</p>
+
+<div class="attention red">
+
+  <p>You can delete an un-submitted GEA submission.</p>
+
+</div>
+
+<a class="group1" href="/assets/images/books/array-sub2.jpg" title="Enter submission information">
+  <figure class="image">
+    <img src="/assets/images/books/array-sub2.jpg" alt="Enter submission information" class="w550">
+    <figcaption>Enter submission information</figcaption>
+  </figure>
+</a>
+
+<h3 id="dra--1">DRA <a name="DRA"></a></h3>
+
+<p>Select a DRA submission registered in your account. If DRA submission is not registered, please go to the <a href="/dra/submission-e.html#dra-submission">DRA submission site</a> and submit DRA.</p>
+
+<p>To use DRA submissions obtained in the other account, please <a href="/contact-ddbj-e.html">contact GEA team</a>.</p>
+
+<a class="group1" href="/assets/images/books/seq-dra.jpg" title="Select a DRA submission for the GEA experiment">
+  <figure class="image">
+    <img src="/assets/images/books/seq-dra.jpg" alt="Select a DRA submission for the GEA experiment" class="w550">
+    <figcaption>Select a DRA submission for the GEA experiment</figcaption>
+  </figure>
+</a>
+
+<h3 id="bioproject--1">BioProject <a name="BioProject"></a></h3>
+
+<p>Select a project registered in your account. If a BioProject is not registered, please go to the <a href="/bioproject/submission-e.html#bioproject-submission">BioProject submission site</a> and submit a project.</p>
+
+<p>Select a BioProject used in the DRA submission when the GEA experiment and DRA submission belong to same project (usual case). When the GEA experiment and DRA submission belong to different projects, select a BioProject not used in the DRA submission.</p>
+
+<p>To use a project obtained in the other account, please <a href="/contact-ddbj-e.html">contact GEA team</a>.</p>
+
+<a class="group1" href="/assets/images/books/seq-bp.jpg" title="Select a BioProject for the GEA experiment">
+  <figure class="image">
+    <img src="/assets/images/books/seq-bp.jpg" alt="Select a BioProject for the GEA experiment" class="w550">
+    <figcaption>Select a BioProject for the GEA experiment</figcaption>
+  </figure>
+</a>
+
+<h3 id="idf--1">IDF <a name="idf"></a></h3>
+
+<p>Enter information for <a href="/gea/metadata-e.html#idf">IDF (Investigation Description Format)</a>.</p>
+
+<p><a href="/gea/example-e.html#idf">Example IDF</a>.</p>
+
+<ul>
+  <li>Protocol: Pre-checked protocols are mandatory.</li>
+  <li>Publication: Describe associated publications by PubMed ID or DOI. For unpublished manuscript, please <a href="/contact-ddbj-e.html">inform us</a> the ID after assignment.</li>
+  <li>Data File Type: Processed data files are required for sequencing experiment submission. <a href="/gea/datafile-e.html#seq_data">Accepted Data Files Formats for sequencing experiment</a>. We strongly recommend to submitting processed data file per sample.</li>
+</ul>
+
+<a class="group1" href="/assets/images/books/seq-idf.jpg" title="Enter information for IDF">
+  <figure class="image">
+    <img src="/assets/images/books/seq-idf.jpg" alt="Enter information for IDF" class="w600">
+    <figcaption>Enter information for IDF</figcaption>
+  </figure>
+</a>
+
+<h3 id="sdrf--1">SDRF <a name="sdrf"></a></h3>
+
+<a class="group1" href="/assets/images/books/seq-sdrf-down.jpg" title="Download a SDRF template file">
+  <figure class="image">
+    <img src="/assets/images/books/seq-sdrf-down.jpg" alt="Download a SDRF template file" class="w400">
+    <figcaption>Download a SDRF template file</figcaption>
+  </figure>
+</a>
+
+<p>Enter information for <a href="/gea/metadata-e.html#sdrf">SDRF (Sample and Data Relationship Format)</a>.</p>
+
+<p><a href="https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=513795053">Example SDRF</a>.</p>
+
+<p>Auto-filled fields.</p>
+
+<ul>
+  <li>Name columns and attribute columns for Source Name: Generated from BioSamples.</li>
+  <li>SDRF rows: 1 row for 1 Run.</li>
+  <li>Protocols: Protocols described in IDF are inserted to appropriate positions of SDRF with temporary protocol IDs (e.g., ESUB000352_Protocol_1)</li>
+  <li>Technology Type: “sequencing assay” for sequencing submission.</li>
+  <li>SRA Experiment and Run Comments to Extract and Assay Names: Generated from DRA Experiment and Run.</li>
+</ul>
+
+<p>Enter required fields by overwriting &lt;Required: fill in the content&gt; tags.</p>
+
+<p>Fields you need to add.</p>
+
+<ul>
+  <li>Material Type: Enter <a href="/gea/metadata-e.html#Material_Type">controlled terms</a>.
+    <ul>
+      <li>total RNA</li>
+      <li>polyA RNA</li>
+      <li>cytoplasmic RNA</li>
+      <li>nuclear RNA</li>
+      <li>genomic DNA</li>
+      <li>protein</li>
+      <li>other</li>
+    </ul>
+  </li>
+  <li>Derived Array Data File and Comment[Derived Array Data File md5]: Enter filename and <a href="#supplement-md5">md5 checksum</a> pair for each processed data file.</li>
+  <li>A list of filename and its md5 checksum (output of <a href="#supplement-md5">md5sum command</a>) can be provided as a file &lt;GEA submission ID&gt;.md5 (e.g., ESUB000001.md5) (when the checksum values are provided in both SDRF and .md5 file, those in the .md5 are used).</li>
+  <li>Factor Value[enter experiment factor name here]: A user-defined name for each experimental factor studied by the experiment. These experimental factors represent the variables within the investigation (e.g. growth condition, genotype, organism part). The actual values of these variables will be listed in the “Factor Value []” columns. Example:
+    <ul>
+      <li>Factor Value[strain]</li>
+      <li>AT76</li>
+      <li>KU-2003</li>
+      <li>KU-PI499262</li>
+    </ul>
+  </li>
+</ul>
+
+<a class="group1" href="/assets/images/books/seq-sdrf-template.jpg" title="SDRF template, yellow-highlighted fields need to be filled by submitter">
+  <figure class="image">
+    <img src="/assets/images/books/seq-sdrf-template.jpg" alt="SDRF template, yellow-highlighted fields need to be filled by submitter" class="w600">
+    <figcaption>SDRF template, yellow-highlighted fields need to be filled by submitter</figcaption>
+  </figure>
+</a>
+
+<p>Select the entered SDRF file and continue.</p>
+
+<a class="group1" href="/assets/images/books/seq-sdrf-up.jpg" title="Select entered SDRF file">
+  <figure class="image">
+    <img src="/assets/images/books/seq-sdrf-up.jpg" alt="Select entered SDRF file" class="w450">
+    <figcaption>Select entered SDRF file</figcaption>
+  </figure>
+</a>
+
+<h3 id="overview-and-submit-">Overview and submit <a name="submit"></a></h3>
+
+<p>You can download the IDF and SDRF files and check them. When correction is necessary, go back to the previous tab and corrent metadata.</p>
+
+<p>Submit the IDF and SDRF metadata by clicking the “Submit” button.</p>
+
+<a class="group1" href="/assets/images/books/seq-submit.jpg" title="Check the IDF and SDRF and submit">
+  <figure class="image">
+    <img src="/assets/images/books/seq-submit.jpg" alt="Check the IDF and SDRF and submit" class="w450">
+    <figcaption>Check the IDF and SDRF and submit</figcaption>
+  </figure>
+</a>
+
+<h3 id="validation-">Validation <a name="validation"></a></h3>
+
+<p>When data files described in the IDF and SDRF are not found in the submission directory, an error message “Data file is not uploaded” is shown and the submission is aborted.</p>
+
+<p>The validator checks submitted IDF and SDRF files according to the <a href="/gea/validation-e.html">validation rules.</a> and gives warning and error messages. Errors need to be resolved for submission.</p>
+
+<a class="group1" href="/assets/images/books/seq-validation.jpg" title="Warning and error messages">
+  <figure class="image">
+    <img src="/assets/images/books/seq-validation.jpg" alt="Warning and error messages" class="w500">
+    <figcaption>Warning and error messages</figcaption>
+  </figure>
+</a>
+
+<h3 id="accession-numbers-">Accession numbers <a name="accession"></a></h3>
+
+<p><a href="/gea/overview-e.html#acc">GEA accession numbers</a> are issued to the completed GEA experiment. You can allow reviewers access to private records by <a href="/gea/reviewer-access-e.html">communicating a reviewer accesss token</a>.</p>
+
+<a class="group1" href="/assets/images/books/seq-accession.jpg" title="GEA accession numbers">
+  <figure class="image">
+    <img src="/assets/images/books/seq-accession.jpg" alt="GEA accession numbers" class="w500">
+    <figcaption>GEA accession numbers</figcaption>
+  </figure>
+</a>
+
+<h2 id="update-submission-">Update submission <a name="update-submission"></a></h2>
+
+<h3 id="update-in-each-database-">Update in each database <a name="update-in-each-database"></a></h3>
+
+<table>
+<thead>
+<tr>
+<th>Database</th>
+<th>Update</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/ddbj/index.html">Annotated sequence database</a></td>
+<td><a href="/ddbj/update-form-e.html">Request updates from web form</a></td>
+</tr>
+<tr>
+<td>Sequence Read Archive (DRA)</td>
+<td><a href="https://ddbj.nig.ac.jp/D-way/">Login D-way and update metadata</a><br />
+<a href="/contact-ddbj-e.html">To add or withdraw sequencing data, request updates from web form</a></td>
+</tr>
+<tr>
+<td>Genomic Expression Archive (GEA)</td>
+<td><a href="/contact-ddbj-e.html">Request updates from web form</a></td>
+</tr>
+<tr>
+<td>BioProject/BioSample</td>
+<td><a href="/contact-ddbj-e.html">Request updates from web form</a></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="withdraw-archived-objects-">Withdraw archived objects <a name="withdraw-archived-objects"></a></h3>
+
+<p>To withdrawing archived Experiment, please <a href="/contact-ddbj-e.html">contact us</a>.</p>
+
+<h2 id="supplement-md5">Supplement: MD5<a name="supplement-md5"></a></h2>
+
+<p>MD5 (Message Digest Algorithm 5) is a hash function which calculates a hash value (MD5 number, 32-digit numbers and letters) of a given file. Because the MD5 number of the damaged file is distinct from the original one, we can check whether the transferred file is intact or not by comparing the numbers before and after the file transfer.</p>
+
+<div class="accordion-menu">
+  <h3 class="toggle-content-btn"><a href="javascript:void(0)">Obtain MD5 number (Linux)</a></h3>
+  <div class="accordion-content">
+
+    <p>Obtain the MD5 numbers of the files by executing,</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ md5sum file1 file2
+9F6E6800CFAE7749EB6C486619254B9C file1
+B636E0063E29709B6082F324C76D0911 file2
+</code></pre></div>    </div>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« Close</a></p>
+  </div>
+</div>
+
+<div class="accordion-menu">
+  <h3 class="toggle-content-btn"><a href="javascript:void(0)">Obtain MD5 number (Mac OS X)</a></h3>
+  <div class="accordion-content">
+
+    <p>Obtain the MD5 numbers of the files by executing,</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ md5 file1 file2
+9F6E6800CFAE7749EB6C486619254B9C file1
+B636E0063E29709B6082F324C76D0911 file2
+</code></pre></div>    </div>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« Close</a></p>
+  </div>
+</div>
+
+<div class="accordion-menu">
+  <h3 class="toggle-content-btn"><a href="javascript:void(0)">Obtain MD5 number (Windows)</a></h3>
+  <div class="accordion-content">
+
+    <p>Install and run the <a href="//sourceforge.net/projects/fsumfe/">Fsum Frontend (sourceforge.net/projects/fsumfe/)</a>.<br />
+At first, tick off “md5”.</p>
+
+    <p><a href="/assets/images/books/Fsum1.jpg" title="Generate md5 in the tool 1"><img src="/assets/images/books/Fsum1.jpg" alt="" class="w500" /></a></p>
+
+    <p>After clicking the [+] button, open the sequence data files that you need. You can select multiple files at the same time.</p>
+
+    <p><a href="/assets/images/books/Fsum2.jpg" title="Generate md5 in the tool 2"><img src="/assets/images/books/Fsum2.jpg" alt="" class="w500" /></a></p>
+
+    <p>Click the [Calculate hashes] button. The MD5 numbers of the files are displayed.<br />
+By clicking the [Export] button, you can obtain the list of the MD5 numbers as a html, a csv, or a xml file.</p>
+
+    <p><a href="/assets/images/books/Fsum3.jpg" title="Generate md5 in the tool 3"><img src="/assets/images/books/Fsum3.jpg" alt="" class="w500" /></a></p>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« Close</a></p>
+  </div>
+</div>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

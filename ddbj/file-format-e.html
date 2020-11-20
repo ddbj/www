@@ -1,0 +1,2756 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submission File Format</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">Submission File Format</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/ddbj">ddbj</a>
+          </li>
+          <li>
+            <a href="">Submission File Format</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/ddbj/index-e.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/submission-e.html">Submission</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/submission-e.html">Before Submission</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/web-submission-e.html">Web submission</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/mss-e.html">Mass Submission</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/update-e.html">Data Update</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="http://ddbj.nig.ac.jp/arsa/?lang=en">Search</a>
+      
+      <ul>
+        
+        <li>
+          <a href="http://getentry.ddbj.nig.ac.jp/top-e.html">getentry</a>
+        </li>
+        
+        <li>
+          <a href="http://ddbj.nig.ac.jp/arsa/?lang=en">ARSA</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/flat-file-e.html">Flat file</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/features-e.html">Feature key</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/qualifiers-e.html">Qualifier key</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/organism-e.html">Organism qualifier</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/location-e.html">Description of Location</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/cds-e.html">Protein Coding Sequence</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/geneticcode-e.html">The Genetic Codes</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/code-e.html">Codes Used in Sequence Description</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/example-e.html">Example of Submission</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/data-categories-e.html">Data categories</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/genome-e.html">Data Submission from Genome Project</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/pseudohaplotype-e.html">Pseudohaplotype</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/wgs-e.html">WGS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/metagenome-assembly-e.html">Metagenome Assembly</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/single-amplified-genome-e.html">Single amplified genome</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/con-e.html">CON</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/gss-e.html">GSS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/htg-e.html">HTG</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/environmental-e.html">Submission of environmental sequences</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/env-e.html">ENV</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tls-e.html">TLS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/transcriptome-e.html">Data Submission from Transcriptome Project</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tsa-e.html">TSA</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/est-e.html">EST</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/htc-e.html">HTC</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tpa-e.html">Third Party Data (TPA)</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/en/index-e.html">FAQ</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/index-e.html">Other</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/patent-data-e.html">Patent</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/mga-e.html">MGA</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="sequence-file">Sequence File<a name="sequence"></a></h2>
+
+<p>The sequence file is a text file in FASTA-like format contains all nucleotide sequences. In the sequence file, one array data consists of a line of header lines starting with “&gt;” and a sequence of entities of the second and subsequent lines. You must insert the end flag (//) at the end of each sequence.</p>
+
+<p>Example: Sequence File</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;CLN01  &lt;-- Entry name for the first one
+ggacaggctgccgcaggagccaggccgggagcaggaagaggcttcgggggagccggagaa
+ctgggccagatgcgcttcgtgggcgaagcctgaggaaaaagagagtgaggcaggagaatc
+gcttgaaccccggaggcggaaccgcactccagcctgggcgacagagtgagactta
+//      &lt;-- End flag
+&gt;CLN02  &lt;-- Entry name for the second one
+ctcacacagatgcgcgcacaccagtggttgtaacagaagcctgaggtgcgctcgtggtca
+gaagagggcatgcgcttcagtcgtgggcgaagcctgaggaaaaaatagtcattcatataa
+atttgaacacacctgctgtggctgtaactctgagatgtgctaaataaaccctctt
+//      &lt;-- End flag
+</code></pre></div></div>
+
+<h3 id="format-and-syntax-">Format and Syntax <a name="agp_format"></a></h3>
+
+<p>It is required to validate formats of sequence file by <a href="/ddbj/ume-e.html">UME</a> or <a href="/ddbj/parser-e.html">Parser</a>.</p>
+
+<ul>
+  <li>First line starts with [&gt;], followed by the Entry name at the head of each sequence.</li>
+  <li>Entry names must be unique in the sequence file.It is common to use clone name or isolate name as unique Entry name.</li>
+  <li>Entry name is required to be described in less than 32 letters of characters which do not contain space,
+ “ double-quote, = equal, | pipe, &gt; greater-than, [] angled brackets or \ back-slash.</li>
+  <li>The names and the orders of Entry in the both of sequence and <a href="#annotation">annotation files</a> should be matched.The accession numbers will be assigned in the order of entries.</li>
+  <li>Sequence file is required to contain NO space or blank line.</li>
+  <li>You can use not only a, t, g and c but also characters in Nucleotide base codes for your nucleotide sequences, if necessary.</li>
+  <li>In principle, please remove the base code ‘n’ locating 5’ or 3’ end of sequences. For especially EST submissions, please do not send the raw outputs of a sequencer. You should screen your sequences to remove unreliable output(s) often locating at 5’-end.</li>
+  <li>Remove the sequences derived from vector, linker or adaptor.If you would like to submit some artificially constructed sequence itself, such as an expression vector etc., you do not have to remove that.</li>
+  <li>Please be sure to input the end flag [//] at the end of each sequence.</li>
+  <li>In case of <a href="/documents/data-categories-e.html#con">CON entry</a>, <a href="#agp">AGP file</a> can be used as a substitute for sequence file.</li>
+</ul>
+
+<h2 id="annotation-file">Annotation File<a name="annotation"></a></h2>
+
+<p>The annotation file is the tab delimited text file consisting of five columns of Entry, Feature, Location, Qualifier, and Value that contains your data other than sequences, such as submitters, references and biological features.<br />
+You can make the files with some scripts, spread sheets (such as MS Excel), text editors and so on.</p>
+
+<p>Example:Annotation file (<span class="red">Required</span>)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#common">COMMON</a></td>
+      <td><span class="red">SUBMITTER</span></td>
+      <td> </td>
+      <td><span class="red">ab_name</span></td>
+      <td>Robertson,G.R.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ab_name</td>
+      <td>Mishima,H.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">contact</span></td>
+      <td>Hanako Mishima</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">email</span></td>
+      <td>mishima@ddbj.nig.ac.jp</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">phone</span></td>
+      <td>81-55-981-6853</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>fax</td>
+      <td>81-55-981-6853</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>phext</td>
+      <td>3207</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">institute</span></td>
+      <td>National Institute of Genetics</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>department</td>
+      <td>DNA Data Bank of Japan</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">country</span></td>
+      <td>Japan</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>state</td>
+      <td>Shizuoka</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">city</span></td>
+      <td>Mishima</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">street</span></td>
+      <td>Yata 1111</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">zip</span></td>
+      <td>411-8540</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><span class="red">REFERENCE</span></td>
+      <td> </td>
+      <td><span class="red">title</span></td>
+      <td>Mouse Genome Sequencing</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">ab_name</span></td>
+      <td>Robertson,G.R.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ab_name</td>
+      <td>Mishima,H</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">year</span></td>
+      <td>2012</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">status</span></td>
+      <td>Unpublished</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><a href="#comment">COMMENT</a></td>
+      <td> </td>
+      <td>line</td>
+      <td>Please visit our website</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>line</td>
+      <td>URL: http://www.ddbj.nig.ac.jp/</td>
+    </tr>
+    <tr>
+      <td>CLN01</td>
+      <td><span class="red">source</span></td>
+      <td><span class="red">1..12297</span></td>
+      <td><span class="red">organism</span></td>
+      <td>Mus musculus</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">mol_type</span></td>
+      <td>genomic DNA</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>clone</td>
+      <td>PC0110</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>chromosome</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>CDS</td>
+      <td><span class="small_80">join(&lt;1..456,609..879,1070..1213)</span></td>
+      <td>product</td>
+      <td>protein kinase</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>codon_start</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>CLN02</td>
+      <td><span class="red">source</span></td>
+      <td><span class="red">1..12393</span></td>
+      <td><span class="red">organism</span></td>
+      <td>Mus musculus</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">mol_type</span></td>
+      <td>genomic DNA</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>clone</td>
+      <td>PC0210</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>chromosome</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>CDS</td>
+      <td>9365..9640</td>
+      <td>product</td>
+      <td>hypothetical protein</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="format-and-syntax--1">Format and Syntax <a name="annotation_format"></a></h3>
+
+<p>It is required to validate formats of annotation file by
+<a href="/ddbj/ume-e.html">UME</a> or <a href="/ddbj/parser-e.html">Parser</a>.</p>
+
+<dl>
+  <dt>Entry</dt>
+  <dd>Please enter the Entry name into Entry column. Entry name has to correspond to each name in the sequence file as described at <a href="#sequence">How to Make Sequence File</a>.</dd>
+  <dd>Do not enter anything in the Entry column until the first line for the next entry.</dd>
+  <dt>Feature</dt>
+  <dd>There are two types of Features, <a href="#biological_feature">Biological feature</a> and DDBJ original features. The detail descriptions for Features are explained below.&lt;</dd>
+  <dd>Do not enter anything in Feature columns until the first line for the next feature.</dd>
+  <dt>Location</dt>
+  <dd>Location can be described in the columns adjacent Feature columns filed with either of <a href="#biological_feature">Biological feature</a> or <a href="#primary_contig">PRIMARY_CONTIG</a> feature.</dd>
+  <dt>Qualifier</dt>
+  <dd>Qualifier is described in every line, in principle. It depends on the Feature whether each Qualifier is mandatory, available, or not to use for the Feature. Details are explained below.</dd>
+  <dt>Value</dt>
+  <dd>The format of Value is different depending on Qualifiers. Details will be explained below.</dd>
+  <dt>Other</dt>
+  <dd>In annotation file, it is judged as end when a blank line was found. Therefore, when you input multiple entries, please be sure not to make a blank line until the end of file.</dd>
+</dl>
+
+<h3 id="references-for-describing-biological-features-">References for Describing Biological Features <a name="describing"></a></h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Refix Date</th>
+      <th>Remarks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/ddbj/feature-table-e.html">Feature Table Definition</a></td>
+      <td>2016/11/17</td>
+      <td>version 10.6</td>
+    </tr>
+    <tr>
+      <td><a href="/assets/files/pdf/ddbj/fq-e.pdf">Feature/Qualifier usage matrix</a></td>
+      <td>2016/11/09</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/example-e.html">Example of Submission</a></td>
+      <td>2014/11/27</td>
+      <td>Examples of features in <a href="/ddbj/flat-file.html">DDBJ flat file</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="common">COMMON<a name="common"></a></h3>
+
+<h4 id="common-entry-for-the-common-information-to-all-entries-">COMMON entry for the common information to all entries <a name="common_entry"></a></h4>
+
+<ul>
+  <li>In annotation file, entry name COMMON can be described in Entry column for the common information to all entries.</li>
+  <li>The information described in COMMON entry will be reflected in all entries.</li>
+  <li>Usually, COMMON is used for SUBMITTER/REFERENCE/DATE/COMMENT, but it can also be used for <a href="#biological_feature">Biological feature</a> when all the information of Feature, Location, Qualifiers and Values are common to all entries.</li>
+</ul>
+
+<h4 id="use-of-common-entry-">Use of COMMON entry <a name="use_common"></a></h4>
+
+<dl>
+  <dt>Meta-base position ‘E’ for the location description</dt>
+  <dd>Example: rRNA feature in COMMON entry
+
+    <table>
+      <thead>
+        <tr>
+          <th>Entry</th>
+          <th>Feature</th>
+          <th>Location</th>
+          <th>Qualifier</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>COMMON</td>
+          <td>rRNA</td>
+          <td>&lt;1..&gt;<strong>E</strong></td>
+          <td>product</td>
+          <td>16S rRNA</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>There are many submissions that have common Feature information for all entries in their Qualifiers, and Values except their Locations because of difference of their sequence lengths, such as phylogenic studies with rRNA sequences.</p>
+
+    <p>In such cases, you can describe the common Feature in COMMON entry by using meta-base position ‘<strong>E</strong>’ in its Location instead of the number of the sequence end points.</p>
+  </dd>
+  <dt>Meta-description ‘@@[entry]@@ ‘is available for clone, note, ff_definition</dt>
+  <dd>Example: source feature in COMMON entry
+
+    <table>
+      <thead>
+        <tr>
+          <th>Entry</th>
+          <th>Feature</th>
+          <th>Location</th>
+          <th>Qualifier</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>COMMON</td>
+          <td>source</td>
+          <td>1..<strong>E</strong></td>
+          <td>organism</td>
+          <td>Homo sapiens</td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td>mol_type</td>
+          <td>genomic DNA</td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td>submitter_seqid</td>
+          <td><strong>@@[entry]@@</strong></td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td>ff_definition</td>
+          <td><strong>@@[organism]@@</strong> DNA, <strong>@@[submitter_seqid]@@</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>There are some submissions that have common Feature information for all entries in their Qualifiers, and Values except their Locations and clone name or contig names, such as EST, GSS, TSA, TLS, WGS, WGS scaffold (CON division), and so on.</p>
+
+    <p>In such cases, you can describe the Feature: source in COMMON entry only if you use clone or contig names as entry name.</p>
+
+    <ul>
+      <li>You can use meta-base position ‘<strong>E</strong>’ in its Location instead of the number of the sequence end points.</li>
+      <li>For the Value of clone, submitter_seqid, note, ff_definition, a meta description <strong>@@[entry]@@, entry</strong> enclosed by “<strong>@@[</strong>” and “<strong>]@@</strong>”, is available to quote entry names. It will be replaced by the entry names which are quoted from a sequence file.</li>
+    </ul>
+  </dd>
+</dl>
+
+<h3 id="submitter-">SUBMITTER <a name="submitter"></a></h3>
+
+<p>Example: SUBMITTER in annotation file　(<span class="red">Requierd</span>)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>COMMON</td>
+      <td><span class="red">SUBMITTER</span></td>
+      <td> </td>
+      <td><span class="red">ab_name</span></td>
+      <td>Robertson,G.R.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ab_name</td>
+      <td>Mishima,H.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>consrtm</td>
+      <td>Mouse Genome Consortium</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">contact</span></td>
+      <td>Hanako Mishima</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">email</span></td>
+      <td>mishima@ddbj.nig.ac.jp</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>url</td>
+      <td>http://www.ddbj.nig.ac.jp</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">phone</span></td>
+      <td>81-55-981-6853</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>fax</td>
+      <td>81-55-981-6853</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>phext</td>
+      <td>3207</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">institute</span></td>
+      <td>National Institute of Genetics</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>department</td>
+      <td>DNA Data Bank of Japan</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">country</span></td>
+      <td>Japan</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>state</td>
+      <td>Shizuoka</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">city</span></td>
+      <td>Mishima</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">street</span></td>
+      <td>Yata 1111</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">zip</span></td>
+      <td>411-8540</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>List of Qualifiers for SUBMITTER</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Qualifier</th>
+      <th>Legal characters for each Value (Remarks)</th>
+      <th>Number of letters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ab_name (abbreviation of author name)</td>
+      <td>alphabets, .[period], ,[comma], -[hyphen], ‘ [apostrophe]</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>contact (contact person)</td>
+      <td>alphabets, .[period], ,[comma], -[hyphen], ‘ [apostrophe],  [space] (In order of first, middle, and last names delimited with)</td>
+      <td>first(64),middle(128), last(64)</td>
+    </tr>
+    <tr>
+      <td>consrtm (consortium)</td>
+      <td>alphabets, digits,  [space], -[hyphen], ‘ [apostrophe], .[period], _[underscore], .[comma], ( ) # &amp; @ / ; : + *</td>
+      <td>255</td>
+    </tr>
+    <tr>
+      <td>email</td>
+      <td>alphabets, digits, @, .[period], -[hyphen], _[underscore]</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>url</td>
+      <td>All printable characters but [space]</td>
+      <td>255</td>
+    </tr>
+    <tr>
+      <td>phone, fax, phext</td>
+      <td>digits, -[hyphen] (DO NOT enter + before country code)</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>institute, department</td>
+      <td>All printable characters but [back-slash], ` [back-quote]</td>
+      <td>255</td>
+    </tr>
+    <tr>
+      <td>country, state</td>
+      <td>alphabets, digits,  [space], -[hyphen], ‘[apostrophe], .[period], _[underscore], ,[comma], ( ) # &amp; @ / ; : + *</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>city</td>
+      <td>alphabets, digits,  [space], -[hyphen], ‘[apostrophe], .[period], _[underscore], ,[comma], ( ) # &amp; @ / ; : + *</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>street</td>
+      <td>alphabets, digits,  [space], -[hyphen], ‘[apostrophe], .[period], _[underscore], ,[comma], ( ) # &amp; @ / ; : + *</td>
+      <td>255</td>
+    </tr>
+    <tr>
+      <td>zip</td>
+      <td>alphabets, digits, -[hyphen]</td>
+      <td>16</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="requirements-for-describing-submitter-">Requirements for Describing SUBMITTER <a name="describing_submitter"></a></h4>
+
+<ul>
+  <li>Basically it is necessary to enter one SUBMITTER for each entry. But <a href="#common">COMMON</a> can be used for describing SUBMITTER that is common to all entries.<br />
+When SUBMITTER is written by using COMMON, SUBMITTER cannot be used for the other entries in the same annotation file.</li>
+  <li><a href="/ddbj/submission.html#submitter">Submitters</a> are the persons who have the responsibility in the contents of the submitted data and have the right to update the data.</li>
+  <li>Qualifier: ab_name in SUBMITTER can be used repeatedly for multiple submitters and those submitters are shown in the released file in
+the order of this annotation file.</li>
+  <li>It is necessary to specify a contact person whom DDBJ will contact with about the data by using Qualifier: contact.</li>
+  <li>
+    <p>The abbreviation of the author name according to the format of REFERENCE author should be described in Value of Qualifier: ab_name.</p>
+
+    <dl>
+      <dt>Value format:</dt>
+      <dd>last name[comma]initial of first name[period]initial of middle name[period]</dd>
+      <dt>Example:</dt>
+      <dd>Miyashita,Y.</dd>
+      <dd>Robertson,G.R.</dd>
+    </dl>
+
+    <p>Although some names (e.g. name with a hyphen) may show a warning message owing to format error, it is possible to input.</p>
+  </li>
+  <li>Each Value for the Qualifier except ab_name in SUBMITTER cannot be used repeatedly. They can be used for only contact person. If you would like to submit the information of multiple institutes, please contact us before your submission.</li>
+</ul>
+
+<h3 id="reference-">REFERENCE <a name="reference"></a></h3>
+
+<p>Example: REFERENCE in annotation file　(<span class="red">Requierd</span>)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td><span class="red">REFERENCE</span></td>
+      <td> </td>
+      <td><span class="red">title</span></td>
+      <td>Sequence and analysis of mouse ch.8</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">ab_name</span></td>
+      <td>Robertson,G.R.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ab_name</td>
+      <td>Mishima,H.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">status</span></td>
+      <td>Published</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">year</span></td>
+      <td>2003</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>journal</td>
+      <td>Nature</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>volume</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>start_page</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>end_page</td>
+      <td>20</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>List of Qualifiers for REFERENCE</p>
+
+<table>
+  <thead>
+    <tr class="header">
+      <th>Qualifier</th>
+      <th>Legal characters for each Value (Remarks)</th>
+      <th>Number of letters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="odd">
+      <td>title</td>
+      <td>All printable characters but [back-slash], ` [back-quote]</td>
+      <td>255</td>
+    </tr>
+    <tr class="even">
+      <td>ab_name (abbreviation of author name)</td>
+      <td>alphabets, .[period], ,[comma], -[hyphen], ' [apostrophe]</td>
+      <td>64</td>
+    </tr>
+    <tr class="odd">
+      <td>consrtm(consortium)</td>
+      <td>alphabets, digits, [space], -[hyphen], ' [apostrophe], .[period], _[underscore],<br />,[comma], ( ) # &amp; @ / ; : + *</td>
+      <td>255</td>
+    </tr>
+    <tr class="even">
+      <td>status</td>
+      <td>Either one of follows;<br />Unpublished, In press, Published</td>
+      <td>-</td>
+    </tr>
+    <tr class="odd">
+      <td>year</td>
+      <td>digits(4 figures of A.D.)</td>
+      <td>4</td>
+    </tr>
+    <tr class="even">
+      <td>journal</td>
+      <td>All printable characters but [back-slash], ` [back-quote] (PubMed type abbreviation)</td>
+      <td>128</td>
+    </tr>
+    <tr class="odd">
+      <td>volume, start_page, end_page</td>
+      <td>alphabets, digits, -[hyphen]</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="requirements-for-describing-reference-">Requirements for Describing REFERENCE <a name="describing_reference"></a></h4>
+
+<ul>
+  <li>It is necessary to specify at least one REFERENCE for each entry. However, <a href="#common">COMMON</a> can be used for describing the REFERENCE
+that is common to all entries.</li>
+  <li>
+    <p>The abbreviation of the author name according to the format of REFERENCE author should be described in Value of Qualifier: ab_name.</p>
+
+    <dl>
+      <dt>Value format:</dt>
+      <dd>last name[comma]initial of first name[period]initial of middle name[period]</dd>
+      <dt>Example:</dt>
+      <dd>Miyashita,Y.</dd>
+      <dd>Robertson,G.R.</dd>
+    </dl>
+
+    <p>Please pay no attention to a warning message about name format error (e.g. name with a hyphen).</p>
+  </li>
+  <li>If the Value of status is “In Press”, Qualifier: journal is also a mandatory item.</li>
+  <li>If the Value of status is “Published”, Qualifier: journal, volume, start_page and end_page are also mandatory items.</li>
+  <li>Please input “Unpublished” in the status, if you do not prepare any publication.</li>
+  <li>Please input ISO abbreviation in the journal if you have.</li>
+  <li>If you need to enter more than two REFERENCE features, please input the first REFERENCE directly related to your sequences and then put the other(s) that would be helpful for understanding the data after the first one.</li>
+  <li>When you use REFERENCE features for both <a href="#common">COMMON</a> entry and other entries, the REFERENCE feature(s) specified for each entry will be loaded into DDBJ after one(s) given by COMMON entry.</li>
+  <li>When you cite two or more REFERENCE features for an entry, they will be shown on the DDBJ flat file in the same order on the annotation file.</li>
+</ul>
+
+<h3 id="date-">DATE <a name="date"></a></h3>
+
+<p>Example: DATE/hold_date in annotation file</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>COMMON</td>
+      <td>DATE</td>
+      <td> </td>
+      <td>hold_date</td>
+      <td>20181125</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="requirements-for-describing-date-">Requirements for Describing DATE <a name="describing_date"></a></h4>
+
+<ul>
+  <li>DATE and hold_date are required to be described in <a href="#common">COMMON</a> entry.</li>
+  <li>If you want to keep confidential your data until a specific date, please set the date with 8 digits (e.g. 20181125).</li>
+  <li>Delimiters (i.e. – (hyphen), / (slash) etc.) is not allowed to use for Value of hold_date.</li>
+  <li>Do not enter any DATE, if your data should be open to public immediately.</li>
+  <li>DATE should be included for <a href="#common">COMMON</a> entry. If the date is not common to all entries, please prepare the file for each.</li>
+  <li>If you set a hold_date, your data will be released according to <a href="/documents/data-release-policy-e.html">Principle of “Hold-Until-Published” data release</a>.</li>
+</ul>
+
+<h3 id="commentst_comment">COMMENT/ST_COMMENT<a name="comment"></a></h3>
+
+<p>Example: COMMENT and ST_COMMENT in annotation file</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>COMMENT</td>
+      <td> </td>
+      <td>line</td>
+      <td>This clone was obtained at our laboratory.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>COMMENT</td>
+      <td> </td>
+      <td>line</td>
+      <td>Please visit our web site.</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>line</td>
+      <td>URL:http://www.ddbj.nig.ac.jp</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>ST_COMMENT</td>
+      <td> </td>
+      <td>tagset_id</td>
+      <td>Genome-Assembly-Data</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Assembly Method</td>
+      <td>GS De Novo Assembler v. 2.0</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Assembly Name</td>
+      <td>Mmus_1.0</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Genome Coverage</td>
+      <td>50x</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Sequencing Technology</td>
+      <td>454 GS FLX; ABI 3730</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><span class="red">※</span> There are two kinds of COMMENTs, “general COMMENT” and “structured COMMENT”.</p>
+
+<h4 id="requirements-for-describing-comment-general-comment-">Requirements for Describing COMMENT (General COMMENT) <a name="describing_comment"></a></h4>
+
+<ul>
+  <li>Please use general COMMENT if you want to describe additional information for your data.</li>
+  <li>It will automatically start a new-line by 60 letters including spaces. If you want to start a new-line other than 60 letters, please add Qualifier: line.</li>
+  <li>All printable characters except [back-slash] are legal for the Value of Qualifier: line.</li>
+  <li><a href="#common">COMMON</a> entry can be used for describing COMMENT that is common to all entries.</li>
+  <li>When you put multiple COMMENT features, please put each COMMENT for a Feature column, separately.</li>
+  <li>When an entry has both COMMENT features specific to it and common with all other entries described in COMMON entry, those will be shown on DDBJ flat file in the order, COMMENT in COMMON entry at first, then followed by one specific to the entry. On DDBJ flat files, in the case of plural COMMENTs, they will be shown in DDBJ format on same order of the annotation file.</li>
+  <li>When you use COMMENT features for both COMMON entry and other entries, the COMMENT feature(s) specified for each entry will be loaded into DDBJ after one(s) given by COMMON entry.</li>
+  <li>When you describe two or more COMMENT features for an entry, they will be shown on the DDBJ flat file in the same order on the annotation file.</li>
+  <li>For EST submissions, some particular COMMENT description is required.<a href="#wgs_con">Details</a></li>
+</ul>
+
+<h4 id="requirements-for-describing-st_comment-structured-comment-">Requirements for Describing ST_COMMENT (structured COMMENT) <a name="describing_st_comment"></a></h4>
+
+<ul>
+  <li>
+    <p>ST_COMMENT is a feature to describe <a href="/ddbj/flat-file-e.html#Comment">structured COMMENT</a>.</p>
+  </li>
+  <li>
+    <p>Though ST_COMMENT can be defined by user community, ST_COMMENT in predetermined format is required to submit sequence data derived from <a href="/ddbj/genome-e.html">genome Project</a> (including <a href="/ddbj/wgs-e.html">WGS</a>) or <a href="/ddbj/transcriptome-e.html">transcriptome Project</a> (including <a href="/ddbj/tsa-e.html">TSA</a>).</p>
+  </li>
+  <li>
+    <p>ST_COMMENT is composed of dataset name (tagset_id), names of items (user-defined Qualifier) and values of items (Value).</p>
+  </li>
+  <li>
+    <p>In the initial line of Structured COMMENT feature, describe tagset_id as Qualifier and dataset name as its Value.</p>
+
+    <p>In case of genome project, describe “Genome-Assembly-Data” for the value of tagset_id qualifier.<br />
+In case of transcriptome project, describe “Assembly-Data” for the value of tagset_id qualifier.</p>
+  </li>
+  <li>
+    <p>Describe a name of item as Qualifier name and its value as Value. In case of Genome-Assembly-Data, use following Qualifiers.<br />
+In case of Assembly-Data, use following Qualifiers.</p>
+
+    <p>List of Qualifiers for Genome-Assembly-Data (<span class="red">Requierd</span>)</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Qualifier</th>
+          <th>designation and content</th>
+          <th>Remarks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="red">Assembly Method</span></td>
+          <td>Name of program and the version used assembling sequences. Mandatory.</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td>Assembly Name</td>
+          <td>Name that the submitter has given to that assembly of the genome. Mandatory for Eukaryote.</td>
+          <td>we recommend to describe in the format： [abbreviated name of species or common name of organism] + [version] (i.e. Btau_4.0)</td>
+        </tr>
+        <tr>
+          <td><span class="red">Genome Coverage</span></td>
+          <td>Approximate sequencing depth. Mandatory.</td>
+          <td> </td>
+        </tr>
+        <tr>
+          <td><span class="red">Sequencing Technology</span></td>
+          <td>Platform(s) used to generate the sequence. Mandatory.</td>
+          <td> </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>List of Qualifiers for Assembly-Data (<span class="red">Requierd</span>)</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Qualifier</th>
+          <th>designation and content</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="red">Assembly Method</span></td>
+          <td>Name of program and the version used assembling sequences. Mandatory.</td>
+        </tr>
+        <tr>
+          <td>Assembly Name</td>
+          <td>Name and version for assembled sequences</td>
+        </tr>
+        <tr>
+          <td>Coverage</td>
+          <td>Approximate sequencing depth.</td>
+        </tr>
+        <tr>
+          <td><span class="red">Sequencing Technology</span></td>
+          <td>Platform(s) used to generate the sequence. Mandatory.</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <p>If you have any question to describe ST_COMMENT, please contact us by email prior to your submission.</p>
+  </li>
+</ul>
+
+<h3 id="biological-features">Biological Features<a name="biological_feature"></a></h3>
+
+<p>Example: source and CDS features in annotation file(<span class="red">Requierd</span>)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td><span class="red">source</span></td>
+      <td><span class="red">1..12297</span></td>
+      <td><span class="red">organism</span></td>
+      <td>Mus musculus</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">mol_type</span></td>
+      <td>genomic_DNA</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>chromosome</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>clone</td>
+      <td>PC0110</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td><span class="red">CDS</span></td>
+      <td><span class="red">join(&lt;1..456,609..879,1070..1213)</span></td>
+      <td><span class="red">product</span></td>
+      <td>protein kinase</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>codon_start</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>rRNA</td>
+      <td>1279..3000</td>
+      <td>product</td>
+      <td>18S rRNA</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>CDS</td>
+      <td>complement(join(3213..4981,9901..11677))</td>
+      <td>gene</td>
+      <td>tbpA</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>product</td>
+      <td>TATA-box binding protein</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><span class="red">※</span>For detail definitions and descriptions of Biological features, please read <a href="/ddbj/feature-table-e.html">Feature Table Definition</a>.</p>
+
+<h4 id="requirements-for-describing-featurelocationqualifier-">Requirements for Describing Feature/Location/Qualifier <a name="#describing_feature"></a></h4>
+
+<ul>
+  <li>In <a href="/ddbj/feature-table-e.html">Feature Table Definition</a>, each Qualifier has a / [slash] on its head, however do not use slashes for Qualifiers in the annotation file.</li>
+  <li>Qualifiers marked with * (organism、mol_type) are mandatory items. Features, source and at least one other feature are mandatory items for each entry. Please be sure to input them correctly.</li>
+  <li>You can find the rule to describe Location on <a href="/ddbj/location-e.html">Description of Location</a>.</li>
+  <li>You can see Qualifiers are legal for each Feature in <a href="/assets/files/pdf/ddbj/fq-e.pdf">Feature/Qualifier Usage Matrix</a>. Some of
+Features have mandatory Qualifier(s). Please be sure to specify Features and Qualifiers according to their name in the table. They are strictly defined such as case-sensitive (to distinguish upper case or lower), to use “_” [underscore], and so on.</li>
+  <li>See also <a href="#sample">Sample annotation file</a> and <a href="/ddbj/example-e.html">Example of Submission</a></li>
+  <li>When you describe CDS features, <a href="/ddbj/cds-e.html">Protein Coding Sequence; CDS feature</a> would be helpful.</li>
+  <li>Files containing CDS feature(s) should be checked with <a href="/ddbj/ume-e.html">UME</a> or <a href="/ddbj/transchecker-e.html">transChecker</a>.</li>
+</ul>
+
+<h4 id="requirements-for-describing-value-">Requirements for Describing Value <a name="#describing_value"></a></h4>
+
+<ul>
+  <li>The legal character type for Values depends on the Qualifiers as shown in the table, <a href="/assets/files/pdf/ddbj/fq-e.pdf">Feature/Qualifier Usage Matrix</a> and <a href="/ddbj/feature-table-e.html">Feature Table Definition</a>.</li>
+  <li>Please be sure to input (or not to input) Values in accordance with value types in tables.</li>
+</ul>
+
+<h3 id="division">DIVISION<a name="division"></a></h3>
+
+<p>DIVISION feature in annotation file indicates that entries are corresponding only to one of <a href="/documents/data-categories-e.html#con">CON</a> / <a href="/documents/data-categories.html#env">ENV</a> / <a href="/documents/data-categories-e.html#est">EST</a> / <a href="/documents/data-categories-e.html#est">GSS</a> / <a href="/documents/data-categories-e.html#est">HTC</a> / <a href="/documents/data-categories-e.html#est">HTG</a> / <a href="/documents/data-categories-e.html#est">STS</a> / <a href="/documents/data-categories-e.html#env">SYN</a> / <a href="/documents/data-categories-e.html#tsa">TSA</a>.</p>
+
+<p>Example: DIVISION in annotation file</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>COMMON</td>
+      <td>DIVISION</td>
+      <td> </td>
+      <td>division</td>
+      <td>EST</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="requirements-for-describing-division-">Requirements for Describing DIVISION <a name="Requirements_for_Describing_DIVISION"></a></h4>
+
+<ul>
+  <li>Please enter the division name, 3 capital letters in the Value for Qualifier: division.</li>
+  <li>In principle, please describe the DIVISION feature in the <a href="#common">COMMON</a> entry.</li>
+</ul>
+
+<h3 id="datatype">DATATYPE<a name="datatype"></a></h3>
+
+<p>DATATYPE feature indicates that entries are corresponding to either of <a href="/ddbj/wgs-e.html">WGS</a>, <a href="/ddbj/tls-e.html">TLS</a>, <a href="/ddbj/tpa-e.html">TPA</a>, or TPA-WGS.</p>
+
+<p>Example: DATATYPE in annotation file</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>COMMON</td>
+      <td>DATATYPE</td>
+      <td> </td>
+      <td>type</td>
+      <td>WGS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="requirements-for-describing-datatype-">Requirements for Describing DATATYPE <a name="Requirements_for_Describing_DATATYPE"></a></h4>
+
+<ul>
+  <li>Please enter the name of type, WGS, TLS, TPA, or TPA-WGS in the Value for Qualifier: type.</li>
+  <li>Please describe the DATATYPE feature in the <a href="#common">COMMON</a> entry.</li>
+</ul>
+
+<h3 id="keyword-">KEYWORD <a name="keyword"></a></h3>
+
+<p>On the basis of categories indicated at the sections, <a href="#division">DIVISION</a> and <a href="#datatype">DATATYPE</a>, KEYWORDs with controlled vocabulary describe more detail and specified information, such as experimental methods.<br />
+Please see <a href="/ddbj/keyword-e.html">INSDC agreed methodological keywords</a>, which qualify controlled keyword terms.</p>
+
+<p>Example: KEYWORD in annotation file</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td><span class="font-bold">KEYWORD</span></td>
+      <td> </td>
+      <td><span class="font-bold">keyword</span></td>
+      <td><span class="font-bold">ENV</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Specified values for KEYWORD/keyword(<span class="red">Requierd</span>)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Categories</th>
+      <th>the values for keyword</th>
+      <th>Remarks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/ddbj/wgs.html">WGS</a></td>
+      <td><span class="red">WGS</span></td>
+      <td>see also <a href="#wgs_con">For WGS and scaffold CON</a>.</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/env.html">ENV</a></td>
+      <td><span class="red">ENV</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2"><a href="/ddbj/est.html">EST</a></td>
+      <td><span class="red">EST</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>some other terms</td>
+      <td>Please refer to <a href="#est">For EST Submissions</a>.</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/htc.html">HTC</a></td>
+      <td>
+      <span class="red">HTC</span> some other terms</td>
+      <td>Please contact us before your submission.</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/htg.html">HTG</a></td>
+      <td><span class="red">HTG</span>, <a href="#htg">some other terms</a></td>
+      <td>Depending on the <a href="/documents/data-categories.html#est">phase</a>. Please contact us before your submission.</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/gss.html">GSS</a></td>
+      <td><span class="red">GSS</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>STS</td>
+      <td><span class="red">STS</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2"><a href="/ddbj/tpa.html">TPA</a></td>
+      <td><span class="red">TPA, Third Party Data</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><span class="red">TPA:inferential</span> or <span class="red">TPA:experimental</span></td>
+      <td>Either of two is mandatory.</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/tsa.html">TSA</a></td>
+      <td><span class="red">TSA, Transcriptome Shotgun Assembly</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/tls.html">TLS</a></td>
+      <td><span class="red">TLS, Targeted Locus Study</span></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td></td>
+      <td>Please contact us before your submission.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="requirements-for-describing-keyword-">Requirements for Describing KEYWORD <a name="Requirements_for_Describing_KEYWORD"></a></h4>
+
+<ul>
+  <li>Please describe the specified values for Qualifier: keyword.</li>
+  <li>Please contact us before your submission to make sure the detail descriptions of KEYWORD.</li>
+</ul>
+
+<h6 id="for-wgs-and-scaffold-con">For WGS and scaffold CON<a name="wgs_con"></a></h6>
+
+<ul>
+  <li>
+    <p>For WGS and scaffold CON, please select a keyword from the following list.</p>
+
+    <ul>
+      <li>STANDARD_DRAFT</li>
+      <li>HIGH_QUALITY_DRAFT</li>
+      <li>IMPROVED_HIGH_QUALITY_DRAFT</li>
+      <li>NON_CONTIGUOUS_FINISHED</li>
+    </ul>
+
+    <p>Example: WGS draft genome(<span class="red">Requierd</span>)</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Entry</th>
+          <th>Feature</th>
+          <th>Location</th>
+          <th>Qualifier</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> </td>
+          <td><span class="red">KEYWORD</span></td>
+          <td> </td>
+          <td><span class="red">keyword</span></td>
+          <td><span class="red">WGS</span></td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td><span class="red">keyword</span></td>
+          <td><span class="red">STANDARD_DRAFT</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<h6 id="for-est-submissions">For EST Submissions<a name="est"></a></h6>
+
+<ul>
+  <li>
+    <p>For EST submissions, at least two keywords are required; EST and one of following three terms;</p>
+
+    <ul>
+      <li>For 5’ EST submissions — 5’-end sequence (5’-EST)</li>
+      <li>For 3’ EST submissions — 3’-end sequence (3’-EST)</li>
+      <li>Other than above two cases — unspecified EST</li>
+    </ul>
+
+    <p>Example : 5’ EST(<span class="red">Requierd</span>)</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Entry</th>
+          <th>Feature</th>
+          <th>Location</th>
+          <th>Qualifier</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> </td>
+          <td><span class="red">KEYWORD</span></td>
+          <td> </td>
+          <td><span class="red">keyword</span></td>
+          <td><span class="red">EST</span></td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td><span class="red">keyword</span></td>
+          <td><span class="red">5’-end sequence (5’-EST)</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <p>In the case of 3’ EST, to distinguish whether your sequences are corresponding to anti-sense or sense strand, please describe either of following two COMMENTs.</p>
+
+    <p>Example : For anti-sense strand;(<span class="red">Requierd</span>)</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Entry</th>
+          <th>Feature</th>
+          <th>Location</th>
+          <th>Qualifier</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> </td>
+          <td><span class="red">COMMENT</span></td>
+          <td> </td>
+          <td><span class="red">line</span></td>
+          <td><span class="red">3’-EST sequences are presented as anti-sense strand.</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Example : For sense strand;(<span class="red">Requierd</span>)</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Entry</th>
+          <th>Feature</th>
+          <th>Location</th>
+          <th>Qualifier</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> </td>
+          <td><span class="red">COMMENT</span></td>
+          <td> </td>
+          <td><span class="red">line</span></td>
+          <td><span class="red">3’-EST sequences are presented as sense strand.</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<h6 id="for-htg-submissions">For HTG submissions<a name="htg"></a></h6>
+
+<ul>
+  <li>
+    <p>For HTG submissions, we recommend to use keywords to indicate sequencing status of <a href="/ddbj/htg-e.html">HTG data</a>.</p>
+
+    <p>Example I: containing unordered pieces(<span class="red">Requierd</span>)</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Entry</th>
+          <th>Feature</th>
+          <th>Location</th>
+          <th>Qualifier</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> </td>
+          <td><span class="red">KEYWORD</span></td>
+          <td> </td>
+          <td><span class="red">keyword</span></td>
+          <td><span class="red">HTG</span></td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td><span class="red">keywrod</span></td>
+          <td><span class="red">HTGS_PHASE1</span></td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td><span class="red">keyword</span></td>
+          <td><span class="red">HTGS_DRAFT</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Example II: containing only ordered pieces(<span class="red">Requierd</span>)</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Entry</th>
+          <th>Feature</th>
+          <th>Location</th>
+          <th>Qualifier</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> </td>
+          <td><span class="red">KEYWORD</span></td>
+          <td> </td>
+          <td><span class="red">keyword</span></td>
+          <td><span class="red">HTG</span></td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td> </td>
+          <td> </td>
+          <td><span class="red">keyword</span></td>
+          <td><span class="red">HTGS_PHASE2</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<h3 id="dblink-">DBLINK <a name="dblink"></a></h3>
+
+<p>The DBLINK line is used to link other databases, such as BioProject ID, BioSample ID and Sequence Read Archive (DRA/ERA/SRA).</p>
+
+<p>Example: DBLINK in annotation file(<span class="red">Requierd</span>)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td><span class="red">DBLINK</span></td>
+      <td> </td>
+      <td><span class="red">project</span></td>
+      <td><span class="red">PRJDB12345</span></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">biosample</span></td>
+      <td><span class="red">SAMD90000000</span></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">sequence read archive</span></td>
+      <td><span class="red">DRR999000</span></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td><span class="red">sequence read archive</span></td>
+      <td><span class="red">DRR999001</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="requirements-for-describing-dblink-">Requirements for Describing DBLINK <a name="Requirements_for_Describing_DBLINK"></a></h4>
+
+<ul>
+  <li>If you have registered your project to the <a href="/bioproject/index-e.html">DDBJ BioProject Database</a>, please enter the project ID in
+the Value for Qualifier: The sample ID of <a href="/biosample/index-e.html">DDBJ BioSample</a> also writes in the Value of for Qualifier.</li>
+  <li>An assembly from raw reads of Sequence Read Archive is required to have <a href="/documents/prefix-e.html#dra">run accession number(s)</a> in the Value for Qualifier.</li>
+  <li>See also <a href="/bioproject/index-e.html">DDBJ BioProject Database</a>, <a href="/biosample/index-e.html">DDBJ BioSample Database</a> and <a href="/dra/index-e.html">DDBJ Sequence Read Archive</a>.</li>
+</ul>
+
+<h3 id="locus_tag-">locus_tag <a name="locus_tag"></a></h3>
+
+<p>For the submission in the whole genome scale with many annotated features, we recommend to use the qualifier <a href="/ddbj/locus_tag.html">locus_tag</a>, for the <a href="#biological_feature">Biological Features</a> indicating protein products (<a href="/ddbj/cds-e.html">CDSs</a>), and transcripts (rRNA, tRNA and so on).<br />
+The locus_tag prefix and BioProject ID should be registered at <a href="/bioproject/index-e.html">DDBJ BioProject Database</a> in advance.</p>
+
+<h3 id="source-ff_definition-">source: ff_definition <a name="source"></a></h3>
+
+<p>ff_definition is a Qualifier that is not defined in The DDBJ/EMBL/GenBank Feature Table: Definition. One ff_definition can be
+described in an entry, if necessary.</p>
+
+<p>Example: ff_definition in annotation file</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>source</td>
+      <td>1..516</td>
+      <td>organism</td>
+      <td>Mus musculus</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>mol_type</td>
+      <td>mRNA</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ff_definition</td>
+      <td><span class="bold">@@[organism]@@</span> mRNA, clone: <span class="bold">@@[clone]@@</span></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>clone</td>
+      <td>PC0110</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Value formats of ff_definition</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Categories</th>
+      <th>Format for the value of ff_definition</th>
+    </tr>
+  </thead>
+  <tbody> 
+    <tr>
+      <td><a href="/ddbj/wgs-e.html">WGS</a></td>
+      <td>@@[organism]@@ @@[strain]@@ DNA, @@[submitter_seqid]@@, [other information]</td>
+    </tr>
+    <tr>
+      <td>BAC/YAC genomic clones in unfinished phase (<a href="/ddbj/htg.html">HTG</a>)</td>
+      <td>@@[organism]@@ DNA, chromosome @@[map]@@, [BAC/YAC] clone: @@[clone]@@, *** SEQUENCING IN PROGRESS ***</td>
+    </tr>
+    <tr>
+      <td>BAC/YAC genomic clones in finished phase</td>
+      <td>@@[organism]@@ DNA, chromosome @@[map]@@, [BAC/YAC] clone: @@[clone]@@</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><a href="/ddbj/est.html">EST</a></td>
+      <td>@@[organism]@@ mRNA, clone: @@[clone]@@, [other information]</td>
+    </tr>
+    <tr>              
+      <td>@@[organism]@@ cDNA, clone: @@[clone]@@, [other information]</td>     
+    </tr>
+    <tr>
+      <td><a href="/ddbj/gss.html">GSS</a></td>
+      <td>@@[organism]@@ DNA, clone: @@[clone]@@, [other information]</td>
+    </tr>
+    <tr>
+      <td>STS</td>
+      <td>@@[organism]@@ DNA, @@[map]@@, [marker name], sequence tagged site</td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>Please contact us before your submission, if necessary. </td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="requirements-for-describing-source-ff_definition-">Requirements for Describing source: ff_definition <a name="Requirements_for_Describing_source__ff_definition"></a></h4>
+
+<ul>
+  <li>The Qualifier: ff_definition can be described on source, one of <a href="#biological_feature">Biological features</a>.</li>
+  <li>You can describe only one ff_difinition for one entry.</li>
+  <li>The value of ff_definition will be used for the DEFINITION line in the format of <a href="/ddbj/flat-file-e.html">DDBJ flat file</a>.  Please refer to <a href="#sample">Sample annotation file and The relationships between annotation file and DDBJ flat file</a>.</li>
+  <li>For the Value of ff_definition, a meta description (e.g. @@[organism]@@ and @@[clone]@@) is available to quote values of other qualifiers. The meta description, Qualifier name enclosed by “<strong>@@[</strong> and <strong>]@@</strong>”, will be replaced by the value of target Qualifier (“organism”, “clone” in the above sample) when ff_definition is reflected in DEFINITION line on DDBJ flat file.</li>
+  <li>In principle, you can describe DEFINITION according to the above table, however, if you like to input the values of ff_definition qualifiers, please contact us before your submission.</li>
+</ul>
+
+<h3 id="assembly_gap-sequencing-gap-region-">assembly_gap: Sequencing Gap Region <a name="assembly_gap"></a></h3>
+
+<p>In cases of whole genome scale sequencing such as <a href="/ddbj/htg-e.html">HTG</a> or large scale of assembled EST sequences such as <a href="/ddbj/tsa-e.html">TSA</a> division, the entries may have some sequencing gaps that would be resulted from the process of assembling or the region difficult to read. You can indicate them by describing “n” in its sequence. In annotation file, you have to indicate the regions of sequencing gaps with <a href="/ddbj/features-e.html#assembly_gap">assembly_gap</a> features.</p>
+
+<p>Example: assembly_gap in annotation file(<span class="red">Requierd</span>)</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>assembly_gap</td>
+      <td>101..200</td>
+      <td>estimated_length</td>
+      <td><span class="red">unknown</span></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>gap_type</td>
+      <td><span class="red">within scaffold</span></td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>linkage_evidence</td>
+      <td><span class="red">paired-ends</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="requirements-for-describing-assembly_gap-sequencing-gap-region-">Requirements for Describing assembly_gap: Sequencing Gap Region <a name="Requirements_for_Describing_assembly_gap__Sequencing_Gap_Region"></a></h4>
+
+<ul>
+  <li>Though the assembly_gap feature is one of <a href="/ddbj/file-format-e.html#biological_feature">Biological features</a>, the format
+is slightly different from others.</li>
+  <li>You can NOT use join, order, complement for the Location of assembly_gap features.</li>
+</ul>
+
+<h6 id="length-of-the-gap-is-unknown">Length of the gap is unknown</h6>
+
+<p>The location of span of the assembly_gap feature for an unknown gap has to be specified by the submitter; the specified gap length has to be reasonable (less or = 1000) and will be indicated as “n”’s in the sequence.<br />
+It is required to indicate unknown for the Value of Qualifier: estimated_length on the assembly_gap feature.</p>
+
+<p>In case of transcriptome record (TSA division), the value of the estimated_length of assembly_gap features must be in an integer, not be “unknown”.</p>
+
+<h6 id="length-of-the-gap-is-estimated">Length of the gap is estimated</h6>
+
+<p>The location span of the assembly_gap feature for “known” gap should be indicated by the number of “n”’s in the sequence. It is required to indicate known for the Value of Qualifier: estimated_length on the assembly_gap feature.</p>
+
+<h3 id="topology-">TOPOLOGY <a name="topology"></a></h3>
+
+<p>Please enter circular for the Qualifier of TOPOLOGY feature, when the topology of whole nucleotide molecule is circular and the first and the end positions are conjugated on real molecules.<br />
+i.e. Complete genome sequence of a circular virus</p>
+
+<p>Example: TOPOLOGY in annotation file</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>TOPOLOGY</td>
+      <td> </td>
+      <td>circular</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="requirements-for-describing-topology-">Requirements for Describing TOPOLOGY <a name="Requirements_for_Describing_TOPOLOGY"></a></h4>
+
+<ul>
+  <li>In DDBJ flat file, topology is indicated in the <a href="/ddbj/flat-file-e.html#Locus">LOCUS</a> line. See also <a href="#sample">Sample annotation file</a>.</li>
+</ul>
+
+<h3 id="tpatsa-primary_contig-citation-of-primary-entries">TPA/TSA: PRIMARY_CONTIG, Citation of Primary Entries<a name="primary_contig"></a></h3>
+
+<p>PRIMARY_CONTIG, entry, and primary_bases are the Feature and Qualifiers prepared to describe the alignments of primary entries for
+TPA/TSA submission.</p>
+
+<p>Example: PRIMARY_CONTIG in annotation file</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entry</th>
+      <th>Feature</th>
+      <th>Location</th>
+      <th>Qualifier</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>PRIMARY_CONTIG</td>
+      <td>1..438</td>
+      <td>entry</td>
+      <td>ZZ000010.1</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>primary_bases</td>
+      <td>1..438</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>PRIMARY_CONTIG</td>
+      <td>377..696</td>
+      <td>entry</td>
+      <td>ZZ000011.1</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>primary_bases</td>
+      <td>1..320</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>complement</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>PRIMARY_CONTIG</td>
+      <td>590..1191</td>
+      <td>entry</td>
+      <td>ZZ000022.0</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>primary_bases</td>
+      <td>1..601</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Qualifiers available for PRIMARY_CONTIG</p>
+
+<table>
+<thead>
+<tr class="header">
+<th>Qualifier</th>
+<th>Remarks for the value description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>entry</td>
+<td>Accession number of the cited primary entry (with version number)</td>
+</tr>
+<tr class="even">
+<td>primary_bases</td>
+<td>input the base span cited from the primary sequence.<br />
+The base span of the cited primary sequence. Example) 1..500</td>
+</tr>
+<tr class="odd">
+<td>complement</td>
+<td>To indicate citing the complementary strand of primary sequence</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="requirements-for-describing-tpatsa-primary_contig-citation-of-primary-entries-">Requirements for Describing TPA/TSA: PRIMARY_CONTIG, Citation of Primary Entries <a name="Requirements_for_Describing_TPA/TSA__PRIMARY_CONTIG,_Citation_of_Primary_Entries"></a></h4>
+
+<ul>
+  <li>
+    <p>Please specify the value for <a href="#datatype">DATATYPE/type</a>, TPA or <a href="#division">DIVISION/division</a>, TSA in the annotation file.</p>
+  </li>
+  <li>
+    <p>In PRIMARY_CONTIG, it is necessary to refer to accession number(s) (with version) in the primary database and enter the base spans of the primary sequences that contribute to the TPA/TSA sequence.</p>
+  </li>
+  <li>
+    <p>You can not use join, order, complement for Location column. Please
+describe each PRIMARY_CONTIG and location even in the same entry.</p>
+  </li>
+  <li>
+    <p>If the primary entry has been submitted to DDBJ/EMBL-Bank/GenBank, a
+version number is required for accession number. If the primary entry is
+not public, please use 0 [zero] for the version. e.g. ZZ000022.0</p>
+  </li>
+  <li>
+    <p>If primary sequence is corresponding to reverse strand in the TPA/TSA
+sequence, please put complement qualifier.</p>
+  </li>
+  <li>
+    <p>In detail, refer to <a href="#sample">Sample annotation file and The relationships
+between annotation file and DDBJ flat file</a>.</p>
+
+    <ul>
+      <li>TPA (Third Party Annotation)： <a href="#TPA">Sample</a></li>
+      <li>TSA (Transcriptome Shotgun Assembly)： <a href="#TSA">Sample</a></li>
+      <li>TSA; assembled from short reads： <a href="#TSA_SRA_assemble_Ann">Sample</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="sample-annotation">Sample annotation<a name="sample"></a></h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td rowspan="6">General data</td>
+      <td>Protein coding sequence (CDS)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=505600445">CDS</a></td>
+    </tr>
+    <tr>
+      <td>Ribosomal RNA</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=1380986730">16S_rRNA</a></td>
+    </tr>
+    <tr>
+      <td>ITS (Internal Transcribed Spacer)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=162924670">ITS</a></td>
+    </tr>
+    <tr>
+      <td>Microsatellite marker</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=282901241">Microsatellite marker</a></td>
+    </tr>
+    <tr>
+      <td>Mitochondrial sequence</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=545461927">mtDNA</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/env.html">ENV</a> (Environmental Samples)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=585575811">ENV</a></td>
+    </tr>
+    <tr>
+      <td rowspan="8">Genome data</td>
+      <td><a href="/ddbj/genome.html">complete genome sequence (Bacteria)</a></td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=862924679">complete_genome_BCT</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/wgs.html">WGS</a> (Whole Genome Shotgun) without annotation</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=382116224">WGS</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/wgs.html">WGS</a> (Whole Genome Shotgun) with annotation</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">WGS_annotation</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/wgs.html">WGS</a>; piece of scaffold CON</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=595699065">WGS_piece_CON</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/con.html">CON</a> entries for WGS scaffold</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1885054586">WGS_scaffold</a></td>
+    </tr>
+    <tr>
+      <td>AGP file for <a href="/ddbj/con.html">CON</a> entries</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1672995780">AGP</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/gss.html">GSS</a> (Genome Survey Sequences)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=460036592">GSS</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/htg.html">HTG</a> (High Throughput Genomic Sequences)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=199977055">HTG</a></td>
+    </tr>
+    <tr id="TSA">
+      <td rowspan="4">Large transcripts data</td>
+      <td><a href="/ddbj/tsa.html">TSA</a> (Transcriptome Shotgun Assembly); assembled from EST</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=2130672006">TSA</a></td>
+    </tr>
+    <tr id="TSA_SRA_assemble_NoANN">
+      <td><a href="/ddbj/tsa.html">TSA</a>; assembled from short reads without annotation</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=931177555">TSA_SRA_assemble_NoANN</a></td>
+    </tr>
+    <tr id="TSA_SRA_assemble_Ann">
+      <td><a href="/ddbj/tsa.html">TSA</a>; assembled from short reads with annotation</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1607251813">TSA_SRA_assemble_Ann</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/est.html">EST</a> (Expressed Sequence Tags)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1753678626">EST</a></td>
+    </tr>
+    <tr>
+      <td>TLS (Targeted Locus Study)</td>
+      <td><a href="/ddbj/tls.html">TLS (Targeted Locus Study)</a></td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=580470761">TLS</a></td>
+    </tr>
+    <tr>
+      <td rowspan="3"><a href="/ddbj/tpa.html">TPA</a> (Third Party Data)</td>
+      <td><a href="/ddbj/tpa.html">TPA</a> (Third Party Data)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=123381270">TPA</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/tpa.html">TPA</a> assembly (Third Party Data)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=80322930">TPA-assembly_WGS</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/tpa.html">TPA</a> assembly (Third Party Data)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1394019205">TPA-assembly</a></td>
+    </tr>
+    <tr id="ann2-ff">
+      <td>Annotation: Flat file</td>
+      <td>Protein coding sequence (CDS)</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=961825804">ann2-ff</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="agp-file">AGP File<a name="agp"></a></h2>
+
+<p>AGP file is required to submit <a href="/ddbj/con-e.html">CON entries</a>. An AGP file is the tab delimited text file consisting of nine columns of the order and orientation etc of the piece entries to construct CON entry. You can make the files with some scripts, spread sheets (such as MS Excel), text editors and so on.</p>
+
+<p>Sequence file is not required when the sequence can be constructed from AGP file.</p>
+
+<p><a href="https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/">The AGP file</a> format was initially developed by UCSC, EBI and NCBI.</p>
+
+<p>Example: AGP file</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>#1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+      <th>9</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>scaffold1</td>
+      <td>1</td>
+      <td>1345</td>
+      <td>1</td>
+      <td>W</td>
+      <td>BZZZ01123456.1</td>
+      <td>1</td>
+      <td>1345</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>scaffold1</td>
+      <td>1346</td>
+      <td>2845</td>
+      <td>2</td>
+      <td>N</td>
+      <td>1500</td>
+      <td>scaffold</td>
+      <td>yes</td>
+      <td>align_genus</td>
+    </tr>
+    <tr>
+      <td>scaffold1</td>
+      <td>2846</td>
+      <td>4301</td>
+      <td>3</td>
+      <td>W</td>
+      <td>BZZZ01123457.1</td>
+      <td>1</td>
+      <td>1456</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>scaffold1</td>
+      <td>4302</td>
+      <td>4401</td>
+      <td>4</td>
+      <td>U</td>
+      <td>100</td>
+      <td>scaffold</td>
+      <td>yes</td>
+      <td>align_genus</td>
+    </tr>
+    <tr>
+      <td>scaffold1</td>
+      <td>4402</td>
+      <td>5631</td>
+      <td>5</td>
+      <td>W</td>
+      <td>BZZZ01123458.1</td>
+      <td>1</td>
+      <td>1230</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>scaffold2</td>
+      <td>1</td>
+      <td>650</td>
+      <td>1</td>
+      <td>W</td>
+      <td>BZZZ01123486.1</td>
+      <td>1</td>
+      <td>1345</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>scaffold2</td>
+      <td>651</td>
+      <td>750</td>
+      <td>2</td>
+      <td>N</td>
+      <td>100</td>
+      <td>scaffold</td>
+      <td>yes</td>
+      <td>align_genus</td>
+    </tr>
+    <tr>
+      <td>scaffold2</td>
+      <td>751</td>
+      <td>2980</td>
+      <td>3</td>
+      <td>W</td>
+      <td>BZZZ01123488.1</td>
+      <td>1</td>
+      <td>1230</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="format-and-syntax--2">Format and Syntax <a name="agp_format"></a></h3>
+
+<p>It is required to validate formats of AGP file by <a href="/ddbj/ume-e.html">UME</a>.</p>
+
+<ul>
+  <li>AGP file consists of nine columns.</li>
+  <li>Columns should be tab delimited.</li>
+  <li>AGP file is required to contain NO space or blank line.</li>
+  <li>The use of comment lines, starting with a # symbol, at the head of the file is encouraged.</li>
+</ul>
+
+<p>Description on each column（column 1 - column 5）</p>
+
+<table>
+  <caption>* component: a sequence used to construct a larger sequence (i.e. piece entry)</caption>
+  <thead>
+    <tr>
+      <th>column</th>
+      <th>content</th>
+      <th colspan="2">description</th>
+    </tr>
+  </thead>
+  <tbody> 
+    <tr>
+      <td>1</td>
+      <td>object</td>
+      <td colspan="2">CON entry name, the identifier for the object being assembled.<br />i.e. a chromosome, scaffold or contig.<br />CON entry name has to correspond to each name in the annotation file as described at <a href="#annotation">Annotation File</a>.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>object_beg</td>
+      <td colspan="2">The starting coordinates of the component/gap on the object.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>object_end</td>
+      <td colspan="2">The ending coordinates of the component/gap on the object.</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>part_number</td>
+      <td colspan="2">The line count for the components/gaps that make up the object.</td>
+    </tr>
+    <tr>
+      <td rowspan="10" class="borderbtm">5</td>
+      <td rowspan="10" class="borderbtm">component_type</td>
+      <td colspan="2">The sequencing status of the component. These typically correspond to keywords in the International Sequence Database (GenBank/EMBL/DDBJ) submission. Current acceptable values are:</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td> Active Finishing</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>Draft HTG (often phase1 and phase2 are called Draft, whether or not they have the draft keyword)</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>Finished HTG (phase3)</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>Whole Genome Finishing</td>
+    </tr>
+    <tr>
+      <td>O</td>
+      <td>Other sequence (typically means no HTG keyword)</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>Pre Draft</td>
+    </tr>
+    <tr>
+      <td>W</td>
+      <td>WGS contig</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>gap with specified size</td>
+    </tr>
+    <tr>
+      <td>U</td>
+      <td>gap of unknown size, defaulting to 100 bases</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><span class="icon_d-triangle">The description of column 6 to 9 depends on the value in column 5 whether it has gap or not.</span></p>
+
+<p>Description on each column（column 6 - column 9）： If column 5 contains A, D, F, G, O, P and W except from N and U</p>
+
+<table>
+  <caption>* component: a sequence used to construct a larger sequence (i.e. piece entry)</caption>
+  <thead>
+    <tr>
+      <th>column</th>
+      <th>content</th>
+      <th colspan="2">Description</th>
+    </tr>
+  </thead>
+  <tbody> 
+    <tr>
+      <td>6</td>
+      <td>component_id</td>
+      <td colspan="2">The accession number with version or <br />local identifier for the component</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>component_beg</td>
+      <td colspan="2">The beginning of the part of the component that contributes to the object</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>component_end</td>
+      <td colspan="2">The end of the part of the component that contributes to the object</td>
+    </tr>
+    <tr>
+      <td rowspan="7" class="borderbtm">9</td>
+      <td rowspan="7" class="borderbtm">orientation</td>
+      <td colspan="2">The orientation of the component relative to the object.<br />Acceptable values are:</td>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td>plus</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>minus</td>
+    </tr>
+    <tr>
+      <td>?</td>
+      <td>unknown</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>zero; unknown (deprecated)</td>
+    </tr>
+    <tr>
+      <td>na</td>
+      <td>irrelevant</td>
+    </tr>
+    <tr>
+      <td colspan="2">By default, components with "?", "0" or "na" are treated as if they had + orientation.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Description on each column（column 6 - column 9）：If column 5 contains N and U</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>column</th>
+      <th>content</th>
+      <th colspan="2">description</th>
+    </tr>
+  </thead>
+  <tbody> 
+    <tr>
+      <td>6</td>
+      <td>gap_length</td>
+      <td colspan="2">[component_type: N] The length of gap (bp)<br />[component_type: U] 100</td>
+    </tr>
+    <tr>
+      <td rowspan="8">7</td>
+      <td rowspan="8">gap_type</td>
+      <td colspan="2">This column specifies the gap type. Accepted values:</td>
+    </tr>
+    <tr>
+      <td>scaffold</td>
+      <td>a gap between two sequence contigs in a scaffold (superscaffold or ultra-scaffold).</td>
+    </tr>
+    <tr>
+      <td>contig</td>
+      <td>an unspanned gap between two sequence contigs.</td>
+    </tr>
+    <tr>
+      <td>centromere</td>
+      <td>a gap inserted for the centromere.</td>
+    </tr>
+    <tr>
+      <td>short_arm</td>
+      <td>a gap inserted at the start of an acrocentric chromosome.</td>
+    </tr>
+    <tr>
+      <td>heterochromatin</td>
+      <td>a gap inserted for an especially large region of heterochromatic sequence (may also include the centromere)</td>
+    </tr>
+    <tr>
+      <td>telomere</td>
+      <td>a gap inserted for the telomere.</td>
+    </tr>
+    <tr>
+      <td>repeat</td>
+      <td>an unresolvable repeat.</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>linkage</td>
+      <td colspan="2">The linkage between the adjacent lines (Values: "yes" or "no")</td>
+    </tr>
+    <tr>
+      <td rowspan="12" class="borderbtm">9</td>
+      <td rowspan="12" class="borderbtm">linkage evidence</td>
+      <td colspan="2">This specifies the type of evidence used to assert linkage (as indicated in column 8b). Accepted values:</td>
+    </tr>
+    <tr>
+      <td>na</td>
+      <td>used when no linkage is being asserted (column 8b is 'no')</td>
+    </tr>
+    <tr>
+      <td>paired-ends</td>
+      <td>paired sequences from the two ends of a DNA fragment.</td>
+    </tr>
+    <tr>
+      <td>align_genus</td>
+      <td>alignment to a reference genome within the same genus.</td>
+    </tr>
+    <tr>
+      <td>align_xgenus</td>
+      <td>alignment to a reference genome within another genus.</td>
+    </tr>
+    <tr>
+      <td>align_trnscpt</td>
+      <td>alignment to a transcript from the same species.</td>
+    </tr>
+    <tr>
+      <td>within_clone</td>
+      <td>sequence on both sides of the gap is derived from the same clone, but the gap is not spanned by paired-ends. The adjacent sequence contigs have unknown order and orientation</td>
+    </tr>
+    <tr>
+      <td>clone_contig</td>
+      <td>linkage is provided by a clone contig in the tiling path (TPF). For example, a gap where there is a known clone, but there is not yet sequence for that clone.</td>
+    </tr>
+    <tr>
+      <td>map</td>
+      <td>linkage asserted using a non-sequence based map such as RH, linkage, fingerprint or optical.</td>
+    </tr>
+    <tr>
+      <td>strobe</td>
+      <td>strobe sequencing (PacBio).</td>
+    </tr>
+    <tr>
+      <td>unspecified</td>
+      <td>used when converting old AGPs that lack a field for linkage evidence into the new format.</td>
+    </tr>
+    <tr>
+      <td colspan="2">If there are multiple lines of evidence to support linkage, all can be listed using a ‘;’ delimiter.<br />(e.g. "paired-ends;align_xgenus ")</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>
+    <p>The length of gap for an ‘unknown’ gap should be 100 bp. It is required to indicate “U” for the value of component_type and “100” for the value of gap_length.</p>
+  </li>
+  <li>
+    <p>Information about continuity is provided by a combination of the value in the gap_type and linkage. 
+Please refer to the following table.</p>
+
+    <p>Example: source feature in COMMON entry</p>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>gap_type</th>
+      <th>linkage</th>
+      <th>Interpretation and description</th>
+    </tr>
+  </thead>
+  <tbody> 
+    <tr>
+      <td colspan="3">Within-scaffold gaps: sequences on either side of the gap are in a single scaffold.</td>
+    </tr>
+    <tr>
+      <td>scaffold</td>
+      <td>yes</td>
+      <td>Do not break scaffold<br />There is evidence linking sequence contigs on both sides of the gap.</td>
+    </tr>
+    <tr>
+      <td>repeat</td>
+      <td>yes</td>
+      <td>Do not break scaffold<br />If an unresolvable repeat unit is spanned by linkage evidence, the linkage will be 'yes'.</td>
+    </tr>
+    <tr>
+      <td colspan="3">Scaffold-breaking gaps: sequences on either side of the gap are in separate scaffolds.</td>
+    </tr>
+    <tr>
+      <td>contig</td>
+      <td>no</td>
+      <td> Break scaffold<br />A contig gap indicates there is no evidence to link the adjacent sequence contigs.</td>
+    </tr>
+    <tr>
+      <td>repeat</td>
+      <td>no</td>
+      <td>Break scaffold<br />If an unresolvable repeat unit is not spanned by linkage evidence, the linkage will be 'no'.</td>
+    </tr>
+    <tr>
+      <td>centromere<br />short_arm<br />heterochromatin<br />telomer</td>
+      <td>no</td>
+      <td>Break scaffold<br />Gaps with these biological types are used for laying out scaffolds along a chromosome.</td>
+    </tr>
+    <tr>
+      <td colspan="3">Invalid gap/linkage combinations</td>
+    </tr>
+    <tr>
+      <td>contig</td>
+      <td>yes</td>
+      <td>Invalid<br />If there is evidence of linkage between the adjacent sequence contigs, the gap type should be scaffold.</td>
+    </tr>
+    <tr>
+      <td>scaffold</td>
+      <td>no</td>
+      <td>Invalid<br />If there is no evidence of linkage between the adjacent sequence contigs, the gap type should be contig.</td>
+    </tr>
+    <tr>
+      <td>centromere<br />short_arm<br />heterochromatin<br />telomere</td>
+      <td>yes</td>
+      <td>Invalid<br />It is invalid to use these biological types within a scaffold.</td>
+    </tr>
+  </tbody>
+</table>
+
+      </div>
+      
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              
+              <li>
+                <a href="/ddbj/mss-tool-e.html">Validation tools for MSS data files</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/ume-e.html">UME User’s manual</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/parser-e.html">Parser User’s Manual</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/transchecker-e.html">transChecker User’s Manual</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/validator-e.html">Validator error message</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/mss-form-e.html">Application form for MSS</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

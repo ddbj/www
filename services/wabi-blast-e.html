@@ -1,0 +1,3192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WABI BLAST</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">WABI BLAST</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/services">services</a>
+          </li>
+          <li>
+            <a href="">WABI BLAST</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="overview-">Overview <a name="overview"></a></h2>
+
+<p>WABI provides web APIs for using BLAST.</p>
+
+<ul>
+  <li>A <a href="#search-job">search job</a> is registered in a queue by submitting a
+<a href="#search-criteria">BLAST search criteria</a>. A <a href="#parameter-Request-ID">Request
+ID</a> is returned as response data.<br />
+Once a search job is registered in the queue, the state of the job
+transitions from “Waiting” ==&gt; “Executing” ==&gt; “Completed”.<br />
+Once the status of a job moves to the “Completed” state, the
+corresponding search results will be available for viewing. Results
+are retained on the server and can be viewed for up to 7 days after
+the search has been executed.<br />
+(Refer to “Search result retention period” <a href="blast-e.html#result">「Request ID and BLAST
+result」</a> )</li>
+  <li>Returns <a href="#search-job">the status of the BLAST search</a> for a
+specified <a href="#parameter-Request-ID">Request ID</a>.</li>
+  <li>Returns <a href="#search-criteria">the BLAST search criteria</a> for a
+specified <a href="#parameter-Request-ID">Request ID</a>.</li>
+  <li>Returns <a href="#search-result">the BLAST search result</a> for a specified
+<a href="#parameter-Request-ID">Request ID</a>.</li>
+</ul>
+
+<h2 id="searching-wabi-blast-">Searching WABI BLAST <a name="search"></a></h2>
+
+<h3 id="blast-search-job-">BLAST search job <a name="search-job"></a></h3>
+
+<p>A BLAST search job is first registered in the queue of jobs awaiting
+execution. The job is then executed as soon as computing resources
+become free.</p>
+
+<p>See Also: <a href="#search-status">Search job status</a></p>
+
+<h3 id="search-job-status-">Search Job Status <a name="search-status"></a></h3>
+
+<p>WABI search jobs transition through the following status.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Job Status</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>waiting</td>
+      <td>The job has been added to the queue, but has not yet commenced execution.</td>
+    </tr>
+    <tr>
+      <td>running</td>
+      <td>The job is being executed.</td>
+    </tr>
+    <tr>
+      <td>finished</td>
+      <td>The job has completed execution.</td>
+    </tr>
+    <tr>
+      <td>not-found</td>
+      <td>The job with the specified <a href="#parameter-Request-ID">Request ID</a> does not exist.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example <a href="#URI_GET_status">response values when querying job status</a>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 request-ID: wabi_blast_1111-1111-1111-11-111-111111
+2 status: finished
+3 current-time: 2013-01-01 12:34:56
+4 system-info:
+5 stdout
+
+1 {
+2         "request-ID": "wabi_blast_1111-1111-1111-11-111-111111",
+3         "status": "finished",
+4         "current-time": "2013-01-01 12:34:56",
+5         "system-info": "nstdout" 
+6 }
+1 &lt;?xml version="1.0" ?&gt;
+2 &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+3 &lt;result&gt;
+4   &lt;request-ID&gt;wabi_blast_1111-1111-1111-11-111-111111&lt;/request-ID&gt;
+5   &lt;status&gt;finished&lt;/status&gt;
+6   &lt;current-time&gt;2013-01-01 12:34:56&lt;/current-time&gt;
+7   &lt;system-info&gt;stdout&lt;/system-info&gt;
+8 &lt;/result&gt;
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 1 {
+ 2         "error-message": "Unexpected error (status == null)",
+ 3         "requestId": "wabi_blast_1111-1111-1111-11-111-111111",
+ 4         "jobId": "123456",
+ 5         "month": "01",
+ 6         "day": "01",
+ 7         "hour": "12",
+ 8         "min": "34",
+ 9         "sec": "56",
+10         "millisec": "789",
+11         "randomId": "987654" 
+12 }
+</code></pre></div></div>
+
+<h3 id="blast-search-criteria-">BLAST search criteria <a name="search-criteria"></a></h3>
+
+<p>Example of parameters that are passed on when a <a href="#URI_POST">BLAST job is
+submitted</a> using WABI.</p>
+
+<p>Example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 1 {
+ 2         "address": "",
+ 3        "database": "hum",
+ 4         "datasets": "ddbjall",
+ 5         "format": "json",
+ 6         "parameters": " -v 100 -b 100 -e 10 -F F -W 11",
+ 7         "program": "blastn",
+ 8        "querySequence": "&gt;my query sequence 1nCACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAAnGCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTGnGTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCACn",
+ 9        "result": "www" 
+10 }
+</code></pre></div></div>
+
+<h3 id="blast-search-result-">BLAST search result <a name="search-result"></a></h3>
+
+<p>The following is an example of the BLAST search output. This is the same
+as the file generated using the blastall command, when executed using
+the “-o” command line option.</p>
+
+<p>Example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 1 BLASTN 2.2.25 [Feb-01-2011]
+ 2 
+ 3 Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer,
+ 4 Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997),
+ 5 "Gapped BLAST and PSI-BLAST: a new generation of protein database search
+ 6 programs",  Nucleic Acids Res. 25:3389-3402.
+ 7 
+ 8 Query= AB000095|AB000095.1 Homo sapiens mRNA for hepatocyte growth
+ 9 factor activator inhibitor, complete cds.
+10          (1740 letters)
+11 
+12 Database: hum
+13            572,091 sequences; 5,019,832,159 total letters
+14 
+15 Searching..................................................done
+16 
+17                                                                  Score    E
+18 Sequences producing significant alignments:                      (bits) Value
+19 
+20 AB000095|AB000095.1 Homo sapiens mRNA for hepatocyte growth fact...  3449   0.0
+21 BC018702|BC018702.1 Homo sapiens serine peptidase inhibitor, Kun...  3435   0.0
+22 BC004140|BC004140.1 Homo sapiens serine peptidase inhibitor, Kun...  3190   0.0
+23 BT007425|BT007425.1 Homo sapiens serine protease inhibitor, Kuni...  3053   0.0
+24 AY358969|AY358969.1 Homo sapiens clone DNA35880 HAI-1 (UNQ223) m...  2145   0.0
+25 AY296715|AY296715.1 Homo sapiens hepatocyte growth factor activa...  1984   0.0
+(後略)
+        
+</code></pre></div></div>
+
+<h3 id="blast-search-result-image-">BLAST search result image <a name="search-image"></a></h3>
+
+<p>BLAST search jobs submitted using WABI generate a graphical display of
+the search output.</p>
+
+<p>Example:</p>
+
+<p><a href="/assets/images/help/wabi_blast_imagedata.png" class="group1"><img src="/assets/images/help/wabi_blast_imagedata.png" alt="Detail view_6_1" class="w500" /></a></p>
+
+<h2 id="wabi-blast-usage-examples-">WABI BLAST usage examples <a name="usage_example"></a></h2>
+
+<div class="accordion-menu">
+  <h3 class="toggle-content-btn"><a href="javascript:void(0)">Code example using Java</a></h3>
+  <div class="accordion-content">
+    <h4 id="example-of-code">Example of code</h4>
+
+    <dl>
+      <dt>Example.java</dt>
+      <dd>
+        <script src="https://gist.github.com/ddbj-repo/d2ead08e9b9664418c34e292392f1ca8.js"></script>
+      </dd>
+      <dt>blast_condition.fasta</dt>
+      <dd>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;my query sequence 1
+CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
+GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
+GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
+</code></pre></div>        </div>
+      </dd>
+      <dt>blast_condition.txt</dt>
+      <dd><a href="https://gist.github.com/ddbj-repo/22e92ce2e085be3f34fe072298241639">Code</a>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>datasets        ddbjall
+database        hum
+program blastn
+parameters      -v 100 -b 100 -e 10 -F F -W 11
+format  json
+result  www
+</code></pre></div>        </div>
+      </dd>
+      <dt>pom.xml</dt>
+      <dd>
+        <script src="https://gist.github.com/ddbj-repo/4978b238ca7dbb94ebeebae0184cd6ce.js"></script>
+      </dd>
+    </dl>
+
+    <h4 id="execution-example-">Execution example <a name="java_execution_example"></a></h4>
+
+    <dl>
+      <dt>Preliminary preparation (Please run first)</dt>
+      <dd>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ wget 'http://sourceforge.jp/frs/redir.php?m=iij&amp;f=%2Fjsonic%2F56583%2Fjsonic-1.3.0.zip'
+$ unzip jsonic-1.3.0.zip
+$ mv jsonic-1.3.0/jsonic-1.3.0.jar src/main/resources/
+$ tree -F
+.
+├── blast_condition.fasta
+├── blast_condition.txt
+├── pom.xml
+└── src/
+└── main/
+    ├── java/
+    │   └── Example.java
+    └── resources/
+        └── jsonic-1.3.0.jar
+</code></pre></div>        </div>
+      </dd>
+      <dt>Build</dt>
+      <dd>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ mvn clean
+$ mvn compile
+$ mvn package
+$ mvn assembly:assembly -DdescriptorId=jar-with-dependencies
+</code></pre></div>        </div>
+      </dd>
+      <dt>Execution procedure</dt>
+      <dd>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ java -classpath 'target/wabi-client-1.jar:target/wabi-client-1-jar-with-dependencies.jar:src/main/resources/jsonic-1.3.0.jar' Example
+</code></pre></div>        </div>
+      </dd>
+    </dl>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« Close</a></p>
+  </div>
+</div>
+
+<div class="accordion-menu">
+  <h3 class="toggle-content-btn"><a href="javascript:void(0)">Code example using Perl</a></h3>
+  <div class="accordion-content">
+    <h4 id="example-of-code-1">Example of code</h4>
+
+    <dl>
+      <dt>example.pl</dt>
+      <dd>
+        <script src="https://gist.github.com/ddbj-repo/b2f7e3ac56745a63b719908945518d4c.js"></script>
+      </dd>
+      <dt>blast_condition.fasta</dt>
+      <dd>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;my query sequence 1
+CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
+GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
+GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
+</code></pre></div>        </div>
+      </dd>
+      <dt>blast_condition.txt</dt>
+      <dd><a href="https://gist.github.com/ddbj-repo/22e92ce2e085be3f34fe072298241639">Code</a>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>datasets        ddbjall
+database        hum
+program blastn
+parameters      -v 100 -b 100 -e 10 -F F -W 11
+format  json
+result  www
+</code></pre></div>        </div>
+      </dd>
+    </dl>
+
+    <h4 id="execution-example--1">Execution example <a name="perl_execution_example"></a></h4>
+
+    <dl>
+      <dt>Preliminary preparation (Please run first)</dt>
+      <dd>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cpan
+cpan[1] install JSON
+cpan[2]&gt; install HTTP::Request::Common
+cpan[3]&gt; install LWP::UserAgent
+cpan[4]&gt; install HTTP::Status
+cpan[5]&gt; quit
+$ tree -F
+.
+├── blast_condition.fasta
+&gt;├── blast_condition.txt
+└── example.pl
+</code></pre></div>        </div>
+      </dd>
+      <dt>Execution procedure</dt>
+      <dd>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ perl example.pl
+</code></pre></div>        </div>
+      </dd>
+    </dl>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« Close</a></p>
+  </div>
+</div>
+
+<div class="accordion-menu">
+  <h3 class="toggle-content-btn"><a href="javascript:void(0)">Code example using Ruby</a></h3>
+  <div class="accordion-content">
+    <h4 id="example-of-code-2">Example of code</h4>
+
+    <dl>
+      <dt>example.rb</dt>
+      <dd>
+        <script src="https://gist.github.com/ddbj-repo/aa94320d3ab88ae27e53371868885cfd.js">
+
+</script>
+      </dd>
+      <dt>blast_condition.fasta</dt>
+      <dd>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;my query sequence 1
+CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
+GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
+GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
+</code></pre></div>        </div>
+      </dd>
+      <dt>blast_condition.txt</dt>
+      <dd><a href="https://gist.github.com/ddbj-repo/22e92ce2e085be3f34fe072298241639">Code</a></dd>
+    </dl>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>datasets        ddbjall
+database        hum
+program blastn
+parameters      -v 100 -b 100 -e 10 -F F -W 11
+format  json
+result  www
+</code></pre></div>    </div>
+
+    <h4 id="execution-example--2">Execution example <a name="ruby_execution_example"></a></h4>
+
+    <dl>
+      <dt>Execution procedure</dt>
+      <dd>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ruby example.rb
+</code></pre></div>        </div>
+      </dd>
+      <dt>Actual example</dt>
+      <dd>
+        <script src="https://gist.github.com/ddbj-repo/d9e1d2d44aaecdb890ec12196dc52dbd.js"></script>
+      </dd>
+    </dl>
+
+    <h4 id="example-of-the-execution-result-">Example of the execution result <a name="wabi_blast_2013-0606-1336-31-681-634313"></a></h4>
+
+    <dl>
+      <dt>wabi_blast_2013-0606-1336-31-681-634313.txt</dt>
+      <dd>
+        <script src="https://gist.github.com/ddbj-repo/aea641167c10b4c56ec08b1c4e230f2a.js"></script>
+      </dd>
+    </dl>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« Close</a></p>
+  </div>
+</div>
+
+<h2 id="wabi-blast-details-">WABI BLAST Details <a name="details"></a></h2>
+
+<h3 id="uri-post-blast-submit-a-search-job-">URI POST /blast (submit a search job) <a name="URI_POST"></a></h3>
+
+<p>This method appends a <a href="#search-job">BLAST search to the job queue</a> and
+returns the <a href="#parameter-Request-ID">Request ID</a>.<br />
+The BLAST search criteria, method for notifying the result, and other
+options are specified using HTTP parameters.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Item</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">HTTP Method</td>
+      <td>POST</td>
+    </tr>
+    <tr>
+    <td colspan="2">URI</td>
+    <td>/blast</td>
+    </tr>
+    <tr>
+    <td rowspan="8">HTTP Parameters</td>
+    <td><code class="language-plaintext highlighter-rouge">querySequence</code></td>
+    <td>
+<a href="#parameter-querySequence">Search sequence data in multi-FASTA format</a> <br />
+              <pre class="code"><code class="language-plaintext highlighter-rouge">example: &gt;my query sequence 1
+CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
+GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
+GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC</code></pre><br />
+              <span class="red">Note: Increasing the number of sequences will not increase the degree of parallel processing.<br />We recommend reducing the number of sequences searched for the web API, as this will better balance the load on the job management engine.</span>
+</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">datasets</code></td>
+      <td>
+<a href="#parameter-datasets">Dataset</a> (example: <code class="language-plaintext highlighter-rouge">"ddbjall"</code>)</td>
+    </tr>
+    <tr>
+    <td><code class="language-plaintext highlighter-rouge">database</code></td>
+    <td>
+<a href="#parameter-database">database</a> (example: <code class="language-plaintext highlighter-rouge">"hum"</code>, <code class="language-plaintext highlighter-rouge">"hum pri"</code>)</td>
+    </tr>
+    <tr>
+    <td><code class="language-plaintext highlighter-rouge">program</code></td>
+    <td>
+<a href="#parameter-program">BLAST program</a> (example: <code class="language-plaintext highlighter-rouge">"blastn"</code>)</td>
+    </tr>
+    <tr>
+    <td><code class="language-plaintext highlighter-rouge">parameters</code></td>
+    <td>
+<a href="#parameter-parameters">Other options</a> (example: <code class="language-plaintext highlighter-rouge">"-v 100 -b 100 -e 10 -F F -W 11"</code>)</td>
+    </tr>
+    <tr>
+    <td><code class="language-plaintext highlighter-rouge">format</code></td>
+      <td>
+<a href="#parameter-format">response data format</a> (example: <code class="language-plaintext highlighter-rouge">"text"</code>, <code class="language-plaintext highlighter-rouge">"json"</code>)</td>
+    </tr>
+    <tr>
+    <td><code class="language-plaintext highlighter-rouge">result</code></td>
+    <td>
+<a href="#parameter-result">result retrieval method</a> (example: <code class="language-plaintext highlighter-rouge">"www"</code>, <code class="language-plaintext highlighter-rouge">"mail"</code>)</td>
+    </tr>
+    <tr>
+    <td><code class="language-plaintext highlighter-rouge">address</code></td>
+    <td><a href="#parameter-address">Email address</a></td>
+    </tr>
+    <tr>
+    <td colspan="2">Request action</td>
+    <td>Add a new BLAST search job to the queue for processing.</td>
+    </tr>
+    <tr>
+    <td rowspan="2" class="borderbtm">HTTP Response</td>
+    <td>If successful</td>
+    <td>
+<a href="#parameter-Request-ID">Request ID</a></td>
+    </tr>
+    <tr>
+    <td>If failed</td>
+      <td>HTTP status <em>4xx</em>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="server-side-processing-flow-">Server-side processing flow <a name="Server-side_processing_flow"></a></h4>
+
+<ol>
+  <li>Check validity of input values.<br />
+    If an invalid input value is found, then the processing is
+    interrupted and HTTP status 400 Bad Request is returned.</li>
+  <li>Add the BLAST search into the job queue.</li>
+  <li>Information about the job added to the queue is returned using the
+    specified format.<br />
+    If the specified format is not available, then HTTP status 404 Not
+    Found is returned.</li>
+</ol>
+
+<h4 id="input-validation-check-performed-">Input validation check performed <a name="Input_validation_check_performed"></a></h4>
+
+<table>
+  <tbody>
+    <tr>
+      <th class="first">
+<a href="#parameter-datasets">datasets</a><br />(optional)</th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>Causes an input validation error if an undefined value is specified.<br />
+            Note: Currently not used. Consistency check between the <code class="language-plaintext highlighter-rouge">database</code> is not performed.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-database">database</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>Required value.</li>
+        <li>Database names must be separated by spaces; otherwise, the check will cause an input validation error. Database names must comprise only alphabets and underscore "_".<br />
+          example: <code class="language-plaintext highlighter-rouge">"hum"</code>, <code class="language-plaintext highlighter-rouge">"hum pri"</code> and so on.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-program">program</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>Required value.</li>
+        <li>Causes an input validation error if an undefined value is specified.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-format">format</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>Required value.</li>
+        <li>Causes an input validation error if an undefined value is specified.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first">
+<a href="#parameter-parameters">parameters</a><br />(optional)</th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>Causes an input validation error unless options and corresponding values are listed using space as separators.</li>
+          <li>Causes an input validation error if invalid options are specified. A valid option depends on the specified <code class="language-plaintext highlighter-rouge">program</code>, as follows:
+          <ul class="decimal bottom_space">
+            <li>In case <code class="language-plaintext highlighter-rouge">program</code> value is <code class="language-plaintext highlighter-rouge">"megablast"</code> :<br />
+              Options must be one or more of <code class="language-plaintext highlighter-rouge">ADEFGHIJLMNPRSTUVWXYZbefglmnpqrstvyz</code>; other options will cause an input validation error.<br />
+              example: <code class="language-plaintext highlighter-rouge">"-A"</code> is a valid option, but <code class="language-plaintext highlighter-rouge">"-B"</code> will cause an input validation error.</li>
+            <li>For all other <code class="language-plaintext highlighter-rouge">program</code> values:<br />
+              Options must be one or more of <code class="language-plaintext highlighter-rouge">ABCDEFGIJKLMPQSTUVWXYZbefglmnqrstvwyz</code>; other options will cause an input validation error.<br />
+              example: <code class="language-plaintext highlighter-rouge">"-B"</code> is a valid option, but <code class="language-plaintext highlighter-rouge">"-H"</code> will cause an input validation error.</li>
+          </ul>
+        </li>
+        <li>Option values can be a numeric value, alphanumeric characters, or comma-separated alphanumeric characters.<br />
+          example: <code class="language-plaintext highlighter-rouge">"-1"</code>, <code class="language-plaintext highlighter-rouge">"foo, bar"</code>, etc.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-result">result</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>Required value.</li>
+          <li>Causes an input validation error if an undefined value is specified.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-address">address</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>Requires value if the value of <code class="language-plaintext highlighter-rouge">result</code> is <code class="language-plaintext highlighter-rouge">"mail"</code>.</li>
+          <li>Only a valid email address is permitted. Other values will cause an input validation error.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="response-data-">Response data <a name="Response_data"></a></h4>
+
+<dl>
+  <dt>In the case of successful completion:</dt>
+  <dd>
+    <ul>
+      <li>A “successful” HTTP status code such as 200 will be returned.</li>
+      <li>The field requestId will contain Request ID.</li>
+      <li>Other values such as current-time and other request
+information may be included in the response data; however,
+formatting of these values may change in the future.<br />
+Please use the HTTP status code to determine the success or
+failure of the request.</li>
+    </ul>
+  </dd>
+  <dt>In the case of failed completion:</dt>
+  <dd>
+    <ul>
+      <li>A “client error” HTTP status code such as 400 will be
+returned.</li>
+      <li>The key called error-messages included in the returned data
+will contain an error message indicating information such as the
+name of the parameter that caused input validation error.</li>
+      <li>Other values including the cause of the error and other request
+information may be included in the returned data; however,
+formatting of these values may change in the future.<br />
+Please use the HTTP status code to determine the success or
+failure of the request.</li>
+    </ul>
+  </dd>
+</dl>
+
+<h4 id="example-request-and-response-">Example request and response <a name="uripost-example"></a></h4>
+
+<p>Examples of input data</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>HTTP Parameter</th>
+      <th>Input Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">address</code></td>
+      <td><code class="language-plaintext highlighter-rouge">""</code></td>
+    </tr>
+    <tr>
+    <td><code class="language-plaintext highlighter-rouge">database</code></td>
+    <td><code class="language-plaintext highlighter-rouge">"hum"</code></td>
+    </tr>
+    <tr>
+    <td><code class="language-plaintext highlighter-rouge">datasets</code></td>
+    <td><code class="language-plaintext highlighter-rouge">"ddbjall"</code></td>
+    </tr>
+    <tr>
+    <td><code class="language-plaintext highlighter-rouge">format</code></td>
+    <td><code class="language-plaintext highlighter-rouge">"json"</code></td>
+    </tr>
+    <tr>
+    <td><code class="language-plaintext highlighter-rouge">parameters</code></td>
+    <td><code class="language-plaintext highlighter-rouge">" -v 100 -b 100 -e 10 -F F -W 11"</code></td>
+    </tr>
+    <tr>
+    <td><code class="language-plaintext highlighter-rouge">program</code></td>
+    <td><code class="language-plaintext highlighter-rouge">"blastn"</code></td>
+    </tr>
+    <tr>
+    <td><code class="language-plaintext highlighter-rouge">querySequence</code></td>
+    <td><pre><code class="language-plaintext highlighter-rouge">&gt;my query sequence 1
+    CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
+    GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
+    GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC</code></pre></td>
+    </tr>
+    <tr>
+    <td><code class="language-plaintext highlighter-rouge">result</code></td>
+    <td><code class="language-plaintext highlighter-rouge">"www"</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example response for a successfully completed request</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP Status 200
+ 1 {
+ 2        "requestId": "wabi_blast_1111-1111-1111-11-111-111111",
+ 3        "program": "blastn",
+ 4        "datasets": "ddbjall",
+ 5        "database": "hum",
+ 6        "parameters": " -v 100 -b 100 -e 10 -F F -W 11 ",
+ 7        "current-time": "2013-01-01 12:34:56",
+ 8        "start-time": "",
+ 9        "current-state": "" 
+10 }
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP Status 200
+ 1 &lt;?xml version="1.0" ?&gt;
+ 2 &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+ 3 &lt;result&gt;
+ 4   &lt;requestId&gt;wabi_blast_1111-1111-1111-11-111-111111&lt;/requestId&gt;
+ 5   &lt;program&gt;blastn&lt;/program&gt;
+ 6   &lt;datasets&gt;ddbjall&lt;/datasets&gt;
+ 7   &lt;database&gt;hum&lt;/database&gt;
+ 8   &lt;parameters&gt; -v 100 -b 100 -e 10 -F F -W 11 &lt;/parameters&gt;
+ 9   &lt;current-time&gt;2013-01-01 12:34:56&lt;/current-time&gt;
+10   &lt;start-time&gt;&lt;/start-time&gt;
+11   &lt;current-state&gt;&lt;/current-state&gt;
+12 &lt;/result&gt;
+</code></pre></div></div>
+
+<p>Example response data when there is an input validation error</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP Status 400
+ 1    {
+ 2    "status": "illegal-arguments",
+ 3    "message": "Illegal arguments.",
+ 4    "format": null,
+ 5    "program": "blastn",
+ 6    "datasets": "ddbjall",
+ 7    "database": "hum",
+ 8    "parameters": null,
+ 9    "querySequence": "&gt;my query sequence 1nCACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAAnGCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTGnGTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCACn",
+10    "result": "",
+11    "address": null,
+12    "current-time": "2013-01-01 12:34:56",
+13    "error-messages": [
+14        "Required: (result)" 
+15    ],
+16    "error-message": "BAD_REQUEST (null)" 
+17    }
+</code></pre></div></div>
+
+<div class="accordion-menu">
+  <h4 class="toggle-content-btn"><a href="javascript:void(0)">Usage Example</a></h4>
+  <div class="accordion-content">
+    <p>Example of the use of the REST client on Java Spring Framework:
+    <script src="https://gist.github.com/ddbj-repo/ec96049ec11c1d22303d9fcdea9f70cd.js"></script></p>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« Close</a></p>
+  </div>
+</div>
+
+<h3 id="uri-get-blastrequest-idinfostatus-query-the-status-of-a-search-job-">URI GET /blast/{Request-ID}?info=status (query the status of a search job) <a name="URI_GET_status"></a></h3>
+
+<p><a href="#search-status">Returns the status of the job</a> specified by <a href="#parameter-Request-ID">Request
+ID</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+    <th colspan="2">Item</th>
+    <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">HTTP Method</td>
+      <td><code class="language-plaintext highlighter-rouge">GET</code></td>
+    </tr>
+    <tr>
+      <td colspan="2">URI</td>
+      <td>
+      <code class="language-plaintext highlighter-rouge">"/blast/"</code> + <a href="#parameter-Request-ID">Request ID</a> + HTTP Parameter
+      (example: <code class="language-plaintext highlighter-rouge">"/blast/wabi_blast_1111-1111-1111-11-111-111111?info=status"</code>)</td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="borderbtm">HTTP Parameters</td>
+      <td>
+      <code class="language-plaintext highlighter-rouge">info</code> (default value = <code class="language-plaintext highlighter-rouge">"status"</code>)</td>
+      <td>
+      <a href="#parameter-info">Job information type</a> (example: <code class="language-plaintext highlighter-rouge">"status"</code>, <code class="language-plaintext highlighter-rouge">"result"</code>)</td>
+    </tr>
+    <tr>
+      <td>
+      <code class="language-plaintext highlighter-rouge">format</code> (default value = <code class="language-plaintext highlighter-rouge">"text"</code>)</td>
+      <td>
+      <a href="#parameter-format">Response data format</a> (example: <code class="language-plaintext highlighter-rouge">"text"</code>, <code class="language-plaintext highlighter-rouge">"json"</code>)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="server-side-processing-flow--1">Server-Side Processing Flow <a name="Server-Side_Processing_Flow"></a></h4>
+
+<ol>
+  <li>Input values are validated on the server side.<br />
+    If an input validation error is found, processing is interrupted,
+    and the server returns HTTP status 400 Bad Request.</li>
+  <li>The server obtains job information corresponding to the specified
+    <a href="#parameter-Request-ID">Request ID</a> and returns the <a href="#search-status">current
+    status</a>.<br />
+    HTTP status code 404 is returned if the search retention period has
+    expired or if the job information cannot be found.</li>
+  <li>The server returns the obtained <a href="#search-status">current job’s
+    status</a> using the specified format.<br />
+    However, the server returns HTTP status 404 Not Found if the
+    specified format is invalid.</li>
+</ol>
+
+<h4 id="input-value-validation-check-performed-">Input value validation check performed <a name="Input_value_validation_check_performed"></a></h4>
+
+<table>
+  <tbody>
+    <tr>
+      <th class="first"><a href="#parameter-Request-ID">requestId</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>Required value.</li>
+          <li>Values containing any characters other than alphanumeric, <code class="language-plaintext highlighter-rouge">"-"</code>, and <code class="language-plaintext highlighter-rouge">"_"</code> will cause an input validation error.</li>
+          <li>Any <a href="#parameter-Request-ID">Request ID</a> that does not exist will cause an input validation error.<br />
+            Search results are discarded after a given period; it will be considered to be an input validation error in this case as well.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-format">format</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>Required value.</li>
+          <li>Causes an input validation error if an undefined value is passed.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-imageId">imageId</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>Should not be specified.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-info">info</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>Must specify the value <code class="language-plaintext highlighter-rouge">"status"</code>.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="response-data--1">Response Data <a name="Response_Data"></a></h4>
+
+<dl>
+  <dt>In the case of successful completion:</dt>
+  <dd>
+    <ul>
+      <li>Returns a “successful” HTTP status code such as 200.</li>
+      <li>The field status will contain information corresponding to
+“<a href="#search-status">current status</a>”.</li>
+      <li>Other values such as current-time and other request
+information may be included in the response data; however,
+formatting of these values may change in the future.<br />
+Please use the HTTP status code to determine the success or
+failure of the request.</li>
+    </ul>
+  </dd>
+  <dt>In the case of failed completion:</dt>
+  <dd>
+    <ul>
+      <li>Returns a “client error” HTTP status code such as 400.</li>
+      <li>The key called error-messages included in the returned data
+will contain an error message indicating such information as the
+name of the parameter that caused input validation error.</li>
+      <li>Other values including cause of the error and other request
+information may be included in the returned data; however,
+formatting of these values may change in the future.<br />
+Please use the HTTP status code to determine the success or
+failure of the request.</li>
+    </ul>
+  </dd>
+</dl>
+
+<h4 id="example-request-and-response--1">Example request and response <a name="Example_request_and_response"></a></h4>
+
+<p>Example input values</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>HTTP Parameter</th>
+      <th>nput value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>format</td>
+      <td>“json”</td>
+    </tr>
+    <tr>
+      <td>result</td>
+      <td>“www”</td>
+    </tr>
+    <tr>
+      <td>info</td>
+      <td>“status”</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example response for a successfully completed request</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP Status 200
+1 request-ID: wabi_blast_1111-1111-1111-11-111-111111
+2 status: finished
+3 current-time: 2013-01-01 12:34:56
+4 system-info:
+5 stdout
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP Status 200
+1{
+2        "request-ID": "wabi_blast_1111-1111-1111-11-111-111111",
+3        "status": "finished",
+4        "current-time": "2013-01-01 12:34:56",
+5        "system-info": "nstdout" 
+6}
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP Status 200
+1&lt;?xml version="1.0" ?&gt;
+2&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+3&lt;result&gt;
+4  &lt;request-ID&gt;wabi_blast_1111-1111-1111-11-111-111111&lt;/request-ID&gt;
+5  &lt;status&gt;finished&lt;/status&gt;
+6  &lt;current-time&gt;2013-01-01 12:34:56&lt;/current-time&gt;
+7  &lt;system-info&gt;stdout&lt;/system-info&gt;
+8&lt;/result&gt;
+</code></pre></div></div>
+
+<p>Example response for a failed request</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP Status 400
+ 1{
+ 2  "status": "illegal-arguments",
+ 3  "message": "Illegal arguments.",
+ 4  "requestId": "wabi_blast_1111-1111-1111-11-111-111111",
+ 5  "format": "json",
+ 6  "imageId": null,
+ 7  "info": "status",
+ 8  "current-time": "2013-01-01 12:34:56",
+ 9  "error-messages": [
+10          "No such data: (requestId)" 
+11  ],
+12  "error-message": "BAD_REQUEST (null)" 
+13}
+</code></pre></div></div>
+
+<div class="accordion-menu">
+  <h4 class="toggle-content-btn"><a href="javascript:void(0)">Example Usage</a></h4>
+  <div class="accordion-content">
+    <p>Example using the REST client on Java Spring Framework:
+    <script src="https://gist.github.com/ddbj-repo/4a1ea26e46bebac37cf595eae77e384a.js"></script></p>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« Close</a></p>
+  </div>
+</div>
+
+<h3 id="uri-get-blastrequest-idinforequest-obtain-and-confirm-search-criteria-">URI GET /blast/{Request-ID}?info=request (obtain and confirm search criteria) <a name="URI_GET_request"></a></h3>
+
+<p>This will return the search criteria of a specified <a href="#parameter-Request-ID">Request
+ID</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>&nbsp;</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HTTP Method</td>
+      <td>&nbsp;</td>
+      <td><code class="language-plaintext highlighter-rouge">GET</code></td>
+    </tr>
+    <tr>
+      <td>URI</td>
+      <td>&nbsp;</td>
+      <td><code class="language-plaintext highlighter-rouge">“/blast/”</code> + <a href="#parameter-Request-ID">Request ID</a> + <code class="language-plaintext highlighter-rouge">“?info=request”</code> + HTTP Parameters (example: <code class="language-plaintext highlighter-rouge">“/blast/wabi_blast_1111-1111-1111-11-111-111111?info=request”</code>)</td>
+    </tr>
+    <tr>
+      <td>HTTP Parameter</td>
+      <td><code class="language-plaintext highlighter-rouge">format</code>(default value = <code class="language-plaintext highlighter-rouge">“text”</code>)</td>
+      <td><a href="#parameter-format">Response data format</a> (example: <code class="language-plaintext highlighter-rouge">“text”</code>, <code class="language-plaintext highlighter-rouge">“json”</code>)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="server-side-processing-flow--2">Server-Side Processing Flow <a name="Server-Side_Processing_Flow"></a></h4>
+
+<ol>
+  <li>Input values are validated on the server side.<br />
+    If an input validation error is found, processing is interrupted,
+    and the server returns HTTP status 400 Bad Request.</li>
+  <li>Information on the job specified by <a href="#parameter-Request-ID">Request
+    ID</a> is retrieved, and the <a href="#search-criteria">search
+    criteria</a> are returned.<br />
+    HTTP status code 404 is returned if the search retention period has
+    expired or if the job information cannot be found.</li>
+  <li>The server returns the current <a href="#search-criteria">search criteria</a>
+    in the specified format.<br />
+    However, the server returns HTTP status code 404 Not Found if the
+    specified format is invalid.</li>
+</ol>
+
+<h4 id="input-value-validation-check-performed--1">Input value validation check performed <a name="Input_value_validation_check_performed"></a></h4>
+
+<table>
+  <tbody>
+    <tr>
+      <th class="first"><a href="#parameter-Request-ID">requestId</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>Required value.</li>
+          <li>Values containing any characters other than alphanumeric, <code class="language-plaintext highlighter-rouge">"-"</code>, and <code class="language-plaintext highlighter-rouge">"_"</code> will cause an input validation error.</li>
+          <li>Specifying a <a href="#parameter-Request-ID">Request ID</a> that does not exist will cause an input validation error.<br />
+            Search results are discarded after a given period and requests for these results will also result in an input validation error.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-format">format</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>Required value.</li>
+          <li>Causes an input validation error if an undefined value is specified.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-imageId">imageId</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>Should not be specified.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-info">info</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>Must specify the value <code class="language-plaintext highlighter-rouge">"request"</code>.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="response-data--2">Response Data <a name="Response_Data"></a></h4>
+
+<dl>
+  <dt>In the case of successful completion:</dt>
+  <dd>
+    <ul>
+      <li>Returns a “successful” HTTP status code such as 200.</li>
+      <li>Response data contain each parameter included when the BLAST
+search job was initially submitted.</li>
+      <li>Please use the HTTP status code to determine the success or
+failure of the request.</li>
+    </ul>
+  </dd>
+  <dt>In case of failed completion:</dt>
+  <dd>
+    <ul>
+      <li>Returns a “client error” HTTP status code such as 400.</li>
+      <li>The key called error-messages included in the returned data
+will contain an error message with information such as the name
+of the parameter that caused the input validation error.</li>
+      <li>Please use the HTTP status code to determine the success or
+failure of the request.</li>
+    </ul>
+  </dd>
+</dl>
+
+<h4 id="example-request-and-response--2">Example request and response <a name="Example_request_and_response"></a></h4>
+
+<p>Example input values:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>HTTP Parameters</th>
+      <th>Input values</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>format</td>
+      <td>“requestfile”</td>
+    </tr>
+    <tr>
+      <td>info</td>
+      <td>“request”</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example response for a successfully completed request:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP Status 200
+ 1{
+ 2        "address": "",
+ 3        "database": "hum",
+ 4        "datasets": "ddbjall",
+ 5        "format": "text",
+ 6        "parameters": " -v 100 -b 100 -e 10 -F F -W 11 ",
+ 7        "program": "blastn",
+ 8        "querySequence": "&gt;my query sequence 1nCACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAAnGCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTGnGTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCACn",
+ 9        "result": "www" 
+10}
+</code></pre></div></div>
+
+<p>Example response for a failed request:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP Status 404
+ 1{
+ 2        "Message": "Unexpected error ( Results of your request id have been NOT FOUND.)",
+ 3        "requestId": "wabi_blast_1111-1111-1111-11-111-111111",
+ 4        "format": "text",
+ 5        "imageId": null,
+ 6        "info": "result",
+ 7        "current-time": "2013-01-01 12:34:56",
+ 8        "error-messages": [
+ 9                "No such data: (requestId)" 
+10        ],
+11        "error-message": "NOT_FOUND (null)" 
+12}
+</code></pre></div></div>
+
+<div class="accordion-menu">
+  <h4 class="toggle-content-btn"><a href="javascript:void(0)">Example Usage</a></h4>
+  <div class="accordion-content">
+    <p>Example using the REST client on Java Spring Framework:
+    <script src="https://gist.github.com/ddbj-repo/d3ff7fbc9a66733ab164f669e4bcb88d.js"></script></p>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« Close</a></p>
+  </div>
+</div>
+
+<h3 id="uri-get-blastrequest-idinforesult-retrieve-search-results-">URI GET /blast/{Request-ID}?info=result (retrieve search results) <a name="URI_GET_result"></a></h3>
+
+<p>Returns the search results for a specified <a href="#parameter-Request-ID">Request ID</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+    <th colspan="2">Item</th>
+    <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td colspan="2">HTTP Method</td>
+    <td><code class="language-plaintext highlighter-rouge">GET</code></td>
+    </tr>
+    <tr>
+    <td colspan="2">URI</td>
+    <td>
+    <code class="language-plaintext highlighter-rouge">"/blast/"</code> + <a href="#parameter-Request-ID">Request ID&lt;/code&gt;</a> + <code class="language-plaintext highlighter-rouge">"?info=request"</code> + HTTP Parameters
+    (example: <code class="language-plaintext highlighter-rouge">"/blast/wabi_blast_1111-1111-1111-11-111-111111?info=request"</code>)</td>
+    </tr>
+    <tr>
+    <td>HTTP Parameter</td>
+    <td>
+    <code class="language-plaintext highlighter-rouge">format</code> (default value = <code class="language-plaintext highlighter-rouge">"text"</code>)</td>
+    <td>
+    <a href="#parameter-format">Response data format</a> (example: <code class="language-plaintext highlighter-rouge">"text"</code>, <code class="language-plaintext highlighter-rouge">"json"</code>)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="server-side-processing-flow--3">Server-Side Processing Flow <a name="Server-Side_Processing_Flow"></a></h4>
+
+<ol>
+  <li>Input values are validated on the server side.<br />
+    If an input validation error is found, processing is interrupted,
+    and the server returns HTTP status code 400 Bad Request.</li>
+  <li>Information on the job specified by <a href="#parameter-Request-ID">Request
+    ID</a> is retrieved, and returns the <a href="#search-result">search
+    result</a>.<br />
+    HTTP status code 400 or 404 is returned if the search retention
+    period has expired or if the search processing has not yet
+    completed.</li>
+  <li>The server returns the <a href="#search-result">search result</a> using the
+    specified format.<br />
+    However, the server returns HTTP status code 404 Not Found if the
+    specified format is invalid.</li>
+</ol>
+
+<h4 id="input-validation-check-performed--1">Input validation check performed <a name="Input_validation_check_performed"></a></h4>
+
+<table>
+  <tbody>
+    <tr>
+      <th class="first"><a href="#parameter-Request-ID">requestId</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>Required value.</li>
+          <li>Values containing any characters other than alphanumeric, <code class="language-plaintext highlighter-rouge">"-"</code>, and <code class="language-plaintext highlighter-rouge">"_"</code> will cause an input validation error.</li>
+          <li>Specifying a <a href="#parameter-Request-ID">Request ID</a> that does not exist will cause an input validation error.<br />
+            Search results are discarded after a given period and requests for these results will also result in an input validation error.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-format">format</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>Required value.</li>
+          <li>Causes an input validation error if an undefined value is specified.</li>
+        </ul>
+      </td>
+    </tr>
+      <tr>
+      <th class="first"><a href="#parameter-imageId">imageId</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>Should not be specified.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-info">info</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>Must specify the value <code class="language-plaintext highlighter-rouge">"result"</code>.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="response-data--3">Response Data <a name="Response_Data"></a></h4>
+
+<dl>
+  <dt>In the case of successful completion:</dt>
+  <dd>
+    <ul>
+      <li>Returns a “successful” HTTP status code such as 200.</li>
+      <li>Returns the content of the output file generated through the
+BLAST search.</li>
+      <li>Please use the HTTP status code to determine the success or
+failure of the request.</li>
+    </ul>
+  </dd>
+  <dt>In the case of failed completion:</dt>
+  <dd>
+    <ul>
+      <li>Returns a “client error” HTTP status code such as 400.</li>
+      <li>The key called error-messages included in the returned data
+will contain an error message with information such as the name
+of the parameter that caused the input validation error.</li>
+      <li>Please use the HTTP status code to determine the success or
+failures of the request.</li>
+    </ul>
+  </dd>
+</dl>
+
+<h4 id="example-request-and-response--3">Example request and response <a name="Example_request_and_response"></a></h4>
+
+<p>Example of input data:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>HTTP Parameters</th>
+      <th>Input Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>format</td>
+      <td>“bigfile”</td>
+    </tr>
+    <tr>
+      <td>info</td>
+      <td>“result”</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example response for a successfully completed request</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP Status 200
+ 1 BLASTN 2.2.25 [Feb-01-2011]
+ 2 
+ 3 Reference: Altschul, Stephen F., Thomas L. Madden, Alejandro A. Schaffer,
+ 4 Jinghui Zhang, Zheng Zhang, Webb Miller, and David J. Lipman (1997),
+ 5 "Gapped BLAST and PSI-BLAST: a new generation of protein database search
+ 6 programs",  Nucleic Acids Res. 25:3389-3402.
+ 7 
+ 8 Query= AB000095|AB000095.1 Homo sapiens mRNA for hepatocyte growth
+ 9 factor activator inhibitor, complete cds.
+10          (1740 letters)
+11 
+12 Database: hum
+13            572,091 sequences; 5,019,832,159 total letters
+14 
+15 Searching..................................................done
+16 
+17                                                                  Score    E
+18 Sequences producing significant alignments:                      (bits) Value
+19 
+20 AB000095|AB000095.1 Homo sapiens mRNA for hepatocyte growth fact...  3449   0.0
+21 BC018702|BC018702.1 Homo sapiens serine peptidase inhibitor, Kun...  3435   0.0
+22 BC004140|BC004140.1 Homo sapiens serine peptidase inhibitor, Kun...  3190   0.0
+23 BT007425|BT007425.1 Homo sapiens serine protease inhibitor, Kuni...  3053   0.0
+24 AY358969|AY358969.1 Homo sapiens clone DNA35880 HAI-1 (UNQ223) m...  2145   0.0
+25 AY296715|AY296715.1 Homo sapiens hepatocyte growth factor activa...  1984   0.0
+
+(後略)      
+</code></pre></div></div>
+
+<p>Example response data when there is an input validation error</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP Status 400
+ 1{
+ 2        "Message": "Error ( Results of your request id have been NOT FOUND, or still running.)",
+ 3        "requestId": "wabi_blast_1111-1111-1111-11-111-111111",
+ 4        "format": "text",
+ 5        "imageId": null,
+ 6        "info": "result",
+ 7        "current-time": "2013-01-01 12:34:56",
+ 8        "error-messages": [
+ 9                "No such data: (requestId)" 
+10        ],
+11        "error-message": "NOT_FOUND (null)" 
+12}
+</code></pre></div></div>
+
+<div class="accordion-menu">
+  <h4 class="toggle-content-btn"><a href="javascript:void(0)">Usage Example</a></h4>
+  <div class="accordion-content">
+    <p>Example of the use of the REST client on Java Spring Framework:
+    <script src="https://gist.github.com/ddbj-repo/af6f2a4165385224de18cc5968568848.js"></script></p>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« Close</a></p>
+  </div>
+</div>
+
+<h3 id="uri-get-blastrequest-idimageidimage-id-retrieve-image-data-generated-from-the-search-result-">URI GET /blast/{Request-ID}?imageId={Image-ID} (retrieve image data generated from the search result) <a name="URI_GET_imageid"></a></h3>
+
+<p>This method returns the image data generated from the search result specified by <a href="#parameter-Request-ID">RequestID</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Item</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">HTTP Method</td>
+      <td><code class="language-plaintext highlighter-rouge">GET</code></td>
+    </tr>
+    <tr>
+      <td colspan="2">URI</td>
+      <td>
+<code class="language-plaintext highlighter-rouge">"/blast/"</code> + <a href="#parameter-Request-ID">RequestID</a> + <code class="language-plaintext highlighter-rouge">"?imageId="</code> + <em>Image ID</em> + HTTP parameters
+                (example: <code class="language-plaintext highlighter-rouge">"/blast/wabi_blast_1111-1111-1111-11-111-111111?imageId=1"</code>)</td>
+    </tr>
+    <tr>
+      <td>HTTP Parameters</td>
+      <td>
+<code class="language-plaintext highlighter-rouge">format</code> (default value = <code class="language-plaintext highlighter-rouge">"text"</code>)</td>
+      <td>
+<a href="#parameter-format">Response data format</a> (example: <code class="language-plaintext highlighter-rouge">"imagefile"</code>)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="server-side-processing-flow--4">Server-side processing flow <a name="Server-side_processing_flow"></a></h4>
+
+<ol>
+  <li>Input values are validated on the server side.<br />
+    If an invalid input value is found, then the processing is
+    interrupted and HTTP status 400 Bad Request is returned.</li>
+  <li>Information about the job corresponding to the specified
+    <a href="#parameter-Request-ID">RequestID</a> is obtained, and the <a href="#search-image">image
+    generated from the BLAST search</a> is returned.<br />
+    HTTP status code 400 or 404 is returned if the job information
+    cannot be retrieved due to search retention period having expired or
+    due to search job not having completed processing.</li>
+  <li>The server returns the <a href="#search-image">image generated from the BLAST
+    search</a> in the specified format.<br />
+    However, the server returns HTTP status code 404 Not Found if the
+    specified format is invalid.</li>
+</ol>
+
+<h4 id="input-validation-check-performed--2">Input validation check performed <a name="Input_validation_check_performed"></a></h4>
+
+<table>
+  <tbody>
+    <tr>
+      <th class="first"><a href="#parameter-Request-ID">requestId</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">               
+          <li>Required value.</li>
+          <li>Values containing any characters other than alphanumeric, <code class="language-plaintext highlighter-rouge">"-"</code>, and <code class="language-plaintext highlighter-rouge">"_"</code> will cause an input validation error.</li>
+          <li>Specifying a <a href="#parameter-Request-ID">requestId</a> that does not exist will cause an input validation error.<br />
+            Search results are discarded after a given period and requests for these results will also result in an input validation error.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-format">format</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>Any value other than <code class="language-plaintext highlighter-rouge">"imagefile"</code> will result in an input error.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-imageId">imageId</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>Any value other than a numeric value will result in an input error.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th class="first"><a href="#parameter-info">info</a></th>
+      <td class="second">
+        <ul class="disc bottom_space">
+          <li>Returns an input error if an undefined value is specified.</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="response-data--4">Response Data <a name="Response_Data"></a></h4>
+
+<dl>
+  <dt>In the case of successful completion:</dt>
+  <dd>
+    <ul>
+      <li>Returns a “successful” HTTP status code such as 200.</li>
+      <li>Returns the image data generated from the BLAST search.</li>
+      <li>Please use the HTTP status code to determine the success or
+failure of the request.</li>
+    </ul>
+  </dd>
+  <dt>In the case of failed completion:</dt>
+  <dd>
+    <ul>
+      <li>Returns a “client error” HTTP status code such as 400.</li>
+      <li>The key called error-messages included in the returned data
+will contain an error message with information such as the name
+of the parameter that caused the input validation error.</li>
+      <li>Please use the HTTP status code to determine the success or
+failure of the request.</li>
+    </ul>
+  </dd>
+</dl>
+
+<h4 id="example-request-and-response--4">Example request and response <a name="Example_request_and_response"></a></h4>
+
+<p>Example input values</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>HTTP Parameter</th>
+      <th>Input Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">imageId</code></td>
+      <td><code class="language-plaintext highlighter-rouge">"1"</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">format</code></td>
+      <td><code class="language-plaintext highlighter-rouge">"imagefile"</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">info</code></td>
+      <td><code class="language-plaintext highlighter-rouge">""</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example response for a successfully completed request</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP Status 200
+(Image Data)
+</code></pre></div></div>
+
+<p>Example response for a failed request</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP Status 404
+ 1 {
+ 2        "Message": "Error ( Blast image file of your request id have been NOT FOUND, or still running.)",
+ 3         "requestId": "wabi_blast_1111-1111-1111-11-111-111111",
+ 4         "format": "text",
+ 5         "imageId": null,
+ 6         "info": "result",
+ 7         "current-time": "2013-01-01 12:34:56",
+ 8         "error-messages": [
+ 9                 "No such data: (requestId)" 
+10         ],
+11         "error-message": "NOT_FOUND (null)" 
+12 }
+</code></pre></div></div>
+
+<div class="accordion-menu">
+  <h4 class="toggle-content-btn"><a href="javascript:void(0)">Example Usage</a></h4>
+  <div class="accordion-content">
+    <p>Example using HttpURLConnection with Java:
+    <script src="https://gist.github.com/ddbj-repo/bd58a6ca09c2d380d5ceafd4905a0e2e.js"></script></p>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« Close</a></p>
+  </div>
+</div>
+
+<h3 id="uri-get-blasthelphelp-command-view-help-information-">URI GET /blast/help/{Help-Command} (View help information) <a name="URI_GET_help"></a></h3>
+
+<p>Returns the help information of WABI BLAST.</p>
+
+<table>
+  <thead>
+    <tr>
+    <th colspan="2">Item</th>
+    <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td colspan="2">HTTP Method</td>
+    <td><code class="language-plaintext highlighter-rouge">GET</code></td>
+    </tr>
+    <tr>
+    <td colspan="2">URI</td>
+    <td>
+    <code class="language-plaintext highlighter-rouge">"/blast/help/"</code> + Help-Command + HTTP Parameter
+    (example: <code class="language-plaintext highlighter-rouge">"/blast/help/list_program?format=json"</code>)</td>
+    </tr>
+    <tr>
+    <td rowspan="2" class="borderbtm">HTTP Parameters</td>
+    <td>
+    <code class="language-plaintext highlighter-rouge">format</code> (default value = <code class="language-plaintext highlighter-rouge">"text"</code>)</td>
+    <td>
+    <a href="#parameter-format">Response data format</a> (example: <code class="language-plaintext highlighter-rouge">"text"</code>, <code class="language-plaintext highlighter-rouge">"json"</code>)</td>
+    </tr>
+    <tr>
+    <td><code class="language-plaintext highlighter-rouge">program</code></td>
+    <td>
+    <a href="#parameter-program">BLAST program name</a> (example: <code class="language-plaintext highlighter-rouge">"blastn"</code>)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="help-command-">Help-Command <a name="Help-Command"></a></h4>
+
+<table>
+  <thead>
+    <tr>
+    <th>Help-Commands</th>
+    <th>Other HTTP Parameters</th>
+    <th>Help information that can be referenced</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2"><code class="language-plaintext highlighter-rouge">list_datasets</code></td>
+      <td>List of defined values for the <a href="#parameter-datasets">datasets</a> parameter</td>
+    </tr>
+    <tr>
+      <td colspan="2"><code class="language-plaintext highlighter-rouge">list_database</code></td>
+      <td>List of defined values for the <a href="#parameter-database">database</a> parameter</td>
+    </tr>
+    <tr>
+      <td colspan="2"><code class="language-plaintext highlighter-rouge">list_program</code></td>
+      <td>List of defined parameters for the <a href="#parameter-program">BLAST program</a> parameter</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">list_parameters</code></td>
+      <td>
+<code class="language-plaintext highlighter-rouge">program</code> = <a href="#parameter-program">BLAST program</a>
+</td>
+      <td>List of defined <a href="#parameter-parameters">optional parameters for the specified BLAST program</a>
+</td>
+    </tr>
+    <tr>
+      <td colspan="2"><code class="language-plaintext highlighter-rouge">list_format</code></td>
+      <td>List of defined values for the <a href="#parameter-format">response data</a> parameter</td>
+    </tr>
+    <tr>
+      <td colspan="2"><code class="language-plaintext highlighter-rouge">list_result</code></td>
+      <td>List of defined values for the <a href="#parameter-result">result parameter</a>
+</td>
+    </tr>
+    <tr>
+      <td colspan="2"><code class="language-plaintext highlighter-rouge">list_info</code></td>
+      <td>パList of defined parameters for <a href="#parameter-info">job information to be retrieved</a>
+</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="response-data--5">Response data <a name="Response_data"></a></h4>
+
+<dl>
+  <dt>In the case of successful completion:</dt>
+  <dd>
+    <ul>
+      <li>Returns the requested help information</li>
+    </ul>
+  </dd>
+  <dt>In case of failed completion:</dt>
+  <dd>
+    <ul>
+      <li>Returns the list of valid Help-Commands and other information.</li>
+    </ul>
+  </dd>
+</dl>
+
+<h4 id="example-request-and-response--5">Example request and response <a name="Example_request_and_response"></a></h4>
+
+<p>Example input values:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Help-Command and other parameters</th>
+      <th>nput Values</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Help-Command</td>
+      <td>“list_result”</td>
+    </tr>
+    <tr>
+      <td>format</td>
+      <td>“json”</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example response for a successfully completed request:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1 {
+2     "result": [
+3         "www",
+4         "mail" 
+5     ]
+6 }
+</code></pre></div></div>
+
+<p>Example response for a failed request:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 1 {
+ 2     "help_commands": [
+ 3         "list_datasets",
+ 4         "list_database",
+ 5         "list_program",
+ 6         "list_parameters",
+ 7         "list_format",
+ 8         "list_result",
+ 9         "list_info" 
+10     ],
+11     "format": [
+12         "text",
+13         "json",
+14         "xml" 
+15     ]
+16 }
+</code></pre></div></div>
+
+<div class="accordion-menu">
+  <h4 class="toggle-content-btn"><a href="javascript:void(0)">Example Usage</a></h4>
+  <div class="accordion-content">
+    <p>Example of the use of the REST client on Java Spring Framework:
+    <script src="https://gist.github.com/ddbj-repo/324515b540e438c23e5589dfa40f9aed.js"></script></p>
+
+    <p><a href="javascript:void(0)" class="close-content-btn">« Close</a></p>
+  </div>
+</div>
+
+<h2 id="wabi-blast-parameters-">WABI BLAST Parameters <a name="parameter"></a></h2>
+
+<h3 id="requestidrequest-id-">requestId：Request ID <a name="parameter-Request-ID"></a></h3>
+
+<p>A string that is used to uniquely identify a <a href="#search-job">BLAST search
+job</a>　from those registered in WABI.<br />
+WABI <a href="#uripost-example">returns Request ID as part of the response data</a>
+when the job is registered in the queue: this should be saved by the
+program that uses WABI.</p>
+
+<p>Request ID would be needed for performing the following tasks:</p>
+
+<ul>
+  <li><a href="#URI_GET_status">Confirming the status of a search job</a></li>
+  <li><a href="#URI_GET_request">Confirming the search criteria</a></li>
+  <li><a href="#URI_GET_result">Viewing search results</a></li>
+</ul>
+
+<p>Example Request ID:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wabi_blast_1111-1111-1111-11-111-111111
+</code></pre></div></div>
+
+<p>Also refer to: <a href="/blast-e.html#request%20id">BLAST Help Request ID</a></p>
+
+<h3 id="querysequence-query-sequence-data-">querySequence： Query sequence data <a name="parameter-querySequence"></a></h3>
+
+<ul>
+  <li>Query sequence must be in FASTA format.</li>
+  <li>In order to assign a name to a sequence, include a line starting
+with “&gt;” before each sequence.</li>
+  <li>If there are multiple sequences to be queried, then sequence names
+are mandatory in order to distinguish between the sequences
+(multi-FASTA format).<br />
+<span class="red">Note: Increasing the number of sequences will not
+increase the degree of parallel processing. We recommend reducing
+the number of sequences searched using the web API, considering the
+load balancing that is applied by the job management engine.</span></li>
+  <li>Sequence name is not required if you only have one sequence to
+search.</li>
+</ul>
+
+<p>Example sequence in FASTA format</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;my query sequence 1
+CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
+GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
+GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
+</code></pre></div></div>
+
+<p>Example of multiple sequences (multi-FASTA format)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;my query sequence 1
+CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
+GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
+GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
+&gt;my query sequence 2
+GGCCAGGGCACCCAGTCTGAGAACAGCTGCACCCGCTTCCCAGGCAACCTGCCTCACATG
+CTTCGAGACCTCCGAGATGCCTTCAGCAGAGTGAAGACTTTCTTTCAAATGAAGGATCAG
+CTGGACAACATATTGTTAAAGGAGTCCTTGCTGGAGGACTTTAAG
+&gt;my query sequence 3
+ATGGGTCTCACCTCCCAACTGCTTCCCCCTCTGTTCTTCCTGCTAGCATGTGCCGGCAAC
+TTTGCCCACGGACACAACTGCCATATCGCCTTACGGGAGATCATCGAAACTCTGAACAGC
+CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
+</code></pre></div></div>
+
+<div class="attention red">
+  <p>Valid search results may not be obtained with very long sequences or if
+there are too many sequences for the following reasons.<br />
+In such cases, please try reducing the number of query sequences or
+making sequences shorter.</p>
+
+  <ul>
+    <li>Search may end abnormally due to memory running out.</li>
+    <li>Search may time out due to the search taking too long.</li>
+  </ul>
+</div>
+
+<p>Also refer to: <a href="/blast-e.html#query">BLAST Help Query name, Query sequence</a></p>
+
+<h3 id="datasetsdatasets-">datasets：Datasets <a name="parameter-datasets"></a></h3>
+
+<p>Datasets are available to assist in completing the query form on the web
+interface, but they are not currently used in WABI.</p>
+
+<p>Valid input values that can be specified for datasets and their
+respective meanings are explained below.<br />
+Note: Please use the help API <a href="#URI_GET_help">GET
+/blast/help/{Help-Command}</a> to reference the most
+up-to-date information.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset value</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ddbjall</code></td>
+      <td>DDBJ ALL (DDBJ periodical release + daily updates)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ddbjnew</code></td>
+      <td>DDBJ New (DDBJ daily updates)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">16S_rRNA</code></td>
+      <td>16S rRNA (Prokaryotes)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">uniprot_all</code></td>
+      <td>UniProt (Swiss-Prot + TrEMBL)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">uniprot_sprot</code></td>
+      <td>UniProt (Swiss-Prot)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">uniprot_trembl</code></td>
+      <td>UniProt (TrEMBL)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">patent_protein</code></td>
+      <td>Patent</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dadall</code></td>
+      <td>DAD (periodical release + daily updates)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dadnew</code></td>
+      <td>DAD (daily updates)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq_na</code></td>
+      <td>RefSeq NA</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq_aa</code></td>
+      <td>RefSeq AA</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Also refer to: <a href="/blast-e.html#nucleotide">BLAST HELP Nucleotide (DATABASE, DIVISION)</a></p>
+
+<h3 id="databasedatabase-">database：Database <a name="parameter-database"></a></h3>
+
+<h4 id="nucleotide-sequence-database-">Nucleotide Sequence Database <a name="Nucleotide_Sequence_Database"></a></h4>
+
+<p>Example nucleotide sequence database values and their corresponding
+explanations are listed in the table below.<br />
+Note: Please use the help API <a href="#URI_GET_help">GET
+/blast/help/{Help-Command}</a> to reference the most
+recently updated information.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Explanation</th>
+      <th> </th>
+      <th>Database value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DDBJ ALL</td>
+      <td>DDBJ periodical release + daily updates</td>
+      <td>(Refer to table below)</td>
+    </tr>
+    <tr>
+      <td>DDBJ New</td>
+      <td>DDBJ daily updates</td>
+      <td>(Add prefix “new_” to the values below)</td>
+    </tr>
+    <tr>
+      <td>16S rRNA</td>
+      <td>16S rRNA from DDBJ periodical release</td>
+      <td>16S_rRNA</td>
+    </tr>
+    <tr>
+      <td>RefSeq NA</td>
+      <td>RefSeq (Genomics + RNA)</td>
+      <td>(Refer to table below)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>DDBJ ALL, DDBJ NEW Database value</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Standard divisions</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">hum</code>, <code class="language-plaintext highlighter-rouge">new_hum</code></td>
+      <td>Human</td>
+      <td>human</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">pri</code>, <code class="language-plaintext highlighter-rouge">new_pri</code></td>
+      <td>Primates</td>
+      <td>primates other than human</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">rod</code>, <code class="language-plaintext highlighter-rouge">new_rod</code></td>
+      <td>Rodents</td>
+      <td>rodents</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">mam</code>, <code class="language-plaintext highlighter-rouge">new_mam</code></td>
+      <td>Mammals</td>
+      <td>mammals other than human, primates and rodents</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vrt</code>, <code class="language-plaintext highlighter-rouge">new_vrt</code></td>
+      <td>Vertebrates</td>
+      <td>vertebrates other than human, primates, rodents and mammals</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">inv</code>, <code class="language-plaintext highlighter-rouge">new_inv</code></td>
+      <td>Invertebrates</td>
+      <td>invertebrates</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">pln</code>, <code class="language-plaintext highlighter-rouge">new_pln</code></td>
+      <td>Plants</td>
+      <td>plants</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">bct</code>, <code class="language-plaintext highlighter-rouge">new_bct</code></td>
+      <td>Bacteria</td>
+      <td>bacteria</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vrl</code>, <code class="language-plaintext highlighter-rouge">new_vrl</code></td>
+      <td>Viruses</td>
+      <td>viruses</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">phg</code>, <code class="language-plaintext highlighter-rouge">new_phg</code></td>
+      <td>Phages</td>
+      <td>phages</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">syn</code>, <code class="language-plaintext highlighter-rouge">new_syn</code></td>
+      <td>Synthetic DNAs</td>
+      <td>synthetic DNAs (SYN)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">env</code>, <code class="language-plaintext highlighter-rouge">new_env</code></td>
+      <td>ENV</td>
+      <td>environmental samples(environmental samples)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>High throughput divisions</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">htc</code>, <code class="language-plaintext highlighter-rouge">new_htc</code></td>
+      <td>HTC</td>
+      <td>High Throughput cDNAs</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">htg</code>, <code class="language-plaintext highlighter-rouge">new_htg</code></td>
+      <td>HTG</td>
+      <td>High Throughput Genomic sequences</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">tsa</code>, <code class="language-plaintext highlighter-rouge">new_tsa</code></td>
+      <td>TSA</td>
+      <td>Transcriptome Shotgun Assembly</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>EST divisions</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">est_atha</code>, <code class="language-plaintext highlighter-rouge">new_est_atha</code></td>
+      <td>A.thaliana</td>
+      <td><em>Arabidopsis thaliana</em> (thale cress)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">est_btra</code>, <code class="language-plaintext highlighter-rouge">new_est_btra</code></td>
+      <td>B.taurus</td>
+      <td><em>Bos taurus</em> (cattle)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">est_cele</code>, <code class="language-plaintext highlighter-rouge">new_est_cele</code></td>
+      <td>C.elegans</td>
+      <td><em>Caenorhabditis elegans</em> (nematode worm)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">est_crei</code>, <code class="language-plaintext highlighter-rouge">new_est_crei</code></td>
+      <td>C.reinhardtii</td>
+      <td><em>Chlamydomonas reinhardtii</em> (Chlamydomonas:green algae)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">est_cint</code>, <code class="language-plaintext highlighter-rouge">new_est_cint</code></td>
+      <td>C.intestinalis</td>
+      <td><em>Ciona intestinalis</em> (vase tunicate)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">est_drer</code>, <code class="language-plaintext highlighter-rouge">new_est_drer</code></td>
+      <td>D.rerio</td>
+      <td><em>Danio rerio</em> (zebrafish)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">est_ddis</code>, <code class="language-plaintext highlighter-rouge">new_est_ddis</code></td>
+      <td>D.discoideum</td>
+      <td><em>Dictyostelium discoideum</em> (soil-living amoeba)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">est_dmel</code>, <code class="language-plaintext highlighter-rouge">new_est_dmel</code></td>
+      <td>D.melanogaster</td>
+      <td><em>D.melanogaster</em> (fruit fly)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">est_ggal</code>, <code class="language-plaintext highlighter-rouge">new_est_ggal</code></td>
+      <td>G.gallus</td>
+      <td><em>Gallus gallus</em> (chicken)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">est_gmax</code>, <code class="language-plaintext highlighter-rouge">new_est_gmax</code></td>
+      <td>G.max</td>
+      <td><em>Glycine max</em> (soybean)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">est_hum</code>, <code class="language-plaintext highlighter-rouge">new_est_hum</code></td>
+      <td>H.sapiens</td>
+      <td><em>Homo sapiens</em> (human)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">est_hvul</code>, <code class="language-plaintext highlighter-rouge">new_est_hvul</code></td>
+      <td>H.vulgare</td>
+      <td><em>Hordeum vulgare</em> (Barley) (incl. subspecies)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">est_mtru</code>, <code class="language-plaintext highlighter-rouge">new_est_mtru</code></td>
+      <td>M.truncatula</td>
+      <td><em>Medicago truncatula</em> (Barrel Medic) (incl. mixed library)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">est_mous</code>, <code class="language-plaintext highlighter-rouge">new_est_mous</code></td>
+      <td>M.musculus</td>
+      <td><em>Mus musculus</em> (Mouse)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">est_osat</code>, <code class="language-plaintext highlighter-rouge">new_est_osat</code></td>
+      <td>O.sativa</td>
+      <td><em>Oryza sativa</em> (incl. subspecies rank)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">est_rnor</code>, <code class="language-plaintext highlighter-rouge">new_est_rnor</code></td>
+      <td>R.norvegicus</td>
+      <td><em>Rattus norvegicus</em> (Rat) (incl. Rattus sp.)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">est_slyc</code>, <code class="language-plaintext highlighter-rouge">new_est_slyc</code></td>
+      <td>S.lycopersicum</td>
+      <td><em>Solanum lycopersicum</em> (tomato)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">est_taes</code>, <code class="language-plaintext highlighter-rouge">new_est_taes</code></td>
+      <td>T.aestivum</td>
+      <td><em>Triticum aestivum</em> (bread wheat)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">est_xlae</code>, <code class="language-plaintext highlighter-rouge">new_est_xlae</code></td>
+      <td>X.laevis</td>
+      <td><em>Xenopus laevis</em> (african clawed frog)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">est_xtro</code>, <code class="language-plaintext highlighter-rouge">new_est_xtro</code></td>
+      <td>X.tropicalis</td>
+      <td><em>Xenopus tropicalis</em> (western clawed frog)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">est_zmay</code>, <code class="language-plaintext highlighter-rouge">new_est_zmay</code></td>
+      <td>Z.mays</td>
+      <td><em>Zea mays</em> (maize)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">est_rest</code>, <code class="language-plaintext highlighter-rouge">new_est_rest</code></td>
+      <td>Others</td>
+      <td>Others</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Others</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">pat</code>, <code class="language-plaintext highlighter-rouge">new_pat</code></td>
+      <td>Patent</td>
+      <td>patent (PAT)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">una</code>, <code class="language-plaintext highlighter-rouge">new_una</code></td>
+      <td>Unannotated Seq</td>
+      <td>unannotated sequences (UNA)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">gss</code>, <code class="language-plaintext highlighter-rouge">new_gss</code></td>
+      <td>GSS</td>
+      <td>genome survey sequences</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">sts</code>, <code class="language-plaintext highlighter-rouge">new_sts</code></td>
+      <td>STS</td>
+      <td>sequence tagged sites</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Refseq NA Database value</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>RefSeq NA</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-genomic-fungi</code>, <code class="language-plaintext highlighter-rouge">refseq-rna-fungi</code></td>
+      <td>Fungi</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-genomic-invertebrate</code>, <code class="language-plaintext highlighter-rouge">refseq-rna-invertebrate</code></td>
+      <td>Invertebrate</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-genomic-microbial</code>, <code class="language-plaintext highlighter-rouge">refseq-rna-microbial</code></td>
+      <td>Microbial</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-genomic-mitochondrion</code>, <code class="language-plaintext highlighter-rouge">refseq-rna-mitochondrion</code></td>
+      <td>Mitochondrion</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-genomic-plant</code>, <code class="language-plaintext highlighter-rouge">refseq-rna-plant</code></td>
+      <td>Plant</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-genomic-plasmid</code>, <code class="language-plaintext highlighter-rouge">refseq-rna-plasmid</code></td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-genomic-plastid</code>, <code class="language-plaintext highlighter-rouge">refseq-rna-plastid</code></td>
+      <td>Plastid</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-genomic-protozoa</code>, <code class="language-plaintext highlighter-rouge">refseq-rna-protozoa</code></td>
+      <td>Protozoa</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-genomic-vertebrate_mammalian</code>, <code class="language-plaintext highlighter-rouge">refseq-rna-vertebrate_mammalian</code></td>
+      <td>Vertebrate Mammalian</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-genomic-vertebrate_other</code>, <code class="language-plaintext highlighter-rouge">refseq-rna-vertebrate_other</code></td>
+      <td>Vertebrate Other</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-genomic-viral</code>, <code class="language-plaintext highlighter-rouge">refseq-rna-viral</code></td>
+      <td>Viral</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-genomic</code></td>
+      <td>RefSeq Genomic (ALL) Periodical Release</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-rna</code></td>
+      <td>RefSeq RNA (ALL) Periodical Release</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-na-daily</code></td>
+      <td>RefSeq Daily Updates</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-na-all</code></td>
+      <td>RefSeq ALL (Periodical Release + Daily Updates)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-model-rna-B_taurus</code></td>
+      <td>B. taurus</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-model-rna-D_rerio</code></td>
+      <td>D. rerio</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-model-rna-H_sapiens</code>, refseq-model-genomic-H_sapiens</td>
+      <td>H. sapiens</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-model-rna-M_musculus</code></td>
+      <td>M. musculus</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-model-rna-R_norvegicus</code></td>
+      <td>R. norvegicus</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-model-rna-X_tropicalis</code></td>
+      <td>X. tropicalis</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="amino-acid-sequence-databases-">Amino Acid Sequence Databases <a name="Amino_Acid_Sequence_Databases"></a></h4>
+
+<p>Example amino acid sequence database values and their corresponding
+explanations are listed in the table below.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Explanation</th>
+      <th> </th>
+      <th>Database value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>UniProt (Swiss-Prot + TrEMBL)</td>
+      <td>Swiss-Prot + TrEMBL</td>
+      <td><code class="language-plaintext highlighter-rouge">uniprot_all</code></td>
+    </tr>
+    <tr>
+      <td>UniProt (Swiss-Prot)</td>
+      <td>Swiss-Prot</td>
+      <td><code class="language-plaintext highlighter-rouge">uniprot_sprot</code></td>
+    </tr>
+    <tr>
+      <td>UniProt (TrEMBL)</td>
+      <td>TrEMBL</td>
+      <td><code class="language-plaintext highlighter-rouge">uniprot_trembl</code></td>
+    </tr>
+    <tr>
+      <td>Patent</td>
+      <td>JPO，EPO，USPTO，KIPO</td>
+      <td><code class="language-plaintext highlighter-rouge">jpop</code>, <code class="language-plaintext highlighter-rouge">epop</code>, <code class="language-plaintext highlighter-rouge">usptop</code>, <code class="language-plaintext highlighter-rouge">kipop</code></td>
+    </tr>
+    <tr>
+      <td>DAD ALL</td>
+      <td>periodical release + daily updates</td>
+      <td>(Refer to table below)</td>
+    </tr>
+    <tr>
+      <td>DAD NEW</td>
+      <td>daily updates</td>
+      <td>(Refer to table below)</td>
+    </tr>
+    <tr>
+      <td>RefSeq AA</td>
+      <td>RefSeq (Protein)</td>
+      <td>(Refer to table below)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>DAD ALL, DAD NEW Database value</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Standard divisions</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_hum</code>, <code class="language-plaintext highlighter-rouge">dad_new_hum</code></td>
+      <td>Human</td>
+      <td>human</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_pri</code>, <code class="language-plaintext highlighter-rouge">dad_new_pri</code></td>
+      <td>Primates</td>
+      <td>primates other than human</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_rod</code>, <code class="language-plaintext highlighter-rouge">dad_new_rod</code></td>
+      <td>Rodents</td>
+      <td>rodents</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_mam</code>, <code class="language-plaintext highlighter-rouge">dad_new_mam</code></td>
+      <td>Mammals</td>
+      <td>mammals other than human，primates and rodents</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_vrt</code>, <code class="language-plaintext highlighter-rouge">dad_new_vrt</code></td>
+      <td>Vertebrates</td>
+      <td>vertebrates other than human，primates, rodents and mammals</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_inv</code>, <code class="language-plaintext highlighter-rouge">dad_new_inv</code></td>
+      <td>Invertebrates</td>
+      <td>invertebrates</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_pln</code>, <code class="language-plaintext highlighter-rouge">dad_new_pln</code></td>
+      <td>Plants</td>
+      <td>plants</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_bct</code>, <code class="language-plaintext highlighter-rouge">dad_new_bct</code></td>
+      <td>Bacteria</td>
+      <td>bacteria</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_vrl</code>, <code class="language-plaintext highlighter-rouge">dad_new_vrl</code></td>
+      <td>Viruses</td>
+      <td>viruses</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_phg</code>, <code class="language-plaintext highlighter-rouge">dad_new_phg</code></td>
+      <td>Phages</td>
+      <td>phages</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_syn</code>, <code class="language-plaintext highlighter-rouge">dad_new_syn</code></td>
+      <td>Synthetic DNAs</td>
+      <td>synthetic DNAs (SYN)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_env</code>, <code class="language-plaintext highlighter-rouge">dad_new_env</code></td>
+      <td>General</td>
+      <td>environmental samples</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>High throughput divisions</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_htc</code>, <code class="language-plaintext highlighter-rouge">dad_new_htc</code></td>
+      <td>HTC</td>
+      <td>High Throughput cDNAs</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_htg</code>, <code class="language-plaintext highlighter-rouge">dad_new_htg</code></td>
+      <td>HTG</td>
+      <td>High Throughput Genomic sequences</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_tsa</code>, <code class="language-plaintext highlighter-rouge">dad_new_tsa</code></td>
+      <td>TSA</td>
+      <td>Transcriptome Shotgun Assembly</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>EST divisions</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_est_atha</code>, <code class="language-plaintext highlighter-rouge">dad_new_est_atha</code></td>
+      <td>A.thaliana</td>
+      <td><em>Arabidopsis thaliana</em> (thale cress)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_est_btra</code>, <code class="language-plaintext highlighter-rouge">dad_new_est_btra</code></td>
+      <td>B.taurus</td>
+      <td><em>Bos taurus</em> (cattle)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_est_cele</code>, <code class="language-plaintext highlighter-rouge">dad_new_est_cele</code></td>
+      <td>C.elegans</td>
+      <td><em>Caenorhabditis elegans</em> (nematode worm)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_est_crei</code>, <code class="language-plaintext highlighter-rouge">dad_new_est_crei</code></td>
+      <td>C.reinhardtii</td>
+      <td><em>Chlamydomonas reinhardtii</em> (Chlamydomonas:green algae)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_est_cint</code>, <code class="language-plaintext highlighter-rouge">dad_new_est_cint</code></td>
+      <td>C.intestinalis</td>
+      <td><em>Ciona intestinalis</em> (vase tunicate)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_est_drer</code>, <code class="language-plaintext highlighter-rouge">dad_new_est_drer</code></td>
+      <td>D.rerio</td>
+      <td><em>Danio rerio</em> (zebrafish)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_est_ddis</code>, <code class="language-plaintext highlighter-rouge">dad_new_est_ddis</code></td>
+      <td>D.discoideum</td>
+      <td><em>Dictyostelium discoideum</em> (soil-living amoeba)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_est_dmel</code>, <code class="language-plaintext highlighter-rouge">dad_new_est_dmel</code></td>
+      <td>D.melanogaster</td>
+      <td><em>D.melanogaster</em> (fruit fly)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_est_ggal</code>, <code class="language-plaintext highlighter-rouge">dad_new_est_ggal</code></td>
+      <td>G.gallus</td>
+      <td><em>Gallus gallus</em> (chicken)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_est_gmax</code>, <code class="language-plaintext highlighter-rouge">dad_new_est_gmax</code></td>
+      <td>G.max</td>
+      <td><em>Glycine max</em> (soybean)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_est_hum</code>, <code class="language-plaintext highlighter-rouge">dad_new_est_hum</code></td>
+      <td>H.sapiens</td>
+      <td><em>Homo sapiens</em> (human)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_est_hvul</code>, <code class="language-plaintext highlighter-rouge">dad_new_est_hvul</code></td>
+      <td>H.vulgare</td>
+      <td><em>Hordeum vulgare</em> (Barley) (incl. subspecies)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_est_mtru</code>, <code class="language-plaintext highlighter-rouge">dad_new_est_mtru</code></td>
+      <td>M.truncatula</td>
+      <td><em>Medicago truncatula</em> (Barrel Medic) (incl. mixed library)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_est_mous</code>, <code class="language-plaintext highlighter-rouge">dad_new_est_mous</code></td>
+      <td>M.musculus</td>
+      <td><em>Mus musculus</em> (Mouse)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_est_osat</code>, <code class="language-plaintext highlighter-rouge">dad_new_est_osat</code></td>
+      <td>O.sativa</td>
+      <td><em>Oryza sativa</em> (incl. subspecies rank)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_est_rnor</code>, <code class="language-plaintext highlighter-rouge">dad_new_est_rnor</code></td>
+      <td>R.norvegicus</td>
+      <td><em>Rattus norvegicus</em> (Rat) (incl. Rattus sp.)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_est_slyc</code>, <code class="language-plaintext highlighter-rouge">dad_new_est_slyc</code></td>
+      <td>S.lycopersicum</td>
+      <td><em>Solanum lycopersicum</em> (tomato)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_est_taes</code>, <code class="language-plaintext highlighter-rouge">dad_new_est_taes</code></td>
+      <td>T.aestivum</td>
+      <td><em>Triticum aestivum</em> (bread wheat)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_est_xlae</code>, <code class="language-plaintext highlighter-rouge">dad_new_est_xlae</code></td>
+      <td>X.laevis</td>
+      <td><em>Xenopus laevis</em> (western clawed frog)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_est_xtro</code>, <code class="language-plaintext highlighter-rouge">dad_new_est_xtro</code></td>
+      <td>X.tropicalis</td>
+      <td><em>Xenopus tropicalis</em> (african clawed frog)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_est_zmay</code>, <code class="language-plaintext highlighter-rouge">dad_new_est_zmay</code></td>
+      <td>Z.mays</td>
+      <td><em>Zea mays</em> (maize)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_est_rest</code>, <code class="language-plaintext highlighter-rouge">dad_new_est_rest</code></td>
+      <td>Others</td>
+      <td>Others</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Others</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_pat</code>, <code class="language-plaintext highlighter-rouge">dad_new_pat</code></td>
+      <td>Patent</td>
+      <td>patent (PAT)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_una</code>, <code class="language-plaintext highlighter-rouge">dad_new_una</code></td>
+      <td>Unannotated Seq</td>
+      <td>unannotated sequences (UNA)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_gss</code>, <code class="language-plaintext highlighter-rouge">dad_new_gss</code></td>
+      <td>GSS</td>
+      <td>genome survey sequences</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dad_sts</code>, <code class="language-plaintext highlighter-rouge">dad_new_sts</code></td>
+      <td>STS</td>
+      <td>sequence tagged sites</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Refseq AA Database value</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>RefSeq AA</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-protein-fungi</code></td>
+      <td>Fungi</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-protein-invertebrate</code></td>
+      <td>Invertebrate</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-protein-microbial</code></td>
+      <td>Microbial</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-protein-mitochondrion</code></td>
+      <td>Mitochondrion</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-protein-plant</code></td>
+      <td>Plant</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-protein-plasmid</code></td>
+      <td>Plasmid</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-protein-plastid</code></td>
+      <td>Plastid</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-protein-protozoa</code></td>
+      <td>Protozoa</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-protein-vertebrate_mammalian</code></td>
+      <td>Vertebrate Mammalian</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-protein-vertebrate_other</code></td>
+      <td>Vertebrate Other</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-protein-viral</code></td>
+      <td>Viral</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-protein</code></td>
+      <td>RefSeq Protein (ALL) Periodical Release</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-aa-daily</code></td>
+      <td>RefSeq Protein Daily Updates</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-aa-all</code></td>
+      <td>RefSeq Protein ALL (Periodical Release + Daily Updates)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-model-protein-B_taurus</code></td>
+      <td>B. taurus</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-model-protein-D_rerio</code></td>
+      <td>D. rerio</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-model-protein-H_sapiens</code></td>
+      <td>H. sapiens</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-model-protein-M_musculus</code></td>
+      <td>M. musculus</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-model-protein-R_norvegicus</code></td>
+      <td>R. norvegicus</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">refseq-model-protein-X_tropicalis</code></td>
+      <td>X. tropicalis</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Also refer to: <a href="/blast-e.html#nucleotide">BLAST HELP Nucleotide (DATABASE, DIVISION)</a></p>
+
+<h3 id="programblast-program-">program：BLAST Program <a name="parameter-program"></a></h3>
+
+<p>You can choose from the following BLAST programs depending on the
+analysis being performed.<br />
+Note: Please use the help API <a href="#URI_GET_help">GET
+/blast/help/{Help-Command}</a> to reference the most
+recently updated information.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>BLAST Program</th>
+      <th>query</th>
+      <th>Data Base</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>megablast</td>
+      <td>nucleotide</td>
+      <td>nucleotide</td>
+      <td>Aligning your nucleotide sequence with nucleotide sequence database.<br />When you want to perform a homology search with long length of nucleotide sequence, results are provided faster than blastn program.</td>
+    </tr>
+    <tr>
+      <td>blastn</td>
+      <td>nucleotide</td>
+      <td>nucleotide</td>
+      <td>Aligning your nucleotide sequence with nucleotide sequence database.</td>
+    </tr>
+    <tr>
+      <td>tblastn</td>
+      <td>amino acid</td>
+      <td>nucleotide</td>
+      <td>Aligning your amino acid sequence with nucleotide sequence database by translating database sequences taking into account all six possible open reading frames.</td>
+    </tr>
+    <tr>
+      <td>tblastx</td>
+      <td>nucleotide</td>
+      <td>nucleotide</td>
+      <td>Aligning your nucleotide sequence with nucleotide sequence database by translating both sequences taking into account all six possible open reading frames.</td>
+    </tr>
+    <tr>
+      <td>blastp</td>
+      <td>amino acid</td>
+      <td>amino acid</td>
+      <td>Aligning your amino acid sequence with amino acid seque nce database.</td>
+    </tr>
+    <tr>
+      <td>blastx</td>
+      <td>nucleotide</td>
+      <td>amino acid</td>
+      <td>Aligning your nucleotide sequence with amino acid sequence database by translating your sequence taking into account all six possible open reading frames.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Also refer to: <a href="/blast-e.html#program">BLAST HELP Program</a></p>
+
+<h3 id="parametersblast-program-options">parameters：BLAST program options　<a name="parameter-parameters"></a></h3>
+
+<p>BLAST program options that can be specified are as follows:<br />
+Note: Please use the help API <a href="#URI_GET_help">GET
+/blast/help/{Help-Command}</a> to reference the most
+recently updated information.</p>
+
+<p>Combinations of these options can be specified with corresponding values
+separated by spaces.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Options</th>
+      <th>BLAST Program</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-A</code>　<em>N</em></td>
+      <td>All programs</td>
+      <td>Multiple Hits window size; generally defaults to 0 (for single-hit extensions), but defaults to 40 when using discontiguous templates.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-B</code>　<em>N</em></td>
+      <td>All programs except "<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Number of concatenated queries, in blastn or tblastn mode</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-C</code>　<em>X</em></td>
+      <td>All programs except "<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Use composition-based statistics for blastp or tblastn:<br />
+      T, t, D, or d<br />
+      Default (equivalent to 1 for blast2 and blastall_old and to 2 for blastall and blastcl3)<br />
+      0, F, or f<br />
+      No composition-based statistics<br />
+      1 Composition-based statistics as in NAR 29:2994-3005, 2001<br />
+      2 Composition-based score adjustment as in Bioinformatics 21:902-911, 2005, conditioned on sequence properties<br />
+      3 Composition-based score adjustment as in Bioinformatics 21:902-911, 2005, unconditionally<br />
+      When enabling statistics in blastall, blastall_old, or blastcl3 (i.e., not blast2), appending u (case-insensitive) to the mode enables use of unified p-values combining alignment and compositional p-values in round 1 only.</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><code class="language-plaintext highlighter-rouge">-D　</code><em>N</em></td>
+      <td>All programs except "<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Translate sequences in the database according to genetic code N in /usr/share/ncbi/data/gc.prt (default is 1; only applies to tblast*)</td>
+    </tr>
+    <tr>
+      <td>"<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Type of output:<br />
+      0 alignment endpoints and score<br />
+      1 all ungapped segments endpoints<br />
+      2 traditional BLAST output (default)<br />
+      3 tab-delimited one line format<br />
+      4 incremental text ASN.1<br />
+      5 incremental binary ASN.1</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><code class="language-plaintext highlighter-rouge">-E　</code><em>N</em></td>
+      <td>"<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Extending a gap costs N (-1 invokes default behavior)</td>
+    </tr>
+    <tr>
+      <td>All programs except "<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Extending a gap costs N (-1 invokes default behavior: non-affine if greedy, 2 otherwise)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-F</code><em>str</em></td>
+      <td>All programs</td>
+      <td>Filter options for DUST or SEG; defaults to T for bl2seq, blast2, blastall, blastall_old, blastcl3, and <code class="language-plaintext highlighter-rouge">megablast</code>, and to F for blastpgp, impala, and rpsblast.</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><code class="language-plaintext highlighter-rouge">-G　</code><em>N</em></td>
+      <td>"<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Opening a gap costs N (-1 invokes default behavior)</td>
+    </tr>
+    <tr>
+      <td>All programs except "<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Opening a gap costs N (-1 invokes default behavior: non-affine if greedy, 5 if using dynamic programming)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-H</code><em>N</em></td>
+      <td>"<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Maximal number of HSPs to save per database sequence (default is 0, unlimited)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-I</code></td>
+      <td>All programs</td>
+      <td>Show GIs in deflines</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-J</code></td>
+      <td>All programs</td>
+      <td>Believe the query defline</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-K</code><em>N</em></td>
+      <td>All programs except "<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Number of best hits from a region to keep.<br />
+      Off by default.  If used a value of 100 is recommended.<br />
+      Very high values of -v or -b are also suggested.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-L</code><em>start, stop</em></td>
+      <td>All programs</td>
+      <td>Location on query sequence (for rpsblast, only valid in blastp mode)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-M</code><em>str</em></td>
+      <td>All programs except "<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Use matrix str (default = BLOSUM62)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-M</code><em>N</em></td>
+      <td>"<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Maximal total length of queries for a single search (default = 5000000)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-N</code><em>N</em></td>
+      <td>"<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Type of a discontiguous word template:<br />
+      0 coding (default)<br />
+      1 optimal<br />
+      2 two simultaneous</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><code class="language-plaintext highlighter-rouge">-P　</code><em>N</em></td>
+      <td>All programs except "<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Set to 1 for single-hit mode or 0 for multiple-hit mode (default).<br />
+      Does not apply to blastn.</td>
+    </tr>
+    <tr>
+      <td>"<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Maximal number of positions for a hash value (set to 0 [default] to ignore)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-Q</code><em>N</em></td>
+      <td>All programs except "<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Translate query according to genetic code N in /usr/share/ncbi/data/gc.prt (default is 1)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-R</code></td>
+      <td>"<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Report the log information at the end of output</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-S</code><em>N</em></td>
+      <td>All programs</td>
+      <td>Query strands to search against database for blastn, blastx, tblastx:<br />
+      1 top<br />
+      2 bottom<br />
+      3 both (default)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-T</code></td>
+      <td>All programs</td>
+      <td>Produce HTML output</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-U</code></td>
+      <td>All programs</td>
+      <td>Use lower case filtering for the query sequence</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-V</code></td>
+      <td>All programs</td>
+      <td>Force use of legacy engine</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-W</code><em>N</em></td>
+      <td>All programs</td>
+      <td>Use words of size N (length of best perfect match; zero invokes default behavior, except with <code class="language-plaintext highlighter-rouge">megablast</code>, which defaults to 28, and blastpgp, which defaults to 3.  The default values for the other commands vary with "program": 11 for blastn, 28 for <code class="language-plaintext highlighter-rouge">megablast</code>, and 3 for everything else.)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-X</code><em>N</em></td>
+      <td>All programs</td>
+      <td>X dropoff value for gapped alignment (in bits) (zero invokes default behavior, except with <code class="language-plaintext highlighter-rouge">megablast</code>, which defaults to 20, and rpsblast and seedtop, which default to 15. The default values for the other commands vary with "program": 30 for blastn, 20 for <code class="language-plaintext highlighter-rouge">megablast</code>, 0 for tblastx, and 15 for everything else.)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-Y</code><em>X</em></td>
+      <td>All programs</td>
+      <td>Effective length of the search space (use zero for the real size)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-Z</code><em>N</em></td>
+      <td>All programs</td>
+      <td>X dropoff value for final [dynamic programming?] gapped alignment in bits (default is 100 for blastn and <code class="language-plaintext highlighter-rouge">megablast</code>, 0 for tblastx, 25 for others)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-b</code><em>N</em></td>
+      <td>All programs</td>
+      <td>Number of database sequences to show alignments for (B) (default is 250)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-e</code><em>X</em></td>
+      <td></td>
+      <td>Expectation value (E) (default = 10.0)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-f</code><em>X</em></td>
+      <td>All programs except "<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Threshold for extending hits, default if zero: 0 for blastn and <code class="language-plaintext highlighter-rouge">megablast</code>, 11 for blastp, 12 for blastx, and 13 for tblasn and tblastx.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-f</code></td>
+      <td>"<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Show full IDs in the output (default: only GIs or accessions)</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><code class="language-plaintext highlighter-rouge">-g　</code><em>F</em></td>
+      <td>All programs except "<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Do not perform gapped alignment (N/A for tblastx)</td>
+    </tr>
+    <tr>
+      <td>"<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Make discontiguous <code class="language-plaintext highlighter-rouge">megablast</code> generate words for every base of the database (mandatory with the current BLAST engine)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-l</code><em>str</em></td>
+      <td>All programs</td>
+      <td>Restrict search of database to list of GI's [String]</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-m</code><em>N</em></td>
+      <td>All programs</td>
+      <td>alignment view options:<br />
+      0 pairwise (default)<br />
+      1 query-anchored showing identities<br />
+      2 query-anchored, no identities<br />
+      3 flat query-anchored, show identities<br />
+      4 flat query-anchored, no identities<br />
+      5 query-anchored, no identities and blunt ends<br />
+      6 flat query-anchored, no identities and blunt ends<br />
+      7 XML Blast output (not available for impala)<br />
+      8 tabular (not available for impala)<br />
+      9 tabular with comment lines (not available for impala)<br />
+      10 ASN.1 text (not available for impala or rpsblast)<br />
+      11 ASN.1 binary (not available for impala or rpsblast)</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><code class="language-plaintext highlighter-rouge">-n</code></td>
+      <td>All programs except "<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td><code class="language-plaintext highlighter-rouge">megablast</code> search</td>
+    </tr>
+      <tr>
+      <td>"<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Use non-greedy (dynamic programming) extension for affine gap scores</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-p</code><em>X</em></td>
+      <td>"<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Identity percentage cut-off (default = 0)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-q</code><em>N</em></td>
+      <td>All programs</td>
+      <td>Penalty for a nucleotide mismatch (blastn only) (default = -10 for seedtop, -3 for everything else)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-r</code><em>N</em></td>
+      <td>All programs</td>
+      <td>Reward for a nucleotide match (blastn only) (default = 10 for seedtop, -10 for everything else)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-s</code></td>
+      <td>All programs except "<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Compute locally optimal Smith-Waterman alignments.<br />
+      For blastall, blastall_old, and blastcl3, this is only available in gapped tblastn mode.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-s</code><em>N</em></td>
+      <td>"<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Minimal hit score to report (0 for default behavior)</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><code class="language-plaintext highlighter-rouge">-t　</code><em>N</em></td>
+      <td>All programs except "<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Length of a discontiguous word template (the largest intron allowed in a translated nucleotide sequence when linking multiple distinct assignments; default = 0; negative values disable linking for blastall, blastall_old, and blastcl3.)</td>
+    </tr>
+    <tr>
+      <td>"<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Length of a discontiguous word template (contiguous word if 0 [default])</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-v</code><em>N</em></td>
+      <td>All programs</td>
+      <td>Number of one-line descriptions to show (V) (default = 500)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-w</code><em>N</em></td>
+      <td>All programs except "<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>Frame shift penalty (OOF algorithm for blastx)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-y</code><em>X</em></td>
+      <td>All programs except "<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>X dropoff for ungapped extensions in bits (0.0 invokes default behavior: 20 for blastn, 10 for <code class="language-plaintext highlighter-rouge">megablast</code>, and 7 for all others.)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-y</code><em>N</em></td>
+      <td>"<code class="language-plaintext highlighter-rouge">megablast</code>"</td>
+      <td>X dropoff value for ungapped extension (default is 10)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">-z</code><em>N</em></td>
+      <td>All programs</td>
+      <td>Effective length of the database (use zero for the real size)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example BLAST program option:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-v 100 -b 100 -e 10 -F F -W 11
+</code></pre></div></div>
+
+<p>Also refer to: <a href="/blast-e.html#parameters">BLAST HELP Optional Parameters</a></p>
+
+<h3 id="formatresponse-data-format-">format：Response data format <a name="parameter-format"></a></h3>
+
+<p>You can specify the following options to select the WABI response data
+format.<br />
+Note: Please use the help API <a href="#URI_GET_help">GET /blast/help/{Help-Command} to
+reference the most recently updated information.</a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Response data format</th>
+      <th>Explanation</th>
+      <th>Media Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">text</code></td>
+      <td>Plain text</td>
+      <td><code class="language-plaintext highlighter-rouge">text/plain; charset=utf-8</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">json</code></td>
+      <td>JSON format</td>
+      <td><code class="language-plaintext highlighter-rouge">application/json; charset=utf-8</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">xml</code></td>
+      <td>XML text</td>
+      <td><code class="language-plaintext highlighter-rouge">text/xml; charset=utf-8</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">bigfile</code></td>
+      <td>Used when retrieving data that is output to a file, such as search results as plain text.</td>
+      <td><code class="language-plaintext highlighter-rouge">text/plain; charset=utf-8</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">imagefile</code></td>
+      <td>Image data</td>
+      <td><code class="language-plaintext highlighter-rouge">image/png</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">requestfile</code></td>
+      <td>Used when retrieving data that is output to a file, such as search results as JSON text.</td>
+      <td><code class="language-plaintext highlighter-rouge">application/json; charset=utf-8</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Note: If WABI cannot generate response data in the specified format,
+then it is considered an invalid input value and returns an HTTP error
+code.</p>
+
+<h3 id="resultresult-retrieval-method-">result：Result retrieval method <a name="parameter-result"></a></h3>
+
+<p>The method for retrieving results can be specified from one of the
+following:<br />
+Note: Please use the help API <a href="#URI_GET_help">GET
+/blast/help/{Help-Command}</a> to reference the most
+recently updated information.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Retrieval Method</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">www</code></td>
+      <td>Submit a request to a URL for retrieving a result, and receive the result as the response data to the request.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">mail</code></td>
+      <td>Result is sent to the specified email address.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="addressemail-address-">address：Email address <a name="parameter-address"></a></h3>
+
+<p>The email address to which the results will be sent.</p>
+
+<h3 id="infothe-type-of-job-information-being-referenced-">info：The type of job information being referenced <a name="parameter-info"></a></h3>
+
+<p>The following types of information can be retrieved for a submitted
+search job.<br />
+Note: Please use the help API <a href="#URI_GET_help">GET
+/blast/help/{Help-Command}</a> to reference the most
+up-to-date information.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Information Type</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">status</code></td>
+      <td>Job status</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">result</code></td>
+      <td>Search results</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">request</code></td>
+      <td>Search criteria specified when the job was submitted</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="imageidthe-id-of-the-image-associated-with-a-search-output-">imageId：The ID of the image associated with a search output <a name="parameter-imageId"></a></h3>
+
+<p>This ID is used to retrieve the image data generated as part of a
+search.</p>
+
+<p>It is required for the following case:</p>
+
+<ul>
+  <li><a href="#URI_GET_imageid">To retrieve the image data generated by a
+search.</a></li>
+</ul>
+
+<p>Example ID for an image generated by search output:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+</code></pre></div></div>
+
+<h2 id="other-information-">Other Information <a name="other"></a></h2>
+
+<p>Search results are retained for 7 days.<br />
+(Refer to “Search result retention period” <a href="/services/blast-e.html#result">「Request ID and BLAST
+result」</a>)<br />
+You can <a href="#URI_GET_result">obtain the processed search result</a> at any
+time during this period by submitting a GET request specifying the
+<a href="#parameter-Request-ID">Request ID</a>.</p>
+
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

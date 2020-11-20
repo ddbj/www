@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>"First codon [***] is not a start codon." / "Final codon [***] is not a stop codon." というエラーが表示されました</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title -small">
+      <h1 class="title">"First codon [***] is not a start codon." / "Final codon [***] is not a stop codon." というエラーが表示されました</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/faq/ja/">よくある質問</a>
+            
+          </li>
+          <li>
+            <a>"First codon [***] is not a start codon." / "Final codon [***] is not a stop codon." というエラーが表示されました</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<main id="SimpleView">
+  <div class="inner">
+    <article class="md-content">
+      <p>これらの error message は <a href="/ddbj/cds.html">CDS (protein coding sequence) feature</a> のアミノ酸翻訳の結果が、5'末端 または 3'末端において適切ではなかったことを示しています。<br />当該 CDS が全長ではなく部分配列の場合、その feature location には部分配列であることを示すフラグが必要です。<br />部分配列の場合、<a href="/ddbj/location.html">location の記述法</a>に示されている記載ルールに従い、5' end not complete を示す "<strong>&lt;</strong>"、3' end not complete を示す "<strong>&gt;</strong>" のフラグを適切に加えて入力してください。<br />
+  <!-- Nucleotide Sequence Submission System -->
+</p>
+<table class="t04">
+  <caption>例: CDS が 1..295 である場合の部分配列記述</caption>
+  <tbody>
+    <tr>
+      <th>location</th>
+      <th>状況</th>
+    </tr>
+    <tr>
+      <td> &lt;1..295</td>
+      <td> 開始コドンで始まらない、かつ、終止コドンで終わる</td>
+    </tr>
+    <tr>
+      <td>1.. &gt;295</td>
+      <td>開始コドンで始まり、かつ、終止コドンで終わらない</td>
+    </tr>
+    <tr>
+      <td> &lt;1.. &gt;295</td>
+      <td>開始コドンで始まらない、かつ、終止コドンで終わらないとき</td>
+    </tr>
+  </tbody>
+</table>
+<dl><dt>参照</dt>
+  <dd><a href="/faq/ja/how-to-fix-error-msg-stop-codon.html">“Stop codon ‘*’ is found in the range.” というエラーが表示されました</a></dd>
+  <dd><a href="/ddbj/cds.html#frame" title="/sub/cds.html#frame">codon_start qualifier による翻訳開始の位置補正</a></dd>
+</dl>
+
+    </article>
+  </div>
+</main>
+
+  
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>国際塩基配列データベースのアクセッション番号</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">国際塩基配列データベースのアクセッション番号</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/documents">documents</a>
+          </li>
+          <li>
+            <a href="">国際塩基配列データベースのアクセッション番号</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="定義-">定義 <a name="definition"></a></h2>
+
+<p><a href="/insdc.html#insd">INSD</a> (the International Nucleotide Sequence
+Databases; 国際塩基配列データベース)
+とは、全世界の研究者が実験によって決定した塩基配列データ、または、その
+<a href="/ddbj/tpa.html">TPA</a> データを DDBJ，ENA，NCBI
+が定めたデータ構築規範に沿って収集・編集した上で、提供するものを指します。</p>
+
+<p>INSD が正式に発行する<strong>アクセッション番号</strong>は、データに対して固有な ID
+として割り振られます。</p>
+
+<h2 id="insd-アクセッション番号の書式-">INSD アクセッション番号の書式 <a name="format"></a></h2>
+
+<p>INSD アクセッション番号は アルファベット＋数字 で構成されています。
+アルファベットの部分を<a href="/documents/prefix.html">プレフィックス</a>と呼びます。
+アクセッション番号の書式は <a href="/documents/data-categories.html">登録データ種別</a>
+によって、以下のように異なります。</p>
+
+<p>Annotated/Assembled Data</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>conventional</td>
+      <td>アルファベット１文字＋５桁の数字: 例 A12345<br />アルファベット２文字＋６桁の数字: 例 AB123456<br />アルファベット２文字＋８桁の数字: 例 AB12345678</td>
+    </tr>
+    <tr>
+      <td>bulk<br /><a href="/ddbj/wgs.html">WGS</a>,<a href="/ddbj/tsa.html">TSA</a>,<a href="/ddbj/tls.html">TLS</a></td>
+      <td>アルファベット４文字 (<a href="/documents/prefix.html#large">For Large Scale Data</a>)＋８～１０ 桁の数字: 例 ABCD01012345<br />アルファベット６文字 (<a href="/documents/prefix.html#large">For Large Scale Data</a>)＋８～１０ 桁の数字: 例 ABCDEF01012345</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/mga.html">MGA</a></td>
+      <td>アルファベット５文字＋７ 桁以上の数字: 例 ABCDE1234567</td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/qualifiers.html#protein_id">protein_id</a></td>
+      <td>アルファベット３文字 (<a href="/documents/prefix.html#protein">protein_id prefix list</a>)＋５桁の数字: 例 ABC12345<br />アルファベット３文字 (<a href="/documents/prefix.html#protein">protein_id prefix list</a>)＋７桁の数字: 例 ABC1234567</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>シークエンサ出力データ</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="/dta/index.html">Trace Archive</a></td>
+      <td>アルファベット２文字 (TI のみ) ＋１ 桁以上の数字: 例 TI12345678</td>
+    </tr>
+    <tr>
+      <td><a href="/dra/index.html">Sequece Read Archive</a></td>
+      <td>アルファベット３文字 (<a href="/documents/prefix.html#dra">SRA prefix list</a>) ＋６ 桁以上の数字: 例 DRA000001</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>研究プロジェクト・サンプル</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="/bioproject/index.html">BioProject</a></td>
+      <td>アルファベット５文字 (<a href="/documents/prefix.html#project">BioProject prefix list</a>) ＋１ 桁以上の数字: 例 PRJDA123</td>
+    </tr>
+    <tr>
+      <td><a href="/biosample/index.html">BioSample</a></td>
+      <td>アルファベット４文字 (<a href="/documents/prefix.html#sample">BioSample prefix</a>) ＋８桁の数字: 例 SAMD00000001</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="アクセッション番号と混同されるもの-">アクセッション番号と混同されるもの <a name="confuse"></a></h2>
+
+<p>下記は混同されることが多いのですが、INSD
+のアクセッション番号ではありません。</p>
+
+<dl>
+  <dt>INSD 以外のデータベースにおいて発行される ID</dt>
+  <dd>RefSeq numbers: 例 NC_123456, NM_123456</dd>
+  <dd>Ensembl numbers: 例 ENSG00000139618</dd>
+  <dd>UniProt accession numbers: 例 P12345, Q01234</dd>
+</dl>
+
+      </div>
+      
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              
+              <li>
+                <a href="/documents/data-categories.html">登録データ種別</a>
+              </li>
+              
+              <li>
+                <a href="/documents/data-release-policy.html">データ公開原則</a>
+              </li>
+              
+              <li>
+                <a href="/documents/prefix.html">Prefix Letter List</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" version="2.0">
+<channel>
+<title>お知らせ - BioProject</title>
+<link>/rss/news-bioproject-ja.xml</link>
+<atom:link href="/rss/news-bioproject-ja.xml" rel="self" type="application/rss+xml"/>
+<description>お知らせ - BioProject</description>
+<language>ja</language>
+<pubDate>Thu, 12 Nov 2020 15:30:00 +0900</pubDate>
+<image>
+<url>/images/thumbnail/logo_ddbj.png</url>
+<title>お知らせ - BioProject</title>
+<link>/rss/news-bioproject-ja.xml</link>
+<width>90</width>
+<height>32</height>
+</image>
+<item>
+<title>ホタルイカ (Watasenia scintillans) の配列データ公開</title>
+<link>/news/ja/201112_2.html</link>
+<pubDate>Thu, 12 Nov 2020 15:30:00 +0900</pubDate>
+<description>島根大学から登録されたホタルイカ (Watasenia scintillans) の配列データが公開されました。アクセッション番号は以下の通りです。getentry または DRASearch から検索可能です。WGSBLWP01000001-BLWP01491107 (491,107 entries) BLWP.gzDRAgenome DRR219451-DRR219453 (DRA009937)transcriptome DRR219454-DRR219455 (DRA009937)
+</description>
+<guid>/news/ja/201112_2.html</guid>
+</item>
+<item>
+<title>(11/27～12/3) スパコン定期メンテナンスに伴う DDBJ センターのサービス停止のお知らせ </title>
+<link>/news/ja/201110.html</link>
+<pubDate>Tue, 10 Nov 2020 09:00:00 +0900</pubDate>
+<description>遺伝研スーパーコンピュータシステムの定期メンテナンスのため、以下の日程でスパコンのサービスが停止いたします。11月27日(金) 17:00 ～ 12月3日 (木) 24:00スパコン停止に伴い、DDBJ センターのサービスも停止いたします。一部のサービスについては、サービス停止、再開の時刻が上記日程より前後いたします。各サービス停止の日程が決まり次第、DDBJ HP、Twitter でアナウンスいたします。皆様にはご迷惑をおかけいたしますが、ご理解とご協力のほどよろしくお願いいたします。</description>
+<guid>/news/ja/201110.html</guid>
+</item>
+<item>
+<title>(11/26～12/3) DDBJ センターの登録、検索・解析サービス停止のお知らせ</title>
+<link>/news/ja/201110_2.html</link>
+<pubDate>Tue, 10 Nov 2020 09:00:00 +0900</pubDate>
+<description>遺伝研スパコンシステムの定期メンテンナンスに伴い、以下の日程で DDBJ センターが提供する登録、検索・解析サービスが停止いたします。サービス停止、再開の時刻が下記日程より前後する可能性があります。DDBJ HP、Twitter でアナウンスいたしますのでご確認ください。サービス名停止期間・DDBJ塩基配列登録システム11月25日(水) 18:00 ～ 12月4日(金) 18:00 ・DRA 検証処理・GEA 検証処理11月26日(木) 14:00 ～ 12月4日(金) 12:00・D-way・DRA Search・BioProject Search・BioSample Search・GEA reviewer access・NBDCヒトデータベース申請システム・AGD Submission/Download Tool・AGD Meta Viewer・AgdRest11月27日(金) 13:00 ～ 12月3日(木) 24:00・NIG Supercomputer・DDBJ FTP サービス・getentry・ARSA・BLAST・ClustalW11月27日(金) 17:00 ～ 12月3日(木) 24:00皆様には大変ご迷惑をおかけいたしますが、ご理解とご協力をお願いいたします。</description>
+<guid>/news/ja/201110_2.html</guid>
+</item>
+<item>
+<title>アオマダラウミヘビ (Laticauda colubrina) の配列データ公開</title>
+<link>/news/ja/201106.html</link>
+<pubDate>Fri, 6 Nov 2020 09:00:00 +0900</pubDate>
+<description>京都大学から登録されたアオマダラウミヘビ (Laticauda colubrina) の配列データが公開されました。アクセッション番号は以下の通りです。getentry または DRASearch から検索可能です。WGSBLBF01000001-BLBF01020583 (20,583 entries) BLBF.gzDRADRR147552 (DRA007200)
+
+</description>
+<guid>/news/ja/201106.html</guid>
+</item>
+<item>
+<title>コウモリ２種 (Rousettus aegyptiacus と Rousettus leschenaultii) の配列データ公開</title>
+<link>/news/ja/201102.html</link>
+<pubDate>Mon, 2 Nov 2020 16:30:00 +0900</pubDate>
+<description>国立遺伝学研究所から登録されたコウモリ２種 (Rousettus aegyptiacus と Rousettus leschenaultii) の配列データが公開されました。アクセッション番号は以下の通りです。getentry または DRASearch から検索可能です。エジプトルーセットオオコウモリ (Rousettus aegyptiacus)WGS BNJL01000001-BNJL01004947 (4,947 entries) BNJL.gzDRA DRR016094-DRR016103 (DRA001680)デマレルーセットオオコウモリ (Rousettus leschenaultii)WGS BNJM01000001-BNJM01008141 (8,141 entries) BNJM.gzDRA DRR239112-DRR239118 (DRA010589)
+</description>
+<guid>/news/ja/201102.html</guid>
+</item>
+<item>
+<title>BioProject/BioSample/DRA/D-way システムが不安定になっています</title>
+<link>/news/ja/201009_2.html</link>
+<pubDate>Fri, 9 Oct 2020 19:30:00 +0900</pubDate>
+<description>BioProject/BioSample/DRA/D-way システムが不安定になっており、システムの応答が無くなる現象が頻繁に発生するようになっております。解消するため再起動をする場合がありますので、ユーザの皆様におかれましてはこまめに登録内容を保存して頂くよう、お願い申し上げます。ご迷惑をお掛けしており、誠に申し訳ございません。原因については調査を続けております。</description>
+<guid>/news/ja/201009_2.html</guid>
+</item>
+</channel>
+</rss>

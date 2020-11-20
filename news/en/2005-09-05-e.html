@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change the format of a Variable record of MGA data</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">Change the format of a Variable record of MGA data</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/news">news</a>
+          </li>
+          <li>
+            <a href="">Change the format of a Variable record of MGA data</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <html>
+<dd>The format of the Variable record of MGA (Mass sequence for Genome Annotation) data was slightly changed as the International Nucleotide Sequence Database Collaboration Meeting in 2005. The modification is to remove "//" line which is inserted between two consecutive entries in the Variable record. We　appreciate your paying attention to the change.
+<dd><b>Old format </b>
+    <pre><code>&gt;ZZZZZ0000001&#124;ABC1004AA60F1902&#124;10&#124;9B&#124;lipidosis-related protein Lipidosin&#124; MGI:2385656&#124;<br />        gactgtcttcggtgaatgca<br />        //<br />        &gt;ZZZZZ0000002&#124;ABC1003AE78G1607&#124;5&#124;&#124;&#124;&#124;<br />        gcggaagtcggaccggtcgca<br />        //<br />        &gt;ZZZZZ0000003&#124;ABC1003AE72P1806&#124;6&#124;&#124;&#124;&#124;<br />        gggagaccgatccgggatct<br />        //<br />        (Skip the rest)</code></pre>
+    <tr>
+        <td><b>New format</b></td>
+    </tr>
+    <tr>
+        <td bgcolor="#ffffcc"><small>&gt;ZZZZZ0000001&#124;ABC1004AA60F1902&#124;10&#124;9B&#124;lipidosis-related protein Lipidosin&#124; MGI:2385656&#124;<br /> gactgtcttcggtgaatgca<br /> &gt;ZZZZZ0000002&#124;ABC1003AE78G1607&#124;5&#124;&#124;&#124;&#124;<br /> gcggaagtcggaccggtcgca<br /> &gt;ZZZZZ0000003&#124;ABC1003AE72P1806&#124;6&#124;&#124;&#124;&#124;<br /> gggagaccgatccgggatct<br /> (Skip the rest)</small></td>
+    </tr>
+</dd>
+</dd>
+</html>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

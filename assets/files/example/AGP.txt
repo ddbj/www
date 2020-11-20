@@ -1,0 +1,10 @@
+#object	object_beg	object_end	part_number	component_type	component_id/gap_length	component_beg/gap_type	component_end/linkage	orientation
+/linkage evidence
+scaffold1	1	1345	1	W	BZZZ01123456.1	1	1345	+
+scaffold1	1346	2845	2	N	1500	scaffold	yes	align_genus
+scaffold1	2846	4301	3	W	BZZZ01123457.1	1	1456	+
+scaffold1	4302	4401	4	U	100	scaffold	yes	align_trnscpt
+scaffold1	4402	5631	5	W	BZZZ01123458.1	1	1230	-
+scaffold2	1	650	1	W	BZZZ01123486.1	1	650	+
+scaffold2	651	750	2	N	100	scaffold	yes	align_trnscpt
+scaffold2	751	2980	3	W	BZZZ01123488.1	1	2230	-

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DRA で公開されている fastq のリード数が生データのそれよりも少ないのは何故でしょうか?</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title -small">
+      <h1 class="title">DRA で公開されている fastq のリード数が生データのそれよりも少ないのは何故でしょうか?</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/faq/ja/">よくある質問</a>
+            
+          </li>
+          <li>
+            <a>DRA で公開されている fastq のリード数が生データのそれよりも少ないのは何故でしょうか?</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<main id="SimpleView">
+  <div class="inner">
+    <article class="md-content">
+      <p>DRA では <a href="http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc">NCBI SRA Toolkit</a> に含まれている <a href="http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc&amp;f=fastq-dump">fastq-dump</a> を使い，以下のオプションで生データである SRA ファイルから fastq ファイルを作成しています。</p>
+<p class="code break">fastq-dump -M 25 -E --skip-technical --split-3 -W <span class="italic">&lt;SRA file&gt;</span></p>
+<div class="sub_index">
+  <ul>
+    <li>-M 25: 25 塩基以上の配列のみを含める。デフォルトは 25。</li>
+    <li>-E: リードの開始，もしくは終わりに 10 以上の N が存在しない</li>
+    <li>--skip-technical: technical read を除き biological read のみを出力</li>
+    <li>--split-3: ペアリードで最初と二番目の biological read をそれぞれ *_1.fastq と *_2.fastq として出力する。一つしか biological read が存在しない場合，*.fastq として出力する。</li>
+    <li>-W: 指定されていた場合，left と right を clip する</li>
+  </ul>
+</div>
+<!-- .sub_index -->
+<p>上記の出力条件でリードがフィルタリング，トリミングされるため，一般的に fastq のリード数は SRA ファイルのそれよりも少なくなっています。フィルタリング，トリミングされていない fastq ファイルを得るには以下のコマンドで fastq を生成します。</p>
+<p class="code break">fastq-dump -M 1 --split-3 <span class="italic">&lt;SRA file&gt;</span></p>
+
+    </article>
+  </div>
+</main>
+
+  
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+analysis_accession	samples	subjects	analysis_type	analysis_title	platform	program	reference	data_type
+JGAZ000000001	20	20	MICROARRAY	Genotyping of 100 Japanese by microarray	Illumina Ominiexpress	iScan		chip-chip
+JGAZ000000002	1	1	REFERENCE_ALIGNMENT	Alignment to GRCh37 genome	Illumina HiSeq 2500	HISAT2	GRCh37	
+JGAZ000000003	1	1	SEQUENCE_VARIATION	Variation summary of participants		Variant caller v1.2.0	GRCh37	cnv genotypes obtained using sequence data (imputation)
+JGAZ000000004	10	5	SAMPLE_PHENOTYPE	Phenotype table				

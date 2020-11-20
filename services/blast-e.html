@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLAST</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">BLAST</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/services">services</a>
+          </li>
+          <li>
+            <a href="">BLAST</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="program-">PROGRAM <a name="program"></a></h2>
+
+<p>Specify the search program from the followings.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>PROGRAM</th>
+      <th>query</th>
+      <th>Data Base</th>
+      <th>Description</th>
+      <th>　　　　　　</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>megablast</td>
+      <td>nucleotide</td>
+      <td>nucleotide</td>
+      <td>Aligning your nucleotide sequence with nucleotide sequence database.<br />When you want to perform a homology search with long length of nucleotide sequence, results are provided faster than blastn program.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><strong>blastn</strong></td>
+      <td>nucleotide</td>
+      <td>nucleotide</td>
+      <td>Aligning your nucleotide sequence with nucleotide sequence database.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>tblastn</td>
+      <td>amino acid</td>
+      <td>nucleotide</td>
+      <td>Aligning your amino acid sequence with nucleotide sequence database by translating database sequences taking into account all six possible open reading frames.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>tblastx</td>
+      <td>nucleotide</td>
+      <td>nucleotide</td>
+      <td>Aligning your nucleotide sequence with nucleotide sequence database by translating both sequences taking into account all six possible open reading frames.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>blastp</td>
+      <td>amino acid</td>
+      <td>amino acid</td>
+      <td>Aligning your amino acid sequence with amino acid seque nce database.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>blastx</td>
+      <td>nucleotide</td>
+      <td>amino acid</td>
+      <td>Aligning your nucleotide sequence with amino acid sequence database by translating your sequence taking into account all six possible open reading frames.</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="query-name-query-sequence-">Query name, Query sequence <a name="query"></a></h2>
+
+<ul>
+  <li>
+    <p>Please input your sequence(s) in FASTA format.</p>
+  </li>
+  <li>
+    <p>You can use either “File Upload” or fill the box directly.</p>
+  </li>
+  <li>
+    <p>For multiple query sequence, sequence names to distinguish each
+sequences are indispensable. Names beginning at “&gt;” should be
+placed on the first line of each sequence data (multi FASTA format).</p>
+  </li>
+  <li>
+    <p>If your query is one sequence, please enter the sequence. Attaching
+a sequence name is optional. A name beginning at “&gt;” can be
+attached at the first line.</p>
+  </li>
+</ul>
+
+<p>An example sequence in FASTA format</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;my query sequence 1
+CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
+GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
+GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
+</code></pre></div></div>
+
+<p>Example of multiple query sequence (multi FASTA format)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;my query sequence 1
+CACCCTCTCTTCACTGGAAAGGACACCATGAGCACGGAAAGCATGATCCAGGACGTGGAA
+GCTGGCCGAGGAGGCGCTCCCCAGGAAGACAGCAGGGCCCCAGGGCTCCAGGCGGTGCTG
+GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC
+&gt;my query sequence 2
+GGCCAGGGCACCCAGTCTGAGAACAGCTGCACCCGCTTCCCAGGCAACCTGCCTCACATG
+CTTCGAGACCTCCGAGATGCCTTCAGCAGAGTGAAGACTTTCTTTCAAATGAAGGATCAG
+CTGGACAACATATTGTTAAAGGAGTCCTTGCTGGAGGACTTTAAG
+&gt;my query sequence 3
+ATGGGTCTCACCTCCCAACTGCTTCCCCCTCTGTTCTTCCTGCTAGCATGTGCCGGCAAC
+TTTGCCCACGGACACAACTGCCATATCGCCTTACGGGAGATCATCGAAACTCTGAACAGC
+CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
+</code></pre></div></div>
+
+<div class="attention red">
+When your query size is too big (a large number of sequences, or each
+sequence is very long), the result might not be viewed in the web screen
+normally.  
+In such a case, please reduce the query size to send it at one time,
+decreasing the number of sequences or shortening the the sequence
+lengths.
+</div>
+
+<h2 id="data-sets-">Data Sets <a name="data sets"></a></h2>
+
+<h3 id="nucleotide-database-division-">Nucleotide (DATABASE, DIVISION) <a name="nucleotide"></a></h3>
+
+<h4 id="database-nucleotide-">DATABASE (Nucleotide) <a name="DATABASE_Nucleotide"></a></h4>
+
+<p>Select the target database.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>nucleotide database</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DDBJ ALL</td>
+      <td>DDBJ periodical release + daily updates</td>
+    </tr>
+    <tr>
+      <td>DDBJ New</td>
+      <td>DDBJ daily updates</td>
+    </tr>
+    <tr>
+      <td>16S rRNA</td>
+      <td>16S rRNA from DDBJ periodical release</td>
+    </tr>
+    <tr>
+      <td>RefSeq NA</td>
+      <td>RefSeq (Genomics + RNA)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="division-ddbj-allddbj-new-">DIVISION (DDBJ ALL/DDBJ New) <a name="DIVISION_DDBJ_ALL/DDBJ_New"></a></h4>
+
+<p>Check the divisions you would like to search. The following divisions
+are currently available. Default selection is 10 divisions of standard
+divisions (excl. SYN and ENV).<br />
+Especially for EST division, the following 21 listed organisms which
+were selectted based on the submitted-number’s statistics can be
+specified each other.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Standard divisions</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Human</td>
+      <td>HUM</td>
+      <td>human</td>
+    </tr>
+    <tr>
+      <td>Primates</td>
+      <td>PRI</td>
+      <td>primates other than human</td>
+    </tr>
+    <tr>
+      <td>Rodents</td>
+      <td>ROD</td>
+      <td>rodents</td>
+    </tr>
+    <tr>
+      <td>Mammals</td>
+      <td>MAM</td>
+      <td>mammals other than human, primates and rodents</td>
+    </tr>
+    <tr>
+      <td>Vertebrates</td>
+      <td>VRT</td>
+      <td>vertebrates other than human, primates, rodents and mammals</td>
+    </tr>
+    <tr>
+      <td>Invertebrates</td>
+      <td>INV</td>
+      <td>invertebrates</td>
+    </tr>
+    <tr>
+      <td>Plants</td>
+      <td>PLN</td>
+      <td>plants</td>
+    </tr>
+    <tr>
+      <td>Bacteria</td>
+      <td>BCT</td>
+      <td>bacteria</td>
+    </tr>
+    <tr>
+      <td>Viruses</td>
+      <td>VRL</td>
+      <td>viruses</td>
+    </tr>
+    <tr>
+      <td>Phages</td>
+      <td>PHG</td>
+      <td>phages</td>
+    </tr>
+    <tr>
+      <td>Synthetic DNAs</td>
+      <td>SYN</td>
+      <td>synthetic DNAs</td>
+    </tr>
+    <tr>
+      <td>ENV</td>
+      <td>ENV</td>
+      <td>environmental samples</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>High throughput divisions</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HTC</td>
+      <td>HTC</td>
+      <td>High Throughput cDNAs</td>
+    </tr>
+    <tr>
+      <td>HTG</td>
+      <td>HTG</td>
+      <td>High Throughput Genomic sequences</td>
+    </tr>
+    <tr>
+      <td>TSA</td>
+      <td>TSA</td>
+      <td>Transcriptome Shotgun Assembly</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>EST divisions</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A.thaliana</td>
+      <td><em>Arabidopsis thaliana</em> (thale cress)</td>
+    </tr>
+    <tr>
+      <td>B.taurus</td>
+      <td><em>Bos taurus</em> (cattle)</td>
+    </tr>
+    <tr>
+      <td>C.elegans</td>
+      <td><em>Caenorhabditis elegans</em> (nematode worm)</td>
+    </tr>
+    <tr>
+      <td>C.reinhardtii</td>
+      <td><em>Chlamydomonas reinhardtii</em> (Chlamydomonas:green algae)</td>
+    </tr>
+    <tr>
+      <td>C.intestinalis</td>
+      <td><em>Ciona intestinalis</em> (vase tunicate)</td>
+    </tr>
+    <tr>
+      <td>D.rerio</td>
+      <td><em>Danio rerio</em> (zebrafish)</td>
+    </tr>
+    <tr>
+      <td>D.discoideum</td>
+      <td><em>Dictyostelium discoideum</em> (soil-living amoeba)</td>
+    </tr>
+    <tr>
+      <td>D.melanogaster</td>
+      <td><em>D.melanogaster</em> (fruit fly)</td>
+    </tr>
+    <tr>
+      <td>G.gallus</td>
+      <td><em>Gallus gallus</em> (chicken)</td>
+    </tr>
+    <tr>
+      <td>G.max</td>
+      <td><em>Glycine max</em> (soybean)</td>
+    </tr>
+    <tr>
+      <td>H.sapiens</td>
+      <td><em>Homo sapiens</em> (human)</td>
+    </tr>
+    <tr>
+      <td>H.vulgare</td>
+      <td><em>Hordeum vulgare</em> (incl. subspecies)</td>
+    </tr>
+    <tr>
+      <td>M.truncatula</td>
+      <td><em>Medicago truncatula</em> (incl. mixed library)</td>
+    </tr>
+    <tr>
+      <td>M.musculus</td>
+      <td><em>Mus musculus</em> (Mouse)</td>
+    </tr>
+    <tr>
+      <td>O.sativa</td>
+      <td><em>Oryza sativa</em> (incl. subspecies rank)</td>
+    </tr>
+    <tr>
+      <td>R.norvegicus</td>
+      <td><em>Rattus norvegicus</em> (incl. Rattus sp.)</td>
+    </tr>
+    <tr>
+      <td>S.lycopersicum</td>
+      <td><em>Solanum lycopersicum</em> (tomato)</td>
+    </tr>
+    <tr>
+      <td>T.aestivum</td>
+      <td><em>Triticum aestivum</em> (bread wheat)</td>
+    </tr>
+    <tr>
+      <td>X.laevis</td>
+      <td><em>Xenopus laevis</em> (african clawed frog)</td>
+    </tr>
+    <tr>
+      <td>X.tropicalis</td>
+      <td><em>Xenopus tropicalis</em> (western clawed frog)</td>
+    </tr>
+    <tr>
+      <td>Z.mays</td>
+      <td><em>Zea mays</em> (maize)</td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>Others</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Other divisions</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Patent</td>
+      <td>PAT</td>
+      <td>patent</td>
+    </tr>
+    <tr>
+      <td>Unannotated Seq</td>
+      <td>UNA</td>
+      <td>unannotated sequences</td>
+    </tr>
+    <tr>
+      <td>GSS</td>
+      <td>GSS</td>
+      <td>genome survey sequences</td>
+    </tr>
+    <tr>
+      <td>STS</td>
+      <td>STS</td>
+      <td>sequence tagged sites</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="database-options-refseq-">Database Options (RefSeq) <a name="Database_Options_RefSeq"></a></h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Release（genomic/RNA)</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fungi</td>
+      <td>Fungi</td>
+    </tr>
+    <tr>
+      <td>Invertebrate</td>
+      <td>Invertebrate</td>
+    </tr>
+    <tr>
+      <td>Microbial</td>
+      <td>Microbial</td>
+    </tr>
+    <tr>
+      <td>Mitochondrion</td>
+      <td>Mitochondrion</td>
+    </tr>
+    <tr>
+      <td>Plant</td>
+      <td>Plant</td>
+    </tr>
+    <tr>
+      <td>Plasmid</td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Plastid</td>
+      <td>Plastid</td>
+    </tr>
+    <tr>
+      <td>Protozoa</td>
+      <td>Protozoa</td>
+    </tr>
+    <tr>
+      <td>Vertebrate Mammalian</td>
+      <td>Vertebrate Mammalian</td>
+    </tr>
+    <tr>
+      <td>Vertebrate Other</td>
+      <td>Vertebrate Other</td>
+    </tr>
+    <tr>
+      <td>Viral</td>
+      <td>Viral</td>
+    </tr>
+    <tr>
+      <td>Daily Updates</td>
+      <td>Daily Updates</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model（Genomic)</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>H. sapiens</td>
+      <td>human</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model（RNA)</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>B. taurus</td>
+      <td>cattle</td>
+    </tr>
+    <tr>
+      <td>D. rerio</td>
+      <td>zebrafish</td>
+    </tr>
+    <tr>
+      <td>H. sapiens</td>
+      <td>human</td>
+    </tr>
+    <tr>
+      <td>M. musculus</td>
+      <td>mouse</td>
+    </tr>
+    <tr>
+      <td>R. norvegicus</td>
+      <td>rat</td>
+    </tr>
+    <tr>
+      <td>X. tropicalis</td>
+      <td>western clawed frog</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="protein-amino-acid-">Protein (amino acid) <a name="protein"></a></h3>
+
+<h4 id="database-protein-">DATABASE (protein) <a name="DATABASE_protein"></a></h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Proterin Databases</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>UniProt (Swiss-Prot + TrEMBL)</td>
+      <td>Swiss-Prot + TrEMBL</td>
+    </tr>
+    <tr>
+      <td>UniProt (Swiss-Prot)</td>
+      <td>Swiss-Prot</td>
+    </tr>
+    <tr>
+      <td>UniProt (TrEMBL)</td>
+      <td>TrEMBL</td>
+    </tr>
+    <tr>
+      <td>Patent</td>
+      <td>amino acid patent data via JPO, EPO, USPTO and KIPO<br />（When you check the “Patent”, all 4 boxes (JPO, KIPO, USPTO, EPO) was checked.<br />If you would like to select each other, remove the unnecessary marks.)</td>
+    </tr>
+    <tr>
+      <td>DAD (periodical release + daily updates)</td>
+      <td>DAD periodical release + daily updates</td>
+    </tr>
+    <tr>
+      <td>DAD (daily updates)</td>
+      <td>DAD daily updates</td>
+    </tr>
+    <tr>
+      <td>RefSeq AA</td>
+      <td>Refseq(Protein)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="tablecaption"><span class="red">*</span> Please check the current version is from <a href="/latest-releases-e.html">here.</a></p>
+
+<h4 id="divisiondad-">DIVISION(DAD) <a name="DIVISIONDAD"></a></h4>
+
+<p>Check the divisions you would like to search. The following divisions
+are currently available. Defauls selection is 10 divisions of standard
+divisions (excl. SYN and ENV). Especially for EST division, the
+following 21 listed organisms which were selectted based on the
+submitted-number’s statistics can be specified each other.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Standard divisions</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Human</td>
+      <td>HUM</td>
+      <td>human</td>
+    </tr>
+    <tr>
+      <td>Primates</td>
+      <td>PRI</td>
+      <td>primates other than human</td>
+    </tr>
+    <tr>
+      <td>Rodents</td>
+      <td>ROD</td>
+      <td>rodents</td>
+    </tr>
+    <tr>
+      <td>Mammals</td>
+      <td>MAM</td>
+      <td>mammals other than human，primates and rodents</td>
+    </tr>
+    <tr>
+      <td>Vertebrates</td>
+      <td>VRT</td>
+      <td>vertebrates other than human，primates, rodents and mammals</td>
+    </tr>
+    <tr>
+      <td>Invertebrates</td>
+      <td>INV</td>
+      <td>invertebrates</td>
+    </tr>
+    <tr>
+      <td>Plants</td>
+      <td>PLN</td>
+      <td>plants</td>
+    </tr>
+    <tr>
+      <td>Bacteria</td>
+      <td>BCT</td>
+      <td>bacteria</td>
+    </tr>
+    <tr>
+      <td>Viruses</td>
+      <td>VRL</td>
+      <td>viruses</td>
+    </tr>
+    <tr>
+      <td>Phages</td>
+      <td>PHG</td>
+      <td>phages</td>
+    </tr>
+    <tr>
+      <td>Synthetic DNAs</td>
+      <td>SYN</td>
+      <td>synthetic DNAs</td>
+    </tr>
+    <tr>
+      <td>ENV</td>
+      <td>ENV</td>
+      <td>environmental samples</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>High throughput divisions</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HTC</td>
+      <td>HTC</td>
+      <td>High Throughput cDNAs</td>
+    </tr>
+    <tr>
+      <td>HTG</td>
+      <td>HTG</td>
+      <td>High Throughput Genomic sequences</td>
+    </tr>
+    <tr>
+      <td>TSA</td>
+      <td>TSA</td>
+      <td>Transcriptome Shotgun Assembly</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>EST divisions</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A.thaliana</td>
+      <td><em>Arabidopsis thaliana</em> (thale cress)</td>
+    </tr>
+    <tr>
+      <td>B.taurus</td>
+      <td><em>Bos taurus</em> （cattle）</td>
+    </tr>
+    <tr>
+      <td>C.elegans</td>
+      <td><em>Caenorhabditis elegans</em> (nematode worm)</td>
+    </tr>
+    <tr>
+      <td>C.reinhardtii</td>
+      <td><em>Chlamydomonas reinhardtii</em> (Chlamydomonas:green algae)</td>
+    </tr>
+    <tr>
+      <td>C.intestinalis</td>
+      <td><em>Ciona intestinalis</em> (vase tunicate)</td>
+    </tr>
+    <tr>
+      <td>D.rerio</td>
+      <td><em>Danio rerio</em> (zebrafish)</td>
+    </tr>
+    <tr>
+      <td>D.discoideum</td>
+      <td><em>Dictyostelium discoideum</em> (soil-living amoeba)</td>
+    </tr>
+    <tr>
+      <td>D.melanogaster</td>
+      <td><em>D.melanogaster</em> (fruit fly)</td>
+    </tr>
+    <tr>
+      <td>G.gallus</td>
+      <td><em>Gallus gallus</em> (chicken)</td>
+    </tr>
+    <tr>
+      <td>G.max</td>
+      <td><em>Glycine max</em> (soybean)</td>
+    </tr>
+    <tr>
+      <td>H.sapiens</td>
+      <td><em>Homo sapiens</em> (human)</td>
+    </tr>
+    <tr>
+      <td>H.vulgare</td>
+      <td><em>Hordeum vulgare</em> (Barley incl. subspecies)</td>
+    </tr>
+    <tr>
+      <td>M.truncatula</td>
+      <td><em>Medicago truncatula</em>(Barrel Medic incl. mixed library)</td>
+    </tr>
+    <tr>
+      <td>M.musculus</td>
+      <td><em>Mus musculus</em> (Mouse)</td>
+    </tr>
+    <tr>
+      <td>O.sativa</td>
+      <td><em>Oryza sativa</em> (incl. subspecies rank)</td>
+    </tr>
+    <tr>
+      <td>R.norvegicus</td>
+      <td><em>Rattus norvegicus</em> (Rat incl. Rattus sp.)</td>
+    </tr>
+    <tr>
+      <td>S.lycopersicum</td>
+      <td><em>Solanum lycopersicum</em> (tomato)</td>
+    </tr>
+    <tr>
+      <td>T.aestivum</td>
+      <td><em>Triticum aestivum</em> (bread wheat)</td>
+    </tr>
+    <tr>
+      <td>X.laevis</td>
+      <td><em>Xenopus laevis</em> (african clawed frog)</td>
+    </tr>
+    <tr>
+      <td>X.tropicalis</td>
+      <td><em>Xenopus laevis</em> (african clawed frog)</td>
+    </tr>
+    <tr>
+      <td>Z.mays</td>
+      <td><em>Zea mays</em> (maize)</td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>Others</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Other divisions</th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Patent</td>
+      <td>PAT</td>
+      <td>patent</td>
+    </tr>
+    <tr>
+      <td>Unannotated Seq</td>
+      <td>UNA</td>
+      <td>unannotated sequences</td>
+    </tr>
+    <tr>
+      <td>GSS</td>
+      <td>GSS</td>
+      <td>genome survey sequences</td>
+    </tr>
+    <tr>
+      <td>STS</td>
+      <td>STS</td>
+      <td>sequence tagged sites</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="database-option-refseq-">DATABASE option (RefSeq) <a name="DATABASE_option_RefSeq"></a></h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Release（Protein)</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fungi</td>
+      <td>Fungi</td>
+    </tr>
+    <tr>
+      <td>Invertebrate</td>
+      <td>Invertebrate</td>
+    </tr>
+    <tr>
+      <td>Microbial</td>
+      <td>Microbial</td>
+    </tr>
+    <tr>
+      <td>Mitochondrion</td>
+      <td>Mitochondrion</td>
+    </tr>
+    <tr>
+      <td>Plant</td>
+      <td>Plant</td>
+    </tr>
+    <tr>
+      <td>Plasmid</td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Plastid</td>
+      <td>Plastid</td>
+    </tr>
+    <tr>
+      <td>Protozoa</td>
+      <td>Protozoa</td>
+    </tr>
+    <tr>
+      <td>Vertebrate Mammalian</td>
+      <td>Vertebrate Mammalian</td>
+    </tr>
+    <tr>
+      <td>Vertebrate Other</td>
+      <td>Vertebrate Other</td>
+    </tr>
+    <tr>
+      <td>Viral</td>
+      <td>Viral</td>
+    </tr>
+    <tr>
+      <td>Daily Updates</td>
+      <td>Daily Updates</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model（Genomic)</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>H. sapiens</td>
+      <td>human</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model（Protain)</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>B. taurus</td>
+      <td>cattle</td>
+    </tr>
+    <tr>
+      <td>D. rerio</td>
+      <td>zebrafish</td>
+    </tr>
+    <tr>
+      <td>H. sapiens</td>
+      <td>human</td>
+    </tr>
+    <tr>
+      <td>M. musculus</td>
+      <td>mouse</td>
+    </tr>
+    <tr>
+      <td>R. norvegicus</td>
+      <td>rat</td>
+    </tr>
+    <tr>
+      <td>X. tropicalis</td>
+      <td>western clawed frog</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="optional-parameters-">Optional Parameters <a name="parameters"></a></h2>
+
+<h3 id="scores-">SCORES <a name="scores"></a></h3>
+
+<p>Specify how many homologous sequences are reported in list of homology
+scores. Default value is 100.<br />
+When you can not find some expected data in the result of BLAST search,
+it is possibly improved by using larger value for this parameter.</p>
+
+<h3 id="alignments-">ALIGNMENTS <a name="alignments"></a></h3>
+
+<p>Specify how many alignments with homologous sequences are reported.<br />
+Default value is 100.<br />
+When you can not find some expected data in the result of BLAST search,
+it is possibly improved by using larger value for this parameter.</p>
+
+<h3 id="expect-value-e-value-">EXPECT value (E-value) <a name="expect value"></a></h3>
+
+<p>Specify the E-value of homologous sequences in the database. Default
+value is 10. If you need to get more sequences with lower homology
+score, increase the “expect value”. If you need only sequences with very
+high homology scores, decrease the value.<br />
+It is possible to specify it by the exponent notation. (ex: 1.0E+1)</p>
+
+<h3 id="scoring-matrix-">SCORING MATRIX <a name="scoring matrix"></a></h3>
+
+<p>Specify the scoring matrix table for blastx, blastp and tblastn and
+tblastx.<br />
+The default matrix is BLOSUM62.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>PAM30</td>
+      <td>PAM30 substitution matrix</td>
+    </tr>
+    <tr>
+      <td>PAM70</td>
+      <td>PAM70 substitution matrix</td>
+    </tr>
+    <tr>
+      <td>PAM250</td>
+      <td>PAM250 substitution matrix</td>
+    </tr>
+    <tr>
+      <td>BLOSUM45</td>
+      <td>BLOSUM Clustered Scoring Matrix</td>
+    </tr>
+    <tr>
+      <td>BLOSUM50</td>
+      <td>BLOSUM Clustered Scoring Matrix</td>
+    </tr>
+    <tr>
+      <td>BLOSUM62</td>
+      <td>BLOSUM Clustered Scoring Matrix</td>
+    </tr>
+    <tr>
+      <td>BLOSUM80</td>
+      <td>BLOSUM Clustered Scoring Matrix</td>
+    </tr>
+    <tr>
+      <td>BLOSUM90</td>
+      <td>BLOSUM Clustered Scoring Matrix</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="filter-">FILTER <a name="filter"></a></h3>
+
+<p>Specify to preform filtering (masking) of the query sequence. Default
+setting of this option is “ON” (filtering is set). By using filtering,
+low compositional complexity regions in your query sequence are
+ignored.<br />
+For example, proline-rich regions and poly-A tails have a tendency to
+coincide with an unusually high score. Although statistically
+significant, such results usually reflect the structural uniqueness of
+these regions and are unlikely to be biologically significant.<br />
+The query sequence is filtered by the computer program DUST of Tatusov
+and Lipman in BLASTN, and by SEG of Wootton and Federhen otherwise. Low
+compositional complexity regions ignored by filtering are replaced by
+“N”s in the nucleotide sequence and by “X”s in the amino acid sequence.</p>
+
+<h3 id="word-size-">WORD SIZE <a name="word size"></a></h3>
+
+<p>Specify a natural number. Default values are 28 for megablast, 11 for
+blastn, and 3 for the other programs.</p>
+
+<h2 id="request-id-and-blast-result-">Request ID and BLAST result <a name="result"></a></h2>
+
+<h3 id="request-id-">Request ID <a name="request id"></a></h3>
+
+<p>After pressing the “Send to BLAST” button, Request ID is displayed on
+the web screen. Don’t loose this ID because it is necessary for using
+the “Result Viewer” and/or inquiring to DDBJ for your search.</p>
+
+<p>Request ID:wabi_blast_2013-0314-1407-23-16-946732</p>
+
+<p><img src="/assets/images/help/blast_help_01-e.gif" alt="" title="blast_requestID" /></p>
+
+<h3 id="information-contained-in-the-result-screen-">Information contained in the result screen <a name="result screen"></a></h3>
+
+<p><img src="/assets/images/help/blast_help_02-e.gif" alt="" title="Information contained in the result screen" /></p>
+
+<h3 id="view-the-flatfile-of-the-entries-">View the flatfile of the entries <a name="view flatfile"></a></h3>
+
+<p>Select the accession numbers, and prres the “getentry”button. You can
+view the flatfile of the sequences in the getentry.</p>
+
+<p><img src="/assets/images/help/blast_help_03-e.gif" alt="" title="View the flatfile of the entries" /></p>
+
+<h3 id="result-viewer-">Result Viewer <a name="result viewer"></a></h3>
+
+<p>You can view your result using “Request ID” at any time (within the
+retention period).<br />
+The results will be deleted after 7 days.</p>
+
+<p><img src="/assets/images/help/blast_help_04-e.gif" alt="" title="Result Viewer" /></p>
+
+<h2 id="clustalw-set-up-">ClustalW Set up <a name="setup"></a></h2>
+
+<p>Select the sequences which you would like to suceed the clustalW, then
+press the “ClustalW” button. Your selected sequences are automatically
+pasted in the ClustalW query box.</p>
+
+<ol>
+  <li><img src="/assets/images/help/blast_help_05-e.gif" alt="ClustalW Set up（１）" /></li>
+  <li><img src="/assets/images/help/blast_help_06-e.gif" alt="ClustalW Set up（2）" /></li>
+</ol>
+
+<h2 id="reference-">Reference <a name="reference"></a></h2>
+
+<h3 id="original-articles-">Original Articles <a name="original_articles"></a></h3>
+
+<ul>
+  <li>Altschul SF, Madden TL, Schaffer AA, Zhang J, Zhang Z, Miller W,
+Lipman DJ. (1997) <a href="//nar.oxfordjournals.org/content/25/17/3389.short">Gapped BLAST and PSI-BLAST: a new generation of
+protein database search
+programs.</a>
+Nucleic Acids Res. 25(17):3389-3402.</li>
+</ul>
+
+<h3 id="related-articles-">Related Articles <a name="related_articles"></a></h3>
+
+<ul>
+  <li>Zhang J, Madden TL. (1997) <a href="//genome.cshlp.org/content/7/6/649.full?sid=53d7f440-e944-4873-9c3f-768c56705bcc">PowerBLAST: A New Network BLAST
+Application for Interactive or Automated Sequence Analysis and
+Annotation.</a>
+Genome Res.7(6):649-656.</li>
+  <li>Madden TL, Tatusov RL, Zhang J. (1996) Applications of network BLAST
+server. Methods Enzymol. 266:131-141.</li>
+  <li>Gish W, States DJ. (1993) <a href="//www.nature.com/ng/journal/v3/n3/abs/ng0393-266.html">Identification of protein coding regions
+by database similarity
+search.</a> Nat
+Genet. 3(3):266-272.</li>
+  <li>Altschul SF, Gish W, Miller W, Myers EW, Lipman DJ. (1990) Basic
+local alignment search tool. J Mol Biol. 215(3):403-10.</li>
+  <li>Karlin S, Altschul SF. (1990) <a href="//www.pnas.org/content/87/6/2264.short">Methods for assessing the statistical
+significance of molecular sequence features by using general scoring
+schemes.</a> Proc Natl Acad Sci
+U S A. 87(6):2264-2268.</li>
+</ul>
+
+<h3 id="book-">BOOK <a name="#reference_list"></a></h3>
+
+<ul>
+  <li>[BLAST] Ian Korf, Mark Yandell and Joseph Bedell, OREILLY</li>
+</ul>
+
+      </div>
+      
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              
+              <li>
+                <a href="/services/arsa-e.html">ARSA Help</a>
+              </li>
+              
+              <li>
+                <a href="/services/getentry-e.html">getentry Help</a>
+              </li>
+              
+              <li>
+                <a href="/services/txsearch-e.html">TXSearch Help</a>
+              </li>
+              
+              <li>
+                <a href="/services/clustalw-e.html">ClustalW Help</a>
+              </li>
+              
+              <li>
+                <a href="/services/vecscreen-e.html">VecScreen Help</a>
+              </li>
+              
+              <li>
+                <a href="/services/references-e.html">References</a>
+              </li>
+              
+              <li>
+                <a href="/services/past-services-e.html">Services in past</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-e.html">WABI (Web API for Biology)</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-blast-e.html">WABI BLAST Help</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

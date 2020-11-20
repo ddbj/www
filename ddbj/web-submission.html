@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web版塩基配列登録システム (NSSS)</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">Web版塩基配列登録システム (NSSS)</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/ddbj">ddbj</a>
+          </li>
+          <li>
+            <a href="">Web版塩基配列登録システム (NSSS)</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/ddbj/index.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/submission.html">Submission</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/submission.html">塩基配列の登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/web-submission.html">Web 版塩基配列登録システム</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/mss.html">Mass Submission System</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/update.html">登録データの修正・更新</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="http://ddbj.nig.ac.jp/arsa/?lang=ja">Search</a>
+      
+      <ul>
+        
+        <li>
+          <a href="http://getentry.ddbj.nig.ac.jp/top-j.html">getentry</a>
+        </li>
+        
+        <li>
+          <a href="http://ddbj.nig.ac.jp/arsa/?lang=ja">ARSA</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/flat-file.html">Flat file</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/features.html">Feature key の定義</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/qualifiers.html">Qualifier key の定義</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/organism.html">Organism qualifier に記載する生物名</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/location.html">Location の記述法</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/cds.html">タンパク質コード配列</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/geneticcode.html">The Genetic Codes</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/code.html">配列の記載に用いる略号</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/example.html">登録の見本</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/data-categories.html">Data categories</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/genome.html">Genome project のデータ登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/pseudohaplotype.html">Pseudohaplotype</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/wgs.html">WGS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/metagenome-assembly.html">メタゲノムアセンブリ</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/single-amplified-genome.html">Single amplified genome</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/con.html">CON</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/gss.html">GSS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/htg.html">HTG</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/environmental.html">Environmental sequence の登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/env.html">ENV</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tls.html">TLS</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/transcriptome.html">Transcriptome Project のデータ登録</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tsa.html">TSA</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/est.html">EST</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/htc.html">HTC</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/tpa.html">Third Party Data (TPA)</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/ja/index.html">FAQ</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/ddbj/index-e.html">Other</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/ddbj/patent-data.html">Patent</a>
+        </li>
+        
+        <li>
+          <a href="/ddbj/mga.html">MGA</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <div class="attention">
+
+  <p><span class="red">ヒトを対象とした研究データの登録について</span></p>
+
+  <p>ヒトを対象とした全ての研究において DDBJ に送付するデータの由来である個人 (研究対象者)の尊厳及び人権は、適用されるべき法律、規定、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。<br />
+原則として、研究対象者を直接特定し得る参照情報は、登録データから取り除いてください。<br />
+ヒトを対象とした研究データを登録する場合は<a href="/policies.html#human">「ヒトを対象とした研究データの登録について」</a>をご覧ください。</p>
+
+</div>
+
+<h2 id="web-版塩基配列登録システム-">Web 版塩基配列登録システム <a name="Web_版塩基配列登録システム"></a></h2>
+
+<p>Web 版塩基配列登録システム（DDBJ Nucleotide Sequence Submission System）は、アノテーションをつけた塩基配列を Web 経由で登録できるシステムです。</p>
+
+<h3 id="入力ガイド">入力ガイド</h3>
+
+<div class="nsss-menu">
+
+  <div class="nsss-icon">
+
+    <p><a href="/assets/files/pdf/ddbj/websubHelp_full-j.pdf"><img src="/assets/images/parts/pdf_icon.svg" alt="" /></a></p>
+
+    <p><a href="/assets/files/pdf/ddbj/websubHelp_full-j.pdf">マニュアル</a></p>
+
+  </div>
+
+  <div class="nsss-icon">
+
+    <p><a href="https://youtu.be/JTCV7bG_KJc"><img src="/assets/images/parts/youtube_icon.svg" alt="" /></a></p>
+
+    <p><a href="https://youtu.be/JTCV7bG_KJc">NSSS の紹介</a></p>
+
+  </div>
+
+  <div class="nsss-icon">
+
+    <p><a href="https://drive.google.com/file/d/1KnEVC--SFglqdENRGLMehFP9NuQXyVrt"><img src="/assets/images/parts/gdrive.svg" alt="" /></a></p>
+
+    <p><a href="https://drive.google.com/file/d/1KnEVC--SFglqdENRGLMehFP9NuQXyVrt">NSSS の紹介</a></p>
+
+  </div>
+
+  <div class="nsss-icon">
+
+    <p><a href="/ddbj/web-submission-help.html"><img src="/assets/images/parts/info_icon.svg" alt="" /></a></p>
+
+    <p><a href="/ddbj/web-submission-help.html">NSSS HELP</a></p>
+
+  </div>
+
+</div>
+
+<dl>
+  <dt>新規登録を開始する</dt>
+  <dd>初めて登録する場合には「<a href="/ddbj/submission.html">塩基配列の登録</a>」,「<a href="data-categories.html">登録データ種別</a>」について ご一読ください。</dd>
+  <dd>１度に登録可能なエントリ数は 1024件までです(最大数はPC環境や配列長に依存します)。</dd>
+  <dd>本ツールで<a href="/ddbj/tpa.html">TPA データ</a>の登録も可能です。</dd>
+  <dd>登録する配列から vector 由来の配列を除いてください。<a href="http://ddbj.nig.ac.jp/vecscreen/">VecScreen</a>で確認できます。</dd>
+  <dd>右サイドバーの「Related pages」もご参照ください。</dd>
+  <dd>次のいずれかに該当する時には <a href="/ddbj/mss.html">MSS</a> をご利用ください。
+    <ul>
+      <li>配列が長い(目安は 500 kb 以上)</li>
+      <li>エントリあたりに多数(概ね30以上)のFeature がある</li>
+      <li><a href="/ddbj/wgs.html">WGS</a>, <a href="/ddbj/con.html">CON</a>,<a href="/ddbj/tsa.html">TSA</a>, <a href="/ddbj/tls.html">TLS</a>,<a href="/ddbj/htc.html">HTC</a>, <a href="/ddbj/htg.html">HTG</a>,<a href="/ddbj/est.html">EST</a>, <a href="/ddbj/gss.html">GSS</a>, STS の登録</li>
+    </ul>
+  </dd>
+  <dt>登録を再開する</dt>
+  <dd>ブックマークから submission を再開できます。</dd>
+  <dt>推奨するブラウザ</dt>
+  <dd><a href="https://www.mozilla.org/ja/firefox/all/">Firefox</a> または <a href="https://www.google.com/chrome/browser/desktop/index.html">Chrome</a> の使用を推奨します。Windows 10 の Microsoft Edge では動作いたしません。</dd>
+</dl>
+
+<h3 id="登録データの更新お問い合わせ">登録データの更新・お問い合わせ</h3>
+
+<ul>
+  <li>Web版塩基配列登録システム では新規に登録するデータのみを受け付けております。修正用のデータを送らない でください。<br />
+アクセッション番号を取得済のデータの修正については「<a href="/ddbj/update.html">登録データの修正・更新</a>」をご覧ください。</li>
+  <li>入力途中でのトラブルは、”Submission ID” とともに、<a href="/contact-ddbj.html">「お問い合わせフォーム」</a>よりご連絡ください。</li>
+</ul>
+
+<div class="start-button">
+
+  <p><strong><a href="https://ddbj.nig.ac.jp/submission">新規登録の開始</a></strong><br />
+次ページで <strong>[Create new submission]</strong> をクリックしてください。</p>
+
+</div>
+
+      </div>
+      
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              
+              <li>
+                <a href="/ddbj/web-submission-help.html">DDBJ 塩基配列登録システム HELP</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/submission.html">塩基配列の登録</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/example.html">登録の見本</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/features.html">Feature key</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/qualifiers.html">Qualifier key</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/organism.html">Organism qualifier に記載する生物名</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/cds.html">タンパク質コード配列; CDS feature について</a>
+              </li>
+              
+              <li>
+                <a href="/ddbj/location.html">Location の記述法</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

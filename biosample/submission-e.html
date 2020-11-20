@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDBJ BioSample Handbook</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">DDBJ BioSample Handbook</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/biosample">biosample</a>
+          </li>
+          <li>
+            <a href="">DDBJ BioSample Handbook</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/biosample/index-e.html">Home</a>
+      
+    </li>
+    
+    <li class="">
+      <a href="/biosample/submission-e.html">Handbook</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/biosample/attribute-e.html">Sample Attribute</a>
+      
+      <ul>
+        
+        <li>
+          <a href="https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482">Example files</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/biosample/validation-e.html">Validation Rules</a>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/en/index-e.html">FAQ</a>
+      
+    </li>
+    
+    <li class="">
+      <a href="http://ddbj.nig.ac.jp/BSSearch/">Search</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/biosample">Downloads</a>
+      
+      <ul>
+        
+        <li>
+          <a href="https://github.com/ddbj/pub/tree/master/docs/biosample/xsd">XML Schema</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/biosample/about-biosample-e.html">About BioProject</a>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="overview-">Overview <a name="overview"></a></h2>
+
+<h3 id="purpose-">Purpose <a name="purpose"></a></h3>
+
+<p><a href="/biosample/index-e.html">The BioSample database</a>was developed to serve as a central location in which to store descriptive information about biological samples used to generate experimental data in any of primary data archives.</p>
+
+<p>Following figure depicts how BioSample records are organized and linked with other objects. This example is composed of one umbrella project that encompasses three subprojects, each of which generated data derived from two BioSample records. Users can query either the BioProject or the BioSample database to retrieve the relevant records, and then navigate through links to the corresponding experimental data which continue to be stored in DDBJ’s primary data archives, <a href="/ddbj/index-e.html">DDBJ</a>, <a href="/dra/index-e.html">DRA</a> and <a href="/dor/index-e.html">DOR</a>.</p>
+
+<a class="group1" href="/assets/images/submission/biosample_integration.jpg" title="Overview of BioSample and BioProject integration with other DDBJ databases">
+  <figure class="image">
+    <img src="/assets/images/submission/biosample_integration.jpg" alt="Overview of BioSample and BioProject integration with other DDBJ databases" class="w450">
+    <figcaption>Overview of BioSample and BioProject integration with other DDBJ databases</figcaption>
+  </figure>
+</a>
+
+<h3 id="sample-">Sample <a name="sample"></a></h3>
+
+<p>Given the huge diversity of sample types handled by archival databases, and the fact that appropriate sample descriptions are often dependent on the context of the study, the definition of what a BioSample represents is deliberately flexible. Typical examples of a BioSample include a cell line, a primary tissue biopsy, an individual organism or an environmental isolate.</p>
+
+<p>Biological and technical replicates are represented by separate BioSamples with distinct ‘replicate’ attribute, e.g., ‘biological replicate 1’ and ‘biological replicate 2’. <a href="/faq/en/samples-for-sra">FAQ: How many samples do I need for my DRA submission?</a></p>
+
+<p>Information about the sample will include:</p>
+
+<ul>
+  <li>Species</li>
+  <li>The material sampled, e.g., organs, tissues, cell type</li>
+  <li>Phenotypic information including disease states and clinical information about the individual</li>
+</ul>
+
+<p>The information about human subjects and access to it will be compliant with all relevant ethical requirements. The DDBJ BioSample database does not support controlled access mechanisms and thus cannot host human clinical samples that may have associated privacy concerns.</p>
+
+<h3 id="reference-biosamples-">Reference biosamples <a name="reference-biosamples"></a></h3>
+
+<p>A particular set of biosamples submitted to BioSample databases directly may be referenced subsequently from many experiments. We will refer to this set of samples as <em>reference biosamples</em>. Example of these may be some commonly used cell lines or mouse strains. The BioSample pre-registered commonly-used samples and make it easy to reference these from other databases at INSDC. Reference biosamples include <a href="http://www.atcc.org/">ATCC</a> and <a href="http://ccr.coriell.org/">Coriell</a>.</p>
+
+<h3 id="sample-attributes-">Sample attributes <a name="sample-attributes"></a></h3>
+
+<p>A major component of a BioSample record is the sample attributes section. Attributes define the material under investigation and can include sample characteristics such as cell type, collection site and phenotypic information like disease state.</p>
+
+<p>BioSample attributes are captured as structured name: value pairs, for example, tissue:liver</p>
+
+<p>The database supports and encourages use of dictionaries of attribute names.</p>
+
+<p>The first targeted dictionaries implemented in the DDBJ BioSample database are the <a href="http://wiki.gensc.org/index.php?title=MIxS">MIxS</a> minimum information checklists for standardizing descriptions of genomes, metagenomes and targeted locus sequences as recently developed by the <a href="http://wiki.gensc.org/index.php?title=Main_Page">Genomics Standards Consortium</a>.</p>
+
+<p>For the MIxS check lists, please see Nature Biotechnology 29, 415–420 (2011) | doi: 10.1038/nbt.1823 (PMID:<a href="https://www.ncbi.nlm.nih.gov/pubmed/21552244">21552244</a> ).</p>
+
+<a class="group1" href="/assets/images/books/mixs.jpg" title="MIxS check list">
+  <figure class="image">
+    <img src="/assets/images/books/mixs.jpg" alt="MIxS check list" class="w450">
+    <figcaption>MIxS check list</figcaption>
+  </figure>
+</a>
+
+<h3 id="organism-">Organism <a name="organism"></a></h3>
+
+<p>For an organism name of the BioSample <a href="/biosample/attribute-e.html?all=all#organism">organism</a> attribute, see the <a href="/ddbj/organism-e.html">“Organism name”</a> page. Previously, a strain name or some other lower taxon was required for the organism name of whole genomic sequence, mainly microorganisms. However, currently, the value of organism qualifier should be just a scientific name, in principle, even though for microbial genomes. Please describe a strain name in the <a href="/biosample/attribute-e.html?all=all#strain">strain</a> attribute of BioSample.</p>
+
+<p>Related news: <a href="/news/en/2013-12-13-e.html">Changes in organism strain information management</a></p>
+
+<h3 id="antibiogram-">Antibiogram <a name="antibiogram"></a></h3>
+
+<p>An antibiogram table can be included in a BioSample record (Example: <a href="https://www.ncbi.nlm.nih.gov/biosample/SAMN07958491">SAMN07958491</a>). To submit the table, please contact <a href="/contact-ddbj-e.html">BioSample team</a>.</p>
+
+<p>For the antibiogram submission guidelines, please see the NCBI BioSample pages.</p>
+
+<ul>
+  <li><a href="https://www.ncbi.nlm.nih.gov/biosample/docs/beta-lactamase/">Antibiograms - beta-lactamase MIC</a></li>
+  <li><a href="https://www.ncbi.nlm.nih.gov/biosample/docs/antibiogram/">Antibiograms - pathogen MIC</a></li>
+  <li><a href="https://www.ncbi.nlm.nih.gov/biosample/docs/antibiogram-myco/">Antibiograms - mycobacterial non-MIC</a></li>
+</ul>
+
+<h3 id="xml-schema-">XML schema <a name="xml-schema"></a></h3>
+
+<p><a href="https://github.com/ddbj/pub/tree/master/docs/biosample">BioSample XML schema</a></p>
+
+<h2 id="metadata-">Metadata <a name="metadata"></a></h2>
+
+<p>Required<span class="red">*</span><br />
+Conditionally required<span class="conditionally_required">*</span></p>
+
+<h3 id="submitter-">Submitter <a name="Submitter"></a></h3>
+
+<h4 id="submitter--1">Submitter <a name="Area_biosample-submitter"></a></h4>
+
+<p>Contact information of submitter(s). Questions and notifications about a submission are contacted to the e-mail address(es) listed here. Personal contact information is considered confidential and is collected to be used by DDBJ staff should questions arise; the general information about the research center is used for public display.</p>
+
+<dl>
+  <dt><a href="#BioSample_First_name">First name</a><span class="red">*</span><a name="BioSample_First_name"></a></dt>
+  <dd>Submitter’s first name.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioSample_Last_name">Last name</a><span class="red">*</span><a name="BioSample_Last_name"></a></dt>
+  <dd>Submitter’s last name.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioSample_E-mail">E-mail</a><span class="red">*</span><a name="BioSample_E-mail"></a></dt>
+  <dd>E-mail address. Enter an address from the organizations domain.</dd>
+</dl>
+
+<h4 id="organization-">Organization <a name="Area_biosample-organization"></a></h4>
+
+<dl>
+  <dt><a href="#Organization">Organization</a><a name="Organization"></a></dt>
+  <dd>Organization to which a contact person belongs.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioSample_Submitting_organization">Submitting organization</a><span class="red">*</span><a name="BioSample_Submitting_organization"></a></dt>
+  <dd>Full name of organization.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioSample_Submitting_organization_URL">Submitting organization URL</a><a name="BioSample_Submitting_organization_URL"></a></dt>
+  <dd>The URL of submitter’s organization.</dd>
+</dl>
+
+<h4 id="data-release-">Data Release <a name="Area_biosample-data-release"></a></h4>
+
+<p>Select “Hold” or “Release”. You cannot specify hold date. Please see <a href="#sample-release">Data Release</a> for detailed release mechanism.</p>
+
+<dl>
+  <dt><a href="#BioSample_Release">Release</a><a name="BioSample_Release"></a></dt>
+  <dd>Submitted BioSample record will be released immediately after the curation process finishes.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioSample_Hold">Hold</a><a name="BioSample_Hold"></a></dt>
+  <dd>Submitted BioSample record is released when the DDBJ, DRA and DTA record(s) referencing this BioSample ID is released. Private DDBJ record(s) referencing this BioSample ID is not released.</dd>
+</dl>
+
+<h3 id="general-info-">General info <a name="General-info"></a></h3>
+
+<dl>
+  <dt><a href="#Link">External Links</a><a name="Link"></a></dt>
+  <dd>An URL may be provided, with a label for the resource, to reference a resource that is directly relevant to the submitted sample.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Link_description">Link description</a><a name="Link_description"></a></dt>
+  <dd>Display name of web site that is related to this sample.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioSample_URL">URL</a><a name="BioSample_URL"></a></dt>
+  <dd>URL of the web site.</dd>
+</dl>
+
+<h3 id="sample-type-">Sample type <a name="Sample-type"></a></h3>
+
+<h4 id="core-package-">Core Package <a name="Area_core-package"></a></h4>
+
+<dl>
+  <dt><a href="#MIxS_Sample">Genome, metagenome or marker sequences (MIxS compliant)</a><a name="MIxS_Sample"></a></dt>
+  <dd>Use for genomes, metagenomes, and marker sequences. These samples include specific attributes that have been defined by the Genome Standards Consortium (GSC) to formally describe and standardize sample metadata for genomes, metagenomes, and marker sequences. The samples are validated for compliance based on the presence of the required core attributes as described in <a href="http://wiki.gensc.org/index.php?title=MIxS">MIxS</a>. For details, please see <a href="http://wiki.gensc.org/index.php?title=MIxS">the GSC websites</a>.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#functional_genomics_samples">Functional genomics samples (e.g. transcriptome, epigenetics etc)</a><a name="functional_genomics_samples"></a></dt>
+  <dd>Use for submission to <a href="/gea/index-e.html">Genomic Expression Archive (GEA)</a> which accepts functional genomics experiments that examine gene expression, regulation, epigenetics or genome variation. These sample attributes consist of frequently used ones in functional genomics experiments.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#General_Sample">Other samples (e.g. transcriptome, epigenetics etc)</a><a name="General_Sample"></a></dt>
+  <dd>Use for any sample type (e.g. transcriptome, epigenetics etc). These samples are described using common core attributes and submitter-supplied custom attributes.</dd>
+</dl>
+
+<h4 id="mixs-">MIxS <a name="Area_mixs"></a></h4>
+
+<dl>
+  <dt><a href="#Meta_Genomic_Sequences_Sample">(Meta)Genomic Sequences Sample (MIMS)</a><a name="Meta_Genomic_Sequences_Sample"></a></dt>
+  <dd>
+    <table>
+      <tbody>
+        <tr>
+          <td>Environmental/Metagenome Genomic Sequences</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Please refer to <a href="/ddbj/env-e.html">environmental samples</a>.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Genomic_Sequences_Sample">Genomic Sequences Sample (MIGS)</a><a name="Genomic_Sequences_Sample"></a></dt>
+  <dd>
+    <table>
+      <tbody>
+        <tr>
+          <td>Cultured Bacterial/Archaeal Genomic Sequences</td>
+        </tr>
+        <tr>
+          <td>Eukaryotic Genomic Sequences</td>
+        </tr>
+        <tr>
+          <td>Viral Genomic Sequences</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Environmental samples do not include endosymbionts that can be reliably recovered from a particular host, organisms from a readily identifiable but uncultured field sample (e.g., many cyanobacteria), or phytoplasmas that can be reliably recovered from diseased plants (even though these cannot be grown in axenic culture). Select “Cultured Bacterial/Archaeal” or “Eukaryotic” or “Viral”.</p>
+  </dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#Marker_Sequences_Sample">Marker Sequences Sample (MIMARKS)</a><a name="Marker_Sequences_Sample"></a></dt>
+  <dd>
+    <table>
+      <tbody>
+        <tr>
+          <td>Specimen Marker Sequences</td>
+        </tr>
+        <tr>
+          <td>Survey related Marker Sequences</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>MIMARKS specimen: for marker gene (e.g., COI) sequences obtained from any material identifiable by means of specimens</p>
+
+    <p>MIMARKS-specimen applies to the contextual data for marker gene sequences from cultured or voucher-identifiable specimens.</p>
+
+    <p>MIMARKS survey: for uncultured diversity marker gene (e.g., 16S rRNA, 18S rRNA, nif, amoA, rpo) surveys</p>
+
+    <p>MIMARKS-survey is applicable to contextual data for marker gene sequences, obtained directly from the environment, without culturing or identification of the organisms.</p>
+  </dd>
+</dl>
+
+<h4 id="environmental-package-">Environmental package <a name="Area_environmental-package"></a></h4>
+
+<dl>
+  <dt><a href="#Environmental_package">Environmental package (MIxS Sample)</a><a name="Environmental_package"></a></dt>
+  <dd>
+    <table>
+      <tbody>
+        <tr>
+          <td>No package</td>
+        </tr>
+        <tr>
+          <td>air</td>
+        </tr>
+        <tr>
+          <td>host-associated</td>
+        </tr>
+        <tr>
+          <td>human-associated</td>
+        </tr>
+        <tr>
+          <td>human-gut</td>
+        </tr>
+        <tr>
+          <td>human-oral</td>
+        </tr>
+        <tr>
+          <td>human-skin</td>
+        </tr>
+        <tr>
+          <td>human-vaginal</td>
+        </tr>
+        <tr>
+          <td>microbial mat/biofilm</td>
+        </tr>
+        <tr>
+          <td>miscellaneous or artificial</td>
+        </tr>
+        <tr>
+          <td>plant-associated</td>
+        </tr>
+        <tr>
+          <td>sediment</td>
+        </tr>
+        <tr>
+          <td>soil</td>
+        </tr>
+        <tr>
+          <td>wastewater/sludge</td>
+        </tr>
+        <tr>
+          <td>water</td>
+        </tr>
+      </tbody>
+    </table>
+  </dd>
+</dl>
+
+<h3 id="attributes-">Attributes <a name="Attributes"></a></h3>
+
+<dl>
+  <dt><a href="#Sample_attributes">Sample attributes</a><a name="Sample_attributes"></a></dt>
+  <dd>Download BioSample worksheet which has been customised to fit models. This is a tab-delimited text file that may be opened with a spreadsheet program or a text editor. The validator checks the uploaded text file and feedbacks <a href="/biosample/validation-e.html">warning and error messages</a>. According to the messages, revise the text file and upload the file again. Submitters can not submit the BioSample unless all errors are resolved.</dd>
+</dl>
+
+<!-- end list -->
+
+<dl>
+  <dt><a href="#BioSample_Attributes">Attributes</a><a name="BioSample_Attributes"></a></dt>
+  <dd><a href="/biosample/attribute-e.html">List of attributes</a>. Besides the mandatory fields, there are several optional attribute fields. To make the BioSample record most useful, you should include all available information in the submission. Commonly used and useful attributes have been defined, with standardized nomenclature. In preparing your submission, please refer to <a href="/biosample/attribute-e.html">this attributes list</a> and <a href="https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482">BioSample examples</a> and fill in the relevant fields. If you have information of a type that does not appear in the standard list, you can create it as a user-defined attribute.</dd>
+</dl>
+
+<h3 id="overview--1">Overview <a name="Overview"></a></h3>
+
+<dl>
+  <dt><a href="#BioSample_Overview">Overview</a><a name="BioSample_Overview"></a></dt>
+  <dd>Review your submission and submit the BioSample by clicking the “Submit” button at bottom. The uploaded sample attribute file can be downloaded at “Submission ID.txt”.</dd>
+</dl>
+
+<h1 id="submission-to-biosample">Submission to BioSample</h1>
+
+<div class="attention">
+  <dl>
+    <dt>Submission of research data from human subjects</dt>
+    <dd><span class="red">For submitting data from human subjects (human data) to the databases of DDBJ center, it is submitter’s responsibility to ensure that the dignity and right of human subject are protected in accordance with all applicable laws, ordinances, guidelines and policies of submitter’s institution. In principle, make sure to remove any direct personal identifiers of human subjects from your data to be submitted. Before submitting human data, read the “<a href="/policies-e.html#human">Submission of research data from human subjects</a>”.</span></dd>
+  </dl>
+</div>
+
+<h2 id="submission-to-biosample-">Submission to BioSample <a name="sample-submission"></a></h2>
+
+<h3 id="create-a-new-sample-submission-">Create a new sample submission <a name="create-new-sample-submission"></a></h3>
+
+<p>Obtain a submission account according to the <a href="/account-e.html">Account Handbook</a>.</p>
+
+<p>Move to the Biosample submission page from the “Biosample” menu at the top. Create a new sample submission by clicking the [New submission] button.</p>
+
+<div class="attention red">
+  <p>Upper limit is about 2,000 samples per submission.</p>
+</div>
+
+<div class="attention red">
+  <p>If there is no reply from submitters after three months of initial contact, submissions will be cancelled.</p>
+</div>
+
+<a class="group1" href="/assets/images/books/hbs-01.jpg" title="Create a new sample submission">
+  <figure class="image">
+    <img src="/assets/images/books/hbs-01.jpg" alt="Create a new sample submission" class="w400">
+    <figcaption>Create a new sample submission</figcaption>
+  </figure>
+</a>
+
+<p>To submit a BioSample, enter content from left to right tabs.</p>
+
+<p>For BioSample metadata, please see the <a href="#metadata">BioSample metadata</a>.</p>
+
+<a class="group1" href="/assets/images/books/hbs-02.jpg" title="Submit new samples">
+  <figure class="image">
+    <img src="/assets/images/books/hbs-02.jpg" alt="Submit new samples" class="w450">
+    <figcaption>Submit new samples</figcaption>
+  </figure>
+</a>
+
+<p>Select a sample type in the “SAMPLE TYPE”. For genome samples, minimum sample attributes are defined by <a href="#sample-attributes">MIxS</a>.</p>
+
+<p>For the Sample type, please see the <a href="#Sample_type">BioSample Handbook</a>.</p>
+
+<a class="group1" href="/assets/images/books/hbs-03.jpg" title="Select a sample type">
+  <figure class="image">
+    <img src="/assets/images/books/hbs-03.jpg" alt="Select a sample type" class="w450">
+    <figcaption>Select a sample type</figcaption>
+  </figure>
+</a>
+
+<h3 id="enter-sample-attributes-">Enter sample attributes <a name="enter-sample-attributes"></a></h3>
+
+<p><a href="/biosample/attribute-e.html">List and explanation of BioSample attributes</a>. User-defined attributes can be added to the rightmost column.</p>
+
+<p><a href="https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482">Example BioSample submission files</a></p>
+
+<p>Download a template text file according to the selected sample type to enter sample attributes.</p>
+
+<p>A main sample submission step is to describe samples by required, optional and user-defined attributes.</p>
+
+<a class="group1" href="/assets/images/books/hbs-04.jpg" title="Download a text file for entering sample attributes">
+  <figure class="image">
+    <img src="/assets/images/books/hbs-04.jpg" alt="Download a text file for entering sample attributes" class="w450">
+    <figcaption>Download a text file for entering sample attributes</figcaption>
+  </figure>
+</a>
+
+<p>A text file is separated by tab and can be opened and editted in spreadsheet editor (e.g. Excel®). Attribute names are in a header line. Attributes with “*” are required.</p>
+
+<p>From second lines, enter one sample per line. Enter PSUB submission id in <a href="/biosample/attribute-e.html?all=all#bioproject_id">bioproject_id</a> for project without PRJD accession numbers.</p>
+
+<div class="attention red">
+  <p>In one submission, samples can be submitted as 1 sample - 1 line in sample attributes tab-delimited text file.</p>
+</div>
+
+<h4 id="missing-value-reporting-">Missing value reporting <a name="missing-value-reporting"></a></h4>
+
+<p><a href="https://www.ebi.ac.uk/ena/about/missing-values-reporting">The International Nucleotide Database Collaboration (INSDC)</a>have developed a standardised missing/null value reporting language to be used where a value of an expected format for sample metadata reporting can not be provided. Submitters are strongly encouraged to always provide true values of expected formats. However, if missing/null value reporting is required submitters are asked to use a term with the finest granularity for their reported situation. If appropriate, use a term in the “lower level”, if not, use a term in the “top level”.</p>
+
+<p>To facilitate an understanding of the supported terms we enclose a table with the missing/null value terms and their definitions.</p>
+
+<p>Please use the following standardised missing value vocabulary only if a true value of an expected format for a mandatory field is missing. If a true value is missing for a recommended or an optional field then these fields should not be used for reporting at all.</p>
+
+<p>INSDC missing value reporting terms</p>
+
+<table>
+  <tr>
+    <th>
+    INSDC term  
+    (top level)
+    </th>
+    <th>
+    INSDC term  
+    (lower level)
+    </th>
+    <th>Definition</th>
+  </tr>
+  <tbody>
+  <tr>
+    <td>
+      not applicable
+    </td>
+    <td></td>
+    <td>
+    information is inappropriate to report, can indicate that the standard itself fails to model or represent the information appropriately
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="3" class="borderbtm">
+      missing
+    </td>
+    <td>
+      not collected
+    </td>
+    <td>
+      information of an expected format was not given because it has not been collected
+    </td>
+  </tr>
+  <tr>
+    <td>
+      not provided
+    </td>
+    <td>
+      information of an expected format was not given, a value may be given at the later stage
+    </td>
+  </tr>
+  <tr>
+    <td>
+      restricted access
+    </td>
+    <td>
+      information exists but can not be released openly because of privacy concerns
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<h4 id="sample-attributes-validation-">Sample attributes validation <a name="validation"></a></h4>
+
+<p>Upload the sample attribute file by selecting the file and click the Continue button. The validator checks the uploaded file accoring to the rules and feedbacks the error and warning messages. Submitters can not submit the BioSample unless all errors are resolved.</p>
+
+<p>For validation rules and messages, please see <a href="/biosample/validation-e.html">Validation rules page</a>.</p>
+
+<a class="group1" href="/assets/images/books/hbs-04-2.jpg" title="BioSample validation. In this example, an error for the future date in the collection_date and a warning for inconsistent countries between geo_loc_name and lat_lon of the sample "KOME-2" are displayed.">
+  <figure class="image">
+    <img src="/assets/images/books/hbs-04-2.jpg" alt="BioSample validation. In this example, an error for the future date in the collection_date and a warning for inconsistent countries between geo_loc_name and lat_lon of the sample "KOME-2" are displayed." class="w500">
+    <figcaption>BioSample validation. In this example, an error for the future date in the collection_date and a warning for inconsistent countries between geo_loc_name and lat_lon of the sample "KOME-2" are displayed.</figcaption>
+  </figure>
+</a>
+
+<p>Check content in the last “OVERVIEW” and submit samples. In the “ATTRIBUTES” area, the submitted sample attribute file can be downloaded.</p>
+
+<a class="group1" href="/assets/images/books/hbs-05.jpg" title="Submit BioSample">
+  <figure class="image">
+    <img src="/assets/images/books/hbs-05.jpg" alt="Submit BioSample" class="w450">
+    <figcaption>Submit BioSample</figcaption>
+  </figure>
+</a>
+
+<h3 id="accession-numbers-">Accession numbers <a name="accession-numbers"></a></h3>
+
+<p>When creating a new submission, a temporary ID starts with SSUB is assigned. The DDBJ BioSample issues accession numbers with prefix SAMD to the submitted samples passed validation. When an unregistered organism is described in the organism or the locus_tag_prefix has values, accession numbers are issued after curator review. You can view status and accession numbers of submitted samples in your <a href="https://ddbj.nig.ac.jp/D-way/">submission account</a>.</p>
+
+<div class="attention red">
+  <ul>
+    <li>Do NOT cite a temporary ID starts with SSUB in references.</li>
+    <li>Do not double submit the samples which have been registered to EBI and NCBI.</li>
+  </ul>
+</div>
+
+<h3 id="release-of-biosample-">Release of BioSample<a name="sample-release"></a> <a name=""></a></h3>
+
+<p>You can select the following options:</p>
+
+<ul>
+  <li>Release immediately following curation</li>
+  <li>Release when referenced data is published</li>
+</ul>
+
+<div class="attention red">
+  <p>Hold date cannot be set for BioSample.</p>
+</div>
+
+<p>The submitted sample data can be kept private. Sample data are automatically released when the linked DDBJ record(s) is published. The release of the BioSample record does not trigger the release of private DDBJ sequence record(s) referencing this BioSample accession.However, the release of the BioSample record does trigger the release of referencing BioProject.</p>
+
+<p>FAQ: <a href="/faq/en/bp-bs-seq-release.html">How are linked BioProject/BioSample/sequence data released?</a></p>
+
+<h3 id="update-biosample-">Update BioSample <a name="update-biosample"></a></h3>
+
+<p>It is possible to update data after registration. Please contact us from <a href="/contact-ddbj-e.html">Message form</a>.</p>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

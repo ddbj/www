@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Announcement for changing structure of directories on anonymous FTP site</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <h1>Announcement for changing structure of directories on anonymous FTP site</h1>
+<p>19 Mar 2020 - </p>
+
+<p>
+  19 Mar 2020
+  
+  
+</p>
+
+<div class="md-content">
+<p>Because of <a href="/activities/index-e.html#2018">the format extension of the accession numbers</a>, INSDC members have assigned accession numbers with six-letter prefix for bulk sequence data. To provide those sequence data, we will change structure of directories on anonymous FTP site as follows. We appreciate your understanding and cooperation.</p>
+
+<p>See also <a href="/news/en/wn180117-e.html">our previous change</a>.</p>
+
+<h3 id="1-structure-of-directories-for-wgs-data">1) Structure of directories for WGS data</h3>
+
+<p>Since February 6th, 2020, we have expanded the directory structure as follows.</p>
+
+<pre class="code">
+ddbj_database/wgs/WGS_ORGANISM_LIST.html
+                 /WGS_ORGANISM_LIST.txt
+                 /AA/AA/AAAABA.gz
+                 /AA/AA/AAAABB.gz
+                 /AA/AA/AAAABC.gz
+                 /:
+                 /AA/AAAA.gz
+                 /AA/AAAB.gz
+                 /AA/AAAC.gz 
+</pre>
+
+<h3 id="2-structure-of-directories-for-tsa-tls-and-tpa-wgs-data">2) Structure of directories for TSA, TLS, and TPA-WGS data</h3>
+
+<p>From May 20th, 2020, we will divide the files of TSA, TLS and TPA-WGS data into sub-directories as follows.</p>
+
+<p>Target directories:</p>
+
+<pre class="code">
+ftp://ftp.ddbj.nig.ac.jp/ddbj_database/tsa/
+ftp://ftp.ddbj.nig.ac.jp/ddbj_database/tls/
+ftp://ftp.ddbj.nig.ac.jp/ddbj_database/tpa/wgs/
+</pre>
+
+<dl>
+    <dt>Before:</dt>
+    <dd>All data in the files named as the prefixes of their accession numbers were placed with under the following directories;</dd>
+</dl>
+
+<pre class="code">
+ddbj_database/tsa/TSA_ORGANISM_LIST.html
+                 /TSA_ORGANISM_LIST.txt
+                 /GAAA.gz
+                 /GAAB.gz
+                 /GAAC.gz
+
+ddbj_database/tls/TLS_ORGANISM_LIST.html
+                 /TLS_ORGANISM_LIST.txt
+                 /KAAA.gz
+                 /KAAB.gz
+                 /KAAC.gz
+
+ddbj_database/tpa/wgs/TPAWGS_ORGANISM_LIST.html
+                     /TPAWGS_ORGANISM_LIST.txt
+                     /DAAAAB.gz
+                     /DAAAAC.gz
+                     /DAAAAD.gz
+                     /:
+                     /DAAB.gz
+                     /DAAF.gz
+                     /DAAI.gz 
+</pre>
+
+<dl>
+    <dt>After:</dt>
+    <dd>The files will be divided into following sub-directories named after the first two letters of the prefixes of their accession numbers. </dd>
+    <dd>In cases of six-letter prefixes, the files will be divided into sub-directories named after the 3rd and 4th letters of the prefixes of their accession numbers under the directories of the first two letters. </dd>
+</dl>
+
+<pre class="code">
+ddbj_database/tsa/TSA_ORGANISM_LIST.html
+                 /TSA_ORGANISM_LIST.txt
+                 /GA/GAAA.gz
+                 /GA/GAAB.gz
+                 /GA/GAAC.gz
+
+ddbj_database/tls/TLS_ORGANISM_LIST.html
+                 /TLS_ORGANISM_LIST.txt
+                 /KA/KAAA.gz
+                 /KA/KAAB.gz
+                 /KA/KAAC.gz
+
+ddbj_database/tpa/wgs/TPAWGS_ORGANISM_LIST.html
+                     /TPAWGS_ORGANISM_LIST.txt
+                     /DA/AA/DAAAAB.gz
+                     /DA/AA/DAAAAC.gz
+                     /DA/AA/DAAAAD.gz
+                     /:
+                     /DA/DAAB.gz
+                     /DA/DAAF.gz
+                     /DA/DAAI.gz 
+</pre>
+
+<p>Please note that the files for the file lists of TSA, TLS and TPAWGS data are remained in the following directories.</p>
+
+<pre class="code">
+ddbj_database/tsa/TSA_ORGANISM_LIST.html
+                 /TSA_ORGANISM_LIST.txt 
+ddbj_database/tls/TLS_ORGANISM_LIST.html
+                 /TLS_ORGANISM_LIST.txt 
+ddbj_database/tpa/wgs/TPAWGS_ORGANISM_LIST.html
+                     /TPAWGS_ORGANISM_LIST.txt
+</pre>
+<p><span class="faq_category">Service: DDBJ, BioProject, BioSample, DRA</span>
+<span class="faq_category">Keywords: Announcement</span></p>
+
+</div>
+
+  
+
+</body>
+</html>

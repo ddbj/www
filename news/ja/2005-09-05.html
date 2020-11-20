@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MGA 公開データの Variable record のフォーマット改訂　</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">MGA 公開データの Variable record のフォーマット改訂　</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/news">news</a>
+          </li>
+          <li>
+            <a href="">MGA 公開データの Variable record のフォーマット改訂　</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <html>国際塩基配列データベース実務者会議での決定により，MGA (Mass sequence for Genome Annotation) データの公開形式が一部，変更されることになりました。<br />対象は Variable record で，各エントリ間に表示されていた "//" 行を削除します。下記が変更内容となっておりますので，データを取得の際にはご利用者の皆様におかれましてはご注意いただきますよう，お願い申し上げます。
+
+<p><b>変更前</b></p>
+<pre><code>&gt;ZZZZZ0000001&#124;ABC1004AA60F1902&#124;10&#124;9B&#124;lipidosis-related protein Lipidosin&#124; MGI:2385656&#124;<br />gactgtcttcggtgaatgca<br />//<br />&gt;ZZZZZ0000002&#124;ABC1003AE78G1607&#124;5&#124;&#124;&#124;&#124;<br />gcggaagtcggaccggtcgca<br />//<br />&gt;ZZZZZ0000003&#124;ABC1003AE72P1806&#124;6&#124;&#124;&#124;&#124;<br />gggagaccgatccgggatct<br />//<br />（以下省略）</code></pre>
+
+<p><b>変更後</b></p>
+<pre><code>&gt;ZZZZZ0000001&#124;ABC1004AA60F1902&#124;10&#124;9B&#124;lipidosis-related protein Lipidosin&#124; MGI:2385656&#124;<br />gactgtcttcggtgaatgca<br />&gt;ZZZZZ0000002&#124;ABC1003AE78G1607&#124;5&#124;&#124;&#124;&#124;<br />gcggaagtcggaccggtcgca<br />&gt;ZZZZZ0000003&#124;ABC1003AE72P1806&#124;6&#124;&#124;&#124;&#124;<br />gggagaccgatccgggatct<br />以下省略）</code></pre>
+</html>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

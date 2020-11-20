@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>塩基配列とアミノ酸配列の対応関係が標準的な遺伝暗号表と異なる場合の CDS feature の記載方法を教えてください</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title -small">
+      <h1 class="title">塩基配列とアミノ酸配列の対応関係が標準的な遺伝暗号表と異なる場合の CDS feature の記載方法を教えてください</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/faq/ja/">よくある質問</a>
+            
+          </li>
+          <li>
+            <a>塩基配列とアミノ酸配列の対応関係が標準的な遺伝暗号表と異なる場合の CDS feature の記載方法を教えてください</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<main id="SimpleView">
+  <div class="inner">
+    <article class="md-content">
+      <p>まず、<a href="/ddbj/geneticcode-e.html">The Genetic Codes</a> にて遺伝暗号表が適切に選択されているか、ご確認ください。<br />通常は <a href="/ddbj/qualifiers.html#transl_table">/transl_table</a> qualifier に上記で示される番号が適切に記載されていれば、塩基配列からアミノ酸配列へ問題なく翻訳されます。</p>
+<p>例外的に、遺伝暗号表と異なった翻訳を受けるコドン (selenocysteine など) がある場合、/<a href="/ddbj/qualifiers.html#transl_except">transl_except</a> を、適宜、記載してください。</p>
+<p><a href="/ddbj/example.html#B09">RNA editing，</a><a href="/ddbj/example.html#B10">ribosomal frameshift</a>，<a href="/ddbj/example.html#B11">mitochondrial TAA stop codon</a> の場合は、<a href="/ddbj/example.html">登録の見本</a>をご参照の上、それぞれ、/<a href="/ddbj/qualifiers.html#exception">exception</a> と /<a href="/ddbj/qualifiers.html#translation">translation</a>, /<a href="/ddbj/qualifiers.html#ribosomal_slippage">ribosomal_slippage</a>, /<a href="/ddbj/qualifiers.html#transl_except">transl_except</a> を適切に記載してください。</p>
+<p>非常に特殊な翻訳開始機構により、アミノ酸翻訳開始点がメチオニン以外のアミノ酸として翻訳されるタンパク質の場合は CDS の location を入力する際、便宜的に 5'end not complete を示す "&lt;" を <a href="/ddbj/location.html">location</a> に記載してください。あわせて、/<a href="/ddbj/qualifiers.html#note">note</a> に それがメチオニンと異なる開始アミノ酸であることの説明を英語で入力してください。</p>
+
+    </article>
+  </div>
+</main>
+
+  
+
+</body>
+</html>

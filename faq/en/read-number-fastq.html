@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Why is reads number of fastq less than that of SRA file?</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title -small">
+      <h1 class="title">Why is reads number of fastq less than that of SRA file?</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/index-e">Home</a>
+            
+          </li>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp/faq/en/">FAQ</a>
+            
+          </li>
+          <li>
+            <a>Why is reads number of fastq less than that of SRA file?</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<main id="SimpleView">
+  <div class="inner">
+    <article class="md-content">
+      <p>The DRA generates fastq files from the raw data SRA files by using the <a href="http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc&amp;f=fastq-dump">fastq-dump</a> in the <a href="http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc">NCBI SRA Toolkit</a> with following options.</p>
+<p class="code break">fastq-dump -M 25 -E --skip-technical --split-3 -W <span class="italic">&lt;SRA file&gt;</span></p>
+<div class="sub_index">
+  <ul>
+    <li>-M 25: Minimum read length to output is 25 (default is 25)</li>
+    <li>-E: No sequences starting or ending with &gt;= 10N</li>
+    <li>--skip-technical: Dump only biological reads</li>
+    <li>--split-3: Legacy 3-file splitting for mate-pairs: first and second biological reads satisfying dumping conditions are placed in files *_1.fastq and *_2.fastq, respectively. If only one biological read is present, it is placed in *.fastq.</li>
+    <li>-W: Apply left and right clips</li>
+  </ul>
+</div>
+<!-- .sub_index -->
+<p>Reads are filtered and trimmed according to above dumping conditions, reads number of fastq is generally less than that of SRA file.Users can generate unfiltered and untrimmed fastq files by using following fastq-dump options.</p>
+<p class="code break">fastq-dump -M 1 --split-3 <span class="italic">&lt;SRA file&gt;</span></p>
+
+    </article>
+  </div>
+</main>
+
+  
+
+</body>
+</html>

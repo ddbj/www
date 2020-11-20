@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reviewer Access</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">Reviewer Access</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/gea">gea</a>
+          </li>
+          <li>
+            <a href="">Reviewer Access</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+<nav class="tab-menu-view">
+  <ul>
+    
+    <li class=" -current">
+      <a href="/gea/index.html">Home</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="/gea/overview.html">Submission Overview</a>
+      
+      <ul>
+        
+        <li>
+          <a href="/gea/submit-array.html">Submit microarray experiment</a>
+        </li>
+        
+        <li>
+          <a href="/gea/submit-sequence.html">Submit sequencing experiment</a>
+        </li>
+        
+        <li>
+          <a href="/gea/metadata.html">Metadata</a>
+        </li>
+        
+        <li>
+          <a href="/gea/datafile.html">Data File</a>
+        </li>
+        
+        <li>
+          <a href="/gea/validation.html">Validation</a>
+        </li>
+        
+        <li>
+          <a href="/gea/single-cell.html">Single-cell submission guide</a>
+        </li>
+        
+        <li>
+          <a href="/gea/example.html">Example</a>
+        </li>
+        
+        <li>
+          <a href="/gea/adf.html">Array Design</a>
+        </li>
+        
+        <li>
+          <a href="/gea/matrix.html">Data matrix</a>
+        </li>
+        
+        <li>
+          <a href="/gea/reviewer-access.html">Reviewer Access</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="/faq/ja/index.html">FAQ</a>
+      
+    </li>
+    
+    <li class=" -haschild">
+      <a href="http://aoe.dbcls.jp/">Search (AOE)</a>
+      
+      <ul>
+        
+        <li>
+          <a href="https://www.ebi.ac.uk/arrayexpress/browse.html">Search (ArrayExpress)</a>
+        </li>
+        
+        <li>
+          <a href="http://refex.dbcls.jp/">RefEx</a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="">
+      <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/gea">Downloads</a>
+      
+    </li>
+    
+    <li class="">
+      <a href="/gea/about-gea.html">About GEA</a>
+      
+    </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="reviewer-access-token-">Reviewer access token <a name="access"></a></h2>
+
+<p>GEA 登録データにアクセッション番号が発行された後、’Generate new reviewer access key’ で非公開データに read-only の匿名アクセスを提供する reviewer トークン を生成することができます。トークンをジャーナルの編集者に渡すことで非公開データへのアクセスが必要な査読者にトークンを回覧してもらうことができます。トークンは生成後三か月で失効します。必要であればトークンを再発行することができます。 Reviewer access URL はアクセッション番号発行通知メールに含まれています。 Reviewer access では <a href="/dra/index.html">DRA</a> に登録した次世代シークエンス生データ以外の全てのメタデータとデータファイルへのアクセスが提供されます。<a href="/dra/index.html">DRA</a> は非公開データへの reviewer access を提供していません。</p>
+
+<a class="group1" href="/assets/images/submission/reviewer1.jpg" title="reviewer access key を生成">
+  <figure class="image">
+    <img src="/assets/images/submission/reviewer1.jpg" alt="reviewer access key を生成" class="w500">
+    <figcaption>reviewer access key を生成</figcaption>
+  </figure>
+</a>
+
+<a class="group1" href="/assets/images/submission/reviewer3.jpg" title="reviewer トークン">
+  <figure class="image">
+    <img src="/assets/images/submission/reviewer3.jpg" alt="reviewer トークン" class="w300">
+    <figcaption>reviewer トークン</figcaption>
+  </figure>
+</a>
+
+<h2 id="登録者の匿名化-">登録者の匿名化 <a name="anonymity"></a></h2>
+
+<p>論文の査読プロセスにおけるバイアスを無くすためいくつかのジャーナルでは査読者に論文著者が誰だか分からなくする “double-blind” peer review オプションを論文投稿者に提供しています。 GEA では登録者が特定されないようにするためにメタデータのいくつかのフィールド、<a href="/gea/metadata.html#idf_tags">IDF</a> で “Person” (名前とメールアドレス)、”PubMed” と “Publication” (pubmed ID と DOI) で始まるフィールドを削除して reviewer access に供する “double-blind” オプションを提供しています。 登録者が double-blind オプションを選択して reviewer token を生成した場合、reviewer には登録者を特定するようなフィールドが削除されたメタデータが提供されますが、GEA 登録者は削除されていないメタデータを登録アカウントでみることができます。論文を double-blind 査読をサポートしていないジャーナルに再投稿することになった場合など、double-blind オプションを選択せずにトークンを再生成すると reviewer access でフルメタデータが提供されるようになります。 データ公開後は reviewer access での登録者関連フィールドの自動削除は実施されなくなります。</p>
+
+<div class="attention red">
+GEA は "Person"、"PubMed" と "Publication" で始まる IDF フィールドを自動で削除します。解析済みデータファイルのエクセル所有者情報などこれら以外の箇所に登録者を特定する情報を含めないようにすることは登録者の責任において実施してください。
+</div>
+
+<a class="group1" href="/assets/images/submission/reviewer7.jpg" title="double-blind オプションで自動削除される IDF フィールド">
+  <figure class="image">
+    <img src="/assets/images/submission/reviewer7.jpg" alt="double-blind オプションで自動削除される IDF フィールド" class="w300">
+    <figcaption>double-blind オプションで自動削除される IDF フィールド</figcaption>
+  </figure>
+</a>
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

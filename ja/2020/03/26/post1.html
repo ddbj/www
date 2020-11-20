@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDBJ リリース 119.0，DAD リリース 89.0 完成</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <h1>DDBJ リリース 119.0，DAD リリース 89.0 完成</h1>
+<p>26 Mar 2020 - </p>
+
+<p>
+  26 Mar 2020
+  
+  
+</p>
+
+<div class="md-content">
+<p><span class="bold">DDBJ リリース 119.0</span></p>
+
+<ul>
+  <li><span class="bold">公開日：</span>2020年3月25日</li>
+  <li><span class="bold">エントリ数：</span>2,703,019,984 <span class="bold">塩基数：</span>7,238,087,008,919</li>
+  <li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.119.txt">DDBJ Release Note</a></li>
+  <li><a href="/latest-releases.html">現在公開されているリリースの情報</a></li>
+</ul>
+
+<p><span class="bold">DAD (DDBJ amino acid database)  リリース 89.0</span></p>
+
+<ul>
+  <li><span class="bold">公開日：</span>2020年3月24日</li>
+  <li><span class="bold">エントリ数：</span>110,528,765 <span class="bold">総アミノ酸残基数(aa)：</span>34,722,270,677</li>
+  <li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/dad/dadrel.89.txt">DAD Release Note</a></li>
+</ul>
+
+<dl>
+    <dt class="top_space"><span class="red bold">\*</span>[anonymous FTP site の directory 構成変更のお知らせ](/news/ja/200319.html)</dt>
+    <dd>アクセッション番号の書式拡張に伴い、bulk sequence data には 6文字の prefix を持つアクセッション番号の割り当てが開始されています。
+    このようなデータを提供していくために anonymous FTP site の directory 構成を変更いたしました。6文字のプレフィックスの場合、ファイルは、最初の2文字のディレクトリの下にあるアクセッション番号のプレフィックスの3番目と4番目の文字にちなんで名付けられたサブディレクトリに分割されます。  
+    例：WGS データを格納する directory の構成
+
+
+    <pre class="code">
+    ddbj_database/wgs/WGS_ORGANISM_LIST.html
+                     /WGS_ORGANISM_LIST.txt
+                     /AA/AA/AAAABA.gz
+                     /AA/AA/AAAABB.gz
+                     /AA/AA/AAAABC.gz
+                     /:
+                     /AA/AAAA.gz
+                     /AA/AAAB.gz
+                     /AA/AAAC.gz 
+    </pre></dd>
+    <dt class="top_space"><span class="red bold">\*</span>GenBank と ENA からの bulk sequence data 読み込み遅延のお詫び</dt>
+    <dd>今回のリリースでは、以下の理由により、大量の bulk sequence data が欠落しています。
+
+    * 非常に大規模な配列データが GenBank と ENA から来た
+    * DDBJ はアクセッション番号の新フォーマットにまだ対応していない問題を解消するため作業を進めていますが、bulk sequence data のすべてがいつ読み込めるか不明です。  
+    ご不便をおかけして申し訳ありませんが、ご理解いただきますようお願い申し上げます。</dd><span class="faq_category">サービス: DDBJ</span>
+    <span class="faq_category">キーワード: データ公開</span>
+</dl>
+
+</div>
+
+  
+
+</body>
+</html>

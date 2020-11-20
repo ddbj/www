@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>生物の株情報を管理する方法が変更になります</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">生物の株情報を管理する方法が変更になります</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/news">news</a>
+          </li>
+          <li>
+            <a href="">生物の株情報を管理する方法が変更になります</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <p>INSDC メンバーは strain-level taxonomy ID をゲノム配列が登録される微生物に対して発行してきましたが，2014年2月にこの慣行を停止します。以降は strain-level taxonomy ID に替わり BioSample ID が微生物ゲノムを識別することになります。</p>
+
+<p>詳細は NCBI News をご覧ください: <a href="https://www.ncbi.nlm.nih.gov/news/11-21-2013-strain-id-changes/">"Planned change in bacterial strain-level information management"</a></p>
+
+<p class="h3">Taxonomy</p>
+
+<p>Strain-level TaxID の発行は2014年2月に停止されますが，既存の TaxID は引き続きゲノム配列が得られた species レベルまで同定されていない生物のための informal strain-specific name として利用されます。</p>
+
+<p>ゲノム配列が unidentified/unpublished organism から得られた場合，"<span class="italic">Genus sp</span>. strain" といった形の <a href="/ddbj/organism-e.html">strain を使った species-level informal name</a> が名称として使用されます。</p>
+
+<p class="h3">BioSample</p>
+
+<p>DDBJ センターは2014年2月から BioSample の受付を開始します。ゲノム配列を登録する場合，シークエンス対象の生物を BioSample に登録することが必須です。BioSample には strain 情報に加えて culture collection や isolation に関する情報を必要に応じて含めます。</p>
+
+<p class="h3">BioProject</p>
+
+<p>ゲノム配列を登録する場合，シークエンスプロジェクトを BioProject に登録することが必須です。BioProject アクセッション番号とゲノム配列が１対１に対応している必要はありません。「ある種に属する複数の微生物株」や「いくつかの薬剤抵抗性を示す微生物種」などを対象にした研究プロジェクトは１つの BioProject として登録することができます。</p>
+<figure><a href="/assets/images/submission/strain_level_taxid.jpg" title="Strain-level Taxonomy ID から BioSample ID へ">
+        <imgsrc taxonomy="" biosample="" class="w500"></imgsrc>
+    </a>
+    <figcaption class="caption">Strain-level Taxonomy ID から BioSample ID へ</figcaption>
+</figure>
+<!-- .section -->
+<!--<p>BioSample は2014年2月にサンプル登録の受付を開始する予定です。</p><p>INSDC は微生物ゲノムを管理するため、ゲノムが登録されている微生物に限り Taxonomy ID を本来対象としている種 (species) よりも下位のレベルである株 (strain) にまで割り振っていましたが，2014年2月中にこの慣行を停止する予定です。株レベル以下の情報は BioSample で管理されることになります。既に発行されている株レベルの Taxonomy ID は引き続き維持されます。</p><p>詳細については <a href="https://www.ncbi.nlm.nih.gov/news/11-21-2013-strain-id-changes/">Planned change in bacterial strain-level information management</a> をご覧ください。</p>-->
+
+      </div>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>

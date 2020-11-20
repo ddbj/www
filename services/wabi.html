@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Top" />
+    <meta property="og:url" content="/index.html" />
+    <meta
+      property="og:description"
+      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
+    />
+    <meta property="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WABI Web API for Biology</title>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/colorbox.css" />
+    <link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/main.css" />
+    <!--link rel="stylesheet" href="https://www-preview.ddbj.nig.ac.jp/assets/css/common_framework.css" /-->
+    
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/main.js"></script>
+    
+    
+  </head>
+
+<body>
+    <script src="https://www-preview.ddbj.nig.ac.jp/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+  <header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <h1 class="title">WABI Web API for Biology</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            
+            <a href="https://www-preview.ddbj.nig.ac.jp">ホーム</a>
+            
+          </li>
+          <li>
+            <a href="https://www-preview.ddbj.nig.ac.jp/services">services</a>
+          </li>
+          <li>
+            <a href="">WABI Web API for Biology</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <main id="MainContentView" class="mainview">
+      <div class="md-content">
+        <h2 id="wabi-web-api-for-biology">WABI (Web API for Biology)</h2>
+
+<p>WABI は、 DDBJの検索サービス を Web画面 を介せずに利用できる Web API です。<br />
+この Web API を利用することによって、 DDBJの検索サービス
+に対する検索処理登録や検索結果取得などを行なうプログラムを作成することができます。<br />
+具体例として BLAST の検索条件を確認する場合を示してみますと、次のような URI に対して <code class="language-plaintext highlighter-rouge">GETメソッド</code> で HTTPリクエスト
+することによって、下のようなレスポンスを受け取ることができます。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://ddbj.nig.ac.jp/wabi/blast/wabi_blast_1111-1111-1111-11-111-111111?info=request&amp;format=json
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 1{
+ 2        "address": "",
+ 3        "database": "hum",
+ 4        "datasets": "ddbjall",
+ 5        "format": "text",
+ 6        "parameters": " -v 100 -b 100 -e 10 -F F -W 11 ",
+ 7        "program": "blastn",
+ 8        "querySequence": "&gt;my query sequence\nCACCCTCTCT\nTCACTGGAAA\nGGACACCATG\nAGCACGGAAA\nGCATGATCCA\nGGACGTGGAA\n",
+ 9        "result": "www" 
+10}
+</code></pre></div></div>
+
+<p>現在 WABI は、次のサービスの Web API を提供しています。</p>
+
+<ul>
+  <li><a href="/services/wabi-blast.html">BLAST</a></li>
+  <li><a href="/services/getentry.html">getentry</a></li>
+  <li><a href="/services/arsa.html">ARSA</a></li>
+  <li><a href="/services/wabi-clustalw.html">ClustalW</a></li>
+  <li><a href="/services/wabi-vecscreen.html">VecScreen</a></li>
+  <li><a href="/services/wabi-mafft.html">MAFFT</a></li>
+</ul>
+
+      </div>
+      
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              
+              <li>
+                <a href="/services/wabi-blast.html">WABI BLAST ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-clustalw.html">WABI ClustalW ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-vecscreen.html">WABI VecScreen ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/wabi-mafft.html">WABI MAFFT ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/arsa.html">ARSA ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/blast.html">BLAST ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/getentry.html">getentry ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/vecscreen.html">VecScreen ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/clustalw.html">ClustalW ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/txsearch.html">TXSearch ヘルプ</a>
+              </li>
+              
+              <li>
+                <a href="/services/past-services.html">過去のサービス</a>
+              </li>
+              
+              <li>
+                <a href="/services/references.html">関連論文</a>
+              </li>
+              
+              <li>
+                <a href="/services/pipeline.html">Pipeline ヘルプ</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      
+    </main>
+  </div>
+</section>
+  
+
+</body>
+</html>
