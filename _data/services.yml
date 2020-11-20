@@ -159,8 +159,8 @@ items:
   - name: ClustalW
     formal_name: ClustalW
     service_link:
-      en: https://www.ddbj.nig.ac.jp/services/wabi-mafft.html
-      ja: https://www.ddbj.nig.ac.jp/services/wabi-mafft.html
+      en: http://clustalw.ddbj.nig.ac.jp/index.php?lang=en
+      ja: http://clustalw.ddbj.nig.ac.jp/index.php?lang=ja
     help:
       en: clustalw-e
       ja: clustalw
@@ -175,8 +175,8 @@ items:
   - name: MAFFT
     formal_name: Multiple Alignment using Fast Fourier Transform
     service_link:
-      en: http://clustalw.ddbj.nig.ac.jp/index.php?lang=en
-      ja: http://clustalw.ddbj.nig.ac.jp/index.php?lang=ja
+      en: wabi-mafft-e
+      ja: wabi-mafft
     help:
       en: wabi-mafft-e
       ja: wabi-mafft
