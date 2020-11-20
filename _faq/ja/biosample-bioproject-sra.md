@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: BioSample，DRA Experiment，DRA Run とデータファイルとの間の関係は?
 category: faq
 db:

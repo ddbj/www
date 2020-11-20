@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 同じ遺伝子のゲノム配列と mRNA 配列は別な配列として登録するべきでしょうか
 category: faq
 db:

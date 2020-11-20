@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: '[Detail view 画面] samtools view -bS -o out.bam out.sam このコマンドでSAM--->BAM変換するのか？'
 category: faq
 db:

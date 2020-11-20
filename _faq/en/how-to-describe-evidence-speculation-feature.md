@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to describe the evidence of speculation for the feature?
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: アクセッション番号を紛失してしまいました
 category: faq
 db:

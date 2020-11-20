@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: A portion of the sequence that I entered was replaced with [N](X)! What happened?
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: データファイルはどのように処理されますか？
 category: faq
 db:

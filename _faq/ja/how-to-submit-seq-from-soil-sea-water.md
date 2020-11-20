@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 海水や土壌などの環境から取得したデータは、どのように登録すればよいでしょうか
 category: faq
 db:

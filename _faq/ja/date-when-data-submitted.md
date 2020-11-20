@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: データが登録された日付を知りたい
 category: faq
 db:

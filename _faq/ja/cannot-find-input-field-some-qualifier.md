@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 入力画面上に入力したい qualifier の欄がありません
 category: faq
 db:

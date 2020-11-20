@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 問い合わせフォームが表示されません
 category: faq
 db:

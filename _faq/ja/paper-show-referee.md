@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 論文投稿の過程で査読者に登録した非公開塩基配列を見せたいのですが
 category: faq
 db:

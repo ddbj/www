@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Samtools indexファイルはダウンロードできませんか？
 category: faq
 db:

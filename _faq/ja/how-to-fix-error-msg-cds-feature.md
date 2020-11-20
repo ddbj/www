@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: '"To use [translation] qualifier, [exception] qualifier is required in the [CDS] feature." というエラーが表示されました'
 category: faq
 db:

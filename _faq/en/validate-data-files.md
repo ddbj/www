@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How can I turn the "Validate data files" button active?
 category: faq
 db:

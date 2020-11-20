@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: de novo assembly　結果ファイルについて、out_WGS.fastaの結果を確認したところ、最後に小文字の配列を含むものがいくつか存在しました。なぜ途中から小文字になっているのでしょうか。また、out_WGS.fastaとcontigs.faはどう違うのでしょうか。
 category: faq
 db:

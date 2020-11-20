@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: データに誤りを見つけました。登録者ではありませんが，訂正できますか
 category: faq
 db:

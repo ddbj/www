@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: feature を推測した根拠を記載するには、どのような方法がありますか
 category: faq
 db:

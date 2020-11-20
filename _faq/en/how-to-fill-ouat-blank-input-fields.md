@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: I do not know how to fill out the blank input fields in the [Set Optional Parameters window].
 category: faq
 db:

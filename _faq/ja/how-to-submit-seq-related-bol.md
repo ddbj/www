@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Barcode of Life (BoL) に登録予定の配列は、どのように登録すればよいでしょうか
 category: faq
 db:

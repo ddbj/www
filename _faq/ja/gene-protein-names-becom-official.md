@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: DDBJ へ登録の際に遺伝子名・タンパク質名などを記載すれば、公式に命名したことになりますか
 category: faq
 db:

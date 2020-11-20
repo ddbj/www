@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 配列の由来する生物種が特定できない場合、どのように記載すればよいでしょうか
 category: faq
 db:

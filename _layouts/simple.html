@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<header id="PageHeader">
+  <div class="inner">
+    <div class="page-title -small">
+      <h1 class="title">{{ page.title }}</h1>
+      <nav class="breadcrumb">
+        <ul>
+          <li>
+            {% if page.lang == 'ja' %}
+            <a href="{{ site.url }}">ホーム</a>
+            {% else %}
+            <a href="{{ site.url }}/index-e">Home</a>
+            {% endif %}
+          </li>
+          <li>
+            {% if page.category == 'faq' or page.category == 'news' %}
+            <a href="{{site.url}}{{site.baseurl}}/{{ page.category }}/{{page.lang}}/">{{ site.data.label_dictionary[page.category][page.lang] }}</a>
+            {% else %}
+            <a href="{{site.url}}{{site.baseurl}}/{{ page.category }}">{{ page.category }}</a>
+            {% endif %}
+          </li>
+          <li>
+            <a>{{ page.title }}</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    {% include tab-menu.html %}
+
+  </div>
+</header>
+
+<main id="SimpleView">
+  <div class="inner">
+    <article class="md-content">
+      {{ content }}
+    </article>
+  </div>
+</main>

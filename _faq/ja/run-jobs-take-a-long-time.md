@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: ジョブの実行時間が長くかかっているが問題ありませんか
 category: faq
 db:

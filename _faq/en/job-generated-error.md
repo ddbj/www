@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: My job generated an error
 category: faq
 db:

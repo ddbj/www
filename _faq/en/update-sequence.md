@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to update our sequence?
 category: faq
 db:

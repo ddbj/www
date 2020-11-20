@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Do DDBJ JGA/NCBI dbGaP/EBI EGA exchange data?
 category: faq
 db:

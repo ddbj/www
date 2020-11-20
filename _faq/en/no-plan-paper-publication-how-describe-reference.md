@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: When we have no plan to paper publication, how to describe REFERENCE?
 category: faq
 db:

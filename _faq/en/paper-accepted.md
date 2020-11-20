@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: When our paper was accepted, what should I do?
 category: faq
 db:

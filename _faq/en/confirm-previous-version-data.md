@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Can I confirm previous version of the sequence data?
 category: faq
 db:

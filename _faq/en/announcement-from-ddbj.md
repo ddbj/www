@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: When the data submitted with hold date is published, is there any announcement from DDBJ?
 category: faq
 db:

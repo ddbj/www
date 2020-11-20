@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: What is "Direct Submission" in TITLE of REFERENCE 1?
 category: faq
 db:

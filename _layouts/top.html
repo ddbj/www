@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<header id="TopHeader">
+<div id="TopPageView">
   <div class="inner">
 
     <section class="maincolumn">
@@ -15,7 +15,26 @@ layout: default
         <p class="description">{{ page.description }}</p>
       </header>
 
-      {% include tab-menu.html %}
+      {% if page.tab_menu %}
+      <nav class="tab-menu-view">
+        <ul>
+          {% for item in page.tab_menu %}
+          <li class="{% if item.children %} -haschild{% endif %}{% if page.current_tab == item.id %} -current{% endif %}">
+            <a href="{{ item.url }}">{{ item.title }}</a>
+            {% if item.children %}
+            <ul>
+              {% for childitem in item.children %}
+              <li>
+                <a href="{{ childitem.url }}">{{ childitem.title }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      {% endif %}
 
       <ul class="panel-view-container">
         {% for panel in page.panels %}
@@ -60,5 +79,6 @@ layout: default
     </aside>
 
   </div>
-</header>
+</div>
+
 {{ content }}

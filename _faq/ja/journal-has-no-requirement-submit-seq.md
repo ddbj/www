@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 投稿する雑誌には、塩基配列を登録することを義務付けた投稿規程がありませんが、登録は必要でしょうか
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: セカンダリアクセッション番号とは何ですか
 category: faq
 db:

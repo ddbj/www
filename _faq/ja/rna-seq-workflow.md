@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: RNA-seqワークフローを使いたいのですが、どうしたらいいですか？
 category: faq
 db:

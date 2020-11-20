@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 登録したデータの内容を公開予定日より前に確認できますか
 category: faq
 db:

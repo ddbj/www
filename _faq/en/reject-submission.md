@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Is there any case to reject submission to DDBJ?
 category: faq
 db:

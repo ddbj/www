@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: アミノ酸置換を伴う１塩基置換を記述する方法を教えてください?
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to subscribe, change E-mail address, or unsubscribe to DDBJ Mail Magazine?
 category: faq
 db:

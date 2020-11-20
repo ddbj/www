@@ -3,6 +3,29 @@ layout: indexed_content
 title: BioProject について
 pathname: about-bioproject
 category: bioproject
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /bioproject/index.html
+  - id: handbook
+    title: Handbook
+    url: /bioproject/submission.html
+  - id: faq
+    title: FAQ
+    url: /faq/ja/index.html
+  - id: search
+    title: Search
+    url: http://ddbj.nig.ac.jp/BPSearch/
+  - id: downloads
+    title: Downloads
+    url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/bioproject
+    children:
+      - title: XML Schema
+        url: https://github.com/ddbj/pub/tree/master/docs/bioproject/xsd
+  - id: about bioProject
+    title: About BioProject
+    url: /bioproject/about-bioproject.html
 lang: ja
 ---
 

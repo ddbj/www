@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: I would like to know the date when the data was submitted. 
 category: faq
 db:

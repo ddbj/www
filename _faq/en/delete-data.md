@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to delete my data?
 category: faq
 db:

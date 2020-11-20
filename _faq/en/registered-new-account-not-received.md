@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: I have registered my new account, but I’m not receiving e-mails.
 category: faq
 db:

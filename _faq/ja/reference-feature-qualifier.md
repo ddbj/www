@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: データ表記に用いられる Feature/Qualifier に関する資料はありますか
 category: faq
 db:

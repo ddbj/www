@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: With the command samtools sort out.bam out2, will there be BAM sorting, and an output format of out2.srt.bam?
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Is there any reference for Feature/Qualifier?
 category: faq
 db:

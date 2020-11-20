@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: I can’t change the parameters (options) for the tools to be run.
 category: faq
 db:

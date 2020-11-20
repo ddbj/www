@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 配列を更新したい
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 次の入力画面に進もうとしたところ、しばらく待ってもページが表示されません。
 category: faq
 db:

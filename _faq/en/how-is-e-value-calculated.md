@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 'Regarding the E value displayed in the BLAST analysis results: How is this value calculated?'
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Are there any conventions in place for specifying file names or other parameters when performing the Preprocessing step?
 category: faq
 db:

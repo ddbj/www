@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 弊社が商用目的のために、Pipelineを使用させて頂くことは可能でしょうか？またその場合、配列情報の秘匿性は保証されますでしょうか？
 category: faq
 db:

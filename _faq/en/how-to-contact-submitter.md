@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to contact the submitter of sequence data?
 category: faq
 db:

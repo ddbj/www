@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Our company would like to use Pipeline for commercial purposes. May we do so? If so, will the confidentiality of sequence information be guaranteed?
 category: faq
 db:

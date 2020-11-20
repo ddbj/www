@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Are there any required variables/phenotypes that need to be included?
 category: faq
 db:

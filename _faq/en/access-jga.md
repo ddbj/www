@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: I can not access by scp/ssh to the JGA server
 category: faq
 db:

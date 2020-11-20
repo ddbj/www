@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: DDBJ にアノテーションを付加した塩基配列データを登録する窓口はどこでしょうか
 category: faq
 db:

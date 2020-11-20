@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Is it possible to perform assemblies involving combinations of single-end and paired-end data from Illumina or Roche454?
 category: faq
 db:

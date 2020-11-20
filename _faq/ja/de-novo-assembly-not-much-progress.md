@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: de novo assemblyの処理が進んでいないように見えるのですがなぜですか？
 category: faq
 db:

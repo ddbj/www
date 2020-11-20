@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: DDBJ JGA/NCBI dbGaP/EBI EGA 間でデータ交換をしていますか?
 category: faq
 db:

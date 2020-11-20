@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: If I submit sequence data with gene and protein names, will the names become official?
 category: faq
 db:

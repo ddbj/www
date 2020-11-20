@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Preprocessing処理は問題なく終了していますが、結果ファイルが０kbでした
 category: faq
 db:

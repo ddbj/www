@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: The amino acid sequence in the value of /translation qualifier seems to be incorrect.
 category: faq
 db:

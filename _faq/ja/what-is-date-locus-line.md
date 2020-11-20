@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: LOCUS 行の日付は何を表していますか
 category: faq
 db:

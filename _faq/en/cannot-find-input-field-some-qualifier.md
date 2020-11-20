@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Can not find input field for some qualifier
 category: faq
 db:

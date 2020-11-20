@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: The Preprocessing step completed without any problems, but the resulting file has size 0 kb
 category: faq
 db:

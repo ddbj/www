@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: REFERENCE1 の TITLE 行にある「Direct Submission」とは何ですか
 category: faq
 db:

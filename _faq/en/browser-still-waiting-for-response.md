@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: browser still waiting for response on the process of data input
 category: faq
 db:

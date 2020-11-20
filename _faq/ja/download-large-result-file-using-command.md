@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 結果ファイルはサイズが大きい為、マウス操作ではなくコマンド操作でダウンロード可能になりませんか
 category: faq
 db:

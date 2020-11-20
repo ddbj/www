@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Is out2.bam a sorted BAM file?
 category: faq
 db:

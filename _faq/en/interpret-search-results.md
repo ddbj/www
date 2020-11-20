@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How do I interpret the search results?
 category: faq
 db:

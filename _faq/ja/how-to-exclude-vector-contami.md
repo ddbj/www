@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: vector 配列のコンタミを除くには どうすればよいでしょうか
 category: faq
 db:

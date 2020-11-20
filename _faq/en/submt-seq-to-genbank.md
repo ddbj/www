@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Should I submit sequence data to GenBank?
 category: faq
 db:

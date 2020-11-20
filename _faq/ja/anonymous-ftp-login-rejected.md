@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Anonymous FTP でログインが拒否されます
 category: faq
 db:

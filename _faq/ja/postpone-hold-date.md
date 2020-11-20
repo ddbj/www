@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 公開予定日を延期したい
 category: faq
 db:

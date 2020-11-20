@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: MSS 利用申し込みフォームが表示されません
 category: faq
 db:

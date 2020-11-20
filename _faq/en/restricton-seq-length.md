@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Is there any restriction of sequence length to submit to DDBJ?
 category: faq
 db:

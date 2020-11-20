@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to submit only annotation for previously reported sequences?
 category: faq
 db:

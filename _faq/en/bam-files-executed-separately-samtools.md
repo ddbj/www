@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Are the files generated in mapping only SAM files, and does generation of BAM files have to be executed separately with SAMTools?
 category: faq
 db:

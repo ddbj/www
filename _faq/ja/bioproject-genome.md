@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: シークエンスしたゲノム配列それぞれに BioProject/BioSample が必要ですか？
 category: faq
 db:

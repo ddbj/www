@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: サンプルがバーコード配列によって区別されている場合のメタデータは?
 category: faq
 db:

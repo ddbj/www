@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 結果ファイルをダウンロードしましたがunzipコマンドで解凍ができません
 category: faq
 db:

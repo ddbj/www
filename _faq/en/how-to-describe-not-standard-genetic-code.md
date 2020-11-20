@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: When the correspondences between nucleotides and amino acids are different from the standard genetic code, how to describe CDS feature?
 category: faq
 db:

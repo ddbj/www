@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 単一塩基変異 (SNV)、構造多型 (structural variation)、コピー数変異 (CNV) データなどは どこに登録すれば良いのでしょうか
 category: faq
 db:

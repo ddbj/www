@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: With the current functions of Pipeline, can SNP extraction not be carried out using varFilter?
 category: faq
 db:

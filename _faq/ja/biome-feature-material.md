@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: env_biome，env_feature，env_material の違いは？
 category: faq
 db:

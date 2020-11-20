@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: I can not find sequence data that should be published.
 category: faq
 db:

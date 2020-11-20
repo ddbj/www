@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Can not find appropriate feature key
 category: faq
 db:

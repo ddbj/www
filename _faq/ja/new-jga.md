@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 2020年9月29日にリリースされた新しい JGA システムにおける変更点は？
 category: faq
 db:

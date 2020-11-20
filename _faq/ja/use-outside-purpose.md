@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 取り扱う情報の、目的外利用は無いことを確認したいです
 category: faq
 db:

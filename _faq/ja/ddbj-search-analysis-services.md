@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: DDBJ ではデータの検索・解析サービスを行なっていますか
 category: faq
 db:

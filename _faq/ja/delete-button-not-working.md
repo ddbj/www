@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: '[Job Status 画面] 表左上のDeleteボタンが機能しません。また、表示されるファイル名を変更したいです。'
 category: faq
 db:

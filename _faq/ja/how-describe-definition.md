@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: DEFINITION に相当する入力欄が見つかりません
 category: faq
 db:

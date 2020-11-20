@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Can I modify descriptions on a previous page?
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 多件数のメタデータを作成するよい方法は?
 category: faq
 db:

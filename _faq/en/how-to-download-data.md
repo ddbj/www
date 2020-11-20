@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How do I download files?
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Is there a way to link directly to data (accession numbers) registered in the DDBJ?
 category: faq
 db:

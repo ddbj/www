@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 次世代シークエンサによって決定された配列は、どのように登録すればよいでしょうか
 category: faq
 db:

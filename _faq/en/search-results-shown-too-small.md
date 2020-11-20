@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: The number of search results shown is too small! (I receive the message “No hit found.”)
 category: faq
 db:

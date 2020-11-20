@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: '[Detail view 画面] out.sam がマッピング情報のSAMファイル生成なのか？'
 category: faq
 db:

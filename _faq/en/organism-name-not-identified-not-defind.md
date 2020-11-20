@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to describe organism name, if the species is not identified or not defined?
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Where should I enter BioProject accession number?
 category: faq
 db:

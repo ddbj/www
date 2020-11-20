@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: To submit a complete sequence of a genome, are annotation data for the genome required?
 category: faq
 db:

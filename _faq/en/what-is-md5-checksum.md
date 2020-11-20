@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: What is an MD5 checksum and how do I compute it?
 category: faq
 db:

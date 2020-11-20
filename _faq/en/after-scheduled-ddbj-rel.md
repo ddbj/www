@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 'Regarding the phrase “after a scheduled DDBJ release”: When, specifically, does this phrase describe?'
 category: faq
 db:

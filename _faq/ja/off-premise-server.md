@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 機関外サーバでのデータ利用
 category: faq
 db:

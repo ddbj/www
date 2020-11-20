@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to submit sequence data directly obtained from soil or sea water?
 category: faq
 db:

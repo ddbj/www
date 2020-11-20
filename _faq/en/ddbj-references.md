@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Where can I find the original papers and other related papers on the DDBJ search and analysis software?
 category: faq
 db:

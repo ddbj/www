@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How should I describe a pooled sample distinguished by barcode sequences in metadata?
 category: faq
 db:

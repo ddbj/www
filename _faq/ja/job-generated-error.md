@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: ジョブがエラーになる
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: NIG スパコン上にあるデータを DRA サーバに直接転送する方法は？
 category: faq
 db:

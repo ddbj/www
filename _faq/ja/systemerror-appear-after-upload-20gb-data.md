@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 20GBのデータをHTTPでのアップロード終了後、SYSTEMERRORというメッセージが出てアップロードが完了しません
 category: faq
 db:

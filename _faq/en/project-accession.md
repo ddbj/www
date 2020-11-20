@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Should I cite BioProject accession numbers in my manuscript?
 category: faq
 db:

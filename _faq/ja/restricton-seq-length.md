@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 登録する塩基配列の長さに制限はありますか
 category: faq
 db:

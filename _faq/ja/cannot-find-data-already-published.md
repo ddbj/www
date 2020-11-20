@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 公開されているはずのデータが検索できません
 category: faq
 db:

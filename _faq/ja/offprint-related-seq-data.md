@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 別刷りを送る必要はありますか
 category: faq
 db:

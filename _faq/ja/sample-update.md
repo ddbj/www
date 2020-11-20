@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: BioSample を更新するには？
 category: faq
 db:

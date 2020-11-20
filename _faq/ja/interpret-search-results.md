@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 検索結果の見方を教えてください
 category: faq
 db:

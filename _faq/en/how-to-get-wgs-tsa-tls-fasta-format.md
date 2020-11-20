@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How do I get a FASTA format of WGS, TSA, or TLS entries?
 category: faq
 db:

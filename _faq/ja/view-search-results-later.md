@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 検索結果を後で見ることは可能ですか？
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Newly released JGA data are not available in the DDBJ Search
 category: faq
 db:

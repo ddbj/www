@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: '&quot;Value of [ codon_start ] is not 1, but [###..###] is 5&#39; complete type.&quot; というエラーが表示されました'
 category: faq
 db:

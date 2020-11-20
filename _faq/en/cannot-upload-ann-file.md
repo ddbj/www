@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: I can not upload my annotation file
 category: faq
 db:

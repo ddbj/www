@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 塩基配列登録システム と Mass Submission System どちらを使う方が良いか迷っています
 category: faq
 db:

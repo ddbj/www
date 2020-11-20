@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Is it possible to view search results at a later time?
 category: faq
 db:

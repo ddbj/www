@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Can we update submitted data with DDBJ Nucleotide Sequence Submission System?
 category: faq
 db:

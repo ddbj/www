@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 公開されたデータを非公開に戻したい
 category: faq
 db:

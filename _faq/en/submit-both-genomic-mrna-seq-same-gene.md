@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Should we submit both genomic and mRNA sequences of the same gene to DDBJ?
 category: faq
 db:

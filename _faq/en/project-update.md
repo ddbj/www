@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How do I update my BioProject?
 category: faq
 db:

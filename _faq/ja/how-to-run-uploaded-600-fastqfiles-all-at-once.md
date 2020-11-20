@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 600ほどのFastqファイルをアップロードしたのですが、まとめてrunする方法はありますか
 category: faq
 db:

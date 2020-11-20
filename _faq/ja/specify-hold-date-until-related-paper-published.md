@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 論文が公表されるまでデータを非公開にしたいのですが、その場合も公開予定日は必要ですか
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 既報の配列に対するアノテーション情報のみを登録することは可能でしょうか
 category: faq
 db:

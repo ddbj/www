@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 塩基配列登録にはいくつのサンプルが必要ですか?
 category: faq
 db:

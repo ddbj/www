@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to entetr two or more features for a sequence?
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 論文に DDBJ を利用したことについて謝辞を記載したいと思います。書式を教えてください。
 category: faq
 db:

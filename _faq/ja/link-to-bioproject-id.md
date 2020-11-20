@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: BioProject アクセッション番号の記入箇所は?
 category: faq
 db:

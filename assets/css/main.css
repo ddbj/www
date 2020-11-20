@@ -776,6 +776,10 @@ input, textarea, select, button {
       content: ">";
       margin: 0 .75rem 0 0.5rem; }
 
+.page-title.-small > .title {
+  font-size: 2rem;
+  font-weight: bold; }
+
 .panel-view-container {
   display: flex;
   flex-wrap: wrap;
@@ -1054,7 +1058,8 @@ input, textarea, select, button {
       display: none; }
     .tagging-list-view .taggingitem > .upper > .title {
       font-size: 1.6rem;
-      line-height: 1.2; }
+      line-height: 1.2;
+      margin-bottom: .4rem; }
 
 .tags-view > .tag {
   color: #FF7300;
@@ -1272,6 +1277,16 @@ input, textarea, select, button {
       width: calc( 100% / 3 - 2rem); }
       #ServicesView[data-appearance-type="panel"] > .container > .service > .links {
         bottom: 1rem; }
+
+#SimpleView {
+  border-bottom: 0.3rem solid #6D5C3F;
+  background-color: white; }
+  #SimpleView > .inner {
+    margin: 0 auto;
+    max-width: 128rem;
+    padding: 0 4rem 2rem; }
+    #SimpleView > .inner.-stretched {
+      max-width: 100%; }
 
 #TopPageView {
   background-color: white; }

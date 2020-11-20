@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 公開予定日を設定して登録したデータが公開される際、DDBJ から何か連絡はありますか
 category: faq
 db:

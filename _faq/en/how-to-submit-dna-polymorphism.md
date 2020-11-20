@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to submit sequence data related to DNA polymorphism?
 category: faq
 db:

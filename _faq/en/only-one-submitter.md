@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Is it OK to submit sequence data by only one submitter?
 category: faq
 db:

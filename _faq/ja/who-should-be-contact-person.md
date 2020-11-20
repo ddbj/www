@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: contact person は誰にすべきでしょうか
 category: faq
 db:

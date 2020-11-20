@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 現在公開されている配列の更新前の内容を参照できますか
 category: faq
 db:

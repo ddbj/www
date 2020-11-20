@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Instrument modelの選択肢にIon Torrentがないのですが、どうすれば良いですか。
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Do I need to make a separate BioProject for every type of data?
 category: faq
 db:

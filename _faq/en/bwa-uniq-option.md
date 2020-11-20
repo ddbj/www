@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: This question pertains to the BWA uniq option in the [Set Optional Parameters window]. What are the differences between the four possible choices for “Please choose uniq mode.”?
 category: faq
 db:

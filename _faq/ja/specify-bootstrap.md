@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: ClustalW での解析時に BOOTSTRAP を指定することはできますか
 category: faq
 db:

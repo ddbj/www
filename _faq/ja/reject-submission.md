@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 送付した配列データが登録されないということはあるのですか
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 論文情報を追加するには？
 category: faq
 db:

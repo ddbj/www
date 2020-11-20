@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: On HTTP upload, the files are not displayed in a list
 category: faq
 db:

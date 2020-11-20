@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: アクセッション番号の連絡がありませんが、データ送付後 番号発行まで何日かかりますか
 category: faq
 db:

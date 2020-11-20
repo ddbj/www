@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: DRAのアカウントを所持しているがPipelineにログインできません
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 未公開のデータを公開する条件を教えてください
 category: faq
 db:

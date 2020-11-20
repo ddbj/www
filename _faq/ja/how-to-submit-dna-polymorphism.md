@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: DNA 多型のデータはどのように記載して登録すれば良いでしょうか
 category: faq
 db:

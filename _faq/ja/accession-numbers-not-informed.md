@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: アクセッション番号が届きません
 category: faq
 db:

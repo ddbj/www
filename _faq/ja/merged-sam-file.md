@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: '[Detail view 画面] samtools view -hX out.bam>out.samXとmerged SAMがどのようなファイルなのかわかりません'
 category: faq
 db:

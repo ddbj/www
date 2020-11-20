@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: What is changed in the new JGA system released in 29th September 2020?
 category: faq
 db:

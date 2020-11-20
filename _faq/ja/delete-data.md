@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: DDBJ に登録したデータを抹消したい
 category: faq
 db:

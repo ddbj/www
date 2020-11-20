@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Contact form is not displayed
 category: faq
 db:

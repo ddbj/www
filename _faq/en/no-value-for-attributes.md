@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: What should be provided when information is unavailable?
 category: faq
 db:

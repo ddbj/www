@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Can I submit seuqence data without any published paper, during writing or in press?
 category: faq
 db:

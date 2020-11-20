@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 期待している検索結果が得られません。検索方法が誤っているのでしょうか
 category: faq
 db:

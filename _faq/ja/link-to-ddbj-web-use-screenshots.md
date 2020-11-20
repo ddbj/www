@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: DDBJ ホームページへのリンクを貼りたい，または ホームページのコンテンツを掲載したい
 category: faq
 db:

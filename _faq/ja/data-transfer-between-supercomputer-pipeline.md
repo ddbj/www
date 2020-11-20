@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: DDBJのスパコンにあるデータをPipelineに送るにはどうしたらいいですか、またPipeline解析後のデータをスパコンに送るにはどうしたらいいですか？
 category: faq
 db:

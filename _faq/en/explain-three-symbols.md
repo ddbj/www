@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: What are the meanings of the three symbols “*”, “.”, and “:” in ClustalW?
 category: faq
 db:

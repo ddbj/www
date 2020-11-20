@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: I don’t know what kind of files samtools view –hX out.bam>out.sam and merged SAM are.
 category: faq
 db:

@@ -8,7 +8,11 @@ layout: default
       <nav class="breadcrumb">
         <ul>
           <li>
-            <a href="index.html">{% if page.lang == 'ja' %}ホーム{%  else %}Home{% endif %}</a>
+            {% if page.lang == 'ja' %}
+            <a href="{{ site.url }}">ホーム</a>
+            {% else %}
+            <a href="{{ site.url }}/index-e">Home</a>
+            {% endif %}
           </li>
           <li>
             <a href="{{site.url}}{{site.baseurl}}/{{ page.category }}">{{ page.category }}</a>
@@ -19,9 +23,6 @@ layout: default
         </ul>
       </nav>
     </div>
-    {% include search-form.html color="white" %}
-    {% endcomment %}
-
     {% include tab-menu.html %}
 
   </div>

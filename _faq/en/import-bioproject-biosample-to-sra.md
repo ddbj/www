@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How do I import a BioProject or BioSample accession into the DRA?
 category: faq
 db:

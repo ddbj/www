@@ -3,14 +3,6 @@ layout: children
 title: よくある質問
 lang: ja
 db_labels:
-  bioproject: BioProject
-  biosample: BioSample
-  dra: Sequence Read Archive (DRA)
-  ddbj: Annotated/Assembled Sequences (DDBJ)
-  gea: Genomic Expression Archive (GEA)
-  jga: Japanese Genotype-phenotype Archive (JGA)
-  agd: AMED Genome Group Sharing Database (AGD)
-  top: DDBJ Center
 ---
 <div id="NavigationAndMainView">
   <div class="inner">
@@ -23,7 +15,7 @@ db_labels:
 
     <main class="mainview">
       <ul class="tagging-list-view">
-        {% assign faqs = site.faq | where: "layout", "indexed_content" %}
+        {% assign faqs = site.faq | where: "lang", "ja" | where: "layout", "simple" %}
         {% for faq in faqs %}
           <li class="tagging-item-view taggingitem">
             <div class="upper">
@@ -32,11 +24,13 @@ db_labels:
               </h2>
               <ul class="tags">
                 <li class="date"><time>{{ faq.date | date: "%Y / %m / %d" }}</time></li>
-                <li class="tag-view" data-tag="{{ faq.tags }}">{{ faq.tags }}</li>
+                {% for tag in faq.tags %}
+                <li class="tag-view" data-tag="{{ tag }}">{{ tag }}</li>
+                {% endfor %}
                 {% assign dbs = faq.db %}
                 {% for db in dbs %}
-                  <li class="tag-view" data-tag="{{ db }}">{{ page.db_labels[db] }}</li>
-                  {% endfor %}
+                <li class="tag-view" data-tag="{{ db }}">{% if site.data.label_dictionary[db] %}{{ site.data.label_dictionary[db][page.lang] }}{% else %}[{{ db }}]{% endif %}</li>
+                {% endfor %}
               </ul>
             </div>
             <div class="bottom -collapsed">

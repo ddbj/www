@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 更新対象の件数／変更箇所が非常に多いのですが、どのように連絡すればよいでしょうか
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How can I get protein_id?
 category: faq
 db:

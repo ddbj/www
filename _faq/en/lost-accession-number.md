@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: I lost my accession number
 category: faq
 db:

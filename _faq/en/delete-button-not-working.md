@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: The Delete button shown at the upper left of the [Job Status window] does not do anything. Also, I want to change the displayed file name.
 category: faq
 db:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: MSS application form is not displayed
 category: faq
 db:

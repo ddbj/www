@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: What is the relationship between BioSamples, SRA Experiments, SRA Runs, and my data files?
 category: faq
 db:

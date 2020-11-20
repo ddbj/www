@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: mappingで生成されるファイルはSAMファイルだけで、BAMファイルの生成は別途、SAMToolsで行わなければならない？
 category: faq
 db:

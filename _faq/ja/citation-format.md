@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 投稿論文にアクセッション番号を記載するときのフォーマットはありますか？
 category: faq
 db:

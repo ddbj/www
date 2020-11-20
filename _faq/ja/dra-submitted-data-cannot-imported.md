@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: '[Import public DRA タブ] DRAに登録したデータが、インポートできません。'
 category: faq
 db:

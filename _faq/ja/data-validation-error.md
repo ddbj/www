@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: データファイルの検証処理エラーへの対処方法は？
 category: faq
 db:

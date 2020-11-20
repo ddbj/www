@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: How to submit assembled EST sequences?
 category: faq
 db:

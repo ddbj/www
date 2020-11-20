@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: What format should I use when including results obtained with DDBJ search and analysis software in a journal publication?
 category: faq
 db:

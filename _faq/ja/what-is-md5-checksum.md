@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: MD5 チェックサムとは何でしょうか?
 category: faq
 db:

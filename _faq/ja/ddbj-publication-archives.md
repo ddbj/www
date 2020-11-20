@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: DDBJ の情報配信サービスにはどのようなものがありますか
 category: faq
 db:

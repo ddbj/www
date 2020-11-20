@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 塩基配列データの登録は論文が公開されていない場合、作成中・投稿中・投稿予定なし などでも可能ですか
 category: faq
 db:

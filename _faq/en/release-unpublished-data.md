@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Tell us conditions to release unpublished data.
 category: faq
 db:

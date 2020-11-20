@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 複数の塩基配列を入力する方法は？
 category: faq
 db:

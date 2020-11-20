@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: '"Invalid value [***] for [transl_table] qualifier." というエラーが表示されました'
 category: faq
 db:

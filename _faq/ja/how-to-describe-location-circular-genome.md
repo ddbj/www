@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 環状ゲノムにおいて、ある feature が最後の塩基から最初の塩基につながる場合、location の記載方法を教えてください
 category: faq
 db:

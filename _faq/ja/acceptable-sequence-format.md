@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: Submission可能な塩基配列の形式 (FASTA、multi-FASTA) について
 category: faq
 db:

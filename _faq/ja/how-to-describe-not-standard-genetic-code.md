@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 塩基配列とアミノ酸配列の対応関係が標準的な遺伝暗号表と異なる場合の CDS feature の記載方法を教えてください
 category: faq
 db:

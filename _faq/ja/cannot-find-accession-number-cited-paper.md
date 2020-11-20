@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: 論文に掲載されているアクセッション番号が検索できません
 category: faq
 db:

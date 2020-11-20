@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: We would like to acknowledge the NIG Supercomputer System in our publication.
 category: faq
 db:

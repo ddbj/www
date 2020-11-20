@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: I don’t know the difference between SAMtools pileup and SAMtools mpileup.
 category: faq
 db:

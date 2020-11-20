@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: EST アセンブルによって得られた配列データは登録可能でしょうか
 category: faq
 db:

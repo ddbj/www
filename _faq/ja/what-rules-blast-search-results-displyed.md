@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: BLAST の検索結果の表示順にはどのようなルールがありますか？
 category: faq
 db:

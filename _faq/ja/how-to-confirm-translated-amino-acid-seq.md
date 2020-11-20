@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: CDS feature の翻訳アミノ酸配列 (/translation qualifier) を確認する方法は？
 category: faq
 db:

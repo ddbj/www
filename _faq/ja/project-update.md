@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: BioProject を更新するには？
 category: faq
 db:
