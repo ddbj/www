@@ -6,7 +6,7 @@
         en: 'Services'
       },
       uri: {
-        ja: 'https://www.ddbj.nig.ac.jp/services/index.html',
+        ja: 'https://www.ddbj.nig.ac.jp/services.html',
         en: 'https://www.ddbj.nig.ac.jp/services-e.html'
       }
     },
@@ -26,8 +26,8 @@
         en: 'Statistics'
       },
       uri: {
-        ja: 'https://www.ddbj.nig.ac.jp/statistics/index.html',
-        en: 'https://www.ddbj.nig.ac.jp/statistics/index-e.html'
+        ja: 'https://www.ddbj.nig.ac.jp/statistics.html',
+        en: 'https://www.ddbj.nig.ac.jp/statistics-e.html'
       }
     },
     {
@@ -36,8 +36,8 @@
         en: 'Activities'
       },
       uri: {
-        ja: 'https://www.ddbj.nig.ac.jp/activities/index.html',
-        en: 'https://www.ddbj.nig.ac.jp/activities/index-e.html'
+        ja: 'https://www.ddbj.nig.ac.jp/activities.html',
+        en: 'https://www.ddbj.nig.ac.jp/activities-e.html'
       }
     },
     {
@@ -46,8 +46,8 @@
         en: 'About Us'
       },
       uri: {
-        ja: 'https://www.ddbj.nig.ac.jp/ddbj-center.html',
-        en: 'https://www.ddbj.nig.ac.jp/ddbj-center-e.html　'
+        ja: 'https://www.ddbj.nig.ac.jp/aboutus.html',
+        en: 'https://www.ddbj.nig.ac.jp/aboutus-e.html'
       }
     }
   ];
@@ -68,8 +68,8 @@
         en: 'Contact'
       },
       uri: {
-        ja: 'https://www.ddbj.nig.ac.jp/contact-ddbj.html',
-        en: 'https://www.ddbj.nig.ac.jp/contact-ddbj-e.html'
+        ja: 'https://www.ddbj.nig.ac.jp/contact.html',
+        en: 'https://www.ddbj.nig.ac.jp/contact-e.html'
       }
     }
   ];
@@ -233,7 +233,7 @@
               ja: 'Annotated/Assembled Sequences (DDBJ)'
             },
             uri: {
-              en: 'https://www.ddbj.nig.ac.jp/ddbj/index.html',
+              en: 'https://www.ddbj.nig.ac.jp/ddbj/index-e.html',
               ja: 'https://www.ddbj.nig.ac.jp/ddbj/index.html'
             }
           },
@@ -353,8 +353,8 @@
           ja: '講習会'
         },
         uri: {
-          en: 'https://ddbj.nig.ac.jp/activities/index-e.html',
-          ja: 'https://ddbj.nig.ac.jp/activities/index.html'
+          en: 'https://ddbj.nig.ac.jp/training-e.html',
+          ja: 'https://ddbj.nig.ac.jp/training.html'
         }
       },
       {
@@ -367,8 +367,8 @@
           ja: 'RSS で DDBJ からのお知らせを取得'
         },
         uri: {
-          en: 'https://ddbj.nig.ac.jp/data-feed-e.html',
-          ja: 'https://ddbj.nig.ac.jp/data-feed.html'
+          en: 'https://ddbj.nig.ac.jp/announcements-e.html',
+          ja: 'https://ddbj.nig.ac.jp/announcements.html'
         },
         logo: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs><style>.cls-1{fill:#ea7819;}</style></defs><path id="path3844" class="cls-1" d="M10.5,20.52a9.58,9.58,0,0,1,9.56,9.62H24A13.55,13.55,0,0,0,10.5,16.58v3.94Zm0-7A16.58,16.58,0,0,1,27,30.15H31A20.53,20.53,0,0,0,10.5,9.6ZM16,27.4a2.73,2.73,0,1,1-2.73-2.73A2.72,2.72,0,0,1,16,27.4Z"/></svg>'
       },
@@ -549,7 +549,7 @@
       },
       uri: {
         en: 'https://www.ddbj.nig.ac.jp/news/en/index-e.html',
-        ja: 'https://www.ddbj.nig.ac.jp/news/ja'
+        ja: 'https://www.ddbj.nig.ac.jp/news/ja/index.html'
       }
     },
     {
@@ -576,8 +576,8 @@
         ja: 'サイトマップ'
       },
       uri: {
-        en: 'https://www.ddbj.nig.ac.jp/sitemaps-e.html',
-        ja: 'https://www.ddbj.nig.ac.jp/sitemaps.html'
+        en: 'https://www.ddbj.nig.ac.jp/sitemap-e.html',
+        ja: 'https://www.ddbj.nig.ac.jp/sitemap.html'
       }
     },
     {
@@ -604,8 +604,8 @@
         ja: 'DDBJ Center 住所'
       },
       uri: {
-        en: 'https://www.ddbj.nig.ac.jp/ddbj-access-e.html',
-        ja: 'https://www.ddbj.nig.ac.jp/ddbj-access.html'
+        en: 'https://www.ddbj.nig.ac.jp/access-e.html',
+        ja: 'https://www.ddbj.nig.ac.jp/access.html'
       }
     },
     {
@@ -618,8 +618,8 @@
         ja: 'DDBJ センターに連絡'
       },
       uri: {
-        en: 'https://www.ddbj.nig.ac.jp/contact-ddbj-e.html',
-        ja: 'https://www.ddbj.nig.ac.jp/contact-ddbj.html'
+        en: 'https://www.ddbj.nig.ac.jp/contact-e.html',
+        ja: 'https://www.ddbj.nig.ac.jp/contact.html'
       }
     }
   ];
