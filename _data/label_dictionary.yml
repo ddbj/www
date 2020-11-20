@@ -1,0 +1,45 @@
+bioproject:
+  en: BioProject
+  ja: BioProject
+biosample:
+  en: BioSample
+  ja: BioSample
+dra:
+  en: Sequence Read Archive (DRA)
+  ja: Sequence Read Archive (DRA)
+ddbj:
+  en: Annotated/Assembled Sequences (DDBJ)
+  ja: Annotated/Assembled Sequences (DDBJ)
+gea:
+  en: Genomic Expression Archive (GEA)
+  ja: Genomic Expression Archive (GEA)
+jga:
+  en: Japanese Genotype-phenotype Archive (JGA)
+  ja: Japanese Genotype-phenotype Archive (JGA)
+agd:
+  en: AMED Genome Group Sharing Database (AGD)
+  ja: AMED Genome Group Sharing Database (AGD)
+top:
+  en: DDBJ Center
+  ja: DDBJ Center
+pipeline:
+  en: Pipeline
+  ja: Pipeline
+getentry:
+  en: getentry
+  ja: getentry
+arsa:
+  en: ARSA
+  ja: ARSA
+blast:
+  en: BLAST
+  ja: BLAST
+ftp:
+  en: FTP
+  ja: FTP
+clustalw:
+  en: ClustalW
+  ja: ClustalW
+faq:
+  en: FAQ
+  ja: よくある質問

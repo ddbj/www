@@ -2627,20 +2627,20 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"/_data/label_dictionary.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_data/label_dictionary.yml",
+		"oF": 0
+		},
 	"/_data/services.yml": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/_data/services.yml",
-		"oF": 0
-		},
-	"/_data/tag_formal_names.yml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_data/tag_formal_names.yml",
 		"oF": 0
 		},
 	"/_ddbj/assembly-e.md": {

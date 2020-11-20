@@ -15,7 +15,7 @@ db_labels:
 
     <main class="mainview">
       <ul class="tagging-list-view">
-        {% assign faqs = site.faq | where: "lang", "ja" | where: "layout", "indexed_content" %}
+        {% assign faqs = site.faq | where: "lang", "ja" | where: "layout", "simple" %}
         {% for faq in faqs %}
           <li class="tagging-item-view taggingitem">
             <div class="upper">
@@ -29,8 +29,7 @@ db_labels:
                 {% endfor %}
                 {% assign dbs = faq.db %}
                 {% for db in dbs %}
-                <p>{{ site.data.tag_formal_names[db] }}</p>
-                <li class="tag-view" data-tag="{{ db }}">{% if site.data.tag_formal_names[db] %}{{ site.data.tag_formal_names[db] }}{% else %}[{{ db }}]{% endif %}</li>
+                <li class="tag-view" data-tag="{{ db }}">{% if site.data.label_dictionary[db] %}{{ site.data.label_dictionary[db][page.lang] }}{% else %}[{{ db }}]{% endif %}</li>
                 {% endfor %}
               </ul>
             </div>

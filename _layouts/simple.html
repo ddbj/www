@@ -8,17 +8,21 @@ layout: default
       <nav class="breadcrumb">
         <ul>
           <li>
-            <a href="index.html">{% if page.lang == 'ja' %}ホーム{%  else %}Home{% endif %}</a>
+            {% if page.lang == 'ja' %}
+            <a href="{{ site.url }}">ホーム</a>
+            {% else %}
+            <a href="{{ site.url }}/index-e">Home</a>
+            {% endif %}
           </li>
           <li>
             {% if page.category == 'faq' or page.category == 'news' %}
-            <a href="{{site.url}}{{site.baseurl}}/{{ page.category }}/{{page.lang}}/">{{ page.category }}</a>
+            <a href="{{site.url}}{{site.baseurl}}/{{ page.category }}/{{page.lang}}/">{{ site.data.label_dictionary[page.category][page.lang] }}</a>
             {% else %}
             <a href="{{site.url}}{{site.baseurl}}/{{ page.category }}">{{ page.category }}</a>
             {% endif %}
           </li>
           <li>
-            <a href="">{{ page.title }}</a>
+            <a>{{ page.title }}</a>
           </li>
         </ul>
       </nav>
