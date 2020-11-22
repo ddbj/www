@@ -10,7 +10,7 @@ date: 2014-06-13T14:33:41
 lang: en
 ---
 
-## Why is the retracted data still available?
+
 
 <p>For once published entries, we can restrict to use the data, if the conditions are <a href="/faq/en/restore-released-data-private-e.html">right</a>. <br>In case of the restriction, DDBJ will not include the data in its periodical release and remove from all services under DDBJ. <br>However, the data is permanently available on <a href="http://getentry.ddbj.nig.ac.jp/top-e.html">getentry</a> queried with its accession number. <br># The rule is not applied, when the data is published by any mistake of INSD. <br> This policy is written in the document prepared by <a href="/insdc-e.html#iac">International Advisory Committee</a> of INSD on <a href="/insdc-e.html#policy">Overview of International Nucleotide Sequence Databases Policies</a> as follows; </p>
 <hr>

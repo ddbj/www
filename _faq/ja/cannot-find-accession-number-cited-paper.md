@@ -10,7 +10,7 @@ date: 2014-06-03T18:31:09
 lang: ja
 ---
 
-## 論文に掲載されているアクセッション番号が検索できません
+
 
 <p>DDBJ では、<a href="/documents/data-release-policy.html">データ公開原則</a> に従い、<a href="/ddbj/submission.html#holddate">公開予定日</a>とともに登録された配列データの公開作業を行なっています。</p>
 <p>論文に掲載されている ID が <a href="/documents/accessions.html">国際塩基配列データベースのアクセッション番号</a> かどうか、 今一度ご確認ください。</p>

@@ -8,7 +8,7 @@ date: 2015-04-28T14:50:42
 lang: en
 ---
 
-## This question pertains to the BWA uniq option in the [Set Optional Parameters window]. What are the differences between the four possible choices for “Please choose uniq mode.”?
+
 
 <ol>
   <li>Do not remove any read.Do not take any steps to ensure uniqueness.</li>

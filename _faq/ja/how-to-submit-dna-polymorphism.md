@@ -10,7 +10,7 @@ date: 2014-06-03T15:04:27
 lang: ja
 ---
 
-## DNA 多型のデータはどのように記載して登録すれば良いでしょうか
+
 
 <p><a href="/ddbj/representative-sequence.html">多型関連研究における同一配列の代表データ登録</a> をご参照ください。</p>
 <dl><dt>参考</dt>

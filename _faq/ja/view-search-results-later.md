@@ -10,7 +10,7 @@ date: 2014-06-18T09:52:11
 lang: ja
 ---
 
-## 検索結果を後で見ることは可能ですか？
+
 
 <html>
 <dl class="d-triangle"><dt>検索結果は Request ID を入れた，下記の URL で表示できます。</dt>

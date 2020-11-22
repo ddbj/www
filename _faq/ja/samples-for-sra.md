@@ -11,7 +11,7 @@ date: 2014-06-04T12:09:53
 lang: ja
 ---
 
-## 塩基配列登録にはいくつのサンプルが必要ですか?
+
 
 <p>BioSample はデータベースに登録する実験データを得るために使われた生物学的な試料やサンプルに対するレコードです。Biological/Technical replicate は BioSample で "replicate" というユーザ定義の属性を使い "replicate = biological replicate 1" のようにしてサンプルを区別します。</p>
 <p>それぞれに採取された，物理的に異なる環境サンプルはユニークな BioSampleになりますが，サンプルに含まれる配列によって由来が区別されたリードは BioSample に該当しません。 DRA のデータファイルは一つのBioSample にしかリンクできないことに注意してください。</p>基本的な考え方:

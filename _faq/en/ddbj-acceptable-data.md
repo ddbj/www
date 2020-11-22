@@ -10,7 +10,7 @@ date: 2014-06-16T14:57:52
 lang: en
 ---
 
-## What kinds of data are acceptable at DDBJ?
+
 
 <p>See <a href="/documents/data-categories-e.html">Categories for Sequence Data</a>. </p>
 <p>If you are not sure to which category your sequence data should be submitted, see followings; </p>

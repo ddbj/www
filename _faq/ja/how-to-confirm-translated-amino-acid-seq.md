@@ -10,7 +10,7 @@ date: 2014-06-04T16:20:42
 lang: ja
 ---
 
-## CDS feature の翻訳アミノ酸配列 (/translation qualifier) を確認する方法は？
+
 
 <p><a href="/ddbj/cds.html">CDS features</a> のアミノ酸配列を確認するには、以下の操作を行ってください。</p>
 <dl>

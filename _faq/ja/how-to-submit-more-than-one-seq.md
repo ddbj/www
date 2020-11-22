@@ -10,7 +10,7 @@ date: 2014-06-04T16:09:06
 lang: ja
 ---
 
-## 複数の塩基配列を入力する方法は？
+
 
 <p><a href="/ddbj/web-submission-help.html#flow-5">5.Sequence</a> において、複数の塩基配列を <strong><a href="/faq/ja/acceptable-sequence-format.html">multi-FASTA format</a></strong> で入力してください。連続したアクセッション番号を発行いたします。<br>
   <!-- Nucleotide Sequence Submission System --><a href="/ddbj/web-submission-help.html#flow-7">7.Annotation</a> に遷移した際に、各塩基配列に対する annotation をまとめて入力できるようになります。</p>

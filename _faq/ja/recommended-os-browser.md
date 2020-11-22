@@ -11,7 +11,7 @@ date: 2015-04-24T13:44:12
 lang: ja
 ---
 
-## DDBJ のサービスが推奨するOSとブラウザについて
+
 
 DDBJ の各サービスは以下の環境で動作確認を行っています。
 <dl class="d-triangle"><dt>DDBJ HP</dt>

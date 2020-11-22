@@ -11,7 +11,7 @@ date: 2014-06-04T17:12:53
 lang: ja
 ---
 
-## BioSample，DRA Experiment，DRA Run とデータファイルとの間の関係は?
+
 
 <p>BioSample はデータベースに登録する実験データを得るために使われた生物学的な試料やサンプルに対して作成します。Biological/Technical replicate は異なる BioSample として登録し，サンプル属性 replicate に \"biological replicate 1\"，\"biological replicate 2\" のように記載して replicate であることを表現します。</p>
 <p>DRA のデータファイルは一つの BioSample にしかリンクできないことに注意してください。</p>

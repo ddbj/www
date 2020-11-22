@@ -10,7 +10,7 @@ date: 2014-12-25T10:38:13
 lang: en
 ---
 
-## How are my data files processed?
+
 
 <p>Uploaded data files are processed per Run. All files under a Run are merged into single <a href="http://www.ncbi.nlm.nih.gov/books/NBK47539/#SRA_Overview_BK.SRA_Architecture">binary SRA file</a> by using <a href="http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc">SRA toolkit</a>. During this conversion, length and format of all reads are checked.</p>
 <p>Read names are editted and identifiers (DRR accession number + serial number) are automatically inserted (<a href="http://trace.ncbi.nlm.nih.gov/Traces/sra/?view=run_browser&amp;run=DRR000001">example: DRR000001</a>). <span class="red">Original read names should be unique in a Run.</span> A DRR accession number is used as a filename. If the <a href="/dra/submission.html#File_Type">"generic_fastq"</a> is selected for the filetype, read names are replaced with the DRR accession number + serial number. (<a href="http://trace.ncbi.nlm.nih.gov/Traces/sra/?view=run_browser&amp;run=DRR030615">example: DRR030615</a>).</p>

@@ -10,7 +10,7 @@ date: 2014-01-23T11:18:42
 lang: en
 ---
 
-## Why is reads number of fastq less than that of SRA file?
+
 
 <p>The DRA generates fastq files from the raw data SRA files by using the <a href="http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc&amp;f=fastq-dump">fastq-dump</a> in the <a href="http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc">NCBI SRA Toolkit</a> with following options.</p>
 <p class="code break">fastq-dump -M 25 -E --skip-technical --split-3 -W <span class="italic">&lt;SRA file&gt;</span></p>

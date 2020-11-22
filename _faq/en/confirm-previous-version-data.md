@@ -10,6 +10,6 @@ date: 2014-06-10T10:18:00
 lang: en
 ---
 
-## Can I confirm previous version of the sequence data?
+
 
 <p>Previous versions of sequence data are available by using getentry webAPI. </p><p>See <a href="/services/getentry-e.html#gethistory">gethistory</a> on <a href="/services/getentry-e.html">getentry HELP</a>. </p>

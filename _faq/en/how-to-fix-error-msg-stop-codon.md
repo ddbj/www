@@ -10,14 +10,14 @@ date: 2014-07-07T17:41:01
 lang: en
 ---
 
-## How to fix error message: "Stop codon ‘*’ is found in the range."?
+
 
 <p>In general, see <a href="/ddbj/cds-e.html#stop">How to describe CDS feature, when termination codon is found in the range</a>. <br>You can also see <a href="/ddbj/cds-e.html">Protein Coding Sequence; CDS feature</a> to describe CDS feature. <br>Following items are case study for the error. </p>
 <p><strong>1.</strong> Did you correctly specify /<a href="/ddbj/qualifiers-e.html#codon_start">codon_start</a> qualifier to indicate reading frame of the CDS feature?<br> Select 1, 2 or 3, appropriately. </p>
 <dl><dt>References:</dt>
   <dd><a href="/ddbj/cds-e.html#frame">Offset of the frame at translation initiation by codon_start</a></dd>
   <dd><a href="/faq/en/how-to-fix-error-msg-first-codon-e.html">How to fix error message: “First codon [***] is not a start codon.” / “Final codon [***] is not a stop codon.”?</a></dd>
-  <dd><a href="/faq/en/how-to-fix-error-msg-codon-start-e.html">How to fix error message: "Value of [ codon_start ] is not 1, but [###..###] is 5' complete type."?</a></dd>
+  <dd><a href="/faq/en/how-to-fix-error-msg-codon-start-e.html">How to fix error message: "Value of [ codon_start ] is not 1, but [
 </dl>
 <p><strong>2.</strong> Have you specify correct <a href="/ddbj/geneticcode-e.html">genetic code</a> for /<a href="/ddbj/qualifiers-e.html#transl_table">transl_table</a> qualifier?<br>See followings and specify genetic code, appropriately. </p>
 <dl><dt>References</dt>

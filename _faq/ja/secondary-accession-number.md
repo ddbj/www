@@ -10,7 +10,7 @@ date: 2014-06-03T16:48:55
 lang: ja
 ---
 
-## セカンダリアクセッション番号とは何ですか
+
 
 <p>DDBJ を含む<a href="/insdc.html">国際塩基配列データベース</a> が、登録された塩基配列データに対して発行する番号を<a href="/documents/accessions.html">アクセッション番号 (accession number)</a> と呼んでいます。<br><a href="/ddbj/flat-file.html">DDBJ 公開形式 (flat file)</a> においては <a href="/ddbj/flat-file.html#AccessionB">ACCESSION</a> 行に記載されています。</p>
 <p>複数エントリの統合、大幅な内容変更など、既に登録された塩基配列の更新に相当する場合でも、新規に登録し直して アクセッション番号を発行することがあります。 この際に、新規のアクセッション番号 (プライマリアクセッション番号) に対して、既存のアクセッション番号をセカンダリアクセッション番号とすることがあります。</p>

@@ -10,7 +10,7 @@ date: 2014-06-13T16:44:23
 lang: en
 ---
 
-## When updating published sequence data, can I hold updated version in the mean time?
+
 
 <p>DDBJ does not accept any reservation for updating sequence data. <br>Therefore, in case of updating published data, the data will be immediately re-distributed after update. </p>
 <p>Please select either of following ways. </p>

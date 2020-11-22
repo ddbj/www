@@ -10,7 +10,7 @@ date: 2017-08-28T14:37:00
 lang: en
 ---
 
-## Contact form is not displayed
+
 
 <p>If Contact form is not displayed, please send the following items by e-mail.</p>
 <hr>

@@ -10,7 +10,7 @@ date: 2017-08-25T09:50:00
 lang: en
 ---
 
-## Application form for Data Update Requests is not displayed
+
 
 <p>Depending on the country or area, MSS application form may not be displayed.<br>If application form is not displayed, please send the following items by e-mail.</p>
 <hr>

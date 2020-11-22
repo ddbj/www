@@ -10,7 +10,7 @@ date: 2020-10-15T11:19:00
 lang: en
 ---
 
-## I can not access by scp/ssh to the JGA server
+
 
 <p>First, confirm the following basic points.</p>
 <div class="sub_index">

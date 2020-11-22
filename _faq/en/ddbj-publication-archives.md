@@ -10,7 +10,7 @@ date: 2015-06-08T16:00:49
 lang: en
 ---
 
-## Please see the DDBJ publication archive.
+
 
 The services that exist for communicating information about DDBJ are as follows. Choose whichever resource is most appropriate for your purposes.<br>
 <ul>

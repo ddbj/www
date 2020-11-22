@@ -10,7 +10,7 @@ date: 2014-07-06T16:15:29
 lang: en
 ---
 
-## browser still waiting for response on the process of data input
+
 
 <p>At first, please save the URL of the page of Nucleotide Sequence Submission System. <br>Then, clear cache of the browser and reopen the saved URL. <br>It is likely to resolve the condition. </p>
 <p>If not resolved, confirm if you use either of browsers <strong><a href="http://www.mozilla.org/en-US/firefox/all/">Firefox</a></strong> or <strong><a href="http://www.google.com/chrome">Chrome</a></strong> that we recommend to use. <br>If not, change to Firefox or Chrome and reopen the URL. </p>

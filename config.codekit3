@@ -7,7 +7,7 @@
 		"uuidString": "3DC8E7FC-C471-446D-8EEF-270A0B0878D5"
 		}
 	],
-"creatorBuild": "33081",
+"creatorBuild": "33070",
 "files": {
 	"/.github/workflows/jekyll.yml": {
 		"cB": 0,
@@ -100191,7 +100191,7 @@
 		},
 	"/assets/images/books/integration_d_way.png": {
 		"ft": 32768,
-		"iS": 22721,
+		"iS": 59838,
 		"oA": 0,
 		"oAP": "/assets/images/books/integration_d_way.png",
 		"oF": 0,

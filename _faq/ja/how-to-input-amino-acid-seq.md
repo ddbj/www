@@ -10,7 +10,7 @@ date: 2014-06-04T14:03:42
 lang: ja
 ---
 
-## アミノ酸配列 (/translation qualifier) は どのようにして入力するのでしょうか
+
 
 <p>アミノ酸配列は塩基配列と <a href="/ddbj/cds.html">CDS feature</a> の location などから自動的に生成し、<a href="/ddbj/qualifiers.html#translation">/translation qualifier</a> に反映しています。通常は入力しないでください。</p>
 <dl><dt>参考</dt>

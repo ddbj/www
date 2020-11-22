@@ -10,7 +10,7 @@ date: 2014-04-11T18:01:17
 lang: ja
 ---
 
-## 投稿論文にアクセッション番号を記載するときのフォーマットはありますか？
+
 
 <html>
 <p>投稿を予定している雑誌などの，執筆規定に従ってください。</p><b>記載例</b><br> Nucleotide sequence data reported are available in the DDBJ Sequenced Read Archive under the accession numbers DRXxxxxxx and DRXxxxxxx.

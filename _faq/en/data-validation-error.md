@@ -10,7 +10,7 @@ date: 2014-01-23T11:16:53
 lang: en
 ---
 
-## How to deal with validation errors?
+
 
 <p></p>
 <div class="faq_list">

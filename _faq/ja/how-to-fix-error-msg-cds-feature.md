@@ -10,7 +10,7 @@ date: 2014-06-04T15:55:42
 lang: ja
 ---
 
-## "To use [translation] qualifier, [exception] qualifier is required in the [CDS] feature." というエラーが表示されました
+
 
 <p>この error message は <a href="/ddbj/cds.html#translation">CDS feature</a> において [Select Qualifier] で /<a href="/ddbj/qualifiers.html#translation">translation</a> を選択した場合に出力されます。<br>
   <!-- Nucleotide Sequence Submission System -->通常、/translation qualifier は CDS feature の情報を基に自動翻訳した結果を出力しますので、登録者側で記載する必要はありません。<br>/translation qualfier を削除することで、エラーは解消します。</p>

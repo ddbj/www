@@ -10,7 +10,7 @@ date: 2014-07-01T16:22:45
 lang: en
 ---
 
-## Is there any case to reject submission to DDBJ?
+
 
 <p>See <a href="/documents/data-categories-e.html">Acceptable data for DDBJ</a>. <br>If you have any question, please contact us from <a href="/contact-ddbj-e.html#to-ddbj">contact form</a>. </p>
 <dl><dt>Reference</dt>

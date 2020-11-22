@@ -10,7 +10,7 @@ date: 2014-06-19T17:02:08
 lang: en
 ---
 
-## When we have no plan to paper publication, how to describe REFERENCE?
+
 
 <p>Regardless you are to publish academic paper or not, DDBJ accepts your submission of sequence data.<br>If you have no plan to paper publication, you have to fill following items of REFERENCE. </p>
 <ul>

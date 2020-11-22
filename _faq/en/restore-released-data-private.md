@@ -10,7 +10,7 @@ date: 2014-06-13T17:20:30
 lang: en
 ---
 
-## How to restore the released data to private?
+
 
 <p>In principle, DDBJ can not restore any published data. <br>See also following item about access restriction. </p>
 <p>In principle, you cannot remove your sequence data from DDBJ retrieval system: <a href="http://getentry.ddbj.nig.ac.jp/top-e.html">getentry</a>, if it has already been open to the public (If DDBJ wrongly published your data because of any mistakes, the data should be removed as soon as possible.). </p>

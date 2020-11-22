@@ -12,7 +12,7 @@ date: 2014-12-15T11:16:30
 lang: ja
 ---
 
-## BioProject/BioSample/塩基配列データの連動公開の仕組みは？
+
 
 <p>相互にリンクされている <a href="/bioproject/index.html">BioProject</a>，<a href="/biosample/index.html">BioSample</a>，<a href="/ddbj/submission.html">DDBJ</a> と <a href="/dra/index.html">DRA</a> に登録された塩基配列データの連動公開の仕組みは以下のようになっています。</p>
 <div class="sub_index">

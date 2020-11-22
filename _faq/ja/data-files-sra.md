@@ -10,7 +10,7 @@ date: 2014-12-25T10:21:37
 lang: ja
 ---
 
-## データファイルはどのように処理されますか？
+
 
 <p>アップロードされたデータファイルは Run 単位で処理されます。Run にリンクしている全てのデータファイルから <a href="http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc">SRA toolkit</a> により<a href="http://www.ncbi.nlm.nih.gov/books/NBK47539/#SRA_Overview_BK.SRA_Architecture">バイナリーの SRA ファイル</a>が作成されます。この過程でリード長やリード名の書式などが全ての配列に渡ってチェックされます。<span class="attention_text">元々のリード名は Run 単位でユニークである必要があります。</span></p>
 <p>リード名は編集され，DRR アクセッション番号に連番が付された ID が自動的に挿入されます。ファイル名には DRR アクセッション番号が付与されます (<a href="http://trace.ncbi.nlm.nih.gov/Traces/sra/?view=run_browser&amp;run=DRR000001">例: DRR000001</a>)。filetype に <a href="/dra/submission.html#File_Type">"generic_fastq"</a> を指定した場合，リード名は DRR 番号に連番が付された ID で置換されます (<a href="http://trace.ncbi.nlm.nih.gov/Traces/sra/?view=run_browser&amp;run=DRR030615">例: DRR030615</a>)。</p>

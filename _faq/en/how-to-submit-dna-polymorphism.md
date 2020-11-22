@@ -10,7 +10,7 @@ date: 2014-06-26T11:36:24
 lang: en
 ---
 
-## How to submit sequence data related to DNA polymorphism?
+
 
 <p>See <a href="/ddbj/representative-sequence-e.html">Representative submissions of identical sequences for variation studies</a>. </p>
 <dl><dt>References</dt>

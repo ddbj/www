@@ -12,7 +12,7 @@ date: 2014-01-23T11:22:22
 lang: en
 ---
 
-## How do I add reference information?
+
 
 <div class="term_def">
   <dl><dt><a href="/ddbj/submission.html">DDBJ Sequence Database</a></dt>

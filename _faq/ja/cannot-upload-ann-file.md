@@ -10,7 +10,7 @@ date: 2014-06-04T16:18:18
 lang: ja
 ---
 
-## アノテーションファイルを upload することができません
+
 
 <p>以下の点を確認の上、修正を行ってください</p>
 <!-- Nucleotide Sequence Submission System -->

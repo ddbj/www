@@ -10,7 +10,7 @@ date: 2014-07-07T14:17:55
 lang: en
 ---
 
-## How to confirm translated amino acid sequences (i.e. /translation qualifier) for CDS features?
+
 
 <p>You can confirm amino acid sequences for <a href="/ddbj/cds-e.html">CDS features</a> as follows. </p>
 <dl>

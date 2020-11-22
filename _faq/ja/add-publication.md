@@ -12,7 +12,7 @@ date: 2013-10-08T10:33:02
 lang: ja
 ---
 
-## 論文情報を追加するには？
+
 
 <div class="term_def">
   <dl> <dt>            <a href="/ddbj/submission.html">DDBJ 塩基配列データ </a>          </dt>

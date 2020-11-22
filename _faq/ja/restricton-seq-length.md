@@ -10,7 +10,7 @@ date: 2016-02-26T13:30:41
 lang: ja
 ---
 
-## 登録する塩基配列の長さに制限はありますか
+
 
 <dl><dt>上限</dt>
   <dd>実際に観測される連続した配列であるならば、塩基配列長の上限はありません。<br>ただし、染色体を操作的に連結した配列のような場合は受け付けません。染色体毎に個別の配列として受け付けます。<br>500 kbases より長い配列の場合は、<a href="/ddbj/web-submission.html">塩基配列登録システム (NSSS)</a> ではなく、<a href="/ddbj/mss.html">Mass Submission System (MSS)</a> から登録をお願いします。</dd><dt>下限</dt>

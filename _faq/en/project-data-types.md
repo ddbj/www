@@ -10,7 +10,7 @@ date: 2014-11-20T09:14:27
 lang: en
 ---
 
-## Do I need to make a separate BioProject for every type of data?
+
 
 <p>No, you do not. You should organize your BioProjects the most appropriate way for your research effort.</p>
 <p>From <a href="/news/en/2014-11-12-e.html">12 November 2014</a>, multiple <a href="/bioproject/submission.html#Project_data_type">Project data types</a> can be selected for a project in the submission system.</p>

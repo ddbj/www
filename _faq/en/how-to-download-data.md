@@ -10,7 +10,7 @@ date: 2014-01-23T11:21:04
 lang: en
 ---
 
-## How do I download files?
+
 
 <p>Download files from DDBJ ftp server at <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq">ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq</a>.</p>
 <h4 class="bold">wget</h4>

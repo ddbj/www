@@ -10,7 +10,7 @@ date: 2014-07-07T19:23:45
 lang: en
 ---
 
-## What is secondary accession number?
+
 
 <p><a href="/insdc-e.html#insd">INSD; International Nucleotide Sequence Database</a> are composed of DDBJ, ENA and NCBI, and collect experimentally determined nucleotide sequence data. <br>A unique <strong>accession number</strong> issued by INSD for each submitted sequence data is defined as <a href="/documents/accessions.html">the INSD accession number</a>. <br>On <a href="/ddbj/flat-file-e.html">DDBJ flat file</a>, the accession number is described in <a href="/ddbj/flat-file-e.html#AccessionB">ACCESSION</a> line. </p>
 <p>If multiple entries are united to an entry, or if an entry is extensively modified after the submission, the responsible data banks may assign a new accession number to it. In these cases, the new accession number is called the primary accession number, and the old accession number(s) is/are called the secondary accession number(s). </p>
