@@ -6,7 +6,7 @@ export default function taggingListView() {
   if (taggingListView) {
     // タグの収集
     const categoryTags = {}, affiliationTags = {}, tagLabels = {};
-    const taggingItems = taggingListView.querySelectorAll('.taggingitem')
+    const taggingItems = taggingListView.querySelectorAll('.taggingitem');
     for (const item of taggingItems) {
       const tags = item.querySelectorAll('.tags > .tag-view');
       for (const tag of tags) {
@@ -28,29 +28,30 @@ export default function taggingListView() {
     // ファセット検索用ビューの生成
     let html = '';
     const facetSearchTags = document.querySelector('.facet-search > .tags');
-    for (const array of [categoryTags, affiliationTags]) {
-      for (const tag in array) {
-        html += `<li class="tag-view${affiliationTags[tag] === undefined ? '' : ' -reverse'}" data-tag="${tag}">${tagLabels[tag]}<span class="count">${array[tag].length}</span></li>`;
+    for (const tags of [categoryTags, affiliationTags]) {
+      for (const tag in tags) {
+        html += `<li class="tag-view${affiliationTags[tag] === undefined ? '' : ' -reverse'}" data-tag="${tag}">${tagLabels[tag]}<span class="count">${tags[tag].length}</span></li>`;
       }
     }
     facetSearchTags.innerHTML = html;
     // インタラクション
     const URIParameters = $.deparam(window.location.search.substr(1)).tags;
     const selectedTags = URIParameters ? URIParameters : [];
-    const $selectedTags = $('.tag-view', facetSearchTags);
+    const tagViews = facetSearchTags.querySelectorAll('.tag-view');
     updateTag();
     // インタラクション
-    $selectedTags.on('click', e => {
-      const tag = e.target.dataset.tag;
+    tagViews.forEach(tagView => tagView.addEventListener('click', () => {
+      const tag = tagView.dataset.tag;
       // 選択中のタグに追加・削除
       if (selectedTags.indexOf(tag) === -1) {
         selectedTags.push(tag);
       } else {
         selectedTags.splice(selectedTags.indexOf(tag), 1);
       }
+      // URLパラメータにセット
       window.history.pushState(selectedTags, '', `${ window.location.origin }${ window.location.pathname }?${ $.param({tags: selectedTags}) }`);
       updateTag();
-    });
+    }))
 
     // アイテムのインタラクション
     taggingListView.querySelectorAll('.bottom.-collapsed').forEach(elm => {
@@ -64,36 +65,35 @@ export default function taggingListView() {
     function updateTag() {
       if (selectedTags.length) {
         // 何か選択されている場合、選択されているもののみ表示
-        $selectedTags.each((index, elm) => {
-          if (selectedTags.indexOf(elm.dataset.tag) === -1) {
-            elm.classList.add('-disable');
+        tagViews.forEach(tagView => {
+          if (selectedTags.indexOf(tagView.dataset.tag) === -1) {
+            tagView.classList.add('-disable');
           } else {
-            elm.classList.remove('-disable');
+            tagView.classList.remove('-disable');
           }
         });
-        for (const service of taggingItems) {
-          let isHidden = true;
-          const tags = Array.from(service.querySelectorAll('.tags > .tag-view'), tag => tag.dataset.tag);
-          for (const tag of tags) {
-            if (selectedTags.indexOf(tag) !== -1) {
-              isHidden = false;
+        for (const taggingItem of taggingItems) {
+          let isHidden = false;
+          const tags = Array.from(taggingItem.querySelectorAll('.tags > .tag-view'), tag => tag.dataset.tag);
+          for (const selectedTag of selectedTags) {
+            if (tags.indexOf(selectedTag) === -1) {
+              isHidden = true;
               break;
             }
           }
           if (isHidden) {
-            service.classList.add('-hidden');
+            taggingItem.classList.add('-hidden');
           } else {
-            service.classList.remove('-hidden');
+            taggingItem.classList.remove('-hidden');
           }
         }
       } else {
         // 無選択の場合、全部選択
-        $selectedTags.each((index, elm) => elm.classList.remove('-disable'));
-        taggingItems.forEach(service => service.classList.remove('-hidden'));
+        tagViews.forEach(tagView => tagView.classList.add('-disable'));
+        taggingItems.forEach(taggingItem => taggingItem.classList.remove('-hidden'));
       }
     }
   
   }
-
 
 }

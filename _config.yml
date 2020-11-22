@@ -53,6 +53,8 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude:
+  - config.codekit3
 
 collections:
   authors:
