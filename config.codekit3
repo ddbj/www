@@ -7,7 +7,7 @@
 		"uuidString": "3DC8E7FC-C471-446D-8EEF-270A0B0878D5"
 		}
 	],
-"creatorBuild": "33070",
+"creatorBuild": "33081",
 "files": {
 	"/.github/workflows/jekyll.yml": {
 		"cB": 0,
@@ -7066,6 +7066,14 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"/_faq/en/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_faq/en/index.html",
+		"oF": 0
 		},
 	"/_faq/en/interpret-search-results.md": {
 		"cB": 0,
@@ -100191,7 +100199,7 @@
 		},
 	"/assets/images/books/integration_d_way.png": {
 		"ft": 32768,
-		"iS": 59838,
+		"iS": 22721,
 		"oA": 0,
 		"oAP": "/assets/images/books/integration_d_way.png",
 		"oF": 0,
