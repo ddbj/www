@@ -1,6 +1,6 @@
 {% if page.tab_menu %}
 <nav class="tab-menu-view">
-  <ul>
+  <ul class="tabmenucontainer">
     {% for item in page.tab_menu %}
     <li class="{% if item.children %} -haschild{% endif %}{% if page.current_tab == item.id %} -current{% endif %}">
       <a href="{{ item.url }}">{{ item.title }}</a>

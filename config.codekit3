@@ -94365,6 +94365,14 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/_news/ja/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_news/ja/index.html",
+		"oF": 0
+		},
 	"/_plugins/caption.rb": {
 		"cB": 0,
 		"ft": 8192,
@@ -110409,12 +110417,12 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/index copy.html": {
+	"/index-e.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/index copy.html",
+		"oAP": "/index-e.html",
 		"oF": 0
 		},
 	"/index.html": {

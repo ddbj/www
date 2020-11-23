@@ -57,51 +57,49 @@ exclude:
   - config.codekit3
 
 collections:
-  authors:
-    output: true
-  services:
-    output: true
-  submission:
-    output: true
-  download:
-    output: true
-  statistics:
+  aboutus:
     output: true
   activities:
     output: true
-  aboutus:
+  agd:
     output: true
-  dra:
-    output: true
-  dta:
-    output: true
-  gea:
+  authors:
     output: true
   bioproject:
     output: true
   biosample:
     output: true
+  ddbj:
+    output: true
+  documents:
+    output: true
+  download:
+    output: true
+  dra:
+    output: true
+  dta:
+    output: true
+  faq:
+    output: true
+  gea:
+    output: true
+  jga:
+    output: true
   jvar-snp:
     output: true
   jvar-sv:
     output: true
-  jga:
-    output: true
-  agd:
-    output: true
-  sc:
+  news:
     output: true
   other:
     output: true
-  faq:
-    output: true
-  news:
-    output: true
   sc:
     output: true
-  documents:
+  services:
     output: true
-  ddbj:
+  statistics:
+    output: true
+  submission:
     output: true
 
 defaults:

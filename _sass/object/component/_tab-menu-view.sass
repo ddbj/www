@@ -1,18 +1,27 @@
 .tab-menu-view
-  border-bottom: solid .1rem $COLOR_BLACK
-  > ul
+  font-size: 1.6rem
+  line-height: 2.8rem
+  > .tabmenucontainer
+    border-bottom: solid .1rem $COLOR_BLACK
     > li
       display: inline-block
       > a
         top: .1rem
-        font-size: 1.6rem
-        line-height: 2.8rem
         text-decoration: none
         display: block
         padding: 0 1rem
         background-color: #DDDAD7
         position: relative
+        cursor: pointer
         transition: background $DURATION_GUI, color $DURATION_GUI
+      &:hover
+        > a
+          background-color: $COLOR_KEY
+          color: white
+        > ul
+          opacity: 1
+          pointer-events: auto
+          transform: translateY(0)
       &.-current
         > a
           line-height: 3rem
@@ -57,12 +66,8 @@
               background-color: $COLOR_HOVER
           + li
             border-top: solid .1rem $COLOR_LIGHT_GRAY
-      &:hover
-        > a
-          background-color: $COLOR_KEY
-          color: white
-        > ul
-          opacity: 1
-          pointer-events: auto
-          transform: translateY(0)
+  > .tabbedcontent
+    display: none
+    &.-current
+      display: block
 

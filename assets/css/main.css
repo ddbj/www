@@ -230,9 +230,9 @@ input, textarea, select, button {
   .facet-search > .title {
     font-size: 1.4rem;
     margin-bottom: 1.2rem; }
-  .facet-search > .tags {
+  .facet-search .tags {
     margin-left: -.9rem; }
-    .facet-search > .tags > .tag-view {
+    .facet-search .tags > .tag-view {
       border-radius: 1.2em;
       margin-bottom: .4rem;
       padding-top: .6rem;
@@ -241,11 +241,20 @@ input, textarea, select, button {
       line-height: 1;
       font-size: 1.2rem;
       cursor: pointer; }
-      .facet-search > .tags > .tag-view > .count {
+      .facet-search .tags > .tag-view > .count {
         position: absolute;
         top: .5em;
         right: .5em;
         line-height: 1.6; }
+  .facet-search > .tab-menu-view {
+    margin-right: -1.6rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 2rem; }
+    .facet-search > .tab-menu-view > .tabmenucontainer {
+      margin-bottom: 1.4rem; }
+      .facet-search > .tab-menu-view > .tabmenucontainer > li.-current > a {
+        line-height: 2.2rem; }
 
 .google-visualization-table-table {
   margin-bottom: 1rem; }
@@ -956,72 +965,80 @@ input, textarea, select, button {
       font-weight: bold; }
 
 .tab-menu-view {
-  border-bottom: solid 0.1rem #1C1B19; }
-  .tab-menu-view > ul > li {
-    display: inline-block; }
-    .tab-menu-view > ul > li > a {
-      top: .1rem;
-      font-size: 1.6rem;
-      line-height: 2.8rem;
-      text-decoration: none;
-      display: block;
-      padding: 0 1rem;
-      background-color: #DDDAD7;
-      position: relative;
-      transition: background 0.2s, color 0.2s; }
-    .tab-menu-view > ul > li.-current > a {
-      line-height: 3rem;
-      background-color: white;
-      border-top: solid 0.1rem #1C1B19;
-      border-left: solid 0.1rem #1C1B19;
-      border-right: solid 0.1rem #1C1B19; }
-    .tab-menu-view > ul > li.-haschild > a::after {
-      content: "";
-      display: inline-block;
-      border-right: .4rem solid transparent;
-      border-top: 0.5rem solid #1C1B19;
-      border-left: .4rem solid transparent;
-      margin: 0 0 .2rem .5rem;
-      transition: border 0.2s; }
-    .tab-menu-view > ul > li.-haschild:hover > a::after {
-      border-top-color: white; }
-    .tab-menu-view > ul > li > ul {
-      position: absolute;
-      background-color: white;
-      box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.18);
-      transition: transform 0.2s, opacity 0.2s;
-      opacity: 0;
-      pointer-events: none;
-      transform: translateY(-1rem);
-      z-index: 2; }
-      .tab-menu-view > ul > li > ul > li > a {
-        display: block;
-        font-size: 1.4rem;
-        line-height: 2.9rem;
+  font-size: 1.6rem;
+  line-height: 2.8rem; }
+  .tab-menu-view > .tabmenucontainer {
+    border-bottom: solid 0.1rem #1C1B19; }
+    .tab-menu-view > .tabmenucontainer > li {
+      display: inline-block; }
+      .tab-menu-view > .tabmenucontainer > li > a {
+        top: .1rem;
         text-decoration: none;
+        display: block;
         padding: 0 1rem;
-        color: #1C1B19;
-        transition: background-color 0.2s; }
-      .tab-menu-view > ul > li > ul > li:hover > a {
-        background-color: rgba(255, 191, 0, 0.15); }
-      .tab-menu-view > ul > li > ul > li + li {
-        border-top: solid 0.1rem #d2cac4; }
-    .tab-menu-view > ul > li:hover > a {
-      background-color: #FF7300;
-      color: white; }
-    .tab-menu-view > ul > li:hover > ul {
-      opacity: 1;
-      pointer-events: auto;
-      transform: translateY(0); }
+        background-color: #DDDAD7;
+        position: relative;
+        cursor: pointer;
+        transition: background 0.2s, color 0.2s; }
+      .tab-menu-view > .tabmenucontainer > li:hover > a {
+        background-color: #FF7300;
+        color: white; }
+      .tab-menu-view > .tabmenucontainer > li:hover > ul {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0); }
+      .tab-menu-view > .tabmenucontainer > li.-current > a {
+        line-height: 3rem;
+        background-color: white;
+        border-top: solid 0.1rem #1C1B19;
+        border-left: solid 0.1rem #1C1B19;
+        border-right: solid 0.1rem #1C1B19; }
+      .tab-menu-view > .tabmenucontainer > li.-haschild > a::after {
+        content: "";
+        display: inline-block;
+        border-right: .4rem solid transparent;
+        border-top: 0.5rem solid #1C1B19;
+        border-left: .4rem solid transparent;
+        margin: 0 0 .2rem .5rem;
+        transition: border 0.2s; }
+      .tab-menu-view > .tabmenucontainer > li.-haschild:hover > a::after {
+        border-top-color: white; }
+      .tab-menu-view > .tabmenucontainer > li > ul {
+        position: absolute;
+        background-color: white;
+        box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.18);
+        transition: transform 0.2s, opacity 0.2s;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-1rem);
+        z-index: 2; }
+        .tab-menu-view > .tabmenucontainer > li > ul > li > a {
+          display: block;
+          font-size: 1.4rem;
+          line-height: 2.9rem;
+          text-decoration: none;
+          padding: 0 1rem;
+          color: #1C1B19;
+          transition: background-color 0.2s; }
+        .tab-menu-view > .tabmenucontainer > li > ul > li:hover > a {
+          background-color: rgba(255, 191, 0, 0.15); }
+        .tab-menu-view > .tabmenucontainer > li > ul > li + li {
+          border-top: solid 0.1rem #d2cac4; }
+  .tab-menu-view > .tabbedcontent {
+    display: none; }
+    .tab-menu-view > .tabbedcontent.-current {
+      display: block; }
 
 .tag-view {
+  font-size: 1rem;
   font-weight: bold;
   line-height: 1.6;
   background-color: #FCC93D;
   color: #1C1B19;
   border-radius: .8em;
   padding: 0 .8em;
-  position: relative; }
+  position: relative;
+  margin-bottom: .2rem; }
   .tag-view > .count {
     font-size: .8rem;
     background-color: white;
@@ -1202,7 +1219,6 @@ input, textarea, select, button {
         margin-left: auto;
         padding-bottom: 2rem;
         width: 23rem;
-        height: 100vh;
         position: sticky;
         overflow: scroll;
         top: 0; }

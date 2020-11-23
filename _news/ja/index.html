@@ -1,0 +1,49 @@
+---
+layout: children
+title: ニュースアーカイブ
+lang: ja
+---
+<div id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+
+      <nav class="facet-search" data-facet-search-year="true">
+        <div class="tab-menu-view">
+          <ul class="tabmenucontainer">
+            <li class="-current" data-tab="keyword"><a>タグ</a></li>
+            <li data-tab="year"><a>年別</a></li>
+          </ul>
+          <ul class="tags tabbedcontent -current" data-tab="keyword"></ul>
+          <ul class="tags tabbedcontent" data-tab="year"></ul>
+        </div>
+      </nav>
+
+    </div>
+
+    <main class="mainview">
+      <ul class="tagging-list-view" >
+        {% assign news_list = site.news | where: "lang", page.lang | where: "layout", "simple" | sort "date" | reverse %}
+        {% for news in news_list %}
+          <li class="tagging-item-view taggingitem">
+            <div class="upper">
+              <h2 class="title">
+                <a href="{{ news.url }}">{{ news.title }}</a>
+              </h2>
+              <ul class="tags">
+                <li class="date"><time datetime="{{ news.date }}">{{ news.date | date: "%Y / %m / %d" }}</time></li>
+                {% for tag in news.tags %}
+                <li class="tag-view" data-tag="{{ tag }}">{{ tag }}</li>
+                {% endfor %}
+                {% assign dbs = news.db %}
+                {% for db in dbs %}
+                <li class="tag-view" data-tag="{{ db }}">{% if site.data.label_dictionary[db] %}{{ site.data.label_dictionary[db][page.lang] }}{% else %}[{{ db }}]{% endif %}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </li>
+        {% endfor %}
+      
+      </ul>
+    </main>
+  </div>
+</div>
