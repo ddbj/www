@@ -3,6 +3,11 @@ layout: indexed_content
 title: Home
 pathname: index-e
 category: _jvar-snp
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /jvar-snp/index-e.html
 lang: en
 ---
 

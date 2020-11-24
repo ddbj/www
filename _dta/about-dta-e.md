@@ -3,6 +3,20 @@ layout: indexed_content
 title: About DTA
 pathname: about-dta-e
 category: dta
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /dta/index-e.html
+  - id: submission
+    title: Submission
+    url: /dta/submission-e.html
+  - id: downloads
+    title: Downloads
+    url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dta/
+  - id: about dta
+    title: About DTA
+    url: /dta/about-dta-e.html
 lang: en
 ---
 

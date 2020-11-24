@@ -1,12 +1,24 @@
 ---
-layout: indexed_content
+layout: top
 title: DDBJ Trace Archive
 pathname: index-e
 category: dta
+current_tab: home
+tab_menu:
+  - id: home
+    title: Home
+    url: /dta/index-e.html
+  - id: submission
+    title: Submission
+    url: /dta/submission-e.html
+  - id: downloads
+    title: Downloads
+    url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dta/
+  - id: about dta
+    title: About DTA
+    url: /dta/about-dta-e.html
 lang: en
 ---
-
-## DDBJ Trace Archive
 
 [DDBJ Trace Archive (DTA)](index-e.html) is a permanent repository of
 DNA sequence chromatograms (traces), base calls, and quality estimates
