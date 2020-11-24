@@ -7,7 +7,7 @@ items:
     help:
       en: getentry-e
       ja: getentry
-    wabi: https://www.ddbj.nig.ac.jp/services/getentry.html#ge_program
+    wabi: /services/getentry.html#ge_program
     description:
       en: DDBJ annotated/assembled data retrieval by accession numbers
       ja: アクセッション番号などによる DDBJ annotated/assembled 塩基配列エントリの検索
@@ -27,7 +27,7 @@ items:
     help:
       en: arsa-e
       ja: arsa
-    wabi: https://www.ddbj.nig.ac.jp/services/arsa.html
+    wabi: /services/arsa.html
     description:
       en: DDBJ annotated/assembled data retrieval by accession numbers and keywords
       ja: 高速なキーワードによる DDBJ annotated/assembled 塩基配列エントリの検索
@@ -82,7 +82,7 @@ items:
     help:
       en: blast-e
       ja: blast
-    wabi: https://www.ddbj.nig.ac.jp/services/wabi-blast.html
+    wabi: /services/wabi-blast.html
     description:
       en: Nucleotide homology search
       ja: 塩基配列による相同性検索
@@ -144,7 +144,7 @@ items:
     help:
       en: vecscreen-e
       ja: vecscreen
-    wabi: https://www.ddbj.nig.ac.jp/services/wabi-vecscreen.html
+    wabi: /services/wabi-vecscreen.html
     description:
       en: Vector search to screen contamination in nucleic acid sequences.
       ja: ベクター配列データベースを対象にした相同性検索サービス
@@ -164,7 +164,7 @@ items:
     help:
       en: clustalw-e
       ja: clustalw
-    wabi: https://www.ddbj.nig.ac.jp/services/wabi-clustalw.html
+    wabi: /services/wabi-clustalw.html
     description:
       en: Multiple alignment and tree-making
       ja: 塩基・アミノ酸配列の多重整列と系統樹作成
@@ -180,7 +180,7 @@ items:
     help:
       en: wabi-mafft-e
       ja: wabi-mafft
-    wabi: https://www.ddbj.nig.ac.jp/services/wabi-mafft.html
+    wabi: /services/wabi-mafft.html
     description:
       en: Fast multiple alignment tool for nucleotide and amino acid sequences.
       ja: 高速・高精度な核酸・アミノ酸配列のマルチプルアラインメントツール
@@ -192,8 +192,8 @@ items:
   - name: WABI
     formal_name: Web API for Biology
     service_link:
-      en: https://www.ddbj.nig.ac.jp/wabi-e.html
-      ja: https://www.ddbj.nig.ac.jp/services/wabi.html
+      en: wabi-e
+      ja: wabi
     help:
       en: wabi-e
       ja: wabi
@@ -314,8 +314,8 @@ items:
   - name: DDBJ
     formal_name: DNA DataBank of Japan
     service_link:
-      en: https://www.ddbj.nig.ac.jp/ddbj/index.html
-      ja: https://www.ddbj.nig.ac.jp/ddbj/index.html
+      en: /ddbj/index-e.html
+      ja: /ddbj/index.html
     description:
       en: An annotated collection of genome, gene and transcript sequences.
       ja: アノテーションが付与されたゲノム、遺伝子、転写産物の塩基配列
@@ -331,8 +331,8 @@ items:
   - name: NSSS
     formal_name: DDBJ Nucleotide Sequence Submission System
     service_link:
-      en: https://www.ddbj.nig.ac.jp/ddbj/web-submission-e.html
-      ja: https://www.ddbj.nig.ac.jp/ddbj/web-submission.html
+      en: /ddbj/web-submission-e.html
+      ja: /ddbj/web-submission.html
     description:
       en: Interactive nucleotide sequence submission system via web wizard
       ja: ウェブフォームの塩基配列登録システム
@@ -347,8 +347,8 @@ items:
   - name: MSS
     formal_name: Mass Submission System
     service_link:
-      en: https://www.ddbj.nig.ac.jp/ddbj/mss-e.html
-      ja: https://www.ddbj.nig.ac.jp/ddbj/mss.html
+      en: /ddbj/mss-e.html
+      ja: /ddbj/mss.html
     description:
       en: Submission of large-scale data such as WGS, complete genome and TSA.
       ja: NSSS が対応していない多件数、長大な配列データの登録システム
@@ -363,8 +363,8 @@ items:
   - name: DRA
     formal_name: DDBJ Sequence Read Archive
     service_link:
-      en: https://www.ddbj.nig.ac.jp/dra/index-e.html
-      ja: https://www.ddbj.nig.ac.jp/dra/index.html
+      en: /dra/index-e.html
+      ja: /dra/index.html
     description:
       en: DRA stores raw sequencing data and alignment information generated from high throughput sequencing platforms.
       ja: DRA は高性能シークエンス機器からの生シークエンスデータとアライメント情報を格納しています。
@@ -381,8 +381,8 @@ items:
   - name: GEA
     formal_name: Genomic Expression Archive
     service_link:
-      en: https://www.ddbj.nig.ac.jp/gea/index.html
-      ja: https://www.ddbj.nig.ac.jp/gea/index-e.html
+      en: /gea/index-e.html
+      ja: /gea/index.html
     description:
       en: GEA is a public functional genomics data repository supporting MIAME-compliant data submissions. Array- and sequence-based data are accepted.
       ja: GEA は MIAME に準拠したアレイとシークエンスベースの機能ゲノミクスデータを受付けています。
@@ -398,8 +398,8 @@ items:
   - name: BioProject
     formal_name: Biological data related to a single project.
     service_link:
-      en: https://www.ddbj.nig.ac.jp/bioproject/index-e.html
-      ja: https://www.ddbj.nig.ac.jp/bioproject/index.html
+      en: /bioproject/index-e.html
+      ja: /bioproject/index.html
     description:
       en: A BioProject is a collection of biological data related to a single project. A BioProject record provides links to the diverse data types generated for that project.
       ja: BioProject はプロジェクトに由来する生物学的データをとりまとめ、関連するデータへのリンクを提供します。
@@ -417,8 +417,8 @@ items:
   - name: BioSample
     formal_name: Biological source materials used in experimental assays
     service_link:
-      en: https://www.ddbj.nig.ac.jp/biosample/index-e.html
-      ja: https://www.ddbj.nig.ac.jp/biosample/index.html
+      en: /biosample/index-e.html
+      ja: /biosample/index.html
     description:
       en: The BioSample database contains descriptions of biological source materials used in experimental assays.
       ja: BioSample は実験で使われた生物学的サンプルに関する情報を収集しています
@@ -436,8 +436,8 @@ items:
   - name: JGA
     formal_name: Japanese Genotype-phenotype Archive
     service_link:
-      en: https://www.ddbj.nig.ac.jp/jga/index.html
-      ja: https://www.ddbj.nig.ac.jp/jga/index-e.html
+      en: /jga/index-e.html
+      ja: /jga/index.html
     description:
       en: JGA is a controlled-access database for sharing individual-level genotype and phenotype information.
       ja: JGA は個人の遺伝型と表現型に関する情報を共有するためのアクセス制限データベースです
@@ -455,8 +455,8 @@ items:
   - name: AGD
     formal_name: AMED Genome group sharing Database
     service_link:
-      en: https://www.ddbj.nig.ac.jp/agd/index-e.html
-      ja: https://www.ddbj.nig.ac.jp/agd/index.html
+      en: /agd/index-e.html
+      ja: /agd/index.html
     description:
       en: AGD is a controlled-access database for sharing individual-level genotype and phenotype information among specific researchers.
       ja: AGD は個人の遺伝型と表現型に関する情報を特定の研究者間で共有するためのアクセス制限データベースです
@@ -521,8 +521,8 @@ items:
   - name: JVar-SNP
     formal_name: Japan Variation Database for Short Genetic Variation
     service_link:
-      en: https://www.ddbj.nig.ac.jp/jvar-snp/index-e.html
-      ja: https://www.ddbj.nig.ac.jp/jvar-snp/index.html
+      en: /jvar-snp/index-e.html
+      ja: /jvar-snp/index.html
     description:
       en: JVar-SNP archives human single nucleotide variations, microsatellites, and small-scale insertions and deletions along with population frequency.
       ja: JVar-SNP はヒトの一塩基置換, マイクロサテライト, 短い挿入と欠失を頻度と共にアーカイブしています
@@ -537,8 +537,8 @@ items:
   - name: JVar-SV
     formal_name: Japan Variation Database for Structural Variation
     service_link:
-      en: https://www.ddbj.nig.ac.jp/jvar-sv/index-e.html
-      ja: https://www.ddbj.nig.ac.jp/jvar-sv/index.html
+      en: /jvar-sv/index-e.html
+      ja: /jvar-sv/index.html
     description:
       en: JVar-SV is database of human genomic structural variation, variants larger than 50 bp including insertions, deletions, duplications, inversions, mobile elements, translocations, and complex variants.
       ja: JVar-SV は 50bp より長いヒトの挿入、欠失、重複、逆位、転座といった構造バリアントのためのデータベースです
