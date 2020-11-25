@@ -5,13 +5,34 @@ export default function taggingListView() {
 
   const taggingListView = document.querySelector('.tagging-list-view');
   if (taggingListView) {
-    let taggingItems, selectedTags, tagViews;
+    let taggingItems, selectedTags = {}, tagViews = {};
     const facetSearch = document.querySelector('.facet-search');
 
+    setupTaggingItems();
     setupTabMenu();
     setupKeywordTag();
     setupYearTag();
     setupFacetSearch();
+
+    Object.defineProperties(selectedTags, {
+      concatenated: {
+        get() {
+          return Object.keys(this).reduce((acc, tags) => acc.concat(this[tags]), []);
+        }
+      },
+      count: {
+        get() {
+          return Object.keys(this).reduce((acc, tags) => acc + this[tags].length, 0);
+        }
+      }
+    });
+
+    function setupTaggingItems() {
+      taggingItems = taggingListView.querySelectorAll('.taggingitem');
+      taggingItems.forEach(item => {
+        item.ddbj_facetsearch_tags = item.dataset.tags.split(',').filter(tag => tag !== '');
+      });
+    }
 
     /**
      * タブ切り替え
@@ -39,7 +60,6 @@ export default function taggingListView() {
      */
     function setupKeywordTag() {
       const categoryTags = {}, affiliationTags = {}, tagLabels = {};
-      taggingItems = taggingListView.querySelectorAll('.taggingitem');
       // タグの収集
       for (const item of taggingItems) {
         const tags = item.querySelectorAll('.tags > .tag-view');
@@ -61,7 +81,7 @@ export default function taggingListView() {
       }
       // ファセット検索用ビューの生成
       let html = '';
-      const facetSearchTags = facetSearch.querySelector(':scope .tags');
+      const facetSearchTags = facetSearch.querySelector(':scope .tags[data-tab="keyword"]');
       for (const tags of [categoryTags, affiliationTags]) {
         for (const tag in tags) {
           html += `<li class="tag-view${affiliationTags[tag] === undefined ? '' : ' -reverse'}" data-tag="${tag}">${tagLabels[tag]}<span class="count">${tags[tag].length}</span></li>`;
@@ -94,7 +114,6 @@ export default function taggingListView() {
         // ファセット検索用ビューの生成
         let html = '';
         const facetSearchTags = facetSearch.querySelector(':scope .tags[data-tab="year"]');
-        console.log(facetSearchTags)
         for (const tag in yearTags) {
           html += `<li class="tag-view" data-tag="${tag}">${tag}<span class="count">${yearTags[tag].length}</span></li>`;
         }
@@ -103,35 +122,78 @@ export default function taggingListView() {
     }
 
     function setupFacetSearch() {
-      // インタラクション
-      const URIParameters = $.deparam(window.location.search.substr(1)).tags;
-      console.log(window.location.search.substr(1));
-      console.log(URIParameters);
-      selectedTags = URIParameters ? URIParameters : [];
-      const facetSearchTags = facetSearch.querySelector(':scope .tags');
-      console.log(facetSearchTags);
-      tagViews = facetSearchTags.querySelectorAll('.tag-view');
+      const urlParameters = $.deparam(window.location.search.substr(1));
+      console.log(urlParameters)
       const path = window.location.origin + window.location.pathname;
-      updateTag();
-      // インタラクション
-      tagViews.forEach(tagView => tagView.addEventListener('click', () => {
-        const tag = tagView.dataset.tag;
-        // 選択中のタグに追加・削除
-        if (selectedTags.indexOf(tag) === -1) {
-          selectedTags.push(tag);
-        } else {
-          selectedTags.splice(selectedTags.indexOf(tag), 1);
+      selectedTags = urlParameters ? urlParameters : {};
+      const facetSearchTags = facetSearch.querySelectorAll(':scope .tags');
+      facetSearchTags.forEach(tags => {
+        const tagKey = tags.dataset.tab;
+        if (selectedTags[tagKey] === undefined) {
+          selectedTags[tagKey] = [];
         }
-        // URLパラメータにセット
-        const parameters = selectedTags.length ? `?${ $.param({tags: selectedTags}) }` : '';
-        window.history.pushState(selectedTags, '', `${ path }${ parameters }`);
-        updateTag();
-      }))
+        tagViews[tagKey] = tags.querySelectorAll('.tag-view');
+        tagViews[tagKey].forEach(tagView => tagView.addEventListener('click', () => {
+          console.log(tagKey, tagView === 'year')
+          const tag = tagView.dataset.tag;
+          // 選択中のタグに追加・削除
+          if (selectedTags[tagKey].indexOf(tag) === -1) {
+            if (tagKey === 'year') {
+              // 'year' であれば排他的
+              selectedTags[tagKey] = [tag];
+            } else {
+              selectedTags[tagKey].push(tag);
+            }
+          } else {
+            selectedTags[tagKey].splice(selectedTags[tagKey].indexOf(tag), 1);
+          }
+          // URLパラメータにセット
+          const parameters = selectedTags.count ? `?${ $.param(selectedTags) }` : '';
+          window.history.pushState(selectedTags, '', `${ path }${ parameters }`);
+          updateTag();
+        }));
+      });
 
     }
 
     // アイテムの表示更新
     function updateTag() {
+      if (selectedTags.count) {
+        // 何か選択されている場合、選択されているもののみ表示
+        for (const key in tagViews) {
+          tagViews[key].forEach(tagView => {
+            if (selectedTags[key].indexOf(tagView.dataset.tag) === -1) {
+              tagView.classList.add('-disable');
+            } else {
+              tagView.classList.remove('-disable');
+            }
+          });
+        }
+        const concatenatedSelectedTags = selectedTags.concatenated;
+        for (const taggingItem of taggingItems) {
+          let isHidden = false;
+          for (const selectedTag of concatenatedSelectedTags) {
+            if (taggingItem.ddbj_facetsearch_tags.indexOf(selectedTag) === -1) {
+              isHidden = true;
+              break;
+            }
+          }
+          if (isHidden) {
+            taggingItem.classList.add('-hidden');
+          } else {
+            taggingItem.classList.remove('-hidden');
+          }
+        }
+      } else {
+        // 無選択の場合、全部選択
+        for (const key in tagViews) {
+          tagViews[key].forEach(tagView => tagView.classList.add('-disable'));
+        }
+        taggingItems.forEach(taggingItem => taggingItem.classList.remove('-hidden'));
+
+      }
+
+      return;
       if (selectedTags.length) {
         // 何か選択されている場合、選択されているもののみ表示
         tagViews.forEach(tagView => {
