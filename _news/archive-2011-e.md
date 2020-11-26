@@ -250,7 +250,7 @@ AK388430 - AK388473AK388475 - AK388499AK388501 - AK388575</div></dd> </dl></div>
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id ="wn110803"><a href="#wn110803">Release of new EST data of sea squirt (Halocynthia roretzi)</a></h2>
+  <h2 class="news_title" id ="2011-08-03"><a href="#2011-08-03">Release of new EST data of sea squirt (Halocynthia roretzi)</a></h2>
   <div class="news_date">August 03,2011</div>
   <div class="news_content"><dl><dd>DDBJ newly released EST data derived from sea squirt (<i>Halocynthia roretzi</i>), which had been submitted by University of Tokushima.<br><br><b>Reference:</b> <a href="http://magest.hgc.jp/" target="_blank">MAGEST</a><br><br><b>The accession numbers</b> are as follows ; <br><ul><li>FY844421-FY896670 (52,250 entries)    (Available by <a href="http://getentry.ddbj.nig.ac.jp/top-e.html" target="_blank">getentry</a>)</li></ul></dd></dl></div>
   <div class="news_category">

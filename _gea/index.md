@@ -35,7 +35,7 @@ tab_menu:
         url: /gea/reviewer-access.html
   - id: faq
     title: FAQ
-    url: /faq/ja/index.html
+    url: /faq/ja/index.html?keyword%5B%5D=gea
   - id: search
     title: Search (AOE)
     url: http://aoe.dbcls.jp/

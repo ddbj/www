@@ -13,7 +13,7 @@ tab_menu:
     url: /bioproject/submission-e.html
   - id: faq
     title: FAQ
-    url: /faq/en/index-e.html
+    url: /faq/en/index-e.html?keyword%5B%5D=bioproject
   - id: search
     title: Search
     url: http://ddbj.nig.ac.jp/BPSearch/

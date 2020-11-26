@@ -32,7 +32,7 @@ tab_menu:
         url: https://github.com/ddbj/pub/tree/master/docs/jga/xsd/
   - id: faq
     title: FAQ
-    url: /faq/ja/index.html
+    url: /faq/ja/index.html?keyword%5B%5D=jga
 lang: ja
 ---
 

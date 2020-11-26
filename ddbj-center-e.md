@@ -139,7 +139,7 @@ nucleotide sequence data and how to use our services for analyzing life
 science data.
 
 We announce [the latest information for DDBJ
-activities](/news/en).  
+activities](/news/en/index-e.html).  
 See also [our publications](/activities/index.html).
 
 
