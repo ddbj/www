@@ -430,7 +430,7 @@ lang: en
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id ="wn100405_1"><a href="#wn100405_1">Release of new Koshihikari rice (Oryza sativa Japonica Group, cultivar Koshihikari ) WGS 654,543 entries</a></h2>
+  <h2 class="news_title" id ="2010-04-05_1"><a href="#2010-04-05_1">Release of new Koshihikari rice (Oryza sativa Japonica Group, cultivar Koshihikari ) WGS 654,543 entries</a></h2>
   <div class="news_date">April 05,2010</div>
   <div class="news_content"><dl><dd>DDBJ newly released 654,543 entries of WGS data and others derived from Koshihikari rice (<em>Oryza sativa Japonica Group, cultivar Koshihikari</em> ), which had been submitted by <a href="http://www.nias.affrc.go.jp/index_e.html" target="_new">National Institute of Agrobiological Sciences.</a><strong>The accession numbers</strong>  (Anonymous FTP)  are as follows;<ul><li>scaffold CON: DG000025-DG000036 <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/mass/Oryza_sativa_Japonica_Group_CON/">Oryza_sativa_Japonica_Group_CON_100402_1.seq.gz</a> (12 entries, released on Apr. 2, 2010)</li><li>WGS: BABO01000001-BABO01654543 BABO.gz (654,543 entries, released on Apr. 1, 2010)</li><li>raw outputs (before assemble): <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/DRA000010/">DRA000010</a> (released on Mar. 31, 2010)</li></ul><strong>Reference sites</strong><ul><li><a href="http://www.nias.affrc.go.jp/qtl/english/index.html" target="_new">QTL GENOMICS RESEARCH CENTER</a></li><li><a href="/dra/index-e.html">DDBJ Read Archive (DRA)</a></li></ul></dd></dl></div>
   <div class="news_category">
@@ -439,7 +439,7 @@ lang: en
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id ="wn100405"><a href="#wn100405">Release of new purple witchweed (Striga hermonthica ) EST 67,814 entries</a></h2>
+  <h2 class="news_title" id ="2010-04-05"><a href="#2010-04-05">Release of new purple witchweed (Striga hermonthica ) EST 67,814 entries</a></h2>
   <div class="news_date">April 05,2010</div>
   <div class="news_content"><dl><dd>DDBJ newly released 67,814 entries of EST data derived from purple witchweed (<em>Striga hermonthica</em> ), which had been submitted by <a href="http://www.riken.go.jp/engn/index.html" target="_new">RIKEN.</a><strong>The accession numbers</strong>  (Anonymous FTP)  are as follows;<ul><li>FS438984-FS506797 (<a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/mass/Striga_hermonthica_EST/">Striga_hermonthica_EST_100402_1.seq.gz</a>) (67,814 entries)</li></ul><strong>Reference URL:</strong> <a href="http://www.psc.riken.jp/english/" target="_new">Cultivating Tomorrow</a>These entries were released as DDBJ daily updates on Apr. 2, 2010. </dd></dl></div>
   <div class="news_category">

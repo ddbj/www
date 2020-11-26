@@ -678,7 +678,7 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC    </code></pre></dd></dd></dd></d
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id ="wn030423"><a href="#wn030423">International Consortium Completes Human Genome Project</a></h2>
+  <h2 class="news_title" id ="2003-04-23"><a href="#2003-04-23">International Consortium Completes Human Genome Project</a></h2>
   <div class="news_date">April 23,2003</div>
   <div class="news_content"><dl class="number"><dt>Speeches and Statements by Prime Minister</dt><dd><a href="http://japan.kantei.go.jp/koizumispeech/2003/04/14danwa_e.html">English translation</a> / <a href="http://www.kantei.go.jp/jp/koizumispeech/2003/04/14danwa.html">Japanese</a></dd><dt>International Consortium Completes Human Genome Project</dt><dd>Joint Proclamation by the Heads of Government of Six countries Regarding the Completion of the Human Genome Sequence   （<a href="http://japan.kantei.go.jp/koizumispeech/2003/04/14sengen_e.html">English</a> ／<a href="http://www.kantei.go.jp/jp/koizumispeech/2003/04/14sengen.html">Japanese translation</a>）</dd><dt>Sequences</dt><span class="font-bold">Note:</span>"DDBJ/CIB Human Genomics Studio" project, started in Apr. 2000, developed an original method of assembling the data of human genome sequence and producing contig, and created original chromosome sequence based on genome sequences which have been registered to the international DNA databases, DDBJ/EMBL/GenBank, and publicized from them. (last updated: May 8, 2002). Accordingly, at the present stage, "DDBJ/CIB Human Genomics Studio" offers draft sequence.Human genome (Build 35.1, "finished" sequences) download pageIn this page, contig list for each chromosome are disclosed. These list are based on "Build 35.1" which is the most recent (as of Aug. 2004) human build for which full annotation is available, released by NCBI, USA. Build 35.1 includes the finished human genome sequence determined by the International Human Genome Sequencing Consortium with the one determined by Celera. </dl></div>
   <div class="news_category">
@@ -687,7 +687,7 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC    </code></pre></dd></dd></dd></d
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id ="wn030423_2"><a href="#wn030423_2">GIB maintenance stop</a></h2>
+  <h2 class="news_title" id ="2003-04-23_2"><a href="#2003-04-23_2">GIB maintenance stop</a></h2>
   <div class="news_date">April 23,2003</div>
   <div class="news_content"><dd>GIB server will be stopped for a machine maintenance.<br><dd>From April 26 (Sat) 5:00 pm to April 27 (Sun) 8:00 am<br><dd>Thank you very much for your cooperation.</dd></dd></dd></div>
   <div class="news_category">

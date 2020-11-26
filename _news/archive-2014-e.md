@@ -34,7 +34,7 @@ lang: en
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id ="wn141222"><a href="#wn141222">(Jan. 15) Important Notification regarding Nucleotide Sequence Submission System (NSSS)</a></h2>
+  <h2 class="news_title" id ="2014-12-22"><a href="#2014-12-22">(Jan. 15) Important Notification regarding Nucleotide Sequence Submission System (NSSS)</a></h2>
   <div class="news_date">December 22,2014</div>
   <div class="news_content"><p>DDBJ Nucleotide Sequence Submission System (NSSS) will be unavailable due to the system update from 10:00 January 15(Thu), 2015 (JST).</p><p>After the update, all the data that you have selected/entered on the "6. Template" and "7. Annotation" pages are erased.<br><span class="font-bold">We would like to ask you to finish the submission by January 15(Thu), 2015 at 10:00 (JST).</span></p><p>If you cannot complete the submission, you must start again from "6. Template" page.</p><p><span class="icon_square"> System Update Schedule</span><br>   January 15(Thu), 2015 at 10:00 (JST) Service will be stopped for the system version up.<br>   January 15(Thu), 2015 at 13:00 (JST) Service will be resumed.</p><p>Thank you for your understanding and patience.</p></div>
   <div class="news_category">
@@ -288,7 +288,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn140904"><a href="#wn140904">The Report for the 27th International Collaborators Meeting</a></h2>
   <div class="news_date">September 04,2014</div>
-  <div class="news_content"><p><a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a>, consisted of DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a> and <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a>, hold the international collaborators meeting every year. <br>In 2014, the meeting was <a href="/news/en/wn140520-e.html">held at DDBJ</a>, 20-22 May, to discuss practical matters to maintain and update nucleotide sequence data archives; <a href="/index-e.html" target="_blank">DDBJ</a>, <a href="http://www.ebi.ac.uk/ena/" target="_blank">ENA</a>, <a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>, Sequence Read Archive (SRA) and Trace Archive. <br>The outcomes of the meeting are summarized <a href="/activities/icm/2014-e">here</a>. </p></div>
+  <div class="news_content"><p><a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a>, consisted of DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a> and <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a>, hold the international collaborators meeting every year. <br>In 2014, the meeting was <a href="/news/en/2014-05-20-e.html">held at DDBJ</a>, 20-22 May, to discuss practical matters to maintain and update nucleotide sequence data archives; <a href="/index-e.html" target="_blank">DDBJ</a>, <a href="http://www.ebi.ac.uk/ena/" target="_blank">ENA</a>, <a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>, Sequence Read Archive (SRA) and Trace Archive. <br>The outcomes of the meeting are summarized <a href="/activities/icm/2014-e">here</a>. </p></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -628,7 +628,7 @@ lang: en
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id ="wn140520"><a href="#wn140520">The 27th International Collaborators Meeting at Mishima</a></h2>
+  <h2 class="news_title" id ="2014-05-20"><a href="#2014-05-20">The 27th International Collaborators Meeting at Mishima</a></h2>
   <div class="news_date">May 20,2014</div>
   <div class="news_content"><p>DDBJ, EMBL-Bank/EBI and GenBank/NCBI hold the International Collaborators Meeting every year to maintain and update international collaboration for nucleotide sequence database construction.</p><p>In 2014, the meeting is held at DDBJ in Mishima, May 20-22.</p><p>DDBJ will report the decisions at the 27th ICMs on the DDBJ HP that are useful for the data submitters and users of DDBJ.</p><p><span class="icon_square"> ICM photos 2014</span><br><a href="{{ site.baseurl }}/assets/images/news/ICM2014-01.jpg" class="fancybox"><img src="{{ site.baseurl }}/assets/images/news/ICM2014-01s.jpg"></a>  <a href="{{ site.baseurl }}/assets/images/news/ICM2014-02.jpg" class="fancybox"><img src="{{ site.baseurl }}/assets/images/news/ICM2014-02s.jpg"></a></p></div>
   <div class="news_category">
@@ -799,7 +799,7 @@ lang: en
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id ="wn140310"><a href="#wn140310">(Mar. 20-25) DDBJ network services and NIG SuperComputer will be unavailable</a></h2>
+  <h2 class="news_title" id ="2014-03-10"><a href="#2014-03-10">(Mar. 20-25) DDBJ network services and NIG SuperComputer will be unavailable</a></h2>
   <div class="news_date">March 10,2014</div>
   <div class="news_content">NIG SuperComputer and DDBJ network services will be unavailable because of the electric power outage of the NIG(National Institute of Genetics). Schedule is as follows:<br>[make_table title=yes title_font_weight=bold color="#c9c0bb" set_width=650px]ServicesSchedule (JST)·D-way<br> ·DRA Search<br>·BioProject Search<br>·BioSample Search<nobr>March 20(Thu)  13:00 - March 25(Tue)12:00(JST)</nobr>·MiGAPMarch 20(Thu) 17:00 - March 25(Tue)10:00(JST)·DDBJ HomePageMarch 20(Thu) 17:00 - March 25(Tue)09:00(JST)·NIG NetworkMarch 21(Fri)  13:00 - Mach 22(Sat) 17:00 (JST)·NIG SuperComputer<br> ·DDBJ HP <w anonymous ftp>·getentry<br>·ARSA<br><nobr>·DDBJ Nucleotide Sequence Submission System</nobr><br>·BLAST<br>·ClustalW<br>·DDBJ Read Annotation PipelineMarch 21(Fri)  13:00 - Mach 24(Mon) 24:00 (JST)[/make_table]<br><br><br>Thank you for your cooperation and understanding.<!--<font color="#ff0000">All services were resumed. Thank you for your cooperation. (Dec. 09 at 12:00 JST)</font>--></w></div>
   <div class="news_category">
@@ -819,7 +819,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="2014-02-28"><a href="#2014-02-28">System temporarily unavailable due to inspection work </a></h2>
   <div class="news_date">February 28,2014</div>
-  <div class="news_content">The submission and search services of DRA, BioProject and BioSample will be unavailable from March 20 (Thu) 13:00 until March 25 (Mon) 12:00 (approx) due to the inspection work of NIG.<br><a href="/news/en/wn140310-e.html">(Mar. 20-25) DDBJ network services and NIG SuperComputer will be unavailable</a></div>
+  <div class="news_content">The submission and search services of DRA, BioProject and BioSample will be unavailable from March 20 (Thu) 13:00 until March 25 (Mon) 12:00 (approx) due to the inspection work of NIG.<br><a href="/news/en/2014-03-10-e.html">(Mar. 20-25) DDBJ network services and NIG SuperComputer will be unavailable</a></div>
   <div class="news_category">
     <span class="service">Services: bioproject,biosample,dra,dta,jga</span>
     <span class="keyword">Keywords: Maintenance</span>
@@ -846,7 +846,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn140212"><a href="#wn140212">DDBJ BioSample starts accepting submissions</a></h2>
   <div class="news_date">February 12,2014</div>
-  <div class="news_content">The <a href="/biosample/index-e.html">DDBJ BioSample</a> started accepting new submissions from 12th, February. <dl><ul><li><a href="/news/2014-02-12_e.html">DDBJ BioSample starts accepting submissions</a></li></ul></dl></div>
+  <div class="news_content">The <a href="/biosample/index-e.html">DDBJ BioSample</a> started accepting new submissions from 12th, February. <dl><ul><li><a href="/news/en/2014-02-12_e.html">DDBJ BioSample starts accepting submissions</a></li></ul></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>

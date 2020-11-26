@@ -43,7 +43,7 @@ lang: ja
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn141222"><a href="#wn141222">(1/15) Web版塩基配列登録システム(NSSS)に関する重要なお知らせ</a></h2>
+  <h2 class="news_title" id="2014-12-22"><a href="#2014-12-22">(1/15) Web版塩基配列登録システム(NSSS)に関する重要なお知らせ</a></h2>
   <div class="news_date">2014年12月22日</div>
   <div class="news_content"><p>DDBJ では、2015年1月15日(木)10時より、システム更新のため、Web版塩基配列登録システム を停止いたします。</p><p>更新後は、"6. Template" ページで選択した情報、および、"7. Annotation" ページで入力した内容が<br>すべて消去されることになりますので、<span class="font-bold">2015年1月15日(木)10時までに登録を完了していただくようお願いいたします。</span></p><p>その時間までに完了できない場合は、"6. Template" ページから入力を再開いただくことになります。</p><p><span class="icon_square"> システム更新スケジュール</span><br>   2015年1月15日(木) 10:00 システム更新作業により停止<br>   2015年1月15日(木) 13:00 再開予定</p><p>ご迷惑をお掛けいたしますが、ご理解とご協力をお願いいたします。</p></div>
   <div class="news_category">
@@ -333,7 +333,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn140904"><a href="#wn140904">第27回国際実務者会議 報告</a></h2>
   <div class="news_date">2014年09月04日</div>
-  <div class="news_content"><p>DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a>, <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a> で構成される <a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a> は、その共同事業の運営・推進を図るために、国際実務者会議を年１回開催しています。<br>2014年は 5月20日-22日に <a href="/news/ja/wn140520.html">DDBJ で開催</a>され、<a href="/index.html" target="_blank">DDBJ</a>、<a href="http://www.ebi.ac.uk/ena/" target="_blank">ENA</a>、<a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>、Sequence Read Archive (SRA)、Trace Archive を運営する上での実務的な問題を討論しました。<br>会議の報告は <a href="/activities/icm/2014">こちら</a> をご覧ください。</p></div>
+  <div class="news_content"><p>DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a>, <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a> で構成される <a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a> は、その共同事業の運営・推進を図るために、国際実務者会議を年１回開催しています。<br>2014年は 5月20日-22日に <a href="/news/ja/2014-05-20.html">DDBJ で開催</a>され、<a href="/index.html" target="_blank">DDBJ</a>、<a href="http://www.ebi.ac.uk/ena/" target="_blank">ENA</a>、<a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>、Sequence Read Archive (SRA)、Trace Archive を運営する上での実務的な問題を討論しました。<br>会議の報告は <a href="/activities/icm/2014">こちら</a> をご覧ください。</p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -682,7 +682,7 @@ lang: ja
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn140520"><a href="#wn140520">第27回 国際実務者会議 開催</a></h2>
+  <h2 class="news_title" id="2014-05-20"><a href="#2014-05-20">第27回 国際実務者会議 開催</a></h2>
   <div class="news_date">2014年05月20日</div>
   <div class="news_content"><p>DDBJ、EMBL-Bank/EBI、GenBank/NCBI の 3大国際DNAデータバンク は、<a href="/insdc.html">INSDC;International Nucleotide Sequence Database Collaboration</a> として、国際塩基配列データベースの共同構築の運営と推進を図るために、国際実務者会議を年1回開催しています。 </p><p>今年の国際実務者会議（5月20日-5月22日）は、DDBJ のある国立遺伝学研究所（静岡県三島市）で始まりました。</p><p>今回の実務者会議での決定事項は、後日 DDBJ ホームページにて報告予定です。<br>塩基配列の登録だけでなく、各種データベースの利用に際しても有用ですので、是非ご参照ください。</p><p><span class="icon_square"> 2014年 国際実務者会議の様子</span><br><a href="{{ site.baseurl }}/assets/images/news/ICM2014-01.jpg" ><img src="{{ site.baseurl }}/assets/images/news/ICM2014-01s.jpg"></a>  <a href="{{ site.baseurl }}/assets/images/news/ICM2014-02.jpg" ><img src="{{ site.baseurl }}/assets/images/news/ICM2014-02s.jpg"></a></p></div>
   <div class="news_category">
@@ -862,7 +862,7 @@ lang: ja
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn140310"><a href="#wn140310">(3/20-25) 国立遺伝学研究所の停電によるスパコンシステムならびに公開サービス停止のお知らせ</a></h2>
+  <h2 class="news_title" id="2014-03-10"><a href="#2014-03-10">(3/20-25) 国立遺伝学研究所の停電によるスパコンシステムならびに公開サービス停止のお知らせ</a></h2>
   <div class="news_date">2014年03月10日</div>
   <div class="news_content">国立遺伝学研究所の停電にともない，以下の日程で NIG SuperComputer ，DDBJ の全ネットワークサービスを停止いたします。<br><br>[make_table title=yes title_font_weight=bold color="#c9c0bb"]サービス名停止期間・D-way<br>・DRA Search<br>・BioProject Search<br>・BioSample Search3月20日(木) 13:00～3月25日(火)12:00・MiGAP3月20日(木) 17:00～3月25日(火)10:00・DDBJ HomePage3月20日(木) 17:00～3月25日(火)09:00・国立遺伝学研究所ネットワーク3月21日(金) 13:00～3月22日(土)17:00・NIG SuperComputer<br>・DDBJ FTPサービス<br>・getentry<br>・ARSA<br>・DDBJ塩基配列登録システム<br>・BLAST<br>・ClustalW<br>・DDBJ Read Annotation Pipeline3月21日(金) 13:00～3月24日(月)24:00[/make_table]<br><br><br>皆様には大変ご迷惑をお掛けいたしますが、ご理解とご協力をお願いいたします。<!--<span style="color: #ff0000;">全てのサービスが再開しました。ご協力ありがとうございました。（3月25日13:00）</span>--><br><br></div>
   <div class="news_category">
@@ -882,7 +882,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="2014-02-28"><a href="#2014-02-28">停電によるシステム一時停止のお知らせ</a></h2>
   <div class="news_date">2014年02月28日</div>
-  <div class="news_content">3月20日（木）13時 ～ 25日（火）昼頃，国立遺伝学研究所の法定停電のため，登録システム（D-way）および検索システム（DRASearch, BioProject Search, BioSample Search）が停止いたします。<br><a href="/news/ja/wn140310.html">(3/20-25) 国立遺伝学研究所の停電によるスパコンシステムならびに公開サービス停止のお知らせ</a></div>
+  <div class="news_content">3月20日（木）13時 ～ 25日（火）昼頃，国立遺伝学研究所の法定停電のため，登録システム（D-way）および検索システム（DRASearch, BioProject Search, BioSample Search）が停止いたします。<br><a href="/news/ja/2014-03-10.html">(3/20-25) 国立遺伝学研究所の停電によるスパコンシステムならびに公開サービス停止のお知らせ</a></div>
   <div class="news_category">
     <span class="service">サービス: bioproject,biosample,dra,dta,jga</span>
     <span class="keyword">キーワード: メンテナンス</span>
@@ -909,7 +909,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn140212"><a href="#wn140212">BioSample の登録受付を開始</a></h2>
   <div class="news_date">2014年02月12日</div>
-  <div class="news_content"><a href="/biosample/index.html">DDBJ BioSample</a> は2月12日からサンプル登録の受付を開始しました。<dl><ul><li><a href="/news/2014-02-12.html" target="_blank">BioSample の登録受付を開始</a></li></ul></dl></div>
+  <div class="news_content"><a href="/biosample/index.html">DDBJ BioSample</a> は2月12日からサンプル登録の受付を開始しました。<dl><ul><li><a href="/news/ja/2014-02-12.html" target="_blank">BioSample の登録受付を開始</a></li></ul></dl></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>

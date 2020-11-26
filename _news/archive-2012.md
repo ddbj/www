@@ -43,7 +43,7 @@ lang: ja
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn121205"><a href="#wn121205">DDBJ 年末年始休業のお知らせ</a></h2>
+  <h2 class="news_title" id="2012-12-05"><a href="#2012-12-05">DDBJ 年末年始休業のお知らせ</a></h2>
   <div class="news_date">2012年12月05日</div>
   <div class="news_content">DDBJ では，下記の期間，年末年始休業いたします。<br><br>これにともない<a href="/ddbj/web-submission.html">Web版塩基配列登録システム</a> は下記の期間ご利用いただけません。エントリの新規および再公開も行なわれません。 ただし，スーパーコンピュータの利用，データ検索/解析， ftp等 は休業期間でも利用可能です。<br><br>データの登録や更新，検索解析等に関する DDBJ へのお問い合わせ，スーパーコンピュータ利用申込みならびにお問い合わせ等については，メールの送信やフォームのご利用は可能ですが，DDBJ からの対応は2013年1月4日の業務再開後となります。予めご了承ください。　<br><br>[generate_table class=t04]休業期間</div>
   <div class="news_category">
@@ -54,7 +54,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="2012-12-18"><a href="#2012-12-18">年末年始休業のお知らせ</a></h2>
   <div class="news_date">2012年12月05日</div>
-  <div class="news_content">DDBJ は 2012年12月29日(土)～2013年1月3日(木) の期間, 休業いたします。<a href="/news/ja/wn121205.html">DDBJ 年末年始休業のお知らせ</a><br>ご理解とご協力をお願いいたします。</div>
+  <div class="news_content">DDBJ は 2012年12月29日(土)～2013年1月3日(木) の期間, 休業いたします。<a href="/news/ja/2012-12-05.html">DDBJ 年末年始休業のお知らせ</a><br>ご理解とご協力をお願いいたします。</div>
   <div class="news_category">
     <span class="service">サービス: bioproject,biosample,gea,dra,dta</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -117,7 +117,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn121031_2"><a href="#wn121031_2">SAKURA でのデータ登録受付終了</a></h2>
   <div class="news_date">2012年10月31日</div>
-  <div class="news_content">塩基配列登録システム ”SAKURA” でのデータ登録受付は、2012年10月31日(水) 17:00 をもちまして、終了いたしました。長い間SAKURA をご利用頂きましてありがとうございました。<br><br>今後は、新登録システム <b><a href="/ddbj/web-submission.html" title="DDBJ Nucleotide Sequence Submission System">”DDBJ 塩基配列登録システム”</a></b> をご利用ください。<br>なお、ご利用の前に <a href="{{ site.baseurl }}/assets/files/pdf/websubHelp_full_j.pdf" title="Deasy_help" target="_blank">ヘルプファイル(PDF版)</a> をご一読ください。 また、各ページ右上にある [HELP] もご参照ください。<br><br>    関連するお知らせ：<a href="/news/ja/wn120928_4.html" title="新登録システム10月3日公開">「新登録システム10月3日公開」</a><br><br></div>
+  <div class="news_content">塩基配列登録システム ”SAKURA” でのデータ登録受付は、2012年10月31日(水) 17:00 をもちまして、終了いたしました。長い間SAKURA をご利用頂きましてありがとうございました。<br><br>今後は、新登録システム <b><a href="/ddbj/web-submission.html" title="DDBJ Nucleotide Sequence Submission System">”DDBJ 塩基配列登録システム”</a></b> をご利用ください。<br>なお、ご利用の前に <a href="{{ site.baseurl }}/assets/files/pdf/websubHelp_full_j.pdf" title="Deasy_help" target="_blank">ヘルプファイル(PDF版)</a> をご一読ください。 また、各ページ右上にある [HELP] もご参照ください。<br><br>    関連するお知らせ：<a href="/news/ja/2012-09-28_4.html" title="新登録システム10月3日公開">「新登録システム10月3日公開」</a><br><br></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -198,7 +198,7 @@ lang: ja
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn120928_4"><a href="#wn120928_4">新登録システム10月3日公開</a></h2>
+  <h2 class="news_title" id="2012-09-28_4"><a href="#2012-09-28_4">新登録システム10月3日公開</a></h2>
   <div class="news_date">2012年09月28日</div>
   <div class="news_content"><dl><dd>DDBJ では，新登録システム <a href="/ddbj/web-submission.html" title="DDBJ 塩基配列登録システム">DDBJ 塩基配列登録システム</a>を2012年10月3日に公開予定です。<br>これまでの<a href="http://sakura.ddbj.nig.ac.jp/top-j.html" title="SAKURA" target="_blank">SAKURA</a> と比較して，アノテーション入力インターフェースを大幅に刷新しました。また，エラーチェック機能についても見直しを行い，<a href="/ddbj/mss.html" title="MSS" target="_blank">大量登録システム(MSS)</a> で使用している"jParser" の機能を持たせました。<hr>なお，SAKURA でのデータ登録受付は，<b>2012年10月31日(水)  17:00 </b> で終了となります。（9月末までとお知らせしていましたが，変更になりました。）下記の注意事項をご確認ください。</dd></dl><div id="list_l1p">SAKURA 終了に関する注意事項</div><dl><dd><ul><li>SAKURA での登録途中の保存エントリ，テンプレート（複数エントリ間での共通した情報を保存する方法）のデータは，新登録システムへは引き継がれませんので，ご了承ください。</li><li>SAKURA に登録途中のエントリがあり登録を予定している場合は，10月31日 17:00 までに一連の登録作業を完了してください。</li></ul></dd></dl></div>
   <div class="news_category">

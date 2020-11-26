@@ -99,6 +99,6 @@ related_pages:
 <div class="attention">
 #### 論文の引用 および 謝辞記載の例
 
-- [論文の引用](/faq/ja/index.html#ddbj-cited-article)
-- [DDBJ を利用したことについての謝辞](/faq/ja/index.html#acknowledge-ddbj)
-- [遺伝研スーパーコンピュータシステムを利用したことについての謝辞](/faq/ja/index.html#acknowledge-nig-supercomputer)
+- [論文の引用](/faq/ja/ddbj-cited-article.html)
+- [DDBJ を利用したことについての謝辞](/faq/ja/acknowledge-ddbj.html)
+- [遺伝研スーパーコンピュータシステムを利用したことについての謝辞](/faq/ja/acknowledge-nig-supercomputer.html)
