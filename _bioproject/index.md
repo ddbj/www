@@ -14,7 +14,7 @@ tab_menu:
     url: /bioproject/submission.html
   - id: faq
     title: FAQ
-    url: /faq/ja/index.html
+    url: /faq/ja/index.html?keyword%5B%5D=bioproject
   - id: search
     title: Search
     url: http://ddbj.nig.ac.jp/BPSearch/

@@ -21,7 +21,7 @@ tab_menu:
         url: https://github.com/ddbj/pub/tree/master/docs/dra
   - id: faq
     title: FAQ
-    url: /faq/en/index-e.html
+    url: /faq/en/index-e.html?keyword%5B%5D=dra
   - id: search
     title: Search
     url: https://ddbj.nig.ac.jp/DRASearch/

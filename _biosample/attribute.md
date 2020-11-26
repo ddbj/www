@@ -22,7 +22,7 @@ tab_menu:
     url: /biosample/validation.html
   - id: faq
     title: FAQ
-    url: /faq/ja/index.html
+    url: /faq/ja/index.html?keyword%5B%5D=biosample
   - id: search
     title: Search
     url: http://ddbj.nig.ac.jp/BSSearch/

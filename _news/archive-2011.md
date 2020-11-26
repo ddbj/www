@@ -309,7 +309,7 @@ lang: ja
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn110803"><a href="#wn110803">マボヤ (Halocynthia roretzi) EST データの新規公開</a></h2>
+  <h2 class="news_title" id="2011-08-03"><a href="#2011-08-03">マボヤ (Halocynthia roretzi) EST データの新規公開</a></h2>
   <div class="news_date">2011年08月03日</div>
   <div class="news_content"><dl><dd>徳島大学から登録されたマボヤ (<i>Halocynthia roretzi</i>) 由来の EST データが公開されました。<br><br><b>参考：</b><a href="http://magest.hgc.jp/" target="_blank">MAGEST</a><br><br><b>アクセッション番号</b>は以下の通りです。<br><ul><li>FY844421-FY896670 (52,250 entries)  （<a href="http://getentry.ddbj.nig.ac.jp/top-j.html" target="_blank">getentry</a> から検索可能です）</li></ul></dd></dl></div>
   <div class="news_category">
