@@ -16,7 +16,7 @@ lang: ja
       <ul class="tagging-list-view">
         {% assign faqs = site.faq | where: "lang", page.lang | where: "layout", "simple" %}
         {% for faq in faqs %}
-          <li class="tagging-item-view taggingitem">
+          <li class="tagging-item-view taggingitem" data-tags="{{ faq.tags | join: ',' }},{{ db }}">
             <div class="upper">
               <h2 class="title">
                 <a href="{{ faq.url }}">{{ faq.title }}</a>
