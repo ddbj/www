@@ -20,14 +20,14 @@ lang: ja
         <ul class="container">
 
           {% for service in site.data.services.items %}
-          <li class="service taggingitem">
+          <li class="service taggingitem" data-tags="{{ service.tags | join: ',' }},{{ service.provider }}">
             <div class="upper">
               <h2 class="title">
                 <a href="{{ service.service_link[page.lang] }}">{{ service.name }}</a>
               </h2>
               <ul class="tags">
                 {% for tag in service.tags %}
-                <li class="tag-view" data-tag="{{ site.data.services.dictionary[tag][page.lang] }}">
+                <li class="tag-view" data-tag="{{ tag }}">
                   {{ site.data.services.dictionary[tag][page.lang] }}</li>
                 {% endfor %}
                 {% if service.provider %}
