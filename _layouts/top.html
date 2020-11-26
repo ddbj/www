@@ -11,6 +11,16 @@ layout: default
         <h1 class="logotype">{{ page.title }}</h1>
         {% else %}
         <h1 class="title">{{ page.title }}</h1>
+
+        <nav class="breadcrumb-view">
+          <ul>
+            {% include breadcrumb-home.html lang=page.lang %}
+            <li>
+              <a>{{ page.title }}</a>
+            </li>
+          </ul>
+        </nav>
+  
         {% endif %}
         <div class="description">{{ page.description }}</div>
       </header>
