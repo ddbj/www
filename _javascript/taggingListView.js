@@ -5,14 +5,9 @@ export default function taggingListView() {
 
   const taggingListView = document.querySelector('.tagging-list-view');
   if (taggingListView) {
-    let taggingItems, selectedTags = {}, tagViews = {};
+    let taggingItems;
+    const selectedTags = {}, tagViews = {};
     const facetSearch = document.querySelector('.facet-search');
-
-    setupTaggingItems();
-    setupTabMenu();
-    setupKeywordTag();
-    setupYearTag();
-    setupFacetSearch();
 
     Object.defineProperties(selectedTags, {
       concatenated: {
@@ -26,6 +21,12 @@ export default function taggingListView() {
         }
       }
     });
+
+    setupTaggingItems();
+    setupTabMenu();
+    setupKeywordTag();
+    setupYearTag();
+    setupFacetSearch();
 
     function setupTaggingItems() {
       taggingItems = taggingListView.querySelectorAll('.taggingitem');
@@ -123,9 +124,8 @@ export default function taggingListView() {
 
     function setupFacetSearch() {
       const urlParameters = $.deparam(window.location.search.substr(1));
-      console.log(urlParameters)
       const path = window.location.origin + window.location.pathname;
-      selectedTags = urlParameters ? urlParameters : {};
+      Object.keys(urlParameters).forEach(key => selectedTags[key] = urlParameters[key]);
       const facetSearchTags = facetSearch.querySelectorAll(':scope .tags');
       facetSearchTags.forEach(tags => {
         const tagKey = tags.dataset.tab;
@@ -134,7 +134,6 @@ export default function taggingListView() {
         }
         tagViews[tagKey] = tags.querySelectorAll('.tag-view');
         tagViews[tagKey].forEach(tagView => tagView.addEventListener('click', () => {
-          console.log(tagKey, tagView === 'year')
           const tag = tagView.dataset.tag;
           // 選択中のタグに追加・削除
           if (selectedTags[tagKey].indexOf(tag) === -1) {
@@ -153,6 +152,7 @@ export default function taggingListView() {
           updateTag();
         }));
       });
+      updateTag();
 
     }
 
