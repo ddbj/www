@@ -9,6 +9,8 @@ lang: ja
 DDBJ センターでは[情報・システム研究機構](http://www.rois.ac.jp/) (ROIS)の[規程](https://www.rois.ac.jp/open/21.html)に従いサイトポリシーを規定します。  
 DDBJ センターより提供している各コンテンツ、データ、サービスは、原則として、クレジット (ライセンス種別と著作権者) を明記すれば[Creative Commons Attribution 4.0 International license (CC-BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.ja)の下で利用することができます。ご利用の際は[免責事項](#disclaimer)にご注意ください。
 
+テスト児玉
+
 ご利用の前に、以下を ご一読の上、ご理解くださいますようお願いいたします。  
 ご連絡は基本的にメールを介して行いますので、これを["迷惑メール"としないために](/precautions.html) 設定をご確認ください。
 
