@@ -1,6 +1,6 @@
 ---
-layout: indexed_content
-title: Home
+layout: top
+title: JVar for Short Genetic Variation
 pathname: index-e
 category: _jvar-snp
 current_tab: home
@@ -10,8 +10,6 @@ tab_menu:
     url: /jvar-snp/index-e.html
 lang: en
 ---
-
-## JVar-SNP
 
 JVar-SNP (Japan Variation Database for Short Genetic Variation)
 

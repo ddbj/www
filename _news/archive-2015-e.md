@@ -16,7 +16,7 @@ lang: en
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id ="wn1512222"><a href="#wn1512222">Release of transcriptome sequence data of California harvester ant (Pogonomyrmex californicus)</a></h2>
+  <h2 class="news_title" id ="2015-12-222"><a href="#2015-12-222">Release of transcriptome sequence data of California harvester ant (Pogonomyrmex californicus)</a></h2>
   <div class="news_date">December 22,2015</div>
   <div class="news_content"><p>DDBJ released transcriptome sequence data of California harvester ant (<em>Pogonomyrmex californicus</em>) which had been submitted by Okinawa Institute of Science and Technology Graduate University. </p><p><a href="/documents/accessions-e.html">The accession numbers</a> are as follows. They are available on <a href="http://getentry.ddbj.nig.ac.jp/top-e.html" target="_blank">getentry</a> or <a href="http://ddbj.nig.ac.jp/DRASearch/" target="_blank">DRASearch</a>. </p><dl><dd><strong><a href="/ddbj/tsa-e.html">TSA</a></strong>: IAAD01000001-IAAD01311730 (<a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/tsa/IAAD.gz" target="_blank">IAAD.gz</a>) (311,730 entries)</dd><dd><strong><a href="/dra/index-e.html">DRA</a></strong>: DRR048539-DRR048582 (DRA004112)</dd></dl></div>
   <div class="news_category">
@@ -25,7 +25,7 @@ lang: en
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id ="wn151222"><a href="#wn151222">Release of genome and transcriptome sequence data of Taiwan habu (Protobothrops mucrosquamatu)</a></h2>
+  <h2 class="news_title" id ="2015-12-22"><a href="#2015-12-22">Release of genome and transcriptome sequence data of Taiwan habu (Protobothrops mucrosquamatu)</a></h2>
   <div class="news_date">December 22,2015</div>
   <div class="news_content"><p>DDBJ released genome and transcriptome sequence data of Taiwan habu  (<em>Protobothrops mucrosquamatu</em>) which had been submitted by Okinawa Institute of Science and Technology Graduate University. </p><p><a href="/documents/accessions-e.html">The accession numbers</a> are as follows. They are available on <a href="http://getentry.ddbj.nig.ac.jp/top-e.html" target="_blank">getentry</a> or <a href="http://ddbj.nig.ac.jp/DRASearch/" target="_blank">DRASearch</a>. </p><dl><dt>Genome</dt><dd><strong><a href="/ddbj/wgs-e.html">WGS</a></strong>: BCNE010000001-BCNE011421934 (BCNE.gz) (1,421,934 entries)<br><strong><a href="/dra/index-e.html">DRA</a></strong>: DRR049668, DRR049669 (DRA004189)</dd><dt>Transcriptome</dt><dd><strong><a href="/ddbj/tsa-e.html">TSA</a></strong>: IAAC01000001-IAAC01112307 (<a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/tsa/IAAC.gz" target="_blank">IAAC.gz</a>) (112,307 entries)</dd><dd><strong><a href="/dra/index-e.html">DRA</a></strong>: DRR049635-DRR049665 (DRA004186)</dd></dl></div>
   <div class="news_category">
@@ -61,7 +61,7 @@ lang: en
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id ="wn151201"><a href="#wn151201">(Dec. 10-17) DDBJ network services and NIG Supercomputer will be unavailable (all service resumed)</a></h2>
+  <h2 class="news_title" id ="2015-12-01"><a href="#2015-12-01">(Dec. 10-17) DDBJ network services and NIG Supercomputer will be unavailable (all service resumed)</a></h2>
   <div class="news_date">December 01,2015</div>
   <div class="news_content"><p>DDBJ network services and NIG SuperComputer will be unavailable due to NIG Supercomputer maintenance as follows.</p><table class="t04"><tbody><tr><th>Services</th><th>Schedule (JST)</th></tr><tr><td>・DRA validation</td><td>Dec. 10 (Thu) 14:00 - Dec. 17 (Thu) 14:00 (JST)</td></tr><tr><td>・MiGAP</td><td>Dec. 10 (Thu) 17:00 - Dec. 17 (Thu) 10:00 (JST)</td></tr><tr><td>・D-way<br>・DRA Search<br>・BioProject Search<br>・BioSample Search<br>・JGA Submission/Download Tool<br>・JGA Meta Viewer</td><td>Dec. 11 (Fri) 13:00 - Dec. 17 (Thu) 9:00 (JST)</td></tr><tr><td>・NIG Supercomputer<br>・DDBJ Read Annotation Pipeline</td><td>Dec. 11 (Fri) 17:00 - Dec. 16 (Wed) 24:00 (JST)</td></tr><tr><td>・DDBJ anonymous FTP<br>・getentry<br>・ARSA<br>・TXSearch<br>・BLAST<br>・ClustalW<br>・DDBJ Homepage</td><td>Dec. 11 (Fri) 17:00 - Dec. 17 (Thu) 9:00 (JST)</td></tr><tr><td>・DDBJ Nucleotide Sequence Submission System</td><td>Dec. 11 (Fri) 17:00 - Dec. 17 (Thu) 10:00 (JST)</td></tr></tbody></table><p>Thank you for your understanding and cooperation.</p><p><span class="font-red">DDBJ services are available.<br>Thank you for your cooperation.</span></p><p><span class="font-red">DRA validation is unavailable until December 17 (Thu), 14:00 (JST).</span></p></div>
   <div class="news_category">
@@ -72,7 +72,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="2015-12-01"><a href="#2015-12-01">Downtime of DRA, BioProject and BioSample services due to the NIG super computer maintenance</a></h2>
   <div class="news_date">December 01,2015</div>
-  <div class="news_content"><p>From 11, December (Fri.) 13:00 - 17, December (Thu.) 9:00Downtime depends on <a href="https://sc.ddbj.nig.ac.jp/index.php/component/content/article/10-ja-category/ja-important-notice/280-maintenance2-2015-12-11">maintenance schedule of the NIG super computer</a>.</p><div class="sub_index"><ul class="disc"><li>D-way</li><li>DRA Search</li><li>BioProject Search</li><li>BioSample Search</li><li>JGA Submission/Download Tool</li><li>JGA Meta Viewer</li></ul></div><p>From 10, December (Thu.) 14:00 - 17, December (Thu.) 14:00</p><div class="sub_index"><ul class="disc"><li>DRA validation</li></ul></div><p><a href="/news/en/wn151201-e.html">(Dec. 10-17) DDBJ network services and NIG Supercomputer will be unavailable</a></p></div>
+  <div class="news_content"><p>From 11, December (Fri.) 13:00 - 17, December (Thu.) 9:00Downtime depends on <a href="https://sc.ddbj.nig.ac.jp/index.php/component/content/article/10-ja-category/ja-important-notice/280-maintenance2-2015-12-11">maintenance schedule of the NIG super computer</a>.</p><div class="sub_index"><ul class="disc"><li>D-way</li><li>DRA Search</li><li>BioProject Search</li><li>BioSample Search</li><li>JGA Submission/Download Tool</li><li>JGA Meta Viewer</li></ul></div><p>From 10, December (Thu.) 14:00 - 17, December (Thu.) 14:00</p><div class="sub_index"><ul class="disc"><li>DRA validation</li></ul></div><p><a href="/news/en/2015-12-01-e.html">(Dec. 10-17) DDBJ network services and NIG Supercomputer will be unavailable</a></p></div>
   <div class="news_category">
     <span class="service">Services: bioproject,biosample,gea,dra,dta,jga</span>
     <span class="keyword">Keywords: Maintenance</span>
@@ -317,7 +317,7 @@ Location/Qualifiers"            FT        Feature/qualifier information---------
 <div class="news_post_list">
   <h2 class="news_title" id ="2015-06-29"><a href="#2015-06-29">(Jul. 7 - Jul. 14) JGA services are unavailable</a></h2>
   <div class="news_date">June 29,2015</div>
-  <div class="news_content"><a href="/news/en/wn150623-e.html">(Jul. 7 - Jul. 14 10:00) JGA services are unavailable</a></div>
+  <div class="news_content"><a href="/news/en/2015-06-29_2-e.html">(Jul. 7 - Jul. 14 10:00) JGA services are unavailable</a></div>
   <div class="news_category">
     <span class="service">Services: jga</span>
     <span class="keyword">Keywords: Maintenance</span>
@@ -335,14 +335,14 @@ Location/Qualifiers"            FT        Feature/qualifier information---------
 <div class="news_post_list">
   <h2 class="news_title" id ="2015-06-23"><a href="#2015-06-23">(Jul. 7 – Jul. 13) DDBJ services and NIG Supercomputer will be unavailable</a></h2>
   <div class="news_date">June 23,2015</div>
-  <div class="news_content"><a href="/news/en/wn150623-e.html">(Jul. 7 – Jul. 13) DDBJ services and NIG Supercomputer will be unavailable</a></div>
+  <div class="news_content"><a href="/news/en/2015-06-29_2-e.html">(Jul. 7 – Jul. 13) DDBJ services and NIG Supercomputer will be unavailable</a></div>
   <div class="news_category">
     <span class="service">Services: bioproject,biosample,gea,dra,dta</span>
     <span class="keyword">Keywords: Maintenance</span>
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id ="wn150623"><a href="#wn150623">(Jul. 7 - Jul. 13) DDBJ services and NIG Supercomputer will be unavailable (all service resumed)</a></h2>
+  <h2 class="news_title" id ="2015-06-29_2"><a href="#2015-06-29_2">(Jul. 7 - Jul. 13) DDBJ services and NIG Supercomputer will be unavailable (all service resumed)</a></h2>
   <div class="news_date">June 23,2015</div>
   <div class="news_content"><p>DDBJ services and NIG Supercomputer will be unavailable due to NIG Supercomputer maintenance as follows.</p><table class="t04"><tbody><tr><th>Services</th><th>Schedule (JST)</th></tr><tr><td>・D-way<br>・DRA Search<br>・BioProject Search<br>・BioSample Search</td><td>Jul. 7 (Tue) 13:00 ～ Jul. 13 (Mon) 10:00 (JST)</td></tr><tr><td>・JGA Submission/Download Tool<br>・JGA Meta Viewer</td><td>Jul. 7 (Tue) 13:00 ～ Jul. 14 (Tue) 10:00 (JST)</td></tr><tr><td>・NIG SuperComputer</td><td>Jul. 8 (Wed) 9:00 ～ Jul. 11 (Sat) 24:00 (JST)</td></tr><tr><td>・DDBJ anonymous FTP<br>・getentry<br>・ARSA<br>・DDBJ Nucleotide Sequence Submission System<br>・TXSearch<br>・BLAST<br>・ClustalW<br>・DDBJ Read Annotation Pipeline<br>・MiGAP<br>・DDBJ Homepage</td><td>Jul. 8 (Wed) 9:00 ～ Jul. 13 (Mon) 10:00 (JST)</td></tr></tbody></table><p>Thank you for your understanding and cooperation.</p><p><span class="font-red">DDBJ services are available.<br>Thank you for your cooperation.</span></p><p><span class="font-red">JGA service is unavailable until July 14 (Tue), 10:00 (JST).</span></p></div>
   <div class="news_category">
@@ -524,7 +524,7 @@ Location/Qualifiers"            FT        Feature/qualifier information---------
 <div class="news_post_list">
   <h2 class="news_title" id ="wn150115_2"><a href="#wn150115_2">Nucleotide Sequence Submission System (NSSS) Updated</a></h2>
   <div class="news_date">January 15,2015</div>
-  <div class="news_content"><p>DDBJ Nucleotide Sequence Submission System (NSSS) updated.<br>Due to the system updated, "6. Template" and "7. Annotation" page design and function have been improved.</p><p><span class="icon_d-triangle"> <a href="/news/en/wn141222-e.html">(Jan. 15) Important Notification regarding Nucleotide Sequence Submission System (NSSS)</a></span></p></div>
+  <div class="news_content"><p>DDBJ Nucleotide Sequence Submission System (NSSS) updated.<br>Due to the system updated, "6. Template" and "7. Annotation" page design and function have been improved.</p><p><span class="icon_d-triangle"> <a href="/news/en/2014-12-22-e.html">(Jan. 15) Important Notification regarding Nucleotide Sequence Submission System (NSSS)</a></span></p></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>

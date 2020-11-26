@@ -121,9 +121,9 @@ related_pages:
 #### Examples of citation and acknowledgments
 
   - [We would like to cite the article of
-    DDBJ.](/faq/en/index-e.html#ddbj-cited-article)
+    DDBJ.](/faq/en/ddbj-cited-article.html)
   - [We would like to acknowledge DDBJ in our
-    publication.](/faq/en/index-e.html#acknowledge-ddbj)
+    publication.](/faq/en/acknowledge-ddbj.html)
   - [We would like to acknowledge the NIG Supercomputer System in our
-    publication.](/faq/en/index-e.html#acknowledge-nig-supercomputer)
+    publication.](/faq/en/acknowledge-nig-supercomputer.html)
 </div>

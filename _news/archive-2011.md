@@ -16,7 +16,7 @@ lang: ja
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn111222"><a href="#wn111222">DDBJ/EMBL/GenBank Feature Table Definition 改訂</a></h2>
+  <h2 class="news_title" id="2010-01-04"><a href="#2010-01-04">DDBJ/EMBL/GenBank Feature Table Definition 改訂</a></h2>
   <div class="news_date">2011年12月22日</div>
   <div class="news_content"><dl><dd><a href="/ddbj/feature-table-e.html">Feature Table Definition (FT-Doc)</a> は， DDBJ/EMBL-Bank/GenBank 国際塩基配列データベース構築のために，DDBJ, EMBL-Bank, GenBank が三者間で定めた共通のアノテーション規範です。2011年12月に Feature Table Definition が改訂されました。 Version は，10.0 です。</dd></dl></div>
   <div class="news_category">
@@ -300,7 +300,7 @@ lang: ja
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn110804"><a href="#wn110804">DDBJ メールマガジン No.63 配信</a></h2>
+  <h2 class="news_title" id="2011-08-04"><a href="#2011-08-04">DDBJ メールマガジン No.63 配信</a></h2>
   <div class="news_date">2011年08月04日</div>
   <div class="news_content"><p style="padding-left: 30px;"><strong><img src="{{ site.baseurl }}/assets/images/news/mag-title5.gif" title="mag-title" width="300" height="55"></strong><strong>No. 63   2011年8月4日発行</strong></p><p style="padding-left: 30px;">【目次】<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8" class="alignnone size-full wp-image-11386"> DDBJ HP の CMS 導入のお知らせ<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8" class="alignnone size-full wp-image-11386"> 「第24回 DDBJing 講習会 in 東京」終了<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8" class="alignnone size-full wp-image-11386"> 大量データの公開 (7～8月)<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8" class="alignnone size-full wp-image-11386"> "困った de Ｑ" 第６回<br><img src="{{ site.baseurl }}/assets/images/news/arrow_l_01.gif" title="arrow_l_01" width="4" height="8" class="alignnone size-full wp-image-11386"> DDBJ アノテータの業務紹介～４.更新について(後編)</p>ホームページからもご覧になれますが，お申し込み頂いた方にはメール配信をいたします。配信を希望される方は，<a href="/subscribe-ddbj.html">申込・変更ページ</a> で簡単に手続きができますので，この機会に是非お申し込み下さい。</div>
   <div class="news_category">

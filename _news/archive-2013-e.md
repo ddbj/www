@@ -641,7 +641,7 @@ CAPK, CAPL, CAPM, CAPN, CAPS, CAQO, CAQP</code></pre><br><strong>Period:</strong
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id ="wn130122"><a href="#wn130122">DAD Rel. 61.1 released</a></h2>
+  <h2 class="news_title" id ="2013-01-22"><a href="#2013-01-22">DAD Rel. 61.1 released</a></h2>
   <div class="news_date">January 22,2013</div>
   <div class="news_content"><dl><dd>DAD Rel.61.1 was released, because some disorders were found in DAD Rel.61.0 (released on December 2012).<br><br><ul></ul></dd></dl></div>
   <div class="news_category">
@@ -652,7 +652,7 @@ CAPK, CAPL, CAPM, CAPN, CAPS, CAQO, CAQP</code></pre><br><strong>Period:</strong
 <div class="news_post_list">
   <h2 class="news_title" id ="wn130118"><a href="#wn130118">Apologies for defects in DAD data </a></h2>
   <div class="news_date">January 18,2013</div>
-  <div class="news_content"><p>Some disorders were found in a software tool to generate DAD entries from DDBJ entries. <br>Details are as follows:</p><dl><dt>Category 1</dt><dd><strong>Coverage:</strong> Subset of DAD entries, DAD release notes<br><strong>Period:</strong> From 2011.11.26 (DAD entries generated after DAD Rel. 58)<br><strong>Situation:</strong> Invalid format of LOCUS line, Statistics in DAD release notes were not correct.<br><br></dd><dt>Category 2</dt><dd><strong>Coverage:</strong> Subset of DAD entries<br><strong>Period:</strong> Not clear<br><strong>Situation:</strong> Invalid format of DEFINITION line, COMMENT line and part of features<br></dd><dt>For both categories 1 and 2</dt><dd><strong>Services:</strong> Anonymous FTP，getentry<br><strong>Measure:</strong> We will redistribute and apply <a href="/news/en/wn130122-e.html">DAD release 61.1</a> after fixing the software.<br></dd><p>Please note DAD fasta files are generated in a normal way, independently of those disorders.</p><p>We apologize for your inconvenience.</p></dl></div>
+  <div class="news_content"><p>Some disorders were found in a software tool to generate DAD entries from DDBJ entries. <br>Details are as follows:</p><dl><dt>Category 1</dt><dd><strong>Coverage:</strong> Subset of DAD entries, DAD release notes<br><strong>Period:</strong> From 2011.11.26 (DAD entries generated after DAD Rel. 58)<br><strong>Situation:</strong> Invalid format of LOCUS line, Statistics in DAD release notes were not correct.<br><br></dd><dt>Category 2</dt><dd><strong>Coverage:</strong> Subset of DAD entries<br><strong>Period:</strong> Not clear<br><strong>Situation:</strong> Invalid format of DEFINITION line, COMMENT line and part of features<br></dd><dt>For both categories 1 and 2</dt><dd><strong>Services:</strong> Anonymous FTP，getentry<br><strong>Measure:</strong> We will redistribute and apply <a href="/news/en/2013-01-22-e.html">DAD release 61.1</a> after fixing the software.<br></dd><p>Please note DAD fasta files are generated in a normal way, independently of those disorders.</p><p>We apologize for your inconvenience.</p></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>

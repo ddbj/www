@@ -25,7 +25,7 @@ lang: ja
 </div>
 </div>
 <div class="news_post_list">
-<h2 class="news_title" id="wn151222_2"><a href="#wn151222_2">種子採取アリの1種 (Pogonomyrmex californicus) 転写産物配列データの公開</a></h2>
+<h2 class="news_title" id="2015-12-22_2"><a href="#2015-12-22_2">種子採取アリの1種 (Pogonomyrmex californicus) 転写産物配列データの公開</a></h2>
 <div class="news_date">2015年12月22日</div>
 <div class="news_content"><p>沖縄科学技術大学院大学から登録された種子採取アリの1種 (<em>Pogonomyrmex californicus</em>) の転写産物配列データが公開されました。</p><p><a href="/documents/accessions.html">アクセッション番号</a>は以下の通りです。<a href="http://getentry.ddbj.nig.ac.jp/top-j.html" target="_blank">getentry</a> または <a href="http://ddbj.nig.ac.jp/DRASearch/" target="_blank">DRASearch</a> から検索可能です。</p><dl><dd><strong><a href="/ddbj/tsa.html">TSA</a></strong>: IAAD01000001-IAAD01311730 (<a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/tsa/IAAD.gz" target="_blank">IAAD.gz</a>) (311,730 entries)</dd><dd><strong><a href="/dra/index.html">DRA</a></strong>: DRR048539-DRR048582 (DRA004112)</dd></dl></div>
 <div class="news_category">
@@ -34,7 +34,7 @@ lang: ja
 </div>
 </div>
 <div class="news_post_list">
-<h2 class="news_title" id="wn151222"><a href="#wn151222">タイワンハブ (Protobothrops mucrosquamatu) ゲノムと転写産物配列データの公開</a></h2>
+<h2 class="news_title" id="2015-12-22"><a href="#2015-12-22">タイワンハブ (Protobothrops mucrosquamatu) ゲノムと転写産物配列データの公開</a></h2>
 <div class="news_date">2015年12月22日</div>
 <div class="news_content"><p>沖縄科学技術大学院大学から登録されたタイワンハブ (<em>Protobothrops mucrosquamatu</em>) のゲノムと転写産物配列データが公開されました。</p><p><a href="/documents/accessions.html">アクセッション番号</a>は以下の通りです。<a href="http://getentry.ddbj.nig.ac.jp/top-j.html" target="_blank">getentry</a> または <a href="http://ddbj.nig.ac.jp/DRASearch/" target="_blank">DRASearch</a> から検索可能です。</p><dl><dt>ゲノム</dt><dd><strong><a href="/ddbj/wgs.html">WGS</a></strong>: BCNE010000001-BCNE011421934 (BCNE.gz) (1,421,934 entries)<br><strong><a href="/dra/index.html">DRA</a></strong>: DRR049668, DRR049669 (DRA004189)</dd><dt>転写産物</dt><dd><strong><a href="/ddbj/tsa.html">TSA</a></strong>: IAAC01000001-IAAC01112307 (<a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/tsa/IAAC.gz" target="_blank">IAAC.gz</a>) (112,307 entries)</dd><dd><strong><a href="/dra/index.html">DRA</a></strong>: DRR049635-DRR049665 (DRA004186)</dd></dl></div>
 <div class="news_category">
@@ -79,7 +79,7 @@ lang: ja
 </div>
 </div>
 <div class="news_post_list">
-<h2 class="news_title" id="wn151201"><a href="#wn151201">(12/10-17) スパコン停止に伴うDDBJサービス停止のお知らせ (再開済)</a></h2>
+<h2 class="news_title" id="2015-12-01"><a href="#2015-12-01">(12/10-17) スパコン停止に伴うDDBJサービス停止のお知らせ (再開済)</a></h2>
 <div class="news_date">2015年12月01日</div>
 <div class="news_content"><p>国立遺伝学研究所スーパーコンピュータシステムの定期メンテナンスに伴い、以下の日程で DDBJ のサービスが停止いたします。</p><table class="t04"><tbody><tr><th>サービス名</th><th>停止期間</th></tr><tr><td>・DRA 検証処理</td><td>12月10日(木) 14:00 ～ 12月17日(木) 14:00</td></tr><tr><td>・MiGAP</td><td>12月10日(木) 17:00 ～ 12月17日(木) 10:00</td></tr><tr><td>・D-way<br>・DRA Search<br>・BioProject Search<br>・BioSample Search<br>・JGA Submission/Download Tool<br>・JGA Meta Viewer</td><td>12月11日(金) 13:00 ～ 12月17日(木) 9:00</td></tr><tr><td>・NIG Supercomputer<br>・DDBJ Read Annotation Pipeline</td><td>12月11日(金) 17:00 ～ 12月16日(水) 24:00</td></tr><tr><td>・DDBJ FTP サービス<br>・getentry<br>・ARSA<br>・TXSearch<br>・BLAST<br>・ClustalW<br>・DDBJ Homepage</td><td>12月11日(金) 17:00 ～ 12月17日(木) 9:00</td></tr><tr><td>・DDBJ塩基配列登録システム</td><td>12月11日(金) 17:00 ～ 12月17日(木) 10:00</td></tr></tbody></table><p>皆様には大変ご迷惑をお掛けいたしますが、ご理解とご協力をお願いいたします。</p><p><span class="font-red">DDBJ の公開サービスが再開いたしました。<br>ご協力ありがとうございました。</span></p><p><span class="font-red">DRA 検証処理につきましては、12月17日(木) 14:00 まで停止いたします。</span></p></div>
 <div class="news_category">
@@ -90,7 +90,7 @@ lang: ja
 <div class="news_post_list">
 <h2 class="news_title" id="2015-12-01"><a href="#2015-12-01">スパコン停止に伴う各種サービスの停止</a></h2>
 <div class="news_date">2015年12月01日</div>
-<div class="news_content"><p>12/11 (金) 13:00 ～ 12/17 (木) 9:00停止，再開時間は<a href="https://sc.ddbj.nig.ac.jp/index.php/component/content/article/10-ja-category/ja-important-notice/280-maintenance2-2015-12-11">スパコン起動スケジュール</a>に準じます。</p><div class="sub_index"><ul class="disc"><li>D-way</li><li>DRA Search</li><li>BioProject Search</li><li>BioSample Search</li><li>JGA Submission/Download Tool</li><li>JGA Meta Viewer</li></ul></div><p>停止期間 12/10(木) 14:00 ～ 12/17(木) 14:00</p><div class="sub_index"><ul class="disc"><li>DRA 検証処理</li></ul></div><p><a href="/news/ja/wn151201.html">(12/10-17) スパコン停止に伴うDDBJサービス停止のお知らせ</a></p></div>
+<div class="news_content"><p>12/11 (金) 13:00 ～ 12/17 (木) 9:00停止，再開時間は<a href="https://sc.ddbj.nig.ac.jp/index.php/component/content/article/10-ja-category/ja-important-notice/280-maintenance2-2015-12-11">スパコン起動スケジュール</a>に準じます。</p><div class="sub_index"><ul class="disc"><li>D-way</li><li>DRA Search</li><li>BioProject Search</li><li>BioSample Search</li><li>JGA Submission/Download Tool</li><li>JGA Meta Viewer</li></ul></div><p>停止期間 12/10(木) 14:00 ～ 12/17(木) 14:00</p><div class="sub_index"><ul class="disc"><li>DRA 検証処理</li></ul></div><p><a href="/news/ja/2015-12-01.html">(12/10-17) スパコン停止に伴うDDBJサービス停止のお知らせ</a></p></div>
 <div class="news_category">
 <span class="service">サービス: bioproject,biosample,gea,dra,dta,jga</span>
 <span class="keyword">キーワード: メンテナンス</span>
@@ -432,7 +432,7 @@ lang: ja
 <div class="news_post_list">
 <h2 class="news_title" id="2015-06-29"><a href="#2015-06-29">(7/7-7/14) JGA サービス停止のお知らせ</a></h2>
 <div class="news_date">2015年06月29日</div>
-<div class="news_content"><a href="/news/ja/wn150623.html">(7/7-7/14 10:00) スパコンの定期メンテナンスに伴う JGA サービス停止のお知らせ</a></div>
+<div class="news_content"><a href="/news/ja/2015-06-29_2.html">(7/7-7/14 10:00) スパコンの定期メンテナンスに伴う JGA サービス停止のお知らせ</a></div>
 <div class="news_category">
 <span class="service">サービス: jga</span>
 <span class="keyword">キーワード: メンテナンス</span>
@@ -450,14 +450,14 @@ lang: ja
 <div class="news_post_list">
 <h2 class="news_title" id="2015-06-23"><a href="#2015-06-23">(7/7-7/13) スパコンの定期メンテナンスに伴うDDBJサービス停止のお知らせ</a></h2>
 <div class="news_date">2015年06月23日</div>
-<div class="news_content"><a href="/news/ja/wn150623.html">(7/7-7/13) スパコンの定期メンテナンスに伴うDDBJサービス停止のお知らせ</a></div>
+<div class="news_content"><a href="/news/ja/2015-06-29_2.html">(7/7-7/13) スパコンの定期メンテナンスに伴うDDBJサービス停止のお知らせ</a></div>
 <div class="news_category">
 <span class="service">サービス: bioproject,biosample,gea,dra,dta</span>
 <span class="keyword">キーワード: メンテナンス</span>
 </div>
 </div>
 <div class="news_post_list">
-<h2 class="news_title" id="wn150623"><a href="#wn150623">(7/7-7/13) スパコンの定期メンテナンスに伴うDDBJサービス停止のお知らせ (再開済)</a></h2>
+<h2 class="news_title" id="2015-06-29_2"><a href="#2015-06-29_2">(7/7-7/13) スパコンの定期メンテナンスに伴うDDBJサービス停止のお知らせ (再開済)</a></h2>
 <div class="news_date">2015年06月23日</div>
 <div class="news_content"><p>国立遺伝学研究所スーパーコンピュータシステムの定期メンテナンスに伴い、以下の日程で DDBJ のサービスを停止いたします。</p><table class="t04"><tbody><tr><th>サービス名</th><th>停止期間</th></tr><tr><td>・D-way<br>・DRA Search<br>・BioProject Search<br>・BioSample Search</td><td>7月7日(火) 13:00 ～ 7月13日(月) 10:00</td></tr><tr><td>・JGA Submission/Download Tool<br>・JGA Meta Viewer</td><td>7月7日(火) 13:00 ～ 7月14日(火) 10:00</td></tr><tr><td>・NIG Supercomputer</td><td>7月8日(水) 9:00 ～ 7月11日(土) 24:00</td></tr><tr><td>・DDBJ FTP サービス<br>・getentry<br>・ARSA<br>・DDBJ塩基配列登録システム<br>・TXSearch<br>・BLAST<br>・ClustalW<br>・DDBJ Read Annotation Pipeline<br>・MiGAP<br>・DDBJ Homepage</td><td>7月8日(水) 9:00 ～ 7月13日(月) 10:00</td></tr></tbody></table><span class="font-bold font-red">※</span>メンテナンス作業の状況により、サービス再開が前後する場合があります。<p>皆様には大変ご迷惑をお掛けいたしますが、ご理解とご協力をお願いいたします。</p><p><span class="font-red">DDBJ の公開サービスが再開いたしました。<br>ご協力ありがとうございました。</span></p><p><span class="font-red">JGA サービスにつきましては、7月14日(火) 10:00 まで停止いたします。</span></p></div>
 <div class="news_category">
@@ -684,7 +684,7 @@ lang: ja
 <div class="news_post_list">
 <h2 class="news_title" id="wn150115_2"><a href="#wn150115_2">Web版塩基配列登録システム(NSSS) 更新のお知らせ</a></h2>
 <div class="news_date">2015年01月15日</div>
-<div class="news_content"><p>Web版塩基配列登録システム(NSSS) のシステム更新を行いました。<br>システム更新に伴い、"6. Template" ページ、および、"7. Annotation" ページ のデザイン、機能を改善しました。</p><p><span class="icon_d-triangle"> <a href="/news/ja/wn141222.html">(1/15) Web版塩基配列登録システム(NSSS)に関する重要なお知らせ</a></span></p></div>
+<div class="news_content"><p>Web版塩基配列登録システム(NSSS) のシステム更新を行いました。<br>システム更新に伴い、"6. Template" ページ、および、"7. Annotation" ページ のデザイン、機能を改善しました。</p><p><span class="icon_d-triangle"> <a href="/news/ja/2014-12-22.html">(1/15) Web版塩基配列登録システム(NSSS)に関する重要なお知らせ</a></span></p></div>
 <div class="news_category">
 <span class="service">サービス: ddbj</span>
 <span class="keyword">キーワード: お知らせ</span>

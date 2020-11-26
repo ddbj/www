@@ -39,7 +39,7 @@ NCBIでは、BLASTというFASTAのほぼ50倍速い、ホモロジー検索サ�
 
 {::options parse_block_html="true" /}
 <div class="attention">
-<span class="red">（註）</span>現在、遺伝研（DDBJ）では、FASTA のサービスは Web、E-mail では提供しておりません（[検索・解析サービスの一部終了のお知らせ](/news/ja/wn100203_2.html)）。FASTA をご利用の場合には、[遺伝研スーパーコンピュータシステム](https://sc.ddbj.nig.ac.jp/ja)をご利用ください。
+<span class="red">（註）</span>現在、遺伝研（DDBJ）では、FASTA のサービスは Web、E-mail では提供しておりません（[検索・解析サービスの一部終了のお知らせ](/news/ja/2010-02-03_2.html)）。FASTA をご利用の場合には、[遺伝研スーパーコンピュータシステム](https://sc.ddbj.nig.ac.jp/ja)をご利用ください。
 </div>
 
 遺伝研では現在FASTAというホモロジーサーチのプログラムが動いていますが、これとBLASTを比較ししたいと思います。  

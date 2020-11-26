@@ -16,7 +16,7 @@ lang: en
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id ="wn111222"><a href="#wn111222">DDBJ/EMBL/GenBank Feature Table Definition revised  </a></h2>
+  <h2 class="news_title" id ="2010-01-04"><a href="#2010-01-04">DDBJ/EMBL/GenBank Feature Table Definition revised  </a></h2>
   <div class="news_date">December 22,2011</div>
   <div class="news_content"><dl><dd><a href="/ddbj/feature-table-e.html">Feature Table Definition (FT-Doc)</a> is the common annotation manual among the three banks (DDBJ, EMBL-Bank, GenBank) for the construction of the DDBJ/EMBL/GenBank International Nucleotide Sequence Database. Feature Table Definition was revised in December 2011. Version is 10.0.</dd></dl></div>
   <div class="news_category">

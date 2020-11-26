@@ -437,7 +437,7 @@ DDBJNEWr93.065.dat.gz （HG322958-HG323812 を含む）</code></pre><br>getentry
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn130726_2"><a href="#wn130726_2">ウズラ (Coturnix japonica) ゲノム配列データの公開</a></h2>
+  <h2 class="news_title" id="2013-07-26_2"><a href="#2013-07-26_2">ウズラ (Coturnix japonica) ゲノム配列データの公開</a></h2>
   <div class="news_date">2013年07月26日</div>
   <div class="news_content">東京農業大学から登録されたウズラ (<em>Coturnix japonica</em>) のゲノム配列データが公開されました。 <br> <br><strong>アクセッション番号</strong>は以下の通りです。<a href="http://getentry.ddbj.nig.ac.jp/top-j.html" target="_blank">getentry</a> または <a href="http://ddbj.nig.ac.jp/DRASearch/" target="_blank">DRASearch</a> から検索可能です。   <br>    <strong>scaffold CON</strong>: DF260915-DF266788 (5,874 entries)  <br>    <strong>WGS</strong>: BASJ01000001-BASJ01528405 (BASJ.gz) (528,405 entries)  <br>    <strong>raw data</strong>: DRR002288-DRR002301</div>
   <div class="news_category">
@@ -792,7 +792,7 @@ CAPL, CAPM, CAPN, CAPS, CAQO, CAQP</code></pre><strong><br>期間：</strong> 20
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn130122"><a href="#wn130122">DAD リリース 61.1 公開</a></h2>
+  <h2 class="news_title" id="2013-01-22"><a href="#2013-01-22">DAD リリース 61.1 公開</a></h2>
   <div class="news_date">2013年01月22日</div>
   <div class="news_content">DAD リリース61.0 （2012年12月公開）の一部データに不備が生じていたことが判明したため、訂正版 DAD リリース 61.1  を公開しました。<br></div>
   <div class="news_category">
@@ -803,7 +803,7 @@ CAPL, CAPM, CAPN, CAPS, CAQO, CAQP</code></pre><strong><br>期間：</strong> 20
 <div class="news_post_list">
   <h2 class="news_title" id="wn130118"><a href="#wn130118">DAD のデータ不備についてのお詫び</a></h2>
   <div class="news_date">2013年01月18日</div>
-  <div class="news_content"><p>DDBJ リリースから DAD を生成するソフトウェアに不具合があり、一部データに不備が生じていたことが判明しました。<br>詳細は以下の通りです。</p><dl><dt>区分１</dt><dd><strong>対象：</strong> 一部のDAD エントリ、DAD リリースノート<br><strong>期間：</strong> 2011.11.26 以降 (DAD Rel. 58 より後に作成された DAD エントリ)<br><strong>状況：</strong> LOCUS 行の書式が不正、DAD リリースノート統計が不正<br></dd><dt>区分２</dt><dd><strong>対象：</strong> 一部のDAD エントリ<br><strong>期間：</strong> 不明<br><strong>状況：</strong> DEFINITION 行、COMMENT 行、Feature の一部で書式が不正<br></dd><dt>区分１と２共通</dt><dd><strong>影響サービス：</strong> Anonymous FTP，getentry<br><strong>対応：</strong> 該当ソフトウェアを修正し <a href="/news/ja/wn130122.html">DAD リリース 61.1</a> を公開し適用することで解消しました。<br></dd></dl><p>なお、DAD fasta ファイルは上記不具合とは関係なく正常に生成されていました。</p><p>ユーザの皆様にご迷惑をお掛けいたしました事を深くお詫び申し上げます。</p></div>
+  <div class="news_content"><p>DDBJ リリースから DAD を生成するソフトウェアに不具合があり、一部データに不備が生じていたことが判明しました。<br>詳細は以下の通りです。</p><dl><dt>区分１</dt><dd><strong>対象：</strong> 一部のDAD エントリ、DAD リリースノート<br><strong>期間：</strong> 2011.11.26 以降 (DAD Rel. 58 より後に作成された DAD エントリ)<br><strong>状況：</strong> LOCUS 行の書式が不正、DAD リリースノート統計が不正<br></dd><dt>区分２</dt><dd><strong>対象：</strong> 一部のDAD エントリ<br><strong>期間：</strong> 不明<br><strong>状況：</strong> DEFINITION 行、COMMENT 行、Feature の一部で書式が不正<br></dd><dt>区分１と２共通</dt><dd><strong>影響サービス：</strong> Anonymous FTP，getentry<br><strong>対応：</strong> 該当ソフトウェアを修正し <a href="/news/ja/2013-01-22.html">DAD リリース 61.1</a> を公開し適用することで解消しました。<br></dd></dl><p>なお、DAD fasta ファイルは上記不具合とは関係なく正常に生成されていました。</p><p>ユーザの皆様にご迷惑をお掛けいたしました事を深くお詫び申し上げます。</p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>

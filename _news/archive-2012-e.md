@@ -27,14 +27,14 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="2012-12-18"><a href="#2012-12-18">Business closed for the New Year holidays</a></h2>
   <div class="news_date">December 18,2012</div>
-  <div class="news_content">DDBJ will be closed from December 29 to January 3 for the New Year holidays. <a href="/news/en/wn121203-e.html">» Suspension of the DDBJ activity during the New Year Holidays</a>.</div>
+  <div class="news_content">DDBJ will be closed from December 29 to January 3 for the New Year holidays. <a href="/news/en/2012-12-03-e.html">» Suspension of the DDBJ activity during the New Year Holidays</a>.</div>
   <div class="news_category">
     <span class="service">Services: bioproject,biosample,gea,dra,dta</span>
     <span class="keyword">Keywords: Announcement</span>
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id ="wn121203"><a href="#wn121203">Suspension of the DDBJ activity during the New Year Holidays </a></h2>
+  <h2 class="news_title" id ="2012-12-03"><a href="#2012-12-03">Suspension of the DDBJ activity during the New Year Holidays </a></h2>
   <div class="news_date">December 03,2012</div>
   <div class="news_content">We at DDBJ will temporally close our office during  the New Year Holidays, in observance of the Japanese custom, <a href="/ddbj/web-submission-e.html">New DDBJ Nucleotide Sequence Submission System</a>  and data release are also closed.<br>However, the computer search/analysis and FTP are available as usual.<br><br>Inquiries for data submission, data update, search/analysis, supercomputer account application, etc.,  web form posting and E-mail sending are available throughout the holidays. But, please note in advance that replies from DDBJ is after the reopening of the office in 2013.[generate_table class=t04]DDBJ office close:</div>
   <div class="news_category">
@@ -81,7 +81,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn121031_2"><a href="#wn121031_2">Submission through "SAKURA" was terminated</a></h2>
   <div class="news_date">October 31,2012</div>
-  <div class="news_content">Submission through "SAKURA" was terminated on October 31, 2012 at 17:00(JST).<br>Thank you for having used for a long time.<br><br>From now on, please use <a href="/ddbj/web-submission-e.html" title="DDBJ Nucleotide Sequence Submission System">"A new DDBJ Nucleotide Sequence Submission System"</a>.You can download <a href="{{ site.baseurl }}/assets/files/pdf/websubHelp_full_e.pdf" title="Deasy_help">HELP file of the submission system(PDF)</a>.<br><br>　Reference: <a href="/news/en/wn120928_4-e.html" title="New DDBJ Nucleotide Sequence Submission System will be available on Oct. 3, 2012">New DDBJ Nucleotide Sequence Submission System will be available on Oct. 3, 2012</a></div>
+  <div class="news_content">Submission through "SAKURA" was terminated on October 31, 2012 at 17:00(JST).<br>Thank you for having used for a long time.<br><br>From now on, please use <a href="/ddbj/web-submission-e.html" title="DDBJ Nucleotide Sequence Submission System">"A new DDBJ Nucleotide Sequence Submission System"</a>.You can download <a href="{{ site.baseurl }}/assets/files/pdf/websubHelp_full_e.pdf" title="Deasy_help">HELP file of the submission system(PDF)</a>.<br><br>　Reference: <a href="/news/en/2012-09-28_4-e.html" title="New DDBJ Nucleotide Sequence Submission System will be available on Oct. 3, 2012">New DDBJ Nucleotide Sequence Submission System will be available on Oct. 3, 2012</a></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -133,7 +133,7 @@ lang: en
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id ="wn120928_4"><a href="#wn120928_4">New DDBJ Nucleotide Sequence Submission System will be available on Oct. 3, 2012</a></h2>
+  <h2 class="news_title" id ="2012-09-28_4"><a href="#2012-09-28_4">New DDBJ Nucleotide Sequence Submission System will be available on Oct. 3, 2012</a></h2>
   <div class="news_date">September 28,2012</div>
   <div class="news_content"><dl><dd><a href="/ddbj/web-submission-e.html" title="A new DDBJ Nucleotide Sequence Submission System">A new DDBJ Nucleotide Sequence Submission System</a> will be released on October 3, 2012. <br>This system has much more effective interface to input annotation than <a href="http://sakura.ddbj.nig.ac.jp/sakura_en.html" title="SAKURA" target="_blank">SAKURA</a>.We also revise the error check function. The new submission system is equipped with "jParser", which is also used in <a href="/ddbj/mss-e.html" title="MSS" target="_blank"> Mass Submission System (MSS)</a>.<br><br><hr>Submission through "SAKURA" will be terminated on October 31, 2012 at 17:00(JST). Please check the following notes. </dd></dl><div id="list_l1p">Notes about SAKURA</div><dl><dd><ul> <li>Data of saved entries and templates, whose submission is in progress, are not transferred into the new submission system. </li><li>Please complete your submission prior to the termination of SAKURA.<br></li></ul></dd></dl></div>
   <div class="news_category">

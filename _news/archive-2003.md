@@ -814,7 +814,7 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC    </code></pre><p>・検索結果
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn030423"><a href="#wn030423">ヒトゲノム全配列解読完了</a></h2>
+  <h2 class="news_title" id="2003-04-23"><a href="#2003-04-23">ヒトゲノム全配列解読完了</a></h2>
   <div class="news_date">2003年04月23日</div>
   <div class="news_content"> <dl class="number"><dt>内閣総理大臣の談話</dt><dd><a href="http://www.kantei.go.jp/jp/koizumispeech/2003/04/14danwa.html">原文</a> / <a href="http://japan.kantei.go.jp/koizumispeech/2003/04/14danwa_e.html">English</a></dd><dt>ヒトゲノムの解読の完了について</dt><dd>ＤＮＡの二重らせん構造発見から５０年、その記念すべき本年、人類の長年にわた る願いであったヒトゲノムの精密な解読が、国際的な科学協力の成果として完了した のは大変すばらしいことです。これは生命科学分野における夢の実現への一里塚です。この解読にかかわった六カ国の多数の研究者が互いに協力し、不屈のご努力でこの 偉業を成し遂げられたことを讃え、心から敬意を表します。特に日本の研究者が、壮 大なプロジェクトであるこの国際ヒトゲノム計画に当初から積極的に参加し、大きな 貢献をしたことを大変誇りに思います。解読されたヒトゲノムの情報は、ヒトの進化や生命の仕組みを解明するための有力 な手段であり、これまで治療法が未解明であった病気の治療や予防のための技術開発 などの飛躍的な進展の基礎となるものです。今後はこれらの成果をもとに、全生命シ ステムの解明に向けた取組みや、ゲノム情報を戦略的に活用した研究開発が一層進展 することを確信いたします。我が国が将来、豊かで活力のある長寿社会を築くことができるよう、また人類の福 祉と経済社会の発展に更に大きく貢献できるよう、文部科学省としてもこの分野の研 究内容の発展に最大限の努力を行ってまいります。平成１５年４月１４日文部科学大臣遠山　敦子</dd><dt>歴史的経緯</dt><dd>１９８６　ヒトゲノム計画の提言１９８９　ヒトゲノム国際機構（ＨＵＧＯ）の設立１９９１　国際ヒトゲノム計画開始１９９６　バーミューダ会議　　　　　　ヒトゲノム配列決定コンソーシウム結成２０００　ヒトゲノム概要配列決定２００１　同上論文発表（Nature 2001//02/14号２００３　ヒトゲノム精密配列決定</dd><dt>概要配列と精密配列の比較</dt><dd><table class="t02"> <tbody> <tr> <th> 時期</th> <th> ２００１．２</th> <th> ２００３．４</th> </tr> <tr> <th> 決定塩基数</th> <td> ２７億２０００万</td> <td> ２８億３０００万</td> </tr> <tr> <th> 割合</th> <td> ９５％</td> <td> ９９％</td> </tr> <tr> <th>解析手法</th> <td>階層的ショットガン</td> <td>階層的ショットガン＋プライマーウオークなど</td> </tr> <tr> <th>クローンのギャップ</th> <td>約６１００</td> <td>約１８０</td> </tr> <tr> <th>d配列ギャップ</th> <td>約１５０００００</td> <td>約５００</td> </tr> <tr> <th>データ精度</th> <td>９９．９～９９．９９％</td> <td>９９．９９％</td> </tr> <tr> <th>予測遺伝子数</th> <td>３万～４万</td> <td>約３２０００（＊）</td> </tr> </tbody> </table>（＊）EBIのENSEMBLの予測値ならびに、東京大学医科学研究所と理化学研究所の DIGITの予測値   </dd><dt>International Consortium Completes Human Genome Project</dt><dd>（６カ国首脳談話）Joint Proclamation by the Heads of Government of Six countries Regarding the Completion of the Human Genome Sequence   （<a href="http://japan.kantei.go.jp/koizumispeech/2003/04/14sengen_e.html">English</a> ／<a href="http://www.kantei.go.jp/jp/koizumispeech/2003/04/14sengen.html">Japanese</a>）（以上最終更新日：２００３年５月７日） </dd><dt>配列を見る</dt><dd><b>===DDBJから===</b>DDBJでは，「DDBJ/CIB ヒトゲノム情報工房」のページを設けています。このプロジェクトは２０００年４月にスタートし， ２００１年２月の概要配列の発表を経てこれまでにDDBJ/EMBL/GenBankの国際DNAデータベースに登録・公開された ゲノム配列を基に作成されたものであり，現時点では「概要配列」を見るためのものです（最終更新日：２００２年５月８日）。⇒「DDBJ/CIB ヒトゲノム情報工房」完全配列については、以下のサイトを御覧下さい。⇒ヒトゲノム完成配列（Build 35.1)ダウンロードページこの完全配列（Build 35.1:２００４年８月現在の最新データ)ダウンロードページは，米国NCBIから公開されているアノテーションの 付加された最新データを基に，染色体ごとにまとめてコンティグリストを作成したものです。なお，このBuild35.1には，国際ヒ トゲノムシークエンシング・コンソーシウムが決定した配列に加えて，セレラ社が決 定した配列も盛り込まれております。  </dd></dl></div>
   <div class="news_category">
@@ -823,7 +823,7 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC    </code></pre><p>・検索結果
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn030423_2"><a href="#wn030423_2">GIB のサービス停止</a></h2>
+  <h2 class="news_title" id="2003-04-23_2"><a href="#2003-04-23_2">GIB のサービス停止</a></h2>
   <div class="news_date">2003年04月23日</div>
   <div class="news_content">マシンメンテナンスのため，以下の期日で GIB サーバが停止いたします。 皆様のご理解とご協力をお願い致します。<br>期間： 4月26日（土）17:00 から 4月27日（日）8:00 まで</div>
   <div class="news_category">
@@ -832,7 +832,7 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC    </code></pre><p>・検索結果
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn030423_3"><a href="#wn030423_3">getentry 機能拡張</a></h2>
+  <h2 class="news_title" id="2003-04-23_3"><a href="#2003-04-23_3">getentry 機能拡張</a></h2>
   <div class="news_date">2003年04月23日</div>
   <div class="news_content"><a href="http://getentry.ddbj.nig.ac.jp/top-j.html">getentry</a>はweb サーバと E-mail サーバを利用してアクセッション番号などによりエントリデータを検索するシステムです。2003年4月より web 版 getentry に次の２つの機能を追加しました。どうぞご利用下さい。<dl><dt>バージョン番号をキーにしたエントリ検索機能</dt><dd>バージョン番号はフラットファイルの VERSION 行に記載されており,<br>そのエントリの配列が訂正・更新された回数を示しています（例：AB000001.1）。<br>  このバージョン番号をキーにエントリが検索できるようになりました。<br>  これは E-mail 版でサービスしている get-version と同様の機能です。</dd><dd><b>使い方その１：</b><br>  番号指定のメニュー選択欄から [Version Number] を選択する<br>  検索したいエントリのバージョン番号を入力し [検索] ボタンを押す<br> 該当エントリが表示される</dd><dd><b>使い方その２：</b><br>  番号指定のメニュー選択欄から [Version Number] を選択する<br>  アクセッション番号を入力し [検索] ボタンを押す<br> エントリの全バージョンリストが表示される</dd><dt>DADの塩基配列表示機能</dt><dd>Protein データベース DAD を指定した場合，<br>  翻訳前の塩基配列を FASTA 形式で表示する機能を追加しました。<br>  これまではフラットファイル形式か FASTA 形式のアミノ酸配列のみでした。</dd><dd><b>使い方：</b><br>  Protein データベースから DAD を指定する<br>  出力形式の選択メニューから [塩基配列 FASTA (for DAD)] を選ぶ<br>  番号指定の選択メニューから [Protein ID] を選ぶ<br>  検索したいデータの Protein ID 入力し [検索] ボタンを押す</dd></dl></div>
   <div class="news_category">
@@ -841,7 +841,7 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC    </code></pre><p>・検索結果
   </div>
 </div>
 <div class="news_post_list">
-  <h2 class="news_title" id="wn030423_4"><a href="#wn030423_4">DDBJ メールマガジンのご案内</a></h2>
+  <h2 class="news_title" id="2003-04-23_4"><a href="#2003-04-23_4">DDBJ メールマガジンのご案内</a></h2>
   <div class="news_date">2003年04月23日</div>
   <div class="news_content">DDBJ では新サービスの案内やおしらせをメールマガジンで配信しています。<br>このメールマガジンは登録していただいたアドレスにヘッドラインと URL のみをお届けし，興味のある記事はサイトにアクセスしてご覧いただく形式です。<br>隔月配信で，現在<a href="/subscribe-ddbj.html">第６号を公開しています</a>。<br>DDBJ からユーザの方々に情報をお届けすることのできる手段ですので，この機会にぜひお申し込み下さい。<br><a href="/subscribe-ddbj.html">web とメールでお申し込みいただくことができます</a>。<br><dd>本日よりトップページにリンク項目を追加しました。</dd></div>
   <div class="news_category">
