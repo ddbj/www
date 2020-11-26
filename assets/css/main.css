@@ -988,6 +988,7 @@ input, textarea, select, button {
         pointer-events: auto;
         transform: translateY(0); }
       .tab-menu-view > .tabmenucontainer > li.-current > a {
+        color: #1C1B19;
         line-height: 3rem;
         background-color: white;
         border-top: solid 0.1rem #1C1B19;
