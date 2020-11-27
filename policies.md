@@ -336,8 +336,8 @@ Computations were partially performed on the NIG supercomputer at ROIS National 
 ## ソーシャルメディアにおける生命情報・DDBJセンターのオフィシャルサイト<a name="official-sites-on-third-party-site"></a>
 生命情報・DDBJセンターのソーシャルメディアにおけるオフィシャルサイト（アカウント）は以下になります。
 
-● Twitter: [@ddbj_topics](https://twitter.com/ddbj_topics)
-● Facebook: [ddbjcenter](https://www.facebook.com/ddbjcenter)
-● Youtube channnel: [ddbjvideo](https://www.youtube.com/user/DDBJvideo/)
-● GitHub: [ddbj](https://github.com/ddbj/)
+* Twitter: [@ddbj_topics](https://twitter.com/ddbj_topics)
+* Facebook: [ddbjcenter](https://www.facebook.com/ddbjcenter)
+* Youtube channnel: [ddbjvideo](https://www.youtube.com/user/DDBJvideo/)
+* GitHub: [ddbj](https://github.com/ddbj/)
 
