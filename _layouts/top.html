@@ -72,15 +72,8 @@ layout: default
           <li class="item">
             <article class="news{% if news.priority %} priority{% endif %}">
               <a href="{{ site.baseurl }}{{ news.url }}">
-                <div class="metadata">
-                  <time>{{news.date | date: '%Y年%m月%d日'}}</time>
-                  <div class="tags">
-                    {% for tag in news.tags %}
-                    <li class="tag-view" data-tag="{{ tag }}">{{ tag }}</li>
-                    {% endfor %}
-                  </div>
-                </div>
                 <h3 class="title">{{news.title}}</h3>
+                {% include tags.html lang=page.lang date=news.date tags=news.tags dbs=news.db %}
               </a>
             </article>
           </li>

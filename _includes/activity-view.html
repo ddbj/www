@@ -2,7 +2,7 @@
   
   <div class="upper">
     <h2 class="title"><a {% if activity.url %} href="{{ activity.url }}" {% endif %}>{{ label }}</a></h2>
-    <ul class="tags">
+    <ul class="tag-list-view">
       <li class="date"><time>{{ date | date: "%Y" }}</time></li>
       <li class="tag-view" data-tag="{{ include.tag }}">{{ tag_label }}</li>
     </ul>
