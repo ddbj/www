@@ -133,10 +133,8 @@ input, textarea, select, button {
   width: 1em;
   height: 1em;
   position: relative;
-  cursor: pointer;
-  opacity: .4; }
+  cursor: pointer; }
   .appearance-switch > .button.-current {
-    opacity: 1;
     cursor: auto; }
   .appearance-switch > .button + .button {
     margin-left: .6em; }
@@ -147,13 +145,19 @@ input, textarea, select, button {
   .appearance-switch > .button[data-appearance-value="panel"]:before {
     width: .4em;
     height: .4em;
-    background-color: #6D5C3F;
-    box-shadow: 0.6em 0 0 #6D5C3F, 0 0.6em 0 0 #6D5C3F, 0.6em 0.6em 0 #6D5C3F; }
+    background-color: #d2cac4;
+    box-shadow: 0.6em 0 0 #d2cac4, 0 0.6em 0 0 #d2cac4, 0.6em 0.6em 0 #d2cac4; }
   .appearance-switch > .button[data-appearance-value="list"]:before {
     width: 1em;
     height: .2em;
-    background-color: #6D5C3F;
-    box-shadow: 0 0.4em 0 #6D5C3F, 0 0.8em 0 #6D5C3F; }
+    background-color: #d2cac4;
+    box-shadow: 0 0.4em 0 #d2cac4, 0 0.8em 0 #d2cac4; }
+  .appearance-switch > .button[data-appearance-value="panel"]:hover:before, .appearance-switch > .button.-current[data-appearance-value="panel"]:before {
+    background-color: #fcac3d;
+    box-shadow: 0.6em 0 0 #fcac3d, 0 0.6em 0 0 #fcac3d, 0.6em 0.6em 0 #fcac3d; }
+  .appearance-switch > .button[data-appearance-value="list"]:hover:before, .appearance-switch > .button.-current[data-appearance-value="list"]:before {
+    background-color: #fcac3d;
+    box-shadow: 0 0.4em 0 #fcac3d, 0 0.8em 0 #fcac3d; }
 
 .arrowed-link {
   font-weight: bold;
@@ -991,7 +995,7 @@ input, textarea, select, button {
   font-size: 1rem;
   font-weight: bold;
   line-height: 1.6;
-  background-color: #FCC93D;
+  background-color: #fcac3d;
   color: #1C1B19;
   border-radius: .8em;
   padding: 0 .8em;
