@@ -63,7 +63,7 @@ export default function taggingListView() {
       const categoryTags = {}, affiliationTags = {}, tagLabels = {};
       // タグの収集
       for (const item of taggingItems) {
-        const tags = item.querySelectorAll('.tags > .tag-view');
+        const tags = item.querySelectorAll('.tag-list-view > .tag-view');
         for (const tag of tags) {
           let array;
           if (tag.classList.contains('-reverse')) {
@@ -85,7 +85,7 @@ export default function taggingListView() {
       const facetSearchTags = facetSearch.querySelector(':scope .tags[data-tab="keyword"]');
       for (const tags of [categoryTags, affiliationTags]) {
         for (const tag in tags) {
-          html += `<li class="tag-view${affiliationTags[tag] === undefined ? '' : ' -reverse'}" data-tag="${tag}">${tagLabels[tag]}<span class="count">${tags[tag].length}</span></li>`;
+          html += `<li class="tag-view${affiliationTags[tag] === undefined ? '' : ' -reverse'}" data-tag="${tag}"><span class="label">${tagLabels[tag]}</span><span class="count">${tags[tag].length}</span></li>`;
         }
       }
       facetSearchTags.innerHTML = html;
@@ -105,7 +105,7 @@ export default function taggingListView() {
         const yearTags = {};
         // タグの収集
         for (const item of taggingItems) {
-          const datetime = item.querySelector('.tags > .date > time').getAttribute('datetime');
+          const datetime = item.querySelector('.tag-list-view > .date > time').getAttribute('datetime');
           const year = new Date(datetime).getFullYear();
           if (!yearTags[year]) {
             yearTags[year] = [];
@@ -189,38 +189,6 @@ export default function taggingListView() {
         for (const key in tagViews) {
           tagViews[key].forEach(tagView => tagView.classList.add('-disable'));
         }
-        taggingItems.forEach(taggingItem => taggingItem.classList.remove('-hidden'));
-
-      }
-
-      return;
-      if (selectedTags.length) {
-        // 何か選択されている場合、選択されているもののみ表示
-        tagViews.forEach(tagView => {
-          if (selectedTags.indexOf(tagView.dataset.tag) === -1) {
-            tagView.classList.add('-disable');
-          } else {
-            tagView.classList.remove('-disable');
-          }
-        });
-        for (const taggingItem of taggingItems) {
-          let isHidden = false;
-          const tags = Array.from(taggingItem.querySelectorAll('.tags > .tag-view'), tag => tag.dataset.tag);
-          for (const selectedTag of selectedTags) {
-            if (tags.indexOf(selectedTag) === -1) {
-              isHidden = true;
-              break;
-            }
-          }
-          if (isHidden) {
-            taggingItem.classList.add('-hidden');
-          } else {
-            taggingItem.classList.remove('-hidden');
-          }
-        }
-      } else {
-        // 無選択の場合、全部選択
-        tagViews.forEach(tagView => tagView.classList.add('-disable'));
         taggingItems.forEach(taggingItem => taggingItem.classList.remove('-hidden'));
       }
     }

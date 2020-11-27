@@ -12893,6 +12893,14 @@
 		"oAP": "/_includes/tab-menu.html",
 		"oF": 0
 		},
+	"/_includes/tags.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_includes/tags.html",
+		"oF": 0
+		},
 	"/_javascript/accordionMenu.js": {
 		"bF": 0,
 		"ft": 64,
@@ -94689,6 +94697,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/_sass/object/component/_tab-menu-view.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/_sass/object/component/_tag-list-view.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_sass/object/component/_tag-list-view.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
