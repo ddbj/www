@@ -6,200 +6,336 @@ category: www
 lang: en
 ---
 
-DDBJ Center prescribes its website policies in accordance with the policies of its parent organization, [the Research Organization of Information and Systems](https://www.rois.ac.jp/en/index.html) (ROIS) (ROIS).  
-In principle, website, data and services provided from DDBJ center are available with describing credits (license and copyright) under [Creative Commons Attribution 4.0 International license (CC-BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.en). Please note [disclaimers](#disclaimer).
+## Terms of Use<a name="terms-of-use"></a>
+
+### Definitions<a name="definition-of-terms"></a>
+In this Terms of Use, each of the following terms have the following meanings:    
+  - 'Organization' means the Research Organization of Information and Systems.
+  - 'Center' means the Bioinformation and DDBJ Center of the National Institute of Genetics, the Research Organization of Information and Systems.
+  - 'unrestricted-access database' means a database by which center provides data to user without imposing any restriction on its use or distribution.
+  - 'controlled-access database' means a database by which center provides data to user imposing restriction on its use. 
+  - 'submitted data' means data that submitter provides to Center.
+  - 'provided data' means data that center provides to user that includes submitted data, data processed from submitted data and data independently collected by Center. 
+  - 'unrestricted-access data' means data that Center provides to user from the unrestricted-access database without imposing any restriction on its use.
+  - 'controlled-access data' means data that Center provides to user from the controlled-access database imposing restriction on its use. 
+
+### General<a name="general-regulations"></a>
+  1. Bioinformation and DDBJ Center of the National Institute of Genetics, the Research Organization of Information and Systems (hereinafter referred to as 'Center') supports life-science research by providing websites, search and analysis services, database service (hereinafter referred to as 'online services') and supercomputer system (these services will be hereinafter collectively referred to as 'our services'). When a person starts to using our services (the person who uses our services will be hereinafter referred to as 'user'), user shall be deemed to have agreed to the Terms of Use stipulated below. Furthermore, in regard to services for which terms of use are independently stipulated (hereinafter referred to as 'Individual Terms of Use'), such Individual Terms of Use will apply to the use of such service in addition to the Terms of Use, and will prevail over the Terms of Use.
+  1. Except when caused by intent or gross negligence of Center, Center shall not be liable for any damage arising from the use of our services, and user shall indemnify and hold harmless Center from any damage. Furthermore, in the event any dispute arises between a user and any other user or between a user and a third party in relation to our services, Center shall assume no responsibility, and user shall indemnify and hold center harmless from such dispute.
+  1. When using our services, it is requested that user displays appropriate credit.
+  1. We may change this Terms of Use and any Individual Terms of Use, when necessary. When making any changes, we shall give notice of the changes (for example, by placing notice on our website) in advance. From the implementation date of the change, the changed Term of Use and Individual Terms of Use shall apply to all users regardless of the day that the user starts using our services, and user is deemed to have agreed to the above.
+  1. If any provision or a part of a provision of this Terms of Use or Individual Terms of Use is held invalid or unenforceable by any applicable laws or regulations, such invalidity or unenforceability shall not affect the validity or enforceability of any other provisions (if a part of a provision is held invalid or unenforceable, the remaining part).
+  1. The governing law of this Term of Use and service will be the laws of Japan. All disputes arising from or relating to the use of our services or this Term of Use and Individual Terms of Use will be exclusively brought in the Tokyo District Court, as the court of first instance. 
+  1. The English language version of the Term of Use, Individual Terms of Use, guidelines and policies of Center is only for reference purpose. If there is any contradiction between the Japanese version and the English version, the Japanese version shall prevail.
+
+### Online Services<a name="online-services"></a>
+In regard to software that may be used via our website (either directly or through third party repositories), please use it in accordance with the terms of use of each software.
+
+#### Copyright<a name="copyright"></a>
+Contents of websites provided by Center (hereinafter referred to as 'our websites') will belong to the Research Organization of Information and Systems, unless otherwise specified. You may freely reproduce, redistribute and modify the contents on website pages that do not individually specify the terms of use as long as you abide by the license of the [Creative Commons Attribution 4.0 International license (CC-BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+#### Disclaimer<a name="disclaimers"></a>
+  1. You shall use each contents of our websites or any information included at your own responsibility.
+  1. Each contents provided on our websites is created based on various information and data that is regarded reliable at the time of the creation. However, we make no warranty in regard to credibility, accuracy, availability or completeness of the contents.
+  1. In regard to external links provided on our websites, we shall assume no responsibility for the contents of any linked website. Furthermore, you must use the linked website at your own responsibility and in accordance with the terms of use of the linked website.
+  1. We will make all reasonable effort to maintain continuity of our online services, however, we may temporarily suspend or discontinue the operation of our services in the case of maintenance, update, or in the event of force majeure, or when necessary. We attempt to notify user in advance of such temporary suspension or discontinuation, however, we accept no responsibility for the consequences of these discontinuities in the service.
+  1. Upon prior notice of a reasonable period of time, we may terminate all or a part of our services after such period of time.
+  1. If the operation of our services is transferred to a third party due to change in the status of the online service operations or other situations, we shall announce the transfer of service on our website. If you do not agree to such transfer, you may stop to using our services. If you use our services after the notification, you are deemed to have agreed to the transfer of our services and any succession of involved rights and obligations.
+
+#### Use of Web Browsers<a name="web-browsers"></a>
+We recommend to use our online service with the latest version of [Chrome](https://www.google.com/chrome/) and [Firefox](https://www.mozilla.org/en-US/firefox/all/#product-desktop-release).
+
+### Data Usage<a name="data-use"></a>
+Unless otherwise restricted by an Individual Terms of Use, data provided by Center may be freely used, redistributed and modified.
+  1. [INSDC](/insdc.html) data may be freely used, redistributed and modified in accordance with the [INSDC Policy](https://www.insdc.org/policy.html).
+  1. Japanese Genotype-phenotype Archive (JGA) data shall be used in compliance with the [NBDC Human Data Sharing Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines).
+  1. AMED Genome group sharing Database (AGD) data shall be used in compliance with the [NBDC Human Data Group Sharing Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines).
+  1. [Third-party data provided by Center](#third-party-data) shall be used in accordance with terms of use of these data.
+
+### Disclaimer<a name="disclaimer"></a>
+  1.  We endeavor to improve the quality of the data that we provide, however, we shall make no warranty of availability, accuracy, adequacy, credibility or completeness of the data.
+  1.  You shall use data that we provide at your own responsibility and shall indemnify and hold harmless Center from any damage (including damage to third parties) arising in connection with the use.
+  1.  Data that we provide may subject to rights attributable to a third party, including patent rights, copyrights, other intellectual property rights, biodiversity-related access and benefit-sharing rights. You shall use such data at your own responsibility, and in the case you infringes third party rights, you shall resolve such dispute at your own responsibility and shall indemnify and hold Center harmless.
+
+### Data Submission to Databases<a name="data-submission"></a>
+Please refer to [Data Submission Guideline](#data-submission-guideline).
+
+### Usage of NIG Supercomputer System<a name="sc"></a>
+Please refer to [terms of use of the NIG supercomputer system (Japanese language only)](https://sc.ddbj.nig.ac.jp/ja/application/regulations).
+
+### Privacy Policy<a name="privacy-policy"></a>
+Please refer to the [Privacy Policy](#privacy).
+
+### Prohibited Use<a name="prohibited-use"></a>
+The following acts are prohibited when using our services or any information:    
+  1. Any act that infringes the rights of Center or any third party (including but not limited to intellectual property rights or privacy rights), any act that damages the reputation, credibility or property of Center or any third party, or any act that may encourage such acts;
+  1. Any act that offends public order and morals;
+  1. Any act that violates or may violate any laws or regulations;
+  1. Any act that are a risk to the operation of our services or websites, including but not limited to unauthorized access, impersonation, false declarations or notification, mass mailing, sending of inappropriate or offensive content; or
+  1. Any act of storing or distributing any virus-infected files, contaminated files or other files or links to any website that will damage the function of computers of any third party.
+
+If we determine that a user has conducted any of the above acts, we may, without giving any advance notice to such user, suspend the user's use of our websites or services and suspend user's account, delete any data that such user is storing in our services, and notify to relevant authorities or disclose the personal information of the user, and we shall not be responsible for any damage that arises to user due to these measures taken by us.
+
+## Privacy Policy<a name="privacy"></a>
+Bioinformation and DDBJ Center of the National Institute of Genetics, the Research Organization of Information and Systems (hereinafter referred to as 'Center') collects and uses personal information to function as a platform to share and analyze biological information that supports life science research. Center will abide to all applicable laws and regulations (including laws and regulations relating to the protection of personal information) relating to the collecting, storing and using of such information, and endeavors to protect the privacy of user and any other data subject in accordance with the following Privacy Policy and [the Personal Information Protection Regulations of the Research Organization of Information and System (Japanese language only)](https://www.rois.ac.jp/pdf/kojinkitei.pdf). Center is the Controller of the processing of personal information in this Privacy Policy.
+
+### 1. Collection of Information
+We may collect the following personal information:    
+
+#### Information of Submitter
+We collect submitter's information (including but not limited to names, email address, name of organization that they belong to, address and telephone number) at the time of data submission to our databases. Please check the [Privacy Policy](#privacy) for the purpose of using submitter's information.
+
+#### Submitted Data
+In regard to data submitted to the databases operated by us or in collaboration with us, we accept data submitted by submitter in accordance with the [Data Submission Guideline](#data-submission-guideline).
+
+#### Information of Inquirer
+We collect personal information of any person making inquiries (information of inquirer), when the inquirer sends forms or emails to us, including information such as his/her name, email address, name of organization that he/she belongs to.
 
-Before using data and services provided from DDBJ Center, please understand all of followings.  
-Since most of all communications regarding services will be sent by email, please configure your email client to allow communications from [DDBJ email addresses and avoid being categorized as "junk mail"](/precautions-e.html).
+#### Information of Applicants
+We collect applicant information when the applicant sends information (such as his/her name, email address, name of organization that he/she belongs to or job position) in the application form or email of seminars or events hosted by us.
+
+#### Information of User
+We collect user information (such as his/her name, email address, name of organization that he/she belongs to) when the user applies for our online service user account.
+
+#### Information of Supercomputer User
+We collect user information (such as his/her name, email address, name of organization that he/she belongs to, address, and telephone number) when the user applies for the user account of the supercomputer operated by us.
+
+#### Access Information to Website
+We automatically collect the following information relating to access when a user accesses the website provided by us (hereinafter referred to as 'our websites'):    
 
-## Privacy policy <a name="personal_information"></a>
+  * IP address of the access source;
+  * Domain of the access source;
+  * Date and time of access;
+  * Pages and files of the access destination;
+  * Words used in search engines for the search of our websites;
+  * Cookie information; and 
+  * Types and versions of the web browser and operating system used by user.
 
-DDBJ manages personal information in accordance with the policies of [the Research Organization of Information and Systems](https://www.rois.ac.jp/en/index.html) (ROIS).  
-Use of personal information for data submission or using services shall be limited to the scope of the respective objectives.
+Furthermore, in our websites, we may use 'Google Analytics' that is a web access analytics tool provided by Google. In such case, Google may collect access information. In regard to the data collection and process by Google Analytics, please refer to '[HOW GOOGLE USES INFORMATION FROM SITES OR APPS THAT USE OUR SERVICES](https://policies.google.com/technologies/partner-sites?hl=en-US)'.
 
-### Use of personal information of data submitters <a name="pinfo"></a>
+### 2. Usage of Information
+We will use collected personal information for the following purposes. If collected information is personal information, such personal information will not be used for any purpose exceeding the scope of the following without the principal's consent, unless there exists any grounds to permit such use by the Act on the Protection of Personal Information or other laws or regulations.
 
-  - DDBJ uses data submitters’ personal information to send queries regarding the submitted data and other communications.
-  - Information may also be used to confirm affiliated organizations and contact addresses of submitters.
-  - Questions from users regarding published data may also be forwarded to the submitter. Depending on the type of question, when the submitter is not respond to the forwarded question, we may let the questioned user know contact information of the submitter.
+#### Information of Submitter
+  * To create an account;
+  * To notify account information;
+  * To indicate the owner of the submitted data;
+  * To inquire about or to contact user in regard to submitted data;
+  * To confirm the organization that the submitter belongs to;
+  * To acquire statistics of the submitted data;
+  * To notify any important matters concerning submission; and
+  * To notify any important matters.
 
-## Submission of research data from human subjects <a name="human"></a>
+#### Submitted data
+Submitted data acquired from human subjects are accepted and provided according to the data principal's consent, and restrictions will be imposed to the data according to the consent. Unrestricted-access data will be provided without any usage restriction, for the research and development purposes. In regard to controlled-access data, the data will be jointly used with the National Bioscience Database Center of the Japan Science and Technology Agency  (hereinafter referred to as 'NBDC'), and will be provided to user in accordance with the [NBDC Human Data Sharing Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines) or [NBDC Human Data Group Sharing Guidelines (Japanese language only)](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines). Please refer to '[NBDC Human Database](https://humandbs.biosciencedbc.jp/en/)' in regard to the Privacy Policy relating to submitted data.
 
-<span class="red">
-The amended Act on the Protection of Personal Information and ethical guidelines have been fully put into effect on May 30, 2017. This page has been revised accordingly.
-</span>
+Information of Applicants
+  * To contact applicants about seminars and events;
+  * To evaluate the details of seminars and events; or
+  * To conduct surveys regarding seminars and events.
 
-#### Before submitting your data<a name="before"></a>
+#### Information of Inquiries
+  * To handle inquiries.
 
-For submitting data from human subjects (human data) to the databases of DDBJ center, it is submitter's responsibility to ensure that the dignity and right of human subject are protected in accordance with all applicable laws, ordinances, guidelines and policies of submitter's institution. In principle, make sure to remove any direct personal identifiers of human subjects from your data to be submitted.
+#### Information of User
+  * To make inquiries and to contact user about our services;
+  * To notify account information;
+  * To give invitations for study groups, lectures, seminars and other events;
+  * To handle inquiries from user; and
+  * To notify important matters.
 
-When you are submitting human data from samples except widely utilized and generally available samples of academically established value (\*1), make sure the followings.
+#### Information of Supercomputer User
+  * To issue a user account for supercomputer;
+  * To notify user account information for supercomputer;
+  * To make inquiries or to contact supercomputer user about supercomputer;
+  * To publicize the purpose of use of supercomputer; and
+  * To notify important matters.
 
-  - The research plan describing experimental methods and human subjects has been approved by the institutional review board and by the head of institution who oversees the research.
-  - The research plan and the informed consent documents describe that data from human subjects are deposited to databases and are shared among domestic and overseas researchers.
+#### Access Information to Website 
+  * To identify the number of user or number of accesses to our websites or services;
+  * To improve the contents, structure, system performance or other issues regarding our websites or services;
+  * To report or publicize the aggregate information regarding the number of user and number of accesses to our websites or services. Such aggregate information may be used to report to any collaborating organizations of Center. Furthermore, information that may identify an individual will not be included in such aggregate information. 
 
-\*1 [HeLa whole genome sequence data](https://grants.nih.gov/grants/guide/notice-files/NOT-OD-14-080.html) should be submitted to [NCBI dbGaP](https://www.ncbi.nlm.nih.gov/gap).
+Please refer to Google's web page set forth in 1 above, in regard to use of access information by Google.
 
-#### Controlled-access and databases
+### 3. Provision of Personal Information to a Third Party
+We will not provide personal information to any third party, except for the following cases:    
+  * In the case consent of the principal for such provision is obtained;
+  * Center is permitted to provide personal information in accordance with laws or regulations; or
+  * Personal information is disclosed or provided in a condition where it is impossible to identify a specific user (such as by statistical data).
 
-Before submitting human data, please consider whether controlled-access for the data is required or not (i.e. unrestricted access) on the basis of informed consents obtained from human subjects.
+We may jointly use submitted data, submitter's information of controlled-access database, and access statistic of websites with NBDC.
 
-Controlled-access database  
-: Submit your data to the controlled-access database ["Japanese Genotype-phenotype Archive (JGA)"](/jga/index-e.html).  
-Before submitting your data to JGA, you need an approval for data submission from [National Bioscience Database Center (NBDC)](https://humandbs.biosciencedbc.jp/en/data-submission) of Japan Science and Technology Agency.
+### 4. Cookies
+Cookies are used in our sites as set forth below. Cookies are small text information set by the server of our websites and are stored in the user's computer. We use cookies to increase the usability of our websites.
 
-Unrestricted-access database  
-: Submit your data to unrestricted-access databases [DDBJ Sequence Read Archive (DRA)](/dra/index-e.html) or [DDBJ](/ddbj/web-submission-e.html).  
-To submit human data corresponding to personal identification code (\*2), you need an approval for data submission from [NBDC](https://humandbs.biosciencedbc.jp/en/data-submission). In principle, the two points of "[Before submitting your data"](#before) " must be fulfilled, and the informed consent documents must explain that the human data are deposited to database and are shared publicly.  
+[List of Cookies Used by Center](https://docs.google.com/spreadsheets/d/1hWN3vicuvMxaJ8b_iPRMAFwoDC-W5fz4pNOkIc16nBw)
 
-\*2 Personal identification code is defined in the [guideline (Japanese only)](//www.ppc.go.jp/) of the [Personal Information Protection Commission](//www.ppc.go.jp/en/).
+You can disable the cookies through your browser settings. Please refer to the following page for our recommended browsers: Chrome and Firefox. For other browsers, please refer to the help page of each browser.
 
-#### Related information
+However, by disabling or deleting cookies, services of our websites and other websites may not function correctly. 
 
-  - [Act on the Protection of Personal Information](//www.ppc.go.jp/en/legal/)
-  - Japanese only] [Ethical Guidelines for Medical and Health Research Involving Human Subjects](http://www.lifescience.mext.go.jp/bioethics/ekigaku.html)
-  - Japanese only] [Ethical Guidelines for Human Genome and Genetic Sequencing Research](http://www.lifescience.mext.go.jp/bioethics/hito_genom.html)
-  - [NBDC Human Data Sharing Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines)
-  - [Notification for research participants regarding our database activities for human data](/human-data-sharing-e.html)
+Furthermore, in regard to Google Analytics, you can disable usage of data by installing the following add-on in your browser. 
 
-## Licenses <a name="license"></a>
+Google Analytics Opt-Out Add-On
+[https://tools.google.com/dlpage/gaoptout](https://tools.google.com/dlpage/gaoptout)
 
-### Websites
+### 5. Visiting an Official Center Page on Third-Party Websites
+We use services (such as social media) operated by third parties as tools to better interact with the public. The privacy and security policies of the third-party sites will apply to your activity on those sites.
 
-Licensed under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+Please see '[Bioinformation and DDBJ Center's Official Sites in Social Media](#third-party-sites)' in regard to third-party sites used by Center. 
 
-### Data and services
+When you have an account on the third-party service and perform acts (such as 'follow' or make comments) on our official site, your personal information will be collected in accordance with the privacy policy of the service and privacy settings of your account. For handling personal information collected by such service, please check the privacy policy of each service. We will not share personal information collected through these services, except with our employees. 
 
-If not specified, there is no restriction on the use of data and services provided by DDBJ Center, and you can freely modify and
-redistribute the data.
+The privacy policies for these services are as follows:
 
-  - Do not attempt to identify individual human research participants from whom the data were obtained.
-  - For data derived from [INSDC activities](insdc-e.html), licensed under[INSDC policy](/insdc-e.html#policy).
-  - For [Japanese Genotype-phenotype Archive (JGA)](/jga/index-e.html), licensed under [Data Use](https://humandbs.biosciencedbc.jp/en/data-use) of NBDC Human Database.
-  - For [AMED Genome group sharing Database (AGD)](/agd/index-e.html), licensed under [Data Use (in Japanese)](//gr-sharingdbs.biosciencedbc.jp/agd-data-use) of NBDC Human Data group sharing Database.
-  - Mirroring data and services provided from DDBJ are licensed by original providers, respectively.
-  - Use policy of each software available through DDBJ is regulated by each software provider.
-  - Use policy of each data povided through [anonymous FTP](/services/index-e.html) and/or other services at DDBJ is regulated by each document available from the following table.
+* Twitter: [https://twitter.com/ja/privacy](https://twitter.com/ja/privacy)
+* Google and Youtube: [https://policies.google.com/privacy?hl=ja](https://policies.google.com/privacy?hl=ja)
+* Github: [https://help.github.com/articles/github-privacy-statement/](https://help.github.com/articles/github-privacy-statement/)
+* Facebook: [https://www.facebook.com/msqrd/privacy](https://www.facebook.com/msqrd/privacy)
 
-| database                                                                      | FTP | getentry | ARSA | BLAST |
-| ----------------------------------------------------------------------------- | --- | -------- | ---- | ----- |
-| [DDBJ](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbj/ddbjrel.txt)               | ○   | ○        | ○    | ○     |
-| [DAD](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dad/dadrel.txt)                  | ○   | ○        | ×    | ○     |
-| [patent-aa](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/patent/README.TXT)         | ○   | ○        | ○    | ○     |
-| [16SrRNA](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/16S/readme.txt)              | ○   | ×        | ×    | ○     |
-| [NCBI Refseq](ftp://ftp.ddbj.nig.ac.jp/mirror_database/refseq/release/README) | ○   | ×        | ×    | ○     |
-| [PDB](//www.pdbj.org/pdbj_archive_j.html)                                     | ○   | ○        | ×    | ○     |
-| [UniProt](ftp://ftp.ddbj.nig.ac.jp/mirror_database/uniprot/README)            | ○   | ○        | ×    | ○     |
-| [ArrayExpress](//www.ebi.ac.uk/arrayexpress/about.html)                       | ○   | ×        | ×    | ×     |
-| [HINV](ftp://ftp.ddbj.nig.ac.jp/mirror_database/hinv/README.txt)              | ○   | ×        | ×    | ×     |
+### 6. Security Management of Personal Information
+We will take all reasonable organizational and technical security measures to prevent unauthorized use, loss, modification or destruction of personal information provided to us, in accordance with the information security standards established by Center. We will authorize access to personal information only to our employees, agents, contractors and other third parties that have a need to access such information. Such persons that are granted access to personal information will assume confidentiality obligations under an employment contract or other contracts.
 
-## Credits <a name="credit"></a>
+### 7. Preservation Period of Personal Information
+We will comply with all applicable laws and regulations, and preserve personal information only as long as necessary to provide our services.
 
-### Website
+### 8. Rights of the Individual who is the Principal of Personal Information 
+If we are requested by the individual who is the principal of information to disclose, modify, suspend use, delete or do other similar acts to his/her personal information in accordance with provisions of laws or regulations, we will conduct such acts in accordance with procedures stipulated by the Research Organization of Information and Systems. Please refer to '[Information Disclosure and Management](https://www.rois.ac.jp/en/open/01.html)' established by the Research Organization of Information and Systems for details.
 
-The copyrights of the contents published on the websites are the properties of the authors when the authors are indicated on the sites. If not indicated, the copyright is the property of DDBJ Center.
+  1. The individual has the right to request information in regard to its personal information possessed by us. In accordance with the request from the principal of information, we will deliver to principal, a copy of his/her personal information that we have and any information relating to the preservation period. 
+  1. You has the right to request corrections or suspension of use of your personal information possessed by us, however, such rights are available only if there are reasons to request corrections or if such request is granted in accordance with applicable laws or regulations (such as cases where there is violation of laws or regulations in regard to personal information possessed by us). 
+  1. No expense will arise from the exercise of the above rights. We will promptly provide information relating to the status of measures taken to address your claims. However, if your claim apparently lacks evidence or is in excess, we may request you reasonable expenses or refuse to respond to your claims.
 
-### Data and services
+### 9. Contact Information
+For information regarding handling of personal information, please contact the following: 
 
-When you kindly describe about using our data and services on academic papers etc., in general, please use [the latest article for DDBJ](/services/references-e.html#ddbj) on Nucleic Acids Res. Database issue as a reference.
+Address: 
+1111 Yata, Mishima, Shizuoka 411-8540, Japan
+Research Organization of Information and Systems
+National Institute of Genetics
+Bioinformation and DDBJ Center
 
-However, please note the following points.
+Contact Method: By [Contact Form](/contact-e.html)
 
-In case of citation for each sequence record  
-: In general, it is enough to describe [accession number](/documents/accessions-e.html) (and its version, if necessary) in your publication.  
-If you discuss about the data in detail, please use [primary citation](/ddbj/submission-e.html#pcite) for the data as a reference.
+## Data Submission Guideline<a name="data-submission-guideline"></a>
+This is a guideline for submitting data to the databases operated by the Bioinformation and DDBJ Center (hereinafter referred to as 'Center'), and sets forth the rights of submitters and items to be observed.
 
-In case of citation for each service provided at DDBJ Center  
-: In general, please use [original article for each service](/services/references-e.html) as a reference.
+### Data Processing<a name="data-processing"></a>
+Center may correct obvious errors and inconsistencies, convert format or add relevant information to data provided by submitters, for maintaining quality and improving usability of the data. Center must obtain submitter's permission in cases where it will process data beyond such purpose. 
 
-#### Copyright and limitation of using DDBJ data <a name="copyright"></a>
+### Rights and Duties of Submitter<a name="right-and-duty-of-submitter"></a>
+Excluding the portion modified by Center, the contents and quality of the data are responsibility of the submitters. Submitter can update his/her data. Submitter should answer inquiries from users and person in charge of the database regarding submitted data, and therefore should correctly maintain its registered contact information. If there are any matters that need to be determined by submitters, we will attempt to contact the submitter wherever possible, however, if we decide that it is necessary, we will consult the superior of the organization where submitter belongs to and follow the judgement of the superior.
+Data must not be submitted without obtaining the permission of the Principal Investigator.
+When submitting data derived from a human subject, you must comply with the '[Submission of Research Data from Human Subjects](#submission-of-human-data)'.
+ 
+### Data Release<a name="data-release"></a>
+Scientific data provided by submitter to Center's database will be disclosed to the public in accordance with the Data Release Policy as set forth below, according to the categories of unrestricted-access data or controlled-access data. Center will not assume any responsibility for any damage arising from such disclosure, relating to copyrights, rights to obtain patents or all rights to other intellectual property of third parties (including submitter), and in the case Center incurs any damage, submitter shall compensate such damage of Center.
 
-##### DDBJ data set is a collaborative work of tens of thousands of authors world wide
+#### Data Release Policy<a name="data-release-policy"></a>
+Center discloses data to the public in accordance with the following principles. In cases 2 or 3, it is deemed that submitter's approval is obtained in advance and therefore data will be released without making any further confirmation to submitter.
 
-DDBJ data set is an accumulation of DNA records submitted to either DDBJ, GenBank and EMBL-Bank as a world wide collaborative effort called
-INSDC (International Nucleotide Sequence Database Collaboration).
+  1.  When the submitter requests us to release the data.
+  1.  When the accession number corresponding to data is published and is confirmed. 'Publish' means to disclose the accession number to an unspecified number of people by announcement through various media such as academic papers (including 'in press' articles made public by on-line preview and preprint server), academic meetings, Internet or press reports. It also includes accession numbers cited in published data, such as accession numbers cited by DDBJ/DRA/GEA records. It will not include cases when a third party (excluding submitter) publishes another person's accession number through negligence.
+  1.  When the specified hold-date set by submitter arrives.
 
-Although DDBJ does not impose any control over the use of any part of the accumulated records, there have not been any copyright transfer from
-authors of the records upon submission. This is the reason why we, DDBJ, avoid making any definite statement that anybody may freely copy/modify/redistribute any part of the data set.
+### Fair Use of Submission System<a name="fair-use-policy"></a>
+#### Use of File Upload Area<a name="data-upload-area"></a>
+Submitter's private area for uploading files for submission to the database is a temporary place for files until such data submission is completed. Because the database itself provides an almost permanent data storage function, we reserve the right to delete any file stored in the private area longer than a half year, while we attempt to inform submitter before deleting the files. We accept no responsibility for the loss of data in the private area regardless of whether such loss occurs through our intention or negligence. 
 
-Since 2002, we ask all submitting authors to read the following policy, according to [the advice from International Advisory Committee](/insdc-e.html#policy).
+#### Creation of Submission Account<a name="account"></a>
+  * User is deemed to agree with Center's Terms of Use and policies when creating an account.
+  * Center may refuse to create an account to a person who has been subject to a service usage measure described in the 'Prohibited Use' of the Terms of Use. Center has no responsibility to disclose the reason of such refusal.
 
-"The INSD will not attach statements to records that restrict access to the data, limit the use of information in these records, or prohibit certain types of publications based on these records. Specifically, no use restrictions or licensing requirements will be included in any sequence data records, and no restrictions or licensing fees will be placed on the redistribution or use of the database by any party."
+#### Usage of Submission Account<a name="use-of-account"></a>
+* User must comply with the following in order to use the submission account.
+  * Promptly update user information if user information is altered due to change or personnel relocation of the account user.
+  * Do not share your account with any other person.
+  * Properly manage and store the account ID, password and private key under the responsibility of user.
+  * Promptly notify us when the account is no longer necessary.
+* Any act in our services using the account will be deemed to be the act of user that was issued this account.
+* Center may implement temporary suspension or permanent suspension of an account if there is unauthorized use of such account.
 
-We believe that by doing this we obtain, in effect, a permission equivalent to a waiver of copyright from authors. In fact, no author of the DDBJ records have claimed any restriction about the reuse of any part of the data set by the third parties until know.
+#### Provision of User Information to a Third Party<a name="disclosure-to-third-party"></a>
+User shall agree that, in the following cases, we will provide necessary user's information to a third party or parties and take necessary measures. 
+  * If we decide that such provision to a third party is necessary in the course of our operation, while it is difficult or inappropriate to obtain user's agreement.
+  * If we decide that user is conducting any of the [Prohibited Use](#prohibited-use) stipulated by Center.
 
-Hence, DDBJ data set is a quasi-public domain data, which is made by the collaboration of the many and which can be reused freely.
+### Submission of Research Data from Human Subjects<a name="submission-of-human-data"></a>
+#### Before Submitting Data<a name="before-submission"></a>
+For submitting data derived from human subjects (human data) to the databases of Bioinformation and DDBJ Center (hereinafter referred to as 'Center'), it is submitter's responsibility to ensure that the dignity and right of human subject are protected in accordance with all applicable laws and regulations, guiding principles, guidelines, and policies of submitter's institution. In principle, make sure to remove any direct personal identifiers of human subjects from your metadata.
 
-{: .text-align-end}
-2009.08.18  
-Center for Information Biology and DNA Data Bank of Japan,  
-National Institute of Genetics  
-Director, OKUBO Kousaku
+When you are submitting human data obtained from researches using human derived samples, except widely utilized and generally available samples of academically established value (\*1), make sure the followings. 
 
-See also following sites;
+  * The research plan describing experimental methods and human subjects generating the data to be provided has been approved by the institutional review board and by the head of institution who oversees the research.
+  * The research plan and the informed consent documents describe that data from human subjects are deposited to databases and are shared among domestic and overseas researchers. 
+ 
+\*1 HeLa whole genome sequence data should be submitted to the [NCBI Database of Genotypes and Phenotypes (dbGaP)](https://www.ncbi.nlm.nih.gov/gap/).
 
-  - [INSDC policy](/insdc-e.html#policy)
-  - [Rights and Duties of Submitter](/ddbj/submission.html#right)
+#### Controlled-Access and Database<a name="access-control-and-databases"></a>
+Before submitting human data, please consider whether controlled-access is required or not when releasing data, on the basis of informed consents obtained from human subjects.
 
-## Patent, Intellectual Property and Priority<a name="ownership"></a> 
+##### Controlled-Access Database<a name="controlled-access"></a>
+Submit your data to the controlled-access database '[Japanese Genotype-phenotype Archive (JGA)](/jga/index-e.html)'. Before submitting your data to JGA, you need to present an application (for data to be submitted) to the Data Access Committee of the [National Bioscience Database Center (NBDC)](https://humandbs.biosciencedbc.jp/en/) of Japan Science and Technology Agency and obtain the Committee's approval upon review thereby. 
 
-### Nucleotide Sequence Data Included in Patent Applications
+#### Unrestricted-Access Database<a name="unrestricted-access"></a>
+Submit your data to unrestricted-access databases [DDBJ Sequence Read Archive (DRA)](/dra/index-e.html), [Genomic Expression Archive (GEA)](/gea/index-e.html) or [DDBJ](/ddbj/index-e.html). To submit data corresponding to personal identification code (\*2) in unrestricted-access databases, you need to present an application (for data to be submitted) to the Data Access Committee of the NBDC and obtain the Committee's approval upon review thereby. In principle, the two points of 'Before submitting your data' must be fulfilled, and the informed consent documents must explain that the data is shared publicly from the databases without restriction. 
+In regard to review of data that does not fall under personal identification code, please contact the NBDC.
 
-Nucleotide sequence data included in patent applications are transferred from [Japan Patent Office](//www.jpo.go.jp/e/index.html) (JPO) to
-DDBJ.  
-Similarly, DDBJ services also include the nucleotide data transferred from [Korean Intellectual Property Office](//www.kipo.go.kr/) (KIPO)、[the European Patent Office](//www.epo.org/index.html) (EPO), [the United States Patent and Trademark Office](https://www.uspto.gov/) (USPTO) and [the Korean Intellectual Property Office](//www.kipo.go.kr/en/) (KIPO).
+\*2 Please refer to the NBDC FAQs, in regard to personal identification code. Personal identification code is defined in the '[Guidelines on the Act on the Protection of Personal Information (Volume on General Rules) (Japanese language only)](https://www.ppc.go.jp/)' of [the Personal Information Protection Commission](https://www.ppc.go.jp/en/).
 
-References:  
-: An example of Sequence data included in patent applications: [DL000001](http://getentry.ddbj.nig.ac.jp/getentry/na/DL000001/?filetype=html)
-: [Sequence data included in patent applications](/ddbj/patent-data-e.html)
+Related Information
+  * Personal Information Protection Commission, Act on the Protection of Personal Information, Laws and regulations, guidelines etc.
+  * Ethical Guidelines for Medical and Health Research Involving Human Subjects
+  * Ethical Guidelines for Human Genome/Gene Analysis Research
+  * NBDC Human Data Sharing Guidelines 
+  * NBDC Human Database (FAQ)
+  * [Notification for research participants regarding our database activities for human data](/reaserch-participant-notification-e.html)
 
-Therefore, when the sequence is included in patent applications to
-JPO/KIPO/EPO/USPTO, you do not have to submit the sequence to DDBJ.
+## Credits for Services and Data Use<a name="credit"></a>
+When you are using contents, services and data provided in the website of Bioinformation and DDBJ Center (hereinafter referred to as 'Center'), you must give appropriate credit to Center and the provider of the contents, services and data.
 
-### Notice: Sequence Data Submission Related to Patent Applications
+### Website<a name="credit-for-website"></a>
+When using any content on our website, you must describe the credit (type of license and copyright owner) for each content as recommended in [Creative Commons Attribution 4.0 International License (CC-BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.en). 
 
-Once released from DDBJ, the sequence data becomes part of the public domain, i.e. "official notice".  
-So, when you submit the sequence related to your patent application to DDBJ, set [hold date](/ddbj/submission.html#holddate) as required.  
-See also [Principle of “Hold-Until-Published” data release](/documents/data-release-policy-e.html).
+### Citation of Bioinformation and DDBJ Center<a name="credit-for-center"></a>
+When citing the Bioinformation and DDBJ Center itself, please cite [the latest article for Center's activities in general](/references-e.html#ddbj).
 
-For the impact of DDBJ submission on the patent examination, you should directly confirm to the Patent Office that you applied.  
-DDBJ takes no responsibility for any property or priority issues of the released data.
+### Service<a name="credit-for-service"></a>
+When you use a specific service provided by us, please cite the [original article for each service](/references-e.html). If the original article is not available, please cite the URL of each service. If such use is not equivalent to citing an article, please state one of the following example sentences with necessary changes as an acknowledgement. 
 
-Since we have to keep the original sequence data from JPO, "as is", if you need to modify or to correct the sequence, you have to submit the sequence to DDBJ newly. i.e. Both old and new ones will be finally open to the public.
+Japanese:    
+本研究は、生命情報・DDBJセンターの [データベース、検索・解析サービス名] を利用しました。
 
-If you are to submit sequence data related to your patent application, you should [consult DDBJ](/contact-ddbj-e.html) before submission.
+English:    
+This research was performed using [database, search or analytical service name] of Bioinformation and DDBJ Center.
 
-### Patent Priority and Other Priority <a name="priority"></a>
+If you announce your results obtained from using our supercomputer system, please state one of the following example sentences with necessary changes as an acknowledgement.
 
-#### Patent Priority
+Japanese:    
+本研究は、情報・システム研究機構国立遺伝学研究所が有する遺伝研スーパーコンピュータシステムを利用しました。
 
-If you submit nucleotide sequence data to DDBJ, you get <span class="red">NO patent priority for the data</span>.  
-DDBJ takes no responsibility for any property or priority issues for patenting.
+English:    
+Computations were partially performed on the NIG Supercomputer at ROIS National Institute of Genetics.
 
-If necessary, you should consult the patent office, before submitting your data to DDBJ.
+### Data<a name="credit-for-data"></a>
+When citing individual data, please cite the accession number of the data and (if necessary) its version. When discussing the individual data in details, it is appropriate to cite the article reporting the data.
 
-#### Other Priority
+## Usage of Third Party Data Provided by Bioinformation and DDBJ Center<a name="third-party-data"></a>
+Regarding usage of data that Bioinformation and DDBJ Center provides secondarily through download by FTP or other services, such usage will comply with the terms of use set forth in the following links. 
 
-Submitting your nucleotide sequence data to DDBJ, EMBL Bank or GenBank does not necessarily guarantee the priority of the data as shown in the
-following examples.
+* [NCBI Refseq](ftp://ftp.ddbj.nig.ac.jp/mirror_database/refseq/release/README)
+* [PDB](ftp://ftp.wwpdb.org/pub/pdb/advisory.txt)
+* [UniProt](ftp://ftp.ddbj.nig.ac.jp/mirror_database/uniprot/README)
+* [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/about.html)
+* [HINV](ftp://ftp.ddbj.nig.ac.jp/mirror_database/hinv/README.txt)
+* [International Genome Sample Resource (IGSR)](https://www.internationalgenome.org/IGSR_disclaimer)
 
-  - Nomenclature of new species: See also [Organism Qualifier](/ddbj/organism-e.html)
-  - Nomenclature of gene and protein: See also [Gene nomenclature at DDBJ](/ddbj/cds-e.html#product)
+## Bioinformation and DDBJ Center Official Sites on Social Media<a name="official-sites-on-third-party-site"></a>
+Bioinformation and DDBJ Center's official sites (accounts) on social media are as follows:    
 
-## Disclaimers<a name="disclaimer"></a> <a name=""></a>
+* Twitter: [@ddbj_topics](https://twitter.com/ddbj_topics)
+* Facebook: [ddbjcenter](https://www.facebook.com/ddbjcenter)
+* Youtube channnel: [ddbjvideo](https://www.youtube.com/user/DDBJvideo/)
+* GitHub: [ddbj](https://github.com/ddbj/)
 
-### Website
-
-DDBJ Center adopts the disclaimers on [the site policy](https://www.rois.ac.jp/en/about/policy.html) of its parent organization, ROIS.
-
-### Data and Services
-
-While DDBJ Center endeavors to keep its data correct, DDBJ Center makes no representations or warranties of any kind about the completeness, accuracy or reliability with respect to data provided from DDBJ Center. DDBJ Center also makes no legal liability or responsibility of
-merchantability or fitness for a particular purpose or that the use of the sequence data will not infringe any patent or other rights. Any
-receipt, reliance or use you place on such data is therefore strictly at your own risk.
-
-See also [Sequence data included in patent applications](#ownership).
-
-## Recommended browsers <a name="browser"></a>
-
-The recommended browsers for our websites and web services are [Firefox](https://www.mozilla.org/ja/firefox/all/) and [Chrome](https://www.google.com/chrome/browser/desktop/index.html). The recommended browsers may be changed without a prior notice.

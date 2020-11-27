@@ -283,7 +283,7 @@ Google アナリティクス オプトアウト アドオン
 アクセス制限データベース [Japanese Genotype-phenotype Archive (JGA)](/jga/index.html) へご登録ください。JGA にデータを登録するためには、事前に科学技術振興機構[バイオサイエンスデータベースセンター（NBDC）](https://humandbs.biosciencedbc.jp/)ヒトデータ審査委員会に登録予定データの提供申請書を提出し、委員会で審査の上、承認されている必要があります。
 
 #### アクセス制限が必要ではない場合<a name="unrestricted-access"></a>
-非アクセス制限データベースである DDBJ Sequence Read Archive (DRA)、Genomic Expression Archive (GEA)、または、DDBJ データベースへご登録ください。個人識別符号（*2）に該当するデータを非アクセス制限データベースへ登録するためには、事前に NBDC ヒトデータ審査委員会事務局に登録予定データの提供申請書を提出し、委員会で審査の上、承認されている必要があります。原則として「登録の前に」の確認項目二点に加え、インフォームド・コンセント説明同意文書内にデータがデータベースから制限なく一般公開される旨が記載されている必要があります。
+非アクセス制限データベースである [DDBJ Sequence Read Archive (DRA)](/dra/index.html)、[Genomic Expression Archive (GEA)](/gea/index.html)、または、[DDBJ](/ddbj/index.html) データベースへご登録ください。個人識別符号（*2）に該当するデータを非アクセス制限データベースへ登録するためには、事前に NBDC ヒトデータ審査委員会事務局に登録予定データの提供申請書を提出し、委員会で審査の上、承認されている必要があります。原則として「登録の前に」の確認項目二点に加え、インフォームド・コンセント説明同意文書内にデータがデータベースから制限なく一般公開される旨が記載されている必要があります。
 個人識別符号に該当しないデータ登録に対して審査を希望する場合は NBDC にお問い合わせください。
 
 \*2 個人識別符号については NBDC の FAQ を参照してください。 個人識別符号の定義は個人情報保護委員会の「個人情報の保護に関する法律についてのガイドライン（通則編）」に示されています。
@@ -333,6 +333,7 @@ Computations were partially performed on the NIG supercomputer at ROIS National 
 * [UniProt](ftp://ftp.ddbj.nig.ac.jp/mirror_database/uniprot/README)
 * [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/about.html)
 * [HINV](ftp://ftp.ddbj.nig.ac.jp/mirror_database/hinv/README.txt)
+* [International Genome Sample Resource (IGSR)](https://www.internationalgenome.org/IGSR_disclaimer)
 
 ## ソーシャルメディアにおける生命情報・DDBJセンターのオフィシャルサイト<a name="official-sites-on-third-party-site"></a>
 生命情報・DDBJセンターのソーシャルメディアにおけるオフィシャルサイト（アカウント）は以下になります。
