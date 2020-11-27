@@ -18,7 +18,9 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-deparam/0.5.3/jquery-deparam.min.js"></script>
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/colorbox.css" />
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/main.css" />
-    <!--link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/common_framework.css" /-->
+    {% comment %}
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/common_framework.css" >
+    {% endcomment %}
     {% if page.addhead %}
     {{ page.addhead }}
     {% endif %}
