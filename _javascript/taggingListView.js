@@ -116,7 +116,7 @@ export default function taggingListView() {
         let html = '';
         const facetSearchTags = facetSearch.querySelector(':scope .tags[data-tab="year"]');
         for (const tag in yearTags) {
-          html += `<li class="tag-view" data-tag="${tag}">${tag}<span class="count">${yearTags[tag].length}</span></li>`;
+          html += `<li class="tag-view" data-tag="${tag}"><span class="label">${tag}</span><span class="count">${yearTags[tag].length}</span></li>`;
         }
         facetSearchTags.innerHTML = html;
       }
