@@ -66,12 +66,11 @@ $MARGIN_BOTTOM: 1rem
     line-height: 1.2
     margin-top: 2.4rem
     margin-bottom: 1.5rem
-    border-left: solid 1.2rem $COLOR_KEY
-    margin-left: -2.5rem
-    padding-left: 1.2rem
+    border-left: solid .6rem $COLOR_KEY
+    padding-left: .9rem
   h3
     font-size: 1.6rem
-    border-bottom: 2px solid $COLOR_KEY_PALE
+    border-bottom: .2rem solid $COLOR_KEY_PALE
     margin-bottom: 1.6rem
   h2,h3
     cursor: pointer
@@ -99,24 +98,24 @@ $MARGIN_BOTTOM: 1rem
     list-style: none
     padding: 0
     li
-      margin-bottom: 10px
-      padding-left: 29px
+      margin-bottom: 1rem
+      padding-left: 2.9rem
       position: relative
       &:before
         content: counter(my-counter)
         counter-increment: my-counter
-        background-color: $COLOR_KEY_PALE
-        color: white
+        background-color: $COLOR_KEY_MILD
+        color: $COLOR_BLACK
         display: block
-        line-height: 20px
-        margin-left: -26px
+        line-height: 2rem
+        margin-left: -2.6rem
         text-align: center
-        height: 20px
-        width: 20px
+        height: 2rem
+        width: 2rem
         border-radius: 50%
         position: absolute
-        top: 3px
-        left: 28px
+        top: .3rem
+        left: 2.8rem
       &.decrement
         &:before
           counter-increment: my-counter +0
@@ -157,13 +156,13 @@ $MARGIN_BOTTOM: 1rem
     display: block
   table
     width: 100%
-    border: 1px solid $COLOR_GRAY
+    border: .1rem solid $COLOR_GRAY
     line-height: 1.2
     font-size: 1.2rem
     thead
       tr
         th
-          border-bottom: 1px solid $COLOR_GRAY
+          border-bottom: .1rem solid $COLOR_GRAY
     tr
       th
         text-align: left
@@ -171,13 +170,13 @@ $MARGIN_BOTTOM: 1rem
         white-space: nowrap
       td, th
         padding: .6rem .6rem .6rem .6rem
-        border-bottom: 1px solid $COLOR_SEPARATOR
+        border-bottom: .1rem solid $COLOR_SEPARATOR
         vertical-align: middle
         &.borderbtm
-          border-bottom: 1px solid $COLOR_GRAY
+          border-bottom: .1rem solid $COLOR_GRAY
       &:last-child
         > td, th
-          border-bottom: 1px solid $COLOR_GRAY
+          border-bottom: .1rem solid $COLOR_GRAY
     + table
       margin-top: -$MARGIN_BOTTOM - 0.1rem
 
@@ -198,7 +197,7 @@ $MARGIN_BOTTOM: 1rem
   .attention
     background-color: $COLOR_KEY_VELY_PALE
     padding: 1rem 1.6rem
-    border-left: 6px solid $COLOR_KEY_PALE
+    border-left: .6rem solid $COLOR_KEY_PALE
     margin-bottom: 1.6rem
 
   .toggle-content-btn
@@ -211,12 +210,12 @@ $MARGIN_BOTTOM: 1rem
     &::after
       content: ""
       display: inline-block
-      width: 4px
-      height: 4px
-      margin-left: 5px
-      margin-right: -5px
-      border-top: 2px solid $COLOR_KEY
-      border-right: 2px solid $COLOR_KEY
+      width: .4rem
+      height: .4rem
+      margin-left: .5rem
+      margin-right: -.5rem
+      border-top: .2rem solid $COLOR_KEY
+      border-right: .2rem solid $COLOR_KEY
       transform: translateY(-35%) rotate(135deg)
     &.active
       &::after
@@ -261,28 +260,28 @@ $MARGIN_BOTTOM: 1rem
   .nsss-menu
     display: flex
     .nsss-icon
-      width: 100px
+      width: 10rem
       text-align: center
       img
-        width: 35px
+        width: 3.5rem
         height: auto
 
   .db-top-navi-box
     img
-      width: 35px
+      width: 3.5rem
       height: auto
       display: inline-block
       opacity: .9
       transition: opacity .1s linear 0s
   
   .pdficon
-    width: 24px
-    height: 24px
+    width: 2.4rem
+    height: 2.4rem
     vertical-align: middle
-    margin-left: 2px
+    margin-left: .2rem
 
   .tsv
-    width: 45px
+    width: 4.5rem
     vertical-align: middle
 
   .right-alignment
@@ -310,113 +309,113 @@ $MARGIN_BOTTOM: 1rem
     color: #000000 
     list-style: none
     overflow: hidden
-    padding: 10px 0
-    border-radius: 4px 4px 0 0
+    padding: 1rem 0
+    border-radius: .4rem .4rem 0 0
     margin: 0
     li
       color: #000000
       display: block
       float: left
-      font-size: 13px
-      min-width: 100px
-      border-bottom: 1px solid #bbb
-      border-top: 1px solid #bbb
+      font-size: 1.3rem
+      min-width: 10rem
+      border-bottom: .1rem solid #bbb
+      border-top: .1rem solid #bbb
       text-decoration: none
       text-align: center
       margin: 0
       &:before
         content: " "
-        border-right: 1px solid #bbb
-        border-top: 1px solid #bbb
+        border-right: .1rem solid #bbb
+        border-top: .1rem solid #bbb
         float: right
-        height: 31px
+        height: 3.1rem
         transform: skew(30deg)
-        width: 30px
+        width: 3rem
       &:after
         content: " "
         display: block
-        border-bottom: 1px solid #bbb
-        border-right: 1px solid #bbb
-        width: 30px
-        height: 31px
+        border-bottom: .1rem solid #bbb
+        border-right: .1rem solid #bbb
+        width: 3rem
+        height: 3.1rem
         position: relative
         transform: skew(-30deg)
       &:first-child
         background: linear-gradient(#FEFEFE, #F3F5F5)
-        border-left: 1px solid #bbb
-        padding-left: 10px
+        border-left: .1rem solid #bbb
+        padding-left: 1rem
         &::before
           background: linear-gradient(#FEFEFE, #F9FAFA)
-          margin: -1px -30px -30px auto
+          margin: -.1rem -3rem -3rem auto
         &:after
           background: linear-gradient(#F9FAFA, #F4F6F6)
-          margin: -30px -30px -1px auto
+          margin: -3rem -3rem -.1rem auto
       &:nth-child(2)
         background: linear-gradient(#e5e9e9, #f1f1f1)
         text-align: center
         &:before
           background: linear-gradient(#f1f1f1, #ebeeee)
-          margin: -1px -30px -30px auto
+          margin: -.1rem -3rem -3rem auto
         &:after
           background: linear-gradient(#ebeeee, #e6ebeb)
-          margin: -30px -30px -1px auto
+          margin: -3rem -3rem -.1rem auto
       &:last-child
         background: linear-gradient(#e5e5e5, #d7dede)
-        line-height: 20px
-        padding: 10px 10px 0px 40px
+        line-height: 2rem
+        padding: 1rem 1rem 0 4rem
         &::before
           background: linear-gradient(#e5e5e5, #dde3e3)
           display: block
-          margin: -11px -30px -30px auto
+          margin: -1.1rem -3rem -3rem auto
         &::after
           background: linear-gradient(#dde3e3, #d8dfdf)
           content: " "
-          margin: -20px -30px -1px auto
+          margin: -2rem -3rem -.1rem auto
   .flow_ja
     li
       &:first-child
-        line-height: 60px
-        padding: 0 10px 0 40px
+        line-height: 6rem
+        padding: 0 1rem 0 4rem
         text-align: center
       &:nth-child(2)
-        line-height: 60px
-        padding: 0 10px 0 40px
+        line-height: 6rem
+        padding: 0 1rem 0 4rem
         &:before
-          margin: -1px -30px -30px auto
+          margin: -.1rem -3rem -3rem auto
         &:after
-          margin: -30px -30px -1px auto
+          margin: -3rem -3rem -.1rem auto
   .flow_en
     li
       &:first-child
-        line-height: 20px
-        padding: 10px 10px 0 40px
+        line-height: 2rem
+        padding: 1rem 1rem 0 4rem
         text-align: left
         &:before
-          margin: -11px -30px -30px auto
+          margin: -1.1rem -3rem -3rem auto
         &:after
-          margin: -20px -30px -1px auto
+          margin: -2rem -3rem -.1rem auto
       &:nth-child(2)
-        line-height: 20px
-        padding: 10px 10px 0 40px
+        line-height: 2rem
+        padding: 1rem 1rem 0 4rem
         &:after
-          margin: -20px -30px -1px auto
+          margin: -2rem -3rem -.1rem auto
   .ja
     li
       &:first-child
         &:before
-          margin: -1px -30px -30px auto
+          margin: -.1rem -3rem -3rem auto
         &:after
-          margin: -30px -30px -1px auto
+          margin: -3rem -3rem -.1rem auto
   .en
     li
       &:first-child
         &:before
-          margin: -11px -30px -30px auto
+          margin: -1.1rem -3rem -3rem auto
         &:after
-          margin: -20px -30px -1px auto
+          margin: -2rem -3rem -.1rem auto
 
   .flow_en li:nth-child(2)::before
-    margin: -11px -30px -30px auto
+    margin: -1.1rem -3rem -3rem auto
     
   #page_main 
     #biosample_attr_area 
@@ -426,7 +425,7 @@ $MARGIN_BOTTOM: 1rem
 
   #biosample_attr_area 
     table#biosample_attr_table
-    padding: 2px 0 0 0
+    padding: .2rem 0 0 0
     border-collapse: collapse
     background: white
 
@@ -444,18 +443,18 @@ $MARGIN_BOTTOM: 1rem
             border-top: none
             border-bottom: none
             border-left: none
-            border-right: 1px solid #CCCCCC
-            padding: 2px 4px
+            border-right: .1rem solid #CCCCCC
+            padding: .2rem .4rem
             text-align: left
             vertical-align: top
         tbody
           border: 0
           tr
-            border-bottom: 1px solid #ddd
-            border-left: 1px solid #ddd
+            border-bottom: .1rem solid #ddd
+            border-left: .1rem solid #ddd
             td
-              border: 1px solid #ccc
-              padding: 2px 4px
+              border: .1rem solid #ccc
+              padding: .2rem .4rem
               text-align: left
               vertical-align: top
       td.name
@@ -467,12 +466,12 @@ $MARGIN_BOTTOM: 1rem
   #main_index.biosample_attr
     .radio
       float: left
-      margin-right: 3px
-    input
+      margin-right: .3rem
+    in.prem
       vertical-align: middle
-      margin-bottom: 3px
-    .radio.required
-      outline: 1px solid #FF0000
+      margin-bottom: .3rem
+    .radio.requi.rrem
+      outline: .1rem solid #FF0000
 
   #page_main 
     .biosample_attr
@@ -488,24 +487,24 @@ $MARGIN_BOTTOM: 1rem
     list-style: none
 
   #sample_type, #env_package
-    border: 1px solid #999999
-    padding: 5px 10px
-    width: 450px
-    border-radius: 5px
+    border: .1rem solid #999999
+    padding: .5rem 1rem
+    width: 45rem
+    border-radius: .5rem
 
   #sample_type
-    margin-top: 5px
-    margin-bottom: 15px
+    margin-top: .5rem
+    margin-bottom: 1.5rem
 
   #main_index.biosample_attr
     ul
       margin-bottom: 0
       li
-        margin-bottom: 2px
+        margin-bottom: .2rem
     > ul > li
-      margin-top: 5px
+      margin-top: .5rem
       > ul > li:last-child
-        margin-bottom: 5px
+        margin-bottom: .5rem
 
   #page_main 
     #main_index.biosample_attr 

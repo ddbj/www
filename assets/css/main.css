@@ -171,14 +171,36 @@ input, textarea, select, button {
     margin-left: .36rem; }
 
 .breadcrumb-view {
-  font-size: 1.2rem;
   line-height: 1;
-  padding: 0.4rem 0; }
+  background-color: #F5F4F2;
+  font-size: 0; }
   .breadcrumb-view > ul > li {
-    display: inline-block; }
-    .breadcrumb-view > ul > li + li:before {
-      content: ">";
-      margin: 0 .75rem 0 0.5rem; }
+    background-color: #FF7300;
+    display: inline-block;
+    position: relative;
+    padding: .3rem .8rem .3rem 1.4rem; }
+    .breadcrumb-view > ul > li:first-child {
+      padding-left: 1rem; }
+    .breadcrumb-view > ul > li::before, .breadcrumb-view > ul > li::after {
+      content: "";
+      display: block;
+      position: absolute;
+      border-style: solid;
+      border-width: .8rem 0 .8rem .5rem;
+      border-color: transparent;
+      top: 0;
+      z-index: 1; }
+    .breadcrumb-view > ul > li::before {
+      right: -.6rem;
+      border-left-color: white; }
+    .breadcrumb-view > ul > li::after {
+      right: -.5rem;
+      border-left-color: #FF7300; }
+    .breadcrumb-view > ul > li > a {
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      text-decoration: none; }
 
 .columns-view {
   display: flex;
@@ -347,12 +369,11 @@ input, textarea, select, button {
     line-height: 1.2;
     margin-top: 2.4rem;
     margin-bottom: 1.5rem;
-    border-left: solid 1.2rem #FF7300;
-    margin-left: -2.5rem;
-    padding-left: 1.2rem; }
+    border-left: solid 0.6rem #FF7300;
+    padding-left: .9rem; }
   .md-content h3 {
     font-size: 1.6rem;
-    border-bottom: 2px solid #FEC091;
+    border-bottom: 0.2rem solid #FEC091;
     margin-bottom: 1.6rem; }
   .md-content h2, .md-content h3 {
     cursor: pointer; }
@@ -375,24 +396,24 @@ input, textarea, select, button {
     list-style: none;
     padding: 0; }
     .md-content ol li {
-      margin-bottom: 10px;
-      padding-left: 29px;
+      margin-bottom: 1rem;
+      padding-left: 2.9rem;
       position: relative; }
       .md-content ol li:before {
         content: counter(my-counter);
         counter-increment: my-counter;
-        background-color: #FEC091;
-        color: white;
+        background-color: #fcac3d;
+        color: #1C1B19;
         display: block;
-        line-height: 20px;
-        margin-left: -26px;
+        line-height: 2rem;
+        margin-left: -2.6rem;
         text-align: center;
-        height: 20px;
-        width: 20px;
+        height: 2rem;
+        width: 2rem;
         border-radius: 50%;
         position: absolute;
-        top: 3px;
-        left: 28px; }
+        top: .3rem;
+        left: 2.8rem; }
       .md-content ol li.decrement:before {
         counter-increment: my-counter +0; }
       .md-content ol li ul li {
@@ -428,23 +449,23 @@ input, textarea, select, button {
     display: block; }
   .md-content table {
     width: 100%;
-    border: 1px solid #736357;
+    border: 0.1rem solid #736357;
     line-height: 1.2;
     font-size: 1.2rem; }
     .md-content table thead tr th {
-      border-bottom: 1px solid #736357; }
+      border-bottom: 0.1rem solid #736357; }
     .md-content table tr th {
       text-align: left;
       font-weight: bold;
       white-space: nowrap; }
     .md-content table tr td, .md-content table tr th {
       padding: .6rem .6rem .6rem .6rem;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 0.1rem solid #ccc;
       vertical-align: middle; }
       .md-content table tr td.borderbtm, .md-content table tr th.borderbtm {
-        border-bottom: 1px solid #736357; }
+        border-bottom: 0.1rem solid #736357; }
     .md-content table tr:last-child > td, .md-content table tr:last-child th {
-      border-bottom: 1px solid #736357; }
+      border-bottom: 0.1rem solid #736357; }
     .md-content table + table {
       margin-top: -1.1rem; }
   .md-content code, .md-content pre {
@@ -462,7 +483,7 @@ input, textarea, select, button {
   .md-content .attention {
     background-color: #FFF3DB;
     padding: 1rem 1.6rem;
-    border-left: 6px solid #FEC091;
+    border-left: 0.6rem solid #FEC091;
     margin-bottom: 1.6rem; }
   .md-content .toggle-content-btn {
     display: flex;
@@ -474,12 +495,12 @@ input, textarea, select, button {
     .md-content .toggle-content-btn::after {
       content: "";
       display: inline-block;
-      width: 4px;
-      height: 4px;
-      margin-left: 5px;
-      margin-right: -5px;
-      border-top: 2px solid #FF7300;
-      border-right: 2px solid #FF7300;
+      width: .4rem;
+      height: .4rem;
+      margin-left: .5rem;
+      margin-right: -.5rem;
+      border-top: 0.2rem solid #FF7300;
+      border-right: 0.2rem solid #FF7300;
       transform: translateY(-35%) rotate(135deg); }
     .md-content .toggle-content-btn.active::after {
       transform: rotate(315deg); }
@@ -513,24 +534,24 @@ input, textarea, select, button {
   .md-content .nsss-menu {
     display: flex; }
     .md-content .nsss-menu .nsss-icon {
-      width: 100px;
+      width: 10rem;
       text-align: center; }
       .md-content .nsss-menu .nsss-icon img {
-        width: 35px;
+        width: 3.5rem;
         height: auto; }
   .md-content .db-top-navi-box img {
-    width: 35px;
+    width: 3.5rem;
     height: auto;
     display: inline-block;
     opacity: .9;
     transition: opacity .1s linear 0s; }
   .md-content .pdficon {
-    width: 24px;
-    height: 24px;
+    width: 2.4rem;
+    height: 2.4rem;
     vertical-align: middle;
-    margin-left: 2px; }
+    margin-left: .2rem; }
   .md-content .tsv {
-    width: 45px;
+    width: 4.5rem;
     vertical-align: middle; }
   .md-content .right-alignment {
     float: right; }
@@ -553,106 +574,106 @@ input, textarea, select, button {
     color: #000000;
     list-style: none;
     overflow: hidden;
-    padding: 10px 0;
-    border-radius: 4px 4px 0 0;
+    padding: 1rem 0;
+    border-radius: .4rem .4rem 0 0;
     margin: 0; }
     .md-content .flow li {
       color: #000000;
       display: block;
       float: left;
-      font-size: 13px;
-      min-width: 100px;
-      border-bottom: 1px solid #bbb;
-      border-top: 1px solid #bbb;
+      font-size: 1.3rem;
+      min-width: 10rem;
+      border-bottom: .1rem solid #bbb;
+      border-top: .1rem solid #bbb;
       text-decoration: none;
       text-align: center;
       margin: 0; }
       .md-content .flow li:before {
         content: " ";
-        border-right: 1px solid #bbb;
-        border-top: 1px solid #bbb;
+        border-right: .1rem solid #bbb;
+        border-top: .1rem solid #bbb;
         float: right;
-        height: 31px;
+        height: 3.1rem;
         transform: skew(30deg);
-        width: 30px; }
+        width: 3rem; }
       .md-content .flow li:after {
         content: " ";
         display: block;
-        border-bottom: 1px solid #bbb;
-        border-right: 1px solid #bbb;
-        width: 30px;
-        height: 31px;
+        border-bottom: .1rem solid #bbb;
+        border-right: .1rem solid #bbb;
+        width: 3rem;
+        height: 3.1rem;
         position: relative;
         transform: skew(-30deg); }
       .md-content .flow li:first-child {
         background: linear-gradient(#FEFEFE, #F3F5F5);
-        border-left: 1px solid #bbb;
-        padding-left: 10px; }
+        border-left: .1rem solid #bbb;
+        padding-left: 1rem; }
         .md-content .flow li:first-child::before {
           background: linear-gradient(#FEFEFE, #F9FAFA);
-          margin: -1px -30px -30px auto; }
+          margin: -.1rem -3rem -3rem auto; }
         .md-content .flow li:first-child:after {
           background: linear-gradient(#F9FAFA, #F4F6F6);
-          margin: -30px -30px -1px auto; }
+          margin: -3rem -3rem -.1rem auto; }
       .md-content .flow li:nth-child(2) {
         background: linear-gradient(#e5e9e9, #f1f1f1);
         text-align: center; }
         .md-content .flow li:nth-child(2):before {
           background: linear-gradient(#f1f1f1, #ebeeee);
-          margin: -1px -30px -30px auto; }
+          margin: -.1rem -3rem -3rem auto; }
         .md-content .flow li:nth-child(2):after {
           background: linear-gradient(#ebeeee, #e6ebeb);
-          margin: -30px -30px -1px auto; }
+          margin: -3rem -3rem -.1rem auto; }
       .md-content .flow li:last-child {
         background: linear-gradient(#e5e5e5, #d7dede);
-        line-height: 20px;
-        padding: 10px 10px 0px 40px; }
+        line-height: 2rem;
+        padding: 1rem 1rem 0 4rem; }
         .md-content .flow li:last-child::before {
           background: linear-gradient(#e5e5e5, #dde3e3);
           display: block;
-          margin: -11px -30px -30px auto; }
+          margin: -1.1rem -3rem -3rem auto; }
         .md-content .flow li:last-child::after {
           background: linear-gradient(#dde3e3, #d8dfdf);
           content: " ";
-          margin: -20px -30px -1px auto; }
+          margin: -2rem -3rem -.1rem auto; }
   .md-content .flow_ja li:first-child {
-    line-height: 60px;
-    padding: 0 10px 0 40px;
+    line-height: 6rem;
+    padding: 0 1rem 0 4rem;
     text-align: center; }
   .md-content .flow_ja li:nth-child(2) {
-    line-height: 60px;
-    padding: 0 10px 0 40px; }
+    line-height: 6rem;
+    padding: 0 1rem 0 4rem; }
     .md-content .flow_ja li:nth-child(2):before {
-      margin: -1px -30px -30px auto; }
+      margin: -.1rem -3rem -3rem auto; }
     .md-content .flow_ja li:nth-child(2):after {
-      margin: -30px -30px -1px auto; }
+      margin: -3rem -3rem -.1rem auto; }
   .md-content .flow_en li:first-child {
-    line-height: 20px;
-    padding: 10px 10px 0 40px;
+    line-height: 2rem;
+    padding: 1rem 1rem 0 4rem;
     text-align: left; }
     .md-content .flow_en li:first-child:before {
-      margin: -11px -30px -30px auto; }
+      margin: -1.1rem -3rem -3rem auto; }
     .md-content .flow_en li:first-child:after {
-      margin: -20px -30px -1px auto; }
+      margin: -2rem -3rem -.1rem auto; }
   .md-content .flow_en li:nth-child(2) {
-    line-height: 20px;
-    padding: 10px 10px 0 40px; }
+    line-height: 2rem;
+    padding: 1rem 1rem 0 4rem; }
     .md-content .flow_en li:nth-child(2):after {
-      margin: -20px -30px -1px auto; }
+      margin: -2rem -3rem -.1rem auto; }
   .md-content .ja li:first-child:before {
-    margin: -1px -30px -30px auto; }
+    margin: -.1rem -3rem -3rem auto; }
   .md-content .ja li:first-child:after {
-    margin: -30px -30px -1px auto; }
+    margin: -3rem -3rem -.1rem auto; }
   .md-content .en li:first-child:before {
-    margin: -11px -30px -30px auto; }
+    margin: -1.1rem -3rem -3rem auto; }
   .md-content .en li:first-child:after {
-    margin: -20px -30px -1px auto; }
+    margin: -2rem -3rem -.1rem auto; }
   .md-content .flow_en li:nth-child(2)::before {
-    margin: -11px -30px -30px auto; }
+    margin: -1.1rem -3rem -3rem auto; }
   .md-content #page_main #biosample_attr_area .name a:link, .md-content #page_main #biosample_attr_area .name a:visited, .md-content #page_main #biosample_attr_area .name a:hover {
     color: #000000; }
   .md-content #biosample_attr_area {
-    padding: 2px 0 0 0;
+    padding: .2rem 0 0 0;
     border-collapse: collapse;
     background: white; }
   .md-content #biosample_attr_area table#biosample_attr_table thead {
@@ -664,18 +685,18 @@ input, textarea, select, button {
       border-top: none;
       border-bottom: none;
       border-left: none;
-      border-right: 1px solid #CCCCCC;
-      padding: 2px 4px;
+      border-right: .1rem solid #CCCCCC;
+      padding: .2rem .4rem;
       text-align: left;
       vertical-align: top; }
   .md-content #biosample_attr_area table#biosample_attr_table tbody {
     border: 0; }
     .md-content #biosample_attr_area table#biosample_attr_table tbody tr {
-      border-bottom: 1px solid #ddd;
-      border-left: 1px solid #ddd; }
+      border-bottom: .1rem solid #ddd;
+      border-left: .1rem solid #ddd; }
       .md-content #biosample_attr_area table#biosample_attr_table tbody tr td {
-        border: 1px solid #ccc;
-        padding: 2px 4px;
+        border: .1rem solid #ccc;
+        padding: .2rem .4rem;
         text-align: left;
         vertical-align: top; }
   .md-content #biosample_attr_area table td.name {
@@ -684,12 +705,12 @@ input, textarea, select, button {
     display: none; }
   .md-content #main_index.biosample_attr .radio {
     float: left;
-    margin-right: 3px; }
-  .md-content #main_index.biosample_attr input {
+    margin-right: .3rem; }
+  .md-content #main_index.biosample_attr in.prem {
     vertical-align: middle;
-    margin-bottom: 3px; }
-  .md-content #main_index.biosample_attr .radio.required {
-    outline: 1px solid #FF0000; }
+    margin-bottom: .3rem; }
+  .md-content #main_index.biosample_attr .radio.requi.rrem {
+    outline: .1rem solid #FF0000; }
   .md-content #page_main .biosample_attr a:visited {
     color: #039; }
   .md-content #page_main .biosample_attr a:hover {
@@ -698,21 +719,21 @@ input, textarea, select, button {
   .md-content #main_index.biosample_attr {
     list-style: none; }
   .md-content #sample_type, .md-content #env_package {
-    border: 1px solid #999999;
-    padding: 5px 10px;
-    width: 450px;
-    border-radius: 5px; }
+    border: .1rem solid #999999;
+    padding: .5rem 1rem;
+    width: 45rem;
+    border-radius: .5rem; }
   .md-content #sample_type {
-    margin-top: 5px;
-    margin-bottom: 15px; }
+    margin-top: .5rem;
+    margin-bottom: 1.5rem; }
   .md-content #main_index.biosample_attr ul {
     margin-bottom: 0; }
     .md-content #main_index.biosample_attr ul li {
-      margin-bottom: 2px; }
+      margin-bottom: .2rem; }
   .md-content #main_index.biosample_attr > ul > li {
-    margin-top: 5px; }
+    margin-top: .5rem; }
     .md-content #main_index.biosample_attr > ul > li > ul > li:last-child {
-      margin-bottom: 5px; }
+      margin-bottom: .5rem; }
   .md-content #page_main #main_index.biosample_attr {
     font-weight: bold; }
   .md-content #main_index.biosample_attr {
@@ -928,13 +949,12 @@ input, textarea, select, button {
         text-decoration: none;
         display: block;
         padding: 0 1rem;
-        background-color: #DDDAD7;
+        background-color: #F5F4F2;
         position: relative;
         cursor: pointer;
         transition: background 0.2s, color 0.2s; }
       .tab-menu-view > .tabmenucontainer > li:hover > a {
-        background-color: #FF7300;
-        color: white; }
+        background-color: rgba(255, 191, 0, 0.15); }
       .tab-menu-view > .tabmenucontainer > li:hover > ul {
         opacity: 1;
         pointer-events: auto;
@@ -974,7 +994,8 @@ input, textarea, select, button {
           color: #1C1B19;
           transition: background-color 0.2s; }
         .tab-menu-view > .tabmenucontainer > li > ul > li:hover > a {
-          background-color: rgba(255, 191, 0, 0.15); }
+          background-color: rgba(255, 191, 0, 0.15);
+          color: #FF7300; }
         .tab-menu-view > .tabmenucontainer > li > ul > li + li {
           border-top: solid 0.1rem #d2cac4; }
   .tab-menu-view > .tabbedcontent {
@@ -999,7 +1020,8 @@ input, textarea, select, button {
   border-radius: .8em;
   padding: 0 .8em;
   position: relative;
-  margin-bottom: .2rem; }
+  margin-bottom: .2rem;
+  transition: background-color 0.2s; }
   .tag-view > .count {
     padding: 0 .4rem;
     font-size: .8rem;
@@ -1019,6 +1041,9 @@ input, textarea, select, button {
     color: #736357; }
     .tag-view.-disable > .count {
       color: #736357; }
+  .tag-view.-disable:hover {
+    background-color: rgba(255, 191, 0, 0.15);
+    color: #FF7300; }
 
 .tagging-item-view {
   list-style: none; }
@@ -1254,7 +1279,7 @@ input, textarea, select, button {
       margin-top: 1.4rem; }
 
 .multi-column-view {
-  padding: 25px 40px 25px 35px; }
+  padding: 2.5rem 4rem 2.5rem 2.5rem; }
 
 #ServicesView {
   margin-right: 1rem;
