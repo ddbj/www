@@ -25,6 +25,14 @@
 		"oAP": "/.gitignore",
 		"oF": 0
 		},
+	"/.jekyll-metadata": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.jekyll-metadata",
+		"oF": 0
+		},
 	"/404.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -2617,6 +2625,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/_data/annual_reports.yml",
+		"oF": 0
+		},
+	"/_data/global.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_data/global.yml",
 		"oF": 0
 		},
 	"/_data/jsonld/_services_index.json": {
@@ -94373,25 +94389,6 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_news/ja/2020-11-27.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_news/ja/2020-11-27.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
 	"/_news/ja/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -94775,6 +94772,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/_sass/object/component/_timeline-view.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/_sass/object/component/_top-news-view.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_sass/object/component/_top-news-view.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
