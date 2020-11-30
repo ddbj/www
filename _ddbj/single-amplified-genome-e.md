@@ -127,13 +127,18 @@ Package and attributes
     [metagenome](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&keep=1&srchmode=1&unlock)
     and names with “uncultured” can not be used. Use an organism name
     same as SAG entry.
-  - Describe identification or description of the specific individual in
-    [isolate](/biosample/attribute-e.html?all=all#isolate) and isolation
-    souce in
-    [isolation\_source](/biosample/attribute-e.html?all=all#isolation_source).
   - As a keyword, add
     [sample\_type](/biosample/attribute-e.html?all=all#sample_type)=”single
     amplified genome”.
+  - Describe following attributes.
+    - [isolate](/biosample/attribute-e.html?all=all#isolate)
+    - [isolation_source](/biosample/attribute-e.html?all=all#isolation_source)
+    - [collection_date](/biosample/attribute-e.html?all=all#collection_date)
+    - [env_biome](/biosample/attribute-e.html?all=all#env_biome)
+    - [env_feature](/biosample/attribute-e.html?all=all#env_feature)
+    - [env_material](/biosample/attribute-e.html?all=all#env_material)
+    - [geo_loc_name](/biosample/attribute-e.html?all=all#geo_loc_name)
+    - [lat_lon](/biosample/attribute-e.html?all=all#lat_lon)    
 
 ## Multiple cells <a name="multi-cells"></a>
 
@@ -166,10 +171,9 @@ Package and attributes
     derived\_from = “SAMD00192892-SAMD00192901” and note = “This sample
     group is the combination of the individual BioSamples:
     SAMD00192892-SAMD00192901.”
-  - Describe identification or description of the specific individual in
-    [isolate](/biosample/attribute-e.html?all=all#isolate) and isolation
-    souce in
-    [isolation\_source](/biosample/attribute-e.html?all=all#isolation_source).
+  - Describe following attributes.
+    - [isolate](/biosample/attribute-e.html?all=all#isolate)
+    - [isolation\_source](/biosample/attribute-e.html?all=all#isolation_source).
 
 ## Real-world examples <a name="real-examples"></a>
 
