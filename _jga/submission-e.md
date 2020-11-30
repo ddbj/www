@@ -3,7 +3,7 @@ layout: indexed_content
 title: Submission to JGA
 pathname: submission-e
 category: jga
-current_tab: home
+current_tab: submission
 tab_menu:
   - id: home
     title: Home

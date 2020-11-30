@@ -3,7 +3,7 @@ layout: indexed_content
 title: TLS
 pathname: tls-e
 category: ddbj
-current_tab: home
+current_tab: data_categories
 tab_menu:
   - id: home
     title: Home

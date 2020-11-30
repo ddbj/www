@@ -3,7 +3,7 @@ layout: indexed_content
 title: 登録の見本
 pathname: example
 category: ddbj
-current_tab: home
+current_tab: flat_file
 tab_menu:
   - id: home
     title: Home

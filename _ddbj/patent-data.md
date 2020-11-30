@@ -3,7 +3,7 @@ layout: indexed_content
 title: 特許出願に含まれる配列データの提供
 pathname: patent-data
 category: ddbj
-current_tab: home
+current_tab: other
 tab_menu:
   - id: home
     title: Home

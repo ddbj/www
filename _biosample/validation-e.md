@@ -3,7 +3,7 @@ layout: indexed_content
 title: Validation rules
 pathname: validation
 category: biosample
-current_tab: home
+current_tab: validation rules
 tab_menu:
   - id: home
     title: Home

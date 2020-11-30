@@ -3,7 +3,7 @@ layout: indexed_content
 title: 利用手順
 pathname: download
 category: agd
-current_tab: home
+current_tab: submission
 tab_menu:
   - id: home
     title: Home

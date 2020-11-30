@@ -3,7 +3,7 @@ layout: indexed_content
 title: DDBJ Sequence Read Archive Handbook
 pathname: submission-e
 category: dra
-current_tab: home
+current_tab: handbook
 tab_menu:
   - id: home
     title: Home

@@ -3,7 +3,7 @@ layout: indexed_content
 title: About DTA
 pathname: about-dta-e
 category: dta
-current_tab: home
+current_tab: about dta
 tab_menu:
   - id: home
     title: Home

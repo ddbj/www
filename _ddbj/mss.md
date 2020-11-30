@@ -2,7 +2,7 @@
 layout: indexed_content
 title: MSS - Mass Submission System
 category: ddbj
-current_tab: home
+current_tab: submission
 tab_menu:
   - id: home
     title: Home

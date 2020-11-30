@@ -3,7 +3,7 @@ layout: indexed_content
 title: Organism qualifier に記載する生物名
 pathname: organism
 category: ddbj
-current_tab: home
+current_tab: flat_file
 tab_menu:
   - id: home
     title: Home

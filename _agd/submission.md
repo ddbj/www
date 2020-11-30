@@ -3,7 +3,7 @@ layout: indexed_content
 title: AGD への登録
 pathname: submission
 category: agd
-current_tab: home
+current_tab: submission
 tab_menu:
   - id: home
     title: Home

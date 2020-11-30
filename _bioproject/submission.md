@@ -3,7 +3,7 @@ layout: indexed_content
 title: DDBJ BioProject Handbook
 pathname: submission
 category: bioproject
-current_tab: home
+current_tab: handbook
 tab_menu:
   - id: home
     title: Home

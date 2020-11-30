@@ -3,7 +3,7 @@ layout: indexed_content
 title: Example of Submission
 pathname: example-e
 category: ddbj
-current_tab: home
+current_tab: flat_file
 tab_menu:
   - id: home
     title: Home
