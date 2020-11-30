@@ -5,21 +5,13 @@ layout: default
   <div class="inner">
     <div class="page-title">
       <h1 class="title">{{ page.title }}</h1>
-      <nav class="breadcrumb">
+      <nav class="breadcrumb-view">
         <ul>
-          <li>
-            {% if page.lang == 'ja' %}
-            <a href="{{ site.url }}">ホーム</a>
-            {% else %}
-            <a href="{{ site.url }}/index-e">Home</a>
-            {% endif %}
-          </li>
+          {% include breadcrumb-home.html lang=page.lang %}
           <li>
             <a href="{{site.url}}{{site.baseurl}}/{{ page.category }}">{{ page.category }}</a>
           </li>
-          <li>
-            <a>{{ page.title }}</a>
-          </li>
+          <li><a>{{ page.title }}</a></li>
         </ul>
       </nav>
     </div>

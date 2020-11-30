@@ -1,4 +1,14 @@
 (()=>{
+  const COOKIE_ACCEPT = {
+    body: {
+      ja: '<strong>Cookie</strong><br>このサイトでは、ブラウジングの経験を向上させるためにCookieを使用しています。Cookieの使用方法と設定の変更方法の詳細については、<a href="/policies">こちら</a>をご覧ください。',
+      en: '<strong>Cookie</strong><br>This site uses cookies to offer you a better browsing experience. <a href="/policies-e">Find out more</a> on how we use cookies and how you can change your settings.'
+    },
+    button: {
+      ja: '認証',
+      en: 'Accept'
+    }
+  }
   const HEADER_LEFT_MENU = [
     {
       label: {
@@ -806,6 +816,57 @@
     margin: 0;
   }
   
+  #DDBJCookieAccept {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 999999999;
+  }
+  #DDBJCookieAccept > div {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 8px 16px;
+    position: relative;
+  }
+  #DDBJCookieAccept > div > .DDBJ_cookieAccept-body {
+    margin-bottom: 4px;
+  }
+  #DDBJCookieAccept > div > .DDBJ_cookieAccept-body > strong {
+    font-weight: bold;
+  }
+  #DDBJCookieAccept > div > .DDBJ_cookieAccept-body > button {
+    background-color: #FF7300;
+    color: white;
+  }
+  #DDBJCookieAccept > div > .DDBJ_cookieAccept-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+  #DDBJCookieAccept > div > .DDBJ_cookieAccept-close::before, #DDBJCookieAccept > div > .DDBJ_cookieAccept-close::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    top: 7px;
+    border-top: solid 1px #6D5C3F;
+  }
+  #DDBJCookieAccept > div > .DDBJ_cookieAccept-close::before {
+    transform: rotate(45deg);
+  }
+  #DDBJCookieAccept > div > .DDBJ_cookieAccept-close::after {
+    transform: rotate(-45deg);
+    left: 7px;
+  }
+  
   @media screen and (max-width: 480px) {
     #DDBJ_CommonHeader {
       z-index: 10000000;
@@ -1102,7 +1163,30 @@
       </div>`;
       body.appendChild(footer);
     }
+
+    DDBJ_acceptCookie();
   }
 
+  function DDBJ_acceptCookie() {
+    const accept = localStorage.getItem('DDBJCookieAccept');
+    if (accept == undefined) {
+      // make HTML
+      document.getElementsByTagName('body')[0].insertAdjacentHTML('beforeend', `<section id="DDBJCookieAccept">
+        <div>
+          <div class="DDBJ_cookieAccept-body">${COOKIE_ACCEPT.body[language]}</div>
+          <div class="DDBJ_cookieAccept-close"></div>
+          <button>${COOKIE_ACCEPT.button[language]}</button>
+        </div>
+      </section>`);
+      // attach event
+      const DDBJCookieAccept = document.getElementById('DDBJCookieAccept');
+      DDBJCookieAccept.querySelectorAll('.DDBJ_cookieAccept-close, button').forEach(elm => {
+        elm.addEventListener('click', () => {
+          DDBJCookieAccept.parentNode.removeChild(DDBJCookieAccept);
+          localStorage.setItem('DDBJCookieAccept', 'accept');
+        });
+      })
+    }
+  }
   
 })();

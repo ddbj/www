@@ -10,14 +10,13 @@
         text-decoration: none
         display: block
         padding: 0 1rem
-        background-color: #DDDAD7
+        background-color: $COLOR_BEIGE
         position: relative
         cursor: pointer
         transition: background $DURATION_GUI, color $DURATION_GUI
       &:hover
         > a
-          background-color: $COLOR_KEY
-          color: white
+          background-color: $COLOR_HOVER
         > ul
           opacity: 1
           pointer-events: auto
@@ -65,6 +64,7 @@
           &:hover
             > a
               background-color: $COLOR_HOVER
+              color: $COLOR_KEY
           + li
             border-top: solid .1rem $COLOR_LIGHT_GRAY
   > .tabbedcontent

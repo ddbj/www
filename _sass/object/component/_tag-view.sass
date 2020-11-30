@@ -8,17 +8,16 @@
   padding: 0 .8em
   position: relative
   margin-bottom: .2rem
+  transition: background-color $DURATION_GUI
   > .count
+    padding: 0 .4rem
     font-size: .8rem
     background-color: white
     vertical-align: middle
     display: inline-block
     border-radius: 1.1em
-    padding: 0
     text-align: center
     min-width: 2em
-    position: relative
-    top: -.2em
   &.-reverse
     background-color: $COLOR_BROWN
     color: white
@@ -29,3 +28,8 @@
     color: $COLOR_GRAY
     > .count
       color: $COLOR_GRAY
+  &:hover
+    &.-disable
+      background-color: $COLOR_HOVER
+      color: $COLOR_KEY
+

@@ -1,1 +1,14 @@
-  <script src="{{ site.url }}{{ site.baseurl }}/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/assets/js/ddbj_common_framework.js" id="DDBJ_common_framework" style="display: block; height: 40px;" data-bottom-menu="true" data-ddbj-home-page="true"></script>
+{% if site.data.global.top_news[page.lang].size > 0 %}
+<section class="top-news-view">
+  <div class="inner">
+    <ul>
+      {% for news in site.data.global.top_news[page.lang] %}
+      <li class="item">
+        <a href="{{ site.url }}{{ site.baseurl }}/news/{{ page.lang }}/{{ news.path }}">{{ news.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}

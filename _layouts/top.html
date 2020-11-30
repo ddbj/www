@@ -11,6 +11,14 @@ layout: default
         <h1 class="logotype">{{ page.title }}</h1>
         {% else %}
         <h1 class="title">{{ page.title }}</h1>
+
+        <nav class="breadcrumb-view">
+          <ul>
+            {% include breadcrumb-home.html lang=page.lang %}
+            <li><a>{{ page.title }}</a></li>
+          </ul>
+        </nav>
+  
         {% endif %}
         <div class="description">{{ page.description }}</div>
       </header>
@@ -56,25 +64,21 @@ layout: default
       <div class="container">
         <h2 class="title">NEWS</h2>
         <ul class="list">
-        {% for post in site.categories.ja limit:5 %}
+          
+          {% assign news_list = site.news | where: "lang", page.lang | where_exp: "news_list", "news_list.db contains page.category" | sort "date" | reverse %}
+          {% for news in news_list limit:5 %}
           <li class="item">
-            {% if  post.priority%}
-            <article class="news priority">
-            {% else %}
-            <article class="news">
-            {% endif %}
-              <a href="{{ site.baseurl }}{{post.url}}">
-                <div class="metadata">
-                  <time>{{post.date | date: '%Y年%m月%d日'}}</time>
-                  <div class="tags">{% include post_meta.html %}</div>
-                </div>
-                <h3 class="title">{{post.title}}</h3>
+            <article class="news{% if news.priority %} priority{% endif %}">
+              <a href="{{ site.baseurl }}{{ news.url }}">
+                <h3 class="title">{{news.title}}</h3>
+                {% include tags.html lang=page.lang date=news.date tags=news.tags dbs=news.db %}
               </a>
             </article>
           </li>
-        {% endfor %}
+          {% endfor %}
+        
         </ul>
-        <a class="arrowed-link" href="/www/news.html">more</a>
+        <a class="arrowed-link" href="{{ site.baseurl }}/news/ja/?keyword%5B%5D={{ page.category }}">more</a>
       </div>
     </aside>
 
