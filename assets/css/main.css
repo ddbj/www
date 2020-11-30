@@ -557,6 +557,8 @@ input, textarea, select, button {
     height: 24px;
     vertical-align: middle;
     margin-left: 2px; }
+  .md-content .webpageicon {
+    width: 30px; }
   .md-content .tsv {
     width: 45px;
     vertical-align: middle; }
