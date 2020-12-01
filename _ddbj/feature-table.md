@@ -3737,7 +3737,7 @@ Value format    /PCR_primers="[fwd_name: XXX1, ]fwd_seq: xxxxx1,[fwd_name: XXX2,
 Example         /PCR_primers="fwd_name: CO1P1, fwd_seq: ttgattttttggtcayccwgaagt,
                 rev_name: CO1R4, rev_seq: ccwvytardcctarraartgttg"
                 /PCR_primers=" fwd_name: hoge1, fwd_seq: cgkgtgtatcttact, 
-                rev_name: hoge2, rev_seq: cg<i>gtgtatcttact" 
+                rev_name: hoge2, rev_seq: cggtgtatcttact" 
                 /PCR_primers="fwd_name: CO1P1, fwd_seq: ttgattttttggtcayccwgaagt,
                 fwd_name: CO1P2, fwd_seq: gatacacaggtcayccwgaagt, rev_name: CO1R4, 
                 rev_seq: ccwvytardcctarraartgttg" 
@@ -3746,7 +3746,7 @@ Comment         fwd_seq and rev_seq are both mandatory; fwd_name and rev_name ar
                 both optional. Both sequences should be presented in 5'>3' order. 
                 The sequences should be given in the IUPAC degenerate-base alphabet,
                 except for the modified bases; those must be enclosed within angle
-                brackets <> 
+                brackets &lt;&gt;
 </pre>
 
 -----
