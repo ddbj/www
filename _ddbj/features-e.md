@@ -98,17 +98,11 @@ tab_menu:
 lang: en
 ---
 
-The feature keys used and recommended for DDBJ submissions are as
-follows.  
-For further information of INSDC feature keys, read [Feature Table Definition](/ddbj/feature-table-e.html): [7.2 Appendix II: Feature keys
-reference](/ddbj/feature-table-e.html#7.2).
+The feature keys used and recommended for DDBJ submissions are as follows.  
 
 ## Feature/Qualifier Usage Matrix <a name="usage"></a>
 
-The chart below explains recommended combinations of feature and
-qualifier keys for DDBJ submissions.
-
-[Feature/Qualifier usage matrix ![]({{ site.baseurl }}/assets/images/parts/pdf.png){:.pdficon}]({{ site.baseurl }}/assets/files/pdf/ddbj/fq-e.pdf) (November 9, 2016)
+The chart, [Feature/Qualifier usage matrix](https://docs.google.com/spreadsheets/d/1qosakEKo-y9JjwUO_OFcmGCUfssxhbFAm5NXUAnT3eM/), explains recommended combinations of feature and qualifier keys for DDBJ submissions.
 
 For more detail of available combinations of feature and qualifier keys
 in INSDC entries, read: [Feature Table Definition](/ddbj/feature-table-e.html): [7.2 Appendix II: Feature keys

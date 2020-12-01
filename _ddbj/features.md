@@ -99,13 +99,13 @@ lang: ja
 ---
 
 DDBJ への新規登録において使用を推奨する feature key の定義を以下に挙げています。  
-INSDC において運用している feature key に関する詳細は、Feature Table Definition の [7.2 Appendix II: Feature keys reference](/ddbj/feature-table.html#7.2) をご参照ください。
 
 ## Feature/Qualifier 対応 <a name="usage"></a>
 
 Feature/Qualifier 対応一覧表には、DDBJ へ登録を推奨する feature と qualifier の組み合わせを示しています。
 
-[Feature/Qualifier対応一覧表![]({{ site.baseurl }}/assets/images/parts/pdf.png){:.pdficon}]({{ site.baseurl }}/assets/files/pdf/ddbj/fq-j.pdf)(2016.11.09)
+[Feature/Qualifier 対応一覧表](https://docs.google.com/spreadsheets/d/1qosakEKo-y9JjwUO_OFcmGCUfssxhbFAm5NXUAnT3eM/) には、
+DDBJ へ登録を推奨する feature と qualifier の組み合わせを示しています。
 
 INSDC において記載可能な feature と qualifier の組み合わせに関しましては、[Feature Table Definition](/ddbj/feature-table.html) の [7.2 Appendix II: Feature keys reference](/ddbj/feature-table.html#7.2) をご参照ください。
 
