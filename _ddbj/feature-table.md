@@ -2753,7 +2753,7 @@ Comment         Values indicate altitudes above or below nominal sea level
 <pre id="anticodon"><strong>Qualifier /anticodon=</strong>
 Definition      location of the anticodon of tRNA and the amino acid for which
                 it codes
-Value format    (pos:<location>,aa:<amino_acid>,seq:<text>) where location is 
+Value format    (pos:&lt;location&gt;,aa:&lt;amino_acid&gt;,seq:&lt;text&gt;) where location is 
                 the position of the anticodon and amino_acid is the abbreviation 
                 for the amino acid encoded and seq is the sequence of the anticodon 
 Example         /anticodon=(pos:34..36,aa:Phe,seq:aaa)
