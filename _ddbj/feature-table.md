@@ -3243,7 +3243,7 @@ Example         /gap_type="between scaffolds"
                 /gap_type="within scaffold"
 Comment         This qualifier is used only for <a href="#assembly_gap">assembly_gap</a> features and its values
                 are controlled by the AGP Specification version 2.1:
-                <a href="https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/"ma>https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/</a>
+                <a href="https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/">https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/</a>
                 Please also visit: <a href="http://www.insdc.org/controlled-vocabulary-gaptype-qualifier">http://www.insdc.org/controlled-vocabulary-gaptype-qualifier</a>
 </pre>
 
@@ -3455,7 +3455,7 @@ Example         /linkage_evidence="paired-ends"
                 /linkage_evidence="within clone"
 Comment         This qualifier is used only for <a href="#assembly_gap">assembly_gap</a> features and its values are
                 controlled by the AGP Specification version 2.1:
-                <a href="https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/"ma>https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/</a>
+                <a href="https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/">https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/</a>
                 Please also visit: <a href="http://www.insdc.org/controlled-vocabulary-linkageevidence-qualifier">http://www.insdc.org/controlled-vocabulary-linkageevidence-qualifier</a>
 </pre>
 
@@ -3598,7 +3598,7 @@ Example         /ncRNA_class="miRNA"
                 /ncRNA_class="scRNA"       
 Comment         TYPE is a term taken from the INSDC controlled vocabulary for ncRNA
                 classes. For a complete list of supported values, please see:
-                <a href="http://www.insdc.org/documents/ncrna-vocabulary"ma>http://www.insdc.org/documents/ncrna-vocabulary</a>;
+                <a href="http://www.insdc.org/documents/ncrna-vocabulary">http://www.insdc.org/documents/ncrna-vocabulary</a>;
 
                 ncRNA classes not yet in the INSDC /ncRNA_class controlled
                 vocabulary can be annotated by entering
