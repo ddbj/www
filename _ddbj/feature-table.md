@@ -3743,7 +3743,7 @@ Example         /PCR_primers="fwd_name: CO1P1, fwd_seq: ttgattttttggtcayccwgaagt
                 rev_seq: ccwvytardcctarraartgttg" 
 
 Comment         fwd_seq and rev_seq are both mandatory; fwd_name and rev_name are
-                both optional. Both sequences should be presented in 5'>3' order. 
+                both optional. Both sequences should be presented in 5'&gt;3' order. 
                 The sequences should be given in the IUPAC degenerate-base alphabet,
                 except for the modified bases; those must be enclosed within angle
                 brackets &lt;&gt;
