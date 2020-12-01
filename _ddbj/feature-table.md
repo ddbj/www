@@ -2723,8 +2723,7 @@ Comment         comments, questions and clarifications
 
 -----
 
-{:#allele}
-```
+<pre id="bound_moiety"><strong>Qualifier /bound_moiety=</strong>
 Qualifier       /allele=
 Definition      name of the allele for the given gene 
 Value format    "text"
@@ -2735,13 +2734,11 @@ Comment         all gene-related features (exon, CDS etc) for a given
                 different from the /gene qualifier value; when used with 
                 the variation feature key, the allele qualifier value 
                 should be that of the variant.
-```
+</pre>
 
 -----
 
-{:#altitude}
-```
-Qualifier       /altitude=
+<pre id="altitude"><strong>Qualifier /altitude=</strong>
 Definition      geographical altitude of the location from which the sample
                 was collected
 Value format    "text"
@@ -2749,13 +2746,11 @@ Example         /altitude="-256 m"
                 /altitude="330.12 m"
 Comment         Values indicate altitudes above or below nominal sea level 
                 provided in metres
-```
+</pre>
 
 -----
 
-{:#anticodon}
-```
-Qualifier       /anticodon=
+<pre id="anticodon"><strong>Qualifier /anticodon=</strong>
 Definition      location of the anticodon of tRNA and the amino acid for which
                 it codes
 Value format    (pos:<location>,aa:<amino_acid>,seq:<text>) where location is 
@@ -2764,13 +2759,11 @@ Value format    (pos:<location>,aa:<amino_acid>,seq:<text>) where location is
 Example         /anticodon=(pos:34..36,aa:Phe,seq:aaa)
                 /anticodon=(pos:join(5,495..496),aa:Leu,seq:taa)
                 /anticodon=(pos:complement(4156..4158),aa:Gln,seq:ttg)
-```
+</pre>
 
 -----
 
-{:#artificial_location}
-```
-Qualifier       /artificial_location
+<pre id="artificial_location"><strong>Qualifier /artificial_location</strong>
 Definition      indicates that location of the <a href="#fCDS">CDS</a> or <a href="#mRNA">mRNA</a> is modified to adjust
                 for the presence of a frameshift or internal stop codon and not
                 because of biological processing between the regions.
@@ -2812,40 +2805,32 @@ Comment         A single /bound_moiety qualifier is legal on the "<a href="#misc
 
 -----
 
-{:#cell_line}
-```
-Qualifier       /cell_line=
+<pre id="cell_line"><strong>Qualifier /cell_line=</strong>
 Definition      cell line from which the sequence was obtained
 Value format    "text"
 Example         /cell_line="MCF7"
-```
+</pre>
 
 -----
 
-{:#cell_type}
-```
-Qualifier       /cell_type=
+<pre id="cell_type"><strong>Qualifier /cell_type=</strong>
 Definition      cell type from which the sequence was obtained
 Value format    "text"
 Example         /cell_type="leukocyte"
-```
+</pre>
 
 -----
 
-{:#chromosome}
-```
-Qualifier       /chromosome=
+<pre id="chromosome"><strong>Qualifier /chromosome=</strong>
 Definition      chromosome (e.g. Chromosome number) from which
                 the sequence was obtained
 Value format    "text"
 Example         /chromosome="1"
-```
+</pre>
 
 -----
 
-{:#circular_RNA}
-```
-Qualifier       /circular_RNA
+<pre id="circular_RNA"><strong>Qualifier       /circular_RNA</strong>
 Definition      indicates that exons are out-of-order or overlapping 
                 because this spliced RNA product is a circular RNA 
                 (circRNA) created by backsplicing, for example when 
@@ -2858,20 +2843,18 @@ Comment         Comment should be used on features such as <a href="#fCDS">CDS</
                 This qualifier should be used only when the splice event is 
                 indicated in the "join" operator, 
                 eg join(101627..101652,102190..102421,73380..73493)
-```
+</pre>
 
 -----
 
-{:#citation}
-```
-Qualifier       /citation=
+<pre id="citation"><strong>Qualifier /citation=</strong>
 Definition      reference to a citation listed in the entry reference field
 Value format    [integer-number] where integer-number is the number of the
                 reference as enumerated in the reference field
 Example         /citation=[3]
 Comment         used to indicate the citation providing the claim of and/or
                 evidence for a feature; brackets are used for conformity.
-```
+</pre>
 
 -----
 
@@ -2886,40 +2869,33 @@ Comment         not more than one clone should be specified for a given <a href=
 
 -----
 
-{:#clone_lib}
-```
-Qualifier       /clone_lib=
+<pre id="clone_lib"><strong>Qualifier /clone_lib=</strong>
 Definition      clone library from which the sequence was obtained
 Value format    "text"
 Example         /clone_lib="lambda-hIL7"
-```
+</pre>
 
 -----
 
-{:#codon_start}
-```
-Qualifier       /codon_start=
+<pre id="codon_start"><strong>Qualifier /codon_start=</strong>
 Definition      indicates the offset at which the first complete codon of a
                 coding feature can be found, relative to the first base of that
                 feature.
 Value format    1 or 2 or 3
 Example         /codon_start=2
-```
+</pre>
 
 -----
 
-{:#collected_by}
-```
-Qualifier       /collected_by= 
+<pre id="collected_by"><strong>Qualifier /collected_by=</strong>
 Definition      name of persons or institute who collected the specimen 
 Value format    "text" 
 Example         /collected_by="Dan Janzen" 
-```
+</pre>
 
 -----
 
-{:#collection_date}
-```
+<pre id="collection_date"><strong>Qualifier /collection_date=</strong>
 Qualifier       /collection_date=
 Definition      The date on which the specimen was collected.
                 Date/time ranges are supported by providing two collection dates from among 
@@ -2969,7 +2945,7 @@ Comment         'Mmm' represents a three-letter month abbreviation, and can be o
 
                 Within a collection date range for which the day, month, and year are 
                 identical, the first time value must be prior to the second time value.
-```
+</pre>
 
 -----
 
@@ -3009,9 +2985,7 @@ Comment         Intended to provide a reference to the site where the source
 
 -----
 
-{:#cultivar}
-``` 
-Qualifier       /cultivar=
+<pre id="cultivar"><strong>Qualifier /cultivar=</strong>
 Definition      cultivar (cultivated variety) of plant from which sequence was 
                 obtained. 
 Value format    "text"
@@ -3022,11 +2996,11 @@ Example         /cultivar="Nipponbare"
 Comment         'cultivar' is applied solely to products of artificial 
                 selection;  use the variety qualifier for natural, named 
                 plant and fungal varieties;  
-```
+</pre>
 
 -----
 
- <pre id="culture_collection"><strong>Qualifier       /culture_collection=</strong>
+<pre id="culture_collection"><strong>Qualifier       /culture_collection=</strong>
 Definition      institution code and identifier for the culture from which the
                 nucleic acid sequenced was obtained, with optional collection
                 code.
@@ -3069,32 +3043,27 @@ Comment         the complete list of allowed database types is kept at
 
 -----
 
-{:#dev_stage}
-```
-Qualifier       /dev_stage=
+<pre id="dev_stage"><strong>Qualifier /dev_stage=</strong>
 Definition      if the sequence was obtained from an organism in a specific 
                 developmental stage, it is specified with this qualifier
 Value format    "text"
 Example         /dev_stage="fourth instar larva"
-```
+</pre>
 
 -----
 
-{:#direction}
-```
+<pre id="direction"><strong>Qualifier /direction=</strong>
 Qualifier       /direction=
 Definition      direction of DNA replication
 Value format    left, right, or both where left indicates toward the 5' end of
                 the entry sequence (as presented) and right indicates toward
                 the 3' end
 Example         /direction=LEFT
-```
+</pre>
 
 -----
 
-{:#EC_number}
-```
-Qualifier       /EC_number=
+<pre id="EC_number"><strong>Qualifier /EC_number=</strong>
 Definition      Enzyme Commission number for enzyme product of sequence
 Value format    "text"
 Example         /EC_number="1.1.2.4"
@@ -3112,13 +3081,11 @@ Comment         valid values for EC numbers are defined in the list prepared by 
                 used in the last position instead of a number where the EC number is
                 awaiting assignment. Please note that such incomplete EC numbers 
                 are not approved by NC-IUBMB.
-```
+</pre>
 
 -----
 
-{:#ecotype}
-```
-Qualifier       /ecotype=
+<pre id="ecotype"><strong>Qualifier /ecotype=</strong>
 Definition      a population within a given species displaying genetically 
                 based, phenotypic traits that reflect adaptation to a local habitat.
 Value Format    "text"
@@ -3128,7 +3095,7 @@ Comment         an example of such a population is one that has adapted hairier
                 'Ecotype' is often applied to standard genetic stocks of
                 Arabidopsis thaliana, but it can be applied to any sessile 
                 organism.
-```
+</pre>
 
 -----
 
@@ -3158,14 +3125,12 @@ Comment         used only with the source feature key; source feature
 
 -----
 
-{:#estimated_length}
-```
-Qualifier       /estimated_length=
+<pre id="estimated_length"><strong>Qualifier /estimated_length=</strong>
 Definition      estimated length of the gap in the sequence
 Value format    unknown or <integer>
 Example         /estimated_length=unknown
                 /estimated_length=342
-```
+</pre>
 
 -----
 
@@ -3199,9 +3164,7 @@ Comment         only to be used to describe biological mechanisms such
 
 -----
 
-{:#experiment}
-```
-Qualifier       /experiment=
+<pre id="experiment"><strong>Qualifier /experiment=</strong>
 Definition      a brief description of the nature of the experimental 
                 evidence that supports the feature identification or assignment.
 Value format    "[CATEGORY:]text"
@@ -3223,7 +3186,7 @@ Comment         detailed experimental details should not be included, and would
                 qualifier; value "experimental evidence, no additional details
                 recorded" was used to replace instances of /evidence=EXPERIMENTAL in
                 December 2005
-```
+</pre>
 
 -----
 
@@ -3247,28 +3210,25 @@ Comment         the source feature carrying the /focus qualifier
 
 -----
 
-{:#frequency}
-```
-Qualifier       /frequency=
+<pre id="frequency"><strong>Qualifier /frequency=</strong>
 Definition      frequency of the occurrence of a feature
 Value format    text representing the proportion of a population carrying the
                 feature expressed as a fraction
 Example         /frequency="23/108"
                 /frequency="1 in 12"
                 /frequency=".85"
-```
+</pre>
 
 -----
 
-{:#function}
-```
+<pre id="function"><strong>Qualifier /function=</strong>
 Qualifier       /function=
 Definition      function attributed to a sequence
 Value format    "text"
 Example         function="essential for recognition of cofactor"
 Comment         /function is used when the gene name and/or product name do not 
                 convey the function attributable to a sequence.
-```
+</pre>
 
 -----
 
@@ -3289,13 +3249,11 @@ Comment         This qualifier is used only for <a href="#assembly_gap">assembly
 
 -----
 
-{:#q_gene}
-```
-Qualifier       /gene=
+<pre id="gene"><strong>Qualifier /gene=</strong>
 Definition      symbol of the gene corresponding to a sequence region
 Value format    "text"
 Example         /gene="ilvE"
-```
+</pre>
 
 -----
 
@@ -3334,51 +3292,43 @@ Comment         /germline should not be used to indicate that the source of
 
 -----
 
-{:#haplogroup}
-```
-Qualifier       /haplogroup=
+<pre id="haplogroup"><strong>Qualifier /haplogroup=</strong>
 Definition      name for a group of similar haplotypes that share some
                 sequence variation. Haplogroups are often used to track
                 migration of population groups.
 Value format    "text"
 Example         /haplogroup="H*"
-```
+</pre>
 
 -----
 
-{:#haplotype}
-```
-Qualifier       /haplotype=
+<pre id="haplotype"><strong>Qualifier /haplotype=</strong>
 Definition      name for a combination of alleles that are linked together
                 on the same physical chromosome. In the absence of
                 recombination, each haplotype is inherited as a unit, and may
                 be used to track gene flow in populations.
 Value format    "text"
 Example         /haplotype="Dw3 B5 Cw1 A1"
-```
+</pre>
 
 -----
 
-{:#host}
-```
-Qualifier       /host=
+<pre id="host"><strong>Qualifier /host=</strong>
 Definition      natural (as opposed to laboratory) host to the organism from
                 which sequenced molecule was obtained
 Value format    "text"
 Example         /host="Homo sapiens"
                 /host="Homo sapiens 12 year old girl"
                 /host="Rhizobium NGR234"
-```
+</pre>
 
 -----
 
-{:#identified_by}
-```
-Qualifier       /identified_by= 
+<pre id="identified_by"><strong>Qualifier /identified_by=</strong>
 Definition      name of the expert who identified the specimen taxonomically 
 Value format    "text" 
 Example         /identified_by="John Burns" 
-```
+</pre>
 
 -----
 
@@ -3437,14 +3387,12 @@ Comment         /inference="non-experimental evidence, no additional details
 
 -----
 
-{:#isolate}
-```
-Qualifier       /isolate=
+<pre id="isolate"><strong>Qualifier /isolate=</strong>
 Definition      individual isolate from which the sequence was obtained
 Value format    "text"
 Example         /isolate="Patient #152"
                 /isolate="DGGE band PSBAC-13"
-```
+</pre>
 
 -----
 
@@ -3467,9 +3415,7 @@ Comment         used only with the <a href="#source">source</a> feature key;
 
 -----
 
-{:#lab_host}
-```
-Qualifier       /lab_host=
+<pre id="lab_host"><strong>Qualifier /lab_host=</strong>
 Definition      scientific name of the laboratory host used to propagate the
                 source organism from which the sequenced molecule was obtained
 Value format    "text"
@@ -3480,13 +3426,11 @@ Example         /lab_host="Gallus gallus"
 Comment         the full binomial scientific name of the host organism should
                 be used when known; extra conditional information relating to
                 the host may also be included
-```
+</pre>
 
 -----
 
-{:#lat_lon}
-```
-Qualifier       /lat_lon= 
+<pre id="lat_lon"><strong>Qualifier /lat_lon=</strong>
 Definition      geographical coordinates of the location where the specimen was
                 collected 
 Value format    "text" 
@@ -3494,7 +3438,7 @@ Example         /lat_lon="47.94 N 28.12 W"
                 /lat_lon="45.0123 S 4.1234 E"
 Comment         degrees latitude and longitude in format 
                 "d[d.dddd] N|S d[dd.dddd] W|E" (see the examples)
-```
+</pre>
 
 -----
 
@@ -3539,8 +3483,7 @@ Comment         /locus_tag can be used with any feature that /gene can be used w
 
 -----
 
-{:#macronuclear}
-```
+<pre id="macronuclear"><strong>Qualifier /macronuclear</strong>
 Qualifier       /macronuclear
 Definition      if the sequence shown is DNA and from an organism which 
                 undergoes chromosomal differentiation between macronuclear and
@@ -3548,17 +3491,16 @@ Definition      if the sequence shown is DNA and from an organism which
                 sequence is from macronuclear DNA. 
 Value format    none
 Example         /macronuclear
-```
+</pre>
 
 -----
 
-{:#map}
-```
+<pre id="map"><strong>Qualifier /map=</strong>
 Qualifier       /map=
 Definition      genomic map position of feature
 Value format    "text"
 Example         /map="8q12-q13"
-```
+</pre>
 
 -----
 
@@ -3667,13 +3609,11 @@ Comment         TYPE is a term taken from the INSDC controlled vocabulary for nc
 
 -----
 
-{:#note}
-```
-Qualifier       /note=
+<pre id="note"><strong>Qualifier /note=</strong>
 Definition      any comment or additional information
 Value format    "text"
 Example         /note="This qualifier is equivalent to a comment."
-```
+</pre>
 
 -----
 
@@ -3710,14 +3650,13 @@ Comment         /old_locus_tag can be used with any feature where /<a href="#q_g
 
 -----
 
-{:#q_operon}
-```
+<pre id="operon"><strong>Qualifier /operon=</strong>
 Qualifier       /operon=
 Definition      name of the group of contiguous genes transcribed into a 
                 single transcript to which that feature belongs.
 Value format    "text"
 Example         /operon="lac"
-```
+</pre>
 
 -----
 
@@ -3746,9 +3685,7 @@ Comments        modifier text limited to values from controlled list
 
 -----
 
-{:#organism}
-``` 
-Qualifier       /organism=
+<pre id="organism"><strong>Qualifier /organism=</strong>
 Definition      Definition scientific name or higher-level classification of the 
                 organism or agent that provided the sequenced genetic
                 material.
@@ -3763,20 +3700,18 @@ Comment         includes names for Prokaryotes, Eukaryotes, Viruses, synthetic
                 the organism name which appears on the OS or ORGANISM line 
                 will match the value of the /organism qualifier of the 
                 source key in the simplest case of a one-source sequence. 
-```
+</pre>
 
 -----
 
-{:#partial}
-```
-Qualifier       /partial
+<pre id="partial"><strong>Qualifier /partial</strong>
 Definition      differentiates between complete regions and partial ones
 Value format    none
 Example         /partial
 Comment         not to be used for new entries from 15-DEC-2001;
                 use '<' and '>' signs in the location descriptors to
                 indicate that the sequence is partial. 
-```
+</pre>
 
 -----
 
@@ -3789,9 +3724,7 @@ Comment         used with <a href="#primer_bind">primer_bind</a> key
 
 -----
 
-{:#PCR_primers}
-```
-Qualifier       /PCR_primers=
+<pre id="PCR_primers"><strong>Qualifier /PCR_primers=</strong>
 Definition      PCR primers that were used to amplify the sequence.
                 A single /PCR_primers qualifier should contain all the primers used 
                 for a single PCR reaction. If multiple forward or reverse primers are 
@@ -3814,19 +3747,18 @@ Comment         fwd_seq and rev_seq are both mandatory; fwd_name and rev_name ar
                 The sequences should be given in the IUPAC degenerate-base alphabet,
                 except for the modified bases; those must be enclosed within angle
                 brackets <> 
-```
+</pre>
 
 -----
 
-{:#phenotype}
-```
+<pre id="phenotype"><strong>Qualifier /phenotype=</strong>
 Qualifier       /phenotype=
 Definition      phenotype conferred by the feature, where phenotype is defined as a 
                 physical, biochemical or behavioural characteristic or set of 
                 characteristics
 Value format    "text"
 Example         /phenotype="erythromycin resistance"
-```
+</pre>
 
 -----
 
@@ -3840,15 +3772,13 @@ Example         /plasmid="C-589"
 
 -----
 
-{:#pop_variant}
-```
-Qualifier       /pop_variant=
+<pre id="pop_variant"><strong>Qualifier /pop_variant=</strong>
 Definition      name of subpopulation or phenotype of the sample from which the sequence
                 was derived 
 Value format    "text"
 Example         /pop_variant="pop1" 
                 /pop_variant="Bear Paw"
-```
+</pre>
 
 -----
 
@@ -3865,9 +3795,7 @@ Example         /product="trypsinogen" (when qualifier appears in <a href="#fCDS
 
 -----
 
-{:#protein_id}
-```
-Qualifier       /protein_id=
+<pre id="protein_id"><strong>Qualifier /protein_id=</strong>
 Definition      protein identifier, issued by International collaborators. 
                 this qualifier consists of a stable ID portion (accessioned data
                 before the end of 2018 uses a 3+5 format; from the end of 2018 
@@ -3883,18 +3811,16 @@ Comment         when the protein sequence encoded by the CDS changes, only
                 result will permanently be associated with a given protein;
                 this qualifier is valid only on CDS features which translate
                 into a valid protein. 
-```
+</pre>
 
 -----
 
-{:#proviral}
-```
-Qualifier       /proviral
+<pre id="proviral"><strong>Qualifier /proviral</strong>
 Definition      this qualifier is used to flag sequence obtained from a virus or
                 phage that is integrated into the genome of another organism
 Value format    none
 Example         /proviral
-```
+</pre>
 
 -----
 
@@ -4020,22 +3946,18 @@ Comment         TYPE is a term taken from the INSDC controlled vocabulary for re
 
 -----
 
-{:#replace}
-```
-Qualifier       /replace=
+<pre id="replace"><strong>Qualifier       /replace=</strong>
 Definition      indicates that the sequence identified a feature's intervals is 
                 replaced by the sequence shown in "text"; if no sequence is 
                 contained within the qualifier, this indicates a deletion.
 Value format    "text"
 Example         /replace="a"
                 /replace=""
-```
+</pre>
 
 -----
 
-{:#ribosomal_slippage}
-```
-Qualifier       /ribosomal_slippage
+<pre id="ribosomal_slippage"><strong>Qualifier       /ribosomal_slippage</strong>
 Definition      during protein translation, certain sequences can program
                 ribosomes to change to an alternative reading frame by a 
                 mechanism known as ribosomal slippage 
@@ -4043,17 +3965,15 @@ Value format    none
 Example         /ribosomal_slippage 
 Comment         a join operator,e.g.: [join(486..1784,1787..4810)] should be used 
                 in the CDS spans to indicate the location of ribosomal_slippage 
-```
+</pre>
 
 -----
 
-{:#rpt_family}
-```
-Qualifier       /rpt_family=
+<pre id="rpt_family"><strong>Qualifier /rpt_family=</strong>
 Definition      type of repeated sequence; "Alu" or "Kpn", for example
 Value format    "text"
 Example         /rpt_family="Alu"
-```
+</pre>
 
 -----
 
@@ -4115,13 +4035,12 @@ Comment         many satellites have base composition or other properties
 
 -----
 
-{:#segment}
-```
+<pre id="segment"><strong>Qualifier /segment=</strong>
 Qualifier       /segment=
 Definition      name of viral or phage segment sequenced
 Value format    "text"
 Example         /segment="6"
-```
+</pre>
 
 -----
 
@@ -4240,9 +4159,7 @@ Comment         the comments on /<a href="#clone">clone</a> apply to /sub_clone
 
 -----
 
-{:#submitter_seqid}
-```
-Qualifier       /submitter_seqid=
+<pre id="submitter_seqid"><strong>Qualifier /submitter_seqid=</strong>
 Definition      identifier attributed to each sequence within an assembly. This identifier 
                 is appropriate for WGS, TSA, TLS and CON records. The submitter_seqid should be 
                 unique within the context of a single set of assembled sequences.
@@ -4251,18 +4168,16 @@ Example         /submitter_seqid="NODE_1"
 Comment         The length of the value should be limited to <51 characters. Spaces, greater than (>),
                 left/right square brackets ([ ]) and vertical bar (|) in addition to
                 double quotation marks (") can not be used for the value of /submitter_seqid qualifier.
-```
+</pre>
 
 -----
 
-{:#sub_species}
-```
-Qualifier       /sub_species=
+<pre id="sub_species"><strong>Qualifier /sub_species=</strong>
 Definition      name of sub-species of organism from which sequence was
                 obtained
 Value format    "text"
 Example         /sub_species="lactis"
-```
+</pre>
 
 -----
 
@@ -4296,23 +4211,21 @@ Comment         it is recommended that the amino acid sequence corresponding
 
 -----
 
-{:#tissue_lib}
-```
+<pre id="tissue_lib"><strong>Qualifier /tissue_lib=</strong>
 Qualifier       /tissue_lib=
 Definition      tissue library from which sequence was obtained
 Value format    "text"
 Example         /tissue_lib="tissue library 772"
-```
+</pre>
 
 -----
 
-{:#tissue_type}
-```
+<pre id="tissue_type"><strong>Qualifier /tissue_type=</strong>
 Qualifier       /tissue_type=
 Definition      tissue type from which the sequence was obtained
 Value format    "text"
 Example         /tissue_type="liver"
-```
+</pre>
 
 -----
 
