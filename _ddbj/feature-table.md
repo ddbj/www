@@ -3127,7 +3127,7 @@ Comment         used only with the source feature key; source feature
 
 <pre id="estimated_length"><strong>Qualifier /estimated_length=</strong>
 Definition      estimated length of the gap in the sequence
-Value format    unknown or <integer>
+Value format    unknown or &lt;integer&gt;
 Example         /estimated_length=unknown
                 /estimated_length=342
 </pre>
