@@ -98,13 +98,12 @@ tab_menu:
 lang: ja
 ---
 
-DDBJ への新規登録で使用を推奨する qualifier key を以下に挙げています。 より詳しい INSDC qualifier key に関する情報は, Feature Table Definition の [7.3.1 Qualifier List](/ddbj/feature-table.html#7.3.1) をご参照ください。 
+DDBJ への新規登録で使用を推奨する qualifier key を以下に挙げています。
+より詳しい INSDC qualifier key に関する情報は, Feature Table Definition の [7.3.1 Qualifier List](/ddbj/feature-table.html#7.3.1) をご参照ください。 
 
 ## Feature/Qualifier 対応 <a name="usage"></a>
 
-Feature/Qualifier 対応一覧表には、DDBJ へ登録を推奨する feature と qualifier の組み合わせを示しています。
-
-[Feature/Qualifier対応一覧表](https://drive.google.com/open?id=1D4urG81gksPJSfxlsJXeHLaUnz2VfC\\\_C)![]({{ site.baseurl }}/assets/images/parts/pdf.png "pdficon"){:.pdficon}(2018.12.20)
+[Feature/Qualifier 対応一覧表](https://docs.google.com/spreadsheets/u/3/d/1qosakEKo-y9JjwUO_OFcmGCUfssxhbFAm5NXUAnT3eM/edit)には、DDBJ へ登録を推奨する feature と qualifier の組み合わせを示しています。
 
 INSDC において記載可能な feature と qualifier の組み合わせに関しましては、[Feature Table Definition](/ddbj/feature-table.html) の [7.2 Appendix II: Feature keys reference](/ddbj/feature-table.html#7.2) をご参照ください。 
 
@@ -158,6 +157,11 @@ chromosome<span class="right-alignment">[Feature Table Definition](/ddbj/feature
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション( " ) 不可)  |
   |  例  |  1  |
 
+circular_RNA<span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#circular_RNA)</span>
+: |  定義  |  その feature が circular RNA 形成を経て backsplicing によって生じた RNA 転写産物であることを示します。  |
+  |  書式  |  値なし  |
+  |  例  |  backsplicing によって産物を生じた場合に [CDS](/ddbj/features.html#cds), [mRNA](/ddbj/features.html#mRNA), [tRNA](/ddbj/features.html#tRNA) で記載します。その [location](/ddbj/location.html) は join により、通常と異なる順番でつながっていることが示されていなければなりません。  |
+
 clone<span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#clone)</span>
 : |  定義  |  配列の得られた clone の名称  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション( " ) 不可)  |
@@ -189,7 +193,7 @@ compare<span class="right-alignment">[Feature Table　Definition](/ddbj/feature-
   |  例  |  AB123456.1  |
 
 country<span class="right-alignment">[Feature　Table Definition](/ddbj/feature-table.html#country)</span>
-: |  定義  |  (疫学的, あるいは, 個体群研究において)配列サンプルを得た地域を 政治上の国, 大洋, または, 海, の名称で示し,続けて地方・地域を示します。  |
+: |  定義  |  疫学的、あるいは、個体群研究において配列サンプルを得た地域を 政治上の国、大洋、または、海の名称で示し、続けて地方・地域を示します。  |
   |  書式  |  &lt;国名&gt;[:&lt;詳細な地名&gt;] (全角, ダブルクォーテーション ( " )  不可)  |
   |  例  |  Japan:Kanagawa, Hakone, Lake Ashi  |
   |  備考  |  国名は[国名リスト](/ddbj/country.html)から選択します。  |
@@ -412,9 +416,9 @@ organelle<span class="right-alignment">[Feature Table Definition](/ddbj/feature-
   |  書式  |  以下のオルガネラタイプから選択します。<br>{::nomarkdown}<ul><li>mitochondrion</li><li>mitochondrion:kinetoplast</li><li>hydrogenosome</li><li>plastid:chloroplast</li><li>plastid:apicoplast</li><li>plastid:chromoplast</li><li>plastid:cyanelle</li><li>plastid:leucoplast</li><li>plastid:proplastid</li><li>plastid</li><li>chromatophore</li><li>nucleomorph</li></ul>{:/} |
 
 organism<span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#organism)</span>
-: |  定義  |  配列の得られた生物の学名  |
+: |  定義  |  配列決定された試料の元となる生物の学名、または、上位分類、あるいは、物質の名称。  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
-  |  例  |  Homo sapiens  |
+  |  例  |  Homo sapiens<br>Lactobacillaceae bacterium<br>West Nile virus<br>synthetic construct<br>uncultured bacterium  |
   |  備考  |  詳しくは, [Organism Qualifier について](/ddbj/organism.html)を参照して下さい。  |
 
 PCR_conditions<span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#PCR\\\_conditions)</span>

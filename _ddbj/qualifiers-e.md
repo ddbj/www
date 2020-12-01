@@ -98,23 +98,15 @@ tab_menu:
 lang: en
 ---
 
-The qualifier keys that are used and recommended for DDBJ new
-submissions are as follows.  
-For further information of INSDC qualifier keys, read [Feature Table
-Definition](/ddbj/feature-table-e.html): [7.3.1 Qualifier
-List](/ddbj/feature-table-e.html#7.3.1).
+The qualifier keys that are used and recommended for DDBJ new submissions are as follows.
+For further information of INSDC qualifier keys, read [Feature Table Definition](/ddbj/feature-table-e.html): [7.3.1 Qualifier List](/ddbj/feature-table-e.html#7.3.1).
 
 ## Feature/Qualifier Usage Matrix <a name="usage"></a>
 
-The chart below explains recommended combinations of feature and
+The chart, [Feature/Qualifier usage matrix](https://docs.google.com/spreadsheets/u/3/d/1qosakEKo-y9JjwUO_OFcmGCUfssxhbFAm5NXUAnT3eM/edit), explains recommended combinations of feature and
 qualifier keys for DDBJ submissions.
 
-[Feature/Qualifier usage matrix ![]({{ site.baseurl }}/assets/images/parts/pdf.png "pdficon"){:.pdficon}](https://drive.google.com/open?id=1b4TRlgUIyMi9f_CryLLTiBkgBn0lnNF7)(December 20, 2018)
-
-For more detail of available combinations of feature and qualifier keys
-in INSDC entries, read: [Feature Table
-Definition](/ddbj/feature-table-e.html): [7.2 Appendix II: Feature keys
-reference](/ddbj/feature-table-e.html#7.2).
+For more detail of available combinations of feature and qualifier keys in INSDC entries, read: [Feature Table Definition](/ddbj/feature-table-e.html): [7.2 Appendix II: Feature keys reference.](/ddbj/feature-table-e.html#7.2).
 
 ## Definision of Qualifier key
 
@@ -182,6 +174,13 @@ chromosome<span class="right-alignment">[Feature Table Definition](/ddbj/feature
 | Example      | 1                                                                        |
 
 
+circular_RNA<span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#circular_RNA)</span>
+: 
+| Definition   | indicates that exons are out-of-order or overlapping because this spliced RNA product is a circular RNA created by backsplicing  |
+| Value format | no value. |
+| Example      | should be used on features such as [CDS](/ddbj/features-e.html#cds), [mRNA](/ddbj/features-e.html#mRNA), [tRNA](/ddbj/features-e.html#tRNA) and others that are produced as a result of a backsplicing event. This qualifier should be used only when the splice event is indicated by the "join" operator in [the feature location](/ddbj/location.html).  |
+
+
 clone<span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#clone)</span>
 : 
 | Definition   | clone from which the sequence was obtained    |
@@ -226,7 +225,7 @@ compare<span class="right-alignment">[Feature Table Definition](/ddbj/feature-ta
 
 country<span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#country)</span>
 : 
-| Definition   | locality of isolation of the sequenced organism indicated in terms of political names for nations, oceans or seas, followed by regions and localities |
+| Definition   | locality of isolation of the sequenced sample indicated in terms of political names for nations, oceans or seas, followed by regions and localities  |
 | Value format | \<country>[:\<free-text for geographical name>]                         |
 | Example      | Japan:Kanagawa, Hakone, Lake Ashi                              |
 | Comment      | any \<country> from [the country list](/ddbj/country-e.html).               |
@@ -536,9 +535,9 @@ organelle<span class="right-alignment">[Feature Table Definition](/ddbj/feature-
 
 organism<span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#organism)</span>
 :     
-| Definition   | The scientific name of the organism that provided the sequenced genetic material.              |
+| Definition   | scientific name or higher-level classification of the organism or agent that provided the sequenced genetic material.  |
 | Value format | \<text>, excluding double quotation mark (")                 |
-| Example      | Homo sapiens                    |
+| Example      | Homo sapiens<br>Lactobacillaceae bacterium<br>West Nile virus<br>synthetic construct<br>uncultured bacterium |
 | Comment      | For further information of this Qualifier key read [Organism Qualifier](/ddbj/organism-e.html) |
 
 
