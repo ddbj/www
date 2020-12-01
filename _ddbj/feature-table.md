@@ -3243,7 +3243,7 @@ Example         /gap_type="between scaffolds"
                 /gap_type="within scaffold"
 Comment         This qualifier is used only for <a href="#assembly_gap">assembly_gap</a> features and its values
                 are controlled by the AGP Specification version 2.1:
-                <a href="https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/">https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/</a>
+                <a href="https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/"ma>https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/</a>
                 Please also visit: <a href="http://www.insdc.org/controlled-vocabulary-gaptype-qualifier">http://www.insdc.org/controlled-vocabulary-gaptype-qualifier</a>
 </pre>
 
@@ -3455,7 +3455,7 @@ Example         /linkage_evidence="paired-ends"
                 /linkage_evidence="within clone"
 Comment         This qualifier is used only for <a href="#assembly_gap">assembly_gap</a> features and its values are
                 controlled by the AGP Specification version 2.1:
-                <a href="https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/">https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/</a>
+                <a href="https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/"ma>https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/</a>
                 Please also visit: <a href="http://www.insdc.org/controlled-vocabulary-linkageevidence-qualifier">http://www.insdc.org/controlled-vocabulary-linkageevidence-qualifier</a>
 </pre>
 
@@ -3598,7 +3598,7 @@ Example         /ncRNA_class="miRNA"
                 /ncRNA_class="scRNA"       
 Comment         TYPE is a term taken from the INSDC controlled vocabulary for ncRNA
                 classes. For a complete list of supported values, please see:
-                <a href="http://www.insdc.org/documents/ncrna-vocabulary">http://www.insdc.org/documents/ncrna-vocabulary</a>;
+                <a href="http://www.insdc.org/documents/ncrna-vocabulary"ma>http://www.insdc.org/documents/ncrna-vocabulary</a>;
 
                 ncRNA classes not yet in the INSDC /ncRNA_class controlled
                 vocabulary can be annotated by entering
@@ -3815,7 +3815,7 @@ Comment         when the protein sequence encoded by the CDS changes, only
 
 -----
 
-<pre id="provi&lt;al"><strong>Qualifier /proviral</stro&gt;g>
+<pre id="proviral"><strong>Qualifier /proviral</strong>
 Definition      this qualifier is used to flag sequence obtained from a virus or
                 phage that is integrated into the genome of another organism
 Value format    none
@@ -4121,7 +4121,7 @@ Comment         the /specimen_voucher qualifier is intended to annotate a
                 a curated collection;
                 there are three forms of specimen_voucher qualifiers; if the
                 text of the qualifier includes one or more colons it is a
-                'structu&lt;ed voucher'; structured vouchers incl&gt;de
+                'structured voucher'; structured vouchers include 
                 institution-codes (and optional collection-codes) taken from a
                 controlled vocabulary maintained by the INSDC that denotes the
                 museum or herbarium collection where the specimen resides;
@@ -4572,5 +4572,5 @@ outside of the cycle of the Feature Table document release. See also <a href="ht
 with controlled vocabularies in the Feature Table document.
 From December 2016 a complete list of the genetic codes will also be maintained outside 
 of the cycle of the Feature Table document release at:
-<a href="http://www.insdc.org/genetic-code-tables">http://www&lt;insdc.org/genetic-code-tables<&gt;a>
+<a href="http://www.insdc.org/genetic-code-tables">http://www.insdc.org/genetic-code-tables</a>
 </pre>
