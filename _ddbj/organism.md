@@ -400,7 +400,10 @@ taxonomy database 登録申請のための参考情報
 : 推定可能な範囲での taxonomic lineage をお知らせください。
 
 種を記載した論文<a name="ref"></a>  
-: 提唱中の新種学名<a name="propose"></a><br>提唱する新種の名称に関しては、別途、taxonomy database でも管理しますので、お知らせください。<br>提唱する新種の名称が文献に公表された際、あるいは、名称が変更になった場合、DDBJ アップデート係![]({{ site.baseurl }}/assets/images/ddbj/ad_updt1.gif){:.life-size}までご連絡ください。
+: すでに種名が発表されている場合、記載文献を英語でお知らせください。
+
+提唱中の新種学名<a name="propose"></a>
+: 提唱する新種の名称に関しては、別途、taxonomy database でも管理しますので、お知らせください。<br>提唱する新種の名称が文献に公表された際、あるいは、名称が変更になった場合、DDBJ アップデート係![]({{ site.baseurl }}/assets/images/ddbj/ad_updt1.gif){:.life-size}までご連絡ください。
 
 以前に登録した配列のアクセッション番号<a name="acc"></a>   
 : 由来生物名が同一である塩基配列データを DDBJ/EMBL/GenBank に登録済みでしたら、アクセッション番号とともに、その旨をお知らせください。
