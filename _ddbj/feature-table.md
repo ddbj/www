@@ -98,16 +98,14 @@ tab_menu:
 lang: ja
 ---
 
-The original site; [The DDBJ/ENA/GenBank Feature Table Definition](http://www.insdc.org/documents/feature-table) Version 10.9 November 2019
+The original site; [The DDBJ/ENA/GenBank Feature Table Definition](http://www.insdc.org/documents/feature-table) Version 11.0 October 2020
 
 ```
 DDBJ/ENA/GenBank Feature Table Definition
 Feature Table:
 Definition
 
-Version 10.9 November 2019
-
-
+Version 11.0 October 2020
 
 DNA Data Bank of Japan, Mishima, Japan.
 EMBL-EBI, European Nucleotide Archive, Cambridge, UK.
@@ -2510,6 +2508,7 @@ Definition            mature transfer RNA, a small RNA molecule (75-85 bases
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#anticodon">anticodon</a>=(pos:&lt;location&gt;,aa:&lt;amino_acid&gt;,seq:&lt;text&gt;)
+                      /<a href="#circular_RNA">circular_RNA</a>
                       /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
@@ -2772,7 +2771,7 @@ Example         /anticodon=(pos:34..36,aa:Phe,seq:aaa)
 {:#artificial_location}
 ```
 Qualifier       /artificial_location
-Definition      indicates that location of the CDS or mRNA is modified to adjust
+Definition      indicates that location of the <a href="#fCDS">CDS</a> or <a href="#mRNA">mRNA</a> is modified to adjust
                 for the presence of a frameshift or internal stop codon and not
                 because of biological processing between the regions.
 Value format    "heterogeneous population sequenced", "low-quality sequence region"
@@ -2840,6 +2839,25 @@ Definition      chromosome (e.g. Chromosome number) from which
                 the sequence was obtained
 Value format    "text"
 Example         /chromosome="1"
+```
+
+-----
+
+{:#circular_RNA}
+```
+Qualifier       /circular_RNA
+Definition      indicates that exons are out-of-order or overlapping 
+                because this spliced RNA product is a circular RNA 
+                (circRNA) created by backsplicing, for example when 
+                a downstream exon in the gene is located 5' of an 
+                upstream exon in the RNA product
+Value format    none
+Example         /circular_RNA
+Comment         Comment should be used on features such as <a href="#fCDS">CDS</a>, <a href="#mRNA">mRNA</a>, <a href="#tRNA">tRNA</a> and other 
+                features that are produced as a result of a backsplicing event. 
+                This qualifier should be used only when the splice event is 
+                indicated in the "join" operator, 
+                eg join(101627..101652,102190..102421,73380..73493)
 ```
 
 -----
@@ -2973,7 +2991,7 @@ Comment         This qualifier may be used on the following features:
 -----
 
 <pre id="country"><strong>Qualifier       /country=</strong>
-Definition      locality of isolation of the sequenced organism indicated in
+Definition      locality of isolation of the sequenced sample indicated in
                 terms of political names for nations, oceans or seas, followed
                 by regions and localities
 Value format    "&lt;country_value&gt;[:&lt;region&gt;][, &lt;locality&gt;]" where 
@@ -3731,13 +3749,20 @@ Comments        modifier text limited to values from controlled list
 {:#organism}
 ``` 
 Qualifier       /organism=
-Definition      scientific name of the organism that provided the 
-                sequenced genetic material. 
+Definition      Definition scientific name or higher-level classification of the 
+                organism or agent that provided the sequenced genetic
+                material.
 Value format    "text"
 Example         /organism="Homo sapiens"
-Comment         the organism name which appears on the OS or ORGANISM line 
+                /organism="Lactobacillaceae bacterium"
+                /organism="West Nile virus"
+                /organism="synthetic construct"
+                /organism="uncultured bacterium"
+Comment         includes names for Prokaryotes, Eukaryotes, Viruses, synthetic 
+                sequences, uncultured samples, and unclassified organisms. 
+                the organism name which appears on the OS or ORGANISM line 
                 will match the value of the /organism qualifier of the 
-                source key in the simplest case of a one-source sequence.  
+                source key in the simplest case of a one-source sequence. 
 ```
 
 -----
