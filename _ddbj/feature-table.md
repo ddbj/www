@@ -2771,7 +2771,7 @@ Value format    "heterogeneous population sequenced", "low-quality sequence regi
 Example         /artificial_location="heterogeneous population sequenced"
                 /artificial_location="low-quality sequence region"
 Comment         expected to be used only for genome-scale annotation.
-```
+</pre>
 
 -----
 
