@@ -2972,7 +2972,7 @@ Definition      locality of isolation of the sequenced sample indicated in
                 by regions and localities
 Value format    "&lt;country_value&gt;[:&lt;region&gt;][, &lt;locality&gt;]" where 
                 country_value is any value from the controlled vocabulary at 
-                <a href="http://www.insdc.org/documents/country-qualifier-vocabulary" target="_brank">http://www.insdc.org/documents/country-qualifier-vocabulary</a>
+                <a href="http://www.insdc.org/documents/country-qualifier-vocabulary">http://www.insdc.org/documents/country-qualifier-vocabulary</a>
 Example         /country="Canada:Vancouver"
                 /country="France:Cote d'Azur, Antibes"
                 /country="Atlantic Ocean:Charlie Gibbs Fracture Zone"
@@ -3023,7 +3023,7 @@ Comment         the /culture_collection qualifier should be used to annotate
                 culture_id and institution_code are mandatory, collection_code
                 is optional; institution code and collection code are taken
                 from a controlled vocabulary maintained by the INSDC.
-                <a href="http://www.insdc.org/controlled-vocabulary-culturecollection-qualifier" target="_brank">http://www.insdc.org/controlled-vocabulary-culturecollection-qualifier</a>
+                <a href="http://www.insdc.org/controlled-vocabulary-culturecollection-qualifier">http://www.insdc.org/controlled-vocabulary-culturecollection-qualifier</a>
 </pre>
 
 -----
@@ -3038,7 +3038,7 @@ Value format    "&lt;database:identifier&gt;" where database is
                 database.
 Example         /db_xref="UniProtKB/Swiss-Prot:P28763"
 Comment         the complete list of allowed database types is kept at 
-                <a href="http://www.insdc.org/db_xref.html" target="_brank">http://www.insdc.org/db_xref.html</a>
+                <a href="http://www.insdc.org/db_xref.html">http://www.insdc.org/db_xref.html</a>
 </pre>
 
 -----
@@ -3107,7 +3107,7 @@ Definition      identifies sequences derived by direct molecular
                 reliable identification of the source organism.
                 Environmental samples include clinical samples,
                 gut contents, and other sequences from anonymous
-                organisms that may be associated with a particular
+                organisms&lt;that may be associated with a particu&gt;ar
                 host. They do not include endosymbionts that can be
                 reliably recovered from a particular host, organisms
                 from a readily identifiable but uncultured field sample
@@ -3158,7 +3158,7 @@ Comment         only to be used to describe biological mechanisms such
                 /<a href="#note">note</a>="TAA stop codon is completed by addition of 3' A residues to 
                 mRNA".
                 - must not be used for ribosomal slippage, instead use join operator, 
-                  e.g.: CDS   join(486..1784,1787..4810)
+               &lt;  e.g.: CDS   join(486..1784,1787..48&gt;0)
                               /note="ribosomal slip on tttt sequence at 1784..1787"
 </pre>
 
@@ -3173,7 +3173,7 @@ Value format    "[CATEGORY:]text"
                 "DESCRIPTION" support for a broad concept of function such as that 
                 based on phenotype, genetic approach, biochemical function, pathway
                 information, etc.
-                "EXISTENCE" support for the known or inferred existence of the product
+                "EXISTENCE" support for the k&lt;own or inferred existence of the prod&gt;ct
                 where text is free text (see examples)
 Example         /experiment="5' RACE"
                 /experiment="Northern blot [DOI: 12.3456/FT.789.1.234-567.2010]"
@@ -3244,7 +3244,7 @@ Example         /gap_type="between scaffolds"
 Comment         This qualifier is used only for <a href="#assembly_gap">assembly_gap</a> features and its values
                 are controlled by the AGP Specification version 2.1:
                 <a href="https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/" target="_blank">https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/</a>
-                Please also visit: <a href="http://www.insdc.org/controlled-vocabulary-gaptype-qualifier" target="_brank">http://www.insdc.org/controlled-vocabulary-gaptype-qualifier</a>
+                Please also visit: <a href="http://www.insdc.org/controlled-vocabulary-gaptype-qualifier">http://www.insdc.org/controlled-vocabulary-gaptype-qualifier</a>
 </pre>
 
 -----
@@ -3379,10 +3379,10 @@ Example         /inference="COORDINATES:profile:tRNAscan:2.1"
                 /inference="alignment:Splign:1.26p:RefSeq:NM_000041.2,INSD:BC003557.1"
 Comment         /inference="non-experimental evidence, no additional details 
                 recorded" was used to replace instances of 
-                /evidence=NOT_EXPERIMENTAL in December 2005; any database ID  can be
+                /evidence=NOT_EXPERIMENTAL &lt;n December 2005; any database ID  can&gt;be
                 used in /inference= qualifier; recommendations for choice of resource 
                 acronym for [EVIDENCE_BASIS] are provided in the /inference qualifier 
-                vocabulary recommendation document (<a href="http://www.insdc.org/inference.html" target="_brank">http://www.insdc.org/inference.html</a>);
+                vocabulary recommendation document (<a href="http://www.insdc.org/inference.html">http://www.insdc.org/inference.html</a>);
 </pre>
 
 -----
@@ -3456,7 +3456,7 @@ Example         /linkage_evidence="paired-ends"
 Comment         This qualifier is used only for <a href="#assembly_gap">assembly_gap</a> features and its values are
                 controlled by the AGP Specification version 2.1:
                 <a href="https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/" target="_blank">https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/</a>
-                Please also visit: <a href="http://www.insdc.org/controlled-vocabulary-linkageevidence-qualifier" target="_brank">http://www.insdc.org/controlled-vocabulary-linkageevidence-qualifier</a>
+                Please also visit: <a href="http://www.insdc.org/controlled-vocabulary-linkageevidence-qualifier">http://www.insdc.org/controlled-vocabulary-linkageevidence-qualifier</a>
 </pre>
 
 -----
@@ -3517,7 +3517,7 @@ Examples        /mating_type="MAT-1"
                 /mating_type="even"
 Comment         /mating_type="male" and /mating_type="female" are
                 valid in the prokaryotes, but not in the eukaryotes;
-                for more information, see the entry for /<a href="#sex">sex</a>.
+                for more information, s&lt;e the entry for /<a href="#sex">sex</&gt;>.
 </pre>
 
 -----
@@ -3584,14 +3584,14 @@ Comment         all values refer to the in vivo or synthetic molecule for
                 "unassigned DNA", "unassigned RNA" should be applied where in
                 vivo molecule is unknown
                 Please also visit:
-                <a href="http://www.insdc.org/controlled-vocabulary-moltype-qualifier" target="_brank">http://www.insdc.org/controlled-vocabulary-moltype-qualifier</a>
+                <a href="http://www.insdc.org/controlled-vocabulary-moltype-qualifier">http://www.insdc.org/controlled-vocabulary-moltype-qualifier</a>
 </pre>
 
 -----
 
 <pre id="ncRNA_class"><strong>Qualifier       /ncRNA_class=</strong>
 Definition      a structured description of the classification of the
-                non-coding RNA described by the ncRNA parent key
+                non-cod&lt;ng RNA described by the ncRNA parent &gt;ey
 Value format   "TYPE"
 Example         /ncRNA_class="miRNA"
                 /ncRNA_class="siRNA"
@@ -3680,7 +3680,7 @@ Examples        /organelle="chromatophore"
                 /organelle="plastid:leucoplast"
                 /organelle="plastid:proplastid"
 Comments        modifier text limited to values from controlled list
-                Please also visit: <a href="http://www.insdc.org/controlled-vocabulary-organelle-qualifier" target="_brank">http://www.insdc.org/controlled-vocabulary-organelle-qualifier</a>
+                Please also visit: <a href="http://www.insdc.org/controlled-vocabulary-organelle-qualifier">http://www.insdc.org/controlled-vocabulary-organelle-qualifier</a>
 </pre>
 
 -----
@@ -3719,7 +3719,7 @@ Comment         not to be used for new entries from 15-DEC-2001;
 Definition      description of reaction conditions and components for PCR 
 Value format    "text" 
 Example         /PCR_conditions="Initial denaturation:94degC,1.5min"
-Comment         used with <a href="#primer_bind">primer_bind</a> key
+Comment         used with <&lt; href="#primer_bind">primer_bind</a> &gt;ey
 </pre>
 
 -----
@@ -3802,7 +3802,7 @@ Definition      protein identifier, issued by International collaborators.
                 new accessions may be extended to a 3+7 accession format with 
                 3 position letters and 7 numbers) plus a version number after 
                 the decimal point.
-Value format    <identifier>
+Value format    &lt;identifier&gt;
 Example         /protein_id="AAA12345.1"
                 /protein_id="AAA1234567.1"
 Comment         when the protein sequence encoded by the CDS changes, only 
@@ -3815,7 +3815,7 @@ Comment         when the protein sequence encoded by the CDS changes, only
 
 -----
 
-<pre id="proviral"><strong>Qualifier /proviral</strong>
+<pre id="provi&lt;al"><strong>Qualifier /proviral</stro&gt;g>
 Definition      this qualifier is used to flag sequence obtained from a virus or
                 phage that is integrated into the genome of another organism
 Value format    none
@@ -3854,7 +3854,7 @@ Example         /pseudogene="processed"
                 /pseudogene="unknown"
 
 Comment         TYPE is a term taken from the INSDC controlled vocabulary for pseudogenes
-                ( <a href="http://www.insdc.org/documents/pseudogene-qualifier-vocabulary" target="_brank">http://www.insdc.org/documents/pseudogene-qualifier-vocabulary</a> ):
+                ( <a href="http://www.insdc.org/documents/pseudogene-qualifier-vocabulary">http://www.insdc.org/documents/pseudogene-qualifier-vocabulary</a> ):
 
                 processed: the pseudogene has arisen by reverse transcription of a 
                 mRNA into cDNA, followed by reintegration into the genome. Therefore,
@@ -3986,7 +3986,7 @@ Value format    tandem, direct, inverted, flanking, nested, dispersed, terminal,
 Example         /rpt_type=INVERTED
 Comment         the values are case-insensitive, i.e. both "INVERTED" and "inverted" 
                 are valid; For the most current list of allowed values and their definitions 
-                please visit: <a href="http://www.insdc.org/controlled-vocabulary-rpttype-qualifier" target="_brank">http://www.insdc.org/controlled-vocabulary-rpttype-qualifier</a>
+                please visit: <a href="http://www.insdc.org/controlled-vocabulary-rpttype-qualifier">http://www.insdc.org/controlled-vocabulary-rpttype-qualifier</a>
 </pre>
 
 -----
@@ -4030,7 +4030,7 @@ Example         /satellite="satellite: S1a"
 Comment         many satellites have base composition or other properties
                 that differ from those of the rest of the genome that allows
                 them to be identified.
-                Please also visit: <a href="http://www.insdc.org/controlled-vocabulary-satellite-qualifier" target="_brank">http://www.insdc.org/controlled-vocabulary-satellite-qualifier</a>
+                Please also visit: <a href="http://www.insdc.org/controlled-vocabulary-satellite-qualifier">http://www.insdc.org/controlled-vocabulary-satellite-qualifier</a>
 </pre>
 
 -----
@@ -4121,11 +4121,11 @@ Comment         the /specimen_voucher qualifier is intended to annotate a
                 a curated collection;
                 there are three forms of specimen_voucher qualifiers; if the
                 text of the qualifier includes one or more colons it is a
-                'structured voucher'; structured vouchers include
+                'structu&lt;ed voucher'; structured vouchers incl&gt;de
                 institution-codes (and optional collection-codes) taken from a
                 controlled vocabulary maintained by the INSDC that denotes the
                 museum or herbarium collection where the specimen resides;
-                Please also visit: <a href="http://www.insdc.org/controlled-vocabulary-specimenvoucher-qualifier" target="_brank">http://www.insdc.org/controlled-vocabulary-specimenvoucher-qualifier</a>
+                Please also visit: <a href="http://www.insdc.org/controlled-vocabulary-specimenvoucher-qualifier">http://www.insdc.org/controlled-vocabulary-specimenvoucher-qualifier</a>
 </pre>
 
 -----
@@ -4165,7 +4165,7 @@ Definition      identifier attributed to each sequence within an assembly. This 
                 unique within the context of a single set of assembled sequences.
 Value format    "text"
 Example         /submitter_seqid="NODE_1"
-Comment         The length of the value should be limited to <51 characters. Spaces, greater than (>),
+Comment         The length of the value should be limited to &lt;51 characters. Spaces, greater than (&gt;),
                 left/right square brackets ([ ]) and vertical bar (|) in addition to
                 double quotation marks (") can not be used for the value of /submitter_seqid qualifier.
 </pre>
@@ -4257,7 +4257,7 @@ Value format    IUPAC one-letter amino acid abbreviation, "X" is to be used
 Example         /translation="MASTFPPWYRGCASTPSLKGLIMCTW"
 Comment         to be used with <a href="#fCDS">CDS</a> feature only; this is a mandatory qualifier 
                 in the <a href="#fCDS">CDS</a> feature key except where /<a href="#pseudogene">pseudogene</a>="TYPE" or /<a href="#pseudo">pseudo</a>
-                is shown; see /<a href="#transl_table">transl_table</a> for definition and location of genetic
+                is shown; see /<a href="#transl_table">transl_table</a> for definition and location of genetic 
                 code tables. 
 </pre>
 
@@ -4472,7 +4472,7 @@ Reference       IUPAC-IUB Joint Commission on Biochemical Nomenclature.
                 Peptides.
                 Eur. J. Biochem. 138:9-37(1984).
                 IUPAC-IUBMB JCBN Newsletter, 1999        
-                <a href="http://www.chem.qmul.ac.uk/iubmb/newsletter/1999/item3.html" target="_brank">http://www.chem.qmul.ac.uk/iubmb/newsletter/1999/item3.html</a>
+                <a href="http://www.chem.qmul.ac.uk/iubmb/newsletter/1999/item3.html">http://www.chem.qmul.ac.uk/iubmb/newsletter/1999/item3.html</a>
 Scope           /<a href="#anticodon">anticodon</a>, /<a href="#transl_except">transl_except</a>
 Contact         EMBL-EBI
 
@@ -4552,7 +4552,7 @@ Listing (note that the abbreviations are legal values for amino acids, not the f
 <pre>Authority      International Nucleotide Sequence Database Collaboration
 Contact        NCBI
 Scope          /<a href="#transl_table">transl_table</a> qualifier
-URL            <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi?mode=c" target="_brank">https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi?mode=c</a>
+URL            <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi?mode=c">https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi?mode=c</a>
 URL            <a href="http://www.insdc.org/genetic-code-tables">http://www.insdc.org/genetic-code-tables</a>
 </pre>
 
@@ -4561,16 +4561,16 @@ URL            <a href="http://www.insdc.org/genetic-code-tables">http://www.ins
 <pre>Authority       International Nucleotide Sequence Database Collaboration
 Contact         INSDC member databases
 Scope           /country qualifier
-URL             <a href="http://www.insdc.org/country" target="_brank">http://www.insdc.org/country</a>
+URL             <a href="http://www.insdc.org/country">http://www.insdc.org/country</a>
 
 </pre>
 
 #### 7.4.7 Announces <a name="7.4.7"></a>
 
 <pre>Additional controlled vocabulary terms for qualifier values might be added
-outside of the cycle of the Feature Table document release. See also <a href="http://www.insdc.org" target="_brank">www.insdc.org</a>
+outside of the cycle of the Feature Table document release. See also <a href="http://www.insdc.org">www.insdc.org</a>
 with controlled vocabularies in the Feature Table document.
 From December 2016 a complete list of the genetic codes will also be maintained outside 
 of the cycle of the Feature Table document release at:
-<a href="http://www.insdc.org/genetic-code-tables" target="_brank">http://www.insdc.org/genetic-code-tables</a>
+<a href="http://www.insdc.org/genetic-code-tables">http://www&lt;insdc.org/genetic-code-tables<&gt;a>
 </pre>
