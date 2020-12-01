@@ -360,10 +360,10 @@ lang: ja
         </div>
         </li>      
         <li class="staff">
-        <p class="photo"><img src="{{ site.baseurl }}/assets/images/staff/okada.jpg" title="岡田 陵平"></p>
+        <p class="photo"><img src="{{ site.baseurl }}/assets/images/staff/ytakahashi.jpg" title="高橋 良昌"></p>
         <div class="explanation">
-            <p class="name">岡田 陵平</p>
-            <p class="name">OKADA Ryohei</p>
+            <p class="name">高橋 良昌</p>
+            <p class="name">TAKAHASHI Yoshimasa</p>
         </div>
         </li>   
         <li class="staff">
