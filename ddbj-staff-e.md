@@ -321,9 +321,9 @@ lang: en
         </div>
         </li>      
         <li class="staff">
-        <p class="photo"><img src="{{ site.baseurl }}/assets/images/staff/okada.jpg" title="OKADA Ryohei"></p>
+        <p class="photo"><img src="{{ site.baseurl }}/assets/images/staff/ytakahashi.jpg" title="TAKAHASHI Yoshimasa"></p>
         <div class="explanation">
-            <p class="name">OKADA Ryohei</p>
+            <p class="name">TAKAHASHI Yoshimasa</p>
         </div>
         </li>   
         <li class="staff">
