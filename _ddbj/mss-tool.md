@@ -136,37 +136,43 @@ related_pages:
     <thead>
       <tr>
       <th>名称</th>
+      <th colspan="2">リンク</th>
       <th>OS</th>
       <th>更新日</th>
       <th>ドキュメント</th>
-      <th>ファイル形式 / 備考</th>
+      <th>ファイル形式/備考</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-      <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/UME_win_V1.49.zip">UME_win_V1.49.zip</a></td>
-      <td>Windows</td>
-      <td rowspan="2">2020/04/07</td>
-      <td rowspan="2"><a href="/ddbj/ume.html">UME ユーザーマニュアル</a></td>
-      <td rowspan="2">zip 形式<br>UMEにはParser / transCheckerが付属しています</td>
+        <td>UME_win_V1.51.zip</td>
+        <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/UME_win_V1.51.zip">FTP</a></td>
+        <td rowspan="4"><a href="https://drive.google.com/drive/u/1/folders/1SlveeY38FdHOrcmgjcVgzrL8RvXlx96g">HTTPS</a></td>  
+        <td>Windows</td>
+        <td rowspan="2">2020/11/25</td>
+        <td rowspan="2"><a href="/ddbj/ume.html">ユーザーマニュアル</a></td>
+        <td rowspan="2">Parser, transChecker 付属</td>
       </tr>
       <tr>
-      <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/UME_unix_V1.49.zip">UME_unix_V1.49.zip</a></td>
-      <td>unix/macOS</td>
+        <td>UME_unix_V1.51.zip</td>
+        <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/UME_unix_V1.51.zip">FTP</a></td>
+        <td>Unix/macOS</td>
       </tr>
       <tr>
-      <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/Parser_V6.62.tar.gz">Parser_V6.62.tar.gz</a></td>
-      <td>unix/macOS</td>
-      <td>2020/04/07</td>
-      <td><a href="/ddbj/parser.html">Parser ユーザーマニュアル</a></td>
-      <td>tar (gzipped) 形式<br>UME を使用する場合は不要です。</td>
+        <td>Parser_V6.65.tar.gz</td>
+        <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/Parser_V6.65.tar.gz">FTP</a></td>
+        <td>Unix/macOS</td>
+        <td>2020/11/25</td>
+        <td><a href="/ddbj/parser.html">ユーザーマニュアル</a></td>
+        <td>UME を使用する場合、不要</td>
       </tr>
       <tr>
-      <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/transChecker_V2.21.tar.gz">transChecker_V2.21.tar.gz</a></td>
-      <td>unix/macOS</td>
-      <td>2017/05/17</td>
-      <td><a href="/ddbj/transchecker.html">transChecker ユーザーマニュアル</a></td>
-      <td>tar (gzipped) 形式<br>UME を使用する場合は不要です。</td>
+        <td>transChecker_V2.22.tar.gz</td>
+        <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/transChecker_V2.22.tar.gz">FTP</a></td>
+        <td>Unix/macOS</td>
+        <td>2020/09/02</td>
+        <td><a href="/ddbj/transchecker.html">ユーザーマニュアル</a></td>
+        <td>UME を使用する場合、不要</td>
       </tr>
     </tbody>
 </table>
