@@ -38,9 +38,9 @@ lang: en
 
 ## Submission Guide <a name="submission"></a>
 
-The JGA accepts only de-identified data approved by NBDC. The users apply for data submission directly to the [NBDC](http://humandbs.biosciencedbc.jp/en/) and the JGA will only accept submissions once the information of a successful application process has been passed from the NBDC to the JGA.
+The JGA accepts only de-identified data approved by NBDC. The users apply for data submission directly to the [NBDC](https://humandbs.biosciencedbc.jp/en/) and the JGA will only accept submissions once the information of a successful application process has been passed from the NBDC to the JGA.
 
-It should be clear from the original consent agreements affiliated to your samples if your data should be subject to controlled access. All data submitted to the JGA has controlled access, which means that access to the data submitted is subject to approval by [NBDC](http://humandbs.biosciencedbc.jp/en/) as a part of a formal application procedure.
+It should be clear from the original consent agreements affiliated to your samples if your data should be subject to controlled access. All data submitted to the JGA has controlled access, which means that access to the data submitted is subject to approval by [NBDC](https://humandbs.biosciencedbc.jp/en/) as a part of a formal application procedure.
 
 Controlled access does not correspond to holding a release prior to publication. All the DDBJ archival resources including the JGA enable you to hold a submission before publication.
 
@@ -48,17 +48,22 @@ Accession numbers are issued to metadata objects with following prefixes.
 
 | Prefix | Metadata object | Number digit | Example         |
 | ------ | --------------- | ------------ | --------------- |
-| JGA    | Submission      | 11           | JGA00000000001  |
-| JGAS   | Study           | 11           | JGAS00000000001 |
-| JGAN   | Sample          | 11           | JGAN00000000001 |
-| JGAX   | Experiment      | 11           | JGAX00000000001 |
-| JGAR   | Data            | 11           | JGAR00000000001 |
-| JGAZ   | Analysis        | 11           | JGAZ00000000001 |
-| JGAD   | Data set        | 11           | JGAD00000000001 |
-| JGAP   | Policy          | 11           | JGAP00000000001 |
+| JGA    | Submission      | 11           | JGA000001  |
+| JGAS   | Study           | 11           | JGAS000001 |
+| JGAN   | Sample          | 11           | JGAN000001 |
+| JGAX   | Experiment      | 11           | JGAX000001 |
+| JGAR   | Data            | 11           | JGAR000001 |
+| JGAZ   | Analysis        | 11           | JGAZ000001 |
+| JGAD   | Data set        | 11           | JGAD000001 |
+| JGAP   | Policy          | 11           | JGAP000001 |
 
 <div class="attention red">
 It is important for making data reusable and reproducible that the processed data on which the conclusions in the related manuscript are based, are registered to JGA. Please submit processed data files such as VCF in Analysis objects.
+</div>
+
+{::options parse_block_html="true" /}
+<div class="attention red">
+After creating a D-way account, it takes about 10 minutes for the D-way account becomes active in the [NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/).
 </div>
 
 Currently, there is no requirement for authors to use a specific JGA accession in their publications. We would recommend that authors use the JGAS (study) accession, which would provide the reader/user with a complete overview of the study and a set of links to all the data from that study.
@@ -221,7 +226,7 @@ XML schema: [JGA.dataset.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
 ### Policy <a name="Policy"></a>
 
-The Policy XML describes the Data Access Agreement (DAA). If only [NBDC policy](http://humandbs.biosciencedbc.jp/en/nbdc-policy) is associated with a submission, submitters do not need to create a new policy.
+The Policy XML describes the Data Access Agreement (DAA). If only [NBDC policy](https://humandbs.biosciencedbc.jp/en/nbdc-policy) is associated with a submission, submitters do not need to create a new policy.
 
 If additional policies are needed, you need to register a policy to NBDC and reference issued JGAP number from submitting data set.
 
