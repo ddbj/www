@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: 
+title: How to check the global IP address of your connection source
 pathname: global-ip-e
 category: jga
 lang: en
