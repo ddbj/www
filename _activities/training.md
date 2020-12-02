@@ -15,8 +15,8 @@ DDBJ が主催する講習会の他に、研究機関の人材育成や大学等
 開催を希望される場合には、[お問い合わせ](/contact-ddbj.html) の「講習会」からご連絡ください。
 
 依頼を受けて開催した講習会の例：  
-[第35回 DDBJing 講習会 in 沖縄工業高等専門学校](#35)  
-[第32回 DDBJing 講習会 in 那覇植物防疫事務所](#32)
+[第35回 DDBJing 講習会 in 沖縄工業高等専門学校](/activities/training/2017-10-19.html)  
+[第32回 DDBJing 講習会 in 那覇植物防疫事務所](/activities/training/2015-07-29.html)
 
 
 ## D-STEP 講習会 （DDBJ-Supercomputer Training & Educational Program） <a name="d-step"></a>
