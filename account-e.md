@@ -8,36 +8,33 @@ lang: en
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1092WV_aXjA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Create a DDBJ submission account.
+Create a DDBJ account.
 
-## DDBJ submission account <a name="ddbj-submission-account"></a>
+## D-way account <a name="ddbj-submission-account"></a>
 
-At the DNA Data Bank of Japan (DDBJ), BioProject, BioSample, GEA and DRA
-submissions are managed in user's account. This handbook explains how to
-create a submission account.
+Bioinformation and DDBJ Center provides the D-way account system. In the D-way account, you can use BioProject, BioSample, GEA, DRA and JGA databases of DDBJ Center and the NBDC application systems. This handbook explains how to create a D-way account.
 
 {::options parse_block_html="true" /}
 <div class="attention red">
 
-  - Create an account and submit data with the permission of the
-    Principal Investigator (PI).
+  - Create a D-way account and manage data with permission of Principal Investigator (PI).
   - Issued account and password must be maintained securely by users.
   - Account name cannot be changed once it has been created.
+  - It takes about 10 minutes for the created D-way account becoming active in the NBDC application system.
 
 </div>
 
-There are two types of submission account. For submission to the [DDBJ Sequence Read Archive (DRA)](/dra/index-e.html) and [Genomic Expression Archive (GEA)](/gea/index-e.html), registering of center name and public
-key is required.
+DDBJ Center employs scp authenticated by ssh key for transfer of large files. Therefore, you need to register a public key for authentication for using DRA, GEA and JGA services which accompany transfer of large files. In addition, because DRA metadata require a center name, you need to register a center name assigned to your affiliation for using DRA service.
 
 {::nomarkdown}
-{% include image.html url="books/hac01.jpg" caption="Two types of submission account." class="w300" %}
+{% include image.html url="books/hac01.jpg" caption="Service permission of D-way account" class="w300" %}
 {:/}
 
-## Account for BioProject/BioSample submissions <a name="account-for-bioproject-biosample-submissions"></a>
+## Create a D-way account in the website<a name="account-for-bioproject-biosample-submissions"></a>
 
-### Create an account on website <a name="create-an-account-on-website"></a>
+### Create an account on website<a name="create-an-account-on-website"></a>
 
-You can submit to BioProject and BioSample databases in the account created as explained in this chapter.
+By default, you can use BioProject/BioSample/NBDC application systems in the D-way account created on the website.
 
 <div class="attention red">
 For submission to DRA and GEA, you need to register center name and public key.
@@ -46,9 +43,8 @@ For submission to DRA and GEA, you need to register center name and public key.
 Open the submission portal page at
 [https://ddbj.nig.ac.jp/D-way](https://ddbj.nig.ac.jp/D-way/). Click the [Register for a new account] button.
 
-
 {::nomarkdown}
-{% include image.html url="books/account_1_new.png" caption="Create a new submission account" class="w250" %}
+{% include image.html url="books/account_1_new.png" caption="Create a new account" class="w250" %}
 {:/}
 
 Enter necessary information and click the [Continue].
@@ -89,11 +85,11 @@ Set a password longer than 8 characters contains both alphabets and　numbers.
 {:/}
 
 {::nomarkdown}
-{% include image.html url="books/initial.jpg" caption="Can submit to BioProject and BioSample" class="w450" %}
+{% include image.html url="books/initial.jpg" caption="Can submit to BioProject, BioSample and NBDC" class="w450" %}
 {:/}
 
 
-## Enable DRA/GEA submission in account <a name="enable-dra-submission-in-account"></a>
+## Enable DRA/GEA/JGA submission in account <a name="enable-dra-submission-in-account"></a>
 
 For submission to the [DDBJ Sequence Read Archive (DRA)](/dra/index-e.html) and [Genomic Expression Archive (GEA)](/gea/index-e.html), center name and public key should be registered to your account. The center name is abbreviated name of
 organization assigned by the DRA. The public key is used to identify users to access the file submission server.
@@ -225,22 +221,52 @@ Once center name is registered, a public key can be uploaded in the
 it by [Register public key] button.
 
 {::nomarkdown}
-{% include image.html url="books/keyregister.jpg" caption="Register a public key" class="w400" %}
+{% include image.html url="books/keyregister.jpg" caption="Register a public key for authentication" class="w400" %}
 {:/}
 
-Once both center name and public key are registered, you can submit to
+Once both center name and public key for authentication are registered, you can submit to
 the DRA/GEA at menus at top left.
 
 {::nomarkdown}
 {% include image.html url="books/drasub.jpg" caption="Can submit to DRA/GEA in addition to BioProject and BioSample" class="w450" %}
 {:/}
 
+The JGA submissions are not browsable in the D-way web portal (under development). Please use JGA services according to ["JGA submission steps"](/jga/substep-e.html) and ["Download steps"](/jga/download-e.html).
+
 ### Update account <a name="update-account"></a>
 
 Edit account information and update account by [Update] button. The
-registered public key can be overwritten by uploading a new file.
+registered public key for authentication can be overwritten by uploading a new file.
 
-## Convert private key <a name="convert-private-key"></a>
+## Password change<a name="password-change"></a>
+
+Login [D-way](https://ddbj.nig.ac.jp/D-way) and move to the password change page from "Password" menu at top.
+
+{::nomarkdown}
+{% include image.html url="books/pass1.jpg" caption="Move to the password change page" class="w450" %}
+{:/}
+
+Enter a current password (once) and a new password (twice). Change the password by clicking the "Change" button.
+
+{::nomarkdown}
+{% include image.html url="books/pass2.jpg" caption="Enter a current password (once) and a new password (twice)" class="w450" %}
+{:/}
+
+The following message is displayed if the password was changed successfully.
+
+{::nomarkdown}
+{% include image.html url="books/pass3.jpg" caption="Message of successfull password change." class="w450" %}
+{:/}
+
+## Session Expired<a name="session"></a>
+
+After your password was changed, "Session Expired" may be displayed in your web brower. In this case, please access D-way in secret mode ([Google chrome](https://support.google.com/chrome/answer/95464?co=GENIE.Platform%3DDesktop&hl=ja), [Firefox](https://support.mozilla.org/ja/kb/private-browsing-use-firefox-without-history)) or use another browser.
+
+{::nomarkdown}
+{% include image.html url="books/d-way-session.jpg" caption="Session Expired" class="w300" %}
+{:/}
+
+## Convert a private key <a name="convert-private-key"></a>
 
 {::options parse_block_html="true" /}
 <div class="accordion-menu">
