@@ -3,7 +3,7 @@ layout: indexed_content
 title: Example of metadata
 pathname: example-e
 category: dra
-current_tab: home
+current_tab: handbook
 tab_menu:
   - id: home
     title: Home

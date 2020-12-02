@@ -3,7 +3,7 @@ layout: indexed_content
 title: The new JGA system
 pathname: update-202009-e
 category: jga
-current_tab: home
+current_tab: submission
 tab_menu:
   - id: home
     title: Home

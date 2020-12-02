@@ -3,7 +3,7 @@ layout: indexed_content
 title: JGA submission steps
 pathname: submission-step-e
 category: jga
-current_tab: home
+current_tab: submission
 tab_menu:
   - id: home
     title: Home
@@ -36,312 +36,148 @@ tab_menu:
 lang: en
 ---
 
-## JGA overview <a name="overview"></a>
+## Data submission application to NBDC<a name="ds-application"></a>
 
-The [DNA Data Bank of Japan (DDBJ) Center](../) operates the Japanese Genotype-phenotype Archive (JGA) for human genotype and phenotype data in collaboration with [National Bioscience Database Center (NBDC)](http://humandbs.biosciencedbc.jp/en/).
+[Submit a data submission application](https://humandbs.biosciencedbc.jp/data-submission) in [the NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application)</a>. Create a data submitter group before application. After the application is apprived by NBDC, an upload directory will be created in the JGA server.
+
+For application, a D-way account is required. Please obtain [a D-way account](https://ddbj.nig.ac.jp/D-way/) before application.
+
+<p class="attention">After creating a D-way account, it takes about 10 minutes for the D-way account becomes active in the <a href="https://humandbs.ddbj.nig.ac.jp/nbdc/application/">NBDC application system</a>.</p>
 
 {::options parse_block_html="true" /}
 <div class="attention red">
-  - JGA is a controlled-access database and is different from the other INSDC unrestricted-access databases.
-  - Submission account system of the JGA is separated from the [D-way](https://ddbj.nig.ac.jp/D-way/) account system for the other DDBJ Center's unrestricted-access databases.
-  - To submit data to the JGA, an approval from [NBDC](https://humandbs.biosciencedbc.jp/en/data-submission) is necessary.
-  - Login details for the JGA submission account are notified from [NBDC](http://humandbs.biosciencedbc.jp/en).
+After creating a D-way account, it takes about 10 minutes for the D-way account becomes active in the [NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/).
 </div>
 
-This page explains how to submit data to the JGA.  
-For JGA overview, see [this slide (Japanese only)](https://drive.google.com/file/d/12IaBZHub6s9fNK55S0r6x0U7MD2oQsk_).
+This page describes how to submit data to JGA.
 
-## Create metadata by using excel <a name="create-metadata-using-excel"></a>
+## Data submitter group<a name="data-submitter-group"></a>
 
-### Enter metadata into the excel <a name="enter-metadata-into-excel"></a>
+Create a data submitter group before application. In the example group "subgrp1", a researcher (account_b) who applies application and submits data is a group owner and a PI (account_c) is a member.
 
-Download and fill in the metadata in English. For the JGA metadata, see [this page](/jga/download-e.html).
+In the NBDC application system, an account who actually submits an application will automatically become an applicant. If there are submitters other than PI and applicant, include all submitters as members. Emails regarding the submission are sent to members.
+      
+{::nomarkdown}
+{% include image.html url="books/DS-group-e.png" caption="Data submitter group" class="w400" %}
+{:/}
+
+[Start the data submission application process](https://humandbs.biosciencedbc.jp/data-submission) and select the data submitter group.
+
+{::nomarkdown}
+{% include image.html url="books/DS-start-e.png" caption="Start data submission application process" class="w450" %}
+{:/}
+
+{::nomarkdown}
+{% include image.html url="books/DS-group-select-e.png" caption="Select the data submitter group" class="w450" %}
+{:/}
+
+## Data submission application approval<a name="du-approval"></a>
+
+After the application is approved by NBDC, a JGA submission ID (for example, JSUB000353) is issued and a corresponding directory for data upload is created in the JGA server.
+
+{::nomarkdown}
+{% include image.html url="books/DS-approved-e.png" caption="Approval of data submission application" class="w450" %}
+{:/}
+
+{::nomarkdown}
+{% include image.html url="books/DS-JSUB-e.png" caption="Data submission application and JGA submission ID" class="w250" %}
+{:/}
+
+A JGA submission directory is created in "/controlled-access/submission/jga/" of the JGA file server (jga-gw.ddbj.nig.ac.jp), upload metadata and data files to this directory by scp. In this example, the upload directory is "/controlled-access/submission/jga/JSUB000353/".
+
+## Create metadata excel<a name="create-metadata-using-excel"></a>
+
+### Enter metadata in the excel<a name="enter-metadata-into-excel"></a>
+
+Download the excel for metadata description below and enter metadata in English. Regarding metadata, see [this page](/jga/submission.html).
 
 [![JGA metadata excel]({{ site.baseurl }}/assets/images/parts/download.png "JGA metadata excel"){:.w40}]({{ site.baseurl }}/assets/files/submission/JGA_metadata.xlsx)
 
-last updated: 2019-06-07
+last updated: 2020-09-26
 
 {::options parse_block_html="true" /}
 <div class="attention red">
-The excel file name must end with "\_metadata.xlsx". Before the "\_metadata", Submission ID and NBDC hum number can be freely added.
+Data files to be uploaded to JGA should not have spaces in their filenames.
 </div>
-
-<div class="attention red">
-Do NOT include any white spaces in the names of files to be uploaded to JGA.
-</div>
-
-<div class="attention red">
-When possible, concatenate the multiple data files in the Data/Analysis object to reduce the number of files per object for smoother download.
-</div>
-
-### Example metadata excel <a name="example-submission"></a>
-
-[Example metadata excel](https://docs.google.com/spreadsheets/d/1HHlxItj89fQv2oWUNBIHZ4VVGwbcC09WGD5tEiXAQZ4/edit#gid=744299318).
-
-### JGA submission tool <a name="jga-submission-tool"></a>
-
-Download the latest JGA submission tool (last updated: 2018-04-16，v3.5.0) and run the tool by executing JGATool.bat.
 
 {::options parse_block_html="true" /}
 <div class="attention red">
-Execute in the Java 8. In the Java 7, the tool does not work. [How to use in the proxy envinronment.](#use-proxy-environment)
+All datasets in a JGA submission are distributed at the same time. Do NOT include datasets to be distributed at different time in a submission.
 </div>
 
-#### Windows <a name="Windows"></a>
+### Example metadata<a name="example-submission"></a>
 
-[JGA submission tool (Windows)]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool.zip)
+[Example metadata](https://docs.google.com/spreadsheets/d/1HHlxItj89fQv2oWUNBIHZ4VVGwbcC09WGD5tEiXAQZ4/edit#gid=744299318)
 
-Execute the tool by double clicking the bat file in the expanded files.
-
-<span class="red">Java Runtime Environment Version 8 Update 45 and newer are required.</span>
-
-#### Unix <a name="Unix"></a>
-
-[JGA submission tool (Unix)]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool_unix.zip)
-
-Excecute the sh file by shell in the expanded files.
-
-<span class="red">Java SE Development Kit 8u45 and newer are required. Does not work in the OpenJDK.</span>
-
-### Upload the excel <a name="upload-excel"></a>
-
-Execute the JGA tool and login it by using the login ID and password sent from [NBDC](http://humandbs.biosciencedbc.jp/).
-
-{::nomarkdown}
-{% include image.html url="submission/jgasub1.jpg" caption="Login the JGA tool" class="w200" %}
-{:/}
-
-The left window is your local computer and the right one is secure JGA server.
-
-In the Submission ID of the right window, select the JGA submission id (for example, example-0003) in the pulldown menu. In the left window, select the metadata excel (for example, JGA\_example-0003\_metadata.xlsx) and click the "Encrypt & Upload".
-
-{::nomarkdown}
-{% include image.html url="submission/jgasub2.jpg" caption="Select the submission and metadata excel." class="w500" %}
-{:/}
-
-The excel file is uploaded to the JGA server securely. Ignore the error messages in the bottom window.
-
-After uploading the excel, contact the [JGA team](/contact-ddbj-e.html).
-
-{::nomarkdown}
-{% include image.html url="submission/jgasub3.jpg" caption="Uploaded excel file" class="w500" %}
-{:/}
-
-<div class="attention red">
-Do NOT send the metadata excel by e-mail.
-</div>
-
-### Download Excel/XML files <a name="download-excel-xml-files"></a>
-
-Users can download the excel with filename ended with "\_metadata.xlsx" and XML files by using the tool.
-
-Right-click the excel (for example, JGA\_example-0003\_r1\_metadata.xlsx) and select Download from the menu. Then the selected excel file is downloaded to your computer.
-
-{::nomarkdown}
-{% include image.html url="submission/jgadown1.jpg" caption="Download excel" class="w500" %}
-{:/}
-
-Right-click the XML file (for example, example-0003\_Data.xml) and
-select the "Download" in the menu. Users can download the XML files
-one-by-one to your computer.
-
-{::nomarkdown}
-{% include image.html url="submission/jgadown2.jpg" caption="Download XML" class="w500" %}
-{:/}
-
-## Upload data files <a name="upload-data-files"></a>
-
-### Data file format <a name="data-file-format"></a>
-
-In the JGA submission system, file and archive, compression formats are judged by the file extensions.
-
-  - The extensions, zip, tar, tar.gz, tgz, tar.bz2, tbz2, gz, bz2 are treated as the standard archive and compression formats. The other files with other archive and compression formats cause errors.
-  - Do not compress the bam file.
-  - Do not tar archive the compressed files by gz or bzip, instead, tar.gz the un-compressed files.
-
-### File formats for submission <a name="file-formats-submission"></a>
-
-Register the individual-level next-generation sequencing (NGS) fastq and bam files to the Data object and the microarray, variation, questionnaire files (non-NGS data) to the Analysis object.
-
-<div class="attention red">
-It is important for making data reusable and reproducible that the processed data on which the conclusions in the related manuscript are based, are registered to JGA. Please submit processed data files such as VCF in Analysis objects.
-</div>
-
-### metadata XML file <a name="metadata-xml-file"></a>
-
-Select the downloaded XML and data files and upload them to the target submission by using the tool.
-
-{::nomarkdown}
-{% include image.html url="submission/jgasub4.jpg" caption="Uplaod the metadata XML and data files" class="w500" %}
-{:/}
-
-### Validation of submitted files <a name="validation-submitted-files"></a>
-
-Submitted metadata and data files are validated and the data files are uploaded in the encrypted form.
-
-  - The metadata XML files are validated against [JGA XML schema](https://github.com/ddbj/pub/tree/master/docs/jga).
-  - [The relationships between each metadata object](/jga/download-e.html#metadata)
-  - Existence of the files listed in the Data and Analysis XML
-  - Checksum validation before and after uploading. [MD5](/dra/submission-e.html#supplement-md5)
-
-If the all validation steps succeed, "\[INFO\] upload succeeded" is displayed in the bottom window. The [JGA accessions](/jga/download-e.html#accession) will be issued after reviewing.
-
-When an error message is shown, contact [the JGA team](/contact-ddbj-e.html).
-
-{::nomarkdown}
-{% include image.html url="submission/jgasub5.jpg" caption="Validated metadata XML and data files" class="w500" %}
-{:/}
-
-### How to select files <a name="select-files"></a>
-
-Users can select multile files in the left window.
-
-#### Range selection
-
-Select the stating filename and then select the ending filename with pressing Shift, the files in the range are selected. Right click the "check (selected item)" and check the selected files.
-
-{::nomarkdown}
-{% include image.html url="submission/jga_range_select.jpg" caption="Range select the files" class="w500" %}
-{:/}
-
-#### How to select distinct files
-
-Select the distinct files by pressing the Control, then select the "check (selected item)" and check the selected files.
-
-{::nomarkdown}
-{% include image.html url="submission/jga_multi_select.jpg" caption="Check the selected files" class="w500" %}
-{:/}
-#### Select sub-directory
-
-All files in the directory are selected by clicking the folder checkbox.
-
-{::nomarkdown}
-{% include image.html url="submission/jga_dir_select.jpg" caption="Check the sub-directory" class="w500" %}
-{:/}
-
-### How to use in the proxy environment <a name="use-proxy-environment"></a>
-
-To use the tool in the proxy environment, users need to configure the file.
-
-Edit the "proxy.properties" in the tool folder and enter the proxy name (server=) and port number (port=).
-
-```
-# Enter the server name and port number of the proxy server 
-  to connect the JGA server via the proxy.
-# For example:
-# server=proxy.example.ac.jp
-# port=8080
-server=
-port=
-```
-
-When the proxy server require the authentication, enter the credentials in the window after logging in the tool.
-
-The v3.2.0 can handle the BASIC authentification but can not handle the Digest one.
-
-## Send the data files in hard disk <a name="send-data-files-in-hard-disk"></a>
-
-When uploading files by the JGA tool takes too long time, for uploading large number and size of files, we accept the files in the hard disk drives.
-
-<div class="attention red">
-Be sure to inform the JGA team before sending your disk to us.<br>
-Disk format should be NTFS, ext3 or ext4.<br>
-Check the entire disk by anti-virus checker.<br>
-Shipping fee should be paid by the user.
-</div>
-
-### Encrypt data files <a name="encrypt-data-files"></a>
-
-Encrypt the data files by using the JGA data encryption tool and copy them into the hard disk. Upload the XML files by using the JGA submission tool and do not include them in the disk.
-
-[![JGA data encryption tool]({{ site.baseurl }}/assets/images/parts/download.png "JGA data encryption tool"){:.w40}]({{ site.baseurl }}/assets/files/submission/jga-data-encrypt.tar.gz)
-
-last updated: 2015-12-09
-
-<div class="attention red">
-Encrypt the file one-by-one. Do NOT encrypt tar archived files or directory.
-</div>
-
-Operating envinronment
-
-  - The disk space as large as the total size of the target files is necessary.
-  - Confirmed in CentOS 6.4
-  - Java Runtime Environment Version 8 Update 45 newer is neccesary.
-
-Expand the "jga-data-encrypt.tar.gz" by tar command. Following directories are expanded. Do NOT change the directory structure.
-
-jga-data-encrypt.sh (shell script) jar/ -\> directory for execution files (do NOT change this directory)
-
-Move to the tool directory and execute the command.  
-sh jga-data-encrypt.sh\[space\]-t\[target files\]\[space\]-o\[output directory path\]  
-example)
-
-```
-$ sh jga-data-encrypt.sh -t target.fastq -o output
-```
-
-Command options
-
-\-t --target  
-Sepecify the path to target files.  
-The tool can encrypt one file. Multiple files by wild card cannot be
-specified.  
-Use shell script to encrypt multiple files.
-
-\-o --output  
-Path to the directory to output encrypted files, encryption key and the
-MD5 file.  
-When the directory is not found, the directory is automatically
-created.  
-
-Output files
-
-In the output directory, the following 3 files are generated per 1
-target file.
-
-1. encrypted file (.encrypt)  
-The encrypted filename is \[filename before encryption\].encrypt (for example, file1.fastq will be file1.fastq.encrypt)
-
-2. key file (.encrypt.dat)  
-The key file used for encryption. One key file is generated per one target file. The key file is encrypted by the public key. The filename is \[encrypted target file name\].dat. (for example, file1.fastq will be file1.fastq.encrypt.dat)
-
-MD5 file before and after encryption(.md5)  
-The file recording the MD5 checksum values before and after encryption. One MD5 file is generated per one target file. The filename is \[unencrypted filename\].md5. (for example, file1.fastq will be file1.fastq.md5)
-
-Output messages
-
-The tool's messages are recorded in the log file (\[server hostname\].jga-data-encrypt.log in the tool directory) and shown on the standard screen. Normal messages are as follows.
-
-```
-$ sh jgacmd.sh -t /home/hoge/file.txt -o /tmp/output
-START encrypt file ←start processing
-start encryption : /home/hoge/file.txt ←target filename
-encryption complete : /tmp/output /file.txt.encrypt ←output filename
-FINISH encrypt file ←processing finished
-```
-
-Error messages
-
-| Message                                                | Meaning                                                                |
-| ------------------------------------------------------ | ---------------------------------------------------------------------- |
-| \[code 11\] encryption error : \<target\>              | An error occurred during encryption process.                           |
-| \[code 12\] make md5 file error : \<target\>           | An error occurred during obtaining the md5 or writing md5 to the file. |
-| \[code 13\] output dir is not a directory : \<target\> | \-o soecified path id not a directory.                                 |
-| \[code 14\] target is not a file : \<target\>          | \-t path id not a file.                                                |
-
-### Sending files <a name="sending-files"></a>
-
-For the JGA submission, three files "encrypted data files", "key file" and "md5 file" are neccesary. Copy them to the hard disk.
-
-Do NOT copy the metadata in the disk, instead, upload the metadata by using the JGA Submission Tool.
-
-Copy the data to the USB hard disk and send the disk to the address below. <span class="red">Shipping fee should be paid by the user. Include the cash on delibery slip for rerurn filled with the return address</span>. <span class="red">We recommend to label the disk.</span>
+### Upload excel<a name="upload-excel"></a>
 
 {::options parse_block_html="true" /}
-<address>
+<div class="attention red">
+To upload files to the JGA server by scp, you need to [register a center name and a public key to your D-way account](/account-e.html#enable-dra-submission-in-account). Access to the JGA server is restricted by IP addresses. Inform your IP address of your connecting source to NBDC in application form.
+</div>
 
-JGA team<br> 
-1111 Yata, Mishima, Shizuoka 411-8540, Japan  
-Phone:+81-55-981-6853
+In the JGA submission directory in "/controlled-access/submission/jga/" in JGA file server (jga-gw.ddbj.nig.ac.jp), upload the excel to this directory by scp specifying the port number 443 with P option. The scp uses public/private key authentication, specify [a private key registered to your D-way account](/account.html#generate-key-pair) for authentication.
 
-</address>
+Example
+  - account ID: account_b
+  - JGA Submission ID: JSUB000353
+
+When specifying a private key for the account authentication with "i" option, specify target files after the "P" and "i" options.
+
+```
+$ scp -P443 -i private-key-for-auth JSUB000353_metadata.xlsx account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
+```
+-P: specify the port number 443
+-i: specify the private key for authentication
+
+
+Login to the JGA file server by ssh.
+```
+$ ssh -p443 -i private-key-for-auth account_b@jga-gw.ddbj.nig.ac.jp
+```
+-p: specify the port number 443 (use lowercase "p" for ssh)
+-i: specify the private key for authentication
+
+## Data files uploading<a name="upload-data-files"></a>
+
+### Data file format<a name="data-file-format"></a>
+
+The JGA submission system discriminates archive and compression formats by the extension of the filenames.
+
+  - The extensions, zip, tar, tar.gz, tgz, tar.bz2, tbz2, gz and bz2 are treated as archived and compressed in standard formats. Files whose extensions and formats are different will cause errors in the file processing.
+  - Do NOT compress bam files.
+  - Do NOT archive files compressed by gz and bzip. Instead, archive compressed files by tar.gz.
+
+### File formats for submission<a name="file-formats-submission"></a>
+
+Submit individual-level next-generation sequencing data such as fastq and bam files to Data. And submit microarray data, variant analysis data and documents such as questionnaires to Analysis.        
+
+{::options parse_block_html="true" /}
+<div class="attention red">
+For reproducibility, it is important to submit processed data from which conclusion of associated paper is derived. Please submit processed data files such as VCF to Analysis.
+</div>
+
+### Upload data files<a name="data-files-upload"></a>
+
+Upload data files to the upload directory by scp.
+
+Example
+  - Account ID: account_b
+  - JGA Submission ID: JSUB000353
+
+```
+$ scp -P443 -i private-key-for-auth wgs1.fastq account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
+```
+-P: specify the port number 443
+-i: specify the private key for authentication
+
+Upload all files with "fastq" in the extensions.
+```
+$ scp -P443 -i private-key-for-auth *.fastq account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
+```
+
+## Submission of metadata and data files<a name="metadata-data-submission"></a>
+
+The JGA curator reviews your metadata and data files. After reviewing process, the curator creates XML files from the metadata excel and submit them.
+
+After the metadata and data files pass the validation, accession numbers will be issued.

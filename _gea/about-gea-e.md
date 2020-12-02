@@ -3,7 +3,7 @@ layout: indexed_content
 title: About GEA
 pathname: about-gea-e
 category: gea
-current_tab: home
+current_tab: about gea
 tab_menu:
   - id: home
     title: Home

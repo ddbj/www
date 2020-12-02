@@ -3,7 +3,7 @@ layout: indexed_content
 title: DDBJ Sequence Read Archive Handbook
 pathname: submission
 category: dra
-current_tab: home
+current_tab: handbook
 tab_menu:
   - id: home
     title: Home
@@ -904,14 +904,16 @@ DRA 登録のステータス一覧
 ファイルを SCP 転送します。
 
 ```
-$ scp <Your Files> <D-way Login ID>@ftp-private.ddbj.nig.ac.jp:~/<DRA Submission ID>
+$ scp -i private-key-for-auth &lt;Your Files&gt; &lt;D-way Login ID&gt;@ftp-private.ddbj.nig.ac.jp:~/&lt;DRA Submission ID&gt;
 ```
 
+  - -i でアカウントに登録した認証用公開鍵とペアになる秘密鍵を指定します。
   - <Your Files> 転送するファイル。例: file1 file2 (file1とfile2)、file*
     (fileではじまる全てのファイル)
   - <D-way Login ID> D-way の Login ID (例 test07)
   - <DRA Submission ID> DRA 登録の Submission ID (例: test07-0018)
-  - コマンドの例: scp strainA_1.fastq test07@ftp-private.ddbj.nig.ac.jp:~/test07-0018
+  - コマンドの例: scp -i private-key-for-auth strainA_1.fastq
+
 
 鍵を作成したときに指定したパスフレーズを入力します。
 
@@ -922,7 +924,7 @@ Enter passphrase for key '/home/you/.ssh/id_rsa':
 サーバにログインし、直接ファイルを操作することができます。サーバに SSH でログインします。
 
 ```
-$ ssh <D-way Login ID>@ftp-private.ddbj.nig.ac.jp
+$ ssh -i private-key-for-auth &lt;D-way Login ID&gt;@ftp-private.ddbj.nig.ac.jp
 ```
 
 鍵を作成したときに指定したパスフレーズを入力します。

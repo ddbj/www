@@ -3,7 +3,7 @@ layout: indexed_content
 title: Location の記述法
 pathname: location
 category: ddbj
-current_tab: home
+current_tab: flat_file
 tab_menu:
   - id: home
     title: Home

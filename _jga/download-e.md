@@ -3,7 +3,7 @@ layout: indexed_content
 title: Download steps
 pathname: download-e
 category: jga
-current_tab: home
+current_tab: submission
 tab_menu:
   - id: home
     title: Home
@@ -36,311 +36,282 @@ tab_menu:
 lang: en
 ---
 
-## JGA data use request <a name="request"></a>
+## Data use application to NBDC<a name="du-application"></a>
+[NBDC ヒトデータベースの「利用可能な研究データ一覧」](https://humandbs.biosciencedbc.jp/data-use/all-researches)で使いたいデータを探すことができます。
+[DDBJ Search](https://ddbj.nig.ac.jp/search) でも検索することができますが, 新規公開データの反映機能実装が2020年11月になる見込みであり, それまでは新規公開データが反映されません。
 
-Apply data use request to [National Bioscience Database Center (NBDC)](https://humandbs.biosciencedbc.jp/en/data-use) with the JGA Study (e.g., JGAS00000000025) and Dataset (e.g., JGAD00000000025) accession numbers.
+You may search JGA data at [the list of researches at the NBDC Human Database](https://humandbs.biosciencedbc.jp/en/data-use/all-researches). [DDBJ Search](https://ddbj.nig.ac.jp/search) is also available, however, regular indexing of new data will be implemented in November 2020. Until this implementation, new JGA data are not indexed.
+Take notes of JGA Dataset accession number(s) you want to use. For example, JGAD000001 (or JGAD00000000001 in the previous accession number format)
 
-{::options parse_block_html="true" /}
-<div class="attention red">
-Approved users should follow the [NBDC Security Guidelines for Human Data (for Data Users)](http://humandbs.biosciencedbc.jp/en/guidelines/security-guidelines-for-users).
-</div>
+[Apply the data use application](https://humandbs.biosciencedbc.jp/en/data-use) in the [NBDC Application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application).
+In the application, create a data user group, specify requesting Study (for example, JGAS999992) and Dataset (for example, JGAD999993) accessions and register a public key for the dataset encryption. 
+After the application is approved by NBDC, datasets will be accessible in the JGA server.
 
-NBDC will notify user ID and password to approved users. The download account will expire in two weeks after assignment.
+To apply the application, a D-way account is required. If you do not have an account, please [create your D-way account](https://ddbj.nig.ac.jp/D-way/) and [register a public key for authentication](/account-e.html#generate-key-pair).
 
-This page explains how to use the JGA data.
-
-## Download data by using the GUI tool <a name="data-download-using-gui-tool"></a>
-
-### JGA GUI download tool <a name="jga-gui-download-tool"></a>
-
-Download the JGA GUI download tool (last updated: 2018-04-16，v3.5.0).
-
-<div class="attention red">
-Use this tool in Java 8. This tool does not work in Java 7.
-</div>
-
-#### Windows <a name="Windows"></a>
-
-[JGA download tool for Windows]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool.zip)
-
-Run the tool by clicking the "bat" file in the folder.
-
-#### Unix <a name="Unix"></a>
-
-[JGA download tool for Unix]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool_unix.zip)
-
-Run the tool by executing the sh file in the directory.
-
-Use "Java SE Development Kit 8" and not OpenJDK.
-
-### Login <a name="login-by-using-cui"></a> 
-
-Run the JGA tool and login the JGA system with user ID and password notified by [NBDC](http://humandbs.biosciencedbc.jp/en/).
-
-<div class="attention red">
-JGA submission and download tool is the same software behave in different mode according to the account used.
-</div>
-
-{::nomarkdown}
-{% include image.html url="submission/jgasub1.jpg" caption="Login the JGA tool" class="w200" %}
-{:/}
-
-The left window is your local computer and the right window is the secure JGA file server.
-
-In the right window, data sets approved to use are listed. Check the data sets you want to download. Total number of files and size are displayed at below.
-
-{::nomarkdown}
-{% include image.html url="books/jgadown01.jpg" caption="Select data sets to download" class="w500" %}
-{:/}
-
-Click the \[Download\] button and the tool download and decrypt the data sets. The number of parallel download can be adusted from 1-5 at
-"Parallel Download count".
-
-When this process finishes, decrypted data set are downloaded to your local computer.
-
-In the created directory with data set accession number, the metadata XML and data files have been downloaded.
-
-{::nomarkdown}
-{% include image.html url="books/jgadown03.jpg" caption="metadata XML and data files" class="w300" %}
-{:/}
-
-You can expand the directory tree by clicking the arrowhead left to the dataset directory icon. By selecting each data directory and file, you can download individual files.
-
-{::nomarkdown}
-{% include image.html url="books/jgadown02.jpg" caption="Download data set" class="w500" %}
-{:/}
-
-### Download via a proxy server <a name="download-via-a-proxy-server"></a>
-
-To use the tool via the proxy server, you need to set the name and port number of the proxy server.
-
-Edit the "proxy.properties" file in the tool folder and enter the name (server=) and port number (port=) of the proxy server.
-
-```
-# Enter the server name and port number of the proxy server to connect the JGA server via the proxy.
-# For example:
-# server=proxy.example.ac.jp
-# port=8080
-server=
-port=
-```
-
-After login, when the proxy requires user authentication, enter the authentication information in the displayed window. The v3.2.0 (2016-11-17) tool is compatible with the BASIC authentication but not with the Digest authentication.
-
-### View metadata in website <a name="view-metadata-in-website"></a>
-
-Users can view JGA metadata also in website.
-
-From the ["JGA studies" page](https://ddbj.nig.ac.jp/jga/viewer/view/studies), move to the JGA datasets page.
-
-{::nomarkdown}
-{% include image.html url="books/jgadown04.jpg" caption="JGA studies" class="w500" %}
-{:/}
-
-Select data sets with data use permission.
-
-{::nomarkdown}
-{% include image.html url="books/jgadown05.jpg" caption="Select data sets to view metadata" class="w500" %}
-{:/}
-
-As in the JGA tool, login the website by using user ID and password notified by NBDC.
-
-{::nomarkdown}
-{% include image.html url="books/jgadown06.jpg" caption="Login with data use account" class="w300" %}
-{:/}
-
-Users can view metadata in the website after login.
-
-{::nomarkdown}
-{% include image.html url="books/jgadown07.jpg" caption="Users can view metadata in the website after login" class="w500" %}
-{:/}
-
-Logout from the metadata view site
-
-<div class="attention red">
-Access to the metadata view site is limited to 1 from same account. After viewing metadata, do NOT close your browser but logout at
-right-top "Logout".  
-When an error "Maximum sessions of 1 for this principal exceeded" is displayed, login again after 30 min interval.
-</div>
-
-After viewing metadata, do NOT close your browser but logout at right-top "Logout".
-
-{::nomarkdown}
-{% include image.html url="books/jgadown08.jpg" caption="Logout from metadata view site" class="w500" %}
-{:/}
-
-The following error is displayed when access from single account exceeds "1". Login again after 30 min interval.
-
-{::nomarkdown}
-{% include image.html url="books/jgadown09.jpg" caption="Error when access from single account exceeds 1" class="w500" %}
-{:/}
-
-### Data file transfer by hard disk <a name="data-file-transfer-by-hard-disk"></a>
 
 {::options parse_block_html="true" /}
 <div class="attention red">
-For all hard drive request please contact [JGA team](/contact-ddbj-e.html) and let us know the permitted datasets you would like to have transferred.
+It takes about 10 minutes for the created D-way account becoming active in the NBDC application system.
 </div>
 
-<span class="red">If you would like the data in hard disk, please prepare the USB hard disk drive (filesystem should be NTFS, ext3 or ext4) with enough space for the approved dataset. Be sure to virus check the entire filesystem and send us the empty drive.</span>
+The JGA datasets download and access steps are described below.
 
-Please send your disk to the following address. Be sure to label your disk.
+## Data user group<a name="data-user-group"></a>
 
-Postal code: 411-8540  
-Kodama Yuichi  
-1111 Yata, Mishima, Shizuoka 411-8540, Japan  
-Phone:+81-55-981-6853
+Before starting the application, create a data user group. In the following example group (usergrp1), an owner is researcher (account_b) who apply the application and download the data, and a member is PI (account_c).
 
-## Download data by using the CUI tool <a name="data-download-using-cui-tool"></a>
+{::nomarkdown}
+{% include image.html url="books/DS-group-e.png" caption="Data user group" class="w450" %}
+{:/}
 
-### JGA CUI download tool <a name="jga-cui-download-tool"></a>
+[Start the application](https://humandbs.biosciencedbc.jp/en/data-use) and select the group.
 
-Download the JGA CUI download tool (Last updated: 2018-04-16, v3.5.0). At present, only the Unix tool is available.
+{::nomarkdown}
+{% include image.html url="books/DU-start-e.png" caption="Start data use application" class="w450" %}
+{:/}
 
-#### Unix
+{::nomarkdown}
+{% include image.html url="books/DU-group-e.png" caption="Select the data user group" class="w450" %}
+{:/}
 
-[Unix JGA tool]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool_unix.zip)
+## Public key for dataset encryption<a name="public-key-for-dataset-encryption"></a>
 
-### Login <a name="login-by-using-cui"></a>
+For security, the JGA datasets are encrypted by the public key for dataset encryption registered by the applicant in the data use application. The applicant needs to first decrypt the datasets downloaded by scp by using the private key.
 
-Run the JGA tool in the tool directory.
+{::options parse_block_html="true" /}
+<div class="attention red">
+The public key for dataset encryption is different from the [public/private key pair for the D-way account authentication](/account.html#enable-dra-submission-in-account).
+</div>
 
-```
-$ ./JgaDownload.sh  
-```
+### Generate a public and private key pair for dataset encryption<a name="generate-key-pair"></a>
 
-Login with the user name and password notified by [NBDC](https://humandbs.biosciencedbc.jp/en).
+Generate a public/private key pair for encrypting datasets in each data use application. Please see ["Generate public and private key pair"](/account-e.html#generate-key-pair) for details.
+Register the public key for dataset encryption in the data use application system.
 
-```
-JGA login user name : 
-JGA Login Password  : 
-```
+### Registration of the public key for dataset encryption<a name="key-registration"></a>
 
-The user name and password can be configured.
+Register the public key for dataset encryption in the NBDC data use application.
 
-```
-$ . ./JgaSetUser.sh
-or
-$ source ./JgaSetUser.sh
-```
+{::nomarkdown}
+{% include image.html url="books/public-key-for-dataset-encryption-e.png" caption="egistration of the public key for dataset encryption" class="w400" %}
+{:/}
 
-Configure the user name and password.
+## Data use application approval and download<a name="data-use-approval-download"></a>
 
-```
-JGA login user name : 
-JGA Login Password  : 
-```
+### Data use application approval<a name="data-use-approval"></a>
 
-After configuration, run the tool.
+After the application is approved by NBDC, metadata, encrypted data files and decryption tools is created in the download directory in the JGA server.
 
-### Download via the proxy server <a name="download-via-the-proxy-server"></a>
+{::nomarkdown}
+{% include image.html url="books/data-use-approved-e.png" caption="Data use application approval" class="w400" %}
+{:/}
 
-Configure the proxy server and port by editting the proxy.properties file. Execute as below for the proxy BASIC authentification.
+### Download<a name="download"></a>
 
-```
-$ . ./JgaSetProxyUser.sh
-or
-$ source ./JgaSetProxyUser.sh
-```
+{::options parse_block_html="true" /}
+<div class="attention red">
+To download files from the JGA server by scp, you need to [register a center name and a public key to your D-way account](/account-e.html#enable-dra-submission-in-account). Access to the JGA server is restricted by IP addresses. Inform your IP address of your connecting source to NBDC in application form.
+</div>
 
-Enter the user name and password for the proxy.
+In the "/controlled-access/download/jga/" directory in the JGA file server (jga-gw.ddbj.nig.ac.jp), the DU number directory is created. Download the directory by scp. Because the scp requires public/private key authentication, specify the [private key registered to your D-way account](/account-e.html#generate-key-pair) for authentication (this is different from the private key for dataset decryption).
 
-```
-Proxy server user name : 
-Proxy server password  : 
-```
-
-After configuration, run the tool. The tool dose not handle the Digest authentification.
-
-### Command line options and arguments. <a name="command-line-options-arguments"></a>
+Example
+  - D-way account: account_b
+  - Data use application number： J-DU999991
 
 ```
--h,--help
--v,--version
--l,--list {datasets|}
--f,--files [/metadata]
--d,--download 
--i,--download-list 
--q,--quiet
--o,--output-dir 
+$ scp -P443 -i private-key-for-auth -r account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/download/jga/J-DU999991 .
 ```
+-P: specify the port number 443
+-i: specify the private key paired with the public key registered to the D-way account for authentication
 
-### List approved Dataset, object and data files <a name="dataset-object-data-files"></a>
-
-List all approved Datasets.
-
+Login to the JGA file server by ssh.
 ```
-$ sh JgaDownload.sh --list datasets
-accession       size
-JGAD00000000002 14.35KB
-JGAD00000000003 15.37KB
-JGAD00000000004 31.77KB
+$ ssh -p443 -i private-key-for-auth account_b@jga-gw.ddbj.nig.ac.jp
 ```
+-P: specify the port number 443
+-i: specify the private key paired with the public key registered to the D-way account for authentication
 
-List all Data/Analysis objects in the approved Dataset.
+In the DU directory, there are Study directory and tools directory which contains the decryption tools. 
+The Dataset directory under the Study directory contains metadata in tab-delimited text (tsv) and XML formats, and the Data and Analysis directories contain encrypted data files.
 
-```
-$ sh JgaDownload.sh --list JGAD00000000004
-accession       size
-JGAR00000000004 19
-JGAR00000000005 19576
-JGAZ00000000004 25
-JGAZ00000000005 5066
-```
+The data access is explained with the following example numbers.
 
-List data and metadata files in the approved Dataset.
+  - JGA Study: JGAS999992
+  - JGA Dataset: JGAD999993
+  - JGA Data: JGAR999999994-JGAR999999995
+  - Encrypted data files of Data: case1.fastq.gz.encrypt (JGAR999999994), case2.fastq.gz.encrypt (JGAR999999995)
+  - JGA Analysis: JGAZ999999996-JGAZ999999997
+  - Encrypted data files of Analysis： case1.vcf.gz.encrypt (JGAZ999999996), case2.vcf.gz.encrypt (JGAZ999999997)
 
 ```
-$ ./JgaDownload.sh --files JGAD00000000004
-file                                                 size
-JGAD00000000004/JGAR00000000004/Data-Test1-1.txt     19
-JGAD00000000004/JGAR00000000005/Data-Test2-1.txt     4635
-JGAD00000000004/JGAR00000000005/Data-Test2-2.txt     14941
-JGAD00000000004/JGAZ00000000004/Analysis-Test1-1.txt 25
-JGAD00000000004/JGAZ00000000005/Analysis-Test2-1.txt 1943
-JGAD00000000004/JGAZ00000000005/Analysis-Test2-2.txt 3123
+$ ls J-DU999991/
+JGAS999992 　　
+tools　
+$ ls J-DU999991/tools
+J-DU999991.tool.zip
+$ ls J-DU999991/JGAS999992/JGAD999993
+metadata
+JGAR999999994
+JGAR999999995
+JGAZ999999996
+JGAZ999999997
+$ ls J-DU999991/JGAS999992/JGAD999993/**
+J-DU999991/JGAS999992/JGAD999993/metadata:
+JGAD999993.study.xml
+JGAD999993.sample.xml
+JGAD999993.experiment.xml
+JGAD999993.data.xml
+JGAD999993.analysis.xml
+JGAD999993.dataset.xml
+JGAD999993.policy.xml
+JGAD999993.dac.xml
+JGAD999993.filelist.txt
+JGAD999993.sample.txt
+JGAD999993.analysis.SEQUENCE_VARIATION.txt
+JGAD999993.study_sample_experiment_data.mapping.txt
+JGAD999993.study_analysis_sample.mapping.txt
+JGAD999993.analysis_sample.mapping.txt
+JGAD999993.dataset_policy_data_analysis.mapping.txt
 
-$ ./JgaDownload.sh --files JGAD00000000004/metadata
-file                                                    size
-JGAD00000000004/metadata/JGAD00000000004.analysis.xml   2145
-JGAD00000000004/metadata/JGAD00000000004.dac.xml        274
-JGAD00000000004/metadata/JGAD00000000004.data.xml       1121
-JGAD00000000004/metadata/JGAD00000000004.dataset.xml    917
-JGAD00000000004/metadata/JGAD00000000004.experiment.xml 1375
-JGAD00000000004/metadata/JGAD00000000004.policy.xml     536
-JGAD00000000004/metadata/JGAD00000000004.sample.xml     447
-JGAD00000000004/metadata/JGAD00000000004.study.xml      1035
+J-DU999991/JGAS999992/JGAD999993/JGAR999999994:
+case1.fastq.gz.encrypt
 
-$ ./JgaDownload.sh --files JGAR00000000005
-file                                             size
-JGAD00000000004/JGAR00000000005/Data-Test2-1.txt 4635
-JGAD00000000004/JGAR00000000005/Data-Test2-2.txt 14941
+J-DU999991/JGAS999992/JGAD999993/JGAR999999995:
+case2.fastq.gz.encrypt
+
+J-DU999991/JGAS999992/JGAD999993/JGAZ999999996:
+case1.vcf.gz.encrypt
+
+J-DU999991/JGAS999992/JGAD999993/JGAZ999999997:
+case2.vcf.gz.encrypt
 ```
 
-Download files by specifying an object.
+## Decrypt data files<a name="decrypt"></a>
+
+Decrypt downloaded encrypted data files by using the decryption tools.
+
+Move to the J-DU999991 directory and unzip the "J-DU999991.tool.zip" in the tools directory.
 
 ```
-$ ./JgaDownload.sh --download JGAR00000000005
+$ cd J-DU999991
+$ unzip tools/J-DU999991.tool.zip
 ```
 
-```
-$ ./JgaDownload.sh --download JGAD00000000004
-```
-
-Download files by specifying a list file.
+The scripts for decryption and encrypted common keys are extracted. 
+"J-DU999991.decrypt.sh" decrypt all files in the DU directory is extracted under the J-DU999991 directory and "case1.fastq.gz.decrypt.sh" decrypt individual data file is extracted in the Data/Analysis directories which contain encrypted data files.
 
 ```
-$ cat samplelist.txt 
-JGAD00000000004/metadata/dac
-JGAD00000000004/metadata/dataset
-JGAD00000000004/metadata/policy
-JGAR00000000004/Data-Test1-1.txt
-JGAZ00000000005/Analysis-Test2-1.txt
-$ ./JgaDownload.sh --download-list samplelist.txt 
+$ ls 
+J-DU999991.decrypt.sh
+JGAS999992 　　
+tools　　　　　　
+$ ls JGAS999992/JGAD999993/JGAR999999994/
+case1.fastq.gz.decrypt.sh
+case1.fastq.gz.encrypt
+case1.fastq.gz.encrypt.dat
+$ ls JGAS999992/JGAD999993/JGAZ999999996/
+case1.vcf.gz.decrypt.sh
+case1.vcf.gz.encrypt
+case1.vcf.gz.encrypt.dat
 ```
 
-Download files into a specified directory.
+  - .decrypt.sh: scripts for decryption
+  - .dat: encrypted common keys
+
+Add execute permission to all decryption scripts.
 
 ```
-$ ./JgaDownload.sh --download JGAD00000000004 --output-dir /tmp
+$ chmod 754 J-DU999991.decrypt.sh 
+$ chmod 754 JGAS999992/JGAD999993/JGAR999999994/case1.fastq.gz.decrypt.sh
+$ chmod 754 JGAS999992/JGAD999993/JGAR999999995/case2.fastq.gz.decrypt.sh
+$ chmod 754 JGAS999992/JGAD999993/JGAZ999999996/case1.vcf.gz.decrypt.sh 
+$ chmod 754 JGAS999992/JGAD999993/JGAZ999999997/case2.vcf.gz.decrypt.sh 
 ```
+
+The permission may be added in batch by using the wild card (*).
+
+```
+$ chmod 754 J-DU999991.decrypt.sh 
+$ chmod 754 JGAS999992/**/**/*.decrypt.sh
+```
+
+Decrypt the data files by running "J-DU999991.decrypt.sh" with the private key paired with the public key for dataset encryption registered in the data use application.
+
+Decryption is explained with the following examples.
+
+  - -k: specify the private key paired with the public key for dataset encryption (for example, J-DU999991_private_key).
+  - -p: specify the passphrase of the private key.
+
+```
+$ ./J-DU999991.decrypt.sh -k J-DU999991_private_key -p ******
+$ ls JGAS999992/JGAD999993/JGAR999999994/
+case1.fastq.gz　　          # decrypted data file
+case1.fastq.gz.decrypt.sh
+case1.fastq.gz.encrypt
+case1.fastq.gz.encrypt.dat
+$ ls JGAS999992/JGAD999993/JGAZ999999996/
+case1.vcf.gz　　            # decrypted data file
+case1.vcf.gz.decrypt.sh
+case1.vcf.gz.encrypt
+case1.vcf.gz.encrypt.dat
+```
+
+Place a decrypting script for all files under the DU directory and decrypting scripts for each data file in each Data/Analysis directories which contain target encrypted data file.
+
+```
+$ J-DU999991/
+J-DU999991/J-DU999991.decrypt.sh
+J-DU999991/JGAS999992/JGAD999993
+```
+
+### Metadata<a name="metadata"></a>
+
+The metadata directory contains following files. Metadata files are not encrypted.
+
+#### Metadata in tsv<a name="metadata-tsv"></a>
+
+  - JGAD999993.sample.txt
+  - JGAD999993.analysis.SEQUENCE_VARIATION.txt
+  
+For Sample and Analysis, metadata are provided in tsv with attribute names in the header and contents from the second line. The Analysis tsv filename contains Analysis type and the Analysis tsv files are created for each Analysis type. Please note that Study, Dataset and Policy metadata are also fully available in the [DDBJ Search](https://ddbj.nig.ac.jp/search)
+
+#### Metadata relation tsv<a name="metadata-relation-tsv"></a>
+
+  - JGAD999993.study_sample_experiment_data.mapping.txt
+
+The mapping table of "Data → Experiment → Sample → Study". For Experiment and Data, this mapping table also provides metadata contents.
+
+  - JGAD999993.study_analysis_sample.mapping.txt
+
+The mapping table of "Analysis → Sample → Study". For the analysis data summarizing multiple samples, the Analysis refers not sample accessions but numbers of samples.
+
+  - JGAD999993.analysis_sample.mapping.txt
+
+The mapping table of Analysis and Sample. If Analysis refers Samples, all refered Sample accessions are listed.
+
+  - JGAD999993.dataset_policy_data_analysis.mapping.txt
+
+The mapping table of Dataset, Data, Analysis and Policy.
+
+#### Metadata in XML<a name="metadata-xml"></a>
+
+  - JGAD999993.study.xml
+  - JGAD999993.dataset.xml
+  - JGAD999993.policy.xml
+  - JGAD999993.sample.xml
+  - JGAD999993.experiment.xml
+  - JGAD999993.data.xml
+  - JGAD999993.analysis.xml
+  - JGAD999993.dac.xml
+
+These XML files can be used for programmatic use.
+
+#### Filelist<a name="filelist"></a>
+
+  - JGAD999993.filelist.txt
+
+The list summarizes filenames, sizes, MD5 hash values, and Data/Analysis accessions. 
+By comparing MD5 values of downloaded files and those in the list, you can check corruption of the files.
+

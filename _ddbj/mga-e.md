@@ -3,7 +3,7 @@ layout: indexed_content
 title: MGA
 pathname: mga-e
 category: ddbj
-current_tab: home
+current_tab: other
 tab_menu:
   - id: home
     title: Home

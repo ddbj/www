@@ -3,7 +3,7 @@ layout: indexed_content
 title: アレイデザイン
 pathname: adf
 category: gea
-current_tab: home
+current_tab: submission overview
 tab_menu:
   - id: home
     title: Home

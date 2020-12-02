@@ -393,13 +393,13 @@ REFERENCE で使用する Qualifier のリスト
 
 | Entry  | Feature | Location | Qualifier  | Value    |
 | ------ | ------- | -------- | ---------- | -------- |
-| COMMON | DATE    |          | hold\_date | 20181125 |
+| COMMON | DATE    |          | hold\_date | 20231125 |
 
 #### DATE の書式 <a name="describing_date"></a>
 
   - DATE、hold\_date は必ず [COMMON](#common)
     エントリに入力してください。公開予定日が異なる場合には、ファイルを公開予定日毎に分けて作成してください。
-  - DATE にはデータの公開予定日(hold\_date)を年月日の順で、半角数字 8 桁(例：20181125)で入力してください。
+  - DATE にはデータの公開予定日(hold_date)を年月日の順で、半角数字 8 桁(例：20231125)で入力してください。
   - \- \[hyphen\] や / \[slash\] などの区切り文字を使用した場合はエラーとなります。
   - 登録作業後、データの即時公開をご希望の場合には、DATE を入力しないでください。
   - 公開予定日をご指定いただいた場合は、[データ公開原則](/documents/data-release-policy.html)に基づいて、公開作業を行ないます。

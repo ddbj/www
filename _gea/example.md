@@ -3,7 +3,7 @@ layout: indexed_content
 title: MAGE-TAB の例
 pathname: example
 category: gea
-current_tab: home
+current_tab: submission overview
 tab_menu:
   - id: home
     title: Home
@@ -54,8 +54,8 @@ lang: ja
 
 ## IDF 例 <a name="idf"></a>
 
-[IDF
-スプレッドシート例](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=0)
+[IDF スプレッドシート例 (Microarray)](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=0)
+[IDF スプレッドシート例 (NGS)](https://docs.google.com/spreadsheets/d/1-KG-8f1ZyuCX056H-TB3MwGFFkpt8tmKXJu8NxWy4PQ/edit#gid=30173120)
 
 | [Comment\[GEAAccession\]](/gea/metadata-e.html#Comment_idf)               | E-GEAD-369                                                                      |     |
 | MAGE-TAB Version                                                          | 1.1                                                                             |     |
@@ -85,8 +85,8 @@ lang: ja
 
 ## SDRF 概念的な例 <a name="sdrf_con"></a>
 
-[SDRF
-スプレッドシート例](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=657626667)
+[SDRF スプレッドシート例 (Microarray)](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=657626667)
+[SDRF スプレッドシート例 (NGS)](https://docs.google.com/spreadsheets/d/1-KG-8f1ZyuCX056H-TB3MwGFFkpt8tmKXJu8NxWy4PQ/edit#gid=513795053)
 
   - [Example 1: サンプル毎の生データと解析済みデータファイル](#sdrf_example1)
   - [Example 2: Two-color マイクロアレイ](#sdrf_example2)

@@ -3,7 +3,7 @@ layout: indexed_content
 title: The Genetic Codes
 pathname: geneticcode-e
 category: ddbj
-current_tab: home
+current_tab: flat_file
 tab_menu:
   - id: home
     title: Home
@@ -118,7 +118,7 @@ related_pages:
 
 ---
 
-## Defiition of /transl_table qualifier <a name="Defiition_of_/transl_table_qualifier"></a>
+## Definition of /transl_table qualifier <a name="Defiition_of_/transl_table_qualifier"></a>
 
 ```
 Qualifier       /transl_table=
@@ -135,7 +135,7 @@ National Center for Biotechnology Information (NCBI), Bethesda,
 Maryland, U.S.A.  
 
 The original site; [The Genetic Codes](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=cgencodes)
-2019.01.07 version
+2020.06.17 version
 
 NCBI takes great care to ensure that the translation for each coding
 sequence (CDS) present in GenBank records is correct. Central to this
@@ -178,7 +178,7 @@ The following genetic codes are described here:
   - [21. Trematode Mitochondrial Code](#21)
   - [22. Scenedesmus obliquus Mitochondrial Code](#22)
   - [23. Thraustochytrium Mitochondrial Code](#23)
-  - [24. Pterobranchia Mitochondrial Code](#24)
+  - [24. Rhabdopleuridae Mitochondrial Code](#24)
   - [25. Candidate Division SR1 and Gracilibacteria Code](#25)
   - [26. Pachysolen tannophilus Nuclear Code](#26)
   - [26. Pachysolen tannophilus Nuclear Code](#26)
@@ -803,7 +803,7 @@ It is the similar to the bacterial code ([trans_table 11](#11)) but it
 contains an additional stop codon (TTA) and also has a different set of
 start codons.
 
-## 24. Pterobranchia Mitochondrial Code (transl_table=24)<a name="24"></a>
+## 24. Rhabdopleuridae Mitochondrial Code (transl_table=24)<a name="24"></a>
 
 ```
     AAs  = FFLLSSSSYY**CCWWLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSSKVVVVAAAADDEEGGGG
@@ -1097,6 +1097,6 @@ AGG  Lys         Arg
 ### Comments:
 
 Code 33 is very similar to the mitochondrial code 24 for the
-*Pterobranchia*, which also belong to the
+*Rhabdopleuridae*, which also belong to the
 *Hemichordata*, except that it uses UAA for
 tyrosine rather than as a stop codon ([Li Y, Kocot KM, Tassia MG, Cannon JT, Bernt M, Halanych KM. Mitogenomics Reveals a Novel Genetic Code in Hemichordata. Genome Biol Evol. 2019 Jan 1;11(1):29-40.](https://www.ncbi.nlm.nih.gov/pubmed/30476024))

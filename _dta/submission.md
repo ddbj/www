@@ -3,7 +3,7 @@ layout: indexed_content
 title: Trace Archive
 pathname: submission
 category: dta
-current_tab: home
+current_tab: submission
 tab_menu:
   - id: home
     title: Home

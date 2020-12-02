@@ -3,7 +3,7 @@ layout: indexed_content
 title: Download steps
 pathname: download-e
 category: agd
-current_tab: home
+current_tab: submission
 tab_menu:
   - id: home
     title: Home

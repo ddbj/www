@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: 'How to fix error message: "Value of [ codon_start ] is not 1, but [
+title: 'How to fix error message: "Value of [ codon_start ] is not 1, but [###..###] is 5&apos; complete type."?'
 category: faq
 db:
   - ddbj

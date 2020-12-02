@@ -3,7 +3,7 @@ layout: indexed_content
 title: 塩基配列の登録
 category: ddbj
 lang: ja
-current_tab: home
+current_tab: submission
 tab_menu:
   - id: home
     title: Home

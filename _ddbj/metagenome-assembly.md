@@ -3,7 +3,7 @@ layout: indexed_content
 title: メタゲノムアセンブリ
 pathname: metagenome-assembly
 category: ddbj
-current_tab: home
+current_tab: data_categories
 tab_menu:
   - id: home
     title: Home
@@ -103,19 +103,19 @@ lang: ja
 メタゲノムプロジェクトは解析段階に応じたいくつかのデータから構成されており、環境サンプルから収集された生シークエンスデータ、生データからアセンブルされたコンティグ配列、生物の分類群毎にビニングされたアセンブリ配列、及び、特定の生物種に由来するメタゲノムアセンブリ配列（Metagenomic
 Assembly、MAG）を含んでいます。
 
-本ページでは各段階のデータを BioProject/BioSample/DRA/DDBJ へ登録する方法を説明しています。
+本ページでは各段階のデータを BioProject/BioSample/DRA/DDBJ へ登録する方法を説明しています。DRA への生シークエンスデータの登録は必須ではありませんが強く推奨します。
 
-## メタゲノムアセンブリデータの登録 <a name="mag-submission"></a>
+## メタゲノムアセンブリデータの登録 <a name="submission"></a>
 
 {::nomarkdown}
 {% include image.html url="submission/mag.jpg" caption="メタゲノムアセンブリデータの登録" class="w600" %}
 {:/}
 
-### 1\) Raw reads (Run) <a name="run"></a>
+### 1\) Raw reads (Run) <a name="raw-reads"></a>
 
 メタゲノムプロジェクトの生シークエンスデータは [DRA Run](/dra/submission.html) に登録します。
 
-#### BioProject <a name="mag-bioproject"></a>
+#### BioProject <a name="raw-reads-bioproject"></a>
 
 [メタゲノム/環境サンプルプロジェクト](/bioproject/submission.html#Project-type)として
 BioProject を登録します。生物名は [metagenome organism
@@ -123,7 +123,7 @@ names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=40
 から適切なものを選び、"xyz metagenome" (例 soil metagenome)
 を記載します。サンプルの単離源やプロジェクトの目的といったプロジェクトに関する情報を記載してください。
 
-#### BioSample <a name="mag-biosample"></a>
+#### BioSample <a name="raw-reads-biosample"></a>
 
 パッケージとして ["Genome, metagenome or marker sequences (MIxS compliant) -
 Environmental/Metagenome Genomic Sequences
@@ -133,51 +133,48 @@ names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=40
 から適切なものを選び、"xyz metagenome" (例 soil metagenome)
 を記載します。実験データがどのようにして得られたのかを理解できるようにサンプルに関する情報をできるだけ記載してください。
 
-#### DRA <a name="mag-dra"></a>
+#### DRA <a name="raw-reads-dra"></a>
 
 生シークエンスデータを [DRA Run](/dra/submission.html) に登録します。
 
-### 2\) Primary metagenome (Analysis) <a name="primary-metagenome"></a>
+### 2\) Primary metagenome<a name="primary-metagenome"></a>
 
-生データをアセンブルしたコンティグ配列は fasta/bam ファイル等を [DRA
-Analysis](/dra/submission.html#Analysis_Type)（Analysis type = "De Novo
-Assembly"）に登録します。
+生シークエンスデータをアセンブルしたコンティグ配列を DDBJ もしくは DRA に登録します。
 
-#### BioProject <a name="mag-bioproject"></a>
+#### BioProject <a name="primary-metagenome-bioproject"></a>
 
 1\) Raw reads (Run) と同じです。
 
-#### BioSample <a name="mag-biosample"></a>
+#### BioSample <a name="primary-metagenome-biosample"></a>
 
 1\) Raw reads (Run) と同じです。
 
-#### DRA <a name="mag-dra"></a>
+#### DDBJ <a name="primary-metagenome-ddbj"></a>
+生シークエンスデータをアセンブルしたコンティグ配列を [ENV](/ddbj/env.html) division の [WGS](/ddbj/wgs.html) エントリとして登録します。[MSS](/ddbj/mss.html)が登録受付窓口になります。
 
-生シークエンスデータをアセンブルしたコンティグ配列を fasta/bam ファイル等で [DRA
-Analysis](/dra/submission.html#Analysis_Type)（Analysis type = "De Novo
-Assembly"）に登録します。1) の生シークエンスデータが登録された DRA Run とセットで Analysis を登録します。
+#### DRA <a name="primary-metagenome-dra"></a>
 
-### 3\) Binned metagenome (Analysis) <a name="binned-metagenome"></a>
+DRA に登録する場合、fasta/bam ファイル等で [DRA Analysis](/dra/submission.html#Analysis_Type)（Analysis type = "De Novo Assembly"）に登録します。1) の生シークエンスデータが登録された DRA Run とセットで Analysis を登録します。Analysis は ENA/NCBI と共有されません。
 
-生物の分類毎にビニングされたアセンブリ配列は [DRA
-Analysis](/dra/submission.html#Analysis_Type)（Analysis type = "De Novo
-Assembly"）に登録します。生物毎に短いコンティグがわずかしかない場合や生物が BLAST
-類似性のみに基づいてビニングされている場合等が該当します。
+### 3\) Binned metagenome<a name="binned-metagenome"></a>
 
-#### BioProject <a name="mag-bioproject"></a>
+生物の分類毎にビニングされたアセンブリ配列を DDBJ もしくは DRA に登録します。
+
+#### BioProject <a name="binned-metagenome-bioproject"></a>
 
 1\) Raw reads (Run) と同じです。
 
-#### BioSample <a name="mag-biosample"></a>
+#### BioSample <a name="binned-metagenome-biosample"></a>
 
 1\) Raw reads (Run) と同じです。
 
-#### DRA <a name="mag-dra"></a>
+#### DDBJ <a name="binned-metagenome-ddbj"></a>
 
-生物の分類毎にビニングされたアセンブリ配列を fasta/bam ファイル等で [DRA
-Analysis](/dra/submission.html#Analysis_Type)（Analysis type = "De Novo
-Assembly"）に登録し、description に使用した解析ソフトウェアやビニング方法に関する情報を記載します。1)
-の生シークエンスデータが登録された DRA Run とセットで Analysis を登録します。
+生物の分類毎にビニングされたアセンブリ配列を [ENV](/ddbj/env.html) division の [WGS](/ddbj/wgs.html) エントリとして登録します。[MSS](/ddbj/mss.html)が登録受付窓口になります。
+
+#### DRA <a name="binned-metagenome-dra"></a>
+
+DRA に登録する場合、fasta/bam ファイル等で [DRA Analysis](/dra/submission.html#Analysis_Type)（Analysis type = "De Novo Assembly"）に登録し、description に使用した解析ソフトウェアやビニング方法に関する情報を記載します。1) の生シークエンスデータが登録された DRA Run とセットで Analysis を登録します。Analysis は ENA/NCBI と共有されません。
 
 ### 4\) MAG (DDBJ) <a name="mag"></a>
 

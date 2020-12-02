@@ -2,7 +2,7 @@
 layout: indexed_content
 title: Data Updates/Corrections`:` after getting your accession number
 category: ddbj
-current_tab: home
+current_tab: submission
 tab_menu:
   - id: home
     title: Home

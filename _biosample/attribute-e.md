@@ -3,7 +3,7 @@ layout: indexed_content
 title: Sample attributes
 pathname: attribute-e
 category: biosample
-current_tab: home
+current_tab: sample attribute
 tab_menu:
   - id: home
     title: Home

@@ -3,7 +3,7 @@ layout: indexed_content
 title: About BioSample
 pathname: about-biosample-e
 category: biosample
-current_tab: home
+current_tab: about bioProject
 tab_menu:
   - id: home
     title: Home

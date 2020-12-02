@@ -3,7 +3,7 @@ layout: indexed_content
 title: GA4GH Beacon
 pathname: beacon
 category: agd
-current_tab: home
+current_tab: ga4gh beacon
 tab_menu:
   - id: home
     title: Home

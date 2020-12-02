@@ -331,6 +331,7 @@ MR      EPO             Patent application
 MS      EPO             Patent application
 MT      GenBank         Direct submission
 MU      GenBank         scaffold/CON
+MV      USPTO         Patent application
 N       GenBank         EST
 O       void            UniProt/Swiss-Prot
 OA      ENA             

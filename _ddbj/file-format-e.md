@@ -412,13 +412,13 @@ Example: DATE/hold\_date in annotation file
 
 | Entry  | Feature | Location | Qualifier  | Value    |
 | ------ | ------- | -------- | ---------- | -------- |
-| COMMON | DATE    |          | hold\_date | 20181125 |
+| COMMON | DATE    |          | hold\_date | 20231125 |
 
 
 #### Requirements for Describing DATE <a name="describing_date"></a>
 
   - DATE and hold\_date are required to be described in [COMMON](#common) entry.
-  - If you want to keep confidential your data until a specific date, please set the date with 8 digits (e.g. 20181125).
+  - If you want to keep confidential your data until a specific date, please set the date with 8 digits (e.g. 20231125).
   - Delimiters (i.e. -- (hyphen), / (slash) etc.) is not allowed to use for Value of hold\_date.
   - Do not enter any DATE, if your data should be open to public immediately.
   - DATE should be included for [COMMON](#common) entry. If the date is not common to all entries, please prepare the file for each.

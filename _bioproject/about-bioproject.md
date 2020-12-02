@@ -3,7 +3,7 @@ layout: indexed_content
 title: BioProject について
 pathname: about-bioproject
 category: bioproject
-current_tab: home
+current_tab: about bioProject
 tab_menu:
   - id: home
     title: Home

@@ -477,7 +477,7 @@ lang: ja
 <div class="news_post_list">
 <h2 class="news_title" id="wn150615"><a href="#wn150615">DBCLS/NBDC/PDBj/DDBJ 合同講習会 開催のお知らせ</a></h2>
 <div class="news_date">2015年06月16日</div>
-<div class="news_content"><p>2015年7月18日（土）大阪大学中之島センターにて，DBCLS/NBDC/PDBj/DDBJ 合同講習会が開催されます。<br>「初めての All-in-one 合同講習会」と題して，４つの機関についての理解を深めて頂くため，それぞれの業務内容や利用者へのサービスの紹介などを含めた基本的なデータベース利用法の講習を行います。<br>みなさまのご参加をお待ちしております。（<a href="/activities/training.html">詳細／申し込み</a>）</p></div>
+<div class="news_content"><p>2015年7月18日（土）大阪大学中之島センターにて，DBCLS/NBDC/PDBj/DDBJ 合同講習会が開催されます。<br>「初めての All-in-one 合同講習会」と題して，４つの機関についての理解を深めて頂くため，それぞれの業務内容や利用者へのサービスの紹介などを含めた基本的なデータベース利用法の講習を行います。<br>みなさまのご参加をお待ちしております。（<a href="/activities/training/2015-07-18.html">詳細／申し込み</a>）</p></div>
 <div class="news_category">
 <span class="service">サービス: ddbj</span>
 <span class="keyword">キーワード: お知らせ</span>

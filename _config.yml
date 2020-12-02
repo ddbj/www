@@ -89,6 +89,8 @@ collections:
     output: true
   jvar-sv:
     output: true
+  metabobank:
+    output: true
   news:
     output: true
   other:
