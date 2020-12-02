@@ -135,38 +135,44 @@ Please refer each manuals for how to install and use.
     <caption></caption> 
     <thead>
       <tr>
-      <th>Name</th>
-      <th>OS</th>
-      <th>Refix Date</th>
-      <th>Documents</th>
-      <th>Remarks</th>
+        <th>Name</th>
+        <th colspan="2">Link</th>
+        <th>OS</th>
+        <th>Updated Date</th>
+        <th>Manual</th>
+        <th>Comments</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-      <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/UME_win_V1.49.zip">UME_win_V1.49.zip</a></td>
-      <td>Windows</td>
-      <td rowspan="2">2020/04/07</td>
-      <td rowspan="2"><a href="/ddbj/ume-e.html">UME User’s manual</a></td>
-      <td rowspan="2">UME contains Parser and transChecker.</td>
+        <td>UME_win_V1.51.zip</td>
+        <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/UME_win_V1.51.zip">FTP</a></td>
+        <td rowspan="4"><a href="https://drive.google.com/drive/u/1/folders/1SlveeY38FdHOrcmgjcVgzrL8RvXlx96g">HTTPS</a></td>  
+        <td>Windows</td>
+        <td rowspan="2">2020/11/25</td>
+        <td rowspan="2"><a href="/ddbj/ume.html">User's manual</a></td>
+        <td rowspan="2">UME contains Parser and transChecker.</td>
       </tr>
       <tr>
-      <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/UME_unix_V1.49.zip">UME_unix_V1.49.zip</a></td>
-      <td>unix/macOS</td>
+        <td>UME_unix_V1.51.zip</td>
+        <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/UME_unix_V1.51.zip">FTP</a></td>
+        <td>Unix/macOS</td>
       </tr>
       <tr>
-      <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/Parser_V6.62.tar.gz">Parser_V6.62.tar.gz</a></td>
-      <td>unix/macOS</td>
-      <td>2020/04/07</td>
-      <td><a href="/ddbj/parser-e.html">Parser User's Manual</a></td>
-      <td></td>
+        <td>Parser_V6.65.tar.gz</td>
+        <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/Parser_V6.65.tar.gz">FTP</a></td>
+        <td>Unix/macOS</td>
+        <td>2020/11/25</td>
+        <td><a href="/ddbj/parser.html">User's manual</a></td>
+        <td></td>
       </tr>
       <tr>
-      <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/transChecker_V2.21.tar.gz">transChecker_V2.21.tar.gz</a></td>
-      <td>unix/macOS</td>
-      <td>2017/05/17</td>
-      <td><a href="/ddbj/transchecker-e.html">transChecker User's Manual</a></td>
-      <td></td>
+        <td>transChecker_V2.22.tar.gz</td>
+        <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/transChecker_V2.22.tar.gz">FTP</a></td>
+        <td>Unix/macOS</td>
+        <td>2020/09/02</td>
+        <td><a href="/ddbj/transchecker.html">User's manual</a></td>
+        <td></td>
       </tr>
     </tbody>
 </table>
