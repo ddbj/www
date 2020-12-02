@@ -89,7 +89,7 @@ JGA ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/subm
 
 メタデータ記入用エクセルファイルを下記よりダウンロードし、内容を英語で記入してください。メタデータの説明は[こちらのページ](/jga/submission.html)をご覧ください。
 
-[![JGA メタデータ記入用エクセル]({{ site.baseurl }}/assets/images/parts/download.png "JGA メタデータ記入用エクセル"){:.w40}.]({{ site.baseurl }}/assets/files/submission/JGA_metadata.xlsx)
+[![JGA メタデータ記入用エクセル]({{ site.baseurl }}/assets/images/parts/download.png "JGA メタデータ記入用エクセル"){:.w40}]({{ site.baseurl }}/assets/files/submission/JGA_metadata.xlsx)
 
 last updated: 2020-09-26
 
@@ -125,7 +125,6 @@ JGA ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/subm
 ```
 $ scp -P443 -i private-key-for-auth JSUB000353_metadata.xlsx account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
 ```
-
 -P: 接続先ポート番号 443 を指定
 -i: 認証用秘密鍵を指定
 
@@ -195,6 +194,7 @@ Data オブジェクトに fastq や bam ファイルなどの個人レベルの
 $ scp -P443 -i private-key-for-auth wgs1.fastq account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
 ```
 -P: 接続先ポート番号 443 を指定
+-i: 認証用秘密鍵を指定
 
 拡張子 fastq の全てのファイルをアップロード。
 ```
