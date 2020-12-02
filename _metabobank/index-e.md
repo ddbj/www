@@ -1,7 +1,7 @@
 ---
 layout: top
 title: MetaboBank
-pathname: index
+pathname: index-e
 category: metabobank
 lang: en
 ---
