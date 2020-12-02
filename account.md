@@ -8,43 +8,38 @@ lang: ja
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/N76NUH748Fw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
 DDBJ 登録アカウントの作成
 
-## DDBJ 登録アカウント <a name="ddbj-submission-account"></a>
+## D-way アカウント <a name="ddbj-submission-account"></a>
 
-[日本 DNA データバンク (DDBJ)](/index.html) は [BioProject](/bioproject/index.html) ，[BioSample](/biosample/index.html) と [DRA](/dra/index.html) への登録をユーザアカウントで管理しています。
+[生命情報・DDBJ センター](/index.html) では [D-way アカウントシステム](https://ddbj.nig.ac.jp/D-way)を運用しています。D-way アカウントは DDBJ センターの BioProject/BioSample/DRA/GEA/JGA データベース、及び、[NBDC](https://humandbs.biosciencedbc.jp) の[提供・利用申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application)で使うことができます。
 
 {::options parse_block_html="true" /}
 <div class="attention red">
 
-  - 責任者の許可のもとアカウントを作成し，データを登録してください。
+  - 責任者の許可のもとアカウントを作成し，データを管理してください。
   - アカウントとパスワードはユーザが安全に管理してください。
-  - 所有者が異なる組織に移った場合，アカウントの再取得を推奨します。
   - アカウント名は変更できません。
+  - アカウント作成後、NBDC 申請システムで利用できるようになるまで10分程度時間がかかります。
 
 </div>
 
-DDBJ には二種類の登録アカウントがあります。[DDBJ Sequence Read Archive(DRA)](/dra/index.html) にデータを登録するためには，アカウントに center name と公開鍵を登録する必要があります。
+DDBJ センターではサイズの大きいファイルの転送に ssh 鍵認証を介した scp を利用しています。
+そのため、ファイル転送を伴う DRA、GEA と JGA を利用するためにはアカウントに認証用の公開鍵（認証用公開鍵）を登録する必要があります。
+また、DRA のメタデータでは登録者組織に割り当てられる center name が必須であるため、center name の登録も合わせて必要になります。
 
 {::nomarkdown}
-{% include image.html url="books/hac01.jpg" caption="二種類の登録アカウント" class="w300" %}
+{% include image.html url="books/hac01.jpg" caption="アカウントのサービス利用権限" class="w300" %}
 {:/}
 
-## ウェブから取得した登録用アカウント <a name="account-for-bioproject-biosample-submissions"></a>
+## D-way アカウントをウェブサイトで作成<a name="account-for-bioproject-biosample-submissions"></a>
 
-### ウェブ上でアカウントを取得 <a name="create-an-account-on-website"></a>
+### ウェブサイトでアカウントを作成 <a name="create-an-account-on-website"></a>
 
-この章で説明されている方法で取得したアカウントでは [BioProject](/bioproject/index.html) と[BioSample](/biosample/index.html) に登録できます。
+ウェブサイトで新規作成したアカウントはデフォルトで BioProject/BioSample/NBDC 申請サービスを利用することができます。
 
-<div class="attention red">
-
-DRA へデータを登録するためには， center name と公開鍵をアカウントに登録する必要があります。
-
-</div>
-
-登録ポータル ["D-way"(https://ddbj.nig.ac.jp/D-way)](https://ddbj.nig.ac.jp/D-way/)にアクセスします。  
-[Register for a new account\] ボタンをクリックします。
+登録ポータル ["D-way" (https://ddbj.nig.ac.jp/D-way)](https://ddbj.nig.ac.jp/D-way)</a> にアクセスします。
+[Register for a new account] ボタンをクリックします。
 
 {::nomarkdown}
 {% include image.html url="books/account_1_new.png" caption="新規アカウントを作成" class="w250" %}
@@ -61,9 +56,9 @@ DRA へデータを登録するためには， center name と公開鍵をアカ
 
 Login ID: 
 : 4 から 24 文字
-: 小文字，数字と "\_" を含めることができます
+: 小文字，数字と "_" を含めることができます
 : "-" と大文字は使えません
-: 数字と "\_" を先頭に使うことはできません
+: 数字と "_" を先頭に使うことはできません
 
 </div>
 
@@ -87,12 +82,12 @@ Login ID:
 {:/}
 
 {::nomarkdown}
-{% include image.html url="books/initial.jpg" caption="アカウントから BioProject と BioSample に登録できます" class="w450" %}
+{% include image.html url="books/initial.jpg" caption="BioProject/BioSample/NBDC 申請システムを利用可能" class="w450" %}
 {:/}
 
-## DRA への登録権限を追加 <a name="enable-dra-submission-in-account"></a>
+## DRA/GEA/JGA の登録権限を追加 <a name="enable-dra-submission-in-account"></a>
 
-[DDBJ Sequence Read Archive (DRA)](/dra/index.html) へデータを登録するため，アカウントにcenter name と公開鍵を登録します。 [Centername](/dra/submission.html#Submission_Center_Name) は DRAが組織に対して割り振っている略号です。 公開鍵はユーザの認証に用いられます。
+サイズの大きいデータファイル転送を伴う DRA/GEA/JGA サービスを利用するため、アカウントに center name と公開鍵（認証用公開鍵）を登録します。公開鍵はユーザの認証に用いられます。
 
 ### 公開鍵/秘密鍵ペアの生成 <a name="generate-key-pair"></a>
 
@@ -192,7 +187,7 @@ Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
 </div>
 </div>
 
-### Center name と公開鍵の登録 <a name="register-center-name-and-public-key"></a>
+### Center name と認証用公開鍵の登録 <a name="register-center-name-and-public-key"></a>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/N76NUH748Fw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -205,22 +200,52 @@ Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
 適切な center が登録されていない場合，[Apply new center name\] をクリックし，組織のフルネームとともに center の新規登録を [DDBJ](/contact-ddbj.html) に申請します。
 
 Center name が登録されると，下部の "Public Key"
-エリアから公開鍵をアップロードできるようになります。公開鍵ファイルを選択し，[Register
+エリアから公開鍵をアップロードできるようになります。認証用公開鍵ファイルを選択し，[Register
 public key\] で鍵を登録します。
 
 {::nomarkdown}
-{% include image.html url="books/keyregister.jpg" caption="公開鍵を登録" class="w400" %}
+{% include image.html url="books/keyregister.jpg" caption="認証用公開鍵を登録" class="w400" %}
 {:/}
 
-登録後，左上の "DRA" メニューから DRA にデータを登録することができます。
+登録後、左上の "DRA と GEA" メニューから DRA と GEA にそれぞれデータを登録することができます。
 
 {::nomarkdown}
-{% include image.html url="books/drasub.jpg" caption="DRA に登録することができるようになります" class="w450" %}
+{% include image.html url="books/drasub.jpg" caption="DRA/GEA に登録することができるようになります" class="w450" %}
 {:/}
+
+機能が未実装であるため D-way ウェブポータルでは JGA 登録をみることができません。認証用公開鍵をアカウントに登録後、[「JGA への登録手順」](/jga/submission-step.html)、及び、[「JGA データの利用手順」](/jga/download.html)に従ってサービスを利用してください。
 
 ### アカウントの更新 <a name="update-account"></a>
 
-アカウント情報を編集し [Update\] ボタンでアカウントを更新します。登録した公開鍵は新しいファイルをアップロードすることで上書きすることができます。
+アカウント情報を編集し [Update\] ボタンでアカウントを更新します。登録した認証用公開鍵は新しいファイルをアップロードすることで上書きすることができます。
+
+## パスワードの変更<a name="password-chang"></a>
+
+[D-way](https://ddbj.nig.ac.jp/D-way/) からログインします。上部の Password メニューからパスワード変更ページへ移動します。
+
+{::nomarkdown}
+{% include image.html url="books/pass1.jpg" caption="password 変更ページへ移動" class="w400" %}
+{:/}
+
+現在のパスワードと新しいパスワードを入力し、Change ボタンをクリックしてパスワードを変更します。
+
+{::nomarkdown}
+{% include image.html url="books/pass2.jpg" caption="現在のパスワードと新しいパスワードを入力" class="w400" %}
+{:/}
+
+パスワードが変更されると以下の画面が表示されます。
+
+{::nomarkdown}
+{% include image.html url="books/pass3.jpg" caption="パスワードが変更されたことを伝えるメッセージ画面" class="w300" %}
+{:/}
+
+## セッションの期限切れ<a name="session"></a>
+
+D-way でパスワード変更後、"Session Expired" と表示される場合があります。この場合、ウェブブラウザーのシークレットモード ([Google chrome](https://support.google.com/chrome/answer/95464?co=GENIE.Platform%3DDesktop&hl=ja)、[Firefox](https://support.mozilla.org/ja/kb/private-browsing-use-firefox-without-history)) や別のブラウザーを使ってキャッシュがクリアされた状態で再度アクセスすると解消する場合があります。
+
+{::nomarkdown}
+{% include image.html url="books/d-way-session.jpg" caption="セッションの期限切れ画面" class="w300" %}
+{:/}
 
 ## 秘密鍵ファイルの変換 <a name="convert-private-key"></a>
 
