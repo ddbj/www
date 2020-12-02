@@ -241,8 +241,8 @@ Decrypt the data files by running "J-DU999991.decrypt.sh" with the private key p
 
 Decryption is explained with the following examples.
 
-  -\-k: specify the private key paired with the public key for dataset encryption (for example, J-DU999991_private_key).
-  -\-p: specify the passphrase of the private key.
+  - -k: specify the private key paired with the public key for dataset encryption (for example, J-DU999991_private_key).
+  - -p: specify the passphrase of the private key.
 
 ```
 $ ./J-DU999991.decrypt.sh -k J-DU999991_private_key -p ******
