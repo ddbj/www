@@ -314,7 +314,7 @@ MA      JPO             Patent application
 MB      JPO             Patent application
 MC      JPO             Patent application
 MD      JPO             Patent application
-ME      DDBJ
+ME      JPO             Patent application
 MF      GenBank         Direct submission
 MG      GenBank         Direct submission
 MH      GenBank         Direct submission
@@ -331,6 +331,8 @@ MR      EPO             Patent application
 MS      EPO             Patent application
 MT      GenBank         Direct submission
 MU      GenBank         scaffold/CON
+MV      USPTO         Patent application
+MW      GenBank         Direct submission
 N       GenBank         EST
 O       void            UniProt/Swiss-Prot
 OA      ENA             
@@ -338,8 +340,8 @@ OB      ENA
 OC      ENA             
 OD      ENA             
 OE      ENA             
-OF      DDBJ            EST
-OG      DDBJ            EST
+OF      KIPO            Patent application
+OG      JPO             Patent application
 OH      DDBJ            
 OI      DDBJ            
 OJ      DDBJ            
@@ -383,6 +385,8 @@ UAAA-UZZZ      ENA          WGS
 VAAA-VZZZ      GenBank      general WGS
 WAAA-WZZZ      GenBank      general WGS
 XAAA-XZZZ      GenBank      general WGS
+YAAA-YZZZ      DDBJ         TPA-TSA
+ZAAA-ZZZZ      DDBJ         TPA-TLS
 AAAAAA-AZZZZZ  GenBank      general WGS 
 BAAAAA-BZZZZZ  DDBJ         general WGS 
 CAAAAA-CZZZZZ  ENA          WGS 
@@ -401,8 +405,8 @@ DAA-DZZ     GenBank       TPA
 EAA-EZZ     GenBank       WGS
 FAA-FZZ     DDBJ          TPA
 GAA-GZZ     DDBJ          WGS
-HAA-HZZ     GenBank       TPA reassemble WGS 
-IAA-IZZ     DDBJ          TPA reassemble WGS 
+HAA-HZZ     GenBank       TPA reassemble WGS
+IAA-IZZ     DDBJ          TPA reassemble WGS/TSA/TLS
 JAA-JZZ     GenBank       TSA (Transcriptome Shotgun Assembly)
 KAA-KZZ     GenBank       WGS
 LAA-LZZ     DDBJ          TSA/TLS
@@ -440,7 +444,7 @@ SRX     NCBI       Experiment object
 SRZ     NCBI       Analysis object
 ```
 
-See also [DRA metadata outline](/dra/submission-e.html#metadata)
+See also [DRA metadata outline](/dra/submission.html#metadata)
 
 ## For BioProject <a name="project"></a>
 
