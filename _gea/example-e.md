@@ -54,8 +54,8 @@ lang: en
 
 ## IDF Example <a name="idf"></a>
 
-[Full IDF example in spreadsheet.](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=0)
-
+[Full IDF example in spreadsheet (Microarray)](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=0)
+[Full IDF example in spreadsheet (NGS)](https://docs.google.com/spreadsheets/d/1-KG-8f1ZyuCX056H-TB3MwGFFkpt8tmKXJu8NxWy4PQ/edit#gid=30173120)
 
 | [Comment\[GEAAccession\]](/gea/metadata-e.html#Comment_idf)               | E-GEAD-369                                                                      |     |
 | MAGE-TAB Version                                                          | 1.1                                                                             |     |
@@ -86,9 +86,8 @@ A full listing of all supported IDF tags can be found in the [IDF section](metad
 
 ## SDRF Conceptual Examples <a name="sdrf_con"></a>
 
-[Full SDRF example in
-spreadsheet.](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=657626667)
-
+[Full SDRF example in spreadsheet (Microarray)](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=657626667)
+[Full SDRF example in spreadsheet (NGS)](https://docs.google.com/spreadsheets/d/1-KG-8f1ZyuCX056H-TB3MwGFFkpt8tmKXJu8NxWy4PQ/edit#gid=513795053)
 
   - [Example 1: Raw and processed microarray data files for each
     sample](#sdrf_example1)

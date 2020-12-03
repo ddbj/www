@@ -472,7 +472,7 @@ also [Japanese national
 holidays](//eco.mtk.nao.ac.jp/koyomi/faq/holiday.html.en), year-end
 and new year holidays (from December 29th to January 3rd) and summer
 holidays of [the Research Organization of Information and
-Systems](http://www.rois.ac.jp/en/index.html) (two days in August).
+Systems](https://www.rois.ac.jp/en/index.html) (two days in August).
 See also DDBJ Calendar.
 
 Flat file <a name="flatfile"></a>

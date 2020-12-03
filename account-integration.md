@@ -14,44 +14,29 @@ lang: ja
 {% include image.html url="books/account_integration.png" caption="新アカウントシステムへの移行" class="w450" %}
 {:/}
 
-## 新アカウントシステムへの移行 <a name="migration"></a>
+## D-way へのアカウント統合<a name="migration"></a>
 
-第一段階として2020年6～7月頃に JGA を新アカウントシステムに移行します。続いて AGD を移行します。 D-way の移行時期は未定です。
-
-あわせて [NBDC](https://humandbs.biosciencedbc.jp/) における JGA への提供申請と利用申請も同じアカウントからできるようになります。これにより「NBDC への提供申請-JGA 登録」「NBDC への利用申請-JGA Dataset ダウンロード」が同じアカウントからシームレスにできるようになります。
+第一段階として2020年9月29日に JGA を D-way アカウントシステムに移行します。あわせて <a href="https://humandbs.biosciencedbc.jp/">NBDC</a> の提供・利用申請システムも D-way アカウントから利用できるようになります。これにより「NBDC への提供申請-JGA 登録」「NBDC への利用申請-JGA Dataset ダウンロード」が同じ D-way アカウントからできるようになります。
 
 以下では JGA アカウントの移行方法について説明します。
 
 ### JGA アカウントのみ保有している場合 <a name="jga-only"></a>
 
-JGA アカウント (Account: A) のみ保有している場合。A をそのまま新アカウントシステムに移行します。新アカウントシステムと BioProject/BioSample/DRA/GEA のアカウントシステムである D-way は同期されているので、A で JGA と D-way 両方が利用できるようになります。
+JGA アカウント (Account: A) のみ保有している場合。A をそのまま D-way に移行します。その結果、A で BioProject/BioSample/DRA/GEA と JGA/NBDC 申請システムが利用できるようになります。D-way ですでに A というアカウント ID が使われていた場合、異なる ID で移行されます。
 
-<span class="red">新アカウント発行の連絡を受けた後に D-way を利用する場合、アカウントの重複を避けるため新しくアカウントを作成しないでください。</span>
-
-{::nomarkdown}
-{% include image.html url="books/account_jga_only.png" caption="JGA アカウントのみ保有している場合" class="w450" %}
-{:/}
+<span class="red">D-way アカウント発行の連絡を受けた後に D-way を利用する場合、アカウントの重複を避けるため新しく D-way アカウントを作成しないでください。</span>
 
 ### D-way アカウントのみ保有している場合 <a name="dway-only"></a>
 
-D-way アカウント (Account: B) のみ保有している場合。JGA が新アカウントシステムに移行された後、 B で JGA を利用できるようになります。JGA の新システムへの移行前に JGA に登録することになった場合、B とは別の JGA 専用アカウントが発行されることになります。
-
-{::nomarkdown}
-{% include image.html url="books/account_dway_only.png" caption="JGA アカウントのみ保有している場合" class="w450" %}
-{:/}
+D-way アカウント (Account: B) のみ保有している場合。B で従来の BioProject/BioSample/DRA/GEA に加えて JGA/NBDC 申請システムを利用できるようになります。
 
 ### JGA と D-way アカウント両方を保有している場合 <a name="jga-and-dway"></a>
 
-JGA (Account: C) と D-way アカウント (Account: D) の両方を保有している場合。 <span class="red">D-way に名寄せされます。</span> JGA が新システムに移行後、D で JGA システムが利用できるようになります。C に紐づいていた JGA データは D に引き継がれます。JGA の新システムへの移行前は引き続き C で JGA に登録することになります。
+JGA (Account: C) と D-way アカウント (Account: D) の両方を保有している場合。
+<span class="red">D-way に名寄せされます。</span> 
 
-{::nomarkdown}
-{% include image.html url="books/account_jga_dway.png" caption="JGA と D-way アカウント両方を保有している場合" class="w450" %}
-{:/}
+D で従来の BioProject/BioSample/DRA/GEA に加えて JGA/NBDC 申請システムを利用できるようになります。C に紐づいていた JGA データは D に引き継がれ、C アカウントは利用できなくなります。
 
 ## AGD アカウントについて <a name="agd-account"></a>
 
-AGD アカウントも JGA と同様の方法で JGA の後に新アカウントシステムに移行されます。
-
-- D-way アカウントがある場合は D-way に名寄せされます。
-- D-way がなく JGA アカウントがある場合、JGA に名寄せされます。
-- D-way も JGA アカウントも無い場合、AGD アカウントで D-way/JGA/AGD が利用できるようになります。
+AGD アカウントも JGA と同様に D-way アカウントシステムに移行されます。移行は2020年内を予定しています。

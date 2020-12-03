@@ -36,318 +36,315 @@ tab_menu:
 lang: ja
 ---
 
-## JGA データの利用申請 <a name="request"></a>
+## NBDC への利用申請<a name="du-application"></a>
+[NBDC ヒトデータベースの「利用可能な研究データ一覧」](https://humandbs.biosciencedbc.jp/data-use/all-researches)で使いたいデータを探すことができます。
+[DDBJ Search](https://ddbj.nig.ac.jp/search) でも検索することができますが、新規公開データの反映機能実装が2020年11月になる見込みであり、それまでは新規公開データが反映されません。
 
-利用したい JGA データの Study (例 JGAS00000000025) と Dataset (例 JGAD00000000025) アクセッション番号を添え、 [National Bioscience Database Center (NBDC)](https://humandbs.biosciencedbc.jp/data-use) に利用を申請します。
+利用したいデータの Dataset アクセッション番号を控えます。例 JGAD000001（旧番号体系だと JGAD00000000001）
 
-{::options parse_block_html="true" /}
-<div class="attention red">
-[NBDCヒトデータ取扱いセキュリティガイドライン（利用者向け）](http://humandbs.biosciencedbc.jp/guidelines/security-guidelines-for-users) を読み，内容を遵守して JGA データを取り扱ってください。
-</div>
 
-利用申請が承認されると，NBDC からユーザ ID とパスワードが郵送されます。利用アカウントの有効期間は二週間です。
+[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) から [利用申請](https://humandbs.biosciencedbc.jp/data-use) します。
+申請時に利用申請グループを作成、利用を希望する Study (例 JGAS999992) と Dataset (例 JGAD999993) アクセッション番号を入力し、データの暗号化に使用する「データセット暗号化用公開鍵」を登録します。
+利用申請が NBDC で承認された後、データは JGA サーバ上で Dataset 単位で提供されます。
 
-このページでは JGA データの利用手順を説明しています。
-
-## データの GUI tool によるダウンロード <a name="data-download-using-gui-tool"></a>
-
-### JGA GUI download tool <a name="jga-gui-download-tool"></a>
-
-JGA GUI download tool (最終更新日: 2018-04-16，v3.5.0) をダウンロード、JGATool.bat からツールを起動します。
+申請には D-way アカウントが必要です。アカウントが無い場合は申請前に [D-way アカウントを取得](https://ddbj.nig.ac.jp/D-way/) してください。JGA サーバから scp でデータをダウンロードするためには[認証用の公開鍵・秘密鍵ペアを作成し、公開鍵を D-way アカウントに登録](/account.html#generate-key-pair)する必要があります。
 
 {::options parse_block_html="true" /}
 <div class="attention red">
-Java 8 で実行してください。Java 7 では動作しません。 [プロキシ環境での使用方法について](#download-via-a-proxy-server)
+D-way アカウント作成後、[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
 </div>
 
-#### Windows <a name="Windows"></a>
+以下では JGA データの利用手順を説明します。
 
-[Windows 用 JGA submission tool]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool.zip)
+## 利用申請グループ<a name="data-user-group"></a>
 
-展開したフォルダに含まれる bat ファイルをダブルクリックして起動。
-
-<span class="red">動作環境: Java Runtime Environment Version 8 Update 45 以上</span>
-
-#### Unix <a name="Unix"></a>
-
-[Unix 用 JGA submission tool]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool_unix.zip)
-
-展開したフォルダに含まれる sh ファイルをシェルで実行して起動。
-
-<span class="red">動作環境: Java SE Development Kit 8u45 以上。OpenJDK では動作しません。</span>
-
-### ログイン <a name="login-by-using-cui"></a>
-
-JGA tool を起動し，[NBDC](http://humandbs.biosciencedbc.jp/) 担当者から通知されるユーザ ID とパスワードでログインします。
-
-<div class="attention red">
-JGA download tool は可能な限り良好なネットワーク環境にあるマシンで使ってください。通信速度が遅い無線 LAN で接続された PC などでの使用は避けてください。
-</div>
+申請前に利用申請グループを作成します。例の利用申請グループ (usergrp1)では申請及びダウンロードを担当する研究員 (account_b) がオーナー、研究代表者 (account_c) がメンバーとなっています。
 
 {::nomarkdown}
-{% include image.html url="submission/jgasub1.jpg" caption="JGA tool へのログイン" class="w200" %}
+{% include image.html url="books/DS-group.png" caption="データ利用申請グループ" class="w450" %}
 {:/}
 
-左ウィンドウがお手許のコンピュータ，右ウィンドウが JGA のセキュアなファイル提供サーバになります。
-
-右ウィンドウには利用権限が付与されているDataset の一覧が表示されます。 ダウンロードするDataset
-にチェックを入れます。チェックすると下部に総ファイル数と合計サイズが表示されます。
+[利用申請を開始](https://humandbs.biosciencedbc.jp/data-use) し、作成した利用申請グループを選択します。
 
 {::nomarkdown}
-{% include image.html url="books/jgadown01.jpg" caption="対象 Dataset の選択" class="w500" %}
+{% include image.html url="books/DU-start.png" caption="利用申請の開始" class="w450" %}
 {:/}
-
-\[Download\] をクリックすると，ダウンロードと復号化が開始されます。 "Parallel Download count" で並列ダウンロード数を1～5の間で調整することができます。
-
-処理が完了すると，お手許のコンピュータに Dataset がダウンロードされます。 Dataset 番号のフォルダ中にメタデータ XML とデータファイルが存在しています。
 
 {::nomarkdown}
-{% include image.html url="books/jgadown03.jpg" caption="メタデータとデータファイル" class="w300" %}
+{% include image.html url="books/DU-group.png" caption="データ利用申請グループの選択" class="w450" %}
 {:/}
 
-Dataset ディレクトリの左にある矢印をクリックし，含まれているデータ番号ディレクトリを展開することができます。データ番号ディレクトリやファイルを選択し，個別にダウンロードすることもできます。
+## データセット暗号化用公開鍵<a name="public-key-for-dataset-encryption"></a>
 
-{::nomarkdown}
-{% include image.html url="books/jgadown02.jpg" caption="ファイル毎のダウンロード" class="w500" %}
-{:/}
-
-### プロキシ環境での使用方法 <a name="download-via-a-proxy-server"></a>
-
-プロキシ環境でツールを使用するためにはプロキシサーバに関する設定作業が必要になります。
-
-ツールが格納されているフォルダ中の "proxy.properties" をテキストエディター等で開きプロキシサーバ名 (server=) とポート番号 (port=) を設定します。
-
-```
-# Enter the server name and port number of the proxy server to connect the JGA server via the proxy.
-# For example:
-# server=proxy.example.ac.jp
-# port=8080
-server=
-port=
-```
-
-ツールにログイン後，プロキシサーバが認証を要求している場合，認証情報を入力するウィンドウが表示されるので適宜情報を入力します。2016-11-17
-にリリースした v3.2.0 では BASIC 認証には対応していますが Digest 認証には未対応です。
-
-### メタデータのウェブサイトでの閲覧 <a name="view-metadata-in-website"></a>
-
-メタデータはウェブサイトで閲覧することもできます。
-
-[JGA の公開されている Study 一覧ページ](https://ddbj.nig.ac.jp/jga/viewer/view/studies)へ移動します。Datasets からDataset 一覧へ移動します。
-
-{::nomarkdown}
-{% include image.html url="books/jgadown04.jpg" caption="JGA で公開されている Study 一覧" class="w500" %}
-{:/}
-
-利用権限が付与されているDataset 番号を選択します。
-
-{::nomarkdown}
-{% include image.html url="books/jgadown05.jpg" caption="メタデータを閲覧する Dataset の選択" class="w500" %}
-{:/}
-
-JGA tool と同様，NBDC から通知される利用アカウントのユーザ ID とパスワードでログインします。
-
-{::nomarkdown}
-{% include image.html url="books/jgadown06.jpg" caption="利用アカウントでログイン" class="w300" %}
-{:/}
-
-ウェブサイト上でメタデータを閲覧することができます。
-
-{::nomarkdown}
-{% include image.html url="books/jgadown07.jpg" caption="ウェブサイト上でメタデータを閲覧" class="w500" %}
-{:/}
-
-メタデータ閲覧サイトからのログアウト
-
-<div class="attention red">
-同一アカウントからメタデータ閲覧サイトへの同時ログイン数は１に制限されています。閲覧後はブラウザーを閉じる前に，必ず Logout からログアウトしてください。  
-"Maximum sessions of 1 for this principal exceeded" のエラーが表示されたときは，30 分程度間隔を空けてから再度ログインしてください。
-</div>
-
-閲覧終了後は，必ず左上の Logout からログアウトしてください。
-
-{::nomarkdown}
-{% include image.html url="books/jgadown08.jpg" caption="メタデータ閲覧サイトからのログアウト" class="w500" %}
-{:/}
-
-下記エラーは同時接続数が１を超えている場合に表示されます。30 分以上の間隔を空けて再度ログインしてください。
-
-{::nomarkdown}
-{% include image.html url="books/jgadown09.jpg" caption="同時ログイン数が１を超えている場合のエラー" class="w500" %}
-{:/}
-
-### データファイルのディスク郵送 <a name="data-file-transfer-by-hard-disk"></a>
+セキュリティのため JGA データセットはユーザが登録したデータセット暗号化用公開鍵で暗号化された状態で提供されます。ユーザは利用承認されたデータセットを scp でダウンロードし、秘密鍵で復号してから利用します。
 
 {::options parse_block_html="true" /}
 <div class="attention red">
-データファイルのディスク郵送を希望する場合は必ず事前に [JGA にご連絡ください](/contact-ddbj.html)。
+データセット暗号化用公開鍵は D-way アカウントの[認証用の公開鍵](/account.html#enable-dra-submission-in-account)とは別になります。JGA データの利用のためには暗号化用と認証用に合計2ペア4ファイルの公開鍵・秘密鍵が必要になります。
 </div>
 
-利用承認された，郵送を希望するDataset を格納するために十分な容量の USB 接続ハードディスク (ファイルシステムは NTFS、ext3 もしくは ext4 にしてください) をご用意ください。ファイルシステムは事前に必ずウイルスチェックを実施し，空の状態でお送りください。
+### データセット暗号化用公開鍵・秘密鍵ペアの作成<a name="generate-key-pair"></a>
 
-<span class="red">宛先が記入された返送用の着払い伝票を同封して</span>下記宛にお送りください。<span class="red">ハードディスクにラベルを貼って区別しやすくすることを推奨いたします。</span>
+利用申請毎に登録するデータセット暗号化用公開鍵・秘密鍵ペアを作成します。作成手順は[公開鍵/秘密鍵ペアの生成](/account.html#generate-key-pair)をご覧ください。
+
+作成したデータセット暗号化用公開鍵を NBDC の利用申請システムで登録します。
+
+### データセット暗号化用公開鍵の登録<a name="key-registration"></a>
+
+NBDC への利用申請において公開鍵を「データセット暗号化用公開鍵」として登録します。
+
+{::nomarkdown}
+{% include image.html url="books/public-key-for-dataset-encryption.png" caption="データセット暗号化用公開鍵の登録" class="w400" %}
+{:/}
+
+## 利用申請の承認とダウンロード<a name="data-use-approval-download"></a>
+
+### 利用申請の承認<a name="data-use-approval"></a>
+
+利用申請が NBDC で承認されると、JGA ファイルサーバにダウンロード用ディレクトリが作成され、メタデータ、暗号化されたデータファイルと復号ツールが配置されます。
+
+{::nomarkdown}
+{% include image.html url="books/data-use-approved.png" caption="利用申請の承認" class="w400" %}
+{:/}
+
+### ダウンロード<a name="download"></a>
 
 {::options parse_block_html="true" /}
-<address>
-
-〒411-8540  
-静岡県三島市谷田1111 国立遺伝学研究所 生命情報研究センター W201 JGA 担当 児玉 悠一  
-電話:055-981-6853
-
-</address>
-
-## データの CUI tool によるダウンロード <a name="data-download-using-cui-tool"></a>
-
-### JGA CUI download tool <a name="jga-cui-download-tool"></a>
-
-JGA CUI download tool (最終更新日: 2018-04-16，v3.5.0) をダウンロードします。現在は Unix 版のみの提供となります。
-
-#### Unix
-
-[Unix 用 JGA tool]({{ site.baseurl }}/assets/files/submission/3-5-0/JGA_tool_unix.zip)
-
-### ログイン <a name="login-by-using-cui"></a>
-
-ツールを配置したディレクトリで JGA tool を実行します。
-
-```
-$ ./JgaDownload.sh  
-```
-
-[NBDC](http://humandbs.biosciencedbc.jp/) 担当者から通知されるユーザ ID とパスワードでログインします。
-
-```
-JGA login user name :
-JGA Login Password :
-```
-
-ユーザとパスワードを設定し，毎回入力しないようにするためには以下を実行します。
-
-```
-$ . ./JgaSetUser.sh
-または
-$ source ./JgaSetUser.sh
-```
-
-ユーザとパスワードを設定します。
-
-```
-JGA login user name :
-JGA Login Password :
-```
-
-設定後にツールを実行します。
-
 <div class="attention red">
-JGA download tool は可能な限り良好なネットワーク環境にあるマシンで使ってください。通信速度が遅い無線 LAN で接続された PC などでの使用は避けてください。
+JGA からファイルを scp でダウンロードするためには [D-way アカウントに center name と公開鍵を登録](/account.html#enable-dra-submission-in-account)する必要があります。また、JGA サーバへのアクセスは IP アドレスで制限されているので、NBDC に申請する際に接続元グローバル IP アドレスを伝えてください。
 </div>
 
-### プロキシ環境での実行 <a name="download-via-the-proxy-server"></a>
+JGA ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/download/jga/ の下にデータ利用申請 DU 番号と同名のディレクトリが作成されるので、scp の P オプションでポート番号 443 と認証用秘密鍵（データセット暗号化用公開鍵・秘密鍵とは別になります）を指定して、ディレクトリごとダウンロードします。
 
-プロキシ環境では proxy.properties ファイルを編集しプロキシサーバとポートを設定します。 プロキシが Basic 認証を要求する場合は以下を実行します。
 
-```
-$ . ./JgaSetProxyUser.sh
-または
-$ source ./JgaSetProxyUser.sh
-```
-
-ユーザとパスワードを入力します。
+例
+  - アカウント名: account_b
+  - データ利用申請番号： J-DU999991
 
 ```
-Proxy server user name :
-Proxy server password :
+$ scp -P443 -i private-key-for-auth -r account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/download/jga/J-DU999991 .
 ```
+-P: 接続先ポート番号 443 を指定
+-i: D-way に登録した認証用公開鍵とペアの秘密鍵を指定
 
-設定後にツールを実行します。ダイジェスト認証には対応していません。
-
-### コマンドラインオプションと引数 <a name="command-line-options-arguments"></a>
-
+JGA ファイルサーバに ssh でログインすることができます。
 ```
--h,--help
--v,--version
--l,--list {datasets|}
--f,--files [/metadata]
--d,--download
--i,--download-list
--q,--quiet
--o,--output-dir
+$ ssh -p443 -i private-key-for-auth account_b@jga-gw.ddbj.nig.ac.jp
 ```
+-P: 接続先ポート番号 443 を指定
+-i: D-way に登録した認証用公開鍵とペアの秘密鍵を指定
 
-### 利用権限のある Dataset，オブジェクトとファイル一覧の取得 <a name="dataset-object-data-files"></a>
+DU 番号ディレクトリ直下には Study ディレクトリ、及び、データファイルの復号ツールが配置された tools ディレクトリがあります。Study ディレクトリの下に Dataset ディレクトリがあり、Dataset ディレクトリの下にタブ区切りテキスト（tsv）ファイルと XML 形式のメタデータを含む metadata ディレクトリ、及び、暗号化されたデータファイルを含む Data と Analysis ディレクトリがあります。
 
-利用権限のある Dataset 一覧の取得。
+以下の番号とデータファイルを例としてデータの利用方法を説明します。
 
-```
-$ sh JgaDownload.sh --list datasets
-accession size
-JGAD00000000002 14.35KB
-JGAD00000000003 15.37KB
-JGAD00000000004 31.77KB
-```
-
-Dataset 中の Data/Analysis オブジェクト一覧の取得。
+  - JGA Study: JGAS999992
+  - JGA Dataset: JGAD999993
+  - JGA Data: JGAR999999994-JGAR999999995
+  - Data の暗号化データファイル: case1.fastq.gz.encrypt (JGAR999999994)、case2.fastq.gz.encrypt (JGAR999999995)
+  - JGA Analysis: JGAZ999999996-JGAZ999999997
+  - Analysis の暗号化データファイル： case1.vcf.gz.encrypt (JGAZ999999996)、case2.vcf.gz.encrypt (JGAZ999999997)
 
 ```
-$ sh JgaDownload.sh --list JGAD00000000004
-accession size
-JGAR00000000004 19
-JGAR00000000005 19576
-JGAZ00000000004 25
-JGAZ00000000005 5066
+$ ls J-DU999991/
+JGAS999992 　　
+tools　
+$ ls J-DU999991/tools
+J-DU999991.tool.zip
+$ ls J-DU999991/JGAS999992/JGAD999993
+metadata
+JGAR999999994
+JGAR999999995
+JGAZ999999996
+JGAZ999999997
+$ ls J-DU999991/JGAS999992/JGAD999993/**
+J-DU999991/JGAS999992/JGAD999993/metadata:
+JGAD999993.study.xml
+JGAD999993.sample.xml
+JGAD999993.experiment.xml
+JGAD999993.data.xml
+JGAD999993.analysis.xml
+JGAD999993.dataset.xml
+JGAD999993.policy.xml
+JGAD999993.dac.xml
+JGAD999993.filelist.txt
+JGAD999993.sample.txt
+JGAD999993.analysis.SEQUENCE_VARIATION.txt
+JGAD999993.study_sample_experiment_data.mapping.txt
+JGAD999993.study_analysis_sample.mapping.txt
+JGAD999993.analysis_sample.mapping.txt
+JGAD999993.dataset_policy_data_analysis.mapping.txt
+
+J-DU999991/JGAS999992/JGAD999993/JGAR999999994:
+case1.fastq.gz.encrypt
+
+J-DU999991/JGAS999992/JGAD999993/JGAR999999995:
+case2.fastq.gz.encrypt
+
+J-DU999991/JGAS999992/JGAD999993/JGAZ999999996:
+case1.vcf.gz.encrypt
+
+J-DU999991/JGAS999992/JGAD999993/JGAZ999999997:
+case2.vcf.gz.encrypt
 ```
 
-Dataset，オブジェクト中のデータファイル，メタデータファイル一覧の取得。
+## データファイルの復号<a name="decrypt"></a>
+
+ダウンロードしたデータファイルは暗号化されているので、ツールで復号します。
+
+利用者の解析環境で J-DU999991 ディレクトリに直下に移動し、tools ディレクトリにある復号ツール「J-DU999991.tool.zip」を J-DU999991 ディレクトリ直下に展開します。
 
 ```
-$ ./JgaDownload.sh --files JGAD00000000004
-file size
-JGAD00000000004/JGAR00000000004/Data-Test1-1.txt 19
-JGAD00000000004/JGAR00000000005/Data-Test2-1.txt 4635
-JGAD00000000004/JGAR00000000005/Data-Test2-2.txt 14941
-JGAD00000000004/JGAZ00000000004/Analysis-Test1-1.txt 25
-JGAD00000000004/JGAZ00000000005/Analysis-Test2-1.txt 1943
-JGAD00000000004/JGAZ00000000005/Analysis-Test2-2.txt 3123
-$ ./JgaDownload.sh --files JGAD00000000004/metadata
-file size
-JGAD00000000004/metadata/JGAD00000000004.analysis.xml 2145
-JGAD00000000004/metadata/JGAD00000000004.dac.xml 274
-JGAD00000000004/metadata/JGAD00000000004.data.xml 1121
-JGAD00000000004/metadata/JGAD00000000004.dataset.xml 917
-JGAD00000000004/metadata/JGAD00000000004.experiment.xml 1375
-JGAD00000000004/metadata/JGAD00000000004.policy.xml 536
-JGAD00000000004/metadata/JGAD00000000004.sample.xml 447
-JGAD00000000004/metadata/JGAD00000000004.study.xml 1035
-$ ./JgaDownload.sh --files JGAR00000000005
-file size
-JGAD00000000004/JGAR00000000005/Data-Test2-1.txt 4635
-JGAD00000000004/JGAR00000000005/Data-Test2-2.txt 14941
+$ cd J-DU999991
+$ unzip tools/J-DU999991.tool.zip
 ```
 
-オブジェクトを指定してダウンロード。
+復号処理スクリプトおよび暗号化済み共通鍵ファイルが展開されます。DU 全体を対象とする復号スクリプト J-DU999991.decrypt.sh が J-DU999991 ディレクトリ直下に、個々のデータファイルを対象とする case1.fastq.gz.decrypt.sh のような復号スクリプトが暗号化されたデータファイルが含まれる Data/Analysis ディレクトリに配置されます。
 
 ```
-$ ./JgaDownload.sh --download JGAR00000000005
+$ ls 
+J-DU999991.decrypt.sh
+JGAS999992 　　
+tools　　　　　　
+$ ls JGAS999992/JGAD999993/JGAR999999994/
+case1.fastq.gz.decrypt.sh
+case1.fastq.gz.encrypt
+case1.fastq.gz.encrypt.dat
+$ ls JGAS999992/JGAD999993/JGAZ999999996/
+case1.vcf.gz.decrypt.sh
+case1.vcf.gz.encrypt
+case1.vcf.gz.encrypt.dat
 ```
 
-```
-$ ./JgaDownload.sh --download JGAD00000000004
-```
+  - .decrypt.sh: 復号処理スクリプト
+  - .dat: 暗号化済み共通鍵ファイル
 
-リストファイルに記載された全てのファイルをダウンロード
-
-```
-$ cat samplelist.txt
-JGAD00000000004/metadata/dac
-JGAD00000000004/metadata/dataset
-JGAD00000000004/metadata/policy
-JGAR00000000004/Data-Test1-1.txt
-JGAZ00000000005/Analysis-Test2-1.txt
-$ ./JgaDownload.sh --download-list samplelist.txt
-```
-
-保存ディレクトリを指定してダウンロード
+全ての復号処理スクリプトに対して実行権限を付与します。
 
 ```
-$ ./JgaDownload.sh --download JGAD00000000004 --output-dir /tmp
+$ chmod 754 J-DU999991.decrypt.sh 
+$ chmod 754 JGAS999992/JGAD999993/JGAR999999994/case1.fastq.gz.decrypt.sh
+$ chmod 754 JGAS999992/JGAD999993/JGAR999999995/case2.fastq.gz.decrypt.sh
+$ chmod 754 JGAS999992/JGAD999993/JGAZ999999996/case1.vcf.gz.decrypt.sh 
+$ chmod 754 JGAS999992/JGAD999993/JGAZ999999997/case2.vcf.gz.decrypt.sh 
 ```
+
+データファイルが多数ある場合、以下のようにワイルドカード (*) を使ったコマンドを実行するとデータファイル毎の復号処理スクリプトに対して一括で実行権限を付与することができます。
+
+```
+$ chmod 754 J-DU999991.decrypt.sh 
+$ chmod 754 JGAS999992/**/**/*.decrypt.sh
+```
+
+NBDC への利用申請時に登録したデータセット暗号化用公開鍵とペアになっている「秘密鍵」を指定して「J-DU999991.decrypt.sh」を実行し、全データファイルを復号します。
+
+以下の番号とデータファイルを例としてデータの復号方法を説明します。
+
+  - -k: データセット暗号化用公開鍵とペアの秘密鍵を指定 （例：J-DU999991_private_key）
+  - -p: 秘密鍵のパスフレーズを指定（パスフレーズを指定していない場合は省略）
+
+```
+$ ./J-DU999991.decrypt.sh -k J-DU999991_private_key -p ******
+$ ls JGAS999992/JGAD999993/JGAR999999994/
+case1.fastq.gz　　          # 復号されたデータファイル
+case1.fastq.gz.decrypt.sh
+case1.fastq.gz.encrypt
+case1.fastq.gz.encrypt.dat
+$ ls JGAS999992/JGAD999993/JGAZ999999996/
+case1.vcf.gz　　            # 復号されたデータファイル
+case1.vcf.gz.decrypt.sh
+case1.vcf.gz.encrypt
+case1.vcf.gz.encrypt.dat
+```
+
+DU ディレクトリ下にある Study や Dataset ディレクトリを scp した場合、以下のようなディレクトリ配置にしてから復号スクリプトを実行します。DU ディレクトリ直下に DU 単位の復号スクリプトと暗号化されたデータファイルが含まれている Study/Dataset/Data or Analysis ディレクトリを配置します。
+
+```
+$ J-DU999991/
+J-DU999991/J-DU999991.decrypt.sh
+J-DU999991/JGAS999992/JGAD999993
+```
+
+### メタデータ<a name="metadata"></a>
+
+metadata ディレクトリには以下のファイルが含まれています。メタデータファイルは暗号化されていません。
+
+#### メタデータオブジェクトの内容が記述された tsv ファイル<a name="metadata-tsv"></a>
+
+  - JGAD999993.sample.txt
+  - JGAD999993.analysis.SEQUENCE_VARIATION.txt
+  
+
+メタデータを見やすくするため、Sample 及び Analysis については、1行目に項目名、2行目以降に内容が記述された tsv ファイルが提供されます。Analysis の tsv ファイル名には Analysis type（種類）が含まれており、type 毎に作成されます。なお Study、Dataset、Policy はオープンなメタデータとして [DDBJ Search](https://ddbj.nig.ac.jp/search) でも内容を見ることができます。
+
+#### メタデータオブジェクトの対応関係と内容を記述した tsv ファイル<a name="metadata-relation-tsv"></a>
+
+  - JGAD999993.study_sample_experiment_data.mapping.txt
+
+Data → Experiment → Sample → Study の対応関係を示した表。Experiment と Data についてはこの対応表がオブジェクトの内容表示を兼ねています。
+
+  - JGAD999993.study_analysis_sample.mapping.txt
+
+Analysis → Sample → Study の対応関係を示した表。複数サンプルの結果をまとめた解析データなど、Analysis が複数 Sample を参照している場合はアクセッション番号ではなく参照している Sample の「数」が記載されます。
+
+  - JGAD999993.analysis_sample.mapping.txt
+
+Analysis と Sample の対応表。Analysis が複数 Sample を参照している場合、全ての Sample アクセッション番号が列挙されます。
+
+  - JGAD999993.dataset_policy_data_analysis.mapping.txt
+
+Dataset に含まれる Data、Analysis とリンクしている Policy の対応表。
+
+#### 各オブジェクトのメタデータ XML ファイル<a name="metadata-xml"></a>
+
+  - JGAD999993.study.xml
+  - JGAD999993.dataset.xml
+  - JGAD999993.policy.xml
+  - JGAD999993.sample.xml
+  - JGAD999993.experiment.xml
+  - JGAD999993.data.xml
+  - JGAD999993.analysis.xml
+  - JGAD999993.dac.xml
+
+プログラムで機械処理する場合などに利用できます。
+
+#### ファイルリスト<a name="filelist"></a>
+
+  - JGAD999993.filelist.txt
+
+データファイルの名前、種類、サイズ、復号前後の MD5 ハッシュ値、及び、含まれている Data と Analysis アクセッション番号をまとめた表。
+手許でダウンロードしたファイルの MD5 ハッシュ値を取得し、リスト中の値と比較することでファイルの破損チェックを行うことができます。
+
+### WinSCP によるダウンロードa name="upload-excel-winscp"></a>
+
+[WinSCP (http://winscp.net/eng/download.php)](http://winscp.net/eng/download.php) をダウンロードし、Windows PC にインストールします。
+
+以下のように設定します。
+
+  - 転送プロトコル: SCP
+  - ホスト名: jga-gw.ddbj.nig.ac.jp
+  - ポート番号: 443
+  - ユーザ名: D-way アカウント ID
+  - パスワード: 空欄のまま
+
+{::nomarkdown}
+{% include image.html url="books/jga-winscp1.jpg" caption="WinSCP 接続情報の入力" class="w400" %}
+{:/}
+
+{::nomarkdown}
+{% include image.html url="books/jga-winscp2.jpg" caption="WinSCP 認証用秘密鍵を指定" class="w400" %}
+{:/}
+
+初回接続時には警告メッセージが表示されますが、「はい」を選択してください (次回から表示されません)。次の画面では、鍵を作成した際に指定したパスフレーズを入力します。
+
+{::nomarkdown}
+{% include image.html url="books/jga-winscp3.jpg" caption="WinSCP ファイルの転送" class="w400" %}
+{:/}
+
+ログインに成功すると、左側のウィンドウにユーザの PC のフォルダ、右側のウィンドウに JGA サーバの登録者専用ディレクトリが表示されるので 右側ウィンドウでファイルを選択し左側ウィンドウへドラッグ＆ドロップし、PC へファイルをダウンロードします。
+
+
+
+
+
+

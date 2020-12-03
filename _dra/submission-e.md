@@ -1106,13 +1106,15 @@ create metadata first, upload some files.
 <div class="accordion-content">
 
 Transfer the files by executing,
-
+```
+$ scp -i private-key-for-auth &lt;Your Files&gt; &lt;D-way Login ID&gt;@ftp-private.ddbj.nig.ac.jp:~/&lt;DRA Submission ID&gt;
+```
+  - -i: specify the private key for authentication which is pair of a public key registered to your D-way account.
   - \<Your Files> Files to be transferred. Ex: file1 file2 (file1 and
     file2), file* (all files whose filenames start with “file”)
   - \<D-way Login ID> D-way Login ID (ex. test07)
   - \<DRA Submission ID> DRA Submission ID (ex. test07-0018)
-  - command example: scp strainA_1.fastq
-    test07@ftp-private.ddbj.nig.ac.jp:~/test07-0018
+  - command example: scp -i private-key-for-auth strainA_1.fastq test07@ftp-private.ddbj.nig.ac.jp:~/test07-0018
 
 Enter the passphrase set for the keys.
 

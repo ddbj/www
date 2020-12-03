@@ -66,7 +66,7 @@ IDF (Investigation Description Format) ファイルは実験デザイン、プ�
 
 ### IDF 例 <a name="idf_ex"></a>
 
-[IDF の例](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=0)
+[IDF の例](/gea/example-e.html#idf)
 
 | [Comment[GEAAccession]](#Comment_idf)               | E-GEAD-369                                                                      |     |
 | MAGE-TAB Version                                      | 1.1                                                                             |     |

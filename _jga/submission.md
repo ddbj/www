@@ -38,9 +38,9 @@ lang: ja
 
 ## 登録概要 <a name="submission"></a>
 
-JGA は NBDC で承認された利用制限ポリシーを持つ，匿名化されたデータだけを受け付けています。 登録者は [NBDC](http://humandbs.biosciencedbc.jp/) に JGA へのデータ提供を申請し， JGA は NBDC から正式に提供が承認された連絡を受け，登録者に登録手順を案内します。
+JGA は NBDC で承認された利用制限ポリシーを持つ，匿名化されたデータだけを受け付けています。 登録者は [NBDC](https://humandbs.biosciencedbc.jp/) に JGA へのデータ提供を申請し， JGA は NBDC から正式に提供が承認された連絡を受け，登録者に登録手順を案内します。
 
-登録しようとしているデータの公開を制限すべきかどうかは，データを収集した個人との間で合意された協定から明らかなはずです。 JGA に登録されたデータの公開は制限されます。 JGA データを利用するためには，[NBDC](http://humandbs.biosciencedbc.jp/) に利用を申請し，承認される必要があります。
+登録しようとしているデータの公開を制限すべきかどうかは，データを収集した個人との間で合意された協定から明らかなはずです。 JGA に登録されたデータの公開は制限されます。 JGA データを利用するためには，[NBDC](https://humandbs.biosciencedbc.jp/) に利用を申請し，承認される必要があります。
 
 制限公開は論文公表までの間，データを非公開にすることとは異なります。 JGA を含む全ての DDBJ データベースでは，論文公表までの一定期間，データを非公開にすることができます。
 
@@ -48,17 +48,22 @@ JGA は NBDC で承認された利用制限ポリシーを持つ，匿名化さ�
 
 | プレフィックス | メタデータオブジェクト | 数字の桁数 | 例               |
 | ------- | ----------- | ----- | --------------- |
-| JGA     | Submission  | 11    | JGA00000000001  |
-| JGAS    | Study       | 11    | JGAS00000000001 |
-| JGAN    | Sample      | 11    | JGAN00000000001 |
-| JGAX    | Experiment  | 11    | JGAX00000000001 |
-| JGAR    | Data        | 11    | JGAR00000000001 |
-| JGAZ    | Analysis    | 11    | JGAZ00000000001 |
-| JGAD    | Data set    | 11    | JGAD00000000001 |
-| JGAP    | Policy      | 11    | JGAP00000000001 |
+| JGA     | Submission  | 11    | JGA000001  |
+| JGAS    | Study       | 11    | JGAS000001 |
+| JGAN    | Sample      | 11    | JGAN000001 |
+| JGAX    | Experiment  | 11    | JGAX000001 |
+| JGAR    | Data        | 11    | JGAR000001 |
+| JGAZ    | Analysis    | 11    | JGAZ000001 |
+| JGAD    | Data set    | 11    | JGAD000001 |
+| JGAP    | Policy      | 11    | JGAP000001 |
 
 <div class="attention red">
 データの再利用性，再現性のためには論文での主張の基になっている解析データが登録されることが重要です。できるだけ VCF などの解析データを Analysis に登録してください。
+</div>
+
+{::options parse_block_html="true" /}
+<div class="attention red">
+データは JGA Submission 単位で公開されます。公開時期の異なるデータセットは別の Submission に分けてください。
 </div>
 
 著者が論文中で引用すべき JGA アクセッション番号が指定されていない場合は，JGAS (study) 番号を引用することを推奨します。Study 番号は読者に研究の概要を示し，その Study に含まれているすべてのデータへのリンクを提供します。
@@ -224,9 +229,9 @@ XML schema: [JGA.dataset.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
 ### Policy <a name="Policy"></a>
 
-データ利用制限ポリシーを記載します。[NBDC ポリシー](http://humandbs.biosciencedbc.jp/nbdc-policy)以外に適用すべきポリシーがなければ作成する必要はありません。
+データ利用制限ポリシーを記載します。[NBDC ポリシー](https://humandbs.biosciencedbc.jp/nbdc-policy)以外に適用すべきポリシーがなければ作成する必要はありません。
 
-[NBDC ポリシー](http://humandbs.biosciencedbc.jp/nbdc-policy)以外に適用すべきポリシーがある場合は，NBDC にポリシーを登録し，発行される JGAP 番号を Data set から参照します。
+[NBDC ポリシー](https://humandbs.biosciencedbc.jp/nbdc-policy)以外に適用すべきポリシーがある場合は，NBDC にポリシーを登録し，発行される JGAP 番号を Data set から参照します。
 
 XML schema: [JGA.policy.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 

@@ -157,13 +157,32 @@ Please confirm [Categories for Sequence Data](/documents/data-categories-e.html)
 
 ## The Flow of MSS <a name="flow"></a>
 
-![]({{ site.baseurl }}/assets/images/ddbj/MSS-flow-en.png "The Flow of MSS")
+![]({{ site.baseurl }}/assets/images/ddbj/MSS-flow_20200916-en.png "The Flow of MSS")
 
 ### 1. Application <a name="flow-1"></a>
 
-Please apply for your submission from [MSS application　form](/ddbj/mss-form-e.html).
+Please apply for your submission through ["Application form for MSS"](/ddbj/mass-form-e.html). 
+According to your application, DDBJ MSS sends you how to use MSS via an email.
 
-After confirmation, we will introduce submission procedures in detail.
+#### Preparation for sequence data submission
+
+When your data are corresponding to the following cases, please register [BioProject](/bioproject/index-e.html) and [BioSample](/biosample/index-e.html) before using MSS.
+
+- [whole genome-scale sequence](/ddbj/genome-e.html):
+  - Complete genome, nearly complete genome and draft genome ([WGS](/ddbj/wgs-e.html) and [HTG](/ddbj/htg-e.html)).
+  - Excluding sequence data consisting only of organelle, virus/phage or plasmid sequence(s).
+- [transcriptome](/ddbj/transcriptome-e.html): [TSA](/ddbj/tsa-e.html) (Transcriptome Shotgun Assembly) and [EST](/ddbj/est-e.html).
+  - It is also required to submit non-assembled data (original reads, or the alternative) to DRA before [TSA](/ddbj/tsa-e.html) submission.
+  - In the case of [EST](/ddbj/est-e.html), [BioProject](/bioproject/index-e.html) and [BioSample](/biosample/index-e.html) are not required, but recommended.
+- [TLS](/ddbj/tls-e.html) (Targeted Locus Study)
+
+#### Description of annotation
+
+- For [whole genome-scale sequence](/ddbj/genome-e.html), it is optional to describe biological features except source and  assembly_gap. However, in case of highly novel species, i.e. not available any sequence data, it is required to describe feature annotation for at least one genome as a representative.
+- If you decide to submit a genome with annotation, it is required to reserve [locus_tag prefix](/ddbj/qualifiers-e.html#locus_tag) on [BioSample](/biosample/index-e.html) submission.
+- For feature annotation of prokaryotic genome, we recommend to use [DFAST (DDBJ Fast Annotation and Submission Tool)](https://dfast.nig.ac.jp/)
+- For [TSA](/ddbj/tsa-e.html) data, it is optional (basically unnecessary) to describe biological features except source and assembly_gap.
+- In the case of [EST](/ddbj/est-e.html), you can not describe any biological features except source.
 
 ### 2. Make submission files <a name="flow-2"></a>
 
@@ -254,30 +273,13 @@ files](/ddbj/mss-tool-e.html)
   - Before installing Validation tools for data files, see [End-user
     license agreement](/ddbj/mss-tool-e.html#license).
 
-### 3. Test submission <a name="flow-3"></a>
+### 3. Review the submission files<a name="flow-3"></a>
 
-In the test submission, you can confirm contents and format of your data
-before making all of your data to submit to DDBJ.  
-Please send a part of your submission files (several entries/features)
-as the sample data. We will confirm contents and format of your data for
-test submission and contact you.  
-Before sending, please validate your files by software tools and fix
-errors.
+After validating the sequence and annotation files by using the check tools, send them to DDBJ. 
 
-If you are familiar to make data files required by MSS, you can omit the
-test submission.
+- Before preparing the entire sequence and annotation files, you can send a part of your data as a trial basis and then ask DDBJ whether the submission files are correctly created or not. (This step can be omitted).
 
-### 4. Submission <a name="flow-4"></a>
-
-According to the suggestions in test submission, please make and send
-sequence and annotation files for all data.  
-Before sending, please validate your files by software tools and fix
-errors.  
-The test data will be validated in accordance with a international rule
-agreed with DDBJ / EMBL-Bank / GenBank and DDBJ rule.We ask you to
-revise the files, if necessary.  
-If there is no problem, we will assign and acknowledge accession numbers
-for your data to the e-mail address of contact person.
+DDBJ reviews submission files and then informs the submitter of some correction requests and/or inquiries. If there is no problem with the contents of the file, DDBJ will issue accession number(s) for your data and acknowledge the accession number(s) to the contact person by email.
 
 #### File transfer <a name="File_transfer"></a>
 
@@ -297,7 +299,7 @@ movies.
 : Upload data files（[Windows](https://youtu.be/gJqgCvUc0Y8) /
 [macOS](https://youtu.be/aO2aVafS3ZE)）
 
-### 5. Data release <a name="flow-5"></a>
+### 4. Distribution <a name="flow-4"></a>
 
 If you do not set any hold-date, your data will be released
 immediately.  
@@ -305,8 +307,6 @@ When you set a [hold-date](/ddbj/submission.html#hold-date) for your
 data, we will release your data according to [Principle of
 "Hold-Until-Published" data release](/documents/data-release-policy-e.html).
 
-Based on your sequence and annotation files, your data will be processed
-and publicized into the DDBJ format, so called "[flat
-file](/ddbj/flat-file-e.html)".  
-See also [relationships between annotation file and DDBJ flat
-file](/ddbj/file-format-e.html#sample).
+The registered data will be published in a [flat file format](/ddbj/flat-file-e.html) defined by DDBJ. Please refer to the figure, [correspondence between annotation files and flat files](/ddbj/file-format-e.html#sample)
+
+

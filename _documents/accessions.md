@@ -34,7 +34,7 @@ INSD アクセッション番号は アルファベット＋数字 で構成さ�
 Annotated/Assembled Data
 
 |  conventional  |  アルファベット１文字＋５桁の数字: 例 A12345<br>アルファベット２文字＋６桁の数字: 例 AB123456<br>アルファベット２文字＋８桁の数字: 例 AB12345678  |
-|  bulk<br>[WGS](/ddbj/wgs.html),[TSA](/ddbj/tsa.html),[TLS](/ddbj/tls.html)  |  アルファベット４文字 ([For Large Scale Data](/documents/prefix.html#large))＋８～１０ 桁の数字: 例 ABCD01012345<br>アルファベット６文字 ([For Large Scale Data](/documents/prefix.html#large))＋８～１０ 桁の数字: 例 ABCDEF01012345  |
+|  bulk<br>[WGS](/ddbj/wgs.html),[TSA](/ddbj/tsa.html),[TLS](/ddbj/tls.html)  |  アルファベット４文字 ([For Large Scale Data](/documents/prefix.html#large))＋８～１０桁の数字: 例 ABCD01012345<br>アルファベット６文字 ([For Large Scale Data](/documents/prefix.html#large))＋９～１１桁の数字: 例 ABCDEF010123456  |
 |  [MGA](/ddbj/mga.html)  |  アルファベット５文字＋７ 桁以上の数字: 例 ABCDE1234567  |
 |  [protein_id](/ddbj/qualifiers.html#protein_id)  |  アルファベット３文字 ([protein_id prefix list](/documents/prefix.html#protein))＋５桁の数字: 例 ABC12345<br>アルファベット３文字 ([protein_id prefix list](/documents/prefix.html#protein))＋７桁の数字: 例 ABC1234567 |
 
