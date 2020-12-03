@@ -110,7 +110,7 @@ Figure2: Benchmark result of models
 
 ## DDBJデータ解析チャレンジ Q&A <a name="faq"></a>
 
-{:.challenge-faq}
+{:.faqicon}
 DDBJデータ解析チャレンジの内容や結果は論文に投稿できますか？  
 : DDBJチャレンジ報告論文をジャーナルに投稿予定です。上位入賞者の方には、共著者としてご参加いただきます。詳しくは チャレンジ賞 を参照ください。
 

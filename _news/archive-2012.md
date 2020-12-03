@@ -72,7 +72,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn121130"><a href="#wn121130">DDBJ/EMBL/GenBank Feature Table Definition 改訂</a></h2>
   <div class="news_date">2012年11月30日</div>
-  <div class="news_content"><dl><dd><a href="/ddbj/feature-table-e.html">Feature Table Definition</a> は， DDBJ/EMBL-Bank/GenBank 国際塩基配列データベース構築のために，DDBJ, EMBL-Bank, GenBank が三者間で定めた共通のアノテーション規範です。2012年11月に Feature Table Definition は version 10.2 に改訂されました。 </dd></dl></div>
+  <div class="news_content"><dl><dd><a href="/ddbj/feature-table.html">Feature Table Definition</a> は， DDBJ/EMBL-Bank/GenBank 国際塩基配列データベース構築のために，DDBJ, EMBL-Bank, GenBank が三者間で定めた共通のアノテーション規範です。2012年11月に Feature Table Definition は version 10.2 に改訂されました。 </dd></dl></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -423,7 +423,7 @@ FT   misc_feature    1..88           FT   /note="genetic maker"</code></pre><br>
 <div class="news_post_list">
   <h2 class="news_title" id="wn120629"><a href="#wn120629">DDBJ/EMBL/GenBank Feature Table Definition 改訂</a></h2>
   <div class="news_date">2012年06月29日</div>
-  <div class="news_content"><dl><dd><a href="/ddbj/feature-table-e.html">Feature Table Definition (FT-Doc)</a> は， DDBJ/EMBL-Bank/GenBank 国際塩基配列データベース構築のために，DDBJ, EMBL-Bank, GenBank が三者間で定めた共通のアノテーション規範です。2012年5月に Feature Table Definition が改訂されました。 Version は，10.1 です。</dd></dl></div>
+  <div class="news_content"><dl><dd><a href="/ddbj/feature-table.html">Feature Table Definition (FT-Doc)</a> は， DDBJ/EMBL-Bank/GenBank 国際塩基配列データベース構築のために，DDBJ, EMBL-Bank, GenBank が三者間で定めた共通のアノテーション規範です。2012年5月に Feature Table Definition が改訂されました。 Version は，10.1 です。</dd></dl></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>

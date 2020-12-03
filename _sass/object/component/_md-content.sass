@@ -17,7 +17,7 @@ $MARGIN_BOTTOM: 1rem
         display: inline-block
         background-size: 1.4rem
         vertical-align: middle
-    &[href*="ddbj.nig.ac.jp"],&[href*="youtu.be"],&.withoutpseudoelement
+    &[href*="ddbj.nig.ac.jp"],&[href*="youtu.be"],&[href*="youtube.com"],&[href*="slideshare.net"],&.withoutpseudoelement
       &:after
         display: none
   .group1
@@ -132,6 +132,8 @@ $MARGIN_BOTTOM: 1rem
     dt
       font-weight: bold
     dd
+      img
+        margin-bottom: .2rem
     + dt
       margin-top: 1rem
     dd * 
@@ -282,6 +284,16 @@ $MARGIN_BOTTOM: 1rem
 
   .webpageicon
     width: 30px
+
+  .faqicon
+    dt,dd
+      background-repeat: no-repeat  
+      background-position: left top .5rem
+      padding-left: 3rem
+    dt
+      background-image: url(/assets/images/parts/FAQ_Q.png) 
+    dd
+      background-image: url(/assets/images/parts/FAQ_A.png) 
 
   .tsv
     width: 4.5rem

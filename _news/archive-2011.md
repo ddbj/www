@@ -644,7 +644,7 @@ lang: ja
 <pre class="highlight"><code>BCT（44 entries）  / ddbjbct2.DAD.gz, ddbjbct10.DAD.gzHUM（13 entries）  
 / ddbjhum.DAD.gz INV（9 entries）   / ddbjinv2.DAD.gz PLN（1 entry）     
 / ddbjpln2.DAD.gz SYN（1 entry）     / ddbjsyn.DAD.gzVRL（44 entries）  
-/ ddbjvrl1.DAD.gzVRT（274 entries） / ddbjvrt.DAD.gz </code></pre>ユーザの皆様にご迷惑をお掛けいたしました事を深くお詫び申し上げます。 </div>
+/ ddbjvrl1.DAD.gzVRT（274 entries） / ddbjvrt.DAD.gz </code></pre><br>ユーザの皆様にご迷惑をお掛けいたしました事を深くお詫び申し上げます。 </div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: メンテナンス</span>
@@ -678,7 +678,7 @@ lang: ja
 / ddbjpln5.seq.gz，ddbjpln7.seq.gz ROD（27 entries）  / ddbjrod5.seq.gz SYN（1 entry）     
 / ddbjsyn.seq.gz VRL（33 entries）  / ddbjvrl1.seq.gz， VRT（403 entries） 
 / ddbjvrt1.seq.gz，ddbjvrt3.seq.gz，ddbjvrt4.seq.gz CON（16,633 entries）  
-/ ddbjcon5.seq.gz, ddbjcon6.seq.gz, ddbjcon7.seq.gz, ddbjcon8.seq.gz, ddbjcon11.seq.</code></pre> ユーザの皆様にご迷惑をお掛けいたしました事を深くお詫び申し上げます。</dd></div>
+/ ddbjcon5.seq.gz, ddbjcon6.seq.gz, ddbjcon7.seq.gz, ddbjcon8.seq.gz, ddbjcon11.seq.</code></pre><br>ユーザの皆様にご迷惑をお掛けいたしました事を深くお詫び申し上げます。</dd></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: メンテナンス</span>

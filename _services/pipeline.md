@@ -280,11 +280,9 @@ Genomics 1988, 2(3):231-239.
 - 3\. Input a specification（Uploadしたファイルの注釈付け２）
 1. シークエンサの機種を選択します。
 2. Study titleを入力します。
-3. 登録(SUBMITをクリック)します。
+3. 登録(SUBMITをクリック)します。<br>
 ![]({{ site.baseurl }}/assets/images/help/Registration-of-fastqfasta-files_Input-a-specification_11.png)
-4. 処理終了、Assembly/Mapplingをクリックすると、[Selecting Query Files画面](#FTP)に遷移します。  
-＊Uploadしたファイルを使用して解析が可能になっています。
-
+4. 処理終了、Assembly/Mapplingをクリックすると、[Selecting Query Files画面](#FTP)に遷移します。<br>＊Uploadしたファイルを使用して解析が可能になっています。
 [![]({{ site.baseurl }}/assets/images/help/Registration-complete_12.png)]({{ site.baseurl }}/assets/images/help/Registration-complete_12.png){:.group1}
 
 #### By HTTP(slower) <a name="By_HTTPslower"></a>
@@ -292,9 +290,9 @@ Genomics 1988, 2(3):231-239.
 1. Browse and Uploadをクリックします。
 2. ローカルPCからファイルを選択します。開始するとUpload経過が表示されます。
 [![]({{ site.baseurl }}/assets/images/help/Registration_-filesUpload_HTTP_11.png)]({{ site.baseurl }}/assets/images/help/Registration_-filesUpload_HTTP_11.png){:.group1}
-3. Uploadが完了したらページ再読み込みします。
+3. Uploadが完了したらページ再読み込みします。<br>
 [![]({{ site.baseurl }}/assets/images/help/Registration_-filesUpload_HTTP_21.png)]({{ site.baseurl }}/assets/images/help/Registration_-filesUpload_HTTP_21.png){:.group1}
-4. ファイルがリストに追加されています。
+4. ファイルがリストに追加されています。<br>
 [![]({{ site.baseurl }}/assets/images/help/Registration_-filesUpload_HTTP_31.png)]({{ site.baseurl }}/assets/images/help/Registration_-filesUpload_HTTP_31.png){:.group1}
 
 ## Set Parameters for Preprocessing<a name="SetPrmtPrePro"></a> 
@@ -330,7 +328,7 @@ Encoding）](//en.wikipedia.org/wiki/FASTQ_format#Encoding)
 ### クエリーファイルを一つのジョブで実行 <a name="Query1"></a>
 
 1. 編集したいファイルにチェックを入れます。
-2. confirmをクリックします。
+2. confirmをクリックします。<br>
 [![]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_61.png)]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_61.png){:.group1}
 3. 確認
 4. 次へ
@@ -340,12 +338,12 @@ Encoding）](//en.wikipedia.org/wiki/FASTQ_format#Encoding)
 ### クエリーファイルを複数のジョブで実行 <a name="Query2"></a>
 
 1. 一つのジョブとして編集したいファイルにチェックを入れます。
-2. confirmをクリックします。
+2. confirmをクリックします。<br>
 [![]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_111.png)]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_111.png){:.group1}
-3. 確認
+3. 確認<br>
 [![]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_121.png)]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_121.png){:.group1}
 4. 残りのファイルの内、別のジョブとして編集したいファイルにチェックを入れます。
-5. confirmをクリックします。
+5. confirmをクリックします。<br>
 [![]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_131.png)]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_131.png){:.group1}
 6. クエリセット１、２ができます。（JOBが２つ投入）
 7. 次へ
