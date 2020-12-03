@@ -331,7 +331,7 @@ DDBJ のキュレータが、公開に必要な事項を、国際塩基配列デ
 : 公開予定日とは DDBJ で公開作業を開始する日付けです。登録者が必要に応じて設定します。<br>参照: [データ公開原則](/documents/data-release-policy.html)
 
 業務日  <a name="working-day"></a>
-: DDBJ センターは土曜日と日曜日に加えて、[国民の祝日](//eco.mtk.nao.ac.jp/koyomi/faq/holiday.html)、年末年始(12月29日から翌年の1月３日)、[情報・システム研究機構](http://www.rois.ac.jp//index.html)の定める夏季休業日(８月中の２日間) には業務を休止します。DDBJ Calendar もご参照ください。
+: DDBJ センターは土曜日と日曜日に加えて、[国民の祝日](//eco.mtk.nao.ac.jp/koyomi/faq/holiday.html)、年末年始(12月29日から翌年の1月３日)、[情報・システム研究機構](https://www.rois.ac.jp/index.html)の定める夏季休業日(８月中の２日間) には業務を休止します。DDBJ Calendar もご参照ください。
 
 フラットファイル (flat file)  <a name="flatfile"></a>
 : フラットファイルとは、DDBJ のデータ公開形式です。<br>参照: [DDBJ のデータ公開形式 (flat file) の説明](/ddbj/flat-file.html)
