@@ -321,7 +321,7 @@ input, textarea, select, button {
     display: inline-block;
     background-size: 1.4rem;
     vertical-align: middle; }
-  .md-content a[href*="ddbj.nig.ac.jp"]:after, .md-content a[href*="youtu.be"]:after, .md-content a[href*="youtube.com"]:after, .md-content a[href*="slideshare.net"]:after, .md-content a.withoutpseudoelement:after {
+  .md-content a[href*="ddbj.nig.ac.jp"]:after, .md-content a[href*="youtu.be"]:after, .md-content a[href*="youtube.com"]:after, .md-content a[href*="slideshare.net"]:after, .md-content a[href*="drive.google.com"]:after, .md-content a.withoutpseudoelement:after {
     display: none; }
   .md-content .group1 {
     text-decoration: none; }
@@ -470,6 +470,8 @@ input, textarea, select, button {
       vertical-align: middle; }
       .md-content table tr td.borderbtm, .md-content table tr th.borderbtm {
         border-bottom: 0.1rem solid #736357; }
+      .md-content table tr td.borderrgt, .md-content table tr th.borderrgt {
+        border-right: 0.1rem solid #736357; }
     .md-content table tr:last-child > td, .md-content table tr:last-child th {
       border-bottom: 0.1rem solid #736357; }
     .md-content table + table {
@@ -557,7 +559,7 @@ input, textarea, select, button {
     vertical-align: middle;
     margin-left: .2rem; }
   .md-content .webpageicon {
-    width: 30px; }
+    width: 3rem; }
   .md-content .faqicon dt, .md-content .faqicon dd {
     background-repeat: no-repeat;
     background-position: left top .5rem;

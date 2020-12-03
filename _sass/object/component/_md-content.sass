@@ -17,7 +17,7 @@ $MARGIN_BOTTOM: 1rem
         display: inline-block
         background-size: 1.4rem
         vertical-align: middle
-    &[href*="ddbj.nig.ac.jp"],&[href*="youtu.be"],&[href*="youtube.com"],&[href*="slideshare.net"],&.withoutpseudoelement
+    &[href*="ddbj.nig.ac.jp"],&[href*="youtu.be"],&[href*="youtube.com"],&[href*="slideshare.net"],&[href*="drive.google.com"],&.withoutpseudoelement
       &:after
         display: none
   .group1
@@ -180,6 +180,8 @@ $MARGIN_BOTTOM: 1rem
         vertical-align: middle
         &.borderbtm
           border-bottom: .1rem solid $COLOR_GRAY
+        &.borderrgt
+          border-right: .1rem solid $COLOR_GRAY
       &:last-child
         > td, th
           border-bottom: .1rem solid $COLOR_GRAY
@@ -287,7 +289,7 @@ $MARGIN_BOTTOM: 1rem
     margin-left: .2rem
 
   .webpageicon
-    width: 30px
+    width: 3rem
 
   .faqicon
     dt,dd
