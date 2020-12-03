@@ -2,7 +2,7 @@
 layout: indexed_content
 title: DDBJ staff presentations (2001-2008)
 pathname: past-presentations-e
-category: _activities
+category: activities
 lang: en
 related_pages:
   - title: DDBJ staff papers (2009-)

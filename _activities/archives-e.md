@@ -2,7 +2,7 @@
 layout: indexed_content
 title: DDBJ Publications Archive
 pathname: archives-e
-category: _activities
+category: activities
 lang: en
 related_pages:
   - title: DDBJ staff papers (2009-)

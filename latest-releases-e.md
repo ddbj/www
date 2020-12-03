@@ -2,7 +2,7 @@
 layout: indexed_content
 title: Latest Release Information
 pathname: latest-releases-e
-category: www
+
 lang: en
 related_pages:
   - title: DB out/in statistics

@@ -2,7 +2,7 @@
 layout: indexed_content
 title: FASTAとBLASTについて
 pathname: homology-doc
-category: _activities
+category: activities
 lang: ja
 related_pages:
   - title: DDBJ スタッフの論文 (1996-2008)

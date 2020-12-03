@@ -2,7 +2,7 @@
 layout: indexed_content
 title: DDBJ staff papers（1996-2008）
 pathname: past-papers-e
-category: _activities
+category: activities
 lang: en
 related_pages:
   - title: DDBJ staff papers (2009-)

@@ -2,7 +2,7 @@
 layout: indexed_content
 title: page-access
 pathname: insdc-e
-category: www
+
 lang: en
 related_pages:
   - title: INSDC Status Document

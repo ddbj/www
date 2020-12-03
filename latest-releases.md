@@ -3,7 +3,7 @@ layout: indexed_content
 lang: ja
 title: 最新リリースの情報
 pathname: latest-releases
-category: www
+
 lang: ja
 related_pages:
   - title: DB の out/in 統計量

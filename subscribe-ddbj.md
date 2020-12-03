@@ -2,7 +2,7 @@
 layout: indexed_content
 title: メールマガジン申し込み
 pathname: subscribe-ddbj
-category: www
+
 lang: ja
 ---
 

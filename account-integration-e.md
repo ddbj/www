@@ -2,7 +2,7 @@
 layout: indexed_content
 title: New account system
 pathname: account-integration-e
-category: www
+
 lang: en
 ---
 

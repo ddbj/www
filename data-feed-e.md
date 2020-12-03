@@ -2,7 +2,7 @@
 layout: indexed_content
 title: RSS Feeds
 pathname: data-feed-e
-category: www
+
 lang: en
 ---
 

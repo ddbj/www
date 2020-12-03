@@ -2,7 +2,7 @@
 layout: indexed_content
 title: Group
 pathname: group-e
-category: www
+
 lang: en
 ---
 

@@ -2,7 +2,7 @@
 layout: indexed_content
 title: Before sending inquiry to us
 pathname: before-sending-inquiries-e
-category: www
+
 lang: en
 ---
 

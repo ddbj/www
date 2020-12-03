@@ -2,7 +2,7 @@
 layout: indexed_content
 title: お問い合わせ
 pathname: contact-ddbj
-category: www
+
 lang: ja
 ---
 

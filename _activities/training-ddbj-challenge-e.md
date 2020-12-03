@@ -2,7 +2,7 @@
 layout: indexed_content
 title: DDBJ Data Analysis Challenge
 pathname: training-ddbj-challenge-e
-category: _activities
+category: activities
 lang: en
 ---
 

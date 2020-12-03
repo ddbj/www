@@ -2,7 +2,7 @@
 layout: indexed_content
 title: DDBJ 運営スタッフ
 pathname: ddbj-staff
-category: www
+
 lang: ja
 ---
 

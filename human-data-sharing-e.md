@@ -2,7 +2,7 @@
 layout: indexed_content
 title: Notification for research participants regarding our database activities for human data
 pathname: human-data-sharing-e
-category: www
+
 lang: en
 ---
 

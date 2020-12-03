@@ -2,7 +2,7 @@
 layout: indexed_content
 title: DDBJ の塩基配列解析ツールについて
 pathname: ddbj-pipeline
-category: _activities
+category: activities
 lang: ja
 related_pages:
   - title: DDBJ スタッフの論文 (1996-2008)

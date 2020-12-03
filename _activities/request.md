@@ -2,7 +2,7 @@
 layout: indexed_content
 title: 「ユーザーの皆様へ，お願いです！」
 pathname: request
-category: _activities
+category: activities
 lang: ja
 related_pages:
   - title: DDBJ スタッフの論文 (1996-2008)

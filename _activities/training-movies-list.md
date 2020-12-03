@@ -2,7 +2,7 @@
 layout: indexed_content
 title: 動画一覧
 pathname: training-movies-list
-category: _activities
+category: activities
 lang: ja
 ---
 

@@ -2,7 +2,7 @@
 layout: indexed_content
 title: RSS フィード
 pathname: data-feed
-category: www
+
 lang: ja
 ---
 

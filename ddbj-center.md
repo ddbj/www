@@ -2,7 +2,7 @@
 layout: indexed_content
 title: DDBJ センターについて
 pathname: ddbj-center
-category: www
+
 lang: ja
 related_pages:
   - title: DDBJ 運営スタッフ

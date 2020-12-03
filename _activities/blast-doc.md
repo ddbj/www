@@ -2,7 +2,7 @@
 layout: indexed_content
 title: 相同性検索プログラムBLASTの内部構造
 pathname: blast-doc
-category: _activities
+category: activities
 lang: ja
 related_pages:
   - title: DDBJ スタッフの論文 (2009-)

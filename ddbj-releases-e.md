@@ -2,7 +2,7 @@
 layout: indexed_content
 title: Release Notes of DDBJ Releases
 pathname: ddbj-releases-e
-category: www
+
 lang: en
 related_pages:
   - title: DB out/in statistics

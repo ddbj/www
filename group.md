@@ -2,7 +2,7 @@
 layout: indexed_content
 title: グループについて
 pathname: group
-category: www
+
 lang: ja
 ---
 

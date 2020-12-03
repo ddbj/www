@@ -2,7 +2,7 @@
 layout: indexed_content
 title: DDBJ スタッフの論文 (1996-2008)
 pathname: past-papers
-category: _activities
+category: activities
 lang: ja
 related_pages:
   - title: DDBJ スタッフの講演発表（2001-2006）

@@ -2,7 +2,7 @@
 layout: indexed_content
 title: DDBJ での特許関連配列データの公開業務の紹介
 pathname: patent
-category: _activities
+category: activities
 lang: ja
 related_pages:
   - title: DDBJ スタッフの論文 (1996-2008)

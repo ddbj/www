@@ -2,7 +2,7 @@
 layout: indexed_content
 title: 発行物アーカイブ
 pathname: archives
-category: _activities
+category: activities
 lang: ja
 related_pages:
   - title: DDBJ データ解析チャレンジ

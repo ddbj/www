@@ -2,7 +2,7 @@
 layout: indexed_content
 title: 登録アカウント
 pathname: account
-category: www
+
 lang: ja
 ---
 

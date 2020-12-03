@@ -2,7 +2,7 @@
 layout: indexed_content
 title: Access
 pathname: ddbj-access-e
-category: www
+
 lang: en
 ---
 

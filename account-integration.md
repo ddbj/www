@@ -2,7 +2,7 @@
 layout: indexed_content
 title: 新アカウントシステムへの移行
 pathname: account-integration
-category: www
+
 lang: ja
 ---
 

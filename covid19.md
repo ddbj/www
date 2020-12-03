@@ -2,7 +2,7 @@
 layout: indexed_content
 title: 新型コロナウイルス（SARS-CoV-2）に関する研究データ・リソース
 pathname: covid19
-category: www
+
 lang: ja
 ---
 

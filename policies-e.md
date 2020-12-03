@@ -2,7 +2,7 @@
 layout: indexed_content
 title: Usage Policies and Disclaimers for Website, Data and Services Provided from DDBJ
 pathname: policies-e
-category: www
+
 lang: en
 ---
 

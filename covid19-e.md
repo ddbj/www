@@ -2,7 +2,7 @@
 layout: indexed_content
 title: Research data and resource sites of SARS-CoV-2
 pathname: covid19-e
-category: www
+
 lang: en
 ---
 

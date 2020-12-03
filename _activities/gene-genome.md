@@ -2,7 +2,7 @@
 layout: indexed_content
 title: 遺伝子とゲノム
 pathname: gene-genome
-category: _activities
+category: activities
 lang: ja
 related_pages:
   - title: DDBJ Mail Magazine

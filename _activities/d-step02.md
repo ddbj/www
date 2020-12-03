@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: 第2回 D-STEP 講習会 & Symposium on Evolutionary Genetics and Omics
-category: _activities
+category: activities
 lang: ja
 ---
 
