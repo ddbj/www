@@ -5,7 +5,7 @@ category: faq
 db:
   - ddbj
 tags: 
-  - Mass
+  - Mass Submission System
   - Submission
   - System
 date: 2014-06-04T14:36:23
