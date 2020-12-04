@@ -21,27 +21,17 @@ tag_label:
     <main class="mainview">
       <ul class="tagging-list-view">
 
-        {% comment %} 年次報告書 {% endcomment %}
-        {% for activity in site.data.annual_reports.items %}
-          {% assign label = activity.title[page.lang] %}
-          {% assign date = activity.date %}
-          {% assign tag_label = site.data.annual_reports.dictionary.tag[page.lang] %}
-          {% capture body %}
-            <a href="{{ activity.report_url[page.lang] }}">{{ site.data.annual_reports.dictionary.report_url[page.lang] }}</a>
-            {% if activity.budget_pdf %}
-              &nbsp;/&nbsp;<a href="{{ activity.budget_pdf[page.lang] }}">{{ site.data.annual_reports.dictionary.budget_pdf[page.lang] }}</a>
-            {% endif %}
-            {% if activity.budget_excel %}
-              &nbsp;/&nbsp;<a href="{{ activity.budget_excel[page.lang] }}">{{ site.data.annual_reports.dictionary.budget_excel[page.lang] }}</a>
-            {% endif %}
-            {% if activity.self_evaluation %}
-              &nbsp;&nbsp;/&nbsp;&nbsp;<a href="{{ activity.self_evaluation[page.lang] }}">{{ site.data.annual_reports.dictionary.self_evaluation[page.lang] }}</a>
-            {% endif %}
-          {% endcapture %}
-          {% include activity-view.html tag="annual_report" %}
+        {% comment %} 講習会 {% endcomment %}
+        {% assign activities = site.activities | where: "category", "training" %}
+        {% for activity in activities %}
+          {% assign label = activity.title %}
+          {% assign date = activity.start_date %}
+          {% assign tag_label = activity.keyword %}
+          {% assign body = activity.content | strip_html | truncate: 100 %}
+          {% include activity-view.html tag="training" %}
         {% endfor %}
 
-        {% comment %} 論文・講演・出版 {% endcomment %}
+        {% comment %} 論文・講演発表・出版物 {% endcomment %}
         {% for activity in site.data.achievements.items %}
           {% assign label = activity.title %}
           {% assign date = activity.date | date: "%Y / %m / %d" %}
@@ -61,8 +51,28 @@ tag_label:
           {% endcapture %}
           {% include activity-view.html tag="paper" %}
         {% endfor %}
+      
+        {% comment %} 報告書 {% endcomment %}
+        {% for activity in site.data.annual_reports.items %}
+          {% assign label = activity.title[page.lang] %}
+          {% assign date = activity.date %}
+          {% assign tag_label = site.data.annual_reports.dictionary.tag[page.lang] %}
+          {% capture body %}
+            <a href="{{ activity.report_url[page.lang] }}">{{ site.data.annual_reports.dictionary.report_url[page.lang] }}</a>
+            {% if activity.budget_pdf %}
+              &nbsp;/&nbsp;<a href="{{ activity.budget_pdf[page.lang] }}">{{ site.data.annual_reports.dictionary.budget_pdf[page.lang] }}</a>
+            {% endif %}
+            {% if activity.budget_excel %}
+              &nbsp;/&nbsp;<a href="{{ activity.budget_excel[page.lang] }}">{{ site.data.annual_reports.dictionary.budget_excel[page.lang] }}</a>
+            {% endif %}
+            {% if activity.self_evaluation %}
+              &nbsp;&nbsp;/&nbsp;&nbsp;<a href="{{ activity.self_evaluation[page.lang] }}">{{ site.data.annual_reports.dictionary.self_evaluation[page.lang] }}</a>
+            {% endif %}
+          {% endcapture %}
+          {% include activity-view.html tag="annual_report" %}
+        {% endfor %}
 
-        {% comment %} 国際実務者会 {% endcomment %}
+        {% comment %} 国際実務者会議報告 {% endcomment %}
         {% assign activities = site.activities | where: "category", "icm" %}
         {% for activity in activities %}
           {% assign label = activity.title %}
@@ -72,16 +82,6 @@ tag_label:
           {% include activity-view.html tag="icm" %}
         {% endfor %}
 
-        {% comment %} 講習会 {% endcomment %}
-        {% assign activities = site.activities | where: "category", "training" %}
-        {% for activity in activities %}
-          {% assign label = activity.title %}
-          {% assign date = activity.start_date %}
-          {% assign tag_label = activity.keyword %}
-          {% assign body = activity.content | strip_html | truncate: 100 %}
-          {% include activity-view.html tag="training" %}
-        {% endfor %}
-      
       </ul>
     </main>
   </div>
