@@ -25,6 +25,14 @@
 		"oAP": "/.gitignore",
 		"oF": 0
 		},
+	"/.jekyll-metadata": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.jekyll-metadata",
+		"oF": 0
+		},
 	"/404.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -11621,12 +11629,12 @@
 		"oAP": "/_includes/activity-view.html",
 		"oF": 0
 		},
-	"/_includes/breadcrumb-home.html": {
+	"/_includes/breadcrumb.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/_includes/breadcrumb-home.html",
+		"oAP": "/_includes/breadcrumb.html",
 		"oF": 0
 		},
 	"/_includes/footer.html": {
@@ -98999,7 +99007,7 @@
 		},
 	"/assets/images/books/integration_d_way.png": {
 		"ft": 32768,
-		"iS": 59838,
+		"iS": 22721,
 		"oA": 0,
 		"oAP": "/assets/images/books/integration_d_way.png",
 		"oF": 0,

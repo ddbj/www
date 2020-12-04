@@ -1,8 +1,6 @@
 ---
 layout: indexed_content
-title: ウェブサイトとデータ・サービスの利用に関するポリシーと免責事項
-
-
+title: 利用規約
 lang: ja
 ---
 
