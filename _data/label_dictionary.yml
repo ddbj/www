@@ -19,6 +19,9 @@ clustalw:
 ddbj:
   en: Annotated/Assembled Sequences (DDBJ)
   ja: Annotated/Assembled Sequences (DDBJ)
+dta:
+  en: Trace Archive
+  ja: Trace Archive
 dra:
   en: Sequence Read Archive (DRA)
   ja: Sequence Read Archive (DRA)
