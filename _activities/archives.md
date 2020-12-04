@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: 発行物アーカイブ
-pathname: archives
+
 category: activities
 lang: ja
 related_pages:

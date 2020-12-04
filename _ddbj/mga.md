@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: MGA
-pathname: mga
+
 category: ddbj
 current_tab: other
 tab_menu:

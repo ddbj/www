@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: INSDC
-pathname: insdc
+
 
 lang: ja
 related_pages:

@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: News from 2000
-pathname: archive-2000-e
+
 category: news
 lang: en
 ---

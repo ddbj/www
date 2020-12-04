@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Faculty Staff of DDBJ
-pathname: ddbj-staff-e
+
 
 lang: en
 ---

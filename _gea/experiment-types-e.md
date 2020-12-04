@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Experiment types in GEA
-pathname: experiment-types-e
+
 category: gea
 current_tab: home
 tab_menu:

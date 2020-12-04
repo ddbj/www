@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Submissions Overview
-pathname: overview-e
+
 category: gea
 current_tab: submission overview
 tab_menu:

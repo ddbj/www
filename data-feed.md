@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: RSS フィード
-pathname: data-feed
+
 
 lang: ja
 ---

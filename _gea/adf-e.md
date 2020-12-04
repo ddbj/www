@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Array design
-pathname: adf-e
+
 category: gea
 current_tab: submission overview
 tab_menu:

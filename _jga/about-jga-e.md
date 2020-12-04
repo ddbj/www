@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: About JGA
-pathname: about-jga-e
+
 category: jga
 current_tab: home
 tab_menu:

@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Single-cell submission guide
-pathname: single-cell
+
 category: gea
 current_tab: submission overview
 tab_menu:

@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: DDBJ の塩基配列解析ツールについて
-pathname: ddbj-pipeline
+
 category: activities
 lang: ja
 related_pages:

@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: TLS
-pathname: tls
+
 category: ddbj
 current_tab: data_categories
 tab_menu:

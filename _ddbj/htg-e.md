@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: HTG
-pathname: htg-e
+
 category: ddbj
 current_tab: data_categories
 tab_menu:

@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: WGS
-pathname: wgs
+
 category: ddbj
 current_tab: data_categories
 tab_menu:

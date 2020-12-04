@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Controlled vocabulary for /country qualifier
-pathname: country
+
 category: ddbj
 current_tab: home
 tab_menu:

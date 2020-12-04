@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Japanese Genotype-phenotype Archive
-pathname: index-e
+
 category: jga
 current_tab: home
 tab_menu:

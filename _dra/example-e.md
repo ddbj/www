@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Example of metadata
-pathname: example-e
+
 category: dra
 current_tab: handbook
 tab_menu:

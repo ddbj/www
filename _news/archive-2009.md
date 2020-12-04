@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: News from 2009
-pathname: archive-2009
+
 category: news
 lang: ja
 ---

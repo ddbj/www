@@ -1,7 +1,7 @@
 ---
 layout: top
 title: JVar for Structural Variation
-pathname: index
+
 category: jvar-sv
 current_tab: home
 tab_menu:

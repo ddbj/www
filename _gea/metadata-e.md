@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Metadata
-pathname: metadata-e
+
 category: gea
 current_tab: submission overview
 tab_menu:

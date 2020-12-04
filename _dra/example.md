@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: メタデータの例
-pathname: example
+
 category: dra
 current_tab: handbook
 tab_menu:

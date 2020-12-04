@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Submit microarray experiment
-pathname: submit-array-e
+
 category: gea
 current_tab: submission overview
 tab_menu:

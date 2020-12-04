@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Third-party reanalysis data
-pathname: third-party-reanalysis
+
 category: gea
 current_tab: home
 tab_menu:

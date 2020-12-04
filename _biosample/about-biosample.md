@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: BioSample について
-pathname: about-biosample
+
 category: biosample
 current_tab: about bioProject
 tab_menu:

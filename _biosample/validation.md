@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Validation rules
-pathname: validation
+
 category: biosample
 current_tab: validation rules
 tab_menu:

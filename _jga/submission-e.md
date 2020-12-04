@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Submission to JGA
-pathname: submission-e
+
 category: jga
 current_tab: submission
 tab_menu:

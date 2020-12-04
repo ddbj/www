@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: /inference qualifier vocabulary recommendation document
-pathname: inference-e
+
 category: ddbj
 current_tab: home
 tab_menu:

@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: News from 1998
-pathname: archive-1998
+
 category: news
 lang: ja
 ---

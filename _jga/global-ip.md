@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: IP アドレスを調べる方法
-pathname: global-ip
+
 category: jga
 lang: ja
 ---

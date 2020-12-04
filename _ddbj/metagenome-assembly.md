@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: メタゲノムアセンブリ
-pathname: metagenome-assembly
+
 category: ddbj
 current_tab: data_categories
 tab_menu:

@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: グループについて
-pathname: group
+
 
 lang: ja
 ---

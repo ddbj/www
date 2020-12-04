@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: DRA 共同研究プロジェクトデータの取扱い
-pathname: sra-project
+
 category: dra
 current_tab: home
 tab_menu:

@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: News from 2004
-pathname: archive-2004
+
 category: news
 lang: ja
 ---

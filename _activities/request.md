@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: 「ユーザーの皆様へ，お願いです！」
-pathname: request
+
 category: activities
 lang: ja
 related_pages:

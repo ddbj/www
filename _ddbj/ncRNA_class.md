@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Controlled vocabulary for ncRNA classes
-pathname: ncRNA_class
+
 current_tab: home
 tab_menu:
   - id: home

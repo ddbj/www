@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: News from 2010
-pathname: archive-2010-e
+
 category: news
 lang: en
 ---

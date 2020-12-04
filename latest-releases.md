@@ -2,7 +2,7 @@
 layout: indexed_content
 lang: ja
 title: 最新リリースの情報
-pathname: latest-releases
+
 
 lang: ja
 related_pages:

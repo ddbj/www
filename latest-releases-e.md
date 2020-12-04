@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Latest Release Information
-pathname: latest-releases-e
+
 
 lang: en
 related_pages:

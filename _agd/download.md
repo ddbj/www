@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: 利用手順
-pathname: download
+
 category: agd
 current_tab: submission
 tab_menu:

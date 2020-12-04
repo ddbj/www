@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Data Submission from Genome Project
-pathname: genome-e
+
 category: ddbj
 current_tab: data_categories
 tab_menu:

@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: RSS Feeds
-pathname: data-feed-e
+
 
 lang: en
 ---

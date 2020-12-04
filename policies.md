@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: ウェブサイトとデータ・サービスの利用に関するポリシーと免責事項
-pathname: policies
+
 
 lang: ja
 ---

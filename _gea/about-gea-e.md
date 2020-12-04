@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: About GEA
-pathname: about-gea-e
+
 category: gea
 current_tab: about gea
 tab_menu:

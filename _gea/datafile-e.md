@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Accepted Data File Formats
-pathname: datafile-e
+
 category: gea
 current_tab: submission overview
 tab_menu:

@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: 講習会
-pathname: training
+
 category: activities
 lang: ja
 ---

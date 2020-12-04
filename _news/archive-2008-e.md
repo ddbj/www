@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: News from 2008
-pathname: archive-2008-e
+
 category: news
 lang: en
 ---

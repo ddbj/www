@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Controlled vocabulary for /rpt_type qualifier
-pathname: rpt_type-e
+
 category: ddbj
 current_tab: home
 tab_menu:

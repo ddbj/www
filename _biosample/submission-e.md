@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: DDBJ BioSample Handbook
-pathname: submission-e
+
 category: biosample
 current_tab: handbook
 tab_menu:

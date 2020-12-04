@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Codes Used in Sequence Description
-pathname: code-e
+
 category: ddbj
 current_tab: flat_file
 tab_menu:

@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: サンプル属性
-pathname: attribute
+
 category: biosample
 current_tab: sample attribute
 tab_menu:

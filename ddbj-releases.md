@@ -2,7 +2,7 @@
 layout: indexed_content
 lang: ja
 title: リリースノート (DDBJ, 16S rRNA, DAD)
-pathname: ddbj-releases
+
 
 lang: ja
 related_pages:

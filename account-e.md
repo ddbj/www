@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Submission Account
-pathname: account-e
+
 
 lang: en
 ---

@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Download steps
-pathname: download-e
+
 category: agd
 current_tab: submission
 tab_menu:

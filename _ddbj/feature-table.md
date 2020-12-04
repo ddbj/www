@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: The DDBJ/ENA/GenBank Feature Table Definition
-pathname: feature-table
+
 category: ddbj
 current_tab: home
 tab_menu:

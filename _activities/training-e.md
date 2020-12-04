@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Training events
-pathname: training-e
+
 category: activities
 lang: en
 related_pages:

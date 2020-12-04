@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Data Categories
-pathname: data-categories-e
+
 category: ddbj
 current_tab: data_categories
 tab_menu:

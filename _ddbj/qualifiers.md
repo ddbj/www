@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Qualifier key の定義
-pathname: qualifiers
+
 category: ddbj
 current_tab: flat_file
 tab_menu:

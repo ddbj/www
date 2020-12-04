@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: DDBJ スタッフの講演発表（2001-2006）
-pathname: past-presentations
+
 category: activities
 lang: ja
 related_pages:

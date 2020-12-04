@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: The Genetic Codes
-pathname: codontable-e
+
 category: ddbj
 current_tab: home
 tab_menu:

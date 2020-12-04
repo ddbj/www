@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: page-access
-pathname: insdc-e
+
 
 lang: en
 related_pages:

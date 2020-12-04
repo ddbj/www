@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: DDBJ flat file format
-pathname: flat-file-e
+
 category: ddbj
 current_tab: flat_file
 tab_menu:

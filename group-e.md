@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Group
-pathname: group-e
+
 
 lang: en
 ---

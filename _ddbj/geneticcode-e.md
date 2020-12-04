@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: The Genetic Codes
-pathname: geneticcode-e
+
 category: ddbj
 current_tab: flat_file
 tab_menu:

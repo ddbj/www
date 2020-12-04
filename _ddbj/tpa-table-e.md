@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: TPA Submission Guidelines
-pathname: tpa-table-e
+
 category: ddbj
 current_tab: home
 tab_menu:

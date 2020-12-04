@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: グループ
-pathname: group
+
 category: jga
 current_tab: submission
 tab_menu:

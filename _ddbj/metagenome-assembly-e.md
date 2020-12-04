@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Metagenome Assembly
-pathname: metagenome-assembly-e
+
 category: ddbj
 current_tab: data_categories
 tab_menu:

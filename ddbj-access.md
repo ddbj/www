@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: DDBJ へのアクセス
-pathname: ddbj-access
+
 
 lang: ja
 ---

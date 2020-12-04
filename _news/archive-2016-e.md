@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: News from 2016
-pathname: archive-2016-e
+
 category: news
 lang: en
 ---

@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Patent column from DDBJ
-pathname: patent-e
+
 category: activities
 lang: en
 related_pages:

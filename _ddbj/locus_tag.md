@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: /locus_tag qualifier の記載法
-pathname: locus_tag
+
 category: ddbj
 current_tab: home
 tab_menu:

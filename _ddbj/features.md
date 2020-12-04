@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Feature key
-pathname: features
+
 category: ddbj
 current_tab: flat_file
 tab_menu:

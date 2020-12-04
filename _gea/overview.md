@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: GEA への登録
-pathname: overview
+
 category: gea
 current_tab: submission overview
 tab_menu:

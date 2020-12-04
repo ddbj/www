@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Representative submissions of identical sequences for variation studies
-pathname: representative-sequence-e
+
 category: ddbj
 current_tab: home
 tab_menu:

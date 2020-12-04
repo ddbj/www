@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: New account system
-pathname: account-integration-e
+
 
 lang: en
 ---

@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: INSDC Status Document
-pathname: insdc-status-e
+
 
 lang: en
 ---

@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Reviewer Access
-pathname: reviewer-access-e
+
 category: gea
 current_tab: submission overview
 tab_menu:

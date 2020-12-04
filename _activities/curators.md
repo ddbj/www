@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: DDBJ アノテータの業務紹介
-pathname: curators
+
 category: activities
 lang: ja
 related_pages:

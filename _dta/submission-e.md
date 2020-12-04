@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Trace Archive
-pathname: submission-e
+
 category: dta
 current_tab: submission
 tab_menu:

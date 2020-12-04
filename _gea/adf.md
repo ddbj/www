@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: アレイデザイン
-pathname: adf
+
 category: gea
 current_tab: submission overview
 tab_menu:

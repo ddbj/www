@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: DDBJ センターについて
-pathname: ddbj-center
+
 
 lang: ja
 related_pages:

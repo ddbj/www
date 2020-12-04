@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Submission of environmental sequences
-pathname: environmental-e
+
 category: ddbj
 current_tab: data_categories
 tab_menu:

@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: DDBJ スタッフコラム
-pathname: staff-column
+
 category: activities
 lang: ja
 related_pages:

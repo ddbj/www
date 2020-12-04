@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: About DRA
-pathname: about-dra-e
+
 category: dra
 current_tab: about dra
 tab_menu:

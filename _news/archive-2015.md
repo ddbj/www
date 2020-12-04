@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: News from 2015
-pathname: archive-2015
+
 category: news
 lang: ja
 ---

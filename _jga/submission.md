@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: JGA への登録
-pathname: submission
+
 category: jga
 current_tab: submission
 tab_menu:

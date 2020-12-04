@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: GSS
-pathname: gss-e
+
 category: ddbj
 current_tab: data_categories
 tab_menu:

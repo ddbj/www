@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: The new JGA system
-pathname: update-202009-e
+
 category: jga
 current_tab: submission
 tab_menu:

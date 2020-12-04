@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: About DTA
-pathname: about-dta-e
+
 category: dta
 current_tab: about dta
 tab_menu:

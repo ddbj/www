@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: About DDBJ Center
-pathname: ddbj-center-e
+
 
 lang: en
 related_pages:

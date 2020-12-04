@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: About BioProject
-pathname: about-bioproject-e
+
 category: bioproject
 current_tab: about bioProject
 tab_menu:

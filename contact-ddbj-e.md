@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Contact
-pathname: contact-ddbj-e
+
 
 lang: en
 ---

@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Submission to AGD
-pathname: submission-e
+
 category: agd
 current_tab: submission
 tab_menu:

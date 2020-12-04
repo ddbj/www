@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Submission steps
-pathname: submission-step-e
+
 category: agd
 current_tab: submission
 tab_menu:

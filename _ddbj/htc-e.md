@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: HTC
-pathname: htc-e
+
 category: ddbj
 current_tab: data_categories
 tab_menu:

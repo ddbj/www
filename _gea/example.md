@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: MAGE-TAB の例
-pathname: example
+
 category: gea
 current_tab: submission overview
 tab_menu:

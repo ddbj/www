@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Controlled vocabulary for ncRNA classes
-pathname: ncRNA_class-e
+
 category: ddbj
 current_tab: home
 tab_menu:

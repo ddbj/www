@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: ゲノム支援
-pathname: genome-science
+
 category: dra
 current_tab: home
 tab_menu:

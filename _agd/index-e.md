@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: AMED Genome group sharing Database
-pathname: index-e
+
 category: agd
 current_tab: home
 tab_menu:

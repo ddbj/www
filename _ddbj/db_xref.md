@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Controlled vocabulary for /db_xref qualifier
-pathname: db_xref
+
 category: ddbj
 current_tab: home
 tab_menu:

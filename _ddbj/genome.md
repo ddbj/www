@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Genome Project のデータ登録
-pathname: genome
+
 category: ddbj
 current_tab: data_categories
 tab_menu:

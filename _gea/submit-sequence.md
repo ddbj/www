@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 title: Submit sequencing experiment
-pathname: submit-sequence
+
 category: gea
 current_tab: submission overview
 tab_menu:
