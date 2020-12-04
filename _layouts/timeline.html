@@ -5,15 +5,7 @@ layout: default
   <div class="inner">
     <div class="page-title">
       <h1 class="title">{{ page.title }}</h1>
-      <nav class="breadcrumb-view">
-        <ul>
-          {% include breadcrumb-home.html lang=page.lang %}
-          <li>
-            <a href="{{site.url}}{{site.baseurl}}/{{ page.category }}">{{ page.category }}</a>
-          </li>
-          <li><a>{{ page.title }}</a></li>
-        </ul>
-      </nav>
+      {% include breadcrumb.html lang=page.lang %}
     </div>
   </div>
 </header>
