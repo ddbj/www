@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: Usage Policies and Disclaimers for Website, Data and Services Provided from DDBJ
+title: Terms of Use
 pathname: policies-e
 
 lang: en
