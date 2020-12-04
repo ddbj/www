@@ -25,6 +25,9 @@ dta:
 dra:
   en: Sequence Read Archive (DRA)
   ja: Sequence Read Archive (DRA)
+jvar:
+  en: Japan Variation Database
+  ja: Japan Variation Database
 ftp:
   en: FTP
   ja: FTP

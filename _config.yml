@@ -85,9 +85,7 @@ collections:
     output: true
   jga:
     output: true
-  jvar-snp:
-    output: true
-  jvar-sv:
+  jvar:
     output: true
   metabobank:
     output: true
