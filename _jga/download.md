@@ -1,19 +1,20 @@
 ---
 layout: indexed_content
 title: 利用手順
+
 category: jga
 current_tab: submission
 tab_menu:
-- id: home
+  - id: home
     title: Home
     url: /jga/index.html
-- id: browse researches at nbdc
+  - id: browse researches at nbdc
     title: Browse researches at NBDC
     url: https://humandbs.biosciencedbc.jp/data-use/all-researches
     children:
       - title: DDBJ Search
         url: https://ddbj.nig.ac.jp/search
-- id: submission
+  - id: submission
     title: Submission
     url: /jga/submission.html
     children:
@@ -29,13 +30,14 @@ tab_menu:
         url: https://docs.google.com/spreadsheets/d/1HHlxItj89fQv2oWUNBIHZ4VVGwbcC09WGD5tEiXAQZ4/edit#gid=744299318
       - title: XML Schema
         url: https://github.com/ddbj/pub/tree/master/docs/jga/xsd/
-- id: faq
+  - id: faq
     title: FAQ
     url: /faq/ja/index.html?keyword%5B%5D=jga
 lang: ja
 ---
 
 ## NBDC への利用申請 {#du-application}
+
 [NBDC ヒトデータベースの「利用可能な研究データ一覧」](https://humandbs.biosciencedbc.jp/data-use/all-researches)で使いたいデータを探すことができます。
 [DDBJ Search](https://ddbj.nig.ac.jp/search) でも検索することができます。
 
