@@ -64,14 +64,33 @@ lang: ja
   1. リスト1
 1. リスト1
 
----
+
+1. リスト1
+1. リスト1
+1. リスト1
+    1. リスト1
+    1. リスト1
+    1. リスト1
+1. リスト1
+
+空白4空白4空白4
+空白4空白4空白4
+
+    空白4空白4空白4
+    空白4空白4空白4
 
 ---
 
-*太字*
+---
 
-_斜体_
+testtest *太字* testtest 
 
+testtest **太字** testtest 
+
+
+testtest _斜体_ testtest 
+
+testtest __斜体__ testtest 
 
 
 申請には D-way アカウントが必要です。アカウントが無い場合は申請前に [D-way](https://ddbj.nig.ac.jp/D-way/) アカウントを取得してください。
@@ -115,13 +134,6 @@ D-way アカウント作成後、[NBDC データ申請システム](https://huma
 {::nomarkdown}
 {% include image.html url="books/DS-group.png" caption="データ提供申請グループ" class="w400" %}
 {:/}
-
-
-{::comment}      
-{::nomarkdown}
-{% include image.html url="books/DS-group.png" caption="データ提供申請グループ" class="w400" %}
-{:/}
-{:/comment}
 
 提供申請を開始し、作成した提供申請グループを選択します。
 
