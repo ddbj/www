@@ -78,8 +78,6 @@ JGA ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/subm
 
 メタデータ記入用エクセルファイルを下記よりダウンロードし、内容を英語で記入してください。メタデータの説明は[こちらのページ](/jga/submission.html)をご覧ください。
 
-[![JGA メタデータ記入用エクセル]({{ site.baseurl }}/assets/images/parts/download.png "JGA メタデータ記入用エクセル"){:.w40}]({{ site.baseurl }}/assets/files/submission/JGA_metadata.xlsx)
-
 [![JGA メタデータ記入用エクセル](/assets/images/parts/download.png "JGA メタデータ記入用エクセル"){:.w40}](/assets/files/submission/JGA_metadata.xlsx)
 
 last updated: 2020-09-26
