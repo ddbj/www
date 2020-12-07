@@ -38,16 +38,24 @@ lang: ja
 
 ## NBDC へのデータ提供申請  {#ds-application}
 
-{::comment}
-## NBDC へのデータ提供申請 <a name="ds-application"></a>
-{:/comment}
-
 [NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)から[提供申請](https://humandbs.biosciencedbc.jp/data-submission)します。
 申請時に提供申請グループを作成します。提供申請が NBDC で承認された後、JGA サーバにデータアップロード用ディレクトリが作成されます。
 
 申請には D-way アカウントが必要です。アカウントが無い場合は申請前に [D-way](https://ddbj.nig.ac.jp/D-way/) アカウントを取得してください。
 
 <div class="attention red" markdown="1">
+D-way アカウント作成後、[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
+</div>
+
+<div class="attention red">
+D-way アカウント作成後、[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
+</div>
+
+<div class="attention red" markdown="0">
+D-way アカウント作成後、[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
+</div>
+
+<div class="attention red" markdown="2">
 D-way アカウント作成後、[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
 </div>
 
@@ -70,7 +78,12 @@ D-way アカウント作成後、[NBDC データ申請システム](https://huma
 実際には NBDC 申請システムで申請したアカウントが自動的に申請者になります。登録者が PI と申請者以外にも居る場合は必ず全員をメンバーに含めてください。登録に関する連絡はメンバーアカウントに対して送られます。
 
 {% include image.html url="books/DS-group.png" caption="データ提供申請グループ" class="w400" %}
-      
+
+{::nomarkdown}
+{% include image.html url="books/DS-group.png" caption="データ提供申請グループ" class="w400" %}
+{:/}
+
+
 {::comment}      
 {::nomarkdown}
 {% include image.html url="books/DS-group.png" caption="データ提供申請グループ" class="w400" %}
@@ -140,13 +153,17 @@ JGA ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/subm
 
 認証用秘密鍵を指定する場合。転送対象ファイルは -P と -i オプションの後に指定します。
 
-``` ruby
+```ruby
 $ scp -P443 -i private-key-for-auth JSUB000353_metadata.xlsx account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
 ```
 
-~~~ ruby
+~~~ruby
 $ scp -P443 -i private-key-for-auth JSUB000353_metadata.xlsx account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
 ~~~
+
+{% highlight ruby %}
+$ scp -P443 -i private-key-for-auth JSUB000353_metadata.xlsx account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
+{% endhighlight %}
 
 ~~~
 $ scp -P443 -i private-key-for-auth JSUB000353_metadata.xlsx account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
@@ -249,6 +266,4 @@ JGA キュレータがメタデータとデータファイルを査定します�
 | Third line |quux | baz | bar|
 | Second body|
 | 2 line|
-|===|
-| Footer row|
 
