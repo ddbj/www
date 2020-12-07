@@ -38,8 +38,41 @@ lang: ja
 
 ## NBDC へのデータ提供申請  {#ds-application}
 
-[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)から[提供申請](https://humandbs.biosciencedbc.jp/data-submission)します。
+[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)から[提供申請](https://humandbs.biosciencedbc.jp/data-submission)します。  
 申請時に提供申請グループを作成します。提供申請が NBDC で承認された後、JGA サーバにデータアップロード用ディレクトリが作成されます。
+
+[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)から[提供申請](https://humandbs.biosciencedbc.jp/data-submission)します。<br>
+申請時に提供申請グループを作成します。提供申請が NBDC で承認された後、JGA サーバにデータアップロード用ディレクトリが作成されます。
+
+[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)から[提供申請](https://humandbs.biosciencedbc.jp/data-submission)します。<br/>
+申請時に提供申請グループを作成します。提供申請が NBDC で承認された後、JGA サーバにデータアップロード用ディレクトリが作成されます。
+
+> 引用1
+> 引用1
+> 引用1
+
+- リスト1
+  - リスト1
+  - リスト2
+- リスト2  
+
+1. リスト1
+1. リスト1
+1. リスト1
+  1. リスト1
+  1. リスト1
+  1. リスト1
+1. リスト1
+
+---
+
+---
+
+*太字*
+
+_斜体_
+
+
 
 申請には D-way アカウントが必要です。アカウントが無い場合は申請前に [D-way](https://ddbj.nig.ac.jp/D-way/) アカウントを取得してください。
 
@@ -74,7 +107,7 @@ D-way アカウント作成後、[NBDC データ申請システム](https://huma
 ## 提供申請グループ<a name="data-submitter-group"></a>
 {:/comment}
 
-申請前に提供申請グループを作成します。例の提供申請グループ (subgrp1) では申請及び登録を担当する研究員 (account_b) がオーナー、研究代表者 (account_c) がメンバーとなっています。
+申請前に提供申請グループを作成します。例の提供申請グループ (subgrp1) では申請及び登録を担当する研究員 (account_b) がオーナー、研究代表者 (account_c) がメンバーとなっています。  
 実際には NBDC 申請システムで申請したアカウントが自動的に申請者になります。登録者が PI と申請者以外にも居る場合は必ず全員をメンバーに含めてください。登録に関する連絡はメンバーアカウントに対して送られます。
 
 {% include image.html url="books/DS-group.png" caption="データ提供申請グループ" class="w400" %}
