@@ -41,95 +41,22 @@ lang: ja
 [NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)から[提供申請](https://humandbs.biosciencedbc.jp/data-submission)します。  
 申請時に提供申請グループを作成します。提供申請が NBDC で承認された後、JGA サーバにデータアップロード用ディレクトリが作成されます。
 
-[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)から[提供申請](https://humandbs.biosciencedbc.jp/data-submission)します。<br>
-申請時に提供申請グループを作成します。提供申請が NBDC で承認された後、JGA サーバにデータアップロード用ディレクトリが作成されます。
-
-[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)から[提供申請](https://humandbs.biosciencedbc.jp/data-submission)します。<br/>
-申請時に提供申請グループを作成します。提供申請が NBDC で承認された後、JGA サーバにデータアップロード用ディレクトリが作成されます。
-
-> 引用1
-> 引用1
-> 引用1
-
-- リスト1
-  - リスト1
-  - リスト2
-- リスト2  
-
-1. リスト1
-1. リスト1
-1. リスト1
-  1. リスト1
-  1. リスト1
-  1. リスト1
-1. リスト1
-
-
-1. リスト1
-1. リスト1
-1. リスト1
-    1. リスト1
-    1. リスト1
-    1. リスト1
-1. リスト1
-
-空白4空白4空白4
-空白4空白4空白4
-
-    空白4空白4空白4
-    空白4空白4空白4
-
----
-
----
-
-testtest *太字* testtest 
-
-testtest **太字** testtest 
-
-
-testtest _斜体_ testtest 
-
-testtest __斜体__ testtest 
-
-
 申請には D-way アカウントが必要です。アカウントが無い場合は申請前に [D-way](https://ddbj.nig.ac.jp/D-way/) アカウントを取得してください。
 
 <div class="attention red" markdown="1">
 D-way アカウント作成後、[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
 </div>
 
-<div class="attention red">
-D-way アカウント作成後、[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
-</div>
-
-<div class="attention red" markdown="0">
-D-way アカウント作成後、[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
-</div>
-
-<div class="attention red" markdown="2">
-D-way アカウント作成後、[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
-</div>
-
-{::comment}
-{::options parse_block_html="true" /}
-<div class="attention red">
-D-way アカウント作成後、[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
-</div>
-{:/comment}
-
 以下では JGA データの登録手順を説明します。
 
 ## 提供申請グループ {#data-submitter-group}
-
-{::comment}
-## 提供申請グループ<a name="data-submitter-group"></a>
-{:/comment}
 
 申請前に提供申請グループを作成します。例の提供申請グループ (subgrp1) では申請及び登録を担当する研究員 (account_b) がオーナー、研究代表者 (account_c) がメンバーとなっています。  
 実際には NBDC 申請システムで申請したアカウントが自動的に申請者になります。登録者が PI と申請者以外にも居る場合は必ず全員をメンバーに含めてください。登録に関する連絡はメンバーアカウントに対して送られます。
 
 {% include image.html url="books/DS-group.png" caption="データ提供申請グループ" class="w400" %}
+
+{%- include image.html url="books/DS-group.png" caption="データ提供申請グループ" class="w400" -%}
 
 {::nomarkdown}
 {% include image.html url="books/DS-group.png" caption="データ提供申請グループ" class="w400" %}
@@ -193,32 +120,14 @@ JGA にファイルを scp でアップロードするためには [D-way アカ
 JGA ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/submission/jga/ の下に JGA Submission ID と同名のディレクトリが作成されるので、scp の P オプションでポート番号 443 を指定して、エクセルをアップロードします。scp では公開鍵・秘密鍵認証を利用しており、必要に応じて[D-way アカウントに登録した秘密鍵](/account.html#generate-key-pair)を指定します。
 
 例
-  - アカウント名: account_b
-  - JGA Submission ID: JSUB000353
+- アカウント名: account_b
+- JGA Submission ID: JSUB000353
 
 認証用秘密鍵を指定する場合。転送対象ファイルは -P と -i オプションの後に指定します。
 
-```ruby
-$ scp -P443 -i private-key-for-auth JSUB000353_metadata.xlsx account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
-```
-
-~~~ruby
-$ scp -P443 -i private-key-for-auth JSUB000353_metadata.xlsx account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
-~~~
-
-{% highlight ruby %}
-$ scp -P443 -i private-key-for-auth JSUB000353_metadata.xlsx account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
-{% endhighlight %}
-
-~~~
-$ scp -P443 -i private-key-for-auth JSUB000353_metadata.xlsx account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
-~~~
-
-{::comment}
 ```
 $ scp -P443 -i private-key-for-auth JSUB000353_metadata.xlsx account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
 ```
-{:/comment}
 -P: 接続先ポート番号 443 を指定
 -i: 認証用秘密鍵を指定
 
@@ -300,15 +209,3 @@ $ scp -P443 -i private-key-for-auth *.fastq account_b@jga-gw.ddbj.nig.ac.jp:/con
 JGA キュレータがメタデータとデータファイルを査定します。完成したエクセルからキュレータが XML を生成し、JGA に登録します。
       
 メタデータとデータファイルが検証処理を通過するとアクセッション番号が発行されます。
-
-## テスト {#test}
-
-|---|
-| Default aligned | Left aligned | Center aligned | Right aligned|
-|-|:-|:-:|-:|
-| First body part | Second cell | Third cell | fourth cell|
-| Second line |foo | **strong** | baz|
-| Third line |quux | baz | bar|
-| Second body|
-| 2 line|
-
