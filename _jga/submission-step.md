@@ -54,13 +54,26 @@ D-way アカウント作成後、[NBDC データ申請システム](https://huma
 申請前に提供申請グループを作成します。例の提供申請グループ (subgrp1) では申請及び登録を担当する研究員 (account_b) がオーナー、研究代表者 (account_c) がメンバーとなっています。  
 実際には NBDC 申請システムで申請したアカウントが自動的に申請者になります。登録者が PI と申請者以外にも居る場合は必ず全員をメンバーに含めてください。登録に関する連絡はメンバーアカウントに対して送られます。
 
-{% include image.html url="books/DS-group.png" caption="データ提供申請グループ" class="w400" %}
-
-{%- include image.html url="books/DS-group.png" caption="データ提供申請グループ" class="w400" -%}
+テスト1
 
 {::nomarkdown}
 {% include image.html url="books/DS-group.png" caption="データ提供申請グループ" class="w400" %}
 {:/}
+
+テスト2
+
+{% include image.html url="books/DS-group.png" caption="データ提供申請グループ" class="w400" %}
+
+テスト3
+
+{%- include image.html url="books/DS-group.png" caption="データ提供申請グループ" class="w400" -%}
+
+テスト4
+
+{::nomarkdown}
+{% include image.html url="books/DS-group.png" caption="データ提供申請グループ" class="w400" %}
+{:/}
+
 
 提供申請を開始し、作成した提供申請グループを選択します。
 
