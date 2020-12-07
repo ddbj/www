@@ -36,28 +36,46 @@ tab_menu:
 lang: ja
 ---
 
+## NBDC へのデータ提供申請  {#ds-application}
+
+{::comment}
 ## NBDC へのデータ提供申請 <a name="ds-application"></a>
+{:/comment}
 
 [NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)から[提供申請](https://humandbs.biosciencedbc.jp/data-submission)します。
 申請時に提供申請グループを作成します。提供申請が NBDC で承認された後、JGA サーバにデータアップロード用ディレクトリが作成されます。
 
 申請には D-way アカウントが必要です。アカウントが無い場合は申請前に [D-way](https://ddbj.nig.ac.jp/D-way/) アカウントを取得してください。
 
+<div class="attention red" markdown="1">
+D-way アカウント作成後、[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
+</div>
+
+{::comment}
 {::options parse_block_html="true" /}
 <div class="attention red">
 D-way アカウント作成後、[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
 </div>
+{:/comment}
 
 以下では JGA データの登録手順を説明します。
 
+## 提供申請グループ {#data-submitter-group}
+
+{::comment}
 ## 提供申請グループ<a name="data-submitter-group"></a>
+{:/comment}
 
 申請前に提供申請グループを作成します。例の提供申請グループ (subgrp1) では申請及び登録を担当する研究員 (account_b) がオーナー、研究代表者 (account_c) がメンバーとなっています。
 実際には NBDC 申請システムで申請したアカウントが自動的に申請者になります。登録者が PI と申請者以外にも居る場合は必ず全員をメンバーに含めてください。登録に関する連絡はメンバーアカウントに対して送られます。
+
+{% include image.html url="books/DS-group.png" caption="データ提供申請グループ" class="w400" %}
       
+{::comment}      
 {::nomarkdown}
 {% include image.html url="books/DS-group.png" caption="データ提供申請グループ" class="w400" %}
 {:/}
+{:/comment}
 
 提供申請を開始し、作成した提供申請グループを選択します。
 
@@ -122,9 +140,23 @@ JGA ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/subm
 
 認証用秘密鍵を指定する場合。転送対象ファイルは -P と -i オプションの後に指定します。
 
+``` ruby
+$ scp -P443 -i private-key-for-auth JSUB000353_metadata.xlsx account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
+```
+
+~~~ ruby
+$ scp -P443 -i private-key-for-auth JSUB000353_metadata.xlsx account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
+~~~
+
+~~~
+$ scp -P443 -i private-key-for-auth JSUB000353_metadata.xlsx account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
+~~~
+
+{::comment}
 ```
 $ scp -P443 -i private-key-for-auth JSUB000353_metadata.xlsx account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
 ```
+{:/comment}
 -P: 接続先ポート番号 443 を指定
 -i: 認証用秘密鍵を指定
 
@@ -142,10 +174,10 @@ $ ssh -p443 -i private-key-for-auth account_b@jga-gw.ddbj.nig.ac.jp
 以下のように設定します。
 
 転送プロトコル: SCP
-  - ホスト名: jga-gw.ddbj.nig.ac.jp
-  - ポート番号: 443
-  - ユーザ名: D-way アカウント ID
-  - パスワード: 空欄のまま
+- ホスト名: jga-gw.ddbj.nig.ac.jp
+- ポート番号: 443
+- ユーザ名: D-way アカウント ID
+- パスワード: 空欄のまま
 
 {::nomarkdown}
 {% include image.html url="books/jga-winscp1.jpg" caption="WinSCP 接続情報の入力" class="w400" %}
@@ -169,9 +201,9 @@ $ ssh -p443 -i private-key-for-auth account_b@jga-gw.ddbj.nig.ac.jp
 
 JGA 登録システムではファイルの拡張子でアーカイブ・圧縮形式を判定し、ファイルを処理しています。
 
-  - 拡張子 zip、tar、tar.gz、tgz、tar.bz2、tbz2、gz、bz2 のファイルは標準的な方法でアーカイブ・圧縮されているファイルと判定され、展開・解凍処理されます。拡張子とアーカイブ・圧縮形式が一致していないファイルや、これら以外の形式でアーカイブ・圧縮されたファイルはエラーになります。
-  - bam ファイルは圧縮しないでください。
-  - gz や bzip 圧縮したファイルをさらに tar でアーカイブせず、tar.gz 等でアーカイブしたファイルを圧縮してください。
+- 拡張子 zip、tar、tar.gz、tgz、tar.bz2、tbz2、gz、bz2 のファイルは標準的な方法でアーカイブ・圧縮されているファイルと判定され、展開・解凍処理されます。拡張子とアーカイブ・圧縮形式が一致していないファイルや、これら以外の形式でアーカイブ・圧縮されたファイルはエラーになります。
+- bam ファイルは圧縮しないでください。
+- gz や bzip 圧縮したファイルをさらに tar でアーカイブせず、tar.gz 等でアーカイブしたファイルを圧縮してください。
 
 ### 登録するデータ<a name="file-formats-submission"></a>
 
@@ -187,8 +219,8 @@ Data オブジェクトに fastq や bam ファイルなどの個人レベルの
 データファイルを scp で登録用ディレクトリにアップロードします。
 
 例
-  - アカウント名: account_b
-  - JGA Submission ID: JSUB000353
+- アカウント名: account_b
+- JGA Submission ID: JSUB000353
 
 ```
 $ scp -P443 -i private-key-for-auth wgs1.fastq account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
@@ -206,3 +238,17 @@ $ scp -P443 -i private-key-for-auth *.fastq account_b@jga-gw.ddbj.nig.ac.jp:/con
 JGA キュレータがメタデータとデータファイルを査定します。完成したエクセルからキュレータが XML を生成し、JGA に登録します。
       
 メタデータとデータファイルが検証処理を通過するとアクセッション番号が発行されます。
+
+## テスト {#test}
+
+|---|
+| Default aligned | Left aligned | Center aligned | Right aligned|
+|-|:-|:-:|-:|
+| First body part | Second cell | Third cell | fourth cell|
+| Second line |foo | **strong** | baz|
+| Third line |quux | baz | bar|
+| Second body|
+| 2 line|
+|===|
+| Footer row|
+
