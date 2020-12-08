@@ -540,7 +540,7 @@ DRA のメタデータ作成ツールは technical read (アダプター、プ�
 | [SOLiD csfasta/qual](#SOLiD)                     | SOLiD               | No (please convert to fastq/bam) |
 | [Illumina qseq and scarf](#Illumina_Native_Data) | Illumina            | No (please convert to fastq/bam) |
 
-### BAM ファイル <a name="BAM_file"></a> 
+### BAM ファイル <a name="bam-file"></a> 
 
 Binary Alignment/Map (BAM) ファイルは DRA への登録にとって好ましいファイル形式の一つです。BAM は Sequence Alignment/Map (SAM) ファイル形式のバイナリー圧縮です (詳細は [SAMv1.pdf](https://samtools.github.io/hts-specs/SAMv1.pdf))。BAM ファイルは SAM/BAM 用ツール (例えば [samtools](http://www.htslib.org/)) で human-readable なテキスト形式である SAM に変換することができます。BAM はアライメントされなかった unaligned read を含めることができます。DRA はプライマリーデータとして Run に unaligned read を含む BAM を登録することを推奨しています。
 

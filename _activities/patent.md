@@ -28,7 +28,7 @@ related_pages:
   - title: DDBJ Mail Magazine
     url: /subscribe-ddbj.html
   - title: DDBJ データ解析チャレンジ
-    url: /activities/training-ddbj-challenge.html
+    url: /activities/training/2016-06-27.html
 ---
 
 DDBJ Mail Magazine 連載期間：No.50（2010年5月27日発行）〜No.54（2010年11月1日発行）,

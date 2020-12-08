@@ -28,7 +28,7 @@ related_pages:
   - title: DDBJ Mail Magazine
     url: /subscribe-ddbj.html
   - title: DDBJ データ解析チャレンジ
-    url: /activities/training-ddbj-challenge.html
+    url: /activities/training/2016-06-27.html
 ---
 
 ## FASTAとBLASTについて

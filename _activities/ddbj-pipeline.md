@@ -28,7 +28,7 @@ related_pages:
   - title: DDBJ Mail Magazine
     url: /subscribe-ddbj.html
   - title: DDBJ データ解析チャレンジ
-    url: /activities/training-ddbj-challenge.html
+    url: /activities/training/2016-06-27.html
 ---
 
 DDBJ の塩基配列解析ツール「DDBJ Read Annotation Pipeline」ついて，「DDBJ Read Annotation Pipeline」開発担当者 が DDBJ Mail Magazine に連載したコラムをまとめました。
