@@ -1,8 +1,6 @@
 ---
 layout: indexed_content
 title: Submission Account
-
-
 lang: en
 ---
 
@@ -27,7 +25,7 @@ Bioinformation and DDBJ Center provides the D-way account system. In the D-way a
 DDBJ Center employs scp authenticated by ssh key for transfer of large files. Therefore, you need to register a public key for authentication for using DRA, GEA and JGA services which accompany transfer of large files. In addition, because DRA metadata require a center name, you need to register a center name assigned to your affiliation for using DRA service.
 
 {::nomarkdown}
-{% include image.html url="books/hac01.jpg" caption="Service permission of D-way account" class="w300" %}
+{% include image.html url="books/hac01-e.jpg" caption="Service permission of D-way account" class="w300" %}
 {:/}
 
 ## Create a D-way account in the website<a name="account-for-bioproject-biosample-submissions"></a>

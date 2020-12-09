@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: DDBJ 公開形式 Flat file
-
 category: ddbj
 current_tab: flat_file
 tab_menu:

@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Reviewer Access
-
 category: gea
 current_tab: submission overview
 tab_menu:

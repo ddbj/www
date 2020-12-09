@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: 発行物アーカイブ
-
 category: activities
 lang: ja
 related_pages:

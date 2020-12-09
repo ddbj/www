@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Japanese Genotype-phenotype Archive
-
 category: jga
 current_tab: home
 tab_menu:

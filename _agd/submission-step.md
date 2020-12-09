@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: 登録手順
-
 category: agd
 current_tab: submission
 tab_menu:

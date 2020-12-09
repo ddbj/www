@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: News from 2008
-
 category: news
 lang: en
 ---

@@ -1,8 +1,6 @@
 ---
 layout: indexed_content
 title: Before sending inquiry to us
-
-
 lang: en
 ---
 

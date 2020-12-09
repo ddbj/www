@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: DDBJ BioSample Handbook
-
 category: biosample
 current_tab: handbook
 tab_menu:

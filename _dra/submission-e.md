@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: DDBJ Sequence Read Archive Handbook
-
 category: dra
 current_tab: handbook
 tab_menu:

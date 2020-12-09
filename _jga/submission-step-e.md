@@ -44,11 +44,6 @@ For application, a D-way account is required. Please obtain [a D-way account](ht
 
 <p class="attention">After creating a D-way account, it takes about 10 minutes for the D-way account becomes active in the <a href="https://humandbs.ddbj.nig.ac.jp/nbdc/application/">NBDC application system</a>.</p>
 
-{::options parse_block_html="true" /}
-<div class="attention red">
-After creating a D-way account, it takes about 10 minutes for the D-way account becomes active in the [NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/).
-</div>
-
 This page describes how to submit data to JGA.
 
 ## Data submitter group<a name="data-submitter-group"></a>

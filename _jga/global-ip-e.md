@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: How to check the global IP address of your connection source
-
 category: jga
 lang: en
 ---

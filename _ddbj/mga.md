@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: MGA
-
 category: ddbj
 current_tab: other
 tab_menu:

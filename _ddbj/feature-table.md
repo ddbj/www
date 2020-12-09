@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: The DDBJ/ENA/GenBank Feature Table Definition
-
 category: ddbj
 current_tab: home
 tab_menu:
@@ -1170,7 +1169,7 @@ accnum                  an entry primary accession number
                         "The ""label"" qualifier is no longer legal."
 ```
 
-<pre id="assembly_gap"><strong>Feature Key           assembly_gap</strong>
+<pre id="assembly_gap"><code><strong>Feature Key           assembly_gap</strong>
 
 Definition            gap between two components of a genome or transcriptome assembly;
 
@@ -1193,7 +1192,7 @@ Comment               the location span of the assembly_gap feature for an unkno
                       However, the value for the estimated_length of assembly_gap features 
                       within a single (non-CON) transcriptome record must be an integer 
                       and can not be "unknown";
-</pre>
+</code></pre>
 
 -----
 
@@ -1547,7 +1546,7 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
 
 -----
 
-<pre id="misc_binding"><strong>Feature Key           misc_binding</strong>
+<pre id="misc_binding"><code><strong>Feature Key           misc_binding</strong>
 
 Definition            site in nucleic acid which covalently or non-covalently
                       binds another moiety that cannot be described by any
@@ -1570,7 +1569,7 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
 
 Comment               note that feature key <a href="#regulatory">regulatory</a> with /<a href="#regulatory_class">regulatory_class</a>="ribosome_binding_site"
                       should be used for ribosome binding sites.
-</pre>
+</code></pre>
 
 -----
 
@@ -2090,7 +2089,7 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
 
 -----
 
-<pre id="protein_bind"><strong>Feature Key           protein_bind</strong>
+<pre id="protein_bind"><code><strong>Feature Key           protein_bind</strong>
 
 Definition            non-covalent protein binding site on nucleic acid;
 
@@ -2113,7 +2112,7 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
 
 Comment               note that feature key <a href="#regulatory">regulatory</a> with /<a href="#regulatory_class">regulatory_class</a>="ribosome_binding_site"
                       should be used for ribosome binding sites.
-</pre>
+</code></pre>
 
 -----
 
@@ -2286,7 +2285,7 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
 
 -----
 
-<pre id="source"><strong>Feature Key           source</strong>
+<pre id="source"><code><strong>Feature Key           source</strong>
 
 Definition            identifies the biological source of the specified span of
                       the sequence; this key is mandatory; more than one source
@@ -2362,7 +2361,7 @@ Comment               transgenic sequences must have at least two source feature
                       describing the organism that is the recipient of the DNA
                       must span the entire sequence;
                       see Appendix III /<a href="#organelle">organelle</a> for a list of &lt;organelle_value&gt;
-</pre>
+</code></pre>
 
 -----
 
@@ -2530,7 +2529,7 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
 
 -----
 
-<pre id="unsure"><strong>Feature Key           unsure</strong>
+<pre id="unsure"><code><strong>Feature Key           unsure</strong>
 
 Definition            a small region of sequenced bases, generally 10 or fewer in its length, which 
                       could not be confidently identified. Such a region might contain called bases 
@@ -2557,7 +2556,7 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
 Comment               use /<a href="#replace">replace</a>="" to annotate deletion, e.g. 
                       unsure      11..15
                                   /<a href="#replace">replace</a>=""
-</pre>
+</code></pre>
 
 -----
 
@@ -2895,7 +2894,7 @@ Example         /collected_by="Dan Janzen"
 
 -----
 
-<pre id="collection_date"><strong>Qualifier /collection_date=</strong>
+<pre id="collection_date"><code><strong>Qualifier /collection_date=</strong>
 Qualifier       /collection_date=
 Definition      The date on which the specimen was collected.
                 Date/time ranges are supported by providing two collection dates from among 
@@ -2945,7 +2944,7 @@ Comment         'Mmm' represents a three-letter month abbreviation, and can be o
 
                 Within a collection date range for which the day, month, and year are 
                 identical, the first time value must be prior to the second time value.
-</pre>
+</code></pre>
 
 -----
 
@@ -3232,7 +3231,7 @@ Comment         /function is used when the gene name and/or product name do not
 
 -----
 
-<pre id="gap_type"><strong>Qualifier       /gap_type=</strong>
+<pre id="gap_type"><code><strong>Qualifier       /gap_type=</strong>
 Definition      type of gap connecting components in records of a genome assembly, 
                 or the type of biological gap in a record that is part of a genome 
                 assembly;
@@ -3245,7 +3244,7 @@ Comment         This qualifier is used only for <a href="#assembly_gap">assembly
                 are controlled by the AGP Specification version 2.1:
                 <a href="https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/">https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/</a>
                 Please also visit: <a href="http://www.insdc.org/controlled-vocabulary-gaptype-qualifier">http://www.insdc.org/controlled-vocabulary-gaptype-qualifier</a>
-</pre>
+</code></pre>
 
 -----
 
@@ -3442,7 +3441,7 @@ Comment         degrees latitude and longitude in format
 
 -----
 
-<pre id="linkage_evidence"><strong>Qualifier       /linkage_evidence= </strong>
+<pre id="linkage_evidence"><code><strong>Qualifier       /linkage_evidence= </strong>
 Definition      type of evidence establishing linkage across an <a href="#assembly_gap">assembly_gap</a>. 
                 Only allowed to be used with <a href="#assembly_gap">assembly_gap</a> features that have 
                 a /<a href="#gap_type">gap_type</a> value of "within scaffold", "repeat within scaffold" or "contamination"; 
@@ -3457,7 +3456,7 @@ Comment         This qualifier is used only for <a href="#assembly_gap">assembly
                 controlled by the AGP Specification version 2.1:
                 <a href="https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/">https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/</a>
                 Please also visit: <a href="http://www.insdc.org/controlled-vocabulary-linkageevidence-qualifier">http://www.insdc.org/controlled-vocabulary-linkageevidence-qualifier</a>
-</pre>
+</code></pre>
 
 -----
 
@@ -3522,7 +3521,7 @@ Comment         /mating_type="male" and /mating_type="female" are
 
 -----
 
-<pre id="metagenome_source"><strong>Qualifier       /metagenome_source=</strong>
+<pre id="metagenome_source"><code><strong>Qualifier       /metagenome_source=</strong>
 Definition      sequences from a Metagenome Assembled Genome (MAG), i.e a single-taxon assembly 
                 drawn from a binned metagenome, are specified with this qualifier to indicate
                 that the assembly is derived from a metagenomic source, rather than from an isolated organism.
@@ -3533,7 +3532,7 @@ Examples        /metagenome_source="human gut metagenome"
                 /metagenome_source="soil metagenome"
 Comment         the qualifier /metagenome_source is mandatory when a single-taxon sequence is derived from 
                 a metagenome; sequences with a /metagenome_source require also an <a href="#environmental_sample">/environmental_sample</a> qualifier.
-</pre>
+</code></pre>
 
 -----
 
@@ -3660,7 +3659,7 @@ Example         /operon="lac"
 
 -----
 
-<pre id="organelle"><strong>Qualifier       /organelle= </strong>
+<pre id="organelle"><code><strong>Qualifier       /organelle= </strong>
 Definition      type of membrane-bound intracellular structure from which the 
                 sequence was obtained
 Value format    chromatophore, hydrogenosome, mitochondrion, nucleomorph,
@@ -3681,7 +3680,7 @@ Examples        /organelle="chromatophore"
                 /organelle="plastid:proplastid"
 Comments        modifier text limited to values from controlled list
                 Please also visit: <a href="http://www.insdc.org/controlled-vocabulary-organelle-qualifier">http://www.insdc.org/controlled-vocabulary-organelle-qualifier</a>
-</pre>
+</code></pre>
 
 -----
 
@@ -3824,7 +3823,7 @@ Example         /proviral
 
 -----
 
-<pre id="pseudo"><strong>Qualifier       /pseudo</strong>
+<pre id="pseudo"><code><strong>Qualifier       /pseudo</strong>
 Definition      indicates that this feature is a non-functional version of the
                 element named by the feature key
 Value format    none
@@ -3836,11 +3835,11 @@ Comment         The qualifier /pseudo should be used to describe non-functional
                 In order to annotate pseudogenes the qualifier /<a href="#pseudogene">pseudogene</a>= must be
                 used indicating the TYPE which can be taken from the INSDC controlled vocabulary 
                 for pseudogenes.
-</pre>
+</code></pre>
 
 -----
 
-<pre id="pseudogene"><strong>Qualifier       /pseudogene=</strong>
+<pre id="pseudogene"><code><strong>Qualifier       /pseudogene=</strong>
 Definition      indicates that this feature is a pseudogene of the element named
                 by the feature key
 Value format    "TYPE"
@@ -3875,7 +3874,7 @@ Comment         TYPE is a term taken from the INSDC controlled vocabulary for ps
                 MHC haplotypes have allelic pseudogenes.
                 
                 unknown: the submitter does not know the method of pseudogenisation.
-</pre>
+</code></pre>
 
 -----
 
@@ -3903,7 +3902,7 @@ Comment         /rearranged should not be used to annotate chromosome
 
 -----
 
-<pre id="recombination_class"><strong>Qualifier       /recombination_class</strong>
+<pre id="recombination_class"><code><strong>Qualifier       /recombination_class</strong>
 Definition      a structured description of the classification of recombination 
                 hotspot region within a sequence
 Value format    "TYPE"
@@ -3922,7 +3921,7 @@ Comment         TYPE is a term taken from the INSDC controlled vocabulary for re
                 recombination classes not yet in the INSDC /recombination_class controlled
                 vocabulary can be annotated by entering /recombination_class="other" with
                 /note="[brief explanation of novel /recombination_class]";
-</pre>
+</code></pre>
 
 -----
 
@@ -4017,7 +4016,7 @@ Comment         used to indicate the literal sequence that constitutes a
 
 -----
 
-<pre id="satellite"><strong>Qualifier       /satellite=</strong>
+<pre id="satellite"><code><strong>Qualifier       /satellite=</strong>
 Definition      identifier for a satellite DNA marker, compose of many tandem
                 repeats (identical or related) of a short basic repeated unit;
 Value format    "&lt;satellite_type&gt;[:&lt;class&gt;][ &lt;identifier&gt;]"
@@ -4031,7 +4030,7 @@ Comment         many satellites have base composition or other properties
                 that differ from those of the rest of the genome that allows
                 them to be identified.
                 Please also visit: <a href="http://www.insdc.org/controlled-vocabulary-satellite-qualifier">http://www.insdc.org/controlled-vocabulary-satellite-qualifier</a>
-</pre>
+</code></pre>
 
 -----
 
@@ -4100,7 +4099,7 @@ Comment         /sex should be used (instead of /<a href="#mating_type">mating_t
 
 -----
 
-<pre id="specimen_voucher"><strong>Qualifier       /specimen_voucher=</strong>
+<pre id="specimen_voucher"><code><strong>Qualifier       /specimen_voucher=</strong>
 Definition      identifier for the specimen from which the nucleic acid
                 sequenced was obtained
 Value format    /specimen_voucher="[&lt;institution-code&gt;:[&lt;collection-code&gt;:]]&lt;specimen_id&gt;"
@@ -4126,7 +4125,7 @@ Comment         the /specimen_voucher qualifier is intended to annotate a
                 controlled vocabulary maintained by the INSDC that denotes the
                 museum or herbarium collection where the specimen resides;
                 Please also visit: <a href="http://www.insdc.org/controlled-vocabulary-specimenvoucher-qualifier">http://www.insdc.org/controlled-vocabulary-specimenvoucher-qualifier</a>
-</pre>
+</code></pre>
 
 -----
 
@@ -4159,7 +4158,7 @@ Comment         the comments on /<a href="#clone">clone</a> apply to /sub_clone
 
 -----
 
-<pre id="submitter_seqid"><strong>Qualifier /submitter_seqid=</strong>
+<pre id="submitter_seqid"><code><strong>Qualifier /submitter_seqid=</strong>
 Definition      identifier attributed to each sequence within an assembly. This identifier 
                 is appropriate for WGS, TSA, TLS and CON records. The submitter_seqid should be 
                 unique within the context of a single set of assembled sequences.
@@ -4168,7 +4167,7 @@ Example         /submitter_seqid="NODE_1"
 Comment         The length of the value should be limited to &lt;51 characters. Spaces, greater than (&gt;),
                 left/right square brackets ([ ]) and vertical bar (|) in addition to
                 double quotation marks (") can not be used for the value of /submitter_seqid qualifier.
-</pre>
+</code></pre>
 
 -----
 
@@ -4292,14 +4291,14 @@ Comment         if the amino acid is not on the restricted vocabulary list use
 
 -----
 
-<pre id="transl_table"><strong>Qualifier       /transl_table=</strong>
+<pre id="transl_table"><code><strong>Qualifier       /transl_table=</strong>
 Definition      definition of genetic code table used if other than universal
                 genetic code table. Tables used are described at the specified URLs in appendix IV.
 Value format    &lt;integer&gt; 1=universal table 1;2=non-universal table 2;...
 Example         /transl_table=4
 Comment         genetic code exceptions outside range of specified tables are
                 reported in /<a href="#transl_except">transl_except</a> qualifier.
-</pre>
+</code></pre>
 
 -----
 
@@ -4316,7 +4315,7 @@ Comment         should be used on features such as <a href="#fCDS">CDS</a>, <a h
 
 -----
 
-<pre id="type_material"><strong>Qualifier       /type_material=</strong>
+<pre id="type_material"><code><strong>Qualifier       /type_material=</strong>
 Definition      indicates that the organism from which this sequence was obtained is
                 a nomenclatural type of the species (or subspecies) corresponding with
                 the /organism identified in the sequence entry
@@ -4330,7 +4329,7 @@ Comment         &lt;type-of-type&gt; is taken from the INSDC controlled vocabula
                 (or as a synonym) at the species (or subspecies) node in the taxonomy database.
                 INSDC will automatically populate this qualifier from the NCBI taxonomy database to
                 flag sequences of form type in the INSDC databases (ENA/GenBank/DDBJ).
-</pre>
+</code></pre>
 
 -----
 

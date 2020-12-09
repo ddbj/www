@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: The new JGA system
-
 category: jga
 current_tab: submission
 tab_menu:

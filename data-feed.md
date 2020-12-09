@@ -1,8 +1,6 @@
 ---
 layout: indexed_content
 title: RSS フィード
-
-
 lang: ja
 ---
 

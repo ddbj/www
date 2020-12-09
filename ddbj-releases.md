@@ -2,8 +2,6 @@
 layout: indexed_content
 lang: ja
 title: リリースノート (DDBJ, 16S rRNA, DAD)
-
-
 lang: ja
 related_pages:
   - title: DB の out/in 統計量

@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: 進化ゲノム学とは
-
 category: activities
 lang: ja
 related_pages:

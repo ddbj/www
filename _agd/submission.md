@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: AGD への登録
-
 category: agd
 current_tab: submission
 tab_menu:

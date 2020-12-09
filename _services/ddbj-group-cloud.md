@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: DDBJ グループクラウド
-
 category: services
 lang: ja
 ---

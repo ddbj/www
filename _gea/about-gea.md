@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: GEA について
-
 category: gea
 current_tab: about gea
 tab_menu:

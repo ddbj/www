@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: 遺伝子とゲノム
-
 category: activities
 lang: ja
 related_pages:

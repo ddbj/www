@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: GA4GH Beacon
-
 category: agd
 current_tab: ga4gh beacon
 tab_menu:

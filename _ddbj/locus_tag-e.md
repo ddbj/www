@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Guideline to use /locus_tag qualifier
-
 category: ddbj
 current_tab: home
 tab_menu:

@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Submission to AGD
-
 category: agd
 current_tab: submission
 tab_menu:

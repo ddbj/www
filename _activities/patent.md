@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: DDBJ での特許関連配列データの公開業務の紹介
-
 category: activities
 lang: ja
 related_pages:

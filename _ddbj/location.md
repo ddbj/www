@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Location の記述法
-
 category: ddbj
 current_tab: flat_file
 tab_menu:

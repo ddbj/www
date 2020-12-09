@@ -1,8 +1,6 @@
 ---
 layout: timeline
 title: DDBJ 30年の歩み
-
-
 lang: ja
 ---
 

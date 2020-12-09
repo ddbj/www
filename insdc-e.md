@@ -1,8 +1,6 @@
 ---
 layout: indexed_content
 title: page-access
-
-
 lang: en
 related_pages:
   - title: INSDC Status Document

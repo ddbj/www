@@ -1,8 +1,6 @@
 ---
 layout: indexed_content
 title: DDBJ センターについて
-
-
 lang: ja
 related_pages:
   - title: DDBJ 運営スタッフ

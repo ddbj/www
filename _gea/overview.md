@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: GEA への登録
-
 category: gea
 current_tab: submission overview
 tab_menu:

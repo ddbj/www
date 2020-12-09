@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: DDBJ の塩基配列解析ツールについて
-
 category: activities
 lang: ja
 related_pages:

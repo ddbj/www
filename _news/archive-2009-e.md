@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: News from 2009
-
 category: news
 lang: en
 ---
@@ -108,7 +107,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn091109"><a href="#wn091109">Release of new tomato (Solanum lycopersicum) WGS 100,783 entries </a></h2>
   <div class="news_date">November 09,2009</div>
-  <div class="news_content">DDBJ newly released 100,783 entries of WGS data derived from tomato (<i>Solanum lycopersicum</i>), which had been submitted<br>by <a href="http://www.kazusa.or.jp/e/index.html" target="_new">Kazusa DNA Research Institute.</a><br><br><br><br><b>The accession numbers</b>  (Anonymous FTP)  are as follows ; <ul><li>BABP01000001-BABP01100783 (BABP.gz)  (100,783 entries) </li></ul><p><b>Reference sites</b></p><ul><li><a href="http://www.kazusa.or.jp/tomato/" target="_new">Tomato SBM Database</a></li><li><a href="/ddbj/wgs-e.html">Whole Genome Shotgun (WGS) sequences data</a></li></ul><p>These entries were released as DDBJ daily updates on Nov. 6, 2009.<br></p><div class="align-right">(Photo: Integrated Database Project)</div></div>
+  <div class="news_content">DDBJ newly released 100,783 entries of WGS data derived from tomato (<i>Solanum lycopersicum</i>), which had been submitted<br>by <a href="http://www.kazusa.or.jp/e/index.html" target="_new">Kazusa DNA Research Institute.</a><br><br><b>The accession numbers</b>  (Anonymous FTP)  are as follows ; <ul><li>BABP01000001-BABP01100783 (BABP.gz)  (100,783 entries) </li></ul><p><b>Reference sites</b></p><ul><li><a href="http://www.kazusa.or.jp/tomato/" target="_new">Tomato SBM Database</a></li><li><a href="/ddbj/wgs-e.html">Whole Genome Shotgun (WGS) sequences data</a></li></ul><p>These entries were released as DDBJ daily updates on Nov. 6, 2009.<br></p><div class="align-right">(Photo: Integrated Database Project)</div></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: </span>

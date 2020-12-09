@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: DDBJ BioProject Handbook
-
 category: bioproject
 current_tab: handbook
 tab_menu:

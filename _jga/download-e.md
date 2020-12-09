@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Download steps
-
 category: jga
 current_tab: submission
 tab_menu:
@@ -37,8 +36,6 @@ lang: en
 ---
 
 ## Data use application to NBDC<a name="du-application"></a>
-[NBDC ヒトデータベースの「利用可能な研究データ一覧」](https://humandbs.biosciencedbc.jp/data-use/all-researches)で使いたいデータを探すことができます。
-[DDBJ Search](https://ddbj.nig.ac.jp/search) でも検索することができますが, 新規公開データの反映機能実装が2020年11月になる見込みであり, それまでは新規公開データが反映されません。
 
 You may search JGA data at [the list of researches at the NBDC Human Database](https://humandbs.biosciencedbc.jp/en/data-use/all-researches). [DDBJ Search](https://ddbj.nig.ac.jp/search) is also available, however, regular indexing of new data will be implemented in November 2020. Until this implementation, new JGA data are not indexed.
 Take notes of JGA Dataset accession number(s) you want to use. For example, JGAD000001 (or JGAD00000000001 in the previous accession number format)

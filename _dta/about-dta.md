@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: DTA について
-
 category: dta
 current_tab: about dta
 tab_menu:

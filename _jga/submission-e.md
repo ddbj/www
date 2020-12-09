@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Submission to JGA
-
 category: jga
 current_tab: submission
 tab_menu:

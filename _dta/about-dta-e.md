@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: About DTA
-
 category: dta
 current_tab: about dta
 tab_menu:

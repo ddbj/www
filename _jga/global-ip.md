@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: IP アドレスを調べる方法
-
 category: jga
 lang: ja
 ---

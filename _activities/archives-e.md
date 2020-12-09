@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: DDBJ Publications Archive
-
 category: activities
 lang: en
 related_pages:

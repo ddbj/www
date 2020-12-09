@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Environmental sequence の登録
-
 category: ddbj
 current_tab: data_categories
 tab_menu:

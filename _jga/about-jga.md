@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: About JGA
-
 category: jga
 current_tab: home
 tab_menu:

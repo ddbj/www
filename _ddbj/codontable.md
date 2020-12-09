@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: The Genetic Codes
-
 category: ddbj
 current_tab: home
 tab_menu:

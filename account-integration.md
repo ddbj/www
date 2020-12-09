@@ -1,8 +1,6 @@
 ---
 layout: indexed_content
 title: 新アカウントシステムへの移行
-
-
 lang: ja
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: INSDC agreed methodological keywords
-
 category: ddbj
 current_tab: home
 tab_menu:

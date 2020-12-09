@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Trace Archive
-
 category: dta
 current_tab: submission
 tab_menu:

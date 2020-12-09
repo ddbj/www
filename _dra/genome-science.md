@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: ゲノム支援
-
 category: dra
 current_tab: home
 tab_menu:

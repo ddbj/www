@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: DDBJ staff papers（1996-2008）
-
 category: activities
 lang: en
 related_pages:

@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Protein Coding Sequence; CDS feature
-
 category: ddbj
 current_tab: flat_file
 tab_menu:

@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Transcriptome Project のデータ登録
-
 category: ddbj
 current_tab: data_categories
 tab_menu:

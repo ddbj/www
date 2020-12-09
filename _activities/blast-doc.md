@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: 相同性検索プログラムBLASTの内部構造
-
 category: activities
 lang: ja
 related_pages:

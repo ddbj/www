@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Example of metadata
-
 category: dra
 current_tab: handbook
 tab_menu:

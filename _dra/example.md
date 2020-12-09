@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: メタデータの例
-
 category: dra
 current_tab: handbook
 tab_menu:
