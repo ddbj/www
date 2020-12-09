@@ -28,7 +28,7 @@ related_pages:
   - title: DDBJ Mail Magazine
     url: /subscribe-ddbj.html
   - title: DDBJ データ解析チャレンジ
-    url: /activities/training-ddbj-challenge.html
+    url: /activities/training/2016-06-27.html
 ---
 
 ユーザーの皆様が DDBJ に登録をする際に参考にして頂く為のアドバイスを，DDBJ 登録担当者が Mail Magazine に連載したコラムをまとめました。

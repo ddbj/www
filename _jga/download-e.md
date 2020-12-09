@@ -192,6 +192,10 @@ case2.vcf.gz.encrypt
 
 Decrypt downloaded encrypted data files by using the decryption tools.
 
+<div class="attention red">
+Use the decryption tools in Linux. Windows is not supported.
+</div>
+
 Move to the J-DU999991 directory and unzip the "J-DU999991.tool.zip" in the tools directory.
 
 ```
