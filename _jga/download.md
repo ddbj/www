@@ -178,7 +178,9 @@ case2.vcf.gz.encrypt
 
 ダウンロードしたデータファイルは暗号化されているので、ツールで復号します。
 
-復号ツールは Linux で実行してください。Windows はサポートしていません。{:.attention}
+<div class="attention red">
+復号ツールは Linux で実行してください。Windows はサポートしていません。
+</div>
 
 利用者の解析環境で J-DU999991 ディレクトリに直下に移動し、tools ディレクトリにある復号ツール「J-DU999991.tool.zip」を J-DU999991 ディレクトリ直下に展開します。
 

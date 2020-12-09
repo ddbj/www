@@ -192,8 +192,6 @@ case2.vcf.gz.encrypt
 
 Decrypt downloaded encrypted data files by using the decryption tools.
 
-Use the decryption tools in Linux. Windows is not supported. {:.attention}
-
 <div class="attention red">
 Use the decryption tools in Linux. Windows is not supported.
 </div>
