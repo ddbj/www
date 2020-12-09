@@ -1278,7 +1278,7 @@ input, textarea, select, button {
         padding-bottom: 2rem;
         width: 23rem;
         position: sticky;
-        overflow: scroll;
+        overflow: auto;
         top: 0; }
     #NavigationAndMainView > .inner > .mainview {
       width: calc( (100vw - 128rem) + (128rem - 23rem)); }
