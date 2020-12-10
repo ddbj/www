@@ -1,6 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: Validation tools for MSS data files
+service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: home
 tab_menu:

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: Controlled vocabulary for ncRNA classes
 current_tab: home
 tab_menu:
@@ -93,6 +93,7 @@ tab_menu:
         url: /ddbj/patent-data.html
       - title: MGA
         url: /ddbj/mga.html
+service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 lang: ja
 ---

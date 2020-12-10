@@ -1,6 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: Sequence data included in patent applications
+service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: other
 tab_menu:

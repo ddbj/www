@@ -1,6 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: MSS - Mass Submission System
+service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: submission
 tab_menu:
