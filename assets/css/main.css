@@ -172,35 +172,23 @@ input, textarea, select, button {
 
 .breadcrumb-view {
   line-height: 1;
-  background-color: #F5F4F2;
   font-size: 0; }
   .breadcrumb-view > ul > li {
-    background-color: #FF7300;
     display: inline-block;
-    position: relative;
-    padding: .3rem .8rem .3rem 1.4rem; }
-    .breadcrumb-view > ul > li:first-child {
-      padding-left: 1rem; }
-    .breadcrumb-view > ul > li::before, .breadcrumb-view > ul > li::after {
-      content: "";
-      display: block;
-      position: absolute;
-      border-style: solid;
-      border-width: .8rem 0 .8rem .5rem;
-      border-color: transparent;
-      top: 0;
-      z-index: 1; }
-    .breadcrumb-view > ul > li::before {
-      right: -.6rem;
-      border-left-color: white; }
+    position: relative; }
     .breadcrumb-view > ul > li::after {
-      right: -.5rem;
-      border-left-color: #FF7300; }
+      content: "";
+      display: inline-block;
+      width: .4rem;
+      height: .4rem;
+      border-top: solid 0.1rem #1C1B19;
+      border-left: solid 0.1rem #1C1B19;
+      transform: rotate(135deg);
+      margin: 0 .7rem 0 .3rem; }
+    .breadcrumb-view > ul > li:last-child::after {
+      content: none; }
     .breadcrumb-view > ul > li > a {
-      font-size: 1rem;
-      font-weight: bold;
-      color: white;
-      text-decoration: none; }
+      font-size: 1rem; }
 
 .columns-view {
   display: flex;
@@ -785,6 +773,8 @@ input, textarea, select, button {
   font-size: 3.2rem;
   line-height: 1.2;
   font-weight: lighter; }
+  .page-title > .title.-normal {
+    font-weight: normal; }
 
 .page-title.-small > .title {
   font-size: 2rem;
@@ -1255,6 +1245,15 @@ input, textarea, select, button {
     padding-left: 2rem;
     padding-right: 2rem; } }
 
+#MainContentView > .header {
+  padding: 1.2rem 4.2rem 1.5rem 2.5rem; }
+  #MainContentView > .header > .breadcrumb-view {
+    margin-bottom: .8rem; }
+  #MainContentView > .header > .title {
+    font-size: 2.4rem;
+    line-height: 1.1;
+    font-weight: bold; }
+
 #MainContentView > .md-content {
   padding: 1.2rem 4.2rem 2.5rem 2.5rem; }
   #MainContentView > .md-content > *:first-child {
@@ -1388,7 +1387,8 @@ input, textarea, select, button {
         #TopPageView > .inner > .maincolumn > header > .title {
           font-size: 3.2rem;
           font-weight: normal;
-          line-height: 1; }
+          line-height: 1;
+          margin-bottom: .4rem; }
         #TopPageView > .inner > .maincolumn > header > .breadcrumb-view {
           margin-bottom: .8rem; }
         #TopPageView > .inner > .maincolumn > header > .description {
@@ -1397,6 +1397,8 @@ input, textarea, select, button {
           padding-right: 3rem; }
       #TopPageView > .inner > .maincolumn > .tab-menu-view {
         margin-top: 2rem; }
+      #TopPageView > .inner > .maincolumn > .breadcrumb-view {
+        margin-top: 1rem; }
       #TopPageView > .inner > .maincolumn > .panel-view-container {
         padding-top: 3.6rem;
         padding-right: 1rem; }
