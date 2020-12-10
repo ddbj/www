@@ -48,7 +48,7 @@ To apply the application, a D-way account is required. If you do not have an acc
 
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 It takes about 10 minutes for the created D-way account becoming active in the NBDC application system.
 </div>
 
@@ -77,7 +77,7 @@ Before starting the application, create a data user group. In the following exam
 For security, the JGA datasets are encrypted by the public key for dataset encryption registered by the applicant in the data use application. The applicant needs to first decrypt the datasets downloaded by scp by using the private key.
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 The public key for dataset encryption is different from the [public/private key pair for the D-way account authentication](/account.html#enable-dra-submission-in-account).
 </div>
 
@@ -107,7 +107,7 @@ After the application is approved by NBDC, metadata, encrypted data files and de
 ### Download<a name="download"></a>
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 To download files from the JGA server by scp, you need to [register a center name and a public key to your D-way account](/account-e.html#enable-dra-submission-in-account). Access to the JGA server is restricted by IP addresses. Inform your IP address of your connecting source to NBDC in application form.
 </div>
 
@@ -189,7 +189,7 @@ case2.vcf.gz.encrypt
 
 Decrypt downloaded encrypted data files by using the decryption tools.
 
-<div class="attention red">
+<div class="attention">
 Use the decryption tools in Linux. Windows is not supported.
 </div>
 

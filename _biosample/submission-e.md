@@ -274,11 +274,11 @@ Obtain a submission account according to the [Account Handbook](/account-e.html)
 
 Move to the Biosample submission page from the “Biosample” menu at the top. Create a new sample submission by clicking the \[New submission\] button.
 
-<div class="attention red">
+<div class="attention">
 Upper limit is about 2,000 samples per submission.
 </div>
 
-<div class="attention red">
+<div class="attention">
 If there is no reply from submitters after three months of initial contact, submissions will be cancelled.
 </div>
 
@@ -320,7 +320,7 @@ A text file is separated by tab and can be opened and editted in spreadsheet edi
 
 From second lines, enter one sample per line. Enter PSUB submission id in [bioproject\_id](/biosample/attribute-e.html?all=all#bioproject_id) for project without PRJD accession numbers.
 
-<div class="attention red">
+<div class="attention">
 In one submission, samples can be submitted as 1 sample - 1 line in sample attributes tab-delimited text file.
 </div>
 
@@ -406,7 +406,7 @@ Check content in the last "OVERVIEW" and submit samples. In the "ATTRIBUTES" are
 
 When creating a new submission, a temporary ID starts with SSUB is assigned. The DDBJ BioSample issues accession numbers with prefix SAMD to the submitted samples passed validation. When an unregistered organism is described in the organism or the locus\_tag\_prefix has values, accession numbers are issued after curator review. You can view status and accession numbers of submitted samples in your [submission account](https://ddbj.nig.ac.jp/D-way/).
 
-<div class="attention red">
+<div class="attention">
   - Do NOT cite a temporary ID starts with SSUB in references.
   - Do not double submit the samples which have been registered to EBI and NCBI.
 </div>
@@ -418,7 +418,7 @@ You can select the following options:
   - Release immediately following curation
   - Release when referenced data is published
 
-<div class="attention red">
+<div class="attention">
 Hold date cannot be set for BioSample.
 </div>
 

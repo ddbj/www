@@ -67,7 +67,7 @@ After your records have been accessioned, use the 'Generate new reviewer access 
 
 To reduce potential bias during peer review, some journals now offer manuscript depositors the option of "double-blind" peer review, where a depositor remains anonymous to the reviewer. GEA supports "double-blind" peer review of private data sets by redacting certain metadata fields which would inevitably reveal the submitter's identity, namely, [IDF fields](/gea/metadata-e.html#idf_tags) start with "Person" (name and email address), "PubMed" and "Publication" (pubmed ID and DOI). The redaction is done when a submitter chooses double-blind option and only applies when a reviewer is accessing the GEA experiment of interest, so the GEA submitter (using his/her dedicated D-way login) will continue to see the full metadata record. Anonymity can also be lifted by re-generating a token without selecting double-blind option, e.g. when the manuscript is submitted to a journal which does not support"double-blind" peer review. Finally, submitter anonymity will be lifted completely once the experiment goes public.
 
-<div class="attention red">
+<div class="attention">
 
 GEA automatically redact the IDF fields start with "Person", "PubMed" and "Publication". It is solely submitter's responsibility to remove any submitter-identifibale information in other places such as an owner of Excel file in processed data.
 

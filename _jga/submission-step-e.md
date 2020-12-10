@@ -91,12 +91,12 @@ Download the excel for metadata description below and enter metadata in English.
 last updated: 2020-09-26
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 Data files to be uploaded to JGA should not have spaces in their filenames.
 </div>
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 All datasets in a JGA submission are distributed at the same time. Do NOT include datasets to be distributed at different time in a submission.
 </div>
 
@@ -107,7 +107,7 @@ All datasets in a JGA submission are distributed at the same time. Do NOT includ
 ### Upload excel<a name="upload-excel"></a>
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 To upload files to the JGA server by scp, you need to [register a center name and a public key to your D-way account](/account-e.html#enable-dra-submission-in-account). Access to the JGA server is restricted by IP addresses. Inform your IP address of your connecting source to NBDC in application form.
 </div>
 
@@ -148,7 +148,7 @@ The JGA submission system discriminates archive and compression formats by the e
 Submit individual-level next-generation sequencing data such as fastq and bam files to Data. And submit microarray data, variant analysis data and documents such as questionnaires to Analysis.        
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 For reproducibility, it is important to submit processed data from which conclusion of associated paper is derived. Please submit processed data files such as VCF to Analysis.
 </div>
 

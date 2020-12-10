@@ -30,7 +30,7 @@ lang: ja
 [日本 DNA データバンク (DDBJ) センター](/index.html)はヒトデータをグループ共有 (制限共有) するためのデータベースである AMED Genome group sharing Database (AGD) を DDBJ グループクラウドでサービス提供しています。 データ提供・利用申請審査は [National Bioscience Database Center (NBDC)](http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines) で実施しています。
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
   - AGD はオープンなデータベースである INSDC やアクセス制限データベースである JGA とは別のデータベースです。
   - AGD の登録システムは DDBJ センターのオープンデータ登録システムである [D-way](https://ddbj.nig.ac.jp/D-way/)，アクセス制限データベースである JGA とは異なります。
   - AGD にデータを登録するためには [NBDC へのデータ提供申請とヒトデータ審査委員会での承認](https://gr-sharingdbs.biosciencedbc.jp/agd-data-submission)が必要です。
@@ -50,15 +50,15 @@ lang: ja
 last updated: 2017-08-18
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 必ずエクセルのファイル名は \_metadata.xlsx で終わるようにしてください。\_metadata より前は Submission ID など識別のために自由に名前を付けることができます。
 </div>
 
-<div class="attention red">
+<div class="attention">
 AGD にアップロードするファイル名には空白を含めないでください。
 </div>
 
-<div class="attention red">
+<div class="attention">
 Data/Analysis オブジェクトに複数のファイルが含まれる場合は，可能な限りファイルを結合し１つにまとめてください。ファイルのアップロード・ダウンロードで不具合が発生する可能性があります。
 </div>
 
@@ -71,7 +71,7 @@ Data/Analysis オブジェクトに複数のファイルが含まれる場合は
 AGD submission tool (最終更新日: 2018-11-21，v3.5.0) をダウンロードします。
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 Java 8 で実行してください。Java 7 では動作しません。[プロキシ環境での使用方法について](#use-proxy-environment)
 </div>
 
@@ -115,7 +115,7 @@ AGD tool を起動し，[NBDC](http://gr-sharingdbs.biosciencedbc.jp/agd-guideli
 {% include image.html url="submission/agdsub3.jpg" caption="アップロードされたエクセルファイル" class="w500" %}
 {:/}
 
-<div class="attention red">
+<div class="attention">
 メタデータが記入されたエクセルファイルはメールで送付しないでください。
 </div>
 
@@ -141,7 +141,7 @@ AGD ファイルサーバ上にある「ファイル名が \_metadata.xlsx で�
 
 Data オブジェクトに fastq や bam ファイルなどの個人レベルの生データを登録します。Analysis に変異解析，表現型情報，質問票など解析したデータや各種ドキュメントを登録します。
 
-<div class="attention red">
+<div class="attention">
 データの再利用性，再現性のためには論文での主張の基になっている解析データが登録されることが重要です。できるだけ VCF などの解析データを Analysis に登録してください。
 </div>
 
@@ -222,7 +222,7 @@ port=
 
 AGD ツールでの転送に多大な時間を要する，ファイル選択画面がフリーズするなど，大容量・多件数のファイル転送が困難な場合には，ハードディスクでデータを受け付けています。
 
-<div class="attention red">
+<div class="attention">
 ディスクフォーマットは NTFS、ext3 もしくは ext4 にしてください。  
 郵送前にディスクをアンチウイルスソフトでチェックしてください。
 </div>
@@ -235,7 +235,7 @@ AGD データ暗号化ツールを使ってデータファイルを暗号化し�
 
 last updated: 2017-01-26
 
-<div class="attention red">
+<div class="attention">
 個別のデータファイルごとに暗号化してください。ファイルをディレクトリや tar でまとめて暗号化しないでください。
 </div>
 

@@ -138,7 +138,7 @@ Login [the D-way (https://trace.ddbj.nig.ac.jp/D-way)](https://ddbj.nig.ac.jp/D-
 
 Create a new microarray experiment submission by selecting "Sequencing" and clicking the \[New submission\]. At the same time, in the DDBJ file server (ftp-private.ddbj.nig.ac.jp), a corresponding subdirectory is created under the submitter’s GEA upload directory. [Upload data files to this subdirectory](#upload-data).
 
-<div class="attention red">
+<div class="attention">
 
 If there is no reply from submitters after three months of initial contact, submissions will be cancelled.
 
@@ -207,7 +207,7 @@ Install and run the ["WinSCP" (http://winscp.net/eng/download.php)](http://winsc
 
 Set items as below and click the \[Advanced...\] button.
 
-<div class="attention red">
+<div class="attention">
 
 Be sure to select the "binary mode" for file transfer. Do NOT select the "text mode".
 
@@ -284,7 +284,7 @@ After login successfully, your private directory in the server is displayed in t
 </div>
 </div>
 
-<div class="attention red">
+<div class="attention">
 
 Users can ssh login ftp-private.ddbj.nig.ac.jp server by using a private key. Executable commands are restricted to the following ones. Users can delete unnecessary files.  
 ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
@@ -295,7 +295,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 Set the hold date within four years. Submitters' name and affiliation will be public but e-mail address will not be disclosed.
 
-<div class="attention red">
+<div class="attention">
 
 You can delete an un-submitted GEA submission.
 

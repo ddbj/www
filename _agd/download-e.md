@@ -30,7 +30,7 @@ lang: en
 Apply data use request to [National Bioscience Database Center (NBDC)](http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines) with the AGD Study (e.g., AGDS\_00000000005) and Dataset (e.g., AGDD\_00000000005) IDs.
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 Approved users should follow the [NBDC Security Guidelines for Human Data (for Data Users)](https://gr-sharingdbs.biosciencedbc.jp/group-security-guidelines-for-users).
 </div>
 
@@ -44,7 +44,7 @@ This page explains how to use the AGD data.
 
 Download the AGD download tool (last updated: 2018-11-22，v3.5.0).
 
-<div class="attention red">
+<div class="attention">
 Use this tool in Java 8. This tool does not work in Java 7.
 </div>
 
@@ -66,7 +66,7 @@ Use "Java SE Development Kit 8" and not OpenJDK.
 
 Run the AGD tool and login the AGD system with user ID and password notified by [NBDC](http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines).
 
-<div class="attention red">
+<div class="attention">
 AGD submission and download tool is the same software behave in different mode according to the account used.
 </div>
 
@@ -147,7 +147,7 @@ Users can view metadata in the website after login.
 
 Logout from the metadata view site
 
-<div class="attention red">
+<div class="attention">
 Access to the metadata view site is limited to 1 from same account. After viewing metadata, do NOT close your browser but logout at right-top "Logout".  
 When an error "Maximum sessions of 1 for this principal exceeded" is displayed, login again after 30 min interval.
 </div>
@@ -167,7 +167,7 @@ The following error is displayed when access from single account exceeds "1". Lo
 ### Data file transfer by hard disk <a name="data-file-transfer-by-hard-disk"></a>
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 For all hard drive request please contact [AGD team](/contact-ddbj-e.html) and let us know the permitted datasets you would like to have transferred.
 </div>
 

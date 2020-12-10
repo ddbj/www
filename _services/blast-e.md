@@ -77,7 +77,7 @@ TTTGCCCACGGACACAACTGCCATATCGCCTTACGGGAGATCATCGAAACTCTGAACAGC
 CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 ```
 
-<div class="attention red">
+<div class="attention">
 When your query size is too big (a large number of sequences, or each
 sequence is very long), the result might not be viewed in the web screen
 normally.  

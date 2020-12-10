@@ -238,7 +238,7 @@ The SDRF (Sample and Data Relationship Format) describes the sample characterist
 : Sources are the starting material for the experiment. The section starts with a [Source Name](#Source_Name) column, which will typically be followed by several [Characteristics](#Characteristics) columns.
 
   {::options parse_block_html="true" /}
-  <div class="attention red">
+  <div class="attention">
 
   In the GEA submission system, a sample\_name of relevant BioSample is commonly used for Names of Source, Extract, Labeled Extract and Assay columns.
 
