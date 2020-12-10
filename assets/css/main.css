@@ -377,8 +377,10 @@ input, textarea, select, button {
     margin-bottom: 1.6rem; }
   .md-content h2, .md-content h3 {
     cursor: pointer; }
+    .md-content h2:hover > .link-icon, .md-content h3:hover > .link-icon {
+      display: inline-block; }
   .md-content .link-icon {
-    background-image: url(/www/assets/images/parts/link.jpeg);
+    background-image: url(/assets/images/parts/link.png);
     background-repeat: no-repeat;
     background-size: contain;
     display: none;
