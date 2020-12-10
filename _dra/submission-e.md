@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: DDBJ Sequence Read Archive Handbook
-
 category: dra
 current_tab: handbook
 tab_menu:
@@ -606,7 +605,7 @@ values.](#supplement-md5)
 ## Run data files <a name="run-data-files"></a>
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
   - The DRA does NOT accept fasta only datasets. The minimum submission
   level for SRA is base/color calls with quality scores.
   - Make sure the file names are constructed only from alphanumerals
@@ -733,12 +732,12 @@ When submitting bam file into Analysis instead of Run, the mapping table
 is unnecessary. However, please consider to submit bam including
 unaligned reads as primary data into Run.
 
-<div class="attention red">
+<div class="attention">
 When submitting unmapped bam (without SQ header line) from PacBio and
 IonTorrent, the mapping table and reference sequences are not necessary.
 </div>
 
-<div class="attention red">
+<div class="attention">
 If only BAM alignment files are submitted, then please make sure that
 the BAM files also contain the unaligned reads. This is critical to
 enable primary re-analysis and re-alignment of the dataset using new
@@ -890,7 +889,7 @@ file submissions. Note that submission of data from the RS II instrument
 requires one Run consists of one *.bas.h5 file and three *.bax.h5
 files. Do not rename files.
 
-<div class="attention red">
+<div class="attention">
 Do NOT include files other than HDF5 in a Run.
 </div>
 
@@ -943,7 +942,7 @@ assistance, [contact us](/contact-ddbj-e.html).
 
 # Submission to the DRA <a name="dra-submission"></a>
 
-<div class="attention red">
+<div class="attention">
 Never submit data without the permission of the principal investigator.
 </div>
 
@@ -1064,12 +1063,12 @@ time, in the DRA file server (ftp-private.ddbj.nig.ac.jp), the
 corresponding subdirectory is created under the submitter’s home
 directory. [Upload sequence data files to this subdirectory](#upload-sequence-data).
 
-<div class="attention red">
+<div class="attention">
 All data in a submission are released at the same time. If you want to
 release data at different time, please divide a submission.
 </div>
 
-<div class="attention red">
+<div class="attention">
 If there is no reply from submitters after three months of initial
 contact, submissions will be cancelled.
 </div>
@@ -1145,7 +1144,7 @@ Submission to DRA ～upload data files (Windows)～
 Install and run the [“WinSCP” (http://winscp.net/eng/download.php)](http://winscp.net/eng/download.php).  
 Set items as below and click the [Advanced...] button.
 
-<div class="attention red">
+<div class="attention">
 Be sure to select the "binary mode" for file transfer. Do NOT select the "text mode".
 </div>
 
@@ -1233,14 +1232,14 @@ them into the window to transfer the files to the server.
 </div>
 </div>
 
-<div class="attention red">
+<div class="attention">
 Users can ssh login ftp-private.ddbj.nig.ac.jp server by using a private
 key. Executable commands are restricted to the following ones. Users can
 delete unnecessary files.  
 ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 </div>
 
-<div class="attention red">
+<div class="attention">
 When sending submission files too large for e-mail attachment,
 submitters can upload the files for the [DDBJ Mass Submission System
 (MSS)](/ddbj/mss-e.html) by using the DRA file server. After [contacting
@@ -1290,7 +1289,7 @@ Set the hold date within two years. Include principal investigator(s)
 and submitter(s) who actually submit data in the Submitter. The DRA dose
 not disclose the submitter information to public.
 
-<div class="attention red">
+<div class="attention">
 All data in a submission are released at the same time. If you want to
 release data at different time, please divide a submission.
 </div>
@@ -1346,7 +1345,7 @@ to reserve prefix to NCBI. When the prefix has already been reserved, an
 error message will be displayed. Please enter a different prefix and
 submit again.
 
-<div class="attention red">
+<div class="attention">
 When multiple prefixes are necessary, please [contact
 us](/contact-ddbj-e.html).
 </div>
@@ -1373,7 +1372,7 @@ After submitting a project, submitted one is selected in Study.
 Submit new samples by clicking [New submission], or select samples
 submitted in the account.
 
-<div class="attention red">
+<div class="attention">
 Upper limit is about 2,000 samples per submission.
 </div>
 
@@ -1524,7 +1523,7 @@ it by clicking the [Upload TSV file].
 {% include image.html url="books/hdra-experiment04.jpg" caption="Upload Experiment in a tab-delimited text file" class="w450" %}
 {:/}
 
-<div class="attention red">
+<div class="attention">
 Upload in tab-delimited text file and NOT in spreadsheet software
 specific format.
 </div>
@@ -1561,7 +1560,7 @@ Enter [File type](#File_Type) and [MD5 Checksum](#supplement-md5) for
 files. File attributes can be entered by uploading a tab-delimited text
 file.
 
-<div class="attention red">
+<div class="attention">
 Note that all data files listed in a Run will be merged into a single
 SRA archive file, so files from different samples or replicates should
 not be grouped in the same Run. Paired-end data files, conversely, MUST
@@ -1569,7 +1568,7 @@ be listed in a single run in order for the two files to be correctly
 processed as paired-end.
 </div>
 
-<div class="attention red">
+<div class="attention">
 For fastq with variable read length, select "generic_fastq" for
 filetype.
 </div>
@@ -1755,7 +1754,7 @@ files are copied to the following directories on the
 ftp-private.ddbj.nig.ac.jp server. To save disk space, the copied files
 are automatically deleted in one month.
 
-<div class="attention red">
+<div class="attention">
 Due to unexpected decrease of available disk space, copied fastq/SRA
 files may be deleted within one month or the copy service may be
 suspended. We will inform submitters on the website in advance as much
@@ -1781,7 +1780,7 @@ After the registered data is loaded into the database, the Status
 becomes “complete (private)” and the submission is kept private until
 one of the following conditions are met.
 
-<div class="attention red">
+<div class="attention">
 All data in a submission are released at the same time. If you want to
 release data at different time, please divide a submission.
 </div>
@@ -1865,7 +1864,7 @@ objects.
 Submit metadata and validate the appended data files. Accession numbers
 will be issued to the appended Experiment/Run objects.
 
-<div class="attention red">
+<div class="attention">
 The BioProject ID remains same, but different DRA submission number is
 assigned.
 </div>

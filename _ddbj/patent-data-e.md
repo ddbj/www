@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Sequence data included in patent applications
-
 category: ddbj
 current_tab: other
 tab_menu:

@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: DDBJ Group Cloud
-
 category: services
 lang: en
 ---

@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Patent column from DDBJ
-
 category: activities
 lang: en
 related_pages:

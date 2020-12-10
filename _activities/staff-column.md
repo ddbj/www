@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: DDBJ スタッフコラム
-
 category: activities
 lang: ja
 related_pages:

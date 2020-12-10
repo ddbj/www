@@ -1,13 +1,12 @@
 ---
 layout: indexed_content
 title: 動画一覧
-
 category: activities
 lang: ja
 ---
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 
 動画中の情報は、一部古い場合があります。ご不明な点は[お問い合わせ](/contact.html)ください。
 

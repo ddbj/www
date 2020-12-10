@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: BioProject について
-
 category: bioproject
 current_tab: about bioProject
 tab_menu:

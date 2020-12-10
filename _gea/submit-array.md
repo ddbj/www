@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Submit microarray experiment
-
 category: gea
 current_tab: submission overview
 tab_menu:
@@ -146,7 +145,7 @@ GEA では一つの登録に異なる種類のテクノロジー（マイクロ�
 "Microarray"を選択した状態で\[New submission\]をクリックして microarray experimentsubmission を作成します。作成と同時に DDBJ ファイルサーバ (ftp-private.ddbj.nig.ac.jp) に対応する GEA 登録用サブディレクトリが登録者のホーム下に作成されます。このサブディレクトリに[データファイルをアップロード](#upload-data)します。
 
 {::options parse_block_html="true"/}
-<div class="attention red">
+<div class="attention">
 DDBJ センターから登録者に問い合わせた後三か月以上回答が無い場合は Submission をキャンセルいたします。
 </div>
 
@@ -238,7 +237,7 @@ DRAへの登録～データの転送 (Windows)～
 
 以下のように設定した後、右中央にある \[Advanced...\] をクリックします。
 
-<div class="attention red">
+<div class="attention">
 転送モードはバイナリモードにします。テキストモードで転送しないでください。
 </div>
 
@@ -314,7 +313,7 @@ Cyberduck の起動画面で、以下のように設定し More Options の "Use
 </div>
 </div>
 
-<div class="attention red">
+<div class="attention">
 ftp-private.ddbj.nig.ac.jp サーバに秘密鍵を使って ssh でログインすることができます。
 実行できるコマンドは下記のものに制限されています。不要なファイルの削除は登録者が実施することができます。  
 ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
@@ -324,7 +323,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 四年以内の公開予定日指定、もしくは、データ処理後即日公開を選択します。登録者の名前と所属組織は公開されますがメールアドレスは公開されません。
 
-<div class="attention red">
+<div class="attention">
 "Delete submission" で投稿前の登録を削除することができます。
 </div>
 

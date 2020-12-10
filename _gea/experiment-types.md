@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Experiment types in GEA
-
 category: gea
 current_tab: home
 tab_menu:

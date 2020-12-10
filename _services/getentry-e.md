@@ -1132,5 +1132,5 @@ entry can be viewed.
 {::options parse_block_html="true" /}
 <div class="attention">
 Creating links to DRA entries is different from the above method. Please
-refer to the [DRA Web site](/dra/index.html).
+refer to the [DRA Web site](/dra/index-e.html).
 </div>

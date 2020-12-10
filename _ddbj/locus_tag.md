@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: /locus_tag qualifier の記載法
-
 category: ddbj
 current_tab: home
 tab_menu:

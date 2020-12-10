@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: INSDC standards for genome assembly submission
-
 category: ddbj
 current_tab: home
 tab_menu:

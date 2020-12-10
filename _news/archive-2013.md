@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: News from 2013
-
 category: news
 lang: ja
 ---

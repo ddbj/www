@@ -1,8 +1,6 @@
 ---
 layout: indexed_content
 title: 登録アカウント
-
-
 lang: ja
 ---
 
@@ -15,7 +13,7 @@ DDBJ 登録アカウントの作成
 [生命情報・DDBJ センター](/index.html) では [D-way アカウントシステム](https://ddbj.nig.ac.jp/D-way)を運用しています。D-way アカウントは DDBJ センターの BioProject/BioSample/DRA/GEA/JGA データベース、及び、[NBDC](https://humandbs.biosciencedbc.jp) の[提供・利用申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application)で使うことができます。
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 
   - 責任者の許可のもとアカウントを作成し，データを管理してください。
   - アカウントとパスワードはユーザが安全に管理してください。
@@ -52,7 +50,7 @@ DDBJ センターではサイズの大きいファイルの転送に ssh 鍵認�
 {:/}
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 
 Login ID: 
 : 4 から 24 文字
@@ -71,7 +69,7 @@ Login ID:
 入力されたアドレス宛に確認メールが送信されます。 メールに従い，予約したアカウントを有効にします。
 続いて有効化したアカウントのパスワードを設定します。
 
-<div class="attention red">
+<div class="attention">
 
 アルファベットと数字を含む8 文字以上のパスワードを設定します。
 

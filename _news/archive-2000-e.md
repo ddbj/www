@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: News from 2000
-
 category: news
 lang: en
 ---

@@ -1,7 +1,6 @@
 ---
 layout: top
 title: DDBJ Trace Archive
-
 category: dta
 current_tab: home
 tab_menu:

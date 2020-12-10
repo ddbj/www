@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: 利用手順
-
 category: agd
 current_tab: submission
 tab_menu:
@@ -32,7 +31,7 @@ lang: ja
 
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 [NBDC ヒトデータグループ共有データ取扱いセキュリティガイドライン](https://gr-sharingdbs.biosciencedbc.jp/group-security-guidelines-for-users)を読み，内容を遵守して AGD データを取り扱ってください。
 </div>
 
@@ -47,7 +46,7 @@ lang: ja
 AGD download tool (最終更新日: 2018-11-21，v3.5.0) をダウンロードします。
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 Java 8 で実行してください。Java 7 では動作しません。[プロキシ環境での使用方法について](#download-via-proxy-server)
 </div>
 
@@ -71,7 +70,7 @@ Java 8 で実行してください。Java 7 では動作しません。[プロ�
 
 AGD tool を起動し，[NBDC](http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines) 担当者から通知されるユーザ ID とパスワードでログインします。
 
-<div class="attention red">
+<div class="attention">
 AGD download tool は可能な限り良好なネットワーク環境にあるマシンで使ってください。通信速度が遅い無線 LAN で接続された PC などでの使用は避けてください。
 </div>
 
@@ -148,7 +147,7 @@ AGD tool と同様，NBDC から通知される利用アカウントのユーザ
 
 メタデータ閲覧サイトからのログアウト
 
-<div class="attention red">
+<div class="attention">
 同一アカウントからメタデータ閲覧サイトへの同時ログイン数は１に制限されています。閲覧後はブラウザーを閉じる前に，必ず Logout からログアウトしてください。  
 "Maximum sessions of 1 for this principal exceeded" のエラーが表示されたときは，30 分程度間隔を空けてから再度ログインしてください。
 </div>
@@ -168,7 +167,7 @@ AGD tool と同様，NBDC から通知される利用アカウントのユーザ
 ### データファイルのディスク郵送 <a name="data-file-transfer-by-hard-disk"></a>
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 データファイルのディスク郵送を希望する場合は必ず事前に [AGD にご連絡ください](/contact-ddbj.html)。
 </div>
 

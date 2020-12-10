@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: MAGE-TAB の例
-
 category: gea
 current_tab: submission overview
 tab_menu:

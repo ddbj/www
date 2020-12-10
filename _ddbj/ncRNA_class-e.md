@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Controlled vocabulary for ncRNA classes
-
 category: ddbj
 current_tab: home
 tab_menu:

@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Organism qualifier
-
 category: ddbj
 current_tab: flat_file
 tab_menu:

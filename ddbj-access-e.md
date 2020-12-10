@@ -1,8 +1,6 @@
 ---
 layout: indexed_content
 title: Access
-
-
 lang: en
 ---
 

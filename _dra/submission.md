@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: DDBJ Sequence Read Archive Handbook
-
 category: dra
 current_tab: handbook
 tab_menu:
@@ -511,7 +510,7 @@ Analysis に含めるデータファイルを選択します。
 アライメントデータやシークエンスデータを登録します。
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
   - fasta は受け付けていません。最低限 quality score 付きのベース/カラーコールデータが必要です。
   - ファイル名は英数字 [A-Z,a-z,0-9]、アンダースコア [_]、ハイフン [-] とドット [.] のみから構成され、空白文字、カッコ、句読点やシンボルを含まないこと。
   - バーコード配列で由来サンプルが区別されたデータファイルは登録前に分割し、由来サンプルごとに BioSample を作成します。各 BioSample には１つかそれ以上のユニークなデータファイルがリンクされている状態にします。
@@ -592,11 +591,11 @@ Run にアライメントデータを登録する場合は、「BAM」、「INSD
 
 Run ではなく Analysis に登録する場合対応表は不要ですが、アライメントされなかったリードを含めた bam を Run に登録することを強く推奨します。
 
-<div class="attention red">
+<div class="attention">
 PacBio や IonTorrent などでリファレンス配列がない bam ファイル (unmapped bam でありヘッダーに SQ 行がない) が出力データの場合、対応表やリファレンス fasta を指定する必要はありません
 </div>
 
-<div class="attention red">
+<div class="attention">
 将来、新しいツールで再解析や再アライメントする際に重要であるため、bam ファイルのみを登録するときはアライメントされなかったリード (unaligned reads) を含めてください。
 </div>
 
@@ -724,7 +723,7 @@ quality value をすべて "14" として作成した fastq/bma ファイルを�
 
 Pacific Biosciences は生データを格納するためにディレクトリ様構造を持つ HDF5 ファイルを使用しています。DRA は bas.h5 と bax.h5 両方のファイル形式での登録を受け付けています。RS II から出力されるデータは、１ の Run に *.bas.h5 １ファイルと *.bax.h5 ３ファイルを登録します。ファイル名を変更しないでください。
 
-<div class="attention red">
+<div class="attention">
 Run に HDF5 以外のデータを含めないでください。
 </div>
 
@@ -766,7 +765,7 @@ fastq/bam ファイルを登録します。
 
 # DRA へのデータ登録 <a name="dra-submission"></a>
 
-<div class="attention red">
+<div class="attention">
 研究責任者 (principal investigator) の許可なくデータを登録しないでください。
 </div>
 
@@ -863,11 +862,11 @@ BioProject/BioSample/DRA の登録方法 (6分50秒、作成:2015年)
 [New submission] をクリックし、新規登録を作成します。  
 同時に、データ受付サーバ (ftp-private.ddbj.nig.ac.jp) に対応するディレクトリがホーム直下に作成されます。[データファイルはこのディレクトリにアップロードします](#upload-sequence-data)。
 
-<div class="attention red">
+<div class="attention">
 DDBJ センターから登録者に問い合わせた後三か月以上回答が無い場合は Submission をキャンセルいたします。
 </div>
 
-<div class="attention red">
+<div class="attention">
 オブジェクトは Submission 単位で公開されます。オブジェクトを異なる時期に公開したい場合は Submission を分けて登録してください。
 </div>
 
@@ -962,7 +961,7 @@ DRA への登録 ～データの転送 (Windows)～
 
 以下のように設定した後、 右中央にある [Advanced...] をクリックします。
 
-<div class="attention red">
+<div class="attention">
 転送モードはバイナリモードにします。テキストモードで転送しないでください。
 </div>
 
@@ -1042,13 +1041,13 @@ Authentication” をチェックします。
 </div>
 </div>
 
-<div class="attention red">
+<div class="attention">
 ftp-private.ddbj.nig.ac.jp サーバに秘密鍵を使って ssh でログインすることができます。
 実行できるコマンドは下記のものに制限されています。不要なファイルの削除は登録者が実施することができます。  
 ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 </div>
 
-<div class="attention red">
+<div class="attention">
 [DDBJ 大量登録システム (Mass Submission System, MSS)]({{ site.baseurl }}/services/mss.html) 用の登録ファイルでサイズがメール添付の上限を超えるような場合は DRA サーバを利用することができます。 [MSS チームに連絡]({{ site.baseurl }}/contact-ddbj.html#to-ddbj)した後、ファイルを /submission/ [submitter ID]/mass にアップロードします。
 </div>
 
@@ -1085,7 +1084,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 公開予定日を4年以内に設定します。 登録者には実作業者と責任者を含む複数名を指定してください。登録者情報は一般に公開されません。
 
-<div class="attention red">
+<div class="attention">
 オブジェクトは Submission 単位で公開されます。オブジェクトを異なる時期に公開したい場合は Submission を分けて登録してください。
 </div>
 
@@ -1125,7 +1124,7 @@ prefix]({{ site.baseurl }}/ddbj/locus_tag.html) が必要です。
 
 prefix は NCBI が一括管理しています。プロジェクトを投稿する段階で、NCBI に prefix を予約しにいきます。予約済みの場合はエラーになるので、再度希望する prefix を入力して投稿します。
 
-<div class="attention red">
+<div class="attention">
 複数の prefix の取得を希望する場合は [DRA チームに連絡します]({{ site.baseurl }}/contact-ddbj.html)
 </div>
 
@@ -1153,7 +1152,7 @@ BioProject を投稿した後、Study では投稿したプロジェクトが選
 また、カラム上部のボックスにテキストを入力しサンプルを絞った状態で [Select filtered
 BioSamples] をクリックすると、フィルターされたサンプルが全て選択されます。
 
-<div class="attention red">
+<div class="attention">
 1 submission で登録できるサンプル数の上限は約 2,000 になります。
 </div>
 
@@ -1208,7 +1207,7 @@ Validation ルールとメッセージについては [Validation rules ペー�
 
 最後の "OVERVIEW" で内容を確認したうえで投稿します。"ATTRIBUTES" で属性ファイルをダウンロードすることができます。
 
-<div class="attention red">
+<div class="attention">
 登録後は最新の属性ファイルをダウンロードすることができます。
 </div>
 
@@ -1263,7 +1262,7 @@ BioSample を投稿した後、Sample では投稿したサンプルが選択さ
 {% include image.html url="books/hdra-experiment04.jpg" caption="Experiment をタブ区切りテキストファイルとしてアップロード" class="w450" %}
 {:/}
 
-<div class="attention red">
+<div class="attention">
 エクセルなどの表計算ソフト独自の形式ではなくタブ区切りテキストファイルとしてアップロードします。
 </div>
 
@@ -1291,11 +1290,11 @@ BioSample を投稿した後、Sample では投稿したサンプルが選択さ
 
 続いて [File type](#File_Type) と [MD5 Checksum](#supplement-md5) を入力します。タブ区切りテキストファイルでまとめて内容を入力する場合、データファイルを区別するため Run に登録するファイルの左端の Run/Analysis に "Run" と入力します。
 
-<div class="attention red">
+<div class="attention">
 ペアリードが含まれるファイルは同じ Run に含めます。リード名からペアは自動で判定されます。Run に含まれているファイルは１つにまとめられます。
 </div>
 
-<div class="attention red">
+<div class="attention">
 リード長が一定ではない fastq ファイルの場合、filetype には "generic_fastq" を選択します。
 </div>
 
@@ -1485,7 +1484,7 @@ BioSample を Experiment から参照する場合、以下のように記載し�
 登録者がアーカイブ済みデータファイルを確認できるようにするため、アクセッション番号が発行された Run の fastq/SRA ファイルはファイルサーバ (ftp-private.ddbj.nig.ac.jp) 上の登録者がアクセスできる場所にコピーされます。
 ディスク容量の圧迫を防ぐため、コピーされたファイルは作成から一ヶ月後に自動的に削除されます。
 
-<div class="attention red">
+<div class="attention">
 ディスク空き容量の予期せぬ急減等により、コピーした fastq/SRA ファイルの一ヶ月以内の削除やコピー機能の一時停止が実施されることがあります。
 できるだけ事前にウェブサイト等で周知いたしますが、直前になることもあり得ることをご了承ください。
 </div>
@@ -1508,7 +1507,7 @@ BioSample を Experiment から参照する場合、以下のように記載し�
 
 DRA では以下の場合にデータを公開しています。
 
-<div class="attention red">
+<div class="attention">
 オブジェクトは Submission 単位で公開されます。オブジェクトを異なる時期に公開したい場合は Submission を分けて登録してください。
 </div>
 
@@ -1575,7 +1574,7 @@ Run と同様登録が完了した Analysis データファイルの追加・変
 
 メタデータを submit し、ファイルの検証処理を実行します。追加された Experiment/Run オブジェクトに対してアクセッション番号が発行されます。
 
-<div class="attention red">
+<div class="attention">
 追加したデータに対応する BioProject 番号は同一ですが、Submission に対する DRA 番号は異なります。
 </div>
 

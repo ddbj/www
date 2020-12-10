@@ -74,10 +74,10 @@ $MARGIN_BOTTOM: 1rem
     margin-bottom: 1.6rem
   h2,h3
     cursor: pointer
-    // &:hover > a
-    //   display: inline-block 使途不明のinline-block 2020.9.4 東山
+    &:hover > .link-icon
+      display: inline-block 
   .link-icon
-    background-image: url(/www/assets/images/parts/link.jpeg)
+    background-image: url(/assets/images/parts/link.png)
     background-repeat: no-repeat
     background-size: contain
     display: none
@@ -104,7 +104,6 @@ $MARGIN_BOTTOM: 1rem
       &:before
         content: counter(my-counter)
         counter-increment: my-counter
-        background-color: $COLOR_KEY_MILD
         color: $COLOR_BLACK
         display: block
         line-height: 2rem
@@ -112,9 +111,8 @@ $MARGIN_BOTTOM: 1rem
         text-align: center
         height: 2rem
         width: 2rem
-        border-radius: 50%
         position: absolute
-        top: .3rem
+        top: .2rem
         left: 2.8rem
       &.decrement
         &:before

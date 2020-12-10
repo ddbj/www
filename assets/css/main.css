@@ -365,8 +365,10 @@ input, textarea, select, button {
     margin-bottom: 1.6rem; }
   .md-content h2, .md-content h3 {
     cursor: pointer; }
+    .md-content h2:hover > .link-icon, .md-content h3:hover > .link-icon {
+      display: inline-block; }
   .md-content .link-icon {
-    background-image: url(/www/assets/images/parts/link.jpeg);
+    background-image: url(/assets/images/parts/link.png);
     background-repeat: no-repeat;
     background-size: contain;
     display: none;
@@ -390,7 +392,6 @@ input, textarea, select, button {
       .md-content ol li:before {
         content: counter(my-counter);
         counter-increment: my-counter;
-        background-color: #fcac3d;
         color: #1C1B19;
         display: block;
         line-height: 2rem;
@@ -398,9 +399,8 @@ input, textarea, select, button {
         text-align: center;
         height: 2rem;
         width: 2rem;
-        border-radius: 50%;
         position: absolute;
-        top: .3rem;
+        top: .2rem;
         left: 2.8rem; }
       .md-content ol li.decrement:before {
         counter-increment: my-counter +0; }

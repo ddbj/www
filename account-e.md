@@ -1,8 +1,6 @@
 ---
 layout: indexed_content
 title: Submission Account
-
-
 lang: en
 ---
 
@@ -15,7 +13,7 @@ Create a DDBJ account.
 Bioinformation and DDBJ Center provides the D-way account system. In the D-way account, you can use BioProject, BioSample, GEA, DRA and JGA databases of DDBJ Center and the NBDC application systems. This handbook explains how to create a D-way account.
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 
   - Create a D-way account and manage data with permission of Principal Investigator (PI).
   - Issued account and password must be maintained securely by users.
@@ -27,7 +25,7 @@ Bioinformation and DDBJ Center provides the D-way account system. In the D-way a
 DDBJ Center employs scp authenticated by ssh key for transfer of large files. Therefore, you need to register a public key for authentication for using DRA, GEA and JGA services which accompany transfer of large files. In addition, because DRA metadata require a center name, you need to register a center name assigned to your affiliation for using DRA service.
 
 {::nomarkdown}
-{% include image.html url="books/hac01.jpg" caption="Service permission of D-way account" class="w300" %}
+{% include image.html url="books/hac01-e.jpg" caption="Service permission of D-way account" class="w300" %}
 {:/}
 
 ## Create a D-way account in the website<a name="account-for-bioproject-biosample-submissions"></a>
@@ -36,7 +34,7 @@ DDBJ Center employs scp authenticated by ssh key for transfer of large files. Th
 
 By default, you can use BioProject/BioSample/NBDC application systems in the D-way account created on the website.
 
-<div class="attention red">
+<div class="attention">
 For submission to DRA and GEA, you need to register center name and public key.
 </div>
 
@@ -50,7 +48,7 @@ Open the submission portal page at
 Enter necessary information and click the [Continue].
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 
 Login ID:
 : &emsp;ID must be 4 to 24 characters long.
@@ -75,7 +73,7 @@ reserved account according to the mail text.
 
 Set a password for the activated account.
 
-<div class="attention red">
+<div class="attention">
 Set a password longer than 8 characters contains both alphabets and　numbers.
 </div>
 

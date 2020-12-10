@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Sample attributes
-
 category: biosample
 current_tab: sample attribute
 tab_menu:

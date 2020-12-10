@@ -44,11 +44,6 @@ For application, a D-way account is required. Please obtain [a D-way account](ht
 
 <p class="attention">After creating a D-way account, it takes about 10 minutes for the D-way account becomes active in the <a href="https://humandbs.ddbj.nig.ac.jp/nbdc/application/">NBDC application system</a>.</p>
 
-{::options parse_block_html="true" /}
-<div class="attention red">
-After creating a D-way account, it takes about 10 minutes for the D-way account becomes active in the [NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/).
-</div>
-
 This page describes how to submit data to JGA.
 
 ## Data submitter group<a name="data-submitter-group"></a>
@@ -96,12 +91,12 @@ Download the excel for metadata description below and enter metadata in English.
 last updated: 2020-09-26
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 Data files to be uploaded to JGA should not have spaces in their filenames.
 </div>
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 All datasets in a JGA submission are distributed at the same time. Do NOT include datasets to be distributed at different time in a submission.
 </div>
 
@@ -112,7 +107,7 @@ All datasets in a JGA submission are distributed at the same time. Do NOT includ
 ### Upload excel<a name="upload-excel"></a>
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 To upload files to the JGA server by scp, you need to [register a center name and a public key to your D-way account](/account-e.html#enable-dra-submission-in-account). Access to the JGA server is restricted by IP addresses. Inform your IP address of your connecting source to NBDC in application form.
 </div>
 
@@ -153,7 +148,7 @@ The JGA submission system discriminates archive and compression formats by the e
 Submit individual-level next-generation sequencing data such as fastq and bam files to Data. And submit microarray data, variant analysis data and documents such as questionnaires to Analysis.        
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 For reproducibility, it is important to submit processed data from which conclusion of associated paper is derived. Please submit processed data files such as VCF to Analysis.
 </div>
 

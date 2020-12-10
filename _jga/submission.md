@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: JGA への登録
-
 category: jga
 current_tab: submission
 tab_menu:
@@ -57,11 +56,11 @@ JGA は NBDC で承認された利用制限ポリシーを持つ，匿名化さ�
 |JGAD|Data set|11|JGAD000001|
 |JGAP|Policy|11|JGAP000001|
 
-<div class="attention red">
+<div class="attention">
 データの再利用性，再現性のためには論文での主張の基になっている解析データが登録されることが重要です。できるだけ VCF などの解析データを Analysis に登録してください。
 </div>
 
-<div class="attention red">
+<div class="attention">
 データは JGA Submission 単位で公開されます。公開時期の異なるデータセットは別の Submission に分けてください。
 </div>
 

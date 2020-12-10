@@ -188,7 +188,7 @@ AGP ファイル（[CON](/ddbj/con.html) エントリの登録の場合
 : 詳細：[登録ファイル形式： AGP ファイル](/ddbj/file-format.html#agp)
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 [TSA](/ddbj/tsa.html), complete genome, draft genome ([WGS](/ddbj/wgs.html) or [HTG](/ddbj/htg.html)) を登録する場合は、あらかじめ[BioProject](/bioproject/index.html)/[BioSample](/biosample/index.html) への登録を行い、取得したアクセッション番号をアノテーションファイル内に記載してください。
 </div>
 
@@ -212,7 +212,7 @@ transChecker
 : 詳細：[transChecker ユーザーマニュアル](/ddbj/transchecker.html)
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 データフィル用チェックツールは [MSS データファイル用チェックツール](/ddbj/mss-tool.html) からダウンロードできます
 </div>
 

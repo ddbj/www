@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Trace Archive
-
 category: dta
 current_tab: submission
 tab_menu:
@@ -26,7 +25,7 @@ lang: ja
 DTA から登録された trace データは [NCBI Trace Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi) で検索，取得することができます。
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 trace データは [DDBJ Sequence Read Archive](/dra/submission.html#dra) で受付けています。特に理由がない限り DRA に登録してください。
 </div>
 

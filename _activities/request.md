@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: 「ユーザーの皆様へ，お願いです！」
-
 category: activities
 lang: ja
 related_pages:

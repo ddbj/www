@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: タンパク質コード配列; CDS feature について
-
 category: ddbj
 current_tab: flat_file
 tab_menu:

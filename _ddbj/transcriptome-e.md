@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Data Submission from Transcriptome Project
-
 category: ddbj
 current_tab: data_categories
 tab_menu:

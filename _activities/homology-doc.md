@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: FASTAとBLASTについて
-
 category: activities
 lang: ja
 related_pages:

@@ -212,7 +212,7 @@ sequence file.
 file](/ddbj/file-format-e.html#agp).
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 
 When you like to submit [TSA](/ddbj/tsa-e.html), complete genome, draft
 genome ([WGS](/ddbj/wgs-e.html) or [HTG](/ddbj/htg-e.html)), please
@@ -250,7 +250,7 @@ translation.
 : Details : [transChecker User's Manual](/ddbj/transchecker-e.html)
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 
 Download => [Validation tools for MSS data
 files](/ddbj/mss-tool-e.html)

@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: News from 1998
-
 category: news
 lang: en
 ---

@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Validation Rules
-
 category: gea
 current_tab: submission overview
 tab_menu:

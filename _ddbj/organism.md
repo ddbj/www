@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Organism qualifier に記載する生物名
-
 category: ddbj
 current_tab: flat_file
 tab_menu:

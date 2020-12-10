@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: News from 1996
-
 category: news
 lang: ja
 ---

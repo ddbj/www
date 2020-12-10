@@ -1,8 +1,6 @@
 ---
 layout: indexed_content
 title: INSDC Status Document
-
-
 lang: en
 ---
 

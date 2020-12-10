@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: HTC
-
 category: ddbj
 current_tab: data_categories
 tab_menu:

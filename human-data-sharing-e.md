@@ -1,8 +1,6 @@
 ---
 layout: indexed_content
 title: Notification for research participants regarding our database activities for human data
-
-
 lang: en
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Submission to JGA
-
 category: jga
 current_tab: submission
 tab_menu:
@@ -57,12 +56,12 @@ Accession numbers are issued to metadata objects with following prefixes.
 | JGAD   | Data set        | 11           | JGAD000001 |
 | JGAP   | Policy          | 11           | JGAP000001 |
 
-<div class="attention red">
+<div class="attention">
 It is important for making data reusable and reproducible that the processed data on which the conclusions in the related manuscript are based, are registered to JGA. Please submit processed data files such as VCF in Analysis objects.
 </div>
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 After creating a D-way account, it takes about 10 minutes for the D-way account becomes active in the [NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/).
 </div>
 

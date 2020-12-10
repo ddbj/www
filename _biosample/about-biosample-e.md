@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: About BioSample
-
 category: biosample
 current_tab: about bioProject
 tab_menu:

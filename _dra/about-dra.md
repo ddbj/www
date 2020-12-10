@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: DRA について
-
 category: dra
 current_tab: about dra
 tab_menu:

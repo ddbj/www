@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: 登録手順
-
 category: jga
 current_tab: submission
 tab_menu:
@@ -43,7 +42,7 @@ lang: ja
 
 申請には D-way アカウントが必要です。アカウントが無い場合は申請前に [D-way](https://ddbj.nig.ac.jp/D-way/) アカウントを取得してください。
 
-<div class="attention red" markdown="1">
+<div class="attention" markdown="1">
 D-way アカウント作成後、[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
 </div>
 
@@ -82,11 +81,11 @@ JGA ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/subm
 
 last updated: 2020-09-26
 
-<div class="attention red" markdown="1">
+<div class="attention" markdown="1">
 JGA にアップロードするファイル名には空白を含めないでください。
 </div>
 
-<div class="attention red" markdown="1">
+<div class="attention" markdown="1">
 データは JGA Submission 単位で公開されます。公開時期の異なるデータセットは別の Submission に分けてください。
 </div>
 
@@ -96,7 +95,7 @@ JGA にアップロードするファイル名には空白を含めないでく�
 
 ### エクセルをアップロード  {#upload-excel}
 
-<div class="attention red" markdown="1">
+<div class="attention" markdown="1">
 JGA にファイルを scp でアップロードするためには [D-way アカウントに center name と公開鍵を登録](/account.html#enable-dra-submission-in-account)する必要があります。また、JGA サーバへのアクセスは IP アドレスで制限されているので、NBDC に申請する際に接続元グローバル IP アドレスを伝えてください。
 </div>
 
@@ -157,7 +156,7 @@ JGA 登録システムではファイルの拡張子でアーカイブ・圧縮�
 
 Data オブジェクトに fastq や bam ファイルなどの個人レベルの次世代シークエンスデータを登録します。Analysis にアレイデータ，変異解析，質問票などの次世代シークエンス以外のデータや各種ドキュメントを登録します。
 
-<div class="attention red" markdown="1">
+<div class="attention" markdown="1">
 データの再利用性，再現性のためには論文での主張の基になっている解析データが登録されることが重要です。できるだけ VCF などの解析データを Analysis に登録してください。
 </div>
 

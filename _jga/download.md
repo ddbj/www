@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: 利用手順
-
 category: jga
 current_tab: submission
 tab_menu:
@@ -49,7 +48,7 @@ lang: ja
 
 申請には D-way アカウントが必要です。アカウントが無い場合は申請前に [D-way アカウントを取得](https://ddbj.nig.ac.jp/D-way/) してください。JGA サーバから scp でデータをダウンロードするためには[認証用の公開鍵・秘密鍵ペアを作成し、公開鍵を D-way アカウントに登録](/account.html#generate-key-pair)する必要があります。
 
-<div class="attention red" markdown="1">
+<div class="attention" markdown="1">
 D-way アカウント作成後、[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
 </div>
 
@@ -71,7 +70,7 @@ D-way アカウント作成後、[NBDC データ申請システム](https://huma
 
 セキュリティのため JGA データセットはユーザが登録したデータセット暗号化用公開鍵で暗号化された状態で提供されます。ユーザは利用承認されたデータセットを scp でダウンロードし、秘密鍵で復号してから利用します。
 
-<div class="attention red" markdown="1">
+<div class="attention" markdown="1">
 データセット暗号化用公開鍵は D-way アカウントの[認証用の公開鍵](/account.html#enable-dra-submission-in-account)とは別になります。JGA データの利用のためには暗号化用と認証用に合計2ペア4ファイルの公開鍵・秘密鍵が必要になります。
 </div>
 
@@ -97,7 +96,7 @@ NBDC への利用申請において公開鍵を「データセット暗号化用
 
 ### ダウンロード {#download}
 
-<div class="attention red" markdown="1">
+<div class="attention" markdown="1">
 JGA からファイルを scp でダウンロードするためには [D-way アカウントに center name と公開鍵を登録](/account.html#enable-dra-submission-in-account)する必要があります。また、JGA サーバへのアクセスは IP アドレスで制限されているので、NBDC に申請する際に接続元グローバル IP アドレスを伝えてください。
 </div>
 
@@ -178,7 +177,7 @@ case2.vcf.gz.encrypt
 
 ダウンロードしたデータファイルは暗号化されているので、ツールで復号します。
 
-<div class="attention red">
+<div class="attention">
 復号ツールは Linux で実行してください。Windows はサポートしていません。
 </div>
 

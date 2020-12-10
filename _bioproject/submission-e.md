@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: DDBJ BioProject Handbook
-
 category: bioproject
 current_tab: handbook
 tab_menu:
@@ -82,7 +81,7 @@ Umbrella project:
     
   Umbrella projects exist to provide an organizational structure to a large collaborative project and to group projects that are related via funding or submitting source or collaboration. Submitted primary projects are linked to data as it is submitted, and are linked to one or many umbrella projects. Submitted primary projects are not directly linked to other primary projects; they are linked indirectly by way of links to the umbrella project.
 
-  <div class="attention red">  
+  <div class="attention">  
 
   Nucleotide sequence data can not directly refer an umbrella project. Sequence data are linked to an umbrella via a primary project.
 
@@ -826,7 +825,7 @@ A BioProject accession is required for submission to [Sequence Read Archive](/dr
 submissions to the DDBJ. If you obtain a BioProject accession from DDBJ, please submit your related biological data to the [DDBJ](http://www.ddbj.nig.ac.jp), [Sequence Read Archive](/dra/index-e.html)and [Trace Archive](/dta/index-e.html).
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 [The INSDC stopped to assigning strain-level taxonomy ID to microbes whose genomes have been submitted to the INSDC.](/news/en/2014-02-12-e.html)
 </div>
 
@@ -836,7 +835,7 @@ According to the [Account Handbook](/account-e.html), obtain a submission accoun
 
 Submit a new project by clicking the \[New submission\].
 
-<div class="attention red">
+<div class="attention">
 If there is no reply from submitters after three months of initial contact, submissions will be cancelled.
 </div>
 
@@ -862,7 +861,7 @@ Please leave the prefix box empty, when a prefix is not necessary for [WGS](/ddb
 
 Prefix is managed by NCBI. When a project is submitted, our system tries to reserve prefix to NCBI. When the prefix has already been reserved, anerror message will be displayed. Please enter a different prefix and submit again.
 
-<div class="attention red">
+<div class="attention">
 When multiple prefixes are necessary, please [contact us](/contact-ddbj-e.html).
 </div>
 
@@ -882,7 +881,7 @@ The "OVERVIEW" tab continue to display submitted content. Updates will not be re
 
 Temporary numbers with prefix PSUB are automatically assigned to submitted projects. Projects can be referred by the PSUB numbers until official accession numbers will be assigned. DDBJ BioProject staff review submissions and issue accession numbers with prefix PRJD to completed projects. Submitters can view accession numbers and submission status in your [submission account](https://ddbj.nig.ac.jp/D-way/).
 
-<div class="attention red">
+<div class="attention">
 - Do NOT cite numbers with prefix PSUB in publication.
 - Do not double submit the projects which have been registered to EBI and NCBI.
 </div>
@@ -912,7 +911,7 @@ Registered projects can be released in the following two ways:
 
 The projects can be kept private. If DDBJ records citing the BioProject accession are made public, [cited projects are automatically released](#data-release). Private DDBJ records citing this BioProject accession are not made public.
 
-<div class="attention red">
+<div class="attention">
 Hold date cannot be set for BioProject.
 </div>
 

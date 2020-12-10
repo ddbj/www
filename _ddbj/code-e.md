@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Codes Used in Sequence Description
-
 category: ddbj
 current_tab: flat_file
 tab_menu:

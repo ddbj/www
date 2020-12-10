@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: The new JGA system
-
 category: jga
 current_tab: submission
 tab_menu:
@@ -61,7 +60,7 @@ in your D-way account. For details, please see [this
 page](/account-integration-e.html).
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 
 After creating a new D-way account, the D-way account will be active in
 the NBDC application system after about 10 minutes.

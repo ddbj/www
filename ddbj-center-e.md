@@ -1,8 +1,6 @@
 ---
 layout: indexed_content
 title: About DDBJ Center
-
-
 lang: en
 related_pages:
   - title: Faculty Staff of DDBJ

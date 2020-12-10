@@ -1,7 +1,6 @@
 ---
 layout: indexed_content
 title: Representative submissions of identical sequences for variation studies
-
 category: ddbj
 current_tab: home
 tab_menu:

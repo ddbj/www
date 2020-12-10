@@ -1,8 +1,6 @@
 ---
 layout: indexed_content
 title: Latest Release Information
-
-
 lang: en
 related_pages:
   - title: DB out/in statistics
