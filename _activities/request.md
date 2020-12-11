@@ -1,5 +1,5 @@
 ---
-layout: tabbed_indexed_content
+layout: indexed_content
 title: 「ユーザーの皆様へ，お願いです！」
 category: activities
 lang: ja

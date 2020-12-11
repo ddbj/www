@@ -1,5 +1,5 @@
 ---
-layout: tabbed_indexed_content
+layout: indexed_content
 title: DDBJ スタッフの講演発表（2001-2006）
 category: activities
 lang: ja

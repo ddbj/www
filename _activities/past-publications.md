@@ -1,5 +1,5 @@
 ---
-layout: tabbed_indexed_content
+layout: indexed_content
 title: DDBJスタッフの出版物（1996–2008）
 category: activities
 lang: ja

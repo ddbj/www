@@ -1,5 +1,5 @@
 ---
-layout: tabbed_indexed_content
+layout: indexed_content
 lang: en
 title: DDBJ Periodic Release Statistics
 category: statistics

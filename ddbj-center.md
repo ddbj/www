@@ -1,5 +1,5 @@
 ---
-layout: tabbed_indexed_content
+layout: indexed_content
 title: DDBJ センターについて
 lang: ja
 related_pages:
