@@ -1018,7 +1018,7 @@
   header.innerHTML = `
     <div class="DDBJ_inner">
       <div class="DDBJ_logocontainer">
-        <a class="DDBJ_logotype" href="${language === 'ja' ? 'https://www.ddbj.nig.ac.jp/index.html' : 'https://www.ddbj.nig.ac.jp/index-e.html'}">DDBJ DNA Data Bank of Japan</a>
+        <a class="DDBJ_logotype" href="${language === 'ja' ? '/index.html' : '/index-e.html'}">DDBJ DNA Data Bank of Japan</a>
       </div>
       <nav class="DDBJ_navigation__">
         <div class="DDBJ_spcollapsemenubutton">Menu</div>
