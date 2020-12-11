@@ -192,7 +192,7 @@ You can move to this panel by clicking the Check tab enclosed in the red square.
 4. By clicking Execute button, process the files specified at step (1) by FFconv.
 5. By clicking Exit button, Close UME.
 
-### Parser: verification of syntax and format<a name="validation-2"></a> <a name=""></a>
+### Parser: verification of syntax and format<a name="validation-2"></a> 
 
 Execute Parser through the following steps.
 

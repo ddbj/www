@@ -412,7 +412,7 @@ When creating a new submission, a temporary ID starts with SSUB is assigned. The
   - Do not double submit the samples which have been registered to EBI and NCBI.
 </div>
 
-### Release of BioSample<a name="sample-release"></a> <a name=""></a>
+### Release of BioSample<a name="sample-release"></a> 
 
 You can select the following options:
 

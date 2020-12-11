@@ -520,7 +520,7 @@ Analysis に含めるデータファイルを選択します。
   - BAM、SFF や HDF5 などのバイナリーファイルは圧縮しないでください。
 </div>
 
-### 登録するデータファイルの形式について <a name="formats-sequencing-data-files"></a> <a name=""></a>
+### 登録するデータファイルの形式について <a name="formats-sequencing-data-files"></a> 
 
 DRA のメタデータ作成ツールは technical read (アダプター、プライマーやバーコード配列) を記載することに対応していません。 「technical read を含む生データを登録する場合」や「[DRA XML schema](https://github.com/ddbj/pub/tree/master/docs/dra) 中にはあるがツール中には無い項目をメタデータに記載する場合」は[メタデータを XML ファイルで登録する](#create-metadata-in-xml-files)必要があります ([XML の記載例](/ddbj/example.html))。
 
