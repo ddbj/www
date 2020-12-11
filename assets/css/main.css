@@ -1403,6 +1403,7 @@ input, textarea, select, button {
         padding-top: 3.6rem;
         padding-right: 1rem; }
       #TopPageView > .inner > .maincolumn > .md-content {
+        margin-top: 2rem;
         padding-right: 2rem; }
     #TopPageView > .inner > .pickup-news-view {
       width: 32rem; }
