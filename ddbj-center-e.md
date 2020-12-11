@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: About DDBJ Center
 lang: en
 related_pages:

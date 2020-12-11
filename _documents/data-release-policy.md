@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: データ公開原則
 category: documents
 lang: ja

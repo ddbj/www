@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: “Hold-Until-Published” data release
 category: documents
 lang: en

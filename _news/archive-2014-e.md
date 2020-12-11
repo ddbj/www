@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: News from 2014
 category: news
 lang: en

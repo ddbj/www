@@ -1,5 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Sequence Read Archive
 title: DDBJ Sequence Read Archive Handbook
 category: dra
 current_tab: handbook

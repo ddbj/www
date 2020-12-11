@@ -1,5 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Japanese Genotype-phenotype Archive
 title: How to check the global IP address of your connection source
 category: jga
 lang: en

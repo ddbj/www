@@ -1,5 +1,6 @@
 ---
 layout: top
+service_name: Genomic Expression Archive
 title: Genomic Expression Archive
 description: Genomic Expression Archive (GEA) is a public database of functional genomics data such as gene expression, epigenetics and genotyping SNP array. Both microarray- and sequence-based data are accepted in the MAGE-TAB format in compliance with MIAME and MINSEQE guidelines, respectively. GEA issues accession numbers, E-GEAD-n to experiment and A-GEAD-n to array design.
 category: gea

@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: 新型コロナウイルス（SARS-CoV-2）に関する研究データ・リソース
 lang: ja
 ---

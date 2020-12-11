@@ -1,5 +1,6 @@
 ---
 layout: top
+service_name: Sequence Read Archive
 title: Sequence Read Archive
 description: DDBJ Sequence Read Archive (DRA) is the public archive of high throughput sequencing data. DRA stores raw sequencing data and alignment information to enhance reproducibility and facilitate new discoveries through data analysis. DRA is a member of the International Nucleotide Sequence Database Collaboration (INSDC) and archiving the data in a close collaboration with NCBI Sequence Read Archive (SRA) and EBI Sequence Read Archive (ERA).
 category: dra

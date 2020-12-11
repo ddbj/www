@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 lang: ja
 title: 最新リリースの情報
 lang: ja

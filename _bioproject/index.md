@@ -1,5 +1,6 @@
 ---
 layout: top
+service_name: BioProject
 title: BioProject
 description: "BioProject は研究プロジェクトとプロジェクトに由来するデータをまとめるためのデータベースです。 INSDC が運営するデータベースに登録されたデータが BioProject ID を引用することで，データがプロジェクト単位でグループ化されます。 BioProject はゲノム配列決定プロジェクトを管理していた NCBI Genome Project を拡張し，再設計したものです。DDBJ BioProject は登録されたプロジェクトに対してプレフィックス 'PRJD' のアクセッション番号を発行しています。公開されたプロジェクトデータは EBI/NCBI と共有されます。"
 

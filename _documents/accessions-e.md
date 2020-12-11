@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: Accession Number Assigned by INSD
 category: documents
 lang: en

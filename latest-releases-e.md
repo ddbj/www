@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: Latest Release Information
 lang: en
 related_pages:

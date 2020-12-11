@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: 遺伝研スーパーコンピュータ個人ゲノム解析環境の利用方法 
 category: sc
 lang: ja

@@ -1,5 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: BioSample
 title: Validation rules
 category: biosample
 current_tab: validation rules

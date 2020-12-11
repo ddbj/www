@@ -1,5 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Genomic Expression Archive
 title: MAGE-TAB の例
 category: gea
 current_tab: submission overview

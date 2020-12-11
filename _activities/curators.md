@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: DDBJ アノテータの業務紹介
 category: activities
 lang: ja

@@ -1,5 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: BioProject
 title: DDBJ BioProject Handbook
 category: bioproject
 current_tab: handbook

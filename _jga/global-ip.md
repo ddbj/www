@@ -1,5 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Japanese Genotype-phenotype Archive
 title: IP アドレスを調べる方法
 category: jga
 lang: ja

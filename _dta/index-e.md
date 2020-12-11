@@ -1,5 +1,6 @@
 ---
 layout: top
+service_name: Trace Archive
 title: DDBJ Trace Archive
 category: dta
 current_tab: home

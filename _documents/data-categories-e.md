@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: Categories for Sequence Data
 category: documents
 lang: en
