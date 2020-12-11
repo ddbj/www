@@ -1,7 +1,7 @@
 ---
 layout: tabbed_indexed_content
 lang: en
-title: DB out/in statistics
+title: Submission and release data volumes
 category: statistics
 lang: en
 related_pages:

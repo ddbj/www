@@ -1,7 +1,7 @@
 ---
 layout: tabbed_indexed_content
 lang: ja
-title: DB の out/in 統計量
+title: 登録・公開データ量
 category: statistics
 lang: ja
 related_pages:
