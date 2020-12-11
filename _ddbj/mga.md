@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: MGA
-pathname: mga
+service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: other
 tab_menu:

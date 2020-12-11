@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Genomic Expression Archive
 title: Single-cell submission guide
-pathname: single-cell
 category: gea
 current_tab: submission overview
 tab_menu:

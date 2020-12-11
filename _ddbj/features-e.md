@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: Feature key
-pathname: features-e
+service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: flat_file
 tab_menu:

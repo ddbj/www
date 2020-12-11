@@ -1,9 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 lang: ja
 title: リリースノート (DDBJ, 16S rRNA, DAD)
-pathname: ddbj-releases
-
 lang: ja
 related_pages:
   - title: DB の out/in 統計量

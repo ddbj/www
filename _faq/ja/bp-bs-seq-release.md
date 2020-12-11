@@ -22,7 +22,7 @@ lang: ja
     <li>DDBJ と DRA の塩基配列データはリンクしている BioProject と BioSample の連動公開を引き起こします。</li>
     <li>DRA の公開は DDBJ の連動公開を引き起こしません。</li></ul>
 </div>
-<p id="release_unit" class="attention red">DRA ではメタデータとシークエンスデータは DRA 登録 (submission) 単位で公開されます。</p>
+<p id="release_unit" class="attention">DRA ではメタデータとシークエンスデータは DRA 登録 (submission) 単位で公開されます。</p>
 <figure><a href="{{ site.baseurl }}/assets/images/books/bp-bs-seq_release.jpg" title="BioProject/BioSample/塩基配列データの連動公開"><img src="{{ site.baseurl }}/assets/images/books/bp-bs-seq_release.jpg" alt="BioProject/BioSample/塩基配列データの連動公開" title="BioProject/BioSample/塩基配列データの連動公開" class="w450"></a>
   <figcaption class="caption">BioProject/BioSample/塩基配列データの連動公開</figcaption>
 </figure>

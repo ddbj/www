@@ -1,8 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: 質問送信の前に
-pathname: before-sending-inquiries
-
 lang: ja
 ---
 

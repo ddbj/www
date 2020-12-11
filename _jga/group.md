@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Japanese Genotype-phenotype Archive
 title: グループ
-pathname: group
 category: jga
 current_tab: submission
 tab_menu:

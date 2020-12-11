@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Genomic Expression Archive
 title: Experiment types in GEA
-pathname: experiment-types-e
 category: gea
 current_tab: home
 tab_menu:

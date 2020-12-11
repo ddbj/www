@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Genomic Expression Archive
 title: GEA への登録
-pathname: overview
 category: gea
 current_tab: submission overview
 tab_menu:

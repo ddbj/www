@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: BioProject
 title: BioProject について
-pathname: about-bioproject
 category: bioproject
 current_tab: about bioProject
 tab_menu:

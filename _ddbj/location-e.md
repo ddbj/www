@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: Description of Location
-pathname: location-e
+service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: flat_file
 tab_menu:

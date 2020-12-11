@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Genomic Expression Archive
 title: Submit microarray experiment
-pathname: submit-array-e
 category: gea
 current_tab: submission overview
 tab_menu:
@@ -145,7 +145,7 @@ Login [the D-way (https://trace.ddbj.nig.ac.jp/D-way)](https://ddbj.nig.ac.jp/D-
 
 Create a new microarray experiment submission by selecting "Microarray" and clicking the \[New submission\]. At the same time, in the DDBJ file server (ftp-private.ddbj.nig.ac.jp), a corresponding subdirectory is created under the submitter’s GEA upload directory. [Upload data files to this subdirectory](#upload-data).
 
-<div class="attention red">
+<div class="attention">
 
 If there is no reply from submitters after three months of initial contact, submissions will be cancelled.
 
@@ -214,7 +214,7 @@ Install and run the ["WinSCP" (http://winscp.net/eng/download.php)](http://winsc
 
 Set items as below and click the \[Advanced...\] button.
 
-<div class="attention red">
+<div class="attention">
 
 Be sure to select the "binary mode" for file transfer. Do NOT select the "text mode".
 
@@ -302,7 +302,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 Set the hold date within four years or choose immediate release when processed. Submitters' name and affiliation will be public but e-mail address will not be disclosed.
 
-<div class="attention red">
+<div class="attention">
 
 You can delete an un-submitted GEA submission at "Delete submission".
 

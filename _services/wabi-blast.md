@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: WABI BLAST
 category: services
 lang: ja
@@ -1500,7 +1500,7 @@ TTTGCCCACGGACACAACTGCCATATCGCCTTACGGGAGATCATCGAAACTCTGAACAGC
 CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 ```
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 配列サイズが巨大な場合や配列数が多い場合など、次のような理由で結果を正常に取得できないことがあります。  
 そのような場合は、配列数を少なくするか配列を短くする等して再度お試しください。
 

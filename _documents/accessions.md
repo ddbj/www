@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: 国際塩基配列データベースのアクセッション番号
 category: documents
 lang: ja

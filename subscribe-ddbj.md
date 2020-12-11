@@ -1,8 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: メールマガジン申し込み
-pathname: subscribe-ddbj
-
 lang: ja
 ---
 

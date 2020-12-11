@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: Transcriptome Project のデータ登録
-pathname: transcriptome
+service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: data_categories
 tab_menu:

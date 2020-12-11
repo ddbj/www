@@ -1,8 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: RSS Feeds
-pathname: data-feed-e
-
 lang: en
 ---
 

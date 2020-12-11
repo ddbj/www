@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: BioSample
 title: BioSample について
-pathname: about-biosample
 category: biosample
 current_tab: about bioProject
 tab_menu:

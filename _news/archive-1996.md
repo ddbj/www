@@ -1,7 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: News from 1996
-pathname: archive-1996
 category: news
 lang: ja
 ---

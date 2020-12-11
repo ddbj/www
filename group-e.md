@@ -1,8 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: Group
-pathname: group-e
-
 lang: en
 ---
 

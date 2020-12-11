@@ -1,7 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: DDBJ Group Cloud
-pathname: ddbj-group-cloud-e
 category: services
 lang: en
 ---

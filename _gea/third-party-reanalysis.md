@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Genomic Expression Archive
 title: Third-party reanalysis data
-pathname: third-party-reanalysis
 category: gea
 current_tab: home
 tab_menu:

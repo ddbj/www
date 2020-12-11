@@ -1,8 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: Before sending inquiry to us
-pathname: before-sending-inquiries-e
-
 lang: en
 ---
 

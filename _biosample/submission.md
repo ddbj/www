@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: BioSample
 title: DDBJ BioSample Handbook
-pathname: submission
 category: biosample
 current_tab: handbook
 tab_menu:
@@ -283,11 +283,11 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
 
 D-way ウェブサイトの上部にある "BioSample" メニューから BioSample 登録ページに移動します。 BioSample ページ内の \[New submission\] をクリックし、新規サンプル登録を作成します。
 
-<div class="attention red">
+<div class="attention">
 1 submission で登録できるサンプル数の上限は約 2,000 になります。
 </div>
 
-<div class="attention red">
+<div class="attention">
 DDBJ センターから登録者に問い合わせた後三か月以上回答が無い場合は Submission をキャンセルいたします。
 </div>
 
@@ -329,7 +329,7 @@ Sample type に応じた属性入力用テンプレートファイルをダウ�
 
 二行目以降に１行１サンプルで入力していきます。BioProject アクセッション番号が発行されていないプロジェクトの場合、[bioproject\_id](/biosample/attribute.html?all=all#bioproject_id) には PSUB 番号を入力します。
 
-<div class="attention red">
+<div class="attention">
 サンプル属性のタブ区切りテキストファイルでは1行に1サンプルの属性を入力します。行を複数作成することで，複数の sample
 をまとめて登録することができます。
 </div>
@@ -414,7 +414,7 @@ Validation ルールとメッセージについては [Validation rules ペー�
 
 最後の "OVERVIEW" で内容を確認したうえで投稿します。"ATTRIBUTES" で属性ファイルをダウンロードすることができます。
 
-<div class="attention red">
+<div class="attention">
 登録後は最新の属性ファイルをダウンロードすることができます。
 </div>
 
@@ -427,7 +427,7 @@ Validation ルールとメッセージについては [Validation rules ペー�
 新規 Submission を作成すると SSUB で始まる仮 ID が自動的に割り当てられます。D-way から validation を通過したサンプルが投稿されると自動的にプレフィックス "SAMD" のアクセッション番号が発行されます。未登録の生物名が organism に記載されていた場合や locus\_teg\_prefix に値が記入されていた場合はキュレータが必要な査定を実施した後にアクセッション番号が発行されます。[D-way アカウント](https://ddbj.nig.ac.jp/D-way/)にログイン後、ウェブ上で登録したサンプルの進行状況やアクセッション番号を確認することができます。
 
 {::options parse_block_html="true" /}
-  <div class="attention red">
+  <div class="attention">
   - SSUB で始まる仮 ID を論文中に引用しないでください。
   - EBI/NCBI に登録したサンプルを DDBJ に重複して登録しないでください。
   </div>
@@ -439,7 +439,7 @@ Validation ルールとメッセージについては [Validation rules ペー�
   - 査定が終わった後すぐに公開
   - BioSample アクセッション番号を引用しているデータと同時に公開
 
-<div class="attention red">
+<div class="attention">
 公開予定日は設定することができません。
 </div>
 

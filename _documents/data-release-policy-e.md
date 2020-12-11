@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: “Hold-Until-Published” data release
 category: documents
 lang: en
@@ -38,7 +38,7 @@ been confirmed.
 3. A specified [hold-date](/ddbj/submission-e.html#holddate) has come.
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
   - In cases 2) and 3), data will be released without permission from
     the submitter.
   - Above three principles are applied to the data which were registered

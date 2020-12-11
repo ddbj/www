@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Sequence Read Archive
 title: ゲノム支援
-pathname: genome-science
 category: dra
 current_tab: home
 tab_menu:

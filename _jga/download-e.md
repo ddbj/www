@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Japanese Genotype-phenotype Archive
 title: Download steps
-pathname: download-e
 category: jga
 current_tab: submission
 tab_menu:
@@ -37,8 +37,6 @@ lang: en
 ---
 
 ## Data use application to NBDC<a name="du-application"></a>
-[NBDC ヒトデータベースの「利用可能な研究データ一覧」](https://humandbs.biosciencedbc.jp/data-use/all-researches)で使いたいデータを探すことができます。
-[DDBJ Search](https://ddbj.nig.ac.jp/search) でも検索することができますが, 新規公開データの反映機能実装が2020年11月になる見込みであり, それまでは新規公開データが反映されません。
 
 You may search JGA data at [the list of researches at the NBDC Human Database](https://humandbs.biosciencedbc.jp/en/data-use/all-researches). [DDBJ Search](https://ddbj.nig.ac.jp/search) is also available, however, regular indexing of new data will be implemented in November 2020. Until this implementation, new JGA data are not indexed.
 Take notes of JGA Dataset accession number(s) you want to use. For example, JGAD000001 (or JGAD00000000001 in the previous accession number format)
@@ -51,7 +49,7 @@ To apply the application, a D-way account is required. If you do not have an acc
 
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 It takes about 10 minutes for the created D-way account becoming active in the NBDC application system.
 </div>
 
@@ -80,7 +78,7 @@ Before starting the application, create a data user group. In the following exam
 For security, the JGA datasets are encrypted by the public key for dataset encryption registered by the applicant in the data use application. The applicant needs to first decrypt the datasets downloaded by scp by using the private key.
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 The public key for dataset encryption is different from the [public/private key pair for the D-way account authentication](/account.html#enable-dra-submission-in-account).
 </div>
 
@@ -110,7 +108,7 @@ After the application is approved by NBDC, metadata, encrypted data files and de
 ### Download<a name="download"></a>
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 To download files from the JGA server by scp, you need to [register a center name and a public key to your D-way account](/account-e.html#enable-dra-submission-in-account). Access to the JGA server is restricted by IP addresses. Inform your IP address of your connecting source to NBDC in application form.
 </div>
 
@@ -191,6 +189,10 @@ case2.vcf.gz.encrypt
 ## Decrypt data files<a name="decrypt"></a>
 
 Decrypt downloaded encrypted data files by using the decryption tools.
+
+<div class="attention">
+Use the decryption tools in Linux. Windows is not supported.
+</div>
 
 Move to the J-DU999991 directory and unzip the "J-DU999991.tool.zip" in the tools directory.
 

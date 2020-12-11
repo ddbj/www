@@ -1,7 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: DDBJ グループクラウド
-pathname: ddbj-group-cloud
 category: services
 lang: ja
 ---

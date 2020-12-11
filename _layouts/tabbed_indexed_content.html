@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<header id="PageHeader">
+  <div class="inner">
+    <div class="page-title">
+      <p class="title -normal">{{ page.service_name }}</p>
+    </div>
+    {% include tab-menu.html %}
+
+  </div>
+</header>
+
+<section id="NavigationAndMainView">
+  <div class="inner">
+    <div class="subview">
+      <nav id="TableOfContents" class="internal-link">
+      </nav>
+    </div>
+    <section id="MainContentView" class="mainview">
+      <header class="header">
+        {% include breadcrumb.html lang=page.lang %}
+        <h1 class="title">{{ page.title }}</h1>
+      </header>
+      <main class="md-content">
+        {{ content }}
+      </main>
+      {% if page.related_pages %}
+      <aside class="multi-column-view _padding-bottom-5rem">
+        <h2 class="caption">Related pages</h2>
+        <div class="navigation">
+          <nav>
+            <ul>
+              {% for related_page in page.related_pages %}
+              <li>
+                <a href="{{ related_page.url }}">{{ related_page.title }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      {% endif %}
+    </section>
+  </div>
+</section>

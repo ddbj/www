@@ -1,7 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: News from 1998
-pathname: archive-1998-e
 category: news
 lang: en
 ---

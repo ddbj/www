@@ -1,7 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: 講習会
-pathname: training
 category: activities
 lang: ja
 ---
@@ -18,7 +17,6 @@ DDBJ が主催する講習会の他に、研究機関の人材育成や大学等
 [第35回 DDBJing 講習会 in 沖縄工業高等専門学校](/activities/training/2017-10-19.html)  
 [第32回 DDBJing 講習会 in 那覇植物防疫事務所](/activities/training/2015-07-29.html)
 
-
 ## D-STEP 講習会 （DDBJ-Supercomputer Training & Educational Program） <a name="d-step"></a>
 
 本プログラムは、[ROIS](https://www.rois.ac.jp/)
@@ -29,5 +27,11 @@ DDBJ が主催する講習会の他に、研究機関の人材育成や大学等
 
 日本の生命科学研究の推進には、研究者が観測・測定したデータを国内外に発信する一方、それら様々なデータを統合化して研究者に提供し活用していただくことが欠かせません。このような日本の基盤的生命科学データベースの構築・管理・運営を担っております[バイオサイエンスデータベースセンター（NBDC）](https://biosciencedbc.jp/)、[ライフサイエンス統合データベースセンター（DBCLS）](http://dbcls.rois.ac.jp/)，
 [日本蛋白質構造データバンク（PDBj）](https://pdbj.org/)、日本 DNA データバンク（DDBJ）の4機関が合同で講習会を開催しています。
+
+## DDBJ データ解析チャレンジ キックオフ講習会 について <a name="kickoff"></a>
+
+DDBJ では、[ROIS](https://www.rois.ac.jp/)
+機構長裁量プログラム（データサイエンス高度人材育成プログラム）への取り組みの一環として、[DDBJ
+データ解析チャレンジ](/activities/training/2016-06-27.html)を実施しています。この講習会は、データ解析チャレンジの参加者向けに実施するキックオフ講習会です。
 
 

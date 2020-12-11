@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: Prefix Letter List
 category: documents
 lang: ja

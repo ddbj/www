@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Genomic Expression Archive
 title: Reviewer Access
-pathname: reviewer-access
 category: gea
 current_tab: submission overview
 tab_menu:
@@ -68,7 +68,7 @@ GEA 登録データにアクセッション番号が発行された後、'Genera
 
 論文の査読プロセスにおけるバイアスを無くすためいくつかのジャーナルでは査読者に論文著者が誰だか分からなくする "double-blind" peer review オプションを論文投稿者に提供しています。 GEA では登録者が特定されないようにするためにメタデータのいくつかのフィールド、[IDF](/gea/metadata.html#idf_tags) で "Person" (名前とメールアドレス)、"PubMed" と "Publication" (pubmed ID と DOI) で始まるフィールドを削除して reviewer access に供する "double-blind" オプションを提供しています。 登録者が double-blind オプションを選択して reviewer token を生成した場合、reviewer には登録者を特定するようなフィールドが削除されたメタデータが提供されますが、GEA 登録者は削除されていないメタデータを登録アカウントでみることができます。論文を double-blind 査読をサポートしていないジャーナルに再投稿することになった場合など、double-blind オプションを選択せずにトークンを再生成すると reviewer access でフルメタデータが提供されるようになります。 データ公開後は reviewer access での登録者関連フィールドの自動削除は実施されなくなります。
 
-<div class="attention red">
+<div class="attention">
 GEA は "Person"、"PubMed" と "Publication" で始まる IDF フィールドを自動で削除します。解析済みデータファイルのエクセル所有者情報などこれら以外の箇所に登録者を特定する情報を含めないようにすることは登録者の責任において実施してください。
 </div>
 

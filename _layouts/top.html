@@ -11,9 +11,6 @@ layout: default
         <h1 class="logotype">{{ page.title }}</h1>
         {% else %}
         <h1 class="title">{{ page.title }}</h1>
-
-        {% include breadcrumb.html lang=page.lang %}
-  
         {% endif %}
         <div class="description">{{ page.description }}</div>
       </header>
@@ -37,6 +34,10 @@ layout: default
           {% endfor %}
         </ul>
       </nav>
+      {% endif %}
+
+      {% if page.category != 'top' %}
+      {% include breadcrumb.html lang=page.lang %}
       {% endif %}
 
       <ul class="panel-view-container">

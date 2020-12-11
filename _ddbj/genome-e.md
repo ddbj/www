@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: Data Submission from Genome Project
-pathname: genome-e
+service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: data_categories
 tab_menu:

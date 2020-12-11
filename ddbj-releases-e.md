@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: Release Notes of DDBJ Releases
-pathname: ddbj-releases-e
+
 
 lang: en
 related_pages:

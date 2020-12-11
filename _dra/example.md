@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Sequence Read Archive
 title: メタデータの例
-pathname: example
 category: dra
 current_tab: handbook
 tab_menu:
@@ -41,7 +41,7 @@ lang: ja
 ---
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 メタデータ作成ツールは technical read (アダプター，プライマーやバーコード配列) の記載に対応していません。  
 [Technical read を含むデータを登録する場合は Experiment XML を作成]({{ site.baseurl }}/dra/submission.html#create-metadata-in-xml-files)し，下記の例を参考に&lt;SPOT_DESCRIPTOR&gt;で technical read を記載する必要があります。
 </div>

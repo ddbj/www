@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: AMED Genome group sharing Database
 title: Submission steps
-pathname: submission-step-e
 category: agd
 current_tab: submission
 tab_menu:

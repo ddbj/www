@@ -1,12 +1,11 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: Training events
-pathname: training-e
 category: activities
 lang: en
 related_pages:
   - title: D-STEP & Symposium on Evolutionary Genetics and Omics (SEGO)
-    url: /activities/d-step02-e.html
+    url: /activities/training/2018-07-13-e.html
 ---
 
 DDBJ Center hosts the following training events for mainly domestic researchers in Japanese language.

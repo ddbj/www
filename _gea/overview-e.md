@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Genomic Expression Archive
 title: Submissions Overview
-pathname: overview-e
 category: gea
 current_tab: submission overview
 tab_menu:

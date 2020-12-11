@@ -1,8 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: INSDC Status Document
-pathname: insdc-status-e
-
 lang: en
 ---
 

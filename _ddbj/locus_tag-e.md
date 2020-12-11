@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: Guideline to use /locus_tag qualifier
-pathname: locus_tag-e
+service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: home
 tab_menu:

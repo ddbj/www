@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Genomic Expression Archive
 title: Metadata
-pathname: metadata
 category: gea
 current_tab: submission overview
 tab_menu:
@@ -237,7 +237,7 @@ SDRF は以下のようになります。
 : Source は実験の出発材料です。このセクションは [Source Name](#Source_Name) カラムで始まり、典型的にはいくつかの [Characteristics](#Characteristics) カラムが続きます。
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 GEA の登録システムでは対応する BioSample の sample_name が Source Name、Extract Name、Labeled Extract Name と Assay Name に共通で使用されます。
 </div>
 

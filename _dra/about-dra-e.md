@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Sequence Read Archive
 title: About DRA
-pathname: about-dra-e
 category: dra
 current_tab: about dra
 tab_menu:

@@ -97,10 +97,10 @@ items:
 dictionary:
   tag:
     en: Annual Report
-    ja: 年次報告書
+    ja: 年次報告
   report_url:
     en: Annual Report
-    ja: 年次報告書
+    ja: 年次報告
   budget_pdf:
     en: Budget (PDF)
     ja: 予算内訳（PDF）
@@ -109,4 +109,4 @@ dictionary:
     ja: 予算内訳（エクセル）
   self_evaluation:
     en: Self evaluation report
-    ja: 自己評価報告書
+    ja: 自己評価報告

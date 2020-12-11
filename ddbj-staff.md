@@ -1,8 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: DDBJ 運営スタッフ
-pathname: ddbj-staff
-
 lang: ja
 ---
 

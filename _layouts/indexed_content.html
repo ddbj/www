@@ -18,10 +18,10 @@ layout: default
       <nav id="TableOfContents" class="internal-link">
       </nav>
     </div>
-    <main id="MainContentView" class="mainview">
-      <div class="md-content">
+    <section id="MainContentView" class="mainview">
+      <main class="md-content">
         {{ content }}
-      </div>
+      </main>
       {% if page.related_pages %}
       <aside class="multi-column-view _padding-bottom-5rem">
         <h2 class="caption">Related pages</h2>
@@ -38,6 +38,6 @@ layout: default
         </div>
       </aside>
       {% endif %}
-    </main>
+    </section>
   </div>
 </section>

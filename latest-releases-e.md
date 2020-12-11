@@ -1,8 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: Latest Release Information
-pathname: latest-releases-e
-
 lang: en
 related_pages:
   - title: DB out/in statistics

@@ -1,7 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: News from 2016
-pathname: archive-2016
 category: news
 lang: ja
 ---
@@ -81,7 +80,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="2016-12-07_2"><a href="#2016-12-07_2">アーカイブ済み fastq/SRA ファイルの期間限定アクセス提供サービスを開始</a></h2>
   <div class="news_date">2016年12月07日</div>
-  <div class="news_content">      <h3>アーカイブ済み fastq/SRA ファイルの期間限定アクセス提供</h3><p><a href="/dra/submission.html#%E3%82%A2%E3%83%BC%E3%82%AB%E3%82%A4%E3%83%96%E6%B8%88%E3%81%BF_fastq/SRA_%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E6%9C%9F%E9%96%93%E9%99%90%E5%AE%9A%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E6%8F%90%E4%BE%9B">DRA Handbook</a></p>      <p>2017年1月12日午後から登録者がアーカイブ済みデータファイルを確認できるようにするため，アクセッション番号が発行された Run の fastq/SRA ファイルはファイルサーバ (dradata.ddbj.nig.ac.jp) 上の登録者がアクセスできる場所にコピーされるようになります。      ディスク容量の圧迫を防ぐため，コピーされたファイルは作成から一ヶ月後に自動的に削除されます。</p>      <p class="attention red">ディスク空き容量の予期せぬ急減等により，コピーした fastq/SRA ファイルの一ヶ月以内の削除やコピー機能の一時停止が実施されることがあります。      できるだけ事前にウェブサイト等で周知いたしますが，直前になることもあり得ることをご了承ください。</p><div class="sub_index"><ul class="circle">  <li>(submitter's home)/report/dra/(DRA submission accession)/fastq/</li>  <li>(submitter's home)/report/dra/(DRA submission accession)/sra/</li>    </ul><p>例</p><ul class="circle"><li>submitter/report/dra/DRA000001/fastq/DRR000001.fastq.bz2</li><li>submitter/report/dra/DRA000001/fastq/DRR000002.fastq.bz2</li><li>submitter/report/dra/DRA000001/fastq/DRR000002_1.fastq.bz2</li><li>submitter/report/dra/DRA000001/fastq/DRR000002_2.fastq.bz2</li><li>submitter/report/dra/DRA000001/sra/DRR000001.sra</li><li>submitter/report/dra/DRA000001/sra/DRR000002.sra</li></ul></div>      </div>
+  <div class="news_content">      <h3>アーカイブ済み fastq/SRA ファイルの期間限定アクセス提供</h3><p><a href="/dra/submission.html#%E3%82%A2%E3%83%BC%E3%82%AB%E3%82%A4%E3%83%96%E6%B8%88%E3%81%BF_fastq/SRA_%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E6%9C%9F%E9%96%93%E9%99%90%E5%AE%9A%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E6%8F%90%E4%BE%9B">DRA Handbook</a></p>      <p>2017年1月12日午後から登録者がアーカイブ済みデータファイルを確認できるようにするため，アクセッション番号が発行された Run の fastq/SRA ファイルはファイルサーバ (dradata.ddbj.nig.ac.jp) 上の登録者がアクセスできる場所にコピーされるようになります。      ディスク容量の圧迫を防ぐため，コピーされたファイルは作成から一ヶ月後に自動的に削除されます。</p>      <p class="attention">ディスク空き容量の予期せぬ急減等により，コピーした fastq/SRA ファイルの一ヶ月以内の削除やコピー機能の一時停止が実施されることがあります。      できるだけ事前にウェブサイト等で周知いたしますが，直前になることもあり得ることをご了承ください。</p><div class="sub_index"><ul class="circle">  <li>(submitter's home)/report/dra/(DRA submission accession)/fastq/</li>  <li>(submitter's home)/report/dra/(DRA submission accession)/sra/</li>    </ul><p>例</p><ul class="circle"><li>submitter/report/dra/DRA000001/fastq/DRR000001.fastq.bz2</li><li>submitter/report/dra/DRA000001/fastq/DRR000002.fastq.bz2</li><li>submitter/report/dra/DRA000001/fastq/DRR000002_1.fastq.bz2</li><li>submitter/report/dra/DRA000001/fastq/DRR000002_2.fastq.bz2</li><li>submitter/report/dra/DRA000001/sra/DRR000001.sra</li><li>submitter/report/dra/DRA000001/sra/DRR000002.sra</li></ul></div>      </div>
   <div class="news_category">
     <span class="service">サービス: bioproject,biosample,dra</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -180,7 +179,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="2016-11-08"><a href="#2016-11-08">D-way における Locus tag prefix 登録機能の一時停止</a></h2>
   <div class="news_date">2016年11月08日</div>
-  <div class="news_content"><p>D-way BioProject submission において，システム上の不具合により Locus tag prefix を取得する機能が停止しています。</p><p class="attention red">Locus tag prefix の取得を希望される方は，お手数ですが <a href="/contact-ddbj.html?db=bioproject">DDBJ BioProject チーム</a>までご連絡ください。</p><p>BioProject submission では Locus tag prefix の入力欄を空にして登録作業を進めてください。</p><p>ご迷惑をおかけいたしますが、何卒よろしくお願いいたします。</p></div>
+  <div class="news_content"><p>D-way BioProject submission において，システム上の不具合により Locus tag prefix を取得する機能が停止しています。</p><p class="attention">Locus tag prefix の取得を希望される方は，お手数ですが <a href="/contact-ddbj.html?db=bioproject">DDBJ BioProject チーム</a>までご連絡ください。</p><p>BioProject submission では Locus tag prefix の入力欄を空にして登録作業を進めてください。</p><p>ご迷惑をおかけいたしますが、何卒よろしくお願いいたします。</p></div>
   <div class="news_category">
     <span class="service">サービス: bioproject,biosample,dra</span>
     <span class="keyword">キーワード: </span>
@@ -270,7 +269,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="2016-09-23"><a href="#2016-09-23">障害により D-way 登録アカウント新規取得, 一部のメール通知サービス停止中</a></h2>
   <div class="news_date">2016年09月23日</div>
-  <div class="news_content"><p>サーバ障害のため、9月20日以降、BioProject, BioSample, DRA 登録関連の一部のサービスを一時停止しております。</p><div class="sub_index"><p>停止中の D-way の機能</p><ul><li>D-way 登録アカウント新規取得</li></ul><p>停止中のメール通知サービス</p><ul><li>BioProject, BioSample, DRA データ公開通知</li><li>DRA 公開予定日到来の予告通知</li><li>DRA データファイル検証処理のログ</li></ul></div><p>現在復旧に向けて作業中です。復旧次第お知らせいたします。</p><p>BioProject, BioSample, DRA の登録や公開の状況は D-way で確認することができます。</p><p class="attention red">D-way アカウントの取得を希望される方は，お手数ですが <a href="/contact-ddbj.html?db=dra">DRA チーム</a>までご連絡ください。</p><p>ユーザの皆様には大変ご迷惑をおかけいたしますが、何卒よろしくお願いいたします。</p></div>
+  <div class="news_content"><p>サーバ障害のため、9月20日以降、BioProject, BioSample, DRA 登録関連の一部のサービスを一時停止しております。</p><div class="sub_index"><p>停止中の D-way の機能</p><ul><li>D-way 登録アカウント新規取得</li></ul><p>停止中のメール通知サービス</p><ul><li>BioProject, BioSample, DRA データ公開通知</li><li>DRA 公開予定日到来の予告通知</li><li>DRA データファイル検証処理のログ</li></ul></div><p>現在復旧に向けて作業中です。復旧次第お知らせいたします。</p><p>BioProject, BioSample, DRA の登録や公開の状況は D-way で確認することができます。</p><p class="attention">D-way アカウントの取得を希望される方は，お手数ですが <a href="/contact-ddbj.html?db=dra">DRA チーム</a>までご連絡ください。</p><p>ユーザの皆様には大変ご迷惑をおかけいたしますが、何卒よろしくお願いいたします。</p></div>
   <div class="news_category">
     <span class="service">サービス: bioproject,biosample,dra</span>
     <span class="keyword">キーワード: </span>
@@ -423,7 +422,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="2016-08-01"><a href="#2016-08-01">DRA 登録システム Experiment 入力画面での不具合 (修正済み)</a></h2>
   <div class="news_date">2016年08月01日</div>
-  <div class="news_content"><p class="attention red">2016-08-18 に本不具合を修正いたしました。</p><p><a href="/news/ja/2016-07-13.html">2016年7月13日に実施した DRA XML スキーマ更新</a>時の不具合により，DRA 登録システムで以下の事象が発生しております。</p><p>Experiment の入力画面で必須項目である "Library Source" と "Library Strategy" が未入力の状態で [Save] や [Next (RUN)] ボタンをクリックすると，Experiment タブ表示時，及び，[Submit/Update DRA metadata] でメタデータを submit したときにシステムエラーが発生いたします。一旦システムエラーになった登録 (Submission) は再利用することができません。</p><p>システムエラーの発生を防止する暫定的な対応として，8月1日中に "Library Source" と "Library Strategy" が未入力の状態で [Save] や [Next (RUN)] がクリックできないようにする処理を実装いたします。不具合を解消するシステムリリースは8月下旬に実施する予定です。</p><p>この度はユーザの皆様には多大なご迷惑をお掛けしてしまい，誠に申し訳御座いません。</p></div>
+  <div class="news_content"><p class="attention">2016-08-18 に本不具合を修正いたしました。</p><p><a href="/news/ja/2016-07-13.html">2016年7月13日に実施した DRA XML スキーマ更新</a>時の不具合により，DRA 登録システムで以下の事象が発生しております。</p><p>Experiment の入力画面で必須項目である "Library Source" と "Library Strategy" が未入力の状態で [Save] や [Next (RUN)] ボタンをクリックすると，Experiment タブ表示時，及び，[Submit/Update DRA metadata] でメタデータを submit したときにシステムエラーが発生いたします。一旦システムエラーになった登録 (Submission) は再利用することができません。</p><p>システムエラーの発生を防止する暫定的な対応として，8月1日中に "Library Source" と "Library Strategy" が未入力の状態で [Save] や [Next (RUN)] がクリックできないようにする処理を実装いたします。不具合を解消するシステムリリースは8月下旬に実施する予定です。</p><p>この度はユーザの皆様には多大なご迷惑をお掛けしてしまい，誠に申し訳御座いません。</p></div>
   <div class="news_category">
     <span class="service">サービス: bioproject,biosample,dra</span>
     <span class="keyword">キーワード: </span>

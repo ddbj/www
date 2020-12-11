@@ -1,7 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: News from 2013
-pathname: archive-2013-e
 category: news
 lang: en
 ---

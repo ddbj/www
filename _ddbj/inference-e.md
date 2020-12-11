@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: /inference qualifier vocabulary recommendation document
-pathname: inference-e
+service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: home
 tab_menu:

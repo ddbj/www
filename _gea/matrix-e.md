@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Genomic Expression Archive
 title: MAGE-TAB format for raw and processed data matrix
-pathname: matrix-e
 category: gea
 current_tab: submission overview
 tab_menu:

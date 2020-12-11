@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: データ公開原則
 category: documents
 lang: ja
@@ -32,7 +32,7 @@ related_pages:
 3. [公開予定日](/ddbj/submission.html#holddate)が到来した場合
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
   - 2または3の場合には登録者の了解がなくても公開いたします。
   - このデータ公開原則は、1998年1月1日以降に受け付けたデータから適用されています。それ以前に登録されたデータは、1,2の場合に公開しています。
 </div>

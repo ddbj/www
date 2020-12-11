@@ -1,8 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: DDBJ Mail Magazine
-pathname: subscribe-ddbj-e
-
 lang: en
 ---
 

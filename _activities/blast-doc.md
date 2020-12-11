@@ -1,7 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: 相同性検索プログラムBLASTの内部構造
-pathname: blast-doc
 category: activities
 lang: ja
 related_pages:
@@ -42,7 +41,7 @@ related_pages:
   - title: DDBJ Mail Magazine
     url: /subscribe-ddbj.html
   - title: DDBJ データ解析チャレンジ
-    url: /activities/training-ddbj-challenge.html
+    url: /activities/training/2016-06-27.html
 ---
 
 　ＤＮＡの塩基配列やタンパク質のアミノ酸配列の決定が一般的になった現在では，新たに決めた配列と相同性の高い配列をデータベース中で発見することが，分子の機能や構造，そして分子進化を考える上で，ますます重要になっています。この相同性検索のための強力なツールが，Altschulら（1990）によって開発されたBLAST（Basic Local Alignment Search Tool）です。ここでは，BLASTのプログラムの原理と実際の作業手順について，簡単に紹介します。

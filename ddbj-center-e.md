@@ -1,8 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: About DDBJ Center
-pathname: ddbj-center-e
-
 lang: en
 related_pages:
   - title: Faculty Staff of DDBJ

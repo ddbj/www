@@ -1,8 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: お問い合わせ
-pathname: contact-ddbj
-
 lang: ja
 ---
 

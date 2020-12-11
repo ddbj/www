@@ -1,7 +1,7 @@
 ---
 layout: top
 title: JVar for Short Genetic Variation
-pathname: index-e
+
 category: jvar-snp
 current_tab: home
 tab_menu:

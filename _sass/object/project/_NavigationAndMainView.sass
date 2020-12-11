@@ -13,12 +13,10 @@
         margin-left: auto
         padding-bottom: 2rem
         width: $WIDTH_NAV_AND_MAIN_SUBVIEW
-        //height: $HEIGHT_NAV_AND_MAIN_SUBVIEW
         position: sticky
-        overflow: scroll
+        overflow: auto
         top: 0
     > .mainview
       width: calc( (100vw - #{$WIDTH_MAX}) + (#{$WIDTH_MAX} - #{$WIDTH_NAV_AND_MAIN_SUBVIEW}) )
       > *
         max-width: calc(#{$WIDTH_MAX} - #{$WIDTH_NAV_AND_MAIN_SUBVIEW} - #{$PADDING_BASE})
-  

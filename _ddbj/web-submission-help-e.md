@@ -1,6 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: DDBJ Nucleotide Sequence Submission System HELP
+service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 lang: en
 ---

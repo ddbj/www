@@ -1,6 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: DDBJ Nucleotide Sequence Submission System (NSSS)
+service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: submission
 tab_menu:

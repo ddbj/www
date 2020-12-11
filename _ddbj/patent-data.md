@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: 特許出願に含まれる配列データの提供
-pathname: patent-data
+service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: other
 tab_menu:

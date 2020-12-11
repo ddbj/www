@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: AMED Genome group sharing Database
 title: AGD への登録
-pathname: submission
 category: agd
 current_tab: submission
 tab_menu:
@@ -34,7 +34,7 @@ AGD データを利用するためには，[NBDC](http://gr-sharingdbs.bioscienc
 
 メタデータオブジェクトに対して以下のプレフィックス付き管理用 ID が割り振られます。
 
-<div class="attention red">
+<div class="attention">
 AGD で発行される管理用 ID は論文で引用することはできません。論文投稿に必要なアクセッション番号は JGA や DRA から取得する必要があります。AGD は研究者間でのデータ共有 (制限共有) を実現するために DDBJ グループクラウドで提供するデータベースです。
 </div>
 

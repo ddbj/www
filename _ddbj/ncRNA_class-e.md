@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: Controlled vocabulary for ncRNA classes
-pathname: ncRNA_class-e
+service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: home
 tab_menu:

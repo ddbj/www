@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: DDBJ 公開形式 Flat file
-pathname: flat-file
+service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: flat_file
 tab_menu:

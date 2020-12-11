@@ -1,7 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: DDBJ Publications Archive
-pathname: archives-e
 category: activities
 lang: en
 related_pages:

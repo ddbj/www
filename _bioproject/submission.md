@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: BioProject
 title: DDBJ BioProject Handbook
-pathname: submission
 category: bioproject
 current_tab: handbook
 tab_menu:
@@ -83,7 +83,7 @@ BioProject は同じプロジェクトに由来するデータ，それからま
 
   アンブレラプロジェクトは大規模なプロジェクトや研究費の提供元が同一のプロジェクトといった関連するプロジェクトを上位レベルでまとめるために存在しています。プライマリープロジェクトは登録されているデータにリンクされ，さらに１つ以上のアンブレラプロジェクトにリンクすることができます。プライマリープロジェクト同士が直接リンクされることはなく，それらはアンブレラプロジェクトを介して間接的にリンクされます。
 
-  <div class="attention red">
+  <div class="attention">
   配列データはアンブレラプロジェクトを直接参照することはできません。プライマリープロジェクトを介してアンブレラにリンクされます。
   </div>
 
@@ -835,7 +835,7 @@ BioProject への登録は次のような場合は必須ではありません。
   - 単一のプラスミド，ウイルスやオルガネラゲノムのシークエンスといった１つ (もしくは少数の) アクセッション番号しかリンクされない場合
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 [INSDC はゲノムが登録される微生物に対して strain-level taxonomy ID を新規発行していません。](/news/ja/2014-02-12.html)[BioSample ID](/biosample/index.html) で区別されることになります。
 </div>
 
@@ -846,7 +846,7 @@ BioProject への登録は次のような場合は必須ではありません。
 [D-way (https://ddbj.nig.ac.jp/D-way)](https://ddbj.nig.ac.jp/D-way/)
 にログインします。ウェブサイトの上部にある "BioProject" メニューから BioProject 登録ページに移動します。BioProject ページ内の \[New submission\] をクリックし，新規プロジェクト登録を作成します。
 
-<div class="attention red">
+<div class="attention">
 DDBJ センターから登録者に問い合わせた後三か月以上回答が無い場合は Submission をキャンセルいたします。
 </div>
 
@@ -870,7 +870,7 @@ BioProject を新規登録する場合は左のタブから順番に内容を英
 
 prefix は NCBI が一括管理しています。プロジェクトを投稿する段階で，NCBI に prefix を予約しにいきます。予約済みの場合はエラーになるので，再度希望する prefix を入力して投稿します。
 
-<div class="attention red">
+<div class="attention">
 複数の prefix の取得を希望する場合は [BioProject チームに連絡します](/contact-ddbj.html)。
 </div>
 
@@ -890,7 +890,7 @@ prefix は NCBI が一括管理しています。プロジェクトを投稿す�
 
 ウェブから投稿されたデータに対して PSUB で始まる仮 ID が自動的に割り当てられます。正式なアクセッション番号が発行されるまでは，この仮 ID で登録を参照します。 DDBJ BioProject スタッフはデータを査定した後，完成したデータに対してプレフィックス "PRJD" のアクセッション番号を発行します。 [D-way](https://ddbj.nig.ac.jp/D-way/) にログイン後，ウェブ上で登録したプロジェクトの進行状況やアクセッション番号を確認することができます。
 
-  <div class="attention red">
+  <div class="attention">
   - PSUB で始まる仮 ID を論文中に引用しないでください。
   - EBI/NCBI に登録したプロジェクトを DDBJ に重複して登録しないでください。
   </div>
@@ -918,7 +918,7 @@ prefix は NCBI が一括管理しています。プロジェクトを投稿す�
   - 査定が終わった後すぐに公開
   - BioProject アクセッション番号を引用しているデータと同時に公開
 
-<div class="attention red">
+<div class="attention">
 公開予定日は設定することができません。
 </div>
 

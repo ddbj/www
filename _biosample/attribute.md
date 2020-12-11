@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: BioSample
 title: サンプル属性
-pathname: attribute
 category: biosample
 current_tab: sample attribute
 tab_menu:

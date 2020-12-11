@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: Organism qualifier に記載する生物名
-pathname: organism
+service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: flat_file
 tab_menu:

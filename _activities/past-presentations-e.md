@@ -1,7 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: DDBJ staff presentations (2001-2008)
-pathname: past-presentations-e
 category: activities
 lang: en
 related_pages:

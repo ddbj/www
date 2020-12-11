@@ -1,7 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: News from 2005
-pathname: archive-2005-e
 category: news
 lang: en
 ---

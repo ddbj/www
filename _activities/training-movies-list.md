@@ -1,13 +1,12 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: 動画一覧
-pathname: training-movies-list
 category: activities
 lang: ja
 ---
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 
 動画中の情報は、一部古い場合があります。ご不明な点は[お問い合わせ](/contact.html)ください。
 
@@ -117,7 +116,7 @@ lang: ja
   </tr>
   <tr>
     <td><a href="https://youtu.be/edGUiVZ_4QQ">アクセッション番号の引用</a><br>論文へのアクセッション番号の引用について(1'01")</td>
-    <td class="borderrgt" align="right"><a href="/dra/faq.html#dra-accession"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="/faq/ja/dra-accession.html"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
 </table>
 
@@ -238,7 +237,7 @@ lang: ja
   </tr>
   <tr>
     <td><a href="https://youtu.be/KZvLC9t058U">BioProject と BioSample の連動公開</a><br>BioProject/BioSample と塩基配列データの連動公開について。(1'28")</td>
-    <td class="borderrgt" align="right"><a href="/faq/ja/bp_bs_seq_release.html"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="/faq/ja/bp-bs-seq-release.html"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
   <tr>
     <td><a href="https://youtu.be/pngb7aT27Us">データの公開と更新</a><br>登録済みデータの公開と更新。(1'21")</td>
@@ -306,23 +305,23 @@ lang: ja
   </tr>
   <tr>
     <td><a href="//youtu.be/bSWRLIShIL4">NSSS で受け付けるデータと登録の流れ</a><br>-(2'00")</td>
-    <td class="borderrgt" align="right"><a href="/ddbj/websub-help.html#flow-1"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="/ddbj/web-submission-help.html#flow-1"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
   <tr>
     <td><a href="//youtu.be/apordNd5s8o">DDBJ フラットファイル</a><br>-(0'55")</td>
-    <td class="borderrgt" align="right"><a href="/ddbj/websub-help.html#flow-1"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="/ddbj/web-submission-help.html#flow-1"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
   <tr>
     <td><a href="//youtu.be/AMfN-MrcFjg">登録環境</a><br>-(1'17")</td>
-    <td class="borderrgt" align="right"><a href="/ddbj/websub-help.html#flow-1"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="/ddbj/web-submission-help.html#flow-1"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
   <tr>
     <td><a href="//youtu.be/rigEImU8bs0">登録に必要な情報</a><br>-(2'23")</td>
-    <td class="borderrgt" align="right"><a href="/ddbj/websub-help.html#flow-1"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="/ddbj/web-submission-help.html#flow-1"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
   <tr>
     <td><a href="//youtu.be/S7u6wmsr8YY">DDBJ 塩基配列登録システムの特徴</a><br>-(2'07")</td>
-    <td class="borderrgt" align="right"><a href="/ddbj/websub-help.html#flow-1"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="/ddbj/web-submission-help.html#flow-1"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
 </table>
 
@@ -332,55 +331,55 @@ lang: ja
   </tr>
   <tr>
     <td><a href="//youtu.be/itcFmFBNlRk">登録の開始</a><br>-(3'50")</td>
-    <td class="borderrgt" align="right"><a href="/ddbj/websub-help.html#flow-1"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="/ddbj/web-submission-help.html#flow-1"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
   <tr>
     <td><a href="//youtu.be/maD1tLkeluw">入力の流れ</a><br>-(5'38")</td>
-    <td class="borderrgt" align="right"><a href="/ddbj/websub-help.html#flow-1"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="/ddbj/web-submission-help.html#flow-1"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
   <tr>
     <td><a href="//youtu.be/E7lrtBDAUao">プログレスバー</a><br>--(1'00")</td>
-    <td class="borderrgt" align="right"><a href="/ddbj/websub-help.html#flow-1"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="/ddbj/web-submission-help.html#flow-1"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
   <tr>
     <td><a href="//youtu.be/ldL_uHW-hBQ">Contact person</a><br>-(0'55")</td>
-    <td class="borderrgt" align="right"><a href="/ddbj/websub-help.html#flow-1"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="/ddbj/web-submission-help.html#flow-1"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
   <tr>
     <td><a href="//youtu.be/_fzHW1P2QAg">Hold date</a><br>-(2'01")</td>
-    <td class="borderrgt" align="right"><a href="/ddbj/websub-help.html#flow-2"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="/ddbj/web-submission-help.html#flow-2"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
   <tr>
     <td><a href="//youtu.be/_fzHW1P2QAg">Submitter</a><br>-(2'07")</td>
-    <td class="borderrgt" align="right"><a href="/ddbj/websub-help.html#flow-3"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="/ddbj/web-submission-help.html#flow-3"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
   <tr>
     <td><a href="//youtu.be/rkwAQkgV9DE">Reference</a><br>-(2'24")</td>
-    <td class="borderrgt" align="right"><a href="/ddbj/websub-help.html#flow-4"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="/ddbj/web-submission-help.html#flow-4"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
   <tr>
     <td><a href="//youtu.be/Fe71CVz7wxU">Sequence</a><br>-(2'14")</td>
-    <td class="borderrgt" align="right"><a href="/ddbj/websub-help.html#flow-5"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="/ddbj/web-submission-help.html#flow-5"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
   <tr>
     <td><a href="//youtu.be/Ixb68V5Pvyg">Template</a><br>-(2'30")</td>
-    <td class="borderrgt" align="right"><a href="/ddbj/websub-help.html#flow-6"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="/ddbj/web-submission-help.html#flow-6"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
   <tr>
     <td><a href="//youtu.be/pIf0aaIUlK8">Annotation 表形式入力</a><br>-(5'44")</td>
-    <td class="borderrgt" align="right"><a href="/ddbj/websub-help.html#flow-7-1"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="/ddbj/web-submission-help.html#flow-7-1"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
   <tr>
     <td><a href="//youtu.be/HU0kSbNK1IM">Annotation Template で other を選択した際の入力</a><br>-(2'46")</td>
-    <td class="borderrgt" align="right"><a href="/ddbj/websub-help.html#flow-7-2"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="/ddbj/web-submission-help.html#flow-7-2"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
   <tr>
     <td><a href="//youtu.be/ntra7NrVYmo">Finish 最終確認画面</a><br>-(5'05")</td>
-    <td class="borderrgt" align="right"><a href="/ddbj/websub-help.html#flow-7a"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="/ddbj/web-submission-help.html#flow-7a"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
   <tr>
     <td><a href="//youtu.be/SPwiI05hoDU">よくある入力ミス</a><br>-(5'40")</td>
-    <td class="borderrgt" align="right"><a href="/ddbj/websub-help.html#flow-7a"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="/ddbj/web-submission-help.html#flow-7a"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
 </table>
 
@@ -474,7 +473,7 @@ lang: ja
   </tr>
   <tr>
     <td><a href="//youtu.be/5Z0VroRzPpo">Mass Submission System の紹介</a><br>第33回 DDBJing 講習会 in 東京（2015.11.11.）(43'24")</td>
-    <td class="borderrgt" align="right"><a href="//drive.google.com/file/d/1lngYmPju57MpBuZDna28acJzABXqQGN6/edit"><img src="{{ site.baseurl }}/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="//drive.google.com/file/d/1lngYmPju57MpBuZDna28acJzABXqQGN6/edit"><img src="{{ site.baseurl }}/assets/images/parts/pdf_icon.svg" class="webpageicon"></a></td>
   </tr>
 </table>
 

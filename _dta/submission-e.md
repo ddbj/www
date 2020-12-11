@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Trace Archive
 title: Trace Archive
-pathname: submission-e
 category: dta
 current_tab: submission
 tab_menu:
@@ -37,7 +37,7 @@ Released data can be searched and retrieved at the [NCBI Trace
 Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi).
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 [DDBJ Sequence Read Archive](/dra/submission.html#dra)accepts trace
 data. Please consider to submit trace data to DRA.
 </div>

@@ -1,7 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: DDBJ アノテータの業務紹介
-pathname: curators
 category: activities
 lang: ja
 related_pages:
@@ -28,7 +27,7 @@ related_pages:
   - title: DDBJ Mail Magazine
     url: /subscribe-ddbj.html
   - title: DDBJ データ解析チャレンジ
-    url: /activities/training-ddbj-challenge.html
+    url: /activities/training/2016-06-27.html
 ---
 
 ユーザーの皆様に DDBJ について業務内容を知って頂きより身近に感じていただけるよう，DDBJ アノテータが DDBJ Mail Magazine にリレー連載したコラムをまとめました。

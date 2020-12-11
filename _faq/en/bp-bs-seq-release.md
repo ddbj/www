@@ -23,7 +23,7 @@ lang: en
     <li>Release of the DRA data DO NOT trigger release of the DDBJ records.</li>
   </ul>
 </div>
-<p id="release_unit" class="attention red">All metadata and sequencing data in a DRA submission are released at once.</p>
+<p id="release_unit" class="attention">All metadata and sequencing data in a DRA submission are released at once.</p>
 <figure><a href="{{ site.baseurl }}/assets/images/books/bp-bs-seq_release.jpg" title="Release of linked BioProject/BioSample/sequence records"><img src="{{ site.baseurl }}/assets/images/books/bp-bs-seq_release.jpg" alt="Release of linked BioProject/BioSample/sequence records" title="Release of linked BioProject/BioSample/sequence records" class="w450"></a>
   <figcaption class="caption">Release of linked BioProject/BioSample/sequence records</figcaption>
 </figure>

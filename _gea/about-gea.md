@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Genomic Expression Archive
 title: GEA について
-pathname: about-gea
 category: gea
 current_tab: about gea
 tab_menu:

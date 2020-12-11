@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: WABI ClustalW
 category: services
 lang: ja

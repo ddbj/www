@@ -1,6 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: 塩基配列の登録
+service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 lang: ja
 current_tab: submission

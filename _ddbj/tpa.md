@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: TPA
-pathname: tpa
+service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: data_categories
 tab_menu:

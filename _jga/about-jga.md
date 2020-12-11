@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Japanese Genotype-phenotype Archive
 title: About JGA
-pathname: about-jga
 category: jga
 current_tab: home
 tab_menu:

@@ -1,8 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: page-access
-pathname: insdc-e
-
 lang: en
 related_pages:
   - title: INSDC Status Document

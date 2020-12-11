@@ -1,12 +1,11 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: 発行物アーカイブ
-pathname: archives
 category: activities
 lang: ja
 related_pages:
   - title: DDBJ データ解析チャレンジ
-    url: /activities/training-ddbj-challenge.html
+    url: /activities/training/2016-06-27.html
   - title: DDBJ スタッフの論文 (2009-)
     url: /activities/
   - title: DDBJ スタッフの講演発表 (2009-)

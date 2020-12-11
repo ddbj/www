@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: 課金サービスの利用方法 
 category: sc
 lang: ja

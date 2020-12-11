@@ -1,8 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: DDBJ センターについて
-pathname: ddbj-center
-
 lang: ja
 related_pages:
   - title: DDBJ 運営スタッフ

@@ -1,7 +1,7 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Sequence Read Archive
 title: Example of metadata
-pathname: example-e
 category: dra
 current_tab: handbook
 tab_menu:
@@ -51,7 +51,7 @@ lang: en
 ---
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 The DRA metadata submission tool cannot describe technical reads (adapter, primer and barcode sequences). When sequencing data contain technical reads to be submitted,
 [submitters need to create ExperimentXML files](/dra/submission.html#create-metadata-in-xml-files)
 and describe technical reads in the \<SPOT_DESCRIPTOR>.

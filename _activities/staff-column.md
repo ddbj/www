@@ -1,7 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: DDBJ スタッフコラム
-pathname: staff-column
 category: activities
 lang: ja
 related_pages:
@@ -30,7 +29,7 @@ related_pages:
   - title: DDBJ Mail Magazine
     url: /subscribe-ddbj.html
   - title: DDBJ データ解析チャレンジ
-    url: /activities/training-ddbj-challenge.html
+    url: /activities/training/2016-06-27.html
 ---
 
 Mail Magazine 連載期間：No.12（2004年2月2日発行）〜 No.40（2008年10月8日発行）  

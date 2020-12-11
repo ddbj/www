@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: WABI BLAST
 category: services
 lang: en
@@ -1566,7 +1566,7 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 ```
 
 {::options parse_block_html="true" /}
-<div class="attention red">
+<div class="attention">
 Valid search results may not be obtained with very long sequences or if
 there are too many sequences for the following reasons.  
 In such cases, please try reducing the number of query sequences or

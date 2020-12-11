@@ -1,8 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
 title: Notification for research participants regarding our database activities for human data
-pathname: human-data-sharing-e
-
 lang: en
 ---
 
