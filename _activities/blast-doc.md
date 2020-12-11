@@ -1,5 +1,5 @@
 ---
-layout: tabbed_indexed_content
+layout: indexed_content
 title: 相同性検索プログラムBLASTの内部構造
 category: activities
 lang: ja

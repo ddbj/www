@@ -1,5 +1,5 @@
 ---
-layout: tabbed_indexed_content
+layout: indexed_content
 title: Do not block E-mails from DDBJ
 lang: en
 ---

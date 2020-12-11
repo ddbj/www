@@ -1,5 +1,5 @@
 ---
-layout: tabbed_indexed_content
+layout: indexed_content
 title: DDBJ staff presentations (2001-2008)
 category: activities
 lang: en

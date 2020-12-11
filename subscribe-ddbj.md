@@ -1,5 +1,5 @@
 ---
-layout: tabbed_indexed_content
+layout: indexed_content
 title: メールマガジン申し込み
 lang: ja
 ---

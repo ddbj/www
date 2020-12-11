@@ -1,5 +1,5 @@
 ---
-layout: tabbed_indexed_content
+layout: indexed_content
 lang: ja
 title: リリースノート (DDBJ, 16S rRNA, DAD)
 lang: ja

@@ -1,5 +1,5 @@
 ---
-layout: tabbed_indexed_content
+layout: indexed_content
 title: 遺伝研スーパーコンピュータシステム 
 category: sc
 lang: ja

@@ -1,5 +1,5 @@
 ---
-layout: tabbed_indexed_content
+layout: indexed_content
 title: 登録データ種別
 category: documents
 lang: ja

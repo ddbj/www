@@ -1,5 +1,5 @@
 ---
-layout: tabbed_indexed_content
+layout: indexed_content
 title: 進化ゲノム学とは
 category: activities
 lang: ja
