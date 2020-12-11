@@ -1,7 +1,6 @@
 ---
 layout: top
 title: DDBJ Annotated/Assembled Sequences
-description: <p>DDBJ（DNA Data Bank of Japan）は国際塩基配列データベースを共同構築する <a href="/insdc.html">INSDC</a>（International Nucleotide Sequence Database Collaboration）の一員として、アノテーションが付与された/アセンブルされた塩基配列データを共有しています。</p>
 service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: home
@@ -114,3 +113,6 @@ panels:
   icon: ../assets/images/icon-search_analysis.png
 lang: ja
 ---
+
+DDBJ（DNA Data Bank of Japan）は国際塩基配列データベースを共同構築する [INSDC](/insdc.html)（International Nucleotide Sequence Database
+Collaboration）の一員として、アノテーションが付与された/アセンブルされた塩基配列データを共有しています。
