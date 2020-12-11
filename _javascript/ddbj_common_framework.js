@@ -16,8 +16,8 @@
         en: 'Services'
       },
       uri: {
-        ja: 'https://www.ddbj.nig.ac.jp/services.html',
-        en: 'https://www.ddbj.nig.ac.jp/services-e.html'
+        ja: '/services/',
+        en: '/services/index-e'
       }
     },
     {
@@ -36,8 +36,8 @@
         en: 'Statistics'
       },
       uri: {
-        ja: 'https://www.ddbj.nig.ac.jp/statistics.html',
-        en: 'https://www.ddbj.nig.ac.jp/statistics-e.html'
+        ja: '/statistics/',
+        en: '/statistics/index-e'
       }
     },
     {
@@ -46,8 +46,8 @@
         en: 'Activities'
       },
       uri: {
-        ja: 'https://www.ddbj.nig.ac.jp/activities.html',
-        en: 'https://www.ddbj.nig.ac.jp/activities-e.html'
+        ja: '/activities/',
+        en: '/activities/index-e'
       }
     },
     {
@@ -56,8 +56,8 @@
         en: 'About Us'
       },
       uri: {
-        ja: 'https://www.ddbj.nig.ac.jp/aboutus.html',
-        en: 'https://www.ddbj.nig.ac.jp/aboutus-e.html'
+        ja: '/ddbj-center',
+        en: '/ddbj-center-e'
       }
     }
   ];
@@ -68,8 +68,8 @@
         en: 'Terms'
       },
       uri: {
-        ja: 'https://www.ddbj.nig.ac.jp/policies.html',
-        en: 'https://www.ddbj.nig.ac.jp/policies-e.html'
+        ja: '/policies',
+        en: '/policies-e'
       }
     },
     {
@@ -78,8 +78,8 @@
         en: 'Contact'
       },
       uri: {
-        ja: 'https://www.ddbj.nig.ac.jp/contact.html',
-        en: 'https://www.ddbj.nig.ac.jp/contact-e.html'
+        ja: '/contact-ddbj',
+        en: '/contact-ddbj-e'
       }
     }
   ];
@@ -129,8 +129,8 @@
               ja: 'DDBJ/EBI/NCBI SRA のデータの検索と取得'
             },
             uri: {
-              en: 'http://ddbj.nig.ac.jp/DRASearch/',
-              ja: 'http://ddbj.nig.ac.jp/DRASearch/'
+              en: '/dra/index',
+              ja: '/dra/index-e'
             }
           },
           {
@@ -207,8 +207,8 @@
               ja: 'DDBJ 検索サービスの Web API'
             },
             uri: {
-              en: 'https://www.ddbj.nig.ac.jp/search/help/wabi/wabi-e.html',
-              ja: 'https://www.ddbj.nig.ac.jp/search/help/wabi/wabi-j.html'
+              en: '/services/wabi-e',
+              ja: '/services/wabi'
             }
           },
           {
@@ -243,8 +243,8 @@
               ja: 'Annotated/Assembled Sequences (DDBJ)'
             },
             uri: {
-              en: 'https://www.ddbj.nig.ac.jp/ddbj/index-e.html',
-              ja: 'https://www.ddbj.nig.ac.jp/ddbj/index.html'
+              en: '/ddbj/index-e',
+              ja: '/ddbj/'
             }
           },
           {
@@ -271,8 +271,8 @@
               ja: 'Genomic Expression Archive'
             },
             uri: {
-              en: 'https://www.ddbj.nig.ac.jp/gea/index-e.html',
-              ja: 'https://www.ddbj.nig.ac.jp/gea/index.html'
+              en: '/gea/index-e',
+              ja: '/gea/'
             }
           },
           {
@@ -285,8 +285,8 @@
               ja: 'BioProject'
             },
             uri: {
-              en: 'https://www.ddbj.nig.ac.jp/bioproject/index-e.html',
-              ja: 'https://www.ddbj.nig.ac.jp/bioproject/index.html'
+              en: '/bioproject/index-e',
+              ja: '/bioproject/'
             }
           },
           {
@@ -299,8 +299,8 @@
               ja: 'BioSample'
             },
             uri: {
-              en: 'https://www.ddbj.nig.ac.jp/biosample/index-e.html',
-              ja: 'https://www.ddbj.nig.ac.jp/biosample/index.html'
+              en: '/biosample/index-e',
+              ja: '/biosample/'
             }
           },
           {
@@ -313,8 +313,8 @@
               ja: 'Japanese Genotype-phenotype Archive'
             },
             uri: {
-              en: 'https://www.ddbj.nig.ac.jp/jga/index-e.html',
-              ja: 'https://www.ddbj.nig.ac.jp/jga/index.html'
+              en: '/jga/index-e',
+              ja: '/jga/'
             }
           },
           {
@@ -363,8 +363,8 @@
           ja: '講習会'
         },
         uri: {
-          en: 'https://ddbj.nig.ac.jp/training-e.html',
-          ja: 'https://ddbj.nig.ac.jp/training.html'
+          en: '/activities/?keyword%5B%5D=training',
+          ja: '/activities/index-e?keyword%5B%5D=training'
         }
       },
       {
@@ -544,8 +544,8 @@
         ja: 'ポリシーと免責事項'
       },
       uri: {
-        en: 'https://www.ddbj.nig.ac.jp/policies-e.html',
-        ja: 'https://www.ddbj.nig.ac.jp/policies.html'
+        en: '/policies-e',
+        ja: '/policies'
       }
     },
     {
@@ -558,8 +558,8 @@
         ja: 'お知らせ一覧'
       },
       uri: {
-        en: 'https://www.ddbj.nig.ac.jp/news/en/index-e.html',
-        ja: 'https://www.ddbj.nig.ac.jp/news/ja/index.html'
+        en: '/news/en/index-e',
+        ja: '/news/ja/index'
       }
     },
     {
@@ -572,8 +572,8 @@
         ja: 'よくある質問一覧'
       },
       uri: {
-        en: 'https://www.ddbj.nig.ac.jp/faq/en/index-e.html',
-        ja: 'https://www.ddbj.nig.ac.jp/faq/ja/index.html'
+        en: '/faq/en/index-e',
+        ja: '/faq/ja/index'
       }
     },
     {
@@ -586,24 +586,24 @@
         ja: 'サイトマップ'
       },
       uri: {
-        en: 'https://www.ddbj.nig.ac.jp/sitemap-e.html',
-        ja: 'https://www.ddbj.nig.ac.jp/sitemap.html'
+        en: '/sitemaps-e',
+        ja: '/sitemaps'
       }
     },
-    {
-      label: {
-        en: 'Calendar',
-        ja: 'Calendar'
-      },
-      desc: {
-        en: 'DDBJ Center Calendar',
-        ja: 'DDBJ Center カレンダー'
-      },
-      uri: {
-        en: 'https://www.ddbj.nig.ac.jp/calendar-e.html',
-        ja: 'https://www.ddbj.nig.ac.jp/calendar.html'
-      }
-    },
+    //{
+    //  label: {
+    //    en: 'Calendar',
+    //    ja: 'Calendar'
+    //  },
+    //  desc: {
+    //    en: 'DDBJ Center Calendar',
+    //    ja: 'DDBJ Center カレンダー'
+    //  },
+    //  uri: {
+    //    en: 'https://www.ddbj.nig.ac.jp/calendar-e.html',
+    //    ja: 'https://www.ddbj.nig.ac.jp/calendar.html'
+    //  }
+    //},
     {
       label: {
         en: 'Address',
@@ -614,8 +614,8 @@
         ja: 'DDBJ Center 住所'
       },
       uri: {
-        en: 'https://www.ddbj.nig.ac.jp/access-e.html',
-        ja: 'https://www.ddbj.nig.ac.jp/access.html'
+        en: '/ddbj-access-e',
+        ja: '/ddbj-access'
       }
     },
     {
@@ -628,8 +628,8 @@
         ja: 'DDBJ センターに連絡'
       },
       uri: {
-        en: 'https://www.ddbj.nig.ac.jp/contact-e.html',
-        ja: 'https://www.ddbj.nig.ac.jp/contact.html'
+        en: '/contact-ddbj-e',
+        ja: '/contact-ddbj'
       }
     }
   ];
@@ -1018,7 +1018,7 @@
   header.innerHTML = `
     <div class="DDBJ_inner">
       <div class="DDBJ_logocontainer">
-        <a class="DDBJ_logotype" href="${language === 'ja' ? 'https://www.ddbj.nig.ac.jp/index.html' : 'https://www.ddbj.nig.ac.jp/index-e.html'}">DDBJ DNA Data Bank of Japan</a>
+        <a class="DDBJ_logotype" href="${language === 'ja' ? '/index.html' : '/index-e.html'}">DDBJ DNA Data Bank of Japan</a>
       </div>
       <nav class="DDBJ_navigation__">
         <div class="DDBJ_spcollapsemenubutton">Menu</div>
@@ -1029,7 +1029,7 @@
             `).join('')}
           </ul>
           <ul class="DDBJ_menu -DDBJ_right">
-            <!--li>
+            <li>
               <form id="DDBJ_searchform">
                 <select id="DDBJ_searchformselect">
                   <option>Web sites</option>
@@ -1037,7 +1037,7 @@
                 <input type="search" id="DDBJ_searchformfield">
                 <buttonid="DDBJ_searchformbutton"></button>
               </form>
-            </li-->
+            </li>
             ${HEADER_RIGHT_MENU.map(item => `
             <li><a href="${item.uri[language]}">${item.label[language]}</a></li>
             `).join('')}
