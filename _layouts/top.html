@@ -40,6 +40,10 @@ layout: default
       {% include breadcrumb.html lang=page.lang %}
       {% endif %}
 
+      <main class="md-content">
+        {{ content }}
+      </main>
+
       <ul class="panel-view-container">
         {% for panel in page.panels %}
         <li class="panel">
@@ -53,10 +57,6 @@ layout: default
         </li>
         {% endfor %}
       </ul>
-
-      <main class="md-content">
-        {{ content }}
-      </main>
 
     </section>
 
