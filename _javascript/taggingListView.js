@@ -105,8 +105,7 @@ export default function taggingListView() {
         const yearTags = {};
         // タグの収集
         for (const item of taggingItems) {
-          const datetime = item.querySelector('.tag-list-view > .date > time').getAttribute('datetime');
-          const year = new Date(datetime).getFullYear();
+          const year = parseInt(item.dataset.year);
           if (!yearTags[year]) {
             yearTags[year] = [];
           }
@@ -115,8 +114,8 @@ export default function taggingListView() {
         // ファセット検索用ビューの生成
         let html = '';
         const facetSearchTags = facetSearch.querySelector(':scope .tags[data-tab="year"]');
-        for (const tag in yearTags) {
-          html += `<li class="tag-view" data-tag="${tag}"><span class="label">${tag}</span><span class="count">${yearTags[tag].length}</span></li>`;
+        for (const year of Object.keys(yearTags).sort().reverse()) {
+          html += `<li class="tag-view" data-tag="${year}"><span class="label">${year}</span><span class="count">${yearTags[year].length}</span></li>`;
         }
         facetSearchTags.innerHTML = html;
       }
