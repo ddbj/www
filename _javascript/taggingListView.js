@@ -22,11 +22,20 @@ export default function taggingListView() {
       }
     });
 
+    sortTaggingList();
     setupTaggingItems();
     setupTabMenu();
     setupKeywordTag();
     setupYearTag();
     setupFacetSearch();
+    
+    function sortTaggingList() {
+      console.log(taggingListView.dataset.sortBy)
+      if (taggingListView.dataset.sortBy === 'year') {
+        console.log('sort')
+
+      }
+    }
 
     function setupTaggingItems() {
       taggingItems = taggingListView.querySelectorAll('.taggingitem');

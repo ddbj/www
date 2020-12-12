@@ -1,8 +1,8 @@
-<li class="taggingitem tagging-item-view" data-tags="{{ date | date: '%Y' }},{{ include.tag }}" data-year="{{ date | date: '%Y' }}">
+<li class="taggingitem tagging-item-view" data-tags="{{ include.date | date: '%Y' }},{{ include.tag }}" data-year="{{ include.date | date: '%Y' }}">
   <div class="upper">
-    <h2 class="title"><a {% if activity.url %} href="{{ activity.url }}" {% endif %}>{{ label }}</a></h2>
+    <h2 class="title"><a {% if activity.url %} href="{{ activity.url }}" {% endif %}>{{ include.label }}</a></h2>
     <ul class="tag-list-view">
-      <li class="date"><time datetime="{{ date }}">{{ date | date: "%Y" }}</time></li>
+      <li class="date"><time datetime="{{ include.date }}">{{ include.date_label }}</time></li>
       <li class="tag-view" data-tag="{{ include.tag }}">{{ tag_label }}</li>
     </ul>
   </div>
