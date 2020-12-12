@@ -1,5 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: BioSample
 title: DDBJ BioSample Handbook
 category: biosample
 current_tab: handbook
@@ -411,7 +412,7 @@ When creating a new submission, a temporary ID starts with SSUB is assigned. The
   - Do not double submit the samples which have been registered to EBI and NCBI.
 </div>
 
-### Release of BioSample<a name="sample-release"></a> <a name=""></a>
+### Release of BioSample<a name="sample-release"></a> 
 
 You can select the following options:
 

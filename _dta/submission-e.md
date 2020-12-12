@@ -1,5 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Trace Archive
 title: Trace Archive
 category: dta
 current_tab: submission

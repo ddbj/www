@@ -1,7 +1,7 @@
 ---
 layout: top
+service_name: Sequence Read Archive
 title: Sequence Read Archive
-description: DDBJ Sequence Read Archive (DRA) は科学研究の再現性担保、及び、データ解析による新たな発見を支えるために生シークエンスデータとアライメント情報をアーカイブしています。 DRA は International Nucleotide Sequence Database Collaboration (INSDC) のメンバーであり， NCBI Sequence Read Archive (SRA) と EBI Sequence Read Archive (ERA) との国際協力のもと，運営されています。
 category: dra
 current_tab: home
 tab_menu:
@@ -49,3 +49,7 @@ panels:
   icon: ../assets/images/icon-search_analysis.png
 lang: ja
 ---
+
+[DDBJ Sequence Read Archive (DRA)](index.html) は科学研究の再現性担保、及び、データ解析による新たな発見を支えるために生シークエンスデータとアライメント情報をアーカイブしています。
+DRA は [International Nucleotide Sequence Database Collaboration (INSDC)](/insdc.html) のメンバーであり， [NCBI Sequence Read Archive (SRA)](https://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi) と [EBI Sequence
+Read Archive (ERA)](https://www.ebi.ac.uk/ena/) との国際協力のもと，運営されています。

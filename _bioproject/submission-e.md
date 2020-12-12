@@ -1,5 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: BioProject
 title: DDBJ BioProject Handbook
 category: bioproject
 current_tab: handbook
@@ -143,7 +144,7 @@ If you want to add already registered primary projects to the umbrella, please [
 
 <span class="red">Private primary projects are not released by linking to public umbrella project.</span>
 
-## Metadata<a name="metadata"></a> <a name=""></a>
+## Metadata<a name="metadata"></a> 
 
 Required <span class="red">\*</span>  
 Conditionally required <span class="conditionally_required">\*</span>

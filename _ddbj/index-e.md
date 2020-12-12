@@ -1,7 +1,6 @@
 ---
 layout: top
 title: DDBJ Annotated/Assembled Sequences
-description: <p>DDBJ (DNA Data Bank of Japan) shares annotated/assembled nucleotide sequence data as a member of <a href="/insdc-e.html">INSDC</a> (International Nucleotide Sequence Database Collaboration).</p>
 service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: home
@@ -114,3 +113,5 @@ panels:
   icon: ../assets/images/icon-search_analysis.png
 lang: en
 ---
+
+DDBJ (DNA Data Bank of Japan) shares annotated/assembled nucleotide sequence data as a member of [INSDC](/insdc-e.html) (International Nucleotide Sequence Database Collaboration).

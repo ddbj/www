@@ -1,5 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Sequence Read Archive
 title: DRA 共同研究プロジェクトデータの取扱い
 category: dra
 current_tab: home

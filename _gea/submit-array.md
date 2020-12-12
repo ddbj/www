@@ -1,5 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: Genomic Expression Archive
 title: Submit microarray experiment
 category: gea
 current_tab: submission overview
@@ -76,12 +77,12 @@ lang: ja
   - GEA 登録用ディレクトリに生データと解析済みデータファイルをアップロード
   - \[必要であれば\] アレイデザインが [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA に未登録の場合、GEA 登録用ディレクトリにデータファイルと一緒にアレイデザインファイルをアップロード
 
-### 4\. BioProjectとBioSampleを選択 <a name=""></a>
+### 4\. BioProjectとBioSampleを選択 
 
   - GEA 登録で参照する BioProject を一つ選択
   - GEA 登録で参照する複数 BioSample を選択。通常の GEA 登録は一つ以上のサンプルで構成されます
 
-### 5\. IDFとSDRFを作成 <a name=""></a>
+### 5\. IDFとSDRFを作成 
 
 #### IDF <a name="idf"></a>
 

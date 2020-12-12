@@ -1,5 +1,6 @@
 ---
-layout: indexed_content
+layout: tabbed_indexed_content
+service_name: BioSample
 title: DDBJ BioSample Handbook
 category: biosample
 current_tab: handbook
@@ -431,7 +432,7 @@ Validation ルールとメッセージについては [Validation rules ペー�
   - EBI/NCBI に登録したサンプルを DDBJ に重複して登録しないでください。
   </div>
 
-### サンプルの公開<a name="sample-release"></a> <a name=""></a>
+### サンプルの公開<a name="sample-release"></a> 
 
 以下の選択肢があります:
 

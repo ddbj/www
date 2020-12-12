@@ -1,5 +1,6 @@
 ---
-layout: indexed_content
+layout: top
+service_name: AMED Genome group sharing Database
 title: AMED Genome group sharing Database
 category: agd
 current_tab: home

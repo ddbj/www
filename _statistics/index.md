@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 lang: ja
-title: DB の out/in 統計量
+title: 登録・公開データ量
 category: statistics
 lang: ja
 related_pages:
@@ -11,7 +11,7 @@ related_pages:
     url: /ddbj-releases
   - title: 最新リリースの情報
     url: /latest-releases
-addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script><script type='text/javascript' src='/www/assets/js/jquery.charts.js'></script>
+addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script><script type='text/javascript' src='/assets/js/jquery.charts.js'></script>
 ---
 
 {: #ddbj-release}
