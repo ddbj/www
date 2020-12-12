@@ -152,7 +152,6 @@ export default function taggingListView() {
         }));
       });
       updateTag();
-
     }
 
     // アイテムの表示更新

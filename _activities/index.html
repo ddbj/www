@@ -6,17 +6,23 @@ tag_label:
   icm:
     en: The Reports for International Collaborators Meetings
     ja: 国際実務者会議報告
-
 ---
-
 <div id="NavigationAndMainView">
   <div class="inner">
-    <nav class="subview">
-      <nav class="facet-search">
-        <h2 class="title">タグ</h2>
-        <ul class="tags" data-tab="keyword"></ul>
+    <div class="subview">
+      
+      <nav class="facet-search" data-facet-search-year="true">
+        <div class="tab-menu-view">
+          <ul class="tabmenucontainer">
+            <li class="-current" data-tab="keyword"><a>タグ</a></li>
+            <li data-tab="year"><a>年別</a></li>
+          </ul>
+          <ul class="tags tabbedcontent -current" data-tab="keyword"></ul>
+          <ul class="tags tabbedcontent" data-tab="year"></ul>
+        </div>
       </nav>
-    </nav>
+      
+    </div>
     
     <main class="mainview">
       <ul class="tagging-list-view">
