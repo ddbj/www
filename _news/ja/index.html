@@ -22,7 +22,7 @@ lang: ja
 
     <main class="mainview">
       <ul class="tagging-list-view">
-        {% assign news_list = site.news | where: "lang", page.lang | where: "layout", "simple" | sort "date" %}
+        {% assign news_list = site.news | where: "lang", page.lang | where: "layout", "simple" | sort "date" | reverse %}
         {% for news in news_list %}
           <li class="tagging-item-view taggingitem" data-tags="{{ news.date | date: '%Y' }},{{ news.tags | join ',' }},{{ news.db | join ',' }}" data-year="{{ news.date | date: '%Y' }}">
             <div class="upper">

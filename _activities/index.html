@@ -25,7 +25,7 @@ tag_label:
     </div>
     
     <main class="mainview">
-      <ul class="tagging-list-view" data-sort-by="year">
+      <ul class="tagging-list-view" data-sort-by="date">
 
         {% comment %} 講習会 {% endcomment %}
         {% assign activities = site.activities | where: "category", "training" | where: "lang", page.lang %}

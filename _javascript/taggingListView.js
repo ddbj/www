@@ -1,5 +1,7 @@
 /* global $ */
 
+const MSEC_TO_DATE = 1 / 1000 / 60 / 60 / 24;
+
 // サービス一覧
 export default function taggingListView() {
 
@@ -22,26 +24,28 @@ export default function taggingListView() {
       }
     });
 
-    sortTaggingList();
     setupTaggingItems();
+    sortTaggingList();
     setupTabMenu();
     setupKeywordTag();
     setupYearTag();
     setupFacetSearch();
     
-    function sortTaggingList() {
-      console.log(taggingListView.dataset.sortBy)
-      if (taggingListView.dataset.sortBy === 'year') {
-        console.log('sort')
-
-      }
-    }
-
     function setupTaggingItems() {
       taggingItems = taggingListView.querySelectorAll('.taggingitem');
       taggingItems.forEach(item => {
         item.ddbj_facetsearch_tags = item.dataset.tags.split(',').filter(tag => tag !== '');
       });
+    }
+
+    function sortTaggingList() {
+      if (taggingListView.dataset.sortBy === 'date') {
+        const futureDate = parseInt(new Date('2100-1-1').getTime() * MSEC_TO_DATE);
+        taggingItems.forEach(item => {
+          const time = item.querySelector(':scope > .upper > .tag-list-view > .date > time');
+          item.style.order = futureDate - parseInt(new Date(time.getAttribute('datetime')).getTime() * MSEC_TO_DATE);
+        });
+      }
     }
 
     /**
