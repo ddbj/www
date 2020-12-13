@@ -123,3 +123,6 @@ watch: true
 sass:
   sass_dir: _sass
   syntax: sass
+
+gems:
+  - jekyll-sitemap
