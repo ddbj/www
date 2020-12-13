@@ -1,0 +1,34 @@
+---
+layout: sitemap
+title: サイトマップ
+lang: ja
+---
+
+{% for collection in site.collections %}
+  <section class="group">
+    <h2 class="grouptitle">
+      <a href="{{ site.url }}{{ site.baseurl }}/{{ collection.label }}/">{{ collection.title[page.lang] }}</a>
+    </h2>
+    <ul>
+      {% for item in site[collection.label] %}
+      {% if item.lang == page.lang %}
+      <li>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+{% endfor %}
+
+<section class="group">
+  <ul>
+    {% for item in site.pages %}
+    {% if item.lang == page.lang %}
+    <li>
+      <a href="{{ item.url }}">{{ item.title }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+</section>

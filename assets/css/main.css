@@ -1362,6 +1362,32 @@ input, textarea, select, button {
     #SimpleView > .inner.-stretched {
       max-width: 100%; }
 
+#SitemapView {
+  background-color: white;
+  line-height: 1.2; }
+  #SitemapView > .inner {
+    margin: 0 auto;
+    max-width: 128rem;
+    padding: 0 4rem 2rem; }
+    #SitemapView > .inner.-stretched {
+      max-width: 100%; }
+    #SitemapView > .inner > .group {
+      border-top: solid 0.1rem #736357;
+      padding: 1rem 0; }
+      #SitemapView > .inner > .group:last-child {
+        border-bottom: solid 0.1rem #736357; }
+      #SitemapView > .inner > .group > .grouptitle {
+        font-size: 1.2rem; }
+        #SitemapView > .inner > .group > .grouptitle + ul {
+          margin-top: .6rem; }
+      #SitemapView > .inner > .group > ul {
+        list-style: none;
+        columns: 3;
+        column-gap: 3rem; }
+        #SitemapView > .inner > .group > ul > li {
+          font-size: 1.2rem;
+          padding: .4rem 0; }
+
 #TopPageView {
   background-color: white; }
   #TopPageView > .inner {
