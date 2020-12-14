@@ -735,6 +735,9 @@ items:
     lang: en
 
   - date: 2019-11-20
+    year: 2019
+    month: 11
+    day: 20
     id: 182-ja
     title: ゲノム科学＋DDBJ入門
     author: 中村　保一
@@ -743,6 +746,9 @@ items:
     lang: ja
 
   - date: 2019-11-13
+    year: 2019
+    month: 11
+    day: 13
     id: 183-ja
     title: BioSample とは
     author: 福田　亜沙美
@@ -751,6 +757,9 @@ items:
     lang: ja
 
   - date: 2019-10-16
+    year: 2019
+    month: 10
+    day: 16
     id: 186-ja
     title: Database and supercomputer resources for human data at DDBJ
     author: 児玉 悠一、福田 亜沙美、八谷 剛史、秦 千比呂、真島 淳、藤澤 貴智、川嶋 実苗、豊岡 理人、三橋 信孝、小笠原 理
@@ -759,6 +768,9 @@ items:
     lang: ja
   
   - date: 2019-10-16
+    year: 2019
+    month: 10
+    day: 16
     id: 186-en
     title: Database and supercomputer resources for human data at DDBJ
     author: Yuichi Kodama, Asami Fukuda, Tsuyoshi Hachiya, Chihiro Hata, Jun Mashima, Takatomo Fujisawa, Minae Kawashima, Licht Toyo-oka, Nobutaka Mitsuhashi and Osamu Ogasawara
@@ -767,6 +779,9 @@ items:
     lang: en
 
   - date: 2019-10-05
+    year: 2019
+    month: 10
+    day: 05
     id: 184-ja
     title: DDBJサービス
     author: 李 慶範
@@ -775,6 +790,9 @@ items:
     lang: ja
 
   - date: 2019-09-20
+    year: 2019
+    month: 9
+    day: 20
     id: 187-ja
     title: How to deal with controlled-access data in DNA Data Bank of Japan
     author: Yasukazu Nakamura
@@ -783,6 +801,9 @@ items:
     lang: ja
 
   - date: 2019-09-20
+    year: 2019
+    month: 9
+    day: 20
     id: 187-en
     title: How to deal with controlled-access data in DNA Data Bank of Japan
     author: Yasukazu Nakamura
@@ -791,6 +812,9 @@ items:
     lang: en
 
   - date: 2019-09-18
+    year: 2019
+    month: 9
+    day: 18
     id: 189-ja
     title: We are ready to 10 k microbe genomes
     author: Yasukazu Nakamura
@@ -799,6 +823,9 @@ items:
     lang: ja
 
   - date: 2019-09-18
+    year: 2019
+    month: 9
+    day: 18
     id: 189-en
     title: We are ready to 10 k microbe genomes
     author: Yasukazu Nakamura
@@ -807,6 +834,9 @@ items:
     lang: en
 
   - date: 2019-08-04
+    year: 2019
+    month: 8
+    day: 4
     id: 185-ja
     title: 植物ゲノムの進化研究とDDBJと遺伝研スーパーコンピュータ活用法
     author: 中村　保一
@@ -815,6 +845,9 @@ items:
     lang: ja
 
   - date: 2019-08-01
+    year: 2019
+    month: 9
+    day: 1
     id: 190-ja
     title: DDBJ and the INSDC are faced with Big Data
     author: 中村　保一
@@ -823,6 +856,9 @@ items:
     lang: ja
 
   - date: 2019-08-01
+    year: 2019
+    month: 8
+    day: 1
     id: 190-en
     title: DDBJ and the INSDC are faced with Big Data
     author: Yasukazu Nakamura
@@ -831,6 +867,9 @@ items:
     lang: en
 
   - date: 2019-07-04
+    year: 2019
+    month: 7
+    day: 4
     id: 188-ja
     title: DDBJ – 日本DNAデータバンクとNGS – Next Generation Sequencing によるゲノム解析の最新状況
     author: 中村　保一
@@ -839,6 +878,9 @@ items:
     lang: ja
 
   - date: 2019-06-04
+    year: 2019
+    month: 6
+    day: 4
     id: 193-ja
     title: ynlab & DDBJ’s activities
     author: 中村　保一
@@ -847,6 +889,9 @@ items:
     lang: ja
 
   - date: 2019-06-04
+    year: 2019
+    month: 6
+    day: 4
     id: 193-en
     title: ynlab & DDBJ’s activities
     author: Yasukazu Nakamura
@@ -855,6 +900,9 @@ items:
     lang: en
 
   - date: 2019-04-24
+    year: 2019
+    month: 4
+    day: 24
     id: 194-ja
     title: DDBJ： Asian gateway to the INSDC
     author: 中村　保一
@@ -863,6 +911,9 @@ items:
     lang: ja
 
   - date: 2019-04-24
+    year: 2019
+    month: 4
+    day: 24
     id: 194-en
     title: DDBJ： Asian gateway to the INSDC
     author: Yasukazu Nakamura
@@ -871,6 +922,9 @@ items:
     lang: en
 
   - date: 2019-04-09
+    year: 2019
+    month: 4
+    day: 9
     id: 195-ja
     title: DDBJ (DNA Data Bank of Japan) activity
     author: 大城戸利久, 児玉悠一, 小菅武英, 真島 淳
@@ -879,6 +933,9 @@ items:
     lang: ja
 
   - date: 2019-04-09
+    year: 2019
+    month: 4
+    day: 9
     id: 195-en
     title: DDBJ (DNA Data Bank of Japan) activity
     author: Toshihisa Okido, Yuichi Kodama, Takehide Kosuge, Jun Mashima
@@ -887,6 +944,9 @@ items:
     lang: en
 
   - date: 2019-02-22
+    year: 2019
+    month: 2
+    day: 22
     id: 191-ja
     title: INSDC の一員としての DDBJ 事業の紹介と塩基配列決定の国際動向・INSDC への塩基配列データの登録と管理の実際
     author: 中村　保一
@@ -895,6 +955,9 @@ items:
     lang: ja
 
   - date: 2019-02-08
+    year: 2019
+    month: 2
+    day: 8
     id: 192-ja
     title: 日本DNAデータバンクこれまでの30年とこれから
     author: 中村　保一
@@ -903,6 +966,9 @@ items:
     lang: ja
 
   - date: 2019-01-29
+    year: 2019
+    month: 1
+    day: 29
     id: 196-ja
     title: ゲノム時代の生命情報・DDBJセンターが果たしてきた役割
     author: 青野 英雄
@@ -911,6 +977,9 @@ items:
     lang: ja
 
   - date: 2019-08-22
+    year: 2019
+    month: 8
+    day: 22
     id: 196-ja
     title: Chromosome-scale assemblies are coming back
     author: Yasukazu Nakamura
@@ -919,6 +988,9 @@ items:
     lang: en
 
   - date: 2019-01-12
+    year: 2019
+    month: 1
+    day: 12
     id: 197-en
     title: Database for the Chromosome-Level Assembly for a Liverwort Marchantia polymorpha
     author: Yasukazu Nakamura
@@ -927,6 +999,9 @@ items:
     lang: en
 
   - date: 2018-11-29
+    year: 2018
+    month: 11
+    day: 29
     id: 163-ja
     title: DDBJ センターにおけるデータベースサービスのこれまでとこれから
     author: 児玉　悠一
@@ -935,6 +1010,9 @@ items:
     lang: ja
 
   - date: 2018-11-26
+    year: 2018
+    month: 11
+    day: 26
     id: 166-ja
     title: Introduction of the INSDC, data submission & genome annotation
     author: 中村　保一
@@ -943,6 +1021,9 @@ items:
     lang: ja
 
   - date: 2018-11-26
+    year: 2018
+    month: 11
+    day: 26
     id: 166-en
     title: Introduction of the INSDC, data submission & genome annotation
     author: Yasukazu Nakamura
@@ -951,6 +1032,9 @@ items:
     lang: en
 
   - date: 2018-11-21
+    year: 2018
+    month: 11
+    day: 21
     id: 167-ja
     title: DDBJ / the INSDC is ready for GCM 2.0
     author: 中村　保一
@@ -959,6 +1043,9 @@ items:
     lang: ja
 
   - date: 2018-11-21
+    year: 2018
+    month: 11
+    day: 21
     id: 167-en
     title: DDBJ / the INSDC is ready for GCM 2.0
     author: Yasukazu Nakamura
@@ -967,6 +1054,9 @@ items:
     lang: en
 
   - date: 2018-10-18
+    year: 2018
+    month: 10
+    day: 18
     id: 168-ja
     title: Resources for archiving, sharing and analysis of controlled-access human data at DDBJ Center.
     author: 児玉　悠一
@@ -975,6 +1065,9 @@ items:
     lang: ja
 
   - date: 2018-10-18
+    year: 2018
+    month: 10
+    day: 18
     id: 168-en
     title: Resources for archiving, sharing and analysis of controlled-access human data at DDBJ Center.
     author: Kodama Yuichi
@@ -983,6 +1076,9 @@ items:
     lang: en
 
   - date: 2018-10-05
+    year: 2018
+    month: 10
+    day: 5
     id: 164-ja
     title: DDBJ -登録データの拡充-
     author: 大城戸利久, 小菅武英, 児玉悠一, 真島 淳
@@ -991,6 +1087,9 @@ items:
     lang: ja
 
   - date: 2018-09-16
+    year: 2018
+    month: 9
+    day: 16
     id: 170-ja
     title: DDBJ： Asian gateway to the INSDC
     author: 中村　保一
@@ -999,6 +1098,9 @@ items:
     lang: ja
 
   - date: 2018-09-16
+    year: 2018
+    month: 9
+    day: 16
     id: 170-en
     title: DDBJ： Asian gateway to the INSDC
     author: Yasukazu Nakamura
@@ -1007,6 +1109,9 @@ items:
     lang: en
 
   - date: 2018-09-10
+    year: 2018
+    month: 9
+    day: 10
     id: 165-ja
     title: 大量塩基配列情報処理によるゲノム解析とデータベース構築
     author: 中村　保一
@@ -1015,6 +1120,9 @@ items:
     lang: ja
 
   - date: 2018-09-03
+    year: 2018
+    month: 9
+    day: 3
     id: 169-ja
     title: ゲノム解析手法のトレンドとDDBJ・遺伝研スーパーコンピュータ
     author: 中村　保一
@@ -1023,6 +1131,9 @@ items:
     lang: ja
 
   - date: 2018-08-30
+    year: 2018
+    month: 8
+    day: 30
     id: 173-ja
     title: Genome analyses using NGS for next-generation model species
     author: 中村　保一
@@ -1031,6 +1142,9 @@ items:
     lang: ja
 
   - date: 2018-08-30
+    year: 2018
+    month: 8
+    day: 30
     id: 173-en
     title: Genome analyses using NGS for next-generation model species
     author: Yasukazu Nakamura
@@ -1040,6 +1154,9 @@ items:
 
 
   - date: 2018-08-29
+    year: 2018
+    month: 8
+    day: 29
     id: 171-ja
     title: 次世代シークエンスデータベースの紹介と歩き方
     author: 児玉　悠一
@@ -1048,6 +1165,9 @@ items:
     lang: ja
 
   - date: 2018-08-04
+    year: 2018
+    month: 8
+    day: 4
     id: 172-ja
     title: 塩基配列データの爆発的増加とDDBJをとりまく現状
     author: 中村　保一
@@ -1056,6 +1176,9 @@ items:
     lang: ja
 
   - date: 2018-07-14
+    year: 2018
+    month: 7
+    day: 14
     id: 175-ja
     title: DDBJ/INSDC, NIG supercomputer & Large-genome assembly and annotation tools
     author: 中村　保一
@@ -1064,6 +1187,9 @@ items:
     lang: ja
 
   - date: 2018-07-14
+    year: 2018
+    month: 7
+    day: 14
     id: 175-en
     title: DDBJ/INSDC, NIG supercomputer & Large-genome assembly and annotation tools
     author: Yasukazu Nakamura
@@ -1072,6 +1198,9 @@ items:
     lang: en
 
   - date: 2018-06-26
+    year: 2018
+    month: 6
+    day: 26
     id: 176-ja
     title: DDBJ/INSDC/DFAST
     author: 中村　保一
@@ -1080,6 +1209,9 @@ items:
     lang: ja
 
   - date: 2018-06-26
+    year: 2018
+    month: 6
+    day: 26
     id: 176-en
     title: DDBJ/INSDC/DFAST
     author: Yasukazu Nakamura
@@ -1088,6 +1220,9 @@ items:
     lang: en
 
   - date: 2018-01-17
+    year: 2018
+    month: 1
+    day: 17
     id: 174-ja
     title: 次世代シークエンスデータベースの紹介と使い方
     author: 児玉　悠一
@@ -1096,6 +1231,9 @@ items:
     lang: ja
 
   - date: 2018-01-13
+    year: 2018
+    month: 1
+    day: 13
     id: 177-en
     title: Genome Sequence Update of a Rubber tree Hevea Brasiliensis
     author: Yasukazu Nakamura
@@ -1104,6 +1242,9 @@ items:
     lang: en
 
   - date: 2017-12-16
+    year: 2017
+    month: 12
+    day: 16
     id: 147-ja
     title: MarpolDB _ marchantia.info; a genome DB for the Liverwort
     author: 中村 保一
@@ -1112,6 +1253,9 @@ items:
     lang: ja
 
   - date: 2017-12-16
+    year: 2017
+    month: 12
+    day: 16
     id: 147-en
     title: MarpolDB _ marchantia.info; a genome DB for the Liverwort
     author: Yasukazu Nakamura
@@ -1120,6 +1264,9 @@ items:
     lang: en
 
   - date: 2017-12-06
+    year: 2017
+    month: 12
+    day: 6
     id: 148-ja
     title: MicrobeDB.jp
     author: 中村 保一
@@ -1128,6 +1275,9 @@ items:
     lang: ja
 
   - date: 2017-12-05
+    year: 2017
+    month: 12
+    day: 5
     id: 145-ja
     title: DDBJ Sequence Read Archive（DRA）と Japanese Genotype-phenotype Archive（JGA）の紹介
     author: 福田 亜沙美
@@ -1136,6 +1286,9 @@ items:
     lang: ja
 
   - date: 2017-11-16
+    year: 2017
+    month: 11
+    day: 16
     id: 146-ja
     title: DDBJ にゲノムデータが来るとき
     author: 真島 淳
@@ -1144,6 +1297,9 @@ items:
     lang: ja
 
   - date: 2017-10-26
+    year: 2017
+    month: 10
+    day: 26
     id: 149-ja
     title: DDBJ and the INSDC
     author: 中村 保一
@@ -1152,6 +1308,9 @@ items:
     lang: ja
 
   - date: 2017-10-19
+    year: 2017
+    month: 10
+    day: 19
     id: 150-ja
     title: Controlled-access databases for genetic and phenotypic human data in Japan.
     author: 児玉 悠一, 福田 亜沙美, 真島 淳, 箕輪 真理, 川嶋 実苗, 宮崎 和典, 三橋 信孝, 神沼 英里, 小笠原 理, 大久保 公策, 中村 保一, 高木 利久
@@ -1160,6 +1319,9 @@ items:
     lang: ja
 
   - date: 2017-10-19
+    year: 2017
+    month: 10
+    day: 19
     id: 150-en
     title: Controlled-access databases for genetic and phenotypic human data in Japan.
     author: Yuichi Kodama, Asami Nozaki, Jun Mashima, Mari T. Minowa, Minae Kawashima, Kazunori Miyazaki, Nobutaka Mitsuhashi, Eli Kaminuma, Osamu Ogasawara, Kousaku Okubo, Yasukazu Nakamura, Toshihisa Takagi
@@ -1168,6 +1330,9 @@ items:
     lang: en
 
   - date: 2017-10-10
+    year: 2017
+    month: 10
+    day: 10
     id: 153-ja
     title: DDBJ and the INSDC
     author: 中村 保一
@@ -1176,6 +1341,9 @@ items:
     lang: ja
 
   - date: 2017-10-10
+    year: 2017
+    month: 10
+    day: 10
     id: 153-en
     title: DDBJ and the INSDC
     author: Yasukazu Nakamura
@@ -1184,6 +1352,9 @@ items:
     lang: en
 
   - date: 2017-10-05
+    year: 2017
+    month: 10
+    day: 05
     id: 
     title: DDBJ
     author: 中村 保一
@@ -1192,6 +1363,9 @@ items:
     lang: ja
 
   - date: 2017-09-14
+    year: 2017
+    month: 9
+    day: 14
     id: 
     title: ゲノム科学・ゲノムDBの現場から
     author: 中村 保一
@@ -1200,6 +1374,9 @@ items:
     lang: ja
 
   - date: 2017-07-19
+    year: 2017
+    month: 7
+    day: 19
     id: 151-ja
     title: DDBJ
     author: 中村 保一
@@ -1208,6 +1385,9 @@ items:
     lang: ja
 
   - date: 2017-07-19
+    year: 2017
+    month: 7
+    day: 19
     id: 151-en
     title: DDBJ
     author: Yasukazu Nakamura
@@ -1216,6 +1396,9 @@ items:
     lang: en
 
   - date: 2017-07-04
+    year: 2017
+    month: 7
+    day: 4
     id: 156-ja
     title: NBRPゲノム情報等整備プログラムの状況“CyanoBase
     author: 中村 保一
@@ -1224,6 +1407,9 @@ items:
     lang: ja
 
   - date: 2017-06-20
+    year: 2017
+    month: 6
+    day: 20
     id: 152-ja
     title: How to make bio-DB’s and services sustainable?
     author: 中村 保一
@@ -1232,6 +1418,9 @@ items:
     lang: ja
 
   - date: 2017-06-20
+    year: 2017
+    month: 6
+    day: 20
     id: 152-en
     title: How to make bio-DB’s and services sustainable?
     author: Yasukazu Nakamura
@@ -1240,6 +1429,9 @@ items:
     lang: en
 
   - date: 2017-01-24
+    year: 2017
+    month: 1
+    day: 24
     id: 157-ja
     title: 拡大する公共データベースの役割
     author: 児玉 悠一
@@ -1248,6 +1440,9 @@ items:
     lang: ja
 
   - date: 2016-12-01
+    year: 2016
+    month: 12
+    day: 1
     id: 138-ja
     title: DDBJデータ解析チャレンジ報告：機械学習コンペティションのタスク設計とルール設定
     author: 神沼英里, 馬場雪乃, 望月正弘, 松本拡高, 尾崎遼, 岡山利次, 加藤卓也, 沖真弥, 小笠原理, 鹿島久嗣, 高木利久
@@ -1256,6 +1451,9 @@ items:
     lang: ja
 
   - date: 2016-12-01
+    year: 2016
+    month: 12
+    day: 1
     id: 139-ja
     title: DDBJ センターにおける一次データベースの展開
     author: 児玉 悠一
@@ -1264,6 +1462,9 @@ items:
     lang: ja
 
   - date: 2016-10-20
+    year: 2016
+    month: 10
+    day: 20
     id: 136-ja
     title: JGA： Japanese Genotype-phenotype Archive
     author: 児玉 悠一, 真島 淳, 箕輪 真理, 川嶋 実苗, 宮崎 和典, 三橋 信孝, 神沼 英里, 小笠原 理, 大久保 公策, 中村 保一, 高木 利久
@@ -1272,6 +1473,9 @@ items:
     lang: ja
 
   - date: 2016-10-20
+    year: 2016
+    month: 10
+    day: 20
     id: 136-en
     title: JGA： Japanese Genotype-phenotype Archive
     author: Yuichi Kodama, Jun Mashima, Mari T. Minowa, Minae Kawashima, Kazunori Miyazaki, Nobutaka Mitsuhashi, Eli Kaminuma, Osamu Ogasawara, Kousaku Okubo, Yasukazu Nakamura, Toshihisa Takagi
@@ -1280,6 +1484,9 @@ items:
     lang: en
 
   - date: 2016-02-08
+    year: 2016
+    month: 2
+    day: 8
     id: 140-ja
     title: 生命科学とオープンデータ
     author: 高木 利久
@@ -1288,6 +1495,9 @@ items:
     lang: ja
 
   - date: 2016-01-10
+    year: 2016
+    month: 1
+    day: 10
     id: 137-ja
     title: Database Resources of DNA Data Bank of Japan
     author: 児玉 悠一, 真島 淳, 神沼 英里, 小笠原 理, 大久保 公策, 中村 保一, 高木 利久
@@ -1296,6 +1506,9 @@ items:
     lang: ja
 
   - date: 2016-01-10
+    year: 2016
+    month: 1
+    day: 10
     id: 137-en
     title: Database Resources of DNA Data Bank of Japan
     author: Yuichi Kodama, Jun Mashima, Eli Kaminuma, Osamu Ogasawara, Kousaku Okubo, Yasukazu Nakamura, Toshihisa Takagi
@@ -1304,6 +1517,9 @@ items:
     lang: en
 
   - date: 2015-12-16
+    year: 2015
+    month: 12
+    day: 16
     id: 123-ja
     title: 次世代シークエンスデータの登録
     author: 児玉 悠一
@@ -1312,6 +1528,9 @@ items:
     lang: ja
 
   - date: 2015-10-05
+    year: 2015
+    month: 10
+    day: 5
     id: 124-ja
     title: DDBJ
     author: 中村 保一
@@ -1320,6 +1539,9 @@ items:
     lang: ja
 
   - date: 2015-07-27
+    year: 2015
+    month: 7
+    day: 27
     id: 125-ja
     title: NGS の配列解析とデータベースへの案内
     author: 中村 保一
@@ -1328,6 +1550,9 @@ items:
     lang: ja
 
   - date: 2015-07-18
+    year: 2015
+    month: 7
+    day: 18
     id: 126-ja
     title: NIG Supercomputer
     author: 小笠原 理
@@ -1336,6 +1561,9 @@ items:
     lang: ja
 
   - date: 2015-07-18
+    year: 2015
+    month: 7
+    day: 18
     id: 127-ja
     title: DDBJ へのデータ登録
     author: 真島 淳
@@ -1344,6 +1572,9 @@ items:
     lang: ja
 
   - date: 2015-07-18
+    year: 2015
+    month: 7
+    day: 18
     id: 128-ja
     title: DDBJ のデータベースと検索・解析
     author: 中村 保一
@@ -1352,6 +1583,9 @@ items:
     lang: ja
 
   - date: 2015-07-01
+    year: 2015
+    month: 7
+    day: 1
     id: 129-ja
     title: DDBJ PipelineのQ&A対応まとめと解析ツール利用傾向
     author: 神沼 英里
@@ -1360,6 +1594,9 @@ items:
     lang: ja
 
   - date: 2015-06-05
+    year: 2015
+    month: 6
+    day: 5
     id: 130-ja
     title: DDBJ と NIG Super Computer による大量配列情報解析
     author: 中村 保一
@@ -1368,6 +1605,9 @@ items:
     lang: ja
 
   - date: 2015-03-05
+    year: 2015
+    month: 3
+    day: 5
     id: 131-ja
     title: DDBJと新型シーケンサ解析パイプラインの使い方
     author: 中村 保一
@@ -1376,6 +1616,9 @@ items:
     lang: ja
 
   - date: 2015-02-28
+    year: 2015
+    month: 2
+    day: 28
     id: 132-ja
     title: DDBJと新型シーケンサ解析パイプラインの使い方
     author: 中村 保一
@@ -1384,6 +1627,9 @@ items:
     lang: ja
 
   - date: 2015-02-03
+    year: 2015
+    month: 2
+    day: 3
     id: 133-ja
     title: 塩基配列データベースを中心とした生物学系研究の情報基盤について
     author: 小笠原 理
@@ -1392,6 +1638,9 @@ items:
     lang: ja
 
   - date: 2014-12-07
+    year: 2014
+    month: 12
+    day: 7
     id: 113-ja
     title: INSDC・DDBJ の MIxS に関するとりくみと活用
     author: 中村 保一
@@ -1400,6 +1649,9 @@ items:
     lang: ja
 
   - date: 2014-11-26
+    year: 2014
+    month: 11
+    day: 26
     id: 114-ja
     title: Enhancement of DDBJ nucleotide sequence submission system
     author: 小菅 武英, 藤澤 貴智, 真島 淳, 筒井 波留, 江嶋 真由美, 神沼 英里, 高木 利久, 中村 保一
@@ -1408,6 +1660,9 @@ items:
     lang: ja
 
   - date: 2014-10-05
+    year: 2014
+    month: 10
+    day: 5
     id: 115-ja
     title: DDBJ
     author: 中村 保一
@@ -1416,6 +1671,9 @@ items:
     lang: ja
 
   - date: 2014-09-26
+    year: 2014
+    month: 9
+    day: 26
     id: 116-ja
     title: 遺伝研スパコンとコマンドラインでのNGSデータ使い倒し講座
     author: 神沼 英里
@@ -1424,6 +1682,9 @@ items:
     lang: ja
 
   - date: 2014-08-29
+    year: 2014
+    month: 8
+    day: 29
     id: 117-ja
     title: ビッグデータ時代のゲノム情報解析とクラウドソーシング
     author: 神沼 英里
@@ -1432,6 +1693,9 @@ items:
     lang: ja
 
   - date: 2014-08-22
+    year: 2014
+    month: 8
+    day: 22
     id: 118-ja
     title: 国立遺伝学研究所スーパーコンピューターの概要と利用法
     author: 中村 保一, 望月 孝子
@@ -1440,6 +1704,9 @@ items:
     lang: ja
 
   - date: 2014-08-20
+    year: 2014
+    month: 8
+    day: 20
     id: 119-ja
     title: JGA へのデータ登録
     author: 児玉 悠一
@@ -1448,6 +1715,9 @@ items:
     lang: ja
 
   - date: 2014-07-22
+    year: 2014
+    month: 7
+    day: 22
     id: 120-ja
     title: DDBJ配列解析サービス (DDBJ Pipeline)
     author: 神沼 英里
@@ -1456,6 +1726,9 @@ items:
     lang: ja
 
   - date: 2014-03-22
+    year: 2014
+    month: 3
+    day: 22
     id: 121-ja
     title: NGS 解析ツール： DDBJ Read Annotation Pipeline
     author: 神沼 英里
@@ -1464,6 +1737,9 @@ items:
     lang: ja
 
   - date: 2013-12-05
+    year: 2013
+    month: 12
+    day: 5
     id: 97-ja
     title: 次世代シーケンサによる研究のこれからとそれを支えるインフラ／技術／制度
     author: 児玉 悠一, 仲里 猛
@@ -1472,6 +1748,9 @@ items:
     lang: ja
 
   - date: 2013-11-27
+    year: 2013
+    month: 11
+    day: 27
     id: 98-ja
     title: 拡大する公共データベースの役割
     author: 児玉 悠一
@@ -1480,6 +1759,9 @@ items:
     lang: ja
 
   - date: 2013-11-19
+    year: 2013
+    month: 11
+    day: 19
     id: 99-ja
     title: DDBJ スパコン概要
     author: 中村 保一
@@ -1488,6 +1770,9 @@ items:
     lang: ja
     
   - date: 2013-10-25
+    year: 2013
+    month: 10
+    day: 25
     id: 100-ja
     title: 新世代シークエンスデータの登録
     author: 児玉 悠一
@@ -1496,6 +1781,9 @@ items:
     lang: ja
 
   - date: 2013-10-04
+    year: 2013
+    month: 10
+    day: 4
     id: 101-ja
     title: DDBJ
     author: 中村 保一
@@ -1504,6 +1792,9 @@ items:
     lang: ja
 
   - date: 2013-09-04
+    year: 2013
+    month: 9
+    day: 4
     id: 102-ja
     title: DDBJ Pipelineと植物・微生物denovoアセンブリの知見紹介
     author: 谷澤靖洋, 望月孝子, 長崎英樹, 藤澤貴智, 神沼英里, 遠野雅徳, 清水徳朗, 中村保一
@@ -1512,6 +1803,9 @@ items:
     lang: ja
 
   - date: 2013-09-02
+    year: 2013
+    month: 9
+    day: 2
     id: 103-ja
     title: ソーシャルゲノムアノテーション
     author: 中村 保一
@@ -1520,6 +1814,9 @@ items:
     lang: ja
 
   - date: 2013-08-30
+    year: 2013
+    month: 8
+    day: 30
     id: 104-ja
     title: DDBJと新型シーケンサ解析パイプラインの使い方
     author: 中村 保一
@@ -1528,6 +1825,9 @@ items:
     lang: ja
 
   - date: 2013-08-30
+    year: 2013
+    month: 8
+    day: 30
     id: 105-ja
     title: データベースの統合はなぜ必要か？
     author: 高木 利久
@@ -1536,6 +1836,9 @@ items:
     lang: ja
 
   - date: 2013-08-29
+    year: 2013
+    month: 8
+    day: 29
     id: 106-ja
     title: 配列データのDDBJ/DRA/JGA登録方法
     author: 中村 保一
@@ -1544,6 +1847,9 @@ items:
     lang: ja
 
   - date: 2013-06-17
+    year: 2013
+    month: 6
+    day: 17
     id: 107-ja
     title: Introduction of DNA Data Bank of Japan activities.
     author: 中村 保一
@@ -1552,6 +1858,9 @@ items:
     lang: ja
 
   - date: 2013-01-13
+    year: 2013
+    month: 1
+    day: 13
     id: 108-ja
     title: 国内の主要なDBの使い方（DDBJ, PDBj, KEGG）
     author: 中村 保一
@@ -1560,6 +1869,9 @@ items:
     lang: ja
 
   - date: 2012-12-11
+    year: 2012
+    month: 12
+    day: 11
     id: 78-ja
     title: DDBJパイプラインによるゼニゴケゲノム解析とゲノムアノテーションデータベースの構築
     author: 長崎 英樹, 藤澤 貴智, 望月 孝子, 猿橋 智, 神沼 英里, 石崎 公庸, 大和 勝幸, 河内 孝之, 中村 保一
@@ -1568,6 +1880,9 @@ items:
     lang: ja
 
   - date: 2012-11-09
+    year: 2012
+    month: 11
+    day: 9
     id: 79-ja
     title: ますます多様化・大規模化する生命情報に求められる情報技術とは？
     author: 高木 利久
@@ -1576,6 +1891,9 @@ items:
     lang: ja
 
   - date: 2012-11-03
+    year: 2012
+    month: 11
+    day: 3
     id: 80-ja
     title: たくさんのゲノム情報をみんなで共有するために
     author: 中村 保一
@@ -1584,6 +1902,9 @@ items:
     lang: ja
 
   - date: 2012-10-27
+    year: 2012
+    month: 10
+    day: 27
     id: 81-ja
     title: 生物研究の基盤 データベースとしての DDBJ事業： 継承と変革
     author: 中村 保一
@@ -1592,6 +1913,9 @@ items:
     lang: ja
 
   - date: 2012-10-05
+    year: 2012
+    month: 10
+    day: 5
     id: 82-ja
     title: 日本DNAデータバンク (DDBJ)
     author: 中村 保一
@@ -1600,6 +1924,9 @@ items:
     lang: ja
 
   - date: 2012-09-14
+    year: 2012
+    month: 9
+    day: 14
     id: 83-ja
     title: 新型シークエンサのアーカイブ配列と解析パイプライン：系統間SNP解析を事例として
     author: 神沼 英里, 望月 孝子, 長崎 英樹, 児玉 悠一, 猿橋 智, 大久保 公策, 高木 利久, 大柳 一, 倉田 のり, 清水 徳朗, 中村 保一
@@ -1608,6 +1935,9 @@ items:
     lang: ja
 
   - date: 2012-08-09
+    year: 2012
+    month: 8
+    day: 9
     id: 84-ja
     title: 国際塩基配列データベース共同体(INSDC) -拡張するprimary databaseの活動-
     author: 大城戸 利久
@@ -1616,6 +1946,9 @@ items:
     lang: ja
 
   - date: 2012-07-24
+    year: 2012
+    month: 7
+    day: 24
     id: 76-ja
     title: DNA Data Bank of Japan： trad and new databases
     author: 中村 保一
@@ -1624,6 +1957,9 @@ items:
     lang: ja
 
   - date: 2012-07-24
+    year: 2012
+    month: 7
+    day: 24
     id: 76-en
     title: DNA Data Bank of Japan： trad and new databases
     author: Yasukazu Nakamura
@@ -1632,6 +1968,9 @@ items:
     lang: en
 
   - date: 2012-07-06
+    year: 2012
+    month: 7
+    day: 6
     id: 85-ja
     title: 新型シーケンサによる生物学へのビッグデータ解析時代の到来
     author: 中村 保一
@@ -1640,6 +1979,9 @@ items:
     lang: ja
 
   - date: 2012-05-24
+    year: 2012
+    month: 5
+    day: 24
     id: 86-ja
     title: New resources of DNA Data Bank of Japan： DDBJ Omics Archive and BioProject
     author: 長崎 英樹, 望月 孝子, 児玉 悠一, 猿橋 智, 高木 利久, 大久保 公策, 神沼 英里, 中村 保一
@@ -1648,6 +1990,9 @@ items:
     lang: ja
 
   - date: 2012-05-24
+    year: 2012
+    month: 5
+    day: 24
     id: 87-ja
     title: Sequence Read Archive： explosive growth of sequencing data
     author: 児玉 悠一, 野崎 亜沙美, 神沼 英里, 中村 保一, 小笠原 理, 大久保 公策, 高木 利久
@@ -1656,6 +2001,9 @@ items:
     lang: ja
 
   - date: 2012-05-09
+    year: 2012
+    month: 5
+    day: 9
     id: 88-ja
     title: NGS由来大量データレポジトリDRAと解析支援パイプラインの提供
     author: 中村 保一
@@ -1664,6 +2012,9 @@ items:
     lang: ja
 
   - date: 2012-03-29
+    year: 2012
+    month: 3
+    day: 29
     id: 89-ja
     title: 高速DNAシークエンサ・アーカイブDBとクラウド計算資源利用法
     author: 神沼 英里, 望月 孝子, 長崎 英樹, 児玉 悠一, 猿橋 智, 小笠原 理, 高木 利久, 大久保 公策, 中村 保一
@@ -1672,6 +2023,9 @@ items:
     lang: ja
 
   - date: 2012-03-24
+    year: 2012
+    month: 3
+    day: 24
     id: 90-ja
     title: DRA&DDBJパイプライン
     author: 中村 保一
@@ -1680,6 +2034,9 @@ items:
     lang: ja
 
   - date: 2012-03-02
+    year: 2012
+    month: 3
+    day: 2
     id: 93-ja
     title: DDBJのサービス紹介
     author: 中村 保一
@@ -1688,6 +2045,9 @@ items:
     lang: ja
 
   - date: 2012-01-14
+    year: 2012
+    month: 1
+    day: 14
     id: 77-ja
     title: DDBJ Sequence Read Archive and a cloud-computing based annotation tool for new-generation sequencing data
     author: 長崎 英樹, 望月 孝子, 神沼 英里, 児玉 悠一, 猿橋 智, 高木 利久, 大久保 公策, 中村 保一
@@ -1696,6 +2056,9 @@ items:
     lang: ja
 
   - date: 2012-01-14
+    year: 2012
+    month: 1
+    day: 14
     id: 77-en
     title: DDBJ Sequence Read Archive and a cloud-computing based annotation tool for new-generation sequencing data
     author: Nagasaki, H.,Mochizuki, T.,Kaminuma, E.,Kodama Y.,Saruhashi, S.,Toshihisa, T.,Okubo, K.,Nakamura Y.
@@ -1704,6 +2067,9 @@ items:
     lang: en
 
   - date: 2011-12-09
+    year: 2011
+    month: 12
+    day: 9
     id: 59-ja
     title: 日本DNAデータバンク(DDBJ)での新規電算機システムによる超並列型シーケンサ由来の大規模塩基配列情報解析支援の試み
     author: 中村 保一
@@ -1712,6 +2078,9 @@ items:
     lang: ja
     
   - date: 2011-12-02
+    year: 2011
+    month: 12
+    day: 2
     id: 60-ja
     title: New resources of DNA Data Bank of Japan： DDBJ Omics Archive and BioProject
     author: 児玉 悠一, 野崎 亜沙美, 李 慶範, 真島 淳, 神沼 英里, 高木 利久, 大久保 公策, 中村 保一
@@ -1720,6 +2089,9 @@ items:
     lang: ja
 
   - date: 2011-12-02
+    year: 2011
+    month: 12
+    day: 2
     id: 61-ja
     title: DDBJ created a new Web-based nucleotide sequence data submission tool, code name： D-easy
     author: 小菅 武英, 真島 淳, 筒井 波留, 江嶋 真由美, 神沼 英里, 高木 利久, 大久保 公策, 中村 保一
@@ -1728,6 +2100,9 @@ items:
     lang: ja
 
   - date: 2011-12-02
+    year: 2011
+    month: 12
+    day: 2
     id: 62-ja
     title: 新型シーケンサ・アーカイブ配列のクラウド型解析パイプラインDDBJ Pipeline進捗： de novoアセンブル配列注釈ワークフロー
     author: 長崎 英樹, 望月 孝子, 児玉 悠一, 猿橋 智, 高木 利久, 大久保 公策, 神沼 英里, 中村 保一
@@ -1736,6 +2111,9 @@ items:
     lang: ja
 
   - date: 2011-12-02
+    year: 2011
+    month: 12
+    day: 2
     id: 63-ja
     title: DDBJ Sequence Read Archive の紹介
     author: 児玉 悠一
@@ -1744,6 +2122,9 @@ items:
     lang: ja
 
   - date: 2011-11-28
+    year: 2011
+    month: 11
+    day: 28
     id: 56-ja
     title: DDBJ Sequence Read Archive and a cloud-computing based analytical pipeline for next-generation sequencing reads
     author: 猿橋 智, 望月 孝子, 長崎 英樹, 児玉 悠一, 野崎 亜沙美, 李 慶範, 大城戸 利久, 横山 会美, 神沼 英里, 菅原 秀明, 大久保 公策, 高木 利久, 中村 保一
@@ -1752,6 +2133,9 @@ items:
     lang: ja
 
   - date: 2011-11-28
+    year: 2011
+    month: 11
+    day: 28
     id: 56-en
     title: DDBJ Sequence Read Archive and a cloud-computing based analytical pipeline for next-generation sequencing reads
     author: Satoshi Saruhashi, Takako Mochizuki, Hideki Nagasaki, Yuichi Kodama, Asami Nozaki, Kyung-Bum Lee, Toshihisa Okido, Emi Yokoyama, Eli Kaminuma, Hideaki Sugawara, Kousaku Okubo, Toshihisa Takagi, Yasukazu Nakamura
@@ -1760,6 +2144,9 @@ items:
     lang: en
 
   - date: 2011-11-28
+    year: 2011
+    month: 11
+    day: 28
     id: 56-ja
     title: 次世代シーケンサーデーターのDRA (DDBJ Sequence Read Archive) への登録
     author: 児玉 悠一
@@ -1768,6 +2155,9 @@ items:
     lang: ja
 
   - date: 2011-10-09
+    year: 2011
+    month: 10
+    day: 9
     id: 65-ja
     title: DDBJ Read Annotation Pipeline 次世代シーケンサ由来配列データ解析パイプライン 解析目的別ワークフローの構築
     author: 望月 孝子, 児玉 悠一, 猿橋 智, 長崎 英樹, 神沼 英里, 菅原 秀明, 大久保 公策, 高木 利久, 中村 保一
@@ -1776,6 +2166,9 @@ items:
     lang: ja
 
   - date: 2011-10-05
+    year: 2011
+    month: 10
+    day: 5
     id: 66-ja
     title: 日本DNAデータバンク (DDBJ)
     author: 中村 保一, 小笠原理, 神沼 英里, 高木 利久, 大久保 公策
@@ -1784,6 +2177,9 @@ items:
     lang: ja
 
   - date: 2011-08-19
+    year: 2011
+    month: 8
+    day: 19
     id: 67-ja
     title: 次世代シーケンサーのアーカイブDBとクラウド型データ解析システムの紹介
     author: 神沼 英里
@@ -1792,6 +2188,9 @@ items:
     lang: ja
 
   - date: 2011-07-10
+    year: 2011
+    month: 7
+    day: 10
     id: 57-ja
     title: DDBJ Sequence Read Archive and a cloud-computing based annotation tool for next-generation sequencing data
     author: 長崎 英樹, 望月 孝子, 児玉 悠一, 猿橋 智, 高木 利久, 大久保 公策, 神沼 英里, 中村 保一
@@ -1800,6 +2199,9 @@ items:
     lang: ja
 
   - date: 2011-07-10
+    year: 2011
+    month: 7
+    day: 10
     id: 57-en
     title: DDBJ Sequence Read Archive and a cloud-computing based annotation tool for next-generation sequencing data
     author: Hideki Nagasaki, Takako Mochizuki, Yuichi Kodama, Satoshi Saruhashi, Toshihisa Takagi, Kousaku Okubo, Eli Kaminuma, Yasukazu Nakamura
@@ -1808,6 +2210,9 @@ items:
     lang: en
 
   - date: 2011-05-28
+    year: 2011
+    month: 5
+    day: 28
     id: 68-ja
     title: DDBJ Read Annotation Pipeline： 新型シーケンサ由来配列のクラウド型解析パイプライン
     author: 猿橋 智, 児玉 悠一, 李 慶範, 大城戸 利久, 横山 会美, 長崎 英樹, 望月 孝子, 神沼 英里, 菅原 秀明, 高木 利久, 大久保 公策, 中村 保一
@@ -1816,6 +2221,9 @@ items:
     lang: ja
 
   - date: 2011-03-20
+    year: 2011
+    month: 3
+    day: 20
     id: 69-ja
     title: DDBJ Read Annotation Pipeline： 新型シーケンサ由来配列のクラウド型パイプライン
     author: 長崎 英樹，望月 孝子，神沼 英里，渡邊 成樹，児玉 悠一，猿橋 智，菅原 秀明，高木 利久, 大久保 公策, 中村 保一
@@ -1824,6 +2232,9 @@ items:
     lang: ja
 
   - date: 2011-03-14
+    year: 2011
+    month: 3
+    day: 14
     id: 70-ja
     title: DNA Data Bank of Japan ～新型シークエンサからのデータ登録・解析
     author: 猿橋 智, 児玉 悠一, 李 慶範, 大城戸 利久, 横山 会美, 長崎 英樹, 望月 孝子, 神沼 英里, 菅原 秀明, 高木 利久, 大久保 公策, 中村 保一
@@ -1832,6 +2243,9 @@ items:
     lang: ja
 
   - date: 2011-01-28
+    year: 2011
+    month: 1
+    day: 28
     id: 71-ja
     title: 新型シークエンサ配列解析のためのクラウド型計算機資源利用法
     author: 神沼 英里
@@ -1840,6 +2254,9 @@ items:
     lang: ja
 
   - date: 2011-01-15
+    year: 2011
+    month: 1
+    day: 15
     id: 58-ja
     title: DDBJ Read Annotation Pipeline： A cloud based pipeline for high-throughput analysis of next generation sequencing data
     author: 長崎 英樹, 望月 孝子, 渡邊 成樹, Morizaki, S., 児玉 悠一, 猿橋 智, 高木 利久, 大久保 公策, 神沼 英里, 中村 保一
@@ -1848,6 +2265,9 @@ items:
     lang: ja
 
   - date: 2011-01-15
+    year: 2011
+    month: 1
+    day: 15
     id: 58-en
     title: DDBJ Read Annotation Pipeline： A cloud based pipeline for high-throughput analysis of next generation sequencing data
     author: Nagasaki, H., Mochizuki, T., Watanabe S., Morizaki, S., Kodama Y., Saruhashi, S., Takagi T., Okubo K., Kaminuma E., Nakamura, Y.
@@ -1856,6 +2276,9 @@ items:
     lang: en
 
   - date: 2010-12-08
+    year: 2011
+    month: 12
+    day: 8
     id: 35-ja
     title: DDBJ Read Annotation Pipeline： 新型シーケンサ由来配列のクラウド型パイプライン
     author: 長崎 英樹, 望月 孝子, 渡邊 成樹, Morizaki, S., 児玉 悠一, 猿橋 智, 高木 利久, 大久保 公策, 神沼 英里, 中村 保一
@@ -1864,6 +2287,9 @@ items:
     lang: ja
 
   - date: 2010-12-07
+    year: 2010
+    month: 12
+    day: 7
     id: 36-ja
     title: DDBJ Sequence Read Archive / DDBJ Omics Archive
     author: 児玉 悠一, 猿橋 智, 神沼 英里, 菅原 秀明, 高木 利久, 大久保 公策, 中村保一
@@ -1872,6 +2298,9 @@ items:
     lang: ja
 
   - date: 2010-10-14
+    year: 2010
+    month: 10
+    day: 14
     id: 27-ja
     title: DDBJ Read Annotation Pipeline： A Cloud Computing Based Analytical Tool for Next-generation Sequencing Data
     author: 中村 保一
@@ -1880,6 +2309,9 @@ items:
     lang: ja
 
   - date: 2010-10-14
+    year: 2010
+    month: 10
+    day: 14
     id: 27-en
     title: DDBJ Read Annotation Pipeline： A Cloud Computing Based Analytical Tool for Next-generation Sequencing Data
     author: Yasukazu Nakamura
@@ -1888,6 +2320,9 @@ items:
     lang: en
 
   - date: 2010-10-11
+    year: 2010
+    month: 10
+    day: 11
     id: 28-ja
     title: DDBJ Sequence Read Archive / DDBJ Omics Archive
     author: 児玉 悠一, 猿橋 智, 神沼 英里, 菅原 秀明, 高木 利久, 大久保 公策, 中村 保一
@@ -1896,6 +2331,9 @@ items:
     lang: ja
 
   - date: 2010-10-11
+    year: 2010
+    month: 10
+    day: 11
     id: 28-en
     title: DDBJ Sequence Read Archive / DDBJ Omics Archive
     author: Yuichi Kodama, Saruhashi Satoshi, Eli Kaminuma,Hideaki Sugawara, Toshihisa Takagi, Kousaku Okubo, Yasukazu Nakamura
@@ -1904,6 +2342,9 @@ items:
     lang: en
 
   - date: 2010-10-05
+    year: 2010
+    month: 10
+    day: 5
     id: 37-ja
     title: DDBJ Sequence Read Archive / DDBJ Omics Archive
     author: 児玉 悠一, 猿橋 智, 神沼 英里, 菅原 秀明, 高木 利久, 大久保 公策, 中村 保一
@@ -1912,6 +2353,9 @@ items:
     lang: ja
 
   - date: 2010-09-15
+    year: 2010
+    month: 9
+    day: 15
     id: 29-ja
     title: DDBJ Sequence Read Annotation Pipeline; A cloud computing-based analytical tool for next-generation sequencing data
     author: 神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 大久保 公策, 高木 利久, 中村 保一
@@ -1920,6 +2364,9 @@ items:
     lang: ja
 
   - date: 2010-09-15
+    year: 2010
+    month: 9
+    day: 15
     id: 29-en
     title: DDBJ Sequence Read Annotation Pipeline; A cloud computing-based analytical tool for next-generation sequencing data
     author: Eli Kaminuma, Takako Mochizuki, Yuichi Kodama, Satoshi Saruhashi, Hideaki Sugawara, Kousaku Okubo, Toshihisa Takagi, Yasukazu Nakamura
@@ -1928,6 +2375,9 @@ items:
     lang: en
 
   - date: 2010-09-10
+    year: 2010
+    month: 9
+    day: 10
     id: 38-ja
     title: 次世代シーケンサのアーカイブDBとクラウド型解析パイプライン
     author: 神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 大久保 公策, 高木 利久, 中村 保一
@@ -1936,6 +2386,9 @@ items:
     lang: ja
 
   - date: 2010-08-09
+    year: 2010
+    month: 8
+    day: 9
     id: 39-ja
     title: Parsing the Legacy DDBJ-- old but new
     author: 小笠原 理
@@ -1944,6 +2397,9 @@ items:
     lang: ja
 
   - date: 2010-08-09
+    year: 2010
+    month: 8
+    day: 9
     id: 40-ja
     title: DDBJの新型シーケンサへの対応 ― データアーカイブDRAと解析パイプライン
     author: 中村 保一
@@ -1952,6 +2408,9 @@ items:
     lang: ja
 
   - date: 2010-08-09
+    year: 2010
+    month: 8
+    day: 9
     id: 41-ja
     title: DDBJ past and future
     author: 大久保 公策
@@ -1960,6 +2419,9 @@ items:
     lang: ja
 
   - date: 2010-08-04
+    year: 2010
+    month: 8
+    day: 4
     id: 42-ja
     title: 次世代シークエンサの活用法/データの解析法
     author: 中村 保一
@@ -1968,6 +2430,9 @@ items:
     lang: ja
 
   - date: 2010-07-15
+    year: 2010
+    month: 7
+    day: 15
     id: 43-ja
     title: 次世代シーケンサーデータのDRA(DDBJ Read Archive)への登録
     author: 児玉 悠一
@@ -1976,6 +2441,9 @@ items:
     lang: ja
 
   - date: 2010-07-13
+    year: 2010
+    month: 7
+    day: 13
     id: 30-ja
     title: DDBJ Omics Archive and DDBJ Read Annotation Pipeline： archive and analyze quantitative data from next generation platforms
     author: 児玉 悠一
@@ -1984,6 +2452,9 @@ items:
     lang: ja
 
   - date: 2010-07-13
+    year: 2010
+    month: 7
+    day: 13
     id: 30-en
     title: DDBJ Omics Archive and DDBJ Read Annotation Pipeline： archive and analyze quantitative data from next generation platforms
     author: Yuichi Kodama
@@ -1992,6 +2463,9 @@ items:
     lang: en
 
   - date: 2010-07-09
+    year: 2010
+    month: 7
+    day: 9
     id: 31-ja
     title: DDBJ Read Annotation Pipeline： A web-based analytical tool for next-generation sequencing data
     author: 神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 大久保 公策, 高木 利久, 中村 保一
@@ -2000,6 +2474,9 @@ items:
     lang: ja
 
   - date: 2010-07-09
+    year: 2010
+    month: 7
+    day: 9
     id: 31-en
     title: DDBJ Read Annotation Pipeline： A web-based analytical tool for next-generation sequencing data
     author: Eli Kaminuma, Takako Mochizuki, Yuichi Kodama, Satoshi Saruhashi, Hideaki Sugawara, Kousaku Okubo, Toshihisa Takagi, Yasukazu Nakamura
@@ -2008,6 +2485,9 @@ items:
     lang: en
 
   - date: 2010-07-02
+    year: 2010
+    month: 7
+    day: 2
     id: 44-ja
     title: 次世代シーケンサのアーカイブDBとクラウド型解析パイプライン
     author: 神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 大久保 公策, 高木 利久, 中村 保一
@@ -2016,6 +2496,9 @@ items:
     lang: ja
 
   - date: 2010-06-21
+    year: 2010
+    month: 6
+    day: 21
     id: 45-ja
     title: DDBJ Read Archive (DRA) の紹介
     author: 児玉 悠一
@@ -2024,6 +2507,9 @@ items:
     lang: ja
 
   - date: 2010-06-07
+    year: 2010
+    month: 6
+    day: 7
     id: 32-ja
     title: Plant SNP annotation using a web-based pipeline tool for next-generation sequencing data
     author: 神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 大久保 公策, 高木 利久, 中村 保一
@@ -2032,6 +2518,9 @@ items:
     lang: ja
 
   - date: 2010-06-07
+    year: 2010
+    month: 6
+    day: 7
     id: 32-en
     title: Plant SNP annotation using a web-based pipeline tool for next-generation sequencing data
     author: Eli Kaminuma, Takako Mochizuki, Yuichi Kodama, Satoshi Saruhashi, Hideaki Sugawara, Kousaku Okubo, Toshihisa Takagi, Yasukazu Nakamura
@@ -2040,6 +2529,9 @@ items:
     lang: en
 
   - date: 2010-06-04
+    year: 2010
+    month: 6
+    day: 4
     id: 46-ja
     title: 次世代シークエンサの活用法
     author: 神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 高木 利久, 大久保 公策, 中村 保一
@@ -2048,6 +2540,9 @@ items:
     lang: ja
 
   - date: 2010-05-26
+    year: 2010
+    month: 5
+    day: 26
     id: 47-ja
     title: DDBJ Read Archive - Public archive for output data from next-generation sequencer
     author: 猿橋 智, 児玉 悠一, 神沼 英里, 五條堀 孝, 高木 利久, 大久保 公策, 菅原 秀明, 中村 保一
@@ -2056,6 +2551,9 @@ items:
     lang: ja
 
   - date: 2010-05-26
+    year: 2010
+    month: 5
+    day: 26
     id: 47-en
     title: DDBJ Read Archive - Public archive for output data from next-generation sequencer
     author: Satoshi Saruhashi, Yuichi Kodama, Eli Kaminuma, Takashi Gojobori, Toshihisa Takagi, Kousaku Okubo, Hideaki Sugawara, Yasukazu Nakamura
@@ -2064,6 +2562,9 @@ items:
     lang: en
 
   - date: 2010-05-26
+    year: 2010
+    month: 5
+    day: 26
     id: 33-ja
     title: 協調作業・共同研究コラボレーション・ツールとして Google Apps の DDBJ における利用例 ～DDBJ から NIG 全体への利用をめざして～
     author: 小菅 武英, 望月 孝子, *渡邊 成樹, 真島 淳, 神沼 英里, 大久保 公策, 高木 利久, 中村 保一
@@ -2072,6 +2573,9 @@ items:
     lang: ja
 
   - date: 2010-05-26
+    year: 2010
+    month: 5
+    day: 26
     id: 33-en
     title: Application of Google apps as a tool for cooperative work and collaborative study： example case in DDBJ - for the purpose of scaling up from DDBJ to all NIG -
     author: Takehide Kosuge, Takako Mochizuki, *Shigeki Watanabe, Jun Mashima, Eli Kaminuma, Kousaku Okubo, Toshihisa Takagi, Yasukazu Nakamura
@@ -2080,6 +2584,9 @@ items:
     lang: en
 
   - date: 2010-05-26
+    year: 2010
+    month: 5
+    day: 26
     id: 34-ja
     title: A Cloud computing based Analysis System for the Next Generation sequencing Data
     author: 望月 孝子, 神沼 英里, 児玉 悠一, 猿橋 智, 菅原 秀明, 大久保 公策, 高木 利久, 中村 保一
@@ -2088,6 +2595,9 @@ items:
     lang: ja
 
   - date: 2010-05-26
+    year: 2010
+    month: 5
+    day: 26
     id: 34-en
     title: A Cloud computing based Analysis System for the Next Generation sequencing Data
     author: Takako Mochizuki, Eli Kaminuma, Yuichi Kodama, Satoshi Saruhashi, Hideaki Sugawara, Kousaku Okubo, Toshihisa Takagi, Yasukazu Nakamura
@@ -2096,6 +2606,9 @@ items:
     lang: en
 
   - date: 2010-03-19
+    year: 2010
+    month: 3
+    day: 19
     id: 48-ja
     title: 次世代シークエンサデータのアーカイブ登録と解析パイプライン
     author: 神沼 英里, 望月 孝子, 児玉 悠一, 猿橋 智, 菅原 秀明, 高木 利久, 大久保 公策, 中村 保一
@@ -2104,6 +2617,9 @@ items:
     lang: ja
 
   - date: 2010-02-18
+    year: 2010
+    month: 2
+    day: 18
     id: 49-ja
     title: 次世代シーケンサーデータの DRA(DDBJ Read Archive)への登録
     author: 児玉 悠一
@@ -2112,6 +2628,9 @@ items:
     lang: ja
 
   - date: 2009-12-17
+    year: 2009
+    month: 12
+    day: 17
     id: 23-ja
     title: 次世代シーケンサーデータのDRA(DDBJ Sequence Read Archive)への登録
     author: 児玉 悠一
@@ -2120,6 +2639,9 @@ items:
     lang: ja
 
   - date: 2009-12-14
+    year: 2009
+    month: 12
+    day: 14
     id: 5-ja
     title: DDBJ Sequence Read Archive and DDBJ Read Annotation Pipeline： An archive database and an analytical tool for next-generation sequence data
     author: Eli Kaminuma, Yuichi Kodama, Satoshi Saruhashi, Takeshi Konno, Takako Mochizuki, Hidemasa Bono, Hideaki Sugawara, Kousaku Okubo, Toshihisa Takagi, Yasukazu Nakamura
@@ -2128,6 +2650,9 @@ items:
     lang: ja
 
   - date: 2009-12-14
+    year: 2009
+    month: 12
+    day: 14
     id: 5-en
     title: DDBJ Sequence Read Archive and DDBJ Read Annotation Pipeline： An archive database and an analytical tool for next-generation sequence data
     author: Eli Kaminuma, Yuichi Kodama, Satoshi Saruhashi, Takeshi Konno, Takako Mochizuki, Hidemasa Bono, Hideaki Sugawara, Kousaku Okubo, Toshihisa Takagi, Yasukazu Nakamura
@@ -2136,6 +2661,9 @@ items:
     lang: en
 
   - date: 2009-12-14
+    year: 2009
+    month: 12
+    day: 14
     id: 6-ja
     title: Consecutive Update of the Microbial Genome Re-Annotation Database, GTPS
     author: Takehide Kosuge, Yasumasa Shigemoto, Yoshikazu Kuwana, Hideaki Sugawara
@@ -2144,6 +2672,9 @@ items:
     lang: ja
 
   - date: 2009-12-14
+    year: 2009
+    month: 12
+    day: 14
     id: 6-en
     title: Consecutive Update of the Microbial Genome Re-Annotation Database, GTPS
     author: Takehide Kosuge, Yasumasa Shigemoto, Yoshikazu Kuwana, Hideaki Sugawara
@@ -2152,6 +2683,9 @@ items:
     lang: en
 
   - date: 2009-12-09
+    year: 2009
+    month: 12
+    day: 9
     id: 23-ja
     title: 次世代シーケンサーのハイスループット・データ解析システム「DDBJ Short Read Annotation Pipeline」の構築
     author: 神沼 英里, 児玉 悠一, 大久保 公策, 高木 利久, 中村 保一
@@ -2160,6 +2694,9 @@ items:
     lang: ja
 
   - date: 2009-12-09
+    year: 2009
+    month: 12
+    day: 9
     id: 4-ja
     title: 「DDBJ Sequence Read Archive」：次世代シークエンサーからの出力データのためのアーカイブ
     author: 児玉 悠一,猿橋 智, 五條堀 孝, 舘野 義男, 神沼 英里, 中村 保一, 菅原 秀明
@@ -2168,6 +2705,9 @@ items:
     lang: ja
 
   - date: 2009-12-01
+    year: 2009
+    month: 12
+    day: 1
     id: 7-ja
     title: DDBJにおける次世代シーケンサデータへの対応
     author: 神沼 英里, 児玉 悠一, 望月 孝子, 猿橋 智, 中村 保一
@@ -2176,6 +2716,9 @@ items:
     lang: ja
 
   - date: 2009-12-01
+    year: 2009
+    month: 12
+    day: 1
     id: 8-ja
     title: DDBJ： 配列データのフロー
     author: 真島 淳, 中村 保一
@@ -2184,6 +2727,9 @@ items:
     lang: ja
 
   - date: 2009-11-30
+    year: 2009
+    month: 11
+    day: 30
     id: 9-ja
     title: DNA Data Bank of Japan (DDBJ) の新展開
     author: 神沼 英里, 中村 保一
@@ -2192,6 +2738,9 @@ items:
     lang: ja
 
   - date: 2009-11-31
+    year: 2009
+    month: 11
+    day: 31
     id: 10-ja
     title: 共同利用としてのライフサイエンス基盤－日本DNAデータバンク（DDBJ）とライフサイエンス統合データベース（LSDB）
     author: 五條堀 孝
@@ -2200,6 +2749,9 @@ items:
     lang: ja
 
   - date: 2009-11-17
+    year: 2009
+    month: 11
+    day: 17
     id: 11-ja
     title: DDBJ Sequence Read Archiveのご紹介（新型シークエサへの対応）
     author: 猿橋 智, 児玉 悠一, 神沼 英里, 五條堀 孝, 舘野 義男, 中村 保一, 菅原 秀明
@@ -2208,6 +2760,9 @@ items:
     lang: ja
 
   - date: 2009-10-05
+    year: 2009
+    month: 10
+    day: 5
     id: 14-ja
     title: Systematic Organization of Gene Expression Data in Japan
     author: 坊農 秀雅, 神沼 英里, 児玉 悠一, 中村 保一, 大久保 公策, 高木 利久
@@ -2216,6 +2771,9 @@ items:
     lang: ja
 
   - date: 2009-10-05
+    year: 2009
+    month: 10
+    day: 5
     id: 14-en
     title: Systematic Organization of Gene Expression Data in Japan
     author: Hidemasa Bono, Eli Kaminuma, Yuichi Kodama, Yasukazu Nakamura, Kousaku Okubo, Toshihisa Takagi
@@ -2224,6 +2782,9 @@ items:
     lang: en
 
   - date: 2009-10-05
+    year: 2009
+    month: 10
+    day: 5
     id: 15-ja
     title: CIBEX
     author: 児玉 悠一, 舘野 義男, 池尾 一穂
@@ -2232,6 +2793,9 @@ items:
     lang: ja
 
   - date: 2009-10-05
+    year: 2009
+    month: 10
+    day: 5
     id: 15-en
     title: CIBEX
     author: Yuichi Kodama, Yoshio Tateno, Kazuho Ikeo
@@ -2240,6 +2804,9 @@ items:
     lang: en
 
   - date: 2009-08-19
+    year: 2009
+    month: 8
+    day: 19
     id: 16-ja
     title: 遺伝子データバンクについて（DNA Data Bank of Japan, DDBJ）
     author: 李 慶範
@@ -2248,6 +2815,9 @@ items:
     lang: ja
 
   - date: 2009-08-19
+    year: 2009
+    month: 8
+    day: 19
     id: 16-en
     title: DNA Data Bank of Japan, DDBJ
     author: Kyungbum Lee
@@ -2256,6 +2826,9 @@ items:
     lang: en
 
   - date: 2009-08-06
+    year: 2009
+    month: 8
+    day: 6
     id: 12-ja
     title: DDBJ Sequence Read Archive
     author: 児玉 悠一
@@ -2264,6 +2837,9 @@ items:
     lang: ja
 
   - date: 2009-08-04
+    year: 2009
+    month: 8
+    day: 4
     id: 13-ja
     title: Short Readデータ解析例の紹介
     author: 神沼 英里
@@ -2272,6 +2848,9 @@ items:
     lang: ja
 
   - date: 2009-06-26
+    year: 2009
+    month: 6
+    day: 26
     id: 17-ja
     title: DDBJ Sequence Read Archive
     author: 児玉 悠一
@@ -2280,6 +2859,9 @@ items:
     lang: ja
 
   - date: 2009-06-12
+    year: 2009
+    month: 6
+    day: 12
     id: 18-ja
     title: DNA Data Bank of Japan (DDBJ)
     author: 神沼 英里, 中村 保一, 高木 利久
@@ -2288,6 +2870,9 @@ items:
     lang: ja
 
   - date: 2009-06-12
+    year: 2009
+    month: 6
+    day: 12
     id: 19-ja
     title: 次世代シークエンサの出力データのためのアーカイブについて
     author: 児玉 悠一, 猿橋 智, 五條堀 孝, 舘野 義男, 中村 保一, 菅原秀明
@@ -2296,6 +2881,9 @@ items:
     lang: ja
 
   - date: 2009-05-26
+    year: 2009
+    month: 5
+    day: 26
     id: 21-ja
     title: Constructing a high-throughput annotation pipeline of next generation sequencing reads
     author: 神沼 英里, 中村 保一, 高木 利久
@@ -2304,6 +2892,9 @@ items:
     lang: ja
 
   - date: 2009-05-26
+    year: 2009
+    month: 5
+    day: 26
     id: 21-en
     title: Constructing a high-throughput annotation pipeline of next generation sequencing reads
     author: Eli Kaminuma, Yasukazu Nakamura, Toshihisa Takagi
@@ -2312,6 +2903,9 @@ items:
     lang: en
 
   - date: 2009-05-26
+    year: 2009
+    month: 5
+    day: 26
     id: 20-ja
     title: 次世代シークエンサの出力データのためのアーカイブについて
     author: 児玉 悠一, 猿橋 智, 五條堀 孝, 舘野 義男, 中村 保一, 菅原 秀明
@@ -2320,6 +2914,9 @@ items:
     lang: ja
 
   - date: 2009-04-16
+    year: 2009
+    month: 4
+    day: 16
     id: 22-ja
     title: DDBJ Activities： Contribution to the Research in Information Biology
     author: 真島 淳, 小菅 武英, 大城戸 利久, 児玉 悠一, 池尾 一穂, 菅原 秀明, 舘野 義男, 五條堀 孝
@@ -2328,6 +2925,9 @@ items:
     lang: ja
 
   - date: 2009-04-16
+    year: 2009
+    month: 4
+    day: 16
     id: 22-en
     title: DDBJ Activities： Contribution to the Research in Information Biology
     author: Jun Mashima, Takehide Kosuge, Toshihisa Okido, Yuichi Kodama, Kazuho Ikeo, Hideaki Sugawara, Yoshio Tateno, Takeshi Gojobori
