@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<header id="PageHeader">
+  <div class="inner">
+    <div class="page-title -small">
+      <h1 class="title">{{ page.title }}</h1>
+      {% include breadcrumb.html lang=page.lang %}
+    </div>
+    {% include tab-menu.html %}
+
+  </div>
+</header>
+
+<main id="SitemapView">
+  <div class="inner">
+    {{ content }}
+  </div>
+</main>

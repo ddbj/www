@@ -59,48 +59,94 @@ exclude:
 collections:
   aboutus:
     output: true
+    title:
+      ja: センターについて
+      en: About Us
   activities:
     output: true
+    title:
+      ja: 活動
+      en: Activities
   agd:
     output: true
-  authors:
-    output: true
+    title:
+      ja: AMED Genome group sharing Database
+      en: AMED Genome group sharing Database
   bioproject:
     output: true
+    title:
+      ja: BioProject
+      en: BioProject
   biosample:
     output: true
+    title:
+      ja: BioSample
+      en: BioSample
   ddbj:
     output: true
+    title:
+      ja: DDBJ Annotated/Assembled Sequences
+      en: DDBJ Annotated/Assembled Sequences
   documents:
     output: true
-  download:
-    output: true
+    title:
+      ja: ドキュメント
+      en: Documents
   dra:
     output: true
+    title:
+      ja: Sequence Read Archive
+      en: Sequence Read Archive
   dta:
     output: true
+    title:
+      ja: Trace Archive
+      en: Trace Archive
   faq:
     output: true
+    title:
+      ja: DDBJ Center FAQs
+      en: DDBJ Center FAQs
   gea:
     output: true
+    title:
+      ja: Genomic Expression Archive
+      en: Genomic Expression Archive
   jga:
     output: true
+    title:
+      ja: Japanese Genotype-phenotype Archive
+      en: Japanese Genotype-phenotype Archive
   jvar:
     output: true
+    title:
+      ja: JVar
+      en: JVar
   metabobank:
     output: true
+    title:
+      ja: MetaboBank
+      en: MetaboBank
   news:
     output: true
-  other:
-    output: true
+    title:
+      ja: News Archive
+      en: ニュースアーカイブ
   sc:
     output: true
+    title:
+      ja: NIG SuperComputer
+      en: NIG SuperComputer
   services:
     output: true
+    title:
+      ja: サービス
+      en: Services
   statistics:
     output: true
-  submission:
-    output: true
+    title:
+      ja: 統計情報
+      en: Statistics
 
 defaults:
   - scope:
@@ -123,3 +169,6 @@ watch: true
 sass:
   sass_dir: _sass
   syntax: sass
+
+gems:
+  - jekyll-sitemap

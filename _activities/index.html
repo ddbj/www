@@ -6,35 +6,45 @@ tag_label:
   icm:
     en: The Reports for International Collaborators Meetings
     ja: 国際実務者会議報告
-
 ---
-
 <div id="NavigationAndMainView">
   <div class="inner">
-    <nav class="subview">
-      <nav class="facet-search">
-        <h2 class="title">タグ</h2>
-        <ul class="tags" data-tab="keyword"></ul>
+    <div class="subview">
+      
+      <nav class="facet-search" data-facet-search-year="true">
+        <div class="tab-menu-view">
+          <ul class="tabmenucontainer">
+            <li class="-current" data-tab="keyword"><a>タグ</a></li>
+            <li data-tab="year"><a>年別</a></li>
+          </ul>
+          <ul class="tags tabbedcontent -current" data-tab="keyword"></ul>
+          <ul class="tags tabbedcontent" data-tab="year"></ul>
+        </div>
       </nav>
-    </nav>
+      
+    </div>
     
     <main class="mainview">
-      <ul class="tagging-list-view">
+      <ul class="tagging-list-view" data-sort-by="date">
 
         {% comment %} 講習会 {% endcomment %}
-        {% assign activities = site.activities | where: "category", "training" %}
+        {% assign activities = site.activities | where: "category", "training" | where: "lang", page.lang %}
         {% for activity in activities %}
-          {% assign label = activity.title %}
-          {% assign date = activity.start_date %}
+          {% assign date_label = activity.start_date | date: "%Y / %m / %d" %}
           {% assign tag_label = activity.keyword %}
           {% assign body = activity.content | strip_html | truncate: 100 %}
-          {% include activity-view.html tag="training" %}
+          {% include activity-view.html tag="training" label=activity.title date=activity.start_date date_label=date_label %}
         {% endfor %}
 
         {% comment %} 論文・講演発表・出版物 {% endcomment %}
         {% for activity in site.data.achievements.items %}
-          {% assign label = activity.title %}
-          {% assign date = activity.date | date: "%Y / %m / %d" %}
+          {% if activity.day %}
+            {% assign date_label = activity.year | append: " / " | append: activity.month | append: " / " | append: activity.day %}
+          {% elsif activity.month %}
+            {% assign date_label = activity.year | append: " / " | append: activity.month %}
+          {% else %}
+            {% assign date_label = activity.year %}
+          {% endif %}
           {% assign tag_label = site.data.achievements.dictionary[activity.keyword][page.lang] %}
           {% capture body %}
             {% case activity.keyword %}
@@ -49,13 +59,13 @@ tag_label:
                 <p>{{ activity.info }}</p>
           {% endcase %}
           {% endcapture %}
-          {% include activity-view.html tag="paper" %}
+          {% include activity-view.html tag="paper" label=activity.title date=activity.date date_label=date_label %}
         {% endfor %}
       
         {% comment %} 報告書 {% endcomment %}
         {% for activity in site.data.annual_reports.items %}
           {% assign label = activity.title[page.lang] %}
-          {% assign date = activity.date %}
+          {% assign date_label = activity.date | date: "%Y" %}
           {% assign tag_label = site.data.annual_reports.dictionary.tag[page.lang] %}
           {% capture body %}
             <a href="{{ activity.report_url[page.lang] }}">{{ site.data.annual_reports.dictionary.report_url[page.lang] }}</a>
@@ -69,17 +79,16 @@ tag_label:
               &nbsp;&nbsp;/&nbsp;&nbsp;<a href="{{ activity.self_evaluation[page.lang] }}">{{ site.data.annual_reports.dictionary.self_evaluation[page.lang] }}</a>
             {% endif %}
           {% endcapture %}
-          {% include activity-view.html tag="annual_report" %}
+          {% include activity-view.html tag="annual_report" label=label date=activity.date date_label=date_label %}
         {% endfor %}
 
         {% comment %} 国際実務者会議報告 {% endcomment %}
-        {% assign activities = site.activities | where: "category", "icm" %}
+        {% assign activities = site.activities | where: "category", "icm" | where: "lang", page.lang %}
         {% for activity in activities %}
-          {% assign label = activity.title %}
-          {% assign date = activity.start_date %}
+          {% assign date_label = activity.start_date | date: "%Y / %m / %d" %}
           {% assign tag_label = page.tag_label.icm[page.lang] %}
           {% assign body = activity.content | strip_html | truncate: 100 %}
-          {% include activity-view.html tag="icm" %}
+          {% include activity-view.html tag="icm" label=activity.title date=activity.start_date date_label=date_label %}
         {% endfor %}
 
       </ul>

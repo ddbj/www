@@ -229,7 +229,6 @@ input, textarea, select, button {
       .facet-search .tags > .tag-view > .count {
         line-height: 1.6; }
   .facet-search > .tab-menu-view {
-    margin-right: -1.6rem;
     font-size: 1.2rem;
     font-weight: bold;
     line-height: 2rem; }
@@ -1090,7 +1089,9 @@ input, textarea, select, button {
           display: inherit; }
 
 .tagging-list-view {
-  padding: 0 0 3rem 3rem; }
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem; }
   .tagging-list-view .taggingitem {
     margin-bottom: .4rem;
     padding: 1rem 1.2rem;
@@ -1282,7 +1283,8 @@ input, textarea, select, button {
     #NavigationAndMainView > .inner > .mainview {
       width: calc( (100vw - 128rem) + (128rem - 23rem)); }
       #NavigationAndMainView > .inner > .mainview > * {
-        max-width: calc(128rem - 23rem - 4.2rem); }
+        max-width: calc(128rem - 23rem);
+        padding-right: 4.2rem; }
 
 #PageHeader {
   background-color: white; }
@@ -1299,7 +1301,6 @@ input, textarea, select, button {
   padding: 2.5rem 4rem 2.5rem 2.5rem; }
 
 #ServicesView {
-  margin-right: 1rem;
   padding-top: 2.5rem;
   position: relative; }
   #ServicesView > .appearance-switch {
@@ -1307,48 +1308,48 @@ input, textarea, select, button {
     position: absolute;
     display: block;
     top: -.5rem;
-    right: 0; }
-  #ServicesView > .container {
+    right: 4.2rem; }
+  #ServicesView > .tagging-list-view {
     list-style: none;
     position: relative;
     transition: margin 0.2s; }
-    #ServicesView > .container > .service {
+    #ServicesView > .tagging-list-view > .service {
       transition: margin 0.2s, padding 0.2s, width 0.2s; }
-      #ServicesView > .container > .service > .upper > .title {
+      #ServicesView > .tagging-list-view > .service > .upper > .title {
         position: relative;
         margin-bottom: .6rem; }
-      #ServicesView > .container > .service > .upper > .tag-list-view {
+      #ServicesView > .tagging-list-view > .service > .upper > .tag-list-view {
         margin: 0 -.2rem .8rem; }
-        #ServicesView > .container > .service > .upper > .tag-list-view > .tag-view {
+        #ServicesView > .tagging-list-view > .service > .upper > .tag-list-view > .tag-view {
           display: inline-block; }
-      #ServicesView > .container > .service > .description {
+      #ServicesView > .tagging-list-view > .service > .description {
         font-size: 1.2rem;
         line-height: 1.4; }
-      #ServicesView > .container > .service > .links {
+      #ServicesView > .tagging-list-view > .service > .links {
         position: absolute;
         right: 1.2rem; }
-        #ServicesView > .container > .service > .links > ul {
+        #ServicesView > .tagging-list-view > .service > .links > ul {
           text-align: right; }
-          #ServicesView > .container > .service > .links > ul > li {
+          #ServicesView > .tagging-list-view > .service > .links > ul > li {
             display: inline-block; }
-            #ServicesView > .container > .service > .links > ul > li + li {
+            #ServicesView > .tagging-list-view > .service > .links > ul > li + li {
               margin-left: 1rem; }
-  #ServicesView[data-appearance-type="list"] > .container > .service > .upper > * {
+  #ServicesView[data-appearance-type="list"] > .tagging-list-view > .service > .upper > * {
     display: inline-block;
     vertical-align: middle; }
-  #ServicesView[data-appearance-type="list"] > .container > .service > .upper > .tag-list-view {
+  #ServicesView[data-appearance-type="list"] > .tagging-list-view > .service > .upper > .tag-list-view {
     margin-left: 1rem; }
-  #ServicesView[data-appearance-type="list"] > .container > .service > .links {
+  #ServicesView[data-appearance-type="list"] > .tagging-list-view > .service > .links {
     top: 1rem; }
-  #ServicesView[data-appearance-type="panel"] > .container {
-    display: flex;
+  #ServicesView[data-appearance-type="panel"] > .tagging-list-view {
     flex-wrap: wrap;
+    flex-direction: row;
     margin-right: -2rem; }
-    #ServicesView[data-appearance-type="panel"] > .container > .service {
+    #ServicesView[data-appearance-type="panel"] > .tagging-list-view > .service {
       margin: 0 2rem 2rem 0;
       padding: 1.6rem 1.6rem 3.2rem;
       width: calc( 100% / 3 - 2rem); }
-      #ServicesView[data-appearance-type="panel"] > .container > .service > .links {
+      #ServicesView[data-appearance-type="panel"] > .tagging-list-view > .service > .links {
         bottom: 1rem; }
 
 #SimpleView {
@@ -1360,6 +1361,32 @@ input, textarea, select, button {
     padding: 0 4rem 2rem; }
     #SimpleView > .inner.-stretched {
       max-width: 100%; }
+
+#SitemapView {
+  background-color: white;
+  line-height: 1.2; }
+  #SitemapView > .inner {
+    margin: 0 auto;
+    max-width: 128rem;
+    padding: 0 4rem 2rem; }
+    #SitemapView > .inner.-stretched {
+      max-width: 100%; }
+    #SitemapView > .inner > .group {
+      border-top: solid 0.1rem #736357;
+      padding: 1rem 0; }
+      #SitemapView > .inner > .group:last-child {
+        border-bottom: solid 0.1rem #736357; }
+      #SitemapView > .inner > .group > .grouptitle {
+        font-size: 1.2rem; }
+        #SitemapView > .inner > .group > .grouptitle + ul {
+          margin-top: .6rem; }
+      #SitemapView > .inner > .group > ul {
+        list-style: none;
+        columns: 3;
+        column-gap: 3rem; }
+        #SitemapView > .inner > .group > ul > li {
+          font-size: 1.2rem;
+          padding: .4rem 0; }
 
 #TopPageView {
   background-color: white; }

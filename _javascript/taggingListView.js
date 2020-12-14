@@ -1,5 +1,7 @@
 /* global $ */
 
+const MSEC_TO_DATE = 1 / 1000 / 60 / 60 / 24;
+
 // サービス一覧
 export default function taggingListView() {
 
@@ -23,16 +25,27 @@ export default function taggingListView() {
     });
 
     setupTaggingItems();
+    sortTaggingList();
     setupTabMenu();
     setupKeywordTag();
     setupYearTag();
     setupFacetSearch();
-
+    
     function setupTaggingItems() {
       taggingItems = taggingListView.querySelectorAll('.taggingitem');
       taggingItems.forEach(item => {
         item.ddbj_facetsearch_tags = item.dataset.tags.split(',').filter(tag => tag !== '');
       });
+    }
+
+    function sortTaggingList() {
+      if (taggingListView.dataset.sortBy === 'date') {
+        const futureDate = parseInt(new Date('2100-1-1').getTime() * MSEC_TO_DATE);
+        taggingItems.forEach(item => {
+          const time = item.querySelector(':scope > .upper > .tag-list-view > .date > time');
+          item.style.order = futureDate - parseInt(new Date(time.getAttribute('datetime')).getTime() * MSEC_TO_DATE);
+        });
+      }
     }
 
     /**
@@ -105,8 +118,7 @@ export default function taggingListView() {
         const yearTags = {};
         // タグの収集
         for (const item of taggingItems) {
-          const datetime = item.querySelector('.tag-list-view > .date > time').getAttribute('datetime');
-          const year = new Date(datetime).getFullYear();
+          const year = parseInt(item.dataset.year);
           if (!yearTags[year]) {
             yearTags[year] = [];
           }
@@ -115,8 +127,8 @@ export default function taggingListView() {
         // ファセット検索用ビューの生成
         let html = '';
         const facetSearchTags = facetSearch.querySelector(':scope .tags[data-tab="year"]');
-        for (const tag in yearTags) {
-          html += `<li class="tag-view" data-tag="${tag}"><span class="label">${tag}</span><span class="count">${yearTags[tag].length}</span></li>`;
+        for (const year of Object.keys(yearTags).sort().reverse()) {
+          html += `<li class="tag-view" data-tag="${year}"><span class="label">${year}</span><span class="count">${yearTags[year].length}</span></li>`;
         }
         facetSearchTags.innerHTML = html;
       }
@@ -153,7 +165,6 @@ export default function taggingListView() {
         }));
       });
       updateTag();
-
     }
 
     // アイテムの表示更新

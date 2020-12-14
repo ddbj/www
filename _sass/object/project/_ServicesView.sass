@@ -1,7 +1,6 @@
 $MARGIN_PANEL: 2rem
 
 #ServicesView
-  margin-right: #{ $MARGIN_PANEL * 0.5 }
   padding-top: 2.5rem
   position: relative
   > .appearance-switch
@@ -9,8 +8,8 @@ $MARGIN_PANEL: 2rem
     position: absolute
     display: block
     top: -.5rem
-    right: 0
-  > .container
+    right: $PADDING_BASE
+  > .tagging-list-view
     list-style: none
     position: relative
     transition: margin $DURATION_GUI
@@ -37,7 +36,7 @@ $MARGIN_PANEL: 2rem
             + li
               margin-left: 1rem
   &[data-appearance-type="list"]
-    > .container
+    > .tagging-list-view
       > .service
         > .upper
           > *
@@ -48,9 +47,9 @@ $MARGIN_PANEL: 2rem
         > .links
           top: 1rem
   &[data-appearance-type="panel"]
-    > .container
-      display: flex
+    > .tagging-list-view
       flex-wrap: wrap
+      flex-direction: row
       margin-right: -2rem
       > .service
         margin: 0 $MARGIN_PANEL $MARGIN_PANEL 0

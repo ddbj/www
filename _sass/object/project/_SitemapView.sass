@@ -1,0 +1,22 @@
+#SitemapView
+  background-color: white
+  line-height: 1.2
+  > .inner
+    +inner
+    padding: 0 4rem 2rem
+    > .group
+      border-top: solid .1rem $COLOR_GRAY
+      padding: 1rem 0
+      &:last-child
+        border-bottom: solid .1rem $COLOR_GRAY
+      > .grouptitle
+        font-size: 1.2rem
+        + ul
+          margin-top: .6rem
+      > ul
+        list-style: none
+        columns: 3
+        column-gap: 3rem
+        > li
+          font-size: 1.2rem
+          padding: .4rem 0

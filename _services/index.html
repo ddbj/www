@@ -12,12 +12,12 @@ lang: ja
       </nav>
     </nav>
     <main class="mainview">
-      <div id="ServicesView" class="tagging-list-view" data-appearance-type="panel">
+      <div id="ServicesView" class="" data-appearance-type="panel">
         <nav class="appearance-switch">
           <div class="button -current" data-appearance-value="panel" title="Panel view"></div>
           <div class="button" data-appearance-value="list" title="List view"></div>
         </nav>
-        <ul class="container">
+        <ul class="tagging-list-view">
 
           {% for service in site.data.services.items %}
           <li class="service taggingitem" data-tags="{{ service.tags | join: ',' }},{{ service.provider }}">
