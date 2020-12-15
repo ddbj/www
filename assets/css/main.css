@@ -359,9 +359,13 @@ input, textarea, select, button {
     border-left: solid 0.6rem #FF7300;
     padding-left: .9rem; }
   .md-content h3 {
-    font-size: 1.6rem;
     border-bottom: 0.2rem solid #FEC091;
+    font-size: 1.6rem;
     margin-bottom: 1.6rem; }
+  .md-content h4 {
+    border-bottom: 0.1rem solid #FEC091;
+    font-size: 1.4rem;
+    margin-bottom: .5rem; }
   .md-content h2, .md-content h3 {
     cursor: pointer; }
     .md-content h2:hover > .link-icon, .md-content h3:hover > .link-icon {
