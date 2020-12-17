@@ -22,7 +22,7 @@ lang: ja
   <dd>
     <ul>
       <li><a href="/ddbj/flat-file.html">DDBJ のデータ公開形式 (flat file) の説明</a>: <a href="/ddbj/flat-file.html#AccessionB">ACCESSION</a></li>
-      <li><a href="/insdc-status-e">INSDC Status Document</a>: Replaced</li>
+      <li><a href="/about/insdc-status-e">INSDC Status Document</a>: Replaced</li>
       <li><a href="/faq/ja/secondary-accession-number.html">セカンダリアクセッション番号とは何ですか</a></li>
     </ul>
   </dd>

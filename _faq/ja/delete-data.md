@@ -21,5 +21,5 @@ lang: ja
 <dl><dt>参考</dt>
   <dd><a href="/faq/ja/restore-released-data-private.html">公開されたデータを非公開に戻したい</a></dd>
   <dd><a href="/faq/ja/why-retracted-data-available.html">公開を取り消したデータが現在も参照できるのはなぜですか</a></dd>
-  <dd><a href="/insdc-status-e">INSDC Status Document</a></dd>
+  <dd><a href="/about/insdc-status-e">INSDC Status Document</a></dd>
 </dl>

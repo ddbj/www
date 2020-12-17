@@ -1,12 +1,13 @@
 ---
 layout: indexed_content
-title: page-access
+title: INSDC
 lang: en
+category: about
 related_pages:
   - title: INSDC Status Document
-    url: /insdc-status-e
+    url: /about/insdc-status-e
   - title: Faculty Staff of DDBJ
-    url: /ddbj-staff-e.html
+    url: /about/staff-e.html
 ---
 
 DDBJ Center has been closely collaborating with [EBI; European

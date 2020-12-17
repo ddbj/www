@@ -114,4 +114,4 @@ panels:
 lang: en
 ---
 
-DDBJ (DNA Data Bank of Japan) shares annotated/assembled nucleotide sequence data as a member of [INSDC](/insdc-e.html) (International Nucleotide Sequence Database Collaboration).
+DDBJ (DNA Data Bank of Japan) shares annotated/assembled nucleotide sequence data as a member of [INSDC](/about/insdc-e.html) (International Nucleotide Sequence Database Collaboration).

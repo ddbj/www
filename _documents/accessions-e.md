@@ -14,7 +14,7 @@ related_pages:
 
 ## Definition <a name="definition"></a>
 
-[INSD](/insdc-e.html#insd) (the International Nucleotide Sequence
+[INSD](/about/insdc-e.html#insd) (the International Nucleotide Sequence
 Databases) are composed of DDBJ, ENA and NCBI, and collect
 experimentally determined nucleotide sequence data and the
 [TPA](/ddbj/tpa-e.html) data. INSD accept the direct submission of the

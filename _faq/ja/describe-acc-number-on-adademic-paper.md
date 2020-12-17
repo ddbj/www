@@ -12,4 +12,4 @@ lang: ja
 
 
 
-<p>投稿を予定している雑誌などの規定に従っていただければ、通常は問題はありません。<br><a href="/insdc.html">国際塩基配列データベース</a>では、論文のタイトルページの footnote に以下のような記載をすすめています。 <br> Note: Nucleotide sequence data reported are available in the DDBJ/EMBL/GenBank databases under the accession number(s)----'. </p>
+<p>投稿を予定している雑誌などの規定に従っていただければ、通常は問題はありません。<br><a href="/about/insdc.html">国際塩基配列データベース</a>では、論文のタイトルページの footnote に以下のような記載をすすめています。 <br> Note: Nucleotide sequence data reported are available in the DDBJ/EMBL/GenBank databases under the accession number(s)----'. </p>

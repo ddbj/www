@@ -2,6 +2,7 @@
 layout: indexed_content
 title: DDBJ 運営スタッフ
 lang: ja
+category: about
 ---
 
 <article class="staff-view">

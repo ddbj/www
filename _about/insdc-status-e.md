@@ -2,6 +2,7 @@
 layout: indexed_content
 title: INSDC Status Document
 lang: en
+category: about
 ---
 
 ## INSDC Status Document

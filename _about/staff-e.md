@@ -2,6 +2,7 @@
 layout: indexed_content
 title: Faculty Staff of DDBJ
 lang: en
+category: about
 ---
 
 <article class="staff-view">

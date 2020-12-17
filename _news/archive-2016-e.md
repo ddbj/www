@@ -604,7 +604,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn160512_4"><a href="#wn160512_4">Publication of an open letter from International Advisory Committee</a></h2>
   <div class="news_date">May 12,2016</div>
-  <div class="news_content"><p>The members of <a href="/insdc-e.html#iac">International Advisory Committee</a> wrote an open letter reminding scientists to submit sequence data to INSDC that was published in both Nature and Science. </p><ul><li><a href="http://www.nature.com/nature/journal/v533/n7602/full/533179a.html">Reminder to deposit DNA sequences</a><br>Salzberg,S.L. (2016). Nature 533:179. DOI:10.1038/533179a</li><li><a href="http://science.sciencemag.org/content/352/6287/780.1">Reminder to deposit DNA sequences</a><br>Blaxter,M. <em>et al</em>. (2016). Science 352 (6287):780. DOI:10.1126/science.aaf7672</li></ul></div>
+  <div class="news_content"><p>The members of <a href="/about/insdc-e.html#iac">International Advisory Committee</a> wrote an open letter reminding scientists to submit sequence data to INSDC that was published in both Nature and Science. </p><ul><li><a href="http://www.nature.com/nature/journal/v533/n7602/full/533179a.html">Reminder to deposit DNA sequences</a><br>Salzberg,S.L. (2016). Nature 533:179. DOI:10.1038/533179a</li><li><a href="http://science.sciencemag.org/content/352/6287/780.1">Reminder to deposit DNA sequences</a><br>Blaxter,M. <em>et al</em>. (2016). Science 352 (6287):780. DOI:10.1126/science.aaf7672</li></ul></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>

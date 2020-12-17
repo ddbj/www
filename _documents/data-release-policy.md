@@ -67,6 +67,6 @@ related_pages:
 
 登録データの取り扱いについて
 :   登録データの取り扱いについては、[INSDC
-    のポリシー](/insdc.html#policy)をご覧ください。
+    のポリシー](/about/insdc.html#policy)をご覧ください。
 :   \[FAQ\]
     [公開を取り消したデータが現在も参照できるのはなぜですか](/faq/ja/why-retracted-data-available.html)

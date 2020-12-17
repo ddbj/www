@@ -105,9 +105,9 @@ DDBJ センターでは、特許出願に含まれる配列データを検索・
 
 ## 塩基配列データ <a name="nt"></a>
 
-[日本国特許庁](//www.jpo.go.jp/index.html) (JPO) と [韓国特許庁](//www.kipo.go.kr/) (KIPO) が収集・処理した特許出願に含まれる塩基配列データは DDBJ を経由して [INSD]({{ site.baseurl }}/insdc.html#insd) に取り込まれて公開されています。  
-同様に、[欧州特許庁](//www.epo.org/index.html) (EPO)、 [米国特許商標庁](https://www.uspto.gov/) (USPTO) が受理し公開可能となった配列データも、それぞれ EMBL-Bank/ENA, GenBank を経由し、[INSD]({{ site.baseurl }}/insdc.html#insd) に取り込まれております。   
-KIPO 由来の配列データを DDBJ 経由で、[INSD]({{ site.baseurl }}/insdc.html#insd) から公開する仕 みは 2008 年2月より開始されました。   
+[日本国特許庁](//www.jpo.go.jp/index.html) (JPO) と [韓国特許庁](//www.kipo.go.kr/) (KIPO) が収集・処理した特許出願に含まれる塩基配列データは DDBJ を経由して [INSD]({{ site.baseurl }}/about/insdc.html#insd) に取り込まれて公開されています。  
+同様に、[欧州特許庁](//www.epo.org/index.html) (EPO)、 [米国特許商標庁](https://www.uspto.gov/) (USPTO) が受理し公開可能となった配列データも、それぞれ EMBL-Bank/ENA, GenBank を経由し、[INSD]({{ site.baseurl }}/about/insdc.html#insd) に取り込まれております。   
+KIPO 由来の配列データを DDBJ 経由で、[INSD]({{ site.baseurl }}/about/insdc.html#insd) から公開する仕 みは 2008 年2月より開始されました。   
 特許出願に含まれる塩基配列データを表す[アクセッション番号]({{ site.baseurl }}/documents/accessions.html) は [プレフィックス]({{ site.baseurl }}/documents/prefix.html) で識別可能です。
 
 DDBJ おいて、特許出願に含まれる塩基配列データ (注: JPO, KIPO, EPO, USPTO

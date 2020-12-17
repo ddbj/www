@@ -15,7 +15,7 @@ related_pages:
 
 ## 定義 <a name="definition"></a>
 
-[INSD](/insdc.html#insd) (the International Nucleotide Sequence
+[INSD](/about/insdc.html#insd) (the International Nucleotide Sequence
 Databases; 国際塩基配列データベース)
 とは、全世界の研究者が実験によって決定した塩基配列データ、または、その
 [TPA](/ddbj/tpa.html) データを DDBJ，ENA，NCBI

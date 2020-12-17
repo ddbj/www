@@ -2,11 +2,12 @@
 layout: indexed_content
 title: DDBJ センターについて
 lang: ja
+category: about
 related_pages:
   - title: DDBJ 運営スタッフ
-    url: /ddbj-staff.html
+    url: /about/staff.html
   - title: INSDC
-    url: /insdc.html
+    url: /about/insdc.html
 ---
 
 DDBJ; DNA Data Bank of Japan は生命科学の研究活動をサポートするために、国際塩基配列データベースを協同運営する [INSDC (International Nucleotide Sequence Database Collaboration)](http://www.insdc.org/) の一員として、塩基配列データを収集しています。あわせて、自由に利用可能な塩基配列データとスーパーコンピュータシステムを提供しています。
@@ -34,9 +35,9 @@ DDBJ センターは、[文部科学省](http://www.mext.go.jp/)からの運営�
 Genetics)](https://www.nig.ac.jp/) 内で運営されています。
 
 DDBJ センター事業は所外委員会である DNA データ研究利用委員会に加えて、EBI, NCBI, DDBJ
-がそれぞれ委嘱する外部委員会である[国際諮問委員会](/insdc.html#iac)によって監督されています。
+がそれぞれ委嘱する外部委員会である[国際諮問委員会](/about/insdc.html#iac)によって監督されています。
 
-[現在の DDBJ 運営スタッフの一覧](/ddbj-staff.html)はこちらをご覧ください。
+[現在の DDBJ 運営スタッフの一覧](/about/staff.html)はこちらをご覧ください。
 
 
 　
@@ -50,7 +51,7 @@ DDBJ センター事業は所外委員会である DNA データ研究利用委�
 日本において、DDBJ センターは、欧州の
 [ENA](https://www.ebi.ac.uk/ena)/[EBI](https://www.ebi.ac.uk/)、および、米国の
 [NCBI](https://www.ncbi.nlm.nih.gov/) と共に、国際塩基配列データベース (INSD) を構築・維持する
-[INSDC](/insdc.html) の一員として、塩基配列データを収集・提供するデータバンク活動で国際的に貢献 しています。
+[INSDC](/about/insdc.html) の一員として、塩基配列データを収集・提供するデータバンク活動で国際的に貢献 しています。
 
 DDBJ で登録を受け付けた全ての塩基配列データには、DDBJ が[アクセッション番号](/documents/accessions.html) (accession
 number)
@@ -61,7 +62,7 @@ ENA/EBI でも共通です。
 
 #### 特許出願関連塩基配列データ、および、アミノ酸配列データの提供 <a name="pat"></a>
 
-国際塩基配列データベース ([INSD](/insdc.html#insd)) には、日本、韓国、欧州、および、米国の特許庁
+国際塩基配列データベース ([INSD](/about/insdc.html#insd)) には、日本、韓国、欧州、および、米国の特許庁
 が収集・処理した塩基配列データも含まれています。  
 また、DDBJ センターでは、日本、および、韓国の特許庁 が収集・処理したアミノ酸配列データを公開しています。
 

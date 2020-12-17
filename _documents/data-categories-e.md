@@ -39,7 +39,7 @@ with [DDBJ Trace Archive](/dta/index-e.html), or [DDBJ Sequence Read
 Archive](/dra/index-e.html), instead of DDBJ / EMBL-Bank / GenBank.
 
 Reference : [Overview of International Nucleotide Sequence Databases
-Policies](/insdc-e.html#policy)
+Policies](/about/insdc-e.html#policy)
 
 ### Submisson of the data including identical sequences or partially duplicated sequences
 

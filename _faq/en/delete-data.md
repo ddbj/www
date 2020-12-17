@@ -23,5 +23,5 @@ lang: en
 <dl><dt>References</dt>
   <dd><a href="/faq/en/restore-released-data-private-e.html">How to restore the released data to private?</a></dd>
   <dd><a href="/faq/en/why-retracted-data-available-e.html">Why is the retracted data still available?</a></dd>
-  <dd><a href="/insdc-status-e">INSDC Status Document</a></dd>
+  <dd><a href="/about/insdc-status-e">INSDC Status Document</a></dd>
 </dl>

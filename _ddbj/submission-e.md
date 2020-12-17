@@ -125,7 +125,7 @@ to DDBJ, even if you have no plan to publication of any research paper
 related to the sequence.
 
 Once released, the nucleotide sequences submitted to INSDC including
-DDBJ are [available for everyone](/insdc-e.html#policy).
+DDBJ are [available for everyone](/about/insdc-e.html#policy).
 
 If you submit nucleotide sequences to DDBJ, you can get [NO priority for
 patent](/policies-e.html#priority).
@@ -206,7 +206,7 @@ the submitter's request.
 Reference;
 
   - [Overview of International Nucleotide Sequence Databases
-    Policies](/insdc-e.html#policy)
+    Policies](/about/insdc-e.html#policy)
 
 
 ## Required items for nucleotide sequence submission <a name="item"></a>
@@ -414,7 +414,7 @@ Following figure shows the dataflow from new submission to release and update at
     </li>
   <li>
     Availability of Released Data<br>
-    At first, the data released from DDBJ are available via <a href="http://getentry.ddbj.nig.ac.jp/top-e.html">getentry</a> and <a href="ftp://ftp.ddbj.nig.ac.jp/">anonymous FTP</a>. The data are forwarded to GenBank and ENA, and the data are available also via GenBank and ENA. The data are also expanded into services provided from DDBJ, Search and Analysis, <a href="http://ddbj.nig.ac.jp/arsa/quick_search?lang=en">ARSA</a> and so on. Basically, the data released from DDBJ are <a href="/insdc-e.html#policy"></a>available for everyone.
+    At first, the data released from DDBJ are available via <a href="http://getentry.ddbj.nig.ac.jp/top-e.html">getentry</a> and <a href="ftp://ftp.ddbj.nig.ac.jp/">anonymous FTP</a>. The data are forwarded to GenBank and ENA, and the data are available also via GenBank and ENA. The data are also expanded into services provided from DDBJ, Search and Analysis, <a href="http://ddbj.nig.ac.jp/arsa/quick_search?lang=en">ARSA</a> and so on. Basically, the data released from DDBJ are <a href="/about/insdc-e.html#policy"></a>available for everyone.
     </li>
   <li>
     Citation of Released Data<br>

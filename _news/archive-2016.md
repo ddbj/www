@@ -665,7 +665,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn160512_4"><a href="#wn160512_4">国際諮問委員会からの open letter</a></h2>
   <div class="news_date">2016年05月12日</div>
-  <div class="news_content"><p>研究者が INSDC へ配列データを登録することの重要性について あらためて注意喚起する<a href="/insdc.html#iac">国際諮問委員会</a> からの open letter が Nature と Science で公開されました。</p><ul><li><a href="http://www.nature.com/nature/journal/v533/n7602/full/533179a.html">Reminder to deposit DNA sequences</a><br>Salzberg,S.L. (2016). Nature 533:179. DOI:10.1038/533179a</li><li><a href="http://science.sciencemag.org/content/352/6287/780.1">Reminder to deposit DNA sequences</a><br>Blaxter,M. <em>et al</em>. (2016). Science 352 (6287):780. DOI:10.1126/science.aaf7672</li></ul></div>
+  <div class="news_content"><p>研究者が INSDC へ配列データを登録することの重要性について あらためて注意喚起する<a href="/about/insdc.html#iac">国際諮問委員会</a> からの open letter が Nature と Science で公開されました。</p><ul><li><a href="http://www.nature.com/nature/journal/v533/n7602/full/533179a.html">Reminder to deposit DNA sequences</a><br>Salzberg,S.L. (2016). Nature 533:179. DOI:10.1038/533179a</li><li><a href="http://science.sciencemag.org/content/352/6287/780.1">Reminder to deposit DNA sequences</a><br>Blaxter,M. <em>et al</em>. (2016). Science 352 (6287):780. DOI:10.1126/science.aaf7672</li></ul></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>

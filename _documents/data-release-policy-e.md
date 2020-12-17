@@ -83,7 +83,7 @@ your data](/ddbj/update-e.html), please contact us via [web form](/ddbj/update-f
 See [Data Updates/Corrections](/ddbj/update-e.html) in detail.
 
 Overview of International Nucleotide Sequence Databases Policies  
-: Refer to [INSDC policy](/insdc-e.html#policy).
+: Refer to [INSDC policy](/about/insdc-e.html#policy).
 : [FAQ] [Why is the retracted data still
 available?](/faq/en/why-retracted-data-available.html)
 

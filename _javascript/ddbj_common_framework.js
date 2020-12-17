@@ -56,8 +56,8 @@
         en: 'About Us'
       },
       uri: {
-        ja: '/ddbj-center',
-        en: '/ddbj-center-e'
+        ja: '/about/',
+        en: '/about/index-e'
       }
     }
   ];

@@ -13,7 +13,7 @@ Health Research Involving Human Subjects (Japanese　only)](http://www.lifescien
 #### 1. Purpose and method of information uses
 
 Unrestricted-access databases  
-: [Introduction of DDBJ](ddbj-center-e.html#mission)
+: [Introduction of DDBJ](about/index-w.html#mission)
 
 Controlled-access databases  
 : [JGA](/jga/index-e.html)
@@ -35,6 +35,6 @@ Not restricted.
 
 #### 4. Responsible person for information management
 
-[Head of DDBJ center](ddbj-staff-e.html)
+[Head of DDBJ center](about/staff-e.html)
 
 I you have questions, please contact us from [here](contact-ddbj-e.html).

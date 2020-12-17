@@ -2,11 +2,12 @@
 layout: indexed_content
 title: About DDBJ Center
 lang: en
+category: about
 related_pages:
   - title: Faculty Staff of DDBJ
-    url: /ddbj-staff-e.html
+    url: /about/staff-e.html
   - title: INSDC
-    url: /insdc-e.html
+    url: /about/insdc-e.html
   - title: INSDC Status Document
     url: /insdc-status-e
 ---
@@ -54,9 +55,9 @@ Science and Technology](http://www.mext.go.jp/en/).
 DDBJ Center is reviewed and advised by its own advisory board, DNA
 Database Advisory Committee (an outside committee of NIG), and also by
 the advisory board to INSDC, [International Advisory
-Committee](/insdc-e.html#iac).
+Committee](/about/insdc-e.html#iac).
 
-[A list of current staff of DDBJ.](/ddbj-staff-e.html)
+[A list of current staff of DDBJ.](/about/staff-e.html)
 
 
 
@@ -66,7 +67,7 @@ Committee](/insdc-e.html#iac).
 ### Construction and Operation of INSDC <a name="insd"></a>
 
 In Japan, DDBJ Center internationally contributes as a member of
-[INSDC](/insdc-e.html) to collect and to provide nucleotide sequence
+[INSDC](/about/insdc-e.html) to collect and to provide nucleotide sequence
 data with [ENA](https://www.ebi.ac.uk/ena)/[EBI](https://www.ebi.ac.uk/)
 in Europe and [NCBI](https://www.ncbi.nlm.nih.gov/) in USA.
 
@@ -86,7 +87,7 @@ submitted through DDBJ.
 
 #### Providing nucleotide and amino acid sequence data related to patent applications <a name="pat"></a>
 
-[INSD](/insdc.html#insd) contains nucleotide sequence data related to
+[INSD](/about/insdc.html#insd) contains nucleotide sequence data related to
 patent applications collected by Patent Offices in Japan, Korea, Europe
 and USA.  
 DDBJ Center also provides amino acid sequence data related to patent

@@ -25,5 +25,5 @@ lang: en
 <p>Moreover, our unified database may be copied and redistributed without permission at any other organizations. In case you need to withdraw your entry from such database, we ask you to make request directly to the organization which manages the database.</p>
 <dl><dt>References</dt>
   <dd><a href="/faq/en/why-retracted-data-available-e.html">Why is the retracted data still available?</a></dd>
-  <dd><a href="/insdc-status-e">INSDC Status Document</a></dd>
+  <dd><a href="/about/insdc-status-e">INSDC Status Document</a></dd>
 </dl>

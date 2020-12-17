@@ -12,7 +12,7 @@ lang: ja
 
 
 
-<p>原則として、公開されたデータを非公開に戻すことはできません。<br><a href="/insdc.html">INSDC</a> において一度公開されたエントリを DDBJ retrieval system: <a href="http://getentry.ddbj.nig.ac.jp/top-j.html">getentry</a> を利用してアクセッション番号で検索した場合、永久に閲覧が可能な状態になります（INSDC 側の作業ミスにより誤って公開された場合は、その限りではありません）。</p>
+<p>原則として、公開されたデータを非公開に戻すことはできません。<br><a href="/about/insdc.html">INSDC</a> において一度公開されたエントリを DDBJ retrieval system: <a href="http://getentry.ddbj.nig.ac.jp/top-j.html">getentry</a> を利用してアクセッション番号で検索した場合、永久に閲覧が可能な状態になります（INSDC 側の作業ミスにより誤って公開された場合は、その限りではありません）。</p>
 <p>ただし、配列データに大きな誤りがあるなど、問題が生じた場合には、配列データの利用に一定の制限 (対象配列データの相同性検索サービスからの削除など) をかけることができます。</p>
 <p>依頼者のお名前、ご所属を明記の上、以下の項目について <a href="/contact-ddbj.html#to-ddbj">DDBJへのお問い合わせ</a> よりお知らせください。</p>
 <ul>
@@ -23,5 +23,5 @@ lang: ja
 <p>なお、公開を取消したデータの取り扱いにつきましては、以下をご参照ください。<br></p>
 <dl><dt>参考</dt>
   <dd><a href="/faq/ja/why-retracted-data-available.html">公開を取り消したデータが、現在も参照できるのはなぜですか</a></dd>
-  <dd><a href="/insdc-status-e">INSDC Status Document</a></dd>
+  <dd><a href="/about/insdc-status-e">INSDC Status Document</a></dd>
 </dl>

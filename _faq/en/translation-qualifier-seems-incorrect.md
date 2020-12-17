@@ -14,7 +14,7 @@ lang: en
 
 
 
-<p>The rule to translate nucleotide sequence into amino acid sequence is specified in accordance with agreements of <a href="/insdc-e.html">International Nucleotide Sequence Database Collaboration</a>. <br>The codon table using a CDS feature is specified in the value of /<a href="/ddbj/qualifiers-e.html#transl_table">transl_table</a> qualifier as a number of <a href="/ddbj/geneticcode-e.html">The Genetic Codes</a>. </p>
+<p>The rule to translate nucleotide sequence into amino acid sequence is specified in accordance with agreements of <a href="/about/insdc-e.html">International Nucleotide Sequence Database Collaboration</a>. <br>The codon table using a CDS feature is specified in the value of /<a href="/ddbj/qualifiers-e.html#transl_table">transl_table</a> qualifier as a number of <a href="/ddbj/geneticcode-e.html">The Genetic Codes</a>. </p>
 <p>There are three points frequently misunderstood. </p>
 <ul>
   <li>You should specify /<a href="/ddbj/qualifiers-e.html#organelle">organelle</a> qualifier to assign correct genetic code for mitochondrion or chloroplast. </li>

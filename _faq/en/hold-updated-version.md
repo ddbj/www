@@ -22,7 +22,7 @@ lang: en
   <dd>
     <ul>
       <li><a href="/ddbj/flat-file-e.html">Explanation of DDBJ flat file format</a>: <a href="/ddbj/flat-file.html#AccessionB">ACCESSION</a></li>
-      <li><a href="/insdc-status-e">INSDC Status Document</a>: Replaced</li>
+      <li><a href="/about/insdc-status-e">INSDC Status Document</a>: Replaced</li>
       <li><a href="/faq/en/secondary-accession-number-e.html">What is secondary accession number?</a></li>
     </ul>
   </dd>

@@ -42,7 +42,7 @@ lang: ja
 
 # DDBJ Sequence Read Archive
 
-[DDBJ Sequence Read Archive (DRA)]({{ site.baseurl }}/dra/index.html) は Roche 454 GS System®、Illumina Genome Analyzer®、Applied Biosystems SOLiD® System などの次世代シークエンサからの出力データのためのデータベースです。 DRA は [International Nucleotide Sequence Database Collaboration (INSDC)]({{ site.baseurl }}/insdc.html) のメンバーであり、 [NCBI Sequence Read Archive (SRA)](https://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi) と [EBI Sequence Read Archive (ERA)](https://www.ebi.ac.uk/ena/) との国際協力のもと、運営されています。
+[DDBJ Sequence Read Archive (DRA)]({{ site.baseurl }}/dra/index.html) は Roche 454 GS System®、Illumina Genome Analyzer®、Applied Biosystems SOLiD® System などの次世代シークエンサからの出力データのためのデータベースです。 DRA は [International Nucleotide Sequence Database Collaboration (INSDC)]({{ site.baseurl }}/about/insdc.html) のメンバーであり、 [NCBI Sequence Read Archive (SRA)](https://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi) と [EBI Sequence Read Archive (ERA)](https://www.ebi.ac.uk/ena/) との国際協力のもと、運営されています。
 
 公開された Analysis 以外のデータは3極で自動的にミラーリングされます。
 

@@ -54,7 +54,7 @@ lang: en
 of high throughput sequencing data. DRA stores raw sequencing data and
 alignment information to enhance reproducibility and facilitate new
 discoveries through data analysis. DRA is a member of the [International
-Nucleotide Sequence Database Collaboration (INSDC)](/insdc-e.html) and
+Nucleotide Sequence Database Collaboration (INSDC)](/about/insdc-e.html) and
 archiving the data in a close collaboration with [NCBI Sequence Read
 Archive (SRA)](https://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi) and [EBI
 Sequence Read Archive (ERA)](https://www.ebi.ac.uk/ena/).

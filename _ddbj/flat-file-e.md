@@ -121,7 +121,7 @@ related_pages:
 # DDBJ flat file format
 
 DDBJ/EMBL-Bank/GenBank, the International Nucleotide Sequence Database
-Collaboration ([INSDC](/insdc-e.html)) collects the nucleotide sequences
+Collaboration ([INSDC](/about/insdc-e.html)) collects the nucleotide sequences
 experimentally determined, and constructs the database in accordance
 with the rule agreed with the three databanks.
 

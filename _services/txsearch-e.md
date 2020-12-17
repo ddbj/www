@@ -27,7 +27,7 @@ related_pages:
 TXSearch is a [NCBI
 Taxonomy](//www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/) retrieval
 system provided by DDBJ. When you submit nucleotide sequence data to
-International Nucleotide Sequence Database([INSD](/insdc-e.html#insd)),
+International Nucleotide Sequence Database([INSD](/about/insdc-e.html#insd)),
 you need to use the organism name description based on NCBI Taxonomy.
 
 

@@ -14,7 +14,7 @@ lang: ja
 
 
 
-<p>アミノ酸翻訳の仕様は<a href="/insdc.html">国際塩基配列データベース</a>の規約で決まっています。<br>当該 CDS feature がアミノ酸翻訳される際の遺伝暗号表は /<a href="/ddbj/qualifiers.html#transl_table">transl_table</a> qualifier に <a href="/ddbj/geneticcode-e.html">The Genetic Codes</a> の番号で示されます。<br>よく誤解される点を３つ挙げておきます。</p>
+<p>アミノ酸翻訳の仕様は<a href="/about/insdc.html">国際塩基配列データベース</a>の規約で決まっています。<br>当該 CDS feature がアミノ酸翻訳される際の遺伝暗号表は /<a href="/ddbj/qualifiers.html#transl_table">transl_table</a> qualifier に <a href="/ddbj/geneticcode-e.html">The Genetic Codes</a> の番号で示されます。<br>よく誤解される点を３つ挙げておきます。</p>
 <ul>
   <li>オルガネラ; /<a href="/ddbj/qualifiers.html#organelle">organelle</a> qualifier を指定しなければ、ミトコンドリアなどの genetic code が正しく反映されません。</li>
   <li>開始コドンと扱う場合は M Met メチオニンと扱います。G あるいは V にはなりません。<br> 参照; <a href="http://en.wikipedia.org/wiki/Start_codon">Start codon</a>, <a href="http://en.wikipedia.org/wiki/Formylmethionine">N-Formylmethionine</a></li>

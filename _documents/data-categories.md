@@ -37,7 +37,7 @@ DDBJ/EMBL-Bank/GenBank とは別枠のデータベースである [DTA; DDBJ Tra
 Archive](/dta/index.html), または [DRA; DDBJ Sequence Read
 Archive](/dra/index.html) へのご登録をお願いいたします。
 
-参照：[登録データの 取り扱いについて](/insdc.html#policy)
+参照：[登録データの 取り扱いについて](/about/insdc.html#policy)
 
 ### 配列が同一, あるいは, 部分的に重複するデータの登録
 

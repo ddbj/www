@@ -119,7 +119,7 @@ related_pages:
 
 [受け入れ基準](/documents/accessions.html)を満たしている塩基配列であるならば、研究者はこれを広く一般に公開することを目的として、学術論文の投稿予定の有無に関わらず、必要に応じて DDBJ に登録することができます。
 
-DDBJ を含む国際塩基配列データベースに登録された塩基配列は公開された後には、[誰でも全てを制限なしに利用可能](/insdc.html#policy)となります。
+DDBJ を含む国際塩基配列データベースに登録された塩基配列は公開された後には、[誰でも全てを制限なしに利用可能](/about/insdc.html#policy)となります。
 
 なお、DDBJ に塩基配列データを登録しても、データに関する[優先権、特許権](/policies.html#priority)などは生じませんので、ご注意ください。
 
@@ -160,7 +160,7 @@ DDBJ から塩基配列を公開する際には、登録情報を DDBJ の定め
 
 参照：
 
-  - [登録データの 取り扱いについて](/insdc.html#policy)
+  - [登録データの 取り扱いについて](/about/insdc.html#policy)
   - [FAQ\]
     [公開を取り消したデータが現在も参照できるのはなぜですか](/faq/ja/why-retracted-data-available.html)
 
@@ -294,7 +294,7 @@ DDBJ のキュレータが、公開に必要な事項を、国際塩基配列デ
   <li>
     公開データの利用<br>
     DDBJ から公開されたデータは、最初に<a href="http://getentry.ddbj.nig.ac.jp/top-j.html">getentry</a>で検索可能になり、<a href="ftp://ftp.ddbj.nig.ac.jp/">anonymous FTP</a>から取得可能になります。GenBankとENAにも転送され、そちらからも閲覧・取得が可能になります。DDBJのサービス、相同性検索，<a href="http://ddbj.nig.ac.jp/arsa/?lang=ja" >ARSA</a>
-      などにも展開されます。公開されたデータは、基本的には、<a href="/insdc.html#policy" >どなたでも閲覧・利用が可能</a>です。
+      などにも展開されます。公開されたデータは、基本的には、<a href="/about/insdc.html#policy" >どなたでも閲覧・利用が可能</a>です。
     </li>
   <li>
     公開データの被引用性<br>
