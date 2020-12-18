@@ -3,7 +3,6 @@ layout: tabbed_indexed_content
 title: validator エラーメッセージ
 service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
-current_tab: home
 tab_menu:
   - id: home
     title: Home
@@ -109,6 +108,8 @@ related_pages:
     url: /ddbj/transchecker.html
   - title: MSS 利用申し込み
     url: /ddbj/mss-form.html
+addhead: <script type='text/javascript' src='/assets/js/jquery.trace.js'></script>
+
 ---
 
 ## validator エラーメッセージ
@@ -155,9 +156,7 @@ related_pages:
 
 -----
 
-<div id="Parser-rule">
-
-</div>
+<div id="Parser-rule"></div>
 
 -----
 
