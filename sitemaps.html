@@ -12,9 +12,11 @@ lang: ja
     <ul>
       {% for item in site[collection.label] %}
       {% if item.lang == page.lang %}
+      {% if item.category != "news" and item.category != "faq" %}
       <li>
         <a href="{{ item.url }}">{{ item.title }}</a>
       </li>
+      {% endif %}
       {% endif %}
       {% endfor %}
     </ul>
