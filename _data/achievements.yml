@@ -4,7 +4,7 @@ items:
     month: 9
     day: 25
     id: 205-ja
-    title: バリアントデータ検索&活用 変異・多型情報を使いこなす達人レシピ (実験医学別冊)
+    title: "バリアントデータ検索&活用 変異・多型情報を使いこなす達人レシピ (実験医学別冊)"
     url: https://www.yodosha.co.jp/yodobook/book/9784758122450/
     author: "分担執筆: 福田 亜沙美、秦 千比呂、児玉 悠一"
     info: 羊土社
@@ -16,7 +16,7 @@ items:
     month: 9
     day: 29
     id: 203-ja
-    title: GA4GH DURI Work Stream in GEM Japan 2020; localizing the Data Use Ontology and Machine-Readable Consent in the local research community.
+    title: "GA4GH DURI Work Stream in GEM Japan 2020; localizing the Data Use Ontology and Machine-Readable Consent in the local research community."
     author: Chisato Yamasaki, Satoshi Nagaie, Minae Kawashima, Chihiro Hata, Shuichi Kawashima, Yuichi Kodama, Mizuki Morita, Natsuko Yamamoto, Akio Nagano, Keiko Katsui, Takako Takai, Soichi Ogishima
     info: GA4GH 8th Plenary Meeting
     keyword: presentation
@@ -27,7 +27,7 @@ items:
     month: 9
     day: 29
     id: 203-en
-    title: GA4GH DURI Work Stream in GEM Japan 2020; localizing the Data Use Ontology and Machine-Readable Consent in the local research community.
+    title: "GA4GH DURI Work Stream in GEM Japan 2020; localizing the Data Use Ontology and Machine-Readable Consent in the local research community."
     author: Chisato Yamasaki, Satoshi Nagaie, Minae Kawashima, Chihiro Hata, Shuichi Kawashima, Yuichi Kodama, Mizuki Morita, Natsuko Yamamoto, Akio Nagano, Keiko Katsui, Takako Takai, Soichi Ogishima
     info: GA4GH 8th Plenary Meeting
     keyword: presentation
