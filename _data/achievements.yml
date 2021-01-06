@@ -1,4 +1,126 @@
 items:
+  - date: 2020-09-25
+    year: 2020
+    month: 9
+    day: 25
+    id: 205-ja
+    title: バリアントデータ検索&活用 変異・多型情報を使いこなす達人レシピ (実験医学別冊)
+    url: https://www.yodosha.co.jp/yodobook/book/9784758122450/
+    author: 分担執筆: 福田 亜沙美、秦 千比呂、児玉 悠一
+    info: 羊土社
+    keyword: book
+    lang: ja
+
+  - date: 2020-09-29
+    year: 2020
+    month: 9
+    day: 29
+    id: 203-ja
+    title: GA4GH DURI Work Stream in GEM Japan 2020; localizing the Data Use Ontology and Machine-Readable Consent in the local research community.
+    author: Chisato Yamasaki, Satoshi Nagaie, Minae Kawashima, Chihiro Hata, Shuichi Kawashima, Yuichi Kodama, Mizuki Morita, Natsuko Yamamoto, Akio Nagano, Keiko Katsui, Takako Takai, Soichi Ogishima
+    info: GA4GH 8th Plenary Meeting
+    keyword: presentation
+    lang: ja
+
+  - date: 2020-09-29
+    year: 2020
+    month: 9
+    day: 29
+    id: 203-en
+    title: GA4GH DURI Work Stream in GEM Japan 2020; localizing the Data Use Ontology and Machine-Readable Consent in the local research community.
+    author: Chisato Yamasaki, Satoshi Nagaie, Minae Kawashima, Chihiro Hata, Shuichi Kawashima, Yuichi Kodama, Mizuki Morita, Natsuko Yamamoto, Akio Nagano, Keiko Katsui, Takako Takai, Soichi Ogishima
+    info: GA4GH 8th Plenary Meeting
+    keyword: presentation
+    lang: en
+
+  - date: 2020-10-05
+    year: 2020
+    month: 10
+    day: 5
+    id: 204-ja
+    title: DDBJ サービス
+    author: 時松敏明, 青野英雄, 李慶範, 飯塚朋代, 大城戸利久, 川添将仁, 児玉悠一, 小菅武英, 杉田里江, 鈴木紀美子, 高木佳苗, 秦千比呂, 福田亜沙美, 真島淳, 横山会美, 藤澤貴智
+    info: トーゴーの日シンポジウム
+    keyword: presentation
+    lang: ja
+
+  - date: 2021-01-08
+    year: 2021
+    month: 1
+    day: 8
+    id: 202-ja
+    title: DDBJ update: streamlining submission and access of human data.
+    url: https://pubmed.ncbi.nlm.nih.gov/33156332
+    author: Fukuda A, Kodama Y, Mashima J, Fujisawa T, Ogasawara O
+    info: Nucleic Acids Res 2021 Jan 8;49(D1):D71-D75
+    pubmed_id: 33156332
+    keyword: paper
+    lang: ja
+
+  - date: 2021-01-08
+    year: 2021
+    month: 1
+    day: 8
+    id: 202-en
+    title: DDBJ update: streamlining submission and access of human data.
+    url: https://pubmed.ncbi.nlm.nih.gov/33156332
+    author: Fukuda A, Kodama Y, Mashima J, Fujisawa T, Ogasawara O
+    info: Nucleic Acids Res 2021 Jan 8;49(D1):D71-D75
+    pubmed_id: 33156332
+    keyword: paper
+    lang: en
+
+  - date: 2021-01-08
+    year: 2021
+    month: 1
+    day: 8
+    id: 201-ja
+    title: The international nucleotide sequence database collaboration.
+    url: https://pubmed.ncbi.nlm.nih.gov/33166387
+    author: Arita M, Karsch-Mizrachi I, Cochrane G
+    info: Nucleic Acids Res 2021 Jan 8;49(D1):D121-D124.
+    pubmed_id: 33166387
+    keyword: paper
+    lang: ja
+
+  - date: 2021-01-08
+    year: 2021
+    month: 1
+    day: 8
+    id: 201-en
+    title: The international nucleotide sequence database collaboration.
+    url: https://pubmed.ncbi.nlm.nih.gov/33166387
+    author: Arita M, Karsch-Mizrachi I, Cochrane G
+    info: Nucleic Acids Res 2021 Jan 8;49(D1):D121-D124.
+    pubmed_id: 33166387
+    keyword: paper
+    lang: en
+
+  - date: 2020-02-24
+    year: 2020
+    month: 2
+    day: 24
+    id: 200-ja
+    title: "BioHackathon 2015: Semantics of data for life sciences and reproducible research."
+    url: https://pubmed.ncbi.nlm.nih.gov/32308977/
+    author: Vos RA, Katayama T, Mishima H, Kawano S, Kawashima S, Kim JD, Moriya Y, Tokimatsu T, Yamaguchi A, Yamamoto Y et al
+    info: F1000Res 2020 Feb 24;9:136.
+    pubmed_id: 32308977
+    keyword: paper
+    lang: ja
+
+  - date: 2020-02-24
+    year: 2020
+    month: 2
+    day: 24
+    id: 200-en
+    title: "BioHackathon 2015: Semantics of data for life sciences and reproducible research."
+    url: https://pubmed.ncbi.nlm.nih.gov/32308977/
+    author: Vos RA, Katayama T, Mishima H, Kawano S, Kawashima S, Kim JD, Moriya Y, Tokimatsu T, Yamaguchi A, Yamamoto Y et al
+    info: F1000Res 2020 Feb 24;9:136.
+    pubmed_id: 32308977
+    keyword: paper
+    lang: en
 
   - date: 2020-03-26
     year: 2020
