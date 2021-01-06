@@ -112,8 +112,6 @@ addhead: <script type='text/javascript' src='/assets/js/jquery.trace.js'></scrip
 
 ---
 
-## validator エラーメッセージ
-
 ここでは DDBJ に登録される配列データをチェックするためのツールから出力されるエラーメッセージについて概説しています。  
 エラーメッセージごとに必要な対処方法が異なりますので、適宜、対処をお願いいたします。  
 問題、不明点などがございましたら、エラーメッセージを添えて [ご連絡](/contact-ddbj.html) ください。

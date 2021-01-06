@@ -956,6 +956,7 @@ input, textarea, select, button {
     .tab-menu-view > .tabmenucontainer > li {
       display: inline-block; }
       .tab-menu-view > .tabmenucontainer > li > a {
+        margin-bottom: .1rem;
         top: .1rem;
         text-decoration: none;
         display: block;
@@ -971,6 +972,7 @@ input, textarea, select, button {
         pointer-events: auto;
         transform: translateY(0); }
       .tab-menu-view > .tabmenucontainer > li.-current > a {
+        margin-bottom: 0;
         color: #1C1B19;
         line-height: 3rem;
         background-color: white;

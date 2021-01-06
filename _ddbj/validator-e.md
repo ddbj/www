@@ -111,8 +111,6 @@ related_pages:
     url: /ddbj/mss-form-e.html
 ---
 
-## Validator error message
-
 In this site, error messages outputted from checking tools for nucleotide sequence data submission are briefly explained.  
 If you find any error message, please make some appropriate correction.  
 If you have any problems and/or questions, please [contact us](/contact-ddbj-e.html) with error messages.
