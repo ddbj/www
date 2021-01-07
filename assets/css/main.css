@@ -250,11 +250,12 @@ input, textarea, select, button {
     .internal-link > ul li {
       font-size: 1.4rem;
       list-style: none; }
-      .internal-link > ul li ul {
-        margin-left: 1rem; }
-        .internal-link > ul li ul li {
-          font-size: 1.2rem;
-          list-style: none; }
+      .internal-link > ul li.H3 {
+        padding-left: 1rem;
+        font-size: 1.2rem; }
+      .internal-link > ul li.H4 {
+        padding-left: 2rem;
+        font-size: 1.1rem; }
       .internal-link > ul li a {
         color: #d2cac4;
         text-decoration: none;
