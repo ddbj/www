@@ -754,6 +754,13 @@ input, textarea, select, button {
   .md-content #biosample_attr_area .value {
     word-wrap: break-word;
     width: 15%; }
+  .md-content #rule .rule-level, .md-content .rule-level {
+    margin-left: 5px;
+    font-weight: normal; }
+  .md-content #rule .rule-level.warning, .md-content .rule-level.WAR, .md-content .rule-level.MES {
+    color: #ff880e; }
+  .md-content #rule .rule-level.error, .md-content .rule-level.ER1, .md-content .rule-level.ER2, .md-content .rule-level.FAT {
+    color: #cd2026; }
 
 .multi-column-view {
   border-top: 1px solid #1C1B19; }

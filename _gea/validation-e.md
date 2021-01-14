@@ -50,6 +50,7 @@ tab_menu:
     title: About GEA
     url: /gea/about-gea-e.html
 lang: ja
+addhead: <script type='text/javascript' src='/assets/js/jquery.trace.js'></script>
 ---
 
 This page contains a compilation of the GEA validation errors and
