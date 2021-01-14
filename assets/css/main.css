@@ -761,6 +761,8 @@ input, textarea, select, button {
     color: #ff880e; }
   .md-content #rule .rule-level.error, .md-content .rule-level.ER1, .md-content .rule-level.ER2, .md-content .rule-level.FAT {
     color: #cd2026; }
+  .md-content #main_index.biosample_attr .radio.required {
+    outline: 1px solid #FF0000; }
 
 .multi-column-view {
   border-top: 1px solid #1C1B19; }

@@ -50,7 +50,6 @@ export default function internalLink() {
       }
       if (headings.length === 0) {
         //// 目次生成せず
-        console.log('目次生成せず')
         document.getElementById('NavigationAndMainView').classList.add('-hidetoc');
       } else {
         //// 目次のHTMLを作り、DOM生成
