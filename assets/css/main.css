@@ -1299,6 +1299,9 @@ input, textarea, select, button {
       #NavigationAndMainView > .inner > .mainview > * {
         max-width: calc(128rem - 23rem);
         padding-right: 4.2rem; }
+  #NavigationAndMainView.-hidetoc > .inner > .subview {
+    min-width: 1.6rem;
+    max-width: 1.6rem; }
 
 #PageHeader {
   background-color: white; }
