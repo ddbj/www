@@ -1068,7 +1068,6 @@
   window.addEventListener('load', DDBJ_makeFooter, false);
 
   function DDBJ_languageSwitcher() {
-    console.log(script.dataset.ddbjHomePage)
     if (script.dataset.ddbjHomePage !== 'true') return;
     let href = location.href;
     href = href.indexOf('#') ? href : href.slice(0, href.indexOf('#'));
@@ -1083,6 +1082,7 @@
         } else {
           otherLanguageLink = href + '-e';
         }
+        otherLanguageLink = otherLanguageLink.replace(/\/ja\//, '/en/');
         break;
       default: // en
         if (href.slice(-2) === '-e') {
@@ -1090,6 +1090,7 @@
         } else if (href.slice(-7) === '-e.html') {
           otherLanguageLink = href.slice(0, -7);
         }
+        otherLanguageLink = otherLanguageLink.replace(/\/en\//, '/ja/');
         break;
     }
     fetch(otherLanguageLink)
@@ -1100,7 +1101,6 @@
         return response;
       })
       .then(() => {
-        //document.querySelector('.DDBJ_language').classList.add('-DDBJ_available');
         document.querySelector('.DDBJ_menu.-DDBJ_right').innerHTML += `<li class="DDBJ_language"><a href="${otherLanguageLink}">${language === 'ja' ? 'English' : 'Japanese'}</a></li>`;
       })
       .catch(() => {

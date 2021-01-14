@@ -8,7 +8,7 @@ lang: en
     <nav class="subview">
       <nav class="facet-search">
         <h2 class="title">Tags</h2>
-        <ul class="tags"></ul>
+        <ul class="tags" data-tab="keyword"></ul>
       </nav>
     </nav>
 
@@ -16,21 +16,12 @@ lang: en
       <ul class="tagging-list-view">
         {% assign faqs = site.faq | where: "lang", page.lang | where: "layout", "simple" %}
         {% for faq in faqs %}
-          <li class="tagging-item-view taggingitem">
+          <li class="tagging-item-view taggingitem" data-tags="{{ faq.tags | join: ',' }},{{ faq.db join: ',' }}">
             <div class="upper">
               <h2 class="title">
                 <a href="{{ faq.url }}">{{ faq.title }}</a>
               </h2>
-              <ul class="tags">
-                <li class="date"><time>{{ faq.date | date: "%Y / %m / %d" }}</time></li>
-                {% for tag in faq.tags %}
-                <li class="tag-view" data-tag="{{ tag }}">{{ tag }}</li>
-                {% endfor %}
-                {% assign dbs = faq.db %}
-                {% for db in dbs %}
-                <li class="tag-view" data-tag="{{ db }}">{% if site.data.label_dictionary[db] %}{{ site.data.label_dictionary[db][page.lang] }}{% else %}[{{ db }}]{% endif %}</li>
-                {% endfor %}
-              </ul>
+              {% include tags.html lang=page.lang date=faq.date tags=faq.tags dbs=faq.db %}
             </div>
             <div class="bottom -collapsed">
               <div class="collapsedbutton"></div>

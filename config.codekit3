@@ -6956,6 +6956,14 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/_faq/en/index-e.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_faq/en/index-e.html",
+		"oF": 0
+		},
 	"/_faq/en/index-new-jga.md": {
 		"cB": 0,
 		"cS": 0,
@@ -11946,17 +11954,6 @@
 		"oA": 1,
 		"oAP": "/_javascript/internalLink-min.js",
 		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/_javascript/jquery.trace.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 1,
-		"oAP": "/assets/js/jquery.trace.js",
-		"oF": 3,
 		"sC": 3,
 		"tS": 0
 		},
@@ -50227,6 +50224,14 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"/_news/en/index-e.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_news/en/index-e.html",
+		"oF": 0
 		},
 	"/_news/en/s.html": {
 		"cB": 0,
