@@ -9,11 +9,11 @@ DDBJ センターの過去の発行物は [Google Drive](https://drive.google.co
 
 ## News {#news}
 
-| [1996](news/ja/?year%5B%5D=1996) | [1997](news/ja/?year%5B%5D=1997) | [1998](news/ja/?year%5B%5D=1998) | [1999](news/ja/?year%5B%5D=1999) | [2000](news/ja/?year%5B%5D=2000) |
-| [2001](news/ja/?year%5B%5D=2001) | [2002](news/ja/?year%5B%5D=2002) | [2003](news/ja/?year%5B%5D=2003) | [2004](news/ja/?year%5B%5D=2004) | [2005](news/ja/?year%5B%5D=2005) |
-| [2006](news/ja/?year%5B%5D=2006) | [2007](news/ja/?year%5B%5D=2007) | [2008](news/ja/?year%5B%5D=2008) | [2009](news/ja/?year%5B%5D=2009) | [2010](news/ja/?year%5B%5D=2010) |
-| [2011](news/ja/?year%5B%5D=2011) | [2012](news/ja/?year%5B%5D=2012) | [2013](news/ja/?year%5B%5D=2013) | [2014](news/ja/?year%5B%5D=2014) | [2015](news/ja/?year%5B%5D=2015) |
-| [2016](news/ja/?year%5B%5D=2016) | [2017](news/ja/?year%5B%5D=2017) |                                       |                                       |                                       |
+| [1996](/news/ja/?year%5B%5D=1996) | [1997](/news/ja/?year%5B%5D=1997) | [1998](/news/ja/?year%5B%5D=1998) | [1999](/news/ja/?year%5B%5D=1999) | [2000](/news/ja/?year%5B%5D=2000) |
+| [2001](/news/ja/?year%5B%5D=2001) | [2002](/news/ja/?year%5B%5D=2002) | [2003](/news/ja/?year%5B%5D=2003) | [2004](/news/ja/?year%5B%5D=2004) | [2005](/news/ja/?year%5B%5D=2005) |
+| [2006](/news/ja/?year%5B%5D=2006) | [2007](/news/ja/?year%5B%5D=2007) | [2008](/news/ja/?year%5B%5D=2008) | [2009](/news/ja/?year%5B%5D=2009) | [2010](/news/ja/?year%5B%5D=2010) |
+| [2011](/news/ja/?year%5B%5D=2011) | [2012](/news/ja/?year%5B%5D=2012) | [2013](/news/ja/?year%5B%5D=2013) | [2014](/news/ja/?year%5B%5D=2014) | [2015](/news/ja/?year%5B%5D=2015) |
+| [2016](/news/ja/?year%5B%5D=2016) | [2017](/news/ja/?year%5B%5D=2017) |                                       |                                       |                                       |
 
 ## Web 版 DDBJ Mail Magazine {#mag}
 

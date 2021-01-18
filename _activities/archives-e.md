@@ -9,10 +9,10 @@ All published materials are available at [Google Drive](https://drive.google.com
 
 ## News {#news}
 
-| [1998](news/en/?year%5B%5D=1998) | [1999](news/en/?year%5B%5D=1999) | [2000](news/en/?year%5B%5D=2000) | [2001](news/en/?year%5B%5D=2001) | [2002](news/en/?year%5B%5D=2002) |
-| [2003](news/en/?year%5B%5D=2003) | [2004](news/en/?year%5B%5D=2004) | [2005](news/en/?year%5B%5D=2005) | [2006](news/en/?year%5B%5D=2006) | [2007](news/en/?year%5B%5D=2007) |
-| [2008](news/en/?year%5B%5D=2008) | [2009](news/en/?year%5B%5D=2009) | [2010](news/en/?year%5B%5D=2010) | [2011](news/en/?year%5B%5D=2011) | [2012](news/en/?year%5B%5D=2012) |
-| [2013](news/en/?year%5B%5D=2013) | [2014](news/en/?year%5B%5D=2014) | [2015](news/en/?year%5B%5D=2015) | [2016](news/en/?year%5B%5D=2016) | [2017](news/en/?year%5B%5D=2017) |
+| [1998](/news/en/?year%5B%5D=1998) | [1999](/news/en/?year%5B%5D=1999) | [2000](/news/en/?year%5B%5D=2000) | [2001](/news/en/?year%5B%5D=2001) | [2002](/news/en/?year%5B%5D=2002) |
+| [2003](/news/en/?year%5B%5D=2003) | [2004](/news/en/?year%5B%5D=2004) | [2005](/news/en/?year%5B%5D=2005) | [2006](/news/en/?year%5B%5D=2006) | [2007](/news/en/?year%5B%5D=2007) |
+| [2008](/news/en/?year%5B%5D=2008) | [2009](/news/en/?year%5B%5D=2009) | [2010](/news/en/?year%5B%5D=2010) | [2011](/news/en/?year%5B%5D=2011) | [2012](/news/en/?year%5B%5D=2012) |
+| [2013](/news/en/?year%5B%5D=2013) | [2014](/news/en/?year%5B%5D=2014) | [2015](/news/en/?year%5B%5D=2015) | [2016](/news/en/?year%5B%5D=2016) | [2017](/news/en/?year%5B%5D=2017) |
 
 ## DDBJ Mail Magazine {#mag}
 
