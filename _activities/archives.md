@@ -3,32 +3,19 @@ layout: indexed_content
 title: 発行物アーカイブ
 category: activities
 lang: ja
-related_pages:
-  - title: DDBJ データ解析チャレンジ
-    url: /activities/training/2016-06-27.html
-  - title: DDBJ スタッフの論文 (2009-)
-    url: /activities/
-  - title: DDBJ スタッフの講演発表 (2009-)
-    url: /activities/
-  - title: DDBJ スタッフの出版物 (2009-)
-    url: /activities/
-  - title: DDBJ Annual Report
-    url: /activities/
-  - title: 国際実務者会議報告一覧
-    url: /activities/
 ---
 
 DDBJ センターの過去の発行物は [Google Drive](https://drive.google.com/drive/u/2/folders/1Q9-RtK-maEp7HsYq0i9k-MxOTSldMr7G) から公開しています。
 
-## News <a name="news"></a>
+## News {#news}
 
-| [1996](/news/archive-1996.html) | [1997](/news/archive-1997.html) | [1998](/news/archive-1998.html) | [1999](/news/archive-1999.html) | [2000](/news/archive-2000.html) |
-| [2001](/news/archive-2001.html) | [2002](/news/archive-2002.html) | [2003](/news/archive-2003.html) | [2004](/news/archive-2004.html) | [2005](/news/archive-2005.html) |
-| [2006](/news/archive-2006.html) | [2007](/news/archive-2007.html) | [2008](/news/archive-2008.html) | [2009](/news/archive-2009.html) | [2010](/news/archive-2010.html) |
-| [2011](/news/archive-2011.html) | [2012](/news/archive-2012.html) | [2013](/news/archive-2013.html) | [2014](/news/archive-2014.html) | [2015](/news/archive-2015.html) |
-| [2016](/news/archive-2016.html) |                                       |                                       |                                       |                                       |
+| [1996](news/ja/?year%5B%5D=1996) | [1997](news/ja/?year%5B%5D=1997) | [1998](news/ja/?year%5B%5D=1998) | [1999](news/ja/?year%5B%5D=1999) | [2000](news/ja/?year%5B%5D=2000) |
+| [2001](news/ja/?year%5B%5D=2001) | [2002](news/ja/?year%5B%5D=2002) | [2003](news/ja/?year%5B%5D=2003) | [2004](news/ja/?year%5B%5D=2004) | [2005](news/ja/?year%5B%5D=2005) |
+| [2006](news/ja/?year%5B%5D=2006) | [2007](news/ja/?year%5B%5D=2007) | [2008](news/ja/?year%5B%5D=2008) | [2009](news/ja/?year%5B%5D=2009) | [2010](news/ja/?year%5B%5D=2010) |
+| [2011](news/ja/?year%5B%5D=2011) | [2012](news/ja/?year%5B%5D=2012) | [2013](news/ja/?year%5B%5D=2013) | [2014](news/ja/?year%5B%5D=2014) | [2015](news/ja/?year%5B%5D=2015) |
+| [2016](news/ja/?year%5B%5D=2016) | [2017](news/ja/?year%5B%5D=2017) |                                       |                                       |                                       |
 
-## Web 版 DDBJ Mail Magazine <a name="mag"></a>
+## Web 版 DDBJ Mail Magazine {#mag}
 
 配信期間：2002.05.31-2013.09.03
 
@@ -53,7 +40,7 @@ DDBJ Mail Magazine は、2013年10月より Web 版を廃止しEメール配信�
 | [No.7](https://drive.google.com/file/d/1D05VB_pRkGZVuHDzY8kZOuHxSlRt3pTS) (2003.05.30)  | [No.6](https://drive.google.com/file/d/1ruNLwXbbq_TCboYOXzj6aqiwZMHB9s7v) (2003.04.09)  | [No.5](https://drive.google.com/file/d/1v5PNTE8zBVhPMPqPlhPZC-Ye1PCF8HjG) (2003.01.31)  | [号外](https://drive.google.com/file/d/1hSKQedOjMNllEAkgM3RlkAoKETxsGl0N) (2003.01.08)    | [No.4](https://drive.google.com/file/d/1nBmdm-vTT_VPazq0x7mB6tanO4M9jQ6D) (2002.12.05)  |
 | [No.3](https://drive.google.com/file/d/1BzPhg3ORtRAoRaBmoVNMm3FJSHIh1mJQ) (2002.09.30)  | [No.2](https://drive.google.com/file/d/1WvAG7J_PhawZRcNH7jOfhansUQ2oMrbs) (2002.07.31)  | [No.1](https://drive.google.com/file/d/1782Hd6NEwYADTgMCwtS_B2tlgNgbs_ze) (2002.05.31)  |                                                                                         |                                                                                         |
 
-## DDBJ/CIB Report <a name="ddbjcib"></a>
+## DDBJ/CIB Report {#ddbjcib}
 
 発行期間：1998-2009
 
@@ -62,7 +49,7 @@ DDBJ および生命情報研究センターの活動報告。
 | [March 2009](https://drive.google.com/file/d/1_PylGS_Ekw8j7vxXHIElCjD2Sw-GSHTQ) | [March 2008](https://drive.google.com/file/d/1cEOf5fuf_BpEZ4KxciHtktf22lhweAXa) | [March 2007](https://drive.google.com/file/d/11O1x5ro6FP6Jc5uF-V5WjY-x1VPWqxQ4) | [March 2006](https://drive.google.com/file/d/1RUd6UtgsEgm0zRqcNTntjvARZZKby5Mb) | [March 2005](https://drive.google.com/file/d/1J1TaSzjmVjjKSQv_nrVpBf0OwjCm1GSc) | [March 2004](https://drive.google.com/file/d/1tBmFsA6LGn6gdN_99LRy46MRfkQXlVbl) |
 | [March 2003](https://drive.google.com/file/d/1kDxJw2x7hVZDX6w7djY6XBhx5fgm_nOU) | [March 2002](https://drive.google.com/file/d/1uHkebT1GYufCIRAzVUDrxJvo5_O-LfZW) | [March 2001](https://drive.google.com/file/d/1PFUaYMbmM7WN6K67qzV2gIf4Qq-KMuJn) | [March 2000](https://drive.google.com/file/d/1gUrxSS26VQpBTwmb1DqP2ulpmqnp9W6_) | [March 1999](https://drive.google.com/file/d/1Hjj41AmvAx5dqIzjYNHj1jgYf-wBodzM) | [March 1998](https://drive.google.com/file/d/1td2chHkldkgg3YfzXMyI9_YPe6lwkawa) |
 
-## DDBJ オフラインニュース <a name="offline"></a>
+## DDBJ オフラインニュース {#offline}
 
 発行期間：1992-2002
 
@@ -73,7 +60,7 @@ DDBJ 利用者向けの，DDBJ に関するニュース。
 | [No.7](https://drive.google.com/file/d/1_AXuV_1Oz7Lzej78nns4E9tQi8QOCjfW) (1997.06)  | [No.6](https://drive.google.com/file/d/1OVn42oeDNs02U7xf657sLt7IonFJH4iZ) (1996.11)  | [No.5](https://drive.google.com/file/d/1asigzNh_czF41V4nCyrLCwW0kwjsnro7) (1995.06)  | [No.4](https://drive.google.com/file/d/11R1kXuSF48wn7DMvRNwq5lr1FYB31zv_) (1994.05)  | [No.3](https://drive.google.com/file/d/1Fz5mwxNDKZKWqIBYP9E2MqCYxZxviRwc) (1993.07)  |
 | [No.2](https://drive.google.com/file/d/1QE4LiF1yTJyrELqpn1fxn3th_yX3C32K) (1992.07)  | [No.1](https://drive.google.com/file/d/1M72IGYP60fxCB60fhoGeP9-OCiwFoAT7) (1992.06)  |                                                                                      |                                                                                      |                                                                                      |
 
-## DDBJ News Letter <a name="news"></a>
+## DDBJ News Letter {#news}
 
 発行期間：1985-1997
 
@@ -86,7 +73,7 @@ DDBJ 利用者向けの，DDBJ に関するニュース。
 |  [No.3 [DDBJ DB list]](https://drive.google.com/file/d/17uVqPmj_i8naRZTCvpLSvAVWpY8a4Fkf) (1985.07)  |  [No.3 [GenBank DB list]](https://drive.google.com/file/d/1a9eBvLOagepnhRKnVKGq84nzE4ib690g)  |  [No.3 [EMBL DB list]](https://drive.google.com/file/d/1YDA04EUJI__u4vzXIju_ymlVVT-qQeZc)  |  [No.3 [NBRF DB list]](https://drive.google.com/file/d/1tleuyh0rgqSZ9dvnKYDr8OoAwQsmI4Fg)  |
 |  [No.2](https://drive.google.com/file/d/1_gHDBExgEzi3igdiEY4dE_iLMtorSAyM) (1985.05)  |  [No.1](https://drive.google.com/file/d/1ScRDP-0Z2qnRspCnPsv09BS4_F4o-tNC) (1985.04)  |
 
-## DDBJ 所内 ニュース <a name="syonai"></a>
+## DDBJ 所内 ニュース {#syonai}
 
 発行期間：1991-2001
 
