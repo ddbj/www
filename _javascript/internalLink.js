@@ -11,7 +11,7 @@ export default function internalLink() {
   $(window).on('resize', updateSectionSize).trigger('resize'); // セクションの矩形サイズを更新
   $(window).on('scroll', updateHighlightingOfToc).trigger('scroll'); // 目次のハイライトを更新
   // ハッシュが指定されていたら、そこまでスクロール
-  const hash = (window.location.hash.substr(1));
+  const hash = window.location.hash.substr(1);
   if (hash) {
     const decodedHash = decodeURIComponent(hash);
     const target = itemsOfToc.filter(item => item.target.id === decodedHash);
@@ -27,24 +27,9 @@ export default function internalLink() {
     if (tocContainer) {
       const postContent = document.querySelector('.md-content');
       const headings = postContent.querySelectorAll('h2, h3, h4');
-      const outline = []; // 階層構造を持った見出しのリスト
-      let currentNode = outline;
+      
       for (let i = 0; i < headings.length; i++) {
         const currentHeading = headings[i];
-        //// News Archiveに付与する日付の取得
-        const date = $(headings[i]).next('.news_date').text();
-
-        //// 階層構造を持った見出しのリストの作成
-        switch (currentHeading.tagName) {
-          case 'H2': // 大見出しの場合
-            currentNode = []; // 子の階層を作り、現在操作中の階層にする
-            outline.push({currentHeading: currentHeading, date: date}, currentNode); // 見出しリストに追加
-            break;
-          case 'H3':
-            currentNode.push(currentHeading); // 見出しリストの子の階層に追加
-            break;
-        }
-        
         //// IDの付与
         const namedAnchor = currentHeading.querySelector('a[name]');
         if (namedAnchor) {
@@ -63,8 +48,27 @@ export default function internalLink() {
           anchor.classList.add('link-icon');
         }
       }
-      //// 目次のHTMLを作り、DOM生成
-      tocContainer.innerHTML = '<ul>' + outline.map(item => createItemOfToc(item)).join('').replace(/<li><ul><\/ul><\/li>/g, '').replace(/<\/li><li><ul><\/ul>/g, '<ul>') + '</ul>';
+      if (headings.length === 0) {
+        //// 目次生成せず
+        document.getElementById('NavigationAndMainView').classList.add('-hidetoc');
+      } else {
+        //// 目次のHTMLを作り、DOM生成
+        tocContainer.innerHTML = `
+        <ul>
+          ${[...headings].map(heading => {
+            const date = $(heading).next('.news_date');
+            return `
+            <li class="${heading.tagName}">
+              <a href="#${heading.id}" data-target="${heading.id}">
+                ${heading.textContent}
+                ${date.length ? `<span class="nav_date">${date.text()}</span>` : ''}
+              </a>
+            </li>
+            `;
+          }).join('')}
+        </ul>
+        `;
+      }
     }
     //// 目次管理用の配列作成
     $('a', tocContainer).each((index, item) => {
@@ -74,15 +78,6 @@ export default function internalLink() {
         rect: { y: undefined, height: undefined } // 対象の矩形情報（後で生成）
       })
     });
-  }
-  // 目次の各項目の生成（再帰処理をしてる）
-  function createItemOfToc(item) {
-    switch (true) {
-      case item.currentHeading !== undefined && item.currentHeading.nodeName !== undefined: // タグの場合、<LI>を追加
-        return '<li><a href="#' + item.currentHeading.id + '" data-target="' + item.currentHeading.id + '">' + item.currentHeading.textContent + '<span class="nav_date">' + item.date + '</span></a></li>';
-      case item.currentHeading !== undefined && item.currentHeading.length !== undefined: // 配列の場合、<UL>を追加し、中身を再帰処理で生成
-        return '<li><ul>' + item.currentHeading.map(subitem => createItemOfToc(subitem)).join('') + '</ul></li>';
-    }
   }
 
   // セクションの矩形サイズを更新

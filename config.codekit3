@@ -6956,6 +6956,14 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/_faq/en/index-e.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_faq/en/index-e.html",
+		"oF": 0
+		},
 	"/_faq/en/index-new-jga.md": {
 		"cB": 0,
 		"cS": 0,
@@ -11946,28 +11954,6 @@
 		"oA": 1,
 		"oAP": "/_javascript/internalLink-min.js",
 		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/_javascript/jquery.charts.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "/assets/js/jquery.charts.js",
-		"oF": 2,
-		"sC": 3,
-		"tS": 0
-		},
-	"/_javascript/jquery.trace.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "/assets/js/jquery.trace.js",
-		"oF": 2,
 		"sC": 3,
 		"tS": 0
 		},
@@ -50238,6 +50224,14 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"/_news/en/index-e.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_news/en/index-e.html",
+		"oF": 0
 		},
 	"/_news/en/s.html": {
 		"cB": 0,
@@ -93593,7 +93587,7 @@
 		"oA": 0,
 		"oAP": "/assets/css/common_framework.css",
 		"oF": 3,
-		"oS": 0,
+		"oS": 3,
 		"sct": 0
 		},
 	"/_sass/foundation/_base.sass": {
@@ -109064,8 +109058,30 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/assets/js/jquery.charts-min.js",
+		"oF": 3,
+		"sC": 3,
+		"tS": 0
+		},
+	"/assets/js/jquery.json_search.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/assets/js/jquery.json_search-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
+	"/assets/js/jquery.trace.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/assets/js/jquery.trace-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -109245,14 +109261,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/blog.html",
-		"oF": 0
-		},
-	"/CNAME": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/CNAME",
 		"oF": 0
 		},
 	"/contact-ddbj-e.md": {
