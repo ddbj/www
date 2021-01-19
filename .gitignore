@@ -7,6 +7,7 @@ Gemfile
 Gemfile.lock
 node_modules
 package.json
+robots.txt
 
 # Jekyll stuff
 /_site/
