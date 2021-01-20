@@ -17,7 +17,6 @@ items:
     provider: DDBJ
     tags:
       - search
-      - sequence
 
   - name: ARSA
     formal_name: All-round Retrieval of Sequence and Annotation
@@ -37,7 +36,6 @@ items:
     provider: DDBJ
     tags:
       - search
-      - sequence
 
   - name: DRA Search
     formal_name: DRA Search
@@ -53,7 +51,6 @@ items:
     provider: DDBJ
     tags:
       - search
-      - sequence
 
   - name: TXSearch
     formal_name: Taxonomy Search
@@ -72,7 +69,6 @@ items:
     provider: DDBJ
     tags:
       - search
-      - taxonomy
 
   - name: BLAST
     formal_name: Basic Local Alignment Search Tool
@@ -93,7 +89,6 @@ items:
     tags:
       - search
       - analysis
-      - sequence
 
   - name: DFAST
     formal_name: DDBJ Fast Annotation and Submission Tool
@@ -113,8 +108,7 @@ items:
     tags:
       - analysis
       - submission
-      - prokaryotic
-      - genome
+      - annotation
 
   - name: Maser
     formal_name: Management and Analysis System for Enormous Reads
@@ -133,8 +127,6 @@ items:
     provider: DDBJ
     tags:
       - analysis
-      - sequence
-      - ngs
 
   - name: VecScreen
     formal_name: VecScreen
@@ -154,7 +146,6 @@ items:
     provider: DDBJ
     tags:
       - analysis
-      - sequence
 
   - name: ClustalW
     formal_name: ClustalW
@@ -187,7 +178,6 @@ items:
     provider: DDBJ
     tags:
       - analysis
-      - sequence
 
   - name: WABI
     formal_name: Web API for Biology
@@ -219,7 +209,6 @@ items:
     provider: DBCLS
     tags:
       - search
-      - gene_expression
 
   - name: CRISPRdirect
     formal_name: CRISPRdirect
@@ -247,7 +236,6 @@ items:
       ja: 生シークエンスデータとアライメント情報
     tags:
       - search
-      - sequence
 
   - name: Gendoo
     formal_name: Gendoo
@@ -260,8 +248,6 @@ items:
     provider: DBCLS
     tags:
       - search
-      - genome
-      - disease
 
   - name: GGGenome
     formal_name: GGGenome
@@ -277,7 +263,6 @@ items:
       ja: ゲノム
     tags:
       - search
-      - genome
 
   - name: GGRNA
     formal_name: GGRNA
@@ -293,7 +278,6 @@ items:
       ja: 遺伝子
     tags:
       - search
-      - genome
 
   - name: RefEx
     formal_name: RefEx
@@ -309,7 +293,6 @@ items:
       ja: 遺伝子発現データ
     tags:
       - search
-      - gene_expression
 
   - name: DDBJ
     formal_name: DNA DataBank of Japan
@@ -325,8 +308,7 @@ items:
       ja: アノテーション/アセンブルされた塩基配列
     tags:
       - database
-      - insdc
-      - sequence
+      - submission
 
   - name: NSSS
     formal_name: DDBJ Nucleotide Sequence Submission System
@@ -342,7 +324,6 @@ items:
       ja: アノテーション/アセンブルされた塩基配列
     tags:
       - submission
-      - sequence
 
   - name: MSS
     formal_name: Mass Submission System
@@ -358,7 +339,6 @@ items:
       ja: アノテーション/アセンブルされた塩基配列
     tags:
       - submission
-      - sequence
 
   - name: DRA
     formal_name: DDBJ Sequence Read Archive
@@ -374,9 +354,7 @@ items:
       ja: 生シークエンスデータとアライメント情報
     tags:
       - database
-      - search
-      - insdc
-      - sequence
+      - submission
 
   - name: GEA
     formal_name: Genomic Expression Archive
@@ -393,7 +371,6 @@ items:
     tags:
       - database
       - submission
-      - genome
 
   - name: BioProject
     formal_name: Biological data related to a single project.
@@ -409,10 +386,7 @@ items:
       ja: プロジェクトに関連する生物学的データ
     tags:
       - database
-      - search
       - submission
-      - insdc
-      - biological_data
 
   - name: BioSample
     formal_name: Biological source materials used in experimental assays
@@ -428,10 +402,7 @@ items:
       ja: 実験で使われた生物学的サンプル
     tags:
       - database
-      - search
       - submission
-      - insdc
-      - biological_data
 
   - name: JGA
     formal_name: Japanese Genotype-phenotype Archive
@@ -447,10 +418,7 @@ items:
       ja: ヒトの遺伝型と表現型
     tags:
       - database
-      - search
       - submission
-      - genotype
-      - phenotype
 
   - name: AGD
     formal_name: AMED Genome group sharing Database
@@ -466,9 +434,6 @@ items:
       ja: ヒトの遺伝型と表現型
     tags:
       - database
-      - submission
-      - genotype
-      - phenotype
 
   - name: TogoVar
     formal_name: TogoVar
@@ -483,7 +448,7 @@ items:
       en: Human variants
       ja: ヒトバリアント
     tags:
-      - variant
+      - search
 
   - name: NHA
     formal_name: NBDC Human Data Archive
@@ -499,8 +464,6 @@ items:
       ja: ヒトの遺伝型と表現型
     tags:
       - database
-      - genotype
-      - phenotype
 
   - name: TogoAnnotator
     formal_name: TogoAnnotator
@@ -515,39 +478,23 @@ items:
       en: Gene product name
       ja: 遺伝子産物名
     tags:
-      - database
-      - gene_product
+      - search
 
-  - name: JVar-SNP
-    formal_name: Japan Variation Database for Short Genetic Variation
+  - name: JVar
+    formal_name: Japan Variation Database
     service_link:
-      en: /jvar-snp/index-e.html
-      ja: /jvar-snp/index.html
+      en: /jvar/index-e.html
+      ja: /jvar/index.html
     description:
-      en: JVar-SNP archives human single nucleotide variations, microsatellites, and small-scale insertions and deletions along with population frequency.
-      ja: JVar-SNP はヒトの一塩基置換, マイクロサテライト, 短い挿入と欠失を頻度と共にアーカイブしています
+      en: JVar archives human genome variations.
+      ja: ヒトゲノムバリアントのためのアーカイブ
     provider: DDBJ
     target_data:
-      en: Human short genetic variation
-      ja: ヒトの短いバリアント
+      en: Human genomic variants
+      ja: ヒトゲノムバリアント
     tags:
       - database
-      - variant
-
-  - name: JVar-SV
-    formal_name: Japan Variation Database for Structural Variation
-    service_link:
-      en: /jvar-sv/index-e.html
-      ja: /jvar-sv/index.html
-    description:
-      en: JVar-SV is database of human genomic structural variation, variants larger than 50 bp including insertions, deletions, duplications, inversions, mobile elements, translocations, and complex variants.
-      ja: JVar-SV は 50bp より長いヒトの挿入、欠失、重複、逆位、転座といった構造バリアントのためのデータベースです
-    provider: DDBJ
-    target_data:
-      en: Human structural variation
-      ja: ヒトの構造バリアント
-    tags:
-      - variant
+      - submission
 
   - name: DDBJ-LD
     formal_name: DDBJ-LD
@@ -567,51 +514,15 @@ dictionary:
   analysis:
     en: Analysis
     ja: 解析
-  biological_data:
-    en: Biological data
-    ja: 生物学的データ
+  annotation:
+    en: Annotation
+    ja: アノテーション
   database:
     en: Database
     ja: データベース
-  disease:
-    en: Disease
-    ja: 疾患
-  gene_expression:
-    en: Gene expression
-    ja: 遺伝子発現
-  gene_product:
-    en: Gene product
-    ja: 遺伝子産物名
-  genome:
-    en: Genome
-    ja: ゲノム
-  genotype:
-    en: Genotype
-    ja: 遺伝型
-  insdc:
-    en: INSDC
-    ja: INSDC
-  ngs:
-    en: NGS
-    ja: NGS
-  phenotype:
-    en: Phenotype
-    ja: 表現型
-  prokaryotic:
-    en: Prokaryotic
-    ja: 原核生物
   search:
     en: Search
     ja: 検索
-  sequence:
-    en: Sequence
-    ja: 塩基配列
   submission:
     en: Submission
     ja: 登録
-  taxonomy:
-    en: Taxonomy
-    ja: 生物分類
-  variant:
-    en: Variant
-    ja: 遺伝子多型
