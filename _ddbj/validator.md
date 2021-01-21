@@ -88,7 +88,7 @@ tab_menu:
     url: /faq/ja/index.html?keyword%5B%5D=ddbj
   - id: other
     title: Other
-    url: /ddbj/index-e.html
+    url: /ddbj/index.html
     children:
       - title: Patent
         url: /ddbj/patent-data.html
