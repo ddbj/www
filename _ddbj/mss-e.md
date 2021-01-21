@@ -126,26 +126,25 @@ subjects](/policies-e.html#human)".
 
 ## What is MSS?  {#outline}
 
-{::options parse_block_html="true" /}
-<div class="attention">
+<div class="attention" markdown="1">
 
 Mass Submission System (MSS) is the service to accept relatively large
 scale nucleotide sequence data (not reads) through sending text files.  
 We at DDBJ recommend using MSS when:
 
-  - the submission is not applicable for Nucleotide Sequence Submission
-    System (NSSS)  
-    → [EST](/ddbj/est-e.html), STS, [TSA](/ddbj/tsa-e.html),
-    [HTC](/ddbj/htc-e.html), [GSS](/ddbj/gss-e.html),
-    [HTG](/ddbj/htg-e.html), [WGS](/ddbj/wgs-e.html),
-    [CON](/ddbj/con-e.html), [TLS](/ddbj/tls-e.html)
-  - the submission with long sequences.  
-    → greater than 500 kb in its length
-  - the complex submission containing many features  
-    → more than 30 features
-  - the submission consists of large number of sequences.  
-    → When number of sequences is greater than 1024, you have to submit
-    two or more times via NSSS
+- the submission is not applicable for Nucleotide Sequence Submission
+  System (NSSS)  
+  → [EST](/ddbj/est-e.html), STS, [TSA](/ddbj/tsa-e.html),
+  [HTC](/ddbj/htc-e.html), [GSS](/ddbj/gss-e.html),
+  [HTG](/ddbj/htg-e.html), [WGS](/ddbj/wgs-e.html),
+  [CON](/ddbj/con-e.html), [TLS](/ddbj/tls-e.html)
+- the submission with long sequences.  
+  → greater than 500 kb in its length
+- the complex submission containing many features  
+  → more than 30 features
+- the submission consists of large number of sequences.  
+  → When number of sequences is greater than 1024, you have to submit
+  two or more times via NSSS
 
 </div>
 
@@ -158,7 +157,7 @@ Please confirm [Categories for Sequence Data](/documents/data-categories-e.html)
 
 ## The Flow of MSS  {#flow}
 
-![]({{ site.baseurl }}/assets/images/ddbj/MSS-flow_20200916-en.png "The Flow of MSS")
+![](/assets/images/ddbj/MSS-flow_20200916-en.png "The Flow of MSS")
 
 ### 1. Application  {#flow-1}
 
@@ -212,8 +211,7 @@ sequence file.
 : Details : [Submission file format： AGP
 file](/ddbj/file-format-e.html#agp).
 
-{::options parse_block_html="true" /}
-<div class="attention">
+<div class="attention" markdown="1">
 
 When you like to submit [TSA](/ddbj/tsa-e.html), complete genome, draft
 genome ([WGS](/ddbj/wgs-e.html) or [HTG](/ddbj/htg-e.html)), please
@@ -250,29 +248,27 @@ translation.
 : OS : Unix
 : Details : [transChecker User's Manual](/ddbj/transchecker-e.html)
 
-{::options parse_block_html="true" /}
-<div class="attention">
+<div class="attention" markdown="1">
 
-Download => [Validation tools for MSS data
-files](/ddbj/mss-tool-e.html)
+Download => [Validation tools for MSS data files](/ddbj/mss-tool-e.html)
 
 </div>
 
-  - Validation tools for data files do not have any function to make
-    files for your submission. So, please make your submission files by
-    using text editor, spreadsheet software, or some application in your
-    PC, appropriately.
-  - Syntax errors due to using undefined characters, contamination of
-    control codes, and so on would cause a major obstacle during
-    processing submitted data, which may result in significant delay of
-    issuing accession numbers.
-  - When you have to describe protein coding sequences for annotation of
-    your sequence, the annotation file containing [CDS
-    feature(s)](/ddbj/cds-e.html) as [Biological
-    feature](/ddbj/file-format-e.html#biological_feature) should be
-    checked with UME or transChecker tool before submitting to DDBJ.
-  - Before installing Validation tools for data files, see [End-user
-    license agreement](/ddbj/mss-tool-e.html#license).
+- Validation tools for data files do not have any function to make
+  files for your submission. So, please make your submission files by
+  using text editor, spreadsheet software, or some application in your
+  PC, appropriately.
+- Syntax errors due to using undefined characters, contamination of
+  control codes, and so on would cause a major obstacle during
+  processing submitted data, which may result in significant delay of
+  issuing accession numbers.
+- When you have to describe protein coding sequences for annotation of
+  your sequence, the annotation file containing [CDS
+  feature(s)](/ddbj/cds-e.html) as [Biological
+  feature](/ddbj/file-format-e.html#biological_feature) should be
+  checked with UME or transChecker tool before submitting to DDBJ.
+- Before installing Validation tools for data files, see [End-user
+  license agreement](/ddbj/mss-tool-e.html#license).
 
 ### 3. Review the submission files {#flow-3}
 
