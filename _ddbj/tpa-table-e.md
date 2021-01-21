@@ -102,7 +102,7 @@ The original site; [TPA Submission Guidelines](http://www.insdc.org/documents/tp
 
 Third PArty data (TPA) are submitted to the International Nucleotide Sequence Databases as part of the process of publishing biological studies that include the assembly and/or annotation of existing INSDC reads and primary sequences. Publicly accessible TPA data are therefore linked to a publication or publications that document the derivation of the data supported by peer-reviewed scientific evidence.
 
-## TPA subcategories <a name="subcategories"></a>
+## TPA subcategories  {#subcategories}
 
 All TPA records belong to one of these classes:
 **TPA:experimental**,
@@ -126,7 +126,7 @@ TPA records are clearly labeled with keywords indicating their TPA status and th
 **TPA:assembly**) are permitted to include only annotation relating to genes of known function (as opposed to hypothetical proteins, for example). Submissions containing neither assembly information nor annotation that has resulted from peer-reviewed *in vivo*, *in vitro* or *in silico* experimentation are not accepted in
 TPA. The outputs of computational tools, feature identification algorithms, and homology search tools alone are not sufficient for TPA.
 
-## Acceptable records for TPA <a name="table"></a>
+## Acceptable records for TPA  {#table}
 
 Below is a list of typical TPA entry types and the class to which they belong. Please note that this list is neither exhaustive (there may be further entry types that would be acceptable) nor defining of the complete set of requirements (other constraints will be applied that are documented outside this list)
 
@@ -155,7 +155,7 @@ Below is a list of typical TPA entry types and the class to which they belong. P
 | 21 | **Assembly** | A record or set of records representing a novel assembly or reassembly of primary read and sequence data that exist in INSDC, for which no functional annotation data are presented, but for which the assembly has been assessed in the peer review process associated with the linked publication. |
 | 22 | **Assembly** | A record or set of records representing a novel assembly or reassembly, with functional annotation, of primary read and sequence data that exist in INSDC, for which the assembly but not the functional annotation has been assessed in the peer review process associated with the linked publication. |
 
-## Unacceptable records for TPA <a name="nottpa"></a>
+## Unacceptable records for TPA  {#nottpa}
 
 Please note that this list is not exhaustive.
 

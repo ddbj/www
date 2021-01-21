@@ -24,7 +24,7 @@ related_pages:
     url: /services/wabi-blast-e.html
 ---
 
-## About getentry <a name="About_getentry"></a>
+## About getentry  {#About_getentry}
 
   - getentry is the DDBJ flat file search system, by accession numbers.
   - getentry is, as well as a simple web form, available by WebAPI
@@ -37,12 +37,12 @@ related_pages:
     Search](http://ddbj.nig.ac.jp/DRASearch)
 
 
-## Search from Web Browser <a name="Search_from_Web_Browser"></a>
+## Search from Web Browser  {#Search_from_Web_Browser}
 
 URL : <http://getentry.ddbj.nig.ac.jp/top-e.html>
 
 
-### Default value <a name="Default_value"></a>
+### Default value  {#Default_value}
 
 <table>
   <tbody>
@@ -70,7 +70,7 @@ URL : <http://getentry.ddbj.nig.ac.jp/top-e.html>
 </table>
 
 
-### ID <a name="ID_"></a>
+### ID  {#ID_}
 
 Input the Accession Number(s). Multiple number search, range search, and
 version seach are available.
@@ -116,12 +116,12 @@ version seach are available.
   </tbody>
 </table>
 
-### Database and Output format <a name="Database_and_Output_format"></a>
+### Database and Output format  {#Database_and_Output_format}
 
 Select the database. The output format should be selected from either
 "database specific format" or FASTA.
 
-#### DNA database <a name="DNA_database"></a>
+#### DNA database  {#DNA_database}
 
 Database
 
@@ -189,7 +189,7 @@ These 5 format types are selectable only after specification of
 When the MGA is selected as the target database, only "flatfile" can be
 specified.
 
-#### Protein database <a name="Protein_database"></a>
+#### Protein database  {#Protein_database}
 
 
 Database
@@ -218,7 +218,7 @@ Database
 Please refrer [Latest Release Information](/latest-releases-e.html), for
 the current status of searchable databases and related information.
 
-#### Output Format <a name="Output_Format"></a>
+#### Output Format  {#Output_Format}
 
 <table>
   <tbody>
@@ -250,7 +250,7 @@ Output format of Protein database search differs depending on the
 selected target databases.
 
 
-### Filetype of the Result <a name="Filetype_of_the_Result"></a>
+### Filetype of the Result  {#Filetype_of_the_Result}
 
 <table>
   <tbody>
@@ -287,7 +287,7 @@ follows.
 | [Protein]cds      | cds_aa.txt.gz   |
 
 
-### Limit（upper limit of the data acquisition） <a name="Limit（upper_limit_of_the_data_acquisition）"></a>
+### Limit（upper limit of the data acquisition）  {#Limit（upper_limit_of_the_data_acquisition）}
 
 | default            | 10 entries                  |
 | specify the number | specified number of entries |
@@ -295,13 +295,13 @@ follows.
 
 
 
-## Search by WebAPI <a name="ge_program"></a>
+## Search by WebAPI  {#ge_program}
 
 getentry is available from WebAPI program, as well as a simple web form,
 which calls up the data directly.
 
 
-### Program <a name="Program"></a>
+### Program  {#Program}
 
 WebAPI of getentry consists of two following programs.
 
@@ -321,7 +321,7 @@ WebAPI of getentry consists of two following programs.
 </table>
 
 
-### How to Specify the Parameter <a name="How_to_Specify_the_Parameter"></a>
+### How to Specify the Parameter  {#How_to_Specify_the_Parameter}
 
 There are the following 2 methods.
 
@@ -338,9 +338,9 @@ example
     <http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001>
 
 
-### Specifiable Parameters in getentry <a name="parameter"></a>
+### Specifiable Parameters in getentry  {#parameter}
 
-#### accession 番号<span class="red">(mandatory)</span>：Specify the accession number. <a name="ge_accession"></a>
+#### accession 番号<span class="red">(mandatory)</span>：Specify the accession number.  {#ge_accession}
 
 <table>
   <tbody>
@@ -412,7 +412,7 @@ example (upper:Get method / lower: smart URL)
     <http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB669632.1-AB6696356.1>  
     <http://getentry.ddbj.nig.ac.jp/getentry/na/AB669632.1-AB6696356.1>
 
-#### database<span class="red">(optional)</span>：Specify the database for searching. <a name="ge_db"></a>
+#### database<span class="red">(optional)</span>：Specify the database for searching.  {#ge_db}
 
 <table>
   <tbody>
@@ -511,7 +511,7 @@ URL)
     <http://getentry.ddbj.nig.ac.jp/getentry?database=uniprot&accession_number=P06213>  
     <http://getentry.ddbj.nig.ac.jp/getentry/uniprot/P06213>
 
-#### revision<span class="red">(optional)</span>： Search the revised entry at the specified time. <a name="ge_revision"></a>
+#### revision<span class="red">(optional)</span>： Search the revised entry at the specified time.  {#ge_revision}
 
 <table>
   <tbody>
@@ -542,7 +542,7 @@ URL)
     <http://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=AB479935>  
     <http://getentry.ddbj.nig.ac.jp/gethistory/na/AB479935>
 
-#### format<span class="red">(optional)</span> <a name="ge_format"></a>
+#### format<span class="red">(optional)</span>  {#ge_format}
 
 <table>
   <tbody>
@@ -825,7 +825,7 @@ CGCGAATTCGCG
       
 ```
 
-#### filetype<span class="red">(optional)</span>：Specify the filetype for the result <a name="ge_filetype"></a>
+#### filetype<span class="red">(optional)</span>：Specify the filetype for the result  {#ge_filetype}
 
 
 <table>
@@ -904,7 +904,7 @@ COMMENT     OS   Homo sapiens
             PD   28-Sep-2006
 ```
 
-#### show_suppressed<span class="red">(optional)</span>：To display the suppressed data. <a name="ge_show_suppressed"></a>
+#### show_suppressed<span class="red">(optional)</span>：To display the suppressed data.  {#ge_show_suppressed}
 
 
 <table>
@@ -928,7 +928,7 @@ URL)
     <http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=HE602933&show_suppressed=true>  
     <http://getentry.ddbj.nig.ac.jp/getentry/na/HE602933?show_suppressed=true>
 
-#### limit<span class="red">(optional)</span>： Sets an upper limit of the data acquisition <a name="ge_limit"></a>
+#### limit<span class="red">(optional)</span>： Sets an upper limit of the data acquisition  {#ge_limit}
 
 <table>
   <tbody>
@@ -957,7 +957,7 @@ URL)
     [http://getentry.ddbj.nig.ac.jp/getentry/na/FY736910 -
     FY762881?limit=0](http://getentry.ddbj.nig.ac.jp/getentry/na/FY736910%20-%20FY762881?limit=0)
 
-#### trace<span class="red">(optional)</span>：When Secondary Accession numberis specified, the result transfers to that of Primary Accession number <a name="ge_trace"></a>
+#### trace<span class="red">(optional)</span>：When Secondary Accession numberis specified, the result transfers to that of Primary Accession number  {#ge_trace}
 
 <table>
   <tbody>
@@ -981,9 +981,9 @@ URL)
 
 
 
-### pecifiable parameters in gethistory <a name="gethistory"></a>
+### pecifiable parameters in gethistory  {#gethistory}
 
-#### accession number<a name="gh_accession"></a><span class="red">(mandatory)</span>：Specify the accession number for searching.Specification method is the same as [getentry](#ge_accession)
+#### accession number {#gh_accession}<span class="red">(mandatory)</span>：Specify the accession number for searching.Specification method is the same as [getentry](#ge_accession)
 
 <div class="attention">
 History of the amino acid sequence derived from the Patent Office is not
@@ -1011,7 +1011,7 @@ AB628096
       
 ```
 
-#### database<span class="red">(optional)</span>：Specify the database for searching. <a name="gh_db"></a>
+#### database<span class="red">(optional)</span>：Specify the database for searching.  {#gh_db}
 
 <table>
   <tbody>
@@ -1052,7 +1052,7 @@ BAET01000001   BAET01000001
       
 ```
 
-#### filetype<span class="red">(optional)</span>：Specify the filetype for the result. <a name="gh_filetype"></a>
+#### filetype<span class="red">(optional)</span>：Specify the filetype for the result.  {#gh_filetype}
 
 
 <table>
@@ -1103,9 +1103,9 @@ AB628096      | 1               | [2015-05-29 18:00:00 release](http://getentry.
  |  | [2011-05-27 12:38:45 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-05-27+12%3A38%3A45+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2011-05-27 12:38:45 release | live       |
  |  | [2011-05-11 23:09:49](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-05-11+23%3A09%3A49/?format=flatfile&filetype=text&trace=false&show_suppressed=true)                 | 2011-05-11 23:09:49         | live  |
 
-## How to Create Links to DDBJ Entries <a name="ge_createlinks"></a>
+## How to Create Links to DDBJ Entries  {#ge_createlinks}
 
-### You can create links to individual DDBJ entries. <a name="You_can_create_links_to_individual_DDBJ_entries."></a>
+### You can create links to individual DDBJ entries.  {#You_can_create_links_to_individual_DDBJ_entries.}
 
 http://getentry.ddbj.nig.ac.jp/getentry?database=database
 name&accession_number=accession number&additional parameters

@@ -155,7 +155,7 @@ The sequence alignment rules between TSA and primary entries
     1. the allowable percent of bases that are 'n' should be less than 5% and
     2. a TSA entry can have a stretch of no more than 5 n' s in a row
 
-## Sample flat file <a name="flat-file"></a>
+## Sample flat file  {#flat-file}
 
 Aspects of TSA
 

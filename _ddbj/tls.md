@@ -146,7 +146,7 @@ TLS 登録における注意事項
     に登録されていることが推奨されます。
   - 登録前に low quality reads, chimeric sequences の除去を行っておいてください。
 
-## DDBJ フォーマットの例 <a name="flat-file"></a>
+## DDBJ フォーマットの例  {#flat-file}
 
 TLS エントリの特徴
 

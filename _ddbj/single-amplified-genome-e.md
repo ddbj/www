@@ -101,9 +101,9 @@ lang: en
 Single amplified genome (SAG) data are produced through processes of single-cell isolation, cell lysis, whole genome amplification and
 sequencing. Because most cells contain a single or very few genome copies, introducing even trace amounts of contaminant DNA can severely affect SAG data quality. This page describes the guideline for SAG data submission to distinguish SAG from other genomes.
 
-## Single cell <a name="single-cell"></a>
+## Single cell  {#single-cell}
 
-### DDBJ <a name="multi-ddbj"></a> 
+### DDBJ  {#multi-ddbj} 
 
 source feature
 
@@ -116,7 +116,7 @@ source feature
     single-cell genome amplified by MDA (multiple displacement
     amplification)".
 
-### BioSample <a name="multi-biosample"></a>
+### BioSample  {#multi-biosample}
 
 Package and attributes
 
@@ -140,9 +140,9 @@ Package and attributes
     - [geo_loc_name](/biosample/attribute-e.html?all=all#geo_loc_name)
     - [lat_lon](/biosample/attribute-e.html?all=all#lat_lon)    
 
-## Multiple cells <a name="multi-cells"></a>
+## Multiple cells  {#multi-cells}
 
-### DDBJ <a name="multi-ddbj"></a>
+### DDBJ  {#multi-ddbj}
 
 source feature
 
@@ -155,7 +155,7 @@ source feature
     genomes".
   - Describe isolation source in /isolation\_source.
 
-### BioSample <a name="single-biosample"></a> 
+### BioSample  {#single-biosample} 
 
 Package and attributes
 
@@ -175,7 +175,7 @@ Package and attributes
     - [isolate](/biosample/attribute-e.html?all=all#isolate)
     - [isolation\_source](/biosample/attribute-e.html?all=all#isolation_source).
 
-## Real-world examples <a name="real-examples"></a>
+## Real-world examples  {#real-examples}
 
   - BioProject:
     [PRJDB8357](https://www.ncbi.nlm.nih.gov/bioproject/632761)

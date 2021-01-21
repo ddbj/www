@@ -145,7 +145,7 @@ EST 登録における注意事項
   - EST assemble に相当する配列は [TSA: Transcriptome Shotgun
     Assembly](/ddbj/tsa.html) として登録を受け付けます。
 
-## DDBJ フォーマットの例 <a name="flat-file"></a>
+## DDBJ フォーマットの例  {#flat-file}
 
 EST エントリの特徴
 

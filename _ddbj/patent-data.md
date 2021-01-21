@@ -103,7 +103,7 @@ DDBJ センターでは、特許出願に含まれる配列データを検索・
 ただし、配列データの使用により、如何なる問題が生じても、DDBJ では一切の責任を負いません。  
 [サイトポリシーと免責事項]({{ site.baseurl }}/policies.html)をご参照ください。
 
-## 塩基配列データ <a name="nt"></a>
+## 塩基配列データ  {#nt}
 
 [日本国特許庁](//www.jpo.go.jp/index.html) (JPO) と [韓国特許庁](//www.kipo.go.kr/) (KIPO) が収集・処理した特許出願に含まれる塩基配列データは DDBJ を経由して [INSD]({{ site.baseurl }}/about/insdc.html#insd) に取り込まれて公開されています。  
 同様に、[欧州特許庁](//www.epo.org/index.html) (EPO)、 [米国特許商標庁](https://www.uspto.gov/) (USPTO) が受理し公開可能となった配列データも、それぞれ EMBL-Bank/ENA, GenBank を経由し、[INSD]({{ site.baseurl }}/about/insdc.html#insd) に取り込まれております。   
@@ -125,7 +125,7 @@ DDBJ おいて、特許出願に含まれる塩基配列データ (注: JPO, KIP
 [BLAST](http://blast.ddbj.nig.ac.jp/blastn?lang=ja)  
 : [DDBJ ALL (DDBJ periodical release + daily updates)] を選択し、[Other divisions] の [Patent] を選択。
 
-## アミノ酸配列 <a name="aa"></a>
+## アミノ酸配列  {#aa}
 
 JPO と KIPO が収集・処理した特許出願に含まれるアミノ酸配列データは DDBJ センターから公開されています。  
 同様に、EPO, USPTO が収集したアミノ酸配列データは、それぞれ EBI, NCBI から公開されています。

@@ -29,9 +29,9 @@ tab_menu:
 lang: en
 ---
 
-## Overview <a name="overview"></a>
+## Overview  {#overview}
 
-### Purpose <a name="purpose"></a>
+### Purpose  {#purpose}
 
 New sequencing technologies have significantly increased the volume of data that can be generated. Coupled with this, research is increasingly collaborative and data resulting from collaboration can include distinct types of data which may be submitted by more than one research group to more than one archival database.
 
@@ -42,7 +42,7 @@ The BioProject resource organizes both the projects and the data from those proj
 databases" class="w450" %}
 {:/}
 
-### Project <a name="project"></a>
+### Project  {#project}
 
 The definition of a set of related data, a 'project' is very flexible and supports the need to define a complex project and various distinct sub-projects using different parameters.
 
@@ -59,7 +59,7 @@ For example, BioProject records can be established for:
 
 BioProject represents a submission, initiative, or group of data that is logically related in some manner, or is of interest to retrieve as a distinct dataset. A project may be identified in terms of distinctions in the type of data produced.
 
-### Complex project <a name="complex-project"></a>
+### Complex project  {#complex-project}
 
 By selecting [Project Data Types](#Project_data_type)(for example, "Genome Sequencing" and "Transcriptome or Gene Expression"), multiple studies can be merged into single project.
 
@@ -69,7 +69,7 @@ In the [Sample scope](#BioProject_Sample_scope), [Material](#Material)and [Captu
 
 A series of publications can be listed in the [Publication](#Publication).
 
-### Primary and Umbrella projects<a name="primary-and-umbrella"></a>
+### Primary and Umbrella projects {#primary-and-umbrella}
 
 There are two basic types of projects; primary and umbrella projects.
 
@@ -88,7 +88,7 @@ Umbrella project:
 
   </div>
 
-### BioProject hierarchy <a name="bioproject-hierarchy"></a>
+### BioProject hierarchy  {#bioproject-hierarchy}
 
 Definition of an umbrella project may be done in collaboration with a funding source. For example, there may be a top-most administrative project to represent the overarching initiative ("Genome Support Project"), with a secondary layer of primary projects defining core components of this initiative (reference genomes, rRNA sequencing, metagenomes, etc.).
 
@@ -104,7 +104,7 @@ Two layers (A)
 Three layers (B)  
 : Very large initiatives which have distinct sub-projects may have two levels of Umbrella project. For example, a top-level Umbrella project groups all components of the initiative; mid-level Umbrella projects reflect two distinct branches of the project (such as sequencing vs. epigenetics); and several primary projects denote distinct project data types (e.g., genome sequencing, transcriptome, epigenetics, etc.). Example: [NIH Human Microbiome Project (HMP) Roadmap Project](https://www.ncbi.nlm.nih.gov/bioproject/43021).
 
-### Data release <a name="data-release"></a>
+### Data release  {#data-release}
 
 {::nomarkdown}
 {% include image.html url="submission/release_re.jpg" caption="Triggering of data release between primary projects and data records." class="w450" %}
@@ -124,7 +124,7 @@ FAQ: [How are linked BioProject/BioSample/sequence data released?](/faq/en/bp-bs
 
 Released project data are exchanged with the other two INSDC partners [NCBI](https://www.ncbi.nlm.nih.gov/bioproject)and [EBI](https://www.ebi.ac.uk/)BioProject databases.
 
-### Use an umbrella project <a name="use-umbrella-project"></a>
+### Use an umbrella project  {#use-umbrella-project}
 
 Please group related primary projects by using an umbrella project. An umbrella project can group and present outputs from research project.
 
@@ -144,14 +144,14 @@ If you want to add already registered primary projects to the umbrella, please [
 
 <span class="red">Private primary projects are not released by linking to public umbrella project.</span>
 
-## Metadata<a name="metadata"></a> 
+## Metadata {#metadata} 
 
 Required <span class="red">\*</span>  
 Conditionally required <span class="conditionally_required">\*</span>
 
-### Submitter <a name="Submitter"></a>
+### Submitter  {#Submitter}
 
-#### Submitter <a name="Area_bioproject-submitter"></a>
+#### Submitter  {#Area_bioproject-submitter}
 
 Contact information of submitter(s). Questions and notifications about a submission are contacted to the e-mail address(es) listed here. Personal contact information is considered confidential and is collected to be used by DDBJ BioProject staff should questions arise; the general information about the research center is used for public display.
 
@@ -168,7 +168,7 @@ Contact information of submitter(s). Questions and notifications about a submiss
 [E-mail](#BioProject_E-mail) <span class="red">\*</span><a name="BioProject_E-mail"></a>  
 : E-mail address. Enter an address from the organizations domain.
 
-#### Organization <a name="Area_organization"></a>
+#### Organization  {#Area_organization}
 
 Organization to which a contact person belongs.
 
@@ -180,7 +180,7 @@ Organization to which a contact person belongs.
 [Submitting organization URL](#BioProject_Submitting_organization_URL)<a name="BioProject_Submitting_organization_URL"></a>  
 : The URL of submitter's organization.
 
-#### Data Release <a name="Area_data-release"></a>
+#### Data Release  {#Area_data-release}
 
 Select "Hold" or "Release". You cannot specify hold date. Please see [Release of projects](#Release_of_projects) for detailed release mechanism.
 
@@ -192,9 +192,9 @@ Select "Hold" or "Release". You cannot specify hold date. Please see [Release of
 [Release](#BioProject_Release)<a name="BioProject_Release"></a>  
 : Release project data immediately. Private DDBJ record(s) citing this ID is not released.
 
-### General info <a name="General-info"></a>
+### General info  {#General-info}
 
-#### Project Description <a name="Area_project-description"></a>
+#### Project Description  {#Area_project-description}
 
 An informative paragraph that describes the project and provides informative context for the displayed project record.
 
@@ -231,7 +231,7 @@ An informative paragraph that describes the project and provides informative con
 [Relevance description](#Relevance_description)<span class="conditionally_required">\*</span><a name="Relevance_description"></a>  
 : Describe the relevance when the Other is selected.
 
-#### Umbrella BioProject<a name="Area_linked-project"></a>
+#### Umbrella BioProject {#Area_linked-project}
 
 If you are registering a project that is part of an initiative which is already registered in the BioProject database, then please tell us the existing BioProject accession number and provide a general description of the larger initiative. This information is needed for [project linking](#primary-and-umbrella).
 
@@ -243,7 +243,7 @@ If you are registering a project that is part of an initiative which is already 
 [Umbrella BioProject accession](#BioProject_BioProject_ID)<span class="conditionally_required">\*</span><a name="BioProject_BioProject_ID"></a>  
 : A BioProject accession number of an initiative which is already registered in the BioProject database.
 
-#### External Links <a name="Area_external-links"></a>
+#### External Links  {#Area_external-links}
 
 An URL may be provided, with a label for the resource, to reference a resource that is directly relevant to the submitted project.
 
@@ -255,7 +255,7 @@ An URL may be provided, with a label for the resource, to reference a resource t
 [URL](#BioProject_URL)<a name="BioProject_URL"></a>  
 : URL of web site that is related to this study.
 
-#### Grants <a name="Area_grants"></a>
+#### Grants  {#Area_grants}
 
 Funding information for a project.
 
@@ -277,7 +277,7 @@ Funding information for a project.
 [Grant title](#Grant_title)<a name="Grant_title"></a>  
 : Grant title may also support searches.
 
-#### Consortium <a name="Area_consortium"></a>
+#### Consortium  {#Area_consortium}
 
 [Consortium name](#Consortium_name)<a name="Consortium_name"></a> 
 : If study is carried out as part of a consortium, provide the consortium name.
@@ -287,9 +287,9 @@ Funding information for a project.
 [Consortium URL](#Consortium_URL)<a name="Consortium_URL"></a>  
 : If the consortium maintains a web site, provide the URL.
 
-### Project type <a name="Project-type"></a>
+### Project type  {#Project-type}
 
-#### Project data type<a name="Project_data_type"></a>
+#### Project data type {#Project_data_type}
 
 [Project data type](#Project_data_type)<span class="red">\*</span><a name="Project_data_type"></a>
 
@@ -318,7 +318,7 @@ Funding information for a project.
 [Project data type description](#Project_data_type_description)<span class="conditionally_required">\*</span><a name="Project_data_type_description"></a>  
 : Describe the project data type when the Other is selected.
 
-#### Sample scope/Material/Capture/Methodology <a name="Area_sample-scopematerialcapturemethodology"></a>
+#### Sample scope/Material/Capture/Methodology  {#Area_sample-scopematerialcapturemethodology}
 
 [Sample scope](#BioProject_Sample_scope)<span class="red">\*</span><a name="BioProject_Sample_scope"></a>  
 : The scope and purity of the biological sample used for the study.
@@ -383,7 +383,7 @@ Funding information for a project.
 [Methodology description](#Methodology_description)<span class="conditionally_required">\*</span><a name="Methodology_description"></a>  
 : Describe the methodology type when the Other is selected.
 
-#### Objective <a name="Area_objective"></a>
+#### Objective  {#Area_objective}
 
 Project goals with respect to the type of data that will be generated and submitted to an INSDC-associated database. Select all relevant menu options.
 
@@ -404,7 +404,7 @@ Project goals with respect to the type of data that will be generated and submit
   | Phenotype          | Experiment will deliver phenotypes.                                            |
   | Other              |                                                                                |
 
-#### Locus tag prefix <a name="Area_locus-tag-prefix"></a>
+#### Locus tag prefix  {#Area_locus-tag-prefix}
 
 [Locus tag prefix](#Locus_tag_prefix)<span class="conditionally_required">\*</span><a name="Locus_tag_prefix"></a>
 : Locus tag prefix generation box will appear when \[Project data type="Genome Sequencing" or "Metagenome"\] AND \[Capture="Whole"\] AND \[Objective="Sequence" or "Annotation" or "Assembly"\].
@@ -418,9 +418,9 @@ Project goals with respect to the type of data that will be generated and submit
     
   DDBJ BioProject limits the maximum tag length to 12 characters. In the BioProject submission system, the locus tag is displayed in capital letters. However, the tag is reserved in case-insensitive manner.
 
-### Target <a name="Target"></a>
+### Target  {#Target}
 
-#### Organism information <a name="Area_organism-information"></a>
+#### Organism information  {#Area_organism-information}
 
 Taxonomy and description of target organism.
 
@@ -457,7 +457,7 @@ Taxonomy and description of target organism.
 [Description of novel organism](#Novel_organism)<a name="Novel_organism"></a>  
 : Enter necessary information to register an organism to the [taxonomy database](https://www.ncbi.nlm.nih.gov/Taxonomy/).
 
-#### Environmental sample information <a name="Area_environmental-sample-information"></a>
+#### Environmental sample information  {#Area_environmental-sample-information}
 
 This section appears instead of the [Organism information](#BioProject_Organism_name) when the Sample scope="Environment" in the Target.
 
@@ -469,7 +469,7 @@ This section appears instead of the [Organism information](#BioProject_Organism_
 [Environmental sample description](#Environmental_sample_description)<a name="Environmental_sample_description"></a>  
 : Describe details of sample information.
 
-#### General Properties <a name="Area_general-properties"></a>
+#### General Properties  {#Area_general-properties}
 
 General properties of target organism.
 
@@ -509,7 +509,7 @@ General properties of target organism.
   | Polyploid     |
   | Allopolyploid |
 
-#### Organism Replicons <a name="Area_organism-replicons"></a>
+#### Organism Replicons  {#Area_organism-replicons}
 
 Describe how many replicons this organism has, how they are named (e.g., 1, 2, 3 vs. I, II, III), the replicon type (chromosome etc.), and the subcellular structure that the replicon is located in.
 
@@ -566,7 +566,7 @@ Describe how many replicons this organism has, how they are named (e.g., 1, 2, 3
 [Description](#Replicon_description)<a name="Replicon_description"></a>  
 : A description of any unusual features of the replicon.
 
-#### Phenotype <a name="Area_phenotype"></a>
+#### Phenotype  {#Area_phenotype}
 
 Phenotype of target organism.
 
@@ -600,7 +600,7 @@ Phenotype of target organism.
   | Heterotroph  |
   | Mixotroph    |
 
-#### Prokaryote Morphology <a name="Area_prokaryote-morphology"></a>
+#### Prokaryote Morphology  {#Area_prokaryote-morphology}
 
 When the target organism is prokaryote, please describe the general morphology if known.
 
@@ -660,7 +660,7 @@ When the target organism is prokaryote, please describe the general morphology i
   | Yes        |
   | No         |
 
-#### Ecological Environment <a name="Area_ecological-environment"></a>
+#### Ecological Environment  {#Area_ecological-environment}
 
 The general habitat for any organism. Please indicate additional extremophile parameters if known.
 
@@ -721,7 +721,7 @@ The general habitat for any organism. Please indicate additional extremophile pa
 [Optimum Temperature](#OptimumTemperature)<a name="OptimumTemperature"></a>  
 : Optimum temperature in Celsius.
 
-### Publication<a name="Publication"></a>
+### Publication {#Publication}
 
 [PubMed ID](#BioProject_PubMed_ID)<a name="BioProject_PubMed_ID"></a>  
 : The PubMed ID(s) will be used to populate the publication information.
@@ -791,7 +791,7 @@ The general habitat for any organism. Please indicate additional extremophile pa
 [This publication has multiple authors](#BioProject_This_publication_has_multiple_authors)<a name="BioProject_This_publication_has_multiple_authors"></a>  
 : If this is checked, then "et al" is added to the author name provided above.
 
-### XML schema <a name="xml-schema"></a>
+### XML schema  {#xml-schema}
 
 [BioProject XML schema](https://github.com/ddbj/pub/tree/master/docs/bioproject)
 
@@ -803,9 +803,9 @@ Submission of research data from human subjects
 : <span class="red">For submitting data from human subjects (human data) to the databases of DDBJ center, it is submitter's responsibility to ensure that the dignity and right of human subject are protected in accordance with all applicable laws, ordinances, guidelines and policies of submitter's institution. In principle, make sure to remove any direct personal identifiers of human subjects from your data to be submitted. Before submitting human data, read the "[Submission of research data from human subjects](/policies-e.html#human)".</span>
 </div>
 
-## Submission to BioProject <a name="project-submission"></a>
+## Submission to BioProject  {#project-submission}
 
-### Cases requiring project registration <a name="project-registration"></a>
+### Cases requiring project registration  {#project-registration}
 
 Registration for a BioProject accession is required in the following cases.
 
@@ -830,7 +830,7 @@ submissions to the DDBJ. If you obtain a BioProject accession from DDBJ, please 
 [The INSDC stopped to assigning strain-level taxonomy ID to microbes whose genomes have been submitted to the INSDC.](/news/en/2014-02-12-e.html)
 </div>
 
-### Submit a new BioProject submission <a name="new-bioproject-submission"></a>
+### Submit a new BioProject submission  {#new-bioproject-submission}
 
 According to the [Account Handbook](/account-e.html), obtain a submission account.
 
@@ -878,7 +878,7 @@ Check the content in "OVERVIEW" and submit a project by clicking the \[Submit\].
 
 The "OVERVIEW" tab continue to display submitted content. Updates will not be reflected in the "OVERVIEW" tab.
 
-### Accession number <a name="accession-number"></a>
+### Accession number  {#accession-number}
 
 Temporary numbers with prefix PSUB are automatically assigned to submitted projects. Projects can be referred by the PSUB numbers until official accession numbers will be assigned. DDBJ BioProject staff review submissions and issue accession numbers with prefix PRJD to completed projects. Submitters can view accession numbers and submission status in your [submission account](https://ddbj.nig.ac.jp/D-way/).
 
@@ -887,7 +887,7 @@ Temporary numbers with prefix PSUB are automatically assigned to submitted proje
 - Do not double submit the projects which have been registered to EBI and NCBI.
 </div>
 
-### Submit an umbrella project <a name="submit-umbrella-project"></a>
+### Submit an umbrella project  {#submit-umbrella-project}
 
 Umbrella project can be submitted as primary project in [submission account](https://ddbj.nig.ac.jp/D-way/). <span class="red">Be sure to tell the DDBJ BioProject staff that submitting project is umbrella by writing so in the [Private comments to DDBJ staff](#Private_comments). </span>Umbrell project cannot be kept private.
 
@@ -895,7 +895,7 @@ Umbrella project can be submitted as primary project in [submission account](htt
 {% include image.html url="books/hbp-05.jpg" caption="Tell DDBJ staff that submitting project is umbrella" class="w450" %}
 {:/}
 
-### Link primary project to umbrella <a name="link-primary-project-umbrella"></a>
+### Link primary project to umbrella  {#link-primary-project-umbrella}
 
 When submitting project, in the [Umbrella BioProject](#Area_linked-project), enter abstract and accession number of an umbrella to be linked. The DDBJ BioProject staff link the submitted primary project to the umbrella based on this information.
 
@@ -903,7 +903,7 @@ When submitting project, in the [Umbrella BioProject](#Area_linked-project), ent
 {% include image.html url="books/hbp-06.jpg" caption="Link to umbrella" class="w450" %}
 {:/}
 
-### Release of projects <a name="project-release"></a>
+### Release of projects  {#project-release}
 
 Registered projects can be released in the following two ways:
 
@@ -920,11 +920,11 @@ Public projects are exchanged among
 [NCBI](https://www.ncbi.nlm.nih.gov/bioproject)and
 [EBI](https://www.ebi.ac.uk/)BioProject databases.
 
-### Update <a name="update"></a>
+### Update  {#update}
 
 Registered projects can be updated. Please [contact the BioProject staff](/contact-ddbj-e.html)to update the projects.
 
-### Link experimental data and project <a name="link-experimental-data-project"></a>
+### Link experimental data and project  {#link-experimental-data-project}
 
 For the SRA submission, select the BioProject accession that you registered in advance in the Study.
 

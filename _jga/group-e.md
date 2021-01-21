@@ -36,7 +36,7 @@ tab_menu:
 lang: en
 ---
 
-## Group<a name="group"></a>
+## Group {#group}
 
 The applications to NBDC, JGA submissions and downloads are managed
 through groups consisting from D-way account holders as members. Through
@@ -46,7 +46,7 @@ access rights properly by removing members when they leave the PI's
 laboratory. Regarding groups, please see "[Group](/group-e.html)" for
 details.
 
-## Data submitter group<a name="subgrp"></a>
+## Data submitter group {#subgrp}
 
 The applications to NBDC and JGA data submissions are managed by data
 submitter groups. In the [NBDC application

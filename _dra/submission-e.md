@@ -67,9 +67,9 @@ format. To submit sequencing chromatograms in addition to bases and
 qualities, please submit data to the [DDBJ Trace
 Archive](/dta/index-e.html).
 
-## Metadata <a name="metadata"></a>
+## Metadata  {#metadata}
 
-### Metadata objects <a name="metadata-objects"></a>
+### Metadata objects  {#metadata-objects}
 
 The metadata describes how the associated data have been obtained. The
 metadata are composed of 6 objects, [Submission](#Submission),
@@ -127,7 +127,7 @@ site and not indexed by the
 {% include image.html url="books/sra_object.png" caption="Data model" class="w450" %}
 {:/}
 
-### Organization of metadata objects <a name="Organization_of_metadata_objects"></a> 
+### Organization of metadata objects  {#Organization_of_metadata_objects} 
 
 Followings are examples of metadata. Submitters can organize metadata
 objects flexibly.
@@ -139,13 +139,13 @@ objects flexibly.
   - [Related sequencing data are reported in two
     publications](#ex_submissions)
 
-#### Most simple case <a name="ex_simple"></a>
+#### Most simple case  {#ex_simple}
 
 {::nomarkdown}
 {% include image.html url="submission/obj_ex1.jpg" caption="Most simple case" class="w450" %}
 {:/}
 
-#### Comparative genome sequencing of three strains (paired-end) <a name="ex_samples"></a>
+#### Comparative genome sequencing of three strains (paired-end)  {#ex_samples}
 
 Include paired-end read files in a Run.
 
@@ -153,7 +153,7 @@ Include paired-end read files in a Run.
 {% include image.html url="submission/obj_ex2.jpg" caption="Comparative genome sequencing of three strains (paired-end)" class="w450" %}
 {:/}
 
-#### Technical and biological replicates (paired-end) <a name="ex_replicates"></a>
+#### Technical and biological replicates (paired-end)  {#ex_replicates}
 
 [Related FAQ: How many samples do I need for my DRA submission?](/faq/en/samples-for-sra.html)
 
@@ -161,7 +161,7 @@ Include paired-end read files in a Run.
 {% include image.html url="submission/obj_exreplicate.jpg" caption="Technical and biological replicates (paired-end)" class="w450" %}
 {:/}
 
-#### Related sequencing data are reported in two publications. <a name="ex_submissions"></a>
+#### Related sequencing data are reported in two publications.  {#ex_submissions}
 
 {::nomarkdown}
 {% include image.html url="submission/obj_ex3.jpg" caption="Related sequencing data are reported in two publications." class="w450" %}
@@ -172,9 +172,9 @@ Items in each metadata object.
 Required<span class="red">*</span>  
 Conditionally required<span class="conditionally_required">*</span>
 
-### Submission <a name="Submission"></a> 
+### Submission  {#Submission} 
 
-#### Center Name <a name="Area_center-name"></a>
+#### Center Name  {#Area_center-name}
 
 Enter submitter's organization.
 
@@ -197,7 +197,7 @@ submission.</span>
 : Laboratory name within submitting institution. The Lab name is
 pre-entered with "Lab/Group", "Department (2)", "Department (1)","Organization" of D-way account. Text can be editted.
 
-#### Hold Until <a name="Area_hold-until"></a>
+#### Hold Until  {#Area_hold-until}
 
 Specify how to release the data.
 
@@ -210,7 +210,7 @@ date.Submitter can set the hold date for a maximum of 2 years and can change the
 [Immediate Release](#Immediate_Release)<a name="Immediate_Release"></a><span class="conditionally_required">*</span>  
 : Direct the DRA to release the record immediately after submission is processed.
 
-#### Submitter <a name="Area_submitter-submission"></a>
+#### Submitter  {#Area_submitter-submission}
 
 The DRA contacts the listed address(es) regarding the submission by
 e-mail.<span class="red">Include contact information of PI
@@ -226,20 +226,20 @@ information, enter the information in the BioProject.
 [E-mail](#Contact_E-mail)<a name="Contact_E-mail"></a><span class="red">*</span>  
 : E-mail of submitter.
 
-### BioProject <a name="BioProject"></a> 
+### BioProject  {#BioProject} 
 
 [BioProject ID](#DRA_BioProjectID)<a name="DRA_BioProjectID"></a><span class="red">*</span>  
 : Select a project registered to
 [BioProject](/bioproject/index-e.html) or submit a new project. For submission to BioProject, please refer to the [BioProject Handbook](/bioproject/submission-e.html).
 
-### BioSample <a name="BioSample"></a> 
+### BioSample  {#BioSample} 
 
 [BioSample ID](#DRA_BioSampleID)<a name="DRA_BioSampleID"></a><span class="red">*</span>  
 : Select samples registered to [BioSample](/biosample/index-e.html) or
 create and submit new samples. For submission to BioSample, please
 refer to [BioSample Handbook](/biosample/submission-e.html).
 
-### Experiment <a name="Experiment"></a> 
+### Experiment  {#Experiment} 
 
 [Alias](#Experiment_Alias)<a name="Experiment_Alias"></a>  
 : Name of the experiment designated by the archive. This alias is used to reference metadata objects without accession numbers.
@@ -468,7 +468,7 @@ number includes mate pairs, but does not include gap lengths.
     constant flow count.
   - For fastq files with variable length, enter an average length.
 
-### Run <a name="Run"></a> 
+### Run  {#Run} 
 
 [Alias](#Run_Alias)<a name="Run_Alias"></a>  
 : Name of the run designated by the archive. This alias is used to
@@ -489,7 +489,7 @@ into a tab-delimited text file, edit title values and upload it.
 [Experiment Referenced](#Experiment_Referenced)<a name="Experiment_Referenced"></a><span class="red">*</span>  
 : Select the experiment this run belongs to.
 
-#### Data files for Run <a name="Area_data-files-for-run"></a>
+#### Data files for Run  {#Area_data-files-for-run}
 
 Select data files for a Run.
 
@@ -532,7 +532,7 @@ constant read length, select 'fastq'.
 : MD5 checksum of a sequence data file. [How to obtain the MD5
 checksum values.](#supplement-md5)
 
-### Analysis <a name="Analysis"></a> 
+### Analysis  {#Analysis} 
 
 [Alias](#Analysis_Alias)<a name="Analysis_Alias"></a>
 : Name of the analysis designated by the archive.This alias is used to reference metadata objects without accession numbers.
@@ -558,7 +558,7 @@ checksum values.](#supplement-md5)
   |  Sequence Annotation  |  Per sequence annotation of named attributes and values.<br> Example: Processed sequencing data for submission to dbEST without assembly.<br> Reads have already been submitted to one of the sequence read archives in raw form.<br> The fasta data submitted under this analysis object result from the following treatments, which may serve to filter reads from the raw dataset:<br>     - sequencing adapter removal<br>     - low quality trimming<br>- poly-A tail removal<br>- strand orientation <br>- contaminant removal.  |
   |  Abundance Measurement  |  Identify the tools and processing steps used to produce the abundance measurements (coverage tracks).  |
 
-#### Data files for Analysis <a name="Area_data-files-for-analysis"></a>
+#### Data files for Analysis  {#Area_data-files-for-analysis}
 
 Select data files for an Analysis.
 
@@ -603,7 +603,7 @@ in tsv file, this field needs to be specified manually.
 : MD5 checksum of a run data file. [How to obtain the MD5 checksum
 values.](#supplement-md5)
 
-## Run data files <a name="run-data-files"></a>
+## Run data files  {#run-data-files}
 
 {::options parse_block_html="true" /}
 <div class="attention">
@@ -623,7 +623,7 @@ values.](#supplement-md5)
   - Binary data formats, including BAM, SFF and HDF5 should be submitted without applying any additional compression.
 </div>
 
-### Formats of sequencing data files <a name="formats-sequencing-data-files"></a> 
+### Formats of sequencing data files  {#formats-sequencing-data-files} 
 
 The DRA metadata submission tool cannot describe technical reads
 (adapter, primer and barcode sequences). "To submit raw data contain
@@ -646,7 +646,7 @@ Platform specific formats
 | [SOLiD csfasta/qual](#SOLiD)                     | SOLiD               | No (please convert to fastq/bam) |
 | [Illumina qseq and scarf](#Illumina_Native_Data) | Illumina            | No (please convert to fastq/bam) |
 
-### BAM file <a name="BAM_file"></a> 
+### BAM file  {#BAM_file} 
 
 Binary Alignment/Map files (BAM) represent one of the preferred DRA
 submission formats. BAM is a compressed version of the Sequence
@@ -698,7 +698,7 @@ CCCFFFFFHHGHGJJGIJHIJIJJJJJIJJJJJIJJGIJJJJJIIJIIJFJJJJJFIJJJJIIIIGIIJHHHHDEEFFFE
 AA?CC:    RG:Z:1    NH:i:1    NM:i:0
 ```
 
-#### BAM file processing <a name="BAM_file_processing"></a>
+#### BAM file processing  {#BAM_file_processing}
 
 The header and alignment section are internally consistent: each aligned read has an RNAME (reference sequence name, 3rd field) that matches an SN tag value from the header (e.g., CHROMOSOME_I), and, if provided,the alignment read group optional field (RG:Z:) is consistent with the
 read group ID in the header (1). It is also important to ensure that the
@@ -808,7 +808,7 @@ chr3 NC_000003.12
 ...
 ```
 
-### fastq <a name="fastq"></a> 
+### fastq  {#fastq} 
 
 Run filetype needs to be specified depending on whether read length is
 constant or not.
@@ -838,7 +838,7 @@ website](https://www.ncbi.nlm.nih.gov/books/NBK242622/#File_Format_Guide_BK.FAST
   - The Fastq files must be compressed using gzip or bzip2.
 
 
-### 454 <a name="454"></a> 
+### 454  {#454} 
 
 The DRA accepts sequencing run data from the 454 platform in the sff and
 fastq/bam format. These files should reflect the sequencing run setup.
@@ -854,35 +854,35 @@ nearly optimal in terms of footprint, so there is little to be gained by
 further compressing them. Therefore, please provide
 *.sff*files uncompressed.
 
-### Illumina Genome Analyzer <a name="Illumina-Genome-Analyzer"></a>
+### Illumina Genome Analyzer  {#Illumina-Genome-Analyzer}
 
-#### Illumina pipeline v1.4 and later <a name="Illumina_pipeline_v1.4_and_later"></a>
+#### Illumina pipeline v1.4 and later  {#Illumina_pipeline_v1.4_and_later}
 
 DRA does not accept qseq files. Please convert qseq to fastq/bam.
 
-### SOLiD <a name="SOLiD"></a> 
+### SOLiD  {#SOLiD} 
 
-#### SOLiD Native Format <a name="SOLiD_Native_Format"></a>
+#### SOLiD Native Format  {#SOLiD_Native_Format}
 
 DRA does not accept SOLiD native files. Please convert the native files
 to fastq/bam.
 
-### Ion Torrent <a name="Ion-Torrent"></a>
+### Ion Torrent  {#Ion-Torrent}
 
 Submit Ion Torrent data in the sff or fastq/bam format.
 
-### Helicos Heliscope <a name="Helicos-Heliscope"></a>
+### Helicos Heliscope  {#Helicos-Heliscope}
 
 Submit Helicos data in the sms（helicos_native) or fastq/bam format
 created with the fixed-quality value, "14".
 
-### Complete Genomics <a name="Complete-Genomics"></a>
+### Complete Genomics  {#Complete-Genomics}
 
 Submit Complete Genomics data in the fastq/bam format.
 
-### Pacific Biosciences <a name="Pacific-Biosciences"></a>
+### Pacific Biosciences  {#Pacific-Biosciences}
 
-#### HDF5 <a name="hdf5"></a>
+#### HDF5  {#hdf5}
 
 Pacific Biosciences uses HDF5, a container file with a directory-like
 structure, to store raw data. The DRA accepts both bas.h5 and bax.h5
@@ -894,30 +894,30 @@ files. Do not rename files.
 Do NOT include files other than HDF5 in a Run.
 </div>
 
-#### bam <a name="pacbio_bam"></a>
+#### bam  {#pacbio_bam}
 
 We support the submission of the following types of PacBio bam files. Include 1 bam file per Run. For an unaligned bam file, reference and mapping table are not necessary.
 
   - subread BAM files (*.subreads.bam)
   - CCS read BAM files (*.ccs.bam)
 
-#### fastq <a name="pacbio_fastq"></a>
+#### fastq  {#pacbio_fastq}
 
 The DRA also accepts Pacific Biosciences data in the
 [fastq](#fastq) format. Because the read length varies, select the
 ["generic_fastq"](#fastq) for the Run filetype.
 
-### Oxford Nanopore <a name="Oxford-Nanopore"></a>
+### Oxford Nanopore  {#Oxford-Nanopore}
 
 Submit Oxford Nanopore data in the fastq/bam format.
 
-### Capillary sequencing platform <a name="Capillary-sequencing-platform"></a>
+### Capillary sequencing platform  {#Capillary-sequencing-platform}
 
 Submit capillary sequencing data in the fastq/bam format.
 
-## Analysis data files <a name="analysis-data-files"></a>
+## Analysis data files  {#analysis-data-files}
 
-### PacBio Base Modification Files <a name="Pacbio-Base-Modification-Files"></a>
+### PacBio Base Modification Files  {#Pacbio-Base-Modification-Files}
 
 [PacBio](http://www.pacb.com)sequence data also permits the analysis of
 methylated bases within the sequence, which can be extremely helpful to
@@ -941,7 +941,7 @@ assistance, [contact us](/contact-ddbj-e.html).
 
 [NCBI guidelines of PacBio Base Modification Files](https://www.ncbi.nlm.nih.gov/genbank/basemodificationfiles)
 
-# Submission to the DRA <a name="dra-submission"></a>
+# Submission to the DRA  {#dra-submission}
 
 <div class="attention">
 Never submit data without the permission of the principal investigator.
@@ -974,7 +974,7 @@ Mass Submission System (MSS)](/ddbj/mss-e.html)accepts the genomic or
 abundant sequence data generated by massively parallel sequencing
 platforms.
 
-## Data submission to DRA <a name="dra-data-submission"></a>
+## Data submission to DRA  {#dra-data-submission}
 
 ### 1. Obtain a submission account 
 
@@ -993,12 +993,12 @@ platforms.
 
 ### 3. Submit project and sample information 
 
-#### [BioProject](/bioproject/submission-e.html) <a name="_BioProject_"></a>
+#### [BioProject](/bioproject/submission-e.html)  {#_BioProject_}
 
   - A description of the reseach effort
   - "Why" you sequenced your samples
 
-#### [BioSample](/biosample/submission-e.html)<a name="_BioSample_"></a>![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv} 
+#### [BioSample](/biosample/submission-e.html) {#_BioSample_}![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv} 
 
   - A description of biologically or physically unique specimens
   - "What" you sequenced
@@ -1007,12 +1007,12 @@ platforms.
 
 ### 4. Submit Experiment and Run 
 
-#### DRA Experiment<a name="DRA_Experiment"></a> ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv} 
+#### DRA Experiment {#DRA_Experiment} ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv} 
   - A description of a sample-specific sequencing library
   - "How" you performed the sequencing
   - Multiple Experiments “point” to a single Sample, but not vice-versa.
 
-#### DRA Run<a name="DRA_Run"></a> ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv} 
+#### DRA Run {#DRA_Run} ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv} 
 
   - Validate data files after submitting Experiment and Run
   - All files linked to a Run are “merged” into a single SRA file format
@@ -1023,13 +1023,13 @@ platforms.
     archiving.
   - Submission passed validation step will be reviewed and accessioned.
 
-## How to submit data to the DRA <a name="how-to-submit-dra-data"></a>
+## How to submit data to the DRA  {#how-to-submit-dra-data}
 
 Submission to BioProject/BioSample/DRA (6 min 50 sec、created:2015)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Hg4h8ytbIV4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Submission Account <a name="submission-account"></a>
+### Submission Account  {#submission-account}
 
 At the [DNA Data Bank of Japan (DDBJ) center](../),
 [BioProject](/bioproject/index-e.html),
@@ -1039,7 +1039,7 @@ At the [DNA Data Bank of Japan (DDBJ) center](../),
 According to the [Submission Account Handbook](/account-e.html), obtain
 a submission account and enable DRA submission in the account.
 
-### Organize data <a name="organize-data"></a>
+### Organize data  {#organize-data}
 
 Examples of metadata object organization is
 [here](#Organization_of_metadata_objects). In single submission, only
@@ -1055,7 +1055,7 @@ submission "paired-end genome sequencing of three bacterial strains".
 strains" class="w450" %}
 {:/}
 
-### Create a new submission <a name="create-new-submission"></a>
+### Create a new submission  {#create-new-submission}
 
 Login [the D-way (https://trace.ddbj.nig.ac.jp/D-way)](https://ddbj.nig.ac.jp/D-way/) and the top page is displayed. Move to the DRA submission site from the “DRA” menu at the top.
 
@@ -1095,7 +1095,7 @@ List of submission status
 | confidential          | Archive files has been created and submission is kept private |
 | Public                | Released to public.                                           |
 
-### Upload sequence data <a name="upload-sequence-data"></a> 
+### Upload sequence data  {#upload-sequence-data} 
 
 Sequence data files need to be uploaded before creating metadata. To
 create metadata first, upload some files.
@@ -1248,7 +1248,7 @@ the MSS team](/contact-ddbj-e.html#to-ddbj), upload the files to the
 /submission/[submitter ID]/mass directory.
 </div>
 
-### Create metadata by using the tool <a name="create-metadata-using-tool"></a> 
+### Create metadata by using the tool  {#create-metadata-using-tool} 
 
 Move to the submission detail page by clicking the submission ID.
 
@@ -1284,7 +1284,7 @@ The entered content is checked when submitters click the [Save] button
 or before moving to the other tab. When error messages are displayed,
 please revise the content.
 
-#### Submission <a name="Submission"></a>
+#### Submission  {#Submission}
 
 Set the hold date within two years. Include principal investigator(s)
 and submitter(s) who actually submit data in the Submitter. The DRA dose
@@ -1299,7 +1299,7 @@ release data at different time, please divide a submission.
 {% include image.html url="books/hdra-submission01.jpg" caption="Enter metadata in the tool" class="w450" %}
 {:/}
 
-#### Study <a name="study"></a>
+#### Study  {#study}
 
 Submit a new project by clicking [New submission], or select a project
 registered in the account.
@@ -1368,7 +1368,7 @@ After submitting a project, submitted one is selected in Study.
 {% include image.html url="books//hdra-bp04.jpg" caption="Submitted project is selected" class="w450" %}
 {:/}
 
-#### Sample <a name="sample"></a>
+#### Sample  {#sample}
 
 Submit new samples by clicking [New submission], or select samples
 submitted in the account.
@@ -1468,7 +1468,7 @@ After submitting BioSamples, submitted BioSamples are selected in the
 {% include image.html url="books/hdra-bs06.jpg" caption="Submitted BioSamples are selected" class="w450"%}
 {:/}
 
-#### Experiment <a name="experiment"></a>
+#### Experiment  {#experiment}
 
 Experiment and Run as same as selected BioSamples are automatically
 created. Each BioSample,Experiment and Run are referenced. The
@@ -1529,7 +1529,7 @@ Upload in tab-delimited text file and NOT in spreadsheet software
 specific format.
 </div>
 
-#### Run <a name="run"></a>
+#### Run  {#run}
 
 Experiment and Run as same as selected BioSamples are automatically
 created. Each Run references unique Experiment.
@@ -1592,7 +1592,7 @@ link "Validate uploaded data files to finish this submission".
 {% include image.html url="books/hdra-submit02.jpg" caption="Go to data validation after submitting metadata" class="w450" %}
 {:/}
 
-#### Analysis (optional) <a name="analysis"></a>
+#### Analysis (optional)  {#analysis}
 
 Create Analysis as many as required, enter content of each Analysis.
 Unnecessary Analysis can be deleted by clicking the [Delete].
@@ -1680,7 +1680,7 @@ files.
 </div>
 </div>
 
-### Validation of data files <a name="validation-data-files"></a>
+### Validation of data files  {#validation-data-files}
 
 Submitted data files are converted to the SRA files for archiving.
 During this conversion process, MD5 value, file format and integrity
@@ -1700,13 +1700,13 @@ The files are validated in the following order.
 [FAQ: How to deal with validation
 errors?](/faq/en/data-validation-error)
 
-#### MD5 Check <a name="MD5_Check"></a>
+#### MD5 Check  {#MD5_Check}
 
 Consistency between the MD5 values in the metadata and of uploaded files
 are checked. Inconsistency in the MD5 values cause errors. When MD5
 errors occur, revise metadata and re-upload files.
 
-#### Data Check <a name="Data_Check"></a>
+#### Data Check  {#Data_Check}
 
 Submitted data files are converted to the SRA files for archiving.
 During this conversion process, MD5 value, file format and integrity
@@ -1740,7 +1740,7 @@ re-submit metadata or re-upload data files.
 {% include image.html url="books/hdra-edit.jpg" caption="Revise submission" class="w450" %}
 {:/}
 
-### Accession numbers <a name="accession-numbers"></a>
+### Accession numbers  {#accession-numbers}
 
 When both the metadata and sequence data are validated (Status
 “submission_validated”), accession numbers with the prefix DR
@@ -1748,7 +1748,7 @@ When both the metadata and sequence data are validated (Status
 assigned ("acc_issued", "complete" or "private"). Accession numbers are
 displayed in the “Component”.
 
-### Limited-time access to archived fastq/SRA files <a name="fastq-sra-files"></a>
+### Limited-time access to archived fastq/SRA files  {#fastq-sra-files}
 
 To allow submitter to download and check archived fastq/SRA files, the
 files are copied to the following directories on the
@@ -1775,7 +1775,7 @@ deletion or service suspension.
   - submitter/report/dra/DRA000001/sra/DRR000001.sra
   - submitter/report/dra/DRA000001/sra/DRR000002.sra
 
-### Data release <a name="data-release"></a>
+### Data release  {#data-release}
 
 After the registered data is loaded into the database, the Status
 becomes “complete (private)” and the submission is kept private until
@@ -1813,9 +1813,9 @@ SRA](//www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi).
 The list of available fastq files at the DRA file server:
 [fastqlist](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/meta/list/fastqlist)
 
-## Update submission <a name="update-submission"></a>
+## Update submission  {#update-submission}
 
-### Update in each database <a name="update-in-each-database"></a>
+### Update in each database  {#update-in-each-database}
 
 |  Database  |  Update  |
 | ---- | ---- |
@@ -1823,7 +1823,7 @@ The list of available fastq files at the DRA file server:
 |  Sequence Read Archive (DRA)  |  [Login D-way and update metadata](#change-hold-date)<br/>[To add or delete sequencing data, request updates from web form](/contact-ddbj-e.html)  |
 |  BioProject/BioSample  |  [Request updates from web form](/contact-ddbj-e.html)  |
 
-### Change hold date <a name="change-hold-date"></a> 
+### Change hold date  {#change-hold-date} 
 
 You can set the hold date for a maximum of 4 years and can change it. To
 change the hold date, click the [Change] button in the Hold Date and
@@ -1835,14 +1835,14 @@ To immediately release the submission, click the [Release Now]. In the
 middle of the night, the submission is released, data files will be made
 available at [ftp](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/)and metadata will be indexed by the [DRA search system](http://ddbj.nig.ac.jp/DRASearch)in a few days.
 
-### Update metadata <a name="update-metadata"></a>
+### Update metadata  {#update-metadata}
 
 Update metadata by clicking the [Enter / Update metadata] button. A
 part of fields are blocked from editing. After editing your metadata,
 please be sure to click the [Submit/Update DRA metadata] button and
 reflect the updates to the DRA server.
 
-### Add data files <a name="add-data-files"></a>
+### Add data files  {#add-data-files}
 
 Data files cannot be directly added to the archived Run. In another DRA
 submission, create new Experiment-Run objects referencing existing
@@ -1880,12 +1880,12 @@ assigned.
 
 To add data files to the existing DRA submission, please [contact us](/contact-ddbj-e.html).
 
-### Withdraw archived objects <a name="withdraw-archived-objects"></a>
+### Withdraw archived objects  {#withdraw-archived-objects}
 
 To withdrawing archived Experiment, Run and Analysis objects, please
 [contact us](/contact-ddbj-e.html).
 
-## Supplement: MD5 <a name="supplement-md5"></a> 
+## Supplement: MD5  {#supplement-md5} 
 
 MD5 (Message Digest Algorithm 5) is a hash function which calculates a
 hash value (MD5 number, 32-digit numbers and letters) of a given file.

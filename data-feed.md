@@ -4,7 +4,7 @@ title: RSS フィード
 lang: ja
 ---
 
-## お知らせ全般 <a name="general"></a>
+## お知らせ全般  {#general}
 
 DDBJ センターからのお知らせと DDBJ サービスに関する更新や変更。
 
@@ -13,7 +13,7 @@ DDBJ センターからのお知らせと DDBJ サービスに関する更新や
 [![\*]({{ site.baseurl }}/assets/images/parts/rss.png)購読]({{ site.baseurl }}/assets/rss/news-center-ja.xml)
 | [お知らせ一覧](/news/ja)
 
-## データベース <a name="database"></a>
+## データベース  {#database}
 ### Nucleotide Sequence Database
 
 Nucleotide Sequence Database に関する更新や変更のお知らせ。

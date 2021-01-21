@@ -4,7 +4,7 @@ title: Access
 lang: en
 ---
 
-## Address <a name="ddbj-location"></a>
+## Address  {#ddbj-location}
 
 {::options parse_block_html="true" /}
 <address>
@@ -19,7 +19,7 @@ TEL : 81-55-981-6853
 </address><br>
 For inquiries and questions, please contact us from the [contact form](/contact-ddbj-e.html).
 
-## Location with in NIG <a name="cibmap"></a>
+## Location with in NIG  {#cibmap}
 
 ![]({{ site.baseurl }}/assets/images/center/cibmap-e.png)
 

@@ -4,7 +4,7 @@ title: DDBJ へのアクセス
 lang: ja
 ---
 
-## 所在地・連絡先 <a name="ddbj-location"></a>
+## 所在地・連絡先  {#ddbj-location}
 
 {::options parse_block_html="true" /}
 <address>
@@ -25,7 +25,7 @@ TEL : 055-981-6853
 
 お問い合わせは [フォーム]({{ site.baseurl }}/contact-ddbj.html) をご利用ください。
 
-## 遺伝研構内の地図 <a name="cibmap"></a>
+## 遺伝研構内の地図  {#cibmap}
 
 ![]({{ site.baseurl }}/assets/images/center/cibmap.png)
 

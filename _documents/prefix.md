@@ -12,7 +12,7 @@ related_pages:
     url: /documents/data-release-policy.html
 ---
 
-## For conventional sequence data (two or one letter) <a name="gen"></a>
+## For conventional sequence data (two or one letter)  {#gen}
 
 ```
 A       EPO             Patent application
@@ -358,7 +358,7 @@ Y       ENA
 Z       ENA             
 ```
 
-## For bulk sequence data <a name="large"></a>
+## For bulk sequence data  {#large}
 
 ```
 AAAA-AZZZ      GenBank      general WGS 
@@ -394,7 +394,7 @@ DAAAAA-DZZZZZ  GenBank      TPA assemble WGS
 JAAAAA-JZZZZZ  GenBank      general WGS 
 ```
 
-## For protein\_id <a name="protein"></a>
+## For protein\_id  {#protein}
 
 ```
 AAA-AZZ     GenBank 
@@ -421,7 +421,7 @@ TAA-TZZ     GenBank       WGS/TSA
 VAA-VZZ     ENA           
 ```
 
-## For Sequence Read Archive <a name="dra"></a>
+## For Sequence Read Archive  {#dra}
 
 ```
 DRA     DDBJ       Submission object
@@ -446,7 +446,7 @@ SRZ     NCBI       Analysis object
 
 See also [DRA metadata outline](/dra/submission.html#metadata)
 
-## For BioProject <a name="project"></a>
+## For BioProject  {#project}
 
 ```
 PRJDA-PRJDZ     DDBJ 
@@ -454,7 +454,7 @@ PRJEA-PRJEZ     ENA/EBI
 PRJNA-PRJNZ     NCBI 
 ```
 
-## For BioSample <a name="sample"></a>
+## For BioSample  {#sample}
 
 ```
 SAMD     DDBJ 

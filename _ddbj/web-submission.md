@@ -126,7 +126,7 @@ related_pages:
 
 </div>
 
-## Web 版塩基配列登録システム <a name="Web_版塩基配列登録システム"></a>
+## Web 版塩基配列登録システム  {#Web_版塩基配列登録システム}
 
 Web 版塩基配列登録システム（DDBJ Nucleotide Sequence Submission System）は、アノテーションをつけた塩基配列を Web 経由で登録できるシステムです。
 

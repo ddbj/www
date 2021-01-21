@@ -44,25 +44,25 @@ lang: ja
   - [研究費情報の記載](#grant)
   - [更新履歴](#history)
 
-## メタデータ記入用エクセルファイル <a name="excel"></a>
+## メタデータ記入用エクセルファイル  {#excel}
 
 シークエンス拠点の依頼者間でメタデータをやり取りするのにご利用ください。
 
-### BioProject <a name="bioproject"></a>
+### BioProject  {#bioproject}
 
 [BioProject_template_20150408.xlsx]({{ site.baseurl }}/assets/files/submission/BioProject_template_20150408.xlsx)
 
-### BioSample <a name="biosample"></a>
+### BioSample  {#biosample}
 
 [BioSample_template_20150408.xlsx]({{ site.baseurl }}/assets/files/submission/BioSample_template_20150408.xlsx)
 
-### DRA <a name="dra"></a>
+### DRA  {#dra}
 
 [DRA_template_20180730.xlsx]({{ site.baseurl }}/assets/files/submission/DRA_template_20180730.xlsx)
 
-## 研究費情報の記載 <a name="grant"></a>
+## 研究費情報の記載  {#grant}
 
-### BioProject <a name="grant_bp"></a>
+### BioProject  {#grant_bp}
 
 D-way BioProject 登録システムで [Grants]({{ site.baseurl }}/bioproject/submission.html#Area_grants) の各項目に以下を記入します。
 
@@ -73,7 +73,7 @@ D-way BioProject 登録システムで [Grants]({{ site.baseurl }}/bioproject/su
 
 実際の登録例: [PRJDB3208 (DDBJ)](//ddbj.nig.ac.jp/BPSearch/bioproject?acc=PRJDB3208) [PRJDB3208 (NCBI)](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJDB3208)
 
-### DDBJ 塩基配列データ <a name="grant_ddbj"></a>
+### DDBJ 塩基配列データ  {#grant_ddbj}
 
 アノテーションを付加した塩基配列データを [DDBJ]({{ site.baseurl }}/ddbj/submission.html) に登録する場合，[structured COMMENT]({{ site.baseurl }}/ddbj/flat-file.html#Comment) に以下のように記載します。
 
@@ -85,7 +85,7 @@ D-way BioProject 登録システムで [Grants]({{ site.baseurl }}/bioproject/su
 |         | GrantId             | :: 221S0002                                 |
 |         | ##Grant-END##       |                                             |
 
-## 更新履歴 <a name="history"></a>
+## 更新履歴  {#history}
 
 2015-04-08: メタデータ用のエクセルファイル (_20150408) を公開。[BioProject]({{ site.baseurl }}/assets/files/submission/BioProject_template_20150408.xlsx), [BioSample]({{ site.baseurl }}/assets/files/submission/BioSample_template_20150408.xlsx), [DRA]({{ site.baseurl }}/assets/files/submission/DRA_template_20150408.xlsx)
 

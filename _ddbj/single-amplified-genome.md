@@ -100,9 +100,9 @@ lang: ja
 
 Single amplified genome (SAG) は一細胞を単離、溶解し、全ゲノムを増幅してシークエンスすることで得られます。SAG は1～数コピーのゲノムを出発材料としているため、極微量のDNAのコンタミネーションがデータ品質に大きな影響を与えます。そのため DDBJ センターでは SAG を区別できるように登録方法を定めています。
 
-## 一細胞の場合 <a name="single-cell"></a>
+## 一細胞の場合  {#single-cell}
 
-### DDBJ <a name="multi-ddbj"></a> 
+### DDBJ  {#multi-ddbj} 
 
 source feature
 
@@ -119,7 +119,7 @@ source feature
     - [geo_loc_name](/biosample/attribute.html?all=all#geo_loc_name)
     - [lat_lon](/biosample/attribute.html?all=all#lat_lon)    
 
-### BioSample <a name="multi-biosample"></a>
+### BioSample  {#multi-biosample}
 
 パッケージと属性
 
@@ -134,9 +134,9 @@ source feature
   - [sample\_type](/biosample/attribute.html?all=all#sample_type)=”single
     amplified genome” を所定属性として記載します。
 
-## 複数細胞の場合 <a name="multi-cells"></a>
+## 複数細胞の場合  {#multi-cells}
 
-### DDBJ <a name="multi-ddbj"></a>
+### DDBJ  {#multi-ddbj}
 
 source feature
 
@@ -147,7 +147,7 @@ source feature
     single-cell amplified genomes"
   - /isolation\_source にサンプルの単離源を記載します。
 
-### BioSample <a name="single-biosample"></a> 
+### BioSample  {#single-biosample} 
 
 パッケージと属性
 
@@ -163,7 +163,7 @@ source feature
   - [isolate](/biosample/attribute.html?all=all#isolate)
   - [isolation\_source](/biosample/attribute.html?all=all#isolation_source)
 
-## 登録例 <a name="real-examples"></a>
+## 登録例  {#real-examples}
 
   - BioProject:
     [PRJDB8357](https://www.ncbi.nlm.nih.gov/bioproject/632761)

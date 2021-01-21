@@ -111,14 +111,14 @@ related_pages:
     url: /ddbj/mss-form.html
 ---
 
-## 実行環境 <a name="system"></a>
+## 実行環境  {#system}
 
-### ハードウェア <a name="system-1"></a>
+### ハードウェア  {#system-1}
 
   - インストールのための 20 MB 以上のハードディスク領域
   - 512 MB 以上 (推奨 1 GB 以上) の RAM
 
-### ソフトウェア <a name="system-2"></a>
+### ソフトウェア  {#system-2}
 
   - 実行には Java 8 以降が必要です。
   - DDBJ では、推奨 OS として以下の環境で動作確認を行っております。  
@@ -127,7 +127,7 @@ related_pages:
 
 <span class="red">※</span>UME (Utilities for MSS file Error check) は[Apache Software Foundation](//www.apache.org/) により開発されたソフトウェアを含んでいます。
 
-## ダウンロード <a name="download"></a>
+## ダウンロード  {#download}
 
 下記から 必要なパッケージを選択してダウンロードしてください。  
 インストール、使用方法は、各マニュアルを参照してください。
@@ -178,7 +178,7 @@ related_pages:
     </tbody>
 </table>
 
-## 使用許諾 <a name="license"></a>
+## 使用許諾  {#license}
 
 **Please read the following agreement carefully before you use the software for Mass Submission System.**
 

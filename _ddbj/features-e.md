@@ -100,7 +100,7 @@ lang: en
 
 The feature keys used and recommended for DDBJ submissions are as follows.  
 
-## Feature/Qualifier Usage Matrix <a name="usage"></a>
+## Feature/Qualifier Usage Matrix  {#usage}
 
 The chart, [Feature/Qualifier usage matrix](https://docs.google.com/spreadsheets/d/1qosakEKo-y9JjwUO_OFcmGCUfssxhbFAm5NXUAnT3eM/), explains recommended combinations of feature and qualifier keys for DDBJ submissions.
 

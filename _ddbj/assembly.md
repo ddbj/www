@@ -102,7 +102,7 @@ The original site; [INSDC standards for genome assembly submission](http://www.i
 
 Genome assemblies comprise a number of possible layers of information, including reads, contigs, scaffolds and chromosomes (see figure I). This document lays out the requirements for submission of genome assembly information into INSDC databases.
 
-## Figure I. Three typical assembly processes <a name="Figure_I._Three_typical_assembly_processes"></a>
+## Figure I. Three typical assembly processes  {#Figure_I._Three_typical_assembly_processes}
 
 ![]({{ site.baseurl }}/assets/images/ddbj/assembly1.gif)
 
@@ -115,7 +115,7 @@ A) Clone-based assembly with scaffolding and finishing steps.
 B) Shotgun assembly direct to chromosomes.  
 C) Partial assembly to contigs only.  
 
-## Table I. New genome assembly submissions <a name="Table_I._New_genome_assembly_submissions"></a>
+## Table I. New genome assembly submissions  {#Table_I._New_genome_assembly_submissions}
 
 <table>
   <tbody>
@@ -174,7 +174,7 @@ C) Partial assembly to contigs only.
 
 Consistent with the variety of assembly processes, submitters to INSDC　approach with data for the layers in different combinations of　layers.　Tables I and II shows requirements for new genome assembly　submissions　and updates to existing assembly submissions.
 
-## Table II. Update to existing genome assembly <a name="Table_II._Update_to_existing_genome_assembly"></a>
+## Table II. Update to existing genome assembly  {#Table_II._Update_to_existing_genome_assembly}
 
 <table>
   <tbody>

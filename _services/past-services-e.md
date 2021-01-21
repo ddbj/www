@@ -24,7 +24,7 @@ related_pages:
     url: /services/wabi-blast-e.html
 ---
 
-## Terminated WWW Services <a name="web-services"></a>
+## Terminated WWW Services  {#web-services}
 
   - [GIB](#gib) (Service teriminated: 2012.2.）
   - [GIB-V](#gib-v) (Service teriminated: 2012.2.）
@@ -45,7 +45,7 @@ related_pages:
   - S\&W SEARCH(Service teriminated: 2006.04.）
   - malign(Service teriminated: 2005.9.）
 
-## Terminated E-mail Servers <a name="E-mail"></a>
+## Terminated E-mail Servers  {#E-mail}
 
   - get-entry
   - get-version
@@ -57,21 +57,21 @@ related_pages:
   - HMMPFAM
   - malign
 
-## Reference <a name="reference"></a>
+## Reference  {#reference}
 
-#### GIB <a name="gib"></a>
+#### GIB  {#gib}
 
 [Genome Information Broker (GIB): data retrieval and comparative analysis system for completed microbial genomes and more.](https://www.ncbi.nlm.nih.gov/pubmed/11752256){: .title}
 : Fumoto M, Miyazaki S, Sugawara H<br>
 Nucleic Acids Res 2002 Jan 1;30(1):66-8. Pubmed: [11752256](https://www.ncbi.nlm.nih.gov/pubmed/11752256)
 
-#### GIB-V <a name="gib-v"></a>
+#### GIB-V  {#gib-v}
 
 [Genome Information Broker for Viruses (GIB-V): database for comparative analysis of virus genomes.](https://www.ncbi.nlm.nih.gov/pubmed/17158166){: .title}
 : Hirahata M, Abe T, Tanaka N, Kuwana Y, Shigemoto Y, Miyazaki S, Suzuki Y, Sugawara H<br>
 Nucleic Acids Res 2007 Jan;35(Database issue):D339-42. Pubmed: [17158166](https://www.ncbi.nlm.nih.gov/pubmed/17158166)
 
-#### GTOP <a name="gtop"></a>
+#### GTOP  {#gtop}
 
 [Compositional changes in RNA, DNA and proteins for bacterial adaptation to higher and lower temperatures.](https://www.ncbi.nlm.nih.gov/pubmed/12761299){: .title}
 : Nakashima H, Fukuchi S, Nishikawa K<br>
@@ -93,12 +93,12 @@ J Mol Biol 2003 Mar 21;327(2):347-57. Pubmed: [12628242](https://www.ncbi.nlm.ni
 [Structural/functional assignment of unknown bacteriophage T4 proteins by iterative database searches.](https://www.ncbi.nlm.nih.gov/pubmed/11163980){: .title}
 : Kawabata T, Arisaka F, Nishikawa K<br>Gene 2000 Dec 23;259(1-2):223-33. Pubmed: [11163980](https://www.ncbi.nlm.nih.gov/pubmed/11163980)
 
-#### GIPS<a name="gtps"></a>
+#### GIPS {#gtps}
 
 [Exploration and grading of possible genes from 183 bacterial strains by a common protocol to identification of new genes: Gene Trek in Prokaryote Space (GTPS).](https://www.ncbi.nlm.nih.gov/pubmed/17166861){: .title}
 : Kosuge T, Abe T, Okido T, Tanaka N, Hirahata M, Maruyama Y, Mashima J, Tomiki A, Kurokawa M, Himeno R et al<br> DNA Res 2006 Dec 31;13(6):245-54. Pubmed: [17166861](https://www.ncbi.nlm.nih.gov/pubmed/17166861)
 
-#### HMMPFAM <a name="hmmpfam"></a>
+#### HMMPFAM  {#hmmpfam}
 
 [Profile hidden Markov models.](https://www.ncbi.nlm.nih.gov/pubmed/9918945){: .title}
 : Eddy SR<br>Bioinformatics 1998;14(9):755-63. Pubmed: [9918945](https://www.ncbi.nlm.nih.gov/pubmed/9918945)
@@ -106,7 +106,7 @@ J Mol Biol 2003 Mar 21;327(2):347-57. Pubmed: [12628242](https://www.ncbi.nlm.ni
 [Pfam: a comprehensive database of protein domain families based on seed alignments.](https://www.ncbi.nlm.nih.gov/pubmed/9223186){: .title}
 : Sonnhammer EL, Eddy SR, Durbin R<br>Proteins 1997 Jul;28(3):405-20. Pubmed: [9223186](https://www.ncbi.nlm.nih.gov/pubmed/9223186)
 
-#### LIBRA <a name="libra"></a>
+#### LIBRA  {#libra}
 
 [Feasibility in the inverse protein folding protocol.](https://www.ncbi.nlm.nih.gov/pubmed/10338011){: .title}
 : Ota M, Nishikawa K<br>Protein Sci 1999 May;8(5):1001-9. Pubmed: [10338011](https://www.ncbi.nlm.nih.gov/pubmed/10338011)
@@ -120,17 +120,17 @@ J Mol Biol 2003 Mar 21;327(2):347-57. Pubmed: [12628242](https://www.ncbi.nlm.ni
 [Desk-top analysis of the structural stability of various point mutations introduced into ribonuclease H.](https://www.ncbi.nlm.nih.gov/pubmed/7752236){: .title}
 : Ota M, Kanaya S, Nishikawa K<br>J Mol Biol 1995 May 12;248(4):733-8. Pubmed: [7752236](https://www.ncbi.nlm.nih.gov/pubmed/7752236)
 
-#### Lib score <a name="lib-score"></a>
+#### Lib score  {#lib-score}
 
 [An automated prediction of MHC class I-binding peptides based on positional scanning with peptide libraries.](https://www.ncbi.nlm.nih.gov/pubmed/10970096){: .title}
 : Udaka K, Wiesmüller KH, Kienle S, Jung G, Tamamura H, Yamagishi H, Okumura K, Walden P, Suto T, Kawasaki T <br>Immunogenetics 2000 Aug;51(10):816-28. Pubmed: [10970096](https://www.ncbi.nlm.nih.gov/pubmed/10970096)
 
-#### PSI-BLAST <a name="psi-blast"></a>
+#### PSI-BLAST  {#psi-blast}
 
 [Gapped BLAST and PSI-BLAST: a new generation of protein database search programs.](https://www.ncbi.nlm.nih.gov/pubmed/9254694){: .title}
 : Altschul SF, Madden TL, Schäffer AA, Zhang J, Zhang Z, Miller W, Lipman DJ<br>Nucleic Acids Res 1997 Sep 1;25(17):3389-402. Pubmed: [9254694](https://www.ncbi.nlm.nih.gov/pubmed/9254694)
 
-#### SSEARCH <a name="ssearch"></a>
+#### SSEARCH  {#ssearch}
 
 
 [Improved tools for biological sequence comparison.](https://www.ncbi.nlm.nih.gov/pubmed/3162770){: .title}
@@ -145,7 +145,7 @@ J Mol Biol 2003 Mar 21;327(2):347-57. Pubmed: [12628242](https://www.ncbi.nlm.ni
 [Identification of common molecular subsequences.](https://www.ncbi.nlm.nih.gov/pubmed/7265238){: .title}
 : Smith TF, Waterman MS<br>J Mol Biol 1981 Mar 25;147(1):195-7. Pubmed: [7265238](https://www.ncbi.nlm.nih.gov/pubmed/7265238)
 
-#### WINA <a name="wina"></a>
+#### WINA  {#wina}
 
 
 [Identification of regions in which positive selection may operate in S-RNase of Rosaceae: implication for S-allele-specific recognition sites in S-RNase.](https://www.ncbi.nlm.nih.gov/pubmed/9872398){: .title}

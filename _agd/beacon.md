@@ -26,7 +26,7 @@ tab_menu:
 lang: ja
 ---
 
-## GA4GH Beacon <a name="beacon"></a>
+## GA4GH Beacon  {#beacon}
 
 [AGD Beacon サービス](https://agdbeacon.ddbj.nig.ac.jp/webui)
 
@@ -43,7 +43,7 @@ Beacon の詳しい説明については以下をご覧ください。
 
 [Beacon: The Story So Far](https://drive.google.com/file/d/1TKkWdmpES52Ex4kWd8oaSoGV_z5tiz2N/view)
 
-## インデックスデータ <a name="index"></a>
+## インデックスデータ  {#index}
 
 以下のデータセットが Beacon インデックスされています。
 

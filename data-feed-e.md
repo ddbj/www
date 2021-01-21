@@ -4,7 +4,7 @@ title: RSS Feeds
 lang: en
 ---
 
-## General Announcements <a name="general"></a>
+## General Announcements  {#general}
 
 Latest news from DDBJ center and announcements regarding major changes
 and updates to DDBJ resources and tools.
@@ -13,7 +13,7 @@ and updates to DDBJ resources and tools.
 [![\*]({{ site.baseurl }}/assets/images/parts/rss.png)Subscribe]({{ site.baseurl }}/assets/rss/news-center-en.xml)
 | [Archive](/news/en/index-e.html)
 
-## Database Resources <a name="database"></a>
+## Database Resources  {#database}
 
 ### Nucleotide Sequence Database
 

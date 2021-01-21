@@ -52,7 +52,7 @@ tab_menu:
 lang: ja
 ---
 
-## Data matrix format <a name="data-matrix"></a>
+## Data matrix format  {#data-matrix}
 
 このファイルフォーマットは各データポイントが experiment 中の特定 assay、そして array design file 中の特定
 probe/probe set にマッピングされるようにするためのものです。
@@ -89,7 +89,7 @@ Wrong
 | **Hybridization REF** | Hyb1    | Hyb2     | Hyb1   | Hyb2    |
 | **Reporter REF**      | log2 FC | log2 FC | p-value | p-value |
 
-### Affymetrix 以外の data matrix の例 <a name="ex-matrix-non-affy"></a>
+### Affymetrix 以外の data matrix の例  {#ex-matrix-non-affy}
 
 下記の例では６つの内４つのアッセイが matrix file 中の log2 ratio にマッピングされています。 各データ行は [array
 design file](/gea/adf.html)（このケースでは
@@ -113,7 +113,7 @@ Non-Affymetrix data matrix:
 | **A_43_P19480**       | 1.9                     | 1.3                       |
 | **A_42_P495989**      | 5.3                     | 9.8                       |
 
-### Affymetrix data matrix の例 <a name="ex-matrix-affy"></a>
+### Affymetrix data matrix の例  {#ex-matrix-affy}
 
 この例では６つの内２つのアッセイが二種類の quantitation type (CELIntensity、CELStdev)
 にマップされています。各データ行は [array design

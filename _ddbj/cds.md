@@ -116,7 +116,7 @@ related_pages:
 ---
 　
 
-## 概要 <a name="outline"></a>
+## 概要  {#outline}
 
 feature key の中でも、タンパク質のコーディング領域を記述する CDS はデータベース中に多数、記載されています。  
 CDS feature の location はアミノ酸翻訳の対象となる塩基配列を開始コドンから終止 ドンまでの位置を基本に示します。CDS には、その位置情報、[codon\_start](/ddbj/qualifiers.html#codon_start)、由 生物のコドン表 ([transl\_table](/ddbj/qualifiers.html#transl_table) に記載されます)、な びに [transl\_except](/ddbj/qualifiers.html#transl_except) の記述に基づいて、アミノ酸翻訳を行ない、[translation](/ddbj/qualifiers.html#translation) を付加します (ただし、[pseudo](/ddbj/qualifiers.html#pseudo)、または、[pseudogene]( /ddbj/qualifiers.html#pseudogene) の指定がある場合にはアミノ酸翻訳は行いません)。
@@ -130,7 +130,7 @@ CDS feature の location はアミノ酸翻訳の対象となる塩基配列を�
 　
 
 
-## DDBJの遺伝子命名に関する考え方 <a name="product"></a>
+## DDBJの遺伝子命名に関する考え方  {#product}
 
 DDBJ は遺伝子命名に関する権限などは持っていません。また、特定の遺伝子命名管理団体との公 な協調も行っておりません。特に問題がない限り、登録者の意向に基づいて記述しています。
 
@@ -167,7 +167,7 @@ CDS feature では、[product](/ddbj/qualifiers.html#product) qualifier に産�
 : 強制力はありませんし、これに合致しない命名法を採択する生物種も多く、酵素名などの記載原則とは一部、矛盾します。しかし、それは承知の上で、どのように命名すれば良いかわからない、という登録者の方々への指針、閲覧利用者がその特徴を理解する際の一助として提示しております。
 : なお、登録完了後でも、記載の修正は随時受付けておりますので、[登録データの修正・更新](/ddbj/update.html)をご参照の上、お知らせ下さい。
 
-## 途中に出現する終止コドンへの対応 <a name="stop"></a>
+## 途中に出現する終止コドンへの対応  {#stop}
 
 CDS と考えていた領域の途中に終止コドンが存在していた場合は、まず、以下の情報が正しく指定されているか否かをご確認ください。
 
@@ -238,7 +238,7 @@ h) ゲノム、transcriptome プロジェクト由来 draft 配列で塩基配�
 : frameshift の起こる箇所を避けるように、"join" を用いて CDS location の操作的な補正を行い、強引にアミノ酸翻訳を成立させます。<br>その上で、その操作のフラグとして、[artificial\_location](/ddbj/qualifiers.html#artificial_location) を付加します。
 : <span class="red">塩基配列登録システム では記載を禁止しています。大規模配列解析専用の措置になります。</span>
 
-## Location の join 記載 <a name="join"></a>
+## Location の join 記載  {#join}
 
 location 記載に関しましては、他の feature と共通になります。詳しくは [Location
 の記述法](/ddbj/location.html)をご参照ください。
@@ -253,7 +253,7 @@ CDS feature の location に join を用いて記載する場合、mRNA が成�
   - ウイルスなどの翻訳過程で [ribosomal slippage](/ddbj/qualifiers.html#ribosomal_slippage) が起こることを示す
   - ゲノム、transcriptome の draft 配列に対し、CDS location を操作的に補正したことを [artificial\_location qualifier](/ddbj/qualifiers.html#artificial_location) で示す
 
-## translation qualifier に記載される翻訳アミノ酸配列の説明 <a name="translation"></a>
+## translation qualifier に記載される翻訳アミノ酸配列の説明  {#translation}
 
 [DDBJ のデータ公開形式 (flat file) の説明](/ddbj/flat-file.html)で示される DDBJ フォーマットの例においては、以下の情報の組み合わせにより、翻訳アミノ酸配列が塩基配列に基づいて生成され、 [translation qualifer](/ddbj/qualifiers.html#translation) に記載されています。
 
@@ -309,7 +309,7 @@ CDS feature の location に join を用いて記載する場合、mRNA が成�
          VFTDKDKAVAQLKGGAKKV"
 ```
 
-## codon\_start qualifier による翻訳開始の位置補正<a name="frame"></a>
+## codon\_start qualifier による翻訳開始の位置補正 {#frame}
 
 [codon\_start](/ddbj/qualifiers.html#codon_start) qualifier は、その CDS feature の中で最初の完全なコドンが見つかる位置を、その feature 中での相対塩基番号で補正します。
 

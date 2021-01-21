@@ -115,9 +115,9 @@ In this site, error messages outputted from checking tools for nucleotide sequen
 If you find any error message, please make some appropriate correction.  
 If you have any problems and/or questions, please [contact us](/contact-ddbj-e.html) with error messages.
 
-### Parser <a name="Parser"></a>
+### Parser  {#Parser}
 
-#### Format <a name="agpparser-1"></a>
+#### Format  {#agpparser-1}
 
 {::nomarkdown}[Code Number]:[Level]:[Type]:[File]:[Region]:[Body Text]{:/}
 
@@ -143,7 +143,7 @@ If you have any problems and/or questions, please [contact us](/contact-ddbj-e.h
   </tbody>
 </table>
 
-#### Error messeages <a name="parser-2"></a>
+#### Error messeages  {#parser-2}
 
 Terms and numbers closed with brackets ( **\[** and **\]** ) and started from **\#**, are substituted by each real value that is used in your submission.
 
@@ -159,9 +159,9 @@ Terms closed with brackets ( **\[** and **\]** ) and not started from \# are the
 
 -----
 
-### TransChecker Error Messages <a name="transChecker"></a>
+### TransChecker Error Messages  {#transChecker}
 
-#### Format <a name="agpparser-1"></a>
+#### Format  {#agpparser-1}
 
 {::nomarkdown}[Code Number]:[Level]: [Body Text]{:/}
 
@@ -190,7 +190,7 @@ TC0019:ER2: Stop codon is found in mid of CDS location.
 //
 ```
 
-#### Error message <a name="agpparser-2"></a>
+#### Error message  {#agpparser-2}
 
 Terms and numbers closed with brackets ( **\[** and **\]** ) and started from **\#**, are substituted by each real value that is used in your submission.
 
@@ -206,9 +206,9 @@ Terms closed with brackets ( \[ and \] ) and not started from \# are the reserve
 
 -----
 
-### AGP Parser Error Messages <a name="AGP Parser"></a>
+### AGP Parser Error Messages  {#AGP Parser}
 
-#### Format <a name="agpparser-1"></a>
+#### Format  {#agpparser-1}
 
 {::nomarkdown}[Code Number]:[Level]:[Region]:[Body Text] or [Code Number]:[Level]:[Body Text]{:/}
 
@@ -225,7 +225,7 @@ Terms closed with brackets ( \[ and \] ) and not started from \# are the reserve
   </tbody>
 </table>
 
-#### Error message <a name="agpparser-2"></a>
+#### Error message  {#agpparser-2}
 
 Terms and numbers closed with brackets ( **\[** and **\]** ) and started from **\#**, are substituted by each real value that is used in your submission.
 

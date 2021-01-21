@@ -12,7 +12,7 @@ related_pages:
     url: /documents/data-release-policy-e.html
 ---
 
-## Definition <a name="definition"></a>
+## Definition  {#definition}
 
 [INSD](/about/insdc-e.html#insd) (the International Nucleotide Sequence
 Databases) are composed of DDBJ, ENA and NCBI, and collect
@@ -25,7 +25,7 @@ the INSD accession number.
 The number is internationally recognized to guarantee the submitter the
 property of the submitted and published data.
 
-## Format of the INSD Accession Number <a name="format"></a>
+## Format of the INSD Accession Number  {#format}
 
 INSD accession number is composed of alphabet letters and digits.  
 The alphabet part is called "prefix". See [the prefix
@@ -57,7 +57,7 @@ Project/Sample
 
 
 
-## Some ID numbers confused with the INSD Accession Number <a name="confuse"></a>
+## Some ID numbers confused with the INSD Accession Number  {#confuse}
 
 Though often confused, the followings are not the INSD accession
 numbers;

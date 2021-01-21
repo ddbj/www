@@ -111,7 +111,7 @@ related_pages:
     url: /ddbj/validator-e.html)
 ---
 
-## Flow of MSS application <a name="flow"></a>
+## Flow of MSS application  {#flow}
 
 {: .flow .flow_en }
 - Apply your request  

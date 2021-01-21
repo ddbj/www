@@ -38,9 +38,9 @@ tab_menu:
 lang: en
 ---
 
-## Overview <a name="overview"></a>
+## Overview  {#overview}
 
-### Purpose <a name="purpose"></a>
+### Purpose  {#purpose}
 
 [The BioSample database](/biosample/index-e.html)was developed to serve as a central location in which to store descriptive information about biological samples used to generate experimental data in any of primary data archives.
 
@@ -50,7 +50,7 @@ Following figure depicts how BioSample records are organized and linked with oth
 {% include image.html url="submission/biosample_integration.jpg" caption="Overview of BioSample and BioProject integration with other DDBJ databases" class="w450" %}
 {:/}
 
-### Sample <a name="sample"></a>
+### Sample  {#sample}
 
 Given the huge diversity of sample types handled by archival databases, and the fact that appropriate sample descriptions are often dependent on the context of the study, the definition of what a BioSample represents is deliberately flexible. Typical examples of a BioSample include a cell line, a primary tissue biopsy, an individual organism or an environmental isolate.
 
@@ -64,11 +64,11 @@ Information about the sample will include:
 
 The information about human subjects and access to it will be compliant with all relevant ethical requirements. The DDBJ BioSample database does not support controlled access mechanisms and thus cannot host human clinical samples that may have associated privacy concerns.
 
-### Reference biosamples <a name="reference-biosamples"></a>
+### Reference biosamples  {#reference-biosamples}
 
 A particular set of biosamples submitted to BioSample databases directly may be referenced subsequently from many experiments. We will refer to this set of samples as *reference biosamples*. Example of these may be some commonly used cell lines or mouse strains. The BioSample pre-registered commonly-used samples and make it easy to reference these from other databases at INSDC. Reference biosamples include [ATCC](http://www.atcc.org/) and [Coriell](http://ccr.coriell.org/).
 
-### Sample attributes <a name="sample-attributes"></a>
+### Sample attributes  {#sample-attributes}
 
 A major component of a BioSample record is the sample attributes section. Attributes define the material under investigation and can include sample characteristics such as cell type, collection site and phenotypic information like disease state.
 
@@ -84,13 +84,13 @@ For the MIxS check lists, please see Nature Biotechnology 29, 415–420 (2011) \
 {% include image.html url="books/mixs.jpg" caption="MIxS check list" class="w450" %}
 {:/}
 
-### Organism <a name="organism"></a>
+### Organism  {#organism}
 
 For an organism name of the BioSample [organism](/biosample/attribute-e.html?all=all#organism) attribute, see the ["Organism name"](/ddbj/organism-e.html) page. Previously, a strain name or some other lower taxon was required for the organism name of whole genomic sequence, mainly microorganisms. However, currently, the value of organism qualifier should be just a scientific name, in principle, even though for microbial genomes. Please describe a strain name in the [strain](/biosample/attribute-e.html?all=all#strain) attribute of BioSample.
 
 Related news: [Changes in organism strain information management](/news/en/2013-12-13-e.html)
 
-### Antibiogram <a name="antibiogram"></a>
+### Antibiogram  {#antibiogram}
 
 An antibiogram table can be included in a BioSample record (Example: [SAMN07958491](https://www.ncbi.nlm.nih.gov/biosample/SAMN07958491)). To submit the table, please contact [BioSample team](/contact-ddbj-e.html).
 
@@ -100,18 +100,18 @@ For the antibiogram submission guidelines, please see the NCBI BioSample pages.
   - [Antibiograms - pathogen MIC](https://www.ncbi.nlm.nih.gov/biosample/docs/antibiogram/)
   - [Antibiograms - mycobacterial non-MIC](https://www.ncbi.nlm.nih.gov/biosample/docs/antibiogram-myco/)
 
-### XML schema <a name="xml-schema"></a>
+### XML schema  {#xml-schema}
 
 [BioSample XML schema](https://github.com/ddbj/pub/tree/master/docs/biosample)
 
-## Metadata <a name="metadata"></a>
+## Metadata  {#metadata}
 
 Required<span class="red">\*</span>  
 Conditionally required<span class="conditionally_required">\*</span>
 
-### Submitter <a name="Submitter"></a>
+### Submitter  {#Submitter}
 
-#### Submitter <a name="Area_biosample-submitter"></a>
+#### Submitter  {#Area_biosample-submitter}
 
 Contact information of submitter(s). Questions and notifications about a submission are contacted to the e-mail address(es) listed here. Personal contact information is considered confidential and is collected to be used by DDBJ staff should questions arise; the general information about the research center is used for public display.
 
@@ -128,7 +128,7 @@ Contact information of submitter(s). Questions and notifications about a submiss
 [E-mail](#BioSample_E-mail)<span class="red">\*</span><a name="BioSample_E-mail"></a>  
 : E-mail address. Enter an address from the organizations domain.
 
-#### Organization <a name="Area_biosample-organization"></a>
+#### Organization  {#Area_biosample-organization}
 
 [Organization](#Organization)<a name="Organization"></a>  
 : Organization to which a contact person belongs.
@@ -143,7 +143,7 @@ Contact information of submitter(s). Questions and notifications about a submiss
 [Submitting organization URL](#BioSample_Submitting_organization_URL)<a name="BioSample_Submitting_organization_URL"></a>  
 : The URL of submitter's organization.
 
-#### Data Release <a name="Area_biosample-data-release"></a>
+#### Data Release  {#Area_biosample-data-release}
 
 Select "Hold" or "Release". You cannot specify hold date. Please see [Data Release](#sample-release) for detailed release mechanism.
 
@@ -155,7 +155,7 @@ Select "Hold" or "Release". You cannot specify hold date. Please see [Data Relea
 [Hold](#BioSample_Hold)<a name="BioSample_Hold"></a>  
 : Submitted BioSample record is released when the DDBJ, DRA and DTA record(s) referencing this BioSample ID is released. Private DDBJ record(s) referencing this BioSample ID is not released.
 
-### General info <a name="General-info"></a>
+### General info  {#General-info}
 
 [External Links](#Link)<a name="Link"></a>  
 : An URL may be provided, with a label for the resource, to reference a resource that is directly relevant to the submitted sample.
@@ -170,9 +170,9 @@ Select "Hold" or "Release". You cannot specify hold date. Please see [Data Relea
 [URL](#BioSample_URL)<a name="BioSample_URL"></a>  
 : URL of the web site.
 
-### Sample type <a name="Sample-type"></a>
+### Sample type  {#Sample-type}
 
-#### Core Package <a name="Area_core-package"></a>
+#### Core Package  {#Area_core-package}
 
 [Genome, metagenome or marker sequences (MIxS compliant)](#MIxS_Sample)<a name="MIxS_Sample"></a>  
 : Use for genomes, metagenomes, and marker sequences. These samples include specific attributes that have been defined by the Genome Standards Consortium (GSC) to formally describe and standardize sample metadata for genomes, metagenomes, and marker sequences. The samples are validated for compliance based on the presence of the required core attributes as described in [MIxS](http://wiki.gensc.org/index.php?title=MIxS). For details, please see [the GSC websites](http://wiki.gensc.org/index.php?title=MIxS).
@@ -187,7 +187,7 @@ Select "Hold" or "Release". You cannot specify hold date. Please see [Data Relea
 [Other samples (e.g. transcriptome, epigenetics etc)](#General_Sample)<a name="General_Sample"></a>  
 : Use for any sample type (e.g. transcriptome, epigenetics etc). These samples are described using common core attributes and submitter-supplied custom attributes.
 
-#### MIxS <a name="Area_mixs"></a>
+#### MIxS  {#Area_mixs}
 
 [(Meta)Genomic Sequences Sample (MIMS)](#Meta_Genomic_Sequences_Sample)<a name="Meta_Genomic_Sequences_Sample"></a>
 
@@ -223,7 +223,7 @@ Select "Hold" or "Release". You cannot specify hold date. Please see [Data Relea
     
   MIMARKS-survey is applicable to contextual data for marker gene sequences, obtained directly from the environment, without culturing or identification of the organisms.
 
-#### Environmental package <a name="Area_environmental-package"></a>
+#### Environmental package  {#Area_environmental-package}
 
 [Environmental package (MIxS Sample)](#Environmental_package)<a name="Environmental_package"></a>
 
@@ -244,7 +244,7 @@ Select "Hold" or "Release". You cannot specify hold date. Please see [Data Relea
   | wastewater/sludge           |
   | water                       |
     
-### Attributes <a name="Attributes"></a>
+### Attributes  {#Attributes}
 
 [Sample attributes](#Sample_attributes)<a name="Sample_attributes"></a>  
 : Download BioSample worksheet which has been customised to fit models. This is a tab-delimited text file that may be opened with a spreadsheet program or a text editor. The validator checks the uploaded text file and feedbacks [warning and error messages](/biosample/validation-e.html). According to the messages, revise the text file and upload the file again. Submitters can not submit the BioSample unless all errors are resolved.
@@ -254,7 +254,7 @@ Select "Hold" or "Release". You cannot specify hold date. Please see [Data Relea
 [Attributes](#BioSample_Attributes)<a name="BioSample_Attributes"></a>  
 : [List of attributes](/biosample/attribute-e.html). Besides the mandatory fields, there are several optional attribute fields. To make the BioSample record most useful, you should include all available information in the submission. Commonly used and useful attributes have been defined, with standardized nomenclature. In preparing your submission, please refer to [this attributes list](/biosample/attribute-e.html) and [BioSample examples](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482) and fill in the relevant fields. If you have information of a type that does not appear in the standard list, you can create it as a user-defined attribute.
 
-### Overview <a name="Overview"></a>
+### Overview  {#Overview}
 
 [Overview](#BioSample_Overview)<a name="BioSample_Overview"></a>  
 : Review your submission and submit the BioSample by clicking the "Submit" button at bottom. The uploaded sample attribute file can be downloaded at "Submission ID.txt".
@@ -267,9 +267,9 @@ Submission of research data from human subjects
 : <span class="red">For submitting data from human subjects (human data) to the databases of DDBJ center, it is submitter's responsibility to ensure that the dignity and right of human subject are protected in accordance with all applicable laws, ordinances, guidelines and policies of submitter's institution. In principle, make sure to remove any direct personal identifiers of human subjects from your data to be submitted. Before submitting human data, read the "[Submission of research data from human subjects](/policies-e.html#human)".</span>
 </div>
 
-## Submission to BioSample <a name="sample-submission"></a>
+## Submission to BioSample  {#sample-submission}
 
-### Create a new sample submission <a name="create-new-sample-submission"></a>
+### Create a new sample submission  {#create-new-sample-submission}
 
 Obtain a submission account according to the [Account Handbook](/account-e.html).
 
@@ -303,7 +303,7 @@ For the Sample type, please see the [BioSample Handbook](#Sample_type).
 {% include image.html url="books/hbs-03.jpg" caption="Select a sample type" class="w450" %}
 {:/}
 
-### Enter sample attributes <a name="enter-sample-attributes"></a>
+### Enter sample attributes  {#enter-sample-attributes}
 
 [List and explanation of BioSample attributes](/biosample/attribute-e.html). User-defined attributes can be added to the rightmost column.
 
@@ -325,7 +325,7 @@ From second lines, enter one sample per line. Enter PSUB submission id in [biopr
 In one submission, samples can be submitted as 1 sample - 1 line in sample attributes tab-delimited text file.
 </div>
 
-#### Missing value reporting <a name="missing-value-reporting"></a>
+#### Missing value reporting  {#missing-value-reporting}
 
 [The International Nucleotide Database Collaboration (INSDC)](https://www.ebi.ac.uk/ena/about/missing-values-reporting)have developed a standardised missing/null value reporting language to be used where a value of an expected format for sample metadata reporting can not be provided. Submitters are strongly encouraged to always provide true values of expected formats. However, if missing/null value reporting is required submitters are asked to use a term with the finest granularity for their reported situation. If appropriate, use a term in the "lower level", if not, use a term in the "top level".
 
@@ -387,7 +387,7 @@ INSDC missing value reporting terms
   </tbody>
 </table>
 
-#### Sample attributes validation <a name="validation"></a>
+#### Sample attributes validation  {#validation}
 
 Upload the sample attribute file by selecting the file and click the Continue button. The validator checks the uploaded file accoring to the rules and feedbacks the error and warning messages. Submitters can not submit the BioSample unless all errors are resolved.
 
@@ -403,7 +403,7 @@ Check content in the last "OVERVIEW" and submit samples. In the "ATTRIBUTES" are
 {% include image.html url="books/hbs-05.jpg" caption="Submit BioSample" class="w450" %}
 {:/}
 
-### Accession numbers <a name="accession-numbers"></a>
+### Accession numbers  {#accession-numbers}
 
 When creating a new submission, a temporary ID starts with SSUB is assigned. The DDBJ BioSample issues accession numbers with prefix SAMD to the submitted samples passed validation. When an unregistered organism is described in the organism or the locus\_tag\_prefix has values, accession numbers are issued after curator review. You can view status and accession numbers of submitted samples in your [submission account](https://ddbj.nig.ac.jp/D-way/).
 
@@ -412,7 +412,7 @@ When creating a new submission, a temporary ID starts with SSUB is assigned. The
   - Do not double submit the samples which have been registered to EBI and NCBI.
 </div>
 
-### Release of BioSample<a name="sample-release"></a> 
+### Release of BioSample {#sample-release} 
 
 You can select the following options:
 
@@ -427,6 +427,6 @@ The submitted sample data can be kept private. Sample data are automatically rel
 
 FAQ: [How are linked BioProject/BioSample/sequence data released?](/faq/en/bp-bs-seq-release.html)
 
-### Update BioSample <a name="update-biosample"></a>
+### Update BioSample  {#update-biosample}
 
 It is possible to update data after registration. Please contact us from [Message form](/contact-ddbj-e.html).

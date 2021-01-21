@@ -52,7 +52,7 @@ tab_menu:
 lang: en
 ---
 
-## MAGE-TAB <a name="mage-tab"></a>
+## MAGE-TAB  {#mage-tab}
 
 The MicroArray Gene Expression Tabular ([MAGE-TAB](http://fged.org/projects/mage-tab/)) format has been developed and adopted by the functional genomics community as a means of representing and communicating data about a functional genomics experiment in a structured and standardised way. It was designed for data collection and annotation, as well as for data exchange between tools and databases, including submission tools to public repositories such as ArrayExpress and GEA. The full [specification](http://fged.org/projects/mage-tab/) outlines the format.
 
@@ -60,11 +60,11 @@ The MicroArray Gene Expression Tabular ([MAGE-TAB](http://fged.org/projects/mage
 {% include image.html url="magetab/magetab_over.jpg" caption="Relationships between IDF, SDRF, ADF and raw and processed data files" class="w450" %}
 {:/}
 
-## IDF <a name="idf"></a>
+## IDF  {#idf}
 
 The IDF (Investigation Description Format) file is used to give an overview of the experiment, including the experimental design, protocols, publication information and submitter details.
 
-### IDF example <a name="idf_ex"></a>
+### IDF example  {#idf_ex}
 
 [IDF example](/gea/example-e.html#idf)
 
@@ -93,7 +93,7 @@ The IDF (Investigation Description Format) file is used to give an overview of t
 | [Comment\[Public Release Date\]](#Comment_idf)        | 2018-06-22                                                                      |     |
 | [Comment\[Last Update Date\]](#Comment_idf)           | 2018-06-22                                                                      |     |
 
-### IDF tags <a name="idf_tags"></a>
+### IDF tags  {#idf_tags}
 
 The IDF component of a MAGE-TAB document consists of a set of unique tags attached to their corresponding values in a simple tab-delimited text format. For example, "Experiment Description" should be followed by a free-text description of the experiment. Most of the following fields can be used with more than one value, so that multiple protocols, persons, experimental factors etc. can be defined in a single IDF file. In these cases, the different "objects" are separated by tabs. Those fields which can contain only one value are indicated below.
 
@@ -208,7 +208,7 @@ Protocol Type<a name="Protocol_Type"></a>
   - Comment\[Last Update Date\]
   - Comment\[AdditionalFile:TXT\]
 
-## SDRF <a name="sdrf"></a>
+## SDRF  {#sdrf}
 
 The SDRF (Sample and Data Relationship Format) describes the sample characteristics and the relationship between samples, arrays, data files etc. The information in the SDRF is organized so that it follows the natural flow of a functional genomics experiment. It begins with describing your samples and finishes with the names of the data files generated from the analysis of the experiment results. For single-channel microarray data one row in the SDRF is equal to one hybridization. For two-channel microarray data one row is equal to one channel. For sequencing submissions you generally create one row per raw file (Run) including paired sequencing.
 
@@ -216,7 +216,7 @@ The SDRF (Sample and Data Relationship Format) describes the sample characterist
 {% include image.html url="magetab/sdrf.jpg" caption="SDRF overall structure" class="w450" %}
 {:/}
 
-### SDRF sections <a name="sdrf_sections"></a>
+### SDRF sections  {#sdrf_sections}
 
 [Protocols](#Protocols_section)<a name="Protocols_section"></a> 
 : In most cases, each treatment within an experiment will be represented simply by a [Protocol REF](#Protocol_REF) column containing references to the [Protocol Names](#Protocol_Name) defined in the IDF.
@@ -325,7 +325,7 @@ Assays<a name="Assays_section"></a>
   | [Experimental Factor Name](#Experimental_Factor_Name) | temperature |
   | [Experimental Factor Type](#Experimental_Factor_Type) | temperature |
     
-### All valid SDRF column headings <a name="SDRF_headings"></a>
+### All valid SDRF column headings  {#SDRF_headings}
 
 [Source Name](#Source_Name)<a name="Source_Name"></a>  
 : Used as an identifier within the MAGE-TAB document. This column contains user-defined names (by default, a sample name of corresponding BioSample is used) for the [Source](#Sources_section) materials. The following columns can be used to annotate "Source Name" columns:

@@ -15,7 +15,7 @@ related_pages:
 DDBJ Center collects nucleotide sequence data as a member of [INSDC(International Nucleotide Sequence Database Collaboration)](http://www.insdc.org/) and provides freely available nucleotide sequence data and supercomputer system, to support research　activities in life science.
 
 
-## Mission <a name="mission"></a>
+## Mission  {#mission}
 
 It is generally accepted that research in biology today requires both
 computer and experimental equipment equally well. Information achieved
@@ -44,7 +44,7 @@ the database online accessible to anyone in the world.
 
 
 
-## Governing Structure <a name="governing"></a>
+## Governing Structure  {#governing}
 
 Currently, DDBJ Center is in operation at [Research Organization of
 Information and System National Institute of
@@ -61,10 +61,10 @@ Committee](/about/insdc-e.html#iac).
 
 
 
-## Major Activities <a name="activity"></a>
+## Major Activities  {#activity}
 
 
-### Construction and Operation of INSDC <a name="insd"></a>
+### Construction and Operation of INSDC  {#insd}
 
 In Japan, DDBJ Center internationally contributes as a member of
 [INSDC](/about/insdc-e.html) to collect and to provide nucleotide sequence
@@ -85,7 +85,7 @@ course accepts data and issue the accession numbers to researchers in
 any other countries. 99% of INSD data from Japanese researchers are
 submitted through DDBJ.
 
-#### Providing nucleotide and amino acid sequence data related to patent applications <a name="pat"></a>
+#### Providing nucleotide and amino acid sequence data related to patent applications  {#pat}
 
 [INSD](/about/insdc.html#insd) contains nucleotide sequence data related to
 patent applications collected by Patent Offices in Japan, Korea, Europe
@@ -104,7 +104,7 @@ Refer to:
 
 
 
-### Management and operation of the National Institute of Genetics Supercomputer System <a name="supercom"></a>
+### Management and operation of the National Institute of Genetics Supercomputer System  {#supercom}
 
 [The National Institute of Genetics Supercomputer
 System](https://sc.ddbj.nig.ac.jp/en) (NIG Supercomputer) is a
@@ -114,23 +114,23 @@ comprising leading-edge, large-scale cluster-type computers, large-scale
 memory-sharing computers, and high-capacity, high-speed disk devices.
 
 
-### Providing services to search and to analyze biological data <a name="Providing_services_to_search_and_to_analyze_biological_data"></a>
+### Providing services to search and to analyze biological data  {#Providing_services_to_search_and_to_analyze_biological_data}
 
-#### Biological database management: tools for depositing and retrieving <a name="Biological_database_management__tools_for_depositing_and_retrieving"></a>
+#### Biological database management: tools for depositing and retrieving  {#Biological_database_management__tools_for_depositing_and_retrieving}
 
 We provide databases maintained by DDBJ and others through [web
 services](/services/) or on NIG Supercomputer.  
 You can collectively download databases from [our FTP
 site](/services/).
 
-#### Providing software tools for analyzing biological  <a name="Providing_software_tools_for_analyzing_biological_data"></a>
+#### Providing software tools for analyzing biological   {#Providing_software_tools_for_analyzing_biological_data}
 
 We provide software tools for data analyses developed by DDBJ and others
 through [web services](/services-e.html) or on NIG Supercomputer.
 
 
 
-### Training course and publication <a name="Training_course_and_publication"></a>
+### Training course and publication  {#Training_course_and_publication}
 
 DDBJ holds a training course for bioinformatics,
 [DDBJing](/activities/index.html) (in Japanese), to teach how to submit

@@ -101,7 +101,7 @@ lang: en
 The qualifier keys that are used and recommended for DDBJ new submissions are as follows.
 For further information of INSDC qualifier keys, read [Feature Table Definition](/ddbj/feature-table-e.html): [7.3.1 Qualifier List](/ddbj/feature-table-e.html#7.3.1).
 
-## Feature/Qualifier Usage Matrix <a name="usage"></a>
+## Feature/Qualifier Usage Matrix  {#usage}
 
 The chart, [Feature/Qualifier usage matrix](https://docs.google.com/spreadsheets/u/3/d/1qosakEKo-y9JjwUO_OFcmGCUfssxhbFAm5NXUAnT3eM/edit), explains recommended combinations of feature and
 qualifier keys for DDBJ submissions.

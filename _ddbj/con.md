@@ -138,7 +138,7 @@ CON エントリの登録には [AGP ファイル](/ddbj/file-format.html#agp)�
 
 CON データの登録は [Mass Submission System (MSS)](/ddbj/mss.html) で受け付けております。
 
-## DDBJ フォーマットの例 <a name="flat-file"></a>
+## DDBJ フォーマットの例  {#flat-file}
 
 <pre><code><a id="LocusA" href="/ddbj/flat-file#LocusB">LOCUS</a>       <a id="LocusNameA" href="/ddbj/flat-file#LocusNameB">BA001000</a>              <a id="SequenceLengthA" href="/ddbj/flat-file#SequenceLengthB">5631 bp</a>    <a id="MoleculeTypeA" href="/ddbj/flat-file#MoleculeTypeB">DNA</a>    <a id="MoleculeTypeA" href="/ddbj/flat-file#MoleculeTypeB">linear</a>   <a id="DivisionA" href="/ddbj/flat-file#DivisionB">CON</a> <a id="ModificationDateA" href="/ddbj/flat-file#ModificationDateB">06-DEC-2008</a>
 <a id="DefinitionA" href="/ddbj/flat-file#DefinitionB">DEFINITION</a>  Homo sapiens DNA, chromosome 7, scaffold_ASE1. 

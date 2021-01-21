@@ -145,7 +145,7 @@ entries.
 
 You can submit CON data to DDBJ via [Mass Submission System (MSS)](/ddbj/mss-e.html).
 
-## Sample flat file <a name="flat-file"></a>
+## Sample flat file  {#flat-file}
 
 <pre><code><a id="LocusA" href="/ddbj/flat-file-e#LocusB">LOCUS</a>       <a id="LocusNameA" href="/ddbj/flat-file-e#LocusNameB">BA001000</a>              <a id="SequenceLengthA" href="/ddbj/flat-file-e#SequenceLengthB">5631 bp</a>    <a id="MoleculeTypeA" href="/ddbj/flat-file-e#MoleculeTypeB">DNA</a>    <a id="MoleculeTypeA" href="/ddbj/flat-file-e#MoleculeTypeB">linear</a>   <a id="DivisionA" href="/ddbj/flat-file-e#DivisionB">CON</a> <a id="ModificationDateA" href="/ddbj/flat-file-e#ModificationDateB">06-DEC-2008</a>
 <a id="DefinitionA" href="/ddbj/flat-file-e#DefinitionB">DEFINITION</a>  Homo sapiens DNA, chromosome 7, scaffold_ASE1. 

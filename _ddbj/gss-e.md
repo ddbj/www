@@ -152,7 +152,7 @@ Notes on the GSS submission
   - Clone Id is required for [clone](/ddbj/qualifiers-e.html#clone)
     qualifer.
 
-## Sample flat file <a name="flat-file"></a>
+## Sample flat file  {#flat-file}
 
 Aspects of GSS
 

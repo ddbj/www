@@ -114,7 +114,7 @@ related_pages:
 Parser は、Mass Submission System (MSS) を利用して DDBJ に登録する際に必要な
 [配列ファイル](/ddbj/file-format.html#sequence) と [アノテーションファイル](/ddbj/file-format.html#annotation) のフォーマットチェックを行うツールです。
 
-## インストール <a name="install"></a>
+## インストール  {#install}
 
 <ol>
   <li>
@@ -215,7 +215,7 @@ exit $RETVAL
   </li>
 </ol>
 
-## 実行 <a name="exec"></a>
+## 実行  {#exec}
 
 任意のディレクトリで下記の通りに、コマンドを実行して下さい。
 

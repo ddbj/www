@@ -140,7 +140,7 @@ organisms, and "feature" information, etc. The "feature" is defined by
 to describe the biological nature such as gene function and other
 property of the nucleotide sequence.
 
-## The virtual sample of DDBJ flat file <a name="The_virtual_sample_of_DDBJ_flat_file"></a>
+## The virtual sample of DDBJ flat file  {#The_virtual_sample_of_DDBJ_flat_file}
 
 <pre><code><a id="LocusA" href="/ddbj/flat-file#LocusB">LOCUS</a>       <a id="LocusNameA" href="/ddbj/flat-file#LocusNameB">AB000000</a>              <a id="SequenceLengthA" href="/ddbj/flat-file#SequenceLengthB">450 bp</a>    <a id="MoleculeTypeA" href="/ddbj/flat-file#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="/ddbj/flat-file#MoleculeFormB">linear</a>   <a id="DivisionA" href="/ddbj/flat-file#DivisionB">HUM</a> <a id="ModificationDateA" href="/ddbj/flat-file#ModificationDateB">01-JUN-2009</a>
 <a id="DefinitionA" href="/ddbj/flat-file#DefinitionB">DEFINITION</a>  Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate
@@ -203,7 +203,7 @@ Even when the sequences are similar, the contents on the flat files may
 vary according to the submitter's research aim etc.  
 Please take that point into consideration when you refer search results.
 
-## FIELD COMMENTS <a name="FIELD_COMMENTS"></a>
+## FIELD COMMENTS  {#FIELD_COMMENTS}
 
 {::options parse_block_html="true" /}
 <div id="LocusB">

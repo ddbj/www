@@ -52,7 +52,7 @@ tab_menu:
 lang: ja
 ---
 
-## GEA submission flow <a name="gea-submission-flow"></a>
+## GEA submission flow  {#gea-submission-flow}
 
 ### 1\. 登録アカウントを取得 
 
@@ -61,15 +61,15 @@ lang: ja
 
 ### 2\. BioProject、BioSample と Sequence Read Archive(DRA)に登録 
 
-#### [BioProject](/bioproject/submission.html) <a name="BioProject"></a>
+#### [BioProject](/bioproject/submission.html)  {#BioProject}
 
   - 研究プロジェクトの内容
 
-#### [BioSample](/biosample/submission.html)<a name="_BioSample"></a> ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
+#### [BioSample](/biosample/submission.html) {#_BioSample} ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
 
   - 実験データを得るのに使われた生物学的、物理的にユニークなサンプル
 
-#### [DRA](/dra/submission.html)<a name="_DRA"></a> ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
+#### [DRA](/dra/submission.html) {#_DRA} ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
 
   - 生シークエンスリードとアライメント
 
@@ -91,12 +91,12 @@ lang: ja
 
 ### 6\. IDF と SDRF を作成 
 
-#### IDF <a name="idf"></a>
+#### IDF  {#idf}
 
   - [IDF (Investigation Description Format)](/gea/metadata.html#idf)
     ファイルで実験デザイン、プロトコールや文献情報といった実験全体を記述します
 
-#### SDRF <a name="sdrf"></a> ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
+#### SDRF  {#sdrf} ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
 
   - [SDRF (Sample and Data RelationshipFormat)](/gea/metadata.html#sdrf)
     ファイルでサンプル属性とサンプル、アレイ、データファイル間の関係性を記述します
@@ -107,7 +107,7 @@ lang: ja
   - 登録ウェブシステムから IDF と SDRF を投稿するとアップロードしたデータファイルの [検証処理](/gea/validation.html)が自動的に始まります
   - 検証処理を通過した登録が査定されます
 
-## 登録前のチェックリスト <a name="checklist"></a>
+## 登録前のチェックリスト  {#checklist}
 
 {::options parse_block_html="true" /}
 <div class="accordion-menu">
@@ -132,9 +132,9 @@ GEA では一つの登録に異なる種類のテクノロジー（マイクロ�
 </div>
 </div>
 
-## シークエンス実験の登録 <a name="seq-sub"></a>
+## シークエンス実験の登録  {#seq-sub}
 
-### 新規登録の作成 <a name="create-new-submission"></a>
+### 新規登録の作成  {#create-new-submission}
 
 [D-way (https://trace.ddbj.nig.ac.jp/D-way)](https://ddbj.nig.ac.jp/D-way/) にログインするとトップページが表示されます。上部の GEA メニューから GEA 登録サイトに移動します。
 
@@ -165,7 +165,7 @@ DDBJ センターから登録者に問い合わせた後三か月以上回答が
 | Confidential     | 公開用ファイルの作成処理が完了し、非公開に保たれている状態 |
 | Public           | 公開されている状態                     |
 
-### 解析済みファイルのアップロード<a name="upload-data"></a> 
+### 解析済みファイルのアップロード {#upload-data} 
 
 {::options parse_block_html="true" /}
 <div class="accordion-menu">
@@ -312,7 +312,7 @@ ftp-private.ddbj.nig.ac.jp サーバに秘密鍵を使って ssh でログイン
 ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 </div>
 
-### Submission <a name="Submission"></a>
+### Submission  {#Submission}
 
 四年以内の公開予定日指定、もしくは、データ処理後即日公開を選択します。登録者の名前と所属組織は公開されますがメールアドレスは公開されません。
 
@@ -324,7 +324,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 {% include image.html url="books/array-sub2.jpg" caption="登録管理情報を入力します" class="w550" %}
 {:/}
 
-### DRA <a name="DRA"></a>
+### DRA  {#DRA}
 
 自身のアカウントで登録した DRA submission を一つ選択します。DRA が未登録の場合は [DRA登録サイト](/dra/submission.html#dra-submission)で DRA を登録します。
 
@@ -334,7 +334,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 {% include image.html url="books/seq-dra.jpg" caption="GEA 登録で使う DRA submission を選択" class="w550" %}
 {:/}
 
-### BioProject <a name="BioProject"></a>
+### BioProject  {#BioProject}
 
 自身のアカウントで登録済みの BioProject を一つ選択します。BioProject が未登録の場合は [BioProject登録サイト](/bioproject/submission.html#bioproject-submission)でプロジェクトを登録します。
 
@@ -346,7 +346,7 @@ GEA と DRA submission が同じプロジェクトである場合は DRA submiss
 {% include image.html url="books/gea-bp.jpg" caption="GEA 登録で使う BioProject を一つ選択します" class="w550" %}
 {:/}
 
-### IDF <a name="idf"></a>
+### IDF  {#idf}
 
 [IDF (Investigation Description Format)](/gea/metadata.html#idf) の内容を入力します。
 
@@ -360,7 +360,7 @@ GEA と DRA submission が同じプロジェクトである場合は DRA submiss
 {% include image.html url="books/seq-idf.jpg" caption="IDF の内容を入力" class="w600" %}
 {:/}
 
-### SDRF <a name="sdrf"></a>
+### SDRF  {#sdrf}
 
 {::nomarkdown}
 {% include image.html url="books/seq-sdrf-down.jpg" caption="SDRF テンプレートファイルをダウンロード" class="w400" %}
@@ -422,7 +422,7 @@ Enter required fields by overwriting \<Required: fill in the content\> tags.
 {% include image.html url="books/seq-sdrf-up.jpg" caption="作成した SDRF ファイルを選択" class="w450" %}
 {:/}
 
-### Overview と投稿 <a name="submit"></a>
+### Overview と投稿  {#submit}
 
 最後の Overview タブで IDF と SDRF ファイルをダウンロードして内容をチェックします。修正が必要な場合はタブを戻ってメタデータを修正します。
 
@@ -432,7 +432,7 @@ Enter required fields by overwriting \<Required: fill in the content\> tags.
 {% include image.html url="books/seq-submit.jpg" caption="IDF と SDRF の内容を確認してから投稿" class="w450" %}
 {:/}
 
-### 検証処理 <a name="validation"></a>
+### 検証処理  {#validation}
 
 メタデータ投稿時に IDF と SDRF に記載されているデータファイルが対象の登録用ディレクトリにアップロードされていない場合、"Data file is not uploaded" というエラーメッセージが表示され投稿が中断されます。
 
@@ -443,7 +443,7 @@ Validator は [validation rule](/gea/validation.html) に従ってメタデー�
 {:/}
 
 
-### アクセッション番号 <a name="accession"></a>
+### アクセッション番号  {#accession}
 
 完成した GEA experiment に対して [GEA アクセッション番号](/gea/overview.html#acc)が発行されます。
 
@@ -453,9 +453,9 @@ Validator は [validation rule](/gea/validation.html) に従ってメタデー�
 {% include image.html url="books/seq-accession.jpg" caption="GEA アクセッション番号" class="w500" %}
 {:/}
 
-## 更新 <a name="update-submission"></a>
+## 更新  {#update-submission}
 
-### 各データベースにおける更新方法 <a name="update-in-each-database"></a>
+### 各データベースにおける更新方法  {#update-in-each-database}
 
 <table>
 <colgroup>
@@ -489,11 +489,11 @@ Validator は [validation rule](/gea/validation.html) に従ってメタデー�
 </tbody>
 </table>
 
-### アーカイブされた experiment の削除 <a name="withdraw-archived-objects"></a>
+### アーカイブされた experiment の削除  {#withdraw-archived-objects}
 
 アーカイブされた Experiment を削除する場合は [GEA チームに連絡](/contact-ddbj.html)します。
 
-## 補足: MD5 値<a name="supplement-md5"></a> 
+## 補足: MD5 値 {#supplement-md5} 
 
 MD5 (Message Digest Algorithm 5) はハッシュ関数であり、与えられたファイルに対してハッシュ値 (MD5値、32桁の英数字) を出力します。ファイルが破損していると MD5 値が変化します。 DRA では、到着したファイルの MD5 値の一致をチェックすることで、ファイルの破損がないかどうか確認しています。
 

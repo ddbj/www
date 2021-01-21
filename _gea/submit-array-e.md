@@ -52,7 +52,7 @@ tab_menu:
 lang: en
 ---
 
-## GEA submission flow <a name="gea-submission-flow"></a>
+## GEA submission flow  {#gea-submission-flow}
 
 ### 1\. Obtain a submission account
 
@@ -61,11 +61,11 @@ lang: en
 
 ### 2\. Register a BioProject and BioSample(s)
 
-#### [BioProject](/bioproject/submission-e.html) <a name="BioProject"></a>
+#### [BioProject](/bioproject/submission-e.html)  {#BioProject}
 
   - A description of the reseach effort.
 
-#### [BioSample](/biosample/submission-e.html) <a name="_BioSample"></a> ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv} 
+#### [BioSample](/biosample/submission-e.html)  {#_BioSample} ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv} 
 
   - A description of biologically or physically unique samples used to generate experimental data.
 
@@ -84,11 +84,11 @@ metadata can be submitted as a tab-delimited text file.
 
 ### 5\. Prepare IDF and SDRF
 
-#### IDF <a name="idf"></a> 
+#### IDF  {#idf} 
 
   - The [IDF (Investigation Description Format)](/gea/metadata-e.html#idf) file is used to give an overview of the experiment, including the experimental design, protocols and publication information.
 
-#### SDRF <a name="SDRF"></a> ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
+#### SDRF  {#SDRF} ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
 
   - The [SDRF (Sample and Data Relationship Format)](/gea/metadata-e.html#sdrf) describes the sample characteristics and the relationship between samples, arrays, data files etc.
   - SDRF template is generated from selected BioProject and BioSample(s). Enter additional information.
@@ -98,7 +98,7 @@ metadata can be submitted as a tab-delimited text file.
   - After submitting IDF and SDRF in the submission web system, [validation](/gea/validation-e.html) of the uploaded data files will automatically begin.
   - The submission passed validation will be reviewed.
 
-## Pre-submission checklist <a name="checklist"></a>
+## Pre-submission checklist  {#checklist}
 
 {::options parse_block_html="true" /}
 <div class="accordion-menu">
@@ -137,9 +137,9 @@ GEA will ask you for the technology and name of the array, and applies it to the
 </div>
 </div>
 
-## Microarray experiment submission <a name="array-sub"></a>
+## Microarray experiment submission  {#array-sub}
 
-### Create a new submission <a name="create-new-submission"></a>
+### Create a new submission  {#create-new-submission}
 
 Login [the D-way (https://trace.ddbj.nig.ac.jp/D-way)](https://ddbj.nig.ac.jp/D-way/) and the top page is displayed. Move to the GEA submission site from the "GEA" menu at the top.
 
@@ -173,7 +173,7 @@ List of submission status
 | Public           | Released to public.                                      |
 
 {::options parse_block_html="true"/}
-### Upload raw and processed data files<a name="upload-data"></a> 
+### Upload raw and processed data files {#upload-data} 
 
 {::options parse_block_html="true"/}
 <div class="accordion-menu">
@@ -298,7 +298,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 </div>
 
-### Submission <a name="Submission"></a>
+### Submission  {#Submission}
 
 Set the hold date within four years or choose immediate release when processed. Submitters' name and affiliation will be public but e-mail address will not be disclosed.
 
@@ -313,7 +313,7 @@ You can delete an un-submitted GEA submission at "Delete submission".
 {% include image.html url="books/array-sub2.jpg" caption="Enter submission information" class="w550" %}
 {:/}
 
-### BioProject <a name="BioProject"></a>
+### BioProject  {#BioProject}
 
 Select a submitted project registered in your account. If a BioProject is not registered, please go to the [BioProject submission site](/bioproject/submission-e.html#bioproject-submission) and submit a project.
 
@@ -323,7 +323,7 @@ To use a project obtained in the other account, please [contact GEA team](/conta
 {% include image.html url="books/gea-bp.jpg" caption="Select a BioProject for the GEA experiment" class="w550" %}
 {:/}
 
-### BioSample <a name="BioSample"></a>
+### BioSample  {#BioSample}
 
 Select submitted BioSamples registered in your account. If BioSamples are not registered, please go to the [BioSample submission site](/biosample/submission-e.html#biosample-submission) and submit samples.
 
@@ -333,7 +333,7 @@ To use samples obtained in the other account, please [contact GEA team](/contact
 {% include image.html url="books/gea-bs.jpg" caption="Select BioSamples for the GEA experiment" class="w550" %}
 {:/}
 
-### IDF <a name="idf"></a>
+### IDF  {#idf}
 
 Enter information for [IDF (Investigation Description Format)](/gea/metadata-e.html#idf).
 
@@ -348,7 +348,7 @@ Enter information for [IDF (Investigation Description Format)](/gea/metadata-e.h
 {% include image.html url="books/array-idf.jpg" caption="Enter information for IDF" class="w600" %}
 {:/}
 
-### SDRF <a name="sdrf"></a>
+### SDRF  {#sdrf}
 
 {::nomarkdown}
 {% include image.html url="books/array-sdrf.jpg" caption="Download a SDRF template file" class="w400" %}
@@ -399,7 +399,7 @@ Select the entered SDRF file and continue.
 {% include image.html url="books/array-sdrf2.jpg" caption="Select entered SDRF file" class="w450" %}
 {:/}
 
-### Overview and submit <a name="submit"></a>
+### Overview and submit  {#submit}
 
 You can download the IDF and SDRF files and check them. When correction is necessary, go back to the previous tab and corrent metadata.
 
@@ -409,7 +409,7 @@ Submit the IDF and SDRF metadata by clicking the "Submit" button.
 {% include image.html url="books/array-overview.jpg" caption="Check the IDF and SDRF and submit" class="w450" %}
 {:/}
 
-### Validation <a name="validation"></a>
+### Validation  {#validation}
 
 When data files described in the IDF and SDRF are not found in the submission directory, an error message "Data file is not uploaded" is shown and the submission is aborted.
 
@@ -419,7 +419,7 @@ The validator checks submitted IDF and SDRF files according to the [validation r
 {% include image.html url="books/array-validation.jpg" caption="Warning and error messages" class="w500" %}
 {:/}
 
-### Accession number <a name="accession"></a>
+### Accession number  {#accession}
 
 [GEA accession numbers](/gea/overview-e.html#acc) are issued to completed GEA experiment.
 
@@ -429,9 +429,9 @@ You can allow reviewers access to private records by [communicating a reviewer a
 {% include image.html url="books/array-accession.jpg" caption="GEA accession numbers" class="w500" %}
 {:/}
 
-## Update submission <a name="update-submission"></a>
+## Update submission  {#update-submission}
 
-### Update in each database <a name="update-in-each-database"></a>
+### Update in each database  {#update-in-each-database}
 
 <table>
 <colgroup>
@@ -465,11 +465,11 @@ You can allow reviewers access to private records by [communicating a reviewer a
 </tbody>
 </table>
 
-### Withdraw archived objects <a name="withdraw-archived-objects"></a>
+### Withdraw archived objects  {#withdraw-archived-objects}
 
 To withdrawing archived Experiment, please [contact us](/contact-ddbj-e.html).
 
-## Supplement: MD5<a name="supplement-md5"></a>
+## Supplement: MD5 {#supplement-md5}
 
 MD5 (Message Digest Algorithm 5) is a hash function which calculates a hash value (MD5 number, 32-digit numbers and letters) of a given file. Because the MD5 number of the damaged file is distinct from the original one, we can check whether the transferred file is intact or not by comparing the numbers before and after the file transfer.
 

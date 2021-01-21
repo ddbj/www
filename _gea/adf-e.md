@@ -52,7 +52,7 @@ tab_menu:
 lang: en
 ---
 
-## Array design format (ADF) file <a name="what-adf"></a>
+## Array design format (ADF) file  {#what-adf}
 
 The ADF (Array Design Format) file captures information about a
 microarray chip. The file contains two section, separated by a [main]
@@ -75,7 +75,7 @@ Here is a snippet of an ADF document:
 {% include image.html url="magetab/adf1.png" caption="A snippet of an ADF document" class="w600" %}
 {:/}
 
-## ADF metadata header <a name="adf-meta"></a>
+## ADF metadata header  {#adf-meta}
 
 Each row (field) of metadata starts with a heading (bold in the table
 below), each appearing only once and coming from a controlled
@@ -108,7 +108,7 @@ A glossary of the ADF header fields (* denotes mandatory fields):
 
 
 
-## ADF table <a name="adf-table"></a>
+## ADF table  {#adf-table}
 
 Just like the metadata header fields, column headings in the ADF table
 come from a controlled vocabulary. Please use one of the ADF templates,
@@ -123,7 +123,7 @@ template.
   - [spotted_array_ADF_template.xls]({{ site.baseurl }}/assets/files/magetab/adf/spotted_array_ADF_template.xls)
 
 
-### Features, reporters and composite elements <a name="feature"></a>
+### Features, reporters and composite elements  {#feature}
 
 **Features (for spotted arrays only):**
 
@@ -167,7 +167,7 @@ showing seven features, two reporters and one composite element:
 {% include image.html url="magetab/adf3.png" caption="Feature, reporter and composite element" class="w450" %}
 {:/}
 
-### Annotation of reporters <a name="ann-reporters"></a> 
+### Annotation of reporters  {#ann-reporters} 
 
 Annotate each reporter by providing its sequence, cross-referenced
 accessions in external databases (e.g. RefSeq accession numbers of the
@@ -238,7 +238,7 @@ separating them with semicolons:
 {% include image.html url="magetab/adf4.png" caption="ADF annotation of reporters" class="w450" %}
 {:/}
 
-### Repoter role - experimental or control <a name="reporter-role"></a>
+### Repoter role - experimental or control  {#reporter-role}
 
 For each reporter, enter its role: experimental or control in the
 Reporter Group [role] column.
@@ -266,7 +266,7 @@ Here is an example of reporter roles in the ADF table:
 {% include image.html url="magetab/adf5.png" caption="Reporter role" class="w500" %}
 {:/}
 
-### Reporter grouping by species (multi-species ADFs only) <a name="reporter-groupings"></a>
+### Reporter grouping by species (multi-species ADFs only)  {#reporter-groupings}
 
 Where reporters were designed from more than one species, you can
 indicate the species source in the Reporter Group [species] column.
@@ -280,7 +280,7 @@ microRNA sequences:
 {% include image.html url="magetab/adf6.png" caption="Reporter grouping by species (multi-species ADFs only)" class="w500" %}
 {:/}
 
-### Annotation of composite elements <a name="ann-composite-elements"></a>
+### Annotation of composite elements  {#ann-composite-elements}
 
 Annotation of composite elements is usually in the form of
 cross-references to external databases, in a very similar way as for

@@ -26,7 +26,7 @@ tab_menu:
 lang: ja
 ---
 
-## AGD データの利用申請 <a name="request"></a>
+## AGD データの利用申請  {#request}
 
 利用したい AGD データの Study (例 AGDS\_00000000005) と Dataset (例 AGDD\_00000000005) ID を添え， [National Bioscience Database Center (NBDC)](http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines) に利用を申請します。
 
@@ -40,9 +40,9 @@ lang: ja
 
 このページでは AGD データの利用手順を説明しています。
 
-## データのダウンロード <a name="download-data"></a>
+## データのダウンロード  {#download-data}
 
-### AGD download tool <a name="agd-download-tool"></a>
+### AGD download tool  {#agd-download-tool}
 
 AGD download tool (最終更新日: 2018-11-21，v3.5.0) をダウンロードします。
 
@@ -67,7 +67,7 @@ Java 8 で実行してください。Java 7 では動作しません。[プロ�
 
 <span class="red">動作環境: Java SE Development Kit 8u45 以上。OpenJDK では動作しません。</span>
 
-### ログイン <a name="login"></a>
+### ログイン  {#login}
 
 AGD tool を起動し，[NBDC](http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines) 担当者から通知されるユーザ ID とパスワードでログインします。
 
@@ -101,7 +101,7 @@ AGD download tool は可能な限り良好なネットワーク環境にある�
 {% include image.html url="books/agddown02.jpg" caption="ファイル毎のダウンロード" class="w500" %}
 {:/}
 
-### プロキシ環境での使用方法 <a name="download-via-proxy-server"></a>
+### プロキシ環境での使用方法  {#download-via-proxy-server}
 
 プロキシ環境でツールを使用するためにはプロキシサーバに関する設定作業が必要になります。
 
@@ -118,7 +118,7 @@ port=
 
 ツールにログイン後，プロキシサーバが認証を要求している場合，認証情報を入力するウィンドウが表示されるので適宜情報を入力します。2017-01-26 にリリースした v3.2.1 で BASIC 認証に対応しましたが Digest 認証には未対応です。
 
-### メタデータのウェブサイトでの閲覧 <a name="view-metadata-in-website"></a>
+### メタデータのウェブサイトでの閲覧  {#view-metadata-in-website}
 
 メタデータはウェブサイトで閲覧することもできます。
 
@@ -165,7 +165,7 @@ AGD tool と同様，NBDC から通知される利用アカウントのユーザ
 {% include image.html url="books/jgadown09.jpg" caption="同時ログイン数が１を超えている場合のエラー" class="w500" %}
 {:/}
 
-### データファイルのディスク郵送 <a name="data-file-transfer-by-hard-disk"></a>
+### データファイルのディスク郵送  {#data-file-transfer-by-hard-disk}
 
 {::options parse_block_html="true" /}
 <div class="attention">

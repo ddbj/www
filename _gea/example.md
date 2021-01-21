@@ -52,7 +52,7 @@ tab_menu:
 lang: ja
 ---
 
-## IDF 例 <a name="idf"></a>
+## IDF 例  {#idf}
 
 [IDF スプレッドシート例 (Microarray)](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=0)
 [IDF スプレッドシート例 (NGS)](https://docs.google.com/spreadsheets/d/1-KG-8f1ZyuCX056H-TB3MwGFFkpt8tmKXJu8NxWy4PQ/edit#gid=30173120)
@@ -83,7 +83,7 @@ lang: ja
 
 サポートされている IDF タグの全リストは [IDF ページ](/gea/metadata-e.html#idf)をご覧ください。
 
-## SDRF 概念的な例 <a name="sdrf_con"></a>
+## SDRF 概念的な例  {#sdrf_con}
 
 [SDRF スプレッドシート例 (Microarray)](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=657626667)
 [SDRF スプレッドシート例 (NGS)](https://docs.google.com/spreadsheets/d/1-KG-8f1ZyuCX056H-TB3MwGFFkpt8tmKXJu8NxWy4PQ/edit#gid=513795053)
@@ -96,7 +96,7 @@ lang: ja
 以下の例では概念上重要なカラムに限定した SDRF グラフと対応する表を示しています。青色のカラムヘッダーはグラフノード（Name
 カラム）を表しています。
 
-### Example 1: サンプル毎の生データと解析済みデータファイル <a name="sdrf_example1"></a>
+### Example 1: サンプル毎の生データと解析済みデータファイル  {#sdrf_example1}
 
 単純なマイクロアレイ実験。各サンプルに対して１つの生データファイルと解析済みデータファイルがあるケース。
 
@@ -113,7 +113,7 @@ lang: ja
 {: .tablecaption}
 各サンプルに対して１つの生データファイルと解析済みデータファイルがあるケース
 
-### Example 2: Two-color マイクロアレイ <a name="sdrf_example2"></a>
+### Example 2: Two-color マイクロアレイ  {#sdrf_example2}
 
 {::nomarkdown}
 {% include image.html url="magetab/sdrf2.png" caption="Two-color マイクロアレイ" class="w400" %}
@@ -130,7 +130,7 @@ lang: ja
 {: .tablecaption}
 Two-color マイクロアレイ
 
-### Example 3: サンプル毎の次世代シークエンス DRA 生データ (Run) と解析済みデータファイル、及び、解析済みマトリックスファイル  <a name="sdrf_example3"></a>
+### Example 3: サンプル毎の次世代シークエンス DRA 生データ (Run) と解析済みデータファイル、及び、解析済みマトリックスファイル   {#sdrf_example3}
 
 単純な次世代シークエンス実験。サンプル毎の次世代シークエンス DRA 生データ (Run)
 と解析済みデータファイル、及び、解析済みマトリックスファイル
@@ -149,7 +149,7 @@ Two-color マイクロアレイ
 {: .tablecaption}
 サンプル毎の次世代シークエンス DRA 生データ (Run) と解析済みデータファイル、及び、解析済みマトリックスファイル
 
-## MAGE-TAB 実際の例 <a name="tab_real"></a>
+## MAGE-TAB 実際の例  {#tab_real}
 
 [SDRF スプレッドシート例](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=657626667)
 

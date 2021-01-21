@@ -13,7 +13,7 @@ related_pages:
 ---
 
 
-## 定義 <a name="definition"></a>
+## 定義  {#definition}
 
 [INSD](/about/insdc.html#insd) (the International Nucleotide Sequence
 Databases; 国際塩基配列データベース)
@@ -24,7 +24,7 @@ Databases; 国際塩基配列データベース)
 INSD が正式に発行する**アクセッション番号**は、データに対して固有な ID
 として割り振られます。
 
-## INSD アクセッション番号の書式 <a name="format"></a>
+## INSD アクセッション番号の書式  {#format}
 
 INSD アクセッション番号は アルファベット＋数字 で構成されています。
 アルファベットの部分を[プレフィックス](/documents/prefix.html)と呼びます。
@@ -48,7 +48,7 @@ Annotated/Assembled Data
 |  [BioProject](/bioproject/index.html)  |  アルファベット５文字 ([BioProject prefix list](/documents/prefix.html#project)) ＋１ 桁以上の数字: 例 PRJDA123  |
 |  [BioSample](/biosample/index.html)  |  アルファベット４文字 ([BioSample prefix](/documents/prefix.html#sample)) ＋８桁の数字: 例 SAMD00000001  |
 
-## アクセッション番号と混同されるもの <a name="confuse"></a>
+## アクセッション番号と混同されるもの  {#confuse}
 
 下記は混同されることが多いのですが、INSD
 のアクセッション番号ではありません。

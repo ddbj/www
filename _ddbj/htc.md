@@ -145,7 +145,7 @@ HTC/full length insert cDNA の登録における注意事項
     [TSA: Transcriptome Shotgun Assembly](/ddbj/tsa.html)
     と混同しないように、ご注意ください。
 
-## DDBJ フォーマットの例 <a name="flat-file"></a>
+## DDBJ フォーマットの例  {#flat-file}
 
 HTC/full length insert cDNA の特徴
 

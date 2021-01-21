@@ -34,13 +34,13 @@ related_pages:
 
 TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/) の検索システムです。国際塩基配列データベース([INSD]({{site.baseurl}}/about/insdc.html)) にデータを登録する際には、NCBI Taxonomy に基づいた生物名の表記を使用する必要があります。
 
-## 検索（ウェブ検索フォームから） <a name="usage"></a>
+## 検索（ウェブ検索フォームから）  {#usage}
 
-#### トップページ（Tree画面）：[http://ddbj.nig.ac.jp/tx_search/](http://ddbj.nig.ac.jp/tx_search/) <a name="トップページ（Tree画面）：http_//ddbj.nig.ac.jp/tx_search/_"></a>
+#### トップページ（Tree画面）：[http://ddbj.nig.ac.jp/tx_search/](http://ddbj.nig.ac.jp/tx_search/)  {#トップページ（Tree画面）：http_//ddbj.nig.ac.jp/tx_search/_}
 
 ![トップページ]({{ site.baseurl }}/assets/images/help/txhelp01.gif)  
 
-### 検索フォームへの入力方法 <a name="search"></a>
+### 検索フォームへの入力方法  {#search}
 
 検索フォームのテキスト入力欄に検索したい名前や数字を入力し、「送信」をクリックまたはリターンキーを押します。
 
@@ -75,7 +75,7 @@ TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxon
 
 * 結果が1000件を超える場合は最初（scientific_name で昇順）の 1000件分のみ結果を返します。この表示件数の上限を変更することはできません。<br> 結果を1000件以下にするためには、[絞り込み検索](#refine)を行ってください。
 
-### 絞り込み検索 <a name="refine"></a> 
+### 絞り込み検索  {#refine} 
 
 複数フィールドの組み合わせや、フィールド名を指定して絞り込み検索を行います。 
 
@@ -108,7 +108,7 @@ TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxon
   |  misspelling_ex  |
   |  type_material_ex  |
 
-### 検索の入力例 <a name="example"></a>
+### 検索の入力例  {#example}
 
 |  入力文字列	  |  検索内容  |
 | ---- | ---- |
@@ -127,9 +127,9 @@ TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxon
 |  scientific_name:(Acetobacter sp*)  |  scientific_name に "Acetobacter" と "spで始まる0文字以上の任意の文字列" を含むものを検索  |
 |  tax_id:960?  |  tax_id が　960? (? は任意の１文字）を検索  |
 
-## 検索結果 <a name="result"></a>
+## 検索結果  {#result}
 
-### Search Result(Taxon Information 画面) <a name="taxinfo"></a>
+### Search Result(Taxon Information 画面)  {#taxinfo}
 
 検索フォームから検索した場合の結果表示画面です。
 
@@ -141,7 +141,7 @@ TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxon
 * genetic code id, mitochondrial genetic code id は [Genetic code table](/ddbj/geneticcode.html) へリンクしています。
 * lineage 中の名前は、その taxon をトップにしたツリー画面へリンクしています。
 
-### Tree 画面 <a name="tree"></a>
+### Tree 画面  {#tree}
 
 Search Result/Taxon Information 画面で lineage 中の名前をクリックすると、その taxon をトップにしたツリー画面が表示されます。
 
@@ -152,11 +152,11 @@ Search Result/Taxon Information 画面で lineage 中の名前をクリックす
 3. scientific name の左にある三角形のアイコンをクリックすると、その taxon の下の階層のツリーを開閉します。
 4. ツリーのトップの scientific name の右にある↑をクリックすると、1階層上がったツリーを表示します。この時、表示する階層数が1つ増やされます。<br>URL 中の depth パラメータの値を変更すると表示する階層数が変更されます。
 
-## taxonomy_id や検索語を URL に含めた表示方法 <a name="url"></a>
+## taxonomy_id や検索語を URL に含めた表示方法  {#url}
 
 taxonomy_id や検索語を含んだ URL を指定して、検索結果を直接表示したり Taxon Information ページ、またはツリー画面にリンクを張ることができます。
 
-### taxonomy_id をURL に含める場合 <a name="taxnonmy"></a>
+### taxonomy_id をURL に含める場合  {#taxnonmy}
 
 <table>
   <thead>
@@ -214,7 +214,7 @@ taxonomy_id や検索語を含んだ URL を指定して、検索結果を直接
   </tbody>
 </table>
 
-### 検索語をURL に含める場合 <a name="検索語をURL_に含める場合"></a>
+### 検索語をURL に含める場合  {#検索語をURL_に含める場合}
 
 URL の指定方法
 :	//ddbj.nig.ac.jp/tx_search/search?query=xxx&lang=en

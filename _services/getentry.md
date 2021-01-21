@@ -33,17 +33,17 @@ related_pages:
     url: /services/pipeline.html
 ---
 
-## getentryの機能について <a name="getentry_の機能について"></a>
+## getentryの機能について  {#getentry_の機能について}
 - getentry は，アクセッション番号からの DDBJ フラットファイルの検索にご利用いただけます。
 - getentry は webAPI として実装しており，入力フォームからだけでなく，プログラムなどから直接呼び出すことも可能です。
 - データの変更履歴の検索は，webAPI プログラムの [gethistory](#ge_program) を用いて行うことができます。
 - "DDBJ フラットファイルのキーワード検索" は [ARSA](http://ddbj.nig.ac.jp/arsa/) をご利用ください。
 - DRA データの検索は getentry ではおこなうことができません。[DRA Search](https://ddbj.nig.ac.jp/DRASearch/) をご利用ください。
 
-## 入力フォームによる検索 <a name="入力フォームによる検索"></a>
+## 入力フォームによる検索  {#入力フォームによる検索}
 [http://getentry.ddbj.nig.ac.jp/top-j.html](http://getentry.ddbj.nig.ac.jp/top-j.html)からご利用下さい。
 
-### デフォルト指定 <a name="デフォルト指定"></a>
+### デフォルト指定  {#デフォルト指定}
 
 <table>
   <tbody>
@@ -70,7 +70,7 @@ related_pages:
   </tbody>
 </table>
 
-### ID <a name="ID_"></a>
+### ID  {#ID_}
 
 Accession 番号 を入力します。入力には、複数 Accession 番号の指定、範囲指定、バージョン番号の指定が可能です。
 
@@ -118,11 +118,11 @@ Accession 番号 を入力します。入力には、複数 Accession 番号の�
   </tbody>
 </table>
 
-### データベースと出力形式 <a name="データベースと出力形式"></a>
+### データベースと出力形式  {#データベースと出力形式}
 
 検索対象となるデータベースをひとつ指定します。 検索結果の出力形式は，エントリに対して，各データベースで定められている形式か FASTA 形式 のいずれかを以下の選択肢からひとつ指定します。
 
-#### DNAデータベース <a name="DNAデータベース"></a>
+#### DNAデータベース  {#DNAデータベース}
 
 検索対象データベース
 
@@ -188,7 +188,7 @@ getentry で検索可能な各データベースのリリース番号や公開�
 
 検索対象データベースでMGA選択時は、FFのみ選択可能となります。
 
-#### Protein データベース <a name="Protein_データベース"></a>
+#### Protein データベース  {#Protein_データベース}
 
 検索対象データベース
 
@@ -216,7 +216,7 @@ getentry で検索可能な各データベースのリリース番号や公開�
 
 getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報]({{site.baseurl}}/latest-releases.html) でご確認ください。
 
-#### 出力形式 <a name="出力形式"></a>
+#### 出力形式  {#出力形式}
 
 <table>
   <tbody>
@@ -246,7 +246,7 @@ getentry で検索可能な各データベースのリリース番号や公開�
 
 選択データベースにより、出力形式は異なります。
 
-### 取得方法 <a name="取得方法"></a>
+### 取得方法  {#取得方法}
 
 <table>
   <tbody>
@@ -281,18 +281,18 @@ gz圧縮ファイルのファイル名はformatの指定値によって以下の
 [Protein系]fasta    | fasta_aa.txt.gz
 [Protein系]cds      | cds_aa.txt.gz  
 
-### 上限（最大表示件数） <a name="上限（最大表示件数）"></a>
+### 上限（最大表示件数）  {#上限（最大表示件数）}
 
 | ---- | ---- |
 デフォルト    | 10件   
 任意の件数を指定 | 指定した件数
 0 を指定    | 上限なし  
 
-## WebAPI プログラムによる検索<a name="ge_program"></a> 
+## WebAPI プログラムによる検索 {#ge_program} 
 
 getentry は webAPI として実装しており，入力フォームからだけでなく，プログラムなどから直接呼び出すことも可能です。
 
-### プログラム <a name="プログラム"></a>
+### プログラム  {#プログラム}
 
 getentry の web API は以下の２つのプログラムからなります。
 
@@ -310,7 +310,7 @@ getentry の web API は以下の２つのプログラムからなります。
   </tbody>
 </table>
 
-### パラメータの指定方法 <a name="パラメータの指定方法"></a>
+### パラメータの指定方法  {#パラメータの指定方法}
 
 以下の２種類があります
 
@@ -324,9 +324,9 @@ smart URL      | http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold itali
 * 通常の GET method によるアクセッション番号 AB601234 の検索<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=ddbj&amp;accession_number=AB601234](http://getentry.ddbj.nig.ac.jp/getentry?database=ddbj&amp;accession_number=AB601234)
 * smart URL による特許庁由来アミノ酸配列 BD500001 の検索<br>[http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001](http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001)
 
-### getentry で指定可能なパラメータ <a name="parameter"></a>
+### getentry で指定可能なパラメータ  {#parameter}
 
-#### accession 番号<span class="red">（必須）</span><span class="normal">：　検索対象の Accession 番号を指定します。</span> <a name="ge_accession"></a>
+#### accession 番号<span class="red">（必須）</span><span class="normal">：　検索対象の Accession 番号を指定します。</span>  {#ge_accession}
 
 <table>
   <tbody>
@@ -386,7 +386,7 @@ smart URL      | http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold itali
 ](http://getentry.ddbj.nig.ac.jp/getentry/na/AB669632.1-AB6696356.1
 )
 
-#### database<span class="red">（任意）</span>：　検索対象のデータベースを指定します。 <a name="ge_db"></a>
+#### database<span class="red">（任意）</span>：　検索対象のデータベースを指定します。  {#ge_db}
 
 <table>
   <tbody>
@@ -468,7 +468,7 @@ getentry で検索可能な各データベースのリリース番号や公開�
 * DAD の検索<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=dad&accession_number=AB000714-1](http://getentry.ddbj.nig.ac.jp/getentry?database=dad&accession_number=AB000714-1)<br>[http://getentry.ddbj.nig.ac.jp/getentry/dad/AB000714-1](http://getentry.ddbj.nig.ac.jp/getentry/dad/AB000714-1)
 * UniProt  の検索<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=aa&accession_number=P06213](http://getentry.ddbj.nig.ac.jp/getentry?database=aa&accession_number=P06213)<br>[http://getentry.ddbj.nig.ac.jp/getentry/aa/P06213](http://getentry.ddbj.nig.ac.jp/getentry/aa/P06213)<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=uniprot&accession_number=P06213](http://getentry.ddbj.nig.ac.jp/getentry?database=uniprot&accession_number=P06213)<br>[http://getentry.ddbj.nig.ac.jp/getentry/uniprot/P06213](http://getentry.ddbj.nig.ac.jp/getentry/uniprot/P06213)
 
-#### revision<span class="red">（任意）</span>：　指定された revision 時点を検索します。 <a name="ge_revision"></a>
+#### revision<span class="red">（任意）</span>：　指定された revision 時点を検索します。  {#ge_revision}
 
 <table>
   <tbody>
@@ -495,7 +495,7 @@ getentry で検索可能な各データベースのリリース番号や公開�
 [http://getentry.ddbj.nig.ac.jp/getentry/na/AB479935?revision=2011-05-31 23:07:30](http://getentry.ddbj.nig.ac.jp/getentry/na/AB479935?revision=2011-05-31%2023:07:30)
 * 変更履歴は　gethistory の機能でしらべることが可能です<br>[http://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=AB479935](http://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=AB479935)<br>[http://getentry.ddbj.nig.ac.jp/gethistory/na/AB479935](http://getentry.ddbj.nig.ac.jp/gethistory/na/AB479935)
 
-#### format<span class="red">（任意）</span>：　結果の出力フォーマットを指定します。 <a name="ge_format"></a>
+#### format<span class="red">（任意）</span>：　結果の出力フォーマットを指定します。  {#ge_format}
 
 <table>
   <tbody>
@@ -752,7 +752,7 @@ CGCGAATTCGCG
 
 ```
 
-#### filetype<span class="red">（任意）</span>：　出力のファイルタイプを指定します。 <a name="ge_filetype"></a>
+#### filetype<span class="red">（任意）</span>：　出力のファイルタイプを指定します。  {#ge_filetype}
 
 <table>
   <tbody>
@@ -822,7 +822,7 @@ COMMENT     OS   Homo sapiens
         PD   28-Sep-2006
 ```
 
-#### show_suppressed<span class="red">（任意）</span>：　suppressed　データを表示します。 <a name="ge_show_suppressed"></a>
+#### show_suppressed<span class="red">（任意）</span>：　suppressed　データを表示します。  {#ge_show_suppressed}
 
 <table>
   <tbody>
@@ -842,7 +842,7 @@ COMMENT     OS   Homo sapiens
 * アクセッション番号 HE602933  (suppressed)の検索<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=HE602933&show_suppressed=true](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=HE602933&show_suppressed=true)<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/HE602933?show_suppressed=true](http://getentry.ddbj.nig.ac.jp/getentry/na/HE602933?show_suppressed=true)
 
 
-#### limit<span class="red">（任意）</span>：　データの取得上限を設定します。 <a name="ge_limit"></a>
+#### limit<span class="red">（任意）</span>：　データの取得上限を設定します。  {#ge_limit}
 
 <table>
   <tbody>
@@ -872,7 +872,7 @@ COMMENT     OS   Homo sapiens
 [http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FY736910 - FY762881&limit=0](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FY736910%20-%20FY762881&limit=0)  
 [http://getentry.ddbj.nig.ac.jp/getentry/na/FY736910 - FY762881?limit=0](http://getentry.ddbj.nig.ac.jp/getentry/na/FY736910%20-%20FY762881?limit=0)
 
-#### trace<span class="red">（任意）</span>：　Secondary Accession が指定された場合に，Primary への転送を設定します。 <a name="ge_trace"></a>
+#### trace<span class="red">（任意）</span>：　Secondary Accession が指定された場合に，Primary への転送を設定します。  {#ge_trace}
 
 <table>
   <tbody>
@@ -892,9 +892,9 @@ COMMENT     OS   Homo sapiens
 * アクセッション番号 AB233943(primary)-AF530906(secondary) の検索でprimary を表示<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AF530906&format=flatfile&trace=true](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AF530906&format=flatfile&trace=true )<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/AF530906/?format=flatfile&trace=true](http://getentry.ddbj.nig.ac.jp/getentry/na/AF530906/?format=flatfile&trace=true)
 
 
-### gethistory で指定可能なパラメータ <a name="gethistory"></a>
+### gethistory で指定可能なパラメータ  {#gethistory}
 
-#### accession 番号<span class="red">（必須）</span>：検索対象のAccession番号を指定します。指定方法は getentry と同じです。 <a name="gh_accession"></a>
+#### accession 番号<span class="red">（必須）</span>：検索対象のAccession番号を指定します。指定方法は getentry と同じです。  {#gh_accession}
 
 {::options parse_block_html="true" /}
 <div class="attention">
@@ -918,7 +918,7 @@ AB628096
 1 2011-05-11 23:09:49         2011-05-11 23:09:49         live
 ```
 
-#### database<span class="red">（任意）</span>： 検索対象のデータベースを指定します。 <a name="gh_db"></a>
+#### database<span class="red">（任意）</span>： 検索対象のデータベースを指定します。  {#gh_db}
 
 <table>
   <tbody>
@@ -954,7 +954,7 @@ BAET01000001   BAET01000001
 1 2012-02-21 07:03:15 2012-02-21 07:03:15 live   
 ```
 
-#### filetype<span class="red">（任意）</span>：　出力のファイルタイプを指定します。 <a name="gh_filetype"></a>
+#### filetype<span class="red">（任意）</span>：　出力のファイルタイプを指定します。  {#gh_filetype}
 
 <table>
   <tbody>
@@ -1003,7 +1003,7 @@ AB628096                                                                        
  |  | [2011-05-11 23:09:49](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-05-11+23%3A09%3A49/?format=flatfile&filetype=text&trace=false&show_suppressed=true)                 | 2011-05-11 23:09:49         | live                                                                                                                                                                              
 
 
-## DDBJ エントリへのリンク設定方法 <a name="ge_createlinks"></a>
+## DDBJ エントリへのリンク設定方法  {#ge_createlinks}
 ------------------
 
 DDBJ の個々のエントリに対して，以下の方法でリンクを設定することができます。

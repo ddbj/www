@@ -12,7 +12,7 @@ related_pages:
     url: /documents/prefix.html
 ---
 
-## DDBJ に登録可能なデータ <a name="accept"></a>
+## DDBJ に登録可能なデータ  {#accept}
 
 DDBJ では, [Primary entry](/ddbj/submission.html#primary_entry)
 のデータとして登録依頼のあったデータにつきましては,
@@ -51,9 +51,9 @@ DDBJ では, 配列が同一であっても独立に配列決定されたデー�
 配列に関する権利, 配列決定の進捗などを考える上で,
 複数回の登録が必要なケースもありますので, 特に禁じてはおりません。
 
-## 配列データ <a name="real"></a>
+## 配列データ  {#real}
 
-### アノテーションを付与した/アセンブルした塩基配列 <a name="ann"></a>
+### アノテーションを付与した/アセンブルした塩基配列  {#ann}
 
 [DDBJ Annotated/Assembled Sequences](/ddbj/index.html)
 :   狭義の DDBJ。GenBank, EMBL-Bank (ENA) に相当し、feature annotation
@@ -76,7 +76,7 @@ DDBJ では, 配列が同一であっても独立に配列決定されたデー�
 の記載に基づいて、データ種別を区別しています。
 </div>
 
-### 次世代シークエンスデータ <a name="ngs"></a>
+### 次世代シークエンスデータ  {#ngs}
 
 [DRA: DDBJ Sequence Read Archive](/dra/index.html)
 :   次世代シークエンサからの出力データとアライメントデータのためのデータベース。従来
@@ -84,13 +84,13 @@ DDBJ では, 配列が同一であっても独立に配列決定されたデー�
     で受付けていたサンガー式シークエンスの配列，Quality，クロマトグラムデータも
     DRA で受け付けています。
 
-### 機能ゲノミクスデータ <a name="fg"></a>
+### 機能ゲノミクスデータ  {#fg}
 
 [Genomic Expression Archive (GEA)](/gea/index.html)
 :   遺伝子発現、エピジェネティクスやジェノタイピング SNP
     アレイ等の機能ゲノミクスデータの登録先。
 
-## プロジェクト <a name="project"></a>
+## プロジェクト  {#project}
 
 [BioProject](/bioproject/index.html)
 :   研究プロジェクトとプロジェクトに由来するデータをまとめるためのデータベース。
@@ -98,22 +98,22 @@ DDBJ では, 配列が同一であっても独立に配列決定されたデー�
     [WGS](/ddbj/wgs.html), [TLS](/ddbj/tls.html), [TSA](/ddbj/tsa.html)
     の登録の際は、登録が義務付けられています。
 
-## サンプル <a name="project"></a>
+## サンプル  {#project}
 
 [BioSample](/biosample/index.html)
 :   実験データを得るために使用された生物学的な試料 (サンプル)
     についての情報を集中して管理するデータベース。
 
-## アクセス制限が必要なヒトデータの登録 <a name="control"></a>
+## アクセス制限が必要なヒトデータの登録  {#control}
 
 [JGA: Japanese Genotype-phenotype Archive](/jga/index.html)
 :   個人に由来するアクセス制限が必要な遺伝学的なデータと表現型情報の登録。
 
-## Annotated/Assembled データの区分 <a name="detail"></a>
+## Annotated/Assembled データの区分  {#detail}
 
-### [Division](/ddbj/flat-file.html#Division) conventional sequence data <a name="division"></a>
+### [Division](/ddbj/flat-file.html#Division) conventional sequence data  {#division}
 
-#### 通常の登録: 由来生物種による区分 <a name="geeral"></a>
+#### 通常の登録: 由来生物種による区分  {#geeral}
 
 完成したゲノム配列を含めて一般的な登録データは、ここに属します。
 source feature と、それ以外に最低 1 つ [Biological
@@ -135,7 +135,7 @@ feature](/ddbj/file-format.html#biological_feature)
 |  VRL  |  ウィルス  |
 |  PHG  |  ファージ  |
 
-#### ENV/SYN: 由来生物種を特定できない場合、環境サンプルと合成配列 <a name="env"></a>
+#### ENV/SYN: 由来生物種を特定できない場合、環境サンプルと合成配列  {#env}
 
 環境サンプル、および、人為的な操作により構築された配列は、それぞれ、[ENV](/ddbj/env.html)、SYN
 と DIVISION を記載し区別します。
@@ -150,7 +150,7 @@ feature](ddbj/file-format.html#biological_feature)
 
 
 
-#### EST/GSS/HTC/HTG/STS: 配列決定の確度、あるいは、目的による区別 <a name="est"></a>
+#### EST/GSS/HTC/HTG/STS: 配列決定の確度、あるいは、目的による区別  {#est}
 
 EST
 に代表される大量解析、長大なゲノム配列の決定の途上、などの配列を以下に示す
@@ -170,7 +170,7 @@ features](ddbj/file-format.html#biological_feature)
 |  [HTC](/ddbj/htc.html)  |  high throughput cDNA sequences; EST 以外の大規模 cDNA 配列プロジェクトにする配列。<br> full length cDNA 解析途上の配列なども含めます。|
 |  [HTG](/ddbj/htg.html)  |  high throughput genomic sequences; ゲノムプロジェクトに由来し、頻繁に update されることが期待される配列。<br> [Genome Projectの各段階と登録データの種別](/ddbj/genome.html)もご参照ください。<br> HTG の unfinished 配列は段階に応じて以下の 3 phase に分類されます。<br> {::nomarkdown}<ul><li>phase0；piece contig が構築される以前の配列</li><li>phase1；構築された piece contig の向きや順序が未確定の配列</li><li>phase2；piece contig の向きや順序が確定した unfinished の配列</li></ul>{:/}|
 
-#### CON: Contig / Constructed 配列のタイリング <a name="con"></a>
+#### CON: Contig / Constructed 配列のタイリング  {#con}
 
 [HTG](/ddbj/htg.html) 、または、[WGS](/ddbj/wgs.html)
 などを基本としたゲノムプロジェクトでは、個々に登録された一連の配列データを相互に結合し、ゲノム構造を再構築するための情報が必要になります。そのようなタイリング情報に対して、１つのアクセッション番号を割り当てて特殊なエントリとして登録を受け付けています。このようなエントリを
@@ -185,9 +185,9 @@ CON エントリを構築します。
 CON エントリの登録には [AGP ファイル](/ddbj/file-format.html#agp)
 が必要です。
 
-### Data type bulk sequence data <a name="data_type"></a>
+### Data type bulk sequence data  {#data_type}
 
-#### WGS: Whole Genome Shotgun ゲノムの概要配列 <a name="wgs"></a>
+#### WGS: Whole Genome Shotgun ゲノムの概要配列  {#wgs}
 
 ホールゲノムショットガン配列決定法を用いて全ゲノム配列を決定するゲノムプロジェクトに由来する整理が不十分な段階の大量の
 DNA 断片の bulk sequence data を [WGS (Whole Genome
@@ -196,7 +196,7 @@ WGS データは他のデータとアクセッション番号の書式が異な�
 [Genome Project の各段階と登録データの種別](/ddbj/genome.html)
 もご参照ください。
 
-#### TSA: Transcriptome Shotgun Assembly <a name="tsa"></a>
+#### TSA: Transcriptome Shotgun Assembly  {#tsa}
 
 2008 年からアセンブルされた RNA transcript の bulk sequence data を
 [Transcriptome Shotgun Assembly (TSA)](/ddbj/tsa.html)
@@ -208,7 +208,7 @@ TSA
 データは他のデータとアクセッション番号の書式が異なることがあります。
 Transcriptome Project の各段階と登録データの種別もご参照ください。
 
-#### TLS: Targeted Locus Study <a name="tls"></a>
+#### TLS: Targeted Locus Study  {#tls}
 
 2016 年から 16S rRNA または、他の特定 locus
 を標的とした配列で構成され、主として operational taxonomic unit
@@ -218,9 +218,9 @@ Transcriptome Project の各段階と登録データの種別もご参照くだ�
 features](ddbj/file-format.html#biological_feature)を記載することも可能です。
 TLS データは他のデータとアクセッション番号の書式が異なります。
 
-### 配列決定 <a name="whom"></a>
+### 配列決定  {#whom}
 
-#### TPA: 第三者再構築、または、アノテーション <a name="tpa"></a>
+#### TPA: 第三者再構築、または、アノテーション  {#tpa}
 
 TPA (Third Party Data) は, DDBJ/EMBL-Bank/GenBank、Trace
 Archive、もしくは、Sequence Read Archiveに既に登録されているエントリ

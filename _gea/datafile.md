@@ -52,7 +52,7 @@ tab_menu:
 lang: ja
 ---
 
-## ファイル準備における注意点 <a name="notes"></a>
+## ファイル準備における注意点  {#notes}
 
 1.  experiment 中の全ての sample/hybridization
     に対する生データファイルと生マトリックスファイルを登録すること。
@@ -61,9 +61,9 @@ lang: ja
 3.  全ての spreadsheet/matrix ファイルはタブ区切りテキストファイル形式 (\*.txt) で保存しエクセル形式
     (\*.xls、\*.xlsx) で保存しないこと。
 
-## マイクロアレイデータファイル形式 <a name="array_data"></a>
+## マイクロアレイデータファイル形式  {#array_data}
 
-### 生データファイルの形式 <a name="ar-raw"></a>
+### 生データファイルの形式  {#ar-raw}
 
 **アッセイ毎の生データファイル (推奨):**
 
@@ -80,7 +80,7 @@ assay がカラム) の生データファイル。マトリックスファイル
 データファイル以外は)
 厳格に定められています。詳細は[マトリックスファイルガイドラインと例](/gea/matrix.html)を参照してください。
 
-### プラットフォーム毎の受付フォーマット <a name="ar_raw"></a>
+### プラットフォーム毎の受付フォーマット  {#ar_raw}
 
 生データファイルのプラットフォームはファイルヘッダー中のカラムヘッダーで判定されます。
 
@@ -207,7 +207,7 @@ BlockColumn/BlockRow/Column/Row
 
 | MetaColumn | MetaRow | Column | Row |
 
-### 解析データファイル <a name="seq_proc"></a> 
+### 解析データファイル  {#seq_proc} 
 
 解析データファイル（processed file）は生データファイルにバックグラウンド補正、正規化や統計的な解析（例 fold-change と
 p-value の計算）を施すことで得られるファイルのことです。最終的な解析ファイル（final processed
@@ -224,7 +224,7 @@ processed data file を以下の場合に受付けています。
   - 異なるデータ処理段階の正規化されたデータを含んだいくつかの表ファイル ("matrix")、１つは正規化されたプローブの
     intensity でもう一つは遺伝子単位で算出した fold-change である場合など。
 
-### 解析済みテキストファイル <a name="array-proc-format"></a>
+### 解析済みテキストファイル  {#array-proc-format}
 
 二次元の表において行が probe/gene 列が sample/data という形式になっている必要があります。
 
@@ -277,23 +277,23 @@ protein アクセッション番号) を記載するようにしてください�
 | **probe_name_1**    | 44.6                   | 89.3                   | 290.15                    |
 | **probe_name_2**    | 98.3                   | 36.7                   | 100.52                    |
 
-### Additional file <a name="seq-additional"></a> <a name="seq-additional"></a>
+### Additional file <a name="seq-additional"></a>  {#seq-additional}
 
 一細胞解析における spike-in やデータ解析に必要な追加ファイルを additional file として登録することができます（例
 [E-MTAB-3624](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3624/)）。登録を希望する場合は
 [GEA チームに連絡](/contact-ddbj.html)してください。
 
-## シークエンシングデータ <a name="seq_data"></a>
+## シークエンシングデータ  {#seq_data}
 
   - [生データファイル](#seq_raw)
   - [解析済みファイル](#seq_proc)
 
-### 生データファイル <a name="seq_raw"></a> 
+### 生データファイル  {#seq_raw} 
 
 次世代シークエンスの生データは DDBJ Sequence Read Archive (DRA) に事前登録する必要があります。[DRA
 に登録可能なファイルリスト](/dra/submission.html#run-data-files)をご覧ください。
 
-### 解析データファイル <a name="seq_proc"></a>
+### 解析データファイル  {#seq_proc}
 
 最終的な解析データファイル（final processed data）とは関連する論文の結論が導かれる基になったデータのことです。
 論文における結論は標準的なアライメントファイル（例
@@ -324,13 +324,13 @@ protocol や high throughput sequence alignment protocol
 WIG、bedGraph、GFF もしくは GTF ファイルを登録する場合、これらのファイル形式の要件については [UCSC file
 format FAQ](http://www.genome.ucsc.edu/FAQ/FAQformat.html) を参照してください。
 
-### 解析済み matrix ファイル (アドバンスドユーザ向け) <a name="matrix"></a>
+### 解析済み matrix ファイル (アドバンスドユーザ向け)  {#matrix}
 
 特定の行と列にあるデータが experiment 中の assay と array design file 中の probe/probe set
 と人が見て/機械的にマッピングされるファイル形式である厳格な MAGE-TAB 形式での matrix
 ファイルも受け付けています。詳細は[こちらのガイドライン](/gea/matrix.html)を参照してください。
 
-### Additional file <a name="seq-additional"></a>
+### Additional file  {#seq-additional}
 
 一細胞解析における spike-in やデータ解析に必要な追加ファイルを additional file として登録することができます（例
 [E-MTAB-3624](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3624/)）。登録を希望する場合は

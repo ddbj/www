@@ -6,12 +6,12 @@ category: jga
 lang: en
 ---
 
-## How to check the global IP address<a name="ip"></a>
+## How to check the global IP address {#ip}
 
-### Web service displaying global IP address<a name="website"></a>
+### Web service displaying global IP address {#website}
 
 [https://www.myglobalip.com/](https://www.myglobalip.com/) displays a global IP address of connecting source.
 
-### Ask network administrator<a name="sysad"></a>
+### Ask network administrator {#sysad}
 
 If you are not certain, please ask network administrator of your institution.

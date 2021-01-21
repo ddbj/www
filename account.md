@@ -8,7 +8,7 @@ lang: ja
 
 DDBJ 登録アカウントの作成
 
-## D-way アカウント <a name="ddbj-submission-account"></a>
+## D-way アカウント  {#ddbj-submission-account}
 
 [生命情報・DDBJ センター](/index.html) では [D-way アカウントシステム](https://ddbj.nig.ac.jp/D-way)を運用しています。D-way アカウントは DDBJ センターの BioProject/BioSample/DRA/GEA/JGA データベース、及び、[NBDC](https://humandbs.biosciencedbc.jp) の[提供・利用申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application)で使うことができます。
 
@@ -30,9 +30,9 @@ DDBJ センターではサイズの大きいファイルの転送に ssh 鍵認�
 {% include image.html url="books/hac01.jpg" caption="アカウントのサービス利用権限" class="w300" %}
 {:/}
 
-## D-way アカウントをウェブサイトで作成<a name="account-for-bioproject-biosample-submissions"></a>
+## D-way アカウントをウェブサイトで作成 {#account-for-bioproject-biosample-submissions}
 
-### ウェブサイトでアカウントを作成 <a name="create-an-account-on-website"></a>
+### ウェブサイトでアカウントを作成  {#create-an-account-on-website}
 
 ウェブサイトで新規作成したアカウントはデフォルトで BioProject/BioSample/NBDC 申請サービスを利用することができます。
 
@@ -83,11 +83,11 @@ Login ID:
 {% include image.html url="books/initial.jpg" caption="BioProject/BioSample/NBDC 申請システムを利用可能" class="w450" %}
 {:/}
 
-## DRA/GEA/JGA の登録権限を追加 <a name="enable-dra-submission-in-account"></a>
+## DRA/GEA/JGA の登録権限を追加  {#enable-dra-submission-in-account}
 
 サイズの大きいデータファイル転送を伴う DRA/GEA/JGA サービスを利用するため、アカウントに center name と公開鍵（認証用公開鍵）を登録します。公開鍵はユーザの認証に用いられます。
 
-### 公開鍵/秘密鍵ペアの生成 <a name="generate-key-pair"></a>
+### 公開鍵/秘密鍵ペアの生成  {#generate-key-pair}
 
 {::options parse_block_html="true" /}
 <div class="accordion-menu">
@@ -185,7 +185,7 @@ Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
 </div>
 </div>
 
-### Center name と認証用公開鍵の登録 <a name="register-center-name-and-public-key"></a>
+### Center name と認証用公開鍵の登録  {#register-center-name-and-public-key}
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/N76NUH748Fw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -213,11 +213,11 @@ public key\] で鍵を登録します。
 
 機能が未実装であるため D-way ウェブポータルでは JGA 登録をみることができません。認証用公開鍵をアカウントに登録後、[「JGA への登録手順」](/jga/submission-step.html)、及び、[「JGA データの利用手順」](/jga/download.html)に従ってサービスを利用してください。
 
-### アカウントの更新 <a name="update-account"></a>
+### アカウントの更新  {#update-account}
 
 アカウント情報を編集し [Update\] ボタンでアカウントを更新します。登録した認証用公開鍵は新しいファイルをアップロードすることで上書きすることができます。
 
-## パスワードの変更<a name="password-chang"></a>
+## パスワードの変更 {#password-chang}
 
 [D-way](https://ddbj.nig.ac.jp/D-way/) からログインします。上部の Password メニューからパスワード変更ページへ移動します。
 
@@ -237,7 +237,7 @@ public key\] で鍵を登録します。
 {% include image.html url="books/pass3.jpg" caption="パスワードが変更されたことを伝えるメッセージ画面" class="w300" %}
 {:/}
 
-## セッションの期限切れ<a name="session"></a>
+## セッションの期限切れ {#session}
 
 D-way でパスワード変更後、"Session Expired" と表示される場合があります。この場合、ウェブブラウザーのシークレットモード ([Google chrome](https://support.google.com/chrome/answer/95464?co=GENIE.Platform%3DDesktop&hl=ja)、[Firefox](https://support.mozilla.org/ja/kb/private-browsing-use-firefox-without-history)) や別のブラウザーを使ってキャッシュがクリアされた状態で再度アクセスすると解消する場合があります。
 
@@ -245,7 +245,7 @@ D-way でパスワード変更後、"Session Expired" と表示される場合�
 {% include image.html url="books/d-way-session.jpg" caption="セッションの期限切れ画面" class="w300" %}
 {:/}
 
-## 秘密鍵ファイルの変換 <a name="convert-private-key"></a>
+## 秘密鍵ファイルの変換  {#convert-private-key}
 
 {::options parse_block_html="true" /}
 <div class="accordion-menu">

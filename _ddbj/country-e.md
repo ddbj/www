@@ -110,7 +110,7 @@ sample.
 The text below outlines the format and the present list of allowed
 countries.
 
-## Defiition of /country qualifier <a name="Defiition_of_/country_qualifier"></a>
+## Defiition of /country qualifier  {#Defiition_of_/country_qualifier}
 
 <pre><code>Qualifier:      /country=" "
 Qualifier       /country=
@@ -140,7 +140,7 @@ COUNTRY LIST based on information from:
 
 [Historical Country Names](#history)
 
-## A <a name="A"></a>
+## A  {#A}
 
   - Afghanistan
   - Albania
@@ -161,7 +161,7 @@ COUNTRY LIST based on information from:
   - Austria
   - Azerbaijan
 
-## B <a name="B"></a>
+## B  {#B}
 
   - Bahamas
   - Bahrain
@@ -188,7 +188,7 @@ COUNTRY LIST based on information from:
   - Burkina Faso
   - Burundi
 
-## C <a name="C"></a>
+## C  {#C}
 
   - Cambodia
   - Cameroon
@@ -214,7 +214,7 @@ COUNTRY LIST based on information from:
   - Cyprus
   - Czech Republic
 
-## D <a name="D"></a>
+## D  {#D}
 
   - Democratic Republic of the Congo
   - Denmark
@@ -222,7 +222,7 @@ COUNTRY LIST based on information from:
   - Dominica
   - Dominican Republic
 
-## E <a name="E"></a>
+## E  {#E}
 
   - Ecuador
   - Egypt
@@ -233,7 +233,7 @@ COUNTRY LIST based on information from:
   - Ethiopia
   - Europa Island
 
-## F <a name="F"></a>
+## F  {#F}
 
   - Falkland Islands (Islas Malvinas)
   - Faroe Islands
@@ -244,7 +244,7 @@ COUNTRY LIST based on information from:
   - French Polynesia
   - French Southern and Antarctic Lands
 
-## G <a name="G"></a>
+## G  {#G}
 
   - Gabon
   - Gambia
@@ -265,7 +265,7 @@ COUNTRY LIST based on information from:
   - Guinea-Bissau
   - Guyana
 
-## H <a name="H"></a>
+## H  {#H}
 
   - Haiti
   - Heard Island and McDonald Islands
@@ -274,7 +274,7 @@ COUNTRY LIST based on information from:
   - Howland Island
   - Hungary
 
-## I <a name="I"></a>
+## I  {#I}
 
   - Iceland
   - India
@@ -287,7 +287,7 @@ COUNTRY LIST based on information from:
   - Israel
   - Italy
 
-## J <a name="J"></a>
+## J  {#J}
 
   - Jamaica
   - Jan Mayen
@@ -298,7 +298,7 @@ COUNTRY LIST based on information from:
   - Jordan
   - Juan de Nova Island
 
-## K <a name="K"></a>
+## K  {#K}
 
   - Kazakhstan
   - Kenya
@@ -309,7 +309,7 @@ COUNTRY LIST based on information from:
   - Kuwait
   - Kyrgyzstan
 
-## L <a name="L"></a>
+## L  {#L}
 
   - Laos
   - Latvia
@@ -322,7 +322,7 @@ COUNTRY LIST based on information from:
   - Lithuania
   - Luxembourg
 
-## M <a name="M"></a>
+## M  {#M}
 
   - Macau
   - Macedonia
@@ -350,7 +350,7 @@ COUNTRY LIST based on information from:
   - Mozambique
   - Myanmar
 
-## N <a name="N"></a>
+## N  {#N}
 
   - Namibia
   - Nauru
@@ -369,11 +369,11 @@ COUNTRY LIST based on information from:
   - Northern Mariana Islands
   - Norway
 
-## O <a name="O"></a>
+## O  {#O}
 
   - Oman
 
-## P <a name="P"></a>
+## P  {#P}
 
   - Pacific Ocean
   - Pakistan
@@ -390,11 +390,11 @@ COUNTRY LIST based on information from:
   - Portugal
   - Puerto Rico
 
-## Q <a name="Q"></a>
+## Q  {#Q}
 
   - Qatar
 
-## R <a name="R"></a>
+## R  {#R}
 
   - Republic of the Congo
   - Reunion
@@ -403,7 +403,7 @@ COUNTRY LIST based on information from:
   - Russia
   - Rwanda
 
-## S <a name="S"></a>
+## S  {#S}
 
   - Saint Helena
   - Saint Kitts and Nevis
@@ -441,7 +441,7 @@ COUNTRY LIST based on information from:
   - Switzerland
   - Syria
 
-## T <a name="T"></a>
+## T  {#T}
 
   - Taiwan
   - Tajikistan
@@ -460,7 +460,7 @@ COUNTRY LIST based on information from:
   - Turks and Caicos Islands
   - Tuvalu
 
-## U <a name="U"></a>
+## U  {#U}
 
   - USA
   - Uganda
@@ -470,30 +470,30 @@ COUNTRY LIST based on information from:
   - Uruguay
   - Uzbekistan
 
-## V <a name="V"></a>
+## V  {#V}
 
   - Vanuatu
   - Venezuela
   - Viet Nam
   - Virgin Islands
 
-## W <a name="W"></a>
+## W  {#W}
 
   - Wake Island
   - Wallis and Futuna
   - West Bank
   - Western Sahara
 
-## Y <a name="Y"></a>
+## Y  {#Y}
 
   - Yemen
 
-## Z <a name="Z"></a>
+## Z  {#Z}
 
   - Zambia
   - Zimbabwe
 
-## Historical Country Names <a name="history"></a>
+## Historical Country Names  {#history}
 
   - Belgian Congo
   - British Guiana

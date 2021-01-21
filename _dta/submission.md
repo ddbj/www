@@ -20,7 +20,7 @@ tab_menu:
 lang: ja
 ---
 
-## Trace Archive の概要 <a name="overview"></a>
+## Trace Archive の概要  {#overview}
 
 [DDBJ Trace Archive (DTA)](index.html) は，配列決定プロジェクトからのシングルパスリードの DNA sequence chromatograms (traces), base calls, quality estimates のためのデータベースです。 Trace Archive は [International Nucleotide Sequence Database Collaboration (INSDC)](/about/insdc.html#insd) のメンバーとして，DDBJ，[NCBI](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi) と [EBI](https://www.ebi.ac.uk/ena/) が国際協力して運営しています。[NCBI Trace Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi) が ID を発行管理しています。
 DTA から登録された trace データは [NCBI Trace Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi) で検索，取得することができます。
@@ -39,7 +39,7 @@ trace データは [DDBJ Sequence Read Archive](/dra/submission.html#dra) で受
 必須<span class="red">*</span>  
 STRATEGY と TRACE_TYPE_CODE の組み合わせによっては必須 <span class="conditionally_required">*</span>
 
-### Metadata Field List <a name="Metadata-Field-List"></a>
+### Metadata Field List  {#Metadata-Field-List}
 
 [ACCESSION](#ACCESSION)<a name="ACCESSION"></a>  
 : DDBJ/EMBL/GenBank アクセッション番号  
@@ -1066,7 +1066,7 @@ STRATEGY と TRACE_TYPE_CODE の組み合わせによっては必須 <span class
   "標準的な 384 穴プレートの配置")  
   標準的な 384 穴プレートの配置
 
-### Internal Fields List <a name="Internal-Fields-List"></a>
+### Internal Fields List  {#Internal-Fields-List}
 
 [BASECALL_LENGTH](#BASECALL_LENGTH)<a name="BASECALL_LENGTH"></a>  
 : trace の塩基長  
@@ -1177,7 +1177,7 @@ STRATEGY と TRACE_TYPE_CODE の組み合わせによっては必須 <span class
 
   最後に更新された日時が記録されます。
 
-## trace データの登録 <a name="trace-data-submission"></a>
+## trace データの登録  {#trace-data-submission}
 
 {::options parse_block_html="true" /}
 <div class="attention">
@@ -1188,19 +1188,19 @@ STRATEGY と TRACE_TYPE_CODE の組み合わせによっては必須 <span class
 ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#human)をご覧ください。</span>
 </div>
 
-### TI 番号 <a name="ti-number"></a>
+### TI 番号  {#ti-number}
 
 [DDBJ Trace Archive (DTA)](index.html) への登録には[メタデータ](#metadata)と [trace](#TRACE_FORMAT) ファイルが必要です。 ユニークなアクセッション番号 ([TI 番号](#TI)) は trace データが [NCBI Trace Archive](https://www.ncbi.nlm.nih.gov/Traces) に登録されるときに割り振られます。 TI 番号が発行されたデータは即日公開されます。
 
 <span class="red"> TI 番号発行後，データは即日公開されます。 </span>
 
-### 登録に必要なファイル <a name="create-submission-files"></a>
+### 登録に必要なファイル  {#create-submission-files}
 
 テキストファイル (TRACEINFO ファイル) に trace データに関するメタデータを記述し，trace ファイルの場所を指定します。 トップディレクトリを作成し，全てのメタデータファイルをトップディレクトリ下に配置します。 また trace ファイルは，トップディレクトリ下に１つ以上のディレクトリを作成し，その内に配置します。 trace ファイル ([SCF](#TRACE_FORMAT)，[ABI](#TRACE_FORMAT) フォーマットのどちらの場合 も) はトップレベルではなく，サブディレクトリのなかに配置されている必要があります。 サブディレクトリ名 は trace やプロジェクトの名前を使うことを推奨します。 さらにサブディレクトリを作成し trace をグループに分けることができます。
 
 以下は登録ディレクトリの構成例です。
 
-#### 登録ディレクトリの構成例 <a name="登録ディレクトリの構成例"></a>
+#### 登録ディレクトリの構成例  {#登録ディレクトリの構成例}
 
 ```
 TOP_DIRECTORY/
@@ -1216,7 +1216,7 @@ TOP_DIRECTORY/traces/FLJ/FLJA1U0003.scf
 
 以下は TRACEINFO メタデータファイルの例です。
 
-#### TRACEINFO xml ファイルの例 <a name="TRACEINFO_xml_ファイルの例"></a>
+#### TRACEINFO xml ファイルの例  {#TRACEINFO_xml_ファイルの例}
 
 ```
 <?xml version="1.0"?>
@@ -1249,7 +1249,7 @@ TOP_DIRECTORY/traces/FLJ/FLJA1U0003.scf
 </trace_volume>
 ```
 
-#### TRACEINFO タブ区切りテキストファイルの例 <a name="TRACEINFO_タブ区切りテキストファイルの例"></a>
+#### TRACEINFO タブ区切りテキストファイルの例  {#TRACEINFO_タブ区切りテキストファイルの例}
 
 ```
 center_name = CENTER NAME ACRONYM IS HERE
@@ -1266,11 +1266,11 @@ F-3NB691000033  3NB691000033    3NB691  3NB691000033    ./traces/F-3NB691000033.
 --- more information ---
 ```
 
-### アカウントの取得 <a name="create-account"></a>
+### アカウントの取得  {#create-account}
 
 [DDBJ 登録用アカウント](/account.html)を取得します。
 
-### 登録用ファイルのアップロード <a name="upload-submission-files"></a>
+### 登録用ファイルのアップロード  {#upload-submission-files}
 
 [DTA チームに連絡](/contact-ddbj.html)し，登録用ディレクトリの作成を依頼します。 [マニュアル](/dra/submission.html#upload-sequence-data)に従いファイルを SCP で転送します。
 
@@ -1282,12 +1282,12 @@ submission/submitter_id/dta/dta_submitter_id-0001
 
 <span class="red"> DTA の登録用ディレクトリは [DDBJ Sequence Read Archive](/dra/index.html) とは別になります。 </span>
 
-### 登録の完了 <a name="completion-submission"></a>
+### 登録の完了  {#completion-submission}
 
 登録の完了後，登録者が公開を指示するまで DTA はデータを非公開にします。 データ公開の指示があれば DTA は NCBI Trace Archive にデータをアップロードします。データが NCBI Trace Archive にロードされると TI 番号が発行されデータは公開されます。
 
 <span class="red">TI 番号の発行とデータ公開は同時になります。</span>
 
-### データの更新 <a name="update"></a>
+### データの更新  {#update}
 
 データを更新するときは [DTA チームまでご連絡ください](/contact-ddbj.html)。

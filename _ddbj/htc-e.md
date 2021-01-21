@@ -152,7 +152,7 @@ You can submit HTC data to DDBJ through [Mass Submission System
     Do not confuse with [TSA: Transcriptome Shotgun
     Assembly](/ddbj/tsa-e.html).
 
-### Sample flat file <a name="flat-file"></a>
+### Sample flat file  {#flat-file}
 
 Aspects of HTC/full length insert cDNA
 

@@ -52,7 +52,7 @@ tab_menu:
 lang: en
 ---
 
-## IDF Example <a name="idf"></a>
+## IDF Example  {#idf}
 
 [Full IDF example in spreadsheet (Microarray)](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=0)
 [Full IDF example in spreadsheet (NGS)](https://docs.google.com/spreadsheets/d/1-KG-8f1ZyuCX056H-TB3MwGFFkpt8tmKXJu8NxWy4PQ/edit#gid=30173120)
@@ -84,7 +84,7 @@ lang: en
 
 A full listing of all supported IDF tags can be found in the [IDF section](metadata-e.html#idf).
 
-## SDRF Conceptual Examples <a name="sdrf_con"></a>
+## SDRF Conceptual Examples  {#sdrf_con}
 
 [Full SDRF example in spreadsheet (Microarray)](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=657626667)
 [Full SDRF example in spreadsheet (NGS)](https://docs.google.com/spreadsheets/d/1-KG-8f1ZyuCX056H-TB3MwGFFkpt8tmKXJu8NxWy4PQ/edit#gid=513795053)
@@ -102,7 +102,7 @@ corresponding table. Column headings in blue denote graph node
 identifier columns (names).
 
 
-### Example 1: Raw and processed microarray data files for each sample <a name="sdrf_example1"></a>
+### Example 1: Raw and processed microarray data files for each sample  {#sdrf_example1}
 
 A simple microarray experiment. Each sample has one raw data file and
 one processed data file.
@@ -120,7 +120,7 @@ one processed data file.
 {: .tablecaption}
 Raw and processed microarray data files for each sample
 
-### Example 2: Two-color microarray <a name="sdrf_example2"></a>
+### Example 2: Two-color microarray  {#sdrf_example2}
 
 {::nomarkdown}
 {% include image.html url="magetab/sdrf2.png" caption="Two-color microarray" class="w400" %}
@@ -137,7 +137,7 @@ Raw and processed microarray data files for each sample
 {: .tablecaption}
 Two-color microarray
 
-### Example 3: Raw and processed sequencing data file for each sample, and a processed matrix file  <a name="sdrf_example3"></a>
+### Example 3: Raw and processed sequencing data file for each sample, and a processed matrix file   {#sdrf_example3}
 
 A simple next-generation sequencing experiment. One raw DRA data file
 and one processed data file for each sample, and one processed matrix
@@ -158,7 +158,7 @@ Raw and processed sequencing data file for each sample, and a processed
 matrix file
 
 
-## MAGE-TAB Real-world Examples <a name="tab_real"></a>
+## MAGE-TAB Real-world Examples  {#tab_real}
 
 [Full SDRF example in
 spreadsheet.](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=657626667)

@@ -119,9 +119,9 @@ related_pages:
     url: /ddbj/example.html
 ---
 
-## 塩基 <a name="nucleotide"></a>
+## 塩基  {#nucleotide}
 
-### Nucleotide Base Codes <a name="nucleotide-1"></a>
+### Nucleotide Base Codes  {#nucleotide-1}
 
 国際塩基配列データベースで使用する核酸コードは以下の通りです。  
 全て小文字を使用します。大文字で登録された場合には、自動的に小文字に変換されます。
@@ -149,7 +149,7 @@ related_pages:
   - Cornish-Bowden, A. Nucl Acid Res 13, 3021-3030 (1985)
   - [Feature Table Definition](/ddbj/feature-table.html): [7.4.1 Nucleotide base codes (IUPAC)](/ddbj/feature-table.html#7.4.1)
 
-### Modified Base Abbreviations <a name="nucleotide-2"></a>
+### Modified Base Abbreviations  {#nucleotide-2}
 
 修飾塩基は、以下の例のように modified base を用いて記載します。
 
@@ -223,9 +223,9 @@ related_pages:
   - [Feature Table Definition](/ddbj/feature-table.html): [7.4.2 Modified
     base abbreviations](/ddbj/feature-table.html#7.4.2)
 
-## アミノ酸 <a name="amino"></a>
+## アミノ酸  {#amino}
 
-### Amino Acid Codes<a name="amino-1"></a> 
+### Amino Acid Codes {#amino-1} 
 
 国際塩基配列データベースで使用するアミノ酸コードは以下の通りです。  
 [CDS feature](/ddbj/cds.html) の [/translation](/ddbj/qualifiers.html#translation) には以下の一文字表記で表されます。   
@@ -267,7 +267,7 @@ related_pages:
   - IUPAC-IUB Joint Commission on Biochemical Nomenclature.Nomenclature and Symbolism for Amino Acids and Peptides. Eur. J. Biochem. 138: 9-37 (1984).
   - [Feature Table Definition](/ddbj/feature-table.html): [7.4.3 Amino acid abbreviations](/ddbj/feature-table.html#7.4.3)
 
-### Modified and Unusual Amino Acids<a name="amino-2"></a> 
+### Modified and Unusual Amino Acids {#amino-2} 
 
 [Amino Acid Codes](#amino-1) にないアミノ酸を記載する場合には以下の省略形を使用します。  
 [CDS feature](/ddbj/cds.html) の [/translation](/ddbj/qualifiers.html#translation) にはいずれも "X" で表されます。

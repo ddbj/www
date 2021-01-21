@@ -36,7 +36,7 @@ tab_menu:
 lang: ja
 ---
 
-## 概要 <a name="introduction"></a>
+## 概要  {#introduction}
 
 Japanese Genotype-phenotype Archive (JGA)
 は個人レベルの遺伝学的なデータと匿名化された表現型情報を保存し，提供しています。
@@ -51,14 +51,14 @@ Japanese Genotype-phenotype Archive (JGA)
 Bioscience Database Center (NBDC)](http://biosciencedbc.jp/)
 と共同で運営されています。
 
-## データの利用 <a name="access"></a>
+## データの利用  {#access}
 
 JGA はデータを格納する際にそのデータに適用される利用制限ポリシーを登録しますが，利用者のデータ利用の可否については
 [JST/NBDC](http://humandbs.biosciencedbc.jp/) が審査します。 利用者は
 [NBDC](http://humandbs.biosciencedbc.jp/) にデータの利用を申請し，JGA は NBDC
 からの利用承認連絡を受け，利用者にデータへの安全なアクセスを提供します。
 
-## データの登録 <a name="submission"></a>
+## データの登録  {#submission}
 
 JGA は JST/NBDC で承認された匿名化されたデータだけを受け付けています
 ([ヒトを対象とした研究データの登録について](/policies.html#human))。

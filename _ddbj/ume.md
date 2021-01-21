@@ -113,7 +113,7 @@ related_pages:
 
 UME (Utilities for MSS file Error check) は Mass Submission System (MSS) を利用して DDBJ に登録する際に必要な [配列ファイル](/ddbj/file-format.html#sequence) と[アノテーションファイル](/ddbj/file-format.html#annotation) のフォーマットチェックと、それらファイルの記載を元に [CDS feature](/ddbj/cds.html) のアミノ酸翻訳チェックを行うツールです。Parser と transChecker を内包しています。
 
-## 基本機能 <a name="function"></a>
+## 基本機能  {#function}
 
 |  名称  |  機能  |
 | ---- | ---- |
@@ -122,7 +122,7 @@ UME (Utilities for MSS file Error check) は Mass Submission System (MSS) を利
 |  [FFconv](#validation-4)  |  [配列ファイル](/ddbj/file-format.html#sequence) と [アノテーションファイル](/ddbj/file-format.html#annotation) から、擬似的な [フラットファイル](/ddbj/flat-file.html) を作成します。 |
 |  [AGPParser](#agpparser)  |  contig([CON エントリ](/ddbj/con.html)) を登録する場合、[AGPファイル](/ddbj/file-format.html#agp) と [アノテーションファイル](/ddbj/file-format.html#annotation) の構文とフォーマットを検証します。  |
 
-## インストール <a name="install"></a>
+## インストール  {#install}
 
 UME パッケージを [MSS データファイルチェック用ツール](/ddbj/mss-tool.html) からダウンロードし、以下の点に注意して、解凍してください。  
 その後、UME フォルダ内にある UME アイコンをダブルクリックして起動します。
@@ -140,9 +140,9 @@ $ gunzip UME_unix.zip
 macOS: ファイル名とフォルダ名について  
 : [配列ファイル](/ddbj/file-format.html#sequence)、[アノテーションファイル](/ddbj/file-format.html#annotation)、[AGP ファイル](/ddbj/file-format.html#agp) のファイル名またはフォルダ名に、マルチバイト文字が含まれていますと一部のバージョンの macOS では正常に動作しない場合がありますので、ファイル名とフォルダ名にマルチバイト文字を混在させないようにご注意ください。
 
-## 初期設定 <a name="initial"></a>
+## 初期設定  {#initial}
 
-### UME の起動 <a name="initial-1"></a>
+### UME の起動  {#initial-1}
 
 UME フォルダ内にある UME アイコン(ご使用の PC の環境設定に依存して何らかの拡張子が表示されることがあります)をダブルクリックして起動します。
 
@@ -171,7 +171,7 @@ UME ファイル
 license ファイル  
 : 使用許諾に関するテキストファイルです。ご一読ください。 内容は [使用許諾](/ddbj/mss-tool.html#license)と同じです。
 
-### メモリの初期設定 <a name="initial-2"></a>
+### メモリの初期設定  {#initial-2}
 
 UME を起動しましたら、メモリ割り当てサイズを調節します。 デフォルトは 512 Mbytes ですが、ご使用の PCのスペックに合わせて変更してください。
 
@@ -180,9 +180,9 @@ UME を起動しましたら、メモリ割り当てサイズを調節します�
 1. 画面上部のメニューから Config をクリックします。
 2. Max memory for runtime のプルダウンメニューから、クリックして選択します。
 
-## 登録用ファイルの検証 <a name="validation"></a>
+## 登録用ファイルの検証  {#validation}
 
-### Check パネルの構成 <a name="validation-1"></a>
+### Check パネルの構成  {#validation-1}
 
 下図で赤い四角で囲んだ部分にある Check タブをクリックしますと、この表示になります。  
 UME を起動後、最初に開いているパネルです。
@@ -195,7 +195,7 @@ UME を起動後、最初に開いているパネルです。
 4. Execute をクリックしますと、(1) で指定したファイルから FFconv で擬似フラットファイルを作成します。
 5. Exit をクリックしますと、UME を終了します。
 
-### Parser: 構文チェックツール<a name="validation-2"></a> 
+### Parser: 構文チェックツール {#validation-2} 
 
 以下の手順で Parser による登録ファイルの構文チェックを実行してください。
 
@@ -220,7 +220,7 @@ Parser は、エラーが発生している場合は、エラーメッセージ�
 
 </div>
 
-### transChecker: アミノ酸翻訳検証ツール<a name="validation-3"></a> 
+### transChecker: アミノ酸翻訳検証ツール {#validation-3} 
 
 登録データ中に [CDS feature](/ddbj/cds.html) を含む場合 transChecker によるアミノ酸翻訳チェックをお願いします。  
 ただし、transChecker を実行する前に、[Parser](#validation-2) でエラーが出力されない状態にしておく必要があります。Parser でエラーが検出される場合は、transChecker を実行することが出来ませんのでご注意ください。  
@@ -265,7 +265,7 @@ transChecker は、エラーが発生している場合は、エラーメッセ�
 
 </div>
 
-### FFconv: 擬似フラットファイル作成ツール<a name="validation-4"></a> 
+### FFconv: 擬似フラットファイル作成ツール {#validation-4} 
 
 FFconv を使用して [アノテーションファイル](/ddbj/file-format.html#annotation) と [配列ファイル](/ddbj/file-format.html#sequence) を [DDBJ フラットファイル](/ddbj/flat-file.html)に変換し確認することが可能です。
 
@@ -288,9 +288,9 @@ Check タブをクリックし、 Check パネル を表示させます。
 9. Save をクリックしますと、(8) の内容をテキストファイルに保存します。
 10. Close をクリックしますと、この結果表示ウィンドウを閉じます。
 
-## Contig 登録用ファイルの検証<a name="agpparser"></a> 
+## Contig 登録用ファイルの検証 {#agpparser} 
 
-### Contig パネルの構成 <a name="panel-2"></a>
+### Contig パネルの構成  {#panel-2}
 
 下図で赤い四角で囲んだ部分にある Contig タブをクリックしますと、この表示になります。
 
@@ -302,7 +302,7 @@ Check タブをクリックし、 Check パネル を表示させます。
 4. Execute をクリックしますと、指定したファイルを AGPParser でチェックします。
 5. Exit をクリックしますと、UME を終了します。
 
-### AGPParser 実行 <a name="agpparser-2"></a>
+### AGPParser 実行  {#agpparser-2}
 
 AGPParser は [AGPファイル](/ddbj/file-format.html#agp) のフォーマットをチェックします。  
 [アノテーションファイル](/ddbj/file-format.html#annotation) または AGPファイルで引用する配列で構成される multi-fasta ファイルを指定した場合、相互の整合性をチェックします。

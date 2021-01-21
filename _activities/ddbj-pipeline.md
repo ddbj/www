@@ -34,7 +34,7 @@ DDBJ の塩基配列解析ツール「DDBJ Read Annotation Pipeline」ついて�
 
 連載期間：No.64（2011年9月29日発行），No.65（2011年10月27日発行）※最新の情報とは内容が異なる場合がありますのでご注意下さい。
 
-## DDBJ の塩基配列解析ツールについて(前編) <a name="1"></a>
+## DDBJ の塩基配列解析ツールについて(前編)  {#1}
 
 {:.text-align-end}
 国立遺伝学研究所　大量遺伝情報研究室　長崎英樹
@@ -49,7 +49,7 @@ Sequence Read Archive (DRA)](/dra/index.html) のアカウントで利用可能�
 {% include image.html url="ddbj/column_19.jpg" caption="図1：DDBJ パイプライン トップページ([http://p.ddbj.nig.ac.jp/])" %}
 {:/}
 
-## DDBJ の塩基配列解析ツールについて（後編） <a name="2"></a>
+## DDBJ の塩基配列解析ツールについて（後編）  {#2}
 
 {:.text-align-end}
 国立遺伝学研究所　大量遺伝情報研究室　長崎英樹

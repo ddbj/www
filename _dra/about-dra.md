@@ -40,7 +40,7 @@ tab_menu:
 lang: ja
 ---
 
-## 連絡先 <a name="contact"></a>
+## 連絡先  {#contact}
 
 [メッセージフォーム]({{ site.baseurl }}/contact-ddbj.html)よりご連絡ください。
 
@@ -55,7 +55,7 @@ FAX : 055-981-6849
 
 [DDBJ サービスへの問い合わせ]({{ site.baseurl }}/contact-ddbj.html#to-ddbj)
 
-## 文献 <a name="reference"></a>
+## 文献  {#reference}
 
 Kodama Y, Shumway M, Leinonen R; on behalf of the International Nucleotide Sequence Database Collaboration (2012)
 : The sequence read archive: explosive growth of sequencing data. *Nucleic Acids Res* 40:D54-D56.  

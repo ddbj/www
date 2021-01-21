@@ -154,7 +154,7 @@ Notes on the EST submission
   - EST assemble sequence would be accepted as [TSA: Transcriptome
     Shotgun Assembly](/ddbj/tsa-e.html)
 
-## Sample flat file <a name="flat-file"></a>
+## Sample flat file  {#flat-file}
 
 Aspects of EST
 

@@ -145,7 +145,7 @@ GSS 登録における注意事項
   - 登録前に cloning vector に由来する領域は配列から取り除いておいてください。
   - [clone](/ddbj/qualifiers.html#clone) qualifier の記載が必須です。
 
-## DDBJ フォーマットの例 <a name="flat-file"></a>
+## DDBJ フォーマットの例  {#flat-file}
 
 GSS エントリの特徴
 

@@ -103,7 +103,7 @@ DDBJ Center provides some services to search and to browse sequence data　that 
 Please note that DDBJ is not responsible for any issues that may arise　from use of sequence data.  
 See also [sitepolicy and Disclaimer](/policies-e.html).
 
-## Nucleotide sequence data <a name="nt"></a>
+## Nucleotide sequence data  {#nt}
 
 The nucleotide sequence data included in patent applications that are
 collected and processed by [the Japan Patent Office](//www.jpo.go.jp/)
@@ -141,7 +141,7 @@ to [PAT division](/ddbj/flat-file.html#Locus) in DDBJ/GenBank/EMBL.
 : elect [DDBJ ALL (DDBJ periodical release + daily updates)], then
 select [Patent] in [Other divisions].
 
-## Amino acid sequence data <a name="aa"></a>
+## Amino acid sequence data  {#aa}
 
 The amino acid sequence data included in patent applications that are
 collected and processed by JPO and KIPO are made available through

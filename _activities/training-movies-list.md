@@ -12,9 +12,9 @@ lang: ja
 
 </div>
 
-## NGS<a name="NGS"></a>
+## NGS {#NGS}
 
-### DRA（DDBJ Sequence Read Archive）<a name="DRA（DDBJ_Sequence_Read_Archive）"></a>
+### DRA（DDBJ Sequence Read Archive） {#DRA（DDBJ_Sequence_Read_Archive）}
 
 <table>
   <tr class="separatorline">
@@ -144,7 +144,7 @@ lang: ja
   </tr>
 </table>
 
-### BioProject, BioSample<a name="BioProject,_BioSample"></a>
+### BioProject, BioSample {#BioProject,_BioSample}
 
 <table>
   <tr class="separatorline">
@@ -255,7 +255,7 @@ lang: ja
   </tr>
 </table>
 
-### JGA（Japanese Genotype-phenotype Archive）<a name="JGA（Japanese_Genotype-phenotype_Archive）"></a>
+### JGA（Japanese Genotype-phenotype Archive） {#JGA（Japanese_Genotype-phenotype_Archive）}
 
 <table>
   <tr class="separatorline">
@@ -295,9 +295,9 @@ lang: ja
   </tr>
 </table>
 
-## INSDC<a name="INSDC"></a>
+## INSDC {#INSDC}
 
-### NSSS（DDBJ Nucleotide Sequence Submission System）<a name="NSSS（DDBJ_Nucleotide_Sequence_Submission_System）"></a>
+### NSSS（DDBJ Nucleotide Sequence Submission System） {#NSSS（DDBJ_Nucleotide_Sequence_Submission_System）}
 
 <table>
   <tr class="separatorline">
@@ -393,7 +393,7 @@ lang: ja
   </tr>
 </table>
 
-### MSS（Mass Submission System）<a name="MSS（Mass_Submission_System）"></a>
+### MSS（Mass Submission System） {#MSS（Mass_Submission_System）}
 
 <table>
   <tr class="separatorline">

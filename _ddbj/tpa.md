@@ -207,7 +207,7 @@ TPA とプライマリーエントリの配列アラインメントに関する�
     </dd>
 </dl>
 
-## TPA フラットファイルの例 <a name="TPA_フラットファイルの例"></a>
+## TPA フラットファイルの例  {#TPA_フラットファイルの例}
 
 <pre><code><a id="LocusA" href="/ddbj/flat-file#LocusB">LOCUS</a>       <a id="LocusNameA" href="/ddbj/flat-file#LocusNameB">BR000000</a>              <a id="SequenceLengthA" href="/ddbj/flat-file#SequenceLengthB">2000 bp</a>    <a id="MoleculeTypeA" href="/ddbj/flat-file#MoleculeTypeB">mRNA</a>    <a id="ModificationDateA" href="/ddbj/flat-file#ModificationDateB">linear</a>   <a id="DivisionA" href="/ddbj/flat-file#DivisionB">HUM</a> <a id="ModificationDateA" href="/ddbj/flat-file#ModificationDateB">17-SEP-2006</a>
 <a id="DefinitionA" href="/ddbj/flat-file#DefinitionB">DEFINITION</a>  TPA_exp: Homo sapiens GAPD gene for glyceraldehyde-3-phosphate

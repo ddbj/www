@@ -4,7 +4,7 @@ title: Group
 lang: en
 ---
 
-## Group <a name="group"></a>
+## Group  {#group}
 
 In [the new account system](account-integration-e.html), submissions and
 NBDC data submission and use applications are managed through 'group'.
@@ -19,7 +19,7 @@ holder accepts invitation, he/she is added to the group.
 
 The owner can remove a member without his/her permission.
 
-### Submitter group <a name="subgrp"></a>
+### Submitter group  {#subgrp}
 
 The submission application to NBDC is managed by submitter group. NBDC
 creates JGA submissions linked to approved applications and applicants
@@ -36,7 +36,7 @@ need to request member addition to NBDC.
 {% include image.html url="books/subgrp_nbdc-e.png" caption="JGA submission and application management by group" class="w450" %}
 {:/}
 
-### User group <a name="usergrp"></a>
+### User group  {#usergrp}
 
 Data use application to NBDC is linked to user group. After the data use
 application is approved, you can download JGA Dataset approved in the

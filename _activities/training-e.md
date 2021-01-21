@@ -12,7 +12,7 @@ DDBJ Center hosts the following training events for mainly domestic researchers 
 
 We will announce future events at [Twitter](https://twitter.com/DDBJ_topics) and [RSS](/data-feed-e.html) etc.
 
-## DDBJing lectures <a name="DDBJing lectures"></a>
+## DDBJing lectures  {#DDBJing lectures}
 
 ### Lectures
 

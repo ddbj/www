@@ -36,7 +36,7 @@ tab_menu:
 lang: en
 ---
 
-## Introduction <a name="introduction"></a>
+## Introduction  {#introduction}
 
 The Japanese Genotype-phenotype Archive (JGA) is a service for permanent
 archiving and sharing of all types of individual-level genetic and
@@ -51,7 +51,7 @@ JGA services are provided in collaboration with [National Bioscience
 Database Center (NBDC)](http://biosciencedbc.jp/en/) of [Japan Science
 and Technology Agency](http://www.jst.go.jp/EN/index.html).
 
-## Data access <a name="access"></a>
+## Data access  {#access}
 
 The JGA implements access-granting policy whereby the decisions of who
 will be granted access to the data resides with the
@@ -61,7 +61,7 @@ JGA will only facilitate secure access to the data once the information
 of a successful application process has been passed from the NBDC to the
 JGA.
 
-## Data submission <a name="submission"></a>
+## Data submission  {#submission}
 
 The JGA accepts only de-identified data approved by JST-NBDC ([Data
 submission of human subjects research](/policies-e.html#human)). The

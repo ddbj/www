@@ -116,9 +116,9 @@ addhead: <script type='text/javascript' src='/assets/js/jquery.trace.js'></scrip
 エラーメッセージごとに必要な対処方法が異なりますので、適宜、対処をお願いいたします。  
 問題、不明点などがございましたら、エラーメッセージを添えて [ご連絡](/contact-ddbj.html) ください。
 
-### Parser <a name="Parser"></a>
+### Parser  {#Parser}
 
-#### 出力フォーマット <a name="parser-1"></a>
+#### 出力フォーマット  {#parser-1}
 
 {::nomarkdown}[コード番号]:[Level]:[Type]:[File]:[エラー位置]:[メッセージ本文]{:/}
 
@@ -144,7 +144,7 @@ addhead: <script type='text/javascript' src='/assets/js/jquery.trace.js'></scrip
   </tbody>
 </table>
 
-#### エラーメッセージ <a name="agpparser-2"></a>
+#### エラーメッセージ  {#agpparser-2}
 
 メッセージ中で括弧( [ と \] )で括られている \# で始まる語・数値は、実際のエラーメッセージでは、登録において使用されている値などに置換されます。
 
@@ -158,9 +158,9 @@ addhead: <script type='text/javascript' src='/assets/js/jquery.trace.js'></scrip
 
 -----
 
-### transChecker <a name="transChecker"></a>
+### transChecker  {#transChecker}
 
-#### フォーマット <a name="agpparser-1"></a>
+#### フォーマット  {#agpparser-1}
 
 {::nomarkdown}[コード番号]:[Level]:[メッセージ本文]{:/}
 
@@ -189,7 +189,7 @@ TC0019:ER2: Stop codon is found in mid of CDS location.
 //
 ```
 
-#### エラーメッセージ <a name="agpparser-2"></a>
+#### エラーメッセージ  {#agpparser-2}
 
 メッセージ中で括弧( **[** と **\]** )で括られている **\#** で始まる語・数値は、実際のエラーメッセージでは、登録において使用されている値などに置換されます。
 
@@ -205,9 +205,9 @@ TC0019:ER2: Stop codon is found in mid of CDS location.
 
 -----
 
-### AGP Parser <a name="AGP Parser"></a>
+### AGP Parser  {#AGP Parser}
 
-#### フォーマット <a name="agpparser-1"></a>
+#### フォーマット  {#agpparser-1}
 
 {::nomarkdown}[コード番号]:[Level]:[エラー位置]:[メッセージ本文] or [コード番号]:[Level]:[メッセージ本文]{:/}
 
@@ -224,7 +224,7 @@ TC0019:ER2: Stop codon is found in mid of CDS location.
   </tbody>
 </table>
 
-#### エラーメッセージ <a name="agpparser-2"></a>
+#### エラーメッセージ  {#agpparser-2}
 
 メッセージ中で括弧( **[** と **\]** )で括られている **\#** で始まる語・数値は、実際のエラーメッセージでは、登録において使用されている値などに置換されます。
 

@@ -152,7 +152,7 @@ Notes on the TLS data submission
   - Remove low quality reads and chimeric sequences before
     submission.
 
-## Sample flat file <a name="flat-file"></a>
+## Sample flat file  {#flat-file}
 
 Aspects of TLS
 

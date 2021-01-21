@@ -29,7 +29,7 @@ tab_menu:
 lang: ja
 ---
 
-## 連絡先 <a name="contact"></a>
+## 連絡先  {#contact}
 
 [メッセージフォーム](/contact-ddbj.html)よりご連絡ください。
 

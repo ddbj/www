@@ -118,18 +118,18 @@ taxonomically defined organisms.
 This guide explains how to submit these metagenomic sequencing data to
 the BioProject/BioSample/DRA/DDBJ. Raw sequencing data deposition to DRA is not required but highly recommended.
 
-## Submission of metagenome assembly data <a name="mag-submission"></a>
+## Submission of metagenome assembly data  {#mag-submission}
 
 {::nomarkdown}
 {% include image.html url="submission/mag.jpg" caption="Submission of metagenome assembly data" class="w600" %}
 {:/}
 
-### 1\) Raw reads (Run) <a name="raw-reads"></a>
+### 1\) Raw reads (Run)  {#raw-reads}
 
 Unassembled raw sequence data should be submitted to [DRA
 Run](/dra/submission-e.html).
 
-#### BioProject <a name="raw-reads-bioproject"></a>
+#### BioProject  {#raw-reads-bioproject}
 
 Register your BioProject as a [metagenome/environmental
 project](/bioproject/submission-e.html#Project-type). For the organism
@@ -140,7 +140,7 @@ in the taxonomy database. Please include information about the project,
 including a detailed description of the isolation source, and the scope
 of the project.
 
-#### BioSample <a name="raw-reads-biosample"></a>
+#### BioSample  {#raw-reads-biosample}
 
 Register your BioSample by using the ["Genome, metagenome or marker
 sequences (MIxS compliant) - Environmental/Metagenome Genomic Sequences
@@ -153,51 +153,51 @@ in the taxonomy database. Please provide as much metadata and
 information as possible about the samples in order to provide context
 for the experimental data.
 
-#### DRA <a name="raw-reads-dra"></a>
+#### DRA  {#raw-reads-dra}
 
 Submit unassembled raw sequence data to [DRA
 Run](/dra/submission-e.html).
 
-### 2\) Primary metagenome<a name="primary-metagenome"></a>
+### 2\) Primary metagenome {#primary-metagenome}
 
 Assembled contigs derived from the raw sequence data should be submitted to DDBJ or DRA.
 
-#### BioProject <a name="primary-metagenome-bioproject"></a>
+#### BioProject  {#primary-metagenome-bioproject}
 
 Same as 1) Raw reads (Run).
 
-#### BioSample <a name="primary-metagenome-biosample"></a>
+#### BioSample  {#primary-metagenome-biosample}
 
 Same as 1) Raw reads (Run).
 
-#### DDBJ <a name="primary-metagenome-ddbj"></a>
+#### DDBJ  {#primary-metagenome-ddbj}
 
 Submit assembled contigs as [WGS entries](/ddbj/wgs.html) of [ENV division](/ddbj/env.html) through the [Mass Submission System (MSS)](/ddbj/mss.html).
 
-#### DRA <a name="primary-metagenome-dra"></a>
+#### DRA  {#primary-metagenome-dra}
 
 Submit assembled contigs derived from the raw sequence data in fasta/bam
 files to the [DRA Analysis](/dra/submission-e.html#Analysis_Type)
 (Analysis type = 'De Novo Assembly'). Submit the Analysis along with the
 Run registered in 1). Please note that Analysis data are not shared with NCBI/ENA.
 
-### 3\) Binned metagenome<a name="binned-metagenome"></a>
+### 3\) Binned metagenome {#binned-metagenome}
 
 Binned metagenome assemblies derived from a subset of the raw sequence data should be submitted to DDBJ or DRA. Example cases are when there are only a few short contigs for each organism, or when the organisms were binned based only on BLAST similarity.
 
-#### BioProject <a name="binned-metagenome-bioproject"></a>
+#### BioProject  {#binned-metagenome-bioproject}
 
 Same as 1) Raw reads (Run).
 
-#### BioSample <a name="binned-metagenome-biosample"></a>
+#### BioSample  {#binned-metagenome-biosample}
 
 Same as 1) Raw reads (Run).
 
-#### DDBJ <a name="binned-metagenome-ddbj"></a>
+#### DDBJ  {#binned-metagenome-ddbj}
 
 Submit binned metagenome assemblies as [WGS entries](/ddbj/wgs.html) of [ENV division](/ddbj/env.html) through the [Mass Submission System (MSS)](/ddbj/mss.html).
 
-#### DRA <a name="binned-metagenome-dra"></a>
+#### DRA  {#binned-metagenome-dra}
 
 Submit binned metagenome assemblies derived from the raw sequence data
 in fasta/bam files to the [DRA
@@ -206,13 +206,13 @@ Novo Assembly'). Include information of analysis software used and
 organism bin in the description. Submit the Analysis along with the Run
 registered in 1). Please note that Analysis data are not shared with NCBI/ENA.
 
-### 4\) MAG (DDBJ) <a name="mag"></a>
+### 4\) MAG (DDBJ)  {#mag}
 
 Metagenomic assemblies (Metagenomic Assembly, MAG) predicted to be
 derived from taxonomically defined organisms should be submitted to DDBJ
 as genome entries of [ENV division](/ddbj/env-e.html).
 
-#### BioProject <a name="mag-bioproject"></a>
+#### BioProject  {#mag-bioproject}
 
 Register your BioProject as a [metagenome/environmental
 project](/bioproject/submission-e.html#Project-type). If you have
@@ -220,7 +220,7 @@ already registered a BioProject for submission of the corresponding raw
 reads to DRA, then, in general, you would use the BioProject when you
 submit the MAG to DDBJ.
 
-#### BioSample <a name="mag-biosample"></a>
+#### BioSample  {#mag-biosample}
 
 Register a virtual BioSample by using the ["Other
 samples"](/biosample/submission-e.html#General_Sample) package. Describe
@@ -259,12 +259,12 @@ Derived BioSample
     metagenome BioSample: SAMDxxxxxxxx.
   - derived\_from: SAMDxxxxxxxx
 
-#### DRA <a name="mag-dra"></a>
+#### DRA  {#mag-dra}
 
 The raw sequence data used for the MAG assembly should be submitted to
 the DRA Run.
 
-#### DDBJ <a name="mag-ddbj"></a>
+#### DDBJ  {#mag-ddbj}
 
 Submit the MAG as a genome entry of [ENV division](/ddbj/env-e.html)
 through the [Mass Submission System (MSS)](/ddbj/mss-e.html). Following

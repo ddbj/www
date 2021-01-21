@@ -111,14 +111,14 @@ related_pages:
     url: /ddbj/mss-form-e.html
 ---
 
-## System requirements <a name="system"></a>
+## System requirements  {#system}
 
-### Hardware <a name="system-1"></a>
+### Hardware  {#system-1}
 
   - About 20 MB of hard disk space to install.
   - At least 512 MB of RAM. More RAM, 1 GB or over, is recommended.
 
-### Software <a name="system-2"></a>
+### Software  {#system-2}
 
   - Each tool requires [Java Development Kit 8 (JDK8)](http://www.oracle.com/technetwork/java/javase/downloads/index.html) installed properly on a PC that it runs.
   - DDBJ recommends either of following operating systems, because DDBJ has tested the program only on these environments.  
@@ -127,7 +127,7 @@ related_pages:
 
 <span class="red">\*</span>UME (Utilities for MSS file Error check) includes software developed by [the Apache Software Foundation](//www.apache.org/).
 
-## Download <a name="download"></a>
+## Download  {#download}
 
 Download either of following UME archive packages that suits for your system environment.  
 Please refer each manuals for how to install and use.
@@ -178,7 +178,7 @@ Please refer each manuals for how to install and use.
     </tbody>
 </table>
 
-## End-User License Agreement <a name="license"></a>
+## End-User License Agreement  {#license}
 
 **Please read the following agreement carefully before you use the software for Mass Submission System.**
 

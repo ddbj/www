@@ -115,7 +115,7 @@ related_pages:
     url: /ddbj/example-e.html
 ---
 
-## Outline <a name="outline"></a>
+## Outline  {#outline}
 
 One of the most frequently used feature keys is "CDS" to describe coding
 sequence for protein. The location of CDS feature basically indicates
@@ -147,7 +147,7 @@ other gene(s) or not is judged by submitters, entirely. In principle,
 the information about motif and higher-order structure of protein is NOT
 described on the flat file.
 
-## Gene nomenclature at DDBJ <a name="product"></a>
+## Gene nomenclature at DDBJ  {#product}
 
 DDBJ does not have any right for the gene nomenclature. Also, DDBJ does
 not make any official collaboration with any committee of gene
@@ -206,7 +206,7 @@ describe the names of gene and product as follows;
 : Though we recognize that there are many exceptions in which the gene nomenclature of some model organisms do not fall into the above rule, we recommend the above rule, because we wish to make contents of DDBJ/ENA/GenBank as useful as possible.
 : Please do not hesitate to contact us when you like to update the informnation of protein in your entry after once submitted to DDBJ. See also the page, [Data Updates/Correction: after getting your accession number](/ddbj/update-e.html), when you like to update your data.
 
-## How to describe CDS feature, when termination codon is found in the range <a name="stop"></a>
+## How to describe CDS feature, when termination codon is found in the range  {#stop}
 
 When you find termination codon(s) in the range of CDS feature that you
 presume, at first, please confirm that following items are appropriately
@@ -330,7 +330,7 @@ Add [artificial_location](/ddbj/qualifiers-e.html#artificial_location)
 qualifier as a flag to indicate the operative adjustment.
 : <span class="red">For submissions via Nucleotide Sequence Submission System, it is forbidden to use artificial_location qualifier.</span>
 
-## Locations with "join" operators are basically described to indicate splicing results <a name="join"></a>
+## Locations with "join" operators are basically described to indicate splicing results  {#join}
 
 In general, the rule about description of location for CDS is in common
 with all other features.See [Description of
@@ -358,7 +358,7 @@ However, there are three major exceptions as below;
     [artificial_location
     qualifier](/ddbj/qualifiers-e.html#artificial_location)qualifier.
 
-## Translated amino acid sequence described at translation qualifier <a name="translation"></a>
+## Translated amino acid sequence described at translation qualifier  {#translation}
 
 For example, in the page, [Explanation of DDBJ flat file
 format](/ddbj/flat-file-e.html), the amino acid sequence in the value of
@@ -422,7 +422,7 @@ sequence is described in the value of translation as below.
          VFTDKDKAVAQLKGGAKKV"
 ```
 
-## Offset of the frame at translation initiation by codon_start <a name="frame"></a>
+## Offset of the frame at translation initiation by codon_start  {#frame}
 
 The [codon_start](/ddbj/qualifiers-e.html#codon_start) qualifier
 indicates the offset at which the first complete codon of a CDS feature

@@ -142,7 +142,7 @@ HTG の登録における注意事項
     基本的に HTG division への主な対象はfinished レベルに達していない BAC, YAC, fosmid
     cloneです。
 
-## DDBJ フォーマットの例 <a name="flat-file"></a>
+## DDBJ フォーマットの例  {#flat-file}
 
 HTG の特徴
 

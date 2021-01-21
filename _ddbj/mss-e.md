@@ -124,7 +124,7 @@ human subjects from your submissions.
 Before submission, read "[Submission of research data from human
 subjects](/policies-e.html#human)".
 
-## What is MSS? <a name="outline"></a>
+## What is MSS?  {#outline}
 
 {::options parse_block_html="true" /}
 <div class="attention">
@@ -156,11 +156,11 @@ If you are to submit reads from sequencers, please refer [DRA; DDBJ
 Sequence Read Archive](/dra/index-e.html).  
 Please confirm [Categories for Sequence Data](/documents/data-categories-e.html).
 
-## The Flow of MSS <a name="flow"></a>
+## The Flow of MSS  {#flow}
 
 ![]({{ site.baseurl }}/assets/images/ddbj/MSS-flow_20200916-en.png "The Flow of MSS")
 
-### 1. Application <a name="flow-1"></a>
+### 1. Application  {#flow-1}
 
 Please apply for your submission through ["Application form for MSS"](/ddbj/mass-form-e.html). 
 According to your application, DDBJ MSS sends you how to use MSS via an email.
@@ -185,9 +185,9 @@ When your data are corresponding to the following cases, please register [BioPro
 - For [TSA](/ddbj/tsa-e.html) data, it is optional (basically unnecessary) to describe biological features except source and assembly_gap.
 - In the case of [EST](/ddbj/est-e.html), you can not describe any biological features except source.
 
-### 2. Make submission files <a name="flow-2"></a>
+### 2. Make submission files  {#flow-2}
 
-#### Submission files required for MSS <a name="Submission_files_required_for_MSS"></a>
+#### Submission files required for MSS  {#Submission_files_required_for_MSS}
 
 Prepare following files required to submit your sequence data.
 
@@ -223,7 +223,7 @@ numbers of them in annotation file.
 
 </div>
 
-#### Check submission files <a name="Check_submission_files"></a>
+#### Check submission files  {#Check_submission_files}
 
 Before submitting to DDBJ, the files should be checked with software
 tools provided from DDBJ.
@@ -274,7 +274,7 @@ files](/ddbj/mss-tool-e.html)
   - Before installing Validation tools for data files, see [End-user
     license agreement](/ddbj/mss-tool-e.html#license).
 
-### 3. Review the submission files<a name="flow-3"></a>
+### 3. Review the submission files {#flow-3}
 
 After validating the sequence and annotation files by using the check tools, send them to DDBJ. 
 
@@ -282,7 +282,7 @@ After validating the sequence and annotation files by using the check tools, sen
 
 DDBJ reviews submission files and then informs the submitter of some correction requests and/or inquiries. If there is no problem with the contents of the file, DDBJ will issue accession number(s) for your data and acknowledge the accession number(s) to the contact person by email.
 
-#### File transfer <a name="File_transfer"></a>
+#### File transfer  {#File_transfer}
 
 Attach to e-mail  
 File transfer by SCP  
@@ -300,7 +300,7 @@ movies.
 : Upload data files（[Windows](https://youtu.be/gJqgCvUc0Y8) /
 [macOS](https://youtu.be/aO2aVafS3ZE)）
 
-### 4. Distribution <a name="flow-4"></a>
+### 4. Distribution  {#flow-4}
 
 If you do not set any hold-date, your data will be released
 immediately.  

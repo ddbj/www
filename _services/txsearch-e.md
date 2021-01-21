@@ -31,14 +31,14 @@ International Nucleotide Sequence Database([INSD](/about/insdc-e.html#insd)),
 you need to use the organism name description based on NCBI Taxonomy.
 
 
-## Search (from the web form) <a name="usage"></a>
+## Search (from the web form)  {#usage}
 
-#### Top page (Tree screen)：<http://ddbj.nig.ac.jp/tx_search/> <a name="Top_page_Tree_screen：http_//ddbj.nig.ac.jp/tx_search/_"></a>
+#### Top page (Tree screen)：<http://ddbj.nig.ac.jp/tx_search/>  {#Top_page_Tree_screen：http_//ddbj.nig.ac.jp/tx_search/_}
 
 ![Top page]({{ site.baseurl }}/assets/images/help/txhelp01.gif)
 
 
-### Search from the Web Form <a name="search"></a>
+### Search from the Web Form  {#search}
 
 Enter the words and/or numericals into the box, then click the "send"
 button or press the "Enter" key.
@@ -82,7 +82,7 @@ button or press the "Enter" key.
 
 
 
-### Refine Search <a name="refine"></a> 
+### Refine Search  {#refine} 
 
 You can narrow the scope of your search by specifying some particular
 fields, and/or combining some field searches.
@@ -121,7 +121,7 @@ fields, and/or combining some field searches.
     |  misspelling_ex  |
     |  type_material_ex  |
 
-### Search Examples <a name="example"></a>
+### Search Examples  {#example}
 
 |  Text	  |  what you search  |
 | ---- | ---- |
@@ -141,9 +141,9 @@ fields, and/or combining some field searches.
 | tax_id:960? | search the tax_id field in 960? (? is one character) |
 
 
-## Search Result <a name="result"></a>
+## Search Result  {#result}
 
-### Search Result (Taxon Information screen) <a name="taxinfo"></a>
+### Search Result (Taxon Information screen)  {#taxinfo}
 
 This is the result screen of the search by the web form.
 
@@ -160,7 +160,7 @@ This is the result screen of the search by the web form.
 
 
 
-### Tree Screen <a name="tree"></a>
+### Tree Screen  {#tree}
 
 Click the name in the lineage, then the tree will be displayed on the
 screen.
@@ -180,14 +180,14 @@ screen.
     modification of depth parameter value in the URL.
 
 
-## Method including taxonomy_id into the URL <a name="url"></a>
+## Method including taxonomy_id into the URL  {#url}
 
 You can make the URL which include taxonomy_id. Using this, you can
 display the search result directly, and/or link to the Taxon Information
 page.
 
 
-### When including taxonomy_id in URL <a name="taxnonmy"></a>
+### When including taxonomy_id in URL  {#taxnonmy}
 
 | Parameters | Details | Examples |
 | --- | --- | --- |

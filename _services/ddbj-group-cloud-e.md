@@ -5,7 +5,7 @@ category: services
 lang: en
 ---
 
-## DDBJ group cloud service for sharing pre-publication data <a name="dgc"></a>
+## DDBJ group cloud service for sharing pre-publication data  {#dgc}
 
 As the sequencing technologies advance and the amount of genomic data
 generated grows, it becomes critical to store, analyze and share

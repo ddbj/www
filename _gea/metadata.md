@@ -52,7 +52,7 @@ tab_menu:
 lang: ja
 ---
 
-## MAGE-TAB <a name="mage-tab"></a>
+## MAGE-TAB  {#mage-tab}
 
 MicroArray Gene Expression Tabular ([MAGE-TAB](http://fged.org/projects/mage-tab/)) は機能ゲノミクスデータを構造化・標準化された方法で表現するための研究者コミュニティで開発、採用された形式です。MAGE-TAB はデータの収集とアノテーションに加え、ArrayExpress や GEA といったデータベース間でデータを交換する用途にも使えるように設計されています。[MAGE-TAB の仕様書](http://fged.org/projects/mage-tab/)
 
@@ -60,11 +60,11 @@ MicroArray Gene Expression Tabular ([MAGE-TAB](http://fged.org/projects/mage-tab
 {% include image.html url="magetab/magetab_over.jpg" caption="IDF，SDRF，ADFと生データファイル，解析処理されたデータファイル間の関係" class="w450" %}
 {:/}
 
-## IDF <a name="idf"></a>
+## IDF  {#idf}
 
 IDF (Investigation Description Format) ファイルは実験デザイン、プロトコール、文献情報や登録者情報といった実験全体を記述するファイルです。
 
-### IDF 例 <a name="idf_ex"></a>
+### IDF 例  {#idf_ex}
 
 [IDF の例](/gea/example-e.html#idf)
 
@@ -92,7 +92,7 @@ IDF (Investigation Description Format) ファイルは実験デザイン、プ�
 | [Comment[Public Release Date]](#Comment_idf)        | 2018-06-22                                                                      |     |
 | [Comment[Last Update Date]](#Comment_idf)           | 2018-06-22                                                                      |     |
 
-### IDF タグ <a name="idf_tags"></a>
+### IDF タグ  {#idf_tags}
 
 IDF はタグと対応する値が組み合わされたタブ区切りテキストファイルです。例えば "Experiment Description" には Experiment のフリーテキストでの説明を記載します。一つ以上の値が許容されているフィールド、例えばプロトコール、登録者や experimental factor は一つの IDF ファイルで複数定義することができます（値はタブで区切ります）。一つの値しか持てないフィールドは以下に示してあります。
 
@@ -206,7 +206,7 @@ Protocol Type<a name="Protocol_Type"></a>
   - Comment[Last Update Date]
   - Comment[AdditionalFile:TXT]
 
-## SDRF <a name="sdrf"></a>
+## SDRF  {#sdrf}
 
 SDRF (Sample and Data Relationship Format) サンプル属性及びサンプル、アレイ、データファイル間の関係性を記述します。SDRF は機能ゲノミクス実験の自然な流れを再現できるように構成されています。SDRF は用いられた大元の Source サンプルから始まり、最後はサンプルから得られたデータファイルで終わります。Single-channel のマイクロアレイ実験ではSDRF１行が１ハイブリダイゼーションに対応します。Two-channel マイクロアレイでは１行は１チャンネルに対応します。シークエンシング実験では１行は基本的に１生データファイル（Run、ペアードシークエンスを含む）に対応します。
 
@@ -214,7 +214,7 @@ SDRF (Sample and Data Relationship Format) サンプル属性及びサンプル�
 {% include image.html url="magetab/sdrf.jpg" caption="SDRF の全体構造" class="w450" %}
 {:/}
 
-### SDRF セクション <a name="sdrf_sections"></a>
+### SDRF セクション  {#sdrf_sections}
 
 [Protocols](#Protocols_section)<a name="Protocols_section"></a>  
 : 多くの場合実験における「処理（Treatment）」は IDF で定義された [Protocol Name](#Protocol_Name) を参照する [Protocol REF](#Protocol_REF) カラムで表されます。
@@ -315,7 +315,7 @@ GEA は IDF で変数を "Experimental Factor Name" と Type（通常 Name と�
 | [Experimental Factor Name](#Experimental_Factor_Name) | temperature |
 | [Experimental Factor Type](#Experimental_Factor_Type) | temperature |
 
-### 有効な SDRF カラムヘッダー <a name="SDRF_headings"></a>
+### 有効な SDRF カラムヘッダー  {#SDRF_headings}
 
 [Source Name](#Source_Name)<a name="Source_Name"></a>
 : MAGE-TAB で identifier として使われます。このカラムには [Source](#Sources_section) material に対してユーザが定義する値 (デフォルトでは対応する BioSample の sample_name が使われます) を記入します。以下のカラムが "Source Name" を注釈するのに使えます。

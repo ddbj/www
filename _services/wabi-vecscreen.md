@@ -12,7 +12,7 @@ related_pages:
     url: /services/wabi-mafft.html
 ---
 
-## VECSCREEN の job の投入 <a name="job"></a>
+## VECSCREEN の job の投入  {#job}
 
 以下のパラメーターを POST します。  
 format, result は必須です。  
@@ -27,7 +27,7 @@ result に mail を指定した場合は address も必須となります。
 |  result  |  結果通知方法。<br/>www, mail のいずれか。<br/>mail の場合、job 完了時に address に記述したメールアドレスに対して検索終了の通知が送信されます。<br />www の場合は何もしないので、POST 時に返された request ID を使って GET で job の状態を調べる。  |
 |  address  |  result で mail を指定した場合に検索終了の通知を受け取るメールアドレス。  |
 
-## VECSCREEN の結果の取得 <a name="result"></a>
+## VECSCREEN の結果の取得  {#result}
 
 |  パラメーター  |  説明  |
 | ---- | ---- |
@@ -35,13 +35,13 @@ result に mail を指定した場合は address も必須となります。
 |  GET vecscreen/{id}?info=request  |  プログラム実行条件を返します。<br/>存在しない場合は、エラーを返します。  |
 |  GET vecscreen/{id}?info=result  |  job が終わっていたら結果（multiple alignment, profile alignment を実行した場合は alignment の結果、-TREE を実行した場合は .ph ファイル、-BOOTSTRAP を実行した場合は .phb ファイル、-CONVERT を実行した場合はフォーマット変換後のファイル）を返します。<br/>終わってない・存在しない場合は、エラーを返します。  |
 
-## サンプルスクリプト <a name="sample"></a>
+## サンプルスクリプト  {#sample}
 
 vecscreen-client.pl
 <script src="//gist.github.com/ddbj-repo/62a1a3390d0cf4e2df701c20704df498.js"></script>
 
 
-### 複数配列のベクター配列のチェック <a name="sample1"></a>
+### 複数配列のベクター配列のチェック  {#sample1}
 
 conf.json
 

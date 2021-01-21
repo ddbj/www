@@ -57,9 +57,9 @@ The DRA metadata submission tool cannot describe technical reads (adapter, prime
 and describe technical reads in the \<SPOT_DESCRIPTOR>.
 </div>
 
-## Experiment (Spot, Platform) <a name="Experiment"></a>
+## Experiment (Spot, Platform)  {#Experiment}
 
-### 454 single reads <a name="454_single"></a>
+### 454 single reads  {#454_single}
 
 #### Read
 
@@ -106,7 +106,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 | -------- | ------------------- |
 | LS454    | 454 GS FLX Titanium |
 
-### 454 paired reads <a name="454_paired"></a>
+### 454 paired reads  {#454_paired}
 
 #### Read
 
@@ -177,7 +177,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 | -------- | ------------------- |
 | LS454    | 454 GS FLX Titanium |
 
-### Illumina single reads <a name="illumina_single"></a>
+### Illumina single reads  {#illumina_single}
 
 #### Read
 
@@ -218,7 +218,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 | -------- | ---------------------------- | --------------- |
 | Illumina | Illumina Genome Analyzer IIx | 72              |
 
-### Illumina paired reads <a name="illumina_paired"></a>
+### Illumina paired reads  {#illumina_paired}
 
 #### Read
 
@@ -268,7 +268,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 | Illumina | Illumina Genome Analyzer IIx | 200             |
 
 
-### SOLiD single reads <a name="SOLiD_single"></a>
+### SOLiD single reads  {#SOLiD_single}
 
 #### Read
 
@@ -311,7 +311,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 | ABI SOLID | AB SOLiD System 3.0 | 50              |
 
 
-### SOLiD paired reads <a name="SOLiD_paired"></a>
+### SOLiD paired reads  {#SOLiD_paired}
 
 #### Read
 
@@ -361,7 +361,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 | ABI SOLID | AB SOLiD System 3.0 | 50              |
 
 
-### Ion torrent single reads <a name="Ion_single"></a>
+### Ion torrent single reads  {#Ion_single}
 
 #### Read
 
@@ -401,7 +401,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 | ----------- | ---------------------- | --------------- |
 | Ion torrent | Ion torrent PGM/Proton |                 |
 
-### PacBio single reads (Standard sequencing) <a name="PacBio_standard"></a>
+### PacBio single reads (Standard sequencing)  {#PacBio_standard}
 
 #### Metadata
 
@@ -460,7 +460,7 @@ Experiment XML (EXPERIMENT_ATTRIBUTES)
 </EXPERIMENT_ATTRIBUTES>
 ```
 
-### PacBio single reads (Circular consensus sequencing) <a name="PacBio_CCS"></a>
+### PacBio single reads (Circular consensus sequencing)  {#PacBio_CCS}
 
 #### Metadata
 
@@ -513,7 +513,7 @@ Experiment XML (EXPERIMENT_ATTRIBUTES)
 </EXPERIMENT_ATTRIBUTES>
 ```
 
-## Typical examples causing errors in data validation <a name="errors"></a>
+## Typical examples causing errors in data validation  {#errors}
 
 In the case of validation error, correct the metadata and re-upload data
 files after stopping validation process.
@@ -523,7 +523,7 @@ files after stopping validation process.
   - [Reads with relative order which cannot be specified](#cannot_specified)
 
 
-### Reads having no application read <a name="no_application"></a>
+### Reads having no application read  {#no_application}
 
 #### Read
 
@@ -534,7 +534,7 @@ Read composition
 |  Base Coordinate :  |  1  |  {::nomarkdown}<div class="float-left">7</div><div class="float-right">50</div>{:/} |
 |  Read Type :  |  Primer  |  Linker <span class="red">(should have at least one application)</span>  |
 
-### Reads with inconsistent base coordinate <a name="inconsistent_base"></a>
+### Reads with inconsistent base coordinate  {#inconsistent_base}
 
 #### Read 1
 
@@ -564,7 +564,7 @@ Read composition
 |  Base Coordinate :  |  <span class="red">2 (should start at 1)</span>  |  19  |
 |  Read Type :  |  Adapter  |  Forward  |
 
-### Reads with relative order which cannot be specified <a name="cannot_specified"></a>
+### Reads with relative order which cannot be specified  {#cannot_specified}
 
 #### Read
 
@@ -588,9 +588,9 @@ Spot (Read Spec)
 | 3          | Application Read | Forward   | RelativeOrder   |
 
 
-## Experiment (Pipeline) <a name="Experiment_pipeline"></a>
+## Experiment (Pipeline)  {#Experiment_pipeline}
 
-### Example 1 of Experiment XML Pipeline <a name="pipeline1"></a>
+### Example 1 of Experiment XML Pipeline  {#pipeline1}
 
 
 ```
@@ -614,7 +614,7 @@ Spot (Read Spec)
 </PROCESSING>
 ```
 
-### Example 2 of Experiment XML Pipeline <a name="pipeline2"></a>
+### Example 2 of Experiment XML Pipeline  {#pipeline2}
 
 
 ```

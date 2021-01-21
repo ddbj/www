@@ -38,7 +38,7 @@ tab_menu:
 lang: en
 ---
 
-## Contact <a name="contact"></a>
+## Contact  {#contact}
 
 Please contact us from [Message form](/contact-ddbj-e.html).
 

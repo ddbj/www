@@ -118,7 +118,7 @@ related_pages:
 Every value of organism qualifier must be a "scientific name" ranked as
 species or lower taxa in taxonomy database.
 
-## taxonomy database <a name="taxonomy"></a>
+## taxonomy database  {#taxonomy}
 
 All organisms that are represented in the sequence data of
 DDBJ/EMBL-Bank/GenBank are registered to the taxonomy database.  
@@ -154,7 +154,7 @@ database, but already registered in other sequence data " for
 To submit nucleotide sequence data to DDBJ or to search taxonomy
 database, <span class="red">please make sure that the organism name has no misspelling. </span>
 
-## General rule to describe organism names <a name="rule"></a>
+## General rule to describe organism names  {#rule}
 
 In general, an organism should be called its scientific name of species,
 however, when the species is not identified or not defined, it would be
@@ -195,7 +195,7 @@ regard, however, in case of different opinions in phylogenetic lineages,
 the claim would be often rejected. When you find misspelled name in
 taxonomy database, do not hesitate to [contact us](/contact-ddbj-e.html#to-ddbj) to correct it.
 
-## "Category" of organism name <a name="deasy"></a>
+## "Category" of organism name  {#deasy}
 
 During submission through [Nucleotide Sequence Submission System](/ddbj/web-submission-e.html) you have to select "Category" of organism
 name. Here shows a flowchart for judging "Category" of organism on Nucleotide Sequence Submission System
@@ -258,14 +258,14 @@ in the menu box of [Category]. After referring to [1. For
 identified species](#species), enter an organism name in the
 [Scientific name] box, appropriately.
 
-## Details to describe organism names <a name="organism_name"></a>
+## Details to describe organism names  {#organism_name}
 
 Though there are still some exceptions, followings are how to describe
 organism names for DDBJ submission. If the application of the organism
 name to taxonomy database is required, during your sequence submission,
 please let us know [reference information](#items)
 
-### 1. For identified species <a name="species"></a> 
+### 1. For identified species  {#species} 
 
 In principle, "organism name" is required to be a binomial name, i.e.
 the genus name and the species epithet, from which the sequence is
@@ -279,7 +279,7 @@ Example
 
   - Homo sapiens
 
-#### trinomial name <a name="trinominal"></a>
+#### trinomial name  {#trinominal}
 
 In cases of using trinomial name or the like, the name of subspecies,
 variety, serotype or strain should be included in the organism name, if
@@ -304,7 +304,7 @@ feature.
                      /<a href="/ddbj/qualifiers.html#sub_species">sub_species</a>="troglodytes"
 </code></pre> 
 
-#### microbial genome <a name="genome"></a>
+#### microbial genome  {#genome}
 
 Previously, a strain name or some other lower taxon was required for the
 organism name of whole genomic scale sequences from microorganisms.  
@@ -317,7 +317,7 @@ qualifier.
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="WO-1"
 </code></pre>  
 
-#### virus <a name="virus"></a>
+#### virus  {#virus}
 
 For viruses, basically, we also accept scientific names, following [the International Committee on Taxonomy of Viruses](https://talk.ictvonline.org/).  
 <span class="red bold">By 2017, we used informal names for frequently submitted pathogenic viruses including their strain names and serotypes in the description of organism name. However, the rule has been discontinued for the future submissions. </span>
@@ -344,7 +344,7 @@ Please describe them with appropriate qualifiers as below example.
                    /<a href="/ddbj/qualifiers.html#strain">strain</a>="A/chicken/Tokyo/2007"
 </code></pre>  
 
-#### hybrid <a name="hybrid"></a>
+#### hybrid  {#hybrid}
 
 In cases of hybrids, the scientific names would be like as follows;
 
@@ -354,7 +354,7 @@ Examples
   - Malus x domestica
   - Lilium hybrid division I
 
-#### not found in taxonomy database <a name="novel"></a>
+#### not found in taxonomy database  {#novel}
 
 If the name is not available on taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en)), please tell us
 any of following items during your sequence submission.
@@ -366,9 +366,9 @@ Useful items for application of organism names to taxonomy database
   - [already issued accession number](#acc)
   - [process of sampling and/or sequencing](#isolate)
 
-### 2. In case of unidentified species names <a name="unidentified"></a> 
+### 2. In case of unidentified species names  {#unidentified} 
 
-#### 2-1. In case of species not to be identified <a name="2-1._In_case_of_species_not_to_be_identified"></a>
+#### 2-1. In case of species not to be identified  {#2-1._In_case_of_species_not_to_be_identified}
 
 If the scientific name is unclear and/or unidentified, we adopt a
 tentative name for the organism. The tentative name is made up with the
@@ -406,7 +406,7 @@ Also, describe a strain name in the
 <pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
-#### 2-2. In case of proposing a novel species <a name="new"></a>
+#### 2-2. In case of proposing a novel species  {#new}
 
 If you are to propose a novel species, in the mean time, we adopt an
 unique tentative name for the organism. The tentative name is made up
@@ -445,7 +445,7 @@ Useful items for application of organism names to taxonomy database
   - [already issued accession number](#acc)
   - [process of sampling and/or sequencing](#isolate)
 
-### 3. Environmental samples <a name="env"></a> 
+### 3. Environmental samples  {#env} 
 
 Environmental samples are sequences derived by direct molecular
 isolation from a bulk environmental DNA sample (by PCR, DGGE, or other
@@ -495,7 +495,7 @@ Useful items for application of organism names to taxonomy database
   - [taxonomic lineage](#lineage)
   - [process of sampling and/or sequencing](#isolate)
 
-### 4. Artificially constructed sequences <a name="syn"></a> 
+### 4. Artificially constructed sequences  {#syn} 
 
 In many cases, artificially constructed sequences are uniformly named
 "synthetic construct", or, "eukaryotic synthetic construct". Sometimes,
@@ -515,7 +515,7 @@ Useful items for application of organism names to taxonomy database
 
   - [expected usage](/ddbj/organism-e.html#usage)
 
-## Useful items for application of organism names to taxonomy database <a name="items"></a> 
+## Useful items for application of organism names to taxonomy database  {#items} 
 
 If the organism name that you submit with your sequence data is not in
 the database, it must be newly registered to the taxonomy database

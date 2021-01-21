@@ -120,7 +120,7 @@ related_pages:
 原則として、研究対象者を直接特定し得る参照情報は、登録データから取り除いてください。  
 ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#human)をご覧ください。
 
-## MSS とは？ <a name="outline"></a>
+## MSS とは？  {#outline}
 
 {::options parse_block_html="true" /}
 <div class="attention">
@@ -142,16 +142,16 @@ Mass Submission System (MSS) は、比較的大規模な塩基配列データ (r
 また、シークエンサからの出力配列 (reads) を登録する場合は [DRA; DDBJ Sequence Read
 Archive](/dra/index.html) をご参照ください。
 
-## MSS による登録の流れ <a name="flow"></a>
+## MSS による登録の流れ  {#flow}
 
 ![]({{ site.baseurl }}/assets/images/ddbj/MSS-flow_20200916-jp.png "MSS による登録の流れ") 
 
-### 1\. 申し込み <a name="flow-1"></a>
+### 1\. 申し込み  {#flow-1}
 
 MSS の利用をご希望の場合は、[MSS 申し込みフォーム](/ddbj/mss-form.html)からご連絡ください。  
 DDBJ で受付した後に、より詳細な手順および作業を支援するソフトウェアをご紹介いたします。
 
-#### 事前準備 <a name="事前準備"></a>
+#### 事前準備  {#事前準備}
 
 以下に該当する場合、事前に BioProject、BioSample の登録をお願いいたします。
 
@@ -163,7 +163,7 @@ DDBJ で受付した後に、より詳細な手順および作業を支援する
   - [EST](/ddbj/est.html) の場合、厳密には [BioProject](/bioproject/index.html)、[BioSample](/biosample/index.html) の登録は必須ではありませんが、推奨します。
 - [TLS](/ddbj/tls.html) (Targeted Locus Study)
 
-#### アノテーションの記載<a name="アノテーションの記載"></a>
+#### アノテーションの記載 {#アノテーションの記載}
 
 - [全長規模のゲノム配列](/ddbj/genome.html)では　source と assembly_gap 以外の biological feature の記載は任意ですが、過去に登録例がない新規性の高い種が対象の場合、最低でも１つのゲノムに代表として feature annotation の記載が必要です。
 - [全長規模のゲノム配列](/ddbj/genome.html)でアノテーションを記載する場合は、[BioSample](/biosample/index.html) の登録時に [locus_tag prefix](/ddbj/qualifiers.html#locus_tag) の取得が必要です。
@@ -171,9 +171,9 @@ DDBJ で受付した後に、より詳細な手順および作業を支援する
 - [TSA](/ddbj/tsa.html) では source と assembly_gap 以外の biological feature の記載は任意であり、基本的には不要です。
 - [EST](/ddbj/est.html) には、source 以外の biological feature は記載できません。
 
-### 2\. 登録ファイルの作成と送付 <a name="flow-2"></a>
+### 2\. 登録ファイルの作成と送付  {#flow-2}
 
-#### 登録に必要なファイルの作成 <a name="登録に必要なファイルの作成"></a>
+#### 登録に必要なファイルの作成  {#登録に必要なファイルの作成}
 
 配列ファイル  
 : 全登録データの配列を FASTA 形式で記述したテキストファイル。
@@ -193,7 +193,7 @@ AGP ファイル（[CON](/ddbj/con.html) エントリの登録の場合
 [TSA](/ddbj/tsa.html), complete genome, draft genome ([WGS](/ddbj/wgs.html) or [HTG](/ddbj/htg.html)) を登録する場合は、あらかじめ[BioProject](/bioproject/index.html)/[BioSample](/biosample/index.html) への登録を行い、取得したアクセッション番号をアノテーションファイル内に記載してください。
 </div>
 
-#### ファイルのチェック <a name="ファイルのチェック"></a>
+#### ファイルのチェック  {#ファイルのチェック}
 
 DDBJ に登録ファイルを送る前に、作成したファイルを DDBJ が提供するデータファイル用チェックツールを用いてチェックを実行してください。
 
@@ -223,7 +223,7 @@ transChecker
   - [Biological feature](/ddbj/file-format.html#biological_feature) として [CDS feature](/ddbj/cds.html) を含むデータは、UME または transChecker を用いて、アミノ酸翻訳チェックを実行してください。
   - ご利用前に [使用許諾](/ddbj/mss-tool.html#license) をご確認ください。
 
-### 3\. 査定作業 <a name="flow-3"></a>
+### 3\. 査定作業  {#flow-3}
 
 チェックツールによる検証を行った後、配列ファイルとアノテーションファイルを DDBJ に送付してください。
 
@@ -232,7 +232,7 @@ transChecker
 送付された全データをDDBJ で査定し、修正依頼や疑問等があれば通知します。<br>
 ファイルの内容に問題がなければ、データ登録作業を行い、Contact person のメールアドレス宛に、アクセッション番号の通知メールを送信します。
 
-#### ファイルの送付方法 <a name="ファイルの送付方法"></a>
+#### ファイルの送付方法  {#ファイルの送付方法}
 
 電子メールに添付して送信する  
 SCP によるファイル転送  
@@ -242,7 +242,7 @@ SCP によるファイル転送
 : 鍵ペアの作成（[Windows](https://youtu.be/mggRnbxr0gQ)/[macOS](https://youtu.be/h9LbhwROtOM)）
 : データの転送（[Windows](https://youtu.be/ZxIfewrk8lI)/[macOS](https://youtu.be/A2hPlGZEW_o)）
 
-### 4\. データ公開 <a name="flow-4"></a>
+### 4\. データ公開  {#flow-4}
 
 登録時に即日公開を希望した場合は、可能な限り速やかに公開します。
 [公開予定日](/ddbj/submission.html#hold-date) ([hold_date](/ddbj/file-format.html#date)) を指定した場合は、[公開原則](/data-release-policy.html)に基づいて公開します。

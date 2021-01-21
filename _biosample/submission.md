@@ -38,9 +38,9 @@ tab_menu:
 lang: ja
 ---
 
-## 概要 <a name="overview"></a>
+## 概要  {#overview}
 
-### 目的 <a name="purpose"></a>
+### 目的  {#purpose}
 
 [BioSample](/biosample/index.html) はデータベースに登録されている実験データを得るのに使われたサンプルに関する情報を管理するデータベースです。
 
@@ -50,7 +50,7 @@ lang: ja
 {% include image.html url="submission/biosample_integration.jpg" caption="BioSample と他の DDBJ データベースとの連携" class="w450" %}
 {:/}
 
-### サンプル <a name="sample"></a>
+### サンプル  {#sample}
 
 DDBJ のデータベースに登録されているサンプルが多様であること、また、サンプルの適切な記載方法が研究内容により異なることから BioSample の定義は柔軟なものになっています。 BioSample の典型的な例としては細胞株、組織の生検、生物個体や環境サンプルなどが挙げられます。
 
@@ -64,7 +64,7 @@ BioSample はサンプルについての以下のような情報を含みます:
 
 ヒトに関する情報とそれへのアクセスは適用される全ての倫理的な要請を満たしている必要があります。 DDBJ BioSample データベースはアクセスを制限する仕組みを持っていないため、プライバシーに抵触する可能性のあるヒト由来サンプルを登録することはできません。
 
-### リファレンスバイオサンプル <a name="reference-biosamples"></a>
+### リファレンスバイオサンプル  {#reference-biosamples}
 
 BioSample に登録されたサンプルの一部は、多くの実験で共通に使用されるかもしれません。 ここではこのようなサンプルセットのことを "<span class="italic">リファレンスバイオサンプル (reference biosample)</span>" と呼びます。
 リファレンスバイオサンプルの例としては、広く使われているセルラインやマウスの系統が挙げられます。
@@ -72,7 +72,7 @@ BioSample に登録されたサンプルの一部は、多くの実験で共通�
 BioSample では広く使われているサンプルが事前に BioSample にカタログ化されており、すぐに引用できるようになっています。これは、登録者が新しい実験データを DDBJ/EBI/NCBI に登録する度に、汎用的なサンプルを毎回 BioSample に登録しなくても済むようにするためです。 現在、リファレンスバイオサンプルには [ATCC](http://www.atcc.org/) と [Coriell](http://ccr.coriell.org/) が含まれています。
 
 
-### サンプルの属性<a name="sample-attributes"></a>
+### サンプルの属性 {#sample-attributes}
 
 BioSample レコードを構成する主要部分は「サンプル属性」です。属性にはセルタイプ、採取地や表現型などの情報を記載することができ、対象となるサンプルを定義します。 BioSample の属性は構造化された「属性名:値」 (name:value) の組として表現されます。例) tissue:liver
 
@@ -86,13 +86,13 @@ MIxS チェックリストについては Nature Biotechnology 29, 415–420 (20
 {% include image.html url="books/mixs.jpg" caption="MIxS チェックリスト" class="w450" %}
 {:/}
 
-### 生物名 <a name="organism"></a>
+### 生物名  {#organism}
 
 BioSample の [organism](/biosample/attribute.html?all=all#organism) に記載する生物名については「[生物名について](/ddbj/organism.html)」をご覧ください。 以前は微生物などで完全長ゲノム配列を登録する場合、種の学名に加えて strain などの名称を organism に含めて記載していましたが、現在は学名のみの記載を原則としています。strain 名は BioSample の [strain](/biosample/attribute.html?all=all#strain) に記入します。
 
 関連するお知らせ: [生物の株情報を管理する方法が変更になります](/news/ja/2013-12-13.html)
 
-### 薬剤感受性表 <a name="antibiogram"></a>
+### 薬剤感受性表  {#antibiogram}
 
 BioSample レコードに薬剤感受性表（アンチバイオグラム、Antibiogram）を含めることができます（登録例: [SAMN07958491](https://www.ncbi.nlm.nih.gov/biosample/SAMN07958491)）。登録を希望する場合は [BioSample チーム](/contact-ddbj.html)に連絡してください。
 
@@ -105,18 +105,18 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
   - [Antibiograms - mycobacterial
     non-MIC](https://www.ncbi.nlm.nih.gov/biosample/docs/antibiogram-myco/)
 
-### XML スキーマ <a name="xml-schema"></a>
+### XML スキーマ  {#xml-schema}
 
 [BioSample XML schema](https://github.com/ddbj/pub/tree/master/docs/biosample)
 
-## メタデータ<a name="metadata"></a> 
+## メタデータ {#metadata} 
 
 必須<span class="red">\*</span>  
 条件によって必須<span class="conditionally_required">\*</span>
 
-### Submitter <a name="Submitter"></a>
+### Submitter  {#Submitter}
 
-#### Submitter <a name="Area_biosample-submitter"></a>
+#### Submitter  {#Area_biosample-submitter}
 
 登録者情報。登録に関する連絡はここに記載された E-mail アドレス宛てに行われます。 必要な人数分作成します。 連絡先情報は DDBJ スタッフが登録者に連絡するために使われ、一般に公開されることはありません。連絡先情報のかわりに研究者の所属する組織に関する情報が公開されます。
 
@@ -133,7 +133,7 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
 [E-mail](#BioSample_E-mail)<span class="red">\*</span><a name="BioSample_E-mail"></a>  
 : E-mail アドレス。所属する組織ドメインのメールアドレスを指定してください。
 
-#### Organization <a name="Area_biosample-organization"></a>
+#### Organization  {#Area_biosample-organization}
 
 [Organization](#Organization)<a name="Organization"></a>  
 : コンタクトパーソンが所属する組織。
@@ -148,7 +148,7 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
 [Submitting organization URL](#BioSample_Submitting_organization_URL)<a name="BioSample_Submitting_organization_URL"></a>  
 : 登録者が所属する組織の URL。
 
-#### Data Release <a name="Area_biosample-data-release"></a>
+#### Data Release  {#Area_biosample-data-release}
 
 "Hold" か "Release" のどちらかを選びます。公開予定日を指定することはできません。データ公開の仕組みについては[データ公開](#sample-release)をご覧ください。
 
@@ -160,7 +160,7 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
 [Hold](#BioSample_Hold)<a name="BioSample_Hold"></a>  
 : この BioSample ID を引用している DDBJ、DRA、DTA レコードが公開されると同時に公開されます。この BioSample ID を引用している非公開の DDBJ レコードが公開されることはありません。
 
-### General info <a name="General-info"></a>
+### General info  {#General-info}
 
 [External Links](#Link)<a name="Link"></a>  
 : サンプルに直接関連するリソースの URL とそれに付けるラベル (表示名)。
@@ -175,9 +175,9 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
 [URL](#BioSample_URL)<a name="BioSample_URL"></a>  
 : ウェブサイトの URL。
 
-### Sample type <a name="Sample-type"></a>
+### Sample type  {#Sample-type}
 
-#### Core Package <a name="Area_core-package"></a>
+#### Core Package  {#Area_core-package}
 
 [Genome, metagenome or marker sequences (MIxS compliant)](#MIxS_Sample)<a name="MIxS_Sample"></a>  
 : ゲノム、メタゲノムやマーカー配列の場合に使用します。ゲノム、メタゲノムやマーカー配列が由来するサンプルの記載方法を標準化するため Genome Standards Consortium (GSC) が策定した属性が使われます。[MIxS](http://wiki.gensc.org/index.php?title=MIxS) が定めた必須属性があるかどうかで [MIxS](http://wiki.gensc.org/index.php?title=MIxS) を満たしているかどうかが検証されます。MIxS についての詳細は [GSC ウェブサイト](http://wiki.gensc.org/index.php?title=MIxS) をご覧ください。
@@ -192,7 +192,7 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
 [Other samples (e.g. transcriptome, epigenetics etc)](#General_Sample)<a name="General_Sample"></a>  
 : transcriptome, epigenetics など、どのようなサンプルタイプにも使用することができます。一般的な属性と登録者が作成するカスタム属性で記述されます。
 
-#### MIxS <a name="Area_mixs"></a>
+#### MIxS  {#Area_mixs}
 
 [(Meta)Genomic Sequences Sample (MIMS)](#Meta_Genomic_Sequences_Sample)<a name="Meta_Genomic_Sequences_Sample"></a>
 
@@ -228,7 +228,7 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
 
     MIMARKS-survey は分離培養や生物種を同定せず、環境から直接得られた marker gene に対する contextual data に適用できます。
 
-#### Environmental package <a name="Area_environmental-package"></a>
+#### Environmental package  {#Area_environmental-package}
 
 [Environmental package (MIxS Sample)](#Environmental_package)<a name="Environmental_package"></a>  
 : 以下のパッケージから適切なものを選びます。パッケージ毎に必要とされる属性が追加されます。  
@@ -251,7 +251,7 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
     | wastewater/sludge           |
     | water                       |
 
-### Attributes <a name="Attributes"></a>
+### Attributes  {#Attributes}
 
 [Sample attributes](#Sample_attributes)<a name="Sample_attributes"></a>  
 : モデルごとにカスタマイズされた BioSample ワークシートをダウンロードします。 ワークシートはタブ区切りテキストファイルでスプレッドシートプログラムやテキストエディタで開くことができます。属性を記載したテキストファイルをアップロードすると validator により内容がチェックされます。 [Warning や Error メッセージ](/biosample/validation.html) が表示された場合は必要に応じて内容を修正してから再度アップロードしてください。エラーが解消されるまで次のタブに進むことはできません。
@@ -262,7 +262,7 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
 : [サンプル属性のリスト](/biosample/attribute.html)  
 必須項目に加えて、いくつかの推奨項目があります。BioSample データをより役立つものにするためにできるだけ情報を登録してください。 登録システムが一般的に使われている属性を標準化された名称とともに提供します。 登録を準備する際は[属性のリスト](/biosample/attribute.html)や[登録例](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482)を参照し、該当する項目を入力してください。 リストにない情報を持っている場合はユーザが定義した独自の属性をタブ区切りテキストファイルの末尾に追加することができます。
 
-### Overview <a name="Overview"></a>
+### Overview  {#Overview}
 
 [Overview](#BioSample_Overview)<a name="BioSample_Overview"></a>  
 : 登録内容を確認し問題がなければ一番下の Submit ボタンをクリックしてサンプルを投稿してください。 "Submission ID.txt" ファイルでアップロードしたサンプル属性の内容をダウンロードすることができます。
@@ -275,9 +275,9 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
   : <span class="red">研究対象者に由来するデータを DDBJ センターが運営するデータベースに登録する場合、研究対象者の尊厳及び人権は、適用されるべき法令、指針、ガイドライン、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。原則として、研究対象者を直接特定し得る情報はメタデータから取り除いてください。ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#human)を熟読してください。</span>
   </div>
 
-## サンプルの登録 <a name="sample-submission"></a>
+## サンプルの登録  {#sample-submission}
 
-### 新規サンプルの登録 <a name="create-new-sample-submission"></a>
+### 新規サンプルの登録  {#create-new-sample-submission}
 
 [アカウント Handbook](/account.html) に従いアカウントを取得します。
 
@@ -319,7 +319,7 @@ Sample type に応じた属性入力用テンプレートファイルをダウ�
 {% include image.html url="books/hbs-04.jpg" caption="サンプル属性テンプレートファイルのダウンロード" class="w450" %}
 {:/}
 
-### 属性値の記入 <a name="enter-sample-attributes"></a>
+### 属性値の記入  {#enter-sample-attributes}
 
 [BioSample 属性の説明](/biosample/attribute.html)。独自の属性を追加したい場合は、右端に属性名と値を追加します。
 
@@ -334,7 +334,7 @@ Sample type に応じた属性入力用テンプレートファイルをダウ�
 をまとめて登録することができます。
 </div>
 
-#### 値がない場合の記載方法 <a name="missing-value-reporting"></a>
+#### 値がない場合の記載方法  {#missing-value-reporting}
 
 [INSDC ではサンプル属性値が存在しない場合の記載方法を標準化しています](https://www.ebi.ac.uk/ena/about/missing-values-reporting)。 登録者は常に定められた形式で属性値を提供することが推奨されますが、値がない (missing/null value)
 ことを報告する際には、状況をより細かく表す用語を使用することが求められます。適切な場合は "lower level" の用語を使用し、そうでない場合には "top level" の用語を使用します。
@@ -401,7 +401,7 @@ information exists but can not be released openly because of privacy concerns
 </tbody>
 </table>
 
-#### サンプル属性の validation <a name="validation"></a>
+#### サンプル属性の validation  {#validation}
 
 サンプル属性ファイルを選択して Continue をクリックすると validator がルールに基づいてアップロードされたファイルをチェックします。Error や Warning メッセージが表示された場合は必要に応じて内容を修正して再度アップロードします。Error
 が解消されない限り次のタブに進んで内容を submit することはできません。
@@ -422,7 +422,7 @@ Validation ルールとメッセージについては [Validation rules ペー�
 {% include image.html url="books/hbs-05.jpg" caption="BioSample の投稿" class="w450" %}
 {:/}
 
-### アクセッション番号 <a name="accession-numbers"></a>
+### アクセッション番号  {#accession-numbers}
 
 新規 Submission を作成すると SSUB で始まる仮 ID が自動的に割り当てられます。D-way から validation を通過したサンプルが投稿されると自動的にプレフィックス "SAMD" のアクセッション番号が発行されます。未登録の生物名が organism に記載されていた場合や locus\_teg\_prefix に値が記入されていた場合はキュレータが必要な査定を実施した後にアクセッション番号が発行されます。[D-way アカウント](https://ddbj.nig.ac.jp/D-way/)にログイン後、ウェブ上で登録したサンプルの進行状況やアクセッション番号を確認することができます。
 
@@ -432,7 +432,7 @@ Validation ルールとメッセージについては [Validation rules ペー�
   - EBI/NCBI に登録したサンプルを DDBJ に重複して登録しないでください。
   </div>
 
-### サンプルの公開<a name="sample-release"></a> 
+### サンプルの公開 {#sample-release} 
 
 以下の選択肢があります:
 
@@ -447,6 +447,6 @@ Validation ルールとメッセージについては [Validation rules ペー�
 
 FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp-bs-seq-release.html)
 
-### サンプルの更新 <a name="update-biosample"></a>
+### サンプルの更新  {#update-biosample}
 
 登録が完了したデータを更新することができます。[メッセージフォーム](/contact-ddbj.html)よりご連絡ください。

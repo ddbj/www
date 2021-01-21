@@ -98,7 +98,7 @@ tab_menu:
 lang: ja
 ---
 
-## 1\. Contact person <a name="flow-1"></a>
+## 1\. Contact person  {#flow-1}
 
 [コンタクトパーソン](/ddbj/submission.html#contact)情報を入力します。
 
@@ -108,7 +108,7 @@ lang: ja
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp1-2_j.png){:.w600}
 
-## 2\. Hold date <a name="flow-2"></a>
+## 2\. Hold date  {#flow-2}
 
 公開日 (Hold date) をカレンダーから選択するか、即公開を希望する場合は "Release immediately" チェックを加えます。
 
@@ -118,14 +118,14 @@ lang: ja
 
   - 選択できる日付は最大3年後までです
 
-### 入力の中断・再開方法 <a name="flow-2-1"></a>
+### 入力の中断・再開方法  {#flow-2-1}
 
   - "Next"
     をクリックしてからブラウザでブックマークしてください。ブラウザを閉じた後でもブックマークしたURLを用いて再開することが可能です。
 
   - 7.Annotation のページでは "Next" クリック以前であっても入力内容は保存されます。ブックマークから再開できます。
 
-## 3\. Submitter <a name="flow-3"></a>
+## 3\. Submitter  {#flow-3}
 
 登録者 (Submitter) 名を入力します。
 
@@ -150,7 +150,7 @@ lang: ja
   - 登録者は複数名を指定いただけるよう、お願いしております。  
     登録者が１名のみの場合、将来、修正が必要になった際に私どもから登録者本人への連絡がとれない場面に遭遇することもございます。1名の登録者のみでの登録も可能ですが、複数の登録者を記載いただけるよう推奨しております。たとえば、実作業者と研究指導者(責任者)、論文著者から登録者に加えるなど、２名以上の登録者記載に関しましてご協力をお願いいたします。
 
-## 4\. Reference <a name="flow-4"></a>
+## 4\. Reference  {#flow-4}
 
 [論文 (Reference) 情報](/ddbj/flat-file.html#Reference2) を入力します。  
 配列に関する[主論文 (Primary citation)](/ddbj/submission.html#pcite) を第一 reference に入力してください。
@@ -170,21 +170,21 @@ lang: ja
 関連するページ  
 : [REFERENCE 2](/ddbj/flat-file.html#Reference2) / [DDBJ のデータ公開形式 (flat file) の説明](/ddbj/flat-file.html)
 
-### Reference の例 <a name="flow-4-1"></a>
+### Reference の例  {#flow-4-1}
 
-#### Status: Unpublished <a name="flow-4-1-1"></a>
+#### Status: Unpublished  {#flow-4-1-1}
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp4-1-1_j.png){:.w600}
 
-#### Status: In press <a name="flow-4-1-2"></a>
+#### Status: In press  {#flow-4-1-2}
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp4-1-2_j.png){:.w600}
 
-#### Status: Published <a name="flow-4-1-3"></a>
+#### Status: Published  {#flow-4-1-3}
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp4-1-3_j.png){:.w600}
 
-### Journal name <a name="flow-4-2"></a>
+### Journal name  {#flow-4-2}
 
 Journal name を ISO abbreviation で入力してください。Journal の full name を入力していくと候補が現れますので、マウスで選択することで Journal の ISO abbreviation を入力できます。
 
@@ -194,7 +194,7 @@ Journal の ISO abbreviation は [NLM Catalog](//www.ncbi.nlm.nih.gov/nlmcatalog
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp4-2-1_j.png){:.w600}
 
-## 5\. Sequence <a name="flow-5"></a>
+## 5\. Sequence  {#flow-5}
 
 塩基配列を入力します。  
 [TPA](/ddbj/tpa.html) の submission を行う場合には、assembly information も同時に入力します。
@@ -202,7 +202,7 @@ Journal の ISO abbreviation は [NLM Catalog](//www.ncbi.nlm.nih.gov/nlmcatalog
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp5_j.png){:.w600}
 
 
-### 塩基配列のフォーマットについて <a name="flow-5-1"></a>
+### 塩基配列のフォーマットについて  {#flow-5-1}
 
   - Multi-FASTA 形式の塩基配列をペースト(またはアップロード)可能です。
 
@@ -259,19 +259,19 @@ gctgtaactctgagatgtgctaaataaaccctctttctcaaaaaaaaaaaaaaaa
         
 ```
 
-### TPA 塩基配列の入力 <a name="flow-5-2"></a>
+### TPA 塩基配列の入力  {#flow-5-2}
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp5-2_j.png){:.w600}
 
-### TPA における Assembly Information の書式 <a name="flow-5-3"></a>
+### TPA における Assembly Information の書式  {#flow-5-3}
 
-#### 入力例 <a name="flow-5-3-1"></a>
+#### 入力例  {#flow-5-3-1}
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp5-3-1_j.png){:.w600}
 
 Assembly information のサンプルは**[ここから]({{ site.baseurl }}/assets/files/example/NSSShelp-tpa-sample.txt)**ダウンロードできます。(タブ区切りテキスト形式)
 
-#### 上記入力例の意味 <a name="上記入力例の意味"></a>
+#### 上記入力例の意味  {#上記入力例の意味}
 
 **Entry name FA01**<br>TPA 塩基配列 1-552 の領域は ZZ000001.1 の 54872-55422 に対応<br>TPA 塩基配列 553-705 の領域は ZZ000002.5 の 1-153 に対応
 
@@ -280,7 +280,7 @@ Assembly information のサンプルは**[ここから]({{ site.baseurl }}/asset
 いずれも [TPA とプライマリーエントリの配列アラインメントに関する規則](/ddbj/tpa.html#alignment-rule)
 に従います。
 
-### Assembly Information 入力規則 <a name="flow-5-4"></a>
+### Assembly Information 入力規則  {#flow-5-4}
 
   - 第1行目は
     
@@ -314,15 +314,15 @@ Assembly information のサンプルは**[ここから]({{ site.baseurl }}/asset
       - 空欄 または c
       - プライマリエントリから相補鎖領域を引用する場合にのみ c を指定します。
 
-## 6\. Template <a name="flow-6"></a>
+## 6\. Template  {#flow-6}
 
 アノテーションに適合する template を選択します。
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp6_j.png){:.w600}
 
-## 7\. Annotation <a name="flow-7"></a>
+## 7\. Annotation  {#flow-7}
 
-### アノテーション画面 - Template で "other" 以外を選択したとき <a name="flow-7-1"></a>
+### アノテーション画面 - Template で "other" 以外を選択したとき  {#flow-7-1}
 
 <div class="highlight">
 
@@ -333,7 +333,7 @@ Assembly information のサンプルは**[ここから]({{ site.baseurl }}/asset
 関連するページ  
 : [Feature key の定義](/ddbj/features.html) / [Qualifier key の定義](/ddbj/qualifiers.html) / [Organism qualifier に記載する生物名](/ddbj/organism.html) / [タンパク質コード配列; CDS feature について](/ddbj/cds.html)
 
-### アノテーション画面 - Template で "other" を選択したとき <a name="flow-7-2"></a>
+### アノテーション画面 - Template で "other" を選択したとき  {#flow-7-2}
 
 <div class="highlight">
 
@@ -344,29 +344,29 @@ Assembly information のサンプルは**[ここから]({{ site.baseurl }}/asset
 関連するページ  
 : [Feature key の定義](/ddbj/features.html) / [Qualifier key の定義](/ddbj/qualifiers.html) / [Organism qualifier に記載する生物名](/ddbj/organism.html) / [タンパク質コード配列; CDS feature について](/ddbj/cds.html)
 
-### アノテーションの入力方法 <a name="flow-7-3"></a>
+### アノテーションの入力方法  {#flow-7-3}
 
-#### "Edit" ボタン <a name="flow-7-3-1"></a>
+#### "Edit" ボタン  {#flow-7-3-1}
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-1_j.png){:.w600}
 
-#### "Select Qualifier" ボタン <a name="flow-7-3-2"></a>
+#### "Select Qualifier" ボタン  {#flow-7-3-2}
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-2_j.png){:.w600}
 
-#### "Pen & Note" ボタン <a name="flow-7-3-3"></a>
+#### "Pen & Note" ボタン  {#flow-7-3-3}
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-3_j.png){:.w600}
 
-#### "Edit Colum" ボタン <a name="flow-7-3-4"></a>
+#### "Edit Colum" ボタン  {#flow-7-3-4}
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-4_j.png){:.w600}
 
-#### セルのダブルクリック (Template で "other" 選択時の場合は Qualifier のクリック)  <a name="flow-7-3-5"></a>
+#### セルのダブルクリック (Template で "other" 選択時の場合は Qualifier のクリック)   {#flow-7-3-5}
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-5_j.png){:.w600}
 
-### 生物名 (Organism name) <a name="flow-7-4"></a>
+### 生物名 (Organism name)  {#flow-7-4}
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp7-4_j.png){:.w600}
 
@@ -379,9 +379,9 @@ Assembly information のサンプルは**[ここから]({{ site.baseurl }}/asset
 関連するページ  
 : [Organism qualifier に記載する生物名](/ddbj/organism.html)
 
-### アノテーション例 <a name="flow-7-5"></a>
+### アノテーション例  {#flow-7-5}
 
-#### 16S rRNA <a name="flow-7-5-1"></a>
+#### 16S rRNA  {#flow-7-5-1}
 
 <div class="highlight">
 
@@ -389,7 +389,7 @@ Assembly information のサンプルは**[ここから]({{ site.baseurl }}/asset
 
 </div>
 
-#### CDS <a name="flow-7-5-2"></a>
+#### CDS  {#flow-7-5-2}
 
 <div class="highlight">
 
@@ -397,7 +397,7 @@ Assembly information のサンプルは**[ここから]({{ site.baseurl }}/asset
 
 </div>
 
-#### Mitochondrial genome <a name="flow-7-5-3"></a>
+#### Mitochondrial genome  {#flow-7-5-3}
 
 <div class="highlight">
 
@@ -405,7 +405,7 @@ Assembly information のサンプルは**[ここから]({{ site.baseurl }}/asset
 
 </div>
 
-### アノテーションファイルのアップロード方法 <a name="flow-7-6"></a>
+### アノテーションファイルのアップロード方法  {#flow-7-6}
 
 <div class="highlight">
 
@@ -413,7 +413,7 @@ Assembly information のサンプルは**[ここから]({{ site.baseurl }}/asset
 
 </div>
 
-#### アップロード可能なアノテーションファイル <a name="flow-7-6-1"></a>
+#### アップロード可能なアノテーションファイル  {#flow-7-6-1}
 
   - サンプルファイルを[ここから]({{ site.baseurl }}/assets/files/example/mtDNA.txt)ダウンロードできます。
 
@@ -441,7 +441,7 @@ Assembly information のサンプルは**[ここから]({{ site.baseurl }}/asset
 
 </div>
 
-#### アノテーションファイルのアップロードエラーとなる主な原因 <a name="flow-7-6-2"></a>
+#### アノテーションファイルのアップロードエラーとなる主な原因  {#flow-7-6-2}
 
   - エクセルを使用して作成した場合は、テキストエディタにコピーしてからテキストファイルとして保存してください。アノテーションファイルは、タブ区切りテキストファイルである必要があります。
 
@@ -451,7 +451,7 @@ Assembly information のサンプルは**[ここから]({{ site.baseurl }}/asset
 
   - 余計なスペース、不正文字(全角文字、unicode文字、unprintable character)がファイル中に含まれている場合もアップロードできません。
 
-### Error/Warning <a name="flow-7-7"></a>
+### Error/Warning  {#flow-7-7}
 
   - "Confirm" クリック後、エラーが生じなければ、"Next" ボタンがクリック可能になり次のステップ(Final page)に進めます。
 
@@ -470,7 +470,7 @@ Error/warning メッセージの詳細については、[Validator エラーメ�
 関連するページ  
 : [Feature key の定義](/ddbj/features.html) / [Qualifier key の定義](/ddbj/qualifiers.html) / [Organism qualifier に記載する生物名](/ddbj/organism.html) / [タンパク質コード配列; CDS feature について](/ddbj/cds.html)
 
-### アミノ酸配列を得るには <a name="flow-7-8"></a>
+### アミノ酸配列を得るには  {#flow-7-8}
 
 [CDS feature の翻訳アミノ酸配列 (/translation qualifier) を確認する方法](/faq/ja/how-to-confirm-translated-amino-acid-seq.html)を参考にしてください。
 
@@ -480,13 +480,13 @@ ORFfinder (NCBI)
 EMBOSS Transeq (EBI)  
 [https://www.ebi.ac.uk/Tools/st/emboss\_transeq/](//www.ebi.ac.uk/Tools/st/emboss_transeq/)
 
-## Final page <a name="flow-7a"></a>
+## Final page  {#flow-7a}
 
 "Confirm" 後 "Next" クリックで最終確認画面が表示されます。
 
 ![]({{ site.baseurl }}/assets/images/help/NSSShelp7a_j.png){:.w600}
 
-## 8\. Finish <a name="flow-8"></a>
+## 8\. Finish  {#flow-8}
 
 Finish 画面が現れた時点で submission 完了となります。  
 入力された内容は自動的に DDBJ の登録用サーバーに転送されます。同時にSubmission 完了を知らせる Email が contact person の Email アドレス宛に送信されます。

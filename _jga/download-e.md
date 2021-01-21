@@ -36,7 +36,7 @@ tab_menu:
 lang: en
 ---
 
-## Data use application to NBDC<a name="du-application"></a>
+## Data use application to NBDC {#du-application}
 
 You may search JGA data at [the list of researches at the NBDC Human Database](https://humandbs.biosciencedbc.jp/en/data-use/all-researches). [DDBJ Search](https://ddbj.nig.ac.jp/search) is also available, however, regular indexing of new data will be implemented in November 2020. Until this implementation, new JGA data are not indexed.
 Take notes of JGA Dataset accession number(s) you want to use. For example, JGAD000001 (or JGAD00000000001 in the previous accession number format)
@@ -55,7 +55,7 @@ It takes about 10 minutes for the created D-way account becoming active in the N
 
 The JGA datasets download and access steps are described below.
 
-## Data user group<a name="data-user-group"></a>
+## Data user group {#data-user-group}
 
 Before starting the application, create a data user group. In the following example group (usergrp1), an owner is researcher (account_b) who apply the application and download the data, and a member is PI (account_c).
 
@@ -73,7 +73,7 @@ Before starting the application, create a data user group. In the following exam
 {% include image.html url="books/DU-group-e.png" caption="Select the data user group" class="w450" %}
 {:/}
 
-## Public key for dataset encryption<a name="public-key-for-dataset-encryption"></a>
+## Public key for dataset encryption {#public-key-for-dataset-encryption}
 
 For security, the JGA datasets are encrypted by the public key for dataset encryption registered by the applicant in the data use application. The applicant needs to first decrypt the datasets downloaded by scp by using the private key.
 
@@ -82,12 +82,12 @@ For security, the JGA datasets are encrypted by the public key for dataset encry
 The public key for dataset encryption is different from the [public/private key pair for the D-way account authentication](/account.html#enable-dra-submission-in-account).
 </div>
 
-### Generate a public and private key pair for dataset encryption<a name="generate-key-pair"></a>
+### Generate a public and private key pair for dataset encryption {#generate-key-pair}
 
 Generate a public/private key pair for encrypting datasets in each data use application. Please see ["Generate public and private key pair"](/account-e.html#generate-key-pair) for details.
 Register the public key for dataset encryption in the data use application system.
 
-### Registration of the public key for dataset encryption<a name="key-registration"></a>
+### Registration of the public key for dataset encryption {#key-registration}
 
 Register the public key for dataset encryption in the NBDC data use application.
 
@@ -95,9 +95,9 @@ Register the public key for dataset encryption in the NBDC data use application.
 {% include image.html url="books/public-key-for-dataset-encryption-e.png" caption="egistration of the public key for dataset encryption" class="w400" %}
 {:/}
 
-## Data use application approval and download<a name="data-use-approval-download"></a>
+## Data use application approval and download {#data-use-approval-download}
 
-### Data use application approval<a name="data-use-approval"></a>
+### Data use application approval {#data-use-approval}
 
 After the application is approved by NBDC, metadata, encrypted data files and decryption tools is created in the download directory in the JGA server.
 
@@ -105,7 +105,7 @@ After the application is approved by NBDC, metadata, encrypted data files and de
 {% include image.html url="books/data-use-approved-e.png" caption="Data use application approval" class="w400" %}
 {:/}
 
-### Download<a name="download"></a>
+### Download {#download}
 
 {::options parse_block_html="true" /}
 <div class="attention">
@@ -186,7 +186,7 @@ J-DU999991/JGAS999992/JGAD999993/JGAZ999999997:
 case2.vcf.gz.encrypt
 ```
 
-## Decrypt data files<a name="decrypt"></a>
+## Decrypt data files {#decrypt}
 
 Decrypt downloaded encrypted data files by using the decryption tools.
 
@@ -268,18 +268,18 @@ J-DU999991/J-DU999991.decrypt.sh
 J-DU999991/JGAS999992/JGAD999993
 ```
 
-### Metadata<a name="metadata"></a>
+### Metadata {#metadata}
 
 The metadata directory contains following files. Metadata files are not encrypted.
 
-#### Metadata in tsv<a name="metadata-tsv"></a>
+#### Metadata in tsv {#metadata-tsv}
 
   - JGAD999993.sample.txt
   - JGAD999993.analysis.SEQUENCE_VARIATION.txt
   
 For Sample and Analysis, metadata are provided in tsv with attribute names in the header and contents from the second line. The Analysis tsv filename contains Analysis type and the Analysis tsv files are created for each Analysis type. Please note that Study, Dataset and Policy metadata are also fully available in the [DDBJ Search](https://ddbj.nig.ac.jp/search)
 
-#### Metadata relation tsv<a name="metadata-relation-tsv"></a>
+#### Metadata relation tsv {#metadata-relation-tsv}
 
   - JGAD999993.study_sample_experiment_data.mapping.txt
 
@@ -297,7 +297,7 @@ The mapping table of Analysis and Sample. If Analysis refers Samples, all refere
 
 The mapping table of Dataset, Data, Analysis and Policy.
 
-#### Metadata in XML<a name="metadata-xml"></a>
+#### Metadata in XML {#metadata-xml}
 
   - JGAD999993.study.xml
   - JGAD999993.dataset.xml
@@ -310,7 +310,7 @@ The mapping table of Dataset, Data, Analysis and Policy.
 
 These XML files can be used for programmatic use.
 
-#### Filelist<a name="filelist"></a>
+#### Filelist {#filelist}
 
   - JGAD999993.filelist.txt
 

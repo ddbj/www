@@ -8,7 +8,7 @@ lang: en
 
 Create a DDBJ account.
 
-## D-way account <a name="ddbj-submission-account"></a>
+## D-way account  {#ddbj-submission-account}
 
 Bioinformation and DDBJ Center provides the D-way account system. In the D-way account, you can use BioProject, BioSample, GEA, DRA and JGA databases of DDBJ Center and the NBDC application systems. This handbook explains how to create a D-way account.
 
@@ -28,9 +28,9 @@ DDBJ Center employs scp authenticated by ssh key for transfer of large files. Th
 {% include image.html url="books/hac01-e.jpg" caption="Service permission of D-way account" class="w300" %}
 {:/}
 
-## Create a D-way account in the website<a name="account-for-bioproject-biosample-submissions"></a>
+## Create a D-way account in the website {#account-for-bioproject-biosample-submissions}
 
-### Create an account on website<a name="create-an-account-on-website"></a>
+### Create an account on website {#create-an-account-on-website}
 
 By default, you can use BioProject/BioSample/NBDC application systems in the D-way account created on the website.
 
@@ -87,12 +87,12 @@ Set a password longer than 8 characters contains both alphabets and　numbers.
 {:/}
 
 
-## Enable DRA/GEA/JGA submission in account <a name="enable-dra-submission-in-account"></a>
+## Enable DRA/GEA/JGA submission in account  {#enable-dra-submission-in-account}
 
 For submission to the [DDBJ Sequence Read Archive (DRA)](/dra/index-e.html) and [Genomic Expression Archive (GEA)](/gea/index-e.html), center name and public key should be registered to your account. The center name is abbreviated name of
 organization assigned by the DRA. The public key is used to identify users to access the file submission server.
 
-### Generate public and private key pair <a name="generate-key-pair"></a>
+### Generate public and private key pair  {#generate-key-pair}
 
 {::options parse_block_html="true" /}
 <div class="accordion-menu">
@@ -196,7 +196,7 @@ At "/Users/you/.ssh", the private key is saved as "id_rsa" and the public key is
 </div>
 </div>
 
-### Register center name and public key <a name="register-center-name-and-public-key"></a>
+### Register center name and public key  {#register-center-name-and-public-key}
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1092WV_aXjA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -231,12 +231,12 @@ the DRA/GEA at menus at top left.
 
 The JGA submissions are not browsable in the D-way web portal (under development). Please use JGA services according to ["JGA submission steps"](/jga/substep-e.html) and ["Download steps"](/jga/download-e.html).
 
-### Update account <a name="update-account"></a>
+### Update account  {#update-account}
 
 Edit account information and update account by [Update] button. The
 registered public key for authentication can be overwritten by uploading a new file.
 
-## Password change<a name="password-change"></a>
+## Password change {#password-change}
 
 Login [D-way](https://ddbj.nig.ac.jp/D-way) and move to the password change page from "Password" menu at top.
 
@@ -256,7 +256,7 @@ The following message is displayed if the password was changed successfully.
 {% include image.html url="books/pass3.jpg" caption="Message of successfull password change." class="w450" %}
 {:/}
 
-## Session Expired<a name="session"></a>
+## Session Expired {#session}
 
 After your password was changed, "Session Expired" may be displayed in your web brower. In this case, please access D-way in secret mode ([Google chrome](https://support.google.com/chrome/answer/95464?co=GENIE.Platform%3DDesktop&hl=ja), [Firefox](https://support.mozilla.org/ja/kb/private-browsing-use-firefox-without-history)) or use another browser.
 
@@ -264,7 +264,7 @@ After your password was changed, "Session Expired" may be displayed in your web 
 {% include image.html url="books/d-way-session.jpg" caption="Session Expired" class="w300" %}
 {:/}
 
-## Convert a private key <a name="convert-private-key"></a>
+## Convert a private key  {#convert-private-key}
 
 {::options parse_block_html="true" /}
 <div class="accordion-menu">

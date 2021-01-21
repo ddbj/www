@@ -30,21 +30,21 @@ DDBJ provides both the latest version and the DDBJ original version
 (Version 1.83, Modified by Dr. Kirill Kryukov).
 
 
-## Version <a name="Version"></a>
+## Version  {#Version}
 
 Select "2.1" (Latest version) or "1.83" (DDBJ original, modified by Dr.
 Kirill Kryukov). Default is **Latest version**.  
 In the "1.83", you can specify the detailed option parameters for Tree calculation and Boostrap.
 
-## Sequences <a name="Sequences"></a>
+## Sequences  {#Sequences}
 
 
-### Sequence Type <a name="select"></a>
+### Sequence Type  {#select}
 
 Select Protein or DNA to align. Default value is **Protein**.
 
 
-### Sequence Input <a name="sequence"></a>
+### Sequence Input  {#sequence}
 
 Enter or paste a set of sequences, or upload a file in any format
 (NBRF-PIR，EMBL-SWISSPROT, Pearson (Fasta), Clustal (\*.aln), GCG-MSF
@@ -85,10 +85,10 @@ identifier.
 The duplicate identifier causes the error.
 
 
-## Pairwise Alignment Options <a name="pairwise"></a>
+## Pairwise Alignment Options  {#pairwise}
 
 
-### Alignment Type <a name="type"></a>
+### Alignment Type  {#type}
 
 The alignment method used to perform the pairwise alignments used to
 generate the guide tree. Default value is **slow**.
@@ -100,7 +100,7 @@ generate the guide tree. Default value is **slow**.
 | fast | FAST, but approximate    |
 
 
-### Slow/Fast Pairwise Alignment Options <a name="Slow/Fast_Pairwise_Alignment_Options"></a>
+### Slow/Fast Pairwise Alignment Options  {#Slow/Fast_Pairwise_Alignment_Options}
 
 DNA /Protein Weight Matrix  
 : Slow pairwise alignment DNA/Protein sequence comparison matrix series used to score alignment.
@@ -144,9 +144,9 @@ PAIRGAP
 
 
 
-## Multiple Sequence Alignment Options <a name="multiple"></a>
+## Multiple Sequence Alignment Options  {#multiple}
 
-### Alignment Options <a name="option"></a>
+### Alignment Options  {#option}
 
 DNA /Protein Weight Matrix  
 : 塩基置換行列表/アミノ酸置換行列表を指定します。デフォルトは Protein の場合は **Gonnet** ， DNA の場合は **IUB** です。
@@ -201,7 +201,7 @@ CLUSTERING
   | UPGMA | Unweighted Pair-Group Method with Arithmatic mean method |
 
 
-### Output Options <a name="Output_Options"></a>
+### Output Options  {#Output_Options}
 
 Format  
 : Format for generated multiple sequence alignment. Default value is **Aln w/numbers**.
@@ -227,9 +227,9 @@ Order
   | input   | Same order as the input sequences.                  |
 
 
-## DDBJ Original version (Version 1.83, Modified by Dr. Kirill Kryukov) options <a name="ddbjoriginal"></a>
+## DDBJ Original version (Version 1.83, Modified by Dr. Kirill Kryukov) options  {#ddbjoriginal}
 
-### Tree calculation/BOOTSTRAP options <a name="bootstrap"></a>
+### Tree calculation/BOOTSTRAP options  {#bootstrap}
 
 Distance  
 : Specify the correction format. Default value is **Kimura**. Only
@@ -324,9 +324,9 @@ method is the Kimura method, but the p distance method may also be
 useful for some data.
 
 
-## How to see the result screen <a name="results"></a>
+## How to see the result screen  {#results}
 
-### ClustalW analysis result <a name="kekka"></a>
+### ClustalW analysis result  {#kekka}
 
 1. Result  
 ![解析結果]({{ site.baseurl }}/assets/images/help/clustalw_01-e.gif)
@@ -359,7 +359,7 @@ file.
 
 
 
-### How to view the results after closing the window <a name="viewafter"></a>
+### How to view the results after closing the window  {#viewafter}
 
 Using the Request ID, ClustalW analysis result is available by the
 following URL.  
@@ -369,7 +369,7 @@ Please note that whoever knows Request ID can view the result.
 //clustalw.ddbj.nig.ac.jp/cgi-bin/clustalwr.cgi?id=**Request ID**&output=aln1
 
 
-## About ClustalW <a name="About_ClustalW"></a>
+## About ClustalW  {#About_ClustalW}
 
 - This program is : ClustalW2.1
 

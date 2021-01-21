@@ -34,17 +34,17 @@ related_pages:
 
 ClustalW は，DNA配列やタンパク質配列の多重整列のためのツールです。<br>DDBJ では，通常版（最新バージョン）と DDBJ拡張版(Version 1.83, Modified by Dr. Kirill Kryukov) を提供しています。
 
-## Version <a name="Version"></a>
+## Version  {#Version}
 
 "2.1" （ClustalW の最新版），または"1.83"（Dr. Kirill Kryukov　改訂のDDBJ オリジナル） の何れかを選択してください。　デフォルトは　"2.1" です。  
 "1.83"　を選択すると、系統樹作成・BOOTSTRAP の詳細なオプションの指定が可能になります。 
 
-## 配列 <a name="配列"></a>
+## 配列  {#配列}
 
-### 配列の種類の選択 <a name="select"></a>
+### 配列の種類の選択  {#select}
 DNA/Protein の何れかを選択すると，それぞれの詳細なオプションを選択できます。デフォルトは Protein です。 
 
-### 配列の入力 <a name="sequence"></a>
+### 配列の入力  {#sequence}
 
 データを直接テキストボックスに入力するか，データを格納したファイルを指定（ファイルアップロード機能）します。各配列にはタイトル名が必要です。
 
@@ -77,9 +77,9 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 タイトル名は、">" 以降の文字列から、最初のスペース以前の文字列までです。スペースが無い場合は、">" 以降の文字列から行末までとなります。
         同一タイトル名の配列が複数存在する場合はエラーとなります。
 
-## Pairwise Alignment のパラメータの指定 <a name="pairwise"></a>
+## Pairwise Alignment のパラメータの指定  {#pairwise}
 
-### Alignment のタイプ <a name="type"></a>
+### Alignment のタイプ  {#type}
 
 アライメントに使用するアルゴリズムを選択します。デフォルトは Slow です。
 
@@ -88,7 +88,7 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 |  slow  |  精度の高い alignment の作成に適していますが処理速度が遅いため，比較的短い配列の解析用です  |
 |  fast  |  データ処理速度に優れたアルゴリズムであり，長大な配列を解析する場合に適しています  |      
 
-### Slow/Fast Pairwise Alignment のオプション <a name="Slow/Fast_Pairwise_Alignment_のオプション"></a>
+### Slow/Fast Pairwise Alignment のオプション  {#Slow/Fast_Pairwise_Alignment_のオプション}
 
 DNA /Protein  Weight Matrix
 :   塩基置換行列表/アミノ酸置換行列表を指定します。デフォルトは Protein の場合は Gonnet ，DNAの場合はIUBです。
@@ -128,9 +128,9 @@ TOPDIAG
 PAIRGAP
 :   Fast algorithm で計算する際の gap penalty を指定します。デフォルトは&nbsp;3&nbsp;です。
 
-## Multiple Alignment のパラメータの指定 <a name="multiple"></a>
+## Multiple Alignment のパラメータの指定  {#multiple}
 
-### alignment のオプションを指定します <a name="option"></a>
+### alignment のオプションを指定します  {#option}
 
 DNA&nbsp;/Protein&nbsp;Weight&nbsp;Matrix
 :   塩基置換行列表/アミノ酸置換行列表を指定します。デフォルトは Protein の場合は&nbsp;Gonnet&nbsp; ，DNAの場合は&nbsp;IUB&nbsp;です。
@@ -186,7 +186,7 @@ CLUSTERING
 |  NJ  |  Neighbour-joining (Saitou and Nei 1987) 法  |
 |  UPGMA  |  Unweighted Pair-Group Method with Arithmatic mean 法  |
 
-### 出力のオプションを指定します <a name="出力のオプションを指定します"></a>
+### 出力のオプションを指定します  {#出力のオプションを指定します}
 
 Format
 :   Multiple&nbsp;alignmentの出力形式を指定します。デフォルトは &nbsp;Aln w/numbers&nbsp;です。
@@ -210,9 +210,9 @@ Order
 |  aligned  |  Alignment の順番で配列を出力します。  |
 |  input  |  入力された配列の順番で配列を出力します。    |
 
-## DDBJ 拡張版(Version 1.83, Modified by Dr. Kirill Kryukov) のオプション <a name="ddbjoriginal"></a>
+## DDBJ 拡張版(Version 1.83, Modified by Dr. Kirill Kryukov) のオプション  {#ddbjoriginal}
 
-### 系統樹作成・BOOTSTRAP のオプションの指定 <a name="bootstrap"></a>
+### 系統樹作成・BOOTSTRAP のオプションの指定  {#bootstrap}
 
 Distance
 :   系統樹計算時に使用する&nbsp;correction&nbsp;を指定します。デフォルトは &nbsp;Kimura&nbsp;です。PROTEINの場合は&nbsp;Kimura&nbsp;と&nbsp;p-distance&nbsp;のみ指定可能です。<span class="red">＊</span>のオプションは&nbsp;DDBJ&nbsp;オリジナルオプションです。
@@ -257,9 +257,9 @@ SEED
 :   アミノ酸配列間の進化的距離を推定する際も同様に、CLUSTALWではp distance法とKimuraの方法（塩基置換数推定法のKimuraの方法とは全く異なります）が利用可能であり、Kimuraの方法がデフォルト値となっています。必要に応じてp distance法も使用してみてください。
 
 
-## 解析結果画面の見方 <a name="results"></a>
+## 解析結果画面の見方  {#results}
 
-### ClustalW 解析結果 <a name="kekka"></a>
+### ClustalW 解析結果  {#kekka}
 
 1. 解析結果  
 ![解析結果]({{ site.baseurl }}/assets/images/help/clustalw_01.gif)
@@ -285,7 +285,7 @@ SEED
 5. 系統樹作成  
 ダウンロードしたファイルから系統樹を作成するには，系統樹作成ソフト (例 TreeView X や MEGA など)を利用してください。
 
-### 検索結果表示と保存期間 <a name="viewafter"></a>
+### 検索結果表示と保存期間  {#viewafter}
 
 検索結果は Request ID を入れた，下記の URL で表示できます。  
 Request ID は，入力内容送信後の画面に表示されます。問い合わせ等の場合にも必要になりますので，必ず控えておいてください。  
@@ -293,7 +293,7 @@ URLが他人に知られると他人に解析結果が分かってしまうた�
 
 //clustalw.ddbj.nig.ac.jp/cgi-bin/clustalwr.cgi?id=**Request ID**&output=aln1 
 
-## ClustalW について <a name="ClustalW_について"></a>
+## ClustalW について  {#ClustalW_について}
 
 * このプログラムは：ClustalW2.1
 * 参考文献

@@ -52,7 +52,7 @@ tab_menu:
 lang: en
 ---
 
-## Data matrix format <a name="data-matrix"></a>
+## Data matrix format  {#data-matrix}
 
 This format allows each data point in the file to be mapped to a particular assay in the experiment, and to a particular probe/probe set in the array design file of your experiment. For the mapping to work smoothly, each matrix file should contain data from assays on a single array design (i.e if you use multiple array designs in your experiment, mutliple matrix files will be needed), and the column/row headings and the order of columns are strictly controlled:
 
@@ -81,7 +81,7 @@ Wrong
 | **Hybridization REF** | Hyb1    | Hyb2     | Hyb1   | Hyb2    |
 | **Reporter REF**      | log2 FC | log2 FC | p-value | p-value |
 
-### Example non-Affymetrix data matrix <a name="ex-matrix-non-affy"></a>
+### Example non-Affymetrix data matrix  {#ex-matrix-non-affy}
 
 In this example, four of the six assays are being mapped to log2 ratio values in the matrix file. Each row of data is mapped to a Reporter Name defined in the [array design file](/gea/adf-e.html), in this case, [A-AGIL-6](https://www.ebi.ac.uk/arrayexpress/files/A-AGIL-6/A-AGIL-6.adf.txt).
 
@@ -102,7 +102,7 @@ Non-Affymetrix data matrix:
 | **A_43_P19480**       | 1.9                     | 1.3                       |
 | **A_42_P495989**      | 5.3                     | 9.8                       |
 
-### Example Affymetrix data matrix <a name="ex-matrix-affy"></a>
+### Example Affymetrix data matrix  {#ex-matrix-affy}
 
 In this example, two of the six assays are being mapped to data with two different quantitation types (CELIntensity, CELStdev). Each row of data is mapped to a CompositeElement Name (because each Affymetrix probe set is made up of a number of probes), defined in the [array design file](/gea/adf-e.html), in this case, [A-AFFY-44](https://www.ebi.ac.uk/arrayexpress/files/A-AFFY-44/A-AFFY-44.adf.txt).
 

@@ -114,7 +114,7 @@ related_pages:
 TransChecker is a software tool developed by DDBJ for checking translation into amino acid sequence from [CDS features](/ddbj/cds-e.html) that are described in
 [sequence](/ddbj/file-format-e.html#sequence) and [annotation](/ddbj/file-format-e.html#annotation) files.
 
-## Install <a name="install"></a>
+## Install  {#install}
 <ol>
   <li>
     Access and get transChecker.tar.gz file from <a href="/ddbj/mss-tool-e.html">Validation tools for MSS data files</a>.
@@ -200,7 +200,7 @@ exit $RETVAL
   </li>
 </ol>
 
-## Execution <a name="exec"></a>
+## Execution  {#exec}
 
 Execute transChecker.sh by the command below;
 
@@ -235,7 +235,7 @@ DO NOT use multibyte character(s) for any file or folder name of [Sequence file]
 \-t\[<span class="font-br font-normal">file name for alignments of nucleotide and amino acid sequences</span>\]  
 : This option is to specify the output file for alignments of nucleotide and amino acid sequences. When this option is not specified, no alignment is dumped. See also [Format of amino acid sequences](#output-1-2).
 
-### Format of amino acid sequences <a name="exec-1"></a>
+### Format of amino acid sequences  {#exec-1}
 
 he transChecker provides two options for translated amino acid sequences.  
 Even though some errors are occurred, the sequence of [CDS feature](/ddbj/cds-e.html) is translated into amino acid as is, however, some translation processes are likely skipped because of severe errors.
@@ -267,7 +267,7 @@ DADRNLLLVKGSVPGKPGALLNITPATVVGQQA
 //
 ```
 
-#### Alignment with nucleotide sequence<a name="output-1-2"></a>
+#### Alignment with nucleotide sequence {#output-1-2}
 
 The alignments for nucleotide and translated amino acid sequences are in the following format.
 

@@ -11,7 +11,7 @@ related_pages:
   - title: WABI VecScreen ヘルプ
     url: /services/wabi-vecscreen.html
 ---
-## MAFFT の job の投入 <a name="job"></a>
+## MAFFT の job の投入  {#job}
 
 以下のパラメーターを POST します。  
 format, result は必須です。  
@@ -32,7 +32,7 @@ result に mail を指定した場合は address も必須となります。
 |  result  |  結果通知方法。www, mail のいずれか。<br/>mail の場合、job 完了時に address に記述したメールアドレスに対して検索終了の通知が送信されます。<br/>www の場合は何もしないので、POST 時に返された request ID を使って GET で job の状態を調べます。  |
 |  address  |  esult で mail を指定した場合に検索終了の通知を受け取るメールアドレス。  |
 
-## MAFFT の結果の取得 <a name="result"></a>
+## MAFFT の結果の取得  {#result}
 
 |  パラメーター  |  説明  |
 | ---- | ---- |
@@ -40,12 +40,12 @@ result に mail を指定した場合は address も必須となります。
 |  GET mafft/{id}?info=request  |  プログラム実行条件を返します。<br/>存在しない場合は、エラーを返します。  |
 |  GET mafft/{id}?info=result  |  job が終わっていたら結果（multiple alignment, Group-to-group alignmentの結果）を返します。<br/>終わってない・存在しない場合は、エラーを返します。  |
 
-## サンプルスクリプト <a name="sample"></a>
+## サンプルスクリプト  {#sample}
 
 mafft-client.pl
 <script src="https://gist.github.com/ddbj-repo/a1b4cdda6a78fa382e9df55c4441f5a1.js"></script>
 
-### 例1：複数配列の multiple alignment <a name="sample1"></a>
+### 例1：複数配列の multiple alignment  {#sample1}
 
 conf.json
 
@@ -168,7 +168,7 @@ DEDLKTLVQWILAGSK
       
 ```
 
-### 例2：2つの整列済みデータの統合（Group-to-group alignment） <a name="sample2"></a>
+### 例2：2つの整列済みデータの統合（Group-to-group alignment）  {#sample2}
 
 conf.json
 
@@ -276,7 +276,7 @@ _seed_reh:H16_A IPDSDVQAMVGWILEA--K
       
 ```
 
-### 例3：整列済みデータに新規配列を追加 <a name="sample3"></a>
+### 例3：整列済みデータに新規配列を追加  {#sample3}
 
 conf.json
 

@@ -20,7 +20,7 @@ tab_menu:
 lang: en
 ---
 
-## Trace Archive overview <a name="overview"></a>
+## Trace Archive overview  {#overview}
 
 [DDBJ Trace Archive (DTA)](/index-e.html)is a permanent repository of
 DNA sequence chromatograms (traces), base calls, and quality estimates
@@ -57,7 +57,7 @@ Required<span class="red">*</span>
 May be required, depending upon the trace type and strategy
 employed<span class="conditionally_required">*</span>
 
-### Metadata Field List <a name="Metadata-Field-List"></a>
+### Metadata Field List  {#Metadata-Field-List}
 
 [ACCESSION](#ACCESSION)<a name="ACCESSION"></a>   
 : DDBJ/EMBL/Genbank accession number  
@@ -1103,7 +1103,7 @@ template.
   "Standard 384 well microtiter configuration")  
   Standard 384 well microtiter configuration
 
-### Internal Fields List <a name="Internal-Fields-List"></a>
+### Internal Fields List  {#Internal-Fields-List}
 
 [BASECALL_LENGTH](#BASECALL_LENGTH)<a name="BASECALL_LENGTH"></a>
 : Length of the trace in base pairs.  
@@ -1227,7 +1227,7 @@ template.
 
   This field is used to store the date of the last update.
 
-## Submit trace data <a name="trace-data-submission"></a>
+## Submit trace data  {#trace-data-submission}
 
 {::options parse_block_html="true" /}
 <div class="attention">
@@ -1242,7 +1242,7 @@ Before submitting data from human subjects researches, read the "[Data
 submission of human subjects research](/policies-e.html#human)".</span>
 </div>
 
-### Create submission files <a name="create-submission-files"></a>
+### Create submission files  {#create-submission-files}
 
 The metadata file (TRACEINFO file) describes the submitted data as well
 as points to the location of the chromatograms. All submissions when
@@ -1258,7 +1258,7 @@ subdirectories. There may be subdirectories within and this is
 encouraged to group traces. Below are examples of the submission
 directory hierarchy.
 
-#### Submission directory hierarchy example <a name="Submission_directory_hierarchy_example"></a>
+#### Submission directory hierarchy example  {#Submission_directory_hierarchy_example}
 
 ```
 TOP_DIRECTORY/
@@ -1279,7 +1279,7 @@ This section defines common for the submission values if any.
 
 Below are examples of TRACEINFO metadata files.
 
-#### TRACEINFO xml example <a name="TRACEINFO_xml_example"></a>
+#### TRACEINFO xml example  {#TRACEINFO_xml_example}
 
 ```
 <?xml version="1.0"?>
@@ -1312,7 +1312,7 @@ Below are examples of TRACEINFO metadata files.
 </trace_volume>
 ```
 
-#### TRACEINFO tab-delimited text example <a name="TRACEINFO_tab-delimited_text_example"></a>
+#### TRACEINFO tab-delimited text example  {#TRACEINFO_tab-delimited_text_example}
 
 ```
 center_name = CENTER NAME ACRONYM IS HERE
@@ -1330,13 +1330,13 @@ F-3NB691000033  3NB691000033    3NB691  3NB691000033    ./traces/F-3NB691000033.
 ```
 
 
-### Upload submission files <a name="upload-submission-files"></a>
+### Upload submission files  {#upload-submission-files}
 
 DTA creates a directory for data submission. Please contact to [the DTA
 team](/contact-ddbj-e.html). Transfer files by SCP according to the
 [manual](/dra/submission.html#upload-sequence-data).
 
-#### Submission directory example <a name="Submission_directory_example"></a>
+#### Submission directory example  {#Submission_directory_example}
 
 ```
 submission/submitter_id/dta/dta_submitter_id-0001
@@ -1348,7 +1348,7 @@ Archive](/dra/index-e.html). </span>
 
 
 
-### Completion of submission <a name="completion-submission"></a>
+### Completion of submission  {#completion-submission}
 
 After submission files become complete, DTA can keep the data private
 until the submitters instruct us to release the data. After instruction
@@ -1360,7 +1360,7 @@ assigned and the data become public.
 data release are concurrent events. </span>
 
 
-### Update <a name="update"></a>
+### Update  {#update}
 
 To update the records, please contact to [the DTA
 team](/contact-ddbj-e.html).

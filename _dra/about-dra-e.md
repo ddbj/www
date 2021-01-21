@@ -50,7 +50,7 @@ panels:
 lang: en
 ---
 
-## Contact <a name="contact"></a>
+## Contact  {#contact}
 
 Please contact us from [Message form](/contact-ddbj-e.html).
 
@@ -67,7 +67,7 @@ National Institute of Genetics" at "1111 Yata, Mishima, Shizuoka
 
 [Ask questions about DDBJ services.](/contact-ddbj-e.html#to-ddbj)
 
-## Reference <a name="reference"></a>
+## Reference  {#reference}
 
 Kodama Y, Shumway M, Leinonen R; on behalf of the InternationalNucleotide Sequence Database  
 Collaboration (2012)  

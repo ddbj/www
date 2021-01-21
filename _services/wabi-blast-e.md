@@ -5,7 +5,7 @@ category: services
 lang: en
 ---
 
-## Overview <a name="overview"></a>
+## Overview  {#overview}
 
 WABI provides web APIs for using BLAST.
 
@@ -27,9 +27,9 @@ WABI provides web APIs for using BLAST.
   - Returns [the BLAST search result](#search-result) for a specified
     [Request ID](#parameter-Request-ID).
 
-## Searching WABI BLAST <a name="search"></a>
+## Searching WABI BLAST  {#search}
 
-### BLAST search job <a name="search-job"></a> 
+### BLAST search job  {#search-job} 
 
 A BLAST search job is first registered in the queue of jobs awaiting
 execution. The job is then executed as soon as computing resources
@@ -37,7 +37,7 @@ become free.
 
 See Also: [Search job status](#search-status)
 
-### Search Job Status <a name="search-status"></a> 
+### Search Job Status  {#search-status} 
 
 WABI search jobs transition through the following status.
 
@@ -88,7 +88,7 @@ Example [response values when querying job status](#URI_GET_status):
 12 }
 ```
 
-### BLAST search criteria <a name="search-criteria"></a> 
+### BLAST search criteria  {#search-criteria} 
 
 Example of parameters that are passed on when a [BLAST job is
 submitted](#URI_POST) using WABI.
@@ -108,7 +108,7 @@ Example:
 10 }
 ```
 
-### BLAST search result <a name="search-result"></a>
+### BLAST search result  {#search-result}
 
 The following is an example of the BLAST search output. This is the same
 as the file generated using the blastall command, when executed using
@@ -146,7 +146,7 @@ Example:
         
 ```
 
-### BLAST search result image <a name="search-image"></a>
+### BLAST search result image  {#search-image}
 
 BLAST search jobs submitted using WABI generate a graphical display of
 the search output.
@@ -155,7 +155,7 @@ Example:
 
 [![Detail view_6_1]({{ site.baseurl }}/assets/images/help/wabi_blast_imagedata.png){:.w500}]({{ site.baseurl }}/assets/images/help/wabi_blast_imagedata.png ){:.group1}
 
-## WABI BLAST usage examples <a name="usage_example"></a>
+## WABI BLAST usage examples  {#usage_example}
 
 {::options parse_block_html="true" /}
 <div class="accordion-menu">
@@ -188,7 +188,7 @@ result  www
 pom.xml
 : <script src="https://gist.github.com/ddbj-repo/4978b238ca7dbb94ebeebae0184cd6ce.js"></script>
 
-#### Execution example <a name="java_execution_example"></a>
+#### Execution example  {#java_execution_example}
 
 Preliminary preparation (Please run first)
 : 
@@ -256,7 +256,7 @@ format  json
 result  www
 ```
 
-#### Execution example <a name="perl_execution_example"></a>
+#### Execution example  {#perl_execution_example}
 
 Preliminary preparation (Please run first)
 : 
@@ -313,7 +313,7 @@ format  json
 result  www
 ```
 
-#### Execution example <a name="ruby_execution_example"></a>
+#### Execution example  {#ruby_execution_example}
 
 Execution procedure
 : 
@@ -324,7 +324,7 @@ $ ruby example.rb
 Actual example
 : <script src="https://gist.github.com/ddbj-repo/d9e1d2d44aaecdb890ec12196dc52dbd.js"></script>
 
-#### Example of the execution result <a name="wabi_blast_2013-0606-1336-31-681-634313"></a>
+#### Example of the execution result  {#wabi_blast_2013-0606-1336-31-681-634313}
 
 wabi_blast_2013-0606-1336-31-681-634313.txt
 : <script src="https://gist.github.com/ddbj-repo/aea641167c10b4c56ec08b1c4e230f2a.js"></script>
@@ -333,9 +333,9 @@ wabi_blast_2013-0606-1336-31-681-634313.txt
 </div>
 </div>
 
-## WABI BLAST Details <a name="details"></a>
+## WABI BLAST Details  {#details}
 
-### URI POST /blast (submit a search job) <a name="URI_POST"></a> 
+### URI POST /blast (submit a search job)  {#URI_POST} 
 
 This method appends a [BLAST search to the job queue](#search-job) and
 returns the [Request ID](#parameter-Request-ID).  
@@ -423,7 +423,7 @@ GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC</code></pre><br>
 </table>
 
 
-#### Server-side processing flow <a name="Server-side_processing_flow"></a>
+#### Server-side processing flow  {#Server-side_processing_flow}
 
   1. Check validity of input values.  
     If an invalid input value is found, then the processing is
@@ -434,7 +434,7 @@ GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC</code></pre><br>
     If the specified format is not available, then HTTP status 404 Not
     Found is returned.
 
-#### Input validation check performed <a name="Input_validation_check_performed"></a>
+#### Input validation check performed  {#Input_validation_check_performed}
 
 <table>
   <tbody>
@@ -518,7 +518,7 @@ GTTCCTCAGCCTCTTCTCCTTCCTGCTCGTGGCAGGCGCCGCCAC</code></pre><br>
   </tbody>
 </table>
 
-#### Response data <a name="Response_data"></a>
+#### Response data  {#Response_data}
 
 In the case of successful completion:
 : 
@@ -543,7 +543,7 @@ In the case of failed completion:
   Please use the HTTP status code to determine the success or
   failure of the request.
 
-#### Example request and response <a name="uripost-example"></a>
+#### Example request and response  {#uripost-example}
 
 Examples of input data
 
@@ -658,7 +658,7 @@ HTTP Status 400
 </div>
 </div>
 
-### URI GET /blast/{Request-ID}?info=status (query the status of a search job) <a name="URI_GET_status"></a> 
+### URI GET /blast/{Request-ID}?info=status (query the status of a search job)  {#URI_GET_status} 
 
 [Returns the status of the job](#search-status) specified by [Request
 ID](#parameter-Request-ID).
@@ -698,7 +698,7 @@ ID](#parameter-Request-ID).
   </tbody>
 </table>
 
-#### Server-Side Processing Flow <a name="Server-Side_Processing_Flow"></a>
+#### Server-Side Processing Flow  {#Server-Side_Processing_Flow}
 
   1. Input values are validated on the server side.  
     If an input validation error is found, processing is interrupted,
@@ -713,7 +713,7 @@ ID](#parameter-Request-ID).
     However, the server returns HTTP status 404 Not Found if the
     specified format is invalid.
 
-#### Input value validation check performed <a name="Input_value_validation_check_performed"></a>
+#### Input value validation check performed  {#Input_value_validation_check_performed}
 
 <table>
   <tbody>
@@ -756,7 +756,7 @@ ID](#parameter-Request-ID).
   </tbody>
 </table>
 
-#### Response Data <a name="Response_Data"></a>
+#### Response Data  {#Response_Data}
 
 In the case of successful completion:
 : 
@@ -781,7 +781,7 @@ In the case of failed completion:
   Please use the HTTP status code to determine the success or
   failure of the request.
 
-#### Example request and response <a name="Example_request_and_response"></a>
+#### Example request and response  {#Example_request_and_response}
 
 Example input values
 
@@ -856,7 +856,7 @@ HTTP Status 400
 </div>
 </div>
 
-### URI GET /blast/{Request-ID}?info=request (obtain and confirm search criteria) <a name="URI_GET_request"></a> 
+### URI GET /blast/{Request-ID}?info=request (obtain and confirm search criteria)  {#URI_GET_request} 
 
 This will return the search criteria of a specified [Request
 ID](#parameter-Request-ID).
@@ -888,7 +888,7 @@ ID](#parameter-Request-ID).
   </tbody>
 </table>
 
-#### Server-Side Processing Flow <a name="Server-Side_Processing_Flow"></a>
+#### Server-Side Processing Flow  {#Server-Side_Processing_Flow}
 
   1. Input values are validated on the server side.  
     If an input validation error is found, processing is interrupted,
@@ -903,7 +903,7 @@ ID](#parameter-Request-ID).
     However, the server returns HTTP status code 404 Not Found if the
     specified format is invalid.
 
-#### Input value validation check performed <a name="Input_value_validation_check_performed"></a>
+#### Input value validation check performed  {#Input_value_validation_check_performed}
 
 <table>
   <tbody>
@@ -946,7 +946,7 @@ ID](#parameter-Request-ID).
   </tbody>
 </table>
 
-#### Response Data <a name="Response_Data"></a>
+#### Response Data  {#Response_Data}
 
 In the case of successful completion:
 : 
@@ -965,7 +965,7 @@ of the parameter that caused the input validation error.
 - Please use the HTTP status code to determine the success or
 failure of the request.
 
-#### Example request and response <a name="Example_request_and_response"></a>
+#### Example request and response  {#Example_request_and_response}
 
 Example input values:
 
@@ -1021,7 +1021,7 @@ HTTP Status 404
 </div>
 </div>
 
-### URI GET /blast/{Request-ID}?info=result (retrieve search results) <a name="URI_GET_result"></a>
+### URI GET /blast/{Request-ID}?info=result (retrieve search results)  {#URI_GET_result}
 
 Returns the search results for a specified [Request ID](#parameter-Request-ID).
 
@@ -1053,7 +1053,7 @@ Returns the search results for a specified [Request ID](#parameter-Request-ID).
   </tbody>
 </table>
 
-#### Server-Side Processing Flow <a name="Server-Side_Processing_Flow"></a>
+#### Server-Side Processing Flow  {#Server-Side_Processing_Flow}
 
   1. Input values are validated on the server side.  
     If an input validation error is found, processing is interrupted,
@@ -1069,7 +1069,7 @@ Returns the search results for a specified [Request ID](#parameter-Request-ID).
     However, the server returns HTTP status code 404 Not Found if the
     specified format is invalid.
 
-#### Input validation check performed <a name="Input_validation_check_performed"></a>
+#### Input validation check performed  {#Input_validation_check_performed}
 
 <table>
   <tbody>
@@ -1112,7 +1112,7 @@ Returns the search results for a specified [Request ID](#parameter-Request-ID).
   </tbody>
 </table>
 
-#### Response Data <a name="Response_Data"></a>
+#### Response Data  {#Response_Data}
 
 In the case of successful completion:
 : 
@@ -1131,7 +1131,7 @@ of the parameter that caused the input validation error.
 - Please use the HTTP status code to determine the success or
 failures of the request.
 
-#### Example request and response <a name="Example_request_and_response"></a>
+#### Example request and response  {#Example_request_and_response}
 
 Example of input data:
 
@@ -1233,7 +1233,7 @@ This method returns the image data generated from the search result specified by
   </tbody>
 </table>
 
-#### Server-side processing flow <a name="Server-side_processing_flow"></a>
+#### Server-side processing flow  {#Server-side_processing_flow}
 
   1. Input values are validated on the server side.  
     If an invalid input value is found, then the processing is
@@ -1249,7 +1249,7 @@ This method returns the image data generated from the search result specified by
     However, the server returns HTTP status code 404 Not Found if the
     specified format is invalid.
 
-#### Input validation check performed <a name="Input_validation_check_performed"></a>
+#### Input validation check performed  {#Input_validation_check_performed}
 
 <table>
   <tbody>
@@ -1291,7 +1291,7 @@ This method returns the image data generated from the search result specified by
   </tbody>
 </table>
 
-#### Response Data <a name="Response_Data"></a>
+#### Response Data  {#Response_Data}
 
 In the case of successful completion:
 : 
@@ -1309,7 +1309,7 @@ of the parameter that caused the input validation error.
 - Please use the HTTP status code to determine the success or
 failure of the request.
 
-#### Example request and response <a name="Example_request_and_response"></a>
+#### Example request and response  {#Example_request_and_response}
 
 Example input values
 
@@ -1354,7 +1354,7 @@ HTTP Status 404
 </div>
 </div>
 
-### URI GET /blast/help/{Help-Command} (View help information) <a name="URI_GET_help"></a> 
+### URI GET /blast/help/{Help-Command} (View help information)  {#URI_GET_help} 
 
 Returns the help information of WABI BLAST.
 
@@ -1391,7 +1391,7 @@ Returns the help information of WABI BLAST.
   </tbody>
 </table>
 
-#### Help-Command <a name="Help-Command"></a>
+#### Help-Command  {#Help-Command}
 
 <table>
   <thead>
@@ -1439,7 +1439,7 @@ Returns the help information of WABI BLAST.
   </tbody>
 </table>
 
-#### Response data <a name="Response_data"></a>
+#### Response data  {#Response_data}
 
 In the case of successful completion:
 : 
@@ -1449,7 +1449,7 @@ In case of failed completion:
 : 
 - Returns the list of valid Help-Commands and other information.
 
-#### Example request and response <a name="Example_request_and_response"></a>
+#### Example request and response  {#Example_request_and_response}
 
 Example input values:
 
@@ -1500,9 +1500,9 @@ Example response for a failed request:
 </div>
 </div>
 
-## WABI BLAST Parameters <a name="parameter"></a>
+## WABI BLAST Parameters  {#parameter}
 
-### requestId：Request ID <a name="parameter-Request-ID"></a>
+### requestId：Request ID  {#parameter-Request-ID}
 
 A string that is used to uniquely identify a [BLAST search
 job](#search-job)　from those registered in WABI.  
@@ -1524,7 +1524,7 @@ wabi_blast_1111-1111-1111-11-111-111111
 
 Also refer to: [BLAST Help Request ID](/blast-e.html#request%20id)
 
-### querySequence： Query sequence data <a name="parameter-querySequence"></a>
+### querySequence： Query sequence data  {#parameter-querySequence}
 
   - Query sequence must be in FASTA format.
   - In order to assign a name to a sequence, include a line starting
@@ -1578,7 +1578,7 @@ making sequences shorter.
 
 Also refer to: [BLAST Help Query name, Query sequence](/blast-e.html#query)
 
-### datasets：Datasets <a name="parameter-datasets"></a> 
+### datasets：Datasets  {#parameter-datasets} 
 
 Datasets are available to assist in completing the query form on the web
 interface, but they are not currently used in WABI.
@@ -1607,9 +1607,9 @@ up-to-date information.
 Also refer to: [BLAST HELP Nucleotide (DATABASE, DIVISION)](/blast-e.html#nucleotide)
 
 
-### database：Database <a name="parameter-database"></a> 
+### database：Database  {#parameter-database} 
 
-#### Nucleotide Sequence Database <a name="Nucleotide_Sequence_Database"></a>
+#### Nucleotide Sequence Database  {#Nucleotide_Sequence_Database}
 
 Example nucleotide sequence database values and their corresponding
 explanations are listed in the table below.  
@@ -1705,7 +1705,7 @@ Refseq NA Database value
 | `refseq-model-rna-R_norvegicus` | R. norvegicus |
 | `refseq-model-rna-X_tropicalis` | X. tropicalis |
 
-#### Amino Acid Sequence Databases <a name="Amino_Acid_Sequence_Databases"></a>
+#### Amino Acid Sequence Databases  {#Amino_Acid_Sequence_Databases}
 
 Example amino acid sequence database values and their corresponding
 explanations are listed in the table below.
@@ -1802,7 +1802,7 @@ Refseq AA Database value
 
 Also refer to: [BLAST HELP Nucleotide (DATABASE, DIVISION)](/blast-e.html#nucleotide)
 
-### program：BLAST Program <a name="parameter-program"></a>
+### program：BLAST Program  {#parameter-program}
 
 You can choose from the following BLAST programs depending on the
 analysis being performed.  
@@ -1822,7 +1822,7 @@ recently updated information.
 
 Also refer to: [BLAST HELP Program](/blast-e.html#program)
 
-### parameters：BLAST program options　<a name="parameter-parameters"></a>
+### parameters：BLAST program options　 {#parameter-parameters}
 
 BLAST program options that can be specified are as follows:  
 Note: Please use the help API [GET
@@ -2143,7 +2143,7 @@ Example BLAST program option:
 
 Also refer to: [BLAST HELP Optional Parameters](/blast-e.html#parameters)
 
-### format：Response data format <a name="parameter-format"></a>
+### format：Response data format  {#parameter-format}
 
 You can specify the following options to select the WABI response data
 format.  
@@ -2166,7 +2166,7 @@ then it is considered an invalid input value and returns an HTTP error
 code.
 
 
-### result：Result retrieval method <a name="parameter-result"></a> 
+### result：Result retrieval method  {#parameter-result} 
 
 The method for retrieving results can be specified from one of the
 following:  
@@ -2182,13 +2182,13 @@ recently updated information.
 
 
 
-### address：Email address <a name="parameter-address"></a> 
+### address：Email address  {#parameter-address} 
 
 The email address to which the results will be sent.
 
 
 
-### info：The type of job information being referenced <a name="parameter-info"></a>
+### info：The type of job information being referenced  {#parameter-info}
 
 The following types of information can be retrieved for a submitted
 search job.  
@@ -2202,7 +2202,7 @@ up-to-date information.
 | `result` | Search results |
 | `request` | Search criteria specified when the job was submitted |
 
-### imageId：The ID of the image associated with a search output <a name="parameter-imageId"></a> 
+### imageId：The ID of the image associated with a search output  {#parameter-imageId} 
 
 This ID is used to retrieve the image data generated as part of a
 search.
@@ -2218,7 +2218,7 @@ Example ID for an image generated by search output:
 1
 ```
 
-## Other Information <a name="other"></a>
+## Other Information  {#other}
 
 Search results are retained for 7 days.  
 (Refer to "Search result retention period" [「Request ID and BLAST

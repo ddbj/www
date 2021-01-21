@@ -22,7 +22,7 @@ Collaborative Meeting](#icm).
 The operations of DDBJ, ENA/EBI, NCBI and ICM subscribe to [advice from
 IAC](#policy).
 
-## Collaboration framework to construct International Nucleotide Sequence Database <a name="insd"></a>
+## Collaboration framework to construct International Nucleotide Sequence Database  {#insd}
 
 {: .float-left }
 From the beginning, 1980s, DDBJ has been functioning as one of the international nucleotide sequence databases, including
@@ -40,7 +40,7 @@ In 2010, databases at EBI were integrated to [ENA; European Nucleotide Archive](
 ![]({{ site.baseurl }}/assets/images/center/insdc_shoukai.gif "INSDC constitution")
 
 {: .float-release }
-## Members of INSDC <a name="member"></a>
+## Members of INSDC  {#member}
 
 <table>
     <thead>
@@ -81,21 +81,21 @@ In 2010, databases at EBI were integrated to [ENA; European Nucleotide Archive](
   </tbody>
 </table>
 
-## IAC; International Advisory Committee <a name="iac"></a> 
+## IAC; International Advisory Committee  {#iac} 
 
 International Advisory Committee consists of nine members, each of 3
 members selected from Europe, US, or Japan.The committee meeting to
 advice in fairness to maintenance and future plan of INSDC is held once
 a year.
 
-## ICM; International Collaborative Meeting <a name="icm"></a> 
+## ICM; International Collaborative Meeting  {#icm} 
 
 [International Collaborative Meeting](/activities/index-e.html)
 consists of working-level participants of INSDC and its fundamental
 principle is international collaboration. The meeting to discuss
 practical matters to maintain and update INSDC is held once a year.
 
-## Overview of International Nucleotide Sequence Databases Policies <a name="policy"></a> 
+## Overview of International Nucleotide Sequence Databases Policies  {#policy} 
 
 This brief policy statement, prepared by the International Advisory
 Committee to the International Nucleotide Sequence Databases (INSD;

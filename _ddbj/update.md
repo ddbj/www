@@ -103,7 +103,7 @@ related_pages:
 
 [登録データ種別](/documents/data-categories.html)をご確認ください。
 
-## DRA: DDBJ Sequece Read Archive, BioProject または BioSampleの場合 <a name="DRA__DDBJ_Sequece_Read_Archive,_BioProject_または_BioSampleの場合"></a>
+## DRA: DDBJ Sequece Read Archive, BioProject または BioSampleの場合  {#DRA__DDBJ_Sequece_Read_Archive,_BioProject_または_BioSampleの場合}
 
 <table>
   <tbody>
@@ -122,7 +122,7 @@ related_pages:
   </tbody> 
 </table>
 
-## GenBank, EMBL-Bank に相当する狭義の DDBJ の場合 <a name="GenBank,_EMBL-Bank_に相当する狭義の_DDBJ_の場合"></a>
+## GenBank, EMBL-Bank に相当する狭義の DDBJ の場合  {#GenBank,_EMBL-Bank_に相当する狭義の_DDBJ_の場合}
 
 依頼者について  
 : データを更新、あるいは、訂正等を加える場合、[登録者](/ddbj/submission.html#submitter)としてデータに登録されている方からご連絡ください。<br>依頼者が登録者に含まれていない場合、登録者から連絡し直していただく必要があります。

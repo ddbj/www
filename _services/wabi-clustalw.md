@@ -12,7 +12,7 @@ related_pages:
     url: /services/wabi-mafft.html
 ---
 
-## CLUSTALWのjobの投入 <a name="job"></a>
+## CLUSTALWのjobの投入  {#job}
 
 以下のパラメーターを POST します。  
 format, result は必須です。  
@@ -34,7 +34,7 @@ result に mail を指定した場合は address も必須となります。
 |  result  |  結果通知方法。<br />www, mailのいずれかが指定できます。<br />mail の場合、job 完了時に address に記述したメールアドレスに対して検索終了の通知が送信されます。<br />www の場合は何もしないので、POST 時に返された request ID を使って GET で job の状態を調べます。  |
 |  address  |  result で mail を指定した場合に検索終了の通知を受け取るメールアドレス。  |
 
-## CLUSTALWの結果の取得 <a name="result"></a>
+## CLUSTALWの結果の取得  {#result}
 
 | パラメーター                                | 説明                                                                                                                                                                                                            |
 | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -45,12 +45,12 @@ result に mail を指定した場合は address も必須となります。
 | GET clustalw/{id}?info=result\_guide2 | job が終わっていて -USETREE2を 指定しない profile alignment を実行した場合はガイドツリーファイル2を返します。 終わっていない・存在しない場合はエラーを返す。                                                                                                              |
 | GET clustalw/{id}?info=result\_pim    | job が終わっていて -TREE -PIM を実行した場合は percent identity matrix ファイルを返す。 終わっていない・存在しない場合はエラーを返す。                                                                                                                      |
 
-## サンプルスクリプト <a name="sample"></a>
+## サンプルスクリプト  {#sample}
 
 clustalw-client.pl
 <script src="//gist.github.com/ddbj-repo/e317ec4fa1ea3bf42594334f8264f241.js"></script>
 
-### 例1：複数配列のmultiple alignment<a name="sample1"></a>
+### 例1：複数配列のmultiple alignment {#sample1}
 
 conf.json
 
@@ -178,7 +178,7 @@ bprc_D521_0984      DDDRKTLVVWMLSGGK
       
 ```
 
-### 例2：ガイドツリーを使ったmultiple alignmentの再実行 <a name="sample2"></a>
+### 例2：ガイドツリーを使ったmultiple alignmentの再実行  {#sample2}
 
 conf.json
 
@@ -271,7 +271,7 @@ $ clustalw2 -INFILE=cyc_aa.fasta -USETREE=wabi_clustalw_2013-0827-1814-55-821-64
       
 ```
 
-### 例3：整列済みデータへの新規配列の追加（profile alignment）<a name="sample3"></a>
+### 例3：整列済みデータへの新規配列の追加（profile alignment） {#sample3}
 
 cyc\_aa2.fasta
 
@@ -398,7 +398,7 @@ $ clustalw2 -PROFILE1=wabi_clustalw_2013-0827-1814-55-821-640340.txt -PROFILE2=c
       
 ```
 
-### 例4：2つの整列済みデータの統合（profile alignment） <a name="sample4"></a>
+### 例4：2つの整列済みデータの統合（profile alignment）  {#sample4}
 
 conf.json
 
@@ -536,7 +536,7 @@ reh_H16_A3571       QPQIPDSDVQAMVGWILEAK--
       
 ```
 
-### 例５：系統樹の作成 <a name="sample5"></a>
+### 例５：系統樹の作成  {#sample5}
 
 conf.json
 
@@ -610,7 +610,7 @@ $ clustalw2 -INFILE=wabi_clustalw_2013-0828-1452-47-561-627715.txt -TREE -PIM -O
       
 ```
 
-### 例6：ブートストラップ法による系統樹評価 <a name="sample6"></a>
+### 例6：ブートストラップ法による系統樹評価  {#sample6}
 
 conf.json
 
@@ -666,7 +666,7 @@ $ clustalw2 -INFILE=wabi_clustalw_2013-0828-1452-47-561-627715.txt -BOOTSTRAP=10
       
 ```
 
-### 例7：配列ファイルのフォーマット変換 <a name="sample7"></a>
+### 例7：配列ファイルのフォーマット変換  {#sample7}
 
 conf.json
 
@@ -763,7 +763,7 @@ $ clustalw2 -INFILE=wabi_clustalw_2013-0828-1452-47-561-627715.txt -CONVERT -OUT
       
 ```
 
-### 例8：custom weight matrixを使用したmultiple alignment <a name="sample8"></a>
+### 例8：custom weight matrixを使用したmultiple alignment  {#sample8}
 
 conf.json
 

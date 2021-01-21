@@ -24,7 +24,7 @@ related_pages:
     url: /services/wabi-blast-e.html
 ---
 
-## PROGRAM <a name="program"></a>
+## PROGRAM  {#program}
 
 Specify the search program from the followings.
 
@@ -37,7 +37,7 @@ Specify the search program from the followings.
  | blastp | amino acid | amino acid | Aligning your amino acid sequence with amino acid seque nce database. |
  | blastx | nucleotide | amino acid | Aligning your nucleotide sequence with amino acid sequence database by translating your sequence taking into account all six possible open reading frames. |
 
-## Query name, Query sequence <a name="query"></a>
+## Query name, Query sequence  {#query}
 
   - Please input your sequence(s) in FASTA format.
 
@@ -87,12 +87,12 @@ lengths.
 </div>
 
 
-## Data Sets <a name="data sets"></a>
+## Data Sets  {#data sets}
 
 
-### Nucleotide (DATABASE, DIVISION) <a name="nucleotide"></a>
+### Nucleotide (DATABASE, DIVISION)  {#nucleotide}
 
-#### DATABASE (Nucleotide) <a name="DATABASE_Nucleotide"></a>
+#### DATABASE (Nucleotide)  {#DATABASE_Nucleotide}
 
 Select the target database.
 
@@ -103,7 +103,7 @@ Select the target database.
 | 16S rRNA | 16S rRNA from DDBJ periodical release |
 | RefSeq NA | RefSeq (Genomics + RNA) |
 
-#### DIVISION (DDBJ ALL/DDBJ New) <a name="DIVISION_DDBJ_ALL/DDBJ_New"></a>
+#### DIVISION (DDBJ ALL/DDBJ New)  {#DIVISION_DDBJ_ALL/DDBJ_New}
 
 Check the divisions you would like to search. The following divisions
 are currently available. Default selection is 10 divisions of standard
@@ -168,7 +168,7 @@ specified each other.
 |  STS  |  STS  |  sequence tagged sites  |
 
 
-#### Database Options (RefSeq) <a name="Database_Options_RefSeq"></a>
+#### Database Options (RefSeq)  {#Database_Options_RefSeq}
 
 | Release（genomic/RNA) |    |
 | ---- | ---- |
@@ -198,9 +198,9 @@ specified each other.
 |  R. norvegicus  |  rat  |
 |  X. tropicalis  |  western clawed frog  |
 
-### Protein (amino acid) <a name="protein"></a>
+### Protein (amino acid)  {#protein}
 
-#### DATABASE (protein) <a name="DATABASE_protein"></a>
+#### DATABASE (protein)  {#DATABASE_protein}
 
 |  Proterin Databases |    |
 | ---- | ---- |
@@ -216,7 +216,7 @@ specified each other.
 <span class="red">*</span> Please check the current version is from [here.](/latest-releases-e.html)
 
 
-#### DIVISION(DAD) <a name="DIVISIONDAD"></a>
+#### DIVISION(DAD)  {#DIVISIONDAD}
 
 Check the divisions you would like to search. The following divisions
 are currently available. Defauls selection is 10 divisions of standard
@@ -277,7 +277,7 @@ submitted-number's statistics can be specified each other.
 |  GSS  |  GSS  |  genome survey sequences  |
 |  STS  |  STS  |  sequence tagged sites  |
 
-#### DATABASE option (RefSeq) <a name="DATABASE_option_RefSeq"></a>
+#### DATABASE option (RefSeq)  {#DATABASE_option_RefSeq}
 
 |  Release（Protein) |    |
 | ---- | ---- |
@@ -308,10 +308,10 @@ submitted-number's statistics can be specified each other.
 |  X. tropicalis  |  western clawed frog  |
 
 
-## Optional Parameters <a name="parameters"></a>
+## Optional Parameters  {#parameters}
 
 
-### SCORES <a name="scores"></a>
+### SCORES  {#scores}
 
 Specify how many homologous sequences are reported in list of homology
 scores. Default value is 100.  
@@ -319,7 +319,7 @@ When you can not find some expected data in the result of BLAST search,
 it is possibly improved by using larger value for this parameter.
 
 
-### ALIGNMENTS <a name="alignments"></a>
+### ALIGNMENTS  {#alignments}
 
 Specify how many alignments with homologous sequences are reported.  
 Default value is 100.  
@@ -327,7 +327,7 @@ When you can not find some expected data in the result of BLAST search,
 it is possibly improved by using larger value for this parameter.
 
 
-### EXPECT value (E-value) <a name="expect value"></a>
+### EXPECT value (E-value)  {#expect value}
 
 Specify the E-value of homologous sequences in the database. Default
 value is 10. If you need to get more sequences with lower homology
@@ -336,7 +336,7 @@ high homology scores, decrease the value.
 It is possible to specify it by the exponent notation. (ex: 1.0E+1)
 
 
-### SCORING MATRIX <a name="scoring matrix"></a>
+### SCORING MATRIX  {#scoring matrix}
 
 Specify the scoring matrix table for blastx, blastp and tblastn and
 tblastx.  
@@ -353,7 +353,7 @@ The default matrix is BLOSUM62.
 
 
 
-### FILTER <a name="filter"></a>
+### FILTER  {#filter}
 
 Specify to preform filtering (masking) of the query sequence. Default
 setting of this option is "ON" (filtering is set). By using filtering,
@@ -369,17 +369,17 @@ compositional complexity regions ignored by filtering are replaced by
 "N"s in the nucleotide sequence and by "X"s in the amino acid sequence.
 
 
-### WORD SIZE <a name="word size"></a>
+### WORD SIZE  {#word size}
 
 Specify a natural number. Default values are 28 for megablast, 11 for
 blastn, and 3 for the other programs.
 
 
 
-## Request ID and BLAST result <a name="result"></a>
+## Request ID and BLAST result  {#result}
 
 
-### Request ID <a name="request id"></a>
+### Request ID  {#request id}
 
 After pressing the "Send to BLAST" button, Request ID is displayed on
 the web screen. Don't loose this ID because it is necessary for using
@@ -391,14 +391,14 @@ Request ID:wabi_blast_2013-0314-1407-23-16-946732
 
 
 
-### Information contained in the result screen <a name="result screen"></a>
+### Information contained in the result screen  {#result screen}
 
 ![]({{ site.baseurl }}/assets/images/help/blast_help_02-e.gif
 "Information contained in the result screen")
 
 
 
-### View the flatfile of the entries <a name="view flatfile"></a>
+### View the flatfile of the entries  {#view flatfile}
 
 Select the accession numbers, and prres the "getentry"button. You can
 view the flatfile of the sequences in the getentry.
@@ -407,7 +407,7 @@ view the flatfile of the sequences in the getentry.
 
 
 
-### Result Viewer <a name="result viewer"></a>
+### Result Viewer  {#result viewer}
 
 You can view your result using "Request ID" at any time (within the
 retention period).  
@@ -416,7 +416,7 @@ The results will be deleted after 7 days.
 ![]({{ site.baseurl }}/assets/images/help/blast_help_04-e.gif "Result Viewer")
 
 
-## ClustalW Set up <a name="setup"></a>
+## ClustalW Set up  {#setup}
 
 Select the sequences which you would like to suceed the clustalW, then
 press the "ClustalW" button. Your selected sequences are automatically
@@ -425,9 +425,9 @@ pasted in the ClustalW query box.
 1. ![ClustalW Set up（１）]({{ site.baseurl }}/assets/images/help/blast_help_05-e.gif)
 2. ![ClustalW Set up（2）]({{ site.baseurl }}/assets/images/help/blast_help_06-e.gif)
 
-## Reference <a name="reference"></a>
+## Reference  {#reference}
 
-### Original Articles <a name="original_articles"></a>
+### Original Articles  {#original_articles}
 
   - Altschul SF, Madden TL, Schaffer AA, Zhang J, Zhang Z, Miller W,
     Lipman DJ. (1997) [Gapped BLAST and PSI-BLAST: a new generation of
@@ -435,7 +435,7 @@ pasted in the ClustalW query box.
     programs.](//nar.oxfordjournals.org/content/25/17/3389.short)
     Nucleic Acids Res. 25(17):3389-3402.
 
-### Related Articles <a name="related_articles"></a>
+### Related Articles  {#related_articles}
 
   - Zhang J, Madden TL. (1997) [PowerBLAST: A New Network BLAST
     Application for Interactive or Automated Sequence Analysis and
@@ -454,6 +454,6 @@ pasted in the ClustalW query box.
     schemes.](//www.pnas.org/content/87/6/2264.short) Proc Natl Acad Sci
     U S A. 87(6):2264-2268.
 
-### BOOK <a name="#reference_list"></a>
+### BOOK  {##reference_list}
 
   - [BLAST] Ian Korf, Mark Yandell and Joseph Bedell, OREILLY

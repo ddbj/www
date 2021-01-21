@@ -111,7 +111,7 @@ related_pages:
     url: /ddbj/validator.html
 ---
 
-## MSS 利用 申し込みの流れ <a name="flow"></a>
+## MSS 利用 申し込みの流れ  {#flow}
 
 {: .flow .flow_ja }
 - MSS 利用 申し込み
@@ -124,7 +124,7 @@ related_pages:
   - メールが届かない場合は[「お問い合わせ」](/contact-ddbj.html#to-ddbj)の「Mass Submission System(MSS)」からご連絡下さい。
   - [DDBJ からのメールを迷惑メールとしないように設定](/precautions.html)をお願いいたします。
 
-## MSS 利用 申し込みフォーム <a name="MSS_利用_申し込みフォーム"></a>
+## MSS 利用 申し込みフォーム  {#MSS_利用_申し込みフォーム}
 
 ※
 [フォームが表示されない場合は？](/faq/ja/index.html#mss-application-form-not-displayed)

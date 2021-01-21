@@ -40,7 +40,7 @@ tab_menu:
 lang: ja
 ---
 
-## 共同研究プロジェクトデータの取り扱い <a name="project"></a>
+## 共同研究プロジェクトデータの取り扱い  {#project}
 
 ここでは共同研究プロジェクトに由来するデータを [DDBJ Sequence Read Archive (DRA)]({{ site.baseurl }}/dra/index.html) サーバを介して，
 
@@ -51,13 +51,13 @@ lang: ja
 
 DRA へのデータ登録方法については [DRA Handbook]({{ site.baseurl }}/dra/submission.html) をご覧ください。
 
-## データ転送の準備 <a name="transfer"></a>
+## データ転送の準備  {#transfer}
 
-### D-way アカウントの取得・連絡 <a name="create-dway-account"></a>
+### D-way アカウントの取得・連絡  {#create-dway-account}
 
 [アカウント Handbook]({{ site.baseurl }}/account.html) に従い DDBJ データ登録システムである D-way のアカウントを取得します。
 
-### 転送用ディレクトリ <a name="directory-for-transfer"></a>
+### 転送用ディレクトリ  {#directory-for-transfer}
 
 [DRA に転送用ディレクトリの作成を依頼します]({{ site.baseurl }}/contact-ddbj.html)。DRA チームは依頼に基づき DRA データ受付サーバに転送用ディレクトリ "transfer" を作成し，依頼者に連絡します。
 
@@ -74,17 +74,17 @@ DRA へのデータ登録方法については [DRA Handbook]({{ site.baseurl }}
 適宜，center_s を送り手側のアカウント，lab_a を登録者のアカウント，project_X
 を関係するプロジェクト名に読み替えてください。 シークエンス拠点，共同研究者やプロジェクトが増えた場合は DRA に連絡し，転送用ディレクトリの追加を依頼します。
 
-## 送り手側での操作 <a name="sender"></a>
+## 送り手側での操作  {#sender}
 
-### データの作成・アップロード <a name="create-data-upload"></a>
+### データの作成・アップロード  {#create-data-upload}
 
 送り手側であるシークエンス拠点 S が [DRA Handbook]({{ site.baseurl }}/dra/submission.html) 中の FTP クライアント，もしくは，コマンドで操作します。
 
-#### ランデータ <a name="ランデータ"></a>
+#### ランデータ  {#ランデータ}
 
 データ受付サーバにログインし transfer/project_X/lab_a にランデータをアップロードします。
 
-#### メタデータ <a name="メタデータ"></a>
+#### メタデータ  {#メタデータ}
 
 D-way で DRA 新規登録を作成し，Save XML で XML ファイルとして保存します。新規登録は Submit しなければ使いまわすことができます。
 
@@ -96,9 +96,9 @@ D-way で DRA 新規登録を作成し，Save XML で XML ファイルとして�
 
 シークエンス拠点で多数のメタデータを DRA サーバ上で作成・管理したい場合は，メタデータ作成専用アカウントを DRA で発行します。
 
-## 受け手側での操作 <a name="receiver"></a>
+## 受け手側での操作  {#receiver}
 
-### D-wayでの新規登録作成 <a name="create-new-submission"></a>
+### D-wayでの新規登録作成  {#create-new-submission}
 
 DRA ウェブサイトから共同研究者の [D-way](https://ddbj.nig.ac.jp/D-way/) アカウントにログインします。
 
@@ -106,11 +106,11 @@ DRA ウェブサイトから共同研究者の [D-way](https://ddbj.nig.ac.jp/D-
 を作成します。対応する登録用ディレクトリ
 (submission/lab_a/lab_a-0001) が受付サーバの登録者用ディレクトリに作成されます。
 
-### データのコピー・取得 <a name="upload-download"></a>
+### データのコピー・取得  {#upload-download}
 
 [DRA Handbook]({{ site.baseurl }}/dra/submission.html) に従い，transfer 以下に作成された受渡し用ディレクトリに送り手はデータをアップロードします。受け手はデータをダウンロードします。
 
-### メタデータの読み込み・作成 <a name="create-metadata"></a>
+### メタデータの読み込み・作成  {#create-metadata}
 
 [D-way にログイン](https://ddbj.nig.ac.jp/D-way/)，対応する submission
 (lab_a-0001) を選択した後，メタデータ作成ツールを起動します。 PC に保存した XML ファイル (例 Run.xml) に対応するオブジェクトタブ (例 Run) 中の [Load XML] をクリックし，ファイルをロードします。
@@ -119,27 +119,27 @@ XML ファイルの内容が読み込まれます。ロードしたアカウン�
 を自動的に上書きします。他の XML ファイルも同様に読み込み，情報を追加します。メタデータを完成させ
 DRA に登録します。
 
-## 共同研究プロジェクトのメタデータ <a name="metadata"></a>
+## 共同研究プロジェクトのメタデータ  {#metadata}
 
-#### Center Name (Submission，Study，Sample，Experiment，Run，Analysis) <a name="Center_Name_Submission，Study，Sample，Experiment，Run，Analysis"></a>
+#### Center Name (Submission，Study，Sample，Experiment，Run，Analysis)  {#Center_Name_Submission，Study，Sample，Experiment，Run，Analysis}
 
 Submission，Study，Sample，Experiment，Run，Analysis それぞれについて責任を負う組織の Center Name を記入します。
 
 Center Name が空の XML ファイルをメタデータ作成ツールで読み込むと D-way アカウントの Center Name が自動的に入力されます。シークエンス拠点側で Center Name を空にした XML ファイルを作成し登録者に渡すと，登録者側で Center Name を書き換える手間を省くことができます。
 
-#### Contact (Submission) <a name="Contact_Submission"></a>
+#### Contact (Submission)  {#Contact_Submission}
 
 Submission に関する連絡 (公開，更新，内容に関する第三者からの問い合わせ) に応じる人の名前とメールアドレスを列挙します。
 
-#### Project ID (Study) <a name="Project_ID_Study"></a>
+#### Project ID (Study)  {#Project_ID_Study}
 
 研究グループレベルでのプロジェクトに対して Project ID を D-way から申請，取得します。大型の研究プロジェクトに対しては DDBJ が独自に ID を付与します。
 
-#### Center Project Name (Study) <a name="Center_Project_Name_Study"></a>
+#### Center Project Name (Study)  {#Center_Project_Name_Study}
 
 各研究グループで独自のプロジェクト名を付けます。
 
-#### URL Link (Study) <a name="URL_Link_Study"></a>
+#### URL Link (Study)  {#URL_Link_Study}
 
 共同研究プロジェクトのウェブサイトを記入します。
 
@@ -147,7 +147,7 @@ Submission に関する連絡 (公開，更新，内容に関する第三者か�
 Label = MEXT Genome Support Project  
 URL = http://www.genome-sci.jp/
 
-#### Study Attribute (Study) <a name="Study_Attribute_Study"></a>
+#### Study Attribute (Study)  {#Study_Attribute_Study}
 
 共同研究プロジェクトで統一されたキーワードを付与します。キーワードによりプロジェクト単位でのレコード検索が可能になります。
 
@@ -155,10 +155,10 @@ URL = http://www.genome-sci.jp/
 Tag = grant  
 Value = KAKENHI on Innovative Areas - Genome Support Project
 
-#### Run Center (Run) <a name="Run_Center_Run"></a>
+#### Run Center (Run)  {#Run_Center_Run}
 
 ランを実行したシークエンス拠点の Center Name を記入します。
 
-#### Analysis Center (Analysis) <a name="Analysis_Center_Analysis"></a>
+#### Analysis Center (Analysis)  {#Analysis_Center_Analysis}
 
 解析を実行した組織の Center Name を記入します。
