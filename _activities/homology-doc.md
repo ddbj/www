@@ -36,8 +36,8 @@ NCBIでは、BLASTというFASTAのほぼ50倍速い、ホモロジー検索サ�
 
 さて、BLASTは、Basic Local Alignment Search Toolの略で、NCBIにはBLASTのコーディングをしたWarren Gishがいます。以下のFASTAとBLASTの違いの話は彼に聞いた話です。
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 <span class="red">（註）</span>現在、遺伝研（DDBJ）では、FASTA のサービスは Web、E-mail では提供しておりません（[検索・解析サービスの一部終了のお知らせ](/news/ja/2010-02-03_2.html)）。FASTA をご利用の場合には、[遺伝研スーパーコンピュータシステム](https://sc.ddbj.nig.ac.jp/ja)をご利用ください。
 </div>
 

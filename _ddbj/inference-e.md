@@ -115,7 +115,7 @@ machine-readable.
   - The following table presents recommended acronyms for commonly cited resources
 
 | Name of data resource/tool                                              | Recommended acronym |
-| ----------------------------------------------------------------------- | ------------------- |
+|---|
 | International Nucleotide Sequence Database                              | INSD                |
 | NCBI Reference Sequence Database                                        | RefSeq              |
 | UniProt Knowledgebase                                                   | UniProtKB           |

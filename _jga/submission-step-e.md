@@ -53,31 +53,31 @@ Create a data submitter group before application. In the example group "subgrp1"
 
 In the NBDC application system, an account who actually submits an application will automatically become an applicant. If there are submitters other than PI and applicant, include all submitters as members. Emails regarding the submission are sent to members.
       
-{::nomarkdown}
+
 {% include image.html url="books/DS-group-e.png" caption="Data submitter group" class="w400" %}
-{:/}
+
 
 [Start the data submission application process](https://humandbs.biosciencedbc.jp/data-submission) and select the data submitter group.
 
-{::nomarkdown}
-{% include image.html url="books/DS-start-e.png" caption="Start data submission application process" class="w450" %}
-{:/}
 
-{::nomarkdown}
+{% include image.html url="books/DS-start-e.png" caption="Start data submission application process" class="w450" %}
+
+
+
 {% include image.html url="books/DS-group-select-e.png" caption="Select the data submitter group" class="w450" %}
-{:/}
+
 
 ## Data submission application approval {#du-approval}
 
 After the application is approved by NBDC, a JGA submission ID (for example, JSUB000353) is issued and a corresponding directory for data upload is created in the JGA server.
 
-{::nomarkdown}
-{% include image.html url="books/DS-approved-e.png" caption="Approval of data submission application" class="w450" %}
-{:/}
 
-{::nomarkdown}
+{% include image.html url="books/DS-approved-e.png" caption="Approval of data submission application" class="w450" %}
+
+
+
 {% include image.html url="books/DS-JSUB-e.png" caption="Data submission application and JGA submission ID" class="w250" %}
-{:/}
+
 
 A JGA submission directory is created in "/controlled-access/submission/jga/" of the JGA file server (jga-gw.ddbj.nig.ac.jp), upload metadata and data files to this directory by scp. In this example, the upload directory is "/controlled-access/submission/jga/JSUB000353/".
 
@@ -87,17 +87,17 @@ A JGA submission directory is created in "/controlled-access/submission/jga/" of
 
 Download the excel for metadata description below and enter metadata in English. Regarding metadata, see [this page](/jga/submission.html).
 
-[![JGA metadata excel]({{ site.baseurl }}/assets/images/parts/download.png "JGA metadata excel"){:.w40}]({{ site.baseurl }}/assets/files/submission/JGA_metadata.xlsx)
+[![JGA metadata excel](/assets/images/parts/download.png "JGA metadata excel"){:.w40}](/assets/files/submission/JGA_metadata.xlsx)
 
 last updated: 2020-09-26
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 Data files to be uploaded to JGA should not have spaces in their filenames.
 </div>
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 All datasets in a JGA submission are distributed at the same time. Do NOT include datasets to be distributed at different time in a submission.
 </div>
 
@@ -107,8 +107,8 @@ All datasets in a JGA submission are distributed at the same time. Do NOT includ
 
 ### Upload excel {#upload-excel}
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 To upload files to the JGA server by scp, you need to [register a center name and a public key to your D-way account](/account-e.html#enable-dra-submission-in-account). Access to the JGA server is restricted by IP addresses. Inform your IP address of your connecting source to NBDC in application form.
 </div>
 
@@ -148,8 +148,8 @@ The JGA submission system discriminates archive and compression formats by the e
 
 Submit individual-level next-generation sequencing data such as fastq and bam files to Data. And submit microarray data, variant analysis data and documents such as questionnaires to Analysis.        
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 For reproducibility, it is important to submit processed data from which conclusion of associated paper is derived. Please submit processed data files such as VCF to Analysis.
 </div>
 

@@ -39,7 +39,7 @@ AGD で発行される管理用 ID は論文で引用することはできませ
 </div>
 
 | プレフィックス | メタデータオブジェクト | 数字の桁数 | 例                 |
-| ------- | ----------- | ----- | ----------------- |
+|---|
 | AGD\_   | Submission  | 11    | AGD\_00000000001  |
 | AGDS\_  | Study       | 11    | AGDS\_00000000001 |
 | AGDN\_  | Sample      | 11    | AGDN\_00000000001 |
@@ -134,20 +134,20 @@ AGD データモデルは [Sequence Read Archive](/dra/submission.html) のモ�
 
 AGD XML schema: [AGD xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-{::nomarkdown}
-{% include image.html url="submission/jga_metadata_1.jpg" caption="単一の Policy が適用されている例" class="w500" %}
-{:/}
 
-{::nomarkdown}
+{% include image.html url="submission/jga_metadata_1.jpg" caption="単一の Policy が適用されている例" class="w500" %}
+
+
+
 {% include image.html url="submission/jga_metadata_2.jpg" caption="Control と Case で Policy が異なる例" class="w500" %}
-{:/}
+
 
 ### 公開される項目  {#public}
 
 AGD メタデータのうち以下のオブジェクトは登録の概要を示すため，データの制限共有開始後に公開されます。
 
-{::options parse_block_html="true" /}
-<div class="dl-list">
+
+<div class="dl-list" markdown="1">
 
 Submission: 
 : 登録者の連絡先以外の全ての内容
@@ -217,13 +217,13 @@ XML schema: [AGD.policy.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
 集計されたデータ，もしくは，Experiment-Data に格納するのが適切ではないデータを登録する場合は Sample-Experiment-Data ではなく Sample-Analysis セットでデータを登録することができます。
 
-{::nomarkdown}
-{% include image.html url="submission/sample-analysis.jpg" caption="Sample に１対１対応する Analysis データ登録" class="w500" %}
-{:/}
 
-{::nomarkdown}
+{% include image.html url="submission/sample-analysis.jpg" caption="Sample に１対１対応する Analysis データ登録" class="w500" %}
+
+
+
 {% include image.html url="submission/samples-analysis.jpg" caption="Sample を集計した Analysis データ登録" class="w500" %}
-{:/}
+
 
 Sample-Analysis セットでデータ登録をする場合は [JGA チームに連絡](/contact-ddbj.html)します。
 

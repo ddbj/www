@@ -116,7 +116,7 @@ UME (Utilities for MSS file Error check) is a stand-alone tool to check syntax a
 ## Basic function  {#function}
 
 | Name                          | Functions                                                                                                                                                                               |
-| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|---|
 | [Parser](#validation-2)       | Verification of the syntax and format for [Sequence file](/ddbj/file-format-e.html#sequence) and [Annotation file](/ddbj/file-format-e.html#annotation).                                |
 | [transChecker](#validation-3) | Validation of the amino acid translation for [CDS (protein-coding sequence)](/ddbj/cds-e.html) feature.                                                                                 |
 | [FFconv](#validation-4)       | Making simulated format of [DDBJ flat file](/ddbj/flat-file-e.html) from [Sequence file](/ddbj/file-format-e.html#sequence) and [Annotation file](/ddbj/file-format-e.html#annotation). |
@@ -154,7 +154,7 @@ $ cd UME    # Move to directory that you have expanded UME package.
 $ ./UME.sh
 ```
 
-![]({{ site.baseurl }}/assets/images/ddbj/UME1-e.png "Starting UME")
+<img src="/assets/images/ddbj/UME1-e.png" alt="Starting UME" title="" class="">
 
 lib folder  
 : Directory which includes library files used by UME. If you move this directory or any file in it, UME would not properly work.
@@ -173,7 +173,7 @@ license file
 
 ### Initial setting of UME  {#initial-2}
 
-At the first time, you run UME application, change the maximum size of RAM for UME to optimize run-time environments. The default configuration of it is 512 Mbytes. [![]({{ site.baseurl }}/assets/images/ddbj/UME2.png)]({{ site.baseurl }}/assets/images/ddbj/UME2.png)
+At the first time, you run UME application, change the maximum size of RAM for UME to optimize run-time environments. The default configuration of it is 512 Mbytes. [![](/assets/images/ddbj/UME2.png)](/assets/images/ddbj/UME2.png)
 
 1. Click Config in menu bar.
 2. Select the appropriate size of Max memory for runtime from pull-down menu.
@@ -184,7 +184,7 @@ At the first time, you run UME application, change the maximum size of RAM for U
 
 You can move to this panel by clicking the Check tab enclosed in the red square.
 
-![]({{ site.baseurl }}/assets/images/ddbj/UME3.png "Check panel: basic verification of submission files")
+<img src="/assets/images/ddbj/UME3.png" alt="Check panel: basic verification of submission files" title="" class="">
 
 1. Specify the subjects, both [Annotation file](/ddbj/file-format-e.html#annotation) and [Sequence file](/ddbj/file-format-e.html#sequence).
 2. By clicking Execute button, verify the files specified at step (1) by Parser.
@@ -196,7 +196,7 @@ You can move to this panel by clicking the Check tab enclosed in the red square.
 
 Execute Parser through the following steps.
 
-![]({{ site.baseurl }}/assets/images/ddbj/UME5.png "Parser: verification of syntax and format"){:.w600}
+<img src="/assets/images/ddbj/UME5.png" alt="Parser: verification of syntax and format" title="" class="w600">
 
 Click Check tab and move to Check panel.
 
@@ -209,8 +209,8 @@ Click Check tab and move to Check panel.
 7. By clicking Save button, the contents of (6) are saved as a text file.
 8. By clicking Close button, the window, Parser result, is closed.
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 
 When an error occurs, the parser outputs an error message.  
 Please reffer: [Parser Error Eessages](/ddbj/validator-e.html#parser), in detail.
@@ -225,7 +225,7 @@ Before using transChecker, both two files should be checked by [Parser](#validat
 Please note that when some Parser error is found, transChecker is terminated without any result. Execute transChecker through the
 following steps.
 
-![]({{ site.baseurl }}/assets/images/ddbj/UME6.png "transChecker"){:.w600}
+<img src="/assets/images/ddbj/UME6.png" alt="transChecker" title="" class="w600">
 
 Click Check tab to move to Check panel.
 
@@ -246,8 +246,8 @@ You can specify the format for translated amino acid sequences from following tw
 10. By clicking Save button, the contents of (9) are saved as a text file.
 11. By clicking Close button, the window, transChecker result, is closed.
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 
 When an error occurs, the transChecker outputs an error message.  
 Please reffer: [transChecker Error Eessages](/ddbj/validator-e.html#transchecker), in detail.
@@ -262,7 +262,7 @@ Before using FFconv, both two files should be checked by , and remove all of Par
 
 Execute FFconv through the following steps.
 
-![]({{ site.baseurl }}/assets/images/ddbj/UME7.png "FFconv"){:.w600}
+<img src="/assets/images/ddbj/UME7.png" alt="FFconv" title="" class="w600">
 
 Click Check tab to move to Check panel.
 
@@ -283,7 +283,7 @@ Click Check tab to move to Check panel.
 
 You can move to this panel by clicking the Contig tab enclosed in the red square.
 
-![]({{ site.baseurl }}/assets/images/ddbj/UME4.png "Verification of contig submission files")
+<img src="/assets/images/ddbj/UME4.png" alt="Verification of contig submission files" title="" class="">
 
 1. Specify the subject, [Annotation file](/ddbj/file-format-e.html#annotation).
 2. Specify the subject, [AGP file](/ddbj/file-format-e.html#agp).
@@ -295,7 +295,7 @@ You can move to this panel by clicking the Contig tab enclosed in the red square
 
 Basically, AGPParser checks the format of [AGP file](/ddbj/file-format-e.html#agp).AGP file. When you specify [Annotation file](/ddbj/file-format-e.html#annotation) and/or multi-fasta file including all of sequences cited by AGP file, AGPParser also checks the consistency between the two or three files.
 
-![]({{ site.baseurl }}/assets/images/ddbj/UME8.png "Executing AGPParser"){:.w600}
+<img src="/assets/images/ddbj/UME8.png" alt="Executing AGPParser" title="" class="w600">
 
 Click Contig tab to move to Contig pannel.
 
@@ -311,8 +311,8 @@ Click Contig tab to move to Contig pannel.
 10. By clicking Save button, the contents of (9) are saved as a text file.
 11. By clicking Close button, the window of AGPParser log is closed.
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 
 When an error occurs, the AGPParser outputs an error message.  
 Please reffer: [AGPParser Error Eessages](/ddbj/validator-e.html#agpparser), in detail.

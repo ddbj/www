@@ -239,8 +239,8 @@ $ jParser.sh -xsample.ann -ssample.fasta
 \-s[<span class="font-br font-normal">塩基配列ファイル名</span>\]  
 : このオプションは必須です。指定されていない場合、本ツールは終了します。 塩基配列ファイルは、全登録データの配列をFASTA形式で記述したテキストファイルです。 書式の詳細に関しては、[登録ファイル形式：配列ファイル](/ddbj/file-format.html#sequence)をご参照下さい。
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 
 Parser は、エラーが発生している場合は、エラーメッセージを出力します。  
 エラーメッセージの意味は [Parser エラーメッセージ](/ddbj/validator.html#parser) をご覧ください。

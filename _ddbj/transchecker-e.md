@@ -204,8 +204,8 @@ exit $RETVAL
 
 Execute transChecker.sh by the command below;
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 $ transChecker.sh\[space\]-x\[annotation file name\]\[space\]-s\[nucleotide sequence file name\]\[space\]-e\[executed log file name\]\[space\]-o\[amino acid sequence file name\]\[space\]-t\[file name for alignments of nucleotide and amino acid sequences\]
 </div>
 
@@ -313,8 +313,8 @@ ENT01.1 <1..179
 //
 ```
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 When an error occurs, the transChecker outputs an error message.  
 Please reffer: [transChecker Error Messages](/ddbj/validator-e.html#transchecker), in detail.
 </div>

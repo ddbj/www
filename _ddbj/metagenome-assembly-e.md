@@ -120,9 +120,9 @@ the BioProject/BioSample/DRA/DDBJ. Raw sequencing data deposition to DRA is not 
 
 ## Submission of metagenome assembly data  {#mag-submission}
 
-{::nomarkdown}
+
 {% include image.html url="submission/mag.jpg" caption="Submission of metagenome assembly data" class="w600" %}
-{:/}
+
 
 ### 1\) Raw reads (Run)  {#raw-reads}
 

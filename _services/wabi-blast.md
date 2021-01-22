@@ -42,7 +42,7 @@ BLAST の検索ジョブは、まず実行待ちのキューに登録されま�
 WABI の検索ジョブは、次のように状態が遷移して行きます。
 
 | ジョブの状態を示す値  | 説明                                                         |
-| ----------- | ---------------------------------------------------------- |
+|---|
 | `waiting`   | ジョブがキューに登録されていますが、まだ実行が開始されていない状態です。                       |
 | `running`   | ジョブが実行中の状態です。                                              |
 | `finished`  | ジョブの実行が既に完了している状態です。                                       |
@@ -149,12 +149,12 @@ WABI の BLAST検索ジョブ は、 BLAST検索結果を元にしてグラフ�
 
 画像例:
 
-[![Detail view_6_1]({{ site.baseurl }}/assets/images/help/wabi_blast_imagedata.png){:.w500}]({{ site.baseurl }}/assets/images/help/wabi_blast_imagedata.png ){:.group1}
+[![Detail view_6_1](/assets/images/help/wabi_blast_imagedata.png){:.w500}](/assets/images/help/wabi_blast_imagedata.png ){:.group1}
 
 ## WABI BLAST の使用例  {#usage_example}
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
 <h3 class="toggle-content-btn"><a href="javascript:void(0)">Javaの使用例</a></h3>
 <div class="accordion-content">#### コード例
 
@@ -225,8 +225,8 @@ pom.xml
 </div>
 </div>
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
   <h3 class="toggle-content-btn"><a href="javascript:void(0)">Perlの使用例</a></h3>
 <div class="accordion-content">#### コード例
 
@@ -282,8 +282,8 @@ blast_condition.txt
 </div>
 </div>
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
   <h3 class="toggle-content-btn"><a href="javascript:void(0)">Ruby の使用例</a></h3>
 <div class="accordion-content">#### コード例
 
@@ -637,8 +637,8 @@ HTTP ステータス 400
 17    }
 ```
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">利用例</a></h4>
 <div class="accordion-content">Java で SpringFramework の RESTクライアント を使う場合:
     <script src="https://gist.github.com/ddbj-repo/ec96049ec11c1d22303d9fcdea9f70cd.js"></script>
@@ -759,7 +759,7 @@ HTTP ステータス 400
 入力値の例
 
 | HTTP パラメーター | 入力値        |
-| ----------- | ---------- |
+|---|
 | `format`    | `"json"`   |
 | `result`    | `"www"`    |
 | `info`      | `"status"` |
@@ -816,8 +816,8 @@ HTTP ステータス 400
 13}
 ```
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">利用例</a></h4>
 <div class="accordion-content">Java で SpringFramework の RESTクライアント を使う場合:
    <script src="https://gist.github.com/ddbj-repo/4a1ea26e46bebac37cf595eae77e384a.js"></script>
@@ -931,7 +931,7 @@ HTTP ステータス 400
 入力値の例
 
 | HTTP パラメーター | 入力値             |
-| ----------- | --------------- |
+|---|
 | `format`    | `"requestfile"` |
 | `info`      | `"request"`     |
 
@@ -969,8 +969,8 @@ HTTP ステータス 404
 12}
 ```
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">利用例</a></h4>
 <div class="accordion-content">Java で SpringFramework の RESTクライアント を使う場合:
    <script src="https://gist.github.com/ddbj-repo/d3ff7fbc9a66733ab164f669e4bcb88d.js"></script>
@@ -1085,7 +1085,7 @@ HTTP ステータス 404
 入力値の例
 
 | HTTP パラメーター | 入力値         |
-| ----------- | ----------- |
+|---|
 | `format`    | `"bigfile"` |
 | `info`      | `"result"`  |
 
@@ -1141,8 +1141,8 @@ HTTP ステータス 400
 12}
 ```
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">利用例</a></h4>
 <div class="accordion-content">Java で SpringFramework の RESTクライアント を使う場合:
    <script src="https://gist.github.com/ddbj-repo/af6f2a4165385224de18cc5968568848.js"></script>
@@ -1257,7 +1257,7 @@ HTTP ステータス 400
 入力値の例
 
 | HTTP パラメーター | 入力値     |
-| ----------- | ------------- |
+|---|
 | `imageId`   | `"1"`         |
 | `format`    | `"imagefile"` |
 | `info`      | `""`          |
@@ -1287,8 +1287,8 @@ HTTP ステータス 404
 12 }
 ```
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">利用例</a></h4>
 <div class="accordion-content">Java で HttpURLConnection を使う場合:
    <script src="https://gist.github.com/ddbj-repo/bd58a6ca09c2d380d5ceafd4905a0e2e.js"></script>
@@ -1396,7 +1396,7 @@ WABI BLAST のヘルプ情報を返します。
 入力値の例
 
 | Help-Command 等 | 入力値             |
-| -------------- | --------------- |
+|---|
 | `Help-Command` | `"list_result"` |
 | `format`       | `"json"`        |
 
@@ -1432,8 +1432,8 @@ WABI BLAST のヘルプ情報を返します。
 16 }
 ```
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">利用例</a></h4>
 <div class="accordion-content">Java で SpringFramework の RESTクライアント を使う場合:
    <script src="https://gist.github.com/ddbj-repo/324515b540e438c23e5589dfa40f9aed.js"></script>
@@ -1499,8 +1499,8 @@ ATGGGTCTCACCTCCCAACTGCTTCCCCCTCTGTTCTTCCTGCTAGCATGTGCCGGCAAC
 TTTGCCCACGGACACAACTGCCATATCGCCTTACGGGAGATCATCGAAACTCTGAACAGC
 CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 ```
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 配列サイズが巨大な場合や配列数が多い場合など、次のような理由で結果を正常に取得できないことがあります。  
 そのような場合は、配列数を少なくするか配列を短くする等して再度お試しください。
 
@@ -1519,7 +1519,7 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 (ヘルプ情報の閲覧)](#URI_GET_help) を利用して参照できます。
 
 | データセット値          | 説明                                                 |
-| ---------------- | -------------------------------------------------- |
+|---|
 | `ddbjall`        | DDBJ ALL (DDBJ periodical release + daily updates) |
 | `ddbjnew`        | DDBJ New (DDBJ daily updates)                      |
 | `16S_rRNA`       | 16S rRNA (Prokaryotes)                             |
@@ -1576,7 +1576,7 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 DDBJ ALL, DDBJ NEW データベース値
 
 |  Standard divisions  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  `hum`, `new_hum`  | Human |  ヒト  |
 |  `pri`, `new_pri`  |  Primates  |  霊長類 （ヒトを除く）  |
 |  `rod`, `new_rod`  |  Rodents  |  齧歯類  |
@@ -1591,13 +1591,13 @@ DDBJ ALL, DDBJ NEW データベース値
 |  `env`, `new_env`  |  ENV  |  環境サンプル (environmental samples)  |
 
 |  High throughput divisions  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  `htc`, `new_htc`  |  HTC  |  High Throughput cDNAs  |
 |  `htg`, `new_htg`  |  HTG  |  High Throughput Genomic sequences  |
 |  `tsa`, `new_tsa`  |  TSA  |  Transcriptome Shotgun Assembly  |
 
 |  EST divisions  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  `est_atha`, `new_est_atha`  |  A.thaliana  |  *Arabidopsis thaliana* （シロイヌナズナ）  |
 |  `est_btra`, `new_est_btra`  |  B.taurus  |  *Bos taurus* （ウシ）  |
 |  `est_cele`, `new_est_cele`  |  C.elegans  |  *Caenorhabditis elegans* （線虫）  |
@@ -1622,7 +1622,7 @@ DDBJ ALL, DDBJ NEW データベース値
 |  `est_rest`, `new_est_rest`  |  Others  |  上記以外 （Others）  |
 
 |  その他  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  `pat`, `new_pat`  |  Patent  |  特許データ (PAT)  |
 |  `una`, `new_una`  |  Unannotated Seq  |  未注釈データ (UNA)  |
 |  `gss`, `new_gss`  |  GSS  |  ゲノム研究関連 (genome survey sequences)  |
@@ -1631,7 +1631,7 @@ DDBJ ALL, DDBJ NEW データベース値
 Refseq NA データベース値
 
 |  RefSeq NA  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  `refseq-genomic-fungi`, `refseq-rna-fungi`  |  Fungi  |  菌類  |
 |  `refseq-genomic-invertebrate`, `refseq-rna-invertebrate`  |  Invertebrate  |  無脊椎動物  |
 |  `refseq-genomic-microbial`, `refseq-rna-microbial`  |  Microbial  |  微生物  |
@@ -1659,7 +1659,7 @@ Refseq NA データベース値
 アミノ酸配列データベース値の例と意味は次の通りです。
 
 |  説明  |    |  データベース値  |
-| ---- | ---- | ---- |
+|---|
 |  UniProt (Swiss-Prot + TrEMBL)  |  Swiss-Prot + TrEMBL  |  `uniprot_all`  |
 |  UniProt (Swiss-Prot)  |  Swiss-Prot  |  `uniprot_sprot`  |
 |  UniProt (TrEMBL)  |  TrEMBL  |  `uniprot_trembl`  |
@@ -1671,7 +1671,7 @@ Refseq NA データベース値
 DAD ALL, DAD NEW データベース値
 
 |  Standard divisions  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  `dad_hum`, `dad_new_hum`  |  Human  |  ヒト  |
 |  `dad_pri`, `dad_new_pri`  |  Primates  |  霊長類 （ヒトを除く）  |
 |  `dad_rod`, `dad_new_rod`  |  Rodents  |  齧歯類  |
@@ -1686,13 +1686,13 @@ DAD ALL, DAD NEW データベース値
 |  `dad_env`, `dad_new_env`  |  General  |  環境サンプル (environmental samples)  |
 
 |  High throughput divisions  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  `dad_htc`, `dad_new_htc`  |  HTC  |  High Throughput cDNAs  |
 |  `dad_htg`, `dad_new_htg`  |  HTG  |  High Throughput Genomic sequences  |
 |  `dad_tsa`, `dad_new_tsa`  |  TSA  |  Transcriptome Shotgun Assembly  |
 
 |  EST divisions  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  `dad_est_atha`, `dad_new_est_atha`  |  A.thaliana  |  *Arabidopsis thaliana* （シロイヌナズナ）  |
 |  `dad_est_btra`, `dad_new_est_btra`  |  B.taurus  |  *Bos taurus* （ウシ）  |
 |  `dad_est_cele`, `dad_new_est_cele`  |  C.elegans  |  *Caenorhabditis elegans* （線虫）  |
@@ -1717,7 +1717,7 @@ DAD ALL, DAD NEW データベース値
 |  `dad_est_rest`, `dad_new_est_rest`  |  Others  |  上記以外 （Others）  |
 
 |  その他  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  `dad_pat`, `dad_new_pat`  |  Patent  |  特許データ (PAT)  |
 |  `dad_una`, `dad_new_una`  |  Unannotated Seq  |  未注釈データ (UNA)  |
 |  `dad_gss`, `dad_new_gss`  |  GSS  |  ゲノム研究関連 (genome survey sequences)  |
@@ -1726,7 +1726,7 @@ DAD ALL, DAD NEW データベース値
 Refseq AA データベース値
 
 |  RefSeq AA  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  `refseq-protein-fungi`  |  Fungi  |  菌類  |
 |  `refseq-protein-invertebrate`  |  Invertebrate  |  無脊椎動物  |
 |  `refseq-protein-microbial`  |  Microbial  |  微生物  |
@@ -1757,7 +1757,7 @@ Refseq AA データベース値
 (ヘルプ情報の閲覧)](#URI_GET_help) を利用して参照できます。
 
 |  プログラム  |  クエリ  |  データベース  |  説明  |
-| ---- | ---- | ---- | ---- |
+|---|
 |  megablast  |  塩基配列  |  塩基配列  |  あなたの塩基配列を塩基配列データベースと比較します。<br/>長大な塩基配列で相同性検索を行いたい場合，blastn より高速に検索結果が得られます。  |
 |  blastn  |  塩基配列  |  塩基配列  |  あなたの塩基配列を塩基配列データベースと比較します。  |
 |  tblastn  |  アミノ酸配列  |  塩基配列  |  あなたのアミノ酸配列に対して，塩基配列データベースを表裏合わせて６通りの読み枠で翻訳しながら比較します。  |
@@ -1776,7 +1776,7 @@ BLAST プログラムに指定できるオプションは次の通りです。
 これらの各オプションを空白で並べた値を指定できます。
 
 |  指定可能なオプション  |  BLAST プログラム  |  説明  |
-| ---- | ---- | ---- |
+|---|
 |  `-A` *N*  |  全て  |  Multiple Hits window size; generally defaults to 0 (for single-hit extensions), but defaults to 40 when using discontiguous templates.  |
 |  `-B` *N*  |  "`megablast`" 以外  |  Number of concatenated queries, in  blastn or tblastn mode  |
 |  `-C` *X*  |  "`megablast`" 以外  |  Use composition-based statistics for blastp or tblastn: T, t, D, or d Default (equivalent to 1 for blast2 and blastall\_old and to 2 for blastall and blastcl3) 0, F, or f No composition-based statistics 1 Composition-based statistics as in NAR 29:2994-3005, 2001 2 Composition-based score adjustment as in Bioinformatics 21:902-911, 2005, conditioned on sequence properties 3 Composition-based score adjustment as in Bioinformatics 21:902-911, 2005, unconditionally When enabling statistics in blastall, blastall\_old, or blastcl3 (i.e., not blast2), appending u (case-insensitive) to the mode enables use of unified p-values combining alignment and compositional p-values in round 1 only.  |
@@ -1845,7 +1845,7 @@ WABI からの応答データの形式を次の中から指定できます。
 (ヘルプ情報の閲覧)](#URI_GET_help) を利用して参照できます。
 
 | 応答データ形式の値     | 説明                                                  | メディアタイプ                           |
-| ------------- | --------------------------------------------------- | --------------------------------- |
+|---|
 | `text`        | プレインテキスト形式                                          | `text/plain; charset=utf-8`       |
 | `json`        | JSON 形式のテキスト                                        | `application/json; charset=utf-8` |
 | `xml`         | XML テキスト                                            | `text/xml; charset=utf-8`         |
@@ -1862,7 +1862,7 @@ WABI からの応答データの形式を次の中から指定できます。
 (ヘルプ情報の閲覧)](#URI_GET_help) を利用して参照できます。
 
 | 結果取得方法の値 | 説明                                         |
-| -------- | ------------------------------------------ |
+|---|
 | `www`    | 結果取得用の URI にリクエストして、その応答データとして処理結果を受け取ります。 |
 | `mail`   | 指定されているメールアドレス宛てに処理結果を送信します。               |
 
@@ -1878,7 +1878,7 @@ WABI からの応答データの形式を次の中から指定できます。
 
 
 |  情報の種類  |  説明  |
-| ---- | ---- |
+|---|
 |  `status`  |  ジョブの状態  |
 |  `result`  |  検索処理の結果  |
 |  `request`  |  ジョブを登録した際に指定した検索条件  |

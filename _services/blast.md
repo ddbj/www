@@ -43,7 +43,7 @@ DDBJ では，Web版 BLAST の他に，以下の方法でも BLAST サービス�
 デフォルトでは，blastn が設定されてます。megablast は新たに追加されたプログラムです。
 
 |  プログラム  |  クエリ  |  データベース  |  説明  |　　　　　　
-| ---- | ---- | ---- | ---- |
+|---|
 |  megablast  |  塩基配列  |  塩基配列  |  あなたの塩基配列を塩基配列データベースと比較します。 <br> 長大な塩基配列で相同性検索を行いたい場合，blastn より高速に検索結果が得られます。 |
 |  blastn  |  塩基配列  |  塩基配列  |  あなたの塩基配列を塩基配列データベースと比較します。  |
 |  tblastn  |  アミノ酸配列  |  塩基配列  |  あなたのアミノ酸配列に対して，塩基配列データベースを表裏合わせて６通りの読み枠で翻訳しながら比較します。  |
@@ -85,8 +85,8 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 ```
 
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 配列サイズが巨大な場合，配列数が多い場合などは，以下のような理由で結果を正常に取得出来ない場合があります。  
 そのような場合は，配列数を少なくするか配列を短くする等して再度お試し下さい。
 
@@ -105,7 +105,7 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 検索対象となるデータベースを指定します。 以下の選択肢からひとつを選びます。
 
 |  塩基配列データベース  |      |
-| ---- | ---- |
+|---|
 |  DDBJ ALL  |  DDBJ 定期リリース + 新着データ  |
 |  DDBJ New  |  DDBJ 定期リリース後の新着データ  |
 |  16S rRNA  |  DDBJ 定期リリースから 16S rRNA 配列を取り出したデータ  |
@@ -116,7 +116,7 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，検索対象とする DIVISION の指定が可能です(複数可)。デフォルトでは、Standard divisions のうち　SYN, ENV を除いた 10 divisions が選択されています。 EST については登録数の多い21の生物種から選択することが出来ます。
 
 |  Standard divisions  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  Human  |  HUM  |  ヒト  |
 |  Primates  |  PRI  |  霊長類 （ヒトを除く）  |
 |  Rodents  |  ROD  |  齧歯類  |
@@ -131,13 +131,13 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  ENV  |  ENV  |  環境サンプル (environmental samples)  |
 
 |  High throughput divisions  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  HTC	  |  HTC	  |  High Throughput cDNAs  |
 |  HTG	  |  HTG	  |  High Throughput Genomic sequences  |
 |  TSA	  |  TSA	  |  Transcriptome Shotgun Assembly  |
 
 |  EST divisions  |
-| ---- | 
+|---|
 |  A.thaliana	  |  Arabidopsis thaliana （シロイヌナズナ）  
 |  B.taurus	  |  Bos taurus （ウシ）  |
 |  C.elegans  |  Caenorhabditis elegans （線虫） |
@@ -162,7 +162,7 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  Others  |  上記以外 （Others）  |
 
 |  その他  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  Patent  |  PAT  |  特許データ  |
 |  Unannotated Seq	  |  UNA  |  未注釈データ  |
 |  GSS  |  GSS  |  ゲノム研究関連 (genome survey sequences)  |
@@ -173,7 +173,7 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 #### データベースオプション（RefSeq）  {#データベースオプション（RefSeq）}
 
 |  定期リリース（genomic/RNA) |    |
-| ---- | ---- |
+|---|
 |  Fungi  |  菌類  |
 |  Invertebrate  |  無脊椎動物  |
 |  Microbial  |  細菌  |
@@ -188,11 +188,11 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  Daily Updates  |  Daily Updates  |
 
 |  モデル生物（Genomic) |    |
-| ---- | ---- |
+|---|
 |  H. sapiens  |  ヒト  |
 
 |  モデル生物（RNA) |    |
-| ---- | ---- |
+|---|
 |  B. taurus  |  ウシ  |
 |  D. rerio  |  メダカ  |
 |  H. sapiens  |  ヒト  |
@@ -207,7 +207,7 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 デフォルトは　UniProt(Swiss-Prot + TrEMBL)です。
 
 |  Proterin Databases |    |
-| ---- | ---- |
+|---|
 | UniProt (Swiss-Prot + TrEMBL)  |  Swiss-Prot + TrEMBL  |
 |  UniProt (Swiss-Prot)	  |  Swiss-Prot  |
 |  UniProt (TrEMBL)	 |  TrEMBL |
@@ -225,7 +225,7 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 検索対象とする DIVISION を指定します。以下の選択肢から指定が可能です(複数可)。デフォルトでは、Standard divisions のうち　SYN, ENV を除いた 10 divisions が選択されています。 EST については登録数の多い21種のデータから選択することが出来ます。
 
 |  Standard divisions  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  Human  |  HUM  |  ヒト  |
 |  Primates  |  PRI  |  霊長類 （ヒトを除く）  |
 |  Rodents  |  ROD  |  齧歯類  |
@@ -240,13 +240,13 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  ENV  |  ENV  |  環境サンプル (environmental samples)  |
 
 |  High throughput divisions  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  HTC	  |  HTC	  |  High Throughput cDNAs  |
 |  HTG	  |  HTG	  |  High Throughput Genomic sequences  |
 |  TSA	  |  TSA	  |  Transcriptome Shotgun Assembly  |
 
 |  EST divisions  |
-| ---- | 
+|---|
 |  A.thaliana	  |  Arabidopsis thaliana （シロイヌナズナ）  |
 |  B.taurus	  |  Bos taurus （ウシ）  | 
 |  C.elegans  |  Caenorhabditis elegans （線虫） | 
@@ -271,7 +271,7 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  Others  |  上記以外 （Others）  |
 
 |  その他  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  Patent  |  PAT  |  特許データ  |
 |  Unannotated Seq	  |  UNA  |  未注釈データ  |
 |  GSS  |  GSS  |  ゲノム研究関連 (genome survey sequences)  |
@@ -280,7 +280,7 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 #### データベースオプション（RefSeq）  {#データベースオプション（RefSeq）}
 
 |  定期リリース(Protein) |    |
-| ---- | ---- |
+|---|
 |  Fungi  |  菌類  |
 |  Invertebrate  |  無脊椎動物  |
 |  Microbial  |  細菌  |
@@ -295,7 +295,7 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 |  Daily Updates  |  Daily Updates  |
 
 |  モデル生物（RNA) |    |
-| ---- | ---- |
+|---|
 |  B. taurus  |  ウシ  |
 |  D. rerio  |  メダカ  |
 |  H. sapiens  |  ヒト  |
@@ -328,7 +328,7 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 blastx, blastp, tblastn, tblastx で指定可能です。指定可能な置換行列は以下のとおりです。  
 デフォルトでは BLOSUM62 が設定されます。
 
-| ---- | ---- |
+|---|
 |  PAM30  |  PAM30 substitution matrix  |
 |  PAM70  |  PAM70 substitution matrix  |
 |  PAM250  |  PAM250 substitution matrix  |
@@ -360,15 +360,15 @@ blastn の場合は，wordsize を 11 以外の数に変えるべきではあり
 
 Request ID:wabi_blast_2013-0314-1407-23-16-946732
 
-![blast_requestID]({{ site.baseurl }}/assets/images/help/blast_help_01.gif)
+<img src="/assets/images/help/blast_help_01.gif" alt="" title="blast_requestID" class="">
 
 ### 結果画面に表示される情報  {#result screen}
-![検索画面に表示される情報]({{ site.baseurl }}/assets/images/help/blast_help_02.gif)
+<img src="/assets/images/help/blast_help_02.gif" alt="" title="検索画面に表示される情報" class="">
 
 ### 結果中のアクセッション番号の検索・表示  {#view flatfile}
 該当するアクセッション番号にチェックを入れて、"getentry"　ボタンをクリックすると、getentry　の結果が表示されます。
 
-![結果中のアクセッション番号の検索・表示]({{ site.baseurl }}/assets/images/help/blast_help_03.gif)
+<img src="/assets/images/help/blast_help_03.gif" alt="" title="結果中のアクセッション番号の検索・表示" class="">
 
 ### 検索結果の閲覧  {#result viewer}
 
@@ -377,14 +377,14 @@ Request ID:wabi_blast_2013-0314-1407-23-16-946732
 ブラウザを閉じてしまっても、Result Viewer を用いてRequest ID から結果を閲覧することができます。  
 検索結果閲覧期間は、実行後７日間です。
 
-![Result Viewer]({{ site.baseurl }}/assets/images/help/blast_help_04.gif)
+<img src="/assets/images/help/blast_help_04.gif" alt="" title="Result Viewer" class="">
 
 ## ClustalW Set up  {#setup}
 
 チェックボックスで ClustalW で解析を行いたい配列を選択して"ClustalW"　ボタンをクリックすると、選択した配列が入力された状態でClustalW 画面が開きます。
 
-1. ![ClustalW セットアップ（１）]({{ site.baseurl }}/assets/images/help/blast_help_05.gif)
-2. ![ClustalW セットアップ（2）]({{ site.baseurl }}/assets/images/help/blast_help_06.gif)
+1.<img src="/assets/images/help/blast_help_05.gif" alt="" title="ClustalW セットアップ（１）" class="">
+2.<img src="/assets/images/help/blast_help_06.gif" alt="" title="ClustalW セットアップ（2）" class="">
 
 ## 原著論文，関連論文および参考文献  {#reference}
 

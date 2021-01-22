@@ -31,8 +31,8 @@ related_pages:
     BioProject, BioSample が引用される場合のすべてが該当します。
 3. [公開予定日](/ddbj/submission.html#holddate)が到来した場合
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
   - 2または3の場合には登録者の了解がなくても公開いたします。
   - このデータ公開原則は、1998年1月1日以降に受け付けたデータから適用されています。それ以前に登録されたデータは、1,2の場合に公開しています。
 </div>
@@ -62,7 +62,7 @@ related_pages:
 
 :   データ公開、[公開予定日延長](/ddbj/update.html#q5)の依頼は
     [申し込みフォーム](/ddbj/update-form.html) 、または
-    ![](/images/news/ad_updt.gif)へのメールにて ご連絡ください
+   <img src="/images/news/ad_updt.gif" alt="" title="" class="">へのメールにて ご連絡ください
     詳細は [登録データの変更・更新](/ddbj/update.html) をご参照ください。
 
 登録データの取り扱いについて

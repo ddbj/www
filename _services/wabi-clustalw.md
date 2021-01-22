@@ -19,7 +19,7 @@ format, result は必須です。
 result に mail を指定した場合は address も必須となります。
 
 |  パラメーター  |  説明  |
-| ---- | ---- |
+|---|
 |  format  |  request ID を返す際の応答データの形式。<br/>text, json, xml,bigfile, imagefile, requestfile が受け付けられますが、job投入時に意味があるのは text, json, xml の3つです。  |
 |  querySequence  |  multiple alignment 実行時、または系統樹作成時に clustalw に渡す配列ファイル。<br/>NBRF-PIR, EMBL-SWISSPROT, Pearson (Fasta), Clustal (*.aln), GCG-MSF (Pileup), GCG9-RSF, GDE flat file の7フォーマットを使用できます。  |
 |  profile1  |  profile alignment 実行時に clustalw に -PROFILE1= で 渡す整列済み配列ファイル。  |
@@ -37,7 +37,7 @@ result に mail を指定した場合は address も必須となります。
 ## CLUSTALWの結果の取得  {#result}
 
 | パラメーター                                | 説明                                                                                                                                                                                                            |
-| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|---|
 | GET clustalw/{id}?info=status         | job が走っている、キューにたまっている、終わっている、存在しない、ということを返します。                                                                                                                                                                |
 | GET clustalw/{id}?info=request        | プログラム実行条件を返します。 存在しない場合は、エラーを返します。                                                                                                                                                                            |
 | GET clustalw/{id}?info=result         | job が終わっていたら結果（multiple alignment, profile alignment を実行した場合は alignment の結果、-TREE を実行した場合は .ph ファイル、-BOOTSTRAP を実行した場合は .phb ファイル、-CONVERT を実行した場合はフォーマット変換後のファイル）を返します。 終わってない・存在しない場合は、エラーを返します。            |

@@ -71,9 +71,9 @@ open in any spreadsheet program for viewing or editing.
 
 Here is a snippet of an ADF document:
 
-{::nomarkdown}
+
 {% include image.html url="magetab/adf1.png" caption="A snippet of an ADF document" class="w600" %}
-{:/}
+
 
 ## ADF metadata header  {#adf-meta}
 
@@ -84,14 +84,14 @@ one of our ADF templates so you don't need to insert them from scratch.
 Please do not edit the headings, but fill in each field as much as
 possible, like the blue text below:
 
-{::nomarkdown}
+
 {% include image.html url="magetab/adf2.png" caption="ADF metadata header" class="w600" %}
-{:/}
+
 
 A glossary of the ADF header fields (* denotes mandatory fields):
 
 | No. | ADF header field                  | What is it?                                                                                                                                                                                                                                                  | Allowed values                                                                                                                                                                                                  | Example                                                                                                                                                                                                          |
-| --- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|---|
 | 1   | * Array Design Name              | An informative title of the array design. Should include the name of the manufacturer (e.g. Agilent) or the lab which designed it, the species, version number, purpose of the array (e.g. genotyping), the number of probes/features (e.g 450k)             |                                                                                                                                                                                                                 | Agilent human micoRNA microarray miRBase Release 14.0, 8x15k (GridName 029297, 82 cols x 192 rows)                                                                                                               |
 | 2   | Version                           | Version (or revision) number of the array design.                                                                                                                                                                                                            |                                                                                                                                                                                                                 | version 3.0                                                                                                                                                                                                      |
 | 3   | * Provider                       | Name of the array design's submitter.                                                                                                                                                                                                                        |                                                                                                                                                                                                                 | Mishima Taro                                                                                                                                                                                                     |
@@ -117,10 +117,10 @@ them from scratch. Please don't change the column headings in the
 template.
 
 
-  - [composite_element_array_ADF_template.xls]({{ site.baseurl }}/assets/files/magetab/adf/composite_element_array_ADF_template.xls)
-  - [commercial_array_header_template.xls]({{ site.baseurl }}/assets/files/magetab/adf/commercial_array_header_template.xls)
-  - [reporter_only_array_ADF_template.xls]({{ site.baseurl }}/assets/files/magetab/adf/reporter_only_array_ADF_template.xls)
-  - [spotted_array_ADF_template.xls]({{ site.baseurl }}/assets/files/magetab/adf/spotted_array_ADF_template.xls)
+  - [composite_element_array_ADF_template.xls](/assets/files/magetab/adf/composite_element_array_ADF_template.xls)
+  - [commercial_array_header_template.xls](/assets/files/magetab/adf/commercial_array_header_template.xls)
+  - [reporter_only_array_ADF_template.xls](/assets/files/magetab/adf/reporter_only_array_ADF_template.xls)
+  - [spotted_array_ADF_template.xls](/assets/files/magetab/adf/spotted_array_ADF_template.xls)
 
 
 ### Features, reporters and composite elements  {#feature}
@@ -135,9 +135,9 @@ cannot be duplicated on an array. Include all features in your ADF file,
 even if there is nothing spotted there (e.g. control spots). Here is a
 schematic diagram showing the 4 coordinates:
 
-{::nomarkdown}
+
 {% include image.html url="magetab/adf_column.jpg" caption="image of the Block Column and Block Row coordinate" class="w300" %}
-{:/}
+
 
 **Reporters (mandatory, for all arrays):**
 
@@ -163,9 +163,9 @@ because they are based on "probe sets" and not simply "probes".
 Here is a snippet from a hypothetical example of an array design,
 showing seven features, two reporters and one composite element:
 
-{::nomarkdown}
+
 {% include image.html url="magetab/adf3.png" caption="Feature, reporter and composite element" class="w450" %}
-{:/}
+
 
 ### Annotation of reporters  {#ann-reporters} 
 
@@ -234,9 +234,9 @@ This is how the hypothetical reporter annotations would be like. Notice
 how you can enter multiple accessions from the same database by
 separating them with semicolons:
 
-{::nomarkdown}
+
 {% include image.html url="magetab/adf4.png" caption="ADF annotation of reporters" class="w450" %}
-{:/}
+
 
 ### Repoter role - experimental or control  {#reporter-role}
 
@@ -250,7 +250,7 @@ Factor Ontology (EFO). Here is a glossary:
 
 
 | Allowed terms                                                           | Meaning                                                                                                           |
-| ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+|---|
 | [array control biosequence](http://www.ebi.ac.uk/efo/EFO_0005433)       | E.g. a spiked sequence from E. coli for a human microarray. [Reporter Sequence](#ann-reporters) must be provided. |
 | [array control buffer](http://www.ebi.ac.uk/efo/EFO_0005434)            | Buffer spotted on the array. Do not provide [Reporter Sequence](#ann-reporters).                                  |
 | [array control empty](http://www.ebi.ac.uk/efo/EFO_0005435)             | Nothing spotted on the array (blank). Do not provide [Reporter Sequence](#ann-reporters).                         |
@@ -262,9 +262,9 @@ Factor Ontology (EFO). Here is a glossary:
 
 Here is an example of reporter roles in the ADF table:
 
-{::nomarkdown}
+
 {% include image.html url="magetab/adf5.png" caption="Reporter role" class="w500" %}
-{:/}
+
 
 ### Reporter grouping by species (multi-species ADFs only)  {#reporter-groupings}
 
@@ -276,9 +276,9 @@ Homo sapiens.
 An example of a microarray with probes derived from viral and human
 microRNA sequences:
 
-{::nomarkdown}
+
 {% include image.html url="magetab/adf6.png" caption="Reporter grouping by species (multi-species ADFs only)" class="w500" %}
-{:/}
+
 
 ### Annotation of composite elements  {#ann-composite-elements}
 
@@ -288,6 +288,6 @@ reporters, using one or more Composite Element Database Entry [xxx]
 columns. In addition, a Composite Element Comment column can be added to
 insert free-text comments or descriptions for each element.
 
-{::nomarkdown}
+
 {% include image.html url="magetab/adf7.png" caption="ADF annotation of composite elements" class="w500" %}
-{:/}
+

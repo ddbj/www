@@ -38,9 +38,9 @@ lang: ja
 BioProject は研究プロジェクトと [INSDC](http://www.insdc.org/)が運営するデータベースに存在するデータを管理します。
 BioProject によりプロジェクトの種類や特徴といった項目でデータベースを横断してデータを検索することができるようになります。
 
-{::nomarkdown}
+
 {% include image.html url="submission/biosample_integration.jpg" caption="BioProject/BioSample と他の DDBJ データベースとの連携" class="w450" %}
-{:/}
+
 
 ### プロジェクト  {#project}
 
@@ -93,9 +93,9 @@ BioProject は同じプロジェクトに由来するデータ，それからま
 
 いくつかの大規模プロジェクトを１つ以上のアンブレラプロジェクトで表すことができます。最上位レベルで共同研究プロジェクト全体を表し，二段目で産出されるデータの種類に対してアンブレラプロジェクトを作成，最後の三段目で実際に登録されるデータにリンクされるプライマリープロジェクトを作成する，といった構成です。
 
-{::nomarkdown}
+
 {% include image.html url="submission/bp_org.jpg" caption="階層構造の模式図。(A)二階層 (B)三階層" class="w500" %}
-{:/}
+
 
 二階層 (A)  
 : コンソーシアムは１つのアンブレラプロジェクトとデータにリンクされた１つ以上のプライマリープロジェクトから構成されます。例: [Neanderthal Metagenome](https://www.ncbi.nlm.nih.gov/bioproject/18309)
@@ -105,9 +105,9 @@ BioProject は同じプロジェクトに由来するデータ，それからま
 
 ### データ公開 {#data-release}
 
-{::nomarkdown}
+
 {% include image.html url="submission/release_re.jpg" caption="プライマリープロジェクトとデータレコードの公開の仕組み" class="w500" %}
-{:/}
+
 
 DDBJ BioProject に登録されたプライマリープロジェクトは「即日公開」もしくは「非公開」にすることができます。
 
@@ -115,9 +115,9 @@ DDBJ BioProject に登録されたプライマリープロジェクトは「即�
 
 FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp-bs-seq-release.html)
 
-{::nomarkdown}
+
 {% include image.html url="submission/um_pri_visibility.jpg" caption="アンブレラプロジェクトとプライマリープロジェクト間の関係の可視性" class="w500" %}
-{:/}
+
 
 <span class="red">アンブレラプロジェクトは非公開にすることができません。</span>  
 アンブレラプロジェクトは公開されているプライマリープロジェクトと非公開のプロジェクトの両者を持つことができます。第三者は公開されているアンブレラプロジェクトと非公開のプライマリープロジェクト間の関係を見ることはできません。
@@ -216,7 +216,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 : 最も関連性が高い分野を選択します。
 
   | Relevance     | Description                                     |
-  | ------------- | ----------------------------------------------- |
+  |---|
   | Agricultural  |                                                 |
   | Medical       |                                                 |
   | Industrial    | バイオレメディエーション，バイオ燃料といった大量生産を意図している研究分野           |
@@ -297,7 +297,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
   NCBI ではプロジェクトにリンクしている実験データから独自に [Project data type](https://www.ncbi.nlm.nih.gov/books/NBK54364/def-item/project-data-type/) を割り振っています。また，[EBI](https://www.ebi.ac.uk/ena/submit/project-format) では Project data type を使用していません。
 
   | Project Data type                | Description                                                                                    |
-  | -------------------------------- | ---------------------------------------------------------------------------------------------- |
+  |---|
   | Genome Sequencing                | 全ゲノムや部分ゲノム塩基配列決定プロジェクト (ゲノムアセンブリの有無は問わない)                                                      |
   | Clone Ends                       | クローンエンド塩基配列決定プロジェクト                                                                            |
   | Epigenomics                      | メチル化, ヒストン修飾, クロマチン構造に関するデータセット                                                                |
@@ -323,7 +323,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 : 研究で使われた生物学的サンプルの対象を選択肢から選びます。
 
   | Sample scope  | Description                                 |
-  | ------------- | ------------------------------------------- |
+  |---|
   | Monoisolate   | 単一の動物，培養細胞のセルライン，育種された均一な集団                 |
   | Multiisolate  | 複数の個人や集団 (特定の種)                             |
   | Multi-species | サンプルが複数の種を含んでいる                             |
@@ -337,7 +337,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 : サンプルから単離された実験材料の種類。
 
   | Material       | Description                                  |
-  | -------------- | -------------------------------------------- |
+  |---|
   | Genome         | 全ゲノム。核ゲノムが対象のときに使います。DNA やメタゲノムサンプルに対して用います。 |
   | Partial Genome | 精製された１つ以上の染色体やレプリコン                          |
   | Transcriptome  | 転写産物解析データ                                    |
@@ -352,7 +352,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 : サンプル材料から得ようとしている情報のスケールや種類。　
 
   | Capture             | Description                            |
-  | ------------------- | -------------------------------------- |
+  |---|
   | Whole               | サンプル全体を使っている (通常のケース)                  |
   | Clone Ends          | クローンエンドデータを使用                          |
   | Exome               | エクソンのデータを使用                            |
@@ -371,7 +371,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 : データを得るために使われた主要な手法。
 
   | Methodology       | Description                                   |
-  | ----------------- | --------------------------------------------- |
+  |---|
   | Sequencing        | Sanger，454 や Illumina などを使ったシークエンシング          |
   | Array             | ハイブリダイゼーションアレイ                                |
   | Mass Spectroscopy | マススペクトロメトリー                                   |
@@ -390,7 +390,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 : 登録するデータの種類。
 
   | Objective          | Description                                                  |
-  | ------------------ | ------------------------------------------------------------ |
+  |---|
   | Raw Sequence Reads | シークエンサから出力された生シークエンシングデータ                                    |
   | Sequence           | 生データではない加工処理されたシークエンス (クリップされている，メイトペアが対になっている，向きが揃えられているなど) |
   | Analysis           | 生物学的な意味を解釈するために解析されたデータ                                      |
@@ -475,7 +475,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 : 選択肢から Cellularity を選びます。
 
   | Cellularity   |
-  | ------------- |
+  |---|
   | Unicellular   |
   | Multicellular |
   | Colonial      |
@@ -486,7 +486,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 : 選択肢から Reproduction を選びます。
 
   | Reproduction |
-  | ------------ |
+  |---|
   | Sexual       |
   | Asexual      |
 
@@ -501,7 +501,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 : 選択肢から Ploidy を選びます。
 
   | Ploidy        |
-  | ------------- |
+  |---|
   | Haploid       |
   | Diploid       |
   | Polyploid     |
@@ -520,7 +520,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 : Replicon type を選択します。
 
   | Replicon type |
-  | ------------- |
+  |---|
   | Chromosome    |
   | Plasmid       |
   | Linkage Group |
@@ -533,7 +533,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 : レプリコンが存在する細胞内の場所。例: 核，分化した細胞内器官。真核生物，バクテリアや古細菌の染色体の場合 "Nuclear or Prokaryote" を使用します。
 
   | Location              |
-  | --------------------- |
+  |---|
   | Nuclear or Prokaryote |
   | Macronuclear          |
   | Nucleomorph           |
@@ -577,7 +577,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 : 選択肢から BioticRelationship を選びます。
 
   | BioticRelationship |
-  | ------------------ |
+  |---|
   | FreeLiving         |
   | Commensal          |
   | Symbiont           |
@@ -593,7 +593,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 : 選択肢から TrophicLevel を選びます。
 
   | TrophicLevel |
-  | ------------ |
+  |---|
   | Autotroph    |
   | Heterotroph  |
   | Mixotroph    |
@@ -606,7 +606,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 : 該当する全てのオプションを選びます。
 
   | Shape        | Description                                          |
-  | ------------ | ---------------------------------------------------- |
+  |---|
   | Bacilli      | rod-shaped                                           |
   | Cocci        | spherical-shaped                                     |
   | Spirilla     | spiral-shaped                                        |
@@ -624,7 +624,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 : 選択肢からグラム陽性か陰性から選びます。
 
   | Gram     |
-  | -------- |
+  |---|
   | Positive |
   | Negative |
 
@@ -634,7 +634,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 : 選択肢から Motility を選びます。
 
   | Motility |
-  | -------- |
+  |---|
   | Yes      |
   | No       |
 
@@ -644,7 +644,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 : 対象生物の Envelope の有無を選択します。
 
   | Enveloped |
-  | --------- |
+  |---|
   | Yes       |
   | No        |
 
@@ -654,7 +654,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 : 対象生物が Endospores を形成するかどうかを選択します。
 
   | Endospores |
-  | ---------- |
+  |---|
   | Yes        |
   | No         |
 
@@ -666,7 +666,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 : 選択肢から Habitat を選択します。
 
   | Habitat        |
-  | -------------- |
+  |---|
   | HostAssociated |
   | Aquatic        |
   | Terrestrial    |
@@ -680,7 +680,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 : 選択肢から Salinity を選びます。
 
   | Salinity           |
-  | ------------------ |
+  |---|
   | NonHalophilic      |
   | Mesophilic         |
   | ModerateHalophilic |
@@ -693,7 +693,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 : 酸素要求性を選択します。
 
   | OxygenReq       |
-  | --------------- |
+  |---|
   | Aerobic         |
   | Microaerophilic |
   | Facultative     |
@@ -706,7 +706,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 : 生息温度での分類を選びます。
 
   | TemperatureRange  |
-  | ----------------- |
+  |---|
   | Cryophilic        |
   | Psychrophilic     |
   | Mesophilic        |
@@ -809,8 +809,8 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 
 # BioProject への登録
 
-  {::options parse_block_html="true" /}
-  <div class="attention">
+  
+  <div class="attention" markdown="1">
   ヒトを対象とした研究データの登録について
   : <span class="red">研究対象者に由来するデータを DDBJ センターが運営するデータベースに登録する場合，研究対象者の尊厳及び人権は，適用されるべき法令，指針，ガイドライン，登録者が所属している機関の方針に従い，登録者の責任において保護されている必要があります。原則として，研究対象者を直接特定し得る情報はメタデータから取り除いてください。ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#human)を熟読してください。</span>
   </div>
@@ -834,8 +834,8 @@ BioProject への登録は次のような場合は必須ではありません。
 
   - 単一のプラスミド，ウイルスやオルガネラゲノムのシークエンスといった１つ (もしくは少数の) アクセッション番号しかリンクされない場合
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 [INSDC はゲノムが登録される微生物に対して strain-level taxonomy ID を新規発行していません。](/news/ja/2014-02-12.html)[BioSample ID](/biosample/index.html) で区別されることになります。
 </div>
 
@@ -850,15 +850,15 @@ BioProject への登録は次のような場合は必須ではありません。
 DDBJ センターから登録者に問い合わせた後三か月以上回答が無い場合は Submission をキャンセルいたします。
 </div>
 
-{::nomarkdown}
+
 {% include image.html url="books/hbp-01.jpg" caption="BioProject の新規登録作成" class="w450" %}
-{:/}
+
 
 BioProject を新規登録する場合は左のタブから順番に内容を英語で入力していきます。 [各項目の説明](#metadata)
 
-{::nomarkdown}
+
 {% include image.html url="books/hbp-02.jpg" caption="プロジェクトの入力" class="w450" %}
-{:/}
+
 
 ゲノムをアセンブルするプロジェクトでは，アセンブリに対してユニークな [Locus tag prefix](/ddbj/locus_tag.html) が必要です。
 
@@ -874,15 +874,15 @@ prefix は NCBI が一括管理しています。プロジェクトを投稿す�
 複数の prefix の取得を希望する場合は [BioProject チームに連絡します](/contact-ddbj.html)。
 </div>
 
-{::nomarkdown}
+
 {% include image.html url="books/hbp-03.jpg" caption="Locus tag prefix の取得" class="w450" %}
-{:/}
+
 
 最後の "OVERVIEW" で内容を確認したうえで \[Submit\] をクリックして投稿します。
 
-{::nomarkdown}
+
 {% include image.html url="books/hbp-04.jpg" caption="BioProject の投稿" class="w450" %}
-{:/}
+
 
 "OVERVIEW" には初回投稿時の内容が表示され続けます。登録後の更新は反映されませんので，ご注意ください。
 
@@ -899,17 +899,17 @@ prefix は NCBI が一括管理しています。プロジェクトを投稿す�
 
 アンブレラプロジェクトは通常のプライマリープロジェクトと同様 [D-way](https://ddbj.nig.ac.jp/D-way/) から登録します。 <span class="red">登録の際には必ず [Private comments to DDBJ staff](#Private_comments) にこの登録がアンブレラであることを記入し DDBJ BioProject チームに伝えてください。 </span>アンブレラプロジェクトを非公開にすることはできません。
 
-{::nomarkdown}
+
 {% include image.html url="books/hbp-05.jpg" caption="アンブレラプロジェクトの登録" class="w450" %}
-{:/}
+
 
 ### アンブレラプロジェクトへのリンク  {#link-primary-project-umbrella}
 
 プライマリープロジェクトを登録する際，[Umbrella BioProject](#Area_linked-project) にリンクすべきアンブレラプロジェクトの概要とアクセッション番号を記入します。 BioProject スタッフは記入内容をみて，プロジェクトをアンブレラにリンクする作業を行います。
 
-{::nomarkdown}
+
 {% include image.html url="books/hbp-06.jpg" caption="アンブレラへのリンク" class="w450" %}
-{:/}
+
 
 ### プロジェクトの公開 {#project-release} 
 

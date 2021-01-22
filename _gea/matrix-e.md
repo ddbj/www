@@ -88,7 +88,7 @@ In this example, four of the six assays are being mapped to log2 ratio values in
 Assay Name nodes in SDRF:
 
 | Assay Name   |
-| ------------ |
+|---|
 | Sample 1:Cy3 |
 | Sample 2:Cy3 |
 | Sample 3:Cy3 |
@@ -109,7 +109,7 @@ In this example, two of the six assays are being mapped to data with two differe
 Assay Name nodes in SDRF:
 
 | Assay Name      |
-| --------------- |
+|---|
 | Sample 1:biotin |
 | Sample 2:biotin |
 

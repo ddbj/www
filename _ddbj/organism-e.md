@@ -200,7 +200,7 @@ taxonomy database, do not hesitate to [contact us](/contact-ddbj-e.html#to-ddbj)
 During submission through [Nucleotide Sequence Submission System](/ddbj/web-submission-e.html) you have to select "Category" of organism
 name. Here shows a flowchart for judging "Category" of organism on Nucleotide Sequence Submission System
 
-![]({{ site.baseurl }}/assets/images/ddbj/organism-e.png){:.w600}
+<img src="/assets/images/ddbj/organism-e.png" alt="" title="" class="w600">
 
 a. artificial constructed or synthesized sequence  
 : Select "Artificially constructed or synthesized sequence" in the
@@ -533,7 +533,7 @@ proposing name for novel species<a name="propose"></a>
 : If it is really novel species and not yet published, please tell us
 proposing name for the novel species for the tracking purpose at
 taxonomy database. In addition, please send E-mail to DDBJ update,
-![]({{ site.baseurl }}/assets/images/ddbj/ad_updt1.gif "ad_updt"){:.life-size}, when it is published or
+<img src="/assets/images/ddbj/ad_updt1.gif" alt="ad_updt" title="" class="life-size">, when it is published or
 particularly if the name changes.
 
 already issued accession number<a name="acc"></a> 

@@ -139,7 +139,7 @@ organisms.
 
 
 | Division | Description                              |
-| -------- | ---------------------------------------- |
+|---|
 | HUM      | Human                                    |
 | PRI      | Primates (other than human)              |
 | ROD      | Rodents                                  |
@@ -164,7 +164,7 @@ feature](/ddbj/file-format-e.html#biological_feature).
 
 
 | Division | Description |
-| --- | --- |
+|---|
 | ENV | Sequences obtained via environmental sampling methods, direct PCR, DGGE, etc.<br />For ENV submissions, it is necessary to describe an [environmental_sample qualifier](/ddbj/qualifiers-e.html#environmental_sample) on the source feature.  |
 | SYN | Synthetic constructs, sequences constructed by artificial manipulations<br />For SYN submissions, in general, the entry often has plural source features, so it should be cared.<br />See also [Example of Submission; E05) synthetic construct.](/ddbj/example-e.html#E05).  |
 
@@ -185,7 +185,7 @@ data, if necessary.
 
 
 | Division | Description |
-| --- | --- |
+|---|
 | [EST](/ddbj/est-e.html) | Expressed sequence tags, cDNA sequences read short single pass.  |
 | [GSS](/ddbj/gss-e.html) | Genome survey sequences, genome sequences read short single pass.  |
 | STS | Sequence tagged sites, tagged sequences for genome sequencing.<br />Recommended to use [primer_bind](/ddbj/features-e.html#primer_bind) feature and [PCR_conditions](/ddbj/qualifiers-e.html#PCR_conditions) qualifier.  |
@@ -265,8 +265,8 @@ the process to publish biological research for primary nucleotide
 sequences.  
 See also [TPA Submission Guidelines](/ddbj/tpa-table-e.html).
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 If you are not sure to which database you should submit your data, see
 following sites;
 

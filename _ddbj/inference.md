@@ -110,7 +110,7 @@ The /inference qualifier provides a structured description of non-experimental e
     resources
 
 | Name of data resource/tool                                              | Recommended acronym |
-| ----------------------------------------------------------------------- | ------------------- |
+|---|
 | International Nucleotide Sequence Database                              | INSD                |
 | NCBI Reference Sequence Database                                        | RefSeq              |
 | UniProt Knowledgebase                                                   | UniProtKB           |

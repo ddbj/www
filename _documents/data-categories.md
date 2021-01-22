@@ -61,8 +61,8 @@ DDBJ では, 配列が同一であっても独立に配列決定されたデー�
 :   DDBJ の配列データの詳細な分類は「[Annotated/Assembled
     データの区分](#detail)」をご覧ください。
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 登録予定の塩基配列データをどのように登録すべきか不明な場合は以下をご参照ください。
 
 -   [Genome Project の各段階と登録データの種別](/ddbj/genome.html)
@@ -123,7 +123,7 @@ feature](/ddbj/file-format.html#biological_feature)
 に振り分けられます。
 
 |  Division  |  Description  |
-| ---- | ---- |
+|---|
 |  HUM  |  ヒト  |
 |  PRI  |  霊長類(ヒトを除く)  |
 |  ROD  |  齧歯類  |
@@ -144,7 +144,7 @@ feature](ddbj/file-format.html#biological_feature)
 による特徴づけが必要となります。
 
 |  Division  |  Description  |
-| ---- | ---- |
+|---|
 |  [ENV](/ddbj/env.html)  |  PCR, DGGE, あるいは、その他の方法で直接、分子を単離した環境上のサンプルに由来した配列。<br>ENV の場合は source feature に [environmental_sample qualifier](/ddbj/qualifiers.html#environmental_sample) を記載する必要があります。  |
 |  SYN  |  人為的な操作により構築された合成配列 <br> SYN は合成配列、例えば発現ベクターの配列、プライマーの配列、キメラ配列、fusion配列、人為的に変異を導入した配列などが該当します。複数の生物種や遺伝子由来の断片をつなぎ合わせた合成配列では、各々の配列の由来を示すために複数のsource feature を使用して記載する場合があります。<br> [登録の見本; E05) synthetic construct](/ddbj/example.html#E05) もご参照ください。 |
 
@@ -163,7 +163,7 @@ features](ddbj/file-format.html#biological_feature)
 それぞれのデータに関する説明ページも合わせてご覧ください。
 
 |  Division  |  Description  |
-| ---- | ---- |
+|---|
 |  [EST](/ddbj/est.html)  |  expressed sequence tags; short single pass の cDNA 配列。 |
 |  [GSS](/ddbj/gss.html)   |  genome survey sequences; short single pass のゲノム配列。  |
 |  STS  |  sequence tagged sites; genome sequencing の tag となる配列。<br> ゲノム上の位置情報、[primer_bind](/ddbj/features.html#primer_bind)feature,[PCR_conditions](/ddbj/qualifiers.html#PCR_conditions)qualifier などの記載を推奨します。 |

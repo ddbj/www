@@ -125,7 +125,7 @@ Sequence data is expressed with small letters only. Capital letter will
 be automatically converted to small letter.
 
 | Symbol | Meaning          | Explanation                   |
-| ------ | ---------------- | ----------------------------- |
+|---|
 | a      | a                | adenine                       |
 | c      | c                | cytosine                      |
 | g      | g                | guanine                       |
@@ -163,7 +163,7 @@ Example
 <br>
 
 | Abbreviation | Modified base description                                            |
-| ------------ | -------------------------------------------------------------------- |
+|---|
 | ac4c         | 4-acetylcytidine                                                     |
 | chm5u        | 5-(carboxyhydroxylmethyl)uridine                                     |
 | cm           | 2'-O-methylcytidine                                                  |
@@ -244,7 +244,7 @@ Those that are not included in "Amino acid codes", please refer to
 
 
 | Abbreviation | 1 letter abbreviation | Amino acid name             |
-| ------------ | --------------------- | --------------------------- |
+|---|
 | Ala          | A                     | Alanine                     |
 | Arg          | R                     | Arginine                    |
 | Asn          | N                     | Asparagine                  |
@@ -293,7 +293,7 @@ feature](/ddbj/cds-e.html).
 
 
 | Abbreviation | Amino acid name                                                                                                    |
-| ------------ | ------------------------------------------------------------------------------------------------------------------ |
+|---|
 | Aad          | 2-Aminoadipic acid                                                                                                 |
 | bAad         | 3-Aminoadipic acid                                                                                                 |
 | bAla         | beta-Alanine, beta-Aminoproprionic acid                                                                            |

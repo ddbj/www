@@ -42,10 +42,10 @@ lang: ja
 
 ## 連絡先  {#contact}
 
-[メッセージフォーム]({{ site.baseurl }}/contact-ddbj.html)よりご連絡ください。
+[メッセージフォーム](/contact-ddbj.html)よりご連絡ください。
 
-{::options parse_block_html="true" /}
-<address>
+
+<address markdown="1">
 
 電話 : 055-981-6853  
 FAX : 055-981-6849  
@@ -53,7 +53,7 @@ FAX : 055-981-6849
 
 </address>
 
-[DDBJ サービスへの問い合わせ]({{ site.baseurl }}/contact-ddbj.html#to-ddbj)
+[DDBJ サービスへの問い合わせ](/contact-ddbj.html#to-ddbj)
 
 ## 文献  {#reference}
 

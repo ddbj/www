@@ -38,18 +38,18 @@ TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxon
 
 #### トップページ（Tree画面）：[http://ddbj.nig.ac.jp/tx_search/](http://ddbj.nig.ac.jp/tx_search/)  {#トップページ（Tree画面）：http_//ddbj.nig.ac.jp/tx_search/_}
 
-![トップページ]({{ site.baseurl }}/assets/images/help/txhelp01.gif)  
+<img src="/assets/images/help/txhelp01.gif" alt="" title="トップページ" class="">  
 
 ### 検索フォームへの入力方法  {#search}
 
 検索フォームのテキスト入力欄に検索したい名前や数字を入力し、「送信」をクリックまたはリターンキーを押します。
 
-![検索フォームへの入力]({{ site.baseurl }}/assets/images/help/txhelp03.gif)
+<img src="/assets/images/help/txhelp03.gif" alt="" title="検索フォームへの入力" class="">
 
 * 1文字のワイルドカード"?"と複数文字のワイルドカード"*"が使用できます。
 - 論理演算子(AND, OR, NOT)は以下のように入力します。
 
-  | ---- | ---- |
+  |---|
   |  AND  |  スペース　または AND または &&   |
   |  OR  |  OR または  |
   |  NOT  |  NOT  |
@@ -60,11 +60,11 @@ TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxon
   2. 例の中から１つを選んでクリックすると、検索ボックスに入力されます。
   3. 生物名やtaxonomy_id などを、検索したいものに変更します。
 
-  ![検索フォーム Example]({{ site.baseurl }}/assets/images/help/txhelp02.gif)
+ <img src="/assets/images/help/txhelp02.gif" alt="" title="検索フォーム Example" class="">
 
 - デフォルトでは以下のフィールドを検索します。
 
-  | ---- | ---- | ---- |
+  |---|
   |  tax_id  |  anamorph  |  in_part  |
   |  scientific_name  |  teleomorph  |  includes  |
   |  common_name  |  authority  |  misnomer  |
@@ -86,13 +86,13 @@ TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxon
 - 検索に使用できるフィールド名は以下の通りです
 
   |  検索に使用できるフィールド名  |    |
-  | ---- | ---- |
+  |---|
   |tax_id<br>scientific_name<br>common_name<br>synonym<br>acronym<br>anamorph<br>teleomorph<br>authority<br>blast_name<br>equivalent_name<br>in_part<br>includes<br>misnomer<br>misspelling<br>type_material  |  フィールド名を指定すれば絞り込み検索が可能となります。<br> フィールド名を指定しない場合、これらのフィールド全てを検索します。  |
   |  lineagerank  |  フィールド名の指定が必要です。  |
 
 - 完全一致検索の場合には、フィールド名を以下のように指定します。
 
-  | ---- |
+  |---|
   |  scientific_name_ex  |
   |  common_name_ex  |
   |  synonym_ex  |
@@ -111,7 +111,7 @@ TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxon
 ### 検索の入力例  {#example}
 
 |  入力文字列	  |  検索内容  |
-| ---- | ---- |
+|---|
 |  human AND lineage:Mammalia   |  デフォルト検索フィールドに "human "を含み linage が Mammalia であるものを検索  |
 |  human AND rank:subspecies  |  デフォルト検索フィールドに "human "を含み rank: が subspecies であるものを検索  |
 |  human AND NOT(lineage:Eukaryota)	  |  デフォルト検索フィールドに "human "を含み linage が Eukaryota でないものを検索  |
@@ -133,7 +133,7 @@ TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxon
 
 検索フォームから検索した場合の結果表示画面です。
 
-![検索結果]({{ site.baseurl }}/assets/images/help/txhelp04.gif)
+<img src="/assets/images/help/txhelp04.gif" alt="" title="検索結果" class="">
 
 
 * 指定した taxonomy id の taxon の scientific name, taxonomy id, rank, division code, genetic code, mitochondrial genetic code, scientific name 以外の name class の名前, lineage が表示されます。
@@ -145,7 +145,7 @@ TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxon
 
 Search Result/Taxon Information 画面で lineage 中の名前をクリックすると、その taxon をトップにしたツリー画面が表示されます。
 
-![Tree 画面]({{ site.baseurl }}/assets/images/help/txhelp05.gif)
+<img src="/assets/images/help/txhelp05.gif" alt="" title="Tree 画面" class="">
 
 1. scientific name はTaxon Information画面へのリンク。
 2. taxonomy id は [NCBI Taxonomy Browser](//www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/) へのリンクになっています。

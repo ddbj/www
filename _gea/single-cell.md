@@ -79,7 +79,7 @@ DRA の生データとしては基本的に [fastq もしくは bam](/dra/submis
 細胞毎に BioSample を登録し、サンプル属性として細胞毎の情報を記載します。以下に例を示します。
 
 | \*sample\_name | ... | single\_cell\_identifier | inferred\_cell\_type | single\_cell\_well\_quality |
-| -------------- | --- | ------------------------ | -------------------- | --------------------------- |
+|---|
 | sample 1       | ... | cell 1                   | cell type A          | OK                          |
 | sample 2       | ... | cell 2                   | cell type B          | OK                          |
 | sample 3       | ... | cell 3                   | not applicable       | 2 cells                     |
@@ -99,7 +99,7 @@ DRA の生データとしては基本的に [fastq もしくは bam](/dra/submis
 ライブラリー（一般的に数百～数千の細胞を含む）毎に BioSample を登録します。
 
 | \*sample\_name | ... | tissue |
-| -------------- | --- | ------ |
+|---|
 | library 1      | ... | liver  |
 | library 2      | ... | heart  |
 | library 3      | ... | brain  |

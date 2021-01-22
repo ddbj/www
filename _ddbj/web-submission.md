@@ -115,8 +115,8 @@ related_pages:
     url: /ddbj/location.html
 ---
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 
 <span class="red">ヒトを対象とした研究データの登録について</span>
 
@@ -136,15 +136,15 @@ Web 版塩基配列登録システム（DDBJ Nucleotide Sequence Submission Syst
 
 <div class="nsss-icon">
 
-[![]({{ site.baseurl }}/assets/images/parts/pdf_icon.svg)]({{ site.baseurl }}/assets/files/pdf/ddbj/websubHelp_full-j.pdf)
+[![](/assets/images/parts/pdf_icon.svg)](/assets/files/pdf/ddbj/websubHelp_full-j.pdf)
 
-[マニュアル]({{ site.baseurl }}/assets/files/pdf/ddbj/websubHelp_full-j.pdf)
+[マニュアル](/assets/files/pdf/ddbj/websubHelp_full-j.pdf)
 
 </div>
 
 <div class="nsss-icon">
 
-[![]({{ site.baseurl }}/assets/images/parts/youtube_icon.svg)](https://youtu.be/JTCV7bG_KJc)
+[![](/assets/images/parts/youtube_icon.svg)](https://youtu.be/JTCV7bG_KJc)
 
 [NSSS の紹介](https://youtu.be/JTCV7bG_KJc)
 
@@ -152,7 +152,7 @@ Web 版塩基配列登録システム（DDBJ Nucleotide Sequence Submission Syst
 
 <div class="nsss-icon">
 
-[![]({{ site.baseurl }}/assets/images/parts/gdrive.svg)](https://drive.google.com/file/d/1KnEVC--SFglqdENRGLMehFP9NuQXyVrt)
+[![](/assets/images/parts/gdrive.svg)](https://drive.google.com/file/d/1KnEVC--SFglqdENRGLMehFP9NuQXyVrt)
 
 [NSSS の紹介](https://drive.google.com/file/d/1KnEVC--SFglqdENRGLMehFP9NuQXyVrt)
 
@@ -160,7 +160,7 @@ Web 版塩基配列登録システム（DDBJ Nucleotide Sequence Submission Syst
 
 <div class="nsss-icon">
 
-[![]({{ site.baseurl }}/assets/images/parts/info_icon.svg)](/ddbj/web-submission-help.html)
+[![](/assets/images/parts/info_icon.svg)](/ddbj/web-submission-help.html)
 
 [NSSS HELP](/ddbj/web-submission-help.html)
 
@@ -191,8 +191,8 @@ Web 版塩基配列登録システム（DDBJ Nucleotide Sequence Submission Syst
     アクセッション番号を取得済のデータの修正については「[登録データの修正・更新](/ddbj/update.html)」をご覧ください。
   - 入力途中でのトラブルは、"Submission ID" とともに、[「お問い合わせフォーム」](/contact-ddbj.html)よりご連絡ください。
 
-{::options parse_block_html="true" /}
-<div class="start-button">
+
+<div class="start-button" markdown="1">
 
 **[新規登録の開始](https://ddbj.nig.ac.jp/submission)**  
 次ページで **[Create new submission\]** をクリックしてください。

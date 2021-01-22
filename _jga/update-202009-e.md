@@ -60,17 +60,17 @@ If you already have a D-way account, you can apply applications to NBDC
 in your D-way account. For details, please see [this
 page](/account-integration-e.html).
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 
 After creating a new D-way account, the D-way account will be active in
 the NBDC application system after about 10 minutes.
 
 </div>
 
-{::nomarkdown}
+
 {% include image.html url="books/integration_d_way-e.png" caption="Account integration to D-way" class="w300" %}
-{:/}
+
 
 
 ## Group {#group}
@@ -107,9 +107,9 @@ need to request member addition to NBDC.
 Include all submitters as members. Emails regarding submissions are sent
 to members only.
 
-{::nomarkdown}
+
 {% include image.html url="books/subgrp_nbdc-e.png" caption="Data submission group" class="w400" %}
-{:/}
+
 
 ### Data user group {#usergrp}
 
@@ -125,9 +125,9 @@ collaborator but should not be included as a group member.
 The owner can remove a member without his/her permission. However, you
 need to request member addition to NBDC.
 
-{::nomarkdown}
+
 {% include image.html url="books/usergrp_nbdc-e.png" caption="Data use group" class="w400" %}
-{:/}
+
 
 ## Data submission and download steps {#steps}
 
@@ -138,9 +138,9 @@ application - download data from JGA". Please see each page for the
 [data submission](/jga/submission-step-e.html) and
 [download](/jga/download-e.html).
 
-{::nomarkdown}
+
 {% include image.html url="books/nbdc-jga-e.png" caption="Data submission and download steps" class="w550" %}
-{:/}
+
 
 ## Data transfer by scp {#transfer}
 
@@ -173,7 +173,7 @@ when accessed by the old 11-digit numbers.
 
 
 | Object     | Prefix | Current digits | New digits | New number examples |
-|------------|--------|----------------|------------|---------------------|
+|---|
 | Study      | JGAS   | 11             | 6          | JGAS000001          |
 | Data set   | JGAD   | 11             | 6          | JGAD000001          |
 | Policy     | JGAP   | 11             | 6          | JGAP000001          |

@@ -44,7 +44,7 @@ Internet browser, you may meet some trouble for executing the search.
 
 ## How to use  {#usage}
 
-![imagemap]({{ site.baseurl }}/assets/images/help/VecScreen-Usage-e.png)
+<img src="/assets/images/help/VecScreen-Usage-e.png" alt="" title="imagemap" class="">
 
 [](#query "Query") [](#www "WWW or Email") [](#database "Databases")
 [](#format "Output format") [](#execute "Execute")
@@ -90,8 +90,8 @@ Internet browser, you may meet some trouble for executing the search.
       
 ```
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 When the query sequence size is too big (a large number of sequences, or
 each sequence is very long), the result might not be displayed on the
 web screen normally because of the following reasons.
@@ -153,21 +153,21 @@ set in the default.
 HTML format, with alignment  
 : Result is obtained in HTML format. Graphic viewer showing vector
 contamination region on query, summary of the result, and alignment
-are displayed(([example]({{ site.baseurl }}/assets/images/help/VecScreen-HTMLwAlign.png)).
+are displayed(([example](/assets/images/help/VecScreen-HTMLwAlign.png)).
 
 HTML format, no alignment  
 : Result is obtained in HTML format. Graphic viewer showing vector
 contamination region on query and summary of the result are
-displayed([example]({{ site.baseurl }}/assets/images/help/VecScreen-HTMLwoAlign.png)).
+displayed([example](/assets/images/help/VecScreen-HTMLwoAlign.png)).
 
 Text list, with alignment  
 : Result is obtained in TEXT format. Summary of the result and
 alignment are
-displayed([example]({{ site.baseurl }}/assets/images/help/VecScreen-TEXTwAlign.png)).
+displayed([example](/assets/images/help/VecScreen-TEXTwAlign.png)).
 
 Text list, no alignment  
 : Result is obtained in TEXT format. Summary of the result is only
-displayed([example]({{ site.baseurl }}/assets/images/help/VecScreen-TEXTwoAlign.png)).
+displayed([example](/assets/images/help/VecScreen-TEXTwoAlign.png)).
 
 ### There is no parameter settings  {#There_is_no_parameter_settings}
 
@@ -254,7 +254,7 @@ your result using "Request ID" at any time until the cutoff date even if
 the browser is closed.
 
 {: .float-right }
-![VecScreen-RequestID]({{ site.baseurl }}/assets/images/help/VecScreen-RequestID-e.png)
+<img src="/assets/images/help/VecScreen-RequestID-e.png" alt="" title="VecScreen-RequestID" class="">
 
 {: .float-release }
 ## Result viewer  {#resultviewer}
@@ -265,7 +265,7 @@ on the left side of VecScreen to change the screen. Then, enter the
 Request ID and click "display".
 
 {: .float-right }
-![VecScreen-ResultViewer]({{ site.baseurl }}/assets/images/help/VecScreen-ResultViewer-e.png)
+<img src="/assets/images/help/VecScreen-ResultViewer-e.png" alt="" title="VecScreen-ResultViewer" class="">
 
 {: .float-release }
 ## Time limit for viewing a result  {#Time_limit_for_viewing_a_result}

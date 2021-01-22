@@ -37,7 +37,7 @@ New sequencing technologies have significantly increased the volume of data that
 
 The BioProject resource organizes both the projects and the data from those projects which is deposited into several archival databases maintained by members of the [INSDC](http://www.insdc.org/). This allows searching by characteristics of these projects, using the project description and project content across the [INSDC](http://www.insdc.org/)-associated databases.
 
-{::nomarkdown}
+
 {% include image.html url="submission/biosample_integration.jpg" caption="Overview of BioSample and BioProject integration with other DDBJ
 databases" class="w450" %}
 {:/}
@@ -94,9 +94,9 @@ Definition of an umbrella project may be done in collaboration with a funding so
 
 Some large initiatives are represented by more than one layer of umbrella projects (see Figure B below); for instance, a top-most level may identify the largest definition of the collaboration; a second level of umbrella projects identify the primary categories of data production; and finally a third layer represents the projects that actually generate the data that is submitted. The Human Microbiome project is an example of this type of complex hierarchy where the top-most project, [PRJNA43021](https://www.ncbi.nlm.nih.gov/bioproject?term=PRJNA43021), represents the most inclusive definition of the initiative, and a secondary level (such as [PRJNA28331](https://www.ncbi.nlm.nih.gov/bioproject?term=PRJNA28331)) identifies a major sub-project to sequence multiple reference genomes each of which has a distinct project accession.
 
-{::nomarkdown}
+
 {% include image.html url="submission/bp_org.jpg" caption="Schematic diagram of BioProject hierarchies. (A)Two layers. (B)Three layers." class="w450" %}
-{:/}
+
 
 Two layers (A)  
 : Initiatives may be organized as a single Umbrella project with one or many submitted projects that are connected to data. Example: [Neanderthal Metagenome](https://www.ncbi.nlm.nih.gov/bioproject/18309).
@@ -106,9 +106,9 @@ Three layers (B)
 
 ### Data release  {#data-release}
 
-{::nomarkdown}
+
 {% include image.html url="submission/release_re.jpg" caption="Triggering of data release between primary projects and data records." class="w450" %}
-{:/}
+
 
 You can "immediately release" or "hold" the registered primary project.
 
@@ -116,9 +116,9 @@ The submitted primary project data can be kept private until the linked DDBJ, DR
 
 FAQ: [How are linked BioProject/BioSample/sequence data released?](/faq/en/bp-bs-seq-release.html)
 
-{::nomarkdown}
+
 {% include image.html url="submission/um_pri_visibility.jpg" caption="Visibility of relationships between a public umbrella and primary projects." class="w450" %}
-{:/}
+
 
 <span class="red">An umbrella project cannot be kept private.</span>An umbrella project can have public and private primary projects. Hierarchical relationship between the public umbrella project and the un-released primary project is invisible.
 
@@ -217,7 +217,7 @@ An informative paragraph that describes the project and provides informative con
 : Select the primary general relevance of the study.
   
   | Relevance     | Description                                                                                                    |
-  | ------------- | -------------------------------------------------------------------------------------------------------------- |
+  |---|
   | Agricultural  |                                                                                                                |
   | Medical       |                                                                                                                |
   | Industrial    | Could include bio-remediation, bio-fuels and other areas of research where there are areas of mass production. |
@@ -298,7 +298,7 @@ Funding information for a project.
   NCBI individually assigns the [Project data type](https://www.ncbi.nlm.nih.gov/books/NBK54364/def-item/project-data-type/) based on the experimental data linked to the project. This type is not used by [EBI](https://www.ebi.ac.uk/ena/submit/project-format).
     
   | Project Data type                | Description                                                                                                                     |
-  | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+  |---|
   | Genome Sequencing                | whole, or partial, genome sequencing project (with or without a genome assembly)                                                |
   | Clone Ends                       | clone-end sequencing project                                                                                                    |
   | Epigenomics                      | DNA methylation, histone modification, chromatin accessibility datasets                                                         |
@@ -324,7 +324,7 @@ Funding information for a project.
 : The scope and purity of the biological sample used for the study.
 
   | Sample scope  | Description                                                                                                                                                                       |
-  | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+  |---|
   | Monoisolate   | A single animal, cultured cell-line, inbred population (or possibly a heterogeneous population when a single genome assembly is generated from the pooled sample; not preferred). |
   | Multiisolate  | Multiple individuals, a population (representation of a species).                                                                                                                 |
   | Multi-species | Sample represents multiple species.                                                                                                                                               |
@@ -338,7 +338,7 @@ Funding information for a project.
 : The type of material that is isolated from the sample for use in the experimental study.
 
   | Material       | Description                                                                                    |
-  | -------------- | ---------------------------------------------------------------------------------------------- |
+  |---|
   | Genome         | A whole genome initiative. May be only the nuclear genome. Use for DNA of a metagenome sample. |
   | Partial Genome | One or more chromosomes or replicons were experimentally purified.                             |
   | Transcriptome  | Transcript data.                                                                               |
@@ -353,7 +353,7 @@ Funding information for a project.
 : The scale, or type, of information that the study is designed to generate from the sample material.
 
   | Capture             | Description                                                                     |
-  | ------------------- | ------------------------------------------------------------------------------- |
+  |---|
   | Whole               | The project makes use of the whole sample material (most common case).          |
   | Clone Ends          | Capturing clone end data.                                                       |
   | Exome               | Capturing exon-specific data.                                                   |
@@ -372,7 +372,7 @@ Funding information for a project.
 : The core experimental approach used to obtain the data that is submitted to archival databases.
 
   | Methodology       | Description                                                     |
-  | ----------------- | --------------------------------------------------------------- |
+  |---|
   | Sequencing        | Sequencing using Sanger, 454, Illumina, etc wit                 |
   | Array             | Data/Sequence are generated by hybridization arrays.            |
   | Mass Spectroscopy | Data are generated by mass spectroscopy.                        |
@@ -391,7 +391,7 @@ Project goals with respect to the type of data that will be generated and submit
 : Project goals with respect to the type of data that will be generated and submitted to an INSDC-associated database. Select all relevant menu options.
 
   | Objective          | Description                                                                    |
-  | ------------------ | ------------------------------------------------------------------------------ |
+  |---|
   | Raw Sequence Reads | Submission of raw sequencing information as it comes out of machine.           |
   | Sequence           | Sequence which is not raw - meaning processed (clipped, matepaired, oriented). |
   | Analysis           | Higher level interpretation of the data.                                       |
@@ -477,7 +477,7 @@ General properties of target organism.
 : Select a cellularity.
 
   | Cellularity   |
-  | ------------- |
+  |---|
   | Unicellular   |
   | Multicellular |
   | Colonial      |
@@ -488,7 +488,7 @@ General properties of target organism.
 : Select a Reproduction.
 
   | Reproduction |
-  | ------------ |
+  |---|
   | Sexual       |
   | Asexual      |
 
@@ -503,7 +503,7 @@ General properties of target organism.
 : Select a Ploidy.
 
   | Ploidy        |
-  | ------------- |
+  |---|
   | Haploid       |
   | Diploid       |
   | Polyploid     |
@@ -522,7 +522,7 @@ Describe how many replicons this organism has, how they are named (e.g., 1, 2, 3
 : Select a replicon type.
 
   | Replicon type |
-  | ------------- |
+  |---|
   | Chromosome    |
   | Plasmid       |
   | Linkage Group |
@@ -535,7 +535,7 @@ Describe how many replicons this organism has, how they are named (e.g., 1, 2, 3
 : The replicon subcellular location. For instance, the nucleus, or a differentiated organella. Please select "Nuclear or Prokaryote" for the chromosomes of eularyotes, bacteria or archaea.
 
   | Location              |
-  | --------------------- |
+  |---|
   | Nuclear or Prokaryote |
   | Macronuclear          |
   | Nucleomorph           |
@@ -579,7 +579,7 @@ Phenotype of target organism.
 : Select a BioticRelationship.
 
   | BioticRelationship |
-  | ------------------ |
+  |---|
   | FreeLiving         |
   | Commensal          |
   | Symbiont           |
@@ -595,7 +595,7 @@ Phenotype of target organism.
 : Select a TrophicLevel.
 
   | TrophicLevel |
-  | ------------ |
+  |---|
   | Autotroph    |
   | Heterotroph  |
   | Mixotroph    |
@@ -608,7 +608,7 @@ When the target organism is prokaryote, please describe the general morphology i
 : Select all relevant menu options.
 
   | Shape        | Description                                          |
-  | ------------ | ---------------------------------------------------- |
+  |---|
   | Bacilli      | rod-shaped                                           |
   | Cocci        | spherical-shaped                                     |
   | Spirilla     | spiral-shaped                                        |
@@ -626,7 +626,7 @@ When the target organism is prokaryote, please describe the general morphology i
 : Choose gram positive or negative.
 
   | Gram     |
-  | -------- |
+  |---|
   | Positive |
   | Negative |
 
@@ -636,7 +636,7 @@ When the target organism is prokaryote, please describe the general morphology i
 : Choose a Motility.
 
   | Motility |
-  | -------- |
+  |---|
   | Yes      |
   | No       |
 
@@ -646,7 +646,7 @@ When the target organism is prokaryote, please describe the general morphology i
 : Choose enveloped or not.
 
   | Enveloped |
-  | --------- |
+  |---|
   | Yes       |
   | No        |
 
@@ -656,7 +656,7 @@ When the target organism is prokaryote, please describe the general morphology i
 : Choose target bacteria forms endospores or not.
 
   | Endospores |
-  | ---------- |
+  |---|
   | Yes        |
   | No         |
 
@@ -668,7 +668,7 @@ The general habitat for any organism. Please indicate additional extremophile pa
 : Choose a Habitat.
 
   | Habitat        |
-  | -------------- |
+  |---|
   | HostAssociated |
   | Aquatic        |
   | Terrestrial    |
@@ -682,7 +682,7 @@ The general habitat for any organism. Please indicate additional extremophile pa
 : Choose a Salinity.
 
   | Salinity           |
-  | ------------------ |
+  |---|
   | NonHalophilic      |
   | Mesophilic         |
   | ModerateHalophilic |
@@ -695,7 +695,7 @@ The general habitat for any organism. Please indicate additional extremophile pa
 : Choose an Oxygen requirement.
 
   | OxygenReq       |
-  | --------------- |
+  |---|
   | Aerobic         |
   | Microaerophilic |
   | Facultative     |
@@ -708,7 +708,7 @@ The general habitat for any organism. Please indicate additional extremophile pa
 : Choose a temperature range.
 
   | TemperatureRange  |
-  | ----------------- |
+  |---|
   | Cryophilic        |
   | Psychrophilic     |
   | Mesophilic        |
@@ -797,8 +797,8 @@ The general habitat for any organism. Please indicate additional extremophile pa
 
 # Submission to BioProject
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 Submission of research data from human subjects  
 : <span class="red">For submitting data from human subjects (human data) to the databases of DDBJ center, it is submitter's responsibility to ensure that the dignity and right of human subject are protected in accordance with all applicable laws, ordinances, guidelines and policies of submitter's institution. In principle, make sure to remove any direct personal identifiers of human subjects from your data to be submitted. Before submitting human data, read the "[Submission of research data from human subjects](/policies-e.html#human)".</span>
 </div>
@@ -825,8 +825,8 @@ Registration for a BioProject accession is not required in the following cases. 
 A BioProject accession is required for submission to [Sequence Read Archive](/dra/index-e.html), and microbial and eukaryotic genomes
 submissions to the DDBJ. If you obtain a BioProject accession from DDBJ, please submit your related biological data to the [DDBJ](http://www.ddbj.nig.ac.jp), [Sequence Read Archive](/dra/index-e.html)and [Trace Archive](/dta/index-e.html).
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 [The INSDC stopped to assigning strain-level taxonomy ID to microbes whose genomes have been submitted to the INSDC.](/news/en/2014-02-12-e.html)
 </div>
 
@@ -840,17 +840,17 @@ Submit a new project by clicking the \[New submission\].
 If there is no reply from submitters after three months of initial contact, submissions will be cancelled.
 </div>
 
-{::nomarkdown}
+
 {% include image.html url="books/hbp-01.jpg" caption="Submit a new BioProject" class="w450" %}
-{:/}
+
 
 To submit a BioProject, enter content from left to right tabs. Submitter information is copied with account information.
 
 For BioProject metadata, please see [here](#metadata).
 
-{::nomarkdown}
+
 {% include image.html url="books/hbp-02.jpg" caption="Enter project content" class="w450" %}
-{:/}
+
 
 To submit genome assemblies to DDBJ, a unique [Locus tag prefix](/ddbj/locus_tag-e.html)is necessary.
 
@@ -866,15 +866,15 @@ Prefix is managed by NCBI. When a project is submitted, our system tries to rese
 When multiple prefixes are necessary, please [contact us](/contact-ddbj-e.html).
 </div>
 
-{::nomarkdown}
+
 {% include image.html url="books/hbp-03.jpg" caption="Reserve a locus tag prefix" class="w450" %}
-{:/}
+
 
 Check the content in "OVERVIEW" and submit a project by clicking the \[Submit\].
 
-{::nomarkdown}
+
 {% include image.html url="books/hbp-04.jpg" caption="Submit BioProject" class="w450" %}
-{:/}
+
 
 The "OVERVIEW" tab continue to display submitted content. Updates will not be reflected in the "OVERVIEW" tab.
 
@@ -891,17 +891,17 @@ Temporary numbers with prefix PSUB are automatically assigned to submitted proje
 
 Umbrella project can be submitted as primary project in [submission account](https://ddbj.nig.ac.jp/D-way/). <span class="red">Be sure to tell the DDBJ BioProject staff that submitting project is umbrella by writing so in the [Private comments to DDBJ staff](#Private_comments). </span>Umbrell project cannot be kept private.
 
-{::nomarkdown}
+
 {% include image.html url="books/hbp-05.jpg" caption="Tell DDBJ staff that submitting project is umbrella" class="w450" %}
-{:/}
+
 
 ### Link primary project to umbrella  {#link-primary-project-umbrella}
 
 When submitting project, in the [Umbrella BioProject](#Area_linked-project), enter abstract and accession number of an umbrella to be linked. The DDBJ BioProject staff link the submitted primary project to the umbrella based on this information.
 
-{::nomarkdown}
+
 {% include image.html url="books/hbp-06.jpg" caption="Link to umbrella" class="w450" %}
-{:/}
+
 
 ### Release of projects  {#project-release}
 

@@ -59,7 +59,7 @@ spreadsheet](https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjk
 
 
 | Experiment Type                                     | Definition (EFO term accession)                       | Example                                                                      |
-| --------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------------------------------------------- |
+|---|
 | 4C                                                  | [EFO\_0007690](https://www.ebi.ac.uk/efo/EFO_0007690) | [E-MTAB-2180](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-2180)    |
 | antigen profiling                                   | [EFO\_0000747](https://www.ebi.ac.uk/efo/EFO_0000747) | [E-MTAB-3606](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3606/)   |
 | ATAC-seq                                            | [EFO\_0007045](https://www.ebi.ac.uk/efo/EFO_0007045) | [E-MTAB-3972](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3972)    |

@@ -167,7 +167,7 @@ Taxonomy database の間違いなどを発見された場合は、[ご連絡](/c
 DDBJ が運用している WWW 経由の[塩基配列登録システム](/ddbj/websub.html)では登録の際に、生物名入力において Category を選択します。  
 下図に Category を判断するためのフローチャートを示します。
 
-![]({{ site.baseurl }}/assets/images/ddbj/organism-j.png){:.w600}
+<img src="/assets/images/ddbj/organism-j.png" alt="" title="" class="w600">
 
 a. 人工的に構築した配列  
 : Category は "Artificially constructed or synthesized sequence" となりますので、メニューから選択してください。<br>[4. 人工的に構築した配列](#syn) を ご参照の上、生物名 (scientific name) を記載してください。
@@ -403,7 +403,7 @@ taxonomy database 登録申請のための参考情報
 : すでに種名が発表されている場合、記載文献を英語でお知らせください。
 
 提唱中の新種学名<a name="propose"></a>
-: 提唱する新種の名称に関しては、別途、taxonomy database でも管理しますので、お知らせください。<br>提唱する新種の名称が文献に公表された際、あるいは、名称が変更になった場合、DDBJ アップデート係![]({{ site.baseurl }}/assets/images/ddbj/ad_updt1.gif){:.life-size}までご連絡ください。
+: 提唱する新種の名称に関しては、別途、taxonomy database でも管理しますので、お知らせください。<br>提唱する新種の名称が文献に公表された際、あるいは、名称が変更になった場合、DDBJ アップデート<img src="/assets/images/ddbj/ad_updt1.gif" alt="" title="" class="life-size">までご連絡ください。
 
 以前に登録した配列のアクセッション番号<a name="acc"></a>   
 : 由来生物名が同一である塩基配列データを DDBJ/EMBL/GenBank に登録済みでしたら、アクセッション番号とともに、その旨をお知らせください。

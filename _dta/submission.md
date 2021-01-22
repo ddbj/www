@@ -25,8 +25,8 @@ lang: ja
 [DDBJ Trace Archive (DTA)](index.html) は，配列決定プロジェクトからのシングルパスリードの DNA sequence chromatograms (traces), base calls, quality estimates のためのデータベースです。 Trace Archive は [International Nucleotide Sequence Database Collaboration (INSDC)](/about/insdc.html#insd) のメンバーとして，DDBJ，[NCBI](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi) と [EBI](https://www.ebi.ac.uk/ena/) が国際協力して運営しています。[NCBI Trace Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi) が ID を発行管理しています。
 DTA から登録された trace データは [NCBI Trace Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi) で検索，取得することができます。
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 trace データは [DDBJ Sequence Read Archive](/dra/submission.html#dra) で受付けています。特に理由がない限り DRA に登録してください。
 </div>
 
@@ -34,7 +34,7 @@ trace データは [DDBJ Sequence Read Archive](/dra/submission.html#dra) で受
 
 必要な項目は [STRATEGY](#STRATEGY) と [TRACE_TYPE_CODE](#TRACE_TYPE_CODE) の組み合わせで決まります。 メタデータは [NCBI Trace Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi?cmd=retrieve&f=retrieve&m=obtain&s=search) で検索することができます。
 
-必須項目は [Validation Table]({{ site.baseurl }}/assets/files/submission/field_matrix_current.xls) で確認してください。
+必須項目は [Validation Table](/assets/files/submission/field_matrix_current.xls) で確認してください。
 
 必須<span class="red">*</span>  
 STRATEGY と TRACE_TYPE_CODE の組み合わせによっては必須 <span class="conditionally_required">*</span>
@@ -1059,10 +1059,10 @@ STRATEGY と TRACE_TYPE_CODE の組み合わせによっては必須 <span class
   [WELL_ID](#WELL_ID) は [PLATE_ID](#PLATE_ID) と一緒にシークエンス反応が行われた場所を特定するのに利用されます
   ([WELL_ID](#PLATE_ID) も参照)。通常シークエンス反応は標準的な 96 もしくは 384 穴プレートで行われます
   (下の標準的なウェルの配置図を参照)。  
-  ![標準的な 96 穴プレートの配置]({{ site.baseurl }}/assets/images/submission/96well.jpg
+  ![標準的な 96 穴プレートの配置](/assets/images/submission/96well.jpg
   "標準的な 96 穴プレートの配置")  
   標準的な 96 穴プレートの配置  
-  ![標準的な 384 穴プレートの配置]({{ site.baseurl }}/assets/images/submission/384well.jpg
+  ![標準的な 384 穴プレートの配置](/assets/images/submission/384well.jpg
   "標準的な 384 穴プレートの配置")  
   標準的な 384 穴プレートの配置
 
@@ -1179,8 +1179,8 @@ STRATEGY と TRACE_TYPE_CODE の組み合わせによっては必須 <span class
 
 ## trace データの登録  {#trace-data-submission}
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 ヒトを対象とした研究データの登録について<br>
 <span class="red">ヒトを対象とした全ての研究において DDBJ に送付するデータの由来である個人 (被験者)
 の情報・プライバシーは，適用されるべき法律，規定，登録者が所属している機関の方針に従い，登録者の責任において保護されている必要があります。  
@@ -1212,7 +1212,7 @@ TOP_DIRECTORY/traces/FLJ/FLJA1U0002.scf
 TOP_DIRECTORY/traces/FLJ/FLJA1U0003.scf
 ```
 
-[メタデータ](#metadata)ファイルは XML かタブ区切りテキストファイル形式にします。 STRATEGY と TRACE_TYPE_CODE の組み合わせで必須になるメタデータ項目一覧は [Validation Table]({{ site.baseurl }}/assets/files/submission/field_matrix_current.xls) をご覧ください。どちらの形式のメタデータでも最初に共通項目のセクションを含めることができます。 このセクションには各 trace に共通する項目を記載します。
+[メタデータ](#metadata)ファイルは XML かタブ区切りテキストファイル形式にします。 STRATEGY と TRACE_TYPE_CODE の組み合わせで必須になるメタデータ項目一覧は [Validation Table](/assets/files/submission/field_matrix_current.xls) をご覧ください。どちらの形式のメタデータでも最初に共通項目のセクションを含めることができます。 このセクションには各 trace に共通する項目を記載します。
 
 以下は TRACEINFO メタデータファイルの例です。
 

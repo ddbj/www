@@ -163,9 +163,9 @@ SAKURA とMSS，どちらでもお好きな方をご利用頂けますが，「5
 **A3.**The Barcode of Life Data Systems(BOLD) に登録予定のデータについては，塩基配列は，SAKURA または MSS へ， 波形データは，[DDBJ Trace Archive (DTA)](http:/dta/index.html) へ登録して下さい。  
 MSS 利用者のうち，一部の方では下記の図にあります DDBJ Trace Archive (DTA), [DDBJ sequence Read Archive(DRA)](http:/dra/index.html) の両方に登録して頂く場合がございます。
 
-{::nomarkdown}
+
 {% include image.html url="ddbj/column_20.jpg" caption="<span class='red'>*</span>1）SRA：NCBI Sequence Read Archive/ ENA Sequence Read Archive<br><span class='red'>*</span>2）Trace Archive：NCBI Trace Archive/ ENA Trace Archive" %}
-{:/}
+
 
 -----
 

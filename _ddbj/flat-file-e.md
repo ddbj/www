@@ -205,44 +205,44 @@ Please take that point into consideration when you refer search results.
 
 ## FIELD COMMENTS  {#FIELD_COMMENTS}
 
-{::options parse_block_html="true" /}
-<div id="LocusB">
+
+<div id="LocusB" markdown="1">
 <h3><a href="#LocusA">LOCUS</a></h3>
 </div>
 
 locus name, sequence length, molecule type, molecular form, division, the date of last release
 
-{::options parse_block_html="true" /}
-<div id="LocusNameB">
+
+<div id="LocusNameB" markdown="1">
 <h4><a href="#LocusNameA">Locus Name</a></h4>
 </div>
 
 Locus name is a unique ID of the entry in the database.
 In DDBJ, since July 1996, the locus name has been assigned the same as[accession number](#AccessionB).
 
-{::options parse_block_html="true" /}
-<div id="SequenceLengthB">
+
+<div id="SequenceLengthB" markdown="1">
 <h4><a href="#SequenceLengthA">Length of Sequence</a></h4>
 </div>
 
 Notice: No information is available on the Master record of MGA data.
 
-{::options parse_block_html="true" /}
-<div id="MoleculeTypeB">
+
+<div id="MoleculeTypeB" markdown="1">
 <h4><a href="#MoleculeTypeA">Molecule Type</a></h4>
 </div>
 
 According to the value of /[mol_type](/ddbj/qualifiers-e.html#mol_type) qqualifier for source feature, it is described as DNA, RNA, mRNA, rRNA, tRNA, or cRNA.
 
-{::options parse_block_html="true" /}
-<div id="MoleculeFormB">
+
+<div id="MoleculeFormB" markdown="1">
 <h4><a href="#MoleculeFormA">Molecular Form</a></h4>
 </div>
 
 This column indicates whether molecular form of nucleotide sequence is "linear" or "circular". If the entry is the full length of circular form, "circular" is appeared.
 
-{::options parse_block_html="true" /}
-<div id="DivisionB">
+
+<div id="DivisionB" markdown="1">
 <h4><a href="#DivisionA">Division</a></h4>
 </div>
 
@@ -275,15 +275,15 @@ b: other divisions
 |  UNA  |  the data not annotated<br>The UNA division is not used recently.  |
 |  [CON](con-e.html)  |  Contig / Constructed<br>To conjugate a series of entries, such as those submitted from a genome project, each of the three data banks constructs an entry and assign an accession number to a large scale sequence dataset. Such entries are classified into the CON division. The entry in the CON division has the information of joined accession numbers instead of the sequence data. The corresponding entries of the CON entry have been submitted to other divisions.  |
 
-{::options parse_block_html="true" /}
-<div id="ModificationDateB">
+
+<div id="ModificationDateB" markdown="1">
 <h4><a href="#ModificationDateA">The date of last release</a></h4>
 </div>
 
 The current publicized date is described. If the entry is updated and reopened to public site, this date will be changed.
 
-{::options parse_block_html="true" /}
-<div id="DefinitionB">
+
+<div id="DefinitionB" markdown="1">
 <h3><a href="#DefinitionA">DEFINITION</a></h3>
 </div>
 
@@ -372,8 +372,8 @@ TPA (Third Party Data) of human GAPD
 
 : - In the case of [TPA (Third Party data)](/ddbj/tpa-e.html), either of "TPA_exp" (for TPA:experimental) or "TPA_inf" (for TPA:inferential) is described at the beginning of DEFINITION.
 
-{::options parse_block_html="true" /}
-<div id="AccessionB">
+
+<div id="AccessionB" markdown="1">
 <h3><a href="#AccessionA">ACCESSION</a></h3>
 </div>
 
@@ -429,8 +429,8 @@ For MGA data
 : 
   | ```ZZZZZ0000000``` | number to a resource unit   |
 
-{::options parse_block_html="true" /}
-<div id="VersionB">
+
+<div id="VersionB" markdown="1">
 <h3><a href="#VersionA">VERSION</a></h3>
 </div>
 
@@ -457,8 +457,8 @@ Since the sequence of an MGA entry is not allowed to update, the version number 
 : | ```ZZZZZ000000```  | number to a resource unit |
   | ```1```   | version number   |  
 
-{::options parse_block_html="true" /}
-<div id="DblinkB">
+
+<div id="DblinkB" markdown="1">
 <h3><a href="#DblinkA">DBLINK</a></h3>
 </div>
 
@@ -479,8 +479,8 @@ DBLINK      BioProject:PRJDA12345
 | ```Sequence Read Archive``` | The name of linked database: [Sequence Read Archive](/dra/index-e.html) (SRA)  |
 | ```DRR012345, DRR012346``` | Linked ID in the database; SRA Run accession numbers  |
 
-{::options parse_block_html="true" /}
-<div id="KeywordsB">
+
+<div id="KeywordsB" markdown="1">
 <h3><a href="#KeywordsA">KEYWORDS</a></h3>
 </div>
 
@@ -491,8 +491,8 @@ For now, KEYWORDS lines are used to indicate [the detail category of the data](/
 [TSA](/ddbj/tsa-e.html), [HTC](/ddbj/htc-e.html), [HTG](/ddbj/htg-e.html),
 [GSS](/ddbj/gss-e.html), [WGS](/ddbj/wgs-e.html), [TPA](/ddbj/tpa-e.html) etc) information about experimental method, "finishing level" of genome sequencing and else, if necessary. See also [INSDC agreed methodological keywords](/ddbj/keyword-e.html).
 
-{::options parse_block_html="true" /}
-<div id="SourceB">
+
+<div id="SourceB" markdown="1">
 <h3><a href="#SourceA">SOURCE</a></h3>
 </div>
 
@@ -504,8 +504,8 @@ SOURCE      Homo sapiens (human)
 
 | ```Homo sapiens (human)``` | The scientific name from which the sequence is obtained. |
 
-{::options parse_block_html="true" /}
-<div id="OrganismB">
+
+<div id="OrganismB" markdown="1">
 <h4><a href="#OrganismA">ORGANISM</a></h4>
 </div>
 
@@ -524,8 +524,8 @@ The phylogenic lineage information based on the Unified Taxonomy Database is sta
 | ```Homo sapiens``` | The scientific name from which the sequence is obtained |
 | ```Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria; Primates; Catarrhini; Hominidae; Homo.``` | The phylogenic lineage information of Homo sapiens |
 
-{::options parse_block_html="true" /}
-<div id="Reference1B">
+
+<div id="Reference1B" markdown="1">
 <h3><a href="#Reference1A">REFERENCE 1</a></h3>
 </div>
 
@@ -539,8 +539,8 @@ REFERENCE   1   (bases 1 to 450)
 
 Notice: The portion, "(bases 1 to 450)", is not available on the Master record of MGA data.
 
-{::options parse_block_html="true" /}
-<div id="AuthorsB">
+
+<div id="AuthorsB" markdown="1">
 <h4><a href="#AuthorsA">AUTHORS</a></h4>
 </div>
 
@@ -552,8 +552,8 @@ Submitter(s) of the entry is/are indicated in principle. Submitter is responsibl
 
 | ```Mishima,H. and Shizuoka,T``` | The submitters of this entry |
 
-{::options parse_block_html="true" /}
-<div id="TitleB">
+
+<div id="TitleB" markdown="1">
 <h4><a href="#TitleA">TITLE</a></h4>
 </div>
 
@@ -563,8 +563,8 @@ Submitter(s) of the entry is/are indicated in principle. Submitter is responsibl
   TITLE     Direct Submission
 ```
 
-{::options parse_block_html="true" /}
-<div id="JournalB">
+
+<div id="JournalB" markdown="1">
 <h4><a href="#JournalA">JOURNAL</a></h4>
 </div>
 
@@ -607,8 +607,8 @@ When the submitters wish to keep their contact information disclosed, it will be
             Fax    :81-55-981-6849
 ```
 
-{::options parse_block_html="true" /}
-<div id="Reference2B">
+
+<div id="Reference2B" markdown="1">
 <h3><a href="#Reference2A">REFERENCE 2</a></h3>
 </div>
 
@@ -642,8 +642,8 @@ In the case of no schedule for publication except the international nucleotide d
   | ```TITLE``` | The title of the submission entered by submitter(s) is described. |
   | ```JOURNAL``` | "Published Only in Database" is indicated.<br/>The parenthetic number is the year when the entry has been firstly publicized.  |
   
-{::options parse_block_html="true" /}
-<div id="CommentB">
+
+<div id="CommentB" markdown="1">
 <h3><a href="#CommentA">COMMENT</a></h3>
 </div>
 
@@ -714,8 +714,8 @@ For MGA data
               tccgacGNNNNN and "Upper oligonucleotide N6":
   ```
 
-{::options parse_block_html="true" /}
-<div id="FeaturesB">
+
+<div id="FeaturesB" markdown="1">
 <h3><a href="#FeaturesA">FEATURES</a></h3>
 </div>
 
@@ -754,8 +754,8 @@ FEATURES             Location/Qualifiers
                      VFTDKDKAVAQLKGGAKKV"
 ```
 
-{::options parse_block_html="true" /}
-<div id="FeaturesSourceB">
+
+<div id="FeaturesSourceB" markdown="1">
 <h3><a href="#FeaturesSourceA">source</a></h3>
 </div>
 
@@ -771,8 +771,8 @@ Identifies the biological source of the specified span of the sequence.
 |  ```/organism="Homo sapiens"```  |  The sequence is obtained from human.  |
 |  ```/tissue_type="liver"```   |  The sequence is obtained from liver.  |
 
-{::options parse_block_html="true" /}
-<div id="CDSB">
+
+<div id="CDSB" markdown="1">
 <h3><a href="#CDSA">CDS</a></h3>
 </div>
 
@@ -786,8 +786,8 @@ Coding sequence; sequence of nucleotides that corresponds with the sequence of a
 |  ```/transl_table=1```   |  The nucleotide sequence of CDS region is translated into amino acid sequence according to genetic code table 1.  |
 |  ```/translation="MAKIKIGINGF(syncopation)AVAQLKGGAKKV"```  |  The nucleotide sequence of CDS region is conceptually translated into one-letter abbreviated amino acid sequence ([Amino Acid Codes](/ddbj/code-e.html#amino-1)), except setting the qualifier[exception](/ddbj/qualifiers-e.html#exception).<br/>In the case of setting the qualifier [pseudogene](/ddbj/qualifiers-e.html#pseudogene) or [pseudo](/ddbj/qualifiers-e.html#pseudo), /translation is NOT indicated.  |
 
-{::options parse_block_html="true" /}
-<div id="EndB">
+
+<div id="EndB" markdown="1">
 <h3><a href="#EndA">//</a></h3>
 </div>
 

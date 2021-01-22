@@ -56,9 +56,9 @@ lang: en
 
 The MicroArray Gene Expression Tabular ([MAGE-TAB](http://fged.org/projects/mage-tab/)) format has been developed and adopted by the functional genomics community as a means of representing and communicating data about a functional genomics experiment in a structured and standardised way. It was designed for data collection and annotation, as well as for data exchange between tools and databases, including submission tools to public repositories such as ArrayExpress and GEA. The full [specification](http://fged.org/projects/mage-tab/) outlines the format.
 
-{::nomarkdown}
+
 {% include image.html url="magetab/magetab_over.jpg" caption="Relationships between IDF, SDRF, ADF and raw and processed data files" class="w450" %}
-{:/}
+
 
 ## IDF  {#idf}
 
@@ -68,7 +68,7 @@ The IDF (Investigation Description Format) file is used to give an overview of t
 
 [IDF example](/gea/example-e.html#idf)
 
-| ----------------------------------------------------- | ------------------------------------------------------------------------------- | --- |
+|---|
 | [Comment\[GEAAccession\]](#Comment_idf)               | E-GEAD-369                                                                      |     |
 | MAGE-TAB Version                                      | 1.1                                                                             |     |
 | [Investigation Title](#Investigation_Title)           | Transcriptional profiling of Arabidopsis leaves exposed to elevated temperature |     |
@@ -212,9 +212,9 @@ Protocol Type<a name="Protocol_Type"></a>
 
 The SDRF (Sample and Data Relationship Format) describes the sample characteristics and the relationship between samples, arrays, data files etc. The information in the SDRF is organized so that it follows the natural flow of a functional genomics experiment. It begins with describing your samples and finishes with the names of the data files generated from the analysis of the experiment results. For single-channel microarray data one row in the SDRF is equal to one hybridization. For two-channel microarray data one row is equal to one channel. For sequencing submissions you generally create one row per raw file (Run) including paired sequencing.
 
-{::nomarkdown}
+
 {% include image.html url="magetab/sdrf.jpg" caption="SDRF overall structure" class="w450" %}
-{:/}
+
 
 ### SDRF sections  {#sdrf_sections}
 
@@ -223,13 +223,13 @@ The SDRF (Sample and Data Relationship Format) describes the sample characterist
     
   In un-registered submission, protocols in IDF are assigned temporal IDs (e.g., ESUB000001\_Protocol\_1) and are referenced by SDRF by these IDs. After accession numbers are assigned, these protocols are referenced by their accession numbers (P-GEAD-n).
 
-  | ------------------------------- | -------------------------------- | ----------------------- |
+  |---|
   | [Protocol Name](#Protocol_Name) | ESUB000500\_Protocol\_1          | ESUB000500\_Protocol\_2 |
   | [Protocol Type](#Protocol_Type) | nucleic acid extraction protocol | labelling protocol      |
     
   The SDRF describing the use of these protocols might look as follows:
 
-  | ----------------------------- | ----------------------------- |
+  |---|
   | [Protocol REF](#Protocol_REF) | [Protocol REF](#Protocol_REF) |
   | OSUB000500\_Protocol\_2       | OSUB000500\_Protocol\_3       |
     
@@ -238,14 +238,14 @@ The SDRF (Sample and Data Relationship Format) describes the sample characterist
 [Sources](#Sources_section)<a name="Sources_section"></a>   
 : Sources are the starting material for the experiment. The section starts with a [Source Name](#Source_Name) column, which will typically be followed by several [Characteristics](#Characteristics) columns.
 
-  {::options parse_block_html="true" /}
-  <div class="attention">
+  
+  <div class="attention" markdown="1">
 
   In the GEA submission system, a sample\_name of relevant BioSample is commonly used for Names of Source, Extract, Labeled Extract and Assay columns.
 
   </div> 
 
-  | ------------------------------------------ | ----------------------------------------------- | ---------------------------------------------- |
+  |---|
   | [Source Name](#Source_Name)                | [Characteristics\[organism\]](#Characteristics) | [Characteristics\[ecotype\]](#Characteristics) |
   | Arabidopsis control for heat stress\_rep 1 | Arabidopsis thaliana                            | Col-0                                          |
     
@@ -256,7 +256,7 @@ The SDRF (Sample and Data Relationship Format) describes the sample characterist
 [Extracts](#Extracts_section)<a name="Extracts_section"></a>  
 : Extracts refer to the extracted nucleic acid used in the experiment.
     
-  | ------------------------------------------ | ----------------------------- | ------------------------------------------ | ------------------------------- |
+  |---|
   | [Source Name](#Source_Name)                | [Protocol REF](#Protocol_REF) | [Extract Name](#Extract_Name)              | [Material Type](#Material_Type) |
   | Arabidopsis control for heat stress\_rep 1 | OSUB000500\_Protocol\_2       | Arabidopsis control for heat stress\_rep 1 | total RNA                       |
     
@@ -268,7 +268,7 @@ The SDRF (Sample and Data Relationship Format) describes the sample characterist
 Labeled Extracts<a name="Labeled_Extracts_section"></a>  
 : The Labeled Extracts in an experiment are those materials which have been conjugated to a label, prior to hybridization on an array. Typically there is only one labeled extract step. For microarray experiment submission to GEA, a [Label](#Label) column must be included with the [Labeled Extract Name](#Labeled_Extract_Name) column to indicate which label (and therefore scanner channel) corresponds to which sample:
     
-  | ------------------------------------------ | ------------------------------- | ----------------------------- | --------------------------------------------- | --------------- |
+  |---|
   | [Extract Name](#Extract_Name)              | [Material Type](#Material_Type) | [Protocol REF](#Protocol_REF) | [Labeled Extract Name](#Labeled_Extract_Name) | [Label](#Label) |
   | Arabidopsis control for heat stress\_rep 1 | total RNA                       | OSUB000500\_Protocol\_3       | Arabidopsis control for heat stress\_rep 1    | biotin          |
     
@@ -279,7 +279,7 @@ Labeled Extracts<a name="Labeled_Extracts_section"></a>
 Assays<a name="Assays_section"></a>  
 : The hybridization of labeled extract to an array or the sequencing of a library is a key step in the SDRF, since it connects the "materials" section of the SDRF to the "data" section. For an array submission to GEA, an [Array Design REF](#Array_Design_REF) column must be included with the [Assay Name](#Assay_Name) column, indicating which array design was used
     
-  | --------------------------------------------- | --------------- | ------------------------------------------ | ----------------------------------- | ------------------------------------- |
+  |---|
   | [Labeled Extract Name](#Labeled_Extract_Name) | [Label](#Label) | [Assay Name](#Assay_Name)                  | [Technology Type](#Technology_Type) | [Array Design REF](#Array_Design_REF) |
   | Arabidopsis control for heat stress\_rep 1    | biotin          | Arabidopsis control for heat stress\_rep 1 | array assay                         | A-AFFY-2                              |
     
@@ -290,7 +290,7 @@ Assays<a name="Assays_section"></a>
 [Raw Data Files](#Raw_Data_Files_section)<a name="Raw_Data_Files_section"></a>  
 : The raw data files generated by an investigation should be listed in an [Array Data File](#Array_Data_File) column following the [Assay Name](#Assay_Name) column.
     
-  | ------------------------------------------ | ----------------------------------- | ------------------------------------- | ----------------------------------- |
+  |---|
   | [Assay Name](#Assay_Name)                  | [Technology Type](#Technology_Type) | [Array Design REF](#Array_Design_REF) | [Array Data File](#Array_Data_File) |
   | Arabidopsis control for heat stress\_rep 1 | array assay                         | A-AFFY-2                              | Arabidopsis\_control\_rep\_1.CEL    |
     
@@ -301,7 +301,7 @@ Assays<a name="Assays_section"></a>
 [Processed Data Files](#Processed_Data_Files_section)<a name="Processed_Data_Files_section"></a>  
 : The processed data files which have been derived from the raw data should be listed in a [Derived Array Data File](#Derived_Array_Data_File) column for both microarray- and sequencing-based experiments. Note that this generally only applies to processed data arranged into one file per assay. If your files contain processed data columns for more than one assay, you should reformat these into the [Data Matrix format](/gea/matrix-e.html) and include them instead in a [Derived Array Data Matrix File](#Derived_Array_Data_Matrix_File) column.
 
-  | ------------------------------------------ | ----------------------------------- | ------------------------------------- | ----------------------------------- | --------------------------------------------------- |
+  |---|
   | [Assay Name](#Assay_Name)                  | [Technology Type](#Technology_Type) | [Array Design REF](#Array_Design_REF) | [Array Data File](#Array_Data_File) | [Derived Array Data File](#Derived_Array_Data_File) |
   | Arabidopsis control for heat stress\_rep 1 | array assay                         | A-AFFY-2                              | Arabidopsis\_control\_rep\_1.CEL    | Arabidopsis\_control\_rep\_1.processed.txt          |
     
@@ -310,7 +310,7 @@ Assays<a name="Assays_section"></a>
 [Factor Values](#Factor_Values_section)<a name="Factor_Values_section"></a>  
 : The factor values for an experiment are the values of the variables under investigation. For example, an experiment studying the effect of different temparature (heat stress) on a cell culture would have "temparature" as an experimental variable with "Unit" column to indicate the unit.
     
-  | ----------------------------------------- | ----------------------------------------------------------- | ----------------------------------------- | -------------------------------------------- | --------------------------------- |
+  |---|
   | [Source Name](#Source_Name)               | [Comment\[description\]](#Comment_sdrf)                     | [Assay Name](#Assay_Name)                 | [Factor Value\[temparature\]](#Factor_Value) | [Unit\[temperature unit\]](#Unit) |
   | Arabidopsis control for heat stress rep 1 | Arabidopsis control for heat stress, biological replicate 1 | Arabidopsis control for heat stress rep 1 | 22                                           | degree\_C                         |
   | Arabidopsis heat stress rep 1             | Arabidopsis heat stress, biological replicate 1             | Arabidopsis heat stress rep 1             | 37                                           | degree\_C                         |
@@ -321,7 +321,7 @@ Assays<a name="Assays_section"></a>
     
   GEA lists the variable in the IDF as "Experimental Factor Name" with associated Type (usually same with the name).
 
-  | ----------------------------------------------------- | ----------- |
+  |---|
   | [Experimental Factor Name](#Experimental_Factor_Name) | temperature |
   | [Experimental Factor Type](#Experimental_Factor_Type) | temperature |
     
@@ -475,7 +475,7 @@ Assays<a name="Assays_section"></a>
     
   Example SDRF:
     
-  | --------------------------------------- |
+  |---|
   | [Factor Value\[tissue\]](#Factor_Value) |
   | gall bladder                            |
   | kidney                                  |
@@ -487,7 +487,7 @@ Assays<a name="Assays_section"></a>
     
   When a combination of more than one variables are studied, factor values are described by more than one columns. Example SDRF:
 
-  | ----------------------------------------- | ------------------------------------- | -------------------------------- |
+  |---|
   | [Factor Value\[compound\]](#Factor_Value) | [Factor Value\[dose\]](#Factor_Value) | [Unit\[molar mass unit\]](#Unit) |
   | none                                      |                                       |                                  |
   | potassium cyanide                         | 25                                    | micromolar                       |
@@ -497,7 +497,7 @@ Assays<a name="Assays_section"></a>
 
 The factor name shoud be defined in accompanying IDF (GEA auto-fills the factor name in SDRF to IDF):
 
-| ----------------------------------------------------- | ------ |
+|---|
 | [Experimental Factor Name](#Experimental_Factor_Name) | tissue |
 | [Experimental Factor Type](#Experimental_Factor_Type) | tissue |
 
@@ -520,7 +520,7 @@ The factor name shoud be defined in accompanying IDF (GEA auto-fills the factor 
     
   For example, if a Protocol Name "Array Hybridization" is defined in the accompanying IDF, with Protocol Parameters "hyb temp", the following would be valid:
     
-  | ----------------------------- | ----------------------------------------------- | --------------------------------- |
+  |---|
   | [Protocol REF](#Protocol_REF) | [Parameter Value\[hyb temp\]](#Parameter_Value) | [Unit\[temperature unit\]](#Unit) |
   | Array Hybridization           | 55                                              | degree celsius                    |
     
@@ -550,7 +550,7 @@ The factor name shoud be defined in accompanying IDF (GEA auto-fills the factor 
 [Term Accession Number](#Term_Accession_Number)<a name="Term_Accession_Number"></a>    
 : Used as an attribute column following [Term Source REF](#Term_Source_REF) columns. This column contains the accession numbers from the term source used to identify the ontology or database terms in question. For example:
     
-  | --------------------------- | ---------------------------------------------- | ----------------------------------- | ----------------------------------------------- |
+  |---|
   | [Source Name](#Source_Name) | [Characteristics\[disease\]](#Characteristics) | [Term Source REF](#Term_Source_REF) | [Term Accession Number](#Term_Accession_Number) |
   | Sample 1                    | acute lymphoblastic leukemia                   | EFO                                 | EFO\_0000220                                    |
     

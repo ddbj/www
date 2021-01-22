@@ -241,14 +241,14 @@ Identifier を記載します。Probe ID が無い場合は gene symbol や他�
 １つの hybridization からのデータを含んでいる processed .txt file は以下のようになります。
 
 | Reporter Identifier | sample 1 normalised intensity | sample 1 background |
-| ------------------- | ----------------------------- | ------------------- |
+|---|
 | **probe_name_1**    | 233.5                         | 69.1                |
 | **probe_name_2**    | 129.4                         | 27.6                |
 
 以下は行ヘッダーに gene name が記載されている例です。
 
 | Human HGNC gene name | sample 1 normalised intensity | sample 1 background |
-| -------------------- | ----------------------------- | ------------------- |
+|---|
 | **CDKN2A**           | 233.5                         | 69.1                |
 | **BRCA2**            | 129.4                         | 27.6                |
 
@@ -259,21 +259,21 @@ protein アクセッション番号) を記載するようにしてください�
 サンプル毎の正規化された値:
 
 | Reporter<br>Identifier | sample 1<br>normalised | sample 2<br>normalised | sample 3<br>normalised | sample 4<br>normalised |
-| ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
+|---|
 | **probe_name_1**    | 26.9                | 44.3                | 62.3                | 58.5                |
 | **probe_name_2**    | 22.9                | 43.7                | 58.2                | 67.4                |
 
 <br>
 
 | GenBank<br>accession | sample 1<br>normalised | sample 2<br>normalised | sample 3<br>normalised | sample 4<br>normalised |
-| ----------------- | ------------------- | ------------------- | ------------------- | ------------------- |
+|---|
 | **BC000578**      | 26.9                | 44.3                | 62.3                | 58.5                |
 | **M31642**        | 22.9                | 43.7                | 58.2                | 67.4                |
 
 集計された値の matrix (一つのデータカラムが複数サンプルに対応する場合):
 
 | Reporter Identifier | drug A treated average | drug B treated average | untreated control average |
-| ------------------- | ---------------------- | ---------------------- | ------------------------- |
+|---|
 | **probe_name_1**    | 44.6                   | 89.3                   | 290.15                    |
 | **probe_name_2**    | 98.3                   | 36.7                   | 100.52                    |
 

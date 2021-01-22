@@ -154,7 +154,7 @@ You can make the files with some scripts, spread sheets (such as MS Excel), text
 Example:Annotation file (<span class="red">Required</span>)
 
 | Entry             | Feature                            | Location                                                         | Qualifier                          | Value                           |
-| ----------------- | ---------------------------------- | ---------------------------------------------------------------- | ---------------------------------- | ------------------------------- |
+|---|
 | [COMMON](#common) | <span class="red">SUBMITTER</span> |                                                                  | <span class="red">ab\_name</span>  | Robertson,G.R.                  |
 |                   |                                    |                                                                  | ab\_name                           | Mishima,H.                      |
 |                   |                                    |                                                                  | <span class="red">contact</span>   | Hanako Mishima                  |
@@ -216,9 +216,9 @@ Other
 ### References for Describing Biological Features  {#describing}
 
 | Name                                                       | Refix Date | Remarks                                                        |
-| ---------------------------------------------------------- | ---------- | -------------------------------------------------------------- |
+|---|
 | [Feature Table Definition](/ddbj/feature-table-e.html)        | 2016/11/17 | version 10.6                                                   |
-| [Feature/Qualifier usage matrix]({{ site.baseurl }}/assets/files/pdf/ddbj/fq-e.pdf) | 2016/11/09 |                                                                |
+| [Feature/Qualifier usage matrix](/assets/files/pdf/ddbj/fq-e.pdf) | 2016/11/09 |                                                                |
 | [Example of Submission](/ddbj/example-e.html)              | 2014/11/27 | Examples of features in [DDBJ flat file](/ddbj/flat-file.html) |
 
 ### COMMON {#common} 
@@ -235,7 +235,7 @@ Meta-base position 'E' for the location description
 : Example: rRNA feature in COMMON entry
     
   | Entry  | Feature | Location                           | Qualifier | Value    |
-  | ------ | ------- | ---------------------------------- | --------- | -------- |
+  |---|
   | COMMON | rRNA    | \<1..\>**E** | product   | 16S rRNA |
      
   There are many submissions that have common Feature information for all entries in their Qualifiers, and Values except their Locations because of difference of their sequence lengths, such as phylogenic studies with rRNA sequences.
@@ -246,7 +246,7 @@ Meta-description '@@\[entry\]@@ 'is available for clone, note, ff\_definition
 : Example: source feature in COMMON entry
        
   | Entry  | Feature | Location                       | Qualifier        | Value                                                                                               |
-  | ------ | ------- | ------------------------------ | ---------------- | --------------------------------------------------------------------------------------------------- |
+  |---|
   | COMMON | source  | 1..**E** | organism         | Homo sapiens                                                                                        |
   |        |         |                                | mol\_type        | genomic DNA                                                                                         |
   |        |         |                                | submitter\_seqid | **@@\[entry\]@@**                                                            |
@@ -264,7 +264,7 @@ Meta-description '@@\[entry\]@@ 'is available for clone, note, ff\_definition
 Example: SUBMITTER in annotation file　(<span class="red">Requierd</span>)
 
 | Entry  | Feature                            | Location | Qualifier                          | Value                          |
-| ------ | ---------------------------------- | -------- | ---------------------------------- | ------------------------------ |
+|---|
 | COMMON | <span class="red">SUBMITTER</span> |          | <span class="red">ab\_name</span>  | Robertson,G.R.                 |
 |        |                                    |          | ab\_name                           | Mishima,H.                     |
 |        |                                    |          | consrtm                            | Mouse Genome Consortium        |
@@ -286,7 +286,7 @@ Example: SUBMITTER in annotation file　(<span class="red">Requierd</span>)
 List of Qualifiers for SUBMITTER
 
 |  Qualifier  |  Legal characters for each Value (Remarks)   |  Number of letters  |
-| ---- | ---- | ---- |
+|---|
 |  ab_name (abbreviation of author name)  |  alphabets, .[period], ,[comma], -[hyphen], ' [apostrophe]  |  64  |
 |  contact (contact person)  |  alphabets, .[period], ,[comma], -[hyphen], ' [apostrophe],  [space] (In order of first, middle, and last names delimited with)  |  first(64),middle(128), last(64)  |
 |  consrtm (consortium)  |  alphabets, digits,  [space], -[hyphen], ' [apostrophe], .[period], _[underscore], .[comma], ( ) # & @ / ; : + *  |  255  |
@@ -325,7 +325,7 @@ List of Qualifiers for SUBMITTER
 Example: REFERENCE in annotation file　(<span class="red">Requierd</span>)
 
 | Entry | Feature                            | Location | Qualifier                         | Value                               |
-| ----- | ---------------------------------- | -------- | --------------------------------- | ----------------------------------- |
+|---|
 |       | <span class="red">REFERENCE</span> |          | <span class="red">title</span>    | Sequence and analysis of mouse ch.8 |
 |       |                                    |          | <span class="red">ab\_name</span> | Robertson,G.R.                      |
 |       |                                    |          | ab\_name                          | Mishima,H.                          |
@@ -412,7 +412,7 @@ List of Qualifiers for REFERENCE
 Example: DATE/hold\_date in annotation file
 
 | Entry  | Feature | Location | Qualifier  | Value    |
-| ------ | ------- | -------- | ---------- | -------- |
+|---|
 | COMMON | DATE    |          | hold\_date | 20231125 |
 
 
@@ -430,7 +430,7 @@ Example: DATE/hold\_date in annotation file
 Example: COMMENT and ST\_COMMENT in annotation file
 
 | Entry | Feature     | Location | Qualifier                | Value                                      |
-| ----- | ----------- | -------- | ------------------------ | ------------------------------------------ |
+|---|
 |       | COMMENT     |          | line                     | This clone was obtained at our laboratory. |
 |       | COMMENT     |          | line                     | Please visit our web site.                 |
 |       |             |          | line                     | URL:http://www.ddbj.nig.ac.jp              |
@@ -474,7 +474,7 @@ Example: COMMENT and ST\_COMMENT in annotation file
 
 
     | Qualifier                                      | designation and content                          | Remarks                                                             |
-    | ---------------------------------------------- | ------------------------------ | -------------------------------------------------------------- |
+    |---|
     | <span class="red">Assembly Method</span>       | Name of program and the version used assembling sequences. Mandatory.      |                                                                |
     | Assembly Name | Name that the submitter has given to that assembly of the genome. Mandatory for Eukaryote. | we recommend to describe in the format： [abbreviated name of species or common name of organism] + [version] (i.e. Btau_4.0) |
     | <span class="red">Genome Coverage</span>       | Approximate sequencing depth. Mandatory.              |                                                                |
@@ -483,7 +483,7 @@ Example: COMMENT and ST\_COMMENT in annotation file
     List of Qualifiers for Assembly-Data (<span class="red">Requierd</span>)
 
     |  Qualifier  |  designation and content  |
-    | ---- | ---- |
+    |---|
     |  <span class="red">Assembly Method</span>	  |  Name of program and the version used assembling sequences. Mandatory.  |
     |  Assembly Name	  |  Name and version for assembled sequences  |
     |  Coverage	  |  Approximate sequencing depth.  |
@@ -496,7 +496,7 @@ Example: COMMENT and ST\_COMMENT in annotation file
 Example: source and CDS features in annotation file(<span class="red">Requierd</span>)
 
 | Entry | Feature                         | Location                                                    | Qualifier                          | Value                    |
-| ----- | ------------------------------- | ----------------------------------------------------------- | ---------------------------------- | ------------------------ |
+|---|
 |       | <span class="red">source</span> | <span class="red">1..12297</span>                           | <span class="red">organism</span>  | Mus musculus             |
 |       |                                 |                                                             | <span class="red">mol\_type</span> | genomic\_DNA             |
 |       |                                 |                                                             | chromosome                         | 8                        |
@@ -514,7 +514,7 @@ Example: source and CDS features in annotation file(<span class="red">Requierd</
   - In [Feature Table Definition](/ddbj/feature-table-e.html), each Qualifier has a / \[slash\] on its head, however do not use slashes for Qualifiers in the annotation file.
   - Qualifiers marked with \* (organism、mol\_type) are mandatory items. Features, source and at least one other feature are mandatory items for each entry. Please be sure to input them correctly.
   - You can find the rule to describe Location on [Description of Location](/ddbj/location-e.html).
-  - You can see Qualifiers are legal for each Feature in [Feature/Qualifier Usage Matrix]({{ site.baseurl }}/assets/files/pdf/ddbj/fq-e.pdf). Some of
+  - You can see Qualifiers are legal for each Feature in [Feature/Qualifier Usage Matrix](/assets/files/pdf/ddbj/fq-e.pdf). Some of
     Features have mandatory Qualifier(s). Please be sure to specify Features and Qualifiers according to their name in the table. They are strictly defined such as case-sensitive (to distinguish upper case or lower), to use "\_" \[underscore\], and so on.
   - See also [Sample annotation file](#sample) and [Example of Submission](/ddbj/example-e.html)
   - When you describe CDS features, [Protein Coding Sequence; CDS feature](/ddbj/cds-e.html) would be helpful.
@@ -522,7 +522,7 @@ Example: source and CDS features in annotation file(<span class="red">Requierd</
 
 #### Requirements for Describing Value  {##describing_value}
 
-  - The legal character type for Values depends on the Qualifiers as shown in the table, [Feature/Qualifier Usage Matrix]({{ site.baseurl }}/assets/files/pdf/ddbj/fq-e.pdf) and [Feature Table Definition](/ddbj/feature-table-e.html).
+  - The legal character type for Values depends on the Qualifiers as shown in the table, [Feature/Qualifier Usage Matrix](/assets/files/pdf/ddbj/fq-e.pdf) and [Feature Table Definition](/ddbj/feature-table-e.html).
   - Please be sure to input (or not to input) Values in accordance with value types in tables.
 
 ### DIVISION {#division}
@@ -532,7 +532,7 @@ DIVISION feature in annotation file indicates that entries are corresponding onl
 Example: DIVISION in annotation file
 
 | Entry  | Feature  | Location | Qualifier | Value |
-| ------ | -------- | -------- | --------- | ----- |
+|---|
 | COMMON | DIVISION |          | division  | EST   |
 
 #### Requirements for Describing DIVISION  {#Requirements_for_Describing_DIVISION}
@@ -547,7 +547,7 @@ DATATYPE feature indicates that entries are corresponding to either of [WGS](/dd
 Example: DATATYPE in annotation file
 
 | Entry  | Feature  | Location | Qualifier | Value |
-| ------ | -------- | -------- | --------- | ----- |
+|---|
 | COMMON | DATATYPE |          | type      | WGS   |
 
 #### Requirements for Describing DATATYPE  {#Requirements_for_Describing_DATATYPE}
@@ -563,7 +563,7 @@ Please see [INSDC agreed methodological keywords](/ddbj/keyword-e.html), which q
 Example: KEYWORD in annotation file
 
 | Entry | Feature                                | Location | Qualifier                              | Value                              |
-| ----- | -------------------------------------- | -------- | -------------------------------------- | ---------------------------------- |
+|---|
 |       | <span class="font-bold">KEYWORD</span> |          | <span class="font-bold">keyword</span> | <span class="font-bold">ENV</span> |
 
 Specified values for KEYWORD/keyword(<span class="red">Requierd</span>)
@@ -661,7 +661,7 @@ Specified values for KEYWORD/keyword(<span class="red">Requierd</span>)
     Example: WGS draft genome(<span class="red">Requierd</span>)
     
     | Entry | Feature                          | Location | Qualifier                        | Value                                    |
-    | ----- | -------------------------------- | -------- | -------------------------------- | ---------------------------------------- |
+    |---|
     |       | <span class="red">KEYWORD</span> |          | <span class="red">keyword</span> | <span class="red">WGS</span>             |
     |       |                                  |          | <span class="red">keyword</span> | <span class="red">STANDARD\_DRAFT</span> |
     
@@ -676,7 +676,7 @@ Specified values for KEYWORD/keyword(<span class="red">Requierd</span>)
     Example : 5' EST(<span class="red">Requierd</span>)
     
     | Entry | Feature                          | Location | Qualifier                        | Value                                             |
-    | ----- | -------------------------------- | -------- | -------------------------------- | ------------------------------------------------- |
+    |---|
     |       | <span class="red">KEYWORD</span> |          | <span class="red">keyword</span> | <span class="red">EST</span>                      |
     |       |                                  |          | <span class="red">keyword</span> | <span class="red">5'-end sequence (5'-EST)</span> |
     
@@ -685,13 +685,13 @@ Specified values for KEYWORD/keyword(<span class="red">Requierd</span>)
     Example : For anti-sense strand;(<span class="red">Requierd</span>)
       
     | Entry | Feature                          | Location | Qualifier                     | Value                                                                         |
-    | ----- | -------------------------------- | -------- | ----------------------------- | ----------------------------------------------------------------------------- |
+    |---|
     |       | <span class="red">COMMENT</span> |          | <span class="red">line</span> | <span class="red">3'-EST sequences are presented as anti-sense strand.</span> |
     
     Example : For sense strand;(<span class="red">Requierd</span>)
     
     | Entry | Feature                          | Location | Qualifier                     | Value                                                                    |
-    | ----- | -------------------------------- | -------- | ----------------------------- | ------------------------------------------------------------------------ |
+    |---|
     |       | <span class="red">COMMENT</span> |          | <span class="red">line</span> | <span class="red">3'-EST sequences are presented as sense strand.</span> |
     
 ###### For HTG submissions {#htg}
@@ -701,7 +701,7 @@ Specified values for KEYWORD/keyword(<span class="red">Requierd</span>)
     Example I: containing unordered pieces(<span class="red">Requierd</span>)
 
     |  Entry  |  Feature  |  Location  |  Qualifier  |  Value  |
-    | ---- | ---- | ---- | ---- | ---- |
+    |---|
     |    |  <span class="red">KEYWORD</span>  |    |  <span class="red">keyword</span>  |  <span class="red">HTG</span>  |
     |    |    |    |  <span class="red">keywrod</span>  |  <span class="red">HTGS_PHASE1</span>  |
     |    |    |    |  <span class="red">keyword</span>  |  <span class="red">HTGS_DRAFT</span>   |
@@ -709,7 +709,7 @@ Specified values for KEYWORD/keyword(<span class="red">Requierd</span>)
     Example II: containing only ordered pieces(<span class="red">Requierd</span>)
 
     |  Entry  |  Feature  |  Location  |  Qualifier  |  Value  |
-    | ---- | ---- | ---- | ---- | ---- |
+    |---|
     |    |  <span class="red">KEYWORD</span>  |    |  <span class="red">keyword</span>   |  <span class="red">HTG</span>  |
     |    |    |    |  <span class="red">keyword</span>  |  <span class="red">HTGS_PHASE2</span>  |
 
@@ -720,7 +720,7 @@ The DBLINK line is used to link other databases, such as BioProject ID, BioSampl
 Example: DBLINK in annotation file(<span class="red">Requierd</span>)
 
 | Entry | Feature                         | Location | Qualifier                                      | Value                                 |
-| ----- | ------------------------------- | -------- | ---------------------------------------------- | ------------------------------------- |
+|---|
 |       | <span class="red">DBLINK</span> |          | <span class="red">project</span>               | <span class="red">PRJDB12345</span>   |
 |       |                                 |          | <span class="red">biosample</span>             | <span class="red">SAMD90000000</span> |
 |       |                                 |          | <span class="red">sequence read archive</span> | <span class="red">DRR999000</span>    |
@@ -746,7 +746,7 @@ described in an entry, if necessary.
 Example: ff\_definition in annotation file
 
 | Entry | Feature | Location | Qualifier      | Value                                                                                           |
-| ----- | ------- | -------- | -------------- | ----------------------------------------------------------------------------------------------- |
+|---|
 |       | source  | 1..516   | organism       | Mus musculus                                                                                    |
 |       |         |          | mol\_type      | mRNA                                                                                            |
 |       |         |          | ff\_definition | <span class="bold">@@\[organism\]@@</span> mRNA, clone: <span class="bold">@@\[clone\]@@</span> |
@@ -811,7 +811,7 @@ In cases of whole genome scale sequencing such as [HTG](/ddbj/htg-e.html) or lar
 Example: assembly\_gap in annotation file(<span class="red">Requierd</span>)
 
 | Entry | Feature       | Location | Qualifier         | Value                                    |
-| ----- | ------------- | -------- | ----------------- | ---------------------------------------- |
+|---|
 |       | assembly\_gap | 101..200 | estimated\_length | <span class="red">unknown</span>         |
 |       |               |          | gap\_type         | <span class="red">within scaffold</span> |
 |       |               |          | linkage\_evidence | <span class="red">paired-ends</span>     |
@@ -842,7 +842,7 @@ i.e. Complete genome sequence of a circular virus
 Example: TOPOLOGY in annotation file
 
 | Entry | Feature  | Location | Qualifier | Value |
-| ----- | -------- | -------- | --------- | ----- |
+|---|
 |       | TOPOLOGY |          | circular  |       |
 
 #### Requirements for Describing TOPOLOGY  {#Requirements_for_Describing_TOPOLOGY}
@@ -857,7 +857,7 @@ TPA/TSA submission.
 Example: PRIMARY\_CONTIG in annotation file
 
 | Entry | Feature         | Location  | Qualifier      | Value      |
-| ----- | --------------- | --------- | -------------- | ---------- |
+|---|
 |       | PRIMARY\_CONTIG | 1..438    | entry          | ZZ000010.1 |
 |       |                 |           | primary\_bases | 1..438     |
 |       | PRIMARY\_CONTIG | 377..696  | entry          | ZZ000011.1 |
@@ -1031,7 +1031,7 @@ Sequence file is not required when the sequence can be constructed from AGP file
 Example: AGP file
 
 | \#1       | 2    | 3    | 4 | 5 | 6              | 7        | 8    | 9            |
-| --------- | ---- | ---- | - | - | -------------- | -------- | ---- | ------------ |
+|---|
 | scaffold1 | 1    | 1345 | 1 | W | BZZZ01123456.1 | 1        | 1345 | \+           |
 | scaffold1 | 1346 | 2845 | 2 | N | 1500           | scaffold | yes  | align\_genus |
 | scaffold1 | 2846 | 4301 | 3 | W | BZZZ01123457.1 | 1        | 1456 | \+           |

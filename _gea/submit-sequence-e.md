@@ -67,15 +67,15 @@ BioProject and BioSample registration is required for DRA submission.
 
   - A description of the reseach effort.
 
-#### [BioSample](/biosample/submission-e.html) {#_BioSample} ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
+#### [BioSample](/biosample/submission-e.html) {#_BioSample}<img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">
 
   - A description of biologically or physically unique samples used to generate experimental data.
 
-#### [DRA](/dra/submission-e.html) {#_DRA} ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
+#### [DRA](/dra/submission-e.html) {#_DRA}<img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">
 
   - Raw sequencing reads and alignments.
 
-![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}metadata can be submitted as a tab-delimited text file.
+<img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">metadata can be submitted as a tab-delimited text file.
 
 ### 3\. Upload processed data files 
 
@@ -97,7 +97,7 @@ BioProject and BioSample registration is required for DRA submission.
 
   - The IDF (Investigation Description Format) file is used to give an overview of the experiment, including the experimental design, protocols and publication information.
 
-#### SDRF  {#sdrf}![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
+#### SDRF  {#sdrf<img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">
 
   - The SDRF (Sample and Data Relationship Format) describes the sample characteristics and the relationship between samples, data files etc.
   - SDRF template is generated from selected BioProject, BioSample(s) and DRA submission(s). Enter additional information.
@@ -109,8 +109,8 @@ BioProject and BioSample registration is required for DRA submission.
 
 ## Pre-submission checklist  {#checklist}
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Single-cell sequencing experiment</a></h4>
 <div class="accordion-content">
 
@@ -120,8 +120,8 @@ Refer to [ArrayExpress Single-cell submission guide](https://www.ebi.ac.uk/array
 </div>
 </div>
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">More than one technology per experiment</a></h4>
 <div class="accordion-content">
 
@@ -145,9 +145,9 @@ If there is no reply from submitters after three months of initial contact, subm
 
 </div>
 
-{::nomarkdown}
+
 {% include image.html url="books/seq-sub1.jpg" caption="Create a new submission" class="w450" %}
-{:/}
+
 
 List of submission status is as follows. The GEA team reviews submission whose status is in "submission\_validated" or "data\_error".
 
@@ -156,7 +156,7 @@ List of submission status
 {: .tablecaption}
 
 | Status            | Explanation                            |
-| ---------------- | ----------------------------- |
+|---|
 | New              | Metadata are not submitted.                     |
 | Data Submitted   | Metadata and data files are submitted.            |
 | Data Validating  | Validating data files.                 |
@@ -169,8 +169,8 @@ List of submission status
 
 ### Upload processed data files {#upload-data} 
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Upload files by using terminal (Linux/Mac OS X)</a></h4>
 <div class="accordion-content">
 
@@ -195,8 +195,8 @@ The login environment is private for the submitter. Users other than the submitt
 </div>
 </div>
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Upload files by using WinSCP (Windows)</a></h4>
 <div class="accordion-content">
 
@@ -220,21 +220,21 @@ Be sure to select the "binary mode" for file transfer. Do NOT select the "text m
 - User name: (D-way Login ID)
 - Password: (Leave empty)
 
-[![]({{ site.baseurl }}/assets/images/books/winscp1_400.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/winscp1_400.jpg "privatekey1")
+<a href="/assets/images/books/winscp1_400.jpg" title="privatekey1" class=""><img src="/assets/images/books/winscp1_400.jpg" alt="" title="" class="w300"></a>
 
 Please select the private key, which you created beforehand, from "Private key file" in "Authentication".
 
-[![]({{ site.baseurl }}/assets/images/books/winscp2_400.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/winscp2_400.jpg "privatekey2")
+<a href="/assets/images/books/winscp2_400.jpg" title="privatekey2" class=""><img src="/assets/images/books/winscp2_400.jpg" alt="" title="" class="w300"></a>
 
 Last, click the \[Login\] button in the lower center
 
-[![]({{ site.baseurl }}/assets/images/books/winscp3_400.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/winscp3_400.jpg "login to winSCP")
+<a href="/assets/images/books/winscp3_400.jpg" title="login to winSCP" class=""><img src="/assets/images/books/winscp3_400.jpg" alt="" title="" class="w300"></a>
 
 At the first time of login, a warning message is displayed; however, please select "Yes" (this message will not be displayed again). Next, enter the passphrase set for the keys.
 
 After login successfully, a folder of your PC is displayed at left, and your private directory in the server is displayed at right. Select the files at the left window and drag & drop them into the right window to transfer the files to the server.
 
-[![]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg){:.w500}]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg "transfer files")
+<a href="/assets/images/books/winscp4_400.jpg" title="transfer files" class=""><img src="/assets/images/books/winscp4_400.jpg" alt="" title="" class="w500"></a>
 
 You can delete the transferred files by selecting the files and clicking the \[Delete\] button.
 
@@ -242,8 +242,8 @@ You can delete the transferred files by selecting the files and clicking the \[D
 </div>
 </div>
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Upload sequence data by using Cyberduck (Mac OS X)</a></h4>
 <div class="accordion-content">
 
@@ -255,11 +255,11 @@ Download and install [the Cyberduck (http://cyberduck.ch)](http://cyberduck.ch).
 
 Run the Cyberduck and click the \[Open Connection\] button in the Cyberduck menu.
 
-[![]({{ site.baseurl }}/assets/images/books/Cyberduck_1.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/Cyberduck_1.jpg "open connection")
+<a href="/assets/images/books/Cyberduck_1.jpg" title="open connection" class=""><img src="/assets/images/books/Cyberduck_1.jpg" alt="" title="" class="w300"></a>
 
 Select "SFTP (SSH File Transfer Protocol)" .
 
-[![]({{ site.baseurl }}/assets/images/books/Cyberduck_2.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/Cyberduck_2.jpg "SFTP in the WinSCP")
+<a href="/assets/images/books/Cyberduck_2.jpg" title="SFTP in the WinSCP" class=""><img src="/assets/images/books/Cyberduck_2.jpg" alt="" title="" class="w300"></a>
 
 Set as follows and tick off "Use Public Key Authentication" in the More Options.
 
@@ -269,17 +269,17 @@ Set as follows and tick off "Use Public Key Authentication" in the More Options.
 - Password: (Leave empty)
 - Add to Keychain: (Check)
 
-[![]({{ site.baseurl }}/assets/images/books/Cyberduck_3.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/Cyberduck_3.jpg "key authentication")
+<a href="/assets/images/books/Cyberduck_3.jpg" title="key authentication" class=""><img src="/assets/images/books/Cyberduck_3.jpg" alt="" title="" class="w300"></a>
 
 By default, the private key is created in "User’s home folder \> .ssh folder (invisible in Finder) \> id\_rsa".
 
-[![]({{ site.baseurl }}/assets/images/books/Cyberduck_4.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/Cyberduck_4.jpg "private_key")
+<a href="/assets/images/books/Cyberduck_4.jpg" title="private_key" class=""><img src="/assets/images/books/Cyberduck_4.jpg" alt="" title="" class="w300"></a>
 
 At the first time of login, a warning message is displayed; however, please select "Always" (this message will not be displayed again).
 
 After login successfully, your private directory in the server is displayed in the window. Select the files in your PC and drag & drop them into the window to transfer the files to the server.
 
-[![]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg){:.w500}]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg "transfer")
+<a href="/assets/images/books/Cyberduck_5.jpg" title="transfer" class=""><img src="/assets/images/books/Cyberduck_5.jpg" alt="" title="" class="w500"></a>
 
 [« Close](javascript:void(0)){: .close-content-btn}
 </div>
@@ -302,9 +302,9 @@ You can delete an un-submitted GEA submission.
 
 </div>
 
-{::nomarkdown}
+
 {% include image.html url="books/array-sub2.jpg" caption="Enter submission information" class="w550" %}
-{:/}
+
 
 ### DRA  {#DRA}
 
@@ -312,9 +312,9 @@ Select a DRA submission registered in your account. If DRA submission is not reg
 
 To use DRA submissions obtained in the other account, please [contact GEA team](/contact-ddbj-e.html).
 
-{::nomarkdown}
+
 {% include image.html url="books/seq-dra.jpg" caption="Select a DRA submission for the GEA experiment" class="w550" %}
-{:/}
+
 
 ### BioProject  {#BioProject}
 
@@ -324,9 +324,9 @@ Select a BioProject used in the DRA submission when the GEA experiment and DRA s
 
 To use a project obtained in the other account, please [contact GEA team](/contact-ddbj-e.html).
 
-{::nomarkdown}
+
 {% include image.html url="books/seq-bp.jpg" caption="Select a BioProject for the GEA experiment" class="w550" %}
-{:/}
+
 
 ### IDF  {#idf}
 
@@ -338,15 +338,15 @@ Enter information for [IDF (Investigation Description Format)](/gea/metadata-e.h
   - Publication: Describe associated publications by PubMed ID or DOI. For unpublished manuscript, please [inform us](/contact-ddbj-e.html) the ID after assignment.
   - Data File Type: Processed data files are required for sequencing experiment submission. [Accepted Data Files Formats for sequencing experiment](/gea/datafile-e.html#seq_data). We strongly recommend to submitting processed data file per sample.
 
-{::nomarkdown}
+
 {% include image.html url="books/seq-idf.jpg" caption="Enter information for IDF" class="w600" %}
-{:/}
+
 
 ### SDRF  {#sdrf}
 
-{::nomarkdown}
+
 {% include image.html url="books/seq-sdrf-down.jpg" caption="Download a SDRF template file" class="w400" %}
-{:/}
+
 
 Enter information for [SDRF (Sample and Data Relationship Format)](/gea/metadata-e.html#sdrf).
 
@@ -380,15 +380,15 @@ Fields you need to add.
     - KU-2003
     - KU-PI499262
 
-{::nomarkdown}
+
 {% include image.html url="books/seq-sdrf-template.jpg" caption="SDRF template, yellow-highlighted fields need to be filled by submitter" class="w600" %}
-{:/}
+
 
 Select the entered SDRF file and continue.
 
-{::nomarkdown}
+
 {% include image.html url="books/seq-sdrf-up.jpg" caption="Select entered SDRF file" class="w450" %}
-{:/}
+
 
 ### Overview and submit  {#submit}
 
@@ -396,9 +396,9 @@ You can download the IDF and SDRF files and check them. When correction is neces
 
 Submit the IDF and SDRF metadata by clicking the "Submit" button.
 
-{::nomarkdown}
+
 {% include image.html url="books/seq-submit.jpg" caption="Check the IDF and SDRF and submit" class="w450" %}
-{:/}
+
 
 ### Validation  {#validation}
 
@@ -406,17 +406,17 @@ When data files described in the IDF and SDRF are not found in the submission di
 
 The validator checks submitted IDF and SDRF files according to the [validation rules.](/gea/validation-e.html) and gives warning and error messages. Errors need to be resolved for submission.
 
-{::nomarkdown}
+
 {% include image.html url="books/seq-validation.jpg" caption="Warning and error messages" class="w500" %}
-{:/}
+
 
 ### Accession numbers  {#accession}
 
 [GEA accession numbers](/gea/overview-e.html#acc) are issued to the completed GEA experiment. You can allow reviewers access to private records by [communicating a reviewer accesss token](/gea/reviewer-access-e.html).
 
-{::nomarkdown}
+
 {% include image.html url="books/seq-accession.jpg" caption="GEA accession numbers" class="w500" %}
-{:/}
+
 
 ## Update submission  {#update-submission}
 
@@ -458,8 +458,8 @@ To withdrawing archived Experiment, please [contact us](/contact-ddbj-e.html).
 
 MD5 (Message Digest Algorithm 5) is a hash function which calculates a hash value (MD5 number, 32-digit numbers and letters) of a given file. Because the MD5 number of the damaged file is distinct from the original one, we can check whether the transferred file is intact or not by comparing the numbers before and after the file transfer.
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
 <h3 class="toggle-content-btn"><a href="javascript:void(0)">Obtain MD5 number (Linux)</a></h3>
 <div class="accordion-content">
 
@@ -475,8 +475,8 @@ B636E0063E29709B6082F324C76D0911 file2
 </div>
 </div>
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
 <h3 class="toggle-content-btn"><a href="javascript:void(0)">Obtain MD5 number (Mac OS X)</a></h3>
 <div class="accordion-content">
 
@@ -492,24 +492,24 @@ B636E0063E29709B6082F324C76D0911 file2
 </div>
 </div>
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
 <h3 class="toggle-content-btn"><a href="javascript:void(0)">Obtain MD5 number (Windows)</a></h3>
 <div class="accordion-content">
 
 Install and run the [Fsum Frontend (sourceforge.net/projects/fsumfe/)](//sourceforge.net/projects/fsumfe/).  
 At first, tick off "md5".
 
-[![]({{ site.baseurl }}/assets/images/books/Fsum1.jpg){:.w500}]({{ site.baseurl }}/assets/images/books/Fsum1.jpg "Generate md5 in the tool 1")
+<a href="/assets/images/books/Fsum1.jpg" title="Generate md5 in the tool 1" class=""><img src="/assets/images/books/Fsum1.jpg" alt="" title="" class="w500"></a>
 
 After clicking the \[+\] button, open the sequence data files that you need. You can select multiple files at the same time.
 
-[![]({{ site.baseurl }}/assets/images/books/Fsum2.jpg){:.w500}]({{ site.baseurl }}/assets/images/books/Fsum2.jpg "Generate md5 in the tool 2")
+<a href="/assets/images/books/Fsum2.jpg" title="Generate md5 in the tool 2" class=""><img src="/assets/images/books/Fsum2.jpg" alt="" title="" class="w500"></a>
 
 Click the \[Calculate hashes\] button. The MD5 numbers of the files are displayed.  
 By clicking the \[Export\] button, you can obtain the list of the MD5 numbers as a html, a csv, or a xml file.
 
-[![]({{ site.baseurl }}/assets/images/books/Fsum3.jpg){:.w500}]({{ site.baseurl }}/assets/images/books/Fsum3.jpg "Generate md5 in the tool 3")
+<a href="/assets/images/books/Fsum3.jpg" title="Generate md5 in the tool 3" class=""><img src="/assets/images/books/Fsum3.jpg" alt="" title="" class="w500"></a>
 
 [« Close](javascript:void(0)){: .close-content-btn}
 </div>

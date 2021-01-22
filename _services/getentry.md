@@ -271,7 +271,7 @@ getentry で検索可能な各データベースのリリース番号や公開�
 
 gz圧縮ファイルのファイル名はformatの指定値によって以下のようになります。
 
-| ---- | ---- | 
+|---|
 [DNA系]flatfile     | flatfile.txt.gz
 [DNA系]xml          | insd.xml.gz    
 [DNA系]fasta        | fasta_na.txt.gz
@@ -283,7 +283,7 @@ gz圧縮ファイルのファイル名はformatの指定値によって以下の
 
 ### 上限（最大表示件数）  {#上限（最大表示件数）}
 
-| ---- | ---- |
+|---|
 デフォルト    | 10件   
 任意の件数を指定 | 指定した件数
 0 を指定    | 上限なし  
@@ -314,7 +314,7 @@ getentry の web API は以下の２つのプログラムからなります。
 
 以下の２種類があります
 
-| ---- | ---- |
+|---|
 通常の GET method | http://getentry.ddbj.nig.ac.jp/getentry?database=<span class="bold italic">データベース名</span>&accession_number=<span class="bold italic">アクセッション番号</span>&<span class="bold italic">追加のパラメーター（任意)</span>                                                                                                                                                                                                                                                                                                                                                                
 smart URL      | http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold italic">データベース名</span>/<span class="bold italic">アクセッション番号</span>  <br> http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold italic">データベース名</span>/<span class="bold italic">アクセッション番号</span>/?<span class="bold italic">追加のパラメーター(任意)</span>  <br> http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold italic">データベース名</span>/<span class="bold italic">アクセッション番号</span>/<span class="bold italic">リビジョン ID </span>/?<span class="bold italic">追加のパラメーター(任意)</span>
 
@@ -365,8 +365,8 @@ smart URL      | http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold itali
 </tbody>
 </table>
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 対象の Accession 番号が存在しない，または表示できない場合，該当の Accession 番号に対する結果は何も表示されず，limit で上限が制限されているときの数にもカウントされません。
 
 デフォルトでの表示件数が10件に設定されているため，それ以上の件数を指定する場合には "limit" で設定を変更して下さい。
@@ -435,8 +435,8 @@ smart URL      | http://getentry.ddbj.nig.ac.jp/getentry/<span class="bold itali
   </tbody>
 </table>
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 データベース指定を省略すると、naを指定したものとみなして処理します。
 
 DDBJ/EMBL/GenBank を選択すると、以下が検索対象となります。
@@ -483,8 +483,8 @@ getentry で検索可能な各データベースのリリース番号や公開�
   </tbody>
 </table>
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 バージョン番号と revision が同時に指定されているとき，revision が優先されます。
 </div>
 
@@ -539,11 +539,11 @@ getentry で検索可能な各データベースのリリース番号や公開�
 選択したデータベースでの有効な出力フォーマットの指定は以下の通りです。
 
 |  DNAデータベース  
-| ---- | ---- |
+|---|
 |  DDBJ / EMBL / GenBank / MGA  |  フラットファイル(DDBJ), <br> 全塩基配列FASTA, <br> CDS アミノ酸配列FASTA, <br>CDS 塩基配列FASTA, <br>INSD-XML_v1.4 |
 
 |  Proteinデータベース
-| ---- | ---- |
+|---|
 |  UniProt  |  default, アミノ酸配列FASTA  |
 |  PDB  |  default, seqres  |
 |  DAD  |  default, アミノ酸配列FASTA, 塩基配列FASTA  |
@@ -777,7 +777,7 @@ CGCGAATTCGCG
 
 gz圧縮ファイルのファイル名はformatの指定値によって以下のようになります。
 
-| ---- | ---- |
+|---|
 [DNA系]flatfile    |  flatfile.txt.gz
 [DNA系]xml          | insd.xml.gz    
 [DNA系]fasta        | fasta_na.txt.gz
@@ -793,7 +793,7 @@ gz圧縮ファイルのファイル名はformatの指定値によって以下の
 
 次ような画面が表示されます。
 
-![getentry-gz]({{ site.baseurl }}/assets/images/help/getentry-gz.gif)
+<img src="/assets/images/help/getentry-gz.gif" alt="" title="getentry-gz" class="">
 
 * アクセッション番号 FW383979を html 表示<br>[http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FW383979&filetype=html](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FW383979&filetype=html)<br>[http://getentry.ddbj.nig.ac.jp/getentry/na/AB601234/?filetype=html](http://getentry.ddbj.nig.ac.jp/getentry/na/AB601234/?filetype=html
 )
@@ -861,8 +861,8 @@ COMMENT     OS   Homo sapiens
   </tbody>
 </table>
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 件数が多い場合，表示に時間がかかる場合があります。また，ブラウザの性能により，全件表示できない場合があります。
 </div>
 
@@ -896,8 +896,8 @@ COMMENT     OS   Homo sapiens
 
 #### accession 番号<span class="red">（必須）</span>：検索対象のAccession番号を指定します。指定方法は getentry と同じです。  {#gh_accession}
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 特許庁由来アミノ酸配列の履歴はありません
 </div>
 
@@ -933,8 +933,8 @@ AB628096
   </tbody>
 </table>
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 指定したデータベースが履歴管理に対応していない場合は，空の結果を返します。
 </div>
 
@@ -980,7 +980,7 @@ http://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=AB628096&
 [http://getentry.ddbj.nig.ac.jp/gethistory/na/AB628096/?filetype=html ](http://getentry.ddbj.nig.ac.jp/gethistory/na/AB628096/?filetype=html)
 
 accession                                                                                                                                                                          | version                     | revision                                                                                                                                                                           | change                      | state
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | -----
+ |---|
 AB628096                                                                                                                                                                           | 1                           | [2015-05-29 18:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2015-05-29+18%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2015-05-29 18:00:00 release | live 
  |  | [2015-02-27 14:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2015-02-27+14%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2015-02-27 14:00:00 release | live                                                                                                                                                                              
  |  | [2014-11-25 13:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2014-11-25+13%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2014-11-25 13:00:00 release | live                                                                                                                                                                              
@@ -1028,7 +1028,7 @@ http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001
 [AB000001](http://getentry.ddbj.nig.ac.jp/getentry/na/AB000001)  
 [BD500001](http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001)
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 DRA は getentry の検索対象外のため、リンク設定方法は上記の方法とは異なります。[DRA のホームページ](/dra/index.html)をご参照下さい。
 </div>

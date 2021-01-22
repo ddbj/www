@@ -159,7 +159,7 @@ atttgaacacacctgctgtggctgtaactctgagatgtgctaaataaaccctctt
 例:アノテーションファイル （<span class="red">入力必須項目</span>）
 
 | Entry             | Feature                            | Location                                                         | Qualifier                          | Value                           |
-| ----------------- | ---------------------------------- | ---------------------------------------------------------------- | ---------------------------------- | ------------------------------- |
+|---|
 | [COMMON](#common) | <span class="red">SUBMITTER</span> |                                                                  | <span class="red">ab\_name</span>  | Robertson,G.R.                  |
 |                   |                                    |                                                                  | ab\_name                           | Mishima,H.                      |
 |                   |                                    |                                                                  | <span class="red">contact</span>   | Hanako Mishima                  |
@@ -221,9 +221,9 @@ Value
 ### Biological Feature 記載に関する参照先  {#describing}
 
 | 名称                                                  | 更新日        | 備考                                                   |
-| --------------------------------------------------- | ---------- | ---------------------------------------------------- |
+|---|
 | [Feature Table Definition](/ddbj/feature-table.html)   | 2016/11/17 | version 10.6                                         |
-| [Feature/Qualifier 対応一覧表]({{ site.baseurl }}/assets/files/pdf/ddbj/fq-j.pdf) | 2016/11/09 |                                                      |
+| [Feature/Qualifier 対応一覧表](/assets/files/pdf/ddbj/fq-j.pdf) | 2016/11/09 |                                                      |
 | [登録の見本](/ddbj/example.html)                         | 2014/11/27 | [DDBJ フラットファイル](/ddbj/flat-file.html)中の feature の記載例 |
 
 ### 共通情報 COMMON {#common} 
@@ -243,7 +243,7 @@ location に使用可能なメタ塩基番号'E'
 : 例: COMMON に rRNA feature を記載
 
   | Entry  | Feature | Location                           | Qualifier | Value    |
-  | ------ | ------- | ---------------------------------- | --------- | -------- |
+  |---|
   | COMMON | rRNA    | \<1..\>**E** | product   | 16S rRNA |
 
 : 配列長が異なるために Location が異なることを除けば、Feature 以下の Qualifier, Value の情報が全てのエントリで共通に記載可能なケース（例：rRNA 部分配列による系統解析など）があります。
@@ -253,7 +253,7 @@ clone, submitter\_seqid, note, ff\_definition に使用可能なメタ表記 '@@
 : 例: COMMON に source feature を記載
 
   | Entry  | Feature | Location                       | Qualifier        | Value                                                                                               |
-  | ------ | ------- | ------------------------------ | ---------------- | --------------------------------------------------------------------------------------------------- |
+  |---|
   | COMMON | source  | 1..**E** | organism         | Homo sapiens                                                                                        |
   |        |         |                                | mol\_type        | genomic DNA                                                                                         |
   |        |         |                                | submitter\_seqid | **@@\[entry\]@@**                                                             |
@@ -275,7 +275,7 @@ clone, submitter\_seqid, note, ff\_definition に使用可能なメタ表記 '@@
 例: アノテーションファイル内の SUBMITTER　（<span class="red">入力必須項目</span>）
 
 | Entry  | Feature                            | Location | Qualifier                          | Value                          |
-| ------ | ---------------------------------- | -------- | ---------------------------------- | ------------------------------ |
+|---|
 | COMMON | <span class="red">SUBMITTER</span> |          | <span class="red">ab\_name</span>  | Robertson,G.R.                 |
 |        |                                    |          | ab\_name                           | Mishima,H.                     |
 |        |                                    |          | consrtm                            | Mouse Genome Consortium        |
@@ -296,7 +296,7 @@ clone, submitter\_seqid, note, ff\_definition に使用可能なメタ表記 '@@
 SUBMITTER で使用する Qualifier のリスト
 
 |  Qualifier  |  Value 使用可能文字(注意事項)   |  Value 文字上限数  |
-| ---- | ---- | ---- |
+|---|
 |  ab_name (登録者名)  |  英, .[period], ,[comma], -[hyphen], ' [apostrophe]  |  64  |
 |  contact (コンタクトパーソン)  |  英, .[period], ,[comma], -[hyphen], ' [apostrophe],  [space] (first, middle, last name の順で間に space を入れて入力)  |  first(64),middle(128), last(64)  |
 |  consrtm (コンソーシアム名)  |  英, 数,  [space], -[hyphen], ' [apostrophe], .[period], _[underscore], .[comma], ( ) # & @ / ; : + *  |  255  |
@@ -340,7 +340,7 @@ SUBMITTER で使用する Qualifier のリスト
 例: アノテーションファイル内の REFERENCE （<span class="red">入力必須項目</span>）
 
 | Entry | Feature                            | Location | Qualifier                         | Value                               |
-| ----- | ---------------------------------- | -------- | --------------------------------- | ----------------------------------- |
+|---|
 |       | <span class="red">REFERENCE</span> |          | <span class="red">title</span>    | Sequence and analysis of mouse ch.8 |
 |       |                                    |          | <span class="red">ab\_name</span> | Robertson,G.R.                      |
 |       |                                    |          | ab\_name                          | Mishima,H.                          |
@@ -354,7 +354,7 @@ SUBMITTER で使用する Qualifier のリスト
 REFERENCE で使用する Qualifier のリスト
 
 |  Qualifier  |  Value 使用可能文字(注意事項)  |  Value 文字上限数  |
-| ---- | ---- | ---- |
+|---|
 |  title (論文のタイトル)  |  [back-slash], ` [back-quote] 以外  |  255  |
 |  ab_name (著者名)  |  英, .[period], ,[comma], -[hyphen], ' [apostrophe]  |  64  |
 |  consrtm (コンソーシアム名)  |  英, 数, [space], -[hyphen], ' [apostrophe], .[period], _[underscore],<br/>,[comma], ( ) # &amp; @ / ; : + *  |  255  |
@@ -393,7 +393,7 @@ REFERENCE で使用する Qualifier のリスト
 例: アノテーションファイル内の DATE と hold\_date
 
 | Entry  | Feature | Location | Qualifier  | Value    |
-| ------ | ------- | -------- | ---------- | -------- |
+|---|
 | COMMON | DATE    |          | hold\_date | 20231125 |
 
 #### DATE の書式  {#describing_date}
@@ -410,7 +410,7 @@ REFERENCE で使用する Qualifier のリスト
 例: アノテーションファイル内の COMMENT と ST\_COMMENT
 
 | Entry | Feature     | Location | Qualifier             | Value                                      |
-| ----- | ----------- | -------- | --------------------- | ------------------------------------------ |
+|---|
 |       | COMMENT     |          | line                  | This clone was obtained at our laboratory. |
 |       | COMMENT     |          | line                  | Please visit our web site.                 |
 |       |             |          | line                  | URL:http://www.ddbj.nig.ac.jp              |
@@ -464,7 +464,7 @@ COMMENT" があります。詳細は以下をご覧ください。
     （<span class="red">入力必須項目</span>）
 
     | Qualifier                                      | 意味・内容                          | 備考                                                             |
-    | ---------------------------------------------- | ------------------------------ | -------------------------------------------------------------- |
+    |---|
     | <span class="red">Assembly Method</span>       | アセンブルに使用したソフトの名前とそのバージョン。      |                                                                |
     | Assembly Name | ゲノムアセンブリの名称・バージョン。 真核生物の場合、必須。 | 推奨書式： \[organism の種名 (or 一般名)\] + \[version 数値\] （例；Btau\_4.0） |
     | <span class="red">Genome Coverage</span>       | ゲノム配列決定の深度、被覆度換算。              |                                                                |
@@ -473,7 +473,7 @@ COMMENT" があります。詳細は以下をご覧ください。
     Assembly-Data で使用する Qualifier のリスト （<span class="red">入力必須項目</span>）
         
     |  Qualifier  |  意味・内容  |
-    | ---- | ---- |
+    |---|
     |  <span class="red">Assembly Method</span>	  |  アセンブルに使用したソフトの名前とそのバージョン。必須。  |
     |  Assembly Name	  |  アセンブリの名称・バージョン。  |
     |  Coverage	  |  配列決定の深度、被覆度換算。  |
@@ -486,7 +486,7 @@ COMMENT" があります。詳細は以下をご覧ください。
 例: アノテーションファイル内の source と CDS feature　（<span class="red">入力必須項目</span>）
 
 | Entry | Feature                         | Location                                                    | Qualifier                          | Value                    |
-| ----- | ------------------------------- | ----------------------------------------------------------- | ---------------------------------- | ------------------------ |
+|---|
 |       | <span class="red">source</span> | <span class="red">1..12297</span>                           | <span class="red">organism</span>  | Mus musculus             |
 |       |                                 |                                                             | <span class="red">mol\_type</span> | genomic\_DNA             |
 |       |                                 |                                                             | chromosome                         | 8                        |
@@ -507,7 +507,7 @@ Table Definition](/ddbj/feature-table.html)をご参照ください。
   - source と organism、mol\_type は各エントリに最低１つ、必須となります。
   - Location の記載ルールは、[Location の記述法](/ddbj/location.html)を ご参照ください。
   - 各 Feature で使用可能な Qualifier は [Feature/Qualifier
-    対応表]({{ site.baseurl }}/assets/files/pdf/ddbj/fq-j.pdf) にて確認できます。 一部の Feature には、入力必須
+    対応表](/assets/files/pdf/ddbj/fq-j.pdf) にて確認できます。 一部の Feature には、入力必須
     Qualifier が指定されています。 対象の Feature で、Mandatory qualifier
     と指定されているものは必ず入力してください。 大文字と小文字の区別, \_
     \[underscore\] の使用も対応表の表記に従ってください。
@@ -522,7 +522,7 @@ Table Definition](/ddbj/feature-table.html)をご参照ください。
 
   - 使用可能な文字種は Qualifier に依存します。詳細は [Feature Table
     Definition](/ddbj/feature-table.html)および、[Feature/Qualifier
-    の対応一覧表]({{ site.baseurl }}/assets/files/pdf/ddbj/fq-j.pdf)をご参照ください。
+    の対応一覧表](/assets/files/pdf/ddbj/fq-j.pdf)をご参照ください。
   - Value type に従い、各 Qualifier で指定されている文字種を使用して、正しく入力してください。
 
 ### DIVISION {#division} 
@@ -540,7 +540,7 @@ DIVISION は、登録データが [CON](/documents/data-categories.html#con) /
 例: アノテーションファイル内の DIVISION
 
 | Entry  | Feature  | Location | Qualifier | Value |
-| ------ | -------- | -------- | --------- | ----- |
+|---|
 | COMMON | DIVISION |          | division  | EST   |
 
 #### DIVISION の書式  {#DIVISION_の書式}
@@ -557,7 +557,7 @@ DATATYPE は、登録データが [WGS](/ddbj/wgs.html), [TLS](/ddbj/tls.html),
 例: アノテーションファイル内の DATATYPE
 
 | Entry  | Feature  | Location | Qualifier | Value |
-| ------ | -------- | -------- | --------- | ----- |
+|---|
 | COMMON | DATATYPE |          | type      | WGS   |
 
 #### DATATYPE の書式  {#DATATYPE_の書式}
@@ -576,7 +576,7 @@ methodological keywords](/ddbj/keyword.html)をご参照ください。
 例: アノテーションファイル内の KEYWORD
 
 | Entry | Feature                                | Location | Qualifier                              | Value                              |
-| ----- | -------------------------------------- | -------- | -------------------------------------- | ---------------------------------- |
+|---|
 |       | <span class="font-bold">KEYWORD</span> |          | <span class="font-bold">keyword</span> | <span class="font-bold">ENV</span> |
 
 データ種別ごとの keyword の Value<span class="red">入力必須項目</span>
@@ -683,7 +683,7 @@ methodological keywords](/ddbj/keyword.html)をご参照ください。
     例: WGS draft genome（<span class="red">入力必須項目</span>）
         
     | Entry | Feature                          | Location | Qualifier                        | Value                                    |
-    | ----- | -------------------------------- | -------- | -------------------------------- | ---------------------------------------- |
+    |---|
     |       | <span class="red">KEYWORD</span> |          | <span class="red">keyword</span> | <span class="red">WGS</span>             |
     |       |                                  |          | <span class="red">keyword</span> | <span class="red">STANDARD\_DRAFT</span> |
     
@@ -698,7 +698,7 @@ methodological keywords](/ddbj/keyword.html)をご参照ください。
     例: 5' EST（<span class="red">入力必須項目</span>）
         
     | Entry | Feature                          | Location | Qualifier                        | Value                                             |
-    | ----- | -------------------------------- | -------- | -------------------------------- | ------------------------------------------------- |
+    |---|
     |       | <span class="red">KEYWORD</span> |          | <span class="red">keyword</span> | <span class="red">EST</span>                      |
     |       |                                  |          | <span class="red">keyword</span> | <span class="red">5'-end sequence (5'-EST)</span> |
     
@@ -708,13 +708,13 @@ methodological keywords](/ddbj/keyword.html)をご参照ください。
     例: anti-sense 鎖の登録（<span class="red">入力必須項目</span>）
         
     | Entry | Feature                          | Location | Qualifier                     | Value                                                                         |
-    | ----- | -------------------------------- | -------- | ----------------------------- | ----------------------------------------------------------------------------- |
+    |---|
     |       | <span class="red">COMMENT</span> |          | <span class="red">line</span> | <span class="red">3'-EST sequences are presented as anti-sense strand.</span> |
         
     例: sense 鎖の登録（<span class="red">入力必須項目</span>）
         
     | Entry | Feature                          | Location | Qualifier                     | Value                                                                    |
-    | ----- | -------------------------------- | -------- | ----------------------------- | ------------------------------------------------------------------------ |
+    |---|
     |       | <span class="red">COMMENT</span> |          | <span class="red">line</span> | <span class="red">3'-EST sequences are presented as sense strand.</span> |
     
 ###### HTG の場合 {#htg}
@@ -724,7 +724,7 @@ methodological keywords](/ddbj/keyword.html)をご参照ください。
     例I: 向きが不明な piece を含む場合（<span class="red">入力必須項目</span>）
 
     |  Entry  |  Feature  |  Location  |  Qualifier  |  Value  |
-    | ---- | ---- | ---- | ---- | ---- |
+    |---|
     |    |  <span class="red">KEYWORD</span>  |    |  <span class="red">keyword</span>  |  <span class="red">HTG</span>  |
     |    |    |    |  <span class="red">keywrod</span>  |  <span class="red">HTGS_PHASE1</span>  |
     |    |    |    |  <span class="red">keyword</span>  |  <span class="red">HTGS_DRAFT</span>   |
@@ -732,7 +732,7 @@ methodological keywords](/ddbj/keyword.html)をご参照ください。
     例 II: 向きが不明な piece が含まない場合（<span class="red">入力必須項目</span>）
 
     |  Entry  |  Feature  |  Location  |  Qualifier  |  Value  |
-    | ---- | ---- | ---- | ---- | ---- |
+    |---|
     |    |  <span class="red">KEYWORD</span>  |    |  <span class="red">keyword</span>   |  <span class="red">HTG</span>  |
     |    |    |    |  <span class="red">keyword</span>  |  <span class="red">HTGS_DRAFT</span>  |
 
@@ -743,7 +743,7 @@ DBLINK は、 BioProject ID、BioSample ID、Sequence Read Archive (DRA/ERA/SRA)
 例: アノテーションファイル内の DBLINK（<span class="red">入力必須項目</span>）
 
 | Entry | Feature                         | Location | Qualifier                                      | Value                                 |
-| ----- | ------------------------------- | -------- | ---------------------------------------------- | ------------------------------------- |
+|---|
 |       | <span class="red">DBLINK</span> |          | <span class="red">project</span>               | <span class="red">PRJDB12345</span>   |
 |       |                                 |          | <span class="red">biosample</span>             | <span class="red">SAMD90000000</span> |
 |       |                                 |          | <span class="red">sequence read archive</span> | <span class="red">DRR999000</span>    |
@@ -779,7 +779,7 @@ ff\_definition は、The DDBJ/EMBL/GenBank Feature Table: Definition
 例: アノテーションファイル内の ff\_definition
 
 | Entry | Feature | Location | Qualifier      | Value                                                                                           |
-| ----- | ------- | -------- | -------------- | ----------------------------------------------------------------------------------------------- |
+|---|
 |       | source  | 1..516   | organism       | Mus musculus                                                                                    |
 |       |         |          | mol\_type      | mRNA                                                                                            |
 |       |         |          | ff\_definition | **@@\[organism\]@@** mRNA, clone: **@@\[clone\]@@** |
@@ -855,7 +855,7 @@ sequencing gap 領域を下記の要領で、assembly\_gap feature を用いて�
 例: アノテーションファイル内の assembly\_gap（<span class="red">入力必須項目</span>）
 
 | Entry | Feature       | Location | Qualifier         | Value                                    |
-| ----- | ------------- | -------- | ----------------- | ---------------------------------------- |
+|---|
 |       | assembly\_gap | 101..200 | estimated\_length | <span class="red">unknown</span>         |
 |       |               |          | gap\_type         | <span class="red">within scaffold</span> |
 |       |               |          | linkage\_evidence | <span class="red">paired-ends</span>     |
@@ -886,7 +886,7 @@ TOPOLOGY は登録塩基配列全体の形状が環状で、最初の塩基と�
 例: アノテーションファイル内の TOPOLOGY
 
 | Entry | Feature  | Location | Qualifier | Value |
-| ----- | -------- | -------- | --------- | ----- |
+|---|
 |       | TOPOLOGY |          | circular  |       |
 
 #### TOPOLOGY の書式  {#TOPOLOGY_の書式}
@@ -902,7 +902,7 @@ TPA/TSA データ登録専用の Feature, Qualifier です。
 例: アノテーションファイル内の PRIMARY\_CONTIG
 
 | Entry | Feature         | Location  | Qualifier      | Value      |
-| ----- | --------------- | --------- | -------------- | ---------- |
+|---|
 |       | PRIMARY\_CONTIG | 1..438    | entry          | ZZ000010.1 |
 |       |                 |           | primary\_bases | 1..438     |
 |       | PRIMARY\_CONTIG | 377..696  | entry          | ZZ000011.1 |
@@ -1067,7 +1067,7 @@ AGP ファイルの書式は、UCSC, EBI および NCBI により開発されま
 例： AGP ファイル
 
 | \#1       | 2    | 3    | 4 | 5 | 6              | 7        | 8    | 9            |
-| --------- | ---- | ---- | - | - | -------------- | -------- | ---- | ------------ |
+|---|
 | scaffold1 | 1    | 1345 | 1 | W | BZZZ01123456.1 | 1        | 1345 | \+           |
 | scaffold1 | 1346 | 2845 | 2 | N | 1500           | scaffold | yes  | align\_genus |
 | scaffold1 | 2846 | 4301 | 3 | W | BZZZ01123457.1 | 1        | 1456 | \+           |

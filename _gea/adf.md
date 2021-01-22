@@ -65,9 +65,9 @@ ADF ファイルはタブ区切りテキストファイル形式 (*.txt) でス�
 
 ADF の例（一部）:
 
-{::nomarkdown}
+
 {% include image.html url="magetab/adf1.png" caption="ADF の例（一部）" class="w600" %}
-{:/}
+
 
 ## ADF メタデータヘッダー  {#adf-meta}
 
@@ -75,14 +75,14 @@ ADF の例（一部）:
 が提供している ADF
 テンプレートにはヘッダーが埋め込まれているのでゼロから作成する必要はありません。テンプレート中のヘッダーは編集せず各フィールドに可能な限り内容を記載してください（下の例では青字）。
 
-{::nomarkdown}
+
 {% include image.html url="magetab/adf2.png" caption="ADF メタデータヘッダー" class="w600" %}
-{:/}
+
 
 ADF ヘッダーフィールドリスト (* 必須フィールド):
 
 | No. | ADF header field                  | What is it?                                                                                                                     | Allowed values                                                                                                                                                                                                  | Example                                                                                                                                                                                                          |
-| --- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|---|
 | 1   | * Array Design Name              | アレイデザインの内容が示すタイトル。製造業者 (例 Agilent) やラボの名称、対象生物種、バージョン番号、アレイの用途 (例 genotyping)、プローブ/フィーチャーの数 (例 450k) を含めてください。                  |                                                                                                                                                                                                                 | Agilent human micoRNA microarray miRBase Release 14.0, 8x15k (GridName 029297, 82 cols x 192 rows)                                                                                                               |
 | 2   | Version                           | アレイデザインのバージョン番号。                                                                                                                |                                                                                                                                                                                                                 | version 3.0                                                                                                                                                                                                      |
 | 3   | * Provider                       | アレイデザインの登録者の名前。                                                                                                                 |                                                                                                                                                                                                                 | Mishima Taro                                                                                                                                                                                                     |
@@ -102,10 +102,10 @@ ADF ヘッダーフィールドリスト (* 必須フィールド):
 ADF テーブルセクション中のヘッダーも controlled vocabulary を使います。GEA が提供している ADF
 テンプレートファイルには正しいヘッダーが含まれているのでゼロから作成する必要はありません。テンプレート中のヘッダーは編集しないでください。
 
-  - [composite_element_array_ADF_template.xls]({{ site.baseurl }}/assets/files/magetab/adf/composite_element_array_ADF_template.xls)
-  - [commercial_array_header_template.xls]({{ site.baseurl }}/assets/files/magetab/adf/commercial_array_header_template.xls)
-  - [reporter_only_array_ADF_template.xls]({{ site.baseurl }}/assets/files/magetab/adf/reporter_only_array_ADF_template.xls)
-  - [spotted_array_ADF_template.xls]({{ site.baseurl }}/assets/files/magetab/adf/spotted_array_ADF_template.xls)
+  - [composite_element_array_ADF_template.xls](/assets/files/magetab/adf/composite_element_array_ADF_template.xls)
+  - [commercial_array_header_template.xls](/assets/files/magetab/adf/commercial_array_header_template.xls)
+  - [reporter_only_array_ADF_template.xls](/assets/files/magetab/adf/reporter_only_array_ADF_template.xls)
+  - [spotted_array_ADF_template.xls](/assets/files/magetab/adf/spotted_array_ADF_template.xls)
 
 ### Feature、reporter と composite element  {#feature}
 
@@ -116,9 +116,9 @@ Row、Column と Row で示します。これらの四座標はマイクロア�
 が重複することはありません。 Control spot のような何もスポットされていないスポットも含め全ての
 feature を ADF ファイルで記載してください。 以下に四座標の図式を示します。
 
-{::nomarkdown}
+
 {% include image.html url="magetab/adf_column.jpg" caption="Block Column と Block Row 座標" class="w300" %}
-{:/}
+
 
 **Reporter (全てのアレイで必須):**
 
@@ -137,9 +137,9 @@ element を持ちます。
 
 以下に７つの feature、２つの reporter と１つの composite element を持つ仮想的な例を示します。
 
-{::nomarkdown}
+
 {% include image.html url="magetab/adf3.png" caption="ADF feature、reporter、composite element の例" class="w450" %}
-{:/}
+
 
 ### Reporter のアノテーション  {#ann-reporters}
 
@@ -191,9 +191,9 @@ chrName:start position-end position 形式で記載します（例 chr1:1234-567
 
 下記は仮想的な reporter アノテーションの例です。同一データベースの複数アクセッション番号をセミコロンで区切って列挙しています。
 
-{::nomarkdown}
+
 {% include image.html url="magetab/adf4.png" caption="Reporter の ADF アノテーション" class="w450" %}
-{:/}
+
 
 ### Repoter role - experimental もしくは control  {#reporter-role}
 
@@ -205,7 +205,7 @@ chrName:start position-end position 形式で記載します（例 chr1:1234-567
 control type に記載できる語彙は以下です。
 
 | 語句                                                                      | 意味                                                                      |
-| ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+|---|
 | [array control biosequence](http://www.ebi.ac.uk/efo/EFO_0005433)       | ヒトのマイクロアレイにおける E. coli のスパイク配列。[Reporter Sequence](#ann-reporters) が必須。 |
 | [array control buffer](http://www.ebi.ac.uk/efo/EFO_0005434)            | アレイにスポットされたバッファー。[Reporter Sequence](#ann-reporters) は空にします。            |
 | [array control empty](http://www.ebi.ac.uk/efo/EFO_0005435)             | 何もアレイにスポットされていない（ブランク）。[Reporter Sequence](#ann-reporters) は空にします。      |
@@ -217,9 +217,9 @@ control type に記載できる語彙は以下です。
 
 ADF テーブルでの reporter role の例。
 
-{::nomarkdown}
+
 {% include image.html url="magetab/adf5.png" caption="Reporter role" class="w500" %}
-{:/}
+
 
 ### 生物種による reporter grouping（複数生物種 ADF の場合のみ）  {#reporter-groupings}
 
@@ -229,9 +229,9 @@ Homo sapiens。
 
 ウイルスとヒトの microRNA 配列から構成されるアレイの例。
 
-{::nomarkdown}
+
 {% include image.html url="magetab/adf6.png" caption="生物種による reporter grouping（複数生物種 ADF の場合のみ）" class="w500" %}
-{:/}
+
 
 ### Composite element のアノテーション  {#ann-composite-elements}
 
@@ -239,6 +239,6 @@ Composite element のアノテーションは Composite Element Database Entry [
 カラムを使って外部データベース参照によって記述します。加えて Composite Element Comment カラムを
 Composite element をコメント注釈することに使うことができます。
 
-{::nomarkdown}
+
 {% include image.html url="magetab/adf7.png" caption="Composite element のアノテーション" class="w500" %}
-{:/}
+

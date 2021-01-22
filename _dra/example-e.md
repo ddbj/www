@@ -50,8 +50,8 @@ panels:
 lang: en
 ---
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 The DRA metadata submission tool cannot describe technical reads (adapter, primer and barcode sequences). When sequencing data contain technical reads to be submitted,
 [submitters need to create ExperimentXML files](/dra/submission.html#create-metadata-in-xml-files)
 and describe technical reads in the \<SPOT_DESCRIPTOR>.
@@ -75,7 +75,7 @@ Read composition
 Spot (Read Spec)
 
 | Read Index | Read Class       | Read Type | Ordering Method |
-| ---------- | ---------------- | --------- | --------------- |
+|---|
 | 0          | Technical Read   | Adapter   | BaseCoord = 1   |
 | 1          | Application Read | Forward   | BaseCoord = 5   |
 
@@ -103,7 +103,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 [Platform](/dra/submission.html#Instrument)
 
 | Platform | Instrument Model    |
-| -------- | ------------------- |
+|---|
 | LS454    | 454 GS FLX Titanium |
 
 ### 454 paired reads  {#454_paired}
@@ -122,7 +122,7 @@ Read composition
 Spot (Read Spec)
 
 | Read Index | Read Class       | Read Type | Ordering Method       |
-| ---------- | ---------------- | --------- | --------------------- |
+|---|
 | 0          | Technical Read   | Adapter   | BaseCoord = 1         |
 | 1          | Application Read | Forward   | BaseCoord = 5         |
 | 2          | Technical Read   | Linker    | ExpectedBasecallTable |
@@ -131,7 +131,7 @@ Spot (Read Spec)
 Expected Basecall Table
 
 | Base Call                                  | Min Match | Max Mismatch | Match Edge |
-| ------------------------------------------ | --------- | ------------ | ---------- |
+|---|
 | TCGTATAACTTCGTATAATGTATGCTATACGAAGTTATTACG | 38        | 5            | full       |
 | CGTAATAACTTCGTATAGCATACATTATACGAAGTTATACGA | 38        | 5            | full       |
 
@@ -174,7 +174,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 [Platform](/dra/submission.html#Instrument)
 
 | Platform | Instrument Model    |
-| -------- | ------------------- |
+|---|
 | LS454    | 454 GS FLX Titanium |
 
 ### Illumina single reads  {#illumina_single}
@@ -193,7 +193,7 @@ Read composition
 Spot (Read Spec)
 
 | Read Index | Read Class       | Read Type | Ordering Method |
-| ---------- | ---------------- | --------- | --------------- |
+|---|
 | 0          | Application Read | Forward   | BaseCoord = 1   |
 
 Experiment XML (SPOT_DESCRIPTOR)
@@ -215,7 +215,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 [Platform](/dra/submission.html#Instrument)
 
 | Platform | Instrument Model             | Sequence Length |
-| -------- | ---------------------------- | --------------- |
+|---|
 | Illumina | Illumina Genome Analyzer IIx | 72              |
 
 ### Illumina paired reads  {#illumina_paired}
@@ -235,7 +235,7 @@ Read composition
 Spot (Read Spec)
 
 | Read Index | Read Class       | Read Type | Ordering Method |
-| ---------- | ---------------- | --------- | --------------- |
+|---|
 | 0          | Application Read | Forward   | BaseCoord = 1   |
 | 1          | Application Read | Reverse   | BaseCoord = 101 |
 
@@ -264,7 +264,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 [Platform](/dra/submission.html#Instrument)
 
 | Platform | Instrument Model             | Sequence Length |
-| -------- | ---------------------------- | --------------- |
+|---|
 | Illumina | Illumina Genome Analyzer IIx | 200             |
 
 
@@ -285,7 +285,7 @@ Read composition
 Spot (Read Spec)
 
 | Read Index | Read Class       | Read Type | Ordering Method |
-| ---------- | ---------------- | --------- | --------------- |
+|---|
 | 0          | Application Read | Forward   | BaseCoord = 1   |
 
 Experiment XML (SPOT_DESCRIPTOR)
@@ -307,7 +307,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 [Platform](/dra/submission.html#Instrument)
 
 | Platform  | Instrument Model    | Sequence Length |
-| --------- | ------------------- | --------------- |
+|---|
 | ABI SOLID | AB SOLiD System 3.0 | 50              |
 
 
@@ -328,7 +328,7 @@ Read composition
 Spot (Read Spec)
 
 | Read Index | Read Class       | Read Type | Ordering Method |
-| ---------- | ---------------- | --------- | --------------- |
+|---|
 | 0          | Application Read | Forward   | BaseCoord = 1   |
 | 0          | Application Read | Forward   | BaseCoord = 26  |
 
@@ -357,7 +357,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 [Platform](/dra/submission.html#Instrument)
 
 | Platform  | Instrument Model    | Sequence Length |
-| --------- | ------------------- | --------------- |
+|---|
 | ABI SOLID | AB SOLiD System 3.0 | 50              |
 
 
@@ -377,7 +377,7 @@ Read composition
 Spot (Read Spec)
 
 | Read Index | Read Class       | Read Type | Ordering Method |
-| ---------- | ---------------- | --------- | --------------- |
+|---|
 | 0          | Application Read | Forward   | BaseCoord = 1   |
 
 Experiment XML (SPOT_DESCRIPTOR)
@@ -398,7 +398,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 [Platform](/dra/submission.html#Instrument)
 
 | Platform    | Instrument Model       | Sequence Length |
-| ----------- | ---------------------- | --------------- |
+|---|
 | Ion torrent | Ion torrent PGM/Proton |                 |
 
 ### PacBio single reads (Standard sequencing)  {#PacBio_standard}
@@ -408,13 +408,13 @@ Experiment XML (SPOT_DESCRIPTOR)
 Spot (Read Spec)
 
 | Adapter Spec                                  |
-| --------------------------------------------- |
+|---|
 | ATCTCTCTCTTTTCCTCCTCCTCCGTTGTTGTTGTTGAGAGAGAT |
 
 {::nomarkdown}<br>{:/}
 
 | Read Index | Read Class       | Read Type | Ordering Method |
-| ---------- | ---------------- | --------- | --------------- |
+|---|
 | 0          | Application Read | Forward   | BaseCoord = 1   |
 
 Experiment XML (SPOT_DESCRIPTOR)
@@ -435,13 +435,13 @@ Experiment XML (SPOT_DESCRIPTOR)
 [Platform](/dra/submission.html#Instrument)
 
 | Platform     | Instrument Model |
-| ------------ | ---------------- |
+|---|
 | Pacbio Smart | PacBio RS        |
 
 Experiment Attribute
 
 | Tag                 | Value               | Units |
-| ------------------- | ------------------- | ----- |
+|---|
 | Sequencing Protocol | Standard sequencing |       |
 | Insert size         | 8000                |       |
 
@@ -467,7 +467,7 @@ Experiment XML (EXPERIMENT_ATTRIBUTES)
 Spot (Read Spec)
 
 | Read Index | Read Class       | Read Type | Ordering Method |
-| ---------- | ---------------- | --------- | --------------- |
+|---|
 | 0          | Application Read | Other     | BaseCoord = 1   |
 
 Experiment XML (SPOT_DESCRIPTOR)
@@ -488,13 +488,13 @@ Experiment XML (SPOT_DESCRIPTOR)
 [Platform](/dra/submission.html#Instrument)
 
 | Platform     | Instrument Model |
-| ------------ | ---------------- |
+|---|
 | Pacbio Smart | PacBio RS        |
 
 Experiment Attribute
 
 | Tag                 | Value                         | Units |
-| ------------------- | ----------------------------- | ----- |
+|---|
 | Sequencing Protocol | Circular consensus sequencing |       |
 | Insert size         | 700                           |       |
 
@@ -581,7 +581,7 @@ Read composition
 Spot (Read Spec)
 
 | Read Index | Read Class       | Read Type | Ordering Method |
-| ---------- | ---------------- | --------- | --------------- |
+|---|
 | 0          | Technical Read   | Adapter   | BaseCoord = 1   |
 | 1          | Application Read | Forward   | BaseCoord = 5   |
 | 2          | Technical Read   | Linker    | RelativeOrder   |

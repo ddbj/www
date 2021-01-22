@@ -140,8 +140,8 @@ DDBJ においては、ゲノム配列データ登録用に [Mass Submission Sys
         ABC_0030          ABC_0030
 ```
 
-{::options parse_block_html="true" /}
-<span class="red">**禁則:** 小数(バージョン類似表記) は行わないでください</span>
+
+<span class="red" markdown="1">**禁則:** 小数(バージョン類似表記) は行わないでください</span>
 
 ```
        更新前の          更新後の

@@ -190,15 +190,15 @@ related_pages:
 
 ## FIELD COMMENTS  {#FIELD_COMMENTS}
 
-{::options parse_block_html="true" /}
-<div id="LocusB">
+
+<div id="LocusB" markdown="1">
 <h3><a href="#LocusA">LOCUS</a></h3>
 </div>
 
 Locus名、配列長、塩基配列の分子タイプ、塩基配列の分子形態、Division、データの最終公開日が記載されています。
 
-{::options parse_block_html="true" /}
-<div id="LocusNameB">
+
+<div id="LocusNameB" markdown="1">
 <h4><a href="#LocusNameA">Locus 名</a></h4>
 </div>
 
@@ -207,31 +207,31 @@ DDBJ
 では、1996年7月以降公開されたデータに、[アクセッション番号](#AccessionB)と同じ名前を付けています。（GenBank、EMBL
 も独自の命名法を取っています。）
 
-{::options parse_block_html="true" /}
-<div id="SequenceLengthB">
+
+<div id="SequenceLengthB" markdown="1">
 <h4><a href="#SequenceLengthA">配列長</a></h4>
 </div>
 
 このエントリの配列の長さです。（注意：MGA データの Master record 上では、配列長は記載されません。）
 
-{::options parse_block_html="true" /}
-<div id="MoleculeTypeB">
+
+<div id="MoleculeTypeB" markdown="1">
 <h4><a href="#MoleculeTypeA">塩基配列の分子タイプ</a></h4>
 </div>
 
 source feature の /[mol\_type](/ddbj/qualifiers.html#mol_type) qualifier
 に示される分子種に基づいて DNA, RNA, mRNA, rRNA, tRNA，cRNA のいずれかの分子タイプが記載されます。
 
-{::options parse_block_html="true" /}
-<div id="MoleculeFormB">
+
+<div id="MoleculeFormB" markdown="1">
 <h4><a href="#MoleculeFormA">塩基配列の分子形態</a></h4>
 </div>
 
 塩基配列の分子形態が、線状（linear）か、環状（circular）かを示します。エントリが完全長で，かつ circular
 の形態をとる場合には，"circular" と記載されます。
 
-{::options parse_block_html="true" /}
-<div id="DivisionB">
+
+<div id="DivisionB" markdown="1">
 <h4><a href="#DivisionA">Division</a></h4>
 </div>
 
@@ -264,15 +264,15 @@ b: 生物分類に基づかない分類
 |  UNA  |  未注釈データ<br>最近は UNA division は使用していません。  |
 |  [CON](con.html)  |  Contig / Constructed<br>ゲノムプロジェクトのように個々に登録された一連の配列データをデータバンク側が結合し，１つのアクセッション番号を付与した長大なデータ。CON division に格納されるエントリには長大な配列を構成する配列のアクセッション番号が記載され，塩基配列は記載されません。また，すでに登録されている個々のデータのエントリは、他の division に保存されています。<br>CON division への直接のデータ登録は受け付けていません。まず、CON エントリを構成する個々の配列データを登録して頂きます。その上で CON エントリの構築が適当と判断された場合に、データバンク側で CON エントリを構築します。CON エントリを構成する個々の配列データが更新された場合には、CON エントリもバンク側で更新します。  |
 
-{::options parse_block_html="true" /}
-<div id="ModificationDateB">
+
+<div id="ModificationDateB" markdown="1">
 <h4><a href="#ModificationDateA">データの最終公開日</a></h4>
 </div>
 
 そのデータの公開日が記載されます。データが更新され再公開されると日付は変わります。
 
-{::options parse_block_html="true" /}
-<div id="DefinitionB">
+
+<div id="DefinitionB" markdown="1">
 <h3><a href="#DefinitionA">DEFINITION</a></h3>
 </div>
 
@@ -362,8 +362,8 @@ Bacillus 属 16S rRNA の部分配列
 : 書式: \[TPA header\]: \[organism name\] \[gene name\] mRNA for \[product name\], complete cds.
   - [TPA (Third Party data)](/ddbj/tpa.html) のデータの場合、TPA\_exp: (TPA:experimental の場合)、または、TPA\_inf: (TPA:inferential の場合) が行頭に記述される。
 
-{::options parse_block_html="true" /}
-<div id="AccessionB">
+
+<div id="AccessionB" markdown="1">
 <h3><a href="#AccessionA">ACCESSION</a></h3>
 </div>
 
@@ -417,8 +417,8 @@ MGA データ
 : 
   | ```ZZZZZ0000000``` | リソースセットに対するアクセッション番号   |
 
-{::options parse_block_html="true" /}
-<div id="VersionB">
+
+<div id="VersionB" markdown="1">
 <h3><a href="#VersionA">VERSION</a></h3>
 </div>
 
@@ -446,8 +446,8 @@ MGA では配列の更新を認めておりませんので、バージョン番�
 : | ```ZZZZZ000000```  | 登録番号 |
   | ```1```   | バージョン番号    |  
 
-{::options parse_block_html="true" /}
-<div id="DblinkB">
+
+<div id="DblinkB" markdown="1">
 <h3><a href="#DblinkA">DBLINK</a></h3>
 </div>
 
@@ -469,8 +469,8 @@ DBLINK      BioProject:PRJDA12345
 | ```Sequence Read Archive``` | リンクしているデータベースの名称: [Sequence Read Archive](/dra/index.html) (SRA)  |
 | ```DRR012345, DRR012346``` | データベースにおいてリンクしている ID: SRA Run accession number   |
 
-{::options parse_block_html="true" /}
-<div id="KeywordsB">
+
+<div id="KeywordsB" markdown="1">
 <h3><a href="#KeywordsA">KEYWORDS</a></h3>
 </div>
 
@@ -483,8 +483,8 @@ KEYWORDS は、過去の登録においては、遺伝子名 ([gene](/ddbj/quali
 など)、配列の特性、実験手法、ゲノム配列の完成度などに関する情報などが、必要に応じて、記載されます。[INSDC agreed
 methodological keywords](/ddbj/keyword-e.html) もご参照ください。
 
-{::options parse_block_html="true" /}
-<div id="SourceB">
+
+<div id="SourceB" markdown="1">
 <h3><a href="#SourceA">SOURCE</a></h3>
 </div>
 
@@ -497,8 +497,8 @@ SOURCE      Homo sapiens (human)
 
 | ```Homo sapiens (human)``` | 配列データが由来する生物の学名と一般名 |
 
-{::options parse_block_html="true" /}
-<div id="OrganismB">
+
+<div id="OrganismB" markdown="1">
 <h4><a href="#OrganismA">ORGANISM</a></h4>
 </div>
 
@@ -517,8 +517,8 @@ SOURCE      Homo sapiens (human)
 | ```Homo sapiens``` | 配列データが由来する生物の学名と一般名 |
 | ```Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria; Primates; Catarrhini; Hominidae; Homo.``` | Homo sapiens 系統 (lineage) |
 
-{::options parse_block_html="true" /}
-<div id="Reference1B">
+
+<div id="Reference1B" markdown="1">
 <h3><a href="#Reference1A">REFERENCE 1</a></h3>
 </div>
 
@@ -534,8 +534,8 @@ REFERENCE   1   (bases 1 to 450)
 
 注意：MGA データの Master record 上では "(bases 1 to 450)" の部分が表示されません
 
-{::options parse_block_html="true" /}
-<div id="AuthorsB">
+
+<div id="AuthorsB" markdown="1">
 <h4><a href="#AuthorsA">AUTHORS</a></h4>
 </div>
 
@@ -549,8 +549,8 @@ REFERENCE   1   (bases 1 to 450)
 
 | ```Mishima,H. and Shizuoka,T``` | このエントリの登録者 |
 
-{::options parse_block_html="true" /}
-<div id="TitleB">
+
+<div id="TitleB" markdown="1">
 <h4><a href="#TitleA">TITLE</a></h4>
 </div>
 
@@ -560,8 +560,8 @@ REFERENCE   1   (bases 1 to 450)
   TITLE     Direct Submission
 ```
 
-{::options parse_block_html="true" /}
-<div id="JournalB">
+
+<div id="JournalB" markdown="1">
 <h4><a href="#JournalA">JOURNAL</a></h4>
 </div>
 
@@ -612,8 +612,8 @@ E-mailアドレスと電話番号，FAX番号が非表示の場合
             Fax    :81-55-981-6849
 ```
 
-{::options parse_block_html="true" /}
-<div id="Reference2B">
+
+<div id="Reference2B" markdown="1">
 <h3><a href="#Reference2A">REFERENCE 2</a></h3>
 </div>
 
@@ -651,8 +651,8 @@ REFERENCE 2 以降に記載された投稿予定の論文情報は、関連す�
   | ```TITLE``` | 登録時に入力した TITLE (論文のタイトルにあたるもの) が表示されます。 |
   | ```JOURNAL``` | "Published Only in Database" と表示されます。<br/>カッコ内の数字は、そのエントリーが初めて公開された年が記載されます。 |
   
-{::options parse_block_html="true" /}
-<div id="CommentB">
+
+<div id="CommentB" markdown="1">
 <h3><a href="#CommentA">COMMENT</a></h3>
 </div>
 
@@ -725,8 +725,8 @@ MGA データの生成手法
               tccgacGNNNNN and "Upper oligonucleotide N6":
   ```
 
-{::options parse_block_html="true" /}
-<div id="FeaturesB">
+
+<div id="FeaturesB" markdown="1">
 <h3><a href="#FeaturesA">FEATURES</a></h3>
 </div>
 
@@ -770,8 +770,8 @@ FEATURES             Location/Qualifiers
                      VFTDKDKAVAQLKGGAKKV"
 ```
 
-{::options parse_block_html="true" /}
-<div id="FeaturesSourceB">
+
+<div id="FeaturesSourceB" markdown="1">
 <h3><a href="#FeaturesSourceA">source</a></h3>
 </div>
 
@@ -787,8 +787,8 @@ FEATURES             Location/Qualifiers
 |  ```/organism="Homo sapiens"```  |  この配列がヒト由来であることを示します。  |
 |  ```/tissue_type="liver"```   |  この配列が肝臓由来であることを示します。  |
 
-{::options parse_block_html="true" /}
-<div id="CDSB">
+
+<div id="CDSB" markdown="1">
 <h3><a href="#CDSA">CDS</a></h3>
 </div>
 
@@ -802,8 +802,8 @@ FEATURES             Location/Qualifiers
 |  ```/transl_table=1```   |  genetic code table 1 に従って翻訳されることを示します。  |
 |  ```/translation=&quot;MAKIKIGINGFGRIG（中略）DKDKAVAQLKGGAKKV&quot;```  |  CDS のアミノ酸翻訳配列が[Amino Acid Codes](/ddbj/code.html#amino-1) のリストにある１文字表記で記述されます。<br/>その他のアミノ酸の場合は全て X で表記されます。<br/>[exception](/ddbj/qualifiers.html#exception) qualifier が入力された場合を除き，入力された CDS feature の情報をもとに自動翻訳します。<br/>ただし、[pseudogene](/ddbj/qualifiers.html#pseudogene) または [pseudo](/ddbj/qualifiers.html#pseudo) が指定されている場合は記載されません。  |
 
-{::options parse_block_html="true" /}
-<div id="EndB">
+
+<div id="EndB" markdown="1">
 <h3><a href="#EndA">//</a></h3>
 </div>
 

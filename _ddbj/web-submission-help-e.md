@@ -10,17 +10,17 @@ lang: en
 
 Enter [contact person's](/ddbj/submission.html#contact) information here.
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp1-1_e.png "contact information entry screen"){:.w600}
+<img src="/assets/images/help/NSSShelp1-1_e.png" alt="contact information entry screen" title="" class="w600">
 
 An e-mail, which contains a link to start the submission, is automatically sent to the contact person's e-mail address.
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp1-2_e.png){:.w600}
+<img src="/assets/images/help/NSSShelp1-2_e.png" alt="" title="" class="w600">
 
 ## 2\. Hold date  {#flow-2}
 
 Enter hold date if you would like to suspend the release, or select "Release immediately" on the page.
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp2-1_e.png){:.w600}
+<img src="/assets/images/help/NSSShelp2-1_e.png" alt="" title="" class="w600">
 
   - A day six months from today is highlighted when you click the calendar icon.
 
@@ -38,10 +38,10 @@ Enter hold date if you would like to suspend the release, or select "Release imm
 
 Enter submitter(s) on the page.
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp3-1_e.png){:.w600}
+<img src="/assets/images/help/NSSShelp3-1_e.png" alt="" title="" class="w600">
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 
 **Please enter submitter in abbreviated format as indicated in example below.**
 
@@ -64,7 +64,7 @@ Related page
 
 Enter [reference information](/ddbj/flat-file-e.html#Reference2) on the page. Please enter [primary citation](/ddbj/submission.html#pcite) on the 1st reference.
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp4_e.png){:.w600}
+<img src="/assets/images/help/NSSShelp4_e.png" alt="" title="" class="w600">
 
 <div class="attention">
 
@@ -83,31 +83,31 @@ Related page
 
 #### Status: Unpublished  {#flow-4-1-1}
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp4-1-1_e.png){:.w600}
+<img src="/assets/images/help/NSSShelp4-1-1_e.png" alt="" title="" class="w600">
 
 #### Status: In press  {#flow-4-1-2}
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp4-1-2_e.png){:.w600}
+<img src="/assets/images/help/NSSShelp4-1-2_e.png" alt="" title="" class="w600">
 
 #### Status: Published  {#flow-4-1-3}
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp4-1-3_e.png){:.w600}
+<img src="/assets/images/help/NSSShelp4-1-3_e.png" alt="" title="" class="w600">
 
 ### Journal name  {#flow-4-2}
 
 Please enter a journal name in ISO abbreviated format. You will see the candidates of journal name when you enter a full or part of the beginning name of a journal. You can enter the abbreviation name by selecting one from the list.
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp4-2_e.png){:.w600}
+<img src="/assets/images/help/NSSShelp4-2_e.png" alt="" title="" class="w600">
 
 Regarding ISO abbreviation of the journal name, you can consult it on [NLM Catalog](//www.ncbi.nlm.nih.gov/nlmcatalog?db=journals).
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp4-2-1_e.png){:.w600}
+<img src="/assets/images/help/NSSShelp4-2-1_e.png" alt="" title="" class="w600">
 
 ## 5\. Sequence  {#flow-5}
 
 Enter nucleotide sequence here. When you submit [TPA](/ddbj/tpa-e.html) entry, assembly information is also needed.
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp5_e.png){:.w600}
+<img src="/assets/images/help/NSSShelp5_e.png" alt="" title="" class="w600">
 
 ### Format of the nucleotide sequences  {#flow-5-1}
 
@@ -167,15 +167,15 @@ gctgtaactctgagatgtgctaaataaaccctctttctcaaaaaaaaaaaaaaaa
 
 ### TPA nucleotide sequence  {#flow-5-2}
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp5-2_e.png){:.w600}
+<img src="/assets/images/help/NSSShelp5-2_e.png" alt="" title="" class="w600">
 
 ### Format of assembly information for TPA  {#flow-5-3}
 
 #### Example  {#flow-5-3-1}
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp5-3-1_e.png){:.w600}
+<img src="/assets/images/help/NSSShelp5-3-1_e.png" alt="" title="" class="w600">
 
-You can download the assembly sample [from here (tab-delimited text format)]({{ site.baseurl }}/assets/files/example/NSSShelp-tpa-sample.txt).
+You can download the assembly sample [from here (tab-delimited text format)](/assets/files/example/NSSShelp-tpa-sample.txt).
 
 #### The example indicates following information.  {#The_example_indicates_following_information.}
 
@@ -210,7 +210,7 @@ Their correspondence is subject to the rule, ["The sequence alignment rule betwe
 
 Please select template that matches to annotation.
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp6_e.png){:.w600}
+<img src="/assets/images/help/NSSShelp6_e.png" alt="" title="" class="w600">
 
 ## 7\. Annotation  {#flow-7}
 
@@ -218,7 +218,7 @@ Please select template that matches to annotation.
 
 <div class="highlight">
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-1_e.png)
+<img src="/assets/images/help/NSSShelp7-1_e.png" alt="" title="" class="">
 
 </div>
 
@@ -229,7 +229,7 @@ Related page
 
 <div class="highlight">
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-2_e.png)
+<img src="/assets/images/help/NSSShelp7-2_e.png" alt="" title="" class="">
 
 </div>
 
@@ -240,30 +240,30 @@ Related page
 
 #### "Edit" button  {#flow-7-3-1}
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-1_e.png){:.w600}
+<img src="/assets/images/help/NSSShelp7-3-1_e.png" alt="" title="" class="w600">
 
 #### "Select Qualifier" button  {#flow-7-3-2}
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-2_e.png){:.w600}
+<img src="/assets/images/help/NSSShelp7-3-2_e.png" alt="" title="" class="w600">
 
 #### "Pen & Note" button  {#flow-7-3-3}
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-3_e.png){:.w600}
+<img src="/assets/images/help/NSSShelp7-3-3_e.png" alt="" title="" class="w600">
 
 #### "Edit Column" button  {#flow-7-3-4}
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-4_e.png){:.w600}
+<img src="/assets/images/help/NSSShelp7-3-4_e.png" alt="" title="" class="w600">
 
-#### Double-clicking a cell (clicking each qualifier when template: other is selected) ![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-5_e.png){:.w600}
+#### Double-clicking a cell (clicking each qualifier when template: other is selected)<img src="/assets/images/help/NSSShelp7-3-5_e.png" alt="" title="" class="w600">
 
 ### Organism name  {#flow-7-4}
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-4_e.png){:.w600}
+<img src="/assets/images/help/NSSShelp7-4_e.png" alt="" title="" class="w600">
 
 Enter a scientific name and click "OK".  
 You need to select one from the category list, if the organism name is not registered on NCBI Taxonomy database. Please see ["Category of organism name"](/ddbj/organism-e.html#deasy) for detail.
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-4-1_e.png){:.w600}
+<img src="/assets/images/help/NSSShelp7-4-1_e.png" alt="" title="" class="w600">
 
 Related page  
 : [Organism qualifier](/ddbj/organism-e.html)
@@ -274,7 +274,7 @@ Related page
 
 <div class="highlight">
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-1_e.png)
+<img src="/assets/images/help/NSSShelp7-5-1_e.png" alt="" title="" class="">
 
 </div>
 
@@ -282,7 +282,7 @@ Related page
 
 <div class="highlight">
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-2_e.png)
+<img src="/assets/images/help/NSSShelp7-5-2_e.png" alt="" title="" class="">
 
 </div>
 
@@ -290,7 +290,7 @@ Related page
 
 <div class="highlight">
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-3_e.png)
+<img src="/assets/images/help/NSSShelp7-5-3_e.png" alt="" title="" class="">
 
 </div>
 
@@ -298,13 +298,13 @@ Related page
 
 <div class="highlight">
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-6_e.png)
+<img src="/assets/images/help/NSSShelp7-6_e.png" alt="" title="" class="">
 
 </div>
 
 #### Uploadable file format  {#flow-7-6-1}
 
-  - You can download [sample annotation file from here]({{ site.baseurl }}/assets/files/example/mtDNA.txt).
+  - You can download [sample annotation file from here](/assets/files/example/mtDNA.txt).
 
   - Please refer to ["Making MSS Files for preparation of annotation file"](/ddbj/file-format-e.html#annotation) for detail.
 
@@ -326,7 +326,7 @@ Related page
 
 <div class="highlight">
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-6-1_e.png)
+<img src="/assets/images/help/NSSShelp7-6-1_e.png" alt="" title="" class="">
 
 </div>
 
@@ -373,15 +373,15 @@ EMBOSS Transeq (EBI)
 
 You will see the page after you click "Confirm" and then click "Next".
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7a_e.png){:.w600}
+<img src="/assets/images/help/NSSShelp7a_e.png" alt="" title="" class="w600">
 
 ## 8\. Finish  {#flow-8}
 
 You have been able to complete the submission when you see the finish screen.  
 The data are automatically transferred to DDBJ registration server and an email is sent to contact person’s email address.
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp8-1_e.png){:.w600}
+<img src="/assets/images/help/NSSShelp8-1_e.png" alt="" title="" class="w600">
 
 You will receive an email to notify the completion.
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp8-2_e.png){:.w600}
+<img src="/assets/images/help/NSSShelp8-2_e.png" alt="" title="" class="w600">

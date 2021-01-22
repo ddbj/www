@@ -60,7 +60,7 @@ fastq形式ファイルのQSを各種グラフで参照できます。fastq形�
 例：test\_data\_1.fastq , test\_data\_2.fastq )
 
 | 順 | 画面                                                            | 項目                                                                                                                                                     |
-| - | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+ |---|
 | 1 | [LOGIN](#login)                                               | User ID, Password                                                                                                                                      |
 |   | [Registration form](#Registration_form)                       | User ID, Email address, First name, Last name, Institution with department, Country, Address, Postal/Zip code, Telephone number, Purpose of utilizaion |
 | 2 | [Selecting Query Files](#SlctQuery)                           | query files(fasta/fastq)                                                                                                                               |
@@ -82,12 +82,12 @@ fastq形式ファイルのQSを各種グラフで参照できます。fastq形�
 Preprocessing処理後のファイルは、「Preprocessingタブ(下図黄色ハイライト)」でMapping/*de novo*
 Assemblyのクエリとして選択できるようになります。クエリファイルの先頭は、JOB番号です（下では3845がJOB番号）。
 
-[![]({{ site.baseurl }}/assets/images/help/PreprocessingStart.png)]({{ site.baseurl }}/assets/images/help/PreprocessingStart.png){:.group1}
+[![](/assets/images/help/PreprocessingStart.png)](/assets/images/help/PreprocessingStart.png){:.group1}
 
 ### Mapping (Reference Alignment) {#mapping} 
 
 | 順 | 画面                                                                         | 項目                                                                                                                                                     |
-| - | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+ |---|
 | 1 | [LOGIN](#login)                                                            | User ID, Password                                                                                                                                      |
 |   | [Registration form](#Registration_form)                                    | User ID, Email address, First name, Last name, Institution with department, Country, Address, Postal/Zip code, Telephone number, Purpose of utilizaion |
 | 2 | [Selecting Query Files](#SlctQuery)                                        | query files(fasta/fastq)                                                                                                                               |
@@ -128,7 +128,7 @@ Genomics 1988, 2(3):231-239.
 ### *de novo* Assembly  {#assembly} 
 
 | 順 | 画面                                                                         | 項目                                                                                                                                                     |
-| - | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+ |---|
 | 1 | [LOGIN](#login)                                                            | User ID, Password                                                                                                                                      |
 |   | [Registration form](#Registration_form)                                    | User ID, Email address, First name, Last name, Institution with department, Country, Address, Postal/Zip code, Telephone number, Purpose of utilizaion |
 | 2 | [Selecting Query Files](#SlctQuery)                                        | query files(fasta/fastq)                                                                                                                               |
@@ -152,7 +152,7 @@ Genomics 1988, 2(3):231-239.
 - [DBCLS togotv Tutorial video 2 (JP) - De novo Assembly](//togotv.dbcls.jp/20110226.html#p01)
 6. DRAアカウント登録はこちらのページです。 [please see the page.](/dra/index.html)
 
-[![]({{ site.baseurl }}/assets/images/help/LOGIN_20120522_1.png)]({{ site.baseurl }}/assets/images/help/LOGIN_20120522_1.png){:.group1}
+[![](/assets/images/help/LOGIN_20120522_1.png)](/assets/images/help/LOGIN_20120522_1.png){:.group1}
 
 ## Registration form {#Registration_form} 
 
@@ -167,7 +167,7 @@ Genomics 1988, 2(3):231-239.
 2. 新システム移行に伴い、新たに追加した項目です。
 3. 全ての記入項目を確認後、登録します。
 
-[![]({{ site.baseurl }}/assets/images/help/RegistrationForm_4_2.png)]({{ site.baseurl }}/assets/images/help/RegistrationForm_4_2.png){:.group1}
+[![](/assets/images/help/RegistrationForm_4_2.png)](/assets/images/help/RegistrationForm_4_2.png){:.group1}
 
 ### パスワードの変更  {#password}
 
@@ -175,8 +175,8 @@ Genomics 1988, 2(3):231-239.
 2. パスワードは確認の為、再入力します。
 3. 全ての記入項目を確認後、実行します。
 
-[![]({{ site.baseurl }}/assets/images/help/RegistrationForm_2_2.png)]({{ site.baseurl }}/assets/images/help/RegistrationForm_2_2.png){:.group1}
-[![]({{ site.baseurl }}/assets/images/help/Change-password_21.png)]({{ site.baseurl }}/assets/images/help/Change-password_21.png){:.group1}
+[![](/assets/images/help/RegistrationForm_2_2.png)](/assets/images/help/RegistrationForm_2_2.png){:.group1}
+[![](/assets/images/help/Change-password_21.png)](/assets/images/help/Change-password_21.png){:.group1}
 
 ## Selecting Query Files {#SlctQuery} 
 
@@ -193,7 +193,7 @@ Genomics 1988, 2(3):231-239.
 2. metadataを選択します。
 3. Queryにするファイルを選択します。
 
-[![]({{ site.baseurl }}/assets/images/help/Selecting-Query-Files_Private-DRA-entry_2.png)]({{ site.baseurl }}/assets/images/help/Selecting-Query-Files_Private-DRA-entry_2.png){:.group1}
+[![](/assets/images/help/Selecting-Query-Files_Private-DRA-entry_2.png)](/assets/images/help/Selecting-Query-Files_Private-DRA-entry_2.png){:.group1}
 
 ### HTTPでのアップロード（新規、既存ファイル） {#local} 
 
@@ -205,14 +205,14 @@ Genomics 1988, 2(3):231-239.
 4.  ファイルアップロードが完了するとファイル名が表示されます。Aliasを入力できます。
 5.  リロードすると表の中にファイルが表示されています。
 
-[![]({{ site.baseurl }}/assets/images/help/Selecting-Query-Files_HTTP-Upload_4.png)]({{ site.baseurl }}/assets/images/help/Selecting-Query-Files_HTTP-Upload_4.png){:.group1}
+[![](/assets/images/help/Selecting-Query-Files_HTTP-Upload_4.png)](/assets/images/help/Selecting-Query-Files_HTTP-Upload_4.png){:.group1}
 
 #### 既にHTTPアップロードしたファイルから選択する場合  {#既にHTTPアップロードしたファイルから選択する場合}
 
 1. HTTP Uploadを選択します。
 2. 既にアップロード済みのファイルから選択します。
 
-[![]({{ site.baseurl }}/assets/images/help/Selecting-Query-Files_HTTP-Upload_R_2.png)]({{ site.baseurl }}/assets/images/help/Selecting-Query-Files_HTTP-Upload_R_2.png){:.group1}
+[![](/assets/images/help/Selecting-Query-Files_HTTP-Upload_R_2.png)](/assets/images/help/Selecting-Query-Files_HTTP-Upload_R_2.png){:.group1}
 
 ### FTPでのアップロード（新規、既存ファイル） {#FTP} 
 
@@ -220,7 +220,7 @@ Genomics 1988, 2(3):231-239.
 2. 新規にファイルをアップロードする場合は、[Add new files]をクリックします。<br>-----&gt;[Registration of fastq/fasta files画面へ遷移します。](#RgstFqFa)
 3. 既にFTPアップロードしたファイルを使用する時は、リストから選びます。
 
-[![]({{ site.baseurl }}/assets/images/help/Selecting-Query-Files_FTP-Upload_51.png)]({{ site.baseurl }}/assets/images/help/Selecting-Query-Files_FTP-Upload_51.png){:.group1}
+[![](/assets/images/help/Selecting-Query-Files_FTP-Upload_51.png)](/assets/images/help/Selecting-Query-Files_FTP-Upload_51.png){:.group1}
 
 ### DRA databaseからDRA/ERA/SRA のFASTQファイルをインポート {#import} 
 
@@ -238,7 +238,7 @@ Genomics 1988, 2(3):231-239.
   - Statusが"failed"の時は、再実行してください。
   - Statusが"preparing"の時は、まだDRAにファイルが準備されておりません。後日、再実行してください。
 
-[![]({{ site.baseurl }}/assets/images/help/Selecting-Query-Files_Import-public-DRA_41.png)]({{ site.baseurl }}/assets/images/help/Selecting-Query-Files_Import-public-DRA_41.png){:.group1}
+[![](/assets/images/help/Selecting-Query-Files_Import-public-DRA_41.png)](/assets/images/help/Selecting-Query-Files_Import-public-DRA_41.png){:.group1}
 
 ### Preprocessing処理での結果ファイル {#Preprocessing}
 
@@ -246,7 +246,7 @@ Genomics 1988, 2(3):231-239.
 2. Preprocessing結果ファイルは、「JOB番号\_ファイル名\_e」で表示されています。<br>（BWA Unmap結果ファイルは、「JOB番号_ファイル名.unmapped」で表示されています。<a name="Unmapped"></a>
 3. 使用するファイルをチェックします。
 
-[![]({{ site.baseurl }}/assets/images/help/Selecting-Query-Files_Preprocessing_21.png)]({{ site.baseurl }}/assets/images/help/Selecting-Query-Files_Preprocessing_21.png){:.group1}
+[![](/assets/images/help/Selecting-Query-Files_Preprocessing_21.png)](/assets/images/help/Selecting-Query-Files_Preprocessing_21.png){:.group1}
 
 ## Registration of fastq/fasta files {#RgstFqFa} 
 
@@ -262,7 +262,7 @@ Genomics 1988, 2(3):231-239.
 5. アップロードが終了したら、画面をリロードしてください。下のリストにファイルが追加されます。
 6. アップロードしたファイルをチェックし、次へ進みます。
 
-[![]({{ site.baseurl }}/assets/images/help/Registration_-filesUpload_31.png)]({{ site.baseurl }}/assets/images/help/Registration_-filesUpload_31.png){:.group1}
+[![](/assets/images/help/Registration_-filesUpload_31.png)](/assets/images/help/Registration_-filesUpload_31.png){:.group1}
 
 - 2\. Select a FASTA/FASTQ file（Uploadしたファイルの注釈付け１）
 1. Read layoutでSingle-end又は、Paired-endを選択します。
@@ -271,29 +271,29 @@ Genomics 1988, 2(3):231-239.
 
 ＜Single\_endの場合＞
 
-[![]({{ site.baseurl }}/assets/images/help/Registration-of-fastqfasta-files_Select-a-FASTAFASTQ-file_11.png)]({{ site.baseurl }}/assets/images/help/Registration-of-fastqfasta-files_Select-a-FASTAFASTQ-file_11.png){:.group1}
+[![](/assets/images/help/Registration-of-fastqfasta-files_Select-a-FASTAFASTQ-file_11.png)](/assets/images/help/Registration-of-fastqfasta-files_Select-a-FASTAFASTQ-file_11.png){:.group1}
 
 ＜Paired\_endの場合＞
 
-[![]({{ site.baseurl }}/assets/images/help/Registration-of-fastqfasta-files_Select-a-FASTAFASTQ-file_21.png)]({{ site.baseurl }}/assets/images/help/Registration-of-fastqfasta-files_Select-a-FASTAFASTQ-file_21.png){:.group1}
+[![](/assets/images/help/Registration-of-fastqfasta-files_Select-a-FASTAFASTQ-file_21.png)](/assets/images/help/Registration-of-fastqfasta-files_Select-a-FASTAFASTQ-file_21.png){:.group1}
 
 - 3\. Input a specification（Uploadしたファイルの注釈付け２）
 1. シークエンサの機種を選択します。
 2. Study titleを入力します。
 3. 登録(SUBMITをクリック)します。<br>
-![]({{ site.baseurl }}/assets/images/help/Registration-of-fastqfasta-files_Input-a-specification_11.png)
+<img src="/assets/images/help/Registration-of-fastqfasta-files_Input-a-specification_11.png" alt="" title="" class="">
 4. 処理終了、Assembly/Mapplingをクリックすると、[Selecting Query Files画面](#FTP)に遷移します。<br>＊Uploadしたファイルを使用して解析が可能になっています。
-[![]({{ site.baseurl }}/assets/images/help/Registration-complete_12.png)]({{ site.baseurl }}/assets/images/help/Registration-complete_12.png){:.group1}
+[![](/assets/images/help/Registration-complete_12.png)](/assets/images/help/Registration-complete_12.png){:.group1}
 
 #### By HTTP(slower)  {#By_HTTPslower}
 
 1. Browse and Uploadをクリックします。
 2. ローカルPCからファイルを選択します。開始するとUpload経過が表示されます。
-[![]({{ site.baseurl }}/assets/images/help/Registration_-filesUpload_HTTP_11.png)]({{ site.baseurl }}/assets/images/help/Registration_-filesUpload_HTTP_11.png){:.group1}
+[![](/assets/images/help/Registration_-filesUpload_HTTP_11.png)](/assets/images/help/Registration_-filesUpload_HTTP_11.png){:.group1}
 3. Uploadが完了したらページ再読み込みします。<br>
-[![]({{ site.baseurl }}/assets/images/help/Registration_-filesUpload_HTTP_21.png)]({{ site.baseurl }}/assets/images/help/Registration_-filesUpload_HTTP_21.png){:.group1}
+[![](/assets/images/help/Registration_-filesUpload_HTTP_21.png)](/assets/images/help/Registration_-filesUpload_HTTP_21.png){:.group1}
 4. ファイルがリストに追加されています。<br>
-[![]({{ site.baseurl }}/assets/images/help/Registration_-filesUpload_HTTP_31.png)]({{ site.baseurl }}/assets/images/help/Registration_-filesUpload_HTTP_31.png){:.group1}
+[![](/assets/images/help/Registration_-filesUpload_HTTP_31.png)](/assets/images/help/Registration_-filesUpload_HTTP_31.png){:.group1}
 
 ## Set Parameters for Preprocessing {#SetPrmtPrePro} 
 
@@ -306,7 +306,7 @@ Encoding）](//en.wikipedia.org/wiki/FASTQ_format#Encoding)
 3. 「指定QV」未満の塩基が、トリム後のリード長の「指定％」より多い場合は、そのリードを取り除きます。
 4. ペアードエンドリードの場合、片方が条件 ② 、③ により取り除かれた場合、もう一方も取り除かれます。
 
-[![]({{ site.baseurl }}/assets/images/help/SetParametersForPreprocessing_21.png)]({{ site.baseurl }}/assets/images/help/SetParametersForPreprocessing_21.png){:.group1}
+[![](/assets/images/help/SetParametersForPreprocessing_21.png)](/assets/images/help/SetParametersForPreprocessing_21.png){:.group1}
 
 ## Selecting Tools for Basic analysis of DDBJ ANNOTATION PIPELINE {#SlctTool} 
 
@@ -321,7 +321,7 @@ Encoding）](//en.wikipedia.org/wiki/FASTQ_format#Encoding)
     (BLAT使用)する場は、下の、Mapping Contigs by de novo Assemble to
     Reference Sequences.を選択します。
 
-[![]({{ site.baseurl }}/assets/images/help/Selecting-Tools-for-Basic-Analysis-of-DDBJ-ANNOTATION-PIPELINE_41.png)]({{ site.baseurl }}/assets/images/help/Selecting-Tools-for-Basic-Analysis-of-DDBJ-ANNOTATION-PIPELINE_41.png){:.group1}
+[![](/assets/images/help/Selecting-Tools-for-Basic-Analysis-of-DDBJ-ANNOTATION-PIPELINE_41.png)](/assets/images/help/Selecting-Tools-for-Basic-Analysis-of-DDBJ-ANNOTATION-PIPELINE_41.png){:.group1}
 
 ## Generating Query Sets from Query Read Files {#Generating} 
 
@@ -329,36 +329,36 @@ Encoding）](//en.wikipedia.org/wiki/FASTQ_format#Encoding)
 
 1. 編集したいファイルにチェックを入れます。
 2. confirmをクリックします。<br>
-[![]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_61.png)]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_61.png){:.group1}
+[![](/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_61.png)](/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_61.png){:.group1}
 3. 確認
 4. 次へ
 
-[![]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_71.png)]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_71.png){:.group1}
+[![](/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_71.png)](/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_71.png){:.group1}
 
 ### クエリーファイルを複数のジョブで実行  {#Query2}
 
 1. 一つのジョブとして編集したいファイルにチェックを入れます。
 2. confirmをクリックします。<br>
-[![]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_111.png)]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_111.png){:.group1}
+[![](/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_111.png)](/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_111.png){:.group1}
 3. 確認<br>
-[![]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_121.png)]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_121.png){:.group1}
+[![](/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_121.png)](/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_121.png){:.group1}
 4. 残りのファイルの内、別のジョブとして編集したいファイルにチェックを入れます。
 5. confirmをクリックします。<br>
-[![]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_131.png)]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_131.png){:.group1}
+[![](/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_131.png)](/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_131.png){:.group1}
 6. クエリセット１、２ができます。（JOBが２つ投入）
 7. 次へ
 
-[![]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_141.png)]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_141.png){:.group1}
+[![](/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_141.png)](/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_141.png){:.group1}
 
 ### Mate-pairedを使用してdenovoAssembly(SOAPdenovo,Velvetのみ)  {#MatePair}
 
 1. 編集したいファイルにチェックを入れます。
 2. 先にPair-Endをセットします。（その後Mate-Pairをセットします）
-[![]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_91.png)]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_91.png){:.group1}
+[![](/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_91.png)](/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_91.png){:.group1}
 3. 確認
 4. 次へ
 
-[![]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_101.png)]({{ site.baseurl }}/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_101.png){:.group1}
+[![](/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_101.png)](/assets/images/help/Generating-Query-Sets-from-Query-Read-Files_101.png){:.group1}
 
 ## Specifying Database of Reference Genome {#Reference} 
 
@@ -369,7 +369,7 @@ Encoding）](//en.wikipedia.org/wiki/FASTQ_format#Encoding)
 3. 染色体を選択します。
 4. 次へ
 
-[![]({{ site.baseurl }}/assets/images/help/Specifying-Database-of-Reference-Genome_11.png)]({{ site.baseurl }}/assets/images/help/Specifying-Database-of-Reference-Genome_11.png){:.group1}
+[![](/assets/images/help/Specifying-Database-of-Reference-Genome_11.png)](/assets/images/help/Specifying-Database-of-Reference-Genome_11.png){:.group1}
 
 ### 自分で登録したreference (User original sets) を使用する場合  {#ReferenceOriginal}
 
@@ -377,7 +377,7 @@ Encoding）](//en.wikipedia.org/wiki/FASTQ_format#Encoding)
 2. Genome setsを選択します。
 3. 次へ
 
-[![]({{ site.baseurl }}/assets/images/help/Specifying-Database-of-Reference-Genome_21.png)]({{ site.baseurl }}/assets/images/help/Specifying-Database-of-Reference-Genome_21.png){:.group1}
+[![](/assets/images/help/Specifying-Database-of-Reference-Genome_21.png)](/assets/images/help/Specifying-Database-of-Reference-Genome_21.png){:.group1}
 
 ### 自分でreferenceを(User original setsへ)登録する場合  {#ReferenceSet}
 
@@ -389,14 +389,14 @@ Encoding）](//en.wikipedia.org/wiki/FASTQ_format#Encoding)
 <li class ="decrement">"ファイルを選択"をクリックし、ローカルPCからファイルを選択したら"UPLOAD"をクリックします。</li>
 <li> ファイルが表示されます。</li>
 <li> "CREATE DATASET"をクリックするとCreate Genome Dataset画面へ遷移します。
-<figure><a href="{{ site.baseurl }}/assets/images/help/SpecifyingDatabase_61.png"><img src="{{ site.baseurl }}/assets/images/help/SpecifyingDatabase_61.png" alt=""></a></figure>
+<figure><a href="/assets/images/help/SpecifyingDatabase_61.png"><img src="/assets/images/help/SpecifyingDatabase_61.png" alt=""></a></figure>
 </li>
 <li> genomeset の記述を変更できます。</li>
 <li> "CREATE GENOMESET"をクリックするとSpecifying Database of Reference Genome画面に戻ります。
-<figure><a href="{{ site.baseurl }}/assets/images/help/SpecifyingDatabase_21.png"><img src="{{ site.baseurl }}/assets/images/help/SpecifyingDatabase_21.png" alt=""></a></figure>
+<figure><a href="/assets/images/help/SpecifyingDatabase_21.png"><img src="/assets/images/help/SpecifyingDatabase_21.png" alt=""></a></figure>
 </li>
 <li> ダウンロードしたファイルが"User original sets"に追加され、選択した状態となっています。
-<figure><a href="{{ site.baseurl }}/assets/images/help/SpecifyingDatabase_31.png"><img src="{{ site.baseurl }}/assets/images/help/SpecifyingDatabase_31.png" alt=""></a></figure>
+<figure><a href="/assets/images/help/SpecifyingDatabase_31.png"><img src="/assets/images/help/SpecifyingDatabase_31.png" alt=""></a></figure>
 </li>
 </ol>
 
@@ -409,7 +409,7 @@ Encoding）](//en.wikipedia.org/wiki/FASTQ_format#Encoding)
 3. 次へ  
 ＊ツールにより、画面は若干異なります。
 
-[![]({{ site.baseurl }}/assets/images/help/Setting-for-De-Novo-Assembly_velvet_1.png)]({{ site.baseurl }}/assets/images/help/Setting-for-De-Novo-Assembly_velvet_1.png){:.group1}
+[![](/assets/images/help/Setting-for-De-Novo-Assembly_velvet_1.png)](/assets/images/help/Setting-for-De-Novo-Assembly_velvet_1.png){:.group1}
 
 ### Setting for Reference Genome Mapping  {#SetOptionMapping}
 
@@ -420,7 +420,7 @@ Encoding）](//en.wikipedia.org/wiki/FASTQ_format#Encoding)
 5. 次へ  
 ＊ツールにより、画面は若干異なります。
 
-[![]({{ site.baseurl }}/assets/images/help/SetOption_Bwa_21.png)]({{ site.baseurl }}/assets/images/help/SetOption_Bwa_21.png){:.group1}
+[![](/assets/images/help/SetOption_Bwa_21.png)](/assets/images/help/SetOption_Bwa_21.png){:.group1}
 
 ## Run Confirmation {#Run} 
 
@@ -435,15 +435,15 @@ Encoding）](//en.wikipedia.org/wiki/FASTQ_format#Encoding)
 
 ＜Mapping (tool:bwa)の例＞
 
-[![]({{ site.baseurl }}/assets/images/help/Run-Confirmation_31.png)]({{ site.baseurl }}/assets/images/help/Run-Confirmation_31.png){:.group1}
+[![](/assets/images/help/Run-Confirmation_31.png)](/assets/images/help/Run-Confirmation_31.png){:.group1}
 
-[![]({{ site.baseurl }}/assets/images/help/RunConfirmation_PreProcess_31.png)]({{ site.baseurl }}/assets/images/help/RunConfirmation_PreProcess_31.png){:.group1}
+[![](/assets/images/help/RunConfirmation_PreProcess_31.png)](/assets/images/help/RunConfirmation_PreProcess_31.png){:.group1}
 
 *＜de novo* Assembly (tool:velvet)の例＞
 
-[![]({{ site.baseurl }}/assets/images/help/Run-Confirmation_21.png)]({{ site.baseurl }}/assets/images/help/Run-Confirmation_21.png){:.group1}
+[![](/assets/images/help/Run-Confirmation_21.png)](/assets/images/help/Run-Confirmation_21.png){:.group1}
 
-[![]({{ site.baseurl }}/assets/images/help/RunConfirmation_PreProcess_311.png)]({{ site.baseurl }}/assets/images/help/RunConfirmation_PreProcess_311.png){:.group1}
+[![](/assets/images/help/RunConfirmation_PreProcess_311.png)](/assets/images/help/RunConfirmation_PreProcess_311.png){:.group1}
 
 ### Preprocessing  {#RunPreprocessing}
 
@@ -452,9 +452,9 @@ Encoding）](//en.wikipedia.org/wiki/FASTQ_format#Encoding)
 3. "RUN"をクリックすると、The reservation was completed.画面へ遷移します。
 4. "STATUS"をクリックすると、Status-PreProcess画面へ遷移します。
 
-[![]({{ site.baseurl }}/assets/images/help/RunConfirmation_PreProcess_21.png)]({{ site.baseurl }}/assets/images/help/RunConfirmation_PreProcess_21.png){:.group1}
+[![](/assets/images/help/RunConfirmation_PreProcess_21.png)](/assets/images/help/RunConfirmation_PreProcess_21.png){:.group1}
 
-[![]({{ site.baseurl }}/assets/images/help/RunConfirmation_PreProcess_312.png)]({{ site.baseurl }}/assets/images/help/RunConfirmation_PreProcess_312.png){:.group1}
+[![](/assets/images/help/RunConfirmation_PreProcess_312.png)](/assets/images/help/RunConfirmation_PreProcess_312.png){:.group1}
 
 ## Status-Mapping/*de novo* Assembly/PreProcess {#Status} 
 
@@ -466,7 +466,7 @@ Encoding）](//en.wikipedia.org/wiki/FASTQ_format#Encoding)
 4. "View"クリックで、実行状況の詳細画面へ遷移します。
 5. 他のStatus画面へも遷移できます。
 
-[![]({{ site.baseurl }}/assets/images/help/Status-Mapping_31.png)]({{ site.baseurl }}/assets/images/help/Status-Mapping_31.png){:.group1}
+[![](/assets/images/help/Status-Mapping_31.png)](/assets/images/help/Status-Mapping_31.png){:.group1}
 
 ## Detail view {#View} 
 
@@ -476,12 +476,12 @@ Encoding）](//en.wikipedia.org/wiki/FASTQ_format#Encoding)
 2. 実行ログの確認ができます。
 3. 各種コマンド結果ファイルがダウンロードできます。
 
-[![]({{ site.baseurl }}/assets/images/help/DetailViewMapping5_1.png)]({{ site.baseurl }}/assets/images/help/DetailViewMapping5_1.png){:.group1}
+[![](/assets/images/help/DetailViewMapping5_1.png)](/assets/images/help/DetailViewMapping5_1.png){:.group1}
 
 #### 統計結果のダウンロード  {#統計結果のダウンロード}
 
 ＜Position errors＞  
-: [![Detail view_2]({{ site.baseurl }}/assets/images/help/Detail-view_2.png){:.w450}]({{ site.baseurl }}/assets/images/help/Detail-view_2.png){:.group1}
+: [![Detail view_2](/assets/images/help/Detail-view_2.png){:.w450}](/assets/images/help/Detail-view_2.png){:.group1}
 : \+ ErrorRate (mapping, graph).
   : Percentage error of mapped sequence to reference sequence is calculated by read position.
 
@@ -508,20 +508,20 @@ Encoding）](//en.wikipedia.org/wiki/FASTQ_format#Encoding)
 2. 実行ログの確認ができます。
 3. 各種コマンド結果ファイルがダウンロードできます。
 
-[![]({{ site.baseurl }}/assets/images/help/DetailViewAssembly1_1.png)]({{ site.baseurl }}/assets/images/help/DetailViewAssembly1_1.png){:.group1}
+[![](/assets/images/help/DetailViewAssembly1_1.png)](/assets/images/help/DetailViewAssembly1_1.png){:.group1}
 
 #### 統計量のダウンロード  {#統計量のダウンロード}
 
 ＜*de novo* Assembly statistics＞
 
-[![Detail view_6_1]({{ site.baseurl }}/assets/images/help/Detail-view_6_1.png)]({{ site.baseurl }}/assets/images/help/Detail-view_6_1.png ){:.group1}
+[![Detail view_6_1](/assets/images/help/Detail-view_6_1.png)](/assets/images/help/Detail-view_6_1.png ){:.group1}
 
 ### Preprocessing  {#DetailPreprocessing}
 
 1. 編集後Fastqファイル及び、各種グラフのダウンロードが行えます。
 2. 実行ログの確認ができます。
 
-[![]({{ site.baseurl }}/assets/images/help/DetailViewPreprocess6_1.png)]({{ site.baseurl }}/assets/images/help/DetailViewPreprocess6_1.png){:.group1}
+[![](/assets/images/help/DetailViewPreprocess6_1.png)](/assets/images/help/DetailViewPreprocess6_1.png){:.group1}
 
 #### 編集済みファイル、各種グラフのダウンロード  {#_編集済みファイル、各種グラフのダウンロード}
 
@@ -531,15 +531,15 @@ Encoding）](//en.wikipedia.org/wiki/FASTQ_format#Encoding)
 ＜QS Average(PDF)＞  
 : 編集前のQS標準偏差
 
-[![]({{ site.baseurl }}/assets/images/help/DetailViewPreprocess2_1.png)]({{ site.baseurl }}/assets/images/help/DetailViewPreprocess2_1.png){:.group1}
+[![](/assets/images/help/DetailViewPreprocess2_1.png)](/assets/images/help/DetailViewPreprocess2_1.png){:.group1}
 
 ＜QS Count(PDF)＞  
 : 編集前のQS平均
 
-[![]({{ site.baseurl }}/assets/images/help/DetailViewPreprocess3_1.png)]({{ site.baseurl }}/assets/images/help/DetailViewPreprocess3_1.png){:.group1}
+[![](/assets/images/help/DetailViewPreprocess3_1.png)](/assets/images/help/DetailViewPreprocess3_1.png){:.group1}
 
 ＜QS Error(PDF)＞  
 : 編集後のリード位置毎の削除割合
 
-[![]({{ site.baseurl }}/assets/images/help/DetailViewPreprocess4_1.png)]({{ site.baseurl }}/assets/images/help/DetailViewPreprocess4_1.png){:.group1}
+[![](/assets/images/help/DetailViewPreprocess4_1.png)](/assets/images/help/DetailViewPreprocess4_1.png){:.group1}
 

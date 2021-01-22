@@ -143,7 +143,7 @@ Archive](/dra/index.html) をご参照ください。
 
 ## MSS による登録の流れ  {#flow}
 
-![](/assets/images/ddbj/MSS-flow_20200916-jp.png "MSS による登録の流れ") 
+<img src="/assets/images/ddbj/MSS-flow_20200916-jp.png" alt="MSS による登録の流れ" title="" class=""> 
 
 ### 1. 申し込み  {#flow-1}
 

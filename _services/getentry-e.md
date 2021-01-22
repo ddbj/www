@@ -457,8 +457,8 @@ example (upper:Get method / lower: smart URL)
   </tbody>
 </table>
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 Omitting the database specification is processed as t
 
 DDBJ/EMBL/GenBank includes the following databases.
@@ -586,11 +586,11 @@ URL)
 Available output formats by specified database are as follows.
 
 |  DNA database |
-| ---- | ---- |
+|---|
 |  DDBJ / EMBL / GenBank / MGA |  flatfile(DDBJ), <br>Total nt seq FASTA, <br>CDS amino acid seq FASTA, <br>CDS nt seq FASTA, <br>INSD-XML_v1.4 |
 
 |  Protein database  |
-| ---- | ---- |
+|---|
 |  UniProt  |  default, Amino acid seq FASTA  |
 |  PDB  |  default, seqres  |
 |  DAD  |  default, Amino acid seq FASTA, nt seq FASTA  |
@@ -872,7 +872,7 @@ URL)
 
 Following is shown on the display
 
-![]({{ site.baseurl }}/assets/images/help/getentry-gz-e.gif "getentry-gz")
+<img src="/assets/images/help/getentry-gz-e.gif" alt="getentry-gz" title="" class="">
 
   - FW383979 in html  
     <http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FW383979&filetype=html>  
@@ -1081,7 +1081,7 @@ URL)
     <http://getentry.ddbj.nig.ac.jp/gethistory/na/AB628096/?filetype=html>
 
 accession    | version        | revision     | change         | state
------------- | ---------- | ------------ | --------- | -----
+ |---|
 AB628096      | 1               | [2015-05-29 18:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2015-05-29+18%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2015-05-29 18:00:00 release | live 
  |  | [2015-02-27 14:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2015-02-27+14%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2015-02-27 14:00:00 release | live                 |
  |  | [2014-11-25 13:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2014-11-25+13%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2014-11-25 13:00:00 release | live                 |
@@ -1129,8 +1129,8 @@ entry can be viewed.
 [BD500001](http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001)
 
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 Creating links to DRA entries is different from the above method. Please
 refer to the [DRA Web site](/dra/index-e.html).
 </div>

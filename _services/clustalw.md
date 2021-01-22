@@ -84,7 +84,7 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 アライメントに使用するアルゴリズムを選択します。デフォルトは Slow です。
 
 |  表示  |    |
-| ---- | ---- |
+|---|
 |  slow  |  精度の高い alignment の作成に適していますが処理速度が遅いため，比較的短い配列の解析用です  |
 |  fast  |  データ処理速度に優れたアルゴリズムであり，長大な配列を解析する場合に適しています  |      
 
@@ -94,7 +94,7 @@ DNA /Protein  Weight Matrix
 :   塩基置換行列表/アミノ酸置換行列表を指定します。デフォルトは Protein の場合は Gonnet ，DNAの場合はIUBです。
 
 |  Protein&nbsp;Weight&nbsp;Matrix  |    |
-| ---- | ---- |
+|---|
 |  Gonnet  |  このmatrix は Dayhoff と同じ手法で導かれたものですが，（Dayhoffマトリックスが作成されたときに用いられたデータセットと比較して）はるかに大きなデータセットの比較に基づいて作成され，配列間で相同なアミノ酸をより整列しやすくされています。  |
 |  BLOSUM  |  相同性検索を行なう際に最も広く用いられています。  |
 |  PAM  |  この行列は1970年代後半以来，極めて広く使われています。Dayhoff's matrix とも呼ばれています。  |
@@ -103,7 +103,7 @@ DNA /Protein  Weight Matrix
 <br>
 
 |  DNA&nbsp;Weight&nbsp;Matrix  |    |
-| ---- | ---- |
+|---|
 |  IUB  |  プログラム BESTFIT で塩基配列の比較においてデフォルトで用いられているスコア行列で，XやNはIUBの曖昧表記に対してマッチしているとして扱われます。マッチのスコアは1.9，ミスマッチのスコアは0です。  |
 |  ClustalW  |  以前ClustalWで使用されていたスコア行列です。<br> マッチのスコアは1.0，ミスマッチのスコアは0です。IUBの曖昧表記に対するマッチのスコアは0です。|
 
@@ -136,7 +136,7 @@ DNA&nbsp;/Protein&nbsp;Weight&nbsp;Matrix
 :   塩基置換行列表/アミノ酸置換行列表を指定します。デフォルトは Protein の場合は&nbsp;Gonnet&nbsp; ，DNAの場合は&nbsp;IUB&nbsp;です。
 
 |  Protein&nbsp;Weight&nbsp;Matrix  |    |
-| ---- | ---- |
+|---|
 |  Gonnet  |  このmatrix は Dayhoff と同じ手法で導かれたものですが，より大きいサイズのデータセットを元にした新しい手法で，Dayhoff よりも感度が良いとされています。  |
 |  BLOSUM  |  相同性検索を行なう際に最も広く用いられています。  |
 |  PAM  |  この行列は 1970 年代後半以来，極めて広く使われています。Dayhoff's matrix とも呼ばれています。  |
@@ -145,7 +145,7 @@ DNA&nbsp;/Protein&nbsp;Weight&nbsp;Matrix
 <br>
 
 |  DNA&nbsp;Weight&nbsp;Matrix  |    |
-| ---- | ---- |
+|---|
 |  IUB  |  プログラムBESTFITで塩基配列の比較においてデフォルトで用いられているスコア行列で，XやNはIUBの曖昧表記に対してマッチしているとして扱わます。マッチのスコアは1.9，ミスマッチのスコアは0 です。 |
 |  ClustalW  |  以前ClustalWで使用されていたスコア行列です。マッチのスコアは1.0，ミスマッチのスコアは0です。IUBの曖昧表記に対するマッチのスコアは0です。                   |
 
@@ -162,7 +162,7 @@ NO END GAPS
 :   端のGapについてはGAP DISTANCESのpenaltyをかけないようにします。デフォルトは&nbsp;no&nbsp;です。
 
 |  表示  |    |
-| ---- | ---- |
+|---|
 |  no  |  penalty をかけない  |
 |  yes  |  penalty をかける  |
 
@@ -170,7 +170,7 @@ ITERATION
 :   Iteration アルゴリズムで　アライメントを改良するかどうかを指定します。デフォルトは&nbsp;none&nbsp;です。
 
 |  表示  |    |
-| ---- | ---- |
+|---|
 |  none  |  iteration を行いません  |
 |  tree  |  アライメントの各段階でiterationを行います  |
 |  alignment  |  最終的に得られたアライメントにのみiterationを行います  |
@@ -182,7 +182,7 @@ CLUSTERING
 :   Clustering のタイプを指定します。デフォルトは&nbsp;NJ&nbsp;です。
 
 |  表示  |    |
-| ---- | ---- |
+|---|
 |  NJ  |  Neighbour-joining (Saitou and Nei 1987) 法  |
 |  UPGMA  |  Unweighted Pair-Group Method with Arithmatic mean 法  |
 
@@ -192,7 +192,7 @@ Format
 :   Multiple&nbsp;alignmentの出力形式を指定します。デフォルトは &nbsp;Aln w/numbers&nbsp;です。
 
 | 表示             |                                |
-| -------------- | --------------------------------
+|---|
 | Aln w/numbers  | 塩基/アミノ残基の番号を表示させたClustalW 標準出力形式
 | Aln wo/numbers | 塩基/アミノ残基の番号非表示のClustalW 標準出力形式  
 | GCG MSF        | GCG MSF形式                       
@@ -206,7 +206,7 @@ Order
 :   Alignment 出力結果で，出力する配列の順番を指定します。デフォルトは&nbsp;aligned&nbsp;です。
 
 |  表示  |    |
-| ---- | ---- |
+|---|
 |  aligned  |  Alignment の順番で配列を出力します。  |
 |  input  |  入力された配列の順番で配列を出力します。    |
 
@@ -220,7 +220,7 @@ Distance
 [系統樹の作成について](#tree)
 
 : |  塩基置換推定法  |  塩基置換モデル	  |  説明  |
-	| ---- | ---- | ---- |
+	|---|
 	|  Kimura  |  {::nomarkdown}<table><tr><td></td><td>T</td><td>C</td><td>A</td><td>G</td></tr><tr><td>T</td><td>-</td><td>α</td><td>β</td><td>β</td></tr><tr><td>C</td><td>α</td><td>-</td><td>β</td><td>β</td></tr><tr><td>A</td><td>β</td><td>β</td><td>-</td><td>α</td></tr><tr><td>G</td><td>β</td><td>β</td><td>α</td><td>-</td></tr></table>{:/}  |  トランジションとトランスバージョンの速度が異なると仮定して推定された塩基置換数  |
 	|  p-distance  |  入力された配列の順番で配列を出力します。  |  相違座位の割合  |
 	|  Jukes-Cantor<span class="red">＊</span>	  |  {::nomarkdown}<table><tr><td></td><td>T</td><td>C</td><td>A</td><td>G</td></tr><tr><td>T</td><td>-</td><td>α</td><td>α</td><td>α</td></tr><tr><td>C</td><td>α</td><td>-</td><td>α</td><td>α</td></tr><tr><td>A</td><td>α</td><td>α</td><td>-</td><td>α</td></tr><tr><td>G</td><td>α</td><td>α</td><td>α</td><td>-</td></tr></table>{:/}  |  全ての種類の塩基置換が同じ速度で生じると仮定して推定された塩基置換数  |
@@ -262,21 +262,21 @@ SEED
 ### ClustalW 解析結果  {#kekka}
 
 1. 解析結果  
-![解析結果]({{ site.baseurl }}/assets/images/help/clustalw_01.gif)
+<img src="/assets/images/help/clustalw_01.gif" alt="" title="解析結果" class="">
 
 2. Multiple Alignment の結果  
-![Multiple Alignment の結果]({{ site.baseurl }}/assets/images/help/clustalw_02.gif)
+<img src="/assets/images/help/clustalw_02.gif" alt="" title="Multiple Alignment の結果" class="">
 
 3. Guide Tree  
-![Guide Tree]({{ site.baseurl }}/assets/images/help/clustalw_03.gif)
+<img src="/assets/images/help/clustalw_03.gif" alt="" title="Guide Tree" class="">
 
 4. BOOTSTRAP 計算結果  
-![BOOTSTRAP 計算結果]({{ site.baseurl }}/assets/images/help/clustalw_04.gif)
+<img src="/assets/images/help/clustalw_04.gif" alt="" title="BOOTSTRAP 計算結果" class="">
 
     <span class="red">（注意）</span>2012年4月より，全ての解析時に BOOTSTRAP の計算を実行します。ただし，入力フォームで[FORMAT] と [CLUSTERING] の選択が以下の様な組み合わせのときには .phb ファイルは作成されません。
 
     | [FORAMT] | [CLUSTERING] |
-    | ---------- | -------------- |
+    |---|
     | PHYLIP     | NJ             |
     | NEXUS      | NJ             |
     | PHYLIP     | UPGMA          |

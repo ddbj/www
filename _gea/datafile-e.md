@@ -304,14 +304,14 @@ A processed .txt file containing data from one single hybridization
 should look like this:
 
 | Reporter Identifier | sample 1 normalised intensity | sample 1 background |
-| ------------------- | ----------------------------- | ------------------- |
+|---|
 | **probe_name_1**    | 233.5                         | 69.1                |
 | **probe_name_2**    | 129.4                         | 27.6                |
 
 And here is an example where gene names are used as row headings:
 
 | Human HGNC gene name | sample 1 normalised intensity | sample 1 background |
-| -------------------- | ----------------------------- | ------------------- |
+|---|
 | **CDKN2A**           | 233.5                         | 69.1                |
 | **BRCA2**            | 129.4                         | 27.6                |
 
@@ -325,14 +325,14 @@ UniProt protein accession).
 Matrix of normalised values per sample:
 
 | Reporter<br>Identifier | sample 1<br>normalised | sample 2<br>normalised | sample 3<br>normalised | sample 4<br>normalised |
-| ------------------- | ------------------- | ------------------- | ------------------- | ------------------- |
+|---|
 | **probe_name_1**    | 26.9                | 44.3                | 62.3                | 58.5                |
 | **probe_name_2**    | 22.9                | 43.7                | 58.2                | 67.4                |
 
 <br>
 
 | GenBank<br>accession | sample 1<br>normalised | sample 2<br>normalised | sample 3<br>normalised | sample 4<br>normalised |
-| ----------------- | ------------------- | ------------------- | ------------------- | ------------------- |
+|---|
 | **BC000578**      | 26.9                | 44.3                | 62.3                | 58.5                |
 | **M31642**        | 22.9                | 43.7                | 58.2                | 67.4                |
 
@@ -340,7 +340,7 @@ Matrix of summarised values (one column of data maps to multiple
 samples):
 
 | Reporter Identifier | drug A treated average | drug B treated average | untreated control average |
-| ------------------- | ---------------------- | ---------------------- | ------------------------- |
+|---|
 | **probe_name_1**    | 44.6                   | 89.3                   | 290.15                    |
 | **probe_name_2**    | 98.3                   | 36.7                   | 100.52                    |
 

@@ -56,8 +56,8 @@ lang: en
 
 Please contact us from [Message form](/contact-ddbj-e.html).
 
-{::options parse_block_html="true" /}
-<address>
+
+<address markdown="1">
 
 Phone    : +81-(0)55-981-6853  
 FAX       : +81-(0)55-981-6849  

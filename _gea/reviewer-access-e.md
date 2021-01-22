@@ -56,13 +56,13 @@ lang: en
 
 After your records have been accessioned, use the 'Generate new reviewer access key' button to create a reviewer token which provides anonymous, read-only access to your private submissions. The token can be sent to the journal editor who will circulate it to reviewers requiring access to your private data. The token will be expired after three months. You can re-generate a new token if necesssary. The reviewer access URL is provided in accession number notification e-mail sent to submitters. This method provides access to all private data except sequence files submitted to [DRA](/dra/index-e.html). [DRA](/dra/index-e.html) does not support access to private sequence data.
 
-{::nomarkdown}
-{% include image.html url="submission/reviewer1.jpg" caption="Generate new reviewer access key" class="w500" %}
-{:/}
 
-{::nomarkdown}
+{% include image.html url="submission/reviewer1.jpg" caption="Generate new reviewer access key" class="w500" %}
+
+
+
 {% include image.html url="submission/reviewer3.jpg" caption="A reviewer token" class="w300" %}
-{:/}
+
 
 ## Submitter anonymity  {#anonymity}
 
@@ -74,6 +74,6 @@ GEA automatically redact the IDF fields start with "Person", "PubMed" and "Publi
 
 </div>
 
-{::nomarkdown}
+
 {% include image.html url="submission/reviewer7.jpg" caption="IDF fields redacted in double-blind option" class="w300" %}
-{:/}
+

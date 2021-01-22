@@ -30,8 +30,8 @@ lang: en
 
 Apply data use request to [National Bioscience Database Center (NBDC)](http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines) with the AGD Study (e.g., AGDS\_00000000005) and Dataset (e.g., AGDD\_00000000005) IDs.
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 Approved users should follow the [NBDC Security Guidelines for Human Data (for Data Users)](https://gr-sharingdbs.biosciencedbc.jp/group-security-guidelines-for-users).
 </div>
 
@@ -51,13 +51,13 @@ Use this tool in Java 8. This tool does not work in Java 7.
 
 #### Windows
 
-[AGD download tool for Windows]({{ site.baseurl }}/assets/files/submission/3-5-0/AGD_tool.zip)
+[AGD download tool for Windows](/assets/files/submission/3-5-0/AGD_tool.zip)
 
 Run the tool by clicking the "bat" file in the folder.
 
 #### Unix
 
-[AGD download tool for Unix]({{ site.baseurl }}/assets/files/submission/3-5-0/AGD_tool_unix.zip)
+[AGD download tool for Unix](/assets/files/submission/3-5-0/AGD_tool_unix.zip)
 
 Run the tool by executing the sh file in the directory.
 
@@ -71,17 +71,17 @@ Run the AGD tool and login the AGD system with user ID and password notified by 
 AGD submission and download tool is the same software behave in different mode according to the account used.
 </div>
 
-{::nomarkdown}
+
 {% include image.html url="submission/agdsub1.jpg" caption="Login the AGD tool" class="w200" %}
-{:/}
+
 
 The left window is your local computer and the right window is the secure AGD file server.
 
 In the right window, data sets approved to use are listed. Check the data sets you want to download. Total number of files and size are displayed at below.
 
-{::nomarkdown}
+
 {% include image.html url="books/agddown01.jpg" caption="Select data sets to download" class="w500" %}
-{:/}
+
 
 Click the \[Download\] button and the tool download and decrypt the data sets. The number of parallel download can be adusted from 1-5 at
 "Parallel Download count".
@@ -91,15 +91,15 @@ When this process finishes, decrypted data set are downloaded to your local comp
 In the created directory with data set accession number, the metadata
 XML and data files have been downloaded.
 
-{::nomarkdown}
+
 {% include image.html url="books/agddown03.jpg" caption="metadata XML and data files" class="w300" %}
-{:/}
+
 
 You can expand the directory tree by clicking the arrowhead left to the dataset directory icon. By selecting each data directory and file, you can download individual files.
 
-{::nomarkdown}
+
 {% include image.html url="books/agddown02.jpg" caption="Download data set" class="w500" %}
-{:/}
+
 
 ### Download via a proxy server  {#download-via-proxy-server}
 
@@ -124,27 +124,27 @@ Users can view AGD metadata also in website.
 
 From the ["AGD studies" page](https://ddbj.nig.ac.jp/agd/viewer/view/studies), move to the AGD datasets page.
 
-{::nomarkdown}
+
 {% include image.html url="books/agddown04.jpg" caption="AGD studies" class="w500" %}
-{:/}
+
 
 Select data sets with data use permission.
 
-{::nomarkdown}
+
 {% include image.html url="books/agddown05.jpg" caption="Select data sets to view metadata" class="w500" %}
-{:/}
+
 
 As in the AGD tool, login the website by using user ID and password notified by NBDC.
 
-{::nomarkdown}
+
 {% include image.html url="books/agddown06.jpg" caption="Login with data use account" class="w300" %}
-{:/}
+
 
 Users can view metadata in the website after login.
 
-{::nomarkdown}
+
 {% include image.html url="books/agddown07.jpg" caption="Users can view metadata in the website after login" class="w500" %}
-{:/}
+
 
 Logout from the metadata view site
 
@@ -155,20 +155,20 @@ When an error "Maximum sessions of 1 for this principal exceeded" is displayed, 
 
 After viewing metadata, do NOT close your browser but logout at right-top "Logout".
 
-{::nomarkdown}
+
 {% include image.html url="books/agddown08.jpg" caption="Logout from metadata view site" class="w500" %}
-{:/}
+
 
 The following error is displayed when access from single account exceeds "1". Login again after 30 min interval.
 
-{::nomarkdown}
+
 {% include image.html url="books/jgadown09.jpg" caption="Error when access from single account exceeds 1" class="w500" %}
-{:/}
+
 
 ### Data file transfer by hard disk  {#data-file-transfer-by-hard-disk}
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 For all hard drive request please contact [AGD team](/contact-ddbj-e.html) and let us know the permitted datasets you would like to have transferred.
 </div>
 
@@ -176,8 +176,8 @@ For all hard drive request please contact [AGD team](/contact-ddbj-e.html) and l
 
 Please send your disk to the following address. Be sure to label your disk.
 
-{::options parse_block_html="true" /}
-<address>
+
+<address markdown="1">
 
 Postal code: 411-8540  
 Kodama Yuichi  

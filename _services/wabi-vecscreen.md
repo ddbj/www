@@ -19,7 +19,7 @@ format, result は必須です。
 result に mail を指定した場合は address も必須となります。
 
 |  パラメーター  |  説明  |
-| ---- | ---- |
+|---|
 |  format  |  request ID を返す際の応答データの形式。<br/>text, json, xml, bigfile, imagefile, requestfile が受け付けられますが、job投入時に意味があるのは text, json, xml の3つです。  |
 |  querySequence  |  vecscreen 実行時に vecscreen に渡す配列ファイル。<br/>FASTAフォーマットを使用します。  |
 |  database  |  vecscreen実行時に使用するデータベース。<br/>UniVec（多数のベクターだけでなくリンカー・アダプター・プライマー配列から、効率的な検索のために冗長な部分を除いて作成された塩基配列データベース。データベースに含まれる配列は、少数の疑陽性ヒットを許容することで contamination の検出を最大にするように選ばれています。）<br/>または UniVec_Core（疑陽性のヒット数を最小にするように選ばれた UniVec のサブセット。）を指定します。  |
@@ -30,7 +30,7 @@ result に mail を指定した場合は address も必須となります。
 ## VECSCREEN の結果の取得  {#result}
 
 |  パラメーター  |  説明  |
-| ---- | ---- |
+|---|
 |  GET vecscreen/{id}?info=status  |  job が走っている、キューにたまっている、終わっている、存在しない、ということを返します。  |
 |  GET vecscreen/{id}?info=request  |  プログラム実行条件を返します。<br/>存在しない場合は、エラーを返します。  |
 |  GET vecscreen/{id}?info=result  |  job が終わっていたら結果（multiple alignment, profile alignment を実行した場合は alignment の結果、-TREE を実行した場合は .ph ファイル、-BOOTSTRAP を実行した場合は .phb ファイル、-CONVERT を実行した場合はフォーマット変換後のファイル）を返します。<br/>終わってない・存在しない場合は、エラーを返します。  |

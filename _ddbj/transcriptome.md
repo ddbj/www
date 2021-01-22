@@ -133,7 +133,7 @@ Transcriptome の各段階と登録データの種別の対応を示します。
 
 **重要:**[ヒトを対象とした研究データの登録について](/policies.html#human)
 
-![]({{ site.baseurl }}/assets/images/ddbj/transcriptome.png)
+<img src="/assets/images/ddbj/transcriptome.png" alt="" title="" class="">
 
 [DRA] Raw outputs 次世代シークエンサの出力  
 : 次世代シークエンサからの出力データは [DDBJ Sequence Read Archive (DRA)](/dra/index.html)へご登録ください。

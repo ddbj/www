@@ -135,7 +135,7 @@ related_pages:
 
 [INSDC standards for genome assembly submission](/ddbj/assembly.html) もご参照ください。
 
-![]({{ site.baseurl }}/assets/images/ddbj/genome.png)
+<img src="/assets/images/ddbj/genome.png" alt="" title="" class="">
 
 [DRA] Raw outputs 次世代シークエンサの出力  
 : 次世代シークエンサからの出力データは [DDBJ Sequence Read Archive (DRA)](/dra/index.html)へご登録ください。

@@ -145,7 +145,7 @@ Use
 Presently the list includes:
 
 |  Database  |  Full name	  |  Format  |  Diff  |  Use  |
-| ---- | ---- | ---- | ---- | ---- |
+|---|
 |  [AceView/WormGenes](//www.ncbi.nlm.nih.gov/IEB/Research/Acembly/)  |  AceView Worm Genome  |  /db_xref="AceView/WormGenes:vha-6"  |    |  No  |
 |  AFTOL  |  Assembling the Fungal Tree of Life  |  /db_xref="AFTOL:959"  |  URL removed  |  No  |
 |  [AntWeb](//www.antweb.org/)  |  Ant Database  |  /db_xref="AntWeb:CASENT0058943-D01"  |    |  No  |

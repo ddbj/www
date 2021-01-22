@@ -102,17 +102,17 @@ lang: ja
 
 [コンタクトパーソン](/ddbj/submission.html#contact)情報を入力します。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp1-1_j.png "コンタクトパーソン情報入力画面"){:.w600}
+<img src="/assets/images/help/NSSShelp1-1_j.png" alt="コンタクトパーソン情報入力画面" title="" class="w600">
 
 コンタクトパーソンメールアドレス宛に登録開始用のリンクを含むメールが自動的に送信されます。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp1-2_j.png){:.w600}
+<img src="/assets/images/help/NSSShelp1-2_j.png" alt="" title="" class="w600">
 
 ## 2\. Hold date  {#flow-2}
 
 公開日 (Hold date) をカレンダーから選択するか、即公開を希望する場合は "Release immediately" チェックを加えます。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp2-1_j.png){:.w600}
+<img src="/assets/images/help/NSSShelp2-1_j.png" alt="" title="" class="w600">
 
   - 年末・年始はDDBJが公開作業を停止するため選択できません
 
@@ -129,10 +129,10 @@ lang: ja
 
 登録者 (Submitter) 名を入力します。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp3-1_j.png){:.w600}
+<img src="/assets/images/help/NSSShelp3-1_j.png" alt="" title="" class="w600">
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 
 **Submitter には、例のように氏名の略記を記載してください。**
 
@@ -155,7 +155,7 @@ lang: ja
 [論文 (Reference) 情報](/ddbj/flat-file.html#Reference2) を入力します。  
 配列に関する[主論文 (Primary citation)](/ddbj/submission.html#pcite) を第一 reference に入力してください。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp4_j.png){:.w600}
+<img src="/assets/images/help/NSSShelp4_j.png" alt="" title="" class="w600">
 
 <div class="attention">
 
@@ -174,32 +174,32 @@ lang: ja
 
 #### Status: Unpublished  {#flow-4-1-1}
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp4-1-1_j.png){:.w600}
+<img src="/assets/images/help/NSSShelp4-1-1_j.png" alt="" title="" class="w600">
 
 #### Status: In press  {#flow-4-1-2}
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp4-1-2_j.png){:.w600}
+<img src="/assets/images/help/NSSShelp4-1-2_j.png" alt="" title="" class="w600">
 
 #### Status: Published  {#flow-4-1-3}
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp4-1-3_j.png){:.w600}
+<img src="/assets/images/help/NSSShelp4-1-3_j.png" alt="" title="" class="w600">
 
 ### Journal name  {#flow-4-2}
 
 Journal name を ISO abbreviation で入力してください。Journal の full name を入力していくと候補が現れますので、マウスで選択することで Journal の ISO abbreviation を入力できます。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp4-2_j.png){:.w600}
+<img src="/assets/images/help/NSSShelp4-2_j.png" alt="" title="" class="w600">
 
 Journal の ISO abbreviation は [NLM Catalog](//www.ncbi.nlm.nih.gov/nlmcatalog) で調べることができます。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp4-2-1_j.png){:.w600}
+<img src="/assets/images/help/NSSShelp4-2-1_j.png" alt="" title="" class="w600">
 
 ## 5\. Sequence  {#flow-5}
 
 塩基配列を入力します。  
 [TPA](/ddbj/tpa.html) の submission を行う場合には、assembly information も同時に入力します。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp5_j.png){:.w600}
+<img src="/assets/images/help/NSSShelp5_j.png" alt="" title="" class="w600">
 
 
 ### 塩基配列のフォーマットについて  {#flow-5-1}
@@ -261,15 +261,15 @@ gctgtaactctgagatgtgctaaataaaccctctttctcaaaaaaaaaaaaaaaa
 
 ### TPA 塩基配列の入力  {#flow-5-2}
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp5-2_j.png){:.w600}
+<img src="/assets/images/help/NSSShelp5-2_j.png" alt="" title="" class="w600">
 
 ### TPA における Assembly Information の書式  {#flow-5-3}
 
 #### 入力例  {#flow-5-3-1}
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp5-3-1_j.png){:.w600}
+<img src="/assets/images/help/NSSShelp5-3-1_j.png" alt="" title="" class="w600">
 
-Assembly information のサンプルは**[ここから]({{ site.baseurl }}/assets/files/example/NSSShelp-tpa-sample.txt)**ダウンロードできます。(タブ区切りテキスト形式)
+Assembly information のサンプルは**[ここから](/assets/files/example/NSSShelp-tpa-sample.txt)**ダウンロードできます。(タブ区切りテキスト形式)
 
 #### 上記入力例の意味  {#上記入力例の意味}
 
@@ -318,7 +318,7 @@ Assembly information のサンプルは**[ここから]({{ site.baseurl }}/asset
 
 アノテーションに適合する template を選択します。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp6_j.png){:.w600}
+<img src="/assets/images/help/NSSShelp6_j.png" alt="" title="" class="w600">
 
 ## 7\. Annotation  {#flow-7}
 
@@ -326,7 +326,7 @@ Assembly information のサンプルは**[ここから]({{ site.baseurl }}/asset
 
 <div class="highlight">
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-1_j.png)
+<img src="/assets/images/help/NSSShelp7-1_j.png" alt="" title="" class="">
 
 </div>
 
@@ -337,7 +337,7 @@ Assembly information のサンプルは**[ここから]({{ site.baseurl }}/asset
 
 <div class="highlight">
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-2_j.png)
+<img src="/assets/images/help/NSSShelp7-2_j.png" alt="" title="" class="">
 
 </div>
 
@@ -348,33 +348,33 @@ Assembly information のサンプルは**[ここから]({{ site.baseurl }}/asset
 
 #### "Edit" ボタン  {#flow-7-3-1}
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-1_j.png){:.w600}
+<img src="/assets/images/help/NSSShelp7-3-1_j.png" alt="" title="" class="w600">
 
 #### "Select Qualifier" ボタン  {#flow-7-3-2}
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-2_j.png){:.w600}
+<img src="/assets/images/help/NSSShelp7-3-2_j.png" alt="" title="" class="w600">
 
 #### "Pen & Note" ボタン  {#flow-7-3-3}
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-3_j.png){:.w600}
+<img src="/assets/images/help/NSSShelp7-3-3_j.png" alt="" title="" class="w600">
 
 #### "Edit Colum" ボタン  {#flow-7-3-4}
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-4_j.png){:.w600}
+<img src="/assets/images/help/NSSShelp7-3-4_j.png" alt="" title="" class="w600">
 
 #### セルのダブルクリック (Template で "other" 選択時の場合は Qualifier のクリック)   {#flow-7-3-5}
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-3-5_j.png){:.w600}
+<img src="/assets/images/help/NSSShelp7-3-5_j.png" alt="" title="" class="w600">
 
 ### 生物名 (Organism name)  {#flow-7-4}
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-4_j.png){:.w600}
+<img src="/assets/images/help/NSSShelp7-4_j.png" alt="" title="" class="w600">
 
 学名を入力後、"OK" をクリックします。  
 入力した名称が NCBI Taxonomy database に無い場合、リストから該当するカテゴリーを選択します。
 詳細は、[生物名入力におけるカテゴリ (Category) について](/ddbj/organism.html#deasy) をご覧ください。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-4-1_j.png){:.w600}
+<img src="/assets/images/help/NSSShelp7-4-1_j.png" alt="" title="" class="w600">
 
 関連するページ  
 : [Organism qualifier に記載する生物名](/ddbj/organism.html)
@@ -385,7 +385,7 @@ Assembly information のサンプルは**[ここから]({{ site.baseurl }}/asset
 
 <div class="highlight">
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-1_j.png)
+<img src="/assets/images/help/NSSShelp7-5-1_j.png" alt="" title="" class="">
 
 </div>
 
@@ -393,7 +393,7 @@ Assembly information のサンプルは**[ここから]({{ site.baseurl }}/asset
 
 <div class="highlight">
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-2_j.png)
+<img src="/assets/images/help/NSSShelp7-5-2_j.png" alt="" title="" class="">
 
 </div>
 
@@ -401,7 +401,7 @@ Assembly information のサンプルは**[ここから]({{ site.baseurl }}/asset
 
 <div class="highlight">
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-5-3_j.png)
+<img src="/assets/images/help/NSSShelp7-5-3_j.png" alt="" title="" class="">
 
 </div>
 
@@ -409,13 +409,13 @@ Assembly information のサンプルは**[ここから]({{ site.baseurl }}/asset
 
 <div class="highlight">
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-6_j.png)
+<img src="/assets/images/help/NSSShelp7-6_j.png" alt="" title="" class="">
 
 </div>
 
 #### アップロード可能なアノテーションファイル  {#flow-7-6-1}
 
-  - サンプルファイルを[ここから]({{ site.baseurl }}/assets/files/example/mtDNA.txt)ダウンロードできます。
+  - サンプルファイルを[ここから](/assets/files/example/mtDNA.txt)ダウンロードできます。
 
   - アノテーションファイル作成方法に関する手引きは、[登録ファイル形式、アノテーションファイル](/ddbj/file-format.html#annotation)をご覧ください。
 
@@ -437,7 +437,7 @@ Assembly information のサンプルは**[ここから]({{ site.baseurl }}/asset
 
 <div class="highlight">
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7-6-1_j.png)
+<img src="/assets/images/help/NSSShelp7-6-1_j.png" alt="" title="" class="">
 
 </div>
 
@@ -484,15 +484,15 @@ EMBOSS Transeq (EBI)
 
 "Confirm" 後 "Next" クリックで最終確認画面が表示されます。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp7a_j.png){:.w600}
+<img src="/assets/images/help/NSSShelp7a_j.png" alt="" title="" class="w600">
 
 ## 8\. Finish  {#flow-8}
 
 Finish 画面が現れた時点で submission 完了となります。  
 入力された内容は自動的に DDBJ の登録用サーバーに転送されます。同時にSubmission 完了を知らせる Email が contact person の Email アドレス宛に送信されます。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp8-1_j.png){:.w600}
+<img src="/assets/images/help/NSSShelp8-1_j.png" alt="" title="" class="w600">
 
 完了を通知するメール。
 
-![]({{ site.baseurl }}/assets/images/help/NSSShelp8-2_j.png){:.w600}
+<img src="/assets/images/help/NSSShelp8-2_j.png" alt="" title="" class="w600">

@@ -33,7 +33,7 @@ The AGD accepts only de-identified data approved by NBDC. The users apply for da
 Following internal IDs are issued to metadata objects with prefixes.
 
 | Prefix | Metadata object | Digit | Example           |
-| ------ | --------------- | ----- | ----------------- |
+|---|
 | AGD\_  | Submission      | 11    | AGD\_00000000001  |
 | AGDS\_ | Study           | 11    | AGDS\_00000000001 |
 | AGDN\_ | Sample          | 11    | AGDN\_00000000001 |
@@ -126,20 +126,20 @@ The AGD data model is created by extending the [Sequence Read Archive's model](/
 
 AGD XML schema: [AGD xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-{::nomarkdown}
-{% include image.html url="submission/jga_metadata_1.jpg" caption="Example: single policy." class="w500" %}
-{:/}
 
-{::nomarkdown}
+{% include image.html url="submission/jga_metadata_1.jpg" caption="Example: single policy." class="w500" %}
+
+
+
 {% include image.html url="submission/jga_metadata_2.jpg" caption="Example: separate policies for control and case." class="w500" %}
-{:/}
+
 
 ### Summary information for public display  {#public}
 
 When AGD submissions are released, following metadata objects will be public on the AGD and NBDC websites to display summary of submissions.
 
-{::options parse_block_html="true" /}
-<div class="dl-list">
+
+<div class="dl-list" markdown="1">
 
 Submission:  
 : All fields excluding submitters' contact information.
@@ -209,13 +209,13 @@ XML schema: [AGD.policy.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
 To submitting only aggregated data or data which are not suitable for Sample-Experiment-Data, these data can be submitted as Sample-Analysis instead of Sample-Experiment-Data.
 
-{::nomarkdown}
-{% include image.html url="submission/sample-analysis.jpg" caption="One Analysis for each Sample" class="w500" %}
-{:/}
 
-{::nomarkdown}
+{% include image.html url="submission/sample-analysis.jpg" caption="One Analysis for each Sample" class="w500" %}
+
+
+
 {% include image.html url="submission/samples-analysis.jpg" caption="Analysis data aggregating Samples" class="w500" %}
-{:/}
+
 
 To submitting Analysis only data, please contact [JGA team](/contact-ddbj-e.html).
 

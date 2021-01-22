@@ -113,8 +113,8 @@ related_pages:
     url: /ddbj/location-e.html
 ---
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 
 <span class="red">Submission of research data from human subjects</span>
 
@@ -130,15 +130,15 @@ Before submission, read ["Submission of research data from human subjects"](/pol
 
 <div class="nsss-icon">
 
-[![]({{ site.baseurl }}/assets/images/parts/pdf_icon.svg)]({{ site.baseurl }}/assets/files/pdf/ddbj/websubHelp_full-e.pdf)
+[![](/assets/images/parts/pdf_icon.svg)](/assets/files/pdf/ddbj/websubHelp_full-e.pdf)
 
-[Manual]({{ site.baseurl }}/assets/files/pdf/ddbj/websubHelp_full-e.pdf)
+[Manual](/assets/files/pdf/ddbj/websubHelp_full-e.pdf)
 
 </div>
 
 <div class="nsss-icon">
 
-[![]({{ site.baseurl }}/assets/images/parts/info_icon.svg)](/ddbj/web-submission-help-e.html)
+[![](/assets/images/parts/info_icon.svg)](/ddbj/web-submission-help-e.html)
 
 [NSSS HELP](/ddbj/web-submission-help-e.html)
 
@@ -176,8 +176,8 @@ Recommended browsers
     After getting accession number(s), send request/question from [Update.](/ddbj/update-e.html).
   - If you encounter any problem during submission, please contact us with "Submission ID" through [contact form](/contact-ddbj-e.html).
 
-{::options parse_block_html="true" /}
-<div class="start-button">
+
+<div class="start-button" markdown="1">
 
 **[Start new submission](https://ddbj.nig.ac.jp/submission)**  
 **\[Create new submission\]** on the next page.

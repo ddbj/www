@@ -60,38 +60,38 @@ In the NBDC system, select "Create Group" in the left menu. In the
 "Create Group" window, enter the name and description of the group, and
 choose the "Data Submitter Group" and click Save button.
 
-{::nomarkdown}
+
 {% include image.html url="books/create-group-1_e.jpg" caption="Create a data submitter group" class="w450" %}
-{:/}
+
 <br>
 A subgrp ID (for example, subgrp5352) is assigned to the data submitter
 group.
 
-{::nomarkdown}
+
 {% include image.html url="books/create-group-2_e.jpg" caption="Assigned subgrp ID" class="w450" %}
-{:/}
+
 <br>
 The account holder (account\_b) who creates the group become the group
 owner. In the Member tab, the owner can invite a member. Click "Invite"
 in the "Edit Group" window.
 
-{::nomarkdown}
+
 {% include image.html url="books/create-group-3_e.jpg" caption="Edit group" class="w450" %}
-{:/}
+
 <br>
 Enter an account ID (account\_c) or an e-mail address of an account to
 be invited. Send an invitation e-mail by clicking "Invite".
 
-{::nomarkdown}
+
 {% include image.html url="books/create-group-4_e.jpg" caption="Invite a member" class="w450" %}
-{:/}
+
 <br>
 If the invited account holder click a link in the invitation e-mail,
 he/she will be added as a member.
 
-{::nomarkdown}
+
 {% include image.html url="books/create-group-5_e.jpg" caption="Addition of a member" class="w450" %}
-{:/}
+
 <br>
 The account\_c of the PI is added.
 

@@ -66,8 +66,8 @@ provide them in [flat file](/ddbj/flat-file-e.html).
 : About the data in traditional DDBJ is classified, see [Categories of
 Annotated/Assembled Data](#detail).
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 If you are not sure to which database you should submit your data, see
 following sites;
 
@@ -138,7 +138,7 @@ from biomedical research projects.
 The data that are not classified into any categories described in the sections are called general data and belong here.<br>In principle, it is required for general data to have at least one source feature and at least one other [Biological feature](/ddbj/file-format-e.html#biological_feature).<br>Submitted sequences are automatically classified into one of the following divisions on the basis of the taxonomy of the source organisms.
 
 | *Division* | *Description* |
-| --- | --- |
+|---|
 | HUM | Human |
 | PRI | Primates (other than human) |
 | ROD | Rodents |
@@ -156,7 +156,7 @@ The data that are not classified into any categories described in the sections a
 Environmental samples and artificially constructed sequences are classified into [ENV](/ddbj/env-e.html) and SYN division,respectively. <br>In principle, it is required for ENV and SYN data to have at least one source feature and at least one other [Biological feature](/ddbj/file-format-e.html#biological_feature).
 
 | *Division* | *Description* |
-| --- | --- |
+|---|
 | ENV | Sequences obtained via environmental sampling methods, direct PCR, DGGE, etc.<br>For ENV submissions, it is necessary to describe an [environmental_sample qualifier](/ddbj/qualifiers-e.html#environmental_sample) on the source feature. |
 | SYN | Synthetic constructs, sequences constructed by artificial manipulations<br>For SYN submissions, in general, the entry often has plural source features, so it should be cared.<br>See also [Example of Submission; E05) synthetic construct.](/ddbj/example-e.html#E05). |
 
@@ -169,7 +169,7 @@ In this regard, however, the entries including HTC or HTG division can have some
 
 
 | *Division* | *Description* |
-| --- | --- |
+|---|
 | [EST](/ddbj/est-e.html) | Expressed sequence tags, cDNA sequences read short single pass. |
 | [GSS](/ddbj/gss-e.html) | Genome survey sequences, genome sequences read short single pass. |
 | STS | Sequence tagged sites, tagged sequences for genome sequencing.<br>Recommended to use [primer_bind](/ddbj/features-e.html#primer_bind) feature and [PCR_conditions](/ddbj/qualifiers-e.html#PCR_conditions) qualifier. |

@@ -99,7 +99,7 @@ Reporter Name にマップされています。
 SDRF 中の Assay Name カラム:
 
 | Assay Name   |
-| ------------ |
+|---|
 | Sample 1:Cy3 |
 | Sample 2:Cy3 |
 | Sample 3:Cy3 |
@@ -125,7 +125,7 @@ CompositeElement Name (Affymetrix probe set は複数 probe で構成されて�
 Assay Name nodes in SDRF:
 
 | Assay Name      |
-| --------------- |
+|---|
 | Sample 1:biotin |
 | Sample 2:biotin |
 

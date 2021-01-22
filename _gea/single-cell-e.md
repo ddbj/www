@@ -93,7 +93,7 @@ Create a sample for each cell in BioSample and describe cell-specific
 information in sample attributes.
 
 | \*sample\_name | ... | single\_cell\_identifier | inferred\_cell\_type | single\_cell\_well\_quality |
-|----------------|-----|--------------------------|----------------------|-----------------------------|
+|---|
 | sample 1       | ... | cell 1                   | cell type A          | OK                          |
 | sample 2       | ... | cell 2                   | cell type B          | OK                          |
 | sample 3       | ... | cell 3                   | not applicable       | 2 cells                     |
@@ -116,7 +116,7 @@ Create a sample for each library (usually contains hundreds to thousands
 of cells) in BioSample.
 
 | \*sample\_name | ... | tissue |
-|----------------|-----|--------|
+|---|
 | library 1      | ... | liver  |
 | library 2      | ... | heart  |
 | library 3      | ... | brain  |

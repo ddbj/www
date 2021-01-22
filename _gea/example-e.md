@@ -107,9 +107,9 @@ identifier columns (names).
 A simple microarray experiment. Each sample has one raw data file and
 one processed data file.
 
-{::nomarkdown}
+
 {% include image.html url="magetab/sdrf1.png" caption="Raw and processed microarray data files for each sample" class="w400" %}
-{:/}
+
 
 | Source Name | Protocol REF | Assay Name      | Array Data File | Derived Array Data File |
 | Source 1    | P-GEAD-10    | Hybridization 1 | Data1.CEL       | Processed1.txt          |
@@ -122,9 +122,9 @@ Raw and processed microarray data files for each sample
 
 ### Example 2: Two-color microarray  {#sdrf_example2}
 
-{::nomarkdown}
+
 {% include image.html url="magetab/sdrf2.png" caption="Two-color microarray" class="w400" %}
-{:/}
+
 
 | Source Name | Extract Name | Labeled Extract Name  | Label | Assay Name      |
 | Source 1a   | Extract 1a   | LabeledExtract 1a Cy3 | Cy3   | Hybridization 1 |
@@ -143,9 +143,9 @@ A simple next-generation sequencing experiment. One raw DRA data file
 and one processed data file for each sample, and one processed matrix
 file for all samples.
 
-{::nomarkdown}
+
 {% include image.html url="magetab/sdrf3.png" caption="Raw and processed sequencing data file for each sample, and a processed matrix file" class="w500" %}
-{:/}
+
 
 | Source Name | Protocol REF | Assay Name   | Array Data File | Derived Array Data File | Derived Array Data Matrix File |
 | Source 1    | P-GEAD-20    | Sequencing 1 | DRR000001       | Processed1.txt          | Processed-matrix.txt           |

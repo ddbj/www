@@ -54,34 +54,34 @@ JGA Submission
 NBDC
 申請システムの左メニューで「グループ作成」を選択すると、グループ作成画面が表示されます。グループ名、グループの説明を入力（日本語、英語共に可）し、グループ種別で「データ提供申請グループ」を選択してから保存します。
 
-{::nomarkdown}
+
 {% include image.html url="books/create-group-1.jpg" caption="提供申請グループの作成" class="w450" %}
-{:/}
+
 <br>
 提供申請グループが作成されると subgrp ID（例 subgrp5352）が割り振られます。
 
-{::nomarkdown}
+
 {% include image.html url="books/create-group-2.jpg" caption="提供申請グループ ID の発行" class="w450" %}
-{:/}
+
 <br>
 グループを作成した申請者（account\_b）がグループオーナーになります。オーナーはメンバーを招待することができます。メンバタブで「メンバを招待する」を押下します。
 
-{::nomarkdown}
+
 {% include image.html url="books/create-group-3.jpg" caption="メンバ" class="w450" %}
-{:/}
+
 <br>
 アカウントの招待画面で招待する人のアカウント ID（例
 account\_c）、もしくは、メールアドレスを入力し、「メンバを招待する」を押下し、招待メールを送信します。
 
-{::nomarkdown}
+
 {% include image.html url="books/create-group-4.jpg" caption="メンバの招待" class="w450" %}
-{:/}
+
 <br>
 招待された人が招待メール中のリンクをクリックするとメンバとして追加されます。
 
-{::nomarkdown}
+
 {% include image.html url="books/create-group-5.jpg" caption="メンバの追加" class="w450" %}
-{:/}
+
 <br>
 PI である account\_c が追加されました。
 

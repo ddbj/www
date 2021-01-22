@@ -138,7 +138,7 @@ sequencing project.
 **Important:** [Data submission of human subjects
 research](/policies-e.html#human)
 
-![]({{ site.baseurl }}/assets/images/ddbj/genome.png)
+<img src="/assets/images/ddbj/genome.png" alt="" title="" class="">
 
 See also [INSDC standards for genome assembly
 submission](/ddbj/assembly-e.html).

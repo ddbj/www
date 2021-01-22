@@ -314,8 +314,8 @@ ENT01.1 <1..179
 //
 ```
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 
 transChecker は、エラーが発生している場合は、エラーメッセージを出力します。  
 エラーメッセージの意味は [transChecker エラーメッセージ](/ddbj/validator.html#transchecker) をご覧ください。

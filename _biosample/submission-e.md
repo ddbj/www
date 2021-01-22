@@ -46,9 +46,9 @@ lang: en
 
 Following figure depicts how BioSample records are organized and linked with other objects. This example is composed of one umbrella project that encompasses three subprojects, each of which generated data derived from two BioSample records. Users can query either the BioProject or the BioSample database to retrieve the relevant records, and then navigate through links to the corresponding experimental data which continue to be stored in DDBJ's primary data archives, [DDBJ](/ddbj/index-e.html), [DRA](/dra/index-e.html) and [DOR](/dor/index-e.html).
 
-{::nomarkdown}
+
 {% include image.html url="submission/biosample_integration.jpg" caption="Overview of BioSample and BioProject integration with other DDBJ databases" class="w450" %}
-{:/}
+
 
 ### Sample  {#sample}
 
@@ -80,9 +80,9 @@ The first targeted dictionaries implemented in the DDBJ BioSample database are t
 
 For the MIxS check lists, please see Nature Biotechnology 29, 415–420 (2011) \| doi: 10.1038/nbt.1823 (PMID:[21552244](https://www.ncbi.nlm.nih.gov/pubmed/21552244) ).
 
-{::nomarkdown}
+
 {% include image.html url="books/mixs.jpg" caption="MIxS check list" class="w450" %}
-{:/}
+
 
 ### Organism  {#organism}
 
@@ -191,7 +191,7 @@ Select "Hold" or "Release". You cannot specify hold date. Please see [Data Relea
 
 [(Meta)Genomic Sequences Sample (MIMS)](#Meta_Genomic_Sequences_Sample)<a name="Meta_Genomic_Sequences_Sample"></a>
 
-: | ------------------------------------------ |
+ |---|
   | Environmental/Metagenome Genomic Sequences |
     
   Please refer to [environmental samples](/ddbj/env-e.html).
@@ -200,7 +200,7 @@ Select "Hold" or "Release". You cannot specify hold date. Please see [Data Relea
 
 [Genomic Sequences Sample (MIGS)](#Genomic_Sequences_Sample)<a name="Genomic_Sequences_Sample"></a>
 
-: | --------------------------------------------- |
+ |---|
   | Cultured Bacterial/Archaeal Genomic Sequences |
   | Eukaryotic Genomic Sequences                  |
   | Viral Genomic Sequences                       |
@@ -211,7 +211,7 @@ Select "Hold" or "Release". You cannot specify hold date. Please see [Data Relea
 
 [Marker Sequences Sample (MIMARKS)](#Marker_Sequences_Sample)<a name="Marker_Sequences_Sample"></a>
 
-: | ------------------------------- |
+ |---|
   | Specimen Marker Sequences       |
   | Survey related Marker Sequences |
 
@@ -227,7 +227,7 @@ Select "Hold" or "Release". You cannot specify hold date. Please see [Data Relea
 
 [Environmental package (MIxS Sample)](#Environmental_package)<a name="Environmental_package"></a>
 
-: | --------------------------- |
+ |---|
   | No package                  |
   | air                         |
   | host-associated             |
@@ -261,8 +261,8 @@ Select "Hold" or "Release". You cannot specify hold date. Please see [Data Relea
 
 # Submission to BioSample
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 Submission of research data from human subjects
 : <span class="red">For submitting data from human subjects (human data) to the databases of DDBJ center, it is submitter's responsibility to ensure that the dignity and right of human subject are protected in accordance with all applicable laws, ordinances, guidelines and policies of submitter's institution. In principle, make sure to remove any direct personal identifiers of human subjects from your data to be submitted. Before submitting human data, read the "[Submission of research data from human subjects](/policies-e.html#human)".</span>
 </div>
@@ -283,25 +283,25 @@ Upper limit is about 2,000 samples per submission.
 If there is no reply from submitters after three months of initial contact, submissions will be cancelled.
 </div>
 
-{::nomarkdown}
+
 {% include image.html url="books/hbs-01.jpg" caption="Create a new sample submission" class="w400" %}
-{:/}
+
 
 To submit a BioSample, enter content from left to right tabs.
 
 For BioSample metadata, please see the [BioSample metadata](#metadata).
 
-{::nomarkdown}
+
 {% include image.html url="books/hbs-02.jpg" caption="Submit new samples" class="w450" %}
-{:/}
+
 
 Select a sample type in the "SAMPLE TYPE". For genome samples, minimum sample attributes are defined by [MIxS](#sample-attributes).
 
 For the Sample type, please see the [BioSample Handbook](#Sample_type).
 
-{::nomarkdown}
+
 {% include image.html url="books/hbs-03.jpg" caption="Select a sample type" class="w450" %}
-{:/}
+
 
 ### Enter sample attributes  {#enter-sample-attributes}
 
@@ -313,9 +313,9 @@ Download a template text file according to the selected sample type to enter sam
 
 A main sample submission step is to describe samples by required, optional and user-defined attributes.
 
-{::nomarkdown}
+
 {% include image.html url="books/hbs-04.jpg" caption="Download a text file for entering sample attributes" class="w450" %}
-{:/}
+
 
 A text file is separated by tab and can be opened and editted in spreadsheet editor (e.g. Excel®). Attribute names are in a header line. Attributes with "\*" are required.
 
@@ -393,15 +393,15 @@ Upload the sample attribute file by selecting the file and click the Continue bu
 
 For validation rules and messages, please see [Validation rules page](/biosample/validation-e.html).
 
-{::nomarkdown}
+
 {% include image.html url="books/hbs-04-2.jpg" caption="BioSample validation. In this example, an error for the future date in the collection_date and a warning for inconsistent countries between geo_loc_name and lat_lon of the sample \"KOME-2\" are displayed." class="w500" %}
-{:/}
+
 
 Check content in the last "OVERVIEW" and submit samples. In the "ATTRIBUTES" area, the submitted sample attribute file can be downloaded.
 
-{::nomarkdown}
+
 {% include image.html url="books/hbs-05.jpg" caption="Submit BioSample" class="w450" %}
-{:/}
+
 
 ### Accession numbers  {#accession-numbers}
 

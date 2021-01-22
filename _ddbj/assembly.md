@@ -104,11 +104,11 @@ Genome assemblies comprise a number of possible layers of information, including
 
 ## Figure I. Three typical assembly processes  {#Figure_I._Three_typical_assembly_processes}
 
-![]({{ site.baseurl }}/assets/images/ddbj/assembly1.gif)
+<img src="/assets/images/ddbj/assembly1.gif" alt="" title="" class="">
 
-![]({{ site.baseurl }}/assets/images/ddbj/assembly2.gif)
+<img src="/assets/images/ddbj/assembly2.gif" alt="" title="" class="">
 
-![]({{ site.baseurl }}/assets/images/ddbj/assembly3.gif)
+<img src="/assets/images/ddbj/assembly3.gif" alt="" title="" class="">
 
 Figure I. The figure shows three typical assembly processes and the layers of information that they yield.  
 A) Clone-based assembly with scaffolding and finishing steps.  

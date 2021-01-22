@@ -131,7 +131,7 @@ TPA. The outputs of computational tools, feature identification algorithms, and 
 Below is a list of typical TPA entry types and the class to which they belong. Please note that this list is neither exhaustive (there may be further entry types that would be acceptable) nor defining of the complete set of requirements (other constraints will be applied that are documented outside this list)
 
 | Record<br>Type | TPA Tier | Description |
-| --- | --- | --- |
+|---|
 | 1 | **Experimental** | CDS and related annotation applied to a sequence derived from existing genomic, EST and/or mRNA primary records with wet laboratory experimental evidence for existence of at least part of the transcript (eg. RT-PCR, Northern) |
 | 2 | **Experimental** | CDS and related annotation applied to a sequence derived from existing genomic, EST and/or mRNA primary records, in addition to novel sequencing, with wet laboratory experimental evidence for existence of at least part of the transcript (eg. RT-PCR, Northern) |
 | 3 | **Experimental** | CDS and related annotation applied to a sequence derived from existing genomic, EST and/or mRNA primary records with experimental evidence for the presence of the product (eg. antibody staining, biochemical assay) |
@@ -160,7 +160,7 @@ Below is a list of typical TPA entry types and the class to which they belong. P
 Please note that this list is not exhaustive.
 
 | Record<br>Type | TPA Tier | Description |
-| --- | --- | --- |
+|---|
 | A | **Not accepted** | Annotation of repeat (and no other) features |
 | B | **Not accepted** | Annotation that has arisen from an automated tool, such as GeneMark, tRNA scan or ORF finder, where no further evidence, experimental or otherwise, is presented for the annotation. The annotation in these cases has not been the subject of the peer review of the publication. |
 | C | **Not accepted** | A record representing a completely sequenced genome including only features that have not been assigned gene symbols or product identifiers, for which none has wet laboratory experimental evidence. |

@@ -37,7 +37,7 @@ In 2010, databases at EBI were integrated to [ENA; European Nucleotide Archive](
 
 
 {: .float-right }
-![]({{ site.baseurl }}/assets/images/center/insdc_shoukai.gif "INSDC constitution")
+<img src="/assets/images/center/insdc_shoukai.gif" alt="INSDC constitution" title="" class="">
 
 {: .float-release }
 ## Members of INSDC  {#member}

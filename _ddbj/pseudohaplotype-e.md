@@ -106,9 +106,9 @@ This page describes a typical case of the pseudohaplotype sequence submission. T
 
 If the raw DRA sequencing data contain both pseudohaplotypes, create a BioProject for DRA apart from those for assemblies. If the DRA data are derived from the same sample for the assemblies, use the same BioSample.
 
-{::nomarkdown}
+
 {% include image.html url="submission/pseudohaplotype.jpg" caption="Pseudohaplotype data submission" class="w600" %}
-{:/}
+
 
 ### BioProject  {#bioproject}
 

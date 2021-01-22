@@ -42,7 +42,7 @@ See Also: [Search job status](#search-status)
 WABI search jobs transition through the following status.
 
 | Job Status  | Explanation                                                                    |
-| ----------- | ------------------------------------------------------------------------------ |
+|---|
 | waiting   | The job has been added to the queue, but has not yet commenced execution.      |
 | running   | The job is being executed.                                                     |
 | finished  | The job has completed execution.                                               |
@@ -153,12 +153,12 @@ the search output.
 
 Example:
 
-[![Detail view_6_1]({{ site.baseurl }}/assets/images/help/wabi_blast_imagedata.png){:.w500}]({{ site.baseurl }}/assets/images/help/wabi_blast_imagedata.png ){:.group1}
+[![Detail view_6_1](/assets/images/help/wabi_blast_imagedata.png){:.w500}](/assets/images/help/wabi_blast_imagedata.png ){:.group1}
 
 ## WABI BLAST usage examples  {#usage_example}
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
 <h3 class="toggle-content-btn"><a href="javascript:void(0)">Code example using Java</a></h3>
 <div class="accordion-content">#### Example of code
 
@@ -228,8 +228,8 @@ $ java -classpath 'target/wabi-client-1.jar:target/wabi-client-1-jar-with-depend
 </div>
 </div>
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
   <h3 class="toggle-content-btn"><a href="javascript:void(0)">Code example using Perl</a></h3>
 <div class="accordion-content">#### Example of code
 
@@ -284,8 +284,8 @@ $ perl example.pl
 </div>
 </div>
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
   <h3 class="toggle-content-btn"><a href="javascript:void(0)">Code example using Ruby</a></h3>
 <div class="accordion-content">#### Example of code
 
@@ -648,8 +648,8 @@ HTTP Status 400
 17    }
 ```
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">Usage Example</a></h4>
 <div class="accordion-content">Example of the use of the REST client on Java Spring Framework:
     <script src="https://gist.github.com/ddbj-repo/ec96049ec11c1d22303d9fcdea9f70cd.js"></script>
@@ -787,7 +787,7 @@ Example input values
 
 
 | HTTP Parameter | nput value |
-| -------------- | ---------- |
+|---|
 | format       | "json"   |
 | result       | "www"    |
 | info         | "status" |
@@ -846,8 +846,8 @@ HTTP Status 400
 13}
 ```
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">Example Usage</a></h4>
 <div class="accordion-content">Example using the REST client on Java Spring Framework:
     <script src="https://gist.github.com/ddbj-repo/4a1ea26e46bebac37cf595eae77e384a.js"></script>
@@ -971,7 +971,7 @@ Example input values:
 
 
 | HTTP Parameters | Input values    |
-| --------------- | --------------- |
+|---|
 | format        | "requestfile" |
 | info          | "request"     |
 
@@ -1011,8 +1011,8 @@ HTTP Status 404
 12}
 ```
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">Example Usage</a></h4>
 <div class="accordion-content">Example using the REST client on Java Spring Framework:
     <script src="https://gist.github.com/ddbj-repo/d3ff7fbc9a66733ab164f669e4bcb88d.js"></script>
@@ -1136,7 +1136,7 @@ failures of the request.
 Example of input data:
 
 | HTTP Parameters | Input Value |
-| --------------- | ----------- |
+|---|
 | format        | "bigfile" |
 | info          | "result"  |
 
@@ -1191,8 +1191,8 @@ HTTP Status 400
 12}
 ```
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">Usage Example</a></h4>
 <div class="accordion-content">Example of the use of the REST client on Java Spring Framework:
     <script src="https://gist.github.com/ddbj-repo/af6f2a4165385224de18cc5968568848.js"></script>
@@ -1314,7 +1314,7 @@ failure of the request.
 Example input values
 
 | HTTP Parameter | Input Value |
-| ----------- | ------------- |
+|---|
 | `imageId`   | `"1"`         |
 | `format`    | `"imagefile"` |
 | `info`      | `""`          |
@@ -1344,8 +1344,8 @@ HTTP Status 404
 12 }
 ```
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">Example Usage</a></h4>
 <div class="accordion-content">Example using HttpURLConnection with Java:
     <script src="https://gist.github.com/ddbj-repo/bd58a6ca09c2d380d5ceafd4905a0e2e.js"></script>
@@ -1454,7 +1454,7 @@ In case of failed completion:
 Example input values:
 
 | Help-Command and other parameters | nput Values     |
-| --------------------------------- | --------------- |
+|---|
 | Help-Command                    | "list_result" |
 | format                          | "json"        |
 
@@ -1490,8 +1490,8 @@ Example response for a failed request:
 16 }
 ```
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">Example Usage</a></h4>
 <div class="accordion-content">Example of the use of the REST client on Java Spring Framework:
     <script src="https://gist.github.com/ddbj-repo/324515b540e438c23e5589dfa40f9aed.js"></script>
@@ -1565,8 +1565,8 @@ TTTGCCCACGGACACAACTGCCATATCGCCTTACGGGAGATCATCGAAACTCTGAACAGC
 CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 ```
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 Valid search results may not be obtained with very long sequences or if
 there are too many sequences for the following reasons.  
 In such cases, please try reducing the number of query sequences or
@@ -1591,7 +1591,7 @@ up-to-date information.
 
 
 | Dataset value    | Explanation                                        |
-| ---------------- | -------------------------------------------------- |
+|---|
 | `ddbjall`        | DDBJ ALL (DDBJ periodical release + daily updates) |
 | `ddbjnew`        | DDBJ New (DDBJ daily updates)                      |
 | `16S_rRNA`       | 16S rRNA (Prokaryotes)                             |
@@ -1618,7 +1618,7 @@ Note: Please use the help API [GET
 recently updated information.
 
 |  Explanation  |    |  Database value  |
-| ---- | ---- | ---- |
+|---|
 | DDBJ ALL | DDBJ periodical release + daily updates | (Refer to table below) |
 | DDBJ New | DDBJ daily updates | (Add prefix "new_" to the values below) |
 | 16S rRNA | 16S rRNA from DDBJ periodical release | 16S_rRNA |
@@ -1627,7 +1627,7 @@ recently updated information.
 DDBJ ALL, DDBJ NEW Database value
 
 |  Standard divisions  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  `hum`, `new_hum`  | Human |  human  |
 |  `pri`, `new_pri`  |  Primates  |  primates other than human  |
 |  `rod`, `new_rod`  |  Rodents  |  rodents  |
@@ -1642,13 +1642,13 @@ DDBJ ALL, DDBJ NEW Database value
 |  `env`, `new_env`  |  ENV  |  environmental samples(environmental samples)  |
 
 |  High throughput divisions  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  `htc`, `new_htc`  |  HTC  |  High Throughput cDNAs  |
 |  `htg`, `new_htg`  |  HTG  |  High Throughput Genomic sequences  |
 |  `tsa`, `new_tsa`  |  TSA  |  Transcriptome Shotgun Assembly  |
 
 |  EST divisions  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  `est_atha`, `new_est_atha`  |  A.thaliana  |  *Arabidopsis thaliana* (thale cress)  |
 |  `est_btra`, `new_est_btra`  |  B.taurus  |  *Bos taurus* (cattle)  |
 |  `est_cele`, `new_est_cele`  |  C.elegans  |  *Caenorhabditis elegans* (nematode worm)  |
@@ -1673,7 +1673,7 @@ DDBJ ALL, DDBJ NEW Database value
 |  `est_rest`, `new_est_rest`  |  Others  |  Others  |
 
 |  Others  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  `pat`, `new_pat`  |  Patent  |  patent (PAT)  |
 |  `una`, `new_una`  |  Unannotated Seq  |  unannotated sequences (UNA)  |
 |  `gss`, `new_gss`  |  GSS  |  genome survey sequences  |
@@ -1682,7 +1682,7 @@ DDBJ ALL, DDBJ NEW Database value
 Refseq NA Database value
 
 |  RefSeq NA  |    |
-| ---- | ---- |
+|---|
 | `refseq-genomic-fungi`, `refseq-rna-fungi` | Fungi |
 | `refseq-genomic-invertebrate`, `refseq-rna-invertebrate` | Invertebrate |
 | `refseq-genomic-microbial`, `refseq-rna-microbial` | Microbial |
@@ -1711,7 +1711,7 @@ Example amino acid sequence database values and their corresponding
 explanations are listed in the table below.
 
 |  Explanation  |    |  Database value  |
-| ---- | ---- | ---- |
+|---|
 | UniProt (Swiss-Prot + TrEMBL) | Swiss-Prot + TrEMBL | `uniprot_all` |
 | UniProt (Swiss-Prot) | Swiss-Prot | `uniprot_sprot` |
 | UniProt (TrEMBL) | TrEMBL | `uniprot_trembl` |
@@ -1723,7 +1723,7 @@ explanations are listed in the table below.
 DAD ALL, DAD NEW Database value
 
 |  Standard divisions  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  `dad_hum`, `dad_new_hum`  |  Human  |  human  |
 |  `dad_pri`, `dad_new_pri`  |  Primates  |  primates other than human |
 |  `dad_rod`, `dad_new_rod`  |  Rodents  |  rodents  |
@@ -1738,13 +1738,13 @@ DAD ALL, DAD NEW Database value
 |  `dad_env`, `dad_new_env`  |  General  |  environmental samples  |
 
 |  High throughput divisions  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  `dad_htc`, `dad_new_htc`  |  HTC  |  High Throughput cDNAs  |
 |  `dad_htg`, `dad_new_htg`  |  HTG  |  High Throughput Genomic sequences  |
 |  `dad_tsa`, `dad_new_tsa`  |  TSA  |  Transcriptome Shotgun Assembly  |
 
 |  EST divisions  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  `dad_est_atha`, `dad_new_est_atha`  |  A.thaliana  |  *Arabidopsis thaliana* (thale cress)  |
 |  `dad_est_btra`, `dad_new_est_btra` |  B.taurus  |  *Bos taurus* (cattle)  |
 |  `dad_est_cele`, `dad_new_est_cele`  |  C.elegans  |  *Caenorhabditis elegans* (nematode worm)  |
@@ -1769,7 +1769,7 @@ DAD ALL, DAD NEW Database value
 |  `dad_est_rest`, `dad_new_est_rest`  |  Others  |  Others  |
 
 |  Others  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  `dad_pat`, `dad_new_pat`  |  Patent  |  patent (PAT)  |
 |  `dad_una`, `dad_new_una`  |  Unannotated Seq  |  unannotated sequences (UNA)  |
 |  `dad_gss`, `dad_new_gss`  |  GSS  |  genome survey sequences  |
@@ -1778,7 +1778,7 @@ DAD ALL, DAD NEW Database value
 Refseq AA Database value
 
 |  RefSeq AA  |    |    |
-| ---- | ---- | ---- |
+|---|
 | `refseq-protein-fungi` | Fungi |
 | `refseq-protein-invertebrate` | Invertebrate |
 | `refseq-protein-microbial` | Microbial |
@@ -1812,7 +1812,7 @@ recently updated information.
 
 
 |  BLAST Program  |  query  |  Data Base  |  Explanation  |
-| ---- | ---- | ---- | ---- |
+|---|
 | megablast | nucleotide | nucleotide | Aligning your nucleotide sequence with nucleotide sequence database.<br>When you want to perform a homology search with long length of nucleotide sequence, results are provided faster than blastn program. |
 | blastn | nucleotide | nucleotide | Aligning your nucleotide sequence with nucleotide sequence database. |
 | tblastn | amino acid | nucleotide | Aligning your amino acid sequence with nucleotide sequence database by translating database sequences taking into account all six possible open reading frames. |
@@ -1832,8 +1832,8 @@ recently updated information.
 Combinations of these options can be specified with corresponding values
 separated by spaces.
 
-{::options parse_block_html="true" /}
-<table>
+
+<table markdown="1">
   <thead>
     <tr>
       <th>Options</th>
@@ -2152,7 +2152,7 @@ reference the most recently updated information.](#URI_GET_help)
 
 
 | Response data format | Explanation                                                                               | Media Type                        |
-| -------------------- | ----------------------------------------------------------------------------------------- | --------------------------------- |
+|---|
 | `text`               | Plain text                                                                                | `text/plain; charset=utf-8`       |
 | `json`               | JSON format                                                                               | `application/json; charset=utf-8` |
 | `xml`                | XML text                                                                                  | `text/xml; charset=utf-8`         |
@@ -2176,7 +2176,7 @@ recently updated information.
 
 
 | Retrieval Method | Explanation                                                                                                    |
-| ---------------- | -------------------------------------------------------------------------------------------------------------- |
+|---|
 | `www`            | Submit a request to a URL for retrieving a result, and receive the result as the response data to the request. |
 | `mail`          | Result is sent to the specified email address.                                                                 |
 
@@ -2197,7 +2197,7 @@ Note: Please use the help API [GET
 up-to-date information.
 
 |  Information Type  |  Explanation  |
-| ---- | ---- |
+|---|
 | `status` | Job status |
 | `result` | Search results |
 | `request` | Search criteria specified when the job was submitted |

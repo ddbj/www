@@ -29,7 +29,7 @@ related_pages:
 ARSA retrieves the following databases.
 
 | Database                                            | Note                     |
-| --------------------------------------------------- | ------------------------ |
+|---|
 | DDBJ Release                                        |                          |
 | DDBJ New (daily updates)                            |                          |
 | Amino Acid Patent Sequence data submitted from JPO  |                          |

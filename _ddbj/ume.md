@@ -116,7 +116,7 @@ UME (Utilities for MSS file Error check) は Mass Submission System (MSS) を利
 ## 基本機能  {#function}
 
 |  名称  |  機能  |
-| ---- | ---- |
+|---|
 |  [Parser](#validation-2)  |  [配列ファイル](/ddbj/file-format.html#sequence) と[アノテーションファイル](/ddbj/file-format.html#annotation)<br>の構文とフォーマットを検証します。<br>登録ファイルを DDBJ 送付する際には、必ず Parser を用いてファイルの確認を行い、エラーのない状態にしてから送付してください。   |
 |  [transChecker](#validation-3)  |  [CDS (タンパク質をコードする配列)](/ddbj/cds.html)feature でアミノ酸翻訳の可否とその配列を検証します。  |
 |  [FFconv](#validation-4)  |  [配列ファイル](/ddbj/file-format.html#sequence) と [アノテーションファイル](/ddbj/file-format.html#annotation) から、擬似的な [フラットファイル](/ddbj/flat-file.html) を作成します。 |
@@ -154,7 +154,7 @@ $ cd UME  # UME を展開したディレクトリに移動してください。
 $ ./UME.sh
 ```
 
-![]({{ site.baseurl }}/assets/images/ddbj/UME1-j.png "UME の起動")
+<img src="/assets/images/ddbj/UME1-j.png" alt="UME の起動" title="" class="">
 
 lib フォルダ  
 : UME が使用するライブラリファイルがあります。正常に動作しなくなる恐れがありますので、絶対に内部は変更しないでください。移動もしないでください。
@@ -175,7 +175,7 @@ license ファイル
 
 UME を起動しましたら、メモリ割り当てサイズを調節します。 デフォルトは 512 Mbytes ですが、ご使用の PCのスペックに合わせて変更してください。
 
-[![]({{ site.baseurl }}/assets/images/ddbj/UME2.png)]({{ site.baseurl }}/assets/images/ddbj/UME2.png)
+[![](/assets/images/ddbj/UME2.png)](/assets/images/ddbj/UME2.png)
 
 1. 画面上部のメニューから Config をクリックします。
 2. Max memory for runtime のプルダウンメニューから、クリックして選択します。
@@ -187,7 +187,7 @@ UME を起動しましたら、メモリ割り当てサイズを調節します�
 下図で赤い四角で囲んだ部分にある Check タブをクリックしますと、この表示になります。  
 UME を起動後、最初に開いているパネルです。
 
-![]({{ site.baseurl }}/assets/images/ddbj/UME3.png "Check パネルの構成")
+<img src="/assets/images/ddbj/UME3.png" alt="Check パネルの構成" title="" class="">
 
 1. 処理対象とする [アノテーションファイル](/ddbj/file-format.html#annotation) と[配列ファイル](/ddbj/file-format.html#sequence) (Fasta File)をそれぞれ指定します。
 2. Execute をクリックしますと、(1) で指定したファイルを Parser で検証します。
@@ -199,7 +199,7 @@ UME を起動後、最初に開いているパネルです。
 
 以下の手順で Parser による登録ファイルの構文チェックを実行してください。
 
-![]({{ site.baseurl }}/assets/images/ddbj/UME5.png "Parser 構文チェックツール"){:.w600}
+<img src="/assets/images/ddbj/UME5.png" alt="Parser 構文チェックツール" title="" class="w600">
 
 Check タブをクリックし、Check パネルを表示させます。
 
@@ -212,8 +212,8 @@ Check タブをクリックし、Check パネルを表示させます。
 7. Save をクリックしますと、(6) の内容をテキストファイルに保存します。
 8. Close をクリックしますと、この結果表示ウィンドウを閉じます。
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 
 Parser は、エラーが発生している場合は、エラーメッセージを出力します。  
 エラーメッセージの意味は [Parser エラーメッセージ](/ddbj/validator.html#parser) をご覧ください。
@@ -226,7 +226,7 @@ Parser は、エラーが発生している場合は、エラーメッセージ�
 ただし、transChecker を実行する前に、[Parser](#validation-2) でエラーが出力されない状態にしておく必要があります。Parser でエラーが検出される場合は、transChecker を実行することが出来ませんのでご注意ください。  
 以下の手順で transChecker によるアミノ酸翻訳チェックを実行します。
 
-![]({{ site.baseurl }}/assets/images/ddbj/UME6.png "transChecker"){:.w600}
+<img src="/assets/images/ddbj/UME6.png" alt="transChecker" title="" class="w600">
 
 Check タブをクリックし、 Check パネル を表示させます。
 
@@ -257,8 +257,8 @@ Check タブをクリックし、 Check パネル を表示させます。
   <li>Close をクリックしますと、この結果表示ウィンドウを閉じます。</li>
 </ol>      
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 
 transChecker は、エラーが発生している場合は、エラーメッセージを出力します。  
 エラーメッセージの意味は [transChecker エラーメッセージ](/ddbj/validator.html#transchecker) をご覧ください。
@@ -273,7 +273,7 @@ FFconv を使用して [アノテーションファイル](/ddbj/file-format.htm
 
 FFconv は以下の手順で実行します。
 
-![]({{ site.baseurl }}/assets/images/ddbj/UME7.png "FFconv"){:.w600}
+<img src="/assets/images/ddbj/UME7.png" alt="FFconv" title="" class="w600">
 
 Check タブをクリックし、 Check パネル を表示させます。
 
@@ -294,7 +294,7 @@ Check タブをクリックし、 Check パネル を表示させます。
 
 下図で赤い四角で囲んだ部分にある Contig タブをクリックしますと、この表示になります。
 
-![]({{ site.baseurl }}/assets/images/ddbj/UME4.png "Contig 登録用ファイルの検証")
+<img src="/assets/images/ddbj/UME4.png" alt="Contig 登録用ファイルの検証" title="" class="">
 
 1. 処理対象とする [アノテーションファイル](/ddbj/file-format.html#annotation) を指定します。
 2. 処理対象とする [AGPファイル](/ddbj/file-format.html#agp) を指定します。
@@ -307,7 +307,7 @@ Check タブをクリックし、 Check パネル を表示させます。
 AGPParser は [AGPファイル](/ddbj/file-format.html#agp) のフォーマットをチェックします。  
 [アノテーションファイル](/ddbj/file-format.html#annotation) または AGPファイルで引用する配列で構成される multi-fasta ファイルを指定した場合、相互の整合性をチェックします。
 
-![]({{ site.baseurl }}/assets/images/ddbj/UME8.png "AGPParser 実行"){:.w600}
+<img src="/assets/images/ddbj/UME8.png" alt="AGPParser 実行" title="" class="w600">
 
 Contig タブをクリックし、 Contig パネル を表示させます。
 

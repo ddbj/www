@@ -30,8 +30,8 @@ lang: ja
 
 [日本 DNA データバンク (DDBJ) センター](/index.html)はヒトデータをグループ共有 (制限共有) するためのデータベースである AMED Genome group sharing Database (AGD) を DDBJ グループクラウドでサービス提供しています。 データ提供・利用申請審査は [National Bioscience Database Center (NBDC)](http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines) で実施しています。
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
   - AGD はオープンなデータベースである INSDC やアクセス制限データベースである JGA とは別のデータベースです。
   - AGD の登録システムは DDBJ センターのオープンデータ登録システムである [D-way](https://ddbj.nig.ac.jp/D-way/)，アクセス制限データベースである JGA とは異なります。
   - AGD にデータを登録するためには [NBDC へのデータ提供申請とヒトデータ審査委員会での承認](https://gr-sharingdbs.biosciencedbc.jp/agd-data-submission)が必要です。
@@ -46,12 +46,12 @@ lang: ja
 
 メタデータ記入用エクセルファイルを下記よりダウンロードし、内容を英語で記入してください。メタデータの説明は[こちらのページ](/agd/download.html)をご参考ください。
 
-[![AGD メタデータ記入用エクセル]({{ site.baseurl }}/assets/images/parts/download.png "AGD メタデータ記入用エクセル"){:.w40}.]({{ site.baseurl }}/assets/files/submission/AGD_metadata.xlsx)
+[![AGD メタデータ記入用エクセル](/assets/images/parts/download.png "AGD メタデータ記入用エクセル"){:.w40}.](/assets/files/submission/AGD_metadata.xlsx)
 
 last updated: 2017-08-18
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 必ずエクセルのファイル名は \_metadata.xlsx で終わるようにしてください。\_metadata より前は Submission ID など識別のために自由に名前を付けることができます。
 </div>
 
@@ -71,14 +71,14 @@ Data/Analysis オブジェクトに複数のファイルが含まれる場合は
 
 AGD submission tool (最終更新日: 2018-11-21，v3.5.0) をダウンロードします。
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 Java 8 で実行してください。Java 7 では動作しません。[プロキシ環境での使用方法について](#use-proxy-environment)
 </div>
 
 #### Windows
 
-[Windows 用 AGD submission tool]({{ site.baseurl }}/assets/files/submission/3-5-0/AGD_tool.zip)
+[Windows 用 AGD submission tool](/assets/files/submission/3-5-0/AGD_tool.zip)
 
 展開したフォルダに含まれる bat ファイルをダブルクリックして起動。
 
@@ -86,7 +86,7 @@ Java 8 で実行してください。Java 7 では動作しません。[プロ�
 
 #### Unix
 
-[Unix 用 AGD submission tool]({{ site.baseurl }}/assets/files/submission/3-5-0/AGD_tool_unix.zip)
+[Unix 用 AGD submission tool](/assets/files/submission/3-5-0/AGD_tool_unix.zip)
 
 展開したフォルダに含まれる sh ファイルをシェルで実行して起動。
 
@@ -96,25 +96,25 @@ Java 8 で実行してください。Java 7 では動作しません。[プロ�
 
 AGD tool を起動し，[NBDC](http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines) 担当者から通知されるアカウントとパスワードでログインします。
 
-{::nomarkdown}
+
 {% include image.html url="submission/agdsub1.jpg" caption="AGD tool へのログイン" class="w200" %}
-{:/}
+
 
 左ウィンドウがお手許のコンピュータ，右ウィンドウが AGD のセキュアなファイルサーバになります。
 
 右ウィンドウ上部の Submission ID で対象となる AGD 登録の ID (例 upload-0003) をプルダウンメニューから選択します。 左ウィンドウでメタデータを記入したエクセルファイル (例 AGD\_upload-0003\_metadata.xlsx) を選択し，Encrypt & Upload をクリックします。
 
-{::nomarkdown}
+
 {% include image.html url="submission/agdsub2.jpg" caption="対象 submission とエクセルファイルの選択" class="w500" %}
-{:/}
+
 
 エクセルファイルがサーバにセキュアにアップロードされます。下部ウィンドウにエラーメッセージが表示されますが無視してください。
 
 エクセルファイルをアップロードした後，[メールで AGD 担当者にご連絡ください](/contact-ddbj.html)。
 
-{::nomarkdown}
+
 {% include image.html url="submission/agdsub3.jpg" caption="アップロードされたエクセルファイル" class="w500" %}
-{:/}
+
 
 <div class="attention">
 メタデータが記入されたエクセルファイルはメールで送付しないでください。
@@ -126,15 +126,15 @@ AGD ファイルサーバ上にある「ファイル名が \_metadata.xlsx で�
 
 ダウンロードしたいエクセルファイル (例 AGD\_upload-0003\_r1\_metadata.xlsx) を右クリックし，表示されるメニューの Download を選択します。対象のファイルが左ウィンドウで表示されているローカルマシンにダウンロードされます。
 
-{::nomarkdown}
+
 {% include image.html url="submission/agddown1.jpg" caption="エクセルのダウンロード" class="w500" %}
-{:/}
+
 
 ダウンロードしたい XML ファイル (例 upload-0003\_Data.xml) を右クリックし，表示されるメニューの Download を選択します。対象のファイルが左ウィンドウで表示されているローカルマシンにダウンロードされます。必要な XML ファイルを１つずつダウンロードします。
 
-{::nomarkdown}
+
 {% include image.html url="submission/agddown2.jpg" caption="XML のダウンロード" class="w500" %}
-{:/}
+
 
 ## 登録ファイルのアップロード  {#upload-data-files}
 
@@ -150,9 +150,9 @@ Data オブジェクトに fastq や bam ファイルなどの個人レベルの
 
 ダウンロードした XML ファイルとデータファイルを AGD tool で選択し，対象 submission にまとめてアップロードします。
 
-{::nomarkdown}
+
 {% include image.html url="submission/agdsub4.jpg" caption="メタデータ XML ファイルとデータファイルのアップロード" class="w500" %}
-{:/}
+
 
 ### 登録ファイルの検証処理  {#validation-submitted-files}
 
@@ -167,9 +167,9 @@ Data オブジェクトに fastq や bam ファイルなどの個人レベルの
 
 エラーメッセージが表示された場合は[メールで AGD 担当者にご連絡ください](/contact-ddbj.html)。
 
-{::nomarkdown}
+
 {% include image.html url="submission/agdsub4.jpg" caption="検証処理を通過したメタデータ XML とデータファイル" class="w500" %}
-{:/}
+
 
 ### 複数ファイルの選択方法  {#select-files}
 
@@ -179,25 +179,25 @@ Data オブジェクトに fastq や bam ファイルなどの個人レベルの
 
 始点となるファイルのファイル名部分 (チェックボックスではありません) を選択します。続いて終点となるファイル名を Shift キーを押しながら選択すると，ファイルが範囲選択されます。選択した状態で右クリックメニューから "check (selected item)" を選び，範囲選択したファイルをチェックします。
 
-{::nomarkdown}
+
 {% include image.html url="submission/agd_range_select.jpg" caption="範囲選択したファイルのチェック" class="w500" %}
-{:/}
+
 
 #### 複数選択
 
 Control キーを押しながらファイルを選択していくと，ファイルが複数選択されます。選択した状態で右クリックメニューから "check (selected item)" を選び，選択したファイルをチェックします。
 
-{::nomarkdown}
+
 {% include image.html url="submission/agd_multi_select.jpg" caption="複数選択したファイルのチェック" class="w500" %}
-{:/}
+
 
 #### サブディレクトリ選択
 
 ファイルが含まれているサブディレクトリをチェックすると，配下の全てのファイルがチェックされます。
 
-{::nomarkdown}
+
 {% include image.html url="submission/agd_dir_select.jpg" caption="サブディレクトリごとチェック" class="w500" %}
-{:/}
+
 
 ### プロキシ環境での使用方法  {#use-proxy-environment}
 
@@ -232,7 +232,7 @@ AGD ツールでの転送に多大な時間を要する，ファイル選択画�
 
 AGD データ暗号化ツールを使ってデータファイルを暗号化し，ディスクにコピーし郵送します。XML メタデータファイルは AGD Submission Tool でアップロードし，ディスクに含めないでください。
 
-[![AGD データ暗号化ツール]({{ site.baseurl }}/assets/images/parts/download.png "AGD データ暗号化ツール"){:.w40}.]({{ site.baseurl }}/assets/files/submission/agd-data-encrypt.tar.gz)
+[![AGD データ暗号化ツール](/assets/images/parts/download.png "AGD データ暗号化ツール"){:.w40}.](/assets/files/submission/agd-data-encrypt.tar.gz)
 
 last updated: 2017-01-26
 
@@ -300,7 +300,7 @@ FINISH encrypt file ←処理完了
 エラーメッセージ
 
 | メッセージ                                                  | 内容                              |
-| ------------------------------------------------------ | ------------------------------- |
+|---|
 | \[code 11\] encryption error : \<target\>              | ファイルの暗号化処理でエラーが発生しました           |
 | \[code 12\] make md5 file error : \<target\>           | ファイルのMD5取得、MD5書き込み処理でエラーが発生しました |
 | \[code 13\] output dir is not a directory : \<target\> | \-o に指定されたパスがディレクトリではありません      |
@@ -314,8 +314,8 @@ AGD にデータを登録するためには「暗号化された対象ファイ�
 
 USB 接続のハードディスクにデータをコピーし，<span class="red">宛先が記入された返送用の伝票を同封して</span>下記宛にお送りください。<span class="red">ハードディスクにラベルを貼って区別しやすくすることを推奨いたします。</span>
 
-{::options parse_block_html="true" /}
-<address>
+
+<address markdown="1">
 
 〒411-8540  
 静岡県三島市谷田1111 国立遺伝学研究所 生命情報研究センター W201 AGD 担当  

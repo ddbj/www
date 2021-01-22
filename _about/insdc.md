@@ -19,7 +19,7 @@ DDBJ は、1980年代の事業開始当初から、欧州の EMBL-Bank/[EBI](htt
 とともに国際塩基配列データベースの構築業務を担ってきました。<br>この国際塩基配列データベースは、2005 年に開催された国際実務者会議において、その総称を **[INSDC; International Nucleotide Sequence Database Collaboration](http://www.insdc.org/)**、統合された塩基配列データベースの名称を **INSD; International Nucleotide Sequence Database** とすることに合意し、国際諮問委員会も、これを承認しました。<br> 2009年から いわゆる次世代シークエンサからの出力データを収集する Sequence Read Archive と従来のシークエンサからの出力データを収集する Trace Archive も INSDC のメンバーに加わりました。<br> 2010年には EBI におけるデータベース事業は [ENA; European Nucleotide Archive](https://www.ebi.ac.uk/ena/) に統合されました。
 
 {: .float-right }
-![]({{ site.baseurl }}/assets/images/center/insdc_shoukai.gif)
+<img src="/assets/images/center/insdc_shoukai.gif" alt="" title="" class="">
 
 {: .float-release }
 ## INSDC 構成員  {#member}

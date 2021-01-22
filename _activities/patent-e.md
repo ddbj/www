@@ -152,14 +152,14 @@ Amino acid sequence data : DI500001 - DI613599 (113,599 entries)
 
 Please see Data example of Fig.1 and Fig.2.
 
-{::nomarkdown}
+
 {% include image.html url="ddbj/2_Fig1.jpg" caption="Fig.1, DI000001 (nucleotide sequence)" %}
-{:/}
+
 <br>
 
-{::nomarkdown}
+
 {% include image.html url="ddbj/2_Fig2.jpg" caption="Fig.2, DI500001 (amino acid sequence)" %}
-{:/}
+
 
 
 ### 3. Data search for KIPO data
@@ -210,9 +210,9 @@ provides the similarity search for DNA and protein against patent
 applied sequences in Korea (Please see Fig.3).
   
 
-{::nomarkdown}
+
 {% include image.html url="ddbj/2_Fig3.png" caption="Fig.3, Top page of PATOME@Korea;" class="w630" %}
-{:/}
+
 
 
 #### Korea Intellectual Property Rights Information Service (KIPRIS)
@@ -225,9 +225,9 @@ number, publication number, applicant name and inventor name (Please see
 Fig.4). K2E-PAT (Korean to English Patent Automatic Translation) has pay
 service for the provision of full text by English machine translation.
   
-{::nomarkdown}
+
 {% include image.html url="ddbj/2_Fig4.png" caption="Fig.4, \"KPA\" search page of KIPRIS;" class="w630" %}
-{:/}
+
 
 
   
@@ -261,9 +261,9 @@ from applicants. Thereafter, DDBJ makes FF reflected almost contents of
 JPO submission file (Fig. 2).
 
   
-{::nomarkdown}
+
 {% include image.html url="ddbj/3_Fig1.jpg" caption="Fig.1 Example of JPO submission file" class="w500" %}
-{:/}
+
 
 
 ### 3. FF structure and description contents
@@ -273,9 +273,9 @@ I showed FF structure for nucleotide sequence data dividing by six parts
 Block and Sequence Block) as different color with sample data and
 description contents in Fig. 2.
 
-{::nomarkdown}
+
 {% include image.html url="ddbj/3_Fig2.jpg" caption="Fig. 2 Correspondence relation of JPO nucleotide sequence data" class="w500" %}
-{:/}
+
 
 Each Block name of symbol alphabet is as follows;  
 [A] LOCUS Block, [B] SOURCE Block, [C] REFERENCE Block, [D]
@@ -288,7 +288,7 @@ and description parts on JPO FF (Table. 1).
 
 
 | hContents of patent application        | Describing line on JPO FF                                                     |
-| -------------------------------------- | ----------------------------------------------------------------------------- |
+|---|
 | Publication number                     | DEFINITION line [A], KEYWORDS line [A], JOURNAL line [C], PN line [D] |
 | Publication date                       | JOURNAL line[C] , PD line[D]                                              |
 | Application number                     | PF line [D]                                                                 |
@@ -313,7 +313,7 @@ of [A] LOCUS Bloc and TITLE line of [C] REFERENCE Block.
 In specially, applicants name is only set JOURNAL line on [C]
 REFERENCE Block (Fig. 3).
 
-![]({{ site.baseurl }}/assets/images/ddbj/3_Fig3.jpg){:.w500}
+<img src="/assets/images/ddbj/3_Fig3.jpg" alt="" title="" class="w500">
 
 ### 5. Author comments
 
@@ -339,9 +339,9 @@ COMMENT Block, [E] Feature Block and [F] Sequence Block) as
 different color with sample data and description contents in Fig. 1.
 
    
-{::nomarkdown}
+
 {% include image.html url="ddbj/4_Fig1.jpg" caption="Fig. 1 Correspondence relation of JPO nucleotide sequence data" class="w500" %}
-{:/}
+
 
 
 #### 2-1) [A] LOCUS Block
@@ -350,7 +350,7 @@ LOCUS Block has LOCUS, DEFINITION, ACCESSION, VERSION and KEYWORDS line
 (Table. 1).
 
 | Line name | Description Contents (NA: Nucleotide sequence data. AA: Amino acid sequence data) |
-| --- | --- |
+|---|
 | **LOCUS**<br />[Example]<br />NA: Fig.1<br />AA: Fig.2 | Accession number<br />Sequence length number (NA: bp, AA: aa)<br />Molecule type (NA: DNA or RNA, AA: PRT)<br />Molecular form (NA: linear, AA: not described)<br />Division (PAT)<br />Last release date (If the entry is updated and reopened to public site, this date will be changed.) |
 | **DEFINITION** | Publication number and Invention tile (Same as title line of REFERENCE Block)<br /><br />Example:JP 2010599999-A/100: Genetic Markers Expressed In Tumors |
 | **ACCESSION** | Accession number<br />The accession number prefixes of JPO data are as follows;<br />NA: E, BD, DD, DJ, DL, DM, FU, FV, FW, FZ, GB, HV<br />AA: E, BD, DD<br /><br />The accession number prefix of KIPO data is as follows;<br />NA: DI<br />AA: DI |
@@ -365,9 +365,9 @@ In case of amino acid sequence data, LOCUS line has the different output
 format (Fig.2). Its line has Accession number, Sequence length number,
 Molecule type, Division and Last release date.
 
-{::nomarkdown}
+
 {% include image.html url="ddbj/4_Fig2.jpg" caption="Fig.2 LOCUS line for Amino acid sequence data" class="w500" %}
-{:/}
+
 
 
 #### 2-2) [B] SOURCE Block
@@ -378,7 +378,7 @@ Taxonomy Database (Table. 2). Please also refer at section (2).
 
 
 | Line name | Description Contents |
-| --- | --- |
+|---|
 | **SOURCE** | Scientific name (Common name)<br><br>SOURCE line is set scientific name and common name.<br>Scientific name is converted from organism name on OS line of COMMENT Block based on NCBI Taxonomy Database. Moreover, if scientific name has common name (example: human) in NCBI Taxonomy Database, common name is set after scientific name.<br><br>[Example] SOURCE Homo sapiens (human) |
 | **ORGANISM** | Scientific name on fist line and its lineage information based on NCBI Taxonomy Database on second line.<br><br>[Example]<br>ORGANISM Homo sapiens<br>&emsp;&emsp;&emsp;&emsp;Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia;<br>&emsp;&emsp;&emsp;&emsp;Eutheria; Euarchontoglires; Primates; Haplorrhini; Catarrhini; Hominidae; Homo. |
 
@@ -390,7 +390,7 @@ Table. 2: Description Contents of SOURCE Block
 REFERENCE Block has AUTHORS, TITLE and JOURNAL line (Table. 3).
 
 | Line name | Description Contents |
-| --- | --- |
+|---|
 | **AUTHORS** | Inventor name<br />Inventor fill name is set PI line of COMMENT Block. |
 | **TITLE** | Invention tile<br />Same value is also set in DEFINITION line. |
 | **JOURNAL** | First line is described the publication number and publication date after the fixed value “Patent:”on JOURNAL line.<br />Applicant name is described on second line. Applicant information is only set JOURNAL line in FF.<br /><br />[Example] JOURNAL Patent: JP 2010599999 100 29-SEP-2010;<br>&emsp;&emsp;&emsp;&emsp;DNA Data Bank of Japan |
@@ -402,7 +402,7 @@ Table. 3: Description Contents of REFERENCE Block
 
 
 | Line name | Description Contents |
-| --- | --- |
+|---|
 | **OS** | Organism name in JPO submission file.<br />SOURCE line, ORGANISM line, /organism and /db_xref are constructed by this organism name. |
 | **PN** | Publication number and sequence number |
 | **PD** | Publication date |
@@ -426,7 +426,7 @@ Amino acid sequence data does not have /db_xref qualifier.
 
 
 | Qualifier name | Description Contents(NA: Nucleotide sequence data. AA: Amino acid sequence data) |
-| --- | --- |
+|---|
 | **/mol_type** | NA: unassigned DNA，unassigned RNA<br />AA: Not set |
 | **/db_xref** | Taxonomy ID of NCBI Taxonomy Database setting after fixed value " taxon:" |
 | **/organism** | Scientific name based on NCBI Taxonomy Database |
@@ -446,9 +446,9 @@ the number of adenine (a), cytosine (c), guanine (g), thymine (t).
 In case of Amino acid sequence data, BASE COUNT line is not output
 (Fig.3).
   
-{::nomarkdown}
+
 {% include image.html url="ddbj/4_Fig3.jpg" caption="Fig.3 Example of Sequence Blockv for amino acid data" class="w500" %}
-{:/}
+
 
 ### 3. Conversion process of scientific name
 
@@ -469,9 +469,9 @@ Original organism name described by applicants is set on OS line at
 COMMENT Block (Fig.1, Table 4).
 
   
-{::nomarkdown}
+
 {% include image.html url="ddbj/4_Fig4.jpg" caption="Fig.4 Example of Unidentified organism name (extracted FF)" class="w500" %}
-{:/}
+
 
 
 ### 4. Format of patent publication number and Description parts on FF
@@ -490,9 +490,9 @@ publication for patent applications have “WO”in head of publication
 number.
 
   
-{::nomarkdown}
+
 {% include image.html url="ddbj/4_Table6.jpg" caption="Table 6: Format of Patent publication number" class="w500" %}
-{:/}
+
 
 
 #### 4-2) Format of patent publication number
@@ -501,9 +501,9 @@ Publication number is set on KEYWORDS line of LOCUS Block, JOURNAL line
 of REFERENCE Block and PN line of COMMENT Block (Fig.5).
 
   
-{::nomarkdown}
+
 {% include image.html url="ddbj/4_Fig5.jpg" caption="Fig.5 Patent publication number on DDBJ FF" class="w500" %}
-{:/}
+
 
 
 ### Author comments
@@ -526,21 +526,21 @@ New format of Nucleotide sequence data has been released since DDBJ
 release 90 (Fig.1) and Amino acid sequence data has been distributed JPO
 cumulated files on Anonymous FTP since September 2012 (Fig.2).
 
-{::options parse_block_html="true" /}
-<div class="float-left">
 
-{::nomarkdown}
+<div class="float-left" markdown="1">
+
+
 {% include image.html url="ddbj/5_Fig1.jpg" caption="Fig.1 New format of COMMENT Block for Nucleotide sequence data" class="w320" %}
-{:/}
+
 
 </div>
 
-{::options parse_block_html="true" /}
-<div class="float-right">
 
-{::nomarkdown}
+<div class="float-right" markdown="1">
+
+
 {% include image.html url="ddbj/5_Fig2.jpg" caption="Fig.2 New format of COMMENT Block for Amino acid sequence data" class="w320" %}
-{:/}
+
 
 </div>
 
@@ -554,17 +554,17 @@ had to know the FF structure to get them in advance. In specially,
 applicants name is only set JOURNAL line on REFERENCE Block (Fig.3 &
 Fig.4).
 
-{::nomarkdown}
+
 {% include image.html url="ddbj/5_Fig3.jpg" caption="Fig.3 Applicant name on REFERENCE Block" class="w500" %}
-{:/}
+
 
 
 Therefore, DDBJ made describing basic patent information on COMMENT
 Block as follows (Fig.4).
 
-{::nomarkdown}
+
 {% include image.html url="ddbj/5_Fig4.jpg" caption="Fig.4 Description of each line on REFERENCE [A] and COMMENT Block [B]" class="w500" %}
-{:/}
+
 
 
 COMMENT Block was added new lines of PA (Applicant name), PT (Invention
@@ -572,7 +572,7 @@ title) and PS (Sequence number) in all nucleotide and amino acid
 sequence data (Table.1).
 
 | hNew line nameh | Description |
-| --- | --- |
+|---|
 | **PA line** | Applicant name<br />JOURNAL line on REFERENCE Block is also described (Fig.3). |
 | **PT line** | Invention title<br />DEFINITION, TITLE line on REFERENCE Block are also described (Fig.1 &amp; Fig.2). |
 | **PS line** | Sequence number<br />Sequence number for Sequence listings setting after prefix letter "N". |
@@ -602,9 +602,9 @@ Sequence number in order of nucleotide sequences, amino acid sequences
 (Table.2).
 
   
-{::nomarkdown}
+
 {% include image.html url="ddbj/5_Table2.jpg" caption="Table.2 Correspondence of Sequence number between Sequence listings and FF" class="w500" %}
-{:/}
+
 
   
 #### 3-3:
@@ -619,7 +619,7 @@ international publication for patent application has "WO" in head of
 publication number (Fig.1, Fig.2 and Table.3).
 
 | hDescription part of FFh | hFormat of patent publicationh |
-| --- | --- |
+|---|
 | **DEFINITION**<br />**KEYWORDSPN line of COMMENT Block** | JP[space]Patent publication number[-A/]Sequence number<br />WO[space]Patent publication number[-A/]Sequence number |
 | **JOURNAL line of REFERENCE Block** | JP[space]Patent publication number[-A][space]Sequence number<br />WO[space]Patent publication number[-A][space]Sequence number |
 

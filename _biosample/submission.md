@@ -46,9 +46,9 @@ lang: ja
 
 以下の図は BioSample がどのように他の DDBJ のデータベースとリンクしているかを示しています。 この例は、データと二つの BioSample、三つの BioProject、一つの Umbrella BioProject から構成されています。ユーザは BioProject または BioSample データベースを検索し、目的のレコードを取得、そこからのリンクをたどることによって [DDBJ](/ddbj/index.html)、[DRA](/dra/index.html) に登録されている関連する実験データを得ることができます。
 
-{::nomarkdown}
+
 {% include image.html url="submission/biosample_integration.jpg" caption="BioSample と他の DDBJ データベースとの連携" class="w450" %}
-{:/}
+
 
 ### サンプル  {#sample}
 
@@ -82,9 +82,9 @@ DDBJ BioSample に実装された最初の辞書は [Genomics Standards Consorti
 
 MIxS チェックリストについては Nature Biotechnology 29, 415–420 (2011) \| doi: 10.1038/nbt.1823(PMID:[21552244](https://www.ncbi.nlm.nih.gov/pubmed/21552244) ) を参照してください。
 
-{::nomarkdown}
+
 {% include image.html url="books/mixs.jpg" caption="MIxS チェックリスト" class="w450" %}
-{:/}
+
 
 ### 生物名  {#organism}
 
@@ -196,7 +196,7 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
 
 [(Meta)Genomic Sequences Sample (MIMS)](#Meta_Genomic_Sequences_Sample)<a name="Meta_Genomic_Sequences_Sample"></a>
 
-: | ------------------------------------------ |
+ |---|
   | Environmental/Metagenome Genomic Sequences |
 
     [環境サンプルの説明](/ddbj/env.html)もご参照ください。
@@ -205,7 +205,7 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
 
 [Genomic Sequences Sample (MIGS)](#Genomic_Sequences_Sample)<a name="Genomic_Sequences_Sample"></a>
 
-: | --------------------------------------------- |
+ |---|
   | Cultured Bacterial/Archaeal Genomic Sequences |
   | Eukaryotic Genomic Sequences                  |
   | Viral Genomic Sequences                       |
@@ -216,7 +216,7 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
 
 [Marker Sequences Sample (MIMARKS)](#Marker_Sequences_Sample)<a name="Marker_Sequences_Sample"></a>
 
-: | ------------------------------- |
+ |---|
   | Specimen Marker Sequences       |
   | Survey related Marker Sequences |
 
@@ -234,7 +234,7 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
 : 以下のパッケージから適切なものを選びます。パッケージ毎に必要とされる属性が追加されます。  
 <span class="red">"Environmental/Metagenome Genomic Sequences" と "Survey related Marker Sequences" のときは No package を選択できません。</span>
 
-    | --------------------------- |
+    |---|
     | No package                  |
     | air                         |
     | host-associated             |
@@ -269,8 +269,8 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
 
 # BioSample への登録
 
-  {::options parse_block_html="true" /}
-  <div class="attention">
+  
+  <div class="attention" markdown="1">
   ヒトを対象とした研究データの登録について
   : <span class="red">研究対象者に由来するデータを DDBJ センターが運営するデータベースに登録する場合、研究対象者の尊厳及び人権は、適用されるべき法令、指針、ガイドライン、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。原則として、研究対象者を直接特定し得る情報はメタデータから取り除いてください。ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#human)を熟読してください。</span>
   </div>
@@ -291,33 +291,33 @@ D-way ウェブサイトの上部にある "BioSample" メニューから BioSam
 DDBJ センターから登録者に問い合わせた後三か月以上回答が無い場合は Submission をキャンセルいたします。
 </div>
 
-{::nomarkdown}
+
 {% include image.html url="books/hbs-01.jpg" caption="BioSample の新規登録作成" class="w450" %}
-{:/}
+
 
 BioSample を新規登録する場合は左のタブから順番に内容を英語で入力していきます。
 
 各項目の説明は[こちら](#metadata)を参照してください。
 
-{::nomarkdown}
+
 {% include image.html url="books/hbs-02.jpg" caption="BioSample の登録" class="w450" %}
-{:/}
+
 
 "SAMPLE TYPE" でサンプルの種類を選択します。ゲノム配列を取得したサンプルの場合、[MIxS 基準](#sample-attributes)を満たしたサンプル記述をする必要があります。
 
 Sample type については[こちら](#Sample_type)を参照してください。
 
-{::nomarkdown}
+
 {% include image.html url="books/hbs-03.jpg" caption="Sample type の選択" class="w450" %}
-{:/}
+
 
 Sample type に応じた属性入力用テンプレートファイルをダウンロードします。
 
 必須・任意・ユーザが定義した一連の属性でサンプルを記述することが、登録作業の中心になります。
 
-{::nomarkdown}
+
 {% include image.html url="books/hbs-04.jpg" caption="サンプル属性テンプレートファイルのダウンロード" class="w450" %}
-{:/}
+
 
 ### 属性値の記入  {#enter-sample-attributes}
 
@@ -408,9 +408,9 @@ information exists but can not be released openly because of privacy concerns
 
 Validation ルールとメッセージについては [Validation rules ページ](/biosample/validation.html)をご覧ください。
 
-{::nomarkdown}
+
 {% include image.html url="books/hbs-04-2.jpg" caption="BioSample の validation。この例では \"KOME-2\" の collection_date に将来の日付が記入されているエラーと geo_loc_name 中の国名と緯度経度が一致していない warning が表示されています。" class="w500" %}
-{:/}
+
 
 最後の "OVERVIEW" で内容を確認したうえで投稿します。"ATTRIBUTES" で属性ファイルをダウンロードすることができます。
 
@@ -418,16 +418,16 @@ Validation ルールとメッセージについては [Validation rules ペー�
 登録後は最新の属性ファイルをダウンロードすることができます。
 </div>
 
-{::nomarkdown}
+
 {% include image.html url="books/hbs-05.jpg" caption="BioSample の投稿" class="w450" %}
-{:/}
+
 
 ### アクセッション番号  {#accession-numbers}
 
 新規 Submission を作成すると SSUB で始まる仮 ID が自動的に割り当てられます。D-way から validation を通過したサンプルが投稿されると自動的にプレフィックス "SAMD" のアクセッション番号が発行されます。未登録の生物名が organism に記載されていた場合や locus\_teg\_prefix に値が記入されていた場合はキュレータが必要な査定を実施した後にアクセッション番号が発行されます。[D-way アカウント](https://ddbj.nig.ac.jp/D-way/)にログイン後、ウェブ上で登録したサンプルの進行状況やアクセッション番号を確認することができます。
 
-{::options parse_block_html="true" /}
-  <div class="attention">
+
+  <div class="attention" markdown="1">
   - SSUB で始まる仮 ID を論文中に引用しないでください。
   - EBI/NCBI に登録したサンプルを DDBJ に重複して登録しないでください。
   </div>

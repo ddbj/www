@@ -127,7 +127,7 @@ related_pages:
 全て小文字を使用します。大文字で登録された場合には、自動的に小文字に変換されます。
 
 | シンボル | 意味           | 説明                           |
-| ---- | ---------------- | ----------------------------- |
+|---|
 | a    | a                | adenine                       |
 | c    | c                | cytosine                      |
 | g    | g                | guanine                       |
@@ -164,7 +164,7 @@ related_pages:
 <br>
 
 | 省略形      | 修飾塩基                                                                 |
-| -------- | -------------------------------------------------------------------- |
+|---|
 | ac4c     | 4-acetylcytidine                                                     |
 | chm5u    | 5-(carboxyhydroxylmethyl)uridine                                     |
 | cm       | 2'-O-methylcytidine                                                  |
@@ -233,7 +233,7 @@ related_pages:
 これ以外のアミノ酸を記載する場合には、[Modified and unusual Amino Acids](#amino-2)を参照して下さい。
 
 | Abbreviation | 1 letter abbreviation | Amino acid name             |
-| ------------ | --------------------- | --------------------------- |
+|---|
 | Ala          | A                     | Alanine                     |
 | Arg          | R                     | Arginine                    |
 | Asn          | N                     | Asparagine                  |
@@ -273,7 +273,7 @@ related_pages:
 [CDS feature](/ddbj/cds.html) の [/translation](/ddbj/qualifiers.html#translation) にはいずれも "X" で表されます。
 
 | 省略形   | アミノ酸                                                              |
-| ----- | ----------------------------------------------------------------- |
+|---|
 | Aad   | 2-Aminoadipic acid                                                |
 | bAad  | 3-Aminoadipic acid                                                |
 | bAla  | beta-Alanine, beta-Aminoproprionic acid                           |

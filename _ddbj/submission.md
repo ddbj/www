@@ -268,7 +268,7 @@ DDBJ のキュレータが、公開に必要な事項を、国際塩基配列デ
 
 下図にDDBJにおける塩基配列の新規登録から公開と更新までのデータフローを示します。
 
-![]({{site.baseurl}}/assets/images/ddbj/workflow.gif "配列データの遷移"){:.w400}
+<img src="{{site.baseurl}}/assets/images/ddbj/workflow.gif" alt="配列データの遷移" title="" class="w400">
 
 <ol>
   <li class="decrement">

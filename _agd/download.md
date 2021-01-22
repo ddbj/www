@@ -31,8 +31,8 @@ lang: ja
 利用したい AGD データの Study (例 AGDS\_00000000005) と Dataset (例 AGDD\_00000000005) ID を添え， [National Bioscience Database Center (NBDC)](http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines) に利用を申請します。
 
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 [NBDC ヒトデータグループ共有データ取扱いセキュリティガイドライン](https://gr-sharingdbs.biosciencedbc.jp/group-security-guidelines-for-users)を読み，内容を遵守して AGD データを取り扱ってください。
 </div>
 
@@ -46,14 +46,14 @@ lang: ja
 
 AGD download tool (最終更新日: 2018-11-21，v3.5.0) をダウンロードします。
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 Java 8 で実行してください。Java 7 では動作しません。[プロキシ環境での使用方法について](#download-via-proxy-server)
 </div>
 
 #### Windows
 
-[Windows 用 AGD download tool]({{ site.baseurl }}/assets/files/submission/3-5-0/AGD_tool.zip)
+[Windows 用 AGD download tool](/assets/files/submission/3-5-0/AGD_tool.zip)
 
 展開したフォルダに含まれる bat ファイルをダブルクリックして起動。
 
@@ -61,7 +61,7 @@ Java 8 で実行してください。Java 7 では動作しません。[プロ�
 
 #### Unix
 
-[Unix 用 AGD download tool]({{ site.baseurl }}/assets/files/submission/3-5-0/AGD_tool_unix.zip)
+[Unix 用 AGD download tool](/assets/files/submission/3-5-0/AGD_tool_unix.zip)
 
 展開したフォルダに含まれる sh ファイルをシェルで実行して起動。
 
@@ -75,31 +75,31 @@ AGD tool を起動し，[NBDC](http://gr-sharingdbs.biosciencedbc.jp/agd-guideli
 AGD download tool は可能な限り良好なネットワーク環境にあるマシンで使ってください。通信速度が遅い無線 LAN で接続された PC などでの使用は避けてください。
 </div>
 
-{::nomarkdown}
+
 {% include image.html url="submission/agdsub1.jpg" caption="AGD tool へのログイン" class="w200" %}
-{:/}
+
 
 左ウィンドウがお手許のコンピュータ，右ウィンドウが AGD のセキュアなファイル提供サーバになります。
 
 右ウィンドウには利用権限が付与されているデータセットの一覧が表示されます。ダウンロードするデータセットにチェックを入れます。チェックすると下部に総ファイル数と合計サイズが表示されます。
 
-{::nomarkdown}
+
 {% include image.html url="books/agddown01.jpg" caption="対象データセットの選択" class="w500" %}
-{:/}
+
 
 \[Download\] をクリックすると，ダウンロードと復号化が開始されます。 "Parallel Download count" で並列ダウンロード数を1～5の間で調整することができます。
 
 処理が完了すると，お手許のコンピュータにデータセットがダウンロードされます。 データセット番号のフォルダ中にメタデータ XML とデータファイルが存在しています。
 
-{::nomarkdown}
+
 {% include image.html url="books/agddown03.jpg" caption="メタデータとデータファイル" class="w300" %}
-{:/}
+
 
 データセットディレクトリの左にある矢印をクリックし，含まれているデータ番号ディレクトリを展開することができます。データ番号ディレクトリやファイルを選択し，個別にダウンロードすることもできます。
 
-{::nomarkdown}
+
 {% include image.html url="books/agddown02.jpg" caption="ファイル毎のダウンロード" class="w500" %}
-{:/}
+
 
 ### プロキシ環境での使用方法  {#download-via-proxy-server}
 
@@ -124,27 +124,27 @@ port=
 
 [AGD の公開されている Study 一覧ページ](https://ddbj.nig.ac.jp/agd/viewer/view/studies)へ移動します。Datasets からデータセット一覧へ移動します。
 
-{::nomarkdown}
+
 {% include image.html url="books/agddown04.jpg" caption="AGD で公開されている Study 一覧" class="w500" %}
-{:/}
+
 
 利用権限が付与されているデータセット番号を選択します。
 
-{::nomarkdown}
+
 {% include image.html url="books/agddown05.jpg" caption="メタデータを閲覧するデータセットの選択" class="w500" %}
-{:/}
+
 
 AGD tool と同様，NBDC から通知される利用アカウントのユーザ ID とパスワードでログインします。
 
-{::nomarkdown}
+
 {% include image.html url="books/agddown06.jpg" caption="利用アカウントでログイン" class="w300" %}
-{:/}
+
 
 ウェブサイト上でメタデータを閲覧することができます。
 
-{::nomarkdown}
+
 {% include image.html url="books/agddown07.jpg" caption="ウェブサイト上でメタデータを閲覧" class="w500" %}
-{:/}
+
 
 メタデータ閲覧サイトからのログアウト
 
@@ -155,20 +155,20 @@ AGD tool と同様，NBDC から通知される利用アカウントのユーザ
 
 閲覧終了後は，必ず左上の Logout からログアウトしてください。
 
-{::nomarkdown}
+
 {% include image.html url="books/agddown08.jpg" caption="メタデータ閲覧サイトからのログアウト" class="w500" %}
-{:/}
+
 
 下記エラーは同時接続数が１を超えている場合に表示されます。30 分以上の間隔を空けて再度ログインしてください。
 
-{::nomarkdown}
+
 {% include image.html url="books/jgadown09.jpg" caption="同時ログイン数が１を超えている場合のエラー" class="w500" %}
-{:/}
+
 
 ### データファイルのディスク郵送  {#data-file-transfer-by-hard-disk}
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 データファイルのディスク郵送を希望する場合は必ず事前に [AGD にご連絡ください](/contact-ddbj.html)。
 </div>
 
@@ -176,8 +176,8 @@ AGD tool と同様，NBDC から通知される利用アカウントのユーザ
 
 <span class="red">宛先が記入された返送用の着払い伝票を同封して</span>下記宛にお送りください。<span class="red">ハードディスクにラベルを貼って区別しやすくすることを推奨いたします。</span>
 
-{::options parse_block_html="true" /}
-<address>
+
+<address markdown="1">
 
 〒411-8540  
 静岡県三島市谷田1111 国立遺伝学研究所 生命情報研究センター W201 AGD 担当 児玉 悠一  

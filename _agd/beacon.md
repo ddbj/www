@@ -48,5 +48,5 @@ Beacon の詳しい説明については以下をご覧ください。
 以下のデータセットが Beacon インデックスされています。
 
 | AGD Study                                                                          | Study Title                     | AGD Dataset                                                                        | Access level |
-| ---------------------------------------------------------------------------------- | ------------------------------- | ---------------------------------------------------------------------------------- | ------------ |
+|---|
 | [AGDS\_00000000001](https://ddbj.nig.ac.jp/agd/viewer/view/study/AGDS_00000000001) | Response to Hepatitis B vaccine | [AGDD\_00000000001](https://ddbj.nig.ac.jp/agd/viewer/view/study/AGDS_00000000001) | Registered   |

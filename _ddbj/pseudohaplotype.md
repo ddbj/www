@@ -107,9 +107,9 @@ DDBJ に pseudohaplotype アセンブリを登録する典型的な場合につ�
 Pseudohaplotype をシークエンスした生データを DRA に登録する場合、両方の pseudohaplotype のデータが混在している場合、BioProject はアセンブリとは別に DRA
 用のものを登録します。BioSample はサンプルがアセンブリと同じであれば、共通のものを使います。
 
-{::nomarkdown}
+
 {% include image.html url="submission/pseudohaplotype.jpg" caption="pseudohaplotype データの登録" class="w600" %}
-{:/}
+
 
 ### BioProject  {#bioproject}
 

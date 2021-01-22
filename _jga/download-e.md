@@ -48,8 +48,8 @@ After the application is approved by NBDC, datasets will be accessible in the JG
 To apply the application, a D-way account is required. If you do not have an account, please [create your D-way account](https://ddbj.nig.ac.jp/D-way/) and [register a public key for authentication](/account-e.html#generate-key-pair).
 
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 It takes about 10 minutes for the created D-way account becoming active in the NBDC application system.
 </div>
 
@@ -59,26 +59,26 @@ The JGA datasets download and access steps are described below.
 
 Before starting the application, create a data user group. In the following example group (usergrp1), an owner is researcher (account_b) who apply the application and download the data, and a member is PI (account_c).
 
-{::nomarkdown}
+
 {% include image.html url="books/DS-group-e.png" caption="Data user group" class="w450" %}
-{:/}
+
 
 [Start the application](https://humandbs.biosciencedbc.jp/en/data-use) and select the group.
 
-{::nomarkdown}
-{% include image.html url="books/DU-start-e.png" caption="Start data use application" class="w450" %}
-{:/}
 
-{::nomarkdown}
+{% include image.html url="books/DU-start-e.png" caption="Start data use application" class="w450" %}
+
+
+
 {% include image.html url="books/DU-group-e.png" caption="Select the data user group" class="w450" %}
-{:/}
+
 
 ## Public key for dataset encryption {#public-key-for-dataset-encryption}
 
 For security, the JGA datasets are encrypted by the public key for dataset encryption registered by the applicant in the data use application. The applicant needs to first decrypt the datasets downloaded by scp by using the private key.
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 The public key for dataset encryption is different from the [public/private key pair for the D-way account authentication](/account.html#enable-dra-submission-in-account).
 </div>
 
@@ -91,9 +91,9 @@ Register the public key for dataset encryption in the data use application syste
 
 Register the public key for dataset encryption in the NBDC data use application.
 
-{::nomarkdown}
+
 {% include image.html url="books/public-key-for-dataset-encryption-e.png" caption="egistration of the public key for dataset encryption" class="w400" %}
-{:/}
+
 
 ## Data use application approval and download {#data-use-approval-download}
 
@@ -101,14 +101,14 @@ Register the public key for dataset encryption in the NBDC data use application.
 
 After the application is approved by NBDC, metadata, encrypted data files and decryption tools is created in the download directory in the JGA server.
 
-{::nomarkdown}
+
 {% include image.html url="books/data-use-approved-e.png" caption="Data use application approval" class="w400" %}
-{:/}
+
 
 ### Download {#download}
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 To download files from the JGA server by scp, you need to [register a center name and a public key to your D-way account](/account-e.html#enable-dra-submission-in-account). Access to the JGA server is restricted by IP addresses. Inform your IP address of your connecting source to NBDC in application form.
 </div>
 

@@ -42,7 +42,7 @@ Internet Explorer 8以上，および最新版のFirefox，Chrome，Safari で�
 
 ## 使い方   {#usage}
 
-![使い方]({{ site.baseurl }}/assets/images/help/VecScreen-Usage.png)
+<img src="/assets/images/help/VecScreen-Usage.png" alt="" title="使い方" class="">
 
 ### Query  {#query}
 
@@ -74,8 +74,8 @@ tttgcccacggacacaactgccatatcgccttacgggagatcatcgaaactctgaacagc
 ctcacagagcagaagactctgtgcaccaagttgaccataacggac
 ```
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 配列サイズが巨大な場合，配列数が多い場合など，以下のような理由で結果を正常に取得出来ない場合があります。
 
 * 結果が巨大になりブラウザで表示出来ない
@@ -110,16 +110,16 @@ UniVec_Coreは，バクテリア，ファージ，酵母，合成配列などか
 以下の4つが選択可能です。デフォルトは "HTML format, with alignment" がセットされています。
 
 HTML format, with alignment
-:   結果がHTML形式で得られ，query配列上のベクターコンタミ領域を示す図，結果のサマリ，アラインメント結果が表示されます([例]({{ site.baseurl }}/assets/images/help/VecScreen-HTMLwAlign.png))。
+:   結果がHTML形式で得られ，query配列上のベクターコンタミ領域を示す図，結果のサマリ，アラインメント結果が表示されます([例](/assets/images/help/VecScreen-HTMLwAlign.png))。
 
 HTML format, no alignment
-:   結果がHTML形式で得られ，query配列上のベクターコンタミ領域を示す図，結果のサマリが表示されます([例]({{ site.baseurl }}/assets/images/help/VecScreen-HTMLwoAlign.png))。
+:   結果がHTML形式で得られ，query配列上のベクターコンタミ領域を示す図，結果のサマリが表示されます([例](/assets/images/help/VecScreen-HTMLwoAlign.png))。
 
 Text list, with alignment
-:   結果がテキスト形式で得られ，結果のサマリ，アラインメント結果が表示されます([例]({{ site.baseurl }}/assets/images/help/VecScreen-TEXTwAlign.png))。
+:   結果がテキスト形式で得られ，結果のサマリ，アラインメント結果が表示されます([例](/assets/images/help/VecScreen-TEXTwAlign.png))。
 
 Text list, no alignment
-:   結果がテキスト形式で得られ，結果のサマリのみが表示されます([例]({{ site.baseurl }}/assets/images/help/VecScreen-TEXTwoAlign.png))。
+:   結果がテキスト形式で得られ，結果のサマリのみが表示されます([例](/assets/images/help/VecScreen-TEXTwoAlign.png))。
 
 ### パラメーター設定はない  {#パラメーター設定はない}
 
@@ -152,8 +152,8 @@ VecScreenはベクターコンタミをすべて検出できる完璧なツー�
 
 UniVecデータベースの構成上，以下の配列をクエリーに用いた場合もベクターコンタミとして検出されることになりますのでご承知おきください。詳しくは，[//www.ncbi.nlm.nih.gov/tools/vecscreen/interpretation/#Exceptions](//www.ncbi.nlm.nih.gov/tools/vecscreen/interpretation/#Exceptions)をご覧ください。
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 Virus genomes, Yeast and bacterial biosynthetic genes, Transcriptional signals from bacteria, yeast, a few mammals, and other model organisms, Bacterial and yeast repressor and activator genes, Bacterial genes mediating antibiotic resistance, Bacterial plasmid genes and replication origins, Yeast replication elements, Bacteriophage genomes, Transposons and Insertion Sequences, Other specialized elements from a variety of sources (including a few from humans)
 </div>
 
@@ -163,7 +163,7 @@ Virus genomes, Yeast and bacterial biosynthetic genes, Transcriptional signals f
 検索実行後の画面には Request ID が表示されます。同じ番号が検索結果の最上部にも表示されます。このRequest IDはResult ViewerもしくはDDBJへの問い合わせの際に必要です。この番号を控えておけばブラウザを閉じてしまっても期限内であればRequest ID から結果を閲覧することができます(右図)。
 
 {: .float-right }
-![VecScreen-RequestID]({{ site.baseurl }}/assets/images/help/VecScreen-RequestID.png)
+<img src="/assets/images/help/VecScreen-RequestID.png" alt="" title="VecScreen-RequestID" class="">
 
 {: .float-release }
 ## Result viewer  {#resultviewer}
@@ -172,7 +172,7 @@ Virus genomes, Yeast and bacterial biosynthetic genes, Transcriptional signals f
 Request ID(上述)から検索結果を取得することができます。画面左側のメニューから"Result viewer"をクリックしてください。Result viewer画面に切り替わるので,Request IDを入力後"display"をクリックしてください(右図)。
 
 {: .float-right }
-![VecScreen-ResultViewer]({{ site.baseurl }}/assets/images/help/VecScreen-ResultViewer.png)
+<img src="/assets/images/help/VecScreen-ResultViewer.png" alt="" title="VecScreen-ResultViewer" class="">
 
 {: .float-release }
 ## 検索結果を閲覧可能な期間  {#検索結果を閲覧可能な期間}

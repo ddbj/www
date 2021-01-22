@@ -36,8 +36,8 @@ manages IDs.
 Released data can be searched and retrieved at the [NCBI Trace
 Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi).
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 [DDBJ Sequence Read Archive](/dra/submission.html#dra)accepts trace
 data. Please consider to submit trace data to DRA.
 </div>
@@ -47,11 +47,11 @@ data. Please consider to submit trace data to DRA.
 There are fields that are required for specific combinations of
 [STRATEGY](#STRATEGY)and [TRACE_TYPE_CODE](#TRACE_TYPE_CODE). You may
 check requirements in the [Validation
-Table]({{ site.baseurl }}/assets/files/submission/field_matrix_current.xls). Metadata can be
+Table](/assets/files/submission/field_matrix_current.xls). Metadata can be
 searched at the [NCBI Trace
 Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi?cmd=retrieve&f=retrieve&m=obtain&s=search).
 
-[Trace Archive RFC]({{ site.baseurl }}/assets/files/specification/trace_rfc.pdf)
+[Trace Archive RFC](/assets/files/specification/trace_rfc.pdf)
 
 Required<span class="red">*</span>  
 May be required, depending upon the trace type and strategy
@@ -1095,11 +1095,11 @@ template.
   dishes having either 96 or 384 wells (see standard configurations
   below).  
   ![Standard 96 well microtiter
-  configuration]({{ site.baseurl }}/assets/images/submission/96well.jpg
+  configuration](/assets/images/submission/96well.jpg
   "Standard 96 well microtiter configuration")  
   Standard 96 well microtiter configuration  
   ![Standard 384 well microtiter
-  configuration]({{ site.baseurl }}/assets/images/submission/384well.jpg
+  configuration](/assets/images/submission/384well.jpg
   "Standard 384 well microtiter configuration")  
   Standard 384 well microtiter configuration
 
@@ -1229,8 +1229,8 @@ template.
 
 ## Submit trace data  {#trace-data-submission}
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 Data submission of human subjects research<br>
 <span class="red">For all data from human subjects researches submitted to DDBJ, it is
 submitter's responsibility to ensure that the privacy of participant
@@ -1272,7 +1272,7 @@ TOP_DIRECTORY/traces/FLJ/FLJA1U0003.scf
 
 The [metadata](#metadata)file can be either in XML or in tab-delimited
 format. The metadata requirements are in the [Validation Table
-(spreadsheet format)]({{ site.baseurl }}/assets/files/submission/field_matrix_current.xls)for
+(spreadsheet format)](/assets/files/submission/field_matrix_current.xls)for
 specific combinations of STRATEGY and TRACE_TYPE_CODE. Both types of
 metadata files can contain common fields section at the beginning of it.
 This section defines common for the submission values if any.

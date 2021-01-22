@@ -236,8 +236,8 @@ DO NOT use multibyte character(s) for any file or folder name of [Sequence file]
 \-s\[<span class="font-br font-normal">sequence file name</span>\]  
 : This option is required. When the option is not specified, this tool is terminated. The sequence file is a text file in FASTA format contains all nucleotide sequences. Please refer to [Submission File Format：Sequence File](/ddbj/file-format-e.html#sequence), in detail.
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 When an error occurs, the parser outputs an error message.  
 Please reffer: [Parser Error Messages](/ddbj/validator-e.html#parser), in detail.
 </div>

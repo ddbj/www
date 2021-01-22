@@ -33,8 +33,8 @@ lang: ja
 
 [メッセージフォーム](/contact-ddbj.html)よりご連絡ください。
 
-{::options parse_block_html="true" /}
-<address>
+
+<address markdown="1">
 
 電話 : 055-981-6853  
 FAX : 055-981-6849  

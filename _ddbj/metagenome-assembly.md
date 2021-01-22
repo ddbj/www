@@ -107,9 +107,9 @@ Assembly、MAG）を含んでいます。
 
 ## メタゲノムアセンブリデータの登録  {#submission}
 
-{::nomarkdown}
+
 {% include image.html url="submission/mag.jpg" caption="メタゲノムアセンブリデータの登録" class="w600" %}
-{:/}
+
 
 ### 1\) Raw reads (Run)  {#raw-reads}
 

@@ -47,7 +47,7 @@ Controlled access does not correspond to holding a release prior to publication.
 Accession numbers are issued to metadata objects with following prefixes.
 
 | Prefix | Metadata object | Number digit | Example         |
-| ------ | --------------- | ------------ | --------------- |
+|---|
 | JGA    | Submission      | 11           | JGA000001  |
 | JGAS   | Study           | 11           | JGAS000001 |
 | JGAN   | Sample          | 11           | JGAN000001 |
@@ -61,8 +61,8 @@ Accession numbers are issued to metadata objects with following prefixes.
 It is important for making data reusable and reproducible that the processed data on which the conclusions in the related manuscript are based, are registered to JGA. Please submit processed data files such as VCF in Analysis objects.
 </div>
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 After creating a D-way account, it takes about 10 minutes for the D-way account becomes active in the [NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/).
 </div>
 
@@ -151,20 +151,20 @@ The JGA data model is created by extending the [Sequence Read Archive's model](/
 
 JGA XML schema: [JGA xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-{::nomarkdown}
-{% include image.html url="submission/jga_metadata_1.jpg" caption="Example: single policy." class="w500" %}
-{:/}
 
-{::nomarkdown}
+{% include image.html url="submission/jga_metadata_1.jpg" caption="Example: single policy." class="w500" %}
+
+
+
 {% include image.html url="submission/jga_metadata_2.jpg" caption="Example: separate policies for control and case." class="w500" %}
-{:/}
+
 
 ### Summary information for public display  {#public}
 
 When JGA submissions are released, following metadata objects will be public on the JGA and NBDC websites to display summary of submissions.
 
-{::options parse_block_html="true" /}
-<div class="dl-list">
+
+<div class="dl-list" markdown="1">
 
 Submission:  
 : All fields excluding submitters' contact information.
@@ -236,13 +236,13 @@ XML schema: [JGA.policy.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
 To submitting only aggregated data or data which are not suitable for Sample-Experiment-Data, these data can be submitted as Sample-Analysis instead of Sample-Experiment-Data.
 
-{::nomarkdown}
-{% include image.html url="submission/sample-analysis.jpg" caption="One Analysis for each Sample" class="w500" %}
-{:/}
 
-{::nomarkdown}
+{% include image.html url="submission/sample-analysis.jpg" caption="One Analysis for each Sample" class="w500" %}
+
+
+
 {% include image.html url="submission/samples-analysis.jpg" caption="Analysis data aggregating Samples" class="w500" %}
-{:/}
+
 
 To submitting Analysis only data, please contact [JGA team](/contact-ddbj-e.html) .
 

@@ -42,24 +42,24 @@ lang: ja
 
 ## 共同研究プロジェクトデータの取り扱い  {#project}
 
-ここでは共同研究プロジェクトに由来するデータを [DDBJ Sequence Read Archive (DRA)]({{ site.baseurl }}/dra/index.html) サーバを介して，
+ここでは共同研究プロジェクトに由来するデータを [DDBJ Sequence Read Archive (DRA)](/dra/index.html) サーバを介して，
 
   - シークエンス拠点から共同研究者へデータを転送する
   - 共同研究者が DRA へデータを登録する
 
 方法を解説しています。これによりプロジェクトで得られたデータを共同研究者間で共有することができます。
 
-DRA へのデータ登録方法については [DRA Handbook]({{ site.baseurl }}/dra/submission.html) をご覧ください。
+DRA へのデータ登録方法については [DRA Handbook](/dra/submission.html) をご覧ください。
 
 ## データ転送の準備  {#transfer}
 
 ### D-way アカウントの取得・連絡  {#create-dway-account}
 
-[アカウント Handbook]({{ site.baseurl }}/account.html) に従い DDBJ データ登録システムである D-way のアカウントを取得します。
+[アカウント Handbook](/account.html) に従い DDBJ データ登録システムである D-way のアカウントを取得します。
 
 ### 転送用ディレクトリ  {#directory-for-transfer}
 
-[DRA に転送用ディレクトリの作成を依頼します]({{ site.baseurl }}/contact-ddbj.html)。DRA チームは依頼に基づき DRA データ受付サーバに転送用ディレクトリ "transfer" を作成し，依頼者に連絡します。
+[DRA に転送用ディレクトリの作成を依頼します](/contact-ddbj.html)。DRA チームは依頼に基づき DRA データ受付サーバに転送用ディレクトリ "transfer" を作成し，依頼者に連絡します。
 
   - DRAデータ受付サーバ: ftp-private.ddbj.nig.ac.jp
   - 送り手側: transfer/プロジェクト名/受け手のアカウント名/
@@ -67,7 +67,7 @@ DRA へのデータ登録方法については [DRA Handbook]({{ site.baseurl }}
 
 受け手側ディレクトリは対応する送り手側ディレクトリにマウントされており，受け手側は送り手側がアップロードしたファイルを閲覧・コピーすることができます。削除と移動はできません。 作業完了後，送り手側でファイルを削除してください。
 
-[![]({{ site.baseurl }}/assets/images/books/sra_project1.png){: .w450}]({{ site.baseurl }}/assets/images/books/sra_project1.png "DRA サーバを介した共同研究者へのデータ受渡し"){: .group1}
+[![](/assets/images/books/sra_project1.png){: .w450}](/assets/images/books/sra_project1.png "DRA サーバを介した共同研究者へのデータ受渡し"){: .group1}
 
 以下ではシークエンス拠点 S (アカウント: center_s) がプロジェクト (project_X) のデータを共同研究者 A (アカウント: lab_a) に転送し，共同研究者 A がデータを DRA に登録する場合を例に手順を説明します。
 
@@ -78,7 +78,7 @@ DRA へのデータ登録方法については [DRA Handbook]({{ site.baseurl }}
 
 ### データの作成・アップロード  {#create-data-upload}
 
-送り手側であるシークエンス拠点 S が [DRA Handbook]({{ site.baseurl }}/dra/submission.html) 中の FTP クライアント，もしくは，コマンドで操作します。
+送り手側であるシークエンス拠点 S が [DRA Handbook](/dra/submission.html) 中の FTP クライアント，もしくは，コマンドで操作します。
 
 #### ランデータ  {#ランデータ}
 
@@ -102,13 +102,13 @@ D-way で DRA 新規登録を作成し，Save XML で XML ファイルとして�
 
 DRA ウェブサイトから共同研究者の [D-way](https://ddbj.nig.ac.jp/D-way/) アカウントにログインします。
 
-[DRA Handbook]({{ site.baseurl }}/dra/submission.html) に従い新規登録 (例: lab_a-0001)
+[DRA Handbook](/dra/submission.html) に従い新規登録 (例: lab_a-0001)
 を作成します。対応する登録用ディレクトリ
 (submission/lab_a/lab_a-0001) が受付サーバの登録者用ディレクトリに作成されます。
 
 ### データのコピー・取得  {#upload-download}
 
-[DRA Handbook]({{ site.baseurl }}/dra/submission.html) に従い，transfer 以下に作成された受渡し用ディレクトリに送り手はデータをアップロードします。受け手はデータをダウンロードします。
+[DRA Handbook](/dra/submission.html) に従い，transfer 以下に作成された受渡し用ディレクトリに送り手はデータをアップロードします。受け手はデータをダウンロードします。
 
 ### メタデータの読み込み・作成  {#create-metadata}
 

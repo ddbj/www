@@ -105,7 +105,7 @@ feature, described with the International Nucleotide Sequence Database
 is as follows.
 
 | **Example of Location**           | **Meaning**                                                                                                                                                                                                                                                  |
-| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|---|
 | 340..565                          | Points to a continuous range of bases bounded by and including bases 340 and 565.                                                                                                                                                                            |
 | complement(261..457)              | Points to a continuous range of bases bounded by and including bases 261 and 457 on complementary strand.                                                                                                                                                    |
 | <345..500                        | Indicates that the location begins at some base previous to base 345 and continues to and includes base 500. The 5'-end point of a feature is not included in the presented sequence, or the exact lower 5'-end point of a feature than base 345 is unknown. |
@@ -126,7 +126,7 @@ Sequence Submission System, or use [Mass Submission System](mss-e.html).
 
 
 | **Example of Location**            | **Meaning**                                                                                                                                                                                                                       |
-| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|---|
 | join(AB000000.1:100..202,134..222) | Indicates that the regions 100 to 202 in the entry (in this database) with primary accession number 'AB000000' (its version number '1') and 134 to 222 in the presented sequence should be joined to form one contiguous sequence |
 
 

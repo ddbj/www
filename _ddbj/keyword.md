@@ -105,7 +105,7 @@ The original site; [INSDC agreed methodological keywords](http://www.insdc.org/d
 Methodological keywords are added at the discretion of the INSDC from a controlled vocabulary of terms that explicitly describe the type of sequence contained within the entry.
 
 | Keyword                        |Description             |
-| -------------------------------| ---------------------- |
+|---|
 | BARCODE                        | a genetic barcode sequence that meets the standards as defined by CBoL (Consortium for the Barcode of Life)|
 | CAGE (Cap Analysis Gene Express| short sequences in 5' end of mRNA obtained by using Cap Analysis Gene Expression|
 | CAP trapper                    | sequences obtained from cDNAs created using cap-trapping|

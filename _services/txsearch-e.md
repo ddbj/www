@@ -35,7 +35,7 @@ you need to use the organism name description based on NCBI Taxonomy.
 
 #### Top page (Tree screen)：<http://ddbj.nig.ac.jp/tx_search/>  {#Top_page_Tree_screen：http_//ddbj.nig.ac.jp/tx_search/_}
 
-![Top page]({{ site.baseurl }}/assets/images/help/txhelp01.gif)
+<img src="/assets/images/help/txhelp01.gif" alt="" title="Top page" class="">
 
 
 ### Search from the Web Form  {#search}
@@ -43,7 +43,7 @@ you need to use the organism name description based on NCBI Taxonomy.
 Enter the words and/or numericals into the box, then click the "send"
 button or press the "Enter" key.
 
-![Enter to search form]({{ site.baseurl }}/assets/images/help/txhelp03.gif)
+<img src="/assets/images/help/txhelp03.gif" alt="" title="Enter to search form" class="">
 
   - "Wild Card" ("?" stands for any single character, and "\*" for any
     number of characters) is available.
@@ -62,7 +62,7 @@ button or press the "Enter" key.
       - <span class="red">(2)</span> Select the one and click it, then its text is entered into the search box.
       - <span class="red">(3)</span> Modify the text to suit your purpose. (e.g. organism names, taxonomy_id)
     
-    ![Search form, Example]({{ site.baseurl }}/assets/images/help/txhelp02.gif)
+   <img src="/assets/images/help/txhelp02.gif" alt="" title="Search form, Example" class="">
 
   - Default search fields are as follows.
     
@@ -100,7 +100,7 @@ fields, and/or combining some field searches.
   - <span id="k-field">Following fields can be specified</span>
 
     |  Searchable fields  |    |
-    | ---- | ---- |
+    |---|
     |      tax_id<br>scientific_name<br>common_name<br>synonym<br>acronym<br>anamorph<br>teleomorph<br>authority<br>blast_name<br>equivalent_name<br>in_part<br>includes<br>misnomer<br>misspelling<br>type_material  |  When the field name is specified, specified field is searched.<br>When the field is not specified, all these field is searched.  |
     |  lineagerank  |  To search these fields, you need to specify the field-name and its value.  |
 
@@ -124,7 +124,7 @@ fields, and/or combining some field searches.
 ### Search Examples  {#example}
 
 |  Text	  |  what you search  |
-| ---- | ---- |
+|---|
 | human AND lineage:Mammalia | search the taxon which contains "human" in the default search fields, and linage is "Mammalia" |
 | human AND rank:subspecies | search the taxon which contains "human" in the default search fields, and rank is "subspecies" |
 | human AND NOT(lineage:Eukaryota) | search the taxon which contains "human" in the default search fields, and linage is NOT "Eukaryota" |
@@ -147,7 +147,7 @@ fields, and/or combining some field searches.
 
 This is the result screen of the search by the web form.
 
-![Search result]({{ site.baseurl }}/assets/images/help/txhelp04.gif)
+<img src="/assets/images/help/txhelp04.gif" alt="" title="Search result" class="">
 
   - Scientific name, taxonomy id, rank, division code, genetic code,
     mitochondrial genetic code, names other than scientific name, and
@@ -165,7 +165,7 @@ This is the result screen of the search by the web form.
 Click the name in the lineage, then the tree will be displayed on the
 screen.
 
-![Tree screen]({{ site.baseurl }}/assets/images/help/txhelp05.gif)
+<img src="/assets/images/help/txhelp05.gif" alt="" title="Tree screen" class="">
 
   - <span class="red">(1)</span> scientific name links to Taxon
     Information screen.
@@ -190,7 +190,7 @@ page.
 ### When including taxonomy_id in URL  {#taxnonmy}
 
 | Parameters | Details | Examples |
-| --- | --- | --- |
+|---|
 | id <span class="red">(required item）</span> | specifies target taxonomy id. | {::nomarkdown}<ul><li>taxonomy_id :9606 in the Tree view<br /><a href="http://ddbj.nig.ac.jp/tx_search/9606?view=tree" class="external">//ddbj.nig.ac.jp/tx_search/9606?view=tree</a><br /><a href="http://ddbj.nig.ac.jp/tx_search/9606" class="external">//ddbj.nig.ac.jp/tx_search/9606</a></li><li>taxonomy_id :63221 in Taxon Information view<br /><a href="http://ddbj.nig.ac.jp/tx_search/63221?view=info" class="external">//ddbj.nig.ac.jp/tx_search/63221?view=info</a></li></ul>{:/} |
 | view | View of Tree of Taxon information.<br />In case of not specified, automatically tree view is selected. | {::nomarkdown}<ul><li>taxonomy_id :63221 in the Taxon Information view<br /><a href="http://ddbj.nig.ac.jp/tx_search/63221?view=info" class="external">//ddbj.nig.ac.jp/tx_search/63221?view=info</a></li><li>taxonomy_id :63221 in the Tree view<br /><a href="http://ddbj.nig.ac.jp/tx_search/63221" class="external">//ddbj.nig.ac.jp/tx_search/63221</a></li></ul>{:/} |
 | depth | specifies number of hierarchy.<br />Default is 2. | {::nomarkdown}<ul><li>display taxonomy_id :9592 in 5 hierarchies<br /><a href="http://ddbj.nig.ac.jp/tx_search/63221?depth=5" class="external">//ddbj.nig.ac.jp/tx_search/63221?depth=5</a></li><li>display taxonomy_id :9606 by default<br /><a href="http://ddbj.nig.ac.jp/tx_search/9606" class="external">//ddbj.nig.ac.jp/tx_search/9606</a></li></ul>{:/} |

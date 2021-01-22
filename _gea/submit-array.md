@@ -65,11 +65,11 @@ lang: ja
 
   - 研究プロジェクトの内容
 
-#### [BioSample](/biosample/submission.html) {#_BioSample} ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
+#### [BioSample](/biosample/submission.html) {#_BioSample}<img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">
 
   - 実験データを得るのに使われた生物学的、物理的にユニークなサンプル
 
-![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
+<img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">
     メタデータをタブ区切りテキストファイルで登録できます
 
 ### 3\. 生データと解析済みデータファイルをアップロード 
@@ -89,7 +89,7 @@ lang: ja
   - [IDF(Investigation Description Format)](/gea/metadata.html#idf)
     ファイルで実験デザイン、プロトコールや文献情報といった実験全体を記述します
 
-#### SDRF  {#sdrf} ![]({{ site.baseurl }}/assets/images/parts/tsv.png){:.tsv}
+#### SDRF  {#sdrf}<img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">
 
   - [SDRF(Sample and Data RelationshipFormat)](/gea/metadata.html#sdrf) ファイルでサンプル属性とサンプル、アレイ、データファイル間の関係性を記述します
   - 選択した BioProject と BioSample の内容から生成された SDRF テンプレートファイルに必要な情報を追加します
@@ -101,8 +101,8 @@ lang: ja
 
 ## 登録前のチェックリスト  {#checklist}
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Two-color microarray experiment</a></h4>
 <div class="accordion-content">
 
@@ -114,8 +114,8 @@ GEA 登録インターフェースは二つのサンプルが一つの生デー�
 </div>
 </div>
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Single-cell sequencing experiment</a></h4>
 <div class="accordion-content">
 
@@ -125,8 +125,8 @@ GEA 登録インターフェースは二つのサンプルが一つの生デー�
 </div>
 </div>
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">More than one technology per experiment</a></h4>
 <div class="accordion-content">
 
@@ -145,14 +145,14 @@ GEA では一つの登録に異なる種類のテクノロジー（マイクロ�
 
 "Microarray"を選択した状態で\[New submission\]をクリックして microarray experimentsubmission を作成します。作成と同時に DDBJ ファイルサーバ (ftp-private.ddbj.nig.ac.jp) に対応する GEA 登録用サブディレクトリが登録者のホーム下に作成されます。このサブディレクトリに[データファイルをアップロード](#upload-data)します。
 
-{::options parse_block_html="true"/}
-<div class="attention">
+
+<div class="attention" markdown="1">
 DDBJ センターから登録者に問い合わせた後三か月以上回答が無い場合は Submission をキャンセルいたします。
 </div>
 
-{::nomarkdown}
+
 {% include image.html url="books/array-sub1.jpg" caption="Microarray experiment submission の新規作成" class="w450" %}
-{:/}
+
 
 登録のステータスには以下のものがあります。 "Data Validated" と "Validation Error" になった登録が査定されます。
 
@@ -160,7 +160,7 @@ DDBJ センターから登録者に問い合わせた後三か月以上回答が
 {: .tablecaption}
 
 | ステータス            | 説明                            |
-| ---------------- | ----------------------------- |
+|---|
 | New              | メタデータの投稿前                     |
 | Data Submitted   | メタデータとデータファイルが投稿された           |
 | Data Validating  | データファイルの検証処理中                 |
@@ -174,8 +174,8 @@ DDBJ センターから登録者に問い合わせた後三か月以上回答が
 {::options parse_block_html="true"/}
 ### 生データと解析済みファイルのアップロード {#upload-data} 
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">ターミナルによるシークエンスデータの転送 (Linux/Mac OS X)</a></h4>
 <div class="accordion-content">
 
@@ -225,8 +225,8 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 </div>
 </div>
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">WinSCP によるシークエンスデータの転送 (Windows)</a></h4>
 <div class="accordion-content">
 
@@ -248,22 +248,22 @@ DRAへの登録～データの転送 (Windows)～
   - <span class="bold">User name:</span>(D-way の Login ID を入力)
   - <span class="bold">Password:</span>(空欄のまま)
 
-[![]({{ site.baseurl }}/assets/images/books/winscp1_400.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/winscp1_400.jpg "秘密鍵の登録１"){:.group1}
+<a href="/assets/images/books/winscp1_400.jpg" title="秘密鍵の登録１" class="group1"><img src="/assets/images/books/winscp1_400.jpg" alt="" title="" class="w300"></a>
 
 "Authentication" にある "Private key file" で、事前に作成した PuTTY 形式の秘密鍵を選択します。
 
-[![]({{ site.baseurl }}/assets/images/books/winscp2_400.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/winscp2_400.jpg "秘密鍵の登録2"){:.group1}
+<a href="/assets/images/books/winscp2_400.jpg" title="秘密鍵の登録2" class="group1"><img src="/assets/images/books/winscp2_400.jpg" alt="" title="" class="w300"></a>
 
 最後に、下中央にある \[Login\] をクリックします。
 
-[![]({{ site.baseurl }}/assets/images/books/winscp3_400.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/winscp3_400.jpg "winSCPへのログイン"){:.group1}
+<a href="/assets/images/books/winscp3_400.jpg" title="winSCPへのログイン" class="group1"><img src="/assets/images/books/winscp3_400.jpg" alt="" title="" class="w300"></a>
 
 初回接続時には警告メッセージが表示されますが、 "はい" を選択してください (次回から表示されません)。次の画面では、鍵を作成した際に指定したパスフレーズを入力します。
 
 ログインに成功すると、左側のウィンドウにユーザの PC のフォルダ、右側のウィンドウにデータ受付サーバの登録者専用ディレクトリが表示されます。
 左側ウィンドウでファイルを選択し右側ウィンドウへドラッグ＆ドロップし、サーバへファイルを転送します。
 
-[![]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg){:.w400}]({{ site.baseurl }}/assets/images/books/winscp4_400.jpg "ファイルの転送"){:.group1}
+<a href="/assets/images/books/winscp4_400.jpg" title="ファイルの転送" class="group1"><img src="/assets/images/books/winscp4_400.jpg" alt="" title="" class="w400"></a>
 
 転送したファイルは、ファイルを選択し \[削除\] ボタンをクリックすることで削除できます。
 
@@ -271,8 +271,8 @@ DRAへの登録～データの転送 (Windows)～
 </div>
 </div>
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Cyberduck によるシークエンスデータの転送 (Mac OS X)</a></h4>
 <div class="accordion-content">
 
@@ -284,11 +284,11 @@ DRA への登録～データの転送 (Mac)～
 
 トップ画面で "Open Connection" を選択します。
 
-[![]({{ site.baseurl }}/assets/images/books/Cyberduck_1.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/Cyberduck_1.jpg "open_connection"){:.group1}
+<a href="/assets/images/books/Cyberduck_1.jpg" title="open_connection" class="group1"><img src="/assets/images/books/Cyberduck_1.jpg" alt="" title="" class="w300"></a>
 
 使用する転送方式で "SFTP(SSH File Transfer Protocol)" を選択します。
 
-[![]({{ site.baseurl }}/assets/images/books/Cyberduck_2.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/Cyberduck_2.jpg "SFTP"){:.group1}
+<a href="/assets/images/books/Cyberduck_2.jpg" title="SFTP" class="group1"><img src="/assets/images/books/Cyberduck_2.jpg" alt="" title="" class="w300"></a>
 
 Cyberduck の起動画面で、以下のように設定し More Options の "Use Public Key Authentication" をチェックします。
 
@@ -298,17 +298,17 @@ Cyberduck の起動画面で、以下のように設定し More Options の "Use
   - <span class="bold">Password:</span> (空欄のまま)
   - <span class="bold">Add to Keychain:</span> (チェックを入れる)
 
-[![]({{ site.baseurl }}/assets/images/books/Cyberduck_3.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/Cyberduck_3.jpg "key_authentication"){:.group1}
+<a href="/assets/images/books/Cyberduck_3.jpg" title="key_authentication" class="group1"><img src="/assets/images/books/Cyberduck_3.jpg" alt="" title="" class="w300"></a>
 
 秘密鍵(private key) はデフォルトで"ユーザのホームフォルダ .sshフォルダ (Finder からは見えない隠しフォルダ)\>id\_rsa"に保存されています。
 
-[![]({{ site.baseurl }}/assets/images/books/Cyberduck_4.jpg){:.w300}]({{ site.baseurl }}/assets/images/books/Cyberduck_4.jpg "private_key"){:.group1}
+<a href="/assets/images/books/Cyberduck_4.jpg" title="private_key" class="group1"><img src="/assets/images/books/Cyberduck_4.jpg" alt="" title="" class="w300"></a>
 
 初回接続時には警告メッセージが表示されますが "常に" を選択してください (次回から表示されません)。
 
 ログインに成功すると、データ受付サーバの登録者専用ディレクトリが表示されます。登録者の PC にあるファイルを選択しウィンドウにドラッグ＆ドロップすることで、ファイルをサーバに転送します。
 
-[![]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg){:.w400}]({{ site.baseurl }}/assets/images/books/Cyberduck_5.jpg "transfer"){:.group1}
+<a href="/assets/images/books/Cyberduck_5.jpg" title="transfer" class="group1"><img src="/assets/images/books/Cyberduck_5.jpg" alt="" title="" class="w400"></a>
 
 [« 閉じる](javascript:void(0)){: .close-content-btn}
 </div>
@@ -328,9 +328,9 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 "Delete submission" で投稿前の登録を削除することができます。
 </div>
 
-{::nomarkdown}
+
 {% include image.html url="books/array-sub2.jpg" caption="登録管理情報を入力します" class="w550" %}
-{:/}
+
 
 ### BioProject  {#BioProject}
 
@@ -338,9 +338,9 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 他のアカウントで登録された BioProject を参照したい場合は [GEA チームに連絡](/contact-ddbj.html)します。
 
-{::nomarkdown}
+
 {% include image.html url="books/gea-bp.jpg" caption="GEA 登録で使う BioProject を一つ選択します" class="w550" %}
-{:/}
+
 
 ### BioSample  {#BioSample}
 
@@ -348,9 +348,9 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 他のアカウントで登録された BioSample を参照したい場合は [GEA チームに連絡](/contact-ddbj.html)します。
 
-{::nomarkdown}
+
 {% include image.html url="books/gea-bs.jpg" caption="GEA 登録で使うBioSampleを選択します" class="w550" %}
-{:/}
+
 
 ### IDF  {#idf}
 
@@ -363,15 +363,15 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
   - Array Design: [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA にアレイデザインが登録されている場合は "A-XXXX-n" のアクセッション番号を記入します。アレイデザインが未登録の場合は GEA 登録用ディレクトリにアレイデザインファイルをアップロードして [新規アレイデザインを登録](/gea/adf.html) します。
   - Data File Type: マイクロアレイ実験の場合は生データと解析済みデータが必須です。サンプル毎の生データ・解析済みデータファイルの登録を強く推奨します[マイクロアレイ実験に登録可能なファイル形式](/gea/datafile.html#array_data)。
 
-{::nomarkdown}
+
 {% include image.html url="books/array-idf.jpg" caption="IDF の内容を入力" class="w600" %}
-{:/}
+
 
 ### SDRF  {#sdrf}
 
-{::nomarkdown}
+
 {% include image.html url="books/array-sdrf.jpg" caption="SDRF テンプレートファイルをダウンロード" class="w400" %}
-{:/}
+
 
 [SDRF(Sample and Data Relationship Format)](/gea/metadata.html#sdrf)
 テンプレートファイルをダウンロードして必要な情報を追加します。
@@ -408,15 +408,15 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
       - KU-2003
       - KU-PI499262
 
-{::nomarkdown}
+
 {% include image.html url="books/array-sdrf-template.jpg" caption="SDRF テンプレートの図解、登録者が情報を追加する必要がある部分は黄色で示されている" class="w600" %}
-{:/}
+
 
 内容を追加した SDRF を選択して Continue をクリックします。
 
-{::nomarkdown}
+
 {% include image.html url="books/array-sdrf2.jpg" caption="作成した SDRF ファイルを選択" class="w450" %}
-{:/}
+
 
 ### Overview と投稿  {#submit}
 
@@ -424,9 +424,9 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 "Submit"ボタンをクリックして IDF と SDRF を投稿します。
 
-{::nomarkdown}
+
 {% include image.html url="books/array-overview.jpg" caption="IDF と SDRF の内容を確認してから投稿" class="w450" %}
-{:/}
+
 
 ### 検証処理  {#validation}
 
@@ -434,9 +434,9 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 Validatorは[validation rule](/gea/validation.html)に従ってメタデータをチェックしエラーとワーニングメッセージを表示します。メタデータを投稿するためにはエラーを解消しておく必要があります。
 
-{::nomarkdown}
+
 {% include image.html url="books/array-validation.jpg" caption="エラーとワーニングメッセージ" class="w500" %}
-{:/}
+
 
 ### アクセッション番号  {#accession}
 
@@ -444,9 +444,9 @@ Validatorは[validation rule](/gea/validation.html)に従ってメタデータ�
 
 [査読者用トークンを発行](/gea/reviewer-access.html)することでの非公開データへのアクセスを提供することができます。
 
-{::nomarkdown}
+
 {% include image.html url="books/array-accession.jpg" caption="GEA アクセッション番号" class="w500" %}
-{:/}
+
 
 ## 更新  {#update-submission}
 
@@ -486,8 +486,8 @@ Validatorは[validation rule](/gea/validation.html)に従ってメタデータ�
 
 MD5(Message Digest Algorithm 5) はハッシュ関数であり、与えられたファイルに対してハッシュ値 (MD5値、32桁の英数字)を出力します。ファイルが破損していると MD5 値が変化します。 DRA では、到着したファイルの MD5 値の一致をチェックすることで、ファイルの破損がないかどうか確認しています。
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
 <h3 class="toggle-content-btn"><a href="javascript:void(0)">MD5値の取得(Linux)</a></h3>
 <div class="accordion-content">
 
@@ -503,8 +503,8 @@ B636E0063E29709B6082F324C76D0911 file2
 </div>
 </div>
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
 <h3 class="toggle-content-btn"><a href="javascript:void(0)">MD5値の取得(Mac OS X)</a></h3>
 <div class="accordion-content">
 
@@ -520,23 +520,23 @@ B636E0063E29709B6082F324C76D0911 file2
 </div>
 </div>
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
+
+<div class="accordion-menu" markdown="1">
 <h3 class="toggle-content-btn"><a href="javascript:void(0)">MD5値の取得(Windows)</a></h3>
 <div class="accordion-content">
 
 [Fsum Frontend(http://sourceforge.net/projects/fsumfe/)](http://sourceforge.net/projects/fsumfe/)をインストールし、起動します。  
 まず、 "md5" にチェックを入れてください。
 
-[![]({{ site.baseurl }}/assets/images/books/Fsum1.jpg){:.w400}]({{ site.baseurl }}/assets/images/books/Fsum1.jpg "md5 を選択"){:.group1}
+<a href="/assets/images/books/Fsum1.jpg" title="md5 を選択" class="group1"><img src="/assets/images/books/Fsum1.jpg" alt="" title="" class="w400"></a>
 
 \[+\]ボタンをクリックし、必要なシークエンスデータファイルを開いてください。同時に複数のファイルを選択することが可能です。
 
-[![]({{ site.baseurl }}/assets/images/books/Fsum2.jpg){:.w400}]({{ site.baseurl }}/assets/images/books/Fsum2.jpg "シークエンスデータファイルを選択"){:.group1}
+<a href="/assets/images/books/Fsum2.jpg" title="シークエンスデータファイルを選択" class="group1"><img src="/assets/images/books/Fsum2.jpg" alt="" title="" class="w400"></a>
 
 最後に、 \[Calculate hashes\] ボタンをクリックしてください。各ファイルの MD5 値が表示されます。 \[Export\] ボタンから、MD5 値の一覧表 (.html,.csv,.xml) を作成することができます。
 
-[![]({{ site.baseurl }}/assets/images/books/Fsum3.jpg){:.w400}]({{ site.baseurl }}/assets/images/books/Fsum3.jpg "MD5値の計算を開始"){:.group1}
+<a href="/assets/images/books/Fsum3.jpg" title="MD5値の計算を開始" class="group1"><img src="/assets/images/books/Fsum3.jpg" alt="" title="" class="w400"></a>
 
 [« 閉じる](javascript:void(0)){: .close-content-btn}
 </div>

@@ -157,7 +157,7 @@ Please confirm [Categories for Sequence Data](/documents/data-categories-e.html)
 
 ## The Flow of MSS  {#flow}
 
-![](/assets/images/ddbj/MSS-flow_20200916-en.png "The Flow of MSS")
+<img src="/assets/images/ddbj/MSS-flow_20200916-en.png" alt="The Flow of MSS" title="" class="">
 
 ### 1. Application  {#flow-1}
 

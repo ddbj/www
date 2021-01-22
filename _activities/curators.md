@@ -47,9 +47,9 @@ DDBJ チーフアノテータ　真島　淳
 
 「[INSDC](http://www.insdc.org/) は primary database を構築している」という主張は [GenBank](//www.ncbi.nlm.nih.gov/genbank/) ([NCBI](//www.ncbi.nlm.nih.gov/)) と [EMBL-Bank](//www.ebi.ac.uk/ena/) ([ENA](//www.ebi.ac.uk/ena/about/about)/[EBI](//www.ebi.ac.uk/)) との対話において頻出しますが, 今一つ一般的には浸透していません。 primary database とは, おそらく一般には「個々の研究者が自らデータを登録する仕組みで収集されたデータベース」というようなことを指すと思います。[DDBJ におけるデータのサイクル](/ddbj/submission.html#flow)を図に示しています。
 
-![]({{ site.baseurl }}/assets/images/ddbj/workflow.gif){:.float-left}
+<img src="/assets/images/ddbj/workflow.gif" alt="" title="" class="float-left">
 
-![]({{ site.baseurl }}/assets/images/center/insdc_shoukai.gif){:.float-right}
+<img src="/assets/images/center/insdc_shoukai.gif" alt="" title="" class="float-right">
 
 primary database の場合, そのコンテンツに関する responsibility とか, 文責のようなものは, 本来, 登録した個々の研究者に帰せられるべきです。 よく混同される [RefSeq](//www.ncbi.nlm.nih.gov/refseq/) を対照例にします。 RefSeq は NCBI が独自に構築しており secondary database に相当します。 対して DDBJ/EMBL-Bank/GenBank は一般の研究者が決めた塩基配列を受け付ける primary database に相当します。 RefSeq は実は DDBJ/EMBL-Bank/GenBank から引用, 冗長性をなくすような選択, NCBI の staff による記述の見直しと修正などを経て構築されています。この特定 staff が自由に記述を改訂することが可能か否かの点が primary database と secondary database で大きく異なります。 [RefSeq](//www.ncbi.nlm.nih.gov/books/NBK50679/) の FAQ  項目で説明されていますが, この文脈では GenBank と DDBJ, EMBL-Bank は等価ですので, 読み替えてください。
 

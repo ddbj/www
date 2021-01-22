@@ -18,7 +18,7 @@ format, result は必須です。
 result に mail を指定した場合は address も必須となります。
 
 |  パラメーター  |  説明  |
-| ---- | ---- |
+|---|
 |  format  |  request ID を返す際の応答データの形式。<br/>text, json, xml, bigfile, imagefile, requestfile が受け付けられますが、job投入時に意味があるのは text, json, xml の3つです。  |
 |  querySequence  |  multiple alignment 実行時に mafft に渡す配列 fasta ファイル。  |
 |  profile1  |  Group-to-group alignment 実行時に mafft に --seed で渡す1つめの整列済み配列ファイル。  |
@@ -35,7 +35,7 @@ result に mail を指定した場合は address も必須となります。
 ## MAFFT の結果の取得  {#result}
 
 |  パラメーター  |  説明  |
-| ---- | ---- |
+|---|
 |  GET mafft/{id}?info=status  |  job が走っている、キューにたまっている、終わっている、存在しない、ということを返します。  |
 |  GET mafft/{id}?info=request  |  プログラム実行条件を返します。<br/>存在しない場合は、エラーを返します。  |
 |  GET mafft/{id}?info=result  |  job が終わっていたら結果（multiple alignment, Group-to-group alignmentの結果）を返します。<br/>終わってない・存在しない場合は、エラーを返します。  |

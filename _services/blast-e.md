@@ -29,7 +29,7 @@ related_pages:
 Specify the search program from the followings.
 
 |  PROGRAM  |  query  |  Data Base  |  Description  |　　　　　　
-| ---- | ---- | ---- | ---- |
+|---|
 | megablast | nucleotide | nucleotide | Aligning your nucleotide sequence with nucleotide sequence database.<br>When you want to perform a homology search with long length of nucleotide sequence, results are provided faster than blastn program. |
  | **blastn** | nucleotide | nucleotide | Aligning your nucleotide sequence with nucleotide sequence database. |
  | tblastn | amino acid | nucleotide | Aligning your amino acid sequence with nucleotide sequence database by translating database sequences taking into account all six possible open reading frames. |
@@ -97,7 +97,7 @@ lengths.
 Select the target database.
 
 |  nucleotide database  |      |
-| ---- | ---- |
+|---|
 | DDBJ ALL | DDBJ periodical release + daily updates |
 | DDBJ New | DDBJ daily updates |
 | 16S rRNA | 16S rRNA from DDBJ periodical release |
@@ -115,7 +115,7 @@ specified each other.
 
 
 |  Standard divisions  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  Human  |  HUM  |  human  |
 |  Primates  |  PRI  |  primates other than human  |
 |  Rodents  |  ROD  |  rodents  |
@@ -130,13 +130,13 @@ specified each other.
 |  ENV  |  ENV  |  environmental samples  |
 
 |  High throughput divisions  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  HTC	  |  HTC	  |  High Throughput cDNAs  |
 |  HTG	  |  HTG	  |  High Throughput Genomic sequences  |
 |  TSA	  |  TSA	  |  Transcriptome Shotgun Assembly  |
 
 |  EST divisions  |      |
-| ---- | ---- | 
+|---|
 |  A.thaliana	  | *Arabidopsis thaliana* (thale cress)  |
 |  B.taurus	  |  *Bos taurus* (cattle)  |
 |  C.elegans  | *Caenorhabditis elegans* (nematode worm) |
@@ -161,7 +161,7 @@ specified each other.
 |  Others  |  Others  |
 
 |  Other divisions  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  Patent  |  PAT  |  patent  |
 |  Unannotated Seq	  |  UNA  |  unannotated sequences  |
 |  GSS  |  GSS  |  genome survey sequences  |
@@ -171,7 +171,7 @@ specified each other.
 #### Database Options (RefSeq)  {#Database_Options_RefSeq}
 
 | Release（genomic/RNA) |    |
-| ---- | ---- |
+|---|
 |  Fungi  |  Fungi  |
 |  Invertebrate  |  Invertebrate  |
 |  Microbial  |  Microbial  |
@@ -186,11 +186,11 @@ specified each other.
 |  Daily Updates  |  Daily Updates  |
 
 |  Model（Genomic) |    |
-| ---- | ---- |
+|---|
 |  H. sapiens  |  human  |
 
 |  Model（RNA) |    |
-| ---- | ---- |
+|---|
 |  B. taurus  |  cattle  |
 |  D. rerio  |  zebrafish  |
 |  H. sapiens  |  human  |
@@ -203,7 +203,7 @@ specified each other.
 #### DATABASE (protein)  {#DATABASE_protein}
 
 |  Proterin Databases |    |
-| ---- | ---- |
+|---|
 | UniProt (Swiss-Prot + TrEMBL)  |  Swiss-Prot + TrEMBL  |
 |  UniProt (Swiss-Prot)	  |  Swiss-Prot  |
 |  UniProt (TrEMBL)	 |  TrEMBL |
@@ -225,7 +225,7 @@ following 21 listed organisms which were selectted based on the
 submitted-number's statistics can be specified each other.
 
 |  Standard divisions  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  Human  |  HUM  |  human  |
 |  Primates  |  PRI  |  primates other than human  |
 |  Rodents  |  ROD  |  rodents  |
@@ -240,13 +240,13 @@ submitted-number's statistics can be specified each other.
 |  ENV  |  ENV  |  environmental samples  |
 
 |  High throughput divisions  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  HTC	  |  HTC	  |  High Throughput cDNAs  |
 |  HTG	  |  HTG	  |  High Throughput Genomic sequences  |
 |  TSA	  |  TSA	  |  Transcriptome Shotgun Assembly  |
 
 |  EST divisions  |
-| ---- | 
+|---|
 |  A.thaliana	  |  *Arabidopsis thaliana* (thale cress)  |
 |  B.taurus	  |  *Bos taurus* （cattle）  | 
 |  C.elegans  |  *Caenorhabditis elegans* (nematode worm) | 
@@ -271,7 +271,7 @@ submitted-number's statistics can be specified each other.
 |  Others  |  Others  |
 
 |  Other divisions  |    |    |
-| ---- | ---- | ---- |
+|---|
 |  Patent  |  PAT  |  patent  |
 |  Unannotated Seq	  |  UNA  |  unannotated sequences  |
 |  GSS  |  GSS  |  genome survey sequences  |
@@ -280,7 +280,7 @@ submitted-number's statistics can be specified each other.
 #### DATABASE option (RefSeq)  {#DATABASE_option_RefSeq}
 
 |  Release（Protein) |    |
-| ---- | ---- |
+|---|
 |  Fungi  |  Fungi  |
 |  Invertebrate  |  Invertebrate  |
 |  Microbial  |  Microbial  |
@@ -295,11 +295,11 @@ submitted-number's statistics can be specified each other.
 |  Daily Updates  |  Daily Updates  |
 
 |  Model（Genomic) |    |
-| ---- | ---- |
+|---|
 |  H. sapiens  |  human  |
 
 |  Model（Protain) |    |
-| ---- | ---- |
+|---|
 |  B. taurus  |  cattle  |
 |  D. rerio  |  zebrafish  |
 |  H. sapiens  |  human  |
@@ -387,13 +387,13 @@ the "Result Viewer" and/or inquiring to DDBJ for your search.
 
 Request ID:wabi_blast_2013-0314-1407-23-16-946732
 
-![]({{ site.baseurl }}/assets/images/help/blast_help_01-e.gif "blast_requestID")
+<img src="/assets/images/help/blast_help_01-e.gif" alt="blast_requestID" title="" class="">
 
 
 
 ### Information contained in the result screen  {#result screen}
 
-![]({{ site.baseurl }}/assets/images/help/blast_help_02-e.gif
+![](/assets/images/help/blast_help_02-e.gif
 "Information contained in the result screen")
 
 
@@ -403,7 +403,7 @@ Request ID:wabi_blast_2013-0314-1407-23-16-946732
 Select the accession numbers, and prres the "getentry"button. You can
 view the flatfile of the sequences in the getentry.
 
-![]({{ site.baseurl }}/assets/images/help/blast_help_03-e.gif "View the flatfile of the entries")
+<img src="/assets/images/help/blast_help_03-e.gif" alt="View the flatfile of the entries" title="" class="">
 
 
 
@@ -413,7 +413,7 @@ You can view your result using "Request ID" at any time (within the
 retention period).  
 The results will be deleted after 7 days.
 
-![]({{ site.baseurl }}/assets/images/help/blast_help_04-e.gif "Result Viewer")
+<img src="/assets/images/help/blast_help_04-e.gif" alt="Result Viewer" title="" class="">
 
 
 ## ClustalW Set up  {#setup}
@@ -422,8 +422,8 @@ Select the sequences which you would like to suceed the clustalW, then
 press the "ClustalW" button. Your selected sequences are automatically
 pasted in the ClustalW query box.
 
-1. ![ClustalW Set up（１）]({{ site.baseurl }}/assets/images/help/blast_help_05-e.gif)
-2. ![ClustalW Set up（2）]({{ site.baseurl }}/assets/images/help/blast_help_06-e.gif)
+1.<img src="/assets/images/help/blast_help_05-e.gif" alt="" title="ClustalW Set up（１）" class="">
+2.<img src="/assets/images/help/blast_help_06-e.gif" alt="" title="ClustalW Set up（2）" class="">
 
 ## Reference  {#reference}
 

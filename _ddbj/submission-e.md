@@ -392,7 +392,7 @@ number) for details.
 
 Following figure shows the dataflow from new submission to release and update at DDBJ.
 
-![]({{site.baseurl}}/assets/images/ddbj/workflow.gif "配列データの遷移"){:.w400}
+<img src="{{site.baseurl}}/assets/images/ddbj/workflow.gif" alt="配列データの遷移" title="" class="w400">
 
 <ol>
   <li class="decrement">

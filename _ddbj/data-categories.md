@@ -134,7 +134,7 @@ source feature と、それ以外に最低 1 つ [Biological feature](/ddbj/file
 由来する生物の系統分類に基づいて自動的に下記の DIVISION に振り分けられます。
 
 | Division | Description             |
-| -------- | ----------------------- |
+|---|
 | HUM      | ヒト                      |
 | PRI      | 霊長類(ヒトを除く)              |
 | ROD      | 齧歯類                     |
@@ -152,7 +152,7 @@ source feature と、それ以外に最低 1 つ [Biological feature](/ddbj/file
 source feature と、それ以外に最低1つの [Biological feature](/ddbj/file-format.html#biological_feature) による特徴づけが必要となります。
 
 |  Division  |  Description  |
-| ---- | ---- |
+|---|
 |  ENV  |  PCR, DGGE, あるいは、その他の方法で直接、分子を単離した環境上のサンプルに由来した配列。<br/> ENV の場合は source feature に [environmental_sample qualifier](/ddbj/qualifiers.html#environmental_sample) を記載する必要があります。  |
 |  SYN  |  人為的な操作により構築された合成配列<br/>SYN は合成配列、例えば発現ベクターの配列、プライマーの配列、キメラ配列、fusion 配列、人為的に変異を導入した配列などが該当します。複数の生物種や遺伝子由来の断片をつなぎ合わせた合成配列では、各々の配列の由来を示すために複数の source feature を使用して記載する場合があります。<br/>[登録の見本; E05) synthetic construct](/ddbj/example.html#E05) もご参照ください。  |
 
@@ -164,7 +164,7 @@ EST に代表される大量解析、長大なゲノム配列の決定の途上�
 それぞれのデータに関する説明ページも合わせてご覧ください。
 
 |  Division  |  Description  |
-| ---- | ---- |
+|---|
 |  [EST](/ddbj/est.html)  |  expressed sequence tags; short single pass の cDNA 配列。  |
 |  [GSS](/ddbj/gss.html)  |  genome survey sequences; short single pass のゲノム配列。  |
 |  STS  |  sequence tagged sites; genome sequencing の tag となる配列。<br/>ゲノム上の位置情報、[primer_bind](/ddbj/features.html#primer_bind)  feature, [PCR_conditions](/ddbj/qualifiers.html#PCR_conditions)  qualifier などの記載を推奨します。  |
@@ -209,8 +209,8 @@ TLS データは他のデータと[アクセッション番号の書式](/ddbj/f
 [TPA (Third Party Data)](/ddbj/tpa.html) は, DDBJ/EMBL-Bank/GenBank、[Trace Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi)、もしくは、Sequence Read Archiveに既に登録されているエントリ (これをプライマリーエントリと呼びます) を元に, 第三者がアセンブル (assemble), もしくは, (再)アノテーションを行ったデータのコレクションです。配列のアセンブルには, 既存のプライマリーエントリの組み合わせのみで構成された場合と, 新規に TPA の登録者が実験的に決定した配列を混在させた場合とが存在します。DDBJ/EMBL-Bank/GenBank では, 既報のプライマリーエントリに記載されている配列に関する研究を公開するための手段として TPA 登録を受け入れています。  
 [TPA Submission Guidelines](/ddbj/tpa-table.html) もご参照ください。
 
-{::options parse_block_html="true" /}
-<div class="attention">
+
+<div class="attention" markdown="1">
 
 登録予定の塩基配列データをどのように登録すべきか不明な場合は以下をご参照ください。
 
