@@ -749,19 +749,19 @@ tools or future genome assembilies.
 {% include image.html url="books/bam-mapping.jpg" caption="mapping between bam and reference sequences" class="w500" %}
 
 
-1. #### BAM file submission <a name="BAM_file_submission"></a>
+1. #### BAM file submission {#BAM_file_submission}
   The alignment data can be submitted in the BAM format. The bam files should be readable by [SAMtools](http://samtools.sourceforge.net/) and [picard](https://broadinstitute.github.io/picard/). The BAM files are nearly optimal in terms of compression and should be submitted uncompressed.
 
-2. #### Specify reference by INSDC/RefSeq accession number <a name="Specify_reference_by_INSDC/RefSeq_accession_number"></a>
+2. #### Specify reference by INSDC/RefSeq accession number  {#Specify_reference_by_INSDC/RefSeq_accession_number}
   If references are found in [list](/assets/files/ref/ref-file.txt), references can be specified by their accession.version number (for example, NC_000001.11). [Version number](/ddbj/flat-file-e.html#Version)is necessary. Accession numbers for references can be searched in [NCBI Assembly](https://www.ncbi.nlm.nih.gov/assembly/).
 
-3. #### Specify reference by supplying multi-fasta <a name="Specify_reference_by_supplying_multi-fasta"></a>
+3. #### Specify reference by supplying multi-fasta  {#Specify_reference_by_supplying_multi-fasta}
   If references are not found in the [list](/assets/files/ref/ref-file.txt), submit a reference file in multi-fasta format. Select "reference_fasta" in the [Run file type](/dra/submission-e.html#File_Type). The reference name in the bam header and reference sequence are linked by the name in bam header and fasta defline via the mapping table. If sequence length is different between @SQ-LN and multi-fasta, a warning is raised.
 
-4. #### Specify reference by both INSDC/RefSeq accession number and multi-fasta <a name="Specify_reference_by_both_INSDC/RefSeq_accession_number_and_multi-fasta"></a>
+4. #### Specify reference by both INSDC/RefSeq accession number and multi-fasta  {#Specify_reference_by_both_INSDC/RefSeq_accession_number_and_multi-fasta}
   If a part of references are found in [list](/assets/files/ref/ref-file.txt), these references can be specified by their accession.version number (for example, NC_000001.11). The rest of references needs to be supplied by uploading a multi-fasta file. In the SN-reference mapping table, list accession.version numbers and sequence names of multi-fasta deflines.
 
-5. #### SN-reference mapping table <a name="SN-reference_mapping_table"></a>
+5. #### SN-reference mapping table  {#SN-reference_mapping_table}
   A tab delimited text file describing mapping between "SN in SQ line in BAM header" and "accession OR sequence name in fasta file". Select "tab" in the [Run file type](/dra/submission-e.html#File_Type)
 
   BAM header
@@ -993,12 +993,12 @@ platforms.
 
 ### 3. Submit project and sample information 
 
-#### [BioProject](/bioproject/submission-e.html)  {#_BioProject_}
+#### [BioProject](/bioproject/submission-e.html)  {#BioProject_Study}
 
   - A description of the reseach effort
   - "Why" you sequenced your samples
 
-#### [BioSample](/biosample/submission-e.html) {#_BioSample_<img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> 
+#### [BioSample](/biosample/submission-e.html) <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#BioSample_Sampple}
 
   - A description of biologically or physically unique specimens
   - "What" you sequenced
@@ -1007,12 +1007,12 @@ platforms.
 
 ### 4. Submit Experiment and Run 
 
-#### DRA Experiment {#DRA_Experiment}<img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> 
+#### DRA Experiment <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#DRA_Experiment}
   - A description of a sample-specific sequencing library
   - "How" you performed the sequencing
   - Multiple Experiments “point” to a single Sample, but not vice-versa.
 
-#### DRA Run {#DRA_Run}<img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> 
+#### DRA Run <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#DRA_Run}
 
   - Validate data files after submitting Experiment and Run
   - All files linked to a Run are “merged” into a single SRA file format
@@ -1100,8 +1100,8 @@ List of submission status
 Sequence data files need to be uploaded before creating metadata. To
 create metadata first, upload some files.
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Transfer sequence data by using terminal (Linux/Mac OS X)</a></h4>
 <div class="accordion-content">
 
@@ -1110,10 +1110,10 @@ Transfer the files by executing,
 $ scp -i private-key-for-auth &lt;Your Files&gt; &lt;D-way Login ID&gt;@ftp-private.ddbj.nig.ac.jp:~/&lt;DRA Submission ID&gt;
 ```
   - -i: specify the private key for authentication which is pair of a public key registered to your D-way account.
-  - \<Your Files> Files to be transferred. Ex: file1 file2 (file1 and
+  - &lt;Your Files&gt; Files to be transferred. Ex: file1 file2 (file1 and
     file2), file* (all files whose filenames start with “file”)
-  - \<D-way Login ID> D-way Login ID (ex. test07)
-  - \<DRA Submission ID> DRA Submission ID (ex. test07-0018)
+  - &lt;D-way Login ID&gt; D-way Login ID (ex. test07)
+  - &lt;DRA Submission ID&gt; DRA Submission ID (ex. test07-0018)
   - command example: scp -i private-key-for-auth strainA_1.fastq test07@ftp-private.ddbj.nig.ac.jp:~/test07-0018
 
 Enter the passphrase set for the keys.
@@ -1133,8 +1133,8 @@ the following ones. Users can delete unnecessary files.
 </div>
 </div>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Transfer sequence data by using WinSCP (Windows)</a></h4>
 <div class="accordion-content">
 
@@ -1184,8 +1184,8 @@ the [Delete] button.
 </div>
 </div>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Transfer sequence data by using Cyberduck (Mac OS X)</a></h4>
 <div class="accordion-content">
 
@@ -1448,10 +1448,7 @@ For the validation rules and messages, please see [Validation rules
 page](/biosample/validation-e.html).
 
 
-{% include image.html url="books/hdra-bs04-2.jpg" caption="BioSample validation. In this example, an error for the future date in the collection_date and a warning for inconsistent countries between
-geo_loc_name and lat_lon of the sample \"genome bacteria strain C\" are
-displayed." class="w500" %}
-{:/}
+{% include image.html url="books/hdra-bs04-2.jpg" caption="BioSample validation. In this example, an error for the future date in the collection_date and a warning for inconsistent countries between geo_loc_name and lat_lon of the sample \"genome bacteria strain C\" are displayed." class="w500" %}
 
 Check content in the last "OVERVIEW" and submit samples. In the
 "ATTRIBUTES" area, the submitted sample attribute file can be

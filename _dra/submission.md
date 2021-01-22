@@ -535,7 +535,7 @@ DRA のメタデータ作成ツールは technical read (アダプター、プ�
 
 | Format                                           | Platform            | Recommended                      |
 |---|
-| [SFF](#454)                                      | 454 and Ion Torrent | Yes                              |
+| [SFF](#r454)                                      | 454 and Ion Torrent | Yes                              |
 | [PacBio HDF](#Pacific_Biosciences)               | PacBio              | Yes                              |
 | [SOLiD csfasta/qual](#SOLiD)                     | SOLiD               | No (please convert to fastq/bam) |
 | [Illumina qseq and scarf](#Illumina_Native_Data) | Illumina            | No (please convert to fastq/bam) |
@@ -604,21 +604,21 @@ PacBio や IonTorrent などでリファレンス配列がない bam ファイ�
 {% include image.html url="books/bam-mapping.jpg" caption="bam とリファレンス配列の対応付け" class="w500" %}
 
 
-1. #### BAM <a name="BAM"></a>
+1. #### BAM {#BAM}
   アライメントデータを BAM フォーマットで登録することができます。BAM ファイルは [SAMtools](http://samtools.sourceforge.net/) と [picard](https://broadinstitute.github.io/picard/) で読み込める形式になっている必要があります。圧縮していない BAM ファイルをアップロードしてください。   
   Run の [File Type](#File_Type) には "bam" を選択します。
 
-2. #### リファレンスを INSDC/RefSeq アクセッション番号で指定 <a name="リファレンスを_INSDC/RefSeq_アクセッション番号で指定"></a>
+2. #### リファレンスを INSDC/RefSeq アクセッション番号で指定 {#リファレンスを_INSDC/RefSeq_アクセッション番号で指定}
   リファレンス配列が[リスト](/assets/files/ref/ref-file.txt)にある場合、アクセッション番号.バージョン番号 (例 NC_000001.11) でリファレンスを参照することができます。 [配列のバージョン番号](/ddbj/flat-file.html#Version)は必須です。リファレンスゲノム配列のアクセッション番号は[NCBI Assembly](https://www.ncbi.nlm.nih.gov/assembly/) で検索することができます。
 
-3. #### リファレンスをマルチ fasta で提供 <a name="リファレンスをマルチ_fasta_で提供"></a>
+3. #### リファレンスをマルチ fasta で提供 {#リファレンスをマルチ_fasta_で提供}
   リファレンス配列が[リスト](/assets/files/ref/ref-file.txt)にない場合、リファレンス配列をマルチ fasta ファイルで提供します。真核生物のオルガネラ配列等短い配列は番号指定に対応していないケースがあります。
   Run の [File Type](#File_Type) には "reference_fasta" を選択します。bam ヘッダーで定義されたリファレンスとマルチ fasta 中の配列は対応表を介して defline 中の配列名でリンクされます。 bam SQ 行 LN タグのリファレンス配列長とマルチ fasta 中の配列長が異なっている場合ワーニングになります。
 
-4. #### INSDC/RefSeq アクセッション番号とマルチ fasta が混在するケース <a name="INSDC/RefSeq_アクセッション番号とマルチ_fasta_が混在するケース"></a>
+4. #### INSDC/RefSeq アクセッション番号とマルチ fasta が混在するケース {#INSDC/RefSeq_アクセッション番号とマルチ_fasta_が混在するケース}
   一部のリファレンス配列が[リスト](/assets/files/ref/ref-file.txt)にある場合、アクセッション.バージョン番号 (例 NC_000001.11) で一部のリファレンスを指定し、残りのリファレンス配列はマルチ fasta ファイルで提供します。混在しているケースでは、対応表にアクセッション.バージョン番号とマルチ fasta 中の defline 中の配列名を記載します。
 
-5. #### SN-リファレンス配列の対応表 <a name="SN-リファレンス配列の対応表"></a>
+5. #### SN-リファレンス配列の対応表 {#SN-リファレンス配列の対応表}
   ご自分で独自に作成するファイルです。「BAM ファイルヘッダーの SQ 行中の SN 値」と「アクセッション番号 OR リファレンスマルチ fasta ファイル中の配列名」との対応関係をタブ区切りで記載します。 Run の [File Type](#File_Type) には "tab" を選択します。
 
   BAM ファイルヘッダー
@@ -681,7 +681,7 @@ fastq の形式。詳しくは[NCBI のサイト](https://www.ncbi.nlm.nih.gov/s
   - ベースコールと Quality value は '+' で始まる行で区切られている必要があります。
   - fastq ファイルは gzip もしくは bzip2 で圧縮してください。
 
-### 454  {#454} 
+### 454  {#r454} 
 
 454 からのシークエンスデータは sff ファイル か fastq/bam ファイルで登録します。
 
@@ -800,12 +800,12 @@ fastq/bam ファイルを登録します。
 
 ### 3. プロジェクトとサンプル情報を登録
 
-#### [BioProject (Study)](/bioproject//submission.html)  {#__________BioProject_Study________}
+#### [BioProject (Study)](/bioproject/submission.html)  {#BioProject_Study}
 
   - 研究プロジェクトの内容
   - 「なぜ」そのサンプルをシークエンスしたのか
 
-#### [BioSample (Sample)](/bioproject//submission.html) {#__________BioSample_Sample________}<img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> 
+#### [BioSample (Sample)](/bioproject/submission.html) <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#BioSample_Sample}
 
   - 生物学的、物理的にユニークなサンプル
   - 「何を」シークエンスしたのか
@@ -814,13 +814,13 @@ fastq/bam ファイルを登録します。
 
 ### 4. Experiment と Run を登録
 
-#### DRA Experiment <a name="DRA_Experiment"><img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">
+#### DRA Experiment <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#DRA_Experiment}
 
   - 特定のサンプルから構築したライブラリーについての説明
   - 「どのように」シークエンスをしたのか
   - 複数の Experiment は一つの Sample を参照できるが、逆はできない
 
-#### DRA Run  {#DRA_Run}<img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">
+#### DRA Run <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#DRA_Run}
 
   - Experiment と Run を投稿した後、データファイルの検証処理を開始
   - Run にリンクしている全てのデータファイルは 1 つの SRA ファイルにマージされます
@@ -896,8 +896,8 @@ DRA 登録のステータス一覧
 
 <span class="red">メタデータを作成する前に登録するシークエンスデータファイルをアップロードします。先にメタデータを作成する場合は適当なファイルをアップロードしてください。</span>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">ターミナルによるシークエンスデータの転送 (Linux/Mac OS X)</a></h4>
 <div class="accordion-content">
 
@@ -908,10 +908,10 @@ $ scp -i private-key-for-auth &lt;Your Files&gt; &lt;D-way Login ID&gt;@ftp-priv
 ```
 
   - -i でアカウントに登録した認証用公開鍵とペアになる秘密鍵を指定します。
-  - <Your Files> 転送するファイル。例: file1 file2 (file1とfile2)、file*
+  - &lt;Your Files&gt; 転送するファイル。例: file1 file2 (file1とfile2)、file*
     (fileではじまる全てのファイル)
-  - <D-way Login ID> D-way の Login ID (例 test07)
-  - <DRA Submission ID> DRA 登録の Submission ID (例: test07-0018)
+  - &lt;D-way Login ID&gt; D-way の Login ID (例 test07)
+  - &lt;DRA Submission ID&gt; DRA 登録の Submission ID (例: test07-0018)
   - コマンドの例: scp -i private-key-for-auth strainA_1.fastq
 
 
@@ -949,8 +949,8 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 </div>
 </div>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">WinSCP によるシークエンスデータの転送 (Windows)</a></h4>
 <div class="accordion-content">
 
@@ -995,8 +995,8 @@ DRA への登録 ～データの転送 (Windows)～
 </div>
 </div>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Cyberduck によるシークエンスデータの転送 (Mac OS X)</a></h4>
 <div class="accordion-content">
 
