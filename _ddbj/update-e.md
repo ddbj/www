@@ -103,7 +103,7 @@ related_pages:
 
 See [Categories for Sequence Data](/documents/data-categories-e.html).
 
-### DRA: DDBJ Sequece Read Archive, BioProject or BioSample
+### DRA: DDBJ Sequece Read Archive, BioProject or BioSample  {#dra_etc}
 
 <table>
   	<tbody>
@@ -120,7 +120,7 @@ See [Categories for Sequence Data](/documents/data-categories-e.html).
   	</tbody> 
 </table>
 
-### Narrowly-defined DDBJ, as a counterpart of GenBank and EMBL-Bank
+### Narrowly-defined DDBJ, as a counterpart of GenBank and EMBL-Bank  {#ddbj}
 
 Making requests  
 : We only accept updating requests from [the original submitter](/ddbj/submission.html#submitter) of the entry.<br> 

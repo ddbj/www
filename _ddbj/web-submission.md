@@ -132,40 +132,23 @@ Web 版塩基配列登録システム（DDBJ Nucleotide Sequence Submission Syst
 
 ### 入力ガイド
 
-<div class="nsss-menu">
-
-<div class="nsss-icon">
-
-[![](/assets/images/parts/pdf_icon.svg)](/assets/files/pdf/ddbj/websubHelp_full-j.pdf)
-
-[マニュアル](/assets/files/pdf/ddbj/websubHelp_full-j.pdf)
-
-</div>
-
-<div class="nsss-icon">
-
-[![](/assets/images/parts/youtube_icon.svg)](https://youtu.be/JTCV7bG_KJc)
-
-[NSSS の紹介](https://youtu.be/JTCV7bG_KJc)
-
-</div>
-
-<div class="nsss-icon">
-
-[![](/assets/images/parts/gdrive.svg)](https://drive.google.com/file/d/1KnEVC--SFglqdENRGLMehFP9NuQXyVrt)
-
-[NSSS の紹介](https://drive.google.com/file/d/1KnEVC--SFglqdENRGLMehFP9NuQXyVrt)
-
-</div>
-
-<div class="nsss-icon">
-
-[![](/assets/images/parts/info_icon.svg)](/ddbj/web-submission-help.html)
-
-[NSSS HELP](/ddbj/web-submission-help.html)
-
-</div>
-
+<div class="nsss_menu">
+  <div class="nsss_icon">
+<a href="/files/pdf/ddbj/websubHelp_full-j.pdf"><img src="/images/parts/pdf_icon.svg"></a>
+  <p><a href="/files/pdf/ddbj/websubHelp_full-j.pdf">マニュアル</a></p>
+  </div>
+  <div class="nsss_icon">
+<a href="https://youtu.be/JTCV7bG_KJc"><img src="/images/parts/youtube_icon.svg"></a>
+  <p><a href="https://youtu.be/JTCV7bG_KJc">NSSS の紹介</a></p>
+  </div>
+  <div class="nsss_icon">
+<a href="https://drive.google.com/file/d/1KnEVC--SFglqdENRGLMehFP9NuQXyVrt"><img src="/images/parts/gdrive.svg"></a>
+  <p><a href="https://drive.google.com/file/d/1KnEVC--SFglqdENRGLMehFP9NuQXyVrt">NSSS の紹介</a></p>
+  </div>
+  <div class="nsss_icon">
+<a href="/ddbj/websub-help.html"><img src="/images/parts/info_icon.svg"></a>
+  <p><a href="/ddbj/websub-help.html">NSSS HELP</a></p>
+  </div>
 </div>
 
 新規登録を開始する  
