@@ -19,7 +19,7 @@ related_pages:
 Bold are CIB-DDBJ members. Some of the publications in Japanese are
 excluded.
 
-## 2008  {#2008}
+## 2008  <a name="2008"></a>
 
   - Akihito, Fumihito A, Ikeda Y, Aizawa M, Makino T, Umehara Y, Kai Y,
     Nishimoto Y, Hasegawa M, Nakabo T, and **Gojobori T.** (2008)
@@ -196,7 +196,7 @@ excluded.
     annotation resource for human genes and transcripts. Nucleic Acids
     Res., 2008, 36 Database issue: D793-D799.
 
-## 2007  {#2007}
+## 2007  <a name="2007"></a>
 
   - Dobashi Y, Suzuki S, **Sugawara H**, Ooi A (2007) Involvement of
     epidermal growth factor receptor and downstream molecules in bone
@@ -365,7 +365,7 @@ excluded.
   - Yuge K, **Ikeo K** and **Gojobori T** (2007) Evolutionary origin of
     sex-related genes in the mouse brain. Gene 406(1-2), 108-112.
 
-## 2006  {#2006}
+## 2006  <a name="2006"></a>
 
   - **Abe T**, **Sugawara H**, Kanaya S, Ikemura T. Sequences from
     Almost All Prokaryotic, Eukaryotic, and Viral Genomes Available
@@ -519,7 +519,7 @@ excluded.
     functional and structural influence on proteins. Gene. 2006 Oct
     1;380(2):63-71.
 
-## 2005  {#2005}
+## 2005  <a name="2005"></a>
 
   - Chiusano ML, **Gojobori T**, Toraldo G. A C++ computational
     environment for biomolecular sequence management. Computational
@@ -650,7 +650,7 @@ excluded.
     region orthologous to the imprinted mammalian Ascl2/Mash2-Igf2-H19
     region. Genome Res. 2005 Jan;15(1):154-65.
 
-## 2004  {#2004}
+## 2004  <a name="2004"></a>
 
   - **Abe T**, Ikemura T, Kanaya S, Kinouchi M, **Sugawara H**. (2004)
     Novel genome informatics for unveiling hidden signatures in genome
@@ -812,7 +812,7 @@ excluded.
     Ascl2/Mash2-Igf2-H19 region. Genome Res. 15(1):154-65. Epub 2004 Dec
     08.
 
-## 2003  {#2003}
+## 2003  <a name="2003"></a>
 
   - Ando A, Kawata H, Shigenari A, Anzai T, Ota M, Katsuyama Y, Sada M,
     Goto R, Takeshima SN, Aida Y, Iwanaga T, Fujimura N,**Suzuki Y**,
@@ -943,7 +943,7 @@ excluded.
     and functional analysis of ascidian Mitf in vivo: insights into the
     origin of vertebrate pigment cells. Mech Dev. 120(12):1489-504.
 
-## 2002  {#2002}
+## 2002  <a name="2002"></a>
 
   - Akashi H and **Gojobori T**. (2002) Metabolic efficiency and amino
     acid composition in the proteomes of Escherichia coli and Bacillus
@@ -1082,7 +1082,7 @@ excluded.
     Helicobacter pylori in North and South America before Columbus. FEBS
     Letter. 517: 180-184.
 
-## 2001  {#2001}
+## 2001  <a name="2001"></a>
 
   - Bellgard M, Schibeci D, Trifonov E, **Gojobori T**. (2001) Early
     detection of G + C differences in bacterial species inferred from
@@ -1178,7 +1178,7 @@ excluded.
     groups of Taiwan. II. Serum protein systems. Anthropological
     Science. 109(4):257-73.
 
-## 2000  {#2000}
+## 2000  <a name="2000"></a>
 
   - Abola, E.E., Bairoch, A., Baker, W.C., Beck, S., Benson, D.A.,
     Berman, H., Cameron, G., Cantor, C., Doubet, S., Hubbbard, T.J.P,
@@ -1302,7 +1302,7 @@ excluded.
     gp120 envelope glycoprotein and prediction of new discontinuous
     epitopes. J.Virology. 74(9):4335-4350.
 
-## 1999  {#1999}
+## 1999  <a name="1999"></a>
 
   - Baba T., Shiina T., Ando A., **Imanishi T.**, Matsuno N., Skurai E.,
     Nagao T., Tanaka K., **Gojyobori T.** and Inoko H. (1999) Isolation
@@ -1513,7 +1513,7 @@ excluded.
     around the centromeric end of the HLA class I region: Large-scale
     sequence analysis. J. Mol. Evol. 48: 317-327.
 
-## 1998  {#1998}
+## 1998  <a name="1998"></a>
 
   - Horiuchi M., Yamaguchi Y., **Gojobori T.**, Mochizuki M., Nagasawa
     H., Toyoda Y., Ishiguro N. and Shinagawa M. (1998) Differences in
@@ -1612,7 +1612,7 @@ excluded.
   - Tsunoyama K. and **Gojobori T.** (1998) Evolution of nicotinic
     acetylcholine receptor subunits. Mol. Biol. Evol. 15: 518-527.
 
-## 1997  {#1997}
+## 1997  <a name="1997"></a>
 
   - Endo T., **Imanishi T., Gojobori T.** and Inoko H. (1997)
     Evolutionary significance of intra-genome duplications on human
@@ -1728,7 +1728,7 @@ excluded.
     population dynamics of the third variable envelope region of HIV
     within single hosts. Proc. Natl. Acad. Sci. U.S.A. 94: 1264-1269.
 
-## 1996  {#1996}
+## 1996  <a name="1996"></a>
 
   - Bannai M., Tokunaga K., **Imanishi T.**, Harihara S., Fujisawa K.,
     Juji T. and Omoto K. (1996) HLA class II alleles in Ainu living in

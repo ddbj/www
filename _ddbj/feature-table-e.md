@@ -112,7 +112,7 @@ EMBL-EBI, European Nucleotide Archive, Cambridge, UK.
 GenBank, NCBI, Bethesda, MD, USA.
 ```
 
-## 1 Introduction  {#1}
+## 1 Introduction  <a name="1"></a>
 
 ```
 Nucleic acid sequences provide the fundamental starting point for describing 
@@ -126,7 +126,7 @@ DDBJ in 1987) to devise a common feature table format and common standards for
 annotation practice. 
 ```
 
-## 2 Overview of the Feature Table format  {#2}
+## 2 Overview of the Feature Table format  <a name="2"></a>
 
 ```
 The overall goal of the feature table design is to provide an extensive 
@@ -251,7 +251,7 @@ corrections, and suggestions may be submitted to any of the database staffs.
 New format specifications will be added as needed. 
 </pre>
 
-## 3 Feature table components and format  {#3}
+## 3 Feature table components and format  <a name="3"></a>
 
 ### 3.1 Naming conventions  {#3.1}
 
@@ -596,7 +596,7 @@ join(1..100,J00194.1:100..202)
                             100..202 of remote entry J00194
 ```
 
-## 4 Feature table Format  {#4}
+## 4 Feature table Format  <a name="4"></a>
 
 ```
 The examples below show the preferred sequence annotations for a number of 
@@ -729,7 +729,7 @@ should be observed:
     equals sign (if one) by blanks 
 ```
 
-## 5 Examples of sequence annotation  {#5}
+## 5 Examples of sequence annotation  <a name="5"></a>
 
 ```
 The examples below show the preferred sequence annotations for a number of 
@@ -931,7 +931,7 @@ all cases but should be used as a guide whenever possible.
                 /<a href="#product">product</a>="transfer RNA-Leu(UUR)"
 </pre>
 
-## 6 Limitations of this feature table design  {#6}
+## 6 Limitations of this feature table design  <a name="6"></a>
 
 ```
 During the development of the feature table design numerous choices between 
@@ -942,7 +942,7 @@ guaranteed. However, to limit that level of complexity, certain limitations of
 the design syntax have been accepted. 
 ```
 
-## 7 Appendices  {#7}
+## 7 Appendices  <a name="7"></a>
 
 ### 7.1 Appendix I EMBL, GenBank and DDBJ entries  {#7.1}
 

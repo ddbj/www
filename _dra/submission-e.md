@@ -838,7 +838,7 @@ website](https://www.ncbi.nlm.nih.gov/books/NBK242622/#File_Format_Guide_BK.FAST
   - The Fastq files must be compressed using gzip or bzip2.
 
 
-### 454  {#454} 
+### 454  <a name="454"></a> 
 
 The DRA accepts sequencing run data from the 454 platform in the sff and
 fastq/bam format. These files should reflect the sequencing run setup.
