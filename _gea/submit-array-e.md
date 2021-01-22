@@ -65,7 +65,7 @@ lang: en
 
   - A description of the reseach effort.
 
-#### [BioSample](/biosample/submission-e.html)  {#_BioSample}<img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> 
+#### [BioSample](/biosample/submission-e.html) <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">  {#BioSample}
 
   - A description of biologically or physically unique samples used to generate experimental data.
 
@@ -88,7 +88,7 @@ metadata can be submitted as a tab-delimited text file.
 
   - The [IDF (Investigation Description Format)](/gea/metadata-e.html#idf) file is used to give an overview of the experiment, including the experimental design, protocols and publication information.
 
-#### SDRF  {#SDRF}<img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">
+#### SDRF  <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#SDRF}
 
   - The [SDRF (Sample and Data Relationship Format)](/gea/metadata-e.html#sdrf) describes the sample characteristics and the relationship between samples, arrays, data files etc.
   - SDRF template is generated from selected BioProject and BioSample(s). Enter additional information.
@@ -110,7 +110,7 @@ If you select the dual-channel option in the IDF tab, it will expect that you pr
 
 If you have separate files for each channel, please [contact GEA team](/contact-ddbj-e.html).
 
-[« Close](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
 </div>
 </div>
 
@@ -122,7 +122,7 @@ If you have separate files for each channel, please [contact GEA team](/contact-
 Refer to [ArrayExpress Single-cell submission guide](https://www.ebi.ac.uk/arrayexpress/help/single-cell_submission_guide.html).
 Please [contact GEA team](/contact-ddbj-e.html) to upload any additional files for custom spike-ins or to facilitate data analysis.
 
-[« Close](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
 </div>
 </div>
 
@@ -133,7 +133,7 @@ Please [contact GEA team](/contact-ddbj-e.html) to upload any additional files f
 
 GEA will ask you for the technology and name of the array, and applies it to the whole submission. If you have used different types of technologies for the same set of samples, we ask you to create separate submissions. Please make sure that the submissions have distinct titles (even though they may belong to the same study), in order to avoid mistakes. If you have samples from more than one array design in your experiment, it is possible to submit only one experiment. If you wish to do this, please [contact GEA team](/contact-ddbj-e.html).
 
-[« Close](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
 </div>
 </div>
 

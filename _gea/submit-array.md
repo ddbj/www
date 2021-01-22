@@ -65,7 +65,7 @@ lang: ja
 
   - 研究プロジェクトの内容
 
-#### [BioSample](/biosample/submission.html) {#_BioSample}<img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">
+#### [BioSample](/biosample/submission.html) <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#BioSample}
 
   - 実験データを得るのに使われた生物学的、物理的にユニークなサンプル
 
@@ -89,7 +89,7 @@ lang: ja
   - [IDF(Investigation Description Format)](/gea/metadata.html#idf)
     ファイルで実験デザイン、プロトコールや文献情報といった実験全体を記述します
 
-#### SDRF  {#sdrf}<img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">
+#### SDRF <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#sdrf}
 
   - [SDRF(Sample and Data RelationshipFormat)](/gea/metadata.html#sdrf) ファイルでサンプル属性とサンプル、アレイ、データファイル間の関係性を記述します
   - 選択した BioProject と BioSample の内容から生成された SDRF テンプレートファイルに必要な情報を追加します
@@ -110,7 +110,7 @@ GEA 登録インターフェースは二つのサンプルが一つの生デー�
 
 各チャンネルに対応した別々のファイルを登録する場合は [GEA チームに連絡](/contact-ddbj.html)してください。
 
-[« 閉じる](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« 閉じる]</a>
 </div>
 </div>
 
@@ -121,7 +121,7 @@ GEA 登録インターフェースは二つのサンプルが一つの生デー�
 
 [ArrayExpress Single-cell submissionguide](https://www.ebi.ac.uk/arrayexpress/help/single-cell_submission_guide.html) を参照してください。 spike-in やデータ解析に必要な追加ファイルを登録する場合は [GEA チームに連絡](/contact-ddbj.html)してください。
 
-[« 閉じる](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« 閉じる]</a>
 </div>
 </div>
 
@@ -133,7 +133,7 @@ GEA 登録インターフェースは二つのサンプルが一つの生デー�
 GEA では一つの登録に異なる種類のテクノロジー（マイクロアレイとシークエンシング）を含めることはできないため登録を分ける必要があります。間違いを防ぐためそれぞれの登録には同じ研究に属していても明確に区別できるタイトルを付けてください。
 一つの登録に異なるアレイデザインを含めることは可能なので、このような場合は [GEA チームに連絡](/contact-ddbj.html)してください。
 
-[« 閉じる](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« 閉じる]</a>
 </div>
 </div>
 
@@ -171,7 +171,7 @@ DDBJ センターから登録者に問い合わせた後三か月以上回答が
 | Confidential     | 公開用ファイルの作成処理が完了し、非公開に保たれている状態 |
 | Public           | 公開されている状態                     |
 
-{::options parse_block_html="true"/}
+
 ### 生データと解析済みファイルのアップロード {#upload-data} 
 
 
