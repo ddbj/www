@@ -48,7 +48,7 @@ lang: ja
 
 ## Experiment (Spot, Platform)  {#Experiment}
 
-### 454 single reads  {#454_single}
+### 454 single reads  {#r454_single}
 
 #### リード
 
