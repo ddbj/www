@@ -59,7 +59,7 @@ and describe technical reads in the \<SPOT_DESCRIPTOR>.
 
 ## Experiment (Spot, Platform)  {#Experiment}
 
-### 454 single reads  {#454_single}
+### 454 single reads  {#r454_single}
 
 #### Read
 
