@@ -95,7 +95,7 @@ Experiment XML (SPOT_DESCRIPTOR)
 |---|
 | LS454    | 454 GS FLX Titanium |
 
-### 454 paired reads  {#454_paired}
+### 454 paired reads  <a name="454-paired"></a>
 
 #### リード
 

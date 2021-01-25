@@ -165,12 +165,9 @@ organism name from which your sequence has been obtained with no doubt
 AND the organism name has been already registered to taxonomy database,
 you can select the organism name existing in taxonomy database
 
-  - The name of "unidentified organism" or "novel species" should be
-    described as a tentative name
-  - Sequence similarity of a marker gene is not absolute benchmark in
-    phylogenetic relationship.
-  - Identical sequences does NOT mean that they are derived from same
-    species.
+- The name of "unidentified organism" or "novel species" should be described as a tentative name
+- Sequence similarity of a marker gene is not absolute benchmark in phylogenetic relationship.
+- Identical sequences does NOT mean that they are derived from same species.
 
 If the organism name that you submit is not in the database, the name
 should be newly registered to the taxonomy database through DDBJ.  
@@ -277,7 +274,7 @@ International Code of Nomenclature of Bacteria.
 
 Example
 
-  - Homo sapiens
+- Homo sapiens
 
 #### trinomial name  {#trinominal}
 
@@ -287,11 +284,11 @@ necessary.
 
 Examples
 
-  - Pan troglodytes troglodytes
-  - Zea mays subsp. mays
-  - Brassica oleracea var. alboglabra
-  - Oryza sativa Japonica Group
-  - Escherichia coli K-12
+- Pan troglodytes troglodytes
+- Zea mays subsp. mays
+- Brassica oleracea var. alboglabra
+- Oryza sativa Japonica Group
+- Escherichia coli K-12
 
 Also, the qualifier corresponding to
 [sub_species](/ddbj/qualifiers-e.html#sub_species),
@@ -324,7 +321,7 @@ For viruses, basically, we also accept scientific names, following [the Internat
 
 Example
 
-  - Influenza A virus
+- Influenza A virus
 
 The qualifiers corresponding to
 [collection_date](/ddbj/qualifiers-e.html#collection_date),
@@ -350,9 +347,9 @@ In cases of hybrids, the scientific names would be like as follows;
 
 Examples
 
-  - Rosa alba x Rosa corymbifera
-  - Malus x domestica
-  - Lilium hybrid division I
+- Rosa alba x Rosa corymbifera
+- Malus x domestica
+- Lilium hybrid division I
 
 #### not found in taxonomy database  {#novel}
 
@@ -361,14 +358,14 @@ any of following items during your sequence submission.
 
 Useful items for application of organism names to taxonomy database
 
-  - [taxonomic lineage](#lineage)
-  - [valid publication for species](#ref)
-  - [already issued accession number](#acc)
-  - [process of sampling and/or sequencing](#isolate)
+- [taxonomic lineage](#lineage)
+- [valid publication for species](#ref)
+- [already issued accession number](#acc)
+- [process of sampling and/or sequencing](#isolate)
 
 ### 2. In case of unidentified species names  {#unidentified} 
 
-#### 2-1. In case of species not to be identified  {#2-1._In_case_of_species_not_to_be_identified}
+#### 2-1. In case of species not to be identified  <a name="not-to-be-identified"></a>
 
 If the scientific name is unclear and/or unidentified, we adopt a
 tentative name for the organism. The tentative name is made up with the
@@ -384,8 +381,8 @@ Format
 
 Example
 
-  - Acetobacter sp.
-  - Acetobacteraceae bacterium
+- Acetobacter sp.
+- Acetobacteraceae bacterium
 
 The qualifiers corresponding to the lower rank such as
 [strain](/ddbj/qualifiers-e.html#strain),
@@ -424,8 +421,8 @@ Format
 
 Example
 
-  - Acetobacter sp. ITDI2.1
-  - Acetobacteraceae bacterium ITDI2.1
+- Acetobacter sp. ITDI2.1
+- Acetobacteraceae bacterium ITDI2.1
 
 Also, the qualifiers corresponding to the lower rank such as
 [strain](/ddbj/qualifiers-e.html#strain) etc. are required for the
@@ -440,10 +437,10 @@ any of following items during your sequence submission.
 
 Useful items for application of organism names to taxonomy database
 
-  - [taxonomic lineage](#lineage)
-  - [proposing name for novel species](/ddbj/organism-e.html#propose)
-  - [already issued accession number](#acc)
-  - [process of sampling and/or sequencing](#isolate)
+- [taxonomic lineage](#lineage)
+- [proposing name for novel species](/ddbj/organism-e.html#propose)
+- [already issued accession number](#acc)
+- [process of sampling and/or sequencing](#isolate)
 
 ### 3. Environmental samples  {#env} 
 
@@ -451,8 +448,7 @@ Environmental samples are sequences derived by direct molecular
 isolation from a bulk environmental DNA sample (by PCR, DGGE, or other
 anonymous methods) with no reliable identification of the source
 organism.  
-Though frequently confused, <span class="red">the term, 'environmental
-samples', does not mean "wild type".</span>  
+Though frequently confused, <span class="red">the term, 'environmental samples', does not mean "wild type".</span>  
 Please refer to [environmental samples](/ddbj/env-e.html) in detail.  
 <span class="red">Mixed culture derived from an environmental sample is also processed as a kind of environmental samples. </span>
 
@@ -469,9 +465,9 @@ Format
 
 Examples
 
-  - uncultured Acetobacter sp.
-  - uncultured alpha proteobacterium
-  - uncultured Bacillaceae bacterium
+- uncultured Acetobacter sp.
+- uncultured alpha proteobacterium
+- uncultured Bacillaceae bacterium
 
 In cases of environmental samples, the qualifier,
 [environmental_sample](/ddbj/qualifiers-e.html#environmental_sample),
@@ -492,8 +488,8 @@ any of following items during your sequence submission.
 
 Useful items for application of organism names to taxonomy database
 
-  - [taxonomic lineage](#lineage)
-  - [process of sampling and/or sequencing](#isolate)
+- [taxonomic lineage](#lineage)
+- [process of sampling and/or sequencing](#isolate)
 
 ### 4. Artificially constructed sequences  {#syn} 
 
@@ -504,8 +500,8 @@ organism name.
 
 Examples
 
-  - Cloning vector pAP3neo
-  - Expression vector pAMP
+- Cloning vector pAP3neo
+- Expression vector pAMP
 
 If the name is not available on taxonomy database
 ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en)), please tell us
@@ -513,7 +509,7 @@ any of following items during your sequence submission.
 
 Useful items for application of organism names to taxonomy database
 
-  - [expected usage](/ddbj/organism-e.html#usage)
+- [expected usage](/ddbj/organism-e.html#usage)
 
 ## Useful items for application of organism names to taxonomy database  {#items} 
 

@@ -145,9 +145,9 @@ DDBJでは、taxonomy database を検索するためのシステム
 
 このため、<span class="red">無理に既存の生物名を選択しないでください。</span>既存の生物名を選択して良いケースは、あくまで、配列の由来となる「生物名」の同定に問題がない状態であり、かつ、その「生物名」が taxonomy database に登録済である場合です。
 
-  - 未同定種・未記載種は仮称で記載します。
-  - マーカー遺伝子の塩基配列の類似度は、分類の絶対的指標では ありません。
-  - 配列が同一であること と サンプルが同種に由来すること は別の事象です。
+- 未同定種・未記載種は仮称で記載します。
+- マーカー遺伝子の塩基配列の類似度は、分類の絶対的指標では ありません。
+- 配列が同一であること と サンプルが同種に由来すること は別の事象です。
 
 taxonomy database に登録されていない「生物名」の場合は、塩基配列の登録の際に、その由来生物名を DDBJ から taxonomy database に登録申請いたします。  
 このときtaxonomy database に登録された「生物名」は塩基配列が公開された際に、公開されます。  
@@ -173,7 +173,7 @@ a. 人工的に構築した配列
 : Category は "Artificially constructed or synthesized sequence" となりますので、メニューから選択してください。<br>[4. 人工的に構築した配列](#syn) を ご参照の上、生物名 (scientific name) を記載してください。
 
 b. ウイルス  
-: 画面上で生物名検索を行います。結果一覧から該当するウイルス名を選択します。選択した生物名が scientific name 入力ボックスに反映されます。<br>病原性ウイルスの場合には Category で "Pathogenic virus" を選択してください。<br>strain、serotype、collection\_date (採取した年月日)、country (採取した地名)、host などを各 qualifier に記載してください。
+: 画面上で生物名検索を行います。結果一覧から該当するウイルス名を選択します。選択した生物名が scientific name 入力ボックスに反映されます。<br>病原性ウイルスの場合には Category で "Pathogenic virus" を選択してください。<br>strain、serotype、collection_date (採取した年月日)、country (採取した地名)、host などを各 qualifier に記載してください。
 
 c. 三名法などで記載する場合  
 : Category は "Valid subspecies or variety not registered in taxonomy database" となりますので、メニューから選択してください。<br>下記、生物名記載の各論より、[三名法](#trinominal)について ご参照の上、scientific name 入力ボックスには subspecies、variety または、それに準ずる strain などを含めて生物名を記載してください。
@@ -198,14 +198,14 @@ h. taxonomy database に未登録で、学名が確立している場合
 一部、特殊な例外もありますが、DDBJ への登録の際における「生物名」記載についての考え方を以下に挙げています。  
 塩基配列データの登録に際して taxonomy database への登録申請が必要な際は、[各参考情報](#items) もお知らせください。
 
-### 1\. 種が同定されている場合 {#species} 
+### 1. 種が同定されている場合 {#species} 
 
 「生物名」の登録は属・種の名称を用いた二名法による種の学名 (以下、種名)を原則としております。  
 種名は、動物、植物、細菌の各国際命名規約に従って記載されるべきです。
 
 例
 
-  - Homo sapiens
+- Homo sapiens
 
 #### 三名法 {#trinominal}
 
@@ -213,13 +213,13 @@ h. taxonomy database に未登録で、学名が確立している場合
 
 例
 
-  - Pan troglodytes troglodytes
-  - Zea mays subsp. mays
-  - Oryza sativa Japonica Group
-  - Brassica oleracea var. alboglabra
-  - Escherichia coli K-12
+- Pan troglodytes troglodytes
+- Zea mays subsp. mays
+- Oryza sativa Japonica Group
+- Brassica oleracea var. alboglabra
+- Escherichia coli K-12
 
-また、このとき [sub\_species](/ddbj/qualifiers.html#sub_species), [variety](/ddbj/qualifiers.html#variety), [serotype](/ddbj/qualifiers.html#serotype), [strain](/ddbj/qualifiers.html#strain) の該当 qualifier をあわせて source
+また、このとき [sub_species](/ddbj/qualifiers.html#sub_species), [variety](/ddbj/qualifiers.html#variety), [serotype](/ddbj/qualifiers.html#serotype), [strain](/ddbj/qualifiers.html#strain) の該当 qualifier をあわせて source
 feature に記載します。
 
 <pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Pan troglodytes troglodytes"
@@ -243,9 +243,9 @@ strain 名は [strain](/ddbj/qualifiers.html#strain) qualifier に記載して�
 
 例
 
-  - Influenza A virus
+- Influenza A virus
 
-下記の例のように [collection\_date](/ddbj/qualifiers.html#collection_date) (採取した年月日)、[country](/ddbj/qualifiers.html#country) (採取した地名)、[host](/ddbj/qualifiers.html#host)、[strain](/ddbj/qualifiers.html#strain)、[serotype](/ddbj/qualifiers.html#serotype) などの該当 qualifier をあわせて source feature に記載します。
+下記の例のように [collection_date](/ddbj/qualifiers.html#collection_date) (採取した年月日)、[country](/ddbj/qualifiers.html#country) (採取した地名)、[host](/ddbj/qualifiers.html#host)、[strain](/ddbj/qualifiers.html#strain)、[serotype](/ddbj/qualifiers.html#serotype) などの該当 qualifier をあわせて source feature に記載します。
 
 <pre><code>                  /<a href="/ddbj/qualifiers.html#country">country</a>="Japan:Tokyo"
                    /<a href="/ddbj/qualifiers.html#collection_date">collection_date</a>="2007-11-01"
@@ -262,9 +262,9 @@ strain 名は [strain](/ddbj/qualifiers.html#strain) qualifier に記載して�
 
 例
 
-  - Rosa alba x Rosa corymbifera
-  - Malus x domestica
-  - Lilium hybrid division I
+- Rosa alba x Rosa corymbifera
+- Malus x domestica
+- Lilium hybrid division I
 
 #### database で見つからない場合  {#novel}
 
@@ -272,14 +272,14 @@ taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から�
 
 taxonomy database 登録申請のための参考情報
 
-  - [推定可能な範囲の lineage](#lineage)
-  - [種を記載した論文](#ref)
-  - [以前に登録した配列のアクセッション番号](#acc)
-  - [サンプル、または、配列を得た方法の概略](#isolate)
+- [推定可能な範囲の lineage](#lineage)
+- [種を記載した論文](#ref)
+- [以前に登録した配列のアクセッション番号](#acc)
+- [サンプル、または、配列を得た方法の概略](#isolate)
 
-### 2\. 種が同定されていない場合 {#unidentified} 
+### 2. 種が同定されていない場合 {#unidentified} 
 
-#### 2-1. 種を同定しない場合  {#2-1._種を同定しない場合}
+#### 2-1. 種を同定しない場合  <a name="not-to-be-identified"></a>
 
 種同定を伴わない研究の場合、判明している範囲の lineage、多くの場合、属名を用いて、"\<属名\> sp."などとして記載します。
 
@@ -292,8 +292,8 @@ taxonomy database 登録申請のための参考情報
 
 例
 
-  - Acetobacter sp.
-  - Acetobacteraceae bacterium
+- Acetobacter sp.
+- Acetobacteraceae bacterium
 
 登録の際には、「生物名」に含めた下位の rank、[strain](/ddbj/qualifiers.html#strain), [isolate](/ddbj/qualifiers.html#isolate)などに該当する qualifier をあわせて source feature に記載します。
 
@@ -322,8 +322,8 @@ taxonomy database 登録申請のための参考情報
 
 例
 
-  - Acetobacter sp. ITDI2.1
-  - Acetobacteraceae bacterium ITDI2.1
+- Acetobacter sp. ITDI2.1
+- Acetobacteraceae bacterium ITDI2.1
 
 登録の際には、「生物名」に含めた下位の rank、[strain](/ddbj/qualifiers.html#strain)などに該当する
 qualifier をあわせて source feature に記載します。
@@ -335,12 +335,12 @@ taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から�
 
 taxonomy database 登録申請のための参考情報
 
-  - [推定可能な範囲の lineage](#lineage)
-  - [提唱中の新種学名](#propose)
-  - [以前に登録した配列のアクセッション番号](#acc)
-  - [サンプル、または、配列を得た方法の概略](#isolate)
+- [推定可能な範囲の lineage](#lineage)
+- [提唱中の新種学名](#propose)
+- [以前に登録した配列のアクセッション番号](#acc)
+- [サンプル、または、配列を得た方法の概略](#isolate)
 
-### 3\. 環境サンプル {#env}
+### 3. 環境サンプル {#env}
 
 環境サンプル (environmental sample) とは、PCR、DGGE、あるいは、その他の方法で直接、分子を単離した環境上のサンプルに由来する配列です。  
 よく混同されますが、<span class="red">環境サンプルとは「野生型」という意味ではありません。</span>  
@@ -358,11 +358,11 @@ taxonomy database 登録申請のための参考情報
 
 例
 
-  - uncultured Acetobacter sp.
-  - uncultured alpha proteobacterium
-  - uncultured Bacillaceae bacterium
+- uncultured Acetobacter sp.
+- uncultured alpha proteobacterium
+- uncultured Bacillaceae bacterium
 
-環境サンプルの場合、必須な[environmental\_sample](/ddbj/qualifiers.html#environmental_sample) qualifier、および、[isolation\_source](/ddbj/qualifiers.html#isolation_source) qualifier などでサンプリングの過程・状態などをあわせて source feature に記載します。
+環境サンプルの場合、必須な[environmental_sample](/ddbj/qualifiers.html#environmental_sample) qualifier、および、[isolation_source](/ddbj/qualifiers.html#isolation_source) qualifier などでサンプリングの過程・状態などをあわせて source feature に記載します。
 
 <pre><code>                    /<a href="/ddbj/qualifiers.html#clone">clone</a>="4-11"
                      /<a href="/ddbj/qualifiers.html#environmental_sample">environmental_sample</a>
@@ -374,23 +374,23 @@ taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から�
 
 taxonomy database 登録申請のための参考情報
 
-  - [推定可能な範囲の lineage](#lineage)
-  - [サンプル、または、配列を得た方法の概略](#isolate)
+- [推定可能な範囲の lineage](#lineage)
+- [サンプル、または、配列を得た方法の概略](#isolate)
 
-### 4\. 人工的に構築した配列 {#syn} 
+### 4. 人工的に構築した配列 {#syn} 
 
 "synthetic construct"、または、"eukaryotic synthetic construct" とのみ一律に記載する場合と vector などの名称を以下のように そのまま記載する場合があります。
 
 例
 
-  - Cloning vector pAP3neo
-  - Expression vector pAMP
+- Cloning vector pAP3neo
+- Expression vector pAMP
 
 taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から検索不能な場合、登録時に以下の参考情報を可能な範囲でお知らせください。
 
 taxonomy database 登録申請のための参考情報
 
-  - [想定される用法など](#usage)
+- [想定される用法など](#usage)
 
 ## taxonomy database 登録申請のための参考情報 {#items} 
 

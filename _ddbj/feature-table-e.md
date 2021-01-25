@@ -144,7 +144,7 @@ The range of features to be represented is diverse, including regions which:
 * exhibit variation, or have been revised or corrected.
 ```
 
-### 2.1 Format Design  {#2.1}
+### 2.1 Format Design  <a name="2-1"></a>
 
 ```
 The format design is based on a tabular approach and consists of the following 
@@ -155,7 +155,7 @@ Location - instructions for finding the feature
 Qualifiers - auxiliary information about a feature 
 ```
 
-### 2.2 Key aspects of this feature table design  {#2.2}
+### 2.2 Key aspects of this feature table design  <a name="2-2"></a>
 
 ```
 * Feature keys allow specific annotation of important sequence features.
@@ -201,7 +201,7 @@ A consistent syntax allows machine extraction and manipulation of sequences
 coding for all features in the table.
 ```
 
-### 2.3 Feature Table Terminology  {#2.3}
+### 2.3 Feature Table Terminology  <a name="2-3"></a>
 
 <pre>The format and wording in the feature table use common biological research 
 terminology whenever possible. For example, an item in the feature table such as: 
@@ -253,7 +253,7 @@ New format specifications will be added as needed.
 
 ## 3 Feature table components and format  <a name="3"></a>
 
-### 3.1 Naming conventions  {#3.1}
+### 3.1 Naming conventions  <a name="3-1"></a>
 
 ```
 Feature table components, including feature keys, qualifiers, accession 
@@ -271,9 +271,9 @@ occur in feature table component names:
 * Asterisk (*) 
 ```
 
-### 3.2 Feature keys  {#3.2}
+### 3.2 Feature keys  <a name="3-2"></a>
 
-#### 3.2.1 Purpose  {#3.2.1}
+#### 3.2.1 Purpose  <a name="3-2-1"></a>
 
 ```
 Feature keys indicate 
@@ -283,14 +283,14 @@ The feature key permits a user to quickly find or retrieve similar features or
 features with related functions. 
 ```
 
-#### 3.2.2 Format and conventions  {#3.2.2}
+#### 3.2.2 Format and conventions  <a name="3-2-2"></a>
 
 ```
 There is a defined list of allowable feature keys, which is shown in Appendix 
 II. Each feature must contain a feature key. 
 ```
 
-#### 3.2.3 Key groups and hierarchy  {#3.2.3}
+#### 3.2.3 Key groups and hierarchy  <a name="3-2-3"></a>
 
 <pre>The feature keys fall into families which are in some sense similar in 
 function and which are annotated in a similar manner. A functional family may 
@@ -337,7 +337,7 @@ information:
 <a href="#misc_structure">misc_structure</a>  location
 </pre>
 
-#### 3.2.4 Feature key examples  {#3.2.4}
+#### 3.2.4 Feature key examples  <a name="3-2-4"></a>
 
 <pre>Key                     Description     
 
@@ -349,16 +349,16 @@ information:
 See Appendix II for descriptions of all feature keys. 
 </pre>
 
-### 3.3 Qualifiers  {#3.3}
+### 3.3 Qualifiers  <a name="3-3"></a>
 
-#### 3.3.1 Purpose  {#3.3.1}
+#### 3.3.1 Purpose  <a name="3-3-1"></a>
 
 ```
 Qualifiers provide a general mechanism for supplying information about 
 features in addition to that conveyed by the key and location. 
 ```
 
-#### 3.3.2 Format and conventions  {#3.3.2}
+#### 3.3.2 Format and conventions  <a name="3-3-2"></a>
 
 <pre>Qualifiers take the form of a slash (/) followed by the qualifier name and, if 
 applicable, an equal sign (=) and a value. Each qualifier should have a single 
@@ -377,7 +377,7 @@ immediately after the location. Any necessary continuation lines begin in the
 same column. See Section 4 for a complete description of data item positions. 
 </pre>
 
-#### 3.3.3 Qualifier values  {#3.3.3}
+#### 3.3.3 Qualifier values  <a name="3-3-3"></a>
 
 ```
 Since qualifiers convey many different types of information, there are several value formats: 
@@ -433,7 +433,7 @@ location descriptors has become illegal starting from implementation of
 version 2.1 of the Feature Table Definition Document (December 15, 1998) 
 ```
 
-#### 3.3.4 Qualifier examples  {#3.3.4}
+#### 3.3.4 Qualifier examples  <a name="3-3-4"></a>
 
 <pre>Key             Location/Qualifiers
 
@@ -452,16 +452,16 @@ version 2.1 of the Feature Table Definition Document (December 15, 1998)
                 /<a href="#function">function</a>="cell division control"
 </pre>
 
-### 3.4 Location  {#3.4}
+### 3.4 Location  <a name="3-4"></a>
 
-#### 3.4.1 Purpose  {#3.4.1}
+#### 3.4.1 Purpose  <a name="3-4-1"></a>
 
 ```
 The location indicates the region of the presented sequence which corresponds 
 to a feature. 
 ```
 
-#### 3.4.2 Format and conventions  {#3.4.2}
+#### 3.4.2 Format and conventions  <a name="3-4-2"></a>
 
 ``` 
 The location contains at least one sequence location descriptor and may 
@@ -542,7 +542,7 @@ join" or "order" within the same location; combinations of "join" and "order"
 within the same location (nested operators) are illegal.
 ```
 
-#### 3.4.3 Location examples  {#3.4.3}
+#### 3.4.3 Location examples  <a name="3-4-3"></a>
 
 ```
 The following is a list of common location descriptors with their meanings: 
@@ -606,7 +606,7 @@ describes the columnar format used to write this feature table in "flat-file"
 form for distributions of the database. 
 ```
 
-### 4.1 Format examples  {#4.1}
+### 4.1 Format examples  <a name="4-1"></a>
 
 ```
 Feature table format example (EMBL):
@@ -668,7 +668,7 @@ Feature table format example (DDBJ):
 1       10        20        30        40        50        60        70       79
 </pre>
 
-### 4.2 Definition of line types  {#4.2}
+### 4.2 Definition of line types  <a name="4-2"></a>
 
 ```
 The feature table consists of a header line, which contains the column titles 
@@ -695,7 +695,7 @@ Thus, there are 4 types of feature table lines:
                            qualifier continuation
 ```
 
-### 4.3 Data item positions  {#4.3}
+### 4.3 Data item positions  <a name="4-3"></a>
 
 ```
 The position of the data items within the feature descriptor line is as follows: 
@@ -716,7 +716,7 @@ the GenBank / DDBJ formats that it includes a line type abbreviation in
 columns 1 and 2. 
 ```
 
-### 4.4 Use of blanks  {#4.4}
+### 4.4 Use of blanks  <a name="4-4"></a>
 
 ```
 Blanks (spaces) may, in general, be used within the feature location and 
@@ -737,7 +737,7 @@ commonly occurring sequence types. These examples may not be appropriate in
 all cases but should be used as a guide whenever possible.
 ```
 
-### 5.1 Eukaryotic gene  {#5.1}
+### 5.1 Eukaryotic gene  <a name="5-1"></a>
 
 <pre><a href="#source">source</a>          1..1509
                 /<a href="#organism">organism</a>="Mus musculus"
@@ -769,7 +769,7 @@ all cases but should be used as a guide whenever possible.
                 /<a href="#regulatory_class">regulatory_class</a>="polyA_signal_sequence"
 </pre>
 
-### 5.2 Bacterial operon  {#5.2}
+### 5.2 Bacterial operon  <a name="5-2"></a>
 
 <pre><a href="#source">source</a>          1..9430
                 /<a href="#organism">organism</a>="Lactococcus sp."
@@ -803,7 +803,7 @@ all cases but should be used as a guide whenever possible.
                 /<a href="#q_operon">operon</a>="gal"
 </pre>
 
-### 5.3 Artificial cloning vector (circular)  {#5.3}
+### 5.3 Artificial cloning vector (circular)  <a name="5-3"></a>
 
 <pre><a href="#source">source</a>          1..5300
                 /<a href="#organism">organism</a>="Cloning vector pABC"
@@ -839,7 +839,7 @@ all cases but should be used as a guide whenever possible.
                 /<a href="#product">product</a>="green fluorescent protein" 
 </pre>
 
-### 5.4 Plasmid  {#5.4}
+### 5.4 Plasmid  <a name="5-4"></a>
 
 <pre><a href="#source">source</a>          1..2245
                 /<a href="#organism">organism</a>="Escherichia coli"
@@ -863,7 +863,7 @@ all cases but should be used as a guide whenever possible.
                 /<a href="#product">product</a>="fertility inhibition protein P"
 </pre>
 
-### 5.5 Repeat element  {#5.5}
+### 5.5 Repeat element  <a name="5-5"></a>
 
 <pre><a href="#source">source</a>          1..1011
                 /<a href="#organism">organism</a>="Homo sapiens"
@@ -874,7 +874,7 @@ all cases but should be used as a guide whenever possible.
                 /<a href="#rpt_family">rpt_family</a>="Alu-J"
 </pre>
 
-### 5.6 Immunoglobulin heavy chain  {#5.6}
+### 5.6 Immunoglobulin heavy chain  <a name="5-6"></a>
 
 <pre><a href="#source">source</a>          1..321
                 /<a href="#organism">organism</a>="Mus musculus "
@@ -891,7 +891,7 @@ all cases but should be used as a guide whenever possible.
                 /<a href="#product">product</a>="immunoglobulin heavy chain variable region" 
 </pre>
 
-### 5.7 T-cell receptor  {#5.7}
+### 5.7 T-cell receptor  <a name="5-7"></a>
 
 <pre><a href="#source">source</a>          1..402
                 /<a href="#organism">organism</a>="Homo sapiens"
@@ -916,7 +916,7 @@ all cases but should be used as a guide whenever possible.
                 /<a href="#q_gene">gene</a>="TCR1A" 
 </pre>
 
-### 5.8 Transfer RNA  {#5.8}
+### 5.8 Transfer RNA  <a name="5-8"></a>
 
 <pre><a href="#source">source</a>          1..2345
                 /<a href="#organism">organism</a>="Yersinia sp."
@@ -944,9 +944,9 @@ the design syntax have been accepted.
 
 ## 7 Appendices  <a name="7"></a>
 
-### 7.1 Appendix I EMBL, GenBank and DDBJ entries  {#7.1}
+### 7.1 Appendix I EMBL, GenBank and DDBJ entries  <a name="7-1"></a>
 
-#### 7.1.1 EMBL Format  {#7.1.1}
+#### 7.1.1 EMBL Format  <a name="7-1-1"></a>
 
 <pre>ID   X64011; SV 1; linear; genomic DNA; STD; PRO; 756 BP.
 XX   
@@ -1015,7 +1015,7 @@ SQ   Sequence 756 BP; 247 A; 136 C; 151 G; 222 T; 0 other;
 //
 </pre>
 
-#### 7.1.2 GenBank Format  {#7.1.2}
+#### 7.1.2 GenBank Format  <a name="7-1-2"></a>
 
 <pre>LOCUS       LISOD                    756 bp    DNA     linear   BCT 30-JUN-1993
 DEFINITION  Listeria ivanovii sod gene for superoxide dismutase.
@@ -1072,7 +1072,7 @@ ORIGIN
 //
 </pre>
 
-#### 7.1.3 DDBJ Format  {#7.1.3}
+#### 7.1.3 DDBJ Format  <a name="7-1-3"></a>
 
 <pre>LOCUS       LISOD                    756 bp    DNA     linear   BCT 30-JUN-1993
 DEFINITION  Listeria ivanovii sod gene for superoxide dismutase.
@@ -1130,7 +1130,7 @@ ORIGIN
 // 
 </pre>
 
-### 7.2 Appendix II: Feature keys reference  {#7.2}
+### 7.2 Appendix II: Feature keys reference  <a name="7-2"></a>
 
 ```
 The following has been organized according to the following format: 
@@ -2704,9 +2704,9 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
 
 -----
 
-### 7.3 Appendix III: Summary of qualifiers for feature keys  {#7.3}
+### 7.3 Appendix III: Summary of qualifiers for feature keys  <a name="7-3"></a>
 
-#### 7.3.1 Qualifier List  {#7.3.1}
+#### 7.3.1 Qualifier List  <a name="7-3-1"></a>
 
 ```
 The following is a list of available qualifiers for feature keys and their usage. 
@@ -4345,7 +4345,7 @@ Comment         use the cultivar qualifier for cultivated plant
                 annotated via /<a href="#note">note</a>, e.g. /<a href="#note">note</a>="breed:Cukorova"
 </pre>
 
-### 7.4 Appendix IV: Controlled vocabularies  {#7.4}
+### 7.4 Appendix IV: Controlled vocabularies  <a name="7-4"></a>
 
 ```
 This appendix contains information on the restricted vocabulary fields used in 
@@ -4371,7 +4371,7 @@ fields:
 - Country Names
 ```
 
-#### 7.4.1 Nucleotide base codes (IUPAC)  {#7.4.1}
+#### 7.4.1 Nucleotide base codes (IUPAC)  <a name="7-4-1"></a>
 
 ```
 Authority       Nomenclature Committee of the International Union of 
@@ -4402,7 +4402,7 @@ Listing
         n       a or c or g or t
 ```
 
-#### 7.4.2 Modified base abbreviations  {#7.4.2}
+#### 7.4.2 Modified base abbreviations  <a name="7-4-2"></a>
 
 <pre>Authority       Sprinzl, M. and Gauss, D.H.
 Reference       Sprinzl, M. and Gauss, D.H.  Nucl Acid Res  10, r1 (1982).
@@ -4464,7 +4464,7 @@ Scope           /<a href="#mod_base">mod_base</a>
         OTHER           (requires /note= qualifier)
 </pre>
 
-#### 7.4.3 Amino acid abbreviations  {#7.4.3}
+#### 7.4.3 Amino acid abbreviations  <a name="7-4-3"></a>
 
 <pre>Authority       IUPAC-IUB Joint Commission on Biochemical Nomenclature.
 Reference       IUPAC-IUB Joint Commission on Biochemical Nomenclature.
@@ -4509,7 +4509,7 @@ Listing (note that the abbreviations are legal values for amino acids, not the f
         TERM            termination codon
 </pre>
 
-#### 7.4.4 Modified and unusual Amino Acids  {#7.4.4}
+#### 7.4.4 Modified and unusual Amino Acids  <a name="7-4-4"></a>
 
 ``` 
         Abbreviation    Amino acid
@@ -4547,7 +4547,7 @@ Listing (note that the abbreviations are legal values for amino acids, not the f
         OTHER           (requires /note=)
 ```
 
-#### 7.4.5 Genetic Code Tables  {#7.4.5}
+#### 7.4.5 Genetic Code Tables  <a name="7-4-5"></a>
 
 <pre>Authority      International Nucleotide Sequence Database Collaboration
 Contact        NCBI
@@ -4556,7 +4556,7 @@ URL            <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi
 URL            <a href="http://www.insdc.org/genetic-code-tables">http://www.insdc.org/genetic-code-tables</a>
 </pre>
 
-#### 7.4.6 Country Names  {#7.4.6}
+#### 7.4.6 Country Names  <a name="7-4-6"></a>
 
 <pre>Authority       International Nucleotide Sequence Database Collaboration
 Contact         INSDC member databases
@@ -4565,7 +4565,7 @@ URL             <a href="http://www.insdc.org/country">http://www.insdc.org/coun
 
 </pre>
 
-#### 7.4.7 Announces  {#7.4.7}
+#### 7.4.7 Announces  <a name="7-4-7"></a>
 
 <pre>Additional controlled vocabulary terms for qualifier values might be added
 outside of the cycle of the Feature Table document release. See also <a href="http://www.insdc.org">www.insdc.org</a>
