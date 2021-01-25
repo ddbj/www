@@ -164,9 +164,8 @@ jar/license.txt   transChecker.sh*
     </table>
 </li>
 <li>Change the file jParser.sh according to your system environment.<br>
-    <pre>
-      <code>
 
+<pre><code>
 #!/bin/sh
 
 # Installed directory
@@ -183,8 +182,7 @@ RETVAL=$?
 
 exit $RETVAL
 #EOF
-      </code>
-    </pre>
+</code></pre>
   <dl>
     <dt>[TRANS_DIR parameter]</dt>
     <dd>Enter the full path name of jParser directory.</dd>

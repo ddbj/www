@@ -165,9 +165,9 @@ jar/license.txt   transChecker.sh*
     </table>
 </li>
 <li>ファイルの編集<br>
-    transChecker.sh を実行する前にファイルの中身を、インストールしたコンピュータの環境にあわせるために変更する必要があります。vi などのエディタで編集して下さい。
-    <pre>
-      <code>
+    transChecker.sh を実行する前にファイルの中身を、インストールしたコンピュータの環境にあわせるために変更する必要があります。vi などのエディタで編集して下さい。<br>
+
+<pre><code>
 #!/bin/sh
 
 # Installed directory
@@ -184,8 +184,7 @@ RETVAL=$?
 
 exit $RETVAL
 #EOF
-      </code>
-    </pre>
+</code></pre>
 
   <dl>
     <dt>[TRANS_DIR 変数]</dt>
