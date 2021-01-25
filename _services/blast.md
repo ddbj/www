@@ -51,7 +51,7 @@ DDBJ では，Web版 BLAST の他に，以下の方法でも BLAST サービス�
 |  blastp  |  アミノ酸配列  |  アミノ酸配列  |  あなたのアミノ酸配列をアミノ酸配列データベースと比較します。  |
 |  blastx  |  塩基配列  |  アミノ酸配列  |  あなたの塩基配列を表裏合わせて６通りの読み枠で翻訳しながら，アミノ酸配列データベースと比較します。  |
 
-## Query：検索配列名，検索配列データ {#query} 
+## Query：検索配列名，検索配列データ  {#query} 
 
 * FASTA 形式で検索配列を入力して下さい。
 * データを直接テキストボックスに入力するか，データを格納したファイルを指定（ファイルアップロード機能）します。
@@ -84,8 +84,6 @@ TTTGCCCACGGACACAACTGCCATATCGCCTTACGGGAGATCATCGAAACTCTGAACAGC
 CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 ```
 
-
-
 <div class="attention" markdown="1">
 配列サイズが巨大な場合，配列数が多い場合などは，以下のような理由で結果を正常に取得出来ない場合があります。  
 そのような場合は，配列数を少なくするか配列を短くする等して再度お試し下さい。
@@ -98,7 +96,7 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 
 ## Data Sets  {#data sets}
 
-### 塩基配列（データベース，DIVISION） {#nucleotide} 
+### 塩基配列（データベース，DIVISION）  {#nucleotide} 
 
 #### データベース  {#データベース}
 
@@ -170,7 +168,7 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 
 <span class="red">*</span>特許データの利用に際しては，[特許データ利用に関する注意]({{site.baseurl}}/ddbj/patent-data.html)をご参照ください。
 
-#### データベースオプション（RefSeq）  {#データベースオプション（RefSeq）}
+#### データベースオプション（RefSeq）  {#データベースオプション_RefSeq}
 
 |  定期リリース（genomic/RNA) |    |
 |---|
