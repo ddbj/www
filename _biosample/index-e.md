@@ -32,8 +32,8 @@ tab_menu:
     children:
       - title: XML Schema
         url: https://github.com/ddbj/pub/tree/master/docs/biosample/xsd
-  - id: about bioProject
-    title: About BioProject
+  - id: about biosample
+    title: About BioSample
     url: /biosample/about-biosample-e.html
 panels:
 - title: How to submit
