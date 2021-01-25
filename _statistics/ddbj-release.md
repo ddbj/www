@@ -4,13 +4,6 @@ lang: ja
 title: DDBJ 定期リリース統計
 category: statistics
 lang: ja
-related_pages:
-  - title: DB の out/in 統計量
-    url: ./index.html
-  - title: リリースノート (DDBJ, 16S rRNA, DAD)
-    url: ./ddbj-releases
-  - title: 最新リリースの情報
-    url: ./latest-releases
 addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script><script type='text/javascript' src='/assets/js/jquery.charts.js'></script>
 ---
 

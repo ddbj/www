@@ -4,13 +4,6 @@ lang: en
 title: DDBJ Periodic Release Statistics
 category: statistics
 lang: en
-related_pages:
-  - title: DB out/in statistics
-    url: ./index-e.html
-  - title: Release Notes of DDBJ Releases
-    url: ./ddbj-releases-e
-  - title: Latest Release Information
-    url: ./latest-releases-e
 addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script><script type='text/javascript' src='/www/assets/js/jquery.charts.js'></script>
 ---
 
