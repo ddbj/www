@@ -134,7 +134,7 @@ make recommendations for additions or removal of databases to this list
 at their convenience, and need not rely on the release cycle of the
 Feature Table documentation.
 
-## Database:  {#Database_}
+## Database:  {#Database}
 
 Description of database, and type with example(s).
 
