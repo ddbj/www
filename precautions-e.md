@@ -29,4 +29,3 @@ tools, i.e. "How to configure my client software?" and so on.
 Please ask the provider of your client software or network administrator
 for your domain to configure your tools.
 
-![]({{ site.baseurl }}/assets/images/center/ad_non-spam-e.gif)
