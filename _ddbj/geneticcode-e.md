@@ -118,7 +118,7 @@ related_pages:
 
 ---
 
-## Definition of /transl_table qualifier  <a name="Defiition_of_transl_table_qualifier"></a>
+## Definition of /transl_table qualifier  <a name="Definition_of_transl_table_qualifier"></a>
 
 ```
 Qualifier       /transl_table=
