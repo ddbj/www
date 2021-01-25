@@ -126,16 +126,8 @@ Before submission, read ["Submission of research data from human subjects"](/pol
 
 ## How to submit  {#How_to_submit}
 
-<div class="nsss_menu">
-  <div class="nsss_icon">
-<a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf"><img src="/assets/images/parts/pdf_icon.svg"></a>
-  <p><a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">Manual</a></p>
-  </div>
-  <div class="nsss_icon">
-<a href="/ddbj/web-submission-help-e.html"><img src="/assets/images/parts/info_icon.svg"></a>
-  <p><a href="/ddbj/web-submission-help-e.html">NSSS HELP</a></p>
-  </div>
-</div>
+- [Manual (PDF)](/assets/files/pdf/ddbj/websubHelp_full-e.pdf)
+- [NSSS help page](/ddbj/web-submission-help-e.html)
 
 See "Related Pages" in the sidebar.
 

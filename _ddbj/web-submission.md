@@ -115,7 +115,6 @@ related_pages:
     url: /ddbj/location.html
 ---
 
-
 <div class="attention" markdown="1">
 
 <span class="red">ヒトを対象とした研究データの登録について</span>
@@ -132,24 +131,10 @@ Web 版塩基配列登録システム（DDBJ Nucleotide Sequence Submission Syst
 
 ### 入力ガイド
 
-<div class="nsss_menu">
-  <div class="nsss_icon">
-<a href="/assets/files/pdf/ddbj/websubHelp_full-j.pdf"><img src="/assets/images/parts/pdf_icon.svg"></a>
-  <p><a href="/assets/files/pdf/ddbj/websubHelp_full-j.pdf">マニュアル</a></p>
-  </div>
-  <div class="nsss_icon">
-<a href="https://youtu.be/JTCV7bG_KJc"><img src="/assets/images/parts/youtube_icon.svg"></a>
-  <p><a href="https://youtu.be/JTCV7bG_KJc">NSSS の紹介</a></p>
-  </div>
-  <div class="nsss_icon">
-<a href="https://drive.google.com/file/d/1KnEVC--SFglqdENRGLMehFP9NuQXyVrt"><img src="/assets/images/parts/gdrive.svg"></a>
-  <p><a href="https://drive.google.com/file/d/1KnEVC--SFglqdENRGLMehFP9NuQXyVrt">NSSS の紹介</a></p>
-  </div>
-  <div class="nsss_icon">
-<a href="/ddbj/web-submission-help.html"><img src="/assets/images/parts/info_icon.svg"></a>
-  <p><a href="/ddbj/web-submission-help.html">NSSS HELP</a></p>
-  </div>
-</div>
+- [マニュアル (PDF)](/assets/files/pdf/ddbj/websubHelp_full-j.pdf)
+- [NSSS の紹介 (YouTube)](https://youtu.be/JTCV7bG_KJc)
+- [NSSS の紹介 (PDF)](https://drive.google.com/file/d/1KnEVC--SFglqdENRGLMehFP9NuQXyVrt)
+- [NSSS ヘルプページ](/ddbj/web-submission-help.html)
 
 新規登録を開始する  
 : 初めて登録する場合には「[塩基配列の登録](/ddbj/submission.html)」,「[登録データ種別](data-categories.html)」について ご一読ください。
