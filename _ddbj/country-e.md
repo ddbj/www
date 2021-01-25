@@ -110,7 +110,7 @@ sample.
 The text below outlines the format and the present list of allowed
 countries.
 
-## Defiition of /country qualifier  {#Defiition_of_/country_qualifier}
+## Defiition of /country qualifier  <a name="Defiition_of_country_qualifier"></a>
 
 <pre><code>Qualifier:      /country=" "
 Qualifier       /country=

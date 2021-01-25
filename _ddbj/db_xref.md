@@ -105,7 +105,7 @@ New qualifier was introduced in version 1.08 (December 1, 1995) of the Feature t
 
 The text below outlines the format and the present list of allowed database cross references. Inquiries about the addition of other database types should be made to one of the collaborating databases, listed above.
 
-## Definition of /db_xref qualifier  {#Definition_of_/db_xref_qualifier}
+## Definition of /db_xref qualifier  <a name="Definition_of_db_xref_qualifier"></a>
 
 ```
 Qualifier:       /db_xref="[database]:[identifier]"

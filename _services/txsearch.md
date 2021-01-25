@@ -36,7 +36,7 @@ TXSearch は、DDBJ が提供する [NCBI Taxonomy](//www.ncbi.nlm.nih.gov/Taxon
 
 ## 検索（ウェブ検索フォームから）  {#usage}
 
-#### トップページ（Tree画面）：[http://ddbj.nig.ac.jp/tx_search/](http://ddbj.nig.ac.jp/tx_search/)  {#トップページ（Tree画面）：http_//ddbj.nig.ac.jp/tx_search/_}
+#### トップページ（Tree画面）：[http://ddbj.nig.ac.jp/tx_search/](http://ddbj.nig.ac.jp/tx_search/)  <a name="トップページ（Tree画面）：http_/ddbj.nig.ac.jp/tx_search/_"></a>
 
 <img src="/assets/images/help/txhelp01.gif" alt="" title="トップページ" class="">  
 

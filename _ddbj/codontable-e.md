@@ -115,7 +115,7 @@ related_pages:
     url: /ddbj/geneticcode-e.html
 ---
 
-## Definition of /transl_table qualifier  {#Defiition_of_/transl_table_qualifier}
+## Definition of /transl_table qualifier  <a name="Definition_of_transl_table_qualifier"></a>
 
 ```
 Qualifier       /transl_table=

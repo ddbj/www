@@ -98,7 +98,7 @@ tab_menu:
 lang: en
 ---
 
-## Proper Use of /locus_tag in Genome Submissions  {#Proper_Use_of_/locus_tag_in_Genome_Submissions}
+## Proper Use of /locus_tag in Genome Submissions  <a name="Proper_Use_of_locus_tag_in_Genome_Submissions"></a>
 
 At the International Nucleotide Sequence Database Collaborators meeting,
 it was agreed that we would require genome projects to be registered

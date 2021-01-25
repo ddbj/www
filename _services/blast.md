@@ -111,7 +111,7 @@ CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 |  16S rRNA  |  DDBJ 定期リリースから 16S rRNA 配列を取り出したデータ  |
 |  RefSeq NA  |  RefSeq (Genomics + RNA)  | 
 
-#### DIVISION (DDBJ ALL / DDBJ New)  {#DIVISION_DDBJ_ALL_/_DDBJ_New}
+#### DIVISION (DDBJ ALL / DDBJ New)  <a name="DIVISION_DDBJ_ALL_DDBJ_New"></a>
 
 DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，検索対象とする DIVISION の指定が可能です(複数可)。デフォルトでは、Standard divisions のうち　SYN, ENV を除いた 10 divisions が選択されています。 EST については登録数の多い21の生物種から選択することが出来ます。
 
