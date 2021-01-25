@@ -153,8 +153,8 @@ WABI の BLAST検索ジョブ は、 BLAST検索結果を元にしてグラフ�
 
 ## WABI BLAST の使用例  {#usage_example}
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h3 class="toggle-content-btn"><a href="javascript:void(0)">Javaの使用例</a></h3>
 <div class="accordion-content">#### コード例
 
@@ -225,8 +225,8 @@ pom.xml
 </div>
 </div>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
   <h3 class="toggle-content-btn"><a href="javascript:void(0)">Perlの使用例</a></h3>
 <div class="accordion-content">#### コード例
 
@@ -282,8 +282,8 @@ blast_condition.txt
 </div>
 </div>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
   <h3 class="toggle-content-btn"><a href="javascript:void(0)">Ruby の使用例</a></h3>
 <div class="accordion-content">#### コード例
 
@@ -637,8 +637,8 @@ HTTP ステータス 400
 17    }
 ```
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">利用例</a></h4>
 <div class="accordion-content">Java で SpringFramework の RESTクライアント を使う場合:
     <script src="https://gist.github.com/ddbj-repo/ec96049ec11c1d22303d9fcdea9f70cd.js"></script>
@@ -816,8 +816,8 @@ HTTP ステータス 400
 13}
 ```
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">利用例</a></h4>
 <div class="accordion-content">Java で SpringFramework の RESTクライアント を使う場合:
    <script src="https://gist.github.com/ddbj-repo/4a1ea26e46bebac37cf595eae77e384a.js"></script>
@@ -969,8 +969,8 @@ HTTP ステータス 404
 12}
 ```
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">利用例</a></h4>
 <div class="accordion-content">Java で SpringFramework の RESTクライアント を使う場合:
    <script src="https://gist.github.com/ddbj-repo/d3ff7fbc9a66733ab164f669e4bcb88d.js"></script>
@@ -1141,8 +1141,8 @@ HTTP ステータス 400
 12}
 ```
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">利用例</a></h4>
 <div class="accordion-content">Java で SpringFramework の RESTクライアント を使う場合:
    <script src="https://gist.github.com/ddbj-repo/af6f2a4165385224de18cc5968568848.js"></script>
@@ -1287,8 +1287,8 @@ HTTP ステータス 404
 12 }
 ```
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">利用例</a></h4>
 <div class="accordion-content">Java で HttpURLConnection を使う場合:
    <script src="https://gist.github.com/ddbj-repo/bd58a6ca09c2d380d5ceafd4905a0e2e.js"></script>
@@ -1432,8 +1432,8 @@ WABI BLAST のヘルプ情報を返します。
 16 }
 ```
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">利用例</a></h4>
 <div class="accordion-content">Java で SpringFramework の RESTクライアント を使う場合:
    <script src="https://gist.github.com/ddbj-repo/324515b540e438c23e5589dfa40f9aed.js"></script>
@@ -1499,8 +1499,8 @@ ATGGGTCTCACCTCCCAACTGCTTCCCCCTCTGTTCTTCCTGCTAGCATGTGCCGGCAAC
 TTTGCCCACGGACACAACTGCCATATCGCCTTACGGGAGATCATCGAAACTCTGAACAGC
 CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 ```
-
-<div class="attention" markdown="1">
+{::options parse_block_html="true" /}
+<div class="attention">
 配列サイズが巨大な場合や配列数が多い場合など、次のような理由で結果を正常に取得できないことがあります。  
 そのような場合は、配列数を少なくするか配列を短くする等して再度お試しください。
 

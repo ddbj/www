@@ -157,8 +157,8 @@ Example:
 
 ## WABI BLAST usage examples  {#usage_example}
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h3 class="toggle-content-btn"><a href="javascript:void(0)">Code example using Java</a></h3>
 <div class="accordion-content">#### Example of code
 
@@ -228,8 +228,8 @@ $ java -classpath 'target/wabi-client-1.jar:target/wabi-client-1-jar-with-depend
 </div>
 </div>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
   <h3 class="toggle-content-btn"><a href="javascript:void(0)">Code example using Perl</a></h3>
 <div class="accordion-content">#### Example of code
 
@@ -284,8 +284,8 @@ $ perl example.pl
 </div>
 </div>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
   <h3 class="toggle-content-btn"><a href="javascript:void(0)">Code example using Ruby</a></h3>
 <div class="accordion-content">#### Example of code
 
@@ -648,8 +648,8 @@ HTTP Status 400
 17    }
 ```
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">Usage Example</a></h4>
 <div class="accordion-content">Example of the use of the REST client on Java Spring Framework:
     <script src="https://gist.github.com/ddbj-repo/ec96049ec11c1d22303d9fcdea9f70cd.js"></script>
@@ -846,8 +846,8 @@ HTTP Status 400
 13}
 ```
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">Example Usage</a></h4>
 <div class="accordion-content">Example using the REST client on Java Spring Framework:
     <script src="https://gist.github.com/ddbj-repo/4a1ea26e46bebac37cf595eae77e384a.js"></script>
@@ -1011,8 +1011,8 @@ HTTP Status 404
 12}
 ```
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">Example Usage</a></h4>
 <div class="accordion-content">Example using the REST client on Java Spring Framework:
     <script src="https://gist.github.com/ddbj-repo/d3ff7fbc9a66733ab164f669e4bcb88d.js"></script>
@@ -1191,8 +1191,8 @@ HTTP Status 400
 12}
 ```
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">Usage Example</a></h4>
 <div class="accordion-content">Example of the use of the REST client on Java Spring Framework:
     <script src="https://gist.github.com/ddbj-repo/af6f2a4165385224de18cc5968568848.js"></script>
@@ -1344,8 +1344,8 @@ HTTP Status 404
 12 }
 ```
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">Example Usage</a></h4>
 <div class="accordion-content">Example using HttpURLConnection with Java:
     <script src="https://gist.github.com/ddbj-repo/bd58a6ca09c2d380d5ceafd4905a0e2e.js"></script>
@@ -1490,8 +1490,8 @@ Example response for a failed request:
 16 }
 ```
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
   <h4 class="toggle-content-btn"><a href="javascript:void(0)">Example Usage</a></h4>
 <div class="accordion-content">Example of the use of the REST client on Java Spring Framework:
     <script src="https://gist.github.com/ddbj-repo/324515b540e438c23e5589dfa40f9aed.js"></script>
@@ -1565,8 +1565,8 @@ TTTGCCCACGGACACAACTGCCATATCGCCTTACGGGAGATCATCGAAACTCTGAACAGC
 CTCACAGAGCAGAAGACTCTGTGCACCAAGTTGACCATAACGGAC
 ```
 
-
-<div class="attention" markdown="1">
+{::options parse_block_html="true" /}
+<div class="attention">
 Valid search results may not be obtained with very long sequences or if
 there are too many sequences for the following reasons.  
 In such cases, please try reducing the number of query sequences or
@@ -1832,8 +1832,8 @@ recently updated information.
 Combinations of these options can be specified with corresponding values
 separated by spaces.
 
-
-<table markdown="1">
+{::options parse_block_html="true" /}
+<table>
   <thead>
     <tr>
       <th>Options</th>
