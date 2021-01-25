@@ -33,7 +33,7 @@ you need to use the organism name description based on NCBI Taxonomy.
 
 ## Search (from the web form)  {#usage}
 
-#### Top page (Tree screen)：<http://ddbj.nig.ac.jp/tx_search/>  <a name="Top_page_Tree_screen：http_/ddbj.nig.ac.jp/tx_search/_"></a>
+#### Top page (Tree screen)：<http://ddbj.nig.ac.jp/tx_search/>  <a name="Top_page_Tree_screen"></a>
 
 <img src="/assets/images/help/txhelp01.gif" alt="" title="Top page" class="">
 
