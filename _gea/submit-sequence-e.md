@@ -54,80 +54,80 @@ lang: en
 
 ## GEA submission flow  {#gea-submission-flow}
 
-### 1\. Obtain a submission account 
+### 1. Obtain a submission account {#account}
 
-  - Create a [D-way submission account](https://ddbj.nig.ac.jp/D-way/).
-  - To enable GEA submission, [register a public key and a center name to your account](/account-e.html#enable-dra-submission-in-account).
+- Create a [D-way submission account](https://ddbj.nig.ac.jp/D-way/).
+- To enable GEA submission, [register a public key and a center name to your account](/account-e.html#enable-dra-submission-in-account).
 
-### 2\. Register a BioProject, BioSamples and Sequence Read Archive (DRA) 
+### 2. Register a BioProject, BioSamples and Sequence Read Archive (DRA) {#bioproject-biosample}
 
 BioProject and BioSample registration is required for DRA submission.
 
 #### [BioProject](/bioproject/submission-e.html)  {#BioProject}
 
-  - A description of the reseach effort.
+- A description of the reseach effort.
 
-#### [BioSample](/biosample/submission-e.html) {#_BioSample}<img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">
+#### [BioSample](/biosample/submission-e.html) <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#BioSample}
 
-  - A description of biologically or physically unique samples used to generate experimental data.
+- A description of biologically or physically unique samples used to generate experimental data.
 
-#### [DRA](/dra/submission-e.html) {#_DRA}<img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">
+#### [DRA](/dra/submission-e.html) <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#DRA}
 
-  - Raw sequencing reads and alignments.
+- Raw sequencing reads and alignments.
 
 <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">metadata can be submitted as a tab-delimited text file.
 
-### 3\. Upload processed data files 
+### 3. Upload processed data files {#upload}
 
-  - Upload processed data files into the GEA submission directory.
+- Upload processed data files into the GEA submission directory.
 
-### 4\. Select a DRA submission 
+### 4. Select a DRA submission {#DRA-submission}
 
-  - Select a DRA submission which contains raw sequencing reads for the GEA submission.
-  - Select DRA submissions when the GEA experiment has processed data from raw sequencing reads in multiple DRA submissions.
+- Select a DRA submission which contains raw sequencing reads for the GEA submission.
+- Select DRA submissions when the GEA experiment has processed data from raw sequencing reads in multiple DRA submissions.
 
-### 5\. Select a BioProject 
+### 5. Select a BioProject {#select-BioProject}
 
-  - Select a BioProject used in the DRA submission when the GEA experiment and DRA submission belong to same project.
-  - Select a BioProject not used in the DRA submission when the GEA experiment and DRA submission belong to different projects.
+- Select a BioProject used in the DRA submission when the GEA experiment and DRA submission belong to same project.
+- Select a BioProject not used in the DRA submission when the GEA experiment and DRA submission belong to different projects.
 
-### 6\. Prepare IDF and SDRF 
+### 6. Prepare IDF and SDRF {#create-idf-sdrf}
 
 #### IDF  {#idf}
 
-  - The IDF (Investigation Description Format) file is used to give an overview of the experiment, including the experimental design, protocols and publication information.
+- The IDF (Investigation Description Format) file is used to give an overview of the experiment, including the experimental design, protocols and publication information.
 
-#### SDRF  {#sdrf<img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">
+#### SDRF  <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#sdrf}
 
-  - The SDRF (Sample and Data Relationship Format) describes the sample characteristics and the relationship between samples, data files etc.
-  - SDRF template is generated from selected BioProject, BioSample(s) and DRA submission(s). Enter additional information.
+- The SDRF (Sample and Data Relationship Format) describes the sample characteristics and the relationship between samples, data files etc.
+- SDRF template is generated from selected BioProject, BioSample(s) and DRA submission(s). Enter additional information.
 
-### 7\. Submit IDF and SDRF and validate data files 
+### 7. Submit IDF and SDRF and validate data files  {#validation}
 
-  - After submitting IDF and SDRF metadata in the submission web system, validation of the uploaded data files are automatically started.
-  - The submission passed validation will be reviewed.
+- After submitting IDF and SDRF metadata in the submission web system, validation of the uploaded data files are automatically started.
+- The submission passed validation will be reviewed.
 
 ## Pre-submission checklist  {#checklist}
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Single-cell sequencing experiment</a></h4>
 <div class="accordion-content">
 
 Refer to [ArrayExpress Single-cell submission guide](https://www.ebi.ac.uk/arrayexpress/help/single-cell_submission_guide.html). Please [contact GEA team](/contact-ddbj-e.html) to upload any additional files for custom spike-ins or to facilitate data analysis.
 
-[« Close](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
 </div>
 </div>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">More than one technology per experiment</a></h4>
 <div class="accordion-content">
 
 GEA will ask you for the technology and name of the array, and applies it to the whole submission. If you have used different types of technologies for the same set of samples, we ask you to create separate submissions. Please make sure that the submissions have distinct titles (even though they may belong to the same study), in order to avoid mistakes. If you have samples from more than one array design in your experiment, it is possible to submit only one experiment. If you wish to do this, please [contact GEA team](/contact-ddbj-e.html).
 
-[« Close](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
 </div>
 </div>
 
@@ -140,18 +140,13 @@ Login [the D-way (https://trace.ddbj.nig.ac.jp/D-way)](https://ddbj.nig.ac.jp/D-
 Create a new microarray experiment submission by selecting "Sequencing" and clicking the \[New submission\]. At the same time, in the DDBJ file server (ftp-private.ddbj.nig.ac.jp), a corresponding subdirectory is created under the submitter’s GEA upload directory. [Upload data files to this subdirectory](#upload-data).
 
 <div class="attention">
-
 If there is no reply from submitters after three months of initial contact, submissions will be cancelled.
-
 </div>
-
 
 {% include image.html url="books/seq-sub1.jpg" caption="Create a new submission" class="w450" %}
 
+List of submission status is as follows. The GEA team reviews submission whose status is in "submission_validated" or "data_error".
 
-List of submission status is as follows. The GEA team reviews submission whose status is in "submission\_validated" or "data\_error".
-
-{::options parse_block_html="true" /}
 List of submission status
 {: .tablecaption}
 
@@ -169,17 +164,17 @@ List of submission status
 
 ### Upload processed data files {#upload-data} 
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Upload files by using terminal (Linux/Mac OS X)</a></h4>
 <div class="accordion-content">
 
 Upload files by executing,
 
-  - \<Your Files\> Files to be transferred. Ex: file1 file2 (file1 and file2), file\* (all files whose filenames start with "file")
-  - \<D-way Login ID\> D-way Login ID (ex. test07)
-  - \<GEA Submission ID\> GEA Submission ID (ex. ESUB000350)
-  - command example: scp Arabidopsis\_control\_rep\_1.CEL test07@ftp-private.ddbj.nig.ac.jp:\~/gea/ESUB000350
+- \<Your Files\> Files to be transferred. Ex: file1 file2 (file1 and file2), file\* (all files whose filenames start with "file")
+- \<D-way Login ID\> D-way Login ID (ex. test07)
+- \<GEA Submission ID\> GEA Submission ID (ex. ESUB000350)
+- command example: scp Arabidopsis_control_rep_1.CEL test07@ftp-private.ddbj.nig.ac.jp:\~/gea/ESUB000350
 
 Enter the passphrase set for the keys.
 
@@ -191,12 +186,12 @@ After logging in successfully, the following prompt is displayed.
 
 The login environment is private for the submitter. Users other than the submitter cannot access the data. Executable commands are restricted to the following ones. Users can delete unnecessary files.
 
-[« Close](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
 </div>
 </div>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Upload files by using WinSCP (Windows)</a></h4>
 <div class="accordion-content">
 
@@ -209,9 +204,7 @@ Install and run the ["WinSCP" (http://winscp.net/eng/download.php)](http://winsc
 Set items as below and click the \[Advanced...\] button.
 
 <div class="attention">
-
 Be sure to select the "binary mode" for file transfer. Do NOT select the "text mode".
-
 </div>
 
 - File protocol: SFTP
@@ -238,12 +231,12 @@ After login successfully, a folder of your PC is displayed at left, and your pri
 
 You can delete the transferred files by selecting the files and clicking the \[Delete\] button.
 
-[« Close](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
 </div>
 </div>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Upload sequence data by using Cyberduck (Mac OS X)</a></h4>
 <div class="accordion-content">
 
@@ -281,42 +274,34 @@ After login successfully, your private directory in the server is displayed in t
 
 <a href="/assets/images/books/Cyberduck_5.jpg" title="transfer" class=""><img src="/assets/images/books/Cyberduck_5.jpg" alt="" title="" class="w500"></a>
 
-[« Close](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
 </div>
 </div>
 
 <div class="attention">
-
 Users can ssh login ftp-private.ddbj.nig.ac.jp server by using a private key. Executable commands are restricted to the following ones. Users can delete unnecessary files.  
 ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
-
 </div>
 
-### Submission  {#Submission}
+### Submission  {#Submission-tab}
 
 Set the hold date within four years. Submitters' name and affiliation will be public but e-mail address will not be disclosed.
 
 <div class="attention">
-
 You can delete an un-submitted GEA submission.
-
 </div>
-
 
 {% include image.html url="books/array-sub2.jpg" caption="Enter submission information" class="w550" %}
 
-
-### DRA  {#DRA}
+### DRA  {#DRA-tab}
 
 Select a DRA submission registered in your account. If DRA submission is not registered, please go to the [DRA submission site](/dra/submission-e.html#dra-submission) and submit DRA.
 
 To use DRA submissions obtained in the other account, please [contact GEA team](/contact-ddbj-e.html).
 
-
 {% include image.html url="books/seq-dra.jpg" caption="Select a DRA submission for the GEA experiment" class="w550" %}
 
-
-### BioProject  {#BioProject}
+### BioProject  {#BioProject-tab}
 
 Select a project registered in your account. If a BioProject is not registered, please go to the [BioProject submission site](/bioproject/submission-e.html#bioproject-submission) and submit a project.
 
@@ -324,29 +309,23 @@ Select a BioProject used in the DRA submission when the GEA experiment and DRA s
 
 To use a project obtained in the other account, please [contact GEA team](/contact-ddbj-e.html).
 
-
 {% include image.html url="books/seq-bp.jpg" caption="Select a BioProject for the GEA experiment" class="w550" %}
 
-
-### IDF  {#idf}
+### IDF  {#idf-tab}
 
 Enter information for [IDF (Investigation Description Format)](/gea/metadata-e.html#idf).
 
 [Example IDF](/gea/example-e.html#idf).
 
-  - Protocol: Pre-checked protocols are mandatory.
-  - Publication: Describe associated publications by PubMed ID or DOI. For unpublished manuscript, please [inform us](/contact-ddbj-e.html) the ID after assignment.
-  - Data File Type: Processed data files are required for sequencing experiment submission. [Accepted Data Files Formats for sequencing experiment](/gea/datafile-e.html#seq_data). We strongly recommend to submitting processed data file per sample.
-
+- Protocol: Pre-checked protocols are mandatory.
+- Publication: Describe associated publications by PubMed ID or DOI. For unpublished manuscript, please [inform us](/contact-ddbj-e.html) the ID after assignment.
+- Data File Type: Processed data files are required for sequencing experiment submission. [Accepted Data Files Formats for sequencing experiment](/gea/datafile-e.html#seq_data). We strongly recommend to submitting processed data file per sample.
 
 {% include image.html url="books/seq-idf.jpg" caption="Enter information for IDF" class="w600" %}
 
-
-### SDRF  {#sdrf}
-
+### SDRF  {#sdrf-tab}
 
 {% include image.html url="books/seq-sdrf-down.jpg" caption="Download a SDRF template file" class="w400" %}
-
 
 Enter information for [SDRF (Sample and Data Relationship Format)](/gea/metadata-e.html#sdrf).
 
@@ -354,11 +333,11 @@ Enter information for [SDRF (Sample and Data Relationship Format)](/gea/metadata
 
 Auto-filled fields.
 
-  - Name columns and attribute columns for Source Name: Generated from BioSamples.
-  - SDRF rows: 1 row for 1 Run.
-  - Protocols: Protocols described in IDF are inserted to appropriate positions of SDRF with temporary protocol IDs (e.g., ESUB000352\_Protocol\_1)
-  - Technology Type: "sequencing assay" for sequencing submission.
-  - SRA Experiment and Run Comments to Extract and Assay Names: Generated from DRA Experiment and Run.
+- Name columns and attribute columns for Source Name: Generated from BioSamples.
+- SDRF rows: 1 row for 1 Run.
+- Protocols: Protocols described in IDF are inserted to appropriate positions of SDRF with temporary protocol IDs (e.g., ESUB000352\_Protocol\_1)
+- Technology Type: "sequencing assay" for sequencing submission.
+- SRA Experiment and Run Comments to Extract and Assay Names: Generated from DRA Experiment and Run.
 
 Enter required fields by overwriting \<Required: fill in the content\> tags.
 
@@ -380,15 +359,11 @@ Fields you need to add.
     - KU-2003
     - KU-PI499262
 
-
 {% include image.html url="books/seq-sdrf-template.jpg" caption="SDRF template, yellow-highlighted fields need to be filled by submitter" class="w600" %}
-
 
 Select the entered SDRF file and continue.
 
-
 {% include image.html url="books/seq-sdrf-up.jpg" caption="Select entered SDRF file" class="w450" %}
-
 
 ### Overview and submit  {#submit}
 
@@ -396,27 +371,21 @@ You can download the IDF and SDRF files and check them. When correction is neces
 
 Submit the IDF and SDRF metadata by clicking the "Submit" button.
 
-
 {% include image.html url="books/seq-submit.jpg" caption="Check the IDF and SDRF and submit" class="w450" %}
 
-
-### Validation  {#validation}
+### Validation  {#validation-step}
 
 When data files described in the IDF and SDRF are not found in the submission directory, an error message "Data file is not uploaded" is shown and the submission is aborted.
 
 The validator checks submitted IDF and SDRF files according to the [validation rules.](/gea/validation-e.html) and gives warning and error messages. Errors need to be resolved for submission.
 
-
 {% include image.html url="books/seq-validation.jpg" caption="Warning and error messages" class="w500" %}
-
 
 ### Accession numbers  {#accession}
 
 [GEA accession numbers](/gea/overview-e.html#acc) are issued to the completed GEA experiment. You can allow reviewers access to private records by [communicating a reviewer accesss token](/gea/reviewer-access-e.html).
 
-
 {% include image.html url="books/seq-accession.jpg" caption="GEA accession numbers" class="w500" %}
-
 
 ## Update submission  {#update-submission}
 
@@ -458,8 +427,8 @@ To withdrawing archived Experiment, please [contact us](/contact-ddbj-e.html).
 
 MD5 (Message Digest Algorithm 5) is a hash function which calculates a hash value (MD5 number, 32-digit numbers and letters) of a given file. Because the MD5 number of the damaged file is distinct from the original one, we can check whether the transferred file is intact or not by comparing the numbers before and after the file transfer.
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h3 class="toggle-content-btn"><a href="javascript:void(0)">Obtain MD5 number (Linux)</a></h3>
 <div class="accordion-content">
 
@@ -471,12 +440,12 @@ $ md5sum file1 file2
 B636E0063E29709B6082F324C76D0911 file2
 ```
 
-[« Close](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
 </div>
 </div>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h3 class="toggle-content-btn"><a href="javascript:void(0)">Obtain MD5 number (Mac OS X)</a></h3>
 <div class="accordion-content">
 
@@ -488,12 +457,12 @@ $ md5 file1 file2
 B636E0063E29709B6082F324C76D0911 file2
 ```
 
-[« Close](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
 </div>
 </div>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h3 class="toggle-content-btn"><a href="javascript:void(0)">Obtain MD5 number (Windows)</a></h3>
 <div class="accordion-content">
 
@@ -511,6 +480,6 @@ By clicking the \[Export\] button, you can obtain the list of the MD5 numbers as
 
 <a href="/assets/images/books/Fsum3.jpg" title="Generate md5 in the tool 3" class=""><img src="/assets/images/books/Fsum3.jpg" alt="" title="" class="w500"></a>
 
-[« Close](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
 </div>
 </div>

@@ -54,54 +54,54 @@ lang: en
 
 ## GEA submission flow  {#gea-submission-flow}
 
-### 1\. Obtain a submission account
+### 1. Obtain a submission account {#account}
 
-  - Create a [D-way submission account](https://ddbj.nig.ac.jp/D-way/).
-  - To enable GEA submission, [register a public key and a center name to your account](/account-e.html#enable-dra-submission-in-account).
+- Create a [D-way submission account](https://ddbj.nig.ac.jp/D-way/).
+- To enable GEA submission, [register a public key and a center name to your account](/account-e.html#enable-dra-submission-in-account).
 
-### 2\. Register a BioProject and BioSample(s)
+### 2. Register a BioProject and BioSample(s) {#bioproject-biosample}
 
 #### [BioProject](/bioproject/submission-e.html)  {#BioProject}
 
-  - A description of the reseach effort.
+- A description of the reseach effort.
 
 #### [BioSample](/biosample/submission-e.html) <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">  {#BioSample}
 
-  - A description of biologically or physically unique samples used to generate experimental data.
+- A description of biologically or physically unique samples used to generate experimental data.
 
 <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">
 metadata can be submitted as a tab-delimited text file.
 
-### 3\. Upload raw and processed data files
+### 3. Upload raw and processed data files {#upload}
 
-  - Upload raw and processed data files into the GEA submission directory.
-  - \[Optional\] When an array design is not available in [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA, upload an array design file into the GEA submission directory along with data files.
+- Upload raw and processed data files into the GEA submission directory.
+- \[Optional\] When an array design is not available in [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA, upload an array design file into the GEA submission directory along with data files.
 
-### 4\. Select a BioProject and BioSample(s)
+### 4. Select a BioProject and BioSample(s) {#select-bp-bs}
 
-  - Select a registed BioProject for the GEA submission.
-  - Select registed BioSample(s) for the GEA submission. Majority of GEA submissions require more than one sample.
+- Select a registed BioProject for the GEA submission.
+- Select registed BioSample(s) for the GEA submission. Majority of GEA submissions require more than one sample.
 
-### 5\. Prepare IDF and SDRF
+### 5. Prepare IDF and SDRF {#create-idf-sdrf}
 
 #### IDF  {#idf} 
 
-  - The [IDF (Investigation Description Format)](/gea/metadata-e.html#idf) file is used to give an overview of the experiment, including the experimental design, protocols and publication information.
+- The [IDF (Investigation Description Format)](/gea/metadata-e.html#idf) file is used to give an overview of the experiment, including the experimental design, protocols and publication information.
 
 #### SDRF  <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#SDRF}
 
-  - The [SDRF (Sample and Data Relationship Format)](/gea/metadata-e.html#sdrf) describes the sample characteristics and the relationship between samples, arrays, data files etc.
-  - SDRF template is generated from selected BioProject and BioSample(s). Enter additional information.
+- The [SDRF (Sample and Data Relationship Format)](/gea/metadata-e.html#sdrf) describes the sample characteristics and the relationship between samples, arrays, data files etc.
+- SDRF template is generated from selected BioProject and BioSample(s). Enter additional information.
 
-### 6\. Submit IDF, SDRF and validate data files 
+### 6. Submit IDF, SDRF and validate data files {#validation}
 
-  - After submitting IDF and SDRF in the submission web system, [validation](/gea/validation-e.html) of the uploaded data files will automatically begin.
-  - The submission passed validation will be reviewed.
+- After submitting IDF and SDRF in the submission web system, [validation](/gea/validation-e.html) of the uploaded data files will automatically begin.
+- The submission passed validation will be reviewed.
 
 ## Pre-submission checklist  {#checklist}
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Two-color microarray experiment</a></h4>
 <div class="accordion-content">
 
@@ -114,8 +114,8 @@ If you have separate files for each channel, please [contact GEA team](/contact-
 </div>
 </div>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Single-cell sequencing experiment</a></h4>
 <div class="accordion-content">
 
@@ -126,8 +126,8 @@ Please [contact GEA team](/contact-ddbj-e.html) to upload any additional files f
 </div>
 </div>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">More than one technology per experiment</a></h4>
 <div class="accordion-content">
 
@@ -146,14 +146,10 @@ Login [the D-way (https://trace.ddbj.nig.ac.jp/D-way)](https://ddbj.nig.ac.jp/D-
 Create a new microarray experiment submission by selecting "Microarray" and clicking the \[New submission\]. At the same time, in the DDBJ file server (ftp-private.ddbj.nig.ac.jp), a corresponding subdirectory is created under the submitter’s GEA upload directory. [Upload data files to this subdirectory](#upload-data).
 
 <div class="attention">
-
 If there is no reply from submitters after three months of initial contact, submissions will be cancelled.
-
 </div>
 
-
 {% include image.html url="books/array-sub1.jpg" caption="Create a new microarray experiment submission" class="w450" %}
-
 
 List of submission status is as follows. The GEA team reviews submission whose status is in "submission\_validated" or "data\_error".
 
@@ -172,20 +168,19 @@ List of submission status
 | Confidential     | Archive files are created and submission is kept private |
 | Public           | Released to public.                                      |
 
-{::options parse_block_html="true"/}
 ### Upload raw and processed data files {#upload-data} 
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Upload files by using terminal (Linux/Mac OS X)</a></h4>
 <div class="accordion-content">
 
 Upload files by executing,
 
-  - \<Your Files\> Files to be transferred. Ex: file1 file2 (file1 and file2), file\* (all files whose filenames start with "file")
-  - \<D-way Login ID\> D-way Login ID (ex. test07)
-  - \<GEA Submission ID\> GEA Submission ID (ex. ESUB000350)
-  - command example: scp Arabidopsis\_control\_rep\_1.CEL test07@ftp-private.ddbj.nig.ac.jp:\~/gea/ESUB000350
+- \<Your Files\> Files to be transferred. Ex: file1 file2 (file1 and file2), file\* (all files whose filenames start with "file")
+- \<D-way Login ID\> D-way Login ID (ex. test07)
+- \<GEA Submission ID\> GEA Submission ID (ex. ESUB000350)
+- command example: scp Arabidopsis\_control\_rep\_1.CEL test07@ftp-private.ddbj.nig.ac.jp:\~/gea/ESUB000350
 
 Enter the passphrase set for the keys.
 
@@ -197,12 +192,12 @@ After logging in successfully, the following prompt is displayed.
 
 The login environment is private for the submitter. Users other than the submitter cannot access the data. Executable commands are restricted to the following ones. Users can delete unnecessary files.
 
-[« Close](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
 </div>
 </div>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Upload files by using WinSCP (Windows)</a></h4>
 <div class="accordion-content">
 
@@ -244,12 +239,12 @@ After login successfully, a folder of your PC is displayed at left, and your pri
 
 You can delete the transferred files by selecting the files and clicking the \[Delete\] button.
 
-[« Close](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
 </div>
 </div>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Upload sequence data by using Cyberduck (Mac OS X)</a></h4>
 <div class="accordion-content">
 
@@ -287,7 +282,7 @@ After login successfully, your private directory in the server is displayed in t
 
 <a href="/assets/images/books/Cyberduck_5.jpg" title="transfer" class="group1"><img src="/assets/images/books/Cyberduck_5.jpg" alt="" title="" class="w500"></a>
 
-[« Close](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
 </div>
 </div>
 
@@ -298,7 +293,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 </div>
 
-### Submission  {#Submission}
+### Submission  {#Submission-tab}
 
 Set the hold date within four years or choose immediate release when processed. Submitters' name and affiliation will be public but e-mail address will not be disclosed.
 
@@ -308,51 +303,40 @@ You can delete an un-submitted GEA submission at "Delete submission".
 
 </div>
 
-
-
 {% include image.html url="books/array-sub2.jpg" caption="Enter submission information" class="w550" %}
 
-
-### BioProject  {#BioProject}
+### BioProject  {#BioProject-tab}
 
 Select a submitted project registered in your account. If a BioProject is not registered, please go to the [BioProject submission site](/bioproject/submission-e.html#bioproject-submission) and submit a project.
 
 To use a project obtained in the other account, please [contact GEA team](/contact-ddbj-e.html).
 
-
 {% include image.html url="books/gea-bp.jpg" caption="Select a BioProject for the GEA experiment" class="w550" %}
 
-
-### BioSample  {#BioSample}
+### BioSample  {#BioSample-tab}
 
 Select submitted BioSamples registered in your account. If BioSamples are not registered, please go to the [BioSample submission site](/biosample/submission-e.html#biosample-submission) and submit samples.
 
 To use samples obtained in the other account, please [contact GEA team](/contact-ddbj-e.html).
 
-
 {% include image.html url="books/gea-bs.jpg" caption="Select BioSamples for the GEA experiment" class="w550" %}
 
-
-### IDF  {#idf}
+### IDF  {#idf-tab}
 
 Enter information for [IDF (Investigation Description Format)](/gea/metadata-e.html#idf).
 
 [Example IDF](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=0)
 
-  - Protocol: Pre-checked protocols are mandatory.
-  - Publication: Describe associated publications by PubMed ID or DOI. For unpublished manuscript, please [inform us](/contact-ddbj-e.html) the publication ID after assignment.
-  - Array Design: When an array design is available in [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA, enter an array design accession number "A-XXXX-n". When an array design is not available, [register a new array design](/gea/adf-e.html) by uploading an array design file into the GEA submission directory.
-  - Data File Type: Raw and processed data files are required for microarray experiment submission. We strongly recommend to submitting raw and processed data file per sample. [Accepted Data Files Formats for microarray experiment](/gea/datafile-e.html#array_data).
-
+- Protocol: Pre-checked protocols are mandatory.
+- Publication: Describe associated publications by PubMed ID or DOI. For unpublished manuscript, please [inform us](/contact-ddbj-e.html) the publication ID after assignment.
+- Array Design: When an array design is available in [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA, enter an array design accession number "A-XXXX-n". When an array design is not available, [register a new array design](/gea/adf-e.html) by uploading an array design file into the GEA submission directory.
+- Data File Type: Raw and processed data files are required for microarray experiment submission. We strongly recommend to submitting raw and processed data file per sample. [Accepted Data Files Formats for microarray experiment](/gea/datafile-e.html#array_data).
 
 {% include image.html url="books/array-idf.jpg" caption="Enter information for IDF" class="w600" %}
 
-
-### SDRF  {#sdrf}
-
+### SDRF  {#sdrf-tab}
 
 {% include image.html url="books/array-sdrf.jpg" caption="Download a SDRF template file" class="w400" %}
-
 
 Enter information for [SDRF (Sample and Data Relationship Format)](/gea/metadata-e.html#sdrf).
 
@@ -360,44 +344,39 @@ Enter information for [SDRF (Sample and Data Relationship Format)](/gea/metadata
 
 Auto-filled fields.
 
-  - Name columns and attribute columns for Source Name: Generated from BioSamples.
-  - SDRF rows: 1 row for 1 BioSample.
-  - Protocols: Protocols described in IDF are inserted to appropriate positions of SDRF with temporary protocol IDs (e.g., ESUB000350\_Protocol\_1)
-  - Technology Type: "array assay" for microarray submission.
-  - Array Design REF: array design accession or filename described in IDF.
+- Name columns and attribute columns for Source Name: Generated from BioSamples.
+- SDRF rows: 1 row for 1 BioSample.
+- Protocols: Protocols described in IDF are inserted to appropriate positions of SDRF with temporary protocol IDs (e.g., ESUB000350\_Protocol\_1)
+- Technology Type: "array assay" for microarray submission.
+- Array Design REF: array design accession or filename described in IDF.
 
 Enter required fields by overwriting \<Required: fill in the content\> tags.
 
 Fields you need to add.
 
-  - Material Type: Enter [controlled terms](/gea/metadata-e.html#Material_Type).
-      - total RNA
-      - polyA RNA
-      - cytoplasmic RNA
-      - nuclear RNA
-      - genomic DNA
-      - protein
-      - other
-  - Label: Enter label compounds used to label the extracted molecule such as biotin, Cy3 and Cy5.
-  - Array Data File and Comment\[Array Data File md5\]: Enter filename and [md5 checksum](#supplement-md5) pair for each raw data file.
-  - Derived Array Data File and Comment\[Derived Array Data File md5\]: Enter filename and [md5 checksum](#supplement-md5) pair for each processed data file.
-  - A list of filename and its md5 checksum (output of [md5sum command](#supplement-md5)) can be provided as a file \<GEA submission ID\>.md5 (e.g., ESUB000001.md5) (when the checksum values are provided in both SDRF and .md5 file, those in the .md5 are used).
-  - Factor Value\[enter experiment factor name here\]: A user-defined name for each experimental factor studied by the experiment. These experimental factors represent the variables within the investigation (e.g. growth condition, genotype, organism part). The actual values of these variables will be listed in the "Factor Value \[\]" columns. Example:
-      - Factor Value\[strain\]
-      - AT76
-      - KU-2003
-      - KU-PI499262
+- Material Type: Enter [controlled terms](/gea/metadata-e.html#Material_Type).
+    - total RNA
+    - polyA RNA
+    - cytoplasmic RNA
+    - nuclear RNA
+    - genomic DNA
+    - protein
+    - other
+- Label: Enter label compounds used to label the extracted molecule such as biotin, Cy3 and Cy5.
+- Array Data File and Comment\[Array Data File md5\]: Enter filename and [md5 checksum](#supplement-md5) pair for each raw data file.
+- Derived Array Data File and Comment\[Derived Array Data File md5\]: Enter filename and [md5 checksum](#supplement-md5) pair for each processed data file.
+- A list of filename and its md5 checksum (output of [md5sum command](#supplement-md5)) can be provided as a file \<GEA submission ID\>.md5 (e.g., ESUB000001.md5) (when the checksum values are provided in both SDRF and .md5 file, those in the .md5 are used).
+- Factor Value\[enter experiment factor name here\]: A user-defined name for each experimental factor studied by the experiment. These experimental factors represent the variables within the investigation (e.g. growth condition, genotype, organism part). The actual values of these variables will be listed in the "Factor Value \[\]" columns. Example:
+    - Factor Value\[strain\]
+    - AT76
+    - KU-2003
+    - KU-PI499262
 
-
-{% include image.html url="books/array-sdrf-template.jpg" caption="SDRF template, yellow-highlighted fields need to be filled by
-submitter" class="w600" %}
-{:/}
+{% include image.html url="books/array-sdrf-template.jpg" caption="SDRF template, yellow-highlighted fields need to be filled by submitter" class="w600" %}
 
 Select the entered SDRF file and continue.
 
-
 {% include image.html url="books/array-sdrf2.jpg" caption="Select entered SDRF file" class="w450" %}
-
 
 ### Overview and submit  {#submit}
 
@@ -405,19 +384,15 @@ You can download the IDF and SDRF files and check them. When correction is neces
 
 Submit the IDF and SDRF metadata by clicking the "Submit" button.
 
-
 {% include image.html url="books/array-overview.jpg" caption="Check the IDF and SDRF and submit" class="w450" %}
 
-
-### Validation  {#validation}
+### Validation  {#validation-step}
 
 When data files described in the IDF and SDRF are not found in the submission directory, an error message "Data file is not uploaded" is shown and the submission is aborted.
 
 The validator checks submitted IDF and SDRF files according to the [validation rules](/gea/validation-e.html) and gives warning and error messages. Errors need to be resolved for submission.
 
-
 {% include image.html url="books/array-validation.jpg" caption="Warning and error messages" class="w500" %}
-
 
 ### Accession number  {#accession}
 
@@ -425,9 +400,7 @@ The validator checks submitted IDF and SDRF files according to the [validation r
 
 You can allow reviewers access to private records by [communicating a reviewer accesss token](/gea/reviewer-access-e.html).
 
-
 {% include image.html url="books/array-accession.jpg" caption="GEA accession numbers" class="w500" %}
-
 
 ## Update submission  {#update-submission}
 
@@ -473,8 +446,8 @@ To withdrawing archived Experiment, please [contact us](/contact-ddbj-e.html).
 
 MD5 (Message Digest Algorithm 5) is a hash function which calculates a hash value (MD5 number, 32-digit numbers and letters) of a given file. Because the MD5 number of the damaged file is distinct from the original one, we can check whether the transferred file is intact or not by comparing the numbers before and after the file transfer.
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h3 class="toggle-content-btn"><a href="javascript:void(0)">Obtain MD5 number (Linux)</a></h3>
 <div class="accordion-content">
 
@@ -486,12 +459,12 @@ $ md5sum file1 file2
 B636E0063E29709B6082F324C76D0911 file2
 ```
 
-[« Close](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
 </div>
 </div>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h3 class="toggle-content-btn"><a href="javascript:void(0)">Obtain MD5 number (Mac OS X)</a></h3>
 <div class="accordion-content">
 
@@ -503,12 +476,12 @@ $ md5 file1 file2
 B636E0063E29709B6082F324C76D0911 file2
 ```
 
-[« Close](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
 </div>
 </div>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h3 class="toggle-content-btn"><a href="javascript:void(0)">Obtain MD5 number (Windows)</a></h3>
 <div class="accordion-content">
 
@@ -526,6 +499,6 @@ By clicking the \[Export\] button, you can obtain the list of the MD5 numbers as
 
 <a href="/assets/images/books/Fsum3.jpg" title="Generate md5 in the tool 3" class=""><img src="/assets/images/books/Fsum3.jpg" alt="" title="" class="w500"></a>
 
-[« Close](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
 </div>
 </div>

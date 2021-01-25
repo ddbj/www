@@ -54,55 +54,54 @@ lang: ja
 
 ## GEA 登録の流れ  {#gea-submission-flow}
 
-### 1\. 登録アカウントを取得 
+### 1. 登録アカウントを取得  {#account}
 
-  - [D-way 登録アカウント](https://ddbj.nig.ac.jp/D-way/)を作成
-  - [公開鍵と center nameをアカウントに登録](/account.html#enable-dra-submission-in-account)しGEA 登録を可能に
+- [D-way 登録アカウント](https://ddbj.nig.ac.jp/D-way/)を作成
+- [公開鍵と center nameをアカウントに登録](/account.html#enable-dra-submission-in-account)しGEA 登録を可能に
 
-### 2\. BioProjectとBioSampleを登録 
+### 2. BioProjectとBioSampleを登録 {#bioproject-biosample}
 
 #### [BioProject](/bioproject/submission.html)  {#BioProject}
 
-  - 研究プロジェクトの内容
+- 研究プロジェクトの内容
 
 #### [BioSample](/biosample/submission.html) <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#BioSample}
 
-  - 実験データを得るのに使われた生物学的、物理的にユニークなサンプル
+- 実験データを得るのに使われた生物学的、物理的にユニークなサンプル
 
 <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">
-    メタデータをタブ区切りテキストファイルで登録できます
+メタデータをタブ区切りテキストファイルで登録できます
 
-### 3\. 生データと解析済みデータファイルをアップロード 
+### 3. 生データと解析済みデータファイルをアップロード   {#upload}
 
-  - GEA 登録用ディレクトリに生データと解析済みデータファイルをアップロード
-  - \[必要であれば\] アレイデザインが [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA に未登録の場合、GEA 登録用ディレクトリにデータファイルと一緒にアレイデザインファイルをアップロード
+- GEA 登録用ディレクトリに生データと解析済みデータファイルをアップロード
+- \[必要であれば\] アレイデザインが [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA に未登録の場合、GEA 登録用ディレクトリにデータファイルと一緒にアレイデザインファイルをアップロード
 
-### 4\. BioProjectとBioSampleを選択 
+### 4. BioProjectとBioSampleを選択 {#select-bp-bs}
 
-  - GEA 登録で参照する BioProject を一つ選択
-  - GEA 登録で参照する複数 BioSample を選択。通常の GEA 登録は一つ以上のサンプルで構成されます
+- GEA 登録で参照する BioProject を一つ選択
+- GEA 登録で参照する複数 BioSample を選択。通常の GEA 登録は一つ以上のサンプルで構成されます
 
-### 5\. IDFとSDRFを作成 
+### 5. IDF と SDRF を作成 {#create-idf-sdrf}
 
 #### IDF  {#idf}
 
-  - [IDF(Investigation Description Format)](/gea/metadata.html#idf)
-    ファイルで実験デザイン、プロトコールや文献情報といった実験全体を記述します
+- [IDF(Investigation Description Format)](/gea/metadata.html#idf) ファイルで実験デザイン、プロトコールや文献情報といった実験全体を記述します
 
 #### SDRF <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#sdrf}
 
-  - [SDRF(Sample and Data RelationshipFormat)](/gea/metadata.html#sdrf) ファイルでサンプル属性とサンプル、アレイ、データファイル間の関係性を記述します
-  - 選択した BioProject と BioSample の内容から生成された SDRF テンプレートファイルに必要な情報を追加します
+- [SDRF(Sample and Data RelationshipFormat)](/gea/metadata.html#sdrf) ファイルでサンプル属性とサンプル、アレイ、データファイル間の関係性を記述します
+- 選択した BioProject と BioSample の内容から生成された SDRF テンプレートファイルに必要な情報を追加します
 
-### 6\. IDFとSDRFを投稿しデータファイルを検証する 
+### 6. IDFとSDRFを投稿しデータファイルを検証する   {#validation}
 
-  - 登録ウェブシステムから IDF と SDRF を投稿するとアップロードしたデータファイルの[検証処理](/gea/validation.html)が自動的に始まります
-  - 検証処理を通過した登録が査定されます
+- 登録ウェブシステムから IDF と SDRF を投稿するとアップロードしたデータファイルの[検証処理](/gea/validation.html)が自動的に始まります
+- 検証処理を通過した登録が査定されます
 
 ## 登録前のチェックリスト  {#checklist}
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Two-color microarray experiment</a></h4>
 <div class="accordion-content">
 
@@ -125,8 +124,8 @@ GEA 登録インターフェースは二つのサンプルが一つの生デー�
 </div>
 </div>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">More than one technology per experiment</a></h4>
 <div class="accordion-content">
 
@@ -145,14 +144,11 @@ GEA では一つの登録に異なる種類のテクノロジー（マイクロ�
 
 "Microarray"を選択した状態で\[New submission\]をクリックして microarray experimentsubmission を作成します。作成と同時に DDBJ ファイルサーバ (ftp-private.ddbj.nig.ac.jp) に対応する GEA 登録用サブディレクトリが登録者のホーム下に作成されます。このサブディレクトリに[データファイルをアップロード](#upload-data)します。
 
-
 <div class="attention" markdown="1">
 DDBJ センターから登録者に問い合わせた後三か月以上回答が無い場合は Submission をキャンセルいたします。
 </div>
 
-
 {% include image.html url="books/array-sub1.jpg" caption="Microarray experiment submission の新規作成" class="w450" %}
-
 
 登録のステータスには以下のものがあります。 "Data Validated" と "Validation Error" になった登録が査定されます。
 
@@ -172,10 +168,10 @@ DDBJ センターから登録者に問い合わせた後三か月以上回答が
 | Public           | 公開されている状態                     |
 
 
-### 生データと解析済みファイルのアップロード {#upload-data} 
+### 生データと解析済みファイルのアップロード   {#upload-data} 
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">ターミナルによるシークエンスデータの転送 (Linux/Mac OS X)</a></h4>
 <div class="accordion-content">
 
@@ -185,11 +181,11 @@ DDBJ センターから登録者に問い合わせた後三か月以上回答が
 $ scp <Your Files> <D-way Login ID>@ftp-private.ddbj.nig.ac.jp:~/gea/<GEA Submission ID>
 ```
 
-  - \<Your Files\> 転送するファイル。例: file1 file2(file1とfile2)、file\*
+- \<Your Files\> 転送するファイル。例: file1 file2(file1とfile2)、file\*
   (fileではじまる全てのファイル)
-  - \<D-way Login ID\> D-way の Login ID (例 test07)
-  - \<GEA Submission ID\> GEA 登録の Submission ID (例: ESUB000350)
-  - コマンドの例: scp strainA\_1.fastq test07@ftp-private.ddbj.nig.ac.jp:\~/gea/ESUB000350
+- \<D-way Login ID\> D-way の Login ID (例 test07)
+- \<GEA Submission ID\> GEA 登録の Submission ID (例: ESUB000350)
+- コマンドの例: scp strainA\_1.fastq test07@ftp-private.ddbj.nig.ac.jp:\~/gea/ESUB000350
 
 鍵を作成したときに指定したパスフレーズを入力します。
 
@@ -221,12 +217,12 @@ Enter passphrase for key '/home/you/.ssh/id_rsa':
 ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 ```
 
-[« 閉じる](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« 閉じる]</a>
 </div>
 </div>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">WinSCP によるシークエンスデータの転送 (Windows)</a></h4>
 <div class="accordion-content">
 
@@ -242,11 +238,11 @@ DRAへの登録～データの転送 (Windows)～
 転送モードはバイナリモードにします。テキストモードで転送しないでください。
 </div>
 
-  - <span class="bold">File protocol:</span> SFTP
-  - <span class="bold">Host name:</span> ftp-private.ddbj.nig.ac.jp
-  - <span class="bold">Port number:</span> 22
-  - <span class="bold">User name:</span>(D-way の Login ID を入力)
-  - <span class="bold">Password:</span>(空欄のまま)
+- <span class="bold">File protocol:</span> SFTP
+- <span class="bold">Host name:</span> ftp-private.ddbj.nig.ac.jp
+- <span class="bold">Port number:</span> 22
+- <span class="bold">User name:</span>(D-way の Login ID を入力)
+- <span class="bold">Password:</span>(空欄のまま)
 
 <a href="/assets/images/books/winscp1_400.jpg" title="秘密鍵の登録１" class="group1"><img src="/assets/images/books/winscp1_400.jpg" alt="" title="" class="w300"></a>
 
@@ -267,12 +263,12 @@ DRAへの登録～データの転送 (Windows)～
 
 転送したファイルは、ファイルを選択し \[削除\] ボタンをクリックすることで削除できます。
 
-[« 閉じる](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« 閉じる]</a>
 </div>
 </div>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Cyberduck によるシークエンスデータの転送 (Mac OS X)</a></h4>
 <div class="accordion-content">
 
@@ -292,11 +288,11 @@ DRA への登録～データの転送 (Mac)～
 
 Cyberduck の起動画面で、以下のように設定し More Options の "Use Public Key Authentication" をチェックします。
 
-  - <span class="bold">Server:</span> ftp-private.ddbj.nig.ac.jp
-  - <span class="bold">Port:</span> 22
-  - <span class="bold">Username:</span> (D-way の Login ID を入力)
-  - <span class="bold">Password:</span> (空欄のまま)
-  - <span class="bold">Add to Keychain:</span> (チェックを入れる)
+- <span class="bold">Server:</span> ftp-private.ddbj.nig.ac.jp
+- <span class="bold">Port:</span> 22
+- <span class="bold">Username:</span> (D-way の Login ID を入力)
+- <span class="bold">Password:</span> (空欄のまま)
+- <span class="bold">Add to Keychain:</span> (チェックを入れる)
 
 <a href="/assets/images/books/Cyberduck_3.jpg" title="key_authentication" class="group1"><img src="/assets/images/books/Cyberduck_3.jpg" alt="" title="" class="w300"></a>
 
@@ -310,7 +306,7 @@ Cyberduck の起動画面で、以下のように設定し More Options の "Use
 
 <a href="/assets/images/books/Cyberduck_5.jpg" title="transfer" class="group1"><img src="/assets/images/books/Cyberduck_5.jpg" alt="" title="" class="w400"></a>
 
-[« 閉じる](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« 閉じる]</a>
 </div>
 </div>
 
@@ -320,7 +316,7 @@ ftp-private.ddbj.nig.ac.jp サーバに秘密鍵を使って ssh でログイン
 ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 </div>
 
-### Submission  {#Submission}
+### Submission  {#Submission-tab}
 
 四年以内の公開予定日指定、もしくは、データ処理後即日公開を選択します。登録者の名前と所属組織は公開されますがメールアドレスは公開されません。
 
@@ -328,50 +324,40 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 "Delete submission" で投稿前の登録を削除することができます。
 </div>
 
-
 {% include image.html url="books/array-sub2.jpg" caption="登録管理情報を入力します" class="w550" %}
 
-
-### BioProject  {#BioProject}
+### BioProject  {#BioProject-tab}
 
 自身のアカウントで登録済みのBioProjectを一つ選択します。 BioProject が未登録の場合は [BioProject登録サイト](/bioproject/submission.html#bioproject-submission)でプロジェクトを登録します。
 
 他のアカウントで登録された BioProject を参照したい場合は [GEA チームに連絡](/contact-ddbj.html)します。
 
-
 {% include image.html url="books/gea-bp.jpg" caption="GEA 登録で使う BioProject を一つ選択します" class="w550" %}
 
-
-### BioSample  {#BioSample}
+### BioSample  {#BioSample-tab}
 
 自身のアカウントで登録済みの BioSample を選択します。 BioSample が未登録の場合は [BioSample登録サイト](/biosample/submission.html#biosample-submission)でサンプルを登録します。
 
 他のアカウントで登録された BioSample を参照したい場合は [GEA チームに連絡](/contact-ddbj.html)します。
 
-
 {% include image.html url="books/gea-bs.jpg" caption="GEA 登録で使うBioSampleを選択します" class="w550" %}
 
-
-### IDF  {#idf}
+### IDF  {#idf-tab}
 
 [IDF(Investigation Description Format)](/gea/metadata.html#idf) の内容を入力します。
 
 [IDFの例](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=0)
 
-  - Protocol: チェック済みのプロトコールは必須です
-  - Publication: 関連する文献を PubMed ID もしくは DOI で指定します。未公表の文献についてはIDが発行された後に[お知らせください](/contact-ddbj.html)。
-  - Array Design: [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA にアレイデザインが登録されている場合は "A-XXXX-n" のアクセッション番号を記入します。アレイデザインが未登録の場合は GEA 登録用ディレクトリにアレイデザインファイルをアップロードして [新規アレイデザインを登録](/gea/adf.html) します。
-  - Data File Type: マイクロアレイ実験の場合は生データと解析済みデータが必須です。サンプル毎の生データ・解析済みデータファイルの登録を強く推奨します[マイクロアレイ実験に登録可能なファイル形式](/gea/datafile.html#array_data)。
-
+- Protocol: チェック済みのプロトコールは必須です
+- Publication: 関連する文献を PubMed ID もしくは DOI で指定します。未公表の文献についてはIDが発行された後に[お知らせください](/contact-ddbj.html)。
+- Array Design: [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA にアレイデザインが登録されている場合は "A-XXXX-n" のアクセッション番号を記入します。アレイデザインが未登録の場合は GEA 登録用ディレクトリにアレイデザインファイルをアップロードして [新規アレイデザインを登録](/gea/adf.html) します。
+- Data File Type: マイクロアレイ実験の場合は生データと解析済みデータが必須です。サンプル毎の生データ・解析済みデータファイルの登録を強く推奨します[マイクロアレイ実験に登録可能なファイル形式](/gea/datafile.html#array_data)。
 
 {% include image.html url="books/array-idf.jpg" caption="IDF の内容を入力" class="w600" %}
 
-
-### SDRF  {#sdrf}
-
+### SDRF  {#sdrf-tab}
 
 {% include image.html url="books/array-sdrf.jpg" caption="SDRF テンプレートファイルをダウンロード" class="w400" %}
-
 
 [SDRF(Sample and Data Relationship Format)](/gea/metadata.html#sdrf)
 テンプレートファイルをダウンロードして必要な情報を追加します。
@@ -380,43 +366,39 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 自動生成される内容
 
-  - 各Nameカラムと Source Name の Attribute カラム: 選択された BioSample の内容から自動生成されます
-  - SDRF行: 1行 1 BioSample で行が自動生成されます
-  - Protocol: IDF で作成されたプロトコールはSDRFの適切な個所にプロトコール ID (例ESUB000350\_Protocol\_1) として挿入されます
-  - Technology Type: マイクロアレイ登録の場合は "array assay" が固定入力されます
-  - Array Design REF: IDF で指定されたアレイデザインアクセッション番号、もしくは、アレイデザインファイル名が自動入力されます
+- 各Nameカラムと Source Name の Attribute カラム: 選択された BioSample の内容から自動生成されます
+- SDRF行: 1行 1 BioSample で行が自動生成されます
+- Protocol: IDF で作成されたプロトコールはSDRFの適切な個所にプロトコール ID (例ESUB000350\_Protocol\_1) として挿入されます
+- Technology Type: マイクロアレイ登録の場合は "array assay" が固定入力されます
+- Array Design REF: IDF で指定されたアレイデザインアクセッション番号、もしくは、アレイデザインファイル名が自動入力されます
 
 \<Required: fill in the content\> タグを上書きして必須項目を入力します。
 
 追加入力が必要な項目
 
-  - Material Type: [controlled term](/gea/metadata.html#Material_Type) から適切な語句を一つ記入します。
-      - total RNA
-      - polyA RNA
-      - cytoplasmic RNA
-      - nuclear RNA
-      - genomic DNA
-      - protein
-      - other
-  - Label: biotin、 Cy3 や Cy5 等の抽出分子を標識したラベル化合物名を記入します。
-  - Array Data FileとComment\[Array Data File md5\]: 生データファイルのファイル名と [md5 チェックサム値](#supplement-md5) の組を記入します。
-  - Derived Array Data File と Comment\[Derived Array Data File md5\]: 解析済みデータファイルのファイル名と [md5 チェックサム値](#supplement-md5) の組を記入します。
-  - データファイルと md5 チェックサム値の組は [md5sum コマンド](#supplement-md5)の結果を \<GEA submission ID\>.md5 (例 ESUB000001.md5) ファイルとしてデータファイルと一緒に提供することもできます（SDRFと .md5 ファイルの両方がある場合は .md5 の値が優先されます）。
-  - Factor Value\[enter experiment factor name here\]: 実験で研究している「要因」。 growthcondition、genotype、organism part 等の研究で解析している変数のことです。これらの変数の実際の値は "Factor Value\[\]" カラムに記載します。例:
-      - Factor Value\[strain\]
-      - AT76
-      - KU-2003
-      - KU-PI499262
-
+- Material Type: [controlled term](/gea/metadata.html#Material_Type) から適切な語句を一つ記入します。
+    - total RNA
+    - polyA RNA
+    - cytoplasmic RNA
+    - nuclear RNA
+    - genomic DNA
+    - protein
+    - other
+- Label: biotin、 Cy3 や Cy5 等の抽出分子を標識したラベル化合物名を記入します。
+- Array Data FileとComment\[Array Data File md5\]: 生データファイルのファイル名と [md5 チェックサム値](#supplement-md5) の組を記入します。
+- Derived Array Data File と Comment\[Derived Array Data File md5\]: 解析済みデータファイルのファイル名と [md5 チェックサム値](#supplement-md5) の組を記入します。
+- データファイルと md5 チェックサム値の組は [md5sum コマンド](#supplement-md5)の結果を \<GEA submission ID\>.md5 (例 ESUB000001.md5) ファイルとしてデータファイルと一緒に提供することもできます（SDRFと .md5 ファイルの両方がある場合は .md5 の値が優先されます）。
+- Factor Value\[enter experiment factor name here\]: 実験で研究している「要因」。 growthcondition、genotype、organism part 等の研究で解析している変数のことです。これらの変数の実際の値は "Factor Value\[\]" カラムに記載します。例:
+    - Factor Value\[strain\]
+    - AT76
+    - KU-2003
+    - KU-PI499262
 
 {% include image.html url="books/array-sdrf-template.jpg" caption="SDRF テンプレートの図解、登録者が情報を追加する必要がある部分は黄色で示されている" class="w600" %}
 
-
 内容を追加した SDRF を選択して Continue をクリックします。
 
-
 {% include image.html url="books/array-sdrf2.jpg" caption="作成した SDRF ファイルを選択" class="w450" %}
-
 
 ### Overview と投稿  {#submit}
 
@@ -424,19 +406,15 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 "Submit"ボタンをクリックして IDF と SDRF を投稿します。
 
-
 {% include image.html url="books/array-overview.jpg" caption="IDF と SDRF の内容を確認してから投稿" class="w450" %}
 
-
-### 検証処理  {#validation}
+### 検証処理  {#validation-step}
 
 メタデータ投稿時に IDF と SDRF に記載されているデータファイルが対象の登録用ディレクトリにアップロードされていない場合、"Datafile is not uploaded" というエラーメッセージが表示され投稿が中断されます。
 
 Validatorは[validation rule](/gea/validation.html)に従ってメタデータをチェックしエラーとワーニングメッセージを表示します。メタデータを投稿するためにはエラーを解消しておく必要があります。
 
-
 {% include image.html url="books/array-validation.jpg" caption="エラーとワーニングメッセージ" class="w500" %}
-
 
 ### アクセッション番号  {#accession}
 
@@ -444,9 +422,7 @@ Validatorは[validation rule](/gea/validation.html)に従ってメタデータ�
 
 [査読者用トークンを発行](/gea/reviewer-access.html)することでの非公開データへのアクセスを提供することができます。
 
-
 {% include image.html url="books/array-accession.jpg" caption="GEA アクセッション番号" class="w500" %}
-
 
 ## 更新  {#update-submission}
 
@@ -486,8 +462,8 @@ Validatorは[validation rule](/gea/validation.html)に従ってメタデータ�
 
 MD5(Message Digest Algorithm 5) はハッシュ関数であり、与えられたファイルに対してハッシュ値 (MD5値、32桁の英数字)を出力します。ファイルが破損していると MD5 値が変化します。 DRA では、到着したファイルの MD5 値の一致をチェックすることで、ファイルの破損がないかどうか確認しています。
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h3 class="toggle-content-btn"><a href="javascript:void(0)">MD5値の取得(Linux)</a></h3>
 <div class="accordion-content">
 
@@ -499,12 +475,12 @@ $ md5sum file1 file2
 B636E0063E29709B6082F324C76D0911 file2
 ```
 
-[« 閉じる](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« 閉じる]</a>
 </div>
 </div>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h3 class="toggle-content-btn"><a href="javascript:void(0)">MD5値の取得(Mac OS X)</a></h3>
 <div class="accordion-content">
 
@@ -516,12 +492,12 @@ $ md5 file1 file2
 B636E0063E29709B6082F324C76D0911 file2
 ```
 
-[« 閉じる](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« 閉じる]</a>
 </div>
 </div>
 
-
-<div class="accordion-menu" markdown="1">
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h3 class="toggle-content-btn"><a href="javascript:void(0)">MD5値の取得(Windows)</a></h3>
 <div class="accordion-content">
 
@@ -538,6 +514,6 @@ B636E0063E29709B6082F324C76D0911 file2
 
 <a href="/assets/images/books/Fsum3.jpg" title="MD5値の計算を開始" class="group1"><img src="/assets/images/books/Fsum3.jpg" alt="" title="" class="w400"></a>
 
-[« 閉じる](javascript:void(0)){: .close-content-btn}
+<a href="javascript:void(0)" class="close-content-btn">[« 閉じる]</a>
 </div>
 </div>
