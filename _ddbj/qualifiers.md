@@ -109,12 +109,12 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
 
 ## Qualifier key の定義
 
-allele<a name="allele"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#allele)</span> 
+### allele<a name="allele"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#allele)</span> 
 : |  定義  |  allele の名称  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション( " ) 不可)  |
   |  例  |  adh1-1  |
 
-altitude<a name="altitude"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#altitude)</span> 
+### altitude<a name="altitude"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#altitude)</span> 
 : |  定義  |  サンプルを採取した場所の地理的な高度  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
   |  例  |  -256 m<br/>330.12 m  |
