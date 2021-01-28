@@ -68,12 +68,18 @@ $MARGIN_BOTTOM: 1rem
     margin-bottom: 1.5rem
     border-left: solid .6rem $COLOR_KEY
     padding-left: .9rem
+    [data-category="sc"] &
+      border-left-color: $COLOR_SC_KEY
   h3
     border-bottom: .2rem solid $COLOR_KEY_PALE
+    [data-category="sc"] &
+      border-bottom-color: $COLOR_SC_KEY_PALE
     font-size: 1.6rem
     margin-bottom: 1.6rem
   h4
     border-bottom: .1rem solid $COLOR_KEY_PALE
+    [data-category="sc"] &
+      border-bottom-color: $COLOR_SC_KEY_PALE
     font-size: 1.4rem
     margin-bottom: .5rem
   h2,h3
@@ -191,11 +197,13 @@ $MARGIN_BOTTOM: 1rem
       margin-top: -$MARGIN_BOTTOM - 0.1rem
 
   code, pre
-    background-color: $COLOR_LIGHT_VELY_PALE
+    background-color: $COLOR_LIGHT_VERY_PALE
     color: black
     font-size: 1.2rem
     line-height: 1.6
     font-family: 'courier', monospace
+    [data-category="sc"] &
+      background-color: $COLOR_SC_KEY_VERY_PALE
   pre
     padding: .3rem .6rem
     display: inline-block
@@ -205,10 +213,13 @@ $MARGIN_BOTTOM: 1rem
 
     
   .attention
-    background-color: $COLOR_KEY_VELY_PALE
+    background-color: $COLOR_KEY_VERY_PALE
     padding: 1rem 1.6rem
     border-left: .6rem solid $COLOR_KEY_PALE
     margin-bottom: 1.6rem
+    [data-category="sc"] &
+      background-color: $COLOR_SC_KEY_VERY_PALE
+      border-left-color: $COLOR_SC_KEY_PALE
 
   .toggle-content-btn
     display: flex
@@ -227,6 +238,9 @@ $MARGIN_BOTTOM: 1rem
       border-top: .2rem solid $COLOR_KEY
       border-right: .2rem solid $COLOR_KEY
       transform: translateY(-35%) rotate(135deg)
+      [data-category="sc"] &
+        border-top-color: $COLOR_SC_KEY
+        border-right-color: $COLOR_SC_KEY
     &.active
       &::after
         transform: rotate(315deg)
@@ -266,6 +280,8 @@ $MARGIN_BOTTOM: 1rem
     padding: .5rem 2rem .5rem .5rem
     margin: 2rem 2rem
     background-color: $COLOR_KEY_PALE
+    [data-category="sc"] &
+      background-color: $COLOR_SC_KEY_PALE
 
   .nsss-menu
     display: flex
