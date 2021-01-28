@@ -24,7 +24,6 @@ tab_menu:
   - id: report
     title: 成果報告
     url: /sc/report
-
 ---
 
 ## NIG SuperComputer

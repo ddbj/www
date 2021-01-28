@@ -94097,6 +94097,25 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/_sc/guide/index.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_sc/guide/index.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"/_sc/index-e.md": {
 		"cB": 0,
 		"cS": 0,
@@ -107064,6 +107083,19 @@
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
+		},
+	"/assets/images/sc/overview.png": {
+		"ft": 32768,
+		"iS": 442538,
+		"oA": 0,
+		"oAP": "/assets/images/sc/overview.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
 		},
 	"/assets/images/sc/top_image2.png": {
 		"ft": 32768,
