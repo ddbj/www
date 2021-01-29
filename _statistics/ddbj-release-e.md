@@ -4,7 +4,7 @@ lang: en
 title: DDBJ Periodic Release Statistics
 category: statistics
 lang: en
-addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script><script type='text/javascript' src='/www/assets/js/jquery.charts.js'></script>
+addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script><script type='text/javascript' src='/assets/js/jquery.charts.js'></script>
 ---
 
 {: #total-data-volume}
