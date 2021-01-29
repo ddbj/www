@@ -86,7 +86,7 @@ tab_menu:
         url: /ddbj/tpa-e.html
   - id: faq
     title: FAQ
-    url: /faq/en/index-e.html
+    url: /faq/en/index-e.html?keyword%5B%5D=ddbj
   - id: other
     title: Other
     url: /ddbj/index-e.html
