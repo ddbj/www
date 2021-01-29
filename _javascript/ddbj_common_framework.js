@@ -666,14 +666,19 @@
           </ul>
           <ul class="DDBJ_menu -DDBJ_right">
             <li>
-              <form id="DDBJ_searchform">
-                <select id="DDBJ_searchformselect" action="https://www.google.com/cse">
+              <form action="https://www.google.com/cse" id="DDBJ_searchform">
+                <input type="hidden" name="cx" value="003756275038197888315:te8ex5igvqa">
+                <select id="DDBJ_searchformselect">
                   <option value="web">BI-DDBJ Web Sites</option>
                   <option value="ddbj">Annotated/Assembled Sequences</option>
                   <option value="dra">Sequence Read Archive</option>
                 </select>
-                <input type="search" id="DDBJ_searchformfield">
-                <button id="DDBJ_searchformbutton"></button>
+                <input type="hidden" name="ie" value="UTF-8">
+                <input type="text" name="q" id="DDBJ_searchformfield">
+                <button id="DDBJ_searchformbutton" name="sa" value="Search"></button>
+                <input name="siteurl" type="hidden" value="www.ddbj.nig.ac.jp/">
+                <input name="ref" type="hidden" value="">
+                <input name="ss" type="hidden" value="">
               </form>
             </li>
             ${HEADER_RIGHT_MENU.map(item => `
