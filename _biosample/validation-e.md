@@ -35,7 +35,7 @@ tab_menu:
   - id: about biosample
     title: About BioSample
     url: /biosample/about-biosample-e.html
-lang: ja
+lang: en
 ---
 
 This page contains a compilation of the BioSample validation errors and warnings that may be reported during a submission.
