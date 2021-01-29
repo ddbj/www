@@ -9,32 +9,24 @@ lang: en
     <nav class="subview">
       <nav class="facet-search">
         <h2 class="title">Tags</h2>
-        <ul class="tags"></ul>
+        <ul class="tags" data-tab="keyword"></ul>
       </nav>
     </nav>
     <main class="mainview">
-      <div id="ServicesView" class="tagging-list-view" data-appearance-type="panel">
+      <div id="ServicesView" data-appearance-type="panel">
         <nav class="appearance-switch">
           <div class="button -current" data-appearance-value="panel" title="Panel view"></div>
           <div class="button" data-appearance-value="list" title="List view"></div>
         </nav>
-        <ul class="container">
+        <ul class="tagging-list-view">
 
           {% for service in site.data.services.items %}
-          <li class="service taggingitem">
+          <li class="service taggingitem" data-tags="{{ service.tags | join: ',' }},{{ service.provider }}">
             <div class="upper">
               <h2 class="title">
                 <a href="{{ service.service_link[page.lang] }}">{{ service.name }}</a>
               </h2>
-              <ul class="tags">
-                {% for tag in service.tags %}
-                <li class="tag-view" data-tag="{{ site.data.services.dictionary[tag][page.lang] }}">
-                  {{ site.data.services.dictionary[tag][page.lang] }}</li>
-                {% endfor %}
-                {% if service.provider %}
-                <li class="tag-view -reverse" data-tag="{{service.provider}}">{{ service.provider }}</li>
-                {% endif %}
-              </ul>
+              {% include tags.html lang=page.lang tags=service.tags provider=service.provider %}
             </div>
             <p class="description">{{ service.description[page.lang] }}</p>
             <nav class="links">
