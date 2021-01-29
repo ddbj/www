@@ -669,9 +669,9 @@
               <form action="https://www.google.com/cse" id="DDBJ_searchform">
                 <input type="hidden" name="cx" value="003756275038197888315:te8ex5igvqa">
                 <select id="DDBJ_searchformselect">
-                  <option value="web">BI-DDBJ Web Sites</option>
-                  <option value="ddbj">Annotated/Assembled Sequences</option>
-                  <option value="dra">Sequence Read Archive</option>
+                  <option value="web">DDBJ Web Sites</option>
+                  <!--<option value="ddbj">Annotated/Assembled Sequences</option>
+                  <option value="dra">Sequence Read Archive</option>-->
                 </select>
                 <input type="hidden" name="ie" value="UTF-8">
                 <input type="text" name="q" id="DDBJ_searchformfield">
