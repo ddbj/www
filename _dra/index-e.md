@@ -41,10 +41,10 @@ panels:
 - title: Search
   url: https://ddbj.nig.ac.jp/DRASearch/
   icon: ../assets/images/icon-search_analysis.png
-- title: How_to_submit
+- title: How to submit
   url: /dra/submission-e.html
   icon: ../assets/images/icon-search_analysis.png
-- title: Login_and_submit
+- title: Login and submit
   url: https://ddbj.nig.ac.jp/D-way/
   icon: ../assets/images/icon-search_analysis.png
 lang: en

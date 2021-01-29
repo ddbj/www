@@ -49,7 +49,7 @@ tab_menu:
   - id: about gea
     title: About GEA
     url: /gea/about-gea-e.html
-lang: ja
+lang: en
 ---
 
 This page contains a compilation of the GEA validation errors and
