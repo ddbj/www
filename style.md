@@ -76,22 +76,6 @@ id 属性値のルール
 
 ## 見出し 数字 id <a name="454"></a>
 
-## インライン id 属性付与 {#inlineid}
-
-```
-A simple paragraph with an ID attribute. {: #nobottom}
-```
-
-A simple paragraph with an ID attribute. {: #nobottom}
-
-## インライン class 属性付与 {#class}
-
-```
-A simple paragraph with an ID attribute. {: .nobottom}
-```
-
-A simple paragraph with an ID attribute. {: .nobottom}
-
 ## リスト {#list}
 
 ### リスト
