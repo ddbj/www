@@ -159,8 +159,8 @@ export default function taggingListView() {
             selectedTags[tagKey].splice(selectedTags[tagKey].indexOf(tag), 1);
           }
           // URLパラメータにセット
-          const parameters = selectedTags.count ? `?${ $.param(selectedTags) }` : '';
-          window.history.pushState(selectedTags, '', `${ path }${ parameters }`);
+          const serialized = Object.keys(selectedTags).filter(key => selectedTags[key].length > 0).map( key => `${key}=${selectedTags[key].map(tag => tag)}` ).join('&');
+          window.history.pushState(selectedTags, '', `${ path }${ selectedTags.count ? `?${serialized}` : '' }`);
           updateTag();
         }));
       });
