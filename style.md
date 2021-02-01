@@ -4,6 +4,10 @@ title: スタイル
 lang: ja
 ---
 
+## 参考　{#reference}
+
+[kramdown syntax](https://kramdown.gettalong.org/syntax.html)
+
 ## 見出し {#heading}
 
 ```
@@ -69,8 +73,35 @@ id 属性値のルール
 ```
 
 1. リスト1
+    1. ネストリスト1
     1. ネストリスト2
-1. リスト3
+1. リスト2
+
+## 画像 {#image}
+
+```
+![](/assets/images/parts/tsv.png)
+```
+
+![](/assets/images/parts/tsv.png)
+
+class 付き
+
+```
+![](/assets/images/parts/tsv.png){:.tsv}
+```
+
+![](/assets/images/parts/tsv.png){:.tsv}
+
+## figure {#figure} 
+
+[Jekyll includes](https://jekyllrb-ja.github.io/docs/includes/) で記載。
+
+```
+{% include image.html url="books/datamodel1.jpg" caption="三つの菌株のゲノム配列を登録" class="w450" %}
+```
+
+{% include image.html url="books/datamodel1.jpg" caption="三つの菌株のゲノム配列を登録" class="w450" %}
 
 ## Table {#table}
 
