@@ -5,7 +5,7 @@ lang: ja
 ---
 
 
-## 参考　{#reference}
+## 参考 {#ref}
 
 [kramdown syntax](https://kramdown.gettalong.org/syntax.html)
 
@@ -133,9 +133,9 @@ class 付き
 ## pre
 
 ```
-```
+\`\`\`
 puts "Hello"
-```
+\`\`\`
 ```
 
 ```
