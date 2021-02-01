@@ -26,11 +26,11 @@ unaligned bamの場合、リファレンス配列や対応表の指定は必要�
 パラグラフ内で改行する場合、半角空白二個を入れる。
 
 ```
-以下の unaligned bam ファイルの登録をサポートしています。1 Run に 1 bamファイルを指定してください。　　
+以下の unaligned bam ファイルの登録をサポートしています。1 Run に 1 bamファイルを指定してください。    
 unaligned bamの場合、リファレンス配列や対応表の指定は必要ありません。
 ```
 
-以下の unaligned bam ファイルの登録をサポートしています。1 Run に 1 bamファイルを指定してください。　　
+以下の unaligned bam ファイルの登録をサポートしています。1 Run に 1 bamファイルを指定してください。    
 unaligned bamの場合、リファレンス配列や対応表の指定は必要ありません。
 
 ## 見出し {#heading}
@@ -76,29 +76,29 @@ id 属性値のルール
 
 ## 見出し 数字 id <a name="454"></a>
 
-## インライン id 属性付与{#inline-id}
+## インライン id 属性付与{#inlineid}
 
 ```
-{:#no-bottom}A simple paragraph with an ID attribute.
+{:#nobottom}A simple paragraph with an ID attribute.
 OR
-A simple paragraph with an ID attribute.{:#no-bottom}
+A simple paragraph with an ID attribute.{:#nobottom}
 ```
 
-{:#no-bottom}A simple paragraph with an ID attribute.
+{:#nobottom}A simple paragraph with an ID attribute.
 OR
-A simple paragraph with an ID attribute.{:#no-bottom}
+A simple paragraph with an ID attribute.{:#nobottom}
 
-## インライン class 属性付与{#inline-class}
+## インライン class 属性付与{#class}
 
 ```
-{:.no-bottom}A simple paragraph with an ID attribute.
+{:.nobottom}A simple paragraph with an ID attribute.
 OR
-A simple paragraph with an ID attribute.{:.no-bottom}
+A simple paragraph with an ID attribute.{:.nobottom}
 ```
 
-{:.no-bottom}A simple paragraph with an ID attribute.
+{:.nobottom}A simple paragraph with an ID attribute.
 OR
-A simple paragraph with an ID attribute.{:.no-bottom}
+A simple paragraph with an ID attribute.{:.nobottom}
 
 ## リスト {#list}
 
@@ -180,23 +180,13 @@ class 付き
 
 ## pre {#pre}
 
-\`\`\`
-puts "Hello"
-\`\`\`
+\`\`\`<br>
+puts "Hello"<br>
+\`\`\`<br>
 
 ```
 puts "Hello"
 ```
-
-## 引用 {#quote}
-
-```
-> 引用1
-> 引用2
-```
-
-> 引用1
-> 引用2
 
 ## 強調 {#bold}
 
@@ -343,6 +333,3 @@ markdown="1" が無いと HTML タグ内の markdown が処理されない。
 : <span class="red">研究対象者に由来するデータを DDBJ センターが運営するデータベースに登録する場合、研究対象者の尊厳及び人権は、適用されるべき法令、指針、ガイドライン、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。原則として、研究対象者を直接特定し得る情報はメタデータから取り除いてください。
 ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#human)を熟読してください。</span>
 </div>
-
-
-
