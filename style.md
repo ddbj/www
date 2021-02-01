@@ -6,7 +6,15 @@ lang: ja
 
 ## Table {#table}
 
-ヘッダーあり
+### ヘッダーあり
+
+```
+| Default aligned | Left aligned | Center aligned | Right aligned|
+|---|
+| First body part | Second cell | Third cell | fourth cell|
+| Second line |foo | **strong** | baz|
+| Third line |quux | baz | bar|
+```
 
 | Default aligned | Left aligned | Center aligned | Right aligned|
 |---|
@@ -14,7 +22,15 @@ lang: ja
 | Second line |foo | **strong** | baz|
 | Third line |quux | baz | bar|
 
-ヘッダーあり・寄せ
+### ヘッダーあり・寄せ
+
+```
+| Default aligned | Left aligned | Center aligned | Right aligned|
+|---|:---|:---:|---:|
+| First body part | Second cell | Third cell | fourth cell|
+| Second line |foo | **strong** | baz|
+| Third line |quux | baz | bar|
+```
 
 | Default aligned | Left aligned | Center aligned | Right aligned|
 |---|:---|:---:|---:|
@@ -22,14 +38,29 @@ lang: ja
 | Second line |foo | **strong** | baz|
 | Third line |quux | baz | bar|
 
-ヘッダーなし
+### ヘッダーなし
+
+```
+| Default aligned | Left aligned | Center aligned | Right aligned|
+| First body part | Second cell | Third cell | fourth cell|
+| Second line |foo | strong | baz|
+| Third line |quux | baz | bar|
+```
 
 | Default aligned | Left aligned | Center aligned | Right aligned|
 | First body part | Second cell | Third cell | fourth cell|
 | Second line |foo | strong | baz|
 | Third line |quux | baz | bar|
 
-ヘッダーなし・寄せ
+### ヘッダーなし・寄せ
+
+```
+|---|:---|:---:|---:|
+| Default aligned | Left aligned | Center aligned | Right aligned|
+| First body part | Second cell | Third cell | fourth cell|
+| Second line |foo | strong | baz|
+| Third line |quux | baz | bar|
+```
 
 |---|:---|:---:|---:|
 | Default aligned | Left aligned | Center aligned | Right aligned|
@@ -37,7 +68,15 @@ lang: ja
 | Second line |foo | strong | baz|
 | Third line |quux | baz | bar|
 
-table に class="test" を付与1。
+table に class 属性を付与。例1
+
+```
+{:.test}
+| Default aligned | Left aligned | Center aligned | Right aligned|
+| First body part | Second cell | Third cell | fourth cell|
+| Second line |foo | strong | baz|
+| Third line |quux | baz | bar|
+```
 
 {:.test}
 | Default aligned | Left aligned | Center aligned | Right aligned|
@@ -45,7 +84,15 @@ table に class="test" を付与1。
 | Second line |foo | strong | baz|
 | Third line |quux | baz | bar|
 
-table に class="test" を付与2。
+table に class 属性を付与。例2
+
+```
+| Default aligned | Left aligned | Center aligned | Right aligned|
+| First body part | Second cell | Third cell | fourth cell|
+| Second line |foo | strong | baz|
+| Third line |quux | baz | bar|
+{:.test}
+```
 
 | Default aligned | Left aligned | Center aligned | Right aligned|
 | First body part | Second cell | Third cell | fourth cell|
@@ -53,16 +100,7 @@ table に class="test" を付与2。
 | Third line |quux | baz | bar|
 {:.test}
 
-## Anchor 1 {#anchor1}
+## ページ内リンク {#anchor}
 
-[anchor link 1](#anchor1)  
+[anchor link](#anchor)  
 
-## Anchor 2 {#anchor1}
-
-[anchor link 1](#anchor1)  
-
-## Anchor 3 {#anchor1}
-
-[anchor link 1](#anchor1)  
-[anchor link 2](#anchor2)  
-[anchor link 3](#anchor3)  
