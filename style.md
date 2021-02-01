@@ -79,26 +79,18 @@ id 属性値のルール
 ## インライン id 属性付与 {#inlineid}
 
 ```
-{:#nobottom}A simple paragraph with an ID attribute.
-OR
-A simple paragraph with an ID attribute.{:#nobottom}
+A simple paragraph with an ID attribute. {: #nobottom}
 ```
 
-{:#nobottom}A simple paragraph with an ID attribute.
-
-A simple paragraph with an ID attribute.{:#nobottom}
+A simple paragraph with an ID attribute. {: #nobottom}
 
 ## インライン class 属性付与 {#class}
 
 ```
-{:.nobottom}A simple paragraph with an ID attribute.
-OR
-A simple paragraph with an ID attribute.{:.nobottom}
+A simple paragraph with an ID attribute. {: .nobottom}
 ```
 
-{:.nobottom}A simple paragraph with an ID attribute.
-
-A simple paragraph with an ID attribute.{:.nobottom}
+A simple paragraph with an ID attribute. {: .nobottom}
 
 ## リスト {#list}
 
@@ -145,10 +137,10 @@ A simple paragraph with an ID attribute.{:.nobottom}
 class 付き
 
 ```
-![](/assets/images/parts/tsv.png){:.tsv}
+![](/assets/images/parts/tsv.png){: .tsv}
 ```
 
-![](/assets/images/parts/tsv.png){:.tsv}
+![](/assets/images/parts/tsv.png){: .tsv}
 
 ## figure {#figure} 
 
