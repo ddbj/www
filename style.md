@@ -121,10 +121,10 @@ id 属性値のルール
 class 付き
 
 ```
-![](/assets/images/parts/tsv.png){: .tsv}
+![](/assets/images/parts/tsv.png){:.tsv}
 ```
 
-![](/assets/images/parts/tsv.png){: .tsv}
+![](/assets/images/parts/tsv.png){:.tsv}
 
 ## figure {#figure} 
 
