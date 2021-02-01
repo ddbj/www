@@ -1,51 +1,115 @@
 agd:
-  en: AMED Genome Group Sharing Database (AGD)
-  ja: AMED Genome Group Sharing Database (AGD)
+  short:
+    en: AGD
+    ja: AGD
+  full:
+    en: AMED Genome Group Sharing Database (AGD)
+    ja: AMED Genome Group Sharing Database (AGD)
 arsa:
-  en: ARSA
-  ja: ARSA
+  short:
+    en: ARSA
+    ja: ARSA
+  full:
+    en: ARSA
+    ja: ARSA
 bioproject:
-  en: BioProject
-  ja: BioProject
+  short:
+    en: BioProject
+    ja: BioProject
+  full:
+    en: BioProject
+    ja: BioProject
 biosample:
-  en: BioSample
-  ja: BioSample
+  short:
+    en: BioSample
+    ja: BioSample
+  full:
+    en: BioSample
+    ja: BioSample
 blast:
-  en: BLAST
-  ja: BLAST
+  short:
+    en: BLAST
+    ja: BLAST
+  full:
+    en: BLAST
+    ja: BLAST
 clustalw:
-  en: ClustalW
-  ja: ClustalW
+  short:
+    en: ClustalW
+    ja: ClustalW
+  full:
+    en: ClustalW
+    ja: ClustalW
 ddbj:
-  en: Annotated/Assembled Sequences (DDBJ)
-  ja: Annotated/Assembled Sequences (DDBJ)
+  short:
+    en: DDBJ
+    ja: DDBJ
+  full:
+    en: Annotated/Assembled Sequences (DDBJ)
+    ja: Annotated/Assembled Sequences (DDBJ)
 dta:
-  en: Trace Archive
-  ja: Trace Archive
+  short:
+    en: DTA
+    ja: DTA
+  full:
+    en: DDBJ Trace Archive (DTA)
+    ja: DDBJ Trace Archive (DTA)
 dra:
-  en: Sequence Read Archive (DRA)
-  ja: Sequence Read Archive (DRA)
+  short:
+    en: DRA
+    ja: DRA
+  full:
+    en: Sequence Read Archive (DRA)
+    ja: Sequence Read Archive (DRA)
 jvar:
-  en: Japan Variation Database
-  ja: Japan Variation Database
+  short:
+    en: JVar
+    ja: JVar
+  full:
+    en: Japan Variation Database (JVar)
+    ja: Japan Variation Database (JVar)
 ftp:
-  en: FTP
-  ja: FTP
+  short:
+    en: FTP
+    ja: FTP
+  full:
+    en: FTP
+    ja: FTP
 gea:
-  en: Genomic Expression Archive (GEA)
-  ja: Genomic Expression Archive (GEA)
+  short:
+    en: GEA
+    ja: GEA
+  full:
+    en: Genomic Expression Archive (GEA)
+    ja: Genomic Expression Archive (GEA)
 getentry:
-  en: getentry
-  ja: getentry
+  short:
+    en: getentry
+    ja: getentry
+  full:
+    en: getentry
+    ja: getentry
 jga:
-  en: Japanese Genotype-phenotype Archive (JGA)
-  ja: Japanese Genotype-phenotype Archive (JGA)
+  short:
+    en: JGA
+    ja: JGA
+  full:
+    en: Japanese Genotype-phenotype Archive (JGA)
+    ja: Japanese Genotype-phenotype Archive (JGA)
 pipeline:
-  en: Pipeline
-  ja: Pipeline
+  short:
+    en: Pipeline
+    ja: Pipeline
+  full:
+    en: Pipeline
+    ja: Pipeline
 top:
-  en: DDBJ Center
-  ja: DDBJ Center
+  short:
+    en: DDBJ Center
+    ja: DDBJ Center
+  full:
+    en: DDBJ Center
+    ja: DDBJ Center
 
 
 faq:
