@@ -2,10 +2,6 @@
 layout: children
 title: 活動
 lang: ja
-tag_label:
-  icm:
-    en: The Reports for International Collaborators Meetings
-    ja: 国際実務者会議報告
 ---
 <div id="NavigationAndMainView">
   <div class="inner">
@@ -59,7 +55,7 @@ tag_label:
                 <p>{{ activity.info }}</p>
           {% endcase %}
           {% endcapture %}
-          {% include activity-view.html tag="paper" label=activity.title date=activity.date date_label=date_label %}
+          {% include activity-view.html tag=activity.keyword label=activity.title date=activity.date date_label=date_label %}
         {% endfor %}
       
         {% comment %} 報告書 {% endcomment %}
@@ -86,7 +82,7 @@ tag_label:
         {% assign activities = site.activities | where: "category", "icm" | where: "lang", page.lang %}
         {% for activity in activities %}
           {% assign date_label = activity.start_date | date: "%Y / %m / %d" %}
-          {% assign tag_label = page.tag_label.icm[page.lang] %}
+          {% assign tag_label = site.data.achievements.dictionary.icm[page.lang] %}
           {% assign body = activity.content | strip_html | truncate: 100 %}
           {% include activity-view.html tag="icm" label=activity.title date=activity.start_date date_label=date_label %}
         {% endfor %}

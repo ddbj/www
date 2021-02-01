@@ -3160,11 +3160,14 @@ items:
 
 dictionary:
   paper:
-    en: Papers
+    en: Paper
     ja: 論文
   presentation:
-    en: Presentations
+    en: Presentation
     ja: 講演発表
   book:
-    en: Books
+    en: Book
     ja: 出版物
+  icm:
+    en: INSDC meeting report
+    ja: 国際実務者会議報告
