@@ -4,19 +4,6 @@ service_name: Trace Archive
 title: DTA について
 category: dta
 current_tab: about dta
-tab_menu:
-  - id: home
-    title: Home
-    url: /dta/index.html
-  - id: submission
-    title: Submission
-    url: /dta/submission.html
-  - id: downloads
-    title: Downloads
-    url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dta/
-  - id: about dta
-    title: About DTA
-    url: /dta/about-dta.html
 lang: ja
 ---
 

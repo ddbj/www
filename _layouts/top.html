@@ -15,26 +15,7 @@ layout: default
         <div class="description">{{ page.description }}</div>
       </header>
 
-      {% if page.tab_menu %}
-      <nav class="tab-menu-view">
-        <ul class="tabmenucontainer">
-          {% for item in page.tab_menu %}
-          <li class="{% if item.children %} -haschild{% endif %}{% if page.current_tab == item.id %} -current{% endif %}">
-            <a href="{{ item.url }}">{{ item.title }}</a>
-            {% if item.children %}
-            <ul>
-              {% for childitem in item.children %}
-              <li>
-                <a href="{{ childitem.url }}">{{ childitem.title }}</a>
-              </li>
-              {% endfor %}
-            </ul>
-            {% endif %}
-          </li>
-          {% endfor %}
-        </ul>
-      </nav>
-      {% endif %}
+      {% include tab-menu.html %}
 
       {% if page.category != 'top' %}
       {% include breadcrumb.html lang=page.lang %}

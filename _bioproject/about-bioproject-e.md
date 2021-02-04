@@ -4,28 +4,6 @@ service_name: BioProject
 title: About BioProject
 category: bioproject
 current_tab: about bioProject
-tab_menu:
-  - id: home
-    title: Home
-    url: /bioproject/index-e.html
-  - id: handbook
-    title: Handbook
-    url: /bioproject/submission-e.html
-  - id: faq
-    title: FAQ
-    url: /faq/en/index-e.html?keyword%5B%5D=bioproject
-  - id: search
-    title: Search
-    url: http://ddbj.nig.ac.jp/BPSearch/
-  - id: downloads
-    title: Downloads
-    url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/bioproject
-    children:
-      - title: XML Schema
-        url: https://github.com/ddbj/pub/tree/master/docs/bioproject/xsd
-  - id: about bioProject
-    title: About BioProject
-    url: /bioproject/about-bioproject-e.html
 lang: en
 ---
 

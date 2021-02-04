@@ -2860,6 +2860,14 @@
 		"oAP": "/_data/services.yml",
 		"oF": 0
 		},
+	"/_data/tab_menu.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_data/tab_menu.yml",
+		"oF": 0
+		},
 	"/_ddbj/assembly-e.md": {
 		"cB": 0,
 		"cS": 0,

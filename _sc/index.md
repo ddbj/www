@@ -5,25 +5,6 @@ title: 遺伝研スーパーコンピュータシステム
 category: sc
 lang: ja
 current_tab: home
-tab_menu:
-  - id: home
-    title: Home
-    url: /sc/
-  - id: guide
-    title: システム利用案内
-    url: /sc/guide
-  - id: advanced-guide
-    title: 活用方法紹介
-    url: /sc/advanced-guide
-  - id: application
-    title: 各種申請
-    url: /sc/application
-  - id: operation
-    title: 稼働状況
-    url: /sc/operation
-  - id: report
-    title: 成果報告
-    url: /sc/report
 ---
 
 ## NIG SuperComputer
