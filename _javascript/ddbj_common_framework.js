@@ -665,6 +665,7 @@
             `).join('')}
           </ul>
           <ul class="DDBJ_menu -DDBJ_right">
+            ${script.dataset.search === 'true' ? `
             <li>
               <form action="https://www.google.com/cse" id="DDBJ_searchform">
                 <input type="hidden" name="cx" value="003756275038197888315:te8ex5igvqa">
@@ -681,6 +682,7 @@
                 <input name="ss" type="hidden" value="">
               </form>
             </li>
+            ` : ''}
             ${HEADER_RIGHT_MENU.map(item => `
             <li><a href="${item.uri[language]}">${item.label[language]}</a></li>
             `).join('')}
