@@ -364,8 +364,8 @@
           ja: '講習会'
         },
         uri: {
-          en: '/activities/?keyword%5B%5D=training',
-          ja: '/activities/index-e?keyword%5B%5D=training'
+          en: '/activities/?tag=training',
+          ja: '/activities/index-e?tag=training'
         }
       },
       {

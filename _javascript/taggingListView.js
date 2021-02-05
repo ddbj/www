@@ -95,7 +95,7 @@ export default function taggingListView() {
       }
       // ファセット検索用ビューの生成
       let html = '';
-      const facetSearchTags = facetSearch.querySelector(':scope .tags[data-tab="keyword"]');
+      const facetSearchTags = facetSearch.querySelector(':scope .tags[data-tab="tag"]');
       for (const tags of [categoryTags, affiliationTags]) {
         for (const tag in tags) {
           html += `<li class="tag-view${affiliationTags[tag] === undefined ? '' : ' -reverse'}" data-tag="${tag}"><span class="label">${tagLabels[tag]}</span><span class="count">${tags[tag].length}</span></li>`;

@@ -27,7 +27,7 @@ bioproject:
     url: /bioproject/submission.html
   - id: faq
     title: FAQ
-    url: /faq/ja/index.html?keyword%5B%5D=bioproject
+    url: /faq/ja/index.html?tag=bioproject
   - id: search
     title: Search
     url: http://ddbj.nig.ac.jp/BPSearch/
@@ -59,7 +59,7 @@ biosample:
     url: /biosample/validation-e.html
   - id: faq
     title: FAQ
-    url: /faq/en/index-e.html?keyword%5B%5D=biosample
+    url: /faq/en/index-e.html?tag=biosample
   - id: search
     title: Search
     url: http://ddbj.nig.ac.jp/BSSearch/
@@ -155,7 +155,7 @@ ddbj:
         url: /ddbj/tpa.html
   - id: faq
     title: FAQ
-    url: /faq/ja/index.html?keyword%5B%5D=ddbj
+    url: /faq/ja/index.html?tag=ddbj
   - id: other
     title: Other
     url: /ddbj/index.html
@@ -181,7 +181,7 @@ dra:
         url: https://github.com/ddbj/pub/tree/master/docs/dra
   - id: faq
     title: FAQ
-    url: /faq/ja/index.html?keyword%5B%5D=dra
+    url: /faq/ja/index.html?tag=dra
   - id: search
     title: Search
     url: https://ddbj.nig.ac.jp/DRASearch/
@@ -243,7 +243,7 @@ gea:
         url: /gea/reviewer-access-e.html
   - id: faq
     title: FAQ
-    url: /faq/en/index-e.html?keyword%5B%5D=gea
+    url: /faq/en/index-e.html?tag=gea
   - id: search
     title: Search (AOE)
     url: http://aoe.dbcls.jp/
@@ -287,7 +287,7 @@ jga:
         url: https://github.com/ddbj/pub/tree/master/docs/jga/xsd/
   - id: faq
     title: FAQ
-    url: /faq/en/index-e.html?keyword%5B%5D=jga
+    url: /faq/en/index-e.html?tag=jga
 
 sc:
   - id: home
