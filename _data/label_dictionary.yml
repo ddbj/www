@@ -112,9 +112,10 @@ top:
     ja: DDBJ Center
 
 
-faq:
-  en: FAQ
-  ja: よくある質問
-news:
-  en: News
-  ja: ニュース
+category:
+  faq:
+    en: FAQ
+    ja: よくある質問
+  news:
+    en: News
+    ja: ニュース
