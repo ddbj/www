@@ -4,6 +4,7 @@ service_name: Japanese Genotype-phenotype Archive
 title: Submission to JGA
 category: jga
 current_tab: submission
+lang: en
 ---
 
 ## Submission Guide  {#submission}

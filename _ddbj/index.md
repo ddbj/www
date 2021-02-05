@@ -4,6 +4,7 @@ title: DDBJ Annotated/Assembled Sequences
 service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: home
+lang: ja
 ---
 
 DDBJ（DNA Data Bank of Japan）は国際塩基配列データベースを共同構築する [INSDC](/about/insdc.html)（International Nucleotide Sequence Database

@@ -1,7 +1,7 @@
 ---
 layout: tabbed_indexed_content
 title: Nucleotide Sequence Submission
-category: services
+category: ddbj
 current_tab: submission
 lang: en
 related_pages:

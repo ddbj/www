@@ -311,9 +311,9 @@
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/_activities/index.html",
-		"oF": 1
+		"oF": 0
 		},
 	"/_activities/insdc_meeting/2002.md": {
 		"cB": 0,
@@ -12453,63 +12453,6 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_metabobank/index.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"/_news/archive-2013-e.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_news/archive-2013-e.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"/_news/archive-2015.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_news/archive-2015.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"/_news/archive-2016-e.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_news/archive-2016-e.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -49283,25 +49226,6 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_news/en/2020-11-02.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_news/en/2020-11-02.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
 	"/_news/en/2020-11-06-e.md": {
 		"cB": 0,
 		"cS": 0,
@@ -49454,7 +49378,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_news/en/2020-12-07.md": {
+	"/_news/en/2020-12-07-e.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -49464,7 +49388,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_news/en/2020-12-07.html",
+		"oAP": "/_news/en/2020-12-07-e.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -49473,7 +49397,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_news/en/2020-12-10.md": {
+	"/_news/en/2020-12-10-e.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -49483,7 +49407,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_news/en/2020-12-10.html",
+		"oAP": "/_news/en/2020-12-10-e.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -49492,7 +49416,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_news/en/2020-12-14.md": {
+	"/_news/en/2020-12-14-e.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -49502,7 +49426,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_news/en/2020-12-14.html",
+		"oAP": "/_news/en/2020-12-14-e.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -49511,7 +49435,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_news/en/2020-12-23.md": {
+	"/_news/en/2020-12-23-e.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -49521,7 +49445,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_news/en/2020-12-23.html",
+		"oAP": "/_news/en/2020-12-23-e.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -49530,7 +49454,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_news/en/2020-12-24.md": {
+	"/_news/en/2020-12-24-e.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -49540,7 +49464,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_news/en/2020-12-24.html",
+		"oAP": "/_news/en/2020-12-24-e.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -49549,7 +49473,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_news/en/2021-01-04.md": {
+	"/_news/en/2021-01-04-e.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -49559,7 +49483,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_news/en/2021-01-04.html",
+		"oAP": "/_news/en/2021-01-04-e.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -49568,7 +49492,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_news/en/2021-01-12.md": {
+	"/_news/en/2021-01-12-e.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -49578,7 +49502,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_news/en/2021-01-12.html",
+		"oAP": "/_news/en/2021-01-12-e.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -49587,7 +49511,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_news/en/2021-01-18.md": {
+	"/_news/en/2021-01-18-e.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -49597,7 +49521,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_news/en/2021-01-18.html",
+		"oAP": "/_news/en/2021-01-18-e.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -49606,7 +49530,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_news/en/2021-01-19.md": {
+	"/_news/en/2021-01-19-e.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -49616,7 +49540,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_news/en/2021-01-19.html",
+		"oAP": "/_news/en/2021-01-19-e.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -49625,7 +49549,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_news/en/2021-01-25.md": {
+	"/_news/en/2021-01-25-e.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -49635,7 +49559,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_news/en/2021-01-25.html",
+		"oAP": "/_news/en/2021-01-25-e.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -49644,7 +49568,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_news/en/2021-01-26.md": {
+	"/_news/en/2021-01-26-e.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -49654,7 +49578,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_news/en/2021-01-26.html",
+		"oAP": "/_news/en/2021-01-26-e.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -49663,7 +49587,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_news/en/2021-01-27.md": {
+	"/_news/en/2021-01-27-e.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -49673,7 +49597,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_news/en/2021-01-27.html",
+		"oAP": "/_news/en/2021-01-27-e.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -49682,7 +49606,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_news/en/2021-01-28.md": {
+	"/_news/en/2021-01-28-e.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -49692,7 +49616,7 @@
 		"ft": 4096,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/_news/en/2021-01-28.html",
+		"oAP": "/_news/en/2021-01-28-e.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -93490,7 +93414,7 @@
 		"oAP": "/_sass/object/component/_md-content.css",
 		"oF": 0,
 		"oS": 0,
-		"sct": 1
+		"sct": 0
 		},
 	"/_sass/object/component/_multi-column-view.sass": {
 		"aP": 0,
@@ -93854,7 +93778,7 @@
 		"oAP": "/_sass/object/utility/_helper.css",
 		"oF": 0,
 		"oS": 0,
-		"sct": 1
+		"sct": 0
 		},
 	"/_sc/analysis-environment-for-individual-genomes.md": {
 		"cB": 0,
