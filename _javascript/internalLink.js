@@ -57,10 +57,12 @@ export default function internalLink() {
         <ul>
           ${[...headings].map(heading => {
             const date = $(heading).next('.news_date');
+            const newHeading = $(heading).clone();
+            newHeading.children().remove();
             return `
             <li class="${heading.tagName}">
               <a href="#${heading.id}" data-target="${heading.id}">
-                ${heading.textContent}
+                ${newHeading.text()}
                 ${date.length ? `<span class="nav_date">${date.text()}</span>` : ''}
               </a>
             </li>

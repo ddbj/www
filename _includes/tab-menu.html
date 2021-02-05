@@ -1,7 +1,7 @@
-{% if page.tab_menu %}
+{% if site.data.tab_menu[page.category] %}
 <nav class="tab-menu-view">
   <ul class="tabmenucontainer">
-    {% for item in page.tab_menu %}
+    {% for item in site.data.tab_menu[page.category] %}
     <li class="{% if item.children %} -haschild{% endif %}{% if page.current_tab == item.id %} -current{% endif %}">
       <a href="{{ item.url }}">{{ item.title }}</a>
       {% if item.children %}
@@ -18,3 +18,4 @@
   </ul>
 </nav>
 {% endif %}
+
