@@ -440,7 +440,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn061020_2"><a href="#wn061020_2">塩基配列登録のための参考資料の更新</a></h2>
   <div class="news_date">2006年10月20日</div>
-  <div class="news_content"><a href="/activities/icm/2006">第19回国際実務者会議</a>による決定事項に基づき，<a href="/ddbj/flat-file.html">塩基配列登録に関する参考資料</a>が更新されました。</div>
+  <div class="news_content"><a href="/activities/insdc_meeting/2006">第19回国際実務者会議</a>による決定事項に基づき，<a href="/ddbj/flat-file.html">塩基配列登録に関する参考資料</a>が更新されました。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>
@@ -541,7 +541,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn060929_2"><a href="#wn060929_2">第19回国際実務者会議報告公開</a></h2>
   <div class="news_date">2006年09月29日</div>
-  <div class="news_content">DDBJ, EMBL-Bank/EBI, GenBank/NCBI の３大国際 DNA データバンクは，国際塩基配列データベース共同構築の運営・推進を図るために，国際実務者会議を年１回開催し，三極の活動の年次報告や，<a href="http://www.insdc.org/">INSDC; International Nucleotide Sequence Database Collaboration</a> 運用上の実務的な問題を討論しています。2006年5月に米国で開催された第19回国際実務者会議でのの決定事項から，ユーザの皆様に関連のある内容を，<a href="/activities/icm/2006">「第19回国際実務者会議報告報告」</a>としてDDBJ HP で公開しました。この報告は，10月3日に配信予定の DDBJ メールマガジンNo.28 にも掲載されます。</div>
+  <div class="news_content">DDBJ, EMBL-Bank/EBI, GenBank/NCBI の３大国際 DNA データバンクは，国際塩基配列データベース共同構築の運営・推進を図るために，国際実務者会議を年１回開催し，三極の活動の年次報告や，<a href="http://www.insdc.org/">INSDC; International Nucleotide Sequence Database Collaboration</a> 運用上の実務的な問題を討論しています。2006年5月に米国で開催された第19回国際実務者会議でのの決定事項から，ユーザの皆様に関連のある内容を，<a href="/activities/insdc_meeting/2006">「第19回国際実務者会議報告報告」</a>としてDDBJ HP で公開しました。この報告は，10月3日に配信予定の DDBJ メールマガジンNo.28 にも掲載されます。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: </span>

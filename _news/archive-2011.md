@@ -202,7 +202,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn110922"><a href="#wn110922">第24回国際実務者会議 報告</a></h2>
   <div class="news_date">2011年09月22日</div>
-  <div class="news_content">DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a>, <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a> で構成される <a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a> は, その共同事業の運営・推進を図るために, 国際実務者会議を年１回開催しています。2011年は 5月23日-27日に 大阪で開催され, <a href="/index.html" target="_blank">DDBJ</a>, <a href="http://www.ebi.ac.uk/embl/" target="_blank">EMBL-Bank</a>, <a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>, Sequence Read Archive (SRA), Trace Archive を運営する上での実務的な問題を討論しました。慣例通りであれば, 三島で開催するところでしたが, 当時は震災に関連した電力不足の懸念などもあり, EBI と NCBI の理解と協力を得て大阪で開催となりました。会議の報告は <a href="/activities/icm/2011">こちら</a> をご覧下さい。</div>
+  <div class="news_content">DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a>, <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a> で構成される <a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a> は, その共同事業の運営・推進を図るために, 国際実務者会議を年１回開催しています。2011年は 5月23日-27日に 大阪で開催され, <a href="/index.html" target="_blank">DDBJ</a>, <a href="http://www.ebi.ac.uk/embl/" target="_blank">EMBL-Bank</a>, <a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>, Sequence Read Archive (SRA), Trace Archive を運営する上での実務的な問題を討論しました。慣例通りであれば, 三島で開催するところでしたが, 当時は震災に関連した電力不足の懸念などもあり, EBI と NCBI の理解と協力を得て大阪で開催となりました。会議の報告は <a href="/activities/insdc_meeting/2011">こちら</a> をご覧下さい。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -686,7 +686,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn110204"><a href="#wn110204">DDBJ/EMBL/GenBank Feature Table Definition 改訂</a></h2>
   <div class="news_date">2011年02月04日</div>
-  <div class="news_content"><a href="/ddbj/feature-table-e.html">Feature Table Definition(FT-Doc)</a> は， DDBJ/EMBL-Bank/GenBank 国際塩基配列データベー構築のために，DDBJ, EMBL-Bank, GenBank が 三者間で定めた共通のアノテーション規範です。毎年5月に開催される<a href="/activities/index.html">国際実務者会議</a>での決定を受けて改訂が行われ，公開データベースにもその改訂が反映されています。<a href="/activities/icm/2010">第23会国際実務者会議</a>（2010年5月に英国 EBI で開催）での決定事項を基に，2011年1月にFeature Table Definition が改訂されました。</div>
+  <div class="news_content"><a href="/ddbj/feature-table-e.html">Feature Table Definition(FT-Doc)</a> は， DDBJ/EMBL-Bank/GenBank 国際塩基配列データベー構築のために，DDBJ, EMBL-Bank, GenBank が 三者間で定めた共通のアノテーション規範です。毎年5月に開催される<a href="/activities/index.html">国際実務者会議</a>での決定を受けて改訂が行われ，公開データベースにもその改訂が反映されています。<a href="/activities/insdc_meeting/2010">第23会国際実務者会議</a>（2010年5月に英国 EBI で開催）での決定事項を基に，2011年1月にFeature Table Definition が改訂されました。</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>

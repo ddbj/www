@@ -215,7 +215,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn100902_2"><a href="#wn100902_2">The Report for the 23rd International Collaborators Meeting</a></h2>
   <div class="news_date">September 02,2010</div>
-  <div class="news_content"><dl><dd>International Nucleotide Sequence Database Collaboration (INSDC), consisted of DDBJ, EBI and NCBI, hold the international collaborators meeting every year.In 2010, the meeting was held at EBI in UK, 19-21 May, to discuss practical matters to maintain and update nucleotide sequence data archives; DDBJ, EMBL-Bank, GenBank, Sequence Read Archive and Trace Archive. As a result of travel disruptions relating to the Icelandic volcano, the meeting was shorter than expected. Despite these difficulties, we believe that we made significant progress at the meeting. The outcomes of the meeting are summarized <a href="/activities/icm/2010-e">here.</a> </dd></dl></div>
+  <div class="news_content"><dl><dd>International Nucleotide Sequence Database Collaboration (INSDC), consisted of DDBJ, EBI and NCBI, hold the international collaborators meeting every year.In 2010, the meeting was held at EBI in UK, 19-21 May, to discuss practical matters to maintain and update nucleotide sequence data archives; DDBJ, EMBL-Bank, GenBank, Sequence Read Archive and Trace Archive. As a result of travel disruptions relating to the Icelandic volcano, the meeting was shorter than expected. Despite these difficulties, we believe that we made significant progress at the meeting. The outcomes of the meeting are summarized <a href="/activities/insdc_meeting/2010-e">here.</a> </dd></dl></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>
@@ -674,7 +674,7 @@ lang: en
 <div class="news_post_list">
   <h2 class="news_title" id ="wn100104"><a href="#wn100104">DDBJ/EMBL/GenBank Feature Table Definition revised</a></h2>
   <div class="news_date">January 04,2010</div>
-  <div class="news_content"><dl><dd><a href="/ddbj/feature-table-e.html">Feature Table Definition(FT-Doc)</a> is the common annotation manual among the three banks(DDBJ, EMBL-Bank, GenBank) for the construction of the DDBJ/EMBL/GenBank International Nucleotide Sequence Database. Following the decision at an <a href="/activities/index-e.html">International Collaborators Meeting(ICM)</a> held annually in May, this FT-Doc is updated every year. In December 2009, FT-Doc is updated, based on <a href="/activities/icm/2009-e">the 22nd International Collaborators Meeting</a>. </dd></dl> <!-- ########## end one news --><!-- ########## start one news --></div>
+  <div class="news_content"><dl><dd><a href="/ddbj/feature-table-e.html">Feature Table Definition(FT-Doc)</a> is the common annotation manual among the three banks(DDBJ, EMBL-Bank, GenBank) for the construction of the DDBJ/EMBL/GenBank International Nucleotide Sequence Database. Following the decision at an <a href="/activities/index-e.html">International Collaborators Meeting(ICM)</a> held annually in May, this FT-Doc is updated every year. In December 2009, FT-Doc is updated, based on <a href="/activities/insdc_meeting/2009-e">the 22nd International Collaborators Meeting</a>. </dd></dl> <!-- ########## end one news --><!-- ########## start one news --></div>
   <div class="news_category">
     <span class="service">Services: ddbj</span>
     <span class="keyword">Keywords: Announcement</span>

@@ -232,7 +232,7 @@ FT   misc_feature    1..88           FT   /note="genetic maker"</code></pre><br>
 <div class="news_post_list">
   <h2 class="news_title" id="wn120928"><a href="#wn120928">第25回国際実務者会議 報告</a></h2>
   <div class="news_date">2012年09月28日</div>
-  <div class="news_content"><dl><dd>DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a>, <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a> で構成される <a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a> は、その共同事業の運営・推進を図るために、国際実務者会議を年１回開催しています。<br>2012年は 6月11日-13日に NCBI で開催され、<a href="/index.html" target="_blank">DDBJ</a>、<a href="http://www.ebi.ac.uk/embl/" target="_blank">EMBL-Bank</a>、<a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>、Sequence Read Archive (SRA)、Trace Archive を運営する上での実務的な問題を討論しました。<br>会議の報告は <a href="/activities/icm/2012">こちら</a> をご覧ください。</dd></dl></div>
+  <div class="news_content"><dl><dd>DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a>, <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a> で構成される <a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a> は、その共同事業の運営・推進を図るために、国際実務者会議を年１回開催しています。<br>2012年は 6月11日-13日に NCBI で開催され、<a href="/index.html" target="_blank">DDBJ</a>、<a href="http://www.ebi.ac.uk/embl/" target="_blank">EMBL-Bank</a>、<a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>、Sequence Read Archive (SRA)、Trace Archive を運営する上での実務的な問題を討論しました。<br>会議の報告は <a href="/activities/insdc_meeting/2012">こちら</a> をご覧ください。</dd></dl></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>

@@ -332,7 +332,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn140904"><a href="#wn140904">第27回国際実務者会議 報告</a></h2>
   <div class="news_date">2014年09月04日</div>
-  <div class="news_content"><p>DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a>, <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a> で構成される <a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a> は、その共同事業の運営・推進を図るために、国際実務者会議を年１回開催しています。<br>2014年は 5月20日-22日に <a href="/news/ja/2014-05-20.html">DDBJ で開催</a>され、<a href="/index.html" target="_blank">DDBJ</a>、<a href="http://www.ebi.ac.uk/ena/" target="_blank">ENA</a>、<a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>、Sequence Read Archive (SRA)、Trace Archive を運営する上での実務的な問題を討論しました。<br>会議の報告は <a href="/activities/icm/2014">こちら</a> をご覧ください。</p></div>
+  <div class="news_content"><p>DDBJ, <a href="http://www.ebi.ac.uk/" target="_blank">EBI</a>, <a href="http://www.ncbi.nlm.nih.gov/" target="_blank">NCBI</a> で構成される <a href="http://www.insdc.org/" target="_blank">International Nucleotide Sequence Database Collaboration (INSDC)</a> は、その共同事業の運営・推進を図るために、国際実務者会議を年１回開催しています。<br>2014年は 5月20日-22日に <a href="/news/ja/2014-05-20.html">DDBJ で開催</a>され、<a href="/index.html" target="_blank">DDBJ</a>、<a href="http://www.ebi.ac.uk/ena/" target="_blank">ENA</a>、<a href="http://www.ncbi.nlm.nih.gov/genbank/index.html" target="_blank">GenBank</a>、Sequence Read Archive (SRA)、Trace Archive を運営する上での実務的な問題を討論しました。<br>会議の報告は <a href="/activities/insdc_meeting/2014">こちら</a> をご覧ください。</p></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>

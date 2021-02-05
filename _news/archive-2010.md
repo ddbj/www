@@ -269,7 +269,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn100922"><a href="#wn100922">DDBJ リリース 83.0 完成 2010.9.16</a></h2>
   <div class="news_date">2010年09月22日</div>
-  <div class="news_content"><dl><dd><ul><li><strong>エントリ数：</strong> 124,079,491   <strong>塩基数：</strong> 117,728,717,442</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.83.txt">DDBJ Release Note(Rel.83)</a></li><li><a href="/latest-releases.html">現在公開されているリリースの情報</a></li><li>FASTA 形式に変更をおこないました。（<a href="/ddbj%E3%83%BBdad-%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%AA%E3%82%89%E3%81%B3%E3%81%AB%E6%96%B0%E7%9D%80%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE-fasta-%E5%BD%A2%E5%BC%8F%E5%A4%89%E6%9B%B4%E3%80%80/">DDBJ・DAD リリースならびに新着データの FASTA 形式変更</a>）。</li><li>今リリース後に，<a href="/activities/icm/2010">2010年5月に開催された第23回国際実務者会議での決定</a>に基づいて，<a href="/ddbj/feature-table-e.html">DDBJ/EMBL/GenBank Feature Table: Definition</a> が改訂される予定です。</li></ul></dd></dl></div>
+  <div class="news_content"><dl><dd><ul><li><strong>エントリ数：</strong> 124,079,491   <strong>塩基数：</strong> 117,728,717,442</li><li><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/ddbj/ddbjrel.83.txt">DDBJ Release Note(Rel.83)</a></li><li><a href="/latest-releases.html">現在公開されているリリースの情報</a></li><li>FASTA 形式に変更をおこないました。（<a href="/ddbj%E3%83%BBdad-%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%AA%E3%82%89%E3%81%B3%E3%81%AB%E6%96%B0%E7%9D%80%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE-fasta-%E5%BD%A2%E5%BC%8F%E5%A4%89%E6%9B%B4%E3%80%80/">DDBJ・DAD リリースならびに新着データの FASTA 形式変更</a>）。</li><li>今リリース後に，<a href="/activities/insdc_meeting/2010">2010年5月に開催された第23回国際実務者会議での決定</a>に基づいて，<a href="/ddbj/feature-table-e.html">DDBJ/EMBL/GenBank Feature Table: Definition</a> が改訂される予定です。</li></ul></dd></dl></div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>
@@ -693,7 +693,7 @@ lang: ja
 <div class="news_post_list">
   <h2 class="news_title" id="wn100104"><a href="#wn100104">DDBJ/EMBL/GenBank Feature Table Definition 改訂</a></h2>
   <div class="news_date">2010年01月04日</div>
-  <div class="news_content"><dl><dd><a href="/ddbj/feature-table-e.html">Feature Table Definition(FT-Doc)</a> は， DDBJ/EMBL-Bank/GenBank 国際塩基配列データベース構築のために，DDBJ, EMBL-Bank, GenBank が 三者間で定めた共通のアノテーション規範です。毎年5月に開催される<a href="/activities/index.html">国際実務者会議</a>での決定を受けて改訂が行われ，公開データベースにもその改訂が反映されています。<a href="/activities/icm/2009">第22会国際実務者会議</a>（2009年5月に米国 NCBI で開催）での決定事項を基に，2009年12月にFeature Table Definition が改訂されました。 </dd></dl> <a style="text-decoration:none;" href="http://www.dimensionscs.com/www/suffolk-law-campus-cruiser.com/" title="suffolk law campus cruiser">suffolk law campus cruiser</a> .</div>
+  <div class="news_content"><dl><dd><a href="/ddbj/feature-table-e.html">Feature Table Definition(FT-Doc)</a> は， DDBJ/EMBL-Bank/GenBank 国際塩基配列データベース構築のために，DDBJ, EMBL-Bank, GenBank が 三者間で定めた共通のアノテーション規範です。毎年5月に開催される<a href="/activities/index.html">国際実務者会議</a>での決定を受けて改訂が行われ，公開データベースにもその改訂が反映されています。<a href="/activities/insdc_meeting/2009">第22会国際実務者会議</a>（2009年5月に米国 NCBI で開催）での決定事項を基に，2009年12月にFeature Table Definition が改訂されました。 </dd></dl> <a style="text-decoration:none;" href="http://www.dimensionscs.com/www/suffolk-law-campus-cruiser.com/" title="suffolk law campus cruiser">suffolk law campus cruiser</a> .</div>
   <div class="news_category">
     <span class="service">サービス: ddbj</span>
     <span class="keyword">キーワード: お知らせ</span>

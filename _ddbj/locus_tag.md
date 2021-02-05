@@ -103,7 +103,7 @@ lang: ja
 /locus_tag qualifier は、2003年に導入されました。その導入当初は、ゲノムプロジェクトが
 その配列データを更新する際などに feature 継承をするための追跡用 ID として自由度の高い記載を可能としていました。
 
-しかし、[The American Society for Microbiology](https://www.asm.org/) からの要請を受けて、[2005年の国際実務者会議](/activities/icm/2005)において、/locus_tag qualifier の用法が再検討されました。その結果、/locus_tag qualifier を恒久的に一意な ID として維持していくことを目指して、配列データの登録時に当該ゲノム専用の prefix を割り当てることにより、/locus_tag を記載するように規則が変更されました。
+しかし、[The American Society for Microbiology](https://www.asm.org/) からの要請を受けて、[2005年の国際実務者会議](/activities/insdc_meeting/2005)において、/locus_tag qualifier の用法が再検討されました。その結果、/locus_tag qualifier を恒久的に一意な ID として維持していくことを目指して、配列データの登録時に当該ゲノム専用の prefix を割り当てることにより、/locus_tag を記載するように規則が変更されました。
 
 ## ゲノム配列データの登録における  /locus_tag の適切な用法  {#locus_tag_usage}
 

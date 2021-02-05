@@ -3168,6 +3168,6 @@ dictionary:
   book:
     en: Book
     ja: 出版物
-  icm:
+  insdc_meeting:
     en: INSDC meeting report
     ja: 国際実務者会議報告

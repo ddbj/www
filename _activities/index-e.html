@@ -79,12 +79,12 @@ lang: en
         {% endfor %}
 
         {% comment %} 国際実務者会議報告 {% endcomment %}
-        {% assign activities = site.activities | where: "category", "icm" | where: "lang", page.lang %}
+        {% assign activities = site.activities | where: "category", "insdc_meeting" | where: "lang", page.lang %}
         {% for activity in activities %}
           {% assign date_label = activity.start_date | date: "%Y / %m / %d" %}
-          {% assign tag_label = site.data.achievements.dictionary.icm[page.lang] %}
+          {% assign tag_label = site.data.achievements.dictionary.insdc_meeting[page.lang] %}
           {% assign body = activity.content | strip_html | truncate: 100 %}
-          {% include activity-view.html tag="icm" label=activity.title date=activity.start_date date_label=date_label %}
+          {% include activity-view.html tag="insdc_meeting" label=activity.title date=activity.start_date date_label=date_label %}
         {% endfor %}
 
       </ul>
