@@ -26,7 +26,8 @@ export default function internalLink() {
     const tocContainer = document.getElementById('TableOfContents');
     if (tocContainer) {
       const postContent = document.querySelector('.md-content');
-      const headings = postContent.querySelectorAll('h2, h3, h4');
+      // const headings = postContent.querySelectorAll('h2, h3, h4');
+      const headings = postContent.querySelectorAll('h2');
       
       for (let i = 0; i < headings.length; i++) {
         const currentHeading = headings[i];
