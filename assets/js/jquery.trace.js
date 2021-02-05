@@ -235,7 +235,7 @@ $(function() {
     // id があればそれを使う、なければテキストを加工して使う
     var h2_id = "";
     if ( $(this).attr("id") ){
-      h2_id = $(this).attr("id");				
+      h2_id = $(this).attr("id");
     } else {
       h2_id = $(this).text().replace(/ |:/g, "_").replace(/\(|\)/g, "");
       h2_id = jQuery.trim(h2_id);
@@ -1143,7 +1143,7 @@ $(function() {
 
   if ( pathname.match(/-e\.html/) ) la = "en";
 
-  if ( pathname.match(/\/biosample\/validation/) ){	
+  if ( pathname.match(/\/biosample\/validation/) ){
 
     $.getJSON("https://spreadsheets.google.com/feeds/list/1kh9vRllab7t7PBftd0nEBi-YbIWvFVRAiYS6F6RRBNU/1/public/values?alt=json", function(data) {
       
@@ -1187,26 +1187,27 @@ $(function() {
 
         poc_html += '<li><a href="#' + rule_id + '" class="toc_chapter">' + rule_id + '</a></li>';
 
-        }		  
+      }
     
-      $("#rule").prepend(rule_html);			
+      $("#rule").prepend(rule_html);
       poc_html += '</ul>';
     
       $('#in_this_page').append(poc_html);
-      $('#in_this_page > h2').text("Rules");				
+      $('#in_this_page > h2').text("Rules");
 
       /* json で非同期に取得、構築した side nav に y 軸 scroll bar を付ける処理 */
       // 下にはみ出している距離　はみだしている = 正の値  (side nav bottom y) - (window bottom y)
-      var bottom_diff = ( $("#side_navigation").offset().top + $("#side_navigation").height() ) - ( $(window).scrollTop() + $(window).height() );
+      // var bottom_diff = ( $("#side_navigation").offset().top + $("#side_navigation").height() ) - ( $(window).scrollTop() + $(window).height() );
 
       // height をオリジナルからはみ出している分短く、overflow を scroll に			
-      $("#side_navigation").css("height", ( $("#side_navigation").height() - bottom_diff ) + "px");
-      $("#side_navigation").css("overflow-y", "scroll");
+      // $("#side_navigation").css("height", ( $("#side_navigation").height() - bottom_diff ) + "px");
+      // $("#side_navigation").css("overflow-y", "scroll");
           
       // anchor 指定時にページ内遷移
       if (anchor && $(anchor).length){
-        $(document).scrollTop( $(anchor).offset().top ); 
-      }				
+        console.log(anchor)
+        $(document).scrollTop( $(anchor).offset().top );
+      }
 
     }); // $.getJSON
   
