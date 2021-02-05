@@ -450,7 +450,6 @@ input, textarea, select, button {
     margin-bottom: .5rem;
     display: block; }
   .md-content table {
-    width: 100%;
     border: 0.1rem solid #736357;
     line-height: 1.2;
     font-size: 1.2rem; }
@@ -1506,6 +1505,9 @@ input, textarea, select, button {
 
 ._padding-bottom-5rem {
   padding-bottom: 5rem; }
+
+._width-100 {
+  width: 100%; }
 
 .top_space20 {
   margin-top: 2rem; }
