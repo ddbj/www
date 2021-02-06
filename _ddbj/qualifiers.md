@@ -18,11 +18,19 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
 
 ## Qualifier key の定義
 
+<<<<<<< HEAD
 ### allele<a name="allele"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#allele)</span> 
 
   |  定義  |  allele の名称  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション( " ) 不可)  |
   |  例  |  adh1-1  |
+=======
+### allele<a name="allele"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#allele)</span>
+
+|  定義  |  allele の名称  |
+|  書式  |  &lt;text&gt; (全角, ダブルクォーテーション( " ) 不可)  |
+|  例  |  adh1-1  |
+>>>>>>> c816f0c79b37e1f8c56642f0ba55338be2f733b3
 
 ### altitude<a name="altitude"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#altitude)</span> 
 

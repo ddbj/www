@@ -9,7 +9,7 @@ lang: ja
     <nav class="subview">
       <nav class="facet-search">
         <h2 class="title">タグ</h2>
-        <ul class="tags" data-tab="keyword"></ul>
+        <ul class="tags" data-tab="tag"></ul>
       </nav>
     </nav>
     <main class="mainview">
@@ -20,7 +20,8 @@ lang: ja
         </nav>
         <ul class="tagging-list-view">
 
-          {% for service in site.data.services.items %}
+          {% assign services = site.data.services.items | sort: "name" %}
+          {% for service in services %}
           <li class="service taggingitem" data-tags="{{ service.tags | join: ',' }},{{ service.provider }}">
             <div class="upper">
               <h2 class="title">

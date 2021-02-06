@@ -364,8 +364,8 @@
           ja: '講習会'
         },
         uri: {
-          en: '/activities/?keyword%5B%5D=training',
-          ja: '/activities/index-e?keyword%5B%5D=training'
+          en: '/activities/?tag=training',
+          ja: '/activities/index-e?tag=training'
         }
       },
       {
@@ -665,6 +665,7 @@
             `).join('')}
           </ul>
           <ul class="DDBJ_menu -DDBJ_right">
+            ${script.dataset.search === 'true' ? `
             <li>
               <form action="https://www.google.com/cse" id="DDBJ_searchform">
                 <input type="hidden" name="cx" value="003756275038197888315:te8ex5igvqa">
@@ -681,6 +682,7 @@
                 <input name="ss" type="hidden" value="">
               </form>
             </li>
+            ` : ''}
             ${HEADER_RIGHT_MENU.map(item => `
             <li><a href="${item.uri[language]}">${item.label[language]}</a></li>
             `).join('')}
@@ -713,8 +715,8 @@
   function DDBJ_languageSwitcher() {
     if (script.dataset.ddbjHomePage !== 'true') return;
     let href = location.href;
-    href = href.indexOf('#') ? href : href.slice(0, href.indexOf('#'));
-    href = href.indexOf('?') ? href : href.slice(0, href.indexOf('?'));
+    href = href.indexOf('#') !== -1 ? href.slice(0, href.indexOf('#')) : href;
+    href = href.indexOf('?') !== -1 ? href.slice(0, href.indexOf('?')) : href;
     let otherLanguageLink;
     switch (language) {
       case 'ja':

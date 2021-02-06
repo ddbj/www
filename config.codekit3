@@ -299,22 +299,6 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_activities/index-e.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_activities/index-e.html",
-		"oF": 0
-		},
-	"/_activities/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_activities/index.html",
-		"oF": 0
-		},
 	"/_activities/insdc_meeting/2002.md": {
 		"cB": 0,
 		"cS": 0,
@@ -2860,14 +2844,6 @@
 		"oAP": "/_data/services.yml",
 		"oF": 0
 		},
-	"/_data/tab_menu.yml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_data/tab_menu.yml",
-		"oF": 0
-		},
 	"/_ddbj/assembly-e.md": {
 		"cB": 0,
 		"cS": 0,
@@ -4285,25 +4261,6 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_ddbj/qualifiers-e.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"/_ddbj/qualifiers.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_ddbj/qualifiers.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -6971,14 +6928,6 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"/_faq/en/index-e.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_faq/en/index-e.html",
-		"oF": 0
 		},
 	"/_faq/en/index-new-jga-e.md": {
 		"cB": 0,
@@ -9944,14 +9893,6 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_faq/ja/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_faq/ja/index.html",
-		"oF": 0
-		},
 	"/_faq/ja/interpret-search-results.md": {
 		"cB": 0,
 		"cS": 0,
@@ -11884,14 +11825,6 @@
 		"oAP": "/_includes/head.html",
 		"oF": 0
 		},
-	"/_includes/header.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_includes/header.html",
-		"oF": 0
-		},
 	"/_includes/image.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -11943,28 +11876,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/_javascript/ddbj_common_framework.js": {
-		"bF": 6,
-		"ft": 64,
-		"ma": 1,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/js/ddbj_common_framework.js",
-		"oF": 2,
-		"sC": 3,
-		"tS": 0
-		},
-	"/_javascript/internalLink.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/_javascript/internalLink-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"/_javascript/lightBox.js": {
 		"bF": 0,
 		"ft": 64,
@@ -11994,17 +11905,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/_javascript/switchAppearance-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/_javascript/taggingListView.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/_javascript/taggingListView-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -12413,14 +12313,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/_layouts/timeline.html",
-		"oF": 0
-		},
-	"/_layouts/top.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_layouts/top.html",
 		"oF": 0
 		},
 	"/_metabobank/index-e.md": {
@@ -49624,14 +49516,6 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"/_news/en/index-e.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_news/en/index-e.html",
-		"oF": 0
 		},
 	"/_news/en/s.html": {
 		"cB": 0,
@@ -93208,14 +93092,6 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/_news/ja/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_news/ja/index.html",
-		"oF": 0
-		},
 	"/_plugins/caption.rb": {
 		"cB": 0,
 		"ft": 8192,
@@ -94083,22 +93959,6 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"/_services/index-e.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_services/index-e.html",
-		"oF": 0
-		},
-	"/_services/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/_services/index.html",
-		"oF": 0
 		},
 	"/_services/past-services-e.md": {
 		"cB": 0,
@@ -108716,25 +108576,6 @@
 		"q": 100,
 		"rq": 75
 		},
-	"/assets/js/ddbj_common_framework.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/js/ddbj_common_framework-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/assets/js/ddbj_common_framework.js.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/js/ddbj_common_framework.js.map",
-		"oF": 0
-		},
 	"/assets/js/jquery.charts.js": {
 		"bF": 0,
 		"ft": 64,
@@ -108756,36 +108597,6 @@
 		"oF": 1,
 		"sC": 3,
 		"tS": 0
-		},
-	"/assets/js/jquery.trace.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/assets/js/jquery.trace-min.js",
-		"oF": 1,
-		"sC": 3,
-		"tS": 0
-		},
-	"/assets/js/main.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/assets/js/main-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/assets/js/main.js.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/assets/js/main.js.map",
-		"oF": 0
 		},
 	"/assets/rss/news-bioproject-en.xml": {
 		"cB": 0,

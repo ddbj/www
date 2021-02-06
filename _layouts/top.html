@@ -46,7 +46,7 @@ layout: default
         <h2 class="title">NEWS</h2>
         <ul class="list">
           
-          {% assign news_list = site.news | where: "lang", page.lang | where_exp: "news_list", "news_list.db contains page.category" | sort "date" | reverse %}
+          {% assign news_list = site.news | where: "lang", page.lang | where_exp: "news_list", "news_list.db contains page.category" | sort: "date" | reverse %}
           {% for news in news_list limit:5 %}
           <li class="item">
             <article class="news{% if news.priority %} priority{% endif %}">
@@ -59,7 +59,7 @@ layout: default
           {% endfor %}
         
         </ul>
-        <a class="arrowed-link" href="{{ site.baseurl }}/news/ja/?keyword%5B%5D={{ page.category }}">more</a>
+        <a class="arrowed-link" href="{{ site.baseurl }}/news/ja/?tag={{ page.category }}">more</a>
       </div>
     </aside>
 

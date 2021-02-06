@@ -26,10 +26,10 @@ export default function taggingListView() {
 
     setupTaggingItems();
     sortTaggingList();
-    setupTabMenu();
     setupKeywordTag();
     setupYearTag();
     setupFacetSearch();
+    setupTabMenu();
     
     function setupTaggingItems() {
       taggingItems = taggingListView.querySelectorAll('.taggingitem');
@@ -66,6 +66,10 @@ export default function taggingListView() {
             item.target.classList.add('-current');
           });
         });
+        // デフォルトのタブ
+        if (selectedTags.tag.length === 0 && selectedTags.year.length > 0) {
+          tabMenuView.querySelector('li[data-tab="year"]').dispatchEvent(new Event('click'));
+        }
       }
     }
 
@@ -95,7 +99,7 @@ export default function taggingListView() {
       }
       // ファセット検索用ビューの生成
       let html = '';
-      const facetSearchTags = facetSearch.querySelector(':scope .tags[data-tab="keyword"]');
+      const facetSearchTags = facetSearch.querySelector(':scope .tags[data-tab="tag"]');
       for (const tags of [categoryTags, affiliationTags]) {
         for (const tag in tags) {
           html += `<li class="tag-view${affiliationTags[tag] === undefined ? '' : ' -reverse'}" data-tag="${tag}"><span class="label">${tagLabels[tag]}</span><span class="count">${tags[tag].length}</span></li>`;
@@ -137,7 +141,7 @@ export default function taggingListView() {
     function setupFacetSearch() {
       const urlParameters = $.deparam(window.location.search.substr(1));
       const path = window.location.origin + window.location.pathname;
-      Object.keys(urlParameters).forEach(key => selectedTags[key] = urlParameters[key]);
+      Object.keys(urlParameters).forEach(key => selectedTags[key] = urlParameters[key].split(','));
       const facetSearchTags = facetSearch.querySelectorAll(':scope .tags');
       facetSearchTags.forEach(tags => {
         const tagKey = tags.dataset.tab;
