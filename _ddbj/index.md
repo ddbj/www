@@ -4,6 +4,22 @@ title: DDBJ Annotated/Assembled Sequences
 service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: home
+panels:	
+- title: キーワード検索	
+  url: http://ddbj.nig.ac.jp/arsa/	
+  icon: ../assets/images/icon-search_analysis.png	
+- title: 塩基配列の登録	
+  url: /ddbj/submission.html	
+  icon: ../assets/images/icon-submission.png	
+- title: 塩基配列登録システム	
+  url: /ddbj/web-submission.html	
+  icon: ../assets/images/icon-submission.png	
+- title: Mass Submission System	
+  url: /ddbj/mss.html	
+  icon: ../assets/images/icon-search_analysis.png	
+- title: 登録データの修正・更新	
+  url: /ddbj/update.html	
+  icon: ../assets/images/icon-search_analysis.png
 lang: ja
 ---
 

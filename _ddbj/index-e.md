@@ -4,6 +4,22 @@ title: DDBJ Annotated/Assembled Sequences
 service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: home
+panels:	
+- title: Search by keywords	
+  url: http://ddbj.nig.ac.jp/arsa/	
+  icon: ../assets/images/icon-search_analysis.png	
+- title: How to submit	
+  url: /ddbj/submission-e.html	
+  icon: ../assets/images/icon-search_analysis.png	
+- title: Submit through interactive web interface	
+  url: /ddbj/web-submission-e.html	
+  icon: ../assets/images/icon-search_analysis.png	
+- title: Submit through Mass Submission System 	
+  url: /ddbj/mss-e.html	
+  icon: ../assets/images/icon-search_analysis.png	
+- title: Data Update	
+  url: /ddbj/update-e.html	
+  icon: ../assets/images/icon-search_analysis.png
 lang: en
 ---
 

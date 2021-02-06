@@ -3,7 +3,7 @@ layout: tabbed_indexed_content
 service_name: BioSample
 title: BioSample について
 category: biosample
-current_tab: about bioProject
+current_tab: about biosample	
 lang: ja
 ---
 
