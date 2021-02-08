@@ -1,11 +1,7 @@
 top_news:
   ja:
-    - title: INSDC に関する Nucleic Acids Research Database Issue 論文が公開されました
-      path: 2020-11-12
-    - title: ホタルイカ (<span class="italic">Watasenia scintillans</span>) の配列データ公開
-      path: 2020-11-12_2
+    - title: (3/22～3/25) スパコン定期メンテナンスに伴う DDBJ センターのサービス停止のお知らせ
+      path: 2021-02-04_2
   en:
-    - title: INSDC paper was published in Nucleic Acids Research Database Issue
-      path: 2020-11-12-e
-    - title: Release of sequence data of sparkling enope squid (<span class="italic">Watasenia scintillans</span>)
-      path: 2020-11-12_2-e
+    - title: (Mar. 22 - Mar. 25) Suspension DDBJ services due to NIG Supercomputer maintenace
+      path: 2021-02-04_2-e
