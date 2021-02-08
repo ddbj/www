@@ -4,3 +4,8 @@ top_news:
       path: 2020-11-12
     - title: ホタルイカ (<span class="italic">Watasenia scintillans</span>) の配列データ公開
       path: 2020-11-12_2
+  en:
+    - title: INSDC paper was published in Nucleic Acids Research Database Issue
+      path: 2020-11-12-e
+    - title: Release of sequence data of sparkling enope squid (<span class="italic">Watasenia scintillans</span>)
+      path: 2020-11-12_2-e
