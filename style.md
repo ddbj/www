@@ -268,6 +268,17 @@ table に class 属性を付与。例2
 | Third line |quux | baz | bar|
 {:.test}
 
+## 定義リスト {#definition}
+
+```
+c. 三名法などで記載する場合  
+: Category は "Valid subspecies or variety not registered in taxonomy database" となりますので、メニューから選択してください。<br>下記、生物名記載の各論より、[三名法](#trinominal)について ご参照の上、scientific name 入力ボックスには subspecies、variety または、それに準ずる strain などを含めて生物名を記載してください。
+```
+
+c. 三名法などで記載する場合  
+: Category は "Valid subspecies or variety not registered in taxonomy database" となりますので、メニューから選択してください。<br>下記、生物名記載の各論より、[三名法](#trinominal)について ご参照の上、scientific name 入力ボックスには subspecies、variety または、それに準ずる strain などを含めて生物名を記載してください。
+
+
 ## ページ内リンク {#anchor}
 
 ```
