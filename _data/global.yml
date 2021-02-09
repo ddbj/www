@@ -2,6 +2,10 @@ top_news:
   ja:
     - title: (3/22～3/25) スパコン定期メンテナンスに伴う DDBJ センターのサービス停止のお知らせ
       path: 2021-02-04_2
+    - title: (3/18～3/26) DDBJ センターの登録、検索・解析サービス停止のお知らせ
+      path: 2021-02-04_3
   en:
     - title: (Mar. 22 - Mar. 25) Suspension DDBJ services due to NIG Supercomputer maintenace
       path: 2021-02-04_2-e
+    - title: (Mar. 18 - Mar. 26) Suspension of DDBJ services due to NIG Supercomputer maintenance
+      path: 2021-02-04_3-e
