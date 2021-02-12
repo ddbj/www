@@ -59,7 +59,7 @@ layout: default
           {% endfor %}
         
         </ul>
-        <a class="arrowed-link" href="{{ site.baseurl }}/news/ja/?tag={{ page.category }}">more</a>
+        <a class="arrowed-link" href="{{ site.baseurl }}/news/{{page.lang}}/index{% if page.lang == 'en' %}-e{% endif %}.html?tag={{ page.category }}">more</a>
       </div>
     </aside>
 
