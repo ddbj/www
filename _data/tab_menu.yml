@@ -49,7 +49,7 @@ bioproject:
       url: /bioproject/submission.html
     - id: faq
       title: FAQ
-      url: /faq/ja/index.html?keyword%5B%5D=bioproject
+      url: /faq/ja/index.html?tag=bioproject
     - id: search
       title: Search
       url: http://ddbj.nig.ac.jp/BPSearch/
@@ -587,25 +587,24 @@ jga:
       title: FAQ
       url: /faq/en/index-e.html?keyword%5B%5D=jga
 
-
 sc:
   ja:
     - id: home
       title: Home
       url: /sc/
-    - id: guide
-      title: システム利用案内
-      url: /sc/guide
-    - id: advanced-guide
-      title: 活用方法紹介
-      url: /sc/advanced-guide
     - id: application
-      title: 各種申請
+      title: 利用申請
       url: /sc/application
-    - id: operation
-      title: 稼働状況
-      url: /sc/operation
-    - id: report
-      title: 成果報告
-      url: /sc/report
-
+      children:
+        - title: ssh 公開鍵の登録
+          url: /sc/application/ssh_public_keys
+    - id: system
+      title: システム構成
+      url: /sc/system
+      children:
+        - title: ハードウェア
+          url: /sc/system/hardware
+        - title: ソフトウェア
+          url: /sc/system/software
+        - title: データベース
+          url: /sc/system/database
