@@ -333,7 +333,7 @@ Computations were partially performed on the NIG supercomputer at ROIS National 
 * [HINV](ftp://ftp.ddbj.nig.ac.jp/mirror_database/hinv/README.txt)
 * [International Genome Sample Resource (IGSR)](https://www.internationalgenome.org/IGSR_disclaimer)
 
-## ソーシャルメディアにおける生命情報・DDBJセンターのオフィシャルサイト {#official-sites-on-third-party-site}
+## ソーシャルメディアにおける生命情報・DDBJセンターのオフィシャルサイト    {#third-party-sites}
 生命情報・DDBJセンターのソーシャルメディアにおけるオフィシャルサイト（アカウント）は以下になります。
 
 * Twitter: [@ddbj_topics](https://twitter.com/ddbj_topics)
