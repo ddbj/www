@@ -329,7 +329,7 @@ Regarding usage of data that Bioinformation and DDBJ Center provides secondarily
 * [HINV](ftp://ftp.ddbj.nig.ac.jp/mirror_database/hinv/README.txt)
 * [International Genome Sample Resource (IGSR)](https://www.internationalgenome.org/IGSR_disclaimer)
 
-## Bioinformation and DDBJ Center Official Sites on Social Media {#official-sites-on-third-party-site}
+## Bioinformation and DDBJ Center Official Sites on Social Media {#third-party-sites}
 Bioinformation and DDBJ Center's official sites (accounts) on social media are as follows:    
 
 * Twitter: [@ddbj_topics](https://twitter.com/ddbj_topics)
