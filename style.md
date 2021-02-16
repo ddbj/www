@@ -175,7 +175,7 @@ puts "Hello"
 ## 斜体 {#italic}
 
 ```
-*斜体*
+*Homo sapiens*
 ```
 
 *Homo sapiens*
