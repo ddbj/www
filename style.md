@@ -178,7 +178,7 @@ puts "Hello"
 *斜体*
 ```
 
-*斜体*
+*Homo sapiens*
 
 ## Table {#table}
 
