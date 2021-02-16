@@ -119,3 +119,15 @@ category:
   news:
     en: News
     ja: ニュース
+  about:
+    en: about
+    ja: about
+  activities:
+    en: activities
+    ja: 活動
+  services:
+    en: services
+    ja: サービス
+  statistics:
+    en: statistics
+    ja: 統計

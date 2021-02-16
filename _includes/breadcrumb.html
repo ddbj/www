@@ -7,9 +7,10 @@
       <a href="{{ site.url }}/index-e">Home</a>
       {% endif %}
     </li>
+
     {% if page.category and page.category != 'insdc_meeting' and page.category != 'training' %}
     <li>
-      {% if page.category == 'faq' or page.category == 'news' %}
+      {% if site.data.label_dictionary.category[page.category] %}
       <a href="{{site.url}}{{site.baseurl}}/{{ page.category }}/{{page.lang}}/">{{ site.data.label_dictionary.category[page.category][page.lang] }}</a>
       {% else %}
       <a href="{{site.url}}{{site.baseurl}}/{{ page.category }}">{{ page.category }}</a>
