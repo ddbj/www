@@ -44,22 +44,43 @@ layout: default
     <aside class="pickup-news-view">
       <div class="container">
         <h2 class="title">NEWS</h2>
-        <ul class="list">
           
-          {% assign news_list = site.news | where: "lang", page.lang | where_exp: "news_list", "news_list.db contains page.category" | sort: "date" | reverse %}
-          {% for news in news_list limit:5 %}
-          <li class="item">
-            <article class="news{% if news.priority %} priority{% endif %}">
-              <a href="{{ site.baseurl }}{{ news.url }}">
-                <h3 class="title">{{news.title}}</h3>
-                {% include tags.html lang=page.lang date=news.date tags=news.tags dbs=news.db %}
-              </a>
-            </article>
-          </li>
-          {% endfor %}
-        
-        </ul>
-        <a class="arrowed-link" href="{{ site.baseurl }}/news/{{page.lang}}/index{% if page.lang == 'en' %}-e{% endif %}.html?tag={{ page.category }}">more</a>
+        {% if page.category == "top" %}
+
+            <ul class="list">
+              {% assign news_list = site.news | where: "lang", page.lang | where: "layout", "simple" | reverse %}
+              {% for news in news_list limit:5 %}
+              <li class="item">
+                <article class="news{% if news.priority %} priority{% endif %}">
+                  <a href="{{ site.baseurl }}{{ news.url }}">
+                    <h3 class="title">{{news.title}}</h3>
+                    {% include tags.html lang=page.lang date=news.date tags=news.tags dbs=news.db %}
+                  </a>
+                </article>
+              </li>
+              {% endfor %}
+            </ul>
+            <a class="arrowed-link" href="{{ site.baseurl }}/news/{{page.lang}}/index{% if page.lang == 'en' %}-e{% endif %}.html">more</a>
+
+        {% else %}
+
+          <ul class="list">
+            {% assign news_list = site.news | where: "lang", page.lang | where_exp: "news_list", "news_list.db contains page.category" | sort: "date" | reverse %}
+            {% for news in news_list limit:5 %}
+            <li class="item">
+              <article class="news{% if news.priority %} priority{% endif %}">
+                <a href="{{ site.baseurl }}{{ news.url }}">
+                  <h3 class="title">{{news.title}}</h3>
+                  {% include tags.html lang=page.lang date=news.date tags=news.tags dbs=news.db %}
+                </a>
+              </article>
+            </li>
+            {% endfor %}
+          </ul>
+          <a class="arrowed-link" href="{{ site.baseurl }}/news/{{page.lang}}/index{% if page.lang == 'en' %}-e{% endif %}.html?tag={{ page.category }}">more</a>
+  
+        {% endif %}
+
       </div>
     </aside>
 
