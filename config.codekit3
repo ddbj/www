@@ -49435,6 +49435,25 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/_news/en/2020-12-14_2-e.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/en/2020-12-14_2-e.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"/_news/en/2020-12-23-e.md": {
 		"cB": 0,
 		"cS": 0,
@@ -93151,6 +93170,25 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/_news/ja/2020-12-14_2.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/ja/2020-12-14_2.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"/_news/ja/2020-12-23.md": {
 		"cB": 0,
 		"cS": 0,
@@ -93983,6 +94021,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/_sass/object/project/_SitemapView.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/_sass/object/project/_TableOfContents.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_sass/object/project/_TableOfContents.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0

@@ -104,12 +104,15 @@ html {
 
 body {
   background-color: #EDECEA;
-  font-family: "Roboto Condensed", "Noto Sans JP","Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Helvetica, Arial, FreeSans, sans-serif;
   height: 100%;
   min-width: 96rem;
   color: #1C1B19;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Condensed", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif; }
 
 a {
   color: #1C1B19;
@@ -297,7 +300,7 @@ input, textarea, select, button {
 
 .md-content {
   font-size: 1.4rem;
-  line-height: 1.8;
+  line-height: 1.5;
   /* 幅を調整 */ }
   .md-content .highlight {
     overflow: auto; }
@@ -1425,6 +1428,9 @@ input, textarea, select, button {
         #SitemapView > .inner > .group > ul > li {
           font-size: 1.2rem;
           padding: .4rem 0; }
+
+#TableOfContents {
+  font-family: "Roboto Condensed", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif; }
 
 #TopPageView {
   background-color: white; }
