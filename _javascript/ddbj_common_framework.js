@@ -358,16 +358,16 @@
       }
     ],
     INFORMATION: [
-      {
-        label: {
-          en: 'Training',
-          ja: '講習会'
-        },
-        uri: {
-          en: '/activities/index.html?tag=training',
-          ja: '/activities/index-e.html?tag=training'
-        }
-      },
+      // {
+      //   label: {
+      //     en: 'Training',
+      //     ja: '講習会'
+      //   },
+      //   uri: {
+      //     en: '/activities/index.html?tag=training',
+      //     ja: '/activities/index-e.html?tag=training'
+      //   }
+      // },
       {
         label: {
           en: 'DDBJ RSS',
