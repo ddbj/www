@@ -33,7 +33,8 @@ lang: en
         {% endfor %}
 
         {% comment %} 論文・講演発表・出版物 {% endcomment %}
-        {% for activity in site.data.achievements.items %}
+        {% assign activities = site.data.achievements.items | where: "lang", page.lang %}
+        {% for activity in activities %}
           {% if activity.day %}
             {% assign date_label = activity.year | append: " / " | append: activity.month | append: " / " | append: activity.day %}
           {% elsif activity.month %}
