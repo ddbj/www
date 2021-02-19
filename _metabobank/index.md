@@ -1,8 +1,9 @@
 ---
 layout: top
 title: MetaboBank
-description: MetaboBank (https://mb.ddbj.nig.ac.jp)
 
 category: metabobank
 lang: ja
 ---
+
+MetaboBank ([https://mb.ddbj.nig.ac.jp](https://mb.ddbj.nig.ac.jp))
