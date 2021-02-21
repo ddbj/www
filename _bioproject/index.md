@@ -7,10 +7,10 @@ current_tab: home
 panels:
 - title: ハンドブック
   url: /bioproject/submission.html
-  icon: ../assets/images/icon-search_analysis.png
+  icon: ../assets/images/icon/howto.png
 - title: ログイン / 登録
   url: https://ddbj.nig.ac.jp/D-way/
-  icon: ../assets/images/icon-search_analysis.png
+  icon: ../assets/images/icon/submit.png
 lang: ja
 ---
 

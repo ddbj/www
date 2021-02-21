@@ -7,13 +7,13 @@ current_tab: home
 panels:
 - title: 検索
   url: https://ddbj.nig.ac.jp/DRASearch/
-  icon: ../assets/images/icon-search_analysis.png
+  icon: ../assets/images/icon/services.png	
 - title: ハンドブック
   url: /dra/submission.html
-  icon: ../assets/images/icon-search_analysis.png
+  icon: ../assets/images/icon/howto.png
 - title: ログイン / 登録
   url: https://ddbj.nig.ac.jp/D-way/
-  icon: ../assets/images/icon-search_analysis.png
+  icon: ../assets/images/icon/submit.png	
 lang: ja
 ---
 

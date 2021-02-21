@@ -7,10 +7,10 @@ current_tab: home
 panels:
 - title: How to submit
   url: /biosample/submission-e.html
-  icon: ../assets/images/icon-search_analysis.png
+  icon: ../assets/images/icon/howto.png
 - title: Login and submit
   url: https://ddbj.nig.ac.jp/D-way/
-  icon: ../assets/images/icon-search_analysis.png
+  icon: ../assets/images/icon/submit.png
 lang: en
 ---
 
