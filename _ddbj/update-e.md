@@ -1,6 +1,6 @@
 ---
 layout: tabbed_indexed_content
-title: Data Updates/Corrections`:` after getting your accession number
+title: Data Updates/Corrections: after getting your accession number
 service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: submission
