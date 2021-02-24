@@ -89,7 +89,7 @@ When your data are corresponding to the following cases, please register [BioPro
 
 - For [whole genome-scale sequence](/ddbj/genome-e.html), it is optional to describe biological features except source and  assembly_gap. However, in case of highly novel species, i.e. not available any sequence data, it is required to describe feature annotation for at least one genome as a representative.
 - If you decide to submit a genome with annotation, it is required to reserve [locus_tag prefix](/ddbj/qualifiers-e.html#locus_tag) on [BioSample](/biosample/index-e.html) submission.
-- For feature annotation of prokaryotic genome, we recommend to use [DFAST (DDBJ Fast Annotation and Submission Tool)](https://dfast.nig.ac.jp/)
+- For feature annotation of prokaryotic genome, we recommend to use [DFAST (DDBJ Fast Annotation and Submission Tool)](https://dfast.ddbj.nig.ac.jp/)
 - For [TSA](/ddbj/tsa-e.html) data, it is optional (basically unnecessary) to describe biological features except source and assembly_gap.
 - In the case of [EST](/ddbj/est-e.html), you can not describe any biological features except source.
 
