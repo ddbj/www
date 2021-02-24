@@ -1022,17 +1022,17 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 作成した新規登録をクリックし、登録詳細ページへ移動します。
 
-<a href="/assets/images/books/hdra02.jpg" title="登録詳細ページへ移動" class="group1"><img src="/assets/images/books/hdra02.jpg" alt="登録詳細ページへ移動" title="登録詳細ページへ移動" class="w350"></a>
+<a href="/assets/images/books/hdra02.jpg" title="登録詳細ページへ移動" class="group1"><img src="/assets/images/books/hdra02.jpg" alt="登録詳細ページへ移動" title="登録詳細ページへ移動" class="w400"></a>
 
 登録詳細ページ中の [Enter / Update metadata] をクリックし、メタデータ作成ツールを起動します。
 
-<a href="/assets/images/books/hdra03.jpg" title="メタデータ作成ツールを起動" class="group1"><img src="/assets/images/books/hdra03.jpg" alt="メタデータ作成ツールを起動" title="メタデータ作成ツールを起動" class="w350"></a>
+<a href="/assets/images/books/hdra03.jpg" title="メタデータ作成ツールを起動" class="group1"><img src="/assets/images/books/hdra03.jpg" alt="メタデータ作成ツールを起動" title="メタデータ作成ツールを起動" class="w400"></a>
 
 新規登録に対応するファイルサーバのディレクトリにデータファイルがアップロードされていない場合、下記のようなメッセージが表示されます。[データファイルをアップロードします](#upload-sequence-data)。
 
 先にメタデータを作成しておきたい場合は、適当なファイルをアップロードしておきます。
 
-<a href="/assets/images/books/hdra-not-uploaded.jpg" title="データファイルがアップロードされていない場合" class="group1"><img src="/assets/images/books/hdra-not-uploaded.jpg" alt="データファイルがアップロードされていない場合" title="データファイルがアップロードされていない場合" class="w200"></a>
+<a href="/assets/images/books/hdra-not-uploaded.jpg" title="データファイルがアップロードされていない場合" class="group1"><img src="/assets/images/books/hdra-not-uploaded.jpg" alt="データファイルがアップロードされていない場合" title="データファイルがアップロードされていない場合" class="w300"></a>
 
 メタデータは Submission、BioProject、BioSample、Experiment、Run、Analysis (任意)
 オブジェクトで構成されています。 メタデータ作成ツールの画面上で、各項目に内容を英語で入力していきます。

@@ -1219,13 +1219,13 @@ the MSS team](/contact-ddbj-e.html#to-ddbj), upload the files to the
 
 Move to the submission detail page by clicking the submission ID.
 
-<a href="/assets/images/books/hdra02.jpg" title="Move to the submission page" class="group1"><img src="/assets/images/books/hdra02.jpg" title="Move to the submission page" alt="Move to the submission page" class="w450"></a>
+<a href="/assets/images/books/hdra02.jpg" title="Move to the submission page" class="group1"><img src="/assets/images/books/hdra02.jpg" title="Move to the submission page" alt="Move to the submission page" class="w400"></a>
 
 
 Click the [Enter / Update metadata] button to run the DRA metadata
 creation tool.
 
-<a href="/assets/images/books/hdra03.jpg" title="run the DRA metadata creation tool" class="group1"><img src="/assets/images/books/hdra03.jpg" title="run the DRA metadata creation tool" alt="run the DRA metadata creation tool" class="w450"></a>
+<a href="/assets/images/books/hdra03.jpg" title="run the DRA metadata creation tool" class="group1"><img src="/assets/images/books/hdra03.jpg" title="run the DRA metadata creation tool" alt="run the DRA metadata creation tool" class="w400"></a>
 
 
 When no file is uploaded to the submission directory, following message
@@ -1235,7 +1235,7 @@ files](#upload-sequence-data).
 To submit metadata first, upload some files (for example, empty text
 file).
 
-<a href="/assets/images/books/hdra-not-uploaded.jpg" title="when no data file is uploaded"><img src="/assets/images/books/hdra-not-uploaded.jpg" title="when no data file is uploaded" alt="when no data file is uploaded" class="w200"></a>
+<a href="/assets/images/books/hdra-not-uploaded.jpg" title="when no data file is uploaded"><img src="/assets/images/books/hdra-not-uploaded.jpg" title="when no data file is uploaded" alt="when no data file is uploaded" class="w300"></a>
 
 The metadata are composed of the Submission, BioProject, BioSample,
 Experiment, Run, Analysis (optional) objects. In the metadata creation
