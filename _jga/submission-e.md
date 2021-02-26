@@ -17,16 +17,16 @@ Controlled access does not correspond to holding a release prior to publication.
 
 Accession numbers are issued to metadata objects with following prefixes.
 
-| Prefix | Metadata object | Number digit | Example         |
+| Prefix | Metadata object | Number digit | Example |
 |---|
-| JGA    | Submission      | 11           | JGA000001  |
-| JGAS   | Study           | 11           | JGAS000001 |
-| JGAN   | Sample          | 11           | JGAN000001 |
-| JGAX   | Experiment      | 11           | JGAX000001 |
-| JGAR   | Data            | 11           | JGAR000001 |
-| JGAZ   | Analysis        | 11           | JGAZ000001 |
-| JGAD   | Data set        | 11           | JGAD000001 |
-| JGAP   | Policy          | 11           | JGAP000001 |
+|JGA|Submission|6|JGA000001|
+|JGAS|Study|6|JGAS000001|
+|JGAN|Sample|9|JGAN000000001|
+|JGAX|Experiment|9|JGAX000000001|
+|JGAR|Data|9|JGAR000000001|
+|JGAZ|Analysis|9|JGAZ000000001|
+|JGAD|Data set|6|JGAD000001|
+|JGAP|Policy|6|JGAP000001|
 
 <div class="attention">
 It is important for making data reusable and reproducible that the processed data on which the conclusions in the related manuscript are based, are registered to JGA. Please submit processed data files such as VCF in Analysis objects.
