@@ -1040,6 +1040,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 {% include image.html url="books/hdra-not-uploaded.jpg" caption="データファイルがアップロードされていない場合" class="w200" %}
 
+Experiment や Run オブジェクトが多件数の場合、ウェブツールの応答が遅くなることがあります。その場合、メタデータ用エクセルと XML 生成プログラムを使ってエクセルから XML を生成し、Submission/Experiment/Run XML を D-way からアップロードすることで多件数を一括で登録することができます。詳細については [GitHub](https://github.com/ddbj/submission-excel2xml) ページをご覧ください。
 
 メタデータは Submission、BioProject、BioSample、Experiment、Run、Analysis (任意)
 オブジェクトで構成されています。 メタデータ作成ツールの画面上で、各項目に内容を英語で入力していきます。
