@@ -98,7 +98,9 @@ Create a new microarray experiment submission by selecting "Sequencing" and clic
 If there is no reply from submitters after three months of initial contact, submissions will be cancelled.
 </div>
 
-{% include image.html url="books/seq-sub1.jpg" caption="Create a new submission" class="w450" %}
+<a class="group1" href="/assets/images/books/array-sub1.jpg" title="Create a new submission">
+  <img src="/assets/images/books/array-sub1.jpg" alt="Create a new submission" class="w450">
+</a>
 
 List of submission status is as follows. The GEA team reviews submission whose status is in "submission_validated" or "data_error".
 
@@ -246,7 +248,9 @@ Set the hold date within four years. Submitters' name and affiliation will be pu
 You can delete an un-submitted GEA submission.
 </div>
 
-{% include image.html url="books/array-sub2.jpg" caption="Enter submission information" class="w550" %}
+<a class="group1" href="/assets/images/books/array-sub2.jpg" title="Enter submission information"">
+  <img src="/assets/images/books/array-sub2.jpg" alt="Enter submission information"" class="w550">
+</a>
 
 ### DRA  {#DRA-tab}
 
@@ -254,7 +258,9 @@ Select a DRA submission registered in your account. If DRA submission is not reg
 
 To use DRA submissions obtained in the other account, please [contact GEA team](/contact-ddbj-e.html).
 
-{% include image.html url="books/seq-dra.jpg" caption="Select a DRA submission for the GEA experiment" class="w550" %}
+<a class="group1" href="/assets/images/books/seq-dra.jpg" title="Select a DRA submission for the GEA experiment">
+  <img src="/assets/images/books/seq-dra.jpg" alt="Select a DRA submission for the GEA experiment" class="w550">
+</a>
 
 ### BioProject  {#BioProject-tab}
 
@@ -264,7 +270,9 @@ Select a BioProject used in the DRA submission when the GEA experiment and DRA s
 
 To use a project obtained in the other account, please [contact GEA team](/contact-ddbj-e.html).
 
-{% include image.html url="books/seq-bp.jpg" caption="Select a BioProject for the GEA experiment" class="w550" %}
+<a class="group1" href="/assets/images/books/seq-bp.jpg" title="Select a BioProject for the GEA experiment">
+  <img src="/assets/images/books/seq-bp.jpg" alt="Select a BioProject for the GEA experiment" class="w550">
+</a>
 
 ### IDF  {#idf-tab}
 
@@ -276,11 +284,15 @@ Enter information for [IDF (Investigation Description Format)](/gea/metadata-e.h
 - Publication: Describe associated publications by PubMed ID or DOI. For unpublished manuscript, please [inform us](/contact-ddbj-e.html) the ID after assignment.
 - Data File Type: Processed data files are required for sequencing experiment submission. [Accepted Data Files Formats for sequencing experiment](/gea/datafile-e.html#seq_data). We strongly recommend to submitting processed data file per sample.
 
-{% include image.html url="books/seq-idf.jpg" caption="Enter information for IDF" class="w600" %}
+<a class="group1" href="/assets/images/books/seq-idf.jpg" title="Enter information for IDF">
+  <img src="/assets/images/books/seq-idf.jpg" alt="Enter information for IDF" class="w600">
+</a>
 
 ### SDRF  {#sdrf-tab}
 
-{% include image.html url="books/seq-sdrf-down.jpg" caption="Download a SDRF template file" class="w400" %}
+<a class="group1" href="/assets/images/books/seq-sdrf-down.jpg" title="Download a SDRF template file">
+  <img src="/assets/images/books/seq-sdrf-down.jpg" alt="Download a SDRF template file" class="w400">
+</a>
 
 Enter information for [SDRF (Sample and Data Relationship Format)](/gea/metadata-e.html#sdrf).
 
@@ -314,11 +326,15 @@ Fields you need to add.
     - KU-2003
     - KU-PI499262
 
-{% include image.html url="books/seq-sdrf-template.jpg" caption="SDRF template, yellow-highlighted fields need to be filled by submitter" class="w600" %}
+<a class="group1" href="/assets/images/books/seq-sdrf-template.jpg" title="SDRF template, yellow-highlighted fields need to be filled by submitter">
+  <img src="/assets/images/books/seq-sdrf-template.jpg" alt="SDRF template, yellow-highlighted fields need to be filled by submitter" class="w600">
+</a>
 
 Select the entered SDRF file and continue.
 
-{% include image.html url="books/seq-sdrf-up.jpg" caption="Select entered SDRF file" class="w450" %}
+<a class="group1" href="/assets/images/books/seq-sdrf-up.jpg" title="Select entered SDRF file">
+  <img src="/assets/images/books/seq-sdrf-up.jpg" alt="Select entered SDRF file" class="w450">
+</a>
 
 ### Overview and submit  {#submit}
 
@@ -326,7 +342,9 @@ You can download the IDF and SDRF files and check them. When correction is neces
 
 Submit the IDF and SDRF metadata by clicking the "Submit" button.
 
-{% include image.html url="books/seq-submit.jpg" caption="Check the IDF and SDRF and submit" class="w450" %}
+<a class="group1" href="/assets/images/books/seq-submit.jpg" title="Check the IDF and SDRF and submit">
+  <img src="/assets/images/books/seq-submit.jpg" alt="Check the IDF and SDRF and submit" class="w450">
+</a>
 
 ### Validation  {#validation-step}
 
@@ -334,13 +352,17 @@ When data files described in the IDF and SDRF are not found in the submission di
 
 The validator checks submitted IDF and SDRF files according to the [validation rules.](/gea/validation-e.html) and gives warning and error messages. Errors need to be resolved for submission.
 
-{% include image.html url="books/seq-validation.jpg" caption="Warning and error messages" class="w500" %}
+<a class="group1" href="/assets/images/books/seq-validation.jpg" title="Warning and error messages">
+  <img src="/assets/images/books/seq-validation.jpg" alt="Warning and error messages" class="w500">
+</a>
 
 ### Accession numbers  {#accession}
 
 [GEA accession numbers](/gea/overview-e.html#acc) are issued to the completed GEA experiment. You can allow reviewers access to private records by [communicating a reviewer accesss token](/gea/reviewer-access-e.html).
 
-{% include image.html url="books/seq-accession.jpg" caption="GEA accession numbers" class="w500" %}
+<a class="group1" href="/assets/images/books/seq-accession.jpg" title="GEA accession numbers">
+  <img src="/assets/images/books/seq-accession.jpg" alt="GEA accession numbers" class="w500">
+</a>
 
 ## Update submission  {#update-submission}
 

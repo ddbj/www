@@ -97,7 +97,9 @@ GEA では一つの登録に異なる種類のテクノロジー（マイクロ�
 DDBJ センターから登録者に問い合わせた後三か月以上回答が無い場合は Submission をキャンセルいたします。
 </div>
 
-{% include image.html url="books/array-sub1.jpg" caption="Sequencing experiment submissionの新規作成" class="w450" %}
+<a class="group1" href="/assets/images/books/array-sub1.jpg" title="Sequencing experiment submissionの新規作成">
+  <img src="/assets/images/books/array-sub1.jpg" alt="Sequencing experiment submissionの新規作成" class="w450">
+</a>
 
 登録のステータスには以下のものがあります。"Data Validated" と "Validation Error" になった登録が査定されます。
 
@@ -271,7 +273,9 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 "Delete submission" で投稿前の登録を削除することができます。
 </div>
 
-{% include image.html url="books/array-sub2.jpg" caption="登録管理情報を入力します" class="w550" %}
+<a class="group1" href="/assets/images/books/array-sub2.jpg" title="登録管理情報を入力します">
+  <img src="/assets/images/books/array-sub2.jpg" alt="登録管理情報を入力します" class="w550">
+</a>
 
 ### DRA  {#DRA-tab}
 
@@ -279,7 +283,9 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 他のアカウントで登録された DRA を参照したい場合は [GEA チームに連絡](/contact-ddbj.html)します。
 
-{% include image.html url="books/seq-dra.jpg" caption="GEA 登録で使う DRA submission を選択" class="w550" %}
+<a class="group1" href="/assets/images/books/seq-dra.jpg" title="GEA 登録で使う DRA submission を選択">
+  <img src="/assets/images/books/seq-dra.jpg" alt="GEA 登録で使う DRA submission を選択" class="w550">
+</a>
 
 ### BioProject  {#BioProject-tab}
 
@@ -289,7 +295,9 @@ GEA と DRA submission が同じプロジェクトである場合は DRA submiss
 
 他のアカウントで登録された BioProject を参照したい場合は [GEA チームに連絡](/contact-ddbj.html)します。
 
-{% include image.html url="books/gea-bp.jpg" caption="GEA 登録で使う BioProject を一つ選択します" class="w550" %}
+<a class="group1" href="/assets/images/books/seq-bp.jpg" title="GEA 登録で使う BioProject を一つ選択します">
+  <img src="/assets/images/books/seq-bp.jpg" alt="GEA 登録で使う BioProject を一つ選択します" class="w550">
+</a>
 
 ### IDF  {#idf-tab}
 
@@ -301,11 +309,15 @@ GEA と DRA submission が同じプロジェクトである場合は DRA submiss
 - Publication: 関連する文献を PubMed ID もしくは DOI で指定します。未公表の文献については ID が発行された後に [お知らせください](/contact-ddbj.html)。
 - Data File Type: シークエンシング実験の場合は解析済みデータが必須です。サンプル毎の解析済みデータファイルの登録を強く推奨します。[シークエンシング実験に登録可能なファイル形式](/gea/datafile.html#seq_data)。
 
-{% include image.html url="books/seq-idf.jpg" caption="IDF の内容を入力" class="w600" %}
+<a class="group1" href="/assets/images/books/seq-idf.jpg" title="IDF の内容を入力">
+  <img src="/assets/images/books/seq-idf.jpg" alt="IDF の内容を入力" class="w600">
+</a>
 
 ### SDRF  {#sdrf-tab}
 
-{% include image.html url="books/seq-sdrf-down.jpg" caption="SDRF テンプレートファイルをダウンロード" class="w400" %}
+<a class="group1" href="/assets/images/books/seq-sdrf-down.jpg" title="SDRF テンプレートファイルをダウンロード">
+  <img src="/assets/images/books/seq-sdrf-down.jpg" alt="SDRF テンプレートファイルをダウンロード" class="w400">
+</a>
 
 [SDRF (Sample and Data Relationship Format)](/gea/metadata.html#sdrf)
 テンプレートファイルをダウンロードして必要な情報を追加します。
@@ -353,11 +365,15 @@ Enter required fields by overwriting \<Required: fill in the content\> tags.
     - KU-2003
     - KU-PI499262
 
-{% include image.html url="books/seq-sdrf-template.jpg" caption="SDRF テンプレートの図解、登録者が情報を追加する必要がある部分は黄色で示されている" class="w600" %}
+<a class="group1" href="/assets/images/books/seq-sdrf-template.jpg" title="SDRF テンプレートの図解、登録者が情報を追加する必要がある部分は黄色で示されている">
+  <img src="/assets/images/books/seq-sdrf-template.jpg" alt="SDRF テンプレートの図解、登録者が情報を追加する必要がある部分は黄色で示されている" class="w600">
+</a>
 
 内容を追加した SDRF を選択して Continue をクリックします。
 
-{% include image.html url="books/seq-sdrf-up.jpg" caption="作成した SDRF ファイルを選択" class="w450" %}
+<a class="group1" href="/assets/images/books/seq-sdrf-up.jpg" title="作成した SDRF ファイルを選択">
+  <img src="/assets/images/books/seq-sdrf-up.jpg" alt="作成した SDRF ファイルを選択" class="w450">
+</a>
 
 ### Overview と投稿  {#submit}
 
@@ -365,7 +381,9 @@ Enter required fields by overwriting \<Required: fill in the content\> tags.
 
 "Submit" ボタンをクリックして IDF と SDRF を投稿します。
 
-{% include image.html url="books/seq-submit.jpg" caption="IDF と SDRF の内容を確認してから投稿" class="w450" %}
+<a class="group1" href="/assets/images/books/seq-submit.jpg" title="IDF と SDRF の内容を確認してから投稿">
+  <img src="/assets/images/books/seq-submit.jpg" alt="IDF と SDRF の内容を確認してから投稿" class="w450">
+</a>
 
 ### 検証処理  {#validation-step}
 
@@ -373,7 +391,9 @@ Enter required fields by overwriting \<Required: fill in the content\> tags.
 
 Validator は [validation rule](/gea/validation.html) に従ってメタデータをチェックしエラーとワーニングメッセージを表示します。メタデータを投稿するためにはエラーを解消しておく必要があります。
 
-{% include image.html url="books/seq-validation.jpg" caption="エラーとワーニングメッセージ" class="w500" %}
+<a class="group1" href="/assets/images/books/seq-validation.jpg" title="エラーとワーニングメッセージ">
+  <img src="/assets/images/books/seq-validation.jpg" alt="エラーとワーニングメッセージ" class="w500">
+</a>
 
 ### アクセッション番号  {#accession}
 
@@ -381,7 +401,9 @@ Validator は [validation rule](/gea/validation.html) に従ってメタデー�
 
 [査読者用トークンを発行](/gea/reviewer-access.html)することでの非公開データへのアクセスを提供することができます。
 
-{% include image.html url="books/seq-accession.jpg" caption="GEA アクセッション番号" class="w500" %}
+<a class="group1" href="/assets/images/books/seq-accession.jpg" title="GEA アクセッション番号">
+  <img src="/assets/images/books/seq-accession.jpg" alt="GEA アクセッション番号" class="w500">
+</a>
 
 ## 更新  {#update-submission}
 

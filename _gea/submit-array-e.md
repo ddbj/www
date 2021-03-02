@@ -104,7 +104,7 @@ Create a new microarray experiment submission by selecting "Microarray" and clic
 If there is no reply from submitters after three months of initial contact, submissions will be cancelled.
 </div>
 
-{% include image.html url="books/array-sub1.jpg" caption="Create a new microarray experiment submission" class="w450" %}
+<a class="group1" href="/assets/images/books/array-sub1.jpg" title="Create a new microarray experiment submission"><img src="/assets/images/books/array-sub1.jpg" alt="Create a new microarray experiment submission" class="w450"></a>
 
 List of submission status is as follows. The GEA team reviews submission whose status is in "submission\_validated" or "data\_error".
 
@@ -258,7 +258,9 @@ You can delete an un-submitted GEA submission at "Delete submission".
 
 </div>
 
-{% include image.html url="books/array-sub2.jpg" caption="Enter submission information" class="w550" %}
+<a class="group1" href="/assets/images/books/array-sub2.jpg" title="Enter submission information">
+	<img src="/assets/images/books/array-sub2.jpg" alt="Enter submission information" class="w550">
+</a>
 
 ### BioProject  {#BioProject-tab}
 
@@ -266,7 +268,9 @@ Select a submitted project registered in your account. If a BioProject is not re
 
 To use a project obtained in the other account, please [contact GEA team](/contact-ddbj-e.html).
 
-{% include image.html url="books/gea-bp.jpg" caption="Select a BioProject for the GEA experiment" class="w550" %}
+<a class="group1" href="/assets/images/books/gea-bp.jpg" title="Select a BioProject for the GEA experiment">
+    <img src="/assets/images/books/gea-bp.jpg" alt="Select a BioProject for the GEA experiment" class="w550">
+</a>
 
 ### BioSample  {#BioSample-tab}
 
@@ -274,7 +278,9 @@ Select submitted BioSamples registered in your account. If BioSamples are not re
 
 To use samples obtained in the other account, please [contact GEA team](/contact-ddbj-e.html).
 
-{% include image.html url="books/gea-bs.jpg" caption="Select BioSamples for the GEA experiment" class="w550" %}
+<a class="group1" href="/assets/images/books/gea-bs.jpg" title="Select BioSamples for the GEA experiment">
+    <img src="/assets/images/books/gea-bs.jpg" alt="Select BioSamples for the GEA experiment" class="w550">
+</a>
 
 ### IDF  {#idf-tab}
 
@@ -287,11 +293,15 @@ Enter information for [IDF (Investigation Description Format)](/gea/metadata-e.h
 - Array Design: When an array design is available in [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA, enter an array design accession number "A-XXXX-n". When an array design is not available, [register a new array design](/gea/adf-e.html) by uploading an array design file into the GEA submission directory.
 - Data File Type: Raw and processed data files are required for microarray experiment submission. We strongly recommend to submitting raw and processed data file per sample. [Accepted Data Files Formats for microarray experiment](/gea/datafile-e.html#array_data).
 
-{% include image.html url="books/array-idf.jpg" caption="Enter information for IDF" class="w600" %}
+<a class="group1" href="/assets/images/books/array-idf.jpg" title="Enter information for IDF">
+    <img src="/assets/images/books/array-idf.jpg" alt="Enter information for IDF" class="w600">
+</a>
 
 ### SDRF  {#sdrf-tab}
 
-{% include image.html url="books/array-sdrf.jpg" caption="Download a SDRF template file" class="w400" %}
+<a class="group1" href="/assets/images/books/array-sdrf.jpg" title="Download a SDRF template file">
+    <img src="/assets/images/books/array-sdrf.jpg" alt="Download a SDRF template file" class="w600">
+</a>
 
 Enter information for [SDRF (Sample and Data Relationship Format)](/gea/metadata-e.html#sdrf).
 
@@ -327,11 +337,15 @@ Fields you need to add.
     - KU-2003
     - KU-PI499262
 
-{% include image.html url="books/array-sdrf-template.jpg" caption="SDRF template, yellow-highlighted fields need to be filled by submitter" class="w600" %}
+<a class="group1" href="/assets/images/books/array-sdrf-template.jpg" title="SDRF template, yellow-highlighted fields need to be filled by submitter">
+    <img src="/assets/images/books/array-sdrf-template.jpg" alt="SDRF template, yellow-highlighted fields need to be filled by submitter" class="w600">
+</a>
 
 Select the entered SDRF file and continue.
 
-{% include image.html url="books/array-sdrf2.jpg" caption="Select entered SDRF file" class="w450" %}
+<a class="group1" href="/assets/images/books/array-sdrf2.jpg" title="Select entered SDRF file">
+    <img src="/assets/images/books/array-sdrf2.jpg" alt="Select entered SDRF file" class="w450">
+</a>
 
 ### Overview and submit  {#submit}
 
@@ -339,7 +353,9 @@ You can download the IDF and SDRF files and check them. When correction is neces
 
 Submit the IDF and SDRF metadata by clicking the "Submit" button.
 
-{% include image.html url="books/array-overview.jpg" caption="Check the IDF and SDRF and submit" class="w450" %}
+<a class="group1" href="/assets/images/books/array-overview.jpg" title="Check the IDF and SDRF and submit">
+    <img src="/assets/images/books/array-overview.jpg" alt="Check the IDF and SDRF and submit" class="w450">
+</a>
 
 ### Validation  {#validation-step}
 
@@ -347,7 +363,9 @@ When data files described in the IDF and SDRF are not found in the submission di
 
 The validator checks submitted IDF and SDRF files according to the [validation rules](/gea/validation-e.html) and gives warning and error messages. Errors need to be resolved for submission.
 
-{% include image.html url="books/array-validation.jpg" caption="Warning and error messages" class="w500" %}
+<a class="group1" href="/assets/images/books/array-validation.jpg" title="Warning and error messages">
+    <img src="/assets/images/books/array-validation.jpg" alt="Warning and error messages" class="w500">
+</a>
 
 ### Accession number  {#accession}
 
@@ -355,7 +373,9 @@ The validator checks submitted IDF and SDRF files according to the [validation r
 
 You can allow reviewers access to private records by [communicating a reviewer accesss token](/gea/reviewer-access-e.html).
 
-{% include image.html url="books/array-accession.jpg" caption="GEA accession numbers" class="w500" %}
+<a class="group1" href="/assets/images/books/array-accession.jpg" title="GEA accession numbers">
+    <img src="/assets/images/books/array-accession.jpg" alt="GEA accession numbers" class="w500">
+</a>
 
 ## Update submission  {#update-submission}
 
