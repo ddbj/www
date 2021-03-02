@@ -5,7 +5,7 @@ title: Release Notes of DDBJ Releases
 
 lang: en
 related_pages:
-  - title: DB out/in statistics
+  - title: Submission and release data volumes
     url: /statistics/index-e.html
   - title: DDBJ Periodic Release Statistics
     url: /statistics/ddbj-release-e

@@ -4,7 +4,7 @@ lang: ja
 title: リリースノート (DDBJ, 16S rRNA, DAD)
 lang: ja
 related_pages:
-  - title: DB の out/in 統計量
+  - title: 登録・公開データ量
     url: /statistics/index.html
   - title: DDBJ 定期リリース統計
     url: /statistics/ddbj-release
