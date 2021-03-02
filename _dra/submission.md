@@ -49,10 +49,10 @@ lang: ja
 
 登録者は実際のデータにあわせて柔軟にオブジェクトを構成することができます。
 
-  - [最もシンプルなケース](#ex_simple)
-  - [三つの菌株の比較ゲノム解析 (ペアエンド)](#ex_samples)
-  - [(Technical, Biological) replicate がある場合 (ペアエンド)](#ex_replicates)
-  - [関連するデータが別々の論文に発表される場合](#ex_submissions)
+- [最もシンプルなケース](#ex_simple)
+- [三つの菌株の比較ゲノム解析 (ペアエンド)](#ex_samples)
+- [(Technical, Biological) replicate がある場合 (ペアエンド)](#ex_replicates)
+- [関連するデータが別々の論文に発表される場合](#ex_submissions)
 
 #### 最もシンプルなケース  {#ex_simple}
 
@@ -63,7 +63,6 @@ lang: ja
 #### 三つの菌株の比較ゲノム解析 (ペアエンド)  {#ex_samples}
 
 ペアリードファイルは同じ Run に含めます。
-
 
 {% include image.html url="submission/obj_ex2.jpg" caption="三つの菌株の比較ゲノム解析 (ペアエンド)" class="w450" %}
 
@@ -165,95 +164,95 @@ SRA にデータを登録する際にはこの Center Name が必要です。
 [Library Source](#Library_Source)<a name="Library_Source"></a><span class="red">*</span>  
 : ライブラリー構築に用いた試料。
 
-    | Library Source     | Description                                                                        |
-    |---|
-    | GENOMIC            | Genomic DNA (includes PCR products from genomic DNA).                              |
-    | TRANSCRIPTOMIC     | Transcription products or non genomic DNA (EST, cDNA, RT-PCR, screened libraries). |
-    | METAGENOMIC        | Mixed material from metagenome.                                                    |
-    | METATRANSCRIPTOMIC | Transcription products from community targets.                                     |
-    | SYNTHETIC          | Synthetic DNA.                                                                     |
-    | VIRAL RNA          | Viral RNA.                                                                         |
-    | OTHER              | Other, unspecified, or unknown library source material.                            |
+| Library Source     | Description                                                                        |
+|---|
+| GENOMIC            | Genomic DNA (includes PCR products from genomic DNA).                              |
+| TRANSCRIPTOMIC     | Transcription products or non genomic DNA (EST, cDNA, RT-PCR, screened libraries). |
+| METAGENOMIC        | Mixed material from metagenome.                                                    |
+| METATRANSCRIPTOMIC | Transcription products from community targets.                                     |
+| SYNTHETIC          | Synthetic DNA.                                                                     |
+| VIRAL RNA          | Viral RNA.                                                                         |
+| OTHER              | Other, unspecified, or unknown library source material.                            |
 
 <!-- end list -->
 
 [Library Selection](#Library_Selection)<a name="Library_Selection"></a><span class="red">*</span>  
 : シークエンスに用いたライブラリを構築するためのサンプルの選別や濃縮方法。
 
-    | Library Selection                      | Description                                                                                                                                                                                        |
-    |---|
-    | RANDOM                                 | Random shearing only.                                                                                                                                                                              |
-    | PCR                                    | Source material was selected by designed primers.                                                                                                                                                  |
-    | RANDOM PCR                             | Source material was selected by randomly generated primers.                                                                                                                                        |
-    | RT-PCR                                 | Source material was selected by reverse transcription PCR.                                                                                                                                         |
-    | HMPR                                   | Hypo-methylated partial restriction digest.                                                                                                                                                        |
-    | MF                                     | Methyl Filtrated.                                                                                                                                                                                  |
-    | repeat fractionation                   | Selection for less repetitive (and more gene rich) sequence through Cot filtration (CF) or other fractionation techniques based on DNA kinetics.                                                   |
-    | size fractionation                     | Physical selection of size appropriate targets.                                                                                                                                                    |
-    | MSLL                                   | Methylation Spanning Linking Library.                                                                                                                                                              |
-    | cDNA                                   | complementary DNA.                                                                                                                                                                                 |
-    | cDNA_randomPriming                    |                                                                                                                                                                                                    |
-    | cDNA_oligo_dT                        |                                                                                                                                                                                                    |
-    | PolyA                                  | PolyA selection or enrichment for messenger RNA (mRNA); should replace cDNA enumeration.                                                                                                           |
-    | Oligo-dT                               | enrichment of messenger RNA (mRNA) by hybridization to Oligo-dT.                                                                                                                                   |
-    | Inverse rRNA                           | depletion of ribosomal RNA by oligo hybridization.                                                                                                                                                 |
-    | ChIP                                   | Chromatin immunoprecipitation.                                                                                                                                                                     |
-    | MNase                                  | Micrococcal Nuclease (MNase) digestion.                                                                                                                                                            |
-    | DNAse                                  | Deoxyribonuclease (DNase) digestion.                                                                                                                                                               |
-    | Hybrid Selection                       | Selection by hybridization in array or solution.                                                                                                                                                   |
-    | Reduced Representation                 | Reproducible genomic subsets, often generated by restriction fragment size selection, containing a manageable number of loci to facilitate re-sampling.                                            |
-    | Restriction Digest                     | DNA fractionation using restriction enzymes.                                                                                                                                                       |
-    | 5-methylcytidine antibody              | Selection of methylated DNA fragments using an antibody raised against 5-methylcytosine or 5-methylcytidine (m5C)MBD2 protein methyl-CpG binding domain : Enrichment by methyl-CpG binding domain. |
-    | MBD2 protein methyl-CpG binding domain | MBD2 protein methyl-CpG binding domain.                                                                                                                                                            |
-    | CAGE                                   | Cap-analysis gene expression.                                                                                                                                                                      |
-    | RACE                                   | Rapid Amplification of cDNA Ends.                                                                                                                                                                  |
-    | MDA                                    | multiple displacement amplification.                                                                                                                                                               |
-    | padlock probes capture method          | Padlock Probes capture strategy to be used in conjuction with Bisulfite-Seq.                                                                                                                       |
-    | other                                  | Other library enrichment, screening, or selection process.                                                                                                                                         |
-    | unspecified                            | Library enrichment, screening, or selection is not specified.                                                                                                                                      |
+| Library Selection                      | Description                                                                                                                                                                                       |
+|---|
+| RANDOM                                 | Random shearing only.                                                                                                                                                                              |
+| PCR                                    | Source material was selected by designed primers.                                                                                                                                                  |
+| RANDOM PCR                             | Source material was selected by randomly generated primers.                                                                                                                                        |
+| RT-PCR                                 | Source material was selected by reverse transcription PCR.                                                                                                                                         |
+| HMPR                                   | Hypo-methylated partial restriction digest.                                                                                                                                                        |
+| MF                                     | Methyl Filtrated.                                                                                                                                                                                  |
+| repeat fractionation                   | Selection for less repetitive (and more gene rich) sequence through Cot filtration (CF) or other fractionation techniques based on DNA kinetics.                                                   |
+| size fractionation                     | Physical selection of size appropriate targets.                                                                                                                                                    |
+| MSLL                                   | Methylation Spanning Linking Library.                                                                                                                                                              |
+| cDNA                                   | complementary DNA.                                                                                                                                                                                 |
+| cDNA_randomPriming                    |                                                                                                                                                                                                    |
+| cDNA_oligo_dT                        |                                                                                                                                                                                                    |
+| PolyA                                  | PolyA selection or enrichment for messenger RNA (mRNA); should replace cDNA enumeration.                                                                                                           |
+| Oligo-dT                               | enrichment of messenger RNA (mRNA) by hybridization to Oligo-dT.                                                                                                                                   |
+| Inverse rRNA                           | depletion of ribosomal RNA by oligo hybridization.                                                                                                                                                 |
+| ChIP                                   | Chromatin immunoprecipitation.                                                                                                                                                                     |
+| MNase                                  | Micrococcal Nuclease (MNase) digestion.                                                                                                                                                            |
+| DNAse                                  | Deoxyribonuclease (DNase) digestion.                                                                                                                                                               |
+| Hybrid Selection                       | Selection by hybridization in array or solution.                                                                                                                                                   |
+| Reduced Representation                 | Reproducible genomic subsets, often generated by restriction fragment size selection, containing a manageable number of loci to facilitate re-sampling.                                            |
+| Restriction Digest                     | DNA fractionation using restriction enzymes.                                                                                                                                                       |
+| 5-methylcytidine antibody              | Selection of methylated DNA fragments using an antibody raised against 5-methylcytosine or 5-methylcytidine (m5C)MBD2 protein methyl-CpG binding domain : Enrichment by methyl-CpG binding domain. |
+| MBD2 protein methyl-CpG binding domain | MBD2 protein methyl-CpG binding domain.                                                                                                                                                            |
+| CAGE                                   | Cap-analysis gene expression.                                                                                                                                                                      |
+| RACE                                   | Rapid Amplification of cDNA Ends.                                                                                                                                                                  |
+| MDA                                    | multiple displacement amplification.                                                                                                                                                               |
+| padlock probes capture method          | Padlock Probes capture strategy to be used in conjuction with Bisulfite-Seq.                                                                                                                       |
+| other                                  | Other library enrichment, screening, or selection process.                                                                                                                                         |
+| unspecified                            | Library enrichment, screening, or selection is not specified.                                                                                                                                      |
 
 <!-- end list -->
 
 [Library Strategy](#Library_Strategy)<a name="Library_Strategy"></a><span class="red">*</span>  
 : ライブラリーの構築手法。
 
-    | Library Strategy                        | Description                                                                                                                                                                                                                                                               |
-    |---|
-    | WGS                                     | Whole genome shotgun.                                                                                                                                                                                                                                                     |
-    | WGA                                     | Whole genome amplification.                                                                                                                                                                                                                                               |
-    | WXS                                     | Random sequencing of exonic regions selected from the genome.                                                                                                                                                                                                             |
-    | RNA-Seq                                 | Random sequencing of whole transcriptome.                                                                                                                                                                                                                                 |
-    | miRNA-Seq                               | Micro RNA and other small non-coding RNA sequencing.                                                                                                                                                                                                                      |
-    | ncRNA-Seq                               | Capture of other non-coding RNA types, including post-translation modification types such as snRNA (small nuclear RNA) or snoRNA (small nucleolar RNA), or expression regulation types such as siRNA (small interfering RNA) or piRNA/piwi/RNA (piwi-interacting RNA).    |
-    | ssRNA-seq                               | strand-specific RNA sequencing                                                                                                                                                                                                                                            |
-    | WCS                                     | Whole chromosome (or other replicon) shotgun.                                                                                                                                                                                                                             |
-    | CLONE                                   | Genomic clone based (hierarchical) sequencing.                                                                                                                                                                                                                            |
-    | POOLCLONE                               | Shotgun of pooled clones (usually BACs and Fosmids).                                                                                                                                                                                                                      |
-    | AMPLICON                                | Sequencing of overlapping or distinct PCR or RT-PCR products.                                                                                                                                                                                                             |
-    | CLONEEND                                | Clone end (5', 3', or both) sequencing.                                                                                                                                                                                                                                   |
-    | FINISHING                               | Sequencing intended to finish (close) gaps in existing coverage.                                                                                                                                                                                                          |
-    | RAD-Seq                                 | Restriction Site Associated DNA Sequence                                                                                                                                                                                                                                  |
-    | ChIP-Seq                                | Direct sequencing of chromatin immunoprecipitates.                                                                                                                                                                                                                        |
-    | MNase-Seq                               | Direct sequencing following MNase digestion.                                                                                                                                                                                                                              |
-    | DNase-Hypersensitivity                  | Sequencing of hypersensitive sites, or segments of open chromatin that are more readily cleaved by DNaseI.                                                                                                                                                                |
-    | Bisulfite-Seq                           | Sequencing following treatment of DNA with bisulfite to convert cytosine residues to uracil depending on methylation status.                                                                                                                                              |
-    | EST                                     | Single pass sequencing of cDNA templates.                                                                                                                                                                                                                                 |
-    | FL-cDNA                                 | Full-length sequencing of cDNA templates.                                                                                                                                                                                                                                 |
-    | CTS                                     | Concatenated Tag Sequencing.                                                                                                                                                                                                                                              |
-    | MRE-Seq                                 | Methylation-Sensitive Restriction Enzyme Sequencing strategy.                                                                                                                                                                                                             |
-    | MeDIP-Seq                               | Methylated DNA Immunoprecipitation Sequencing strategy.                                                                                                                                                                                                                   |
-    | MBD-Seq                                 | Direct sequencing of methylated fractions sequencing strategy.                                                                                                                                                                                                            |
-    | Tn-Seq                                  | Gene fitness determination through transposon seeding.                                                                                                                                                                                                                    |
-    | FAIRE-seq                               | Formaldehyde Assisted Isolation of Regulatory Elements                                                                                                                                                                                                                    |
-    | SELEX                                   | Systematic Evolution of Ligands by EXponential enrichment                                                                                                                                                                                                                 |
-    | RIP-Seq                                 | Direct sequencing of RNA immunoprecipitates (includes CLIP-Seq, HITS-CLIP and PAR-CLIP).                                                                                                                                                                                  |
-    | ChIA-PET                                | Direct sequencing of proximity-ligated chromatin immunoprecipitates.                                                                                                                                                                                                      |
-    | Hi-C                                    | Chromosome Conformation Capture technique where a biotin-labeled nucleotide is incorporated at the ligation junction, enabling selective purification of chimeric DNA ligation junctions followed by deep sequencing                                                      |
-    | ATAC-seq                                | Assay for Transposase-Accessible Chromatin (ATAC) strategy is used to study genome-wide chromatin accessibility. alternative method to DNase-seq that uses an engineered Tn5 transposase to cleave DNA and to integrate primer DNA sequences into the cleaved genomic DNA |
-    | Targeted-Capture                        |                                                                                                                                                                                                                                                                           |
-    | Tethered Chromatin Conformation Capture |                                                                                                                                                                                                                                                                           |
-    | Synthetic-Long-Read                     | binning and barcoding of large DNA fragments to facilitate assembly of the fragment                                                                                                                                                                                       |
-    | Other                                   | Library strategy not listed.                                                                                                                                                                                                                                              |
+| Library Strategy                        | Description                                                                                                                                                                                                                                                               |
+|---|
+| WGS                                     | Whole genome shotgun.                                                                                                                                                                                                                                                     |
+| WGA                                     | Whole genome amplification.                                                                                                                                                                                                                                               |
+| WXS                                     | Random sequencing of exonic regions selected from the genome.                                                                                                                                                                                                             |
+| RNA-Seq                                 | Random sequencing of whole transcriptome.                                                                                                                                                                                                                                 |
+| miRNA-Seq                               | Micro RNA and other small non-coding RNA sequencing.                                                                                                                                                                                                                      |
+| ncRNA-Seq                               | Capture of other non-coding RNA types, including post-translation modification types such as snRNA (small nuclear RNA) or snoRNA (small nucleolar RNA), or expression regulation types such as siRNA (small interfering RNA) or piRNA/piwi/RNA (piwi-interacting RNA).    |
+| ssRNA-seq                               | strand-specific RNA sequencing                                                                                                                                                                                                                                            |
+| WCS                                     | Whole chromosome (or other replicon) shotgun.                                                                                                                                                                                                                             |
+| CLONE                                   | Genomic clone based (hierarchical) sequencing.                                                                                                                                                                                                                            |
+| POOLCLONE                               | Shotgun of pooled clones (usually BACs and Fosmids).                                                                                                                                                                                                                      |
+| AMPLICON                                | Sequencing of overlapping or distinct PCR or RT-PCR products.                                                                                                                                                                                                             |
+| CLONEEND                                | Clone end (5', 3', or both) sequencing.                                                                                                                                                                                                                                   |
+| FINISHING                               | Sequencing intended to finish (close) gaps in existing coverage.                                                                                                                                                                                                          |
+| RAD-Seq                                 | Restriction Site Associated DNA Sequence                                                                                                                                                                                                                                  |
+| ChIP-Seq                                | Direct sequencing of chromatin immunoprecipitates.                                                                                                                                                                                                                        |
+| MNase-Seq                               | Direct sequencing following MNase digestion.                                                                                                                                                                                                                              |
+| DNase-Hypersensitivity                  | Sequencing of hypersensitive sites, or segments of open chromatin that are more readily cleaved by DNaseI.                                                                                                                                                                |
+| Bisulfite-Seq                           | Sequencing following treatment of DNA with bisulfite to convert cytosine residues to uracil depending on methylation status.                                                                                                                                              |
+| EST                                     | Single pass sequencing of cDNA templates.                                                                                                                                                                                                                                 |
+| FL-cDNA                                 | Full-length sequencing of cDNA templates.                                                                                                                                                                                                                                 |
+| CTS                                     | Concatenated Tag Sequencing.                                                                                                                                                                                                                                              |
+| MRE-Seq                                 | Methylation-Sensitive Restriction Enzyme Sequencing strategy.                                                                                                                                                                                                             |
+| MeDIP-Seq                               | Methylated DNA Immunoprecipitation Sequencing strategy.                                                                                                                                                                                                                   |
+| MBD-Seq                                 | Direct sequencing of methylated fractions sequencing strategy.                                                                                                                                                                                                            |
+| Tn-Seq                                  | Gene fitness determination through transposon seeding.                                                                                                                                                                                                                    |
+| FAIRE-seq                               | Formaldehyde Assisted Isolation of Regulatory Elements                                                                                                                                                                                                                    |
+| SELEX                                   | Systematic Evolution of Ligands by EXponential enrichment                                                                                                                                                                                                                 |
+| RIP-Seq                                 | Direct sequencing of RNA immunoprecipitates (includes CLIP-Seq, HITS-CLIP and PAR-CLIP).                                                                                                                                                                                  |
+| ChIA-PET                                | Direct sequencing of proximity-ligated chromatin immunoprecipitates.                                                                                                                                                                                                      |
+| Hi-C                                    | Chromosome Conformation Capture technique where a biotin-labeled nucleotide is incorporated at the ligation junction, enabling selective purification of chimeric DNA ligation junctions followed by deep sequencing                                                      |
+| ATAC-seq                                | Assay for Transposase-Accessible Chromatin (ATAC) strategy is used to study genome-wide chromatin accessibility. alternative method to DNase-seq that uses an engineered Tn5 transposase to cleave DNA and to integrate primer DNA sequences into the cleaved genomic DNA |
+| Targeted-Capture                        |                                                                                                                                                                                                                                                                           |
+| Tethered Chromatin Conformation Capture |                                                                                                                                                                                                                                                                           |
+| Synthetic-Long-Read                     | binning and barcoding of large DNA fragments to facilitate assembly of the fragment                                                                                                                                                                                       |
+| Other                                   | Library strategy not listed.                                                                                                                                                                                                                                              |
 
 <!-- end list -->
 
@@ -268,72 +267,72 @@ SRA にデータを登録する際にはこの Center Name が必要です。
 [Instrument](#Instrument)<a name="Instrument"></a><span class="red">*</span>  
 : シークエンサの機種を選択します。
 
-    | Instrument Model                    |
-    |---|
-    | 454 GS                              |
-    | 454 GS 20                           |
-    | 454 GS FLX                          |
-    | 454 GS FLX+                         |
-    | 454 GS FLX Titanium                 |
-    | 454 GS Junior                       |
-    | Illumina Genome Analyzer            |
-    | Illumina Genome Analyzer II         |
-    | Illumina Genome Analyzer IIx        |
-    | Illumina HiSeq 1000                 |
-    | Illumina HiSeq 1500                 |
-    | Illumina HiSeq 2000                 |
-    | Illumina HiSeq 2500                 |
-    | Illumina HiSeq 3000                 |
-    | Illumina HiSeq 4000                 |
-    | Illumina NovaSeq 6000               |
-    | Illumina MiSeq                      |
-    | Illumina MiniSeq                    |
-    | Illumina iSeq 100                   |
-    | Illumina HiScanSQ                   |
-    | HiSeq X Five                        |
-    | HiSeq X Ten                         |
-    | NextSeq 500                         |
-    | NextSeq 550                         |
-    | Helicos HeliScope                   |
-    | AB SOLiD System                     |
-    | AB SOLiD System 2.0                 |
-    | AB SOLiD System 3.0                 |
-    | AB SOLiD 3 Plus System              |
-    | AB SOLiD 4 System                   |
-    | AB SOLiD 4hq System                 |
-    | AB SOLiD PI System                  |
-    | AB 5500 Genetic Analyzer            |
-    | AB 5500xl Genetic Analyzer          |
-    | AB 5500xl-W Genetic Analysis System |
-    | Complete Genomics                   |
-    | MinION                              |
-    | GridION                             |
-    | PromethION                          |
-    | PacBio RS                           |
-    | PacBio RS II                        |
-    | Sequel                              |
-    | Ion Torrent PGM                     |
-    | Ion Torrent Proton                  |
-    | Ion Torrent S5                      |
-    | Ion Torrent S5 XL                   |
-    | AB 310 Genetic Analyzer             |
-    | AB 3130 Genetic Analyzer            |
-    | AB 3130xL Genetic Analyzer          |
-    | AB 3500 Genetic Analyzer            |
-    | AB 3500xL Genetic Analyzer          |
-    | AB 3730 Genetic Analyzer            |
-    | AB 3730xL Genetic Analyzer          |
+| Instrument Model                    |
+|---|
+| 454 GS                              |
+| 454 GS 20                           |
+| 454 GS FLX                          |
+| 454 GS FLX+                         |
+| 454 GS FLX Titanium                 |
+| 454 GS Junior                       |
+| Illumina Genome Analyzer            |
+| Illumina Genome Analyzer II         |
+| Illumina Genome Analyzer IIx        |
+| Illumina HiSeq 1000                 |
+| Illumina HiSeq 1500                 |
+| Illumina HiSeq 2000                 |
+| Illumina HiSeq 2500                 |
+| Illumina HiSeq 3000                 |
+| Illumina HiSeq 4000                 |
+| Illumina NovaSeq 6000               |
+| Illumina MiSeq                      |
+| Illumina MiniSeq                    |
+| Illumina iSeq 100                   |
+| Illumina HiScanSQ                   |
+| HiSeq X Five                        |
+| HiSeq X Ten                         |
+| NextSeq 500                         |
+| NextSeq 550                         |
+| Helicos HeliScope                   |
+| AB SOLiD System                     |
+| AB SOLiD System 2.0                 |
+| AB SOLiD System 3.0                 |
+| AB SOLiD 3 Plus System              |
+| AB SOLiD 4 System                   |
+| AB SOLiD 4hq System                 |
+| AB SOLiD PI System                  |
+| AB 5500 Genetic Analyzer            |
+| AB 5500xl Genetic Analyzer          |
+| AB 5500xl-W Genetic Analysis System |
+| Complete Genomics                   |
+| MinION                              |
+| GridION                             |
+| PromethION                          |
+| PacBio RS                           |
+| PacBio RS II                        |
+| Sequel                              |
+| Ion Torrent PGM                     |
+| Ion Torrent Proton                  |
+| Ion Torrent S5                      |
+| Ion Torrent S5 XL                   |
+| AB 310 Genetic Analyzer             |
+| AB 3130 Genetic Analyzer            |
+| AB 3130xL Genetic Analyzer          |
+| AB 3500 Genetic Analyzer            |
+| AB 3500xL Genetic Analyzer          |
+| AB 3730 Genetic Analyzer            |
+| AB 3730xL Genetic Analyzer          |
 
 <!-- end list -->
 
 [Spot Type](#Spot_Type)<a name="Spot_Type"></a><span class="red">*</span>  
 : データファイル中のリード構成を選択します。
 
-    | Spot Type   | Description                           |
-    |---|
-    | single      | Single read                           |
-    | paired (FF) | Paired reads with same direction.     |
-    | paired (FR) | Paired reads with opposite direction. |
+| Spot Type   | Description                           |
+|---|
+| single      | Single read                           |
+| paired (FF) | Paired reads with same direction.     |
+| paired (FR) | Paired reads with opposite direction. |
 
 <!-- end list -->
 
@@ -350,9 +349,9 @@ SRA にデータを登録する際にはこの Center Name が必要です。
 [Spot Length](#Spot_Length)<a name="Spot_Length"></a><span class="red">*</span>  
 : データファイル中のリードの長さを記載します。ペアードの場合は両リードの合計長 (ギャップ長は除きます) を記入します。
     
-  - Spot length が一定の場合、一定の値を記入
-  - リード長が一定ではない 454 プラットフォームの場合、フロー数を記入
-  - 不定長の fastq の場合、平均長を記入
+- Spot length が一定の場合、一定の値を記入
+- リード長が一定ではない 454 プラットフォームの場合、フロー数を記入
+- 不定長の fastq の場合、平均長を記入
 
 ### Run  {#Run}
 
@@ -391,15 +390,15 @@ Run に含めるデータファイルを選択します。
 [File Type](#File_Type)<a name="File_Type"></a><span class="red">*</span>  
 : シークエンスデータのファイル形式。リード長が一定ではない fastq ファイルの場合は  "generic_fastq"、一定の場合は "fastq" を選択します。
 
-    | File Type        | Description                                                                                                            |
-    |---|
-    | generic_fastq   | fastq files with variable read length                                                                                  |
-    | fastq            | fastq files with constant read length                                                                                  |
-    | sff              | 454 Standard Flowgram Format file                                                                                      |
-    | hdf5             | PacBio hdf5 Format file                                                                                                |
-    | bam              | Binary SAM format for use by loaders that combine alignment and sequencing data                                        |
-    | tab              | A tab-delimited table maps "SN in SQ line of BAM header" and "reference fasta file"                                    |
-    | reference_fasta | Reference sequence file in single fasta format used to construct SRA archive file format. Filename must end with ".fa" |
+| File Type        | Description                                                                                                            |
+|---|
+| generic_fastq   | fastq files with variable read length                                                                                  |
+| fastq            | fastq files with constant read length                                                                                  |
+| sff              | 454 Standard Flowgram Format file                                                                                      |
+| hdf5             | PacBio hdf5 Format file                                                                                                |
+| bam              | Binary SAM format for use by loaders that combine alignment and sequencing data                                        |
+| tab              | A tab-delimited table maps "SN in SQ line of BAM header" and "reference fasta file"                                    |
+| reference_fasta | Reference sequence file in single fasta format used to construct SRA archive file format. Filename must end with ".fa" |
 
 <!-- end list -->
 
@@ -426,11 +425,11 @@ Run に含めるデータファイルを選択します。
 [Analysis Type](#Analysis_Type)<a name="Analysis_Type"></a><span class="red">*</span>  
 : Analysis の種類を選択します。アライメントデータは Run に登録します。
 
-  |  Analysis Type  |  Description  |
-  |---|
-  |  De Novo Assembly  |  A placement of sequences including trace, SRA, GI records into a multiple alignment from which a consensus is computed..  |
-  |  Sequence Annotation  |  Per sequence annotation of named attributes and values.<br> Example: Processed sequencing data for submission to dbEST without assembly.<br> Reads have already been submitted to one of the sequence read archives in raw form.<br> The fasta data submitted under this analysis object result from the following treatments, which may serve to filter reads from the raw dataset:<br>     - sequencing adapter removal<br>     - low quality trimming<br>- poly-A tail removal<br>- strand orientation <br>- contaminant removal.  |
-  |  Abundance Measurement  |  Identify the tools and processing steps used to produce the abundance measurements (coverage tracks).  |
+|  Analysis Type  |  Description  |
+|---|
+|  De Novo Assembly  |  A placement of sequences including trace, SRA, GI records into a multiple alignment from which a consensus is computed..  |
+|  Sequence Annotation  |  Per sequence annotation of named attributes and values.<br> Example: Processed sequencing data for submission to dbEST without assembly.<br> Reads have already been submitted to one of the sequence read archives in raw form.<br> The fasta data submitted under this analysis object result from the following treatments, which may serve to filter reads from the raw dataset:<br>     - sequencing adapter removal<br>     - low quality trimming<br>- poly-A tail removal<br>- strand orientation <br>- contaminant removal.  |
+|  Abundance Measurement  |  Identify the tools and processing steps used to produce the abundance measurements (coverage tracks).  |
 
 #### Data files for Analysis  {#Area_data-files-for-analysis}
 
@@ -454,19 +453,19 @@ Analysis に含めるデータファイルを選択します。
 [File Type](#Analysis_File_Type)<a name="Analysis_File_Type"></a><span class="red">*</span>  
 : 解析データのファイル形式。
 
-    |  File Type  |  Description  |
-    |---|
-    |  bam  |  Binary form of the Sequence alignment/map format for read placements, from the SAM tools project.<br/>See <a href="http://sourceforge.net/projects/samtools/">http://sourceforge.net/projects/samtools/</a>.  |
-    |  tab  |  A tab delimited text file that can be viewed as a spreadsheet. The first line should contain column headers..  |
-    |  ace  |  Multiple alignment file output from the phred assembler and similar programs.<br/>See <a href="http://www.phrap.org/consed/distributions/README.16.0.txt">http://www.phrap.org/consed/distributions/README.16.0.txt</a> for a description of the ACE file format..  |
-    |  fasta  |  Sequence data format indicating sequence base calls.The format is simple: a header line initiated with the &gt; character, data lines following with base calls..  |
-    |  wig  |  The wiggle (WIG) format allows display of continuous-valued data in track format.This display type is useful for GC percent, probability scores, and transcriptome data.<br/> See <a href="http://genome.ucsc.edu/goldenPath/help/wiggle.html">http://genome.ucsc.edu/goldenPath/help/wiggle.html</a> for a description of the Wiggle Track format..  |
-    |  bed  |  BED format provides a flexible way to define the data lines that are displayed in an annotation track.<br/> See <a href="http://genome.ucsc.edu/FAQ/FAQformat#format1">http://genome.ucsc.edu/FAQ/FAQformat#format1</a> for a description of the BED format..  |
-    |  vcf  |  Variant Call Format.<br/>See <a href="http://www.1000genomes.org/wiki/analysis/variant%20call%20format/vcf-variant-call-format-version-41">http://www.1000genomes.org/wiki/analysis/variant%20call%20format/vcf-variant-call-format-version-41</a> for a description of the VCF format.  |
-    |  maf  |  Mutation Annotation Format  |
-    |  gff  |  General Feature Format  |
-    |  csv  |    |
-    |  tsv  |    |
+|  File Type  |  Description  |
+|---|
+|  bam  |  Binary form of the Sequence alignment/map format for read placements, from the SAM tools project.<br/>See <a href="http://sourceforge.net/projects/samtools/">http://sourceforge.net/projects/samtools/</a>.  |
+|  tab  |  A tab delimited text file that can be viewed as a spreadsheet. The first line should contain column headers..  |
+|  ace  |  Multiple alignment file output from the phred assembler and similar programs.<br/>See <a href="http://www.phrap.org/consed/distributions/README.16.0.txt">http://www.phrap.org/consed/distributions/README.16.0.txt</a> for a description of the ACE file format..  |
+|  fasta  |  Sequence data format indicating sequence base calls.The format is simple: a header line initiated with the &gt; character, data lines following with base calls..  |
+|  wig  |  The wiggle (WIG) format allows display of continuous-valued data in track format.This display type is useful for GC percent, probability scores, and transcriptome data.<br/> See <a href="http://genome.ucsc.edu/goldenPath/help/wiggle.html">http://genome.ucsc.edu/goldenPath/help/wiggle.html</a> for a description of the Wiggle Track format..  |
+|  bed  |  BED format provides a flexible way to define the data lines that are displayed in an annotation track.<br/> See <a href="http://genome.ucsc.edu/FAQ/FAQformat#format1">http://genome.ucsc.edu/FAQ/FAQformat#format1</a> for a description of the BED format..  |
+|  vcf  |  Variant Call Format.<br/>See <a href="http://www.1000genomes.org/wiki/analysis/variant%20call%20format/vcf-variant-call-format-version-41">http://www.1000genomes.org/wiki/analysis/variant%20call%20format/vcf-variant-call-format-version-41</a> for a description of the VCF format.  |
+|  maf  |  Mutation Annotation Format  |
+|  gff  |  General Feature Format  |
+|  csv  |    |
+|  tsv  |    |
 
 <!-- end list -->
 
@@ -479,12 +478,12 @@ Analysis に含めるデータファイルを選択します。
 
 
 <div class="attention" markdown="1">
-  - fasta は受け付けていません。最低限 quality score 付きのベース/カラーコールデータが必要です。
-  - ファイル名は英数字 [A-Z,a-z,0-9]、アンダースコア [_]、ハイフン [-] とドット [.] のみから構成され、空白文字、カッコ、句読点やシンボルを含まないこと。
-  - バーコード配列で由来サンプルが区別されたデータファイルは登録前に分割し、由来サンプルごとに BioSample を作成します。各 BioSample には１つかそれ以上のユニークなデータファイルがリンクされている状態にします。
-  - fastq ファイルの場合、ペアリードは別々のファイルとして登録します。bam や sff ファイルの場合、分割する必要はありません。
-  - データファイルは登録用ディレクトリの直下に置いてください。基本的に tar などのアーカイブファイルのなかにディレクトリを作成しないでください。
-  - BAM、SFF や HDF5 などのバイナリーファイルは圧縮しないでください。
+- fasta は受け付けていません。最低限 quality score 付きのベース/カラーコールデータが必要です。
+- ファイル名は英数字 [A-Z,a-z,0-9]、アンダースコア [_]、ハイフン [-] とドット [.] のみから構成され、空白文字、カッコ、句読点やシンボルを含まないこと。
+- バーコード配列で由来サンプルが区別されたデータファイルは登録前に分割し、由来サンプルごとに BioSample を作成します。各 BioSample には１つかそれ以上のユニークなデータファイルがリンクされている状態にします。
+- fastq ファイルの場合、ペアリードは別々のファイルとして登録します。bam や sff ファイルの場合、分割する必要はありません。
+- データファイルは登録用ディレクトリの直下に置いてください。基本的に tar などのアーカイブファイルのなかにディレクトリを作成しないでください。
+- BAM、SFF や HDF5 などのバイナリーファイルは圧縮しないでください。
 </div>
 
 ### 登録するデータファイルの形式について  {#formats-sequencing-data-files} 
@@ -635,18 +634,18 @@ chr3 NC_000003.12
 
 Run の filetype はリード長が一定・不定によって異なります。
 
-  - リード長が揃っている fastq ファイルの場合、Run の file type で <span class="red">fastq</span> を選択します。ペアードデータの場合、対になっているファイル中でペアとなっているリードが同じ順番で記載されている必要があります。
-  - リード長が一定ではない fastq ファイル: Run の file type で <span class="red">generic_fastq</span> を選択します。
+- リード長が揃っている fastq ファイルの場合、Run の file type で <span class="red">fastq</span> を選択します。ペアードデータの場合、対になっているファイル中でペアとなっているリードが同じ順番で記載されている必要があります。
+- リード長が一定ではない fastq ファイル: Run の file type で <span class="red">generic_fastq</span> を選択します。
 
 fastq の形式。詳しくは[NCBI のサイト](https://www.ncbi.nlm.nih.gov/sra/docs/submitformats/#fastq-files)をご覧ください。
 
-  - Quality value は phred 形式にしてください。オフセットはデフォルトで 33 (!) になります。64 (@) の場合は [Run XML を編集](#create-metadata-in-xml-files)して ascii_offset="@" にしてください。
-  - DRA のメタデータ作成インターフェースは Technical read (アダプター、リンカー、バーコード配列)
-    記載に対応していないため、Technical read を含める場合は [登録するデータファイルの形式について](#formats-sequencing-data-files) を参考に technical read が記載された Experiment XML を登録してください ([XML の記載例](/ddbj/example.html))。Technical reads が除去されている場合、XML 登録は必要ありません。
-  - ペアードリードは別々の fastq ファイルとして登録してください。リード名にペアリードを同定するためのサフィックス (例 '/1' と '/2') が含まれている必要があります。
-  - 各リードの最初の行は '@' で始まっている必要があります。
-  - ベースコールと Quality value は '+' で始まる行で区切られている必要があります。
-  - fastq ファイルは gzip もしくは bzip2 で圧縮してください。
+- Quality value は phred 形式にしてください。オフセットはデフォルトで 33 (!) になります。64 (@) の場合は [Run XML を編集](#create-metadata-in-xml-files)して ascii_offset="@" にしてください。
+- DRA のメタデータ作成インターフェースは Technical read (アダプター、リンカー、バーコード配列)
+記載に対応していないため、Technical read を含める場合は [登録するデータファイルの形式について](#formats-sequencing-data-files) を参考に technical read が記載された Experiment XML を登録してください ([XML の記載例](/ddbj/example.html))。Technical reads が除去されている場合、XML 登録は必要ありません。
+- ペアードリードは別々の fastq ファイルとして登録してください。リード名にペアリードを同定するためのサフィックス (例 '/1' と '/2') が含まれている必要があります。
+- 各リードの最初の行は '@' で始まっている必要があります。
+- ベースコールと Quality value は '+' で始まる行で区切られている必要があります。
+- fastq ファイルは gzip もしくは bzip2 で圧縮してください。
 
 ### 454  {#r454} 
 
@@ -700,8 +699,8 @@ Run に HDF5 以外のデータを含めないでください。
 以下の unaligned bam ファイルの登録をサポートしています。1 Run に 1 bamファイルを指定してください。
 unaligned bamの場合、リファレンス配列や対応表の指定は必要ありません。
 
-  - subread BAM files (*.subreads.bam)
-  - CCS read BAM files (*.ccs.bam)
+- subread BAM files (*.subreads.bam)
+- CCS read BAM files (*.ccs.bam)
 
 #### fastq  {#pacbio_fastq}
 
@@ -722,10 +721,10 @@ fastq/bam ファイルを登録します。
 
 [PacBio](http://www.pacb.com) シークエンサーは塩基配列に加え、塩基のメチル化状態を解析することができ、そのデータを共有することは研究者コミュニティにとって重要です。 例えば、修飾された塩基の正確な位置情報は DNA メチルトランスフェラーゼの特異性の解析に用いることができます。 PacBio の解析ソフトウェア(RS_Modification_and_Motif_Analysis) はこれらの修飾塩基配列情報を抽出し、以下のいくつかのファイルに出力します:
 
-  - motif_summary.csv
-  - modifications.csv
-  - modifications.gff
-  - motifs.gff
+- motif_summary.csv
+- modifications.csv
+- modifications.gff
+- motifs.gff
 
 この解析結果ファイル、原核生物については少なくとも motif_summary.csv ファイルを DRA Analysis として登録することは研究者コミュニティにとって貴重なデータになります。 Run に加え、これらのファイルを [Sequence Annotation type](#Analysis_Type) Analysis として是非ご登録ください。 サポートが必要な場合は [DRA チームにご連絡ください](/contact-ddbj.html)。
 
@@ -756,26 +755,26 @@ fastq/bam ファイルを登録します。
 
 ### 1. 登録アカウントを作成
 
-  - [D-way 登録アカウント](/account.html)を作成
-  - [公開鍵と center name をアカウントに登録](/account.html#enable-dra-submission-in-account)し、DRA 登録を可能に
+- [D-way 登録アカウント](/account.html)を作成
+- [公開鍵と center name をアカウントに登録](/account.html#enable-dra-submission-in-account)し、DRA 登録を可能に
 
 ### 2. DRA 登録を作成しデータファイルをアップロード
 
-  - 新規 DRA 登録を作成 ([アカウントに DRA 登録権限を付与しておきます](/account.html#enable-dra-submission-in-account))  
-    データは DRA 登録 (Submission) 単位で公開されます。
-  - BioProject、BioSample、Experiment と Run を投稿する前にデータファイルを scp でアップロード
+- 新規 DRA 登録を作成 ([アカウントに DRA 登録権限を付与しておきます](/account.html#enable-dra-submission-in-account))  
+データは DRA 登録 (Submission) 単位で公開されます。
+- BioProject、BioSample、Experiment と Run を投稿する前にデータファイルを scp でアップロード
 
 ### 3. プロジェクトとサンプル情報を登録
 
 #### [BioProject (Study)](/bioproject/submission.html)  {#BioProject_Study}
 
-  - 研究プロジェクトの内容
-  - 「なぜ」そのサンプルをシークエンスしたのか
+- 研究プロジェクトの内容
+- 「なぜ」そのサンプルをシークエンスしたのか
 
 #### [BioSample (Sample)](/bioproject/submission.html) <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#BioSample_Sample}
 
-  - 生物学的、物理的にユニークなサンプル
-  - 「何を」シークエンスしたのか
+- 生物学的、物理的にユニークなサンプル
+- 「何を」シークエンスしたのか
 
 <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">メタデータをタブ区切りテキストファイルで登録できます
 
@@ -783,19 +782,19 @@ fastq/bam ファイルを登録します。
 
 #### DRA Experiment <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#DRA_Experiment}
 
-  - 特定のサンプルから構築したライブラリーについての説明
-  - 「どのように」シークエンスをしたのか
-  - 複数の Experiment は一つの Sample を参照できるが、逆はできない
+- 特定のサンプルから構築したライブラリーについての説明
+- 「どのように」シークエンスをしたのか
+- 複数の Experiment は一つの Sample を参照できるが、逆はできない
 
 #### DRA Run <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#DRA_Run}
 
-  - Experiment と Run を投稿した後、データファイルの検証処理を開始
-  - Run にリンクしている全てのデータファイルは 1 つの SRA ファイルにマージされます
+- Experiment と Run を投稿した後、データファイルの検証処理を開始
+- Run にリンクしている全てのデータファイルは 1 つの SRA ファイルにマージされます
 
 ### 5. シークエンスデータファイルの検証処理
 
-  - シークエンスデータファイルをアーカイブ用 SRA ファイルに変換する処理を開始
-  - 検証処理を通った登録が査定されアクセッション番号が発行される
+- シークエンスデータファイルをアーカイブ用 SRA ファイルに変換する処理を開始
+- 検証処理を通った登録が査定されアクセッション番号が発行される
 
 ## DRA へのデータ登録方法  {#how-to-submit-dra-data}
 
@@ -874,12 +873,12 @@ DRA 登録のステータス一覧
 $ scp -i private-key-for-auth &lt;Your Files&gt; &lt;D-way Login ID&gt;@ftp-private.ddbj.nig.ac.jp:~/&lt;DRA Submission ID&gt;
 ```
 
-  - -i でアカウントに登録した認証用公開鍵とペアになる秘密鍵を指定します。
-  - &lt;Your Files&gt; 転送するファイル。例: file1 file2 (file1とfile2)、file*
-    (fileではじまる全てのファイル)
-  - &lt;D-way Login ID&gt; D-way の Login ID (例 test07)
-  - &lt;DRA Submission ID&gt; DRA 登録の Submission ID (例: test07-0018)
-  - コマンドの例: scp -i private-key-for-auth strainA_1.fastq
+- -i でアカウントに登録した認証用公開鍵とペアになる秘密鍵を指定します。
+- &lt;Your Files&gt; 転送するファイル。例: file1 file2 (file1とfile2)、file*
+(fileではじまる全てのファイル)
+- &lt;D-way Login ID&gt; D-way の Login ID (例 test07)
+- &lt;DRA Submission ID&gt; DRA 登録の Submission ID (例: test07-0018)
+- コマンドの例: scp -i private-key-for-auth strainA_1.fastq
 
 
 鍵を作成したときに指定したパスフレーズを入力します。
@@ -933,11 +932,11 @@ DRA への登録 ～データの転送 (Windows)～
 転送モードはバイナリモードにします。テキストモードで転送しないでください。
 </div>
 
-  - **File protocol:** SFTP
-  - **Host name:** ftp-private.ddbj.nig.ac.jp
-  - **Port number:** 22
-  - **User name:** (D-way の Login ID を入力)
-  - **Password:** (空欄のまま)
+- **File protocol:** SFTP
+- **Host name:** ftp-private.ddbj.nig.ac.jp
+- **Port number:** 22
+- **User name:** (D-way の Login ID を入力)
+- **Password:** (空欄のまま)
 
 <a href="/assets/images/books/winscp1_400.jpg" title="秘密鍵の選択１" class="group1"><img src="/assets/images/books/winscp1_400.jpg" alt="秘密鍵の登録１" title="秘密鍵の登録１" class="w300"></a>
 
@@ -984,11 +983,11 @@ DRA への登録 ～データの転送 (Mac)～
 Cyberduck の起動画面で、以下のように設定し More Options の “Use Public Key
 Authentication” をチェックします。
 
-  - **Server:** ftp-private.ddbj.nig.ac.jp
-  - **Port:** 22
-  - **Username:** (D-wayのLogin IDを入力)
-  - **Password:** (空欄のまま)
-  - **Add to Keychain:** (チェックを入れる)
+- **Server:** ftp-private.ddbj.nig.ac.jp
+- **Port:** 22
+- **Username:** (D-wayのLogin IDを入力)
+- **Password:** (空欄のまま)
+- **Add to Keychain:** (チェックを入れる)
 
 <a href="/assets/images/books/Cyberduck_3.jpg" title="key_authentication" class="group1"><img src="/assets/images/books/Cyberduck_3.jpg" alt="key_authentication" title="key_authentication" class="w300"></a>
 
@@ -1023,24 +1022,24 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 作成した新規登録をクリックし、登録詳細ページへ移動します。
 
-
-{% include image.html url="books/hdra02.jpg" caption="登録詳細ページへ移動" class="w450" %}
-
+<a href="/assets/images/books/hdra02.jpg" title="登録詳細ページへ移動" class="group1"><img src="/assets/images/books/hdra02.jpg" alt="登録詳細ページへ移動" title="登録詳細ページへ移動" class="w400"></a>
 
 登録詳細ページ中の [Enter / Update metadata] をクリックし、メタデータ作成ツールを起動します。
 
-
-{% include image.html url="books/hdra03.jpg" caption="メタデータ作成ツールを起動" class="w450" %}
-
+<a href="/assets/images/books/hdra03.jpg" title="メタデータ作成ツールを起動" class="group1"><img src="/assets/images/books/hdra03.jpg" alt="メタデータ作成ツールを起動" title="メタデータ作成ツールを起動" class="w400"></a>
 
 新規登録に対応するファイルサーバのディレクトリにデータファイルがアップロードされていない場合、下記のようなメッセージが表示されます。[データファイルをアップロードします](#upload-sequence-data)。
 
 先にメタデータを作成しておきたい場合は、適当なファイルをアップロードしておきます。
 
+<<<<<<< HEAD
 
 {% include image.html url="books/hdra-not-uploaded.jpg" caption="データファイルがアップロードされていない場合" class="w200" %}
 
 Experiment や Run オブジェクトが多件数の場合、ウェブツールの応答が遅くなることがあります。その場合、メタデータ用エクセルと XML 生成プログラムを使ってエクセルから XML を生成し、Submission/Experiment/Run XML を D-way からアップロードすることで多件数を一括で登録することができます。詳細については [GitHub](https://github.com/ddbj/submission-excel2xml) ページをご覧ください。
+=======
+<a href="/assets/images/books/hdra-not-uploaded.jpg" title="データファイルがアップロードされていない場合" class="group1"><img src="/assets/images/books/hdra-not-uploaded.jpg" alt="データファイルがアップロードされていない場合" title="データファイルがアップロードされていない場合" class="w300"></a>
+>>>>>>> c58988896a5e32ebba53df5a094b53df55131424
 
 メタデータは Submission、BioProject、BioSample、Experiment、Run、Analysis (任意)
 オブジェクトで構成されています。 メタデータ作成ツールの画面上で、各項目に内容を英語で入力していきます。
@@ -1057,9 +1056,7 @@ Experiment や Run オブジェクトが多件数の場合、ウェブツール�
 オブジェクトは Submission 単位で公開されます。オブジェクトを異なる時期に公開したい場合は Submission を分けて登録してください。
 </div>
 
-
-{% include image.html url="books/hdra-submission01.jpg" caption="Submission に登録情報を入力" class="w450" %}
-
+<a href="/assets/images/books/hdra-submission01.jpg" title="Submission に登録情報を入力" class="group1"><img src="/assets/images/books/hdra-submission01.jpg" alt="Submission に登録情報を入力" title="Submission に登録情報を入力" class="w450"></a>
 
 #### Study  {#study}
 
@@ -1068,17 +1065,13 @@ Experiment や Run オブジェクトが多件数の場合、ウェブツール�
 
 複数のプロジェクトを登録することはできません。 自身のアカウント以外で取得されたプロジェクトを参照したい場合は [DRA チームに連絡してください](/contact-ddbj.html)。
 
-
-{% include image.html url="books/hdra-bp01.jpg" caption="BioProject の新規登録、もしくは選択" class="w450" %}
-
+<a href="/assets/images/books/hdra-bp01.jpg" title="BioProject の新規登録、もしくは選択" class="group1"><img src="/assets/images/books/hdra-bp01.jpg" alt="BioProject の新規登録、もしくは選択" title="BioProject の新規登録、もしくは選択" class="w450"></a>
 
 BioProject を新規登録する場合は左のタブから順番に内容を英語で入力していきます。二段目が BioProject になります。登録者などの情報は DRA Submission で入力した内容が引き写されます。
 
 各項目の説明は [BioProject Handbook](/bioproject/submission.html#metadata) を参照してください。
 
-
-{% include image.html url="books/hdra-bp02.jpg" caption="BioProject の新規登録" class="w450" %}
-
+<a href="/assets/images/books/hdra-bp02.jpg" title="BioProject の新規登録" class="group1"><img src="/assets/images/books/hdra-bp02.jpg" alt="BioProject の新規登録" title="BioProject の新規登録" class="w450"></a>
 
 ゲノムをアセンブルするプロジェクトでは、アセンブリに対してユニークな [Locus tag
 prefix](/ddbj/locus_tag.html) が必要です。
@@ -1097,21 +1090,15 @@ prefix は NCBI が一括管理しています。プロジェクトを投稿す�
 複数の prefix の取得を希望する場合は [DRA チームに連絡します](/contact-ddbj.html)
 </div>
 
-
-{% include image.html url="books/hdra-bpltag.jpg" caption="Locus tag prefix の取得" class="w450" %}
-
+<a href="/assets/images/books/hdra-bpltag.jpg" title="Locus tag prefix の取得" class="group1"><img src="/assets/images/books/hdra-bpltag.jpg" alt="Locus tag prefix の取得" title="Locus tag prefix の取得" class="w450"></a>
 
 最後の "OVERVIEW" で内容を確認したうえで [Submit BioProject] をクリックして投稿します。
 
-
-{% include image.html url="books/hdra-bp03.jpg" caption="BioProject の投稿" class="w450" %}
-
+<a href="/assets/images/books/hdra-bp03.jpg" title="BioProject の投稿" class="group1"><img src="/assets/images/books/hdra-bp03.jpg" alt="BioProject の投稿" title="BioProject の投稿" class="w450"></a>
 
 BioProject を投稿した後、Study では投稿したプロジェクトが選択されている状態になります。
 
-
-{% include image.html url="books//hdra-bp04.jpg" caption="投稿されたプロジェクトが選択される" class="w450" %}
-
+<a href="/assets/images/books/hdra-bp04.jpg" title="投稿されたプロジェクトが選択される" class="group1"><img src="/assets/images/books/hdra-bp04.jpg" alt="投稿されたプロジェクトが選択される" title="投稿されたプロジェクトが選択される" class="w450"></a>
 
 #### Sample  {#sample}
 
@@ -1127,25 +1114,19 @@ BioSamples] をクリックすると、フィルターされたサンプルが�
 
 自身のアカウント以外で取得された BioSample を参照したい場合は [DRA チームに連絡してください](/contact-ddbj.html)。
 
-
-{% include image.html url="books/hdra-bs01.jpg" caption="BioSample の新規登録 or 選択" class="w450" %}
-
+<a href="/assets/images/books/hdra-bs01.jpg" title="BioSample の新規登録 or 選択" class="group1"><img src="/assets/images/books/hdra-bs01.jpg" alt="BioSample の新規登録 or 選択" title="BioSample の新規登録 or 選択" class="w450"></a>
 
 BioSample を新規登録する場合は左のタブから順番に内容を英語で入力していきます。二段目が BioSample になります。登録者などの情報は DRA Submission で入力した内容が引き写されます。
 
 各項目の説明は [BioSample Handbook](/biosample/submission.html#metadata) を参照してください。
 
-
-{% include image.html url="books/hdra-bs02.jpg" caption="BioSample の新規登録" class="w450" %}
-
+<a href="/assets/images/books/hdra-bs02.jpg" title="BioSample の新規登録" class="group1"><img src="/assets/images/books/hdra-bs02.jpg" alt="BioSample の新規登録" title="BioSample の新規登録" class="w450"></a>
 
 "SAMPLE TYPE" でサンプルの種類を選択します。
 
 Sample type については [BioSample Handbook](/biosample/submission.html#Sample_type) を参照してください。
 
-
-{% include image.html url="books/hdra-bs03.jpg" caption="Sample type の選択" class="w450" %}
-
+<a href="/assets/images/books/hdra-bs03.jpg" title="Sample type の選択" class="group1"><img src="/assets/images/books/hdra-bs03.jpg" alt="Sample type の選択" title="Sample type の選択" class="w450"></a>
 
 Sample type に応じた属性入力用テンプレートファイルをダウンロードします。
 
@@ -1162,17 +1143,13 @@ Sample type に応じた属性入力用テンプレートファイルをダウ�
 Biological/Technical replicate は別々の BioSample として登録します。登録に必要なサンプル数は [FAQ: 塩基配列登録にはいくつのサンプルが必要ですか?](/faq/ja/samples-for-sra)
 を参照してください。
 
-
-{% include image.html url="books/hdra-bs04.jpg" caption="サンプル属性テンプレートファイルのダウンロード" class="w450" %}
-
+<a href="/assets/images/books/hdra-bs04.jpg" title="サンプル属性テンプレートファイルのダウンロード" class="group1"><img src="/assets/images/books/hdra-bs04.jpg" alt="サンプル属性テンプレートファイルのダウンロード" title="サンプル属性テンプレートファイルのダウンロード" class="w450"></a>
 
 サンプル属性ファイルを選択して Continue をクリックすると validator がルールに基づいてアップロードされたファイルをチェックします。Error や Warning メッセージが表示された場合は必要に応じて内容を修正して再度アップロードします。Error が解消されない限り次のタブに進んで内容を submit することはできません。
 
 Validation ルールとメッセージについては [Validation rules ページ](/biosample/validation.html)をご覧ください。
 
-
-{% include image.html url="books/hdra-bs04-2.jpg" caption="BBioSample の validation。この例では sample \"genome bacteria strain C\" の collection_date に将来の日付が記入されているエラーと geo_loc_name 中の国名と緯度経度が一致していない warning が表示されています。" class="w500" %}
-
+<a href="/assets/images/books/hdra-bs04-2.jpg" title="BioSample の validation。この例では sample \"genome bacteria strain C\" の collection_date に将来の日付が記入されているエラーと geo_loc_name 中の国名と緯度経度が一致していない warning が表示されています。" class="group1"><img src="/assets/images/books/hdra-bs04-2.jpg" alt="BioSample の validation。この例では sample \"genome bacteria strain C\" の collection_date に将来の日付が記入されているエラーと geo_loc_name 中の国名と緯度経度が一致していない warning が表示されています。" title="BioSample の validation。この例では sample \"genome bacteria strain C\" の collection_date に将来の日付が記入されているエラーと geo_loc_name 中の国名と緯度経度が一致していない warning が表示されています。" class="w500"></a>
 
 最後の "OVERVIEW" で内容を確認したうえで投稿します。"ATTRIBUTES" で属性ファイルをダウンロードすることができます。
 
@@ -1180,15 +1157,11 @@ Validation ルールとメッセージについては [Validation rules ペー�
 登録後は最新の属性ファイルをダウンロードすることができます。
 </div>
 
-
-{% include image.html url="books/hdra-bs05.jpg" caption="BioSample の投稿" class="w450"%}
-
+<a href="/assets/images/books/hdra-bs05.jpg" title="BioSample の投稿" class="group1"><img src="/assets/images/books/hdra-bs05.jpg" alt="BioSample の投稿" title="BioSample の投稿" class="w450"></a>
 
 BioSample を投稿した後、Sample では投稿したサンプルが選択されている状態になります。
 
-
-{% include image.html url="books/hdra-bs06.jpg" caption="投稿されたサンプルが選択される" class="w450" %}
-
+<a href="/assets/images/books/hdra-bs06.jpg" title="投稿されたサンプルが選択される" class="group1"><img src="/assets/images/books/hdra-bs06.jpg" alt="投稿されたサンプルが選択される" title="投稿されたサンプルが選択される" class="w450"></a>
 
 #### Experiment  {#experiment}
 
@@ -1202,18 +1175,14 @@ BioSample を投稿した後、Sample では投稿したサンプルが選択さ
 
 [Add new Experiment(s)] で Experiment の追加、右端の [Delete] で Experiment の削除をすることができます。Run から参照されている Experiment は削除することができません。
 
-
-{% include image.html url="books/hdra-experiment01.jpg" caption="各 BioSample を参照している Experiment が自動的に作成される" class="w450" %}
-
+<a href="/assets/images/books/hdra-experiment01.jpg" title="各 BioSample を参照している Experiment が自動的に作成される" class="group1"><img src="/assets/images/books/hdra-experiment01.jpg" alt="各 BioSample を参照している Experiment が自動的に作成される" title="各 BioSample を参照している Experiment が自動的に作成される" class="w450"></a>
 
 タブ区切りテキストファイルでまとめて Experiment を作成することができます。まず [Save] で内容を保存し、Alias (例 test07-0040_Experiment_0001 ～ 0003) を確定します。Alias はアクセッション番号が発行されるまでのオブジェクトの仮の名称になります。
 
 [Download TSV file] で内容をタブ区切りテキストファイルとしてダウンロードします。
 
-
-{% include image.html url="books/hdra-experiment02.jpg" caption="Save して Alias
-を確定し、タブ区切りテキストファイルをダウンロード" class="w450" %}
-{:/}
+<a href="/assets/images/books/hdra-experiment02.jpg" title="Save して Alias を確定し、タブ区切りテキストファイルをダウンロード" class="group1"><img src="/assets/images/books/hdra-experiment02.jpg" alt="Save して Alias を確定し、タブ区切りテキストファイルをダウンロード" title="Save して Alias
+を確定し、タブ区切りテキストファイルをダウンロード" class="w450"></a>
 
 エクセルなどの表計算ソフトでメタデータをまとめて作成することができます。
 
@@ -1221,15 +1190,11 @@ BioSample を投稿した後、Sample では投稿したサンプルが選択さ
 
 "BioSample Used" は "SSUB BioSample Submission ID" : "Sample name" (例 SSUB003746 : Genome bacteria strain A) で指定します。":" の両側の空白は無視されます。
 
-
-{% include image.html url="books/hdra-experiment03.jpg" caption="Experiment テンプレートファイル" class="w450" %}
-
+<a href="/assets/images/books/hdra-experiment03.jpg" title="Experiment テンプレートファイル" class="group1"><img src="/assets/images/books/hdra-experiment03.jpg" alt="Experiment テンプレートファイル" title="Experiment テンプレートファイル" class="w450"></a>
 
 入力内容をタブ区切りテキストファイルとして保存し、選択したうえで [Upload TSV file] をクリックして読み込ませます。
 
-
-{% include image.html url="books/hdra-experiment04.jpg" caption="Experiment をタブ区切りテキストファイルとしてアップロード" class="w450" %}
-
+<a href="/assets/images/books/hdra-experiment04.jpg" title="Experiment をタブ区切りテキストファイルとしてアップロード" class="group1"><img src="/assets/images/books/hdra-experiment04.jpg" alt="Experiment をタブ区切りテキストファイルとしてアップロード" title="Experiment をタブ区切りテキストファイルとしてアップロード" class="w450"></a>
 
 <div class="attention">
 エクセルなどの表計算ソフト独自の形式ではなくタブ区切りテキストファイルとしてアップロードします。
@@ -1243,17 +1208,13 @@ BioSample を投稿した後、Sample では投稿したサンプルが選択さ
 
 [Add another Run(s)] で Run の追加、右端の [Delete] で Run の削除をすることができます。ファイルが紐づいている Run は削除することができません。
 
-
-{% include image.html url="books/hdra-run01.jpg" caption="Save して Alias を確定" class="w450" %}
-
+<a href="/assets/images/books/hdra-run01.jpg" title="Save して Alias を確定" class="group1"><img src="/assets/images/books/hdra-run01.jpg" alt="Save して Alias を確定" title="Save して Alias を確定" class="w450"></a>
 
 [Save] で Run の Alias を確定すると、内容をタブ区切りテキストファイルでまとめて編集できるようになります。
 
 [Select data files for Run] で Run とアップロードしたデータファイルをリンクする画面に移動します。
 
-
-{% include image.html url="books/hdra-run02.jpg" caption="ファイルと Run をリンクする画面へ移動" class="w450" %}
-
+<a href="/assets/images/books/hdra-run02.jpg" title="ファイルと Run をリンクする画面へ移動" class="group1"><img src="/assets/images/books/hdra-run02.jpg" alt="ファイルと Run をリンクする画面へ移動" title="ファイルと Run をリンクする画面へ移動" class="w450"></a>
 
 ディレクトリにアップロードされているファイル一覧が表示されます。ファイルが属すべき Run の Alias を "Run/Analysis contains files" で選択します。
 
@@ -1267,21 +1228,15 @@ BioSample を投稿した後、Sample では投稿したサンプルが選択さ
 リード長が一定ではない fastq ファイルの場合、filetype には "generic_fastq" を選択します。
 </div>
 
-
-{% include image.html url="books/hdra-runfinish.jpg" caption="データファイルの属性を入力し Run に結び付ける" class="w450" %}
-
+<a href="/assets/images/books/hdra-runfinish.jpg" title="データファイルの属性を入力し Run に結び付ける" class="group1"><img src="/assets/images/books/hdra-runfinish.jpg" alt="データファイルの属性を入力し Run に結び付ける" title="データファイルの属性を入力し Run に結び付ける" class="w450"></a>
 
 Analysis (任意) が不要な場合は [Submit / Update DRA metadata] をクリックし、メタデータを投稿します。
 
-
-{% include image.html url="books/hdra-submit01.jpg" caption="DRA メタデータの投稿" class="w450" %}
-
+<a href="/assets/images/books/hdra-submit01.jpg" title="DRA メタデータの投稿" class="group1"><img src="/assets/images/books/hdra-submit01.jpg" alt="DRA メタデータの投稿" title="DRA メタデータの投稿" class="w450"></a>
 
 メタデータの投稿後、データファイルを検証する処理を開始します。"Validate uploaded data files to finish this submission" をクリックします。
 
-
-{% include image.html url="books/hdra-submit02.jpg" caption="メタデータ投稿後、データファイルの検証に進む" class="w450" %}
-
+<a href="/assets/images/books/hdra-submit02.jpg" title="メタデータ投稿後、データファイルの検証に進む" class="group1"><img src="/assets/images/books/hdra-submit02.jpg" alt="メタデータ投稿後、データファイルの検証に進む" title="メタデータ投稿後、データファイルの検証に進む" class="w450"></a>
 
 #### Analysis (任意)  {#analysis}
 
@@ -1289,18 +1244,13 @@ Analysis (任意) が不要な場合は [Submit / Update DRA metadata] をクリ
 
 [Select data files for Analysis] ボタンをクリックし、ファイルと Analysis を結び付ける画面に移動します。
 
-
-{% include image.html url="books/hdra-analysis01.jpg" caption="Analysis の入力" class="w450" %}
-
+<a href="/assets/images/books/hdra-analysis01.jpg" title="Analysis の入力" class="group1"><img src="/assets/images/books/hdra-analysis01.jpg" alt="Analysis の入力" title="Analysis の入力" class="w450"></a>
 
 データファイルの属性を入力し、Analysis とリンクさせます。タブ区切りテキストファイルでまとめて内容を入力する場合、Analysis に登録するファイルを区別するために左端の Run/Analysis に "Analysis" と入力します。
 
-
-{% include image.html url="books/hdra-analysisfile01.jpg" caption="データファイルと Analysis のリンク" class="w450" %}
-
+<a href="/assets/images/books/hdra-analysisfile01.jpg" title="データファイルと Analysis のリンク" class="group1"><img src="/assets/images/books/hdra-analysisfile01.jpg" alt="データファイルと Analysis のリンク" title="データファイルと Analysis のリンク" class="w450"></a>
 
 [Enter / Update metadata] をクリックして内容を投稿し、データファイルの検証に進みます。Analysis 用のファイルは md5 しかチェックされません。
-
 
 <div class="accordion-menu" markdown="1">
 <h3 class="toggle-content-btn"><a href="javascript:void(0)" name="create-metadata-in-xml-files">XML でのメタデータ登録方法</a></h3>
@@ -1313,29 +1263,33 @@ Analysis (任意) が不要な場合は [Submit / Update DRA metadata] をクリ
 
 2. Submission、Experiment、Run XML を作成します。アクセッション番号が未発行の BioProject と
 BioSample を Experiment から参照する場合、以下のように記載します。
-    ```
-    <STUDY_REF>
-      <IDENTIFIERS>
-        <PRIMARY_ID label="BioProject Submission ID">PSUB004220</PRIMARY_ID>
-      </IDENTIFIERS>
-    </STUDY_REF>
-    ```
-    <br>
-    ```
-    <SAMPLE_DESCRIPTOR>
-      <IDENTIFIERS>
-        <PRIMARY_ID label="BioSample Submission ID">SSUB003742 : sample name</PRIMARY_ID>
-      </IDENTIFIERS>
-    </SAMPLE_DESCRIPTOR>
-    ```
+
+```
+<STUDY_REF>
+  <IDENTIFIERS>
+    <PRIMARY_ID label="BioProject Submission ID">PSUB004220</PRIMARY_ID>
+  </IDENTIFIERS>
+</STUDY_REF>
+```
+
+```
+<SAMPLE_DESCRIPTOR>
+  <IDENTIFIERS>
+    <PRIMARY_ID label="BioSample Submission ID">SSUB003742 : sample name</PRIMARY_ID>
+  </IDENTIFIERS>
+</SAMPLE_DESCRIPTOR>
+```
+
 3. XML を検証します。以下の Unix コマンドで XML をスキーマに対して検証することができます。エラーになる XML
 をアップロードすることはできません。
-    ```
-    xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.submission.xsd?view=co test07-0018.Submission.xml
-    xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.experiment.xsd?view=co test07-0018.Experiment.xml
-    xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.run.xsd?view=co test07-0018.Run.xml
-    xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.analysis.xsd?view=co test07-0018.Analysis.xml
-    ```
+
+```
+xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.submission.xsd?view=co test07-0018.Submission.xml
+xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.experiment.xsd?view=co test07-0018.Experiment.xml
+xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.run.xsd?view=co test07-0018.Run.xml
+xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.analysis.xsd?view=co test07-0018.Analysis.xml
+```
+
 4. チェックした XML をアップロードします。Submission、Experiment、Run、Analysis (任意) の XML ファイルを選択し、同時にアップロードします。
     アップロードされた XML について「SRA xsd に対する妥当性」と「オブジェクト間の関係性」がチェックされます。エラーが発生した場合はファイルを修正してください。<br>
     <a href="/assets/images/books/hdra-xmlupload.jpg" title="作成した XML のアップロード" class="group1"><img src="/assets/images/books/hdra-xmlupload.jpg" alt="作成した XML のアップロード" title="作成した XML のアップロード" class="w500"></a>
@@ -1358,28 +1312,32 @@ BioSample を Experiment から参照する場合、以下のように記載し�
 3. XML を編集します。ファイル中のリードの構成を記載する SPOT_DESCRIPTOR
   については[記入例](/dra/example.html)を参考にしてください。 その他の項目については、[DRA XML schema](https://github.com/ddbj/pub/tree/master/docs/dra) 中の説明を参照してください。
 4. アクセッション番号が未発行の BioProject と BioSample を  Experiment から参照する場合、以下のように記載します。
-    ```
-    <STUDY_REF>
-      <IDENTIFIERS>
-        <PRIMARY_ID label="BioProject Submission ID">PSUB004220</PRIMARY_ID>
-      </IDENTIFIERS>
-    </STUDY_REF>
-    ```
-    <br>
-    ```
-    <SAMPLE_DESCRIPTOR>
-      <IDENTIFIERS>
-        <PRIMARY_ID label="BioSample Submission ID">SSUB003742 : sample name</PRIMARY_ID>
-      </IDENTIFIERS>
-    </SAMPLE_DESCRIPTOR>
-    ```
+
+```
+<STUDY_REF>
+  <IDENTIFIERS>
+    <PRIMARY_ID label="BioProject Submission ID">PSUB004220</PRIMARY_ID>
+  </IDENTIFIERS>
+</STUDY_REF>
+```
+
+```
+<SAMPLE_DESCRIPTOR>
+  <IDENTIFIERS>
+    <PRIMARY_ID label="BioSample Submission ID">SSUB003742 : sample name</PRIMARY_ID>
+  </IDENTIFIERS>
+</SAMPLE_DESCRIPTOR>
+```
+
 5. XML を検証します。以下の Unix コマンドで XML をスキーマに対して検証することができます。エラーになる XML をアップロードすることはできません。
-    ```
-    xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.submission.xsd?view=co test07-0018.Submission.xml
-    xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.experiment.xsd?view=co test07-0018.Experiment.xml
-    xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.run.xsd?view=co test07-0018.Run.xml
-    xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.analysis.xsd?view=co test07-0018.Analysis.xml
-    ```
+
+```
+xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.submission.xsd?view=co test07-0018.Submission.xml
+xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.experiment.xsd?view=co test07-0018.Experiment.xml
+xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.run.xsd?view=co test07-0018.Run.xml
+xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.analysis.xsd?view=co test07-0018.Analysis.xml
+```
+
 6. 編集した XML をアップロードします。Submission、Experiment、Run、Analysis (任意) の XML ファイルを選択し、同時にアップロードします。
   アップロードされた XML について「SRA xsd に対する妥当性」と「オブジェクト間の関係性」がチェックされます。エラーが発生した場合はファイルを修正してください。<br>
   <a href="/assets/images/books/hdra-xmlupload.jpg" title="編集した XML のアップロード" class="group1"><img src="/assets/images/books/hdra-xmlupload.jpg" alt="編集した XML のアップロード" title="編集した XML のアップロード" class="w500"></a>
@@ -1400,9 +1358,7 @@ BioSample を Experiment から参照する場合、以下のように記載し�
 
 登録詳細画面中の [Validate data files] をクリックし、シークエンスデータファイルの検証処理を開始します。
 
-
-{% include image.html url="books/hdra-validate.jpg" caption="シークエンスデータの検証処理を開始" class="w450" %}
-
+<a href="/assets/images/books/hdra-validate.jpg" title="シークエンスデータの検証処理を開始" class="group1"><img src="/assets/images/books/hdra-validate.jpg" alt="シークエンスデータの検証処理を開始" title="シークエンスデータの検証処理を開始" class="w450"></a>
 
 検証処理は以下の順番で実行されます。
 
@@ -1428,15 +1384,11 @@ BioSample を Experiment から参照する場合、以下のように記載し�
 
 [FAQ: データファイルの validation エラーへの対処方法は？](/faq/ja/data-validation-error)
 
-
-{% include image.html url="books/hdra-error.jpg" caption="検証処理を停止" class="w450" %}
-
+<a href="/assets/images/books/hdra-error.jpg" title="検証処理を停止" class="group1"><img src="/assets/images/books/hdra-error.jpg" alt="検証処理を停止" title="検証処理を停止" class="w450"></a>
 
 ステータスが "metadata_submitted" に戻るので、必要に応じてメタデータの修正、データファイルの再アップロードを行います。
 
-
-{% include image.html url="books/hdra-edit.jpg" caption="データを修正" class="w450" %}
-
+<a href="/assets/images/books/hdra-edit.jpg" title="データを修正" class="group1"><img src="/assets/images/books/hdra-edit.jpg" alt="データを修正" title="データを修正" class="w450"></a>
 
 ### アクセッション番号の発行  {#accession-numbers}
 
@@ -1444,9 +1396,7 @@ BioSample を Experiment から参照する場合、以下のように記載し�
 
 また、Submission に記載されている登録者には、アクセッション番号がメールで通知されます。
 
-
-{% include image.html url="books/hdra-accession.jpg" caption="DRA アクセッション番号" class="w450" %}
-
+<a href="/assets/images/books/hdra-accession.jpg" title="DRA アクセッション番号" class="group1"><img src="/assets/images/books/hdra-accession.jpg" alt="DRA アクセッション番号" title="DRA アクセッション番号" class="w450"></a>
 
 ### アーカイブ済み fastq/SRA ファイルの期間限定アクセス提供  {#fastq-sra-files}
 
@@ -1458,17 +1408,17 @@ BioSample を Experiment から参照する場合、以下のように記載し�
 できるだけ事前にウェブサイト等で周知いたしますが、直前になることもあり得ることをご了承ください。
 </div>
 
-  - (submitter's home)/report/dra/(DRA submission accession)/fastq/
-  - (submitter's home)/report/dra/(DRA submission accession)/sra/
+- (submitter's home)/report/dra/(DRA submission accession)/fastq/
+- (submitter's home)/report/dra/(DRA submission accession)/sra/
 
 例
 
-  - /report/dra/DRA000001/fastq/DRR000001.fastq.bz2
-  - /report/dra/DRA000001/fastq/DRR000002.fastq.bz2
-  - /report/dra/DRA000001/fastq/DRR000002_1.fastq.bz2
-  - /report/dra/DRA000001/fastq/DRR000002_2.fastq.bz2
-  - /report/dra/DRA000001/sra/DRR000001.sra
-  - /report/dra/DRA000001/sra/DRR000002.sra
+- /report/dra/DRA000001/fastq/DRR000001.fastq.bz2
+- /report/dra/DRA000001/fastq/DRR000002.fastq.bz2
+- /report/dra/DRA000001/fastq/DRR000002_1.fastq.bz2
+- /report/dra/DRA000001/fastq/DRR000002_2.fastq.bz2
+- /report/dra/DRA000001/sra/DRR000001.sra
+- /report/dra/DRA000001/sra/DRR000002.sra
 
 ### データ公開  {#data-release}
 
@@ -1536,8 +1486,8 @@ Run と同様登録が完了した Analysis データファイルの追加・変
 
 [D-way](https://ddbj.nig.ac.jp/D-way/) にログインし、[New submission] をクリックし、新規 DRA 登録を作成します。 作成した新規登録でデータを追加する対象の BioProject と BioSample を選択します。
 
-  - 新たにサンプルを追加する場合は BioProject を共有し、新規登録で BioSample - Experiment - Run を追加します。
-  - 既存のサンプルにデータを追加する場合は BioProject と BioSample を共有し、新規登録で Experiment - Run を追加します。
+- 新たにサンプルを追加する場合は BioProject を共有し、新規登録で BioSample - Experiment - Run を追加します。
+- 既存のサンプルにデータを追加する場合は BioProject と BioSample を共有し、新規登録で Experiment - Run を追加します。
 
 続いて DRA Experiment と Run タブで、Experiment、Run オブジェクトとデータファイルを追加します。
 
@@ -1547,13 +1497,9 @@ Run と同様登録が完了した Analysis データファイルの追加・変
 追加したデータに対応する BioProject 番号は同一ですが、Submission に対する DRA 番号は異なります。
 </div>
 
+<a href="/assets/images/books/add_data_files.jpg" title="サンプルの追加" class="group1"><img src="/assets/images/books/add_data_files.jpg" alt="サンプルの追加" title="サンプルの追加" class="w450"></a>
 
-{% include image.html url="books/add_data_files.jpg" caption="サンプルの追加" class="w400" %}
-
-
-
-{% include image.html url="books/add_run.jpg" caption="サンプルへのデータ追加" class="w400" %}
-
+<a href="/assets/images/books/add_run.jpg" title="サンプルへのデータ追加" class="group1"><img src="/assets/images/books/add_run.jpg" alt="サンプルへのデータ追加" title="サンプルへのデータ追加" class="w450"></a>
 
 登録が完了した DRA 登録にデータファイルを直接追加する場合は [DRA チームに連絡してください](/contact-ddbj.html)。
 
@@ -1564,7 +1510,6 @@ Experiment、Run や Analysis などのオブジェクトを削除する場合�
 ## 補足: MD5 値  {#supplement-md5} 
 
 MD5 (Message Digest Algorithm 5) はハッシュ関数であり、与えられたファイルに対してハッシュ値 (MD5値、32桁の英数字) を出力します。ファイルが破損していると MD5 値が変化します。 DRA では、到着したファイルの MD5 値の一致をチェックすることで、ファイルの破損がないかどうか確認しています。
-
 
 <div class="accordion-menu" markdown="1">
 <h3 class="toggle-content-btn"><a href="javascript:void(0)" name="obtain-md5-number-linux">MD5 値の取得 (Linux)</a></h3>

@@ -93,11 +93,11 @@ items:
   - name: DFAST
     formal_name: DDBJ Fast Annotation and Submission Tool
     service_link:
-      en: https://dfast.nig.ac.jp/
-      ja: https://dfast.nig.ac.jp/
+      en: https://dfast.ddbj.nig.ac.jp/
+      ja: https://dfast.ddbj.nig.ac.jp/
     help:
-      en: https://dfast.nig.ac.jp/help_annotation
-      ja: https://dfast.nig.ac.jp/help_annotation
+      en: https://dfast.ddbj.nig.ac.jp/help_annotation
+      ja: https://dfast.ddbj.nig.ac.jp/help_annotation
     description:
       en: DFAST is an automatic annotation service for prokaryotic genomes. DFAST generates <a href="https://www.ddbj.nig.ac.jp/ddbj/file-format.html#annotation">an annotation file submittable</a> to DDBJ.
       ja: 原核生物ゲノムの高速自動アノテーションパイプライン。<a href="https://www.ddbj.nig.ac.jp/ddbj/file-format.html#annotation">DDBJ に登録可能なアノテーションファイル</a>を出力します。

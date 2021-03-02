@@ -2,18 +2,22 @@
   <ul>
     <li>
       {% if include.lang == 'ja' %}
-      <a href="{{ site.url }}">ホーム</a>
+      <a href="{{ site.url }}/index.html">ホーム</a>
       {% else %}
-      <a href="{{ site.url }}/index-e">Home</a>
+      <a href="{{ site.url }}/index-e.html">Home</a>
       {% endif %}
     </li>
-
     {% if page.category and page.category != 'insdc_meeting' and page.category != 'training' %}
     <li>
       {% if site.data.label_dictionary.category[page.category] %}
-      <a href="{{site.url}}{{site.baseurl}}/{{ page.category }}/{{page.lang}}/">{{ site.data.label_dictionary.category[page.category][page.lang] }}</a>
+        {% assign category_label = site.data.label_dictionary.category[page.category][page.lang] %}
       {% else %}
-      <a href="{{site.url}}{{site.baseurl}}/{{ page.category }}">{{ page.category }}</a>
+        {% assign category_label = page.category %}
+      {% endif %}
+      {% if page.category == 'faq' or page.category == 'news' %}
+      <a href="{{site.url}}{{site.baseurl}}/{{ page.category }}/{{page.lang}}/">{{ category_label }}</a>
+      {% else %}
+      <a href="{{site.url}}{{site.baseurl}}/{{ page.category }}">{{ category_label }}</a>
       {% endif %}
     </li>
     {% endif %}

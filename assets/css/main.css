@@ -111,7 +111,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .title {
   font-family: "Roboto Condensed", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif; }
 
 a {
@@ -155,10 +155,10 @@ input, textarea, select, button {
     height: .2em;
     background-color: #d2cac4;
     box-shadow: 0 0.4em 0 #d2cac4, 0 0.8em 0 #d2cac4; }
-  .appearance-switch > .button[data-appearance-value="panel"]:hover:before, .appearance-switch > .button.-current[data-appearance-value="panel"]:before {
+  .appearance-switch > .button:hover[data-appearance-value="panel"]:before, .appearance-switch > .button.-current[data-appearance-value="panel"]:before {
     background-color: #fcac3d;
     box-shadow: 0.6em 0 0 #fcac3d, 0 0.6em 0 0 #fcac3d, 0.6em 0.6em 0 #fcac3d; }
-  .appearance-switch > .button[data-appearance-value="list"]:hover:before, .appearance-switch > .button.-current[data-appearance-value="list"]:before {
+  .appearance-switch > .button:hover[data-appearance-value="list"]:before, .appearance-switch > .button.-current[data-appearance-value="list"]:before {
     background-color: #fcac3d;
     box-shadow: 0 0.4em 0 #fcac3d, 0 0.8em 0 #fcac3d; }
 
@@ -820,7 +820,7 @@ input, textarea, select, button {
   align-items: stretch; }
   .panel-view-container > .panel {
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.18);
-    padding: 3.6rem 1.8rem;
+    padding: 1.8rem 1.8rem 1.8rem;
     color: inherit;
     background-color: white;
     border: solid 1px #F5F4F2;
@@ -837,7 +837,7 @@ input, textarea, select, button {
         align-items: center;
         justify-content: center; }
         .panel-view-container > .panel > a > .title > img {
-          height: 5.9rem;
+          height: 10rem;
           vertical-align: middle;
           margin-left: -.8rem; }
         .panel-view-container > .panel > a > .title > span {
@@ -845,7 +845,7 @@ input, textarea, select, button {
           line-height: 1;
           font-weight: normal; }
       .panel-view-container > .panel > a > .description {
-        margin-top: 1rem;
+        margin: .2rem auto .8rem;
         font-size: 1.2rem;
         line-height: 1.6rem; }
 
@@ -1086,7 +1086,7 @@ input, textarea, select, button {
     color: #736357; }
     .tag-view.-disable > .count {
       color: #736357; }
-  .tag-view.-disable:hover {
+  .tag-view:hover.-disable {
     background-color: rgba(255, 191, 0, 0.15);
     color: #FF7300; }
 
@@ -1517,5 +1517,4 @@ input, textarea, select, button {
 
 .top_space20 {
   margin-top: 2rem; }
-
 /*# sourceMappingURL=main.css.map */

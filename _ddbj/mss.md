@@ -75,7 +75,7 @@ DDBJ で受付した後に、より詳細な手順および作業を支援する
 
 - [全長規模のゲノム配列](/ddbj/genome.html)では　source と assembly_gap 以外の biological feature の記載は任意ですが、過去に登録例がない新規性の高い種が対象の場合、最低でも１つのゲノムに代表として feature annotation の記載が必要です。
 - [全長規模のゲノム配列](/ddbj/genome.html)でアノテーションを記載する場合は、[BioSample](/biosample/index.html) の登録時に [locus_tag prefix](/ddbj/qualifiers.html#locus_tag) の取得が必要です。
-- 原核生物のゲノムでは、[DFAST (DDBJ Fast Annotation and Submission Tool)](https://dfast.nig.ac.jp/) の利用を推奨しています。
+- 原核生物のゲノムでは、[DFAST (DDBJ Fast Annotation and Submission Tool)](https://dfast.ddbj.nig.ac.jp/) の利用を推奨しています。
 - [TSA](/ddbj/tsa.html) では source と assembly_gap 以外の biological feature の記載は任意であり、基本的には不要です。
 - [EST](/ddbj/est.html) には、source 以外の biological feature は記載できません。
 

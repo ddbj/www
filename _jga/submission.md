@@ -19,14 +19,14 @@ JGA は NBDC で承認された利用制限ポリシーを持つ，匿名化さ�
 
 |プレフィックス|メタデータオブジェクト|数字の桁数|例|
 |---|
-|JGA|Submission|11|JGA000001|
-|JGAS|Study|11|JGAS000001|
-|JGAN|Sample|11|JGAN000001|
-|JGAX|Experiment|11|JGAX000001|
-|JGAR|Data|11|JGAR000001|
-|JGAZ|Analysis|11|JGAZ000001|
-|JGAD|Data set|11|JGAD000001|
-|JGAP|Policy|11|JGAP000001|
+|JGA|Submission|6|JGA000001|
+|JGAS|Study|6|JGAS000001|
+|JGAN|Sample|9|JGAN000000001|
+|JGAX|Experiment|9|JGAX000000001|
+|JGAR|Data|9|JGAR000000001|
+|JGAZ|Analysis|9|JGAZ000000001|
+|JGAD|Data set|6|JGAD000001|
+|JGAP|Policy|6|JGAP000001|
 
 <div class="attention">
 データの再利用性，再現性のためには論文での主張の基になっている解析データが登録されることが重要です。できるだけ VCF などの解析データを Analysis に登録してください。
