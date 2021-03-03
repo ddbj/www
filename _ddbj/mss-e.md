@@ -70,7 +70,7 @@ Please confirm [Categories for Sequence Data](/documents/data-categories-e.html)
 
 ### 1. Application  {#flow-1}
 
-Please apply for your submission through ["Application form for MSS"](/ddbj/mass-form-e.html). 
+Please apply for your submission through ["Application form for MSS"](/ddbj/mss-form-e.html). 
 According to your application, DDBJ MSS sends you how to use MSS via an email.
 
 #### Preparation for sequence data submission
