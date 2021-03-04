@@ -253,7 +253,7 @@ JS      GenBank         GSS
 JT      GenBank         TSA (Transcriptome Shotgun Assembly)
 JU      GenBank         TSA (Transcriptome Shotgun Assembly)
 JV      GenBank         TSA (Transcriptome Shotgun Assembly)
-JW      GenBank         TSA (Transcriptome Shotgun Assembly)         
+JW      GenBank         TSA (Transcriptome Shotgun Assembly)
 JX      GenBank         Direct submission
 JY      GenBank         GSS
 JZ      GenBank         EST
@@ -331,8 +331,9 @@ MR      EPO             Patent application
 MS      EPO             Patent application
 MT      GenBank         Direct submission
 MU      GenBank         scaffold/CON
-MV      USPTO         Patent application
+MV      USPTO           Patent application
 MW      GenBank         Direct submission
+MY      USPTO           Patent application
 N       GenBank         EST
 O       void            UniProt/Swiss-Prot
 OA      ENA             
@@ -342,9 +343,15 @@ OD      ENA
 OE      ENA             
 OF      KIPO            Patent application
 OG      JPO             Patent application
-OH      DDBJ            
+OH      DDBJ            EST
 OI      DDBJ            
 OJ      DDBJ            
+OU      ENA             
+OV      ENA             
+OW      ENA             
+OX      ENA             
+OY      ENA             
+OZ      ENA             
 P       void            UniProt/Swiss-Prot
 Q       void            UniProt/Swiss-Prot
 R       GenBank         EST
