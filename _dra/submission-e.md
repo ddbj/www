@@ -90,9 +90,9 @@ data.](/contact-ddbj-e.html)Analysis files are provided on the DDBJ ftp
 site and not indexed by the
 [DRASearch](http://ddbj.nig.ac.jp/DRASearch).
 
-
+{::nomarkdown}
 {% include image.html url="books/sra_object.png" caption="Data model" class="w450" %}
-
+{:/}
 
 ### Organization of metadata objects  {#Organization_of_metadata_objects} 
 
@@ -108,31 +108,31 @@ objects flexibly.
 
 #### Most simple case  {#ex_simple}
 
-
+{::nomarkdown}
 {% include image.html url="submission/obj_ex1.jpg" caption="Most simple case" class="w450" %}
-
+{:/}
 
 #### Comparative genome sequencing of three strains (paired-end)  {#ex_samples}
 
 Include paired-end read files in a Run.
 
-
+{::nomarkdown}
 {% include image.html url="submission/obj_ex2.jpg" caption="Comparative genome sequencing of three strains (paired-end)" class="w450" %}
-
+{:/}
 
 #### Technical and biological replicates (paired-end)  {#ex_replicates}
 
 [Related FAQ: How many samples do I need for my DRA submission?](/faq/en/samples-for-sra.html)
 
-
+{::nomarkdown}
 {% include image.html url="submission/obj_exreplicate.jpg" caption="Technical and biological replicates (paired-end)" class="w450" %}
-
+{:/}
 
 #### Related sequencing data are reported in two publications.  {#ex_submissions}
 
-
+{::nomarkdown}
 {% include image.html url="submission/obj_ex3.jpg" caption="Related sequencing data are reported in two publications." class="w450" %}
-
+{:/}
 
 Items in each metadata object.
 
@@ -712,9 +712,9 @@ enable primary re-analysis and re-alignment of the dataset using new
 tools or future genome assembilies.
 </div>
 
-
+{::nomarkdown}
 {% include image.html url="books/bam-mapping.jpg" caption="mapping between bam and reference sequences" class="w500" %}
-
+{:/}
 
 1. #### BAM file submission {#BAM_file_submission}
   The alignment data can be submitted in the BAM format. The bam files should be readable by [SAMtools](http://samtools.sourceforge.net/) and [picard](https://broadinstitute.github.io/picard/). The BAM files are nearly optimal in terms of compression and should be submitted uncompressed.
@@ -1017,9 +1017,8 @@ submission, please first consider number of BioSamples.
 In this chapter, submission steps are explained by submitting a example
 submission "paired-end genome sequencing of three bacterial strains".
 
-
-{% include image.html url="books/datamodel1.jpg" caption="Genome sequencing data of three bacterial
-strains" class="w450" %}
+{::nomarkdown}
+{% include image.html url="books/datamodel1.jpg" caption="Genome sequencing data of three bacterial strains" classs="w450" %}
 {:/}
 
 ### Create a new submission  {#create-new-submission}
@@ -1041,9 +1040,9 @@ If there is no reply from submitters after three months of initial
 contact, submissions will be cancelled.
 </div>
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra01.jpg" caption="Create a new submission" class="w450" %}
-
+{:/}
 
 List of submission status is as follows. The DRA team reviews submission
 whose status is in "submission_validated" or "data_error".
@@ -1219,16 +1218,16 @@ the MSS team](/contact-ddbj-e.html#to-ddbj), upload the files to the
 
 Move to the submission detail page by clicking the submission ID.
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra02.jpg" caption="Move to the submission page" class="w450" %}
-
+{:/}
 
 Click the [Enter / Update metadata] button to run the DRA metadata
 creation tool.
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra03.jpg" caption="run the DRA metadata creation tool" class="w450" %}
-
+{:/}
 
 When no file is uploaded to the submission directory, following message
 is displayed. To submit metadata, please [upload data
@@ -1237,8 +1236,9 @@ files](#upload-sequence-data).
 To submit metadata first, upload some files (for example, empty text
 file).
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-not-uploaded.jpg" caption="when no data file is uploaded" class="w200" %}
+{:/}
 
 When there are many Experiment and Run objects, create metadata XMLs by using the excel for the DRA metadata and the XML generator. The metadata can be registered by uploading the Submission/Experiment/Run XMLs in D-way. Please see the [GitHub page](https://github.com/ddbj/submission-excel2xml) for details.
 
@@ -1263,9 +1263,9 @@ All data in a submission are released at the same time. If you want to
 release data at different time, please divide a submission.
 </div>
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-submission01.jpg" caption="Enter metadata in the tool" class="w450" %}
-
+{:/}
 
 #### Study  {#study}
 
@@ -1275,9 +1275,9 @@ registered in the account.
 Only one project can be submitted. To reference a project obtained in
 the other account, please [contact DRA team](/contact-ddbj-e.html).
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-bp01.jpg" caption="Submit a new BioProject or select submitted one" class="w450" %}
-
+{:/}
 
 To submit a BioProject, enter content from left to right tabs. The
 second panel is for BioProject submission. Submitter information is
@@ -1286,9 +1286,9 @@ copied with that of DRA submission.
 For BioProject metadata, please see the [BioProject
 Handbook](/bioproject/submission-e.html#metadata).
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-bp02.jpg" caption="BioProject submission" class="w450" %}
-
+{:/}
 
 To submit genome assemblies to DDBJ, a unique [Locus tag
 prefix](/ddbj/locus_tag-e.html) is necessary.
@@ -1319,22 +1319,22 @@ When multiple prefixes are necessary, please [contact
 us](/contact-ddbj-e.html).
 </div>
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-bpltag.jpg" caption="Reserve locus tag prefix" class="w450" %}
-
+{:/}
 
 Check the content in "OVERVIEW" and submit a project by clicking
 [Submit BioProject].
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-bp03.jpg" caption="Submit BioProject" class="w450" %}
-
+{:/}
 
 After submitting a project, submitted one is selected in Study.
 
-
+{::nomarkdown}
 {% include image.html url="books//hdra-bp04.jpg" caption="Submitted project is selected" class="w450" %}
-
+{:/}
 
 #### Sample  {#sample}
 
@@ -1352,9 +1352,9 @@ samples.
 
 To reference samples obtained in the other account, please [contact us](/contact-ddbj-e.html).
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-bs01.jpg" caption="Submit new samples or select submitted ones" class="w450" %}
-
+{:/}
 
 To submit a BioSample, enter content from left to right tabs. The second
 panel is for BioSample submission. Submitter information is copied with
@@ -1368,9 +1368,9 @@ submission?"](/faq/en/samples-for-sra.html)
 For BioSample metadata, please see the [BioSample
 Handbook](/biosample/submission-e.html#metadata).
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-bs02.jpg" caption="BioSample submission" class="w450" %}
-
+{:/}
 
 Select a sample type in the "SAMPLE TYPE". For genome samples, minimum
 sample attributes are defined by
@@ -1379,9 +1379,9 @@ sample attributes are defined by
 For the Sample type, please see the [BioSample
 Handbook](/biosample/submission-e.html#Sample_type).
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-bs03.jpg" caption="Select a sample type" class="w450" %}
-
+{:/}
 
 Download a template text file according to the selected sample type to
 enter sample attributes.
@@ -1403,9 +1403,9 @@ in [bioproject_id](/biosample/attribute-e.html?all=all#bioproject_id)
 for project without PRJD accession numbers. For attributes without
 measured values, enter "missing" or "not applicable".
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-bs04.jpg" caption="Download a text file for entering sample attributes" class="w450" %}
-
+{:/}
 
 Upload the BioSample submission file by selecting the file and clicking
 the Continue button. The validator checks the uploaded file and
@@ -1415,23 +1415,24 @@ BioSample until all errors are resolved.
 For the validation rules and messages, please see [Validation rules
 page](/biosample/validation-e.html).
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-bs04-2.jpg" caption="BioSample validation. In this example, an error for the future date in the collection_date and a warning for inconsistent countries between geo_loc_name and lat_lon of the sample \"genome bacteria strain C\" are displayed." class="w500" %}
+{:/}
 
 Check content in the last "OVERVIEW" and submit samples. In the
 "ATTRIBUTES" area, the submitted sample attribute file can be
 downloaded.
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-bs05.jpg" caption="Submit BioSample" class="w450"%}
-
+{:/}
 
 After submitting BioSamples, submitted BioSamples are selected in the
 "Sample" tab.
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-bs06.jpg" caption="Submitted BioSamples are selected" class="w450"%}
-
+{:/}
 
 #### Experiment  {#experiment}
 
@@ -1451,9 +1452,9 @@ Add an Experiment by clicking the [Add new Experiment(s)] and delete
 an Experiment by clicking the [Delete]. Experiment referenced by Run
 cannot be deleted.
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-experiment01.jpg" caption="Experiment referencing selected BioSample, is automatically created" class="w450" %}
-
+{:/}
 
 Experiments can be submitted in a tab-delimited text file. First save
 and fix Aliases (e.g., test07-0040_Experiment_0001 - 0003) by clicking
@@ -1463,9 +1464,9 @@ issued.
 Download content into a tab-delimited text file by clicking the
 [Download TSV file].
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-experiment02.jpg" caption="Save, fix aliases and download as a tab-delimited text file" class="w450" %}
-
+{:/}
 
 Metadata can be editted in spreadsheet software (e.g. Excel®).
 
@@ -1478,16 +1479,16 @@ Reference samples in "BioSample Used" by "SSUB BioSample Submission ID"
 : "Sample name" (example, SSUB003746 : Genome bacteria strain A). Spaces
 around ":" are ignored.
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-experiment03.jpg" caption="Experiment template file" class="w450" %}
-
+{:/}
 
 Save editted content in a tab-delimited text file and select and upload
 it by clicking the [Upload TSV file].
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-experiment04.jpg" caption="Upload Experiment in a tab-delimited text file" class="w450" %}
-
+{:/}
 
 <div class="attention">
 Upload in tab-delimited text file and NOT in spreadsheet software
@@ -1505,9 +1506,9 @@ Experiment.
 Add Run by clicking the [Add another Run(s)] and delete Run by
 clicking the [Delete]. Run linked to files cannot be deleted.
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-run01.jpg" caption="Save and fix Aliases" class="w450" %}
-
+{:/}
 
 After fixing aliases by clicking the [Save], run content can be
 downloaded into a tab-delimited text file. To distinguish the data files
@@ -1515,9 +1516,9 @@ for Run, enter "Run" in the leftmost "Run/Analysis" column.
 
 Click the [Select data files for Run] and link uploaded files to Run.
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-run02.jpg" caption="Move to next site to link files to Run" class="w450" %}
-
+{:/}
 
 All files uploaded to the submission directory are shown. Associate a
 file to a Run by selecting a Run alias in "Run/Analysis contains files".
@@ -1539,23 +1540,23 @@ For fastq with variable read length, select "generic_fastq" for
 filetype.
 </div>
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-runfinish.jpg" caption="Enter file attributes and link files to Run" class="w450" %}
-
+{:/}
 
 When an Analysis (optional) is unnecessary, submit metadata by clicking
 the [Submit/Update DRA metadata].
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-submit01.jpg" caption="Submit DRA metadata" class="w450" %}
-
+{:/}
 
 After submitting DRA metadata, start validation of data files. Click the
 link "Validate uploaded data files to finish this submission".
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-submit02.jpg" caption="Go to data validation after submitting metadata" class="w450" %}
-
+{:/}
 
 #### Analysis (optional)  {#analysis}
 
@@ -1564,18 +1565,18 @@ Unnecessary Analysis can be deleted by clicking the [Delete].
 
 Click the [Select data files for Analysis] and link files to Analysis.
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-analysis01.jpg" caption="Enter Analysis content" class="w450" %}
-
+{:/}
 
 Enter file attributes and associate them with Analysis. When submitting
 the file attributes by uploading the tab-delimited text file, to
 distinguish the data files for Analysis, enter "Analysis" in the
 leftmost "Run/Analysis" column.
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-analysisfile01.jpg" caption="Enter file attributes and link files to Analysis" class="w450" %}
-
+{:/}
 
 Submit DRA metadata by clicking the [Submit/Update DRA metadata] and
 proceed to data validation process. Only md5 of analysis files are
@@ -1656,9 +1657,9 @@ the Run and Analysis and those of uploaded files, are displayed.
 
 Click the [Validate data files] and validate uploaded data files.
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-validate.jpg" caption="UStart validationo of data files" class="w450" %}
-
+{:/}
 
 The files are validated in the following order.
 
@@ -1694,16 +1695,16 @@ validation again.
 
 [FAQ: How to deal with validation errors?](/faq/en/data-validation-error)
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-error.jpg" caption="Stop validation" class="w450" %}
-
+{:/}
 
 Submission status is backed to "metadata_submitted". Revise and
 re-submit metadata or re-upload data files.
 
-
+{::nomarkdown}
 {% include image.html url="books/hdra-edit.jpg" caption="Revise submission" class="w450" %}
-
+{:/}
 
 ### Accession numbers  {#accession-numbers}
 
@@ -1835,13 +1836,13 @@ The BioProject ID remains same, but different DRA submission number is
 assigned.
 </div>
 
-
+{::nomarkdown}
 {% include image.html url="books/add_data_files.jpg" caption="Add data files" class="w400" %}
+{:/}
 
-
-
+{::nomarkdown}
 {% include image.html url="books/add_run.jpg" caption="Add data files to existing sample" class="w400" %}
-
+{:/}
 
 To add data files to the existing DRA submission, please [contact us](/contact-ddbj-e.html).
 

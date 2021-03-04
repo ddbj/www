@@ -103,7 +103,9 @@ GEA では一つの登録に異なる種類のテクノロジー（マイクロ�
 DDBJ センターから登録者に問い合わせた後三か月以上回答が無い場合は Submission をキャンセルいたします。
 </div>
 
-<a class="group1" href="/assets/images/books/array-sub1.jpg" title="Microarray experiment submission の新規作成"><img src="/assets/images/books/array-sub1.jpg" alt="Microarray experiment submission の新規作成" class="w450"></a>
+{::nomarkdown}
+{% include image.html url="books/array-sub1.jpg" caption="Microarray experiment submission の新規作成" class="w450" %}
+{:/}
 
 登録のステータスには以下のものがあります。 "Data Validated" と "Validation Error" になった登録が査定されます。
 
@@ -279,9 +281,9 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 "Delete submission" で投稿前の登録を削除することができます。
 </div>
 
-<a class="group1" href="/assets/images/books/array-sub2.jpg" title="登録管理情報を入力します">
-    <img src="/assets/images/books/array-sub2.jpg" alt="登録管理情報を入力します" class="w550">
-</a>
+{::nomarkdown}
+{% include image.html url="books/array-sub2.jpg" caption="登録管理情報を入力します" class="w550" %}
+{:/}
 
 ### BioProject  {#BioProject-tab}
 
@@ -289,9 +291,9 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 他のアカウントで登録された BioProject を参照したい場合は [GEA チームに連絡](/contact-ddbj.html)します。
 
-<a class="group1" href="/assets/images/books/gea-bp.jpg" title="GEA 登録で使う BioProject を一つ選択します">
-    <img src="/assets/images/books/gea-bp.jpg" alt="GEA 登録で使う BioProject を一つ選択します" class="w550">
-</a>
+{::nomarkdown}
+{% include image.html url="books/gea-bp.jpg" caption="GEA 登録で使う BioProject を一つ選択します" class="w550" %}
+{:/}
 
 ### BioSample  {#BioSample-tab}
 
@@ -299,9 +301,9 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 他のアカウントで登録された BioSample を参照したい場合は [GEA チームに連絡](/contact-ddbj.html)します。
 
-<a class="group1" href="/assets/images/books/gea-bs.jpg" title="GEA 登録で使うBioSampleを選択します">
-    <img src="/assets/images/books/gea-bs.jpg" alt="GEA 登録で使うBioSampleを選択します" class="w550">
-</a>
+{::nomarkdown}
+{% include image.html url="books/gea-bs.jpg" caption="GEA 登録で使うBioSampleを選択します" class="w550" %}
+{:/}
 
 ### IDF  {#idf-tab}
 
@@ -314,15 +316,15 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 - Array Design: [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA にアレイデザインが登録されている場合は "A-XXXX-n" のアクセッション番号を記入します。アレイデザインが未登録の場合は GEA 登録用ディレクトリにアレイデザインファイルをアップロードして [新規アレイデザインを登録](/gea/adf.html) します。
 - Data File Type: マイクロアレイ実験の場合は生データと解析済みデータが必須です。サンプル毎の生データ・解析済みデータファイルの登録を強く推奨します[マイクロアレイ実験に登録可能なファイル形式](/gea/datafile.html#array_data)。
 
-<a class="group1" href="/assets/images/books/array-idf.jpg" title="IDF の内容を入力">
-    <img src="/assets/images/books/array-idf.jpg" alt="IDF の内容を入力" class="w600">
-</a>
+{::nomarkdown}
+{% include image.html url="books/array-idf.jpg" caption="IDF の内容を入力" class="w600" %}
+{:/}
 
 ### SDRF  {#sdrf-tab}
 
-<a class="group1" href="/assets/images/books/array-sdrf.jpg" title="SDRF テンプレートファイルをダウンロード">
-    <img src="/assets/images/books/array-sdrf.jpg" alt="SDRF テンプレートファイルをダウンロード" class="w600">
-</a>
+{::nomarkdown}
+{% include image.html url="books/array-sdrf.jpg" caption="SDRF テンプレートファイルをダウンロード" class="w600" %}
+{:/}
 
 [SDRF(Sample and Data Relationship Format)](/gea/metadata.html#sdrf)
 テンプレートファイルをダウンロードして必要な情報を追加します。
@@ -359,15 +361,15 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
     - KU-2003
     - KU-PI499262
 
-<a class="group1" href="/assets/images/books/array-sdrf-template.jpg" title="SDRF テンプレートの図解、登録者が情報を追加する必要がある部分は黄色で示されている">
-    <img src="/assets/images/books/array-sdrf-template.jpg" alt="SDRF テンプレートの図解、登録者が情報を追加する必要がある部分は黄色で示されている" class="w600">
-</a>
+{::nomarkdown}
+{% include image.html url="books/array-sdrf-template.jpg" caption="SDRF テンプレートの図解、登録者が情報を追加する必要がある部分は黄色で示されている" class="w600" %}
+{:/}
 
 内容を追加した SDRF を選択して Continue をクリックします。
 
-<a class="group1" href="/assets/images/books/array-sdrf2.jpg" title="作成した SDRF ファイルを選択">
-    <img src="/assets/images/books/array-sdrf2.jpg" alt="作成した SDRF ファイルを選択" class="w450">
-</a>
+{::nomarkdown}
+{% include image.html url="books/array-sdrf2.jpg" caption="作成した SDRF ファイルを選択" class="w450" %}
+{:/}
 
 ### Overview と投稿  {#submit}
 
@@ -375,9 +377,9 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 "Submit"ボタンをクリックして IDF と SDRF を投稿します。
 
-<a class="group1" href="/assets/images/books/array-overview.jpg" title="IDF と SDRF の内容を確認してから投稿">
-    <img src="/assets/images/books/array-overview.jpg" alt="IDF と SDRF の内容を確認してから投稿" class="w450">
-</a>
+{::nomarkdown}
+{% include image.html url="books/array-overview.jpg" caption="IDF と SDRF の内容を確認してから投稿" class="w450" %}
+{:/}
 
 ### 検証処理  {#validation-step}
 
@@ -385,9 +387,9 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 Validatorは[validation rule](/gea/validation.html)に従ってメタデータをチェックしエラーとワーニングメッセージを表示します。メタデータを投稿するためにはエラーを解消しておく必要があります。
 
-<a class="group1" href="/assets/images/books/array-validation.jpg" title="エラーとワーニングメッセージ">
-    <img src="/assets/images/books/array-validation.jpg" alt="エラーとワーニングメッセージ" class="w500">
-</a>
+{::nomarkdown}
+{% include image.html url="books/array-validation.jpg" caption="エラーとワーニングメッセージ" class="w500" %}
+{:/}
 
 ### アクセッション番号  {#accession}
 
@@ -395,9 +397,9 @@ Validatorは[validation rule](/gea/validation.html)に従ってメタデータ�
 
 [査読者用トークンを発行](/gea/reviewer-access.html)することでの非公開データへのアクセスを提供することができます。
 
-<a class="group1" href="/assets/images/books/array-accession.jpg" title="GEA アクセッション番号">
-    <img src="/assets/images/books/array-accession.jpg" alt="GEA アクセッション番号" class="w500">
-</a>
+{::nomarkdown}
+{% include image.html url="books/array-accession.jpg" caption="GEA アクセッション番号" class="w500" %}
+{:/}
 
 ## 更新  {#update-submission}
 
