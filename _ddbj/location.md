@@ -4,6 +4,7 @@ title: Location の記述法
 service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: flat_file
+lang: ja
 ---
 
 ## Location の記述法
