@@ -1,11 +1,12 @@
+{% if include.lang == 'ja' %}
+  {% assign index_html = 'index.html' %}
+{% else %}
+  {% assign index_html = 'index-e.html' %}
+{% endif %}
 <nav class="breadcrumb-view">
   <ul>
     <li>
-      {% if include.lang == 'ja' %}
-      <a href="{{ site.url }}/index.html">ホーム</a>
-      {% else %}
-      <a href="{{ site.url }}/index-e.html">Home</a>
-      {% endif %}
+      <a href="{{ site.url }}/{{ index_html }}">{% if include.lang == 'ja' %}ホーム{% else %}Home{% endif %}</a>
     </li>
     {% if page.category and page.category != 'insdc_meeting' and page.category != 'training' %}
     <li>
@@ -15,9 +16,9 @@
         {% assign category_label = page.category %}
       {% endif %}
       {% if page.category == 'faq' or page.category == 'news' %}
-      <a href="{{site.url}}{{site.baseurl}}/{{ page.category }}/{{page.lang}}/">{{ category_label }}</a>
+      <a href="{{ site.url }}{{ site.baseurl }}/{{ page.category }}/{{page.lang}}/{{ index_html }}">{{ category_label }}</a>
       {% else %}
-      <a href="{{site.url}}{{site.baseurl}}/{{ page.category }}">{{ category_label }}</a>
+      <a href="{{ site.url }}{{ site.baseurl }}/{{ page.category }}/{{ index_html }}">{{ category_label }}</a>
       {% endif %}
     </li>
     {% endif %}
