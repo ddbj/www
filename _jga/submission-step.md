@@ -18,6 +18,23 @@ lang: ja
 D-way アカウント作成後、[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
 </div>
 
+NBDC 申請システムで自動入力させるため、アカウントに所属情報や日本語氏名を登録します。    
+[NBDC 申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)にログインし、右上のメニューから「ユーザ情報更新」を選択します。  
+
+{% include image.html url="books/profile1.jpg" caption="ユーザ情報更新" class="w400" %}
+
+アカウント情報を入力するため「Edit」をクリックします。
+
+{% include image.html url="books/profile2.jpg" caption="Edit でアカウント情報の編集を開始" class="w300" %}
+
+所属情報や日本語氏名を入力します。
+
+{% include image.html url="books/profile3.jpg" caption="アカウント情報を入力" class="w400" %}
+
+「Save」で登録します。
+
+{% include image.html url="books/profile4.jpg" caption="Save で保存" class="w300" %}
+
 以下では JGA データの登録手順を説明します。
 
 ## 提供申請グループ {#data-submitter-group}
