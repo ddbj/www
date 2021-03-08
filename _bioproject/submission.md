@@ -848,7 +848,7 @@ BioProject を新規登録する場合は左のタブから順番に内容を英
 
 prefix は NCBI が一括管理しています。プロジェクトを投稿する段階で，NCBI に prefix を予約しにいきます。予約済みの場合はエラーになるので，再度希望する prefix を入力して投稿します。
 
-<div class="attention">
+<div class="attention" markdown="1">
 複数の prefix の取得を希望する場合は [BioProject チームに連絡します](/contact-ddbj.html)。
 </div>
 

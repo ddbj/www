@@ -840,7 +840,7 @@ Please leave the prefix box empty, when a prefix is not necessary for [WGS](/ddb
 
 Prefix is managed by NCBI. When a project is submitted, our system tries to reserve prefix to NCBI. When the prefix has already been reserved, anerror message will be displayed. Please enter a different prefix and submit again.
 
-<div class="attention">
+<div class="attention" markdown="1">
 When multiple prefixes are necessary, please [contact us](/contact-ddbj-e.html).
 </div>
 

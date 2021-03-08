@@ -23,7 +23,7 @@ Following figure depicts how BioSample records are organized and linked with oth
 
 Given the huge diversity of sample types handled by archival databases, and the fact that appropriate sample descriptions are often dependent on the context of the study, the definition of what a BioSample represents is deliberately flexible. Typical examples of a BioSample include a cell line, a primary tissue biopsy, an individual organism or an environmental isolate.
 
-Biological and technical replicates are represented by separate BioSamples with distinct 'replicate' attribute, e.g., 'biological replicate 1' and 'biological replicate 2'. [FAQ: How many samples do I need for my DRA submission?](/faq/en/samples-for-sra)
+Biological and technical replicates are represented by separate BioSamples with distinct 'replicate' attribute, e.g., 'biological replicate 1' and 'biological replicate 2'. [FAQ: How many samples do I need for my DRA submission?](/faq/en/samples-for-sra-e.html)
 
 Information about the sample will include:
 

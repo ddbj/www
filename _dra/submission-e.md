@@ -927,7 +927,7 @@ data to be submitted. Before submitting human data, read the
 subjects](/policies-e.html#human)".</span>
 </div>
 
-<div class="attention">
+<div class="attention" markdown="1">
 Submission of Patent Related Sequences  
 : <span class="red">Please read ["Submission of Patent Related Sequences" and "Patent
 Priority and Other Priority"](/policies-e.html#disclaimer)before
@@ -1018,7 +1018,7 @@ In this chapter, submission steps are explained by submitting a example
 submission "paired-end genome sequencing of three bacterial strains".
 
 {::nomarkdown}
-{% include image.html url="books/datamodel1.jpg" caption="Genome sequencing data of three bacterial strains" classs="w450" %}
+{% include image.html url="books/datamodel1.jpg" caption="Genome sequencing data of three bacterial strains" class="w450" %}
 {:/}
 
 ### Create a new submission  {#create-new-submission}
@@ -1240,7 +1240,9 @@ file).
 {% include image.html url="books/hdra-not-uploaded.jpg" caption="when no data file is uploaded" class="w200" %}
 {:/}
 
+<div class="attention" markdown="1">
 When there are many Experiment and Run objects, create metadata XMLs by using the excel for the DRA metadata and the XML generator. The metadata can be registered by uploading the Submission/Experiment/Run XMLs in D-way. Please see the [GitHub page](https://github.com/ddbj/submission-excel2xml) for details.
+</div>
 
 The metadata are composed of the Submission, BioProject, BioSample,
 Experiment, Run, Analysis (optional) objects. In the metadata creation
