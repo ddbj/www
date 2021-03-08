@@ -914,7 +914,7 @@ assistance, [contact us](/contact-ddbj-e.html).
 Never submit data without the permission of the principal investigator.
 </div>
 
-<div class="attention">
+<div class="attention" markdown="1">
 Submission of research data from human subjects  
 : <span class="red">For submitting data from human subjects (human data) to the
 databases of DDBJ center, it is submitter's responsibility to ensure
@@ -1023,7 +1023,7 @@ submission "paired-end genome sequencing of three bacterial strains".
 
 ### Create a new submission  {#create-new-submission}
 
-Login [the D-way (https://trace.ddbj.nig.ac.jp/D-way)](https://ddbj.nig.ac.jp/D-way/) and the top page is displayed. Move to the DRA submission site from the “DRA” menu at the top.
+Login [the D-way (https://ddbj.nig.ac.jp/D-way/)](https://ddbj.nig.ac.jp/D-way/) and the top page is displayed. Move to the DRA submission site from the “DRA” menu at the top.
 
 Create a new submission by clicking the [New submission]. At this
 time, in the DRA file server (ftp-private.ddbj.nig.ac.jp), the

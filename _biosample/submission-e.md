@@ -362,9 +362,7 @@ Upload the sample attribute file by selecting the file and click the Continue bu
 
 For validation rules and messages, please see [Validation rules page](/biosample/validation-e.html).
 
-
-{% include image.html url="books/hbs-04-2.jpg" caption="BioSample validation. In this example, an error for the future date in the collection_date and a warning for inconsistent countries between geo_loc_name and lat_lon of the sample \"KOME-2\" are displayed." class="w500" %}
-
+{% include image.html url="books/hbs-04-2.jpg" caption="BioSample validation.In this example, an error for the future date in the collection_date and a warning for inconsistent countries between geo_loc_name and lat_lon of the sample KOME-2 are displayed" class="w450" %}
 
 Check content in the last "OVERVIEW" and submit samples. In the "ATTRIBUTES" area, the submitted sample attribute file can be downloaded.
 

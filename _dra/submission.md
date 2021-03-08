@@ -749,7 +749,7 @@ fastq/bam ファイルを登録します。
 ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#human)を熟読してください。</span>
 </div>
 
-<div class="attention" mrakdown="1">
+<div class="attention" markdown="1">
 特許に関連するデータの登録  
 : <span class="red">登録するデータが特許に関連する場合は、[「特許に関連する塩基配列の登録に関する注意、データの優先権」](/policies.html#disclaimer)の内容を必ずご確認ください。</span>
 </div>
@@ -1551,7 +1551,7 @@ DRA ファイルサーバに存在する fastq ファイル一覧:
 
 |  データベース  |  更新方法  |
 |---|
-|  [Annotated sequence database](/index.html)  |  [ウェブフォームから依頼](/ddbj/update-form.html)  |
+|  [Annotated sequence database](/ddbj/index.html)  |  [ウェブフォームから依頼](/ddbj/update-form.html)  |
 |  Sequence Read Archive (DRA)  |  [D-way にログインして登録者自身で更新](#change-hold-date)<br/>[配列データの追加や削除はウェブフォームから依頼)](/contact-ddbj.html)  |
 |  BioProject/BioSample  |  [ウェブフォームから依頼](/contact-ddbj.html)  |
 

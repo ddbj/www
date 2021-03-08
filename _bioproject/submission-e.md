@@ -861,7 +861,7 @@ The "OVERVIEW" tab continue to display submitted content. Updates will not be re
 Temporary numbers with prefix PSUB are automatically assigned to submitted projects. Projects can be referred by the PSUB numbers until official accession numbers will be assigned. DDBJ BioProject staff review submissions and issue accession numbers with prefix PRJD to completed projects. Submitters can view accession numbers and submission status in your [submission account](https://ddbj.nig.ac.jp/D-way/).
 
 <div class="attention">
-- Do NOT cite numbers with prefix PSUB in publication.
+- Do NOT cite numbers with prefix PSUB in publication.<br>
 - Do not double submit the projects which have been registered to EBI and NCBI.
 </div>
 
