@@ -12,7 +12,7 @@ UNIX (Linux) や Mac の人で wget が無い場合，それぞれ yum や Homeb
 UNIX> yum install wget
 Mac > brew install wget
 ```
-Windowsの人は [https://eternallybored.org/misc/wget/] から実行形式ファイルを取得してください。
+Windowsの人は [https://eternallybored.org/misc/wget/](https://eternallybored.org/misc/wget/) から実行形式ファイルを取得してください。
 
 wget の準備ができたら，必要なスタディ番号について以下のようにダウンロードしてください。ここではMTBKS100を例にしています。
 ```
