@@ -1,7 +1,6 @@
 ---
 layout: top
-title: 遺伝研スーパーコンピュータシステム
-
+title: Home
 category: sc
 lang: ja
 current_tab: home

@@ -592,14 +592,21 @@ sc:
     - id: home
       title: Home
       url: /sc/
+    - id: news
+      title: お知らせ・メンテナンス情報
+      url: /sc/news
     - id: application
       title: 利用申請
       url: /sc/application
       children:
+        - title: 利用規程
+          url: /sc/application/use_policy
+        - title: アカウント発行基準
+          url: /sc/application/criteria
         - title: ssh 公開鍵の登録
           url: /sc/application/ssh_public_keys
     - id: system
-      title: システム構成
+      title: システム利用案内
       url: /sc/system
       children:
         - title: ハードウェア

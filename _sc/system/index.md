@@ -1,11 +1,9 @@
 ---
 layout: indexed_content
-title: 遺伝研スーパーコンピュータシステム
-
+title: システム利用案内
 category: sc
 lang: ja
-current_tab: guide
-
+current_tab: system
 ---
 
 ## システム利用案内
