@@ -23,7 +23,7 @@ Following figure depicts how BioSample records are organized and linked with oth
 
 Given the huge diversity of sample types handled by archival databases, and the fact that appropriate sample descriptions are often dependent on the context of the study, the definition of what a BioSample represents is deliberately flexible. Typical examples of a BioSample include a cell line, a primary tissue biopsy, an individual organism or an environmental isolate.
 
-Biological and technical replicates are represented by separate BioSamples with distinct 'replicate' attribute, e.g., 'biological replicate 1' and 'biological replicate 2'. [FAQ: How many samples do I need for my DRA submission?](/faq/en/samples-for-sra)
+Biological and technical replicates are represented by separate BioSamples with distinct 'replicate' attribute, e.g., 'biological replicate 1' and 'biological replicate 2'. [FAQ: How many samples do I need for my DRA submission?](/faq/en/samples-for-sra-e.html)
 
 Information about the sample will include:
 
@@ -362,9 +362,7 @@ Upload the sample attribute file by selecting the file and click the Continue bu
 
 For validation rules and messages, please see [Validation rules page](/biosample/validation-e.html).
 
-
-{% include image.html url="books/hbs-04-2.jpg" caption="BioSample validation. In this example, an error for the future date in the collection_date and a warning for inconsistent countries between geo_loc_name and lat_lon of the sample \"KOME-2\" are displayed." class="w500" %}
-
+{% include image.html url="books/hbs-04-2.jpg" caption="BioSample validation.In this example, an error for the future date in the collection_date and a warning for inconsistent countries between geo_loc_name and lat_lon of the sample KOME-2 are displayed" class="w450" %}
 
 Check content in the last "OVERVIEW" and submit samples. In the "ATTRIBUTES" area, the submitted sample attribute file can be downloaded.
 

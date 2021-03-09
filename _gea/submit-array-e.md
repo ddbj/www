@@ -104,9 +104,9 @@ Create a new microarray experiment submission by selecting "Microarray" and clic
 If there is no reply from submitters after three months of initial contact, submissions will be cancelled.
 </div>
 
-{::nomarkdown}
+
 {% include image.html url="books/array-sub1.jpg" caption="Create a new microarray experiment submission" class="w450" %}
-{:/}
+
 
 List of submission status is as follows. The GEA team reviews submission whose status is in "submission\_validated" or "data\_error".
 
@@ -260,9 +260,9 @@ You can delete an un-submitted GEA submission at "Delete submission".
 
 </div>
 
-{::nomarkdown}
+
 {% include image.html url="books/array-sub2.jpg" caption="Enter submission information" class="w550" %}
-{:/}
+
 
 ### BioProject  {#BioProject-tab}
 
@@ -270,9 +270,9 @@ Select a submitted project registered in your account. If a BioProject is not re
 
 To use a project obtained in the other account, please [contact GEA team](/contact-ddbj-e.html).
 
-{::nomarkdown}
+
 {% include image.html url="books/gea-bp.jpg" caption="Select a BioProject for the GEA experiment" class="w550" %}
-{:/}
+
 
 ### BioSample  {#BioSample-tab}
 
@@ -280,9 +280,9 @@ Select submitted BioSamples registered in your account. If BioSamples are not re
 
 To use samples obtained in the other account, please [contact GEA team](/contact-ddbj-e.html).
 
-{::nomarkdown}
+
 {% include image.html url="books/gea-bs.jpg" caption="Select BioSamples for the GEA experiment" class="w550" %}
-{:/}
+
 
 ### IDF  {#idf-tab}
 
@@ -295,15 +295,15 @@ Enter information for [IDF (Investigation Description Format)](/gea/metadata-e.h
 - Array Design: When an array design is available in [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA, enter an array design accession number "A-XXXX-n". When an array design is not available, [register a new array design](/gea/adf-e.html) by uploading an array design file into the GEA submission directory.
 - Data File Type: Raw and processed data files are required for microarray experiment submission. We strongly recommend to submitting raw and processed data file per sample. [Accepted Data Files Formats for microarray experiment](/gea/datafile-e.html#array_data).
 
-{::nomarkdown}
+
 {% include image.html url="books/array-idf.jpg" caption="Enter information for IDF" class="w600" %}
-{:/}
+
 
 ### SDRF  {#sdrf-tab}
 
-{::nomarkdown}
+
 {% include image.html url="books/array-sdrf.jpg" caption="Download a SDRF template file" class="w600" %}
-{:/}
+
 
 Enter information for [SDRF (Sample and Data Relationship Format)](/gea/metadata-e.html#sdrf).
 
@@ -339,15 +339,15 @@ Fields you need to add.
     - KU-2003
     - KU-PI499262
 
-{::nomarkdown}
+
 {% include image.html url="books/array-sdrf-template.jpg" caption="SDRF template, yellow-highlighted fields need to be filled by submitter" class="w600" %}
-{:/}
+
 
 Select the entered SDRF file and continue.
 
-{::nomarkdown}
+
 {% include image.html url="books/array-sdrf2.jpg" caption="Select entered SDRF file" class="w450" %}
-{:/}
+
 
 ### Overview and submit  {#submit}
 
@@ -355,9 +355,9 @@ You can download the IDF and SDRF files and check them. When correction is neces
 
 Submit the IDF and SDRF metadata by clicking the "Submit" button.
 
-{::nomarkdown}
+
 {% include image.html url="books/array-overview.jpg" caption="Check the IDF and SDRF and submit" class="w450" %}
-{:/}
+
 
 ### Validation  {#validation-step}
 
@@ -365,9 +365,9 @@ When data files described in the IDF and SDRF are not found in the submission di
 
 The validator checks submitted IDF and SDRF files according to the [validation rules](/gea/validation-e.html) and gives warning and error messages. Errors need to be resolved for submission.
 
-{::nomarkdown}
+
 {% include image.html url="books/array-validation.jpg" caption="Warning and error messages" class="w500" %}
-{:/}
+
 
 ### Accession number  {#accession}
 
@@ -375,9 +375,9 @@ The validator checks submitted IDF and SDRF files according to the [validation r
 
 You can allow reviewers access to private records by [communicating a reviewer accesss token](/gea/reviewer-access-e.html).
 
-{::nomarkdown}
+
 {% include image.html url="books/array-accession.jpg" caption="GEA accession numbers" class="w500" %}
-{:/}
+
 
 ## Update submission  {#update-submission}
 

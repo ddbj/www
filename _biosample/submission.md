@@ -378,7 +378,7 @@ information exists but can not be released openly because of privacy concerns
 Validation ルールとメッセージについては [Validation rules ページ](/biosample/validation.html)をご覧ください。
 
 
-{% include image.html url="books/hbs-04-2.jpg" caption="BioSample の validation。この例では \"KOME-2\" の collection_date に将来の日付が記入されているエラーと geo_loc_name 中の国名と緯度経度が一致していない warning が表示されています。" class="w500" %}
+{% include image.html url="books/hbs-04-2.jpg" caption="BioSample の validation。この例では KOME-2 の collection_date に将来の日付が記入されているエラーと geo_loc_name 中の国名と緯度経度が一致していない warning が表示されています。" class="w500" %}
 
 
 最後の "OVERVIEW" で内容を確認したうえで投稿します。"ATTRIBUTES" で属性ファイルをダウンロードすることができます。

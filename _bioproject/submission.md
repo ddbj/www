@@ -848,7 +848,7 @@ BioProject を新規登録する場合は左のタブから順番に内容を英
 
 prefix は NCBI が一括管理しています。プロジェクトを投稿する段階で，NCBI に prefix を予約しにいきます。予約済みの場合はエラーになるので，再度希望する prefix を入力して投稿します。
 
-<div class="attention">
+<div class="attention" markdown="1">
 複数の prefix の取得を希望する場合は [BioProject チームに連絡します](/contact-ddbj.html)。
 </div>
 
@@ -869,7 +869,7 @@ prefix は NCBI が一括管理しています。プロジェクトを投稿す�
 ウェブから投稿されたデータに対して PSUB で始まる仮 ID が自動的に割り当てられます。正式なアクセッション番号が発行されるまでは，この仮 ID で登録を参照します。 DDBJ BioProject スタッフはデータを査定した後，完成したデータに対してプレフィックス "PRJD" のアクセッション番号を発行します。 [D-way](https://ddbj.nig.ac.jp/D-way/) にログイン後，ウェブ上で登録したプロジェクトの進行状況やアクセッション番号を確認することができます。
 
   <div class="attention">
-  - PSUB で始まる仮 ID を論文中に引用しないでください。
+  - PSUB で始まる仮 ID を論文中に引用しないでください。<br>
   - EBI/NCBI に登録したプロジェクトを DDBJ に重複して登録しないでください。
   </div>
 

@@ -840,7 +840,7 @@ Please leave the prefix box empty, when a prefix is not necessary for [WGS](/ddb
 
 Prefix is managed by NCBI. When a project is submitted, our system tries to reserve prefix to NCBI. When the prefix has already been reserved, anerror message will be displayed. Please enter a different prefix and submit again.
 
-<div class="attention">
+<div class="attention" markdown="1">
 When multiple prefixes are necessary, please [contact us](/contact-ddbj-e.html).
 </div>
 
@@ -861,7 +861,7 @@ The "OVERVIEW" tab continue to display submitted content. Updates will not be re
 Temporary numbers with prefix PSUB are automatically assigned to submitted projects. Projects can be referred by the PSUB numbers until official accession numbers will be assigned. DDBJ BioProject staff review submissions and issue accession numbers with prefix PRJD to completed projects. Submitters can view accession numbers and submission status in your [submission account](https://ddbj.nig.ac.jp/D-way/).
 
 <div class="attention">
-- Do NOT cite numbers with prefix PSUB in publication.
+- Do NOT cite numbers with prefix PSUB in publication.<br>
 - Do not double submit the projects which have been registered to EBI and NCBI.
 </div>
 

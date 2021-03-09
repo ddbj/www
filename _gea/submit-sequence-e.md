@@ -98,9 +98,9 @@ Create a new microarray experiment submission by selecting "Sequencing" and clic
 If there is no reply from submitters after three months of initial contact, submissions will be cancelled.
 </div>
 
-{::nomarkdown}
+
 {% include image.html url="books/array-sub1.jpg" caption="Create a new submission" class="w450" %}
-{:/}
+
 
 List of submission status is as follows. The GEA team reviews submission whose status is in "submission_validated" or "data_error".
 
@@ -248,9 +248,9 @@ Set the hold date within four years. Submitters' name and affiliation will be pu
 You can delete an un-submitted GEA submission.
 </div>
 
-{::nomarkdown}
+
 {% include image.html url="books/array-sub2.jpg" caption="Enter submission information" class="w550" %}
-{:/}
+
 
 ### DRA  {#DRA-tab}
 
@@ -258,9 +258,9 @@ Select a DRA submission registered in your account. If DRA submission is not reg
 
 To use DRA submissions obtained in the other account, please [contact GEA team](/contact-ddbj-e.html).
 
-{::nomarkdown}
+
 {% include image.html url="books/seq-dra.jpg" caption="Select a DRA submission for the GEA experiment" class="w550" %}
-{:/}
+
 
 ### BioProject  {#BioProject-tab}
 
@@ -270,9 +270,9 @@ Select a BioProject used in the DRA submission when the GEA experiment and DRA s
 
 To use a project obtained in the other account, please [contact GEA team](/contact-ddbj-e.html).
 
-{::nomarkdown}
+
 {% include image.html url="books/seq-bp.jpg" caption="Select a BioProject for the GEA experiment" class="w550" %}
-{:/}
+
 
 ### IDF  {#idf-tab}
 
@@ -284,15 +284,15 @@ Enter information for [IDF (Investigation Description Format)](/gea/metadata-e.h
 - Publication: Describe associated publications by PubMed ID or DOI. For unpublished manuscript, please [inform us](/contact-ddbj-e.html) the ID after assignment.
 - Data File Type: Processed data files are required for sequencing experiment submission. [Accepted Data Files Formats for sequencing experiment](/gea/datafile-e.html#seq_data). We strongly recommend to submitting processed data file per sample.
 
-{::nomarkdown}
+
 {% include image.html url="books/seq-idf.jpg" caption="Enter information for IDF" class="w600" %}
-{:/}
+
 
 ### SDRF  {#sdrf-tab}
 
-{::nomarkdown}
+
 {% include image.html url="books/seq-sdrf-down.jpg" caption="Download a SDRF template file" class="w400" %}
-{:/}
+
 
 Enter information for [SDRF (Sample and Data Relationship Format)](/gea/metadata-e.html#sdrf).
 
@@ -326,15 +326,15 @@ Fields you need to add.
     - KU-2003
     - KU-PI499262
 
-{::nomarkdown}
+
 {% include image.html url="books/seq-sdrf-template.jpg" caption="SDRF template, yellow-highlighted fields need to be filled by submitter" class="w600" %}
-{:/}
+
 
 Select the entered SDRF file and continue.
 
-{::nomarkdown}
+
 {% include image.html url="books/seq-sdrf-up.jpg" caption="Select entered SDRF file" class="w450" %}
-{:/}
+
 
 ### Overview and submit  {#submit}
 
@@ -342,9 +342,9 @@ You can download the IDF and SDRF files and check them. When correction is neces
 
 Submit the IDF and SDRF metadata by clicking the "Submit" button.
 
-{::nomarkdown}
+
 {% include image.html url="books/seq-submit.jpg" caption="Check the IDF and SDRF and submit" class="w450" %}
-{:/}
+
 
 ### Validation  {#validation-step}
 
@@ -352,17 +352,17 @@ When data files described in the IDF and SDRF are not found in the submission di
 
 The validator checks submitted IDF and SDRF files according to the [validation rules.](/gea/validation-e.html) and gives warning and error messages. Errors need to be resolved for submission.
 
-{::nomarkdown}
+
 {% include image.html url="books/seq-validation.jpg" caption="Warning and error messages" class="w500" %}
-{:/}
+
 
 ### Accession numbers  {#accession}
 
 [GEA accession numbers](/gea/overview-e.html#acc) are issued to the completed GEA experiment. You can allow reviewers access to private records by [communicating a reviewer accesss token](/gea/reviewer-access-e.html).
 
-{::nomarkdown}
+
 {% include image.html url="books/seq-accession.jpg" caption="GEA accession numbers" class="w500" %}
-{:/}
+
 
 ## Update submission  {#update-submission}
 
