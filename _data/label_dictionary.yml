@@ -96,6 +96,13 @@ jga:
   full:
     en: Japanese Genotype-phenotype Archive (JGA)
     ja: Japanese Genotype-phenotype Archive (JGA)
+metabobank:
+  short:
+    en: MetaboBank
+    ja: MetaboBank
+  full:
+    en: MetaboBank
+    ja: MetaboBank
 pipeline:
   short:
     en: Pipeline
