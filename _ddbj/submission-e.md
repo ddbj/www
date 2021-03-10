@@ -323,7 +323,7 @@ Following figure shows the dataflow from new submission to release and update at
     </li>
   <li>
     Availability of Released Data<br>
-    At first, the data released from DDBJ are available via <a href="http://getentry.ddbj.nig.ac.jp/top-e.html">getentry</a> and <a href="ftp://ftp.ddbj.nig.ac.jp/">anonymous FTP</a>. The data are forwarded to GenBank and ENA, and the data are available also via GenBank and ENA. The data are also expanded into services provided from DDBJ, Search and Analysis, <a href="http://ddbj.nig.ac.jp/arsa/quick_search?lang=en">ARSA</a> and so on. Basically, the data released from DDBJ are <a href="/about/insdc-e.html#policy"></a>available for everyone.
+    At first, the data released from DDBJ are available via <a href="http://getentry.ddbj.nig.ac.jp/top-e.html">getentry</a> and <a href="https://ddbj.nig.ac.jp/public/">anonymous FTP</a>. The data are forwarded to GenBank and ENA, and the data are available also via GenBank and ENA. The data are also expanded into services provided from DDBJ, Search and Analysis, <a href="http://ddbj.nig.ac.jp/arsa/quick_search?lang=en">ARSA</a> and so on. Basically, the data released from DDBJ are <a href="/about/insdc-e.html#policy"></a>available for everyone.
     </li>
   <li>
     Citation of Released Data<br>

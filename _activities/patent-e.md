@@ -188,7 +188,7 @@ sequence (Table.1).
 <td>○</td>
 <td>○</td>
 <td>○</td>
-<td>PAT division files (*1) in <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbj/">DDBJ release</a>
+<td>PAT division files (*1) in <a href="https://ddbj.nig.ac.jp/public/ddbj_database/ddbj/">DDBJ release</a>
 </td>
 </tr>
       <tr>
@@ -196,7 +196,7 @@ sequence (Table.1).
 <td>○</td>
 <td>×</td>
 <td>○</td>
-<td>Cumulated file on <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/patent/">DDBJ anonymous site</a> (*2)</td>
+<td>Cumulated file on <a href="https://ddbj.nig.ac.jp/public/ddbj_database/patent/">DDBJ anonymous site</a> (*2)</td>
 </tr>
 </tbody>
 </table>

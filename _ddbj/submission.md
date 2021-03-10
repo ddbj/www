@@ -202,7 +202,7 @@ DDBJ のキュレータが、公開に必要な事項を、国際塩基配列デ
     </li>
   <li>
     公開データの利用<br>
-    DDBJ から公開されたデータは、最初に<a href="http://getentry.ddbj.nig.ac.jp/top-j.html">getentry</a>で検索可能になり、<a href="ftp://ftp.ddbj.nig.ac.jp/">anonymous FTP</a>から取得可能になります。GenBankとENAにも転送され、そちらからも閲覧・取得が可能になります。DDBJのサービス、相同性検索，<a href="http://ddbj.nig.ac.jp/arsa/?lang=ja" >ARSA</a>
+    DDBJ から公開されたデータは、最初に<a href="http://getentry.ddbj.nig.ac.jp/top-j.html">getentry</a>で検索可能になり、<a href="https://ddbj.nig.ac.jp/public/">anonymous FTP</a>から取得可能になります。GenBankとENAにも転送され、そちらからも閲覧・取得が可能になります。DDBJのサービス、相同性検索，<a href="http://ddbj.nig.ac.jp/arsa/?lang=ja" >ARSA</a>
       などにも展開されます。公開されたデータは、基本的には、<a href="/about/insdc.html#policy" >どなたでも閲覧・利用が可能</a>です。
     </li>
   <li>

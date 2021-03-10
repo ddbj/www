@@ -11,7 +11,7 @@ lang: ja
 
 
 
-<p>DDBJ ftp サーバ <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq">ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq</a> からダウンロードしてください。</p>
+<p>DDBJ ftp サーバ <a href="https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq">ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq</a> からダウンロードしてください。</p>
 <h4 class="bold">wget</h4>
 <p>wget コマンドを使って ftp サーバからデータを簡単に取得することができます。</p>
 <pre><code>wget ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/DRA000/DRA000001/DRX000001/DRR000001.fastq.bz2</code></pre>

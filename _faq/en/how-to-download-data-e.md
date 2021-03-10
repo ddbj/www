@@ -12,7 +12,7 @@ lang: en
 
 
 
-<p>Download files from DDBJ ftp server at <a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq">ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq</a>.</p>
+<p>Download files from DDBJ ftp server at <a href="https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq">ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq</a>.</p>
 <h4 class="bold">wget</h4>
 <p>wget is a convenient way to download files over FTP.</p>
 <pre><code>wget ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/DRA000/DRA000001/DRX000001/DRR000001.fastq.bz2</code></pre>

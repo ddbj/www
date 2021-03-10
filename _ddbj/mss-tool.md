@@ -56,7 +56,7 @@ related_pages:
     <tbody>
       <tr>
         <td>UME_win_V1.51.zip</td>
-        <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/UME_win_V1.51.zip">FTP</a></td>
+        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/UME_win_V1.51.zip">FTP</a></td>
         <td rowspan="4"><a href="https://drive.google.com/drive/u/1/folders/1SlveeY38FdHOrcmgjcVgzrL8RvXlx96g">HTTPS</a></td>  
         <td>Windows</td>
         <td rowspan="2">2020/11/25</td>
@@ -65,12 +65,12 @@ related_pages:
       </tr>
       <tr>
         <td>UME_unix_V1.51.zip</td>
-        <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/UME_unix_V1.51.zip">FTP</a></td>
+        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/UME_unix_V1.51.zip">FTP</a></td>
         <td>Unix/macOS</td>
       </tr>
       <tr>
         <td>Parser_V6.65.tar.gz</td>
-        <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/Parser_V6.65.tar.gz">FTP</a></td>
+        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/Parser_V6.65.tar.gz">FTP</a></td>
         <td>Unix/macOS</td>
         <td>2020/11/25</td>
         <td><a href="/ddbj/parser.html">ユーザーマニュアル</a></td>
@@ -78,7 +78,7 @@ related_pages:
       </tr>
       <tr>
         <td>transChecker_V2.22.tar.gz</td>
-        <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj-cib/MSS/transChecker_V2.22.tar.gz">FTP</a></td>
+        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/transChecker_V2.22.tar.gz">FTP</a></td>
         <td>Unix/macOS</td>
         <td>2020/09/02</td>
         <td><a href="/ddbj/transchecker.html">ユーザーマニュアル</a></td>

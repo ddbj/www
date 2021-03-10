@@ -556,7 +556,7 @@ URL)
     </tr>
     <tr>
       <th>xml</th>
-      <td><a href="ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbj/xml/insdxml/v1.4/">INSDSeq-XML version 1.4</a></td>
+      <td><a href="https://ddbj.nig.ac.jp/public/ddbj_database/ddbj/xml/insdxml/v1.4/">INSDSeq-XML version 1.4</a></td>
     </tr>
     <tr>
       <th rowspan="2">fasta</th>
