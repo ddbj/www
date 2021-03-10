@@ -55,7 +55,7 @@ bioproject:
       url: http://ddbj.nig.ac.jp/BPSearch/
     - id: downloads
       title: Downloads
-      url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/bioproject
+      url: https://ddbj.nig.ac.jp/public/ddbj_database/bioproject/
       children:
         - title: XML Schema
           url: https://github.com/ddbj/pub/tree/master/docs/bioproject/xsd
@@ -77,7 +77,7 @@ bioproject:
       url: http://ddbj.nig.ac.jp/BPSearch/	
     - id: downloads	
       title: Downloads	
-      url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/bioproject	
+      url: https://ddbj.nig.ac.jp/public/ddbj_database/bioproject/
       children:	
         - title: XML Schema	
           url: https://github.com/ddbj/pub/tree/master/docs/bioproject/xsd	
@@ -111,7 +111,7 @@ biosample:
       url: http://ddbj.nig.ac.jp/BSSearch/	
     - id: downloads	
       title: Downloads	
-      url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/biosample	
+      url: https://ddbj.nig.ac.jp/public/ddbj_database/biosample/
       children:	
         - title: XML Schema	
           url: https://github.com/ddbj/pub/tree/master/docs/biosample/xsd	
@@ -142,7 +142,7 @@ biosample:
       url: http://ddbj.nig.ac.jp/BSSearch/
     - id: downloads
       title: Downloads
-      url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/biosample
+      url: https://ddbj.nig.ac.jp/public/ddbj_database/biosample/
       children:
         - title: XML Schema
           url: https://github.com/ddbj/pub/tree/master/docs/biosample/xsd
@@ -359,12 +359,12 @@ dra:
       url: https://ddbj.nig.ac.jp/DRASearch/
     - id: downloads
       title: Downloads
-      url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq
+      url: https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/
       children:
         - title: FASTQ
-          url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq
+          url: https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/
         - title: SRA
-          url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/sralite/ByExp/litesra/
+          url: https://ddbj.nig.ac.jp/public/ddbj_database/dra/sralite/ByExp/litesra/
         - title: XML Schema
           url: https://github.com/ddbj/pub/tree/master/docs/dra/xsd
     - id: about dra
@@ -392,12 +392,12 @@ dra:
       url: https://ddbj.nig.ac.jp/DRASearch/	
     - id: downloads	
       title: Downloads	
-      url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq	
+      url: https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/
       children:	
         - title: FASTQ	
-          url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq	
+          url: https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/
         - title: SRA	
-          url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/sralite/ByExp/litesra/	
+          url: https://ddbj.nig.ac.jp/public/ddbj_database/dra/sralite/ByExp/litesra/
         - title: XML Schema	
           url: https://github.com/ddbj/pub/tree/master/docs/dra/xsd	
     - id: about dra	
@@ -415,7 +415,7 @@ dta:
       url: /dta/submission.html
     - id: downloads
       title: Downloads
-      url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dta/
+      url: https://ddbj.nig.ac.jp/public/ddbj_database/dta/
     - id: about dta
       title: About DTA
       url: /dta/about-dta.html
@@ -428,7 +428,7 @@ dta:
       url: /dta/submission-e.html	
     - id: downloads	
       title: Downloads	
-      url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dta/	
+      url: https://ddbj.nig.ac.jp/public/ddbj_database/dta/
     - id: about dta	
       title: About DTA	
       url: /dta/about-dta-e.html
@@ -476,7 +476,7 @@ gea:
           url: http://refex.dbcls.jp/	
     - id: downloads	
       title: Downloads	
-      url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/gea	
+      url: https://ddbj.nig.ac.jp/public/ddbj_database/gea/
     - id: about gea	
       title: About GEA	
       url: /gea/about-gea.html
@@ -521,7 +521,7 @@ gea:
           url: https://www.ebi.ac.uk/arrayexpress/browse.html
     - id: downloads
       title: Downloads
-      url: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/gea
+      url: https://ddbj.nig.ac.jp/public/ddbj_database/gea/
     - id: about gea
       title: About GEA
       url: /gea/about-gea-e.html
