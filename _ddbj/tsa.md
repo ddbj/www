@@ -44,7 +44,7 @@ related_pages:
 は EST アセンブルに相当する配列データを専用に格納する TSA division を新設し、登録を受け付けることを決定しました。  
 [Transcriptome Project の各段階と登録データの種別](/ddbj/transcriptome.html)もご参照ください。
 
-[公開されているTSAデータ](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/tsa/TSA_ORGANISM_LIST.html)
+[公開されているTSAデータ](https://ddbj.nig.ac.jp/public/ddbj_database/tsa/TSA_ORGANISM_LIST.html)
 
 TSA 登録には、[Mass Submission System (MSS)](/ddbj/mss.html) をご利用ください。
 

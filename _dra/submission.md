@@ -85,7 +85,7 @@ lang: ja
 登録者が所属する組織に関する情報を記載します。
 
 [Center Name](#Submission_Center_Name)<a name="Submission_Center_Name"></a><span class="red">*</span>  
-: 登録者が所属する組織の Center Name。[Center Name リスト。](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/meta/list/centerlist)DDBJ/EBI/NCBI
+: 登録者が所属する組織の Center Name。[Center Name リスト。](https://ddbj.nig.ac.jp/public/ddbj_database/dra/meta/list/centerlist)DDBJ/EBI/NCBI
 SRA にデータを登録する際にはこの Center Name が必要です。
 
 メタデータ作成ツールはアカウント情報から Center Name を自動的に取得します。
@@ -1425,7 +1425,7 @@ FAQ:
 [NCBI SRA](https://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi) にミラーリングされます。
 
 DRA ファイルサーバに存在する fastq ファイル一覧:
-[fastqlist](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/meta/list/fastqlist)
+[fastqlist](https://ddbj.nig.ac.jp/public/ddbj_database/dra/meta/list/fastqlist)
 
 ## 登録の更新  {#update-submission}
 
@@ -1443,7 +1443,7 @@ DRA ファイルサーバに存在する fastq ファイル一覧:
 
 <a href="/assets/images/books/hdra-hold.jpg" title="公開予定日の変更" class="group1"><img src="/assets/images/books/hdra-hold.jpg" alt="公開予定日の変更" title="公開予定日の変更" class="w400"></a>
 
-データを即日公開する場合は "Release Now" をクリックします。作業した日の深夜に公開処理が実施され、[ftp にデータファイルが公開](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/)され、数日以内に [DRA 検索システム](http://ddbj.nig.ac.jp/DRASearch)にインデックスされます。
+データを即日公開する場合は "Release Now" をクリックします。作業した日の深夜に公開処理が実施され、[ftp にデータファイルが公開](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/)され、数日以内に [DRA 検索システム](http://ddbj.nig.ac.jp/DRASearch)にインデックスされます。
 
 ### メタデータの更新  {#update-metadata}
 

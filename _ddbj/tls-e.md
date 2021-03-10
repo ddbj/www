@@ -45,7 +45,7 @@ Archive](/dra/index-e.html).
 So, please consider if you have to submit TLS data to DDBJ or not.
 
 See [the list of publicized TLS
-data](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/tls/TLS_ORGANISM_LIST.html).
+data](https://ddbj.nig.ac.jp/public/ddbj_database/tls/TLS_ORGANISM_LIST.html).
 
 You can submit TSA data to DDBJ through [Mass Submission System
 (MSS)](/ddbj/mss-e.html).

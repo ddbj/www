@@ -60,7 +60,7 @@ However, INSD does not exchanged amino acid data.
 DDBJ distributes JPO and KIPO amino acid data on DDBJ anonymous FTP
 site.
 
-[DDBJ anonymous FTP](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/patent/):  
+[DDBJ anonymous FTP](https://ddbj.nig.ac.jp/public/ddbj_database/patent/):  
 JPO file: jpo_ddbj_aa\*.seq.gz (\*=file number)  
 KIPO file: kipo_ddbj_aa.seq.gz
 

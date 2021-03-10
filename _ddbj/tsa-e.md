@@ -37,7 +37,7 @@ Since 2008, INSDC has accepted the sequence data of "Transcriptome Shotgun Assem
 With new sequencing technologies, INSDC has faced many requests to accept assembled EST sequences. These sequence data have become more useful than used to be, although they may not be correctly assembled or exist in nature. Therefore, DDBJ/ENA/GenBank decided to collect assembled EST sequences and classified them into the TSA division.  
 See also [steps of transcriptome project, categories of sequence data and their correspondences.](/ddbj/transcriptome-e.html)
 
-[The list of publicized TSA data.](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/tsa/TSA_ORGANISM_LIST.html)
+[The list of publicized TSA data.](https://ddbj.nig.ac.jp/public/ddbj_database/tsa/TSA_ORGANISM_LIST.html)
 
 You can submit TSA data to DDBJ through [Mass Submission System (MSS)](/ddbj/mss-e.html).
 

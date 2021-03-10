@@ -42,7 +42,7 @@ DDBJ/ENA/GenBank では、そのようなゲノムプロジェクトに由来す
 [INSDC standards for genome assembly
 submission](/ddbj/assembly.html)もご参照ください。
 
-[公開されているWGSデータ](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/wgs/WGS_ORGANISM_LIST.html)
+[公開されているWGSデータ](https://ddbj.nig.ac.jp/public/ddbj_database/wgs/WGS_ORGANISM_LIST.html)
 
 WGSデータの登録は [Mass Submission System (MSS)](/ddbj/mss.html) で受け付けております。
 

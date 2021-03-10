@@ -35,7 +35,7 @@ searched or browsed from the following DDBJ services. Please note that
 these services do not differentiate data from JPO, KIPO, EPO, USPTO as
 reference datasets.
 
-[anonymous FTP](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbj/)  
+[anonymous FTP](https://ddbj.nig.ac.jp/public/ddbj_database/ddbj/)  
 : iles containing "ddbjpat" in their names under the directory.
 
 [getentry](http://getentry.ddbj.nig.ac.jp/top-e.html)  
@@ -61,7 +61,7 @@ made available by EBI and NCBI, respectively.
 The amino acid sequence data included in patent applications can be
 searched and browsed from the following services at DDBJ:
 
-[anonymous FTP](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/patent/)  
+[anonymous FTP](https://ddbj.nig.ac.jp/public/ddbj_database/patent/)  
 : Files under the directory, available only from JPO and KIPO.
 
 [getentry](http://getentry.ddbj.nig.ac.jp/top-e.html)  

@@ -139,7 +139,7 @@ KIPO の特許データは不定期に受け付けており，近日中に追加
 : 塩基配列特許データは，getentry，ARSA から公開を行っている。getentry ではアクセッション番号と公報番号による検索，ARSA ではアクセッション番号や公報番号の他にキーワードによる検索を行うことが可能である。また配列相同性検索（BLAST）では検索対象の特許データに KIPO の塩基配列データが取り込まれているため，類似配列の検索が可能となっている。さらに定期リリースデータでの公開も行っている。
   
 [ アミノ酸配列特許データ ]  
-: アミノ酸配列特許データは，getentry と anonymous FTP サイトから公開を行っている。getentry ではアクセッション番号による検索のみ可能である。[anonymous FTP サイト](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/patent/) では，KIPO のアミノ酸配列特許データを一括して取得が可能である。
+: アミノ酸配列特許データは，getentry と anonymous FTP サイトから公開を行っている。getentry ではアクセッション番号による検索のみ可能である。[anonymous FTP サイト](https://ddbj.nig.ac.jp/public/ddbj_database/patent/) では，KIPO のアミノ酸配列特許データを一括して取得が可能である。
 
 #### 3-2）KIPO 関連機関からの検索
 

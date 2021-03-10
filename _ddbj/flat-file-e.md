@@ -329,7 +329,7 @@ For MGA data
   | CDE (third to fifth characters)	   | identifier to each of resources on each project.  |
   | 0000001 (7 digit numeric numbers)	 | number for each sequence entry in a resource.    |
 
-  \*1 The information about each project id is avilable at the [project_index ](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/mga/project_index-e.html) page.<br>\*2 "resource" here means a unit of identical origin, such as tissue, cells, from which sequence are obtained.
+  \*1 The information about each project id is avilable at the [project_index ](https://ddbj.nig.ac.jp/public/ddbj_database/mga/project_index-e.html) page.<br>\*2 "resource" here means a unit of identical origin, such as tissue, cells, from which sequence are obtained.
 
 : 
   ```

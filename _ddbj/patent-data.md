@@ -22,7 +22,7 @@ KIPO 由来の配列データを DDBJ 経由で、[INSD](/about/insdc.html#insd)
 DDBJ おいて、特許出願に含まれる塩基配列データ (注: JPO, KIPO, EPO, USPTO
 を参照データセットとしては区別できません) は以下のサービスから検索・閲覧が可能です。
 
-[anonymous FTP](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/ddbj/)  
+[anonymous FTP](https://ddbj.nig.ac.jp/public/ddbj_database/ddbj/)  
 : ディレクトリ配下の名前に ddbjpat を含むファイル。
 
 [getentry](http://getentry.ddbj.nig.ac.jp/top-j.html)  
@@ -41,7 +41,7 @@ JPO と KIPO が収集・処理した特許出願に含まれるアミノ酸配�
 
 DDBJ において、特許出願に含まれるアミノ配列データは以下のサービスから検索・閲覧が可能です。
 
-[anonymous FTP](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/patent/)  
+[anonymous FTP](https://ddbj.nig.ac.jp/public/ddbj_database/patent/)  
 : ディレクトリ配下のファイル、対象は JPO と KIPO のみ。
 
 [getentry](http://getentry.ddbj.nig.ac.jp/top-j.html)  

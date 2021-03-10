@@ -136,7 +136,7 @@ Conditionally required<span class="conditionally_required">*</span>
 Enter submitter's organization.
 
 [Center Name](#Submission_Center_Name)<a name="Submission_Center_Name"><span class="red">*</span>  
-: A submitter's center name. [Center Name List.](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/meta/list/centerlist)
+: A submitter's center name. [Center Name List.](https://ddbj.nig.ac.jp/public/ddbj_database/dra/meta/list/centerlist)
 A center name abbreviation is required to submit data to DRA.
 
 In the metadata creation tool, the center name is automatically
@@ -1703,7 +1703,7 @@ will be mirrored to the [NCBI
 SRA](//www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi).
 
 The list of available fastq files at the DRA file server:
-[fastqlist](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/meta/list/fastqlist)
+[fastqlist](https://ddbj.nig.ac.jp/public/ddbj_database/dra/meta/list/fastqlist)
 
 ## Update submission  {#update-submission}
 
@@ -1725,7 +1725,7 @@ move to hold date change page.
 
 To immediately release the submission, click the [Release Now]. In the
 middle of the night, the submission is released, data files will be made
-available at [ftp](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/)and metadata will be indexed by the [DRA search system](http://ddbj.nig.ac.jp/DRASearch)in a few days.
+available at [ftp](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/)and metadata will be indexed by the [DRA search system](http://ddbj.nig.ac.jp/DRASearch)in a few days.
 
 ### Update metadata  {#update-metadata}
 

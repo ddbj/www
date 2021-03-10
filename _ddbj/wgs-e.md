@@ -37,7 +37,7 @@ The whole genome shotgun approach (the whole genome is once blasted into million
 The large set of contigs from the proceeding genome project can be submitted to DDBJ/ENA/GenBank as WGS data.  
 See also [INSDC standards for genome assembly submission](/ddbj/assembly-e.html)
 
-See [the list of publicized WGS data.](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/wgs/WGS_ORGANISM_LIST.html)
+See [the list of publicized WGS data.](https://ddbj.nig.ac.jp/public/ddbj_database/wgs/WGS_ORGANISM_LIST.html)
 
 You can submit WGS data to DDBJ via [Mass Submission System (MSS)](/ddbj/mss-e.html).
 

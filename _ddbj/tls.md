@@ -43,7 +43,7 @@ Archive](/dra/index.html) に登録されているならば再現可能ですの
 データ登録は必須ではありません。  
 念のため、TLS データの登録が必要か否かご検討ください。
 
-[公開されているTLSデータ](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/tls/TLS_ORGANISM_LIST.html)
+[公開されているTLSデータ](https://ddbj.nig.ac.jp/public/ddbj_database/tls/TLS_ORGANISM_LIST.html)
 
 TLS 登録には、[Mass Submission System (MSS)](/ddbj/mss.html) をご利用ください。
 
