@@ -46,7 +46,7 @@ related_pages:
     <thead>
       <tr>
       <th>名称</th>
-      <th colspan="2">リンク</th>
+      <th>リンク</th>
       <th>OS</th>
       <th>更新日</th>
       <th>ドキュメント</th>
@@ -57,7 +57,6 @@ related_pages:
       <tr>
         <td>UME_win_V1.51.zip</td>
         <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/UME_win_V1.51.zip">FTP</a></td>
-        <td rowspan="4"><a href="https://drive.google.com/drive/u/1/folders/1SlveeY38FdHOrcmgjcVgzrL8RvXlx96g">HTTPS</a></td>  
         <td>Windows</td>
         <td rowspan="2">2020/11/25</td>
         <td rowspan="2"><a href="/ddbj/ume.html">ユーザーマニュアル</a></td>

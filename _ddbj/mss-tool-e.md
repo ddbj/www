@@ -46,7 +46,7 @@ Please refer each manuals for how to install and use.
     <thead>
       <tr>
         <th>Name</th>
-        <th colspan="2">Link</th>
+        <th>Link</th>
         <th>OS</th>
         <th>Updated Date</th>
         <th>Manual</th>
@@ -57,7 +57,6 @@ Please refer each manuals for how to install and use.
       <tr>
         <td>UME_win_V1.51.zip</td>
         <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/UME_win_V1.51.zip">FTP</a></td>
-        <td rowspan="4"><a href="https://drive.google.com/drive/u/1/folders/1SlveeY38FdHOrcmgjcVgzrL8RvXlx96g">HTTPS</a></td>  
         <td>Windows</td>
         <td rowspan="2">2020/11/25</td>
         <td rowspan="2"><a href="/ddbj/ume.html">User's manual</a></td>
