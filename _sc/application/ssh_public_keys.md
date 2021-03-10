@@ -84,7 +84,7 @@ $
 <tr valign="top">
 <td>
 
-![](sshupload.jpeg)
+![](/assets/images/sc/sshupload.jpeg)
 
 
 </td>
