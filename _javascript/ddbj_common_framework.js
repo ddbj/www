@@ -222,8 +222,8 @@
               ja: 'データを ftp でダウンロード'
             },
             uri: {
-              en: 'ftp://ftp.ddbj.nig.ac.jp/',
-              ja: 'ftp://ftp.ddbj.nig.ac.jp/'
+              en: 'https://ddbj.nig.ac.jp/public/',
+              ja: 'https://ddbj.nig.ac.jp/public/'
             }
           }
         ]
