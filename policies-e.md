@@ -322,12 +322,12 @@ When citing individual data, please cite the accession number of the data and (i
 ## Usage of Third Party Data Provided by Bioinformation and DDBJ Center {#third-party-data}
 Regarding usage of data that Bioinformation and DDBJ Center provides secondarily through download by FTP or other services, such usage will comply with the terms of use set forth in the following links. 
 
-* [NCBI Refseq](ftp://ftp.ddbj.nig.ac.jp/mirror_database/refseq/release/README)
-* [PDB](ftp://ftp.wwpdb.org/pub/pdb/advisory.txt)
-* [UniProt](ftp://ftp.ddbj.nig.ac.jp/mirror_database/uniprot/README)
-* [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/about.html)
-* [HINV](ftp://ftp.ddbj.nig.ac.jp/mirror_database/hinv/README.txt)
-* [International Genome Sample Resource (IGSR)](https://www.internationalgenome.org/IGSR_disclaimer)
+* NCBI Refseq (ftp://ftp.ddbj.nig.ac.jp/mirror_database/refseq/release/README)
+* PDB (ftp://ftp.wwpdb.org/pub/pdb/advisory.txt)
+* UniProt (ftp://ftp.ddbj.nig.ac.jp/mirror_database/uniprot/README)
+* ArrayExpress (https://www.ebi.ac.uk/arrayexpress/about.html)
+* HINV (ftp://ftp.ddbj.nig.ac.jp/mirror_database/hinv/README.txt)
+* International Genome Sample Resource (IGSR) (https://www.internationalgenome.org/IGSR_disclaimer)
 
 ## Bioinformation and DDBJ Center Official Sites on Social Media {#third-party-sites}
 Bioinformation and DDBJ Center's official sites (accounts) on social media are as follows:    

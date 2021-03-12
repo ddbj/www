@@ -326,12 +326,12 @@ Computations were partially performed on the NIG supercomputer at ROIS National 
 ## 生命情報・DDBJセンターが提供するセンター以外で作成されたデータの利用 {#third-party-data}
 生命情報・DDBJセンターが FTP によるダウンロードや各サービスで二次的に提供しているデータの利用については、以下からリンクしている利用規定に準拠します。
 
-* [NCBI Refseq](ftp://ftp.ddbj.nig.ac.jp/mirror_database/refseq/release/README)
-* [PDB](ftp://ftp.wwpdb.org/pub/pdb/advisory.txt)
-* [UniProt](ftp://ftp.ddbj.nig.ac.jp/mirror_database/uniprot/README)
-* [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/about.html)
-* [HINV](ftp://ftp.ddbj.nig.ac.jp/mirror_database/hinv/README.txt)
-* [International Genome Sample Resource (IGSR)](https://www.internationalgenome.org/IGSR_disclaimer)
+* NCBI Refseq (ftp://ftp.ddbj.nig.ac.jp/mirror_database/refseq/release/README)
+* PDB (ftp://ftp.wwpdb.org/pub/pdb/advisory.txt)
+* UniProt (ftp://ftp.ddbj.nig.ac.jp/mirror_database/uniprot/README)
+* ArrayExpress (https://www.ebi.ac.uk/arrayexpress/about.html)
+* HINV (ftp://ftp.ddbj.nig.ac.jp/mirror_database/hinv/README.txt)
+* International Genome Sample Resource (IGSR) (https://www.internationalgenome.org/IGSR_disclaimer)
 
 ## ソーシャルメディアにおける生命情報・DDBJセンターのオフィシャルサイト    {#third-party-sites}
 生命情報・DDBJセンターのソーシャルメディアにおけるオフィシャルサイト（アカウント）は以下になります。
