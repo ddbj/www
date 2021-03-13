@@ -8,7 +8,7 @@ related_pages:
     url: /about/staff.html
   - title: INSDC
     url: /about/insdc.html
-  - titel: アーカイブ
+  - title: アーカイブ
     url: /activities/archives.html
 ---
 
@@ -76,8 +76,8 @@ number)を発行しています。アクセッション番号は、塩基配列�
 
 ## 沿革  {#history}
 
-|  1980年  |  EMBL Data Library の設立。日本へ国際協力を要請。 |
-|  1982年  |  EMBL と GenBank の公開と国際協力事業を開始。日本へ参加を要請。  |
+|  1979年  |  ロックフェラー大学において国際データベースの構築を議論。翌年、EMBL Data Library の開始（公開せず）。 |
+|  1982年  |  EMBL Data Library と GenBank の公開。両者の代表が連名で、国際協力事業への日本参加を要請。  |
 |  1983年  |  DNAデータバンク運営委員会設置。<br>塩基配列データを収集・評価・提供するデータバンク活動で国際的に貢献すべく、試験的なデータ入力を開始。  |
 |  1984年  |  国立遺伝学研究所、大学共同利用機関に改組。<br>国立遺伝学研究所に遺伝情報研究センター設置。<br>これに伴い、遺伝情報研究センター内で DDBJ 稼動開始。  |
 |  1986年  |  DNA データ研究利用委員会設置。  |
