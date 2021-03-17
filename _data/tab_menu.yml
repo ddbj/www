@@ -592,9 +592,6 @@ sc:
     - id: home
       title: Home
       url: /sc/
-    - id: news
-      title: お知らせ・メンテナンス情報
-      url: /sc/news
     - id: application
       title: 利用申請
       url: /sc/application

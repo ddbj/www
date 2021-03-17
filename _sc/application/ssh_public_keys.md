@@ -64,34 +64,23 @@ $
 
 公開鍵ファイルid_rsa.pubを遺伝研スパコンに登録するには以下の2つの方法があります。
 
-<table>
+<table width="1000px" style="table-layout: fixed;">
 <tr valign="top">
 <td>
-
-[公開鍵ファイルのアップロードフォーム](https://sc2.ddbj.nig.ac.jp/index.php/ja-form-ssh-application-2)
-
-画面下部（赤枠）の【選択】を押し、ファイル選択画面からアップロードするファイルを選択後、画面下部（赤枠）の【公開鍵登録】ボタンを押して登録を行ってください。
-
+<p><a href="https://sc2.ddbj.nig.ac.jp/index.php/ja-form-ssh-application-2" target="_blank" rel="noopener">公開鍵ファイルのアップロードフォーム</a></p>
+<p>画面下部（赤枠）の【選択】を押し、ファイル選択画面からアップロードするファイルを選択後、画面下部（赤枠）の【公開鍵登録】ボタンを押して登録を行ってください。</p>
 </td>
 <td>
-
-[公開鍵の直接入力フォーム](https://sc2.ddbj.nig.ac.jp/index.php/ja-form-ssh-application)
-
-画面下部（赤枠）部分に上記で作成したした公開鍵をコピー・ペーストし、画面下部の公開鍵ボタンを押して登録を行ってください。
-
+<p><a href="https://sc2.ddbj.nig.ac.jp/index.php/ja-form-ssh-application" target="_blank" rel="noopener">公開鍵の直接入力フォーム</a></p>
+<p>画面下部（赤枠）部分に上記で作成したした公開鍵をコピー・ペーストし、画面下部の公開鍵ボタンを押して登録を行ってください。</p>
 </td>
 </tr>
 <tr valign="top">
 <td>
-
-![](/assets/images/sc/sshupload.jpeg)
-
-
+<p><img style="max-width: 100%;" src="/assets/images/sc/sshupload.jpeg" alt></p>
 </td>
 <td>
-
-![](/assets/images/sc/sshdirectjpg.jpeg)
-
+<p><img style="max-width: 100%;" src="/assets/images/sc/sshdirectjpg.jpeg" alt></p>
 </td>
 </tr>
 </table>
