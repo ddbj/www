@@ -1264,6 +1264,11 @@ Handbook](/bioproject/submission-e.html#metadata).
 
 {% include image.html url="books/hdra-bp02.jpg" caption="BioProject submission" class="w450" %}
 
+To submit data corresponding to personal identification code to DRA/GEA/DDBJ, [your data submission application needs to be approved by NBDC before the submission](/policies-e.html#unrestricted-access). If your application was approved, write the NBDC application ID (for example, J-DS000001-001) in "Private comments to DDBJ staff" of BioProject.
+
+{% include image.html url="books/bp-nbdc-approval.jpg" caption="NBDC data submission application ID" class="w450" %}
+
+
 To submit genome assemblies to DDBJ, a unique [Locus tag
 prefix](/ddbj/locus_tag-e.html) is necessary.
 
