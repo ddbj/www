@@ -1315,8 +1315,9 @@ input, textarea, select, button {
         margin-left: auto;
         padding-bottom: 2rem;
         width: 23rem;
+        height: 100vh;
         position: sticky;
-        overflow: auto;
+        overflow-y: auto;
         top: 0; }
     #NavigationAndMainView > .inner > .mainview {
       width: calc( (100vw - 128rem) + (128rem - 23rem)); }
@@ -1517,4 +1518,5 @@ input, textarea, select, button {
 
 .top_space20 {
   margin-top: 2rem; }
+
 /*# sourceMappingURL=main.css.map */
