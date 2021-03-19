@@ -1,6 +1,6 @@
 <ul class="tag-list-view">
   {% if include.date %}
-  <li class="date"><time datetime="{{ include.date }}">{{ include.date | date: "%Y / %m / %d" }}</time></li>
+  <li class="date"><time datetime="{{ include.date }}">{{ include.date | date: "%Y/%m/%d" }}</time></li>
   {% endif %}
   {% for tag in include.tags %}
   <li class="tag-view" data-tag="{{ tag }}">{{ tag }}</li>
