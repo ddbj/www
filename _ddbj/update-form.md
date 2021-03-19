@@ -26,4 +26,4 @@ lang: ja
 
 <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdQeCkBTfgDDLLOBjxGQVaMpoiuQKP1qrSSKuBYe1hypKfeaA/viewform?embedded=true" width="760" height="2000" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>-->
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfNnNRavoWTcuwU8S4g75vlb8o6mAsiFikN9o7veCLJ6DBD-g/viewform?embedded=true" width="800" height="2000" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfNnNRavoWTcuwU8S4g75vlb8o6mAsiFikN9o7veCLJ6DBD-g/viewform?embedded=true" width="130%" height="2000" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>
