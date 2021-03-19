@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: お問い合わせ
 lang: ja
 ---
