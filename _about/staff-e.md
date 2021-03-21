@@ -144,21 +144,14 @@ category: about
         </div>
         </li> 
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/tu.jpg" title="Le Ngoc Tu"></p>
-        <div class="explanation">
-            <p class="name">Le Ngoc Tu, PhD</p>
-            <p class="position">Data Submission: MSS</p>
-        </div>
-        </li>
-    </ul>  
-    <ul class="list">
-        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/lee.jpg" title="LEE Kyungbum"></p>
         <div class="explanation">
             <p class="name">LEE Kyungbum, PhD</p>
             <p class="position">Data Submission: MSS</p>
         </div>
         </li>  
+    </ul>  
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/okido.jpg" title="OKIDO Toshihisa"></p>
         <div class="explanation">
@@ -173,8 +166,6 @@ category: about
             <p class="position">Data Updates/Correction</p>
         </div>
         </li>
-    </ul>  
-    <ul class="list">
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/suzuki.jpg" title="SUZUKI Kimiko"></p>
             <div class="explanation">
@@ -182,6 +173,8 @@ category: about
                 <p class="position">Data Submission: NGS・PR</p>
             </div>
             </li>  
+    </ul>  
+    <ul class="list">
             <li class="staff">
             <p class="photo"><img src="/assets/images/staff/takaki.jpg" title="TAKAKI Kanae"></p>
             <div class="explanation">
@@ -196,8 +189,6 @@ category: about
                 <p class="position">Data Submission: NSSS</p>
             </div>
             </li>
-        </ul>
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yokoyama.jpg" title="YOKOYAMA Emi"></p>
         <div class="explanation">
