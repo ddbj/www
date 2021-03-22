@@ -28,7 +28,7 @@ lang: ja
         {% for activity in activities %}
           {% assign date_label = activity.start_date | date: "%Y/%m/%d" %}
           {% assign tag_label = activity.keyword %}
-          {% assign body = activity.content | strip_html | truncate: 100 %}
+          {% assign body = activity.excerpt | strip_html | truncate: 100 %}
           {% include activity-view.html tag="training" label=activity.title date=activity.start_date date_label=date_label %}
         {% endfor %}
 
@@ -84,7 +84,7 @@ lang: ja
         {% for activity in activities %}
           {% assign date_label = activity.start_date | date: "%Y/%m/%d" %}
           {% assign tag_label = site.data.achievements.dictionary.insdc_meeting[page.lang] %}
-          {% assign body = activity.content | strip_html | truncate: 100 %}
+          {% assign body = activity.excerpt | strip_html | truncate: 100 %}
           {% include activity-view.html tag="insdc_meeting" label=activity.title date=activity.start_date date_label=date_label %}
         {% endfor %}
 
