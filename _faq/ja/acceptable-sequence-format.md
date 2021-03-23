@@ -10,8 +10,11 @@ date: 2017-06-09T12:39:51
 lang: ja
 ---
 
+DDBJ塩基配列登録システム ([NSSS](/ddbj/web-submission.html))では、FASTA 形式(登録数が1配列の場合)または multi-FASTA 形式(登録数が複数配列の場合)の塩基配列を入力してください。  
+関連ページ: [塩基配列のフォーマットについて](/ddbj/web-submission-help.html#flow-5-1)
 
+[MSS](/ddbj/mss.html) から submission を行う場合には、終端子として配列情報終了フラグ(//)の挿入が必要です。
+[登録ファイル形式- 配列ファイル](/ddbj/file-format.html#sequence)を参照してください。
 
-<p>DDBJ塩基配列登録システム (<a href="/ddbj/web-submission.html">NSSS</a>)では、FASTA 形式(登録数が1配列の場合)または multi-FASTA 形式(登録数が複数配列の場合)の塩基配列を入力してください。<br> 関連ページ: <a href="/ddbj/web-submission-help.html#flow-5-1">塩基配列のフォーマットについて</a></p>
-<p><a href="/ddbj/mss.html">MSS</a> から submission を行う場合には、終端子として配列情報終了フラグ(//)の挿入が必要です。<a href="/ddbj/file-format.html#sequence">登録ファイル形式 - 配列ファイル</a>を参照してください。</p>
-<p>参考<br><a href="https://ja.wikipedia.org/wiki/FASTA#FASTA.E3.83.95.E3.82.A9.E3.83.BC.E3.83.9E.E3.83.83.E3.83.88">ウィキペディア "FASTAフォーマット"</a></p>
+参考  
+[ウィキペディア "FASTAフォーマット"](https://ja.wikipedia.org/wiki/FASTA#FASTA.E3.83.95.E3.82.A9.E3.83.BC.E3.83.9E.E3.83.83.E3.83.88)
