@@ -11,9 +11,16 @@ lang: en
 ---
 
 
+Click **\[Select Qualifier\]**, check qualifiers in the dialog as needed
+and click \[Save\] button.  
+Then, you can find input fields for qualifiers on
+[7.Annotation](/ddbj/web-submission-help-e.html#flow-7).
 
-<p>Click <strong>[Select Qualifier]</strong>, check qualifiers in the dialog as needed and click [Save] button. <br>Then, you can find input fields for qualifiers on <a href="/ddbj/web-submission-help-e.html#flow-7">7.Annotation</a>. </p>
-<p>Related to this issue, in case of selecting "other" on <a href="/ddbj/web-submission-help-e.html#flow-6">6. template</a>, you have to specify some features other than source. So, click <strong>[Add feature]</strong> and select some feature on the list. </p>
-<dl><dt>Reference</dt>
-  <dd><a href="/ddbj/web-submission-help-e.html#flow-7-2">7.Annotation (when “other” was selected at template)</a></dd>
-</dl>
+Related to this issue, in case of selecting "other" on [6.
+template](/ddbj/web-submission-help-e.html#flow-6), you have to specify
+some features other than source. So, click **\[Add feature\]** and
+select some feature on the list.
+
+**Reference**<br>
+[7.Annotation (when "other" was selected at
+    template)](/ddbj/web-submission-help-e.html#flow-7-2)

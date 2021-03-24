@@ -11,15 +11,21 @@ lang: en
 ---
 
 
+DDBJ releases sequence data submitted with a [hold
+date](/ddbj/submission-e.html#holddate) according to [Principle of
+“Hold-Until-Published” data
+release](/documents/data-release-policy-e.html).
 
-<p>DDBJ releases sequence data submitted with a <a href="/ddbj/submission.html#holddate">hold date</a> according to <a href="/documents/data-release-policy-e.html">Principle of “Hold-Until-Published” data release</a>. </p>
-<p>Please confirm if the ID on the paper is <a href="/documents/accessions.html">Accession Number Assigned by INSD</a> or not. </p>
-<p>If accession numbers on the paper, please contact us from <a href="/contact-ddbj-e.html#to-ddbj">contact form</a> by selecting the item, "Updating Submitted Data" with following items.</p>
-<ul>
-  <li>Accession numbers on the paper</li>
-  <li>Title of the paper</li>
-  <li>Authors</li>
-  <li>Journal name</li>
-  <li>Volume, pages, year</li>
-  <li>DOI, PubMed ID, URL</li>
-</ul>
+Please confirm if the ID on the paper is [Accession Number Assigned by
+INSD](/documents/accessions-e.html) or not.
+
+If accession numbers on the paper, please contact us from [contact
+form](/contact-ddbj-e.html) by selecting the item, "Updating
+Submitted Data" with following items.
+
+  - Accession numbers on the paper
+  - Title of the paper
+  - Authors
+  - Journal name
+  - Volume, pages, year
+  - DOI, PubMed ID, URL
