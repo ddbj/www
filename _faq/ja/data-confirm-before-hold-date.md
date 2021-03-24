@@ -10,6 +10,5 @@ date: 2014-05-30T17:24:15
 lang: ja
 ---
 
-
-
-<p>当該データの <a href="/ddbj/submission.html#terms">登録者</a> としてご登録いただいている方からの依頼ならば可能です。<br>アクセッション番号を明記の上 <a href="/contact-ddbj.html#to-ddbj">DDBJへのお問い合わせ</a> よりご依頼ください。</p>
+当該データの [登録者](/ddbj/submission.html#terms) としてご登録いただいている方からの依頼ならば可能です。  
+アクセッション番号を明記の上 [DDBJへのお問い合わせ](/contact-ddbj.html) よりご依頼ください。

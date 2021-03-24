@@ -19,7 +19,7 @@ DDBJ/EMBL/GenBank
 ただし，各データバンクが公開したデータを互いに交換し合う際の時間差，更に各バンク内でそのデータを
 検索サービスへ反映させる際の時間差により，同じ日の近い時間であっても検索サービスのデータには 微妙な差が存在している可能性があります。
 期待している検索結果が得られないのは，これら時間差に負うところが大きいと思いますが，
-さらに詳細な調査が必要な場合は[DDBJへのお問い合わせ](/contact-ddbj.html#to-ddbj)
+さらに詳細な調査が必要な場合は[DDBJへのお問い合わせ](/contact-ddbj.html)
 よりご連絡ください。  
 
   - 検索プログラム名や検索を行なった URL
@@ -32,4 +32,4 @@ DDBJ/EMBL/GenBank
 また，Q and A の以下の質問もご参照下さい。
 
   - [論文に掲載されているアクセッション番号が検索できません](/faq/ja/cannot-find-accession-number-cited-paper.html)
-  - [公開されているはずのデータが検索できません](/faq/ja/index.html#cannot-find-data-already-published)
+  - [公開されているはずのデータが検索できません](/faq/ja/cannot-find-data-already-published.html)

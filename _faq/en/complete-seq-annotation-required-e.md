@@ -10,6 +10,9 @@ date: 2014-06-30T16:34:49
 lang: en
 ---
 
-
-
-<p>As feature annotation, we strongly recommend you to describe <a href="/ddbj/cds-e.html">CDS (protein-coding sequence)</a>，<a href="/ddbj/features-e.html#rRNA">rRNA</a>，<a href="/ddbj/features-e.html#tRNA">tRNA</a> and so on. <br>Please inform us in detail, when you apply to <a href="/ddbj/mss-e.html">Mass Submission System</a>. </p>
+As feature annotation, we strongly recommend you to describe [CDS
+(protein-coding
+sequence)](/ddbj/cds-e.html)，[rRNA](/ddbj/features-e.html#rRNA)，[tRNA](/ddbj/features-e.html#tRNA)
+and so on.  
+Please inform us in detail, when you apply to [Mass Submission
+System](/ddbj/mss-e.html).

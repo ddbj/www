@@ -10,6 +10,6 @@ date: 2014-06-09T16:56:06
 lang: en
 ---
 
+Contact us from [this form](/ddbj/update-form-e.html) with "Change
+description about the contact person" in \[Subject\].
 
-
-<p>Contact us from <a href="/ddbj/update-form-e.html">this form</a> with "Change description about the contact person" in [Subject]. </p>

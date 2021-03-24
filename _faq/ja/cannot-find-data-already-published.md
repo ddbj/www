@@ -27,7 +27,7 @@ lang: ja
 1. 1998年1月1日以前に登録されたデータの場合  
     公開予定日到来後も非公開である可能性があります。
 
-3 と 4 の場合は [DDBJへのお問い合わせ](/contact-ddbj.html#to-ddbj) よりご連絡ください。
+3 と 4 の場合は [DDBJへのお問い合わせ](/contact-ddbj.html) よりご連絡ください。
 
 **参考**  
 - [データ公開原則](/documents/data-release-policy.html)

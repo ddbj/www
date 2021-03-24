@@ -41,5 +41,5 @@ following questions.
   - [Can not find the sequence data, though the accession number cited
     on a
     paper.](/faq/en/cannot-find-accession-number-cited-paper-e.html)
-  - I am having trouble finding an accession number that should be
-    publicly available.
+  - [I am having trouble finding an accession number that should be
+    publicly available.](/faq/en/cannot-find-data-already-published-e.html)

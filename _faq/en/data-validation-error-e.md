@@ -20,7 +20,7 @@ When 'fastq' is selected for the [filetype](/dra/submission.html#File_Type) in R
 
 **constraint violated while executing function within virtual database module**
 
-[Read names are possibly not unique in Run](/faq/en/index-e.html#data-files-sra).
+[Read names are possibly not unique in Run](/faq/en/data-files-sra-e.html).
 
 **path not found while accessing directory within file system module - no message text available**
 
@@ -31,7 +31,7 @@ Files are not recognized. This error occurs in the following cases:
 
 **CheckSum Error**
 
-The [md5 values](/dra/submission.html#Supplement__MD5) in Run differs from actual md5. Check the following
+The [md5 values](/dra/submission-e.html#supplement-md5) in Run differs from actual md5. Check the following
 - files are not corrupted 
 - md5 values in Run are not wrong
 

@@ -12,7 +12,13 @@ lang: ja
 
 
 
-<html>
-<p>投稿を予定している雑誌などの，執筆規定に従ってください。</p><b>記載例</b><br> Nucleotide sequence data reported are available in the DDBJ Sequenced Read Archive under the accession numbers DRXxxxxxx and DRXxxxxxx.
-<p>なお，学術雑誌 <a href="http://genomea.asm.org/site/misc/journal-ita_org.xhtml#link01">"Genome Announcements"</a> では，DRA のアクセッション番号ではなく，WGS プロジェクトのアクセッション番号を記載するように規定しています。各雑誌の執筆規定をご参照ください。</p>
-</html>
+投稿を予定している雑誌などの，執筆規定に従ってください。
+
+**記載例**  
+Nucleotide sequence data reported are available in the DDBJ Sequenced
+Read Archive under the accession numbers DRXxxxxxx and DRXxxxxxx.
+
+なお，学術雑誌 ["Genome
+Announcements"](http://genomea.asm.org/site/misc/journal-ita_org.xhtml#link01)
+では，DRA のアクセッション番号ではなく，WGS
+プロジェクトのアクセッション番号を記載するように規定しています。各雑誌の執筆規定をご参照ください。

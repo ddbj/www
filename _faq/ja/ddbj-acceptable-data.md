@@ -10,15 +10,16 @@ date: 2014-06-02T15:15:19
 lang: ja
 ---
 
+登録を受け付けているデータの種類は [登録データ種別](/documents/data-categories.html) にて、ご確認ください。
 
+登録予定の塩基配列データをどのように登録すべきか不明な場合は
 
-<p>登録を受け付けているデータの種類は <a href="/documents/data-categories.html">登録データ種別</a> にて、ご確認ください。</p>
-<p>登録予定の塩基配列データをどのように登録すべきか不明な場合は</p>
-<ul>
-  <li><a href="/ddbj/genome.html">Genome Project の各段階と登録データの種別</a></li>
-  <li><a href="/ddbj/transcriptome.html">Transcriptome Project の各段階と登録データの種別</a></li>
-  <li><a href="/ddbj/flat-file.html#DivisionB">Division の詳細</a></li>
-  <li><a href="/documents/data-categories.html#detail">Annotated/Assembled データの細かい区分</a></li>
-</ul>
-<p>などを ご参照下さい。</p>
-<p>不明点は、<a href="/contact-ddbj.html#to-ddbj">DDBJへのお問い合わせ</a> よりご連絡ください。</p>
+  - [Genome Project の各段階と登録データの種別](/ddbj/genome.html)
+  - [Transcriptome Project の各段階と登録データの種別](/ddbj/transcriptome.html)
+  - [Division の詳細](/ddbj/flat-file.html#DivisionB)
+  - [Annotated/Assembled
+    データの細かい区分](/documents/data-categories.html#detail)
+
+などを ご参照下さい。
+
+不明点は、[DDBJへのお問い合わせ](/contact-ddbj.html) よりご連絡ください。

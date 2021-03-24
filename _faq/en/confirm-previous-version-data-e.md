@@ -10,6 +10,8 @@ date: 2014-06-10T10:18:00
 lang: en
 ---
 
+Previous versions of sequence data are available by using getentry
+webAPI.
 
-
-<p>Previous versions of sequence data are available by using getentry webAPI. </p><p>See <a href="/services/getentry-e.html#gethistory">gethistory</a> on <a href="/services/getentry-e.html">getentry HELP</a>. </p>
+See [gethistory](/services/getentry-e.html#gethistory) on [getentry
+HELP](/services/getentry-e.html).

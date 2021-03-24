@@ -29,7 +29,7 @@ Run の [filetype](/dra/submission.html#File_Type) が 'fastq'
 **constraint violated while executing function within virtual database
 module**
 
-[リード名が Run 単位でユニーク](/faq/index.html#data-files-sra)ではない可能性があります。
+[リード名が Run 単位でユニーク](/faq/ja/data-files-sra.html)ではない可能性があります。
 
 **path not found while accessing directory within file system module - no
 message text available**

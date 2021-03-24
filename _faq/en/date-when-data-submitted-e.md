@@ -12,6 +12,8 @@ date: 2014-07-01T18:44:41
 lang: en
 ---
 
-
-
-<p>In general, you can find <a href="/ddbj/submission.html#acceptdate">accept date</a> in JOURNAL line of <a href="/ddbj/flat-file-e.html#Reference1B">REFERENCE 1</a> on <a href="/ddbj/flat-file-e.html">DDBJ flat file</a>. <br>Please note that some old data do not have the description of accept date. </p>
+In general, you can find [accept date](/ddbj/submission-e.html#acceptdate)
+in JOURNAL line of [REFERENCE 1](/ddbj/flat-file-e.html#Reference1B) on
+[DDBJ flat file](/ddbj/flat-file-e.html).  
+Please note that some old data do not have the description of accept
+date.
