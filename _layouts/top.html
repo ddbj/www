@@ -50,7 +50,7 @@ layout: default
             {% assign news_list = site.news 
               | where: "lang", page.lang 
               | where: "layout", "simple" 
-              | where_exp: "news_list", "news_list.retire_date > site.time" 
+              | where_exp: "news_list", "news_list.retire_time > site.time" 
               | reverse %}
               {% for news in news_list limit:5 %}
             <li class="item">
