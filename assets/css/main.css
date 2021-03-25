@@ -1326,7 +1326,8 @@ input, textarea, select, button {
         padding-right: 4.2rem; }
   #NavigationAndMainView.-hidetoc > .inner > .subview {
     min-width: 1.6rem;
-    max-width: 1.6rem; }
+    max-width: 1.6rem;
+    pointer-events: none; }
 
 #PageHeader {
   background-color: white; }
