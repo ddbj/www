@@ -10,6 +10,6 @@ date: 2014-07-04T14:12:07
 lang: en
 ---
 
-
-
-<p>Since DEFINITION is constructed by DDBJ according to <a href="/ddbj/flat-file-e.html#DefinitionB">rules</a>, there is no field to enter it. </p>
+Since DEFINITION is constructed by DDBJ according to
+[rules](/ddbj/flat-file-e.html#DefinitionB), there is no field to enter
+it.

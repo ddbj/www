@@ -8,8 +8,5 @@ tags:
   - Use
 date: 2015-06-04T16:42:59
 lang: en
----
-
-
-
-Please see the DDBJ home page <a href="/services/references-e.html">References</a>.
+--- 
+Please see the DDBJ home page [References](/services/references-e.html).

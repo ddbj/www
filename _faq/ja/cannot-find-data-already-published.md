@@ -15,7 +15,7 @@ lang: ja
 1. 公開途中の場合  
     DDBJ で公開作業を行ったデータは、作業後、原則として 2日以内 (休業日を除く) に
     [getentry](http://getentry.ddbj.nig.ac.jp/top-j.html)、[anonymous
-    FTP](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/) から取得可能になり、GenBankと
+    FTP](https://ddbj.nig.ac.jp/public/ddbj_database/) から取得可能になり、GenBankと
     EMBL に転送され、GenBank と EMBL からも閲覧・取得が可能になります。  
     ただし、DDBJ で公開されてから GenBank/EMBL にデータが反映されるまでには、時間差があります。  
     getentry で公開を確認した後、週末・祝日を除き、２週間以上経過しても、GenBank/EMBL

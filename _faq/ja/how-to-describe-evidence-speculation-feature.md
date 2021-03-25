@@ -10,6 +10,6 @@ date: 2014-06-02T15:49:17
 lang: ja
 ---
 
-
-
-<p>各 feature に <a href="/ddbj/qualifiers.html#experiment">experiment</a> または <a href="/ddbj/qualifiers.html#inference">inference</a> という qualifier を用いて記載することが可能です。</p>
+各 feature に [experiment](/ddbj/qualifiers.html#experiment) または
+[inference](/ddbj/qualifiers.html#inference) という qualifier
+を用いて記載することが可能です。

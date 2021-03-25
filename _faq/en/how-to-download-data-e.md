@@ -10,15 +10,28 @@ date: 2014-01-23T11:21:04
 lang: en
 ---
 
+Download files from DDBJ ftp server at
+<ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq>.
 
+wget
+: wget is a convenient way to download files over FTP.
 
-<p>Download files from DDBJ ftp server at <a href="https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq">ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq</a>.</p>
-<h4 class="bold">wget</h4>
-<p>wget is a convenient way to download files over FTP.</p>
-<pre><code>wget ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/DRA000/DRA000001/DRX000001/DRR000001.fastq.bz2</code></pre>
-<h4 class="bold">ascp</h4>
-<p>Aspera ascp command line client can be dowloaded <a href="http://downloads.asperasoft.com/downloadsconnect">here</a>.Please select the correct operating system. The ascp command line client is distributed as part of the Aspera connect high-performance transfer browser plug-in.</p>
-<p>Your command should look similar to this:</p>
-<pre><code>ascp -i <span class="italic">&lt;aspera connect SSH key&gt;</span> <span class="italic">&lt;option&gt;</span> -P 33001 anonftp@ascp.ddbj.nig.ac.jp:<span class="italic">&lt;file or files to download&gt;</span> <span class="italic">&lt;download location&gt;</span></code></pre>
-<p>Examples:</p>
-<pre><code>ascp -i <span class="italic">&lt;aspera connect SSH key&gt;</span> -QT -l 300m -P 33001 anonftp@ascp.ddbj.nig.ac.jp:/ddbj_database/dra/fastq/DRA000/DRA000001/DRX000001/DRR000001.fastq.bz2 .</code></pre>
+```
+wget ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/DRA000/DRA000001/DRX000001/DRR000001.fastq.bz2
+```
+ascp
+: Aspera ascp command line client can be dowloaded
+[here](http://downloads.asperasoft.com/downloadsconnect).Please select
+the correct operating system. The ascp command line client is
+distributed as part of the Aspera connect high-performance transfer
+browser plug-in.
+
+Your command should look similar to this:
+
+```
+ascp -i <aspera connect SSH key> <option> -P 33001 anonftp@ascp.ddbj.nig.ac.jp:<file or files to download> <download location>
+```
+Examples:
+```
+ascp -i <aspera connect SSH key> -QT -l 300m -P 33001 anonftp@ascp.ddbj.nig.ac.jp:/ddbj_database/dra/fastq/DRA000/DRA000001/DRX000001/DRR000001.fastq.bz2 .
+```

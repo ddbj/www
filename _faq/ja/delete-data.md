@@ -10,16 +10,19 @@ date: 2014-05-30T18:17:23
 lang: ja
 ---
 
+原則として、下記を満たす場合に限り対応可能です。  
+1. 配列データが、かつて一度も公開されたことがない  
+1. そのアクセッション番号が[公表](/documents/data-release-policy.html)されていない  
+  
+[DDBJへのお問い合わせ](/contact-ddbj.html) より、以下の項目についてお知らせください。
 
+  - アクセッション番号:
+  - 抹消理由: (簡単で結構です)
 
-<p>原則として、下記を満たす場合に限り対応可能です。<br>1) 配列データが、かつて一度も公開されたことがない<br>2) そのアクセッション番号が<a href="/documents/data-release-policy.html">公表</a>されていない<br><br><a href="/contact-ddbj.html#to-ddbj">DDBJへのお問い合わせ</a> より、以下の項目についてお知らせください。</p>
-<ul>
-  <li>アクセッション番号:</li>
-  <li>抹消理由: (簡単で結構です)</li>
-</ul>
-<p>なお、すでに公開されているデータの利用を制限することは、<a href="/faq/ja/restore-released-data-private.html">条件次第</a>で可能な場合があります。<br>以下もご参照ください。</p>
-<dl><dt>参考</dt>
-  <dd><a href="/faq/ja/restore-released-data-private.html">公開されたデータを非公開に戻したい</a></dd>
-  <dd><a href="/faq/ja/why-retracted-data-available.html">公開を取り消したデータが現在も参照できるのはなぜですか</a></dd>
-  <dd><a href="/about/insdc-status-e">INSDC Status Document</a></dd>
-</dl>
+なお、すでに公開されているデータの利用を制限することは、[条件次第](/faq/ja/restore-released-data-private.html)で可能な場合があります。  
+以下もご参照ください。
+
+参考  
+: [公開されたデータを非公開に戻したい](/faq/ja/restore-released-data-private.html)
+: [公開を取り消したデータが現在も参照できるのはなぜですか](/faq/ja/why-retracted-data-available.html)
+: [INSDC Status Document](/about/insdc-status-e)
