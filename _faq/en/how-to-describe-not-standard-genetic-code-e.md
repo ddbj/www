@@ -10,9 +10,29 @@ date: 2014-06-30T17:21:44
 lang: en
 ---
 
+At first, please confirm whether [The Genetic
+Code](/ddbj/geneticcode-e.html) is appropriately selected or not.  
+Generally, if [/transl\_table](/ddbj/qualifiers-e.html#transl_table)
+qualifier is appropriately described with a number of the genetic code,
+the nucleotide sequence is automatically translated to amino acid
+sequence according to the genetic code.
 
+In exceptional cases of specific codons (selenocysteine etc.) that is
+not followed the genetic codes, describe
+/[transl\_except](/ddbj/qualifiers-e.html#transl_except) qualifier,
+appropriately.
 
-<p>At first, please confirm whether <a href="/ddbj/geneticcode-e.html">The Genetic Code</a> is appropriately selected or not. <br>Generally, if <a href="/ddbj/qualifiers-e.html#transl_table">/transl_table</a> qualifier is appropriately described with a number of the genetic code, the nucleotide sequence is automatically translated to amino acid sequence according to the genetic code. </p>
-<p>In exceptional cases of specific codons (selenocysteine etc.) that is not followed the genetic codes, describe /<a href="/ddbj/qualifiers-e.html#transl_except">transl_except</a> qualifier, appropriately. </p>
-<p>In cases of <a href="/ddbj/example-e.html#B09">RNA editing，</a><a href="/ddbj/example-e.html#B10">ribosomal frameshift</a>，<a href="/ddbj/example-e.html#B11">mitochondrial TAA stop codon</a>, see <a href="/ddbj/example-e.html">Example of submission</a> and describe with /<a href="/ddbj/qualifiers-e.html#exception">exception</a> and /<a href="/ddbj/qualifiers-e.html#translation">translation</a>, /<a href="/ddbj/qualifiers-e.html#ribosomal_slippage">ribosomal_slippage</a>, /<a href="/ddbj/qualifiers-e.html#transl_except">transl_except</a>, respectively. </p>
-<p>In case of rare initiation of translation, staring with an amino acid other than methionine, describe the <a href="/ddbj/location-e.html">location</a> of CDS feature with starting from "&lt;", operatively indicating 5'end not complete. And describe brief explanation about the translation mechanism in /<a href="/ddbj/qualifiers-e.html#note">note</a> qualifier. </p>
+In cases of [RNA editing，](/ddbj/example-e.html#B09)[ribosomal
+frameshift](/ddbj/example-e.html#B10)，[mitochondrial TAA stop
+codon](/ddbj/example-e.html#B11), see [Example of
+submission](/ddbj/example-e.html) and describe with
+/[exception](/ddbj/qualifiers-e.html#exception) and
+/[translation](/ddbj/qualifiers-e.html#translation),
+/[ribosomal\_slippage](/ddbj/qualifiers-e.html#ribosomal_slippage),
+/[transl\_except](/ddbj/qualifiers-e.html#transl_except), respectively.
+
+In case of rare initiation of translation, staring with an amino acid
+other than methionine, describe the [location](/ddbj/location-e.html) of
+CDS feature with starting from "\<", operatively indicating 5'end not
+complete. And describe brief explanation about the translation mechanism
+in /[note](/ddbj/qualifiers-e.html#note) qualifier.

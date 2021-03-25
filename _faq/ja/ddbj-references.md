@@ -8,8 +8,6 @@ tags:
   - 利用
 date: 2014-06-17T17:14:45
 lang: ja
----
+--- 
 
-
-
-DDBJ HP のサービスより、 <a href="/services/references.html">関連論文</a>をご覧下さい。
+DDBJ HP のサービスより、 [関連論文](/services/references.html)をご覧下さい。

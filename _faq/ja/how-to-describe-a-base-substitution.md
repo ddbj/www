@@ -10,6 +10,9 @@ date: 2014-06-03T15:08:34
 lang: ja
 ---
 
-
-
-<p>一般的に <a href="/ddbj/features.html#variation">variation</a> feature を指定し <a href="/ddbj/qualifiers.html#replace">replace</a> と <a href="/ddbj/qualifiers.html#note">note</a> qualifier を用いて記述します。<br>DDBJ 塩基配列登録システム<!-- Nucleotide Sequence Submission System -->の場合、template で other を選択してください。<br>書式は<a href="/ddbj/example.html">登録の見本</a>にて <a href="/ddbj/example.html#F01">F01) polymorphism and variation</a> を参照してください。</p>
+一般的に [variation](/ddbj/features.html#variation) feature を指定し
+[replace](/ddbj/qualifiers.html#replace) と
+[note](/ddbj/qualifiers.html#note) qualifier を用いて記述します。  
+DDBJ 塩基配列登録システムの場合、template で other を選択してください。  
+書式は[登録の見本](/ddbj/example.html)にて [F01) polymorphism and
+variation](/ddbj/example.html#F01) を参照してください。

@@ -10,14 +10,24 @@ date: 2014-07-07T14:17:55
 lang: en
 ---
 
+You can confirm amino acid sequences for [CDS
+features](/ddbj/cds-e.html) as follows.
 
+1. Download UME\_win.zip (for Windows) or UME\_mac.zip (for MacOSX)
+from [Mass Submission System](/ddbj/mss-e.html#tool).
 
-<p>You can confirm amino acid sequences for <a href="/ddbj/cds-e.html">CDS features</a> as follows. </p>
-<dl>
-  <dd>1. Download UME_win.zip (for Windows) or UME_mac.zip (for MacOSX) from <a href="/ddbj/mss-e.html#tool">Mass Submission System</a>. </dd>
-  <dd>2. Download both annotation and sequence files at <a href="/ddbj/web-submission-help-e.html#flow-8">8. Finish</a> on DDBJ Nucleotide Sequence Submission System. </dd>
-  <dd>3. <a href="/ddbj/ume-e.html">Run UME</a> and load both annotation and sequence files. Then click [Execute] of transChecker. </dd>
-</dl>
-<p>The function to confirm amino acid sequences will be applied on DDBJ Nucleotide Sequence Submission System. </p><dt>References</dt>
-<dd><a href="/faq/en/how-to-input-amino-acid-seq-e.html">How can I input amino acid sequnce (/translation qualifier) for CDS feature?</a></dd>
-<dd><a href="/faq/en/translation-qualifier-seems-incorrect-e.html">The amino acid sequence in the value of /translation qualifier seems to be incorrect.</a></dd>
+1. Download both annotation and sequence files at [8.
+Finish](/ddbj/web-submission-help-e.html#flow-8) on DDBJ Nucleotide
+Sequence Submission System.
+
+1. [Run UME](/ddbj/ume-e.html) and load both annotation and sequence
+files. Then click \[Execute\] of transChecker.
+
+The function to confirm amino acid sequences will be applied on DDBJ
+Nucleotide Sequence Submission System.
+
+References
+: [How can I input amino acid sequnce (/translation qualifier) for CDS
+feature?](/faq/en/how-to-input-amino-acid-seq-e.html)
+: [The amino acid sequence in the value of /translation qualifier seems to
+be incorrect.](/faq/en/translation-qualifier-seems-incorrect-e.html)

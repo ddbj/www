@@ -10,6 +10,14 @@ date: 2014-06-04T15:22:50
 lang: ja
 ---
 
+[6. Template](/ddbj/web-submission-help.html#flow-6) において a) other を選択して
+\[Input annotation\] をクリックするか、b) \[Upload annotation file\]
+をクリックしてください。
 
+a) の場合、[7.Annotation (アノテーション画面 - Template で "other"
+を選択したとき)](/ddbj/web-submission-help.html#flow-7-2)
+をご参照ください。  
 
-<p><a href="/ddbj/web-submission-help.html#flow-6">6. Template</a> において a) other を選択して [Input annotation] をクリックするか、b) [Upload annotation file] をクリックしてください。<br><!-- Nucleotide Sequence Submission System -->a) の場合、<a href="/ddbj/web-submission-help.html#flow-7-2">7.Annotation (アノテーション画面 - Template で "other" を選択したとき)</a> をご参照ください。<br>b) の場合、<a href="/ddbj/web-submission-help.html#flow-7-6">7.Annotation: アノテーションファイルのアップロード方法</a> をご参照ください。</p>
+b) の場合、[7.Annotation:
+アノテーションファイルのアップロード方法](/ddbj/web-submission-help.html#flow-7-6)
+をご参照ください。

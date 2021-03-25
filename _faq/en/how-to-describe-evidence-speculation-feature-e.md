@@ -10,6 +10,6 @@ date: 2014-06-16T17:54:32
 lang: en
 ---
 
-
-
-<p>You can use <a href="/ddbj/qualifiers-e.html#experiment">experiment</a> or <a href="/ddbj/qualifiers-e.html#inference">inference</a> qualifier to describe evidence of speculation in each feature. </p>
+You can use [experiment](/ddbj/qualifiers-e.html#experiment) or
+[inference](/ddbj/qualifiers-e.html#inference) qualifier to describe
+evidence of speculation in each feature.

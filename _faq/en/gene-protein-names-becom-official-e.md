@@ -10,15 +10,20 @@ date: 2014-06-26T11:32:51
 lang: en
 ---
 
+DDBJ does not have any right for the gene nomenclature. Also, DDBJ does
+not make any official collaboration with any committee of gene
+nomenclature. If there is no particular incident, the descriptions
+related to gene nomenclature are described as provided by submitter.  
+Even if you name a gene during your sequence data submission to DDBJ,
+there is no guarantee that the gene name is accepted at research
+communities.
 
+References
+: [Gene nomenclature at DDBJ](/ddbj/cds-e.html#product)
+: [Patent Priority and Other Priority](/policies-e.html#priority)
 
-<p>DDBJ does not have any right for the gene nomenclature. Also, DDBJ does not make any official collaboration with any committee of gene nomenclature. If there is no particular incident, the descriptions related to gene nomenclature are described as provided by submitter. <br>Even if you name a gene during your sequence data submission to DDBJ, there is no guarantee that the gene name is accepted at research communities. </p>
-<dl><dt>References</dt>
-  <dd>
-    <ul>
-      <li><a href="/ddbj/cds-e.html#product">Gene nomenclature at DDBJ</a></li>
-      <li><a href="/policies-e.html#priority">Patent Priority and Other Priority</a></li>
-    </ul>
-  </dd>
-</dl>
-<p>You should confirm each gene nomenclature committee, i.e. <a href="http://www.genenames.org/">HUGO Gene Nomenclature Committee (HGNC)</a> for human, <a href="http://www.informatics.jax.org/mgihome/nomen/index.shtml#mnrg">MGI - Mouse Nomenclature</a> for mouse, and so on. </p>
+You should confirm each gene nomenclature committee, i.e. [HUGO Gene
+Nomenclature Committee (HGNC)](http://www.genenames.org/) for human,
+[MGI - Mouse
+Nomenclature](http://www.informatics.jax.org/mgihome/nomen/index.shtml#mnrg)
+for mouse, and so on.
