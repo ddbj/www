@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" version="2.0">
+<channel>
+<title>DDBJ センターからのお知らせとサービスに関する更新や変更</title>
+<link>/rss/news-center-ja.xml</link>
+<atom:link href="/rss/news-center-ja.xml" rel="self" type="application/rss+xml"/>
+<description>DDBJ センターからのお知らせとサービスに関する更新や変更</description>
+<language>ja</language>
+<pubDate>Thu, 12 Nov 2020 15:30:00 +0900</pubDate>
+<image>
+<url>/images/thumbnail/logo_ddbj.png</url>
+<title>DDBJ センターからのお知らせとサービスに関する更新や変更</title>
+<link>/rss/news-center-ja.xml</link>
+<width>90</width>
+<height>32</height>
+</image>
+<item>
+<title>ホタルイカ (Watasenia scintillans) の配列データ公開</title>
+<link>/news/ja/201112_2.html</link>
+<pubDate>Thu, 12 Nov 2020 15:30:00 +0900</pubDate>
+<description>島根大学から登録されたホタルイカ (Watasenia scintillans) の配列データが公開されました。アクセッション番号は以下の通りです。getentry または DRASearch から検索可能です。WGSBLWP01000001-BLWP01491107 (491,107 entries) BLWP.gzDRAgenome DRR219451-DRR219453 (DRA009937)transcriptome DRR219454-DRR219455 (DRA009937)
+</description>
+<guid>/news/ja/201112_2.html</guid>
+</item>
+<item>
+<title>INSDC に関する Nucleic Acids Research Database Issue 論文が公開されました</title>
+<link>/news/ja/201112.html</link>
+<pubDate>Thu, 12 Nov 2020 10:05:00 +0900</pubDate>
+<description>有田 正規 生命情報・DDBJ センター長を筆頭著者とする INSDC に関する論文が Nucleic Acids Research Database Issue 論文として公開されました。
+
+  
+
+ 
+  The international nucleotide sequence database collaboration
+  Masanori Arita, Ilene Karsch-Mizrachi, Guy Cochrane 
+  
+   Nucleic Acids Research
+   2020
+   
+ 
+
+ 
+</description>
+<guid>/news/ja/201112.html</guid>
+</item>
+<item>
+<title>(11/27～12/3) スパコン定期メンテナンスに伴う DDBJ センターのサービス停止のお知らせ </title>
+<link>/news/ja/201110.html</link>
+<pubDate>Tue, 10 Nov 2020 09:00:00 +0900</pubDate>
+<description>遺伝研スーパーコンピュータシステムの定期メンテナンスのため、以下の日程でスパコンのサービスが停止いたします。11月27日(金) 17:00 ～ 12月3日 (木) 24:00スパコン停止に伴い、DDBJ センターのサービスも停止いたします。一部のサービスについては、サービス停止、再開の時刻が上記日程より前後いたします。各サービス停止の日程が決まり次第、DDBJ HP、Twitter でアナウンスいたします。皆様にはご迷惑をおかけいたしますが、ご理解とご協力のほどよろしくお願いいたします。</description>
+<guid>/news/ja/201110.html</guid>
+</item>
+<item>
+<title>(11/26～12/3) DDBJ センターの登録、検索・解析サービス停止のお知らせ</title>
+<link>/news/ja/201110_2.html</link>
+<pubDate>Tue, 10 Nov 2020 09:00:00 +0900</pubDate>
+<description>遺伝研スパコンシステムの定期メンテンナンスに伴い、以下の日程で DDBJ センターが提供する登録、検索・解析サービスが停止いたします。サービス停止、再開の時刻が下記日程より前後する可能性があります。DDBJ HP、Twitter でアナウンスいたしますのでご確認ください。サービス名停止期間・DDBJ塩基配列登録システム11月25日(水) 18:00 ～ 12月4日(金) 18:00 ・DRA 検証処理・GEA 検証処理11月26日(木) 14:00 ～ 12月4日(金) 12:00・D-way・DRA Search・BioProject Search・BioSample Search・GEA reviewer access・NBDCヒトデータベース申請システム・AGD Submission/Download Tool・AGD Meta Viewer・AgdRest11月27日(金) 13:00 ～ 12月3日(木) 24:00・NIG Supercomputer・DDBJ FTP サービス・getentry・ARSA・BLAST・ClustalW11月27日(金) 17:00 ～ 12月3日(木) 24:00皆様には大変ご迷惑をおかけいたしますが、ご理解とご協力をお願いいたします。</description>
+<guid>/news/ja/201110_2.html</guid>
+</item>
+<item>
+<title>DDBJ センターの活動報告が Nucleic Acids Research Database Issue 論文として公開されました</title>
+<link>/news/ja/201109.html</link>
+<pubDate>Mon, 9 Nov 2020 10:05:00 +0900</pubDate>
+<description>生命情報・DDBJ センターの JGA を中心とした最近一年の活動報告が Nucleic Acids Research Database Issue 論文として公開されました。
+
+  
+
+ 
+  DDBJ update: streamlining submission and access of human data
+  Fukuda A, Kodama Y, Mashima J, Fujisawa T, Ogasawara O
+  
+   Nucleic Acids Research
+   2020
+   Pubmed: 33156332
+   doi: 10.1093/nar/gkaa982
+   
+ 
+
+ 
+
+トピックス
+
+ データベースの統計情報
+ NBDC 申請システムと統合された新しい JGA システム
+ 登録の自動化に向けた取り組み
+
+</description>
+<guid>/news/ja/201109.html</guid>
+</item>
+<item>
+<title>アオマダラウミヘビ (Laticauda colubrina) の配列データ公開</title>
+<link>/news/ja/201106.html</link>
+<pubDate>Fri, 6 Nov 2020 09:00:00 +0900</pubDate>
+<description>京都大学から登録されたアオマダラウミヘビ (Laticauda colubrina) の配列データが公開されました。アクセッション番号は以下の通りです。getentry または DRASearch から検索可能です。WGSBLBF01000001-BLBF01020583 (20,583 entries) BLBF.gzDRADRR147552 (DRA007200)
+
+</description>
+<guid>/news/ja/201106.html</guid>
+</item>
+<item>
+<title>Feature Table Definition 改訂</title>
+<link>/news/ja/201106_2.html</link>
+<pubDate>Fri, 6 Nov 2020 09:00:00 +0900</pubDate>
+<description>The DDBJ/ENA/GenBank Feature Table Definition は、DDBJ, ENA, GenBank が三者間で定めた feature 記載によるアノテーションの共通規範です。Feature Table Definition は version 11.0 に改訂されました。</description>
+<guid>/news/ja/201106_2.html</guid>
+</item>
+<item>
+<title>コウモリ２種 (Rousettus aegyptiacus と Rousettus leschenaultii) の配列データ公開</title>
+<link>/news/ja/201102.html</link>
+<pubDate>Mon, 2 Nov 2020 16:30:00 +0900</pubDate>
+<description>国立遺伝学研究所から登録されたコウモリ２種 (Rousettus aegyptiacus と Rousettus leschenaultii) の配列データが公開されました。アクセッション番号は以下の通りです。getentry または DRASearch から検索可能です。エジプトルーセットオオコウモリ (Rousettus aegyptiacus)WGS BNJL01000001-BNJL01004947 (4,947 entries) BNJL.gzDRA DRR016094-DRR016103 (DRA001680)デマレルーセットオオコウモリ (Rousettus leschenaultii)WGS BNJM01000001-BNJM01008141 (8,141 entries) BNJM.gzDRA DRR239112-DRR239118 (DRA010589)
+</description>
+<guid>/news/ja/201102.html</guid>
+</item>
+<item>
+<title>BioProject/BioSample/DRA/D-way システムが不安定になっています</title>
+<link>/news/ja/201009_2.html</link>
+<pubDate>Fri, 9 Oct 2020 19:30:00 +0900</pubDate>
+<description>BioProject/BioSample/DRA/D-way システムが不安定になっており、システムの応答が無くなる現象が頻繁に発生するようになっております。解消するため再起動をする場合がありますので、ユーザの皆様におかれましてはこまめに登録内容を保存して頂くよう、お願い申し上げます。ご迷惑をお掛けしており、誠に申し訳ございません。原因については調査を続けております。</description>
+<guid>/news/ja/201009_2.html</guid>
+</item>
+<item>
+<title>国立遺伝学研究所　生命情報・DDBJ センター　短時間雇用職員（技術補佐員）募集</title>
+<link>/news/ja/200616.html</link>
+<pubDate>Tue, 16 Jun 2020 09:00:00 +0900</pubDate>
+<description>
+   職種：
+    技術補佐員
+  
+  業務内容：
+    生命情報・DDBJ センターはライフサイエンス研究のためのデータベースを運営しています。研究者からデータベースに送られてくるデータのチェック等の業務支援が仕事内容になります。初歩的なパソコン操作と生物学の知識が必要になりますが、着任後に指導いたします。
+  
+  採用予定人数：
+    １名
+  
+  雇用契約：
+    2020年8月1日～2021年3月31日。更新有（通算3年まで）。採用日は2020年8月1日以降で相談に応じます。定年:60歳
+  
+  資格：
+    一般事務の経験がある方、パソコン（ワード、エクセル）のできる方。短大・専門学校卒以上
+  
+  待遇：
+    時間給９６８円～１,２２２円（所内規程に基づき、経歴等により決定します）
+  
+  時間：
+    月～金　９：００～１６：００　（休憩時間６０分、週３０時間）
+  
+  休日：
+    週休二日制（土・日）、祝日、１２月２９日～１月３日
+  
+  応募：
+    履歴書（学歴・職歴・資格）を以下宛に送付。
+    槇: mimaki@nig.ac.jp 件名は「技術補佐員応募」。書類選考・面接後に採用決定。 適任者が決まり次第締切。
+
+  
+  問合先・提出先
+    〒411-8540　静岡県三島市谷田1111　国立遺伝学研究所　生命情報・DDBJ センター
+    槇 美香（電子メール：mimaki@nig.ac.jp、TEL:055-981-6763）提出書類に含まれる個人情報は、選考及び採用以外の目的には使用いたしません。
+  
+
+  
+
+</description>
+<guid>/news/ja/200616.html</guid>
+</item>
+</channel>
+</rss>

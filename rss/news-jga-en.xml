@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" version="2.0">
+<channel>
+<title>Japanese Genotype-phenotype Archive News</title>
+<link>/rss/news-jga-en.xml</link>
+<atom:link href="/rss/news-jga-en.xml" rel="self" type="application/rss+xml"/>
+<description>Japanese Genotype-phenotype Archive News</description>
+<language>en</language>
+<pubDate>Thu, 12 Nov 2020 15:30:00 +0900</pubDate>
+<image>
+<url>/images/thumbnail/logo_ddbj.png</url>
+<title>Japanese Genotype-phenotype Archive News</title>
+<link>/rss/news-jga-en.xml</link>
+<width>90</width>
+<height>32</height>
+</image>
+<item>
+<title>(Nov. 27 - Dec. 3) Suspension DDBJ services due to NIG Supercomputer maintenace</title>
+<link>/news/en/201110-e.html</link>
+<pubDate>Tue, 10 Nov 2020 09:00:00 +0900</pubDate>
+<description>NIG Supercomputer will be unavailable due to scheduled maintenance on the following schedule.November 27(Fri) 17:00 -  December 3 (Thu) 24:00 (JST)DDBJ services will also be unavailable.We will announce on this page and Twitter when the schedule is fixed.We apologize for any inconvenience this may cause you.</description>
+<guid>/news/en/201110-e.html</guid>
+</item>
+<item>
+<title>(November 26 - December 3) Suspension of DDBJ services due to NIG Supercomputer maintenance</title>
+<link>/news/en/201110_2-e.html</link>
+<pubDate>Tue, 10 Nov 2020 09:00:00 +0900</pubDate>
+<description>Due to NIG Supercomputer maintenance, submission, search and analysis services of DDBJ Center will be unavailable on the following schedule.ServicesSchedule (JST)・DDBJ Nucleotide Sequence Submission SystemNovember 25(Wed) 18:00 ～ December 4(Fri) 18:00(JST) ・DRA validation・GEA validationNovember 26(Thr) 14:00 ～ December 4(Fri) 12:00(JST)・D-way・DRA Search・BioProject Search・BioSample Search・GEA reviewer access・NBDC Application System・AGD Submission/Download Tool・AGD Meta Viewer・AgdRestNovember 27(Fri) 13:00 ～ December 3(Thr) 24:00(JST)・NIG Supercomputer・DDBJ FTP Service・getentry・ARSA・BLAST・ClustalWNovember 27(Fri) 17:00 ～ December 3(Thr) 24:00(JST)Thank you for your understanding and cooperation. 
+</description>
+<guid>/news/en/201110_2-e.html</guid>
+</item>
+<item>
+<title>Our activity report was published in Nucleic Acids Research Database Issue</title>
+<link>/news/en/201109-e.html</link>
+<pubDate>Mon, 9 Nov 2020 10:05:00 +0900</pubDate>
+<description>Our last year's activities focusing on recent JGA system enhancements was published in Nucleic Acids Research Database Issue.
+
+  
+
+ 
+  DDBJ update: streamlining submission and access of human data
+  Fukuda A, Kodama Y, Mashima J, Fujisawa T, Ogasawara O
+  
+   Nucleic Acids Research
+   2020
+   Pubmed: 33156332
+   doi: 10.1093/nar/gkaa982
+   
+ 
+
+ 
+
+Topics
+
+ Statistics of the public databases
+ The JGA system enhancements including its integration with the NBDC application system
+ Submission automation
+</description>
+<guid>/news/en/201109-e.html</guid>
+</item>
+</channel>
+</rss>
