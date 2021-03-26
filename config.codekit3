@@ -7,7 +7,7 @@
       "uuidString" : "3DC8E7FC-C471-446D-8EEF-270A0B0878D5"
     }
   ],
-  "creatorBuild" : "34081",
+  "creatorBuild" : "34127",
   "files" : {
     "\/_about\/index-e.md" : {
       "cB" : 0,
@@ -50057,6 +50057,25 @@
       "rFN" : 0,
       "uCM" : 0
     },
+    "\/_news\/en\/2021-03-19-e.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/_news\/en\/2021-03-19-e.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
     "\/_news\/en\/index-e.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -94020,6 +94039,25 @@
       "rFN" : 0,
       "uCM" : 0
     },
+    "\/_news\/ja\/2021-03-19.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/_news\/ja\/2021-03-19.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
     "\/_news\/ja\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -109078,19 +109116,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/images\/staff\/tu.jpg" : {
-      "ft" : 16384,
-      "iS" : 3863,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/assets\/images\/staff\/tu.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/assets\/images\/staff\/watanabe_t.jpg" : {
       "ft" : 16384,
       "iS" : 3754,
@@ -110138,9 +110163,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/assets\/js\/jquery.trace-min.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
@@ -112922,6 +112947,9 @@
       "removeVariables" : 0,
       "safelistEntries" : [
 
+      ],
+      "skippedEntries" : [
+        "node_modules\/**"
       ]
     },
     "rollupContext" : "",
@@ -112933,7 +112961,7 @@
       "ENVIRONMENT:::$NODE_ENV"
     ],
     "rollupTreeshakingEnabled" : 1,
-    "skippedFoldersString" : "\/storage\/framework\/sessions,\/_site,node_modules,_logs,logs,log,.idea,_cache,cache,*.md",
+    "skippedFoldersString" : "\/storage\/framework\/sessions,\/_site,node_modules,*.md,_logs,logs,log,.idea,_cache,cache,\/_*",
     "sourceFolderName" : "source",
     "susyVersion" : 3,
     "tsAllowSyntheticDefaultImports" : 0,
@@ -112956,6 +112984,7 @@
     "tsNoImplicitThis" : 0,
     "tsNoImplicitUseStrict" : 0,
     "tsNoLib" : 0,
+    "tsNoPropertyAccessFromIndexSignature" : 0,
     "tsNoResolve" : 0,
     "tsNoStrictGenericChecks" : 0,
     "tsNoUncheckedIndexAccess" : 0,
