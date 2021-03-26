@@ -882,10 +882,10 @@ methyltransferases that produced them. The PacBio analysis suite
 contains an analysis workflow (RS_Modification_and_Motif_Analysis)
 to extract these sequences and produce several files:
 
-  - motif_summary.csv
-  - modifications.csv
-  - modifications.gff
-  - motifs.gff
+- motif_summary.csv
+- modifications.csv
+- modifications.gff
+- motifs.gff
 
 It would be beneficial to the scientific community if you were able to
 perform this analysis and submit at least the motif_summary.csv file
@@ -895,6 +895,25 @@ type](#Analysis_Type)in addition to sequencing reads in Run. For
 assistance, [contact us](/contact-ddbj-e.html).
 
 [NCBI guidelines of PacBio Base Modification Files](https://www.ncbi.nlm.nih.gov/genbank/basemodificationfiles)
+
+### BioNano Whole Genome Map Files {#bionano}
+
+BioNano mapping technology produces whole genome maps. These maps can be used in a variety of genomic analyses, including de novo assembly, structural variant detection and assembly curation. For example, BioNano physical maps can be integrated with de novo genome assemblies produced from next-generation technologies to produce high quality hybrid assemblies with increased continuity and completeness, especially in regions of genomic complexity. Files produced as part of the BioNano mapping and or hybrid assembly process include:
+
+- CMAP
+    - The BioNano Genomics Irys .cmap file is a raw data view of a molecule set or assembly reporting a label site position within a genome map identified during a run. The Irys .cmap file reports the start and end coordinates and the locations of the labels on a map using a tab-delimited text based file.
+- COORD
+    - The purpose of the .coord file is to relate the coordinates of scaffolds in a hybrid assembly to the corresponding AGP submission. The .coord file maps positions from the hybrid cmap, which may not begin or end with sequence gaps. The scaffolds are trimmed up to the leftmost label of leftmost sequence and the rightmost label of the rightmost sequence.
+- XMAP
+    - The BioNano Genomics Irys .xmap file is a cross-comparison between two maps. The Irys .xmap file reports the comparison derived from the alignment between an anchor .cmap file and a query .cmap file. The data line displays the map start and end coordinates and the locations of the labels on the map using a tab-delimited text based file.
+- SMAP
+    - The BioNano Genomics Irys .smap file is a description of structural variations (SV) detected between two genome maps. The Irys .smap file reports the structural variants discovered during an alignment between an anchor .cmap file and a query .cmap file. The data line displays the start and end coordinates and the locations of the SV on the map using a tab-delimited, text-based file.
+- BNX
+    - The BioNano Genomics Irys .bnx file is a raw data view of molecule and label information and quality scores per channel identified during a run.
+
+For the latest file specifications, please see the [BioNano GitHub site](https://github.com/bionanogenomics/File-Format-Specification-Sheets).
+
+If you are using BioNano data as part of your assembly generation pipeline, it would be extremely useful to the scientific community if you could submit a package comprised minimally of the molecule .bnx file and the resulting de novo assembly file EXP_REFINEFINAL1.cmap and COORD files as a DRA Analysis. We will add an analysis type and filetypes for the BioNano Genome Map files. In the meantime, please submit the BioNano files as the analysis type "[De Novo Assembly](#Analysis_Type)" and the filetype "[tsv](#Analysis_File_Type)" (Example, [DRZ011299, DRZ011300](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA005/DRA005897/DRA005897.analysis.xml)). 
 
 # Submission to the DRA  {#dra-submission}
 
