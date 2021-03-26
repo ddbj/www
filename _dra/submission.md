@@ -706,19 +706,46 @@ fastq/bam ファイルを登録します。
 
 ## Analysis データファイル  {#analysis-data-files}
 
-
 ### PacBio Base Modification Files  {#Pacbio-Base-Modification-Files}
 
 [PacBio](http://www.pacb.com) シークエンサーは塩基配列に加え、塩基のメチル化状態を解析することができ、そのデータを共有することは研究者コミュニティにとって重要です。 例えば、修飾された塩基の正確な位置情報は DNA メチルトランスフェラーゼの特異性の解析に用いることができます。 PacBio の解析ソフトウェア(RS_Modification_and_Motif_Analysis) はこれらの修飾塩基配列情報を抽出し、以下のいくつかのファイルに出力します:
 
-  - motif_summary.csv
-  - modifications.csv
-  - modifications.gff
-  - motifs.gff
+- motif_summary.csv
+- modifications.csv
+- modifications.gff
+- motifs.gff
 
 この解析結果ファイル、原核生物については少なくとも motif_summary.csv ファイルを DRA Analysis として登録することは研究者コミュニティにとって貴重なデータになります。 Run に加え、これらのファイルを [Sequence Annotation type](#Analysis_Type) Analysis として是非ご登録ください。 サポートが必要な場合は [DRA チームにご連絡ください](/contact-ddbj.html)。
 
 [NCBI guidelines of PacBio Base Modification Files](https://www.ncbi.nlm.nih.gov/genbank/basemodificationfiles)
+
+### BioNano Whole Genome Map Files {#bionano}
+
+BioNano はラベルの位置を染色体レベルで測定し、マッピングデータとして出力します。
+マッピングデータはゲノムアセンブリ、構造バリアント検出、アセンブリの改善といった各種ゲノム解析に使われています。
+次世代シークエンスデータと組み合わせ、より連続したハイブリッドゲノムアセンブリを得るために活用されています。
+BioNano のマッピング・ハイブリッドアセンブリでは以下のファイル群が生成されます。
+
+- CMAP
+    - BioNano の cmap ファイルはゲノムマップ中のラベル位置を測定した生データです。
+    cmap ファイルはタブ区切りテキストファイルでマップ上のラベル位置が開始・終了座標で記されています。
+- COORD
+    - coord ファイルはハイブリッドアセンブリにおいてコンティグ座標と AGP ファイルを関連付けます。
+    coord ファイルは cmap の位置情報をリファレンスゲノムにマップしたものです（ギャップが両端に無い場合もあります）。
+    コンティグは、最も左端にある配列中の左端のラベルまで、最も右端にある配列の右端のラベルまで、トリミングされています。
+- XMAP
+    - BioNano の xmap ファイルは二つのマップの比較結果です。
+    xmap ファイルはクエリの cmap とクエリ対象の cmap をアライメントし、比較した結果が記載されています。
+    xmap はタブ区切りテキストファイルで、マップの開始・終了座標、及び、マップにおけるラベル位置から構成されています。
+- SMAP
+    - BioNano の smap ファイルはクエリの cmap とクエリ対象の cmap をアライメントし、検出された構造バリアント (SV) が記載されています。
+    smap はタブ区切りテキストファイルで SV の開始・終了座標、及び、マップにおける SV の位置から構成されています。
+- BNX
+    - BioNano の bnx ファイルは染色体におけるラベル位置の測定結果、及び、チャンネル毎の Quality score の生データです。
+
+ファイル仕様の最新情報は [BioNano GitHub サイト](https://github.com/bionanogenomics/File-Format-Specification-Sheets) を参照してください。
+
+BioNano データをアセンブルに使用した場合、bnx ファイル、それから、de novo アセンブリに使用した EXP_REFINEFINAL1.cmap と coord ファイルを DRA Analysis として共有することは有益です。DRA では BioNano Genome Map データ用の analysis type と filetype を追加する予定ですが、それまでの間、analysis type "[De Novo Assembly](#Analysis_Type)" と filetype "[tsv](#Analysis_File_Type)" として BioNano データを登録してください (例 [DRZ011299, DRZ011300](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA005/DRA005897/DRA005897.analysis.xml))。
 
 # DRA へのデータ登録  {#dra-submission}
 
