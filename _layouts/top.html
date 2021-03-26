@@ -49,8 +49,9 @@ layout: default
           <ul class="list">
             {% assign news_list = site.news 
               | where: "lang", page.lang 
-              | where: "layout", "simple" 
+              | where_exp: "news_list", "news_list.db contains 'top'" 
               | where_exp: "news_list", "news_list.retire_time > site.time" 
+              | sort: "date" 
               | reverse %}
               {% for news in news_list limit:5 %}
             <li class="item">
@@ -71,6 +72,7 @@ layout: default
             {% assign news_list = site.news 
               | where: "lang", page.lang 
               | where_exp: "news_list", "news_list.db contains page.category" 
+              | where_exp: "news_list", "news_list.retire_time > site.time" 
               | sort: "date" 
               | reverse %}
             {% for news in news_list limit:5 %}
