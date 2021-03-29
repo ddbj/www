@@ -1076,7 +1076,7 @@ create metadata first, upload some files.
 
 Transfer the files by executing,
 ```
-$ scp -i private-key-for-auth &lt;Your Files&gt; &lt;D-way Login ID&gt;@ftp-private.ddbj.nig.ac.jp:~/&lt;DRA Submission ID&gt;
+$ scp -i private-key-for-auth <Your Files> <D-way Login ID>@ftp-private.ddbj.nig.ac.jp:~/<DRA Submission ID>
 ```
   - -i: specify the private key for authentication which is pair of a public key registered to your D-way account.
   - &lt;Your Files&gt; Files to be transferred. Ex: file1 file2 (file1 and

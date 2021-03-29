@@ -883,7 +883,7 @@ DRA 登録のステータス一覧
 ファイルを SCP 転送します。
 
 ```
-$ scp -i private-key-for-auth &lt;Your Files&gt; &lt;D-way Login ID&gt;@ftp-private.ddbj.nig.ac.jp:~/&lt;DRA Submission ID&gt;
+$ scp -i private-key-for-auth <Your Files> <D-way Login ID>@ftp-private.ddbj.nig.ac.jp:~/<DRA Submission ID>
 ```
 
   - -i でアカウントに登録した認証用公開鍵とペアになる秘密鍵を指定します。
