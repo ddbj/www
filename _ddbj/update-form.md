@@ -7,7 +7,7 @@ current_tab: home
 lang: ja
 ---
 
-### 登録データの修正・更新 申し込みの流れ  {#flow}
+## 登録データの修正・更新 申し込みの流れ  {#flow}
 
 {: .flow .flow_ja }
 - 登録データの修正・更新 申し込み
@@ -20,10 +20,11 @@ lang: ja
 - メールが届かない場合は[「お問い合わせ」](/ddbj-access.html)の「塩基配列データの修正・更新について」からご連絡下さい。
 - [DDBJ からのメールを迷惑メールとしないように設定](/precautions.html)をお願いいたします。
 
-### 登録データの修正・更新 申し込みフォーム
+## 登録データの修正・更新 申し込みフォーム
+- [フォームを新しいタブで開くにはここをクリックしてください。](https://docs.google.com/forms/d/e/1FAIpQLSfNnNRavoWTcuwU8S4g75vlb8o6mAsiFikN9o7veCLJ6DBD-g/viewform?embedded=true){:target="_blank"}
 
-※[フォームが表示されない場合は？](/faq/ja/data-update-request-form-not-displayed)
+※ [フォームが表示されない場合は？](/faq/ja/data-update-request-form-not-displayed)
 
 <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdQeCkBTfgDDLLOBjxGQVaMpoiuQKP1qrSSKuBYe1hypKfeaA/viewform?embedded=true" width="760" height="2000" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>-->
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfNnNRavoWTcuwU8S4g75vlb8o6mAsiFikN9o7veCLJ6DBD-g/viewform?embedded=true" width="130%" height="2000" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>
+<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfNnNRavoWTcuwU8S4g75vlb8o6mAsiFikN9o7veCLJ6DBD-g/viewform?embedded=true" width="130%" height="2000" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe> -->
