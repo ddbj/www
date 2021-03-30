@@ -155,10 +155,10 @@ input, textarea, select, button {
     height: .2em;
     background-color: #d2cac4;
     box-shadow: 0 0.4em 0 #d2cac4, 0 0.8em 0 #d2cac4; }
-  .appearance-switch > .button:hover[data-appearance-value="panel"]:before, .appearance-switch > .button.-current[data-appearance-value="panel"]:before {
+  .appearance-switch > .button[data-appearance-value="panel"]:hover:before, .appearance-switch > .button.-current[data-appearance-value="panel"]:before {
     background-color: #fcac3d;
     box-shadow: 0.6em 0 0 #fcac3d, 0 0.6em 0 0 #fcac3d, 0.6em 0.6em 0 #fcac3d; }
-  .appearance-switch > .button:hover[data-appearance-value="list"]:before, .appearance-switch > .button.-current[data-appearance-value="list"]:before {
+  .appearance-switch > .button[data-appearance-value="list"]:hover:before, .appearance-switch > .button.-current[data-appearance-value="list"]:before {
     background-color: #fcac3d;
     box-shadow: 0 0.4em 0 #fcac3d, 0 0.8em 0 #fcac3d; }
 
@@ -1086,7 +1086,7 @@ input, textarea, select, button {
     color: #736357; }
     .tag-view.-disable > .count {
       color: #736357; }
-  .tag-view:hover.-disable {
+  .tag-view.-disable:hover {
     background-color: rgba(255, 191, 0, 0.15);
     color: #FF7300; }
 
@@ -1507,6 +1507,31 @@ input, textarea, select, button {
     #TopPageView > .inner > .pickup-news-view {
       order: 1;
       width: auto; } }
+
+#ScView {
+  padding-top: 2.5rem;
+  position: relative; }
+  #ScView > .appearance-switch {
+    font-size: 1.8rem;
+    position: absolute;
+    display: block;
+    top: -.5rem;
+    right: 4.2rem; }
+  #ScView > .tagging-list-view {
+    list-style: none;
+    position: relative;
+    transition: margin 0.2s; }
+    #ScView > .tagging-list-view > .example {
+      transition: margin 0.2s, padding 0.2s, width 0.2s;
+      width: 80%; }
+  #ScView[data-appearance-type="list"] > .tagging-list-view > .example > .example-content {
+    display: none; }
+  #ScView[data-appearance-type="panel"] > .tagging-list-view {
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: -2rem; }
+    #ScView[data-appearance-type="panel"] > .tagging-list-view > .example > .example-content {
+      display: block; }
 
 ._bg-dbcls {
   background-color: #004098 !important; }

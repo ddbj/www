@@ -592,9 +592,9 @@ sc:
     - id: home
       title: Home
       url: /sc/
-    - id: activation_method
+    - id: example_of_utilization
       title: 活用方法
-      url: /sc/activation_method
+      url: /sc/example_of_utilization
     - id: application
       title: 利用申請
       url: /sc/application

@@ -1,0 +1,32 @@
+---
+layout: indexed_content
+title: 活用方法
+category: sc
+lang: ja
+current_tab: example_of_utilization
+
+---
+<main class="mainview">
+    <h1>活用方法紹介</h1>
+    <div id="ScView" data-appearance-type="panel">
+        <nav class="appearance-switch">
+            <div class="button -current" data-appearance-value="panel" title="Panel view"></div>
+            <div class="button" data-appearance-value="list" title="List view"></div>
+        </nav>
+        <ul class="tagging-list-view">
+            {% assign example_list = site.sc | where:"type", "example_of_utilization" %}
+            {% for example in example_list %}
+            <li class="example">
+                <h2 class="example-title"><a href="{{ example.url }}">{{ example.title }}</a></h2>
+                <div class="example-content">{{ example.content }}</div>
+            </li>
+            {% endfor %}
+        </ul>
+
+    </div>
+
+
+
+
+
+</main>

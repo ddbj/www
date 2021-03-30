@@ -1,0 +1,53 @@
+$MARGIN_PANEL: 2rem
+
+#ScView
+  padding-top: 2.5rem
+  position: relative
+  > .appearance-switch
+    font-size: 1.8rem
+    position: absolute
+    display: block
+    top: -.5rem
+    right: $PADDING_BASE
+  > .tagging-list-view
+    list-style: none
+    position: relative
+    transition: margin $DURATION_GUI
+    > .example
+      transition: margin $DURATION_GUI, padding $DURATION_GUI, width $DURATION_GUI
+      width: 80%
+      // > .upper
+      //   > .title
+      //     position: relative
+      //     margin-bottom: .6rem
+      //   > .tag-list-view
+      //     margin: 0 -.2rem .8rem
+      //     > .tag-view
+      //       display: inline-block
+      // > .description
+      //   font-size: 1.2rem
+      //   line-height: 1.4
+      // > .links
+      //   position: absolute
+      //   right: 1.2rem
+      //   > ul
+      //     text-align: right
+      //     > li
+      //       display: inline-block
+      //       + li
+      //         margin-left: 1rem
+  &[data-appearance-type="list"]
+    > .tagging-list-view
+      > .example
+        > .example-content
+          display: none
+          > .service
+
+  &[data-appearance-type="panel"]
+    > .tagging-list-view
+      flex-wrap: wrap
+      flex-direction: row
+      margin-right: -2rem
+      > .example
+        > .example-content
+          display: block

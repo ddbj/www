@@ -4,37 +4,38 @@ title: DDBJ Center News Archive
 lang: ja
 ---
 <div id="NavigationAndMainView">
-  <div class="inner">
-    <div class="subview">
+    <div class="inner">
+        <div class="subview">
 
-      <nav class="facet-search" data-facet-search-year="true">
-        <div class="tab-menu-view">
-          <ul class="tabmenucontainer">
-            <li class="-current" data-tab="tag"><a>タグ</a></li>
-            <li data-tab="year"><a>年別</a></li>
-          </ul>
-          <ul class="tags tabbedcontent -current" data-tab="tag"></ul>
-          <ul class="tags tabbedcontent" data-tab="year"></ul>
+            <nav class="facet-search" data-facet-search-year="true">
+                <div class="tab-menu-view">
+                    <ul class="tabmenucontainer">
+                        <li class="-current" data-tab="tag"><a>タグ</a></li>
+                        <li data-tab="year"><a>年別</a></li>
+                    </ul>
+                    <ul class="tags tabbedcontent -current" data-tab="tag"></ul>
+                    <ul class="tags tabbedcontent" data-tab="year"></ul>
+                </div>
+            </nav>
+
         </div>
-      </nav>
 
+        <main class="mainview">
+            <ul class="tagging-list-view">
+                {% assign news_list = site.news | where: "lang", page.lang | where: "layout", "simple" | sort: "date" |
+                reverse %} {% for news in news_list %}
+                <li class="tagging-item-view taggingitem"
+                    data-tags="{{ news.date | date: '%Y' }},{{ news.tags | join: ',' }},{{ news.db | join: ',' }}"
+                    data-year="{{ news.date | date: '%Y' }}">
+                    <div class="upper">
+                        <h2 class="title">
+                            <a href="{{ news.url }}">{{ news.title }}</a>
+                        </h2>
+                        {% include tags.html lang=page.lang date=news.date tags=news.tags dbs=news.db %}
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </main>
     </div>
-
-    <main class="mainview">
-      <ul class="tagging-list-view">
-        {% assign news_list = site.news | where: "lang", page.lang | where: "layout", "simple" | sort: "date" | reverse %}
-        {% for news in news_list %}
-          <li class="tagging-item-view taggingitem" data-tags="{{ news.date | date: '%Y' }},{{ news.tags | join: ',' }},{{ news.db | join: ',' }}" data-year="{{ news.date | date: '%Y' }}">
-            <div class="upper">
-              <h2 class="title">
-                <a href="{{ news.url }}">{{ news.title }}</a>
-              </h2>
-              {% include tags.html lang=page.lang date=news.date tags=news.tags dbs=news.db %}
-            </div>
-          </li>
-        {% endfor %}
-      
-      </ul>
-    </main>
-  </div>
 </div>

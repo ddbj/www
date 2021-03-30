@@ -33,6 +33,14 @@
 		"oAP": "/.jekyll-metadata",
 		"oF": 0
 		},
+	"/.vscode/extensions.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/.vscode/extensions-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/404.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -94141,6 +94149,26 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/_sass/main.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/_sass/main-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/_sass/main.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/_sass/main.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/_sass/main.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -94518,6 +94546,19 @@
 		"oS": 0,
 		"sct": 1
 		},
+	"/_sass/object/project/_ScView.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_sass/object/project/_ScView.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/_sass/object/project/_ServicesView.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -94659,25 +94700,6 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_sc/_sidebar.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"/_sc/activation_method/index.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_sc/activation_method/index.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -94837,6 +94859,90 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"/_sc/example_of_utilization/2020-09-02.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_sc/example_of_utilization/2020-09-02.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_sc/example_of_utilization/2020-09-08.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_sc/example_of_utilization/2020-09-08.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_sc/example_of_utilization/2020-09-30.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_sc/example_of_utilization/2020-09-30.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_sc/example_of_utilization/2020-09-31.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_sc/example_of_utilization/2020-09-31.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_sc/example_of_utilization/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_sc/example_of_utilization/index.html",
+		"oF": 0
 		},
 	"/_sc/index-e.md": {
 		"cB": 0,
@@ -108123,12 +108229,12 @@
 		"q": 100,
 		"rq": 75
 		},
-	"/assets/images/sc/ommentary.jpeg": {
+	"/assets/images/sc/commentary.jpeg": {
 		"ft": 16384,
 		"iS": 29082,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/assets/images/sc/ommentary.jpg",
+		"oAP": "/assets/images/sc/commentary.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -110531,14 +110637,6 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"/feed.xml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/feed.xml",
-		"oF": 0
 		},
 	"/Gemfile": {
 		"cB": 0,
