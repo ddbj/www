@@ -1,12 +1,12 @@
 ---
 layout: indexed_content
-title: ハードウェア
+title: 遺伝研スーパーコンピュータシステム
 category: sc
 lang: ja
 current_tab: system
 ---
 
-# ハードウェア構成
+## ハードウェア構成
 
  
 1.システム全体

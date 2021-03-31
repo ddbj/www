@@ -1,12 +1,12 @@
 ---
 layout: indexed_content
-title: Windows Puttyによるssh公開鍵の登録・追加
+title: 遺伝研スーパーコンピュータシステム
 category: sc
 lang: ja
 current_tab: application
 ---
 
-# Windows Puttyによるssh公開鍵の登録・追加
+## Windows Puttyによるssh公開鍵の登録・追加
 
 
 ### (1) ユーザ端末におけるペア鍵の生成

@@ -1,12 +1,12 @@
 ---
 layout: indexed_content
-title: Windows TeraTermによるssh公開鍵の登録・追加
+title: 遺伝研スーパーコンピュータシステム
 category: sc
 lang: ja
 current_tab: application
 ---
 
-# Windows TeraTermによるssh公開鍵の登録・追加
+## Windows TeraTermによるssh公開鍵の登録・追加
 
 
  

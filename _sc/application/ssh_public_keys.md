@@ -1,16 +1,16 @@
 ---
 layout: indexed_content
-title: ssh 公開鍵の登録
+title: 遺伝研スーパーコンピュータシステム
 category: sc
 lang: ja
 current_tab: application
 ---
 
-# ssh公開鍵の登録・追加・削除手順
+## ssh公開鍵の登録・追加・削除手順
 
 セキュリテイ強化のため、遺伝研スパコンの利用者は、ssh公開鍵の登録をお願い致します。
 
-## ssh公開鍵の登録・追加手順
+### ssh公開鍵の登録・追加手順
 
 以下は、Linux, Mac, Windows WSL2環境の場合のssh公開鍵の登録手順です。他に[Windows TeraTermの場合](/sc/application/ssh_public_keys_teraterm.html)、[Windows Puttyの場合](/sc/application/ssh_public_keys_putty.html)を別のページに記載してありますので必要に応じて参照してください。
 
@@ -106,6 +106,6 @@ This node is in use for login service only. Please use 'qlogin'.
 秘密鍵の格納場所が`~/.ssh/id_rsa`以外の場合はsshコマンドのパラメタ、-i 秘密鍵PATHを用いることも可能です。
 
 
-## ssh公開鍵の削除手順
+### ssh公開鍵の削除手順
 
 ssh公開鍵の削除を行うには以下のようにしてください。
