@@ -64,7 +64,7 @@ $
 
 公開鍵ファイルid_rsa.pubを遺伝研スパコンに登録するには以下の2つの方法があります。
 
-<table width="1000px" style="table-layout: fixed;">
+<table style="table-layout: fixed;">
 <tr valign="top">
 <td>
 <p><a href="https://sc2.ddbj.nig.ac.jp/index.php/ja-form-ssh-application-2" target="_blank" rel="noopener">公開鍵ファイルのアップロードフォーム</a></p>
