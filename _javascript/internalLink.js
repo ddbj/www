@@ -27,7 +27,7 @@ export default function internalLink() {
     if (tocContainer) {
       const postContent = document.querySelector('.md-content');
       // const headings = postContent.querySelectorAll('h2, h3, h4');
-      const headings = postContent.querySelectorAll('h2');
+      const headings = postContent.querySelectorAll('h2, h3');
       
       for (let i = 0; i < headings.length; i++) {
         const currentHeading = headings[i];
@@ -57,6 +57,7 @@ export default function internalLink() {
         tocContainer.innerHTML = `
         <ul>
           ${[...headings].map(heading => {
+            if (heading.tagName === 'H3') return '';
             const date = $(heading).next('.news_date');
             const newHeading = $(heading).clone();
             newHeading.children().remove();
