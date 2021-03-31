@@ -53,7 +53,7 @@ layout: default
               | where_exp: "news_list", "news_list.retire_time > site.time" 
               | sort: "date" 
               | reverse %}
-              {% for news in news_list limit:5 %}
+            {% for news in news_list limit:5 %}
             <li class="item">
               <article class="news{% if news.priority %} priority{% endif %}">
                 <a href="{{ site.baseurl }}{{ news.url }}">
