@@ -1,14 +1,11 @@
 <ul class="tag-list-view">
-  {% if include.date %}
-  <li class="date"><time datetime="{{ include.date }}">{{ include.date | date: "%Y/%m/%d" }}</time></li>
-  {% endif %}
-  {% for tag in include.tags %}
-  <li class="tag-view" data-tag="{{ tag }}">{{ tag }}</li>
-  {% endfor %}
-  {% for db in include.dbs %}
-  <li class="tag-view" data-tag="{{ db }}" title="{% if site.data.label_dictionary[db] %}{{ site.data.label_dictionary[db].full[include.lang] }}{% endif %}">{% if site.data.label_dictionary[db] %}{{ site.data.label_dictionary[db].short[include.lang] }}{% else %}[{{ db }}]{% endif %}</li>
-  {% endfor %}
-  {% if include.provider %}
-  <li class="tag-view -reverse" data-tag="{{ include.provider }}">{{ include.provider }}</li>
-  {% endif %}
+    {% if include.date %}
+    <li class="date"><time datetime="{{ include.date }}">{{ include.date | date: "%Y/%m/%d" }}</time></li>
+    {% endif %} {% for tag in include.tags %}
+    <li class="tag-view" data-tag="{{ tag }}">{{ tag }}</li>
+    {% endfor %} {% for db in include.dbs %}
+    <li class="tag-view" data-tag="{{ db }}" title="{% if site.data.label_dictionary[db] %}{{ site.data.label_dictionary[db].full[include.lang] }}{% endif %}">{% if site.data.label_dictionary[db] %}{{ site.data.label_dictionary[db].short[include.lang] }}{% else %}[{{ db }}]{% endif %}</li>
+    {% endfor %} {% if include.provider %}
+    <li class="tag-view -reverse" data-tag="{{ include.provider }}">{{ include.provider }}</li>
+    {% endif %}
 </ul>

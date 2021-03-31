@@ -1,4 +1,24 @@
-$MARGIN_PANEL: 2rem
+
+.top-news-view
+  .inner
+    ul
+      li
+        a
+          &:hover
+            [data-category="sc"] &
+              color: $COLOR_KEY
+h1
+a
+  &:hover
+    [data-category="sc"] &
+      color: $COLOR_SC_KEY_LIGHT
+.internal-link
+  ul
+    li
+      a
+        &:hover
+          [data-category="sc"] &
+            color: $COLOR_SC_KEY_LIGHT
 
 .facet-search.sc-facet-search
   > .title
@@ -70,6 +90,7 @@ $MARGIN_PANEL: 2rem
     list-style: none
     position: relative
     transition: margin $DURATION_GUI
+
     > .taggingitem
       transition: margin $DURATION_GUI, padding $DURATION_GUI, width $DURATION_GUI
       width: 80%
@@ -77,27 +98,13 @@ $MARGIN_PANEL: 2rem
         > .example_title
           > .example_view
             background-color: $COLOR_SC_KEY_PALE
+          > a
+            &:hover
+              color: $COLOR_SC_KEY_PALE
+        > .tag-list-view
+        > .example-content
+          padding-top: 6px
 
-      // > .upper
-      //   > .title
-      //     position: relative
-      //     margin-bottom: .6rem
-      //   > .tag-list-view
-      //     margin: 0 -.2rem .8rem
-      //     > .tag-view
-      //       display: inline-block
-      // > .description
-      //   font-size: 1.2rem
-      //   line-height: 1.4
-      // > .links
-      //   position: absolute
-      //   right: 1.2rem
-      //   > ul
-      //     text-align: right
-      //     > li
-      //       display: inline-block
-      //       + li
-      //         margin-left: 1rem
   &[data-appearance-type="list"]
     > .tagging-list-view
       > .tagging-item-view
@@ -122,3 +129,5 @@ $MARGIN_PANEL: 2rem
               background-color: $COLOR_SC_KEY_PALE
           > .example-content
             display: block
+.page-title
+  font-size: 20px
