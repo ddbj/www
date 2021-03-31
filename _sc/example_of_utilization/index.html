@@ -1,32 +1,86 @@
 ---
-layout: indexed_content
+
 title: 活用方法
 category: sc
 lang: ja
 current_tab: example_of_utilization
 
 ---
-<main class="mainview">
-    <h1>活用方法紹介</h1>
-    <div id="ScView" data-appearance-type="panel">
-        <nav class="appearance-switch">
-            <div class="button -current" data-appearance-value="panel" title="Panel view"></div>
-            <div class="button" data-appearance-value="list" title="List view"></div>
-        </nav>
-        <ul class="tagging-list-view">
-            {% assign example_list = site.sc | where:"type", "example_of_utilization" %}
-            {% for example in example_list %}
-            <li class="example">
-                <h2 class="example-title"><a href="{{ example.url }}">{{ example.title }}</a></h2>
-                <div class="example-content">{{ example.content }}</div>
-            </li>
-            {% endfor %}
-        </ul>
 
+<header id="PageHeader">
+    <div class="inner">
+        <div class="page-title">
+            <h1 class="title">{{ page.title }}</h1>
+            {% include breadcrumb.html lang=page.lang %}
+        </div>
+        {% include tab-menu.html %}
     </div>
+</header>
+
+<div id="NavigationAndMainView">
+    <div class="inner">
+        <nav class="subview">
+            <nav class="facet-search sc-facet-search">
+                <h2 class="title">タグ</h2>
+                <ul class="tags" data-tab="tag"></ul>
+            </nav>
+        </nav>
+
+        <main class="mainview">
+            <h1>活用方法紹介</h1>
+            <div id="ScView" data-appearance-type="panel">
+                <nav class="appearance-switch">
+                    <div class="button -current" data-appearance-value="panel" title="Panel view"></div>
+                    <div class="button" data-appearance-value="list" title="List view"></div>
+                </nav>
+                <ul class="tagging-list-view">
+                    {% assign example_list = site.sc | where:"type", "example_of_utilization" %}
+                    {% for example in example_list %}
+                    <li class="tagging-item-view taggingitem"
+                        data-tags="{{ example.tags | join: ',' }},{{ example.db | join: ',' }}">
+                        <div class="upper">
+                            <h2 class="example-title"><a href="{{ example.url }}">{{ example.title }}</a></h2>
+                            {% include tags.html lang=page.lang date=example.date tags=example.tags dbs=example.db %}
+                            <div class="example-content">{{ example.content }}</div>
+
+                        </div>
+                    </li>
+                    {% endfor %}
+
+                </ul>
+            </div>
+        </main>
+    </div>
+</div>
+<!-- 
 
 
-
-
-
-</main>
+<div id="NavigationAndMainView">
+    <div class="inner">
+        <nav class="subview">
+            <nav class="facet-search">
+                <h2 class="title">タグ</h2>
+                <ul class="tags" data-tab="tag"></ul>
+            </nav>
+        </nav>
+        <main class="mainview">
+            <h1>活用方法紹介</h1>
+            <div id="ScView" data-appearance-type="panel">
+                <nav class="appearance-switch">
+                    <div class="button -current" data-appearance-value="panel" title="Panel view"></div>
+                    <div class="button" data-appearance-value="list" title="List view"></div>
+                </nav>
+                <ul class="tagging-list-view">
+                    {% assign example_list = site.sc | where:"type", "example_of_utilization" %}
+                    {% for example in example_list %}
+                    <li class="example">
+                        <h2 class="example-title"><a href="{{ example.url }}">{{ example.title }}</a></h2>
+                        <div class="example-content">{{ example.content }}</div>
+                    </li>
+                    {% include tags.html lang=page.lang date=example.date tags=example.tags dbs=example.db %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </main>
+    </div>
+</div> -->
