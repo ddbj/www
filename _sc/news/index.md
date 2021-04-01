@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: お知らせ・メンテナンス情報
+title: お知らせ
 category: sc
 lang: ja
 current_tab: news

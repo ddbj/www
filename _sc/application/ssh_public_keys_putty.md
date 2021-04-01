@@ -9,7 +9,7 @@ current_tab: application
 # Windows Puttyによるssh公開鍵の登録・追加
 
 
-### (1) ユーザ端末におけるペア鍵の生成
+## (1) ユーザ端末におけるペア鍵の生成
 
 　Putty で鍵を生成するには、Putty 本体に付属しているputtyegen.exeを起動します。
 

@@ -18,19 +18,25 @@
       &:hover
         > a
           background-color: $COLOR_HOVER
+          [data-category="sc"] &
+            background-color: $COLOR_SC_HOVER
         > ul
           opacity: 1
           pointer-events: auto
           transform: translateY(0)
       &.-current
         > a
-          margin-bottom: 0
+          margin-bottom: -.1rem
           color: $COLOR_BLACK
           line-height: 3rem
           background-color: white
           border-top: solid .1rem $COLOR_BLACK
+          border-bottom: solid .1rem white
           border-left: solid .1rem $COLOR_BLACK
           border-right: solid .1rem $COLOR_BLACK
+          [data-category="sc"] &
+            color: $COLOR_BLACK
+            background-color: white
       &.-haschild
         > a
           &::after
@@ -38,7 +44,7 @@
             display: inline-block
             border-right: .4rem solid transparent
             border-top: .5rem solid $COLOR_BLACK
-            border-left: .4rem solid transparent 
+            border-left: .4rem solid transparent
             margin: 0 0 .2rem .5rem
             transition: border $DURATION_GUI
         &:hover
@@ -67,10 +73,12 @@
             > a
               background-color: $COLOR_HOVER
               color: $COLOR_KEY
+              [data-category="sc"] &
+                background-color: $COLOR_SC_HOVER
+                color: $COLOR_SC_KEY
           + li
             border-top: solid .1rem $COLOR_LIGHT_GRAY
   > .tabbedcontent
     display: none
     &.-current
       display: block
-

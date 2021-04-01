@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: ssh 公開鍵の登録
+title: ssh公開鍵の登録・追加・削除手順
 category: sc
 lang: ja
 current_tab: application
@@ -15,7 +15,7 @@ current_tab: application
 以下は、Linux, Mac, Windows WSL2環境の場合のssh公開鍵の登録手順です。他に[Windows TeraTermの場合](/sc/application/ssh_public_keys_teraterm.html)、[Windows Puttyの場合](/sc/application/ssh_public_keys_putty.html)を別のページに記載してありますので必要に応じて参照してください。
 
 
-### (1) ユーザーの計算機上における公開鍵と秘密鍵の生成
+## (1) ユーザーの計算機上における公開鍵と秘密鍵の生成
 
 
 ユーザーの計算機上にOpenSSHがインストールされていることを確認して下さい。インストールされていない場合、先にインストールをお願いします。
@@ -60,11 +60,11 @@ $
 
 
 
-### (2) 遺伝研スパコンへの公開鍵の設置
+## (2) 遺伝研スパコンへの公開鍵の設置
 
 公開鍵ファイルid_rsa.pubを遺伝研スパコンに登録するには以下の2つの方法があります。
 
-<table width="1000px" style="table-layout: fixed;">
+<table style="table-layout: fixed;">
 <tr valign="top">
 <td>
 <p><a href="https://sc2.ddbj.nig.ac.jp/index.php/ja-form-ssh-application-2" target="_blank" rel="noopener">公開鍵ファイルのアップロードフォーム</a></p>

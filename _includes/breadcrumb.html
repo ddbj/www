@@ -1,7 +1,7 @@
 {% if include.lang == 'ja' %}
-  {% assign index_html = 'index.html' %}
+{% assign index_html = 'index.html' %}
 {% else %}
-  {% assign index_html = 'index-e.html' %}
+{% assign index_html = 'index-e.html' %}
 {% endif %}
 <nav class="breadcrumb-view">
   <ul>
@@ -11,12 +11,13 @@
     {% if page.category and page.category != 'insdc_meeting' and page.category != 'training' %}
     <li>
       {% if site.data.label_dictionary.category[page.category] %}
-        {% assign category_label = site.data.label_dictionary.category[page.category][page.lang] %}
+      {% assign category_label = site.data.label_dictionary.category[page.category][page.lang] %}
       {% else %}
-        {% assign category_label = page.category %}
+      {% assign category_label = page.category %}
       {% endif %}
       {% if page.category == 'faq' or page.category == 'news' %}
-      <a href="{{ site.url }}{{ site.baseurl }}/{{ page.category }}/{{page.lang}}/{{ index_html }}">{{ category_label }}</a>
+      <a href="{{ site.url }}{{ site.baseurl }}/{{ page.category }}/{{page.lang}}/{{ index_html }}">{{ category_label
+        }}</a>
       {% else %}
       <a href="{{ site.url }}{{ site.baseurl }}/{{ page.category }}/{{ index_html }}">{{ category_label }}</a>
       {% endif %}

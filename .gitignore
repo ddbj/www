@@ -16,5 +16,5 @@ _site/
 .jekyll-metadata
 config.codekit3
 
-feed.xml
+# feed.xml
 sitemap.xml

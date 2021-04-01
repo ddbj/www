@@ -33,6 +33,14 @@
 		"oAP": "/.jekyll-metadata",
 		"oF": 0
 		},
+	"/.vscode/extensions.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/.vscode/extensions-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/404.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -12427,6 +12435,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/_layouts/post.html",
+		"oF": 0
+		},
+	"/_layouts/rss.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_layouts/rss.xml",
 		"oF": 0
 		},
 	"/_layouts/simple.html": {
@@ -50100,6 +50116,63 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_news/en/2021-03-19-e.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_news/en/2021-04-01-e.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/en/2021-04-01-e.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_news/en/2021-04-01_1-e.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/en/2021-04-01_1-e.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_news/en/2021-04-01_2-e.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/en/2021-04-01_2-e.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -94063,6 +94136,63 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/_news/ja/2021-04-01.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/ja/2021-04-01.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_news/ja/2021-04-01_1.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/ja/2021-04-01_1.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_news/ja/2021-04-01_2.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/ja/2021-04-01_2.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"/_news/ja/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -94077,6 +94207,118 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/_plugins/caption.rb",
+		"oF": 0
+		},
+	"/_rss/news-bioproject-en.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-bioproject-en.xml",
+		"oF": 0
+		},
+	"/_rss/news-bioproject-ja.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-bioproject-ja.xml",
+		"oF": 0
+		},
+	"/_rss/news-biosample-en.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-biosample-en.xml",
+		"oF": 0
+		},
+	"/_rss/news-biosample-ja.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-biosample-ja.xml",
+		"oF": 0
+		},
+	"/_rss/news-center-en.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-center-en.xml",
+		"oF": 0
+		},
+	"/_rss/news-center-ja.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-center-ja.xml",
+		"oF": 0
+		},
+	"/_rss/news-ddbj-en.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-ddbj-en.xml",
+		"oF": 0
+		},
+	"/_rss/news-ddbj-ja.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-ddbj-ja.xml",
+		"oF": 0
+		},
+	"/_rss/news-dra-en.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-dra-en.xml",
+		"oF": 0
+		},
+	"/_rss/news-dra-ja.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-dra-ja.xml",
+		"oF": 0
+		},
+	"/_rss/news-gea-en.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-gea-en.xml",
+		"oF": 0
+		},
+	"/_rss/news-gea-ja.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-gea-ja.xml",
+		"oF": 0
+		},
+	"/_rss/news-jga-en.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-jga-en.xml",
+		"oF": 0
+		},
+	"/_rss/news-jga-ja.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-jga-ja.xml",
 		"oF": 0
 		},
 	"/_sass/common_framework.sass": {
@@ -94103,7 +94345,27 @@
 		"oAP": "/_sass/foundation/_base.css",
 		"oF": 0,
 		"oS": 0,
-		"sct": 1
+		"sct": 0
+		},
+	"/_sass/foundation/_mixin.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_sass/foundation/_mixin-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/_sass/foundation/_mixin.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_sass/foundation/_mixin.min-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/_sass/foundation/_mixin.sass": {
 		"aP": 0,
@@ -94116,7 +94378,27 @@
 		"oAP": "/_sass/foundation/_mixin.css",
 		"oF": 0,
 		"oS": 0,
-		"sct": 1
+		"sct": 0
+		},
+	"/_sass/foundation/_variable.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_sass/foundation/_variable-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/_sass/foundation/_variable.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_sass/foundation/_variable.min-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/_sass/foundation/_variable.sass": {
 		"aP": 0,
@@ -94129,7 +94411,7 @@
 		"oAP": "/_sass/foundation/_variable.css",
 		"oF": 0,
 		"oS": 0,
-		"sct": 1
+		"sct": 0
 		},
 	"/_sass/foundation/reset.css": {
 		"aP": 1,
@@ -94141,18 +94423,38 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/_sass/main.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/_sass/main-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/_sass/main.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/_sass/main.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/_sass/main.sass": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
 		"ft": 2,
-		"ma": 1,
+		"ma": 0,
 		"oA": 0,
-		"oAP": "/assets/css/main.css",
-		"oF": 2,
+		"oAP": "/_sass/main.css",
+		"oF": 0,
 		"oS": 0,
-		"sct": 1
+		"sct": 0
 		},
 	"/_sass/object/component/_appearance-switch.sass": {
 		"aP": 0,
@@ -94165,7 +94467,7 @@
 		"oAP": "/_sass/object/component/_appearance-switch.css",
 		"oF": 0,
 		"oS": 0,
-		"sct": 1
+		"sct": 0
 		},
 	"/_sass/object/component/_arrowed-link.sass": {
 		"aP": 0,
@@ -94295,7 +94597,7 @@
 		"oAP": "/_sass/object/component/_page-title.css",
 		"oF": 0,
 		"oS": 0,
-		"sct": 1
+		"sct": 0
 		},
 	"/_sass/object/component/_panel-view-container.sass": {
 		"aP": 0,
@@ -94386,7 +94688,7 @@
 		"oAP": "/_sass/object/component/_tag-view.css",
 		"oF": 0,
 		"oS": 0,
-		"sct": 1
+		"sct": 0
 		},
 	"/_sass/object/component/_tagging-item-view.sass": {
 		"aP": 0,
@@ -94490,7 +94792,7 @@
 		"oAP": "/_sass/object/project/_NavigationAndMainView.css",
 		"oF": 0,
 		"oS": 0,
-		"sct": 1
+		"sct": 0
 		},
 	"/_sass/object/project/_PageHeader.sass": {
 		"aP": 0,
@@ -94517,6 +94819,19 @@
 		"oF": 0,
 		"oS": 0,
 		"sct": 1
+		},
+	"/_sass/object/project/_ScView.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_sass/object/project/_ScView.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
 		},
 	"/_sass/object/project/_ServicesView.sass": {
 		"aP": 0,
@@ -94659,25 +94974,6 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_sc/_sidebar.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"/_sc/activation_method/index.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/_sc/activation_method/index.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -94830,6 +95126,90 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_sc/charged-services.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_sc/example_of_utilization/2020-09-01.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_sc/example_of_utilization/2020-09-01.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_sc/example_of_utilization/2020-09-02.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_sc/example_of_utilization/2020-09-02.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_sc/example_of_utilization/2020-09-30.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_sc/example_of_utilization/2020-09-30.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_sc/example_of_utilization/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_sc/example_of_utilization/index.html",
+		"oF": 0
+		},
+	"/_sc/example_of_utilization/readme.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_sc/example_of_utilization/readme.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,

@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: アカウント発行基準
+title: ログインユーザーアカウント発行基準
 category: sc
 lang: ja
 current_tab: application

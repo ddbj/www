@@ -1,0 +1,51 @@
+---
+title: 活用方法
+category: sc
+lang: ja
+current_tab: example_of_utilization
+---
+
+<header id="PageHeader">
+    <div class="inner">
+        <div class="page-title">
+            <h1 class="title">{{ page.title }}</h1>
+            {% include breadcrumb.html lang=page.lang %}
+        </div>
+        {% include tab-menu.html %}
+    </div>
+</header>
+
+<div id="NavigationAndMainView">
+    <div class="inner">
+        <nav class="subview">
+            <nav class="facet-search sc-facet-search">
+                <h2 class="title">タグ</h2>
+                <ul class="tags" data-tab="tag"></ul>
+            </nav>
+        </nav>
+
+        <main class="mainview">
+            <h2 class="mainviewheading">活用方法</h2>
+            <div id="ScView" data-appearance-type="panel">
+                <nav class="appearance-switch">
+                    <div class="button -current" data-appearance-value="panel" title="Panel view"></div>
+                    <div class="button" data-appearance-value="list" title="List view"></div>
+                </nav>
+                <ul class="tagging-list-view">
+                    {% assign example_list = site.sc | where:"type", "example_of_utilization" %}
+                    {% for example in example_list %}
+                    <li class="tagging-item-view taggingitem"
+                        data-tags="{{ example.tags | join: ',' }},{{ example.db | join: ',' }}">
+                        <h2 class="title"><a href="{{ example.url }}">{{ example.title }}</a></h2>
+                        {% include tags.html lang=page.lang date=example.date tags=example.tags dbs=example.db
+                        %}
+                        <div class="md-content">{{ example.excerpt }}</div>
+
+                    </li>
+                    {% endfor %}
+
+                </ul>
+            </div>
+        </main>
+    </div>
+</div>

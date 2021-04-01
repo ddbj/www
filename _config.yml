@@ -147,6 +147,11 @@ collections:
     title:
       ja: 統計情報
       en: Statistics
+  rss:
+    output: true
+    title:
+      ja: RSS
+      en: RSS
 
 defaults:
   - scope:

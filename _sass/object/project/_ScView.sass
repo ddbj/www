@@ -1,0 +1,23 @@
+
+#ScView
+  position: relative
+  > .appearance-switch
+    font-size: 1.8rem
+    position: absolute
+    display: block
+    top: -3.5rem
+    right: $PADDING_BASE
+  > .tagging-list-view
+    margin-bottom: .8rem
+    > .tagging-item-view
+      > .title
+        font-size: 1.8rem
+      > .tag-list-view
+        margin-bottom: .8rem
+  &[data-appearance-type="list"]
+    > .tagging-list-view
+      > .tagging-item-view
+        > .tag-list-view
+          margin-bottom: 0
+    .md-content
+      display: none
