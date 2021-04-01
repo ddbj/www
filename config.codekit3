@@ -108123,12 +108123,12 @@
 		"q": 100,
 		"rq": 75
 		},
-	"/assets/images/sc/ommentary.jpeg": {
+	"/assets/images/sc/commentary.jpeg": {
 		"ft": 16384,
 		"iS": 29082,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/assets/images/sc/ommentary.jpg",
+		"oAP": "/assets/images/sc/commentary.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -110531,14 +110531,6 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"/feed.xml": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/feed.xml",
-		"oF": 0
 		},
 	"/Gemfile": {
 		"cB": 0,
