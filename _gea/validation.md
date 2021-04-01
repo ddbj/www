@@ -5,7 +5,6 @@ title: Validation Rules
 category: gea
 current_tab: submission overview
 lang: ja
-addhead: <script type='text/javascript' src='/assets/js/jquery.trace.js'></script>
 ---
 
 This page contains a compilation of the GEA validation errors and

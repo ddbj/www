@@ -12437,6 +12437,14 @@
 		"oAP": "/_layouts/post.html",
 		"oF": 0
 		},
+	"/_layouts/rss.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_layouts/rss.xml",
+		"oF": 0
+		},
 	"/_layouts/simple.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -50108,6 +50116,63 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/_news/en/2021-03-19-e.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_news/en/2021-04-01-e.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/en/2021-04-01-e.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_news/en/2021-04-01_1-e.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/en/2021-04-01_1-e.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_news/en/2021-04-01_2-e.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/en/2021-04-01_2-e.html",
 		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
@@ -94071,6 +94136,63 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/_news/ja/2021-04-01.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/ja/2021-04-01.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_news/ja/2021-04-01_1.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/ja/2021-04-01_1.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_news/ja/2021-04-01_2.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/ja/2021-04-01_2.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"/_news/ja/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -94085,6 +94207,118 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/_plugins/caption.rb",
+		"oF": 0
+		},
+	"/_rss/news-bioproject-en.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-bioproject-en.xml",
+		"oF": 0
+		},
+	"/_rss/news-bioproject-ja.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-bioproject-ja.xml",
+		"oF": 0
+		},
+	"/_rss/news-biosample-en.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-biosample-en.xml",
+		"oF": 0
+		},
+	"/_rss/news-biosample-ja.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-biosample-ja.xml",
+		"oF": 0
+		},
+	"/_rss/news-center-en.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-center-en.xml",
+		"oF": 0
+		},
+	"/_rss/news-center-ja.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-center-ja.xml",
+		"oF": 0
+		},
+	"/_rss/news-ddbj-en.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-ddbj-en.xml",
+		"oF": 0
+		},
+	"/_rss/news-ddbj-ja.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-ddbj-ja.xml",
+		"oF": 0
+		},
+	"/_rss/news-dra-en.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-dra-en.xml",
+		"oF": 0
+		},
+	"/_rss/news-dra-ja.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-dra-ja.xml",
+		"oF": 0
+		},
+	"/_rss/news-gea-en.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-gea-en.xml",
+		"oF": 0
+		},
+	"/_rss/news-gea-ja.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-gea-ja.xml",
+		"oF": 0
+		},
+	"/_rss/news-jga-en.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-jga-en.xml",
+		"oF": 0
+		},
+	"/_rss/news-jga-ja.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_rss/news-jga-ja.xml",
 		"oF": 0
 		},
 	"/_sass/common_framework.sass": {
@@ -94363,7 +94597,7 @@
 		"oAP": "/_sass/object/component/_page-title.css",
 		"oF": 0,
 		"oS": 0,
-		"sct": 1
+		"sct": 0
 		},
 	"/_sass/object/component/_panel-view-container.sass": {
 		"aP": 0,

@@ -17,8 +17,6 @@ related_pages:
     url: /ddbj/transchecker.html
   - title: MSS 利用申し込み
     url: /ddbj/mss-form.html
-addhead: <script type='text/javascript' src='/assets/js/jquery.trace.js'></script>
-
 ---
 
 ここでは DDBJ に登録される配列データをチェックするためのツールから出力されるエラーメッセージについて概説しています。  

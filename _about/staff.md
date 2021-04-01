@@ -245,13 +245,6 @@ category: about
     </ul>
     <ul class="list">   
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/matsumori.jpg" title="松森　藤高"></p>
-        <div class="explanation">
-            <p class="name">松森 藤高</p>
-            <p class="name">MATSUMORI Fujitaka</p>
-        </div>
-        </li>   
-        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/hmochizu.png" title="望月 秀起"></p>
         <div class="explanation">
             <p class="name">望月 秀起</p>
@@ -265,22 +258,15 @@ category: about
             <p class="name">SAKON Yukie</p>
         </div>
         </li>
-    </ul>  
-    <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/sato.jpg" title="佐藤　誠"></p>
-        <div class="explanation">
-            <p class="name">佐藤 誠</p>
-            <p class="name">SATO Makoto</p>
-        </div>
-        </li>   
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/tsuzuki.jpg" title="鈴木　貴大"></p>
         <div class="explanation">
             <p class="name">鈴木　貴大</p>
             <p class="name">SUZUKI Takahiro</p>
         </div>
-        </li>    
+        </li>
+    </ul>  
+    <ul class="list">      
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/watanabe.jpg" title="渡邊　康司"></p>
         <div class="explanation">
