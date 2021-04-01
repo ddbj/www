@@ -18,15 +18,23 @@
       height: .4em
       background-color: $COLOR_LIGHT_GRAY
       box-shadow: .6em 0 0 $COLOR_LIGHT_GRAY, 0 .6em 0 0 $COLOR_LIGHT_GRAY, .6em .6em 0 $COLOR_LIGHT_GRAY
+
     &[data-appearance-value="list"]:before
       width: 1em
       height: .2em
       background-color: $COLOR_LIGHT_GRAY
       box-shadow: 0 .4em 0 $COLOR_LIGHT_GRAY, 0 .8em 0 $COLOR_LIGHT_GRAY
+
     &:hover, &.-current
       &[data-appearance-value="panel"]:before
         background-color: $COLOR_KEY_MILD
         box-shadow: .6em 0 0 $COLOR_KEY_MILD, 0 .6em 0 0 $COLOR_KEY_MILD, .6em .6em 0 $COLOR_KEY_MILD
+        [data-category="sc"] &
+          background-color: $COLOR_SC_KEY_PALE
+          box-shadow: .6em 0 0 $COLOR_SC_KEY_PALE, 0 .6em 0 0 $COLOR_SC_KEY_PALE, .6em .6em 0 $COLOR_SC_KEY_PALE
       &[data-appearance-value="list"]:before
         background-color: $COLOR_KEY_MILD
         box-shadow: 0 .4em 0 $COLOR_KEY_MILD, 0 .8em 0 $COLOR_KEY_MILD
+        [data-category="sc"] &
+          background-color: $COLOR_SC_KEY_PALE
+          box-shadow: 0 .4em 0 $COLOR_SC_KEY_PALE, 0 .8em 0 $COLOR_SC_KEY_PALE

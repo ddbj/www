@@ -1,12 +1,12 @@
 ---
 layout: indexed_content
-title: 遺伝研スーパーコンピュータシステム
+title: 利用規程
 category: sc
 lang: ja
 current_tab: application
 ---
 
-## 利用規程
+# 利用規程
 
 - [ログインユーザーアカウント発行基準](/sc/application/criteria.html)
 - 情報・システム研究機構 国立遺伝学研究所スーパーコンピュータシステム利用規程 (令和2年5月1日改正）

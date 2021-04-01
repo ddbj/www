@@ -1,12 +1,12 @@
 ---
 layout: indexed_content
-title: 遺伝研スーパーコンピュータシステム
+title: ハードウェア構成
 category: sc
 lang: ja
 current_tab: system
 ---
 
-## ハードウェア構成
+# ハードウェア構成
 
 
   <div id="parent-fieldname-text" class=""><p> </p>

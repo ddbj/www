@@ -1,133 +1,23 @@
 
-.top-news-view
-  .inner
-    ul
-      li
-        a
-          &:hover
-            [data-category="sc"] &
-              color: $COLOR_KEY
-h1
-a
-  &:hover
-    [data-category="sc"] &
-      color: $COLOR_SC_KEY_LIGHT
-.internal-link
-  ul
-    li
-      a
-        &:hover
-          [data-category="sc"] &
-            color: $COLOR_SC_KEY_LIGHT
-
-.facet-search.sc-facet-search
-  > .title
-  > .tags
-    > .tag-view
-      border-radius: 1.2em
-      margin-bottom: .4rem
-      padding-top: .6rem
-      padding-bottom: .6rem
-      padding-right: .5rem
-      line-height: 1
-      font-size: 1.2rem
-      cursor: pointer
-      align-items: center
-      display: flex
-      background-color: $COLOR_SC_KEY_PALE
-      > .count
-        padding: 0 .4rem
-        font-size: .8rem
-        background-color: white
-        vertical-align: middle
-        display: inline-block
-        border-radius: 1.1em
-        text-align: center
-        min-width: 2em
-      &.-reverse
-        background-color: $COLOR_BROWN
-        color: white
-        > .count
-          color: $COLOR_BLACK
-      &.-disable
-        background-color: $COLOR_BEIGE
-        color: $COLOR_GRAY
-        > .count
-          color: $COLOR_GRAY
-      &:hover
-        &.-disable
-          background-color: $COLOR_SC_KEY_VERY_PALE
-          color: $COLOR_SC_KEY_LIGHT
-
 #ScView
-  padding-top: 2.5rem
   position: relative
   > .appearance-switch
     font-size: 1.8rem
     position: absolute
     display: block
-    top: -.5rem
+    top: -3.5rem
     right: $PADDING_BASE
-    > .button
-      &[data-appearance-value="panel"]:before
-        width: .4em
-        height: .4em
-        background-color: $COLOR_LIGHT_GRAY
-        box-shadow: .6em 0 0 $COLOR_LIGHT_GRAY, 0 .6em 0 0 $COLOR_LIGHT_GRAY, .6em .6em 0 $COLOR_LIGHT_GRAY
-      &[data-appearance-value="list"]:before
-        width: 1em
-        height: .2em
-        background-color: $COLOR_LIGHT_GRAY
-        box-shadow: 0 .4em 0 $COLOR_LIGHT_GRAY, 0 .8em 0 $COLOR_LIGHT_GRAY
-      &:hover, &.-current
-        &[data-appearance-value="panel"]:before
-          background-color: $COLOR_SC_KEY_PALE
-          box-shadow: .6em 0 0 $COLOR_SC_KEY_PALE, 0 .6em 0 0 $COLOR_SC_KEY_PALE, .6em .6em 0 $COLOR_SC_KEY_PALE
-        &[data-appearance-value="list"]:before
-          background-color: $COLOR_SC_KEY_PALE
-          box-shadow: 0 .4em 0 $COLOR_SC_KEY_PALE, 0 .8em 0 $COLOR_SC_KEY_PALE
   > .tagging-list-view
-    list-style: none
-    position: relative
-    transition: margin $DURATION_GUI
-
-    > .taggingitem
-      transition: margin $DURATION_GUI, padding $DURATION_GUI, width $DURATION_GUI
-      width: 80%
-      > .upper
-        > .example_title
-          > .example_view
-            background-color: $COLOR_SC_KEY_PALE
-          > a
-            &:hover
-              color: $COLOR_SC_KEY_PALE
-        > .tag-list-view
-        > .example-content
-          padding-top: 6px
-
+    margin-bottom: .8rem
+    > .tagging-item-view
+      > .title
+        font-size: 1.8rem
+      > .tag-list-view
+        margin-bottom: .8rem
   &[data-appearance-type="list"]
     > .tagging-list-view
       > .tagging-item-view
-        > .upper
-          > .tag-list-view
-            > .tag-view
-              background-color: $COLOR_SC_KEY_PALE
-          > .example-content
-            display: none
-
-  &[data-appearance-type="panel"]
-    > .tagging-list-view
-      flex-wrap: wrap
-      flex-direction: row
-      margin-right: -2rem
-      > .tagging-item-view
-        max-width: 900px
-        > .upper
-          width: 100%
-          > .tag-list-view
-            > .tag-view
-              background-color: $COLOR_SC_KEY_PALE
-          > .example-content
-            display: block
-.page-title
-  font-size: 20px
+        > .tag-list-view
+          margin-bottom: 0
+    .md-content
+      display: none
