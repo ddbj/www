@@ -1,13 +1,13 @@
-{% if category == 'faq' %}
-  {% if lang == 'ja' %}
+{% if include.category == 'faq' %}
+  {% if include.lang == 'ja' %}
     {% assign placeholder = 'FAQ カスタム検索' %}
     {% assign cx = '003756275038197888315:pwihejqvisc' %}
   {% else %}
     {% assign placeholder = 'FAQ Custom Search' %}
     {% assign cx = '003756275038197888315:z8dzjduk3p8' %}
   {% endif %}
-{% else category == 'news' %}
-  {% if lang == 'ja' %}
+{% else include.category == 'news' %}
+  {% if include.lang == 'ja' %}
     {% assign placeholder = 'News カスタム検索' %}
     {% assign cx = '003756275038197888315:mgm5-eqb5ic' %}
   {% else %}
