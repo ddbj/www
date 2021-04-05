@@ -378,8 +378,8 @@
           ja: 'RSS で DDBJ からのお知らせを取得'
         },
         uri: {
-          en: 'https://ddbj.nig.ac.jp/announcements-e.html',
-          ja: 'https://ddbj.nig.ac.jp/announcements.html'
+          en: 'https://www.ddbj.nig.ac.jp/data-feed-e.html',
+          ja: 'https://www.ddbj.nig.ac.jp/data-feed.html'
         },
         logo: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs><style>.cls-1{fill:#ea7819;}</style></defs><path id="path3844" class="cls-1" d="M10.5,20.52a9.58,9.58,0,0,1,9.56,9.62H24A13.55,13.55,0,0,0,10.5,16.58v3.94Zm0-7A16.58,16.58,0,0,1,27,30.15H31A20.53,20.53,0,0,0,10.5,9.6ZM16,27.4a2.73,2.73,0,1,1-2.73-2.73A2.72,2.72,0,0,1,16,27.4Z"/></svg>'
       },
