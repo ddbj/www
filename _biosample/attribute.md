@@ -104,4 +104,8 @@ lang: ja
 
 <div class="bs_desc"><p>Sample type を選択し，DEFINITION ボタンで attiribute の定義と書式を見ることができます。DOWNLOAD ボタンで BioSample ワークシートをダウンロードすることができます。<a href="https://docs.google.com/spreadsheets/d/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/edit#gid=631330335">定義表</a>. 
 <a href="https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482">いくつかのパッケージの登録例</a>を公開しています。
-</p></div>
+</p>
+
+
+<p>ヒト由来サンプルについては <a href="/biosample/human-sample.html">Human Sample</a> も参照してください。</p>
+</div>

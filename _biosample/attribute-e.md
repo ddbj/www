@@ -99,4 +99,5 @@ lang: en
   <!-- #main_index --><button id="definition" class="submit_button" type="button" name="definition" value="definition">DEFINITION</button> <button id="download" class="submit_button" type="button" name="download" value="download">DOWNLOAD</button> </form>
 <div class="bs_desc">
   <p>After selecting the relevant Sample type, click the DOWNLOAD button to download the submission template and the DEFINITION button to review the definitions and formats of attribute. <a href="https://docs.google.com/spreadsheets/d/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/edit#gid=631330335">See definition in the table</a>. <a href="https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482">BioSample example submission files are available for several packages.</a></p>
+  <p>About human samples, please see the "<a href="/biosample/human-sample-e.html">Human Sample</a>" page.</p>
 </div>
