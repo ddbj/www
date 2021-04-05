@@ -1,0 +1,27 @@
+{% if include.category == 'faq' %}
+  {% if include.lang == 'ja' %}
+    {% assign placeholder = 'FAQ カスタム検索' %}
+    {% assign cx = '003756275038197888315:pwihejqvisc' %}
+  {% else %}
+    {% assign placeholder = 'FAQ Custom Search' %}
+    {% assign cx = '003756275038197888315:z8dzjduk3p8' %}
+  {% endif %}
+{% else include.category == 'news' %}
+  {% if include.lang == 'ja' %}
+    {% assign placeholder = 'News カスタム検索' %}
+    {% assign cx = '003756275038197888315:mgm5-eqb5ic' %}
+  {% else %}
+    {% assign placeholder = 'News Custom Search' %}
+    {% assign cx = '003756275038197888315:c7qhwsiodww' %}
+  {% endif %}
+{% endif %}
+
+<form action="https://www.google.com/cse" class="search-box">
+  <input type="hidden" name="cx" value="{{ cx }}">
+  <input type="hidden" name="ie" value="UTF-8">
+  <input type="text" name="q" class="search-text" placeholder="{{ placeholder }}">
+  <button></button>
+  <input name="siteurl" type="hidden" value="{{ site.url }}/{{ include.category }}/{{ include.lang }}/">
+  <input name="ref" type="hidden" value="">
+  <input name="ss" type="hidden" value="">
+</form>

@@ -1376,7 +1376,7 @@ A main sample submission step is to describe samples by required,
 optional and user-defined attributes.
 
 [BioSample attribute list](/biosample/attribute-e.html). User-defined
-attributes can be added at rightmost column.
+attributes can be added at rightmost column. Please see the "[Human Sample](/biosample/human-sample-e.html)" page about human samples.
 
 [BioSample submission file examples](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482)
 
@@ -1399,7 +1399,7 @@ BioSample until all errors are resolved.
 For the validation rules and messages, please see [Validation rules
 page](/biosample/validation-e.html).
 
-{% include image.html url="books/hdra-bs04-2.jpg" caption="BioSample validation. In this example, an error for the future date in the collection_date and a warning for inconsistent countries between geo_loc_name and lat_lon of the sample \"genome bacteria strain C\" are displayed." class="w500" %}
+{% include image.html url="books/hdra-bs04-2.jpg" caption="BioSample validation. In this example, an error for the future date in the collection_date and a warning for inconsistent countries between geo_loc_name and lat_lon of the sample [genome bacteria strain C] are displayed." class="w500" %}
 
 Check content in the last "OVERVIEW" and submit samples. In the
 "ATTRIBUTES" area, the submitted sample attribute file can be

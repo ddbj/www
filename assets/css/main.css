@@ -801,20 +801,24 @@ input, textarea, select, button {
       font-size: 14px;
       margin-bottom: 17px; }
 
-.page-title > .title {
-  margin-bottom: .3rem;
-  font-size: 3.2rem;
-  line-height: 1.2;
-  font-weight: lighter; }
-  .page-title > .title.-normal {
-    font-weight: normal; }
-
-.page-title.-small > .title {
-  font-size: 2rem;
-  font-weight: bold; }
-
-.page-title > .tag-list-view {
-  margin-bottom: .6rem; }
+.page-title {
+  position: relative; }
+  .page-title > .title {
+    margin-bottom: .3rem;
+    font-size: 3.2rem;
+    line-height: 1.2;
+    font-weight: lighter; }
+    .page-title > .title.-normal {
+      font-weight: normal; }
+  .page-title.-small > .title {
+    font-size: 2rem;
+    font-weight: bold; }
+  .page-title > .tag-list-view {
+    margin-bottom: .6rem; }
+  .page-title > .search-box {
+    position: absolute;
+    top: 0;
+    right: 0; }
 
 .panel-view-container {
   display: flex;
@@ -929,10 +933,10 @@ input, textarea, select, button {
   background-color: white; }
 
 .search-box > input[type="text"] {
+  border: solid 1px #d2cac4;
   padding: 0 1rem;
   width: 26rem;
-  -webkit-appearance: none;
-  border: none; }
+  -webkit-appearance: none; }
 
 .search-box > button {
   width: 3rem;
