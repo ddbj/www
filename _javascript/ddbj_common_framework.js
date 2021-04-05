@@ -730,7 +730,11 @@
         otherLanguageLink = otherLanguageLink.replace(/\/ja\//, '/en/');
         break;
       default: // en
-        if (href.slice(-2) === '-e') {
+        if (href.slice(-4) === '/en/') {
+          otherLanguageLink = href.slice(0, -3) + 'ja/index.html';
+        } else if (href.slice(-1) === '/') {
+          otherLanguageLink = href + 'index.html';
+        } else if (href.slice(-2) === '-e') {
           otherLanguageLink = href.slice(0, -2) + '.html';
         } else if (href.slice(-7) === '-e.html') {
           otherLanguageLink = href.slice(0, -7) + '.html';
