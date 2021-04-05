@@ -739,6 +739,7 @@
         } else if (href.slice(-7) === '-e.html') {
           otherLanguageLink = href.slice(0, -7) + '.html';
         }
+        console.log(otherLanguageLink)
         otherLanguageLink = otherLanguageLink.replace(/\/en\//, '/ja/');
         break;
     }
