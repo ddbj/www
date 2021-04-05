@@ -5,7 +5,10 @@ layout: default
   <div class="inner">
     <div class="page-title">
       <h1 class="title">{{ page.title }}</h1>
+
+      {% include subdirectory-search-form.html category=page.collection lang=page.lang %}
       {% include breadcrumb.html lang=page.lang %}
+
     </div>
   </div>
 </header>
