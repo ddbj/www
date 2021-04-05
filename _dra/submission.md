@@ -1150,6 +1150,7 @@ Sample type に応じた属性入力用テンプレートファイルをダウ�
 必須・任意・ユーザが定義した一連の属性でサンプルを記述することが、登録作業の中心になります。
 
 [BioSample 属性の説明](/biosample/attribute.html)。独自の属性を追加したい場合は、右端に属性名と値を追加します。
+ヒト由来サンプルについては [Human Sample](/biosample/human-sample.html) も参照してください。
 
 [サンプル属性ファイルの記入例](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482)
 
@@ -1166,7 +1167,7 @@ Biological/Technical replicate は別々の BioSample として登録します�
 
 Validation ルールとメッセージについては [Validation rules ページ](/biosample/validation.html)をご覧ください。
 
-{% include image.html url="books/hdra-bs04-2.jpg" caption="BBioSample の validation。この例では sample \"genome bacteria strain C\" の collection_date に将来の日付が記入されているエラーと geo_loc_name 中の国名と緯度経度が一致していない warning が表示されています。" class="w500" %}
+{% include image.html url="books/hdra-bs04-2.jpg" caption="BioSample の validation。この例では「sample genome bacteria strain C」の collection_date に将来の日付が記入されているエラーと geo_loc_name 中の国名と緯度経度が一致していない warning が表示されています。" class="w500" %}
 
 最後の "OVERVIEW" で内容を確認したうえで投稿します。"ATTRIBUTES" で属性ファイルをダウンロードすることができます。
 
