@@ -816,11 +816,6 @@ input, textarea, select, button {
 .page-title > .tag-list-view {
   margin-bottom: .6rem; }
 
-.page-title .red {
-  color: #FF0000; }
-  .page-title .red * {
-    color: #FF0000; }
-
 .panel-view-container {
   display: flex;
   flex-wrap: wrap;
@@ -1521,7 +1516,7 @@ input, textarea, select, button {
   background-color: #004098 !important; }
 
 ._padding-bottom-5rem {
-  padding-bottom: 5rem; }
+  padding-bottom: 5rema; }
 
 ._width-100 {
   width: 100%; }
@@ -1543,5 +1538,15 @@ input, textarea, select, button {
 
 ._margin-right-20 {
   margin-right: 2rem; }
+
+._red {
+  color: #FF0000; }
+  ._red * {
+    color: #FF0000; }
+
+._italic {
+  font-style: italic; }
+  ._italic * {
+    font-style: italic; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,11 +1,8 @@
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta property="og:title" content="Top" />
     <meta property="og:url" content="/index.html" />
-    <meta
-      property="og:description"
-      content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …"
-    />
+    <meta property="og:description" content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …" />
     <meta property6="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
@@ -19,18 +16,16 @@
     <script type="text/javascript" src="{{ site.url }}{{ site.baseurl }}/assets/js/jquery.json_search.js"></script>
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/colorbox.css" />
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/main.css" />
-    <link rel="alternate" type="application/rss+xml" title="My Site RSS" href="/feed.xml" />
-    {% comment %}
-    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/common_framework.css" >
-    {% endcomment %}
-    {% if page.addhead %}
-    {{ page.addhead }}
-    {% endif %}
+    <link rel="alternate" type="application/rss+xml" title="My Site RSS" href="/feed.xml" /> {% comment %}
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/assets/css/common_framework.css"> {% endcomment %} {% if page.addhead %} {{ page.addhead }} {% endif %}
     <script src="{{ site.url }}{{ site.baseurl }}/assets/js/main.js"></script>
-    {% assign jsonld_path = page.id | replace: "/", "_" %}
-    {% if site.data.jsonld[ jsonld_path ] %}
+    {% assign jsonld_path = page.id | replace: "/", "_" %} {% if site.data.jsonld[ jsonld_path ] %}
     <script type="application/ld+json">
-      {{ site.data.jsonld[ jsonld_path ] }}
+        {
+            {
+                site.data.jsonld[jsonld_path]
+            }
+        }
     </script>
     {% endif %}
-  </head>
+</head>
