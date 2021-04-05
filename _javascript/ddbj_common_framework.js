@@ -731,19 +731,14 @@
         break;
       default: // en
         if (href.slice(-4) === '/en/') {
-          console.log(1)
           otherLanguageLink = href.slice(0, -3) + 'ja/index.html';
         } else if (href.slice(-1) === '/') {
-          console.log(2)
           otherLanguageLink = href + 'index.html';
         } else if (href.slice(-2) === '-e') {
-          console.log(3)
           otherLanguageLink = href.slice(0, -2) + '.html';
         } else if (href.slice(-7) === '-e.html') {
-          console.log(4)
           otherLanguageLink = href.slice(0, -7) + '.html';
         }
-        console.log(otherLanguageLink)
         otherLanguageLink = otherLanguageLink.replace(/\/en\//, '/ja/');
         break;
     }
