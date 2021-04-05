@@ -155,10 +155,10 @@ input, textarea, select, button {
     height: .2em;
     background-color: #d2cac4;
     box-shadow: 0 0.4em 0 #d2cac4, 0 0.8em 0 #d2cac4; }
-  .appearance-switch > .button:hover[data-appearance-value="panel"]:before, .appearance-switch > .button.-current[data-appearance-value="panel"]:before {
+  .appearance-switch > .button[data-appearance-value="panel"]:hover:before, .appearance-switch > .button.-current[data-appearance-value="panel"]:before {
     background-color: #fcac3d;
     box-shadow: 0.6em 0 0 #fcac3d, 0 0.6em 0 0 #fcac3d, 0.6em 0.6em 0 #fcac3d; }
-  .appearance-switch > .button:hover[data-appearance-value="list"]:before, .appearance-switch > .button.-current[data-appearance-value="list"]:before {
+  .appearance-switch > .button[data-appearance-value="list"]:hover:before, .appearance-switch > .button.-current[data-appearance-value="list"]:before {
     background-color: #fcac3d;
     box-shadow: 0 0.4em 0 #fcac3d, 0 0.8em 0 #fcac3d; }
 
@@ -816,6 +816,11 @@ input, textarea, select, button {
 .page-title > .tag-list-view {
   margin-bottom: .6rem; }
 
+.page-title .red {
+  color: #FF0000; }
+  .page-title .red * {
+    color: #FF0000; }
+
 .panel-view-container {
   display: flex;
   flex-wrap: wrap;
@@ -1090,7 +1095,7 @@ input, textarea, select, button {
     color: #736357; }
     .tag-view.-disable > .count {
       color: #736357; }
-  .tag-view:hover.-disable {
+  .tag-view.-disable:hover {
     background-color: rgba(255, 191, 0, 0.15);
     color: #FF7300; }
 
@@ -1523,5 +1528,20 @@ input, textarea, select, button {
 
 .top_space20 {
   margin-top: 2rem; }
+
+._float-left {
+  float: left; }
+
+._float-right {
+  float: right; }
+
+._margin-left-10 {
+  margin-left: 1rem; }
+
+._margin-right-10 {
+  margin-right: 1rem; }
+
+._margin-right-20 {
+  margin-right: 2rem; }
 
 /*# sourceMappingURL=main.css.map */
