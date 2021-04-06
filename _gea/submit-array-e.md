@@ -104,6 +104,9 @@ Create a new microarray experiment submission by selecting "Microarray" and clic
 If there is no reply from submitters after three months of initial contact, submissions will be cancelled.
 </div>
 
+<div class="attention">
+The maximum number of assay per submission is 1,000. If you have more than 1,000 assays, please create multiple submissions with the same BioProject reference.
+</div>
 
 {% include image.html url="books/array-sub1.jpg" caption="Create a new microarray experiment submission" class="w450" %}
 

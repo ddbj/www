@@ -97,6 +97,9 @@ GEA では一つの登録に異なる種類のテクノロジー（マイクロ�
 DDBJ センターから登録者に問い合わせた後三か月以上回答が無い場合は Submission をキャンセルいたします。
 </div>
 
+<div class="attention">
+1 submission で登録できる SDRF Assay 数の上限は 1,000 です。これを超える場合は submission を分けてください。
+</div>
 
 {% include image.html url="books/array-sub1.jpg" caption="Sequencing experiment submissionの新規作成" class="w450" %}
 

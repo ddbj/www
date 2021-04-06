@@ -112,7 +112,7 @@ objects flexibly.
 
 Include paired-end read files in a Run.
 
-{% include image.html url="submission/obj_ex2.jpg" caption="Comparative genome sequencing of three strains (paired-end)" class="w450" %}
+{% include image.html url="books/datamodel1.jpg" caption="Comparative genome sequencing of three strains (paired-end)" class="w450" %}
 
 #### Technical and biological replicates (paired-end)  {#ex_replicates}
 
@@ -915,7 +915,7 @@ For the latest file specifications, please see the [BioNano GitHub site](https:/
 
 If you are using BioNano data as part of your assembly generation pipeline, it would be extremely useful to the scientific community if you could submit a package comprised minimally of the molecule .bnx file and the resulting de novo assembly file EXP_REFINEFINAL1.cmap and COORD files as a DRA Analysis. We will add an analysis type and filetypes for the BioNano Genome Map files. In the meantime, please submit the BioNano files as the analysis type "[De Novo Assembly](#Analysis_Type)" and the filetype "[tsv](#Analysis_File_Type)" (Example, [DRZ011299, DRZ011300](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA005/DRA005897/DRA005897.analysis.xml)). 
 
-# Submission to the DRA  {#dra-submission}
+## Submission to the DRA  {#dra-submission}
 
 <div class="attention">
 Never submit data without the permission of the principal investigator.
@@ -1036,13 +1036,17 @@ corresponding subdirectory is created under the submitter’s home
 directory. [Upload sequence data files to this subdirectory](#upload-sequence-data).
 
 <div class="attention">
-All data in a submission are released at the same time. If you want to
-release data at different time, please divide a submission.
+If there is no reply from submitters after three months of initial
+contact, submissions will be cancelled.
 </div>
 
 <div class="attention">
-If there is no reply from submitters after three months of initial
-contact, submissions will be cancelled.
+All data in a submission are released at the same time. If you want to release data at different time, please divide a submission.
+</div>
+
+<div class="attention">
+Maximum numbers of objects per submission are, BioSample:1,000, DRA:2,000 and GEA:1,000. 
+If you have objects more than these limits, please create multiple submissions with the same BioProject reference.
 </div>
 
 {% include image.html url="books/hdra01.jpg" caption="Create a new submission" class="w450" %}

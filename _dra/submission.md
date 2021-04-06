@@ -60,7 +60,7 @@ lang: ja
 
 ペアリードファイルは同じ Run に含めます。
 
-{% include image.html url="submission/obj_ex2.jpg" caption="三つの菌株の比較ゲノム解析 (ペアエンド)" class="w450" %}
+{% include image.html url="books/datamodel1.jpg" caption="三つの菌株の比較ゲノム解析 (ペアエンド)" class="w450" %}
 
 #### (Technical, Biological) replicate がある場合 (ペアエンド)  {#ex_replicates}
 
@@ -71,7 +71,6 @@ lang: ja
 #### 関連するデータが別々の論文に発表される場合  {#ex_submissions}
 
 {% include image.html url="submission/obj_ex3.jpg" caption="関連するデータが別々の論文に発表される場合" class="w450" %}
-
 
 メタデータ各項目の説明
 
@@ -259,72 +258,72 @@ SRA にデータを登録する際にはこの Center Name が必要です。
 [Instrument](#Instrument)<a name="Instrument"></a><span class="red">*</span>  
 : シークエンサの機種を選択します。
 
-    | Instrument Model                    |
-    |---|
-    | 454 GS                              |
-    | 454 GS 20                           |
-    | 454 GS FLX                          |
-    | 454 GS FLX+                         |
-    | 454 GS FLX Titanium                 |
-    | 454 GS Junior                       |
-    | Illumina Genome Analyzer            |
-    | Illumina Genome Analyzer II         |
-    | Illumina Genome Analyzer IIx        |
-    | Illumina HiSeq 1000                 |
-    | Illumina HiSeq 1500                 |
-    | Illumina HiSeq 2000                 |
-    | Illumina HiSeq 2500                 |
-    | Illumina HiSeq 3000                 |
-    | Illumina HiSeq 4000                 |
-    | Illumina NovaSeq 6000               |
-    | Illumina MiSeq                      |
-    | Illumina MiniSeq                    |
-    | Illumina iSeq 100                   |
-    | Illumina HiScanSQ                   |
-    | HiSeq X Five                        |
-    | HiSeq X Ten                         |
-    | NextSeq 500                         |
-    | NextSeq 550                         |
-    | Helicos HeliScope                   |
-    | AB SOLiD System                     |
-    | AB SOLiD System 2.0                 |
-    | AB SOLiD System 3.0                 |
-    | AB SOLiD 3 Plus System              |
-    | AB SOLiD 4 System                   |
-    | AB SOLiD 4hq System                 |
-    | AB SOLiD PI System                  |
-    | AB 5500 Genetic Analyzer            |
-    | AB 5500xl Genetic Analyzer          |
-    | AB 5500xl-W Genetic Analysis System |
-    | Complete Genomics                   |
-    | MinION                              |
-    | GridION                             |
-    | PromethION                          |
-    | PacBio RS                           |
-    | PacBio RS II                        |
-    | Sequel                              |
-    | Ion Torrent PGM                     |
-    | Ion Torrent Proton                  |
-    | Ion Torrent S5                      |
-    | Ion Torrent S5 XL                   |
-    | AB 310 Genetic Analyzer             |
-    | AB 3130 Genetic Analyzer            |
-    | AB 3130xL Genetic Analyzer          |
-    | AB 3500 Genetic Analyzer            |
-    | AB 3500xL Genetic Analyzer          |
-    | AB 3730 Genetic Analyzer            |
-    | AB 3730xL Genetic Analyzer          |
+| Instrument Model                    |
+|---|
+| 454 GS                              |
+| 454 GS 20                           |
+| 454 GS FLX                          |
+| 454 GS FLX+                         |
+| 454 GS FLX Titanium                 |
+| 454 GS Junior                       |
+| Illumina Genome Analyzer            |
+| Illumina Genome Analyzer II         |
+| Illumina Genome Analyzer IIx        |
+| Illumina HiSeq 1000                 |
+| Illumina HiSeq 1500                 |
+| Illumina HiSeq 2000                 |
+| Illumina HiSeq 2500                 |
+| Illumina HiSeq 3000                 |
+| Illumina HiSeq 4000                 |
+| Illumina NovaSeq 6000               |
+| Illumina MiSeq                      |
+| Illumina MiniSeq                    |
+| Illumina iSeq 100                   |
+| Illumina HiScanSQ                   |
+| HiSeq X Five                        |
+| HiSeq X Ten                         |
+| NextSeq 500                         |
+| NextSeq 550                         |
+| Helicos HeliScope                   |
+| AB SOLiD System                     |
+| AB SOLiD System 2.0                 |
+| AB SOLiD System 3.0                 |
+| AB SOLiD 3 Plus System              |
+| AB SOLiD 4 System                   |
+| AB SOLiD 4hq System                 |
+| AB SOLiD PI System                  |
+| AB 5500 Genetic Analyzer            |
+| AB 5500xl Genetic Analyzer          |
+| AB 5500xl-W Genetic Analysis System |
+| Complete Genomics                   |
+| MinION                              |
+| GridION                             |
+| PromethION                          |
+| PacBio RS                           |
+| PacBio RS II                        |
+| Sequel                              |
+| Ion Torrent PGM                     |
+| Ion Torrent Proton                  |
+| Ion Torrent S5                      |
+| Ion Torrent S5 XL                   |
+| AB 310 Genetic Analyzer             |
+| AB 3130 Genetic Analyzer            |
+| AB 3130xL Genetic Analyzer          |
+| AB 3500 Genetic Analyzer            |
+| AB 3500xL Genetic Analyzer          |
+| AB 3730 Genetic Analyzer            |
+| AB 3730xL Genetic Analyzer          |
 
 <!-- end list -->
 
 [Spot Type](#Spot_Type)<a name="Spot_Type"></a><span class="red">*</span>  
 : データファイル中のリード構成を選択します。
 
-    | Spot Type   | Description                           |
-    |---|
-    | single      | Single read                           |
-    | paired (FF) | Paired reads with same direction.     |
-    | paired (FR) | Paired reads with opposite direction. |
+| Spot Type   | Description                           |
+|---|
+| single      | Single read                           |
+| paired (FF) | Paired reads with same direction.     |
+| paired (FR) | Paired reads with opposite direction. |
 
 <!-- end list -->
 
@@ -382,15 +381,15 @@ Run に含めるデータファイルを選択します。
 [File Type](#File_Type)<a name="File_Type"></a><span class="red">*</span>  
 : シークエンスデータのファイル形式。リード長が一定ではない fastq ファイルの場合は  "generic_fastq"、一定の場合は "fastq" を選択します。
 
-    | File Type        | Description                                                                                                            |
-    |---|
-    | generic_fastq   | fastq files with variable read length                                                                                  |
-    | fastq            | fastq files with constant read length                                                                                  |
-    | sff              | 454 Standard Flowgram Format file                                                                                      |
-    | hdf5             | PacBio hdf5 Format file                                                                                                |
-    | bam              | Binary SAM format for use by loaders that combine alignment and sequencing data                                        |
-    | tab              | A tab-delimited table maps "SN in SQ line of BAM header" and "reference fasta file"                                    |
-    | reference_fasta | Reference sequence file in single fasta format used to construct SRA archive file format. Filename must end with ".fa" |
+| File Type        | Description                                                                                                            |
+|---|
+| generic_fastq   | fastq files with variable read length                                                                                  |
+| fastq            | fastq files with constant read length                                                                                  |
+| sff              | 454 Standard Flowgram Format file                                                                                      |
+| hdf5             | PacBio hdf5 Format file                                                                                                |
+| bam              | Binary SAM format for use by loaders that combine alignment and sequencing data                                        |
+| tab              | A tab-delimited table maps "SN in SQ line of BAM header" and "reference fasta file"                                    |
+| reference_fasta | Reference sequence file in single fasta format used to construct SRA archive file format. Filename must end with ".fa" |
 
 <!-- end list -->
 
@@ -747,7 +746,7 @@ BioNano のマッピング・ハイブリッドアセンブリでは以下のフ
 
 BioNano データをアセンブルに使用した場合、bnx ファイル、それから、de novo アセンブリに使用した EXP_REFINEFINAL1.cmap と coord ファイルを DRA Analysis として共有することは有益です。DRA では BioNano Genome Map データ用の analysis type と filetype を追加する予定ですが、それまでの間、analysis type "[De Novo Assembly](#Analysis_Type)" と filetype "[tsv](#Analysis_File_Type)" として BioNano データを登録してください (例 [DRZ011299, DRZ011300](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA005/DRA005897/DRA005897.analysis.xml))。
 
-# DRA へのデータ登録  {#dra-submission}
+## DRA へのデータ登録  {#dra-submission}
 
 <div class="attention">
 研究責任者 (principal investigator) の許可なくデータを登録しないでください。
@@ -850,6 +849,10 @@ DDBJ センターから登録者に問い合わせた後三か月以上回答が
 
 <div class="attention">
 オブジェクトは Submission 単位で公開されます。オブジェクトを異なる時期に公開したい場合は Submission を分けて登録してください。
+</div>
+
+<div class="attention">
+Submission 辺りの上限件数は BioSample:1,000、DRA:2,000、GEA:1,000 になります。これらを超える件数を登録する場合、同じ BioProject を参照する複数の submission に分けてください。
 </div>
 
 {% include image.html url="books/hdra01.jpg" caption="新規 DRA 登録の作成" class="w450" %}

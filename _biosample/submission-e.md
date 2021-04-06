@@ -245,7 +245,7 @@ Obtain a submission account according to the [Account Handbook](/account-e.html)
 Move to the Biosample submission page from the “Biosample” menu at the top. Create a new sample submission by clicking the \[New submission\] button.
 
 <div class="attention">
-Upper limit is about 2,000 samples per submission.
+The maximum number of samples per submission is 1,000. If you have more than 1,000 samples, please create multiple submissions.
 </div>
 
 <div class="attention">

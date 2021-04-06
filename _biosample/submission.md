@@ -253,7 +253,7 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
 D-way ウェブサイトの上部にある "BioSample" メニューから BioSample 登録ページに移動します。 BioSample ページ内の \[New submission\] をクリックし、新規サンプル登録を作成します。
 
 <div class="attention">
-1 submission で登録できるサンプル数の上限は約 2,000 になります。
+1 submission で登録できるサンプル数の上限は 1,000 です。これを超える場合は submission を分けてください。
 </div>
 
 <div class="attention">
