@@ -236,21 +236,14 @@ category: about
         </div>
         </li>  
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/kawasaki_t.jpg" title="川崎　竜矢"></p>
-        <div class="explanation">
-            <p class="name">川崎　竜矢</p>
-            <p class="name">KAWASAKI Tatsuya</p>
-        </div>
-        </li>  
-    </ul>
-    <ul class="list">   
-        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/hmochizu.png" title="望月 秀起"></p>
         <div class="explanation">
             <p class="name">望月 秀起</p>
             <p class="name">MOCHIZUKI Hideki</p>
         </div>
         </li>
+    </ul>
+    <ul class="list">   
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/sakon.jpg" title="左近 雪絵"></p>
         <div class="explanation">
@@ -265,13 +258,20 @@ category: about
             <p class="name">SUZUKI Takahiro</p>
         </div>
         </li>
-    </ul>  
-    <ul class="list">      
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/watanabe.jpg" title="渡邊　康司"></p>
         <div class="explanation">
             <p class="name">渡邊 康司</p>
             <p class="name">WATANABE Kouji</p>
+        </div>
+        </li>
+    </ul>  
+    <ul class="list">      
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/yosida.jpg" title="吉田 昌弘"></p>
+        <div class="explanation">
+            <p class="name">吉田 昌弘</p>
+            <p class="name">YOSHIDA Masahiro</p>
         </div>
         </li>
     </ul>  
