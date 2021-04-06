@@ -212,19 +212,13 @@ category: about
         </div>
         </li>  
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/kawasaki_t.jpg" title="KAWASAKI Tatsuya"></p>
-        <div class="explanation">
-            <p class="name">KAWASAKI Tatsuya</p>
-        </div>
-        </li>  
-    </ul>
-    <ul class="list">      
-        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/hmochizu.png" title="MOCHIZUKI Hideki"></p>
         <div class="explanation">
             <p class="name">MOCHIZUKI Hideki</p>
         </div>
         </li>
+    </ul>
+    <ul class="list">      
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/sakon.jpg" title="SAKON Yukie"></p>
         <div class="explanation">
@@ -237,12 +231,18 @@ category: about
             <p class="name">SUZUKI Takahiro</p>
         </div>
         </li>
-    </ul>  
-    <ul class="list">     
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/watanabe.jpg" title="WATANABE Kouji"></p>
         <div class="explanation">
             <p class="name">WATANABE Kouji</p>
+        </div>
+        </li>
+    </ul>  
+    <ul class="list">     
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/yosida.jpg" title="YOSHIDA Masahiro"></p>
+        <div class="explanation">
+            <p class="name">YOSHIDA Masahiro</p>
         </div>
         </li>
     </ul>  
