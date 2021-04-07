@@ -54,25 +54,25 @@ For details, please see the [DRA XML
 schema](https://github.com/ddbj/pub/tree/master/docs/dra)
 
 
-[Submission](#Submission)  
+[Submission](#Submission){: #Submission-obj}    
 : A container object only for grouping objects to be submitted.
 
-[BioProject](#BioProject)  
+[BioProject](#BioProject){: #BioProject-obj}  
 : An overall description of a single research initiative; a project
 will typically relate to multiple samples and datasets.
 
-[BioSample](#BioSample)  
+[BioSample](#BioSample){: #BioSample-obj}  
 : Description of biological source material; each physically unique
 specimen should be registered as a single BioSample with a unique
 set of attributes.
 
-[Experiment](#Experiment)  
+[Experiment](#Experiment){: #Experiment-obj}   
 : A description of sample-specific sequencing library and sequencing
 methods. An Experiment references 1 BioProject and 1 BioSample.
 Multiple Experiments can "point" to a single Sample, but not
 vice-versa.
 
-[Run](#Run)  
+[Run](#Run){: #Run-obj}   
 : Runs describe the files that belong to the previously created
 Experiments. They specify the data files for a specific sample to be
 processed by DRA. Note that all data files listed in a Run will be
@@ -81,7 +81,7 @@ samples or replicates should not be grouped in the same Run.
 Paired-end data files, conversely, MUST be listed in a single run in
 order for the two files to be correctly processed as paired-end.
 
-[Analysis](#Analysis)  
+[Analysis](#Analysis){: #Analysis-obj}  
 : Packages data associated with sequence read objects that are
 intended for downstream usage or that otherwise needs an archival
 home. Submit alignment data in bam file to Run. Please [contact to
@@ -1580,7 +1580,7 @@ files.
 
 
 <div class="accordion-menu" markdown="1">
-<h3 class="toggle-content-btn"><a href="javascript:void(0)">Edit metadata in XML files</a></h3>
+<h3 class="toggle-content-btn"><a href="javascript:void(0)" name="edit-metadata-in-xml-files">Edit metadata in XML files</a></h3>
 <div class="accordion-content">
 
 The DRA metadata submission tool cannot describe technical reads

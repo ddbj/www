@@ -23,22 +23,22 @@ lang: ja
 
 メタデータの詳細は対応する XML スキーマをご覧ください。[DRA XML schema](https://github.com/ddbj/pub/tree/master/docs/dra)
 
-[Submission](#Submission)  
+[Submission](#Submission){: #Submission-obj}  
 : 登録するオブジェクトをとりまとめるオブジェクト。
 
-[BioProject](#BioProject)  
+[BioProject](#BioProject){: #BioProject-obj}  
 : 研究プロジェクト全体の概要。プロジェクトは複数のサンプルやデータセットを含むことが一般的です。
 
-[BioSample](#BioSample)  
+[BioSample](#BioSample){: #BioSample-obj}  
 : 生物学的なサンプルに関する記述。サンプルはユニークな属性をもった BioSample として登録します。
 
-[Experiment](#Experiment)  
+[Experiment](#Experiment){: #Experiment-obj}  
 : BioSample に由来するシークエンス用ライブラリーとシークエンスの手法について記載します。 Experiment は１つの BioProject と１つの BioSample を参照します。 複数の Experiment は１ BioSample を参照することができますが、逆に１つの Experiment が複数の BioSample を参照することはできません。
 
-[Run](#Run)  
-: シークエンス用ライブラリー (Experiment) に由来するファイルをまとめます。 Experiment を介してデータファイルは特定のサンプルにリンクされます。 Run に含まれる全てのファイルは１つの SRA/fastq ファイルにマージされ、Run のアクセッション番号がファイル名になります。そのため、異なるサンプ replicate に由来するファイルは同じ Run に含めるべきではありません。 一方、ペアード タファイルは同じ Run に含め、リードが正しくペアとして処理されるようにします。
+[Run](#Run){: #Run-obj}  
+: シークエンス用ライブラリー (Experiment) に由来するファイルをまとめます。 Experiment を介してデータファイルは特定のサンプルにリンクされます。 Run に含まれる全てのファイルは１つの SRA/fastq ファイルにマージされ、Run のアクセッション番号がファイル名になります。そのため、異なるサンプ replicate に由来するファイルは同じ Run に含めるべきではありません。 一方、ペアードデータファイルは同じ Run に含め、リードが正しくペアとして処理されるようにします。
 
-[Analysis](#Analysis)  
+[Analysis](#Analysis){: #Analysis-obj}  
 : Run に格納されたデータを解析したデータで、しかるべき登録先がないようなデータを登録します。Analysis は DDBJ/EBI/NCBI で交換していません。 交換を希望する場合は [DRA チームに連絡します](/contact-ddbj.html)。 Analysis は [DRASearch](http://ddbj.nig.ac.jp/DRASearch) でインデックスされず、ftp でのファイル公開のみになります。
 
 {% include image.html url="books/sra_object.png" caption="データモデル" class="w450" %}
@@ -782,12 +782,12 @@ BioNano データをアセンブルに使用した場合、bnx ファイル、�
 
 ### 3. プロジェクトとサンプル情報を登録
 
-#### [BioProject (Study)](/bioproject/submission.html)  {#BioProject_Study}
+#### [BioProject (Study)](/bioproject/submission.html) {#BioProject_Study}
 
   - 研究プロジェクトの内容
   - 「なぜ」そのサンプルをシークエンスしたのか
 
-#### [BioSample (Sample)](/bioproject/submission.html) <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#BioSample_Sample}
+#### [BioSample (Sample)](/biosample/submission.html) <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#BioSample_Sample}
 
   - 生物学的、物理的にユニークなサンプル
   - 「何を」シークエンスしたのか
@@ -1316,7 +1316,7 @@ BioSample を Experiment から参照する場合、以下のように記載し�
 
 
 <div class="accordion-menu" markdown="1">
-<h3 class="toggle-content-btn"><a href="javascript:void(0)">XML でのメタデータ編集方法</a></h3>
+<h3 class="toggle-content-btn"><a href="javascript:void(0)" name="edit-metadata-in-xml-files">XML でのメタデータ編集方法</a></h3>
 <div class="accordion-content">
 
 メタデータ作成ツールは technical read (アダプター、プライマーやバーコード配列) を記載することに対応していません。

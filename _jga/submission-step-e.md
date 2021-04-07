@@ -9,7 +9,7 @@ lang: en
 
 ## Data submission application to NBDC {#ds-application}
 
-[Submit a data submission application](https://humandbs.biosciencedbc.jp/data-submission) in [the NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application)</a>. Create a data submitter group before application. After the application is apprived by NBDC, an upload directory will be created in the JGA server.
+[Submit a data submission application](https://humandbs.biosciencedbc.jp/data-submission) in [the NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application). Create a data submitter group before application. After the application is apprived by NBDC, an upload directory will be created in the JGA server.
 
 For application, a D-way account is required. Please obtain [a D-way account](https://ddbj.nig.ac.jp/D-way/) before application.
 
