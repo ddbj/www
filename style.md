@@ -57,7 +57,6 @@ unaligned bamの場合、リファレンス配列や対応表の指定は必要�
 ### 見出し3 {#id3}
 #### 見出し4 {#id4}
 
-
 id 属性値のルール
 
 * 内容を簡潔に表す英語。日本語が URL に含まれるのは好ましくないため日本語要素にも英語で付ける
@@ -75,6 +74,36 @@ id 属性値のルール
 ```
 
 ## 見出し 数字 id <a name="454"></a>
+
+## ブロック要素への  id/class 属性付与 {#block-id}
+
+### id 付与 {#add-id}
+
+```
+{: #para-one}
+A simple paragraph with an ID attribute.
+```
+
+{: #para-one}
+A simple paragraph with an ID attribute.
+
+### class 付与 {#add-class}
+
+```
+{: .para-one}
+A simple paragraph with a class attribute.
+```
+
+{: .para-one}
+A simple paragraph with a class attribute.
+
+## インライン要素への  id/class 属性付与 {#inline-id}
+
+```
+This is <span class="red">red</span>.
+```
+
+This is <span class="red">red</span>.
 
 ## リスト {#list}
 
