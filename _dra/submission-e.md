@@ -1045,7 +1045,7 @@ All data in a submission are released at the same time. If you want to release d
 </div>
 
 <div class="attention">
-Maximum numbers of objects per submission are, BioSample:1,000, DRA:2,000 (Run) and GEA:1,000. 
+Maximum numbers of objects per submission are, BioSample:1,000, DRA:2,000 (Runs) and GEA:1,000 (Assays). 
 If you have objects more than these limits, please create multiple submissions with the same BioProject reference.
 </div>
 
