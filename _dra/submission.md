@@ -852,7 +852,7 @@ DDBJ センターから登録者に問い合わせた後三か月以上回答が
 </div>
 
 <div class="attention">
-Submission 辺りの上限件数は BioSample:1,000、DRA:2,000、GEA:1,000 になります。これらを超える件数を登録する場合、同じ BioProject を参照する複数の submission に分けてください。
+Submission 辺りの上限件数は BioSample:1,000、DRA:2,000 (Run 数)、GEA:1,000 になります。これらを超える件数を登録する場合、同じ BioProject を参照する複数の submission に分けてください。
 </div>
 
 {% include image.html url="books/hdra01.jpg" caption="新規 DRA 登録の作成" class="w450" %}
