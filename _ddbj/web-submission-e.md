@@ -29,7 +29,7 @@ related_pages:
 
 For all data from human subjects researches submitted to DDBJ, it is submitter's responsibility to ensure that the dignity and the right of participant (human subject) is protected in accordance with all applicable laws, regulations and policies of submitter's institute.  
 In principle, make sure to remove any direct personal identifiers of human subjects from your submissions.  
-Before submission, read ["Submission of research data from human subjects"](/policies-e.html#human).
+Before submission, read ["Submission of research data from human subjects"](/policies-e.html#submission-of-human-data).
 
 </div>
 

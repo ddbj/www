@@ -45,7 +45,7 @@ Also, please submit to [BioProject](/bioproject/index-e.html) and
 sequencing project.
 
 **Important:** [Data submission of human subjects
-research](/policies-e.html#human)
+research](/policies-e.html#submission-of-human-data)
 
 <img src="/assets/images/ddbj/genome.png" alt="" title="" class="">
 

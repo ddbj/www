@@ -35,7 +35,7 @@ JGA.
 ## Data submission  {#submission}
 
 The JGA accepts only de-identified data approved by JST-NBDC ([Data
-submission of human subjects research](/policies-e.html#human)). The
+submission of human subjects research](/policies-e.html#submission-of-human-data)). The
 users apply for data submission directly to the
 [NBDC](http://humandbs.biosciencedbc.jp/) and the JGA will only accept
 and process submissions once the information of a successful application

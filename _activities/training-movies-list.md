@@ -189,7 +189,7 @@ lang: ja
   </tr>
   <tr>
     <td><a href="https://youtu.be/avEmIuKXhFo">ヒトを対象とした研究データの登録</a><br>市販の検体以外のヒト由来資料を用いた研究における注意点。(2'10")</td>
-    <td class="borderrgt" align="right"><a href="/policies.html#human"><img src="/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="/policies.html#submission-of-human-data"><img src="/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
   <tr>
     <td><a href="https://youtu.be/9RaSwFKUcKs">アンブレラプロジェクトの活用</a><br>アンブレラプロジェクトは、関連性のある複数のプロジェクトを上位レベルでまとめます。(1'49")</td>

@@ -31,7 +31,7 @@ applicable laws, regulations and policies of submitter's institute.
 In principle, make sure to remove any direct personal identifiers of
 human subjects from your submissions.  
 Before submission, read "[Submission of research data from human
-subjects](/policies-e.html#human)".
+subjects](/policies-e.html#submission-of-human-data)".
 
 ## What is MSS?  {#outline}
 

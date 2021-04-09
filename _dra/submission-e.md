@@ -931,7 +931,7 @@ policies of submitter's institution. In principle, make sure to
 remove any direct personal identifiers of human subjects from your
 data to be submitted. Before submitting human data, read the
 "[Submission of research data from human
-subjects](/policies-e.html#human)".</span>
+subjects](/policies-e.html#submission-of-human-data)".</span>
 </div>
 
 <div class="attention" markdown="1">

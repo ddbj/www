@@ -32,7 +32,7 @@ JGA はデータを格納する際にそのデータに適用される利用制�
 ## データの登録  {#submission}
 
 JGA は JST/NBDC で承認された匿名化されたデータだけを受け付けています
-([ヒトを対象とした研究データの登録について](/policies.html#human))。
+([ヒトを対象とした研究データの登録について](/policies.html#submission-of-human-data))。
 登録者は [JST/NBDC](http://humandbs.biosciencedbc.jp/) に JGA へのデータ提供を申請し，
 NBDC からデータ提供の承認連絡を受けた登録者は [JGA に連絡](/contact-ddbj.html)します。 JGA
 チームはその連絡を受け，登録者に登録手順を別途案内します。

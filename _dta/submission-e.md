@@ -1226,7 +1226,7 @@ regulations and policies of submitter's institute.
 In principle, make sure to remove any direct personal identifiers of
 human subjects from your submissions.  
 Before submitting data from human subjects researches, read the "[Data
-submission of human subjects research](/policies-e.html#human)".</span>
+submission of human subjects research](/policies-e.html#submission-of-human-data)".</span>
 </div>
 
 ### Create submission files  {#create-submission-files}
