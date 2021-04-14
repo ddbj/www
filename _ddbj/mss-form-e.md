@@ -20,27 +20,19 @@ related_pages:
     url: /ddbj/validator-e.html)
 ---
 
-## Flow of MSS application  {#flow}
+## Flow of MSS application {#flow}
 
 {: .flow .flow_en }
 - Apply your request  
-  through the following form.
-- Send an automatic  
-  confirmation e-mail
-- Send a MSS guidance e-mail  
-  ([within the next 5 working days](/calendar.html))
+  through the form.
+- A confirmation e-mail  
+  will be sent.
+- A guidance e-mail will be sent  
+  within 5 working days.
 
 <!-- end list -->
 
-  - If you do not hear any response from DDBJ, please contact us from
-    [contact form](/contact-ddbj-e.html#to-ddbj) by selecting the item, "Mass
-    Submission System (MSS)".
-  - [Do not block E-mails from DDBJ](/precautions-e.html).
+## Application Form for MSS {#form}
 
-## Application Form for MSS <a name="Application_Form_for_MSS">
-
-※[How can I contact you when the form is not available?](/faq/en/mss-application-form-not-displayed)
-
-<!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc2HJLvmc8UrJDpmUxMl-gEjtVg3eS80ssH-TLe3g5eHGCuTA/viewform?embedded=true" width="800" height="2000" frameborder="0" marginheight="0" marginwidth="0">loading ...</iframe>-->
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdXTtgVQSGYRVAU7N4tAfCMtWF_9-USI4cIAbum6qkZ41PyJQ/viewform?embedded=true" width="800" height="2000" frameborder="0" marginheight="0" marginwidth="0">loading ...</iframe>
-
+Please apply your MSS submission through this form.    
+[Application Form for MSS](https://docs.google.com/forms/d/e/1FAIpQLSdXTtgVQSGYRVAU7N4tAfCMtWF_9-USI4cIAbum6qkZ41PyJQ/viewform)

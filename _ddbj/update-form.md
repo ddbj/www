@@ -10,21 +10,12 @@ lang: ja
 ## 登録データの修正・更新 申し込みの流れ  {#flow}
 
 {: .flow .flow_ja }
-- 登録データの修正・更新 申し込み
+- 登録データの修正・更新申し込み
 - 受付確認メール（自動送信）
 - 作業完了メール  
-  （５日以内：休業日を除く）
+  （５日営業日以内）
 
-<!-- end list -->
+## 登録データの修正・更新 申し込みフォーム {#form}
 
-- メールが届かない場合は[「お問い合わせ」](/ddbj-access.html)の「塩基配列データの修正・更新について」からご連絡下さい。
-- [DDBJ からのメールを迷惑メールとしないように設定](/precautions.html)をお願いいたします。
-
-## 登録データの修正・更新 申し込みフォーム
-- [フォームを新しいタブで開くにはここをクリックしてください。](https://docs.google.com/forms/d/e/1FAIpQLSfNnNRavoWTcuwU8S4g75vlb8o6mAsiFikN9o7veCLJ6DBD-g/viewform?embedded=true){:target="_blank"}
-
-※ [フォームが表示されない場合は？](/faq/ja/data-update-request-form-not-displayed)
-
-<!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdQeCkBTfgDDLLOBjxGQVaMpoiuQKP1qrSSKuBYe1hypKfeaA/viewform?embedded=true" width="760" height="2000" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>-->
-
-<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfNnNRavoWTcuwU8S4g75vlb8o6mAsiFikN9o7veCLJ6DBD-g/viewform?embedded=true" width="130%" height="2000" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe> -->
+登録データの修正・更新は以下のフォームから申し込んでください。    
+[登録データの修正・更新申し込みフォーム](https://docs.google.com/forms/d/e/1FAIpQLSfNnNRavoWTcuwU8S4g75vlb8o6mAsiFikN9o7veCLJ6DBD-g/viewform)
