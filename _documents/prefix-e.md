@@ -333,7 +333,9 @@ MT      GenBank         Direct submission
 MU      GenBank         scaffold/CON
 MV      USPTO           Patent application
 MW      GenBank         Direct submission
+MX      USPTO           Patent application
 MY      USPTO           Patent application
+MZ      GenBank         Direct submission
 N       GenBank         EST
 O       void            UniProt/Swiss-Prot
 OA      ENA             
