@@ -69,10 +69,10 @@ In general, an organism should be called its scientific name of species,
 however, when the species is not identified or not defined, it would be
 some tentative name instead of the scientific name of the species.
 
-So, <span class="red">do NOT inappropriately select any organism name　existing in taxonomy database. </span> Only when you can identify
-organism name from which your sequence has been obtained with no doubt
-AND the organism name has been already registered to taxonomy database,
-you can select the organism name existing in taxonomy database
+So, <span class="red">do NOT inappropriately select any organism name existing in taxonomy database. </span> 
+Only when you can identify organism name from which your sequence has been obtained with no doubt AND 
+the organism name has been already registered to taxonomy database, 
+you can select the organism name existing in taxonomy database. 
 
 - The name of "unidentified organism" or "novel species" should be described as a tentative name
 - Sequence similarity of a marker gene is not absolute benchmark in phylogenetic relationship.
@@ -135,7 +135,7 @@ d. found in taxonomy database
 obtained, please select the name.  
 You do not have to select any of [Category].
 
-e. direct molecular isolation from a bulk environmental DNA : sample  
+e. direct molecular isolation from a bulk environmental DNA sample  
 : Select "Obtained by direct molecular isolation from environmental
 sample" in the menu box of [Category].  
 After referring to [3. Environmental samples](#env), enter an
@@ -150,19 +150,16 @@ After referring to [2. In case of unidentified species
 names](#unidentified), enter an organism name in the [Scientific
 name] box, appropriately.
 
-g. not found in taxonomy database, but already submitted other
-: sequence data of the organism  
-Select "The name is valid but not registered in taxonomy database"
+g. not found in taxonomy database, but already submitted other sequence data of the organism 
+: Select "The name is valid but not registered in taxonomy database"
 in the menu box of [Category].  
 Enter the same organism name as previously submitted in the
 [Scientific name] box.
 
-h. not found in taxonomy database, but validly identified the
-: scientific name of species  
-Select "The name is valid but not registered in taxonomy database"
-in the menu box of [Category]. After referring to [1. For
-identified species](#species), enter an organism name in the
-[Scientific name] box, appropriately.
+h. not found in taxonomy database, but validly identified the scientific name of species 
+: Select "The name is valid but not registered in taxonomy database"
+in the menu box of [Category]. After referring to [1. For identified species](#species), 
+enter an organism name in the [Scientific name] box, appropriately.
 
 ## Details to describe organism names  {#organism_name}
 
@@ -207,7 +204,7 @@ Also, the qualifier corresponding to
 feature.
 
 <pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Pan troglodytes troglodytes"
-                     /<a href="/ddbj/qualifiers.html#sub_species">sub_species</a>="troglodytes"
+                    /<a href="/ddbj/qualifiers.html#sub_species">sub_species</a>="troglodytes"
 </code></pre> 
 
 #### microbial genome  {#genome}
@@ -220,7 +217,7 @@ Describe a strain name in the [strain](/ddbj/qualifiers-e.html#strain)
 qualifier.
 
 <pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Candida albicans"
-                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="WO-1"
+                    /<a href="/ddbj/qualifiers.html#strain">strain</a>="WO-1"
 </code></pre>  
 
 #### virus  {#virus}
@@ -241,7 +238,7 @@ The qualifiers corresponding to
 
 Please describe them with appropriate qualifiers as below example.
 
-<pre><code>                  /<a href="/ddbj/qualifiers.html#country">country</a>="Japan:Tokyo"
+<pre><code>                   /<a href="/ddbj/qualifiers.html#country">country</a>="Japan:Tokyo"
                    /<a href="/ddbj/qualifiers.html#collection_date">collection_date</a>="2007-11-01"
                    /<a href="/ddbj/qualifiers.html#host">host</a>="Gallus gallus"
                    /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="viral cRNA"
@@ -298,7 +295,7 @@ The qualifiers corresponding to the lower rank such as
 [isolate](/ddbj/qualifiers-e.html#isolate) etc. are required for the
 source feature.
 
-<pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp."
+<pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp."
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
 In case of whole genomic scale sequences from microorganisms, or in case
@@ -309,7 +306,7 @@ names) that as far as submitters could specify and the lower taxon (in many case
 Also, describe a strain name in the
 [strain](/ddbj/qualifiers-e.html#strain) qualifier.
 
-<pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
+<pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
 #### 2-2. In case of proposing a novel species  {#new}
@@ -337,7 +334,7 @@ Also, the qualifiers corresponding to the lower rank such as
 [strain](/ddbj/qualifiers-e.html#strain) etc. are required for the
 source feature.
 
-<pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
+<pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
 If the name is not available on taxonomy database
@@ -355,8 +352,7 @@ Useful items for application of organism names to taxonomy database
 
 Environmental samples are sequences derived by direct molecular
 isolation from a bulk environmental DNA sample (by PCR, DGGE, or other
-anonymous methods) with no reliable identification of the source
-organism.  
+anonymous methods) with no reliable identification of the source organism.  
 Though frequently confused, <span class="red">the term, 'environmental samples', does not mean "wild type".</span>  
 Please refer to [environmental samples](/ddbj/env-e.html) in detail.  
 <span class="red">Mixed culture derived from an environmental sample is also processed as a kind of environmental samples. </span>
@@ -369,7 +365,7 @@ Format
 
 ```
 "uncultured <genus name> sp."
-  "uncultured <family (or upper) name>" or "uncultured <family (or upper) name> bacterium"
+"uncultured <family (or upper) name>" or "uncultured <family (or upper) name> bacterium"
 ```
 
 Examples
@@ -385,7 +381,7 @@ is required for source feature. Also,
 other qualifiers should be used to describe the process and conditions
 of sample isolation.
 
-<pre><code>                    /<a href="/ddbj/qualifiers.html#clone">clone</a>="4-11"
+<pre><code>                     /<a href="/ddbj/qualifiers.html#clone">clone</a>="4-11"
                      /<a href="/ddbj/qualifiers.html#environmental_sample">environmental_sample</a>
                      /<a href="/ddbj/qualifiers.html#isolation_source">isolation_source</a>="PCR-derived sequence from sediment"
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
