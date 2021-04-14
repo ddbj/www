@@ -38,32 +38,32 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
   |  入力例  |  (pos:34..36,aa:Phe)<br/>(pos:join(5,495..496),aa:Leu)<br/>(pos:complement(4156..4158),aa:Gln)  |
   |  出力例  |  (pos:34..36,aa:Phe,seq:aaa)<br/>(pos:join(5,495..496),aa:Leu,seq:tag)<br/>(pos:complement(4156..4158),aa:Gln,seq:ttg)  |
 
-### artificial_location<a name="artificial_location"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#artificial\\\_location)</span>
+### artificial_location<a name="artificial_location"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#artificial_location)</span>
 
-  |  定義  |  [CDS](/ddbj/features.html\\\#cds) または　[mRNA](/ddbj/features.html\\\#mRNA) の　[location](/ddbj/location.html) が frameshift または途中に出現する終止コドンを調整するために生物学的なプロセシングではない理由で補正されていることを示すフラグ  |
+  |  定義  |  [CDS](/ddbj/features.html#cds) または　[mRNA](/ddbj/features.html#mRNA) の　[location](/ddbj/location.html) が frameshift または途中に出現する終止コドンを調整するために生物学的なプロセシングではない理由で補正されていることを示すフラグ  |
   |  書式  |  "heterogeneous population sequenced" または "low-quality sequence region"  |
   |  備考  |  ゲノム, transcriptome など大規模な登録において, 雑多な集団の配列決定, または, 配列の決定精度が低い場合にのみ, 使用可能です。  |
 
-### bio_material<a name="bio_material"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#bio\\\_material)</span>
+### bio_material<a name="bio_material"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#bio_material)</span>
 
   |  定義  |  配列が得られた生物材料(生きている個体・系統)の保管施設と識別子  |
   |  書式  |  [&lt;institution_code&gt;:[&lt;collection_code&gt;:]]&lt;material_id&gt;  |
   |  例  |  CGC:CB3912 (Caenorhabditis stock centre の例)  |
   |  備考  |  &lt;material_id&gt; は必須です。<br/>保管施設としては, 動物園, 水族館, stock centre, seed bank, germplasm repository, DNA bank などが含まれます。&lt;institution_code&gt; は下記などを参照してください。<br>[institution_code list](ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/coll_dump.txt)(NCBI FTP site)<br/>[BioCollections](https://www.ncbi.nlm.nih.gov/biocollections)  |
 
-### bound_moiety<a name="bound_moiety"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#bound\\\_moiety)</span>
+### bound_moiety<a name="bound_moiety"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#bound_moiety)</span>
 
   |  定義  |  当該 feature で示される領域に結合すると推定される分子、複合体の名称  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション( " ) 不可)  |
   |  例  |  GAL4  |
 
-### cell_line<a name="cell_line"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#cell\\\_line)</span>
+### cell_line<a name="cell_line"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#cell_line)</span>
 
   |  定義  |  配列の得られた cell line の名称  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション( " ) 不可)  |
   |  例  |  MCF7  |
 
-### cell_type<a name="cell_type"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#cell\\\_type)</span> 
+### cell_type<a name="cell_type"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#cell_type)</span> 
 
   |  定義  |  配列の得られた細胞のタイプ  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション( " ) 不可)  |
@@ -87,24 +87,24 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション( " ) 不可)  |
   |  例  |  lambda-hIL7.3  |
 
-### clone_lib<a name="clone_lib"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#clone\\\_lib)</span>
+### clone_lib<a name="clone_lib"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#clone_lib)</span>
 
   |  定義  |  配列の得られた clone library の名称  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション( " ) 不可)   |
   |  例  |  lambda gt11 rice root cDNA (Gene Tech, No. 20)  |
 
-### codon_start<a name="codon_start"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#codon\\\_start)</span> 
+### codon_start<a name="codon_start"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#codon_start)</span> 
 
   |  定義  |  タンパク質のコード領域がスタートコドンで始まらない場合に[読み枠の開始位置](/ddbj/cds.html#frame)を 1, 2, 3 の中から選択します。  |
   |  書式  |  1 or 2 or 3 (全角不可)  |
 
-### collected_by<a name="collected_by"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#collected\\\_by)</span> 
+### collected_by<a name="collected_by"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#collected_by)</span> 
 
   |  定義  |  標本個体を採集した人物、または、団体の名称  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション( " ) 不可)  |
   |  例  |  Dan Janzen  |
 
-### collection_date<a name="collection_date"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#collection\\\_date)</span>
+### collection_date<a name="collection_date"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#collection_date)</span>
 
   |  定義  |  標本を採取した日付<br/>日時の幅を示す場合は、２つの値を slash "/" で区切って記載してください。<br/>採取した時刻を記載する場合、日付の後に "T" を付加し、続けて、時間と分を記載してください。<br/>時刻は協定世界時 (UTC) ・グリニジ平均時 "Zulu Time" (Z) で記載してください。  |
   |  Value format  |  YYYY-MM-DDThh:mm:ssZ<br/>YYYY-MM-DDThh:mmZ<br/>YYYY-MM-DDThhZ<br/>YYYY-MM-DD<br/>YYYY-MM<br/>YYYY<br/><br/>YYYY/YYYY<br/>YYYY-MM-DD/YYYY-MM-DD<br/>YYYY-MM/YYYY-MM<br/>YYYY-MM-DDThh:mmZ/YYYY-MM-DDThh:mmZ<br/><br/>'YYYY': 年号を表す４桁の数字<br/>'MM': 月を表す２桁の数字 (01 ～ 12)<br/>'DD': 日を表す２桁の数字 (01 ～ 31)<br/>'hh': 時を表す２桁の数字 (00 ～ 23)<br/>'mm': 分を表す２桁の数字 (00 ～ 59)<br/>'ss': 秒を表す２桁の数字 (00 ～ 59)  |
@@ -130,21 +130,21 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
   |  例  |  Nipponbare  |
 
-### culture_collection<a name="culture_collection"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#culture\\\_collection)</span>
+### culture_collection<a name="culture_collection"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#culture_collection)</span>
 
   |  定義  |  配列の得られた培養細胞の保管施設と ID  |
   |  書式  |  &lt;institution-code&gt;:[&lt;collection-code&gt;:]&lt;culture_id&gt;  |
   |  例  |  ATCC:26370  |
   |  備考  |  &lt;institution-code&gt; と &lt;culture_id&gt; が必須です。<br />生きている微生物やウイルスの培養系, および細胞株を記載するのに用います。<br />&lt;institution_code&gt; は下記などを参照してください。<br />[institution_code list](ftp://ftp.ncbi.nlm.nih.gov/pub/taxonomy/coll_dump.txt)(NCBI FTP site)<br />[BioCollections](https://www.ncbi.nlm.nih.gov/biocollections") |
 
-### db_xref<a name="db_xref"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#db\\\_xref)</span>
+### db_xref<a name="db_xref"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#db_xref)</span>
 
   |  定義  |  他のデータベース内の関連情報を示す  |
   |  書式  |  &lt;データベース名&gt;:&lt;ID&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
   |  例  |  UniProtKB/Swiss-Prot:P28763  |
   |  備考  |  原則として、新規登録データには記載できません。<br />アノテーションの根拠として参照した場合は db_xref ではなく、[inference](#inference) を用いて記載してください。<br />データベース名には[データベースリスト](/ddbj/db_xref.html)の何れかを記載します。 |
 
-### dev_stage<a name="dev_stage"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#dev\\\_stage)</span> 
+### dev_stage<a name="dev_stage"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#dev_stage)</span> 
 
   |  定義  |  配列が得られた生物の発生段階  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
@@ -155,7 +155,7 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
   |  定義  |  DNA の複製開始方向  |
   |  書式  |  left, right, both の中から選択します (全角不可)  |
 
-### EC_number<a name="EC_number"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#EC\\\_number)</span>
+### EC_number<a name="EC_number"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#EC_number)</span>
 
   |  定義  |  タンパク質産物としての酵素コミッション番号  |
   |  書式  |  &lt;identifier&gt;.&lt;identifier&gt;.&lt;identifier&gt;.&lt;identifier&gt;  |
@@ -168,13 +168,13 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
   |  例  |  Columbia  |
 
-### environmental_sample<a name="environmental_sample"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#environmental\\\_sample)</span><a name="environmental_sample"></a>
+### environmental_sample<a name="environmental_sample"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#environmental_sample)</span><a name="environmental_sample"></a>
 
   |  定義  |  PCR, DGGE, あるいは、その他の方法で直接, 分子を単離したため、生物種が同定できない大量の環境DNAサンプルに由来した配列であることを示します。<br/>詳細は[環境サンプルの説明](/ddbj/env.html)を ご参照ください。  |
   |  書式  |  値なし  |
   |  備考  |  environmental_sample のエントリには[isolation_source](#isolation_source)も必要です。<br/>[strain](#strain) と同時には使用できません。  |
 
-### estimated_length<a name="estimated_length"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#estimated\\\_length)</span>
+### estimated_length<a name="estimated_length"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#estimated_length)</span>
 
   |  定義  |  配列内のギャップの推定長  |
   |  入力書式  |  unknown or known  |
@@ -212,7 +212,7 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
   |  例  |  essential for recognition of cofactor  |
 
-### gap_type<a name="gap_type"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#gap\\\_type)</span><a name="gap_type"></a>
+### gap_type<a name="gap_type"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#gap_type)</span><a name="gap_type"></a>
 
   |  定義  |  genome assembly の一部において、構成要素間の連結部に位置する gap の種別  |
   |  書式  |  以下から選択します。<br>{::nomarkdown}<ul><li>between scaffolds</li><li>within scaffold</li><li>telomere</li><li>centromere</li><li>short arm</li><li>heterochromatin</li><li>repeat within scaffold</li><li>repeat between scaffolds</li><li>contamination</li><li>unknown</li></ul>{:/} |
@@ -224,7 +224,7 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
   |  例  |  ilvE<br /><br />入力時のご注意: [CDS](/ddbj/features.html#cds)に関してましては [遺伝子命名に関する考え方](/ddbj/cds.html#product)もご参照ください。<br>{::nomarkdown}<ul><li>遺伝子シンボルとしての略号を記載して下さい。</li><li>一般に通用する複数の略号がある場合でも複数の略号を記載しないで下さい。<br />また, そのために不必要に区切り記号を使用しないで下さい。<br />略号の複数記載を希望される場合は, 代表的な略号を gene に記載し, その他の略号を [gene_synonym](#gene_synonym) に記載してください。</li></ul>{:/} |
 
-### gene_synonym<a name="gene_synonym"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#gene\\\_synonym)</span>
+### gene_synonym<a name="gene_synonym"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#gene_synonym)</span>
 
   |  定義  |  配列に対応する遺伝子シンボル, gene, または, locus_tag で使用した記載とは別な呼称  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
@@ -255,7 +255,7 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
   |  例  |  Homo sapiens<br/>Homo sapiens 12 years old girl  |
 
-### identified_by<a name="identified_by"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#identified\\\_by)</span>
+### identified_by<a name="identified_by"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#identified_by)</span>
 
   |  定義  |  標本個体の分類学的な同定を行った専門家の名前  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
@@ -274,32 +274,32 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
   |  例  |  SI-152<br/>DGGE: C12  |
 
-### isolation_source<a name="isolation_source"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#isolation\\\_source)</span><a name="isolation_source">
+### isolation_source<a name="isolation_source"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#isolation_source)</span><a name="isolation_source">
 
   |  定義  |  配列が得られた生物学的サンプルに関する, 物理的, 環境的, かつまたは, 地理的な由来  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
   |  例  |  rumen isolates from standard pelleted ration-fed steer #6  |
 
-### lab_host<a name="lab_host"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#lab\\\_host)</span>
+### lab_host<a name="lab_host"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#lab_host)</span>
 
   |  定義  |  配列決定した分子を得た生物を増殖させるために実験室で使われた宿主の学名  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
   |  例  |  Gallus gallus<br/>Gallus gallus embryo<br/>Escherichia coli strain DH5 alpha<br/>Homo sapiens HeLa cells  |
 
-### lat_lon<a name="lat_lon"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#lat\\\_lon)</span>
+### lat_lon<a name="lat_lon"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#lat_lon)</span>
 
   |  定義  |  配列決定したサンプルが採取された位置の地理的座標  |
   |  書式  |  d[d.dddd] &lt;N or S&gt; d[dd.dddd] &lt;W or E&gt;  |
   |  例  |  47.94 N 28.12 W<br/>45.0123 S 4.1234 E  |
   |  備考  |  小数点以下の数字は分秒ではなく小数で記載してください。  |
 
-### linkage_evidence<a name="linkage_evidence"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#linkage\\\_evidence)</span>
+### linkage_evidence<a name="linkage_evidence"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#linkage_evidence)</span>
 
   |  定義  |  [assembly_gap](/ddbj/features.html#assembly_gap) で示される連鎖の証拠。[assembly_gap](/ddbj/features.html#assembly_gap) feature で [gap_type](#gap_type) の値が "within scaffold""repeat within scaffold" あるいは "contamination" の場合のみ使用可能です。[gap_type](#gap_type) の値が "contamination" の場合、/linkage_evidence の値は "unspecified" にする必要があります。  |
   |  書式  |  以下から選択します<br>{::nomarkdown}<ul><li>align genus</li><li>align xgenus</li><li>align trnscpt</li><li>clone contig</li><li>map</li><li>paired-ends</li><li>pcr</li><li>proximity ligation</li><li>strobe</li><li>within clone</li><li>unspecified</li></ul>{:/}  |
   |  備考  |  [AGP Specification](https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/)に従い、[assembly_gap](/ddbj/features.html#assembly_gap) feature でのみ、使用します  |
 
-### locus_tag<a name="locus_tag"></a><span class="right-alignment">[Feature Table　Definition](/ddbj/feature-table.html#locus\\\_tag)</span>
+### locus_tag<a name="locus_tag"></a><span class="right-alignment">[Feature Table　Definition](/ddbj/feature-table.html#locus_tag)</span>
 
   |  定義  |  (主としてゲノムプロジェクト用に)登録者が体系的に一定な識別子を 遺伝子とその関連 feature の検索を目的として割り当てたもの  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
@@ -317,38 +317,38 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
   |  例  |  8q12-q13  |
 
-### mating_type<a name="mating_type"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#mating\\\_type)</span><a name="mating_type"></a>
+### mating_type<a name="mating_type"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#mating_type)</span><a name="mating_type"></a>
 
   |  定義  |  配列の得られた生物の mating type を示します。原核生物, あるいは, 減数分裂による性的に二形性の配偶子を伴わない真核生物で用います (cf. [sex](#sex))。  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
   |  例  |  MAT-1<br/>plus<br/>-<br/>odd<br/>even  |
 
-### metagenome_source<a name="metagenome_source"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#metagenome\\\_source)</span>
+### metagenome_source<a name="metagenome_source"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#metagenome_source)</span>
 
   |  定義  |  Metagenome Assembled Genome (MAG) として得られた配列、すなわち、metagenome から単一 taxon として assemble された場合に、その由来となった metagenome を記載します。  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
   |  例  |  human gut metagenome<br />soil metagenome<br />[taxonomy database に存在する metagenome を含む値](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&amp;id=408169&amp;lvl=3&amp;keep=1&amp;srchmode=1&amp;unlock)でなければなりません。  |
   |  備考  |  metagenome_source を記載する場合は [environmental_sample](#environmental_sample) の記載が必須です。  |
 
-### mobile_element_type<a name="mobile_element_type"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#mobile\\\_element\\\_type)</span>
+### mobile_element_type<a name="mobile_element_type"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#mobile_element_type)</span>
 
   |  定義  |  mobile_element の名称  |
   |  書式  |  &lt;mobile_element_type&gt; [:&lt;mobile_element_name&gt;]&lt;mobile_element_type&gt;は以下の規定値から何れか１つを選びます。<br>{::nomarkdown}<ul><li>transposon</li><li>retrotransposon</li><li>integron</li><li>insertion sequence</li><li>non-LTR retrotransposon</li><li>SINE</li><li>MITE</li><li>LINE</li><li>other</li></ul>{:/}  |
   |  例  |  transposon:Tnp9  |
 
-### mod_base<a name="mod_base"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#mod\\\_base)</span>
+### mod_base<a name="mod_base"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#mod_base)</span>
 
   |  定義  |  修飾塩基  |
-  |  書式  |  [Modified Base Abbreviation](/ddbj/code.html\\\#nucleotide-2) のリストにある省略形を使用します。  |
+  |  書式  |  [Modified Base Abbreviation](/ddbj/code.html#nucleotide-2) のリストにある省略形を使用します。  |
   |  例  |  m2g  |
 
-### mol_type<a name="mol_type"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#mol\\\_type)</span>
+### mol_type<a name="mol_type"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#mol_type)</span>
 
   |  定義  |  生体内における分子種, 合成された分子種, あるいは予想される分子種  |
   |  書式  |  以下から適切なものを選択して記載します。 genomic DNA, genomic RNA, mRNA, tRNA, rRNA, transcribed RNA,<br/>other RNA, other DNA ,viral cRNA, unassigned DNA, unassigned RNA  |
   |  備考  |  primary entry では生体内における分子種、あるいは、合成された分子種を、TPA の場合は予想される分子種を示します。<br/><br/>{::nomarkdown}<ul><li>genomic DNA は核の DNA だけではなく, organelle, plasmid の DNA にも用います。</li><li>rRNA gene (rDNA) は rRNA ではなく genomic DNA を選びます。</li><li>mRNA を鋳型とした cDNA 配列は EST も含めて mRNA を選びます。</li><li>premature RNA を鋳型とした cDNA 配列は transcribed RNA を選びます。</li><li>人工的に改変・構築した配列の場合は, other DNA, あるいは, other RNA を選びます。</li><li>通常の RNA ウイルスでは genomic RNA を選びます。</li><li>ただし、Negarnaviricota (ssRNA negative-strand virus) では、原則、viral cRNA を選びます。<br/>viral cRNA はマイナス鎖 RNA ウイルスが子孫のゲノムを産生する際に生じるプラス鎖の鋳型を指します。<br/>ssRNA negative-strand virus 由来のゲノム配列に関しては、原則、記載を以下に統一しています。</li></ul>{:/}<br /><br />アミノ酸翻訳方向と正: viral cRNA<br/>アミノ酸翻訳方向と逆: genomic RNA  |
 
-### ncRNA_class<a name="ncRNA_class"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#ncRNA\\\_class)</span>
+### ncRNA_class<a name="ncRNA_class"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#ncRNA_class)</span>
 
   |  定義  |  タンパク質をコードしない RNA ([ncRNA](/ddbj/features.html#ncRNA)) の種別  |
   |  書式  |  &lt;TYPE&gt;  |
@@ -362,11 +362,11 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
 
 ### number<a name="number"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#number)</span>
 
-  |  定義  |  [exon](/ddbj/features.html\\\#exon),[intron](/ddbj/features.html\\\#intron) の番号  |
+  |  定義  |  [exon](/ddbj/features.html#exon),[intron](/ddbj/features.html#intron) の番号  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
   |  例  |  5a  |
 
-### old_locus_tag<a name="old_locus_tag"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#old\\\_locus\\\_tag)</span>
+### old_locus_tag<a name="old_locus_tag"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#old_locus_tag)</span>
 
   |  定義  |  ゲノムプロジェクトがfeature 検索を目的として割り当てたID  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
@@ -390,13 +390,13 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
   |  例  |  Homo sapiens<br>Lactobacillaceae bacterium<br>West Nile virus<br>synthetic construct<br>uncultured bacterium  |
   |  備考  |  詳しくは, [Organism Qualifier について](/ddbj/organism.html)を参照して下さい。  |
 
-### PCR_conditions<a name="PCR_conditions"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#PCR\\\_conditions)</span>
+### PCR_conditions<a name="PCR_conditions"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#PCR_conditions)</span>
 
   |  定義  |  PCR の条件  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
   |  例  |  Initial denaturation:94degC,1.5min  |
 
-### PCR_primers<a name="PCR_primers"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#PCR\\\_primers)</span>
+### PCR_primers<a name="PCR_primers"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#PCR_primers)</span>
 
   |  定義  |  配列を増幅するために使用されたPCR プライマー１回のPCR反応で使用したプライマーをすべて含む  |
   |  書式  |  [fwd_name: XXX1, ]fwd_seq: xxxxx1,[fwd_name: XXX2, ]fwd_seq: xxxxx2, [rev_name: YYY1, ]rev_seq: yyyyy1, [rev_name: YYY2, ]rev_seq: yyyyy2<br/><br/>例1)<br/>fwd_name: CO1P1, fwd_seq: ttgattttttggtcayccwgaagt, rev_name: CO1R4, rev_seq: ccwvytardcctarraartgttg<br/><br/>例2)<br/>fwd_seq: tgtgtgtgtgactgaca, rev_seq: tagcgatacggtcaatgc<br/><br/>例3)<br/>fwd_name: hoge1, fwd_seq: cgkgtgtatcttact, rev_name: hoge2, rev_seq: cggtgtatcttact<br/><br/>例4)<br/>fwd_name: CO1P1, fwd_seq:ttgattttttggtcayccwgaagt, fwd_name: CO1P2, fwd_seq: gatacacaggtcayccwgaagt, rev_name: CO1R4, rev_seq: ccwvytardcctarraartgttg"  |
@@ -415,7 +415,7 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
   |  例  |  trypsinogen (CDS feature の場合)<br/>trypsin (mat_peptide feature の場合)<br/>XYZ neural-specific transcript (mRNA feature の場合)  |
   |  入力時のご注意  |  [CDS](/ddbj/features.html#cds) に関しましては, [遺伝子命名に関する考え方](/ddbj/cds.html#product)もご参照ください。{::nomarkdown}<ul><li>原則, 略号の類ではない一般名を記載して下さい。</li><li>生物名を含めないで下さい。</li><li>一般名が複数ある場合でも, 複数の名称を記載しないで下さい。 また, そのために不必要な区切り記号を使用しないで下さい。 一般名の複数記載を希望される場合は, 代表的な名称を product に記載し, その他の名称を [note](#note) に記載して下さい。</li><li>機能, 名称等が不明な蛋白質の場合は, hypothetical protein と記載することを推奨します。</li></ul>{:/}  |
 
-### protein_id<a name="protein_id"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#protein\\\_id)</span>
+### protein_id<a name="protein_id"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#protein_id)</span>
 
   |  定義  |  翻訳される [CDS feature](/ddbj/features.html#cds) に対して国際塩基配列データベース INSDC が発行する識別子です。(登録時には入力しません)  |
   |  書式  |  &lt;identifier&gt;.&lt;version&gt;  |
@@ -445,7 +445,7 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
   |  書式  |  値なし  |
   |  備考  |  [germline](#germline)と同時に記載することはできません。  |
 
-### regulatory_class<a name="regulatory_class"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#regulatory\\\_class)</span>
+### regulatory_class<a name="regulatory_class"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#regulatory_class)</span>
 
   |  定義  |  転写、翻訳、複製、または染色体構造に関連する調節において機能する配列領域の分類区分  |
   |  書式  |  以下のタイプから選択します。<br>{::nomarkdown}<ul><li>attenuator</li><li>CAAT_signal</li><li>DNase_I_hypersensitive_site</li><li>enhancer</li><li>enhancer_blocking_element</li><li>GC_signal</li><li>imprinting_control_region</li><li>insulator</li><li>locus_control_region</li><li>matrix_attachment_region</li><li>minus_35_signal</li><li>minus_10_signal</li><li>polyA_signal_sequence</li><li>promoter</li><li>recoding_stimulatory_region</li><li>replication_regulatory_region</li><li>response_element</li><li>ribosome_binding_site</li><li>riboswitch</li><li>silencer</li><li>TATA_box</li><li>terminator</li><li>transcriptional_cis_regulatory_region</li><li>other</li></ul>{:/} |
@@ -457,25 +457,25 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
   |  例  |  a  |
 
-### ribosomal_slippage<a name="ribosomal_slippage"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#ribosomal\\\_slippage)</span>
+### ribosomal_slippage<a name="ribosomal_slippage"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#ribosomal_slippage)</span>
 
   |  定義  |  翻訳の途中で読み枠が変わるなど ribosomal slippage が起きていることを示す  |
   |  書式  |  値なし  |
-  |  備考  |  [CDS](/ddbj/features.html\\\#cds) の [location](/ddbj/location.html) で "join(486..1784,1784..4810)" などのように ribosomal_slippage の位置が示される  | 
+  |  備考  |  [CDS](/ddbj/features.html#cds) の [location](/ddbj/location.html) で "join(486..1784,1784..4810)" などのように ribosomal_slippage の位置が示される  | 
 
-### rpt_family<a name="rpt_family"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#rpt\\\_family)</span>
+### rpt_family<a name="rpt_family"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#rpt_family)</span>
 
   |  定義  |  くり返し配列タイプの名称  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可) )  |
   |  例  |  Alu<br/>Kpn  |
 
-### rpt_type<a name="rpt_type"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#rpt\\\_type)</span>
+### rpt_type<a name="rpt_type"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#rpt_type)</span>
 
   |  定義  |  配列のくり返し構造  |
   |  書式  |  以下から選択します。<br>{::nomarkdown}<ul><li>tandem</li><li>inverted</li><li>flanking</li><li>terminal</li><li>direct</li><li>dispersed</li><li>nested</li><li>long_terminal_repeat</li><li>non_ltr_retrotransposon_polymeric_tract</li><li>x_element_combinatorial_repeat</li><li>y_prime_element</li><li>telomeric_repeat</li><li>centromeric_repeat</li><li>other</li></ul>{:/} |
   |  備考  |  規定値の詳細は [Controlled vocabulary for /rpt_type qualifier](http://www.insdc.org/controlled-vocabulary-rpttype-qualifier) に解説があります。  |
 
-### rpt_unit_seq<a name="rpt_unit_seq"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#rpt\\\_unit\\\_seq)</span>
+### rpt_unit_seq<a name="rpt_unit_seq"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#rpt_unit_seq)</span>
 
   |  定義  |  くり返し単位の配列  |
   |  書式  |  &lt;text&gt;; acgtmrwsykvhdbn0123456798() のみ可  |
@@ -512,7 +512,7 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
   |  例  |  female<br/>male<br/>hermaphrodite<br/>monoecious<br/>dioecious  |
 
-### specimen_voucher<a name="specimen_voucher"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#specimen\\\_voucher)</span>
+### specimen_voucher<a name="specimen_voucher"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#specimen_voucher)</span>
 
   |  定義  |  配列の得られた標本(動植物個体の一部 または 全体)が維持管理されている管理団体とＩＤ  |
   |  書式  |  [&lt;institution_code&gt;:[&lt;collection_code&gt;:]]&lt;specimen_id&gt;  |
@@ -525,61 +525,61 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可) )  |
   |  例  |  BALB/c  |
 
-### sub_clone<a name="sub_clone"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#sub\\\_clone)</span>
+### sub_clone<a name="sub_clone"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#sub_clone)</span>
 
   |  定義  |  配列の得られた sub-clone の名称  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
   |  例  |  lambda-hIL7.20g  |
 
-### submitter_seqid<a name="submitter_seqid"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#submitter\\\_seqid)</span>
+### submitter_seqid<a name="submitter_seqid"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#submitter_seqid)</span>
 
   |  定義  |  [TSA](/ddbj/tsa.html), [TLS](/ddbj/tls.html), [WGS](/ddbj/wgs.html), [CON](/ddbj/con.html) におけるセット内で一意な識別子  |
   |  書式  |  &lt;text&gt;<br/>全角, ダブルクォーテーション ( " ), パイプ ( | ), イコール ( = ), 角括弧 ( [ ] ), 引用符 ( &gt; ) スペース 不可  |
   |  例  |  contig53<br/>scaffold25  |
 
-### sub_species<a name="sub_species"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#sub\\\_species)</span>
+### sub_species<a name="sub_species"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#sub_species)</span>
 
   |  定義  |  配列の得られた生物の　subspecies の名称  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
   |  例  |  troglodytes  |
 
-### sub_strain<a name="sub_strain"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#sub\\\_strain)</span>
+### sub_strain<a name="sub_strain"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#sub_strain)</span>
 
   |  定義  |  配列の得られた遺伝学的あるいは他の方法で改変された sub-strain の名称。<br/>その親に当たる strain は [strain](#strain) qualifier に記載されます。  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
   |  例  |  abis  |
   |  備考  |  strain が不明な場合は sub_strain は使わず strain に記載します。<br>{::nomarkdown}<ul><li>通常の例: /strain="K-12", /sub_strain="MG1655"</li><li>strain が不明な例: /strain="MG1655"</li></ul>{:/} |
 
-### tag_peptide<a name="tag_peptide"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#tag\\\_peptide)</span>
+### tag_peptide<a name="tag_peptide"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#tag_peptide)</span>
 
-  |  定義  |  タンパク質分解の標的となる [tmRNA](/ddbj/features.html\\\#tmRNA) のコードするペプチドタグとその終止コドンの塩基位置  |
+  |  定義  |  タンパク質分解の標的となる [tmRNA](/ddbj/features.html#tmRNA) のコードするペプチドタグとその終止コドンの塩基位置  |
   |  書式  |  &lt;base_range&gt;  |
   |  例  |  90..122  |
 
-### tissue_type<a name="tissue_type"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#tissue\\\_type)</span>
+### tissue_type<a name="tissue_type"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#tissue_type)</span>
 
   |  定義  |  配列の得られた組織の名称  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
   |  例  |  brain  |
 
-### trans_splicing<a name="trans_splicing"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#trans\\\_splicing)</span>
+### trans_splicing<a name="trans_splicing"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#trans_splicing)</span>
 
   |  定義  |  成熟 RNA の形成の過程で異なる RNA 分子の exon が結合することを示します。  |
   |  書式  |  値なし  |
-  |  備考  |  [CDS](/ddbj/features.html\\\#cds),[mRNA](/ddbj/features.html\\\#mRNA) などの　[location](/ddbj/location.html) で join(complement(69611..69724),139856..140087) などのように trans splicing が起きていることが示されます。  |
+  |  備考  |  [CDS](/ddbj/features.html#cds),[mRNA](/ddbj/features.html#mRNA) などの　[location](/ddbj/location.html) で join(complement(69611..69724),139856..140087) などのように trans splicing が起きていることが示されます。  |
 
 ### transgenic<a name="transgenic"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#transgenic)</span>
 
   |  定義  |  外来 DNA が組み込まれた形質転換生物由来の配列であることを示します。  |
   |  書式  |  値なし  |
 
-### transl_except<a name="transl_except"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#transl\\\_except)</span><a name="transl_except"></a>
+### transl_except<a name="transl_except"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#transl_except)</span><a name="transl_except"></a>
 
   |  定義  |  塩基配列上の特定の位置において [CDS](/ddbj/features.html#cds) の翻訳が [transl_table](#transl_table) で指定されたコドン暗号表に従わない場合, 翻訳例外がある場合などに入力します。  |
   |  書式  |  (pos:&lt;location&gt;,aa:&lt;amino_acid&gt;) &lt;amino_acid&gt;は [Amino Acid Codes](/ddbj/code.html#amino-1), [Modified and Unusual Amino Acids](/ddbj/code.html#amino-2) のリストにある省略形を使用します。  |
   |  例  |  1. 特定の位置で翻訳例外がある場合<br/>/transl_except=(pos:213..215,aa:Sec)<br/>213番目から215番目が例外的に selenocysteine (一文字表記ではU) に翻訳されます。<br/><br/>2. polyadenylation により stop codon になる場合<br/>/transl_except=(pos:1017,aa:TERM)<br/>/transl_except=(pos:2000..2001,aa:TERM)<br/>1017番目のt, あるいは2000, 2001番目の ta の3'側に a が付加されることにより taa stop codon となる<br/><br/>3. [Amino Acid Codes](/ddbj/code.html#amino-1), [Modified and Unusual Amino Acids](/ddbj/code.html#amino-2) で定義されないアミノ酸に翻訳される場合<br/>/transl_except=(pos:213..215,aa:OTHER)<br/>/note="unusual amino acid"<br/>213番目から215番目が note qualifier に記載されたアミノ酸に例外的に翻訳される  |
 
-### transl_table<a name="transl_table"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#transl\\\_table)</span><a name="transl_table"></a>
+### transl_table<a name="transl_table"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#transl_table)</span><a name="transl_table"></a>
 
   |  定義  |  genetic code, コドン暗号表の番号  |
   |  書式  |  &lt;整数&gt; (1 - 6, 9 - 14, 16, 21 - 31)  |
