@@ -1,5 +1,5 @@
 ---
-layout: tabbed_indexed_content
+layout: top
 service_name: Japanese Genotype-phenotype Archive
 title: Japanese Genotype-phenotype Archive
 category: jga
