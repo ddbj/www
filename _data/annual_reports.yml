@@ -1,4 +1,18 @@
 items:
+  - date: 2020-1-1
+    title:
+      en: FY2020
+      ja: 2020年度
+    report_url:
+      en: https://drive.google.com/file/d/1ZVshrucuj9GLgho4heOYN-AGg2XIXr8h/view?usp=sharing
+      ja: https://drive.google.com/file/d/1ZVshrucuj9GLgho4heOYN-AGg2XIXr8h/view?usp=sharing
+    budget_pdf:
+      en: https://drive.google.com/file/d/1lB0iyPuqkWR3UNieJ21k9QoGUXJ2w2J7/view?usp=sharing
+      ja: https://drive.google.com/file/d/1lB0iyPuqkWR3UNieJ21k9QoGUXJ2w2J7/view?usp=sharing
+    budget_excel:
+      en: https://drive.google.com/file/d/1kjs_XpooP2HjSWQpSPW0RyZmf65F8a6a/view?usp=sharing
+      ja: https://drive.google.com/file/d/1kjs_XpooP2HjSWQpSPW0RyZmf65F8a6a/view?usp=sharing
+    category: annual_report
   - date: 2019-1-1
     title:
       en: FY2019
