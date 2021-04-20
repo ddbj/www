@@ -240,8 +240,8 @@ items:
   - name: Gendoo
     formal_name: Gendoo
     service_link:
-      en: https://gggenome.dbcls.jp/ja/
-      ja: https://gggenome.dbcls.jp/en/
+      en: http://gendoo.dbcls.jp/
+      ja: http://gendoo.dbcls.jp/
     description:
       en: Functional profiling of gene and disease features for omics analysis
       ja: 遺伝子、疾患について、関連する疾患、薬剤、臓器、生命現象などの特徴をキーワードでリスト表示するツール
@@ -252,8 +252,8 @@ items:
   - name: GGGenome
     formal_name: GGGenome
     service_link:
-      en: http://gendoo.dbcls.jp/
-      ja: http://gendoo.dbcls.jp/
+      en: https://gggenome.dbcls.jp/en/
+      ja: https://gggenome.dbcls.jp/ja/
     description:
       en: A ultrafast sequence search
       ja: 高速ゲノム配列検索ツール
