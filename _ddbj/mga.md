@@ -56,10 +56,9 @@ Variable record から構成されています。MGA の公開データには，
 
 リソース毎に作成されるファイルで，各リソースの共通情報が記載されています。
 
-Master record の例
+<strong>Master record の例</strong>
 
-<pre><code>
-<a id="LocusA" href="/ddbj/flat-file#LocusB">LOCUS</a>       <a id="LocusNameA" href="/ddbj/flat-file#LocusNameB">ZZZZZ0000000</a>                       <a id="MoleculeTypeA" href="/ddbj/flat-file#MoleculeTypeB">mRNA</a>    <a id="ModificationDateA" href="/ddbj/flat-file#ModificationDateB">linear</a>   <a id="DivisionA" href="/ddbj/flat-file#DivisionB">ROD</a> <a id="ModificationDateA" href="/ddbj/flat-file#ModificationDateB">24-JAN-2005</a>
+<pre><code><a id="LocusA" href="/ddbj/flat-file#LocusB">LOCUS</a>       <a id="LocusNameA" href="/ddbj/flat-file#LocusNameB">ZZZZZ0000000</a>                       <a id="MoleculeTypeA" href="/ddbj/flat-file#MoleculeTypeB">mRNA</a>    <a id="ModificationDateA" href="/ddbj/flat-file#ModificationDateB">linear</a>   <a id="DivisionA" href="/ddbj/flat-file#DivisionB">ROD</a> <a id="ModificationDateA" href="/ddbj/flat-file#ModificationDateB">24-JAN-2005</a>
 <a id="DefinitionA" href="/ddbj/flat-file#DefinitionB">DEFINITION</a>  Mus musculus 1 month adult cerebellum short transcripts tag.
 <a id="AccessionA" href="#Accession_MGA">ACCESSION</a>   ZZZZZ0000000
 <a id="VersionA" href="/ddbj/flat-file#VersionB">VERSION</a>     ZZZZZ0000000.1
@@ -109,10 +108,10 @@ Master record の例
 
 リソース毎に各エントリの塩基配列およびアクセッション番号，マップ情報，配列のカウント数など関連情報が記載されています。
 
-Variable record の例
+<strong>Variable record の例</strong>
 
-``` 
-  >ZZZZZ0000001|ABC1004AA60F1902|10|9B|lipidosis-related protein Lipidosin| 
+```
+>ZZZZZ0000001|ABC1004AA60F1902|10|9B|lipidosis-related protein Lipidosin| 
 GI:2385656|
 gactgtcttcggtgaatgca
 >ZZZZZ0000002|ABC1003AE78G1607|5||||
@@ -128,9 +127,7 @@ gagccgtccccgacgccgcca
  (以下略) 
 ```
 
-{::nomarkdown}
-書式: &gt;[ACC#]|[submitter's identifier]|[number of sequence count]|[map]|[free text]|[db_xref1(,db_xref2,...)]|
-{:/}
+| <strong>書式</strong>: | &gt;[ACC#]\|[submitter's identifier]\|[number of sequence count]\|[map]\|[free text]\|[db_xref1(,db_xref2,...)]\| |
 
 - １エントリは Header 行と塩基配列行から構成されています。Header 行は "\>"
   で始まり，各エントリに関連する６つの項目が続きます。各項目は
@@ -144,11 +141,11 @@ gagccgtccccgacgccgcca
 gactgtcttcggtgaatgca
 ```
 
-| ZZZZZ0000001 \[ACC\#\]                            | エントリのアクセッション番号     |
-| ABC1004AA60F1902 \[submitter's identifier\]       | 登録者が割り当てたＩＤ        |
-| 100 \[number of sequence count\]                  | リソースにおいて当該配列が得られた数 |
-| 9B \[map\]                                        | 配列の map 情報         |
-| lipidosis-related protein Lipidosin \[free text\] | 配列に関する情報（自由形式での記述） |
-| MGI:2385656 \[db\_xref1(,db\_xref2,...)\]         | 配列に関する外部データベース情報   |
-| gactgtcttcggtgaatgca                              | エントリの塩基配列          |
+| ```ZZZZZ0000001``` \[ACC\#\]                            | エントリのアクセッション番号     |
+| ```ABC1004AA60F1902``` \[submitter's identifier\]       | 登録者が割り当てたＩＤ        |
+| ```100``` \[number of sequence count\]                  | リソースにおいて当該配列が得られた数 |
+| ```9B``` \[map\]                                        | 配列の map 情報         |
+| ```lipidosis-related protein Lipidosin``` \[free text\] | 配列に関する情報（自由形式での記述） |
+| ```MGI:2385656``` \[db\_xref1(,db\_xref2,...)\]         | 配列に関する外部データベース情報   |
+| ```gactgtcttcggtgaatgca```                              | エントリの塩基配列          |
 

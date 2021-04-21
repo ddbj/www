@@ -59,11 +59,11 @@ DDBJでは、taxonomy database を検索するためのシステム
 - 配列が同一であること と サンプルが同種に由来すること は別の事象です。
 
 taxonomy database に登録されていない「生物名」の場合は、塩基配列の登録の際に、その由来生物名を DDBJ から taxonomy database に登録申請いたします。  
-このときtaxonomy database に登録された「生物名」は塩基配列が公開された際に、公開されます。  
+このとき taxonomy database に登録された「生物名」は塩基配列が公開された際に、公開されます。  
 
 <a name="private"></a>
 DDBJ から当該塩基配列データが公開されるまでは、taxonomy database においても、「生物名」は公開されません。  
-また、taxonomy database に登録された生物名であっても、必要であれば、いつでも生物名の更新をご依頼ください。  
+必要に応じて、塩基配列データの公開、生物名の更新をご依頼ください。  
 更新依頼は、[登録データの修正・更新](/ddbj/update.html)をご参照ください。
 
 原則として、「生物名」には、taxonomy database における "scientific name" 以外は、記載できませんが、taxonomy database における synonym あるいは lineage などの扱いに疑問がある場合は、典拠となる論文などを示していただくことにより、taxonomy database の修正を管理者に依頼し検討することができます。  
@@ -131,7 +131,7 @@ h. taxonomy database に未登録で、学名が確立している場合
 また、このとき [sub_species](/ddbj/qualifiers.html#sub_species), [variety](/ddbj/qualifiers.html#variety), [serotype](/ddbj/qualifiers.html#serotype), [strain](/ddbj/qualifiers.html#strain) の該当 qualifier をあわせて source
 feature に記載します。
 
-<pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Pan troglodytes troglodytes"
+<pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Pan troglodytes troglodytes"
                      /<a href="/ddbj/qualifiers.html#sub_species">sub_species</a>="troglodytes"
 </code></pre> 
 
@@ -141,7 +141,7 @@ feature に記載します。
 に含めて記載していましたが、現在は学名のみの記載を原則としています。  
 strain 名は [strain](/ddbj/qualifiers.html#strain) qualifier に記載してください。
 
-<pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Candida albicans"
+<pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Candida albicans"
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="WO-1"
 </code></pre>  
 
@@ -156,7 +156,7 @@ strain 名は [strain](/ddbj/qualifiers.html#strain) qualifier に記載して�
 
 下記の例のように [collection_date](/ddbj/qualifiers.html#collection_date) (採取した年月日)、[country](/ddbj/qualifiers.html#country) (採取した地名)、[host](/ddbj/qualifiers.html#host)、[strain](/ddbj/qualifiers.html#strain)、[serotype](/ddbj/qualifiers.html#serotype) などの該当 qualifier をあわせて source feature に記載します。
 
-<pre><code>                  /<a href="/ddbj/qualifiers.html#country">country</a>="Japan:Tokyo"
+<pre><code>                   /<a href="/ddbj/qualifiers.html#country">country</a>="Japan:Tokyo"
                    /<a href="/ddbj/qualifiers.html#collection_date">collection_date</a>="2007-11-01"
                    /<a href="/ddbj/qualifiers.html#host">host</a>="Gallus gallus"
                    /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="viral cRNA"
@@ -206,13 +206,13 @@ taxonomy database 登録申請のための参考情報
 
 登録の際には、「生物名」に含めた下位の rank、[strain](/ddbj/qualifiers.html#strain), [isolate](/ddbj/qualifiers.html#isolate)などに該当する qualifier をあわせて source feature に記載します。
 
-<pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp."
+<pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp."
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
 微生物の全ゲノム規模の配列に該当する場合、あるいは、真核生物 (真菌を除く) の場合は、判明している範囲の lineage、多くの場合 属名、を用いて、"\<属名\> sp."などとした上で、strain などの名称を organism に含めて記載しています。  
 その場合も strain 名を [strain](/ddbj/qualifiers.html#strain) qualifier に記載してください。
 
-<pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
+<pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
 #### 2-2. 新種提唱の場合  {#new}
@@ -220,7 +220,11 @@ taxonomy database 登録申請のための参考情報
 学名提唱中のため種名が未確定の場合、「生物名」の一意性を保つために、判明している範囲の lineage、多くの場合、属名を用いて、"\<属名\> sp."などとした上で、その下位の rank
 ([strain](/ddbj/qualifiers.html#strain)、[isolate](/ddbj/qualifiers.html#isolate), [clone](/ddbj/qualifiers.html#clone), etc) を並記します。  
 この運用により、例えば、異なる生物が同じものと混同されるなどの混乱を避けることができます。  
-なお、一時的に taxonomy database に登録された生物名であっても、正しい学名がわかり次第いつでも生物名を変更することができます。  
+DDBJ から当該塩基配列データが公開されるまでは、taxonomy database においても、「生物名」も公開されません。  
+このような taxonomy database に登録された一時的な仮称は、正しい学名が確認できた段階で、その学名に更新変更します。  
+種を報告する論文が公開された際に、論文情報更新、生物名修正、データ公開を依頼するご連絡をお願いいたします。  
+更新依頼は、[登録データの修正・更新](/ddbj/update.html)をご参照ください。
+公開前に変更を依頼していただければ、通常、仮称が公表されることはありません。  
 
 書式
 
@@ -237,7 +241,7 @@ taxonomy database 登録申請のための参考情報
 登録の際には、「生物名」に含めた下位の rank、[strain](/ddbj/qualifiers.html#strain)などに該当する
 qualifier をあわせて source feature に記載します。
 
-<pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
+<pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
 taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から検索不能な場合、登録時に以下の参考情報を可能な範囲でお知らせください。
@@ -273,7 +277,7 @@ taxonomy database 登録申請のための参考情報
 
 環境サンプルの場合、必須な[environmental_sample](/ddbj/qualifiers.html#environmental_sample) qualifier、および、[isolation_source](/ddbj/qualifiers.html#isolation_source) qualifier などでサンプリングの過程・状態などをあわせて source feature に記載します。
 
-<pre><code>                    /<a href="/ddbj/qualifiers.html#clone">clone</a>="4-11"
+<pre><code>                     /<a href="/ddbj/qualifiers.html#clone">clone</a>="4-11"
                      /<a href="/ddbj/qualifiers.html#environmental_sample">environmental_sample</a>
                      /<a href="/ddbj/qualifiers.html#isolation_source">isolation_source</a>="PCR-derived sequence from sediment"
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"

@@ -202,9 +202,8 @@ The definition briefly describes the information of gene(s). "DEFINITION" is con
 
 Complete sequence of maize catalase coding gene
 : 
-  ```
-  DEFINITION  Zea mays Cat3 gene for catalase, complete cds.
-  ```
+<pre class="code flat-file"><code>  DEFINITION  Zea mays Cat3 gene for catalase, complete cds.
+</code></pre>
 
 : Format: [organism name] [gene name] gene for [product name], complete cds.
   - organism name: The scientific name is indicated as the organism name, in principle.
@@ -214,10 +213,9 @@ Complete sequence of maize catalase coding gene
 
 Partial sequence of human glyceraldehyde-3-phosphate dehydrogenase coding cDNA
 : 
-  ```
-  DEFINITION  Homo sapiens mRNA for glyceraldehyde-3-phosphate 
+<pre class="code flat-file"><code>  DEFINITION  Homo sapiens mRNA for glyceraldehyde-3-phosphate 
               dehydrogenase, partial cds.
-  ```
+</code></pre>
 
 : Format: [organism name] mRNA for [product name], partial cds.
 
@@ -226,10 +224,9 @@ Partial sequence of human glyceraldehyde-3-phosphate dehydrogenase coding cDNA
 
 Partial sequence of Bacillus 16S rRNA
 : 
-  ```
-  DEFINITION  Bacillus sp. AZ25 gene for 16S rRNA, partial 
+<pre class="code flat-file"><code>  DEFINITION  Bacillus sp. AZ25 gene for 16S rRNA, partial 
               sequence.
-  ```
+</code></pre>
 
 : Format: [organism name] [strain name] gene for [product name], partial sequence.
   - In cases of unidentified species, comparison of intraspecies, and so on, describe name of strain, isolate or some, as identifier.
@@ -237,11 +234,10 @@ Partial sequence of Bacillus 16S rRNA
 
 Multiple CDS of rat mitochondrial DNA
 : 
-  ```
-  DEFINITION  Rattus norvegicus mitochondrial genes for cytochrome 
+<pre class="code flat-file"><code>  DEFINITION  Rattus norvegicus mitochondrial genes for cytochrome 
               c oxidase subunit II, ATPase subunit 6, cytochrome c 
               oxidase subunit III, partial and complete cds.
-  ```
+</code></pre>
 
 : Format: [organism name] [gene name 1], [gene name 2], .... genes for [product name 1], [product name 2], ..... , partial and complete cds.
 
@@ -254,28 +250,25 @@ Multiple CDS of rat mitochondrial DNA
 
 EST data of human liver 3' end
 : 
-  ```
-  DEFINITION  Homo sapiens cDNA, clone:ABC123, 3' end, expressed 
+<pre class="code flat-file"><code>  DEFINITION  Homo sapiens cDNA, clone:ABC123, 3' end, expressed 
               in liver.
-  ```
+</code></pre>
 
 : Format: [organism name] cDNA, clone:[clone name], [other information].
 : - The clone name is mandatory.
 
 GSS data of mouse chromosome 1q
 : 
-  ```
-  DEFINITION  Mus musculus DNA, clone:1H11A14, 1q region.
-  ```
+<pre class="code flat-file"><code>  DEFINITION  Mus musculus DNA, clone:1H11A14, 1q region.
+</code></pre>
   Format: [organism name] DNA, clone:[clone name], [other information].
   - The clone name is mandatory.
 
 TPA (Third Party Data) of human GAPD
 : 
-  ```
-  DEFINITION  TPA_exp: Homo sapiens GAPD mRNA forglyceraldehyde-3-phosphate 
+<pre class="code flat-file"><code>  DEFINITION  TPA_exp: Homo sapiens GAPD mRNA forglyceraldehyde-3-phosphate 
               dehydrogenase, complete cds.
-  ```
+</code></pre>
 
 : Format: [TPA header]: [organism name] [gene name] mRNA for [product name], complete cds.
 
@@ -295,9 +288,8 @@ Conventional sequence data
 : If multiple entries are united to an entry, or if an entry is extensively modified after the submission, the responsible data banks may assign a new accession number to it. In these cases, the new accession number is called the primary accession number, and the old accession number(s) is/are called the secondary accession number(s). In the flat file, the primary accession number is indicated first, then the secondary accession number(s) follows. You can find the same updated entry with both the primary and the secondary accession numbers.
 
 : 
-  ```
-  ACCESSION   AB999999 AB888888 AB777777
-  ```
+<pre class="code flat-file"><code>  ACCESSION   AB999999 AB888888 AB777777
+</code></pre>
 
 : 
   |  ```AB999999```  |  primary accession number  |
@@ -313,9 +305,8 @@ Bulk sequence data; WGS, TSA, TLS
   The set_version goes up for every update of the dataset. Example:ZZZZ02000001
 
 : 
-  ```
-  ACCESSION   ZZZZ01000001 ZZZZ01000000
-  ```
+<pre class="code flat-file"><code>  ACCESSION   ZZZZ01000001 ZZZZ01000000
+</code></pre>
 : 
   | ```ZZZZ01000001``` | primary accession number   |
   | ```ZZZZ01000000``` | set ID   |
@@ -332,9 +323,8 @@ For MGA data
   \*1 The information about each project id is avilable at the [project_index ](https://ddbj.nig.ac.jp/public/ddbj_database/mga/project_index-e.html) page.<br>\*2 "resource" here means a unit of identical origin, such as tissue, cells, from which sequence are obtained.
 
 : 
-  ```
-  ACCESSION   ZZZZZ0000000
-  ```
+<pre class="code flat-file"><code>  ACCESSION   ZZZZZ0000000
+</code></pre>
 : 
   | ```ZZZZZ0000000``` | number to a resource unit   |
 
@@ -347,9 +337,8 @@ This line consists of an accession number and a version number, like "AB123456.1
 
 The data open to public for the first time is version number as "1". The reason for adding VERSION is that since a released sequence sometimes revised by the submitter, the accession number alone cannot specify the sequence in question causing the user a trouble. The number is increased by one every time when a revised sequence is made public. And accession number will NOT be changed generally.
 
-```
-VERSION      AB000000.1
-```
+<pre class="code flat-file"><code>  VERSION      AB000000.1
+</code></pre>
 
 | ```AB000000``` | accession number   |
 | ```1``` | version number   |
@@ -359,9 +348,8 @@ For MGA data
 Since the sequence of an MGA entry is not allowed to update, the version number has to be "1".
 
 : 
-  ```
-  VERSION    ZZZZZ0000000.1
-  ```
+<pre class="code flat-file"><code>  VERSION    ZZZZZ0000000.1
+</code></pre>
 
 : | ```ZZZZZ000000```  | number to a resource unit |
   | ```1```   | version number   |  
@@ -375,11 +363,10 @@ The DBLINK line is used to link other databases for BioProject, BioSample access
 
 DDBJ has replaced the PROJECT line by DBLINK line format since 2009 to expand for other data resources than projects.
 
-```
-DBLINK      BioProject:PRJDA12345
+<pre class="code flat-file"><code>DBLINK      BioProject:PRJDA12345
             BioSample:SAMD01234567
             Sequence Read Archive:DRR012345, DRR012346     
-```
+</code></pre>
 
 | ```BioProject``` | The name of linked database: [BioProject Database](/bioproject/index-e.html) |
 | ```PRJDA12345``` | Linked ID in the database; BioProject accession number   |
@@ -407,9 +394,8 @@ For now, KEYWORDS lines are used to indicate [the detail category of the data](/
 
 This line shows the scientific name (and common name, if defined) on organism from which the sequence is obtained and an organelle type if the sequence is derived from an organelle other than the nucleus.
 
-```
-SOURCE      Homo sapiens (human)
-```
+<pre class="code flat-file"><code>SOURCE      Homo sapiens (human)
+</code></pre>
 
 | ```Homo sapiens (human)``` | The scientific name from which the sequence is obtained. |
 
@@ -424,11 +410,10 @@ The scientific name is indicated as the organism name in 1st line. If the sequen
 
 The phylogenic lineage information based on the Unified Taxonomy Database is started from 2nd line.
 
-```
-  ORGANISM  Homo sapiens
+<pre class="code flat-file"><code>  ORGANISM  Homo sapiens
             Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi
             Mammalia; Eutheria; Primates; Catarrhini; Hominidae; Homo.
-```
+</code></pre>
 
 | ```Homo sapiens``` | The scientific name from which the sequence is obtained |
 | ```Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria; Primates; Catarrhini; Hominidae; Homo.``` | The phylogenic lineage information of Homo sapiens |
@@ -442,9 +427,8 @@ The information of submitter(s) is described as REFERENCE 1 (except old entries 
 
 In the case of [Nucleotide Sequence Submission System](/ddbj/web-submission-e.html), REFERENCE 1 is processed with the information entered on "Contact person" and "Submitter" pages. In the case of Mass Submission System, REFERENCE 1 is processed with the information entered in annotation file.
 
-```
-REFERENCE   1   (bases 1 to 450)
-```
+<pre class="code flat-file"><code>REFERENCE   1   (bases 1 to 450)
+</code></pre>
 
 Notice: The portion, "(bases 1 to 450)", is not available on the Master record of MGA data.
 
@@ -455,9 +439,8 @@ Notice: The portion, "(bases 1 to 450)", is not available on the Master record o
 
 Submitter(s) of the entry is/are indicated in principle. Submitter is responsible for the data and can update it.
 
-```
- AUTHORS   Mishima,H. and Shizuoka,T.
-```
+<pre class="code flat-file"><code>  AUTHORS   Mishima,H. and Shizuoka,T.
+</code></pre>
 
 | ```Mishima,H. and Shizuoka,T``` | The submitters of this entry |
 
@@ -468,9 +451,8 @@ Submitter(s) of the entry is/are indicated in principle. Submitter is responsibl
 
 "Direct Submission" is indicated to follow the standard form.
 
-```
-  TITLE     Direct Submission
-```
+<pre class="code flat-file"><code>  TITLE     Direct Submission
+</code></pre>
 
 
 <div id="JournalB" markdown="1">
@@ -480,41 +462,38 @@ Submitter(s) of the entry is/are indicated in principle. Submitter is responsibl
 At first, "Accept Date" of the entry is indicated. "Accept Date" is defined as the date when DDBJ have received the acceptable data to assign accession number in principle.
 Even if the entry is updated, "Accept Date" is NOT changed. Then, the information about the address and the affiliation of "Contact Person" is indicated.
 
-```
-  JOURNAL   Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.
+<pre class="code flat-file"><code>  JOURNAL   Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
-```
+</code></pre>
 
 | ```Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.``` | Accept date of this entry is 30-NOV-2008 |
 | ```Contact:Hanako Mishima```<br>```National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,```<br> ```Mishima, Shizuoka 411-8540, Japan``` | The information about the address and the affiliation of Hanako Mishima. |
 
 E-mail address, phone & fax nos.
 
-  - To follow the Japanese law of protecting personal information, DDBJ will delete both phone and fax numbers, and E-mail address from the flat files of the entries submitted to DDBJ.However, if you wish to disclose any of the three items, please contact us with [contact form](/contact-ddbj-e.html#to-ddbj), specifying the item(s) to be disclosed.
+  - To follow the Japanese law of protecting personal information, DDBJ will delete both phone and fax numbers, and E-mail address from the flat files of the entries submitted to DDBJ.However, if you wish to disclose any of the three items, please contact us with [contact form](/contact-ddbj-e.html#to-ddbj),?specifying the item(s) to be disclosed.
   - When you wish to contact to the submitter(s) of an entry of your interest,please contact us with [the inquiry form](/contact-ddbj-e.html#to-submitters) with reasons briefly;i.e. asking to transfer cloned sequences, etc, then we will forward your messeage to the submitter(s).
 
 Phone and fax numbers and E-mail address are deleted.
 
-```
-  JOURNAL   Submitted (30-NOV-2000) to the DDBJ/EMBL/GenBank databases.
+<pre class="code flat-file"><code>  JOURNAL   Submitted (30-NOV-2000) to the DDBJ/EMBL/GenBank databases.
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
-```
+</code></pre>
 
 When the submitters wish to keep their contact information disclosed, it will be described as,
 
-```
-  JOURNAL   Submitted (30-NOV-2000) to the DDBJ/EMBL/GenBank databases.
+<pre class="code flat-file"><code>  JOURNAL   Submitted (30-NOV-2000) to the DDBJ/EMBL/GenBank databases.
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
             E-mail :mishima@supernig.nig.ac.jp
             Phone  :81-55-981-6853
             Fax    :81-55-981-6849
-```
+</code></pre>
 
 
 <div id="Reference2B" markdown="1">
@@ -527,12 +506,11 @@ When DDBJ notices a paper publication with an accession number, DDBJ will update
 
 In the cases of the manuscript in preparation, submitted for publication, in press, or published
 : 
-  ```
-  REFERENCE   2
+<pre class="code flat-file"><code>  REFERENCE   2
     AUTHORS   Mishima,H., Shizuoka,T. and Fuji,I.
     TITLE     Glyceraldehyde-3-phosphate dehydrogenase expressed in human liver
     JOURNAL   Unpublished (2009)
-  ```
+</code></pre>
 
 : | ```AUTHORS``` | The (presumptive) author(s) of the reference is/are described. |
   | ```TITLE``` | The (presumptive) title of the reference is described. |
@@ -540,12 +518,11 @@ In the cases of the manuscript in preparation, submitted for publication, in pre
 
 In the case of no schedule for publication except the international nucleotide database.
 : 
-  ```
-  REFERENCE   2
+<pre class="code flat-file"><code>  REFERENCE   2
     AUTHORS   Mishima,H., Shizuoka,T. and Fuji,I.
     TITLE     Glyceraldehyde-3-phosphate dehydrogenase expressed in human liver
     JOURNAL   Published Only in Database(2009)
-  ```
+</code></pre>
 
 : | ```AUTHORS``` | The author(s) of the submission entered by submitter(s) is/are described. |
   | ```TITLE``` | The title of the submission entered by submitter(s) is described. |
@@ -558,22 +535,20 @@ In the case of no schedule for publication except the international nucleotide d
 
 The information about an entry that can not be described using FEATURES or the other fields. For instance, if submitter has the other affiliation to [REFERENCE 1](#Reference1B), it can be described on COMMENT line.
 
-```
-COMMENT     Human cDNA sequencing project.
-```
+<pre class="code flat-file"><code>  COMMENT     Human cDNA sequencing project.
+</code></pre>
 
 Structured COMMENT  
 : Structured COMMENT is a format to describe and to share some datasets undefined in feature/qualifier.<br>SUsing structured COMMENTs, datasets can be shared via flatfiles of INSDC in the community of submitters and users.<br>To describe structured COMMENT, the dataset is required to be describe in structured sets of [names of items] and [values of items] on COMMENT line.<br>There are some predetermined formats of structured COMMENTs that are required to submit some kinds of sequence data derived from genome projects (including[WGS](/ddbj/wgs-e.html), transcriptome projects (including [TSA](/ddbj/tsa-e.html)) and so on.
 : 
-  ```
-  COMMENT     ##Genome-Assembly-Data-START##
+<pre class="code flat-file"><code>  COMMENT     ##Genome-Assembly-Data-START##
               Finishing Goal           :: Finished
               Current Finishing Status :: High Quality Draft
               Assembly Method          :: Newbler v. 2.3
               Genome Coverage          :: 30x
               Sequencing Technology    :: 454 GS Junior; Illumina GA II
               ##Genome-Assembly-Data-END##
-  ```
+</code></pre>
 :   
   The above example is an additional information, "Genome-Assembly-Data", that is required for genome projects.<br>The contents between ##Genome-Assembly-Data-START## and ##Genome-Assembly-Data-END## are delimited item names and their values by " :: ".
 
@@ -588,8 +563,7 @@ Structured COMMENT
 For MGA data
 : For [MGA Submission](/ddbj/mga-e.html), the process for obtaining the submitted sequence data e.g.; (methods for preparing sequences from tissues or cells and processing the sequences for submission) is described.
 : 
-  ```
-  COMMENT     The CAGE (cap analysis gene expression) is based on preparation
+<pre class="code flat-file"><code>  COMMENT     The CAGE (cap analysis gene expression) is based on preparation
               and sequencing of concatamers of DNA tags deriving from the
               initial 20/21 nucleotides from 5' end mRNAs.
               Full-length cDNAs were at first selected with the Cap-Trapper
@@ -621,7 +595,7 @@ For MGA data
               Linker1: "Upper oligonucleotide GN6":
               biotin-agagagagacctcgagtaactataacggtcctaaggtagcgacctagg (5 bp)
               tccgacGNNNNN and "Upper oligonucleotide N6":
-  ```
+</code></pre>
 
 
 <div id="FeaturesB" markdown="1">
@@ -640,8 +614,7 @@ Feature keys are briefly classified into 3 groups;
 
 One of the most frequently used feature key is "CDS" to describe coding sequence for protein. See also [CDS feature](/ddbj/cds-e.html) page.
 
-```
-FEATURES             Location/Qualifiers
+<pre class="code flat-file"><code>FEATURES             Location/Qualifiers
      source          1..450
                      /chromosome="12"
                      /clone="GT200015"
@@ -661,7 +634,7 @@ FEATURES             Location/Qualifiers
                      /translation="MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT
                      YMFKYDTVHGQWKHHEVKVKDSKTLLFGEKEVTVFGCRNPKEIPWGETSAEFVVEYTG
                      VFTDKDKAVAQLKGGAKKV"
-```
+</code></pre>
 
 
 <div id="FeaturesSourceB" markdown="1">

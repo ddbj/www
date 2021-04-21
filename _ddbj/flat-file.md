@@ -193,9 +193,9 @@ b: 生物分類に基づかない分類
 
 トウモロコシ catalase gene の完全配列
 : 
-  ```
-  DEFINITION  Zea mays Cat3 gene for catalase, complete cds.
-  ```
+<pre class="code flat-file"><code>  DEFINITION  Zea mays Cat3 gene for catalase, complete cds.
+</code></pre>
+
 
 : 書式: \[organism name\] \[gene name\] gene for \[product name\], complete cds.
   - organism name は原則としてscientific name.
@@ -205,10 +205,10 @@ b: 生物分類に基づかない分類
 
 ヒト glyceraldehyde-3-phosphate dehydrogenase の cDNA 部分配列
 : 
-  ```
-  DEFINITION  Homo sapiens mRNA for glyceraldehyde-3-phosphate 
+<pre class="code flat-file"><code>  DEFINITION  Homo sapiens mRNA for glyceraldehyde-3-phosphate 
               dehydrogenase, partial cds.
-  ```
+</code></pre>
+
 
 : 書式: \[organism name\] mRNA for \[product name\], partial cds.
   - gene name が記載されていない場合は省略。
@@ -216,10 +216,9 @@ b: 生物分類に基づかない分類
 
 Bacillus 属 16S rRNA の部分配列
 : 
-  ```
-  DEFINITION  Bacillus sp. AZ25 gene for 16S rRNA, partial 
+<pre class="code flat-file"><code>  DEFINITION  Bacillus sp. AZ25 gene for 16S rRNA, partial 
               sequence.
-  ```
+</code></pre>
 
 : 書式: \[organism name\] \[strain name\] gene for \[product name\], partial sequence.
   - 種を特定できない場合、種内比較の場合などでは strain name などを識別子として記載。
@@ -227,11 +226,10 @@ Bacillus 属 16S rRNA の部分配列
 
 複数の CDS がある ラット mitochondria DNA の配列
 : 
-  ```
-  DEFINITION  Rattus norvegicus mitochondrial genes for cytochrome 
+<pre class="code flat-file"><code>  DEFINITION  Rattus norvegicus mitochondrial genes for cytochrome 
               c oxidase subunit II, ATPase subunit 6, cytochrome c 
               oxidase subunit III, partial and complete cds.
-  ```
+</code></pre>
 
 : 書式: \[organism name\] \[gene name 1\], \[gene name 2\], .... genes for \[product name 1\], \[product name 2\], ..... , partial and complete cds.
   - 5'側から3'側へ順番に gene name, product name をならべる
@@ -244,29 +242,26 @@ Bacillus 属 16S rRNA の部分配列
 
 ヒト肝臓 EST の 3'末端の配列
 : 
-  ```
-  DEFINITION  Homo sapiens cDNA, clone:ABC123, 3' end, expressed 
+<pre class="code flat-file"><code>  DEFINITION  Homo sapiens cDNA, clone:ABC123, 3' end, expressed 
               in liver.
-  ```
+</code></pre>
 
 : 書式: \[organism name\] cDNA, clone:\[clone name\], \[その他の情報\].
   - clone name の記載が必要。
 
 マウス chromosome 1q の GSS
 : 
-  ```
-  DEFINITION  Mus musculus DNA, clone:1H11A14, 1q region.
-  ```
+<pre class="code flat-file"><code>  DEFINITION  Mus musculus DNA, clone:1H11A14, 1q region.
+</code></pre>
 
 : 書式: \[organism name\] DNA, clone:\[clone name\], \[その他の情報\].
   - clone name の記載が必要。
 
 ヒト GAPD，TPA (Third Party Data) の配列
 : 
-  ```
-  DEFINITION  TPA_exp: Homo sapiens GAPD mRNA forglyceraldehyde-3-phosphate 
+<pre class="code flat-file"><code>  DEFINITION  TPA_exp: Homo sapiens GAPD mRNA forglyceraldehyde-3-phosphate 
               dehydrogenase, complete cds.
-  ```
+</code></pre>
 
 : 書式: \[TPA header\]: \[organism name\] \[gene name\] mRNA for \[product name\], complete cds.
   - [TPA (Third Party data)](/ddbj/tpa.html) のデータの場合、TPA\_exp: (TPA:experimental の場合)、または、TPA\_inf: (TPA:inferential の場合) が行頭に記述される。
@@ -284,9 +279,8 @@ Conventional sequence data
 : 複数のエントリを統合した場合や、データ登録後に内容が大幅に変更された場合などには、新規にアクセッション番号を発行することがあります。この際、新規のアクセッション番号（プライマリアクセッション番号）に対して、既存のアクセッション番号はセカンダリアクセッション番号となります。フラットファイルには先頭にプライマリアクセッション番号、２つ目以降にセカンダリアクセッション番号を記載します。プライマリアクセッション番号、あるいはセカンダリアクセッション番号、どちらの番号で検索しても，同じ変更後のデータが検索されます。
 
 : 
-  ```
-  ACCESSION   AB999999 AB888888 AB777777
-  ```
+<pre class="code flat-file"><code>  ACCESSION   AB999999 AB888888 AB777777
+</code></pre>
 
 : 
   |  ```AB999999```  |  プライマリアクセッション番号  |
@@ -301,9 +295,8 @@ Bulk sequence data; WGS, TSA, TLS
 : 
   データセットが更新されるとデータセットのバージョン番号が上がります。 例：ZZZZ02000001
 : 
-  ```
-  ACCESSION   ZZZZ01000001 ZZZZ01000000
-  ```
+<pre class="code flat-file"><code>  ACCESSION   ZZZZ01000001 ZZZZ01000000
+</code></pre>
 : 
   | ```ZZZZ01000001``` | プライマリアクセッション番号   |
   | ```ZZZZ01000000``` | セットＩＤ   |
@@ -320,9 +313,8 @@ MGA データ
   \*1 各プロジェクトIDに関しては[プロジェクトインデックス](https://ddbj.nig.ac.jp/public/ddbj_database/mga/project_index.html) をご参照ください。<br>\*2 リソースとは得られた配列の由来が同一であるものの単位を指します。
 
 : 
-  ```
-  ACCESSION   ZZZZZ0000000
-  ```
+<pre class="code flat-file"><code>  ACCESSION   ZZZZZ0000000
+</code></pre>
 : 
   | ```ZZZZZ0000000``` | リソースセットに対するアクセッション番号   |
 
@@ -336,9 +328,8 @@ MGA データ
 はじめて公開されたデータは、バージョン番号は "1"
 が記載されています。当該エントリの配列が訂正・更新された場合には、バージョン番号が更新されます。通常、配列が訂正・更新された場合にアクセッション番号が変更されることはありません。
 
-```
-VERSION      AB000000.1
-```
+<pre class="code flat-file"><code>VERSION      AB000000.1
+</code></pre>
 
 | ```AB000000``` | アクセッション番号   |
 | ```1``` | バージョン番号   |
@@ -348,9 +339,8 @@ MGA データ
 MGA では配列の更新を認めておりませんので、バージョン番号は「１」のままとなります。
 
 : 
-  ```
-  VERSION    ZZZZZ0000000.1
-  ```
+<pre class="code flat-file"><code>  VERSION    ZZZZZ0000000.1
+</code></pre>
 
 : | ```ZZZZZ000000```  | 登録番号 |
   | ```1```   | バージョン番号    |  
@@ -365,11 +355,10 @@ accession number 他、特定データベースへのリンクを記載します
 
 DBLINK 行は 2009 年に記載情報を拡張したため PROJECT 行から変更されました。
 
-```
-DBLINK      BioProject:PRJDA12345
+<pre class="code flat-file"><code>DBLINK      BioProject:PRJDA12345
             BioSample:SAMD01234567
             Sequence Read Archive:DRR012345, DRR012346     
-```
+</code></pre>
 
 | ```BioProject``` | リンクしているデータベースの名称: [BioProject Database](/bioproject/index.html) |
 | ```PRJDA12345``` | データベースにおいてリンクしている ID: BioProject accession number   |
@@ -400,9 +389,8 @@ methodological keywords](/ddbj/keyword-e.html) もご参照ください。
 配列データが由来する生物の学名 (と存在する場合は一般名) を Taxonomy Database
 の登録に基づいて示します。また、核由来でない場合はオルガネラタイプも示します。
 
-```
-SOURCE      Homo sapiens (human)
-```
+<pre class="code flat-file"><code>SOURCE      Homo sapiens (human)
+</code></pre>
 
 | ```Homo sapiens (human)``` | 配列データが由来する生物の学名と一般名 |
 
@@ -417,11 +405,10 @@ SOURCE      Homo sapiens (human)
 
 ２行目以降に Unified Taxonomy Database に基づく生物学的分類が記述されています。
 
-```
-  ORGANISM  Homo sapiens
+<pre class="code flat-file"><code>  ORGANISM  Homo sapiens
             Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi
             Mammalia; Eutheria; Primates; Catarrhini; Hominidae; Homo.
-```
+</code></pre>
 
 | ```Homo sapiens``` | 配列データが由来する生物の学名と一般名 |
 | ```Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia; Eutheria; Primates; Catarrhini; Hominidae; Homo.``` | Homo sapiens 系統 (lineage) |
@@ -437,9 +424,8 @@ SOURCE      Homo sapiens (human)
 [塩基配列登録システム](/ddbj/web-submission.html)をご利用いただいた場合には Contact person と Submitter
 の入力内容に基づいて作成されます。MSS をご利用いただいた場合は登録時のファイルに基づいて作成されます。
 
-```
-REFERENCE   1   (bases 1 to 450)
-```
+<pre class="code flat-file"><code>REFERENCE   1   (bases 1 to 450)
+</code></pre>
 
 注意：MGA データの Master record 上では "(bases 1 to 450)" の部分が表示されません
 
@@ -452,9 +438,8 @@ REFERENCE   1   (bases 1 to 450)
 とは、原則として、登録内容に責任を持つことが出来る人で登録内容に変更を加える
 (update する) 権利を有します。
 
-```
- AUTHORS   Mishima,H. and Shizuoka,T.
-```
+<pre class="code flat-file"><code>  AUTHORS   Mishima,H. and Shizuoka,T.
+</code></pre>
 
 | ```Mishima,H. and Shizuoka,T``` | このエントリの登録者 |
 
@@ -465,9 +450,8 @@ REFERENCE   1   (bases 1 to 450)
 
 "Direct Submission" が常に表示されます。
 
-```
-  TITLE     Direct Submission
-```
+<pre class="code flat-file"><code>  TITLE     Direct Submission
+</code></pre>
 
 
 <div id="JournalB" markdown="1">
@@ -482,12 +466,11 @@ REFERENCE   1   (bases 1 to 450)
 ２行目以降には、[コンタクトパーソン (Contact person)](/ddbj/submission.html#contact)
 の氏名、所属等の情報が表示されます。
 
-```
-  JOURNAL   Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.
+<pre class="code flat-file"><code>  JOURNAL   Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
-```
+</code></pre>
 
 | ```Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.``` | このエントリが2008年11月30日に登録されたことを示します。 |
 | ```Contact:Hanako Mishima```<br>```National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,```<br> ```Mishima, Shizuoka 411-8540, Japan``` | このエントリのコンタクトパーソン（Hanako Mishima）の所属と住所が記載されます。 |
@@ -495,31 +478,29 @@ REFERENCE   1   (bases 1 to 450)
 E-mail アドレスと電話番号, FAX番号について
 
   - DDBJ への登録に関しましては，E-mail アドレスと電話番号,
-    FAX番号は原則，非表示としますが，表示しておく必要がある場合は， [DDBJ
-    へのお問い合わせ](/contact-ddbj.html#to-ddbj) からご連絡いただければ，個別に対応いたします。表示・非表示は「E-mailアドレス」「電話番号」「FAX番号」それぞれ個別に指定可能です。
-  - E-mailアドレスと電話番号，FAX番号を非表示の場合、研究上の問題に関して，各配列の登録者への連絡が必要な場合はメッセージを転送いたします。お手数ですが、[ DDBJエントリ登録者へのご質問・ご要望の転送フォーム](/contact-ddbj.html#to-submitters)からご連絡ください。その際は簡単な理由(「clone
+    FAX番号は原則，非表示としますが，表示しておく必要がある場合は，?[DDBJ
+    へのお問い合わせ](/contact-ddbj.html#to-ddbj)?からご連絡いただければ，個別に対応いたします。表示・非表示は「E-mailアドレス」「電話番号」「FAX番号」それぞれ個別に指定可能です。
+  - E-mailアドレスと電話番号，FAX番号を非表示の場合、研究上の問題に関して，各配列の登録者への連絡が必要な場合はメッセージを転送いたします。お手数ですが、[?DDBJエントリ登録者へのご質問・ご要望の転送フォーム](/contact-ddbj.html#to-submitters)からご連絡ください。その際は簡単な理由(「clone
     譲渡を希望」など)を書き添えてください。
 
 E-mailアドレスと電話番号，FAX番号が非表示の場合
 
-```
-  JOURNAL   Submitted (30-NOV-2000) to the DDBJ/EMBL/GenBank databases.
+<pre class="code flat-file"><code>  JOURNAL   Submitted (30-NOV-2000) to the DDBJ/EMBL/GenBank databases.
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
-```
+</code></pre>
 
 登録者が，E-mailアドレスと電話番号，FAX番号の表示をご希望の場合
 
-```
-  JOURNAL   Submitted (30-NOV-2000) to the DDBJ/EMBL/GenBank databases.
+<pre class="code flat-file"><code>  JOURNAL   Submitted (30-NOV-2000) to the DDBJ/EMBL/GenBank databases.
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
             E-mail :mishima@supernig.nig.ac.jp
             Phone  :81-55-981-6853
             Fax    :81-55-981-6849
-```
+</code></pre>
 
 
 <div id="Reference2B" markdown="1">
@@ -536,12 +517,11 @@ REFERENCE 2 以降に記載された投稿予定の論文情報は、関連す�
 
 登録する塩基配列に関する論文を投稿、あるいは、その準備をしている, または既に論文が出版されている場合
 : 
-  ```
-  REFERENCE   2
+<pre class="code flat-file"><code>  REFERENCE   2
     AUTHORS   Mishima,H., Shizuoka,T. and Fuji,I.
     TITLE     Glyceraldehyde-3-phosphate dehydrogenase expressed in human liver
     JOURNAL   Unpublished (2009)
-  ```
+</code></pre>
 
 : | ```AUTHORS``` | 論文の著者名、まだ出版されていない場合は予定される著者名が表示されます。 |
   | ```TITLE``` | 論文のタイトル、まだ出版されていない場合は予定されるタイトルが表示されます。 |
@@ -549,12 +529,11 @@ REFERENCE 2 以降に記載された投稿予定の論文情報は、関連す�
 
 データベース上でのみ公開し、今後、論文等を投稿しない場合
 : 
-  ```
-  REFERENCE   2
+<pre class="code flat-file"><code>  REFERENCE   2
     AUTHORS   Mishima,H., Shizuoka,T. and Fuji,I.
     TITLE     Glyceraldehyde-3-phosphate dehydrogenase expressed in human liver
     JOURNAL   Published Only in Database(2009)
-  ```
+</code></pre>
 
 : | ```AUTHORS``` | そのエントリの登録時に入力した Authors (論文の著者にあたる方) が表示されます。 |
   | ```TITLE``` | 登録時に入力した TITLE (論文のタイトルにあたるもの) が表示されます。 |
@@ -569,22 +548,20 @@ FEATURES/Location/Qualifiers
 で記述できないその他の情報やコメントなどが記載されています。例えば、登録者の所属が複数ある場合、[REFERENCE
 1](#Reference1B) で記載されていない方を記載することがあります。
 
-```
-COMMENT     Human cDNA sequencing project.
-```
+<pre class="code flat-file"><code>COMMENT     Human cDNA sequencing project.
+</code></pre>
 
 Structured COMMENT  
 : Structured COMMENT は feature/qualifier で未定義なデータセットを一群の登録で共有することを目的とした記載法です。<br>Structured COMMENTを利用して、登録者とデータ利用者のコミュニティでフラットファイルを介してデータセットを公開・共有することが可能になります。<br>データセットを \[項目名\] と \[項目の値\] の組で構造化された COMMENT 行に記載します。<br>genome project ([WGS](/ddbj/wgs.html) を含む), transcriptome project ([TSA](/ddbj/tsa.html) を含む) など一部の配列データ登録に際し、記載を義務付けられている structured COMMENT が存在します。
 : 
-  ```
-  COMMENT     ##Genome-Assembly-Data-START##
+<pre class="code flat-file"><code>  COMMENT     ##Genome-Assembly-Data-START##
               Finishing Goal           :: Finished
               Current Finishing Status :: High Quality Draft
               Assembly Method          :: Newbler v. 2.3
               Genome Coverage          :: 30x
               Sequencing Technology    :: 454 GS Junior; Illumina GA II
               ##Genome-Assembly-Data-END##
-  ```
+</code></pre>
 :   
   この例はゲノムプロジェクトで記載を義務付けている Genome-Assembly-Data という補足情報のデータセットです。<br>\#\#Genome-Assembly-Data-START\#\# と\#\#Genome-Assembly-Data-END\#\# の間にある記述内容は “ :: ” で区切られ、補足情報の項目とその値の組になっています。
 
@@ -599,8 +576,7 @@ Structured COMMENT
 MGA データの生成手法  
 : [MGA データ](/ddbj/mga.html)には、登録配列が生成されるまでの過程（シーケンス用サンプルの調製法、生の配列データから登録配列への処理方法など）が記載されています。
 : 
-  ```
-  COMMENT     The CAGE (cap analysis gene expression) is based on preparation
+<pre class="code flat-file"><code>  COMMENT     The CAGE (cap analysis gene expression) is based on preparation
               and sequencing of concatamers of DNA tags deriving from the
               initial 20/21 nucleotides from 5' end mRNAs.
               Full-length cDNAs were at first selected with the Cap-Trapper
@@ -632,7 +608,7 @@ MGA データの生成手法
               Linker1: "Upper oligonucleotide GN6":
               biotin-agagagagacctcgagtaactataacggtcctaaggtagcgacctagg (5 bp)
               tccgacGNNNNN and "Upper oligonucleotide N6":
-  ```
+</code></pre>
 
 
 <div id="FeaturesB" markdown="1">
@@ -656,8 +632,7 @@ Feature
 
 Feature key の中で、最も頻繁に使用されるのはタンパク質のコーディング領域を記述する CDS です。 [CDS feature](/ddbj/cds.html)の説明ページもご参照ください。
 
-```
-FEATURES             Location/Qualifiers
+<pre class="code flat-file"><code>FEATURES             Location/Qualifiers
      source          1..450
                      /chromosome="12"
                      /clone="GT200015"
@@ -677,7 +652,7 @@ FEATURES             Location/Qualifiers
                      /translation="MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT
                      YMFKYDTVHGQWKHHEVKVKDSKTLLFGEKEVTVFGCRNPKEIPWGETSAEFVVEYTG
                      VFTDKDKAVAQLKGGAKKV"
-```
+</code></pre>
 
 
 <div id="FeaturesSourceB" markdown="1">

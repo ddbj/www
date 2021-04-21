@@ -67,10 +67,8 @@ Common parts of information such as submitters, keywords (MGA and
 others), references, comments and so on. Master record is provided for
 every resource unit.
 
-Master record の例
-
-<pre><code>
-<a id="LocusA" href="/ddbj/flat-file-e#LocusB">LOCUS</a>       <a id="LocusNameA" href="/ddbj/flat-file-e#LocusNameB">ZZZZZ0000000</a>                       <a id="MoleculeTypeA" href="/ddbj/flat-file-e#MoleculeTypeB">mRNA</a>    <a id="ModificationDateA" href="/ddbj/flat-file-e#ModificationDateB">linear</a>   <a id="DivisionA" href="/ddbj/flat-file-e#DivisionB">ROD</a> <a id="ModificationDateA" href="/ddbj/flat-file-e#ModificationDateB">24-JAN-2005</a>
+<strong>Example</strong>
+<pre><code><a id="LocusA" href="/ddbj/flat-file-e#LocusB">LOCUS</a>       <a id="LocusNameA" href="/ddbj/flat-file-e#LocusNameB">ZZZZZ0000000</a>                       <a id="MoleculeTypeA" href="/ddbj/flat-file-e#MoleculeTypeB">mRNA</a>    <a id="ModificationDateA" href="/ddbj/flat-file-e#ModificationDateB">linear</a>   <a id="DivisionA" href="/ddbj/flat-file-e#DivisionB">ROD</a> <a id="ModificationDateA" href="/ddbj/flat-file-e#ModificationDateB">24-JAN-2005</a>
 <a id="DefinitionA" href="/ddbj/flat-file-e#DefinitionB">DEFINITION</a>  Mus musculus 1 month adult cerebellum short transcripts tag.
 <a id="AccessionA" href="#Accession_MGA">ACCESSION</a>   ZZZZZ0000000
 <a id="VersionA" href="/ddbj/flat-file-e#VersionB">VERSION</a>     ZZZZZ0000000.1
@@ -99,7 +97,7 @@ Master record の例
             sequences that have 15 variations for each rna sample) containing
             the ClassIIs restriction enzyme site MmeI was then ligated to the
             single-strand cDNA and then the second strand of cDNA synthesized.
-            (中略)
+            (omitted)
 <a id="FeaturesA" href="/ddbj/flat-file-e#FeaturesB">FEATURES</a>             Location/Qualifiers
      source          
                      /db_xref="taxon:10090"
@@ -122,10 +120,9 @@ All nucleotide sequences of the resource unit described in the Master
 record, and the items specific to each sequence, such as map location,
 count number of the sequence, and db_xrefs.
 
-Variable record の例
-
+<strong>Example</strong>
 ```
-  >ZZZZZ0000001|ABC1004AA60F1902|10|9B|lipidosis-related protein Lipidosin| 
+>ZZZZZ0000001|ABC1004AA60F1902|10|9B|lipidosis-related protein Lipidosin| 
 GI:2385656|
 gactgtcttcggtgaatgca
 >ZZZZZ0000002|ABC1003AE78G1607|5||||
@@ -138,11 +135,11 @@ gagtcgggtcggtggggctgt
 ggggaatctgcagcctgggc
 >ZZZZZ0000006|ABC1003AE67B0902|152||||
 gagccgtccccgacgccgcca
- (以下略) 
+ (Followings are omitted) 
 ```
 
-Format: >[ACC#]\|[submitter's identifier]\|[number of sequence
-count]\|[map]\|[free text]\|[db_xref1(,db_xref2,...)]\|
+| <strong>Format</strong>: | &gt;[ACC#]\|[submitter's identifier]\|[number of sequence count]\|[map]\|[free text]\|[db_xref1(,db_xref2,...)]\| |
+
 
   - One entry is consisted of "Header" line and nucleotide
     sequence.Header line starts ">" and follows six items related to
@@ -160,10 +157,10 @@ count]\|[map]\|[free text]\|[db_xref1(,db_xref2,...)]\|
 gactgtcttcggtgaatgca
 ```
 
-| ZZZZZ0000001 [ACC#]                            | accession number of the entry                    |
-| ABC1004AA60F1902 [submitter's identifier]       | identifier assigned by submitter to the entry    |
-| 100 [number of sequence count]                  | number of the count of this entry in the resouce |
-| 9B [map]                                        | map information                                  |
-| lipidosis-related protein Lipidosin [free text] | Map location (in this case, chromosome number)   |
-| MGI:2385656 [db_xref1(,db_xref2,...)]         | free-text-formatted description of the entry     |
-| gactgtcttcggtgaatgca                              | external database information of the entry       |
+| ```ZZZZZ0000001``` [ACC#]                            | accession number of the entry                    |
+| ```ABC1004AA60F1902``` [submitter's identifier]       | identifier assigned by submitter to the entry    |
+| ```100``` [number of sequence count]                  | number of the count of this entry in the resouce |
+| ```9B``` [map]                                        | map information                                  |
+| ```lipidosis-related protein Lipidosin``` [free text] | Map location (in this case, chromosome number)   |
+| ```MGI:2385656``` [db_xref1(,db_xref2,...)]         | free-text-formatted description of the entry     |
+| ```gactgtcttcggtgaatgca```                              | external database information of the entry       |
