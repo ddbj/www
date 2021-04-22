@@ -57,6 +57,17 @@ category: about
         </div>
         </li>
         <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/tanjo.jpg" title="丹生智也"></p>
+        <div class="explanation">
+            <p class="name">丹生 智也</p>
+            <p class="name">TANJO Tomoya, PhD</p>
+            <p class="position">助教</p>
+            <p class="position">データベース部門</p>
+        </div>
+        </li>
+    </ul> 
+    <ul class="list">
+       <li class="staff">
         <p class="photo"><img src="/assets/images/staff/kawashima.jpg" title="川島武士"></p>
         <div class="explanation">
             <p class="name">川島 武士</p>
@@ -65,8 +76,6 @@ category: about
             <p class="position">&nbsp;</p>
         </div>
         </li>
-    </ul> 
-    <ul class="list">
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/tanizawa.jpg" title="谷澤靖洋"></p>
             <div class="explanation">
@@ -147,7 +156,7 @@ category: about
         <div class="explanation">
             <p class="name">飯塚 朋代</p>
             <p class="name">IIZUKA Tomoyo, PhD</p>
-            <p class="position">データ登録</p>
+            <p class="position">データ登録：NSSS</p>
         </div>
         </li> 
         <li class="staff">
@@ -245,13 +254,6 @@ category: about
     </ul>
     <ul class="list">   
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/sakon.jpg" title="左近 雪絵"></p>
-        <div class="explanation">
-            <p class="name">左近 雪絵</p>
-            <p class="name">SAKON Yukie</p>
-        </div>
-        </li>
-        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/tsuzuki.jpg" title="鈴木　貴大"></p>
         <div class="explanation">
             <p class="name">鈴木　貴大</p>
@@ -259,19 +261,17 @@ category: about
         </div>
         </li>
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/watanabe.jpg" title="渡邊　康司"></p>
-        <div class="explanation">
-            <p class="name">渡邊 康司</p>
-            <p class="name">WATANABE Kouji</p>
-        </div>
-        </li>
-    </ul>  
-    <ul class="list">      
-        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yosida.jpg" title="吉田 昌弘"></p>
         <div class="explanation">
             <p class="name">吉田 昌弘</p>
             <p class="name">YOSHIDA Masahiro</p>
+        </div>
+        </li>
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/watanabe.jpg" title="渡邊　康司"></p>
+        <div class="explanation">
+            <p class="name">渡邊 康司</p>
+            <p class="name">WATANABE Kouji</p>
         </div>
         </li>
     </ul>  
