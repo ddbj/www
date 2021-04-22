@@ -58,7 +58,7 @@ NBDC 申請システムで自動入力させるため、アカウントに所属
 
 {% include image.html url="books/DS-JSUB.png" caption="提供申請と JGA submission ID" class="w250" %}
 
-JGA ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/submission/jga/ の下に Submission ID と同名のディレクトリが作成されるので、ここにメタデータをデータファイルを scp でアップロードします。この例であればディレクトリは /controlled-access/submission/jga/JSUB000353/ になります。
+JGA ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/submission/jga/ の下に Submission ID と同名のディレクトリが作成されるので、ここにメタデータをデータファイルを sftp でアップロードします。この例であればディレクトリは /controlled-access/submission/jga/JSUB000353/ になります。
 
 ## エクセルでのメタデータ作成  {#create-metadata-using-excel}
 
@@ -85,43 +85,38 @@ JGA にアップロードするファイル名には空白を含めないでく�
 ### エクセルをアップロード  {#upload-excel}
 
 <div class="attention" markdown="1">
-JGA にファイルを scp でアップロードするためには [D-way アカウントに center name と公開鍵を登録](/account.html#enable-dra-submission-in-account)する必要があります。また、JGA サーバへのアクセスは IP アドレスで制限されているので、NBDC に申請する際に接続元グローバル IP アドレスを伝えてください。
+JGA にファイルを sftp でアップロードするためには [D-way アカウントに center name と公開鍵を登録](/account.html#enable-dra-submission-in-account)する必要があります。JGA サーバに ssh ログインすることはできません。
 </div>
 
-JGA ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/submission/jga/ の下に JGA Submission ID と同名のディレクトリが作成されるので、scp の P オプションでポート番号 443 を指定して、エクセルをアップロードします。scp では公開鍵・秘密鍵認証を利用しており、必要に応じて[D-way アカウントに登録した秘密鍵](/account.html#generate-key-pair)を指定します。
+JGA ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/submission/jga/ の下に JGA Submission ID と同名のディレクトリが作成されるので、
+sftp の P オプションでポート番号 443 を指定してログインし、対象ディレクトリに移動しエクセルをアップロードします。
+sftp では公開鍵・秘密鍵認証を利用しており、[D-way アカウントに登録した秘密鍵](/account.html#generate-key-pair)を指定します。
 
 例
 - アカウント名: account_b
 - JGA Submission ID: JSUB000353
 
-認証用秘密鍵を指定する場合。転送対象ファイルは -P と -i オプションの後に指定します。
-
 ```
-$ scp -P443 -i private-key-for-auth JSUB000353_metadata.xlsx account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
+$ sftp -i private-key-for-auth -P 443 account_b@jga-gw.ddbj.nig.ac.jp
+$ cd controlled-access/submission/jga/JSUB000353
+$ put JSUB000353_metadata.xlsx 
 ```
+-i: 認証用秘密鍵を指定
 -P: 接続先ポート番号 443 を指定
--i: 認証用秘密鍵を指定
 
-JGA ファイルサーバに ssh でログインすることができます。
-```
-$ ssh -p443 -i private-key-for-auth account_b@jga-gw.ddbj.nig.ac.jp
-```
--p: 接続先ポート番号 443 を指定 (ssh の場合は小文字の p にします)
--i: 認証用秘密鍵を指定
+### WinSCP によるアップロード {#upload-excel-winsftp}
 
-### WinSCP によるアップロード {#upload-excel-winscp}
-
-[WinSCP (http://winscp.net/eng/download.php)](http://winscp.net/eng/download.php) をダウンロードし、Windows PC にインストールします。
+[WinSCP (http://winsftp.net/eng/download.php)](http://winsftp.net/eng/download.php) をダウンロードし、Windows PC にインストールします。
 
 以下のように設定します。
 
-転送プロトコル: SCP
+転送プロトコル: SFTP
 - ホスト名: jga-gw.ddbj.nig.ac.jp
 - ポート番号: 443
 - ユーザ名: D-way アカウント ID
 - パスワード: 空欄のまま
 
-{% include image.html url="books/jga-winscp1.jpg" caption="WinSCP 接続情報の入力" class="w400" %}
+{% include image.html url="books/jga-winscp-sftp1.jpg" caption="WinSCP 接続情報の入力" class="w400" %}
 
 {% include image.html url="books/jga-winscp2.jpg" caption="WinSCP 認証用秘密鍵を指定" class="w400" %}
 
@@ -151,21 +146,23 @@ Data オブジェクトに fastq や bam ファイルなどの個人レベルの
 
 ### データファイルのアップロード {#data-files-upload}
 
-データファイルを scp で登録用ディレクトリにアップロードします。
+データファイルを sftp で登録用ディレクトリにアップロードします。
 
 例
 - アカウント名: account_b
 - JGA Submission ID: JSUB000353
 
 ```
-$ scp -P443 -i private-key-for-auth wgs1.fastq account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
+$ sftp -i private-key-for-auth -P 443 account_b@jga-gw.ddbj.nig.ac.jp
+$ cd controlled-access/submission/jga/JSUB000353
+$ put wgs1.fastq
 ```
--P: 接続先ポート番号 443 を指定
 -i: 認証用秘密鍵を指定
+-P: 接続先ポート番号 443 を指定
 
 拡張子 fastq の全てのファイルをアップロード。
 ```
-$ scp -P443 -i private-key-for-auth *.fastq account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
+$ mput *.fastq
 ```
 
 ## メタデータとデータの登録 {#metadata-data-submission}

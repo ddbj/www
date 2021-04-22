@@ -30,24 +30,17 @@ The JGA datasets download and access steps are described below.
 
 Before starting the application, create a data user group. In the following example group (usergrp1), an owner is researcher (account_b) who apply the application and download the data, and a member is PI (account_c).
 
-
 {% include image.html url="books/DS-group-e.png" caption="Data user group" class="w450" %}
-
 
 [Start the application](https://humandbs.biosciencedbc.jp/en/data-use) and select the group.
 
-
 {% include image.html url="books/DU-start-e.png" caption="Start data use application" class="w450" %}
-
-
 
 {% include image.html url="books/DU-group-e.png" caption="Select the data user group" class="w450" %}
 
-
 ## Public key for dataset encryption {#public-key-for-dataset-encryption}
 
-For security, the JGA datasets are encrypted by the public key for dataset encryption registered by the applicant in the data use application. The applicant needs to first decrypt the datasets downloaded by scp by using the private key.
-
+For security, the JGA datasets are encrypted by the public key for dataset encryption registered by the applicant in the data use application. The applicant needs to first decrypt the datasets downloaded by sftp by using the private key.
 
 <div class="attention" markdown="1">
 The public key for dataset encryption is different from the [public/private key pair for the D-way account authentication](/account.html#enable-dra-submission-in-account).
@@ -62,9 +55,7 @@ Register the public key for dataset encryption in the data use application syste
 
 Register the public key for dataset encryption in the NBDC data use application.
 
-
 {% include image.html url="books/public-key-for-dataset-encryption-e.png" caption="egistration of the public key for dataset encryption" class="w400" %}
-
 
 ## Data use application approval and download {#data-use-approval-download}
 
@@ -72,47 +63,39 @@ Register the public key for dataset encryption in the NBDC data use application.
 
 After the application is approved by NBDC, metadata, encrypted data files and decryption tools is created in the download directory in the JGA server.
 
-
 {% include image.html url="books/data-use-approved-e.png" caption="Data use application approval" class="w400" %}
-
 
 ### Download {#download}
 
-
 <div class="attention" markdown="1">
-To download files from the JGA server by scp, you need to [register a center name and a public key to your D-way account](/account-e.html#enable-dra-submission-in-account). Access to the JGA server is restricted by IP addresses. Inform your IP address of your connecting source to NBDC in application form.
+To download files from the JGA server by sftp, you need to [register a center name and a public key to your D-way account](/account-e.html#enable-dra-submission-in-account). The ssh login is blocked in the JGA server.
 </div>
 
-In the "/controlled-access/download/jga/" directory in the JGA file server (jga-gw.ddbj.nig.ac.jp), the DU number directory is created. Download the directory by scp. Because the scp requires public/private key authentication, specify the [private key registered to your D-way account](/account-e.html#generate-key-pair) for authentication (this is different from the private key for dataset decryption).
+In the "/controlled-access/download/jga/" directory in the JGA file server (jga-gw.ddbj.nig.ac.jp), the DU number directory is created. Download the directory by sftp. Because the sftp requires public/private key authentication, specify the [private key registered to your D-way account](/account-e.html#generate-key-pair) for authentication (this is different from the private key for dataset decryption).
 
 Example
-  - D-way account: account_b
-  - Data use application number： J-DU999991
+- D-way account: account_b
+- Data use application number： J-DU999991
 
 ```
-$ scp -P443 -i private-key-for-auth -r account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/download/jga/J-DU999991 .
+$ sftp -i private-key-for-auth -P 443 account_b@jga-gw.ddbj.nig.ac.jp
+$ cd controlled-access/download/jga/
+$ get -r J-DU999991
 ```
--P: specify the port number 443
 -i: specify the private key paired with the public key registered to the D-way account for authentication
-
-Login to the JGA file server by ssh.
-```
-$ ssh -p443 -i private-key-for-auth account_b@jga-gw.ddbj.nig.ac.jp
-```
 -P: specify the port number 443
--i: specify the private key paired with the public key registered to the D-way account for authentication
 
 In the DU directory, there are Study directory and tools directory which contains the decryption tools. 
 The Dataset directory under the Study directory contains metadata in tab-delimited text (tsv) and XML formats, and the Data and Analysis directories contain encrypted data files.
 
 The data access is explained with the following example numbers.
 
-  - JGA Study: JGAS999992
-  - JGA Dataset: JGAD999993
-  - JGA Data: JGAR999999994-JGAR999999995
-  - Encrypted data files of Data: case1.fastq.gz.encrypt (JGAR999999994), case2.fastq.gz.encrypt (JGAR999999995)
-  - JGA Analysis: JGAZ999999996-JGAZ999999997
-  - Encrypted data files of Analysis： case1.vcf.gz.encrypt (JGAZ999999996), case2.vcf.gz.encrypt (JGAZ999999997)
+- JGA Study: JGAS999992
+- JGA Dataset: JGAD999993
+- JGA Data: JGAR999999994-JGAR999999995
+- Encrypted data files of Data: case1.fastq.gz.encrypt (JGAR999999994), case2.fastq.gz.encrypt (JGAR999999995)
+- JGA Analysis: JGAZ999999996-JGAZ999999997
+- Encrypted data files of Analysis： case1.vcf.gz.encrypt (JGAZ999999996), case2.vcf.gz.encrypt (JGAZ999999997)
 
 ```
 $ ls J-DU999991/
@@ -190,8 +173,8 @@ case1.vcf.gz.encrypt
 case1.vcf.gz.encrypt.dat
 ```
 
-  - .decrypt.sh: scripts for decryption
-  - .dat: encrypted common keys
+- .decrypt.sh: scripts for decryption
+- .dat: encrypted common keys
 
 Add execute permission to all decryption scripts.
 
@@ -214,8 +197,8 @@ Decrypt the data files by running "J-DU999991.decrypt.sh" with the private key p
 
 Decryption is explained with the following examples.
 
-  - -k: specify the private key paired with the public key for dataset encryption (for example, J-DU999991_private_key).
-  - -p: specify the passphrase of the private key.
+- -k: specify the private key paired with the public key for dataset encryption (for example, J-DU999991_private_key).
+- -p: specify the passphrase of the private key.
 
 ```
 $ ./J-DU999991.decrypt.sh -k J-DU999991_private_key -p ******
@@ -245,45 +228,45 @@ The metadata directory contains following files. Metadata files are not encrypte
 
 #### Metadata in tsv {#metadata-tsv}
 
-  - JGAD999993.sample.txt
-  - JGAD999993.analysis.SEQUENCE_VARIATION.txt
+- JGAD999993.sample.txt
+- JGAD999993.analysis.SEQUENCE_VARIATION.txt
   
 For Sample and Analysis, metadata are provided in tsv with attribute names in the header and contents from the second line. The Analysis tsv filename contains Analysis type and the Analysis tsv files are created for each Analysis type. Please note that Study, Dataset and Policy metadata are also fully available in the [DDBJ Search](https://ddbj.nig.ac.jp/search)
 
 #### Metadata relation tsv {#metadata-relation-tsv}
 
-  - JGAD999993.study_sample_experiment_data.mapping.txt
+- JGAD999993.study_sample_experiment_data.mapping.txt
 
 The mapping table of "Data → Experiment → Sample → Study". For Experiment and Data, this mapping table also provides metadata contents.
 
-  - JGAD999993.study_analysis_sample.mapping.txt
+- JGAD999993.study_analysis_sample.mapping.txt
 
 The mapping table of "Analysis → Sample → Study". For the analysis data summarizing multiple samples, the Analysis refers not sample accessions but numbers of samples.
 
-  - JGAD999993.analysis_sample.mapping.txt
+- JGAD999993.analysis_sample.mapping.txt
 
 The mapping table of Analysis and Sample. If Analysis refers Samples, all refered Sample accessions are listed.
 
-  - JGAD999993.dataset_policy_data_analysis.mapping.txt
+- JGAD999993.dataset_policy_data_analysis.mapping.txt
 
 The mapping table of Dataset, Data, Analysis and Policy.
 
 #### Metadata in XML {#metadata-xml}
 
-  - JGAD999993.study.xml
-  - JGAD999993.dataset.xml
-  - JGAD999993.policy.xml
-  - JGAD999993.sample.xml
-  - JGAD999993.experiment.xml
-  - JGAD999993.data.xml
-  - JGAD999993.analysis.xml
-  - JGAD999993.dac.xml
+- JGAD999993.study.xml
+- JGAD999993.dataset.xml
+- JGAD999993.policy.xml
+- JGAD999993.sample.xml
+- JGAD999993.experiment.xml
+- JGAD999993.data.xml
+- JGAD999993.analysis.xml
+- JGAD999993.dac.xml
 
 These XML files can be used for programmatic use.
 
 #### Filelist {#filelist}
 
-  - JGAD999993.filelist.txt
+- JGAD999993.filelist.txt
 
 The list summarizes filenames, sizes, MD5 hash values, and Data/Analysis accessions. 
 By comparing MD5 values of downloaded files and those in the list, you can check corruption of the files.

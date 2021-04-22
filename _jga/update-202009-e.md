@@ -31,18 +31,12 @@ If you already have a D-way account, you can apply applications to NBDC
 in your D-way account. For details, please see [this
 page](/account-integration-e.html).
 
-
 <div class="attention" markdown="1">
-
 After creating a new D-way account, the D-way account will be active in
 the NBDC application system after about 10 minutes.
-
 </div>
 
-
 {% include image.html url="books/integration_d_way-e.png" caption="Account integration to D-way" class="w300" %}
-
-
 
 ## Group {#group}
 
@@ -78,9 +72,7 @@ need to request member addition to NBDC.
 Include all submitters as members. Emails regarding submissions are sent
 to members only.
 
-
 {% include image.html url="books/subgrp_nbdc-e.png" caption="Data submission group" class="w400" %}
-
 
 ### Data user group {#usergrp}
 
@@ -109,24 +101,23 @@ application - download data from JGA". Please see each page for the
 [data submission](/jga/submission-step-e.html) and
 [download](/jga/download-e.html).
 
-
 {% include image.html url="books/nbdc-jga-e.png" caption="Data submission and download steps" class="w550" %}
 
-
-## Data transfer by scp {#transfer}
+## Data transfer by sftp {#transfer}
 
 The JGA upload and download toos will be replaced by scp. In the new JGA
-system, data files will be uploaded and downloaded by scp.
+system, data files will be uploaded and downloaded by scp.    
+At [22th April 2021](/news/en/2021-04-13-e.html), scp was switched to sftp to improve usability and security.
 
 ## Data encryption flow {#encryption}
 
 For the data submission, upload unencrypted data files (transfer channel
-is encrypted by scp). After issuing accession numbers, the JGA system
+is encrypted by sstp). After issuing accession numbers, the JGA system
 will store data files in encrypted form as before.
 
 For data use, approved datasets will be encrypted by a public key
 registered by a user during the data use application to NBDC. Users need
-to decrypt the data files by using a private key after scp download.
+to decrypt the data files by using a private key after sftp download.
 Please see [this page](/jga/download-e.html#public-key-for-dataset-encryption) for details.
 
 ## Search system renewal {#search}
