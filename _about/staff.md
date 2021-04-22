@@ -62,7 +62,7 @@ category: about
             <p class="name">丹生 智也</p>
             <p class="name">TANJO Tomoya, PhD</p>
             <p class="position">助教</p>
-            <p class="position">データベース部門</p>
+            <p class="position">システム管理部門</p>
         </div>
         </li>
     </ul> 
