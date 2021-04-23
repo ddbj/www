@@ -1543,14 +1543,14 @@ input, textarea, select, button {
 ._margin-right-20 {
   margin-right: 2rem; }
 
-._red {
+.red {
   color: #FF0000; }
-  ._red * {
+  .red * {
     color: #FF0000; }
 
-._italic {
+.italic {
   font-style: italic; }
-  ._italic * {
+  .italic * {
     font-style: italic; }
 
 /*# sourceMappingURL=main.css.map */

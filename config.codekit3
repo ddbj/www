@@ -25,14 +25,6 @@
 		"oAP": "/.gitignore",
 		"oF": 0
 		},
-	"/.jekyll-metadata": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/.jekyll-metadata",
-		"oF": 0
-		},
 	"/404.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -50325,6 +50317,101 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/_news/en/2021-04-06_2-e.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/en/2021-04-06_2-e.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_news/en/2021-04-07-e.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/en/2021-04-07-e.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_news/en/2021-04-08-e.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/en/2021-04-08-e.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_news/en/2021-04-13-e.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/en/2021-04-13-e.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_news/en/2021-04-14-e.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/en/2021-04-14-e.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"/_news/en/index-e.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -94451,6 +94538,120 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"/_news/ja/2021-04-06.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/ja/2021-04-06.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_news/ja/2021-04-06_2.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/ja/2021-04-06_2.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_news/ja/2021-04-07.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/ja/2021-04-07.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_news/ja/2021-04-08.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/ja/2021-04-08.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_news/ja/2021-04-13.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/ja/2021-04-13.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/_news/ja/2021-04-14.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/_news/ja/2021-04-14.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"/_news/ja/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -94603,7 +94804,7 @@
 		"oAP": "/_sass/foundation/_base.css",
 		"oF": 0,
 		"oS": 0,
-		"sct": 1
+		"sct": 0
 		},
 	"/_sass/foundation/_mixin.sass": {
 		"aP": 0,
@@ -94616,7 +94817,7 @@
 		"oAP": "/_sass/foundation/_mixin.css",
 		"oF": 0,
 		"oS": 0,
-		"sct": 1
+		"sct": 0
 		},
 	"/_sass/foundation/_variable.sass": {
 		"aP": 0,
@@ -94629,7 +94830,7 @@
 		"oAP": "/_sass/foundation/_variable.css",
 		"oF": 0,
 		"oS": 0,
-		"sct": 1
+		"sct": 0
 		},
 	"/_sass/foundation/reset.css": {
 		"aP": 1,
@@ -94647,12 +94848,12 @@
 		"dP": 10,
 		"ec": 1,
 		"ft": 2,
-		"ma": 1,
+		"ma": 0,
 		"oA": 0,
-		"oAP": "/assets/css/main.css",
+		"oAP": "/_site/assets/css/main.css",
 		"oF": 2,
 		"oS": 0,
-		"sct": 1
+		"sct": 0
 		},
 	"/_sass/object/component/_appearance-switch.sass": {
 		"aP": 0,
@@ -94665,7 +94866,7 @@
 		"oAP": "/_sass/object/component/_appearance-switch.css",
 		"oF": 0,
 		"oS": 0,
-		"sct": 1
+		"sct": 0
 		},
 	"/_sass/object/component/_arrowed-link.sass": {
 		"aP": 0,
@@ -94886,7 +95087,7 @@
 		"oAP": "/_sass/object/component/_tag-view.css",
 		"oF": 0,
 		"oS": 0,
-		"sct": 1
+		"sct": 0
 		},
 	"/_sass/object/component/_tagging-item-view.sass": {
 		"aP": 0,
@@ -94990,7 +95191,7 @@
 		"oAP": "/_sass/object/project/_NavigationAndMainView.css",
 		"oF": 0,
 		"oS": 0,
-		"sct": 1
+		"sct": 0
 		},
 	"/_sass/object/project/_PageHeader.sass": {
 		"aP": 0,
@@ -95337,6 +95538,14 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"/_sc/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/_sc/index.html",
+		"oF": 0
 		},
 	"/_sc/index.md": {
 		"cB": 0,
@@ -109462,6 +109671,19 @@
 		"q": 100,
 		"rq": 75
 		},
+	"/assets/images/staff/tanjo.jpg": {
+		"ft": 16384,
+		"iS": 5420,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/staff/tanjo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
 	"/assets/images/staff/tokimatsu-old.jpg": {
 		"ft": 16384,
 		"iS": 24937,
@@ -109611,6 +109833,19 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "/assets/images/staff/yokoyama.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
+	"/assets/images/staff/yosida.jpg": {
+		"ft": 16384,
+		"iS": 7672,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/images/staff/yosida.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
