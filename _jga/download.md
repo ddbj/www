@@ -7,6 +7,7 @@ current_tab: submission
 lang: ja
 ---
 
+
 ## NBDC への利用申請 {#du-application}
 
 [NBDC ヒトデータベースの「利用可能な研究データ一覧」](https://humandbs.biosciencedbc.jp/data-use/all-researches)で使いたいデータを探すことができます。
@@ -18,7 +19,7 @@ lang: ja
 申請時に利用申請グループを作成、利用を希望する Study (例 JGAS999992) と Dataset (例 JGAD999993) アクセッション番号を入力し、データの暗号化に使用する「データセット暗号化用公開鍵」を登録します。
 利用申請が NBDC で承認された後、データは JGA サーバ上で Dataset 単位で提供されます。
 
-申請には D-way アカウントが必要です。アカウントが無い場合は申請前に [D-way アカウントを取得](https://ddbj.nig.ac.jp/D-way/) してください。JGA サーバから scp でデータをダウンロードするためには[認証用の公開鍵・秘密鍵ペアを作成し、公開鍵を D-way アカウントに登録](/account.html#generate-key-pair)する必要があります。
+申請には D-way アカウントが必要です。アカウントが無い場合は申請前に [D-way アカウントを取得](https://ddbj.nig.ac.jp/D-way/) してください。JGA サーバから sftp でデータをダウンロードするためには[認証用の公開鍵・秘密鍵ペアを作成し、公開鍵を D-way アカウントに登録](/account.html#generate-key-pair)する必要があります。
 
 <div class="attention" markdown="1">
 D-way アカウント作成後、[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
@@ -40,10 +41,11 @@ D-way アカウント作成後、[NBDC データ申請システム](https://huma
 
 ## データセット暗号化用公開鍵 {#public-key-for-dataset-encryption}
 
-セキュリティのため JGA データセットはユーザが登録したデータセット暗号化用公開鍵で暗号化された状態で提供されます。ユーザは利用承認されたデータセットを scp でダウンロードし、秘密鍵で復号してから利用します。
+セキュリティのため JGA データセットはユーザが登録したデータセット暗号化用公開鍵で暗号化された状態で提供されます。ユーザは利用承認されたデータセットを sftp でダウンロードし、秘密鍵で復号してから利用します。
 
 <div class="attention" markdown="1">
-データセット暗号化用公開鍵は D-way アカウントの[認証用の公開鍵](/account.html#enable-dra-submission-in-account)とは別になります。JGA データの利用のためには暗号化用と認証用に合計2ペア4ファイルの公開鍵・秘密鍵が必要になります。
+データセット暗号化用公開鍵は D-way アカウントの[認証用の公開鍵](/account.html#enable-dra-submission-in-account)とは別になります。
+JGA データの利用のためには暗号化用と認証用に合計2ペア4ファイルの公開鍵・秘密鍵が必要になります。JGA サーバに ssh ログインすることはできません。
 </div>
 
 ### データセット暗号化用公開鍵・秘密鍵ペアの作成 {#generate-key-pair}
@@ -69,27 +71,23 @@ NBDC への利用申請において公開鍵を「データセット暗号化用
 ### ダウンロード {#download}
 
 <div class="attention" markdown="1">
-JGA からファイルを scp でダウンロードするためには [D-way アカウントに center name と公開鍵を登録](/account.html#enable-dra-submission-in-account)する必要があります。また、JGA サーバへのアクセスは IP アドレスで制限されているので、NBDC に申請する際に接続元グローバル IP アドレスを伝えてください。
+JGA からファイルを sftp でダウンロードするためには [D-way アカウントに center name と公開鍵を登録](/account.html#enable-dra-submission-in-account)する必要があります。
 </div>
 
-JGA ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/download/jga/ の下にデータ利用申請 DU 番号と同名のディレクトリが作成されるので、scp の P オプションでポート番号 443 と認証用秘密鍵（データセット暗号化用公開鍵・秘密鍵とは別になります）を指定して、ディレクトリごとダウンロードします。
+JGA ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/download/jga/ の下にデータ利用申請 DU 番号と同名のディレクトリが作成されるので、
+sftp の P オプションでポート番号 443 と認証用秘密鍵（データセット暗号化用公開鍵・秘密鍵とは別になります）を指定してログインし、ディレクトリごとダウンロードします。
 
 例
 - アカウント名: account_b
 - データ利用申請番号： J-DU999991
 
 ```
-$ scp -P443 -i private-key-for-auth -r account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/download/jga/J-DU999991 .
+$ sftp -i private-key-for-auth -P 443 account_b@jga-gw.ddbj.nig.ac.jp
+$ cd controlled-access/download/jga/
+$ get -r J-DU999991
 ```
--P: 接続先ポート番号 443 を指定
 -i: D-way に登録した認証用公開鍵とペアの秘密鍵を指定
-
-JGA ファイルサーバに ssh でログインすることができます。
-```
-$ ssh -p443 -i private-key-for-auth account_b@jga-gw.ddbj.nig.ac.jp
-```
 -P: 接続先ポート番号 443 を指定
--i: D-way に登録した認証用公開鍵とペアの秘密鍵を指定
 
 DU 番号ディレクトリ直下には Study ディレクトリ、及び、データファイルの復号ツールが配置された tools ディレクトリがあります。Study ディレクトリの下に Dataset ディレクトリがあり、Dataset ディレクトリの下にタブ区切りテキスト（tsv）ファイルと XML 形式のメタデータを含む metadata ディレクトリ、及び、暗号化されたデータファイルを含む Data と Analysis ディレクトリがあります。
 
@@ -218,7 +216,7 @@ case1.vcf.gz.encrypt
 case1.vcf.gz.encrypt.dat
 ```
 
-DU ディレクトリ下にある Study や Dataset ディレクトリを scp した場合、以下のようなディレクトリ配置にしてから復号スクリプトを実行します。DU ディレクトリ直下に DU 単位の復号スクリプトと暗号化されたデータファイルが含まれている Study/Dataset/Data or Analysis ディレクトリを配置します。
+DU ディレクトリ下にある Study や Dataset ディレクトリを sftp した場合、以下のようなディレクトリ配置にしてから復号スクリプトを実行します。DU ディレクトリ直下に DU 単位の復号スクリプトと暗号化されたデータファイルが含まれている Study/Dataset/Data or Analysis ディレクトリを配置します。
 
 ```
 $ J-DU999991/
@@ -275,19 +273,19 @@ Dataset に含まれる Data、Analysis とリンクしている Policy の対�
 データファイルの名前、種類、サイズ、復号前後の MD5 ハッシュ値、及び、含まれている Data と Analysis アクセッション番号をまとめた表。
 手許でダウンロードしたファイルの MD5 ハッシュ値を取得し、リスト中の値と比較することでファイルの破損チェックを行うことができます。
 
-### WinSCP によるダウンロードa name="upload-excel-winscp"></a>
+### WinSCP によるダウンロード {#upload-excel-winsftp}
 
-[WinSCP (http://winscp.net/eng/download.php)](http://winscp.net/eng/download.php) をダウンロードし、Windows PC にインストールします。
+[WinSCP (http://winsftp.net/eng/download.php)](http://winsftp.net/eng/download.php) をダウンロードし、Windows PC にインストールします。
 
 以下のように設定します。
 
-- 転送プロトコル: SCP
+- 転送プロトコル: SFTP
 - ホスト名: jga-gw.ddbj.nig.ac.jp
 - ポート番号: 443
 - ユーザ名: D-way アカウント ID
 - パスワード: 空欄のまま
 
-{% include image.html url="books/jga-winscp1.jpg" caption="WinSCP 接続情報の入力" class="w400" %}
+{% include image.html url="books/jga-winscp-sftp1.jpg" caption="WinSCP 接続情報の入力" class="w400" %}
 
 {% include image.html url="books/jga-winscp2.jpg" caption="WinSCP 認証用秘密鍵を指定" class="w400" %}
 

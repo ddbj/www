@@ -21,35 +21,25 @@ This page describes how to submit data to JGA.
 
 Create a data submitter group before application. In the example group "subgrp1", a researcher (account_b) who applies application and submits data is a group owner and a PI (account_c) is a member.
 
-In the NBDC application system, an account who actually submits an application will automatically become an applicant. If there are submitters other than PI and applicant, include all submitters as members. Emails regarding the submission are sent to members.
-      
+In the NBDC application system, an account who actually submits an application will automatically become an applicant. If there are submitters other than PI and applicant, include all submitters as members. Emails regarding the submission are sent to members.     
 
 {% include image.html url="books/DS-group-e.png" caption="Data submitter group" class="w400" %}
 
-
 [Start the data submission application process](https://humandbs.biosciencedbc.jp/data-submission) and select the data submitter group.
-
 
 {% include image.html url="books/DS-start-e.png" caption="Start data submission application process" class="w450" %}
 
-
-
 {% include image.html url="books/DS-group-select-e.png" caption="Select the data submitter group" class="w450" %}
-
 
 ## Data submission application approval {#du-approval}
 
 After the application is approved by NBDC, a JGA submission ID (for example, JSUB000353) is issued and a corresponding directory for data upload is created in the JGA server.
 
-
 {% include image.html url="books/DS-approved-e.png" caption="Approval of data submission application" class="w450" %}
-
-
 
 {% include image.html url="books/DS-JSUB-e.png" caption="Data submission application and JGA submission ID" class="w250" %}
 
-
-A JGA submission directory is created in "/controlled-access/submission/jga/" of the JGA file server (jga-gw.ddbj.nig.ac.jp), upload metadata and data files to this directory by scp. In this example, the upload directory is "/controlled-access/submission/jga/JSUB000353/".
+A JGA submission directory is created in "/controlled-access/submission/jga/" of the JGA file server (jga-gw.ddbj.nig.ac.jp), upload metadata and data files to this directory by sftp. In this example, the upload directory is "/controlled-access/submission/jga/JSUB000353/".
 
 ## Create metadata excel {#create-metadata-using-excel}
 
@@ -61,11 +51,9 @@ Download the excel for metadata description below and enter metadata in English.
 
 last updated: 2020-09-26
 
-
 <div class="attention" markdown="1">
 Data files to be uploaded to JGA should not have spaces in their filenames.
 </div>
-
 
 <div class="attention" markdown="1">
 All datasets in a JGA submission are distributed at the same time. Do NOT include datasets to be distributed at different time in a submission.
@@ -77,32 +65,23 @@ All datasets in a JGA submission are distributed at the same time. Do NOT includ
 
 ### Upload excel {#upload-excel}
 
-
 <div class="attention" markdown="1">
-To upload files to the JGA server by scp, you need to [register a center name and a public key to your D-way account](/account-e.html#enable-dra-submission-in-account). Access to the JGA server is restricted by IP addresses. Inform your IP address of your connecting source to NBDC in application form.
+To upload files to the JGA server by sftp, you need to [register a center name and a public key to your D-way account](/account-e.html#enable-dra-submission-in-account). The ssh login is blocked in the JGA server.
 </div>
 
-In the JGA submission directory in "/controlled-access/submission/jga/" in JGA file server (jga-gw.ddbj.nig.ac.jp), upload the excel to this directory by scp specifying the port number 443 with P option. The scp uses public/private key authentication, specify [a private key registered to your D-way account](/account.html#generate-key-pair) for authentication.
+In the JGA submission directory in "/controlled-access/submission/jga/" in JGA file server (jga-gw.ddbj.nig.ac.jp), upload the excel to this directory by sftp specifying the port number 443 with P option. The sftp uses public/private key authentication, specify [a private key registered to your D-way account](/account.html#generate-key-pair) for authentication.
 
 Example
-  - account ID: account_b
-  - JGA Submission ID: JSUB000353
-
-When specifying a private key for the account authentication with "i" option, specify target files after the "P" and "i" options.
+- account ID: account_b
+- JGA Submission ID: JSUB000353
 
 ```
-$ scp -P443 -i private-key-for-auth JSUB000353_metadata.xlsx account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
+$ sftp -i private-key-for-auth -P 443 account_b@jga-gw.ddbj.nig.ac.jp
+$ cd controlled-access/submission/jga/JSUB000353
+$ put JSUB000353_metadata.xlsx 
 ```
+-i: specify the private key for authentication
 -P: specify the port number 443
--i: specify the private key for authentication
-
-
-Login to the JGA file server by ssh.
-```
-$ ssh -p443 -i private-key-for-auth account_b@jga-gw.ddbj.nig.ac.jp
-```
--p: specify the port number 443 (use lowercase "p" for ssh)
--i: specify the private key for authentication
 
 ## Data files uploading {#upload-data-files}
 
@@ -110,14 +89,13 @@ $ ssh -p443 -i private-key-for-auth account_b@jga-gw.ddbj.nig.ac.jp
 
 The JGA submission system discriminates archive and compression formats by the extension of the filenames.
 
-  - The extensions, zip, tar, tar.gz, tgz, tar.bz2, tbz2, gz and bz2 are treated as archived and compressed in standard formats. Files whose extensions and formats are different will cause errors in the file processing.
-  - Do NOT compress bam files.
-  - Do NOT archive files compressed by gz and bzip. Instead, archive compressed files by tar.gz.
+- The extensions, zip, tar, tar.gz, tgz, tar.bz2, tbz2, gz and bz2 are treated as archived and compressed in standard formats. Files whose extensions and formats are different will cause errors in the file processing.
+- Do NOT compress bam files.
+- Do NOT archive files compressed by gz and bzip. Instead, archive compressed files by tar.gz.
 
 ### File formats for submission {#file-formats-submission}
 
 Submit individual-level next-generation sequencing data such as fastq and bam files to Data. And submit microarray data, variant analysis data and documents such as questionnaires to Analysis.        
-
 
 <div class="attention" markdown="1">
 For reproducibility, it is important to submit processed data from which conclusion of associated paper is derived. Please submit processed data files such as VCF to Analysis.
@@ -125,21 +103,23 @@ For reproducibility, it is important to submit processed data from which conclus
 
 ### Upload data files {#data-files-upload}
 
-Upload data files to the upload directory by scp.
+Upload data files to the upload directory by sftp.
 
 Example
-  - Account ID: account_b
-  - JGA Submission ID: JSUB000353
+- Account ID: account_b
+- JGA Submission ID: JSUB000353
 
 ```
-$ scp -P443 -i private-key-for-auth wgs1.fastq account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
+$ sftp -i private-key-for-auth -P 443 account_b@jga-gw.ddbj.nig.ac.jp
+$ cd controlled-access/submission/jga/JSUB000353
+$ put wgs1.fastq
 ```
--P: specify the port number 443
 -i: specify the private key for authentication
+-P: specify the port number 443
 
 Upload all files with "fastq" in the extensions.
 ```
-$ scp -P443 -i private-key-for-auth *.fastq account_b@jga-gw.ddbj.nig.ac.jp:/controlled-access/submission/jga/JSUB000353
+$ mput *.fastq
 ```
 
 ## Submission of metadata and data files {#metadata-data-submission}
