@@ -25,14 +25,6 @@
 		"oAP": "/.gitignore",
 		"oF": 0
 		},
-	"/.jekyll-metadata": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/.jekyll-metadata",
-		"oF": 0
-		},
 	"/.vscode/extensions.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -96056,6 +96048,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/assets/css/common_framework-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/assets/css/main-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/assets/css/main-min-min.css",
 		"oF": 0,
 		"oS": 3
 		},

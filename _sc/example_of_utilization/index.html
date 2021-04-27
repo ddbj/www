@@ -32,7 +32,7 @@ current_tab: example_of_utilization
                     <div class="button" data-appearance-value="list" title="List view"></div>
                 </nav>
                 <ul class="tagging-list-view">
-                    {% assign example_list = site.sc | where:"type", "example_of_utilization" %}
+                    {% assign example_list = site.sc | where:"type", "example_of_utilization"| sort: "date" | reverse %}
                     {% for example in example_list %}
                     <li class="tagging-item-view taggingitem"
                         data-tags="{{ example.tags | join: ',' }},{{ example.db | join: ',' }}">
