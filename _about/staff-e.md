@@ -299,17 +299,25 @@ category: about
         </div>
         </li>      
         <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/tkato.jpg" title="KATO Takehiro"></p>
+        <div class="explanation">
+            <p class="name">KATO Takehiro</p>
+        </div>
+        </li> 
+        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/ytakahashi.jpg" title="TAKAHASHI Yoshimasa"></p>
         <div class="explanation">
             <p class="name">TAKAHASHI Yoshimasa</p>
         </div>
-        </li>   
+        </li>  
+    </ul>
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/watanabe_t.jpg" title="WATANABE Tadayoshi"></p>
         <div class="explanation">
             <p class="name">WATANABE Tadayoshi</p>
         </div>
-        </li>      
+        </li>
     </ul>  
     </div>
     <!-- .wrapper -->

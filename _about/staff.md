@@ -335,12 +335,21 @@ category: about
         </div>
         </li>      
         <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/tkato.jpg" title="加藤 健弘"></p>
+        <div class="explanation">
+            <p class="name">加藤 健弘</p>
+            <p class="name">KATO Takehiro</p>
+        </div>
+        </li>   
+        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/ytakahashi.jpg" title="高橋 良昌"></p>
         <div class="explanation">
             <p class="name">高橋 良昌</p>
             <p class="name">TAKAHASHI Yoshimasa</p>
         </div>
-        </li>   
+        </li>      
+    </ul>
+    <ul class="list">  
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/watanabe_t.jpg" title="渡辺忠剛"></p>
         <div class="explanation">
@@ -348,7 +357,7 @@ category: about
             <p class="name">WATANABE Tadayoshi</p>
         </div>
         </li>      
-    </ul>  
+    </ul>   
     </div>
     <!-- .wrapper -->
     <h2 id="秘書">秘書</h2>
