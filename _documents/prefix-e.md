@@ -346,8 +346,8 @@ OE      ENA
 OF      KIPO            Patent application
 OG      JPO             Patent application
 OH      DDBJ            EST
-OI      DDBJ            
-OJ      DDBJ            
+OI      JPO             Patent application
+OJ      JPO             Patent application
 OU      ENA             
 OV      ENA             
 OW      ENA             
@@ -355,6 +355,11 @@ OX      ENA
 OY      ENA             
 OZ      ENA             
 P       void            UniProt/Swiss-Prot
+PA      JPO             Patent application
+PB      DDBJ            
+PC      DDBJ            
+PD      DDBJ            
+PE      DDBJ            
 Q       void            UniProt/Swiss-Prot
 R       GenBank         EST
 S       GenBank         Journal scanning
