@@ -1,23 +1,23 @@
 ---
 layout: simple
-title: I can not access by scp/ssh to the JGA server
+title: The JGA server is not accessible by sftp
 category: faq
 db:
   - jga
 tags: 
   - System
-date: 2020-10-15T11:19:00
+date: 2021-05-06T11:19:00
 lang: en
 ---
 
-First, confirm the following basic points.
-- Make sure your global IP address (not a private IP address) of accessing source has been added to the white list by JGA. If accessed via a proxy server, the addresses of accessing source and your machine are different. Please ask system administrator of your institution. [Manual](/jga/global-ip-e.html)
+Confirm the following points.
 - Authentification is by using SSH key not by password.
 - A private key is pair of a public key registered in a D-way account. [Manual](/account-e.html#enable-dra-submission-in-account)
 - Make sure to specify a private key for authentification and not a private key for dataset encryption/decryption. [Manual](/jga/download-e.html#data-use-approval-download)
 - A private key file has read permission.
 - A private key file permission is set as others cannot access. For example, rw-------.
 - A passphrase for private key is correctly entered.
+- The ssh connection with the port number 443 is allowed in your network (Please ask your network administrator)
 
 When transferring data files by using a private key generated in the
 other operating system, please check format of a private key. [Convert
