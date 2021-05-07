@@ -21,7 +21,7 @@ Metagenome projects may include raw sequence reads collected from an
 ecological or organismal source (submitted to the DDBJ Sequence Read
 Archive), assembled contigs derived from the raw sequence data, binned
 metagenome assemblies derived from a subset of the raw sequence data,
-and metagenomic assemblies (Metagenomic Assembly, MAG) from
+and metagenomic assemblies (Metagenome-Assembled Genomes, MAGs) from
 taxonomically defined organisms.
 
 This guide explains how to submit these metagenomic sequencing data to
@@ -117,7 +117,7 @@ registered in 1). Please note that Analysis data are not shared with NCBI/ENA.
 
 ### 4\) MAG (DDBJ)  {#mag}
 
-Metagenomic assemblies (Metagenomic Assembly, MAG) predicted to be
+Metagenomic assemblies (Metagenome-Assembled Genomes, MAGs) predicted to be
 derived from taxonomically defined organisms should be submitted to DDBJ
 as genome entries of [ENV division](/ddbj/env-e.html).
 
