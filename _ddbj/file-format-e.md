@@ -875,6 +875,14 @@ between annotation file and DDBJ flat file](#sample).
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1885054586">WGS_scaffold</a></td>
     </tr>
     <tr>
+      <td><a href="/ddbj/metagenome-assembly-e.html">MAGs</a> (Metagenome-Assembled Genomes, MAGs) for Complete genome</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=11301438">MAGs_CompleteGenome</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/metagenome-assembly-e.html">MAGs</a> (Metagenome-Assembled Genomes, MAGs) for Draft genome</td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1453206143">MAGs_WGS</a></td>
+    </tr>  
+    <tr>
       <td>AGP file for <a href="/ddbj/con.html">CON</a> entries</td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1672995780">AGP</a></td>
     </tr>
