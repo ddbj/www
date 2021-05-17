@@ -29,10 +29,8 @@ Read Archive (ERA)](https://www.ebi.ac.uk/ena/).
 
 Three INSDC partners regularly exchange data other than Analysis.
 
-DRA accepts sequencing data from capillary sequencing platforms in fastq
-format. To submit sequencing chromatograms in addition to bases and
-qualities, please submit data to the [DDBJ Trace
-Archive](/dta/index-e.html).
+DRA accepts sequencing data from capillary sequencing platforms in the fastq
+format. Because [DDBJ Trace Archive](/dta/index-e.html) will be integrated to SRA, we basically do not accept sequencing chromatograms.
 
 ## Metadata  {#metadata}
 

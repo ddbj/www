@@ -13,7 +13,7 @@ lang: ja
 
 公開された Analysis 以外のデータは3極で自動的にミラーリングされます。
 
-従来のキャピラリ式シークエンサからの出力データは fastq ファイルとして DRA に登録することができます。 クロマトグラムの登録を希望する場合は [DDBJ Trace Archive](/dta/index.html) に登録します。
+キャピラリ式シークエンサからの出力データは DRA Experiment [Instrument Model](#Instrument) で Genetic Analyzer シリーズの機種を選択し、fastq ファイルとして DRA に登録することができます。[DDBJ Trace Archive](/dta/index.html) は SRA に統合される予定であり、クロマトグラム（波形データ）の登録は基本的に受付けていません。
 
 ## メタデータ  {#metadata}
 
