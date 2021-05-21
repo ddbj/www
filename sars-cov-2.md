@@ -1,9 +1,9 @@
 ---
 layout: indexed_content
-title: test
+title: SARS-CoV-2
 lang: en
 ---
 
-## test
+## SARS-CoV-2 
 
-test
+
