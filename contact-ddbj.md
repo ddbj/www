@@ -13,7 +13,10 @@ lang: ja
 
 ## お問い合わせフォーム
 
-[お問い合わせフォーム](https://docs.google.com/forms/d/e/1FAIpQLSeyWbdUll6ESiuraInJ2UzUuiCSoWYZ0v-zARc049_y5Z2-7A/viewform)
+<!-- [お問い合わせフォーム](https://docs.google.com/forms/d/e/1FAIpQLSeyWbdUll6ESiuraInJ2UzUuiCSoWYZ0v-zARc049_y5Z2-7A/viewform)-->
+お問い合わせフォームはメンテナンス中です。
+「[お問い合わせフォームが表示されない場合は？](/faq/ja/contact-form-not-displayed)」をご覧ください。
+
 
 
 
