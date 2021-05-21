@@ -13,7 +13,7 @@ The AMED Genome group sharing Database (AGD) is a service for archiving and shar
 phenotypic data within research project and group members. DDBJ center and [National Bioscience Database Center (NBDC)](https://biosciencedbc.jp/en/) of [Japan Science and Technology Agency](http://www.jst.go.jp/EN/index.html) promote public (un-restricted and restricted) sharing of human data while protecting personal information, we have launched AGD to enable sharing of human data with research project and group members before publication.
 
 AGD service is hosted by DDBJ Group Cloud in collaboration with [Japan Agency for Medical Research and Development (AMED)](http://www.amed.go.jp/en/) and [NBDC](https://biosciencedbc.jp/en/). In the AMED data sharing policy applied to several AMED-funded research projects, a new data sharing mechanism "Group Sharing" has been introduced to the NBDC Human Database in addition to the "restricted sharing" and "un-restricted sharing". The "Group Sharing" enables data sharing at earlier research stage and AGD is specified by AMED as one of databases for group sharing.  
-Submission and data access requests are reviewed by the [Data Access Committee at NBDC](http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines).
+Submission and data access requests are reviewed by the [Data Access Committee at NBDC](https://biosciencedbc.jp/en/about-us/organization/dac/).
 
 ## Data access  {#access}
 

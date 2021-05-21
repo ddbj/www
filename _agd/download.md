@@ -7,161 +7,292 @@ current_tab: submission
 lang: ja
 ---
 
-## AGD データの利用申請  {#request}
+## NBDC への利用申請 {#du-application}
 
-利用したい AGD データの Study (例 AGDS\_00000000005) と Dataset (例 AGDD\_00000000005) ID を添え， [National Bioscience Database Center (NBDC)](http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines) に利用を申請します。
+[NBDC ヒトデータベースの「利用可能な研究データ一覧」](https://gr-sharingdbs.biosciencedbc.jp/agd)で使いたいデータを探すことができます。
 
+利用したいデータの Dataset アクセッション番号を控えます。例 AGDD_000001（旧番号体系だと AGDD_00000000001）
 
+[NBDC データ申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application) から [利用申請](https://gr-sharingdbs.biosciencedbc.jp/agd-data-use) します。
+申請時に利用申請グループを作成、利用を希望する Study (例 AGDS_999992) と Dataset (例 AGDD_999993) アクセッション番号を入力し、データの暗号化に使用する「データセット暗号化用公開鍵」を登録します。
+利用申請が NBDC で承認された後、データは AGD サーバ上で Dataset 単位で提供されます。
 
-<div class="attention" markdown="1">
-[NBDC ヒトデータグループ共有データ取扱いセキュリティガイドライン](https://gr-sharingdbs.biosciencedbc.jp/group-security-guidelines-for-users)を読み，内容を遵守して AGD データを取り扱ってください。
-</div>
-
-利用申請が承認されると，NBDC からユーザ ID とパスワードが郵送されます。利用アカウントの有効期間は三か月です。
-
-このページでは AGD データの利用手順を説明しています。
-
-## データのダウンロード  {#download-data}
-
-### AGD download tool  {#agd-download-tool}
-
-AGD download tool (最終更新日: 2018-11-21，v3.5.0) をダウンロードします。
-
+申請には D-way アカウントが必要です。アカウントが無い場合は申請前に [D-way アカウントを取得](https://ddbj.nig.ac.jp/D-way/) してください。AGD サーバから sftp でデータをダウンロードするためには[認証用の公開鍵・秘密鍵ペアを作成し、公開鍵を D-way アカウントに登録](/account.html#generate-key-pair)する必要があります。
 
 <div class="attention" markdown="1">
-Java 8 で実行してください。Java 7 では動作しません。[プロキシ環境での使用方法について](#download-via-proxy-server)
+D-way アカウント作成後、[NBDC データ申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application)で利用できるようになるまで10分程度の時間がかかります。
 </div>
 
-#### Windows
+以下では AGD データの利用手順を説明します。
 
-[Windows 用 AGD download tool](/assets/files/submission/3-5-0/AGD_tool.zip)
+## 利用申請グループ {#data-user-group}
 
-展開したフォルダに含まれる bat ファイルをダブルクリックして起動。
+申請前に利用申請グループを作成します。例の利用申請グループ (usergrp1) では申請及びダウンロードを担当する研究員 (account_b) がオーナー、研究代表者 (account_c) がメンバーとなっています。
 
-<span class="red">動作環境: Java Runtime Environment Version 8 Update 45 以上</span>
-
-#### Unix
-
-[Unix 用 AGD download tool](/assets/files/submission/3-5-0/AGD_tool_unix.zip)
-
-展開したフォルダに含まれる sh ファイルをシェルで実行して起動。
-
-<span class="red">動作環境: Java SE Development Kit 8u45 以上。OpenJDK では動作しません。</span>
-
-### ログイン  {#login}
-
-AGD tool を起動し，[NBDC](http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines) 担当者から通知されるユーザ ID とパスワードでログインします。
-
-<div class="attention">
-AGD download tool は可能な限り良好なネットワーク環境にあるマシンで使ってください。通信速度が遅い無線 LAN で接続された PC などでの使用は避けてください。
+<div class="attention" markdown="1">
+JGA と AGD のグループは別になります。
 </div>
 
+{% include image.html url="books/DS-group.png" caption="データ利用申請グループ" class="w450" %}
 
-{% include image.html url="submission/agdsub1.jpg" caption="AGD tool へのログイン" class="w200" %}
+[利用申請を開始](https://humandbs.biosciencedbc.jp/data-use) し、作成した利用申請グループを選択します。
 
+{% include image.html url="books/DU-start.png" caption="利用申請の開始" class="w450" %}
 
-左ウィンドウがお手許のコンピュータ，右ウィンドウが AGD のセキュアなファイル提供サーバになります。
+{% include image.html url="books/DU-group.png" caption="データ利用申請グループの選択" class="w450" %}
 
-右ウィンドウには利用権限が付与されているデータセットの一覧が表示されます。ダウンロードするデータセットにチェックを入れます。チェックすると下部に総ファイル数と合計サイズが表示されます。
+## データセット暗号化用公開鍵 {#public-key-for-dataset-encryption}
 
+セキュリティのため AGD データセットはユーザが登録したデータセット暗号化用公開鍵で暗号化された状態で提供されます。ユーザは利用承認されたデータセットを sftp でダウンロードし、秘密鍵で復号してから利用します。
 
-{% include image.html url="books/agddown01.jpg" caption="対象データセットの選択" class="w500" %}
+<div class="attention" markdown="1">
+データセット暗号化用公開鍵は D-way アカウントの[認証用の公開鍵](/account.html#enable-dra-submission-in-account)とは別になります。
+AGD データの利用のためには暗号化用と認証用に合計2ペア4ファイルの公開鍵・秘密鍵が必要になります。AGD サーバに ssh ログインすることはできません。
+</div>
 
+### データセット暗号化用公開鍵・秘密鍵ペアの作成 {#generate-key-pair}
 
-\[Download\] をクリックすると，ダウンロードと復号化が開始されます。 "Parallel Download count" で並列ダウンロード数を1～5の間で調整することができます。
+利用申請毎に登録するデータセット暗号化用公開鍵・秘密鍵ペアを作成します。作成手順は[公開鍵/秘密鍵ペアの生成](/account.html#generate-key-pair)をご覧ください。
 
-処理が完了すると，お手許のコンピュータにデータセットがダウンロードされます。 データセット番号のフォルダ中にメタデータ XML とデータファイルが存在しています。
+作成したデータセット暗号化用公開鍵を NBDC の利用申請システムで登録します。
 
+### データセット暗号化用公開鍵の登録 {#key-registration}
 
-{% include image.html url="books/agddown03.jpg" caption="メタデータとデータファイル" class="w300" %}
+NBDC への利用申請において公開鍵を「データセット暗号化用公開鍵」として登録します。
 
+{% include image.html url="books/public-key-for-dataset-encryption.png" caption="データセット暗号化用公開鍵の登録" class="w400" %}
 
-データセットディレクトリの左にある矢印をクリックし，含まれているデータ番号ディレクトリを展開することができます。データ番号ディレクトリやファイルを選択し，個別にダウンロードすることもできます。
+## 利用申請の承認とダウンロード {#data-use-approval-download}
 
+### 利用申請の承認 {#data-use-approval}
 
-{% include image.html url="books/agddown02.jpg" caption="ファイル毎のダウンロード" class="w500" %}
+利用申請が NBDC で承認されると、AGD ファイルサーバにダウンロード用ディレクトリが作成され、メタデータ、暗号化されたデータファイルと復号ツールが配置されます。
 
+{% include image.html url="books/data-use-approved.png" caption="利用申請の承認" class="w400" %}
 
-### プロキシ環境での使用方法  {#download-via-proxy-server}
+### ダウンロード {#download}
 
-プロキシ環境でツールを使用するためにはプロキシサーバに関する設定作業が必要になります。
+<div class="attention" markdown="1">
+AGD からファイルを sftp でダウンロードするためには [D-way アカウントに center name と公開鍵を登録](/account.html#enable-dra-submission-in-account)する必要があります。
+</div>
 
-ツールが格納されているフォルダ中の "proxy.properties" をテキストエディター等で開きプロキシサーバ名 (server=) とポート番号 (port=) を設定します。
+AGD ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/download/agd/ の下にデータ利用申請 DU 番号と同名のディレクトリが作成されるので、
+sftp の P オプションでポート番号 443 と認証用秘密鍵（データセット暗号化用公開鍵・秘密鍵とは別になります）を指定してログインし、ディレクトリごとダウンロードします。
+
+例
+- アカウント名: account_b
+- データ利用申請番号： A-DU999991
 
 ```
-# Enter the server name and port number of the proxy server to connect the AGD server via the proxy.
-# For example:
-# server=proxy.example.ac.jp
-# port=8080
-server=
-port=
+$ sftp -i private-key-for-auth -P 443 account_b@jga-gw.ddbj.nig.ac.jp
+$ cd controlled-access/download/agd/
+$ get -r A-DU999991
+```
+-i: D-way に登録した認証用公開鍵とペアの秘密鍵を指定
+-P: 接続先ポート番号 443 を指定
+
+DU 番号ディレクトリ直下には Study ディレクトリ、及び、データファイルの復号ツールが配置された tools ディレクトリがあります。Study ディレクトリの下に Dataset ディレクトリがあり、Dataset ディレクトリの下にタブ区切りテキスト（tsv）ファイルと XML 形式のメタデータを含む metadata ディレクトリ、及び、暗号化されたデータファイルを含む Data と Analysis ディレクトリがあります。
+
+以下の番号とデータファイルを例としてデータの利用方法を説明します。
+
+- AGD Study: AGDS_999992
+- AGD Dataset: AGDD_999993
+- AGD Data: AGDR_999999994-AGDR_999999995
+- Data の暗号化データファイル: case1.fastq.gz.encrypt (AGDR_999999994)、case2.fastq.gz.encrypt (AGDR_999999995)
+- AGD Analysis: AGDZ_999999996-AGDZ_999999997
+- Analysis の暗号化データファイル： case1.vcf.gz.encrypt (AGDZ_999999996)、case2.vcf.gz.encrypt (AGDZ_999999997)
+
+```
+$ ls A-DU999991/
+AGDS_999992 　　
+tools　
+$ ls A-DU999991/tools
+A-DU999991.tool.zip
+$ ls A-DU999991/AGDS_999992/AGDD_999993
+metadata
+AGDR_999999994
+AGDR_999999995
+AGDZ_999999996
+AGDZ_999999997
+$ ls A-DU999991/AGDS_999992/AGDD_999993/**
+A-DU999991/AGDS_999992/AGDD_999993/metadata:
+AGDD_999993.study.xml
+AGDD_999993.sample.xml
+AGDD_999993.experiment.xml
+AGDD_999993.data.xml
+AGDD_999993.analysis.xml
+AGDD_999993.dataset.xml
+AGDD_999993.policy.xml
+AGDD_999993.dac.xml
+AGDD_999993.filelist.txt
+AGDD_999993.sample.txt
+AGDD_999993.analysis.SEQUENCE_VARIATION.txt
+AGDD_999993.study_sample_experiment_data.mapping.txt
+AGDD_999993.study_analysis_sample.mapping.txt
+AGDD_999993.analysis_sample.mapping.txt
+AGDD_999993.dataset_policy_data_analysis.mapping.txt
+
+A-DU999991/AGDS_999992/AGDD_999993/AGDR_999999994:
+case1.fastq.gz.encrypt
+
+A-DU999991/AGDS_999992/AGDD_999993/AGDR_999999995:
+case2.fastq.gz.encrypt
+
+A-DU999991/AGDS_999992/AGDD_999993/AGDZ_999999996:
+case1.vcf.gz.encrypt
+
+A-DU999991/AGDS_999992/AGDD_999993/AGDZ_999999997:
+case2.vcf.gz.encrypt
 ```
 
-ツールにログイン後，プロキシサーバが認証を要求している場合，認証情報を入力するウィンドウが表示されるので適宜情報を入力します。2017-01-26 にリリースした v3.2.1 で BASIC 認証に対応しましたが Digest 認証には未対応です。
+## データファイルの復号 {#decrypt}
 
-### メタデータのウェブサイトでの閲覧  {#view-metadata-in-website}
-
-メタデータはウェブサイトで閲覧することもできます。
-
-[AGD の公開されている Study 一覧ページ](https://ddbj.nig.ac.jp/agd/viewer/view/studies)へ移動します。Datasets からデータセット一覧へ移動します。
-
-
-{% include image.html url="books/agddown04.jpg" caption="AGD で公開されている Study 一覧" class="w500" %}
-
-
-利用権限が付与されているデータセット番号を選択します。
-
-
-{% include image.html url="books/agddown05.jpg" caption="メタデータを閲覧するデータセットの選択" class="w500" %}
-
-
-AGD tool と同様，NBDC から通知される利用アカウントのユーザ ID とパスワードでログインします。
-
-
-{% include image.html url="books/agddown06.jpg" caption="利用アカウントでログイン" class="w300" %}
-
-
-ウェブサイト上でメタデータを閲覧することができます。
-
-
-{% include image.html url="books/agddown07.jpg" caption="ウェブサイト上でメタデータを閲覧" class="w500" %}
-
-
-メタデータ閲覧サイトからのログアウト
+ダウンロードしたデータファイルは暗号化されているので、ツールで復号します。
 
 <div class="attention">
-同一アカウントからメタデータ閲覧サイトへの同時ログイン数は１に制限されています。閲覧後はブラウザーを閉じる前に，必ず Logout からログアウトしてください。  
-"Maximum sessions of 1 for this principal exceeded" のエラーが表示されたときは，30 分程度間隔を空けてから再度ログインしてください。
+復号ツールは Linux で実行してください。Windows はサポートしていません。
 </div>
 
-閲覧終了後は，必ず左上の Logout からログアウトしてください。
+利用者の解析環境で A-DU999991 ディレクトリに直下に移動し、tools ディレクトリにある復号ツール「A-DU999991.tool.zip」を A-DU999991 ディレクトリ直下に展開します。
 
+```
+$ cd A-DU999991
+$ unzip tools/A-DU999991.tool.zip
+```
 
-{% include image.html url="books/agddown08.jpg" caption="メタデータ閲覧サイトからのログアウト" class="w500" %}
+復号処理スクリプトおよび暗号化済み共通鍵ファイルが展開されます。DU 全体を対象とする復号スクリプト A-DU999991.decrypt.sh が A-DU999991 ディレクトリ直下に、個々のデータファイルを対象とする case1.fastq.gz.decrypt.sh のような復号スクリプトが暗号化されたデータファイルが含まれる Data/Analysis ディレクトリに配置されます。
 
+```
+$ ls 
+A-DU999991.decrypt.sh
+AGDS_999992 　　
+tools　　　　　　
+$ ls AGDS_999992/AGDD_999993/AGDR_999999994/
+case1.fastq.gz.decrypt.sh
+case1.fastq.gz.encrypt
+case1.fastq.gz.encrypt.dat
+$ ls AGDS_999992/AGDD_999993/AGDZ_999999996/
+case1.vcf.gz.decrypt.sh
+case1.vcf.gz.encrypt
+case1.vcf.gz.encrypt.dat
+```
 
-下記エラーは同時接続数が１を超えている場合に表示されます。30 分以上の間隔を空けて再度ログインしてください。
+- .decrypt.sh: 復号処理スクリプト
+- .dat: 暗号化済み共通鍵ファイル
 
+全ての復号処理スクリプトに対して実行権限を付与します。
 
-{% include image.html url="books/jgadown09.jpg" caption="同時ログイン数が１を超えている場合のエラー" class="w500" %}
+```
+$ chmod 754 A-DU999991.decrypt.sh 
+$ chmod 754 AGDS_999992/AGDD_999993/AGDR_999999994/case1.fastq.gz.decrypt.sh
+$ chmod 754 AGDS_999992/AGDD_999993/AGDR_999999995/case2.fastq.gz.decrypt.sh
+$ chmod 754 AGDS_999992/AGDD_999993/AGDZ_999999996/case1.vcf.gz.decrypt.sh 
+$ chmod 754 AGDS_999992/AGDD_999993/AGDZ_999999997/case2.vcf.gz.decrypt.sh 
+```
 
+データファイルが多数ある場合、以下のようにワイルドカード (*) を使ったコマンドを実行するとデータファイル毎の復号処理スクリプトに対して一括で実行権限を付与することができます。
 
-### データファイルのディスク郵送  {#data-file-transfer-by-hard-disk}
+```
+$ chmod 754 A-DU999991.decrypt.sh 
+$ chmod 754 AGDS_999992/**/**/*.decrypt.sh
+```
 
+NBDC への利用申請時に登録したデータセット暗号化用公開鍵とペアになっている「秘密鍵」を指定して「A-DU999991.decrypt.sh」を実行し、全データファイルを復号します。
 
-<div class="attention" markdown="1">
-データファイルのディスク郵送を希望する場合は必ず事前に [AGD にご連絡ください](/contact-ddbj.html)。
-</div>
+以下の番号とデータファイルを例としてデータの復号方法を説明します。
 
-利用承認された，郵送を希望するデータセットを格納するために十分な容量の USB 接続ハードディスク (ファイルシステムは NTFS、ext3 もしくは ext4 にしてください) をご用意ください。ファイルシステムは事前に必ずウイルスチェックを実施し，空の状態でお送りください。
+- -k: データセット暗号化用公開鍵とペアの秘密鍵を指定 （例：A-DU999991_private_key）
+- -p: 秘密鍵のパスフレーズを指定（パスフレーズを指定していない場合は省略）
 
-<span class="red">宛先が記入された返送用の着払い伝票を同封して</span>下記宛にお送りください。<span class="red">ハードディスクにラベルを貼って区別しやすくすることを推奨いたします。</span>
+```
+$ ./A-DU999991.decrypt.sh -k A-DU999991_private_key -p ******
+$ ls AGDS_999992/AGDD_999993/AGDR_999999994/
+case1.fastq.gz　　          # 復号されたデータファイル
+case1.fastq.gz.decrypt.sh
+case1.fastq.gz.encrypt
+case1.fastq.gz.encrypt.dat
+$ ls AGDS_999992/AGDD_999993/AGDZ_999999996/
+case1.vcf.gz　　            # 復号されたデータファイル
+case1.vcf.gz.decrypt.sh
+case1.vcf.gz.encrypt
+case1.vcf.gz.encrypt.dat
+```
 
+DU ディレクトリ下にある Study や Dataset ディレクトリを sftp した場合、以下のようなディレクトリ配置にしてから復号スクリプトを実行します。DU ディレクトリ直下に DU 単位の復号スクリプトと暗号化されたデータファイルが含まれている Study/Dataset/Data or Analysis ディレクトリを配置します。
 
-<address markdown="1">
+```
+$ A-DU999991/
+A-DU999991/A-DU999991.decrypt.sh
+A-DU999991/AGDS_999992/AGDD_999993
+```
 
-〒411-8540  
-静岡県三島市谷田1111 国立遺伝学研究所 生命情報研究センター W201 AGD 担当 児玉 悠一  
-電話:055-981-6853
+### メタデータ {#metadata}
 
-</address>
+metadata ディレクトリには以下のファイルが含まれています。メタデータファイルは暗号化されていません。
+
+#### メタデータオブジェクトの内容が記述された tsv ファイル {#metadata-tsv}
+
+- AGDD_999993.sample.txt
+- AGDD_999993.analysis.SEQUENCE_VARIATION.txt  
+
+メタデータを見やすくするため、Sample 及び Analysis については、1行目に項目名、2行目以降に内容が記述された tsv ファイルが提供されます。Analysis の tsv ファイル名には Analysis type（種類）が含まれており、type 毎に作成されます。
+
+#### メタデータオブジェクトの対応関係と内容を記述した tsv ファイル {#metadata-relation-tsv}
+
+- AGDD_999993.study_sample_experiment_data.mapping.txt
+
+Data → Experiment → Sample → Study の対応関係を示した表。Experiment と Data についてはこの対応表がオブジェクトの内容表示を兼ねています。
+
+- AGDD_999993.study_analysis_sample.mapping.txt
+
+Analysis → Sample → Study の対応関係を示した表。複数サンプルの結果をまとめた解析データなど、Analysis が複数 Sample を参照している場合はアクセッション番号ではなく参照している Sample の「数」が記載されます。
+
+- AGDD_999993.analysis_sample.mapping.txt
+
+Analysis と Sample の対応表。Analysis が複数 Sample を参照している場合、全ての Sample アクセッション番号が列挙されます。
+
+- AGDD_999993.dataset_policy_data_analysis.mapping.txt
+
+Dataset に含まれる Data、Analysis とリンクしている Policy の対応表。
+
+#### 各オブジェクトのメタデータ XML ファイル {#metadata-xml}
+
+- AGDD_999993.study.xml
+- AGDD_999993.dataset.xml
+- AGDD_999993.policy.xml
+- AGDD_999993.sample.xml
+- AGDD_999993.experiment.xml
+- AGDD_999993.data.xml
+- AGDD_999993.analysis.xml
+- AGDD_999993.dac.xml
+
+プログラムで機械処理する場合などに利用できます。
+
+#### ファイルリスト {#filelist}
+
+- AGDD_999993.filelist.txt
+
+データファイルの名前、種類、サイズ、復号前後の MD5 ハッシュ値、及び、含まれている Data と Analysis アクセッション番号をまとめた表。
+手許でダウンロードしたファイルの MD5 ハッシュ値を取得し、リスト中の値と比較することでファイルの破損チェックを行うことができます。
+
+### WinSCP によるダウンロード {#upload-excel-winsftp}
+
+[WinSCP (http://winsftp.net/eng/download.php)](http://winsftp.net/eng/download.php) をダウンロードし、Windows PC にインストールします。
+
+以下のように設定します。
+
+- 転送プロトコル: SFTP
+- ホスト名: jga-gw.ddbj.nig.ac.jp
+- ポート番号: 443
+- ユーザ名: D-way アカウント ID
+- パスワード: 空欄のまま
+
+{% include image.html url="books/jga-winscp-sftp1.jpg" caption="WinSCP 接続情報の入力" class="w400" %}
+
+{% include image.html url="books/jga-winscp2.jpg" caption="WinSCP 認証用秘密鍵を指定" class="w400" %}
+
+初回接続時には警告メッセージが表示されますが、「はい」を選択してください (次回から表示されません)。次の画面では、鍵を作成した際に指定したパスフレーズを入力します。
+
+{% include image.html url="books/jga-winscp3.jpg" caption="WinSCP ファイルの転送" class="w400" %}
+
+ログインに成功すると、左側のウィンドウにユーザの PC のフォルダ、右側のウィンドウに AGD サーバの登録者専用ディレクトリが表示されるので 右側ウィンドウでファイルを選択し左側ウィンドウへドラッグ＆ドロップし、PC へファイルをダウンロードします。
