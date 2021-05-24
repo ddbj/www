@@ -561,13 +561,13 @@ $(function(){
 /* 画像ビュー */
 $(function(){
   if($.isFunction($.fn.colorbox)){
-    
+   
     // 画像ポップアップ
     $("figure a").attr("rel", "colorbox-group");
-    $("figure a").colorbox({maxWidth:"80%", maxHeight:"80%"});
+    $("figure a").colorbox({maxWidth:"80%", maxHeight:"80%", close: closeText});
 
     // youtube ポップアップ
-    $("a.youtube_figure").colorbox({iframe:true, innerWidth:"80%", innerHeight:"80%"});
+    $("a.youtube_figure").colorbox({iframe:true, innerWidth:"80%", innerHeight:"80%", close: closeText});
   }
 });
 

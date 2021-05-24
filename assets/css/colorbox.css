@@ -30,7 +30,7 @@
     #cboxMiddleRight{width:21px; background:url(images/controls.png) right top repeat-y;}
     #cboxTopCenter{height:21px; background:url(images/border.png) 0 0 repeat-x;}
     #cboxBottomCenter{height:21px; background:url(images/border.png) 0 -29px repeat-x;}
-    #cboxContent{background:#fff; overflow:hidden;}
+    #cboxContent{background:#fff; overflow:hidden; border: 0.4rem solid #5f6368; box-shadow: 0px 1px 10px #000000; padding: 10px;}
         .cboxIframe{background:#fff;}
         #cboxError{padding:50px; border:1px solid #ccc;}
         #cboxLoadedContent{margin-bottom:28px;}
@@ -46,12 +46,13 @@
         #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
 
         #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
-        #cboxPrevious{position:absolute; bottom:0; left:0; background:url(images/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
-        #cboxPrevious:hover{background-position:-75px -25px;}
-        #cboxNext{position:absolute; bottom:0; left:27px; background:url(images/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
-        #cboxNext:hover{background-position:-50px -25px;}
-        #cboxClose{position:absolute; bottom:0; right:0; background:url(images/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}
-        #cboxClose:hover{background-position:-25px -25px;}
+        #cboxPrevious{box-shadow: none; position:absolute; bottom:0; left:0; background:url(../images/parts/arrow_black_l24.png) no-repeat 0; width:25px; height:25px; text-indent:-9999px;}
+        /* #cboxPrevious:hover{background-position:-75px -25px;} */
+        #cboxNext{box-shadow: none; position:absolute; bottom:0; left:27px; background:url(../images/parts/arrow_black_r24.png) no-repeat 0; width:25px; height:25px; text-indent:-9999px;}
+        /* #cboxNext:hover{background-position:-50px -25px;} */
+        #cboxClose{box-shadow: none; position:absolute; bottom:0; right:0; background:url(../images/parts/close_black_24.png) no-repeat 0; width:25px; height:25px; text-indent: -60px;}
+        /* #cboxClose:hover{background-position:-25px -25px;} */
+        #cboxPrevious, #cboxNext, #cboxClose:focus { box-shadow: none;}
 
 /*
   The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
