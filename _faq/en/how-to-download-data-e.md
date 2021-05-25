@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: How do I download files?
+title: How do I access public data?
 category: faq
 db:
   - dra
@@ -11,7 +11,8 @@ lang: en
 ---
 
 Download files from DDBJ ftp server at
-<ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq>.
+<ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq>.  
+The ftp resources are also accessible via https at https://ddbj.nig.ac.jp/public/ddbj_database
 
 wget
 : wget is a convenient way to download files over FTP.
@@ -35,3 +36,5 @@ Examples:
 ```
 ascp -i <aspera connect SSH key> -QT -l 300m -P 33001 anonftp@ascp.ddbj.nig.ac.jp:/ddbj_database/dra/fastq/DRA000/DRA000001/DRX000001/DRR000001.fastq.bz2 .
 ```
+
+In the NIG supercomputer, public data are directly acccessible at /usr/local/resources/
