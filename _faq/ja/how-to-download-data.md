@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: 公開されているデータをダウンロードする方法を教えてください
+title: 公開されているデータにアクセスする方法を教えてください
 category: faq
 db:
   - dra
@@ -9,8 +9,8 @@ date: 2013-10-08T10:31:22
 lang: ja
 ---
 
-DDBJ ftp サーバ <ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq>
-からダウンロードしてください。
+DDBJ ftp サーバ <ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq> からダウンロードしてください。  
+https://ddbj.nig.ac.jp/public/ddbj_database から https でアクセスすることもできます。 
 
 wget
 : wget コマンドを使って ftp サーバからデータを簡単に取得することができます。
@@ -36,3 +36,8 @@ ascp -i <aspera connect SSH key> <option> -P 33001 anonftp@ascp.ddbj.nig.ac.jp:<
 ```
 ascp -i <aspera connect SSH key> -QT -l 300m -P 33001 anonftp@ascp.ddbj.nig.ac.jp:/ddbj_database/dra/fastq/DRA000/DRA000001/DRX000001/DRR000001.fastq.bz2 .
 ```
+
+遺伝研スパコンの一般区画ではマウントされた /usr/local/resources/ でデータに直接アクセスすることができます。   
+
+
+

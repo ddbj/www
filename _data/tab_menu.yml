@@ -3,6 +3,9 @@ agd:
     - id: home
       title: Home
       url: /agd/index.html
+    - id: browse researches at nbdc 
+      title: Browse researches at NBDC  
+      url: https://gr-sharingdbs.biosciencedbc.jp/agd
     - id: submission
       title: Submission
       url: /agd/submission.html

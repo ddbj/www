@@ -713,48 +713,52 @@
   window.addEventListener('load', DDBJ_makeFooter, false);
 
   function DDBJ_languageSwitcher() {
-    if (script.dataset.ddbjHomePage !== 'true') return;
-    let href = location.href;
-    href = href.indexOf('#') !== -1 ? href.slice(0, href.indexOf('#')) : href;
-    href = href.indexOf('?') !== -1 ? href.slice(0, href.indexOf('?')) : href;
-    let otherLanguageLink;
-    switch (language) {
-      case 'ja':
-        if (href.slice(-1) === '/') {
-          otherLanguageLink = href + 'index-e.html';
-        } else if (href.slice(-5) === '.html') {
-          otherLanguageLink = href.slice(0, -5) + '-e.html';
-        } else {
-          otherLanguageLink = href + '-e.html';
-        }
-        otherLanguageLink = otherLanguageLink.replace(/\/ja\//, '/en/');
-        break;
-      default: // en
-        if (href.slice(-4) === '/en/') {
-          otherLanguageLink = href.slice(0, -3) + 'ja/index.html';
-        } else if (href.slice(-1) === '/') {
-          otherLanguageLink = href + 'index.html';
-        } else if (href.slice(-2) === '-e') {
-          otherLanguageLink = href.slice(0, -2) + '.html';
-        } else if (href.slice(-7) === '-e.html') {
-          otherLanguageLink = href.slice(0, -7) + '.html';
-        }
-        otherLanguageLink = otherLanguageLink.replace(/\/en\//, '/ja/');
-        break;
+    try {
+      if (script.dataset.ddbjHomePage !== 'true') return;
+      let href = location.href;
+      href = href.indexOf('#') !== -1 ? href.slice(0, href.indexOf('#')) : href;
+      href = href.indexOf('?') !== -1 ? href.slice(0, href.indexOf('?')) : href;
+      let otherLanguageLink;
+      switch (language) {
+        case 'ja':
+          if (href.slice(-1) === '/') {
+            otherLanguageLink = href + 'index-e.html';
+          } else if (href.slice(-5) === '.html') {
+            otherLanguageLink = href.slice(0, -5) + '-e.html';
+          } else {
+            otherLanguageLink = href + '-e.html';
+          }
+          otherLanguageLink = otherLanguageLink.replace(/\/ja\//, '/en/');
+          break;
+        default: // en
+          if (href.slice(-4) === '/en/') {
+            otherLanguageLink = href.slice(0, -3) + 'ja/index.html';
+          } else if (href.slice(-1) === '/') {
+            otherLanguageLink = href + 'index.html';
+          } else if (href.slice(-2) === '-e') {
+            otherLanguageLink = href.slice(0, -2) + '.html';
+          } else if (href.slice(-7) === '-e.html') {
+            otherLanguageLink = href.slice(0, -7) + '.html';
+          }
+          otherLanguageLink = otherLanguageLink.replace(/\/en\//, '/ja/');
+          break;
+      }
+      fetch(otherLanguageLink)
+        .then(response => {
+          if (!response.ok) {
+            throw Error(response.status);
+          }
+          return response;
+        })
+        .then(() => {
+          document.querySelector('.DDBJ_menu.-DDBJ_right').innerHTML += `<li class="DDBJ_language"><a href="${otherLanguageLink}">${language === 'ja' ? 'English' : 'Japanese'}</a></li>`;
+        })
+        .catch(() => {
+          console.log('error')
+        });
+    } catch(error) {
+      window.console.error(error);
     }
-    fetch(otherLanguageLink)
-      .then(response => {
-        if (!response.ok) {
-          throw Error(response.status);
-        }
-        return response;
-      })
-      .then(() => {
-        document.querySelector('.DDBJ_menu.-DDBJ_right').innerHTML += `<li class="DDBJ_language"><a href="${otherLanguageLink}">${language === 'ja' ? 'English' : 'Japanese'}</a></li>`;
-      })
-      .catch(() => {
-        console.log('error')
-      });
   }
 
   function DDBJ_makeFooter() {

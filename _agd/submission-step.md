@@ -7,299 +7,162 @@ current_tab: submission
 lang: ja
 ---
 
-## AGD 概要  {#overview}
+## NBDC へのデータ提供申請  {#ds-application}
 
-[日本 DNA データバンク (DDBJ) センター](/index.html)はヒトデータをグループ共有 (制限共有) するためのデータベースである AMED Genome group sharing Database (AGD) を DDBJ グループクラウドでサービス提供しています。 データ提供・利用申請審査は [National Bioscience Database Center (NBDC)](http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines) で実施しています。
+[NBDC データ申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application)から[提供申請](https://gr-sharingdbs.biosciencedbc.jp/agd-data-submission)します。  
+申請時に提供申請グループを作成します。提供申請が NBDC で承認された後、AGD サーバにデータアップロード用ディレクトリが作成されます。
 
+申請には D-way アカウントが必要です。アカウントが無い場合は申請前に [D-way](https://ddbj.nig.ac.jp/D-way/) アカウントを取得してください。
 
 <div class="attention" markdown="1">
-  - AGD はオープンなデータベースである INSDC やアクセス制限データベースである JGA とは別のデータベースです。
-  - AGD の登録システムは DDBJ センターのオープンデータ登録システムである [D-way](https://ddbj.nig.ac.jp/D-way/)，アクセス制限データベースである JGA とは異なります。
-  - AGD にデータを登録するためには [NBDC へのデータ提供申請とヒトデータ審査委員会での承認](https://gr-sharingdbs.biosciencedbc.jp/agd-data-submission)が必要です。
-  - AGD 登録アカウントのアカウント名とパスワードは [NBDC](http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines) から通知されます。
-</div>    
+D-way アカウント作成後、[NBDC データ申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application)で利用できるようになるまで10分程度の時間がかかります。
+</div>
 
-このページでは AGD へのデータ登録手順を説明しています。
+NBDC 申請システムで自動入力させるため、アカウントに所属情報や日本語氏名を登録します。    
+[NBDC 申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application)にログインし、右上のメニューから「ユーザ情報更新」を選択します。  
+
+{% include image.html url="books/profile1.jpg" caption="ユーザ情報更新" class="w400" %}
+
+アカウント情報を入力するため「Edit」をクリックします。
+
+{% include image.html url="books/profile2.jpg" caption="Edit でアカウント情報の編集を開始" class="w300" %}
+
+所属情報や日本語氏名を入力します。
+
+{% include image.html url="books/profile3.jpg" caption="アカウント情報を入力" class="w400" %}
+
+「Save」で登録します。
+
+{% include image.html url="books/profile4.jpg" caption="Save で保存" class="w300" %}
+
+以下では AGD データの登録手順を説明します。
+
+## 提供申請グループ {#data-submitter-group}
+
+申請前に提供申請グループを作成します。例の提供申請グループ (subgrp1) では申請及び登録を担当する研究員 (account_b) がオーナー、研究代表者 (account_c) がメンバーとなっています。  
+実際には NBDC 申請システムで申請したアカウントが自動的に申請者になります。登録者が PI と申請者以外にも居る場合は必ず全員をメンバーに含めてください。登録に関する連絡はメンバーアカウントに対して送られます。
+
+{% include image.html url="books/DS-group.png" caption="データ提供申請グループ" class="w400" %}
+
+提供申請を開始し、作成した提供申請グループを選択します。
+
+{% include image.html url="books/DS-start.png" caption="提供申請の開始" class="w450" %}
+
+{% include image.html url="books/DS-group-select.png" caption="データ提供申請グループの選択" class="w450" %}
+
+## 提供申請の承認 {#du-approval}
+
+提供申請が NBDC で承認されると、AGD の Submission ID (例 ASUB000353) が発行され、AGD サーバに対応するアップロード用ディレクトリが作成されます。
+
+{% include image.html url="books/DS-approved.png" caption="提供申請の承認" class="w450" %}
+
+{% include image.html url="books/DS-JSUB.png" caption="提供申請と AGD submission ID" class="w250" %}
+
+AGD ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/submission/agd/ の下に Submission ID と同名のディレクトリが作成されるので、ここにメタデータをデータファイルを sftp でアップロードします。この例であればディレクトリは /controlled-access/submission/agd/JSUB000353/ になります。
 
 ## エクセルでのメタデータ作成  {#create-metadata-using-excel}
 
-### エクセルファイルへの記入  {#enter-metadata-into-excel}
+### エクセルファイルへの記入 {#enter-metadata-into-excel}
 
-メタデータ記入用エクセルファイルを下記よりダウンロードし、内容を英語で記入してください。メタデータの説明は[こちらのページ](/agd/download.html)をご参考ください。
+メタデータ記入用エクセルファイルを下記よりダウンロードし、内容を英語で記入してください。メタデータの説明は[こちらのページ](/agd/submission.html)をご覧ください。
 
-[![AGD メタデータ記入用エクセル](/assets/images/parts/download.png "AGD メタデータ記入用エクセル"){:.w40}.](/assets/files/submission/AGD_metadata.xlsx)
+[![AGD メタデータ記入用エクセル](/assets/images/parts/download.png "AGD メタデータ記入用エクセル"){:.w40}](/assets/files/submission/AGD_metadata.xlsx)
 
-last updated: 2017-08-18
-
+last updated: 2021-05-21
 
 <div class="attention" markdown="1">
-必ずエクセルのファイル名は \_metadata.xlsx で終わるようにしてください。\_metadata より前は Submission ID など識別のために自由に名前を付けることができます。
-</div>
-
-<div class="attention">
 AGD にアップロードするファイル名には空白を含めないでください。
 </div>
 
-<div class="attention">
-Data/Analysis オブジェクトに複数のファイルが含まれる場合は，可能な限りファイルを結合し１つにまとめてください。ファイルのアップロード・ダウンロードで不具合が発生する可能性があります。
-</div>
-
-### エクセルの記入例  {#example-submission}
-
-[メタデータエクセルの記入例](https://docs.google.com/spreadsheets/d/1HHlxItj89fQv2oWUNBIHZ4VVGwbcC09WGD5tEiXAQZ4/edit#gid=744299318)
-
-### AGD submission tool  {#agd-submission-tool}
-
-AGD submission tool (最終更新日: 2018-11-21，v3.5.0) をダウンロードします。
-
-
 <div class="attention" markdown="1">
-Java 8 で実行してください。Java 7 では動作しません。[プロキシ環境での使用方法について](#use-proxy-environment)
+データは AGD Submission 単位で公開されます。公開時期の異なるデータセットは別の Submission に分けてください。
 </div>
-
-#### Windows
-
-[Windows 用 AGD submission tool](/assets/files/submission/3-5-0/AGD_tool.zip)
-
-展開したフォルダに含まれる bat ファイルをダブルクリックして起動。
-
-<span class="red">動作環境: Java Runtime Environment Version 8 Update 45 以上</span>
-
-#### Unix
-
-[Unix 用 AGD submission tool](/assets/files/submission/3-5-0/AGD_tool_unix.zip)
-
-展開したフォルダに含まれる sh ファイルをシェルで実行して起動。
-
-<span class="red">動作環境: Java SE Development Kit 8u45 以上。OpenJDK では動作しません。</span>
 
 ### エクセルをアップロード  {#upload-excel}
 
-AGD tool を起動し，[NBDC](http://gr-sharingdbs.biosciencedbc.jp/agd-guidelines) 担当者から通知されるアカウントとパスワードでログインします。
-
-
-{% include image.html url="submission/agdsub1.jpg" caption="AGD tool へのログイン" class="w200" %}
-
-
-左ウィンドウがお手許のコンピュータ，右ウィンドウが AGD のセキュアなファイルサーバになります。
-
-右ウィンドウ上部の Submission ID で対象となる AGD 登録の ID (例 upload-0003) をプルダウンメニューから選択します。 左ウィンドウでメタデータを記入したエクセルファイル (例 AGD\_upload-0003\_metadata.xlsx) を選択し，Encrypt & Upload をクリックします。
-
-
-{% include image.html url="submission/agdsub2.jpg" caption="対象 submission とエクセルファイルの選択" class="w500" %}
-
-
-エクセルファイルがサーバにセキュアにアップロードされます。下部ウィンドウにエラーメッセージが表示されますが無視してください。
-
-エクセルファイルをアップロードした後，[メールで AGD 担当者にご連絡ください](/contact-ddbj.html)。
-
-
-{% include image.html url="submission/agdsub3.jpg" caption="アップロードされたエクセルファイル" class="w500" %}
-
-
-<div class="attention">
-メタデータが記入されたエクセルファイルはメールで送付しないでください。
+<div class="attention" markdown="1">
+AGD にファイルを sftp でアップロードするためには [D-way アカウントに center name と公開鍵を登録](/account.html#enable-dra-submission-in-account)する必要があります。AGD サーバに ssh ログインすることはできません。
 </div>
 
-### エクセル/XML をダウンロード  {#download-excel-xml-files}
+AGD ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/submission/agd/ の下に AGD Submission ID と同名のディレクトリが作成されるので、
+sftp の P オプションでポート番号 443 を指定してログインし、対象ディレクトリに移動しエクセルをアップロードします。
+sftp では公開鍵・秘密鍵認証を利用しており、[D-way アカウントに登録した秘密鍵](/account.html#generate-key-pair)を指定します。
 
-AGD ファイルサーバ上にある「ファイル名が \_metadata.xlsx で終わるエクセル」と「XML ファイル」は tool でダウンロードすることができます。
+例
+- アカウント名: account_b
+- AGD Submission ID: ASUB000353
 
-ダウンロードしたいエクセルファイル (例 AGD\_upload-0003\_r1\_metadata.xlsx) を右クリックし，表示されるメニューの Download を選択します。対象のファイルが左ウィンドウで表示されているローカルマシンにダウンロードされます。
+```
+$ sftp -i private-key-for-auth -P 443 account_b@jga-gw.ddbj.nig.ac.jp
+$ cd controlled-access/submission/agd/ASUB000353
+$ put ASUB000353_metadata.xlsx 
+```
+-i: 認証用秘密鍵を指定
+-P: 接続先ポート番号 443 を指定
 
+### WinSCP によるアップロード {#upload-excel-winsftp}
 
-{% include image.html url="submission/agddown1.jpg" caption="エクセルのダウンロード" class="w500" %}
+[WinSCP (http://winsftp.net/eng/download.php)](http://winsftp.net/eng/download.php) をダウンロードし、Windows PC にインストールします。
 
+以下のように設定します。
 
-ダウンロードしたい XML ファイル (例 upload-0003\_Data.xml) を右クリックし，表示されるメニューの Download を選択します。対象のファイルが左ウィンドウで表示されているローカルマシンにダウンロードされます。必要な XML ファイルを１つずつダウンロードします。
+転送プロトコル: SFTP
+- ホスト名: jga-gw.ddbj.nig.ac.jp
+- ポート番号: 443
+- ユーザ名: D-way アカウント ID
+- パスワード: 空欄のまま
 
+{% include image.html url="books/jga-winscp1.jpg" caption="WinSCP 接続情報の入力" class="w400" %}
 
-{% include image.html url="submission/agddown2.jpg" caption="XML のダウンロード" class="w500" %}
+{% include image.html url="books/jga-winscp2.jpg" caption="WinSCP 認証用秘密鍵を指定" class="w400" %}
 
+初回接続時には警告メッセージが表示されますが、「はい」を選択してください (次回から表示されません)。次の画面では、鍵を作成した際に指定したパスフレーズを入力します。
 
-## 登録ファイルのアップロード  {#upload-data-files}
+{% include image.html url="books/jga-winscp3.jpg" caption="WinSCP ファイルの転送" class="w400" %}
 
-### 登録するデータ  {#file-formats-submission}
+ログインに成功すると、左側のウィンドウにユーザの PC のフォルダ、右側のウィンドウに AGD サーバの登録者専用ディレクトリが表示されるので 左側ウィンドウでファイルを選択し右側ウィンドウへドラッグ＆ドロップし、サーバへファイルを転送します。
 
-Data オブジェクトに fastq や bam ファイルなどの個人レベルの生データを登録します。Analysis に変異解析，表現型情報，質問票など解析したデータや各種ドキュメントを登録します。
+## データファイルのアップロード  {#upload-data-files}
 
-<div class="attention">
+### データファイル形式 {#data-file-format}
+
+AGD 登録システムではファイルの拡張子でアーカイブ・圧縮形式を判定し、ファイルを処理しています。
+
+- 拡張子 zip、tar、tar.gz、tgz、tar.bz2、tbz2、gz、bz2 のファイルは標準的な方法でアーカイブ・圧縮されているファイルと判定され、展開・解凍処理されます。拡張子とアーカイブ・圧縮形式が一致していないファイルや、これら以外の形式でアーカイブ・圧縮されたファイルはエラーになります。
+- bam ファイルは圧縮しないでください。
+- gz や bzip 圧縮したファイルをさらに tar でアーカイブせず、tar.gz 等でアーカイブしたファイルを圧縮してください。
+
+### 登録するデータ {#file-formats-submission}
+
+Data オブジェクトに fastq や bam ファイルなどの個人レベルの次世代シークエンスデータを登録します。Analysis にアレイデータ，変異解析，質問票などの次世代シークエンス以外のデータや各種ドキュメントを登録します。
+
+<div class="attention" markdown="1">
 データの再利用性，再現性のためには論文での主張の基になっている解析データが登録されることが重要です。できるだけ VCF などの解析データを Analysis に登録してください。
 </div>
 
-### メタデータ XML ファイル  {#metadata-xml-file}
+### データファイルのアップロード {#data-files-upload}
 
-ダウンロードした XML ファイルとデータファイルを AGD tool で選択し，対象 submission にまとめてアップロードします。
+データファイルを sftp で登録用ディレクトリにアップロードします。
 
-
-{% include image.html url="submission/agdsub4.jpg" caption="メタデータ XML ファイルとデータファイルのアップロード" class="w500" %}
-
-
-### 登録ファイルの検証処理  {#validation-submitted-files}
-
-メタデータとデータファイルに以下の検証処理が実施され，データファイルは暗号化されて AGD サーバにアップロードされます。
-
-  - メタデータ XML の [JGA XML schema](https://github.com/ddbj/pub/tree/master/docs/jga) に対する検証
-  - [メタデータオブジェクト](/agd/download.html#metadata)相互の関係
-  - Data と Analysis XML に記載されているデータファイルの存在チェック
-  - データファイルアップロード前後での [md5 値](/dra/submission.html#supplement-md5)の一致チェック
-
-全ての検証処理を通過すると，下部ウィンドウに \[INFO\] upload succeeded. を表示されます。登録が査定され，問題がなければ [AGD 管理用 ID](/agd/download.html#id)が発行されます。
-
-エラーメッセージが表示された場合は[メールで AGD 担当者にご連絡ください](/contact-ddbj.html)。
-
-
-{% include image.html url="submission/agdsub4.jpg" caption="検証処理を通過したメタデータ XML とデータファイル" class="w500" %}
-
-
-### 複数ファイルの選択方法  {#select-files}
-
-左ウィンドウに表示されているファイルを複数選択することができます。
-
-#### 範囲選択
-
-始点となるファイルのファイル名部分 (チェックボックスではありません) を選択します。続いて終点となるファイル名を Shift キーを押しながら選択すると，ファイルが範囲選択されます。選択した状態で右クリックメニューから "check (selected item)" を選び，範囲選択したファイルをチェックします。
-
-
-{% include image.html url="submission/agd_range_select.jpg" caption="範囲選択したファイルのチェック" class="w500" %}
-
-
-#### 複数選択
-
-Control キーを押しながらファイルを選択していくと，ファイルが複数選択されます。選択した状態で右クリックメニューから "check (selected item)" を選び，選択したファイルをチェックします。
-
-
-{% include image.html url="submission/agd_multi_select.jpg" caption="複数選択したファイルのチェック" class="w500" %}
-
-
-#### サブディレクトリ選択
-
-ファイルが含まれているサブディレクトリをチェックすると，配下の全てのファイルがチェックされます。
-
-
-{% include image.html url="submission/agd_dir_select.jpg" caption="サブディレクトリごとチェック" class="w500" %}
-
-
-### プロキシ環境での使用方法  {#use-proxy-environment}
-
-プロキシ環境でツールを使用するためにはプロキシサーバの設定が必要になります。
-
-ツールが格納されているフォルダ中の "proxy.properties" を開きプロキシサーバ名 (server=) とポート番号 (port=) を設定します。
+例
+- アカウント名: account_b
+- AGD Submission ID: ASUB000353
 
 ```
-# Enter the server name and port number of the proxy server
-  to connect the AGD server via the proxy.
-# For example:
-# server=proxy.example.ac.jp
-# port=8080
-server=
-port=
+$ sftp -i private-key-for-auth -P 443 account_b@jga-gw.ddbj.nig.ac.jp
+$ cd controlled-access/submission/agd/ASUB000353
+$ put wgs1.fastq
+```
+-i: 認証用秘密鍵を指定
+-P: 接続先ポート番号 443 を指定
+
+拡張子 fastq の全てのファイルをアップロード。
+```
+$ mput *.fastq
 ```
 
-プロキシサーバが認証を要求している場合，ツールにログイン後に表示されるウィンドウに認証情報を入力します。
+## メタデータとデータの登録 {#metadata-data-submission}
 
-2017-01-26 にリリースした v3.2.1 で BASIC 認証に対応しましたが Digest 認証には未対応です。
-
-## ハードディスクでのデータファイル送付  {#send-data-files-in-hard-disk}
-
-AGD ツールでの転送に多大な時間を要する，ファイル選択画面がフリーズするなど，大容量・多件数のファイル転送が困難な場合には，ハードディスクでデータを受け付けています。
-
-<div class="attention">
-ディスクフォーマットは NTFS、ext3 もしくは ext4 にしてください。  
-郵送前にディスクをアンチウイルスソフトでチェックしてください。
-</div>
-
-### データの暗号化  {#encrypt-data-files}
-
-AGD データ暗号化ツールを使ってデータファイルを暗号化し，ディスクにコピーし郵送します。XML メタデータファイルは AGD Submission Tool でアップロードし，ディスクに含めないでください。
-
-[![AGD データ暗号化ツール](/assets/images/parts/download.png "AGD データ暗号化ツール"){:.w40}.](/assets/files/submission/agd-data-encrypt.tar.gz)
-
-last updated: 2017-01-26
-
-<div class="attention">
-個別のデータファイルごとに暗号化してください。ファイルをディレクトリや tar でまとめて暗号化しないでください。
-</div>
-
-ツールの動作環境
-
-  - 暗号化対象データの総サイズ分の空きディスク領域が必要です。
-  - CentOS 6.4 で動作確認を行っています。
-  - Java Runtime Environment Version 8 Update 45 以上の Java 実行環境が必要です。
-
-取得した "agd-data-encrypt.tar.gz" ファイルを tar コマンドで解凍します。 下記のような構成のディレクトリが生成されます。内部のディレクトリ構成は変更しないでください。
-
-agd-data-encrypt.sh (実行シェルスクリプト) jar/ -\> 実行ファイル格納ディレクトリ (改変不可)
-
-ツールを配置したディレクトリに移動し，下記の要領でコマンドを実行します。  
-sh agd-data-encrypt.sh\[space\]-t\[対象ファイルパス\]\[space\]-o\[出力先ディレクトリパス\]  
-例)
-
-```
-$ sh agd-data-encrypt.sh -t target.fastq -o output
-```
-
-コマンドラインオプション
-
-\-t --target  
-暗号化対象ファイルのファイルパスを指定します。  
-指定可能なファイルは１ファイルです。複数ファイル（\*ワイルドカードでの指定）の指定やディレクトリを指定することはできません。  
-複数のファイルを一括で暗号化する場合はシェルスクリプトを組んでください。
-
-\-o --output  
-暗号化したファイル，暗号化鍵，MD5 ファイルを出力するディレクトリのパスを指定します。  
-指定されたパスにディレクトリが存在しない場合，実行時にディレクトリが作成されます。  
-
-出力されるファイル
-
-出力ディレクトリには，暗号化対象1ファイルに対して以下の3種類のファイルが出力されます。
-
-1. 暗号化された対象ファイル (.encrypt)  
-ファイル名は \[暗号化前のファイル名\].encrypt になります。 (例: 暗号化前のファイル名が file1.fastq の場合
-file1.fastq.encrypt)
-
-2. 鍵ファイル (.encrypt.dat)  
-暗号化に使用された鍵ファイルです。暗号化対象ファイル1つにつき1鍵ファイルが生成され，公開鍵で暗号化された状態で出力されます。 ファイル名は
-\[暗号化された対象ファイル名\].dat となります。 (例: 暗号化前のファイル名が file1.fastq
-の場合、file1.fastq.encrypt.dat)
-
-暗号化前後の MD5 ファイル (.md5)  
-暗号化対象ファイルの暗号化前後の MD5 値を記録したファイルです。暗号化対象1ファイルに対して1つの MD5 ファイルが生成されます。 ファイル名は \[暗号化前のファイル名\].md5 となります。 (例: 暗号化前のファイル名が file1.fastq の場合、file1.fastq.md5 となります)
-
-出力メッセージ
-
-本ツールのメッセージはログファイル (ツールを設置したディレクトリ内の \[実行サーバ host 名\].agd-data-encrypt.log ファイル) および標準出力に出力されます。標準出力に表示される標準的なメッセージは以下の通りです。
-
-```
-$ sh agdcmd.sh -t /home/hoge/file.txt -o /tmp/output
-START encrypt file ←処理開始
-start encryption : /home/hoge/file.txt ←対象ファイル名
-encryption complete : /tmp/output /file.txt.encrypt ←出力ファイル名
-FINISH encrypt file ←処理完了
-```
-
-エラーメッセージ
-
-| メッセージ                                                  | 内容                              |
-|---|
-| \[code 11\] encryption error : \<target\>              | ファイルの暗号化処理でエラーが発生しました           |
-| \[code 12\] make md5 file error : \<target\>           | ファイルのMD5取得、MD5書き込み処理でエラーが発生しました |
-| \[code 13\] output dir is not a directory : \<target\> | \-o に指定されたパスがディレクトリではありません      |
-| \[code 14\] target is not a file : \<target\>          | \-t に指定されたパスが通常ファイルではありません      |
-
-### データの送付  {#sending-files}
-
-AGD にデータを登録するためには「暗号化された対象ファイル」「鍵ファイル」「暗号化前後のMD5ファイル」の３点セットが必要です。各対象データファイルについて生成される３ファイルを全てディスクにコピーします。
-
-メタデータ XML ファイルはディスクにはコピーせず，AGD Submission Tool でアップロードします。
-
-USB 接続のハードディスクにデータをコピーし，<span class="red">宛先が記入された返送用の伝票を同封して</span>下記宛にお送りください。<span class="red">ハードディスクにラベルを貼って区別しやすくすることを推奨いたします。</span>
-
-
-<address markdown="1">
-
-〒411-8540  
-静岡県三島市谷田1111 国立遺伝学研究所 生命情報研究センター W201 AGD 担当  
-電話:055-981-6853
-
-</address>
+AGD キュレータがメタデータとデータファイルを査定します。完成したエクセルからキュレータが XML を生成し、AGD に登録します。
+      
+メタデータとデータファイルが検証処理を通過するとアクセッション番号が発行されます。
