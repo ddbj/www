@@ -22,7 +22,7 @@ Microarray-based and sequencing-based submissions should follow the [MIAME](http
 </thead>
 <tbody>
 <tr>
-<td><p>Studies concerning quantitative gene expression, gene regulation, epigenetics, or other functional genomics studies.</p>
+<td><p>Studies concerning quantitative gene expression, gene regulation, epigenetics, SNP genotyping or other functional genomics studies.</p>
 <p>Examples include:</p>
 <ul>
 <li>mRNA profiling, RNA-seq</li>
@@ -30,6 +30,7 @@ Microarray-based and sequencing-based submissions should follow the [MIAME](http
 <li>ChIP-Seq</li>
 <li>HiC-seq</li>
 <li>methyl-seq, bisulfite-seq</li>
+<li>SNP microarray genotyping</li>
 </ul>
 <p>If you have questions about whether GEA can accept your data type, please <a href="/contact-ddbj-e.html">contact us</a>.</p></td>
 <td><ul>
