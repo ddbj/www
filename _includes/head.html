@@ -1,8 +1,8 @@
 <head>
     <meta charset="UTF-8" />
-    <meta property="og:title" content="Top" />
-    <meta property="og:url" content="/index.html" />
-    <meta property="og:description" content="生命情報・DDBJ センターは生命科学研究から生み出されるデータの共有・解析サービスを提供することで広く研究活動をサポートしています    検索・解析    登録    ダウンロード    …" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+    <meta property="og:description" content="{{ page.content | strip_html | strip_newlines | truncate: 83 }}" />
     <meta property6="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
