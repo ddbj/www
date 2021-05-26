@@ -14,6 +14,8 @@ date: 2021-05-24T11:59:04
 lang: en
 ---
 
+Please cite the accession numbers that are assigned to your data submissions, e.g. the DDBJ nucleotide sequence or DRA Run accession numbers.
+
 ## DRA {#dra}
 
 A DRA submission is composed of following objects with unique prefix. 
