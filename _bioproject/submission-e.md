@@ -84,9 +84,7 @@ Three layers (B)
 
 ### Data release  {#data-release}
 
-
 {% include image.html url="submission/release_re.jpg" caption="Triggering of data release between primary projects and data records." class="w450" %}
-
 
 You can "immediately release" or "hold" the registered primary project.
 
@@ -94,13 +92,13 @@ The submitted primary project data can be kept private until the linked DDBJ, DR
 
 FAQ: [How are linked BioProject/BioSample/sequence data released?](/faq/en/bp-bs-seq-release.html)
 
-
 {% include image.html url="submission/um_pri_visibility.jpg" caption="Visibility of relationships between a public umbrella and primary projects." class="w450" %}
-
 
 <span class="red">An umbrella project cannot be kept private.</span>An umbrella project can have public and private primary projects. Hierarchical relationship between the public umbrella project and the un-released primary project is invisible.
 
 Released project data are exchanged with the other two INSDC partners [NCBI](https://www.ncbi.nlm.nih.gov/bioproject)and [EBI](https://www.ebi.ac.uk/)BioProject databases.
+
+If you want to release your data, specify DDBJ/DRA/GEA accession numbers to be released. When only BioProject accession is informed, only the BioProject record is released and related data are not released. Similarly, when only BioSample accession is informed, only the BioSample record is released and related data are not released. 
 
 ### Use an umbrella project  {#use-umbrella-project}
 

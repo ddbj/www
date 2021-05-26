@@ -1731,6 +1731,8 @@ SRA](//www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi).
 The list of available fastq files at the DRA file server:
 [fastqlist](https://ddbj.nig.ac.jp/public/ddbj_database/dra/meta/list/fastqlist)
 
+If you want to release your data, specify DDBJ/DRA/GEA accession numbers to be released. When only BioProject accession is informed, only the BioProject record is released and related data are not released. Similarly, when only BioSample accession is informed, only the BioSample record is released and related data are not released. 
+
 ## Update submission  {#update-submission}
 
 ### Update in each database  {#update-in-each-database}

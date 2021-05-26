@@ -127,7 +127,9 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
 <!-- end list -->
 
 [Hold](#BioSample_Hold)<a name="BioSample_Hold"></a>  
-: この BioSample ID を引用している DDBJ、DRA、DTA レコードが公開されると同時に公開されます。この BioSample ID を引用している非公開の DDBJ レコードが公開されることはありません。
+: この BioSample ID を引用している DDBJ、DRA、GEA レコードが公開されると同時に公開されます。この BioSample ID を引用している非公開の DDBJ レコードが公開されることはありません。
+
+データの公開を希望する場合、DDBJ/DRA/GEA データに対するアクセッション番号で公開対象を指定します。BioProject アクセッション番号のみが指定された場合、当該 BioProject のみが公開され、関連データは公開されません。同様に BioSample アクセッション番号のみが指定された場合、当該 BioSample のみが公開され、関連データは公開されません。
 
 ### General info  {#General-info}
 

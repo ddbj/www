@@ -6,10 +6,11 @@ db:
   - biosample
 tags: 
   - Accession number
-date: 2015-10-13T15:48:35
+date: 2021-05-24T15:27:55
 lang: en
 ---
 
+No, typically, it is appropriate to cite the accession numbers that are assigned to your data submissions, e.g. the DDBJ nucleotide sequence or DRA Run accession numbers.    
+[Which accession numbers should be cited in publication?](/faq/ja/cite-accession.html)    
 
-
-<p>Typically, it is appropriate to cite the accession numbers that are assigned to your data submissions, e.g. the DDBJ, WGS or DRA accession numbers. If individual BioSamples do need to be referenced, state that "BioSample metadata are available in the DDBJ BioSample database under accession number SAMDxxxxxxxx".</p>
+If an individual BioSample needs to be referenced, state that "BioSample metadata are available in the DDBJ BioSample database under accession number SAMDxxxxxxxx".

@@ -1452,7 +1452,6 @@ DRA では以下の場合にデータを公開しています。
 ([TSA](/ddbj/tsa.html)、[WGS](/ddbj/wgs.html), [CON](/ddbj/con.html)
 など) が公開された場合
 
-
 B, C または D の場合は登録者の了解がなくても例外なく公開します。D の場合、引用されている DRR 番号を含む DRA
 登録全体が公開されます。
 
@@ -1464,6 +1463,8 @@ FAQ:
 
 DRA ファイルサーバに存在する fastq ファイル一覧:
 [fastqlist](https://ddbj.nig.ac.jp/public/ddbj_database/dra/meta/list/fastqlist)
+
+データの公開を希望する場合、DDBJ/DRA/GEA データに対するアクセッション番号で公開対象を指定します。BioProject アクセッション番号のみが指定された場合、当該 BioProject のみが公開され、関連データは公開されません。同様に BioSample アクセッション番号のみが指定された場合、当該 BioSample のみが公開され、関連データは公開されません。
 
 ## 登録の更新  {#update-submission}
 

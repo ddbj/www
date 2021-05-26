@@ -31,6 +31,8 @@ related_pages:
   </tbody> 
 </table>
 
+データの公開を希望する場合、DDBJ/DRA/GEA データに対するアクセッション番号で公開対象を指定します。BioProject アクセッション番号のみが指定された場合、当該 BioProject のみが公開され、関連データは公開されません。同様に BioSample アクセッション番号のみが指定された場合、当該 BioSample のみが公開され、関連データは公開されません。
+
 ## GenBank, EMBL-Bank に相当する狭義の  DDBJ の場合 {#ddbj}
 
 依頼者について  
