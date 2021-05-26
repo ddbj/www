@@ -85,6 +85,8 @@ Accessions numbers are generated when sufficient metadata and data files are pro
 
 The data can be kept private until your paper is published. You can set the hold date for a maximum of 4 years and can change it. Registered records are released according to the [Data Release Policy](/documents/data-release-policy-e.html).
 
+FAQ: [How to request data release?](/faq/en/request-release-e.html)
+
 ## Reviewer access  {#reviewer-access}
 
 Submitters are able to generate an access token for journal reviewers after a pre-published experiment or array design is loaded into the GEA database. For instructions, see [reviewer accesss page](/gea/reviewer-access-e.html) for how to obtain an access token and communicate it to journal editors and reviewers.

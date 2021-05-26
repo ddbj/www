@@ -86,6 +86,8 @@ GEA の Experiment と Array design に対して以下の形式のアクセッ�
 
 関連する論文が公表されるまでデータを非公開にすることができます。四年後までの公開予定日を設定し、随時延長することができます。登録されたデータは[データ公開原則](/documents/data-release-policy.html)に従って公開されます。
 
+FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
+
 ## Reviewer access  {#reviewer-access}
 
 GEA データベースに非公開 experiment と array design が登録された後、登録者は査読者用のアクセストークンを発行することができます。トークンを発行してジャーナルの編集者と査読者に伝える手順については [reviewer accesss](/gea/reviewer-access.html) ページをご覧ください。

@@ -1464,7 +1464,7 @@ FAQ:
 DRA ファイルサーバに存在する fastq ファイル一覧:
 [fastqlist](https://ddbj.nig.ac.jp/public/ddbj_database/dra/meta/list/fastqlist)
 
-データの公開を希望する場合、DDBJ/DRA/GEA データに対するアクセッション番号で公開対象を指定します。BioProject アクセッション番号のみが指定された場合、当該 BioProject のみが公開され、関連データは公開されません。同様に BioSample アクセッション番号のみが指定された場合、当該 BioSample のみが公開され、関連データは公開されません。
+FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
 
 ## 登録の更新  {#update-submission}
 

@@ -122,7 +122,7 @@ Select "Hold" or "Release". You cannot specify hold date. Please see [Data Relea
 [Hold](#BioSample_Hold)<a name="BioSample_Hold"></a>  
 : Submitted BioSample record is released when the DDBJ, DRA and GEA record(s) referencing this BioSample ID is released. Private DDBJ record(s) referencing this BioSample ID is not released.
 
-If you want to release your data, specify DDBJ/DRA/GEA accession numbers to be released. When only BioProject accession is informed, only the BioProject record is released and related data are not released. Similarly, when only BioSample accession is informed, only the BioSample record is released and related data are not released. 
+FAQ: [How to request data release?](/faq/en/request-release-e.html)
 
 ### General info  {#General-info}
 

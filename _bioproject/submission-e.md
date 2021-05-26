@@ -98,7 +98,7 @@ FAQ: [How are linked BioProject/BioSample/sequence data released?](/faq/en/bp-bs
 
 Released project data are exchanged with the other two INSDC partners [NCBI](https://www.ncbi.nlm.nih.gov/bioproject)and [EBI](https://www.ebi.ac.uk/)BioProject databases.
 
-If you want to release your data, specify DDBJ/DRA/GEA accession numbers to be released. When only BioProject accession is informed, only the BioProject record is released and related data are not released. Similarly, when only BioSample accession is informed, only the BioSample record is released and related data are not released. 
+FAQ: [How to request data release?](/faq/en/request-release-e.html)
 
 ### Use an umbrella project  {#use-umbrella-project}
 

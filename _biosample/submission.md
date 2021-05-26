@@ -15,9 +15,7 @@ lang: ja
 
 以下の図は BioSample がどのように他の DDBJ のデータベースとリンクしているかを示しています。 この例は、データと二つの BioSample、三つの BioProject、一つの Umbrella BioProject から構成されています。ユーザは BioProject または BioSample データベースを検索し、目的のレコードを取得、そこからのリンクをたどることによって [DDBJ](/ddbj/index.html)、[DRA](/dra/index.html) に登録されている関連する実験データを得ることができます。
 
-
 {% include image.html url="submission/biosample_integration.jpg" caption="BioSample と他の DDBJ データベースとの連携" class="w450" %}
-
 
 ### サンプル  {#sample}
 
@@ -51,9 +49,7 @@ DDBJ BioSample に実装された最初の辞書は [Genomics Standards Consorti
 
 MIxS チェックリストについては Nature Biotechnology 29, 415–420 (2011) \| doi: 10.1038/nbt.1823(PMID:[21552244](https://www.ncbi.nlm.nih.gov/pubmed/21552244) ) を参照してください。
 
-
 {% include image.html url="books/mixs.jpg" caption="MIxS チェックリスト" class="w450" %}
-
 
 ### 生物名  {#organism}
 
@@ -129,7 +125,7 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
 [Hold](#BioSample_Hold)<a name="BioSample_Hold"></a>  
 : この BioSample ID を引用している DDBJ、DRA、GEA レコードが公開されると同時に公開されます。この BioSample ID を引用している非公開の DDBJ レコードが公開されることはありません。
 
-データの公開を希望する場合、DDBJ/DRA/GEA データに対するアクセッション番号で公開対象を指定します。BioProject アクセッション番号のみが指定された場合、当該 BioProject のみが公開され、関連データは公開されません。同様に BioSample アクセッション番号のみが指定された場合、当該 BioSample のみが公開され、関連データは公開されません。
+FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
 
 ### General info  {#General-info}
 

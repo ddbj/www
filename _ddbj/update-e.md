@@ -29,7 +29,7 @@ See [Categories for Sequence Data](/documents/data-categories-e.html).
   	</tbody> 
 </table>
 
-If you want to release your data, specify DDBJ/DRA/GEA accession numbers to be released. When only BioProject accession is informed, only the BioProject record is released and related data are not released. Similarly, when only BioSample accession is informed, only the BioSample record is released and related data are not released. 
+FAQ: [How to request data release?](/faq/en/request-release-e.html)
 
 ### Narrowly-defined DDBJ, as a counterpart of GenBank and EMBL-Bank  {#ddbj}
 

@@ -83,7 +83,6 @@ BioProject は同じプロジェクトに由来するデータ、それからま
 
 ### データ公開 {#data-release}
 
-
 {% include image.html url="submission/release_re.jpg" caption="プライマリープロジェクトとデータレコードの公開の仕組み" class="w500" %}
 
 DDBJ BioProject に登録されたプライマリープロジェクトは「即日公開」もしくは「非公開」にすることができます。
@@ -99,7 +98,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 
 公開されたプロジェクトデータは [NCBI](https://www.ncbi.nlm.nih.gov/bioproject) と [EBI](https://www.ebi.ac.uk/) の BioProject データベースと交換されます。
 
-データの公開を希望する場合、DDBJ/DRA/GEA データに対するアクセッション番号で公開対象を指定します。BioProject アクセッション番号のみが指定された場合、当該 BioProject のみが公開され、関連データは公開されません。同様に BioSample アクセッション番号のみが指定された場合、当該 BioSample のみが公開され、関連データは公開されません。
+FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
 
 ### アンブレラプロジェクトの活用  {#use-umbrella-project}
 
