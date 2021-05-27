@@ -6,7 +6,7 @@ lang: ja
 
 ## ヒトデータに関するデータベース事業について研究対象者等に公開すべき事項
 
-[人を対象とする医学系研究に関する倫理指針](http://www.lifescience.mext.go.jp/bioethics/ekigaku.html)で定められている、DDBJ
+[人を対象とする生命科学・医学系研究に関する倫理指針](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hokabunya/kenkyujigyou/i-kenkyu/index.html)で定められている、DDBJ
 センターにおけるヒトデータに関するデータベース事業について研究対象者等に公開すべき事項は以下の通りです。
 
 #### 1. 情報の利用目的及び利用方法
