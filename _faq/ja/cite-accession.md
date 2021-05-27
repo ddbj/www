@@ -44,7 +44,7 @@ Experiment アクセッション番号 E-GEAD-n を引用してください。
 
 ## BioProject {#bioproject}
 
-[BioProject 番号のみを引用することは避けてください](/faq/jga/project-accession.html)。
+[BioProject 番号のみを引用することは避けてください](/faq/ja/project-accession.html)。
 
 ## BioSample {#biosample}
 
