@@ -948,7 +948,7 @@ DRA への登録 ～データの転送 (Windows)～
 転送モードはバイナリモードにします。テキストモードで転送しないでください。
 </div>
 
-  - **File protocol:** SFTP
+  - **File protocol:** SCP
   - **Host name:** ftp-private.ddbj.nig.ac.jp
   - **Port number:** 22
   - **User name:** (D-way の Login ID を入力)
