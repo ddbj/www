@@ -285,7 +285,7 @@ Dataset に含まれる Data、Analysis とリンクしている Policy の対�
 - ユーザ名: D-way アカウント ID
 - パスワード: 空欄のまま
 
-{% include image.html url="books/jga-winscp-sftp1.jpg" caption="WinSCP 接続情報の入力" class="w400" %}
+{% include image.html url="books/winscp-setting-sftp.jpg" caption="WinSCP 接続情報の入力" class="w400" %}
 
 {% include image.html url="books/jga-winscp2.jpg" caption="WinSCP 認証用秘密鍵を指定" class="w400" %}
 

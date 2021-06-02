@@ -29,6 +29,8 @@ See [Categories for Sequence Data](/documents/data-categories-e.html).
   	</tbody> 
 </table>
 
+FAQ: [How to request data release?](/faq/en/request-release-e.html)
+
 ### Narrowly-defined DDBJ, as a counterpart of GenBank and EMBL-Bank  {#ddbj}
 
 Making requests  

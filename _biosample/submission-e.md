@@ -13,11 +13,9 @@ lang: en
 
 [The BioSample database](/biosample/index-e.html)was developed to serve as a central location in which to store descriptive information about biological samples used to generate experimental data in any of primary data archives.
 
-Following figure depicts how BioSample records are organized and linked with other objects. This example is composed of one umbrella project that encompasses three subprojects, each of which generated data derived from two BioSample records. Users can query either the BioProject or the BioSample database to retrieve the relevant records, and then navigate through links to the corresponding experimental data which continue to be stored in DDBJ's primary data archives, [DDBJ](/ddbj/index-e.html), [DRA](/dra/index-e.html) and [DOR](/dor/index-e.html).
-
+Following figure depicts how BioSample records are organized and linked with other objects. This example is composed of one umbrella project that encompasses three subprojects, each of which generated data derived from two BioSample records. Users can query either the BioProject or the BioSample database to retrieve the relevant records, and then navigate through links to the corresponding experimental data which continue to be stored in DDBJ's primary data archives, [DDBJ](/ddbj/index-e.html), [DRA](/dra/index-e.html) and [GEA](/gea/index-e.html).
 
 {% include image.html url="submission/biosample_integration.jpg" caption="Overview of BioSample and BioProject integration with other DDBJ databases" class="w450" %}
-
 
 ### Sample  {#sample}
 
@@ -122,7 +120,9 @@ Select "Hold" or "Release". You cannot specify hold date. Please see [Data Relea
 <!-- end list -->
 
 [Hold](#BioSample_Hold)<a name="BioSample_Hold"></a>  
-: Submitted BioSample record is released when the DDBJ, DRA and DTA record(s) referencing this BioSample ID is released. Private DDBJ record(s) referencing this BioSample ID is not released.
+: Submitted BioSample record is released when the DDBJ, DRA and GEA record(s) referencing this BioSample ID is released. Private DDBJ record(s) referencing this BioSample ID is not released.
+
+FAQ: [How to request data release?](/faq/en/request-release-e.html)
 
 ### General info  {#General-info}
 

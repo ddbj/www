@@ -285,7 +285,6 @@ In regard to review of data that does not fall under personal identification cod
 Related Information
   * Personal Information Protection Commission, Act on the Protection of Personal Information, Laws and regulations, guidelines etc.
   * Ethical Guidelines for Medical and Health Research Involving Human Subjects
-  * Ethical Guidelines for Human Genome/Gene Analysis Research
   * NBDC Human Data Sharing Guidelines 
   * NBDC Human Database (FAQ)
   * [Notification for research participants regarding our database activities for human data](/reaserch-participant-notification-e.html)

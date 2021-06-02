@@ -106,6 +106,11 @@ lang: ja
 <a href="https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482">いくつかのパッケージの登録例</a>を公開しています。
 </p>
 
+<h3 id="data-type">データ種別毎のサンプル登録</h3>
 
-<p>ヒト由来サンプルについては <a href="/biosample/human-sample.html">Human Sample</a> も参照してください。</p>
-</div>
+<ul>
+  <li><a href="/biosample/human-sample.html">Human Sample</a></li>
+  <li><a href="/ddbj/metagenome-assembly.html">Metagenome Assembly</a></li>
+  <li><a href="/ddbj/single-amplified-genome.html">Single amplified genome</a></li>
+  <li><a href="/ddbj/pseudohaplotype.html">Pseudohaplotype</a></li>
+</ul>

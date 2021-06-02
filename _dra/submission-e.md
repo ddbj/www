@@ -1120,7 +1120,7 @@ Set items as below and click the [Advanced...] button.
 Be sure to select the "binary mode" for file transfer. Do NOT select the "text mode".
 </div>
 
-  - File protocol: SFTP
+  - File protocol: SCP
   - Host name: ftp-private.ddbj.nig.ac.jp
   - Port number: 22
   - User name: (D-way Login ID)
@@ -1730,6 +1730,8 @@ SRA](//www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi).
 
 The list of available fastq files at the DRA file server:
 [fastqlist](https://ddbj.nig.ac.jp/public/ddbj_database/dra/meta/list/fastqlist)
+
+FAQ: [How to request data release?](/faq/en/request-release-e.html)
 
 ## Update submission  {#update-submission}
 

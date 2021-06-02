@@ -31,6 +31,8 @@ related_pages:
   </tbody> 
 </table>
 
+FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
+
 ## GenBank, EMBL-Bank に相当する狭義の  DDBJ の場合 {#ddbj}
 
 依頼者について  

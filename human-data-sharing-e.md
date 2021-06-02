@@ -7,8 +7,7 @@ lang: en
 ## Notification for research participants regarding our database activities for human data
 
 Notification for research participants regarding our database activities
-for human data as defined by the [Ethical Guidelines for Medical and
-Health Research Involving Human Subjects (Japanese　only)](http://www.lifescience.mext.go.jp/bioethics/ekigaku.html) is as　follows.
+for human data as defined by the [Ethical Guidelines for Medical and Health Research Involving Human Subjects (Japanese　only)](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hokabunya/kenkyujigyou/i-kenkyu/index.html) is as　follows.
 
 #### 1. Purpose and method of information uses
 

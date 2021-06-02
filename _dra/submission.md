@@ -948,7 +948,7 @@ DRA への登録 ～データの転送 (Windows)～
 転送モードはバイナリモードにします。テキストモードで転送しないでください。
 </div>
 
-  - **File protocol:** SFTP
+  - **File protocol:** SCP
   - **Host name:** ftp-private.ddbj.nig.ac.jp
   - **Port number:** 22
   - **User name:** (D-way の Login ID を入力)
@@ -1452,7 +1452,6 @@ DRA では以下の場合にデータを公開しています。
 ([TSA](/ddbj/tsa.html)、[WGS](/ddbj/wgs.html), [CON](/ddbj/con.html)
 など) が公開された場合
 
-
 B, C または D の場合は登録者の了解がなくても例外なく公開します。D の場合、引用されている DRR 番号を含む DRA
 登録全体が公開されます。
 
@@ -1464,6 +1463,8 @@ FAQ:
 
 DRA ファイルサーバに存在する fastq ファイル一覧:
 [fastqlist](https://ddbj.nig.ac.jp/public/ddbj_database/dra/meta/list/fastqlist)
+
+FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
 
 ## 登録の更新  {#update-submission}
 

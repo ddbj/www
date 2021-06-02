@@ -20,7 +20,7 @@ GEA はマイクロアレイや次世代シークエンサから出力される�
 </tr>
 <tbody>
 <td>
-<p>定量的な遺伝子発現、遺伝子発現制御やエピジェネティクス解析をしている研究やその他の機能ゲノミクス研究から得られたデータ。</p>
+<p>定量的な遺伝子発現、遺伝子発現制御、エピジェネティクス解析や SNP genotyping 等の機能ゲノミクス研究から得られたデータ。</p>
 <p>例:</p>
 <ul>
 <li>mRNA プロファイリング、RNA-seq</li>
@@ -28,6 +28,7 @@ GEA はマイクロアレイや次世代シークエンサから出力される�
 <li>ChIP-Seq</li>
 <li>HiC-seq</li>
 <li>methyl-seq、bisulfite-seq</li>
+<li>SNP マイクロアレイ genotyping</li>
 </ul>
 <p>データが GEA に登録可能かどうか不明な場合は<a href="/contact-ddbj.html">お問い合わせください</a>。</p>
 </td>
@@ -84,6 +85,8 @@ GEA の Experiment と Array design に対して以下の形式のアクセッ�
 ## データ公開  {#rel}
 
 関連する論文が公表されるまでデータを非公開にすることができます。四年後までの公開予定日を設定し、随時延長することができます。登録されたデータは[データ公開原則](/documents/data-release-policy.html)に従って公開されます。
+
+FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
 
 ## Reviewer access  {#reviewer-access}
 
