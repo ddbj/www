@@ -23,14 +23,14 @@ related_pages:
   - title: 登録の見本
     url: /ddbj/example.html
 ---
-　
+
 
 ## 概要  {#outline}
 
 feature key の中でも、タンパク質のコーディング領域を記述する CDS はデータベース中に多数、記載されています。  
-CDS feature の location はアミノ酸翻訳の対象となる塩基配列を開始コドンから終止 ドンまでの位置を基本に示します。CDS には、その位置情報、[codon\_start](/ddbj/qualifiers.html#codon_start)、由 生物のコドン表 ([transl\_table](/ddbj/qualifiers.html#transl_table) に記載されます)、な びに [transl\_except](/ddbj/qualifiers.html#transl_except) の記述に基づいて、アミノ酸翻訳を行ない、[translation](/ddbj/qualifiers.html#translation) を付加します (ただし、[pseudo](/ddbj/qualifiers.html#pseudo)、または、[pseudogene]( /ddbj/qualifiers.html#pseudogene) の指定がある場合にはアミノ酸翻訳は行いません)。
+CDS feature の location はアミノ酸翻訳の対象となる塩基配列を開始コドンから終止コドンまでの位置を基本に示します。CDS には、その位置情報、/[codon\_start](/ddbj/qualifiers.html#codon_start)、由来生物のコドン表 (/[transl\_table](/ddbj/qualifiers.html#transl_table) に記載されます)、な びに /[transl\_except](/ddbj/qualifiers.html#transl_except) の記述に基づいて、アミノ酸翻訳を行ない、[translation](/ddbj/qualifiers.html#translation) を付加します (ただし、[pseudo](/ddbj/qualifiers.html#pseudo)、または、[pseudogene]( /ddbj/qualifiers.html#pseudogene) の指定がある場合にはアミノ酸翻訳は行いません)。
 
-登録者からの報告に基づいて、対応するタンパク質の名称や機能が CDS 下位の適切な qualifier ([product](/ddbj/qualifiers.html#product)、[function](/ddbj/qualifiers.html#function)、etc.)に記入されます。また、これらの情報が実験的に確認されたもの あるときには [experiment](/ddbj/qualifiers.html#experiment)、配列の類似性検索等で類推さ たものであるときには [inference](/ddbj/qualifiers.html#inference) という qualifier を用いて注釈されることがあります。
+登録者からの報告に基づいて、対応するタンパク質の名称や機能が CDS 下位の適切な qualifier (/[product](/ddbj/qualifiers.html#product)、/[function](/ddbj/qualifiers.html#function)、etc.)に記入されます。また、これらの情報が実験的に確認されたもの あるときには [experiment](/ddbj/qualifiers.html#experiment)、配列の類似性検索等で類推さ たものであるときには [inference](/ddbj/qualifiers.html#inference) という qualifier を用いて注釈されることがあります。
 
 なお、INSDCは、類似性や相同性の判定基準を定めておりませんので、類似タンパク質であるとの判断は、すべて登録者の判断に基づきます。  
 また、タンパク質のモチーフ、２次構造以上の構造に関する情報は、原則としてフラットファイルには記載されないことになっています。
@@ -43,25 +43,25 @@ CDS feature の location はアミノ酸翻訳の対象となる塩基配列を�
 
 DDBJ は遺伝子命名に関する権限などは持っていません。また、特定の遺伝子命名管理団体との公 な協調も行っておりません。特に問題がない限り、登録者の意向に基づいて記述しています。
 
-CDS feature では、[product](/ddbj/qualifiers.html#product) qualifier に産物に相当するタンパク質名と、[gene](/ddbj/qualifiers.html#gene) qualifier に由来する locus を示す象徴的な略号を記載することを基本とします。  
+CDS feature では、/[product](/ddbj/qualifiers.html#product) qualifier に産物に相当するタンパク質名と、/[gene](/ddbj/qualifiers.html#gene) qualifier に由来する locus を示す象徴的な略号を記載することを基本とします。  
 特に相同性検索などによる結果の総括として product の内容が採用される可能性が高いため、 product には、理解が容易な記載を推奨しております。
 
 拘束力はありませんが、DDBJ では記載指針を、下記のように心がけております。
 
   - 登録者に研究上の主張がある場合は、これに従う。
   - 上記に矛盾しないならば、参照データベースの既存記載に合わせるようにする。
-  - gene は locus 単位に割り当てるようにする。
-  - product は個々のタンパク質産物を指すようにする。
+  - /gene は locus 単位に割り当てるようにする。
+  - /product は個々のタンパク質産物を指すようにする。
 
-配列利用者の利便性を考える上での対応として、gene、product の表記方法、ガイドラインを下記のように提示しています。
+配列利用者の利便性を考える上での対応として、/gene、/product の表記方法、ガイドラインを下記のように提示しています。
 
-[gene](/ddbj/qualifiers.html#gene): 遺伝子を指す象徴的な略号  
+/[gene](/ddbj/qualifiers.html#gene): 遺伝子を指す象徴的な略号  
 : 例: ilvE
 : 入力時のご注意：
   - 遺伝子シンボルとしての略号を記載して下さい。
   - 一般に通用する複数の略号がある場合でも複数の略号を記載しないで下さい。<br>また、そのために不必要に区切り記号を使用しないで下さい。略号の複数記載を希望される場合は、代表的な略号を gene に記載し、その他の略号を [gene\_synonym](/ddbj/qualifiers.html#gene_synonym) に記載して下さい。
 
-[product](/ddbj/qualifiers.html#product): タンパク質産物を指す一般名  
+/[product](/ddbj/qualifiers.html#product): タンパク質産物を指す一般名  
 : 例: trypsinogen
 : 入力時のご注意：
   - 生物名を含めないで下さい。
@@ -70,9 +70,7 @@ CDS feature では、[product](/ddbj/qualifiers.html#product) qualifier に産�
     一般名の複数記載を希望される場合は、代表的な名称を product に、その他の名称を
     [note](/ddbj/qualifiers.html#note) に記載して下さい。
   - 機能、名称等が不明なタンパク質の場合は、hypothetical protein と記載することを推奨します。
-  - [the international protein nomenclature
-    guidelines](https://www.ncbi.nlm.nih.gov/genome/doc/internatprot_nomenguide/)
-    に準拠することを推奨します。
+  - [the international protein nomenclature guidelines](https://www.ncbi.nlm.nih.gov/genome/doc/internatprot_nomenguide/) に準拠することを推奨します。
 : 強制力はありませんし、これに合致しない命名法を採択する生物種も多く、酵素名などの記載原則とは一部、矛盾します。しかし、それは承知の上で、どのように命名すれば良いかわからない、という登録者の方々への指針、閲覧利用者がその特徴を理解する際の一助として提示しております。
 : なお、登録完了後でも、記載の修正は随時受付けておりますので、[登録データの修正・更新](/ddbj/update.html)をご参照の上、お知らせ下さい。
 
@@ -81,9 +79,9 @@ CDS feature では、[product](/ddbj/qualifiers.html#product) qualifier に産�
 CDS と考えていた領域の途中に終止コドンが存在していた場合は、まず、以下の情報が正しく指定されているか否かをご確認ください。
 
   - CDS feature の Location （参照：[Location の記述法](/ddbj/location.html)）
-  - [transl\_table](/ddbj/qualifiers.html#transl_table) で示される遺伝暗号表の番号（参照：[The Genetic
+  - /[transl\_table](/ddbj/qualifiers.html#transl_table) で示される遺伝暗号表の番号（参照：[The Genetic
     Codes](/ddbj/geneticcode.html)）
-  - [codon\_start](/ddbj/qualifiers.html#codon_start) の記述（参照：[codon\_start による翻訳開始の位置補正](#frame)）
+  - /[codon\_start](/ddbj/qualifiers.html#codon_start) の記述（参照：[codon\_start による翻訳開始の位置補正](#frame)）
 
 以上が正しく指定されていても、終止コドンが存在する場合は、その理由により対処法を選択します。下記の指針に従ってください。
 
@@ -104,11 +102,11 @@ a) nonsense mutation、frameshift などと推定されるが理由不明、ま�
 
 b) pseudogene と見做される場合<a name="stop_b"></a>  
 : <span class="red">近縁他種の orthologue、paralogue などとの系統関係、転写されていないことなど、傍証確認が済んでいない段階では、pseudogene と記載することは推奨できません。</span>
-: 想定される CDS location を示し、[pseudogene](/ddbj/qualifiers.html#pseudogene) qualifier を付加します。<br>この場合、生体内に対応するタンパク質は存在しないことになりますので、[translation](/ddbj/qualifiers.html#translation) qualifier とアミノ酸配列は示されません。
-  - 原則、[inference](/ddbj/qualifiers.html#inference) qualifier に参照したデータの記載をお願いします。
-  - [note](/ddbj/qualifiers.html#note) qualifier に "pseudogene of [protein name]" などの記載もお願いします。
-  - [pseudogene](/ddbj/qualifiers.html#pseudogene) qualifier の規定値に関しましては、[Controlled vocabulary for /pseudogene qualifier](/ddbj/pseudogene.html) で解説されています。
-  - この CDS feature に相当するタンパク質産物は存在しないことになりますので、[product](/ddbj/qualifiers.html#product) qualifier は、原則、記載しないでください。
+: 想定される CDS location を示し、/[pseudogene](/ddbj/qualifiers.html#pseudogene) qualifier を付加します。<br>この場合、生体内に対応するタンパク質は存在しないことになりますので、[translation](/ddbj/qualifiers.html#translation) qualifier とアミノ酸配列は示されません。
+  - 原則、/[inference](/ddbj/qualifiers.html#inference) qualifier に参照したデータの記載をお願いします。
+  - /[note](/ddbj/qualifiers.html#note) qualifier に "pseudogene of [protein name]" などの記載もお願いします。
+  - /[pseudogene](/ddbj/qualifiers.html#pseudogene) qualifier の規定値に関しましては、[Controlled vocabulary for /pseudogene qualifier](/ddbj/pseudogene.html) で解説されています。
+  - この CDS feature に相当するタンパク質産物は存在しないことになりますので、/[product](/ddbj/qualifiers.html#product) qualifier は、原則、記載しないでください。
 : [登録の見本 B06](/ddbj/example.html#B06) もご参照ください。
 
 c) 生体内に末端を欠失したタンパク質産物が存在すると推定される場合<a name="stop_c"></a>  
@@ -124,17 +122,17 @@ d) ribosomal slippage<a name="stop_d"></a>
   ``` 
         CDS             join(21..90,92..451)
   ```
-: [ribosomal\_slippage](/ddbj/qualifiers.html#ribosomal_slippage) qualifier を付加します。<br>このとき、[translation](/ddbj/qualifiers.html#translation) qualifier で示す翻訳アミノ酸配列は conceptual translation になります。
+: /[ribosomal\_slippage](/ddbj/qualifiers.html#ribosomal_slippage) qualifier を付加します。<br>このとき、/[translation](/ddbj/qualifiers.html#translation) qualifier で示す翻訳アミノ酸配列は conceptual translation になります。
 : [登録の見本 B10](/ddbj/example.html#B10) もご参照ください。<br>塩基配列登録システム では、"Submission Information" boxに、詳細な説明をお願いします。
 
 e) RNA editing<a name="stop_e"></a>  
 : <span class="red">ゲノムに対して記載することが基本となります。</span>
-: 想定される CDS location を示し、[exception](/ddbj/qualifiers.html#exception) qualifier を付加します。<br>このとき、[translation](/ddbj/qualifiers.html#translation) qualifier で示す翻訳アミノ酸配列は conceptual translation ではなく、transcript の配列、近縁種などの事例から確認、または、推定された記載を採用します。<br>原則、[inference](/ddbj/qualifiers.html#inference) qualifier に推定した根拠の記載をお願いします。
+: 想定される CDS location を示し、/[exception](/ddbj/qualifiers.html#exception) qualifier を付加します。<br>このとき、/[translation](/ddbj/qualifiers.html#translation) qualifier で示す翻訳アミノ酸配列は conceptual translation ではなく、transcript の配列、近縁種などの事例から確認、または、推定された記載を採用します。<br>原則、[inference](/ddbj/qualifiers.html#inference) qualifier に推定した根拠の記載をお願いします。
 : [登録の見本 B09](/ddbj/example.html#B09) もご参照ください。
 : 塩基配列登録システム では、"Submission Information" boxに、詳細な説明をお願いします。
 
 f) selenocystein、あるいは、pyrrolysine に翻訳される場合<a name="stop_f"></a>
-: 想定される CDS location を示し、[transl\_except](/ddbj/qualifiers.html#transl_except) を付加します。<br>その記載に基づき、終止コドンと扱わずにアミノ酸翻訳します。
+: 想定される CDS location を示し、/[transl\_except](/ddbj/qualifiers.html#transl_except) を付加します。<br>その記載に基づき、終止コドンと扱わずにアミノ酸翻訳します。
 : 例;
 
   |  /transl_except=(pos:213..215,aa:Sec)  |  #  "U" (selenocystein の１文字表記) にアミノ酸翻訳されます。  |
