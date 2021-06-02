@@ -372,7 +372,7 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |
   |  例  |  lac  |
 
-### organelle<a name="organelle"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#organelle)</span>
+### /organelle<a name="organelle"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#organelle)</span>
 
   |  定義  |  配列の得られたオルガネラ  |
   |  書式  |  以下のオルガネラタイプから選択します。<br>{::nomarkdown}<ul><li>mitochondrion</li><li>mitochondrion:kinetoplast</li><li>hydrogenosome</li><li>plastid:chloroplast</li><li>plastid:apicoplast</li><li>plastid:chromoplast</li><li>plastid:cyanelle</li><li>plastid:leucoplast</li><li>plastid:proplastid</li><li>plastid</li><li>chromatophore</li><li>nucleomorph</li></ul>{:/} |
@@ -550,7 +550,7 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
   |  書式  |  &lt;base_range&gt;  |
   |  例  |  90..122  |
 
-### tissue_type<a name="tissue_type"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#tissue_type)</span>
+### /tissue_type<a name="tissue_type"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#tissue_type)</span>
 
   |  定義  |  配列の得られた組織の名称  |
   |  書式  |  &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可)  |

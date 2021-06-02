@@ -479,7 +479,7 @@ siRNA |
 | Comment | This qualifier consists of a stable ID portion (accepted data before the end of<br>2018 uses a 3+5 format with 3 position letters and 5 numbers; from the end of<br>2018 new data may be extended to a 3+7 accession format with 3 position letters<br>and 7 numbers) plus a version number after the decimal point.<br>When the protein sequence encoded by the CDS changes, only the version number of<br>the /protein_id value is incremented.<br>The stable part of the /protein_id remains unchanged and as a result will permanently<br>be associated with a given protein.<br>This qualifier is valid only on CDS features which translate into a valid protein. |
 
 
-### proviral<a name="proviral"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#proviral)</span>
+### /proviral<a name="proviral"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#proviral)</span>
      
 | Definition   | this qualifier is used to flag sequence obtained from a virus or phage that is integrated into the genome of another organism |
 | Value format | none             |

@@ -10,17 +10,15 @@ lang: en
 
 # Representative submissions of identical sequences for variation studies
 
-Recently, variation studies related to re-sequencing projects are
-increased, so the sequence data from these projects are also increasd.
-<span class="red">DDBJ (INSDC) basically accepts all sequence data,
-regardless of source and sequence identity</span>, however, if the
-policy is strictly applied, some of data would be very redundant.
+Recently, variation studies related to re-sequencing projects are increased, so the sequence data from these projects are also increasd. 
+<span style="color:red">DDBJ (INSDC) basically accepts all sequence data, regardless of source and sequence identity</span>, however, 
+if the policy is strictly applied, some of data would be very redundant.
 
 In order to take advantage of normalisation for variation studies, a
 single submission to represent multiple identical sequences is also
 acceptable with frequency and total sample number described by
-/[frequency](/ddbj/qualifiers-e.html#frequency) qualifier of
-[](/ddbj/features-e.html#variation)variation feature.
+/[haplotype](/ddbj/qualifiers-e.html#haplotype) qualifier of [source](/ddbj/features-e.html#source) feature and/or /[frequency](/ddbj/qualifiers-e.html#frequency) qualifier of
+[variation](/ddbj/features-e.html#variation) feature.
 
 The way of representative submission for variation studies is NOT to
 mean that all identical (or similar) sequences derived from same species
@@ -32,15 +30,15 @@ and sampled populations.
 
 sequence polymorphism  
 : a unit of sequence variations that can keep unique descriptions of
-[haplotype](/ddbj/qualifiers-e.html#haplotype),
-[allele](/ddbj/qualifiers-e.html#allele) and/or some other
+/[haplotype](/ddbj/qualifiers-e.html#haplotype),
+/[allele](/ddbj/qualifiers-e.html#allele) and/or some other
 qualifiers.
 
 sampled population  
 : a unit of obserbed samples that can keep unique descriptions of
-[country](/ddbj/qualifiers-e.html#country),
-[lat\_lon](/ddbj/qualifiers-e.html#lat_lon),
-[host](/ddbj/qualifiers-e.html#host) and/or some other qualifiers.
+/[country](/ddbj/qualifiers-e.html#country),
+/[lat\_lon](/ddbj/qualifiers-e.html#lat_lon),
+/[host](/ddbj/qualifiers-e.html#host) and/or some other qualifiers.
 
 For example, a study of a locus on cat genomes comparing Japan with USA
 shows that there are three haplotypes of sequence polymorphism indicated
@@ -53,34 +51,34 @@ for both submitters and users.
   <thead>
     <tr>
       <th>polymorphism(haplotype)</th>
-      <th>A</th>
+      <th><span style="color:green">A</span></th>
       <th>B</th>
       <th>C</th>
-      <th>total</th>                
+      <th>total</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>Japan</th>
-      <td>75</td>
+      <th><span style="color:red">Japan</span></th>
+      <td><span style="color:blue">75</span></td>
       <td>38</td>
       <td>0</td>
-      <td>113</td>        
+      <td><span style="color:blue">113</span></td>
     </tr>
     <tr>
       <th>USA</th>
       <td>26</td>
       <td>32</td>
       <td>60</td>
-      <td>118</td>        
+      <td>118</td>
     </tr>
     <tr>
       <th>totla</th>
       <td>101</td>
       <td>60</td>
       <td>70</td>
-      <td>231</td>        
-    </tr>      
+      <td>231</td>
+    </tr>
   </tbody>
 </table>
 
@@ -93,14 +91,14 @@ it is strongly recommended to submit five representative data (There are
 observed in Japan.) to DDBJ in following descriptions for source
 features, respectively.
 
-```
-    source        1..365
-                  /country="Japan"
-                  /haplotype="A"
+<pre>    <a href="/ddbj/features-e.html#source">source</a>        1..365
+                  /<a href="/ddbj/qualifiers-e.html#country">country</a>="<span style="color:red">Japan</span>"
+                  /<a href="/ddbj/qualifiers-e.html#haplotype">haplotype</a>="<span style="color:green">A</span> [<span style="color:blue">75</span> in <span style="color:blue">113</span>]"
                   /mol_type="genomic DNA"
-                  /organism="Felis catus"
-    variation     124
-                  /compare="AB012345.1"
-                  /frequency="75 in 113"
-                  /replace="t"
-```
+                  /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Felis catus"
+    <a href="/ddbj/features-e.html#variation">variation</a>     124
+                  /<a href="/ddbj/qualifiers-e.html#frequency">frequency</a>="<span style="color:blue">75</span> in <span style="color:blue">113</span>"
+                  /<a href="/ddbj/qualifiers-e.html#inference">inference</a>="similar to DNA sequence (same 
+                  species):INSD:AB012345.1"
+                  /<a href="/ddbj/qualifiers-e.html#replace">replace</a>="t"
+</pre>
