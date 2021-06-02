@@ -1068,8 +1068,8 @@ List of submission status
 
 ### Upload sequence data  {#upload-sequence-data} 
 
-Sequence data files need to be uploaded before creating metadata. To
-create metadata first, upload some files.
+Sequence data files need to be uploaded before creating metadata. Do NOT create any sub-directories. 
+To create metadata first, upload some files.
 
 {::options parse_block_html="true" /}
 <div class="accordion-menu">
