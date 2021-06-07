@@ -336,14 +336,7 @@ category: about
         </div>
         </li>          
     </ul>
-    <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/hiramatsu.png" title="平松 道晶"></p>
-        <div class="explanation">
-            <p class="name">平松 道晶</p>
-            <p class="name">HIRAMATSU Michiaki</p>
-        </div>
-        </li>      
+    <ul class="list">     
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/tkato.jpg" title="加藤 健弘"></p>
         <div class="explanation">
@@ -357,9 +350,7 @@ category: about
             <p class="name">高橋 良昌</p>
             <p class="name">TAKAHASHI Yoshimasa</p>
         </div>
-        </li>      
-    </ul>
-    <ul class="list">  
+        </li>
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/watanabe_t.jpg" title="渡辺忠剛"></p>
         <div class="explanation">
@@ -367,7 +358,7 @@ category: about
             <p class="name">WATANABE Tadayoshi</p>
         </div>
         </li>      
-    </ul>   
+    </ul>
     </div>
     <!-- .wrapper -->
     <h2 id="秘書">秘書</h2>
