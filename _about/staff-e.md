@@ -129,14 +129,21 @@ category: about
         </div>
         </li>  
         <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/ghelfi.jpg" title="Andrea Ghelfi"></p>
+        <div class="explanation">
+            <p class="name">Andrea Ghelfi, PhD</p>
+            <p class="position">Data Submission: MSS</p>
+        </div>
+        </li>  
+    </ul>  
+    <ul class="list">
+        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/hata.jpg" title="HATA Chihiro"></p>
         <div class="explanation">
             <p class="name">HATA Chihiro, PhD</p>
             <p class="position">Data Submission: NGS</p>
         </div>
-        </li>  
-    </ul>  
-    <ul class="list">
+        </li>
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/iizuka.jpg" title="IIZUKA Tomoyo"></p>
         <div class="explanation">
@@ -151,6 +158,8 @@ category: about
             <p class="position">Data Submission: NSSS</p>
         </div>
         </li> 
+    </ul>  
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/lee.jpg" title="LEE Kyungbum"></p>
         <div class="explanation">
@@ -158,8 +167,6 @@ category: about
             <p class="position">Data Submission: MSS</p>
         </div>
         </li>  
-    </ul>  
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/okido.jpg" title="OKIDO Toshihisa"></p>
         <div class="explanation">
@@ -174,15 +181,15 @@ category: about
             <p class="position">Data Updates/Correction</p>
         </div>
         </li>
+    </ul>  
+    <ul class="list">
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/suzuki.jpg" title="SUZUKI Kimiko"></p>
             <div class="explanation">
                 <p class="name">SUZUKI Kimiko</p>
-                <p class="position">Data Submission: NGS・PR</p>
+                <p class="position">Data Submission: NGS</p>
             </div>
             </li>  
-    </ul>  
-    <ul class="list">
             <li class="staff">
             <p class="photo"><img src="/assets/images/staff/takaki.jpg" title="TAKAKI Kanae"></p>
             <div class="explanation">
@@ -197,6 +204,8 @@ category: about
                 <p class="position">Data Submission: NSSS</p>
             </div>
             </li>
+    </ul>
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yokoyama.jpg" title="YOKOYAMA Emi"></p>
         <div class="explanation">
@@ -204,7 +213,7 @@ category: about
             <p class="position">Data Updates/Correction</p>
         </div>
         </li>
-    </ul>  
+    </ul>   
     <h3 id="db-development">Database System SE</h3>
     <ul class="list">   
         <li class="staff">
@@ -226,7 +235,13 @@ category: about
         </div>
         </li>
     </ul>
-    <ul class="list">      
+    <ul class="list">
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/sugawara.jpg" title="SUGAHARA Misato"></p>
+        <div class="explanation">
+            <p class="name">SUGAHARA Misato</p>
+        </div>
+        </li>      
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/tsuzuki.jpg" title="SUZUKI Takahiro"></p>
         <div class="explanation">
@@ -237,12 +252,6 @@ category: about
         <p class="photo"><img src="/assets/images/staff/yosida.jpg" title="YOSHIDA Masahiro"></p>
         <div class="explanation">
             <p class="name">YOSHIDA Masahiro</p>
-        </div>
-        </li>
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/watanabe.jpg" title="WATANABE Kouji"></p>
-        <div class="explanation">
-            <p class="name">WATANABE Kouji</p>
         </div>
         </li>
     </ul>  
