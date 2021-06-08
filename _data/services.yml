@@ -124,7 +124,7 @@ items:
     target_data:
       en: Next-generation sequencing data
       ja: 次世代シークエンサから出力されたデータ
-    provider: DDBJ
+    provider: NIG
     tags:
       - analysis
 
