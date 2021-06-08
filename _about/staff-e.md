@@ -237,7 +237,7 @@ category: about
     </ul>
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/sugawara.jpg" title="SUGAHARA Misato"></p>
+        <p class="photo"><img src="/assets/images/staff/sugahara.jpg" title="SUGAHARA Misato"></p>
         <div class="explanation">
             <p class="name">SUGAHARA Misato</p>
         </div>
