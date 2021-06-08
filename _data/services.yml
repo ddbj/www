@@ -499,16 +499,17 @@ items:
   - name: DDBJ-LD
     formal_name: DDBJ-LD
     service_link:
-      en: 
-      ja: 
+      en: https://ddbj.nig.ac.jp/public/rdf/
+      ja: https://ddbj.nig.ac.jp/public/rdf/
     description:
-      en: 
-      ja: 
+      en: Linked data of DDBJ Center
+      ja: DDBJ センターの linked data
     provider: DDBJ
     target_data:
-      en: 
-      ja: 
+      en: RDF
+      ja: RDF
     tags:
+      - database
 
 dictionary:
   analysis:
