@@ -284,7 +284,16 @@ category: about
             <p class="name">YOSHIDA Masahiro</p>
         </div>
         </li>
-    </ul>  
+    </ul>
+    <ul class="list">
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/watanabe.jpg" title="渡邊 康司"></p>
+        <div class="explanation">
+            <p class="name">渡邊 康司</p>
+            <p class="name">WATANABE Kouji</p>
+        </div>
+        </li>   
+    </ul>   
     </div>
     <!-- .wrapper -->
     <h2 id="system-administration">システム管理部門</h2>

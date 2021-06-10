@@ -255,6 +255,14 @@ category: about
         </div>
         </li>
     </ul>  
+    <ul class="list">
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/watanabe.jpg" title="WATANABE Kouji"></p>
+        <div class="explanation">
+            <p class="name">WATANABE Kouji</p>
+        </div>
+        </li>      
+    </ul>  
     </div>
     <!-- .wrapper -->
     <h2 id="system-administration">High Performance Computing Division(HPC)</h2>
