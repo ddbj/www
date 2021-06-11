@@ -17,11 +17,17 @@ related_pages:
 
 ## Acceptable data for DDBJ  {#accept}
 
-For the request of [Primary
-entry](/ddbj/submission.html#primary_entry) submission, in principle,
+For the request of [Primary entry](/ddbj/submission.html#primary_entry) submission, in principle,
 DDBJ accepts any nucleotide sequences that are experimentally determined
-by submitters, but can not accept computational predicted and/or cited
-sequences.
+by submitters, but can not accept computational predicted and/or cited sequences.
+
+However, the following sequence data is not acceptable for DDBJ:
+
+- Amino acid sequences with no underlying nucleotide submission
+- Sequence containing a mix of genomic DNA and RNA transcript
+- Sequences without a physical counterpart (consensus sequences)
+- Sequences with length less than 100 nucleotides (since June 2021) 
+- Sequence consisting only of primer (since June 2021) 
 
 Even if your sequence is identical to previously reported sequence(s),
 on the condition that the sequence is independently determined, you can
