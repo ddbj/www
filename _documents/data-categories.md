@@ -20,6 +20,16 @@ DDBJ では, [Primary entry](/ddbj/submission.html#primary_entry)
 登録者が実験的に決定した, もしくは,
 企業等からその配列の使用権を得たものであれば, 原則, 受け付けています。
 
+配列が全く同じでも, 独立に配列が決定されたデータならば,
+"新規データ"として別々にDDBJ に登録可能です。
+
+また, DDBJ/ENA/GenBank では, 既に報告されている primary data
+を２次的に引用し, 生物学的付加情報を付与し直す目的で [TPA(third party
+data)](/ddbj/tpa.html) を受け付けています。
+
+その上で一定の基準を満たしていればすべて登録し, アクセッション番号を発行しています。
+もし一定の基準を満たしていない場合は, 訂正をお願いして再度送付していただいています。
+
 ただし, 下記に該当する場合, DDBJ では登録を受け付けておりません。
 
 - 塩基配列を伴わないアミノ酸配列のみの登録
@@ -28,20 +38,9 @@ DDBJ では, [Primary entry](/ddbj/submission.html#primary_entry)
 - 長さが 100 塩基未満の塩基配列 (2021年6月以降)
 - primer のみで構成される塩基配列 (2021年6月以降)
 
-配列が全く同じでも, 独立に配列が決定されたデータならば,
-"新規データ"として別々にDDBJ に登録可能です。
-
-また, DDBJ/EMBL-Bank/GenBank では, 既に報告されている primary data
-を２次的に引用し, 生物学的付加情報を付与し直す目的で [TPA(third party
-data)](/ddbj/tpa.html) を受け付けています。
-
-その上で一定の基準を満たしていればすべて登録し,
-アクセッション番号を発行しています。もし一定の基準を満たしていない場合は,
-訂正をお願いして再度送付していただいています。
-
 SNPs, [WGS](/ddbj/wgs.html#acceptance), [transcriptome](/ddbj/tsa.html)
 解析などにおいて raw output data を公表することが必要な場合は,
-DDBJ/EMBL-Bank/GenBank とは別枠のデータベースである [DTA; DDBJ Trace
+DDBJ/ENA/GenBank とは別枠のデータベースである [DTA; DDBJ Trace
 Archive](/dta/index.html), または [DRA; DDBJ Sequence Read
 Archive](/dra/index.html) へのご登録をお願いいたします。
 
@@ -64,7 +63,7 @@ DDBJ では, 配列が同一であっても独立に配列決定されたデー�
 ### アノテーションを付与した/アセンブルした塩基配列  {#ann}
 
 [DDBJ Annotated/Assembled Sequences](/ddbj/index.html)
-:   狭義の DDBJ。GenBank, EMBL-Bank (ENA) に相当し、feature annotation
+:   狭義の DDBJ。GenBank, ENA (EMBL-Bank) に相当し、feature annotation
     を記載した配列データを[フラットファイル](/ddbj/flat-file.html)として提供。
 :   DDBJ の配列データの詳細な分類は「[Annotated/Assembled
     データの区分](#detail)」をご覧ください。
@@ -230,13 +229,13 @@ TLS データは他のデータとアクセッション番号の書式が異な�
 
 #### TPA: 第三者再構築、または、アノテーション  {#tpa}
 
-TPA (Third Party Data) は, DDBJ/EMBL-Bank/GenBank、Trace
+TPA (Third Party Data) は, DDBJ/ENA/GenBank、Trace
 Archive、もしくは、Sequence Read Archiveに既に登録されているエントリ
 (これをプライマリーエントリと呼びます) を元に, 第三者がアセンブル
 (assemble), もしくは,
 (再)アノテーションを行ったデータのコレクションです。配列のアセンブルには,
 既存のプライマリーエントリの組み合わせのみで構成された場合と, 新規に TPA
-の登録者が実験的に決定した配列を混在させた場合とが存在します。DDBJ/EMBL-Bank/GenBank
+の登録者が実験的に決定した配列を混在させた場合とが存在します。DDBJ/ENA/GenBank
 では,
 既報のプライマリーエントリに記載されている配列に関する研究を公開するための手段として
 TPA 登録を受け入れています。
