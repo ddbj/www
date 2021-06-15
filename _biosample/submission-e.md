@@ -7,17 +7,17 @@ current_tab: handbook
 lang: en
 ---
 
-## Overview  {#overview}
+## Overview {#overview}
 
-### Purpose  {#purpose}
+### Purpose {#purpose}
 
-[The BioSample database](/biosample/index-e.html)was developed to serve as a central location in which to store descriptive information about biological samples used to generate experimental data in any of primary data archives.
+[The BioSample database](/biosample/index-e.html) is descriptive information about the biological source materials, or samples, used to generate experimental data in any of primary data archives.
 
 Following figure depicts how BioSample records are organized and linked with other objects. This example is composed of one umbrella project that encompasses three subprojects, each of which generated data derived from two BioSample records. Users can query either the BioProject or the BioSample database to retrieve the relevant records, and then navigate through links to the corresponding experimental data which continue to be stored in DDBJ's primary data archives, [DDBJ](/ddbj/index-e.html), [DRA](/dra/index-e.html) and [GEA](/gea/index-e.html).
 
 {% include image.html url="submission/biosample_integration.jpg" caption="Overview of BioSample and BioProject integration with other DDBJ databases" class="w450" %}
 
-### Sample  {#sample}
+### Sample {#sample}
 
 Given the huge diversity of sample types handled by archival databases, and the fact that appropriate sample descriptions are often dependent on the context of the study, the definition of what a BioSample represents is deliberately flexible. Typical examples of a BioSample include a cell line, a primary tissue biopsy, an individual organism or an environmental isolate.
 
@@ -25,11 +25,30 @@ Biological and technical replicates are represented by separate BioSamples with 
 
 Information about the sample will include:
 
-  - Species
-  - The material sampled, e.g., organs, tissues, cell type
-  - Phenotypic information including disease states and clinical information about the individual
+- Species
+- The material sampled, e.g., organs, tissues, cell type
+- Phenotypic information including disease states and clinical information about the individual
 
 The information about human subjects and access to it will be compliant with all relevant ethical requirements. The DDBJ BioSample database does not support controlled access mechanisms and thus cannot host human clinical samples that may have associated privacy concerns.
+
+### Sample granularity {#granularity}
+
+- Biological and technical replicates are represented by separate BioSamples with 'biological_replicate' and 'technical_replicate' attributes, respectively. [DRA objects organization](/dra/submission-e.html#ex_replicates) For example, 'biological_replicate = 1' and 'biological_replicate = 2'.
+- If a paired-end library from single sample is sequenced, do not create separate sample for forward and reverse reads but register both reads in a DRA Run. [DRA objects organization](/dra/submission-e.html#ex_samples)
+- If a sample is sequenced by different sequencing instruments, link DRA Experiments with distinct [Instrument model](/dra/submission-e.html#Instrument) to a BioSample.
+- Register a separate BioSample for each unique source, e.g., RNA from the wings is a separate BioSample than RNA from legs if those two sources were sequenced independently.
+
+Examples:
+- 23,000 unique 16S amplicons from a single seawater collection point \- 1 BioSample (1 sample was collected and then analyzed to deduce 16S diversity)
+- 3 "identical" transgenic mice treated with the same drug as part of an experiment \- 3 BioSamples (biological and technical replicates are represented by separate BioSamples)
+- To examine gene expression profiles, CHO cells infected with a virus and sampled at 0, 2, 4, and 8 hours post infection \- 4 BioSamples (4 time points)
+- To analyze differences in gene expression levels, RNA-seq data from a single male anteater taken from the brain, heart, lungs, testes, and liver \- 5 BioSamples (5 different tissues isolated)
+
+See the FAQ: [How many samples do I need for my submission?](/faq/en/samples-for-sra-e.html)
+
+### Genome assembly sample {#genome-assembly-sample}
+
+For sample(s) used for genome assembly, see [Genome Assembly Sample](/biosample/genome-assembly-sample-e.html).
 
 ### Reference biosamples  {#reference-biosamples}
 
@@ -63,9 +82,9 @@ An antibiogram table can be included in a BioSample record (Example: [SAMN079584
 
 For the antibiogram submission guidelines, please see the NCBI BioSample pages.
 
-  - [Antibiograms - beta-lactamase MIC](https://www.ncbi.nlm.nih.gov/biosample/docs/beta-lactamase/)
-  - [Antibiograms - pathogen MIC](https://www.ncbi.nlm.nih.gov/biosample/docs/antibiogram/)
-  - [Antibiograms - mycobacterial non-MIC](https://www.ncbi.nlm.nih.gov/biosample/docs/antibiogram-myco/)
+- [Antibiograms - beta-lactamase MIC](https://www.ncbi.nlm.nih.gov/biosample/docs/beta-lactamase/)
+- [Antibiograms - pathogen MIC](https://www.ncbi.nlm.nih.gov/biosample/docs/antibiogram/)
+- [Antibiograms - mycobacterial non-MIC](https://www.ncbi.nlm.nih.gov/biosample/docs/antibiogram-myco/)
 
 ### XML schema  {#xml-schema}
 
@@ -160,58 +179,58 @@ FAQ: [How to request data release?](/faq/en/request-release-e.html)
 
 [(Meta)Genomic Sequences Sample (MIMS)](#Meta_Genomic_Sequences_Sample)<a name="Meta_Genomic_Sequences_Sample"></a>
 
- |---|
-  | Environmental/Metagenome Genomic Sequences |
+|---|
+| Environmental/Metagenome Genomic Sequences |
     
-  Please refer to [environmental samples](/ddbj/env-e.html).
+Please refer to [environmental samples](/ddbj/env-e.html).
 
 <!-- end list -->
 
 [Genomic Sequences Sample (MIGS)](#Genomic_Sequences_Sample)<a name="Genomic_Sequences_Sample"></a>
 
- |---|
-  | Cultured Bacterial/Archaeal Genomic Sequences |
-  | Eukaryotic Genomic Sequences                  |
-  | Viral Genomic Sequences                       |
+|---|
+| Cultured Bacterial/Archaeal Genomic Sequences |
+| Eukaryotic Genomic Sequences                  |
+| Viral Genomic Sequences                       |
     
-  Environmental samples do not include endosymbionts that can be reliably recovered from a particular host, organisms from a readily identifiable but uncultured field sample (e.g., many cyanobacteria), or phytoplasmas that can be reliably recovered from diseased plants (even though these cannot be grown in axenic culture). Select "Cultured Bacterial/Archaeal" or "Eukaryotic" or "Viral".
+Environmental samples do not include endosymbionts that can be reliably recovered from a particular host, organisms from a readily identifiable but uncultured field sample (e.g., many cyanobacteria), or phytoplasmas that can be reliably recovered from diseased plants (even though these cannot be grown in axenic culture). Select "Cultured Bacterial/Archaeal" or "Eukaryotic" or "Viral".
 
 <!-- end list -->
 
 [Marker Sequences Sample (MIMARKS)](#Marker_Sequences_Sample)<a name="Marker_Sequences_Sample"></a>
 
- |---|
-  | Specimen Marker Sequences       |
-  | Survey related Marker Sequences |
+|---|
+| Specimen Marker Sequences       |
+| Survey related Marker Sequences |
 
-  MIMARKS specimen: for marker gene (e.g., COI) sequences obtained from any material identifiable by means of specimens
-    
-  MIMARKS-specimen applies to the contextual data for marker gene sequences from cultured or voucher-identifiable specimens.
-    
-  MIMARKS survey: for uncultured diversity marker gene (e.g., 16S rRNA, 18S rRNA, nif, amoA, rpo) surveys
-    
-  MIMARKS-survey is applicable to contextual data for marker gene sequences, obtained directly from the environment, without culturing or identification of the organisms.
+MIMARKS specimen: for marker gene (e.g., COI) sequences obtained from any material identifiable by means of specimens
+  
+MIMARKS-specimen applies to the contextual data for marker gene sequences from cultured or voucher-identifiable specimens.
+  
+MIMARKS survey: for uncultured diversity marker gene (e.g., 16S rRNA, 18S rRNA, nif, amoA, rpo) surveys
+  
+MIMARKS-survey is applicable to contextual data for marker gene sequences, obtained directly from the environment, without culturing or identification of the organisms.
 
 #### Environmental package  {#Area_environmental-package}
 
 [Environmental package (MIxS Sample)](#Environmental_package)<a name="Environmental_package"></a>
 
- |---|
-  | No package                  |
-  | air                         |
-  | host-associated             |
-  | human-associated            |
-  | human-gut                   |
-  | human-oral                  |
-  | human-skin                  |
-  | human-vaginal               |
-  | microbial mat/biofilm       |
-  | miscellaneous or artificial |
-  | plant-associated            |
-  | sediment                    |
-  | soil                        |
-  | wastewater/sludge           |
-  | water                       |
+|---|
+| No package                  |
+| air                         |
+| host-associated             |
+| human-associated            |
+| human-gut                   |
+| human-oral                  |
+| human-skin                  |
+| human-vaginal               |
+| microbial mat/biofilm       |
+| miscellaneous or artificial |
+| plant-associated            |
+| sediment                    |
+| soil                        |
+| wastewater/sludge           |
+| water                       |
     
 ### Attributes  {#Attributes}
 
@@ -229,7 +248,6 @@ FAQ: [How to request data release?](/faq/en/request-release-e.html)
 : Review your submission and submit the BioSample by clicking the "Submit" button at bottom. The uploaded sample attribute file can be downloaded at "Submission ID.txt".
 
 # Submission to BioSample
-
 
 <div class="attention" markdown="1">
 Submission of research data from human subjects
@@ -375,16 +393,16 @@ Check content in the last "OVERVIEW" and submit samples. In the "ATTRIBUTES" are
 When creating a new submission, a temporary ID starts with SSUB is assigned. The DDBJ BioSample issues accession numbers with prefix SAMD to the submitted samples passed validation. When an unregistered organism is described in the organism or the locus\_tag\_prefix has values, accession numbers are issued after curator review. You can view status and accession numbers of submitted samples in your [submission account](https://ddbj.nig.ac.jp/D-way/).
 
 <div class="attention">
-  - Do NOT cite a temporary ID starts with SSUB in references.
-  - Do not double submit the samples which have been registered to EBI and NCBI.
+- Do NOT cite a temporary ID starts with SSUB in references.
+- Do not double submit the samples which have been registered to EBI and NCBI.
 </div>
 
 ### Release of BioSample {#sample-release} 
 
 You can select the following options:
 
-  - Release immediately following curation
-  - Release when referenced data is published
+- Release immediately following curation
+- Release when referenced data is published
 
 <div class="attention">
 Hold date cannot be set for BioSample.

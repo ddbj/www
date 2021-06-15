@@ -11,7 +11,7 @@ lang: ja
 
 ### 目的  {#purpose}
 
-[BioSample](/biosample/index.html) はデータベースに登録されている実験データを得るのに使われたサンプルに関する情報を管理するデータベースです。
+[BioSample](/biosample/index.html) はデータベースに登録する実験データを得るために使われた生物学的な試料やサンプルに対するレコードです。
 
 以下の図は BioSample がどのように他の DDBJ のデータベースとリンクしているかを示しています。 この例は、データと二つの BioSample、三つの BioProject、一つの Umbrella BioProject から構成されています。ユーザは BioProject または BioSample データベースを検索し、目的のレコードを取得、そこからのリンクをたどることによって [DDBJ](/ddbj/index.html)、[DRA](/dra/index.html) に登録されている関連する実験データを得ることができます。
 
@@ -21,15 +21,32 @@ lang: ja
 
 DDBJ のデータベースに登録されているサンプルが多様であること、また、サンプルの適切な記載方法が研究内容により異なることから BioSample の定義は柔軟なものになっています。 BioSample の典型的な例としては細胞株、組織の生検、生物個体や環境サンプルなどが挙げられます。
 
-Biological/Technical replicate は "replicate" というユーザ定義の属性を使い "biological replicate 1"、"biological replicate 2" のようにしてサンプルを区別します。[FAQ: 塩基配列登録にはいくつのサンプルが必要ですか?](/faq/ja/samples-for-sra)
-
 BioSample はサンプルについての以下のような情報を含みます:
 
-  - 生物種
-  - 採取された生物試料、例: 器官、組織、セルタイプ
-  - 表現型 - 疾患や個人の医学的な情報など
+- 生物種
+- 採取された生物試料、例: 器官、組織、セルタイプ
+- 表現型 - 疾患や個人の医学的な情報など
 
 ヒトに関する情報とそれへのアクセスは適用される全ての倫理的な要請を満たしている必要があります。 DDBJ BioSample データベースはアクセスを制限する仕組みを持っていないため、プライバシーに抵触する可能性のあるヒト由来サンプルを登録することはできません。
+
+### サンプルの粒度 {#granularity}
+
+- biological/technical replicate はそれぞれ biological_replicate/technical_replicate 属性で区別します。例 "biological_replicate = 1" と "biological_replicate = 2" [DRA の構成](/dra/submission.html#ex_replicates)
+- 同じサンプルから調整した paired-end library をシークエンスした場合、forward と reverse で BioSample を分けずに一つの DRA Run に両ペアードファイルを含めます。[DRA の構成](/dra/submission.html#ex_samples)
+- 同じサンプルを異なる機種でシークエンスした場合、異なる [Instrument model](/dra/submission.html#Instrument) を持つ複数の DRA Experiment を一つの BioSample にリンクします。
+- ユニークなサンプルソースに対し、別々の BioSample を登録します。例えば、羽から調整した RNA と肢から調整した RNA は、両者が別々にシークエンスされている場合、別個の BioSample になります。
+
+登録例
+- 海水中のある採取地点から得られた 23,000 本のユニークな 16S 増幅配列 - 1 BioSample（１サンプルが採取され、16S の多様性が解析された）
+- 同じ薬物で処理された三匹の「同一」なトランスジェニックマウス - 3 BioSamples（biological/technical replicate は BioSample で区別）
+- 遺伝子発現レベルの経時的な変化を解析するため、ウイルスに感染させた CHO 細胞を 0、2、4、8 時間後にサンプリング - 4 BioSamples（4 タイムポイント）
+- 発現している遺伝子の差異を組織毎に調べるため、オスのアリクイ一個体から採取した脳、心臓、肺、精巣、肝臓 - 5 BioSamples（５つの異なる組織）
+
+参照 FAQ: [塩基配列登録にはいくつのサンプルが必要ですか?](/faq/ja/samples-for-sra.html)
+
+### ゲノムアセンブル用サンプル {#genome-assembly-sample}
+
+ゲノムアセンブリに使用したサンプルについては、[ゲノムアセンブル用サンプル](/biosample/genome-assembly-sample.html)をご覧ください。
 
 ### リファレンスバイオサンプル  {#reference-biosamples}
 
@@ -63,12 +80,9 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
 
 薬剤感受性表の登録ガイドラインは NCBI BioSample の各ページを参照してください。
 
-  - [Antibiograms - beta-lactamase
-    MIC](https://www.ncbi.nlm.nih.gov/biosample/docs/beta-lactamase/)
-  - [Antibiograms - pathogen
-    MIC](https://www.ncbi.nlm.nih.gov/biosample/docs/antibiogram/)
-  - [Antibiograms - mycobacterial
-    non-MIC](https://www.ncbi.nlm.nih.gov/biosample/docs/antibiogram-myco/)
+- [Antibiograms - beta-lactamase MIC](https://www.ncbi.nlm.nih.gov/biosample/docs/beta-lactamase/)
+- [Antibiograms - pathogen MIC](https://www.ncbi.nlm.nih.gov/biosample/docs/antibiogram/)
+- [Antibiograms - mycobacterial non-MIC](https://www.ncbi.nlm.nih.gov/biosample/docs/antibiogram-myco/)
 
 ### XML スキーマ  {#xml-schema}
 
@@ -163,37 +177,37 @@ FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
 
 [(Meta)Genomic Sequences Sample (MIMS)](#Meta_Genomic_Sequences_Sample)<a name="Meta_Genomic_Sequences_Sample"></a>
 
- |---|
-  | Environmental/Metagenome Genomic Sequences |
+|---|
+| Environmental/Metagenome Genomic Sequences |
 
-    [環境サンプルの説明](/ddbj/env.html)もご参照ください。
+[環境サンプルの説明](/ddbj/env.html)もご参照ください。
 
 <!-- end list -->
 
 [Genomic Sequences Sample (MIGS)](#Genomic_Sequences_Sample)<a name="Genomic_Sequences_Sample"></a>
 
- |---|
-  | Cultured Bacterial/Archaeal Genomic Sequences |
-  | Eukaryotic Genomic Sequences                  |
-  | Viral Genomic Sequences                       |
+|---|
+| Cultured Bacterial/Archaeal Genomic Sequences |
+| Eukaryotic Genomic Sequences                  |
+| Viral Genomic Sequences                       |
 
-    特定宿主から確実に回収できる内部共生生物、多くの cyanobacteria のように容易に同定可能であるが培養ができない生物、純粋培養は不可能でも罹患植物から確実に回収できる phytoplasmas といった対象は環境サンプルとは扱いません。"Cultured Bacterial/Archaeal", "Eukaryotic", "Viral" のいずれかを選択します
+特定宿主から確実に回収できる内部共生生物、多くの cyanobacteria のように容易に同定可能であるが培養ができない生物、純粋培養は不可能でも罹患植物から確実に回収できる phytoplasmas といった対象は環境サンプルとは扱いません。"Cultured Bacterial/Archaeal", "Eukaryotic", "Viral" のいずれかを選択します
 
 <!-- end list -->
 
 [Marker Sequences Sample (MIMARKS)](#Marker_Sequences_Sample)<a name="Marker_Sequences_Sample"></a>
 
- |---|
-  | Specimen Marker Sequences       |
-  | Survey related Marker Sequences |
+|---|
+| Specimen Marker Sequences       |
+| Survey related Marker Sequences |
 
-    MIMARKS specimen: for marker gene (e.g., COI) sequences obtained from any material identifiable by means of specimens
+MIMARKS specimen: for marker gene (e.g., COI) sequences obtained from any material identifiable by means of specimens
 
-    MIMARKS-specimen は培養した、あるいは同定可能な標本から得られた marker gene に対する contextual data に適用します。
+MIMARKS-specimen は培養した、あるいは同定可能な標本から得られた marker gene に対する contextual data に適用します。
 
-    MIMARKS survey: for uncultured diversity marker gene (e.g., 16S rRNA, 18S rRNA, nif, amoA, rpo) surveys
+MIMARKS survey: for uncultured diversity marker gene (e.g., 16S rRNA, 18S rRNA, nif, amoA, rpo) surveys
 
-    MIMARKS-survey は分離培養や生物種を同定せず、環境から直接得られた marker gene に対する contextual data に適用できます。
+MIMARKS-survey は分離培養や生物種を同定せず、環境から直接得られた marker gene に対する contextual data に適用できます。
 
 #### Environmental package  {#Area_environmental-package}
 
@@ -201,22 +215,22 @@ FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
 : 以下のパッケージから適切なものを選びます。パッケージ毎に必要とされる属性が追加されます。  
 <span class="red">"Environmental/Metagenome Genomic Sequences" と "Survey related Marker Sequences" のときは No package を選択できません。</span>
 
-    |---|
-    | No package                  |
-    | air                         |
-    | host-associated             |
-    | human-associated            |
-    | human-gut                   |
-    | human-oral                  |
-    | human-skin                  |
-    | human-vaginal               |
-    | microbial mat/biofilm       |
-    | miscellaneous or artificial |
-    | plant-associated            |
-    | sediment                    |
-    | soil                        |
-    | wastewater/sludge           |
-    | water                       |
+|---|
+| No package                  |
+| air                         |
+| host-associated             |
+| human-associated            |
+| human-gut                   |
+| human-oral                  |
+| human-skin                  |
+| human-vaginal               |
+| microbial mat/biofilm       |
+| miscellaneous or artificial |
+| plant-associated            |
+| sediment                    |
+| soil                        |
+| wastewater/sludge           |
+| water                       |
 
 ### Attributes  {#Attributes}
 
@@ -237,10 +251,10 @@ FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
 # BioSample への登録
 
   
-  <div class="attention" markdown="1">
-  ヒトを対象とした研究データの登録について
-  : <span class="red">研究対象者に由来するデータを DDBJ センターが運営するデータベースに登録する場合、研究対象者の尊厳及び人権は、適用されるべき法令、指針、ガイドライン、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。原則として、研究対象者を直接特定し得る情報はメタデータから取り除いてください。ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#submission-of-human-data)を熟読してください。</span>
-  </div>
+<div class="attention" markdown="1">
+ヒトを対象とした研究データの登録について
+: <span class="red">研究対象者に由来するデータを DDBJ センターが運営するデータベースに登録する場合、研究対象者の尊厳及び人権は、適用されるべき法令、指針、ガイドライン、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。原則として、研究対象者を直接特定し得る情報はメタデータから取り除いてください。ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#submission-of-human-data)を熟読してください。</span>
+</div>
 
 ## サンプルの登録  {#sample-submission}
 
@@ -297,7 +311,7 @@ Sample type に応じた属性入力用テンプレートファイルをダウ�
 二行目以降に１行１サンプルで入力していきます。BioProject アクセッション番号が発行されていないプロジェクトの場合、[bioproject\_id](/biosample/attribute.html?all=all#bioproject_id) には PSUB 番号を入力します。
 
 <div class="attention">
-サンプル属性のタブ区切りテキストファイルでは1行に1サンプルの属性を入力します。行を複数作成することで，複数の sample
+サンプル属性のタブ区切りテキストファイルでは1行に1サンプルの属性を入力します。行を複数作成することで、複数の sample
 をまとめて登録することができます。
 </div>
 
