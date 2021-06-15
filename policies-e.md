@@ -41,7 +41,7 @@ Contents of websites provided by Center (hereinafter referred to as 'our website
   1. If the operation of our services is transferred to a third party due to change in the status of the online service operations or other situations, we shall announce the transfer of service on our website. If you do not agree to such transfer, you may stop to using our services. If you use our services after the notification, you are deemed to have agreed to the transfer of our services and any succession of involved rights and obligations.
 
 #### Use of Web Browsers {#web-browsers}
-We recommend to use our online service with the latest version of [Chrome](https://www.google.com/chrome/) and [Firefox](https://www.mozilla.org/en-US/firefox/all/#product-desktop-release).
+We recommend to use our online service with the latest version of [Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/en-US/firefox/all/#product-desktop-release) and [Edge](https://www.microsoft.com/en-us/edge).
 
 ### Data Usage {#data-use}
 Unless otherwise restricted by an Individual Terms of Use, data provided by Center may be freely used, redistributed and modified.

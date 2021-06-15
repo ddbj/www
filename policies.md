@@ -41,7 +41,7 @@ lang: ja
   1. オンラインサービス運営状況の変更その他の事情によりサービスの運営を第三者に移管する場合、センターはサービスの移管を本サイトにおいて告知するものとします。利用者が移管に同意できない場合、利用者はサービスの利用を終了することができます。告知後、利用者がサービスを利用した場合、利用者はサービスの移管およびそれに伴う権利義務の承継に同意したものとみなされます。
 
 #### ウェブブラウザ {#web-browsers}
-センターのオンラインサービスは最新版の [Chrome](https://www.google.com/chrome/) と [Firefox](https://www.mozilla.org/ja/firefox/all/#product-desktop-release) を使って利用することを推奨します。
+センターのオンラインサービスは最新版の [Chrome](https://www.google.com/chrome/)、[Firefox](https://www.mozilla.org/ja/firefox/all/#product-desktop-release) 及び [Edge](https://www.microsoft.com/ja-jp/edge) を使って利用することを推奨します。
 
 ### データの利用 {#data-use}
 センターが提供するデータは個別規約で制限されていない限り、自由に利用・再配布・改変することができます。
