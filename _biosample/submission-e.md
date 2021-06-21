@@ -44,8 +44,6 @@ Examples:
 - To examine gene expression profiles, CHO cells infected with a virus and sampled at 0, 2, 4, and 8 hours post infection \- 4 BioSamples (4 time points)
 - To analyze differences in gene expression levels, RNA-seq data from a single male anteater taken from the brain, heart, lungs, testes, and liver \- 5 BioSamples (5 different tissues isolated)
 
-See the FAQ: [How many samples do I need for my submission?](/faq/en/samples-for-sra-e.html)
-
 ### Genome assembly sample {#genome-assembly-sample}
 
 For sample(s) used for genome assembly, see [Genome Assembly Sample](/biosample/genome-assembly-sample-e.html).
