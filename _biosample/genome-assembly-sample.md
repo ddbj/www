@@ -35,7 +35,6 @@ MAG 用にバーチャルなサンプルを登録します。パッケージは 
 
 規定値
 - sample\_type: metagenomic assembly
-- environmental\_sample: TRUE
 
 サンプルの由来情報
 - metagenome\_source: xyz metagenome
