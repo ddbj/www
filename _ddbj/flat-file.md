@@ -197,7 +197,7 @@ b: 生物分類に基づかない分類
 </code></pre>
 
 
-: 書式: \[organism name\] \[gene name\] gene for \[product name\], complete cds.
+書式: \[organism name\] \[gene name\] gene for \[product name\], complete cds.
   - organism name は原則としてscientific name.
   - gene name は locus を示す象徴的な略号。
   - product name は産物、CDS の場合はタンパク質、の一般名。
@@ -210,7 +210,7 @@ b: 生物分類に基づかない分類
 </code></pre>
 
 
-: 書式: \[organism name\] mRNA for \[product name\], partial cds.
+書式: \[organism name\] mRNA for \[product name\], partial cds.
   - gene name が記載されていない場合は省略。
   - タンパク質の部分配列を含むことを示す "partial cds" を記述。
 
@@ -220,7 +220,7 @@ Bacillus 属 16S rRNA の部分配列
               sequence.
 </code></pre>
 
-: 書式: \[organism name\] \[strain name\] gene for \[product name\], partial sequence.
+書式: \[organism name\] \[strain name\] gene for \[product name\], partial sequence.
   - 種を特定できない場合、種内比較の場合などでは strain name などを識別子として記載。
   - 部分配列を含むことを示す "partial sequence" を記述。
 
@@ -231,7 +231,7 @@ Bacillus 属 16S rRNA の部分配列
               oxidase subunit III, partial and complete cds.
 </code></pre>
 
-: 書式: \[organism name\] \[gene name 1\], \[gene name 2\], .... genes for \[product name 1\], \[product name 2\], ..... , partial and complete cds.
+書式: \[organism name\] \[gene name 1\], \[gene name 2\], .... genes for \[product name 1\], \[product name 2\], ..... , partial and complete cds.
   - 5'側から3'側へ順番に gene name, product name をならべる
   - partial, complete and partial cds は省略して partial and complete cds
     とする。
@@ -246,7 +246,7 @@ Bacillus 属 16S rRNA の部分配列
               in liver.
 </code></pre>
 
-: 書式: \[organism name\] cDNA, clone:\[clone name\], \[その他の情報\].
+書式: \[organism name\] cDNA, clone:\[clone name\], \[その他の情報\].
   - clone name の記載が必要。
 
 マウス chromosome 1q の GSS
@@ -254,7 +254,7 @@ Bacillus 属 16S rRNA の部分配列
 <pre class="code flat-file"><code>  DEFINITION  Mus musculus DNA, clone:1H11A14, 1q region.
 </code></pre>
 
-: 書式: \[organism name\] DNA, clone:\[clone name\], \[その他の情報\].
+書式: \[organism name\] DNA, clone:\[clone name\], \[その他の情報\].
   - clone name の記載が必要。
 
 ヒト GAPD，TPA (Third Party Data) の配列
@@ -263,7 +263,7 @@ Bacillus 属 16S rRNA の部分配列
               dehydrogenase, complete cds.
 </code></pre>
 
-: 書式: \[TPA header\]: \[organism name\] \[gene name\] mRNA for \[product name\], complete cds.
+書式: \[TPA header\]: \[organism name\] \[gene name\] mRNA for \[product name\], complete cds.
   - [TPA (Third Party data)](/ddbj/tpa.html) のデータの場合、TPA\_exp: (TPA:experimental の場合)、または、TPA\_inf: (TPA:inferential の場合) が行頭に記述される。
 
 
@@ -282,13 +282,13 @@ Conventional sequence data
 <pre class="code flat-file"><code>  ACCESSION   AB999999 AB888888 AB777777
 </code></pre>
 
-: 
+
   |  ```AB999999```  |  プライマリアクセッション番号  |
   |  ```AB888888 AB777777```  |  セカンダリアクセッション番号  |
 
 Bulk sequence data; WGS, TSA, TLS  
 : [WGS](/ddbj/wgs.html), [TSA](/ddbj/tsa.html), TLS に発行されるアクセッション番号はアルファベット 4 文字 ＋ 8 桁（9 または 10 桁になることがあります）の数字で構成されます。<br>アルファベットの部分を[プレフィックス](/documents/prefix.html)と呼びます。<br>[For Large Scale Data (four prefix)](/documents/prefix-e.html#large)も ご参照ください。<br>例：ZZZZ01000001
-: 
+
   | ZZZZ（アルファベット 4文字） | プロジェクトを区別する prefix                           |
   | 01（2桁の数字）           | データセットのバージョン番号                               |
   | 000001（6桁の数字）      | エントリ（各配列の）番号（エントリ数に応じて 7 桁または 8 桁になる場合があります） |
@@ -297,7 +297,7 @@ Bulk sequence data; WGS, TSA, TLS
 : 
 <pre class="code flat-file"><code>  ACCESSION   ZZZZ01000001 ZZZZ01000000
 </code></pre>
-: 
+
   | ```ZZZZ01000001``` | プライマリアクセッション番号   |
   | ```ZZZZ01000000``` | セットＩＤ   |
 
@@ -306,7 +306,7 @@ MGA データ
 : 番号はアルファベット 5 文字＋ 7 桁の数字（例 ABCDE0000001）で構成されており、当該リソース配下の配列エントリのアクセッション番号は "MGA行" に記載されています。
 : 例：ABCDE0000001
 
-: | AB（1-2番目の文字）  | プロジェクト毎に割り振られるID (プロジェクトID \*1) |
+  | AB（1-2番目の文字）  | プロジェクト毎に割り振られるID (プロジェクトID \*1) |
   | CDE（3-5番目の文字）   | 各プロジェクトにおけるリソース \*2に割り振られるID    |
   | 0000001（7桁の数字） | リソース配下の配列エントリに割り振られる番号          |
 
@@ -315,7 +315,7 @@ MGA データ
 : 
 <pre class="code flat-file"><code>  ACCESSION   ZZZZZ0000000
 </code></pre>
-: 
+
   | ```ZZZZZ0000000``` | リソースセットに対するアクセッション番号   |
 
 
@@ -342,7 +342,7 @@ MGA では配列の更新を認めておりませんので、バージョン番�
 <pre class="code flat-file"><code>  VERSION    ZZZZZ0000000.1
 </code></pre>
 
-: | ```ZZZZZ000000```  | 登録番号 |
+  | ```ZZZZZ000000```  | 登録番号 |
   | ```1```   | バージョン番号    |  
 
 
@@ -523,7 +523,7 @@ REFERENCE 2 以降に記載された投稿予定の論文情報は、関連す�
     JOURNAL   Unpublished (2009)
 </code></pre>
 
-: | ```AUTHORS``` | 論文の著者名、まだ出版されていない場合は予定される著者名が表示されます。 |
+  | ```AUTHORS``` | 論文の著者名、まだ出版されていない場合は予定される著者名が表示されます。 |
   | ```TITLE``` | 論文のタイトル、まだ出版されていない場合は予定されるタイトルが表示されます。 |
   | ```JOURNAL``` | 論文が出版された場合、あるいは In Press の場合には、論文の雑誌名等が表示されます。<br/>まだ出版されていない場合は "Unpublished" と表示されます。 |
 
@@ -535,7 +535,7 @@ REFERENCE 2 以降に記載された投稿予定の論文情報は、関連す�
     JOURNAL   Published Only in Database(2009)
 </code></pre>
 
-: | ```AUTHORS``` | そのエントリの登録時に入力した Authors (論文の著者にあたる方) が表示されます。 |
+  | ```AUTHORS``` | そのエントリの登録時に入力した Authors (論文の著者にあたる方) が表示されます。 |
   | ```TITLE``` | 登録時に入力した TITLE (論文のタイトルにあたるもの) が表示されます。 |
   | ```JOURNAL``` | "Published Only in Database" と表示されます。<br/>カッコ内の数字は、そのエントリーが初めて公開された年が記載されます。 |
   
@@ -565,7 +565,7 @@ Structured COMMENT
 :   
   この例はゲノムプロジェクトで記載を義務付けている Genome-Assembly-Data という補足情報のデータセットです。<br>\#\#Genome-Assembly-Data-START\#\# と\#\#Genome-Assembly-Data-END\#\# の間にある記述内容は “ :: ” で区切られ、補足情報の項目とその値の組になっています。
 
-: | ```##Genome-Assembly-Data-START##``` | Genome-Assembly-Data という名称で定義される structured COMMENT の記載開始行。 |
+  | ```##Genome-Assembly-Data-START##``` | Genome-Assembly-Data という名称で定義される structured COMMENT の記載開始行。 |
   | ```##Genome-Assembly-Data-END##``` | Genome-Assembly-Data という名称で定義される structured COMMENT の記載終了行。 |
   | ```Finishing Goal           :: Finished``` | Genome-Assembly-Data という名称で定義される structured COMMENT の記載終了行。 |
   | ```Current Finishing Status :: High Quality Draft``` | ゲノムプロジェクトの現在の到達レベルが、High Quality Draft であることを示します。 |
