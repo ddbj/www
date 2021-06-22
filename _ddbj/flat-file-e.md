@@ -205,7 +205,7 @@ Complete sequence of maize catalase coding gene
 <pre class="code flat-file"><code>  DEFINITION  Zea mays Cat3 gene for catalase, complete cds.
 </code></pre>
 
-: Format: [organism name] [gene name] gene for [product name], complete cds.
+Format: [organism name] [gene name] gene for [product name], complete cds.
   - organism name: The scientific name is indicated as the organism name, in principle.
   - gene name: the symbol of the gene
   - product name: the general name of product
@@ -217,7 +217,7 @@ Partial sequence of human glyceraldehyde-3-phosphate dehydrogenase coding cDNA
               dehydrogenase, partial cds.
 </code></pre>
 
-: Format: [organism name] mRNA for [product name], partial cds.
+Format: [organism name] mRNA for [product name], partial cds.
 
 : - partial cds: this protein coding sequence is partial
   - The gene name is omitted, because the submitter did not describe.
@@ -228,7 +228,7 @@ Partial sequence of Bacillus 16S rRNA
               sequence.
 </code></pre>
 
-: Format: [organism name] [strain name] gene for [product name], partial sequence.
+Format: [organism name] [strain name] gene for [product name], partial sequence.
   - In cases of unidentified species, comparison of intraspecies, and so on, describe name of strain, isolate or some, as identifier.
   - partial sequence: this sequence is part of 16S rRNA.
 
@@ -239,7 +239,7 @@ Multiple CDS of rat mitochondrial DNA
               oxidase subunit III, partial and complete cds.
 </code></pre>
 
-: Format: [organism name] [gene name 1], [gene name 2], .... genes for [product name 1], [product name 2], ..... , partial and complete cds.
+Format: [organism name] [gene name 1], [gene name 2], .... genes for [product name 1], [product name 2], ..... , partial and complete cds.
 
 : - The gene names and/or product names are subsequently described from 5'to 3' end.
   - "partial, complete and partial cds" is abbreviated to "partial and complete cds".
@@ -254,7 +254,7 @@ EST data of human liver 3' end
               in liver.
 </code></pre>
 
-: Format: [organism name] cDNA, clone:[clone name], [other information].
+Format: [organism name] cDNA, clone:[clone name], [other information].
 : - The clone name is mandatory.
 
 GSS data of mouse chromosome 1q
@@ -270,7 +270,7 @@ TPA (Third Party Data) of human GAPD
               dehydrogenase, complete cds.
 </code></pre>
 
-: Format: [TPA header]: [organism name] [gene name] mRNA for [product name], complete cds.
+Format: [TPA header]: [organism name] [gene name] mRNA for [product name], complete cds.
 
 : - In the case of [TPA (Third Party data)](/ddbj/tpa-e.html), either of "TPA_exp" (for TPA:experimental) or "TPA_inf" (for TPA:inferential) is described at the beginning of DEFINITION.
 
@@ -291,14 +291,14 @@ Conventional sequence data
 <pre class="code flat-file"><code>  ACCESSION   AB999999 AB888888 AB777777
 </code></pre>
 
-: 
+
   |  ```AB999999```  |  primary accession number  |
   |  ```AB888888 AB777777```  |  secondary accession number  |
 
 Bulk sequence data; WGS, TSA, TLS  
 : The accession number assigned to each entry of [WGS](/ddbj/wgs-e.html), [TSA](/ddbj/tsa-e.html) and TLS data consists of 4 alphabet characters and 8 (sometimes 9 or 10, if necessary) digits.<br>The alphabet part is called [prefix](/documents/prefix-e.html).<br>See also [For Large Scale Data (four prefix)](/documents/prefix-e.html#large).<br>Example:ZZZZ01000001
 
-: | ZZZZ (4 letters) | Prefix to distinguish each project, project_id                 |
+  | ZZZZ (4 letters) | Prefix to distinguish each project, project_id                 |
   | 01 (2 digits)        | Version number of the data set, set_version                |
   | 000001 (6 digits)	    | ID of each individual sequence (It might be 7 or 8 digits depended on the number of entries.) |
 
@@ -307,7 +307,7 @@ Bulk sequence data; WGS, TSA, TLS
 : 
 <pre class="code flat-file"><code>  ACCESSION   ZZZZ01000001 ZZZZ01000000
 </code></pre>
-: 
+
   | ```ZZZZ01000001``` | primary accession number   |
   | ```ZZZZ01000000``` | set ID   |
 
@@ -316,7 +316,7 @@ For MGA data
 : The number is composed of 5 alphabet characters and 7 digits (ex. ABCDE0000001).An accession number assigned to an entry of a resource units is displayed in the MGA lines.
 : Example:ABCDE0000001
 
-: |AB (first two characters)	identi  | identifier to each project. |
+  |AB (first two characters)	identi  | identifier to each project. |
   | CDE (third to fifth characters)	   | identifier to each of resources on each project.  |
   | 0000001 (7 digit numeric numbers)	 | number for each sequence entry in a resource.    |
 
@@ -325,7 +325,7 @@ For MGA data
 : 
 <pre class="code flat-file"><code>  ACCESSION   ZZZZZ0000000
 </code></pre>
-: 
+
   | ```ZZZZZ0000000``` | number to a resource unit   |
 
 
@@ -351,7 +351,7 @@ Since the sequence of an MGA entry is not allowed to update, the version number 
 <pre class="code flat-file"><code>  VERSION    ZZZZZ0000000.1
 </code></pre>
 
-: | ```ZZZZZ000000```  | number to a resource unit |
+  | ```ZZZZZ000000```  | number to a resource unit |
   | ```1```   | version number   |  
 
 
@@ -512,7 +512,7 @@ In the cases of the manuscript in preparation, submitted for publication, in pre
     JOURNAL   Unpublished (2009)
 </code></pre>
 
-: | ```AUTHORS``` | The (presumptive) author(s) of the reference is/are described. |
+  | ```AUTHORS``` | The (presumptive) author(s) of the reference is/are described. |
   | ```TITLE``` | The (presumptive) title of the reference is described. |
   | ```JOURNAL``` | In the cases of the paper published or In Press, the journal name is described. In the case of unpublished manuscript, "Unpublished" is described to follow the standard form. |
 
@@ -524,7 +524,7 @@ In the case of no schedule for publication except the international nucleotide d
     JOURNAL   Published Only in Database(2009)
 </code></pre>
 
-: | ```AUTHORS``` | The author(s) of the submission entered by submitter(s) is/are described. |
+  | ```AUTHORS``` | The author(s) of the submission entered by submitter(s) is/are described. |
   | ```TITLE``` | The title of the submission entered by submitter(s) is described. |
   | ```JOURNAL``` | "Published Only in Database" is indicated.<br/>The parenthetic number is the year when the entry has been firstly publicized.  |
   
@@ -552,7 +552,7 @@ Structured COMMENT
 :   
   The above example is an additional information, "Genome-Assembly-Data", that is required for genome projects.<br>The contents between ##Genome-Assembly-Data-START## and ##Genome-Assembly-Data-END## are delimited item names and their values by " :: ".
 
-: | ```##Genome-Assembly-Data-START##``` |The first line of the structured COMMENT defined as "Genome-Assembly-Data". |
+  | ```##Genome-Assembly-Data-START##``` |The first line of the structured COMMENT defined as "Genome-Assembly-Data". |
   | ```##Genome-Assembly-Data-END##``` | The last line of the structured COMMENT defined as "Genome-Assembly-Data". |
   | ```Finishing Goal           :: Finished``` | The final goal of the genome project is "Finished" level. |
   | ```Current Finishing Status :: High Quality Draft``` | The current status of the genome project is "High Quality Draft" level. |
