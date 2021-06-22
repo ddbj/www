@@ -32,7 +32,6 @@ Create a virtual BioSample for MAG submission. Use the ["Other samples"](/biosam
 
 Fixed attributes.
 - sample\_type: metagenomic assembly
-- environmental\_sample: TRUE
 
 Attributes regarding sample origin.
 - metagenome\_source: xyz metagenome
