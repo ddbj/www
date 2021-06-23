@@ -106,8 +106,9 @@ lang: en
 <h3 id="data-type">Sample submission by data type</h3>
 
 <ul>
-  <li><a href="/biosample/human-sample-e.html">Human Sample</a></li>
+  <li><a href="/biosample/genome-assembly-sample-e.html">Genome Assembly Sample</a></li>
   <li><a href="/ddbj/metagenome-assembly-e.html">Metagenome Assembly</a></li>
   <li><a href="/ddbj/single-amplified-genome-e.html">Single amplified genome</a></li>
   <li><a href="/ddbj/pseudohaplotype-e.html">Pseudohaplotype</a></li>
+  <li><a href="/biosample/human-sample-e.html">Human Sample</a></li>
 </ul>
