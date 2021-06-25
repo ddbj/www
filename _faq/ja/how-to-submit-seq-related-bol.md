@@ -1,16 +1,18 @@
 ---
 layout: simple
-title: Barcode of Life (BoL) に登録予定の配列は、どのように登録すればよいでしょうか
+title: Barcode of Life (BoL) に登録予定の配列は、どのように登録すればよいでしょうか？
 category: faq
 db:
   - ddbj
   - dra
 tags: 
   - 登録
-date: 2014-06-02T15:55:30
+date: 2021-06-02T15:55:30
 lang: ja
 ---
 
+[Barcode of Life project](https://ibol.org/) に関連する塩基配列データは [DDBJ](/ddbj/index.html) に登録してください。
 
-
-<p>Barcode of Life project に関連する塩基配列データは <a href="/ddbj/web-submission.html">DDBJ 塩基配列登録システム</a><!-- Nucleotide Sequence Submission System --> または <a href="/ddbj/mss.html">Mass Submission System</a> でご登録をお願いいたします。<br>波形データにつきましては、<a href="/dta/index.html">DDBJ Trace Archive</a> へのご登録をお願いいたします。</p>
+[Trace Archive](https://trace.ncbi.nlm.nih.gov/Traces/trace.cgi?view=list_arrivals) の波形データは [SRA](https://www.ncbi.nlm.nih.gov/sra) に移行される予定であるため、[DDBJ Trace Archive](/dta/index.html) では波形データを受け付けておりません。
+[DRA](/dra/submission.html) にサンガー型シークエンサから出力される fastq ファイルを登録することができますので、Experiment [Instrument Model](/dra/submission.html#Instrument) でサンガー型シークエンサ機種を選択し、fastq ファイルを登録してください。    
+波形データの登録を希望される場合は [NCBI Trace Archive](https://trace.ncbi.nlm.nih.gov/Traces/trace.cgi?view=list_arrivals) に登録してください。

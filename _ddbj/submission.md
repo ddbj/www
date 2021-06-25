@@ -26,7 +26,7 @@ related_pages:
 
 多くの雑誌では学術論文の投稿に先立って、塩基配列を国際塩基配列データベース ([International Nucleotide Sequence Database; INSD](http://www.insdc.org/))に登録し、[アクセッション番号](/documents/accessions.html)を取得した上で、その番号を当該論文に記載することを義務付けています。DDBJは、この国際塩基配列データベースを構成するデータバンクの１つです。
 
-[受け入れ基準](/documents/accessions.html)を満たしている塩基配列であるならば、研究者はこれを広く一般に公開することを目的として、学術論文の投稿予定の有無に関わらず、必要に応じて DDBJ に登録することができます。
+[受け入れ基準](/documents/data-categories.html)を満たしている塩基配列であるならば、研究者はこれを広く一般に公開することを目的として、学術論文の投稿予定の有無に関わらず、必要に応じて DDBJ に登録することができます。
 
 DDBJ を含む国際塩基配列データベースに登録された塩基配列は公開された後には、[誰でも全てを制限なしに利用可能](/about/insdc.html#policy)となります。
 

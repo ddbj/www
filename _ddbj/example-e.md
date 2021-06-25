@@ -825,10 +825,11 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers-e.html#product">product</a>="insulin-like growth factor I recep tor"
                      /<a href="/ddbj/qualifiers-e.html#translation">translation</a>="--- omitted ---" 
      <a href="/ddbj/features-e.html#variation">variation</a>       <a href="/ddbj/location-e.html">100</a>
+                     /<a href="/ddbj/qualifiers-e.html#inference">inference</a>="similar to DNA sequence (same 
+                     species):INSD:AB000000.1"
                      /<a href="/ddbj/qualifiers-e.html#note">note</a>="polymorphism"
                      /<a href="/ddbj/qualifiers-e.html#note">note</a>="This substitution causes an amino acid 
                      substitution from Ala to Thr."
-                     /<a href="/ddbj/qualifiers-e.html#compare">compare</a>="AB000000.1"
                      /<a href="/ddbj/qualifiers-e.html#replace">replace</a>="a" 
 </code></pre>
 

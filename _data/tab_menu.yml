@@ -101,6 +101,8 @@ biosample:
       title: Sample Attribute	
       url: /biosample/attribute.html	
       children:	
+        - title: Genome Assembly Sample  
+          url: /biosample/genome-assembly-sample.html 
         - title: Human Sample  
           url: /biosample/human-sample.html 
         - title: Example files	
@@ -134,6 +136,8 @@ biosample:
       title: Sample Attribute
       url: /biosample/attribute-e.html
       children:
+        - title: Genome Assembly Sample  
+          url: /biosample/genome-assembly-sample-e.html 
         - title: Human Sample  
           url: /biosample/human-sample-e.html 
         - title: Example files

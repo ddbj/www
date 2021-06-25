@@ -15,9 +15,7 @@ lang: ja
 
 ## メタゲノムアセンブリデータの登録  {#submission}
 
-
 {% include image.html url="submission/mag.jpg" caption="メタゲノムアセンブリデータの登録" class="w600" %}
-
 
 ### 1\) Raw reads (Run)  {#raw-reads}
 
@@ -105,30 +103,23 @@ MAG 用サンプルが必要な点に注意してください。
 生物名以外に以下のサンプル属性が必須になります。[登録例](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=272411182)
 
 規定値
-
-  - sample\_type: metagenomic assembly
-  - environmental\_sample: TRUE
+- sample\_type: metagenomic assembly
 
 サンプルの由来情報
-
-  - metagenome\_source: xyz metagenome
-  - isolate
-  - isolation\_source
+- metagenome\_source: xyz metagenome
+- isolate
+- isolation\_source
 
 サンプルの採取情報
-
-  - collection\_date
-  - env\_biome
-  - env\_feature
-  - env\_material
-  - geo\_loc\_name
-  - lat\_lon
+- collection\_date
+- env\_biome
+- env\_feature
+- env\_material
+- geo\_loc\_name
+- lat\_lon
 
 派生元 BioSample
-
-  - note: This biosample is a metagenomic assembly obtained from the xyz
-    metagenome BioSample: SAMDxxxxxxxx.
-  - derived\_from: SAMDxxxxxxxx
+- derived\_from: This biosample is a metagenomic assembly obtained from the xyz metagenome BioSample: SAMDxxxxxxxx.
 
 #### DRA  {#mag-dra}
 
@@ -141,26 +132,23 @@ MAG は [ENV division](/ddbj/env.html)
 が登録受付窓口になります。以下の情報が必須になります。
 
 MAG 特有のルールとして必須
-
-  - source feature に /metagenome\_source = "xyz metagenome"（"xyz
-    metagenome" は [metagenome organism
-    names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/)
-    に含まれていること）を記載。
+- source feature に /metagenome\_source = "xyz metagenome"（"xyz
+  metagenome" は [metagenome organism
+  names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/)
+  に含まれていること）を記載。
 
 ENV Division エントリとして必須
-
-  - source feature に
-    [/environmental\_sample](/ddbj/qualifiers.html#environmental_sample)、[/isolation\_source](/ddbj/qualifiers.html#isolation_source)
-    と [/isolate](/ddbj/qualifiers.html#isolate) を記載。
+- source feature に
+  [/environmental\_sample](/ddbj/qualifiers.html#environmental_sample)、[/isolation\_source](/ddbj/qualifiers.html#isolation_source)
+  と [/isolate](/ddbj/qualifiers.html#isolate) を記載。
 
 ゲノムエントリとして必須
-
-  - [ST\_COMMENT](/ddbj/file-format.html#describing_st_comment)
-    にアセンブリに関する Assembly Method、Genome
-    Coverage、Sequencing Technology を記載。
-  - 真核生物の場合、加えて
-    [ST\_COMMENT](/ddbj/file-format.html#describing_st_comment) に
-    Assembly Name を記載。
+- [ST\_COMMENT](/ddbj/file-format.html#describing_st_comment)
+  にアセンブリに関する Assembly Method、Genome
+  Coverage、Sequencing Technology を記載。
+- 真核生物の場合、加えて
+  [ST\_COMMENT](/ddbj/file-format.html#describing_st_comment) に
+  Assembly Name を記載。
 
 MAG エントリ（ENV division）では [/strain](/ddbj/qualifiers.html#strain)
 を記載することはできません。また、宿主の情報がある場合は source feature に

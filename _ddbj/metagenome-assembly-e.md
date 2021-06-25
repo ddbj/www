@@ -139,34 +139,26 @@ that a virtual BioSample derived from the MIMS metagenomic sample used
 in 1) is required for a MAG submission.
 
 Following sample attributes other than the organism are necessary.
-[Example
-BioSample](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=272411182)
+[Example BioSample](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=272411182)
 
 Fixed terms
-
-  - sample\_type: metagenomic assembly
-  - environmental\_sample: TRUE
+- sample\_type: metagenomic assembly
 
 Sample isolation
-
-  - metagenome\_source: xyz metagenome
-  - isolate
-  - isolation\_source
+- metagenome\_source: xyz metagenome
+- isolate
+- isolation\_source
 
 Sample collection
-
-  - collection\_date
-  - env\_biome
-  - env\_feature
-  - env\_material
-  - geo\_loc\_name
-  - lat\_lon
+- collection\_date
+- env\_biome
+- env\_feature
+- env\_material
+- geo\_loc\_name
+- lat\_lon
 
 Derived BioSample
-
-  - note: This biosample is a metagenomic assembly obtained from the xyz
-    metagenome BioSample: SAMDxxxxxxxx.
-  - derived\_from: SAMDxxxxxxxx
+- derived\_from: This biosample is a metagenomic assembly obtained from the xyz metagenome BioSample: SAMDxxxxxxxx.
 
 #### DRA  {#mag-dra}
 
@@ -180,26 +172,25 @@ through the [Mass Submission System (MSS)](/ddbj/mss-e.html). Following
 information is necessary.
 
 Required for the MAG entry.
-
-  - Add /metagenome\_source = 'xyz metagenome' ('xyz metagenome' should
-    be from this list of [metagenome organism
-    names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/)
-    in the taxonomy database) to the source feature.
+- Add /metagenome\_source = 'xyz metagenome' ('xyz metagenome' should
+  be from this list of [metagenome organism
+  names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/)
+  in the taxonomy database) to the source feature.
 
 Required for the ENV division entry.
 
-  - Add
-    [/environmental\_sample](/ddbj/qualifiers-e.html#environmental_sample),
-    [/isolation\_source](/ddbj/qualifiers-e.html#isolation_source) and
-    [/isolate](/ddbj/qualifiers-e.html#isolate) to the source feature.
+- Add
+  [/environmental\_sample](/ddbj/qualifiers-e.html#environmental_sample),
+  [/isolation\_source](/ddbj/qualifiers-e.html#isolation_source) and
+  [/isolate](/ddbj/qualifiers-e.html#isolate) to the source feature.
 
 Required for the genome entry.
 
-  - Include Assembly Method, Genome Coverage and Sequencing Technology
-    in the [ST\_COMMENT](/ddbj/file-format-e.html#describing_st_comment)
-  - Include Assembly Name in the
-    [ST\_COMMENT](/ddbj/file-format-e.html#describing_st_comment) for
-    eukaryotes.
+- Include Assembly Method, Genome Coverage and Sequencing Technology
+  in the [ST\_COMMENT](/ddbj/file-format-e.html#describing_st_comment)
+- Include Assembly Name in the
+  [ST\_COMMENT](/ddbj/file-format-e.html#describing_st_comment) for
+  eukaryotes.
 
 In the MAG (ENV division) entry,
 [/strain](/ddbj/qualifiers-e.html#strain) can not be used. Please

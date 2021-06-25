@@ -29,7 +29,7 @@ the research paper. DDBJ is a member of [International Nucleotide
 Sequence Database Collaboration (INSDC)](http://www.insdc.org/).
 
 When you wish to publicize your sequence through DDBJ, and your sequence
-is [acceptable](/documents/accessions-e.html) for DDBJ, you can submit your sequence
+is [acceptable](/documents/data-categories-e.html) for DDBJ, you can submit your sequence
 to DDBJ, even if you have no plan to publication of any research paper
 related to the sequence.
 

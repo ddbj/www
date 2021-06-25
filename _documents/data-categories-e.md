@@ -17,26 +17,32 @@ related_pages:
 
 ## Acceptable data for DDBJ  {#accept}
 
-For the request of [Primary
-entry](/ddbj/submission.html#primary_entry) submission, in principle,
+For the request of [Primary entry](/ddbj/submission.html#primary_entry) submission, in principle,
 DDBJ accepts any nucleotide sequences that are experimentally determined
-by submitters, but can not accept computational predicted and/or cited
-sequences.
+by submitters, but can not accept computational predicted and/or cited sequences.
 
 Even if your sequence is identical to previously reported sequence(s),
 on the condition that the sequence is independently determined, you can
 submit it as a "new" entry.
 
 DDBJ also acccepts an entry that is obtained by assembling primary
-entries publicized from DDBJ/EMBL-Bank/GenBank of INSDC and/or is added
+entries publicized from DDBJ/ENA/GenBank of INSDC and/or is added
 annotation(s) by experimental or inferential method by submitter as [TPA
 (third party data)](/ddbj/tpa-e.html).
+
+However, the following sequence data is not acceptable for DDBJ:
+
+- Amino acid sequences with no underlying nucleotide submission
+- Sequence containing a mix of genomic DNA and RNA transcript
+- Sequences without a physical counterpart (consensus sequences)
+- Sequences with length less than 100 nucleotides (since June 2021) 
+- Sequence consisting only of primer (since June 2021) 
 
 When you are to publicize raw output data for your studies related to
 SNPs, [WGS](/ddbj/wgs-e.html#acceptance),
 [transcriptome](/ddbj/tsa-e.html) and so on, we recommend you to contact
 with [DDBJ Trace Archive](/dta/index-e.html), or [DDBJ Sequence Read
-Archive](/dra/index-e.html), instead of DDBJ / EMBL-Bank / GenBank.
+Archive](/dra/index-e.html), instead of DDBJ / ENA / GenBank.
 
 Reference : [Overview of International Nucleotide Sequence Databases
 Policies](/about/insdc-e.html#policy)
@@ -60,8 +66,7 @@ does not restrict them.
 ### Annotated/assembled sequences  {#ann}
 
 [DDBJ](/ddbj/index.html)  
-: Narrowly-defined DDBJ. DDBJ is a counterpart of GenBank and ENA
-(EMBL-Bank) to accept sequences with feature annotation and to
+: Narrowly-defined DDBJ. DDBJ is a counterpart of GenBank and ENA (EMBL-bank) to accept sequences with feature annotation and to
 provide them in [flat file](/ddbj/flat-file-e.html).
 : About the data in traditional DDBJ is classified, see [Categories of
 Annotated/Assembled Data](#detail).
@@ -210,4 +215,4 @@ TLS entries can have some [Biological features](/ddbj/file-format-e.html#biologi
 
 #### **TPA; Third Party Data and primary sequence data**  {#tpa}
 
-[TPA (Third Party Data)](/ddbj/tpa-e.html) is a nucleotide sequence data collection in which each entry is obtained by assembling primary entries publicized from DDBJ/EMBL-Bank/GenBank, [Trace Archive](//www.ncbi.nlm.nih.gov/Traces/trace.cgi), and/or [Sequence Read Archive](/dra/index-e.html) with additional feature annotation(s) determined by experimental or inferential methods by TPA submitter. Those assemblies include two cases; one or more primary entries are used and newly determined sequence is contained. TPA sequence data should be submitted to DDBJ/EMBL-Bank/GenBank as a part of the process to publish biological research for primary nucleotide sequences.<br>See also [TPA Submission Guidelines](/ddbj/tpa-table-e.html).
+[TPA (Third Party Data)](/ddbj/tpa-e.html) is a nucleotide sequence data collection in which each entry is obtained by assembling primary entries publicized from DDBJ/ENA/GenBank, [Trace Archive](//www.ncbi.nlm.nih.gov/Traces/trace.cgi), and/or [Sequence Read Archive](/dra/index-e.html) with additional feature annotation(s) determined by experimental or inferential methods by TPA submitter. Those assemblies include two cases; one or more primary entries are used and newly determined sequence is contained. TPA sequence data should be submitted to DDBJ/EMBL-Bank/GenBank as a part of the process to publish biological research for primary nucleotide sequences.<br>See also [TPA Submission Guidelines](/ddbj/tpa-table-e.html).
