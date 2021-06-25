@@ -1031,7 +1031,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 </div>
 
 <div class="attention">
-[DDBJ 大量登録システム (Mass Submission System, MSS)](/ddbj/mss.html) 用の登録ファイルでサイズがメール添付の上限を超えるような場合は DRA サーバを利用することができます。 [MSS チームに連絡](/contact-ddbj.html#to-ddbj)した後、ファイルを /submission/ [submitter ID]/mass にアップロードします。
+[DDBJ 大量登録システム (Mass Submission System, MSS)](/ddbj/mss.html) 用の登録ファイルでサイズがメール添付の上限を超えるような場合は DRA サーバを利用することができます。 [MSS チームに連絡](/contact-ddbj.html#to-ddbj)した後、ファイルを ~/mass にアップロードします。
 </div>
 
 ### ウェブツールでのメタデータ作成  {#create-metadata-using-tool} 

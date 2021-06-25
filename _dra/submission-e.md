@@ -1215,8 +1215,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 When sending submission files too large for e-mail attachment,
 submitters can upload the files for the [DDBJ Mass Submission System
 (MSS)](/ddbj/mss-e.html) by using the DRA file server. After [contacting
-the MSS team](/contact-ddbj-e.html#to-ddbj), upload the files to the
-/submission/[submitter ID]/mass directory.
+the MSS team](/contact-ddbj-e.html#to-ddbj), upload the files to the ~/mass directory.
 </div>
 
 ### Create metadata by using the tool  {#create-metadata-using-tool} 
