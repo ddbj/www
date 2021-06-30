@@ -72,25 +72,7 @@ Package and attributes
     samples](/biosample/attribute-e.html?Core=Generic&definition=definition)
     package and create a combined sample of samples registered as
     [”Single cell”](#single-biosample).
-  - Indicate that the sample is combined in
-    [sample\_title](/biosample/attribute-e.html?all=all#sample_title).
-    For example, “Sample group: combined samples of
-    SAMD00192892-SAMD00192901 (Co\_assembled genome)“
-  - Indicate source sample accessions of the combined sample as
-    derived\_from = “SAMD00192892-SAMD00192901” and note = “This sample
-    group is the combination of the individual BioSamples:
-    SAMD00192892-SAMD00192901.”
+  - Indicate source sample accessions of the combined sample as derived\_from = “This sample group is the combination of the individual BioSamples: SAMD00192892-SAMD00192901.”
   - Describe following attributes.
     - [isolate](/biosample/attribute-e.html?all=all#isolate)
     - [isolation\_source](/biosample/attribute-e.html?all=all#isolation_source).
-
-## Real-world examples  {#real-examples}
-
-  - BioProject:
-    [PRJDB8357](https://www.ncbi.nlm.nih.gov/bioproject/632761)
-  - BioSample:
-    [SAMD00192895](https://www.ncbi.nlm.nih.gov/biosample/?term=SAMD00192895)
-  - BioSample:
-    [SAMD00192902](https://www.ncbi.nlm.nih.gov/biosample/?term=SAMD00192902)
-  - DDBJ:
-    [BLSE00000000.1](https://www.ncbi.nlm.nih.gov/nuccore/BLSE00000000.1)

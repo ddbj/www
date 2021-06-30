@@ -61,23 +61,7 @@ source feature
   - [Other
     samples](/biosample/attribute.html?Core=Generic&definition=definition)
     パッケージを選択し、[「一細胞の場合」](#single-biosample)で作成したサンプルの結合サンプルを作成します。
-  - [sample\_title](/biosample/attribute.html?all=all#sample_title)
-    に結合サンプルであることを記載します。例 “Sample group: combined samples of
-    SAMD00192892-SAMD00192901 (Co\_assembled genome)“
-  - derived\_from = “SAMD00192892-SAMD00192901”、note = “This sample
-    group is the combination of the individual BioSamples:
-    SAMD00192892-SAMD00192901.” のように結合元サンプルのアクセッション番号を記載します。
+  - derived\_from = “This sample group is the combination of the individual BioSamples: SAMD00192892-SAMD00192901.” のように結合元サンプルのアクセッション番号を記載します。
   - 以下のサンプル属性を記載します。
     - [isolate](/biosample/attribute.html?all=all#isolate)
     - [isolation\_source](/biosample/attribute.html?all=all#isolation_source)
-
-## 登録例  {#real-examples}
-
-  - BioProject:
-    [PRJDB8357](https://www.ncbi.nlm.nih.gov/bioproject/632761)
-  - BioSample:
-    [SAMD00192895](https://www.ncbi.nlm.nih.gov/biosample/?term=SAMD00192895)
-  - BioSample:
-    [SAMD00192902](https://www.ncbi.nlm.nih.gov/biosample/?term=SAMD00192902)
-  - DDBJ:
-    [BLSE00000000.1](https://www.ncbi.nlm.nih.gov/nuccore/BLSE00000000.1)
