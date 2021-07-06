@@ -404,7 +404,7 @@ Validation ルールとメッセージについては [Validation rules ペー�
 
 ### アクセッション番号  {#accession-numbers}
 
-新規 Submission を作成すると SSUB で始まる仮 ID が自動的に割り当てられます。D-way から validation を通過したサンプルが投稿されると自動的にプレフィックス "SAMD" のアクセッション番号が発行されます。未登録の生物名が organism に記載されていた場合や locus\_teg\_prefix に値が記入されていた場合はキュレータが必要な査定を実施した後にアクセッション番号が発行されます。[D-way アカウント](https://ddbj.nig.ac.jp/D-way/)にログイン後、ウェブ上で登録したサンプルの進行状況やアクセッション番号を確認することができます。
+新規 Submission を作成すると SSUB で始まる仮 ID が自動的に割り当てられます。D-way から validation を通過したサンプルが投稿されると自動的にプレフィックス "SAMD" のアクセッション番号が発行されます。未登録の生物名が organism に記載されていた場合や locus\_tag\_prefix に値が記入されていた場合はキュレータが必要な査定を実施した後にアクセッション番号が発行されます。[D-way アカウント](https://ddbj.nig.ac.jp/D-way/)にログイン後、ウェブ上で登録したサンプルの進行状況やアクセッション番号を確認することができます。
 
 
   <div class="attention" markdown="1">
