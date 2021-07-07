@@ -409,7 +409,7 @@ COMMENT" があります。詳細は以下をご覧ください。
 <span class="red">※</span> Biological feature の定義、記述方法の詳細については、[Feature
 Table Definition](/ddbj/feature-table.html)をご参照ください。
 
-#### Feature/Location/Qualifier の書式  {##describing_feature}
+#### Feature/Location/Qualifier の書式  {#describing_feature}
 
   - [Feature Table Definition](/ddbj/feature-table.html) では、各 Qualifier の前に
     / \[slash\] が記述されておりますが、アノテーションファイルでは / を入力しないでください。
@@ -427,7 +427,7 @@ Table Definition](/ddbj/feature-table.html)をご参照ください。
   - CDS feature を含むデータは、必ず、[UME](/ddbj/ume.html) または
     [transChecker](/ddbj/transchecker.html) を用いてアミノ酸翻訳をご確認ください。
 
-#### Value の書式  {##describing_value}
+#### Value の書式  {#describing_value}
 
   - 使用可能な文字種は Qualifier に依存します。詳細は [Feature Table
     Definition](/ddbj/feature-table.html)および、[Feature/Qualifier
@@ -845,7 +845,7 @@ PRIMARY\_CONTIG feature で使用可能な qualifier
   </tbody>
 </table>
 
-#### TPA/TSA: PRIMARY\_CONTIG プライマリーエントリ引用 の書式  {#TPA/TSA__PRIMARY_CONTIG_プライマリーエントリ引用_の書式}
+#### TPA/TSA: PRIMARY\_CONTIG プライマリーエントリ引用 の書式  {#TPA_TSA__PRIMARY_CONTIG_プライマリーエントリ引用_の書式}
 
 - [DATATYPE/type](#datatype) で TPA、もしくは [DIVISION/division](#division) で TSA を指定しておく必要があります。
 
