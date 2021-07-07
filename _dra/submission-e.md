@@ -1279,6 +1279,10 @@ release data at different time, please divide a submission.
 
 #### Study  {#study}
 
+<div class="attention">
+When the Study and Sample tab contents are not displayed, please open them by using Edge or Firefox.
+</div>
+
 Submit a new project by clicking [New submission], or select a project
 registered in the account.
 
@@ -1342,6 +1346,10 @@ After submitting a project, submitted one is selected in Study.
 {% include image.html url="books//hdra-bp04.jpg" caption="Submitted project is selected" class="w450" %}
 
 #### Sample  {#sample}
+
+<div class="attention">
+When the Study and Sample tab contents are not displayed, please open them by using Edge or Firefox.
+</div>
 
 Submit new samples by clicking [New submission], or select samples
 submitted in the account.
