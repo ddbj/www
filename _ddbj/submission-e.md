@@ -251,7 +251,7 @@ process, we may contact the Contact Person to make inquiry about the
 data.
 
 
-### 3 Assignment and Notification of Accession Number  {#accession number}
+### 3 Assignment and Notification of Accession Number  {#accession_number}
 
 We inform an accession number (unique number assigned by the
 International Nucleotide Sequence Database Collaboration) to the Contact
