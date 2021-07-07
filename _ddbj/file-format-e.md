@@ -418,7 +418,7 @@ Example: source and CDS features in annotation file(<span class="red">Requierd</
 
 <span class="red">※</span>For detail definitions and descriptions of Biological features, please read [Feature Table Definition](/ddbj/feature-table-e.html).
 
-#### Requirements for Describing Feature/Location/Qualifier  {##describing_feature}
+#### Requirements for Describing Feature/Location/Qualifier  {#describing_feature}
 
   - In [Feature Table Definition](/ddbj/feature-table-e.html), each Qualifier has a / \[slash\] on its head, however do not use slashes for Qualifiers in the annotation file.
   - Qualifiers marked with \* (organism、mol\_type) are mandatory items. Features, source and at least one other feature are mandatory items for each entry. Please be sure to input them correctly.
@@ -429,7 +429,7 @@ Example: source and CDS features in annotation file(<span class="red">Requierd</
   - When you describe CDS features, [Protein Coding Sequence; CDS feature](/ddbj/cds-e.html) would be helpful.
   - Files containing CDS feature(s) should be checked with [UME](/ddbj/ume-e.html) or [transChecker](/ddbj/transchecker-e.html).
 
-#### Requirements for Describing Value  {##describing_value}
+#### Requirements for Describing Value  {#describing_value}
 
   - The legal character type for Values depends on the Qualifiers as shown in the table, [Feature/Qualifier Usage Matrix](/assets/files/pdf/ddbj/fq-e.pdf) and [Feature Table Definition](/ddbj/feature-table-e.html).
   - Please be sure to input (or not to input) Values in accordance with value types in tables.
@@ -801,7 +801,7 @@ The base span of the cited primary sequence. Example) 1..500</td>
 </tbody>
 </table>
 
-#### Requirements for Describing TPA/TSA: PRIMARY\_CONTIG, Citation of Primary Entries  {#Requirements_for_Describing_TPA/TSA__PRIMARY_CONTIG,_Citation_of_Primary_Entries}
+#### Requirements for Describing TPA/TSA: PRIMARY\_CONTIG, Citation of Primary Entries  {#Requirements_for_Describing_TPA_TSA__PRIMARY_CONTIG_Citation_of_Primary_Entries}
 
 - Please specify the value for [DATATYPE/type](#datatype), TPA or [DIVISION/division](#division), TSA in the annotation file.
 
