@@ -305,6 +305,7 @@ being sequenced.
     | Tn-Seq                                  | Gene fitness determination through transposon seeding.                                                                                                                                                                                                                    |
     | FAIRE-seq                               | Formaldehyde Assisted Isolation of Regulatory Elements                                                                                                                                                                                                                    |
     | SELEX                                   | Systematic Evolution of Ligands by EXponential enrichment                                                                                                                                                                                                                 |
+    | NOMe-Seq                                | Nucleosome Occupancy and Methylome sequencing.                                                                                                                                                                                                                            |
     | RIP-Seq                                 | Direct sequencing of RNA immunoprecipitates (includes CLIP-Seq, HITS-CLIP and PAR-CLIP).                                                                                                                                                                                  |
     | ChIA-PET                                | Direct sequencing of proximity-ligated chromatin immunoprecipitates.                                                                                                                                                                                                      |
     | Hi-C                                    | Chromosome Conformation Capture technique where a biotin-labeled nucleotide is incorporated at the ligation junction, enabling selective purification of chimeric DNA ligation junctions followed by deep sequencing                                                      |
@@ -335,61 +336,72 @@ Access)
 [Instrument](#Instrument)<a name="Instrument"></a><span class="red">*</span>  
 : Select a sequencing instrument model.
 
-    | Instrument Model                    |
-    |---|
-    | 454 GS                              |
-    | 454 GS 20                           |
-    | 454 GS FLX                          |
-    | 454 GS FLX+                         |
-    | 454 GS FLX Titanium                 |
-    | 454 GS Junior                       |
-    | Illumina Genome Analyzer            |
-    | Illumina Genome Analyzer II         |
-    | Illumina Genome Analyzer IIx        |
-    | Illumina HiSeq 1000                 |
-    | Illumina HiSeq 1500                 |
-    | Illumina HiSeq 2000                 |
-    | Illumina HiSeq 2500                 |
-    | Illumina HiSeq 3000                 |
-    | Illumina HiSeq 4000                 |
-    | Illumina NovaSeq 6000               |
-    | Illumina MiSeq                      |
-    | Illumina MiniSeq                    |
-    | Illumina iSeq 100                   |
-    | Illumina HiScanSQ                   |
-    | HiSeq X Five                        |
-    | HiSeq X Ten                         |
-    | NextSeq 500                         |
-    | NextSeq 550                         |
-    | Helicos HeliScope                   |
-    | AB SOLiD System                     |
-    | AB SOLiD System 2.0                 |
-    | AB SOLiD System 3.0                 |
-    | AB SOLiD 3 Plus System              |
-    | AB SOLiD 4 System                   |
-    | AB SOLiD 4hq System                 |
-    | AB SOLiD PI System                  |
-    | AB 5500 Genetic Analyzer            |
-    | AB 5500xl Genetic Analyzer          |
-    | AB 5500xl-W Genetic Analysis System |
-    | Complete Genomics                   |
-    | MinION                              |
-    | GridION                             |
-    | PromethION                          |
-    | PacBio RS                           |
-    | PacBio RS II                        |
-    | Sequel                              |
-    | Ion Torrent PGM                     |
-    | Ion Torrent Proton                  |
-    | Ion Torrent S5                      |
-    | Ion Torrent S5 XL                   |
-    | AB 310 Genetic Analyzer             |
-    | AB 3130 Genetic Analyzer            |
-    | AB 3130xL Genetic Analyzer          |
-    | AB 3500 Genetic Analyzer            |
-    | AB 3500xL Genetic Analyzer          |
-    | AB 3730 Genetic Analyzer            |
-    | AB 3730xL Genetic Analyzer          |
+| Instrument Model                    |
+|---|
+| 454 GS                              |
+| 454 GS 20                           |
+| 454 GS FLX                          |
+| 454 GS FLX+                         |
+| 454 GS FLX Titanium                 |
+| 454 GS Junior                       |
+| Illumina Genome Analyzer            |
+| Illumina Genome Analyzer II         |
+| Illumina Genome Analyzer IIx        |
+| Illumina HiSeq 1000                 |
+| Illumina HiSeq 1500                 |
+| Illumina HiSeq 2000                 |
+| Illumina HiSeq 2500                 |
+| Illumina HiSeq 3000                 |
+| Illumina HiSeq 4000                 |
+| Illumina NovaSeq 6000               |
+| Illumina MiSeq                      |
+| Illumina MiniSeq                    |
+| Illumina iSeq 100                   |
+| Illumina HiScanSQ                   |
+| HiSeq X Five                        |
+| HiSeq X Ten                         |
+| NextSeq 500                         |
+| NextSeq 550                         |
+| NextSeq 1000                        |
+| NextSeq 2000                        |
+| Helicos HeliScope                   |
+| AB SOLiD System                     |
+| AB SOLiD System 2.0                 |
+| AB SOLiD System 3.0                 |
+| AB SOLiD 3 Plus System              |
+| AB SOLiD 4 System                   |
+| AB SOLiD 4hq System                 |
+| AB SOLiD PI System                  |
+| AB 5500 Genetic Analyzer            |
+| AB 5500xl Genetic Analyzer          |
+| AB 5500xl-W Genetic Analysis System |
+| Complete Genomics                   |
+| BGISEQ-500                          |
+| DNBSEQ-G400                         |
+| DNBSEQ-T7                           |
+| DNBSEQ-G50                          |
+| MGISEQ-2000RS                       |
+| MinION                              |
+| GridION                             |
+| PromethION                          |
+| PacBio RS                           |
+| PacBio RS II                        |
+| Sequel                              |
+| Sequel II                           |
+| Ion Torrent PGM                     |
+| Ion Torrent Proton                  |
+| Ion Torrent S5                      |
+| Ion Torrent S5 XL                   |
+| Ion GeneStudio S5                   |
+| Ion GeneStudio S5 plus              |
+| Ion GeneStudio S5 prime             |
+| AB 310 Genetic Analyzer             |
+| AB 3130 Genetic Analyzer            |
+| AB 3130xL Genetic Analyzer          |
+| AB 3500 Genetic Analyzer            |
+| AB 3500xL Genetic Analyzer          |
+| AB 3730 Genetic Analyzer            |
+| AB 3730xL Genetic Analyzer          |
 
 <!-- end list -->
 
