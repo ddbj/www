@@ -1085,6 +1085,10 @@ Experiment や Run オブジェクトが多件数の場合、ウェブツール�
 
 #### Study  {#study}
 
+<div class="attention">
+Study と Sample タブ画面が表示されない場合、Edge や Firefox で開くと表示されるようになる場合があります。
+</div>
+
 [register a project] をクリックして新規にプロジェクトを登録するか、もしくは、自身のアカウントで登録したプロジェクト一覧から、該当するものを1つ選びます。
 従来通りプロジェクトを BioProject から個別に登録することもできます。
 
@@ -1133,6 +1137,10 @@ BioProject を投稿した後、Study では投稿したプロジェクトが選
 {% include image.html url="books//hdra-bp04.jpg" caption="投稿されたプロジェクトが選択される" class="w450" %}
 
 #### Sample  {#sample}
+
+<div class="attention">
+Study と Sample タブ画面が表示されない場合、Edge や Firefox で開くと表示されるようになる場合があります。
+</div>
 
 [register sample(s)] でサンプルを新規に登録するか、もしくは、自身のアカウントで作成した BioSample 一覧から、該当するものを全て選択します。
 
