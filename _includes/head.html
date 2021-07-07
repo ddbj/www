@@ -1,6 +1,6 @@
 <head>
     <meta charset="UTF-8" />
-    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:title" content="{{ page.title | strip_html }}" />
     <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
     <meta property="og:description" content="{{ page.content | strip_html | strip_newlines | truncate: 83 }}" />
     <meta property6="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
