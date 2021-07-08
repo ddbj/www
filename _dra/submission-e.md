@@ -858,6 +858,10 @@ files. Do not rename files.
 <div class="attention">
 Do NOT include files other than HDF5 in a Run.
 </div>
+  
+<div class="attention">
+The current DRA system (9th July 2021) is not able to load the HDF5 files. Please submit fastq instead of HDF5.
+</div>
 
 #### bam  {#pacbio_bam}
 
