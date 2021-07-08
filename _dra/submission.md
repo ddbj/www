@@ -695,6 +695,10 @@ Pacific Biosciences は生データを格納するためにディレクトリ様
 Run に HDF5 以外のデータを含めないでください。
 </div>
 
+<div class="attention">
+2021年7月9日現在の DRA システムが HDF5 に対応できていないため、HDF5 ではなく fastq ファイルでの登録をお願いいたします。 
+</div>
+
 #### bam  {#pacbio_bam}
 
 以下の unaligned bam ファイルの登録をサポートしています。1 Run に 1 bamファイルを指定してください。
