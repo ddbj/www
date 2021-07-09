@@ -679,7 +679,7 @@ DBLINK は、 BioProject ID、BioSample ID、Sequence Read Archive (DRA/ERA/SRA)
 locus\_tag prefix は事前に [BioProject Database](/bioproject/index.html) で
 BioProject ID を申請する際に取得して下さい。
 
-### source: ff\_definition  {#source}
+### source: ff\_definition  {#ff_definition}
 
 ff\_definition は、The DDBJ/EMBL/GenBank Feature Table: Definition
 には定義されていない DDBJ 登録専用 Qualifier
