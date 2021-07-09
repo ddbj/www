@@ -1296,6 +1296,10 @@ Analysis (任意) が不要な場合は [Submit / Update DRA metadata] をクリ
 
 [Enter / Update metadata] をクリックして内容を投稿し、データファイルの検証に進みます。Analysis 用のファイルは md5 しかチェックされません。
 
+<div class="attention">
+件数が多い場合は、[Analysis メタデータエクセルファイル](/dra/analysis.html) を使った登録方法をご利用ください。
+</div>
+
 <div class="accordion-menu" markdown="1">
 <h3 class="toggle-content-btn"><a href="javascript:void(0)" name="create-metadata-in-xml-files">XML でのメタデータ登録方法</a></h3>
 <div class="accordion-content">

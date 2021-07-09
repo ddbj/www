@@ -1563,6 +1563,9 @@ Submit DRA metadata by clicking the [Submit/Update DRA metadata] and
 proceed to data validation process. Only md5 of analysis files are
 checked during validation.
 
+<div class="attention">
+For large number of analysis, please submit them by using [Analysis metadata excel](/dra/analysis-e.html).
+</div>
 
 <div class="accordion-menu" markdown="1">
 <h3 class="toggle-content-btn"><a href="javascript:void(0)" name="create-metadata-in-xml-files">Create metadata in XML files</a></h3>
