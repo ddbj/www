@@ -647,7 +647,7 @@ Example: DBLINK in annotation file(<span class="red">Requierd</span>)
 For the submission in the whole genome scale with many annotated features, we recommend to use the qualifier [locus\_tag](/ddbj/locus_tag.html), for the [Biological Features](#biological_feature) indicating protein products ([CDSs](/ddbj/cds-e.html)), and transcripts (rRNA, tRNA and so on).  
 The locus\_tag prefix and BioProject ID should be registered at [DDBJ BioProject Database](/bioproject/index-e.html) in advance.
 
-### source: ff\_definition  {#source}
+### source: ff\_definition  {#ff_definition}
 
 ff\_definition is a Qualifier that is not defined in The DDBJ/EMBL/GenBank Feature Table: Definition. One ff\_definition can be
 described in an entry, if necessary.
