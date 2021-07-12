@@ -391,12 +391,12 @@ Run に含めるデータファイルを選択します。
 <!-- end list -->
 
 [File Type](#File_Type)<a name="File_Type"></a><span class="red">*</span>  
-: シークエンスデータのファイル形式。リード長が一定ではない fastq ファイルの場合は  "generic_fastq"、一定の場合は "fastq" を選択します。
+: シークエンスデータのファイル形式。fastq ファイルの場合、リード長が一定かそうでないかに関わらず全て "generic_fastq" を選択します。"fastq" は選択しないでください。
 
 | File Type        | Description                                                                                                            |
 |---|
-| generic_fastq   | fastq files with variable read length                                                                                  |
-| fastq            | fastq files with constant read length                                                                                  |
+| generic_fastq   | fastq files                                                                                  |
+| fastq            | Select "generic_fastq" instead of "fastq".                                                                            |
 | sff              | 454 Standard Flowgram Format file                                                                                      |
 | hdf5             | PacBio hdf5 Format file                                                                                                |
 | bam              | Binary SAM format for use by loaders that combine alignment and sequencing data                                        |
@@ -633,10 +633,7 @@ chr3 NC_000003.12
 
 ### fastq  {#fastq} 
 
-Run の filetype はリード長が一定・不定によって異なります。
-
-  - リード長が揃っている fastq ファイルの場合、Run の file type で <span class="red">fastq</span> を選択します。ペアードデータの場合、対になっているファイル中でペアとなっているリードが同じ順番で記載されている必要があります。
-  - リード長が一定ではない fastq ファイル: Run の file type で <span class="red">generic_fastq</span> を選択します。
+Run の filetype はリード長が一定かどうかに関わらず generic_fastq を選択します。fastq は選択しないでください。
 
 fastq の形式。詳しくは[NCBI のサイト](https://www.ncbi.nlm.nih.gov/sra/docs/submitformats/#fastq-files)をご覧ください。
 
@@ -709,7 +706,7 @@ unaligned bamの場合、リファレンス配列や対応表の指定は必要�
 
 #### fastq  {#pacbio_fastq}
 
-リード長は可変なので [generic_fastq](#fastq) を Run の filetype で指定してください。
+[generic_fastq](#fastq) を Run の filetype で指定してください。
 
 ### Oxford Nanopore  {#Oxford-Nanopore}
 
@@ -1269,7 +1266,7 @@ BioSample を投稿した後、Sample では投稿したサンプルが選択さ
 </div>
 
 <div class="attention">
-リード長が一定ではない fastq ファイルの場合、filetype には "generic_fastq" を選択します。
+fastq ファイルはリード長が一定かどうかに関わらず、filetype には "generic_fastq" を選択します。"fastq" は選択しないでください。
 </div>
 
 {% include image.html url="books/hdra-runfinish.jpg" caption="データファイルの属性を入力し Run に結び付ける" class="w450" %}

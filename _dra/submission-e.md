@@ -479,14 +479,12 @@ in tsv file, this field needs to be specified manually.
 <!-- end list -->
 
 [File Type](#File_Type)<a name="File_Type"></a><span class="red">*</span>  
-: The sequence data file format. For the fastq files with variable
-read length, select 'generic_fastq'. For the fastq files with
-constant read length, select 'fastq'.  
+: The sequence data file format. For the fastq files, select 'generic_fastq' irrespective of read length. Do NOT select 'fastq'.
       
     | File Type        | Description                                                                                                            |
     |---|
-    | generic_fastq   | fastq files with variable read length                                                                                  |
-    | fastq            | fastq files with constant read length                                                                                  |
+    | generic_fastq   | fastq files                                                                                   |
+    | fastq            | Select "generic_fastq" instead of "fastq".                                                                        |
     | sff              | 454 Standard Flowgram Format file                                                                                      |
     | hdf5             | PacBio hdf5 Format file                                                                                                |
     | bam              | Binary SAM format for use by loaders that combine alignment and sequencing data                                        |
@@ -781,9 +779,7 @@ constant or not.
   - For the fastq files with constact read length, select 'fastq' in the
     [file type](#File_Type)of Run. Paired reads should appear in the
     same order in the paired files.
-  - For the fastq files with variable read length, select
-    'generic_fastq' in the [file type](#File_Type)of Run.
-
+  - For the fastq files, select 'generic_fastq' in the [file type](#File_Type) of Run irrespective of read length.
 
 Format of fastq, for details, please see [NCBI
 website](https://www.ncbi.nlm.nih.gov/books/NBK242622/#File_Format_Guide_BK.FASTQ).
@@ -873,8 +869,7 @@ We support the submission of the following types of PacBio bam files. Include 1 
 #### fastq  {#pacbio_fastq}
 
 The DRA also accepts Pacific Biosciences data in the
-[fastq](#fastq) format. Because the read length varies, select the
-["generic_fastq"](#fastq) for the Run filetype.
+[fastq](#fastq) format. Select the ["generic_fastq"](#fastq) for the Run filetype.
 
 ### Oxford Nanopore  {#Oxford-Nanopore}
 
@@ -1527,8 +1522,7 @@ processed as paired-end.
 </div>
 
 <div class="attention">
-For fastq with variable read length, select "generic_fastq" for
-filetype.
+For fastq files, select "generic_fastq" for filetype irrespective of read length. Do NOT select 'fastq'.
 </div>
 
 {% include image.html url="books/hdra-runfinish.jpg" caption="Enter file attributes and link files to Run" class="w450" %}
