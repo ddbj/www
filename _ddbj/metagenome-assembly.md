@@ -80,7 +80,10 @@ Binning され、既知の分類群に帰属されたアセンブリ配列を [D
 
 Binned サンプル用にバーチャルなサンプルを登録します。パッケージは ["Other
 samples"](/biosample/submission.html#General_Sample) を選択し、生物名には
-uncultured が冠されていない、Binned アセンブリが由来する生物名を記載します (例 "Agrobacterium tumefaciens"、Agrobacterium sp."、"Rhizobiaceae bacterium")。(1) の DRA Run 登録に使用する "xyz metagenome" メタゲノムサンプルとは別にバーチャルな Binned 用サンプルが必要になります。
+uncultured が冠されていない、Binned アセンブリが由来する生物名を記載します (例 "Agrobacterium tumefaciens"、Agrobacterium sp."、"Rhizobiaceae bacterium")。
+(1) の DRA Run 登録に使用する "xyz metagenome" メタゲノムサンプルとは別にバーチャルな Binned 用サンプルが必要になります。　　　　
+
+解析ツール [GTDB](https://gtdb.ecogenomic.org/) が割り当てた生物名で [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi) に登録されていない名前は、そのまま使うことができません。対応する [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi) に登録されている名前に変換した上で登録します。
 
 生物名以外に以下のサンプル属性が必須です。
 
@@ -122,6 +125,8 @@ Analysis は ENA/NCBI と共有されません。また、[DRASearch](https://dd
 MAG サンプル用にバーチャルなサンプルを登録します。パッケージは ["Other
 samples"](/biosample/submission.html#General_Sample) を選択し、生物名には
 uncultured が冠されていない、MAG 配列が由来する生物名を記載します (例 "Agrobacterium tumefaciens")。(1) の DRA Run 登録に使用する "xyz metagenome" メタゲノムサンプルとは別にバーチャルな MAG 用サンプルが必要になります。
+
+解析ツール [GTDB](https://gtdb.ecogenomic.org/) が割り当てた生物名で [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi) に登録されていない名前は、そのまま使うことができません。対応する [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi) に登録されている名前に変換した上で登録します。
 
 生物名以外に以下のサンプル属性が必須です。
 

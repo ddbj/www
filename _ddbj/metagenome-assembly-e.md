@@ -102,6 +102,8 @@ in the taxonomy database from which the MAG was derived. Please note
 that a virtual BioSample derived from the MIMS metagenomic sample used
 in (1) is required for a binned submission.
 
+Among organism names assigned by [GTDB](https://gtdb.ecogenomic.org/), please convert ones not registered in [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi) to corresponding NCBI Taxonomy's names.
+
 Following sample attributes other than the organism are necessary.
 
 Fixed terms
@@ -155,6 +157,8 @@ an organism name without 'uncultured' (e.g., Agrobacterium tumefaciens)
 in the taxonomy database from which the MAG was derived. Please note
 that a virtual BioSample derived from the MIMS metagenomic sample used
 in (1) is required for a MAG submission.
+
+Among organism names assigned by [GTDB](https://gtdb.ecogenomic.org/), please convert ones not registered in [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi) to corresponding NCBI Taxonomy's names.
 
 Following sample attributes other than the organism are necessary.
 [Example BioSample](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=272411182)
