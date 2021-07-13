@@ -676,8 +676,8 @@ DBLINK は、 BioProject ID、BioSample ID、Sequence Read Archive (DRA/ERA/SRA)
 ([CDS](/ddbj/cds.html))、あるいは、転写産物(rRNA, tRNA など)を示す
 [Biological feature](#biological_feature) に
 [locus\_tag](/ddbj/locus_tag.html) を付加することを推奨しています。  
-locus\_tag prefix は事前に [BioProject Database](/bioproject/index.html) で
-BioProject ID を申請する際に取得して下さい。
+locus\_tag prefix は事前に [BioSample Database](/biosample/index.html) で
+BioSample ID を申請する際に取得して下さい。
 
 ### source: ff\_definition  {#ff_definition}
 
