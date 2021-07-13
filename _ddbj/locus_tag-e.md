@@ -133,7 +133,7 @@ database suggest an unregistered prefix for the project.
 For genome sequence submissions, DDBJ provides [Mass Submission System
 (MSS)](/ddbj/mss-e.html). See also [Data Submission from Genome
 Project](/ddbj/genome-e.html). You can specify /locus_tag prefix for
-your genome data through [BioProject](/bioproject/index-e.html)
+your genome data through [BioSample](/biosample/index-e.html)
 submission.
 
 You can find the same guideline at
