@@ -73,6 +73,6 @@ DDBJ においては、ゲノム配列データ登録用に [Mass Submission Sys
 
 登録者は GenBank/NCBI, ENA/EBI, DDBJ の何れか１つにおいて locus_tag prefix と BioProject/BioSample の登録手続きを行うことができます。この手続きは、ゲノム配列データを登録するデータバンクにおいて行ってください。locus_tag prefix 割り当てを申請した際には、他のプロジェクトとの重複がないか、などの確認を行います。問題なければ、登録者に locus_tag prefix が割り当てられたことをお知らせします。重複した際は、その旨を登録者にお知らせしますので、別な重複しない prefix を再検討の上、ご連絡ください。
 
-DDBJ においては、ゲノム配列データ登録用に [Mass Submission System](/ddbj/mss.html) をご用意しております。また、[Genome Project のデータ登録](/ddbj/genome.html)もご参照ください。[BioProject](/bioproject/index.html) の登録の際に、適宜、指定していただければ、/locus_tag prefix 割り当てを検討いたします。
+DDBJ においては、ゲノム配列データ登録用に [Mass Submission System](/ddbj/mss.html) をご用意しております。また、[Genome Project のデータ登録](/ddbj/genome.html)もご参照ください。[BioSample](/biosample/index.html) の登録の際に、適宜、指定していただければ、/locus_tag prefix 割り当てを検討いたします。
 
 [NCBI](https://www.ncbi.nlm.nih.gov/genomes/locustag/Proposal.pdf) にも同様のガイドラインがありますので、ご参照ください。
