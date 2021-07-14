@@ -234,7 +234,7 @@ Scientific data provided by submitter to Center's database will be disclosed to 
 Center discloses data to the public in accordance with the following principles. In cases 2 or 3, it is deemed that submitter's approval is obtained in advance and therefore data will be released without making any further confirmation to submitter.
 
   1.  When the submitter requests us to release the data.
-  1.  When the accession number corresponding to data is published and is confirmed. 'Publish' means to disclose the accession number to an unspecified number of people by announcement through various media such as academic papers (including 'in press' articles made public by on-line preview and preprint server), academic meetings, Internet or press reports. It also includes accession numbers cited in published data, such as accession numbers cited by DDBJ/DRA/GEA records. It will not include cases when a third party (excluding submitter) publishes another person's accession number through negligence.
+  1.  When the accession number corresponding to data is published and is confirmed. 'Publish' means to disclose the accession number to an unspecified number of people by announcement through various media such as academic papers (including 'in press' articles made public by on-line preview and preprint server), academic meetings, Internet or press reports. It also includes accession numbers cited in published data, such as accession numbers cited by DDBJ/DRA/GEA/BioSample records. It will not include cases when a third party (excluding submitter) publishes another person's accession number through negligence.
   1.  When the specified hold-date set by submitter arrives.
 
 ### Fair Use of Submission System {#fair-use-policy}
