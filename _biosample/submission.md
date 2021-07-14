@@ -423,7 +423,7 @@ Validation ルールとメッセージについては [Validation rules ペー�
 公開予定日は設定することができません。
 </div>
 
-登録した Sample データは一定期間非公開にすることができます。 DDBJ レコードが公開されると、引用されている BioSample データは自動的に公開されます。この BioSample アクセッション番号を引用している非公開の DDBJ レコードが公開されることはありませんが、引用されている BioProject は連動公開されます。
+登録した Sample データは一定期間非公開にすることができます。 DDBJ/DRA/GEA レコードが公開されると、引用されている BioSample データは自動的に公開されます。この BioSample アクセッション番号を引用している非公開の DDBJ/DRA/GEA レコードが公開されることはありません。derived_from 属性で引用されている BioSample は連動公開されます。
 
 FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp-bs-seq-release.html)
 

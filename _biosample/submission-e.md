@@ -406,7 +406,7 @@ You can select the following options:
 Hold date cannot be set for BioSample.
 </div>
 
-The submitted sample data can be kept private. Sample data are automatically released when the linked DDBJ record(s) is published. The release of the BioSample record does not trigger the release of private DDBJ sequence record(s) referencing this BioSample accession.However, the release of the BioSample record does trigger the release of referencing BioProject.
+The submitted sample data can be kept private. Sample data are automatically released when the linked DDBJ/DRA/GEA record(s) is published. The release of the BioSample record does not trigger the release of private DDBJ/DRA/GEA record(s) referencing this BioSample accession. The release of the BioSample record does trigger the release of referencing BioSample in derived_from attributes.
 
 FAQ: [How are linked BioProject/BioSample/sequence data released?](/faq/en/bp-bs-seq-release.html)
 
