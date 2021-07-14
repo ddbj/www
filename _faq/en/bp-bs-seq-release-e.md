@@ -16,11 +16,10 @@ Linked [BioProject](/bioproject/index-e.html),
 [BioSample](/biosample/index-e.html), [DDBJ](/ddbj/submission.html) and
 [DRA](/dra/index-e.html) data are released as follows.
 
-  - Release of the BioProject records DO NOT trigger release of the
+  - Release of the BioProject and BioSample records DO NOT trigger release of the
     other linked data.
-  - Release of the BioSample records DO NOT trigger release of the other
-    linked data, however, DO trigger release of the referencing
-    BioProject.
+  - Release of the BioSample records trigger release of the referencing
+    BioSample in derived_from attributes.
   - Release of the DDBJ and DRA nucleotide sequence data DO trigger
     release of the linked BioProject and BioSample records.
   - Release of the DRA data DO NOT trigger release of the DDBJ records.
