@@ -123,7 +123,7 @@ Sample collection
 - lat\_lon
 
 Derived BioSample
-- derived\_from: This biosample is a metagenomic assembly obtained from the xyz metagenome BioSample: SAMDxxxxxxxx.
+- derived\_from: This biosample is a metagenomic assembly obtained from the xyz metagenome BioSample: SAMD00000001,SAMD00000002,SAMD00000010-SAMD00000015.
 
 #### DRA  {#binned-metagenome-dra}
 
@@ -180,7 +180,7 @@ Sample collection
 - lat\_lon
 
 Derived BioSample
-- derived\_from: This biosample is a metagenomic assembly obtained from the xyz metagenome BioSample: SAMDxxxxxxxx.
+- derived\_from: This biosample is a metagenomic assembly obtained from the xyz metagenome BioSample: SAMD00000001,SAMD00000002,SAMD00000010-SAMD00000015.
 
 #### DRA  {#mag-dra}
 

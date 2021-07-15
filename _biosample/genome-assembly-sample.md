@@ -50,6 +50,6 @@ MAG 用にバーチャルなサンプルを登録します。パッケージは 
 - lat\_lon
 
 派生元 BioSample
-- derived\_from: This biosample is a metagenomic assembly obtained from the xyz metagenome BioSample: SAMDxxxxxxxx.
+- derived\_from: This biosample is a metagenomic assembly obtained from the xyz metagenome BioSample: SAMD00000001,SAMD00000002,SAMD00000010-SAMD00000015.
 
 MAG も一つの BioSample にリンクする必要があるため、複数サンプルに由来するリードをアセンブルした MAG の場合、派生サンプルを同様に登録します。例 メタゲノム [JAGEZF000000000.1](https://www.ncbi.nlm.nih.gov/nuccore/JAGEZF000000000.1) と派生サンプル [SAMN18318557](https://www.ncbi.nlm.nih.gov/biosample/SAMN18318557)

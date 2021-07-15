@@ -47,6 +47,6 @@ Attributes regarding sample collection.
 - lat\_lon
 
 Derivation source BioSample.
-- derived\_from: This biosample is a metagenomic assembly obtained from the xyz metagenome BioSample: SAMDxxxxxxxx.
+- derived\_from: This biosample is a metagenomic assembly obtained from the xyz metagenome BioSample: SAMD00000001,SAMD00000002,SAMD00000010-SAMD00000015.
 
 A MAG also needs to be linked to a BioSample, create a derived BioSample for MAG. For example, a MAG [JAGEZF000000000.1](https://www.ncbi.nlm.nih.gov/nuccore/JAGEZF000000000.1) and a derived BioSample [SAMN18318557](https://www.ncbi.nlm.nih.gov/biosample/SAMN18318557).
