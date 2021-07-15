@@ -863,8 +863,9 @@ The current DRA system (9th July 2021) is not able to load the HDF5 files. Pleas
 
 We support the submission of the following types of PacBio bam files. Include 1 bam file per Run. For an unaligned bam file, reference and mapping table are not necessary.
 
-  - subread BAM files (*.subreads.bam)
-  - CCS read BAM files (*.ccs.bam)
+- *.subreads.bam
+- *.ccs.bam
+- *.reads.bam
 
 #### fastq  {#pacbio_fastq}
 

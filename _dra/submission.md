@@ -701,8 +701,9 @@ Run に HDF5 以外のデータを含めないでください。
 以下の unaligned bam ファイルの登録をサポートしています。1 Run に 1 bamファイルを指定してください。
 unaligned bamの場合、リファレンス配列や対応表の指定は必要ありません。
 
-  - subread BAM files (*.subreads.bam)
-  - CCS read BAM files (*.ccs.bam)
+- *.subreads.bam
+- *.ccs.bam
+- *.reads.bam
 
 #### fastq  {#pacbio_fastq}
 
