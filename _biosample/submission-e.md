@@ -60,10 +60,9 @@ BioSample attributes are captured as structured name: value pairs, for example, 
 
 The database supports and encourages use of dictionaries of attribute names.
 
-The first targeted dictionaries implemented in the DDBJ BioSample database are the [MIxS](http://wiki.gensc.org/index.php?title=MIxS) minimum information checklists for standardizing descriptions of genomes, metagenomes and targeted locus sequences as recently developed by the [Genomics Standards Consortium](http://wiki.gensc.org/index.php?title=Main_Page).
+The first targeted dictionaries implemented in the DDBJ BioSample database are the [MIxS](https://gensc.org/mixs/) minimum information checklists for standardizing descriptions of genomes, metagenomes and targeted locus sequences as recently developed by the [Genomics Standards Consortium](https://gensc.org/).
 
 For the MIxS check lists, please see Nature Biotechnology 29, 415–420 (2011) \| doi: 10.1038/nbt.1823 (PMID:[21552244](https://www.ncbi.nlm.nih.gov/pubmed/21552244) ).
-
 
 {% include image.html url="books/mixs.jpg" caption="MIxS check list" class="w450" %}
 

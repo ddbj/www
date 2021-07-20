@@ -61,7 +61,7 @@ BioSample レコードを構成する主要部分は「サンプル属性」で�
 
 BioSample は属性名にコントロールされた語句 ("辞書") を使うことをサポートしています。
 
-DDBJ BioSample に実装された最初の辞書は [Genomics Standards Consortium](http://wiki.gensc.org/index.php?title=Main_Page) によって作成されたゲノム、メタゲノム、ターゲットローカスの記載を標準化するために最低限必要な情報を定めた [MIxS](http://wiki.gensc.org/index.php?title=MIxS) チェックリストです。
+DDBJ BioSample に実装された最初の辞書は [Genomics Standards Consortium](https://gensc.org/) によって作成されたゲノム、メタゲノム、ターゲットローカスの記載を標準化するために最低限必要な情報を定めた [MIxS](https://gensc.org/mixs/) チェックリストです。
 
 MIxS チェックリストについては Nature Biotechnology 29, 415–420 (2011) \| doi: 10.1038/nbt.1823(PMID:[21552244](https://www.ncbi.nlm.nih.gov/pubmed/21552244) ) を参照してください。
 
