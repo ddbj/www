@@ -3,7 +3,7 @@
   > .title
     margin-bottom: .3rem
     font-size: $FONT_SIZE_H1
-    line-height: 1.2
+    line-height: 1
     font-weight: lighter
     &.-normal
       font-weight: normal
@@ -18,3 +18,11 @@
     top: 0
     right: 0
 
+@media screen and (max-width: $WIDTH_SP)
+  .page-title
+    padding: 1rem
+    > .title
+      font-size: $FONT_SIZE_SP_H1
+    &.-small
+      > .title
+        font-size: $FONT_SIZE_SP_H1_SMALL

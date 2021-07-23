@@ -1,37 +1,39 @@
 .tab-menu-view
   font-size: 1.6rem
-  line-height: 2.8rem
+  line-height: 1
   > .tabmenucontainer
     border-bottom: solid .1rem $COLOR_BLACK
+    display: flex
+    justify-content: flex-start
     > li
-      display: inline-block
+      margin-bottom: -.1rem
+      background-color: $COLOR_BEIGE
+      position: relative
+      border-bottom: solid .1rem $COLOR_BLACK
+      border-right: solid .1rem white
       > a
         margin-bottom: .1rem
         top: .1rem
         text-decoration: none
         display: block
-        padding: 0 1rem
-        background-color: $COLOR_BEIGE
+        padding: .6rem 1rem
         position: relative
         cursor: pointer
         transition: background $DURATION_GUI, color $DURATION_GUI
       &:hover
-        > a
-          background-color: $COLOR_HOVER
+        background-color: $COLOR_HOVER
         > ul
           opacity: 1
           pointer-events: auto
           transform: translateY(0)
       &.-current
+        background-color: white
+        border-top: solid .1rem $COLOR_BLACK
+        border-bottom: solid .1rem white
+        border-left: solid .1rem $COLOR_BLACK
+        border-right: solid .1rem $COLOR_BLACK
         > a
-          margin-bottom: -.1rem
           color: $COLOR_BLACK
-          line-height: 3rem
-          background-color: white
-          border-top: solid .1rem $COLOR_BLACK
-          border-bottom: solid .1rem white
-          border-left: solid .1rem $COLOR_BLACK
-          border-right: solid .1rem $COLOR_BLACK
       &.-haschild
         > a
           &::after
@@ -75,3 +77,10 @@
     &.-current
       display: block
 
+@media screen and (max-width: $WIDTH_SP)
+  .tab-menu-view
+    font-size: 1.2rem
+    > .tabmenucontainer
+      display: flex
+      > li
+        display: block
