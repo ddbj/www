@@ -28,3 +28,15 @@
         min-width: 1.6rem
         max-width: 1.6rem
         pointer-events: none
+
+@media screen and (max-width: $WIDTH_SP)
+  #NavigationAndMainView
+    > .inner
+      +inner-sp
+      display: block
+      > .subview, > .mainview
+        width: 100%
+      > .mainview
+        > *
+          max-width: auto
+          padding-right: 0

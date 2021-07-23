@@ -276,6 +276,7 @@
   }
   #DDBJ_CommonHeader > .DDBJ_inner {
     width: auto;
+    padding: 1rem 1rem;
     padding: 0;
   }
   #DDBJ_CommonHeader > .DDBJ_inner a {
@@ -345,6 +346,7 @@
 
   #DDBJCommonBottomMenu > .DDBJ_inner, #DDBJCommonFooter > .DDBJ_inner {
     width: auto;
+    padding: 1rem 1rem;
   }
 
   #DDBJCommonBottomMenu > .DDBJ_inner > .DDBJ_sitemap {

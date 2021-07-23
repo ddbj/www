@@ -46,13 +46,12 @@
   #TopPageView
     > .inner
       +inner-sp
-      padding: 1rem 0
       flex-direction: column
       > .maincolumn
         order: 2
         width: auto
         > header
-          padding: 1rem
+          padding: 1rem 0
           > .logotype
             margin: 2rem auto 1.6rem
             width: 36vw
@@ -66,7 +65,7 @@
             left: 0
             text-align: center
         > .tab-menu-view
-          margin-top: 0
+          margin: 0 #{-$PADDING_SP_SIDE} 0
         > *
           margin: 0 auto
           position: relative

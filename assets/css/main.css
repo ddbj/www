@@ -1060,7 +1060,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 
 @media screen and (max-width: 480px) {
   .page-title {
-    padding: 1rem;
+    padding: 1rem 0;
   }
   .page-title > .title {
     font-size: 2.4rem;
@@ -1663,6 +1663,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 @media screen and (max-width: 480px) {
   #Body > .inner {
     width: auto;
+    padding: 1rem 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -1685,6 +1686,15 @@ input:focus, textarea:focus, select:focus, button:focus {
   margin-top: 0;
 }
 
+@media screen and (max-width: 480px) {
+  #MainContentView > .header, #MainContentView > .md-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #MainContentView > .header {
+    padding-top: 0;
+  }
+}
 #NavigationAndMainView {
   border-bottom: 0.3rem solid #6D5C3F;
   background-color: white;
@@ -1724,6 +1734,20 @@ input:focus, textarea:focus, select:focus, button:focus {
   pointer-events: none;
 }
 
+@media screen and (max-width: 480px) {
+  #NavigationAndMainView > .inner {
+    width: auto;
+    padding: 1rem 1rem;
+    display: block;
+  }
+  #NavigationAndMainView > .inner > .subview, #NavigationAndMainView > .inner > .mainview {
+    width: 100%;
+  }
+  #NavigationAndMainView > .inner > .mainview > * {
+    max-width: auto;
+    padding-right: 0;
+  }
+}
 #PageHeader {
   background-color: white;
 }
@@ -1742,10 +1766,10 @@ input:focus, textarea:focus, select:focus, button:focus {
 @media screen and (max-width: 480px) {
   #PageHeader > .inner {
     width: auto;
-    padding: 1rem 0;
+    padding: 1rem 1rem;
   }
   #PageHeader > .inner > .tab-menu-view {
-    margin-top: 0;
+    margin: 0 -1rem 0;
   }
 }
 .multi-column-view {
@@ -1874,6 +1898,11 @@ input:focus, textarea:focus, select:focus, button:focus {
   font-family: "Roboto Condensed", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
 }
 
+@media screen and (max-width: 480px) {
+  #TableOfContents {
+    display: none;
+  }
+}
 #TopPageView {
   background-color: white;
 }
@@ -1939,7 +1968,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 @media screen and (max-width: 480px) {
   #TopPageView > .inner {
     width: auto;
-    padding: 1rem 0;
+    padding: 1rem 1rem;
     flex-direction: column;
   }
   #TopPageView > .inner > .maincolumn {
@@ -1947,7 +1976,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     width: auto;
   }
   #TopPageView > .inner > .maincolumn > header {
-    padding: 1rem;
+    padding: 1rem 0;
   }
   #TopPageView > .inner > .maincolumn > header > .logotype {
     margin: 2rem auto 1.6rem;
@@ -1965,7 +1994,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     text-align: center;
   }
   #TopPageView > .inner > .maincolumn > .tab-menu-view {
-    margin-top: 0;
+    margin: 0 -1rem 0;
   }
   #TopPageView > .inner > .maincolumn > * {
     margin: 0 auto;
