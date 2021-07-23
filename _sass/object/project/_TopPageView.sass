@@ -19,10 +19,10 @@
           height: 6.5rem
           margin-right: 3rem
         > .title
+          margin-bottom: .3rem
           font-size: $FONT_SIZE_H1
-          font-weight: normal
           line-height: 1
-          margin-bottom: .4rem
+          font-weight: normal
         > .breadcrumb-view
           margin-bottom: .8rem
         > .description
@@ -46,7 +46,7 @@
   #TopPageView
     > .inner
       +inner-sp
-      padding: 2rem 0
+      padding: 1rem 0
       flex-direction: column
       > .maincolumn
         order: 2
@@ -59,10 +59,14 @@
             height: 13vw
             top: 0
             left: 0
+          > .title
+            font-size: $FONT_SIZE_SP_H1
           > .description
             top: 0
             left: 0
             text-align: center
+        > .tab-menu-view
+          margin-top: 0
         > *
           margin: 0 auto
           position: relative
