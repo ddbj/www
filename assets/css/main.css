@@ -193,6 +193,11 @@ input:focus, textarea:focus, select:focus, button:focus {
   box-shadow: 0 0.4em 0 #fcac3d, 0 0.8em 0 #fcac3d;
 }
 
+@media screen and (max-width: 480px) {
+  .appearance-switch {
+    display: none;
+  }
+}
 .arrowed-link {
   font-weight: bold;
   text-decoration: none;
@@ -262,6 +267,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 .facet-search > .title {
   font-size: 1.4rem;
   margin-bottom: 1.2rem;
+  pointer-events: none;
 }
 .facet-search .tags {
   margin-left: -0.9rem;
@@ -296,6 +302,39 @@ input:focus, textarea:focus, select:focus, button:focus {
   line-height: 2.2rem;
 }
 
+@media screen and (max-width: 480px) {
+  .facet-search {
+    margin-bottom: -4rem;
+    padding: 0;
+  }
+  .facet-search > .title {
+    position: relative;
+    pointer-events: auto;
+  }
+  .facet-search > .title::after {
+    content: "";
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-top: solid 0.2rem #1C1B19;
+    border-left: solid 0.2rem #1C1B19;
+    margin-left: 0.6rem;
+    transform: translateY(-0.2rem) rotate(225deg);
+  }
+  .facet-search .tags {
+    display: none;
+    margin-left: 0;
+  }
+  .facet-search.-shown {
+    margin-bottom: -3rem;
+  }
+  .facet-search.-shown > .title::after {
+    transform: translateY(0rem) rotate(45deg);
+  }
+  .facet-search.-shown .tags {
+    display: block;
+  }
+}
 .google-visualization-table-table {
   margin-bottom: 1rem;
 }
@@ -1068,6 +1107,10 @@ input:focus, textarea:focus, select:focus, button:focus {
   .page-title.-small > .title {
     font-size: 1.8rem;
   }
+  .page-title > .search-box {
+    position: relative;
+    margin-bottom: 0.8rem;
+  }
 }
 .panel-view-container {
   display: flex;
@@ -1254,6 +1297,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     border-bottom: solid 1px #d2cac4;
     border-left: solid 1px #d2cac4;
     margin-right: -0.4rem;
+    width: calc(100% - 3rem);
   }
 }
 .staff-view > .wrapper > .list {
@@ -1743,6 +1787,15 @@ input:focus, textarea:focus, select:focus, button:focus {
   #NavigationAndMainView > .inner > .subview, #NavigationAndMainView > .inner > .mainview {
     width: 100%;
   }
+  #NavigationAndMainView > .inner > .subview {
+    min-width: inherit;
+    max-width: inherit;
+  }
+  #NavigationAndMainView > .inner > .subview > * {
+    width: 100%;
+    height: auto;
+    position: static;
+  }
   #NavigationAndMainView > .inner > .mainview > * {
     max-width: auto;
     padding-right: 0;
@@ -1846,6 +1899,18 @@ input:focus, textarea:focus, select:focus, button:focus {
   bottom: 1rem;
 }
 
+@media screen and (max-width: 480px) {
+  #ServicesView > .appearance-switch {
+    display: none;
+  }
+  #ServicesView > .tagging-list-view {
+    margin-right: 0 !important;
+  }
+  #ServicesView > .tagging-list-view > .service {
+    margin: 0 0 0.4rem !important;
+    width: 100% !important;
+  }
+}
 #SimpleView {
   border-bottom: 0.3rem solid #6D5C3F;
   background-color: white;

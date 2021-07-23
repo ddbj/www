@@ -57,3 +57,13 @@ $MARGIN_PANEL: 2rem
         width: calc( 100% / 3 - #{$MARGIN_PANEL} )
         > .links
           bottom: 1rem
+
+@media screen and (max-width: $WIDTH_SP)
+  #ServicesView
+    > .appearance-switch
+      display: none
+    > .tagging-list-view
+      margin-right: 0 !important
+      > .service
+        margin: 0 0 .4rem !important
+        width: 100% !important

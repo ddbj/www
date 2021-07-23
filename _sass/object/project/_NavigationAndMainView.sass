@@ -36,6 +36,13 @@
       display: block
       > .subview, > .mainview
         width: 100%
+      > .subview
+        min-width: inherit
+        max-width: inherit
+        > *
+          width: 100%
+          height: auto
+          position: static
       > .mainview
         > *
           max-width: auto

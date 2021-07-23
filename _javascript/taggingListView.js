@@ -10,6 +10,9 @@ export default function taggingListView() {
     let taggingItems;
     const selectedTags = {}, tagViews = {};
     const facetSearch = document.querySelector('.facet-search');
+    facetSearch.querySelector(':scope > .title').addEventListener('click', () => {
+      facetSearch.classList.toggle('-shown');
+    });
 
     Object.defineProperties(selectedTags, {
       concatenated: {

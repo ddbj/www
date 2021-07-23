@@ -3,6 +3,7 @@
   > .title
     font-size: 1.4rem
     margin-bottom: 1.2rem
+    pointer-events: none
   .tags
     margin-left: -.9rem
     > .tag-view
@@ -29,3 +30,30 @@
       > li.-current
         > a
           line-height: 2.2rem
+
+@media screen and (max-width: $WIDTH_SP)
+  .facet-search
+    margin-bottom: -4rem
+    padding: 0
+    > .title
+      position: relative
+      pointer-events: auto
+      &::after
+        content: ""
+        display: inline-block
+        width: .6rem
+        height: .6rem
+        border-top: solid .2rem $COLOR_BLACK
+        border-left: solid .2rem $COLOR_BLACK
+        margin-left: .6rem
+        transform: translateY(-.2rem) rotate(225deg)
+    .tags
+      display: none
+      margin-left: 0
+    &.-shown
+      margin-bottom: -3rem
+      > .title
+        &::after
+          transform: translateY(0rem) rotate(45deg)
+      .tags
+        display: block
