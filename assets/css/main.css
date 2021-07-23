@@ -264,6 +264,9 @@ input:focus, textarea:focus, select:focus, button:focus {
 .facet-search {
   padding: 0 1.6rem 0 4rem;
 }
+.facet-search > .spdisplayswitchbutton {
+  display: none;
+}
 .facet-search > .title {
   font-size: 1.4rem;
   margin-bottom: 1.2rem;
@@ -293,25 +296,21 @@ input:focus, textarea:focus, select:focus, button:focus {
 .facet-search > .tab-menu-view {
   font-size: 1.2rem;
   font-weight: bold;
-  line-height: 2rem;
 }
 .facet-search > .tab-menu-view > .tabmenucontainer {
   margin-bottom: 1.4rem;
 }
-.facet-search > .tab-menu-view > .tabmenucontainer > li.-current > a {
-  line-height: 2.2rem;
-}
-
 @media screen and (max-width: 480px) {
   .facet-search {
-    margin-bottom: -4rem;
+    margin-bottom: 1rem;
     padding: 0;
   }
-  .facet-search > .title {
-    position: relative;
-    pointer-events: auto;
+  .facet-search > .spdisplayswitchbutton {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
   }
-  .facet-search > .title::after {
+  .facet-search > .spdisplayswitchbutton::after {
     content: "";
     display: inline-block;
     width: 0.6rem;
@@ -321,18 +320,26 @@ input:focus, textarea:focus, select:focus, button:focus {
     margin-left: 0.6rem;
     transform: translateY(-0.2rem) rotate(225deg);
   }
+  .facet-search > .title {
+    display: none;
+  }
   .facet-search .tags {
     display: none;
+    margin-top: 0.8rem;
     margin-left: 0;
   }
-  .facet-search.-shown {
-    margin-bottom: -3rem;
+  .facet-search > .tab-menu-view {
+    display: none;
   }
-  .facet-search.-shown > .title::after {
-    transform: translateY(0rem) rotate(45deg);
+  .facet-search.-shown > .spdisplayswitchbutton::after {
+    transform: translateY(0.1rem) rotate(45deg);
   }
-  .facet-search.-shown .tags {
+  .facet-search.-shown > .tags {
     display: block;
+  }
+  .facet-search.-shown > .tab-menu-view {
+    margin-top: 1rem;
+    display: inherit;
   }
 }
 .google-visualization-table-table {
@@ -1765,6 +1772,9 @@ input:focus, textarea:focus, select:focus, button:focus {
   overflow-y: auto;
   top: 0;
 }
+#NavigationAndMainView > .inner > .subview > .facet-search {
+  padding-bottom: 0;
+}
 #NavigationAndMainView > .inner > .mainview {
   width: calc( (100vw - 128rem) + (128rem - 23rem) );
 }
@@ -1900,6 +1910,9 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 
 @media screen and (max-width: 480px) {
+  #ServicesView {
+    padding-top: 0;
+  }
   #ServicesView > .appearance-switch {
     display: none;
   }

@@ -10,7 +10,12 @@ export default function taggingListView() {
     let taggingItems;
     const selectedTags = {}, tagViews = {};
     const facetSearch = document.querySelector('.facet-search');
-    facetSearch.querySelector(':scope > .title').addEventListener('click', () => {
+    const switchButton = document.createElement('div');
+    switchButton.classList.add('spdisplayswitchbutton');
+    switchButton.textContent = 'Filters';
+    facetSearch.prepend(switchButton);
+    switchButton.addEventListener('click', (e) => {
+      console.log(e)
       facetSearch.classList.toggle('-shown');
     });
 

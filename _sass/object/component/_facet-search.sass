@@ -1,5 +1,7 @@
 .facet-search
   padding: 0 1.6rem 0 4rem
+  > .spdisplayswitchbutton
+    display: none
   > .title
     font-size: 1.4rem
     margin-bottom: 1.2rem
@@ -24,20 +26,21 @@
   > .tab-menu-view
     font-size: 1.2rem
     font-weight: bold
-    line-height: 2rem
+    // line-height: 2rem
     > .tabmenucontainer
       margin-bottom: 1.4rem
       > li.-current
         > a
-          line-height: 2.2rem
+          // line-height: 2.2rem
 
 @media screen and (max-width: $WIDTH_SP)
   .facet-search
-    margin-bottom: -4rem
+    margin-bottom: 1rem
     padding: 0
-    > .title
-      position: relative
-      pointer-events: auto
+    > .spdisplayswitchbutton
+      display: block
+      font-size: 1.2rem
+      font-weight: bold
       &::after
         content: ""
         display: inline-block
@@ -47,13 +50,20 @@
         border-left: solid .2rem $COLOR_BLACK
         margin-left: .6rem
         transform: translateY(-.2rem) rotate(225deg)
+    > .title
+      display: none
     .tags
       display: none
+      margin-top: .8rem
       margin-left: 0
+    > .tab-menu-view
+      display: none
     &.-shown
-      margin-bottom: -3rem
-      > .title
+      > .spdisplayswitchbutton
         &::after
-          transform: translateY(0rem) rotate(45deg)
-      .tags
+          transform: translateY(.1rem) rotate(45deg)
+      > .tags
         display: block
+      > .tab-menu-view
+        margin-top: 1rem
+        display: inherit
