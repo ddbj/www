@@ -20,3 +20,11 @@
         > li
           font-size: 1.2rem
           padding: .4rem 0
+
+@media screen and (max-width: $WIDTH_SP)
+  #SitemapView
+    > .inner
+      +inner-sp
+      > .group
+        > ul
+          columns: 1

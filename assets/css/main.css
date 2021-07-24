@@ -2017,6 +2017,15 @@ input:focus, textarea:focus, select:focus, button:focus {
   padding: 0.4rem 0;
 }
 
+@media screen and (max-width: 480px) {
+  #SitemapView > .inner {
+    width: auto;
+    padding: 1rem 1rem;
+  }
+  #SitemapView > .inner > .group > ul {
+    columns: 1;
+  }
+}
 #TableOfContents {
   font-family: "Roboto Condensed", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
 }
