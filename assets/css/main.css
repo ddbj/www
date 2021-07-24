@@ -1558,6 +1558,9 @@ input:focus, textarea:focus, select:focus, button:focus {
   margin-left: 0.5em;
 }
 
+.timeline-view {
+  background-color: white;
+}
 .timeline-view > .nav {
   padding: 1.5rem 0 1.5rem 5rem;
 }
@@ -1570,13 +1573,13 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 .timeline-view > .nav > li:before {
   content: "";
-  width: 10px;
-  height: 10px;
+  width: 1rem;
+  height: 1rem;
   display: inline-block;
   border-radius: 100%;
   background: #000;
   position: relative;
-  left: -10px;
+  left: -1rem;
 }
 .timeline-view > .timeline > li {
   display: flex;
@@ -1593,7 +1596,7 @@ input:focus, textarea:focus, select:focus, button:focus {
   list-style: disc;
   padding: 0;
 }
-.timeline-view > .timeline > li > .date {
+.timeline-view > .timeline > li > .year {
   font-size: 3.5rem;
   color: #6D5C3F;
   margin-top: -0.5rem;
@@ -1617,26 +1620,26 @@ input:focus, textarea:focus, select:focus, button:focus {
 .timeline-view > .timeline > li > .content > table td {
   border-bottom: none;
 }
-.timeline-view > .timeline > li > .content > .ddbj, .timeline-view > .timeline > li > .content .science {
+.timeline-view > .timeline > li > .content > .ddbj, .timeline-view > .timeline > li > .content > .science {
   position: relative;
 }
-.timeline-view > .timeline > li > .content > .ddbj:before, .timeline-view > .timeline > li > .content .science:before {
+.timeline-view > .timeline > li > .content > .ddbj:before, .timeline-view > .timeline > li > .content > .science:before {
   content: "";
-  width: 7px;
-  height: 7px;
+  width: 0.7rem;
+  height: 0.7rem;
   display: inline-block;
   border-radius: 50%;
   position: absolute;
-  top: 8px;
-  left: -20px;
+  top: 0.8rem;
+  left: -2rem;
 }
-.timeline-view > .timeline > li > .content > .jan:after, .timeline-view > .timeline > li > .content .dec:after, .timeline-view > .timeline > li > .content .feb:after, .timeline-view > .timeline > li > .content .mar:after, .timeline-view > .timeline > li > .content .nov:after, .timeline-view > .timeline > li > .content .jul:after, .timeline-view > .timeline > li > .content .apr:after, .timeline-view > .timeline > li > .content .may:after, .timeline-view > .timeline > li > .content .sep:after, .timeline-view > .timeline > li > .content .oct:after, .timeline-view > .timeline > li > .content .aug:after {
+.timeline-view > .timeline > li > .content > .jan:after, .timeline-view > .timeline > li > .content > .dec:after, .timeline-view > .timeline > li > .content > .feb:after, .timeline-view > .timeline > li > .content > .mar:after, .timeline-view > .timeline > li > .content > .nov:after, .timeline-view > .timeline > li > .content > .jul:after, .timeline-view > .timeline > li > .content > .apr:after, .timeline-view > .timeline > li > .content > .may:after, .timeline-view > .timeline > li > .content > .sep:after, .timeline-view > .timeline > li > .content > .oct:after, .timeline-view > .timeline > li > .content > .aug:after {
   content: "";
   color: #FF7300;
   font-weight: bold;
   position: absolute;
-  top: -1px;
-  left: -50px;
+  top: -0.1rem;
+  left: -5rem;
 }
 .timeline-view > .timeline > li > .content > .jan:after {
   content: "Jan.";
@@ -1681,6 +1684,26 @@ input:focus, textarea:focus, select:focus, button:focus {
   color: #009B00;
 }
 
+@media screen and (max-width: 480px) {
+  .timeline-view > .nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .timeline-view > .timeline {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .timeline-view > .timeline > li {
+    display: block;
+  }
+  .timeline-view > .timeline > li > .year {
+    font-size: 2.4rem;
+    margin: 0;
+  }
+  .timeline-view > .timeline > li > .content {
+    margin-left: 5.6rem;
+  }
+}
 .top-news-view {
   background-color: white;
   padding: 1.6rem 0 0;
