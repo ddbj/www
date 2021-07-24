@@ -1056,29 +1056,6 @@ input:focus, textarea:focus, select:focus, button:focus {
   outline: 1px solid #FF0000;
 }
 
-.multi-column-view {
-  border-top: 1px solid #1C1B19;
-}
-.multi-column-view .caption {
-  font-size: 16px;
-  display: inline-block;
-  color: #FF7300;
-  margin-bottom: 16px;
-}
-.multi-column-view .navigation {
-  columns: 3 auto;
-}
-.multi-column-view .navigation.-two {
-  column-colunt: 2;
-}
-.multi-column-view .navigation.-three {
-  column-colunt: 3;
-}
-.multi-column-view .navigation nav li {
-  font-size: 14px;
-  margin-bottom: 17px;
-}
-
 .page-title {
   position: relative;
 }
@@ -1248,6 +1225,38 @@ input:focus, textarea:focus, select:focus, button:focus {
   }
   .pickup-news-view > .container {
     top: 0;
+  }
+}
+.related-pages {
+  padding: 2.5rem 4rem 2.5rem 2.5rem;
+  border-top: 1px solid #1C1B19;
+}
+.related-pages .caption {
+  font-size: 16px;
+  display: inline-block;
+  color: #FF7300;
+  margin-bottom: 16px;
+}
+.related-pages .navigation {
+  columns: 3 auto;
+}
+.related-pages .navigation.-two {
+  column-colunt: 2;
+}
+.related-pages .navigation.-three {
+  column-colunt: 3;
+}
+.related-pages .navigation nav li {
+  font-size: 14px;
+  margin-bottom: 17px;
+}
+
+@media screen and (max-width: 480px) {
+  .related-pages {
+    padding-left: 0;
+  }
+  .related-pages .navigation {
+    column-count: 1;
   }
 }
 .search-box > * {
@@ -1807,7 +1816,8 @@ input:focus, textarea:focus, select:focus, button:focus {
     position: static;
   }
   #NavigationAndMainView > .inner > .mainview > * {
-    max-width: auto;
+    width: 100%;
+    max-width: inherit;
     padding-right: 0;
   }
 }
@@ -1835,10 +1845,6 @@ input:focus, textarea:focus, select:focus, button:focus {
     margin: 0 -1rem 0;
   }
 }
-.multi-column-view {
-  padding: 2.5rem 4rem 2.5rem 2.5rem;
-}
-
 #ServicesView {
   padding-top: 2.5rem;
   position: relative;
@@ -2085,10 +2091,6 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 ._bg-dbcls {
   background-color: #004098 !important;
-}
-
-._padding-bottom-5rem {
-  padding-bottom: 5rema;
 }
 
 ._width-100 {

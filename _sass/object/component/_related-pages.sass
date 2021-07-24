@@ -1,6 +1,5 @@
-%div.multi-column-view.-three
-
-.multi-column-view
+.related-pages
+  padding: 2.5rem 4rem 2.5rem 2.5rem
   border-top: 1px solid $COLOR_BLACK
   .caption
     font-size: 16px
@@ -17,3 +16,9 @@
       li
         font-size: 14px
         margin-bottom: 17px
+
+@media screen and (max-width: $WIDTH_SP)
+  .related-pages
+    padding-left: 0
+    .navigation
+      column-count: 1

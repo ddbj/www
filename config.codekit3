@@ -12093,6 +12093,14 @@
       "oAP" : "\/_includes\/navigation.html",
       "oF" : 0
     },
+    "\/_includes\/related-pages.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_includes\/related-pages.html",
+      "oF" : 0
+    },
     "\/_includes\/subdirectory-search-form.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -95944,20 +95952,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/_sass\/object\/component\/_multi-column-view.sass" : {
-      "aP" : 0,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 2,
-      "ma" : 1,
-      "oA" : 1,
-      "oAP" : "\/_sass\/object\/assets\/css\/_multi-column-view.css",
-      "oF" : 0,
-      "oS" : 1,
-      "pg" : 0,
-      "sct" : 1
-    },
     "\/_sass\/object\/component\/_page-title.sass" : {
       "aP" : 0,
       "bl" : 0,
@@ -95995,6 +95989,20 @@
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/_sass\/object\/assets\/css\/_pickup-news-view.css",
+      "oF" : 0,
+      "oS" : 1,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/_sass\/object\/component\/_related-pages.sass" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 2,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/_sass\/object\/assets\/css\/_related-pages.css",
       "oF" : 0,
       "oS" : 1,
       "pg" : 0,
@@ -96191,20 +96199,6 @@
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/_sass\/object\/assets\/css\/_PageHeader.css",
-      "oF" : 0,
-      "oS" : 1,
-      "pg" : 0,
-      "sct" : 1
-    },
-    "\/_sass\/object\/project\/_RelatedPages.sass" : {
-      "aP" : 0,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 2,
-      "ma" : 1,
-      "oA" : 1,
-      "oAP" : "\/_sass\/object\/assets\/css\/_RelatedPages.css",
       "oF" : 0,
       "oS" : 1,
       "pg" : 0,
@@ -97292,14 +97286,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/.gitignore",
-      "oF" : 0
-    },
-    "\/.jekyll-metadata" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/.jekyll-metadata",
       "oF" : 0
     },
     "\/.ruby-version" : {

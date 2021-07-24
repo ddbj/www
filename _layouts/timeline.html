@@ -14,20 +14,5 @@ layout: default
   <article class="timeline-view">
     {{ content }}
   </article>
-  {% if page.related_pages %}
-  <aside class="multi-column-view _padding-bottom-5rem">
-    <h2 class="caption">Related pages</h2>
-    <div class="navigation">
-      <nav>
-        <ul>
-          {% for related_page in page.related_pages %}
-          <li>
-            <a href="{{ related_page.url }}">{{ related_page.title }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </nav>
-    </div>
-  </aside>
-  {% endif %}
+  {% include related-pages.html related_pages=page.related_pages %}
 </main>
