@@ -1,14 +1,28 @@
 .staff-view
-	>.wrapper
-		>.list
-			list-style: none
-			display: flex
-			margin-bottom: 1.5rem
-			>.staff
-				display: flex
-				width: 30%
-				>.photo
-					margin-right: 1.5rem
-				>.explanation
-					>.name
-						font-weight: bold
+  > .wrapper
+    > .list
+      list-style: none
+      display: flex
+      margin-bottom: 1.5rem
+      > .staff
+        display: flex
+        width: 30%
+        > .photo
+          margin-right: 1.5rem
+        > .explanation
+          > .name
+            font-weight: bold
+
+@media screen and (max-width: $WIDTH_SP)
+  .staff-view
+    > #staff
+      margin-top: 0
+    > .wrapper
+      > .list
+        margin-bottom: 0
+        display: block
+        > .staff
+          margin-left: 0
+          width: 100%
+          > .photo
+            margin-right: .8rem

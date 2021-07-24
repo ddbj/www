@@ -1332,6 +1332,22 @@ input:focus, textarea:focus, select:focus, button:focus {
   font-weight: bold;
 }
 
+@media screen and (max-width: 480px) {
+  .staff-view > #staff {
+    margin-top: 0;
+  }
+  .staff-view > .wrapper > .list {
+    margin-bottom: 0;
+    display: block;
+  }
+  .staff-view > .wrapper > .list > .staff {
+    margin-left: 0;
+    width: 100%;
+  }
+  .staff-view > .wrapper > .list > .staff > .photo {
+    margin-right: 0.8rem;
+  }
+}
 .tab-menu-view {
   font-size: 1.6rem;
   line-height: 1;
