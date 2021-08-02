@@ -85,7 +85,9 @@ Login ID:
 
 ## DRA/GEA/JGA の登録権限を追加  {#enable-dra-submission-in-account}
 
-サイズの大きいデータファイル転送を伴う DRA/GEA/JGA サービスを利用するため、アカウントに center name と公開鍵（認証用公開鍵）を登録します。公開鍵はユーザの認証に用いられます。
+サイズの大きいデータファイル転送を伴う DRA/GEA/JGA サービスを利用するため、アカウントに center name と公開鍵（認証用公開鍵）を登録します。公開鍵はユーザの認証に用いられます。    
+
+JGA サービスを利用するため NBDC に提供・利用申請をする方は[アカウント情報の追加](/acount.html#nbdc)が必要です。
 
 ### 公開鍵/秘密鍵ペアの生成  {#generate-key-pair}
 
@@ -211,7 +213,35 @@ public key\] で鍵を登録します。
 {% include image.html url="books/drasub.jpg" caption="DRA/GEA に登録することができるようになります" class="w450" %}
 {:/}
 
-機能が未実装であるため D-way ウェブポータルでは JGA 登録をみることができません。認証用公開鍵をアカウントに登録後、[「JGA への登録手順」](/jga/submission-step.html)、及び、[「JGA データの利用手順」](/jga/download.html)に従ってサービスを利用してください。
+機能が未実装であるため D-way ウェブポータルでは JGA 登録をみることができません。認証用公開鍵をアカウントに登録後、[「JGA への登録手順」](/jga/submission-step.html)、及び、[「JGA データの利用手順」](/jga/download.html)に従ってサービスを利用してください。    
+
+### NBDC 申請のための情報追加  {#nbdc}
+
+アカウントに所属情報や日本語氏名を登録します。    
+[NBDC 申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)にログインし、右上のメニューから「ユーザ情報更新」を選択します。  
+
+{% include image.html url="books/profile1.jpg" caption="ユーザ情報更新" class="w400" %}
+
+アカウント情報を入力するため「Edit」をクリックします。
+
+{% include image.html url="books/profile2.jpg" caption="Edit でアカウント情報の編集を開始" class="w300" %}
+
+所属情報や日本語氏名を追加で入力します。
+
+* Laboratory, Faculty, Department
+* Country
+* Postal code/Zip code
+* State/Prefecture
+* City
+* Street
+* First name in Japanese
+* Last name in Japanese
+
+{% include image.html url="books/profile3.jpg" caption="アカウント情報を入力" class="w400" %}
+
+「Save」で登録します。
+
+{% include image.html url="books/profile4.jpg" caption="Save で保存" class="w300" %}
 
 ### アカウントの更新  {#update-account}
 
