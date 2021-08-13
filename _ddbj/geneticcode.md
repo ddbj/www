@@ -6,22 +6,22 @@ category: ddbj
 current_tab: flat_file
 lang: ja
 related_pages:
+  - title: 配列の記載に用いる略号
+    url: /ddbj/code.html
+  - title: Organism qualifier に記載する生物名
+    url: /ddbj/organism.html
+  - title: DDBJ 公開形式 Flat file
+    url: /ddbj/flat-file.html
+  - title: Feature key
+    url: /ddbj/features.html
+  - title: Qualifier key
+    url: /ddbj/qualifiers.html
   - title: Location の記述法
     url: /ddbj/location.html
   - title: タンパク質コード配列; CDS feature について
     url: /ddbj/cds.html
   - title: 登録の見本
     url: /ddbj/example.html
-  - title: 配列の記載に用いる略号
-    url: /ddbj/code.html
-  - title: Organism qualifier に記載する生物名
-    url: /ddbj/organism.html
-  - title: Feature key
-    url: /ddbj/features.html
-  - title: Qualifier key
-    url: /ddbj/qualifiers.html
-  - title: The Genetic Codes
-    url: /ddbj/codontable.html
 ---
 
 ## Definition of /transl_table qualifier  <a name="Definition_of_transl_table_qualifier"></a>
@@ -46,8 +46,8 @@ NCBI takes great care to ensure that the translation for each coding sequence (C
 The synopsis presented below is based primarily on the reviews by [Osawa _et al_.](https://www.ncbi.nlm.nih.gov/pubmed/1579111) (1992) and [Jukes and Osawa](https://www.ncbi.nlm.nih.gov/pubmed/8281749) (1993).  
 Listed in square brackets \[\] (under **Systematic Range**) are tentative assignments of a particular code based on sequence homology and/or phylogenetic relationships.
 
-The print-form ASN.1 version of this document, which includes all the genetic codes outlined below, is also available [here](ftp://ftp.ncbi.nih.gov/entrez/misc/data/gc.prt). Detailed information on codon usage can be found at the [Codon Usage
-Database](//www.kazusa.or.jp/codon).
+The print-form ASN.1 version of this document, which includes all the genetic codes outlined below, is also available [here](https://ftp.ncbi.nih.gov/entrez/misc/data/gc.prt). Detailed information on codon usage can be found at the [Codon Usage
+Database](https://www.kazusa.or.jp/codon ).
 
 GenBank format by historical convention displays mRNA sequences using the DNA alphabet. Thus, for the convenience of people reading GenBank records, the genetic code tables shown here use T instead of U. The initiator codon - whether it is AUG, CTG, TTG or something else, - is by default translated as methionine (Met, M). The possible intiator codons are marked as 'M' in the second ('Starts') row of the translation tables.
 
@@ -95,7 +95,27 @@ By default all transl_table in flatfiles are equal to id 1, and this is **not** 
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#1)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu      TCA S Ser      TAA * Ter      TGA * Ter  
+TTG L Leu i    TCG S Ser      TAG * Ter      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG L Leu i    CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile      ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile      ACC T Thr      AAC N Asn      AGC S Ser  
+ATA I Ile      ACA T Thr      AAA K Lys      AGA R Arg  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG R Arg  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val      GCG A Ala      GAG E Glu      GGG G Gly  
+``` 
 
 ### Initiation Codon:
 
@@ -115,7 +135,27 @@ In rare cases, translation in eukaryotes can be initiated from codons other than
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#2)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu      TCA S Ser      TAA * Ter      TGA W Trp  
+TTG L Leu      TCG S Ser      TAG * Ter      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG L Leu      CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile i    ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile i    ACC T Thr      AAC N Asn      AGC S Ser  
+ATA M Met i    ACA T Thr      AAA K Lys      AGA * Ter  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG * Ter  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val i    GCG A Ala      GAG E Glu      GGG G Gly  
+```
 
 ### Differences from the Standard Code:
 
@@ -155,7 +195,27 @@ Mitochondrial genes in some vertebrate (including humans) have incomplete stop c
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#3)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu      TCA S Ser      TAA * Ter      TGA W Trp  
+TTG L Leu      TCG S Ser      TAG * Ter      TGG W Trp  
+
+CTT T Thr      CCT P Pro      CAT H His      CGT R Arg  
+CTC T Thr      CCC P Pro      CAC H His      CGC R Arg  
+CTA T Thr      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG T Thr      CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile      ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile      ACC T Thr      AAC N Asn      AGC S Ser  
+ATA M Met i    ACA T Thr      AAA K Lys      AGA R Arg  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG R Arg  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val i    GCG A Ala      GAG E Glu      GGG G Gly  
+```
 
 ### Differences from the Standard Code:
 
@@ -193,7 +253,27 @@ The coding assignment of Thr to CUN is uncertain in _Kluyveromyces thermotoleran
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#4)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu i    TCA S Ser      TAA * Ter      TGA W Trp  
+TTG L Leu i    TCG S Ser      TAG * Ter      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG L Leu i    CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile i    ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile i    ACC T Thr      AAC N Asn      AGC S Ser  
+ATA I Ile i    ACA T Thr      AAA K Lys      AGA R Arg  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG R Arg  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val i    GCG A Ala      GAG E Glu      GGG G Gly  
+```
 
 ### Differences from the Standard Code:
 
@@ -233,7 +313,27 @@ This code is also used for the kinetoplast DNA (maxicircles, minicircles).   Kin
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#5)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu      TCA S Ser      TAA * Ter      TGA W Trp  
+TTG L Leu i    TCG S Ser      TAG * Ter      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG L Leu      CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile i    ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile i    ACC T Thr      AAC N Asn      AGC S Ser  
+ATA M Met i    ACA T Thr      AAA K Lys      AGA S Ser  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG S Ser  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val i    GCG A Ala      GAG E Glu      GGG G Gly  
+```
 
 ### Comment:
 
@@ -283,7 +383,27 @@ of the gene. Initiation appears to require the "reading" of of an AUAA quadruple
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#6)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu      TCA S Ser      TAA Q Gln      TGA * Ter  
+TTG L Leu      TCG S Ser      TAG Q Gln      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG L Leu      CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile      ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile      ACC T Thr      AAC N Asn      AGC S Ser  
+ATA I Ile      ACA T Thr      AAA K Lys      AGA R Arg  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG R Arg  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val      GCG A Ala      GAG E Glu      GGG G Gly  
+```
 
 ### Differences from the Standard Code:
 
@@ -312,7 +432,27 @@ The ciliate macronuclear code has not been determined completely. The codon UAA 
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#9)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu      TCA S Ser      TAA * Ter      TGA W Trp  
+TTG L Leu      TCG S Ser      TAG * Ter      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG L Leu      CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile      ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile      ACC T Thr      AAC N Asn      AGC S Ser  
+ATA I Ile      ACA T Thr      AAA N Asn      AGA S Ser  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG S Ser  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val i    GCG A Ala      GAG E Glu      GGG G Gly  
+```
 
 ### Differences from the Standard Code:
 
@@ -338,7 +478,27 @@ The ciliate macronuclear code has not been determined completely. The codon UAA 
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#10)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu      TCA S Ser      TAA * Ter      TGA C Cys  
+TTG L Leu      TCG S Ser      TAG * Ter      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG L Leu      CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile      ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile      ACC T Thr      AAC N Asn      AGC S Ser  
+ATA I Ile      ACA T Thr      AAA K Lys      AGA R Arg  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG R Arg  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val      GCG A Ala      GAG E Glu      GGG G Gly  
+```
 
 ### Differences from the Standard Code:
 
@@ -361,7 +521,27 @@ The ciliate macronuclear code has not been determined completely. The codon UAA 
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#11)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu      TCA S Ser      TAA * Ter      TGA * Ter  
+TTG L Leu i    TCG S Ser      TAG * Ter      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG L Leu i    CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile i    ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile i    ACC T Thr      AAC N Asn      AGC S Ser  
+ATA I Ile i    ACA T Thr      AAA K Lys      AGA R Arg  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG R Arg  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val i    GCG A Ala      GAG E Glu      GGG G Gly  
+```
 
 ### Systematic Range and Comments:
 
@@ -377,7 +557,27 @@ Table 11 is used for _Bacteria_, _Archaea_, prokaryotic viruses and chloroplast 
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#12)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu      TCA S Ser      TAA * Ter      TGA * Ter  
+TTG L Leu      TCG S Ser      TAG * Ter      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG S Ser i    CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile      ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile      ACC T Thr      AAC N Asn      AGC S Ser  
+ATA I Ile      ACA T Thr      AAA K Lys      AGA R Arg  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG R Arg  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val      GCG A Ala      GAG E Glu      GGG G Gly  
+```
 
 ### Differences from the Standard Code:
 
@@ -408,7 +608,27 @@ However, other yeast, including _Saccharomyces cerevisiae_, _Candida azyma_, _Ca
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#13)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu      TCA S Ser      TAA * Ter      TGA W Trp  
+TTG L Leu i    TCG S Ser      TAG * Ter      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG L Leu      CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile      ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile      ACC T Thr      AAC N Asn      AGC S Ser  
+ATA M Met i    ACA T Thr      AAA K Lys      AGA G Gly  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG G Gly  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val i    GCG A Ala      GAG E Glu      GGG G Gly  
+```
 
 ### Differences from the Standard Code:
 
@@ -438,7 +658,27 @@ ATA, GTG and TTG ([Yokobori _et al_. 1999](https://www.ncbi.nlm.nih.gov/pubmed/1
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#14)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu      TCA S Ser      TAA Y Tyr      TGA W Trp  
+TTG L Leu      TCG S Ser      TAG * Ter      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG L Leu      CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile      ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile      ACC T Thr      AAC N Asn      AGC S Ser  
+ATA I Ile      ACA T Thr      AAA N Asn      AGA S Ser  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG S Ser  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val      GCG A Ala      GAG E Glu      GGG G Gly  
+```
 
 ### Differences from the Standard Code:
 
@@ -469,7 +709,27 @@ Code 14 differs from code 9 only by translating UAA to Tyr rather than STOP. A r
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#16)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu      TCA S Ser      TAA * Ter      TGA * Ter  
+TTG L Leu      TCG S Ser      TAG L Leu      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG L Leu      CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile      ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile      ACC T Thr      AAC N Asn      AGC S Ser  
+ATA I Ile      ACA T Thr      AAA K Lys      AGA R Arg  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG R Arg  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val      GCG A Ala      GAG E Glu      GGG G Gly  
+```
 
 ### Differences from the Standard Code:
 
@@ -492,7 +752,27 @@ TAG       Leu  L        STOP
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#21)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu      TCA S Ser      TAA * Ter      TGA W Trp  
+TTG L Leu      TCG S Ser      TAG * Ter      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG L Leu      CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile      ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile      ACC T Thr      AAC N Asn      AGC S Ser  
+ATA M Met      ACA T Thr      AAA N Asn      AGA S Ser  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG S Ser  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val i    GCG A Ala      GAG E Glu      GGG G Gly  
+```
 
 ### Differences from the Standard Code:
 
@@ -519,7 +799,27 @@ AAA       Asn  N        Lys
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#22)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu      TCA * Ter      TAA * Ter      TGA * Ter  
+TTG L Leu      TCG S Ser      TAG L Leu      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG L Leu      CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile      ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile      ACC T Thr      AAC N Asn      AGC S Ser  
+ATA I Ile      ACA T Thr      AAA K Lys      AGA R Arg  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG R Arg  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val      GCG A Ala      GAG E Glu      GGG G Gly  
+```
 
 ### Differences from the Standard Code:
 
@@ -543,7 +843,27 @@ TAG       Leu  L        STOP
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#23)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA * Ter      TCA S Ser      TAA * Ter      TGA * Ter  
+TTG L Leu      TCG S Ser      TAG * Ter      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG L Leu      CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile i    ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile      ACC T Thr      AAC N Asn      AGC S Ser  
+ATA I Ile      ACA T Thr      AAA K Lys      AGA R Arg  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG R Arg  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val i    GCG A Ala      GAG E Glu      GGG G Gly  
+```
 
 This code has been created for the mitochondrial genome of the labyrinthulid _Thraustochytrium aureum_ sequenced by the The Organelle Genome Megasequencing Program ([OGMP](http://megasun.bch.umontreal.ca/ogmpproj.html)).
 
@@ -559,7 +879,27 @@ It is the similar to the bacterial code ([trans_table 11](#11)) but it contains 
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#24)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu      TCA S Ser      TAA * Ter      TGA W Trp  
+TTG L Leu i    TCG S Ser      TAG * Ter      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG L Leu i    CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile      ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile      ACC T Thr      AAC N Asn      AGC S Ser  
+ATA I Ile      ACA T Thr      AAA K Lys      AGA S Ser  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG K Lys  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val i    GCG A Ala      GAG E Glu      GGG G Gly  
+```
 
 ### Differences from the Standard Code:
 
@@ -584,7 +924,27 @@ with many other mitochondrial codes the reassignment of the UGA STOP to Trp, and
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#25)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu      TCA S Ser      TAA * Ter      TGA G Gly  
+TTG L Leu i    TCG S Ser      TAG * Ter      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG L Leu      CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile      ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile      ACC T Thr      AAC N Asn      AGC S Ser  
+ATA I Ile      ACA T Thr      AAA K Lys      AGA R Arg  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG R Arg  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val i    GCG A Ala      GAG E Glu      GGG G Gly  
+```
 
 ### Differences from the Standard Code:
 
@@ -615,7 +975,27 @@ Code 25 is used in two groups of (so far) uncultivated _Bacteria_ found in marin
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#26)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu      TCA S Ser      TAA * Ter      TGA * Ter  
+TTG L Leu      TCG S Ser      TAG * Ter      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG A Ala i    CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile      ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile      ACC T Thr      AAC N Asn      AGC S Ser  
+ATA I Ile      ACA T Thr      AAA K Lys      AGA R Arg  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG R Arg  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val      GCG A Ala      GAG E Glu      GGG G Gly  
+```
 
 ### Differences from the Standard Code:
 
@@ -646,7 +1026,27 @@ Code 26 is used so far only for the ascomycete fungus _Pachysolen tannophilus_. 
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#27)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu      TCA S Ser      TAA Q Gln      TGA W Trp  
+TTG L Leu      TCG S Ser      TAG Q Gln      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG L Leu      CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile      ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile      ACC T Thr      AAC N Asn      AGC S Ser  
+ATA I Ile      ACA T Thr      AAA K Lys      AGA R Arg  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG R Arg  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val      GCG A Ala      GAG E Glu      GGG G Gly  
+```
 
 ### Differences from the Standard Code:
 
@@ -671,7 +1071,7 @@ Code 27 reassigns the UAG and UAA stops to glutamine while UGA can function as e
 
 ## 28\. Condylostoma Nuclear Code (transl_table=28) <a name="28"></a>
 
-``` sample
+``` 
     AAs  = FFLLSSSSYYQQCCWWLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG
   Starts = ----------**--*--------------------M----------------------------
   Base1  = TTTTTTTTTTTTTTTTCCCCCCCCCCCCCCCCAAAAAAAAAAAAAAAAGGGGGGGGGGGGGGGG
@@ -679,7 +1079,27 @@ Code 27 reassigns the UAG and UAA stops to glutamine while UGA can function as e
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#28)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu      TCA S Ser      TAA Q Gln      TGA W Trp  
+TTG L Leu      TCG S Ser      TAG Q Gln      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG L Leu      CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile      ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile      ACC T Thr      AAC N Asn      AGC S Ser  
+ATA I Ile      ACA T Thr      AAA K Lys      AGA R Arg  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG R Arg  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val      GCG A Ala      GAG E Glu      GGG G Gly  
+```
 
 ### Differences from the Standard Code:
 
@@ -712,7 +1132,27 @@ Code 28 is used in Condylostoma magnum. The difference to the standard code is t
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#29)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu      TCA S Ser      TAA Y Tyr      TGA * Ter  
+TTG L Leu      TCG S Ser      TAG Y Tyr      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG L Leu      CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile      ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile      ACC T Thr      AAC N Asn      AGC S Ser  
+ATA I Ile      ACA T Thr      AAA K Lys      AGA R Arg  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG R Arg  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val      GCG A Ala      GAG E Glu      GGG G Gly  
+```
 
 ### Differences from the Standard Code:
 
@@ -744,7 +1184,27 @@ Code 29 is used for the haptorid ciliates Mesodinium and Myrionecta. It differs 
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#30)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu      TCA S Ser      TAA E Glu      TGA * Ter  
+TTG L Leu      TCG S Ser      TAG E Glu      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG L Leu      CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile      ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile      ACC T Thr      AAC N Asn      AGC S Ser  
+ATA I Ile      ACA T Thr      AAA K Lys      AGA R Arg  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG R Arg  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val      GCG A Ala      GAG E Glu      GGG G Gly  
+```
 
 ### Differences from the Standard Code:
 
@@ -776,7 +1236,27 @@ Code 30 is used in the peritrich ciliate Carchesium. The stop codons UAA and UAG
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#31)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu      TCA S Ser      TAA E Glu      TGA W Trp  
+TTG L Leu      TCG S Ser      TAG E Glu      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG L Leu      CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile      ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile      ACC T Thr      AAC N Asn      AGC S Ser  
+ATA I Ile      ACA T Thr      AAA K Lys      AGA R Arg  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG R Arg  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val      GCG A Ala      GAG E Glu      GGG G Gly  
+```
 
 ### Differences from the Standard Code:
 
@@ -809,7 +1289,27 @@ Code 31 is used for the trypanosome Blastocrithidia sp. UGA encodes trytophan an
   Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
 ```
 
-[Click here to change format](/ddbj/codontable.html#33)
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu      TCA S Ser      TAA Y Tyr      TGA W Trp  
+TTG L Leu i    TCG S Ser      TAG * Ter      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG L Leu i    CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile      ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile      ACC T Thr      AAC N Asn      AGC S Ser  
+ATA I Ile      ACA T Thr      AAA K Lys      AGA S Ser  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG K Lys  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val i    GCG A Ala      GAG E Glu      GGG G Gly  
+```
 
 ### Differences from the Standard Code:
 
