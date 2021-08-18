@@ -432,6 +432,7 @@ QAA-QZZ     GenBank
 RAA-RZZ     GenBank       WGS
 SAA-SZZ     ENA           
 TAA-TZZ     GenBank       WGS/TSA
+UAA-UZZ     GenBank       
 VAA-VZZ     ENA           
 ```
 
