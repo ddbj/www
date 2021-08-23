@@ -721,22 +721,22 @@ $(function(){
     $('#sample_type ul ul').hide();
 
     // all 選択時の処理
-    $.getJSON("https://spreadsheets.google.com/feeds/list/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/2/public/values?alt=json", function(data) {
-
-      var entries = data.feed.entry;
+      $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
       attr_table = "";
       attr_table += '<p class="attr-title">All attributes</p>';
-      attr_table += '<p class="biosample-example">Example: <a href="https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=' + examples["All"][1] + '">' + examples["All"][0] + '</a></p>';				
+      attr_table += '<p class="biosample-example">Example: <a href="https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=' + examples["All"][1] + '">' + examples["All"][0] + '</a></p>';       
       attr_table += '<div id="biosample_attr_area"><table id="biosample_attr_table"><thead><tr class="biosample_header"><th class="name">Name</th><th class="description">Description</th></tr></thead><tbody>';
 
-      for(var i = 0; i < entries.length; i++) {
+      for(var i = 1; i < data.values.length; i++) {
 
-        var name = entries[i].gsx$name.$t;
-        var harmonizedname = entries[i].gsx$harmonizedname.$t;
-        var synonym = entries[i].gsx$synonym.$t;
-        var description = entries[i].gsx$description.$t;
-        var descriptionja = entries[i].gsx$descriptionja.$t;
+        var entries = data.values[i];
+
+        var name = entries[0];
+        var harmonizedname = entries[1];
+        var synonym = entries[2];
+        var description = entries[3];
+        var descriptionja = entries[4];
 
         var description_place = ""
         if( la == "ja" ){
@@ -749,7 +749,7 @@ $(function(){
 
       } // for(var i = 0; i < entries.length; i++)
 
-      attr_table += '</tbody></table></div>';		
+      attr_table += '</tbody></table></div>';   
 
       if ( $('.attr-title').length ){
         $('.attr-title').remove();
@@ -780,7 +780,7 @@ $(function(){
   /* package + env 定義属性リスト表示ボタンクリック */
   $("#definition").click(function(){
 
-    /* 選択チェック MIxS の場合 env 必須　*/			
+    /* 選択チェック MIxS の場合 env 必須　*/      
     var core = $('.biosample_attr input[name="Core"]:checked').val();
     var mixs = $('.biosample_attr input[name="SampleType"]:checked').val();
     var env = $('.biosample_attr input[name="Package"]:checked').val();
@@ -801,7 +801,7 @@ $(function(){
         }
         return false;
       }
-    }		
+    }   
 
     // URL 書き換え、ブラウザーの履歴には残らない
     var params_h = {};
@@ -848,9 +848,8 @@ $(function(){
     }
 
     // package 選択時の処理
-    $.getJSON("https://spreadsheets.google.com/feeds/list/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/2/public/values?alt=json", function(data) {
+    $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
-      var entries = data.feed.entry;
       var span_required = "";
 
       attr_table = "";
@@ -877,9 +876,9 @@ $(function(){
           } else {
             attr_table += ', <a href="https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=' + examples[package_shortname][1][e] + '">' + examples[package_shortname][0][e] + '</a>';
           }
-        }				
+        }       
 
-        attr_table += '</p>';						
+        attr_table += '</p>';           
       }
 
       // real-world example
@@ -894,22 +893,25 @@ $(function(){
             attr_table += '<a href="https://www.ncbi.nlm.nih.gov/biosample/' + examples[package_shortname][2][e] + '">' + examples[package_shortname][2][e] + '</a>';
           } else {
             attr_table += ', <a href="https://www.ncbi.nlm.nih.gov/biosample/' + examples[package_shortname][2][e] + '">' + examples[package_shortname][2][e] + '</a>';
-          }					
-        }				
+          }         
+        }       
 
-        attr_table += '</p>';						
+        attr_table += '</p>';           
       }
 
       attr_table += '<div id="biosample_attr_area"><table id="biosample_attr_table"><thead><tr class="biosample_header"><th class="name">Name</th><th class="description"Description</th></tr></thead><tbody>';
 
       // name 毎に選択された package shorname の M O - で判定していく
-      for(var i = 0; i < entries.length; i++) {
+      var pac_names = data.values[0];
+      for(var i = 1; i < data.values.length; i++) {
 
-        var name = entries[i].gsx$name.$t;
-        var harmonizedname = entries[i].gsx$harmonizedname.$t;
-        var synonym = entries[i].gsx$synonym.$t;
-        var description = entries[i].gsx$description.$t;
-        var descriptionja = entries[i].gsx$descriptionja.$t;
+        var entries = data.values[i];
+
+        var name = entries[0];
+        var harmonizedname = entries[1];
+        var synonym = entries[2];
+        var description = entries[3];
+        var descriptionja = entries[4];
 
         var description_place = ""
         if( la == "ja" ){
@@ -917,9 +919,14 @@ $(function(){
         } else {
           description_place = description;
         }
-                
-        var option = entries[i]['gsx$' + package_shortname.toLowerCase()].$t;
         
+        // attribute シートの package short name の位置取得
+        var option = "";
+        for(var j = 0; j < pac_names.length; j++) {
+          if(pac_names[j] == package_shortname){
+            option = entries[j];
+          }
+        }
 
         // 属性の M O - 判定
         var optional_pattern = /^O/;
@@ -930,7 +937,6 @@ $(function(){
         } else if ( option.match(optional_pattern) ) {
           attr_table += '<tr id="' + name + '"><td class="name"><a href="#' + name + '">' + name + '</a></td><td class="description">' + description_place + '</td></tr>';
         }
-
           
       } // for(var i = 0; i < entries.length; i++)
       
@@ -960,7 +966,7 @@ $(function(){
   /* package + env 定義属性ファイルダウンロードボタンクリック */
   $("#download").click(function(e){
 
-    /* 選択チェック MIxS の場合 env 必須　*/			
+    /* 選択チェック MIxS の場合 env 必須　*/      
     var core = $('.biosample_attr input[name="Core"]:checked').val();
     var mixs = $('.biosample_attr input[name="SampleType"]:checked').val();
     var env = $('.biosample_attr input[name="Package"]:checked').val();
@@ -981,7 +987,7 @@ $(function(){
         }
         return false;
       }
-    }		
+    }   
 
     // package の shorname 取得
     var package_shortname = "";
@@ -1000,17 +1006,24 @@ $(function(){
     }
 
     // package 選択時の tsv ダウンロード提供処理
-    $.getJSON("https://spreadsheets.google.com/feeds/list/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/2/public/values?alt=json", function(data) {
+    $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
       var tsv_a = [];
-      var entries = data.feed.entry;
+      var pac_names = data.values[0];
 
       // name 毎に選択された package shorname の M O - で判定していく
-      for(var i = 0; i < entries.length; i++) {
+      for(var i = 1; i < data.values.length; i++) {
 
-        var name = entries[i].gsx$name.$t;								
-        var option = entries[i]['gsx$' + package_shortname.toLowerCase()].$t;
-        
+        var entries = data.values[i];
+        var name = entries[0];               
+ 
+        // attribute シートの package short name の位置取得
+        for(var j = 0; j < pac_names.length; j++) {
+          if(pac_names[j] == package_shortname){
+            var option = entries[j];
+          }
+        }
+
         // 属性の M O - 判定
         var optional_pattern = /^O/;
         var required_pattern = /^M/;
@@ -1145,23 +1158,24 @@ $(function() {
 
   if ( pathname.match(/\/biosample\/validation/) ){
 
-    $.getJSON("https://spreadsheets.google.com/feeds/list/1kh9vRllab7t7PBftd0nEBi-YbIWvFVRAiYS6F6RRBNU/1/public/values?alt=json", function(data) {
-      
-      var entries = data.feed.entry;
+      $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1kh9vRllab7t7PBftd0nEBi-YbIWvFVRAiYS6F6RRBNU/values/rule?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
+
       var rule_html = "";
 
-      for(var i = 0; i < entries.length; i++) {
+      for(var i = 1; i < data.values.length; i++) {
+       
+        var entries = data.values[i];
 
-        var rule_class = entries[i].gsx$ruleclass.$t;
-        var rule_id = entries[i].gsx$ruleid.$t;
-        var level = entries[i].gsx$level.$t;
-        var name = entries[i].gsx$name.$t;
-        var message = entries[i].gsx$message.$t;
-        var description = entries[i].gsx$description.$t;
-        var description_ja = entries[i].gsx$descriptionja.$t;
-
+        var rule_class = entries[0];
+        var rule_id = entries[1];
+        var level = entries[2];
+        var name = entries[3];
+        var message = entries[4];
+        var description = entries[5];
+        var description_ja = entries[6];
+   
         rule_html += '<dl>';
-        rule_html += '<dt id="' + rule_id + '"><a class="rule-id" href="#' + rule_id + '">' + rule_id + '</a><span class="rule-level ' + level + '">' + level + '</span>' + '<span class="rule-name">' + name + '</span></dt>';				
+        rule_html += '<dt id="' + rule_id + '"><a class="rule-id" href="#' + rule_id + '">' + rule_id + '</a><span class="rule-level ' + level + '">' + level + '</span>' + '<span class="rule-name">' + name + '</span></dt>';       
 
         if (la == "ja"){
           rule_html += '<dd><div class="rule-message"><span class="ja rule-message-tag">message:</span> ' + message + '</div>';
@@ -1194,44 +1208,36 @@ $(function() {
     
       $('#in_this_page').append(poc_html);
       $('#in_this_page > h2').text("Rules");
-
-      /* json で非同期に取得、構築した side nav に y 軸 scroll bar を付ける処理 */
-      // 下にはみ出している距離　はみだしている = 正の値  (side nav bottom y) - (window bottom y)
-      // var bottom_diff = ( $("#side_navigation").offset().top + $("#side_navigation").height() ) - ( $(window).scrollTop() + $(window).height() );
-
-      // height をオリジナルからはみ出している分短く、overflow を scroll に			
-      // $("#side_navigation").css("height", ( $("#side_navigation").height() - bottom_diff ) + "px");
-      // $("#side_navigation").css("overflow-y", "scroll");
-          
+      
       // anchor 指定時にページ内遷移
       if (anchor && $(anchor).length){
-        console.log(anchor)
         $(document).scrollTop( $(anchor).offset().top );
       }
 
     }); // $.getJSON
-  
+
   // if ( pathname.match(/\/biosample\/validation/) )
   } else if ( pathname.match(/\/gea\/validation/) ) {
 
-    $.getJSON("https://spreadsheets.google.com/feeds/list/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/1/public/values?alt=json", function(data) {
-      
-      var entries = data.feed.entry;
+      $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/values/rule?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
+
       var rule_html = "";
 
-      for(var i = 0; i < entries.length; i++) {
+      for(var i = 1; i < data.values.length; i++) {
+       
+        var entries = data.values[i];
 
-        var rule_class = entries[i].gsx$ruleclass.$t;
-        var rule_id = entries[i].gsx$ruleid.$t;
-        var level = entries[i].gsx$level.$t;				
-        var experiment_type = entries[i].gsx$experimenttype.$t;
-        var object = entries[i].gsx$object.$t;
-        var message = entries[i].gsx$message.$t;
-        var description = entries[i].gsx$description.$t;
-        var description_ja = entries[i].gsx$descriptionja.$t;
+        var rule_class = entries[0];
+        var rule_id = entries[1];
+        var level = entries[2];
+        var experiment_type = entries[3];
+        var object = entries[4];
+        var message = entries[5];
+        var description = entries[6];
+        var description_ja = entries[7];
 
         rule_html += '<dl>';
-        rule_html += '<dt id="' + rule_id + '"><a class="rule-id" href="#' + rule_id + '">' + rule_id + '</a><span class="rule-level ' + level + '">' + level + '</span>' + '<span class="rule-exp-type"> Experiment Type:' + experiment_type + '</span>' + '<span class="rule-object"> Object:' + object + '</span>' + '</dt>';				
+        rule_html += '<dt id="' + rule_id + '"><a class="rule-id" href="#' + rule_id + '">' + rule_id + '</a><span class="rule-level ' + level + '">' + level + '</span>' + '<span class="rule-exp-type"> Experiment Type:' + experiment_type + '</span>' + '<span class="rule-object"> Object:' + object + '</span>' + '</dt>';        
 
         if (la == "ja"){
           rule_html += '<dd><div class="rule-message"><span class="ja rule-message-tag">message:</span> ' + message + '</div>';
@@ -1257,26 +1263,18 @@ $(function() {
 
         poc_html += '<li><a href="#' + rule_id + '" class="toc_chapter">' + rule_id + '</a></li>';
 
-        }		  
+        }     
     
-      $("#rule").prepend(rule_html);			
+      $("#rule").prepend(rule_html);      
       poc_html += '</ul>';
     
       $('#in_this_page').append(poc_html);
-      $('#in_this_page > h2').text("Rules");				
-
-      /* json で非同期に取得、構築した side nav に y 軸 scroll bar を付ける処理 */
-      // 下にはみ出している距離　はみだしている = 正の値  (side nav bottom y) - (window bottom y)
-      var bottom_diff = ( $("#side_navigation").offset().top + $("#side_navigation").height() ) - ( $(window).scrollTop() + $(window).height() );
-
-      // height をオリジナルからはみ出している分短く、overflow を scroll に			
-      $("#side_navigation").css("height", ( $("#side_navigation").height() - bottom_diff ) + "px");
-      $("#side_navigation").css("overflow-y", "scroll");
-          
+      $('#in_this_page > h2').text("Rules");        
+      
       // anchor 指定時にページ内遷移
       if (anchor && $(anchor).length){
-        $(document).scrollTop( $(anchor).offset().top ); 
-      }				
+        $(document).scrollTop( $(anchor).offset().top );
+      }     
 
     }); // $.getJSON
 
