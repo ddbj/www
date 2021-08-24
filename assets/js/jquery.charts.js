@@ -5,31 +5,6 @@
 var pathname = window.location.pathname;
 var filepath = pathname.replace("-e.html", "").replace(".html", "");
 
-// 統計種別名と Google sheet position リスト
-var sheet_position_h = {
-  // ウェブアクセス
-  'page-access':'1',
-  'web-access':'2',   
-  // 登録
-  'dra-submission':'3',
-  'jga-submission':'4',
-  'ddbj-submission':'5',    
-  // 公開
-  'dra-release':'6',
-  'jga-release':'7',
-  // DDBJ リリース
-  'ddbj-release':'8', 
-  'ddbj-release-proportion':'9', 
-  'ddbj-category':'10',   
-  'archive-proportion-category':'11',
-  'organism-archive':'12',  
-  'organism-ranking':'13',
-  'journal-ranking':'14', 
-  'relinfo':'15',
-  'gea-submission':'16',
-  'gea-release':'17'
-};
-
 // 配列要素の合計値を求める
 // http://phiary.me/javascript-array-sum-average-median/
 var sum = function(arr) {  
@@ -1277,7 +1252,6 @@ function makeDDBJReleaseDetail(){
   google.charts.load('current', {'packages':['corechart', 'table']});
 
   // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-//  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['ddbj-release-proportion'] + "/public/values?alt=json", function(data) {
   $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/values/DDBJ release proportion?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
           
     // release 10 からなので 9 をさらに引いている
