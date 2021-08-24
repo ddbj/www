@@ -43,240 +43,6 @@ var average = function(arr, fn) {
     return sum(arr, fn)/arr.length;
 };
 
-// Google sheet ID 対応表
-
-
-// WGS リリースデータ (DDBJ 登録分)
-if ( filepath=="/stats/wgs-release"){
-
-  $(function(){
-
-    google.charts.load('current', {'packages':['corechart', 'table']});
-
-    var month_list = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
-    var now = new Date();
-    var this_year = now.getFullYear();
-    var span = 6; // 年毎は直近6年を表示
-    var span_month = 3; // 月毎は直近3年を表示
-    var chart_year_a = [];    
-    var html_tables = "";
-
-      // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-      $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['wgs-release'] + "/public/values?alt=json", function(data) {
-
-        var wgs_release = data.feed.entry;
-        var wgs_release_h = {};
-        var wgs_release_month_h = {};
-
-        html_tables += '<h2 id="total">By year (' + (this_year-span) + '-' + this_year + ')</h2>' + '<div id="chart_total"></div><div id="table_total"></div>';
-        html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=2022454675">Source data</a></p>';
-
-        // 今年の途中も表示
-        for(var y = this_year-span; y <= this_year; y++) {
-
-          var projects_year = 0;
-          var sequences_year = 0;      
-          var month_h = {};
-          var chart_month_a = [];
-          var year = y.toString();
-
-         // 月でループ 
-           for (var m = 0; m < month_list.length; m++) {  
-
-            month = month_list[m].toString();
-            var year_month_found = false;
-
-              for(var i = 0; i < wgs_release.length; i++) {
-                var year_month = wgs_release[i].gsx$yearmonth.$t;
-                var projects = parseInt(wgs_release[i].gsx$projects.$t, 10);
-                var sequences = parseInt(wgs_release[i].gsx$sequences.$t, 10);
-
-                // 年月毎に配列に格納
-                if( parseInt(year_month.substring(0, 4), 10) == y && year_month.substring(5) == month ){
-                    month_h[month] = {"projects":projects, "sequences":sequences};                    
-                    projects_year += projects;
-                    sequences_year += sequences;
-
-                    if( parseInt(year_month.substring(0, 4), 10) == y && year_month.substring(5) == month ){
-                      chart_month_a.push([month.replace(/^0/, ""), projects, sequences]);
-                      year_month_found = true;
-                    }
-
-                } // if( parseInt(year_month.substring(0, 4), 10) == y && year_month.substring(5) == month )
-              } // for(var i = 0; i < dra_submission.length; i++)
-
-              // 今年の将来で該当する値が無かった場合
-              if(!year_month_found){
-                chart_month_a.push([month.replace(/^0/, ""), null, null]);
-              }
-           } //for (var m = 0; m < month_list.length; m++)
-
-           chart_year_a.push([year, projects_year, sequences_year]);
-           wgs_release_h[year] = month_h;
-
-           // 直近三年だけ
-           if( y > this_year - span_month ){
-             wgs_release_month_h[year] = chart_month_a;
-             
-           }            
-        } //for(var y = this_year-span; y <= this_year; y++)
-
-        // 月間グラフは逆順に並べる
-        for(var y = this_year; y > (this_year - span_month); y--) {          
-          year = y.toString();
-          html_tables += '<h2 id=\"' + year + '\">' + year + ' (By month)</h2>' + '<div id="' + ("chart_wgs_" + year) + '"></div><div id="' + ("table_wgs_" + year) + '"></div>';
-        }
-
-        /* グラフ作成 */
-        $("#stat_area_wgs").append(html_tables);
-
-          google.charts.setOnLoadCallback(drawWGSRelease);
-          google.charts.setOnLoadCallback(drawWGSReleaseTable);
-
-          function drawWGSRelease(){
-
-              var title = 'Release';
-
-              // Create the data table.
-              var data = new google.visualization.DataTable();
-              data.addColumn('string', 'Year');
-              data.addColumn('number', 'WGS projects');
-              data.addColumn('number', 'WGS sequences');
-
-              data.addRows(chart_year_a);
-
-              var options = {
-                title: 'WGS data released by DDBJ', 
-                width: 600,      
-                height:400,
-                seriesType: 'bars',
-                legend:{position:'top', textStyle: {fontSize: 12}},         
-                series: {
-                  0:{color:'#00CCFF', targetAxisIndex: 0},
-                  1:{color:'#953735', targetAxisIndex: 1}
-                },
-                hAxis:{
-                  title: 'Year',
-                  textStyle: {fontSize:11}
-                },
-                vAxes: {
-                  0: {
-                    title: 'WGS projects',
-                    textStyle: {fontSize:11}
-                    //gridlines: {count:6}
-                  },
-                  1: {   
-                    title: 'WGS sequences',
-                    color:'#ff0000'
-                    //gridlines: {count:6}
-                  }
-                },
-                titlePosition:'out'
-              };
-              
-              var wgsrelyear = new google.visualization.ColumnChart(document.getElementById('chart_total'));
-              wgsrelyear.draw(data, options);
-          
-          } // function drawWGSRelease
-
-          function drawWGSReleaseTable(){
-            
-              // Create the data table.
-              var data = new google.visualization.DataTable();
-              data.addColumn('string', 'Year');
-              data.addColumn('number', 'WGS projects');
-              data.addColumn('number', 'WGS sequences');
-              data.addRows(chart_year_a);
-
-              var wgsrelyeartable = new google.visualization.Table(document.getElementById('table_total'));
-              wgsrelyeartable.draw(data);
-
-          } // function drawWGSReleaseTable
-
-      /* 月毎 */
-      google.charts.setOnLoadCallback(drawWGSReleaseMonth);
-      google.charts.setOnLoadCallback(drawWGSReleaseMonthTable);
-
-      function drawWGSReleaseMonth(){
-
-        for(var y = this_year - span_month + 1; y <= this_year; y++) {
-        
-            year = y.toString();
-        
-            var chart_id = "chart_wgs_" + year;
-            var title = 'WGS data released by DDBJ in ' + year;
-
-            // Create the data table.
-            var data = new google.visualization.DataTable();
-            data.addColumn('string', 'Month');
-            data.addColumn('number', 'WGS projects');
-            data.addColumn('number', 'WGS sequences');
-            data.addRows(wgs_release_month_h[year]);            
-
-            var options = {
-              title: title, 
-              width: 600,      
-              height:400,
-              seriesType: 'bars',
-              legend:{position:'top', textStyle: {fontSize: 12}},         
-              series: {
-                0:{color:'#00CCFF', targetAxisIndex: 0},
-                1:{color:'#953735', targetAxisIndex: 1}
-              },
-              hAxis:{
-                title: 'Month',
-                textStyle: {fontSize:11}
-              },
-              vAxes: {
-                0: {
-                  title: 'WGS projects',
-                  textStyle: {fontSize:11}
-                  //gridlines: {count:6}
-                },
-                1: {   
-                  title: 'WGS sequences',
-                  color:'#ff0000'
-                  //gridlines: {count:6}
-                }
-              },
-              titlePosition:'out'
-            };
-            
-            var wgsrelmonth = new google.visualization.ColumnChart(document.getElementById(chart_id));
-            wgsrelmonth.draw(data, options);
-        
-        } // for(var y = this_year - span_month; y <= this_year; y++)
-
-      } // function drawWGSReleaseMonth
-
-      function drawWGSReleaseMonthTable(){
-
-        for(var y = this_year - span_month + 1; y <= this_year; y++) {
-          
-            year = y.toString();
-            var table_id = "table_wgs_" + year;
-          
-            // Create the data table.
-            var data = new google.visualization.DataTable();
-            data.addColumn('string', 'Month');
-            data.addColumn('number', 'WGS projects');
-            data.addColumn('number', 'WGS sequences');          
-            data.addRows(wgs_release_month_h[year]);            
-
-            var wgsrelmonthtable = new google.visualization.Table(document.getElementById(table_id));
-            wgsrelmonthtable.draw(data);
-
-        } // for (var i = 0; i < target_years.length; i++)
-
-      } // function drawWGSReleaseMonthTable
-
-    })  // $.getJSON 
-
-  })  // function
-
-} // WGS リリースデータ (DDBJ 登録分)
-
-
 // 小数点n位までを残す関数
 // number=対象の数値
 // n=残したい小数点以下の桁数
@@ -286,15 +52,7 @@ function roundFloat( number, n ) {
   return Math.round( number * _pow ) / _pow;
 }
 
-
-
-
-
-
-
-
 $(function(){
-  console.log( 'filepath:', filepath )
   makeDDBJRelease();
   makeDRARelease();
   makeGEARelease();
@@ -305,7 +63,7 @@ $(function(){
   makeJGASubmission();
   makeWebAccess();
   makePageAccess();
-  makeDDBJRelease2();
+  makeDDBJReleaseDetail();
 });
 
 // DDBJ リリース統計
@@ -319,19 +77,20 @@ function makeDDBJRelease() {
   google.charts.load('current', {'packages':['corechart', 'table']});
 
   // 統計公開シート https://docs.goosgle.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['ddbj-release'] + "/public/values?alt=json", function(data) {
+  $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/values/DDBJ release?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
-    var ddbj_release = data.feed.entry;
     var chart_a = [];
     var chart_table_a = [];
     
-    for(var i = release_new - 1; i < ddbj_release.length; i++) {
+    for(var i = release_new - 1; i < data.values.length; i++) {
+
+      var ddbj_release = data.values[i];
       
-      var year_month = ddbj_release[i].gsx$yearmonth.$t;
-      var release_no = ddbj_release[i].gsx$release.$t;
-      var bases = parseInt(ddbj_release[i].gsx$bases.$t, 10);
-      var sequences = parseInt(ddbj_release[i].gsx$sequences.$t, 10);
-      var comments = ddbj_release[i].gsx$comments.$t;
+      var year_month = ddbj_release[1];
+      var release_no = ddbj_release[0];
+      var bases = parseInt(ddbj_release[3], 10);
+      var sequences = parseInt(ddbj_release[2], 10);
+      var comments = ddbj_release[4];
 
       // リリース毎に配列に格納
       chart_a.push([release_no + " (" + year_month + ")", roundFloat(sequences/10**6, 2), roundFloat(bases/10**9, 2)]);                          
@@ -375,13 +134,13 @@ function makeDDBJRelease() {
             title: 'Sequences (million)',
             color:'#ff0000',
             textStyle: {fontSize:12},
-            viewWindow: {min:500, max:3000},
+            viewWindow: {min:500, max:3500},
             gridlines: {count:5}
           },
           1: {
             title: 'Bases (billion)',
             textStyle: {fontSize:12},
-            viewWindow: {min:2000, max:15000},
+            viewWindow: {min:2000, max:18000},
             gridlines: {count:6}
           }
         },
@@ -440,20 +199,19 @@ function makeDRARelease() {
   var html_tables = "";
 
   // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['dra-release'] + "/public/values?alt=json", function(data) {
+  $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/values/DRA release?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
-    var dra_release = data.feed.entry;
+    // 今年の途中も表示    
+    for(var i = 0; i < data.values.length; i++) {
 
-    // 今年の途中も表示
+      var dra_release = data.values[i];
     
-    for(var i = 0; i < dra_release.length; i++) {
-    
-      var year = dra_release[i].gsx$year.$t;
+      var year = dra_release[0];
       var y = parseInt(year, 10);
-      var sra_bytes = parseInt(dra_release[i].gsx$srabytes.$t, 10);
-      var sequences = parseInt(dra_release[i].gsx$sequences.$t, 10);
-      var bases = parseInt(dra_release[i].gsx$bases.$t, 10);
-      var fastq_bytes = parseInt(dra_release[i].gsx$fastqbytes.$t, 10);
+      var sra_bytes = parseInt(dra_release[2], 10);
+      var sequences = parseInt(dra_release[3], 10);
+      var bases = parseInt(dra_release[4], 10);
+      var fastq_bytes = parseInt(dra_release[5], 10);
 
       // 年毎に配列に格納                
       if(y > this_year -1 - span){
@@ -556,8 +314,8 @@ function makeDRARelease() {
         hAxis:{title:'Year', textStyle:{fontSize:12}, format:'0', minorGridlines:{count:0}, gridlines:{color:'#eee'}},
         vAxes:{
           // Adds titles to each axis.              
-          0: {title: 'Sequences (trillion)', scaleType:'log', ticks: [0, 10, 100]},
-          1: {title: 'Bases (trillion)', scaleType:'log', ticks: [0, 10, 100]}
+          0: {title: 'Sequences (trillion)', scaleType:'log', ticks: [0, 10, 100, 1000]},
+          1: {title: 'Bases (trillion)', scaleType:'log', ticks: [0, 10, 100, 1000]}
         },            
         colors: ['#5b84d6', '#ff0000']
       };
@@ -608,16 +366,16 @@ function makeGEARelease() {
   var html_tables = "";
 
   // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['gea-release'] + "/public/values?alt=json", function(data) {
+  $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/values/GEA release?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
-    var gea_release = data.feed.entry;
-  
-    for(var i = 0; i < gea_release.length; i++) {
+    for(var i = 1; i < data.values.length; i++) {
 
-      var y = parseInt(gea_release[i].gsx$year.$t.substring(0, 4), 10);
+      var gea_release = data.values[i];
+
+      var y = parseInt(gea_release[0].substring(0, 4), 10);
 
       if( y >= (this_year-1-span) ){
-        chart_year_a.push([gea_release[i].gsx$year.$t, parseInt(gea_release[i].gsx$experiments.$t, 10), parseInt(gea_release[i].gsx$samples.$t, 10)]);
+        chart_year_a.push([gea_release[0], parseInt(gea_release[1], 10), parseInt(gea_release[2], 10)]);
         if (x==0) year_min = y;
         year_max = y;
         x++;
@@ -714,19 +472,19 @@ function makeJGARelease() {
   var html_tables = "";
 
   // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['jga-release'] + "/public/values?alt=json", function(data) {
+  $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/values/JGA release?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
-    var jga_release = data.feed.entry;
 
-    // 今年の途中も表示
-    
-    for(var i = 0; i < jga_release.length; i++) {
+    // 今年の途中も表示    
+    for(var i = 1; i < data.values.length; i++) {
       
-      var year = jga_release[i].gsx$year.$t;
+      var jga_release = data.values[i];
+
+      var year = jga_release[0];
       var y = parseInt(year, 10);
-      var studies = parseInt(jga_release[i].gsx$studies.$t, 10);
-      var samples = parseInt(jga_release[i].gsx$samples.$t, 10);
-      var bytes = parseInt(jga_release[i].gsx$bytes.$t, 10);
+      var studies = parseInt(jga_release[1], 10);
+      var samples = parseInt(jga_release[2], 10);
+      var bytes = parseInt(jga_release[3], 10);
 
       // 年毎に配列に格納                                
       if(y > this_year - 1 - span){
@@ -831,21 +589,21 @@ function makeDDBJSubmission() {
   var html_tables = "";
 
   // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['ddbj-submission'] + "/public/values?alt=json", function(data) {
+  $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/values/DDBJ Submission?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
+  
+    for(var i = 1; i < data.values.length; i++) {
 
-    var ddbj_sub = data.feed.entry;
+      var ddbj_sub = data.values[i];
 
-    for(var i = 0; i < ddbj_sub.length; i++) {
-
-      var y = parseInt(ddbj_sub[i].gsx$year.$t.substring(0, 4), 10);
+      var y = parseInt(ddbj_sub[0].substring(0, 4), 10);
 
       if( y >= (this_year-1-span) ){
         
-        var submission_total_web = parseInt(ddbj_sub[i].gsx$submissiontotalweb.$t, 10);
-        var submission_total_mss = parseInt(ddbj_sub[i].gsx$submissiontotalmss.$t, 10);
+        var submission_total_web = parseInt(ddbj_sub[3], 10);
+        var submission_total_mss = parseInt(ddbj_sub[9], 10);
 
-        chart_year_a.push([ddbj_sub[i].gsx$year.$t, submission_total_web, submission_total_mss]);
-        chart_year_table_a.push([ddbj_sub[i].gsx$year.$t, submission_total_web, submission_total_mss, submission_total_web + submission_total_mss]);
+        chart_year_a.push([ddbj_sub[0], submission_total_web, submission_total_mss]);
+        chart_year_table_a.push([ddbj_sub[0], submission_total_web, submission_total_mss, submission_total_web + submission_total_mss]);
         
         if (x==0) year_min = y;
         year_max = y;
@@ -934,16 +692,16 @@ function makeDRASubmission() {
   var html_tables = "";
 
   // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['dra-submission'] + "/public/values?alt=json", function(data) {
-
-    var dra_submission = data.feed.entry;
+  $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/values/DRA submission?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
   
-    for(var i = 0; i < dra_submission.length; i++) {
+    for(var i = 1; i < data.values.length; i++) {
 
-      var y = parseInt(dra_submission[i].gsx$year.$t.substring(0, 4), 10);
+      var dra_submission = data.values[i];
+
+      var y = parseInt(dra_submission[0].substring(0, 4), 10);
 
       if( y >= (this_year-1-span) ){
-        chart_year_a.push([dra_submission[i].gsx$year.$t, parseInt(dra_submission[i].gsx$submissions.$t, 10), roundFloat(parseInt(dra_submission[i].gsx$bytes.$t, 10)/10**12, 2)]);
+        chart_year_a.push([dra_submission[0], parseInt(dra_submission[1], 10), roundFloat(parseInt(dra_submission[3], 10)/10**12, 2)]);
         if (x==0) year_min = y;
         year_max = y;
         x++;
@@ -1039,16 +797,16 @@ function makeGEASubmission() {
   var html_tables = "";
 
   // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['gea-submission'] + "/public/values?alt=json", function(data) {
-
-    var gea_submission = data.feed.entry;
+  $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/values/GEA submission?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
   
-    for(var i = 0; i < gea_submission.length; i++) {
+    for(var i = 1; i < data.values.length; i++) {
 
-      var y = parseInt(gea_submission[i].gsx$year.$t.substring(0, 4), 10);
+      var gea_submission = data.values[i];
+
+      var y = parseInt(gea_submission[0].substring(0, 4), 10);
 
       if( y >= (this_year-1-span) ){
-        chart_year_a.push([gea_submission[i].gsx$year.$t, parseInt(gea_submission[i].gsx$submissions.$t, 10), parseInt(gea_submission[i].gsx$samples.$t, 10)]);
+        chart_year_a.push([gea_submission[0], parseInt(gea_submission[1], 10), parseInt(gea_submission[2], 10)]);
         if (x==0) year_min = y;
         year_max = y;
         x++;
@@ -1144,16 +902,14 @@ function makeJGASubmission() {
   var html_tables = "";
 
   // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['jga-submission'] + "/public/values?alt=json", function(data) {
-
-    var jga_submission = data.feed.entry;
+  $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/values/JGA submission?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
   
-    for(var i = 0; i < jga_submission.length; i++) {
-
-      var y = parseInt(jga_submission[i].gsx$year.$t.substring(0, 4), 10);
+    for(var i = 1; i < data.values.length; i++) {
+      var jga_submission = data.values[i];
+      var y = parseInt(jga_submission[0].substring(0, 4), 10);
 
       if( y >= (this_year-1-span) ){
-        chart_year_a.push([jga_submission[i].gsx$year.$t, parseInt(jga_submission[i].gsx$submissions.$t, 10), roundFloat(parseInt(jga_submission[i].gsx$bytes.$t, 10)/10**12, 2)]);
+        chart_year_a.push([jga_submission[0], parseInt(jga_submission[1], 10), roundFloat(parseInt(jga_submission[4], 10)/10**12, 2)]);
         if (x==0) year_min = y;
         year_max = y;
         x++;
@@ -1242,9 +998,8 @@ function makeWebAccess() {
   var span = 4; // 直近10年を表示
 
   // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['web-access'] + "/public/values?alt=json", function(data) {
+  $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/values/Web service access?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
-    var web_access = data.feed.entry;
     var getentry_per_year_h = {};
     var arsa_per_year_h = {};
     var drasearch_per_year_h = {};
@@ -1274,21 +1029,23 @@ function makeWebAccess() {
       homepage_per_year_h[y] = [];
       all_per_year_h[y] = [];
     
-      for(var i = 0; i < web_access.length; i++) {
+      for(var i = 1; i < data.values.length; i++) {
       
-        var year_month = web_access[i].gsx$yearmonth.$t;
-        var getentry_per_month = parseInt(web_access[i].gsx$getentry.$t, 10);
-        var arsa_per_month = parseInt(web_access[i].gsx$arsa.$t, 10);
-        var drasearch_per_month = parseInt(web_access[i].gsx$drasearch.$t, 10);
-        var txsearch_per_month = parseInt(web_access[i].gsx$txsearch.$t, 10);
-        var blast_per_month = parseInt(web_access[i].gsx$blast.$t, 10);
-        var clustalw_per_month = parseInt(web_access[i].gsx$clustalw.$t, 10);
-        var homepage_per_month = parseInt(web_access[i].gsx$homepage.$t, 10);
-        var all_per_month = parseInt(web_access[i].gsx$all.$t, 10);
+        var web_access = data.values[i];
+
+        var year_month = web_access[0];
+        var getentry_per_month = parseInt(web_access[1], 10);
+        var arsa_per_month = parseInt(web_access[2], 10);
+        var drasearch_per_month = parseInt(web_access[3], 10);
+        var txsearch_per_month = parseInt(web_access[4], 10);
+        var blast_per_month = parseInt(web_access[5], 10);
+        var clustalw_per_month = parseInt(web_access[7], 10);
+        var homepage_per_month = parseInt(web_access[11], 10);
+        var all_per_month = parseInt(web_access[12], 10);
         //var ave_ftp_download_day = parseFloat(web_access[i].gsx$averageftpdownloadtbday.$t, 10);
 
         // 年毎に配列に格納
-        if ( parseInt(year_month.substring(0, 4), 10) == y ) {
+        if ( year_month && parseInt(year_month.substring(0, 4), 10) == y ) {
           
           //ログ欠落期間の 2018-02, 03, 04 を除外
           if ( year_month == "2018-02" || year_month == "2018-03" || year_month == "2018-04" ) {
@@ -1409,9 +1166,8 @@ function makePageAccess() {
   var span = 10; // 直近10年を表示
 
   // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['page-access'] + "/public/values?alt=json", function(data) {
+  $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/values/Homepage access?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
-    var page_access = data.feed.entry;
     var unique_users_per_year = {};
     var average_unique_users_per_year = {};
 
@@ -1419,13 +1175,15 @@ function makePageAccess() {
       
       unique_users_per_year[y] = [];
       
-      for(var i = 0; i < page_access.length; i++) {
-      
-        var year_month = page_access[i].gsx$yearmonth.$t;
-        var uniqueusersmonth = parseInt(page_access[i].gsx$uniqueusersmonth.$t, 10);
+      for(var i = 1; i < data.values.length; i++) {
+
+        var page_access = data.values[i];
+  
+        var year_month = page_access[0];
+        var uniqueusersmonth = parseInt(page_access[1], 10);
 
         // 年毎に配列に格納
-        if ( parseInt(year_month.substring(0, 4), 10) == y ) {
+        if ( year_month && parseInt(year_month.substring(0, 4), 10) == y ) {
           
           //ログ欠落期間の 2018-02, 03, 04 を除外
           if ( year_month == "2018-02" || year_month == "2018-03" || year_month == "2018-04" ) {
@@ -1505,7 +1263,7 @@ function makePageAccess() {
 
 } // makePageAccess
 
-function makeDDBJRelease2() {
+function makeDDBJReleaseDetail(){
 
   if ( !document.getElementById('total-data-volume') ) return;
 
@@ -1519,44 +1277,45 @@ function makeDDBJRelease2() {
   google.charts.load('current', {'packages':['corechart', 'table']});
 
   // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['ddbj-release-proportion'] + "/public/values?alt=json", function(data) {
-
-    var ddbj_release = data.feed.entry;
+//  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['ddbj-release-proportion'] + "/public/values?alt=json", function(data) {
+  $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/values/DDBJ release proportion?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
           
     // release 10 からなので 9 をさらに引いている
-    for(var i = release_new - 1 - 9; i < ddbj_release.length; i++) {
-      
-      var release_no = ddbj_release[i].gsx$release.$t;
-      var year_month = ddbj_release[i].gsx$yearmonth.$t;              
-      var ddbjsequences = parseInt(ddbj_release[i].gsx$ddbjsequences.$t, 10);
-      var jposequences = parseInt(ddbj_release[i].gsx$jposequences.$t, 10);
-      var kiposequences = parseInt(ddbj_release[i].gsx$kiposequences.$t, 10);
+    for(var i = release_new - 1 - 9; i < data.values.length; i++) {
+
+      var ddbj_release = data.values[i];
+     
+      var release_no = ddbj_release[0];
+      var year_month = ddbj_release[1];              
+      var ddbjsequences = parseInt(ddbj_release[2], 10);
+      var jposequences = parseInt(ddbj_release[3], 10);
+      var kiposequences = parseInt(ddbj_release[4], 10);
       var ddbjsubtotalsequences = ddbjsequences + jposequences + kiposequences;
       
-      var enasequences = parseInt(ddbj_release[i].gsx$enasequences.$t, 10);
-      var eposequences = parseInt(ddbj_release[i].gsx$eposequences.$t, 10);
+      var enasequences = parseInt(ddbj_release[5], 10);
+      var eposequences = parseInt(ddbj_release[6], 10);
       var enasubtotalsequences = enasequences + eposequences;
       
-      var genbanksequences = parseInt(ddbj_release[i].gsx$genbanksequences.$t, 10);
-      var usptosequences = parseInt(ddbj_release[i].gsx$usptosequences.$t, 10);
+      var genbanksequences = parseInt(ddbj_release[7], 10);
+      var usptosequences = parseInt(ddbj_release[8], 10);
       var genbanksubtotalsequences = genbanksequences + usptosequences;
       
-      var totalsequences = parseInt(ddbj_release[i].gsx$totalsequences.$t, 10);
+      var totalsequences = parseInt(ddbj_release[9], 10);
 
-      var ddbjbases = parseInt(ddbj_release[i].gsx$ddbjbases.$t, 10);
-      var jpobases = parseInt(ddbj_release[i].gsx$jpobases.$t, 10);
-      var kipobases = parseInt(ddbj_release[i].gsx$kipobases.$t, 10);
+      var ddbjbases = parseInt(ddbj_release[10], 10);
+      var jpobases = parseInt(ddbj_release[11], 10);
+      var kipobases = parseInt(ddbj_release[12], 10);
       var ddbjsubtotalbases = ddbjbases + jpobases + kipobases;
 
-      var enabases = parseInt(ddbj_release[i].gsx$enabases.$t, 10);
-      var epobases = parseInt(ddbj_release[i].gsx$epobases.$t, 10);
+      var enabases = parseInt(ddbj_release[13], 10);
+      var epobases = parseInt(ddbj_release[14], 10);
       var enasubtotalbases = enabases + epobases;
 
-      var genbankbases = parseInt(ddbj_release[i].gsx$genbankbases.$t, 10);
-      var usptobases = parseInt(ddbj_release[i].gsx$usptobases.$t, 10);
+      var genbankbases = parseInt(ddbj_release[15], 10);
+      var usptobases = parseInt(ddbj_release[16], 10);
       var genbanksubtotalbases = genbankbases + usptobases;
 
-      var totalbases = parseInt(ddbj_release[i].gsx$totalbases.$t, 10);
+      var totalbases = parseInt(ddbj_release[17], 10);
 
       // リリース毎に配列に格納                            
       chart_seq_a.push([release_no + " (" + year_month + ")", roundFloat(genbanksubtotalsequences/10**6, 2), roundFloat(enasubtotalsequences/10**6, 2), roundFloat(ddbjsubtotalsequences/10**6, 2)]);
@@ -1683,31 +1442,39 @@ function makeDDBJRelease2() {
   google.charts.load('current', {'packages':['corechart', 'table']});
 
   // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['ddbj-category'] + "/public/values?alt=json", function(data) {
+  $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/values/Data categories at each archive?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
-    var ddbj_cat = data.feed.entry;      
-    var release_no = ddbj_cat[0].gsx$release.$t;
+    var release_no = data.values[1][13];
 
-    // Category から Total まで
-    for(var i = 0; i < ddbj_cat.length; i++) {
+    // グラフには total を含めない -1
+    for(var i = 1; i < data.values.length - 1; i++) {
+
+      var ddbj_cat = data.values[i];      
 
       // グラフからは Total を除く
-      if (i < ddbj_cat.length - 1){
-        chart_ddbj_cat_seq_a.push(parseFloat(ddbj_cat[i].gsx$ddbjsequencesproportion.$t, 10));    
-        chart_ena_cat_seq_a.push(parseFloat(ddbj_cat[i].gsx$enasequencesproportion.$t, 10));    
-        chart_genbank_cat_seq_a.push(parseFloat(ddbj_cat[i].gsx$genbanksequencesproportion.$t, 10));    
+      //if (i < ddbj_cat.length - 1){
+        chart_ddbj_cat_seq_a.push(parseFloat(ddbj_cat[2], 10));    
+        chart_ena_cat_seq_a.push(parseFloat(ddbj_cat[4], 10));    
+        chart_genbank_cat_seq_a.push(parseFloat(ddbj_cat[6], 10));    
         
-        chart_ddbj_cat_base_a.push(parseFloat(ddbj_cat[i].gsx$ddbjbasesproportion.$t, 10));    
-        chart_ena_cat_base_a.push(parseFloat(ddbj_cat[i].gsx$enabasesproportion.$t, 10));    
-        chart_genbank_cat_base_a.push(parseFloat(ddbj_cat[i].gsx$genbankbasesproportion.$t, 10));    
-      }
+        chart_ddbj_cat_base_a.push(parseFloat(ddbj_cat[8], 10));    
+        chart_ena_cat_base_a.push(parseFloat(ddbj_cat[10], 10));    
+        chart_genbank_cat_base_a.push(parseFloat(ddbj_cat[12], 10));    
+      //}
 
+   } // for
+
+   // 表には total を含める
+   for(var i = 1; i < data.values.length; i++) {
+      
+      var ddbj_cat = data.values[i];   
+      
       // 表には Total を含める
-      table_cat_seq_a.push([ddbj_cat[i].gsx$category.$t, parseInt(ddbj_cat[i].gsx$ddbjsequences.$t, 10), parseFloat(ddbj_cat[i].gsx$ddbjsequencesproportion.$t, 10), parseInt(ddbj_cat[i].gsx$enasequences.$t, 10), parseFloat(ddbj_cat[i].gsx$enasequencesproportion.$t, 10), parseInt(ddbj_cat[i].gsx$genbanksequences.$t, 10), parseFloat(ddbj_cat[i].gsx$genbanksequencesproportion.$t, 10)])
-      table_cat_base_a.push([ddbj_cat[i].gsx$category.$t, parseInt(ddbj_cat[i].gsx$ddbjbases.$t, 10), parseFloat(ddbj_cat[i].gsx$ddbjbasesproportion.$t, 10), parseInt(ddbj_cat[i].gsx$enabases.$t, 10), parseFloat(ddbj_cat[i].gsx$enabasesproportion.$t, 10), parseInt(ddbj_cat[i].gsx$genbankbases.$t, 10), parseFloat(ddbj_cat[i].gsx$genbankbasesproportion.$t, 10)])
+      table_cat_seq_a.push([ddbj_cat[0], parseInt(ddbj_cat[1], 10), parseFloat(ddbj_cat[2], 10), parseInt(ddbj_cat[3], 10), parseFloat(ddbj_cat[4], 10), parseInt(ddbj_cat[5], 10), parseFloat(ddbj_cat[6], 10)])
+      table_cat_base_a.push([ddbj_cat[0], parseInt(ddbj_cat[7], 10), parseFloat(ddbj_cat[8], 10), parseInt(ddbj_cat[9], 10), parseFloat(ddbj_cat[10], 10), parseInt(ddbj_cat[11], 10), parseFloat(ddbj_cat[12], 10)])
 
-    } // for(var i = 0; i < ddbj_release.length; i++)
-
+   } // for
+ 
     // 棒グラフ描画 size
     google.charts.setOnLoadCallback(CategoryPropSeq);
     google.charts.setOnLoadCallback(CategoryPropSeqTable);
@@ -1732,7 +1499,7 @@ function makeDDBJRelease2() {
       data.addColumn('number', 'STS');
       data.addColumn('number', 'PAT');
       data.addColumn('number', 'WGS');
-      data.addRows([chart_ddbj_cat_seq_a,chart_ena_cat_seq_a,chart_genbank_cat_seq_a]);
+      data.addRows([chart_ddbj_cat_seq_a, chart_ena_cat_seq_a, chart_genbank_cat_seq_a]);
 
       var options ={
         title: title, 
@@ -1840,21 +1607,29 @@ function makeDDBJRelease2() {
   google.charts.load('current', {'packages':['corechart', 'table']});
 
   // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['archive-proportion-category'] + "/public/values?alt=json", function(data) {
+  $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/values/Archive proportion per data category?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
-    var ddbj_cat = data.feed.entry;      
-    var release_no = ddbj_cat[0].gsx$release.$t;
+    var release_no = data.values[1][13];      
+ 
+    // 各 division におけるアーカイブの割合を取得 total をグラフからは除外
+    for(var i = 1; i < data.values.length - 1; i++) {
 
-    // 各 division におけるアーカイブの割合を取得
-    for(var i = 0; i < ddbj_cat.length; i++) {
+      var ddbj_cat = data.values[i];
 
-      chart_div_seq_a.push([ddbj_cat[i].gsx$category.$t, parseFloat(ddbj_cat[i].gsx$ddbjsequencesproportion.$t, 10), parseFloat(ddbj_cat[i].gsx$enasequencesproportion.$t, 10), parseFloat(ddbj_cat[i].gsx$genbanksequencesproportion.$t, 10)]);    
-      chart_div_base_a.push([ddbj_cat[i].gsx$category.$t, parseFloat(ddbj_cat[i].gsx$ddbjbasesproportion.$t, 10), parseFloat(ddbj_cat[i].gsx$enabasesproportion.$t, 10), parseFloat(ddbj_cat[i].gsx$genbankbasesproportion.$t, 10)]);    
+      chart_div_seq_a.push([ddbj_cat[0], parseFloat(ddbj_cat[2], 10), parseFloat(ddbj_cat[4], 10), parseFloat(ddbj_cat[6], 10)]);    
+      chart_div_base_a.push([ddbj_cat[0], parseFloat(ddbj_cat[8], 10), parseFloat(ddbj_cat[10], 10), parseFloat(ddbj_cat[12], 10)]);    
 
-      table_div_seq_a.push([ddbj_cat[i].gsx$category.$t, parseInt(ddbj_cat[i].gsx$ddbjsequences.$t, 10), parseFloat(ddbj_cat[i].gsx$ddbjsequencesproportion.$t, 10), parseInt(ddbj_cat[i].gsx$enasequences.$t, 10), parseFloat(ddbj_cat[i].gsx$enasequencesproportion.$t, 10), parseInt(ddbj_cat[i].gsx$genbanksequences.$t, 10), parseFloat(ddbj_cat[i].gsx$genbanksequencesproportion.$t, 10)]);    
-      table_div_base_a.push([ddbj_cat[i].gsx$category.$t, parseInt(ddbj_cat[i].gsx$ddbjbases.$t, 10), parseFloat(ddbj_cat[i].gsx$ddbjbasesproportion.$t, 10), parseInt(ddbj_cat[i].gsx$enabases.$t, 10), parseFloat(ddbj_cat[i].gsx$enabasesproportion.$t, 10), parseInt(ddbj_cat[i].gsx$genbankbases.$t, 10), parseFloat(ddbj_cat[i].gsx$genbankbasesproportion.$t, 10)]);    
+    } // for
 
-    } // for(var i = 0; i < ddbj_release.length; i++)
+    // 表には total を含める
+    for(var i = 1; i < data.values.length; i++) {
+
+      var ddbj_cat = data.values[i];
+
+      table_div_seq_a.push([ddbj_cat[0], parseInt(ddbj_cat[1], 10), parseFloat(ddbj_cat[2], 10), parseInt(ddbj_cat[3], 10), parseFloat(ddbj_cat[4], 10), parseInt(ddbj_cat[5], 10), parseFloat(ddbj_cat[6], 10)]);    
+      table_div_base_a.push([ddbj_cat[0], parseInt(ddbj_cat[7], 10), parseFloat(ddbj_cat[8], 10), parseInt(ddbj_cat[9], 10), parseFloat(ddbj_cat[10], 10), parseInt(ddbj_cat[11], 10), parseFloat(ddbj_cat[12], 10)]);    
+
+    } // for
 
     // 棒グラフ描画 size
     google.charts.setOnLoadCallback(DivPropSeq);
@@ -1976,30 +1751,35 @@ function makeDDBJRelease2() {
   google.charts.load('current', {'packages':['corechart', 'table']});
 
   // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['organism-archive'] + "/public/values?alt=json", function(data) {
+  $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/values/Organism distribution at each archive?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
-    var ddbj_tax = data.feed.entry;      
-    var release_no = ddbj_tax[0].gsx$release.$t;
+    var release_no = data.values[1][13];
 
     // Tax から Total まで
-    for(var i = 0; i < ddbj_tax.length; i++) {
+    for(var i = 1; i < data.values.length - 1; i++) {
 
-      // グラフからは Total を除く
-      if (i < ddbj_tax.length - 1){
-        chart_ddbj_tax_seq_a.push(parseFloat(ddbj_tax[i].gsx$ddbjsequencesproportion.$t, 10));    
-        chart_ena_tax_seq_a.push(parseFloat(ddbj_tax[i].gsx$enasequencesproportion.$t, 10));    
-        chart_genbank_tax_seq_a.push(parseFloat(ddbj_tax[i].gsx$genbanksequencesproportion.$t, 10));    
-        
-        chart_ddbj_tax_base_a.push(parseFloat(ddbj_tax[i].gsx$ddbjbasesproportion.$t, 10));    
-        chart_ena_tax_base_a.push(parseFloat(ddbj_tax[i].gsx$enabasesproportion.$t, 10));    
-        chart_genbank_tax_base_a.push(parseFloat(ddbj_tax[i].gsx$genbankbasesproportion.$t, 10));    
-      }
+      var ddbj_tax = data.values[i];     
+
+      chart_ddbj_tax_seq_a.push(parseFloat(ddbj_tax[2], 10));    
+      chart_ena_tax_seq_a.push(parseFloat(ddbj_tax[4], 10));    
+      chart_genbank_tax_seq_a.push(parseFloat(ddbj_tax[6], 10));    
+
+      chart_ddbj_tax_base_a.push(parseFloat(ddbj_tax[8], 10));    
+      chart_ena_tax_base_a.push(parseFloat(ddbj_tax[10], 10));    
+      chart_genbank_tax_base_a.push(parseFloat(ddbj_tax[12], 10));    
+
+    } // for
+
+    // 表には total を含める
+    for(var i = 1; i < data.values.length; i++) {
+
+     var ddbj_tax = data.values[i];     
 
       // 表には Total を含める
-      table_tax_seq_a.push([ddbj_tax[i].gsx$category.$t, parseInt(ddbj_tax[i].gsx$ddbjsequences.$t, 10), parseFloat(ddbj_tax[i].gsx$ddbjsequencesproportion.$t, 10), parseInt(ddbj_tax[i].gsx$enasequences.$t, 10), parseFloat(ddbj_tax[i].gsx$enasequencesproportion.$t, 10), parseInt(ddbj_tax[i].gsx$genbanksequences.$t, 10), parseFloat(ddbj_tax[i].gsx$genbanksequencesproportion.$t, 10)])
-      table_tax_base_a.push([ddbj_tax[i].gsx$category.$t, parseInt(ddbj_tax[i].gsx$ddbjbases.$t, 10), parseFloat(ddbj_tax[i].gsx$ddbjbasesproportion.$t, 10), parseInt(ddbj_tax[i].gsx$enabases.$t, 10), parseFloat(ddbj_tax[i].gsx$enabasesproportion.$t, 10), parseInt(ddbj_tax[i].gsx$genbankbases.$t, 10), parseFloat(ddbj_tax[i].gsx$genbankbasesproportion.$t, 10)])
+      table_tax_seq_a.push([ddbj_tax[0], parseInt(ddbj_tax[1], 10), parseFloat(ddbj_tax[2], 10), parseInt(ddbj_tax[3], 10), parseFloat(ddbj_tax[4], 10), parseInt(ddbj_tax[5], 10), parseFloat(ddbj_tax[6], 10)])
+      table_tax_base_a.push([ddbj_tax[0], parseInt(ddbj_tax[7], 10), parseFloat(ddbj_tax[8], 10), parseInt(ddbj_tax[9], 10), parseFloat(ddbj_tax[10], 10), parseInt(ddbj_tax[11], 10), parseFloat(ddbj_tax[12], 10)])
 
-    } // for(var i = 0; i < ddbj_release.length; i++)
+    } // for
 
     // 棒グラフ描画 size
     google.charts.setOnLoadCallback(TaxPropSeq);
@@ -2019,14 +1799,13 @@ function makeDDBJRelease2() {
       data.addColumn('number', 'PRI');
       data.addColumn('number', 'ROD');
       data.addColumn('number', 'MAM');
-      data.addColumn('number', 'VRT');
       data.addColumn('number', 'INV');
       data.addColumn('number', 'PLN');
       data.addColumn('number', 'BCT');
       data.addColumn('number', 'VRL');
       data.addColumn('number', 'PHG');
       data.addColumn('number', 'ENV');
-      data.addRows([chart_ddbj_tax_seq_a,chart_ena_tax_seq_a,chart_genbank_tax_seq_a]);
+      data.addRows([chart_ddbj_tax_seq_a, chart_ena_tax_seq_a, chart_genbank_tax_seq_a]);
 
       var options ={
         title: title, 
@@ -2076,14 +1855,13 @@ function makeDDBJRelease2() {
       data.addColumn('number', 'PRI');
       data.addColumn('number', 'ROD');
       data.addColumn('number', 'MAM');
-      data.addColumn('number', 'VRT');
       data.addColumn('number', 'INV');
       data.addColumn('number', 'PLN');
       data.addColumn('number', 'BCT');
       data.addColumn('number', 'VRL');
       data.addColumn('number', 'PHG');
       data.addColumn('number', 'ENV');
-      data.addRows([chart_ddbj_tax_base_a,chart_ena_tax_base_a,chart_genbank_tax_base_a]);
+      data.addRows([chart_ddbj_tax_base_a, chart_ena_tax_base_a, chart_genbank_tax_base_a]);
 
       var options ={
         title: title, 
@@ -2132,14 +1910,14 @@ function makeDDBJRelease2() {
   google.charts.load('current', {'packages':['corechart', 'table']});
 
   // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['organism-ranking'] + "/public/values?alt=json", function(data) {
+  $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/values/Organism ranking?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
-    var org_rank = data.feed.entry;      
     var org_rank_limit = 19;
 
     // ranking 1-20
-    for(var i = 0; i <= org_rank_limit; i++) {
-      table_org_ranking_a.push([parseInt(org_rank[i].gsx$rank.$t, 10), org_rank[i].gsx$organism.$t, parseInt(org_rank[i].gsx$sequences.$t, 10), parseInt(org_rank[i].gsx$bases.$t, 10)]);    
+    for(var i = 1; i <= org_rank_limit; i++) {
+      var org_rank = data.values[i];      
+      table_org_ranking_a.push([parseInt(org_rank[0], 10), org_rank[1], parseInt(org_rank[2], 10), parseInt(org_rank[3], 10)]);    
     }
 
     // 棒グラフ描画 size
@@ -2171,14 +1949,14 @@ function makeDDBJRelease2() {
   google.charts.load('current', {'packages':['corechart', 'table']});
 
   // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
-  $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/" + sheet_position_h['journal-ranking'] + "/public/values?alt=json", function(data) {
-
-    var journal_rank = data.feed.entry;      
+  $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/values/Journal ranking?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
+    
     var journal_rank_limit = 19;
 
     // ranking 1-20
-    for(var i = 0; i <= journal_rank_limit; i++) {
-      table_journal_ranking_a.push([parseInt(journal_rank[i].gsx$rank.$t, 10), journal_rank[i].gsx$journal.$t, parseInt(journal_rank[i].gsx$counts.$t, 10)]);    
+    for(var i = 1; i <= journal_rank_limit; i++) {
+      var journal_rank = data.values[i];  
+      table_journal_ranking_a.push([parseInt(journal_rank[0], 10), journal_rank[1], parseInt(journal_rank[2], 10)]);    
     }
 
     // 棒グラフ描画 size
