@@ -45,9 +45,9 @@ SARS-CoV-2のゲノム情報は[ **GISAID** ](https://www.gisaid.org/)にもあ�
 	  (ゲノム配列に低深度領域（リード深度<10）があるものは登録していません。)
 
 - 本コンソーシアム賛同機関によるSARS-CoV-2ゲノム配列
-	- 慶応大学 [BS000685-BS000694](http://getentry.ddbj.nig.ac.jp/getentry/na/BS000685-BS000694/)
-	- 慶応大学 [BS000695-BS001136](http://getentry.ddbj.nig.ac.jp/getentry/na/BS000695-BS001136/)
-	- 遺伝研＋インターパーク倉持呼吸器内科[BS001137-BS001144](http://getentry.ddbj.nig.ac.jp/getentry/na/BS001137-BS001144/)
+	- 慶応義塾大学 [BS000685-BS000694](http://getentry.ddbj.nig.ac.jp/getentry/na/BS000685-BS000694/)
+	- 慶応義塾大学 [BS000695-BS001136](http://getentry.ddbj.nig.ac.jp/getentry/na/BS000695-BS001136/)
+	- インターパーク倉持呼吸器内科[BS001137-BS001144](http://getentry.ddbj.nig.ac.jp/getentry/na/BS001137-BS001144/)
 
 
 ## 大学共同利用機関法人 情報・システム研究機構としての取り組み
