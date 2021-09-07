@@ -4,7 +4,7 @@ title: SARS-CoV-2
 lang: jp
 ---
 
-# SARS-CoV-2ゲノム配列登録情報 by Japan Covid-19 Open Data Consortium 
+## SARS-CoV-2ゲノム配列登録情報 by Japan Covid-19 Open Data Consortium 
 
 「Japan Covid-19 Open Data Consortium」は、より自由な情報の流通を目指して、ゲノム情報を DDBJに登録することに賛同する研究者のコンソーシアムです 。
 SARS-CoV-2のゲノム情報は[ **GISAID** ](https://www.gisaid.org/)にもありますが、厳しい利用制約により解析や検証の大きな妨げとなっています。DDBJに登録した情報は、GISAIDにも登録します。
