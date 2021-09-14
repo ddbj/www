@@ -10,6 +10,4 @@ date: 2020-10-15T11:19:00
 lang: en
 ---
 
-
-
-<p>Regular indexing of new data has not been implemented to <a href="https://ddbj.nig.ac.jp/search">DDBJ Search</a>. This will be implemented in November 2020. Please search <a href="https://humandbs.biosciencedbc.jp/en/data-use/all-researches">the list of researches at the NBDC Human Database</a>. </p>
+Regular indexing of new data has not been implemented to [DDBJ Search](https://ddbj.nig.ac.jp/search). This will be implemented in November 2020. Please search [the list of researches at the NBDC Human Database](https://humandbs.biosciencedbc.jp/en/data-use/all-researches). 

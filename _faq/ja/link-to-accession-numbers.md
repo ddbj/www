@@ -10,6 +10,4 @@ date: 2014-06-18T11:09:41
 lang: ja
 ---
 
-
-
-<a href="/services/getentry.html#ge_createlinks">DDBJ エントリへのリンク設定方法</a>  をご参照ください。
+[DDBJ エントリへのリンク設定方法](/services/getentry.html#ge_createlinks)をご参照ください。

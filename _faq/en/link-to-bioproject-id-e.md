@@ -10,6 +10,4 @@ date: 2014-01-23T11:13:09
 lang: en
 ---
 
-
-
-<p>From 12th, May, 2014, the DDBJ SRA uses the BioProject instead of SRA Study. Please select the BioProject accession in the DRA submission system.</p>
+From 12th, May, 2014, the DDBJ SRA uses the BioProject instead of SRA Study. Please select the BioProject accession in the DRA submission system.
