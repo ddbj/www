@@ -10,6 +10,6 @@ date: 2014-06-16T16:59:44
 lang: en
 ---
 
-
-
-<p>DDBJ can not accept only assembled EST sequences. However, DDBJ can accept EST assembled sequences as <a href="/ddbj/tsa-e.html">TSA</a> with original (i.e. before assemble) sequence data. See also <a href="/ddbj/transcriptome-e.html">Data Submission form Transcriptome Project</a>. <br>When original sequence data (primary entries) are generated from Next Generation Sequencers, submit to <a href="/dra/index-e.html">DDBJ sequence Read Archive (DRA)</a>, from traditional sequencers, submit as <a href="/ddbj/est-e.html">EST</a> via <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. <br>Then, DDBJ can accept assembled sequences (both <em>de novo</em> and reference mapping) as TSA through MSS. </p>
+DDBJ can not accept only assembled EST sequences. However, DDBJ can accept EST assembled sequences as [TSA](/ddbj/tsa-e.html) with original (i.e. before assemble) sequence data. See also [Data Submission form Transcriptome Project](/ddbj/transcriptome-e.html).    
+When original sequence data (primary entries) are generated from Next Generation Sequencers, submit to [DDBJ sequence Read Archive (DRA)](/dra/index-e.html), from traditional sequencers, submit as [EST](/ddbj/est-e.html) via [Mass Submission System (MSS)](/ddbj/mss-e.html).    
+Then, DDBJ can accept assembled sequences (both *de novo* and reference mapping) as TSA through MSS. 

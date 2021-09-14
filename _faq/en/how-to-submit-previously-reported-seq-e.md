@@ -10,6 +10,4 @@ date: 2014-06-16T15:41:10
 lang: en
 ---
 
-
-
-<p>If your annotation meets the requirements of <a href="/ddbj/tpa-table-e.html">TPA Submission Guidelines</a>, DDBJ can accept it as <a href="/ddbj/tpa-e.html">TPA (Third Party Data)</a>. </p>
+If your annotation meets the requirements of [TPA Submission Guidelines](/ddbj/tpa-table-e.html), DDBJ can accept it as [TPA (Third Party Data)](/ddbj/tpa-e.html). 

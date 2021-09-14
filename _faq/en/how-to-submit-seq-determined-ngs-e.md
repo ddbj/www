@@ -11,6 +11,7 @@ date: 2014-06-16T18:06:53
 lang: en
 ---
 
-
-
-<p>See <a href="/documents/data-categories-e.html">Categories for Sequence Data</a>. <br>Please submit raw reads generated from Next Generation Sequencers to <a href="/dra/index-e.html">DDBJ sequence Read Archive</a>. <br>See also <a href="/ddbj/genome-e.html">Data Submission from Genome Project</a> or <a href="/ddbj/transcriptome-e.html">Data Submission from Transcriptome Project</a>. <br>Please submit assembled sequences through <a href="/ddbj/mss-e.html">Mass Submission System</a>, if necessary. </p>
+See [Categories for Sequence Data](/documents/data-categories-e.html).    
+Please submit raw reads generated from Next Generation Sequencers to [DDBJ sequence Read Archive](/dra/index-e.html).    
+See also [Data Submission from Genome Project](/ddbj/genome-e.html) or [Data Submission from Transcriptome Project](/ddbj/transcriptome-e.html).    
+Please submit assembled sequences through [Mass Submission System](/ddbj/mss-e.html), if necessary. 

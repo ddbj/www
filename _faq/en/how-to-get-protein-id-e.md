@@ -10,6 +10,4 @@ date: 2014-07-03T18:16:31
 lang: en
 ---
 
-
-
-<p>The <a href="/ddbj/qualifiers-e.html#protein_id">protein_id</a> will be automatically assigned at DDBJ during release of your nucleotide sequence with <a href="/ddbj/cds-e.html">CDS feature</a>. </p>
+The [protein_id](/ddbj/qualifiers-e.html#protein_id) will be automatically assigned at DDBJ during release of your nucleotide sequence with [CDS feature](/ddbj/cds-e.html). 

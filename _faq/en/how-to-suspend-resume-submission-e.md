@@ -10,6 +10,4 @@ date: 2014-07-03T17:58:18
 lang: en
 ---
 
-
-
-<p>See <a href="/ddbj/web-submission-help-e.html#flow-2-1">How to suspend/resume</a>. </p>
+See [How to suspend/resume](/ddbj/web-submission-help-e.html#flow-2-1). 

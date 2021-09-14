@@ -10,6 +10,4 @@ date: 2014-06-02T15:17:45
 lang: ja
 ---
 
-
-
-<p><a href="/ddbj/tpa.html">TPA (Third Party Data)</a>の<a href="/ddbj/tpa-table-e.html">登録基準</a>を満たす場合は登録可能です。</p>
+[TPA (Third Party Data)](/ddbj/tpa.html) の[登録基準](/ddbj/tpa-table-e.html)を満たす場合は登録可能です。

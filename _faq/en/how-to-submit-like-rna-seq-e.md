@@ -10,7 +10,4 @@ date: 2014-06-16T18:20:56
 lang: en
 ---
 
-
-
-<p>Please submit raw reads of sequence-based expression data to <a href="/dra/index-e.html">DDBJ Sequence Read Archive</a>.
-  <!-- Please submit analyzed data to <a href="http://trace.ddbj.nig.ac.jp/dor/index_e.html">DDBJ Omics Archive</a>. --></p>
+Please submit raw reads of sequence-based expression data to [DDBJ Sequence Read Archive](/dra/index-e.html).
