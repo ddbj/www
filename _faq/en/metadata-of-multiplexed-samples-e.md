@@ -10,6 +10,4 @@ date: 2014-01-23T11:14:16
 lang: en
 ---
 
-
-
-<p>Divide sequence data files per sample and submit each file as single BioSample-Experiment-Run set. If you need to describe the relationship between barcode sequence and sample, please describe in the <a href="/dra/submission.html#Library_Construction_Protocol">Library Construction Protocol of Experiment</a> as free-text.</p>
+Divide sequence data files per sample and submit each file as single BioSample-Experiment-Run set. If you need to describe the relationship between barcode sequence and sample, please describe in the [Library Construction Protocol of Experiment](/dra/submission.html#Library_Construction_Protocol) as free-text.
