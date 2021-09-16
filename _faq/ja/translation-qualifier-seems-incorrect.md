@@ -12,12 +12,13 @@ date: 2014-06-03T17:08:55
 lang: ja
 ---
 
+アミノ酸翻訳の仕様は[国際塩基配列データベース](/about/insdc.html)の規約で決まっています。    
+当該 CDS feature がアミノ酸翻訳される際の遺伝暗号表は /[transl_table](/ddbj/qualifiers.html#transl_table) qualifier に [The Genetic Codes](/ddbj/geneticcode-e.html) の番号で示されます。    
+よく誤解される点を３つ挙げておきます。
 
+- オルガネラ; /[organelle](/ddbj/qualifiers.html#organelle) qualifier を指定しなければ、ミトコンドリアなどの genetic code が正しく反映されません。
+- 開始コドンと扱う場合は M Met メチオニンと扱います。G あるいは V にはなりません。    
+   参照; [Start codon](http://en.wikipedia.org/wiki/Start_codon), [N-Formylmethionine](http://en.wikipedia.org/wiki/Formylmethionine)
+- コドン縮重により、２塩基でも翻訳アミノ酸が一意に決定可能な場合は出力します。
 
-<p>アミノ酸翻訳の仕様は<a href="/about/insdc.html">国際塩基配列データベース</a>の規約で決まっています。<br>当該 CDS feature がアミノ酸翻訳される際の遺伝暗号表は /<a href="/ddbj/qualifiers.html#transl_table">transl_table</a> qualifier に <a href="/ddbj/geneticcode-e.html">The Genetic Codes</a> の番号で示されます。<br>よく誤解される点を３つ挙げておきます。</p>
-<ul>
-  <li>オルガネラ; /<a href="/ddbj/qualifiers.html#organelle">organelle</a> qualifier を指定しなければ、ミトコンドリアなどの genetic code が正しく反映されません。</li>
-  <li>開始コドンと扱う場合は M Met メチオニンと扱います。G あるいは V にはなりません。<br> 参照; <a href="http://en.wikipedia.org/wiki/Start_codon">Start codon</a>, <a href="http://en.wikipedia.org/wiki/Formylmethionine">N-Formylmethionine</a></li>
-  <li>コドン縮重により、２塩基でも翻訳アミノ酸が一意に決定可能な場合は出力します。</li>
-</ul>
-<p>また、<a href="/ddbj/cds.html#stop_e">RNA editing</a> に代表される<a href="/faq/ja/how-to-describe-not-standard-genetic-code.html">特殊な例外</a>の記載もあります。</p>
+また、[RNA editing](/ddbj/cds.html#stop_e) に代表される[特殊な例外](/faq/ja/how-to-describe-not-standard-genetic-code.html)の記載もあります。

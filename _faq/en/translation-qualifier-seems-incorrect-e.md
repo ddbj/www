@@ -12,13 +12,13 @@ date: 2014-07-03T16:28:42
 lang: en
 ---
 
+The rule to translate nucleotide sequence into amino acid sequence is specified in accordance with agreements of [International Nucleotide Sequence Database Collaboration](/about/insdc-e.html).     
+The codon table using a CDS feature is specified in the value of /[transl_table](/ddbj/qualifiers-e.html#transl_table) qualifier as a number of [The Genetic Codes](/ddbj/geneticcode-e.html). 
 
+There are three points frequently misunderstood. 
+- You should specify /[organelle](/ddbj/qualifiers-e.html#organelle) qualifier to assign correct genetic code for mitochondrion or chloroplast. 
+- The initiation codon is M, Met, methyonine, not G or V.     
+   See [Start codon](http://en.wikipedia.org/wiki/Start_codon) and [N-Formylmethionine](http://en.wikipedia.org/wiki/Formylmethionine)
+- When an amino acid can be specified by two bases (i.e. degeneracy of codons), it will be outputted. 
 
-<p>The rule to translate nucleotide sequence into amino acid sequence is specified in accordance with agreements of <a href="/about/insdc-e.html">International Nucleotide Sequence Database Collaboration</a>. <br>The codon table using a CDS feature is specified in the value of /<a href="/ddbj/qualifiers-e.html#transl_table">transl_table</a> qualifier as a number of <a href="/ddbj/geneticcode-e.html">The Genetic Codes</a>. </p>
-<p>There are three points frequently misunderstood. </p>
-<ul>
-  <li>You should specify /<a href="/ddbj/qualifiers-e.html#organelle">organelle</a> qualifier to assign correct genetic code for mitochondrion or chloroplast. </li>
-  <li>The initiation codon is M, Met, methyonine, not G or V. <br> See <a href="http://en.wikipedia.org/wiki/Start_codon">Start codon</a> and <a href="http://en.wikipedia.org/wiki/Formylmethionine">N-Formylmethionine</a></li>
-  <li>When an amino acid can be specified by two bases (i.e. degeneracy of codons), it will be outputted. </li>
-</ul>
-<p>There are some <a href="/faq/en/how-to-describe-not-standard-genetic-code-e.html">exceptional cases</a>, represented by <a href="/ddbj/cds-e.html#stop_e">RNA editing</a> and so on. </p>
+There are some [exceptional cases](/faq/en/how-to-describe-not-standard-genetic-code-e.html), represented by [RNA editing](/ddbj/cds-e.html#stop_e) and so on. 
