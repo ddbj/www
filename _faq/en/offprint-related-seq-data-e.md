@@ -11,6 +11,5 @@ date: 2014-06-18T15:16:16
 lang: en
 ---
 
-
-
-<p>Generally, DDBJ do not need any offprint to process your data. <br>Occasionally, DDBJ may contact the submitter of sequence data to ask sending an offprint, if necessary. </p>
+Generally, DDBJ do not need any offprint to process your data.    
+Occasionally, DDBJ may contact the submitter of sequence data to ask sending an offprint, if necessary. 

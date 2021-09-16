@@ -10,6 +10,4 @@ date: 2014-06-02T15:48:07
 lang: ja
 ---
 
-
-
-<p><a href="/ddbj/organism.html">organism qualifier に記載する生物名</a>に関しましては、<a href="/ddbj/organism.html#syn">人工的に構築した配列</a> をご参照ください。</p>
+[organism qualifier に記載する生物名](/ddbj/organism.html)に関しましては、[人工的に構築した配列](/ddbj/organism.html#syn) をご参照ください。

@@ -10,6 +10,4 @@ date: 2014-06-03T18:00:23
 lang: ja
 ---
 
-
-
-<p><a href="/documents/data-release-policy.html">データ公開原則</a>、ならびに <a href="/about/insdc.html#policy">登録データの取り扱いについて</a> をご覧ください。</p>
+[データ公開原則](/documents/data-release-policy.html)、ならびに [登録データの取り扱いについて](/about/insdc.html#policy) をご覧ください。

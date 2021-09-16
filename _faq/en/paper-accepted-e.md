@@ -10,6 +10,4 @@ date: 2014-06-09T16:36:58
 lang: en
 ---
 
-
-
-<p>Contact us from <a href="/ddbj/update-form-e.html">this form</a> with "Our paper was accepted" in [Subject]. </p>
+Contact us from [this form](/ddbj/update-form-e.html) with "Our paper was accepted" in [Subject]. 

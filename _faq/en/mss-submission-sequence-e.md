@@ -10,4 +10,8 @@ date: 2020-11-25T11:19:00
 lang: en
 ---
 
-<p>No. Both annotation and sequence files are necessary for an MSS submission. Please visit the following sites for detailed instructions to prepare submission files. <a href="/ddbj/file-format-e.html#sequence">Sequence file</a>, <a href="/ddbj/file-format-e.html#annotation">Annotation file</a>, <a href="/ddbj/file-format-e.html#sample">Sample annotation file</a>.</p>
+No. Both annotation and sequence files are necessary for an MSS submission.    
+Please visit the following sites for detailed instructions to prepare submission files.    
+- [Sequence file](/ddbj/file-format-e.html#sequence)
+- [Annotation file](/ddbj/file-format-e.html#annotation)
+- [Sample annotation file](/ddbj/file-format-e.html#sample)

@@ -10,6 +10,4 @@ date: 2020-09-28T11:19:00
 lang: en
 ---
 
-
-
-<p>Please see '<a href="/jga/update-202009-e.html">The new JGA system</a>' page.</p>
+Please see '[The new JGA system](/jga/update-202009-e.html)' page.

@@ -10,6 +10,4 @@ date: 2014-05-30T18:02:55
 lang: en
 ---
 
-
-
-<p>Contact us from <a href="/ddbj/update-form-e.html">this form</a> with "Our paper was published" in [Subject]. </p>
+Contact us from [this form](/ddbj/update-form-e.html) with "Our paper was published" in [Subject].

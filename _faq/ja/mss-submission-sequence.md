@@ -10,4 +10,6 @@ date: 2020-11-25T11:19:00
 lang: ja
 ---
 
-<p>いいえ、配列ファイルのみでは登録できません。アノテーションファイルが必要です。<a href="/ddbj/file-format.html#sequence">配列ファイル</a>形式、<a href="/ddbj/file-format.html#annotation">アノテーションファイル形式</a>をご確認ください。<a href="/ddbj/file-format.html#sample">こちら</a>のサイトで、サンプルアノテーションをご覧ください。</p>
+いいえ、配列ファイルのみでは登録できません。アノテーションファイルが必要です。    
+[配列ファイル形式](/ddbj/file-format.html#sequence)、[アノテーションファイル形式](/ddbj/file-format.html#annotation)をご確認ください。    
+[こちら](/ddbj/file-format.html#sample)のサイトで、サンプルアノテーションをご覧ください。

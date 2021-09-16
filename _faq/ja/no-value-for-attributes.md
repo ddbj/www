@@ -10,6 +10,4 @@ date: 2014-09-02T16:41:38
 lang: ja
 ---
 
-
-
-<a href="/biosample/submission.html#missing-value-reporting">値がない場合の記載方法</a>をご覧ください。
+[値がない場合の記載方法](/biosample/submission.html#missing-value-reporting)をご覧ください。

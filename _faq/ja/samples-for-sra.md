@@ -14,6 +14,5 @@ lang: ja
 ---
 
 以下のページをご参照ください。
-
 - [サンプルの粒度](/biosample/submission.html#granularity)
 - [ゲノムアセンブル用サンプル](/biosample/genome-assembly-sample.html)

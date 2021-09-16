@@ -10,13 +10,9 @@ date: 2014-06-03T17:01:57
 lang: ja
 ---
 
-
-
-<p>以下をご参照ください。</p>
-<ul>
-  <li><a href="/ddbj/feature-table-e.html">The DDBJ/EMBL/GenBank Feature Table Definition</a></li>
-  <li><a href="/ddbj/features.html">Feature key の定義</a></li>
-  <li><a href="/ddbj/qualifiers.html">Qualifier key の定義</a></li>
-  <li><a href="/ddbj/example.html">登録の見本</a></li>
-  <li><a href="/ddbj/features.html#usage">Feature/Qualifier 対応一覧表</a></li>
-</ul>
+以下をご参照ください。
+ - [The DDBJ/EMBL/GenBank Feature Table Definition](/ddbj/feature-table-e.html)
+ - [Feature key の定義](/ddbj/features.html)
+ - [Qualifier key の定義](/ddbj/qualifiers.html)
+ - [登録の見本](/ddbj/example.html)
+ - [Feature/Qualifier 対応一覧表](/ddbj/features.html#usage)

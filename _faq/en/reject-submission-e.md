@@ -10,10 +10,7 @@ date: 2014-07-01T16:22:45
 lang: en
 ---
 
+See [Acceptable data for DDBJ](/documents/data-categories-e.html#accept).    
+If you have any question, please contact us from [contact form](/contact-ddbj-e.html#to-ddbj). 
 
-
-<p>See <a href="/documents/data-categories-e.html#accept">Acceptable data for DDBJ</a>. <br>
-If you have any question, please contact us from <a href="/contact-ddbj-e.html#to-ddbj">contact form</a>. </p>
-<dl><dt>Reference</dt>
-  <dd><a href="/faq/en/restricton-seq-length-e.html">Is there any restriction of sequence length to submit to DDBJ?</a></dd>
-</dl>
+Reference: [Is there any restriction of sequence length to submit to DDBJ?](/faq/en/restricton-seq-length-e.html)

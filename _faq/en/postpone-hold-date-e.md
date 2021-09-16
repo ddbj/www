@@ -10,6 +10,4 @@ date: 2014-06-09T16:48:31
 lang: en
 ---
 
-
-
-<p>Contact us from <a href="/ddbj/update-form-e.html">this form</a> by selecting "Change the hold-date" in [Subject]. </p>
+Contact us from [this form](/ddbj/update-form-e.html) by selecting "Change the hold-date" in [Subject]. 

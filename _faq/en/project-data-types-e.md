@@ -10,9 +10,10 @@ date: 2014-11-20T09:14:27
 lang: en
 ---
 
+No, you do not. You should organize your BioProjects the most appropriate way for your research effort.
 
+From [12 November 2014](/news/en/2014-11-12-e.html), multiple [Project data types](/bioproject/submission.html#Project_data_type) can be selected for a project in the submission system.
 
-<p>No, you do not. You should organize your BioProjects the most appropriate way for your research effort.</p>
-<p>From <a href="/news/en/2014-11-12-e.html">12 November 2014</a>, multiple <a href="/bioproject/submission.html#Project_data_type">Project data types</a> can be selected for a project in the submission system.</p>
-<p>To merge genome sequencing and transcriptome analysis projects, select both 'Genome Sequencing' and 'Transcriptome or Gene Expression' for the <a href="/bioproject/submission.html#Project_data_type">Project data type</a>. One material is allowed for the <a href="/bioproject/submission.html#Material">Material</a>, so select 'Other'.</p>
-<p>Another way is to register 'Genome Sequencing' and 'Transcriptome or Gene Expression' as separate projects and unite them by an <a href="/bioproject/submission.html#Use_an_umbrella_project">Umbrella BioProject</a>.</p>
+To merge genome sequencing and transcriptome analysis projects, select both 'Genome Sequencing' and 'Transcriptome or Gene Expression' for the [Project data type](/bioproject/submission.html#Project_data_type). One material is allowed for the [Material](/bioproject/submission.html#Material), so select 'Other'.
+
+Another way is to register 'Genome Sequencing' and 'Transcriptome or Gene Expression' as separate projects and unite them by an [Umbrella BioProject](/bioproject/submission.html#Use_an_umbrella_project).

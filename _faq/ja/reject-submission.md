@@ -10,10 +10,7 @@ date: 2014-06-03T16:09:25
 lang: ja
 ---
 
+[DDBJ に登録可能なデータ](/documents/data-categories.html#accept) をご参照ください。    
+不明な点は[DDBJへのお問い合わせ](/contact-ddbj.html#to-ddbj) よりお願いいたします。
 
-
-<p><a href="/documents/data-categories.html#accept">DDBJ に登録可能なデータ</a> をご参照ください。 <br>
-不明な点は<a href="/contact-ddbj.html#to-ddbj">DDBJへのお問い合わせ</a> よりお願いいたします。</p>
-<dl><dt>参考</dt>
-  <dd><a href="/faq/ja/restricton-seq-length.html">登録する塩基配列の長さに制限はありますか</a></dd>
-</dl>
+参考: [登録する塩基配列の長さに制限はありますか](/faq/ja/restricton-seq-length.html)

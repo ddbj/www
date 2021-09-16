@@ -10,6 +10,4 @@ date: 2014-06-16T17:44:11
 lang: en
 ---
 
-
-
-<p>For description of <a href="/ddbj/organism-e.html">organism qualifier</a>, see <a href="/ddbj/organism-e.html#syn">4. Artificially constructed sequences</a>. </p>
+For description of [organism qualifier](/ddbj/organism-e.html), see [4. Artificially constructed sequences](/ddbj/organism-e.html#syn).

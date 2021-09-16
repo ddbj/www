@@ -10,6 +10,8 @@ date: 2014-06-16T17:18:24
 lang: en
 ---
 
+See [Organism qualifier](/ddbj/organism-e.html).    
+For detail, see either of following cases;
 
-
-<p>See <a href="/ddbj/organism-e.html">Organism qualifier</a>. <br>For detail, see either of following cases; <br><a href="/ddbj/organism-e.html#unidentified">2. In case of unidentified species names, proposing a new species etc.</a><br><a href="/ddbj/organism-e.html#env">3. environmental sample</a><br></p>
+[2. In case of unidentified species names, proposing a new species etc.](/ddbj/organism-e.html#unidentified)    
+[3. environmental sample](/ddbj/organism-e.html#env)

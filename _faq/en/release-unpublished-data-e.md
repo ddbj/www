@@ -10,6 +10,4 @@ date: 2014-07-01T18:23:31
 lang: en
 ---
 
-
-
-<p>See <a href="/documents/data-release-policy-e.html">Principle of “Hold-Until-Published” data release</a> and <a href="/about/insdc-e.html#policy">Overview of International Nucleotide Sequence Databases Policies</a>. </p>
+See [Principle of “Hold-Until-Published” data release](/documents/data-release-policy-e.html) and [Overview of International Nucleotide Sequence Databases Policies](/about/insdc-e.html#policy). 
