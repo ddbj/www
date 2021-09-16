@@ -10,6 +10,4 @@ date: 2017-10-14T10:08:00
 lang: en
 ---
 
-
-
-<p>You can request from "<a href="/subscribe-ddbj-e.html">Application for DDBJ Mail Magazine</a>" page.</p>
+You can request from (/subscribe-ddbj-e.html)[Application for DDBJ Mail Magazine]" page.

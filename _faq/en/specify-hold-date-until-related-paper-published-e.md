@@ -10,11 +10,14 @@ date: 2014-07-03T11:15:08
 lang: en
 ---
 
+See "[Why is the hold-date required?](/documents/data-release-policy-e.html#requirement)". Please specify the date.    
+Though DDBJ does not restrict the date, we strongly recommend to specify the date within two years.    
+If not specified, the data will be published, immediately. 
 
+After data submission, you can change the hold date as needed.     
+Contact us from [this form](/ddbj/update-form-e.html) by selecting "Change the hold-date" in [Subject]. 
 
-<p>See "<a href="/documents/data-release-policy-e.html#requirement">Why is the hold-date required?</a>". Please specify the date. <br>Though DDBJ does not restrict the date, we strongly recommend to specify the date within two years. <br>If not specified, the data will be published, immediately. </p>
-<p>After data submission, you can change the hold date as needed. <br>Contact us from <a href="/ddbj/update-form-e.html">this form</a> by selecting "Change the hold-date" in [Subject]. </p>
-<dl><dt>References</dt>
-  <dd><a href="/faq/en/postpone-hold-date-e.html">How to postpone the hold date?</a></dd>
-  <dd><a href="/documents/data-release-policy-e.html">Principle of “Hold-Until-Published” data release</a></dd>
-</dl>
+References
+: - [How to postpone the hold date?](/faq/en/postpone-hold-date-e.html)
+ - [Principle of “Hold-Until-Published” data release](/documents/data-release-policy-e.html)
+

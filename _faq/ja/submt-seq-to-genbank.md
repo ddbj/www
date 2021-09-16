@@ -10,6 +10,7 @@ date: 2014-06-03T14:51:05
 lang: ja
 ---
 
+公開された塩基配列データは DDBJ, EMBL-Bank, GenBank で共有されますので、登録は何れかへ１度のみで 必要十分です。    
+既に DDBJ に登録した配列を GenBank に登録した場合、重複登録になりますので 登録しないでください。
 
-
-<p>公開された塩基配列データは DDBJ, EMBL-Bank, GenBank で共有されますので、登録は何れかへ１度のみで 必要十分です。 <br>既に DDBJ に登録した配列を GenBank に登録した場合、重複登録になりますので 登録しないでください。</p><p>雑誌によっては「GenBank へ塩基配列を登録するように」と案内されている場合もありますが、<a href="/documents/accessions.html">DDBJ が発行したアクセッション番号</a>は GenBank を含む <a href="/about/insdc.html">国際塩基配列データベース</a>に共通です。 </p>
+雑誌によっては「GenBank へ塩基配列を登録するように」と案内されている場合もありますが、[DDBJ が発行したアクセッション番号](/documents/accessions.html)は GenBank を含む [国際塩基配列データベース](/about/insdc.html)に共通です。 

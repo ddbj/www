@@ -10,6 +10,4 @@ date: 2014-06-17T10:02:24
 lang: ja
 ---
 
-
-
-<a href="/subscribe-ddbj.html">DDBJ Mail Magazine</a> のページから手続きができます。
+[DDBJ Mail Magazine](/subscribe-ddbj.html) のページから手続きができます。

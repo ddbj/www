@@ -10,6 +10,7 @@ date: 2014-06-18T17:18:20
 lang: en
 ---
 
-
-
-<p>Basically, please submit every sequence that you have experimentally determined, whatever the resource of genome, mRNA or any others. <br>In principle, DDBJ accepts submission of experimentally determined sequence in its contiguous structure. <br>You can describe mRNA feature, CDS feature and so on as annotation for genomic sequence, however, descriptions of mRNA features do not mean "the mRNA sequence is experimentally determined.", in general. <br>If you have read mRNA sequences, please submit mRNA sequences to DDBJ. See also <a href="/documents/data-categories-e.html">Acceptable data for DDBJ</a>. </p>
+Basically, please submit every sequence that you have experimentally determined, whatever the resource of genome, mRNA or any others.    
+In principle, DDBJ accepts submission of experimentally determined sequence in its contiguous structure.    
+You can describe mRNA feature, CDS feature and so on as annotation for genomic sequence, however, descriptions of mRNA features do not mean "the mRNA sequence is experimentally determined.", in general.    
+If you have read mRNA sequences, please submit mRNA sequences to DDBJ. See also [Acceptable data for DDBJ](/documents/data-categories-e.html). 
