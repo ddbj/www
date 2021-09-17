@@ -10,6 +10,7 @@ date: 2014-06-03T18:38:14
 lang: ja
 ---
 
-
-
-<p>DDBJ は EMBL-Bank，GenBank と<a href="/about/insdc.html">国際塩基配列データベースを共同構築</a>しています。<br>DDBJ に登録されたデータは DDBJ から公開されますと、EMBL-Bank と GenBank に送られます。<br><a href="/ddbj/submission.html#data_flow">配列データの遷移</a>をご参照ください。<br>ただし、送られたデータは各データバンクの書式に変換して公開されます。</p>
+DDBJ は EMBL-Bank，GenBank と[国際塩基配列データベースを共同構築](/about/insdc.html)しています。    
+DDBJ に登録されたデータは DDBJ から公開されますと、EMBL-Bank と GenBank に送られます。    
+[配列データの遷移](/ddbj/submission.html#data_flow)をご参照ください。    
+ただし、送られたデータは各データバンクの書式に変換して公開されます。
