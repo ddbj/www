@@ -10,6 +10,7 @@ date: 2014-07-03T16:46:12
 lang: en
 ---
 
-
-
-<p><a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System</a> is an interactive application to enter all of items required for your submission on step by step basis. <br>To use <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>, submitters have to make submission files by themselves. So, DDBJ will review and consult for submitters on the process of making files. <br>Some submitters use Nucleotide Sequence Submission System to submit a lot of sequences, while some submitter use MSS to submit a few sequences. <br>Based on above information, select either of them as needed. </p>
+[Nucleotide Sequence Submission System](/ddbj/web-submission-e.html) is an interactive application to enter all of items required for your submission on step by step basis.    
+To use [Mass Submission System (MSS)](/ddbj/mss-e.html), submitters have to make submission files by themselves. So, DDBJ will review and consult for submitters on the process of making files.    
+Some submitters use Nucleotide Sequence Submission System to submit a lot of sequences, while some submitter use MSS to submit a few sequences.    
+Based on above information, select either of them as needed. 
