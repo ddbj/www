@@ -11,6 +11,5 @@ date: 2014-07-01T17:13:41
 lang: en
 ---
 
-
-
-<p>It is the date of the last release of the data. See <a href="/ddbj/flat-file-e.html#LocusB">LOCUS</a> of <a href="/ddbj/flat-file-e.html">Explanation of DDBJ flat file format</a>. </p>
+It is the date of the last release of the data.    
+See [LOCUS](/ddbj/flat-file-e.html#LocusB) of [Explanation of DDBJ flat file format](/ddbj/flat-file-e.html). 

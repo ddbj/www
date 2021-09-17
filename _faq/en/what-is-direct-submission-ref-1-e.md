@@ -11,6 +11,6 @@ date: 2014-07-01T17:26:45
 lang: en
 ---
 
-
-
-<p>It indicates that this data is directly submitted from the submitter. The term is the antonym to "journal scan". <br><a href="/ddbj/flat-file-e.html#Reference1B">REFERENCE 1</a> is the information of submitter(s), not general reference. <br>So, do not describe "Direct Submission" in the title for literature in <a href="/ddbj/flat-file-e.html#Reference2B">REFERENCE 2</a> or after. </p>
+It indicates that this data is directly submitted from the submitter. The term is the antonym to "journal scan".    
+[REFERENCE 1](/ddbj/flat-file-e.html#Reference1B) is the information of submitter(s), not general reference.    
+So, do not describe "Direct Submission" in the title for literature in [REFERENCE 2](/ddbj/flat-file-e.html#Reference2B) or after. 
