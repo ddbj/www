@@ -1,7 +1,7 @@
 top_news:
   ja:
-    - title: (9/14 9:30 - 9/16 17:00) 生命情報・DDBJ センターの登録、検索・解析サービス停止のお知らせ
-      path: 2021-08-27
+    - title: ハードウェア障害による DDBJ/BioProject/BioSample/DRA/GEA 登録サービスの停止
+      path: 2021-09-15_1
   en:
-    - title: (Sep 14 9:30 - Sep 16 17:00) Suspension of BI-DDBJ services due to NIG Supercomputer maintenance
-      path: 2021-08-27-e
+    - title: DDBJ/BioProject/BioSample/DRA/GEA submission services disruption
+      path: 2021-09-15_1-e
