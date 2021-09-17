@@ -28,7 +28,5 @@ lang: ja
 </figure>
 
 DRA Handbook: [DRA のデータ公開](/dra/submission.html#data-release)  
-BioProject Handbook: [BioProject
-のデータ公開](/bioproject/submission.html#data-release)  
-BioSample Handbook: [BioSample
-のデータ公開](/biosample/submission.html#sample-release)
+BioProject Handbook: [BioProjectのデータ公開](/bioproject/submission.html#data-release)  
+BioSample Handbook: [BioSampleのデータ公開](/biosample/submission.html#sample-release)
