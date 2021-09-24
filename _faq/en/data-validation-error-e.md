@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: How to deal with validation errors?
+title: How to deal with validation errors in DRA submission?
 category: faq
 db:
   - dra
@@ -10,13 +10,14 @@ date: 2014-01-23T11:16:53
 lang: en
 ---
 
+### Make Sra Error {#make_sra_error}
 **data excessive while validating formatter within short read archive module - cumulative length of reads data in file(s): 152 is greater than spot length declared in experiment: 76 in spot 'xxxx'**
 
-[Spot length](/dra/submission.html#Spot_Length) value in Experiment differs from actual read length. For paired library, enter a sum of paired read lengths in the Spot length.
+[Spot length](/dra/submission-e.html#Spot_Length) value in Experiment differs from actual read length. For paired library, enter a sum of paired read lengths in the Spot length. If the read length is not constant, select ‘generic_fastq’ for the Run [filetype](/dra/submission-e.html#File_Type) and enter the average read length in the Spot length.
 
 **fastq-load err: data inconsistent while validating formatter within short read archive module - cumulative length of reads data in file(s): 70 is less than spot length declared in experiment: 152, most probably mate-pair is absent in spot 'xxxx'**
 
-When 'fastq' is selected for the [filetype](/dra/submission.html#File_Type) in Run, "read length should be constant" and "paired reads must appear in the same order in the paired files". If the fastq files do not meet these conditions, validation errors occur. Revise the [filetype](/dra/submission.html#File_Type) from 'fastq' to 'generic\_fastq'.
+When 'fastq' is selected for the [filetype](/dra/submission-e.html#File_Type) in Run, "read length should be constant" and "paired reads must appear in the same order in the paired files". If the fastq files do not meet these conditions, validation errors occur. Revise the [filetype](/dra/submission-e.html#File_Type) from 'fastq' to 'generic\_fastq'.
 
 **constraint violated while executing function within virtual database module**
 
@@ -29,10 +30,16 @@ Files are not recognized. This error occurs in the following cases:
 - files are in sub-directories" and
 - fastq files are *tar* archived
 
-**CheckSum Error**
+### CheckSum Error {#check_sum_error}
 
 The [md5 values](/dra/submission-e.html#supplement-md5) in Run differs from actual md5. Check the following
 - files are not corrupted 
 - md5 values in Run are not wrong
 
+### File Name Error {#file_name_error}
+
+**Undefined or File not found: @SQ SN:**
+
+Please upload the SN-reference mapping table files to the directory.
+https://www.ddbj.nig.ac.jp/dra/submission-e.html#bam-file
 

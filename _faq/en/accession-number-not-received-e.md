@@ -10,6 +10,8 @@ date: 2014-07-01T16:13:15
 lang: en
 ---
 
+[I have not received DRA accession numbers yet - is something wrong?](/faq/en/accession-numbers-not-informed-e.html)
+
 We cannot answer the days to issue accession number(s) because it depend on the contents of your submission.  
 If you do not receive any email from DDBJ after 5 working days, please contact us from [contact form](/contact-ddbj-e.html). 
 

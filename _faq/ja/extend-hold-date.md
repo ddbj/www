@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: どのように公開予定日を変更したらいいのでしょうか?
+title: DRA の公開予定日はどのように変更したらいいのでしょうか?
 category: faq
 db:
   - dra

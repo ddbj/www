@@ -12,7 +12,7 @@ lang: ja
 
 必ず必要というわけではありません。研究を表すのに最も適切な方法で BioProject を作成してください。
 
-[2014年11月12日](/news/ja/2014-11-12.html)から BioProject の [Project data type](/bioproject/submission.html#Project_data_type) を複数選択できるようになりました。
+BioProject の [Project data type](/bioproject/submission.html#Project_data_type) は複数選択できます。
 
 ゲノム配列と転写産物を解析したプロジェクトを一つにまとめる場合は，[Project data type](/bioproject/submission.html#Project_data_type) に Genome Sequencing と Transcriptome or Gene Expression の両方を選択してください。[Material](/bioproject/submission.html#Material) は１つしか選択できませんので Other を選択してください。
 

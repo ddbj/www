@@ -12,7 +12,7 @@ lang: en
 
 No, you do not. You should organize your BioProjects the most appropriate way for your research effort.
 
-From [12 November 2014](/news/en/2014-11-12-e.html), multiple [Project data types](/bioproject/submission.html#Project_data_type) can be selected for a project in the submission system.
+Multiple [Project data types](/bioproject/submission.html#Project_data_type) can be selected for a project in the submission system.
 
 To merge genome sequencing and transcriptome analysis projects, select both 'Genome Sequencing' and 'Transcriptome or Gene Expression' for the [Project data type](/bioproject/submission.html#Project_data_type). One material is allowed for the [Material](/bioproject/submission.html#Material), so select 'Other'.
 

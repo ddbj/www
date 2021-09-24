@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: I have not received accession numbers yet - is something wrong?
+title: I have not received DRA accession numbers yet - is something wrong?
 category: faq
 db:
   - dra

@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: アクセッション番号が届きません
+title: DRA アクセッション番号が届きません
 category: faq
 db:
   - dra
