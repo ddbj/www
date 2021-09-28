@@ -299,12 +299,11 @@ D-way でパスワード変更後、"Session Expired" と表示される場合�
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">OpenSSH から Windows PuTTY 形式</a></h4>
 <div class="accordion-content">
 
-"変換" メニューの "鍵のインポート" を選択し，PuTTY で作成した秘密鍵を読み込みます。
+"変換" メニューの "鍵のインポート" を選択し，OpenSSH で作成した秘密鍵を読み込みます。
 
 [![]({{ site.baseurl }}/assets/images/books/con_3.jpg){:.w400}]({{ site.baseurl }}/assets/images/books/con_3.jpg "鍵のインポート"){: .group1}
 
-[秘密鍵の保存\] ボタンで PuTTY 形式に変換された秘密鍵を保存します。 PuTTY 形式の秘密鍵は Windows WinSCP
-で使うことができます。
+[秘密鍵の保存\] ボタンで PuTTY 形式に変換された秘密鍵を保存します。 PuTTY 形式の秘密鍵は Windows WinSCP で使うことができます。
 
 [![]({{ site.baseurl }}/assets/images/books/con_4.jpg){:.w400}]({{ site.baseurl }}/assets/images/books/con_4.jpg "変換された秘密鍵を保存"){: .group1}
 
