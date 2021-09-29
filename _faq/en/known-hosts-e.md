@@ -10,7 +10,7 @@ db:
   - gea
 tags: 
   - Data transfer
-date: 2021-09-29T11:16:30
+date: 2021-09-28T09:16:30
 lang: en
 ---
 
@@ -57,9 +57,3 @@ Offending RSA key in /home/test07/.ssh/known_hosts:11
 
 After deleting the line of the known_hosts file, access to the server.    
 Because the access is regarded as a first time access, you are asked whether record the server key or not. Please select "yes" and access the server.
-
-
-
-
-
-

@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: ホスト鍵不一致の警告が表示され、ftp-private にアクセスできません
+title: ホスト鍵不一致の警告が表示され ftp-private にアクセスできません
 category: faq
 db:
   - bioproject
@@ -10,7 +10,7 @@ db:
   - gea
 tags: 
   - データの転送
-date: 2021-09-29T11:16:30
+date: 2021-09-28T09:16:30
 lang: ja
 ---
 
@@ -58,5 +58,3 @@ Offending RSA key in /home/test07/.ssh/known_hosts:11
 
 known_hosts のサーバの古いホスト鍵が記載されている行を削除した後、ssh でアクセスします。   
 初めてアクセスした状態になるため、ホスト鍵の登録 yes/no を聞かれるので "yes" を選択し、アクセスします。
-
-
