@@ -1,5 +1,11 @@
 top_news:
   ja:
+    - title: ftp-private サーバへの初回接続時の警告
+      path: 2021-09-29
+  en:
+    - title: Warning when accessing ftp-private
+      path: 2021-09-29-e
+  ja:
     - title: ハードウェア障害による DDBJ/BioProject/BioSample/DRA/GEA 登録サービスの停止
       path: 2021-09-15_1
   en:
