@@ -1662,7 +1662,7 @@ and validated files are moved to separate directory.
 The DRA staff review submissions with status "submission_validated".
 Please do not touch submissions until the DRA staff contact submitters.
 
-#### Revise a submission with "data_error" <a name="Revise_a_submission_with_"data_error""></a>
+#### Revise a submission with "data_error"  {#Revise_a_submission_with_data_error}
 
 Any errors in the validation process make the submission status to
 "data_error". Revise metadata and/or re-upload data files after
