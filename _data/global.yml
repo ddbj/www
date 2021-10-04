@@ -1,13 +1,7 @@
 top_news:
   ja:
-    - title: ftp-private サーバへの初回接続時の警告
-      path: 2021-09-29
+    - title: BioProject/BioSample/DRA/GEA/DDBJ/D-way サービス再開後の不具合
+      path: 2021-10-04
   en:
-    - title: Warning when accessing ftp-private
-      path: 2021-09-29-e
-  ja:
-    - title: ハードウェア障害による DDBJ/BioProject/BioSample/DRA/GEA 登録サービスの停止
-      path: 2021-09-15_1
-  en:
-    - title: DDBJ/BioProject/BioSample/DRA/GEA submission services disruption
-      path: 2021-09-15_1-e
+    - title: Troubles after the BioProject/BioSample/DRA/GEA/D-way services re-start
+      path: 2021-10-04-e
