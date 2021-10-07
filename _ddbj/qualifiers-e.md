@@ -40,8 +40,8 @@ Value format
 : &lt;text&gt;, excluding double quotation mark (")    
 
 Example
-: -256 m    
-330.12 m    
+: <pre>-256 m
+330.12 m </pre>
 
 Comment
 : Values indicate altitudes above or below nominal sea level provided in metres    
@@ -56,17 +56,17 @@ Value format for input
 where location is the position of the anticodon and amino_acid is the abbreviation either for the abbreviation for [Amino Acid Codes](/ddbj/code-e.html#amino-1), or for [Modified and unusual Amino Acids](/ddbj/code-e.html#amino-2).    
 
 Example for input
-: (pos:34..36,aa:Phe)    
-(pos:join(5,495..496),aa:Leu)    
-(pos:complement(4156..4158),aa:Gln)    
+: <pre>(pos:34..36,aa:Phe)
+(pos:join(5,495..496),aa:Leu)
+(pos:complement(4156..4158),aa:Gln)</pre>
 
 Value format for output
 : (pos:&lt;location&gt;,aa:&lt;amino_acid&gt;,seq:&lt;nucleotides&gt;)    
 
 Example for output
-: (pos:34..36,aa:Phe,seq:aaa)    
-(pos:join(5,495..496),aa:Leu,seq:tag)    
-(pos:complement(4156..4158),aa:Gln,seq:ttg)    
+: <pre>(pos:34..36,aa:Phe,seq:aaa)
+(pos:join(5,495..496),aa:Leu,seq:tag)
+(pos:complement(4156..4158),aa:Gln,seq:ttg)</pre>
 
 ### /artificial_location<a name="artificial_location"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#artificial_location)</span> 
 
@@ -89,7 +89,10 @@ Value format
 : [&lt;institution_code&gt;:[&lt;collection_code&gt;:]]&lt;material_id&gt;    
 
 Example
-: CGC:CB3912 &lt;-- Ex. Caenorhabditis stock centre    
+: For Caenorhabditis stock centre 
+
+<pre>CGC:CB3912</pre> 
+
 
 Comment
 : the bio_material qualifier should be used to annotate the identifiers of material in biological collections that are not appropriate to annotate as either /specimen_voucher or /culture_collection; these include zoos and aquaria, stock centres, seed banks, germplasm repositories and DNA banks; material_id is mandatory, institution_code and collection_code are optional; institution code is mandatory where collection code is present.    
@@ -107,7 +110,7 @@ Value format
 : &lt;text&gt;, excluding double quotation mark (")    
 
 Example    
-: GAL4    
+: <pre>GAL4 </pre>
 
 
 ### /cell_line<a name="cell_line"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#cell_line)</span>
@@ -119,7 +122,7 @@ Value format
 : &lt;text&gt;, excluding double quotation mark (")    
 
 Example     
-: MCF7    
+: <pre>MCF7</pre> 
 
 
 ### /cell_type<a name="cell_type"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#cell_type)</span>
@@ -131,7 +134,7 @@ Value format
 : &lt;text&gt;, excluding double quotation mark (")    
 
 Example     
-: leukocyte    
+: <pre>leukocyte </pre>
 
 
 ### /chromosome<a name="chromosome"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#chromosome)</span>
@@ -143,7 +146,7 @@ Value format
 : &lt;text&gt;, excluding double quotation mark (")    
 
 Example    
-: 1    
+: <pre>1 </pre>
 
 
 ### /circular_RNA<a name="circular_RNA"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#circular_RNA)</span>
@@ -154,9 +157,9 @@ Definition
 Value format
 : no value.    
 
-Example     
-: should be used on features such as [CDS](/ddbj/features-e.html#cds), [mRNA](/ddbj/features-e.html#mRNA), [tRNA](/ddbj/features-e.html#tRNA) and others that are produced as a result of a backsplicing event. This qualifier should be used only when the splice event is indicated by the "join" operator in [the feature location](/ddbj/location.html).    
-
+Comment
+: should be used on features such as [CDS](/ddbj/features-e.html#cds), [mRNA](/ddbj/features-e.html#mRNA), [tRNA](/ddbj/features-e.html#tRNA) and others that are produced as a result of a backsplicing event.    
+This qualifier should be used only when the splice event is indicated by the "join" operator in [the feature location](/ddbj/location.html).    
 
 
 ### /clone<a name="clone"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#clone)</span>
@@ -168,7 +171,7 @@ Value format
 : &lt;text&gt;, excluding double quotation mark (")    
 
 Example     
-: lambda-hIL7.3    
+: <pre>lambda-hIL7.3 </pre>
 
 
 ### /clone_lib<a name="clone_lib"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#clone_lib)</span>
@@ -180,7 +183,7 @@ Value format
 : &lt;text&gt;, excluding double quotation mark (")    
 
 Example     
-: lambda-hIL7    
+: <pre>lambda gt11 rice root cDNA (Gene Tech, No. 20)</pre>
 
 
 ### /codon_start<a name="codon_start"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#codon_start)</span>
@@ -195,12 +198,13 @@ Value format
 
 Definition  
 : name of persons or institute who collected the specimen    
+recommended using full names
 
 Value format
 : &lt;text&gt;, excluding double quotation mark (")    
 
 Example     
-: Dan Janzen    
+: <pre>Dan Janzen</pre>
 
 
 ### /collection_date<a name="collection_date"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#collection_date)</span>
@@ -234,19 +238,16 @@ YYYY-MM-DDThh:mmZ/YYYY-MM-DDThh:mmZ
 'ss' is a two-digit value representing the second of the hour (00 to 59).    
 
 Example
-: 
-
-2015-10-11T17:53:03Z    
-1952-10-21T11:43Z    
-1952-10-21T11Z    
-1952-10-21    
-1952-10    
-1952    
-    
-1952/1953    
-1952-10-21/1953-02-15    
-1952-10/1953-02    
-1952-10-21T11:43Z/1952-10-21T17:43Z    
+: <pre>2015-10-11T17:53:03Z
+1952-10-21T11:43Z
+1952-10-21T11Z
+1952-10-21
+1952-10
+1952
+1952/1953
+1952-10-21/1953-02-15
+1952-10/1953-02
+1952-10-21T11:43Z/1952-10-21T17:43Z</pre>
 
 Comment
 : Collection dates that are specified to at least the month, day, and year (YYYY-MM-DD) are strongly encouraged.    
@@ -263,7 +264,7 @@ Value format
 : &lt;country&gt;[:&lt;free-text for geographical name&gt;]    
 
 Example     
-: Japan:Kanagawa, Hakone, Lake Ashi    
+: <pre>Japan:Kanagawa, Hakone, Lake Ashi</pre>
 
 Comment     
 : any &lt;country&gt; from [the country list](/ddbj/country-e.html).    
@@ -279,7 +280,7 @@ Value format
 : &lt;text&gt;, excluding double quotation mark (")    
 
 Example     
-: Nipponbare    
+: <pre>Nipponbare </pre>
 
 
 
@@ -292,15 +293,16 @@ Value format
 : &lt;institution_code&gt;:[&lt;collection_code&gt;:]&lt;culture_id&gt;    
 
 Example
-: ATCC:26370    
+: <pre>ATCC:26370 </pre>
 
 Comment
-: the culture_collection qualifier should be used to annotate live microbial and viral cultures, and cell lines that have been deposited in curated culture collections; microbial cultures in personal or laboratory collections should be annotated in strain qualifiers.    
+: Both &lt;institution-code&gt; and &lt;culture_id&gt; are required.    
+the culture_collection qualifier should be used to annotate live microbial and viral cultures, and cell lines that have been deposited in curated culture collections; microbial cultures in personal or laboratory collections should be annotated in strain qualifiers.    
 culture_id and institution_code are mandatory, collection_code is optional.    
     
 You can find &lt;institution_code&gt; at    
-[institution_code list](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/coll_dump.txt">) (NCBI FTP site)    
-[BioCollections](https://www.ncbi.nlm.nih.gov/biocollections">)    
+[institution_code list](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/coll_dump.txt) (NCBI FTP site)    
+[BioCollections](https://www.ncbi.nlm.nih.gov/biocollections)    
 
 
 ### /db_xref<a name="db_xref"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#db_xref)</span>
@@ -312,7 +314,7 @@ Value format Value format
 :&lt;database&gt;:&lt;identifier&gt;, excluding double quotation mark (")    
 
 Example
-: UniProtKB/Swiss-Prot:P28763
+: <pre>UniProtKB/Swiss-Prot:P28763</pre>
 
 Comment
 : In principle, the db_xref qualifier can not be entered in new submissions.    
@@ -329,8 +331,7 @@ Value format
 : &lt;text>, excluding double quotation mark (")    
 
 Example     
-
-: fourth instar larva     
+: <pre>fourth instar larva</pre>
 
 
 ### /direction<a name="direction"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#direction)</span>
@@ -354,9 +355,9 @@ Value format
 : &lt;identifier&gt;.&lt;identifier&gt;.&lt;identifier&gt;.&lt;identifier&gt;    
 
 Example
-: 1.1.2.4    
-1.1.2.-    
-1.1.2.n    
+: <pre>1.1.2.4
+1.1.2.-
+1.1.2.n</pre>
 
 Comment
 : The format represents a string of four numbers separated by full stops; up to three numbers starting from the end of the string can be replaced by dash "-" to indicate uncertain assignment. Symbol "n" can be used in the last position instead of a number where the EC number is awaiting assignment.    
@@ -371,7 +372,7 @@ Value format
 : &lt;text>, excluding double quotation mark (")    
 
 Example    
-: Columbia    
+: <pre>Columbia </pre>
 
 
 ### /environmental_sample<a name="environmental_sample"></a><span class="right-alignment">[Feature T e Definition](/ddbj/feature-table-e.html#environmental_sample)</span><a name="environmental_sample"></a>
@@ -397,15 +398,15 @@ Value format for input
 : unknown or known    
 
 Example for input
-: unknown    
-known 
+: <pre>unknown
+known</pre>
 
 Value format for output
 : unknown or &lt;integer-number&gt;    
 
 Example for output
-: unknown    
-342    
+: <pre>unknown
+342</pre>
 
 ### /exception<a name="exception"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#exception)</span><a name="exception"></a>
 
@@ -415,10 +416,11 @@ Definition
 Value format
 : one of followings; 
 
-* RNA editing
-* reasons given in citation
-* rearrangement required for product
-* annotated by transcript or proteomic data
+
+RNA editing    
+reasons given in citation    
+rearrangement required for product    
+annotated by transcript or proteomic data    
 
 
 Comment
@@ -434,14 +436,15 @@ Value format
 : [CATEGORY:]&lt;text&gt;, excluding double quotation mark (")    
 CATEGORY is optional. if describing it, use either of followings; 
 
-* COORDINATES
-* DESCRIPTION
-* EXISTENCE    
+
+- COORDINATES    
+- DESCRIPTION    
+- EXISTENCE    
 
 Example
-: COORDINATES: 5' and 3' RACE    
+: <pre>COORDINATES: 5' and 3' RACE    
 Northern blot    
-heterologous expression system of Xenopus laevis oocytes.    
+heterologous expression system of Xenopus laevis oocytes</pre>
 
 Comment
 : detailed experimental details should not be included, and would normally be found in the cited publications; value    
@@ -467,9 +470,9 @@ Value format
 &lt;number of observed instances&gt;/&lt;total number of sequenced isolates&gt;, or &lt;decimal fraction&gt;    
 
 Example
-: 1 in 12    
-23/108    
-.85    
+: <pre>1 in 12
+23/108
+.85</pre>
 
 
 ### /function<a name="function"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#function)</span>
@@ -481,7 +484,7 @@ Value format
 : &lt;text>, excluding double quotation mark (")    
 
 Example     
-: essential for recognition of cofactor    
+: <pre>essential for recognition of cofactor</pre>
 
 
 ### /gap_type<a name="gap_type"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#gap_type)</span><a name="gap_type"></a>
@@ -518,14 +521,17 @@ Value format
 : &lt;text&gt;, excluding double quotation mark (")    
 
 Example
-: ilvE    
+: <pre>ilvE</pre>
 
 Guidance for Submission:
-: See also [Gene nomenclature at DDBJ](/ddbj/cds-e.html#product). {::nomarkdown}<ul><li>Please enter the abbreviation as gene symbol.</li><li>Even if there are multiple general abbreviations for the same gene, do not enter multiple abbreviations in 'gene'. Do not use needless symbolic letters as delimiter for multiple names. If you would like to describe more than two, please enter one of the most representative abbreviation in /gene qualifier, and other(s) in /gene_synonym qualifier.</li></ul>{:/}    
+: See also [Gene nomenclature at DDBJ](/ddbj/cds-e.html#product).    
+- Even if there are multiple general abbreviations for the same gene, do not enter multiple abbreviations in 'gene'. 
+- Do not use needless symbolic letters as delimiter for multiple names. 
+- If you would like to describe more than two, please enter one of the most representative abbreviation in /gene qualifier, and other(s) in /gene_synonym qualifier.
 
 
 ### /gene_synonym<a name="gene_synonym"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#gene_synonym)</span>
-    
+
 Definition
 : symbol of the gene corresponding to a sequence region, synonym for the value used for gene or locus_tag qualifier    
 
@@ -533,7 +539,7 @@ Value format
 : &lt;text&gt;, excluding double quotation mark (")    
 
 Example
-: ilvE    
+: <pre>ilvE</pre>
 
 
 ### /germline<a name="germline"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#germline)</span><a name="germline"></a>
@@ -557,7 +563,7 @@ Value format
 : &lt;text>, excluding double quotation mark (")    
 
 Example     
-: H*    
+: <pre>H*</pre>
 
 
 ### /haplotype<a name="haplotype"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#haplotype)</span>
@@ -569,7 +575,8 @@ Value format
 : &lt;text>, excluding double quotation mark (")    
 
 Example     
-: Dw3 B5 Cw1 A1    
+: <pre>M3 [.42]
+Dw3 B5 Cw1 A1</pre>
 
 
 ### /host<a name="host"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#host)</span>
@@ -581,20 +588,21 @@ Value format
 : &lt;text&gt;, excluding double quotation mark (")    
 
 Example
-: Homo sapiens    
-Homo sapiens 12 years old girl    
+: <pre>Homo sapiens
+Homo sapiens 12 years old girl</pre>
 
 
 ### /identified_by<a name="identified_by"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#identified_by)</span>
 
 Definition  
 : name of the expert who identified the specimen taxonomically    
+strongly recommended using full names
 
 Value format
-: &lt;text>, excluding double quotation mark (")    
+: &lt;text&gt;, excluding double quotation mark (")    
 
 Example    
-: John Burns    
+: <pre>John Burns</pre>
 
 
 ### /inference<a name="inference"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#inference)</span><a name="inference"></a>
@@ -606,39 +614,41 @@ Value format
 : [CATEGORY:]TYPE[ (same species)][:EVIDENCE_BASIS]    
 CATEGORY is optional. if describing it, use either of followings; 
 
-* COORDINATES
-* DESCRIPTION
-* EXISTENCE     
-
+COORDINATES    
+DESCRIPTION    
+EXISTENCE    
+    
 where TYPE is one of the following 
+    
+similar to sequence    
+similar to AA sequence    
+similar to DNA sequence    
+similar to RNA sequence    
+similar to RNA sequence, mRNA    
+similar to RNA sequence, EST    
+similar to RNA sequence, other RNA    
+profile    
+nucleotide motif    
+protein motif    
+ab initio prediction    
+alignment 
 
-* similar to sequence
-* similar to AA sequence
-* similar to DNA sequence
-* similar to RNA sequence
-* similar to RNA sequence, mRNA
-* similar to RNA sequence, EST
-* similar to RNA sequence, other RNA
-* profile
-* nucleotide motif
-* protein motif
-* ab initio prediction
-* alignment     
 
 Example
-: similar to DNA sequence:INSD:AY411252.1    
-similar to RNA sequence, mRNA:RefSeq:NM_000041.2    
-similar to DNA sequence (same species):INSD:AACN010222672.1    
-profile:tRNAscan:2.1    
-protein motif:InterPro:IPR001900    
-ab initio prediction:Genscan:2.0    
-alignment:Splign:1.26p:RefSeq:NM_000041.2,INSD:BC003557.1    
+: <pre>similar to DNA sequence:INSD:AY411252.1
+similar to RNA sequence, mRNA:RefSeq:NM_000041.2
+similar to DNA sequence (same species):INSD:AACN010222672.1
+profile:tRNAscan:2.1
+protein motif:InterPro:IPR001900
+ab initio prediction:Genscan:2.0
+alignment:Splign:1.26p:RefSeq:NM_000041.2,INSD:BC003557.1</pre>
+
 
 Comment
-: where the optional text "(same species)" is included when the inference comes from the same species as the entry.    
-where the optional "EVIDENCE_BASIS" is either a reference to a database entry (including accession and version) or an algorithm (including version)    
-[Recommendations for vocabulary in INSDC /inference qualifiers.](http://www.insdc.org/documents/inference-qualifiers)    
-\* /inference="non-experimental evidence, no additional details recorded" was used to replace instances of /evidence=NOT_EXPERIMENTAL in December 2005 
+: [Recommendations for vocabulary in INSDC /inference qualifiers.](http://www.insdc.org/documents/inference-qualifiers) 
+
+- where the optional "EVIDENCE_BASIS" is either a reference to a database entry (including accession and version) or an algorithm (including version)    
+- where the optional text "(same species)" is included when the inference comes from the same species as the entry.    
 
 
 ### /isolate<a name="isolate"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#isolate)</span>
@@ -650,8 +660,8 @@ Value format
 : &lt;text&gt;, excluding double quotation mark (")    
 
 Example
-: SI-152    
-DGGE: C12 
+: <pre> SI-152
+DGGE: C12</pre>
 
 
 ### /isolation_source<a name="isolation_source"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#isolation_source)</span><a name="isolation_source"></a>
@@ -663,7 +673,7 @@ Value format
 : &lt;text>, excluding double quotation mark (")    
 
 Example    
-: rumen isolates from standard Pelleted ration-fed steer #67    
+: <pre>rumen isolates from standard pelleted ration-fed steer #6</pre>
 
 
 ### /lab_host<a name="lab_host"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#lab_host)</span>
@@ -675,10 +685,10 @@ Value format
 : &lt;text&gt;, excluding double quotation mark (")    
 
 Example
-: Gallus gallus    
-Gallus gallus embryo    
-Escherichia coli strain DH5 alpha    
-Homo sapiens HeLa cells    
+: <pre>Gallus gallus
+Gallus gallus embryo
+Escherichia coli strain DH5 alpha
+Homo sapiens HeLa cells</pre>
 
 
 ### /lat_lon<a name="lat_lon"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#lat_lon)</span>
@@ -690,8 +700,8 @@ Value format
 : d[d.dddd] &lt;N or S&gt; d[dd.dddd] &lt;W or E&gt;    
 
 Example
-: 47.94 N 28.12 W    
-45.0123 S 4.1234 E    
+: <pre>47.94 N 28.12 W
+45.0123 S 4.1234 E</pre>
 
 Comment
 : Please describe the figure below the decimal point by not minute and second but the decimal.    
@@ -731,8 +741,8 @@ Value format
 : &lt;text&gt;, excluding double quotation mark (")    
 
 Example
-: ABC_0022    
-A1C_00001    
+: <pre>ABC_0022
+A1C_00001</pre>
 
 Comment
 : identical /locus_tag values may be used within an entry/record, but only if the identical /locus_tag values are associated with the same gene; in all other circumstances the /locus_tag value must be unique within that entry/record.    
@@ -757,7 +767,7 @@ Value format
 : &lt;text>, excluding double quotation mark (")    
 
 Example     
-: 8q12-13    
+: <pre>8q12-q13</pre>
 
 
 ### /mating_type<a name="mating_type"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#mating_type)</span><a name="mating_type"></a>
@@ -769,11 +779,11 @@ Value format
 : &lt;text&gt;, excluding double quotation mark (") 
 
 Example
-: MAT-1    
-plus    
-\-    
-odd    
-even    
+: <pre>MAT-1
+plus
+-
+odd
+even</pre>
 
 
 ### /metagenome_source<a name="metagenome_source"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#metagenome_source)</span>
@@ -783,11 +793,11 @@ Definition
 
 Value format
 : &lt;text&gt;, excluding double quotation mark (")    
-It must contain [the word "metagenome" and must exist in the taxonomy database](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&amp;id=408169&amp;lvl=3&amp;keep=1&amp;srchmode=1&amp;unlock).    
 
 Example
-: human gut metagenome    
-soil metagenome    
+: <pre>human gut metagenome
+soil metagenome</pre>
+It must contain [the word "metagenome" and must exist in the taxonomy database](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&amp;id=408169&amp;lvl=3&amp;keep=1&amp;srchmode=1&amp;unlock).    
 
 Comment
 : To use metagenome_source, /[environmental_sample](#environmental_sample) is required.    
@@ -801,18 +811,19 @@ Definition
 Value format
 : &lt;mobile_element_type&gt; [:&lt;mobile_element_name&gt;] where mobile_element_type is one of the following;    
 
-* transposon
-* retrotransposon
-* integron
-* insertion sequence
-* non-LTR retrotransposon
-* SINE
-* MITE
-* LINE
-* other
+
+transposon    
+retrotransposon    
+integron    
+insertion sequence    
+non-LTR retrotransposon    
+SINE    
+MITE    
+LINE    
+other 
 
 Example
-: transposon:Tnp9    
+: <pre>transposon:Tnp9</pre>
 
 
 ### /mod_base<a name="mod_base"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#mod_base)</span>
@@ -824,7 +835,7 @@ Value format
 : modified_base where modified_base is the abbreviation for [Modified Base Abbreviation](/ddbj/code-e.html#nucleotide-2).    
 
 Example    
-: m2g    
+: <pre>m2g</pre>
 
 
 ### /mol_type<a name="mol_type"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#mol_type)</span>
@@ -835,33 +846,33 @@ Definition
 Value format
 : limited to followings;    
 
-* genomic DNA
-* genomic RNA
-* mRNA
-* tRNA
-* rRNA
-* transcribed RNA
-* other RNA
-* other DNA
-* viral cRNA
-* unassigned DNA
-* unassigned RNA  
+
+genomic DNA    
+genomic RNA    
+mRNA    
+tRNA    
+rRNA    
+transcribed RNA    
+other RNA    
+other DNA    
+viral cRNA    
+unassigned DNA    
+unassigned RNA 
 
 Comment
-: all values refer to the in vivo or synthetic molecule for primary entries and the hypothetical molecule in Third Party Annotation entries; 
+: all values refer to the in vivo or synthetic molecule for primary entries and the hypothetical molecule in Third Party data; 
 
-* The value "genomic DNA" does not imply that the molecule is nuclear (e.g. organelle and plasmid DNAs should be described by using "genomic DNA").
-* For ribosomal RNA genes (rDNA), select "genomic DNA".
-* For cDNA sequence, template of mRNA, select "mRNA".
-* For cDNA sequence, template of premature RNA, select "transcribed RNA".
-* "other RNA" and "other DNA" should be applied to synthetic molecules.
-* In general, select "genomic RNA" for RNA viruses.
-* For ssRNA negative-strand virus, select "viral cRNA", in principal.    
+- The value "genomic DNA" does not imply that the molecule is nuclear (e.g. organelle and plasmid DNAs should be described by using "genomic DNA").
+- For ribosomal RNA genes (rDNA), select "genomic DNA".
+- For cDNA sequence, template of mRNA, select "mRNA".
+- For cDNA sequence, template of premature RNA, select "transcribed RNA".
+- "other RNA" and "other DNA" should be applied to synthetic molecules.
+- In general, select "genomic RNA" for RNA viruses.
+- For ssRNA negative-strand virus, select "viral cRNA", in principal.    
 "viral cRNA" is a plus-strand copy of a minus strand RNA genome which serves as a template to make viral progeny genomes.    
-For genomic sequence data derived from ssRNA negative-strand viruses, in principle, DDBJ uniformly uses following values for mol_type qualifier;
-
-Protein-coding sequences exist in positive orientation: viral cRNA    
-Protein-coding sequences exist in complementary orientation: genomic RNA 
+For genomic sequence data derived from ssRNA negative-strand viruses, in principle, DDBJ uniformly uses following values for mol_type qualifier;    
+    - Protein-coding sequences exist in positive orientation: viral cRNA 
+    - Protein-coding sequences exist in complementary orientation: genomic RNA 
 
 
 ### /ncRNA_class<a name="ncRNA_class"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#ncRNA_class)</span>
@@ -873,11 +884,12 @@ Value format
 : &lt;TYPE&gt;    
 
 Example
-: miRNA    
-siRNA    
+: <pre>miRNA
+siRNA</pre>
 
 Comment
-: [Controlled vocabulary for ncRNA classes](http://www.insdc.org/documents/ncrna-vocabulary) is valid for &lt;TYPE&gt;. /ncRNA_class="other" with /product="&lt;name of novel ncRNA_class&gt;" or /note="&lt;brief explanation of novel ncRNA_class&gt;"    
+: [Controlled vocabulary for ncRNA classes](http://www.insdc.org/documents/ncrna-vocabulary) is valid for &lt;TYPE&gt;.    
+/ncRNA_class="other" with /product="&lt;name of novel ncRNA_class&gt;" or /note="&lt;brief explanation of novel ncRNA_class&gt;"    
 
 
 ### /note<a name="note"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#note)</span><a name="note"></a>
@@ -892,14 +904,13 @@ Value format
 ### /number<a name="number"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#number)</span>
  
 Definition  
-
 : a number to indicate the order of genetic elements (e.g., [exon](/ddbj/features-e.html#exon)s or [intron](/ddbj/features-e.html#intron)s) in the 5' to 3' direction    
 
 Value format
 : unquoted text (single token)    
 
 Example    
-: 5a    
+: <pre>5a</pre>
 
 
 ### /old_locus_tag<a name="old_locus_tag"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#old_locus_tag)</span>
@@ -911,7 +922,7 @@ Value format
 : &lt;text>, excluding double quotation mark (")    
 
 Example     
-: RSc0382    
+: <pre>RSc0382</pre>
 
 
 ### /operon<a name="operon"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#q_operon)</span>
@@ -923,7 +934,7 @@ Value format
 : &lt;text>, excluding double quotation mark (")    
 
 Example    
-: lac    
+: <pre>lac</pre>
 
 
 ### /organelle<a name="organelle"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#organelle)</span>
@@ -935,18 +946,18 @@ Value format
 : limited to followings:  
 
 
-* mitochondrion
-* mitochondrion:kinetoplast
-* hydrogenosome
-* plastid:chloroplast
-* plastid:apicoplast
-* plastid:chromoplast
-* plastid:cyanelle
-* plastid:leucoplast
-* plastid:proplastid
-* plastid
-* chromatophore
-* nucleomorph
+mitochondrion    
+mitochondrion:kinetoplast    
+hydrogenosome    
+plastid:chloroplast    
+plastid:apicoplast    
+plastid:chromoplast    
+plastid:cyanelle    
+plastid:leucoplast    
+plastid:proplastid    
+plastid    
+chromatophore    
+nucleomorph    
 
 
 ### /organism<a name="organism"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#organism)</span>
@@ -958,11 +969,11 @@ Value format
 : &lt;text>, excluding double quotation mark (")    
 
 Example     
-: Homo sapiens    
-Lactobacillaceae bacterium    
-West Nile virus    
-synthetic construct    
-uncultured bacterium    
+: <pre>Homo sapiens
+Lactobacillaceae bacterium
+West Nile virus
+synthetic construct
+uncultured bacterium</pre>
 
 Comment     
 : For further information of this Qualifier key read [Organism Qualifier](/ddbj/organism-e.html)    
@@ -977,30 +988,34 @@ Value format
 : &lt;text>, excluding double quotation mark (")    
 
 Example     
-: Initial denaturation:94degC,1.5min    
+: <pre>Initial denaturation:94degC,1.5min</pre>
 
 
 
 ### /PCR_primers<a name="PCR_primers"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#PCR_primers)</span>
-     
+
 Definition
 : A single /PCR_primers qualifier should contain all the primers used for a single PCR reaction. If multiple forward or reverse primers are present in a single PCR reaction, multiple sets of fwd_name/fwd_seq or rev_name/rev_seq values will be present.    
 
 Value format
 : [fwd_name: XXX1, ]fwd_seq: xxxxx1,[fwd_name: XXX2, ]fwd_seq: xxxxx2, [rev_name: YYY1, ]rev_seq: yyyyy1, [rev_name: YYY2, ]rev_seq: yyyyy2    
-Example 1    
-fwd_name: CO1P1, fwd_seq: ttgattttttggtcayccwgaagt, rev_name: CO1R4, rev_seq: ccwvytardcctarraartgttg    
-Example 2    
-fwd_seq: tgtgtgtgtgactgaca, rev_seq: tagcgatacggtcaatgc    
-Example 3    
-fwd_name: hoge1, fwd_seq: cgkgtgtatcttact, rev_name: hoge2, rev_seq: cggtgtatcttact    
-Example 4    
-fwd_name: CO1P1, fwd_seq: ttgattttttggtcayccwgaagt, fwd_name: CO1P2, fwd_seq: gatacacaggtcayccwgaagt, rev_name: CO1R4, rev_seq: ccwvytardcctarraartgttg"    
+
+
+Example
+: 1)
+<pre>fwd_name: CO1P1, fwd_seq: ttgattttttggtcayccwgaagt, rev_name: CO1R4, rev_seq: ccwvytardcctarraartgttg</pre>
+ 2)
+<pre>fwd_seq: tgtgtgtgtgactgaca, rev_seq: tagcgatacggtcaatgc</pre>
+ 3)
+<pre>fwd_name: hoge1, fwd_seq: cgkgtgtatcttact, rev_name: hoge2, rev_seq: cggtgtatcttact</pre>
+ 4)
+<pre>fwd_name: CO1P1, fwd_seq:ttgattttttggtcayccwgaagt, fwd_name: CO1P2, fwd_seq: gatacacaggtcayccwgaagt, rev_name: CO1R4, rev_seq: ccwvytardcctarraartgttg</pre>
 
 Comment
-: fwd_seq and rev_seq are both mandatory; fwd_name and rev_name are both optional.    
-Both sequences should be presented in 5' to 3' order.    
-The sequences should be given in [the IUPAC degenerate-base alphabet](/ddbj/code-e.html#nucleotide-1), except for [the modified bases](/ddbj/code-e.html#nucleotide-2); those must be enclosed within angle brackets &lt; &gt;    
+: - fwd_seq and rev_seq are both mandatory; fwd_name and rev_name are both optional.    
+- Both sequences should be presented in 5' to 3' order.    
+- The sequences should be given in [the IUPAC degenerate-base alphabet](/ddbj/code-e.html#nucleotide-1),    
+except for [the modified bases](/ddbj/code-e.html#nucleotide-2); those must be enclosed within angle brackets &lt; &gt;    
 
 
 ### /plasmid<a name="plasmid"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#plasmid)</span>
@@ -1012,7 +1027,7 @@ Value format
 : &lt;text>, excluding double quotation mark (")    
 
 Example     
-: C-589    
+: <pre>C-589</pre>
 
 
 ### /product<a name="product"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#product)</span>
@@ -1024,17 +1039,25 @@ Value format
 : &lt;text&gt;, excluding double quotation mark (")    
 
 Example
-: trypsinogen (when qualifier appears in CDS feature)    
-trypsin (when qualifier appears in mat_peptide feature)    
-XYZ neural-specific transcript (when qualifier appears in mRNA feature)    
+:    
+when qualifier appears in CDS feature 
+<pre>trypsinogen</pre>
+when qualifier appears in mat_peptide feature
+<pre>trypsin</pre> 
+when qualifier appears in mRNA feature
+<pre>XYZ neural-specific transcript</pre>
 
 Guidance for Submission:
 : See also [Gene nomenclature at DDBJ](/ddbj/cds-e.html#product).    
-
-* In principle, please enter a general name, not abbreviation.
-* Do not include the organism name.
-* Even if there are multiple general names for the same product, do not enter multiple names in 'product'. Do not use needless symbolic letters as delimiter for multiple names. If you would like to describe more than two names, please enter one of the most representative name in /product qualifier, and other(s) in /<a href="#note">note</a> qualifier.
-* If the name and function are not known, we recommend to describe as "hypothetical protein".    
+- In principle, please enter a general name, not abbreviation.
+- Do not include the organism name.
+- Even if there are multiple general names for the same product, 
+do not enter multiple names in 'product'. 
+Do not use needless symbolic letters as delimiter for multiple names. 
+If you would like to describe more than two names, 
+please enter one of the most representative name in /product qualifier, 
+and other(s) in /<a href="#note">note</a> qualifier.
+- If the name and function are not known, we recommend to describe as "hypothetical protein".    
 
 
 ### /protein_id<a name="protein_id"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#protein_id)</span>
@@ -1046,18 +1069,18 @@ Value format
 : &lt;identifier&gt;.&lt;version&gt;    
 
 Example
-: BAA12345.1    
-AAA1234567.1    
+: <pre>BAA12345.1
+AAA1234567.1</pre>
 
 Comment
-: This qualifier consists of a stable ID portion (accepted data before the end of    
-2018 uses a 3+5 format with 3 position letters and 5 numbers; from the end of    
-2018 new data may be extended to a 3+7 accession format with 3 position letters    
+: This qualifier consists of a stable ID portion (accepted data before the end of 
+2018 uses a 3+5 format with 3 position letters and 5 numbers; from the end of 
+2018 new data may be extended to a 3+7 accession format with 3 position letters 
 and 7 numbers) plus a version number after the decimal point.    
-When the protein sequence encoded by the CDS changes, only the version number of    
+When the protein sequence encoded by the CDS changes, only the version number of 
 the /protein_id value is incremented.    
-The stable part of the /protein_id remains unchanged and as a result will permanently    
-be associated with a given protein.    
+The stable part of the /protein_id remains unchanged and as a result will 
+permanently be associated with a given protein.    
 This qualifier is valid only on CDS features which translate into a valid protein.    
 
 
@@ -1073,7 +1096,8 @@ Value format
 ### /pseudo<a name="pseudo"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#pseudo)</span><a name="pseudo"></a>
 
 Definition  
-: indicates that this feature is a non-functional version of the element named by the feature key. When pseudo qualifier is shown, [CDS feature](/ddbj/features-e.html#cds) does not have [translation](#translation).    
+: indicates that this feature is a non-functional version of the element named by the feature key.    
+When pseudo qualifier is shown, [CDS feature](/ddbj/features-e.html#cds) does not have [translation](#translation).    
 
 Value format
 : none    
@@ -1092,11 +1116,11 @@ Value format
 where TYPE is one of the following: 
 
 
-* processed
-* unprocessed
-* unitary
-* allelic
-* unknown
+processed    
+unprocessed    
+unitary    
+allelic    
+unknown    
 
 
 Comment
@@ -1123,33 +1147,32 @@ Definition
 Value format
 : &lt;TYPE&gt; where TYPE is one of the following: 
 
-
-* attenuator
-* CAAT_signal
-* DNase_I_hypersensitive_site
-* enhancer
-* enhancer_blocking_element
-* GC_signal
-* imprinting_control_region
-* insulator
-* locus_control_region
-* matrix_attachment_region
-* minus_35_signal
-* minus_10_signal
-* polyA_signal_sequence
-* promoter
-* recoding_stimulatory_region
-* recombination_enhancer
-* replication_regulatory_region
-* response_element
-* ribosome_binding_site
-* riboswitch
-* silencer
-* TATA_box
-* terminator
-* transcriptional_cis_regulatory_region
-* uORF
-* other
+attenuator    
+CAAT_signal    
+DNase_I_hypersensitive_site    
+enhancer    
+enhancer_blocking_element    
+GC_signal    
+imprinting_control_region    
+insulator    
+locus_control_region    
+matrix_attachment_region    
+minus_35_signal    
+minus_10_signal    
+polyA_signal_sequence    
+promoter    
+recoding_stimulatory_region    
+recombination_enhancer    
+replication_regulatory_region    
+response_element    
+ribosome_binding_site    
+riboswitch    
+silencer    
+TATA_box    
+terminator    
+transcriptional_cis_regulatory_region    
+uORF    
+other    
 
 Comment
 : See [Controlled vocabulary for /regulatory_class](http://www.insdc.org/controlled-vocabulary-regulatoryclass) for TYPE, in detail.    
@@ -1164,7 +1187,7 @@ Value format
 : &lt;text>, excluding double quotation mark (")    
 
 Example     
-: a    
+: <pre>a</pre>
 
 
 ### /ribosomal_slippage<a name="ribosomal_slippage"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#ribosomal_slippage)</span>
@@ -1188,8 +1211,8 @@ Value format
 : &lt;text&gt;, excluding double quotation mark (")    
 
 Example
-: Alu    
-Kpn 
+: <pre>Alu
+Kpn</pre>
 
 
 ### /rpt_type<a name="rpt_type"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#rpt_type)</span>
@@ -1200,21 +1223,20 @@ Definition
 Value format
 : limited to followings;    
 
-* tandem
-* inverted
-* flanking
-* terminal
-* direct
-* dispersed
-* nested
-* long_terminal_repeat
-* non_ltr_retrotransposon_polymeric_tract
-* x_element_combinatorial_repeat
-* y_prime_element
-* telomeric_repeat
-* centromeric_repeat
-* other    
-
+tandem    
+inverted    
+flanking    
+terminal    
+direct    
+dispersed    
+nested    
+long_terminal_repeat    
+non_ltr_retrotransposon_polymeric_tract    
+x_element_combinatorial_repeat    
+y_prime_element    
+telomeric_repeat    
+centromeric_repeat    
+other    
 
 Comment
 : See [Controlled vocabulary for /rpt_type qualifier](http://www.insdc.org/controlled-vocabulary-rpttype-qualifier), in detail.    
@@ -1229,9 +1251,9 @@ Value format
 : text; limited to following letters; acgtmrwsykvhdbn0123456798()    
 
 Example
-: aagggc    
-ag(5)tg(8)    
-(aaaga)6(aaaa)1(aaaga)12    
+: <pre>aagggc
+ag(5)tg(8)
+(aaaga)6(aaaa)1(aaaga)12</pre>
 
 
 ### /satellite<a name="satellite"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#satellite)</span>
@@ -1243,17 +1265,17 @@ Value format
 : &lt;satellite_type&gt;[:&lt;class&gt;][&lt;identifier&gt;]
 
 Example
-: satellite: S1a    
-satellite: alpha    
-satellite: gamma III    
-microsatellite: DC130 
+: <pre>satellite: S1a
+satellite: alpha
+satellite: gamma III
+microsatellite: DC130</pre>
 
 Comment
 : &lt;satellite_type&gt; is mandatory. Please select from either of followings; 
 
-* satellite
-* microsatellite
-* minisatellite    
+satellite    
+microsatellite    
+minisatellite    
 
 
 ### /segment<a name="segment"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#segment)</span>
@@ -1265,7 +1287,7 @@ Value format
 : &lt;text>, excluding double quotation mark (")    
 
 Example    
-: 6    
+: <pre>6</pre>
 
 
 ### /serotype<a name="serotype"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#serotype)</span>
@@ -1277,7 +1299,7 @@ Value format
 : &lt;text>, excluding double quotation mark (")    
 
 Example     
-: B1    
+: <pre>B1</pre>
 
 
 ### /serovar<a name="serovar"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#serovar)</span>
@@ -1286,10 +1308,10 @@ Definition
 : serological variety of a species (usually a prokaryote) characterized by its antigenic properties    
 
 Value format
-: &lt;text>, excluding double quotation mark (")    
+: &lt;text&gt;, excluding double quotation mark (")    
 
 Example     
-: O157:H7    
+: <pre>O157:H7</pre>
 
 
 ### /sex<a name="sex"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#sex)</span><a name="sex"></a>
@@ -1301,11 +1323,11 @@ Value format
 : &lt;text&gt;, excluding double quotation mark (")    
 
 Example
-: female    
-male    
-hermaphrodite    
-monoecious    
-dioecious    
+: <pre>female
+male
+hermaphrodite
+monoecious
+dioecious</pre>
 
 
 ### /specimen_voucher<a name="specimen_voucher"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#specimen_voucher)</span>
@@ -1317,15 +1339,16 @@ Value format
 : [&lt;institution_code&gt;:[&lt;collection_code&gt;:]]&lt;specimen_id&gt;    
 
 Example
-: UAM:Mamm:52179    
-AMCC:101706    
-USNM:field series 8798    
-personal:Dan Janzen:99-SRNP-2003    
+: <pre>UAM:Mamm:52179
+AMCC:101706
+USNM:field series 8798
+personal:Dan Janzen:99-SRNP-2003</pre>
 
 Comment
-: the /specimen_voucher qualifier is intended to annotate a reference to the physical specimen that remains after the sequence has been obtained; &lt;collection_code&gt;is optional.    
-    
-You can find &lt;institution_code&gt; at    
+: the /specimen_voucher qualifier is intended to annotate a reference to the physical specimen that remains after the sequence has been obtained; 
+
+- &lt;collection_code&gt;is optional.    
+- You can find &lt;institution_code&gt; at    
 [institution_code list](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/coll_dump.txt) (NCBI FTP site)    
 [BioCollections](https://www.ncbi.nlm.nih.gov/biocollections)    
 
@@ -1337,8 +1360,9 @@ Definition
 
 Value format
 : &lt;text>, excluding double quotation mark (")    
+
 Example     
-: BALB/c   
+: <pre>BALB/c</pre>
 
 
 ### /sub_clone<a name="sub_clone"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#sub_clone)</span>
@@ -1350,7 +1374,7 @@ Value format
 : &lt;text>, excluding double quotation mark (")    
 
 Example     
-: lambda-hIL7.20g    
+: <pre>lambda-hIL7.20g</pre>
 
 
 ### /submitter_seqid<a name="submitter_seqid"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#submitter_seqid)</span>
@@ -1363,8 +1387,8 @@ Value format
 left/right square brackets ([ ]) and space    
 
 Example
-: contig53    
-scaffold25    
+: <pre>contig53    
+scaffold25</pre>
 
 
 ### /sub_species<a name="sub_species"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#sub_species)</span>
@@ -1376,11 +1400,11 @@ Value format
 : &lt;text>, excluding double quotation mark (")    
 
 Example     
-: troglodytes    
+: <pre>troglodytes</pre>
 
 
 ### /sub_strain<a name="sub_strain"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#sub_strain)</span>
-     
+
 Definition
 : sub_strain from which sequence was obtained. name or identifier of a genetically or otherwise modified strain from which sequence was obtained, derived from a parental strain (which should be annotated in the /[strain](#strain) qualifier).    
 
@@ -1388,13 +1412,13 @@ Value format
 : &lt;text&gt;, excluding double quotation mark (")    
 
 Example
-: abis    
+: <pre>abis</pre>
 
 Comment
 : If the parental strain is not given, this should be annotated in the /strain qualifier instead of /sub_strain.    
 
-* In general: /strain="K-12", /sub_strain="MG1655"
-* not given parental: /strain="MG1655"
+- In general: /strain="K-12", /sub_strain="MG1655"
+- not given parental: /strain="MG1655"
 
 
 ### /tag_peptide<a name="tag_peptide"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#tag_peptide)</span>
@@ -1403,10 +1427,10 @@ Definition
 : base location encoding the polypeptide for proteolysis tag of tmRNA and its termination codon    
 
 Value format
-: &gt;base_range>    
+: &lt;base_range>    
 
 Example    
-: 90..122    
+: <pre>90..122</pre>
 
 
 ### /tissue_type<a name="tissue_type"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#tissue_type)</span>
@@ -1418,7 +1442,8 @@ Value format
 : &lt;text>, excluding double quotation mark (")    
 
 Example     
-: liver    
+: <pre>brain
+liver</pre>
 
 
 ### /trans_splicing<a name="trans_splicing"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#trans_splicing)</span>
@@ -1444,32 +1469,31 @@ Value format
 
 
 ### /transl_except<a name="transl_except"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#transl_except)</span><a name="transl_except"></a>
-     
+
 Definition
 : translational exception: single codon the translation of which does not conform to genetic code indicated by /[transl_table](#transl_table)    
+
 Value format
 : (pos:location,aa:&lt;amino_acid&gt;)    
 where amino_acid is the amino acid coded by the codon at the base_range position. Amino acids are limited to the abbreviation either for [Amino Acid Codes](/ddbj/code-e.html#amino-1), or for [Modified and Unusual Amino Acids.](/ddbj/code-e.html#amino-2)    
-Example 1
-: For exceptional translation at the specific position;    
-/transl_except=(pos:213..215,aa:Sec)    
-    
+
+Example
+: 
+- For exceptional translation at the specific position;    
+<pre>/transl_except=(pos:213..215,aa:Sec)</pre>
 The codon at base 213 to 215 is exceptionally translated to selenocysteine(one letter code 'U' in amino-acid sequence)    
-Example 2
-: For partial termination codons;    
-/transl_except=(pos:1017,aa:TERM)    
-/transl_except=(pos:2000..2001,aa:TERM)    
+- For partial termination codons;    
+<pre>/transl_except=(pos:1017,aa:TERM)
+/transl_except=(pos:2000..2001,aa:TERM)</pre>
 TAA stop codon, either a single base T at base 1017, or two bases TA at base 2000 to 2001, are completed by the addition of 3' A residues to the mRNA.    
-Example 3
-: If the amino acid is not on the restricted vocabulary list use;    
-/transl_except=(pos:213..215,aa:OTHER)    
-    
-/note="name of unusual amino acid"    
+- If the amino acid is not on the restricted vocabulary list use;    
+<pre>/transl_except=(pos:213..215,aa:OTHER)    
+/note="unusual amino acid" </pre>
 The codon at the position at base 213 to 215 is exceptionally translated to the amino acid defined in the /note qualifier (one letter code 'X' in amino-acid sequence).    
 
 
 ### /transl_table<a name="transl_table"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#transl_table)</span><a name="transl_table"></a>
-     
+
 Definition
 : definition of genetic code table used if other than universal genetic code table.    
 
@@ -1477,23 +1501,20 @@ Value format
 : &lt;integer&gt; (1 - 6, 9 - 14, 16, 21 - 31)    
 
 Example
-: 11 
-
+: <pre>11</pre>
 
 Comment
 : Nucleotide sequence of [CDS](/ddbj/features-e.html#cds) is automatically translated to one-letter abbreviated amino acid sequence.    
 Genetic code exceptions should be reported in [/transl_except](#transl_except) or [/exception](#exception).    
     
 See [the genetic code list](/ddbj/geneticcode-e.html).    
-When /transl_table is not specified, standard code (/transl_table=1) is used for    
-translation automatically.    
+When /transl_table is not specified, standard code (/transl_table=1) is used for translation automatically.    
 
 Input method
-: for Nucleotide Sequence Submission System    
-If the organism name is not found in the taxonomy database, please enter 'genetic    
-code' for source feature. Then the value is reflected to /transl_table qualifier of    
-each [CDS](/ddbj/features-e.html#cds) feature.    
-for MSS    
+: - for Nucleotide Sequence Submission System    
+If the organism name is not found in the taxonomy database, please enter 'genetic code' for source feature.    
+Then the value is reflected to /transl_table qualifier of each [CDS](/ddbj/features-e.html#cds) feature.    
+- for MSS    
 Please specify the appropriate genetic code corresponds to the organism and organelle. 
 
 
@@ -1506,7 +1527,7 @@ Value format
 : IUPAC one-letter amino acid abbreviation as shown in [Amino Acid Codes](/ddbj/code-e.html#amino-1),"X" is to be used for AA exceptions.    
 
 Example     
-: MERRYCHRISTMASANDHAPPYNEWYEAR    
+: <pre>MERRYCHRISTMASANDHAPPYNEWYEAR</pre>
 
 Comment     
 : When /[pseudo](#pseudo) or /[pseudogene](#pseudogene) qualifier is shown, [CDS](/ddbj/features-e.html#cds) does not have /translation.    
@@ -1521,4 +1542,4 @@ Value format
 : &lt;text>, excluding double quotation mark (")    
 
 Example     
-: insularis    
+: <pre>insularis</pre>

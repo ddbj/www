@@ -33,6 +33,15 @@ human subjects from your submissions.
 Before submission, read "[Submission of research data from human
 subjects](/policies-e.html#submission-of-human-data)".
 
+
+- **[Application form for MSS](/ddbj/mss-form-e.html)**    
+- **[Validation tools for MSS data files](/ddbj/mss-tool-e.html)**    
+- **Format of submission files required for MSS**
+    - **[Sequence file](/ddbj/file-format-e.html#sequence)**
+    - **[Annotation file](/ddbj/file-format-e.html#annotation)**
+    - **[Samples of annotation files](/ddbj/file-format-e.html#sample)**
+
+
 ## What is MSS?  {#outline}
 
 <div class="attention" markdown="1">

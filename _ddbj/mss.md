@@ -29,6 +29,14 @@ related_pages:
 原則として、研究対象者を直接特定し得る参照情報は、登録データから取り除いてください。  
 ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#submission-of-human-data)をご覧ください。
 
+- **[MSS 登録申し込みフォーム"](/ddbj/mss-form.html)**
+- **[登録用ファイルチェックツール"](/ddbj/mss-tool.html)**
+- **登録用ファイル書式**
+    - **[配列ファイル](/ddbj/file-format-e.html#sequence)**
+    - **[アノテーションファイル](/ddbj/file-format-e.html#annotation)**
+    - **[アノテーションファイルサンプル](/ddbj/file-format.html#sample)**
+
+
 ## MSS とは？  {#outline}
 
 <div class="attention" markdown="1">
