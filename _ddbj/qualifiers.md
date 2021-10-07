@@ -520,7 +520,7 @@ heterochromatin
 repeat within scaffold    
 repeat between scaffolds    
 contamination    
-unknown 
+unknown    
 
 備考
 : [AGP Specification](https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/)に従い、[assembly_gap](/ddbj/features.html#assembly_gap) feature でのみ、使用します
@@ -742,7 +742,7 @@ pcr
 proximity ligation    
 strobe    
 within clone    
-unspecified 
+unspecified    
 
 備考
 : [AGP Specification](https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/)に従い、[assembly_gap](/ddbj/features.html#assembly_gap) feature でのみ、使用します 
