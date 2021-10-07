@@ -4,11 +4,14 @@ title: 公開されたデータを非公開に戻したい
 category: faq
 db:
   - ddbj
+  - dra
 tags: 
   - 更新
 date: 2014-05-30T18:16:00
 lang: ja
 ---
+
+## DDBJ {#ddbj}
 
 原則として、公開されたデータを非公開に戻すことはできません。    
 [INSDC](/about/insdc.html) において一度公開されたエントリを DDBJ retrieval system: [getentry](http://getentry.ddbj.nig.ac.jp/top-j.html) を利用してアクセッション番号で検索した場合、永久に閲覧が可能な状態になります（INSDC 側の作業ミスにより誤って公開された場合は、その限りではありません）。
@@ -26,3 +29,10 @@ lang: ja
 参考
 : [公開を取り消したデータが、現在も参照できるのはなぜですか](/faq/ja/why-retracted-data-available.html)
 : [INSDC Status Document](/about/insdc-status-e)
+
+## DRA {#dra}
+
+DDBJ と同様の扱いになります。    
+データの削除を [DRA チームに依頼](/contact-ddbj.html) してください。
+
+

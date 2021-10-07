@@ -4,11 +4,14 @@ title: How to restore the released data to private?
 category: faq
 db:
   - ddbj
+  - dra
 tags: 
   - Update
 date: 2014-06-13T17:20:30
 lang: en
 ---
+
+## DDBJ {#ddbj}
 
 In principle, DDBJ can not restore any published data.    
 See also following item about access restriction. 
@@ -30,3 +33,8 @@ Moreover, our unified database may be copied and redistributed without permissio
 References
 : [Why is the retracted data still available?](/faq/en/why-retracted-data-available-e.html)
 : [INSDC Status Document](/about/insdc-status-e)
+
+## DRA {#dra}
+
+The DRA data are also removed as DDBJ.    
+[Contact the DRA team](/contact-ddbj-e.html) to delete public DRA data.
