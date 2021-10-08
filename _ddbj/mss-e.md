@@ -61,7 +61,7 @@ We at DDBJ recommend using MSS when:
 - the complex submission containing many features  
   → more than 30 features
 - the submission consists of large number of sequences.  
-  → When number of sequences is greater than 1024, you have to submit
+  → When number of sequences is greater than 500, you have to submit
   two or more times via NSSS
 
 </div>
