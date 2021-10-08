@@ -21,8 +21,6 @@ related_pages:
   - title: Qualifier key
     url: /ddbj/qualifiers.html
   - title: The Genetic Codes
-    url: /ddbj/codontable.html
-  - title: The Genetic Codes
     url: /ddbj/geneticcode.html
 ---
 
