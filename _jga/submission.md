@@ -38,7 +38,7 @@ JGA は NBDC で承認された利用制限ポリシーを持つ，匿名化さ�
 
 著者が論文中で引用すべき JGA アクセッション番号が指定されていない場合は，JGAS (study) 番号を引用することを推奨します。Study 番号は読者に研究の概要を示し，その Study に含まれているすべてのデータへのリンクを提供します。
 
-アクセッション番号を引用する際の例文: 「Genotype data has been deposited at the Japanese Genotype-phenotype Archive (JGA, http://trace.ddbj.nig.ac.jp/jga), which is hosted by the DDBJ, under accession number JGASXXXXXXXXX.」
+アクセッション番号を引用する際の例文: 「Genotype data has been deposited at the Japanese Genotype-phenotype Archive (JGA, https://www.ddbj.nig.ac.jp/jga), which is hosted by the Bioinformation and DDBJ Center, under accession number JGASXXXXXX.」
 
 ## 塩基配列データ (raw/unaligned と aligned) {#sequence}
 

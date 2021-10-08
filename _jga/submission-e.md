@@ -39,7 +39,7 @@ After creating a D-way account, it takes about 10 minutes for the D-way account 
 
 Currently, there is no requirement for authors to use a specific JGA accession in their publications. We would recommend that authors use the JGAS (study) accession, which would provide the reader/user with a complete overview of the study and a set of links to all the data from that study.
 
-An example of accession number citation: "Genotype data has been deposited at the Japanese Genotype-phenotype Archive (JGA, http://trace.ddbj.nig.ac.jp/jga), which is hosted by the DDBJ, under accession number JGASXXXXXXXXX."
+An example of accession number citation: "Genotype data has been deposited at the Japanese Genotype-phenotype Archive (JGA, https://www.ddbj.nig.ac.jp/jga), which is hosted by the Bioinformation and DDBJ Center, under accession number JGASXXXXXX."
 
 ## Sequence data file (raw/unaligned and aligned)  {#sequence}
 
