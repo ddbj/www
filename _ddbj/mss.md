@@ -47,7 +47,7 @@ Mass Submission System (MSS) は、比較的大規模な塩基配列データ (r
 - Web 版塩基配列登録システムが対応していない登録 → [EST](/ddbj/est.html)、STS、[TSA](/ddbj/tsa.html)、[HTC](/ddbj/htc.html)、[GSS](/ddbj/gss.html)、[HTG](/ddbj/htg.html)、[WGS](/ddbj/wgs.html)、[CON](/ddbj/con.html)、[TLS](/ddbj/tls.html)
 - 配列が長い場合 → 目安は 500 kb 以上
 - １エントリあたりに多数の Feature がある場合 → 目安は 30 以上
-- エントリ数 (登録する配列の数) が多い場合 → 1024 を超えると Web 版塩基配列登録システムでは分割が必要です
+- エントリ数 (登録する配列の数) が多い場合 → 500 を超えると Web 版塩基配列登録システムでは分割が必要です
 
 </div>
 
