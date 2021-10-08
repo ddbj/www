@@ -47,7 +47,7 @@ Web 版塩基配列登録システム（DDBJ Nucleotide Sequence Submission Syst
 
 新規登録を開始する  
 : 初めて登録する場合には「[塩基配列の登録](/ddbj/submission.html)」,「[登録データ種別](data-categories.html)」について ご一読ください。
-: １度に登録可能なエントリ数は 1024件までです(最大数はPC環境や配列長に依存します)。
+: １度に登録可能なエントリ数は 500件までです(最大数はPC環境や配列長に依存します)。
 : 本ツールで[TPA データ](/ddbj/tpa.html)の登録も可能です。
 : 登録する配列から vector 由来の配列を除いてください。[VecScreen](http://ddbj.nig.ac.jp/vecscreen/)で確認できます。
 : 右サイドバーの「Related pages」もご参照ください。
