@@ -7,7 +7,7 @@ current_tab: home
 lang: ja
 ---
 
-The original site; [Controlled vocabulary for /country qualifier](//www.insdc.org/documents/country-qualifier-vocabulary) 2020.01.08 version
+The original site; [Controlled vocabulary for /country qualifier](//www.insdc.org/documents/country-qualifier-vocabulary) 2021.10.25 version
 
 A new qualifier was introduced in version 2.1 (December 15, 1998) of the Feature table definitions: /country.<br>This new qualifier is used to indicate the country of origin of a DNA sample. 
 
@@ -265,7 +265,7 @@ COUNTRY LIST based on information from: [https://unstats.un.org/unsd/methods/m49
 - Mayotte 
 - Mediterranean Sea 
 - Mexico 
-- Micronesia 
+- Micronesia, Federated States of 
 - Midway Islands 
 - Moldova 
 - Monaco 
@@ -417,6 +417,7 @@ COUNTRY LIST based on information from: [https://unstats.un.org/unsd/methods/m49
 - Former Yugoslav Republic of Macedonia 
 - Korea 
 - Macedonia
+- Micronesia 
 - Netherlands Antilles 
 - Serbia and Montenegro 
 - Siam 

@@ -9,7 +9,7 @@ lang: en
 
 The original site; [Controlled vocabulary for /country
 qualifier](//www.insdc.org/documents/country-qualifier-vocabulary)
-2018.06.21 version
+2021.10.25 version
 
 A new qualifier was introduced in version 2.1 (December 15, 1998) of the
 Feature table definitions: /country.  
@@ -248,7 +248,7 @@ COUNTRY LIST based on information from:
   - Mayotte
   - Mediterranean Sea
   - Mexico
-  - Micronesia
+  - Micronesia, Federated States of
   - Midway Islands
   - Moldova
   - Monaco
@@ -412,6 +412,7 @@ COUNTRY LIST based on information from:
   - Former Yugoslav Republic of Macedonia
   - Korea
   - Macedonia
+  - Micronesia
   - Netherlands Antilles
   - Serbia and Montenegro
   - Siam

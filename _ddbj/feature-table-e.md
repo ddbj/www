@@ -7,14 +7,14 @@ current_tab: home
 lang: en
 ---
 
-The original site; [The DDBJ/ENA/GenBank Feature Table Definition](http://www.insdc.org/documents/feature-table) Version 11.0 October 2020
+The original site; [The DDBJ/ENA/GenBank Feature Table Definition](http://www.insdc.org/documents/feature-table) Version 11.1 October 2021
 
 ```
 The DDBJ/ENA/GenBank Feature Table Definition
 Feature Table:
 Definition
 
-Version 11.0 October 2020
+Version 11.1 October 2021
 
 DNA Data Bank of Japan, Mishima, Japan.
 EMBL-EBI, European Nucleotide Archive, Cambridge, UK.
@@ -1112,7 +1112,6 @@ Definition            constant region of immunoglobulin light and heavy
                       particular chain
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#q_gene">gene</a>="text"
@@ -1142,7 +1141,6 @@ Definition            coding sequence; sequence of nucleotides that
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#artificial_location">artificial_location</a>="[artificial_location_value]"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#codon_start">codon_start</a>=&lt;1 or 2 or 3&gt;
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#EC_number">EC_number</a>="text"
@@ -1218,7 +1216,6 @@ Definition            displacement loop; a region within mitochondrial DNA in
                       invader in the reaction catalyzed by RecA protein
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#q_gene">gene</a>="text"
@@ -1240,7 +1237,6 @@ Definition            Diversity segment of immunoglobulin heavy chain, and
                       T-cell receptor beta chain; 
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#q_gene">gene</a>="text"
@@ -1266,7 +1262,6 @@ Definition            region of genome that codes for portion of spliced <a href
                       <a href="#rRNA">rRNA</a> and <a href="#tRNA">tRNA</a>; may contain <a href="#5UTR">5'UTR</a>, all <a href="#fCDS">CDS</a>s and <a href="#3UTR">3'UTR</a>; 
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#EC_number">EC_number</a>="text"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
@@ -1315,7 +1310,6 @@ Definition            region of biological interest identified as a gene
                       and for which a name has been assigned;
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -1350,7 +1344,6 @@ Definition            intervening DNA; DNA which is eliminated through any of
                       several kinds of recombination;
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -1378,7 +1371,6 @@ Definition            a segment of DNA that is transcribed, but removed from
                       (<a href="#exon">exon</a>s) on either side of it;
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -1405,7 +1397,6 @@ Definition            joining segment of immunoglobulin light and heavy
                       chains; 
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#q_gene">gene</a>="text"
@@ -1434,7 +1425,6 @@ Definition            mature peptide or protein coding sequence; coding
                       corresponding <a href="#fCDS">CDS</a>);
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#EC_number">EC_number</a>="text"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
@@ -1463,7 +1453,6 @@ Definition            site in nucleic acid which covalently or non-covalently
 Mandatory qualifiers  /<a href="#bound_moiety">bound_moiety</a>="text"
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -1488,9 +1477,7 @@ Definition            feature sequence is different from that presented
                       difference key (<a href="#old_sequence">old_sequence</a>, <a href="#variation">variation</a>, or <a href="#modified_base">modified_base</a>);
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#clone">clone</a>="text"
-                      /<a href="#compare">compare</a>=[accession-number.sequence-version]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#q_gene">gene</a>="text"
@@ -1520,7 +1507,6 @@ Definition            region of biological interest which cannot be described
                       by any other feature key; a new or rare feature;
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -1554,7 +1540,6 @@ Definition            site of any generalized, site-specific or replicative
                       (/<a href="#proviral">proviral</a>);
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#q_gene">gene</a>="text"
@@ -1580,7 +1565,6 @@ Definition            any transcript or RNA product that cannot be defined by
                       <a href="#mat_peptide">mat_peptide</a>, <a href="#intron">intron</a>, <a href="#polyA_site">polyA_site</a>, <a href="#ncRNA">ncRNA</a>, <a href="#rRNA">rRNA</a> and <a href="#tRNA">tRNA</a>);
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -1608,7 +1592,6 @@ Definition            any secondary or tertiary nucleotide structure or
                       keys (<a href="#stem_loop">stem_loop</a> and <a href="#D-loop">D-loop</a>);
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -1632,7 +1615,6 @@ Mandatory qualifiers  /<a href="#mobile_element_type">mobile_element_type</a>="&
                       [:&lt;mobile_element_name&gt;]"
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;" 
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -1659,7 +1641,6 @@ Definition            the indicated nucleotide is a modified nucleotide and
 Mandatory qualifiers  /<a href="#mod_base">mod_base</a>=&lt;modified_base&gt;
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#frequency">frequency</a>="text"
@@ -1685,7 +1666,6 @@ Definition            messenger RNA; includes 5'untranslated region (<a href="#5
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#artificial_location">artificial_location</a>="[artificial_location_value]"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -1715,7 +1695,6 @@ Definition            a non-protein-coding gene, other than ribosomal RNA and
 Mandatory qualifiers  /<a href="#ncRNA_class">ncRNA_class</a>="TYPE"
                       
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -1750,7 +1729,6 @@ Definition            extra nucleotides inserted between rearranged
                       immunoglobulin segments.
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#q_gene">gene</a>="text"
@@ -1810,7 +1788,6 @@ Definition            region containing polycistronic transcript including a
 Mandatory qualifiers  /<a href="#q_operon">operon</a>="text"
  
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -1832,7 +1809,6 @@ Definition            origin of transfer; region of a DNA molecule where transfe
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#bound_moiety">bound_moiety</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#direction">direction</a>=value
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
@@ -1867,7 +1843,6 @@ Definition            site on an RNA transcript to which will be added adenine
                       residues by post-transcriptional polyadenylation;
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#q_gene">gene</a>="text"
@@ -1891,7 +1866,6 @@ Definition            any RNA species that is not yet the mature RNA product;
                       sequences (<a href="#intron">intron</a>) and 3' untranslated region (<a href="#3UTR">3'UTR</a>);
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -1923,7 +1897,6 @@ Definition            primary (initial, unprocessed) transcript;
                       sequences (<a href="#intron">intron</a>) and 3' untranslated region (<a href="#3UTR">3'UTR</a>);
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -1947,7 +1920,6 @@ Definition            non-covalent primer binding site for initiation of
                       includes site(s) for synthetic e.g., PCR primer elements;
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#q_gene">gene</a>="text"
@@ -1978,7 +1950,6 @@ Definition            propeptide coding sequence; coding sequence for the domain
                       proprotein that is cleaved to form the mature protein product.
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -2004,7 +1975,6 @@ Definition            non-covalent protein binding site on nucleic acid;
 Mandatory qualifiers  /bound_moiety="text"
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -2026,14 +1996,14 @@ Comment               note that feature key <a href="#regulatory">regulatory</a>
 
 <pre id="regulatory"><strong>Feature Key           regulatory</strong>
 
-Definition            any region of sequence that functions in the regulation of 
-                      transcription, translation, replication or chromatin structure;
+Definition            any region of sequence that functions in the regulation of
+                      transcription, translation, replication, recombination or 
+                      chromatin structure;
 
 Mandatory qualifiers  /<a href="#regulatory_class">regulatory_class</a>="TYPE"
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#bound_moiety">bound_moiety</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -2062,7 +2032,6 @@ Comment               This feature has replaced the following Feature Keys on 15
 Definition            region of genome containing repeating units;
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;" 
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -2089,7 +2058,6 @@ Definition            origin of replication; starting site for duplication of
                       nucleic acid to give two identical copies; 
 
 Optional Qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#direction">direction</a>=value
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
@@ -2115,7 +2083,6 @@ Definition            mature ribosomal RNA; RNA component of the
                       amino acids into proteins.
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -2146,7 +2113,6 @@ Definition            switch region of immunoglobulin heavy chains;
                       from the same B-cell;
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#q_gene">gene</a>="text"
@@ -2174,7 +2140,6 @@ Definition            signal peptide coding sequence; coding sequence for an
                       membrane leader sequence;
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -2212,7 +2177,6 @@ Optional qualifiers   /<a href="#altitude">altitude</a>="text"
                       /<a href="#cell_line">cell_line</a>="text"
                       /<a href="#cell_type">cell_type</a>="text"
                       /<a href="#chromosome">chromosome</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#clone">clone</a>="text"
                       /<a href="#clone_lib">clone_lib</a>="text"
                       /<a href="#collected_by">collected_by</a>="text" 
@@ -2280,7 +2244,6 @@ Definition            hairpin; a double-helical region formed by base-pairing
                       single strand of RNA or DNA. 
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -2305,7 +2268,6 @@ Definition            sequence tagged site; short, single-copy DNA sequence
                       mapped by determining the order of a series of STSs;
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#q_gene">gene</a>="text"
@@ -2360,7 +2322,6 @@ Definition            transfer messenger RNA; tmRNA acts as a tRNA first,
                       destruction or proteolysis;
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -2388,7 +2349,6 @@ Definition            transit peptide coding sequence; coding sequence for an
                       import of the protein into the organelle;
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -2416,7 +2376,6 @@ Definition            mature transfer RNA, a small RNA molecule (75-85 bases
 Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#anticodon">anticodon</a>=(pos:&lt;location&gt;,aa:&lt;amino_acid&gt;,seq:&lt;text&gt;)
                       /<a href="#circular_RNA">circular_RNA</a>
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -2448,8 +2407,6 @@ Definition            a small region of sequenced bases, generally 10 or fewer i
                       <a href="#gap">gap</a> feature.
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
-                      /<a href="#compare">compare</a>=[accession-number.sequence-version]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#q_gene">gene</a>="text"
@@ -2477,7 +2434,6 @@ Definition            variable region of immunoglobulin light and heavy
                       and <a href="#J_segment">J_segment</a>s;
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#q_gene">gene</a>="text"
@@ -2505,7 +2461,6 @@ Definition            variable segment of immunoglobulin light and heavy
                       and the last few amino acids of the leader peptide;
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#q_gene">gene</a>="text"
@@ -2533,8 +2488,6 @@ Definition            a related strain contains stable mutations from the same
                       possibly others);
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
-                      /<a href="#compare">compare</a>=[accession-number.sequence-version]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#frequency">frequency</a>="text"
@@ -2569,7 +2522,6 @@ Definition            1) region at the 3' end of a mature transcript (following
                       stop codon) that is not translated into a protein;
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -2594,7 +2546,6 @@ Definition            1) region at the 5' end of a mature transcript (preceding
                       first initiation codon) that is not translated into a protein; 
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
-                      /<a href="#citation">citation</a>=[number]
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -2758,7 +2709,8 @@ Definition      reference to a citation listed in the entry reference field
 Value format    [integer-number] where integer-number is the number of the
                 reference as enumerated in the reference field
 Example         /citation=[3]
-Comment         used to indicate the citation providing the claim of and/or
+Comment         not to be used for new entries from 14-MAY-2021; 
+                used to indicate the citation providing the claim of and/or
                 evidence for a feature; brackets are used for conformity.
 </pre>
 
@@ -2859,7 +2811,8 @@ Definition      Reference details of an existing public INSD entry
                 to which a comparison is made
 Value format    [accession-number.sequence-version]
 Example         /compare=AJ634337.1
-Comment         This qualifier may be used on the following features:
+Comment         not to be used for new entries from 14-MAY-2021; 
+                This qualifier may be used on the following features:
                 <a href="#misc_difference">misc_difference</a>, <a href="#unsure">unsure</a>, <a href="#old_sequence">old_sequence</a> and <a href="#variation">variation</a>. 
                 The feature "<a href="#old_sequence">old_sequence</a>" must have either a 
                 /<a href="#citation">citation</a> or a /compare qualifier. Multiple /compare
@@ -3212,6 +3165,7 @@ Definition      name for a combination of alleles that are linked together
                 be used to track gene flow in populations.
 Value format    "text"
 Example         /haplotype="Dw3 B5 Cw1 A1"
+                /haplotype="M3 [.42]"
 </pre>
 
 -----
@@ -3339,8 +3293,10 @@ Definition      geographical coordinates of the location where the specimen was
 Value format    "text" 
 Example         /lat_lon="47.94 N 28.12 W" 
                 /lat_lon="45.0123 S 4.1234 E"
-Comment         degrees latitude and longitude in format 
-                "d[d.dddd] N|S d[dd.dddd] W|E" (see the examples)
+                /lat_lon="6.385667 N 162.334778 W"
+                /lat_lon="5.38566752 N 150.33477811 W"
+Comment         degrees latitude and longitude in format "d[d.dddddddd] N|S d[dd.dddd dddd] W|E"
+                (see the examples)
 </pre>
 
 -----
@@ -3827,8 +3783,8 @@ Comment         TYPE is a term taken from the INSDC controlled vocabulary for re
 
 <pre id="regulatory_class"><strong>Qualifier       /regulatory_class</strong>
 Definition      a structured description of the classification of transcriptional,
-                translational, replicational and chromatin structure related 
-                regulatory elements in a sequence
+                translational, replicational, recombination and chromatin 
+                structure related regulatory elements in a sequence 
 Value format    "TYPE"
 Example         /regulatory_class="promoter"
                 /regulatory_class="enhancer"
@@ -3840,7 +3796,6 @@ Comment         TYPE is a term taken from the INSDC controlled vocabulary for re
                 regulatory classes not yet in the INSDC /regulatory_class controlled
                 vocabulary can be annotated by entering /regulatory_class="other"
                 with /note="[brief explanation of novel regulatory_class]";
-
 </pre>
 
 -----
