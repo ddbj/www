@@ -1607,7 +1607,8 @@ The DRA metadata submission tool cannot describe technical reads
 technical reads" and "To use metadata elements in the [DRA XML
 schema](https://github.com/ddbj/pub/tree/master/docs/dra) but not in the
 submission tool", submitters need to create or edit metadata in XML
-files.
+files.    
+Regarding the 10x Genomics data files, please refer to [What format of 10x Genomics data should I submit to NCBI GEO/SRA?](https://kb.10xgenomics.com/hc/en-us/articles/360024716391-What-format-of-10x-Genomics-data-should-I-submit-to-NCBI-GEO-SRA).
 
 1. [Create and submit metadata by using the web-based tool.](#create-metadata-using-tool)
 2. Download the Submission, Experiment, Run and Analysis (optional) XML files of the submission with status "metadata_submitted".

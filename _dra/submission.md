@@ -491,7 +491,9 @@ Analysis に含めるデータファイルを選択します。
 
 ### 登録するデータファイルの形式について  {#formats-sequencing-data-files} 
 
-DRA のメタデータ作成ツールは technical read (アダプター、プライマーやバーコード配列) を記載することに対応していません。 「technical read を含む生データを登録する場合」や「[DRA XML schema](https://github.com/ddbj/pub/tree/master/docs/dra) 中にはあるがツール中には無い項目をメタデータに記載する場合」は[メタデータを XML ファイルで登録する](#create-metadata-in-xml-files)必要があります ([XML の記載例](/ddbj/example.html))。
+DRA のメタデータ作成ツールは technical read (アダプター、プライマーやバーコード配列) を記載することに対応していません。 「technical read を含む生データを登録する場合」や「[DRA XML schema](https://github.com/ddbj/pub/tree/master/docs/dra) 中にはあるがツール中には無い項目をメタデータに記載する場合」は[メタデータを XML ファイルで登録する](#create-metadata-in-xml-files)必要があります ([XML の記載例](/ddbj/example.html))。    
+10x Genomics のデータファイルについては [What format of 10x Genomics data should I submit to NCBI GEO/SRA?](https://kb.10xgenomics.com/hc/en-us/articles/360024716391-What-format-of-10x-Genomics-data-should-I-submit-to-NCBI-GEO-SRA) を参考にしてください。
+
 
 一般的な形式
 
