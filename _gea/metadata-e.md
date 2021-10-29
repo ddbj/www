@@ -9,7 +9,7 @@ lang: en
 
 ## MAGE-TAB  {#mage-tab}
 
-The MicroArray Gene Expression Tabular ([MAGE-TAB](http://fged.org/projects/mage-tab/)) format has been developed and adopted by the functional genomics community as a means of representing and communicating data about a functional genomics experiment in a structured and standardised way. It was designed for data collection and annotation, as well as for data exchange between tools and databases, including submission tools to public repositories such as ArrayExpress and GEA. The full [specification](http://fged.org/projects/mage-tab/) outlines the format.
+The MicroArray Gene Expression Tabular ([MAGE-TAB](http://fged.org/projects/mage-tab/)) format has been developed and adopted by the functional genomics community as a means of representing and communicating data about a functional genomics experiment in a structured and standardised way. It was designed for data collection and annotation, as well as for data exchange between tools and databases, including submission tools to public repositories such as ArrayExpress and GEA. The full [specification](/assets/files/magetab/MAGE-TABv1.1.pdf) outlines the format.
 
 
 {% include image.html url="magetab/magetab_over.jpg" caption="Relationships between IDF, SDRF, ADF and raw and processed data files" class="w450" %}
