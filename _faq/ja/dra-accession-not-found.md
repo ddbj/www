@@ -28,6 +28,9 @@ NCBI や ENA で検索できる場合、そちらの URL を論文査読者に�
 * NCBI SRA: not found [https://www.ncbi.nlm.nih.gov/sra/DRA011729](https://www.ncbi.nlm.nih.gov/sra/DRA011729)
 * ENA: submission and sample metadata are indexed [https://www.ebi.ac.uk/ena/browser/view/DRA011729](https://www.ebi.ac.uk/ena/browser/view/DRA011729)
 
+NCBI SRA でのミラーリングの状況は api で調べることができます。
+* NCBI SRA api [https://www.ncbi.nlm.nih.gov/Traces/sra/status/srastatrep.fcgi/acc-mirroring?acc=DRA000001](https://www.ncbi.nlm.nih.gov/Traces/sra/status/srastatrep.fcgi/acc-mirroring?acc=DRA000001)
+
 DDBJ センターでは[新しい検索システム](https://ddbj.nig.ac.jp/search)を開発しております。   
 しかし、新システムは NCBI 経由で DRA 公開データを取り込んでおり、NCBI SRA での DRA データミラーリングが遅れると、新検索システムでの公開も遅れてしまいます。   
 この点を改善すべく新システムでは DRA 公開データを DRA ftp から取り込むべく開発を続けておりますが、実現時期は2021年12月頃になる見込みです。

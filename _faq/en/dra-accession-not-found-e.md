@@ -25,6 +25,9 @@ Example, DRA011729
 * NCBI SRA: not found [https://www.ncbi.nlm.nih.gov/sra/DRA011729](https://www.ncbi.nlm.nih.gov/sra/DRA011729)
 * ENA: submission and sample metadata are indexed [https://www.ebi.ac.uk/ena/browser/view/DRA011729](https://www.ebi.ac.uk/ena/browser/view/DRA011729)
 
+You may also check NCBI SRA mirroring status by using NCBI api.    
+* NCBI SRA api [https://www.ncbi.nlm.nih.gov/Traces/sra/status/srastatrep.fcgi/acc-mirroring?acc=DRA000001](https://www.ncbi.nlm.nih.gov/Traces/sra/status/srastatrep.fcgi/acc-mirroring?acc=DRA000001)
+
 We are developing the [new search system](https://ddbj.nig.ac.jp/search).  
 However, this system incorporates public DRA data via NCBI, so when DRA data mirroring to NCBI is delayed, the DRA metadata indexing by the new system is also delayed.   
 To solve this issue, we will develop the new search system to incorporate public DRA data from our ftp. This function will be realized in December, 2021.
