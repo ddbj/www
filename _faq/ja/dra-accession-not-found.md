@@ -16,7 +16,7 @@ lang: ja
 DRA000001 は [DRASearch](https://ddbj.nig.ac.jp/DRASearch/) 
 
 [DRA ftp](https://ddbj.nig.ac.jp/public/ddbj_database/dra) ではスパコンのトラブルが無ければ、公開日の翌日にメタデータ XML と sra/fastq ファイルが公開されます。    
-例 [DRA000001](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA000/DRA000001/)    
+例 [https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA000/DRA000001/](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA000/DRA000001/)    
 DRASearch でインデックスされていない場合、ftp のリンクを論文査読者に提出することをご検討ください。    
 
 [DRASearch](https://ddbj.nig.ac.jp/DRASearch/) で検索できない場合、[NCBI SRA](https://www.ncbi.nlm.nih.gov/sra) や [ENA](https://www.ebi.ac.uk/ena/browser/search) で検索を試してみるよう、お願いいたします。   

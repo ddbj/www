@@ -14,7 +14,7 @@ The indexing of public SRA metadata by [DRASearch](https://ddbj.nig.ac.jp/DRASea
 The DRASearch regularly indexes metadata XML full dump monthly released by NCBI SRA, so at the beginning of the month, the delay will be a few weeks for refreshing metadata indexes.    
 
 The metadata XML and sra/fastq files are usually distributed at [DRA ftp](https://ddbj.nig.ac.jp/public/ddbj_database/dra) within a next day of data release if there is no supercomputer troubles.   
-Example: [DRA000001](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA000/DRA000001/)    
+Example: [https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA000/DRA000001/](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA000/DRA000001/)    
 
 If you cannot find your DRA accession numbers in [DRASearch](https://ddbj.nig.ac.jp/DRASearch/), please try [NCBI SRA](https://www.ncbi.nlm.nih.gov/sra) and [ENA](https://www.ebi.ac.uk/ena/browser/search).   
 If your data is accessible at NCBI and ENA sites, please provide the URLs to journal editors.    
