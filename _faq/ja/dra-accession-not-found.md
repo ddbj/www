@@ -22,6 +22,12 @@ DRASearch でインデックスされていない場合、ftp のリンクを論
 [DRASearch](https://ddbj.nig.ac.jp/DRASearch/) で検索できない場合、[NCBI SRA](https://www.ncbi.nlm.nih.gov/sra) や [ENA](https://www.ebi.ac.uk/ena/browser/search) で検索を試してみるよう、お願いいたします。   
 NCBI や ENA で検索できる場合、そちらの URL を論文査読者にご提出ください。    
 
+例 DRA011729
+* ftp: accessible [https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA011/DRA011729/](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA011/DRA011729/)
+* DRASearch: not found [https://ddbj.nig.ac.jp/DRASearch/submission?acc=DRA011729](https://ddbj.nig.ac.jp/DRASearch/submission?acc=DRA011729)
+* NCBI SRA: not found [https://www.ncbi.nlm.nih.gov/sra/DRA011729](https://www.ncbi.nlm.nih.gov/sra/DRA011729)
+* ENA: submission and sample metadata are indexed [https://www.ebi.ac.uk/ena/browser/view/DRA011729](https://www.ebi.ac.uk/ena/browser/view/DRA011729)
+
 DDBJ センターでは[新しい検索システム](https://ddbj.nig.ac.jp/search)を開発しております。   
 しかし、新システムは NCBI 経由で DRA 公開データを取り込んでおり、NCBI SRA での DRA データミラーリングが遅れると、新検索システムでの公開も遅れてしまいます。   
 この点を改善すべく新システムでは DRA 公開データを DRA ftp から取り込むべく開発を続けておりますが、実現時期は2021年12月頃になる見込みです。

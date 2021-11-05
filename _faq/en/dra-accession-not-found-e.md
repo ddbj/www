@@ -19,6 +19,12 @@ Example: [DRA000001](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA00
 If you cannot find your DRA accession numbers in [DRASearch](https://ddbj.nig.ac.jp/DRASearch/), please try [NCBI SRA](https://www.ncbi.nlm.nih.gov/sra) and [ENA](https://www.ebi.ac.uk/ena/browser/search).   
 If your data is accessible at NCBI and ENA sites, please provide the URLs to journal editors.    
 
+Example, DRA011729
+* ftp: accessible [https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA011/DRA011729/](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA011/DRA011729/)
+* DRASearch: not found [https://ddbj.nig.ac.jp/DRASearch/submission?acc=DRA011729](https://ddbj.nig.ac.jp/DRASearch/submission?acc=DRA011729)
+* NCBI SRA: not found [https://www.ncbi.nlm.nih.gov/sra/DRA011729](https://www.ncbi.nlm.nih.gov/sra/DRA011729)
+* ENA: submission and sample metadata are indexed [https://www.ebi.ac.uk/ena/browser/view/DRA011729](https://www.ebi.ac.uk/ena/browser/view/DRA011729)
+
 We are developing the [new search system](https://ddbj.nig.ac.jp/search).  
 However, this system incorporates public DRA data via NCBI, so when DRA data mirroring to NCBI is delayed, the DRA metadata indexing by the new system is also delayed.   
 To solve this issue, we will develop the new search system to incorporate public DRA data from our ftp. This function will be realized in December, 2021.
