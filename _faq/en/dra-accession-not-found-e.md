@@ -37,9 +37,8 @@ Run accession:
 * DRASearch: [https://ddbj.nig.ac.jp/DRASearch/run?acc=DRR000001](https://ddbj.nig.ac.jp/DRASearch/run?acc=DRR000001)
 * New search: [https://ddbj.nig.ac.jp/resource/dra-run/DRR000001](https://ddbj.nig.ac.jp/resource/dra-run/DRR000001)
 
-
-
-
+The new search system incorporates public DRA data via NCBI, so when DRA data mirroring to NCBI is delayed, the DRA metadata indexing by the new system is also delayed.    
+To solve this issue, we will develop the new search system to incorporate public DRA data from our ftp. This function will be realized in December, 2021.  
 
 
 
