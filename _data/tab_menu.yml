@@ -466,6 +466,8 @@ gea:
           url: /gea/validation.html	
         - title: Single-cell submission guide	
           url: /gea/single-cell.html	
+        - title: Spatial gene expression 
+          url: /gea/spatial-gene-expression.html   
         - title: Example	
           url: /gea/example.html	
         - title: Array Design	
@@ -511,6 +513,8 @@ gea:
           url: /gea/validation-e.html
         - title: Single-cell submission guide
           url: /gea/single-cell-e.html
+        - title: Spatial gene expression 
+          url: /gea/spatial-gene-expression-e.html   
         - title: Example
           url: /gea/example-e.html
         - title: Array Design
