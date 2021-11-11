@@ -20,10 +20,10 @@ lang: ja
 
 [Spatial Gene Expression - Image Outputs](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/images)
 
-上記の Visium ページで示されている出力ファイルの内、以下のファイルを生・解析データとは別の additional ファイルとして登録します。他の関連するファイルを含めることもできます。
+上記の Visium ページで示されている出力ファイルの内、以下のファイルを生・解析データと一緒に登録します。他の関連するファイルを含めることもできます。
 
 * tissue_hires_image.png, tissue_lowres_image.png: 組織切片の画像
 * scalefactors_json.json: 画像とスポットとの倍率を含む対応関係
 * tissue_positions_list.csv: バーコード配列とスポット座標との対応関係
 
-手順については [GEA チームにお問い合わせください](/contact-ddbj.html)。
+手順についてはデータを D-way で入力後、submit する前に [GEA チームにお問い合わせください](/contact-ddbj.html)。

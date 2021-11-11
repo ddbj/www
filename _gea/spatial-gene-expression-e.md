@@ -17,10 +17,12 @@ Submission of output files from the 10xGenomics [Visium](https://www.10xgenomics
 
 [Spatial Gene Expression - Image Outputs](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/images)
 
-Among the files indicated in the above page, submit the following files separately as additional files from raw and processed data files. The other related files may also be included.
+Among the files indicated in the above page, submit the following files along with raw and processed data files. The other related files may also be included.
 
 * tissue_hires_image.png, tissue_lowres_image.png: these files are downsampled versions of the original, full-resolution brightfield image provided by the user.
 * scalefactors_json.json: scaling factor that converts pixel positions in the original, full-resolution image to pixel positions in the tissue image files.
 * tissue_positions_list.csv: this text file contains a table with rows that correspond to spots.
 
-Please [contact the GEA team](/contact-ddbj-e.html) to submit these files.
+After entering your data in D-way, please [contact the GEA team](/contact-ddbj-e.html) before submitting.
+
+
