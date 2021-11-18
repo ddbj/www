@@ -177,7 +177,8 @@ Lilium hybrid division I</code></pre>
 
 taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から検索不能な場合、登録時に以下の参考情報を可能な範囲でお知らせください。
 
-taxonomy database 登録申請のための参考情報
+---
+**taxonomy database 登録申請のための参考情報**
 
 - [推定可能な範囲の lineage](#lineage)
 - [種を記載した論文](#ref)
@@ -214,11 +215,11 @@ Methanomicrobiales archaeon</code></pre>
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp."
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
-真核生物 (カビ、酵母相当の真菌以外) の場合は、あるいは、微生物でも全ゲノム規模の配列に該当する場合、判明している範囲の lineage (多くの場合 属名) を用いて、"\<genus name\> sp."などとした上で、[識別子](/ddbj/identifiers.html) (多くの場合、strain の名称) を「生物名」に含めて記載しています。  
+真核生物 (カビ、酵母相当の単細胞真菌以外) の場合、<!-- あるいは、微生物でも全ゲノム規模の配列に該当する場合、 -->判明している範囲の lineage (多くの場合 属名) を用いて、"\<genus name\> sp."などとした上で、[識別子](/ddbj/identifiers.html) (多くの場合、strain の名称) を「生物名」に含めて記載しています。  
 「生物名」に含めている場合でも、[識別子](/ddbj/identifiers.html)を [/strain](/ddbj/qualifiers.html#strain) など該当する qualifier に記載してください。
 
-<pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
-                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
+<pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Euglena sp. CR123"
+                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="CR123"</code></pre>  
 
 #### 2-2. 新種提唱の場合  {#new}
 
@@ -254,7 +255,8 @@ qualifier をあわせて source feature に記載します。
 
 taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から検索不能な場合、登録時に以下の参考情報を可能な範囲でお知らせください。
 
-taxonomy database 登録申請のための参考情報
+---
+**taxonomy database 登録申請のための参考情報**
 
 - [推定可能な範囲の lineage](#lineage)
 - [提唱中の新種学名](#propose)
@@ -303,7 +305,47 @@ uncultured Aspergillaceae</code></pre>
 
 taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から検索不能な場合、登録時に以下の参考情報を可能な範囲でお知らせください。
 
-taxonomy database 登録申請のための参考情報
+---
+**taxonomy database 登録申請のための参考情報**
+
+- [推定可能な範囲の lineage](#lineage)
+- [サンプル、または、配列を得た方法の概略](#isolate)
+
+
+[メタゲノムアセンブリ](/ddbj/metagenome-assembly.html)
+: Metagenome-Assembled Genome (MAG) の場合、単一生物分類群がツールにより割り当てられ得るため、種、もしくは、それ以下のランクの生物名（例 Agrobacterium tumefaciens）を記載します。
+: 種同定を伴わない MAG の場合、判明している範囲の lineage、多くの場合、属名を用いて、"\<genus name\> sp." などとして記載します。
+属より上位ランクの場合、判明している範囲の lineage に細菌ならば "bacterium"、
+古細菌ならば、 "archaeon" を付加した名前を記載します。
+真核生物の場合、判明している範囲の lineage が属レベルでも、属より上位でも "sp." を付加した名前 を記載します。
+
+書式
+
+- \<genus name> sp. # 原核生物
+- \<genus (or upper) name> sp. # 真核生物
+- \<family (or upper) name> bacterium
+- \<family (or upper) name> archaeon
+
+例
+
+<pre><code>Agrobacterium sp.
+Aspergillaceae sp.
+Rhizobiaceae bacterium
+Methanomicrobiales archaeon</code></pre>
+
+MAG 相当の場合、
+[/environmental_sample](/ddbj/qualifiers.html#environmental_sample) qualifier、
+[/isolation_source](/ddbj/qualifiers.html#isolation_source) qualifier、および、
+[識別子](/ddbj/identifiers.html) としての [/isolate](/ddbj/qualifiers.html#isolate) qualifier に加えて、
+[/metagenome_source](/ddbj/qualifiers.html#metagenome_source) qualifier を記載します。
+[/metagenome_source](/ddbj/qualifiers.html#metagenome_source) qualifier には、
+[metagenome taxonomy nodes](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169) にある操作的な名称から
+適宜、選択して、例えば soil metagenome などのサンプル分離源を反映したメタゲノム名を記載してください。
+[NCBI のサイト](https://www.ncbi.nlm.nih.gov/biosample/docs/organism/#metagenomes)にメタゲノム名の使い分けについて解説されています。
+
+
+---
+**taxonomy database 登録申請のための参考情報**
 
 - [推定可能な範囲の lineage](#lineage)
 - [サンプル、または、配列を得た方法の概略](#isolate)
@@ -319,7 +361,8 @@ Expression vector pAMP</code></pre>
 
 taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から検索不能な場合、登録時に以下の参考情報を可能な範囲でお知らせください。
 
-taxonomy database 登録申請のための参考情報
+---
+**taxonomy database 登録申請のための参考情報**
 
 - [想定される用法など](#usage)
 
