@@ -2,10 +2,6 @@ top_news:
   ja:
     - title: 2021年11月10日～11/19日 DDBJ センターの登録検索解析サービス停止のお知らせ
       path: 2021-10-15
-    - title: 11月5日公開データまで検索できるようになりました - DRASearch で2021年9月5日以降に公開されたデータが検索できない状態になっています
-      path: 2021-11-05
   en:
     - title: November 10th-19th, suspension of DDBJ services due to NIG supercomputer maintenance
       path: 2021-10-15-e
-    - title: public DRA data distributed after 5th November are searchable - DRA accession numbers distributed after 5th, September, 2021 have not been accessible in DRASearch
-      path: 2021-11-05-e
