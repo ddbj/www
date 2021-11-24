@@ -6,7 +6,7 @@ category: dra
 current_tab: handbook
 panels:	
 - title: Search	
-  url: https://ddbj.nig.ac.jp/DRASearch/	
+  url: https://ddbj.nig.ac.jp/search	
   icon: ../assets/images/icon-search_analysis.png	
 - title: How_to_submit	
   url: /dra/submission-e.html	

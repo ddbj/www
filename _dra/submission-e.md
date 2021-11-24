@@ -6,7 +6,7 @@ category: dra
 current_tab: handbook
 panels: 
 - title: Search 
-  url: https://ddbj.nig.ac.jp/DRASearch/  
+  url: https://ddbj.nig.ac.jp/search  
   icon: ../assets/images/icon-search_analysis.png 
 - title: How_to_submit  
   url: /dra/submission-e.html 
@@ -86,7 +86,7 @@ home. Submit alignment data in bam file to Run. Please [contact to
 DRA team to ask mirroring of analysis
 data.](/contact-ddbj-e.html)Analysis files are provided on the DDBJ ftp
 site and not indexed by the
-[DRASearch](http://ddbj.nig.ac.jp/DRASearch).
+[DDBJ Search](https://ddbj.nig.ac.jp/search).
 
 {% include image.html url="books/sra_object.png" caption="Data model" class="w450" %}
 
@@ -1746,7 +1746,7 @@ FAQ: [How are linked BioProject/BioSample/sequence data
 released?](/faq/en/bp-bs-seq-release.html)
 
 When the data is released, in a few days, the released data will become
-searchable at [DRASearch](http://ddbj.nig.ac.jp/DRASearch)and the data
+searchable at [DDBJ Search](https://ddbj.nig.ac.jp/search)and the data
 will be mirrored to the [NCBI
 SRA](//www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi).
 
@@ -1775,7 +1775,7 @@ move to hold date change page.
 
 To immediately release the submission, click the [Release Now]. In the
 middle of the night, the submission is released, data files will be made
-available at [ftp](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/)and metadata will be indexed by the [DRA search system](http://ddbj.nig.ac.jp/DRASearch)in a few days.
+available at [ftp](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/)and metadata will be indexed by the [DDBJ search system](https://ddbj.nig.ac.jp/search)in a few days.
 
 ### Update metadata  {#update-metadata}
 

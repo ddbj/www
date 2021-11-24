@@ -39,7 +39,7 @@ lang: ja
 : シークエンス用ライブラリー (Experiment) に由来するファイルをまとめます。 Experiment を介してデータファイルは特定のサンプルにリンクされます。 Run に含まれる全てのファイルは１つの SRA/fastq ファイルにマージされ、Run のアクセッション番号がファイル名になります。そのため、異なるサンプ replicate に由来するファイルは同じ Run に含めるべきではありません。 一方、ペアードデータファイルは同じ Run に含め、リードが正しくペアとして処理されるようにします。
 
 [Analysis](#Analysis){: #Analysis-obj}  
-: Run に格納されたデータを解析したデータで、しかるべき登録先がないようなデータを登録します。Analysis は DDBJ/EBI/NCBI で交換していません。 交換を希望する場合は [DRA チームに連絡します](/contact-ddbj.html)。 Analysis は [DRASearch](http://ddbj.nig.ac.jp/DRASearch) でインデックスされず、ftp でのファイル公開のみになります。
+: Run に格納されたデータを解析したデータで、しかるべき登録先がないようなデータを登録します。Analysis は DDBJ/EBI/NCBI で交換していません。 交換を希望する場合は [DRA チームに連絡します](/contact-ddbj.html)。 Analysis は [DDBJ Search](https://ddbj.nig.ac.jp/search) でインデックスされず、ftp でのファイル公開のみになります。
 
 {% include image.html url="books/sra_object.png" caption="データモデル" class="w450" %}
 
@@ -1486,7 +1486,7 @@ B, C または D の場合は登録者の了解がなくても例外なく公開
 FAQ:
 [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp-bs-seq-release.html)
 
-データが公開されると、数日間のうちに [DRASearch](http://ddbj.nig.ac.jp/DRASearch) で検索可能になり
+データが公開されると、数日間のうちに [DDBJ Search](https://ddbj.nig.ac.jp/search) で検索可能になり
 [NCBI SRA](https://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi) にミラーリングされます。
 
 DRA ファイルサーバに存在する fastq ファイル一覧:
@@ -1510,7 +1510,7 @@ FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
 
 <a href="/assets/images/books/hdra-hold.jpg" title="公開予定日の変更" class="group1"><img src="/assets/images/books/hdra-hold.jpg" alt="公開予定日の変更" title="公開予定日の変更" class="w400"></a>
 
-データを即日公開する場合は "Release Now" をクリックします。作業した日の深夜に公開処理が実施され、[ftp にデータファイルが公開](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/)され、数日以内に [DRA 検索システム](http://ddbj.nig.ac.jp/DRASearch)にインデックスされます。
+データを即日公開する場合は "Release Now" をクリックします。作業した日の深夜に公開処理が実施され、[ftp にデータファイルが公開](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/)され、数日以内に [DRA 検索システム](https://ddbj.nig.ac.jp/search)にインデックスされます。
 
 ### メタデータの更新  {#update-metadata}
 

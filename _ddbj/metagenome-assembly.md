@@ -66,7 +66,7 @@ names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=40
 #### DRA  {#primary-metagenome-dra}
 
 DRA に登録する場合、プライマリーメタゲノム配列を fasta/bam ファイルで [DRA Analysis](/dra/submission.html#Analysis_Type)（Analysis type = "De Novo Assembly"）に登録します。(1) の生リードが登録された [DRA Run とセットで Analysis を登録](/dra/submission.html#analysis)します。    
-Analysis は ENA/NCBI と共有されません。また、[DRASearch](https://ddbj.nig.ac.jp/DRASearch/) でインデックスされず、ftp でメタデータ XML とデータファイルが公開されるのみとなります（例 [DRZ000001](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA000/DRA000072/)）。
+Analysis は ENA/NCBI と共有されません。また、[DDBJ Search](https://ddbj.nig.ac.jp/search) でインデックスされず、ftp でメタデータ XML とデータファイルが公開されるのみとなります（例 [DRZ000001](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA000/DRA000072/)）。
 
 ### (3) Binned メタゲノム {#binned-metagenome}
 
@@ -110,7 +110,7 @@ uncultured が冠されていない、Binned アセンブリが由来する生�
 
 DRA に登録する場合、Binned アセンブリ配列を fasta/bam ファイルで [DRA Analysis](/dra/submission.html#Analysis_Type)（Analysis type = "De Novo Assembly"）に登録し、description に使用した解析ソフトウェアや Binning に関する情報を記載します。    
 (1) の生リードが登録された [DRA Run とセットで Analysis を登録](/dra/submission.html#analysis)します。    
-Analysis は ENA/NCBI と共有されません。また、[DRASearch](https://ddbj.nig.ac.jp/DRASearch/) でインデックスされず、ftp でメタデータ XML とデータファイルが公開されるのみとなります（例 [DRZ000001](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA000/DRA000072/)）。
+Analysis は ENA/NCBI と共有されません。また、[DDBJ Search](https://ddbj.nig.ac.jp/search) でインデックスされず、ftp でメタデータ XML とデータファイルが公開されるのみとなります（例 [DRZ000001](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA000/DRA000072/)）。
 
 ### (4) MAG {#mag}
 

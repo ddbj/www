@@ -83,7 +83,7 @@ Submit assembled contigs derived from the raw sequence data in fasta/bam
 files to the [DRA Analysis](/dra/submission-e.html#Analysis_Type)
 (Analysis type = 'De Novo Assembly'). Submit the Analysis along with the
 Run registered in (1). Please note that Analysis data are not shared with NCBI/ENA. 
-Analysis is not indexed by [DRASearch](https://ddbj.nig.ac.jp/DRASearch/). Only analysis metadata XML and data files are provided in ftp. (For example, [DRZ000001](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA000/DRA000072/).
+Analysis is not indexed by [DDBJ Search](https://ddbj.nig.ac.jp/search). Only analysis metadata XML and data files are provided in ftp. (For example, [DRZ000001](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA000/DRA000072/).
 
 ### (3) Binned metagenome {#binned-metagenome}
 
@@ -133,7 +133,7 @@ Analysis](/dra/submission-e.html#Analysis_Type) (Analysis type = 'De
 Novo Assembly'). Include information of analysis software used and
 organism bin in the description. Submit the Analysis along with the Run
 registered in (1). Please note that Analysis data are not shared with NCBI/ENA. 
-Analysis is not indexed by [DRASearch](https://ddbj.nig.ac.jp/DRASearch/). Only analysis metadata XML and data files are provided in ftp. (For example, [DRZ000001](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA000/DRA000072/).
+Analysis is not indexed by [DDBJ Search](https://ddbj.nig.ac.jp/search). Only analysis metadata XML and data files are provided in ftp. (For example, [DRZ000001](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA000/DRA000072/).
 
 ### (4) MAG {#mag}
 
