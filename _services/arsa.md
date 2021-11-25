@@ -44,7 +44,7 @@ JPO 経由のアミノ酸特許データ  |      |
 KIPO 経由のアミノ酸特許データ | 更新は不定期
 
 * [WGS](/ddbj/wgs.html)(WGS Scaffold CON含), TSAの一部, [MGA](/ddbj/mga.html)　など、[アクセッション番号](/ddbj/flat-file.html#Accession)が通常データとは異なるものは ARSA では検索できません。
-* [DRA](/dra/index.html)データ（次世代シークエンサからの出力データ）はARSA では検索できません。[DRA Search](http://ddbj.nig.ac.jp/DRASearch) をご利用ください。
+* [DRA](/dra/index.html)データ（次世代シークエンサからの出力データ）はARSA では検索できません。[DDBJ Search](https://ddbj.nig.ac.jp/search) をご利用ください。
 
 ## Quick Search
 

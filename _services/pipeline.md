@@ -226,7 +226,7 @@ Genomics 1988, 2(3):231-239.
 
 1. Import public DRAを選択します。
 2. [Accession
-    Numberを検索したい場合](http://ddbj.nig.ac.jp/DRASearch)はこちらからできます。
+    Numberを検索したい場合](https://ddbj.nig.ac.jp/search)はこちらからできます。
 3. Accession Numberを入力します。
 4. Add my DRA entry をクリックします。
 5. インポートが終了すると、Statusが"queued"から"done"に変わります。（ページ再読み込み）

@@ -33,8 +33,8 @@ related_pages:
     search) function.
   - Keyword search of DDBJ flat file is now avialable in
     [ARSA](http://ddbj.nig.ac.jp/arsa)
-  - DRA data retrieval is unavilable in getentry, please refer [DRA
-    Search](http://ddbj.nig.ac.jp/DRASearch)
+  - DRA data retrieval is unavilable in getentry, please refer [DDBJ
+    Search](https://ddbj.nig.ac.jp/search)
 
 
 ## Search from Web Browser  {#Search_from_Web_Browser}
