@@ -37,14 +37,14 @@ items:
     tags:
       - search
 
-  - name: DRA Search
-    formal_name: DRA Search
+  - name: DDBJ Search
+    formal_name: DDBJ Search
     service_link:
-      en: https://ddbj.nig.ac.jp/DRASearch/
-      ja: https://ddbj.nig.ac.jp/DRASearch/
+      en: https://ddbj.nig.ac.jp/search
+      ja: https://ddbj.nig.ac.jp/search
     description:
-      en: Search SRA data by accession numbers and keywords
-      ja: SRA データをアクセッション番号やキーワードで検索
+      en: Search INSDC BioProject/BioSample/SRA and JGA data by accession numbers and keywords
+      ja: INSDC BioProject/BioSample/SRA, JGA データをアクセッション番号やキーワードで検索
     target_data:
       en: Raw sequencing data and alignment information
       ja: 生シークエンスデータとアライメント情報
@@ -69,26 +69,6 @@ items:
     provider: DDBJ
     tags:
       - search
-
-  - name: BLAST
-    formal_name: Basic Local Alignment Search Tool
-    service_link:
-      en: http://blast.ddbj.nig.ac.jp/blastn?lang=en
-      ja: http://blast.ddbj.nig.ac.jp/blastn?lang=ja
-    help:
-      en: blast-e
-      ja: blast
-    wabi: /services/wabi-blast.html
-    description:
-      en: Nucleotide homology search
-      ja: 塩基配列による相同性検索
-    target_data:
-      en: Annotated and assembled sequences
-      ja: アノテーション/アセンブルされた塩基配列
-    provider: DDBJ
-    tags:
-      - search
-      - analysis
 
   - name: DFAST
     formal_name: DDBJ Fast Annotation and Submission Tool
@@ -143,22 +123,6 @@ items:
     target_data:
       en: Vector sequences
       ja: ベクター配列
-    provider: DDBJ
-    tags:
-      - analysis
-
-  - name: ClustalW
-    formal_name: ClustalW
-    service_link:
-      en: http://clustalw.ddbj.nig.ac.jp/index.php?lang=en
-      ja: http://clustalw.ddbj.nig.ac.jp/index.php?lang=ja
-    help:
-      en: clustalw-e
-      ja: clustalw
-    wabi: /services/wabi-clustalw.html
-    description:
-      en: Multiple alignment and tree-making
-      ja: 塩基・アミノ酸配列の多重整列と系統樹作成
     provider: DDBJ
     tags:
       - analysis
