@@ -1,4 +1,5 @@
 (()=>{
+  const DOMAIN = 'https://www.ddbj.nig.ac.jp';
   const COOKIE_ACCEPT = {
     body: {
       ja: '<strong>Cookie</strong><br>本サイトではクッキーを使用しています。本サイトにおけるクッキーの使用方法、及び、設定の変更方法については<a href="/policies.html">こちら</a>をご覧ください。',
@@ -17,8 +18,8 @@
         en: 'Services'
       },
       uri: {
-        ja: '/services/index.html',
-        en: '/services/index-e.html'
+        ja: DOMAIN + '/services/index.html',
+        en: DOMAIN + '/services/index-e.html'
       }
     },
     {
@@ -37,8 +38,8 @@
         en: 'Statistics'
       },
       uri: {
-        ja: '/statistics/index.html',
-        en: '/statistics/index-e.html'
+        ja: DOMAIN + '/statistics/index.html',
+        en: DOMAIN + '/statistics/index-e.html'
       }
     },
     {
@@ -47,8 +48,8 @@
         en: 'Activities'
       },
       uri: {
-        ja: '/activities/index.html',
-        en: '/activities/index-e.html'
+        ja: DOMAIN + '/activities/index.html',
+        en: DOMAIN + '/activities/index-e.html'
       }
     },
     {
@@ -57,8 +58,8 @@
         en: 'About Us'
       },
       uri: {
-        ja: '/about/index.html',
-        en: '/about/index-e.html'
+        ja: DOMAIN + '/about/index.html',
+        en: DOMAIN + '/about/index-e.html'
       }
     }
   ];
@@ -69,8 +70,8 @@
         en: 'Terms'
       },
       uri: {
-        ja: '/policies.html',
-        en: '/policies-e.html'
+        ja: DOMAIN + '/policies.html',
+        en: DOMAIN + '/policies-e.html'
       }
     },
     {
@@ -79,8 +80,8 @@
         en: 'Contact'
       },
       uri: {
-        ja: '/contact-ddbj.html',
-        en: '/contact-ddbj-e.html'
+        ja: DOMAIN + '/contact-ddbj.html',
+        en: DOMAIN + '/contact-ddbj-e.html'
       }
     }
   ];
@@ -116,8 +117,8 @@
               ja: 'キーワードで塩基配列データを検索'
             },
             uri: {
-              en: '/services/arsa-e.html',
-              ja: '/services/arsa.html'
+              en: DOMAIN + '/services/arsa-e.html',
+              ja: DOMAIN + '/services/arsa.html'
             }
           },
           {
@@ -208,8 +209,8 @@
               ja: 'DDBJ 検索サービスの Web API'
             },
             uri: {
-              en: '/services/wabi-e.html',
-              ja: '/services/wabi.html'
+              en: DOMAIN + '/services/wabi-e.html',
+              ja: DOMAIN + '/services/wabi.html'
             }
           },
           {
@@ -244,8 +245,8 @@
               ja: 'Annotated/Assembled Sequences (DDBJ)'
             },
             uri: {
-              en: '/ddbj/index-e.html',
-              ja: '/ddbj/index.html'
+              en: DOMAIN + '/ddbj/index-e.html',
+              ja: DOMAIN + '/ddbj/index.html'
             }
           },
           {
@@ -258,8 +259,8 @@
               ja: 'Sequence Read Archive'
             },
             uri: {
-              en: '/dra/index-e.html',
-              ja: '/dra/index.html'
+              en: DOMAIN + '/dra/index-e.html',
+              ja: DOMAIN + '/dra/index.html'
             }
           },
           {
@@ -272,8 +273,8 @@
               ja: 'Genomic Expression Archive'
             },
             uri: {
-              en: '/gea/index-e.html',
-              ja: '/gea/index.html'
+              en: DOMAIN + '/gea/index-e.html',
+              ja: DOMAIN + '/gea/index.html'
             }
           },
           {
@@ -286,8 +287,8 @@
               ja: 'BioProject'
             },
             uri: {
-              en: '/bioproject/index-e.html',
-              ja: '/bioproject/index.html'
+              en: DOMAIN + '/bioproject/index-e.html',
+              ja: DOMAIN + '/bioproject/index.html'
             }
           },
           {
@@ -300,8 +301,8 @@
               ja: 'BioSample'
             },
             uri: {
-              en: '/biosample/index-e.html',
-              ja: '/biosample/index.html'
+              en: DOMAIN + '/biosample/index-e.html',
+              ja: DOMAIN + '/biosample/index.html'
             }
           },
           {
@@ -314,8 +315,8 @@
               ja: 'Japanese Genotype-phenotype Archive'
             },
             uri: {
-              en: '/jga/index-e.html',
-              ja: '/jga/index.html'
+              en: DOMAIN + '/jga/index-e.html',
+              ja: DOMAIN + '/jga/index.html'
             }
           },
           {
@@ -545,8 +546,8 @@
         ja: 'ポリシーと免責事項'
       },
       uri: {
-        en: '/policies-e.html',
-        ja: '/policies.html'
+        en: DOMAIN + '/policies-e.html',
+        ja: DOMAIN + '/policies.html'
       }
     },
     {
@@ -559,8 +560,8 @@
         ja: 'お知らせ一覧'
       },
       uri: {
-        en: '/news/en/index-e.html',
-        ja: '/news/ja/index.html'
+        en: DOMAIN + '/news/en/index-e.html',
+        ja: DOMAIN + '/news/ja/index.html'
       }
     },
     {
@@ -573,8 +574,8 @@
         ja: 'よくある質問一覧'
       },
       uri: {
-        en: '/faq/en/index-e.html',
-        ja: '/faq/ja/index.html'
+        en: DOMAIN + '/faq/en/index-e.html',
+        ja: DOMAIN + '/faq/ja/index.html'
       }
     },
     {
@@ -587,8 +588,8 @@
         ja: 'サイトマップ'
       },
       uri: {
-        en: '/sitemaps-e.html',
-        ja: '/sitemaps.html'
+        en: DOMAIN + '/sitemaps-e.html',
+        ja: DOMAIN + '/sitemaps.html'
       }
     },
     //{
@@ -615,8 +616,8 @@
         ja: 'DDBJ Center 住所'
       },
       uri: {
-        en: '/ddbj-access-e.html',
-        ja: '/ddbj-access.html'
+        en: DOMAIN + '/ddbj-access-e.html',
+        ja: DOMAIN + '/ddbj-access.html'
       }
     },
     {
@@ -629,8 +630,8 @@
         ja: 'DDBJ センターに連絡'
       },
       uri: {
-        en: '/contact-ddbj-e.html',
-        ja: '/contact-ddbj.html'
+        en: DOMAIN + '/contact-ddbj-e.html',
+        ja: DOMAIN + '/contact-ddbj.html'
       }
     }
   ];
