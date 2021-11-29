@@ -5,7 +5,7 @@
     <meta property="og:description" content="{{ page.content | strip_html | strip_newlines | truncate: 83 }}" />
     <meta property6="og:image" content="/images/thumbnail/logo_ddbj_fb.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ page.title }}</title>
+    <title>{{ page.title | strip_html }}</title>
     <script async src="https://www.google-analytics.com/analytics.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.hoverintent/1.10.1/jquery.hoverIntent.min.js" integrity="sha512-gx3WTM6qxahpOC/hBNUvkdZARQ2ObXSp/m+jmsEN8ZNJPymj8/Jamf8+/3kJQY1RZA2DR+KQfT+b3JEB0r9YRg==" crossorigin="anonymous"></script>
