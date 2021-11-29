@@ -123,16 +123,16 @@
           },
           {
             label: {
-              en: 'DRA Search',
-              ja: 'DRA Search'
+              en: 'DDBJ Search',
+              ja: 'DDBJ Search'
             },
             desc: {
-              en: 'Search and retrieve sequencing data.',
-              ja: 'DDBJ/EBI/NCBI SRA のデータの検索と取得'
+              en: 'Search INSDC BioProject/BioSample/SRA and JGA data.',
+              ja: 'INSDC BioProject/BioSample/SRA と JGA データを検索'
             },
             uri: {
-              en: 'https://ddbj.nig.ac.jp/DRASearch/',
-              ja: 'https://ddbj.nig.ac.jp/DRASearch/'
+              en: 'https://ddbj.nig.ac.jp/search',
+              ja: 'https://ddbj.nig.ac.jp/search'
             }
           },
           {
@@ -147,20 +147,6 @@
             uri: {
               en: 'http://ddbj.nig.ac.jp/tx_search/?lang=en',
               ja: 'http://ddbj.nig.ac.jp/tx_search/?lang=ja'
-            }
-          },
-          {
-            label: {
-              en: 'BLAST',
-              ja: 'BLAST'
-            },
-            desc: {
-              en: 'Search nucleotide sequences by sequence similarity.',
-              ja: '塩基配列の類似性で検索'
-            },
-            uri: {
-              en: 'http://blast.ddbj.nig.ac.jp/blastn?lang=en',
-              ja: 'http://blast.ddbj.nig.ac.jp/blastn?lang=ja'
             }
           }
         ]
@@ -183,20 +169,6 @@
             uri: {
               en: 'http://ddbj.nig.ac.jp/vecscreen/',
               ja: 'http://ddbj.nig.ac.jp/vecscreen/'
-            }
-          },
-          {
-            label: {
-              en: 'ClustalW',
-              ja: 'ClustalW'
-            },
-            desc: {
-              en: 'Multiple alignment and tree-making',
-              ja: '系統樹を作成'
-            },
-            uri: {
-              en: 'http://clustalw.ddbj.nig.ac.jp/index.php?lang=en',
-              ja: 'http://clustalw.ddbj.nig.ac.jp/index.php?lang=ja'
             }
           },
           {
@@ -303,6 +275,20 @@
             uri: {
               en: DOMAIN + '/biosample/index-e.html',
               ja: DOMAIN + '/biosample/index.html'
+            }
+          },
+          {
+            label: {
+              en: 'MetaboBank',
+              ja: 'MetaboBank'
+            },
+            desc: {
+              en: 'Public repository for metabolomics data',
+              ja: 'メタボロミクスデータを格納する公共データベース'
+            },
+            uri: {
+              en: DOMAIN + '/metabobank/index-e.html',
+              ja: DOMAIN + '/metabobank/index.html'
             }
           },
           {
