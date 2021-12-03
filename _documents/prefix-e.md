@@ -350,6 +350,7 @@ OI      JPO             Patent application
 OJ      JPO             Patent application
 OK      GenBank         Direct submission
 OL      GenBank         Direct submission
+OM      GenBank         Direct submission
 OU      ENA             
 OV      ENA             
 OW      ENA             
