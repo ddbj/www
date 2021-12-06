@@ -6,10 +6,6 @@ category: ddbj
 current_tab: flat_file
 lang: ja
 related_pages:
-  - title: The Genetic Codes
-    url: /ddbj/geneticcode.html
-  - title: The Genetic Codes
-    url: /ddbj/codontable.html
   - title: DDBJ 公開形式 (Flat file)
     url: /ddbj/flat-file.html
   - title: Feature key
@@ -23,7 +19,7 @@ related_pages:
   - title: タンパク質コード配列; CDS feature について
     url: /ddbj/cds.html
   - title: The Genetic Codes
-    url: /ddbj/geneticcode-e.html
+    url: /ddbj/geneticcode.html
   - title: 配列の記載に用いる略号
     url: /ddbj/code.html
 ---
@@ -563,8 +559,6 @@ FEATURES             Location/Qualifiers
 ## D: Repeat  {#D}
 
 ### D01.1) microsatellite, recommended annotation  {#D01.1}
-
-ゲノムマッピングを目的とした microsatellite は STS division に分類します。
 
 <pre><code>DEFINITION  Bos taurus DNA, microsatellite: 3456P. 
 FEATURES             Location/Qualifiers
