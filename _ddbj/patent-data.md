@@ -50,5 +50,3 @@ DDBJ において、特許出願に含まれるアミノ配列データは以下
 [ARSA](http://ddbj.nig.ac.jp/arsa/?lang=ja)  
 : [Division] で PAT、[Molecular Type] で PRT を指定、検索対象は JPO と KIPO のみ。
 
-[BLAST](http://blast.ddbj.nig.ac.jp/blastp?lang=ja)  
-: [Data Sets] で [Patent] を選択し、JPO, KIPO, USPTO, EPO を必要に応じて選択。
