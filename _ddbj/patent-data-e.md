@@ -72,6 +72,3 @@ and KIPO.
 : Select "PAT" in [Division] and "PRT" in [Molecular Type],
 available only from JPO and KIPO.
 
-[BLAST](//blast.ddbj.nig.ac.jp/blastp?lang=en)  
-: Select [Patent] from [Data Sets] and select JPO, KIPO, USPTO or
-EPO as required.
