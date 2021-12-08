@@ -1,7 +1,7 @@
 top_news:
   ja:
-    - title: BioProject/BioSample/SRA 新検索システムリリース
-      path: 2021-11-24
+    - title: BLAST と ClustalW サービス休止のお知らせ
+      path: 2021-10-15_2
   en:
-    - title: New BioProject/BioSample/SRA search system released
-      path: 2021-11-24-e
+    - title: BLAST and ClustalW tentative closing
+      path: 2021-10-15_2-e
