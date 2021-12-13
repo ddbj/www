@@ -359,9 +359,9 @@ OY      ENA
 OZ      ENA             
 P       void            UniProt/Swiss-Prot
 PA      JPO             Patent application
-PB      DDBJ            
-PC      DDBJ            
-PD      DDBJ            
+PB      JPO             Patent application
+PC      JPO             Patent application
+PD      JPO             Patent application
 PE      DDBJ            
 Q       void            UniProt/Swiss-Prot
 R       GenBank         EST
