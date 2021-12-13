@@ -275,7 +275,7 @@ Dataset に含まれる Data、Analysis とリンクしている Policy の対�
 
 ### WinSCP によるダウンロード {#upload-excel-winsftp}
 
-[WinSCP (http://winsftp.net/eng/download.php)](http://winsftp.net/eng/download.php) をダウンロードし、Windows PC にインストールします。
+[WinSCP (https://winscp.net/eng/download.php)](https://winscp.net/eng/download.php) をダウンロードし、Windows PC にインストールします。
 
 以下のように設定します。
 
