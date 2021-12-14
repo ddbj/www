@@ -796,7 +796,7 @@ BioNano データをアセンブルに使用した場合、bnx ファイル、�
     データは DRA 登録 (Submission) 単位で公開されます。
   - BioProject、BioSample、Experiment と Run を投稿する前にデータファイルを scp でアップロード
 
-### 3. プロジェクトとサンプル情報を登録
+### 3. プロジェクトとサンプル情報を登録  {#project-sample}
 
 #### [BioProject (Study)](/bioproject/submission.html) {#BioProject_Study}
 
@@ -890,7 +890,7 @@ DRA 登録のステータス一覧
 | confidential          | 公開用ファイルの作成処理が完了し、非公開に保たれている状態 |
 | Public                | 公開されている状態                     |
 
-### シークエンスデータのアップロード  {#upload-sequence-data} 
+## シークエンスデータのアップロード  {#upload-sequence-data} 
 
 <span class="red">メタデータを作成する前に登録するシークエンスデータファイルをアップロードします。サブディレクトリは作成しないでください。先にメタデータを作成する場合は適当なファイルをアップロードしてください。</span>
 
@@ -964,7 +964,7 @@ DRA への登録 ～データの転送 (Windows)～
 転送モードはバイナリモードにします。テキストモードで転送しないでください。
 </div>
 
-  - **File protocol:** SCP
+  - **File protocol:** SFTP
   - **Host name:** ftp-private.ddbj.nig.ac.jp
   - **Port number:** 22
   - **User name:** (D-way の Login ID を入力)
@@ -1050,7 +1050,12 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 [DDBJ 大量登録システム (Mass Submission System, MSS)](/ddbj/mss.html) 用の登録ファイルでサイズがメール添付の上限を超えるような場合は DRA サーバを利用することができます。 [MSS チームに連絡](/contact-ddbj.html#to-ddbj)した後、ファイルを ~/mass にアップロードします。
 </div>
 
-### ウェブツールでのメタデータ作成  {#create-metadata-using-tool} 
+## メタデータの登録 {#submit-metadata}
+
+メタデータは[ウェブツールで登録する方法](#metadata-web)と[メタデータ登録用エクセル](#metadata-excel)を使って登録する方法の二通りがあります。  
+メタデータのオブジェクト数が100を超えるような多件数であり、ウェブツールの応答が遅く登録作業が困難な場合、エクセルを使った登録方法を推奨します。
+
+### ウェブツールでのメタデータ作成  {#metadata-web} 
 
 作成した新規登録をクリックし、登録詳細ページへ移動します。
 
@@ -1065,10 +1070,6 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 先にメタデータを作成しておきたい場合は、適当なファイルをアップロードしておきます。
 
 {% include image.html url="books/hdra-not-uploaded.jpg" caption="データファイルがアップロードされていない場合" class="w200" %}
-
-<div id="submission-excel2xml" class="attention" markdown="1">
-Experiment や Run オブジェクトが多件数の場合、ウェブツールの応答が遅くなることがあります。その場合、[メタデータ用エクセル](/assets/files/submission/dra_metadata.xlsx)と XML 生成プログラムを使ってエクセルから XML を生成し、Submission/Experiment/Run XML を D-way からアップロードすることで多件数を一括で登録することができます。詳細については [GitHub](https://github.com/ddbj/submission-excel2xml) ページをご覧ください。
-</div>
 
 メタデータは Submission、BioProject、BioSample、Experiment、Run、Analysis (任意)
 オブジェクトで構成されています。 メタデータ作成ツールの画面上で、各項目に内容を英語で入力していきます。
@@ -1300,93 +1301,46 @@ Analysis (任意) が不要な場合は [Submit / Update DRA metadata] をクリ
 件数が多い場合は、[Analysis メタデータエクセルファイル](/dra/analysis.html) を使った登録方法をご利用ください。
 </div>
 
-<div class="accordion-menu" markdown="1">
-<h3 class="toggle-content-btn"><a href="javascript:void(0)" name="create-metadata-in-xml-files">XML でのメタデータ登録方法</a></h3>
-<div class="accordion-content">
+### メタデータ登録用エクセルを使った登録方法 {#metadata-excel}
 
-メタデータ作成ツールは technical read (アダプター、プライマーやバーコード配列) を記載することに対応していません。
-「technical read を含む生データを登録する場合」や「[DRA XML schema](https://github.com/ddbj/pub/tree/master/docs/dra) 中にはあるがツール中には無い項目をメタデータに記載する場合」は メタデータを XML で登録、もしくは登録した XML を編集してアップロードします。
+メタデータの件数が100を超えるような多件数であり、ウェブ登録ツールの応答が遅く、登録作業が困難な場合、エクセルを使って登録します。   
+メタデータ登録用エクセルを記入する前に以下を済ませておきます。
 
-1. DRA 新規登録を作成し、データファイルをアップロードします。
+* [BioProject を登録](#study)
+* [BioSample を登録](#sample)
+* [シークエンスデータファイルのアップロード](#upload-sequence-data)
 
-2. Submission、Experiment、Run XML を作成します。アクセッション番号が未発行の BioProject と
-BioSample を Experiment から参照する場合、以下のように記載します。
-    ```
-    <STUDY_REF>
-      <IDENTIFIERS>
-        <PRIMARY_ID label="BioProject Submission ID">PSUB004220</PRIMARY_ID>
-      </IDENTIFIERS>
-    </STUDY_REF>
-    ```
-    <br>
-    ```
-    <SAMPLE_DESCRIPTOR>
-      <IDENTIFIERS>
-        <PRIMARY_ID label="BioSample Submission ID">SSUB003742 : sample name</PRIMARY_ID>
-      </IDENTIFIERS>
-    </SAMPLE_DESCRIPTOR>
-    ```
-3. XML を検証します。以下の Unix コマンドで XML をスキーマに対して検証することができます。エラーになる XML
-をアップロードすることはできません。
-    ```
-    xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.submission.xsd?view=co test07-0018.Submission.xml
-    xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.experiment.xsd?view=co test07-0018.Experiment.xml
-    xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.run.xsd?view=co test07-0018.Run.xml
-    xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.analysis.xsd?view=co test07-0018.Analysis.xml
-    ```
-4. チェックした XML をアップロードします。Submission、Experiment、Run、Analysis (任意) の XML ファイルを選択し、同時にアップロードします。
-    アップロードされた XML について「SRA xsd に対する妥当性」と「オブジェクト間の関係性」がチェックされます。エラーが発生した場合はファイルを修正してください。<br>
-    <a href="/assets/images/books/hdra-xmlupload.jpg" title="作成した XML のアップロード" class="group1"><img src="/assets/images/books/hdra-xmlupload.jpg" alt="作成した XML のアップロード" title="作成した XML のアップロード" class="w500"></a>
+[メタデータ登録用エクセル](/assets/files/submission/dra_metadata.xlsx)をダウンロードし、内容を記入します。[記入例](/assets/files/submission/example-0001_dra_metadata.xlsx) 
 
-[« 閉じる](javascript:void(0)){: .close-content-btn}
-</div>
-</div>
+続いて、[メタデータ登録用エクセルから生成した XML を登録](#upload-xml)、もしくは、[メタデータ登録用エクセルを担当者に送付](#send-metadata-excel)します。   
 
+#### メタデータ登録用エクセルから 生成した XML を登録 {#upload-xml}
 
-<div class="accordion-menu" markdown="1">
-<h3 class="toggle-content-btn"><a href="javascript:void(0)" name="edit-metadata-in-xml-files">XML でのメタデータ編集方法</a></h3>
-<div class="accordion-content">
+コンテナイメージを使ったコマンドライン操作に慣れている方はこちらの方法で登録してください。   
 
-メタデータ作成ツールは technical read (アダプター、プライマーやバーコード配列) を記載することに対応していません。
-「technical read を含む生データを登録する場合」や「[DRA XML schema](https://github.com/ddbj/pub/tree/master/docs/dra) 中にはあるがツール中には無い項目をメタデータに記載する場合」は メタデータを XML で登録、もしくは登録した XML を編集してアップロードします。
+[メタデータ登録用エクセル](/assets/files/submission/dra_metadata.xlsx)とプログラムを使ってエクセルから XML を生成し、XML を D-way からアップロードすることで多件数を一括で登録することができます。
+[GitHub](https://github.com/ddbj/submission-excel2xml) に記載されている手順に従い、メタデータを記入したエクセルからコマンドラインツールで Submission, Experiment, Run XML を生成します。    
 
-1. [メタデータ作成ツールでメタデータを作成し、投稿します。](#create-metadata-using-tool)
-2. "metadata_submitted" になった登録の Submission、Experiment、Run、Analysis (任意) を XML ファイルとしてダウンロードします。
-    <a href="/assets/images/books/hdra-xmldownload.jpg" title="ツールで作成したメタデータを XML としてダウンロード" class="group1"><img src="/assets/images/books/hdra-xmldownload.jpg" alt="ツールで作成したメタデータを XML としてダウンロード" title="ツールで作成したメタデータを XML としてダウンロード" class="w500"></a>
-3. XML を編集します。ファイル中のリードの構成を記載する SPOT_DESCRIPTOR
-  については[記入例](/dra/example.html)を参考にしてください。 その他の項目については、[DRA XML schema](https://github.com/ddbj/pub/tree/master/docs/dra) 中の説明を参照してください。
-4. アクセッション番号が未発行の BioProject と BioSample を  Experiment から参照する場合、以下のように記載します。
-    ```
-    <STUDY_REF>
-      <IDENTIFIERS>
-        <PRIMARY_ID label="BioProject Submission ID">PSUB004220</PRIMARY_ID>
-      </IDENTIFIERS>
-    </STUDY_REF>
-    ```
-    <br>
-    ```
-    <SAMPLE_DESCRIPTOR>
-      <IDENTIFIERS>
-        <PRIMARY_ID label="BioSample Submission ID">SSUB003742 : sample name</PRIMARY_ID>
-      </IDENTIFIERS>
-    </SAMPLE_DESCRIPTOR>
-    ```
-5. XML を検証します。以下の Unix コマンドで XML をスキーマに対して検証することができます。エラーになる XML をアップロードすることはできません。
-    ```
-    xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.submission.xsd?view=co test07-0018.Submission.xml
-    xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.experiment.xsd?view=co test07-0018.Experiment.xml
-    xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.run.xsd?view=co test07-0018.Run.xml
-    xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.analysis.xsd?view=co test07-0018.Analysis.xml
-    ```
-6. 編集した XML をアップロードします。Submission、Experiment、Run、Analysis (任意) の XML ファイルを選択し、同時にアップロードします。
-  アップロードされた XML について「SRA xsd に対する妥当性」と「オブジェクト間の関係性」がチェックされます。エラーが発生した場合はファイルを修正してください。<br>
-  <a href="/assets/images/books/hdra-xmlupload.jpg" title="編集した XML のアップロード" class="group1"><img src="/assets/images/books/hdra-xmlupload.jpg" alt="編集した XML のアップロード" title="編集した XML のアップロード" class="w500"></a>
+[D-way](https://ddbj.nig.ac.jp/D-way) にログインし、対象 DRA submission のページに移動します。   
+以下は DRA submission "test07-0040" に Submission/Experiment/Run XML をアップロードする例です。   
 
-[« 閉じる](javascript:void(0)){: .close-content-btn}
-</div>
-</div>
+<a href="/assets/images/books/hdra-xmlupload.jpg" title="作成した XML のアップロード" class="group1"><img src="/assets/images/books/hdra-xmlupload.jpg" alt="作成した XML のアップロード" title="作成した XML のアップロード" class="w500"></a>
 
-### データファイルの検証  {#validation-data-files}
+**処理に時間がかかる場合、ブラウザーがタイムアウトしますが、システムでは登録処理が続いているため、そのまま放置します。**   
+ステータスが metadata_submitted になったことを確認し、[データファイルの検証](#validation-data-files)に進みます。   
+タイムアウトした後、何度も XML をアップロードすることは避けてください。   
+状況が分からなくなった場合、DRA に[問い合わせてください](/contact.html)。
+
+#### メタデータ登録用エクセルを担当者に送付 {#send-metadata-excel}
+
+コマンドライン操作に不慣れな方はエクセルを担当者にメール添付でお送りください。    
+
+対象の DRA submission ID を添え、メール添付でエクセルファイルを次のアドレスに送付します。    
+<img src="/assets/images/center/trace-m.jpg">   
+DRA 担当者がエクセルから XML を生成し、対象の DRA submission にアップロードします。   
+データファイルが全てアップロードされている場合、データファイルの検証処理と査定まで作業を進め、問題が無ければアクセッション番号を発行します。
+
+## データファイルの検証  {#validation-data-files}
 
 転送したシークエンスデータファイルをアーカイブ用 SRA ファイルに変換する過程で MD5 値とシークエンスデータの整合性が検証されます。
 
@@ -1430,7 +1384,7 @@ BioSample を Experiment から参照する場合、以下のように記載し�
 
 {% include image.html url="books/hdra-edit.jpg" caption="データを修正" class="w450" %}
 
-### アクセッション番号の発行  {#accession-numbers}
+## アクセッション番号の発行  {#accession-numbers}
 
 メタデータとシークエンスデータに問題がなければ、プレフィックス DR (Submission (DRA)、Experiment (DRX)、Run (DRR)、Analysis (DRZ)) のアクセッション番号が発行され、ステータスが “completed” になります。アクセッション番号は “Component” に表示されます。
 
@@ -1460,7 +1414,7 @@ BioSample を Experiment から参照する場合、以下のように記載し�
   - /report/dra/DRA000001/sra/DRR000001.sra
   - /report/dra/DRA000001/sra/DRR000002.sra
 
-### データ公開  {#data-release}
+## データ公開  {#data-release}
 
 登録データのデータベースへの取り込みが完了するとステータスが "confidential" になり、即日公開が指定されている場合以外は、以下の原則に則り、データが公開されるまで非公開で保持されます。
 

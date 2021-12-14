@@ -975,7 +975,7 @@ platforms.
   - Upload data files by scp before submitting BioProject, BioSample,
     Experiment and Run
 
-### 3. Submit project and sample information 
+### 3. Submit project and sample information {#project-sample}
 
 #### [BioProject](/bioproject/submission-e.html)  {#BioProject_Study}
 
@@ -1078,7 +1078,7 @@ List of submission status
 | confidential          | Archive files has been created and submission is kept private |
 | Public                | Released to public.                                           |
 
-### Upload sequence data  {#upload-sequence-data} 
+## Upload sequence data  {#upload-sequence-data} 
 
 Sequence data files need to be uploaded before creating metadata. Do NOT create any sub-directories. 
 To create metadata first, upload some files.
@@ -1132,7 +1132,7 @@ Set items as below and click the [Advanced...] button.
 Be sure to select the "binary mode" for file transfer. Do NOT select the "text mode".
 </div>
 
-  - File protocol: SCP
+  - File protocol: SFTP
   - Host name: ftp-private.ddbj.nig.ac.jp
   - Port number: 22
   - User name: (D-way Login ID)
@@ -1230,7 +1230,12 @@ submitters can upload the files for the [DDBJ Mass Submission System
 the MSS team](/contact-ddbj-e.html#to-ddbj), upload the files to the ~/mass directory.
 </div>
 
-### Create metadata by using the tool  {#create-metadata-using-tool} 
+## Submit metadata {#submit-metadata}
+
+You may submit the metadata in two ways, one is ["Submit metadata by the web tool"](#metadata-web) and second is ["Submit metadata by the excel"](#metadata-excel).    
+When it is difficult to submit large-scale metadata (exceeds 100 Runs) by using the web tool whose resnposen is slow, it is recommended to submit the metadata by the metadata excel.    
+
+### Submit metadata by the web tool  {#metadata-web} 
 
 Move to the submission detail page by clicking the submission ID.
 
@@ -1562,69 +1567,47 @@ checked during validation.
 For large number of analysis, please submit them by using [Analysis metadata excel](/dra/analysis-e.html).
 </div>
 
-<div class="accordion-menu" markdown="1">
-<h3 class="toggle-content-btn"><a href="javascript:void(0)" name="create-metadata-in-xml-files">Create metadata in XML files</a></h3>
-<div class="accordion-content">
+### Submit metadata by the excel {#metadata-excel}
 
-The DRA metadata submission tool cannot describe technical reads
-(adapter, primer and barcode sequences). "To submit raw data contain
-technical reads" and "To use metadata elements in the [DRA XML
-schema](https://github.com/ddbj/pub/tree/master/docs/dra) but not in the
-submission tool", submitters need to create or edit metadata in XML
-files.
+Sometimes it is difficult to submit large-scale metadata (exceeds 100 Runs) by using the web tool whose response is too slow, 
+please submit the metadata by the excel.
 
-  1. Create a new DRA submission.
+Before filling in the metadata excel, you need to finish followings.
 
-  2. Prepare the Submission, Experiment, Run and Analysis (optional)
-    XML files.
+* [Submit BioProject](#study)
+* [Submit BioSample](#sample)
+* [Upload sequencing data files](#upload-sequence-data)
 
-  3. Un-accessioned BioProject and BioSample can be referenced in
-    Experiment XML as follows.
+Download [the DRA metadata excel](/assets/files/submission/dra_metadata.xlsx) and describe your metadata. [Example excel](/assets/files/submission/example-0001_dra_metadata.xlsx) 
 
-  4. Validate XML files against xsd by following Unix commands. You
-    cannot upload XML with any errors.
+Next, [upload XMLs generated from the excel](#upload-xml) or [send the excel by email attachment](#send-metadata-excel).
 
-  5. Upload validated XML files. Select the Submission, Experiment,
-    Run and Analysis (optional) XML files and upload them at once.
-    <br>
-    Uploaded XML files are validated against SRA schema and
-    relationship between XML objects are checked. If errors are
-    displayed, modify and re-upload the XML files.
+#### Upload XMLs generated from the excel {#upload-xml}
 
-  <a href="/assets/images/books/hdra-xmlupload.jpg" title="Upload modified XML files" class="group1"><img src="/assets/images/books/hdra-xmlupload.jpg" alt="Upload modified XML files" title="Upload modified XML files" class="w500"></a>
+Please upload XMLs if you are familiar with command lines using container images.
 
-[« Close](javascript:void(0)){: .close-content-btn}
-</div>
-</div>
+You can submit metadata by uploading XMLs in the D-way submission page by using [the metadata excel](/assets/files/submission/dra_metadata.xlsx) and container images.   
+Generate metadata XMLs according to the [GitHub](https://github.com/ddbj/submission-excel2xml) page.
 
+Login [D-way](https://ddbj.nig.ac.jp/D-way) and move to the DRA submission page.  
+Following is an example of uploading the Submission/Experiment/Run XMLs to the DRA submission "test07-0040".
 
-<div class="accordion-menu" markdown="1">
-<h3 class="toggle-content-btn"><a href="javascript:void(0)" name="edit-metadata-in-xml-files">Edit metadata in XML files</a></h3>
-<div class="accordion-content">
+<a href="/assets/images/books/hdra-xmlupload.jpg" title="Upload metadata XMLs" class="group1"><img src="/assets/images/books/hdra-xmlupload.jpg" alt="Upload metadata XMLs" title="Upload metadata XMLs" class="w500"></a>
 
-The DRA metadata submission tool cannot describe technical reads
-(adapter, primer and barcode sequences). "To submit raw data contain
-technical reads" and "To use metadata elements in the [DRA XML
-schema](https://github.com/ddbj/pub/tree/master/docs/dra) but not in the
-submission tool", submitters need to create or edit metadata in XML
-files.    
-Regarding the 10x Genomics data files, please refer to [What format of 10x Genomics data should I submit to NCBI GEO/SRA?](https://kb.10xgenomics.com/hc/en-us/articles/360024716391-What-format-of-10x-Genomics-data-should-I-submit-to-NCBI-GEO-SRA).
+** Web browser may time-out. However, submission processes are ongoing in backgroupd, so please leave it. **   
+After the submission status becomes "metadata_submitted", move on to the [data file validation](#validation-data-files) step.  
+Avoid uploading XMLs many times after the time-out.   
+Please [contact us](/contact-e.html) if you are not sure about the status of your submission.
 
-1. [Create and submit metadata by using the web-based tool.](#create-metadata-using-tool)
-2. Download the Submission, Experiment, Run and Analysis (optional) XML files of the submission with status "metadata_submitted".
+#### Send the excel by email attachment  {#send-metadata-excel}
 
-<a href="/assets/images/books/hdra-xmldownload.jpg" title="Create metadata by using the submission tool and download them in XML files." class="group1"><img src="/assets/images/books/hdra-xmldownload.jpg" alt="Create metadata by using the submission tool and download them in XML files." title="Create metadata by using the submission tool and download them in XML files." class="w500"></a>
+Send us the excel by email attachment if you are not familir with command lines.
 
-1. Edit the downloaded XML files. For how to describe technical reads, please see the [example page](example-e.html). For available metadata elements, please see the explanation in [DRA XML schema](https://github.com/ddbj/pub/tree/master/docs/dra).
-2. Un-accessioned BioProject and BioSample can be referenced in Experiment XML as follows.
-3. Validate XML files against xsd by following Unix commands. You cannot upload XML with any errors.
-4. Upload modified XML files. Select the Submission, Experiment, Run and Analysis (optional) XML files and upload them at once. <br> Uploaded XML files are validated against SRA schema and relationship between XML objects are checked. If errors are displayed, modify and re-upload the XML files.
-
-<a href="/assets/images/books/hdra-xmlupload.jpg" title="Upload modified XML files" class="group1"><img src="/assets/images/books/hdra-xmlupload.jpg" alt="Upload modified XML files" title="Upload modified XML files" class="w500"></a>
-
-[« Close](javascript:void(0)){: .close-content-btn}
-</div>
-</div>
+Send your metadata excel with DRA submission ID to the following address.
+<img src="/assets/images/center/trace-m.jpg">   
+DRA curator generates XMLs and upload them instead of you.  
+If all data files are uploaded, the curator proceeds to data file validation and review your submission. 
+Accession numbers will be notified if there is no issues with the submission.
 
 ### Validation of data files  {#validation-data-files}
 
