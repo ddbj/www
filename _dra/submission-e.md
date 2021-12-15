@@ -1606,8 +1606,8 @@ Send us the excel by email attachment if you are not familir with command lines.
 Send your metadata excel with DRA submission ID to the following address.
 <img src="/assets/images/center/trace-m.jpg">   
 DRA curator generates XMLs and upload them instead of you.  
-After uploading the XMLs, the curator backs the uploaded metadata in a table file. 
-Please check the metadata table file, and proceed to the [data file validation step](#validation-data-files) if the file is correct.
+After uploading the XMLs, the curator send backs the metadata in a table file. 
+Please check the file and proceed to the [data file validation step](#validation-data-files) if the file is correct.
 
 ### Validation of data files  {#validation-data-files}
 

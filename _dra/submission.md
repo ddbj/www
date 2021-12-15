@@ -1338,7 +1338,7 @@ Analysis (任意) が不要な場合は [Submit / Update DRA metadata] をクリ
 対象の DRA submission ID を添え、メール添付でエクセルファイルを次のアドレスに送付します。    
 <img src="/assets/images/center/trace-m.jpg">   
 DRA 担当者がエクセルから XML を生成し、対象の DRA submission にアップロードします。   
-アップロード完了後、担当者が登録したメタデータを表形式ファイルで返送するので、内容を確認後、問題が無ければ[データファイルの検証処理](#validation-data-files)に進んでください。
+完了後、担当者が登録したメタデータの内容をファイルで返送します。内容を確認後、問題が無ければ[データファイルの検証処理](#validation-data-files)に進みます。
 
 ## データファイルの検証  {#validation-data-files}
 
