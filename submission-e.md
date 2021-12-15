@@ -6,7 +6,7 @@ lang: en
 
 ## Navigation  {#navi}
 
-<script type="module" src="http://www-dev.ddbj.nig.ac.jp/assets/js/submission-wizard.js"></script>
+<script type="module" src="https://www-dev.ddbj.nig.ac.jp/assets/js/submission-wizard.js"></script>
 <submission-wizard locale="ja">Navi</submission-wizard>
 
 ## Databases and Data Submission Systems {#db}

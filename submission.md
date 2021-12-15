@@ -6,7 +6,7 @@ lang: ja
 
 ## 登録ナビゲーション  {#navi}
 
-<script type="module" src="http://www-dev.ddbj.nig.ac.jp/assets/js/submission-wizard.js"></script>
+<script type="module" src="https://www-dev.ddbj.nig.ac.jp/assets/js/submission-wizard.js"></script>
 <submission-wizard locale="ja">Navi</submission-wizard>
 
 ## データベースと登録窓口  {#db}
