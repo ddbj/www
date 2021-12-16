@@ -1326,7 +1326,7 @@ Analysis (任意) が不要な場合は [Submit / Update DRA metadata] をクリ
 
 <a href="/assets/images/books/hdra-xmlupload.jpg" title="作成した XML のアップロード" class="group1"><img src="/assets/images/books/hdra-xmlupload.jpg" alt="作成した XML のアップロード" title="作成した XML のアップロード" class="w500"></a>
 
-**処理に時間がかかる場合、ブラウザーがタイムアウトしますが、システムでは登録処理が続いているため、ステータスが metadata_submitted になるまで放置します。一日経ってもステータスが変わらない場合は問い合わせてください。**   
+**処理に時間がかかる場合、ブラウザーがタイムアウトしますが、システムでは登録処理が続いているため、ステータスが metadata_submitted になるまで放置します。一日経ってもステータスが変わらない場合は問い合わせてください ([FAQ](/faq/ja/dra-xml-timeout.html))。**   
 ステータスが metadata_submitted になったことを確認し、[データファイルの検証](#validation-data-files)に進みます。   
 タイムアウトした後、何度も XML をアップロードすることは避けてください。   
 状況が分からなくなった場合、DRA に[問い合わせてください](/contact.html)。
