@@ -81,6 +81,7 @@ Register a public key for dataset decryption in the NBDC data use application.
 
 ### Data use application approval  {#approval}
 
+Generate a public and private key pair for data transfer and [register the public key to your D-way account](/account-e.html#enable-dra-submission-in-account) for data download from the JGA server (jga-gw.ddbj.nig.ac.jp).   
 After the application is approved by NBDC, metadata, encrypted data files and decryption tools are created in the download directory in the JGA server.
 
 {% include image.html url="books/data-use-approved-e.png" caption="Data use application approval" class="w400" %}
@@ -169,35 +170,35 @@ $ unzip tools/J-DU999991.tool.zip
 
 $ tree ../J-DU999991/
 J-DU999991/
-├── J-DU999991.decrypt.sh                     # decryption tool for all files in DU.
+├── J-DU999991.decrypt.sh                     # decryption script for all files in DU.
 ├── JGAS999992
 │   └── JGAD999993
 │       ├── JGAR999999994
-│       │   ├── case1.fastq.gz.decrypt.sh     # decryption tool for each data file.
+│       │   ├── case1.fastq.gz.decrypt.sh     # decryption script for each data file.
 │       │   ├── case1.fastq.gz.encrypt
 │       │   └── case1.fastq.gz.encrypt.dat    # common key for the data file decryption.
 │       ├── JGAR999999995
 │       │   ├── case2.fastq.gz.encrypt
 │       │   ├── case2.fastq.gz.encrypt.dat    # common key for the data file decryption.
-│       │   └── case2.fastq.gz.encrypt.sh     # decryption tool for each data file.
+│       │   └── case2.fastq.gz.encrypt.sh     # decryption script for each data file.
 │       ├── JGAZ999999996
 │       │   ├── case1.vcf.gz.encrypt
 │       │   ├── case1.vcf.gz.encrypt.dat      # common key for the data file decryption.
-│       │   └── case1.vcf.gz.encrypt.sh       # decryption tool for each data file.
+│       │   └── case1.vcf.gz.encrypt.sh       # decryption script for each data file.
 │       ├── JGAZ999999997
 │       │   ├── case2.vcf.gz.encrypt
 │       │   ├── case2.vcf.gz.encrypt.dat      # common key for the data file decryption.
-│       │   └── case2.vcf.gz.encrypt.sh       # decryption tool for each data file.
+│       │   └── case2.vcf.gz.encrypt.sh       # decryption script for each data file.
 │       └── metadata
 └── tools
     └── J-DU999991.tool.zip
 
-# .decrypt.sh: decryption tools
+# .decrypt.sh: decryption scripts
 # .dat: encrypted common keys
 ```
 
 Add execute permission to all decryption scripts.  
-You can add permissions to all decryption tools by using wild cards (\*) as below.
+You can add permissions to all decryption scripts by using wild cards (\*) as below.
 
 ```
 $ chmod 754 J-DU999991.decrypt.sh 
@@ -207,7 +208,7 @@ $ chmod 754 JGAS999992/JGAD999993/JGAZ999999996/case1.vcf.gz.decrypt.sh
 $ chmod 754 JGAS999992/JGAD999993/JGAZ999999997/case2.vcf.gz.decrypt.sh 
 ```
 
-The permission may be added in batch by using the wild card (\*).
+The permission may be added to the scripts in batch by using the wild card (\*) as follows.
 
 ```
 $ chmod 754 J-DU999991.decrypt.sh 
