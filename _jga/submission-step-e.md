@@ -10,7 +10,7 @@ lang: en
 ## From NBDC data submission application to JGA data upload {#ds}
 
 Apply a data submission application in the [NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) after login with your D-way account.   
-An data submitter group is necessary for the application.  
+A data submitter group is necessary for the application.  
 After your application is approved, access to the JGA server with your D-way account and upload data by [sftp](#sftp) or [WinSCP](#winscp).
 
 * [D-way account and a public key for data transfer](#account-key)
@@ -44,7 +44,7 @@ Start the data submission application process and select the data submitter grou
 
 {% include image.html url="books/DS-group-select-e.png" caption="Select the data submitter group" class="w450" %}
 
-For details, see the [NBDC data submission page](https://humandbs.biosciencedbc.jp/en/data-submission).
+Also see the [NBDC data submission page](https://humandbs.biosciencedbc.jp/en/data-submission).
 
 ## Data submission application approval {#du-approval}
 
@@ -92,7 +92,7 @@ $ cd controlled-access/submission/jga/JSUB000353
 $ put JSUB000353_metadata.xlsx 
 ```
 
-## Data files uploading {#upload-data-files}
+## Data upload {#upload-data-files}
 
 ### Data file format {#data-file-format}
 
@@ -135,7 +135,7 @@ Download [WinSCP (https://winscp.net/eng/download.php)](https://winscp.net/eng/d
 
 Configure as follows.
 
-File protocol: SFTP
+- File protocol: SFTP
 - Host name: jga-gw.ddbj.nig.ac.jp
 - Port number: 443
 - User name: D-way account ID

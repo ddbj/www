@@ -11,7 +11,7 @@ lang: en
 
 Apply a data use application in the [NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) after login with your D-way account.   
 In the application, create a data user group, specify JGA Study and Dataset accessions you want to use, and register a public key for dataset decryption.   
-After your application is approved, access to the JGA server with your D-way account and donwload data to on-premise and off-premise servers by [sftp](#sftp) or [WinSCP](#winscp). Encrypted data files and decryption tools are provided, decrypt the data files by using the private key paired with the public key for dataset decryption registered in the application.
+After your application is approved, access to the JGA server with your D-way account and donwload data to on-/off-premise servers by [sftp](#sftp) or [WinSCP](#winscp). Encrypted data files and decryption tools are provided, decrypt the data files by using the private key paired with the public key for dataset decryption registered in the application.
 
 * [Search JGA dataset](#search)
 * [D-way account and a public key for data transfer](#account-key)
@@ -39,18 +39,18 @@ After creating a D-way account, it takes about 10 minutes for the D-way account 
 
 Generate a public and private key pair for data transfer and [register the public key to your D-way account](/account-e.html#enable-dra-submission-in-account) for sftp data download. 
 
-### Generate a public and private key pair for data decryption{#key-for-decryption}
+### Generate a public and private key pair for data decryption {#key-for-decryption}
 
 The JGA data are provided as encrypted files. A user downloads data by sftp and decrypts the files by using the private key paired with the public key for dataset decryption registered in the data use application.  
 The public key for dataset decryption is separate from [the public key for data transfer registered to the D-way account](/account-e.html#enable-dra-submission-in-account). See "[How to generate public/private key pair](/account-e.html#generate-key-pair)".
 
 In total, 2 pairs 4 keys are necessary for data use application and JGA data use.
 
-Key pair for dataset decryption.
+A key pair for dataset decryption.
 * A public key for dataset decryption (register per a NBDC data use application)
 * A private key for dataset decryption
 
-Key pair for data transfer.
+A key pair for data transfer.
 * A public key for data transfer (register to a D-way account)
 * A private key for data transfer
 
@@ -59,7 +59,7 @@ Key pair for data transfer.
 ## Data use application to NBDC {#du-application}
 
 [Apply the data use application](https://humandbs.biosciencedbc.jp/en/data-use) in the [NBDC Application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application).
-For details, please also see the [NBDC data use page](https://humandbs.biosciencedbc.jp/en/data-use).
+Also see the [NBDC data use page](https://humandbs.biosciencedbc.jp/en/data-use).
 
 ### Data user group {#data-user-group}
 
@@ -75,9 +75,9 @@ Before starting the application, create a data user group. In the following exam
 
 ### Register a puclic key for dataset decryption {#public-key-for-dataset-decryption}
 
-Register the public key for dataset encryption in the NBDC data use application.
+Register a public key for dataset decryption in the NBDC data use application.
 
-{% include image.html url="books/public-key-for-dataset-encryption-e.png" caption="egistration of the public key for dataset encryption" class="w400" %}
+{% include image.html url="books/public-key-for-dataset-decryption-e.png" caption="Registration of the public key for dataset decryption" class="w400" %}
 
 ### Data use application approval  {#approval}
 
@@ -87,7 +87,7 @@ After the application is approved by NBDC, metadata, encrypted data files and de
 
 ### Download {#download}
 
-In the "/controlled-access/download/jga/" directory in the JGA file server (jga-gw.ddbj.nig.ac.jp), the DU number directory is created. Download the directory by [sftp](#sftp) or [WinSCP](#winscp). 
+In the "/controlled-access/download/jga/" directory in the JGA file server (jga-gw.ddbj.nig.ac.jp), the DU number directory is created. Download the directory by [WinSCP](#winscp) or [sftp](#sftp).
 
 ### Download by WinSCP {#winscp}
 
@@ -118,7 +118,7 @@ Specify the [private key registered to your D-way account](/account-e.html#gener
 ```
 # Account ID: account_b
 # Data use application ID: J-DU999991
-# Private key for dataset decryption: ~/.ssh/id_rsa
+# Private key for data transfer: ~/.ssh/id_rsa
 
 $ sftp -i ~/.ssh/id_rsa -P 443 account_b@jga-gw.ddbj.nig.ac.jp
 $ cd controlled-access/download/jga/
@@ -216,7 +216,7 @@ $ chmod 754 JGAS999992/**/**/*.decrypt.sh
 
 Decrypt the data files by running "J-DU999991.decrypt.sh" with the private key paired with the public key for dataset encryption registered in the data use application.
 
-- -k: specify the private key paired with the public key for dataset encryption (for example, J-DU999991_private_key).
+- -k: specify the private key paired with the public key for dataset decryption (for example, J-DU999991_private_key).
 - -p: specify the passphrase of the private key (\*\*\*\*\*\*).
 
 ```

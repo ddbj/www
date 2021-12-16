@@ -151,7 +151,7 @@ $ mput *.fastq
 
 以下のように設定します。
 
-転送プロトコル: SFTP
+- 転送プロトコル: SFTP
 - ホスト名: jga-gw.ddbj.nig.ac.jp
 - ポート番号: 443
 - ユーザ名: D-way アカウント ID
