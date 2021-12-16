@@ -67,7 +67,8 @@ JGA サーバへデータをアップロードするためには、データ転�
 
 {% include image.html url="books/DS-JSUB.png" caption="提供申請と JGA submission ID" class="w250" %}
     
-JGA ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/submission/jga/ の下に Submission ID と同名のディレクトリが作成されるので、ここにメタデータをデータファイルを [sftp](#sftp) もしくは [WinSCP](#winscp) でアップロードします。
+JGA サーバ (jga-gw.ddbj.nig.ac.jp) へデータをアップロードするためには、データ転送用の公開鍵・秘密鍵ペアを作成し、[公開鍵を D-way アカウントに登録](/account.html#enable-dra-submission-in-account)します。   
+JGA サーバ上の /controlled-access/submission/jga/ の下に Submission ID と同名のディレクトリが作成されるので、ここにメタデータとデータファイルを [sftp](#sftp) もしくは [WinSCP](#winscp) でアップロードします。
 この例であればディレクトリは /controlled-access/submission/jga/JSUB000353/ になります。
 
 ## メタデータ作成  {#create-metadata-using-excel}
