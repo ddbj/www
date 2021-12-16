@@ -83,7 +83,7 @@ Experimental Factor Type<a name="Experimental_Factor_Type"></a>
 <!-- end list -->
 
 [Person Mid Initials](#Person_Mid_Initials)<a name="Person_Mid_Initials"></a>
-: <p></p>
+: The middle name of each person associated with the experiment.
 
 <!-- end list -->
 
