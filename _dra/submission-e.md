@@ -1594,7 +1594,7 @@ Following is an example of uploading the Submission/Experiment/Run XMLs to the D
 
 <a href="/assets/images/books/hdra-xmlupload.jpg" title="Upload metadata XMLs" class="group1"><img src="/assets/images/books/hdra-xmlupload.jpg" alt="Upload metadata XMLs" title="Upload metadata XMLs" class="w500"></a>
 
-** Web browser may time-out. However, submission processes are ongoing in backgroupd, so please leave it until the submission status becomes "metadata_submitted". If the status is unchanged even after a day, please contact us. **   
+** Web browser may time-out. However, submission processes are ongoing in backgroupd, so please leave it until the submission status becomes "metadata_submitted". If the status is unchanged even after a day, please contact us ([FAQ](/faq/en/dra-xml-timeout-e.html)). **   
 After the submission status becomes "metadata_submitted", move on to the [data file validation](#validation-data-files) step.  
 Avoid uploading XMLs many times after the time-out.   
 Please [contact us](/contact-e.html) if you are not sure about the status of your submission.
