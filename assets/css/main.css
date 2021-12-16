@@ -1663,10 +1663,6 @@ input:focus, textarea:focus, select:focus, button:focus {
   transition: border 0.2s;
 }
 
-.tab-menu-view > .tabmenucontainer > li.-haschild:hover > a::after {
-  border-top-color: white;
-}
-
 .tab-menu-view > .tabmenucontainer > li > ul {
   position: absolute;
   background-color: white;
@@ -1675,6 +1671,7 @@ input:focus, textarea:focus, select:focus, button:focus {
   opacity: 0;
   pointer-events: none;
   transform: translateY(-1rem);
+  white-space: nowrap;
   z-index: 2;
 }
 
