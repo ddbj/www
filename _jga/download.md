@@ -15,7 +15,7 @@ lang: ja
 
 * [JGA データセットの検索](#search)
 * [D-way アカウントの作成とデータ転送用公開鍵の登録](#account-key)
-* [利用申請毎に必要なデータ復号用公開鍵・秘密鍵ペアの作成](#key-for-decryption)
+* [利用申請毎に必要なデータセット復号用公開鍵・秘密鍵ペアの作成](#key-for-decryption)
 * [利用申請](#du-application)
 * [データセット復号用公開鍵の登録](#key-registration)
 * [ダウンロード](#download)
@@ -38,10 +38,10 @@ D-way アカウント作成後、[NBDC データ申請システム](https://huma
 
 sftp を利用して JGA サーバからデータをダウンロードするためには、データ転送用の公開鍵・秘密鍵ペアを作成し、[公開鍵を D-way アカウントに登録](/account.html#enable-dra-submission-in-account)します。   
 
-### 利用申請毎に必要なデータ復号用公開鍵・秘密鍵ペアの作成 {#key-for-decryption}
+### 利用申請毎に必要なデータセット復号用公開鍵・秘密鍵ペアの作成 {#key-for-decryption}
 
-JGA データは暗号化された状態で提供されます。ユーザは利用承認されたデータを sftp でダウンロードし、利用申請時に登録したデータ復号用公開鍵とペアとなる秘密鍵を使ってデータを復号します。   
-データ復号用公開鍵は D-way アカウントの[データ転送用公開鍵](/account.html#enable-dra-submission-in-account)とは別になります。作成手順は[公開鍵/秘密鍵ペアの生成](/account.html#generate-key-pair)をご覧ください。
+JGA データは暗号化された状態で提供されます。ユーザは利用承認されたデータを sftp でダウンロードし、利用申請時に登録したデータセット復号用公開鍵とペアとなる秘密鍵を使ってデータを復号します。   
+データセット復号用公開鍵は D-way アカウントの[データ転送用公開鍵](/account.html#enable-dra-submission-in-account)とは別になります。作成手順は[公開鍵/秘密鍵ペアの生成](/account.html#generate-key-pair)をご覧ください。
 
 利用申請から JGA データ利用までに、データ転送用と復号用に合計２ペア４ファイルの公開鍵・秘密鍵が必要になります。
 

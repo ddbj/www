@@ -57,7 +57,7 @@ JGA サーバへデータをアップロードするためには、データ転�
 
 {% include image.html url="books/DS-group-select.png" caption="データ提供申請グループの選択" class="w450" %}
 
-詳細な手順は [NBDC のデータ提供](https://humandbs.biosciencedbc.jp/data-submission)ページをご覧ください。
+詳細な手順は [NBDC のデータ提供](https://humandbs.biosciencedbc.jp/data-submission)ページもご覧ください。
 
 ## 提供申請の承認 {#approval}
 

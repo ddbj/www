@@ -7,15 +7,28 @@ current_tab: submission
 lang: en
 ---
 
-## Data submission application to NBDC {#ds-application}
+## From NBDC data submission application to JGA data upload {#ds}
 
-[Submit a data submission application](https://humandbs.biosciencedbc.jp/data-submission) in [the NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application). Create a data submitter group before application. After the application is apprived by NBDC, an upload directory will be created in the JGA server.
+Apply a data submission application in the [NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) after login with your D-way account.   
+An data submitter group is necessary for the application.  
+After your application is approved, access to the JGA server with your D-way account and upload data by [sftp](#sftp) or [WinSCP](#winscp).
 
-For application, a D-way account is required. Please obtain [a D-way account](https://ddbj.nig.ac.jp/D-way/) before application.
+* [D-way account and a public key for data transfer](#account-key)
+* [Data submission application approval](#approval)
+* [Create metadata excel](#create-metadata-using-excel)
+* [Data upload](#upload-data-files)
+	* [sftp](#sftp)
+	* [WinSCP](#winscp)
 
-<p class="attention">After creating a D-way account, it takes about 10 minutes for the D-way account becomes active in the <a href="https://humandbs.ddbj.nig.ac.jp/nbdc/application/">NBDC application system</a>.</p>
+## D-way account and a public key for data transfer {#account-key}
 
-This page describes how to submit data to JGA.
+A D-way account is necessary for data submission application and JGA data upload. If you do not have an acccount, [create a D-way account](https://ddbj.nig.ac.jp/D-way/) before application.   
+
+<div class="attention" markdown="1">
+After creating a D-way account, it takes about 10 minutes for the D-way account becomes active in the [NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/).
+</div>
+
+Generate a public and private key pair for data transfer and [register the public key to your D-way account](/account-e.html#enable-dra-submission-in-account).    
 
 ## Data submitter group {#data-submitter-group}
 
@@ -25,11 +38,13 @@ In the NBDC application system, an account who actually submits an application w
 
 {% include image.html url="books/DS-group-e.png" caption="Data submitter group" class="w400" %}
 
-[Start the data submission application process](https://humandbs.biosciencedbc.jp/data-submission) and select the data submitter group.
+Start the data submission application process and select the data submitter group.
 
 {% include image.html url="books/DS-start-e.png" caption="Start data submission application process" class="w450" %}
 
 {% include image.html url="books/DS-group-select-e.png" caption="Select the data submitter group" class="w450" %}
+
+For details, see the [NBDC data submission page](https://humandbs.biosciencedbc.jp/en/data-submission).
 
 ## Data submission application approval {#du-approval}
 
@@ -39,7 +54,7 @@ After the application is approved by NBDC, a JGA submission ID (for example, JSU
 
 {% include image.html url="books/DS-JSUB-e.png" caption="Data submission application and JGA submission ID" class="w250" %}
 
-A JGA submission directory is created in "/controlled-access/submission/jga/" of the JGA file server (jga-gw.ddbj.nig.ac.jp), upload metadata and data files to this directory by sftp. In this example, the upload directory is "/controlled-access/submission/jga/JSUB000353/".
+A JGA submission directory is created in "/controlled-access/submission/jga/" of the JGA file server (jga-gw.ddbj.nig.ac.jp), upload metadata and data files to this directory by [sftp](#sftp) or [WinSCP](#winscp). In this example, the upload directory is "/controlled-access/submission/jga/JSUB000353/".
 
 ## Create metadata excel {#create-metadata-using-excel}
 
@@ -49,7 +64,7 @@ Download the excel for metadata description below and enter metadata in English.
 
 [![JGA metadata excel](/assets/images/parts/download.png "JGA metadata excel"){:.w40}](/assets/files/submission/JGA_metadata.xlsx)
 
-last updated: 2020-09-26
+last updated: 2020-09-29
 
 <div class="attention" markdown="1">
 Data files to be uploaded to JGA should not have spaces in their filenames.
@@ -63,25 +78,19 @@ All datasets in a JGA submission are distributed at the same time. Do NOT includ
 
 [Example metadata](https://docs.google.com/spreadsheets/d/1HHlxItj89fQv2oWUNBIHZ4VVGwbcC09WGD5tEiXAQZ4/edit#gid=744299318)
 
-### Upload excel {#upload-excel}
+### Upload excel by sftp {#sftp}
 
-<div class="attention" markdown="1">
-To upload files to the JGA server by sftp, you need to [register a center name and a public key to your D-way account](/account-e.html#enable-dra-submission-in-account). The ssh login is blocked in the JGA server.
-</div>
-
-In the JGA submission directory in "/controlled-access/submission/jga/" in JGA file server (jga-gw.ddbj.nig.ac.jp), upload the excel to this directory by sftp specifying the port number 443 with P option. The sftp uses public/private key authentication, specify [a private key registered to your D-way account](/account.html#generate-key-pair) for authentication.
-
-Example
-- account ID: account_b
-- JGA Submission ID: JSUB000353
+In the JGA submission directory in "/controlled-access/submission/jga/" in JGA file server (jga-gw.ddbj.nig.ac.jp), upload the excel to this directory by sftp specifying the port number 443 with P option. The sftp uses public/private key authentication, specify the private key paired with [the public key registered to your D-way account](/account-e.html#generate-key-pair) for data transfer.
 
 ```
-$ sftp -i private-key-for-auth -P 443 account_b@jga-gw.ddbj.nig.ac.jp
+# Account ID: account_b
+# JGA Submission ID： JSUB000353
+# Private key for data transfer: ~/.ssh/id_rsa
+
+$ sftp -i ~/.ssh/id_rsa -P 443 account_b@jga-gw.ddbj.nig.ac.jp
 $ cd controlled-access/submission/jga/JSUB000353
 $ put JSUB000353_metadata.xlsx 
 ```
--i: specify the private key for authentication
--P: specify the port number 443
 
 ## Data files uploading {#upload-data-files}
 
@@ -101,26 +110,46 @@ Submit individual-level next-generation sequencing data such as fastq and bam fi
 For reproducibility, it is important to submit processed data from which conclusion of associated paper is derived. Please submit processed data files such as VCF to Analysis.
 </div>
 
-### Upload data files {#data-files-upload}
+### Upload data files by sftp {#data-files-sftp-upload}
 
 Upload data files to the upload directory by sftp.
 
-Example
-- Account ID: account_b
-- JGA Submission ID: JSUB000353
-
 ```
-$ sftp -i private-key-for-auth -P 443 account_b@jga-gw.ddbj.nig.ac.jp
+# Account ID: account_b
+# JGA Submission ID： JSUB000353
+# Private key for data transfer: ~/.ssh/id_rsa
+
+$ sftp -i ~/.ssh/id_rsa -P 443 account_b@jga-gw.ddbj.nig.ac.jp
 $ cd controlled-access/submission/jga/JSUB000353
 $ put wgs1.fastq
 ```
--i: specify the private key for authentication
--P: specify the port number 443
 
 Upload all files with "fastq" in the extensions.
 ```
 $ mput *.fastq
 ```
+
+### Upload files by WinSCP {#winscp}
+
+Download [WinSCP (https://winscp.net/eng/download.php)](https://winscp.net/eng/download.php) and install it to Windows PC.
+
+Configure as follows.
+
+File protocol: SFTP
+- Host name: jga-gw.ddbj.nig.ac.jp
+- Port number: 443
+- User name: D-way account ID
+- Password: leave empty
+
+{% include image.html url="books/jga-winscp1-e.jpg" caption="WinSCP session" class="w400" %}
+
+{% include image.html url="books/jga-winscp2-e.jpg" caption="Specify the private key for data transfer" class="w400" %}
+    
+When first time access, an waring message will be shown and select "Yes" (it will not be shown in next time). Enter a passphrase if necessary.  
+
+{% include image.html url="books/jga-winscp3-e.jpg" caption="WinSCP data file transfer" class="w400" %}
+    
+After login, drag and drop local data files in the left window to the JGA server in the right window.
 
 ## Submission of metadata and data files {#metadata-data-submission}
 
