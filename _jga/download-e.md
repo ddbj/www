@@ -11,7 +11,7 @@ lang: en
 
 Apply a data use application in the [NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) after login with your D-way account.   
 In the application, create a data user group, specify JGA Study and Dataset accessions you want to use, and register a public key for dataset decryption.   
-After your application is approved, access to the JGA server with your D-way account and donwload data to on-/off-premise servers by [sftp](#sftp) or [WinSCP](#winscp). Encrypted data files and decryption tools are provided, decrypt the data files by using the private key paired with the public key for dataset decryption registered in the application.
+After your application is approved, access to the JGA server with your D-way account and donwload data to on-/off-premise servers by [WinSCP](#winscp) or [sftp](#sftp). Encrypted data files and decryption tools are provided, decrypt the data files by using the private key paired with the public key for dataset decryption registered in the application.
 
 * [Search JGA dataset](#search)
 * [D-way account and a public key for data transfer](#account-key)
@@ -26,7 +26,7 @@ After your application is approved, access to the JGA server with your D-way acc
 
 ### Search JGA dataset {#search}
 
-Search Study (e.g., JGAS999992) and Dataset [accessions](/jga/submission-e.html) (e.g., JGAD999993) of your interest.   
+Search Study (e.g., JGAS999992) and Dataset (e.g., JGAD999993) [accessions](/jga/submission-e.html) of your interest.   
 You may search JGA data in the NBDC human database [list of researches](https://humandbs.biosciencedbc.jp/en/data-use/all-researches) or [DDBJ Search](https://ddbj.nig.ac.jp/search).
 
 ### D-way account and a public key for data transfer  {#account-key}
@@ -37,7 +37,7 @@ A D-way account is necessary for data use application and JGA data download. If 
 After creating a D-way account, it takes about 10 minutes for the D-way account becomes active in the [NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/).
 </div>
 
-Generate a public and private key pair for data transfer and [register the public key to your D-way account](/account-e.html#enable-dra-submission-in-account) for sftp data download. 
+Generate a public and private key pair for data transfer and [register the public key to your D-way account](/account-e.html#enable-dra-submission-in-account) for data download. 
 
 ### Generate a public and private key pair for data decryption {#key-for-decryption}
 
@@ -47,7 +47,7 @@ The public key for dataset decryption is separate from [the public key for data 
 In total, 2 pairs 4 keys are necessary for data use application and JGA data use.
 
 A key pair for dataset decryption.
-* A public key for dataset decryption (register per a NBDC data use application)
+* A public key for dataset decryption (register per NBDC data use application)
 * A private key for dataset decryption
 
 A key pair for data transfer.
@@ -81,7 +81,7 @@ Register a public key for dataset decryption in the NBDC data use application.
 
 ### Data use application approval  {#approval}
 
-After the application is approved by NBDC, metadata, encrypted data files and decryption tools is created in the download directory in the JGA server.
+After the application is approved by NBDC, metadata, encrypted data files and decryption tools are created in the download directory in the JGA server.
 
 {% include image.html url="books/data-use-approved-e.png" caption="Data use application approval" class="w400" %}
 
@@ -95,7 +95,7 @@ Download [WinSCP (https://winscp.net/eng/download.php)](https://winscp.net/eng/d
 
 Configure as follows.
 
-File protocol: SFTP
+- File protocol: SFTP
 - Host name: jga-gw.ddbj.nig.ac.jp
 - Port number: 443
 - User name: D-way account ID
@@ -105,7 +105,7 @@ File protocol: SFTP
 
 {% include image.html url="books/jga-winscp2-e.jpg" caption="Specify the private key for data transfer" class="w400" %}
     
-When first time access, an waring message will be shown and select "Yes" (it will not be shown in next time). Enter a passphrase if necessary.  
+When first time access, a waring message will be shown and select "Yes" (it will not be shown in next time). Enter a passphrase if it has been set.  
 
 {% include image.html url="books/jga-winscp3-e.jpg" caption="WinSCP data file transfer" class="w400" %}
     
@@ -113,7 +113,7 @@ After login, drag and drop JGA data files in the right window to the local serve
 
 ### sftp download {#sftp}
 
-Specify the [private key registered to your D-way account](/account-e.html#generate-key-pair) and the port number 443 for sftp data transfer (this key different from the private key for dataset decryption).
+Specify the [private key registered to your D-way account](/account-e.html#generate-key-pair) and the port number 443 for sftp data transfer (this key is different from the private key for dataset decryption).
 
 ```
 # Account ID: account_b
@@ -125,7 +125,7 @@ $ cd controlled-access/download/jga/
 $ get -r J-DU999991
 ```
 
-In the DU directory, there are Study directory and tools directory which contains the decryption tools. 
+In the DU directory, there are study directory and tools directory which contains the decryption tools. 
 The Dataset directory under the Study directory contains metadata in tab-delimited text (tsv) and XML formats, and the Data and Analysis directories contain encrypted data files.
 
 The data access is explained below.
@@ -136,18 +136,18 @@ The data access is explained below.
 # JGA Data: JGAR999999994-JGAR999999995
 # JGA Analysis: JGAZ999999996-JGAZ999999997
 
-$ tree J-DU999991/
+$ tree J-DU999991/	
 J-DU999991/
 ├── JGAS999992                           # JGA Study
 │   └── JGAD999993                       # JGA Dataset   
 │       ├── JGAR999999994                # JGA Data
-│       │   └── case1.fastq.gz.encrypt     # Encrypted data files
+│       │   └── case1.fastq.gz.encrypt     # encrypted data file
 │       ├── JGAR999999995                # JGA Data
-│       │   └── case2.fastq.gz.encrypt     # Encrypted data files
+│       │   └── case2.fastq.gz.encrypt     # encrypted data file
 │       ├── JGAZ999999996                # JGA Analysis
-│       │   └── case1.vcf.gz.encrypt       # Encrypted data files
+│       │   └── case1.vcf.gz.encrypt       # encrypted data file
 │       ├── JGAZ999999997                # JGA Analysis
-│       │   └── case2.vcf.gz.encrypt       # Encrypted data files
+│       │   └── case2.vcf.gz.encrypt       # encrypted data file
 │       └── metadata
 └── tools
     └── J-DU999991.tool.zip
@@ -169,25 +169,25 @@ $ unzip tools/J-DU999991.tool.zip
 
 $ tree ../J-DU999991/
 J-DU999991/
-├── J-DU999991.decrypt.sh                     # The decryption tool for all files in DU.
+├── J-DU999991.decrypt.sh                     # decryption tool for all files in DU.
 ├── JGAS999992
 │   └── JGAD999993
 │       ├── JGAR999999994
-│       │   ├── case1.fastq.gz.decrypt.sh     # The decryption tool for each data file.
+│       │   ├── case1.fastq.gz.decrypt.sh     # decryption tool for each data file.
 │       │   ├── case1.fastq.gz.encrypt
-│       │   └── case1.fastq.gz.encrypt.dat    # The common key for the data file decryption.
+│       │   └── case1.fastq.gz.encrypt.dat    # common key for the data file decryption.
 │       ├── JGAR999999995
 │       │   ├── case2.fastq.gz.encrypt
-│       │   ├── case2.fastq.gz.encrypt.dat    # The common key for the data file decryption.
-│       │   └── case2.fastq.gz.encrypt.sh     # The decryption tool for each data file.
+│       │   ├── case2.fastq.gz.encrypt.dat    # common key for the data file decryption.
+│       │   └── case2.fastq.gz.encrypt.sh     # decryption tool for each data file.
 │       ├── JGAZ999999996
 │       │   ├── case1.vcf.gz.encrypt
-│       │   ├── case1.vcf.gz.encrypt.dat      # The common key for the data file decryption.
-│       │   └── case1.vcf.gz.encrypt.sh       # The decryption tool for each data file.
+│       │   ├── case1.vcf.gz.encrypt.dat      # common key for the data file decryption.
+│       │   └── case1.vcf.gz.encrypt.sh       # decryption tool for each data file.
 │       ├── JGAZ999999997
 │       │   ├── case2.vcf.gz.encrypt
-│       │   ├── case2.vcf.gz.encrypt.dat      # The common key for the data file decryption.
-│       │   └── case2.vcf.gz.encrypt.sh       # The decryption tool for each data file.
+│       │   ├── case2.vcf.gz.encrypt.dat      # common key for the data file decryption.
+│       │   └── case2.vcf.gz.encrypt.sh       # decryption tool for each data file.
 │       └── metadata
 └── tools
     └── J-DU999991.tool.zip
@@ -197,7 +197,7 @@ J-DU999991/
 ```
 
 Add execute permission to all decryption scripts.  
-You can add permissions to all decryption tools by using wild cards (*) as below.
+You can add permissions to all decryption tools by using wild cards (\*) as below.
 
 ```
 $ chmod 754 J-DU999991.decrypt.sh 
@@ -207,7 +207,7 @@ $ chmod 754 JGAS999992/JGAD999993/JGAZ999999996/case1.vcf.gz.decrypt.sh
 $ chmod 754 JGAS999992/JGAD999993/JGAZ999999997/case2.vcf.gz.decrypt.sh 
 ```
 
-The permission may be added in batch by using the wild card (*).
+The permission may be added in batch by using the wild card (\*).
 
 ```
 $ chmod 754 J-DU999991.decrypt.sh 
