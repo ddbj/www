@@ -81,8 +81,8 @@ Experimental Factor Type<a name="Experimental_Factor_Type"></a>
 
 <!-- end list -->
 
-[登録者のミドルネーム (公開されます)。](#Person_Mid_Initials)<a name="Person_Mid_Initials"></a>
-: <p></p>
+[Person Middle Name](#Person_Mid_Initials)<a name="Person_Mid_Initials"></a>
+: <p>登録者のミドルネーム (公開されます)。</p>
 <!-- end list -->
 
 [Person Affiliation](#Person_Affiliation)<a name="Person_Affiliation"></a>
