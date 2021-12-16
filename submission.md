@@ -1,5 +1,5 @@
 ---
-layout: indexed_content
+layout: simple
 title: データベースと登録窓口
 lang: ja
 ---
