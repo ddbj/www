@@ -137,9 +137,6 @@ When JGA submissions are released, following metadata objects will be public on 
 
 <div class="dl-list" markdown="1">
 
-Submission:  
-: All fields excluding submitters' contact information.
-
 Study:  
 : All fields.
 
