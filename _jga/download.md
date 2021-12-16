@@ -86,7 +86,9 @@ JGA データは暗号化された状態で提供されます。ユーザは利�
 
 ## ダウンロード {#download}
 
-JGA ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/download/jga/ の下にデータ利用申請 DU 番号と同名のディレクトリが作成されます。   
+sftp を利用して JGA サーバ (jga-gw.ddbj.nig.ac.jp) からデータをダウンロードするためには、データ転送用の公開鍵・秘密鍵ペアを作成し、[公開鍵を D-way アカウントに登録](/account.html#enable-dra-submission-in-account)します。   
+
+JGA ファイルサーバ上の /controlled-access/download/jga/ の下にデータ利用申請 DU 番号と同名のディレクトリが作成されます。   
 [WinSCP](#winscp)、もしくは、[sftp](#sftp) コマンドを使ってダウンロードします。  
 
 ### WinSCP によるダウンロード {#winscp}
