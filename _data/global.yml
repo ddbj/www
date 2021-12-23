@@ -2,6 +2,10 @@ top_news:
   ja:
     - title: 生命情報・DDBJ センター年末年始休業のお知らせ
       path: 2021-12-01
+    - title: D-way システム停止のお知らせ（1/12 9:30-11:00）
+      path: 2021-12-23
   en:
     - title: Suspension of the BI-DDBJ activity during the New Year Holidays
       path: 2021-12-01-e
+    - title: D-way will be unavailable (12 Jan, 9:30-11:00)
+      path: 2021-12-23-e
