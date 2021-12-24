@@ -1,12 +1,12 @@
-import{T as h,b as j,r as S,L as y,p as r,m as p,s as v,e as D,t as d,y as A,a as w,l as B,n as R}from"./submission-wizard-a3321e31.js";/**
+import{T as c,b as S,r as q,L as y,p as l,m as p,s as v,e as w,t as d,y as D,a as A,l as B,n as R}from"./submission-wizard-1685805f.js";/**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
- */const E={ATTRIBUTE:1,CHILD:2,PROPERTY:3,BOOLEAN_ATTRIBUTE:4,EVENT:5,ELEMENT:6},b=i=>(...e)=>({_$litDirective$:i,values:e});class f{constructor(e){}get _$AU(){return this._$AM._$AU}_$AT(e,t,a){this._$Ct=e,this._$AM=t,this._$Ci=a}_$AS(e,t){return this.update(e,t)}update(e,t){return this.render(...t)}}/**
+ */const M={ATTRIBUTE:1,CHILD:2,PROPERTY:3,BOOLEAN_ATTRIBUTE:4,EVENT:5,ELEMENT:6},b=i=>(...e)=>({_$litDirective$:i,values:e});class f{constructor(e){}get _$AU(){return this._$AM._$AU}_$AT(e,a,t){this._$Ct=e,this._$AM=a,this._$Ci=t}_$AS(e,a){return this.update(e,a)}update(e,a){return this.render(...a)}}/**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
- */class c extends f{constructor(e){if(super(e),this.it=h,e.type!==E.CHILD)throw Error(this.constructor.directiveName+"() can only be used in child bindings")}render(e){if(e===h||e==null)return this.vt=void 0,this.it=e;if(e===j)return e;if(typeof e!="string")throw Error(this.constructor.directiveName+"() called with a non-string value");if(e===this.it)return this.vt;this.it=e;const t=[e];return t.raw=t,this.vt={_$litType$:this.constructor.resultType,strings:t,values:[]}}}c.directiveName="unsafeHTML",c.resultType=1;const x=b(c);class I extends f{render(){}update(e){e.element.scrollTo({top:0,left:0,behavior:"instant"})}}var M=b(I),P={"q5-genome-eukaryote-complete-dra->g-bp-bs-dra":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<ul>
+ */class h extends f{constructor(e){if(super(e),this.it=c,e.type!==M.CHILD)throw Error(this.constructor.directiveName+"() can only be used in child bindings")}render(e){if(e===c||e==null)return this.vt=void 0,this.it=e;if(e===S)return e;if(typeof e!="string")throw Error(this.constructor.directiveName+"() called with a non-string value");if(e===this.it)return this.vt;this.it=e;const a=[e];return a.raw=a,this.vt={_$litType$:this.constructor.resultType,strings:a,values:[]}}}h.directiveName="unsafeHTML",h.resultType=1;const P=b(h);class E extends f{render(){}update(e){e.element.scrollTo({top:0,left:0,behavior:"instant"})}}var x=b(E),I={"q5-genome-eukaryote-complete-dra->g-bp-bs-dra":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<ul>
   <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
   <li>Register a BioProject and a BioSample during or before the DRA submission.</li>
 </ul>
@@ -33,7 +33,7 @@ import{T as h,b as j,r as S,L as y,p as r,m as p,s as v,e as D,t as d,y as A,a a
 `,ja:null}}]},"q5-genome-prokaryote-complete-dramss>g-bp-bs-dra-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<ul>
   <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
   <li>Register a BioProject and a BioSample during or before the DRA submission.</li>
-  <li>Submit complete genome sequences of prokaryotes to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
+  <li>Submit complete genome sequences of prokaryotes through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
 </ul>
 `,ja:null}},{title:{en:"BioProject",ja:null},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort and organizes the DRA and genome data. The BioProject submission can be done during the DRA submission.</p>
 `,ja:null}},{title:{en:"BioSample",ja:null},body:{en:`<p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute-e.html?Core=MIxS&SampleType=MIGS.ba&Package=No_package&definition=definition">MIGS cultured bacteria/archaea package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample contains the source information of the sequenced sample. The BioSample submission can be done during the DRA submission.</p>
@@ -43,7 +43,7 @@ import{T as h,b as j,r as S,L as y,p as r,m as p,s as v,e as D,t as d,y as A,a a
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
   <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
 </ol></p>
-`}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit complete genome sequences (non-WGS) of prokaryotes to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will shorten submission processing time by annotating prokaryotic genomes and generating submission-ready files.</p>
+`}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit complete genome sequences (non-WGS) of prokaryotes through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will shorten submission processing time by annotating prokaryotic genomes and generating submission-ready files.</p>
 <p>In the MSS submission, you will need to:
 <ul>
   <li>Provide a BioProject and a BioSample that have been registered for the genome submission. A genome must be linked to a BioProject and a BioSample.</li>
@@ -52,66 +52,33 @@ import{T as h,b as j,r as S,L as y,p as r,m as p,s as v,e as D,t as d,y as A,a a
 </ul>
 </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the complete genome sequences of prokaryotes.</p>
-`,ja:null}}]},"q4-metagenome-binned-dra->g-bp-bs-dra":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<h1>data-from: q4-metagenome-binned-dra</h1>
-<p>Dolorum fugiat veniam. Id id amet. Sit nemo voluptas.</p>
-<p>Fugit labore adipisci. Non repellat explicabo. Voluptatem nostrum sed.</p>
-<p>Alias officia illo. Quidem deleniti quos. Ut dolores numquam.</p>
-<p>Eum optio quas. Cumque et eum. Dolorem nam deserunt.</p>
-`,ja:null}},{title:{en:"BioProject",ja:null},body:{en:`<h1>data-from: q4-metagenome-binned-dra</h1>
-<p>Sed et eaque. Odit voluptate culpa. Eos hic maiores.</p>
-<p>Rerum consequatur quos. Aliquid asperiores sed. Veritatis consequatur eius.</p>
-<p>Odit totam necessitatibus. Voluptas assumenda aliquid. Ut praesentium itaque.</p>
-<p>Molestias est corporis. Sapiente praesentium perspiciatis. Mollitia quasi voluptas.</p>
-`,ja:null}},{title:{en:"BioSample",ja:null},body:{en:`<h1>data-from: q4-metagenome-binned-dra</h1>
-<p>Dolorem nobis saepe. Quibusdam quia laudantium. Repellat occaecati voluptatem.</p>
-<p>Dicta iste quia. Eum facere adipisci. Ducimus tempora autem.</p>
-<p>Corrupti doloribus sint. Est et sit. Magni eius quos.</p>
-<p>Adipisci excepturi temporibus. Natus ut qui. Est possimus sit.</p>
-`,ja:null}},{title:{en:"DRA",ja:null},body:{en:`<h1>data-from: q4-metagenome-binned-dra</h1>
-<p>Quisquam quae reiciendis. Sunt perferendis voluptas. Sit at a.</p>
-<p>Necessitatibus ea aut. Doloremque sit voluptas. Earum quos est.</p>
-<p>Qui in ipsum. Suscipit quae architecto. Blanditiis est eveniet.</p>
-<p>Nobis cumque natus. Delectus debitis sapiente. Laborum nihil quia.</p>
-`,ja:null}}]},"q4-metagenome-tls-dra->g-bp-bs-dra":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<h1>data-from: q4-metagenome-tls-dra</h1>
-<p>Et ipsa ut. Voluptate sapiente quasi. Et ullam animi.</p>
-<p>Labore itaque error. Voluptate debitis placeat. Et quas maxime.</p>
-<p>Eius voluptatem dolor. Odit rerum officia. Saepe ducimus eos.</p>
-<p>Nihil reprehenderit rerum. Sed voluptatem natus. Eveniet et rem.</p>
-`,ja:null}},{title:{en:"BioProject",ja:null},body:{en:`<h1>data-from: q4-metagenome-tls-dra</h1>
-<p>Omnis nesciunt non. Sed quaerat omnis. Eligendi omnis quas.</p>
-<p>Velit laborum voluptas. Vero est maxime. Est excepturi expedita.</p>
-<p>Ea recusandae id. Tempora asperiores non. Cupiditate velit hic.</p>
-<p>Officiis amet illo. Temporibus in eaque. Consequatur perspiciatis odit.</p>
-`,ja:null}},{title:{en:"BioSample",ja:null},body:{en:`<h1>data-from: q4-metagenome-tls-dra</h1>
-<p>Animi enim est. Sit nihil dolor. Excepturi sit consequatur.</p>
-<p>Suscipit sapiente natus. Magni perferendis voluptates. Voluptates eum vel.</p>
-<p>Dolores dolor corporis. Sunt omnis maiores. Facilis et sunt.</p>
-<p>Tempora rerum atque. Aut vel perspiciatis. Et sunt illum.</p>
-`,ja:null}},{title:{en:"DRA",ja:null},body:{en:`<h1>data-from: q4-metagenome-tls-dra</h1>
-<p>Suscipit voluptates debitis. Ab ut inventore. Dolorem veniam qui.</p>
-<p>Earum quos occaecati. Ad quo expedita. Neque molestias eos.</p>
-<p>Consequatur voluptatem ab. Ipsum delectus corporis. Omnis ut tempora.</p>
-<p>Illo enim et. Distinctio rerum quam. Magni molestiae aperiam.</p>
-`,ja:null}}]},"q4-metagenome-other-dra->g-bp-bs-dra":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<h1>data-from: q4-metagenome-other-dra</h1>
-<p>Voluptas quas aut. Amet explicabo aut. Fugiat blanditiis qui.</p>
-<p>Reprehenderit ipsum error. Sunt esse illo. Sunt quaerat voluptatem.</p>
-<p>Fugiat quo veniam. Illo rerum et. Incidunt rerum rerum.</p>
-<p>Consequatur incidunt dolorem. Odit dolores aspernatur. Exercitationem quisquam consequatur.</p>
-`,ja:null}},{title:{en:"BioProject",ja:null},body:{en:`<h1>data-from: q4-metagenome-other-dra</h1>
-<p>Odit eveniet enim. Maxime quasi officiis. Perferendis enim voluptatem.</p>
-<p>Ex autem corrupti. In perspiciatis earum. Quia consequatur occaecati.</p>
-<p>Voluptatem expedita voluptas. Modi aut aut. Nobis et repellendus.</p>
-<p>Non rem et. Quia nostrum inventore. Dolor ex sit.</p>
-`,ja:null}},{title:{en:"BioSample",ja:null},body:{en:`<h1>data-from: q4-metagenome-other-dra</h1>
-<p>Nisi molestias et. Ipsum id illo. A ea pariatur.</p>
-<p>Non cupiditate culpa. Qui recusandae porro. Ullam id aperiam.</p>
-<p>Sit et consequatur. Distinctio vero dolore. Iure libero maxime.</p>
-<p>Ut possimus natus. Impedit optio molestiae. Eius repellat laborum.</p>
-`,ja:null}},{title:{en:"DRA",ja:null},body:{en:`<h1>data-from: q4-metagenome-other-dra</h1>
-<p>Enim ullam et. Consequuntur sed dignissimos. Alias ipsa qui.</p>
-<p>Vitae et veniam. Quidem officia dolores. Est expedita eos.</p>
-<p>Quia praesentium dicta. Cumque aliquid non. Fugiat voluptate a.</p>
-<p>Tempora velit praesentium. Magni placeat id. Illo aut nam.</p>
+`,ja:null}}]},"q4-metagenome-binned-dra->g-bp-bs-dra":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Binned metagenome assemblies asserted to known taxonomies (Binned metagenome) should be submitted to <a href="/dra/submission-e.html#Analysis">DRA Analysis.</a>. The raw sequence reads from which the binned metagenomes are derived should be submitted to <a href="/dra/submission-e.html">DRA Run.</a></p>
+<p>Register a BioProject and BioSamples. Samples for raw metagenomic sequencing reads and those for binned metagenoms are necessary.</p>
+<p>The <a href="/ddbj/metagenome-assembly-e.html">Metagenome Assembly</a> page describes how to submit metagenome assemblies categorized by four assembly levels.</p>
+`,ja:null}},{title:{en:"BioProject",ja:null},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> as a <a href="/bioproject/submission-e.html#Project-type">metagenome/environmental project</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort and organizes metagenomic assemblies. The BioProject submission can be done during the DRA submission.</p>
+`,ja:null}},{title:{en:"BioSample",ja:null},body:{en:`<p>Register two samples for unassembled raw reads and binned metagenomes.</p>
+<p>1. Register a sample for unassembled DRA raw reads to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/submission-e.html#Meta_Genomic_Sequences_Sample">MIMS: metagenome/environmental package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample submission can be done during the DRA submission.</p>
+<p>2. Register virtual samples for binned metagenomes to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/submission-e.html#General_Sample">Other samples package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a> before the binned metagenome submission to DRA Analysis. The binned metagenome sample is derived from the metagenomic sample (1) and <a href="/ddbj/metagenome-assembly-e.html#binned-metagenome-biosample">several attributes need to be provided</a>.</p>
+`,ja:null}},{title:{en:"DRA",ja:null},body:{en:`<p>Submit binned metagenome assemblies derived from the raw sequence data in fasta/bam files to the DRA Analysis (Analysis type = "De Novo Assembly"). Include information of analysis software used and organism bin in the description. Submit the Analysis along with the Run which had been registered for the raw reads. Please note that Analysis data are not shared with NCBI/ENA.</p>
+`,ja:null}}]},"q4-metagenome-tls-dra->g-bp-bs-dra":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>A <a href="/ddbj/tls-e.html">Targeted Locus Study (TLS)</a> is a large scale targeted sequencing project for a single gene locus such as 16S rRNA from multiple organisms.</p>
+<ul>
+  <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
+  <li>Register a BioProject and a BioSample during or before the DRA submission.</li>
+</ul>
+`,ja:null}},{title:{en:"BioProject",ja:null},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort. The BioProject submission can be done during the DRA submission.</p>
+`,ja:null}},{title:{en:"BioSample",ja:null},body:{en:`<p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/submission-e.html#Meta_Genomic_Sequences_Sample">MIMS: metagenome/environmental package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample submission can be done during the DRA submission.</p>
+`,ja:null}}]},"q4-metagenome-other-dra->g-bp-bs-dra":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<ul>
+  <li>Register raw metagenomic sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
+  <li>Register a BioProject and a BioSample during or before the DRA submission.</li>
+</ul>
+`,ja:null}},{title:{en:"BioProject",ja:null},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> as a <a href="/bioproject/submission-e.html#Project-type">metagenome/environmental project</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort. The BioProject submission can be done during the DRA submission.</p>
+`,ja:null}},{title:{en:"BioSample",ja:null},body:{en:`<p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/submission-e.html#Meta_Genomic_Sequences_Sample">MIMS: metagenome/environmental package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample submission can be done during the DRA submission.</p>
+`,ja:null}},{title:{en:"DRA",ja:null},body:{en:`<p>Register raw sequencing reads to <a href="/dra/submission-e.html">DRA</a>. 
+<ol>
+  <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
+  <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
+  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+</ol></p>
 `,ja:null}}]},"q4-transcriptome-other-dra->g-bp-bs-dra":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<h1>data-from: q4-transcriptome-other-dra</h1>
 <p>Iure nulla enim. Fuga doloremque sunt. Laudantium dolorem tempora.</p>
 <p>Error eius ab. Repudiandae dolore expedita. Est ab impedit.</p>
@@ -202,7 +169,7 @@ import{T as h,b as j,r as S,L as y,p as r,m as p,s as v,e as D,t as d,y as A,a a
 `,ja:null}}]},"q5-genome-eukaryote-complete-dramss->g-bp-bs-dra-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<ul>
   <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
   <li>Register a BioProject and a BioSample during the DRA submission or before the DRA and genome submissions.</li>
-  <li>Submit finished level genomic sequences of eukaryotes to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a></li>
+  <li>Submit finished level genomic sequences of eukaryotes through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a></li>
 </ul>
 `,ja:null}},{title:{en:"BioProject",ja:null},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort and organizes related DRA and genome data. The BioProject submission can be done during the DRA submission.</p>
 `,ja:null}},{title:{en:"BioSample",ja:null},body:{en:`<p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute-e.html?Core=MIxS&SampleType=MIGS.eu&Package=No_package&definition=definition">MIGS eukaryote package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample contains the source information of the sequenced sample. The BioSample submission can be done during the DRA submission.</p>
@@ -212,7 +179,7 @@ import{T as h,b as j,r as S,L as y,p as r,m as p,s as v,e as D,t as d,y as A,a a
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
   <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
 </ol></p>
-`,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit finished level genomic sequences (non-WGS) of eukaryotes to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include organellar sequences with the genome submission.</p>
+`,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit finished level genomic sequences (non-WGS) of eukaryotes through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include organellar sequences with the genome submission.</p>
 <p>In the MSS submission, you will need to:
 <ul>
   <li>Provide a BioProject and a BioSample that have been registered for the genome submission. A genome must be linked to a BioProject and a BioSample.</li>
@@ -227,7 +194,7 @@ import{T as h,b as j,r as S,L as y,p as r,m as p,s as v,e as D,t as d,y as A,a a
 `,ja:null}}]},"q5-genome-eukaryote-draft-dramss->g-bp-bs-dra-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<ul>
   <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
   <li>Register a BioProject and a BioSample during the DRA submission or before the DRA and draft genome submissions.</li>
-  <li>Submit draft genome sequences of eukaryotes to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a></li>
+  <li>Submit draft genome sequences of eukaryotes through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a></li>
 </ul>
 `,ja:null}},{title:{en:"BioProject",ja:null},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort and organizes related DRA and draft genome data. The BioProject submission can be done during the DRA submission.</p>
 `,ja:null}},{title:{en:"BioSample",ja:null},body:{en:`<p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute-e.html?Core=MIxS&SampleType=MIGS.eu&Package=No_package&definition=definition">MIGS eukaryote package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample contains the source information of the sequenced sample. The BioSample submission can be done during the DRA submission.</p>
@@ -237,7 +204,7 @@ import{T as h,b as j,r as S,L as y,p as r,m as p,s as v,e as D,t as d,y as A,a a
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
   <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
 </ol></p>
-`,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit draft genome sequences of eukaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include organellar sequences with the genome submission.</p>
+`,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit draft genome sequences of eukaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include organellar sequences with the genome submission.</p>
 <p>In the MSS submission, you will need to:
 <ul>
   <li>Provide a BioProject and a BioSample that have been registered for the WGS submission. A WGS genome must be linked to a BioProject and a BioSample.</li>
@@ -252,7 +219,7 @@ import{T as h,b as j,r as S,L as y,p as r,m as p,s as v,e as D,t as d,y as A,a a
 `,ja:null}}]},"q5-genome-prokaryote-draft-dramss->g-bp-bs-dra-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<ul>
   <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
   <li>Register a BioProject and a BioSample during the DRA submission or before the DRA and draft genome submissions.</li>
-  <li>Submit draft genome sequences of prokaryotes to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
+  <li>Submit draft genome sequences of prokaryotes through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
 </ul>
 `,ja:null}},{title:{en:"BioProject",ja:null},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort and organizes related DRA and draft genome data. The BioProject submission can be done during the DRA submission.</p>
 `,ja:null}},{title:{en:"BioSample",ja:null},body:{en:`<p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute-e.html?Core=MIxS&SampleType=MIGS.ba&Package=No_package&definition=definition">MIGS cultured bacteria/archaea package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample contains the source information of the sequenced sample. The BioSample submission can be done during the DRA submission.</p>
@@ -262,7 +229,7 @@ import{T as h,b as j,r as S,L as y,p as r,m as p,s as v,e as D,t as d,y as A,a a
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
   <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
 </ol></p>
-`,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit draft genome sequences of prokaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission.</p>
+`,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit draft genome sequences of prokaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission.</p>
 <p>In the MSS submission, you will need to:
 <ul>
   <li>Provide a BioProject and a BioSample that have been registered for the WGS submission. A WGS genome must be linked to a BioProject and a BioSample.</li>
@@ -295,81 +262,78 @@ import{T as h,b as j,r as S,L as y,p as r,m as p,s as v,e as D,t as d,y as A,a a
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
   <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
 </ol></p>
-`,ja:null}}]},"q4-metagenome-mag-dramss->g-bp-bs-dra-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<h1>data-from: q4-metagenome-mag-dramss</h1>
-<p>Sequi omnis quia. At corrupti nobis. Illum vel provident.</p>
-<p>Aut fuga ad. Adipisci mollitia voluptate. Est beatae enim.</p>
-<p>Voluptas earum aut. Repellat dolorem enim. Praesentium culpa distinctio.</p>
-<p>Maxime ut dolorem. Nam nihil eos. Et ratione accusantium.</p>
-`,ja:null}},{title:{en:"BioProject",ja:null},body:{en:`<h1>data-from: q4-metagenome-mag-dramss</h1>
-<p>Placeat ut tempore. Quis odit dignissimos. Aut est enim.</p>
-<p>Nobis temporibus quidem. Corporis aliquid accusamus. Est sit impedit.</p>
-<p>Ea provident doloribus. Perferendis minus dolor. Rem neque porro.</p>
-<p>Ipsam sit nulla. Magnam nesciunt sit. Reprehenderit consequatur expedita.</p>
-`,ja:null}},{title:{en:"BioSample",ja:null},body:{en:`<h1>data-from: q4-metagenome-mag-dramss</h1>
-<p>Optio aut ut. Ea est est. Expedita tenetur voluptatibus.</p>
-<p>Quia aspernatur omnis. Accusantium repudiandae velit. Quos voluptatibus cumque.</p>
-<p>Explicabo esse ullam. Ut numquam est. Velit et officiis.</p>
-<p>Perspiciatis vel rerum. Laudantium magni dolorem. Sapiente repudiandae delectus.</p>
-`,ja:null}},{title:{en:"DRA",ja:null},body:{en:`<h1>data-from: q4-metagenome-mag-dramss</h1>
-<p>Officiis cupiditate accusamus. Quidem nulla pariatur. Ex voluptatem ducimus.</p>
-<p>Est illum laborum. Ut rerum ea. Repellendus est sit.</p>
-<p>Magnam nisi nemo. Debitis in molestiae. Vero dolor odio.</p>
-<p>Et consectetur pariatur. Maiores quasi dolore. Repellendus ea qui.</p>
-`,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<h1>data-from: q4-metagenome-mag-dramss</h1>
-<p>Earum fugit non. Id libero voluptatem. Sit sint qui.</p>
-<p>Sit assumenda doloribus. Fuga quia sed. Omnis quis quae.</p>
-<p>Enim temporibus qui. Reiciendis ea fugiat. Nihil unde nostrum.</p>
-<p>Maxime eum ex. Mollitia animi facilis. Voluptatum at provident.</p>
-`,ja:null}}]},"q4-metagenome-tls-dramss->g-bp-bs-dra-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<h1>data-from: q4-metagenome-tls-dramss</h1>
-<p>Sunt sunt accusamus. Consectetur minima officia. Ad occaecati sed.</p>
-<p>Omnis illum sint. Aut dignissimos ipsum. Consequuntur quia reiciendis.</p>
-<p>Eligendi quasi nostrum. Dolor harum optio. Adipisci architecto quos.</p>
-<p>Maiores voluptas sapiente. Pariatur consequatur voluptate. Deleniti illo dolorem.</p>
-`,ja:null}},{title:{en:"BioProject",ja:null},body:{en:`<h1>data-from: q4-metagenome-tls-dramss</h1>
-<p>Ipsa totam et. Ex quod odit. Suscipit quam ad.</p>
-<p>Voluptate vitae voluptatem. Voluptatum vel voluptas. Magni et eaque.</p>
-<p>Maxime minima voluptate. Excepturi aut magni. Veniam magnam officiis.</p>
-<p>Iste et ut. Sunt quo velit. Repudiandae non non.</p>
-`,ja:null}},{title:{en:"BioSample",ja:null},body:{en:`<h1>data-from: q4-metagenome-tls-dramss</h1>
-<p>Velit ad libero. Aliquid est quisquam. Aut ut enim.</p>
-<p>Qui consequatur qui. Non aut eos. Reprehenderit minima vel.</p>
-<p>Sint voluptas assumenda. Fugit reiciendis sint. Ea ut totam.</p>
-<p>Labore eum laborum. Natus rerum cum. Sint enim saepe.</p>
-`,ja:null}},{title:{en:"DRA",ja:null},body:{en:`<h1>data-from: q4-metagenome-tls-dramss</h1>
-<p>Velit dignissimos architecto. Odit architecto modi. Et qui consequatur.</p>
-<p>Rerum hic asperiores. Quaerat perspiciatis et. Facere sunt nostrum.</p>
-<p>Sit odit inventore. Veniam aliquid culpa. Iure saepe soluta.</p>
-<p>Facere eligendi quia. Aperiam commodi qui. Est dicta ipsum.</p>
-`,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<h1>data-from: q4-metagenome-tls-dramss</h1>
-<p>Mollitia voluptatem maxime. Laudantium et veritatis. In amet quod.</p>
-<p>Ipsam rem consequuntur. Debitis optio mollitia. Quo distinctio consequatur.</p>
-<p>Sunt quasi repellat. Voluptatem sit temporibus. Id aut labore.</p>
-<p>Sed voluptatem dolorem. Commodi ut perspiciatis. Corrupti aliquam dolor.</p>
-`,ja:null}}]},"q4-metagenome-other-dramss->g-bp-bs-dra-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<h1>data-from: q4-metagenome-other-dramss</h1>
-<p>Ab modi dicta. Ut velit fugit. Minima vero quidem.</p>
-<p>Beatae dignissimos corrupti. Eveniet possimus quia. Ex quisquam omnis.</p>
-<p>Odit quod unde. Cum veritatis rerum. Debitis aliquid est.</p>
-<p>Cum incidunt sit. Aut ut voluptas. Natus vel aperiam.</p>
-`,ja:null}},{title:{en:"BioProject",ja:null},body:{en:`<h1>data-from: q4-metagenome-other-dramss</h1>
-<p>Velit voluptate doloribus. Animi nulla modi. Occaecati dolorem qui.</p>
-<p>Est et deleniti. Tenetur accusantium illo. Eos et ducimus.</p>
-<p>Qui est non. Officiis deleniti ut. Delectus voluptatem nihil.</p>
-<p>Architecto hic vel. Necessitatibus deserunt pariatur. Laboriosam non et.</p>
-`,ja:null}},{title:{en:"BioSample",ja:null},body:{en:`<h1>data-from: q4-metagenome-other-dramss</h1>
-<p>Vero ipsa tempora. Explicabo occaecati dolorem. Explicabo voluptas veritatis.</p>
-<p>Eligendi ut qui. Modi voluptatem eos. Aliquam ut vero.</p>
-<p>Alias eum exercitationem. Non incidunt iusto. Ratione ut nihil.</p>
-<p>Reprehenderit neque sunt. Consequatur nihil enim. Repudiandae occaecati doloremque.</p>
-`,ja:null}},{title:{en:"DRA",ja:null},body:{en:`<h1>data-from: q4-metagenome-other-dramss</h1>
-<p>Enim porro non. Iure voluptatem ipsam. Reiciendis nisi sequi.</p>
-<p>Expedita reiciendis reprehenderit. Est rerum sed. Id esse omnis.</p>
-<p>Repellendus sed dignissimos. Suscipit delectus qui. Vel ex soluta.</p>
-<p>Alias magnam recusandae. Quasi aspernatur voluptates. Est quia est.</p>
-`,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<h1>data-from: q4-metagenome-other-dramss</h1>
-<p>Dolores delectus quo. Fugit dignissimos possimus. Repudiandae ut quae.</p>
-<p>Aut molestiae in. Laborum voluptas id. Repellat doloribus dicta.</p>
-<p>Voluptate veniam quis. Fugit ipsam molestiae. Quo at ipsam.</p>
-<p>Corporis eaque rerum. Est corrupti voluptate. Animi voluptatem laboriosam.</p>
+`,ja:null}}]},"q4-metagenome-mag-dramss->g-bp-bs-dra-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>A highest quality representative binned assembly (Metagenome-Assembled Genome, MAG) predicted to be derived from taxonomically defined organisms should be submitted to DDBJ through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a> as genome entries of <a href="/ddbj/env-e.html">ENV</a> division.</p>
+<ul>
+  <li>Register unassembled raw reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
+  <li>Register a BioProject and BioSamples. Two samples, one is for raw metagenomic sequencing reads and the other is for a MAG are necessary.</li>
+  <li>Submit MAG through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</li>
+</ul>         
+<p>The <a href="/ddbj/metagenome-assembly-e.html">Metagenome Assembly</a> page describes how to submit metagenome assemblies categorized by four assembly levels.</p>
+`,ja:null}},{title:{en:"BioProject",ja:null},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> as a <a href="/bioproject/submission-e.html#Project-type">metagenome/environmental project</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. Choose the most appropriate "xyz metagenome" (e.g., soil metagenome) from <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/">metagenome organism names</a> in the taxonomy database. The BioProject describes the goal of your research effort and organizes related metagenomic assemblies. The BioProject submission can be done during the DRA submission.</p>
+`,ja:null}},{title:{en:"BioSample",ja:null},body:{en:`<p>Register two samples, one is for unassembled raw reads and the other is for a MAG.</p>
+<p>1. Register a sample for unassembled DRA raw reads to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/submission-e.html#Meta_Genomic_Sequences_Sample">MIMS: metagenome/environmental package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample submission can be done during the DRA submission.</p>
+<p>2. Register a virtual sample for MAG to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/submission-e.html#General_Sample">Other samples package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a> before the MAG submission. The MAG sample is derived from the metagenomic sample (1) and <a href="/ddbj/metagenome-assembly-e.html#mag-biosample">several MAG-specific attributes need to be described</a>.</p>
+`,ja:null}},{title:{en:"DRA",ja:null},body:{en:`<p>Register unassembled raw sequencing reads to <a href="/dra/submission-e.html">DRA</a>.</p>
+<ol>
+  <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
+  <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
+  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+</ol>
+`,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit the MAG as a genome entry of <a href="/ddbj/env-e.html">ENV division</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p> 
+<p>In the MSS submission, you will need to:
+   <ul>
+     <li>Provide a BioProject and a virtual BioSample that have been registered for the MAG submission. A MAG must be linked to a BioProject and a BioSample.</li>
+     <li>Annotation is optional. If you submit a MAG with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
+     <li>Provide metadata on the <a href="/ddbj/metagenome-assembly-e.html#mag-ddbj">sequencing and assembly of the genome</a>.</li>
+     <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
+     <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
+     <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+   </ul>
+   </p>
+<p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the MAG.</p>
+`,ja:null}}]},"q4-metagenome-tls-dramss->g-bp-bs-dra-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>A <a href="/ddbj/tls-e.html">Targeted Locus Study (TLS)</a> is a large scale targeted sequencing project for a single gene locus such as 16S rRNA from multiple organisms. Submit TLS data to DDBJ through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
+<ul>
+  <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
+  <li>Register a BioProject and a BioSample during or before the DRA submission.</li>
+  <li>Submit <a href="/ddbj/tls-e.html">Targeted Locus Study (TLS)</a> sequences through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</li>
+</ul>
+`,ja:null}},{title:{en:"BioProject",ja:null},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort.</p>
+`,ja:null}},{title:{en:"BioSample",ja:null},body:{en:`<p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/submission-e.html#Meta_Genomic_Sequences_Sample">MIMS: metagenome/environmental package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a> before the TLS submission.</p>
+`,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit the <a href="/ddbj/tls-e.html">TLS</a> data through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p> 
+<p>In the MSS submission, you will need to:
+   <ul>
+     <li>Provide a BioProject and a BioSample that have been registered for the TLS submission.</li>           
+     <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
+     <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
+     <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+   </ul>
+   </p>
+<p><a href="/ddbj/tls-e.html">Accession numbers with a 4-letter prefix and 8 digits</a> will be assigned to the TLS sequences.</p>
+`,ja:null}}]},"q4-metagenome-other-dramss->g-bp-bs-dra-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit metagenomic, environmental sequences to DDBJ through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a> as <a href="/ddbj/env-e.html">ENV</a> division sequences.</p>
+<ul>
+  <li>Register a BioProject and a BioSample for metagenomic sequences.</li>
+  <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
+  <li>Submit metagenomic sequences through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a> as <a href="/ddbj/env-e.html">ENV</a> division sequences.</li>
+</ul>         
+`,ja:null}},{title:{en:"BioProject",ja:null},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> as a <a href="/bioproject/submission-e.html#Project-type">metagenome/environmental project</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort and organizes raw DRA data and assembled sequences. The BioProject submission can be done during the DRA submission.</p>
+`,ja:null}},{title:{en:"BioSample",ja:null},body:{en:`<p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/submission-e.html#Meta_Genomic_Sequences_Sample">MIMS: metagenome/environmental package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample submission can be done during the DRA submission.</p>
+`,ja:null}},{title:{en:"DRA",ja:null},body:{en:`<p>Register raw sequencing reads to <a href="/dra/submission-e.html">DRA</a>. 
+<ol>
+  <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
+  <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
+  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+</ol></p>
+`,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit metagenomic sequences as <a href="/ddbj/env-e.html">ENV division</a> sequences through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p> 
+<p>In the MSS submission, you will need to:
+   <ul>
+     <li>Provide a BioProject and a BioSample that have been registered for the DRA submission.</li>
+     <li>Annotation is optional. If you submit a MAG with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
+     <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
+     <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
+     <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+   </ul>
+   </p>
+<p><a href="/ddbj/env-e.html">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the MAG.</p>
 `,ja:null}}]},"q3-transcriptome-tsa->g-bp-bs-dra-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<h1>data-from: q3-transcriptome-tsa</h1>
 <p>Nihil et libero. Aut quia enim. Doloremque itaque nihil.</p>
 <p>Alias aliquid rerum. Odio quo corporis. Sit vel praesentium.</p>
@@ -462,11 +426,11 @@ import{T as h,b as j,r as S,L as y,p as r,m as p,s as v,e as D,t as d,y as A,a a
 </ul>
 `,ja:null}}]},"q5-genome-eukaryote-complete-mss->g-bp-bs-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<ul>
   <li>Register a BioProject and a BioSample before the genome submission.</li>
-  <li>Submit finished level genomic sequences of eukaryotes to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a></li>
+  <li>Submit finished level genomic sequences of eukaryotes through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a></li>
 </ul>
 `,ja:null}},{title:{en:"BioProject",ja:null},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort.</p>
 `,ja:null}},{title:{en:"BioSample",ja:null},body:{en:`<p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute-e.html?Core=MIxS&SampleType=MIGS.eu&Package=No_package&definition=definition">MIGS eukaryote package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample contains the source information of the sequenced sample.</p>
-`,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit finished level genomic sequences (non-WGS) of eukaryotes to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include organellar sequences with the genome submission.</p>
+`,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit finished level genomic sequences (non-WGS) of eukaryotes through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include organellar sequences with the genome submission.</p>
 <p>In the MSS submission, you will need to:
 <ul>
   <li>Provide a BioProject and a BioSample that have been registered for the genome submission. A genome must be linked to a BioProject and a BioSample.</li>
@@ -480,11 +444,11 @@ import{T as h,b as j,r as S,L as y,p as r,m as p,s as v,e as D,t as d,y as A,a a
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the finished level geonme sequencess.</p>       
 `,ja:null}}]},"q5-genome-eukaryote-draft-mss->g-bp-bs-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<ul>
   <li>Register a BioProject and a BioSample during or before the draft genome submission.</li>
-  <li>Submit draft genome sequences of eukaryotes to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a></li>
+  <li>Submit draft genome sequences of eukaryotes through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a></li>
 </ul>
 `,ja:null}},{title:{en:"BioProject",ja:null},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort.</p>
 `,ja:null}},{title:{en:"BioSample",ja:null},body:{en:`<p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute-e.html?Core=MIxS&SampleType=MIGS.eu&Package=No_package&definition=definition">MIGS eukaryote package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample contains the source information of the sequenced sample.</p>
-`,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit draft genome sequences of eukaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include organellar sequences with the genome submission.</p>
+`,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit draft genome sequences of eukaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include organellar sequences with the genome submission.</p>
 <p>In the MSS submission, you will need to:
 <ul>
   <li>Provide a BioProject and a BioSample that have been registered for the WGS submission. A WGS genome must be linked to a BioProject and a BioSample.</li>
@@ -498,11 +462,11 @@ import{T as h,b as j,r as S,L as y,p as r,m as p,s as v,e as D,t as d,y as A,a a
 <p><a href="/ddbj/wgs-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., ZZZZ01000001) will be assigned to WGS sequences.</p>
 `,ja:null}}]},"q5-genome-prokaryote-complete-mss->g-bp-bs-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<ul>
   <li>Register a BioProject and a BioSample before the genome submission.</li>
-  <li>Submit complete genome sequences of prokaryotes to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
+  <li>Submit complete genome sequences of prokaryotes through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
 </ul>
 `,ja:null}},{title:{en:"BioProject",ja:null},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort.</p>
 `,ja:null}},{title:{en:"BioSample",ja:null},body:{en:`<p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute-e.html?Core=MIxS&SampleType=MIGS.ba&Package=No_package&definition=definition">MIGS cultured bacteria/archaea package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample contains the source information of the sequenced sample.</p>
-`,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit complete genome sequences (non-WGS) of prokaryotes to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will shorten submission processing time by annotating prokaryotic genomes and generating submission-ready files.</p>
+`,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit complete genome sequences (non-WGS) of prokaryotes through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will shorten submission processing time by annotating prokaryotic genomes and generating submission-ready files.</p>
 <p>In the MSS submission, you will need to:
 <ul>
   <li>Provide a BioProject and a BioSample that have been registered for the genome submission. A genome must be linked to a BioProject and a BioSample.</li>
@@ -514,11 +478,11 @@ import{T as h,b as j,r as S,L as y,p as r,m as p,s as v,e as D,t as d,y as A,a a
 `,ja:null}}]},"q5-genome-prokaryote-draft-mss->g-bp-bs-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<ul>
   <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
   <li>Register a BioProject and a BioSample before the draft genome submissions.</li>
-  <li>Submit draft genome sequences of prokaryotes to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
+  <li>Submit draft genome sequences of prokaryotes through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
 </ul>
 `,ja:null}},{title:{en:"BioProject",ja:null},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort.</p>
 `,ja:null}},{title:{en:"BioSample",ja:null},body:{en:`<p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute-e.html?Core=MIxS&SampleType=MIGS.ba&Package=No_package&definition=definition">MIGS cultured bacteria/archaea package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample contains the source information of the sequenced sample.</p>
-`,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit draft genome sequences of prokaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> to the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission.</p>
+`,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit draft genome sequences of prokaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission.</p>
 <p>In the MSS submission, you will need to:
 <ul>
   <li>Provide a BioProject and a BioSample that have been registered for the WGS submission. A WGS genome must be linked to a BioProject and a BioSample.</li>
@@ -527,26 +491,6 @@ import{T as h,b as j,r as S,L as y,p as r,m as p,s as v,e as D,t as d,y as A,a a
 </ul>
 </p>
 <p><a href="/ddbj/wgs-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., ZZZZ01000001) will be assigned to WGS sequences.</p>
-`,ja:null}}]},"q4-metagenome-mag-mss->g-bp-bs-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<h1>data-from: q4-metagenome-mag-mss</h1>
-<p>Rerum voluptate sequi. Quis sunt fuga. Ducimus minima vero.</p>
-<p>Repellat est accusamus. Eos ut provident. Ut quisquam autem.</p>
-<p>Deleniti quia qui. Voluptate architecto aut. Sit alias quae.</p>
-<p>Voluptas est dicta. Eligendi architecto occaecati. Molestias porro aut.</p>
-`,ja:null}},{title:{en:"BioProject",ja:null},body:{en:`<h1>data-from: q4-metagenome-mag-mss</h1>
-<p>Voluptatem magni id. Ullam reprehenderit quo. Voluptatem sit eligendi.</p>
-<p>Sint qui vel. Nemo laborum aut. Ut aperiam quos.</p>
-<p>Deleniti qui officia. Excepturi quidem explicabo. Dolorum nihil aliquam.</p>
-<p>Aspernatur pariatur incidunt. Temporibus et sint. Aspernatur doloremque et.</p>
-`,ja:null}},{title:{en:"BioSample",ja:null},body:{en:`<h1>data-from: q4-metagenome-mag-mss</h1>
-<p>Nam at nostrum. Omnis quia dignissimos. Quas sint omnis.</p>
-<p>Tempore quia officiis. Blanditiis corrupti nihil. Incidunt doloribus nisi.</p>
-<p>Qui vero dignissimos. Quia ipsa natus. Aut suscipit eaque.</p>
-<p>Ab ipsa modi. Ipsa tenetur eum. Cupiditate nihil architecto.</p>
-`,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<h1>data-from: q4-metagenome-mag-mss</h1>
-<p>Sunt sint et. Ducimus hic nihil. Qui debitis velit.</p>
-<p>Qui ut sunt. Fugit tempore doloremque. Aut est architecto.</p>
-<p>Autem nostrum consequatur. Consequuntur nihil dolorem. Facere aut eum.</p>
-<p>Ipsam et sunt. Eum expedita est. Aliquam nisi ducimus.</p>
 `,ja:null}}]},"q4-metagenome-other-mss->g-bp-bs-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<h1>data-from: q4-metagenome-other-mss</h1>
 <p>Porro dicta itaque. In doloribus cum. Praesentium magni molestiae.</p>
 <p>Et reprehenderit aspernatur. Consequatur porro et. Commodi consectetur et.</p>
@@ -840,4 +784,4 @@ import{T as h,b as j,r as S,L as y,p as r,m as p,s as v,e as D,t as d,y as A,a a
 <p>Excepturi voluptas officiis. Ut esse ex. Architecto voluptatem recusandae.</p>
 <p>Suscipit aliquid dolorem. Repellat aut modi. Dolorem quidem quis.</p>
 <p>Eaque et occaecati. Nemo quisquam qui. Asperiores veritatis iure.</p>
-`,ja:null}}]}};const C=P;function T(i){const e=C[i];if(!e)throw new Error(`goal not found: id=${i}`);return e}const O=S`:host{--max-height:calc(100vh - 2em)}.container{display:grid;grid-template:"header     header" auto "nav        content" 1fr/min-content 1fr;max-height:var(--max-height)}.container>h1{grid-area:header}.container>nav{grid-area:nav;text-align:center}.container>main{grid-area:content;overflow:auto}.space-between{display:flex;justify-content:space-between}.no-margin-around-y>:first-child{margin-top:0;padding-top:0}.no-margin-around-y>:last-child{margin-bottom:0;padding-bottom:0}.tabs>a{display:block;padding:calc(.5em / 1.2) calc(1.75em / 1.2);border-style:solid;border-color:transparent;border-width:3px 0;transition:background-color .2s,border-color .2s}.tabs>a:hover:not(.active){background-color:#eee}.tabs>a.active{border-bottom-color:#ff7370;text-decoration:none;color:inherit;font-weight:700}svg.icon{height:1em;width:1em;vertical-align:-.1em}`;var V=Object.defineProperty,Q=Object.getOwnPropertyDescriptor,o=(i,e,t,a)=>{for(var s=a>1?void 0:a?Q(e,t):e,l=i.length-1,m;l>=0;l--)(m=i[l])&&(s=(a?m(e,t,s):m(s))||s);return a&&s&&V(e,t,s),s},g=(i,e,t)=>{if(!e.has(i))throw TypeError("Cannot "+t)},q=(i,e,t)=>(g(i,e,"read from private field"),t?t.call(i):e.get(i)),k=(i,e,t)=>{if(e.has(i))throw TypeError("Cannot add the same private member more than once");e instanceof WeakSet?e.add(i):e.set(i,t)},N=(i,e,t,a)=>(g(i,e,"write to private field"),a?a.call(i,t):e.set(i,t),t),u;let n=class extends y(w){constructor(){super(...arguments);k(this,u,void 0)}get section(){return q(this,u)||this.goal?.sections[0]}set section(i){const e=q(this,u);N(this,u,i),this.requestUpdate("section",e)}get previousSection(){const{goal:i,section:e}=this;if(!i||!e)return;const t=i.sections.indexOf(e);return t<=0?void 0:i.sections[t-1]}get nextSection(){const{goal:i,section:e}=this;if(!i||!e)return;const t=i.sections.indexOf(e);return t===-1||t>=i.sections.length?void 0:i.sections[t+1]}render(){const{goal:i}=this;return i?r`<div class="container border fade"><h1 class="box bg-primary my-0 font-large">${_} ${p("Submission Instructions")}</h1><nav class="box tabs font-heading font-large">${i.sections.map(e=>r`<a @click="${this.selectSection(e)}" class="${this.section===e?"active":""}" href="#">${this.localize(e.title)}</a>`)}</nav><main ${M()} class="box stack">${this.sectionTemplate()}</main></div>`:""}sectionTemplate(){if(!this.section)return"";const{body:i}=this.section;return r`<div class="no-margin-around-y">${x(this.localize(i))}</div><nav class="space-between"><div>${this.sectionLinkTemplate(`\xAB ${p("Prev")}`,this.previousSection)}</div><div>${this.sectionLinkTemplate(`${p("Next")} \xBB`,this.nextSection)}</div></nav>`}sectionLinkTemplate(i,e){return e?r`<a @click="${this.selectSection(e)}" href="#">${i}</a>`:""}selectSection(i){return e=>{e.preventDefault(),this.section=i}}};u=new WeakMap,n.styles=[v,O],o([D({converter:G})],n.prototype,"goal",2),o([d()],n.prototype,"section",1),o([d()],n.prototype,"previousSection",1),o([d()],n.prototype,"nextSection",1),n=o([B(),R("submission-wizard-goal")],n);function G(i){return i?T(i):void 0}const _=A`<svg class="icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M39 9.75V16.1786C39 18.2496 32.2843 19.9286 24 19.9286C15.7157 19.9286 9 18.2496 9 16.1786V9.75C9 7.67893 15.7157 6 24 6C32.2843 6 39 7.67893 39 9.75ZM9.62114 19.7144C11.4651 21.2634 17.2049 22.393 24 22.393C30.7951 22.393 36.5349 21.2634 38.3789 19.7144C38.783 20.0538 39 20.4134 39 20.7857V27.2143C39 29.2853 32.2843 30.9643 24 30.9643C15.7157 30.9643 9 29.2853 9 27.2143V20.7858C9.00002 20.4135 9.21703 20.0538 9.62114 19.7144ZM24 33.6786C17.205 33.6786 11.4652 32.549 9.62118 31C9.21703 31.3395 9 31.6991 9 32.0714V38.5C9 40.5711 15.7157 42.25 24 42.25C32.2843 42.25 39 40.5711 39 38.5V32.0714C39 31.6991 38.783 31.3395 38.3788 31C36.5348 32.549 30.795 33.6786 24 33.6786ZM32.3333 37.3333C32.3333 37.9777 31.811 38.5 31.1667 38.5C30.5223 38.5 30 37.9777 30 37.3333C30 36.689 30.5223 36.1667 31.1667 36.1667C31.811 36.1667 32.3333 36.689 32.3333 37.3333ZM35.8333 37.3333C36.4777 37.3333 37 36.811 37 36.1667C37 35.5223 36.4777 35 35.8333 35C35.189 35 34.6667 35.5223 34.6667 36.1667C34.6667 36.811 35.189 37.3333 35.8333 37.3333Z" fill="#333333"/></svg>`;export{n as SubmissionWizardGoal};
+`,ja:null}}]}};const T=I;function C(i){const e=T[i];if(!e)throw new Error(`goal not found: id=${i}`);return e}const k=q`:host{--max-height:calc(100vh - 2em)}.container{display:grid;grid-template:"header     header" auto "nav        content" 1fr/min-content 1fr;max-height:var(--max-height)}.container>h1{grid-area:header}.container>nav{grid-area:nav;text-align:center}.container>main{grid-area:content;overflow:auto}.space-between{display:flex;justify-content:space-between}.no-margin-around-y>:first-child{margin-top:0;padding-top:0}.no-margin-around-y>:last-child{margin-bottom:0;padding-bottom:0}.tabs>a{display:block;padding:calc(.5em / 1.2) calc(1.75em / 1.2);border-style:solid;border-color:transparent;border-width:3px 0;transition:background-color .2s,border-color .2s}.tabs>a:hover:not(.active){background-color:#eee}.tabs>a.active{border-bottom-color:#ff7370;text-decoration:none;color:inherit;font-weight:700}svg.icon{height:1em;width:1em;vertical-align:-.1em}`;var G=Object.defineProperty,O=Object.getOwnPropertyDescriptor,o=(i,e,a,t)=>{for(var n=t>1?void 0:t?O(e,a):e,u=i.length-1,m;u>=0;u--)(m=i[u])&&(n=(t?m(e,a,n):m(n))||n);return t&&n&&G(e,a,n),n},g=(i,e,a)=>{if(!e.has(i))throw TypeError("Cannot "+a)},j=(i,e,a)=>(g(i,e,"read from private field"),a?a.call(i):e.get(i)),N=(i,e,a)=>{if(e.has(i))throw TypeError("Cannot add the same private member more than once");e instanceof WeakSet?e.add(i):e.set(i,a)},_=(i,e,a,t)=>(g(i,e,"write to private field"),t?t.call(i,a):e.set(i,a),a),r;let s=class extends y(A){constructor(){super(...arguments);N(this,r,void 0)}get section(){return j(this,r)||this.goal?.sections[0]}set section(i){const e=j(this,r);_(this,r,i),this.requestUpdate("section",e)}get previousSection(){const{goal:i,section:e}=this;if(!i||!e)return;const a=i.sections.indexOf(e);return a<=0?void 0:i.sections[a-1]}get nextSection(){const{goal:i,section:e}=this;if(!i||!e)return;const a=i.sections.indexOf(e);return a===-1||a>=i.sections.length?void 0:i.sections[a+1]}render(){const{goal:i}=this;return i?l`<div class="container border fade"><h1 class="box bg-primary my-0 font-large">${Q} ${p("Submission Instructions")}</h1><nav class="box tabs font-heading font-large">${i.sections.map(e=>l`<a @click="${this.selectSection(e)}" class="${this.section===e?"active":""}" href="#">${this.localize(e.title)}</a>`)}</nav><main ${x()} class="box stack">${this.sectionTemplate()}</main></div>`:""}sectionTemplate(){if(!this.section)return"";const{body:i}=this.section;return l`<div class="no-margin-around-y">${P(this.localize(i))}</div><nav class="space-between"><div>${this.sectionLinkTemplate(`\xAB ${p("Prev")}`,this.previousSection)}</div><div>${this.sectionLinkTemplate(`${p("Next")} \xBB`,this.nextSection)}</div></nav>`}sectionLinkTemplate(i,e){return e?l`<a @click="${this.selectSection(e)}" href="#">${i}</a>`:""}selectSection(i){return e=>{e.preventDefault(),this.section=i}}};r=new WeakMap,s.styles=[v,k],o([w({converter:V})],s.prototype,"goal",2),o([d()],s.prototype,"section",1),o([d()],s.prototype,"previousSection",1),o([d()],s.prototype,"nextSection",1),s=o([B(),R("submission-wizard-goal")],s);function V(i){return i?C(i):void 0}const Q=D`<svg class="icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M39 9.75V16.1786C39 18.2496 32.2843 19.9286 24 19.9286C15.7157 19.9286 9 18.2496 9 16.1786V9.75C9 7.67893 15.7157 6 24 6C32.2843 6 39 7.67893 39 9.75ZM9.62114 19.7144C11.4651 21.2634 17.2049 22.393 24 22.393C30.7951 22.393 36.5349 21.2634 38.3789 19.7144C38.783 20.0538 39 20.4134 39 20.7857V27.2143C39 29.2853 32.2843 30.9643 24 30.9643C15.7157 30.9643 9 29.2853 9 27.2143V20.7858C9.00002 20.4135 9.21703 20.0538 9.62114 19.7144ZM24 33.6786C17.205 33.6786 11.4652 32.549 9.62118 31C9.21703 31.3395 9 31.6991 9 32.0714V38.5C9 40.5711 15.7157 42.25 24 42.25C32.2843 42.25 39 40.5711 39 38.5V32.0714C39 31.6991 38.783 31.3395 38.3788 31C36.5348 32.549 30.795 33.6786 24 33.6786ZM32.3333 37.3333C32.3333 37.9777 31.811 38.5 31.1667 38.5C30.5223 38.5 30 37.9777 30 37.3333C30 36.689 30.5223 36.1667 31.1667 36.1667C31.811 36.1667 32.3333 36.689 32.3333 37.3333ZM35.8333 37.3333C36.4777 37.3333 37 36.811 37 36.1667C37 35.5223 36.4777 35 35.8333 35C35.189 35 34.6667 35.5223 34.6667 36.1667C34.6667 36.811 35.189 37.3333 35.8333 37.3333Z" fill="#333333"/></svg>`;export{s as SubmissionWizardGoal};
