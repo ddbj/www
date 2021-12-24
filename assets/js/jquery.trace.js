@@ -1293,304 +1293,115 @@ $(function() {
   var anchor = "";
   if ( url.split('#')[1] ) anchor = "#" + url.split('#')[1];
 
-  var poc_html = '<ul class="menu single_book">';
+  var rule_html = '<ul class="menu single_book">';
   if ( pathname.match(/-e\.html/) ) la = "en";	
   
   if ( pathname.match(/\/ddbj\/validator/) ){
   
     // Parser
-    $.getJSON("https://spreadsheets.google.com/feeds/list/1djQ52hOYXFRQru3-CJZyvzANaZOZ_TuuQW8i0IKg5Ls/1/public/values?alt=json", function(data) {
+    $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1djQ52hOYXFRQru3-CJZyvzANaZOZ_TuuQW8i0IKg5Ls/values/Parser?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
-      var entries = data.feed.entry;
       var rule_html = "";
-      var poc_html = '<ul class="menu books">';
-      for(var i = 0; i < entries.length; i++) {
-        var rule_class = entries[i].gsx$ruleclass.$t;
-        var rule_id = entries[i].gsx$ruleid.$t;
-        var level = entries[i].gsx$level.$t;
-        var type = entries[i].gsx$type.$t;
-        var file = entries[i].gsx$file.$t;      
-        var message = entries[i].gsx$message.$t;
-        var description = entries[i].gsx$description.$t;
-        var description_ja = entries[i].gsx$descriptionja.$t;
 
+      for(var i = 1; i < data.values.length; i++) {
+       
+        var entries = data.values[i];
+
+        var rule_class = entries[0];
+        var rule_id = entries[1];
+        var level = entries[2];
+        var type = entries[3];
+        var file = entries[4];
+        var message = entries[5];
+        var description = entries[6];
+        var description_ja = entries[7];
+   
         rule_html += '<dl>';
-        if ( file ){
-          rule_html += '<dt id="' + rule_id + '"><div class="rule-message">' + rule_id + ':' + level + ':' + type + ':' + file + ':' +  message + '</div></dt>';
+        
+        if ( file ){          
+          rule_html += '<dt id="' + rule_id + '"><div class="rule-message"><a href="#' + rule_id + '">' + rule_id + '</a>:' + level + ':' + type + ':' + file + ':' +  message + '</div></dt>';
         } else {
-          rule_html += '<dt id="' + rule_id + '"><div class="rule-message">' + rule_id + ':' + level + ':' + type + ':' +  message + '</div></dt>';        	
+          rule_html += '<dt id="' + rule_id + '"><div class="rule-message"><a href="#' + rule_id + '">' + rule_id + '</a>:' + level + ':' + type + ':' +  message + '</div></dt>';
         }
-        if (la == "ja"){				
+
+        if (la == "ja"){        
           rule_html += '<dd><div class="rule-description"> ' + description_ja + '</div></dd>';
         } else {
           rule_html += '<dd><div class="rule-description"> ' + description + '</div></dd>';
         }
         rule_html += "</dl>";
-        if ( i == 0) {
-          poc_html += '<li><a href="#' + rule_class + '" class="toc_chapter">' + rule_class + '</a></li>';
-          poc_html += '<ul>';
-        }
-        poc_html += '<li><a href="#' + rule_id + '" class="toc_chapter">' + rule_id + '</a></li>';
-      } // for
-      poc_html += '</ul></ul>';
-      $("#Parser-rule").prepend(rule_html);	
-    $('#in_this_page h2').after(poc_html);
 
-    // anchor 指定時にページ内遷移
-    if (anchor && $(anchor).length){
-    $(document).scrollTop( $(anchor).offset().top ); 
-    }	
+      }
+
+      $("#Parser-rule").prepend(rule_html);
 
     }); // $.getJSON..Parser 
 
     // transChecker
-    $.getJSON("https://spreadsheets.google.com/feeds/list/1djQ52hOYXFRQru3-CJZyvzANaZOZ_TuuQW8i0IKg5Ls/2/public/values?alt=json", function(data) {
+    $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1djQ52hOYXFRQru3-CJZyvzANaZOZ_TuuQW8i0IKg5Ls/values/transChecker?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
-      var entries = data.feed.entry;
       var rule_html = "";
-      var poc_html = '<ul class="menu books">';
-      for(var i = 0; i < entries.length; i++) {
-        var rule_class = entries[i].gsx$ruleclass.$t;
-        var rule_id = entries[i].gsx$ruleid.$t;
-        var level = entries[i].gsx$level.$t;
-        var message = entries[i].gsx$message.$t;
-        var description = entries[i].gsx$description.$t;
-        var description_ja = entries[i].gsx$descriptionja.$t;
 
+      for(var i = 1; i < data.values.length; i++) {
+       
+        var entries = data.values[i];
+
+        var rule_class = entries[0];
+        var rule_id = entries[1];
+        var level = entries[2];
+        var message = entries[3];
+        var description = entries[4];
+        var description_ja = entries[5];
+   
         rule_html += '<dl>';
-        rule_html += '<dt id="' + rule_id + '"><div class="rule-message">' + rule_id + ':' + level + ':' +  message + '</div></dt>';
-
-        if (la == "ja"){				
+        rule_html += '<dt id="' + rule_id + '"><div class="rule-message"><a href="#' + rule_id + '">' + rule_id + '</a>:' + level + ':' +  message + '</div></dt>';
+        
+        if (la == "ja"){        
           rule_html += '<dd><div class="rule-description"> ' + description_ja + '</div></dd>';
         } else {
-         rule_html += '<dd><div class="rule-description"> ' + description + '</div></dd>';
+          rule_html += '<dd><div class="rule-description"> ' + description + '</div></dd>';
         }
         rule_html += "</dl>";
-        if ( i == 0) {
-          poc_html += '<li><a href="#' + rule_class + '" class="toc_chapter">' + rule_class + '</a></li>';
-          poc_html += '<ul>';
-        }
         
-        poc_html += '<li><a href="#' + rule_id + '" class="toc_chapter">' + rule_id + '</a></li>';
-
-      } // for
-      
-      poc_html += '</ul></ul>';
+      }
 
       $("#transChecker-rule").prepend(rule_html);
-    $('#in_this_page h2').after(poc_html);
 
-    // anchor 指定時にページ内遷移
-    if (anchor && $(anchor).length){
-    $(document).scrollTop( $(anchor).offset().top ); 
-    }	
+    }); // $.getJSON. transChecker
 
-    }); // $.getJSON..transChecker 
+    // AGPParser
+    $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1djQ52hOYXFRQru3-CJZyvzANaZOZ_TuuQW8i0IKg5Ls/values/AGP Parser?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
-    // AGP Parser
-    $.getJSON("https://spreadsheets.google.com/feeds/list/1djQ52hOYXFRQru3-CJZyvzANaZOZ_TuuQW8i0IKg5Ls/3/public/values?alt=json", function(data) {
-
-      var entries = data.feed.entry;
       var rule_html = "";
-      var poc_html = '<ul class="menu books">';
-      for(var i = 0; i < entries.length; i++) {
-        var rule_class = entries[i].gsx$ruleclass.$t;
-        var rule_id = entries[i].gsx$ruleid.$t;
-        var level = entries[i].gsx$level.$t;
-        var message = entries[i].gsx$message.$t;
-        var description = entries[i].gsx$description.$t;
-        var description_ja = entries[i].gsx$descriptionja.$t;
-        rule_html += '<dl>';
-        rule_html += '<dt id="' + rule_id + '"><div class="rule-message">' + rule_id + ':' + level + ':' +  message + '</div></dt>';
 
-        if (la == "ja"){				
+      for(var i = 1; i < data.values.length; i++) {
+       
+        var entries = data.values[i];
+
+        var rule_class = entries[0];
+        var rule_id = entries[1];
+        var level = entries[2];
+        var message = entries[3];
+        var description = entries[4];
+        var description_ja = entries[5];
+   
+        rule_html += '<dl>';      
+        rule_html += '<dt id="' + rule_id + '"><div class="rule-message"><a href="#' + rule_id + '">' + rule_id + '</a>:' + level + ':' + message + '</div></dt>';
+
+        if (la == "ja"){        
           rule_html += '<dd><div class="rule-description"> ' + description_ja + '</div></dd>';
         } else {
-         rule_html += '<dd><div class="rule-description"> ' + description + '</div></dd>';        
+          rule_html += '<dd><div class="rule-description"> ' + description + '</div></dd>';
         }
-          
         rule_html += "</dl>";
-        if ( i == 0) {
-          poc_html += '<li><a href="#' + rule_class + '" class="toc_chapter">' + rule_class + '</a></li>';
-          poc_html += '<ul>'
-        }
-        poc_html += '<li><a href="#' + rule_id + '" class="toc_chapter">' + rule_id + '</a></li>';
 
-      } // for
-      poc_html += '</ul></ul>';
-      $("#AgpParser-rule").prepend(rule_html);	
-    $('#in_this_page h2').after(poc_html);
-    $('#in_this_page > h2').text("Rules");
+      }
 
-    /* json で非同期に取得、構築した side nav に y 軸 scroll bar を付ける処理 */
-    // 下にはみ出している距離　はみだしている = 正の値  (side nav bottom y) - (window bottom y)
-    var bottom_diff = ( $("#side_navigation").offset().top + $("#side_navigation").height() ) - ( $(window).scrollTop() + $(window).height() );
+    $("#AgpParser-rule").prepend(rule_html);
 
-    // height をオリジナルからはみ出している分短く、overflow を scroll に			
-    $("#side_navigation").css("height", ( $("#side_navigation").height() - bottom_diff ) + "px");
-    $("#side_navigation").css("overflow-y", "scroll");
+    }); // $.getJSON. AGPParser
 
-    // anchor 指定時にページ内遷移
-    if (anchor && $(anchor).length){
-    $(document).scrollTop( $(anchor).offset().top ); 
-    }				
-    }); // $.getJSON..AGP Parser 
   }
+
 });
 
-// 現在公開されているリリースの情報 
-$(function() {
-
-  var url = window.location.href;
-  var pathname = window.location.pathname;
-  var filepath = pathname.replace("-e.html", "").replace(".html", "");
-  var la = "ja";
-
-  if ( pathname.match(/\/stats\/relinfo/) || pathname.match(/\/stats\/relnote/) ){
-
-      $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/15/public/values?alt=json", function(data) {
-
-        var release_info = data.feed.entry;
-        var chart_a = [];
-        var relnote_a = [];
-        var relinfo_limit = 6;
-        var ftp_base = 'ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/';
-
-        for(var i = 0; i < release_info.length; i++) {      
-
-      var ddbjrelease = release_info[i].gsx$ddbjrelease.$t;
-      var srrna = release_info[i].gsx$srrna.$t;
-      var dadrelease = release_info[i].gsx$dadrelease.$t;
-      var lastpublisheddate = release_info[i].gsx$lastpublisheddate.$t;
-      
-      var ddbjrelno = 0;
-      var ddbjresult = ddbjrelease.match(/\d{2,3}\.?\d{0,1}/);
-
-      if(ddbjresult){
-        var ddbjrelno = ddbjresult[0];
-        ddbjrelno = ddbjrelno.replace(/\.0$/, '');				
-      }
-
-      var srelno = 0;
-      var sresult = srrna.match(/\d{2,3}\.?\d{0,1}/);
-
-      if(sresult){
-        var srelno = sresult[0];
-        srelno = srelno.replace(/\.0$/, '');				
-      }
-
-      var dadrelno = 0;
-      var dadresult = dadrelease.match(/\d{2,3}\.?\d{0,1}/);
-
-      if(dadresult){
-        var dadrelno = dadresult[0];
-        dadrelno = dadrelno.replace(/\.0$/, '');				
-      }
-/*
-      if( ddbjrelno != 0 && srelno != 0 && dadrelno != 0 ){
-        relnote_a.push(['<a href="' + ftp_base + 'ddbj/ddbjrel.' + ddbjrelno + '.txt' + '">' + ddbjrelease + '</a>', '<a href="' + ftp_base + '16S/readme.' + srelno + '.txt' + '">' + srrna + '</a>', '<a href="' + ftp_base + 'dad/dadrel.' + dadrelno + '.txt' + '">' + dadrelease + '</a>', lastpublisheddate]);
-      }else{
-        relnote_a.push([ddbjrelease_str, srrna, dadrelease, lastpublisheddate]);
-      }
-*/
-      /* リリースが公開されている場合はリンクをつける*/
-      if( ddbjrelno != 0 ){
-        var ddbjrelease_str = '<a href="' + ftp_base + 'ddbj/ddbjrel.' + ddbjrelno + '.txt' + '">' + ddbjrelease + '</a>';
-      } else {
-        var ddbjrelease_str = ddbjrelease;
-      }	
-      if( srelno != 0 ){
-        var srrna_str = '<a href="' + ftp_base + '16S/readme.' + srelno + '.txt' + '">' + srrna + '</a>';
-      } else {
-        var srrna_str = srrna;
-      }
-      if( dadrelno != 0 ){
-        var dadrelease_str = '<a href="' + ftp_base + 'dad/dadrel.' + dadrelno + '.txt' + '">' + dadrelease + '</a>';
-      } else {
-        var dadrelease_str = dadrelease;
-      }
-      relnote_a.push([ddbjrelease_str, srrna_str, dadrelease_str, lastpublisheddate]);
-
-          // 最新 release note が書いてある行までに限定
-          if (i < relinfo_limit){
-
-            var database = release_info[i].gsx$database.$t;
-            var release = release_info[i].gsx$release.$t;
-            var date = release_info[i].gsx$officialdate.$t;
-            var ddbjdate= release_info[i].gsx$ddbjdate.$t;               
-            var sequences = release_info[i].gsx$sequences.$t;
-            var bases = release_info[i].gsx$bases.$t;
-
-            if(sequences == ""){
-        var sequences = null;
-            }else{
-        var sequences = parseInt(sequences, 10);
-            }
-
-            if(bases == ""){
-        var bases = null;
-            }else{
-        var bases = parseInt(bases, 10);
-            }
-                      
-            var rateofincrease = release_info[i].gsx$rateofincrease.$t;
-
-            chart_a.push([database, release, date, ddbjdate, sequences, bases, rateofincrease]);
-      }
-
-        }
-
-        google.charts.load('current', {'packages':['corechart', 'table']});
-        
-    if ( pathname.match(/\/stats\/relinfo/) ){
-          google.charts.setOnLoadCallback(drawProteinRelInfoTable);
-        }
-
-    if ( pathname.match(/\/stats\/relnote/) ){
-          google.charts.setOnLoadCallback(drawRelNoteTable);
-        }
-
-          function drawProteinRelInfoTable(){
-            
-              // Create the data table.
-              var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Database');
-        data.addColumn('string', 'Release');
-        data.addColumn('string', 'Date');
-        data.addColumn('string', 'DDBJ date');
-        data.addColumn('number', 'Entries');
-        data.addColumn('number', 'Bases');
-        data.addColumn('string', 'Rate of increase');              
-
-              data.addRows(chart_a);
-
-              var protein_releaset = new google.visualization.Table(document.getElementById('release'));
-              protein_releaset.draw(data);
-
-          } // function drawSubmissionNumberTable
-
-          function drawRelNoteTable(){
-            
-              // Create the data table.
-              var data = new google.visualization.DataTable();
-        data.addColumn('string', 'DDBJ Release');
-        data.addColumn('string', '16S rRNA');
-        data.addColumn('string', 'DAD Release');				
-        data.addColumn('string', 'Last published date');
-
-              data.addRows(relnote_a);
-
-              var relnotet = new google.visualization.Table(document.getElementById('release-note'));
-              relnotet.draw(data, {'allowHtml':true});
-
-          } // function drawSubmissionNumberTable
-
-      })  // $.getJSON 
-    } 
-
-
-  $(".switch-display-long").click(function(){
-    $(this).next("table").find(".display-long").toggle();
-    });
-  
-});

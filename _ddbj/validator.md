@@ -112,7 +112,7 @@ TC0019:ER2: Stop codon is found in mid of CDS location.
 
 -----
 
-### AGP Parser  {#AGP Parser}
+### AGP Parser {#AGP_Parser}
 
 #### フォーマット  {#agpparser-1}
 

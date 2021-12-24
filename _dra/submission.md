@@ -1308,6 +1308,7 @@ Analysis (任意) が不要な場合は [Submit / Update DRA metadata] をクリ
 
 * [BioProject を登録](#study)
 * [BioSample を登録](#sample)
+* [DRA Submission の新規作成](#create-new-submission)
 * [シークエンスデータファイルのアップロード](#upload-sequence-data)
 
 [メタデータ登録用エクセル](/assets/files/submission/dra_metadata.xlsx)をダウンロードし、内容を記入します。[記入例](/assets/files/submission/example-0001_dra_metadata.xlsx) 

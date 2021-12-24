@@ -1576,6 +1576,7 @@ Before filling in the metadata excel, you need to finish followings.
 
 * [Submit BioProject](#study)
 * [Submit BioSample](#sample)
+* [Create a new DRA Submission](#create-new-submission)
 * [Upload sequencing data files](#upload-sequence-data)
 
 Download [the DRA metadata excel](/assets/files/submission/dra_metadata.xlsx) and describe your metadata. [Example excel](/assets/files/submission/example-0001_dra_metadata.xlsx) 
