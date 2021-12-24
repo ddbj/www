@@ -39,7 +39,7 @@ lang: ja
 : シークエンス用ライブラリー (Experiment) に由来するファイルをまとめます。 Experiment を介してデータファイルは特定のサンプルにリンクされます。 Run に含まれる全てのファイルは１つの SRA/fastq ファイルにマージされ、Run のアクセッション番号がファイル名になります。そのため、異なるサンプ replicate に由来するファイルは同じ Run に含めるべきではありません。 一方、ペアードデータファイルは同じ Run に含め、リードが正しくペアとして処理されるようにします。
 
 [Analysis](#Analysis){: #Analysis-obj}  
-: Run に格納されたデータを解析したデータで、しかるべき登録先がないようなデータを登録します。Analysis は DDBJ/EBI/NCBI で交換していません。 交換を希望する場合は [DRA チームに連絡します](/contact-ddbj.html)。 Analysis は [DDBJ Search](https://ddbj.nig.ac.jp/search) でインデックスされず、ftp でのファイル公開のみになります。
+: Run に格納されたデータを解析したデータで、しかるべき登録先がないようなデータを登録します。Analysis は DDBJ/EBI/NCBI で交換していません。Analysis は [DDBJ Search](https://ddbj.nig.ac.jp/search) でインデックスされます。
 
 {% include image.html url="books/sra_object.png" caption="データモデル" class="w450" %}
 

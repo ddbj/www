@@ -85,7 +85,7 @@ intended for downstream usage or that otherwise needs an archival
 home. Submit alignment data in bam file to Run. Please [contact to
 DRA team to ask mirroring of analysis
 data.](/contact-ddbj-e.html)Analysis files are provided on the DDBJ ftp
-site and not indexed by the
+site and indexed by the
 [DDBJ Search](https://ddbj.nig.ac.jp/search).
 
 {% include image.html url="books/sra_object.png" caption="Data model" class="w450" %}
