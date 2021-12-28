@@ -896,7 +896,7 @@ DRA 登録のステータス一覧
 
 {::options parse_block_html="true" /}
 <div class="accordion-menu">
-<h4 class="toggle-content-btn"><a href="javascript:void(0)">ターミナルによるシークエンスデータの転送 (Linux/Mac OS X)</a></h4>
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">ターミナルによるシークエンスデータの転送 (Linux/WSL/Mac OS X)</a></h4>
 <div class="accordion-content">
 
 ファイルを SCP 転送します。

@@ -1085,7 +1085,7 @@ To create metadata first, upload some files.
 
 {::options parse_block_html="true" /}
 <div class="accordion-menu">
-<h4 class="toggle-content-btn"><a href="javascript:void(0)">Transfer sequence data by using terminal (Linux/Mac OS X)</a></h4>
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">Transfer sequence data by using terminal (Linux/WSL/Mac OS X)</a></h4>
 <div class="accordion-content">
 
 Transfer the files by executing,
