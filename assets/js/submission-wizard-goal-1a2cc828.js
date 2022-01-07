@@ -1,4 +1,4 @@
-import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a as v,l as R,n as q}from"./submission-wizard-4c74fe44.js";/**
+import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a as v,l as R,n as q}from"./submission-wizard-be8e4e06.js";/**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
@@ -6,7 +6,7 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
- */class b extends f{constructor(e){if(super(e),this.it=p,e.type!==P.CHILD)throw Error(this.constructor.directiveName+"() can only be used in child bindings")}render(e){if(e===p||e==null)return this.vt=void 0,this.it=e;if(e===S)return e;if(typeof e!="string")throw Error(this.constructor.directiveName+"() called with a non-string value");if(e===this.it)return this.vt;this.it=e;const s=[e];return s.raw=s,this.vt={_$litType$:this.constructor.resultType,strings:s,values:[]}}}b.directiveName="unsafeHTML",b.resultType=1;const M=c(b);class x extends f{render(){}update(e){e.element.scrollTo({top:0,left:0,behavior:"instant"})}}var T=c(x),k={"q1-yes->g-jga":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit human genetic and phenotypic data requiring controlled-access to the <a href="/jga/submission-step-e.html">Japanese Genotype-phenotype Archive (JGA)</a>. You need to apply a data submission application to the <a href="https://humandbs.biosciencedbc.jp/en/data-submission">NBDC</a> and the application needs to be approved before submitting the data to JGA. Regarding submission and sharing of human data, see the <a href="/policies-e.html#submission-of-human-data">Data submission of human subjects research</a>.</p>
+ */class b extends f{constructor(e){if(super(e),this.it=p,e.type!==P.CHILD)throw Error(this.constructor.directiveName+"() can only be used in child bindings")}render(e){if(e===p||e==null)return this.vt=void 0,this.it=e;if(e===S)return e;if(typeof e!="string")throw Error(this.constructor.directiveName+"() called with a non-string value");if(e===this.it)return this.vt;this.it=e;const s=[e];return s.raw=s,this.vt={_$litType$:this.constructor.resultType,strings:s,values:[]}}}b.directiveName="unsafeHTML",b.resultType=1;const M=c(b);class x extends f{render(){}update(e){e.element.scrollTo({top:0,left:0,behavior:"instant"})}}var T=c(x),k={"q1-yes->g-jga":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit human genetic and phenotypic data requiring controlled-access to the <a href="/jga/submission-step-e.html">Japanese Genotype-phenotype Archive (JGA)</a>. You need to apply a data submission application to <a href="https://humandbs.biosciencedbc.jp/en/data-submission">NBDC</a> and the application needs to be approved before submitting the data to JGA. Regarding submission and sharing of human data, please see the guideline <a href="/policies-e.html#submission-of-human-data">"Data submission of human subjects research"</a>.</p>
 <ol>
   <li>Apply a data submission application in the <a href="https://humandbs.ddbj.nig.ac.jp/nbdc/application/">NBDC application system</a>.</li>
   <li>After the data submission application is approved by NBDC, upload metadata and data files to JGA.</li>
@@ -34,7 +34,7 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
 <ol>
   <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
-  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a>.</li>
 </ol></p>
 `,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit finished level genomic sequences (non-WGS) of eukaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include organellar sequences with the genome submission.</p>
 <p>In the MSS submission, you will need to:
@@ -76,7 +76,7 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
 <ol>
   <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
-  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a>.</li>
 </ol></p>
 `,ja:null}}]},"q5-genome-eukaryote-draft-dramss->g-bp-bs-dra-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<ul>
   <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
@@ -89,7 +89,7 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
 <ol>
   <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
-  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a>.</li>
 </ol></p>
 `,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit draft genome sequences of eukaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include organellar sequences with the genome submission.</p>
 <p>In the MSS submission, you will need to:
@@ -131,9 +131,9 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
 <ol>
   <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
-  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a>.</li>
 </ol></p>
-`,ja:null}}]},"q5-genome-prokaryote-complete-dramss>g-bp-bs-dra-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<ul>
+`,ja:null}}]},"q5-genome-prokaryote-complete-dramss->g-bp-bs-dra-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<ul>
   <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
   <li>Register a project to BioProject and a sample to BioSample during or before the DRA submission.</li>
   <li>Submit complete genome sequences of prokaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
@@ -144,7 +144,7 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
 <ol>
   <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
-  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a>.</li>
 </ol></p>
 `}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit complete genome sequences (non-WGS) of prokaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will shorten submission processing time by annotating prokaryotic genomes and generating submission-ready files.</p>
 <p>In the MSS submission, you will need to:
@@ -180,7 +180,7 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
 <ol>
   <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
-  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a>.</li>
 </ol></p>
 `,ja:null}}]},"q5-genome-prokaryote-draft-dramss->g-bp-bs-dra-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<ul>
   <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
@@ -193,7 +193,7 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
 <ol>
   <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
-  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a>.</li>
 </ol></p>
 `,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit draft genome sequences of prokaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission.</p>
 <p>In the MSS submission, you will need to:
@@ -230,10 +230,10 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
 <ol>
   <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
-  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a>.</li>
 </ol></p>
-`,ja:null}}]},"q4-genome-plasmid-nsss->g-nsss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit small-scale (less than 500 sequences and/or shorter than 500kb) plasmid sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
-`,ja:null}},{title:{en:"NSSS",ja:null},body:{en:`<p>Submit small-scale (less than 500 sequences and/or shorter than 500kb) plasmid sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
+`,ja:null}}]},"q4-genome-plasmid-nsss->g-nsss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit small-scale (less than 500 sequences and shorter than 500kb) plasmid sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
+`,ja:null}},{title:{en:"NSSS",ja:null},body:{en:`<p>Submit small-scale (less than 500 sequences and shorter than 500kb) plasmid sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a> and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
 <p>In the NSSS submission, you will need to:
 <ul>
   <li>Select an annotation template and describe annotation.</li>
@@ -252,8 +252,8 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
 </ul>
 </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the plasmid sequences.</p>
-`,ja:null}}]},"q4-genome-organelle-nsss->g-nsss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit small-scale (less than 500 sequences and/or shorter than 500kb) organelle sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
-`,ja:null}},{title:{en:"NSSS",ja:null},body:{en:`<p>Submit small-scale (less than 500 sequences and/or shorter than 500kb) organelle sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
+`,ja:null}}]},"q4-genome-organelle-nsss->g-nsss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit small-scale (less than 500 sequences and shorter than 500kb) organelle sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
+`,ja:null}},{title:{en:"NSSS",ja:null},body:{en:`<p>Submit small-scale (less than 500 sequences and shorter than 500kb) organelle sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a> and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
 <p>In the NSSS submission, you will need to:
 <ul>
   <li>Select an annotation template and describe annotation.</li>
@@ -272,8 +272,8 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
 </ul>
 </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the organelle sequences.</p>
-`,ja:null}}]},"q4-genome-virus-nsss->g-nsss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit small-scale (less than 500 sequences and/or shorter than 500kb) virus sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
-`,ja:null}},{title:{en:"NSSS",ja:null},body:{en:`<p>Submit small-scale (less than 500 sequences and/or shorter than 500kb) virus sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
+`,ja:null}}]},"q4-genome-virus-nsss->g-nsss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit small-scale (less than 500 sequences and shorter than 500kb) virus sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a> and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
+`,ja:null}},{title:{en:"NSSS",ja:null},body:{en:`<p>Submit small-scale (less than 500 sequences and shorter than 500kb) virus sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a> and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
 <p>In the NSSS submission, you will need to:
 <ul>
   <li>Select an annotation template and describe annotation.</li>
@@ -307,7 +307,7 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
 <ol>
   <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
-  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a>.</li>
 </ol>
 `,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit the MAG as a genome entry of <a href="/ddbj/env-e.html">ENV division</a> to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p> 
 <p>In the MSS submission, you will need to:
@@ -348,7 +348,7 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
 `,ja:null}},{title:{en:"BioSample",ja:null},body:{en:`<p>Register two samples for unassembled raw reads and binned metagenomes.</p>
 <p>1. Register a sample for unassembled DRA raw reads to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/submission-e.html#Meta_Genomic_Sequences_Sample">MIMS: metagenome/environmental package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample submission can be done during the DRA submission.</p>
 <p>2. Register virtual samples for binned metagenomes to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/submission-e.html#General_Sample">Other samples package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a> before the binned metagenome submission to DRA Analysis. The binned metagenome sample is derived from the metagenomic sample (1) and <a href="/ddbj/metagenome-assembly-e.html#binned-metagenome-biosample">several attributes need to be provided</a>.</p>
-`,ja:null}},{title:{en:"DRA",ja:null},body:{en:`<p>Submit binned metagenome assemblies derived from the raw sequence data in fasta/bam files to the DRA Analysis (Analysis type = "De Novo Assembly"). Include information of analysis software used and organism bin in the description. Submit the Analysis along with the Run which had been registered for the raw reads. Please note that Analysis data are not shared with NCBI/ENA.</p>
+`,ja:null}},{title:{en:"DRA",ja:null},body:{en:`<p>Submit binned metagenome assemblies derived from the raw sequence data in fasta/bam files to the DRA Analysis of the "De Novo Assembly" analysis type. Include information of analysis software used and organism bin in the description. Submit the Analysis along with the Run which has been registered for the raw reads. Please note that Analysis data are not shared with NCBI/ENA.</p>
 `,ja:null}}]},"q4-metagenome-tls-dramss->g-bp-bs-dra-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>A <a href="/ddbj/tls-e.html">Targeted Locus Study (TLS)</a> is a large scale targeted sequencing project for a single gene locus such as 16S rRNA from multiple organisms. Submit TLS data to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
 <ul>
   <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
@@ -386,7 +386,7 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
 <ol>
   <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
-  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a>.</li>
 </ol></p>
 `,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit metagenomic sequences as <a href="/ddbj/env-e.html">ENV division</a> sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p> 
 <p>In the MSS submission, you will need to:
@@ -427,9 +427,9 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
 <ol>
   <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
-  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a>.</li>
 </ol></p>
-`,ja:null}}]},"q3-transcriptome-tsa->g-bp-bs-dra-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p><a href="/ddbj/tsa-e.html">TSA (Transcriptome Shotgun Assembly)</a> data are computationally assembled transcribed RNA sequences from primary data including next generation sequencing reads. The primary sequence data used in the assemblies must be publicly available in INSDC.</p>
+`,ja:null}}]},"q3-transcriptome-tsa->g-bp-bs-dra-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p><a href="/ddbj/tsa-e.html">TSA (Transcriptome Shotgun Assembly)</a> data are computationally assembled transcribed RNA sequences from primary data including next generation sequencing reads. The primary sequence data used in the assemblies must be registered in INSDC.</p>
 <ul>
   <li>Register unassembled raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
   <li>Register your project in BioProject and your library information in BioSample during or before the DRA submission.</li>
@@ -441,14 +441,14 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
 <ol>
   <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
-  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a>.</li>
 </ol></p>
 `,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit <a href="/ddbj/tsa-e.html">TSA</a> sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Assemblies obtained from multiple species are not acceptable except those derived from environmental samples.</p>
 <p>In the MSS submission, you will need to:
 <ul>
   <li>Provide a BioProject, BioSample(s) and DRA Run(s) that have been registered for the DRA submission.</li>
   <li>Annotation is optional. If you submit TSA with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
-  <li>Provide metadata on the <a href="/ddbj/file-format-e.html#describing_st_comment">sequencing and assembly of the genome</a>.</li>
+  <li>Provide metadata on the <a href="/ddbj/file-format-e.html#describing_st_comment">sequencing and assembly</a>.</li>
   <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files. Sample annotation files of TSA sequences assembled from NGS reads <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1607251813">with annotation</a> and <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=931177555">without annotation</a>.</li>
   <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
   <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
@@ -469,7 +469,7 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
 <ol>
   <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
-  <li>In the D-way submission portal, select the BioProject and BioSamples that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+  <li>In the D-way submission portal, select the BioProject and BioSamples that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a>.</li>
 </ol></p>
 `,ja:null}},{title:{en:"GEA",ja:null},body:{en:`<ul>
   <li>Create a new GEA submission in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>.</li>
@@ -481,7 +481,7 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
 <p>Submit ESTs to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. You may also include <a href="/bioproject/submission-e.html">BioProject</a> or <a href="/biosample/submission-e.html">BioSample</a> information, if the ESTs are part of a larger project.</p>
 `,ja:null}},{title:{en:"BioProject",ja:null},body:{en:`<p>You may register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort.</p>
 `,ja:null}},{title:{en:"BioSample",ja:null},body:{en:`<p>You may register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/submission-e.html#General_Sample">Other samples package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>.</p>
-`,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit EST sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a> (<a href="/ddbj/est-e.html">instructions</a>).</p>
+`,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit <a href="/ddbj/est-e.html">EST</a> sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
 <p>In the MSS submission, you will need to:
 <ul>
   <li>You may also include <a href="/bioproject/submission-e.html">BioProject</a> or <a href="/biosample/submission-e.html">BioSample</a> information, if the ESTs are part of a larger project.</li>
@@ -503,7 +503,7 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
 <ol>
   <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
-  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a>.</li>
 </ol></p>
 `,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit RNA sequences (e.g. cDNA sequences of genes) to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
 <p>In the MSS submission, you will need to:
@@ -530,8 +530,8 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
 </ul>
 </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the RNA sequences.</p>
-`,ja:null}}]},"q4-transcriptome-other-nsss->g-nsss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit small-scale (less than 500 sequences and/or shorter than 500kb) RNA sequences (e.g. cDNA sequences of genes) to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
-`,ja:null}},{title:{en:"NSSS",ja:null},body:{en:`<p>Submit small-scale (less than 500 sequences and/or shorter than 500kb) RNA sequences (e.g. cDNA sequences of genes) to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
+`,ja:null}}]},"q4-transcriptome-other-nsss->g-nsss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit small-scale (less than 500 sequences and shorter than 500kb) RNA sequences (e.g. cDNA sequences of genes) to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
+`,ja:null}},{title:{en:"NSSS",ja:null},body:{en:`<p>Submit small-scale (less than 500 sequences and shorter than 500kb) RNA sequences (e.g. cDNA sequences of genes) to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a> and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
 <p>In the NSSS submission, you will need to:
 <ul>
   <li>Select an annotation template and describe annotation.</li>
@@ -550,7 +550,7 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
 <ol>
   <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
-  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a>.</li>
 </ol></p>
 `,ja:null}}]},"q3-other-dra->g-bp-bs-dra":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<ul>
   <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
@@ -562,7 +562,7 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
 <ol>
   <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
-  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a>.</li>
 </ol></p>
 `,ja:null}}]},"q3-other-dramss->g-bp-bs-dra-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<ul>
   <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
@@ -575,7 +575,7 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
 <ol>
   <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
-  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a>.</li>
 </ol></p>
 `,ja:null}},{title:{en:"MSS",ja:null},body:{en:`<p>Submit assembled other DNA/RNA sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
 <p>In the MSS submission, you will need to:
@@ -602,8 +602,8 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
 </ul>
 </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the RNA sequences.</p>
-`,ja:null}}]},"q3-other-nsss->g-nsss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit small-scale (less than 500 sequences and/or shorter than 500kb) assembled/targeted other DNA/RNA sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
-`,ja:null}},{title:{en:"NSSS",ja:null},body:{en:`<p>Submit small-scale (less than 500 sequences and/or shorter than 500kb) assembled/targeted other DNA/RNA sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
+`,ja:null}}]},"q3-other-nsss->g-nsss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit small-scale (less than 500 sequences and shorter than 500kb) assembled/targeted other DNA/RNA sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
+`,ja:null}},{title:{en:"NSSS",ja:null},body:{en:`<p>Submit small-scale (less than 500 sequences and shorter than 500kb) assembled/targeted other DNA/RNA sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a> and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
 <p>In the NSSS submission, you will need to:
 <ul>
   <li>Select an annotation template and describe annotation.</li>
@@ -644,20 +644,20 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
 </ul>
 `,ja:null}}]},"q2-metabolomics->g-mb":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit metabolomics data to <a href="/metabobank/index-e.html">MetaboBank</a>.</p>
 `,ja:null}},{title:{en:"MetaboBank",ja:null},body:{en:`<p>Submit metabolomics data to <a href="/metabobank/index-e.html">MetaboBank</a>. You need to register your project to <a href="/bioproject/submission-e.html">BioProject</a> and your samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/attribute-e.html?Core=FunctionalGenomics&definition=definition">functional genomics package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. Please contact the <a href="/contact-ddbj-e.html">MetaboBank team</a> before submission.</p>
-`,ja:null}}]},"q2-proteomics->g-jpost":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit proteomics data to the <a href="https://repository.jpostdb.org/">Japan Proteome Standard Repository (jPOSTrepo)</a>. jPOSTrepo is a public repository for datasets obtained from proteomics experiments and a member of <a href="http://www.proteomexchange.org/">ProteomeXchange Consortium</a>. jPOSTrepo is operated by the <a href="https://repository.jpostdb.org/about">jPOST team</a> and not by Bioinformation and DDBJ Center.</p>
+`,ja:null}}]},"q2-proteomics->g-jpost":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit proteomics data to the <a href="https://repository.jpostdb.org/">Japan Proteome Standard Repository (jPOSTrepo)</a>. jPOSTrepo is a public repository for datasets obtained from proteomics experiments and a member of the <a href="http://www.proteomexchange.org/">ProteomeXchange Consortium</a>. jPOSTrepo is operated by the <a href="https://repository.jpostdb.org/about">jPOST team</a> and not by Bioinformation and DDBJ Center.</p>
 `,ja:null}},{title:{en:"jPOST",ja:null},body:{en:`<p>Submit your proteomics data to <a href="https://repository.jpostdb.org/">jPOSTrepo</a> (<a href="https://repository.jpostdb.org/help">instructions</a>). Please note that jPOSTrepo is operated by the <a href="https://repository.jpostdb.org/about">jPOST team</a> consisting of <a href="http://dbcls.rois.ac.jp/index-en.html">DBCLS</a> and Japanese universites and not by Bioinformation and DDBJ Center.</p>
-`,ja:null}}]},"q3-variation-humsnp->g-jvarsnp":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit human short genetic variations (&le;50bp) to the <a href="/jvar/index-e.html">JVar (Japan Variation Database)</a>. Short genetic variation data of JVar (JVar-SNP) will be exchanged with the NCBI <a href="https://www.ncbi.nlm.nih.gov/snp/">dbSNP</a> and the EBI <a href="https://www.ebi.ac.uk/eva/">European Variation Archive (EVA)</a>.</p>
+`,ja:null}}]},"q3-variation-humsnp->g-jvarsnp":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit human short genetic variations (\u226450bp) to the <a href="/jvar/index-e.html">JVar (Japan Variation Database)</a>. Short genetic variation data of JVar (JVar-SNP) will be exchanged with the NCBI <a href="https://www.ncbi.nlm.nih.gov/snp/">dbSNP</a> and the EBI <a href="https://www.ebi.ac.uk/eva/">European Variation Archive (EVA)</a>.</p>
 <p>JVar is under construction.</p>
-`,ja:null}},{title:{en:"JVar-SNP",ja:null},body:{en:`<p>Submit human short genetic variations (&le;50bp) to the <a href="/jvar/index-e.html">JVar (Japan Variation Database)</a>. Short genetic variation data of JVar (JVar-SNP) will be exchanged with the NCBI <a href="https://www.ncbi.nlm.nih.gov/snp/">dbSNP</a> and the EBI <a href="https://www.ebi.ac.uk/eva/">European Variation Archive (EVA)</a>.</p>
+`,ja:null}},{title:{en:"JVar-SNP",ja:null},body:{en:`<p>Submit human short genetic variations (\u226450bp) to the <a href="/jvar/index-e.html">JVar (Japan Variation Database)</a>. Short genetic variation data of JVar (JVar-SNP) will be exchanged with the NCBI <a href="https://www.ncbi.nlm.nih.gov/snp/">dbSNP</a> and the EBI <a href="https://www.ebi.ac.uk/eva/">European Variation Archive (EVA)</a>.</p>
 <p>JVar is under construction.</p>
-`,ja:null}}]},"q3-variation-humsv->g-jvarsv":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit human structural variations (&gt;50bp) to the <a href="/jvar/index-e.html">JVar (Japan Variation Database)</a>. Structural variation data of JVar (JVar-SV) will be exchanged with the NCBI <a href="https://www.ncbi.nlm.nih.gov/dbvar/">dbVar</a> and the EBI <a href="https://www.ebi.ac.uk/eva/">European Variation Archive (EVA, former DGVa)</a>.</p>
+`,ja:null}}]},"q3-variation-humsv->g-jvarsv":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit human structural variations (>50bp) to the <a href="/jvar/index-e.html">JVar (Japan Variation Database)</a>. Structural variation data of JVar (JVar-SV) will be exchanged with the NCBI <a href="https://www.ncbi.nlm.nih.gov/dbvar/">dbVar</a> and the EBI <a href="https://www.ebi.ac.uk/eva/">European Variation Archive (EVA, former DGVa)</a>.</p>
 <p>JVar is under construction.</p>
-`,ja:null}},{title:{en:"JVar-SV",ja:null},body:{en:`<p>Submit human structural variations (&gt;50bp) to the <a href="/jvar/index-e.html">JVar (Japan Variation Database)</a>. Structural variation data of JVar (JVar-SV) will be exchanged with the NCBI <a href="https://www.ncbi.nlm.nih.gov/dbvar/">dbVar</a> and the EBI <a href="https://www.ebi.ac.uk/eva/">European Variation Archive (EVA, former DGVa)</a>.</p>
+`,ja:null}},{title:{en:"JVar-SV",ja:null},body:{en:`<p>Submit human structural variations (>50bp) to the <a href="/jvar/index-e.html">JVar (Japan Variation Database)</a>. Structural variation data of JVar (JVar-SV) will be exchanged with the NCBI <a href="https://www.ncbi.nlm.nih.gov/dbvar/">dbVar</a> and the EBI <a href="https://www.ebi.ac.uk/eva/">European Variation Archive (EVA, former DGVa)</a>.</p>
 <p>JVar is under construction.</p>
-`,ja:null}}]},"q3-variation-nonhumsnp->g-eva":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit non-human short genetic variations (&le;50bp) to the <a href="https://www.ebi.ac.uk/eva/">European Variation Archive (EVA)</a> of <a href="https://www.ebi.ac.uk">EBI</a>. The NCBI <a href="https://www.ncbi.nlm.nih.gov/snp/">dbSNP</a> no longer accepts submissions of non-human organisms variations.</p>      ja:
-`}},{title:{en:"EVA",ja:null},body:{en:`<p>Submit non-human short genetic variations (&le;50bp) to <a href="https://www.ebi.ac.uk/eva/">EVA</a> of <a href="https://www.ebi.ac.uk">EBI</a>. EVA accepts all types of precise short genetic variations in any species (<a href="https://www.ebi.ac.uk/eva/?Submit-Data">instructions</a>).</p>
-`,ja:null}}]},"q3-variation-nonhumsv->g-dgva":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit non-human structural variations (&gt;50bp) to the <a href="https://www.ebi.ac.uk/eva/">European Variation Archive (EVA)</a> of <a href="https://www.ebi.ac.uk">EBI</a>. The NCBI <a href="https://www.ncbi.nlm.nih.gov/dbvar">dbVar</a> no longer accepts submissions of non-human organisms variations.</p>
-`,ja:null}},{title:{en:"DGVa",ja:null},body:{en:`<p>Submit non-human structural variations (&gt;50bp) to <a href="https://www.ebi.ac.uk/eva/">EVA</a> (former DGVa) of <a href="https://www.ebi.ac.uk">EBI</a>. EVA accepts all types of structural variations in any species (<a href="https://www.ebi.ac.uk/eva/?Submit-Data">instructions</a>).</p>
+`,ja:null}}]},"q3-variation-nonhumsnp->g-eva":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit non-human short genetic variations (\u226450bp) to the <a href="https://www.ebi.ac.uk/eva/">European Variation Archive (EVA)</a> of <a href="https://www.ebi.ac.uk">EBI</a>. The NCBI <a href="https://www.ncbi.nlm.nih.gov/snp/">dbSNP</a> no longer accepts submissions of non-human organisms variations.</p>
+`,ja:null}},{title:{en:"EVA",ja:null},body:{en:`<p>Submit non-human short genetic variations (\u226450bp) to <a href="https://www.ebi.ac.uk/eva/">EVA</a> of <a href="https://www.ebi.ac.uk">EBI</a>. EVA accepts all types of precise short genetic variations in any species (<a href="https://www.ebi.ac.uk/eva/?Submit-Data">instructions</a>).</p>
+`,ja:null}}]},"q3-variation-nonhumsv->g-dgva":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit non-human structural variations (>50bp) to the <a href="https://www.ebi.ac.uk/eva/">European Variation Archive (EVA)</a> of <a href="https://www.ebi.ac.uk">EBI</a>. The NCBI <a href="https://www.ncbi.nlm.nih.gov/dbvar">dbVar</a> no longer accepts submissions of non-human organisms variations.</p>
+`,ja:null}},{title:{en:"DGVa",ja:null},body:{en:`<p>Submit non-human structural variations (>50bp) to <a href="https://www.ebi.ac.uk/eva/">EVA</a> (former DGVa) of <a href="https://www.ebi.ac.uk">EBI</a>. EVA accepts all types of structural variations in any species (<a href="https://www.ebi.ac.uk/eva/?Submit-Data">instructions</a>).</p>
 `,ja:null}}]},"q3-tpa-experimental->g-nsss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p><a href="/ddbj/tpa-e.html">Third PArty data (TPA)</a> are submitted to INSDC as part of the process of publishing biological studies that include the assembly and/or annotation of existing INSDC reads and primary sequences. Publicly accessible TPA data are therefore linked to a publication or publications that document the derivation of the data supported by peer-reviewed scientific evidence.</p>
 <p><a href="/ddbj/tpa-table-e.html#subcategories">TPA:experimental</a> describes records that include functional annotation derived at least in part from peer-reviewed wet-lab experimental investigation.</p>
 <p>The following data are NOT acceptable as TPA:
@@ -666,7 +666,7 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
   <li>Annotation that has arisen from an automated tool, such as GeneMark, tRNA scan, or ORF finder, where no further evidence, experimental or otherwise, is presented for the annotation.</li>
   <li>Annotation from in vivo, in vitro, or in silico experimentation that will not be submitted for publication in a peer-reviewed journal.</li>
 </ul></p>
-`,ja:null}},{title:{en:"NSSS",ja:null},body:{en:`<p>Submit small-scale (less than 500 sequences and/or shorter than 500kb) TPA sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
+`,ja:null}},{title:{en:"NSSS",ja:null},body:{en:`<p>Submit small-scale (less than 500 sequences and shorter than 500kb) TPA sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
 <p>In the NSSS submission, you will need to:
 <ul>
   <li>In the Sequence tab, <a href="/ddbj/web-submission-help-e.html#flow-5">select "No" to the question "Did you determine the nucleotide sequence by yourself?"</a>.</li>
@@ -683,7 +683,7 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
   <li>Annotation that has arisen from an automated tool, such as GeneMark, tRNA scan, or ORF finder, where no further evidence, experimental or otherwise, is presented for the annotation.</li>
   <li>Annotation from in vivo, in vitro, or in silico experimentation that will not be submitted for publication in a peer-reviewed journal.</li>
 </ul></p>
-`,ja:null}},{title:{en:"NSSS",ja:null},body:{en:`<p>Submit small-scale (less than 500 sequences and/or shorter than 500kb) TPA sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
+`,ja:null}},{title:{en:"NSSS",ja:null},body:{en:`<p>Submit small-scale (less than 500 sequences and shorter than 500kb) TPA sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
 <p>In the NSSS submission, you will need to:
 <ul>
   <li>In the Sequence tab, <a href="/ddbj/web-submission-help-e.html#flow-5">select "No" to the question "Did you determine the nucleotide sequence by yourself?"</a>.</li>
