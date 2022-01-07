@@ -1,11 +1,11 @@
 top_news:
   ja:
-    - title: 生命情報・DDBJ センター年末年始休業のお知らせ
-      path: 2021-12-01
     - title: D-way システム停止のお知らせ（1/12 9:30-11:00）
       path: 2021-12-23
+    - title: 2021年1月12日(水) 13:00 ～ 15:00 スパコンネットワークメンテナンスによるサービスへの一時的なアクセス不可
+      path: 2022-01-07_3
   en:
-    - title: Suspension of the BI-DDBJ activity during the New Year Holidays
-      path: 2021-12-01-e
     - title: D-way will be unavailable (12 Jan, 9:30-11:00)
       path: 2021-12-23-e
+    - title: January 12 13:00 - 15:00(JST), suspension of DDBJ services due to NIG supercomputer maintenance
+      path: 2022-01-07_3-e
