@@ -391,17 +391,16 @@ Run に含めるデータファイルを選択します。
 <!-- end list -->
 
 [File Type](#File_Type)<a name="File_Type"></a><span class="red">*</span>  
-: シークエンスデータのファイル形式。fastq ファイルの場合、リード長が一定かそうでないかに関わらず全て "generic_fastq" を選択します。"fastq" は選択しないでください。
+: シークエンスデータのファイル形式。fastq ファイルの場合、リード長が一定かそうでないかに関わらず全て "fastq" を選択します。
 
 | File Type        | Description                                                                                                            |
 |---|
-| generic_fastq   | fastq files                                                                                  |
-| fastq            | Select "generic_fastq" instead of "fastq".                                                                            |
+| fastq            | fastq files                                                                                                            |
 | sff              | 454 Standard Flowgram Format file                                                                                      |
 | hdf5             | PacBio hdf5 Format file                                                                                                |
 | bam              | Binary SAM format for use by loaders that combine alignment and sequencing data                                        |
 | tab              | A tab-delimited table maps "SN in SQ line of BAM header" and "reference fasta file"                                    |
-| reference_fasta | Reference sequence file in single fasta format used to construct SRA archive file format. Filename must end with ".fa" |
+| reference_fasta | Reference sequence file in single fasta format used to construct SRA archive file format. Filename must end with ".fa"  |
 
 <!-- end list -->
 
@@ -635,7 +634,7 @@ chr3 NC_000003.12
 
 ### fastq  {#fastq} 
 
-Run の filetype はリード長が一定かどうかに関わらず generic_fastq を選択します。fastq は選択しないでください。
+Run の filetype はリード長が一定かどうかに関わらず fastq を選択します。
 
 fastq の形式。詳しくは[NCBI のサイト](https://www.ncbi.nlm.nih.gov/sra/docs/submitformats/#fastq-files)をご覧ください。
 
@@ -709,7 +708,7 @@ unaligned bamの場合、リファレンス配列や対応表の指定は必要�
 
 #### fastq  {#pacbio_fastq}
 
-[generic_fastq](#fastq) を Run の filetype で指定してください。
+[fastq](#fastq) を Run の filetype で指定してください。
 
 ### Oxford Nanopore  {#Oxford-Nanopore}
 
@@ -1270,7 +1269,7 @@ BioSample を投稿した後、Sample では投稿したサンプルが選択さ
 </div>
 
 <div class="attention">
-fastq ファイルはリード長が一定かどうかに関わらず、filetype には "generic_fastq" を選択します。"fastq" は選択しないでください。
+fastq ファイルはリード長が一定かどうかに関わらず、filetype には "fastq" を選択します。
 </div>
 
 {% include image.html url="books/hdra-runfinish.jpg" caption="データファイルの属性を入力し Run に結び付ける" class="w450" %}
