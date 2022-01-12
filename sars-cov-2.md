@@ -4,12 +4,12 @@ title: SARS-CoV-2
 lang: jp
 ---
 
-# SARS-CoV-2ゲノム配列登録情報 by Japan Covid-19 Open Data Consortium 
+## SARS-CoV-2ゲノム配列登録情報 by Japan Covid-19 Open Data Consortium 
 
 「Japan Covid-19 Open Data Consortium」は、**より自由な情報の流通を目指して、ゲノム情報を DDBJに登録することに賛同する研究者のコンソーシアム**です 。
 SARS-CoV-2のゲノム情報は[ **GISAID** ](https://www.gisaid.org/)にもありますが、厳しい利用制約により解析や検証の大きな妨げとなっています。**DDBJに登録した情報は、GISAIDにも登録しています。**
 
-- 【Japan Covid-19 Open Data Consortium によるGISAID登録状況】 [GISAID Search Full text > Virus name "Japan COVID-19 Open Data Consortium"](https://www.gisaid.org/) 
+- **【Japan Covid-19 Open Data Consortium によるGISAID登録状況】 [GISAID Search Full text > Virus name "Japan COVID-19 Open Data Consortium"](https://www.gisaid.org/)** 
 
 <details>
 	<summary><b><<span class="red">SARS-CoV-2配列データのDDBJへの登録お願い (click here) </span></b></summary>
@@ -35,22 +35,22 @@ DDBJ (DNA Data Bank of Japan)は、国際塩基配列データベース連携（
 
 国立遺伝学研究所は新型コロナウイルス感染症（COVID-19）の拡大に際して、**新型コロナウイルス（SARS-CoV-2）の全ゲノム解析による分子疫学調査（SARS-CoV-2 RNA全ゲノム解析）を静岡県と連携・協働**して進めています。
 
-- 遺伝研ホームページにおける[コロナ特設サイト](https://www.nig.ac.jp/nig/ja/research-infrastructure-collaboration/coronavirus_genome_analysis#kaiseki)
+- **遺伝研ホームページにおける[コロナ特設サイト](https://www.nig.ac.jp/nig/ja/research-infrastructure-collaboration/coronavirus_genome_analysis#kaiseki)**
 	- 遺伝研がゲノム解析を実施した、**静岡県の地域ごと月ごとの検体数**
 	- 静岡県全体で発生したSARS-CoV-2の各系統(Lineage)について、**検出頻度と時間推移**
 
-- 【参考】 IIBMP2021での講演内容の動画「SARS-CoV-2ゲノムシーケンシングの実際」
-	- [(1)SARS-CoV-2ゲノムの特徴](https://youtu.be/zwh1ZLUWaQI)
-	- [(2)SARS-CoV-2ゲノムの変異速度と多様性](https://youtu.be/vXlW3EYG5cM)
-	- [(3)SARS-CoV-2ゲノムのアンプリコンシーケンシング](https://youtu.be/9Lh8F9Ru3RI)
-	- [(4)SARS-CoV-2ゲノム解析の流れ](https://youtu.be/v58ufNEqsT4)
+- **【参考】 IIBMP2021での講演内容の動画「SARS-CoV-2ゲノムシーケンシングの実際」**
+	- [SARS-CoV-2ゲノムの特徴](https://youtu.be/zwh1ZLUWaQI)
+	- [SARS-CoV-2ゲノムの変異速度と多様性](https://youtu.be/vXlW3EYG5cM)
+	- [SARS-CoV-2ゲノムのアンプリコンシーケンシング](https://youtu.be/9Lh8F9Ru3RI)
+	- [SARS-CoV-2ゲノム解析の流れ](https://youtu.be/v58ufNEqsT4)
 
 - **GitHubにおける遺伝研SARS-CoV-2ゲノム解析パイプライン** [META_VRL_LONG v. 1.0.0](https://github.com/ddbj/nig_vrl/tree/main/meta_vrl_long_map) 
 
 	- Oxford Nanopore の fastq リードをリファレンスゲノムであるSARS-CoV-2ゲノム(Wuhan-Hu-1, GenBank_ID NC_045512.2)へマッピングする詳細
 	- パイプラインがつかう各種解析ツール、実行に際するパラメータの詳細
 
-- [GitHubにおけるHaplotype network解析手法 (小規模100件以下用, 静岡株47配列の解析事例） (新潟大 阿部先生ご提供)](https://github.com/takaabe8050/CoV2network)
+- **[GitHubにおけるHaplotype network解析手法 (小規模100件以下用, 静岡株47配列の解析事例） (新潟大 阿部先生ご提供)](https://github.com/takaabe8050/CoV2network)**
 	
 - **IIBMP2021での講演内容の動画 「SARS-CoV-2ゲノムのネットワーク解析」**
 	
@@ -67,8 +67,8 @@ DDBJ (DNA Data Bank of Japan)は、国際塩基配列データベース連携（
 
 [【Search Condition】Organism:(Severe acute respiratory syndrome coronavirus 2) AND (Japan COVID-19 Open Data Consortium) AND shizuoka)](http://ddbj.nig.ac.jp/arsa/search?lang=ja&cond=quick_search&query=Organism%3A%28Sev[…]an+COVID-19+Open+Data+Consortium%29+AND+shizuoka&operator=AND)
 
-- 【静岡県検体最新GISAID登録状況】
-[GISAID Search > Virus name “SZ-NIG”](https://www.gisaid.org/)
+- **【静岡県検体最新GISAID登録状況】
+[GISAID Search > Virus name “SZ-NIG”](https://www.gisaid.org/)**
 
 ■ **DDBJ News (2021/09/09) [新型コロナウイルス (Severe acute respiratory syndrome coronavirus 2) の配列データ公開](https://www.ddbj.nig.ac.jp/news/ja/2021-09-09_1.html)**
 
