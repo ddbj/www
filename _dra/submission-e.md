@@ -98,7 +98,7 @@ objects flexibly.
   - [Most simple case](#ex_simple)
   - [Comparative genome sequencing of three strains
     (paired-end)](#ex_samples)
-  - [Technical and biological replicates (paired-end)](#ex_replicates)
+  - [Biological replicates (paired-end)](#ex_replicates)
   - [Related sequencing data are reported in two
     publications](#ex_submissions)
 
@@ -112,11 +112,9 @@ Include paired-end read files in a Run.
 
 {% include image.html url="books/datamodel1.jpg" caption="Comparative genome sequencing of three strains (paired-end)" class="w450" %}
 
-#### Technical and biological replicates (paired-end)  {#ex_replicates}
+#### Biological replicates (paired-end)  {#ex_replicates}
 
-[Related FAQ: How many samples do I need for my DRA submission?](/faq/en/samples-for-sra.html)
-
-{% include image.html url="submission/obj_exreplicate.jpg" caption="Technical and biological replicates (paired-end)" class="w450" %}
+{% include image.html url="submission/obj_exreplicate.jpg" caption="Biological replicates (paired-end)" class="w450" %}
 
 #### Related sequencing data are reported in two publications.  {#ex_submissions}
 
@@ -1375,7 +1373,7 @@ To submit a BioSample, enter content from left to right tabs. The second
 panel is for BioSample submission. Submitter information is copied with
 that of DRA submission.
 
-Biological and technical replicates are represented by separate
+Biological replicates are represented by separate
 BioSamples. Regarding necessary number of sample for sequence
 submission, please see the ["FAQ: How many samples do I need for my DRA
 submission?"](/faq/en/samples-for-sra.html)

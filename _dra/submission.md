@@ -36,7 +36,7 @@ lang: ja
 : BioSample に由来するシークエンス用ライブラリーとシークエンスの手法について記載します。 Experiment は１つの BioProject と１つの BioSample を参照します。 複数の Experiment は１ BioSample を参照することができますが、逆に１つの Experiment が複数の BioSample を参照することはできません。
 
 [Run](#Run){: #Run-obj}  
-: シークエンス用ライブラリー (Experiment) に由来するファイルをまとめます。 Experiment を介してデータファイルは特定のサンプルにリンクされます。 Run に含まれる全てのファイルは１つの SRA/fastq ファイルにマージされ、Run のアクセッション番号がファイル名になります。そのため、異なるサンプ replicate に由来するファイルは同じ Run に含めるべきではありません。 一方、ペアードデータファイルは同じ Run に含め、リードが正しくペアとして処理されるようにします。
+: シークエンス用ライブラリー (Experiment) に由来するファイルをまとめます。 Experiment を介してデータファイルは特定のサンプルにリンクされます。 Run に含まれる全てのファイルは１つの SRA/fastq ファイルにマージされ、Run のアクセッション番号がファイル名になります。そのため、異なる replicate に由来するファイルは同じ Run に含めるべきではありません。 一方、ペアードデータファイルは同じ Run に含め、リードが正しくペアとして処理されるようにします。
 
 [Analysis](#Analysis){: #Analysis-obj}  
 : Run に格納されたデータを解析したデータで、しかるべき登録先がないようなデータを登録します。Analysis は DDBJ/EBI/NCBI で交換していません。Analysis は [DDBJ Search](https://ddbj.nig.ac.jp/search) でインデックスされます。
@@ -49,7 +49,7 @@ lang: ja
 
   - [最もシンプルなケース](#ex_simple)
   - [三つの菌株の比較ゲノム解析 (ペアエンド)](#ex_samples)
-  - [(Technical, Biological) replicate がある場合 (ペアエンド)](#ex_replicates)
+  - [Biological replicate がある場合 (ペアエンド)](#ex_replicates)
   - [関連するデータが別々の論文に発表される場合](#ex_submissions)
 
 #### 最もシンプルなケース  {#ex_simple}
@@ -62,11 +62,9 @@ lang: ja
 
 {% include image.html url="books/datamodel1.jpg" caption="三つの菌株の比較ゲノム解析 (ペアエンド)" class="w450" %}
 
-#### (Technical, Biological) replicate がある場合 (ペアエンド)  {#ex_replicates}
+#### Biological replicate がある場合 (ペアエンド)  {#ex_replicates}
 
-[関連する FAQ: 塩基配列登録にはいくつのサンプルが必要ですか?](/faq/ja/samples-for-sra)
-
-{% include image.html url="submission/obj_exreplicate.jpg" caption="(Technical, Biological) replicate がある場合　(ペアエンド)" class="w450" %}
+{% include image.html url="submission/obj_exreplicate.jpg" caption="Biological replicate がある場合　(ペアエンド)" class="w450" %}
 
 #### 関連するデータが別々の論文に発表される場合  {#ex_submissions}
 
@@ -1185,7 +1183,7 @@ Sample type に応じた属性入力用テンプレートファイルをダウ�
 
 二行目以降に１行１サンプルで入力していきます。BioProject アクセッション番号が発行されていないプロジェクトの場合 [bioproject_id](/biosample/attribute.html?all=all#bioproject_id) には PSUB 番号を入力します。値がない属性には、適宜 "missing" や "not applicable" などを記入します。
 
-Biological/Technical replicate は別々の BioSample として登録します。登録に必要なサンプル数は [FAQ: 塩基配列登録にはいくつのサンプルが必要ですか?](/faq/ja/samples-for-sra)
+Biological replicate は別々の BioSample として登録します。登録に必要なサンプル数は [FAQ: 塩基配列登録にはいくつのサンプルが必要ですか?](/faq/ja/samples-for-sra)
 を参照してください。
 
 {% include image.html url="books/hdra-bs04.jpg" caption="サンプル属性テンプレートファイルのダウンロード" class="w450" %}

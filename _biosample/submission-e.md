@@ -33,7 +33,8 @@ The information about human subjects and access to it will be compliant with all
 
 ### Sample granularity {#granularity}
 
-- Biological and technical replicates are represented by separate BioSamples with 'biological_replicate' and 'technical_replicate' attributes, respectively. [DRA objects organization](/dra/submission-e.html#ex_replicates) For example, 'biological_replicate = 1' and 'biological_replicate = 2'.
+- Biological replicates are represented by separate BioSamples with distinct 'biological_replicate' attributes. [DRA objects organization](/dra/submission-e.html#ex_replicates) For example, 'biological_replicate = 1' and 'biological_replicate = 2'.
+- Technical replicates are represented by DRA Experiments and GEA SDRF. Use a BioSample for technical replicates.
 - If a paired-end library from single sample is sequenced, do not create separate sample for forward and reverse reads but register both reads in a DRA Run. [DRA objects organization](/dra/submission-e.html#ex_samples)
 - If a sample is sequenced by different sequencing instruments, link DRA Experiments with distinct [Instrument model](/dra/submission-e.html#Instrument) to a BioSample.
 - Register a separate BioSample for each unique source, e.g., RNA from the wings is a separate BioSample than RNA from legs if those two sources were sequenced independently.

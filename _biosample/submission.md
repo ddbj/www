@@ -31,7 +31,8 @@ BioSample はサンプルについての以下のような情報を含みます:
 
 ### サンプルの粒度 {#granularity}
 
-- biological/technical replicate はそれぞれ biological_replicate/technical_replicate 属性で区別します。例 "biological_replicate = 1" と "biological_replicate = 2" [DRA の構成](/dra/submission.html#ex_replicates)
+- biological replicate は biological_replicate 属性で区別します。例 "biological_replicate = 1" と "biological_replicate = 2" [DRA の構成](/dra/submission.html#ex_replicates)
+- technical replicate はサンプルを分けず、DRA Experiment/GEA SDRF で分けます。
 - 同じサンプルから調整した paired-end library をシークエンスした場合、forward と reverse で BioSample を分けずに一つの DRA Run に両ペアードファイルを含めます。[DRA の構成](/dra/submission.html#ex_samples)
 - 同じサンプルを異なる機種でシークエンスした場合、異なる [Instrument model](/dra/submission.html#Instrument) を持つ複数の DRA Experiment を一つの BioSample にリンクします。
 - ユニークなサンプルソースに対し、別々の BioSample を登録します。例えば、羽から調整した RNA と肢から調整した RNA は、両者が別々にシークエンスされている場合、別個の BioSample になります。
