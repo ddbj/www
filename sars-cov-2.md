@@ -12,7 +12,7 @@ SARS-CoV-2のゲノム情報は[ **GISAID** ](https://www.gisaid.org/)にもあ�
 - **【Japan Covid-19 Open Data Consortium によるGISAID登録状況】 [GISAID Search Full text > Virus name "Japan COVID-19 Open Data Consortium"](https://www.gisaid.org/)** 
 
 <details>
-	<summary><b><<span class="red">SARS-CoV-2配列データのDDBJへの登録お願い (click here) </span></b></summary>
+	<summary><b><span class="red">SARS-CoV-2配列データのDDBJへの登録お願い (click here) </span></b></summary>
  
 国立遺伝学研究所 生命情報・DDBJセンター長
 <br><br>
@@ -29,7 +29,7 @@ DDBJ (DNA Data Bank of Japan)は、国際塩基配列データベース連携（
 
 [DFAST_VRL (Webツール)](https://dfast.ddbj.nig.ac.jp/dfv/) 
 
-[DFAST_VRL (stand alone用)](https://github.com/nigyta/dfast_vrl)
+[DFAST_VRL (stand alone用 / 遺伝研スパコン Singularityコンテナ利用)](https://github.com/nigyta/dfast_vrl)
 
 ## 国立遺伝学研究所が取り組む新型コロナウイルス・全ゲノム解析の紹介
 
