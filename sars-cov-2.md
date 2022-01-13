@@ -70,7 +70,7 @@ DDBJ (DNA Data Bank of Japan)は、国際塩基配列データベース連携（
 
 ■ **DDBJ ARSA**
 
-[【Search Condition】Organism:(Severe acute respiratory syndrome coronavirus 2) AND (Japan COVID-19 Open Data Consortium) AND shizuoka)](http://ddbj.nig.ac.jp/arsa/search?lang=ja&cond=quick_search&query=Organism%3A%28Sev[…]an+COVID-19+Open+Data+Consortium%29+AND+shizuoka&operator=AND)
+[【Search Condition】Organism:(Severe acute respiratory syndrome coronavirus 2) AND (Japan COVID-19 Open Data Consortium) AND shizuoka)](http://ddbj.nig.ac.jp/arsa/search?lang=ja&cond=quick_search&query=Organism%3A%28Severe+acute+respiratory+syndrome+coronavirus+2%29+AND+%28Japan+COVID-19+Open+Data+Consortium%29+AND+shizuoka&operator=AND)
 
 - **【静岡県検体最新GISAID登録状況】
 [GISAID Search > Virus name “SZ-NIG”](https://www.gisaid.org/)**
