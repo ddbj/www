@@ -1,4 +1,54 @@
 items:
+  - date: 2022-01-07
+    year: 2022
+    month: 1
+    day: 7
+    id: 208-ja
+    title: "DNA Data Bank of Japan (DDBJ) update report 2021"
+    url: https://pubmed.ncbi.nlm.nih.gov/34751405
+    author: Okido T, Kodama Y, Mashima J, Kosuge T, Fujisawa T, Ogasawara O.
+    info: Nucleic Acids Res 2022 Jan 7;50(D1):D102-D105
+    pubmed_id: 34751405
+    keyword: paper
+    lang: ja
+
+  - date: 2022-01-07
+    year: 2022
+    month: 1
+    day: 7
+    id: 208-en
+    title: "DNA Data Bank of Japan (DDBJ) update report 2021"
+    url: https://pubmed.ncbi.nlm.nih.gov/34751405
+    author: Okido T, Kodama Y, Mashima J, Kosuge T, Fujisawa T, Ogasawara O.
+    info: Nucleic Acids Res 2022 Jan 7;50(D1):D102-D105
+    pubmed_id: 34751405
+    keyword: paper
+    lang: en
+
+  - date: 2022-01-01
+    year: 2022
+    month: 1
+    day: 1
+    id: 207-ja
+    title: "ゲノム医療におけるデータベース-使い方とコツ (遺伝子医学39号)"
+    url: http://www.medicaldo.co.jp/gene/g-m39.html
+    author: "分担執筆: 秦 千比呂"
+    info: メディカルドゥ
+    keyword: book
+    lang: ja
+
+  - date: 2021-11-30
+    year: 2021
+    month: 11
+    day: 30
+    id: 206-ja
+    title: "メタゲノムデータ解析 16Sも!ショットガンも!ロングリードも! 菌叢解析が得意になる凄技レシピ (実験医学別冊)"
+    url: https://www.yodosha.co.jp/yodobook/book/9784758122559/
+    author: "分担執筆: 大城戸 利久、福田 亜沙美"
+    info: 羊土社
+    keyword: book
+    lang: ja
+
   - date: 2020-09-25
     year: 2020
     month: 9
