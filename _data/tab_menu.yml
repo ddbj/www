@@ -217,6 +217,8 @@ ddbj:
           url: /ddbj/pseudohaplotype.html	
         - title: WGS	
           url: /ddbj/wgs.html	
+        - title: Finished level genomic sequences	
+          url: /ddbj/finished_level_genome.html	
         - title: メタゲノムアセンブリ	
           url: /ddbj/metagenome-assembly.html	
         - title: Single amplified genome	
@@ -308,6 +310,8 @@ ddbj:
           url: /ddbj/pseudohaplotype-e.html	
         - title: WGS	
           url: /ddbj/wgs-e.html	
+        - title: Finished level genomic sequences	
+          url: /ddbj/finished_level_genome-e.html	
         - title: Metagenome Assembly	
           url: /ddbj/metagenome-assembly-e.html	
         - title: Single amplified genome	
@@ -466,8 +470,6 @@ gea:
           url: /gea/validation.html	
         - title: Single-cell submission guide	
           url: /gea/single-cell.html	
-        - title: Spatial gene expression 
-          url: /gea/spatial-gene-expression.html   
         - title: Example	
           url: /gea/example.html	
         - title: Array Design	
@@ -513,8 +515,6 @@ gea:
           url: /gea/validation-e.html
         - title: Single-cell submission guide
           url: /gea/single-cell-e.html
-        - title: Spatial gene expression 
-          url: /gea/spatial-gene-expression-e.html   
         - title: Example
           url: /gea/example-e.html
         - title: Array Design
