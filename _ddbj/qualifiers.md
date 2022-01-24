@@ -88,7 +88,8 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
 
 
 定義
-: 配列が得られた生物材料(生きている個体・系統)の保管施設と識別子 
+: 配列が得られた生物材料(生きている個体・系統)の保管施設と識別子     
+[識別子について](/ddbj/identifiers.html) 参照    
 
 書式
 : [&lt;institution_code&gt;:[&lt;collection_code&gt;:]]&lt;material_id&gt; 
@@ -99,7 +100,7 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
 <pre>CGC:CB3912</pre> 
 
 備考
-: &lt;material_id&gt; は必須です。
+: &lt;material_id&gt; は必須です。    
 保管施設としては, 動物園, 水族館, stock centre, seed bank, germplasm repository, DNA bank などが含まれます。    
 &lt;institution_code&gt; は下記を参照してください。    
 [institution_code list](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/coll_dump.txt) (NCBI FTP site)    
@@ -175,7 +176,8 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
 ### /clone<a name="clone"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#clone)</span>
 
 定義
-: 配列の得られた clone の名称 
+: 配列の得られた clone の名称    
+[識別子について](/ddbj/identifiers.html) 参照    
 
 書式
 : &lt;text&gt; (全角, ダブルクォーテーション( " ) 不可) 
@@ -300,7 +302,8 @@ INSDC では 'Mmm' (月の略記) を含む "21-Oct-1952" のような旧書式�
 
 
 定義
-: 配列の得られた培養細胞の保管施設と ID 
+: 配列の得られた培養細胞の保管施設と ID    
+[識別子について](/ddbj/identifiers.html) 参照    
 
 書式
 : &lt;institution-code&gt;:[&lt;collection-code&gt;:]&lt;culture_id&gt; 
@@ -581,7 +584,9 @@ unknown
 ### /haplotype<a name="haplotype"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#haplotype)</span>
 
 定義
-: 同じ染色体上で連鎖する対立遺伝子の組み合わせの名称。組み換えがない場合それぞれのハプロタイプはひとつの単位として遺伝するので,集団の中での遺伝子流動を追うために使われます。 
+: 同じ染色体上で連鎖する対立遺伝子の組み合わせの名称。    
+組み換えがない場合それぞれのハプロタイプはひとつの単位として遺伝するので、集団の中での遺伝子流動を追うために使われます。    
+[識別子について](/ddbj/identifiers.html) 参照    
 
 書式
 : &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可) 
@@ -664,7 +669,8 @@ alignment:Splign:1.26p:RefSeq:NM_000041.2,INSD:BC003557.1</pre>
 ### /isolate<a name="isolate"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#isolate)</span>
 
 定義
-: 配列の得られたindividual isolate 
+: 配列の得られたindividual isolate    
+[識別子について](/ddbj/identifiers.html) 参照    
 
 書式
 : &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可) 
@@ -1339,7 +1345,8 @@ dioecious</pre>
 ### /specimen_voucher<a name="specimen_voucher"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#specimen_voucher)</span>
 
 定義
-: 配列の得られた標本(動植物個体の一部 または 全体)が維持管理されている管理団体とＩＤ 
+: 配列の得られた標本(動植物個体の一部 または 全体)が維持管理されている管理団体とＩＤ    
+[識別子について](/ddbj/identifiers.html) 参照    
 
 書式
 : [&lt;institution_code&gt;:[&lt;collection_code&gt;:]]&lt;specimen_id&gt; 
@@ -1361,7 +1368,8 @@ personal:Dan Janzen:99-SRNP-2003</pre>
 ### /strain<a name="strain"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#strain)</span><a name="strain"></a>
 
 定義
-: 配列の得られた strain の名称 
+: 配列の得られた strain の名称    
+[識別子について](/ddbj/identifiers.html) 参照    
 
 書式
 : &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可) ) 
@@ -1385,7 +1393,8 @@ personal:Dan Janzen:99-SRNP-2003</pre>
 ### /submitter_seqid<a name="submitter_seqid"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#submitter_seqid)</span>
 
 定義
-: [TSA](/ddbj/tsa.html), [TLS](/ddbj/tls.html), [WGS](/ddbj/wgs.html), [CON](/ddbj/con.html) におけるセット内で一意な識別子 
+: [TSA](/ddbj/tsa.html), [TLS](/ddbj/tls.html), [WGS](/ddbj/wgs.html), [CON](/ddbj/con.html) におけるセット内で一意な識別子    
+[識別子について](/ddbj/identifiers.html) 参照    
 
 書式
 : &lt;text&gt;    
@@ -1412,7 +1421,8 @@ scaffold25</pre>
 
 定義
 : 配列の得られた遺伝学的あるいは他の方法で改変された sub-strain の名称。    
-その親に当たる strain は [strain](#strain) qualifier に記載されます。 
+その親に当たる strain は [strain](#strain) qualifier に記載されます。    
+[識別子について](/ddbj/identifiers.html) 参照    
 
 書式
 : &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可) 
