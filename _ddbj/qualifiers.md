@@ -252,7 +252,7 @@ YYYY-MM-DDThh:mmZ/YYYY-MM-DDThh:mmZ
 'DD': 日を表す２桁の数字 (01 ～ 31)    
 'hh': 時を表す２桁の数字 (00 ～ 23)    
 'mm': 分を表す２桁の数字 (00 ～ 59)    
-'ss': 秒を表す２桁の数字 (00 ～ 59) 
+'ss': 秒を表す２桁の数字 (00 ～ 59)    
 
 例
 : <pre>2015-10-11T17:53:03Z
@@ -720,7 +720,8 @@ Homo sapiens HeLa cells</pre>
 45.0123 S 4.1234 E</pre>
 
 備考
-: 小数点以下の数字は分秒ではなく小数で記載してください。 
+: 小数点以下の数字は分秒ではなく小数で記載してください。    
+小数点以下第8位まで記載可能です。
 
 
 ### /linkage_evidence<a name="linkage_evidence"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#linkage_evidence)</span>
