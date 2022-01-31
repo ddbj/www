@@ -782,12 +782,12 @@ BioNano データをアセンブルに使用した場合、bnx ファイル、�
 
 ## DRA 登録の流れ  {#dra-data-submission}
 
-### 1. 登録アカウントを作成
+### 1. 登録アカウントを作成  {#obtain-account}
 
   - [D-way 登録アカウント](/account.html)を作成
   - [公開鍵と center name をアカウントに登録](/account.html#enable-dra-submission-in-account)し、DRA 登録を可能に
 
-### 2. DRA 登録を作成しデータファイルをアップロード
+### 2. DRA 登録を作成しデータファイルをアップロード  {#upload-data-files}
 
   - 新規 DRA 登録を作成 ([アカウントに DRA 登録権限を付与しておきます](/account.html#enable-dra-submission-in-account))  
     データは DRA 登録 (Submission) 単位で公開されます。
@@ -807,7 +807,7 @@ BioNano データをアセンブルに使用した場合、bnx ファイル、�
 
 <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">メタデータをタブ区切りテキストファイルで登録できます
 
-### 4. Experiment と Run を登録
+### 4. Experiment と Run を登録 {#submit-object}
 
 #### DRA Experiment <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#DRA_Experiment}
 
@@ -820,7 +820,7 @@ BioNano データをアセンブルに使用した場合、bnx ファイル、�
   - Experiment と Run を投稿した後、データファイルの検証処理を開始
   - Run にリンクしている全てのデータファイルは 1 つの SRA ファイルにマージされます
 
-### 5. シークエンスデータファイルの検証処理
+### 5. シークエンスデータファイルの検証処理 {#validate}
 
   - シークエンスデータファイルをアーカイブ用 SRA ファイルに変換する処理を開始
   - 検証処理を通った登録が査定されアクセッション番号が発行される

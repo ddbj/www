@@ -957,13 +957,13 @@ platforms.
 
 ## Data submission to DRA  {#dra-data-submission}
 
-### 1. Obtain a submission account 
+### 1. Obtain a submission account  {#obtain-account}
 
   - Create a [D-way submission account](https://ddbj.nig.ac.jp/D-way/)
   - To enable DRA submission, [register a public key and a center name
     to the account](/account-e.html#enable-dra-submission-in-account)
 
-### 2. Create a DRA submission and upload data files 
+### 2. Create a DRA submission and upload data files  {#upload-data-files} 
 
   - Create a new DRA submission ( [Add DRA submission functionality to
     your account](/account-e.html#enable-dra-submission-in-account))  
@@ -972,7 +972,7 @@ platforms.
   - Upload data files by scp before submitting BioProject, BioSample,
     Experiment and Run
 
-### 3. Submit project and sample information {#project-sample}
+### 3. Submit project and sample information  {#project-sample}
 
 #### [BioProject](/bioproject/submission-e.html)  {#BioProject_Study}
 
@@ -986,7 +986,7 @@ platforms.
 
 <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">metadata can be submitted as a tab-delimited text file
 
-### 4. Submit Experiment and Run 
+### 4. Submit Experiment and Run {#submit-object} 
 
 #### DRA Experiment <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#DRA_Experiment}
   - A description of a sample-specific sequencing library
@@ -998,7 +998,7 @@ platforms.
   - Validate data files after submitting Experiment and Run
   - All files linked to a Run are “merged” into a single SRA file format
 
-### 5. Validate sequencing data files
+### 5. Validate sequencing data files {#validate}
 
   - Start to convert sequencing data files into a SRA file for
     archiving.
