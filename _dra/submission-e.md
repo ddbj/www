@@ -818,6 +818,27 @@ further compressing them. Therefore, please provide
 
 DRA does not accept qseq files. Please convert qseq to fastq/bam.
 
+### BGI-seq  {#BGI}
+
+Submit fastq files.       
+Single-end fastq files are loaded correctly, howeber, BGISeq/DNBSeq/MGISeq paired fastq files with readnames like @V350022671L2C001R0010000042/1 are not loaded as paired end.  
+Please convert original readnames to Illumina format to be loaded as paired reads.
+
+```
+@V350022671L2C001R0010000042/1
+→
+@BGI:1:V350022671L2C001R0010000042:1:1:1:1 1:N:0:0
+```
+
+```
+@V350022671L2C001R0010000042/2
+→
+@BGI:1:V350022671L2C001R0010000042:1:1:1:1 2:N:0:0
+```
+
+When fastq files with original readnames are validated, the DRA team will convert these names and load them again.  
+So please do NOT re-start validation and wait until loaded.
+
 ### SOLiD  {#SOLiD} 
 
 #### SOLiD Native Format  {#SOLiD_Native_Format}
