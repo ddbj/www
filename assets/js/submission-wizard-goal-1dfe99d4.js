@@ -1,4 +1,4 @@
-import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a as v,l as R,n as q}from"./submission-wizard-7b0b67f4.js";/**
+import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a as v,l as R,n as q}from"./submission-wizard-75a28a16.js";/**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
@@ -133,7 +133,7 @@ import{T as p,b as S,r as y,L as w,p as r,m as d,s as D,e as A,t as u,y as B,a a
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
   <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
 </ol></p>
-`,ja:null}}]},"q5-genome-prokaryote-complete-dramss>g-bp-bs-dra-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<ul>
+`,ja:null}}]},"q5-genome-prokaryote-complete-dramss->g-bp-bs-dra-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<ul>
   <li>Register raw sequencing reads to the <a href="/dra/submission-e.html">DDBJ Sequence Read Archive (DRA)</a>.</li>
   <li>Register a project to BioProject and a sample to BioSample during or before the DRA submission.</li>
   <li>Submit complete genome sequences of prokaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
