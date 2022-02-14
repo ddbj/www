@@ -255,7 +255,7 @@ SRA にデータを登録する際にはこの Center Name が必要です。
 <!-- end list -->
 
 [Instrument](#Instrument)<a name="Instrument"></a><span class="red">*</span>  
-: シークエンサの機種を選択します。
+: シークエンサの機種を選択します。Sequel IIe の場合、Sequel II を選択し、[Library Construction Protocol](#Library_Construction_Protocol) に Sequel IIe を使ったことを記載してください。 
 
 | Instrument Model                    |
 |---|
