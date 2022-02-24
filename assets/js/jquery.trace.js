@@ -558,7 +558,7 @@ $(function(){
   };
 });
 
-/* 画像ビュー */
+/* 画像ビュー 
 $(function(){
   if($.isFunction($.fn.colorbox)){
    
@@ -569,7 +569,7 @@ $(function(){
     // youtube ポップアップ
     $("a.youtube_figure").colorbox({iframe:true, innerWidth:"80%", innerHeight:"80%", close: closeText});
   }
-});
+});*/
 
 /* サンプル属性 */
 $(function(){
@@ -605,86 +605,43 @@ $(function(){
   var pathname = window.location.pathname;
   var protocol = window.location.protocol;	
 
-  var url_no_params = url.split("?")[0];
-  
-  var anchor = "";
-  if ( url.split('#')[1] ) anchor = "#" + url.split('#')[1];
-  
   // 言語判定
   var la = "ja";
   if ( pathname.match(/-e.html/) ) la = "en";
-
-  /* social icon の設置 ローカル用 */
-  var twitter_href = "";
-  var facebook_href = "";
-  var google_href = "";
-  var title = $("title").text().replace(/<(.*?)>/g, '');
-
-  twitter_href = "?url=" + url_no_params + "&text=" + title;
-  facebook_href = "?u=" + url_no_params;
-  google_href = "?url=" + url_no_params;
-
-  $('#share').prepend('<a href="https://twitter.com/share' + twitter_href + '" target="_blank" class="socials-share-link twitter"><i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/sharer/sharer.php' + facebook_href + '" target="_blank" class="socials-share-link facebook-official"><i class="fa fa-facebook-official"></i></a><a href="https://plus.google.com/share' + google_href + '" target="_blank" class="socials-share-link google"><i class="fa fa-google"></i></a>');
-
-  // get パラメータ表示操作
-  var prms = getUrlVars();
-
-  // get パラメータでラジオボタンにチェックを入れる
-  if (prms.Core) {
-    $('input[name="Core"]').each(function(){
-      if ( $(this).attr("value") == prms.Core ){
-        $(this).attr("checked", "checked");
-      }
-    });
-  }
-
-  if (prms.SampleType) {
-    $('input[name="SampleType"]').each(function(){
-      if ( $(this).attr("value") == prms.SampleType ){
-        $(this).attr("checked", "checked");
-      }
-    });
-  }
-
-  if (prms.Package) {
-    if ( prms.Package == "No_package" ){
-      $("input#No_package").attr("checked", "checked");
-    } else {
-      $('input[name="Package"]').each(function(){
-        if ( $(this).attr("value") == "MIGS/MIMS/MIMARKS." + prms.Package ){
-          $(this).attr("checked", "checked");
-        }
-      });
-    }
-  }
 
   // 親がチェックされていれば表示する
   if( $('.biosample_attr input[value="MIxS"]:checked').val() ){
     $('.biosample_attr input[value="MIxS"]').parent(".radio").nextAll("ul").show();
     $("#env_package").show();
+  } else if( $('.biosample_attr input[value="Standard"]:checked').val() ){
+    $('.biosample_attr input[value="Standard"]').parent(".radio").nextAll("ul").show();
+    $("#env_package").hide();
+  } else if( $('.biosample_attr input[value="Pathogen"]:checked').val() ){
+    $('.biosample_attr input[value="Pathogen"]').parent(".radio").nextAll("ul").show();
+    $("#env_package").hide();
   }
 
   // input 変化
   $('.biosample_attr input[name="Core"]').change(function(){
     if( this.value == "MIxS" ){
+      $('.biosample_attr input[value!="MIxS"]').removeAttr("checked");
+      $('.biosample_attr input[name="Core"]').parent(".radio").nextAll("ul").hide();
       $(this).parent(".radio").nextAll("ul").show();
-      $("#env_package").show();		
-    } else if ( this.value == "FunctionalGenomics" ) {
-      // FunctionalGenomics 以外の checked を削除
-      $('.biosample_attr input[value!="FunctionalGenomics"]').removeAttr("checked");
+      $("#env_package").show();
+    } else if ( this.value == "Standard" ) {
+      $('.biosample_attr input[value!="Standard"]').removeAttr("checked");
       $('.biosample_attr input[name="Core"]').parent(".radio").nextAll("ul").hide();
+      $(this).parent(".radio").nextAll("ul").show();
       $("#env_package").hide();
-    } else if ( this.value == "Generic" ) {
-      // Generic 以外の checked を削除
-      $('.biosample_attr input[value!="Generic"]').removeAttr("checked");
+    } else if ( this.value == "Pathogen" ) {
+      $('.biosample_attr input[value!="Pathogen"]').removeAttr("checked");
       $('.biosample_attr input[name="Core"]').parent(".radio").nextAll("ul").hide();
-      $("#env_package").hide();
-    } else {
-      $('.biosample_attr input[name="Core"]').parent(".radio").nextAll("ul").hide();
+      $(this).parent(".radio").nextAll("ul").show();
       $("#env_package").hide();
     }
   });
 
+  // 必須マークを除外
   $(".biosample_attr input").change(function(){
     $(".biosample_attr .required").removeClass("required");
   });
@@ -704,24 +661,14 @@ $(function(){
   /* list all attributes クリック時 */
   $("#all").click(function(){
   
-    var params_h = {};
-    params_h["all"] = "all";
-
-    // get パラメータ作成
-    var get_params = "";
-    if ( Object.keys(params_h).length ){
-      get_params = jQuery.param(params_h);
-      window.history.pushState(null, null, url_no_params + "?" + get_params + anchor);
-    }
-
     // 選択済みラジオボタンを非選択化
-    // MIMS or MIMARKS 選択で No package 非表示
     $('.biosample_attr input').removeAttr('checked');
     $('#env_package').hide();
     $('#sample_type ul ul').hide();
 
     // all 選択時の処理
       $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
+      //$.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1BwzRPc5g5bLH9tLj1MFSykXzMX5Zb52Zxoorf88bSLI/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
       attr_table = "";
       attr_table += '<p class="attr-title">All attributes</p>';
@@ -735,8 +682,9 @@ $(function(){
         var name = entries[0];
         var harmonizedname = entries[1];
         var synonym = entries[2];
-        var description = entries[3];
-        var descriptionja = entries[4];
+        var format = entries[3];
+        var description = entries[4];
+        var descriptionja = entries[5];
 
         var description_place = ""
         if( la == "ja" ){
@@ -763,93 +711,56 @@ $(function(){
 
       $('.bs_desc').after(attr_table);
 
-      // anchor 指定時にページ内遷移
-      if (anchor && $(anchor).length){
-        $(document).scrollTop( $(anchor).offset().top ); 
-      }
-
     }); // $.getJSON
 
   }); // $("#all").click(function()
 
   // パラメータでの指定時
-  if ( prms.all == "all" ) {
-    $('#all').click();
-  }
-
-  /* package + env 定義属性リスト表示ボタンクリック */
+  // package + env 定義属性リスト表示ボタンクリック 
   $("#definition").click(function(){
 
-    /* 選択チェック MIxS の場合 env 必須　*/      
+    // 選択チェック MIxS の場合 env 必須
     var core = $('.biosample_attr input[name="Core"]:checked').val();
-    var mixs = $('.biosample_attr input[name="SampleType"]:checked').val();
+    var type = $('.biosample_attr input[name="SampleType"]:checked').val();
     var env = $('.biosample_attr input[name="Package"]:checked').val();
 
     // core が選択されていない
-    if(!core) {
+    if (!core) {
       $('.biosample_attr input[name="Core"]').parent(".radio").addClass("required");
       return false;
-    } else if ( core!="Generic" ) {
-      if ( core=="FunctionalGenomics" ) {
-
-      } else if (!mixs || !env) {
-        if (!mixs) {
-          $('.biosample_attr input[name="SampleType"]').parent(".radio").addClass("required");
-        } 
-        if (!env) {
-          $('.biosample_attr input[name="Package"]').parent(".radio").addClass("required");
-        }
-        return false;
-      }
-    }   
-
-    // URL 書き換え、ブラウザーの履歴には残らない
-    var params_h = {};
-
-    if( core ){ 
-      params_h["Core"] = core;
-    } 
-
-    if( mixs ){ 
-      params_h["SampleType"] = mixs;
+    } else if (!type && !env){
+      $('.biosample_attr input[name="SampleType"]').parent(".radio").addClass("required");
+      $('.biosample_attr input[name="Package"]').parent(".radio").addClass("required");
+      return false;
+    } else if (!type){
+      $('.biosample_attr input[name="SampleType"]').parent(".radio").addClass("required");
+      return false;
+    } else if (core=="MIxS" && type && !env) {
+      $('.biosample_attr input[name="Package"]').parent(".radio").addClass("required");
+      return false;      
     }
 
-    if( env ){ 
-      if( env == "No_package" ){
-        params_h["Package"] = "No_package";
-      } else {
-        params_h["Package"] = env.replace("MIGS/MIMS/MIMARKS.", "");
-      }
-    }
-    
-    params_h["definition"] = "definition";
-
-    // get パラメータ作成
-    var get_params = "";
-    if ( Object.keys(params_h).length ){
-      get_params = jQuery.param(params_h);
-      window.history.pushState(null, null, url_no_params + "?" + get_params);
+    if (core!="MIxS") {
+      env = "";
     }
 
     // package の name 構築
     var package_shortname = "";
 
-    if ( core=="Generic" ){
-      package_shortname = "Generic";
-    } else if ( core=="FunctionalGenomics" ) {
-      package_shortname = "Functional.genomics";
-    } else if ( core=="MIxS" ) {
+    if( env ){
       if( env=="No_package" ){
-        package_shortname = mixs;
-      // no package
+        package_shortname = type;
       } else {
-        package_shortname = mixs + env.replace("MIGS/MIMS/MIMARKS", "");
+        package_shortname = type + '.' + env;
       }
+    } else {
+      package_shortname = type;
     }
 
-    // package 選択時の処理
-    $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
-
+    // package 選択時の処理 attribute シートを起点に
+      $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
+      //$.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1BwzRPc5g5bLH9tLj1MFSykXzMX5Zb52Zxoorf88bSLI/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
+      
       var span_required = "";
 
       attr_table = "";
@@ -899,10 +810,21 @@ $(function(){
         attr_table += '</p>';           
       }
 
-      attr_table += '<div id="biosample_attr_area"><table id="biosample_attr_table"><thead><tr class="biosample_header"><th class="name">Name</th><th class="description"Description</th></tr></thead><tbody>';
+      attr_table += '<div id="biosample_attr_area"><table id="biosample_attr_table"><thead><tr class="biosample_header"><th class="name">Name</th><th class="description">Description</th></tr></thead><tbody>';
 
       // name 毎に選択された package shorname の M O - で判定していく
-      var pac_names = data.values[0];
+      var pac_names = data.values[0];   
+      var e = 0;   
+      var pre_group = "";      
+
+      // attribute シートの package short name の位置取得
+      var package_position = 0;
+      for(var j = 0; j < pac_names.length; j++) {
+          if(pac_names[j] == package_shortname){
+            package_position = j;
+          }
+      }
+
       for(var i = 1; i < data.values.length; i++) {
 
         var entries = data.values[i];
@@ -910,8 +832,9 @@ $(function(){
         var name = entries[0];
         var harmonizedname = entries[1];
         var synonym = entries[2];
-        var description = entries[3];
-        var descriptionja = entries[4];
+        var format = entries[3];
+        var description = entries[4];
+        var descriptionja = entries[5];
 
         var description_place = ""
         if( la == "ja" ){
@@ -922,18 +845,25 @@ $(function(){
         
         // attribute シートの package short name の位置取得
         var option = "";
-        for(var j = 0; j < pac_names.length; j++) {
-          if(pac_names[j] == package_shortname){
-            option = entries[j];
-          }
-        }
-
+        option = entries[package_position];
+          
         // 属性の M O - 判定
         var optional_pattern = /^O/;
         var required_pattern = /^M/;
+        var either_one_pattern = /^E:([A-Za-z]*)/;
         if ( option.match(required_pattern) ){
           span_required = '<span class="required">*</span>';
           attr_table += '<tr id="' + name + '"><td class="name"><a href="#' + name + '">' + name + '</a>' + span_required + '</td><td class="description">' + description_place + '</td></tr>';
+        } else if ( option.match(either_one_pattern) ) {
+          group = option.match(either_one_pattern)[1].toLowerCase();                
+          
+          if(group!=pre_group){
+            e = e + 1;
+          };
+          
+          span_required = '<span class="required">**' + e + '</span>';
+          attr_table += '<tr id="' + name + '"><td class="name"><a href="#' + name + '">' + name + '</a>' + span_required + '</td><td class="description">' + description_place + '</td></tr>';                    
+          pre_group = group;
         } else if ( option.match(optional_pattern) ) {
           attr_table += '<tr id="' + name + '"><td class="name"><a href="#' + name + '">' + name + '</a></td><td class="description">' + description_place + '</td></tr>';
         }
@@ -957,113 +887,6 @@ $(function(){
     }); // $.getJSON
 
   }); // $("#definition").click(function()
-
-  // パラメータでの指定時
-  if ( prms.definition == "definition" && prms.all != "all" ) {
-    $('#definition').click();
-  }
-
-  /* package + env 定義属性ファイルダウンロードボタンクリック */
-  $("#download").click(function(e){
-
-    /* 選択チェック MIxS の場合 env 必須　*/      
-    var core = $('.biosample_attr input[name="Core"]:checked').val();
-    var mixs = $('.biosample_attr input[name="SampleType"]:checked').val();
-    var env = $('.biosample_attr input[name="Package"]:checked').val();
-
-    // core が選択されていない
-    if(!core) {
-      $('.biosample_attr input[name="Core"]').parent(".radio").addClass("required");
-      return false;
-    } else if ( core!="Generic" ) {
-      if ( core=="FunctionalGenomics" ) {
-
-      } else if (!mixs || !env) {
-        if (!mixs) {
-          $('.biosample_attr input[name="SampleType"]').parent(".radio").addClass("required");
-        } 
-        if (!env) {
-          $('.biosample_attr input[name="Package"]').parent(".radio").addClass("required");
-        }
-        return false;
-      }
-    }   
-
-    // package の shorname 取得
-    var package_shortname = "";
-
-    if ( core=="Generic" ){
-      package_shortname = "Generic";
-    } else if ( core=="FunctionalGenomics" ) {
-      package_shortname = "Functional.genomics";
-    } else if ( core=="MIxS" ) {
-      if( env=="No_package" ){
-        package_shortname = mixs;
-      // no package
-      } else {
-        package_shortname = mixs + env.replace("MIGS/MIMS/MIMARKS", "");
-      }
-    }
-
-    // package 選択時の tsv ダウンロード提供処理
-    $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
-
-      var tsv_a = [];
-      var pac_names = data.values[0];
-
-      // name 毎に選択された package shorname の M O - で判定していく
-      for(var i = 1; i < data.values.length; i++) {
-
-        var entries = data.values[i];
-        var name = entries[0];               
- 
-        // attribute シートの package short name の位置取得
-        for(var j = 0; j < pac_names.length; j++) {
-          if(pac_names[j] == package_shortname){
-            var option = entries[j];
-          }
-        }
-
-        // 属性の M O - 判定
-        var optional_pattern = /^O/;
-        var required_pattern = /^M/;
-        if ( option.match(required_pattern) ){
-          tsv_a.push("*" + name);
-        } else if ( option.match(optional_pattern) ) {
-          tsv_a.push(name);
-        }
-          
-      } // for(var i = 0; i < entries.length; i++)
-      
-      var content = tsv_a.join("\t");
-
-      // filename 処理
-      var fileName = "";
-      if( core == "Generic" ){
-        fileName = "Generic.txt";
-      } else if ( core=="FunctionalGenomics" ) {
-        fileName = "Functional.genomics.txt";
-      } else {
-        if(env) {
-          if( env == "No_package" ){
-            fileName = mixs + ".txt";
-          } else {
-            env_name = env.replace("MIGS/MIMS/MIMARKS.", "");
-            fileName = mixs + "." + env_name + ".txt";
-          }
-        } else {
-          fileName = mixs + ".txt";
-        }
-      }
-
-      var link = document.createElement('a');
-      link.href = window.URL.createObjectURL( new Blob( [content] ) );
-      link.download = fileName;
-      link.click();
-
-    }); // $.getJSON
-
-  }); // $("#definition").click(function(e)
 
 });
 

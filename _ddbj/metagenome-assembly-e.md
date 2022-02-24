@@ -49,10 +49,8 @@ in the taxonomy database.
 
 #### BioSample  {#raw-reads-biosample}
 
-Register your BioSample by using the ["Genome, metagenome or marker
-sequences (MIxS compliant) - Environmental/Metagenome Genomic Sequences
-(MIMS)"](/biosample/submission-e.html#Meta_Genomic_Sequences_Sample)
-package. For the organism name, choose the most appropriate "xyz
+Register your BioSample by using the [MIxS MIMS.me](/biosample/submission-e.html#mixs) package. 
+For the organism name, choose the most appropriate "xyz
 metagenome" (e.g., soil metagenome) from this list of [metagenome
 organism
 names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/)
@@ -95,35 +93,25 @@ Same as (1) Raw reads.
 
 #### BioSample  {#binned-metagenome-biosample}
 
-Register a virtual BioSample by using the ["Other
-samples"](/biosample/submission-e.html#General_Sample) package. Describe
+Register a virtual BioSample by using the ["MIMAG"](/biosample/submission-e.html#mixs) package. Describe
 an organism name without 'uncultured' (e.g., "Agrobacterium tumefaciens", "Agrobacterium sp.", "Rhizobiaceae bacterium")
-in the taxonomy database from which the MAG was derived. Please note
+in the taxonomy database from which the binned assembly was derived. Please note
 that a virtual BioSample derived from the MIMS metagenomic sample used
 in (1) is required for a binned submission.
 
 Among organism names assigned by [GTDB](https://gtdb.ecogenomic.org/), please convert ones not registered in [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi) to corresponding NCBI Taxonomy's names.
 
-Following sample attributes other than the organism are necessary.
+Please describe following attributes to show sample source.   
 
-Fixed terms
-- sample\_type: metagenomic assembly
+Describe metagenome source in metagenome_source by using one of [metagenome organism
+names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/).  
+Example)  
+metagenome_source: soil metagenome    
 
-Sample isolation
-- metagenome\_source: xyz metagenome
-- isolate
-- isolation\_source
-
-Sample collection
-- collection\_date
-- env\_biome
-- env\_feature
-- env\_material
-- geo\_loc\_name
-- lat\_lon
-
-Derived BioSample
-- derived\_from: This biosample is a metagenomic assembly obtained from the xyz metagenome BioSample: SAMD00000001,SAMD00000002,SAMD00000010-SAMD00000015.
+Indicate derived metagenome sample registered in (1) by entering BioSample accession(s) in derived_from.  
+Example)  
+derived_from: SAMD00000001  
+derived_from: SAMD00000002,SAMD00000003,SAMD00000010-SAMD00000015  
 
 #### DRA  {#binned-metagenome-dra}
 
@@ -151,36 +139,27 @@ submit the MAG to DDBJ.
 
 #### BioSample  {#mag-biosample}
 
-Register a virtual BioSample by using the ["Other
-samples"](/biosample/submission-e.html#General_Sample) package. Describe
-an organism name without 'uncultured' (e.g., Agrobacterium tumefaciens)
+Register a virtual BioSample by using the ["MIMAG"](/biosample/submission-e.html#mixs) package. 
+Describe an organism name without 'uncultured' (e.g., Agrobacterium tumefaciens)
 in the taxonomy database from which the MAG was derived. Please note
 that a virtual BioSample derived from the MIMS metagenomic sample used
 in (1) is required for a MAG submission.
 
 Among organism names assigned by [GTDB](https://gtdb.ecogenomic.org/), please convert ones not registered in [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi) to corresponding NCBI Taxonomy's names.
 
-Following sample attributes other than the organism are necessary.
-[Example BioSample](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=272411182)
+Please describe following attributes to show sample source.   
 
-Fixed terms
-- sample\_type: metagenomic assembly
+Describe metagenome source in metagenome_source by using one of [metagenome organism
+names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/).  
+Example)  
+metagenome_source: soil metagenome    
 
-Sample isolation
-- metagenome\_source: xyz metagenome
-- isolate
-- isolation\_source
+Indicate derived metagenome sample registered in (1) by entering BioSample accession(s) in derived_from.  
+Example)  
+derived_from: SAMD00000001  
+derived_from: SAMD00000002,SAMD00000003,SAMD00000010-SAMD00000015   
 
-Sample collection
-- collection\_date
-- env\_biome
-- env\_feature
-- env\_material
-- geo\_loc\_name
-- lat\_lon
-
-Derived BioSample
-- derived\_from: This biosample is a metagenomic assembly obtained from the xyz metagenome BioSample: SAMD00000001,SAMD00000002,SAMD00000010-SAMD00000015.
+[Example BioSample](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=272411182)  
 
 #### DRA  {#mag-dra}
 

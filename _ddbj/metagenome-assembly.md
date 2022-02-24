@@ -15,7 +15,7 @@ lang: ja
 (3) Binning され既知の分類群に帰属されたアセンブリ配列（Binned メタゲノム）    
 (4) 単一の分類群に帰属された Binned     アセンブリ配列の中で、分類群を代表する、配列の完成度・コンタミネーション割合といった指標が最も高品質なアセンブリ配列（Metagenome-Assembled Genome、MAG）
 
-DDBJセンターにおいて (1)-(3) は DRA で、(4) は DDBJ で受付けています。MAG 配列の品質に関しては[こちらの文献](https://www.nature.com/articles/nbt.3893)を参照してください。        
+DDBJ センターにおいて (1)-(3) は DRA で、(4) は DDBJ で受付けています。MAG 配列の品質に関しては[こちらの文献](https://www.nature.com/articles/nbt.3893)を参照してください。        
 配列が由来するサンプル情報に関して、(1)-(2) はメタゲノムサンプルを、(3) と (4) はメタゲノムサンプルから派生した Binned と MAG サンプルをそれぞれ BioSample に登録します。    
 研究概要は BioProject に登録し、全てのデータから同じ BioProject を参照することで、一連のデータをメタゲノムプロジェクトとしてまとめます。
 
@@ -39,9 +39,7 @@ names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=40
 
 #### BioSample  {#raw-reads-biosample}
 
-["Genome, metagenome or marker sequences (MIxS compliant) -
-Environmental/Metagenome Genomic Sequences
-(MIMS)"](/biosample/submission.html#Meta_Genomic_Sequences_Sample) パッケージを選択します。
+[MIxS MIMS.me](/biosample/submission.html#mixs) パッケージを選択します。
 メタゲノムサンプルの場合、生物名は [metagenome organism
 names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/)
 から適切なものを選び、"xyz metagenome" (例 soil metagenome)
@@ -78,33 +76,23 @@ Binning され、既知の分類群に帰属されたアセンブリ配列を [D
 
 #### BioSample  {#binned-metagenome-biosample}
 
-Binned サンプル用にバーチャルなサンプルを登録します。パッケージは ["Other
-samples"](/biosample/submission.html#General_Sample) を選択し、生物名には
+Binned サンプル用にバーチャルなサンプルを登録します。パッケージは ["MIMAG"](/biosample/submission.html#mixs) を選択し、生物名には
 uncultured が冠されていない、Binned アセンブリが由来する生物名を記載します (例 "Agrobacterium tumefaciens"、Agrobacterium sp."、"Rhizobiaceae bacterium")。
 (1) の DRA Run 登録に使用する "xyz metagenome" メタゲノムサンプルとは別にバーチャルな Binned 用サンプルが必要になります。　　　　
 
 解析ツール [GTDB](https://gtdb.ecogenomic.org/) が割り当てた生物名で [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi) に登録されていない名前は、そのまま使うことができません。対応する [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi) に登録されている名前に変換した上で登録します。
 
-生物名以外に以下のサンプル属性が必須です。
+由来サンプルを示すため以下の属性を記載します。   
 
-規定値
-- sample\_type: metagenomic assembly
+メタゲノムの由来を [metagenome organism
+names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/) から適切なものを選び metagenome_source に "xyz metagenome" (例 soil metagenome) として記載します。   
+例 　
+metagenome_source: soil metagenome   
 
-サンプルの由来情報
-- metagenome\_source: xyz metagenome
-- isolate
-- isolation\_source
-
-サンプルの採取情報
-- collection\_date
-- env\_biome
-- env\_feature
-- env\_material
-- geo\_loc\_name
-- lat\_lon
-
-派生元 BioSample
-- derived\_from: This biosample is a metagenomic assembly obtained from the xyz metagenome BioSample: SAMD00000001,SAMD00000002,SAMD00000010-SAMD00000015.
+バーチャルな BioSample の派生元である (1) で登録したメタゲノムサンプルのアクセッション番号を derived_from に記載します。  
+例  
+derived_from: SAMD00000001  
+derived_from: SAMD00000002,SAMD00000003,SAMD00000010-SAMD00000015　　　
 
 #### DRA  {#binned-metagenome-dra}
 
@@ -114,7 +102,7 @@ Analysis は ENA/NCBI と共有されません。また、[DDBJ Search](https://
 
 ### (4) MAG {#mag}
 
-単一の分類群に帰属された Binned     アセンブリ配列の中で、分類群を代表する、配列の完成度・コンタミネーション割合といった指標が最も高品質なアセンブリ配列（Metagenome-Assembled Genome、MAG）は DDBJ の [ENV division](/ddbj/env.html) にゲノムエントリとして登録します。MAG 配列の品質に関しては[こちらの文献](https://www.nature.com/articles/nbt.3893)を参照してください。
+単一の分類群に帰属された Binned アセンブリ配列の中で、分類群を代表する、配列の完成度・コンタミネーション割合といった指標が最も高品質なアセンブリ配列（Metagenome-Assembled Genome、MAG）は DDBJ の [ENV division](/ddbj/env.html) にゲノムエントリとして登録します。MAG 配列の品質に関しては[こちらの文献](https://www.nature.com/articles/nbt.3893)を参照してください。
 
 #### BioProject {#mag-bioproject}
 
@@ -122,32 +110,25 @@ Analysis は ENA/NCBI と共有されません。また、[DDBJ Search](https://
 
 #### BioSample  {#mag-biosample}
 
-MAG サンプル用にバーチャルなサンプルを登録します。パッケージは ["Other
-samples"](/biosample/submission.html#General_Sample) を選択し、生物名には
-uncultured が冠されていない、MAG 配列が由来する生物名を記載します (例 "Agrobacterium tumefaciens")。(1) の DRA Run 登録に使用する "xyz metagenome" メタゲノムサンプルとは別にバーチャルな MAG 用サンプルが必要になります。
+MAG サンプル用にバーチャルなサンプルを登録します。パッケージは ["MIMAG"](/biosample/submission.html#mixs) を選択し、生物名には
+uncultured が冠されていない、MAG 配列が由来する生物名を記載します (例 "Agrobacterium tumefaciens")。
+(1) の DRA Run 登録に使用する "xyz metagenome" メタゲノムサンプルとは別にバーチャルな MAG 用サンプルが必要になります。　　　　
 
 解析ツール [GTDB](https://gtdb.ecogenomic.org/) が割り当てた生物名で [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi) に登録されていない名前は、そのまま使うことができません。対応する [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi) に登録されている名前に変換した上で登録します。
 
-生物名以外に以下のサンプル属性が必須です。
+由来サンプルを示すため以下の属性を記載します。   
 
-規定値
-- sample\_type: metagenomic assembly
+メタゲノムの由来を [metagenome organism
+names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/) から適切なものを選び metagenome_source に "xyz metagenome" (例 soil metagenome) として記載します。   
+例 　
+metagenome_source: soil metagenome   
 
-サンプルの由来情報
-- metagenome\_source: xyz metagenome
-- isolate
-- isolation\_source
+バーチャルな BioSample の派生元である (1) で登録したメタゲノムサンプルのアクセッション番号を derived_from に記載します。  
+例  
+derived_from: SAMD00000001  
+derived_from: SAMD00000002,SAMD00000003,SAMD00000010-SAMD00000015　　
 
-サンプルの採取情報
-- collection\_date
-- env\_biome
-- env\_feature
-- env\_material
-- geo\_loc\_name
-- lat\_lon
-
-派生元 BioSample
-- derived\_from: This biosample is a metagenomic assembly obtained from the xyz metagenome BioSample: SAMD00000001,SAMD00000002,SAMD00000010-SAMD00000015.
+[BioSample 登録例](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=272411182)  
 
 #### DDBJ {#mag-ddbj}
 
