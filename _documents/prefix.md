@@ -364,6 +364,16 @@ PB      JPO             Patent application
 PC      JPO             Patent application
 PD      JPO             Patent application
 PE      DDBJ            
+PF      DDBJ            
+PG      DDBJ            
+PH      DDBJ            
+PI      DDBJ            
+PJ      DDBJ            
+PK      DDBJ            
+PL      DDBJ            
+PM      DDBJ            
+PN      DDBJ            
+PO      DDBJ            
 Q       void            UniProt/Swiss-Prot
 R       GenBank         EST
 S       GenBank         Journal scanning
