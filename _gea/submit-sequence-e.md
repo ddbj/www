@@ -32,6 +32,10 @@ BioProject and BioSample registration is required for DRA submission.
 
 <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">metadata can be submitted as a tab-delimited text file.
 
+#### [DDBJ](/ddbj/index-e.html) {#DDBJ}
+
+- If reference sequences used in functional genomics analysis are not registered to INSDC, submit reference [genome](/ddbj/genome-e.html) or [transcriptome shotgun assembly](/ddbj/tsa-e.html) sequences to DDBJ.
+
 ### 3. Upload processed data files {#upload}
 
 - Upload processed data files into the GEA submission directory.
