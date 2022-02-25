@@ -19,6 +19,6 @@ lang: ja
 採取時点のサンプルに実質的な影響を及ぼす環境要因を記載します。複数の用語はパイプ (|) で区切って記載します。例 shoreline [ENVO:00000486]|intertidal zone [ENVO:00000316]
 
 [env_medium](/biosample/attribute.html?all=all#env_medium)  
-採取時点のサンプルによって置換されていた物質を記載します。environmental material \[[ENVO:00010483]\](https://www.ebi.ac.uk/ols/ontologies/envo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FENVO_00010483) サブクラスの用語を推奨。複数の用語はパイプ (|) で区切って記載します。例 estuarine water [ENVO:01000301]|estuarine mud [ENVO:00002160]
+採取時点のサンプルによって置換されていた物質を記載します。environmental material \[[ENVO:00010483](https://www.ebi.ac.uk/ols/ontologies/envo/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FENVO_00010483)\] サブクラスの用語を推奨。複数の用語はパイプ (|) で区切って記載します。例 estuarine water [ENVO:01000301]|estuarine mud [ENVO:00002160]
 
 
