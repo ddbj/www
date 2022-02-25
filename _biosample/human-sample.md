@@ -11,7 +11,7 @@ lang: ja
 
 個人に由来するデータ（ヒトデータ）を DDBJ センターが運営するデータベースに登録する場合、[ヒトを対象とした研究データの登録について](/policies.html#submission-of-human-data)を遵守してください。  
 
-
+注意: プライバシー侵害の恐れのないヒトサンプルにのみ使用してください。登録者の責任において、適用される法律や指針に従い、由来個人を直接特定できるような情報を取り除いてください。データを保護する必要がある場合、アクセス制限の仕組みを備えた [Japanese Genotype-phenotype Archive (JGA)](/jga/index.html) にヒトデータを登録してください。ヒトから単離されたサンプルには Pathogen、Microbe もしくは適切な MIxS パッケージを使用してください。
 
 ## サンプル属性  {#attribute}
 
@@ -19,20 +19,9 @@ lang: ja
 
 ### 個人由来試料 {#human-subject}
 
-必須
-- biomaterial provider
-- isolate
-- age
-- tissue
-- sex
-
 isolate には匿名化された subject id を記載します。
 
 ### 細胞株 {#cell-line}
-
-必須
-- cell line 
-- biomaterial provider
 
 推奨
 - cell_type
