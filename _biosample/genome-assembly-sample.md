@@ -11,8 +11,8 @@ lang: ja
 
 [DDBJ のゲノム配列](/ddbj/mss.html)は一つの BioProject と一つの BioSample にリンクしなければならないという制約があります。この制約はゲノムアセンブリを管理するため、INSDC で設けられています。
 ゲノムアセンブリに使用したサンプルは以下のパッケージで BioSample に登録します。
-- 単離培養された原核生物の場合: [Cultured Bacterial/Archaeal Genomic Sequences (MIGS)](/biosample/attribute.html)
-- 真核生物の場合: [Eukaryotic Genomic Sequences (MIGS)](/biosample/attribute.html)
+- 単離培養された原核生物の場合: [Cultured Bacterial/Archaeal Genomic Sequences (MIGS.ba)](/biosample/attribute.html)
+- 真核生物の場合: [Eukaryotic Genomic Sequences (MIGS.eu)](/biosample/attribute.html)
 
 アノテーションが付与されたゲノム配列を [DDBJ](/ddbj/mss.html) に登録する場合、locus_tag_prefix 属性に記載して [Locus tag prefix](/ddbj/locus_tag.html) を取得します。
 
@@ -30,26 +30,8 @@ lang: ja
 
 特定の生物に由来すると推測される MAG は DDBJ の [ENV division](/ddbj/env.html) にゲノムエントリとして登録します。
 
-MAG 用にバーチャルなサンプルを登録します。パッケージは ["Other samples"](/biosample/submission.html#General_Sample) を選択し、生物名には uncultured が冠されていない、MAG が由来する生物種名を記載します (例 Methanosarcina thermophila)。
-生物名以外に以下のサンプル属性が必須になります。[登録例](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=272411182)
+MAG 用にバーチャルなサンプルを登録します。パッケージは [MIMAG](/biosample/submission.html#Sample-type) を選択し、生物名には uncultured が冠されていない、MAG が由来する生物種名を記載します (例 Methanosarcina thermophila)。
+派生元 BioSample を derived_from: SAMD00000001 のように記載します。[登録例](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=272411182)　　
+MAG も一つの BioSample にリンクする必要があるため、複数サンプルに由来するリードをアセンブルした MAG の場合、複数の派生元サンプルを記載します。derived_from: SAMD00000001,SAMD00000002,SAMD00000004-SAMD00000008
 
-規定値
-- sample\_type: metagenomic assembly
 
-サンプルの由来情報
-- metagenome\_source: xyz metagenome
-- isolate
-- isolation\_source
-
-サンプルの採取情報
-- collection\_date
-- env\_biome
-- env\_feature
-- env\_material
-- geo\_loc\_name
-- lat\_lon
-
-派生元 BioSample
-- derived\_from: This biosample is a metagenomic assembly obtained from the xyz metagenome BioSample: SAMD00000001,SAMD00000002,SAMD00000010-SAMD00000015.
-
-MAG も一つの BioSample にリンクする必要があるため、複数サンプルに由来するリードをアセンブルした MAG の場合、派生サンプルを同様に登録します。例 メタゲノム [JAGEZF000000000.1](https://www.ncbi.nlm.nih.gov/nuccore/JAGEZF000000000.1) と派生サンプル [SAMN18318557](https://www.ncbi.nlm.nih.gov/biosample/SAMN18318557)

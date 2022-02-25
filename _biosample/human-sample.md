@@ -9,11 +9,13 @@ lang: ja
 
 ## ヒトを対象とした研究データの登録について  {#submission-of-human-data}
 
-個人に由来するデータ（ヒトデータ）を DDBJ センターが運営するデータベースに登録する場合、[ヒトを対象とした研究データの登録について](/policies.html#submission-of-human-data)を遵守してください。
+個人に由来するデータ（ヒトデータ）を DDBJ センターが運営するデータベースに登録する場合、[ヒトを対象とした研究データの登録について](/policies.html#submission-of-human-data)を遵守してください。  
+
+
 
 ## サンプル属性  {#attribute}
 
-ヒト (*Homo sapiens*) サンプルでは以下の属性を記載してください。属性の説明は[こちらのページ](/biosample/attribute.html?all=all)を参照してください。    
+ヒト (*Homo sapiens*) サンプルでは [Human](/biosample/submission.html#Sample-type) パッケージで登録します。以下はヒトサンプルの種類に応じた登録ガイドラインになります。属性の説明は[こちらのページ](/biosample/attribute.html?all=all)を参照してください。    
 
 ### 個人由来試料 {#human-subject}
 

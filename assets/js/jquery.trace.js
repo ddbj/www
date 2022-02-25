@@ -609,6 +609,8 @@ $(function(){
   var la = "ja";
   if ( pathname.match(/-e.html/) ) la = "en";
 
+  var prms = getUrlVars();
+
   // 親がチェックされていれば表示する
   if( $('.biosample_attr input[value="MIxS"]:checked').val() ){
     $('.biosample_attr input[value="MIxS"]').parent(".radio").nextAll("ul").show();
@@ -665,6 +667,7 @@ $(function(){
     $('.biosample_attr input').removeAttr('checked');
     $('#env_package').hide();
     $('#sample_type ul ul').hide();
+    $('.biosample_attr input:checked').prop('checked', false);
 
     // all 選択時の処理
       $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
@@ -714,6 +717,11 @@ $(function(){
     }); // $.getJSON
 
   }); // $("#all").click(function()
+
+  // パラメータでの指定時
+  if ( prms.all == "all" ) {
+    $('#all').click();
+  }
 
   // パラメータでの指定時
   // package + env 定義属性リスト表示ボタンクリック 
