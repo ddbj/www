@@ -118,8 +118,15 @@ derived_from: SAMD00000002,SAMD00000003,SAMD00000010-SAMD00000015
 Submit binned metagenome assemblies derived from the raw sequence data
 in fasta/bam files to the [DRA
 Analysis](/dra/submission-e.html#Analysis_Type) (Analysis type = 'De
-Novo Assembly'). Include information of analysis software used and
-organism bin in the description. Submit the Analysis along with the Run
+Novo Assembly'). 
+
+Include information of target BioSample accession, analysis software used and　assembly quality metrics in the description.  
+- BioSample: SAMD00000001
+- Analysis step: canu 2.1, pilon 1.24, CheckM 1.1.3
+- Quality: completeness 85.3, contamination 0
+
+
+Submit the Analysis along with the Run
 registered in (1). Please note that Analysis data are not shared with NCBI/ENA. 
 Analysis is not indexed by [DDBJ Search](https://ddbj.nig.ac.jp/search). Only analysis metadata XML and data files are provided in ftp. (For example, [DRZ000001](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA000/DRA000072/).
 

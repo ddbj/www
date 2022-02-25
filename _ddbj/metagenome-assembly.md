@@ -97,7 +97,12 @@ derived_from: SAMD00000002,SAMD00000003,SAMD00000010-SAMD00000015　　　
 #### DRA  {#binned-metagenome-dra}
 
 DRA に登録する場合、Binned アセンブリ配列を fasta/bam ファイルで [DRA Analysis](/dra/submission.html#Analysis_Type)（Analysis type = "De Novo Assembly"）に登録し、description に使用した解析ソフトウェアや Binning に関する情報を記載します。    
-(1) の生リードが登録された [DRA Run とセットで Analysis を登録](/dra/submission.html#analysis)します。    
+(1) の生リードが登録された [DRA Run とセットで Analysis を登録](/dra/submission.html#analysis)します。 
+Analysis description に以下の形式で対象 BioSample アクセッション番号、解析ステップ、及び、アセンブリの品質に関する指標を記載します。  
+- BioSample: SAMD00000001
+- Analysis step: canu 2.1, pilon 1.24, CheckM 1.1.3
+- Quality: completeness 85.3, contamination 0
+
 Analysis は ENA/NCBI と共有されません。また、[DDBJ Search](https://ddbj.nig.ac.jp/search) でインデックスされず、ftp でメタデータ XML とデータファイルが公開されるのみとなります（例 [DRZ000001](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA000/DRA000072/)）。
 
 ### (4) MAG {#mag}
