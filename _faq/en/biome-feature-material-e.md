@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: What is the difference between env_biome, env_feature and env_material?
+title: What is the difference between env_broad_scale, env_local_scale and env_medium?
 category: faq
 db:
   - biosample

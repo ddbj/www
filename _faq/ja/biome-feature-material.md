@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: env_biome，env_feature，env_material の違いは？
+title: env_broad_scale, env_local_scale, env_medium の違いは?
 category: faq
 db:
   - biosample
