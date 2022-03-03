@@ -61,7 +61,7 @@ lang: ja
 通常はウェブフォーム入力による [NSSS](/ddbj/web-submission.html) 登録を推奨します。    
 下記に該当する場合、[MSS](/ddbj/mss.html) 登録をお願いします。    
 
-* 配列数が 500 を超える
+* 配列数が 100 を超える
 * 配列が長い (目安は 500 kb 以上)
 * エントリ (１つの配列) あたりに多数 (概ね30以上) の Feature がある
 * [WGS](/ddbj/wgs.html), [CON](/ddbj/con.html), [TSA](/ddbj/tsa.html), [TLS](/ddbj/tls.html), [HTC](/ddbj/htc.html), [HTG](/ddbj/htg.html), [EST](/ddbj/est.html), [GSS](/ddbj/gss.html), STS の登録
