@@ -158,7 +158,7 @@ lang: ja
   
 </form>
 
-パッケージを選択し，DEFINITION ボタンで attiribute の定義と書式を見ることができます。[定義表](https://docs.google.com/spreadsheets/d/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/edit#gid=631330335)   
+パッケージを選択し，DEFINITION ボタンで attribute の定義と書式を見ることができます。[定義表](https://docs.google.com/spreadsheets/d/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/edit#gid=631330335)   
 *: 必須  
 **数字: 同一数字グループの中で少なくとも一つ必須（選択必須）  
 
