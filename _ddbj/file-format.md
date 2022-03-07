@@ -206,16 +206,16 @@ SUBMITTER で使用する Qualifier のリスト
 
 |  Qualifier  |  Value 使用可能文字(注意事項)   |  Value 文字上限数  |
 |---|
-|  ab_name (登録者名)  |  英, .[period], ,[comma], -[hyphen], ' [apostrophe]  |  64  |
-|  contact (コンタクトパーソン)  |  英, .[period], ,[comma], -[hyphen], ' [apostrophe],  [space] (first, middle, last name の順で間に space を入れて入力)  |  first(64),middle(128), last(64)  |
-|  consrtm (コンソーシアム名)  |  英, 数,  [space], -[hyphen], ' [apostrophe], .[period], _[underscore], .[comma], ( ) # & @ / ; : + *  |  255  |
+|  ab_name (登録者名)  |  英, .[period], ,[comma], -[hyphen], ' [single quote as apostrophe]  |  64  |
+|  contact (コンタクトパーソン)  |  英, .[period], ,[comma], -[hyphen], ' [single quote as apostrophe],  [space] (first, middle, last name の順で間に space を入れて入力)  |  first(64),middle(128), last(64)  |
+|  consrtm (コンソーシアム名)  |  英, 数,  [space], -[hyphen], ' [single quote as apostrophe], .[period], _[underscore], .[comma], ( ) # & @ / ; : + *  |  255  |
 |  email   |  英, 数, @, .[period], -[hyphen], _[underscore]   |  64  |
 |  <url></url>  |  [space] 以外  |  255  |
 |  phone, fax, phext  |  数, -[hyphen] (国番号の頭に + はつけない)  |  16  |
 |  institute, department  |  [back-slash], ` [back-quote] 以外  |  255  |
-|  country, state   |  英, 数,  [space], -[hyphen], '[apostrophe], .[period], _[underscore], ,[comma], ( ) # & @ / ; : + *  |  32  |
-|  city  |  英, 数,  [space], -[hyphen], '[apostrophe], .[period], _[underscore], ,[comma], ( ) # & @ / ; : + *  |  64  |
-|  street  |  英, 数,  [space], -[hyphen], '[apostrophe], .[period], _[underscore], ,[comma], ( ) # & @ / ; : + *  |  255  |
+|  country, state   |  英, 数,  [space], -[hyphen], '[single quote as apostrophe], .[period], _[underscore], ,[comma], ( ) # & @ / ; : + *  |  32  |
+|  city  |  英, 数,  [space], -[hyphen], '[single quote as apostrophe], .[period], _[underscore], ,[comma], ( ) # & @ / ; : + *  |  64  |
+|  street  |  英, 数,  [space], -[hyphen], '[single quote as apostrophe], .[period], _[underscore], ,[comma], ( ) # & @ / ; : + *  |  255  |
 |  zip  |  英, 数, -[hyphen]  |  16  |                             
 
 #### SUBMITTER の書式  {#describing_submitter}
@@ -265,8 +265,8 @@ REFERENCE で使用する Qualifier のリスト
 |  Qualifier  |  Value 使用可能文字(注意事項)  |  Value 文字上限数  |
 |---|
 |  title (論文のタイトル)  |  [back-slash], ` [back-quote] 以外  |  255  |
-|  ab_name (著者名)  |  英, .[period], ,[comma], -[hyphen], ' [apostrophe]  |  64  |
-|  consrtm (コンソーシアム名)  |  英, 数, [space], -[hyphen], ' [apostrophe], .[period], _[underscore],<br/>,[comma], ( ) # &amp; @ / ; : + *  |  255  |
+|  ab_name (著者名)  |  英, .[period], ,[comma], -[hyphen], ' [single quote as apostrophe]  |  64  |
+|  consrtm (コンソーシアム名)  |  英, 数, [space], -[hyphen], ' [single quote as apostrophe], .[period], _[underscore],<br/>,[comma], ( ) # &amp; @ / ; : + *  |  255  |
 |  status  |  以下の何れか<br/>Unpublished, In press, Published  |  -  |
 |  year  |  数(西暦4桁)  |  4  |
 |  journal  |  [back-slash], ` [back-quote] 以外 (PubMed type abbreviation を入力)  |  128  |
