@@ -292,9 +292,11 @@ and [https://www.cia.gov/the-world-factbook/](https://www.cia.gov/the-world-fact
 - Rwanda
 
 ## S  {#S}
+- Saint Barthelemy
 - Saint Helena
 - Saint Kitts and Nevis
 - Saint Lucia
+- Saint Martin
 - Saint Pierre and Miquelon
 - Saint Vincent and the Grenadines
 - Samoa
