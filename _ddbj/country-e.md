@@ -16,15 +16,14 @@ The text below outlines the format and the present list of allowed countries.
 
 ## Defiition of /country qualifier  <a name="Definition_of_country_qualifier"></a>
 
-<pre><code>
-Qualifier:      /country=" "
+<pre><code>Qualifier:      /country=" "
 Qualifier       /country=
-Definition      locality of isolation of the sequenced organism indicated in
+Definition      locality of isolation of the sequenced sample indicated in
                 terms of political names for nations, oceans or seas, followed
                 by regions and localities
-Value format    "<country_value>[:<region>][, <locality>]" where 
+Value format    "&lt;country_value&gt;[:&lt;region&gt;][, &lt;locality&gt;]" where 
                 country_value is any value from the controlled vocabulary at 
-                <a href="//www.insdc.org/documents/country-qualifier-vocabulary">//www.insdc.org/documents/country-qualifier-vocabulary</a>
+                <a href="https://www.insdc.org/documents/country-qualifier-vocabulary">https://www.insdc.org/documents/country-qualifier-vocabulary</a>
 Example         /country="Canada:Vancouver"
                 /country="France:Cote d'Azur, Antibes"
                 /country="Atlantic Ocean:Charlie Gibbs Fracture Zone"
@@ -32,7 +31,7 @@ Comment         Intended to provide a reference to the site where the source
                 organism was isolated or sampled. Regions and localities should
                 be indicated where possible. Note that the physical geography of
                 the isolation or sampling site should be represented in
-                /isolation_source.
+                /<a href="/ddbj/qualifiers-e.html#isolation_source">isolation_source</a>.
 </code></pre>
 
 COUNTRY LIST based on information from: [https://unstats.un.org/unsd/methods/m49/m49.htm](https://unstats.un.org/unsd/methods/m49/m49.htm)    
@@ -292,9 +291,11 @@ and [https://www.cia.gov/the-world-factbook/](https://www.cia.gov/the-world-fact
 - Rwanda
 
 ## S  {#S}
+- Saint Barthelemy
 - Saint Helena
 - Saint Kitts and Nevis
 - Saint Lucia
+- Saint Martin
 - Saint Pierre and Miquelon
 - Saint Vincent and the Grenadines
 - Samoa
