@@ -4,10 +4,6 @@ title: Submission Account
 lang: en
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1092WV_aXjA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-Create a DDBJ account.
-
 ## D-way account  {#ddbj-submission-account}
 
 Bioinformation and DDBJ Center provides the D-way account system. In the D-way account, you can use BioProject, BioSample, GEA, DRA and JGA databases of DDBJ Center and the NBDC application systems. This handbook explains how to create a D-way account.
@@ -94,12 +90,47 @@ organization assigned by the DRA. The public key is used to identify users to ac
 
 ### Generate public and private key pair  {#generate-key-pair}
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
-<h4 class="toggle-content-btn"><a href="javascript:void(0)">Windows</a></h4>
-<div class="accordion-content">
+### Windows {#windows}
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1092WV_aXjA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+A public key for D-way authentification can be both openSSH and PuTTY formats.  
+For JGA data decryption, use openSSH-format private key. For WinSCP authentification, use PuTTY-format private key.  
+
+#### OpenSSH format {#openssh}
+
+For JGA data decryption, use openSSH-format private key.  
+
+Run Windows PowerShell.  
+
+[![]({{ site.baseurl }}/assets/images/books/win-ps-1.jpg){:.w200}]({{ site.baseurl }}/assets/images/books/win-ps-1.jpg "Run Windows PowerShell"){: .group1}
+
+Execute following commands in the PowerShell window to generate openSSH-format key pair.  
+
+``` 
+Generate key pair. Specify a filename by f option.  
+By default, for example, two keys will be generated at C:\Users\mtaro in the case of mtaro Windows user.  
+PS C:\Users\mtaro> ssh-keygen -t rsa -f ddbjkey
+
+Message will be shown.  
+Generating public/private rsa key pair.
+
+Press [Enter] for setting no passphrase.  
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+
+Your identification has been saved in ddbjkey.
+Your public key has been saved in ddbjkey.pub.
+
+A private key is saved as "id_rsa" and a public key is saved as "id_rsa.pub" in "C:\Users\mtaro" folder.  
+```
+
+Following is the example command execution in the PowerShell window.   
+
+[![]({{ site.baseurl }}/assets/images/books/win-ps-2.jpg){:.w600}]({{ site.baseurl }}/assets/images/books/win-ps-2.jpg "Generate a key pair by PowerShell"){: .group1}
+
+A private key is saved as "id_rsa" and a public key is saved as "id_rsa.pub" in the openSSH format under "C:\Users\mtaro" folder.  
+[![]({{ site.baseurl }}/assets/images/books/win-ps-3.jpg){:.w500}]({{ site.baseurl }}/assets/images/books/win-ps-3.jpg "A openSSH key pair is generated under the user folder"){: .group1}
+
+#### PuTTY format {#putty}
 
 Install and run the [PuTTY Key Generator](https://www.puttygen.com/%0A).
 Set parameters as below and click the [Generate] button.
@@ -110,16 +141,7 @@ Generate a key pair by moving mouse pointer randomly in the window and
 save the public and private keys. The key is saved in the PuTTY format
 and can be used in the WinSCP.
 
-[« Close](javascript:void(0)){: .close-content-btn}
-</div>
-</div>
-
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
-<h4 class="toggle-content-btn"><a href="javascript:void(0)">Mac OS X</a></h4>
-<div class="accordion-content">
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jBfOqsJxDZU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### Mac OS X {#mac}
 
 Run "Terminal" from Macintosh HD > Applications > Utilities >
 Terminal.app.
@@ -164,14 +186,7 @@ The public key file "id_rsa.pub" is displayed.
 Copy the public key file "id_rsa.pub" to your desk top for your account
 registration.
 
-[« Close](javascript:void(0)){: .close-content-btn}
-</div>
-</div>
-
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
-<h4 class="toggle-content-btn"><a href="javascript:void(0)">Unix</a></h4>
-<div class="accordion-content">
+### Unix {#unix}
 
 ```
 Generate the keys.
@@ -192,13 +207,7 @@ Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
 At "/Users/you/.ssh", the private key is saved as "id_rsa" and the public key is saved as "id_rsa.pub".
 ```
 
-[« Close](javascript:void(0)){: .close-content-btn}
-</div>
-</div>
-
 ### Register center name and public key  {#register-center-name-and-public-key}
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1092WV_aXjA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Login to the [submission account](https://ddbj.nig.ac.jp/D-way/). Set a
 new password for the first time of login. In the "Account" page, fill
@@ -266,10 +275,7 @@ After your password was changed, "Session Expired" may be displayed in your web 
 
 ## Convert a private key  {#convert-private-key}
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
-<h4 class="toggle-content-btn"><a href="javascript:void(0)">Windows PuTTY to OpenSSH</a></h4>
-<div class="accordion-content">
+### Windows PuTTY to OpenSSH {#putty-openssh}
 
 Select the "Import key" of "Conversions" menu and load the private key
 generated by PuTTY.
@@ -282,14 +288,7 @@ Mac OS X.
 
 [![]({{ site.baseurl }}/assets/images/books/con_2_e.jpg){:.w400}]({{ site.baseurl }}/assets/images/books/con_2_e.jpg "Export OpenSSH key"){: .group1}
 
-[« Close](javascript:void(0)){: .close-content-btn}
-</div>
-</div>
-
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
-<h4 class="toggle-content-btn"><a href="javascript:void(0)">OpenSSH to Windows PuTTY</a></h4>
-<div class="accordion-content">
+### OpenSSH to Windows PuTTY {#openssh-putty}
 
 Select the "Import key" of "Conversions" menu and load the private key
 generated in Unix/Mac OS X.
@@ -301,6 +300,3 @@ key. The converted private key can be used in Windows WinSCP.
 
 [![]({{ site.baseurl }}/assets/images/books/con_4_e.jpg){:.w400}]({{ site.baseurl }}/assets/images/books/con_4_e.jpg "Save converted private key"){: .group1}
 
-[« Close](javascript:void(0)){: .close-content-btn}
-</div>
-</div>
