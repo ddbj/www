@@ -1033,7 +1033,7 @@ lost connection
 ```
 
 ファイルを右クリックしてプロパティを選択します。    
-<a href="/assets/images/books/win-ps-1.jpg" title="ファイルのプロパティ" class="group1"><img src="/assets/images/books/win-ps-scp-1.jpg" alt="PowerShell を起動" title="PowerShell を起動" class="w300"></a>   
+<a href="/assets/images/books/win-ps-1.jpg" title="ファイルのプロパティ" class="group1"><img src="/assets/images/books/win-ps-scp-1.jpg" alt="ファイルのプロパティ" title="ファイルのプロパティ" class="w300"></a>   
 
 セキュリティタブの詳細設定を選択します。    
 <a href="/assets/images/books/win-ps-scp-2.jpg" title="セキュリティの詳細設定" class="group1"><img src="/assets/images/books/win-ps-scp-2.jpg" alt="セキュリティの詳細設定" title="セキュリティの詳細設定" class="w300"></a>  
