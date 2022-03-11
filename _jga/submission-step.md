@@ -82,7 +82,7 @@ JGA サーバ上の /controlled-access/submission/jga/ の下に Submission ID �
 last updated: 2022-03-02
 
 <div class="attention" markdown="1">
-JGA にアップロードするファイル名には空白を含めないでください。
+JGA にアップロードするファイル名には空白を含めないでください。         
 </div>
 
 <div class="attention" markdown="1">
