@@ -1171,6 +1171,76 @@ the [Delete] button.
 
 {::options parse_block_html="true" /}
 <div class="accordion-menu">
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">Upload sequence data files by PowerShell (Windows)</a></h4>
+<div class="accordion-content">
+
+Run PowerShell.  
+<a href="/assets/images/books/win-ps-1.jpg" title="Run PowerShell" class="group1"><img src="/assets/images/books/win-ps-1.jpg" alt="Run PowerShell" title="Run PowerShell" class="w200"></a>   
+
+Upload files by scp authenticated with an openSSH-format private key. A PuTTY-format private key causes "invalid format" error, [convert the key into OpenSSH-format](/account-e.html#putty-openssh).   
+```
+> scp -i private-key-for-auth <Your Files> <D-way Login ID>@ftp-private.ddbj.nig.ac.jp:~/<DRA Submission ID>
+```
+
+* -i: specify the private key for authentication which is pair of a public key registered to your D-way account.
+* <Your Files> Files to be transferred. Ex: file1 file2 (file1 and file2), file* (all files whose filenames start with “file”)
+* <D-way Login ID> D-way Login ID (ex. test07)
+* <DRA Submission ID> DRA Submission ID (ex. test07-0018)
+* command example: scp -i private-key-for-auth strainA_1.fastq test07@ftp-private.ddbj.nig.ac.jp:~/test07-0018  
+
+Enter a passphrase. If no passphrase is set, press enter.  
+```
+Enter passphrase for key 'private-key-for-auth': 
+```
+
+If the private key access permission is too open, following error will be shown.  
+```
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions for './private-key-for-auth' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+Load key "./private-key-for-auth": bad permissions
+test07@ftp-private.ddbj.nig.ac.jp: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
+lost connection
+```
+
+Right-click the private key file and select the property.  
+<a href="/assets/images/books/win-ps-1.jpg" title="file property" class="group1"><img src="/assets/images/books/win-ps-scp-1.jpg" alt="file property" title="file property" class="w300"></a>   
+
+Select detailed setting of the security tab.  
+<a href="/assets/images/books/win-ps-scp-2.jpg" title="detailed setting of security" class="group1"><img src="/assets/images/books/win-ps-scp-2.jpg" alt="detailed setting of security" title="detailed setting of security" class="w300"></a>  
+
+Disable access permission entry inheritance to enable permission deletion.  
+<a href="/assets/images/books/win-ps-scp-3.jpg" title="Disable access permission entry inheritance" class="group1"><img src="/assets/images/books/win-ps-scp-3.jpg" alt="Disable access permission entry inheritance" title="Disable access permission entry inheritance" class="w300"></a>  
+
+Convert explicit access permission.  
+<a href="/assets/images/books/win-ps-scp-4.jpg" title="Convert explicit access permission" class="group1"><img src="/assets/images/books/win-ps-scp-4.jpg" alt="Convert explicit access permission" title="Convert explicit access permission" class="w300"></a>  
+
+Delete all permissions.  
+<a href="/assets/images/books/win-ps-scp-5.jpg" title="Delete all permissions" class="group1"><img src="/assets/images/books/win-ps-scp-5.jpg" alt="Delete all permissions" title="Delete all permissions" class="w300"></a>   
+
+Add access permission.  
+<a href="/assets/images/books/win-ps-scp-6.jpg" title="Add access permission" class="group1"><img src="/assets/images/books/win-ps-scp-6.jpg" alt="Add access permission" title="Add access permission" class="w300"></a>   
+
+Add a Windows user (example, test07).
+<a href="/assets/images/books/win-ps-scp-7.jpg" title="Add a Windows user" class="group1"><img src="/assets/images/books/win-ps-scp-7.jpg" alt="Add a Windows user" title="Add a Windows user" class="w300"></a>  
+
+Allow full control to the Windows user.   
+<a href="/assets/images/books/win-ps-scp-8.jpg" title="Allow full control" class="group1"><img src="/assets/images/books/win-ps-scp-8.jpg" alt="Allow full control" title="Allow full control" class="w300"></a>  
+
+Change the file permission.   
+<a href="/assets/images/books/win-ps-scp-9.jpg" title="Change the file permission" class="group1"><img src="/assets/images/books/win-ps-scp-9.jpg" alt="Change the file permission" title="Change the file permission" class="w300"></a>  
+
+Run scp.      
+
+[« Close](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
+
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Transfer sequence data by using Cyberduck (Mac OS X)</a></h4>
 <div class="accordion-content">
 
