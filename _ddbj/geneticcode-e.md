@@ -39,7 +39,7 @@ Example         /transl_table=4
 Compiled by Andrzej (Anjay) Elzanowski and Jim Ostell  
 National Center for Biotechnology Information (NCBI), Bethesda, Maryland, U.S.A.  
 
-The original site; [The Genetic Codes](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=cgencodes) 2020.06.17 version
+The original site; [The Genetic Codes](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=cgencodes) 2022.03.15 version
 
 NCBI takes great care to ensure that the translation for each coding sequence (CDS) present in GenBank records is correct. Central to this effort is careful checking on the taxonomy of each record and assignment of the correct genetic code (shown as a /transl_table qualifier on the CDS in the flat files) for each organism and record. This page summarizes and references this work.
 
@@ -590,13 +590,15 @@ GTG V Val      GCG A Ala      GAG E Glu      GGG G Gly
 
 CAG may be used in _Candida albicans_ ([Santos _et al_., 1993](https://www.ncbi.nlm.nih.gov/pubmed/8440250)).
 
-### Systematic Range:
+### Systematic Range and Comments:
 
-**_Endomycetales_** (yeasts): _Candida albicans_, _Candida cylindracea_, _Candida melibiosica_, _Candida parapsilosis_, and _Candida rugosa_ ([Ohama _et al_., 1993](https://www.ncbi.nlm.nih.gov/pubmed/8371978)).
+In code 12 the CUG codon has been reassigned from Leu to Ser ([Santos _et al_., 2011](https://www.ncbi.nlm.nih.gov/pubmed/21819941), [Mateus _et al_., 2013](https://www.ncbi.nlm.nih.gov/pubmed/23619021), [Krassowski _et al_., 2018](https://www.ncbi.nlm.nih.gov/pubmed/29760453)).  
+This code is used by the fungal CUG-Ser1 clade that represents a monophyletic lineage of the _Saccharomycotina_ ([Li _et al_., 2021](https://www.ncbi.nlm.nih.gov/pubmed/33607033)).  
+In the NCBI taxonomy, it currently comprises the three families _Cephaloascaceae_, _Debaryomycetaceae_ and _Metschnikowiaceae_ and the genus _Babjeviella_.  
+The CUG-Ser1 clade includes important human pathogens like _Candida albicans_ and the multidrug-resistant _Candida auris_.  
+Most other true yeasts (_Saccharomycotina_) use the standard code however.  
 
-### Comment:
 
-However, other yeast, including _Saccharomyces cerevisiae_, _Candida azyma_, _Candida diversa_, _Candida magnoliae_, _Candida rugopelliculosa_, _Yarrowia lipolytica_, and _Zygoascus hellenicus_, definitely use the standard (nuclear) code ([Ohama _et al_., 1993](https://www.ncbi.nlm.nih.gov/pubmed/8371978)).
 
 ## 13\. The Ascidian Mitochondrial Code (transl_table=13) <a name="13"></a>
 
@@ -642,11 +644,15 @@ GTG V Val i    GCG A Ala      GAG E Glu      GGG G Gly
 
 ### Systematic range and Comments:
 
-There is evidence from a phylogenetically diverse sample of tunicates (_Urochordata_) that AGA and AGG code for glycine. In other organisms, AGA/AGG code for either arginine or serine and in vertebrate mitochondria they code a STOP. Evidence for glycine translation of AGA/AGG has been found in _Pyura stolonifera_ ([Durrheim _et al_. 1993](https://www.ncbi.nlm.nih.gov/pubmed/8393993)), _Halocynthia roretzi_ ([Kondow _et al_. 1999](https://www.ncbi.nlm.nih.gov/pubmed/10352185),[Yokobori _et al_., 1993](https://www.ncbi.nlm.nih.gov/pubmed/8381878), [Yokobori _et al_. 1999](https://www.ncbi.nlm.nih.gov/pubmed/10581290)) and _Ciona savignyi_ ([Yokobori _et al_. 2003](https://www.ncbi.nlm.nih.gov/pubmed/14738316)). In addition, the _Halocynthia roretzi_ mitochondrial genome encodes an additional tRNA gene with the anticodon U\*CU that is thought to enable the use of AGA or AGG codons for glycine and the gene has been shown to be transcribed in vivo ([Kondow _et al_. 1999](https://www.ncbi.nlm.nih.gov/pubmed/10352185), [Yokobori _et al_. 1999](https://www.ncbi.nlm.nih.gov/pubmed/10581290)).
+There is evidence from a phylogenetically diverse sample of tunicates (_Urochordata_) that AGA and AGG code for glycine. In other organisms, AGA/AGG code for either arginine or serine and in vertebrate mitochondria they code a STOP. 
+Evidence for glycine translation of AGA/AGG has been found in _Pyura stolonifera_ ([Durrheim _et al_. 1993](https://www.ncbi.nlm.nih.gov/pubmed/8393993)), _Halocynthia roretzi_ ([Kondow _et al_. 1999](https://www.ncbi.nlm.nih.gov/pubmed/10352185),[Yokobori _et al_., 1993](https://www.ncbi.nlm.nih.gov/pubmed/8381878), [Yokobori _et al_. 1999](https://www.ncbi.nlm.nih.gov/pubmed/10581290)) and _Ciona savignyi_ ([Yokobori _et al_. 2003](https://www.ncbi.nlm.nih.gov/pubmed/14738316)).    
+
+In addition, the _Halocynthia roretzi_ mitochondrial genome encodes an additional tRNA gene with the anticodon U\*CU that is thought to enable the use of AGA or AGG codons for glycine and the gene has been shown to be transcribed in vivo ([Kondow _et al_. 1999](https://www.ncbi.nlm.nih.gov/pubmed/10352185), [Yokobori _et al_. 1999](https://www.ncbi.nlm.nih.gov/pubmed/10581290)).
 
 ### Alternative initiation codons:
 
-ATA, GTG and TTG ([Yokobori _et al_. 1999](https://www.ncbi.nlm.nih.gov/pubmed/10581290)). ATT is the start codon for the CytB gene in _Halocynthia roretzi_ ([Gissi and Pesole, 2003](https://www.ncbi.nlm.nih.gov/pubmed/12915488)).
+ATA, GTG and TTG ([Yokobori _et al_. 1999](https://www.ncbi.nlm.nih.gov/pubmed/10581290)). 
+ATT is the start codon for the CytB gene in _Halocynthia roretzi_ ([Gissi and Pesole, 2003](https://www.ncbi.nlm.nih.gov/pubmed/12915488)).
 
 ## 14\. The Alternative Flatworm Mitochondrial Code (transl_table=14) <a name="14"></a>
 
