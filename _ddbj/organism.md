@@ -6,29 +6,23 @@ category: ddbj
 current_tab: flat_file
 lang: ja
 related_pages:
-  - title: The Genetic Codes
-    url: /ddbj/geneticcode.html
-  - title: The Genetic Codes
-    url: /ddbj/codontable.html
   - title: DDBJ 公開形式 (Flat file)
     url: /ddbj/flat-file.html
   - title: Feature key
     url: /ddbj/features.html
   - title: Qualifier key
     url: /ddbj/qualifiers.html
-  - title: Location の記述法
-    url: /ddbj/location.html
+  - title: 識別子について
+    url: /ddbj/identifiers.html
+  - title: The Genetic Codes
+    url: /ddbj/geneticcode.html
   - title: タンパク質コード配列; CDS feature について
     url: /ddbj/cds.html
-  - title: The Genetic Codes
-    url: /ddbj/geneticcode-e.html
-  - title: 配列の記載に用いる略号
-    url: /ddbj/code.html
   - title: 登録の見本
     url: /ddbj/example.html
 ---
 
-organism qualifier には「生物名」として、taxonomy database において、種、もしくは、それ以下のランクで "scientific name" とされている名称を記載する必要があります。
+配列の登録に際して配列の由来となる「生物名」として /organism qualifier には、taxonomy database において、種、もしくは、それ以下のランクで "scientific name" とされている名称を記載する必要があります。
 
 ## taxonomy database  {#taxonomy}
 
@@ -114,7 +108,7 @@ h. taxonomy database に未登録で、学名が確立している場合
 
 例
 
-- Homo sapiens
+<pre><code>Homo sapiens</code></pre> 
 
 #### 三名法 {#trinominal}
 
@@ -122,24 +116,26 @@ h. taxonomy database に未登録で、学名が確立している場合
 
 例
 
-- Pan troglodytes troglodytes
-- Zea mays subsp. mays
-- Oryza sativa Japonica Group
-- Brassica oleracea var. alboglabra
-- Escherichia coli K-12
+<pre><code>Pan troglodytes troglodytes
+Zea mays subsp. mays
+Oryza sativa Japonica Group
+Brassica oleracea var. alboglabra
+Escherichia coli K-12</code></pre> 
 
-また、このとき [sub_species](/ddbj/qualifiers.html#sub_species), [variety](/ddbj/qualifiers.html#variety), [serotype](/ddbj/qualifiers.html#serotype), [strain](/ddbj/qualifiers.html#strain) の該当 qualifier をあわせて source
-feature に記載します。
+また、このとき [/sub_species](/ddbj/qualifiers.html#sub_species), 
+[/variety](/ddbj/qualifiers.html#variety), 
+[/serotype](/ddbj/qualifiers.html#serotype), 
+[/strain](/ddbj/qualifiers.html#strain) の該当 qualifier をあわせて source feature に記載します。
 
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Pan troglodytes troglodytes"
                      /<a href="/ddbj/qualifiers.html#sub_species">sub_species</a>="troglodytes"
-</code></pre> 
+</code></pre>
 
 #### 微生物ゲノム  {#genome}
 
 以前は 微生物などで全ゲノム規模の配列を登録する場合、strain などを organism
 に含めて記載していましたが、現在は学名のみの記載を原則としています。  
-strain 名は [strain](/ddbj/qualifiers.html#strain) qualifier に記載してください。
+strain 名は [/strain](/ddbj/qualifiers.html#strain) qualifier に記載してください。
 
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Candida albicans"
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="WO-1"
@@ -151,10 +147,13 @@ strain 名は [strain](/ddbj/qualifiers.html#strain) qualifier に記載して�
 <span class="red">**2017年以前は、登録頻度の高い病原性ウイルスの場合、strain、serotype を生物名に含めて記載する運用を続けていましたが、この運用は新規登録分には適用されません。**</span>
 
 例
+<pre><code>Influenza A virus</code></pre>
 
-- Influenza A virus
-
-下記の例のように [collection_date](/ddbj/qualifiers.html#collection_date) (採取した年月日)、[country](/ddbj/qualifiers.html#country) (採取した地名)、[host](/ddbj/qualifiers.html#host)、[strain](/ddbj/qualifiers.html#strain)、[serotype](/ddbj/qualifiers.html#serotype) などの該当 qualifier をあわせて source feature に記載します。
+下記の例のように [/collection_date](/ddbj/qualifiers.html#collection_date) (採取した年月日), 
+[/country](/ddbj/qualifiers.html#country) (採取した地名), 
+[/host](/ddbj/qualifiers.html#host), 
+[/isolate](/ddbj/qualifiers.html#isolate) (or [/strain](/ddbj/qualifiers.html#strain)), 
+[/serotype](/ddbj/qualifiers.html#serotype) などの該当 qualifier をあわせて source feature に記載します。
 
 <pre><code>                   /<a href="/ddbj/qualifiers.html#country">country</a>="Japan:Tokyo"
                    /<a href="/ddbj/qualifiers.html#collection_date">collection_date</a>="2007-11-01"
@@ -163,23 +162,23 @@ strain 名は [strain](/ddbj/qualifiers.html#strain) qualifier に記載して�
                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Influenza A virus"
                    /<a href="/ddbj/qualifiers.html#serotype">serotype</a>="H7N7"
                    /<a href="/ddbj/qualifiers.html#strain">strain</a>="A/chicken/Tokyo/2007"
-</code></pre>  
+</code></pre>
 
 #### 雑種  {#hybrid}
 
 雑種の場合、適宜、以下のように記載します。
 
 例
-
-- Rosa alba x Rosa corymbifera
-- Malus x domestica
-- Lilium hybrid division I
+<pre><code>Rosa alba x Rosa corymbifera
+Malus x domestica
+Lilium hybrid division I</code></pre>
 
 #### database で見つからない場合  {#novel}
 
 taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から検索不能な場合、登録時に以下の参考情報を可能な範囲でお知らせください。
 
-taxonomy database 登録申請のための参考情報
+---
+**taxonomy database 登録申請のための参考情報**
 
 - [推定可能な範囲の lineage](#lineage)
 - [種を記載した論文](#ref)
@@ -190,55 +189,65 @@ taxonomy database 登録申請のための参考情報
 
 #### 2-1. 種を同定しない場合  <a name="not-to-be-identified"></a>
 
-種同定を伴わない研究の場合、判明している範囲の lineage、多くの場合、属名を用いて、"\<属名\> sp."などとして記載します。
+種同定を伴わない研究の場合、判明している範囲の lineage、多くの場合、属名を用いて、"\<genus name\> sp." などとして記載します。    
+属より上位ランクの場合、判明している範囲の lineage に細菌ならば "bacterium"、
+古細菌ならば、 "archaeon" を付加した名前を記載します。
+真核生物の場合、判明している範囲の lineage が属レベルでも、属より上位でも "sp." を付加した名前 を記載します。
 
 書式
 
-``` 
-"<genus name> sp."
-"<family (or upper) name> bacterium"
-```
+- \<genus name> sp. # 原核生物
+- \<genus (or upper) name> sp. # 真核生物
+- \<family (or upper) name> bacterium
+- \<family (or upper) name> archaeon
 
 例
 
-- Acetobacter sp.
-- Acetobacteraceae bacterium
+<pre><code>Acetobacter sp.
+Aspergillaceae sp.
+Acetobacteraceae bacterium
+Methanomicrobiales archaeon</code></pre>
 
-登録の際には、「生物名」に含めた下位の rank、[strain](/ddbj/qualifiers.html#strain), [isolate](/ddbj/qualifiers.html#isolate)などに該当する qualifier をあわせて source feature に記載します。
+登録の際には「生物名」とともに[識別子](/ddbj/identifiers.html)、多くの場合、
+[/strain](/ddbj/qualifiers.html#strain), 
+[/isolate](/ddbj/qualifiers.html#isolate) など該当する qualifier とあわせて source feature に記載します。
 
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp."
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
-微生物の全ゲノム規模の配列に該当する場合、あるいは、真核生物 (真菌を除く) の場合は、判明している範囲の lineage、多くの場合 属名、を用いて、"\<属名\> sp."などとした上で、strain などの名称を organism に含めて記載しています。  
-その場合も strain 名を [strain](/ddbj/qualifiers.html#strain) qualifier に記載してください。
+真核生物 (カビ、酵母相当の単細胞真菌以外) の場合、<!-- あるいは、微生物でも全ゲノム規模の配列に該当する場合、 -->判明している範囲の lineage (多くの場合 属名) を用いて、"\<genus name\> sp."などとした上で、[識別子](/ddbj/identifiers.html) (多くの場合、strain の名称) を「生物名」に含めて記載しています。  
+「生物名」に含めている場合でも、[識別子](/ddbj/identifiers.html)を [/strain](/ddbj/qualifiers.html#strain) など該当する qualifier に記載してください。
 
-<pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
-                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
+<pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Euglena sp. CR123"
+                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="CR123"</code></pre>  
 
 #### 2-2. 新種提唱の場合  {#new}
 
-学名提唱中のため種名が未確定の場合、「生物名」の一意性を保つために、判明している範囲の lineage、多くの場合、属名を用いて、"\<属名\> sp."などとした上で、その下位の rank
-([strain](/ddbj/qualifiers.html#strain)、[isolate](/ddbj/qualifiers.html#isolate), [clone](/ddbj/qualifiers.html#clone), etc) を並記します。  
+学名提唱中のため種名が未確定の場合、「生物名」の一意性を保つために、判明している範囲の lineage、
+多くの場合、属名を用いて、"\<genus name\> sp."などとした上で、 [識別子](/ddbj/identifiers.html) 
+(多くの場合、strain 名など) を並記します。  
 この運用により、例えば、異なる生物が同じものと混同されるなどの混乱を避けることができます。  
-DDBJ から当該塩基配列データが公開されるまでは、taxonomy database においても、「生物名」も公開されません。  
+DDBJ から当該塩基配列データが公開されるまでは、taxonomy database においても、「生物名」を公開しません。    
 このような taxonomy database に登録された一時的な仮称は、正しい学名が確認できた段階で、その学名に更新変更します。  
 種を報告する論文が公開された際に、論文情報更新、生物名修正、データ公開を依頼するご連絡をお願いいたします。  
-更新依頼は、[登録データの修正・更新](/ddbj/update.html)をご参照ください。
+更新依頼は、[登録データの修正・更新](/ddbj/update.html)をご参照ください。    
 公開前に変更を依頼していただければ、通常、仮称が公表されることはありません。  
 
 書式
 
-``` 
-"<genus name> sp. <strain name>"
-"<family (or upper) name> bacterium <strain name>"
-```
+- \<genus name> sp. \<strain name>
+- \<family (or upper) name> bacterium \<strain name>
+- \<genus name> sp. \<strain name> # 原核生物
+- \<genus (or upper) name> sp. \<strain name> # 真核生物
+- \<family (or upper) name> bacterium \<strain name>
+- \<family (or upper) name> archaeon \<strain name>
 
 例
 
-- Acetobacter sp. ITDI2.1
-- Acetobacteraceae bacterium ITDI2.1
+<pre><code>Acetobacter sp. ITDI2.1
+Acetobacteraceae bacterium ITDI2.1</code></pre>
 
-登録の際には、「生物名」に含めた下位の rank、[strain](/ddbj/qualifiers.html#strain)などに該当する
+登録の際には、「生物名」に含めた下位の rank、[strain](/ddbj/qualifiers.html#strain) など該当する
 qualifier をあわせて source feature に記載します。
 
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
@@ -246,7 +255,8 @@ qualifier をあわせて source feature に記載します。
 
 taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から検索不能な場合、登録時に以下の参考情報を可能な範囲でお知らせください。
 
-taxonomy database 登録申請のための参考情報
+---
+**taxonomy database 登録申請のための参考情報**
 
 - [推定可能な範囲の lineage](#lineage)
 - [提唱中の新種学名](#propose)
@@ -260,22 +270,32 @@ taxonomy database 登録申請のための参考情報
 環境サンプルの定義については[環境サンプルの説明](/ddbj/env.html)もご参照ください。  
 <span class="red">環境サンプル由来の混合培養系も、環境サンプルと扱います。</span>
 
-環境サンプルの場合、原則、判明している範囲での lineage に "uncultured" を冠して「生物名」を記載します。
+環境サンプルの場合、原則、判明している範囲での lineage に "uncultured" を冠して「生物名」を記載します。  
+環境プロファイルのような場合、一律に "uncultured bacterium" とするか、
+配列ベースで判明している範囲の lineage を操作的に下記の書式で記載します。 
 
 書式
 
-``` 
-"uncultured <genus name> sp."
-"uncultured <family (or upper) name>" or "uncultured <family (or upper) name> bacterium"
-```
+- uncultured bacterium  # 原核生物 
+- uncultured \<genus name> sp. # 原核生物 
+- uncultured \<family (or upper) name> bacterium # 原核生物 
+- uncultured \<genus (or upper) name> # 真核生物
 
 例
 
-- uncultured Acetobacter sp.
-- uncultured alpha proteobacterium
-- uncultured Bacillaceae bacterium
+<pre><code>uncultured bacterium
+uncultured Acetobacter sp.
+uncultured alpha proteobacterium
+uncultured Bacillaceae bacterium
+uncultured Aspergillus
+uncultured Aspergillaceae</code></pre>
 
-環境サンプルの場合、必須な[environmental_sample](/ddbj/qualifiers.html#environmental_sample) qualifier、および、[isolation_source](/ddbj/qualifiers.html#isolation_source) qualifier などでサンプリングの過程・状態などをあわせて source feature に記載します。
+
+環境サンプルの場合、必須な
+[/environmental_sample](/ddbj/qualifiers.html#environmental_sample) qualifier、および、
+[/isolation_source](/ddbj/qualifiers.html#isolation_source) qualifier などでサンプリングの過程・状態などをあわせて source feature に記載します。
+[識別子](/ddbj/identifiers.html) として、[/isolate](/ddbj/qualifiers.html#isolate) または [/clone](/ddbj/qualifiers.html#clone) qualifier を記載します。
+
 
 <pre><code>                     /<a href="/ddbj/qualifiers.html#clone">clone</a>="4-11"
                      /<a href="/ddbj/qualifiers.html#environmental_sample">environmental_sample</a>
@@ -285,7 +305,47 @@ taxonomy database 登録申請のための参考情報
 
 taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から検索不能な場合、登録時に以下の参考情報を可能な範囲でお知らせください。
 
-taxonomy database 登録申請のための参考情報
+---
+**taxonomy database 登録申請のための参考情報**
+
+- [推定可能な範囲の lineage](#lineage)
+- [サンプル、または、配列を得た方法の概略](#isolate)
+
+
+[メタゲノムアセンブリ](/ddbj/metagenome-assembly.html)
+: Metagenome-Assembled Genome (MAG) の場合、単一生物分類群がツールにより割り当てられ得るため、種、もしくは、それ以下のランクの生物名（例 Agrobacterium tumefaciens）を記載します。
+: 種同定を伴わない MAG の場合、判明している範囲の lineage、多くの場合、属名を用いて、"\<genus name\> sp." などとして記載します。
+属より上位ランクの場合、判明している範囲の lineage に細菌ならば "bacterium"、
+古細菌ならば、 "archaeon" を付加した名前を記載します。
+真核生物の場合、判明している範囲の lineage が属レベルでも、属より上位でも "sp." を付加した名前 を記載します。
+
+書式
+
+- \<genus name> sp. # 原核生物
+- \<genus (or upper) name> sp. # 真核生物
+- \<family (or upper) name> bacterium
+- \<family (or upper) name> archaeon
+
+例
+
+<pre><code>Agrobacterium sp.
+Aspergillaceae sp.
+Rhizobiaceae bacterium
+Methanomicrobiales archaeon</code></pre>
+
+MAG 相当の場合、
+[/environmental_sample](/ddbj/qualifiers.html#environmental_sample) qualifier、
+[/isolation_source](/ddbj/qualifiers.html#isolation_source) qualifier、および、
+[識別子](/ddbj/identifiers.html) としての [/isolate](/ddbj/qualifiers.html#isolate) qualifier に加えて、
+[/metagenome_source](/ddbj/qualifiers.html#metagenome_source) qualifier を記載します。
+[/metagenome_source](/ddbj/qualifiers.html#metagenome_source) qualifier には、
+[metagenome taxonomy nodes](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169) にある操作的な名称から
+適宜、選択して、例えば soil metagenome などのサンプル分離源を反映したメタゲノム名を記載してください。
+[NCBI のサイト](https://www.ncbi.nlm.nih.gov/biosample/docs/organism/#metagenomes)にメタゲノム名の使い分けについて解説されています。
+
+
+---
+**taxonomy database 登録申請のための参考情報**
 
 - [推定可能な範囲の lineage](#lineage)
 - [サンプル、または、配列を得た方法の概略](#isolate)
@@ -296,12 +356,13 @@ taxonomy database 登録申請のための参考情報
 
 例
 
-- Cloning vector pAP3neo
-- Expression vector pAMP
+<pre><code>Cloning vector pAP3neo
+Expression vector pAMP</code></pre>
 
 taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から検索不能な場合、登録時に以下の参考情報を可能な範囲でお知らせください。
 
-taxonomy database 登録申請のための参考情報
+---
+**taxonomy database 登録申請のための参考情報**
 
 - [想定される用法など](#usage)
 

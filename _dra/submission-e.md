@@ -6,7 +6,7 @@ category: dra
 current_tab: handbook
 panels: 
 - title: Search 
-  url: https://ddbj.nig.ac.jp/DRASearch/  
+  url: https://ddbj.nig.ac.jp/search  
   icon: ../assets/images/icon-search_analysis.png 
 - title: How_to_submit  
   url: /dra/submission-e.html 
@@ -85,8 +85,8 @@ intended for downstream usage or that otherwise needs an archival
 home. Submit alignment data in bam file to Run. Please [contact to
 DRA team to ask mirroring of analysis
 data.](/contact-ddbj-e.html)Analysis files are provided on the DDBJ ftp
-site and not indexed by the
-[DRASearch](http://ddbj.nig.ac.jp/DRASearch).
+site and indexed by the
+[DDBJ Search](https://ddbj.nig.ac.jp/search).
 
 {% include image.html url="books/sra_object.png" caption="Data model" class="w450" %}
 
@@ -98,7 +98,7 @@ objects flexibly.
   - [Most simple case](#ex_simple)
   - [Comparative genome sequencing of three strains
     (paired-end)](#ex_samples)
-  - [Technical and biological replicates (paired-end)](#ex_replicates)
+  - [Biological replicates (paired-end)](#ex_replicates)
   - [Related sequencing data are reported in two
     publications](#ex_submissions)
 
@@ -112,11 +112,9 @@ Include paired-end read files in a Run.
 
 {% include image.html url="books/datamodel1.jpg" caption="Comparative genome sequencing of three strains (paired-end)" class="w450" %}
 
-#### Technical and biological replicates (paired-end)  {#ex_replicates}
+#### Biological replicates (paired-end)  {#ex_replicates}
 
-[Related FAQ: How many samples do I need for my DRA submission?](/faq/en/samples-for-sra.html)
-
-{% include image.html url="submission/obj_exreplicate.jpg" caption="Technical and biological replicates (paired-end)" class="w450" %}
+{% include image.html url="submission/obj_exreplicate.jpg" caption="Biological replicates (paired-end)" class="w450" %}
 
 #### Related sequencing data are reported in two publications.  {#ex_submissions}
 
@@ -274,7 +272,8 @@ being sequenced.
 <!-- end list -->
 
 [Library Strategy](#Library_Strategy)<a name="Library_Strategy"></a><span class="red">*</span>  
-: Sequencing technique intended for this library.
+: Sequencing technique intended for this library. 
+For the "Sequel IIe", select the "Sequel II" and indicate "Sequel IIe" usage in the [Library Construction Protocol](#Library_Construction_Protocol).
 
     | Library Strategy                        | Description                                                                                                                                                                                                                                                               |
     |---|
@@ -479,12 +478,11 @@ in tsv file, this field needs to be specified manually.
 <!-- end list -->
 
 [File Type](#File_Type)<a name="File_Type"></a><span class="red">*</span>  
-: The sequence data file format. For the fastq files, select 'generic_fastq' irrespective of read length. Do NOT select 'fastq'.
+: The sequence data file format. For the fastq files, select 'fastq' irrespective of read length.
       
     | File Type        | Description                                                                                                            |
     |---|
-    | generic_fastq   | fastq files                                                                                   |
-    | fastq            | Select "generic_fastq" instead of "fastq".                                                                        |
+    | fastq            | fastq file                                                                       |
     | sff              | 454 Standard Flowgram Format file                                                                                      |
     | hdf5             | PacBio hdf5 Format file                                                                                                |
     | bam              | Binary SAM format for use by loaders that combine alignment and sequencing data                                        |
@@ -779,7 +777,7 @@ constant or not.
   - For the fastq files with constact read length, select 'fastq' in the
     [file type](#File_Type)of Run. Paired reads should appear in the
     same order in the paired files.
-  - For the fastq files, select 'generic_fastq' in the [file type](#File_Type) of Run irrespective of read length.
+  - For the fastq files, select 'fastq' in the [file type](#File_Type) of Run irrespective of read length.
 
 Format of fastq, for details, please see [NCBI
 website](https://www.ncbi.nlm.nih.gov/books/NBK242622/#File_Format_Guide_BK.FASTQ).
@@ -820,6 +818,10 @@ further compressing them. Therefore, please provide
 #### Illumina pipeline v1.4 and later  {#Illumina_pipeline_v1.4_and_later}
 
 DRA does not accept qseq files. Please convert qseq to fastq/bam.
+
+### BGI-seq  {#BGI}
+
+Submit fastq files.       
 
 ### SOLiD  {#SOLiD} 
 
@@ -870,7 +872,7 @@ We support the submission of the following types of PacBio bam files. Include 1 
 #### fastq  {#pacbio_fastq}
 
 The DRA also accepts Pacific Biosciences data in the
-[fastq](#fastq) format. Select the ["generic_fastq"](#fastq) for the Run filetype.
+[fastq](#fastq) format. Select the ["fastq"](#fastq) for the Run filetype.
 
 ### Oxford Nanopore  {#Oxford-Nanopore}
 
@@ -960,13 +962,13 @@ platforms.
 
 ## Data submission to DRA  {#dra-data-submission}
 
-### 1. Obtain a submission account 
+### 1. Obtain a submission account  {#obtain-account}
 
   - Create a [D-way submission account](https://ddbj.nig.ac.jp/D-way/)
   - To enable DRA submission, [register a public key and a center name
     to the account](/account-e.html#enable-dra-submission-in-account)
 
-### 2. Create a DRA submission and upload data files 
+### 2. Create a DRA submission and upload data files  {#upload-data-files} 
 
   - Create a new DRA submission ( [Add DRA submission functionality to
     your account](/account-e.html#enable-dra-submission-in-account))  
@@ -975,7 +977,7 @@ platforms.
   - Upload data files by scp before submitting BioProject, BioSample,
     Experiment and Run
 
-### 3. Submit project and sample information 
+### 3. Submit project and sample information  {#project-sample}
 
 #### [BioProject](/bioproject/submission-e.html)  {#BioProject_Study}
 
@@ -989,7 +991,7 @@ platforms.
 
 <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">metadata can be submitted as a tab-delimited text file
 
-### 4. Submit Experiment and Run 
+### 4. Submit Experiment and Run {#submit-object} 
 
 #### DRA Experiment <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#DRA_Experiment}
   - A description of a sample-specific sequencing library
@@ -1001,7 +1003,7 @@ platforms.
   - Validate data files after submitting Experiment and Run
   - All files linked to a Run are “merged” into a single SRA file format
 
-### 5. Validate sequencing data files
+### 5. Validate sequencing data files {#validate}
 
   - Start to convert sequencing data files into a SRA file for
     archiving.
@@ -1078,14 +1080,14 @@ List of submission status
 | confidential          | Archive files has been created and submission is kept private |
 | Public                | Released to public.                                           |
 
-### Upload sequence data  {#upload-sequence-data} 
+## Upload sequence data  {#upload-sequence-data} 
 
 Sequence data files need to be uploaded before creating metadata. Do NOT create any sub-directories. 
 To create metadata first, upload some files.
 
 {::options parse_block_html="true" /}
 <div class="accordion-menu">
-<h4 class="toggle-content-btn"><a href="javascript:void(0)">Transfer sequence data by using terminal (Linux/Mac OS X)</a></h4>
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">Transfer sequence data by using terminal (Linux/WSL/Mac OS X)</a></h4>
 <div class="accordion-content">
 
 Transfer the files by executing,
@@ -1132,7 +1134,7 @@ Set items as below and click the [Advanced...] button.
 Be sure to select the "binary mode" for file transfer. Do NOT select the "text mode".
 </div>
 
-  - File protocol: SCP
+  - File protocol: SFTP
   - Host name: ftp-private.ddbj.nig.ac.jp
   - Port number: 22
   - User name: (D-way Login ID)
@@ -1163,6 +1165,36 @@ transfer the files to the server.
 You can delete the transferred files by selecting the files and clicking
 the [Delete] button.
 
+[« Close](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
+
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">Upload sequence data files by PowerShell (Windows)</a></h4>
+<div class="accordion-content">
+
+Run PowerShell.  
+<a href="/assets/images/books/win-ps-1.jpg" title="Run PowerShell" class="group1"><img src="/assets/images/books/win-ps-1.jpg" alt="Run PowerShell" title="Run PowerShell" class="w200"></a>   
+
+Upload files by scp authenticated with an openSSH-format private key. A PuTTY-format private key causes "invalid format" error, [convert the key into OpenSSH-format](/account-e.html#putty-openssh).   
+```
+> scp -i private-key-for-auth <Your Files> <D-way Login ID>@ftp-private.ddbj.nig.ac.jp:~/<DRA Submission ID>
+```
+
+* -i: specify the private key for authentication which is pair of a public key registered to your D-way account.
+* <Your Files> Files to be transferred. Ex: file1 file2 (file1 and file2), file* (all files whose filenames start with “file”)
+* <D-way Login ID> D-way Login ID (ex. test07)
+* <DRA Submission ID> DRA Submission ID (ex. test07-0018)
+* command example: scp -i private-key-for-auth strainA_1.fastq test07@ftp-private.ddbj.nig.ac.jp:~/test07-0018  
+
+Enter a passphrase. If no passphrase is set, press enter.  
+```
+Enter passphrase for key 'private-key-for-auth': 
+```
+
+If an "UNPROTECTED PRIVATE KEY" error occurs, please see the FAQ [I can not scp transfer my files](/faq/en/scp-e.html).  
+  
 [« Close](javascript:void(0)){: .close-content-btn}
 </div>
 </div>
@@ -1230,7 +1262,12 @@ submitters can upload the files for the [DDBJ Mass Submission System
 the MSS team](/contact-ddbj-e.html#to-ddbj), upload the files to the ~/mass directory.
 </div>
 
-### Create metadata by using the tool  {#create-metadata-using-tool} 
+## Submit metadata {#submit-metadata}
+
+You may submit the metadata in two ways, one is ["Submit metadata by the web tool"](#metadata-web) and second is ["Submit metadata by the excel"](#metadata-excel).    
+When it is difficult to submit large-scale metadata (exceeds 100 Runs) by using the web tool whose resnposen is slow, it is recommended to submit the metadata by the metadata excel.    
+
+### Submit metadata by the web tool  {#metadata-web} 
 
 Move to the submission detail page by clicking the submission ID.
 
@@ -1371,7 +1408,7 @@ To submit a BioSample, enter content from left to right tabs. The second
 panel is for BioSample submission. Submitter information is copied with
 that of DRA submission.
 
-Biological and technical replicates are represented by separate
+Biological replicates are represented by separate
 BioSamples. Regarding necessary number of sample for sequence
 submission, please see the ["FAQ: How many samples do I need for my DRA
 submission?"](/faq/en/samples-for-sra.html)
@@ -1523,7 +1560,7 @@ processed as paired-end.
 </div>
 
 <div class="attention">
-For fastq files, select "generic_fastq" for filetype irrespective of read length. Do NOT select 'fastq'.
+For fastq files, select "fastq" for filetype irrespective of read length.
 </div>
 
 {% include image.html url="books/hdra-runfinish.jpg" caption="Enter file attributes and link files to Run" class="w450" %}
@@ -1562,68 +1599,48 @@ checked during validation.
 For large number of analysis, please submit them by using [Analysis metadata excel](/dra/analysis-e.html).
 </div>
 
-<div class="accordion-menu" markdown="1">
-<h3 class="toggle-content-btn"><a href="javascript:void(0)" name="create-metadata-in-xml-files">Create metadata in XML files</a></h3>
-<div class="accordion-content">
+### Submit metadata by the excel {#metadata-excel}
 
-The DRA metadata submission tool cannot describe technical reads
-(adapter, primer and barcode sequences). "To submit raw data contain
-technical reads" and "To use metadata elements in the [DRA XML
-schema](https://github.com/ddbj/pub/tree/master/docs/dra) but not in the
-submission tool", submitters need to create or edit metadata in XML
-files.
+Sometimes it is difficult to submit large-scale metadata (exceeds 100 Runs) by using the web tool whose response is too slow, 
+please submit the metadata by the excel.
 
-  1. Create a new DRA submission.
+Before filling in the metadata excel, you need to finish followings.
 
-  2. Prepare the Submission, Experiment, Run and Analysis (optional)
-    XML files.
+* [Submit BioProject](#study)
+* [Submit BioSample](#sample)
+* [Create a new DRA Submission](#create-new-submission)
+* [Upload sequencing data files](#upload-sequence-data)
 
-  3. Un-accessioned BioProject and BioSample can be referenced in
-    Experiment XML as follows.
+Download [the DRA metadata excel](/assets/files/submission/dra_metadata.xlsx) and describe your metadata. [Example excel](/assets/files/submission/example-0001_dra_metadata.xlsx) 
 
-  4. Validate XML files against xsd by following Unix commands. You
-    cannot upload XML with any errors.
+Next, [upload XMLs generated from the excel](#upload-xml) or [send the excel by email attachment](#send-metadata-excel).
 
-  5. Upload validated XML files. Select the Submission, Experiment,
-    Run and Analysis (optional) XML files and upload them at once.
-    <br>
-    Uploaded XML files are validated against SRA schema and
-    relationship between XML objects are checked. If errors are
-    displayed, modify and re-upload the XML files.
+#### Upload XMLs generated from the excel {#upload-xml}
 
-  <a href="/assets/images/books/hdra-xmlupload.jpg" title="Upload modified XML files" class="group1"><img src="/assets/images/books/hdra-xmlupload.jpg" alt="Upload modified XML files" title="Upload modified XML files" class="w500"></a>
+Please upload XMLs if you are familiar with command lines using container images.
 
-[« Close](javascript:void(0)){: .close-content-btn}
-</div>
-</div>
+You can submit metadata by uploading XMLs in the D-way submission page by using [the metadata excel](/assets/files/submission/dra_metadata.xlsx) and container images.   
+Generate metadata XMLs according to the [GitHub](https://github.com/ddbj/submission-excel2xml) page.
 
+Login [D-way](https://ddbj.nig.ac.jp/D-way) and move to the DRA submission page.  
+Following is an example of uploading the Submission/Experiment/Run XMLs to the DRA submission "test07-0040".
 
-<div class="accordion-menu" markdown="1">
-<h3 class="toggle-content-btn"><a href="javascript:void(0)" name="edit-metadata-in-xml-files">Edit metadata in XML files</a></h3>
-<div class="accordion-content">
+<a href="/assets/images/books/hdra-xmlupload.jpg" title="Upload metadata XMLs" class="group1"><img src="/assets/images/books/hdra-xmlupload.jpg" alt="Upload metadata XMLs" title="Upload metadata XMLs" class="w500"></a>
 
-The DRA metadata submission tool cannot describe technical reads
-(adapter, primer and barcode sequences). "To submit raw data contain
-technical reads" and "To use metadata elements in the [DRA XML
-schema](https://github.com/ddbj/pub/tree/master/docs/dra) but not in the
-submission tool", submitters need to create or edit metadata in XML
-files.
+** Web browser may time-out. However, submission processes are ongoing in backgroupd, so please leave it until the submission status becomes "metadata_submitted". If the status is unchanged even after a day, please contact us ([FAQ](/faq/en/dra-xml-timeout-e.html)). **   
+After the submission status becomes "metadata_submitted", move on to the [data file validation](#validation-data-files) step.  
+Avoid uploading XMLs many times after the time-out.   
+Please [contact us](/contact-e.html) if you are not sure about the status of your submission.
 
-1. [Create and submit metadata by using the web-based tool.](#create-metadata-using-tool)
-2. Download the Submission, Experiment, Run and Analysis (optional) XML files of the submission with status "metadata_submitted".
+#### Send the excel by email attachment  {#send-metadata-excel}
 
-<a href="/assets/images/books/hdra-xmldownload.jpg" title="Create metadata by using the submission tool and download them in XML files." class="group1"><img src="/assets/images/books/hdra-xmldownload.jpg" alt="Create metadata by using the submission tool and download them in XML files." title="Create metadata by using the submission tool and download them in XML files." class="w500"></a>
+Send us the excel by email attachment if you are not familir with command lines.
 
-1. Edit the downloaded XML files. For how to describe technical reads, please see the [example page](example-e.html). For available metadata elements, please see the explanation in [DRA XML schema](https://github.com/ddbj/pub/tree/master/docs/dra).
-2. Un-accessioned BioProject and BioSample can be referenced in Experiment XML as follows.
-3. Validate XML files against xsd by following Unix commands. You cannot upload XML with any errors.
-4. Upload modified XML files. Select the Submission, Experiment, Run and Analysis (optional) XML files and upload them at once. <br> Uploaded XML files are validated against SRA schema and relationship between XML objects are checked. If errors are displayed, modify and re-upload the XML files.
-
-<a href="/assets/images/books/hdra-xmlupload.jpg" title="Upload modified XML files" class="group1"><img src="/assets/images/books/hdra-xmlupload.jpg" alt="Upload modified XML files" title="Upload modified XML files" class="w500"></a>
-
-[« Close](javascript:void(0)){: .close-content-btn}
-</div>
-</div>
+Send your metadata excel with DRA submission ID to the following address.
+<img src="/assets/images/center/trace-m.jpg">   
+DRA curator generates XMLs and upload them instead of you.  
+After uploading the XMLs, the curator send backs the metadata in a table file. 
+Please check the file and proceed to the [data file validation step](#validation-data-files) if the file is correct.
 
 ### Validation of data files  {#validation-data-files}
 
@@ -1745,7 +1762,7 @@ FAQ: [How are linked BioProject/BioSample/sequence data
 released?](/faq/en/bp-bs-seq-release.html)
 
 When the data is released, in a few days, the released data will become
-searchable at [DRASearch](http://ddbj.nig.ac.jp/DRASearch)and the data
+searchable at [DDBJ Search](https://ddbj.nig.ac.jp/search)and the data
 will be mirrored to the [NCBI
 SRA](//www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi).
 
@@ -1774,7 +1791,7 @@ move to hold date change page.
 
 To immediately release the submission, click the [Release Now]. In the
 middle of the night, the submission is released, data files will be made
-available at [ftp](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/)and metadata will be indexed by the [DRA search system](http://ddbj.nig.ac.jp/DRASearch)in a few days.
+available at [ftp](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/)and metadata will be indexed by the [DDBJ search system](https://ddbj.nig.ac.jp/search)in a few days.
 
 ### Update metadata  {#update-metadata}
 

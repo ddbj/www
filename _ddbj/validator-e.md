@@ -115,7 +115,7 @@ Terms closed with brackets ( \[ and \] ) and not started from \# are the reserve
 
 -----
 
-### AGP Parser Error Messages  {#AGP Parser}
+### AGP Parser Error Messages {#AGP_Parser}
 
 #### Format  {#agpparser-1}
 

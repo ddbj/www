@@ -48,7 +48,7 @@ Annotated/Assembled Data
 |  [BioProject](/bioproject/index.html)  |  アルファベット５文字 ([BioProject prefix list](/documents/prefix.html#project)) ＋１ 桁以上の数字: 例 PRJDA123  |
 |  [BioSample](/biosample/index.html)  |  アルファベット４文字 ([BioSample prefix](/documents/prefix.html#sample)) ＋８桁の数字: 例 SAMD00000001  |
 
-## アクセッション番号と混同されるもの  {#confuse}
+## INSD アクセッション番号と混同されるもの  {#confuse}
 
 下記は混同されることが多いのですが、INSD
 のアクセッション番号ではありません。

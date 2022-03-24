@@ -22,8 +22,6 @@ related_pages:
     url: /ddbj/qualifiers-e.html
   - title: The Genetic Codes
     url: /ddbj/geneticcode-e.html
-  - title: The Genetic Codes
-    url: /ddbj/codontable-e.html
 ---
 
 

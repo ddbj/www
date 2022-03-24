@@ -38,7 +38,7 @@ related_pages:
 - getentry は webAPI として実装しており，入力フォームからだけでなく，プログラムなどから直接呼び出すことも可能です。
 - データの変更履歴の検索は，webAPI プログラムの [gethistory](#ge_program) を用いて行うことができます。
 - "DDBJ フラットファイルのキーワード検索" は [ARSA](http://ddbj.nig.ac.jp/arsa/) をご利用ください。
-- DRA データの検索は getentry ではおこなうことができません。[DRA Search](https://ddbj.nig.ac.jp/DRASearch/) をご利用ください。
+- DRA データの検索は getentry ではおこなうことができません。[DDBJ Search](https://ddbj.nig.ac.jp/search) をご利用ください。
 
 ## 入力フォームによる検索  {#入力フォームによる検索}
 [http://getentry.ddbj.nig.ac.jp/top-j.html](http://getentry.ddbj.nig.ac.jp/top-j.html)からご利用下さい。

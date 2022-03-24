@@ -10,26 +10,26 @@ category: about
     <div class="wrapper">
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/arita.jpg" title="ARITA Masanori"></p>
+        <p class="photo"><img src="/assets/images/staff/arita.jpg" title="Masanori Arita"></p>
         <div class="explanation">
-            <p class="name">ARITA Masanori, PhD</p>
+            <p class="name">Masanori Arita, PhD</p>
             <p class="position">Professor</p>
             <p class="position">Head of DDBJ Center</p>
         </div>
         </li>
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/nakamura.jpg" title="NAKAMURA Yasukazu"></p>
+        <p class="photo"><img src="/assets/images/staff/nakamura.jpg" title="Yasukazu Nakamura"></p>
         <div class="explanation">
-            <p class="name">NAKAMURA Yasukazu, PhD</p>
+            <p class="name">Yasukazu Nakamura, PhD</p>
             <p class="position">Professor</p>
             <p class="position">Head of International</p>
             <p class="position">Affairs Division</p>
         </div>
         </li>
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/okubo.jpg" title="OKUBO Kousaku"></p>
+        <p class="photo"><img src="/assets/images/staff/okubo.jpg" title="Kosaku Okubo"></p>
         <div class="explanation">
-            <p class="name">OKUBO Kousaku, MD, PhD</p>
+            <p class="name">Kosaku Okubo, MD, PhD</p>
             <p class="position">Professor</p>
             <p class="position">&nbsp;</p>
         </div>
@@ -37,25 +37,25 @@ category: about
     </ul>
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/ogasawara.jpg" title="OGASAWARA Osamu"></p>
+        <p class="photo"><img src="/assets/images/staff/ogasawara.jpg" title="Osamu Ogasawara"></p>
         <div class="explanation">
-            <p class="name">OGASAWARA Osamu, PhD</p>
+            <p class="name">Osamu Ogasawara, PhD</p>
             <p class="position">Project Associate Professor</p>
             <p class="position">Head of HPC Division</p>
         </div>
         </li>
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/sakurai.jpg" title="SAKURAI Nozomu"></p>
+        <p class="photo"><img src="/assets/images/staff/sakurai.jpg" title="Nozomu  Sakurai"></p>
         <div class="explanation">
-            <p class="name">SAKURAI Nozomu, PhD</p>
+            <p class="name">Nozomu Sakurai, PhD</p>
             <p class="position">Project Associate Professor</p>
             <p class="position">&nbsp;</p>
         </div>
         </li>
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/tanjo.jpg" title="TANJO Tomoya"></p>
+        <p class="photo"><img src="/assets/images/staff/tanjo.jpg" title="Tomoya Tanjo"></p>
         <div class="explanation">
-            <p class="name">TANJO Tomoya, PhD</p>
+            <p class="name">Tomoya Tanjo, PhD</p>
             <p class="position">Assistant Professor</p>
             <p class="position">Head of HPC Division</p>
         </div>
@@ -63,25 +63,25 @@ category: about
     </ul> 
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/kawashima.jpg" title="KAWASHIMA Takeshi"></p>
+        <p class="photo"><img src="/assets/images/staff/kawashima.jpg" title="Takeshi Kawashima"></p>
         <div class="explanation">
-            <p class="name">KAWASHIMA Takeshi, PhD</p>
+            <p class="name">Takeshi Kawashima, PhD</p>
             <p class="position">Assistant Professor</p>
             <p class="position">&nbsp;</p>
         </div>
         </li>
         <li class="staff">
-            <p class="photo"><img src="/assets/images/staff/tanizawa.jpg" title="TANIZAWA Yasuhiro, PhD"></p>
+            <p class="photo"><img src="/assets/images/staff/tanizawa.jpg" title="Yasuhiro Tanizawa, PhD"></p>
             <div class="explanation">
-                <p class="name">TANIZAWA Yasuhiro, PhD</p>
+                <p class="name">Yasuhiro Tanizawa, PhD</p>
                 <p class="position">Assistant Professor</p>
                 <p class="position">&nbsp;</p>
             </div>
         </li>
             <li class="staff">
-            <p class="photo"><img src="/assets/images/staff/fujisawa.jpg" title="FUJISAWA Takatomo"></p>
+            <p class="photo"><img src="/assets/images/staff/fujisawa.jpg" title="Takatomo Fujisawa"></p>
             <div class="explanation">
-                <p class="name">FUJISAWA Takatomo, PhD</p>
+                <p class="name">Takatomo Fujisawa, PhD</p>
                 <p class="position">Project Researcher</p>
                 <p class="position">Head of Database Division</p>
             </div>
@@ -94,37 +94,37 @@ category: about
     <h3>Coordinators</h3>
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/kodama.jpg" title="KODAMA Yuichi"></p>
+        <p class="photo"><img src="/assets/images/staff/kodama.jpg" title="Yuichi Kodama"></p>
         <div class="explanation">
-            <p class="name">KODAMA Yuichi, PhD</p>
+            <p class="name">Yuichi Kodama, PhD</p>
         </div>
         </li>  
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/kosuge.jpg" title="KOSUGE Takehide"></p>
+        <p class="photo"><img src="/assets/images/staff/kosuge.jpg" title="Takehide Kosuge"></p>
         <div class="explanation">
-            <p class="name">KOSUGE Takehide, PhD</p>
+            <p class="name">Takehide Kosuge, PhD</p>
         </div>
         </li>  
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/mashima.jpg" title="MASHIMA Jun"></p>
+        <p class="photo"><img src="/assets/images/staff/mashima.jpg" title="Jun Mashima"></p>
         <div class="explanation">
-            <p class="name">MASHIMA Jun, PhD</p>
+            <p class="name">Jun Mashima, PhD</p>
         </div>
         </li>
     </ul>  
     <h3>Curators</h3>
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/aono.jpg" title="AONO Hideo"></p>
+        <p class="photo"><img src="/assets/images/staff/aono.jpg" title="Hideo Aono"></p>
         <div class="explanation">
-            <p class="name">AONO Hideo</p>
+            <p class="name">Hideo Aono</p>
             <p class="position">Data Submission:MSS Patent</p>
         </div>
         </li>  
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/fukuda.jpg" title="FUKUDA Asami"></p>
+        <p class="photo"><img src="/assets/images/staff/fukuda.jpg" title="Asami Fukuda"></p>
         <div class="explanation">
-            <p class="name">FUKUDA Asami</p>
+            <p class="name">Asami Fukuda</p>
             <p class="position">Data Submission: NGS</p>
         </div>
         </li>  
@@ -138,78 +138,78 @@ category: about
     </ul>  
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/hata.jpg" title="HATA Chihiro"></p>
+        <p class="photo"><img src="/assets/images/staff/hata.jpg" title="Chihiro Hata"></p>
         <div class="explanation">
-            <p class="name">HATA Chihiro, PhD</p>
+            <p class="name">Chihiro Hata, PhD</p>
             <p class="position">Data Submission: NGS</p>
         </div>
         </li>
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/iizuka.jpg" title="IIZUKA Tomoyo"></p>
+        <p class="photo"><img src="/assets/images/staff/iizuka.jpg" title="Tomoyo Iizuka"></p>
         <div class="explanation">
-            <p class="name">IIZUKA Tomoyo, PhD</p>
+            <p class="name">Tomoyo Iizuka, PhD</p>
             <p class="position">Data Submission: NSSS</p>
         </div>
         </li> 
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/kawazoe.jpg" title="KAWAZOE Masahito"></p>
+        <p class="photo"><img src="/assets/images/staff/kawazoe.jpg" title="Masahito Kawazoe"></p>
         <div class="explanation">
-            <p class="name">KAWAZOE Masahito</p>
+            <p class="name">Masahito Kawazoe</p>
             <p class="position">Data Submission: NSSS</p>
         </div>
         </li> 
     </ul>  
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/lee.jpg" title="LEE Kyungbum"></p>
+        <p class="photo"><img src="/assets/images/staff/lee.jpg" title="Kyungbum Lee"></p>
         <div class="explanation">
-            <p class="name">LEE Kyungbum, PhD</p>
+            <p class="name">Kyungbum Lee, PhD</p>
             <p class="position">Data Submission: MSS</p>
         </div>
         </li>  
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/okido.jpg" title="OKIDO Toshihisa"></p>
+        <p class="photo"><img src="/assets/images/staff/okido.jpg" title="Toshihisa Okido"></p>
         <div class="explanation">
-            <p class="name">OKIDO Toshihisa, PhD</p>
+            <p class="name">Toshihisa Okido, PhD</p>
             <p class="position">Data Submission: MSS</p>
         </div>
         </li>  
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/sugita.jpg" title="SUGITA Rie"></p>
+        <p class="photo"><img src="/assets/images/staff/sugita.jpg" title="Rie Sugita"></p>
         <div class="explanation">
-            <p class="name">SUGITA Rie</p>
+            <p class="name">Rie Sugita</p>
             <p class="position">Data Updates/Correction</p>
         </div>
         </li>
     </ul>  
     <ul class="list">
         <li class="staff">
-            <p class="photo"><img src="/assets/images/staff/suzuki.jpg" title="SUZUKI Kimiko"></p>
+            <p class="photo"><img src="/assets/images/staff/suzuki.jpg" title="Kimiko Suzuki"></p>
             <div class="explanation">
-                <p class="name">SUZUKI Kimiko</p>
+                <p class="name">Kimiko Suzuki</p>
                 <p class="position">Data Submission: NGS</p>
             </div>
             </li>  
             <li class="staff">
-            <p class="photo"><img src="/assets/images/staff/takaki.jpg" title="TAKAKI Kanae"></p>
+            <p class="photo"><img src="/assets/images/staff/takaki.jpg" title="Kanae Takaki"></p>
             <div class="explanation">
-                <p class="name">TAKAKI Kanae</p>
+                <p class="name">Kanae Takaki</p>
                 <p class="position">Data Submission: NGS</p>
             </div>
             </li>
             <li class="staff">
-            <p class="photo"><img src="/assets/images/staff/tokimatsu.jpg" title="TOKIMATSU Toshiaki"></p>
+            <p class="photo"><img src="/assets/images/staff/tokimatsu.jpg" title="Toshiaki Tokimatsu"></p>
             <div class="explanation">
-                <p class="name">TOKIMATSU Toshiaki, PhD</p>
+                <p class="name">Toshiaki Tokimatsu, PhD</p>
                 <p class="position">Data Submission: NSSS</p>
             </div>
             </li>
     </ul>
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/yokoyama.jpg" title="YOKOYAMA Emi"></p>
+        <p class="photo"><img src="/assets/images/staff/yokoyama.jpg" title="Emi Yokoyama"></p>
         <div class="explanation">
-            <p class="name">YOKOYAMA Emi</p>
+            <p class="name">Emi Yokoyama</p>
             <p class="position">Data Updates/Correction</p>
         </div>
         </li>
@@ -217,49 +217,49 @@ category: about
     <h3 id="db-development">Database System SE</h3>
     <ul class="list">   
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/fujimoto.jpg" title="FUJIMOTO Masahiro"></p>
+        <p class="photo"><img src="/assets/images/staff/fujimoto.jpg" title="Masahiro Fujimoto"></p>
         <div class="explanation">
-            <p class="name">FUJIMOTO Masahiro</p>
+            <p class="name">Masahiro Fujimoto</p>
         </div>
         </li>        
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/kawasaki.jpg" title="KAWASAKI Aimi"></p>
+        <p class="photo"><img src="/assets/images/staff/kawasaki.jpg" title="Aimi Kawasaki"></p>
         <div class="explanation">
-            <p class="name">KAWASAKI Aimi</p>
+            <p class="name">Aimi Kawasaki</p>
         </div>
         </li>  
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/hmochizu.png" title="MOCHIZUKI Hideki"></p>
+        <p class="photo"><img src="/assets/images/staff/hmochizu.png" title="Hideki Mochizuki"></p>
         <div class="explanation">
-            <p class="name">MOCHIZUKI Hideki</p>
+            <p class="name">Hideki Mochizuki</p>
         </div>
         </li>
     </ul>
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/sugahara.jpg" title="SUGAHARA Misato"></p>
+        <p class="photo"><img src="/assets/images/staff/sugahara.jpg" title="Misato Sugahara"></p>
         <div class="explanation">
-            <p class="name">SUGAHARA Misato</p>
+            <p class="name">Misato Sugahara</p>
         </div>
         </li>      
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/tsuzuki.jpg" title="SUZUKI Takahiro"></p>
+        <p class="photo"><img src="/assets/images/staff/tsuzuki.jpg" title="Takahiro Suzuki"></p>
         <div class="explanation">
-            <p class="name">SUZUKI Takahiro</p>
+            <p class="name">Takahiro Suzuki</p>
         </div>
         </li>
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/yosida.jpg" title="YOSHIDA Masahiro"></p>
+        <p class="photo"><img src="/assets/images/staff/watanabe.jpg" title="Koji Watanabe"></p>
         <div class="explanation">
-            <p class="name">YOSHIDA Masahiro</p>
+            <p class="name">Koji Watanabe</p>
         </div>
         </li>
     </ul>  
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/watanabe.jpg" title="WATANABE Kouji"></p>
+        <p class="photo"><img src="/assets/images/staff/yosida.jpg" title="Masahiro Yoshida"></p>
         <div class="explanation">
-            <p class="name">WATANABE Kouji</p>
+            <p class="name">Masahiro Yoshida</p>
         </div>
         </li>      
     </ul>  
@@ -269,62 +269,62 @@ category: about
     <div class="wrapper">
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/katsumata.jpg" title="KATSUMATA Akiko"> </p>
+        <p class="photo"><img src="/assets/images/staff/katsumata.jpg" title="Akiko Katsumata"> </p>
         <div class="explanation">
-            <p class="name">KATSUMATA Akiko</p>
+            <p class="name">Akiko Katsumata</p>
         </div>
         </li>  
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/okuda.jpg" title="OKUDA Yoshihiro"> </p>
+        <p class="photo"><img src="/assets/images/staff/okuda.jpg" title="Yoshihiro Okuda"> </p>
         <div class="explanation">
-            <p class="name">OKUDA Yoshihiro, PhD</p>
+            <p class="name">Yoshihiro Okuda, PhD</p>
         </div>
         </li>  
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/takiguchi.jpg" title="TAKIGUCHI Yaeko"> </p>
+        <p class="photo"><img src="/assets/images/staff/takiguchi.jpg" title="Yaeko Takiguchi"> </p>
         <div class="explanation">
-            <p class="name">TAKIGUCHI Yaeko</p>
+            <p class="name">Yaeko Takiguchi</p>
         </div>
         </li>
     </ul>  
     <h3 id="sc">Supercomputer System SE</h3>
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/aoki.jpg" title="AOKI Kazunori"></p>
+        <p class="photo"><img src="/assets/images/staff/aoki.jpg" title="Kazunori Aoki"></p>
         <div class="explanation">
-            <p class="name">AOKI Kazunori</p>
+            <p class="name">Kazunori Aoki</p>
         </div>
         </li> 
         <li class="staff"> 
-        <p class="photo"><img src="/assets/images/staff/ashizawa.jpg" title="ASHIZAWA Yuji"></p>
+        <p class="photo"><img src="/assets/images/staff/ashizawa.jpg" title="Yuji Ashizawa"></p>
         <div class="explanation">
-            <p class="name">ASHIZAWA Yuji</p>
+            <p class="name">Yuji Ashizawa</p>
         </div>
         </li>        
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/hirai.jpg" title="HIRAI Tomohiro"></p>
+        <p class="photo"><img src="/assets/images/staff/hirai.jpg" title="Tomohiro Hirai"></p>
         <div class="explanation">
-            <p class="name">HIRAI Tomohiro</p>
+            <p class="name">Tomohiro Hirai</p>
         </div>
         </li>          
     </ul>
     <ul class="list">
               <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/tkato.jpg" title="KATO Takehiro"></p>
+        <p class="photo"><img src="/assets/images/staff/tkato.jpg" title="Takehiro Kato"></p>
         <div class="explanation">
-            <p class="name">KATO Takehiro</p>
+            <p class="name">Takehiro Kato</p>
         </div>
         </li> 
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/ytakahashi.jpg" title="TAKAHASHI Yoshimasa"></p>
+        <p class="photo"><img src="/assets/images/staff/ytakahashi.jpg" title="Yoshimasa Takahashi"></p>
         <div class="explanation">
-            <p class="name">TAKAHASHI Yoshimasa</p>
+            <p class="name">Yoshimasa Takahashi</p>
         </div>
         </li>
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/watanabe_t.jpg" title="WATANABE Tadayoshi"></p>
+        <p class="photo"><img src="/assets/images/staff/watanabe_t.jpg" title="Tadayoshi Watanabe"></p>
         <div class="explanation">
-            <p class="name">WATANABE Tadayoshi</p>
+            <p class="name">Tadayoshi Watanabe</p>
         </div>
         </li>  
     </ul>
@@ -334,15 +334,15 @@ category: about
     <div class="wrapper">
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/maki.jpg" title="MAKI Mika"></p>
+        <p class="photo"><img src="/assets/images/staff/maki.jpg" title="Mika Maki"></p>
         <div class="explanation">
-            <p class="name">MAKI Mika</p>
+            <p class="name">Mika Maki</p>
         </div>
         </li>
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/murakata.jpg" title="MURAKATA Naoko"></p>
+        <p class="photo"><img src="/assets/images/staff/murakata.jpg" title="Naoko Murakata"></p>
         <div class="explanation">
-            <p class="name">MURAKATA Naoko</p>
+            <p class="name">Naoko Murakata</p>
         </div>
         </li>
     </ul>

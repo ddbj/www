@@ -36,10 +36,10 @@ lang: ja
 : BioSample に由来するシークエンス用ライブラリーとシークエンスの手法について記載します。 Experiment は１つの BioProject と１つの BioSample を参照します。 複数の Experiment は１ BioSample を参照することができますが、逆に１つの Experiment が複数の BioSample を参照することはできません。
 
 [Run](#Run){: #Run-obj}  
-: シークエンス用ライブラリー (Experiment) に由来するファイルをまとめます。 Experiment を介してデータファイルは特定のサンプルにリンクされます。 Run に含まれる全てのファイルは１つの SRA/fastq ファイルにマージされ、Run のアクセッション番号がファイル名になります。そのため、異なるサンプ replicate に由来するファイルは同じ Run に含めるべきではありません。 一方、ペアードデータファイルは同じ Run に含め、リードが正しくペアとして処理されるようにします。
+: シークエンス用ライブラリー (Experiment) に由来するファイルをまとめます。 Experiment を介してデータファイルは特定のサンプルにリンクされます。 Run に含まれる全てのファイルは１つの SRA/fastq ファイルにマージされ、Run のアクセッション番号がファイル名になります。そのため、異なる replicate に由来するファイルは同じ Run に含めるべきではありません。 一方、ペアードデータファイルは同じ Run に含め、リードが正しくペアとして処理されるようにします。
 
 [Analysis](#Analysis){: #Analysis-obj}  
-: Run に格納されたデータを解析したデータで、しかるべき登録先がないようなデータを登録します。Analysis は DDBJ/EBI/NCBI で交換していません。 交換を希望する場合は [DRA チームに連絡します](/contact-ddbj.html)。 Analysis は [DRASearch](http://ddbj.nig.ac.jp/DRASearch) でインデックスされず、ftp でのファイル公開のみになります。
+: Run に格納されたデータを解析したデータで、しかるべき登録先がないようなデータを登録します。Analysis は DDBJ/EBI/NCBI で交換していません。Analysis は [DDBJ Search](https://ddbj.nig.ac.jp/search) でインデックスされます。
 
 {% include image.html url="books/sra_object.png" caption="データモデル" class="w450" %}
 
@@ -49,7 +49,7 @@ lang: ja
 
   - [最もシンプルなケース](#ex_simple)
   - [三つの菌株の比較ゲノム解析 (ペアエンド)](#ex_samples)
-  - [(Technical, Biological) replicate がある場合 (ペアエンド)](#ex_replicates)
+  - [Biological replicate がある場合 (ペアエンド)](#ex_replicates)
   - [関連するデータが別々の論文に発表される場合](#ex_submissions)
 
 #### 最もシンプルなケース  {#ex_simple}
@@ -62,11 +62,9 @@ lang: ja
 
 {% include image.html url="books/datamodel1.jpg" caption="三つの菌株の比較ゲノム解析 (ペアエンド)" class="w450" %}
 
-#### (Technical, Biological) replicate がある場合 (ペアエンド)  {#ex_replicates}
+#### Biological replicate がある場合 (ペアエンド)  {#ex_replicates}
 
-[関連する FAQ: 塩基配列登録にはいくつのサンプルが必要ですか?](/faq/ja/samples-for-sra)
-
-{% include image.html url="submission/obj_exreplicate.jpg" caption="(Technical, Biological) replicate がある場合　(ペアエンド)" class="w450" %}
+{% include image.html url="submission/obj_exreplicate.jpg" caption="Biological replicate がある場合　(ペアエンド)" class="w450" %}
 
 #### 関連するデータが別々の論文に発表される場合  {#ex_submissions}
 
@@ -257,7 +255,7 @@ SRA にデータを登録する際にはこの Center Name が必要です。
 <!-- end list -->
 
 [Instrument](#Instrument)<a name="Instrument"></a><span class="red">*</span>  
-: シークエンサの機種を選択します。
+: シークエンサの機種を選択します。Sequel IIe の場合、Sequel II を選択し、[Library Construction Protocol](#Library_Construction_Protocol) に Sequel IIe を使ったことを記載してください。 
 
 | Instrument Model                    |
 |---|
@@ -391,17 +389,16 @@ Run に含めるデータファイルを選択します。
 <!-- end list -->
 
 [File Type](#File_Type)<a name="File_Type"></a><span class="red">*</span>  
-: シークエンスデータのファイル形式。fastq ファイルの場合、リード長が一定かそうでないかに関わらず全て "generic_fastq" を選択します。"fastq" は選択しないでください。
+: シークエンスデータのファイル形式。fastq ファイルの場合、リード長が一定かそうでないかに関わらず全て "fastq" を選択します。
 
 | File Type        | Description                                                                                                            |
 |---|
-| generic_fastq   | fastq files                                                                                  |
-| fastq            | Select "generic_fastq" instead of "fastq".                                                                            |
+| fastq            | fastq files                                                                                                            |
 | sff              | 454 Standard Flowgram Format file                                                                                      |
 | hdf5             | PacBio hdf5 Format file                                                                                                |
 | bam              | Binary SAM format for use by loaders that combine alignment and sequencing data                                        |
 | tab              | A tab-delimited table maps "SN in SQ line of BAM header" and "reference fasta file"                                    |
-| reference_fasta | Reference sequence file in single fasta format used to construct SRA archive file format. Filename must end with ".fa" |
+| reference_fasta | Reference sequence file in single fasta format used to construct SRA archive file format. Filename must end with ".fa"  |
 
 <!-- end list -->
 
@@ -491,7 +488,9 @@ Analysis に含めるデータファイルを選択します。
 
 ### 登録するデータファイルの形式について  {#formats-sequencing-data-files} 
 
-DRA のメタデータ作成ツールは technical read (アダプター、プライマーやバーコード配列) を記載することに対応していません。 「technical read を含む生データを登録する場合」や「[DRA XML schema](https://github.com/ddbj/pub/tree/master/docs/dra) 中にはあるがツール中には無い項目をメタデータに記載する場合」は[メタデータを XML ファイルで登録する](#create-metadata-in-xml-files)必要があります ([XML の記載例](/ddbj/example.html))。
+DRA のメタデータ作成ツールは technical read (アダプター、プライマーやバーコード配列) を記載することに対応していません。 「technical read を含む生データを登録する場合」や「[DRA XML schema](https://github.com/ddbj/pub/tree/master/docs/dra) 中にはあるがツール中には無い項目をメタデータに記載する場合」は[メタデータを XML ファイルで登録する](#create-metadata-in-xml-files)必要があります ([XML の記載例](/ddbj/example.html))。    
+10x Genomics のデータファイルについては [What format of 10x Genomics data should I submit to NCBI GEO/SRA?](https://kb.10xgenomics.com/hc/en-us/articles/360024716391-What-format-of-10x-Genomics-data-should-I-submit-to-NCBI-GEO-SRA) を参考にしてください。
+
 
 一般的な形式
 
@@ -633,7 +632,7 @@ chr3 NC_000003.12
 
 ### fastq  {#fastq} 
 
-Run の filetype はリード長が一定かどうかに関わらず generic_fastq を選択します。fastq は選択しないでください。
+Run の filetype はリード長が一定かどうかに関わらず fastq を選択します。
 
 fastq の形式。詳しくは[NCBI のサイト](https://www.ncbi.nlm.nih.gov/sra/docs/submitformats/#fastq-files)をご覧ください。
 
@@ -663,6 +662,10 @@ sff ファイルに２つ以上のサンプルに由来するデータが含ま�
 ##### Illumina pipeline v1.4 以降
 
 qseq ファイルでの登録は受け付けておりません。fastq/bam ファイルに変換してから登録してください。
+
+### BGI-seq  {#BGI}
+
+fastq ファイルを登録します。    
 
 ### SOLiD  {#SOLiD} 
 
@@ -707,7 +710,7 @@ unaligned bamの場合、リファレンス配列や対応表の指定は必要�
 
 #### fastq  {#pacbio_fastq}
 
-[generic_fastq](#fastq) を Run の filetype で指定してください。
+[fastq](#fastq) を Run の filetype で指定してください。
 
 ### Oxford Nanopore  {#Oxford-Nanopore}
 
@@ -783,18 +786,18 @@ BioNano データをアセンブルに使用した場合、bnx ファイル、�
 
 ## DRA 登録の流れ  {#dra-data-submission}
 
-### 1. 登録アカウントを作成
+### 1. 登録アカウントを作成  {#obtain-account}
 
   - [D-way 登録アカウント](/account.html)を作成
   - [公開鍵と center name をアカウントに登録](/account.html#enable-dra-submission-in-account)し、DRA 登録を可能に
 
-### 2. DRA 登録を作成しデータファイルをアップロード
+### 2. DRA 登録を作成しデータファイルをアップロード  {#upload-data-files}
 
   - 新規 DRA 登録を作成 ([アカウントに DRA 登録権限を付与しておきます](/account.html#enable-dra-submission-in-account))  
     データは DRA 登録 (Submission) 単位で公開されます。
   - BioProject、BioSample、Experiment と Run を投稿する前にデータファイルを scp でアップロード
 
-### 3. プロジェクトとサンプル情報を登録
+### 3. プロジェクトとサンプル情報を登録  {#project-sample}
 
 #### [BioProject (Study)](/bioproject/submission.html) {#BioProject_Study}
 
@@ -808,7 +811,7 @@ BioNano データをアセンブルに使用した場合、bnx ファイル、�
 
 <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">メタデータをタブ区切りテキストファイルで登録できます
 
-### 4. Experiment と Run を登録
+### 4. Experiment と Run を登録 {#submit-object}
 
 #### DRA Experiment <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#DRA_Experiment}
 
@@ -821,7 +824,7 @@ BioNano データをアセンブルに使用した場合、bnx ファイル、�
   - Experiment と Run を投稿した後、データファイルの検証処理を開始
   - Run にリンクしている全てのデータファイルは 1 つの SRA ファイルにマージされます
 
-### 5. シークエンスデータファイルの検証処理
+### 5. シークエンスデータファイルの検証処理 {#validate}
 
   - シークエンスデータファイルをアーカイブ用 SRA ファイルに変換する処理を開始
   - 検証処理を通った登録が査定されアクセッション番号が発行される
@@ -888,13 +891,13 @@ DRA 登録のステータス一覧
 | confidential          | 公開用ファイルの作成処理が完了し、非公開に保たれている状態 |
 | Public                | 公開されている状態                     |
 
-### シークエンスデータのアップロード  {#upload-sequence-data} 
+## シークエンスデータのアップロード  {#upload-sequence-data} 
 
 <span class="red">メタデータを作成する前に登録するシークエンスデータファイルをアップロードします。サブディレクトリは作成しないでください。先にメタデータを作成する場合は適当なファイルをアップロードしてください。</span>
 
 {::options parse_block_html="true" /}
 <div class="accordion-menu">
-<h4 class="toggle-content-btn"><a href="javascript:void(0)">ターミナルによるシークエンスデータの転送 (Linux/Mac OS X)</a></h4>
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">ターミナルによるシークエンスデータの転送 (Linux/WSL/Mac OS X)</a></h4>
 <div class="accordion-content">
 
 ファイルを SCP 転送します。
@@ -962,13 +965,13 @@ DRA への登録 ～データの転送 (Windows)～
 転送モードはバイナリモードにします。テキストモードで転送しないでください。
 </div>
 
-  - **File protocol:** SCP
+  - **File protocol:** SFTP
   - **Host name:** ftp-private.ddbj.nig.ac.jp
   - **Port number:** 22
   - **User name:** (D-way の Login ID を入力)
   - **Password:** (空欄のまま)
 
-<a href="/assets/images/books/winscp1_400.jpg" title="秘密鍵の選択１" class="group1"><img src="/assets/images/books/winscp1_400.jpg" alt="秘密鍵の登録１" title="秘密鍵の登録１" class="w300"></a>
+<a href="/assets/images/books/winscp1_400.jpg" title="秘密鍵の選択１" class="group1"><img src="/assets/images/books/winscp1_400.jpg" alt="秘密鍵の選択１" title="秘密鍵の選択１" class="w300"></a>
 
 "Authentication" にある "Private key file" で、事前に作成した PuTTY 形式の秘密鍵を選択します。
 
@@ -987,6 +990,37 @@ DRA への登録 ～データの転送 (Windows)～
 
 転送したファイルは、ファイルを選択し [削除] ボタンをクリックすることで削除できます。
 
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
+
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">PowerShell によるシークエンスデータの転送 (Windows)</a></h4>
+<div class="accordion-content">
+
+
+PowerShell を起動します。   
+<a href="/assets/images/books/win-ps-1.jpg" title="PowerShell を起動" class="group1"><img src="/assets/images/books/win-ps-1.jpg" alt="PowerShell を起動" title="PowerShell を起動" class="w200"></a>   
+
+ファイルを SCP 転送します。OpenSSH 形式の秘密鍵を使用します。PuTTY 形式だと invalid format エラーになるので [OpenSSH 形式に変換](/account.html#putty-openssh)します。    
+```
+> scp -i private-key-for-auth <Your Files> <D-way Login ID>@ftp-private.ddbj.nig.ac.jp:~/<DRA Submission ID>
+```
+
+* -i でアカウントに登録した認証用公開鍵とペアになる openSSH 形式の秘密鍵を指定します。
+* <Your Files> 転送するファイル。例: file1 file2 (file1とfile2)、file* (fileではじまる全てのファイル)
+* <D-way Login ID> D-way の Login ID (例 test07)
+* <DRA Submission ID> DRA 登録の Submission ID (例: test07-0018)
+* コマンドの例: scp -i private-key-for-auth strainA_1.fastq
+
+鍵を作成したときに指定したパスフレーズを入力します。パスフレーズを設定していない場合は改行を押下します。  
+```
+Enter passphrase for key 'private-key-for-auth': 
+```
+
+UNPROTECTED PRIVATE KEY エラーになった場合、FAQ [scp でファイルの転送ができません](/faq/ja/scp.html) を参照してください。
+  
 [« 閉じる](javascript:void(0)){: .close-content-btn}
 </div>
 </div>
@@ -1048,7 +1082,12 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 [DDBJ 大量登録システム (Mass Submission System, MSS)](/ddbj/mss.html) 用の登録ファイルでサイズがメール添付の上限を超えるような場合は DRA サーバを利用することができます。 [MSS チームに連絡](/contact-ddbj.html#to-ddbj)した後、ファイルを ~/mass にアップロードします。
 </div>
 
-### ウェブツールでのメタデータ作成  {#create-metadata-using-tool} 
+## メタデータの登録 {#submit-metadata}
+
+メタデータは[ウェブツールで登録する方法](#metadata-web)と[メタデータ登録用エクセル](#metadata-excel)を使って登録する方法の二通りがあります。  
+メタデータのオブジェクト数が100を超えるような多件数であり、ウェブツールの応答が遅く登録作業が困難な場合、エクセルを使った登録方法を推奨します。
+
+### ウェブツールでのメタデータ作成  {#metadata-web} 
 
 作成した新規登録をクリックし、登録詳細ページへ移動します。
 
@@ -1063,10 +1102,6 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 先にメタデータを作成しておきたい場合は、適当なファイルをアップロードしておきます。
 
 {% include image.html url="books/hdra-not-uploaded.jpg" caption="データファイルがアップロードされていない場合" class="w200" %}
-
-<div id="submission-excel2xml" class="attention" markdown="1">
-Experiment や Run オブジェクトが多件数の場合、ウェブツールの応答が遅くなることがあります。その場合、[メタデータ用エクセル](/assets/files/submission/dra_metadata.xlsx)と XML 生成プログラムを使ってエクセルから XML を生成し、Submission/Experiment/Run XML を D-way からアップロードすることで多件数を一括で登録することができます。詳細については [GitHub](https://github.com/ddbj/submission-excel2xml) ページをご覧ください。
-</div>
 
 メタデータは Submission、BioProject、BioSample、Experiment、Run、Analysis (任意)
 オブジェクトで構成されています。 メタデータ作成ツールの画面上で、各項目に内容を英語で入力していきます。
@@ -1183,7 +1218,7 @@ Sample type に応じた属性入力用テンプレートファイルをダウ�
 
 二行目以降に１行１サンプルで入力していきます。BioProject アクセッション番号が発行されていないプロジェクトの場合 [bioproject_id](/biosample/attribute.html?all=all#bioproject_id) には PSUB 番号を入力します。値がない属性には、適宜 "missing" や "not applicable" などを記入します。
 
-Biological/Technical replicate は別々の BioSample として登録します。登録に必要なサンプル数は [FAQ: 塩基配列登録にはいくつのサンプルが必要ですか?](/faq/ja/samples-for-sra)
+Biological replicate は別々の BioSample として登録します。登録に必要なサンプル数は [FAQ: 塩基配列登録にはいくつのサンプルが必要ですか?](/faq/ja/samples-for-sra)
 を参照してください。
 
 {% include image.html url="books/hdra-bs04.jpg" caption="サンプル属性テンプレートファイルのダウンロード" class="w450" %}
@@ -1267,7 +1302,7 @@ BioSample を投稿した後、Sample では投稿したサンプルが選択さ
 </div>
 
 <div class="attention">
-fastq ファイルはリード長が一定かどうかに関わらず、filetype には "generic_fastq" を選択します。"fastq" は選択しないでください。
+fastq ファイルはリード長が一定かどうかに関わらず、filetype には "fastq" を選択します。
 </div>
 
 {% include image.html url="books/hdra-runfinish.jpg" caption="データファイルの属性を入力し Run に結び付ける" class="w450" %}
@@ -1298,93 +1333,47 @@ Analysis (任意) が不要な場合は [Submit / Update DRA metadata] をクリ
 件数が多い場合は、[Analysis メタデータエクセルファイル](/dra/analysis.html) を使った登録方法をご利用ください。
 </div>
 
-<div class="accordion-menu" markdown="1">
-<h3 class="toggle-content-btn"><a href="javascript:void(0)" name="create-metadata-in-xml-files">XML でのメタデータ登録方法</a></h3>
-<div class="accordion-content">
+### メタデータ登録用エクセルを使った登録方法 {#metadata-excel}
 
-メタデータ作成ツールは technical read (アダプター、プライマーやバーコード配列) を記載することに対応していません。
-「technical read を含む生データを登録する場合」や「[DRA XML schema](https://github.com/ddbj/pub/tree/master/docs/dra) 中にはあるがツール中には無い項目をメタデータに記載する場合」は メタデータを XML で登録、もしくは登録した XML を編集してアップロードします。
+メタデータの件数が100を超えるような多件数であり、ウェブ登録ツールの応答が遅く、登録作業が困難な場合、エクセルを使って登録します。   
+メタデータ登録用エクセルを記入する前に以下を済ませておきます。
 
-1. DRA 新規登録を作成し、データファイルをアップロードします。
+* [BioProject を登録](#study)
+* [BioSample を登録](#sample)
+* [DRA Submission の新規作成](#create-new-submission)
+* [シークエンスデータファイルのアップロード](#upload-sequence-data)
 
-2. Submission、Experiment、Run XML を作成します。アクセッション番号が未発行の BioProject と
-BioSample を Experiment から参照する場合、以下のように記載します。
-    ```
-    <STUDY_REF>
-      <IDENTIFIERS>
-        <PRIMARY_ID label="BioProject Submission ID">PSUB004220</PRIMARY_ID>
-      </IDENTIFIERS>
-    </STUDY_REF>
-    ```
-    <br>
-    ```
-    <SAMPLE_DESCRIPTOR>
-      <IDENTIFIERS>
-        <PRIMARY_ID label="BioSample Submission ID">SSUB003742 : sample name</PRIMARY_ID>
-      </IDENTIFIERS>
-    </SAMPLE_DESCRIPTOR>
-    ```
-3. XML を検証します。以下の Unix コマンドで XML をスキーマに対して検証することができます。エラーになる XML
-をアップロードすることはできません。
-    ```
-    xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.submission.xsd?view=co test07-0018.Submission.xml
-    xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.experiment.xsd?view=co test07-0018.Experiment.xml
-    xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.run.xsd?view=co test07-0018.Run.xml
-    xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.analysis.xsd?view=co test07-0018.Analysis.xml
-    ```
-4. チェックした XML をアップロードします。Submission、Experiment、Run、Analysis (任意) の XML ファイルを選択し、同時にアップロードします。
-    アップロードされた XML について「SRA xsd に対する妥当性」と「オブジェクト間の関係性」がチェックされます。エラーが発生した場合はファイルを修正してください。<br>
-    <a href="/assets/images/books/hdra-xmlupload.jpg" title="作成した XML のアップロード" class="group1"><img src="/assets/images/books/hdra-xmlupload.jpg" alt="作成した XML のアップロード" title="作成した XML のアップロード" class="w500"></a>
+[メタデータ登録用エクセル](/assets/files/submission/dra_metadata.xlsx)をダウンロードし、内容を記入します。[記入例](/assets/files/submission/example-0001_dra_metadata.xlsx) 
 
-[« 閉じる](javascript:void(0)){: .close-content-btn}
-</div>
-</div>
+続いて、[メタデータ登録用エクセルから生成した XML を登録](#upload-xml)、もしくは、[メタデータ登録用エクセルを担当者に送付](#send-metadata-excel)します。   
 
+#### メタデータ登録用エクセルから 生成した XML を登録 {#upload-xml}
 
-<div class="accordion-menu" markdown="1">
-<h3 class="toggle-content-btn"><a href="javascript:void(0)" name="edit-metadata-in-xml-files">XML でのメタデータ編集方法</a></h3>
-<div class="accordion-content">
+コンテナイメージを使ったコマンドライン操作に慣れている方はこちらの方法で登録してください。   
 
-メタデータ作成ツールは technical read (アダプター、プライマーやバーコード配列) を記載することに対応していません。
-「technical read を含む生データを登録する場合」や「[DRA XML schema](https://github.com/ddbj/pub/tree/master/docs/dra) 中にはあるがツール中には無い項目をメタデータに記載する場合」は メタデータを XML で登録、もしくは登録した XML を編集してアップロードします。
+[メタデータ登録用エクセル](/assets/files/submission/dra_metadata.xlsx)とプログラムを使ってエクセルから XML を生成し、XML を D-way からアップロードすることで多件数を一括で登録することができます。
+[GitHub](https://github.com/ddbj/submission-excel2xml) に記載されている手順に従い、メタデータを記入したエクセルからコマンドラインツールで Submission, Experiment, Run XML を生成します。    
 
-1. [メタデータ作成ツールでメタデータを作成し、投稿します。](#create-metadata-using-tool)
-2. "metadata_submitted" になった登録の Submission、Experiment、Run、Analysis (任意) を XML ファイルとしてダウンロードします。
-    <a href="/assets/images/books/hdra-xmldownload.jpg" title="ツールで作成したメタデータを XML としてダウンロード" class="group1"><img src="/assets/images/books/hdra-xmldownload.jpg" alt="ツールで作成したメタデータを XML としてダウンロード" title="ツールで作成したメタデータを XML としてダウンロード" class="w500"></a>
-3. XML を編集します。ファイル中のリードの構成を記載する SPOT_DESCRIPTOR
-  については[記入例](/dra/example.html)を参考にしてください。 その他の項目については、[DRA XML schema](https://github.com/ddbj/pub/tree/master/docs/dra) 中の説明を参照してください。
-4. アクセッション番号が未発行の BioProject と BioSample を  Experiment から参照する場合、以下のように記載します。
-    ```
-    <STUDY_REF>
-      <IDENTIFIERS>
-        <PRIMARY_ID label="BioProject Submission ID">PSUB004220</PRIMARY_ID>
-      </IDENTIFIERS>
-    </STUDY_REF>
-    ```
-    <br>
-    ```
-    <SAMPLE_DESCRIPTOR>
-      <IDENTIFIERS>
-        <PRIMARY_ID label="BioSample Submission ID">SSUB003742 : sample name</PRIMARY_ID>
-      </IDENTIFIERS>
-    </SAMPLE_DESCRIPTOR>
-    ```
-5. XML を検証します。以下の Unix コマンドで XML をスキーマに対して検証することができます。エラーになる XML をアップロードすることはできません。
-    ```
-    xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.submission.xsd?view=co test07-0018.Submission.xml
-    xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.experiment.xsd?view=co test07-0018.Experiment.xml
-    xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.run.xsd?view=co test07-0018.Run.xml
-    xmllint --schema http://www.ncbi.nlm.nih.gov/viewvc/v1/trunk/sra/doc/SRA/SRA.analysis.xsd?view=co test07-0018.Analysis.xml
-    ```
-6. 編集した XML をアップロードします。Submission、Experiment、Run、Analysis (任意) の XML ファイルを選択し、同時にアップロードします。
-  アップロードされた XML について「SRA xsd に対する妥当性」と「オブジェクト間の関係性」がチェックされます。エラーが発生した場合はファイルを修正してください。<br>
-  <a href="/assets/images/books/hdra-xmlupload.jpg" title="編集した XML のアップロード" class="group1"><img src="/assets/images/books/hdra-xmlupload.jpg" alt="編集した XML のアップロード" title="編集した XML のアップロード" class="w500"></a>
+[D-way](https://ddbj.nig.ac.jp/D-way) にログインし、対象 DRA submission のページに移動します。   
+以下は DRA submission "test07-0040" に Submission/Experiment/Run XML をアップロードする例です。   
 
-[« 閉じる](javascript:void(0)){: .close-content-btn}
-</div>
-</div>
+<a href="/assets/images/books/hdra-xmlupload.jpg" title="作成した XML のアップロード" class="group1"><img src="/assets/images/books/hdra-xmlupload.jpg" alt="作成した XML のアップロード" title="作成した XML のアップロード" class="w500"></a>
 
-### データファイルの検証  {#validation-data-files}
+**処理に時間がかかる場合、ブラウザーがタイムアウトしますが、システムでは登録処理が続いているため、ステータスが metadata_submitted になるまで放置します。一日経ってもステータスが変わらない場合は問い合わせてください ([FAQ](/faq/ja/dra-xml-timeout.html))。**   
+ステータスが metadata_submitted になったことを確認し、[データファイルの検証](#validation-data-files)に進みます。   
+タイムアウトした後、何度も XML をアップロードすることは避けてください。   
+状況が分からなくなった場合、DRA に[問い合わせてください](/contact.html)。
+
+#### メタデータ登録用エクセルを担当者に送付 {#send-metadata-excel}
+
+コマンドライン操作に不慣れな方はエクセルを担当者にメール添付でお送りください。    
+
+対象の DRA submission ID を添え、メール添付でエクセルファイルを次のアドレスに送付します。    
+<img src="/assets/images/center/trace-m.jpg">   
+DRA 担当者がエクセルから XML を生成し、対象の DRA submission にアップロードします。   
+完了後、担当者が登録したメタデータの内容をファイルで返送します。内容を確認後、問題が無ければ[データファイルの検証処理](#validation-data-files)に進みます。
+
+## データファイルの検証  {#validation-data-files}
 
 転送したシークエンスデータファイルをアーカイブ用 SRA ファイルに変換する過程で MD5 値とシークエンスデータの整合性が検証されます。
 
@@ -1428,7 +1417,7 @@ BioSample を Experiment から参照する場合、以下のように記載し�
 
 {% include image.html url="books/hdra-edit.jpg" caption="データを修正" class="w450" %}
 
-### アクセッション番号の発行  {#accession-numbers}
+## アクセッション番号の発行  {#accession-numbers}
 
 メタデータとシークエンスデータに問題がなければ、プレフィックス DR (Submission (DRA)、Experiment (DRX)、Run (DRR)、Analysis (DRZ)) のアクセッション番号が発行され、ステータスが “completed” になります。アクセッション番号は “Component” に表示されます。
 
@@ -1458,7 +1447,7 @@ BioSample を Experiment から参照する場合、以下のように記載し�
   - /report/dra/DRA000001/sra/DRR000001.sra
   - /report/dra/DRA000001/sra/DRR000002.sra
 
-### データ公開  {#data-release}
+## データ公開  {#data-release}
 
 登録データのデータベースへの取り込みが完了するとステータスが "confidential" になり、即日公開が指定されている場合以外は、以下の原則に則り、データが公開されるまで非公開で保持されます。
 
@@ -1484,7 +1473,7 @@ B, C または D の場合は登録者の了解がなくても例外なく公開
 FAQ:
 [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp-bs-seq-release.html)
 
-データが公開されると、数日間のうちに [DRASearch](http://ddbj.nig.ac.jp/DRASearch) で検索可能になり
+データが公開されると、数日間のうちに [DDBJ Search](https://ddbj.nig.ac.jp/search) で検索可能になり
 [NCBI SRA](https://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi) にミラーリングされます。
 
 DRA ファイルサーバに存在する fastq ファイル一覧:
@@ -1508,7 +1497,7 @@ FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
 
 <a href="/assets/images/books/hdra-hold.jpg" title="公開予定日の変更" class="group1"><img src="/assets/images/books/hdra-hold.jpg" alt="公開予定日の変更" title="公開予定日の変更" class="w400"></a>
 
-データを即日公開する場合は "Release Now" をクリックします。作業した日の深夜に公開処理が実施され、[ftp にデータファイルが公開](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/)され、数日以内に [DRA 検索システム](http://ddbj.nig.ac.jp/DRASearch)にインデックスされます。
+データを即日公開する場合は "Release Now" をクリックします。作業した日の深夜に公開処理が実施され、[ftp にデータファイルが公開](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/)され、数日以内に [DRA 検索システム](https://ddbj.nig.ac.jp/search)にインデックスされます。
 
 ### メタデータの更新  {#update-metadata}
 

@@ -6,4 +6,10 @@ category: metabobank
 lang: en
 ---
 
-MetaboBank ([https://mb.ddbj.nig.ac.jp](https://mb.ddbj.nig.ac.jp))
+MetaboBank ([https://mb.ddbj.nig.ac.jp](https://mb.ddbj.nig.ac.jp)) is a public repository for metabolomics.
+Its ongoing update (Ver.2) is accessible from [https://mb2.ddbj.nig.ac.jp](https://mb2.ddbj.nig.ac.jp).
+Raw data are available at [https://ddbj.nig.ac.jp/public/metabobank/project/](https://ddbj.nig.ac.jp/public/metabobank/project/).
+
+#### Key features
+- Permanent acession numbers and the CC-BY license for all information.
+- RDF data model and full-text search by Elastic Co.

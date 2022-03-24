@@ -12,20 +12,17 @@ related_pages:
     url: /ddbj/features-e.html
   - title: Qualifier key
     url: /ddbj/qualifiers-e.html
-  - title: Description of Location
-    url: /ddbj/location-e.html
-  - title: Protein Coding Sequence; CDS feature
-    url: /ddbj/cds-e.html
+  - title: Identifiers
+    url: /ddbj/identifiers-e.html
   - title: The Genetic Codes
     url: /ddbj/geneticcode-e.html
-  - title: Codes Used in Sequence Description
-    url: /ddbj/code-e.html
+  - title: Protein Coding Sequence; CDS feature
+    url: /ddbj/cds-e.html
   - title: Example of Submission
     url: /ddbj/example-e.html
 ---
 
-Every value of organism qualifier must be a "scientific name" ranked as
-species or lower taxa in taxonomy database.
+Every value of /organism qualifier must be a "scientific name" ranked as species or lower taxa in taxonomy database.
 
 ## taxonomy database  {#taxonomy}
 
@@ -37,31 +34,27 @@ diverse names of the organisms.
 
 The taxonomy database is used as the reference database for the unified organism names.
 
-The primary purpose of the taxonomy database is to unify descriptions of
-organism names.  
-Consequently, the taxonomy database is not an authoritative source for
-nomenclature or classification.  
-A taxonomic name may differ from the submitter's proposal or widely used
-taxonomic name because only the organism name in the taxonomy database
+The primary purpose of the taxonomy database is to unify descriptions of organism names.  
+Consequently, the taxonomy database is not an authoritative source for nomenclature or classification.  
+A taxonomic name may differ from the submitter's proposal or widely used taxonomic name because only the organism name in the taxonomy database
 which is managed by GenBank can be used for the entry.  
 Please refer to [description of the taxonomy database](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=howcite).
 
-DDBJ provides a web service called
-[TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en) to retrieve
-organism names in the taxonomy database. This would be helpful as a
-reference of taxonomic names when you submit nucleotide sequences to
-DDBJ.  
-Please note, even though the organism name has already been registered
-into the taxonomy database, when the data with the organism name have
-not yet been open to public, you can not retrieve the name at
-TXSearch.  
-<span class="red">Notice)</span> During submission via Nucleotide
-Sequence Submission System, please select "Not found in taxonomy
-database, but already registered in other sequence data " for
-["Category" of organism name](#deasy) to [indicate corresponding to the case](#private).
+DDBJ provides a web service called 
+[TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en) to retrieve 
+organism names in the taxonomy database. This would be helpful as a 
+reference of taxonomic names when you submit nucleotide sequences to DDBJ.  
+Please note, even though the organism name has already been registered 
+into the taxonomy database, when the data with the organism name have 
+not yet been open to public, you can not retrieve the name at TXSearch.  
 
-To submit nucleotide sequence data to DDBJ or to search taxonomy
-database, <span class="red">please make sure that the organism name has no misspelling. </span>
+<span class="red">Notice)</span> During submission via Nucleotide 
+Sequence Submission System, please select "Not found in taxonomy 
+database, but already registered in other sequence data " for 
+["Category" of organism name](#deasy) to [indicate corresponding to the case](#private). 
+
+To submit nucleotide sequence data to DDBJ or to search taxonomy database, 
+<span class="red">please make sure that the organism name has no misspelling. </span>
 
 ## General rule to describe organism names  {#rule}
 
@@ -171,16 +164,15 @@ please let us know [reference information](#items)
 ### 1. For identified species  {#species} 
 
 In principle, "organism name" is required to be a binomial name, i.e.
-the genus name and the species epithet, from which the sequence is
-obtained.  
-The species name should be described following international code of
-nomenclatures, such as International Code of Zoological Nomenclature
-(ICZN), International Code of Botanical Nomenclature (ICBN),
-International Code of Nomenclature of Bacteria.
+the genus name and the species epithet, from which the sequence is obtained.  
+The species name should be described following international code of 
+nomenclatures, such as International Code of Zoological Nomenclature 
+(ICZN), International Code of Botanical Nomenclature (ICBN), 
+International Code of Nomenclature of Bacteria. 
 
 Example
 
-- Homo sapiens
+<pre><code>Homo sapiens</code></pre>
 
 #### trinomial name  {#trinominal}
 
@@ -190,18 +182,17 @@ necessary.
 
 Examples
 
-- Pan troglodytes troglodytes
-- Zea mays subsp. mays
-- Brassica oleracea var. alboglabra
-- Oryza sativa Japonica Group
-- Escherichia coli K-12
+<pre><code>Pan troglodytes troglodytes
+Zea mays subsp. mays
+Brassica oleracea var. alboglabra
+Oryza sativa Japonica Group
+Escherichia coli K-12</code></pre>
 
-Also, the qualifier corresponding to
-[sub_species](/ddbj/qualifiers-e.html#sub_species),
-[variety](/ddbj/qualifiers-e.html#variety),
-[serotype](/ddbj/qualifiers-e.html#serotype) or
-[strain](/ddbj/qualifiers-e.html#strain) is required for the source
-feature.
+Also, the qualifier corresponding to 
+[/sub_species](/ddbj/qualifiers-e.html#sub_species),
+[/variety](/ddbj/qualifiers-e.html#variety),
+[/serotype](/ddbj/qualifiers-e.html#serotype) or
+[/strain](/ddbj/qualifiers-e.html#strain) is required for the source feature.
 
 <pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Pan troglodytes troglodytes"
                     /<a href="/ddbj/qualifiers.html#sub_species">sub_species</a>="troglodytes"
@@ -213,7 +204,7 @@ Previously, a strain name or some other lower taxon was required for the
 organism name of whole genomic scale sequences from microorganisms.  
 However, currently, the value of organism qualifier should be just a
 scientific name, in principle, even though for microbial genomes.  
-Describe a strain name in the [strain](/ddbj/qualifiers-e.html#strain)
+Describe a strain name in the [/strain](/ddbj/qualifiers-e.html#strain)
 qualifier.
 
 <pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Candida albicans"
@@ -230,11 +221,11 @@ Example
 - Influenza A virus
 
 The qualifiers corresponding to
-[collection_date](/ddbj/qualifiers-e.html#collection_date),
-[country](/ddbj/qualifiers-e.html#country),
-[host](/ddbj/qualifiers-e.html#host),
-[strain](/ddbj/qualifiers-e.html#strain) and
-[serotype](/ddbj/qualifiers-e.html#serotype) are required for the source feature.
+[/collection_date](/ddbj/qualifiers-e.html#collection_date),
+[/country](/ddbj/qualifiers-e.html#country), 
+[/host](/ddbj/qualifiers-e.html#host), 
+[/isolate](/ddbj/qualifiers-e.html#isolate) (or [/strain](/ddbj/qualifiers-e.html#strain)) and 
+[/serotype](/ddbj/qualifiers-e.html#serotype) are required for the source feature.
 
 Please describe them with appropriate qualifiers as below example.
 
@@ -245,7 +236,7 @@ Please describe them with appropriate qualifiers as below example.
                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Influenza A virus"
                    /<a href="/ddbj/qualifiers.html#serotype">serotype</a>="H7N7"
                    /<a href="/ddbj/qualifiers.html#strain">strain</a>="A/chicken/Tokyo/2007"
-</code></pre>  
+</code></pre>
 
 #### hybrid  {#hybrid}
 
@@ -253,16 +244,17 @@ In cases of hybrids, the scientific names would be like as follows;
 
 Examples
 
-- Rosa alba x Rosa corymbifera
-- Malus x domestica
-- Lilium hybrid division I
+<pre><code>Rosa alba x Rosa corymbifera
+Malus x domestica
+Lilium hybrid division I</code></pre>
 
 #### not found in taxonomy database  {#novel}
 
 If the name is not available on taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en)), please tell us
 any of following items during your sequence submission.
 
-Useful items for application of organism names to taxonomy database
+---
+**Useful items for application of organism names to taxonomy database**
 
 - [taxonomic lineage](#lineage)
 - [valid publication for species](#ref)
@@ -273,75 +265,74 @@ Useful items for application of organism names to taxonomy database
 
 #### 2-1. In case of species not to be identified  <a name="not-to-be-identified"></a>
 
-If the scientific name is unclear and/or unidentified, we adopt a
-tentative name for the organism. The tentative name is made up with the
-lineage (in many cases, genus names) that as far as submitters could
-specify.
+If the scientific name is unclear and/or unidentified, we adopt a 
+tentative name for the organism. The tentative name is made up with the 
+lineage (in many cases, genus names) that as far as submitters could specify.
 
 Format
 
-```
-"<genus name> sp."
-"<family (or upper) name> bacterium"
-```
+- \<genus name> sp. # prokaryotes
+- \<genus (or upper) name> sp. # eukaryotes
+- \<family (or upper) name> bacterium
+- \<family (or upper) name> archaeon
 
 Example
 
-- Acetobacter sp.
-- Acetobacteraceae bacterium
+<pre><code>Acetobacter sp.
+Aspergillaceae sp.
+Acetobacteraceae bacterium
+Methanomicrobiales archaeon</code></pre>
 
-The qualifiers corresponding to the lower rank such as
-[strain](/ddbj/qualifiers-e.html#strain),
-[isolate](/ddbj/qualifiers-e.html#isolate) etc. are required for the
-source feature.
+The qualifier corresponding to [identifier](/ddbj/identifiers-e.html), such as
+[/strain](/ddbj/qualifiers-e.html#strain), 
+[/isolate](/ddbj/qualifiers-e.html#isolate) etc., is required for the source feature.
 
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp."
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
-In case of whole genomic scale sequences from microorganisms, or in case
-of eukaryote sequences (except unicellular fungi), a strain name or some
-other lower taxon is required for the organism name.  
-The tentative name is made up with the lineage (in many cases, genus
-names) that as far as submitters could specify and the lower taxon (in many cases, strain names).  
-Also, describe a strain name in the
-[strain](/ddbj/qualifiers-e.html#strain) qualifier.
+In cases of eukaryote sequences (except unicellular fungi like yeasts or mold), <!-- or in cases of whole genomic scale sequences from microorganisms, -->
+an [identifier](/ddbj/identifiers-e.html), strain name or some other lower taxon, is required to include in the organism name.  
+The tentative name is made up with the lineage (in many cases, genus names) that as far as submitters could specify 
+and the lower taxon (in many cases, strain names).  
+Even included in the organism name, you should describe the [identifier](/ddbj/identifiers-e.html) in the 
+[/strain](/ddbj/qualifiers-e.html#strain) or some other corresponding qualifier.
 
-<pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
-                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
+<pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Euglena sp. CR123"
+                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="CR123"</code></pre>  
 
 #### 2-2. In case of proposing a novel species  {#new}
 
-If you are to propose a novel species, in the mean time, we adopt an
-unique tentative name for the organism. The tentative name is made up
-with the lineage (in many cases, genus names) that as far as submitters
-could specify and the lower taxon (in many cases, strain names). Because
-we have to avoid some confusions; for example, two different organisms
-are mixed up.
+If you are to propose a novel species, in the mean time, we adopt an unique tentative name for the organism. 
+The tentative name is made up with the lineage (in many cases, genus names) 
+that as far as submitters could specify and the [identifier](/ddbj/identifiers-e.html) (in many cases, strain names). 
+Because we have to avoid some confusions; for example, two different organisms are mixed up.
 
 Format
 
-```
-"<genus name> sp. <strain name>"
-"<family (or upper) name> bacterium <strain name>"
-```
+- \<genus name> sp. \<strain name>
+- \<family (or upper) name> bacterium \<strain name>
+- \<genus name> sp. \<strain name> # prokaryotes
+- \<genus (or upper) name> sp. \<strain name> # eukaryotes
+- \<family (or upper) name> bacterium \<strain name>
+- \<family (or upper) name> archaeon \<strain name>
 
 Example
 
-- Acetobacter sp. ITDI2.1
-- Acetobacteraceae bacterium ITDI2.1
+<pre><code>Acetobacter sp. ITDI2.1
+Acetobacteraceae bacterium ITDI2.1</code></pre>
 
-Also, the qualifiers corresponding to the lower rank such as
-[strain](/ddbj/qualifiers-e.html#strain) etc. are required for the
-source feature.
+Also, the qualifiers corresponding to the [identifier](/ddbj/identifiers-e.html) (such as
+[/strain](/ddbj/qualifiers-e.html#strain) etc.) are required for the source feature to submit your sequence.  
 
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
-If the name is not available on taxonomy database
+If the name is not available on taxonomy database 
 ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en)), please tell us
 any of following items during your sequence submission.
 
-Useful items for application of organism names to taxonomy database
+---
+**Useful items for application of organism names to taxonomy database**
 
 - [taxonomic lineage](#lineage)
 - [proposing name for novel species](/ddbj/organism-e.html#propose)
@@ -350,36 +341,36 @@ Useful items for application of organism names to taxonomy database
 
 ### 3. Environmental samples  {#env} 
 
-Environmental samples are sequences derived by direct molecular
-isolation from a bulk environmental DNA sample (by PCR, DGGE, or other
-anonymous methods) with no reliable identification of the source organism.  
+Environmental samples are sequences derived by direct molecular isolation from a bulk environmental DNA sample 
+(by PCR, DGGE, or other anonymous methods) with no reliable identification of the source organism.  
 Though frequently confused, <span class="red">the term, 'environmental samples', does not mean "wild type".</span>  
 Please refer to [environmental samples](/ddbj/env-e.html) in detail.  
 <span class="red">Mixed culture derived from an environmental sample is also processed as a kind of environmental samples. </span>
 
-For environmental sample, we assign the lineage that as far as
-submitters could specify is used for the description of organism name
-with the header "uncultured".
+For environmental sample, the organism name should be the lineage that as far as 
+you can specify with the header "uncultured".
 
 Format
 
-```
-"uncultured <genus name> sp."
-"uncultured <family (or upper) name>" or "uncultured <family (or upper) name> bacterium"
-```
+- uncultured bacterium  # prokaryotes 
+- uncultured \<genus name> sp. # prokaryotes 
+- uncultured \<family (or upper) name> bacterium # prokaryotes
+- uncultured \<genus (or upper) name> # eukaryotes
 
 Examples
 
-- uncultured Acetobacter sp.
-- uncultured alpha proteobacterium
-- uncultured Bacillaceae bacterium
+<pre><code>uncultured bacterium
+uncultured Acetobacter sp.
+uncultured alpha proteobacterium
+uncultured Bacillaceae bacterium
+uncultured Aspergillus
+uncultured Aspergillaceae</code></pre>
 
-In cases of environmental samples, the qualifier,
-[environmental_sample](/ddbj/qualifiers-e.html#environmental_sample),
-is required for source feature. Also,
-[isolation_source](/ddbj/qualifiers-e.html#isolation_source) and some
-other qualifiers should be used to describe the process and conditions
-of sample isolation.
+In cases of environmental samples, the qualifier, 
+[/environmental_sample](/ddbj/qualifiers-e.html#environmental_sample), is required for source feature.  Also, 
+[/isolation_source](/ddbj/qualifiers-e.html#isolation_source) and some other qualifiers should be used to describe the process and conditions of sample isolation.  
+For the [identifier](/ddbj/identifiers-e.html), use [/isolate](/ddbj/qualifiers-e.html#isolate) qualifier.  
+When you cloned the sample sequence, use [/clone](/ddbj/qualifiers-e.html#clone) qualifier, instead of /isolate qualifier.  
 
 <pre><code>                     /<a href="/ddbj/qualifiers.html#clone">clone</a>="4-11"
                      /<a href="/ddbj/qualifiers.html#environmental_sample">environmental_sample</a>
@@ -387,32 +378,70 @@ of sample isolation.
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers.html#organism">organism</a>="uncultured Acetobacter sp."</code></pre>
 
-If the name is not available on taxonomy database
+If the name is not available on taxonomy database 
 ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en)), please tell us
-any of following items during your sequence submission.
+any of following items during your sequence submission. 
 
-Useful items for application of organism names to taxonomy database
+---
+**Useful items for application of organism names to taxonomy database**
+
+- [taxonomic lineage](#lineage)
+- [process of sampling and/or sequencing](#isolate)
+
+[Metagenome Assembly](/ddbj/metagenome-assembly-e.html)
+: When you submit sequences of Metagenome-Assembled Genome (MAG), some single taxa can be assigned by the software tools, 
+so use the names of species or lower ranks (ex. Agrobacterium tumefaciens) for the /organism qualifiers.  
+
+: If the scientific name of MAG is unclear and/or unidentified, we adopt a tentative name for the organism.  
+The tentative name is made up with the lineage (in many cases, genus names) that as far as submitters could specify.  
+
+Format
+
+- \<genus name> sp. # prokaryotes
+- \<genus (or upper) name> sp. # eukaryotes
+- \<family (or upper) name> bacterium
+- \<family (or upper) name> archaeon
+
+Example
+
+<pre><code>Agrobacterium sp.
+Aspergillaceae sp.
+Rhizobiaceae bacterium
+Methanomicrobiales archaeon</code></pre>
+
+In case of MAG, the qualifiers, 
+[/environmental_sample](/ddbj/qualifiers-e.html#environmental_sample), 
+[/isolation_source](/ddbj/qualifiers-e.html#isolation_source), and 
+[/isolate](/ddbj/qualifiers-e.html#isolate) (as an [identifier](/ddbj/identifiers-e.html)), 
+are required for source feature like as other environmental samples.  
+Additionally, the [/metagenome_source](/ddbj/qualifiers-e.html#metagenome_source) qualifier is also required for source feature of MAG.  
+For [/metagenome_source](/ddbj/qualifiers-e.html#metagenome_source) qualifier, please input some of operative 
+[metagenome taxonomy nodes](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169) reflecting the resource of the environmental sample, e.g. "soil metagenome" .  
+See [NCBI site](https://www.ncbi.nlm.nih.gov/biosample/docs/organism/#metagenomes) about usages of metagenome names. 
+
+---
+**Useful items for application of organism names to taxonomy database**
 
 - [taxonomic lineage](#lineage)
 - [process of sampling and/or sequencing](#isolate)
 
 ### 4. Artificially constructed sequences  {#syn} 
 
-In many cases, artificially constructed sequences are uniformly named
-"synthetic construct", or, "eukaryotic synthetic construct". Sometimes,
-vector names or something like that are described 'as is' in the
-organism name.
+In many cases, artificially constructed sequences are uniformly named 
+"synthetic construct", or, "eukaryotic synthetic construct". 
+Sometimes, vector names or something like that are described 'as is' in the organism name.
 
 Examples
 
-- Cloning vector pAP3neo
-- Expression vector pAMP
+<pre><code>Cloning vector pAP3neo
+Expression vector pAMP</code></pre>
 
 If the name is not available on taxonomy database
 ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en)), please tell us
 any of following items during your sequence submission.
 
-Useful items for application of organism names to taxonomy database
+---
+**Useful items for application of organism names to taxonomy database**
 
 - [expected usage](/ddbj/organism-e.html#usage)
 

@@ -567,8 +567,6 @@ FEATURES             Location/Qualifiers
 
 ### D01.1) microsatellite, recommended annotation  {#D01.1}
 
-Microsatellite for mapping purpose can be categorized into STS division.
-
 <pre><code>DEFINITION  Bos taurus DNA, microsatellite: 3456P. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..300</a>

@@ -16,6 +16,8 @@ cells (samples). In the case of more number of cells and de-multiplexed
 data affect reproducibility, submit multiplexed (mixed) sample and data
 files.</span>
 
+Regarding the 10x Genomics data files, please refer to [What format of 10x Genomics data should I submit to NCBI GEO/SRA?](https://kb.10xgenomics.com/hc/en-us/articles/360024716391-What-format-of-10x-Genomics-data-should-I-submit-to-NCBI-GEO-SRA).
+
 ### Library information  {#library}
 
 In both de-multiplexed and multiplexed submissions, describe methods,

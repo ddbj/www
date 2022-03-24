@@ -22,41 +22,46 @@ related_pages:
     url: /ddbj/mss-form.html
 ---
 
+<div class="attention" markdown="1">
 <span class="red">ヒトを対象とした研究データの登録について</span>
 
 ヒトを対象とした全ての研究において DDBJ に送付するデータの由来である個人 (研究対象者)
 の尊厳及び人権は、適用されるべき法律、規定、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。  
 原則として、研究対象者を直接特定し得る参照情報は、登録データから取り除いてください。  
 ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#submission-of-human-data)をご覧ください。
+</div>
 
-- **[MSS 登録申し込みフォーム"](/ddbj/mss-form.html)**
-- **[登録用ファイルチェックツール"](/ddbj/mss-tool.html)**
+- **[MSS 登録申し込みフォーム](/ddbj/mss-form.html)**
+- **[登録用ファイルチェックツール](/ddbj/mss-tool.html)**
 - **登録用ファイル書式**
     - **[配列ファイル](/ddbj/file-format-e.html#sequence)**
     - **[アノテーションファイル](/ddbj/file-format-e.html#annotation)**
     - **[アノテーションファイルサンプル](/ddbj/file-format.html#sample)**
 
 
+
 ## MSS とは？  {#outline}
 
 <div class="attention" markdown="1">
 
-Mass Submission System (MSS) は、比較的大規模な塩基配列データ (reads ではない)
-をファイル送付により登録するサービスです。登録予定データが、以下のような条件に該当する場合はMSS をご利用ください。
+Mass Submission System (MSS) は、比較的大規模な塩基配列データ (reads ではない) をファイル送付により登録するサービスです。
+登録予定データが、以下の条件に該当する場合は MSS をご利用ください。
 
-- Web 版塩基配列登録システムが対応していない登録 → [EST](/ddbj/est.html)、STS、[TSA](/ddbj/tsa.html)、[HTC](/ddbj/htc.html)、[GSS](/ddbj/gss.html)、[HTG](/ddbj/htg.html)、[WGS](/ddbj/wgs.html)、[CON](/ddbj/con.html)、[TLS](/ddbj/tls.html)
-- 配列が長い場合 → 目安は 500 kb 以上
-- １エントリあたりに多数の Feature がある場合 → 目安は 30 以上
-- エントリ数 (登録する配列の数) が多い場合 → 500 を超えると Web 版塩基配列登録システムでは分割が必要です
+- Web 版塩基配列登録システムが対応していない登録 
+   - [EST](/ddbj/est.html)、STS、[TSA](/ddbj/tsa.html)、[HTC](/ddbj/htc.html)、[GSS](/ddbj/gss.html)、[HTG](/ddbj/htg.html)、[WGS](/ddbj/wgs.html)、[CON](/ddbj/con.html)、[TLS](/ddbj/tls.html)
+   - データ種別の詳細は、[登録データ種別](/documents/data-categories.html#division)をご確認ください。
+- 配列が長い場合
+   - 目安は 500 kb 以上
+- １エントリあたりに多数の Feature がある場合
+    - 目安は 30 以上
+- エントリ数 (登録する配列の数) が多い場合
+    - 目安は 100 以上
 
 </div>
 
-データの種別については[登録データ種別](/documents/data-categories.html)をご確認ください。
+上記に該当しない場合、[Web 版塩基配列登録システム (NSSS: DDBJ Nucleotide Sequence Submission System](/ddbj/web-submission.html)) のご利用をお勧めしております。
 
-上記の条件を満たさない配列の登録は、[Web 版塩基配列登録システム (NSSS: DDBJ Nucleotide Sequence Submission System](/ddbj/web-submission.html)) のご利用をお勧めしております。
-
-また、シークエンサからの出力配列 (reads) を登録する場合は [DRA; DDBJ Sequence Read
-Archive](/dra/index.html) をご参照ください。
+また、シークエンサからの出力配列 (reads) を登録する場合は [DRA; DDBJ Sequence Read Archive](/dra/index.html) をご参照ください。
 
 ## MSS による登録の流れ  {#flow}
 

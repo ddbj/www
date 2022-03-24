@@ -55,23 +55,23 @@ related_pages:
     </thead>
     <tbody>
       <tr>
-        <td>UME_win_V1.51.zip</td>
-        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/UME_win_V1.51.zip">FTP</a></td>
+        <td>UME_win_V1.52.zip</td>
+        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/UME_win_V1.52.zip">FTP</a></td>
         <td>Windows</td>
-        <td rowspan="2">2020/11/25</td>
+        <td rowspan="2">2022/01/26</td>
         <td rowspan="2"><a href="/ddbj/ume.html">ユーザーマニュアル</a></td>
         <td rowspan="2">Parser, transChecker 付属</td>
       </tr>
       <tr>
-        <td>UME_unix_V1.51.zip</td>
-        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/UME_unix_V1.51.zip">FTP</a></td>
+        <td>UME_unix_V1.52.zip</td>
+        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/UME_unix_V1.52.zip">FTP</a></td>
         <td>Unix/macOS</td>
       </tr>
       <tr>
-        <td>Parser_V6.65.tar.gz</td>
-        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/Parser_V6.65.tar.gz">FTP</a></td>
+        <td>Parser_V6.66.tar.gz</td>
+        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/Parser_V6.66.tar.gz">FTP</a></td>
         <td>Unix/macOS</td>
-        <td>2020/11/25</td>
+        <td>2022/01/26</td>
         <td><a href="/ddbj/parser.html">ユーザーマニュアル</a></td>
         <td>UME を使用する場合、不要</td>
       </tr>

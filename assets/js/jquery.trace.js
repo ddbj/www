@@ -558,7 +558,7 @@ $(function(){
   };
 });
 
-/* 画像ビュー */
+/* 画像ビュー 
 $(function(){
   if($.isFunction($.fn.colorbox)){
    
@@ -569,7 +569,7 @@ $(function(){
     // youtube ポップアップ
     $("a.youtube_figure").colorbox({iframe:true, innerWidth:"80%", innerHeight:"80%", close: closeText});
   }
-});
+});*/
 
 /* サンプル属性 */
 $(function(){
@@ -605,86 +605,45 @@ $(function(){
   var pathname = window.location.pathname;
   var protocol = window.location.protocol;	
 
-  var url_no_params = url.split("?")[0];
-  
-  var anchor = "";
-  if ( url.split('#')[1] ) anchor = "#" + url.split('#')[1];
-  
   // 言語判定
   var la = "ja";
   if ( pathname.match(/-e.html/) ) la = "en";
 
-  /* social icon の設置 ローカル用 */
-  var twitter_href = "";
-  var facebook_href = "";
-  var google_href = "";
-  var title = $("title").text().replace(/<(.*?)>/g, '');
-
-  twitter_href = "?url=" + url_no_params + "&text=" + title;
-  facebook_href = "?u=" + url_no_params;
-  google_href = "?url=" + url_no_params;
-
-  $('#share').prepend('<a href="https://twitter.com/share' + twitter_href + '" target="_blank" class="socials-share-link twitter"><i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/sharer/sharer.php' + facebook_href + '" target="_blank" class="socials-share-link facebook-official"><i class="fa fa-facebook-official"></i></a><a href="https://plus.google.com/share' + google_href + '" target="_blank" class="socials-share-link google"><i class="fa fa-google"></i></a>');
-
-  // get パラメータ表示操作
   var prms = getUrlVars();
-
-  // get パラメータでラジオボタンにチェックを入れる
-  if (prms.Core) {
-    $('input[name="Core"]').each(function(){
-      if ( $(this).attr("value") == prms.Core ){
-        $(this).attr("checked", "checked");
-      }
-    });
-  }
-
-  if (prms.SampleType) {
-    $('input[name="SampleType"]').each(function(){
-      if ( $(this).attr("value") == prms.SampleType ){
-        $(this).attr("checked", "checked");
-      }
-    });
-  }
-
-  if (prms.Package) {
-    if ( prms.Package == "No_package" ){
-      $("input#No_package").attr("checked", "checked");
-    } else {
-      $('input[name="Package"]').each(function(){
-        if ( $(this).attr("value") == "MIGS/MIMS/MIMARKS." + prms.Package ){
-          $(this).attr("checked", "checked");
-        }
-      });
-    }
-  }
 
   // 親がチェックされていれば表示する
   if( $('.biosample_attr input[value="MIxS"]:checked').val() ){
     $('.biosample_attr input[value="MIxS"]').parent(".radio").nextAll("ul").show();
     $("#env_package").show();
+  } else if( $('.biosample_attr input[value="Standard"]:checked').val() ){
+    $('.biosample_attr input[value="Standard"]').parent(".radio").nextAll("ul").show();
+    $("#env_package").hide();
+  } else if( $('.biosample_attr input[value="Pathogen"]:checked').val() ){
+    $('.biosample_attr input[value="Pathogen"]').parent(".radio").nextAll("ul").show();
+    $("#env_package").hide();
   }
 
   // input 変化
   $('.biosample_attr input[name="Core"]').change(function(){
     if( this.value == "MIxS" ){
+      $('.biosample_attr input[value!="MIxS"]').removeAttr("checked");
+      $('.biosample_attr input[name="Core"]').parent(".radio").nextAll("ul").hide();
       $(this).parent(".radio").nextAll("ul").show();
-      $("#env_package").show();		
-    } else if ( this.value == "FunctionalGenomics" ) {
-      // FunctionalGenomics 以外の checked を削除
-      $('.biosample_attr input[value!="FunctionalGenomics"]').removeAttr("checked");
+      $("#env_package").show();
+    } else if ( this.value == "Standard" ) {
+      $('.biosample_attr input[value!="Standard"]').removeAttr("checked");
       $('.biosample_attr input[name="Core"]').parent(".radio").nextAll("ul").hide();
+      $(this).parent(".radio").nextAll("ul").show();
       $("#env_package").hide();
-    } else if ( this.value == "Generic" ) {
-      // Generic 以外の checked を削除
-      $('.biosample_attr input[value!="Generic"]').removeAttr("checked");
+    } else if ( this.value == "Pathogen" ) {
+      $('.biosample_attr input[value!="Pathogen"]').removeAttr("checked");
       $('.biosample_attr input[name="Core"]').parent(".radio").nextAll("ul").hide();
-      $("#env_package").hide();
-    } else {
-      $('.biosample_attr input[name="Core"]').parent(".radio").nextAll("ul").hide();
+      $(this).parent(".radio").nextAll("ul").show();
       $("#env_package").hide();
     }
   });
 
+  // 必須マークを除外
   $(".biosample_attr input").change(function(){
     $(".biosample_attr .required").removeClass("required");
   });
@@ -704,24 +663,15 @@ $(function(){
   /* list all attributes クリック時 */
   $("#all").click(function(){
   
-    var params_h = {};
-    params_h["all"] = "all";
-
-    // get パラメータ作成
-    var get_params = "";
-    if ( Object.keys(params_h).length ){
-      get_params = jQuery.param(params_h);
-      window.history.pushState(null, null, url_no_params + "?" + get_params + anchor);
-    }
-
     // 選択済みラジオボタンを非選択化
-    // MIMS or MIMARKS 選択で No package 非表示
     $('.biosample_attr input').removeAttr('checked');
     $('#env_package').hide();
     $('#sample_type ul ul').hide();
+    $('.biosample_attr input:checked').prop('checked', false);
 
     // all 選択時の処理
       $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
+      //$.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1BwzRPc5g5bLH9tLj1MFSykXzMX5Zb52Zxoorf88bSLI/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
       attr_table = "";
       attr_table += '<p class="attr-title">All attributes</p>';
@@ -735,8 +685,9 @@ $(function(){
         var name = entries[0];
         var harmonizedname = entries[1];
         var synonym = entries[2];
-        var description = entries[3];
-        var descriptionja = entries[4];
+        var format = entries[3];
+        var description = entries[4];
+        var descriptionja = entries[5];
 
         var description_place = ""
         if( la == "ja" ){
@@ -763,11 +714,6 @@ $(function(){
 
       $('.bs_desc').after(attr_table);
 
-      // anchor 指定時にページ内遷移
-      if (anchor && $(anchor).length){
-        $(document).scrollTop( $(anchor).offset().top ); 
-      }
-
     }); // $.getJSON
 
   }); // $("#all").click(function()
@@ -777,79 +723,52 @@ $(function(){
     $('#all').click();
   }
 
-  /* package + env 定義属性リスト表示ボタンクリック */
+  // パラメータでの指定時
+  // package + env 定義属性リスト表示ボタンクリック 
   $("#definition").click(function(){
 
-    /* 選択チェック MIxS の場合 env 必須　*/      
+    // 選択チェック MIxS の場合 env 必須
     var core = $('.biosample_attr input[name="Core"]:checked').val();
-    var mixs = $('.biosample_attr input[name="SampleType"]:checked').val();
+    var type = $('.biosample_attr input[name="SampleType"]:checked').val();
     var env = $('.biosample_attr input[name="Package"]:checked').val();
 
     // core が選択されていない
-    if(!core) {
+    if (!core) {
       $('.biosample_attr input[name="Core"]').parent(".radio").addClass("required");
       return false;
-    } else if ( core!="Generic" ) {
-      if ( core=="FunctionalGenomics" ) {
-
-      } else if (!mixs || !env) {
-        if (!mixs) {
-          $('.biosample_attr input[name="SampleType"]').parent(".radio").addClass("required");
-        } 
-        if (!env) {
-          $('.biosample_attr input[name="Package"]').parent(".radio").addClass("required");
-        }
-        return false;
-      }
-    }   
-
-    // URL 書き換え、ブラウザーの履歴には残らない
-    var params_h = {};
-
-    if( core ){ 
-      params_h["Core"] = core;
-    } 
-
-    if( mixs ){ 
-      params_h["SampleType"] = mixs;
+    } else if (!type && !env){
+      $('.biosample_attr input[name="SampleType"]').parent(".radio").addClass("required");
+      $('.biosample_attr input[name="Package"]').parent(".radio").addClass("required");
+      return false;
+    } else if (!type){
+      $('.biosample_attr input[name="SampleType"]').parent(".radio").addClass("required");
+      return false;
+    } else if (core=="MIxS" && type && !env) {
+      $('.biosample_attr input[name="Package"]').parent(".radio").addClass("required");
+      return false;      
     }
 
-    if( env ){ 
-      if( env == "No_package" ){
-        params_h["Package"] = "No_package";
-      } else {
-        params_h["Package"] = env.replace("MIGS/MIMS/MIMARKS.", "");
-      }
-    }
-    
-    params_h["definition"] = "definition";
-
-    // get パラメータ作成
-    var get_params = "";
-    if ( Object.keys(params_h).length ){
-      get_params = jQuery.param(params_h);
-      window.history.pushState(null, null, url_no_params + "?" + get_params);
+    if (core!="MIxS") {
+      env = "";
     }
 
     // package の name 構築
     var package_shortname = "";
 
-    if ( core=="Generic" ){
-      package_shortname = "Generic";
-    } else if ( core=="FunctionalGenomics" ) {
-      package_shortname = "Functional.genomics";
-    } else if ( core=="MIxS" ) {
+    if( env ){
       if( env=="No_package" ){
-        package_shortname = mixs;
-      // no package
+        package_shortname = type;
       } else {
-        package_shortname = mixs + env.replace("MIGS/MIMS/MIMARKS", "");
+        package_shortname = type + '.' + env;
       }
+    } else {
+      package_shortname = type;
     }
 
-    // package 選択時の処理
-    $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
-
+    // package 選択時の処理 attribute シートを起点に
+      $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
+      //$.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1BwzRPc5g5bLH9tLj1MFSykXzMX5Zb52Zxoorf88bSLI/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
+      
       var span_required = "";
 
       attr_table = "";
@@ -899,10 +818,21 @@ $(function(){
         attr_table += '</p>';           
       }
 
-      attr_table += '<div id="biosample_attr_area"><table id="biosample_attr_table"><thead><tr class="biosample_header"><th class="name">Name</th><th class="description"Description</th></tr></thead><tbody>';
+      attr_table += '<div id="biosample_attr_area"><table id="biosample_attr_table"><thead><tr class="biosample_header"><th class="name">Name</th><th class="description">Description</th></tr></thead><tbody>';
 
       // name 毎に選択された package shorname の M O - で判定していく
-      var pac_names = data.values[0];
+      var pac_names = data.values[0];   
+      var e = 0;   
+      var pre_group = "";      
+
+      // attribute シートの package short name の位置取得
+      var package_position = 0;
+      for(var j = 0; j < pac_names.length; j++) {
+          if(pac_names[j] == package_shortname){
+            package_position = j;
+          }
+      }
+
       for(var i = 1; i < data.values.length; i++) {
 
         var entries = data.values[i];
@@ -910,8 +840,9 @@ $(function(){
         var name = entries[0];
         var harmonizedname = entries[1];
         var synonym = entries[2];
-        var description = entries[3];
-        var descriptionja = entries[4];
+        var format = entries[3];
+        var description = entries[4];
+        var descriptionja = entries[5];
 
         var description_place = ""
         if( la == "ja" ){
@@ -922,18 +853,25 @@ $(function(){
         
         // attribute シートの package short name の位置取得
         var option = "";
-        for(var j = 0; j < pac_names.length; j++) {
-          if(pac_names[j] == package_shortname){
-            option = entries[j];
-          }
-        }
-
+        option = entries[package_position];
+          
         // 属性の M O - 判定
         var optional_pattern = /^O/;
         var required_pattern = /^M/;
+        var either_one_pattern = /^E:([A-Za-z]*)/;
         if ( option.match(required_pattern) ){
           span_required = '<span class="required">*</span>';
           attr_table += '<tr id="' + name + '"><td class="name"><a href="#' + name + '">' + name + '</a>' + span_required + '</td><td class="description">' + description_place + '</td></tr>';
+        } else if ( option.match(either_one_pattern) ) {
+          group = option.match(either_one_pattern)[1].toLowerCase();                
+          
+          if(group!=pre_group){
+            e = e + 1;
+          };
+          
+          span_required = '<span class="required">**' + e + '</span>';
+          attr_table += '<tr id="' + name + '"><td class="name"><a href="#' + name + '">' + name + '</a>' + span_required + '</td><td class="description">' + description_place + '</td></tr>';                    
+          pre_group = group;
         } else if ( option.match(optional_pattern) ) {
           attr_table += '<tr id="' + name + '"><td class="name"><a href="#' + name + '">' + name + '</a></td><td class="description">' + description_place + '</td></tr>';
         }
@@ -957,113 +895,6 @@ $(function(){
     }); // $.getJSON
 
   }); // $("#definition").click(function()
-
-  // パラメータでの指定時
-  if ( prms.definition == "definition" && prms.all != "all" ) {
-    $('#definition').click();
-  }
-
-  /* package + env 定義属性ファイルダウンロードボタンクリック */
-  $("#download").click(function(e){
-
-    /* 選択チェック MIxS の場合 env 必須　*/      
-    var core = $('.biosample_attr input[name="Core"]:checked').val();
-    var mixs = $('.biosample_attr input[name="SampleType"]:checked').val();
-    var env = $('.biosample_attr input[name="Package"]:checked').val();
-
-    // core が選択されていない
-    if(!core) {
-      $('.biosample_attr input[name="Core"]').parent(".radio").addClass("required");
-      return false;
-    } else if ( core!="Generic" ) {
-      if ( core=="FunctionalGenomics" ) {
-
-      } else if (!mixs || !env) {
-        if (!mixs) {
-          $('.biosample_attr input[name="SampleType"]').parent(".radio").addClass("required");
-        } 
-        if (!env) {
-          $('.biosample_attr input[name="Package"]').parent(".radio").addClass("required");
-        }
-        return false;
-      }
-    }   
-
-    // package の shorname 取得
-    var package_shortname = "";
-
-    if ( core=="Generic" ){
-      package_shortname = "Generic";
-    } else if ( core=="FunctionalGenomics" ) {
-      package_shortname = "Functional.genomics";
-    } else if ( core=="MIxS" ) {
-      if( env=="No_package" ){
-        package_shortname = mixs;
-      // no package
-      } else {
-        package_shortname = mixs + env.replace("MIGS/MIMS/MIMARKS", "");
-      }
-    }
-
-    // package 選択時の tsv ダウンロード提供処理
-    $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
-
-      var tsv_a = [];
-      var pac_names = data.values[0];
-
-      // name 毎に選択された package shorname の M O - で判定していく
-      for(var i = 1; i < data.values.length; i++) {
-
-        var entries = data.values[i];
-        var name = entries[0];               
- 
-        // attribute シートの package short name の位置取得
-        for(var j = 0; j < pac_names.length; j++) {
-          if(pac_names[j] == package_shortname){
-            var option = entries[j];
-          }
-        }
-
-        // 属性の M O - 判定
-        var optional_pattern = /^O/;
-        var required_pattern = /^M/;
-        if ( option.match(required_pattern) ){
-          tsv_a.push("*" + name);
-        } else if ( option.match(optional_pattern) ) {
-          tsv_a.push(name);
-        }
-          
-      } // for(var i = 0; i < entries.length; i++)
-      
-      var content = tsv_a.join("\t");
-
-      // filename 処理
-      var fileName = "";
-      if( core == "Generic" ){
-        fileName = "Generic.txt";
-      } else if ( core=="FunctionalGenomics" ) {
-        fileName = "Functional.genomics.txt";
-      } else {
-        if(env) {
-          if( env == "No_package" ){
-            fileName = mixs + ".txt";
-          } else {
-            env_name = env.replace("MIGS/MIMS/MIMARKS.", "");
-            fileName = mixs + "." + env_name + ".txt";
-          }
-        } else {
-          fileName = mixs + ".txt";
-        }
-      }
-
-      var link = document.createElement('a');
-      link.href = window.URL.createObjectURL( new Blob( [content] ) );
-      link.download = fileName;
-      link.click();
-
-    }); // $.getJSON
-
-  }); // $("#definition").click(function(e)
 
 });
 
@@ -1293,304 +1124,115 @@ $(function() {
   var anchor = "";
   if ( url.split('#')[1] ) anchor = "#" + url.split('#')[1];
 
-  var poc_html = '<ul class="menu single_book">';
+  var rule_html = '<ul class="menu single_book">';
   if ( pathname.match(/-e\.html/) ) la = "en";	
   
   if ( pathname.match(/\/ddbj\/validator/) ){
   
     // Parser
-    $.getJSON("https://spreadsheets.google.com/feeds/list/1djQ52hOYXFRQru3-CJZyvzANaZOZ_TuuQW8i0IKg5Ls/1/public/values?alt=json", function(data) {
+    $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1djQ52hOYXFRQru3-CJZyvzANaZOZ_TuuQW8i0IKg5Ls/values/Parser?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
-      var entries = data.feed.entry;
       var rule_html = "";
-      var poc_html = '<ul class="menu books">';
-      for(var i = 0; i < entries.length; i++) {
-        var rule_class = entries[i].gsx$ruleclass.$t;
-        var rule_id = entries[i].gsx$ruleid.$t;
-        var level = entries[i].gsx$level.$t;
-        var type = entries[i].gsx$type.$t;
-        var file = entries[i].gsx$file.$t;      
-        var message = entries[i].gsx$message.$t;
-        var description = entries[i].gsx$description.$t;
-        var description_ja = entries[i].gsx$descriptionja.$t;
 
+      for(var i = 1; i < data.values.length; i++) {
+       
+        var entries = data.values[i];
+
+        var rule_class = entries[0];
+        var rule_id = entries[1];
+        var level = entries[2];
+        var type = entries[3];
+        var file = entries[4];
+        var message = entries[5];
+        var description = entries[6];
+        var description_ja = entries[7];
+   
         rule_html += '<dl>';
-        if ( file ){
-          rule_html += '<dt id="' + rule_id + '"><div class="rule-message">' + rule_id + ':' + level + ':' + type + ':' + file + ':' +  message + '</div></dt>';
+        
+        if ( file ){          
+          rule_html += '<dt id="' + rule_id + '"><div class="rule-message"><a href="#' + rule_id + '">' + rule_id + '</a>:' + level + ':' + type + ':' + file + ':' +  message + '</div></dt>';
         } else {
-          rule_html += '<dt id="' + rule_id + '"><div class="rule-message">' + rule_id + ':' + level + ':' + type + ':' +  message + '</div></dt>';        	
+          rule_html += '<dt id="' + rule_id + '"><div class="rule-message"><a href="#' + rule_id + '">' + rule_id + '</a>:' + level + ':' + type + ':' +  message + '</div></dt>';
         }
-        if (la == "ja"){				
+
+        if (la == "ja"){        
           rule_html += '<dd><div class="rule-description"> ' + description_ja + '</div></dd>';
         } else {
           rule_html += '<dd><div class="rule-description"> ' + description + '</div></dd>';
         }
         rule_html += "</dl>";
-        if ( i == 0) {
-          poc_html += '<li><a href="#' + rule_class + '" class="toc_chapter">' + rule_class + '</a></li>';
-          poc_html += '<ul>';
-        }
-        poc_html += '<li><a href="#' + rule_id + '" class="toc_chapter">' + rule_id + '</a></li>';
-      } // for
-      poc_html += '</ul></ul>';
-      $("#Parser-rule").prepend(rule_html);	
-    $('#in_this_page h2').after(poc_html);
 
-    // anchor 指定時にページ内遷移
-    if (anchor && $(anchor).length){
-    $(document).scrollTop( $(anchor).offset().top ); 
-    }	
+      }
+
+      $("#Parser-rule").prepend(rule_html);
 
     }); // $.getJSON..Parser 
 
     // transChecker
-    $.getJSON("https://spreadsheets.google.com/feeds/list/1djQ52hOYXFRQru3-CJZyvzANaZOZ_TuuQW8i0IKg5Ls/2/public/values?alt=json", function(data) {
+    $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1djQ52hOYXFRQru3-CJZyvzANaZOZ_TuuQW8i0IKg5Ls/values/transChecker?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
-      var entries = data.feed.entry;
       var rule_html = "";
-      var poc_html = '<ul class="menu books">';
-      for(var i = 0; i < entries.length; i++) {
-        var rule_class = entries[i].gsx$ruleclass.$t;
-        var rule_id = entries[i].gsx$ruleid.$t;
-        var level = entries[i].gsx$level.$t;
-        var message = entries[i].gsx$message.$t;
-        var description = entries[i].gsx$description.$t;
-        var description_ja = entries[i].gsx$descriptionja.$t;
 
+      for(var i = 1; i < data.values.length; i++) {
+       
+        var entries = data.values[i];
+
+        var rule_class = entries[0];
+        var rule_id = entries[1];
+        var level = entries[2];
+        var message = entries[3];
+        var description = entries[4];
+        var description_ja = entries[5];
+   
         rule_html += '<dl>';
-        rule_html += '<dt id="' + rule_id + '"><div class="rule-message">' + rule_id + ':' + level + ':' +  message + '</div></dt>';
-
-        if (la == "ja"){				
+        rule_html += '<dt id="' + rule_id + '"><div class="rule-message"><a href="#' + rule_id + '">' + rule_id + '</a>:' + level + ':' +  message + '</div></dt>';
+        
+        if (la == "ja"){        
           rule_html += '<dd><div class="rule-description"> ' + description_ja + '</div></dd>';
         } else {
-         rule_html += '<dd><div class="rule-description"> ' + description + '</div></dd>';
+          rule_html += '<dd><div class="rule-description"> ' + description + '</div></dd>';
         }
         rule_html += "</dl>";
-        if ( i == 0) {
-          poc_html += '<li><a href="#' + rule_class + '" class="toc_chapter">' + rule_class + '</a></li>';
-          poc_html += '<ul>';
-        }
         
-        poc_html += '<li><a href="#' + rule_id + '" class="toc_chapter">' + rule_id + '</a></li>';
-
-      } // for
-      
-      poc_html += '</ul></ul>';
+      }
 
       $("#transChecker-rule").prepend(rule_html);
-    $('#in_this_page h2').after(poc_html);
 
-    // anchor 指定時にページ内遷移
-    if (anchor && $(anchor).length){
-    $(document).scrollTop( $(anchor).offset().top ); 
-    }	
+    }); // $.getJSON. transChecker
 
-    }); // $.getJSON..transChecker 
+    // AGPParser
+    $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1djQ52hOYXFRQru3-CJZyvzANaZOZ_TuuQW8i0IKg5Ls/values/AGP Parser?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
-    // AGP Parser
-    $.getJSON("https://spreadsheets.google.com/feeds/list/1djQ52hOYXFRQru3-CJZyvzANaZOZ_TuuQW8i0IKg5Ls/3/public/values?alt=json", function(data) {
-
-      var entries = data.feed.entry;
       var rule_html = "";
-      var poc_html = '<ul class="menu books">';
-      for(var i = 0; i < entries.length; i++) {
-        var rule_class = entries[i].gsx$ruleclass.$t;
-        var rule_id = entries[i].gsx$ruleid.$t;
-        var level = entries[i].gsx$level.$t;
-        var message = entries[i].gsx$message.$t;
-        var description = entries[i].gsx$description.$t;
-        var description_ja = entries[i].gsx$descriptionja.$t;
-        rule_html += '<dl>';
-        rule_html += '<dt id="' + rule_id + '"><div class="rule-message">' + rule_id + ':' + level + ':' +  message + '</div></dt>';
 
-        if (la == "ja"){				
+      for(var i = 1; i < data.values.length; i++) {
+       
+        var entries = data.values[i];
+
+        var rule_class = entries[0];
+        var rule_id = entries[1];
+        var level = entries[2];
+        var message = entries[3];
+        var description = entries[4];
+        var description_ja = entries[5];
+   
+        rule_html += '<dl>';      
+        rule_html += '<dt id="' + rule_id + '"><div class="rule-message"><a href="#' + rule_id + '">' + rule_id + '</a>:' + level + ':' + message + '</div></dt>';
+
+        if (la == "ja"){        
           rule_html += '<dd><div class="rule-description"> ' + description_ja + '</div></dd>';
         } else {
-         rule_html += '<dd><div class="rule-description"> ' + description + '</div></dd>';        
+          rule_html += '<dd><div class="rule-description"> ' + description + '</div></dd>';
         }
-          
         rule_html += "</dl>";
-        if ( i == 0) {
-          poc_html += '<li><a href="#' + rule_class + '" class="toc_chapter">' + rule_class + '</a></li>';
-          poc_html += '<ul>'
-        }
-        poc_html += '<li><a href="#' + rule_id + '" class="toc_chapter">' + rule_id + '</a></li>';
 
-      } // for
-      poc_html += '</ul></ul>';
-      $("#AgpParser-rule").prepend(rule_html);	
-    $('#in_this_page h2').after(poc_html);
-    $('#in_this_page > h2').text("Rules");
+      }
 
-    /* json で非同期に取得、構築した side nav に y 軸 scroll bar を付ける処理 */
-    // 下にはみ出している距離　はみだしている = 正の値  (side nav bottom y) - (window bottom y)
-    var bottom_diff = ( $("#side_navigation").offset().top + $("#side_navigation").height() ) - ( $(window).scrollTop() + $(window).height() );
+    $("#AgpParser-rule").prepend(rule_html);
 
-    // height をオリジナルからはみ出している分短く、overflow を scroll に			
-    $("#side_navigation").css("height", ( $("#side_navigation").height() - bottom_diff ) + "px");
-    $("#side_navigation").css("overflow-y", "scroll");
+    }); // $.getJSON. AGPParser
 
-    // anchor 指定時にページ内遷移
-    if (anchor && $(anchor).length){
-    $(document).scrollTop( $(anchor).offset().top ); 
-    }				
-    }); // $.getJSON..AGP Parser 
   }
+
 });
 
-// 現在公開されているリリースの情報 
-$(function() {
-
-  var url = window.location.href;
-  var pathname = window.location.pathname;
-  var filepath = pathname.replace("-e.html", "").replace(".html", "");
-  var la = "ja";
-
-  if ( pathname.match(/\/stats\/relinfo/) || pathname.match(/\/stats\/relnote/) ){
-
-      $.getJSON("https://spreadsheets.google.com/feeds/list/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/15/public/values?alt=json", function(data) {
-
-        var release_info = data.feed.entry;
-        var chart_a = [];
-        var relnote_a = [];
-        var relinfo_limit = 6;
-        var ftp_base = 'ftp://ftp.ddbj.nig.ac.jp/ddbj_database/release_note_archive/';
-
-        for(var i = 0; i < release_info.length; i++) {      
-
-      var ddbjrelease = release_info[i].gsx$ddbjrelease.$t;
-      var srrna = release_info[i].gsx$srrna.$t;
-      var dadrelease = release_info[i].gsx$dadrelease.$t;
-      var lastpublisheddate = release_info[i].gsx$lastpublisheddate.$t;
-      
-      var ddbjrelno = 0;
-      var ddbjresult = ddbjrelease.match(/\d{2,3}\.?\d{0,1}/);
-
-      if(ddbjresult){
-        var ddbjrelno = ddbjresult[0];
-        ddbjrelno = ddbjrelno.replace(/\.0$/, '');				
-      }
-
-      var srelno = 0;
-      var sresult = srrna.match(/\d{2,3}\.?\d{0,1}/);
-
-      if(sresult){
-        var srelno = sresult[0];
-        srelno = srelno.replace(/\.0$/, '');				
-      }
-
-      var dadrelno = 0;
-      var dadresult = dadrelease.match(/\d{2,3}\.?\d{0,1}/);
-
-      if(dadresult){
-        var dadrelno = dadresult[0];
-        dadrelno = dadrelno.replace(/\.0$/, '');				
-      }
-/*
-      if( ddbjrelno != 0 && srelno != 0 && dadrelno != 0 ){
-        relnote_a.push(['<a href="' + ftp_base + 'ddbj/ddbjrel.' + ddbjrelno + '.txt' + '">' + ddbjrelease + '</a>', '<a href="' + ftp_base + '16S/readme.' + srelno + '.txt' + '">' + srrna + '</a>', '<a href="' + ftp_base + 'dad/dadrel.' + dadrelno + '.txt' + '">' + dadrelease + '</a>', lastpublisheddate]);
-      }else{
-        relnote_a.push([ddbjrelease_str, srrna, dadrelease, lastpublisheddate]);
-      }
-*/
-      /* リリースが公開されている場合はリンクをつける*/
-      if( ddbjrelno != 0 ){
-        var ddbjrelease_str = '<a href="' + ftp_base + 'ddbj/ddbjrel.' + ddbjrelno + '.txt' + '">' + ddbjrelease + '</a>';
-      } else {
-        var ddbjrelease_str = ddbjrelease;
-      }	
-      if( srelno != 0 ){
-        var srrna_str = '<a href="' + ftp_base + '16S/readme.' + srelno + '.txt' + '">' + srrna + '</a>';
-      } else {
-        var srrna_str = srrna;
-      }
-      if( dadrelno != 0 ){
-        var dadrelease_str = '<a href="' + ftp_base + 'dad/dadrel.' + dadrelno + '.txt' + '">' + dadrelease + '</a>';
-      } else {
-        var dadrelease_str = dadrelease;
-      }
-      relnote_a.push([ddbjrelease_str, srrna_str, dadrelease_str, lastpublisheddate]);
-
-          // 最新 release note が書いてある行までに限定
-          if (i < relinfo_limit){
-
-            var database = release_info[i].gsx$database.$t;
-            var release = release_info[i].gsx$release.$t;
-            var date = release_info[i].gsx$officialdate.$t;
-            var ddbjdate= release_info[i].gsx$ddbjdate.$t;               
-            var sequences = release_info[i].gsx$sequences.$t;
-            var bases = release_info[i].gsx$bases.$t;
-
-            if(sequences == ""){
-        var sequences = null;
-            }else{
-        var sequences = parseInt(sequences, 10);
-            }
-
-            if(bases == ""){
-        var bases = null;
-            }else{
-        var bases = parseInt(bases, 10);
-            }
-                      
-            var rateofincrease = release_info[i].gsx$rateofincrease.$t;
-
-            chart_a.push([database, release, date, ddbjdate, sequences, bases, rateofincrease]);
-      }
-
-        }
-
-        google.charts.load('current', {'packages':['corechart', 'table']});
-        
-    if ( pathname.match(/\/stats\/relinfo/) ){
-          google.charts.setOnLoadCallback(drawProteinRelInfoTable);
-        }
-
-    if ( pathname.match(/\/stats\/relnote/) ){
-          google.charts.setOnLoadCallback(drawRelNoteTable);
-        }
-
-          function drawProteinRelInfoTable(){
-            
-              // Create the data table.
-              var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Database');
-        data.addColumn('string', 'Release');
-        data.addColumn('string', 'Date');
-        data.addColumn('string', 'DDBJ date');
-        data.addColumn('number', 'Entries');
-        data.addColumn('number', 'Bases');
-        data.addColumn('string', 'Rate of increase');              
-
-              data.addRows(chart_a);
-
-              var protein_releaset = new google.visualization.Table(document.getElementById('release'));
-              protein_releaset.draw(data);
-
-          } // function drawSubmissionNumberTable
-
-          function drawRelNoteTable(){
-            
-              // Create the data table.
-              var data = new google.visualization.DataTable();
-        data.addColumn('string', 'DDBJ Release');
-        data.addColumn('string', '16S rRNA');
-        data.addColumn('string', 'DAD Release');				
-        data.addColumn('string', 'Last published date');
-
-              data.addRows(relnote_a);
-
-              var relnotet = new google.visualization.Table(document.getElementById('release-note'));
-              relnotet.draw(data, {'allowHtml':true});
-
-          } // function drawSubmissionNumberTable
-
-      })  // $.getJSON 
-    } 
-
-
-  $(".switch-display-long").click(function(){
-    $(this).next("table").find(".display-long").toggle();
-    });
-  
-});

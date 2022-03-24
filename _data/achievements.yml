@@ -1,4 +1,99 @@
 items:
+  - date: 2022-01-07
+    year: 2022
+    month: 1
+    day: 7
+    id: 212-ja
+    title: "DNA Data Bank of Japan (DDBJ) update report 2021"
+    url: https://pubmed.ncbi.nlm.nih.gov/34751405
+    author: Okido T, Kodama Y, Mashima J, Kosuge T, Fujisawa T, Ogasawara O.
+    info: Nucleic Acids Res 2022 Jan 7;50(D1):D102-D105
+    pubmed_id: 34751405
+    keyword: paper
+    lang: ja
+
+  - date: 2022-01-07
+    year: 2022
+    month: 1
+    day: 7
+    id: 208-en
+    title: "DNA Data Bank of Japan (DDBJ) update report 2021"
+    url: https://pubmed.ncbi.nlm.nih.gov/34751405
+    author: Okido T, Kodama Y, Mashima J, Kosuge T, Fujisawa T, Ogasawara O.
+    info: Nucleic Acids Res 2022 Jan 7;50(D1):D102-D105
+    pubmed_id: 34751405
+    keyword: paper
+    lang: en
+
+  - date: 2022-01-01
+    year: 2022
+    month: 1
+    day: 1
+    id: 211-ja
+    title: "ゲノム医療におけるデータベース-使い方とコツ (遺伝子医学39号)"
+    url: http://www.medicaldo.co.jp/gene/g-m39.html
+    author: "分担執筆: 秦 千比呂"
+    info: メディカルドゥ
+    keyword: book
+    lang: ja
+
+  - date: 2021-11-30
+    year: 2021
+    month: 11
+    day: 30
+    id: 210-ja
+    title: "メタゲノムデータ解析 16Sも!ショットガンも!ロングリードも! 菌叢解析が得意になる凄技レシピ (実験医学別冊)"
+    url: https://www.yodosha.co.jp/yodobook/book/9784758122559/
+    author: "分担執筆: 大城戸 利久、福田 亜沙美"
+    info: 羊土社
+    keyword: book
+    lang: ja
+
+  - date: 2021-10-14
+    year: 2021
+    month: 10
+    day: 14
+    id: 209-ja
+    title: TogoVar によるバリアント頻度情報統合と NBDC ヒトデータベースによるデータ共有推進
+    author: 豊岡 理人、三橋 信孝、川嶋 実苗、片山 俊明、川島 秀一、秦 千比呂、福田 亜沙美、児玉 悠一、藤澤 貴智、高木 利久
+    info: 日本人類遺伝学会第66回大会・第28回日本遺伝子診療学会大会
+    keyword: presentation
+    lang: ja
+
+  - date: 2021-10-05
+    year: 2021
+    month: 10
+    day: 5
+    id: 208-ja
+    title: DDBJ サービス
+    author: 川添将仁、青野英雄、Andrea Ghelfi、李慶範、飯塚朋代、大城戸利久、児玉悠一、小菅武英、杉田里江、鈴木紀美子、高木佳苗、時松敏明、秦千比呂、福田亜沙美、真島淳、横山会美、藤澤貴智
+    info: トーゴーの日シンポジウム
+    keyword: presentation
+    lang: ja
+
+  - date: 2021-04-15
+    year: 2021
+    month: 4
+    day: 15
+    id: 207-ja
+    title: "生命情報・DDBJ センターのデータベースと生命科学ビッグデータ"
+    url: https://ci.nii.ac.jp/naid/170000184792
+    author: "秦 千比呂、児玉　悠一"
+    info: 情報処理学会
+    keyword: book
+    lang: ja
+
+  - date: 2021-03-20
+    year: 2021
+    month: 3
+    day: 20
+    id: 206-ja
+    title: 登録データから見る今後への期待と登録のポイント
+    author: 秦 千比呂
+    info: 日本蚕糸学会 第91回大会
+    keyword: presentation
+    lang: ja
+
   - date: 2020-09-25
     year: 2020
     month: 9

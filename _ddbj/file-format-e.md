@@ -196,16 +196,16 @@ List of Qualifiers for SUBMITTER
 
 |  Qualifier  |  Legal characters for each Value (Remarks)   |  Number of letters  |
 |---|
-|  ab_name (abbreviation of author name)  |  alphabets, .[period], ,[comma], -[hyphen], ' [apostrophe]  |  64  |
-|  contact (contact person)  |  alphabets, .[period], ,[comma], -[hyphen], ' [apostrophe],  [space] (In order of first, middle, and last names delimited with)  |  first(64),middle(128), last(64)  |
-|  consrtm (consortium)  |  alphabets, digits,  [space], -[hyphen], ' [apostrophe], .[period], _[underscore], .[comma], ( ) # & @ / ; : + *  |  255  |
+|  ab_name (abbreviation of author name)  |  alphabets, .[period], ,[comma], -[hyphen], ' [single quote as apostrophe]  |  64  |
+|  contact (contact person)  |  alphabets, .[period], ,[comma], -[hyphen], ' [single quote as apostrophe],  [space] (In order of first, middle, and last names delimited with)  |  first(64),middle(128), last(64)  |
+|  consrtm (consortium)  |  alphabets, digits,  [space], -[hyphen], ' [single quote as apostrophe], .[period], _[underscore], .[comma], ( ) # & @ / ; : + *  |  255  |
 |  email   |  alphabets, digits, @, .[period], -[hyphen], _[underscore]   |  64  |
 |  url  |  All printable characters but [space]  |  255  |
 |  phone, fax, phext  |  digits, -[hyphen] (DO NOT enter + before country code)  |  16  |
 |  institute, department  |  All printable characters but [back-slash], ` [back-quote]   |  255  |
-|  country, state   |  alphabets, digits,  [space], -[hyphen], '[apostrophe], .[period], _[underscore], ,[comma], ( ) # & @ / ; : + *  |  32  |
-|  city  |  alphabets, digits,  [space], -[hyphen], '[apostrophe], .[period], _[underscore], ,[comma], ( ) # & @ / ; : + *  |  64  |
-|  street  |  alphabets, digits,  [space], -[hyphen], '[apostrophe], .[period], _[underscore], ,[comma], ( ) # & @ / ; : + *  |  255  |
+|  country, state   |  alphabets, digits,  [space], -[hyphen], '[single quote as apostrophe], .[period], _[underscore], ,[comma], ( ) # & @ / ; : + *  |  32  |
+|  city  |  alphabets, digits,  [space], -[hyphen], '[single quote as apostrophe], .[period], _[underscore], ,[comma], ( ) # & @ / ; : + *  |  64  |
+|  street  |  alphabets, digits,  [space], -[hyphen], '[single quote as apostrophe], .[period], _[underscore], ,[comma], ( ) # & @ / ; : + *  |  255  |
 |  zip  |  alphabets, digits, -[hyphen]  |  16  |                             
 
 #### Requirements for Describing SUBMITTER  {#describing_submitter}
@@ -263,12 +263,12 @@ List of Qualifiers for REFERENCE
     </tr>
     <tr class="even">
       <td>ab_name (abbreviation of author name)</td>
-      <td>alphabets, .[period], ,[comma], -[hyphen], ' [apostrophe]</td>
+      <td>alphabets, .[period], ,[comma], -[hyphen], ' [single quote as apostrophe]</td>
       <td>64</td>
     </tr>
     <tr class="odd">
       <td>consrtm(consortium)</td>
-      <td>alphabets, digits, [space], -[hyphen], ' [apostrophe], .[period], _[underscore],<br/>,[comma], ( ) # &amp; @ / ; : + *</td>
+      <td>alphabets, digits, [space], -[hyphen], ' [single quote as apostrophe], .[period], _[underscore],<br/>,[comma], ( ) # &amp; @ / ; : + *</td>
       <td>255</td>
     </tr>
     <tr class="even">

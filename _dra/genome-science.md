@@ -38,7 +38,7 @@ D-way BioProject 登録システムで [Grants](/bioproject/submission.html#Area
   - **Grant ID:** 221S0002
   - **Grant title:** Genome Science
 
-実際の登録例: [PRJDB3208 (DDBJ)](//ddbj.nig.ac.jp/BPSearch/bioproject?acc=PRJDB3208) [PRJDB3208 (NCBI)](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJDB3208)
+実際の登録例: [PRJDB3208 (DDBJ)](https://ddbj.nig.ac.jp/resource/bioproject/PRJDB3208) [PRJDB3208 (NCBI)](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJDB3208)
 
 ### DDBJ 塩基配列データ  {#grant_ddbj}
 

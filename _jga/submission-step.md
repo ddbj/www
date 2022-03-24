@@ -7,71 +7,82 @@ current_tab: submission
 lang: ja
 ---
 
-## NBDC へのデータ提供申請  {#ds-application}
+## NBDC 提供申請から JGA データアップロードまでの手順  {#ds}
 
-[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)から[提供申請](https://humandbs.biosciencedbc.jp/data-submission)します。  
-申請時に提供申請グループを作成します。提供申請が NBDC で承認された後、JGA サーバにデータアップロード用ディレクトリが作成されます。
+提供申請は [NBDC 申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)に D-way アカウントでログインしてから申請します。   
+提供申請では提供申請グループの作成が必要です。    
+提供申請の承認後、D-way アカウントで JGA サーバにアクセスし、メタデータとデータファイルを JGA サーバに [sftp](#sftp) もしくは [WinSCP](#winscp) でアップロードします。
 
-申請には D-way アカウントが必要です。アカウントが無い場合は申請前に [D-way](https://ddbj.nig.ac.jp/D-way/) アカウントを取得してください。
+* [D-way アカウント作成・情報追加とデータ転送用公開鍵の登録](#account-key)
+* [提供申請の承認](#approval)
+* [メタデータ作成 ](#create-metadata-using-excel)
+* [データファイルのアップロード ](#upload-data-files)
+	* [sftp でのアップロード](#sftp)
+	* [WinSCP でのアップロード](#winscp)
+
+## D-way アカウント作成・情報追加とデータ転送用公開鍵の登録 {#account-key}
+
+提供申請および JGA データアップロードのためには D-way アカウントが必要です。アカウントが無い場合は申請前に [D-way アカウントを取得](https://ddbj.nig.ac.jp/D-way/)してください。  
 
 <div class="attention" markdown="1">
 D-way アカウント作成後、[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
 </div>
 
-NBDC 申請システムで自動入力させるため、アカウントに所属情報や日本語氏名を登録します。    
+JGA サーバへデータをアップロードするためには、データ転送用の公開鍵・秘密鍵ペアを作成し、[公開鍵を D-way アカウントに登録](/account.html#enable-dra-submission-in-account)します。   
+
+申請情報を自動入力させるため、アカウントに所属情報や日本語氏名を追加します。    
 [NBDC 申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)にログインし、右上のメニューから「ユーザ情報更新」を選択します。  
 
 {% include image.html url="books/profile1.jpg" caption="ユーザ情報更新" class="w400" %}
-
+    
 アカウント情報を入力するため「Edit」をクリックします。
-
 {% include image.html url="books/profile2.jpg" caption="Edit でアカウント情報の編集を開始" class="w300" %}
-
+    
 所属情報や日本語氏名を入力します。
-
 {% include image.html url="books/profile3.jpg" caption="アカウント情報を入力" class="w400" %}
-
+    
 「Save」で登録します。
-
 {% include image.html url="books/profile4.jpg" caption="Save で保存" class="w300" %}
-
-以下では JGA データの登録手順を説明します。
 
 ## 提供申請グループ {#data-submitter-group}
 
 申請前に提供申請グループを作成します。例の提供申請グループ (subgrp1) では申請及び登録を担当する研究員 (account_b) がオーナー、研究代表者 (account_c) がメンバーとなっています。  
-実際には NBDC 申請システムで申請したアカウントが自動的に申請者になります。登録者が PI と申請者以外にも居る場合は必ず全員をメンバーに含めてください。登録に関する連絡はメンバーアカウントに対して送られます。
+実際には NBDC 申請システムで申請したアカウントが自動的に申請者になります。登録者が PI と申請者以外にも居る場合は必ず全員をメンバーに含めてください。
 
 {% include image.html url="books/DS-group.png" caption="データ提供申請グループ" class="w400" %}
-
+     
 提供申請を開始し、作成した提供申請グループを選択します。
 
 {% include image.html url="books/DS-start.png" caption="提供申請の開始" class="w450" %}
 
 {% include image.html url="books/DS-group-select.png" caption="データ提供申請グループの選択" class="w450" %}
 
-## 提供申請の承認 {#du-approval}
+詳細な手順は [NBDC のデータ提供](https://humandbs.biosciencedbc.jp/data-submission)ページもご覧ください。
+
+## 提供申請の承認 {#approval}
 
 提供申請が NBDC で承認されると、JGA の Submission ID (例 JSUB000353) が発行され、JGA サーバに対応するアップロード用ディレクトリが作成されます。
 
 {% include image.html url="books/DS-approved.png" caption="提供申請の承認" class="w450" %}
 
 {% include image.html url="books/DS-JSUB.png" caption="提供申請と JGA submission ID" class="w250" %}
+    
+JGA サーバ (jga-gw.ddbj.nig.ac.jp) へデータをアップロードするためには、データ転送用の公開鍵・秘密鍵ペアを作成し、[公開鍵を D-way アカウントに登録](/account.html#enable-dra-submission-in-account)します。   
+JGA サーバ上の /controlled-access/submission/jga/ の下に Submission ID と同名のディレクトリが作成されるので、ここにメタデータとデータファイルを [sftp](#sftp) もしくは [WinSCP](#winscp) でアップロードします。
+この例であればディレクトリは /controlled-access/submission/jga/JSUB000353/ になります。
 
-JGA ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/submission/jga/ の下に Submission ID と同名のディレクトリが作成されるので、ここにメタデータをデータファイルを sftp でアップロードします。この例であればディレクトリは /controlled-access/submission/jga/JSUB000353/ になります。
-
-## エクセルでのメタデータ作成  {#create-metadata-using-excel}
+## メタデータ作成  {#create-metadata-using-excel}
 
 ### エクセルファイルへの記入 {#enter-metadata-into-excel}
 
-メタデータ記入用エクセルファイルを下記よりダウンロードし、内容を英語で記入してください。メタデータの説明は[こちらのページ](/jga/submission.html)をご覧ください。
+メタデータ記入用エクセルファイルをダウンロードし、内容を英語で記入します。メタデータの説明は[こちらのページ](/jga/submission.html)をご覧ください。
 
 [![JGA メタデータ記入用エクセル](/assets/images/parts/download.png "JGA メタデータ記入用エクセル"){:.w40}](/assets/files/submission/JGA_metadata.xlsx)
 
-last updated: 2020-09-26
+last updated: 2022-03-02
 
 <div class="attention" markdown="1">
-JGA にアップロードするファイル名には空白を含めないでください。
+JGA にアップロードするファイル名には空白を含めないでください。         
 </div>
 
 <div class="attention" markdown="1">
@@ -82,49 +93,21 @@ JGA にアップロードするファイル名には空白を含めないでく�
 
 [メタデータエクセルの記入例](https://docs.google.com/spreadsheets/d/1HHlxItj89fQv2oWUNBIHZ4VVGwbcC09WGD5tEiXAQZ4/edit#gid=744299318)
 
-### エクセルをアップロード  {#upload-excel}
-
-<div class="attention" markdown="1">
-JGA にファイルを sftp でアップロードするためには [D-way アカウントに center name と公開鍵を登録](/account.html#enable-dra-submission-in-account)する必要があります。JGA サーバに ssh ログインすることはできません。
-</div>
+### エクセルを sftp でアップロード  {#sftp}
 
 JGA ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/submission/jga/ の下に JGA Submission ID と同名のディレクトリが作成されるので、
 sftp の P オプションでポート番号 443 を指定してログインし、対象ディレクトリに移動しエクセルをアップロードします。
-sftp では公開鍵・秘密鍵認証を利用しており、[D-way アカウントに登録した秘密鍵](/account.html#generate-key-pair)を指定します。
-
-例
-- アカウント名: account_b
-- JGA Submission ID: JSUB000353
+sftp では公開鍵・秘密鍵認証を利用しており、D-way アカウントに登録したデータ転送用公開鍵とペアの秘密鍵を指定します。
 
 ```
-$ sftp -i private-key-for-auth -P 443 account_b@jga-gw.ddbj.nig.ac.jp
+# アカウント名: account_b
+# JGA Submission ID： JSUB000353
+# データ転送用秘密鍵のファイルパス: ~/.ssh/id_rsa
+
+$ sftp -i ~/.ssh/id_rsa -P 443 account_b@jga-gw.ddbj.nig.ac.jp
 $ cd controlled-access/submission/jga/JSUB000353
 $ put JSUB000353_metadata.xlsx 
 ```
--i: 認証用秘密鍵を指定
--P: 接続先ポート番号 443 を指定
-
-### WinSCP によるアップロード {#upload-excel-winsftp}
-
-[WinSCP (http://winsftp.net/eng/download.php)](http://winsftp.net/eng/download.php) をダウンロードし、Windows PC にインストールします。
-
-以下のように設定します。
-
-転送プロトコル: SFTP
-- ホスト名: jga-gw.ddbj.nig.ac.jp
-- ポート番号: 443
-- ユーザ名: D-way アカウント ID
-- パスワード: 空欄のまま
-
-{% include image.html url="books/jga-winscp1.jpg" caption="WinSCP 接続情報の入力" class="w400" %}
-
-{% include image.html url="books/jga-winscp2.jpg" caption="WinSCP 認証用秘密鍵を指定" class="w400" %}
-
-初回接続時には警告メッセージが表示されますが、「はい」を選択してください (次回から表示されません)。次の画面では、鍵を作成した際に指定したパスフレーズを入力します。
-
-{% include image.html url="books/jga-winscp3.jpg" caption="WinSCP ファイルの転送" class="w400" %}
-
-ログインに成功すると、左側のウィンドウにユーザの PC のフォルダ、右側のウィンドウに JGA サーバの登録者専用ディレクトリが表示されるので 左側ウィンドウでファイルを選択し右側ウィンドウへドラッグ＆ドロップし、サーバへファイルを転送します。
 
 ## データファイルのアップロード  {#upload-data-files}
 
@@ -144,29 +127,51 @@ Data オブジェクトに fastq や bam ファイルなどの個人レベルの
 データの再利用性，再現性のためには論文での主張の基になっている解析データが登録されることが重要です。できるだけ VCF などの解析データを Analysis に登録してください。
 </div>
 
-### データファイルのアップロード {#data-files-upload}
+### データファイルの sftp アップロード {#data-files-sftp-upload}
 
 データファイルを sftp で登録用ディレクトリにアップロードします。
 
-例
-- アカウント名: account_b
-- JGA Submission ID: JSUB000353
-
 ```
-$ sftp -i private-key-for-auth -P 443 account_b@jga-gw.ddbj.nig.ac.jp
+# アカウント名: account_b
+# JGA Submission ID: JSUB000353
+# データ転送用秘密鍵のファイルパス: ~/.ssh/id_rsa
+
+$ sftp -i ~/.ssh/id_rsa -P 443 account_b@jga-gw.ddbj.nig.ac.jp
 $ cd controlled-access/submission/jga/JSUB000353
 $ put wgs1.fastq
 ```
--i: 認証用秘密鍵を指定
--P: 接続先ポート番号 443 を指定
 
 拡張子 fastq の全てのファイルをアップロード。
 ```
 $ mput *.fastq
 ```
 
+### WinSCP でのアップロード {#winscp}
+
+[WinSCP (https://winscp.net/eng/download.php)](https://winscp.net/eng/download.php) をダウンロードし、Windows PC にインストールします。
+
+以下のように設定します。
+
+- 転送プロトコル: SFTP
+- ホスト名: jga-gw.ddbj.nig.ac.jp
+- ポート番号: 443
+- ユーザ名: D-way アカウント ID
+- パスワード: 空欄のまま
+
+{% include image.html url="books/jga-winscp1.jpg" caption="WinSCP 接続情報の入力" class="w400" %}
+
+{% include image.html url="books/jga-winscp2.jpg" caption="WinSCP データ転送用秘密鍵を指定" class="w400" %}
+    
+初回接続時には警告メッセージが表示されますが、「はい」を選択してください (次回から表示されません)。次の画面では、鍵を作成した際に指定したパスフレーズを入力します。
+
+{% include image.html url="books/jga-winscp3.jpg" caption="WinSCP ファイルの転送" class="w400" %}
+    
+ログインに成功すると、左側のウィンドウにユーザの PC のフォルダ、右側のウィンドウに JGA サーバの登録者専用ディレクトリが表示されるので
+左側ウィンドウでファイルを選択し右側ウィンドウへドラッグ＆ドロップし、サーバへファイルを転送します。
+
 ## メタデータとデータの登録 {#metadata-data-submission}
 
 JGA キュレータがメタデータとデータファイルを査定します。完成したエクセルからキュレータが XML を生成し、JGA に登録します。
       
 メタデータとデータファイルが検証処理を通過するとアクセッション番号が発行されます。
+

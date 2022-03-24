@@ -253,14 +253,7 @@ data.
 
 ### 3 Assignment and Notification of Accession Number  {#accession_number}
 
-We inform an accession number (unique number assigned by the
-International Nucleotide Sequence Database Collaboration) to the Contact
-Person whose E-mail address is entered in the "Contact person E-mail
-address" field.  
-This notification is normally sent within five business days after
-receipt of the data.  
-If you do not hear from us within this time period, please [contact
-us](/contact-ddbj-e.html#to-ddbj).
+We start the curation work and inform the problems until 7 working days after we receive the submission. Accession numbers are notified to the contact person's email address after the problems have been corrected.
 
 
 ### 4 Report of Data Releasing  {#releasing}

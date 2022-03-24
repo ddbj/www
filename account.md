@@ -4,10 +4,6 @@ title: 登録アカウント
 lang: ja
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/N76NUH748Fw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-DDBJ 登録アカウントの作成
-
 ## D-way アカウント  {#ddbj-submission-account}
 
 [生命情報・DDBJ センター](/index.html) では [D-way アカウントシステム](https://ddbj.nig.ac.jp/D-way)を運用しています。D-way アカウントは DDBJ センターの BioProject/BioSample/DRA/GEA/JGA データベース、及び、[NBDC](https://humandbs.biosciencedbc.jp) の[提供・利用申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application)で使うことができます。
@@ -89,14 +85,51 @@ Login ID:
 
 JGA サービスを利用するため NBDC に提供・利用申請をする方は[アカウント情報の追加](/account.html#nbdc)が必要です。
 
-### 公開鍵/秘密鍵ペアの生成  {#generate-key-pair}
+## 公開鍵/秘密鍵ペアの生成  {#generate-key-pair}
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
-<h4 class="toggle-content-btn"><a href="javascript:void(0)">Windows</a></h4>
-<div class="accordion-content">
+### Windows {#windows}
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mggRnbxr0gQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+D-way アカウントに登録する公開鍵は openSSH/PuTTY 形式のどちらでも問題ありません。  
+JGA データ復号は openSSH 形式の秘密鍵、WinSCP で指定する秘密鍵は PuTTY 形式のものを使用する必要があります。
+
+#### OpenSSH 形式 {#openssh}
+
+JGA データ復号には openSSH 形式の秘密鍵を使用します。   
+
+Windows PowerShell を起動します。  
+
+[![]({{ site.baseurl }}/assets/images/books/win-ps-1.jpg){:.w200}]({{ site.baseurl }}/assets/images/books/win-ps-1.jpg "Windows PowerShell を起動"){: .group1}
+
+PowerShell のターミナルで以下のコマンドを実行し、openSSH 形式の鍵ペアを生成します。   
+
+``` 
+鍵ペアの生成。-f で鍵のファイル名を指定します。
+デフォルトでは mtaro というユーザであれば C:\Users\mtaro に作成されます。
+PS C:\Users\mtaro> ssh-keygen -t rsa -f ddbjkey
+
+メッセージが表示されます。
+Generating public/private rsa key pair.
+
+パスフレーズを設定しない場合は [Enter] を押します。
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+
+Your identification has been saved in ddbjkey.
+Your public key has been saved in ddbjkey.pub.
+
+"C:\Users\mtaro" に秘密鍵は "id_rsa" として，公開鍵は "id_rsa.pub" として保存されます。
+```
+
+実際の画面では以下のようになります。  
+
+[![]({{ site.baseurl }}/assets/images/books/win-ps-2.jpg){:.w600}]({{ site.baseurl }}/assets/images/books/win-ps-2.jpg "鍵生成コマンドを実行"){: .group1}
+
+OpenSSH 形式の秘密鍵 (id_isa) と公開鍵 (id_rsa.pub) がユーザフォルダ（例では C:ユーザ:mtaro の直下）に作成されます。  
+[![]({{ site.baseurl }}/assets/images/books/win-ps-3.jpg){:.w500}]({{ site.baseurl }}/assets/images/books/win-ps-3.jpg "ユーザフォルダの下に鍵ペアが生成されます"){: .group1}
+
+#### PuTTY 形式 {#putty}
+
+データ転送ソフト WinSCP は PuTTY 形式の秘密鍵を使用します。   
 
 "PuTTY Key Generator" をインストールし，起動します。 下のように設定し [Generate\] をクリックします。
 
@@ -105,16 +138,7 @@ JGA サービスを利用するため NBDC に提供・利用申請をする方�
 ウィンドウのなかでマウスポインターをランダムに動かして鍵を生成させます。生成される公開鍵と秘密鍵を保存します。鍵は WinSCP
 でそのまま使用できる PuTTY 形式で保存されます。
 
-[« 閉じる](javascript:void(0)){: .close-content-btn}
-</div>
-</div>
-
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
-<h4 class="toggle-content-btn"><a href="javascript:void(0)">Mac OS X</a></h4>
-<div class="accordion-content">
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/h9LbhwROtOM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### Mac OS X {#mac}
 
 Macintosh HD \> アプリケーション \> ユーティリティ \> ターミナル.app. からターミナルを起動します。
 
@@ -155,14 +179,7 @@ Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
 
 その公開鍵ファイル "id\_rsa.pub" をデスクトップなどにコピーし，アカウントに登録します。
 
-[« 閉じる](javascript:void(0)){: .close-content-btn}
-</div>
-</div>
-
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
-<h4 class="toggle-content-btn"><a href="javascript:void(0)">Unix</a></h4>
-<div class="accordion-content">
+### Unix {#unix}
 
 ``` 
 鍵ペアの生成。
@@ -183,13 +200,7 @@ Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
 "/Users/you/.ssh" フォルダに秘密鍵は "id_rsa" として，公開鍵は "id_rsa.pub" として保存されます。
 ```
 
-[« 閉じる](javascript:void(0)){: .close-content-btn}
-</div>
-</div>
-
 ### Center name と認証用公開鍵の登録  {#register-center-name-and-public-key}
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/N76NUH748Fw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [登録アカウント](https://ddbj.nig.ac.jp/D-way/)にログインします。 "アカウント" ページの "Center Full Name" に組織名を入力し，提示される候補から適切なものを選びます。 [Update\] をクリックしてアカウントを更新します。
 
@@ -277,10 +288,7 @@ D-way でパスワード変更後、"Session Expired" と表示される場合�
 
 ## 秘密鍵ファイルの変換  {#convert-private-key}
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
-<h4 class="toggle-content-btn"><a href="javascript:void(0)">Windows PuTTY から OpenSSH 形式</a></h4>
-<div class="accordion-content">
+### Windows PuTTY から OpenSSH 形式 {#putty-openssh}
 
 "変換" メニューの "鍵のインポート" を選択し PuTTY で作成した秘密鍵を読み込みます。
 
@@ -290,14 +298,7 @@ D-way でパスワード変更後、"Session Expired" と表示される場合�
 
 [![]({{ site.baseurl }}/assets/images/books/con_2.jpg){:.w400}]({{ site.baseurl }}/assets/images/books/con_2.jpg "OpenSSH 形式へエクスポート"){: .group1}
 
-[« 閉じる](javascript:void(0)){: .close-content-btn}
-</div>
-</div>
-
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
-<h4 class="toggle-content-btn"><a href="javascript:void(0)">OpenSSH から Windows PuTTY 形式</a></h4>
-<div class="accordion-content">
+### OpenSSH から Windows PuTTY 形式 {#openssh-putty}
 
 "変換" メニューの "鍵のインポート" を選択し，OpenSSH で作成した秘密鍵を読み込みます。
 
@@ -307,6 +308,3 @@ D-way でパスワード変更後、"Session Expired" と表示される場合�
 
 [![]({{ site.baseurl }}/assets/images/books/con_4.jpg){:.w400}]({{ site.baseurl }}/assets/images/books/con_4.jpg "変換された秘密鍵を保存"){: .group1}
 
-[« 閉じる](javascript:void(0)){: .close-content-btn}
-</div>
-</div>

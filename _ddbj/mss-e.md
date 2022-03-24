@@ -22,6 +22,8 @@ related_pages:
     url: /ddbj/mss-form-e.html
 ---
 
+<div class="attention" markdown="1">
+
 <span class="red">Submission of research data from human subjects</span>
 
 For all data from human subjects researches submitted to DDBJ, it is
@@ -30,9 +32,9 @@ participant (human subject) is protected in accordance with all
 applicable laws, regulations and policies of submitter's institute.  
 In principle, make sure to remove any direct personal identifiers of
 human subjects from your submissions.  
-Before submission, read "[Submission of research data from human
-subjects](/policies-e.html#submission-of-human-data)".
+Before submission, read "[Submission of research data from human subjects](/policies-e.html#submission-of-human-data)".
 
+</div>
 
 - **[Application form for MSS](/ddbj/mss-form-e.html)**    
 - **[Validation tools for MSS data files](/ddbj/mss-tool-e.html)**    
@@ -50,28 +52,24 @@ Mass Submission System (MSS) is the service to accept relatively large
 scale nucleotide sequence data (not reads) through sending text files.  
 We at DDBJ recommend using MSS when:
 
-- the submission is not applicable for Nucleotide Sequence Submission
-  System (NSSS)  
-  → [EST](/ddbj/est-e.html), STS, [TSA](/ddbj/tsa-e.html),
+- the submission is not applicable for Nucleotide Sequence Submission System (NSSS)  
+    -  [EST](/ddbj/est-e.html), STS, [TSA](/ddbj/tsa-e.html),
   [HTC](/ddbj/htc-e.html), [GSS](/ddbj/gss-e.html),
   [HTG](/ddbj/htg-e.html), [WGS](/ddbj/wgs-e.html),
   [CON](/ddbj/con-e.html), [TLS](/ddbj/tls-e.html)
+    - See [Categories for Sequence Data](/documents/data-categories-e.html#division) in detail.
 - the submission with long sequences.  
-  → greater than 500 kb in its length
+    - greater than 500 kb in its length
 - the complex submission containing many features  
-  → more than 30 features
+    - more than 30 features
 - the submission consists of large number of sequences.  
-  → When number of sequences is greater than 500, you have to submit
-  two or more times via NSSS
+    - greater than 100
 
 </div>
 
-Otherwise, DDBJ recommends using the [DDBJ Nucleotide Sequence
-Submission System (NSSS)](/ddbj/web-submission-e.html) .
+Basically, if none of the above applies to your data, DDBJ recommends using the [DDBJ Nucleotide Sequence Submission System (NSSS)](/ddbj/web-submission-e.html). 
 
-If you are to submit reads from sequencers, please refer [DRA; DDBJ
-Sequence Read Archive](/dra/index-e.html).  
-Please confirm [Categories for Sequence Data](/documents/data-categories-e.html).
+If you are to submit reads from sequencers, please refer [DRA; DDBJ Sequence Read Archive](/dra/index-e.html).  
 
 ## The Flow of MSS  {#flow}
 

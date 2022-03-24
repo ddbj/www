@@ -349,6 +349,9 @@ OH      DDBJ            EST
 OI      JPO             Patent application
 OJ      JPO             Patent application
 OK      GenBank         Direct submission
+OL      GenBank         Direct submission
+OM      GenBank         Direct submission
+ON      GenBank         Direct submission
 OU      ENA             
 OV      ENA             
 OW      ENA             
@@ -357,10 +360,20 @@ OY      ENA
 OZ      ENA             
 P       void            UniProt/Swiss-Prot
 PA      JPO             Patent application
-PB      DDBJ            
-PC      DDBJ            
-PD      DDBJ            
+PB      JPO             Patent application
+PC      JPO             Patent application
+PD      JPO             Patent application
 PE      DDBJ            
+PF      DDBJ            
+PG      DDBJ            
+PH      DDBJ            
+PI      DDBJ            
+PJ      DDBJ            
+PK      DDBJ            
+PL      DDBJ            
+PM      DDBJ            
+PN      DDBJ            
+PO      DDBJ            
 Q       void            UniProt/Swiss-Prot
 R       GenBank         EST
 S       GenBank         Journal scanning
