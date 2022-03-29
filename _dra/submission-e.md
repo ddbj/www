@@ -1242,6 +1242,36 @@ scp コマンドを実行します。
 
 {::options parse_block_html="true" /}
 <div class="accordion-menu">
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">Upload sequence data files by PowerShell (Windows)</a></h4>
+<div class="accordion-content">
+
+Run PowerShell.  
+<a href="/assets/images/books/win-ps-1.jpg" title="Run PowerShell" class="group1"><img src="/assets/images/books/win-ps-1.jpg" alt="Run PowerShell" title="Run PowerShell" class="w200"></a>   
+
+Upload files by scp authenticated with an openSSH-format private key. A PuTTY-format private key causes "invalid format" error, [convert the key into OpenSSH-format](/account-e.html#putty-openssh).   
+```
+> scp -i private-key-for-auth <Your Files> <D-way Login ID>@ftp-private.ddbj.nig.ac.jp:~/<DRA Submission ID>
+```
+
+* -i: specify the private key for authentication which is pair of a public key registered to your D-way account.
+* <Your Files> Files to be transferred. Ex: file1 file2 (file1 and file2), file* (all files whose filenames start with “file”)
+* <D-way Login ID> D-way Login ID (ex. test07)
+* <DRA Submission ID> DRA Submission ID (ex. test07-0018)
+* command example: scp -i private-key-for-auth strainA_1.fastq test07@ftp-private.ddbj.nig.ac.jp:~/test07-0018  
+
+Enter a passphrase. If no passphrase is set, press enter.  
+```
+Enter passphrase for key 'private-key-for-auth': 
+```
+
+If an "UNPROTECTED PRIVATE KEY" error occurs, please see the FAQ [I can not scp transfer my files](/faq/en/scp-e.html).  
+  
+[« Close](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
+
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
 <h4 class="toggle-content-btn"><a href="javascript:void(0)">Transfer sequence data by using Cyberduck (Mac OS X)</a></h4>
 <div class="accordion-content">
 
