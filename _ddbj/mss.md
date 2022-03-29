@@ -171,15 +171,15 @@ SFTP によるファイル転送
 登録された塩基配列データは、配列ファイルとアノテーションファイルの内容に基づき、DDBJ の定めるフォーマットにしたがった[フラットファイル (flat file)](/ddbj/flat-file.html)の形式で公開されています。  
 [アノテーションファイルとフラットファイルの対応関係](/ddbj/file-format.html#sample)もご参照ください。
 
-## DFAST について: 原核生物ゲノムの登録
-### DFAST（DDBJ Fast Annotation and Submission Tool）
+## DFAST について: 原核生物ゲノムの登録  {#mssdfast}
+### DFAST（DDBJ Fast Annotation and Submission Tool）  {#mssdfast-1}
 DFAST は、原核生物ゲノムの高速自動アノテーションパイプラインで、DDBJ に直接登録可能なアノテーションファイルを取得できます。Assembled/Annootation database へ原核生物ゲノムを登録する際には、DFASTの利用を強く推奨しています。
 
-### 原核生物ゲノムの登録の手順
+### 原核生物ゲノムの登録の手順  {#mssdfast-2}
 1. DFAST で解析した原核生物ゲノムをDDBJ Assembled/Annootation database へ塩基配列を登録するには、事前に[BioProject](https://www.ddbj.nig.ac.jp/bioproject/index.html)、[BioSample](https://www.ddbj.nig.ac.jp/biosample/index.html)、[locus_tag preifx](https://www.ddbj.nig.ac.jp/ddbj/locus_tag.html)（Biogical featureを記載する場合）の登録が必要です。
 1. D-wayアカウントで DFASTにログインすると 、[解析（job）の履歴管理](https://dfast.ddbj.nig.ac.jp/help_login)ができます。アカウントを持っていない場合にはアカウントの作成方法をご一読下さい。
 
-### DFAST のデータを Submit するには
+### DFAST のデータを Submit するには  {#mssdfast-3}
 1. DFAST にアクセスし、D-wayアカウントでログインします。ジョブ投入画面において塩基配列ファイルをアップロードすると、解析が始まり job IDが発行されます。job終了後、”DDBJ submission”  タブをクリックします。DDBJへの登録に必要な項目（BioProject ID、BioSample ID、locus_tag prefix、その他のメタ情報）を入力すると、MSS登録ファイルが作成されます。（注１）
 1. 実行したjobの[履歴管理画面](https://dfast.ddbj.nig.ac.jp/help_login)にて登録を希望する job ID をチェックして選択状態にします。
 1. ファイル形式に"MSS"を選択し"DOWNLOAD"ボタンをクリックしてファイルをダウンロードしてください。このとき入力されたメタ情報のチェックを行います。警告が出た場合には入力した情報を確認してください（注２）。ファイルダウンロード後にテキストエディタ等で開いて修正をすることも可能です。

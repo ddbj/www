@@ -223,16 +223,16 @@ data, we will release your data according to [Principle of
 The registered data will be published in a [flat file format](/ddbj/flat-file-e.html) defined by DDBJ. Please refer to the figure, [correspondence between annotation files and flat files](/ddbj/file-format-e.html#sample)
 
 
-## DFAST for the submission of prokaryote genomes to MSS
-### DFAST（DDBJ Fast Annotation and Submission Tool）
+## DFAST for the submission of prokaryote genomes to MSS  {#mssdfast}
+### DFAST（DDBJ Fast Annotation and Submission Tool）  {#mssdfast-1}
 DFAST
 DFAST is a rapid annotation pipeline service for prokaryote genomes, and outputs the annotation files that can be directly available for the submission to DDBJ. We strongly recommend that the submitters should use DFAST for the registration of the prokaryote genomes to assembled/annotation database.
 
-### Registration procedure for the prokaryote genome
+### Registration procedure for the prokaryote genome  {#mssdfast-2}
 1. You need D-way account which has been obtained through DFAST in order to register the prokaryote genome and the annotation into DDBJ. Registration of [BioProject](https://www.ddbj.nig.ac.jp/bioproject/index-e.html),  [BioSample](https://www.ddbj.nig.ac.jp/biosample/index-e.html) and [locus_tag prefix](https://www.ddbj.nig.ac.jp/ddbj/locus_tag-e.html) when biological feature are descriebed are required in advance.
 1. If you login to DFAST with D-way account, you can manage the [jobs analyzed](https://dfast.ddbj.nig.ac.jp/help_login) in DFAST. If you have not obtained the login account, see “How to create the account” to get a new account. 
 
-### How to submit the data obtained in DFAST
+### How to submit the data obtained in DFAST  {#mssdfast-3}
 1. Login to DFAST with your account. First, upload the fasta file in “job submission page”, and start the job to analyze the genome. At this stage, you can obtain a job ID. When the job is finished, click “DDBJ submission” tab on the page. The annotation and sequence files, which are needed for MSS submission, are created after you fill the form in metadata section.(*1)
 1. On the [job management page](https://dfast.ddbj.nig.ac.jp/help_login), add checkmark to the job number that you would like to submit to DDBJ.
 1. Select "MSS" for the file format type, and click “DOWNLOAD” to download the submission files. Please check the meta information carefully. If you encounter a warning, check again and correct the metadata that you have filled (*2). If you would like to edit the annotation and meta data on a text file, download the files and open them by text editor.
