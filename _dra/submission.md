@@ -675,7 +675,7 @@ SOLiD native ファイルでの登録は受け付けておりません。fastq/b
 
 ### Ion Torrent  {#Ion-Torrent}
 
-sff ファイルもしくは fastq/bam ファイルを登録します。
+fastq ファイルを登録します。Ion Torrent から出力される bam ファイルは samtools で fastq に変換することができます。[Converting BAM to fastq](https://www.metagenomics.wiki/tools/samtools/converting-bam-to-fastq)
 
 ### Helicos Heliscope  {#Helicos-Heliscope}
 

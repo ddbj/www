@@ -832,7 +832,7 @@ to fastq/bam.
 
 ### Ion Torrent  {#Ion-Torrent}
 
-Submit Ion Torrent data in the sff or fastq/bam format.
+Submit Ion Torrent data in the fastq format. Bam files from Ion Torrent instruments can be converted to fastq by using samtools. [Converting BAM to fastq](https://www.metagenomics.wiki/tools/samtools/converting-bam-to-fastq)
 
 ### Helicos Heliscope  {#Helicos-Heliscope}
 
@@ -1166,6 +1166,77 @@ You can delete the transferred files by selecting the files and clicking
 the [Delete] button.
 
 [« Close](javascript:void(0)){: .close-content-btn}
+
+</div>
+</div>
+
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">Upload sequence data files by PowerShell (Windows)</a></h4>
+<div class="accordion-content">
+
+PowerShell を起動します。   
+<a href="/assets/images/books/win-ps-1.jpg" title="PowerShell を起動" class="group1"><img src="/assets/images/books/win-ps-1.jpg" alt="PowerShell を起動" title="PowerShell を起動" class="w200"></a>   
+
+ファイルを SCP 転送します。OpenSSH 形式の秘密鍵を使用します。PuTTY 形式だと invalid format エラーになるので [OpenSSH 形式に変換](/account.html#putty-openssh)します。    
+```
+> scp -i private-key-for-auth <Your Files> <D-way Login ID>@ftp-private.ddbj.nig.ac.jp:~/<DRA Submission ID>
+```
+
+* -i でアカウントに登録した認証用公開鍵とペアになる openSSH 形式の秘密鍵を指定します。
+* <Your Files> 転送するファイル。例: file1 file2 (file1とfile2)、file* (fileではじまる全てのファイル)
+* <D-way Login ID> D-way の Login ID (例 test07)
+* <DRA Submission ID> DRA 登録の Submission ID (例: test07-0018)
+* コマンドの例: scp -i private-key-for-auth strainA_1.fastq
+
+鍵を作成したときに指定したパスフレーズを入力します。パスフレーズを設定していない場合は改行を押下します。  
+```
+Enter passphrase for key 'private-key-for-auth': 
+```
+
+秘密鍵のアクセス権限が広すぎると以下のエラーになります。
+```
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions for './private-key-for-auth' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+Load key "./private-key-for-auth": bad permissions
+test07@ftp-private.ddbj.nig.ac.jp: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
+lost connection
+```
+
+ファイルを右クリックしてプロパティを選択します。    
+<a href="/assets/images/books/win-ps-1.jpg" title="ファイルのプロパティ" class="group1"><img src="/assets/images/books/win-ps-scp-1.jpg" alt="PowerShell を起動" title="PowerShell を起動" class="w300"></a>   
+
+セキュリティタブの詳細設定を選択します。    
+<a href="/assets/images/books/win-ps-scp-2.jpg" title="セキュリティの詳細設定" class="group1"><img src="/assets/images/books/win-ps-scp-2.jpg" alt="セキュリティの詳細設定" title="セキュリティの詳細設定" class="w300"></a>  
+
+アクセス許可エントリの継承を無効化し、権限を削除できるようにします。   
+<a href="/assets/images/books/win-ps-scp-3.jpg" title="アクセス許可エントリの継承の無効化" class="group1"><img src="/assets/images/books/win-ps-scp-3.jpg" alt="アクセス許可エントリの継承の無効化" title="アクセス許可エントリの継承の無効化" class="w300"></a>  
+
+明示的なアクセス許可に変換します。    
+<a href="/assets/images/books/win-ps-scp-4.jpg" title="明示的なアクセス許可に変換" class="group1"><img src="/assets/images/books/win-ps-scp-4.jpg" alt="明示的なアクセス許可に変換" title="明示的なアクセス許可に変換" class="w300"></a>  
+
+一旦全てのアクセス権限を削除します。    
+<a href="/assets/images/books/win-ps-scp-5.jpg" title="全てのアクセス権限を削除" class="group1"><img src="/assets/images/books/win-ps-scp-5.jpg" alt="全てのアクセス権限を削除" title="全てのアクセス権限を削除" class="w300"></a>   
+
+アクセス権限を追加します。   
+<a href="/assets/images/books/win-ps-scp-6.jpg" title="アクセス権限の追加" class="group1"><img src="/assets/images/books/win-ps-scp-6.jpg" alt="アクセス権限の追加" title="アクセス権限の追加" class="w300"></a>   
+
+Windows ユーザ (例 test07) を追加します。  
+<a href="/assets/images/books/win-ps-scp-7.jpg" title="ユーザの追加" class="group1"><img src="/assets/images/books/win-ps-scp-7.jpg" alt="ユーザの追加" title="ユーザの追加" class="w300"></a>  
+
+Windows ユーザ (例 test07) にフルコントロールを許可します。   
+<a href="/assets/images/books/win-ps-scp-8.jpg" title="フルコントロールの許可" class="group1"><img src="/assets/images/books/win-ps-scp-8.jpg" alt="フルコントロールの許可" title="フルコントロールの許可" class="w300"></a>  
+
+権限の変更を反映します。   
+<a href="/assets/images/books/win-ps-scp-9.jpg" title="権限の変更" class="group1"><img src="/assets/images/books/win-ps-scp-9.jpg" alt="権限の変更" title="権限の変更" class="w300"></a>  
+
+scp コマンドを実行します。   
+
+[« 閉じる](javascript:void(0)){: .close-content-btn}
 </div>
 </div>
 
