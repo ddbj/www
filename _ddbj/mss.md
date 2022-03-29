@@ -22,44 +22,48 @@ related_pages:
     url: /ddbj/mss-form.html
 ---
 
+<div class="attention" markdown="1">
 <span class="red">ヒトを対象とした研究データの登録について</span>
 
 ヒトを対象とした全ての研究において DDBJ に送付するデータの由来である個人 (研究対象者)
 の尊厳及び人権は、適用されるべき法律、規定、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。  
 原則として、研究対象者を直接特定し得る参照情報は、登録データから取り除いてください。  
-ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#human)をご覧ください。
+ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#submission-of-human-data)をご覧ください。
+</div>
+
+- **[MSS 登録申し込みフォーム](/ddbj/mss-form.html)**
+- **[登録用ファイルチェックツール](/ddbj/mss-tool.html)**
+- **登録用ファイル書式**
+    - **[配列ファイル](/ddbj/file-format-e.html#sequence)**
+    - **[アノテーションファイル](/ddbj/file-format-e.html#annotation)**
+    - **[アノテーションファイルサンプル](/ddbj/file-format.html#sample)**
+
+
 
 ## MSS とは？  {#outline}
 
 <div class="attention" markdown="1">
 
-Mass Submission System (MSS) は、比較的大規模な塩基配列データ (reads ではない)
-をファイル送付により登録するサービスです。登録予定データが、以下のような条件に該当する場合はMSS をご利用ください。
+Mass Submission System (MSS) は、比較的大規模な塩基配列データ (reads ではない) をファイル送付により登録するサービスです。
+登録予定データが、以下の条件に該当する場合は MSS をご利用ください。
 
-- Web 版塩基配列登録システムが対応していない登録 → [EST](/ddbj/est.html)、STS、[TSA](/ddbj/tsa.html)、[HTC](/ddbj/htc.html)、[GSS](/ddbj/gss.html)、[HTG](/ddbj/htg.html)、[WGS](/ddbj/wgs.html)、[CON](/ddbj/con.html)、[TLS](/ddbj/tls.html)
-- 配列が長い場合 → 目安は 500 kb 以上
-- １エントリあたりに多数の Feature がある場合 → 目安は 30 以上
-- エントリ数 (登録する配列の数) が多い場合 → 1024 を超えると Web 版塩基配列登録システムでは分割が必要です
+- Web 版塩基配列登録システムが対応していない登録 
+   - [EST](/ddbj/est.html)、STS、[TSA](/ddbj/tsa.html)、[HTC](/ddbj/htc.html)、[GSS](/ddbj/gss.html)、[HTG](/ddbj/htg.html)、[WGS](/ddbj/wgs.html)、[CON](/ddbj/con.html)、[TLS](/ddbj/tls.html)
+   - データ種別の詳細は、[登録データ種別](/documents/data-categories.html#division)をご確認ください。
+- 配列が長い場合
+   - 目安は 500 kb 以上
+- １エントリあたりに多数の Feature がある場合
+    - 目安は 30 以上
+- エントリ数 (登録する配列の数) が多い場合
+    - 目安は 100 以上
 
 </div>
 
-データの種別については[登録データ種別](/documents/data-categories.html)をご確認ください。
+上記に該当しない場合、[Web 版塩基配列登録システム (NSSS: DDBJ Nucleotide Sequence Submission System](/ddbj/web-submission.html)) のご利用をお勧めしております。
 
-上記の条件を満たさない配列の登録は、[Web 版塩基配列登録システム (NSSS: DDBJ Nucleotide Sequence Submission System](/ddbj/web-submission.html)) のご利用をお勧めしております。
+また、シークエンサからの出力配列 (reads) を登録する場合は [DRA; DDBJ Sequence Read Archive](/dra/index.html) をご参照ください。
 
-また、シークエンサからの出力配列 (reads) を登録する場合は [DRA; DDBJ Sequence Read
-Archive](/dra/index.html) をご参照ください。
-
-## MSS による登録の流れ  {#flow}
-
-<img src="/assets/images/ddbj/MSS-flow_20200916-jp.png" alt="MSS による登録の流れ" title="" class=""> 
-
-### 1. 申し込み  {#flow-1}
-
-MSS の利用をご希望の場合は、[MSS 申し込みフォーム](/ddbj/mss-form.html)からご連絡ください。  
-DDBJ で受付した後に、より詳細な手順および作業を支援するソフトウェアをご紹介いたします。
-
-#### 事前準備  {#事前準備}
+## 事前準備  {#事前準備}
 
 以下に該当する場合、事前に BioProject、BioSample の登録をお願いいたします。
 
@@ -71,17 +75,28 @@ DDBJ で受付した後に、より詳細な手順および作業を支援する
   - [EST](/ddbj/est.html) の場合、厳密には [BioProject](/bioproject/index.html)、[BioSample](/biosample/index.html) の登録は必須ではありませんが、推奨します。
 - [TLS](/ddbj/tls.html) (Targeted Locus Study)
 
-#### アノテーションの記載 {#アノテーションの記載}
+## MSS による登録の流れ  {#flow}
+
+<img src="/assets/images/ddbj/MSS-flow_20200916-jp.png" alt="MSS による登録の流れ" title="" class=""> 
+
+## 1. 申し込み  {#flow-1}
+
+MSS の利用をご希望の場合は、[MSS 申し込みフォーム](/ddbj/mss-form.html)からご連絡ください。  
+DDBJ で受付した後に、より詳細な手順および作業を支援するソフトウェアをご紹介いたします。
+
+
+### アノテーションの記載 {#アノテーションの記載}
 
 - [全長規模のゲノム配列](/ddbj/genome.html)では　source と assembly_gap 以外の biological feature の記載は任意ですが、過去に登録例がない新規性の高い種が対象の場合、最低でも１つのゲノムに代表として feature annotation の記載が必要です。
 - [全長規模のゲノム配列](/ddbj/genome.html)でアノテーションを記載する場合は、[BioSample](/biosample/index.html) の登録時に [locus_tag prefix](/ddbj/qualifiers.html#locus_tag) の取得が必要です。
 - 原核生物のゲノムでは、[DFAST (DDBJ Fast Annotation and Submission Tool)](https://dfast.ddbj.nig.ac.jp/) の利用を推奨しています。
+-- こちらもご覧ください
 - [TSA](/ddbj/tsa.html) では source と assembly_gap 以外の biological feature の記載は任意であり、基本的には不要です。
 - [EST](/ddbj/est.html) には、source 以外の biological feature は記載できません。
 
-### 2. 登録ファイルの作成と送付  {#flow-2}
+## 2. 登録ファイルの作成と送付  {#flow-2}
 
-#### 登録に必要なファイルの作成  {#登録に必要なファイルの作成}
+### 登録に必要なファイルの作成  {#登録に必要なファイルの作成}
 
 配列ファイル  
 : 全登録データの配列を FASTA 形式で記述したテキストファイル。
@@ -100,7 +115,7 @@ AGP ファイル（[CON](/ddbj/con.html) エントリの登録の場合
 [TSA](/ddbj/tsa.html), complete genome, draft genome ([WGS](/ddbj/wgs.html) or [HTG](/ddbj/htg.html)) を登録する場合は、あらかじめ[BioProject](/bioproject/index.html)/[BioSample](/biosample/index.html) への登録を行い、取得したアクセッション番号をアノテーションファイル内に記載してください。
 </div>
 
-#### ファイルのチェック  {#ファイルのチェック}
+### ファイルのチェック  {#ファイルのチェック}
 
 DDBJ に登録ファイルを送る前に、作成したファイルを DDBJ が提供するデータファイル用チェックツールを用いてチェックを実行してください。
 
@@ -129,7 +144,7 @@ transChecker
 - [Biological feature](/ddbj/file-format.html#biological_feature) として [CDS feature](/ddbj/cds.html) を含むデータは、UME または transChecker を用いて、アミノ酸翻訳チェックを実行してください。
 - ご利用前に [使用許諾](/ddbj/mss-tool.html#license) をご確認ください。
 
-### 3. 査定作業  {#flow-3}
+## 3. 査定作業  {#flow-3}
 
 チェックツールによる検証を行った後、配列ファイルとアノテーションファイルを DDBJ に送付してください。
 
@@ -138,20 +153,38 @@ transChecker
 送付された全データをDDBJ で査定し、修正依頼や疑問等があれば通知します。  
 ファイルの内容に問題がなければ、データ登録作業を行い、Contact person のメールアドレス宛に、アクセッション番号の通知メールを送信します。
 
-#### ファイルの送付方法  {#ファイルの送付方法}
+### ファイルの送付方法  {#ファイルの送付方法}
 
 電子メールに添付して送信する  
-SCP によるファイル転送  
-: ファイルサイズが合計で 10 M byte を超える場合は、公開鍵と秘密鍵を用いた SCP によるファイル転送をお勧めいたします。
+SFTP によるファイル転送  
+: ファイルサイズが合計で 10 M byte を超える場合は、公開鍵と秘密鍵を用いた SFTP によるファイル転送をお勧めいたします。
 : ファイル転送を利用するには、[DDBJ Submission Portal D-way](https://ddbj.nig.ac.jp/D-way/) にて[登録アカウント](/account.html)を取得する必要があります。  詳細手順につきましては、[ファイルのアップロード方法](/dra/submission.html#upload-sequence-data)またはチュートリアル動画をご参照ください。
 : **チュートリアル動画**
 : 鍵ペアの作成（[Windows](https://youtu.be/mggRnbxr0gQ)/[macOS](https://youtu.be/h9LbhwROtOM)）
 : データの転送（[Windows](https://youtu.be/ZxIfewrk8lI)/[macOS](https://youtu.be/A2hPlGZEW_o)）
 
-### 4. データ公開  {#flow-4}
+## 4. データ公開  {#flow-4}
 
 登録時に即日公開を希望した場合は、可能な限り速やかに公開します。
 [公開予定日](/ddbj/submission.html#hold-date) ([hold_date](/ddbj/file-format.html#date)) を指定した場合は、[公開原則](/data-release-policy.html)に基づいて公開します。
 
 登録された塩基配列データは、配列ファイルとアノテーションファイルの内容に基づき、DDBJ の定めるフォーマットにしたがった[フラットファイル (flat file)](/ddbj/flat-file.html)の形式で公開されています。  
 [アノテーションファイルとフラットファイルの対応関係](/ddbj/file-format.html#sample)もご参照ください。
+
+## DFAST について: 原核生物ゲノムの登録
+### DFAST（DDBJ Fast Annotation and Submission Tool）
+DFAST は、原核生物ゲノムの高速自動アノテーションパイプラインで、DDBJ に直接登録可能なアノテーションファイルを取得できます。Assembled/Annootation database へ原核生物ゲノムを登録する際には、DFASTの利用を強く推奨しています。
+
+### 原核生物ゲノムの登録の手順
+1. DFAST で解析した原核生物ゲノムをDDBJ Assembled/Annootation database へ塩基配列を登録するには、事前に[BioProject](https://www.ddbj.nig.ac.jp/bioproject/index.html)、[BioSample](https://www.ddbj.nig.ac.jp/biosample/index.html)、[locus_tag preifx](https://www.ddbj.nig.ac.jp/ddbj/locus_tag.html)（Biogical featureを記載する場合）の登録が必要です。
+1. D-wayアカウントで DFASTにログインすると 、[解析（job）の履歴管理](https://dfast.ddbj.nig.ac.jp/help_login)ができます。アカウントを持っていない場合にはアカウントの作成方法をご一読下さい。
+
+### DFAST のデータを Submit するには
+1. DFAST にアクセスし、D-wayアカウントでログインします。ジョブ投入画面において塩基配列ファイルをアップロードすると、解析が始まり job IDが発行されます。job終了後、”DDBJ submission”  タブをクリックします。DDBJへの登録に必要な項目（BioProject ID、BioSample ID、locus_tag prefix、その他のメタ情報）を入力すると、MSS登録ファイルが作成されます。（注１）
+1. 実行したjobの[履歴管理画面](https://dfast.ddbj.nig.ac.jp/help_login)にて登録を希望する job ID をチェックして選択状態にします。
+1. ファイル形式に"MSS"を選択し"DOWNLOAD"ボタンをクリックしてファイルをダウンロードしてください。このとき入力されたメタ情報のチェックを行います。警告が出た場合には入力した情報を確認してください（注２）。ファイルダウンロード後にテキストエディタ等で開いて修正をすることも可能です。
+1. [MSS 申し込み](/ddbj/mss-form.html)を行ってください。[MSS による登録の流れ](/ddbj/mss.html#flow)の手順にしたがい、ダウンロードした登録ファイルを DDBJ に送付してください。
+
+注１）ログインしていない状態でもDFASTを使ってゲノムアノテーションをすることは可能です。その場合には、履歴管理画面でjob IDを指定して実行済みのjobを履歴に取り込むことができます。
+
+注２）メタ情報のチェックは簡易的なものですのでアノテーターによる査定時に修正が必要になることもあります。

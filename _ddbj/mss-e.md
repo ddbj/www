@@ -22,6 +22,8 @@ related_pages:
     url: /ddbj/mss-form-e.html
 ---
 
+<div class="attention" markdown="1">
+
 <span class="red">Submission of research data from human subjects</span>
 
 For all data from human subjects researches submitted to DDBJ, it is
@@ -30,8 +32,17 @@ participant (human subject) is protected in accordance with all
 applicable laws, regulations and policies of submitter's institute.  
 In principle, make sure to remove any direct personal identifiers of
 human subjects from your submissions.  
-Before submission, read "[Submission of research data from human
-subjects](/policies-e.html#human)".
+Before submission, read "[Submission of research data from human subjects](/policies-e.html#submission-of-human-data)".
+
+</div>
+
+- **[Application form for MSS](/ddbj/mss-form-e.html)**    
+- **[Validation tools for MSS data files](/ddbj/mss-tool-e.html)**    
+- **Format of submission files required for MSS**
+    - **[Sequence file](/ddbj/file-format-e.html#sequence)**
+    - **[Annotation file](/ddbj/file-format-e.html#annotation)**
+    - **[Samples of annotation files](/ddbj/file-format-e.html#sample)**
+
 
 ## What is MSS?  {#outline}
 
@@ -41,39 +52,35 @@ Mass Submission System (MSS) is the service to accept relatively large
 scale nucleotide sequence data (not reads) through sending text files.  
 We at DDBJ recommend using MSS when:
 
-- the submission is not applicable for Nucleotide Sequence Submission
-  System (NSSS)  
-  → [EST](/ddbj/est-e.html), STS, [TSA](/ddbj/tsa-e.html),
+- the submission is not applicable for Nucleotide Sequence Submission System (NSSS)  
+    -  [EST](/ddbj/est-e.html), STS, [TSA](/ddbj/tsa-e.html),
   [HTC](/ddbj/htc-e.html), [GSS](/ddbj/gss-e.html),
   [HTG](/ddbj/htg-e.html), [WGS](/ddbj/wgs-e.html),
   [CON](/ddbj/con-e.html), [TLS](/ddbj/tls-e.html)
+    - See [Categories for Sequence Data](/documents/data-categories-e.html#division) in detail.
 - the submission with long sequences.  
-  → greater than 500 kb in its length
+    - greater than 500 kb in its length
 - the complex submission containing many features  
-  → more than 30 features
+    - more than 30 features
 - the submission consists of large number of sequences.  
-  → When number of sequences is greater than 1024, you have to submit
-  two or more times via NSSS
+    - greater than 100
 
 </div>
 
-Otherwise, DDBJ recommends using the [DDBJ Nucleotide Sequence
-Submission System (NSSS)](/ddbj/web-submission-e.html) .
+Basically, if none of the above applies to your data, DDBJ recommends using the [DDBJ Nucleotide Sequence Submission System (NSSS)](/ddbj/web-submission-e.html). 
 
-If you are to submit reads from sequencers, please refer [DRA; DDBJ
-Sequence Read Archive](/dra/index-e.html).  
-Please confirm [Categories for Sequence Data](/documents/data-categories-e.html).
+If you are to submit reads from sequencers, please refer [DRA; DDBJ Sequence Read Archive](/dra/index-e.html).  
 
 ## The Flow of MSS  {#flow}
 
 <img src="/assets/images/ddbj/MSS-flow_20200916-en.png" alt="The Flow of MSS" title="" class="">
 
-### 1. Application  {#flow-1}
+## 1. Application  {#flow-1}
 
 Please apply for your submission through ["Application form for MSS"](/ddbj/mss-form-e.html). 
 According to your application, DDBJ MSS sends you how to use MSS via an email.
 
-#### Preparation for sequence data submission
+## Preparation for sequence data submission
 
 When your data are corresponding to the following cases, please register [BioProject](/bioproject/index-e.html) and [BioSample](/biosample/index-e.html) before using MSS.
 
@@ -85,7 +92,7 @@ When your data are corresponding to the following cases, please register [BioPro
   - In the case of [EST](/ddbj/est-e.html), [BioProject](/bioproject/index-e.html) and [BioSample](/biosample/index-e.html) are not required, but recommended.
 - [TLS](/ddbj/tls-e.html) (Targeted Locus Study)
 
-#### Description of annotation
+### Description of annotation
 
 - For [whole genome-scale sequence](/ddbj/genome-e.html), it is optional to describe biological features except source and  assembly_gap. However, in case of highly novel species, i.e. not available any sequence data, it is required to describe feature annotation for at least one genome as a representative.
 - If you decide to submit a genome with annotation, it is required to reserve [locus_tag prefix](/ddbj/qualifiers-e.html#locus_tag) on [BioSample](/biosample/index-e.html) submission.
@@ -93,9 +100,9 @@ When your data are corresponding to the following cases, please register [BioPro
 - For [TSA](/ddbj/tsa-e.html) data, it is optional (basically unnecessary) to describe biological features except source and assembly_gap.
 - In the case of [EST](/ddbj/est-e.html), you can not describe any biological features except source.
 
-### 2. Make submission files  {#flow-2}
+## 2. Make submission files  {#flow-2}
 
-#### Submission files required for MSS  {#Submission_files_required_for_MSS}
+### Submission files required for MSS  {#Submission_files_required_for_MSS}
 
 Prepare following files required to submit your sequence data.
 
@@ -130,7 +137,7 @@ numbers of them in annotation file.
 
 </div>
 
-#### Check submission files  {#Check_submission_files}
+### Check submission files  {#Check_submission_files}
 
 Before submitting to DDBJ, the files should be checked with software
 tools provided from DDBJ.
@@ -179,7 +186,7 @@ Download => [Validation tools for MSS data files](/ddbj/mss-tool-e.html)
 - Before installing Validation tools for data files, see [End-user
   license agreement](/ddbj/mss-tool-e.html#license).
 
-### 3. Review the submission files {#flow-3}
+## 3. Review the submission files {#flow-3}
 
 After validating the sequence and annotation files by using the check tools, send them to DDBJ. 
 
@@ -187,7 +194,7 @@ After validating the sequence and annotation files by using the check tools, sen
 
 DDBJ reviews submission files and then informs the submitter of some correction requests and/or inquiries. If there is no problem with the contents of the file, DDBJ will issue accession number(s) for your data and acknowledge the accession number(s) to the contact person by email.
 
-#### File transfer  {#File_transfer}
+### File transfer  {#File_transfer}
 
 Attach to e-mail  
 File transfer by SCP  
@@ -205,7 +212,7 @@ movies.
 : Upload data files（[Windows](https://youtu.be/gJqgCvUc0Y8) /
 [macOS](https://youtu.be/aO2aVafS3ZE)）
 
-### 4. Distribution  {#flow-4}
+## 4. Distribution  {#flow-4}
 
 If you do not set any hold-date, your data will be released
 immediately.  
@@ -216,3 +223,21 @@ data, we will release your data according to [Principle of
 The registered data will be published in a [flat file format](/ddbj/flat-file-e.html) defined by DDBJ. Please refer to the figure, [correspondence between annotation files and flat files](/ddbj/file-format-e.html#sample)
 
 
+## DFAST for the submission of prokaryote genomes to MSS
+### DFAST（DDBJ Fast Annotation and Submission Tool）
+DFAST
+DFAST is a rapid annotation pipeline service for prokaryote genomes, and outputs the annotation files that can be directly available for the submission to DDBJ. We strongly recommend that the submitters should use DFAST for the registration of the prokaryote genomes to assembled/annotation database.
+
+### Registration procedure for the prokaryote genome
+1. You need D-way account which has been obtained through DFAST in order to register the prokaryote genome and the annotation into DDBJ. Registration of [BioProject](https://www.ddbj.nig.ac.jp/bioproject/index-e.html),  [BioSample](https://www.ddbj.nig.ac.jp/biosample/index-e.html) and [locus_tag prefix](https://www.ddbj.nig.ac.jp/ddbj/locus_tag-e.html) when biological feature are descriebed are required in advance.
+1. If you login to DFAST with D-way account, you can manage the [jobs analyzed](https://dfast.ddbj.nig.ac.jp/help_login) in DFAST. If you have not obtained the login account, see “How to create the account” to get a new account. 
+
+### How to submit the data obtained via DFAST
+1. Login to DFAST with your account. First, upload the fasta file in “job submission page”, and start the job to analyze the genome. At this stage, you can obtain a job ID. When the job is finished, click “DDBJ submission” tab on the page. The annotation and sequence files, which are needed for MSS submission, are created after you fill the form in metadata section.(*1)
+1. On the [job management page](https://dfast.ddbj.nig.ac.jp/help_login), add checkmark to the job number that you would like to submit to DDBJ.
+1. Select "MSS" for the file format type, and click “DOWNLOAD” to download the submission files. Please check the meta information carefully. If you encounter a warning, check again and correct the metadata that you have filled (*2). If you would like to edit the annotation and meta data on a text file, download the files and open them by text editor.
+1. Apply for the submission through "Application form for MSS"(/ddbj/mss-form-e.html). According to the process shown in ["The Flow of MSS"](/ddbj/mss-e.html#flow), send the submission files that you have downloaded in DFAST to DDBJ.
+
+*1 You can use DFAST and obtain the result of genome annotation without logging in. In that case, you should remember the job ID. When you login to DFAST, you can import the job into your account by the function of job history on the menu bar.
+
+*2 The function in DFAST for checking the metadata is simple. You may be asked to correct the files by DDBJ curators after you submit the data.
