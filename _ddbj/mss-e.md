@@ -223,7 +223,7 @@ data, we will release your data according to [Principle of
 The registered data will be published in a [flat file format](/ddbj/flat-file-e.html) defined by DDBJ. Please refer to the figure, [correspondence between annotation files and flat files](/ddbj/file-format-e.html#sample)
 
 
-## DFAST for the submission of prokaryote genomes to MSS  {#mssdfast}
+## DFAST for the submission of prokaryote genomes  {#mssdfast}
 ### DFAST（DDBJ Fast Annotation and Submission Tool）  {#mssdfast-1}
 [DFAST](https://dfast.ddbj.nig.ac.jp/) is a rapid annotation pipeline service for prokaryote genomes, which also generates the annotation files that can be directly submitted to DDBJ. We strongly recommend that the submitters use DFAST for the registration of the prokaryote genomes to Annotated/Assembled Sequences database.
 
