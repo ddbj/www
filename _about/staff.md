@@ -260,8 +260,7 @@ category: about
             <p class="name">Hideki Mochizuki</p>
         </div>
         </li>
-    </ul>
-    
+    </ul>    
     <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/tsuzuki.jpg" title="鈴木　貴大"></p>
@@ -277,8 +276,6 @@ category: about
             <p class="name">Koji Watanabe</p>
         </div>
         </li>
-    </ul>
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yosida.jpg" title="吉田 昌弘"></p>
         <div class="explanation">
@@ -286,7 +283,7 @@ category: about
             <p class="name">Masahiro Yoshida</p>
         </div>
         </li>   
-    </ul>   
+    </ul>
     </div>
     <!-- .wrapper -->
     <h2 id="system-administration">システム管理部門</h2>
