@@ -235,7 +235,7 @@ The registered data will be published in a [flat file format](/ddbj/flat-file-e.
 1. Login to [DFAST](https://dfast.ddbj.nig.ac.jp/) with your account. First, upload the fasta file in “job submission page”, and start the job to analyze the genome. At this stage, you can obtain a job ID. When the job is finished, click “DDBJ submission” tab on the page. The annotation and sequence files, which are needed for MSS submission, are created after you fill the form in metadata section.(*1)
 1. On the [job management page](https://dfast.ddbj.nig.ac.jp/help_login), add checkmark to the job number that you would like to submit to DDBJ.
 1. Select "MSS" for the file format type, and click “DOWNLOAD” to download the submission files. Please check the meta information carefully. If you encounter a warning, check again and correct the metadata that you have filled (*2). If you would like to edit the annotation and meta data on a text file, download the files and open them by text editor.
-1. Apply for the submission through "Application form for MSS"(/ddbj/mss-form-e.html). According to the process shown in ["The Flow of MSS"](/ddbj/mss-e.html#flow), send the submission files that you have downloaded in DFAST to DDBJ.
+1. Apply for the submission through ["Application form for MSS"](/ddbj/mss-form-e.html). According to the process shown in ["The Flow of MSS"](/ddbj/mss-e.html#flow), send the submission files that you have downloaded in DFAST to DDBJ.
 
 *1 You can use [DFAST](https://dfast.ddbj.nig.ac.jp/) and obtain the result of genome annotation without logging in. In that case, you should remember the job ID. When you login to DFAST, you can import the job into your account by the function of job history on the menu bar.
 
