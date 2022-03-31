@@ -225,7 +225,7 @@ The registered data will be published in a [flat file format](/ddbj/flat-file-e.
 
 ## DFAST for the submission of prokaryote genomes  {#mssdfast}
 ### DFAST（DDBJ Fast Annotation and Submission Tool）  {#mssdfast-1}
-[DFAST](https://dfast.ddbj.nig.ac.jp/) is a rapid annotation pipeline service for prokaryote genomes, which also generates the annotation files that can be directly submitted to DDBJ. We strongly recommend that the submitters use DFAST for the registration of the prokaryote genomes to Annotated/Assembled Sequences database.
+[DFAST](https://dfast.ddbj.nig.ac.jp/) is a rapid annotation pipeline service for prokaryote genomes, which also generates the annotation files that can be directly submitted to DDBJ. We strongly recommend that the submitters use [DFAST](https://dfast.ddbj.nig.ac.jp/) for the registration of the prokaryote genomes to Annotated/Assembled Sequences database.
 
 ### Registration procedure for the prokaryote genome  {#mssdfast-2}
 1. You need [D-way account](/account-e.html) which has been obtained through DFAST in order to register the prokaryote genome and the annotation into DDBJ. Registration of [BioProject](https://www.ddbj.nig.ac.jp/bioproject/index-e.html),  [BioSample](https://www.ddbj.nig.ac.jp/biosample/index-e.html) and [locus_tag prefix](https://www.ddbj.nig.ac.jp/ddbj/locus_tag-e.html) when biological feature are descriebed are required in advance.
