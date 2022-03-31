@@ -177,7 +177,7 @@ SFTP によるファイル転送
 
 ### 原核生物ゲノムの登録の手順  {#mssdfast-2}
 1. [DFAST](https://dfast.ddbj.nig.ac.jp/) で解析した原核生物ゲノムを Annotated/Assembled Sequences database に登録するには、事前に[BioProject](https://www.ddbj.nig.ac.jp/bioproject/index.html)、[BioSample](https://www.ddbj.nig.ac.jp/biosample/index.html)、[locus_tag preifx](https://www.ddbj.nig.ac.jp/ddbj/locus_tag.html)（Biogical featureを記載する場合）の登録が必要です。
-1. [D-way アカウント](/account.html)で DFAST にログインすると 、[解析（job）の履歴管理](https://dfast.ddbj.nig.ac.jp/help_login)ができます。アカウントを持っていない場合には[アカウントの作成方法](/account.html#account-for-bioproject-biosample-submissions)をご一読下さい。
+1. [D-way アカウント](/account.html)で [DFAST](https://dfast.ddbj.nig.ac.jp/) にログインすると 、[解析（job）の履歴管理](https://dfast.ddbj.nig.ac.jp/help_login)ができます。アカウントを持っていない場合には[アカウントの作成方法](/account.html#account-for-bioproject-biosample-submissions)をご一読下さい。
 
 ### DFAST のデータを Submit するには  {#mssdfast-3}
 1. [DFAST](https://dfast.ddbj.nig.ac.jp/) にアクセスし、[D-way アカウント](/account.html)でログインします。ジョブ投入画面において塩基配列ファイルをアップロードすると、解析が始まり job ID が発行されます。job 終了後、”DDBJ submission”  タブをクリックします。DDBJ への登録に必要な項目（BioProject ID、BioSample ID、locus_tag prefix、その他のメタ情報）を入力すると、MSS 登録ファイルが作成されます。（注１）
