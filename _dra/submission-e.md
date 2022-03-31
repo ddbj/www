@@ -611,8 +611,7 @@ Platform specific formats
 
 ### BAM file  {#BAM_file} 
 
-Binary Alignment/Map files (BAM) represent one of the preferred DRA
-submission formats. BAM is a compressed version of the Sequence
+BAM is a compressed version of the Sequence
 Alignment/Map (SAM) format (see
 [SAMv1.pdf](https://samtools.github.io/hts-specs/SAMv1.pdf)). BAM files
 can be decompressed to a human-readable text format (SAM) using
