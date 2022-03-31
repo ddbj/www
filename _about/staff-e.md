@@ -237,12 +237,6 @@ category: about
     </ul>
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/sugahara.jpg" title="Misato Sugahara"></p>
-        <div class="explanation">
-            <p class="name">Misato Sugahara</p>
-        </div>
-        </li>      
-        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/tsuzuki.jpg" title="Takahiro Suzuki"></p>
         <div class="explanation">
             <p class="name">Takahiro Suzuki</p>
