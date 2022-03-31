@@ -173,18 +173,18 @@ SFTP によるファイル転送
 
 ## DFAST について: 原核生物ゲノムの登録  {#mssdfast}
 ### DFAST（DDBJ Fast Annotation and Submission Tool）  {#mssdfast-1}
-DFAST は、原核生物ゲノムの高速自動アノテーションパイプラインで、DDBJ に直接登録可能なアノテーションファイルを取得できます。Assembled/Annootation database へ原核生物ゲノムを登録する際には、DFASTの利用を強く推奨しています。
+[DFAST](https://dfast.ddbj.nig.ac.jp/) は、原核生物ゲノムの高速自動アノテーションパイプラインで、DDBJ に直接登録可能なアノテーションファイルを取得できます。Annotated/Assembled Sequences database へ原核生物ゲノムを登録する際には、[DFAST](https://dfast.ddbj.nig.ac.jp/) の利用を強く推奨しています。
 
 ### 原核生物ゲノムの登録の手順  {#mssdfast-2}
-1. DFAST で解析した原核生物ゲノムをDDBJ Assembled/Annootation database へ塩基配列を登録するには、事前に[BioProject](https://www.ddbj.nig.ac.jp/bioproject/index.html)、[BioSample](https://www.ddbj.nig.ac.jp/biosample/index.html)、[locus_tag preifx](https://www.ddbj.nig.ac.jp/ddbj/locus_tag.html)（Biogical featureを記載する場合）の登録が必要です。
-1. D-wayアカウントで DFASTにログインすると 、[解析（job）の履歴管理](https://dfast.ddbj.nig.ac.jp/help_login)ができます。アカウントを持っていない場合にはアカウントの作成方法をご一読下さい。
+1. [DFAST](https://dfast.ddbj.nig.ac.jp/) で解析した原核生物ゲノムを Annotated/Assembled Sequences database に登録するには、事前に[BioProject](https://www.ddbj.nig.ac.jp/bioproject/index.html)、[BioSample](https://www.ddbj.nig.ac.jp/biosample/index.html)、[locus_tag preifx](https://www.ddbj.nig.ac.jp/ddbj/locus_tag.html)（Biogical featureを記載する場合）の登録が必要です。
+1. [D-way アカウント](/account.html)で DFAST にログインすると 、[解析（job）の履歴管理](https://dfast.ddbj.nig.ac.jp/help_login)ができます。アカウントを持っていない場合には[アカウントの作成方法](/account.html#account-for-bioproject-biosample-submissions)をご一読下さい。
 
 ### DFAST のデータを Submit するには  {#mssdfast-3}
-1. DFAST にアクセスし、D-wayアカウントでログインします。ジョブ投入画面において塩基配列ファイルをアップロードすると、解析が始まり job IDが発行されます。job終了後、”DDBJ submission”  タブをクリックします。DDBJへの登録に必要な項目（BioProject ID、BioSample ID、locus_tag prefix、その他のメタ情報）を入力すると、MSS登録ファイルが作成されます。（注１）
+1. [DFAST](https://dfast.ddbj.nig.ac.jp/) にアクセスし、[D-way アカウント](/account.html)でログインします。ジョブ投入画面において塩基配列ファイルをアップロードすると、解析が始まり job ID が発行されます。job 終了後、”DDBJ submission”  タブをクリックします。DDBJ への登録に必要な項目（BioProject ID、BioSample ID、locus_tag prefix、その他のメタ情報）を入力すると、MSS 登録ファイルが作成されます。（注１）
 1. 実行したjobの[履歴管理画面](https://dfast.ddbj.nig.ac.jp/help_login)にて登録を希望する job ID をチェックして選択状態にします。
 1. ファイル形式に"MSS"を選択し"DOWNLOAD"ボタンをクリックしてファイルをダウンロードしてください。このとき入力されたメタ情報のチェックを行います。警告が出た場合には入力した情報を確認してください（注２）。ファイルダウンロード後にテキストエディタ等で開いて修正をすることも可能です。
 1. [MSS 申し込み](/ddbj/mss-form.html)を行ってください。[MSS による登録の流れ](/ddbj/mss.html#flow)の手順にしたがい、ダウンロードした登録ファイルを DDBJ に送付してください。
 
-注１）ログインしていない状態でもDFASTを使ってゲノムアノテーションをすることは可能です。その場合には、履歴管理画面でjob IDを指定して実行済みのjobを履歴に取り込むことができます。
+注１）ログインしていない状態でも DFAST を使ってゲノムアノテーションをすることは可能です。その場合には、履歴管理画面で job ID を指定して実行済みのjobを履歴に取り込むことができます。
 
-注２）メタ情報のチェックは簡易的なものですのでアノテーターによる査定時に修正が必要になることもあります。
+注２）メタ情報のチェックは簡易的なものですのでキュレーターによる査定時に修正が必要になることもあります。
