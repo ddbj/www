@@ -228,7 +228,7 @@ The registered data will be published in a [flat file format](/ddbj/flat-file-e.
 [DFAST](https://dfast.ddbj.nig.ac.jp/) is a rapid annotation pipeline service for prokaryote genomes, which also generates the annotation files that can be directly submitted to DDBJ. We strongly recommend that the submitters use [DFAST](https://dfast.ddbj.nig.ac.jp/) for the registration of the prokaryote genomes to Annotated/Assembled Sequences database.
 
 ### Registration procedure for the prokaryote genome  {#mssdfast-2}
-1. You need [D-way account](/account-e.html) which has been obtained through DFAST in order to register the prokaryote genome and the annotation into DDBJ. Registration of [BioProject](https://www.ddbj.nig.ac.jp/bioproject/index-e.html),  [BioSample](https://www.ddbj.nig.ac.jp/biosample/index-e.html) and [locus_tag prefix](https://www.ddbj.nig.ac.jp/ddbj/locus_tag-e.html) when biological feature are descriebed are required in advance.
+1. You need [D-way account](/account-e.html) which has been obtained through [DFAST](https://dfast.ddbj.nig.ac.jp/) in order to register the prokaryote genome and the annotation into DDBJ. Registration of [BioProject](https://www.ddbj.nig.ac.jp/bioproject/index-e.html),  [BioSample](https://www.ddbj.nig.ac.jp/biosample/index-e.html) and [locus_tag prefix](https://www.ddbj.nig.ac.jp/ddbj/locus_tag-e.html) when biological feature are descriebed are required in advance.
 1. If you login to [DFAST](https://dfast.ddbj.nig.ac.jp/) with [D-way account](/account-e.html), you can manage the [jobs analyzed](https://dfast.ddbj.nig.ac.jp/help_login) in [DFAST](https://dfast.ddbj.nig.ac.jp/). If you have not obtained the login account, see [“Create a D-way account in the website”](/account-e.html#account-for-bioproject-biosample-submissions) to get a new account. 
 
 ### How to submit the data obtained in DFAST  {#mssdfast-3}
@@ -239,4 +239,4 @@ The registered data will be published in a [flat file format](/ddbj/flat-file-e.
 
 *1 You can use [DFAST](https://dfast.ddbj.nig.ac.jp/) and obtain the result of genome annotation without logging in. In that case, you should remember the job ID. When you login to DFAST, you can import the job into your account by the function of job history on the menu bar.
 
-*2 The function in DFAST for checking the metadata is simple. You may be asked to correct the files by DDBJ curators after you submit the data.
+*2 The function in [DFAST](https://dfast.ddbj.nig.ac.jp/) for checking the metadata is simple. You may be asked to correct the files by DDBJ curators after you submit the data.
