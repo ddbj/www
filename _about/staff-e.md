@@ -178,7 +178,7 @@ category: about
         <p class="photo"><img src="/assets/images/staff/sugita.jpg" title="Rie Sugita"></p>
         <div class="explanation">
             <p class="name">Rie Sugita</p>
-            <p class="position">Data Updates/Correction</p>
+            <p class="position">Data Submission: NGS</p>
         </div>
         </li>
     </ul>  
@@ -242,6 +242,14 @@ category: about
             <p class="name">Takahiro Suzuki</p>
         </div>
         </li>
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/umeda.jpg" title="Tomoki Umeda"></p>
+        <div class="explanation">
+            <p class="name">Tomoki Umeda</p>
+        </div>
+        </li>
+    </ul>
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/watanabe.jpg" title="Koji Watanabe"></p>
         <div class="explanation">

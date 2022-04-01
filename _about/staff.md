@@ -197,7 +197,7 @@ category: about
         <div class="explanation">
             <p class="name">杉田 里江</p>
             <p class="name">Rie Sugita</p>
-            <p class="position">登録データの修正/更新</p>
+            <p class="position">データ登録：NGS</p>
         </div>
         </li>
      </ul>  
@@ -270,12 +270,21 @@ category: about
         </div>
         </li>
         <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/umeda.jpg" title="梅田 友貴"></p>
+        <div class="explanation">
+            <p class="name">梅田 友貴</p>
+            <p class="name">Tomoki UMEDA</p>
+        </div>
+        </li>
+        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/watanabe.jpg" title="渡邊 康司"></p>
         <div class="explanation">
             <p class="name">渡邊 康司</p>
             <p class="name">Koji Watanabe</p>
         </div>
         </li>
+    </ul>
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yosida.jpg" title="吉田 昌弘"></p>
         <div class="explanation">
