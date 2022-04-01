@@ -248,14 +248,14 @@ category: about
             <p class="name">Tomoki Umeda</p>
         </div>
         </li>
-    </ul>
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/watanabe.jpg" title="Koji Watanabe"></p>
         <div class="explanation">
             <p class="name">Koji Watanabe</p>
         </div>
         </li>
+    </ul>
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yosida.jpg" title="Masahiro Yoshida"></p>
         <div class="explanation">
