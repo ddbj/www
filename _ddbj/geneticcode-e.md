@@ -36,8 +36,7 @@ Example         /transl_table=4
 
 ## Genetic code table  {#Genetic_code_table}
 
-Compiled by Andrzej (Anjay) Elzanowski and Jim Ostell  
-National Center for Biotechnology Information (NCBI), Bethesda, Maryland, U.S.A.  
+Compiled by Andrzej (Anjay) Elzanowski and Jim Ostell at National Center for Biotechnology Information (NCBI), Bethesda, Maryland, U.S.A.  
 
 The original site; [The Genetic Codes](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=cgencodes) 2022.03.15 version
 
@@ -58,8 +57,7 @@ The following genetic codes are described here:
   - [1. The Standard Code](#1)
   - [2. The Vertebrate Mitochondrial Code](#2)
   - [3. The Yeast Mitochondrial Code](#3)
-  - [4. The Mold, Protozoan, and Coelenterate Mitochondrial Code and the
-    Mycoplasma/Spiroplasma Code](#4)
+  - [4. The Mold, Protozoan, and Coelenterate Mitochondrial Code and the Mycoplasma/Spiroplasma Code](#4)
   - [5. The Invertebrate Mitochondrial Code](#5)
   - [6. The Ciliate, Dasycladacean and Hexamita Nuclear Code](#6)
   - [9. The Echinoderm and Flatworm Mitochondrial Code](#9)
@@ -74,7 +72,6 @@ The following genetic codes are described here:
   - [23. Thraustochytrium Mitochondrial Code](#23)
   - [24. Rhabdopleuridae Mitochondrial Code](#24)
   - [25. Candidate Division SR1 and Gracilibacteria Code](#25)
-  - [26. Pachysolen tannophilus Nuclear Code](#26)
   - [26. Pachysolen tannophilus Nuclear Code](#26)
   - [27. Karyorelict Nuclear Code](#27)
   - [28. Condylostoma Nuclear Code](#28)
@@ -293,15 +290,17 @@ GUA(?)
 
 ### Systematic Range:
 
-**_Bacteria_**: The code is used in　_Entomoplasmatales_　and　_Mycoplasmatales_ ([Bove　_et al_　.1989](https://www.ncbi.nlm.nih.gov/pubmed/7691196)). The situation in the _Acholeplasmatales_ is unclear. Based on a study of ribosomal protein genes, it had been concluded that UGA does not code for tryptophan in plant-pathogenic mycoplasma-like organisms (MLO) and the _Acholeplasmataceae_ ([Lim and Sears, 1992](https://www.ncbi.nlm.nih.gov/pubmed/1556079)) and there seems to be only a single tRNA-CCA for tryptophan in _Acholeplasma laidlawii_ ([Tanaka _et al_. 1989](https://www.ncbi.nlm.nih.gov/pubmed/2762159)). In contrast, in a study of codon usage in _Phytoplasmas_, it was found that 30 out of 78 ORFs analyzed translated better with code 4 (UGA for tryptophan) than with code 11 while the remainder showed no differences between the two codes ([Melamed _et al_. 2003](https://www.ncbi.nlm.nih.gov/pubmed/14594823)). In addition, the coding reassignment of UGA Stop --\> Trp can be found in an alpha-proteobacterial symbiont of cicadas: _Candidatus Hodgkinia cicadicola_ ([McCutcheon _et al_. 2009](https://www.ncbi.nlm.nih.gov/pubmed/19609354)).
+**_Bacteria_**: The code is used in _Entomoplasmatales_ and _Mycoplasmatales_ ([Bove _et al_ .1989](https://www.ncbi.nlm.nih.gov/pubmed/7691196)). The situation in the _Acholeplasmatales_ is unclear. Based on a study of ribosomal protein genes, it had been concluded that UGA does not code for tryptophan in plant-pathogenic mycoplasma-like organisms (MLO) and the _Acholeplasmataceae_ ([Lim and Sears, 1992](https://www.ncbi.nlm.nih.gov/pubmed/1556079)) and there seems to be only a single tRNA-CCA for tryptophan in _Acholeplasma laidlawii_ ([Tanaka _et al_. 1989](https://www.ncbi.nlm.nih.gov/pubmed/2762159)). In contrast, in a study of codon usage in _Phytoplasmas_, it was found that 30 out of 78 ORFs analyzed translated better with code 4 (UGA for tryptophan) than with code 11 while the remainder showed no differences between the two codes ([Melamed _et al_. 2003](https://www.ncbi.nlm.nih.gov/pubmed/14594823)). In addition, the coding reassignment of UGA Stop --\> Trp can be found in an alpha-proteobacterial symbiont of cicadas: _Candidatus Hodgkinia cicadicola_ ([McCutcheon _et al_. 2009](https://www.ncbi.nlm.nih.gov/pubmed/19609354)).
 
-**_Fungi_**: _Emericella nidulans_, _Neurospora crassa_, _Podospora anserina_, _Acremonium_ ([Fox, 1987](https://www.ncbi.nlm.nih.gov/pubmed/3327473)), _Candida parapsilosis_ ([Guelin _et al_., 1991](https://www.ncbi.nlm.nih.gov/pubmed/1826652)), _Trichophyton rubrum_ ([de Bievre and Dujon, 1992](https://www.ncbi.nlm.nih.gov/pubmed/1326416)), _Dekkera/Brettanomyces, Eeniella_ ([Hoeben _et al_., 1993](https://www.ncbi.nlm.nih.gov/pubmed/8387113)), and probably _Ascobolus immersus_,_Aspergillus amstelodami_,_Claviceps purpurea_, and_Cochliobolus heterostrophus_. **Other Eukaryotes** :_Gigartinales_ among the red algae ([Boyen _et al_ . 1994](https://www.ncbi.nlm.nih.gov/pubmed/8190631)), and the protozoa_Trypanosoma brucei_,_Leishmania tarentolae_,_Paramecium tetraurelia_,_Tetrahymena pyriformis_ and probably_Plasmodium gallinaceum_ ([Aldritt _et al_ ., 1989](https://www.ncbi.nlm.nih.gov/pubmed/2779560)).
+**_Fungi_**: _Emericella nidulans_, _Neurospora crassa_, _Podospora anserina_, _Acremonium_ ([Fox, 1987](https://www.ncbi.nlm.nih.gov/pubmed/3327473)), _Candida parapsilosis_ ([Guelin _et al_., 1991](https://www.ncbi.nlm.nih.gov/pubmed/1826652)), _Trichophyton rubrum_ ([de Bievre and Dujon, 1992](https://www.ncbi.nlm.nih.gov/pubmed/1326416)), _Dekkera/Brettanomyces, Eeniella_ ([Hoeben _et al_., 1993](https://www.ncbi.nlm.nih.gov/pubmed/8387113)), and probably _Ascobolus immersus_,_Aspergillus amstelodami_,_Claviceps purpurea_, and_Cochliobolus heterostrophus_.    
+
+**Other Eukaryotes** :_Gigartinales_ among the red algae ([Boyen _et al_ . 1994](https://www.ncbi.nlm.nih.gov/pubmed/8190631)), and the protozoa_Trypanosoma brucei_,_Leishmania tarentolae_,_Paramecium tetraurelia_,_Tetrahymena pyriformis_ and probably_Plasmodium gallinaceum_ ([Aldritt _et al_ ., 1989](https://www.ncbi.nlm.nih.gov/pubmed/2779560)).
 
 **Metazoa**: _Coelenterata_ (Ctenophora and Cnidaria)
 
 ### Comments:
 
-This code is also used for the kinetoplast DNA (maxicircles, minicircles).   Kinetoplasts are modified mitochondria (or their parts).
+This code is also used for the kinetoplast DNA (maxicircles, minicircles).  Kinetoplasts are modified mitochondria (or their parts).
 
 ## 5\. The Invertebrate Mitochondrial Code (transl_table=5) <a name="5"></a>
 
@@ -370,8 +369,7 @@ Several arthropods translate the codon AGG as lysine instead of serine (as in th
 
 GUG may possibly function as an initiator in _Drosophila_ ([Clary and Wolstenholme, 1985](https://www.ncbi.nlm.nih.gov/pubmed/6314262); [Gadaleta _et al_., 1988](https://www.ncbi.nlm.nih.gov/pubmed/3399396)). AUU is not used as an initiator in _Mytilus_ ([Hoffmann _et al_., 1992](https://www.ncbi.nlm.nih.gov/pubmed/1386586)).
 
-"An exceptional mechanism must operate for initiation of translation of the cytochrome oxidase subunit I mRNA in both _D. melanogaster_ ([de Bruijn, 1983](https://www.ncbi.nlm.nih.gov/pubmed/6408489)) and D. yakuba ([Clary and Wolstenholme 1983](https://www.ncbi.nlm.nih.gov/pubmed/6314262)), since its only plausible initiation codon, AUA, is out of frame with the rest
-of the gene. Initiation appears to require the "reading" of of an AUAA quadruplet, which would be equivalent to initiation at AUA followed immediately by a specific ribosomal frameshift. Another possible mechanism ... is that the mRNA is "edited" to bring the AUA initiation into frame." ([Fox, 1987](https://www.ncbi.nlm.nih.gov/pubmed/3327473))
+"An exceptional mechanism must operate for initiation of translation of the cytochrome oxidase subunit I mRNA in both _D. melanogaster_ ([de Bruijn, 1983](https://www.ncbi.nlm.nih.gov/pubmed/6408489)) and D. yakuba ([Clary and Wolstenholme 1983](https://www.ncbi.nlm.nih.gov/pubmed/6314262)), since its only plausible initiation codon, AUA, is out of frame with the rest of the gene. Initiation appears to require the "reading" of of an AUAA quadruplet, which would be equivalent to initiation at AUA followed immediately by a specific ribosomal frameshift. Another possible mechanism ... is that the mRNA is "edited" to bring the AUA initiation into frame." ([Fox, 1987](https://www.ncbi.nlm.nih.gov/pubmed/3327473))
 
 ## 6\. The Ciliate, Dasycladacean and Hexamita Nuclear Code (transl_table=6) <a name="6"></a>
 
@@ -407,7 +405,7 @@ GTG V Val      GCG A Ala      GAG E Glu      GGG G Gly
 
 ### Differences from the Standard Code:
 
-``` 
+```
           Code 6       Standard
  UAA      Gln  Q        Ter  *
  UAG      Gln  Q        Ter  *
@@ -415,8 +413,11 @@ GTG V Val      GCG A Ala      GAG E Glu      GGG G Gly
 
 ### Systematic Range:
 
-**_Ciliata_**: _Oxytricha_ and _Stylonychia_ ([Hoffman _et al_. 1995](https://www.ncbi.nlm.nih.gov/pubmed/7753617)), _Paramecium_, _Tetrahymena_, Oxytrichidae and probably _Glaucoma chattoni_.   **_Dasycladaceae_**: _Acetabularia_ ([Schneider _et al_., 1989](https://www.ncbi.nlm.nih.gov/pubmed/2573818)) and **_Batophora_** ([Schneider and de Groot, 1991](https://www.ncbi.nlm.nih.gov/pubmed/1934113)).   **_Diplomonadida_**:   
-Scope: _Hexamita inflata_, _Diplomonadida_ ATCC50330, and ATCC50380.   Ref.: [Keeling, P.J. and Doolittle, W.F. 1996.](https://www.ncbi.nlm.nih.gov/pubmed/8641293) A non-canonical genetic code in an early diverging eukaryotic lineage. The EMBO Journal 15, 2285-2290.
+**_Ciliata_**: _Oxytricha_ and _Stylonychia_ ([Hoffman _et al_. 1995](https://www.ncbi.nlm.nih.gov/pubmed/7753617)), _Paramecium_, _Tetrahymena_, Oxytrichidae and probably _Glaucoma chattoni_.    
+**_Dasycladaceae_**: _Acetabularia_ ([Schneider _et al_., 1989](https://www.ncbi.nlm.nih.gov/pubmed/2573818)) and **_Batophora_** ([Schneider and de Groot, 1991](https://www.ncbi.nlm.nih.gov/pubmed/1934113)).    
+**_Diplomonadida_**:    
+Scope: _Hexamita inflata_, _Diplomonadida_ ATCC50330, and ATCC50380.    
+Ref.: [Keeling, P.J. and Doolittle, W.F. 1996.](https://www.ncbi.nlm.nih.gov/pubmed/8641293) A non-canonical genetic code in an early diverging eukaryotic lineage. The EMBO Journal 15, 2285-2290.
 
 ### Comment:
 
@@ -466,7 +467,9 @@ GTG V Val i    GCG A Ala      GAG E Glu      GGG G Gly
 
 ### Systematic Range:
 
-**_Asterozoa_** (starfishes) ([Himeno _et al_., 1987](https://www.ncbi.nlm.nih.gov/pubmed/3678836))   **_Echinozoa_** (sea urchins) ([Jacobs _et al_., 1988](https://www.ncbi.nlm.nih.gov/pubmed/3172215); [Cantatore _et al_., 1989](https://www.ncbi.nlm.nih.gov/pubmed/2544576))   **_Rhabditophora_** among the _Platyhelminthes_ ([Telford _et al_. 2000](https://www.ncbi.nlm.nih.gov/pubmed/11027335))
+**_Asterozoa_** (starfishes) ([Himeno _et al_., 1987](https://www.ncbi.nlm.nih.gov/pubmed/3678836))    
+**_Echinozoa_** (sea urchins) ([Jacobs _et al_., 1988](https://www.ncbi.nlm.nih.gov/pubmed/3172215); [Cantatore _et al_., 1989](https://www.ncbi.nlm.nih.gov/pubmed/2544576))    
+**_Rhabditophora_** among the _Platyhelminthes_ ([Telford _et al_. 2000](https://www.ncbi.nlm.nih.gov/pubmed/11027335))
 
 ## 10\. The Euplotid Nuclear Code (transl_table=10) <a name="10"></a>
 
@@ -592,13 +595,12 @@ CAG may be used in _Candida albicans_ ([Santos _et al_., 1993](https://www.ncbi.
 
 ### Systematic Range and Comments:
 
-In code 12 the CUG codon has been reassigned from Leu to Ser ([Santos _et al_., 2011](https://www.ncbi.nlm.nih.gov/pubmed/21819941), [Mateus _et al_., 2013](https://www.ncbi.nlm.nih.gov/pubmed/23619021), [Krassowski _et al_., 2018](https://www.ncbi.nlm.nih.gov/pubmed/29760453)).  
-This code is used by the fungal CUG-Ser1 clade that represents a monophyletic lineage of the _Saccharomycotina_ ([Li _et al_., 2021](https://www.ncbi.nlm.nih.gov/pubmed/33607033)).  
-In the NCBI taxonomy, it currently comprises the three families _Cephaloascaceae_, _Debaryomycetaceae_ and _Metschnikowiaceae_ and the genus _Babjeviella_.  
-The CUG-Ser1 clade includes important human pathogens like _Candida albicans_ and the multidrug-resistant _Candida auris_.  
-Most other true yeasts (_Saccharomycotina_) use the standard code however.  
-
-
+In code 12 the CUG codon has been reassigned from Leu to Ser ([Santos _et al_., 2011](https://www.ncbi.nlm.nih.gov/pubmed/21819941), [Mateus _et al_., 2013](https://www.ncbi.nlm.nih.gov/pubmed/23619021), [Krassowski _et al_., 2018](https://www.ncbi.nlm.nih.gov/pubmed/29760453)).    
+This code is used by the fungal CUG-Ser1 and CUG-Ser2 clades that represent separate monophyletic lineages of the _Saccharomycotina_ ([Li _et al_., 2021](https://www.ncbi.nlm.nih.gov/pubmed/33607033)).    
+In the NCBI taxonomy, CUG-Ser1 currently comprises the three families _Cephaloascaceae_, _Debaryomycetaceae_ and _Metschnikowiaceae_ and the genus _Babjeviella_.    
+The CUG-Ser1 clade includes important human pathogens like _Candida albicans_ and the multidrug-resistant _Candida auris_.    
+The CUG-Ser2 clade represents a parallel reassignment of CUG and includes species in the families _Ascoideaceae_ and _Saccharomycopsidaceae_.    
+Most other true yeasts (_Saccharomycotina_) use the standard code however.    
 
 ## 13\. The Ascidian Mitochondrial Code (transl_table=13) <a name="13"></a>
 
@@ -746,7 +748,10 @@ TAG       Leu  L        STOP
 
 ### Systematic Range:
 
-**_Chlorophyceae_** ([Hayashi-Ishimaru _et al_. 1996](https://www.ncbi.nlm.nih.gov/pubmed/8662206). UAG is a sense codon in several chlorophycean mitochondria) and the chytridiomycete fungus **_Spizellomyces punctatus_** ([Laforest _et al_. 1997](https://www.ncbi.nlm.nih.gov/pubmed/9016605). Mitochondrial tRNAs in the lower fungus _Spizellomyces punctatus_: tRNA editing and UAG 'stop' codons recognized as leucine).
+**_Chlorophyceae_** ([Hayashi-Ishimaru _et al_. 1996](https://www.ncbi.nlm.nih.gov/pubmed/8662206).    
+UAG is a sense codon in several chlorophycean mitochondria) and the chytridiomycete fungus    
+**_Spizellomyces punctatus_** ([Laforest _et al_. 1997](https://www.ncbi.nlm.nih.gov/pubmed/9016605).    
+Mitochondrial tRNAs in the lower fungus _Spizellomyces punctatus_: tRNA editing and UAG 'stop' codons recognized as leucine).    
 
 ## 21\. Trematode Mitochondrial Code (transl_table=21) <a name="21"></a>
 
@@ -793,7 +798,8 @@ AAA       Asn  N        Lys
 
 ### Systematic Range:
 
-**_Trematoda_**: [Ohama, T, S. Osawa, K. Watanabe, T.H. Jukes, 1990. J. Molec Evol. 30](https://www.ncbi.nlm.nih.gov/pubmed/2111847)   [Garey, J.R. and D.R. Wolstenholme, 1989. J. Molec. Evol. 28: 374-387 329-332.](https://www.ncbi.nlm.nih.gov/pubmed/2545889)
+**_Trematoda_**: [Ohama, T, S. Osawa, K. Watanabe, T.H. Jukes, 1990. J. Molec Evol. 30](https://www.ncbi.nlm.nih.gov/pubmed/2111847)    
+[Garey, J.R. and D.R. Wolstenholme, 1989. J. Molec. Evol. 28: 374-387 329-332.](https://www.ncbi.nlm.nih.gov/pubmed/2545889)    
 
 ## 22\. Scenedesmus obliquus Mitochondrial Code (transl_table=22) <a name="22"></a>
 
@@ -871,9 +877,9 @@ GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly
 GTG V Val i    GCG A Ala      GAG E Glu      GGG G Gly  
 ```
 
-This code has been created for the mitochondrial genome of the labyrinthulid _Thraustochytrium aureum_ sequenced by the The Organelle Genome Megasequencing Program ([OGMP](http://megasun.bch.umontreal.ca/ogmpproj.html)).
+This code has been created for the mitochondrial genome of the labyrinthulid _Thraustochytrium aureum_ sequenced by The Organelle Genome Megasequencing Program ([OGMP](http://megasun.bch.umontreal.ca/ogmpproj.html)).
 
-It is the similar to the bacterial code ([trans_table 11](#11)) but it contains an additional stop codon (TTA) and also has a different set of start codons.
+It is the similar to the bacterial code ([transl_table 11](#11)) but it contains an additional stop codon (TTA) and also has a different set of start codons.
 
 ## 24\. Rhabdopleuridae Mitochondrial Code (transl_table=24) <a name="24"></a>
 
@@ -916,9 +922,12 @@ AGG       Lys K          Arg  R
 UGA       Trp W          STOP *
 ```
 
-Code 24 has been created for the mitochondrial genome of
-*Rhabdopleura compacta* (*Pterobranchia*). The *Pterobranchia* are one of the two groups in the *Hemichordata* which together with the *Echinodermata* and *Chordata* form the three major lineages of deuterostomes. AUA translates to isoleucine in *Rhabdopleura* as it does in the *Echinodermata* and *Enteropneusta* while AUA encodes methionine in the *Chordata*. The assignment of AGG to Lys is not found elsewhere in deuterostome mitochondria but it occurs in some taxa of *Arthropoda* ([Perseke *et al*. 2011](https://www.ncbi.nlm.nih.gov/pubmed/21599892)). Code 24 shares
-with many other mitochondrial codes the reassignment of the UGA STOP to Trp, and AGG and AGA to an amino acid other than Arg. The initiation codons in *Rhabdopleura compacta* are ATG and GTG ([Perseke *et al*. 2011](https://www.ncbi.nlm.nih.gov/pubmed/21599892)).
+Code 24 has been created for the mitochondrial genome of _Rhabdopleura compacta_ (_Pterobranchia_).    
+The _Pterobranchia_ are one of the two groups in the _Hemichordata_ which together with the _Echinodermata_ and _Chordata_ form the three major lineages of deuterostomes.    
+AUA translates to isoleucine in _Rhabdopleura_ as it does in the _Echinodermata_ and _Enteropneusta_ while AUA encodes methionine in the _Chordata_.    
+The assignment of AGG to Lys is not found elsewhere in deuterostome mitochondria but it occurs in some taxa of _Arthropoda_ ([Perseke _et al_. 2011](https://www.ncbi.nlm.nih.gov/pubmed/21599892)).    
+Code 24 shares with many other mitochondrial codes the reassignment of the UGA STOP to Trp, and AGG and AGA to an amino acid other than Arg.    
+The initiation codons in _Rhabdopleura compacta_ are ATG and GTG ([Perseke _et al_. 2011](https://www.ncbi.nlm.nih.gov/pubmed/21599892)).
 
 ## 25\. Candidate Division SR1 and Gracilibacteria Code (transl_table=25) <a name="25"></a>
 
@@ -956,7 +965,7 @@ GTG V Val i    GCG A Ala      GAG E Glu      GGG G Gly
 
 ``` 
           Code 25        Standard
-UGA       Gly            STOP *
+UGA       Gly            STOP
 ```
 
 ### Initiation Codons:
@@ -969,7 +978,7 @@ AUG, GUG, UUG
 
 ### Comments:
 
-Code 25 is used in two groups of (so far) uncultivated _Bacteria_ found in marine and fresh-water environment and in the intestines and oral cavities of mammals among others. The difference to the standard and the bacterial code is that UGA represents an additional glycine codon and does not code for termination ([Campbell _et al_. 2013](https://www.ncbi.nlm.nih.gov/pubmed/23509275)).
+Code 25 is used in two groups of (so far) uncultivated Bacteria found in marine and fresh-water environment and in the intestines and oral cavities of mammals among others. The difference to the standard and the bacterial code is that UGA represents an additional glycine codon and does not code for termination ([Campbell _et al_. 2013](https://www.ncbi.nlm.nih.gov/pubmed/23509275)).
 
 ## 26\. Pachysolen tannophilus Nuclear Code (transl_table=26) <a name="26"></a>
 
@@ -1016,11 +1025,14 @@ AUG, GUG, UUG
 
 ### Systematic Range:
 
-**_Pachysolen tannophilus_**
+species in the genera _Nakazawaea_, _Pachysolen_ and _Peterozyma_
 
 ### Comments:
 
-Code 26 is used so far only for the ascomycete fungus _Pachysolen tannophilus_. The only difference to the standard code is the translation of CUG as alanine (as opposed to leucine). ([Muhlhausen _et al_. 2016](https://www.ncbi.nlm.nih.gov/pubmed/27197221)).
+Code 26 differs from the standard code only the translation of CUG as alanine (as opposed to leucine) ([Muhlhausen _et al_. 2016](https://www.ncbi.nlm.nih.gov/pubmed/27197221)).    
+It is also similar to code 12 that translates CUG as serine.    
+Code 26 is used by the CUG-Ala clade that include a small number of yeast genera: _Nakazawaea_, _Pachysolen_ and _Peterozyma_ ([Krassowski _et al_. 2018](https://www.ncbi.nlm.nih.gov/pubmed/29760453)).
+
 
 ## 27\. Karyorelict Nuclear Code (transl_table=27) <a name="27"></a>
 
@@ -1069,11 +1081,12 @@ AUG
 
 ### Systematic Range:
 
-**the karyorelictid ciliate Parduczia**
+**the karyorelictid ciliate _Parduczia_**
 
 ### Comments:
 
-Code 27 reassigns the UAG and UAA stops to glutamine while UGA can function as either STOP or tryptophan. Code 27 is used for the karyorelictid ciliate Parduczia sp. ([Swart et al. 2016](https://www.ncbi.nlm.nih.gov/pubmed/27426948)).
+Code 27 reassigns the UAG and UAA stops to glutamine while UGA can function as either STOP or tryptophan.    
+Code 27 is used for the karyorelictid ciliate _Parduczia_ sp. ([Swart _et al_. 2016](https://www.ncbi.nlm.nih.gov/pubmed/27426948)).
 
 ## 28\. Condylostoma Nuclear Code (transl_table=28) <a name="28"></a>
 
@@ -1109,7 +1122,7 @@ GTG V Val      GCG A Ala      GAG E Glu      GGG G Gly
 
 ### Differences from the Standard Code:
 
-``` 
+```
           Code 28          Standard
 UAA      Gln or STOP        STOP
 UAG      Gln or STOP        STOP
@@ -1122,15 +1135,16 @@ AUG
 
 ### Systematic Range:
 
-**_Condylostoma magnum_**
+_Condylostoma magnum_
 
 ### Comments:
 
-Code 28 is used in Condylostoma magnum. The difference to the standard code is that the three stop codons can also be translated as glutamine (UAA, UAG) or tryptophan (UGA), respectively([Swart et al. 2016](https://www.ncbi.nlm.nih.gov/pubmed/27426948), [Heaphy et al. 2016](https://www.ncbi.nlm.nih.gov/pubmed/27501944)).
+Code 28 is used in _Condylostoma magnum_.    
+The difference to the standard code is that the three stop codons can also be translated as glutamine (UAA, UAG) or tryptophan (UGA), respectively ([Swart _et al_. 2016](https://www.ncbi.nlm.nih.gov/pubmed/27426948), [Heaphy _et al_. 2016](https://www.ncbi.nlm.nih.gov/pubmed/27501944)).    
 
 ## 29\. Mesodinium Nuclear Code (transl_table=29) <a name="29"></a>
 
-``` 
+```
     AAs  = FFLLSSSSYYYYCC*WLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG
   Starts = --------------*--------------------M----------------------------
   Base1  = TTTTTTTTTTTTTTTTCCCCCCCCCCCCCCCCAAAAAAAAAAAAAAAAGGGGGGGGGGGGGGGG
@@ -1162,7 +1176,7 @@ GTG V Val      GCG A Ala      GAG E Glu      GGG G Gly
 
 ### Differences from the Standard Code:
 
-``` 
+```
           Code 29        Standard
 UAA       Tyr            STOP
 UAG       Tyr            STOP
@@ -1174,11 +1188,12 @@ AUG
 
 ### Systematic Range:
 
-**the mesodiniid ciliates Mesodinium and Myrionecta**
+the mesodiniid ciliates _Mesodinium_ and _Myrionecta_
 
 ### Comments:
 
-Code 29 is used for the haptorid ciliates Mesodinium and Myrionecta. It differs from the standard code in reassigning the stop codons UAA and UAG to Tyrosine. ([Heaphy et al. 2016](https://www.ncbi.nlm.nih.gov/pubmed/27501944)).
+Code 29 is used for the haptorid ciliates _Mesodinium_ and _Myrionecta_.    
+It differs from the standard code in reassigning the stop codons UAA and UAG to Tyrosine ([Heaphy _et al_. 2016](https://www.ncbi.nlm.nih.gov/pubmed/27501944)).
 
 ## 30\. Peritrich Nuclear Code (transl_table=30) <a name="30"></a>
 
@@ -1214,7 +1229,7 @@ GTG V Val      GCG A Ala      GAG E Glu      GGG G Gly
 
 ### Differences from the Standard Code:
 
-``` sample
+```
           Code 30        Standard
 UAA       Glu            STOP
 UAG       Glu            STOP
@@ -1226,11 +1241,12 @@ AUG
 
 ### Systematic Range:
 
-**the peritrich ciliate Carchesium**
+the peritrich ciliate _Carchesium_
 
 ### Comments:
 
-Code 30 is used in the peritrich ciliate Carchesium. The stop codons UAA and UAG are reassigned to Glutamine. ([Sanchez-Silva et al. 2003](https://www.ncbi.nlm.nih.gov/pubmed/12620196)).
+Code 30 is used in the peritrich ciliate _Carchesium_.    
+The stop codons UAA and UAG are reassigned to Glutamine. ([Sanchez-Silva _et al_. 2003](https://www.ncbi.nlm.nih.gov/pubmed/12620196)).
 
 ## 31\. Blastocrithidia Nuclear Code (transl_table=31) <a name="31"></a>
 
@@ -1279,11 +1295,12 @@ AUG
 
 ### Systematic Range:
 
-**_Blastocrithidia_ sp.**
+_Blastocrithidia_ sp.
 
 ### Comments:
 
-Code 31 is used for the trypanosome Blastocrithidia sp. UGA encodes trytophan and UAG and UAA encode glutamate and also serve as termination codons. ([Zahonova et al. 2016](https://www.ncbi.nlm.nih.gov/pubmed/27593378)).
+Code 31 is used for the trypanosome _Blastocrithidia_ sp.    
+UGA encodes trytophan and UAG and UAA encode glutamate and also serve as termination codons ([Zahonova _et al_. 2016](https://www.ncbi.nlm.nih.gov/pubmed/27593378)).
 
 ## 33\. Cephalodiscidae Mitochondrial UAA-Tyr Code (transl_table=33) <a name="33"></a>
 
@@ -1329,9 +1346,8 @@ AGG  Lys         Arg
 
 ### Systematic Range:
 
-**_Cephalodiscidae_ (_Hemichordata_)**
+_Cephalodiscidae_ (_Hemichordata_)
 
 ### Comments:
 
-Code 33 is very similar to the mitochondrial code 24 for the _Rhabdopleuridae_, which also belong to the _Hemichordata_, except that it uses UAA for tyrosine rather than as a stop codon ([Li Y, Kocot KM, Tassia MG, Cannon JT, Bernt M, Halanych KM. Mitogenomics Reveals a Novel Genetic Code in Hemichordata. Genome Biol Evol. 2019 Jan 1;11(1):29-40.](https://www.ncbi.nlm.nih.gov/pubmed/30476024))
-
+Code 33 is very similar to the mitochondrial code 24 for the _Pterobranchia_, which also belong to the _Hemichordata_, except that it uses UAA for tyrosine rather than as a stop codon ([Li Y, Kocot KM, Tassia MG, Cannon JT, Bernt M, Halanych KM. Mitogenomics Reveals a Novel Genetic Code in Hemichordata. Genome Biol Evol. 2019 Jan 1;11(1):29-40.](https://www.ncbi.nlm.nih.gov/pubmed/30476024))
