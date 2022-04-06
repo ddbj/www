@@ -67,15 +67,6 @@ category: about
         </li>
     </ul> 
     <ul class="list">
-       <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/kawashima.jpg" title="川島武士"></p>
-        <div class="explanation">
-            <p class="name">川島 武士</p>
-            <p class="name">Takeshi Kawashima, PhD</p>
-            <p class="position">助教</p>
-            <p class="position">&nbsp;</p>
-        </div>
-        </li>
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/tanizawa.jpg" title="谷澤靖洋"></p>
             <div class="explanation">
@@ -223,7 +214,7 @@ category: about
             <div class="explanation">
                 <p class="name">時松 敏明</p>
                 <p class="name">Toshiaki Tokimatsu, PhD</p>
-                <p class="position">データ登録：NSSS</p>
+                <p class="position">データ登録：MetaboBank, NGS</p>
             </div>
             </li>
     </ul>
