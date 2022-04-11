@@ -67,15 +67,6 @@ category: about
         </li>
     </ul> 
     <ul class="list">
-       <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/kawashima.jpg" title="川島武士"></p>
-        <div class="explanation">
-            <p class="name">川島 武士</p>
-            <p class="name">Takeshi Kawashima, PhD</p>
-            <p class="position">助教</p>
-            <p class="position">&nbsp;</p>
-        </div>
-        </li>
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/tanizawa.jpg" title="谷澤靖洋"></p>
             <div class="explanation">
@@ -197,7 +188,7 @@ category: about
         <div class="explanation">
             <p class="name">杉田 里江</p>
             <p class="name">Rie Sugita</p>
-            <p class="position">登録データの修正/更新</p>
+            <p class="position">データ登録：NGS</p>
         </div>
         </li>
      </ul>  
@@ -223,7 +214,7 @@ category: about
             <div class="explanation">
                 <p class="name">時松 敏明</p>
                 <p class="name">Toshiaki Tokimatsu, PhD</p>
-                <p class="position">データ登録：NSSS</p>
+                <p class="position">データ登録：MetaboBank, NGS</p>
             </div>
             </li>
     </ul>
@@ -260,20 +251,20 @@ category: about
             <p class="name">Hideki Mochizuki</p>
         </div>
         </li>
-    </ul>
+    </ul>    
     <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/sugahara.jpg" title="菅原　海里"></p>
-        <div class="explanation">
-            <p class="name">菅原　海里</p>
-            <p class="name">Misato Sugahara</p>
-        </div>
-        </li>   
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/tsuzuki.jpg" title="鈴木　貴大"></p>
         <div class="explanation">
             <p class="name">鈴木　貴大</p>
             <p class="name">Takahiro Suzuki</p>
+        </div>
+        </li>
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/umeda.jpg" title="梅田 友貴"></p>
+        <div class="explanation">
+            <p class="name">梅田 友貴</p>
+            <p class="name">Tomoki UMEDA</p>
         </div>
         </li>
         <li class="staff">
@@ -292,7 +283,7 @@ category: about
             <p class="name">Masahiro Yoshida</p>
         </div>
         </li>   
-    </ul>   
+    </ul>
     </div>
     <!-- .wrapper -->
     <h2 id="system-administration">システム管理部門</h2>

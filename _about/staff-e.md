@@ -63,14 +63,6 @@ category: about
     </ul> 
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/kawashima.jpg" title="Takeshi Kawashima"></p>
-        <div class="explanation">
-            <p class="name">Takeshi Kawashima, PhD</p>
-            <p class="position">Assistant Professor</p>
-            <p class="position">&nbsp;</p>
-        </div>
-        </li>
-        <li class="staff">
             <p class="photo"><img src="/assets/images/staff/tanizawa.jpg" title="Yasuhiro Tanizawa, PhD"></p>
             <div class="explanation">
                 <p class="name">Yasuhiro Tanizawa, PhD</p>
@@ -178,7 +170,7 @@ category: about
         <p class="photo"><img src="/assets/images/staff/sugita.jpg" title="Rie Sugita"></p>
         <div class="explanation">
             <p class="name">Rie Sugita</p>
-            <p class="position">Data Updates/Correction</p>
+            <p class="position">Data Submission: NGS</p>
         </div>
         </li>
     </ul>  
@@ -201,7 +193,7 @@ category: about
             <p class="photo"><img src="/assets/images/staff/tokimatsu.jpg" title="Toshiaki Tokimatsu"></p>
             <div class="explanation">
                 <p class="name">Toshiaki Tokimatsu, PhD</p>
-                <p class="position">Data Submission: NSSS</p>
+                <p class="position">Data Submission: MetaboBank, NGS</p>
             </div>
             </li>
     </ul>
@@ -237,15 +229,15 @@ category: about
     </ul>
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/sugahara.jpg" title="Misato Sugahara"></p>
-        <div class="explanation">
-            <p class="name">Misato Sugahara</p>
-        </div>
-        </li>      
-        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/tsuzuki.jpg" title="Takahiro Suzuki"></p>
         <div class="explanation">
             <p class="name">Takahiro Suzuki</p>
+        </div>
+        </li>
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/umeda.jpg" title="Tomoki Umeda"></p>
+        <div class="explanation">
+            <p class="name">Tomoki Umeda</p>
         </div>
         </li>
         <li class="staff">
@@ -254,7 +246,7 @@ category: about
             <p class="name">Koji Watanabe</p>
         </div>
         </li>
-    </ul>  
+    </ul>
     <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yosida.jpg" title="Masahiro Yoshida"></p>
