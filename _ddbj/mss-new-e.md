@@ -204,7 +204,7 @@ c. Draft genome sequences of chromosomes from a eukaryotic isolate, and assemble
 - Uploading in MSS form    
 In the process of MSS application, you can upload the submission files in MSS form. Even if you cannot upload the submission files during the application, you can upload them later. You will find the link to upload files in the email that is sent from DDBJ just after the application.
 - Transferring by SFTP    
-If the total submission files exceed more than 100 M bytes in uncompressed size, we recommend that you use SFTP by using public/private key pair. In the case, see ["Creating account" section](#account) and prepare public/private key for SFTP connection.
+If the total submission files exceed more than 10 Gbytes in uncompressed size, we recommend that you use SFTP by using public/private key pair. In the case, see ["Creating account" section](#account) and prepare public/private key for SFTP connection.
 
 <div class="attention" markdown="1">
 ＜NOTE＞ Do not send submission files as email attachment unless there is some particular reason.
