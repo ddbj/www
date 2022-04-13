@@ -8,103 +8,161 @@ lang: ja
 ---
 
 <form method="get" action="">
-		<button id="all" type="button" name="all" value="all">List all sample attributes</button>
+    <button id="all" type="button" name="all" value="all">List all sample attributes</button>
 </form>
 <form id="sample_attr_form" method="get" action="">
   <div id="main_index" class="biosample_attr">
     <div id="sample_type">
-      <a href="/biosample/submission.html#Area_core-package" class="title">Sample type (Core Package)</a>
+      <a href="/biosample/submission.html#Sample-type" class="title">Sample type (Core Package)</a>
       <ul>
         <li>
-        <div class="radio"><input type="radio" id="Core_MIxS" name="Core" value="MIxS"></div> <!-- .radio --><label class="clearfix" for="MIxS"><a href="/biosample/submission.html#MIxS_Sample">Genome, metagenome or marker sequences (MIxS compliant)</a></label>
+        <div class="radio"><input type="radio" id="Core_Standard" name="Core" value="Standard"></div><label class="clearfix" for="Standard">Standard</label>
           <ul>
             <li>
-              <div class="radio"><input type="radio" id="MIMS.me" name="SampleType" value="MIMS.me"></div> <!-- .radio --><label class="clearfix" for="MIMS.me">Environmental/Metagenome Genomic Sequences <a href="/biosample/submission.html#Meta_Genomic_Sequences_Sample">(MIMS)</a></label>
+              <div class="radio"><input type="radio" id="SARS-CoV-2.cl" name="SampleType" value="SARS-CoV-2.cl"></div><label class="clearfix" for="SARS-CoV-2.cl">SARS-CoV-2: clinical or host-associated</label>
             </li>
             <li>
-              <div class="radio"><input type="radio" id="MIGS.ba" name="SampleType" value="MIGS.ba"></div> <!-- .radio --><label class="clearfix" for="MIGS.ba">Cultured Bacterial/Archaeal Genomic Sequences <a href="/biosample/submission.html#Genomic_Sequences_Sample">(MIGS)</a></label>
+              <div class="radio"><input type="radio" id="SARS-CoV-2.wwsurv" name="SampleType" value="SARS-CoV-2.wwsurv"></div><label class="clearfix" for="SARS-CoV-2.wwsurv">SARS-CoV-2: wastewater surveillance</label>
             </li>
             <li>
-              <div class="radio"><input type="radio" id="MIGS.eu" name="SampleType" value="MIGS.eu"></div> <!-- .radio --><label class="clearfix" for="MIGS.eu">Eukaryotic Genomic Sequences <a href="/biosample/submission.html#Genomic_Sequences_Sample">(MIGS)</a></label>
+              <div class="radio"><input type="radio" id="Microbe" name="SampleType" value="Microbe"></div><label class="clearfix" for="Microbe">Microbe</label>
             </li>
             <li>
-              <div class="radio"><input type="radio" id="MIGS.vi" name="SampleType" value="MIGS.vi"></div> <!-- .radio --><label class="clearfix" for="MIGS.vi">Viral Genomic Sequences <a href="/biosample/submission.html#Genomic_Sequences_Sample">(MIGS)</a></label>
+              <div class="radio"><input type="radio" id="Model.organism.animal" name="SampleType" value="Model.organism.animal"></div><label class="clearfix" for="Model.organism.animal">Model organism or animal</label>
             </li>
             <li>
-              <div class="radio"><input type="radio" id="MIMARKS.specimen" name="SampleType" value="MIMARKS.specimen"></div> <!-- .radio --><label class="clearfix" for="MIMARKS.specimen">Specimen Marker Sequences <a href="/biosample/submission.html#Marker_Sequences_Sample">(MIMARKS)</a></label>
+              <div class="radio"><input type="radio" id="Metagenome.environmental" name="SampleType" value="Metagenome.environmental"></div><label class="clearfix" for="Metagenome.environmental">Metagenome or environmental</label>
             </li>
             <li>
-              <div class="radio"><input type="radio" id="MIMARKS.survey" name="SampleType" value="MIMARKS.survey"></div> <!-- .radio --><label class="clearfix" for="MIMARKS.survey">Survey related Marker Sequences <a href="/biosample/submission.html#Marker_Sequences_Sample">(MIMARKS)</a></label>
+              <div class="radio"><input type="radio" id="Invertebrate" name="SampleType" value="Invertebrate"></div><label class="clearfix" for="Invertebrate">Invertebrate</label>
+            </li>
+            <li>
+              <div class="radio"><input type="radio" id="Human" name="SampleType" value="Human"></div><label class="clearfix" for="Human">Human</label>
+            </li>
+            <li>
+              <div class="radio"><input type="radio" id="Plant" name="SampleType" value="Plant"></div><label class="clearfix" for="Plant">Plant</label>
+            </li>
+            <li>
+              <div class="radio"><input type="radio" id="Virus" name="SampleType" value="Virus"></div><label class="clearfix" for="Virus">Virus</label>
+            </li>
+            <li>
+              <div class="radio"><input type="radio" id="Beta-lactamase" name="SampleType" value="Beta-lactamase"></div><label class="clearfix" for="Beta-lactamase">Beta-lactamase</label>
+            </li>
+            <li>
+              <div class="radio"><input type="radio" id="Omics" name="SampleType" value="Omics"></div><label class="clearfix" for="Omics">Omics</label>
             </li>
           </ul>
         </li>
         <li>
-          <div class="radio"><input type="radio" id="Core_FunctionalGenomics" name="Core" value="FunctionalGenomics"></div> <!-- .radio --><label class="clearfix" for="FunctionalGenomics"><a href="/biosample/submission.html#functional_genomics_samples">Functional genomics samples (e.g. transcriptome, epigenetics etc)</a></label>
+        <div class="radio"><input type="radio" id="Core_Pathogen" name="Core" value="Pathogen"></div><label class="clearfix" for="Pathogen">Pathogen</label>
+          <ul>
+            <li>
+              <div class="radio"><input type="radio" id="Pathogen.cl" name="SampleType" value="Pathogen.cl"></div><label class="clearfix" for="Pathogen.cl">Pathogen: clinical or host-associated</label>
+            </li>
+            <li>
+              <div class="radio"><input type="radio" id="Pathogen.env" name="SampleType" value="Pathogen.env"></div><label class="clearfix" for="Pathogen.env">Pathogen: environmental/food/other</label>
+            </li>
+          </ul>
         </li>
         <li>
-          <div class="radio"><input type="radio" id="Core_Generic" name="Core" value="Generic"></div> <!-- .radio --><label class="clearfix" for="Generic"><a href="/biosample/submission.html#General_Sample">Other samples (e.g. transcriptome, epigenetics etc)</a></label>
+        <div class="radio"><input type="radio" id="Core_MIxS" name="Core" value="MIxS"></div> <label class="clearfix" for="MIxS">Genome, metagenome or marker sequences (MIxS compliant)</label>
+          <ul>
+            <li>
+              <div class="radio"><input type="radio" id="MIGS.ba" name="SampleType" value="MIGS.ba"></div> <label class="clearfix" for="MIGS.ba">MIGS Cultured Bacterial/Archaeal Genomic Sequences (MIGS.ba)</label>
+            </li>
+            <li>
+              <div class="radio"><input type="radio" id="MIGS.eu" name="SampleType" value="MIGS.eu"></div> <label class="clearfix" for="MIGS.eu">Eukaryotic Genomic Sequences (MIGS.eu)</label>
+            </li>
+            <li>
+              <div class="radio"><input type="radio" id="MIGS.vi" name="SampleType" value="MIGS.vi"></div> <label class="clearfix" for="MIGS.vi">Viral Genomic Sequences (MIGS.vi)</label>
+            </li>
+            <li>
+              <div class="radio"><input type="radio" id="MIMS.me" name="SampleType" value="MIMS.me"></div> <label class="clearfix" for="MIMS.me">Environmental/Metagenome Genomic Sequences (MIMS.me)</label>
+            </li>
+            <li>
+              <div class="radio"><input type="radio" id="MIMAG" name="SampleType" value="MIMAG"></div> <label class="clearfix" for="MIMAG">Metagenome-assembled Genome Sequences (MIMAG)</label>
+            </li>
+            <li>
+              <div class="radio"><input type="radio" id="MISAG" name="SampleType" value="MISAG"></div> <label class="clearfix" for="MISAG">Single Amplified Genome Sequences (MISAG)</label>
+            </li>
+            <li>
+              <div class="radio"><input type="radio" id="MIMARKS.specimen" name="SampleType" value="MIMARKS.specimen"></div> <label class="clearfix" for="MIMARKS.specimen">Specimen Marker Sequences (MIMARKS.specimen)</label>
+            </li>
+            <li>
+              <div class="radio"><input type="radio" id="MIMARKS.survey" name="SampleType" value="MIMARKS.survey"></div> <label class="clearfix" for="MIMARKS.survey">Survey related Marker Sequences (MIMARKS.survey)</label>
+            </li>
+            <li>
+              <div class="radio"><input type="radio" id="MIUVIG" name="SampleType" value="MIUVIG"></div> <label class="clearfix" for="">Uncultivated Viral Genome Sequences (MIUVIG)</label>
+            </li>
+          </ul>
         </li>
       </ul>
-    </div> <!-- #sample_type -->
+    </div>
+    
     <div id="env_package">
-      <a href="/biosample/submission.html#Environmental_package" class="title">Environmental package (MIxS Sample)</a>
+      <a href="/biosample/submission.html#mixs" class="title">Environmental package (MIxS Sample)</a>
       <ul>
         <li>
-          <div class="radio"><input type="radio" id="No_package" name="Package" value="No_package"></div> <!-- .radio --><label class="clearfix" for="No_package">No package</label>
+          <div class="radio"><input type="radio" id="No_package" name="Package" value="No_package"></div> <label class="clearfix" for="No_package">No package</label>
         </li>
         <li>
-          <div class="radio"><input type="radio" id="MIGS/MIMS/MIMARKS.air" name="Package" value="MIGS/MIMS/MIMARKS.air"></div> <!-- .radio --><label class="clearfix" for="MIGS/MIMS/MIMARKS.air">air</label>
+          <div class="radio"><input type="radio" id="air" name="Package" value="air"></div> <label class="clearfix" for="air">air</label>
         </li>
         <li>
-          <div class="radio"><input type="radio" id="MIGS/MIMS/MIMARKS.host-associated" name="Package" value="MIGS/MIMS/MIMARKS.host-associated"></div> <!-- .radio --><label class="clearfix" for="MIGS/MIMS/MIMARKS.host-associated">host-associated</label>
+          <div class="radio"><input type="radio" id="built" name="Package" value="built"></div> <label class="clearfix" for="built">built</label>
         </li>
         <li>
-<div class="radio"><input type="radio" id="MIGS/MIMS/MIMARKS.human-associated" name="Package" value="MIGS/MIMS/MIMARKS.human-associated"></div> <!-- .radio --><label class="clearfix" for="MIGS/MIMS/MIMARKS.human-associated">human-associated</label>
+          <div class="radio"><input type="radio" id="host-associated" name="Package" value="host-associated"></div> <label class="clearfix" for="host-associated">host-associated</label>
+        </li>
+        <li>
+          <div class="radio"><input type="radio" id="human-associated" name="Package" value="human-associated"></div> <label class="clearfix" for="human-associated">human-associated</label>
+        </li>
+        <li>
+<div class="radio"><input type="radio" id="human-gut" name="Package" value="human-gut"></div> <label class="clearfix" for="human-gut">human-gut</label>
 </li>
         <li>
-<div class="radio"><input type="radio" id="MIGS/MIMS/MIMARKS.human-gut" name="Package" value="MIGS/MIMS/MIMARKS.human-gut"></div> <!-- .radio --><label class="clearfix" for="MIGS/MIMS/MIMARKS.human-gut">human-gut</label>
+<div class="radio"><input type="radio" id="human-oral" name="Package" value="human-oral"></div> <label class="clearfix" for="human-oral">human-oral</label>
 </li>
         <li>
-<div class="radio"><input type="radio" id="MIGS/MIMS/MIMARKS.human-oral" name="Package" value="MIGS/MIMS/MIMARKS.human-oral"></div> <!-- .radio --><label class="clearfix" for="MIGS/MIMS/MIMARKS.human-oral">human-oral</label>
+<div class="radio"><input type="radio" id="human-skin" name="Package" value="human-skin"></div> <label class="clearfix" for="human-skin">human-skin</label>
 </li>
         <li>
-<div class="radio"><input type="radio" id="MIGS/MIMS/MIMARKS.human-skin" name="Package" value="MIGS/MIMS/MIMARKS.human-skin"></div> <!-- .radio --><label class="clearfix" for="MIGS/MIMS/MIMARKS.human-skin">human-skin</label>
+<div class="radio"><input type="radio" id="human-vaginal" name="Package" value="human-vaginal"></div> <label class="clearfix" for="human-vaginal">human-vaginal</label>
 </li>
         <li>
-<div class="radio"><input type="radio" id="MIGS/MIMS/MIMARKS.human-vaginal" name="Package" value="MIGS/MIMS/MIMARKS.human-vaginal"></div> <!-- .radio --><label class="clearfix" for="MIGS/MIMS/MIMARKS.human-vaginal">human-vaginal</label>
+<div class="radio"><input type="radio" id="microbial" name="Package" value="microbial"></div> <label class="clearfix" for="microbial">microbial mat/biofilm</label>
 </li>
         <li>
-<div class="radio"><input type="radio" id="MIGS/MIMS/MIMARKS.microbial" name="Package" value="MIGS/MIMS/MIMARKS.microbial"></div> <!-- .radio --><label class="clearfix" for="MIGS/MIMS/MIMARKS.microbial">microbial mat/biofilm</label>
+<div class="radio"><input type="radio" id="miscellaneous" name="Package" value="miscellaneous"></div> <label class="clearfix" for="miscellaneous">miscellaneous or artificial</label>
 </li>
         <li>
-<div class="radio"><input type="radio" id="MIGS/MIMS/MIMARKS.miscellaneous" name="Package" value="MIGS/MIMS/MIMARKS.miscellaneous"></div> <!-- .radio --><label class="clearfix" for="MIGS/MIMS/MIMARKS.miscellaneous">miscellaneous or artificial</label>
+<div class="radio"><input type="radio" id="plant-associated" name="Package" value="plant-associated"></div> <label class="clearfix" for="plant-associated">plant-associated</label>
 </li>
         <li>
-<div class="radio"><input type="radio" id="MIGS/MIMS/MIMARKS.plant-associated" name="Package" value="MIGS/MIMS/MIMARKS.plant-associated"></div> <!-- .radio --><label class="clearfix" for="MIGS/MIMS/MIMARKS.plant-associated">plant-associated</label>
+<div class="radio"><input type="radio" id="sediment" name="Package" value="sediment"></div> <label class="clearfix" for="sediment">sediment</label>
 </li>
         <li>
-<div class="radio"><input type="radio" id="MIGS/MIMS/MIMARKS.sediment" name="Package" value="MIGS/MIMS/MIMARKS.sediment"></div> <!-- .radio --><label class="clearfix" for="MIGS/MIMS/MIMARKS.sediment">sediment</label>
+<div class="radio"><input type="radio" id="soil" name="Package" value="soil"></div> <label class="clearfix" for="soil">soil</label>
 </li>
         <li>
-<div class="radio"><input type="radio" id="MIGS/MIMS/MIMARKS.soil" name="Package" value="MIGS/MIMS/MIMARKS.soil"></div> <!-- .radio --><label class="clearfix" for="MIGS/MIMS/MIMARKS.soil">soil</label>
+<div class="radio"><input type="radio" id="wastewater" name="Package" value="wastewater"></div> <label class="clearfix" for="wastewater">wastewater/sludge</label>
 </li>
         <li>
-<div class="radio"><input type="radio" id="MIGS/MIMS/MIMARKS.wastewater" name="Package" value="MIGS/MIMS/MIMARKS.wastewater"></div> <!-- .radio --><label class="clearfix" for="MIGS/MIMS/MIMARKS.wastewater">wastewater/sludge</label>
-</li>
-        <li>
-<div class="radio"><input type="radio" id="MIGS/MIMS/MIMARKS.water" name="Package" value="MIGS/MIMS/MIMARKS.water"></div> <!-- .radio --><label class="clearfix" for="MIGS/MIMS/MIMARKS.water">water</label>
+<div class="radio"><input type="radio" id="water" name="Package" value="water"></div> <label class="clearfix" for="water">water</label>
 </li>
       </ul>
     </div>
 <!-- #env.package -->
   </div> <!-- #main_index -->
   <button id="definition" class="submit_button" type="button" name="definition" value="definition">DEFINITION</button>
-  <button id="download" class="submit_button" type="button" name="download" value="download">DOWNLOAD</button>
+  
 </form>
 
-<div class="bs_desc"><p>Sample type を選択し，DEFINITION ボタンで attiribute の定義と書式を見ることができます。DOWNLOAD ボタンで BioSample ワークシートをダウンロードすることができます。<a href="https://docs.google.com/spreadsheets/d/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/edit#gid=631330335">定義表</a>. 
-<a href="https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482">いくつかのパッケージの登録例</a>を公開しています。
-</p>
+パッケージを選択し，DEFINITION ボタンで attribute の定義と書式を見ることができます。[定義表](https://docs.google.com/spreadsheets/d/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/edit#gid=631330335)   
+*: 必須  
+**数字: 同一数字グループの中で少なくとも一つ必須（選択必須）  
+
+[いくつかのパッケージの登録例](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482)を公開しています。  
 
 <h3 id="data-type">データ種別毎のサンプル登録</h3>
 
@@ -115,3 +173,5 @@ lang: ja
   <li><a href="/ddbj/pseudohaplotype.html">Pseudohaplotype</a></li>
   <li><a href="/biosample/human-sample.html">Human Sample</a></li>
 </ul>
+
+<div class="bs_desc"></div>

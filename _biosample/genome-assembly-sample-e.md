@@ -11,8 +11,8 @@ lang: en
 
 A [DDBJ genome sequence](/ddbj/mss-e.html) should be linked to one BioProject and one BioSample. This constraint is set by INSDC to manage genome sequences.    
 Submit sample(s) used for genome assembly in following packages.
-- In the case of isolated, cultured prokaryotes: [Cultured Bacterial/Archaeal Genomic Sequences (MIGS)](/biosample/attribute-e.html)
-- In the case of eukaryotes: [Eukaryotic Genomic Sequences (MIGS)](/biosample/attribute-e.html)
+- In the case of isolated, cultured prokaryotes: [Cultured Bacterial/Archaeal Genomic Sequences (MIGS.ba)](/biosample/attribute-e.html)
+- In the case of eukaryotes: [Eukaryotic Genomic Sequences (MIGS.eu)](/biosample/attribute-e.html)
 
 Register a [locus tag prefix](/ddbj/locus_tag-e.html) necessary for an annotated genome submission by entering a prefix in the BioSample locus_tag_prefix attribute.
 
@@ -28,25 +28,7 @@ There are four tiers of [metagenome assembly](/ddbj/metagenome-assembly-e.html) 
 
 Submit a MAG from a particular organism to the [ENV division](/ddbj/env-e.html) of DDBJ.    
 
-Create a virtual BioSample for MAG submission. Use the ["Other samples"](/biosample/submission-e.html#General_Sample) package and use an organism name without uncultured (e.g., Methanosarcina thermophila). Following attributes are required besides the organism name. [Examples](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=272411182)
-
-Fixed attributes.
-- sample\_type: metagenomic assembly
-
-Attributes regarding sample origin.
-- metagenome\_source: xyz metagenome
-- isolate
-- isolation\_source
-
-Attributes regarding sample collection.
-- collection\_date
-- env\_biome
-- env\_feature
-- env\_material
-- geo\_loc\_name
-- lat\_lon
-
-Derivation source BioSample.
-- derived\_from: This biosample is a metagenomic assembly obtained from the xyz metagenome BioSample: SAMD00000001,SAMD00000002,SAMD00000010-SAMD00000015.
-
-A MAG also needs to be linked to a BioSample, create a derived BioSample for MAG. For example, a MAG [JAGEZF000000000.1](https://www.ncbi.nlm.nih.gov/nuccore/JAGEZF000000000.1) and a derived BioSample [SAMN18318557](https://www.ncbi.nlm.nih.gov/biosample/SAMN18318557).
+Create a virtual BioSample for MAG submission. 
+Use the [MIMAG](/biosample/submission.html#Sample-type) package and use an organism name without uncultured (e.g., Methanosarcina thermophila). 
+Indicate deriving source sample as "derived_from: SAMD00000001". [Examples](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=272411182)  
+A MAG also needs to be linked to a BioSample, create a derived BioSample for MAG.

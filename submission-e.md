@@ -61,7 +61,7 @@ Depending on your research purposes and data categories, you need to submit your
 We recommend you to submit your data via web form, [NSSS](/ddbj/web-submission-e.html). 
 In the following cases, please use [MSS](/ddbj/mss-e.html).
 
-* many number of sequences (greater than 500) 
+* many number of sequences (greater than 100) 
 * long sequences (greater than 500 kb)
 * complex submission containing many features (more than 30).
 * [WGS](/ddbj/wgs-e.html), [CON](/ddbj/con-e.html), [TSA](/ddbj/tsa-e.html), [TLS](/ddbj/tls-e.html), [HTC](/ddbj/htc-e.html), [HTG](/ddbj/htg-e.html), [EST](/ddbj/est-e.html), [GSS](/ddbj/gss-e.html) and STS submissions

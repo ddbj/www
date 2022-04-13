@@ -24,8 +24,8 @@ related_pages:
     を指します。
     また、データ間の引用も含みます。DDBJ フラットファイルにおいて
     [DBLINK 行](/ddbj/con.html#Dblink)に BioProject, BioSample, DRA
-    のアクセッション番号が引用記載されている場合、[compare
-    qualifier](/ddbj/qualifiers.html#compare)、[PRIMARY
+    のアクセッション番号が引用記載されている場合、[/inference
+    qualifier](/ddbj/qualifiers.html#inference)、[PRIMARY
     行](/ddbj/tsa.html#Primary)、[CONTIG 行](/ddbj/con.html#Contig)で
     DDBJ のアクセッション番号が参照されていた場合、DRA メタデータとして
     BioProject, BioSample が引用される場合のすべてが該当します。

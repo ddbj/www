@@ -14,7 +14,7 @@ lang: ja
 - [D-way 登録アカウント](https://ddbj.nig.ac.jp/D-way/)を作成
 - [公開鍵と center nameをアカウントに登録](/account.html#enable-dra-submission-in-account)しGEA登録を可能に
 
-### 2. BioProject、BioSample と Sequence Read Archive(DRA)に登録  {#bioproject-biosample}
+### 2. BioProject、BioSample と Sequence Read Archive (DRA) に登録  {#bioproject-biosample}
 
 #### [BioProject](/bioproject/submission.html)  {#BioProject}
 
@@ -29,6 +29,10 @@ lang: ja
 - 生シークエンスリードとアライメント
 
 <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">メタデータをタブ区切りテキストファイルで登録できます
+
+#### [DDBJ](/ddbj/index.html) {#DDBJ}
+
+- 解析に使ったリファレンス配列が INSDC に登録されていない場合、[ゲノム配列](/ddbj/genome.html)や[transcriptome shotgun assembly](/ddbj/tsa.html) を DDBJ に登録します。
 
 ### 3. 解析済みデータファイルをアップロード  {#upload}
 

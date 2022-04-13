@@ -87,6 +87,7 @@ Definition
 
 Value format
 : [&lt;institution_code&gt;:[&lt;collection_code&gt;:]]&lt;material_id&gt;    
+See also [Identifiers](/ddbj/identifiers-e.html).    
 
 Example
 : For Caenorhabditis stock centre 
@@ -166,6 +167,7 @@ This qualifier should be used only when the splice event is indicated by the "jo
 
 Definition  
 : clone from which the sequence was obtained    
+See also [Identifiers](/ddbj/identifiers-e.html).    
 
 Value format
 : &lt;text&gt;, excluding double quotation mark (")    
@@ -232,7 +234,7 @@ YYYY-MM-DDThh:mmZ/YYYY-MM-DDThh:mmZ
     
 'YYYY' is a four-digit value representing the year.    
 'MM' is a two-digit value representing the month (01 to 12) .    
-'DD' is a two-digit value representing the day of the month (01 to 31) .    
+'DD' is a two-digit value representing the day of the month (01 to 31).    
 'hh' is a two-digit value representing the hour of the day (00 to 23).    
 'mm' is a two-digit value representing the minute of the hour (00 to 59).    
 'ss' is a two-digit value representing the second of the hour (00 to 59).    
@@ -250,8 +252,7 @@ Example
 1952-10-21T11:43Z/1952-10-21T17:43Z</pre>
 
 Comment
-: Collection dates that are specified to at least the month, day, and year (YYYY-MM-DD) are strongly encouraged.    
-    
+: Collection dates that are specified to at least the day, month, and year (YYYY-MM-DD) are strongly encouraged.    
 Though INSDC still keep and accept old value formats that make use of 'Mmm' (month abbreviations), such as "21-Oct-1952", DDBJ no longer accepts new data submissions with old value formats of collection_date.    
 
 
@@ -288,6 +289,7 @@ Example
 
 Definition
 : institution_code and identifier for the culture from which the nucleic acid sequence was obtained, with optional collection code.    
+See also [Identifiers](/ddbj/identifiers-e.html).    
 
 Value format
 : &lt;institution_code&gt;:[&lt;collection_code&gt;:]&lt;culture_id&gt;    
@@ -569,7 +571,9 @@ Example
 ### /haplotype<a name="haplotype"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#haplotype)</span>
 
 Definition  
-: name for a combination of alleles that are linked together on the same physical chromosome. In the absence of recombination, each haplotype is inherited as a unit, and may be used to track gene flow in populations.    
+: name for a combination of alleles that are linked together on the same physical chromosome.    
+In the absence of recombination, each haplotype is inherited as a unit, and may be used to track gene flow in populations.    
+See also [Identifiers](/ddbj/identifiers-e.html).    
 
 Value format
 : &lt;text>, excluding double quotation mark (")    
@@ -655,6 +659,7 @@ Comment
 
 Definition
 : individual isolate from which the sequence was obtained    
+See also [Identifiers](/ddbj/identifiers-e.html).    
 
 Value format
 : &lt;text&gt;, excluding double quotation mark (")    
@@ -705,6 +710,7 @@ Example
 
 Comment
 : Please describe the figure below the decimal point by not minute and second but the decimal.    
+This qualifier can include the 8th decimal places.  
 
 
 ### /linkage_evidence<a name="linkage_evidence"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#linkage_evidence)</span>
@@ -1334,6 +1340,7 @@ dioecious</pre>
 
 Definition
 : identifier for the specimen (a part or an individual of a typical animal or plant) from which the sequence was obtained    
+See also [Identifiers](/ddbj/identifiers-e.html).    
 
 Value format
 : [&lt;institution_code&gt;:[&lt;collection_code&gt;:]]&lt;specimen_id&gt;    
@@ -1357,6 +1364,7 @@ Comment
 
 Definition  
 : strain from which the sequence was obtained     
+See also [Identifiers](/ddbj/identifiers-e.html).    
 
 Value format
 : &lt;text>, excluding double quotation mark (")    
@@ -1381,6 +1389,7 @@ Example
 
 Definition
 : unique identifier within whole of the set version for [WGS](/ddbj/wgs-e.html), [TSA](/ddbj/tsa-e.html), [TLS](/ddbj/tls-e.html) and [CON](/ddbj/con-e.html)    
+See also [Identifiers](/ddbj/identifiers-e.html).    
 
 Value format
 : &lt;text&gt;, excluding double quotation ("), vertical bar (\|), equal (=), greater than (&gt;),    
@@ -1407,6 +1416,7 @@ Example
 
 Definition
 : sub_strain from which sequence was obtained. name or identifier of a genetically or otherwise modified strain from which sequence was obtained, derived from a parental strain (which should be annotated in the /[strain](#strain) qualifier).    
+See also [Identifiers](/ddbj/identifiers-e.html).    
 
 Value format
 : &lt;text&gt;, excluding double quotation mark (")    

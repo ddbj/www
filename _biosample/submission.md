@@ -55,18 +55,11 @@ BioSample に登録されたサンプルの一部は、多くの実験で共通�
 
 BioSample では広く使われているサンプルが事前に BioSample にカタログ化されており、すぐに引用できるようになっています。これは、登録者が新しい実験データを DDBJ/EBI/NCBI に登録する度に、汎用的なサンプルを毎回 BioSample に登録しなくても済むようにするためです。 現在、リファレンスバイオサンプルには [ATCC](http://www.atcc.org/) と [Coriell](http://ccr.coriell.org/) が含まれています。
 
-
 ### サンプルの属性 {#sample-attributes}
 
 BioSample レコードを構成する主要部分は「サンプル属性」です。属性にはセルタイプ、採取地や表現型などの情報を記載することができ、対象となるサンプルを定義します。 BioSample の属性は構造化された「属性名:値」 (name:value) の組として表現されます。例) tissue:liver
 
-BioSample は属性名にコントロールされた語句 ("辞書") を使うことをサポートしています。
-
-DDBJ BioSample に実装された最初の辞書は [Genomics Standards Consortium](https://gensc.org/) によって作成されたゲノム、メタゲノム、ターゲットローカスの記載を標準化するために最低限必要な情報を定めた [MIxS](https://gensc.org/mixs/) チェックリストです。
-
-MIxS チェックリストについては Nature Biotechnology 29, 415–420 (2011) \| doi: 10.1038/nbt.1823(PMID:[21552244](https://www.ncbi.nlm.nih.gov/pubmed/21552244) ) を参照してください。
-
-{% include image.html url="books/mixs.jpg" caption="MIxS チェックリスト" class="w450" %}
+BioSample は属性名にコントロールされた語句 ("辞書") を使うことをサポートしており、サンプル種別に応じた属性セットをパッケージとして提供しています。  
 
 ### 生物名  {#organism}
 
@@ -102,12 +95,10 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
 [First name](#BioSample_First_name)<span class="red">\*</span><a name="BioSample_First_name"></a>  
 : 登録者の first name。
 
-<!-- end list -->
 
 [Last name](#BioSample_Last_name)<span class="red">\*</span><a name="BioSample_Last_name"></a>  
 : 登録者の last name。
 
-<!-- end list -->
 
 [E-mail](#BioSample_E-mail)<span class="red">\*</span><a name="BioSample_E-mail"></a>  
 : E-mail アドレス。所属する組織ドメインのメールアドレスを指定してください。
@@ -117,12 +108,10 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
 [Organization](#Organization)<a name="Organization"></a>  
 : コンタクトパーソンが所属する組織。
 
-<!-- end list -->
 
 [Submitting organization](#BioSample_Submitting_organization)<span class="red">\*</span><a name="BioSample_Submitting_organization"></a>  
 : 組織のフルネーム。
 
-<!-- end list -->
 
 [Submitting organization URL](#BioSample_Submitting_organization_URL)<a name="BioSample_Submitting_organization_URL"></a>  
 : 登録者が所属する組織の URL。
@@ -134,7 +123,6 @@ BioSample レコードに薬剤感受性表（アンチバイオグラム、Anti
 [Release](#BioSample_Release)<a name="BioSample_Release"></a>  
 : 登録したサンプルは査定された後、公開されます。
 
-<!-- end list -->
 
 [Hold](#BioSample_Hold)<a name="BioSample_Hold"></a>  
 : この BioSample ID を引用している DDBJ、DRA、GEA レコードが公開されると同時に公開されます。この BioSample ID を引用している非公開の DDBJ レコードが公開されることはありません。
@@ -146,98 +134,77 @@ FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
 [External Links](#Link)<a name="Link"></a>  
 : サンプルに直接関連するリソースの URL とそれに付けるラベル (表示名)。
 
-<!-- end list -->
 
 [Link description](#Link_description)<a name="Link_description"></a>  
 : サンプルに関連するウェブサイトの表示名。
 
-<!-- end list -->
 
 [URL](#BioSample_URL)<a name="BioSample_URL"></a>  
 : ウェブサイトの URL。
 
 ### Sample type  {#Sample-type}
 
-#### Core Package  {#Area_core-package}
+#### Standard {#standard}
 
-[Genome, metagenome or marker sequences (MIxS compliant)](#MIxS_Sample)<a name="MIxS_Sample"></a>  
-: ゲノム、メタゲノムやマーカー配列の場合に使用します。ゲノム、メタゲノムやマーカー配列が由来するサンプルの記載方法を標準化するため Genome Standards Consortium (GSC) が策定した属性が使われます。[MIxS](http://wiki.gensc.org/index.php?title=MIxS) が定めた必須属性があるかどうかで [MIxS](http://wiki.gensc.org/index.php?title=MIxS) を満たしているかどうかが検証されます。MIxS についての詳細は [GSC ウェブサイト](http://wiki.gensc.org/index.php?title=MIxS) をご覧ください。
+[MIxS](#mixs) パッケージの使用が適切ではないサンプルの場合、生物種・サンプル・データ種別に応じた Standard パッケージを使用します。  
 
-<!-- end list -->
+* SARS-CoV-2: clinical or host-associated - 公衆衛生に関わる SARS-CoV-2 サンプル用。
+SARS-CoV-2 ケースの迅速な解析と追跡のための有用な必須属性を含みます。
+* SARS-CoV-2: wastewater surveillance - 公衆衛生に関わる SARS-CoV-2 廃水モニターサンプル用。
+SARS-CoV-2 ケースの迅速な解析と追跡のための有用な必須属性を含みます。
+* Microbe - MIxS、Pathogen もしくは Virus パッケージの使用が適切ではない、バクテリアや単細胞微生物サンプル用。
+* Model organism or animal - マウス、ショウジョウバエや線虫といったモデル生物と動物サンプル用。
+* Metagenome or environmental - MIxS パッケージの使用が適切ではないメタゲノムや環境サンプル用。
+* Invertebrate - 無脊椎動物サンプル用。
+* Human - 注意: プライバシー侵害の恐れのないヒトサンプルにのみ使用してください。登録者の責任において、適用される法律や指針に従い、由来個人を直接特定できるような情報を取り除いてください。データを保護する必要がある場合、アクセス制限の仕組みを備えた [Japanese Genotype-phenotype Archive (JGA)](/jga/index-e.html) にヒトデータを登録してください。ヒトから単離されたサンプルには Pathogen、Microbe もしくは適切な MIxS パッケージを使用してください。
+* Plant - 植物や植物由来の細胞株サンプル用。
+* Viral - 病気に直接関係しないウイルスサンプル。病原ウイルスには Pathogen: clinical or host-associated パッケージを使います。
+* Beta-lactamase - 抗生物質耐性データを持つ beta-lactamase 遺伝子の形質転換体サンプル用。
+* Omics - Genomic Expression Archive (GEA) 機能ゲノミクスデータと MetaboBank メタボロミクスデータ登録用。
 
-[Functional genomics samples (e.g. transcriptome, epigenetics etc)](#functional_genomics_samples)<a name="functional_genomics_samples"></a>  
-: 遺伝子発現、遺伝子発現制御、エピジェネティクスやゲノム変異解析等の機能ゲノミクスデータを受け付けている [Genomic Expression Archive (GEA)](/gea/index.html) への登録のためのパッケージです。機能ゲノミクス実験で頻出するサンプル属性から構成されています。
+#### Pathogen {#pathogen}
 
-<!-- end list -->
+公衆衛生に関わる病原菌サンプルに使用します。   
+* Pathogen: clinical or host-associated - 臨床検体もしくは宿主から採取された病原菌サンプル用
+* Pathogen: environmental/food/other - 環境/食品/その他の病原菌サンプル用
 
-[Other samples (e.g. transcriptome, epigenetics etc)](#General_Sample)<a name="General_Sample"></a>  
-: transcriptome, epigenetics など、どのようなサンプルタイプにも使用することができます。一般的な属性と登録者が作成するカスタム属性で記述されます。
+#### MIxS  {#mixs}
 
-#### MIxS  {#Area_mixs}
+* Cultured Bacterial/Archaeal Genomic Sequences (MIGS.ba) - 培養されたバクテリアもしくは古細菌のゲノム配列用。生物種の系統は [Bacteria](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=2) もしくは [Archaea](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=2157) である必要があります。
+* Eukaryotic Genomic Sequences (MIGS.eu) - 真核生物のゲノム配列用。生物種の系統は [Eukaryota](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=2759) である必要があります。
+* Viral Genomic Sequences (MIGS.vi) - ウイルスのゲノム配列用。生物種の系統は [Viruses](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=10239) である必要があります。
+* Environmental/Metagenome Genomic Sequences (MIMS.me) - 環境サンプル由来の配列もしくはメタゲノム配列用。生物名は [unclassified sequences](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908) 配下の 'metagenome' で終わる名前を使います。
+* Metagenome-assembled Genome Sequences (MIMAG) - 解析ツールによりメタゲノムデータセットから再構成した個別の生物種のメタゲノムアセンブリ配列用。生物名には 'metagenome' を含んだ名前を使うことはできません。ウイルスゲノムには MIUVIG パッケージを使用してください。
+* Single Amplified Genome Sequences (MISAG) - 単細胞を単離し、増幅した全ゲノムシークエンスを解析した配列用。生物名には 'metagenome' を含んだ名前を使うことはできません。
+* Specimen Marker Sequences (MIMARKS.specimen) - 標本サンプルの 16S, 18S, 23S, 28S rRNA もしくは COI マーカー遺伝子配列用。生物名には 'metagenome' を含んだ名前を使うことはできません。
+* Survey-related Marker Sequences (MIMARKS.survey) - 生物の培養や同定を経ることなく環境サンプルから直接解析された 16S, 18S, 23S, 28S rRNA もしくは COI マーカー遺伝子配列用。生物名は [unclassified sequences](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908) 配下の 'metagenome' で終わる名前を使います。
+* Uncultivated Viral Genome Sequences (MIUVIG) - メタゲノムもしくは metatranscriptome データセット中で同定された未培養ウイルスゲノム配列用。生物種のｊ系統は [Viruses](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=10239) である必要があります。
 
-[(Meta)Genomic Sequences Sample (MIMS)](#Meta_Genomic_Sequences_Sample)<a name="Meta_Genomic_Sequences_Sample"></a>
+#### Environmental package  {#environmental-package}
 
-|---|
-| Environmental/Metagenome Genomic Sequences |
+MIxS 環境・メタゲノムサンプルの場合、以下の環境パッケージから適切なものを選びます。パッケージ毎に必要とされる属性が追加されます。  
+MIMS.me と MIMARKS.survey のときは No package を選択できません。  
 
-[環境サンプルの説明](/ddbj/env.html)もご参照ください。
-
-<!-- end list -->
-
-[Genomic Sequences Sample (MIGS)](#Genomic_Sequences_Sample)<a name="Genomic_Sequences_Sample"></a>
-
-|---|
-| Cultured Bacterial/Archaeal Genomic Sequences |
-| Eukaryotic Genomic Sequences                  |
-| Viral Genomic Sequences                       |
-
-特定宿主から確実に回収できる内部共生生物、多くの cyanobacteria のように容易に同定可能であるが培養ができない生物、純粋培養は不可能でも罹患植物から確実に回収できる phytoplasmas といった対象は環境サンプルとは扱いません。"Cultured Bacterial/Archaeal", "Eukaryotic", "Viral" のいずれかを選択します
-
-<!-- end list -->
-
-[Marker Sequences Sample (MIMARKS)](#Marker_Sequences_Sample)<a name="Marker_Sequences_Sample"></a>
-
-|---|
-| Specimen Marker Sequences       |
-| Survey related Marker Sequences |
-
-MIMARKS specimen: for marker gene (e.g., COI) sequences obtained from any material identifiable by means of specimens
-
-MIMARKS-specimen は培養した、あるいは同定可能な標本から得られた marker gene に対する contextual data に適用します。
-
-MIMARKS survey: for uncultured diversity marker gene (e.g., 16S rRNA, 18S rRNA, nif, amoA, rpo) surveys
-
-MIMARKS-survey は分離培養や生物種を同定せず、環境から直接得られた marker gene に対する contextual data に適用できます。
-
-#### Environmental package  {#Area_environmental-package}
-
-[Environmental package (MIxS Sample)](#Environmental_package)<a name="Environmental_package"></a>  
-: 以下のパッケージから適切なものを選びます。パッケージ毎に必要とされる属性が追加されます。  
-<span class="red">"Environmental/Metagenome Genomic Sequences" と "Survey related Marker Sequences" のときは No package を選択できません。</span>
-
-|---|
-| No package                  |
-| air                         |
-| host-associated             |
-| human-associated            |
-| human-gut                   |
-| human-oral                  |
-| human-skin                  |
-| human-vaginal               |
-| microbial mat/biofilm       |
-| miscellaneous or artificial |
-| plant-associated            |
-| sediment                    |
-| soil                        |
-| wastewater/sludge           |
-| water                       |
+* air
+* built
+* host-associated
+* human-associated
+* human-gut
+* human-oral
+* human-skin
+* human-vaginal
+* microbial
+* miscellaneous
+* plant-associated
+* sediment
+* soil
+* wastewater
+* water
 
 ### Attributes  {#Attributes}
 
 [Sample attributes](#Sample_attributes)<a name="Sample_attributes"></a>  
 : モデルごとにカスタマイズされた BioSample ワークシートをダウンロードします。 ワークシートはタブ区切りテキストファイルでスプレッドシートプログラムやテキストエディタで開くことができます。属性を記載したテキストファイルをアップロードすると validator により内容がチェックされます。 [Warning や Error メッセージ](/biosample/validation.html) が表示された場合は必要に応じて内容を修正してから再度アップロードしてください。エラーが解消されるまで次のタブに進むことはできません。
-
-<!-- end list -->
 
 [Attributes](#BioSample_Attributes)<a name="BioSample_Attributes"></a>  
 : [サンプル属性のリスト](/biosample/attribute.html)  
@@ -249,7 +216,6 @@ MIMARKS-survey は分離培養や生物種を同定せず、環境から直接�
 : 登録内容を確認し問題がなければ一番下の Submit ボタンをクリックしてサンプルを投稿してください。 "Submission ID.txt" ファイルでアップロードしたサンプル属性の内容をダウンロードすることができます。
 
 # BioSample への登録
-
   
 <div class="attention" markdown="1">
 ヒトを対象とした研究データの登録について
@@ -389,9 +355,22 @@ information exists but can not be released openly because of privacy concerns
 
 Validation ルールとメッセージについては [Validation rules ページ](/biosample/validation.html)をご覧ください。
 
+以下のパッケージと属性セットは少なくとも一つは必須（選択必須）になります。例えば、Microbe パッケージでは strain もしくは isolate のどちらかが必須です。  
+サンプル登録用 tsv ファイルにおいて必須属性は「*」マークが先頭に付されていますが、選択必須属性はマークが付いていません。  
+
+| パッケージ | 選択必須属性セット | 選択必須属性セット |
+|---|
+| Microbe | strain, isolate | isolation_source, host |
+| Model.organism.animal | strain, isolate, breed, cultivar, ecotype | age, dev_stage |
+| Metagenome.environmental | isolation_source, host ||
+| Invertebrate | isolate, breed | isolation_source, host |
+| Plant | isolate, cultivar, ecotype | age, dev_stage |
+| Virus | host, lab_host ||
+| Beta-lactamase | strain, isolate ||
+| Pathogen.cl | strain, isolate ||
+| Pathogen.env | strain, isolate ||
 
 {% include image.html url="books/hbs-04-2.jpg" caption="BioSample の validation。この例では KOME-2 の collection_date に将来の日付が記入されているエラーと geo_loc_name 中の国名と緯度経度が一致していない warning が表示されています。" class="w500" %}
-
 
 最後の "OVERVIEW" で内容を確認したうえで投稿します。"ATTRIBUTES" で属性ファイルをダウンロードすることができます。
 

@@ -272,7 +272,8 @@ being sequenced.
 <!-- end list -->
 
 [Library Strategy](#Library_Strategy)<a name="Library_Strategy"></a><span class="red">*</span>  
-: Sequencing technique intended for this library.
+: Sequencing technique intended for this library. 
+For the "Sequel IIe", select the "Sequel II" and indicate "Sequel IIe" usage in the [Library Construction Protocol](#Library_Construction_Protocol).
 
     | Library Strategy                        | Description                                                                                                                                                                                                                                                               |
     |---|
@@ -610,8 +611,7 @@ Platform specific formats
 
 ### BAM file  {#BAM_file} 
 
-Binary Alignment/Map files (BAM) represent one of the preferred DRA
-submission formats. BAM is a compressed version of the Sequence
+BAM is a compressed version of the Sequence
 Alignment/Map (SAM) format (see
 [SAMv1.pdf](https://samtools.github.io/hts-specs/SAMv1.pdf)). BAM files
 can be decompressed to a human-readable text format (SAM) using
@@ -818,6 +818,10 @@ further compressing them. Therefore, please provide
 
 DRA does not accept qseq files. Please convert qseq to fastq/bam.
 
+### BGI-seq  {#BGI}
+
+Submit fastq files.       
+
 ### SOLiD  {#SOLiD} 
 
 #### SOLiD Native Format  {#SOLiD_Native_Format}
@@ -827,7 +831,7 @@ to fastq/bam.
 
 ### Ion Torrent  {#Ion-Torrent}
 
-Submit Ion Torrent data in the sff or fastq/bam format.
+Submit Ion Torrent data in the fastq format. Bam files from Ion Torrent instruments can be converted to fastq by using samtools. [Converting BAM to fastq](https://www.metagenomics.wiki/tools/samtools/converting-bam-to-fastq)
 
 ### Helicos Heliscope  {#Helicos-Heliscope}
 
@@ -957,13 +961,13 @@ platforms.
 
 ## Data submission to DRA  {#dra-data-submission}
 
-### 1. Obtain a submission account 
+### 1. Obtain a submission account  {#obtain-account}
 
   - Create a [D-way submission account](https://ddbj.nig.ac.jp/D-way/)
   - To enable DRA submission, [register a public key and a center name
     to the account](/account-e.html#enable-dra-submission-in-account)
 
-### 2. Create a DRA submission and upload data files 
+### 2. Create a DRA submission and upload data files  {#upload-data-files} 
 
   - Create a new DRA submission ( [Add DRA submission functionality to
     your account](/account-e.html#enable-dra-submission-in-account))  
@@ -972,7 +976,7 @@ platforms.
   - Upload data files by scp before submitting BioProject, BioSample,
     Experiment and Run
 
-### 3. Submit project and sample information {#project-sample}
+### 3. Submit project and sample information  {#project-sample}
 
 #### [BioProject](/bioproject/submission-e.html)  {#BioProject_Study}
 
@@ -986,7 +990,7 @@ platforms.
 
 <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">metadata can be submitted as a tab-delimited text file
 
-### 4. Submit Experiment and Run 
+### 4. Submit Experiment and Run {#submit-object} 
 
 #### DRA Experiment <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#DRA_Experiment}
   - A description of a sample-specific sequencing library
@@ -998,7 +1002,7 @@ platforms.
   - Validate data files after submitting Experiment and Run
   - All files linked to a Run are “merged” into a single SRA file format
 
-### 5. Validate sequencing data files
+### 5. Validate sequencing data files {#validate}
 
   - Start to convert sequencing data files into a SRA file for
     archiving.
@@ -1160,6 +1164,107 @@ transfer the files to the server.
 You can delete the transferred files by selecting the files and clicking
 the [Delete] button.
 
+[« Close](javascript:void(0)){: .close-content-btn}
+
+</div>
+</div>
+
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">Upload sequence data files by PowerShell (Windows)</a></h4>
+<div class="accordion-content">
+
+PowerShell を起動します。   
+<a href="/assets/images/books/win-ps-1.jpg" title="PowerShell を起動" class="group1"><img src="/assets/images/books/win-ps-1.jpg" alt="PowerShell を起動" title="PowerShell を起動" class="w200"></a>   
+
+ファイルを SCP 転送します。OpenSSH 形式の秘密鍵を使用します。PuTTY 形式だと invalid format エラーになるので [OpenSSH 形式に変換](/account.html#putty-openssh)します。    
+```
+> scp -i private-key-for-auth <Your Files> <D-way Login ID>@ftp-private.ddbj.nig.ac.jp:~/<DRA Submission ID>
+```
+
+* -i でアカウントに登録した認証用公開鍵とペアになる openSSH 形式の秘密鍵を指定します。
+* <Your Files> 転送するファイル。例: file1 file2 (file1とfile2)、file* (fileではじまる全てのファイル)
+* <D-way Login ID> D-way の Login ID (例 test07)
+* <DRA Submission ID> DRA 登録の Submission ID (例: test07-0018)
+* コマンドの例: scp -i private-key-for-auth strainA_1.fastq
+
+鍵を作成したときに指定したパスフレーズを入力します。パスフレーズを設定していない場合は改行を押下します。  
+```
+Enter passphrase for key 'private-key-for-auth': 
+```
+
+秘密鍵のアクセス権限が広すぎると以下のエラーになります。
+```
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions for './private-key-for-auth' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+Load key "./private-key-for-auth": bad permissions
+test07@ftp-private.ddbj.nig.ac.jp: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
+lost connection
+```
+
+ファイルを右クリックしてプロパティを選択します。    
+<a href="/assets/images/books/win-ps-1.jpg" title="ファイルのプロパティ" class="group1"><img src="/assets/images/books/win-ps-scp-1.jpg" alt="PowerShell を起動" title="PowerShell を起動" class="w300"></a>   
+
+セキュリティタブの詳細設定を選択します。    
+<a href="/assets/images/books/win-ps-scp-2.jpg" title="セキュリティの詳細設定" class="group1"><img src="/assets/images/books/win-ps-scp-2.jpg" alt="セキュリティの詳細設定" title="セキュリティの詳細設定" class="w300"></a>  
+
+アクセス許可エントリの継承を無効化し、権限を削除できるようにします。   
+<a href="/assets/images/books/win-ps-scp-3.jpg" title="アクセス許可エントリの継承の無効化" class="group1"><img src="/assets/images/books/win-ps-scp-3.jpg" alt="アクセス許可エントリの継承の無効化" title="アクセス許可エントリの継承の無効化" class="w300"></a>  
+
+明示的なアクセス許可に変換します。    
+<a href="/assets/images/books/win-ps-scp-4.jpg" title="明示的なアクセス許可に変換" class="group1"><img src="/assets/images/books/win-ps-scp-4.jpg" alt="明示的なアクセス許可に変換" title="明示的なアクセス許可に変換" class="w300"></a>  
+
+一旦全てのアクセス権限を削除します。    
+<a href="/assets/images/books/win-ps-scp-5.jpg" title="全てのアクセス権限を削除" class="group1"><img src="/assets/images/books/win-ps-scp-5.jpg" alt="全てのアクセス権限を削除" title="全てのアクセス権限を削除" class="w300"></a>   
+
+アクセス権限を追加します。   
+<a href="/assets/images/books/win-ps-scp-6.jpg" title="アクセス権限の追加" class="group1"><img src="/assets/images/books/win-ps-scp-6.jpg" alt="アクセス権限の追加" title="アクセス権限の追加" class="w300"></a>   
+
+Windows ユーザ (例 test07) を追加します。  
+<a href="/assets/images/books/win-ps-scp-7.jpg" title="ユーザの追加" class="group1"><img src="/assets/images/books/win-ps-scp-7.jpg" alt="ユーザの追加" title="ユーザの追加" class="w300"></a>  
+
+Windows ユーザ (例 test07) にフルコントロールを許可します。   
+<a href="/assets/images/books/win-ps-scp-8.jpg" title="フルコントロールの許可" class="group1"><img src="/assets/images/books/win-ps-scp-8.jpg" alt="フルコントロールの許可" title="フルコントロールの許可" class="w300"></a>  
+
+権限の変更を反映します。   
+<a href="/assets/images/books/win-ps-scp-9.jpg" title="権限の変更" class="group1"><img src="/assets/images/books/win-ps-scp-9.jpg" alt="権限の変更" title="権限の変更" class="w300"></a>  
+
+scp コマンドを実行します。   
+
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
+
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">Upload sequence data files by PowerShell (Windows)</a></h4>
+<div class="accordion-content">
+
+Run PowerShell.  
+<a href="/assets/images/books/win-ps-1.jpg" title="Run PowerShell" class="group1"><img src="/assets/images/books/win-ps-1.jpg" alt="Run PowerShell" title="Run PowerShell" class="w200"></a>   
+
+Upload files by scp authenticated with an openSSH-format private key. A PuTTY-format private key causes "invalid format" error, [convert the key into OpenSSH-format](/account-e.html#putty-openssh).   
+```
+> scp -i private-key-for-auth <Your Files> <D-way Login ID>@ftp-private.ddbj.nig.ac.jp:~/<DRA Submission ID>
+```
+
+* -i: specify the private key for authentication which is pair of a public key registered to your D-way account.
+* <Your Files> Files to be transferred. Ex: file1 file2 (file1 and file2), file* (all files whose filenames start with “file”)
+* <D-way Login ID> D-way Login ID (ex. test07)
+* <DRA Submission ID> DRA Submission ID (ex. test07-0018)
+* command example: scp -i private-key-for-auth strainA_1.fastq test07@ftp-private.ddbj.nig.ac.jp:~/test07-0018  
+
+Enter a passphrase. If no passphrase is set, press enter.  
+```
+Enter passphrase for key 'private-key-for-auth': 
+```
+
+If an "UNPROTECTED PRIVATE KEY" error occurs, please see the FAQ [I can not scp transfer my files](/faq/en/scp-e.html).  
+  
 [« Close](javascript:void(0)){: .close-content-btn}
 </div>
 </div>

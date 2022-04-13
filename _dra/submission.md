@@ -255,7 +255,7 @@ SRA にデータを登録する際にはこの Center Name が必要です。
 <!-- end list -->
 
 [Instrument](#Instrument)<a name="Instrument"></a><span class="red">*</span>  
-: シークエンサの機種を選択します。
+: シークエンサの機種を選択します。Sequel IIe の場合、Sequel II を選択し、[Library Construction Protocol](#Library_Construction_Protocol) に Sequel IIe を使ったことを記載してください。 
 
 | Instrument Model                    |
 |---|
@@ -510,7 +510,7 @@ DRA のメタデータ作成ツールは technical read (アダプター、プ�
 
 ### BAM ファイル  {#bam-file} 
 
-Binary Alignment/Map (BAM) ファイルは DRA への登録にとって好ましいファイル形式の一つです。BAM は Sequence Alignment/Map (SAM) ファイル形式のバイナリー圧縮です (詳細は [SAMv1.pdf](https://samtools.github.io/hts-specs/SAMv1.pdf))。BAM ファイルは SAM/BAM 用ツール (例えば [samtools](http://www.htslib.org/)) で human-readable なテキスト形式である SAM に変換することができます。BAM はアライメントされなかった unaligned read を含めることができます。DRA はプライマリーデータとして Run に unaligned read を含む BAM を登録することを推奨しています。
+BAM は Sequence Alignment/Map (SAM) ファイル形式のバイナリー圧縮です (詳細は [SAMv1.pdf](https://samtools.github.io/hts-specs/SAMv1.pdf))。BAM ファイルは SAM/BAM 用ツール (例えば [samtools](http://www.htslib.org/)) で human-readable なテキスト形式である SAM に変換することができます。BAM はアライメントされなかった unaligned read を含めることができます。DRA はプライマリーデータとして Run に unaligned read を含む BAM を登録することを推奨しています。
 
 SAM はリードの既知リファレンス配列へのアライメントに関する情報と生リードデータを含んだタブ区切りテキストファイルです。 SAM ファイルは二つの主要なセクション、ヘッダーとアライメント（シークエンスリード）セクション、から構成されます。 ここでは「BAM ファイルの DRA への登録」という観点で SAM フォーマットについて説明していることに留意してください（DRA は SAM ファイルでの登録を受付けていません）。 より詳細なファイルフォーマット仕様は [samtools ウェブサイト](http://www.htslib.org/)を参照してください。
 
@@ -663,6 +663,10 @@ sff ファイルに２つ以上のサンプルに由来するデータが含ま�
 
 qseq ファイルでの登録は受け付けておりません。fastq/bam ファイルに変換してから登録してください。
 
+### BGI-seq  {#BGI}
+
+fastq ファイルを登録します。    
+
 ### SOLiD  {#SOLiD} 
 
 #### SOLiD Native Format  {#SOLiD_Native_Format}
@@ -671,7 +675,7 @@ SOLiD native ファイルでの登録は受け付けておりません。fastq/b
 
 ### Ion Torrent  {#Ion-Torrent}
 
-sff ファイルもしくは fastq/bam ファイルを登録します。
+fastq ファイルを登録します。Ion Torrent から出力される bam ファイルは samtools で fastq に変換することができます。[Converting BAM to fastq](https://www.metagenomics.wiki/tools/samtools/converting-bam-to-fastq)
 
 ### Helicos Heliscope  {#Helicos-Heliscope}
 
@@ -782,12 +786,12 @@ BioNano データをアセンブルに使用した場合、bnx ファイル、�
 
 ## DRA 登録の流れ  {#dra-data-submission}
 
-### 1. 登録アカウントを作成
+### 1. 登録アカウントを作成  {#obtain-account}
 
   - [D-way 登録アカウント](/account.html)を作成
   - [公開鍵と center name をアカウントに登録](/account.html#enable-dra-submission-in-account)し、DRA 登録を可能に
 
-### 2. DRA 登録を作成しデータファイルをアップロード
+### 2. DRA 登録を作成しデータファイルをアップロード  {#upload-data-files}
 
   - 新規 DRA 登録を作成 ([アカウントに DRA 登録権限を付与しておきます](/account.html#enable-dra-submission-in-account))  
     データは DRA 登録 (Submission) 単位で公開されます。
@@ -807,7 +811,7 @@ BioNano データをアセンブルに使用した場合、bnx ファイル、�
 
 <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">メタデータをタブ区切りテキストファイルで登録できます
 
-### 4. Experiment と Run を登録
+### 4. Experiment と Run を登録 {#submit-object}
 
 #### DRA Experiment <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#DRA_Experiment}
 
@@ -820,7 +824,7 @@ BioNano データをアセンブルに使用した場合、bnx ファイル、�
   - Experiment と Run を投稿した後、データファイルの検証処理を開始
   - Run にリンクしている全てのデータファイルは 1 つの SRA ファイルにマージされます
 
-### 5. シークエンスデータファイルの検証処理
+### 5. シークエンスデータファイルの検証処理 {#validate}
 
   - シークエンスデータファイルをアーカイブ用 SRA ファイルに変換する処理を開始
   - 検証処理を通った登録が査定されアクセッション番号が発行される
@@ -967,7 +971,7 @@ DRA への登録 ～データの転送 (Windows)～
   - **User name:** (D-way の Login ID を入力)
   - **Password:** (空欄のまま)
 
-<a href="/assets/images/books/winscp1_400.jpg" title="秘密鍵の選択１" class="group1"><img src="/assets/images/books/winscp1_400.jpg" alt="秘密鍵の登録１" title="秘密鍵の登録１" class="w300"></a>
+<a href="/assets/images/books/winscp1_400.jpg" title="秘密鍵の選択１" class="group1"><img src="/assets/images/books/winscp1_400.jpg" alt="秘密鍵の選択１" title="秘密鍵の選択１" class="w300"></a>
 
 "Authentication" にある "Private key file" で、事前に作成した PuTTY 形式の秘密鍵を選択します。
 
@@ -986,6 +990,37 @@ DRA への登録 ～データの転送 (Windows)～
 
 転送したファイルは、ファイルを選択し [削除] ボタンをクリックすることで削除できます。
 
+[« 閉じる](javascript:void(0)){: .close-content-btn}
+</div>
+</div>
+
+{::options parse_block_html="true" /}
+<div class="accordion-menu">
+<h4 class="toggle-content-btn"><a href="javascript:void(0)">PowerShell によるシークエンスデータの転送 (Windows)</a></h4>
+<div class="accordion-content">
+
+
+PowerShell を起動します。   
+<a href="/assets/images/books/win-ps-1.jpg" title="PowerShell を起動" class="group1"><img src="/assets/images/books/win-ps-1.jpg" alt="PowerShell を起動" title="PowerShell を起動" class="w200"></a>   
+
+ファイルを SCP 転送します。OpenSSH 形式の秘密鍵を使用します。PuTTY 形式だと invalid format エラーになるので [OpenSSH 形式に変換](/account.html#putty-openssh)します。    
+```
+> scp -i private-key-for-auth <Your Files> <D-way Login ID>@ftp-private.ddbj.nig.ac.jp:~/<DRA Submission ID>
+```
+
+* -i でアカウントに登録した認証用公開鍵とペアになる openSSH 形式の秘密鍵を指定します。
+* <Your Files> 転送するファイル。例: file1 file2 (file1とfile2)、file* (fileではじまる全てのファイル)
+* <D-way Login ID> D-way の Login ID (例 test07)
+* <DRA Submission ID> DRA 登録の Submission ID (例: test07-0018)
+* コマンドの例: scp -i private-key-for-auth strainA_1.fastq
+
+鍵を作成したときに指定したパスフレーズを入力します。パスフレーズを設定していない場合は改行を押下します。  
+```
+Enter passphrase for key 'private-key-for-auth': 
+```
+
+UNPROTECTED PRIVATE KEY エラーになった場合、FAQ [scp でファイルの転送ができません](/faq/ja/scp.html) を参照してください。
+  
 [« 閉じる](javascript:void(0)){: .close-content-btn}
 </div>
 </div>

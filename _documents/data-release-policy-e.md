@@ -30,8 +30,8 @@ been confirmed.
     "publish" also means cited accession numbers in published data
     including all of following cases: BioProject, BioSample and DRA
     accession numbers cited by [DBLINK line](/ddbj/con-e.html#Dblink) of
-    DDBJ flat file, DDBJ accession numbers cited by [compare
-    qualifier](/ddbj/qualifiers-e.html#compare), [PRIMARY
+    DDBJ flat file, DDBJ accession numbers cited by [/inference
+    qualifier](/ddbj/qualifiers-e.html#inference), [PRIMARY
     line](/ddbj/tsa-e.html#Primary) and [CONTIG
     line](/ddbj/con-e.html#Contig) of DDBJ flat file, BioProject and
     BioSample cited as DRA metadata.
