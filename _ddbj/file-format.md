@@ -891,9 +891,13 @@ PRIMARY\_CONTIG feature で使用可能な qualifier
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=585575811">ENV</a></td>
     </tr>
     <tr>
-      <td rowspan="8">ゲノムデータ関連</td>
+      <td rowspan="11">ゲノムデータ関連</td>
       <td><a href="/ddbj/genome.html">complete genome sequence (Bacteria)</a></td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=862924679">complete_genome_BCT</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/genome.html">Finished level genome sequence with biological feature (Eukaryote)</a></td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1575396051">Finished_genome_eukaryote</a></td>
     </tr>
     <tr>
       <td><a href="/ddbj/wgs.html">WGS</a> (Whole Genome Shotgun) without annotation</td>

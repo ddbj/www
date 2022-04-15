@@ -850,28 +850,32 @@ between annotation file and DDBJ flat file](#sample).
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=545461927">mtDNA</a></td>
     </tr>
     <tr>
-      <td><a href="/ddbj/env.html">ENV</a> (Environmental Samples)</td>
+      <td><a href="/ddbj/env-e.html">ENV</a> (Environmental Samples)</td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/#gid=585575811">ENV</a></td>
     </tr>
     <tr>
-      <td rowspan="8">Genome data</td>
-      <td><a href="/ddbj/genome.html">complete genome sequence (Bacteria)</a></td>
+      <td rowspan="11">Genome data</td>
+      <td><a href="/ddbj/genome-e.html">complete genome sequence (Bacteria)</a></td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=862924679">complete_genome_BCT</a></td>
     </tr>
     <tr>
-      <td><a href="/ddbj/wgs.html">WGS</a> (Whole Genome Shotgun) without annotation</td>
+      <td><a href="/ddbj/genome-e.html">Finished level genome sequence with biological feature (Eukaryote)</a></td>
+      <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1575396051">Finished_genome_eukaryote</a></td>
+    </tr>
+    <tr>
+      <td><a href="/ddbj/wgs-e.html">WGS</a> (Whole Genome Shotgun) without annotation</td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=382116224">WGS</a></td>
     </tr>
     <tr>
-      <td><a href="/ddbj/wgs.html">WGS</a> (Whole Genome Shotgun) with annotation</td>
+      <td><a href="/ddbj/wgs-e.html">WGS</a> (Whole Genome Shotgun) with annotation</td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">WGS_annotation</a></td>
     </tr>
     <tr>
-      <td><a href="/ddbj/wgs.html">WGS</a>; piece of scaffold CON</td>
+      <td><a href="/ddbj/wgs-e.html">WGS</a>; piece of scaffold CON</td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=595699065">WGS_piece_CON</a></td>
     </tr>
     <tr>
-      <td><a href="/ddbj/con.html">CON</a> entries for WGS scaffold</td>
+      <td><a href="/ddbj/con-e.html">CON</a> entries for WGS scaffold</td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1885054586">WGS_scaffold</a></td>
     </tr>
     <tr>
@@ -883,50 +887,50 @@ between annotation file and DDBJ flat file](#sample).
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1453206143">MAGs_WGS</a></td>
     </tr>  
     <tr>
-      <td>AGP file for <a href="/ddbj/con.html">CON</a> entries</td>
+      <td>AGP file for <a href="/ddbj/con-e.html">CON</a> entries</td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1672995780">AGP</a></td>
     </tr>
     <tr>
-      <td><a href="/ddbj/gss.html">GSS</a> (Genome Survey Sequences)</td>
+      <td><a href="/ddbj/gss-e.html">GSS</a> (Genome Survey Sequences)</td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=460036592">GSS</a></td>
     </tr>
     <tr>
-      <td><a href="/ddbj/htg.html">HTG</a> (High Throughput Genomic Sequences)</td>
+      <td><a href="/ddbj/htg-e.html">HTG</a> (High Throughput Genomic Sequences)</td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=199977055">HTG</a></td>
     </tr>
     <tr id="TSA">
       <td rowspan="4">Large transcripts data</td>
-      <td><a href="/ddbj/tsa.html">TSA</a> (Transcriptome Shotgun Assembly); assembled from EST</td>
+      <td><a href="/ddbj/tsa-e.html">TSA</a> (Transcriptome Shotgun Assembly); assembled from EST</td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=2130672006">TSA</a></td>
     </tr>
     <tr id="TSA_SRA_assemble_NoANN">
-      <td><a href="/ddbj/tsa.html">TSA</a>; assembled from short reads without annotation</td>
+      <td><a href="/ddbj/tsa-e.html">TSA</a>; assembled from short reads without annotation</td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=931177555">TSA_SRA_assemble_NoANN</a></td>
     </tr>
     <tr id="TSA_SRA_assemble_Ann">
-      <td><a href="/ddbj/tsa.html">TSA</a>; assembled from short reads with annotation</td>
+      <td><a href="/ddbj/tsa-e.html">TSA</a>; assembled from short reads with annotation</td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1607251813">TSA_SRA_assemble_Ann</a></td>
     </tr>
     <tr>
-      <td><a href="/ddbj/est.html">EST</a> (Expressed Sequence Tags)</td>
+      <td><a href="/ddbj/est-e.html">EST</a> (Expressed Sequence Tags)</td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1753678626">EST</a></td>
     </tr>
     <tr>
       <td>TLS (Targeted Locus Study)</td>
-      <td><a href="/ddbj/tls.html">TLS (Targeted Locus Study)</a></td>
+      <td><a href="/ddbj/tls-e.html">TLS (Targeted Locus Study)</a></td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=580470761">TLS</a></td>
     </tr>
     <tr>
-      <td rowspan="3"><a href="/ddbj/tpa.html">TPA</a> (Third Party Data)</td>
+      <td rowspan="3"><a href="/ddbj/tpa-e.html">TPA</a> (Third Party Data)</td>
       <td><a href="/ddbj/tpa.html">TPA</a> (Third Party Data)</td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=123381270">TPA</a></td>
     </tr>
     <tr>
-      <td><a href="/ddbj/tpa.html">TPA</a> assembly (Third Party Data)</td>
+      <td><a href="/ddbj/tpa-e.html">TPA</a> assembly (Third Party Data)</td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=80322930">TPA-assembly_WGS</a></td>
     </tr>
     <tr>
-      <td><a href="/ddbj/tpa.html">TPA</a> assembly (Third Party Data)</td>
+      <td><a href="/ddbj/tpa-e.html">TPA</a> assembly (Third Party Data)</td>
       <td><a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1394019205">TPA-assembly</a></td>
     </tr>
     <tr id="ann2-ff">
