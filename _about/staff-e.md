@@ -130,13 +130,6 @@ category: about
     </ul>  
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/hata.jpg" title="Chihiro Hata"></p>
-        <div class="explanation">
-            <p class="name">Chihiro Hata, PhD</p>
-            <p class="position">Data Submission: NGS</p>
-        </div>
-        </li>
-        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/iizuka.jpg" title="Tomoyo Iizuka"></p>
         <div class="explanation">
             <p class="name">Tomoyo Iizuka, PhD</p>
