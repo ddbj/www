@@ -6,9 +6,8 @@ category: metabobank
 lang: ja
 ---
 
-MetaboBank ([https://mb.ddbj.nig.ac.jp](https://mb.ddbj.nig.ac.jp)) はメタボローム研究のメタデータおよび生データを格納する公共リポジトリです。
-現在 Ver.2 を作成しており [https://mb2.ddbj.nig.ac.jp](https://mb2.ddbj.nig.ac.jp) からアクセスできます。
-生データは以下の https サイトからダウンロード可能です。[https://ddbj.nig.ac.jp/public/metabobank/project/](https://ddbj.nig.ac.jp/public/metabobank/project/)
+MetaboBank ([https://mb2.ddbj.nig.ac.jp](https://mb2.ddbj.nig.ac.jp)) はメタボローム研究のメタデータおよび生データを格納する公共リポジトリです。
+生データは以下の https サイトからもダウンロード可能です。[https://ddbj.nig.ac.jp/public/metabobank/project/](https://ddbj.nig.ac.jp/public/metabobank/project/)
 
 #### 特徴
 - 付与するアクセッション番号は恒久的に維持され，情報は全てCC-BYライセンスになります。
