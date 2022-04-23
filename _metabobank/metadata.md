@@ -12,6 +12,7 @@ lang: ja
 MicroArray Gene Expression Tabular ([MAGE-TAB](/assets/files/magetab/MAGE-TABv1.1.pdf)) は機能ゲノミクスデータを構造化・標準化された方法で記述するために開発された形式で、ArrayExpress と [GEA](/gea/metadata.html) で使用されています。
 MAGE-TAB は[プロテオミクス分野](https://github.com/bigbio/proteomics-metadata-standard)でも使われ始めており、オミックス分野における国際標準になりつつあります。  
 MAGE-TAB は研究全体を記述する IDF、および、サンプルとデータファイルの関係性を記述する SDRF から構成されています。
+IDF と SDRF はプロトコールで、メタデータとデータファイルは SDRF を介してリンクします。
 
 {% include image.html url="magetab/mb-mage-tab.jpg" caption="IDF，SDRF, 生・解析済みデータファイル・MAF の関係" class="w500" %}
 
