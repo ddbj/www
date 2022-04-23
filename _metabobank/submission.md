@@ -65,7 +65,7 @@ $ scp -i private-key-for-auth <Your Files> <D-way Login ID>@ftp-private.ddbj.nig
 
 ## アクセッション番号  {#accession}
 
-MetaboBank の Study に対して以下の形式のアクセッション番号が発行されます (n は自然数)。
+Study に対して以下の形式のアクセッション番号が発行されます (n は自然数)。
 論文で MetaboBank のメタボロミクスデータに言及するときはこの番号を引用してください。
 
 MTBKSn (例 MTBKS1)
@@ -78,8 +78,8 @@ FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
 
 ## Reviewer access  {#reviewer-access}
 
-MetaboBank に登録した非公開データをパスワードで保護されたサイト経由で査読者に提供したい場合は [MetaboBank チームに連絡](/contact-ddbj.html)してください。
+登録した非公開データをパスワードで保護されたサイト経由で査読者に提供したい場合は [MetaboBank チームに連絡](/contact-ddbj.html)してください。
 
 ## 更新  {#update}
 
-MetaboBank に登録されたデータを更新・削除する場合は [MetaboBank チームに連絡](/contact-ddbj.html)してください。
+登録されたデータを更新・削除する場合は [MetaboBank チームに連絡](/contact-ddbj.html)してください。
