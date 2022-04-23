@@ -3,6 +3,9 @@ agd:
     - id: home
       title: Home
       url: /agd/index.html
+    - id: browse researches at nbdc 
+      title: Browse researches at NBDC  
+      url: https://gr-sharingdbs.biosciencedbc.jp/agd
     - id: submission
       title: Submission
       url: /agd/submission.html
@@ -98,6 +101,10 @@ biosample:
       title: Sample Attribute	
       url: /biosample/attribute.html	
       children:	
+        - title: Genome Assembly Sample  
+          url: /biosample/genome-assembly-sample.html 
+        - title: Human Sample  
+          url: /biosample/human-sample.html 
         - title: Example files	
           url: https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482	
     - id: validation rules	
@@ -129,6 +136,10 @@ biosample:
       title: Sample Attribute
       url: /biosample/attribute-e.html
       children:
+        - title: Genome Assembly Sample  
+          url: /biosample/genome-assembly-sample-e.html 
+        - title: Human Sample  
+          url: /biosample/human-sample-e.html 
         - title: Example files
           url: https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482
     - id: validation rules
@@ -206,6 +217,8 @@ ddbj:
           url: /ddbj/pseudohaplotype.html	
         - title: WGS	
           url: /ddbj/wgs.html	
+        - title: Finished level genomic sequences	
+          url: /ddbj/finished_level_genome.html	
         - title: メタゲノムアセンブリ	
           url: /ddbj/metagenome-assembly.html	
         - title: Single amplified genome	
@@ -297,6 +310,8 @@ ddbj:
           url: /ddbj/pseudohaplotype-e.html	
         - title: WGS	
           url: /ddbj/wgs-e.html	
+        - title: Finished level genomic sequences	
+          url: /ddbj/finished_level_genome-e.html	
         - title: Metagenome Assembly	
           url: /ddbj/metagenome-assembly-e.html	
         - title: Single amplified genome	
@@ -526,6 +541,59 @@ gea:
       title: About GEA
       url: /gea/about-gea-e.html
 
+metabobank:
+  ja:
+    - id: home  
+      title: Home 
+      url: /metabobank/index.html 
+    - id: submission 
+      title: Submission  
+      url: /metabobank/submission.html  
+      children: 
+        - title: Metadata 
+          url: /metabobank/metadata.html  
+        - title: Data File  
+          url: /metabobank/datafile.html  
+        - title: Validation 
+          url: /metabobank/validation.html  
+    - id: faq 
+      title: FAQ  
+      url: /faq/ja/index.html?tag=metabobank  
+    - id: search  
+      title: Search
+      url: https://mb2.ddbj.nig.ac.jp/  
+    - id: download 
+      title: Download  
+      url: https://ddbj.nig.ac.jp/public/metabobank/project/
+    - id: about metabobank  
+      title: About Metabobank 
+      url: /metabobank/about-metabobank.html
+  en:
+    - id: home  
+      title: Home 
+      url: /metabobank/index-e.html 
+    - id: submission 
+      title: Submission  
+      url: /metabobank/submission-e.html  
+      children: 
+        - title: Metadata 
+          url: /metabobank/metadata-e.html  
+        - title: Data File  
+          url: /metabobank/datafile-e.html  
+        - title: Validation 
+          url: /metabobank/validation-e.html  
+    - id: faq 
+      title: FAQ  
+      url: /faq/en/index-e.html?tag=metabobank  
+    - id: search  
+      title: Search
+      url: https://mb2.ddbj.nig.ac.jp/  
+    - id: download 
+      title: Download  
+      url: https://ddbj.nig.ac.jp/public/metabobank/project/
+    - id: about metabobank  
+      title: About Metabobank 
+      url: /metabobank/about-metabobank-e.html
 
 jga:
   ja:	
@@ -592,9 +660,6 @@ sc:
     - id: home
       title: Home
       url: /sc/
-    - id: example_of_utilization
-      title: 活用方法
-      url: /sc/example_of_utilization
     - id: application
       title: 利用申請
       url: /sc/application
