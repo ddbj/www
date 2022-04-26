@@ -21,33 +21,40 @@ MetaboBank は質量分析 (Mass spectrometry)、NMR や質量分析イメージ
 ## 登録の流れ  {#submission}
 
 MetaboBank は関連するデータをまとめるため BioProject と BioSample と連携しています。
-BioProject と BioSample は他のデータベースからも参照されているため、メタボロミクスデータおよび関連する塩基配列や遺伝子発現データがデータベースを横断してまとめられます。  
+BioProject/BioSample と連携することにより、メタボロミクスデータがデータベースを横断して関連する塩基配列や遺伝子発現データとまとめられます。  
 メタデータは実験種別毎に用意されたエクセルファイルに記入して作成します。  
-データファイルとしては生データと解析済みデータを準備し、同定・推定された化合物に関する情報は所定形式である Metabolite assignment file (MAF) に記載します。
+データファイルとしては生データと解析済みデータを準備し、同定・推定された化合物に関する情報は所定の形式である Metabolite assignment file (MAF) に記載します。
 
-### 1. 登録アカウントを取得  {#account}
+### 1. 登録アカウントの取得  {#account}
 
 - [D-way 登録アカウント](https://ddbj.nig.ac.jp/D-way/)を作成します。[マニュアル](/account.html)
 - [公開鍵と center name をアカウントに登録](/account.html#enable-dra-submission-in-account)し MetaboBank 登録を可能にします。
 
-### 2. BioProject を登録 {#bp}
+### 2. 登録申し込み  {#form}
+
+[MetaboBank 登録申し込みフォーム](https://docs.google.com/forms/d/1yrBo95x5leK9aEZImzT6Y5iVyzgwELCgFZtTU9paguU/edit)から登録を申し込みます。申し込み内容に応じて担当者が個別に登録方法をご案内します。  
+
+### 3. BioProject の登録 {#bp}
 
 研究プロジェクトの内容を [BioProject に登録](/bioproject/submission.html)します。
 プレフィックス PRJDB のアクセッション番号がプロジェクトに対して発行されます。 
 
-### 3. BioSample を登録 {#bs}
+### 4. BioSample の登録 {#bs}
 
-データを得るために使われたサンプルを BioSample に登録します。メタボロミクス用サンプルには [Omics パッケージ](/biosample/submission.html#Sample-type)の使用を推奨します。プレフィックス SAMD のアクセッション番号がサンプルに対して発行されます。
+データを得るために使われたサンプルを BioSample に登録します。メタボロミクス用サンプルには [Omics パッケージ](/biosample/submission.html#Sample-type)の使用を推奨します。  
+非生物サンプルの生物名には NCBI Taxonomy [metagenomes](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&keep=1&srchmode=1&unlock) から適切な名前、例えば食品サンプルであれば "[food metagenome](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=870726&lvl=3&lin=f&keep=1&srchmode=1&unlock)" を選びます。  
+プレフィックス SAMD のアクセッション番号がサンプルに対して発行されます。
 
-### 4. メタデータの作成  {#metadata}
+### 5. メタデータの作成  {#metadata}
 
 [実験の種類毎に用意されたエクセルファイル](/metabobank/metadata.html)をダウンロードし、メタデータを記入します。
-エクセルは MAGE-TAB の IDF と SDRF に対応したタブから構成されています。
+エクセルは MAGE-TAB の IDF と SDRF に対応したタブから構成されています。  
+種類が異なるデータは Study を分けて登録します。関連する Study は BioProject でまとめます。例 BioProject PRJDB100 - MTBKS1000 (LC-MS)、MTBKS1001 (GC-MS)。
 
 - IDF (Investigation Description Format): 研究概要、実験デザイン、プロトコール、文献情報や登録者情報といった研究全体を記述
 - SDRF (Sample and Data Relationship Format): サンプル属性およびサンプル、測定機器とデータファイルの関係性を記述
 
-### 5. データファイルの準備  {#data-files}
+### 6. データファイルの準備  {#data-files}
 
 以下のファイルを準備します。同定・推定された化合物に関する情報は所定形式の [Metabolite assignment file (MAF)](/metabobank/datafile.html) として登録します。MAF 登録は強く推奨しますが必須ではありません。
 
@@ -55,12 +62,14 @@ BioProject と BioSample は他のデータベースからも参照されてい�
 - [解析済みデータファイル (processed data file)](/metabobank/datafile.html)
 - [Metabolite assignment file (MAF)](/metabobank/datafile.html)
 
-### 6. ファイルのアップロード   {#upload}
+### 7. ファイルのアップロード   {#upload}
 
-メタデータエクセルとデータファイル (生・解析済みデータファイル・MAF) を [scp/sftp でファイルサーバにアップロード](/dra/submission.html#upload-sequence-data)します。アップロード先は mass ディレクトリで、コマンドで転送する場合は以下のようになります。
+メタデータエクセルとデータファイル (生・解析済みデータファイル・MAF) を [scp/sftp でファイルサーバにアップロード](/dra/submission.html#upload-sequence-data)します。
+異なる Study のデータをアップロードする場合、Study 毎にファイルを tar もしくは zip でまとめます。
+アップロード先はホーム直下の mass ディレクトリで、コマンドで転送する場合は以下のようになります。
 
 ```
-$ scp -i private-key-for-auth <Your Files> <D-way Login ID>@ftp-private.ddbj.nig.ac.jp:~/<DRA Submission ID>
+$ scp -i private-key-for-auth <Your Files> <D-way Login ID>@ftp-private.ddbj.nig.ac.jp:~/mass
 ```
 
 ## アクセッション番号  {#accession}

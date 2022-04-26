@@ -18,7 +18,7 @@ IDF と SDRF はプロトコールで、メタデータとデータファイル�
 
 ## メタデータエクセル  {#metadata-excel}
 
-実験種別に対応したメタデータエクセルをダウンロードし、内容を記入します。
+実験種別に対応したメタデータエクセルをダウンロードし、内容を記入します。異なる種別のデータは Study を分けて登録します。
 
 * Mass spectrometry, chromatography
     * Liquid chromatography-mass spectrometry (LC-MS, [download](/assets/files/submission/metabobank/MetaboBank_LC-MS_metadata.xlsx))
