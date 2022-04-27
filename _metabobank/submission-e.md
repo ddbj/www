@@ -32,7 +32,7 @@ Submit experimental raw and processed data files, and identified and predicted m
 
 ### 2. Apply submission {#form}
 
-Apply a submission from the [MetaboBank submission form](https://docs.google.com/forms/d/1yrBo95x5leK9aEZImzT6Y5iVyzgwELCgFZtTU9paguU). MetaboBank team will inform you how to submit your data.   
+Apply a submission from the [MetaboBank submission form](https://docs.google.com/forms/d/157KHuapqWPBXDhxIE6V0GqyvoOTgojhOQNAI4hsJKfA). MetaboBank team will inform you how to submit your data.   
 
 ### 3. Create BioProject {#bp}
 

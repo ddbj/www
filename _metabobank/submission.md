@@ -32,7 +32,7 @@ BioProject/BioSample と連携することにより、メタボロミクスデ�
 
 ### 2. 登録申し込み  {#form}
 
-[MetaboBank 登録申し込みフォーム](https://docs.google.com/forms/d/1yrBo95x5leK9aEZImzT6Y5iVyzgwELCgFZtTU9paguU/edit)から登録を申し込みます。申し込み内容に応じて担当者が個別に登録方法をご案内します。  
+[MetaboBank 登録申し込みフォーム](https://docs.google.com/forms/d/1yrBo95x5leK9aEZImzT6Y5iVyzgwELCgFZtTU9paguU)から登録を申し込みます。申し込み内容に応じて担当者が個別に登録方法をご案内します。  
 
 ### 3. BioProject の登録 {#bp}
 
