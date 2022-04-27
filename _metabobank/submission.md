@@ -10,7 +10,7 @@ lang: ja
 ## 概要  {#overview}
 
 MetaboBank は質量分析 (Mass spectrometry)、NMR や質量分析イメージングによって得られたメタボロミクスデータの登録を受付けています。
-メタデータは MAGE-TAB 形式を使用しています。MAGE-TAB は機能ゲノミクスデータのためのデータベース [GEA](/gea/index.html) と EBI [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/) で長年使用されており、最近はプロテオミクス分野でも使われ始めています ([SDRF-Proteomics]())。EBI のメタボロミクスデータベース [MetaboLights](https://www.ebi.ac.uk/metabolights/) は MAGE-TAB と互換性のある ISA-TAB 形式を使用しており、MetaboBank と MetaboLights はデータの標準化において協力しています。
+メタデータは MAGE-TAB 形式を使用しています。MAGE-TAB は機能ゲノミクスデータのためのデータベース [GEA](/gea/index.html) と EBI [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/) で長年使用されており、最近はプロテオミクス分野でも使われ始めています ([SDRF-Proteomics](https://www.nature.com/articles/s41467-021-26111-3))。EBI のメタボロミクスデータベース [MetaboLights](https://www.ebi.ac.uk/metabolights/) は MAGE-TAB と互換性のある ISA-TAB 形式を使用しており、MetaboBank と MetaboLights はデータの標準化において協力しています。
 
 <div class="attention" markdown="1">
   <span class="red">ヒトを対象とした研究データの登録について</span>  
