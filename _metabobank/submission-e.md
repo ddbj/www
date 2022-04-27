@@ -13,21 +13,6 @@ MetaboBank archives metabolomics data from mass spectrometry (MS), NMR and MS im
 Metadata are described in the MAGE-TAB format. 
 MAGE-TAB has long been used by functional genomics databases [GEA](/gea/index-e.html) and EBI [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/). MAGE-TAB is also starting to be used in proteomics fields ([SDRF-Proteomics](https://www.nature.com/articles/s41467-021-26111-3)). The EBI metabolomics database [MetaboLights](https://www.ebi.ac.uk/metabolights/) has used ISA-TAB which is compatible with MAGE-TAB. MetaboBank and MetaboLights collaborates for data standardization.
 
-
-<div class="attention" markdown="1">
-Submission of research data from human subjects  
-: <span class="red">
-For submitting data from human subjects (human data) to the
-databases of DDBJ center, it is submitter's responsibility to ensure
-that the dignity and right of human subject are protected in
-accordance with all applicable laws, ordinances, guidelines and
-policies of submitter's institution. In principle, make sure to
-remove any direct personal identifiers of human subjects from your
-data to be submitted. Before submitting human data, read the
-"[Submission of research data from human
-subjects](/policies-e.html#submission-of-human-data)".</span>
-</div>
-
 <div class="attention" markdown="1">
   <span class="red">Submission of research data from human subjects</span>  
   : For submitting data from human subjects (human data) to the databases of DDBJ center, it is submitter's responsibility to ensure that the dignity and right of human subject are protected in accordance with all applicable laws, ordinances, guidelines and policies of submitter's institution. In principle, make sure to remove any direct personal identifiers of human subjects from your data to be submitted. Before submitting human data, read the "[Submission of research data from human subjects](/policies-e.html#submission-of-human-data)".
@@ -77,7 +62,7 @@ Prepare following data files. Submit identified metabolites as the [Metabolite a
 - [Processed data file](/metabobank/datafile-e.html)
 - [Metabolite assignment file (MAF)](/metabobank/datafile-e.html)
 
-### 7. File upload   {#upload}
+### 7. Upload files {#upload}
 
 Upload metadata and data files (raw, processed data files and MAF) to the file server by [scp/sftp](/dra/submission-e.html#upload-sequence-data).  
 When submitting studies, group files per study by using tar or zip. 
