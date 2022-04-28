@@ -12,7 +12,7 @@ lang: en
 MicroArray Gene Expression Tabular ([MAGE-TAB](/assets/files/magetab/MAGE-TABv1.1.pdf)) was developed to represent functional genomics data in a structured way and has been used by ArrayExpress and [GEA](/gea/metadata-e.html). MAGE-TAB is also used in [proteomics fields](https://github.com/bigbio/proteomics-metadata-standard) and is becoming a standard in omics fields.  
 MAGE-TAB consists of two parts, IDF and SDRF. IDF describes study design and SDRF describes sample characteristics and relationship between sample and data files. IDF and SDRF are linked by protocols. Metadata and data files are linked by SDRF.
 
-{% include image-e.html url="magetab/mb-mage-tab.jpg" caption="IDF，SDRF, raw, processed data files and MAF" class="w500" %}
+{% include image.html url="magetab/mb-mage-tab.jpg" caption="IDF，SDRF, raw, processed data files and MAF" class="w500" %}
 
 ## Metadata excel  {#metadata-excel}
 
@@ -50,4 +50,4 @@ SDRF is a table represents omics experiment flow, starts from source samples and
 
 Please see the HELP sheet of the excel for details.
 
-{% include image-e.html url="magetab/mb-sdrf.jpg" caption="SDRF structure" class="w550" %}
+{% include image.html url="magetab/mb-sdrf.jpg" caption="SDRF structure" class="w550" %}
