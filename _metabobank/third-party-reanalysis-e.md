@@ -9,15 +9,15 @@ lang: en
 
 ## Third-party reanalysis data {#third-party}
 
-第三者が登録した MetaboBank のデータを再解析したデータは third-party reanalysis data として MetaboBank に登録することができます（元データを自身で再登録する必要はありません）。このような third-party reanalysis data は参照している元データ
-（mzML 等の生データを含む）が MetaboBank 等のデータベースで公開されている必要があります。また、登録の目的は査読論文で再解析の内容、および、アクセッション番号を公表することである必要があります。
-Third-party reanalysis data を MetaboBank に登録する場合は [MetaboBank チーム](/contact-ddbj.html)にお問い合わせください。
+Data which re-analyzed public MetaboBank data submitted by other people can be submitted as third-party reanalysis data. It is not necessary to re-submit original data. Third-party reanalysis data need to cite original data released by databases including MetaboBank. 
+In addition, purpose of reanalysis data submission should be publication of reanalyzed results and their accession numbers in original scientific papers.  
+If you want to submit third-party reanalysis data, please contact the [MetaboBank team](/contact-ddbj-e.html).
 
-### Third-party reanalysis data 登録についての注意点  {#notes-third-party}
+### Notes on third-party reanalysis data submission {#notes-third-party}
 
-- Third-party reanalysis data を MetaboBank から公開するためには、再解析の内容についての査読論文が公開されている必要があります。
-- Third-party reanalysis data で参照している元データ（mzML 等の生データを含む）は MetaboBank 等の主要な公共データベースで公開されている必要があります。
+- Before releasing third-party reanalysis data from MetaboBank, reanalysis results should be published in scientific papers.
+- Original data cited by third-party reanalysis data, should be available as public database records.
 
-関連サイト:
-* ['Third-party reanalysis' type を持つ NCBI GEO データ](https://www.ncbi.nlm.nih.gov/geo/browse/?view=series&search=Third-party%20reanalysis&type=27&zsort=date&display=20)
-* [DDBJ Third Party Data (TPA)](/ddbj/tpa.html)
+Related sites:
+* [NCBI GEO data with 'Third-party reanalysis' type](https://www.ncbi.nlm.nih.gov/geo/browse/?view=series&search=Third-party%20reanalysis&type=27&zsort=date&display=20)
+* [DDBJ Third Party Data (TPA)](/ddbj/tpa-e.html)

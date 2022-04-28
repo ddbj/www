@@ -10,13 +10,13 @@ lang: en
 ## MAGE-TAB  {#mage-tab}
 
 MicroArray Gene Expression Tabular ([MAGE-TAB](/assets/files/magetab/MAGE-TABv1.1.pdf)) was developed to represent functional genomics data in a structured way and has been used by ArrayExpress and [GEA](/gea/metadata-e.html). MAGE-TAB is also used in [proteomics fields](https://github.com/bigbio/proteomics-metadata-standard) and is becoming a standard in omics fields.  
-MAGE-TAB consists of two parts, IDF and SDRF. IDF describes study design and SDRF describes sample characteristics and relationship between sample and data files. IDF and SDRF are linked by protocols. Metadata and data files are linked by SDRF.
+MAGE-TAB consists of two parts, IDF and SDRF. IDF describes study design, and SDRF describes sample characteristics and relationship between sample and data files. IDF and SDRF are linked by protocols. Metadata and data files are linked by SDRF.
 
 {% include image.html url="magetab/mb-mage-tab.jpg" caption="IDF，SDRF, raw, processed data files and MAF" class="w500" %}
 
 ## Metadata excel  {#metadata-excel}
 
-Download a metadata excel file designed for each submission type and enter metadata. 
+Download a metadata excel file designed for each submission type and fill in the file. 
 Submit data of different types as separate studies.  
 
 * Mass spectrometry, chromatography
@@ -44,7 +44,7 @@ Please see the HELP sheet of the excel for details.
 ## SDRF  {#sdrf}
 
 SDRF (Sample and Data Relationship Format) is a file describing sample characteristics and relationship between samples, measurement instruments and data files.
-SDRF is a table represents omics experiment flow, starts from source samples and ends with data files.
+SDRF is a table represents omics experimental flow, starts from source samples and ends with data files.
 
 [SDRF example](https://docs.google.com/spreadsheets/d/1PziXaK3Cic1xQXdcCgBZ1g-4LIKvZRZt71nYCH5e22k/edit#gid=513795053)  
 

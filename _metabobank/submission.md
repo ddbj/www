@@ -66,10 +66,10 @@ BioProject/BioSample と連携することにより、メタボロミクスデ�
 
 メタデータエクセルとデータファイル (生・解析済みデータファイル・MAF) を [scp/sftp でファイルサーバにアップロード](/dra/submission.html#upload-sequence-data)します。
 異なる Study のデータをアップロードする場合、Study 毎にファイルを tar もしくは zip でまとめます。
-アップロード先はホーム直下の mass ディレクトリで、コマンドで転送する場合は以下のようになります。
+アップロード先はホーム直下の metabobank ディレクトリで、コマンドで転送する場合は以下のようになります。
 
 ```
-$ scp -i private-key-for-auth <Your Files> <D-way Login ID>@ftp-private.ddbj.nig.ac.jp:~/mass
+$ scp -i private-key-for-auth <Your Files> <D-way Login ID>@ftp-private.ddbj.nig.ac.jp:~/metabobank
 ```
 
 ## アクセッション番号  {#accession}
