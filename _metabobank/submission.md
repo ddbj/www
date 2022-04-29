@@ -42,7 +42,8 @@ BioProject/BioSample と連携することにより、メタボロミクスデ�
 ### 4. BioSample の登録 {#bs}
 
 データを得るために使われたサンプルを BioSample に登録します。メタボロミクス用サンプルには [Omics パッケージ](/biosample/submission.html#Sample-type)の使用を推奨します。  
-非生物サンプルの生物名には NCBI Taxonomy [metagenomes](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&keep=1&srchmode=1&unlock) から適切な名前、例えば食品サンプルであれば "[food metagenome](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=870726&lvl=3&lin=f&keep=1&srchmode=1&unlock)" を選びます。  
+非生物サンプルの生物名には NCBI Taxonomy [metagenomes](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&keep=1&srchmode=1&unlock) から適切な名前、例えば食品サンプルであれば "[food metagenome](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=870726&lvl=3&lin=f&keep=1&srchmode=1&unlock)" を選びます。
+その他の例についてはこちらの FAQ をご覧ください。FAQ: [非生物サンプルの生物名には何を選べばよいでしょうか？](/faq/ja/organism-for-material.html)    
 プレフィックス SAMD のアクセッション番号がサンプルに対して発行されます。
 
 ### 5. メタデータの作成  {#metadata}
