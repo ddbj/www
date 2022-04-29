@@ -42,7 +42,8 @@ An accession number with prefix PRJDB will be assigned to the project.
 ### 4. Create BioSample {#bs}
 
 Register samples (typical metabolomics experiment has more than one sample) to [BioSample](/biosample/submission-e.html) by using the [Omics package](/biosample/submission-e.html#Sample-type).   
-For an organism name of non-living samples, choose an appropriate name from the NCBI Taxonomy [metagenomes](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&keep=1&srchmode=1&unlock). For example, use "[food metagenome](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=870726&lvl=3&lin=f&keep=1&srchmode=1&unlock)" for food samples.  
+For an organism name of non-living samples, choose an appropriate name from the NCBI Taxonomy [metagenomes](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&keep=1&srchmode=1&unlock). For example, use "[food metagenome](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=870726&lvl=3&lin=f&keep=1&srchmode=1&unlock)" for food samples. 
+For the other examples, please see the FAQ: [Which organism name should I use for non-living sample?](/faq/en/organism-for-material-e.html).       
 Accession numbers with prefix SAMD will be assigned to samples.
 
 ### 5. Create metadata  {#metadata}
