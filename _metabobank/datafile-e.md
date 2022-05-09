@@ -8,7 +8,10 @@ lang: en
 ---
 
 <div class="attention" markdown="1">
-Make sure the file names are constructed only from alphanumerals [A-Z,a-z,0-9], underscores [_], hyphens [-] and dots [.], with no whitespaces, brackets, other punctuations or symbols.
+* Make sure the file names are constructed only from alphanumerals [A-Z,a-z,0-9], underscores [_], hyphens [-] and dots [.], with no whitespaces, brackets, other punctuations or symbols.
+* Filename should be unique in a study.
+* Do not include subdirectories.
+* Files archived by tar or zip per study or sample, are accepted. Do not include subdirectories.
 </div>
 
 ## Mass spectrometry (MS) {#ms}
