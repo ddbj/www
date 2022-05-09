@@ -212,7 +212,7 @@ List of Qualifiers for SUBMITTER
 
   - Basically it is necessary to enter one SUBMITTER for each entry. But [COMMON](#common) can be used for describing SUBMITTER that is common to all entries.  
     When SUBMITTER is written by using COMMON, SUBMITTER cannot be used for the other entries in the same annotation file.
-  - [Submitters](/ddbj/submission.html#submitter) are the persons who have the responsibility in the contents of the submitted data and have the right to update the data.
+  - [Submitters](/ddbj/submission-e.html#submitter) are the persons who have the responsibility in the contents of the submitted data and have the right to update the data.
   - Qualifier: ab\_name in SUBMITTER can be used repeatedly for multiple submitters and those submitters are shown in the released file in
     the order of this annotation file.
   - It is necessary to specify a contact person whom DDBJ will contact with about the data by using Qualifier: contact.
@@ -487,17 +487,17 @@ Specified values for KEYWORD/keyword(<span class="red">Requierd</span>)
   </thead>
   <tbody>
     <tr>
-      <td><a href="/ddbj/wgs.html">WGS</a></td>
+      <td><a href="/ddbj/wgs-e.html">WGS</a></td>
       <td><span class="red">WGS</span></td>
       <td>see also <a href="#wgs_con">For WGS and scaffold CON</a>.</td>
     </tr>
     <tr>
-      <td><a href="/ddbj/env.html">ENV</a></td>
+      <td><a href="/ddbj/env-e.html">ENV</a></td>
       <td><span class="red">ENV</span></td>
       <td></td>
     </tr>
     <tr>
-      <td rowspan="2"><a href="/ddbj/est.html">EST</a></td>
+      <td rowspan="2"><a href="/ddbj/est-e.html">EST</a></td>
       <td><span class="red">EST</span></td>
       <td></td>
     </tr>
@@ -506,18 +506,18 @@ Specified values for KEYWORD/keyword(<span class="red">Requierd</span>)
       <td>Please refer to <a href="#est">For EST Submissions</a>.</td>
     </tr>
     <tr>
-      <td><a href="/ddbj/htc.html">HTC</a></td>
+      <td><a href="/ddbj/htc-e.html">HTC</a></td>
       <td>
       <span class="red">HTC</span> some other terms</td>
       <td>Please contact us before your submission.</td>
     </tr>
     <tr>
-      <td><a href="/ddbj/htg.html">HTG</a></td>
+      <td><a href="/ddbj/htg-e.html">HTG</a></td>
       <td><span class="red">HTG</span>, <a href="#htg">some other terms</a></td>
-      <td>Depending on the <a href="/documents/data-categories.html#est">phase</a>. Please contact us before your submission.</td>
+      <td>Depending on the <a href="/documents/data-categories-e.html#est">phase</a>. Please contact us before your submission.</td>
     </tr>
     <tr>
-      <td><a href="/ddbj/gss.html">GSS</a></td>
+      <td><a href="/ddbj/gss-e.html">GSS</a></td>
       <td><span class="red">GSS</span></td>
       <td></td>
     </tr>
@@ -527,7 +527,7 @@ Specified values for KEYWORD/keyword(<span class="red">Requierd</span>)
       <td></td>
     </tr>
     <tr>
-      <td rowspan="2"><a href="/ddbj/tpa.html">TPA</a></td>
+      <td rowspan="2"><a href="/ddbj/tpa-e.html">TPA</a></td>
       <td><span class="red">TPA, Third Party Data</span></td>
       <td></td>
     </tr>
@@ -536,12 +536,12 @@ Specified values for KEYWORD/keyword(<span class="red">Requierd</span>)
       <td>Either of two is mandatory.</td>
     </tr>
     <tr>
-      <td><a href="/ddbj/tsa.html">TSA</a></td>
+      <td><a href="/ddbj/tsa-e.html">TSA</a></td>
       <td><span class="red">TSA, Transcriptome Shotgun Assembly</span></td>
       <td></td>
     </tr>
     <tr>
-      <td><a href="/ddbj/tls.html">TLS</a></td>
+      <td><a href="/ddbj/tls-e.html">TLS</a></td>
       <td><span class="red">TLS, Targeted Locus Study</span></td>
       <td></td>
     </tr>
@@ -676,7 +676,7 @@ Value formats of ff\_definition
       <td>@@[organism]@@ @@[strain]@@ DNA, @@[submitter_seqid]@@, [other information]</td>
     </tr>
     <tr>
-      <td>BAC/YAC genomic clones in unfinished phase (<a href="/ddbj/htg.html">HTG</a>)</td>
+      <td>BAC/YAC genomic clones in unfinished phase (<a href="/ddbj/htg-e.html">HTG</a>)</td>
       <td>@@[organism]@@ DNA, chromosome @@[map]@@, [BAC/YAC] clone: @@[clone]@@, *** SEQUENCING IN PROGRESS ***</td>
     </tr>
     <tr>
@@ -684,14 +684,14 @@ Value formats of ff\_definition
       <td>@@[organism]@@ DNA, chromosome @@[map]@@, [BAC/YAC] clone: @@[clone]@@</td>
     </tr>
     <tr>
-      <td rowspan="2"><a href="/ddbj/est.html">EST</a></td>
+      <td rowspan="2"><a href="/ddbj/est-e.html">EST</a></td>
       <td>@@[organism]@@ mRNA, clone: @@[clone]@@, [other information]</td>
     </tr>
     <tr>              
       <td>@@[organism]@@ cDNA, clone: @@[clone]@@, [other information]</td>     
     </tr>
     <tr>
-      <td><a href="/ddbj/gss.html">GSS</a></td>
+      <td><a href="/ddbj/gss-e.html">GSS</a></td>
       <td>@@[organism]@@ DNA, clone: @@[clone]@@, [other information]</td>
     </tr>
     <tr>
