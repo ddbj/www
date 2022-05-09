@@ -142,14 +142,6 @@ category: about
     </ul>  
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/hata.jpg" title="秦 千比呂"></p>
-        <div class="explanation">
-            <p class="name">秦 千比呂</p>
-            <p class="name">Chihiro Hata, PhD</p>
-            <p class="position">データ登録：NGS</p>
-        </div>
-        </li> 
-        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/iizuka.jpg" title="飯塚朋代"></p>
         <div class="explanation">
             <p class="name">飯塚 朋代</p>
