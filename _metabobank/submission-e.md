@@ -33,6 +33,7 @@ Submit experimental raw and processed data files, and identified metabolites as 
 ### 2. Apply submission {#form}
 
 Apply a submission from the [MetaboBank submission form](https://docs.google.com/forms/d/157KHuapqWPBXDhxIE6V0GqyvoOTgojhOQNAI4hsJKfA). MetaboBank team will inform you how to submit your data.   
+If you can not access the form, [download the form file](/assets/files/text/ms-form-e.txt), fill in the file and send it to <img src="/assets/images/ddbj/mb-address.png"> by email.
 
 ### 3. Create BioProject {#bp}
 

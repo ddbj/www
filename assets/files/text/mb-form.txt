@@ -1,0 +1,47 @@
+## MetaboBank 登録申し込み記入項目 ##
+
+# *必須項目
+# [] 該当する項目を [X] でマーク。
+
+------------------------------------------------------------------------------------------------
+*氏名
+
+
+*メールアドレス
+
+
+*所属
+
+
+*データの概要
+
+
+*公開予定
+[] 即日公開
+[] 非公開（三年以内の特定の日まで、もしくは、論文が公表されるまで）
+
+*ファイルサイズ
+# データファイルの合計サイズ (例 40 GB)
+
+
+*データ種別
+# 該当するものを全て選択してください。詳細: https://www.ddbj.nig.ac.jp/metabobank/metadata.html
+
+[] Liquid chromatography-mass spectrometry (LC-MS)
+[] Liquid chromatography, diode array detector-mass spectrometry (LC-DAD-MS)
+[] Gas chromatography-mass spectrometry (GC-MS)
+[] Two dimensional gas chromatography-mass spectrometry (GCGC-MS)
+[] Gas chromatography, flame ionization detector-mass spectrometry (GC-FID-MS)
+[] Capillary electrophoresis-mass spectrometry (CE-MS)
+[] Direct infusion-mass spectrometry (DI-MS)
+[] Flow injection analysis-mass spectrometry (FIA-MS)
+[] Matrix-assisted laser desorption-ionisation mass spectrometry (MALDI-MS)
+[] Mass spectrometry imaging (MSI)
+[] Nuclear magnetic resonance spectroscopy (NMR)
+[] その他
+
+コメント
+# MetaboBank スタッフへの伝達事項を記入してください（任意）。
+
+
+------------------------------------------------------------------------------------------------

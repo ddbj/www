@@ -1,0 +1,47 @@
+## MetaboBank submission form ##
+
+# *Required
+# [] - select item(s) that apply by marking as [X].
+
+------------------------------------------------------------------------------------------------
+*Name
+
+
+*Email address
+
+
+*Affiliation
+
+
+*Data summary
+
+
+*Hold until
+[] Release immediately following processing
+[] Release on specified date or upon publication, whichever is first
+
+*Total file size
+# Total file size (for example, 40 GB)
+
+
+*Submission types
+# Select all types that apply. For details, see: https://www.ddbj.nig.ac.jp/metabobank/metadata-e.html
+
+[] Liquid chromatography-mass spectrometry (LC-MS)
+[] Liquid chromatography, diode array detector-mass spectrometry (LC-DAD-MS)
+[] Gas chromatography-mass spectrometry (GC-MS)
+[] Two dimensional gas chromatography-mass spectrometry (GCGC-MS)
+[] Gas chromatography, flame ionization detector-mass spectrometry (GC-FID-MS)
+[] Capillary electrophoresis-mass spectrometry (CE-MS)
+[] Direct infusion-mass spectrometry (DI-MS)
+[] Flow injection analysis-mass spectrometry (FIA-MS)
+[] Matrix-assisted laser desorption-ionisation mass spectrometry (MALDI-MS)
+[] Mass spectrometry imaging (MSI)
+[] Nuclear magnetic resonance spectroscopy (NMR)
+[] Other
+
+Comment
+# Comment to the MetaboBank staff (optional)
+
+
+------------------------------------------------------------------------------------------------
