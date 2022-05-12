@@ -365,7 +365,7 @@ Example: COMMENT and ST\_COMMENT in annotation file
 
 ### Requirements for Describing ST\_COMMENT (Structured Comment)  {#describing_st_comment}
 
-  - ST\_COMMENT is a feature to describe [the structured comment in the flat file](/ddbj/flat-file-e.html#Comment).
+  - ST\_COMMENT is a feature to describe the structured comment in the flat file.
 
   - Though ST\_COMMENT can be defined by user community, ST\_COMMENT in predetermined format is required to submit sequence data derived from [genome Project](/ddbj/genome-e.html) (including [WGS](/ddbj/wgs-e.html)) or [transcriptome Project](/ddbj/transcriptome-e.html) (including [TSA](/ddbj/tsa-e.html)).
 
