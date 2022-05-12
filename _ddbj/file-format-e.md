@@ -363,9 +363,9 @@ Example: COMMENT and ST\_COMMENT in annotation file
   - When you describe two or more COMMENT features for an entry, they will be shown on the DDBJ flat file in the same order on the annotation file.
   - For EST submissions, some particular COMMENT description is required.[Details](#wgs_con)
 
-### Requirements for Describing ST\_COMMENT (structured COMMENT)  {#describing_st_comment}
+### Requirements for Describing ST\_COMMENT (Structured Comment)  {#describing_st_comment}
 
-  - ST\_COMMENT is a feature to describe [structured COMMENT](/ddbj/flat-file-e.html#Comment).
+  - ST\_COMMENT is a feature to describe [the structured comment in the flat file](/ddbj/flat-file-e.html#Comment).
 
   - Though ST\_COMMENT can be defined by user community, ST\_COMMENT in predetermined format is required to submit sequence data derived from [genome Project](/ddbj/genome-e.html) (including [WGS](/ddbj/wgs-e.html)) or [transcriptome Project](/ddbj/transcriptome-e.html) (including [TSA](/ddbj/tsa-e.html)).
 
