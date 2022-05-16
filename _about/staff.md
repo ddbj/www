@@ -144,7 +144,7 @@ category: about
         <li class="staff">
         <p class="photo"><img src="" title="濱岡一弘"></p>
         <div class="explanation">
-            <p class="name">濱岡 一弘</p>
+            <p class="name">濵岡 一弘</p>
             <p class="name">Kazuhiro Hamaoka, PhD</p>
             <p class="position">データ登録：NSSS</p>
         </div>
