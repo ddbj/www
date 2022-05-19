@@ -130,7 +130,7 @@ category: about
     </ul>  
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="" title="Kazuhiro Hamaoka"></p>
+        <p class="photo"><img src="/assets/images/staff/hamaoka.jpg" title="Kazuhiro Hamaoka"></p>
         <div class="explanation">
             <p class="name">Kazuhiro Hamaoka, PhD</p>
             <p class="position">Data Submission: NSSS</p>
