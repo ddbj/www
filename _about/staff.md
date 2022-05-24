@@ -142,6 +142,14 @@ category: about
     </ul>  
     <ul class="list">
         <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/hamaoka.jpg" title="濵岡一弘"></p>
+        <div class="explanation">
+            <p class="name">濵岡 一弘</p>
+            <p class="name">Kazuhiro Hamaoka, PhD</p>
+            <p class="position">データ登録：NSSS</p>
+        </div>
+        </li> 
+        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/iizuka.jpg" title="飯塚朋代"></p>
         <div class="explanation">
             <p class="name">飯塚 朋代</p>
@@ -211,6 +219,14 @@ category: about
             </li>
     </ul>
     <ul class="list">
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/twatanabe.jpg" title="渡邊とも子"></p>
+        <div class="explanation">
+            <p class="name">渡邊 とも子</p>
+            <p class="name">Tomoko Watanabe</p>
+            <p class="position">登録データの修正/更新</p>
+        </div>
+        </li>
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yokoyama.jpg" title="横山会美"></p>
         <div class="explanation">

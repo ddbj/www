@@ -1,3 +1,7 @@
 top_news:
   ja:
+    - title: BioProject locus tag prefix 予約機能の不具合
+      path: 2022-05-13
   en:
+    - title: Locus tag prefix registration is not working in BioProject
+      path: 2022-05-13-e

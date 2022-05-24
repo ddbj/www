@@ -130,6 +130,13 @@ category: about
     </ul>  
     <ul class="list">
         <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/hamaoka.jpg" title="Kazuhiro Hamaoka"></p>
+        <div class="explanation">
+            <p class="name">Kazuhiro Hamaoka, PhD</p>
+            <p class="position">Data Submission: NSSS</p>
+        </div>
+        </li>
+        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/iizuka.jpg" title="Tomoyo Iizuka"></p>
         <div class="explanation">
             <p class="name">Tomoyo Iizuka, PhD</p>
@@ -191,6 +198,13 @@ category: about
             </li>
     </ul>
     <ul class="list">
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/twatanabe.jpg" title="Emi Yokoyama"></p>
+        <div class="explanation">
+            <p class="name">Tomoko Watanabe</p>
+            <p class="position">Data Updates/Correction</p>
+        </div>
+        </li>
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yokoyama.jpg" title="Emi Yokoyama"></p>
         <div class="explanation">
