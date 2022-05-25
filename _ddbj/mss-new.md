@@ -190,7 +190,7 @@ c. 単一真核生物個体の chromosome ドラフトゲノムとアセンブ�
 - MSS formからアップロード    
 MSS form での利用申請時に登録ファイルをアップロードできます。申請時にファイルをアップロードできない場合には、申請完了後に通知されるメールにアップロードサイトへのリンクが表示されますので、登録ファイル完成後に登録ファイルをアップロードして下さい。
 - SFTP によるファイル転送    
-ファイルサイズが合計で 10 Gbyte を超える場合は、公開鍵と秘密鍵を用いた [SFTP によるファイル転送をお勧めいたします。アカウント作成セクション](#account)をご覧いただき、公開鍵と秘密鍵を用意してください。
+ファイルサイズが合計で 10 Gbyte を超える場合は、公開鍵と秘密鍵を用いた SFTP によるファイル転送をお勧めいたします。この場合、[アカウント作成](#account)をご覧いただき、公開鍵と秘密鍵を用意してください。
 
 <div class="attention" markdown="1">
 ＜お願い＞ 特に理由のない限り、電子メール添付による登録ファイル送付はおやめください。
@@ -213,36 +213,42 @@ MSS form での利用申請時に登録ファイルをアップロードでき�
 
 | Your submission | BioProject | BioSample | Annotation with<br> biological feature | locus_tag | Need DRA | You should select |
 |---|
-| Draft genome w/ annotation | Mandatory | Mandatory | Mandatory | Mandatory | Optional | WGS |
-| Draft genome w/o annotation | Mandatory | Mandatory | Unnecessary | Unnecessary | Optional | WGS |
-| Finished level genome sequence, non-WGS | Mandatory | Mandatory | Mandatory | Mandatory | Optional | GNM |
-| Metagenome-Assembled Genome w/ annotation | Mandatory | Mandatory | Mandatory | Mandatory | Mandatory | MAG |
-| Metagenome-Assembled Genome w/o annotation | Mandatory | Mandatory | Unnecessary | Unnecessary | Mandatory | MAG |
-| Single Amplified Genome w/ annotation | Mandatory | Mandatory | Mandatory | Mandatory | Optional | SAG |
-| Single Amplified Genome w/o annotation | Mandatory | Mandatory | Unnecessary | Unnecessary | Optional | SAG |
-| High Throughput Genomic Sequences | Mandatory | Mandatory | Optional | Unnecessary | Optional | HTG |
-| Transcriptome Shotgun Assembly | Mandatory | Mandatory | Optional | Unnecessary | Mandatory | TSA |
-| High Throughput cDNA Sequences | Mandatory | Mandatory | Optional | Unnecessary | Optional | HTC |
-| Expressed Sequence Tags | Mandatory | Mandatory | Unnecessary | Unnecessary | Optional | EST |
-| Virus/Phage genome | Unnecessary | Unnecessary | Optional | Unnecessary | Optional | MISC |
-| Plasmid genome only | Unnecessary | Unnecessary | Optional | Unnecessary | Optional | MISC |
-| Organelle genome only | Unnecessary | Unnecessary | Optional | Unnecessary | Optional | MISC |
-| Finished Level Genome + Plasmid | Mandatory | Mandatory | Mandatory | Mandatory | Optional | GNM, MISC for each submission |
-| Finished Level Genome + Organelle | Mandatory | Mandatory | Mandatory | Mandatory | Optional | GNM, MISC for each submission |
+| Draft genome w/ annotation | M | M | M | M | OPT | WGS |
+| Draft genome w/o annotation | M | M | NR | NR | OPT | WGS |
+| Finished level genome sequence, non-WGS | M | M | M | M | OPT | GNM |
+| Metagenome-Assembled Genome w/ annotation | M | M | M | M | M | MAG |
+| Metagenome-Assembled Genome w/o annotation | M | M | NR | NR | M | MAG |
+| Single Amplified Genome w/ annotation | M | M | M | M | OPT | SAG |
+| Single Amplified Genome w/o annotation | M | M | NR | NR | OPT | SAG |
+| High Throughput Genomic Sequences | M | M | OPT | NR | OPT | HTG |
+| Transcriptome Shotgun Assembly | M | M | OPT | NR | M | TSA |
+| High Throughput cDNA Sequences | M | M | OPT | NR | OPT | HTC |
+| Expressed Sequence Tags | M | M | NR | NR | OPT | EST |
+| Virus/Phage genome | NR | NR | OPT | NR | OPT | MISC |
+| Plasmid genome only | NR | NR | OPT | NR | OPT | MISC |
+| Organelle genome only | NR | NR | OPT | NR | OPT | MISC |
+| Finished Level Genome + Plasmid | M | M | M | M | OPT | GNM, MISC for each submission |
+| Finished Level Genome + Organelle | M | M | M | M | OPT | GNM, MISC for each submission |
+
+M, Mandatory; NR, Not required; OPT, Optional
 
 - Transcriptome
 
 | Your submission | BioProject | BioSample | Annotation with<br> biological feature | locus_tag | Need DRA | You should select |
 |---|
-| Transcriptome Shotgun Assembly | Mandatory | Mandatory | Optional | Unnecessary | Mandatory | TSA |
-| High Throughput cDNA Sequences | Mandatory | Mandatory | Optional | Unnecessary | Optional | HTC |
-| Expressed Sequence Tags | Mandatory | Mandatory | Unnecessary | Unnecessary | Optional | EST |
+| Transcriptome Shotgun Assembly | M | M | OPT | NR | M | TSA |
+| High Throughput cDNA Sequences | M | M | OPT | NR | OPT | HTC |
+| Expressed Sequence Tags | M | M | NR | NR | OPT | EST |
+
+M, Mandatory; NR, Not required; OPT, Optional
 
 - Targeted Locus Study
 
 | Your submission | BioProject | BioSample | Annotation with<br> biological feature | locus_tag | Need DRA | You should select |
 |---|
-| Targeted Locus Study | Mandatory | Mandatory | Mandatory | Unnecessary | Optional | TLS |
+| Targeted Locus Study | M | M | M | NR | OPT | TLS |
+
+M, Mandatory; NR, Not required; OPT, Optional
 
 ## DFAST について: 原核生物ゲノムの登録  {#mssdfast}
 ### DFAST（DDBJ Fast Annotation and Submission Tool）  {#mssdfast-1}

@@ -183,7 +183,7 @@ Requirements that you can include the same application
   - Assembled transcribed sequences among the same species. It comprises multiple sets from different organisms.    
     &#x279E; TSA: Transcriptome Shotgun Assembly
 
-### Examples case where you must apply for the registration more than two times  {#submission-1}
+### Example case where you must apply for the registration more than two times  {#submission-1}
 
 a. Draft genome of chromosome, and complete plasmid sequences from a Bacterial strain
 : You must separate into two submissions.
@@ -204,7 +204,7 @@ c. Draft genome sequences of chromosomes from a eukaryotic isolate, and assemble
 - Uploading in MSS form    
 In the process of MSS application, you can upload the submission files in MSS form. Even if you cannot upload the submission files during the application, you can upload them later. You will find the link to upload files in the email that is sent from DDBJ just after the application.
 - Transferring by SFTP    
-If the total submission files exceed more than 10 Gbytes in uncompressed size, we recommend that you use [SFTP by using public/private key pair. In the case, see "Creating account" section](#account) and prepare public/private key for SFTP connection.
+If the total submission files exceed more than 10 Gbytes in uncompressed size, we recommend that you use SFTP by using public/private key pair. In the case, see ["Creating account" section](#account) and prepare public/private key for SFTP connection.
 
 <div class="attention" markdown="1">
 ＜NOTE＞ Do not send submission files as email attachment unless there is some particular reason.
@@ -225,36 +225,42 @@ If you specified immediate release in the submission process, the submitted data
 
 | Your submission | BioProject | BioSample | Annotation with<br> biological feature | locus_tag | Need DRA | You should select |
 |---|
-| Draft genome w/ annotation | Mandatory | Mandatory | Mandatory | Mandatory | Optional | WGS |
-| Draft genome w/o annotation | Mandatory | Mandatory | Unnecessary | Unnecessary | Optional | WGS |
-| Finished level genome sequence, non-WGS | Mandatory | Mandatory | Mandatory | Mandatory | Optional | GNM |
-| Metagenome-Assembled Genome w/ annotation | Mandatory | Mandatory | Mandatory | Mandatory | Mandatory | MAG |
-| Metagenome-Assembled Genome w/o annotation | Mandatory | Mandatory | Unnecessary | Unnecessary | Mandatory | MAG |
-| Single Amplified Genome w/ annotation | Mandatory | Mandatory | Mandatory | Mandatory | Optional | SAG |
-| Single Amplified Genome w/o annotation | Mandatory | Mandatory | Unnecessary | Unnecessary | Optional | SAG |
-| High Throughput Genomic Sequences | Mandatory | Mandatory | Optional | Unnecessary | Optional | HTG |
-| Transcriptome Shotgun Assembly | Mandatory | Mandatory | Optional | Unnecessary | Mandatory | TSA |
-| High Throughput cDNA Sequences | Mandatory | Mandatory | Optional | Unnecessary | Optional | HTC |
-| Expressed Sequence Tags | Mandatory | Mandatory | Unnecessary | Unnecessary | Optional | EST |
-| Virus/Phage genome | Unnecessary | Unnecessary | Optional | Unnecessary | Optional | MISC |
-| Plasmid genome only | Unnecessary | Unnecessary | Optional | Unnecessary | Optional | MISC |
-| Organelle genome only | Unnecessary | Unnecessary | Optional | Unnecessary | Optional | MISC |
-| Finished Level Genome + Plasmid | Mandatory | Mandatory | Mandatory | Mandatory | Optional | GNM, MISC for each submission |
-| Finished Level Genome + Organelle | Mandatory | Mandatory | Mandatory | Mandatory | Optional | GNM, MISC for each submission |
+| Draft genome w/ annotation | M | M | M | M | OPT | WGS |
+| Draft genome w/o annotation | M | M | NR | NR | OPT | WGS |
+| Finished level genome sequence, non-WGS | M | M | M | M | OPT | GNM |
+| Metagenome-Assembled Genome w/ annotation | M | M | M | M | M | MAG |
+| Metagenome-Assembled Genome w/o annotation | M | M | NR | NR | M | MAG |
+| Single Amplified Genome w/ annotation | M | M | M | M | OPT | SAG |
+| Single Amplified Genome w/o annotation | M | M | NR | NR | OPT | SAG |
+| High Throughput Genomic Sequences | M | M | OPT | NR | OPT | HTG |
+| Transcriptome Shotgun Assembly | M | M | OPT | NR | M | TSA |
+| High Throughput cDNA Sequences | M | M | OPT | NR | OPT | HTC |
+| Expressed Sequence Tags | M | M | NR | NR | OPT | EST |
+| Virus/Phage genome | NR | NR | OPT | NR | OPT | MISC |
+| Plasmid genome only | NR | NR | OPT | NR | OPT | MISC |
+| Organelle genome only | NR | NR | OPT | NR | OPT | MISC |
+| Finished Level Genome + Plasmid | M | M | M | M | OPT | GNM, MISC for each submission |
+| Finished Level Genome + Organelle | M | M | M | M | OPT | GNM, MISC for each submission |
+
+M, Mandatory; NR, Not required; OPT, Optional
 
 - Transcriptome
 
 | Your submission | BioProject | BioSample | Annotation with<br> biological feature | locus_tag | Need DRA | You should select |
 |---|
-| Transcriptome Shotgun Assembly | Mandatory | Mandatory | Optional | Unnecessary | Mandatory | TSA |
-| High Throughput cDNA Sequences | Mandatory | Mandatory | Optional | Unnecessary | Optional | HTC |
-| Expressed Sequence Tags | Mandatory | Mandatory | Unnecessary | Unnecessary | Optional | EST |
+| Transcriptome Shotgun Assembly | M | M | OPT | NR | M | TSA |
+| High Throughput cDNA Sequences | M | M | OPT | NR | OPT | HTC |
+| Expressed Sequence Tags | M | M | NR | NR | OPT | EST |
+
+M, Mandatory; NR, Not required; OPT, Optional
 
 - Targeted Locus Study
 
 | Your submission | BioProject | BioSample | Annotation with<br> biological feature | locus_tag | Need DRA | You should select |
 |---|
-| Targeted Locus Study | Mandatory | Mandatory | Mandatory | Unnecessary | Optional | TLS |
+| Targeted Locus Study | M | M | M | NR | OPT | TLS |
+
+M, Mandatory; NR, Not required; OPT, Optional
 
 ## DFAST for the submission of prokaryote genomes  {#mssdfast}
 ### DFAST（DDBJ Fast Annotation and Submission Tool）  {#mssdfast-1}
