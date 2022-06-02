@@ -90,7 +90,7 @@ element（遺伝子）に属していることを示すことができます（c
 Affymetrix アレイは probe set で対象を測定する仕組みであるため、その ADF ファイルは常に composite
 element を持ちます。
 
-以下に７つの feature、２つの reporter と１つの composite element を持つ仮想的な例を示します。
+以下に１６個の feature、５個の reporter と２個の composite element を持つ仮想的な例を示します。
 
 
 {% include image.html url="magetab/adf3.png" caption="ADF feature、reporter、composite element の例" class="w450" %}
