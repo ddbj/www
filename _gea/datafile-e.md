@@ -212,7 +212,7 @@ with four columns followed by columns of data:
 | MetaColumn | MetaRow | Column | Row |
 
 
-### Processed data files  {#seq_proc} 
+### Processed data files  {#array-proc} 
 
 Processed files are generated from raw files by procedures such as
 background correction, normalization, and further statistical analyses
