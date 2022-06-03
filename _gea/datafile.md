@@ -162,7 +162,7 @@ BlockColumn/BlockRow/Column/Row
 
 | MetaColumn | MetaRow | Column | Row |
 
-### 解析データファイル  {#array_proc} 
+### 解析データファイル  {#array-proc} 
 
 解析データファイル（processed file）は生データファイルにバックグラウンド補正、正規化や統計的な解析（例 fold-change と
 p-value の計算）を施すことで得られるファイルのことです。最終的な解析ファイル（final processed
