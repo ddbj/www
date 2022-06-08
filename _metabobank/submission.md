@@ -7,23 +7,11 @@ current_tab: submission
 lang: ja
 ---
 
-## 概要  {#overview}
-
-MetaboBank は質量分析 (Mass spectrometry)、NMR や質量分析イメージングによって得られたメタボロミクスデータの登録を受付けています。
-メタデータは MAGE-TAB 形式を使用しています。MAGE-TAB は機能ゲノミクスデータのためのデータベース [GEA](/gea/index.html) と EBI [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/) で長年使用されており、最近はプロテオミクス分野でも使われ始めています ([SDRF-Proteomics](https://www.nature.com/articles/s41467-021-26111-3))。EBI のメタボロミクスデータベース [MetaboLights](https://www.ebi.ac.uk/metabolights/) は MAGE-TAB と互換性のある ISA-TAB 形式を使用しており、MetaboBank と MetaboLights はデータの標準化において協力しています。
-
-<div class="attention" markdown="1">
-  <span class="red">ヒトを対象とした研究データの登録について</span>  
-  : 研究対象者に由来するデータを DDBJ
-    センターが運営するデータベースに登録する場合、研究対象者の尊厳及び人権は、適用されるべき法令、指針、ガイドライン、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。原則として、研究対象者を直接特定し得る情報はメタデータから取り除いてください。 ヒトを対象とした研究データを登録する場合は「[ヒトを対象とした研究データの登録について](/policies.html#submission-of-human-data)」を熟読してください。
-</div>
-
 ## 登録の流れ  {#submission}
 
-MetaboBank は関連するデータをまとめるため BioProject と BioSample と連携しています。
-BioProject/BioSample と連携することにより、メタボロミクスデータがデータベースを横断して関連する塩基配列や遺伝子発現データとまとめられます。  
-メタデータは実験種別毎に用意されたエクセルファイルに記入して作成します。  
-データファイルとしては生データと解析済みデータを準備し、同定・推定された化合物に関する情報は所定の形式である Metabolite assignment file (MAF) に記載します。
+MetaboBank は、塩基配列や遺伝子発現データと関連づけられるように BioProject と BioSample と連携しています。
+メタデータは実験種別毎に用意されたエクセルファイル（以下に記載するMAGE-TAB の IDF と SDRF）に記載します。  
+解析済みのデータ（同定・推定された化合物に関する情報）は所定の形式である Metabolite assignment file (MAF) に記載します。
 
 ### 1. 登録アカウントの取得  {#account}
 
@@ -42,19 +30,20 @@ BioProject/BioSample と連携することにより、メタボロミクスデ�
 
 ### 4. BioSample の登録 {#bs}
 
-データを得るために使われたサンプルを BioSample に登録します。メタボロミクス用サンプルには [Omics パッケージ](/biosample/submission.html#Sample-type)の使用を推奨します。  
-非生物サンプルの生物名には NCBI Taxonomy [metagenomes](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&keep=1&srchmode=1&unlock) から適切な名前、例えば食品サンプルであれば "[food metagenome](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=870726&lvl=3&lin=f&keep=1&srchmode=1&unlock)" を選びます。
-その他の例についてはこちらの FAQ をご覧ください。FAQ: [非生物サンプルの生物名には何を選べばよいでしょうか？](/faq/ja/organism-for-material.html)    
+データを得るために使われた試料情報を BioSample に登録します。メタボロミクス用サンプルには [Omics パッケージ](/biosample/submission.html#Sample-type)を使用します。  
+非生物サンプルの場合、生物名には NCBI Taxonomy [metagenomes](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&keep=1&srchmode=1&unlock) から適切なものを選んでください。
+- ブランク [blank sample] (https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=2582415&lvl=3&lin=f&keep=1&srchmode=1&unlock)
+- 食品 [food metagenome](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=870726&lvl=3&lin=f&keep=1&srchmode=1&unlock)
+- その他はこちらの FAQ をご覧ください。FAQ: [非生物サンプルの生物名には何を選べばよいでしょうか？](/faq/ja/organism-for-material.html)    
 プレフィックス SAMD のアクセッション番号がサンプルに対して発行されます。
 
 ### 5. メタデータの作成  {#metadata}
 
 [実験の種類毎に用意されたエクセルファイル](/metabobank/metadata.html)をダウンロードし、メタデータを記入します。
 エクセルは MAGE-TAB の IDF と SDRF に対応したタブから構成されています。  
-種類が異なるデータは Study を分けて登録します。関連する Study は BioProject でまとめます。例 BioProject PRJDB100 - MTBKS1000 (LC-MS)、MTBKS1001 (GC-MS)。
-
-- IDF (Investigation Description Format): 研究概要、実験デザイン、プロトコール、文献情報や登録者情報といった研究全体を記述
+- IDF (Investigation Description Format): 研究概要、実験デザイン、プロトコール、文献情報や登録者情報といった研究概要を記述
 - SDRF (Sample and Data Relationship Format): サンプル属性およびサンプル、測定機器とデータファイルの関係性を記述
+実験デザインが異なるデータは Study を分けて登録します。関連する Study は BioProject でまとめます。例 BioProject PRJDB100 - MTBKS1000 (LC-MS)、MTBKS1001 (GC-MS)。
 
 ### 6. データファイルの準備  {#data-files}
 
@@ -87,7 +76,7 @@ MTBKSn (例 MTBKS1)
 
 ## データ公開  {#release}
 
-関連する論文が公表されるまでデータを非公開にすることができます。三年後までの公開予定日を設定し、随時延長することができます。登録されたデータは[データ公開原則](/documents/data-release-policy.html)に従って公開されます。EBI [MetaboLights](https://www.ebi.ac.uk/metabolights/) とはデータを交換していません。
+関連する論文が公表されるまでデータを非公開にすることができます。三年後までの公開予定日を設定し、随時延長することができます。登録されたデータは[データ公開原則](/documents/data-release-policy.html)に従って公開されます。EBI [MetaboLights](https://www.ebi.ac.uk/metabolights/) とは現在データを交換していません。
 
 FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
 
