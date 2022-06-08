@@ -7,7 +7,7 @@ lang: ja
 ---
 
 MetaboBank は質量分析、NMR、あるいは質量分析イメージングによって得られたメタボロミクスデータの登録を受付ける公共リポジトリです。
-メタデータは MAGE-TAB 形式で、機能ゲノミクス（ [GEA](/gea/index.html) や EBI [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/) ）、プロテオミクス([SDRF-Proteomics](https://www.nature.com/articles/s41467-021-26111-3)と共通です。
+メタデータは MAGE-TAB 形式で、機能ゲノミクス（ [GEA](/gea/index.html) や EBI の[ArrayExpress](https://www.ebi.ac.uk/arrayexpress/) ）、プロテオミクス([SDRF-Proteomics](https://www.nature.com/articles/s41467-021-26111-3)と共通です。
 EBI のメタボロミクスデータベース [MetaboLights](https://www.ebi.ac.uk/metabolights/) のISA-TABとも互換性があります。
 
 MetaboBank と MetaboLights はデータの標準化において協力しています。
