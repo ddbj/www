@@ -567,7 +567,7 @@ metabobank:
       url: https://ddbj.nig.ac.jp/public/metabobank/project/
     - id: contact  
       title: Contact 
-      url: /metabobank/about-metabobank.html
+      url: /metabobank/contact.html
   en:
     - id: home  
       title: Home 
@@ -593,7 +593,7 @@ metabobank:
       url: https://ddbj.nig.ac.jp/public/metabobank/project/
     - id: contact
       title: Contact
-      url: /metabobank/about-metabobank-e.html
+      url: /metabobank/contact-e.html
 
 jga:
   ja:	
