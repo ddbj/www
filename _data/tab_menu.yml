@@ -541,6 +541,59 @@ gea:
       title: About GEA
       url: /gea/about-gea-e.html
 
+metabobank:
+  ja:
+    - id: home  
+      title: Home 
+      url: /metabobank/index.html 
+    - id: submission 
+      title: Submission  
+      url: /metabobank/submission.html  
+      children: 
+        - title: Metadata 
+          url: /metabobank/metadata.html  
+        - title: Data File  
+          url: /metabobank/datafile.html  
+        - title: Validation 
+          url: /metabobank/validation.html  
+    - id: faq 
+      title: FAQ  
+      url: /faq/ja/index.html?tag=metabobank  
+    - id: search  
+      title: Search
+      url: https://mb2.ddbj.nig.ac.jp/search/
+    - id: download 
+      title: Download  
+      url: https://ddbj.nig.ac.jp/public/metabobank/project/
+    - id: contact  
+      title: Contact 
+      url: /metabobank/about-metabobank.html
+  en:
+    - id: home  
+      title: Home 
+      url: /metabobank/index-e.html 
+    - id: submission 
+      title: Submission  
+      url: /metabobank/submission-e.html  
+      children: 
+        - title: Metadata 
+          url: /metabobank/metadata-e.html  
+        - title: Data File  
+          url: /metabobank/datafile-e.html  
+        - title: Validation 
+          url: /metabobank/validation-e.html  
+    - id: faq 
+      title: FAQ  
+      url: /faq/en/index-e.html?tag=metabobank  
+    - id: search  
+      title: Search
+      url: https://mb2.ddbj.nig.ac.jp/search/
+    - id: download 
+      title: Download  
+      url: https://ddbj.nig.ac.jp/public/metabobank/project/
+    - id: contact
+      title: Contact
+      url: /metabobank/about-metabobank-e.html
 
 jga:
   ja:	
