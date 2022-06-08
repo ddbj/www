@@ -31,10 +31,10 @@ MetaboBank は、塩基配列や遺伝子発現データと関連づけられる
 ### 4. BioSample の登録 {#bs}
 
 データを得るために使われた試料情報を BioSample に登録します。メタボロミクス用サンプルには [Omics パッケージ](/biosample/submission.html#Sample-type)を使用します。  
-非生物サンプルの場合、生物名には NCBI Taxonomy [metagenomes](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&keep=1&srchmode=1&unlock) から適切なものを選んでください。
-- ブランク [blank sample] (https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=2582415&lvl=3&lin=f&keep=1&srchmode=1&unlock)
+非生物サンプルの場合、生物名には NCBI Taxonomy [metagenomes](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&keep=1&srchmode=1&unlock) などから適切なものを選んでください。
+- ブランク [blank sample](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=2582415&lvl=3&lin=f&keep=1&srchmode=1&unlock)
 - 食品 [food metagenome](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=870726&lvl=3&lin=f&keep=1&srchmode=1&unlock)
-- その他はこちらの FAQ をご覧ください。FAQ: [非生物サンプルの生物名には何を選べばよいでしょうか？](/faq/ja/organism-for-material.html)    
+- その他はこちら　FAQ: [非生物サンプルの生物名には何を選べばよいでしょうか？](/faq/ja/organism-for-material.html)    
 プレフィックス SAMD のアクセッション番号がサンプルに対して発行されます。
 
 ### 5. メタデータの作成  {#metadata}
