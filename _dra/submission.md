@@ -513,7 +513,7 @@ DRA のメタデータ作成ツールは technical read (アダプター、プ�
 BAM は Sequence Alignment/Map (SAM) ファイル形式のバイナリー圧縮です (詳細は [SAMv1.pdf](https://samtools.github.io/hts-specs/SAMv1.pdf))。BAM ファイルは SAM/BAM 用ツール (例えば [samtools](http://www.htslib.org/)) で human-readable なテキスト形式である SAM に変換することができます。BAM はアライメントされなかった unaligned read を含めることができます。DRA はプライマリーデータとして Run に unaligned read を含む BAM を登録することを推奨しています。
 
 SAM はリードの既知リファレンス配列へのアライメントに関する情報と生リードデータを含んだタブ区切りテキストファイルです。 SAM ファイルは二つの主要なセクション、ヘッダーとアライメント（シークエンスリード）セクション、から構成されます。 ここでは「BAM ファイルの DRA への登録」という観点で SAM フォーマットについて説明していることに留意してください（DRA は SAM ファイルでの登録を受付けていません）。 より詳細なファイルフォーマット仕様は [samtools ウェブサイト](http://www.htslib.org/)を参照してください。
-
+     
 10x Genomics のデータファイルについては GEA [Single-cell submission guide](/gea/single-cell.html) を参考にしてください。
 
 SAM ヘッダーの例:

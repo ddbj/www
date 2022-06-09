@@ -675,7 +675,7 @@ file is retained. Additionally, although the SAM format allows for an
 equal sign (=) in the sequence field to represent a match to the
 reference sequence or only an asterisk (*) in both the sequence and
 quality fields, the DRA processing software does not recognize either of these formats.
-
+     
 For 10x Genomics data files, please see the GEA [Single-cell submission guide](/gea/single-cell-e.html).
 
 Please note that unexpected notations used to indicated paired reads can lead to failure to recognize the pairs and an improper SRA archive (i.e.
