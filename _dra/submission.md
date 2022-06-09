@@ -489,8 +489,8 @@ Analysis に含めるデータファイルを選択します。
 ### 登録するデータファイルの形式について  {#formats-sequencing-data-files} 
 
 DRA のメタデータ作成ツールは technical read (アダプター、プライマーやバーコード配列) を記載することに対応していません。 「technical read を含む生データを登録する場合」や「[DRA XML schema](https://github.com/ddbj/pub/tree/master/docs/dra) 中にはあるがツール中には無い項目をメタデータに記載する場合」は[メタデータを XML ファイルで登録する](#create-metadata-in-xml-files)必要があります ([XML の記載例](/ddbj/example.html))。    
-10x Genomics のデータファイルについては [What format of 10x Genomics data should I submit to NCBI GEO/SRA?](https://kb.10xgenomics.com/hc/en-us/articles/360024716391-What-format-of-10x-Genomics-data-should-I-submit-to-NCBI-GEO-SRA) を参考にしてください。
 
+10x Genomics のデータファイルについては GEA [Single-cell submission guide](/gea/single-cell.html) を参考にしてください。
 
 一般的な形式
 
@@ -513,6 +513,8 @@ DRA のメタデータ作成ツールは technical read (アダプター、プ�
 BAM は Sequence Alignment/Map (SAM) ファイル形式のバイナリー圧縮です (詳細は [SAMv1.pdf](https://samtools.github.io/hts-specs/SAMv1.pdf))。BAM ファイルは SAM/BAM 用ツール (例えば [samtools](http://www.htslib.org/)) で human-readable なテキスト形式である SAM に変換することができます。BAM はアライメントされなかった unaligned read を含めることができます。DRA はプライマリーデータとして Run に unaligned read を含む BAM を登録することを推奨しています。
 
 SAM はリードの既知リファレンス配列へのアライメントに関する情報と生リードデータを含んだタブ区切りテキストファイルです。 SAM ファイルは二つの主要なセクション、ヘッダーとアライメント（シークエンスリード）セクション、から構成されます。 ここでは「BAM ファイルの DRA への登録」という観点で SAM フォーマットについて説明していることに留意してください（DRA は SAM ファイルでの登録を受付けていません）。 より詳細なファイルフォーマット仕様は [samtools ウェブサイト](http://www.htslib.org/)を参照してください。
+
+10x Genomics のデータファイルについては GEA [Single-cell submission guide](/gea/single-cell.html) を参考にしてください。
 
 SAM ヘッダーの例:
 
