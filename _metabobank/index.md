@@ -24,3 +24,6 @@ MetaboBank と MetaboLights はデータの標準化において協力してい�
 ## RDFデータ
 
 MetaboBankは[SPARQLエンドポイント](https://mb2.ddbj.nig.ac.jp/sparql)としても機能しています。
+
+### Version1からの移行について
+「メタボロミクス実践ガイド」（実験医学別冊）に記載されている初期のMetaboBankとはデータの登録方法が変更されています。申し訳ありませんがウェブサイトの案内に従ってお願いいたします。
