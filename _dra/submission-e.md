@@ -24,7 +24,7 @@ Biosystems SOLiD® System, and others. DRA is a member of the
 [International Nucleotide Sequence Database Collaboration
 (INSDC)](/about/insdc-e.html)and archiving the data in a close collaboration
 with [NCBI Sequence Read Archive
-(SRA)](https://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi)and [EBI Sequence
+(SRA)](https://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi) and [EBI Sequence
 Read Archive (ERA)](https://www.ebi.ac.uk/ena/).
 
 Three INSDC partners regularly exchange data other than Analysis.
