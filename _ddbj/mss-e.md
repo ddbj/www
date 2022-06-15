@@ -82,7 +82,7 @@ table tr:hover {
 
 **Recomend:** A. Apply for the submission after you have prepared the submission files
 <div class="mssflow">Create the submission files</div>
-<div class="mssflow">Log in with D-way account</div>
+<div class="mssflow"><a href="https://mss.ddbj.nig.ac.jp/">Log in with D-way account</a></div>
 <div class="mssflow">Fill MSS form & upload the submission files</div>
 <div class="mssflow">DDBJ creats a new Mass-ID, sends autoreply</div>
 <div class="mssflow">Review, inquiring and answering by email</div>
@@ -90,7 +90,7 @@ table tr:hover {
 <div class="mssflowend">Release the data, or hold until specified date</div>
 <p></p>
 B. Apply for the submission, and then you prepare the submission files
-<div class="mssflow">Log in with D-way account</div>
+<div class="mssflow"><a href="https://mss.ddbj.nig.ac.jp/">Log in with D-way account</a></div>
 <div class="mssflow">Fill MSS form</div>
 <div class="mssflow">DDBJ creats a new Mass-ID, sends autoreply</div>
 <div class="mssflow">Create the submission files</div>

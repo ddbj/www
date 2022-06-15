@@ -73,7 +73,7 @@ table tr:hover {
 
 **推奨:** A. 登録ファイル作成済みで申し込みいただく場合
 <div class="mssflow">登録ファイル作成</div>
-<div class="mssflow">D-wayアカウントでログイン</div>
+<div class="mssflow"><a href="https://mss.ddbj.nig.ac.jp/">D-wayアカウントでログイン</a></div>
 <div class="mssflow">MSS Form に記入、ファイルアップロード</div>
 <div class="mssflow">Mass-ID 発行・自動応答メール送付</div>
 <div class="mssflow">査定、質問・回答をメールでやりとり</div>
@@ -81,7 +81,7 @@ table tr:hover {
 <div class="mssflowend">データ公開または公開日までhold</div>
 <p></p>
 B. 申し込んでから登録ファイルを作成する場合
-<div class="mssflow">D-wayアカウントでログイン</div>
+<div class="mssflow"><a href="https://mss.ddbj.nig.ac.jp/">D-wayアカウントでログイン</a></div>
 <div class="mssflow">MSS Form に記入</div>
 <div class="mssflow">Mass-ID 発行・自動応答メール送付</div>
 <div class="mssflow">登録ファイル作成</div>
