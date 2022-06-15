@@ -262,7 +262,7 @@ M, Mandatory; NR, Not required; OPT, Optional
 1. [DFAST](https://dfast.ddbj.nig.ac.jp/) にアクセスし、[D-way アカウント](/account.html)でログインします。ジョブ投入画面において塩基配列ファイルをアップロードすると、解析が始まり job ID が発行されます。job 終了後、”DDBJ submission”  タブをクリックします。DDBJ への登録に必要な項目（BioProject ID、BioSample ID、locus_tag prefix、その他のメタ情報）を入力すると、MSS 登録ファイルが作成されます。（注１）
 1. 実行したjobの[履歴管理画面](https://dfast.ddbj.nig.ac.jp/help_login)にて登録を希望する job ID をチェックして選択状態にします。
 1. ファイル形式に"MSS"を選択し"DOWNLOAD"ボタンをクリックしてファイルをダウンロードしてください。このとき入力されたメタ情報のチェックを行います。警告が出た場合には入力した情報を確認してください（注２）。ファイルダウンロード後にテキストエディタ等で開いて修正をすることも可能です。
-1. [MSS 申し込み](/ddbj/mss-form.html)を行ってください。[MSS による登録の流れ](/ddbj/mss.html#flow)の手順にしたがい、ダウンロードした登録ファイルを DDBJ に送付してください。
+1. [MSS 申し込み](https://mss.ddbj.nig.ac.jp/)を行ってください。[MSS による登録の流れ](/ddbj/mss.html#flow)の手順にしたがい、ダウンロードした登録ファイルを DDBJ に送付してください。
 
 注１）ログインしていない状態でも DFAST を使ってゲノムアノテーションをすることは可能です。その場合には、履歴管理画面で job ID を指定して実行済みのjobを履歴に取り込むことができます。
 
