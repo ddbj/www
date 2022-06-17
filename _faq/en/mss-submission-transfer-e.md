@@ -1,15 +1,13 @@
 ---
 layout: simple
-title: How can I submit big submission files if they can not be transferred via e-mail?
+title: How can I submit the submission files when I fail to upload them because of a huge file size or numerous file numbers.
 category: faq
 db:
   - ddbj
 tags: 
   - Mass Submission System
-date: 2020-11-25T11:19:00
+date: 2022-06-17T14:00:00
 lang: en
 ---
 
-In such case, please inform us your D-way account.    
-Then, the submission files can be transferred to a sub directory (usually named ”mass") under your D-way account by scp ([File transfer](/ddbj/mss-e.html#File_transfer)).    
-Please visit the ["Data submission to DRA"](/dra/submission-e.html#dra-data-submission) for how to create a D-way account, if you do not have an account.
+If you are unable to upload the submission files from MSS application form, you should [transfer the files by SFTP](/ddbj/mss-e.html#sendfiles).
