@@ -8,6 +8,7 @@ Gemfile.lock
 node_modules
 package.json
 robots.txt
+README.md
 
 # Jekyll stuff
 /_site/
