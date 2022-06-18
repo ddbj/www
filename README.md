@@ -1,2 +1,2 @@
-# www, how to use
-## www
+# www, editing policies
+## 1. 
