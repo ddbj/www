@@ -47,6 +47,11 @@ The table of databases and data submission systems of the Bioinformation and DDB
       <td><a href="https://ddbj.nig.ac.jp/D-way">Submission portal D-way</a></td> 
     </tr>
     <tr>
+      <td><a href="/metabobank/index-e.html">MetaboBank</a></td> 
+      <td>A public repository for metabolomics data.</td> 
+      <td><a href="/metabobank/submission-e.html">MetaboBank submission form</a></td> 
+    </tr>
+    <tr>
       <td><a href="/jga/index-e.html">Japanese Genotype-phenotype Archive (JGA)</a></td> 
       <td>Individual-level human genetic and de-identified phenotypic data which require controlled-access.</td> 
       <td><a href="/jga/submission-e.html">JGA Submission</a></td> 

@@ -47,6 +47,11 @@ lang: ja
       <td><a href="https://ddbj.nig.ac.jp/D-way">Submission portal D-way</a></td> 
     </tr>
     <tr>
+      <td><a href="/metabobank/index.html">MetaboBank</a></td> 
+      <td>メタボロミクスデータの登録を受付ける公共リポジトリ</td> 
+      <td><a href="/metabobank/submission.html">MetaboBank 登録フォーム</a></td> 
+    </tr>
+    <tr>
       <td><a href="/jga/index.html">Japanese Genotype-phenotype Archive (JGA)</a></td> 
       <td>アクセス制限が必要な個人レベルの遺伝学的なデータと匿名化された表現型情報</td> 
       <td><a href="/jga/submission.html">JGA Submission</a></td> 
