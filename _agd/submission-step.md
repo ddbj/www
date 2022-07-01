@@ -58,7 +58,7 @@ NBDC 申請システムで自動入力させるため、アカウントに所属
 
 {% include image.html url="books/DS-JSUB.png" caption="提供申請と AGD submission ID" class="w250" %}
 
-AGD ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/submission/agd/ の下に Submission ID と同名のディレクトリが作成されるので、ここにメタデータをデータファイルを sftp でアップロードします。この例であればディレクトリは /controlled-access/submission/agd/JSUB000353/ になります。
+AGD ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/submission/agd/ の下に Submission ID と同名のディレクトリが作成されるので、ここにメタデータをデータファイルを sftp でアップロードします。この例であればディレクトリは /controlled-access/submission/agd/ASUB000353/ になります。
 
 ## エクセルでのメタデータ作成  {#create-metadata-using-excel}
 
@@ -68,7 +68,7 @@ AGD ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/subm
 
 [![AGD メタデータ記入用エクセル](/assets/images/parts/download.png "AGD メタデータ記入用エクセル"){:.w40}](/assets/files/submission/AGD_metadata.xlsx)
 
-last updated: 2021-05-21
+last updated: 2022-07-01
 
 <div class="attention" markdown="1">
 AGD にアップロードするファイル名には空白を含めないでください。
