@@ -58,7 +58,7 @@ NBDC 申請システムで自動入力させるため、アカウントに所属
 
 {% include image.html url="books/DS-JSUB.png" caption="提供申請と AGD submission ID" class="w250" %}
 
-AGD ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/submission/agd/ の下に Submission ID と同名のディレクトリが作成されるので、ここにメタデータをデータファイルを sftp でアップロードします。この例であればディレクトリは /controlled-access/submission/agd/ASUB000353/ になります。
+AGD ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /group-access/submission/agd/ の下に Submission ID と同名のディレクトリが作成されるので、ここにメタデータをデータファイルを sftp でアップロードします。この例であればディレクトリは /group-access/submission/agd/ASUB000353/ になります。
 
 ## エクセルでのメタデータ作成  {#create-metadata-using-excel}
 
@@ -84,7 +84,7 @@ AGD にアップロードするファイル名には空白を含めないでく�
 AGD にファイルを sftp でアップロードするためには [D-way アカウントに center name と公開鍵を登録](/account.html#enable-dra-submission-in-account)する必要があります。AGD サーバに ssh ログインすることはできません。
 </div>
 
-AGD ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/submission/agd/ の下に AGD Submission ID と同名のディレクトリが作成されるので、
+AGD ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /group-access/submission/agd/ の下に AGD Submission ID と同名のディレクトリが作成されるので、
 sftp の P オプションでポート番号 443 を指定してログインし、対象ディレクトリに移動しエクセルをアップロードします。
 sftp では公開鍵・秘密鍵認証を利用しており、[D-way アカウントに登録した秘密鍵](/account.html#generate-key-pair)を指定します。
 
@@ -94,7 +94,7 @@ sftp では公開鍵・秘密鍵認証を利用しており、[D-way アカウ�
 
 ```
 $ sftp -i private-key-for-auth -P 443 account_b@jga-gw.ddbj.nig.ac.jp
-$ cd controlled-access/submission/agd/ASUB000353
+$ cd /group-access/submission/agd/ASUB000353
 $ put ASUB000353_metadata.xlsx 
 ```
 -i: 認証用秘密鍵を指定
@@ -150,7 +150,7 @@ Data オブジェクトに fastq や bam ファイルなどの個人レベルの
 
 ```
 $ sftp -i private-key-for-auth -P 443 account_b@jga-gw.ddbj.nig.ac.jp
-$ cd controlled-access/submission/agd/ASUB000353
+$ cd /group-access/submission/agd/ASUB000353
 $ put wgs1.fastq
 ```
 -i: 認証用秘密鍵を指定
