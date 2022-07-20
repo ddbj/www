@@ -16,7 +16,7 @@ related_pages:
 
 |  DDBJ Release	  |  16S rRNA	  |  DAD Release	  |  Last published date  |
 | ---- | ---- | ---- | ---- |
-[126.0 (Jul. 2022)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/ddbj/ddbjrel.127.txt)  |   | [97.0 (Jul. 2022)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/dad/dadrel.97.txt)   | May 27, 2022
+[127.0 (Jul. 2022)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/ddbj/ddbjrel.127.txt)  |   | [97.0 (Jul. 2022)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/dad/dadrel.97.txt)   | May 27, 2022
 [126.0 (Mar. 2022)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/ddbj/ddbjrel.126.txt)  | [126.0 (Mar. 2022)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/16S/readme.126.txt)  | [96.0 (Mar. 2022)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/dad/dadrel.96.txt)   | Feb 25, 2022
 [125.0 (Dec. 2021)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/ddbj/ddbjrel.125.txt)  | [125.0 (Jan. 2022)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/16S/readme.125.txt)  | [95.0 (Dec. 2021)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/dad/dadrel.95.txt)   | Nov 26, 2021
 [124.0 (Jun. 2021)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/ddbj/ddbjrel.124.txt)  | [124.0 (Jul. 2021)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/16S/readme.124.txt)  | [94.0 (Jun. 2021)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/dad/dadrel.94.txt)   | May 28, 2021
