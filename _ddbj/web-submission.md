@@ -40,7 +40,7 @@ Web 版塩基配列登録システム（DDBJ Nucleotide Sequence Submission Syst
 
 ### 入力ガイド
 
-- [マニュアル (PDF)](/assets/files/pdf/ddbj/websubHelp_full-j.pdf)
+- [マニュアル (PDF)](/assets/files/pdf/ddbj/websubHelp_full.pdf)
 - [NSSS の紹介 (YouTube)](https://youtu.be/JTCV7bG_KJc)
 - [NSSS の紹介 (PDF)](https://drive.google.com/file/d/1KnEVC--SFglqdENRGLMehFP9NuQXyVrt)
 - [NSSS ヘルプページ](/ddbj/web-submission-help.html)

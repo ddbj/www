@@ -1,12 +1,12 @@
-import{w as u,b as g,r as D,L as y,$ as r,m as d,s as w,e as B,t as b,y as A,a as R,l as M,n as P}from"./submission-wizard-2121647d.js";/**
+import{w as u,b as g,r as y,L as D,$ as r,m as d,s as B,e as w,t as p,y as A,a as R,l as P,n as M}from"./submission-wizard-f639e7b4.js";/**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
- */const v={ATTRIBUTE:1,CHILD:2,PROPERTY:3,BOOLEAN_ATTRIBUTE:4,EVENT:5,ELEMENT:6},c=a=>(...e)=>({_$litDirective$:a,values:e});class f{constructor(e){}get _$AU(){return this._$AM._$AU}_$AT(e,s,i){this._$Ct=e,this._$AM=s,this._$Ci=i}_$AS(e,s){return this.update(e,s)}update(e,s){return this.render(...s)}}/**
+ */const v={ATTRIBUTE:1,CHILD:2,PROPERTY:3,BOOLEAN_ATTRIBUTE:4,EVENT:5,ELEMENT:6},c=a=>(...e)=>({_$litDirective$:a,values:e});class f{constructor(e){}get _$AU(){return this._$AM._$AU}_$AT(e,i,s){this._$Ct=e,this._$AM=i,this._$Ci=s}_$AS(e,i){return this.update(e,i)}update(e,i){return this.render(...i)}}/**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
- */class p extends f{constructor(e){if(super(e),this.it=u,e.type!==v.CHILD)throw Error(this.constructor.directiveName+"() can only be used in child bindings")}render(e){if(e===u||e==null)return this.ft=void 0,this.it=e;if(e===g)return e;if(typeof e!="string")throw Error(this.constructor.directiveName+"() called with a non-string value");if(e===this.it)return this.ft;this.it=e;const s=[e];return s.raw=s,this.ft={_$litType$:this.constructor.resultType,strings:s,values:[]}}}p.directiveName="unsafeHTML",p.resultType=1;const q=c(p);class x extends f{render(){}update(e){e.element.scrollTo({top:0,left:0,behavior:"instant"})}}var T=c(x),G={"q1-yes->g-jga":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit human genetic and phenotypic data requiring controlled-access to the <a href="/jga/submission-step-e.html">Japanese Genotype-phenotype Archive (JGA)</a>. You need to submit a data submission application to the <a href="https://humandbs.biosciencedbc.jp/en/data-submission">NBDC</a> and the application needs to be approved before submitting the data to JGA. Regarding submission and sharing of human data, see the <a href="/policies-e.html#submission-of-human-data">Data submission of human subjects research</a>.</p>
+ */class b extends f{constructor(e){if(super(e),this.it=u,e.type!==v.CHILD)throw Error(this.constructor.directiveName+"() can only be used in child bindings")}render(e){if(e===u||e==null)return this.ft=void 0,this.it=e;if(e===g)return e;if(typeof e!="string")throw Error(this.constructor.directiveName+"() called with a non-string value");if(e===this.it)return this.ft;this.it=e;const i=[e];return i.raw=i,this.ft={_$litType$:this.constructor.resultType,strings:i,values:[]}}}b.directiveName="unsafeHTML",b.resultType=1;const q=c(b);class T extends f{render(){}update(e){e.element.scrollTo({top:0,left:0,behavior:"instant"})}}var x=c(T),G={"q1-yes->g-jga":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit human genetic and phenotypic data requiring controlled-access to the <a href="/jga/submission-step-e.html">Japanese Genotype-phenotype Archive (JGA)</a>. You need to submit a data submission application to the <a href="https://humandbs.biosciencedbc.jp/en/data-submission">NBDC</a> and the application needs to be approved before submitting the data to JGA. Regarding submission and sharing of human data, see the <a href="/policies-e.html#submission-of-human-data">Data submission of human subjects research</a>.</p>
 <ol>
   <li>Submit a data submission application in the <a href="https://humandbs.ddbj.nig.ac.jp/nbdc/application/">NBDC application system</a>.</li>
   <li>Upload metadata and data files to JGA.</li>
@@ -76,9 +76,9 @@ BioSample \u306F\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3057\u305F\u30B5\u30F3\u30
   <li>Provide a BioProject and a BioSample that have been registered for the genome submission. A genome must be linked to a BioProject and a BioSample.</li>
   <li>Annotation is optional but required for species whose genome has not been reported. If you submit a genome with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
   <li>Provide metadata on the <a href="/ddbj/file-format-e.html#describing_st_comment">sequencing and assembly of the genome</a>.</li>
-  <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
-  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-  <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+  <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
+  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+  <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
 </ul>
 </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the finished level genome sequences.</p>     
@@ -88,9 +88,9 @@ BioSample \u306F\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3057\u305F\u30B5\u30F3\u30
   <li>\u30B2\u30CE\u30E0\u914D\u5217\u306E\u305F\u3081\u306B\u767B\u9332\u3057\u305F BioProject \u3068 BioSample \u3092\u6307\u5B9A\u3057\u307E\u3059\u3002\u30B2\u30CE\u30E0\u914D\u5217\u306F\u4E00\u3064\u306E BioProject \u3068\u4E00\u3064\u306E BioSample \u306B\u30EA\u30F3\u30AF\u3057\u3066\u3044\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002</li>
   <li>\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u306F\u4EFB\u610F\u3067\u3059\u304C\u3001\u65B0\u898F\u751F\u7269\u7A2E\u3067\u306F\u5FC5\u9808\u3067\u3059\u3002\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u4ED8\u304D\u30B2\u30CE\u30E0\u3092\u767B\u9332\u3059\u308B\u5834\u5408\u3001\u907A\u4F1D\u5B50\u304C\u4E00\u610F\u306B\u7279\u5B9A\u3067\u304D\u308B\u3088\u3046\u306B locus tag prefix \u3092\u5272\u308A\u5F53\u3066\u307E\u3059\u3002<a href="/ddbj/locus_tag.html">locus tag prefix</a> \u306F BioSample \u767B\u9332\u6642\u306B\u53D6\u5F97\u3057\u307E\u3059\u3002</li>
   <li><a href="/ddbj/file-format.html#describing_st_comment">\u30B2\u30CE\u30E0\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3068\u30A2\u30BB\u30F3\u30D6\u30EA\u306B\u95A2\u3059\u308B\u60C5\u5831</a>\u3092\u8A18\u8F09\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#flow-2">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002</li>
-  <li><a href="/ddbj/mss.html#Check_submission_files">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u6DFB\u4ED8\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">scp/sftp \u3067\u8EE2\u9001</a>\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#prep">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002</li>
+  <li><a href="/ddbj/mss.html#prep-4">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>
 <p><a href="/ddbj/flat-file.html#ACCESSION">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B92\u6587\u5B57\u3068\u6570\u5B576\u6841\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a>\u304C finished level \u30B2\u30CE\u30E0\u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
@@ -114,9 +114,9 @@ BioSample \u306F\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3057\u305F\u30B5\u30F3\u30
   <li>Provide a BioProject and a BioSample that have been registered for the genome submission. A genome must be linked to a BioProject and a BioSample.</li>
   <li>Annotation is optional but required for species whose genome has not been reported. If you submit a genome with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
   <li>Provide metadata on the <a href="/ddbj/file-format-e.html#describing_st_comment">sequencing and assembly of the genome</a>.</li>
-  <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
-  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-  <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+  <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
+  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+  <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
 </ul>
 </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the finished level geonme sequences.</p>
@@ -126,9 +126,9 @@ BioSample \u306F\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3057\u305F\u30B5\u30F3\u30
   <li>\u30B2\u30CE\u30E0\u914D\u5217\u306E\u305F\u3081\u306B\u767B\u9332\u3057\u305F BioProject \u3068 BioSample \u3092\u6307\u5B9A\u3057\u307E\u3059\u3002\u30B2\u30CE\u30E0\u914D\u5217\u306F\u4E00\u3064\u306E BioProject \u3068\u4E00\u3064\u306E BioSample \u306B\u30EA\u30F3\u30AF\u3057\u3066\u3044\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002</li>
   <li>\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u306F\u4EFB\u610F\u3067\u3059\u304C\u3001\u65B0\u898F\u751F\u7269\u7A2E\u3067\u306F\u5FC5\u9808\u3067\u3059\u3002\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u4ED8\u304D\u30B2\u30CE\u30E0\u3092\u767B\u9332\u3059\u308B\u5834\u5408\u3001\u907A\u4F1D\u5B50\u304C\u4E00\u610F\u306B\u7279\u5B9A\u3067\u304D\u308B\u3088\u3046\u306B locus tag prefix \u3092\u5272\u308A\u5F53\u3066\u307E\u3059\u3002<a href="/ddbj/locus_tag.html">locus tag prefix</a> \u306F BioSample \u767B\u9332\u6642\u306B\u53D6\u5F97\u3057\u307E\u3059\u3002</li>
   <li><a href="/ddbj/file-format.html#describing_st_comment">\u30B2\u30CE\u30E0\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3068\u30A2\u30BB\u30F3\u30D6\u30EA\u306B\u95A2\u3059\u308B\u60C5\u5831</a>\u3092\u8A18\u8F09\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#flow-2">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002</li>
-  <li><a href="/ddbj/mss.html#Check_submission_files">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u6DFB\u4ED8\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">scp/sftp \u3067\u8EE2\u9001</a>\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#prep">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002</li>
+  <li><a href="/ddbj/mss.html#prep-4">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>
 <p><a href="/ddbj/flat-file.html#ACCESSION">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B92\u6587\u5B57\u3068\u6570\u5B576\u6841\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a>\u304C finished level \u30B2\u30CE\u30E0\u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
@@ -192,9 +192,9 @@ BioSample \u306F\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3057\u305F\u30B5\u30F3\u30
   <li>Provide a BioProject and a BioSample that have been registered for the WGS submission. A WGS genome must be linked to a BioProject and a BioSample.</li>
   <li>Annotation is optional but required for species whose genome has not been reported. If you submit a WGS genome with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
   <li>Provide metadata on the <a href="/ddbj/file-format-e.html#describing_st_comment">sequencing and assembly of the genome</a>.</li>
-  <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">A sample annotation file</a>.</li>
-  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-  <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+  <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">A sample annotation file</a>.</li>
+  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+  <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
 </ul>
 </p>
 <p><a href="/ddbj/wgs-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., ZZZZ01000001) will be assigned to WGS sequences.</p>
@@ -204,9 +204,9 @@ BioSample \u306F\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3057\u305F\u30B5\u30F3\u30
   <li>\u30B2\u30CE\u30E0\u914D\u5217\u306E\u305F\u3081\u306B\u767B\u9332\u3057\u305F BioProject \u3068 BioSample \u3092\u6307\u5B9A\u3057\u307E\u3059\u3002\u30B2\u30CE\u30E0\u914D\u5217\u306F\u4E00\u3064\u306E BioProject \u3068\u4E00\u3064\u306E BioSample \u306B\u30EA\u30F3\u30AF\u3057\u3066\u3044\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002</li>
   <li>\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u306F\u4EFB\u610F\u3067\u3059\u304C\u3001\u65B0\u898F\u751F\u7269\u7A2E\u3067\u306F\u5FC5\u9808\u3067\u3059\u3002\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u4ED8\u304D WGS \u3092\u767B\u9332\u3059\u308B\u5834\u5408\u3001\u907A\u4F1D\u5B50\u304C\u4E00\u610F\u306B\u7279\u5B9A\u3067\u304D\u308B\u3088\u3046\u306B locus tag prefix \u3092\u5272\u308A\u5F53\u3066\u307E\u3059\u3002<a href="/ddbj/locus_tag.html">locus tag prefix</a> \u306F BioSample \u767B\u9332\u6642\u306B\u53D6\u5F97\u3057\u307E\u3059\u3002</li>
   <li><a href="/ddbj/file-format.html#describing_st_comment">\u30B2\u30CE\u30E0\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3068\u30A2\u30BB\u30F3\u30D6\u30EA\u306B\u95A2\u3059\u308B\u60C5\u5831</a>\u3092\u8A18\u8F09\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#flow-2">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">\u30B5\u30F3\u30D7\u30EB\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a></li>
-  <li><a href="/ddbj/mss.html#Check_submission_files">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u6DFB\u4ED8\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">scp/sftp \u3067\u8EE2\u9001</a>\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#prep">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">\u30B5\u30F3\u30D7\u30EB\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a></li>
+  <li><a href="/ddbj/mss.html#prep-4">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>       
 <p><a href="/ddbj/wgs.html#flat-file">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B94\u6587\u5B57\u30688\u6841\u306E\u6570\u5B57\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a> (\u4F8B ZZZZ01000001) \u304C WGS \u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
@@ -230,9 +230,9 @@ BioSample \u306F\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3057\u305F\u30B5\u30F3\u30
   <li>Provide a BioProject and a BioSample that have been registered for the WGS submission. A WGS genome must be linked to a BioProject and a BioSample.</li>
   <li>Annotation is optional but required for species whose genome has not been reported. If you submit a WGS genome with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
   <li>Provide metadata on the <a href="/ddbj/file-format-e.html#describing_st_comment">sequencing and assembly of the genome</a>.</li>
-  <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">A sample annotation file</a>.</li>
-  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-  <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+  <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">A sample annotation file</a>.</li>
+  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+  <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
 </ul>
 </p>
 <p><a href="/ddbj/wgs-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., <a href=""ZZZZ01000001) will be assigned to the WGS sequences.</p>
@@ -242,9 +242,9 @@ BioSample \u306F\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3057\u305F\u30B5\u30F3\u30
   <li>\u30B2\u30CE\u30E0\u914D\u5217\u306E\u305F\u3081\u306B\u767B\u9332\u3057\u305F BioProject \u3068 BioSample \u3092\u6307\u5B9A\u3057\u307E\u3059\u3002\u30B2\u30CE\u30E0\u914D\u5217\u306F\u4E00\u3064\u306E BioProject \u3068\u4E00\u3064\u306E BioSample \u306B\u30EA\u30F3\u30AF\u3057\u3066\u3044\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002</li>
   <li>\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u306F\u4EFB\u610F\u3067\u3059\u304C\u3001\u65B0\u898F\u751F\u7269\u7A2E\u3067\u306F\u5FC5\u9808\u3067\u3059\u3002\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u4ED8\u304D WGS \u3092\u767B\u9332\u3059\u308B\u5834\u5408\u3001\u907A\u4F1D\u5B50\u304C\u4E00\u610F\u306B\u7279\u5B9A\u3067\u304D\u308B\u3088\u3046\u306B locus tag prefix \u3092\u5272\u308A\u5F53\u3066\u307E\u3059\u3002<a href="/ddbj/locus_tag.html">locus tag prefix</a> \u306F BioSample \u767B\u9332\u6642\u306B\u53D6\u5F97\u3057\u307E\u3059\u3002</li>
   <li><a href="/ddbj/file-format.html#describing_st_comment">\u30B2\u30CE\u30E0\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3068\u30A2\u30BB\u30F3\u30D6\u30EA\u306B\u95A2\u3059\u308B\u60C5\u5831</a>\u3092\u8A18\u8F09\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#flow-2">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">\u30B5\u30F3\u30D7\u30EB\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a></li>
-  <li><a href="/ddbj/mss.html#Check_submission_files">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u6DFB\u4ED8\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">scp/sftp \u3067\u8EE2\u9001</a>\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#prep">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">\u30B5\u30F3\u30D7\u30EB\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a></li>
+  <li><a href="/ddbj/mss.html#prep-4">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>       
 <p><a href="/ddbj/wgs.html#flat-file">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B94\u6587\u5B57\u30688\u6841\u306E\u6570\u5B57\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a> (\u4F8B ZZZZ01000001) \u304C WGS \u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>      
@@ -304,22 +304,22 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li>D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067 DRA \u767B\u9332\u306E\u305F\u3081\u306B\u4F5C\u6210\u3057\u305F BioProject \u3068 BioSample \u3092\u9078\u629E\u3002D-way \u306E<a href="/dra/submission.html#submit-metadata">\u30A6\u30A7\u30D6\u753B\u9762</a>\u3067\u30E1\u30BF\u30C7\u30FC\u30BF\u3092\u767B\u9332\u3001\u3082\u3057\u304F\u306F\u3001Run \u6570\u304C100\u3092\u8D85\u3048\u308B\u3088\u3046\u306A\u5834\u5408\u306F<a href="/dra/submission.html#metadata-excel">\u30A8\u30AF\u30BB\u30EB/XML \u30D5\u30A1\u30A4\u30EB</a>\u3067\u767B\u9332\u3002</li>
 </ol></p>
 `}},{title:{en:"MSS",ja:"MSS"},body:{en:`<p>Submit complete genome sequences (non-WGS) of prokaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will shorten submission processing time by annotating prokaryotic genomes and generating submission-ready files.</p>
-<p>In the MSS submission, you will need to:
+<p><a href="/ddbj/mss-e.html#mssdfast">In the MSS submission</a>, you will need to:
 <ul>
   <li>Provide a BioProject and a BioSample that have been registered for the genome submission. A genome must be linked to a BioProject and a BioSample.</li>
   <li>If you submit a genome with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will generate submission files with the locus tag prefix. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=862924679">A sample annotation file</a>.</li>
-  <li>Inform the MSS team of the DFAST job ID. Otherwise, <a href="/ddbj/mss-e.html#File_transfer">send the submission files</a> to the MSS team by email attachment or scp/sftp.</li>
+  <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
 </ul>
 </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the complete genome sequences of prokaryotes.</p>
 `,ja:`<p>\u539F\u6838\u751F\u7269\u306E\u5B8C\u5168\u9577\u30B2\u30CE\u30E0\u914D\u5217 (WGS \u4EE5\u5916) \u3068\u3057\u3066 <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u7D4C\u7531\u3067 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002\u30D7\u30E9\u30B9\u30DF\u30C9\u914D\u5217\u306F\u30B2\u30CE\u30E0\u767B\u9332\u306B\u542B\u3081\u307E\u3059\u3002</p>
-<p>MSS \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067:
+<p><a href="/ddbj/mss.html#mssdfast">MSS \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u306B\u3066</a>:
 <ul>
   <li>\u30B2\u30CE\u30E0\u914D\u5217\u306E\u305F\u3081\u306B\u767B\u9332\u3057\u305F BioProject \u3068 BioSample \u3092\u6307\u5B9A\u3057\u307E\u3059\u3002\u30B2\u30CE\u30E0\u914D\u5217\u306F\u4E00\u3064\u306E BioProject \u3068\u4E00\u3064\u306E BioSample \u306B\u30EA\u30F3\u30AF\u3057\u3066\u3044\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002</li>
   <li>\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u306F\u4EFB\u610F\u3067\u3059\u304C\u3001\u65B0\u898F\u751F\u7269\u7A2E\u3067\u306F\u5FC5\u9808\u3067\u3059\u3002\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u4ED8\u304D WGS \u3092\u767B\u9332\u3059\u308B\u5834\u5408\u3001\u907A\u4F1D\u5B50\u304C\u4E00\u610F\u306B\u7279\u5B9A\u3067\u304D\u308B\u3088\u3046\u306B locus tag prefix \u3092\u5272\u308A\u5F53\u3066\u307E\u3059\u3002<a href="/ddbj/locus_tag.html">locus tag prefix</a> \u306F BioSample \u767B\u9332\u6642\u306B\u53D6\u5F97\u3057\u307E\u3059\u3002
   <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> \u306F locus tag prefix \u304C\u5272\u308A\u5F53\u3066\u3089\u308C\u305F\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u51FA\u529B\u3057\u307E\u3059\u3002<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=862924679">\u30B5\u30F3\u30D7\u30EB\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a></li>
   <li><a href="/ddbj/file-format.html#describing_st_comment">\u30B2\u30CE\u30E0\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3068\u30A2\u30BB\u30F3\u30D6\u30EA\u306B\u95A2\u3059\u308B\u60C5\u5831</a>\u3092\u8A18\u8F09\u3002</li>
-  <li>DFAST job ID \u3092 MSS \u30C1\u30FC\u30E0\u306B\u77E5\u3089\u305B\u308B\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u304B scp/sftp \u3067\u9001\u4ED8</a>\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>       
 <p><a href="/ddbj/flat-file.html#ACCESSION">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B92\u6587\u5B57\u3068\u6570\u5B576\u6841\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a>\u304C finished level \u30B2\u30CE\u30E0\u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
@@ -339,22 +339,22 @@ BioProject \u3067\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 `,ja:`<p><a href="https://ddbj.nig.ac.jp/D-way">D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0</a>\u3067 <a href="/biosample/submission.html#Sample-type">MIGS cultured bacteria/archaea package</a>\u3092\u4F7F\u3063\u3066\u30B5\u30F3\u30D7\u30EB\u3092 <a  href="/biosample/submission.html">BioSample</a> \u306B\u767B\u9332\u3002
   BioSample \u306F\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3057\u305F\u30B5\u30F3\u30D7\u30EB\u60C5\u5831\u3092\u8A18\u8F09\u3057\u307E\u3059\u3002</p>
 `}},{title:{en:"MSS",ja:"MSS"},body:{en:`<p>Submit complete genome sequences (non-WGS) of prokaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will shorten submission processing time by annotating prokaryotic genomes and generating submission-ready files.</p>
-<p>In the MSS submission, you will need to:
+<p><a href="/ddbj/mss-e.html#mssdfast">In the MSS submission</a>, you will need to:
 <ul>
   <li>Provide a BioProject and a BioSample that have been registered for the genome submission. A genome must be linked to a BioProject and a BioSample.</li>
   <li>If you submit a genome with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will generate submission files with the locus tag prefix. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=862924679">A sample annotation file</a>.</li>
-  <li>Inform the MSS team of the DFAST job ID. Otherwise, <a href="/ddbj/mss-e.html#File_transfer">send the submission files</a> to the MSS team by email attachment or scp/sftp.</li>
+  <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
 </ul>
 </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the complete genome sequences of prokaryotes.</p>
 `,ja:`<p>\u539F\u6838\u751F\u7269\u306E\u5B8C\u5168\u9577\u30B2\u30CE\u30E0\u914D\u5217 (WGS \u4EE5\u5916) \u3068\u3057\u3066 <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u7D4C\u7531\u3067 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002\u30D7\u30E9\u30B9\u30DF\u30C9\u914D\u5217\u306F\u30B2\u30CE\u30E0\u767B\u9332\u306B\u542B\u3081\u307E\u3059\u3002</p>
-<p>MSS \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067:
+<p><a href="/ddbj/mss.html#mssdfast">MSS \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u306B\u3066</a>:
 <ul>
   <li>\u30B2\u30CE\u30E0\u914D\u5217\u306E\u305F\u3081\u306B\u767B\u9332\u3057\u305F BioProject \u3068 BioSample \u3092\u6307\u5B9A\u3057\u307E\u3059\u3002\u30B2\u30CE\u30E0\u914D\u5217\u306F\u4E00\u3064\u306E BioProject \u3068\u4E00\u3064\u306E BioSample \u306B\u30EA\u30F3\u30AF\u3057\u3066\u3044\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002</li>
   <li>\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u306F\u4EFB\u610F\u3067\u3059\u304C\u3001\u65B0\u898F\u751F\u7269\u7A2E\u3067\u306F\u5FC5\u9808\u3067\u3059\u3002\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u4ED8\u304D WGS \u3092\u767B\u9332\u3059\u308B\u5834\u5408\u3001\u907A\u4F1D\u5B50\u304C\u4E00\u610F\u306B\u7279\u5B9A\u3067\u304D\u308B\u3088\u3046\u306B locus tag prefix \u3092\u5272\u308A\u5F53\u3066\u307E\u3059\u3002<a href="/ddbj/locus_tag.html">locus tag prefix</a> \u306F BioSample \u767B\u9332\u6642\u306B\u53D6\u5F97\u3057\u307E\u3059\u3002
   <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> \u306F locus tag prefix \u304C\u5272\u308A\u5F53\u3066\u3089\u308C\u305F\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u51FA\u529B\u3057\u307E\u3059\u3002<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=862924679">\u30B5\u30F3\u30D7\u30EB\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a></li>
   <li><a href="/ddbj/file-format.html#describing_st_comment">\u30B2\u30CE\u30E0\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3068\u30A2\u30BB\u30F3\u30D6\u30EA\u306B\u95A2\u3059\u308B\u60C5\u5831</a>\u3092\u8A18\u8F09\u3002</li>
-  <li>DFAST job ID \u3092 MSS \u30C1\u30FC\u30E0\u306B\u77E5\u3089\u305B\u308B\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u304B scp/sftp \u3067\u9001\u4ED8</a>\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>       
 <p><a href="/ddbj/flat-file.html#ACCESSION">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B92\u6587\u5B57\u3068\u6570\u5B576\u6841\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a>\u304C finished level \u30B2\u30CE\u30E0\u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
@@ -414,22 +414,22 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li>D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067 DRA \u767B\u9332\u306E\u305F\u3081\u306B\u4F5C\u6210\u3057\u305F BioProject \u3068 BioSample \u3092\u9078\u629E\u3002D-way \u306E<a href="/dra/submission.html#submit-metadata">\u30A6\u30A7\u30D6\u753B\u9762</a>\u3067\u30E1\u30BF\u30C7\u30FC\u30BF\u3092\u767B\u9332\u3001\u3082\u3057\u304F\u306F\u3001Run \u6570\u304C100\u3092\u8D85\u3048\u308B\u3088\u3046\u306A\u5834\u5408\u306F<a href="/dra/submission.html#metadata-excel">\u30A8\u30AF\u30BB\u30EB/XML \u30D5\u30A1\u30A4\u30EB</a>\u3067\u767B\u9332\u3002</li>
 </ol></p>
 `}},{title:{en:"MSS",ja:"MSS"},body:{en:`<p>Submit draft genome sequences of prokaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission.</p>
-<p>In the MSS submission, you will need to:
+<p><a href="/ddbj/mss-e.html#mssdfast">In the MSS submission</a>, you will need to:
 <ul>
   <li>Provide a BioProject and a BioSample that have been registered for the WGS submission. A WGS genome must be linked to a BioProject and a BioSample.</li>
   <li>Annotation is optional but required for species whose genome has not been reported. If you submit a WGS genome with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will generate submission files with the locus tag prefix. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=382116224">A sample annotation file</a>.</li>
- <li>Inform the MSS team of the DFAST job ID. Otherwise, <a href="/ddbj/mss-e.html#File_transfer">send the submission files</a> to the MSS team by email attachment or scp/sftp.</li>
+ <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
 </ul>
 </p>
 <p><a href="/ddbj/wgs-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., ZZZZ01000001) will be assigned to WGS sequences.</p>
 `,ja:`<p>\u539F\u6838\u751F\u7269\u306E\u30C9\u30E9\u30D5\u30C8\u30B2\u30CE\u30E0\u914D\u5217 <a href="/ddbj/wgs.html">WGS (Whole Genome Shotgun)</a> \u3068\u3057\u3066 <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u7D4C\u7531\u3067 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002\u30D7\u30E9\u30B9\u30DF\u30C9\u914D\u5217\u306F\u30B2\u30CE\u30E0\u767B\u9332\u306B\u542B\u3081\u307E\u3059\u3002</p>
-<p>MSS \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067:
+<p><a href="/ddbj/mss.html#mssdfast">MSS \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u306B\u3066</a>:
 <ul>
   <li>\u30B2\u30CE\u30E0\u914D\u5217\u306E\u305F\u3081\u306B\u767B\u9332\u3057\u305F BioProject \u3068 BioSample \u3092\u6307\u5B9A\u3057\u307E\u3059\u3002\u30B2\u30CE\u30E0\u914D\u5217\u306F\u4E00\u3064\u306E BioProject \u3068\u4E00\u3064\u306E BioSample \u306B\u30EA\u30F3\u30AF\u3057\u3066\u3044\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002</li>
   <li>\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u306F\u4EFB\u610F\u3067\u3059\u304C\u3001\u65B0\u898F\u751F\u7269\u7A2E\u3067\u306F\u5FC5\u9808\u3067\u3059\u3002\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u4ED8\u304D WGS \u3092\u767B\u9332\u3059\u308B\u5834\u5408\u3001\u907A\u4F1D\u5B50\u304C\u4E00\u610F\u306B\u7279\u5B9A\u3067\u304D\u308B\u3088\u3046\u306B locus tag prefix \u3092\u5272\u308A\u5F53\u3066\u307E\u3059\u3002<a href="/ddbj/locus_tag.html">locus tag prefix</a> \u306F BioSample \u767B\u9332\u6642\u306B\u53D6\u5F97\u3057\u307E\u3059\u3002
   <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> \u306F locus tag prefix \u304C\u5272\u308A\u5F53\u3066\u3089\u308C\u305F\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u51FA\u529B\u3057\u307E\u3059\u3002<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">\u30B5\u30F3\u30D7\u30EB\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a></li>
   <li><a href="/ddbj/file-format.html#describing_st_comment">\u30B2\u30CE\u30E0\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3068\u30A2\u30BB\u30F3\u30D6\u30EA\u306B\u95A2\u3059\u308B\u60C5\u5831</a>\u3092\u8A18\u8F09\u3002</li>
-  <li>DFAST job ID \u3092 MSS \u30C1\u30FC\u30E0\u306B\u77E5\u3089\u305B\u308B\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u304B scp/sftp \u3067\u9001\u4ED8</a>\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>       
 <p><a href="/ddbj/wgs.html#flat-file">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B94\u6587\u5B57\u30688\u6841\u306E\u6570\u5B57\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a> (\u4F8B ZZZZ01000001) \u304C WGS \u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
@@ -451,22 +451,22 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 `,ja:`<p><a href="https://ddbj.nig.ac.jp/D-way">D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0</a>\u3067 <a href="/biosample/submission.html#Sample-type">MIGS cultured bacteria/archaea package</a>\u3092\u4F7F\u3063\u3066\u30B5\u30F3\u30D7\u30EB\u3092 <a  href="/biosample/submission.html">BioSample</a> \u306B\u767B\u9332\u3002
   BioSample \u306F\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3057\u305F\u30B5\u30F3\u30D7\u30EB\u60C5\u5831\u3092\u8A18\u8F09\u3057\u307E\u3059\u3002DRA \u306E\u767B\u9332\u9014\u4E2D\u3067 BioSample \u3092\u4F5C\u6210\u3067\u304D\u307E\u3059\u3002</p>
 `}},{title:{en:"MSS",ja:"MSS"},body:{en:`<p>Submit draft genome sequences of prokaryotes as <a href="/ddbj/wgs-e.html">WGS (Whole Genome Shotgun) genomes</a> to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. Include plasmid sequences with the genome submission.</p>
-<p>In the MSS submission, you will need to:
+<p><a href="/ddbj/mss-e.html#mssdfast">In the MSS submission</a>, you will need to:
 <ul>
   <li>Provide a BioProject and a BioSample that have been registered for the WGS submission. A WGS genome must be linked to a BioProject and a sample to BioSample.</li>
   <li>Annotation is optional but required for species whose genome has not been reported. If you submit a WGS genome with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission. <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> will generate submission files with the locus tag prefix. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=382116224">A sample annotation file</a>.</li>
- <li>Inform the MSS team of the DFAST job ID. Otherwise, <a href="/ddbj/mss-e.html#File_transfer">send the submission files</a> to the MSS team by email attachment or scp/sftp.</li>
+ <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
 </ul>
 </p>
 <p><a href="/ddbj/wgs-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., ZZZZ01000001) will be assigned to WGS sequences.</p>
 `,ja:`<p>\u539F\u6838\u751F\u7269\u306E\u30C9\u30E9\u30D5\u30C8\u30B2\u30CE\u30E0\u914D\u5217 <a href="/ddbj/wgs.html">WGS (Whole Genome Shotgun)</a> \u3068\u3057\u3066 <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u7D4C\u7531\u3067 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002\u30D7\u30E9\u30B9\u30DF\u30C9\u914D\u5217\u306F\u30B2\u30CE\u30E0\u767B\u9332\u306B\u542B\u3081\u307E\u3059\u3002</p>
-<p>MSS \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067:
+<p><a href="/ddbj/mss.html#mssdfast">MSS \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u306B\u3066</a>:
 <ul>
   <li>\u30B2\u30CE\u30E0\u914D\u5217\u306E\u305F\u3081\u306B\u767B\u9332\u3057\u305F BioProject \u3068 BioSample \u3092\u6307\u5B9A\u3057\u307E\u3059\u3002\u30B2\u30CE\u30E0\u914D\u5217\u306F\u4E00\u3064\u306E BioProject \u3068\u4E00\u3064\u306E BioSample \u306B\u30EA\u30F3\u30AF\u3057\u3066\u3044\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002</li>
   <li>\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u306F\u4EFB\u610F\u3067\u3059\u304C\u3001\u65B0\u898F\u751F\u7269\u7A2E\u3067\u306F\u5FC5\u9808\u3067\u3059\u3002\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u4ED8\u304D WGS \u3092\u767B\u9332\u3059\u308B\u5834\u5408\u3001\u907A\u4F1D\u5B50\u304C\u4E00\u610F\u306B\u7279\u5B9A\u3067\u304D\u308B\u3088\u3046\u306B locus tag prefix \u3092\u5272\u308A\u5F53\u3066\u307E\u3059\u3002<a href="/ddbj/locus_tag.html">locus tag prefix</a> \u306F BioSample \u767B\u9332\u6642\u306B\u53D6\u5F97\u3057\u307E\u3059\u3002
   <a href="https://dfast.ddbj.nig.ac.jp/">DFAST</a> \u306F locus tag prefix \u304C\u5272\u308A\u5F53\u3066\u3089\u308C\u305F\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u51FA\u529B\u3057\u307E\u3059\u3002<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1134992157">\u30B5\u30F3\u30D7\u30EB\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a></li>
   <li><a href="/ddbj/file-format.html#describing_st_comment">\u30B2\u30CE\u30E0\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3068\u30A2\u30BB\u30F3\u30D6\u30EA\u306B\u95A2\u3059\u308B\u60C5\u5831</a>\u3092\u8A18\u8F09\u3002</li>
-  <li>DFAST job ID \u3092 MSS \u30C1\u30FC\u30E0\u306B\u77E5\u3089\u305B\u308B\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u304B scp/sftp \u3067\u9001\u4ED8</a>\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>       
 <p><a href="/ddbj/wgs.html#flat-file">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B94\u6587\u5B57\u30688\u6841\u306E\u6570\u5B57\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a> (\u4F8B ZZZZ01000001) \u304C WGS \u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
@@ -521,18 +521,18 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 `}},{title:{en:"MSS",ja:"MSS"},body:{en:`<p>Submit large-scale (more than 100 sequences and/or longer than 500kb) plasmid sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
 <p>In the MSS submission, you will need to:
 <ul>
-  <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
-  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-  <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+  <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
+  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+  <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
 </ul>
 </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the plasmid sequences.</p>
 `,ja:`<p>\u5927\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0A\u3001\u3082\u3057\u304F\u306F\u3001\u914D\u5217\u9577\u304C500kb\u4EE5\u4E0A) \u30D7\u30E9\u30B9\u30DF\u30C9\u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u3092\u7D4C\u7531\u3057\u3066 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
 <p>MSS \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067:
 <ul>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066 <a href="/ddbj/mss.html#flow-2">fasta \u30D5\u30A1\u30A4\u30EB\u3068\u30E1\u30BF\u30C7\u30FC\u30BF\u3092\u8A18\u8F09\u3057\u305F\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a>\u3092\u6E96\u5099\u3057\u307E\u3059\u3002</li>
-  <li><a href="/ddbj/mss.html#Check_submission_files">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u6DFB\u4ED8\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">scp/sftp \u3067\u8EE2\u9001</a>\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066 <a href="/ddbj/mss.html#prep">fasta \u30D5\u30A1\u30A4\u30EB\u3068\u30E1\u30BF\u30C7\u30FC\u30BF\u3092\u8A18\u8F09\u3057\u305F\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a>\u3092\u6E96\u5099\u3057\u307E\u3059\u3002</li>
+  <li><a href="/ddbj/mss.html#prep-4">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>
 <p><a href="/ddbj/flat-file.html#ACCESSION">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B92\u6587\u5B57\u3068\u6570\u5B576\u6841\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a>\u304C finished level \u30B2\u30CE\u30E0\u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
@@ -561,18 +561,18 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 `}},{title:{en:"MSS",ja:"MSS"},body:{en:`<p>Submit large-scale (more than 100 sequences and/or longer than 500kb) organelle sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
 <p>In the MSS submission, you will need to:
 <ul>
-  <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=545461927">A sample annotation file</a>.</li>
-  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-  <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+  <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=545461927">A sample annotation file</a>.</li>
+  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+  <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
 </ul>
 </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the organelle sequences.</p>
 `,ja:`<p>\u5927\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0A\u3001\u3082\u3057\u304F\u306F\u3001\u914D\u5217\u9577\u304C500kb\u4EE5\u4E0A) \u30AA\u30EB\u30AC\u30CD\u30E9\u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u3092\u7D4C\u7531\u3057\u3066 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
 <p>MSS \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067:
 <ul>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066 <a href="/ddbj/mss.html#flow-2">fasta \u30D5\u30A1\u30A4\u30EB\u3068\u30E1\u30BF\u30C7\u30FC\u30BF\u3092\u8A18\u8F09\u3057\u305F\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a>\u3092\u6E96\u5099\u3057\u307E\u3059\u3002</li>
-  <li><a href="/ddbj/mss.html#Check_submission_files">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u6DFB\u4ED8\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">scp/sftp \u3067\u8EE2\u9001</a>\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066 <a href="/ddbj/mss.html#prep">fasta \u30D5\u30A1\u30A4\u30EB\u3068\u30E1\u30BF\u30C7\u30FC\u30BF\u3092\u8A18\u8F09\u3057\u305F\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a>\u3092\u6E96\u5099\u3057\u307E\u3059\u3002</li>
+  <li><a href="/ddbj/mss.html#prep-4">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>
 <p><a href="/ddbj/flat-file.html#ACCESSION">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B92\u6587\u5B57\u3068\u6570\u5B576\u6841\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a>\u304C finished level \u30B2\u30CE\u30E0\u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
@@ -601,18 +601,18 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 `}},{title:{en:"MSS",ja:"MSS"},body:{en:`<p>Submit large-scale (more than 100 sequences and/or longer than 500kb) virus sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
 <p>In the MSS submission, you will need to:
 <ul>
-  <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
-  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-  <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+  <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
+  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+  <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
 </ul>
 </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the virus sequences.</p>
 `,ja:`<p>\u5927\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0A\u3001\u3082\u3057\u304F\u306F\u3001\u914D\u5217\u9577\u304C500kb\u4EE5\u4E0A) \u30A6\u30A4\u30EB\u30B9\u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u3092\u7D4C\u7531\u3057\u3066 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
 <p>MSS \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067:
 <ul>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066 <a href="/ddbj/mss.html#flow-2">fasta \u30D5\u30A1\u30A4\u30EB\u3068\u30E1\u30BF\u30C7\u30FC\u30BF\u3092\u8A18\u8F09\u3057\u305F\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a>\u3092\u6E96\u5099\u3057\u307E\u3059\u3002</li>
-  <li><a href="/ddbj/mss.html#Check_submission_files">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u6DFB\u4ED8\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">scp/sftp \u3067\u8EE2\u9001</a>\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066 <a href="/ddbj/mss.html#prep">fasta \u30D5\u30A1\u30A4\u30EB\u3068\u30E1\u30BF\u30C7\u30FC\u30BF\u3092\u8A18\u8F09\u3057\u305F\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a>\u3092\u6E96\u5099\u3057\u307E\u3059\u3002</li>
+  <li><a href="/ddbj/mss.html#prep-4">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>
 <p><a href="/ddbj/flat-file.html#ACCESSION">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B92\u6587\u5B57\u3068\u6570\u5B576\u6841\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a>\u304C finished level \u30B2\u30CE\u30E0\u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
@@ -656,9 +656,9 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
      <li>Provide a BioProject and a virtual BioSample that have been registered for the MAG submission. A MAG must be linked to a BioProject and a BioSample.</li>
      <li>Annotation is optional. If you submit a MAG with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
      <li>Provide metadata on the <a href="/ddbj/metagenome-assembly-e.html#mag-ddbj">sequencing and assembly of the genome</a>.</li>
-     <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files. Sample annotation files of <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=11301438">a complete MAG sequence</a> and <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1453206143">a draft MAG sequence</a>.</li>
-     <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-     <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+     <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files. Sample annotation files of <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=11301438">a complete MAG sequence</a> and <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1453206143">a draft MAG sequence</a>.</li>
+     <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+     <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
    </ul>
    </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the MAG.</p>
@@ -668,9 +668,9 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li>MAG \u306E\u305F\u3081\u306B\u767B\u9332\u3057\u305F BioProject \u3068\u4EEE\u60F3\u7684\u306A MIMAG BioSample \u3092\u6307\u5B9A\u3057\u307E\u3059\u3002MAG \u306F\u4E00\u3064\u306E BioProject \u3068\u4E00\u3064\u306E BioSample \u306B\u30EA\u30F3\u30AF\u3057\u3066\u3044\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002</li>
   <li>\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u306F\u4EFB\u610F\u3067\u3059\u304C\u3001\u65B0\u898F\u751F\u7269\u7A2E\u3067\u306F\u5FC5\u9808\u3067\u3059\u3002\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u4ED8\u304D WGS \u3092\u767B\u9332\u3059\u308B\u5834\u5408\u3001\u907A\u4F1D\u5B50\u304C\u4E00\u610F\u306B\u7279\u5B9A\u3067\u304D\u308B\u3088\u3046\u306B locus tag prefix \u3092\u5272\u308A\u5F53\u3066\u307E\u3059\u3002<a href="/ddbj/locus_tag.html">locus tag prefix</a> \u306F BioSample \u767B\u9332\u6642\u306B\u53D6\u5F97\u3057\u307E\u3059\u3002</li>
   <li><a href="/ddbj/file-format.html#describing_st_comment">\u30B2\u30CE\u30E0\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3068\u30A2\u30BB\u30F3\u30D6\u30EA\u306B\u95A2\u3059\u308B\u60C5\u5831</a>\u3092\u8A18\u8F09\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#flow-2">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1453206143">\u30B5\u30F3\u30D7\u30EB\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a></li>
-  <li><a href="/ddbj/mss.html#Check_submission_files">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u6DFB\u4ED8\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">scp/sftp \u3067\u8EE2\u9001</a>\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#prep">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1453206143">\u30B5\u30F3\u30D7\u30EB\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a></li>
+  <li><a href="/ddbj/mss.html#prep-4">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>       
 <p><a href="/ddbj/flat-file.html#ACCESSION">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B92\u6587\u5B57\u3068\u6570\u5B576\u6841\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a>\u304C MAG \u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
@@ -696,9 +696,9 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
      <li>Provide a BioProject and a virtual BioSample that have been registered for the MAG submission. A MAG must be linked to a BioProject and a BioSample.</li>
      <li>Annotation is optional. If you submit a MAG with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
      <li>Provide metadata on the <a href="/ddbj/metagenome-assembly-e.html#mag-ddbj">sequencing and assembly of the genome</a>.</li>
-     <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files. Sample annotation files of <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=11301438">a complete MAG sequence</a> and <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1453206143">a draft MAG sequence</a>.</li>
-     <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-     <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+     <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files. Sample annotation files of <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=11301438">a complete MAG sequence</a> and <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1453206143">a draft MAG sequence</a>.</li>
+     <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+     <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
    </ul>
    </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the MAG.</p>
@@ -708,9 +708,9 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li>MAG \u306E\u305F\u3081\u306B\u767B\u9332\u3057\u305F BioProject \u3068\u4EEE\u60F3\u7684\u306A MIMAG BioSample \u3092\u6307\u5B9A\u3057\u307E\u3059\u3002MAG \u306F\u4E00\u3064\u306E BioProject \u3068\u4E00\u3064\u306E BioSample \u306B\u30EA\u30F3\u30AF\u3057\u3066\u3044\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002</li>
   <li>\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u306F\u4EFB\u610F\u3067\u3059\u304C\u3001\u65B0\u898F\u751F\u7269\u7A2E\u3067\u306F\u5FC5\u9808\u3067\u3059\u3002\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u4ED8\u304D WGS \u3092\u767B\u9332\u3059\u308B\u5834\u5408\u3001\u907A\u4F1D\u5B50\u304C\u4E00\u610F\u306B\u7279\u5B9A\u3067\u304D\u308B\u3088\u3046\u306B locus tag prefix \u3092\u5272\u308A\u5F53\u3066\u307E\u3059\u3002<a href="/ddbj/locus_tag.html">locus tag prefix</a> \u306F BioSample \u767B\u9332\u6642\u306B\u53D6\u5F97\u3057\u307E\u3059\u3002</li>
   <li><a href="/ddbj/file-format.html#describing_st_comment">\u30B2\u30CE\u30E0\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3068\u30A2\u30BB\u30F3\u30D6\u30EA\u306B\u95A2\u3059\u308B\u60C5\u5831</a>\u3092\u8A18\u8F09\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#flow-2">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1453206143">\u30B5\u30F3\u30D7\u30EB\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a></li>
-  <li><a href="/ddbj/mss.html#Check_submission_files">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u6DFB\u4ED8\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">scp/sftp \u3067\u8EE2\u9001</a>\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#prep">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1453206143">\u30B5\u30F3\u30D7\u30EB\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a></li>
+  <li><a href="/ddbj/mss.html#prep-4">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>       
 <p><a href="/ddbj/flat-file.html#ACCESSION">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B92\u6587\u5B57\u3068\u6570\u5B576\u6841\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a>\u304C MAG \u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
@@ -763,8 +763,8 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 `}},{title:{en:"BioProject",ja:"BioProject"},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort.</p>
 `,ja:`<p><a href="https://ddbj.nig.ac.jp/D-way">D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0</a>\u3067\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u3092 <a href="/bioproject/submission.html">BioProject</a> \u306B\u767B\u9332\u3002
 BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3001\u95A2\u9023\u3059\u308B DRA \u3068\u30B2\u30CE\u30E0\u30C7\u30FC\u30BF\u3092\u307E\u3068\u3081\u307E\u3059\u3002DRA \u306E\u767B\u9332\u9014\u4E2D\u3067 BioProject \u3092\u4F5C\u6210\u3067\u304D\u307E\u3059\u3002</p>
-`}},{title:{en:"BioSample",ja:"BioSample"},body:{en:`<p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/submission-e.html#Sample-type">MIMS: metagenome/environmental package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a> before the TLS submission.</p>
-`,ja:`<p>TLS \u767B\u9332\u306E\u524D\u306B\u3001<a href="https://ddbj.nig.ac.jp/D-way">D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0</a>\u3067\u30B5\u30F3\u30D7\u30EB\u3092 <a href="/biosample/submission.html#Sample-type">MIMS: metagenome/environmental \u30D1\u30C3\u30B1\u30FC\u30B8</a> \u3092\u4F7F\u3063\u3066 <a href="/biosample/submission.html">BioSample</a> \u306B\u767B\u9332\u3002</p>
+`}},{title:{en:"BioSample",ja:"BioSample"},body:{en:`<p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/submission-e.html#Sample-type">MIMARKS.survey package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a> before the TLS submission.</p>
+`,ja:`<p>TLS \u767B\u9332\u306E\u524D\u306B\u3001<a href="https://ddbj.nig.ac.jp/D-way">D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0</a>\u3067\u30B5\u30F3\u30D7\u30EB\u3092 <a href="/biosample/submission.html#Sample-type">MIMARKS.survey \u30D1\u30C3\u30B1\u30FC\u30B8</a> \u3092\u4F7F\u3063\u3066 <a href="/biosample/submission.html">BioSample</a> \u306B\u767B\u9332\u3002</p>
 `}},{title:{en:"DRA",ja:"DRA"},body:{en:`<p>Register raw sequencing reads to <a href="/dra/submission-e.html">DRA</a>.</p>
 <ol>
   <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
@@ -782,9 +782,9 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 <p>In the MSS submission, you will need to:
    <ul>
      <li>Provide a BioProject and a BioSample that have been registered for the TLS submission.</li>           
-     <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=580470761">A sample annotation file</a>.</li>
-     <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-     <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+     <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=580470761">A sample annotation file</a>.</li>
+     <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+     <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
    </ul>
    </p>
 <p><a href="/ddbj/tls-e.html">Accession numbers with a 4-letter prefix and 8 digits</a> will be assigned to the TLS sequences.</p>
@@ -792,9 +792,9 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 <p>MSS \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067:
 <ul>
   <li>TLS \u914D\u5217\u306E\u305F\u3081\u306B\u767B\u9332\u3057\u305F BioProject \u3068 BioSample \u3092\u6307\u5B9A\u3057\u307E\u3059\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#flow-2">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=580470761">\u30B5\u30F3\u30D7\u30EB\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a></li>
-  <li><a href="/ddbj/mss.html#Check_submission_files">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u6DFB\u4ED8\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">scp/sftp \u3067\u8EE2\u9001</a>\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#prep">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=580470761">\u30B5\u30F3\u30D7\u30EB\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a></li>
+  <li><a href="/ddbj/mss.html#prep-4">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>
 <p><a href="/ddbj/tls.html#flat-file">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B94\u6587\u5B57\u30688\u6841\u306E\u6570\u5B57\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a> (\u4F8B TZZZ01000001) \u304C TLS \u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
@@ -811,8 +811,8 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 `}},{title:{en:"BioProject",ja:"BioProject"},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort. The BioProject submission can be done during the DRA submission.</p>
 `,ja:`<p><a href="https://ddbj.nig.ac.jp/D-way">D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0</a>\u3067\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u3092 <a href="/bioproject/submission.html">BioProject</a> \u306B\u767B\u9332\u3002
 BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3001\u95A2\u9023\u3059\u308B DRA \u3068\u30B2\u30CE\u30E0\u30C7\u30FC\u30BF\u3092\u307E\u3068\u3081\u307E\u3059\u3002DRA \u306E\u767B\u9332\u9014\u4E2D\u3067 BioProject \u3092\u4F5C\u6210\u3067\u304D\u307E\u3059\u3002</p>
-`}},{title:{en:"BioSample",ja:"BioSample"},body:{en:`<p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/submission-e.html#Sample-type">MIMS: metagenome/environmental package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample submission can be done during the DRA submission.</p>
-`,ja:`<p><a href="https://ddbj.nig.ac.jp/D-way">D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0</a>\u3067\u30B5\u30F3\u30D7\u30EB\u3092 <a href="/biosample/submission.html#Sample-type">MIMS: metagenome/environmental \u30D1\u30C3\u30B1\u30FC\u30B8</a> \u3092\u4F7F\u3063\u3066 <a href="/biosample/submission.html">BioSample</a> \u306B\u767B\u9332\u3002DRA \u306E\u767B\u9332\u9014\u4E2D\u3067 BioSample \u3092\u4F5C\u6210\u3067\u304D\u307E\u3059\u3002</p>
+`}},{title:{en:"BioSample",ja:"BioSample"},body:{en:`<p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/submission-e.html#Sample-type">MIMARKS.survey package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioSample submission can be done during the DRA submission.</p>
+`,ja:`<p><a href="https://ddbj.nig.ac.jp/D-way">D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0</a>\u3067\u30B5\u30F3\u30D7\u30EB\u3092 <a href="/biosample/submission.html#Sample-type">MIMARKS.survey \u30D1\u30C3\u30B1\u30FC\u30B8</a> \u3092\u4F7F\u3063\u3066 <a href="/biosample/submission.html">BioSample</a> \u306B\u767B\u9332\u3002DRA \u306E\u767B\u9332\u9014\u4E2D\u3067 BioSample \u3092\u4F5C\u6210\u3067\u304D\u307E\u3059\u3002</p>
 `}},{title:{en:"DRA",ja:"DRA"},body:{en:`<p>Register raw sequencing reads to <a href="/dra/submission-e.html">DRA</a>.</p>
 <ol>
   <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
@@ -861,9 +861,9 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
    <ul>
      <li>Provide a BioProject and a BioSample that have been registered for the DRA submission.</li>
      <li>Annotation is optional. If you submit metagenomic sequences with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
-     <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
-     <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-     <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+     <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
+     <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+     <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
    </ul>
    </p>
 <p><a href="/ddbj/env-e.html">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the ENV sequences.</p>
@@ -872,9 +872,9 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 <ul>
   <li>DRA \u30C7\u30FC\u30BF\u306E\u305F\u3081\u306B\u767B\u9332\u3057\u305F BioProject \u3068 BioSample \u3092\u6307\u5B9A\u3057\u307E\u3059\u3002</li>
   <li>\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u306F\u4EFB\u610F\u3067\u3059\u3002\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u4ED8\u304D\u914D\u5217\u3092\u767B\u9332\u3059\u308B\u5834\u5408\u3001\u907A\u4F1D\u5B50\u304C\u4E00\u610F\u306B\u7279\u5B9A\u3067\u304D\u308B\u3088\u3046\u306B locus tag prefix \u3092\u5272\u308A\u5F53\u3066\u307E\u3059\u3002<a href="/ddbj/locus_tag.html">locus tag prefix</a> \u306F BioSample \u767B\u9332\u6642\u306B\u53D6\u5F97\u3057\u307E\u3059\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#flow-2">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002</li>
-  <li><a href="/ddbj/mss.html#Check_submission_files">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u6DFB\u4ED8\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">scp/sftp \u3067\u8EE2\u9001</a>\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#prep">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002</li>
+  <li><a href="/ddbj/mss.html#prep-4">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>
 <p><a href="/ddbj/flat-file.html#ACCESSION">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B92\u6587\u5B57\u3068\u6570\u5B576\u6841\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a>\u304C ENV \u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
@@ -898,9 +898,9 @@ BioProject \u3067\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
    <ul>
      <li>Provide a BioProject and a BioSample that have been registered for the metagenome sequences submission.</li>
      <li>Annotation is optional. If you submit metagenome sequences with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
-     <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
-     <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-     <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+     <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
+     <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+     <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
    </ul>
    </p>
 <p><a href="/ddbj/env-e.html">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the ENV sequences.</p>
@@ -909,9 +909,9 @@ BioProject \u3067\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 <ul>
   <li>\u74B0\u5883\u30B5\u30F3\u30D7\u30EB\u7531\u6765\u914D\u5217\u306E\u305F\u3081\u306B\u767B\u9332\u3057\u305F BioProject \u3068 BioSample \u3092\u6307\u5B9A\u3057\u307E\u3059\u3002</li>
   <li>\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u306F\u4EFB\u610F\u3067\u3059\u3002\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u4ED8\u304D\u914D\u5217\u3092\u767B\u9332\u3059\u308B\u5834\u5408\u3001\u907A\u4F1D\u5B50\u304C\u4E00\u610F\u306B\u7279\u5B9A\u3067\u304D\u308B\u3088\u3046\u306B locus tag prefix \u3092\u5272\u308A\u5F53\u3066\u307E\u3059\u3002<a href="/ddbj/locus_tag.html">locus tag prefix</a> \u306F BioSample \u767B\u9332\u6642\u306B\u53D6\u5F97\u3057\u307E\u3059\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#flow-2">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002</li>
-  <li><a href="/ddbj/mss.html#Check_submission_files">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u6DFB\u4ED8\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">scp/sftp \u3067\u8EE2\u9001</a>\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#prep">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002</li>
+  <li><a href="/ddbj/mss.html#prep-4">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>
 <p><a href="/ddbj/flat-file.html#ACCESSION">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B92\u6587\u5B57\u3068\u6570\u5B576\u6841\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a>\u304C ENV \u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
@@ -977,9 +977,9 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li>Provide a BioProject, BioSample(s) and DRA Run(s) that have been registered for the DRA submission.</li>
   <li>Annotation is optional. If you submit TSA with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
   <li>Provide metadata on the <a href="/ddbj/file-format-e.html#describing_st_comment">sequencing and assembly of the genome</a>.</li>
-  <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files. Sample annotation files of TSA sequences assembled from NGS reads <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1607251813">with annotation</a> and <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=931177555">without annotation</a>.</li>
-  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-  <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+  <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files. Sample annotation files of TSA sequences assembled from NGS reads <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1607251813">with annotation</a> and <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=931177555">without annotation</a>.</li>
+  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+  <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
 </ul>
 </p>
 <p><a href="/ddbj/tsa-e.html#flat-file">Accession numbers with a 4-letter prefix and 8 digits</a> will be assigned to the TSA sequences.</p>
@@ -989,9 +989,9 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li>BioProject\u3001BioSample(s) \u3068 DRA Run(s) \u3092\u6307\u5B9A\u3057\u307E\u3059\u3002</li>
   <li>\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u306F\u4EFB\u610F\u3067\u3059\u304C\u3001\u65B0\u898F\u751F\u7269\u7A2E\u3067\u306F\u5FC5\u9808\u3067\u3059\u3002\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u4ED8\u304D TSA \u3092\u767B\u9332\u3059\u308B\u5834\u5408\u3001\u907A\u4F1D\u5B50\u304C\u4E00\u610F\u306B\u7279\u5B9A\u3067\u304D\u308B\u3088\u3046\u306B locus tag prefix \u3092\u5272\u308A\u5F53\u3066\u307E\u3059\u3002<a href="/ddbj/locus_tag.html">locus tag prefix</a> \u306F BioSample \u767B\u9332\u6642\u306B\u53D6\u5F97\u3057\u307E\u3059\u3002</li>
   <li><a href="/ddbj/file-format.html#describing_st_comment">\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3068\u30A2\u30BB\u30F3\u30D6\u30EA\u306B\u95A2\u3059\u308B\u60C5\u5831</a>\u3092\u8A18\u8F09\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#flow-2">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002NGS \u30EA\u30FC\u30C9\u3092\u30A2\u30BB\u30F3\u30D6\u30EB\u3057\u305F TSA \u914D\u5217\u306E\u30B5\u30F3\u30D7\u30EB\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB\u3001\u300C<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1607251813">\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u3042\u308A</a>\u300D\u3068\u300C<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=931177555">\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u7121\u3057</a>\u300D</li>
-  <li><a href="/ddbj/mss.html#Check_submission_files">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u6DFB\u4ED8\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">scp/sftp \u3067\u8EE2\u9001</a>\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#prep">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002NGS \u30EA\u30FC\u30C9\u3092\u30A2\u30BB\u30F3\u30D6\u30EB\u3057\u305F TSA \u914D\u5217\u306E\u30B5\u30F3\u30D7\u30EB\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB\u3001\u300C<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1607251813">\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u3042\u308A</a>\u300D\u3068\u300C<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=931177555">\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u7121\u3057</a>\u300D</li>
+  <li><a href="/ddbj/mss.html#prep-4">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>
 <p><a href="/ddbj/tsa.html#flat-file">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B94\u6587\u5B57\u30688\u6841\u306E\u6570\u5B57\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a> (\u4F8B IZZY01000001) \u304C TSA \u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
@@ -1054,9 +1054,9 @@ BioProject \u3067\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 <ul>
   <li>You may also include <a href="/bioproject/submission-e.html">BioProject</a> or <a href="/biosample/submission-e.html">BioSample</a> information, if the ESTs are part of a larger project.</li>
   <li>No <a href="/ddbj/flat-file-e.html#FeaturesB">feature</a> annotation should not be included except source.</li>
-  <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1753678626">A sample annotation file</a>.</li>
-  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-  <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+  <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1753678626">A sample annotation file</a>.</li>
+  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+  <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
 </ul>
 </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the finished level geonme sequences.</p>       
@@ -1065,9 +1065,9 @@ BioProject \u3067\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 <ul>
   <li>EST \u304C\u5927\u898F\u6A21\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u306E\u4E00\u74B0\u3067\u3042\u308B\u5834\u5408\u3001BioProject \u3068 BioSample \u3092\u542B\u3081\u308B\u3053\u3068\u304C\u3067\u304D\u307E\u3059\uFF08\u5FC5\u9808\u3067\u306F\u3042\u308A\u307E\u305B\u3093\uFF09\u3002</li>
   <li>source \u4EE5\u5916\u306E <a href="/ddbj/flat-file.html#FeaturesB">feature</a> \u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u3092\u542B\u3081\u308B\u3053\u3068\u306F\u3067\u304D\u307E\u305B\u3093\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#flow-2">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1753678626">\u30B5\u30F3\u30D7\u30EB\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3</a></li>
-  <li><a href="/ddbj/mss.html#Check_submission_files">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u6DFB\u4ED8\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">scp/sftp \u3067\u8EE2\u9001</a>\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#prep">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1753678626">\u30B5\u30F3\u30D7\u30EB\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3</a></li>
+  <li><a href="/ddbj/mss.html#prep-4">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>
 <p><a href="/ddbj/flat-file.html#ACCESSION">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B92\u6587\u5B57\u3068\u6570\u5B576\u6841\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a>\u304C EST \u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
@@ -1103,9 +1103,9 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 <ul>
   <li>Provide a BioProject, BioSample(s) and DRA Run(s) that have been registered for the DRA submission.</li>
   <li>Annotation is optional. If you submit RNA sequences with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
-  <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
-  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-  <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+  <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
+  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+  <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
 </ul>
 </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the RNA sequences.</p>
@@ -1114,9 +1114,9 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 <ul>
   <li>DRA \u30C7\u30FC\u30BF\u306E\u305F\u3081\u306B\u767B\u9332\u3057\u305F BioProject\u3001BioSample \u3068 DRA Run \u3092\u6307\u5B9A\u3057\u307E\u3059\u3002</li>
   <li>\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u306F\u4EFB\u610F\u3067\u3059\u3002\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u4ED8\u304D\u914D\u5217\u3092\u767B\u9332\u3059\u308B\u5834\u5408\u3001\u907A\u4F1D\u5B50\u304C\u4E00\u610F\u306B\u7279\u5B9A\u3067\u304D\u308B\u3088\u3046\u306B locus tag prefix \u3092\u5272\u308A\u5F53\u3066\u307E\u3059\u3002<a href="/ddbj/locus_tag.html">locus tag prefix</a> \u306F BioSample \u767B\u9332\u6642\u306B\u53D6\u5F97\u3057\u307E\u3059\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#flow-2">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002</li>
-  <li><a href="/ddbj/mss.html#Check_submission_files">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u6DFB\u4ED8\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">scp/sftp \u3067\u8EE2\u9001</a>\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#prep">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002</li>
+  <li><a href="/ddbj/mss.html#prep-4">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>
 <p><a href="/ddbj/flat-file.html#ACCESSION">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B92\u6587\u5B57\u3068\u6570\u5B576\u6841\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a>\u304C RNA \u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
@@ -1133,9 +1133,9 @@ BioProject \u3067\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 <ul>
   <li>You may include <a href="/bioproject/submission-e.html">BioProject</a> or <a href="/biosample/submission-e.html">BioSample</a>, if the RNA sequencing is part of a larger project.</li>
   <li>Annotation is optional. If you submit RNA sequences with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
-  <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
-  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-  <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+  <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
+  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+  <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
 </ul>
 </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the RNA sequences.</p>
@@ -1144,9 +1144,9 @@ BioProject \u3067\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 <ul>
   <li>RNA \u914D\u5217\u304C\u5927\u898F\u6A21\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u306E\u4E00\u74B0\u3067\u3042\u308B\u5834\u5408\u3001BioProject \u3068 BioSample \u3092\u542B\u3081\u308B\u3053\u3068\u304C\u3067\u304D\u307E\u3059\uFF08\u5FC5\u9808\u3067\u306F\u3042\u308A\u307E\u305B\u3093\uFF09\u3002</li>
   <li>\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u306F\u4EFB\u610F\u3067\u3059\u3002\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u4ED8\u304D\u914D\u5217\u3092\u767B\u9332\u3059\u308B\u5834\u5408\u3001\u907A\u4F1D\u5B50\u304C\u4E00\u610F\u306B\u7279\u5B9A\u3067\u304D\u308B\u3088\u3046\u306B locus tag prefix \u3092\u5272\u308A\u5F53\u3066\u307E\u3059\u3002<a href="/ddbj/locus_tag.html">locus tag prefix</a> \u306F BioSample \u767B\u9332\u6642\u306B\u53D6\u5F97\u3057\u307E\u3059\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#flow-2">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1753678626">\u30B5\u30F3\u30D7\u30EB\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3</a></li>
-  <li><a href="/ddbj/mss.html#Check_submission_files">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u6DFB\u4ED8\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">scp/sftp \u3067\u8EE2\u9001</a>\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#prep">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=1753678626">\u30B5\u30F3\u30D7\u30EB\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3</a></li>
+  <li><a href="/ddbj/mss.html#prep-4">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>
 <p><a href="/ddbj/flat-file.html#ACCESSION">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B92\u6587\u5B57\u3068\u6570\u5B576\u6841\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a>\u304C RNA \u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
@@ -1254,9 +1254,9 @@ BioProject \u3067\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 <ul>
   <li>Provide a BioProject, BioSample(s) and DRA Run(s) that have been registered for the DRA submission.</li>
   <li>Annotation is optional. If you submit RNA sequences with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
-  <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
-  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-  <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+  <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
+  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+  <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
 </ul>
 </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the RNA sequences.</p>
@@ -1265,9 +1265,9 @@ BioProject \u3067\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 <ul>
   <li>DRA submission \u306E\u305F\u3081\u306B\u767B\u9332\u3057\u305F BioProject\u3001BioSample \u3068 DRA Run \u3092\u6307\u5B9A\u3057\u307E\u3059\u3002</li>
   <li>\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u306F\u4EFB\u610F\u3067\u3059\u3002\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u4ED8\u304D RNA \u914D\u5217\u3092\u767B\u9332\u3059\u308B\u5834\u5408\u3001\u907A\u4F1D\u5B50\u304C\u4E00\u610F\u306B\u7279\u5B9A\u3067\u304D\u308B\u3088\u3046\u306B locus tag prefix \u3092\u5272\u308A\u5F53\u3066\u307E\u3059\u3002<a href="/ddbj/locus_tag.html">locus tag prefix</a> \u306F BioSample \u767B\u9332\u6642\u306B\u53D6\u5F97\u3057\u307E\u3059\u3002
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#flow-2">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002</li>
-  <li><a href="/ddbj/mss.html#Check_submission_files">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u6DFB\u4ED8\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">scp/sftp \u3067\u8EE2\u9001</a>\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#prep">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002</li>
+  <li><a href="/ddbj/mss.html#prep-4">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>
 <p><a href="/ddbj/flat-file.html#ACCESSION">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B92\u6587\u5B57\u3068\u6570\u5B576\u6841\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a>\u304C MAG \u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
@@ -1283,9 +1283,9 @@ BioProject \u3067\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 <ul>
   <li>You may include <a href="/bioproject/submission-e.html">BioProject</a> or <a href="/biosample/submission-e.html">BioSample</a>, if the other DNA/RNA sequencing is part of a larger project.</li>
   <li>Annotation is optional. If you submit RNA sequences with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
-  <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
-  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-  <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+  <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
+  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+  <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
 </ul>
 </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the RNA sequences.</p>
@@ -1294,8 +1294,8 @@ BioProject \u3067\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 <ul>
   <li>\u5927\u898F\u6A21\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u306E\u4E00\u74B0\u3067\u3042\u308B\u5834\u5408\u3001BioProject \u3068 BioSample \u3092\u542B\u3081\u308B\u3053\u3068\u304C\u3067\u304D\u307E\u3059\uFF08\u5FC5\u9808\u3067\u306F\u3042\u308A\u307E\u305B\u3093\uFF09\u3002</li>
   <li>\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u306F\u4EFB\u610F\u3067\u3059\u3002\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u4ED8\u304D\u914D\u5217\u3092\u767B\u9332\u3059\u308B\u5834\u5408\u3001\u907A\u4F1D\u5B50\u304C\u4E00\u610F\u306B\u7279\u5B9A\u3067\u304D\u308B\u3088\u3046\u306B locus tag prefix \u3092\u5272\u308A\u5F53\u3066\u307E\u3059\u3002<a href="/ddbj/locus_tag.html">locus tag prefix</a> \u306F BioSample \u767B\u9332\u6642\u306B\u53D6\u5F97\u3057\u307E\u3059\u3002</li>
-  <li><a href="/ddbj/mss.html#Check_submission_files">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u6DFB\u4ED8\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">scp/sftp \u3067\u8EE2\u9001</a>\u3002</li>
+  <li><a href="/ddbj/mss.html#prep-4">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>
 <p><a href="/ddbj/flat-file.html#ACCESSION">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B92\u6587\u5B57\u3068\u6570\u5B576\u6841\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a>\u304C DNA/RNA \u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
@@ -1515,9 +1515,9 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li>Provide a BioProject and a BioSample that have been registered for the TPA assembly WGS submission. A TPA WGS assembly must be linked to a BioProject and a BioSample.</li>
   <li>Annotation is optional. If you submit a WGS assembly with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
   <li>Provide metadata on the <a href="/ddbj/file-format-e.html#describing_st_comment">sequencing and assembly of the genome</a> and <a href="/ddbj/tpa-table-e.html#subcategories">keywords for TPA</a>.</li>
-  <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=80322930">A sample annotation file of TPA assembly WGS sequences</a>.</li>
-  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-  <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+  <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=80322930">A sample annotation file of TPA assembly WGS sequences</a>.</li>
+  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+  <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
 </ul>
 </p>
 <p><a href="/ddbj/wgs-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., ZZZZ01000001) will be assigned to the TPA WGS sequences.</p>
@@ -1527,9 +1527,9 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li>TPA WGS \u30A2\u30BB\u30F3\u30D6\u30EA\u306E\u305F\u3081\u306B\u767B\u9332\u3057\u305F BioProject \u3068 BioSample \u3092\u6307\u5B9A\u3057\u307E\u3059\u3002TPA WGS \u30A2\u30BB\u30F3\u30D6\u30EA\u914D\u5217\u306F\u4E00\u3064\u306E BioProject \u3068\u4E00\u3064\u306E BioSample \u306B\u30EA\u30F3\u30AF\u3057\u3066\u3044\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002</li>
   <li>\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u306F\u4EFB\u610F\u3067\u3059\u304C\u3001\u65B0\u898F\u751F\u7269\u7A2E\u3067\u306F\u5FC5\u9808\u3067\u3059\u3002\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u4ED8\u304D WGS \u3092\u767B\u9332\u3059\u308B\u5834\u5408\u3001\u907A\u4F1D\u5B50\u304C\u4E00\u610F\u306B\u7279\u5B9A\u3067\u304D\u308B\u3088\u3046\u306B locus tag prefix \u3092\u5272\u308A\u5F53\u3066\u307E\u3059\u3002<a href="/ddbj/locus_tag.html">locus tag prefix</a> \u306F BioSample \u767B\u9332\u6642\u306B\u53D6\u5F97\u3057\u307E\u3059\u3002</li>
   <li><a href="/ddbj/file-format.html#describing_st_comment">\u30B2\u30CE\u30E0\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3068\u30A2\u30BB\u30F3\u30D6\u30EA\u306B\u95A2\u3059\u308B\u60C5\u5831</a>\u3068 <a href="/ddbj/tpa-table-e.html#subcategories">TPA \u30AD\u30FC\u30EF\u30FC\u30C9</a>\u3092\u8A18\u8F09\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#flow-2">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=80322930">\u30B5\u30F3\u30D7\u30EB\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a></li>
-  <li><a href="/ddbj/mss.html#Check_submission_files">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u6DFB\u4ED8\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">scp/sftp \u3067\u8EE2\u9001</a>\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#prep">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002<a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=80322930">\u30B5\u30F3\u30D7\u30EB\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a></li>
+  <li><a href="/ddbj/mss.html#prep-4">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>       
 <p><a href="/ddbj/wgs.html#flat-file">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B94\u6587\u5B57\u30688\u6841\u306E\u6570\u5B57\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a> (\u4F8B ZZZZ01000001) \u304C TPA WGS \u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
@@ -1564,9 +1564,9 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li>Provide a BioProject and BioSample(s) that have been registered for the TPA TSA submission. A TPA TSA must be linked to a BioProject, BioSample(s) and original SRA Run(s).</li>
   <li>Annotation is optional. If you submit TSA sequences with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
   <li>Provide metadata on the <a href="/ddbj/file-format-e.html#describing_st_comment">sequencing and assembly of the transcriptome</a> and <a href="/ddbj/tpa-table-e.html#subcategories">keywords for TPA</a>.</li>
-  <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
-  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-  <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+  <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
+  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+  <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
 </ul>
 </p>
 <p><a href="/ddbj/tsa-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., ZZZZ01000001) will be assigned to the TPA TSA sequences.</p>
@@ -1576,9 +1576,9 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li>TPA TSA \u30A2\u30BB\u30F3\u30D6\u30EA\u306E\u305F\u3081\u306B\u767B\u9332\u3057\u305F BioProject \u3068 BioSample (\u8907\u6570\u53EF) \u3092\u6307\u5B9A\u3057\u307E\u3059\u3002TPA TSA \u306F BioProject\u3001BioSample \u3068 SRA Run \u306B\u30EA\u30F3\u30AF\u3055\u308C\u3066\u3044\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002</li>
   <li>\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u306F\u4EFB\u610F\u3067\u3059\u304C\u3001\u65B0\u898F\u751F\u7269\u7A2E\u3067\u306F\u5FC5\u9808\u3067\u3059\u3002\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u4ED8\u304D WGS \u3092\u767B\u9332\u3059\u308B\u5834\u5408\u3001\u907A\u4F1D\u5B50\u304C\u4E00\u610F\u306B\u7279\u5B9A\u3067\u304D\u308B\u3088\u3046\u306B locus tag prefix \u3092\u5272\u308A\u5F53\u3066\u307E\u3059\u3002<a href="/ddbj/locus_tag.html">locus tag prefix</a> \u306F BioSample \u767B\u9332\u6642\u306B\u53D6\u5F97\u3057\u307E\u3059\u3002</li>
   <li><a href="/ddbj/file-format.html#describing_st_comment">\u30B2\u30CE\u30E0\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3068\u30A2\u30BB\u30F3\u30D6\u30EA\u306B\u95A2\u3059\u308B\u60C5\u5831</a>\u3068 <a href="/ddbj/tpa-table-e.html#subcategories">TPA \u30AD\u30FC\u30EF\u30FC\u30C9</a>\u3092\u8A18\u8F09\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#flow-2">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002</li>
-  <li><a href="/ddbj/mss.html#Check_submission_files">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u6DFB\u4ED8\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">scp/sftp \u3067\u8EE2\u9001</a>\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#prep">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002</li>
+  <li><a href="/ddbj/mss.html#prep-4">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>       
 <p><a href="/ddbj/tsa.html#flat-file">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B94\u6587\u5B57\u30688\u6841\u306E\u6570\u5B57\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a> (\u4F8B IZZY01000001) \u304C TPA TSA \u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
@@ -1613,22 +1613,22 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li>Provide a BioProject and a BioSample that have been registered for the TPA TLS submission. A TPA TLS must be linked to a BioProject and a BioSample.</li>
   <li>Annotation is optional. If you submit TLS sequences with annotation, it must contain the locus tag prefix so that genes are uniquely identifiable. Register the <a href="/ddbj/locus_tag-e.html">locus tag prefix</a> in the BioSample submission.</li>
   <li>Provide <a href="/ddbj/tpa-table-e.html#subcategories">keywords for TPA</a>.</li>
-  <li>Prepare sequences in <a href="/ddbj/mss-e.html#flow-2">fasta files and metadata in annotation files</a> as submission files.</li>
-  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#Check_submission_files">MSS checking tool</a>.</li>
-  <li><a href="/ddbj/mss-e.html#File_transfer">Send the submission files</a> by email attachment or scp/sftp.</li>
+  <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
+  <li>Check the submission files by using the <a href="/ddbj/mss-e.html#prep-4">MSS checking tool</a>.</li>
+  <li>Send the submission files by <a href="/ddbj/mss-e.html#sendfiles">MSS application form or SFTP</a>.</li>
 </ul>
 </p>
 <p><a href="/ddbj/tls-e.html#flat-file">Accession numbers with a 4-letter WGS prefix and 8 digits</a> (e.g., ZZZZ01000001) will be assigned to the TPA TLS sequences.</p>
-`},ja:`<p>TPA <a href="/ddbj/tls.html">TLS</a> \u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u7D4C\u7531\u3067 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
+`,ja:`<p>TPA <a href="/ddbj/tls.html">TLS</a> \u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u7D4C\u7531\u3067 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
 <p>MSS \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067:
 <ul>
   <li>TPA TLS \u306E\u305F\u3081\u306B\u767B\u9332\u3057\u305F BioProject \u3068 BioSample \u3092\u6307\u5B9A\u3057\u307E\u3059\u3002TPA TLS \u914D\u5217\u306F\u4E00\u3064\u306E BioProject \u3068\u4E00\u3064\u306E BioSample \u306B\u30EA\u30F3\u30AF\u3057\u3066\u3044\u308B\u5FC5\u8981\u304C\u3042\u308A\u307E\u3059\u3002</li>
   <li>\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u306F\u4EFB\u610F\u3067\u3059\u304C\u3001\u65B0\u898F\u751F\u7269\u7A2E\u3067\u306F\u5FC5\u9808\u3067\u3059\u3002\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u4ED8\u304D TLS \u3092\u767B\u9332\u3059\u308B\u5834\u5408\u3001\u907A\u4F1D\u5B50\u304C\u4E00\u610F\u306B\u7279\u5B9A\u3067\u304D\u308B\u3088\u3046\u306B locus tag prefix \u3092\u5272\u308A\u5F53\u3066\u307E\u3059\u3002<a href="/ddbj/locus_tag.html">locus tag prefix</a> \u306F BioSample \u767B\u9332\u6642\u306B\u53D6\u5F97\u3057\u307E\u3059\u3002</li>
   <li><a href="/ddbj/tpa-table-e.html#subcategories">TPA \u30AD\u30FC\u30EF\u30FC\u30C9</a>\u3092\u8A18\u8F09\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#flow-2">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002</li>
-  <li><a href="/ddbj/mss.html#Check_submission_files">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
-  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u96FB\u5B50\u30E1\u30FC\u30EB\u6DFB\u4ED8\u3001\u3082\u3057\u304F\u306F\u3001<a href="/ddbj/mss.html#File_transfer">scp/sftp \u3067\u8EE2\u9001</a>\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u3001<a href="/ddbj/mss.html#prep">\u5869\u57FA\u914D\u5217\u3092 fasta \u30D5\u30A1\u30A4\u30EB\u3001\u30E1\u30BF\u30C7\u30FC\u30BF\u3092 annotation \u30D5\u30A1\u30A4\u30EB</a>\u3001\u3068\u3057\u3066\u6E96\u5099\u3057\u307E\u3059\u3002</li>
+  <li><a href="/ddbj/mss.html#prep-4">MSS \u30C1\u30A7\u30C3\u30AF\u30C4\u30FC\u30EB</a>\u3067\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092\u30C1\u30A7\u30C3\u30AF\u3002</li>
+  <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/ddbj/mss.html#sendfiles">MSS form \u306B\u3066\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9\u3001\u3082\u3057\u304F\u306F\u3001SFTP\u8EE2\u9001</a>\u3002</li>
 </ul>
 </p>       
 <p><a href="/ddbj/tls.html#flat-file">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B94\u6587\u5B57\u30688\u6841\u306E\u6570\u5B57\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a> (\u4F8B TZZZ01000001) \u304C TPA TLS \u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
-`}]}};const k=G;function N(a){const e=k[a];if(!e)throw new Error(`goal not found: id=${a}`);return e}const I=D`:host{--max-height:calc(100vh - 2em)}.container{display:grid;grid-template:"header     header" auto "nav        content" 1fr/min-content 1fr;max-height:var(--max-height)}.container>h1{grid-area:header}.container>nav{grid-area:nav;text-align:center}.container>main{grid-area:content;overflow:auto}.space-between{display:flex;justify-content:space-between}.no-margin-around-y>:first-child{margin-top:0;padding-top:0}.no-margin-around-y>:last-child{margin-bottom:0;padding-bottom:0}.tabs>a{display:block;padding:calc(.5em / 1.2) calc(1.75em / 1.2);border-style:solid;border-color:transparent;border-width:3px 0;transition:background-color .2s,border-color .2s}.tabs>a:hover:not(.active){background-color:#eee}.tabs>a.active{border-bottom-color:#ff7370;text-decoration:none;color:inherit;font-weight:700}svg.icon{height:1em;width:1em;vertical-align:-.1em}`;var J=Object.defineProperty,E=Object.getOwnPropertyDescriptor,o=(a,e,s,i)=>{for(var n=i>1?void 0:i?E(e,s):e,m=a.length-1,h;m>=0;m--)(h=a[m])&&(n=(i?h(e,s,n):h(n))||n);return i&&n&&J(e,s,n),n},S=(a,e,s)=>{if(!e.has(a))throw TypeError("Cannot "+s)},j=(a,e,s)=>(S(a,e,"read from private field"),s?s.call(a):e.get(a)),_=(a,e,s)=>{if(e.has(a))throw TypeError("Cannot add the same private member more than once");e instanceof WeakSet?e.add(a):e.set(a,s)},C=(a,e,s,i)=>(S(a,e,"write to private field"),i?i.call(a,s):e.set(a,s),s),l;let t=class extends y(R){constructor(){super(...arguments);_(this,l,void 0)}get section(){return j(this,l)||this.goal?.sections[0]}set section(a){const e=j(this,l);C(this,l,a),this.requestUpdate("section",e)}get previousSection(){const{goal:a,section:e}=this;if(!a||!e)return;const s=a.sections.indexOf(e);return s<=0?void 0:a.sections[s-1]}get nextSection(){const{goal:a,section:e}=this;if(!a||!e)return;const s=a.sections.indexOf(e);return s===-1||s>=a.sections.length?void 0:a.sections[s+1]}render(){const{goal:a}=this;return a?r`<div class="container border fade"><h1 class="box bg-primary my-0 font-large">${V} ${d("Submission Instructions")}</h1><nav class="box tabs font-heading font-large">${a.sections.map(e=>r`<a @click="${this.selectSection(e)}" class="${this.section===e?"active":""}" href="#">${this.localize(e.title)}</a>`)}</nav><main ${T()} class="box vstack">${this.sectionTemplate()}</main></div>`:""}sectionTemplate(){if(!this.section)return"";const{body:a}=this.section;return r`<div class="no-margin-around-y">${q(this.localize(a))}</div><nav class="space-between"><div>${this.sectionLinkTemplate(`\xAB ${d("Prev")}`,this.previousSection)}</div><div>${this.sectionLinkTemplate(`${d("Next")} \xBB`,this.nextSection)}</div></nav>`}sectionLinkTemplate(a,e){return e?r`<a @click="${this.selectSection(e)}" href="#">${a}</a>`:""}selectSection(a){return e=>{e.preventDefault(),this.section=a}}};l=new WeakMap,t.styles=[w,I],o([B({converter:F})],t.prototype,"goal",2),o([b()],t.prototype,"section",1),o([b()],t.prototype,"previousSection",1),o([b()],t.prototype,"nextSection",1),t=o([M(),P("submission-wizard-goal")],t);function F(a){return a?N(a):void 0}const V=A`<svg class="icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M39 9.75V16.1786C39 18.2496 32.2843 19.9286 24 19.9286C15.7157 19.9286 9 18.2496 9 16.1786V9.75C9 7.67893 15.7157 6 24 6C32.2843 6 39 7.67893 39 9.75ZM9.62114 19.7144C11.4651 21.2634 17.2049 22.393 24 22.393C30.7951 22.393 36.5349 21.2634 38.3789 19.7144C38.783 20.0538 39 20.4134 39 20.7857V27.2143C39 29.2853 32.2843 30.9643 24 30.9643C15.7157 30.9643 9 29.2853 9 27.2143V20.7858C9.00002 20.4135 9.21703 20.0538 9.62114 19.7144ZM24 33.6786C17.205 33.6786 11.4652 32.549 9.62118 31C9.21703 31.3395 9 31.6991 9 32.0714V38.5C9 40.5711 15.7157 42.25 24 42.25C32.2843 42.25 39 40.5711 39 38.5V32.0714C39 31.6991 38.783 31.3395 38.3788 31C36.5348 32.549 30.795 33.6786 24 33.6786ZM32.3333 37.3333C32.3333 37.9777 31.811 38.5 31.1667 38.5C30.5223 38.5 30 37.9777 30 37.3333C30 36.689 30.5223 36.1667 31.1667 36.1667C31.811 36.1667 32.3333 36.689 32.3333 37.3333ZM35.8333 37.3333C36.4777 37.3333 37 36.811 37 36.1667C37 35.5223 36.4777 35 35.8333 35C35.189 35 34.6667 35.5223 34.6667 36.1667C34.6667 36.811 35.189 37.3333 35.8333 37.3333Z" fill="#333333"/></svg>`;export{t as SubmissionWizardGoal};
+`}}]}};const N=G;function I(a){const e=N[a];if(!e)throw new Error(`goal not found: id=${a}`);return e}const k=y`:host{--max-height:calc(100vh - 2em)}.container{display:grid;grid-template:"header     header" auto "nav        content" 1fr/min-content 1fr;max-height:var(--max-height)}.container>h1{grid-area:header}.container>nav{grid-area:nav;text-align:center}.container>main{grid-area:content;overflow:auto}.space-between{display:flex;justify-content:space-between}.no-margin-around-y>:first-child{margin-top:0;padding-top:0}.no-margin-around-y>:last-child{margin-bottom:0;padding-bottom:0}.tabs>a{display:block;padding:calc(.5em / 1.2) calc(1.75em / 1.2);border-style:solid;border-color:transparent;border-width:3px 0;transition:background-color .2s,border-color .2s}.tabs>a:hover:not(.active){background-color:#eee}.tabs>a.active{border-bottom-color:#ff7370;text-decoration:none;color:inherit;font-weight:700}svg.icon{height:1em;width:1em;vertical-align:-.1em}`;var J=Object.defineProperty,E=Object.getOwnPropertyDescriptor,o=(a,e,i,s)=>{for(var n=s>1?void 0:s?E(e,i):e,m=a.length-1,h;m>=0;m--)(h=a[m])&&(n=(s?h(e,i,n):h(n))||n);return s&&n&&J(e,i,n),n},S=(a,e,i)=>{if(!e.has(a))throw TypeError("Cannot "+i)},j=(a,e,i)=>(S(a,e,"read from private field"),i?i.call(a):e.get(a)),C=(a,e,i)=>{if(e.has(a))throw TypeError("Cannot add the same private member more than once");e instanceof WeakSet?e.add(a):e.set(a,i)},F=(a,e,i,s)=>(S(a,e,"write to private field"),s?s.call(a,i):e.set(a,i),i),l;let t=class extends D(R){constructor(){super(...arguments),C(this,l,void 0)}get section(){return j(this,l)||this.goal?.sections[0]}set section(a){const e=j(this,l);F(this,l,a),this.requestUpdate("section",e)}get previousSection(){const{goal:a,section:e}=this;if(!a||!e)return;const i=a.sections.indexOf(e);return i<=0?void 0:a.sections[i-1]}get nextSection(){const{goal:a,section:e}=this;if(!a||!e)return;const i=a.sections.indexOf(e);return i===-1||i>=a.sections.length?void 0:a.sections[i+1]}render(){const{goal:a}=this;return a?r`<div class="container border fade"><h1 class="box bg-primary my-0 font-large">${_} ${d("Submission Instructions")}</h1><nav class="box tabs font-heading font-large">${a.sections.map(e=>r`<a @click="${this.selectSection(e)}" class="${this.section===e?"active":""}" href="#">${this.localize(e.title)}</a>`)}</nav><main ${x()} class="box vstack">${this.sectionTemplate()}</main></div>`:""}sectionTemplate(){if(!this.section)return"";const{body:a}=this.section;return r`<div class="no-margin-around-y">${q(this.localize(a))}</div><nav class="space-between"><div>${this.sectionLinkTemplate(`\xAB ${d("Prev")}`,this.previousSection)}</div><div>${this.sectionLinkTemplate(`${d("Next")} \xBB`,this.nextSection)}</div></nav>`}sectionLinkTemplate(a,e){return e?r`<a @click="${this.selectSection(e)}" href="#">${a}</a>`:""}selectSection(a){return e=>{e.preventDefault(),this.section=a}}};l=new WeakMap,t.styles=[B,k],o([w({converter:V})],t.prototype,"goal",2),o([p()],t.prototype,"section",1),o([p()],t.prototype,"previousSection",1),o([p()],t.prototype,"nextSection",1),t=o([P(),M("submission-wizard-goal")],t);function V(a){return a?I(a):void 0}const _=A`<svg class="icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M39 9.75V16.1786C39 18.2496 32.2843 19.9286 24 19.9286C15.7157 19.9286 9 18.2496 9 16.1786V9.75C9 7.67893 15.7157 6 24 6C32.2843 6 39 7.67893 39 9.75ZM9.62114 19.7144C11.4651 21.2634 17.2049 22.393 24 22.393C30.7951 22.393 36.5349 21.2634 38.3789 19.7144C38.783 20.0538 39 20.4134 39 20.7857V27.2143C39 29.2853 32.2843 30.9643 24 30.9643C15.7157 30.9643 9 29.2853 9 27.2143V20.7858C9.00002 20.4135 9.21703 20.0538 9.62114 19.7144ZM24 33.6786C17.205 33.6786 11.4652 32.549 9.62118 31C9.21703 31.3395 9 31.6991 9 32.0714V38.5C9 40.5711 15.7157 42.25 24 42.25C32.2843 42.25 39 40.5711 39 38.5V32.0714C39 31.6991 38.783 31.3395 38.3788 31C36.5348 32.549 30.795 33.6786 24 33.6786ZM32.3333 37.3333C32.3333 37.9777 31.811 38.5 31.1667 38.5C30.5223 38.5 30 37.9777 30 37.3333C30 36.689 30.5223 36.1667 31.1667 36.1667C31.811 36.1667 32.3333 36.689 32.3333 37.3333ZM35.8333 37.3333C36.4777 37.3333 37 36.811 37 36.1667C37 35.5223 36.4777 35 35.8333 35C35.189 35 34.6667 35.5223 34.6667 36.1667C34.6667 36.811 35.189 37.3333 35.8333 37.3333Z" fill="#333333"/></svg>`;export{t as SubmissionWizardGoal};

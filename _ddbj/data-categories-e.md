@@ -34,7 +34,7 @@ related_pages:
     url: /ddbj/tpa-e.html
 ---
 
-## [Division](/ddbj/flat-file-e.html#Division) conventional sequence data  {#division}
+## Division  {#division}
 
 ### General data: classified by source species  {#general}
 
@@ -75,35 +75,9 @@ feature](/ddbj/file-format-e.html#biological_feature).
 | Division | Description |
 |---|
 | ENV | Sequences obtained via environmental sampling methods, direct PCR, DGGE, etc.<br />For ENV submissions, it is necessary to describe an [environmental_sample qualifier](/ddbj/qualifiers-e.html#environmental_sample) on the source feature.  |
-| SYN | Synthetic constructs, sequences constructed by artificial manipulations<br />For SYN submissions, in general, the entry often has plural source features, so it should be cared.<br />See also [Example of Submission; E05) synthetic construct.](/ddbj/example-e.html#E05).  |
+| SYN | Synthetic constructs; sequences constructed by artificial manipulations<br />For SYN submissions, in general, the entry often has plural source features, so it should be cared.<br />See also [Example of Submission; E05) synthetic construct.](/ddbj/example-e.html#E05).  |
 
-
-
-### EST/GSS/HTC/HTG/STS: Divisions for Feasibility of Sequencing  {#est}
-
-Sequences derived from high throughput projects, such as large scale
-analyses like EST dataset, ongoing whole genome scale sequencing, and so
-on, are classified into the following divisions, respectively.  
-Basically only one source feature should be described for an entry in
-those divisions.  
-In this regard, however, the entries including HTC or HTG division can
-have some [Biological
-features](/ddbj/file-format-e.html#biological_feature) like as general
-data, if necessary.
-
-
-
-| Division | Description |
-|---|
-| [EST](/ddbj/est-e.html) | Expressed sequence tags, cDNA sequences read short single pass.  |
-| [GSS](/ddbj/gss-e.html) | Genome survey sequences, genome sequences read short single pass.  |
-| STS | Sequence tagged sites, tagged sequences for genome sequencing.<br />Recommended to use [primer_bind](/ddbj/features-e.html#primer_bind) feature and [PCR_conditions](/ddbj/qualifiers-e.html#PCR_conditions) qualifier.  |
-| [HTC](/ddbj/htc-e.html) | High throughput cDNA sequences from cDNA sequencing projects, not EST.<br />This division is to include unfinished high throughput cDNA sequences.  |
-| [HTG](/ddbj/htg-e.html) | High throughput genomic sequences mainly from genome sequencing projects.<br />Unfinished HTG entries are classified into different levels, as follow;{::nomarkdown}<ul><li>phase0；Survey sequence generated for the purpose of library quality assessment and detection of overlaps with other clones before construction of piece contig(s)</li><li>phase1；Unfinished sequence having contigs that have NOT been ordered and oriented</li><li>phase2；Unfinished sequence having contigs that have been ordered and oriented</li></ul>{:/}  |
-
-
-
-### CON: Contig / Constructed, Tiling of Entries  {#con}
+### CON: Contig/Constructed, Tiling of Entries  {#con}
 
 Many genome projects submitting a lot of [HTG](/ddbj/htg-e.html) and/or
 [WGS](/ddbj/wgs-e.html) entries can often provide the information to
@@ -119,6 +93,28 @@ At first you have to submit all piece entries to construct the contig,
 then a CON entry will be constructed.  
 [AGP file](/ddbj/file-format-e.html#agp) is required to submit CON
 entries.
+
+### EST/GSS/HTC/HTG/STS: Divisions for Feasibility of Sequencing  {#est}
+
+Sequences derived from high throughput projects, such as large scale
+analyses like EST dataset, ongoing whole genome scale sequencing, and so
+on, are classified into the following divisions, respectively.  
+Basically only one source feature should be described for an entry in
+those divisions.  
+In this regard, however, the entries including HTC or HTG division can
+have some [Biological
+features](/ddbj/file-format-e.html#biological_feature) like as general
+data, if necessary.
+
+
+| Division | Description |
+|---|
+| [EST](/ddbj/est-e.html) | Expressed sequence tags, cDNA sequences read short single pass.  |
+| [GSS](/ddbj/gss-e.html) | Genome survey sequences, genome sequences read short single pass.  |
+| STS | Sequence tagged sites, tagged sequences for genome sequencing.<br />Recommended to use [primer_bind](/ddbj/features-e.html#primer_bind) feature and [PCR_conditions](/ddbj/qualifiers-e.html#PCR_conditions) qualifier.  |
+| [HTC](/ddbj/htc-e.html) | High throughput cDNA sequences from cDNA sequencing projects, not EST.<br />This division is to include unfinished high throughput cDNA sequences.  |
+| [HTG](/ddbj/htg-e.html) | High throughput genomic sequences mainly from genome sequencing projects.<br />Unfinished HTG entries are classified into different levels, as follow;{::nomarkdown}<ul><li>phase0；Survey sequence generated for the purpose of library quality assessment and detection of overlaps with other clones before construction of piece contig(s)</li><li>phase1；Unfinished sequence having contigs that have NOT been ordered and oriented</li><li>phase2；Unfinished sequence having contigs that have been ordered and oriented</li></ul>{:/}  |
+
 
 ## Data type, bulk sequence data  {#data_type}
 
@@ -157,9 +153,9 @@ data.
 Please note that TLS data is different from others in its [format of
 accession number](/ddbj/flat-file-e.html#Accession).
 
-## Sequenced by whom  {#whom}
+## Distinguishing that the nucleotide sequences are not determined by the submitters  {#whom}
 
-### TPA; Third Party Data and primary sequence data  {#tpa}
+### TPA: Third Party Data and primary sequence data  {#tpa}
 
 [TPA (Third Party Data)](/ddbj/tpa-e.html) is a nucleotide sequence data
 collection in which each entry is obtained by assembling primary entries
@@ -174,18 +170,24 @@ the process to publish biological research for primary nucleotide
 sequences.  
 See also [TPA Submission Guidelines](/ddbj/tpa-table-e.html).
 
+## Data types in MSS submission  {#sub}
 
-<div class="attention" markdown="1">
-If you are not sure to which database you should submit your data, see
-following sites;
+| Type | Description |
+|---|
+| WGS: Whole Genome Shotgun | The sequences are [WGS (draft genome)](/ddbj/wgs-e.html) excluding MAG or SAG. |
+| GNM: Finished Level Genome Sequence, non-WGS | The sequences are [Finished Level Genomic Sequences (not WGS)](/ddbj/finished_level_genome-e.html) excluding MAG or SAG. |
+| MAG: Metagenome-Assembled Genome | The sequences are [MAG](/ddbj/metagenome-assembly-e.html). |
+| SAG: Single Amplified Genome | The sequences are [SAG](/ddbj/single-amplified-genome-e.html). |
+| TLS: Targeted Locus Study | The sequences are [TLS](/ddbj/tls-e.html). |
+| HTG: High Throughput Genomic Sequences | The sequences are [HTG](/ddbj/htg-e.html). |
+| TSA: Transcriptome Shotgun Assembly | The sequences are [TSA](/ddbj/tsa-e.html). |
+| HTC: High Throughput cDNA Sequences | The sequences are [HTC](/ddbj/htc-e.html). |
+| EST: Expressed Sequence Tags | The sequences are [EST](/ddbj/est-e.html). |
+| MISC: Sequences that are not included in above types | The sequences do not match any types. |
+| ASK: Ask DDBJ curator to judge a correct datatype | Ask DDBJ curators to counsult the data type. |
 
-  - [steps of genome sequencing, categories of sequence data and their
-    correspondences](/ddbj/genome-e.html)
-  - [steps of transcriptome project, categories of sequence data and
-    their correspondences](/ddbj/transcriptome-e.html)
-  - [Division](/ddbj/flat-file-e.html#Division)
+## Decision of the data type and the registration site for submitting the nucleotide sequences 
 
-Using [Mass Submission System (MSS)](/ddbj/mss-e.html), the submitted
-nucleotide sequences are classified into one of the categories according
-to the descriptions of the DATATYPE, DIVISION, KEYWORD.
-</div>
+  - [Steps of genome sequencing, categories of sequence data and their correspondences](/ddbj/genome-e.html)
+  - [Steps of transcriptome project, categories of sequence data and their correspondences](/ddbj/transcriptome-e.html)
+  - [Navigation](/submission-navigation-e.html)

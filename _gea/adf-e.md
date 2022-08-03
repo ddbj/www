@@ -116,7 +116,7 @@ column. Affymetrix array designs will always have composite elements
 because they are based on "probe sets" and not simply "probes".
 
 Here is a snippet from a hypothetical example of an array design,
-showing seven features, two reporters and one composite element:
+showing sixteen features, five reporters and two composite elements:
 
 
 {% include image.html url="magetab/adf3.png" caption="Feature, reporter and composite element" class="w450" %}
@@ -154,7 +154,7 @@ and control reporters.
 
 **Cross references to external databases:**
 
-Look up the abbreviated name of the cross-referenced database from [this allowed list](https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=1479684386),
+Look up the abbreviated name of the cross-referenced database from [this allowed list](https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=149684386),
 and insert it inside the square brackets of the column heading Reporter
 Database Entry [xxx], e.g. Reporter Database Entry [genbank]. Then,
 fill the column with the appropriate accession. You can enter multiple

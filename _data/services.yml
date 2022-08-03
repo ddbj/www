@@ -399,6 +399,22 @@ items:
     tags:
       - database
 
+  - name: MetaboBank
+    formal_name: MetaboBank
+    service_link:
+      en: /metabobank/index-e.html
+      ja: /metabobank/index.html
+    description:
+      en: A public repository for metabolomics data.
+      ja: メタボロミクスデータの登録を受付ける公共リポジトリ。
+    provider: DDBJ
+    target_data:
+      en: metabolomics data
+      ja: メタボロミクスデータ
+    tags:
+      - database
+      - submission
+
   - name: TogoVar
     formal_name: TogoVar
     service_link:

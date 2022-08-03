@@ -1,14 +1,13 @@
 ---
 layout: simple
-title: 登録ファイルのサイズが大きすぎて、メール添付で送ることができません。その他の転送方法がありますか？
+title: 登録ファイルサイズが巨大すぎたりファイル数が多すぎるために、フォームから登録ファイルを送ることができない場合、どのように転送したらよいでしょうか。
 category: faq
 db:
   - ddbj
 tags: 
   - Mass Submission System
-date: 2020-11-25T11:19:00
+date: 2022-06-17T00:00:00
 lang: ja
 ---
 
-[SCP によるファイル](/ddbj/mss.html#ファイルの送付方法)転送用ディレクトリを作成しますので、D-way アカウントをご提示下さい。    
-D-way アカウントをお持ちでない場合には、[こちら](/dra/submission.html#dra-data-submission)のサイトをご一読いただき、取得を行って下さい。
+MSS form から登録ファイルを送信できない場合は、[SFTP によるファイル転送](/ddbj/mss.html#sendfiles)を利用してください。

@@ -65,7 +65,7 @@ Download the excel for metadata description below and enter metadata in English.
 
 [![JGA metadata excel](/assets/images/parts/download.png "JGA metadata excel"){:.w40}](/assets/files/submission/JGA_metadata.xlsx)
 
-last updated: 2022-03-02
+last updated: 2022-04-27
 
 <div class="attention" markdown="1">
 Data files to be uploaded to JGA should not have spaces in their filenames.
