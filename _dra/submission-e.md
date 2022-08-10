@@ -1921,10 +1921,7 @@ Because the MD5 number of the damaged file is distinct from the original
 one, we can check whether the transferred file is intact or not by
 comparing the numbers before and after the file transfer.
 
-
-<div class="accordion-menu" markdown="1">
-<h3 class="toggle-content-btn"><a href="javascript:void(0)" name="obtain-md5-number-linux">Obtain MD5 number (Linux)</a></h3>
-<div class="accordion-content">
+### Obtain MD5 number (Linux) {#obtain-md5-number-linux}
 
 Obtain the MD5 numbers of the files by executing,
 
@@ -1934,14 +1931,7 @@ $ md5sum file1 file2
 B636E0063E29709B6082F324C76D0911 file2
 ```
 
-[« Close](javascript:void(0)){: .close-content-btn}
-</div>
-</div>
-
-
-<div class="accordion-menu" markdown="1">
-<h3 class="toggle-content-btn"><a href="javascript:void(0)" name="obtain-md5-number-mac-os-x">Obtain MD5 number (Mac OS X)</a></h3>
-<div class="accordion-content">
+### Obtain MD5 number (Mac OS X) {#obtain-md5-number-mac-os-x}
 
 Obtain the MD5 numbers of the files by executing,
 
@@ -1951,17 +1941,44 @@ $ md5 file1 file2
 B636E0063E29709B6082F324C76D0911 file2
 ```
 
-[« Close](javascript:void(0)){: .close-content-btn}
-</div>
-</div>
+### Obtain MD5 number (Windows) {#obtain-md5-number-windows}
 
+#### PowerShell {#ps}
 
-<div class="accordion-menu" markdown="1">
-<h3 class="toggle-content-btn"><a href="javascript:void(0)" name="obtain-md5-number-windows">Obtain MD5 number (Windows)</a></h3>
-<div class="accordion-content">
+Run the Windows PowerShell.
 
-Install and run the [Fsum Frontend (sourceforge.net/projects/fsumfe/)](//sourceforge.net/projects/fsumfe/)
-.  
+[![]({{ site.baseurl }}/assets/images/books/win-ps-1.jpg){:.w200}]({{ site.baseurl }}/assets/images/books/win-ps-1.jpg "Run the Windows PowerShell"){: .group1}
+
+Obtain MD5 checksum values by executing following commands in the PowerShell terminal.
+
+```
+Specify "md5" in the Algorithm option and obtain MD5 values.    
+Different from Linux and Mac OS X, English letters are in uppercase.  
+Uppercase and lowercase letters are not distinguished.
+
+PS C:\files> Get-FileHash -Algorithm md5 sample1.fastq
+
+Algorithm       Hash                                      Path
+---------       ----                                      ----
+MD5             9B5085A9DD0E823A2F1A4D93AF48230C   　　    C:\files\sample1.fastq
+
+Files can be specified by using wild card (*).
+
+PS C:\files> Get-FileHash -Algorithm md5 sample*
+
+Algorithm       Hash                                      Path
+---------       ----                                      ----
+MD5             9B5085A9DD0E823A2F1A4D93AF48230C   　　    C:\files\sample1.fastq
+MD5             0FE4741835A3E62C7523EA531753843A          C:\files\sample2.fastq
+```
+
+The terminal will be as follows.
+
+[![]({{ site.baseurl }}/assets/images/books/win-ps-md5.jpg){:.w600}]({{ site.baseurl }}/assets/images/books/win-ps-md5.jpg "Execute MD5 commands"){: .group1}
+
+#### Fsum Frontend {#fsum}
+
+Install and run the [Fsum Frontend (sourceforge.net/projects/fsumfe/)](//sourceforge.net/projects/fsumfe/).  
 At first, tick off "md5".
 
 <a href="/assets/images/books/Fsum1.jpg" title="Generate md5 in the tool 1" class="group1"><img src="/assets/images/books/Fsum1.jpg" alt="Generate md5 in the tool 1" title="Generate md5 in the tool 1" class="w400"></a>
@@ -1977,7 +1994,3 @@ By clicking the [Export] button, you can obtain the list of the MD5
 numbers as a html, a csv, or a xml file.
 
 <a href="/assets/images/books/Fsum3.jpg" title="Generate md5 in the tool 3" class="group1"><img src="/assets/images/books/Fsum3.jpg" alt="Generate md5 in the tool 3" title="Generate md5 in the tool 3" class="w400"></a>
-
-[« Close](javascript:void(0)){: .close-content-btn}
-</div>
-</div>
