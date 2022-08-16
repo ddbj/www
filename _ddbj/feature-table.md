@@ -7,7 +7,7 @@ current_tab: home
 lang: ja
 ---
 
-The original site; [The DDBJ/ENA/GenBank Feature Table Definition](http://www.insdc.org/documents/feature-table) Version 11.1 October 2021
+The original site; [The DDBJ/ENA/GenBank Feature Table Definition](https://insdc.org/submitting-standards/feature-table/) Version 11.1 October 2021
 
 ```
 The DDBJ/ENA/GenBank Feature Table Definition

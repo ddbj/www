@@ -262,7 +262,7 @@ List of Qualifiers for REFERENCE
       <td>255</td>
     </tr>
     <tr class="even">
-      <td>ab_name (abbreviation of author name)</td>
+      <td>ab_name?(abbreviation of author name)</td>
       <td>alphabets, .[period], ,[comma], -[hyphen], ' [single quote as apostrophe]</td>
       <td>64</td>
     </tr>
@@ -466,7 +466,7 @@ Example: DATATYPE in annotation file
 ## KEYWORD  {#keyword}
 
 On the basis of categories indicated at the sections, [DIVISION](#division) and [DATATYPE](#datatype), KEYWORDs with controlled vocabulary describe more detail and specified information, such as experimental methods.  
-Please see [INSDC agreed methodological keywords](/ddbj/keyword-e.html), which qualify controlled keyword terms.
+Please see [INSDC agreed methodological keywords](https://insdc.org/submitting-standards/methodological-keywords/), which qualify controlled keyword terms.
 
 Example: KEYWORD in annotation file
 

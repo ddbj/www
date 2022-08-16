@@ -660,7 +660,7 @@ ab initio prediction:Genscan:2.0
 alignment:Splign:1.26p:RefSeq:NM_000041.2,INSD:BC003557.1</pre>
 
 備考
-: [inference の推奨例](http://www.insdc.org/documents/inference-qualifiers)    
+: [inference の推奨例](https://insdc.org/submitting-standards/inference-qualifiers/)    
 
 - [:EVIDENCE_BASIS] は任意ですが, 参照したデータベースエントリ (Accession number と version を含む), あるいはアルゴリズム (version を含む) を記述します。    
 - [(same species)] は任意 同種との相同性により得られた推定の場合記述します。    
@@ -906,7 +906,7 @@ ssRNA negative-strand virus 由来のゲノム配列に関しては、原則、�
 siRNA</pre>
 
 備考
-: &lt;TYPE&gt; は [Controlled vocabulary for ncRNA classes](http://www.insdc.org/documents/ncrna-vocabulary) になければなりません。    
+: &lt;TYPE&gt; は [Controlled vocabulary for ncRNA classes](https://insdc.org/submitting-standards/ncrna-vocabulary/) になければなりません。    
 otherを選択した場合は /[product](#product) に名称、/[note](#note) に簡単な説明を記載してください。 
 
 
@@ -1135,7 +1135,7 @@ allelic
 unknown    
 
 備考
-: タイプの詳細 は [Controlled vocabulary for /pseudogene qualifier](http://www.insdc.org/documents/pseudogene-qualifier-vocabulary) で解説されています。 
+: タイプの詳細 は [Controlled vocabulary for /pseudogene qualifier](https://insdc.org/submitting-standards/pseudogene-qualifier-vocabulary/) で解説されています。 
 
 
 ### /rearranged<a name="rearranged"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#rearranged)</span><a name="rearranged"></a>
@@ -1186,7 +1186,7 @@ uORF
 other    
 
 備考
-: タイプの詳細 は [Controlled vocabulary for /regulatory_class](http://www.insdc.org/controlled-vocabulary-regulatoryclass) で解説されています。 
+: タイプの詳細 は [Controlled vocabulary for /regulatory_class](https://insdc.org/submitting-standards/controlled-vocabulary-regulatoryclass/) で解説されています。 
 
 
 ### /replace<a name="replace"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#replace)</span>
@@ -1252,7 +1252,7 @@ centromeric_repeat
 other    
 
 備考
-: 規定値の詳細は [Controlled vocabulary for /rpt_type qualifier](http://www.insdc.org/controlled-vocabulary-rpttype-qualifier) に解説があります。 
+: 規定値の詳細は [Controlled vocabulary for /rpt_type qualifier](https://insdc.org/submitting-standards/controlled-vocabulary-rpttype-qualifier/) に解説があります。 
 
 
 ### /rpt_unit_seq<a name="rpt_unit_seq"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#rpt_unit_seq)</span>

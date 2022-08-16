@@ -7,41 +7,33 @@ current_tab: home
 lang: en
 ---
 
-The original site; [Controlled vocabulary for /db_xref
-qualifier](http://www.insdc.org/documents/dbxref-qualifier-vocabulary)
-2016.08.28 version  
-See also [db_xref](https://www.ncbi.nlm.nih.gov/genbank/collab/db_xref)
-at NCBI.
+The original site; [Controlled vocabulary for /db_xref qualifier](https://insdc.org/submitting-standards/dbxref-qualifier-vocabulary) 2019.08.14 version  
+See also [db_xref](https://www.ncbi.nlm.nih.gov/genbank/collab/db_xref) at NCBI.
 
-New qualifier was introduced in version 1.08 (December 1, 1995) of the
-Feature table definitions: /db_xref. This new qualifier serves as a
-vehicle for the linking of DNA sequence records to other external
-databases.
+New qualifier was introduced in version 1.08 (December 1, 1995) of the Feature table definitions: /db_xref. 
+This new qualifier serves as a vehicle for the linking of DNA sequence records to other external databases.
 
-The text below outlines the format and the present list of allowed
-database cross references. Inquiries about the addition of other
-database types should be made to one of the collaborating databases,
-listed above.
+The text below outlines the format and the present list of allowed database cross references. 
+Inquiries about the addition of other database types should be made to one of the collaborating databases, listed above.
 
-## Definition of /db_xref qualifier  <a name="Definition_of_db_xref_qualifier"></a>
+## Definition of /db_xref qualifier <a name="Definition_of_db_xref_qualifier"></a>
 
 ```
-Qualifier:       /db_xref="[database]:[identifier]"
-Definition:      database cross-reference: pointer to related information in
-         another database                     
-Scope:           all feature keys
-Value format:    "[database]:[identifier]" where [database] is the name of the
-         database containing related information, and 
-         [identifier] is the internal identifier of the related 
-         information according to the naming conventions of the
-         cross-referenced database.
+Qualifier:    /db_xref="[database]:[identifier]"
+Definition:   database cross-reference: pointer to related information in
+              another database 
+Scope:        all feature keys
+Value format: "[database]:[identifier]" where [database] is the name of the
+              database containing related information, and 
+              [identifier] is the internal identifier of the related 
+              information according to the naming conventions of the
+              cross-referenced database.
 ```
 
-For all [*databases*] types 'Case' is important. All databases member
-of the International Collaboration (DDBJ, ENA/EBI and GenBank/NCBI) may
+For all [*databases*] types 'Case' is important. 
+All databases member of the International Collaboration (DDBJ, ENA/EBI and GenBank/NCBI) may 
 make recommendations for additions or removal of databases to this list
-at their convenience, and need not rely on the release cycle of the
-Feature Table documentation.
+at their convenience, and need not rely on the release cycle of the Feature Table documentation.
 
 ## Database:  {#Database}
 
@@ -57,9 +49,7 @@ Format
 : Format for /db_xref qualifier
 
 Diff  
-: Flag for any difference with [the original
-site](http://www.insdc.org/documents/dbxref-qualifier-vocabulary) in
-the line.
+: Flag for any difference with [the original site](https://insdc.org/submitting-standards/dbxref-qualifier-vocabulary) in the line.
 
 Use  
 : **Yes**: to be described by DDBJ submitters  
@@ -127,7 +117,7 @@ Presently the list includes:
 | [HMP](//www.hmpdacc.org/) | Human Microbiome Project | /db_xref="HMP:0536" |   | No |
 | [HOMD](http://www.homd.org/) | Human Oral Microbiome Database | /db_xref="HOMD:tax_078"<br>/db_xref="HOMD:seq_1603” |   | No |
 | [HPM](http://www.humanproteomemap.org) | Human Proteome Map | /db_xref="HPM:8106" |   | No |
-HSSP | Database of homology-derived secondary structure of proteins | /db_xref="HSSP:12GS" | URL removed | No |
+| HSSP | Database of homology-derived secondary structure of proteins | /db_xref="HSSP:12GS" | URL removed | No |
 | [I5KNAL](https://i5k.nal.usda.gov/) | i5k Workspace | /db_xref="I5KNAL:OFAS008986" | Added | No |
 | [IKMC](//www.knockoutmouse.org/) | International Knockout Mouse Consortium | /db_xref="IKMC:66303" |   | No |
 | [IMGT/GENE-DB](http://www.imgt.org/genedb/) | Immunogenetics database, immunoglobulin and T-cell receptor genes | /db_xref="IMGT/GENE-DB:IGKC" | URL changed | Auto |
@@ -143,6 +133,7 @@ HSSP | Database of homology-derived secondary structure of proteins | /db_xref="
 | [JGI Phytozome](//phytozome.jgi.doe.gov/pz/portal.html) | Comparative genomics of plants | /db_xref="Phytozome:Glyma0021s00410"<br>/db_xref="Phytozome:ppb016588m_2_1.p" | URL changed | No |
 | LocusID | NCBI LocusLink ID **Discontinued March 2005 | /db_xref="LocusID:51199" |   | No |
 | [MaizeGDB](//www.maizegdb.org/) | Maize Genome Database unique identifiers | /db_xref="MaizeGDB:635633" |   | No |
+| [MarpolBase](//marchantia.info/)  |  Genome Database for Marchantia polymorpha  |  /db_xref="MarpolBase:Mp1g00010.1"  |    |  Auto  |
 | [MedGen](https://www.ncbi.nlm.nih.gov/medgen) | Human Medical Genetics | /db_xref="MedGen:C0010674" | URL changed | No |
 | [MGI](http://www.informatics.jax.org/) | Mouse Genome Informatics | /db_xref="MGI:1894891" |   | Auto |
 | [MIM](https://www.ncbi.nlm.nih.gov/omim) | Mendelian Inheritance in Man numbers | /db_xref="MIM:123456" | URL changed | No |
@@ -173,14 +164,14 @@ HSSP | Database of homology-derived secondary structure of proteins | /db_xref="
 | [RiceGenes](http://www.gramene.org/) | Rice database accession numbers | /db_xref="RiceGenes:AA231856" |   | No |
 | [RNAcentral](http://rnacentral.org/) | RNAcentral: The non-coding RNA sequence database | /db_xref="RNAcentral:URS00001B9622" |   | No |
 | RZPD | Resource Centre Primary Database Clone Identifiers | /db_xref="RZPD:IMAGp998I142450Q6" | URL removed | No |
-[SEED](http://www.theseed.org/) | The SEED Database | /db_xref="SEED:fig\|83331.1.peg.1" |   | No |
+| [SEED](http://www.theseed.org/) | The SEED Database | /db_xref="SEED:fig\|83331.1.peg.1" |   | No |
 | [SGD](//www.yeastgenome.org/) | Saccharomyces Genome Database | /db_xref="SGD:L0000470" |   | No |
 | [SGN](http://www.sgn.cornell.edu/) | SOL Genomics Network | /db_xref="SGN:E553090" |   | No |
 | SK-FST | Saskatoon Arabidopsis T-DNA mutant population - SK Collection | /db_xref="SK-FST: FST:SK32219" | URL removed | No |
 | [SoyBase](//soybase.org) | Glycine max Genome Database | /db_xref="SoyBase:Satt005" | URL changed | No |
 | [SRPDB](http://bio.lundberg.gu.se/dbs/SRPDB/SRPDB.html) | Signal Recognition Particle Database | /db_xref="SRPDB:Arth.aure._CP000474.fasta" |   | No |
 | [SubtiList](http://genolist.pasteur.fr/SubtiList/) | Bacillus subtilis genome sequencing project | /db_xref="SubtiList:BG10001" |   | No |
-| [TAIR](//www.arabidopsis.org/)[](//www.arabidopsis.org/) | The Arabidopsis Information Resource | /db_xref="TAIR:AT1F51370" | Renamed | No |
+| [TAIR](//www.arabidopsis.org/) | The Arabidopsis Information Resource | /db_xref="TAIR:AT1F51370" | Renamed | No |
 | [taxon](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/) | NCBI's taxonomic identifier | /db_xref="taxon:4932" | URL changed | Auto |
 | [TIGRFAM](//www.jcvi.org/cgi-bin/tigrfams/index.cgi) | TIGR protein families | /db_xref="TIGRFAM:TIGR00094" | URL changed | No |
 | [TubercuList](http://tuberculist.epfl.ch) | TubercuList knowledge base | /db_xref="TubercuList:Rv3322c" |   | No |
@@ -195,6 +186,6 @@ HSSP | Database of homology-derived secondary structure of proteins | /db_xref="
 | [ViPR](//www.viprbrc.org/brc/home.do?decorator=vipr) | Virus Pathogen Resource | /db_xref="ViPR:HRV-A34_p1058_sR263_2008" |    | No |
 | [VISTA](//enhancer.lbl.gov/) | Vista Enhancer Browser | /db_xref="VISTA:hs123" | Added | No |
 | [WorfDB](http://worfdb.dfci.harvard.edu/) | C. elegans ORFeome cloning project | /db_xref="WorfDB:pos-1" |   | No |
-| [WormBase](//www.wormbase.org) | Caenorhabditis elegans Genome Database | /db_xref="WormBase:R13H7" |   | No |
-| [Xenbase](http://www.xenbase.org/) | Xenopus laevis and tropicalis biology and genomics resource | /db_xref="Xenbase:XB-GENE-1019547" | URL changed | No |
-| [ZFIN](//zfin.org/) | Zebrafish Information Network | /db_xref="ZFIN:ZDB-GENE-011205-17" |   | No |
+| [WormBase](https://www.wormbase.org) | Caenorhabditis elegans Genome Database | /db_xref="WormBase:R13H7" |   | No |
+| [Xenbase](https://www.xenbase.org/) | Xenopus laevis and tropicalis biology and genomics resource | /db_xref="Xenbase:XB-GENE-1019547" | URL changed | No |
+| [ZFIN](https://zfin.org/) | Zebrafish Information Network | /db_xref="ZFIN:ZDB-GENE-011205-17" |   | No |

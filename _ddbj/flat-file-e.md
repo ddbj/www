@@ -383,7 +383,7 @@ The KEYWORDS lines were used for indexing ([gene](/ddbj/qualifiers-e.html#gene))
 
 For now, KEYWORDS lines are used to indicate [the detail category of the data](/documents/data-categories-e.html#detail) ([EST](/ddbj/est-e.html),
 [TSA](/ddbj/tsa-e.html), [HTC](/ddbj/htc-e.html), [HTG](/ddbj/htg-e.html),
-[GSS](/ddbj/gss-e.html), [WGS](/ddbj/wgs-e.html), [TPA](/ddbj/tpa-e.html) etc) information about experimental method, "finishing level" of genome sequencing and else, if necessary. See also [INSDC agreed methodological keywords](/ddbj/keyword-e.html).
+[GSS](/ddbj/gss-e.html), [WGS](/ddbj/wgs-e.html), [TPA](/ddbj/tpa-e.html) etc) information about experimental method, "finishing level" of genome sequencing and else, if necessary. See also [INSDC agreed methodological keywords](https://insdc.org/submitting-standards/methodological-keywords/).
 
 
 <div id="SourceB" markdown="1">

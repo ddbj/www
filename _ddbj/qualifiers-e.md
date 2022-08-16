@@ -649,7 +649,7 @@ alignment:Splign:1.26p:RefSeq:NM_000041.2,INSD:BC003557.1</pre>
 
 
 Comment
-: [Recommendations for vocabulary in INSDC /inference qualifiers.](http://www.insdc.org/documents/inference-qualifiers) 
+: [Recommendations for vocabulary in INSDC /inference qualifiers.](https://insdc.org/submitting-standards/inference-qualifiers/) 
 
 - where the optional "EVIDENCE_BASIS" is either a reference to a database entry (including accession and version) or an algorithm (including version)    
 - where the optional text "(same species)" is included when the inference comes from the same species as the entry.    
@@ -894,7 +894,7 @@ Example
 siRNA</pre>
 
 Comment
-: [Controlled vocabulary for ncRNA classes](http://www.insdc.org/documents/ncrna-vocabulary) is valid for &lt;TYPE&gt;.    
+: [Controlled vocabulary for ncRNA classes](https://insdc.org/submitting-standards/ncrna-vocabulary/) is valid for &lt;TYPE&gt;.    
 /ncRNA_class="other" with /product="&lt;name of novel ncRNA_class&gt;" or /note="&lt;brief explanation of novel ncRNA_class&gt;"    
 
 
@@ -1130,7 +1130,7 @@ unknown
 
 
 Comment
-: See [Controlled vocabulary for /pseudogene qualifier](http://www.insdc.org/documents/pseudogene-qualifier-vocabulary) for TYPE, in detail.    
+: See [Controlled vocabulary for /pseudogene qualifier](https://insdc.org/submitting-standards/pseudogene-qualifier-vocabulary/) for TYPE, in detail.    
 
 
 ### /rearranged<a name="rearranged"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#rearranged)</span><a name="rearranged"></a>
@@ -1181,7 +1181,7 @@ uORF
 other    
 
 Comment
-: See [Controlled vocabulary for /regulatory_class](http://www.insdc.org/controlled-vocabulary-regulatoryclass) for TYPE, in detail.    
+: See [Controlled vocabulary for /regulatory_class](https://insdc.org/submitting-standards/controlled-vocabulary-regulatoryclass/) for TYPE, in detail.    
 
 
 ### /replace<a name="replace"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#replace)</span>
@@ -1245,7 +1245,7 @@ centromeric_repeat
 other    
 
 Comment
-: See [Controlled vocabulary for /rpt_type qualifier](http://www.insdc.org/controlled-vocabulary-rpttype-qualifier), in detail.    
+: See [Controlled vocabulary for /rpt_type qualifier](https://insdc.org/submitting-standards/controlled-vocabulary-rpttype-qualifier/), in detail.    
 
 
 ### /rpt_unit_seq<a name="rpt_unit_seq"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#rpt_unit_seq)</span>

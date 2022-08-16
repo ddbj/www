@@ -377,7 +377,7 @@ KEYWORDS は、過去の登録においては、遺伝子名 ([gene](/ddbj/quali
 [TSA](/ddbj/tsa.html), [HTC](/ddbj/htc.html), [HTG](/ddbj/htg.html),
 [GSS](/ddbj/gss.html), [WGS](/ddbj/wgs.html), [TPA](/ddbj/tpa.html)
 など)、配列の特性、実験手法、ゲノム配列の完成度などに関する情報などが、必要に応じて、記載されます。[INSDC agreed
-methodological keywords](/ddbj/keyword-e.html) もご参照ください。
+methodological keywords](https://insdc.org/submitting-standards/methodological-keywords/) もご参照ください。
 
 
 <div id="SourceB" markdown="1">
@@ -613,13 +613,12 @@ MGA データの生成手法
 <h3><a href="#FeaturesA">FEATURES</a></h3>
 </div>
 
-登録配列の生物学的な特徴を、feature key （特徴を表す項目）、location （配列上の位置情報）および Qualifier
-（特徴をさらに特定する項目）を用いて記述します。EST と GSS には原則として source 以外の feature key
-は記述されません。
+登録配列の生物学的な特徴を、feature key （特徴を表す項目）、location （配列上の位置情報）および Qualifier 
+（特徴をさらに特定する項目）を用いて記述します。EST と GSS には原則として source 以外の feature key は記述されません。
 
 Feature
 情報は、原則として登録者からの報告に基づいて記述され，それらの記述が適正になされるよう、データバンクが補足訂正を行ないます。記述項目と記述方法については、国際塩基配列データベースが定める
-[The DDBJ/ENA/GenBank Feature Table Definition](/ddbj/feature-table-e.html)
+[The DDBJ/ENA/GenBank Feature Table Definition](/ddbj/feature-table.html)
 に詳しく説明されています。
 
 配列の特徴を記述するための feature key は、下記のように分類できます。
@@ -628,7 +627,7 @@ Feature
 2. 配列の中の一定の領域がもつ生物学的機能を記述するための feature key<br>生物学的特徴を限定的に記述する key (e.g. TATA\_signal) から、より幅広く記述するための key<br>（e.g.misc\_feature） などに分類されていて、できるだけ具体的な記述がなされるように構成されています。<br>e.g. CDS, rRNA, etc.
 3. 配列の差違や変更を記述するための feature key<br>e.g. variation, conflict, etc.
 
-Feature key の中で、最も頻繁に使用されるのはタンパク質のコーディング領域を記述する CDS です。 [CDS feature](/ddbj/cds.html)の説明ページもご参照ください。
+Feature key の中で、最も頻繁に使用されるのはタンパク質のコーディング領域を記述する CDS です。[CDS feature](/ddbj/cds.html) の説明ページもご参照ください。
 
 <pre class="code flat-file"><code>FEATURES             Location/Qualifiers
      source          1..450

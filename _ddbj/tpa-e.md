@@ -34,20 +34,15 @@ related_pages:
     url: /ddbj/tpa-e.html
 ---
 
-TPA (Third Party Data) is a nucleotide sequence data collection in which
-each primary is obtained by assembling [primary
-entries](#definition_of_primary) publicized from DDBJ/EMBL-Bank/GenBank,
-International Nucleotide Sequence Database Collaboration (INSDC) and/or
-[Trace Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi) with
-additional feature annotation(s) determined by experimental or
-inferential methods by TPA submitter.Those assemblies include two cases;
-one or more [primary entries](#definition_of_primary) are used and newly
-determined sequence is contained.TPA sequence data should be submitted
-to DDBJ/EMBL-Bank/GenBank as a part of the process to publish biological
+TPA (Third Party Data) is a nucleotide sequence data collection in which each primary is obtained by assembling 
+[primary entries](#definition_of_primary) publicized from DDBJ/EMBL-Bank/GenBank,
+International Nucleotide Sequence Database Collaboration (INSDC) Trace Archive and/or [SRA](https://www.ncbi.nlm.nih.gov/sra) with
+additional feature annotation(s) determined by experimental or inferential methods by TPA submitter. 
+Those assemblies include two cases; one or more [primary entries](#definition_of_primary) are used and newly determined sequence is contained. 
+TPA sequence data should be submitted to DDBJ/EMBL-Bank/GenBank as a part of the process to publish biological
 research for primary nucleotide sequences.
 
-Reference Literature: [Cochrane,G. et al. (2006)
-OMICS,10(2): 105-113](http://online.liebertpub.com/doi/abs/10.1089/omi.2006.10.105)
+Reference Literature: [Cochrane,G. et al. (2006) OMICS,10(2): 105-113](https://www.liebertpub.com/doi/abs/10.1089/omi.2006.10.105)
 
 Definition of primary entry for TPA <a name="definition_of_primary"></a>
 : Primary entries used to build a TPA sequence are those that have
@@ -73,10 +68,8 @@ rule](/ddbj/tpa-table-e.html).
 | [TPA:specialist_db](/ddbj/tpa-table-e.html#spe)  | describes records whose sequences are submitted from an existing authoritative public database that is built using INSDC sequence data and is described in an accepted peer-reviewed publication. The existing database is therefore recognized to be comprehensive, to have added value, and to be maintained long term. |
     
 
-[Note]Until 2005, the only entries which were supported by
-biological (wet-lab.) experiment were accepted in TPA. Since 2006,
-entries which are not supported by wet-lab. experiment have been
-included into TPA when the entry meets the requirements of [TPA Submission Guidelines](/ddbj/tpa-table-e.html).
+[Note]Until 2005, the only entries which were supported by biological (wet-lab.) experiment were accepted in TPA. 
+Since 2006, entries which are not supported by wet-lab. experiment have been included into TPA when the entry meets the requirements of [TPA Submission Guidelines](/ddbj/tpa-table-e.html).
 
 
 The following cases are NOT acceptable in TPA
@@ -100,8 +93,7 @@ Notes on the TPA submission
     acceptable.
   - The sequences of [primary entries](#definition_of_primary) used
     to assemble a TPA sequence are required to be submitted to INSDC
-    as 'primary data (i.e. not TPA)' or [Trace
-    Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi). If your
+    as 'primary data (i.e. not TPA)' or Trace Archive. If your
     TPA sequence contains a region that can not be obtained from
     INSDC or Trace Archive, but has been experimentally determined
     by yourself, at first, you have to submit it to DDBJ or Trace

@@ -34,18 +34,13 @@ related_pages:
     url: /ddbj/tpa.html
 ---
 
-TPA (Third Party Data) は、DDBJ/ENA/GenBank、[Trace
-Archive](//www.ncbi.nlm.nih.gov/Traces/trace.cgi)、[SRA](//www.ncbi.nlm.nih.gov/sra)
-で構成される国際塩基配列データベース (INSDC) に既に登録されているエントリ
-(これをプライマリーエントリと呼びます)
+TPA (Third Party Data) は、DDBJ/ENA/GenBank、Trace Archive、[SRA](https://www.ncbi.nlm.nih.gov/sra) で
+構成される国際塩基配列データベース (INSDC) に既に登録されているエントリ (これをプライマリーエントリと呼びます)
 を元に、第三者がアセンブル (assemble)、もしくは、(再)アノテーションを行ったデータのコレクションです。
-配列のアセンブルには、既存のプライマリーエントリの組み合わせのみで構成された場合と、新規に
-TPA の登録者が実験的に決定した配列を混在させた場合とが存在します。INSDC
-では、既報のプライマリーエントリに記載されている配列に関する研究を公開するための手段として
-TPA 登録を受け入れています。
+配列のアセンブルには、既存のプライマリーエントリの組み合わせのみで構成された場合と、新規に TPA の登録者が実験的に決定した配列を混在させた場合とが存在します。
+INSDC では、既報のプライマリーエントリに記載されている配列に関する研究を公開するための手段として TPA 登録を受け入れています。
 
-参考文献: [Cochrane,G. et al. (2006) OMICS,10(2):
-105-113](//www.liebertonline.com/doi/abs/10.1089/omi.2006.10.105)
+参考文献: [Cochrane,G. et al. (2006) OMICS,10(2): 105-113](https://www.liebertpub.com/doi/abs/10.1089/omi.2006.10.105)
 
 TPA におけるプライマリーエントリの定義  
 : プライマリーエントリとは、当該配列データの登録者が実験的に配列決定を行ったデータとして、INSDC から取得可能なデータです。
@@ -59,7 +54,8 @@ TPA 配列データ受け入れ規則
   |  [TPA:assembly](/ddbj/tpa-table-e.html#ass)  |  TPA:assembly で示される配列では、計算機的な推測や実験的解析の結果のどちらであるかにかかわらず、配列の生成が peer-review の対象である必要があります。annotation は記載しても記載しなくてもどちらでもよく、アノテーション自体は peer-review の一部である必要はありません。  |
   |  [TPA:specialist\_db](/ddbj/tpa-table-e.html#spe)  |  認められたpeer-review出版物に報告があり、既存、かつ信頼のある public database から登録された配列で、INSDC 配列データを使用して構築された配列であることを示します。  |
 :       
-  \[注\]2005年まで INSDC では、生物学的な実験の根拠がない場合は TPA として受け入れておりませんでした。2006年から、生物学的な実験根拠のない配列・アノテーションでも [TPA Submission Guidelines](/ddbj/tpa-table.html) に従い TPA として登録を受け入れる方針となりました。
+  \[注\]2005年まで INSDC では、生物学的な実験の根拠がない場合は TPA として受け入れておりませんでした。
+2006年から、生物学的な実験根拠のない配列・アノテーションでも [TPA Submission Guidelines](/ddbj/tpa-table.html) に従い TPA として登録を受け入れる方針となりました。
 
 以下に該当する場合は TPA 登録を受け付けることができません。
 :     

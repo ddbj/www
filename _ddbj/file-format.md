@@ -392,7 +392,7 @@ COMMENT" があります。詳細は以下をご覧ください。
 
 ## Biological Feature {#biological_feature}
 
-例: アノテーションファイル内の source と CDS feature　（<span class="red">入力必須項目</span>）
+例: アノテーションファイル内の source と CDS feature（<span class="red">入力必須項目</span>）
 
 | Entry | Feature                         | Location                                                    | Qualifier                          | Value                    |
 |---|
@@ -480,7 +480,7 @@ KEYWORD には、[DIVISION](#division) と [DATATYPE](#datatype)
 で示されたデータ種別を基本に、細分化した情報,
 実験手法に関する情報などを、原則として、規定値で記載します。  
 INSDC が合意した KEYWORD 名と規定値、並びに各 KEYWORD 名の定義につきましては、[INSDC agreed
-methodological keywords](/ddbj/keyword.html)をご参照ください。
+methodological keywords](https://insdc.org/submitting-standards/methodological-keywords/)をご参照ください。
 
 例: アノテーションファイル内の KEYWORD
 

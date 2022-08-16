@@ -7,7 +7,7 @@ current_tab: home
 lang: ja
 ---
 
-The original site; [TPA Submission Guidelines](http://www.insdc.org/documents/tpa-submission-guidelines) 2013.10.15 version
+The original site; [TPA Submission Guidelines](https://insdc.org/submitting-standards/tpa-submission-guidelines/) 2013.10.15 version
 
 Third PArty data (TPA) are submitted to the International Nucleotide Sequence Databases as part of the process of publishing biological studies that include the assembly and/or annotation of existing INSDC reads and primary sequences. Publicly accessible TPA data are therefore linked to a publication or publications that document the derivation of the data supported by peer-reviewed scientific evidence.
 
