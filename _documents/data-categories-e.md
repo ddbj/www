@@ -17,49 +17,31 @@ related_pages:
 
 ## Acceptable data for DDBJ  {#accept}
 
-For the request of [Primary entry](/ddbj/submission.html#primary_entry) submission, in principle,
-DDBJ accepts any nucleotide sequences that are experimentally determined
-by submitters, but can not accept computational predicted and/or cited sequences.
+For the request of [Primary entry](/ddbj/submission.html#primary_entry) submission, in principle, 
+DDBJ accepts any nucleotide sequences that are experimentally determined by submitters, 
+but can not accept computational predicted and/or cited sequences. 
 
-Even if your sequence is identical to previously reported sequence(s),
-on the condition that the sequence is independently determined, you can
-submit it as a "new" entry.
+Even if your sequence is identical to previously reported sequence(s), on the condition that the sequence is independently determined, you can submit it as a "new" entry.
 
-DDBJ also acccepts an entry that is obtained by assembling primary
-entries publicized from DDBJ/ENA/GenBank of INSDC and/or is added
-annotation(s) by experimental or inferential method by submitter as [TPA
-(third party data)](/ddbj/tpa-e.html).
+DDBJ also acccepts an entry that is obtained by assembling primary entries publicized from DDBJ/ENA/GenBank of INSDC and/or is added
+annotation(s) by experimental or inferential method by submitter as [TPA (third party data)](/ddbj/tpa-e.html).    
 
-However, the following sequence data is not acceptable for DDBJ:
+However, there are [unacceptable sequences](/ddbj/sequence-e.html#not_acceptable) for DDBJ.    
 
-- Amino acid sequences with no underlying nucleotide submission
-- Sequence containing a mix of genomic DNA and RNA transcript
-- Sequences without a physical counterpart (consensus sequences)
-- Sequences with length less than 100 nucleotides (since June 2021) 
-- Sequence consisting only of primer (since June 2021) 
+When you are to publicize raw output data for your studies related to SNPs, [WGS](/ddbj/wgs-e.html#acceptance), [transcriptome](/ddbj/tsa-e.html) and so on, 
+we recommend you to contact with [DDBJ Trace Archive](/dta/index-e.html), or [DDBJ Sequence Read Archive](/dra/index-e.html), instead of DDBJ / ENA / GenBank.
 
-When you are to publicize raw output data for your studies related to
-SNPs, [WGS](/ddbj/wgs-e.html#acceptance),
-[transcriptome](/ddbj/tsa-e.html) and so on, we recommend you to contact
-with [DDBJ Trace Archive](/dta/index-e.html), or [DDBJ Sequence Read
-Archive](/dra/index-e.html), instead of DDBJ / ENA / GenBank.
-
-Reference : [Overview of International Nucleotide Sequence Databases
-Policies](/about/insdc-e.html#policy)
+See [Overview of International Nucleotide Sequence Databases Policies](/about/insdc-e.html#policy)
 
 ### Submisson of the data including identical sequences or partially duplicated sequences
 
-Basically, DDBJ accepts all sequence data that are independently
-determined, even though seqences are identical each other. For variation
-studies, DDBJ also accepts [submissions of representative
-data](/ddbj/representative-sequence-e.html).
+Basically, DDBJ accepts all sequence data that are independently determined, even though seqences are identical each other. 
+For variation studies, DDBJ also accepts [submissions of representative data](/ddbj/representative-sequence-e.html).
 
-If you determine many sequences derived from the same indivisual, we
-strongly recommend to update sequence data submitted previously, rather
-than to submit new sequence data many times.  
-However, since multicycle submissions for a single resource are required
-by any reasons; right for sequence data, phases of sequencing etc., DDBJ
-does not restrict them.
+If you determine many sequences derived from the same indivisual, 
+we strongly recommend to update sequence data submitted previously, rather than to submit new sequence data many times.  
+However, since multicycle submissions for a single resource are required by any reasons; right for sequence data, phases of sequencing etc., 
+DDBJ does not restrict them.
 
 ## Sequencing Data  {#real}
 

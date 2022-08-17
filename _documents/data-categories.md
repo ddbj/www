@@ -14,49 +14,31 @@ related_pages:
 
 ## DDBJ に登録可能なデータ  {#accept}
 
-DDBJ では, [Primary entry](/ddbj/submission.html#primary_entry)
-のデータとして登録依頼のあったデータにつきましては,
-２次的な引用やコンピューターで予測したものでなく,
-登録者が実験的に決定した, もしくは,
-企業等からその配列の使用権を得たものであれば, 原則, 受け付けています。
+DDBJ では, [Primary entry](/ddbj/submission.html#primary_entry) のデータとして登録依頼のあったデータにつきましては、
+２次的な引用やコンピューターで予測したものでなく、登録者が実験的に決定した、もしくは、
+企業等からその配列の使用権を得たものであれば、原則、受け付けています。
 
-配列が全く同じでも, 独立に配列が決定されたデータならば,
-"新規データ"として別々にDDBJ に登録可能です。
+配列が全く同じでも, 独立に配列が決定されたデータならば、"新規データ"として別々にDDBJ に登録可能です。
 
-また, DDBJ/ENA/GenBank では, 既に報告されている primary data
-を２次的に引用し, 生物学的付加情報を付与し直す目的で [TPA(third party
-data)](/ddbj/tpa.html) を受け付けています。
+また、DDBJ/ENA/GenBank では, 既に報告されている primary data を２次的に引用し、生物学的付加情報を付与し直す目的で 
+[TPA(third party data)](/ddbj/tpa.html) を受け付けています。
 
-その上で一定の基準を満たしていればすべて登録し, アクセッション番号を発行しています。
-もし一定の基準を満たしていない場合は, 訂正をお願いして再度送付していただいています。
+その上で一定の基準を満たしていれば、すべて登録し、アクセッション番号を発行しています。    
+もし基準を満たしていない場合、訂正をお願いして再度送付していただいています。    
+ただし、DDBJ では、[登録を受け付けることができない配列](/ddbj/sequence.html#not_acceptable)も存在します。    
 
-ただし, 下記に該当する場合, DDBJ では登録を受け付けておりません。
-
-- 塩基配列を伴わないアミノ酸配列のみの登録
-- ゲノム DNA と RNA 転写産物を混合した塩基配列
-- 特定の実体を伴わない塩基配列 (いわゆる consensus sequences)
-- 長さが 100 塩基未満の塩基配列 (2021年6月以降)
-- primer のみで構成される塩基配列 (2021年6月以降)
-
-SNPs, [WGS](/ddbj/wgs.html#acceptance), [transcriptome](/ddbj/tsa.html)
-解析などにおいて raw output data を公表することが必要な場合は,
-DDBJ/ENA/GenBank とは別枠のデータベースである [DTA; DDBJ Trace
-Archive](/dta/index.html), または [DRA; DDBJ Sequence Read
-Archive](/dra/index.html) へのご登録をお願いいたします。
+SNPs, [WGS](/ddbj/wgs.html#acceptance), [transcriptome](/ddbj/tsa.html) 解析などにおいて raw output data を公表することが必要な場合は、
+DDBJ/ENA/GenBank とは別枠のデータベースである [DTA; DDBJ Trace Archive](/dta/index.html)、または、[DRA; DDBJ Sequence Read Archive](/dra/index.html) へのご登録をお願いいたします。
 
 参照：[登録データの 取り扱いについて](/about/insdc.html#policy)
 
 ### 配列が同一, あるいは, 部分的に重複するデータの登録
 
-DDBJ では, 配列が同一であっても独立に配列決定されたデータならば,
-基本的には,
-配列データの個別登録を受け付けております。[多型関連研究において同一配列が多数得られた場合](/ddbj/representative-sequence.html)は代表データを登録する形式でも
-受け付けています。
+DDBJ では, 配列が同一であっても独立に配列決定されたデータならば、基本的には、配列データの個別登録を受け付けております。
+[多型関連研究において同一配列が多数得られた場合](/ddbj/representative-sequence.html)は代表データを登録する形式でも受け付けています。
 
-由来する個体などを含めて同一な場合,
-配列データを繰り返し新規登録するよりも既登録分を更新することを強く推奨しますが,
-配列に関する権利, 配列決定の進捗などを考える上で,
-複数回の登録が必要なケースもありますので, 特に禁じてはおりません。
+由来する個体などを含めて同一な場合、配列データを繰り返し新規登録するよりも既登録分を更新することを強く推奨しますが、
+配列に関する権利、配列決定の進捗などを考える上で、複数回の登録が必要なケースもありますので、特に禁じてはおりません。
 
 ## 配列データ  {#real}
 
