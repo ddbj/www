@@ -205,22 +205,10 @@ DDBJ](/ddbj/cds-e.html#product) before your submission.
 
 ### Nucleotide sequences  {#sequence}
 
-You can use [IUPAC nucleotide base
-codes](/ddbj/code-e.html#nucleotide-1) to describe your nucleotide
-sequences.
+In general, we accept sequences to share the data enough to believe 'as is' in nature.    
+It is incorrect to submit the sequencer output 'as is' without scrutinizing it.    
 
-In general, you have to exclude following sequences from your data,
-except that you are to submit an artificially constructed sequence such
-as expression vector, etc.
-
-  - The sequence derived from a vector.
-  - The sequence derived from a linker and/or an adapter.
-  - The sequence derived from primer that is designed by referring from
-    the highly conserved region of which the real sequence is unknown.
-
-Before your submission, we strongly recommend you to screen your
-sequences with our web
-service;[VecScreen](http://ddbj.nig.ac.jp/vecscreen/?lang=en).
+See [Nucleotide Sequences](ddbj/sequence-e.html) in detail.
 
 
 ## Workflow of the data submission to DDBJ  {#workflow}

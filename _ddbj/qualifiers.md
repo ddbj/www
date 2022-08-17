@@ -1051,7 +1051,7 @@ uncultured bacterium</pre>
 ### /product<a name="product"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#product)</span>
 
 定義
-: feature に対応した遺伝子産物の名称, 例えば [mRNA](/ddbj/features.html#mRNA) featureには mRNA の名称, [CDS](/ddbj/features.html#cds) にはポリペプチドの名称, [mat_peptide](/ddbj/features.html#mat_peptide) には, 成熟タンパク質の名称 
+: feature に対応した遺伝子産物の名称, 例えば [mRNA](/ddbj/features.html#mRNA) featureには mRNA の名称, [CDS](/ddbj/features.html#cds) にはタンパク質の名称, [mat_peptide](/ddbj/features.html#mat_peptide) には, 成熟タンパク質の名称 
 
 書式
 : &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可) 

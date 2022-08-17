@@ -1039,7 +1039,7 @@ Example
 ### /product<a name="product"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#product)</span>
  
 Definition
-: name of the product associated with the feature, e.g. the [mRNA](/ddbj/features-e.html#mRNA) of an mRNA feature, the polypeptide of a [CDS](/ddbj/features-e.html#cds), the mature peptide of a [mat_peptide](/ddbj/features-e.html#mat_peptide), etc.    
+: name of the product associated with the feature, e.g. the [mRNA](/ddbj/features-e.html#mRNA) of an mRNA feature, the protein of a [CDS](/ddbj/features-e.html#cds), the mature peptide of a [mat_peptide](/ddbj/features-e.html#mat_peptide), etc.    
 
 Value format
 : &lt;text&gt;, excluding double quotation mark (")    
