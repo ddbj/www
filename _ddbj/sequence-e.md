@@ -27,7 +27,7 @@ See also [Representative submissions of identical sequences for variation studie
 DDBJ also accepts an entry that is obtained by assembling primary entries publicized from DDBJ/ENA/GenBank of INSDC and/or is added annotation(s) by experimental or inferential method by submitter as [TPA (third party data)](ddbj/tpa-e.html).    
 
 
-## Unacceptable sequences  {#not_acceptable}
+## Not acceptable sequences  {#not_acceptable}
 
 The following sequence data is not acceptable for DDBJ:    
   - Amino acid sequences with no underlying nucleotide submission
@@ -47,15 +47,15 @@ To simplify, U (uracil) in RNA sequence is written as T.
 In general, we accept sequences to share the data enough to believe 'as is' in nature.    
 It is incorrect to submit the sequencer output 'as is' without scrutinizing it.    
 
-  - [Remove the regions derived from vector](#vector)
+  - [Remove regions derived from vector](#vector)
   - [Remove primer binding sites](#primer)
-  - [Remove artifacts](#noise)
+  - [Remove unreliable regions, etc.](#noise)
   - [Make the direction of nucleotide sequences the same strandedness](#complement)
   - [Indicate sequecing gaps](#gap)
   - It is no problem to assemble and/or to contig as long as they are within the scope of scientific reproduction of primary structure. 
   - If you need to avoid virus contamination for expression analysis or so, remove viral sequences by computational preprocessing.  
 
-### Remove the regions derived from vector  {#vector}
+### Remove regions derived from vector  {#vector}
 
 You should exclude the following sequences from your data except that you are to submit an artificially constructed sequence such as expression vector, etc.    
 
@@ -73,7 +73,7 @@ so, it should be located out of submitted sequence, in principle.
 In the case of eukaryotic mRNA sequences, it is better not to delete the poly A tail, however, 
 it may often be difficult to determine the range to be left, such as when designing as a primer.    
 
-### Remove artifacts  {#noise}
+### Remove unreliable regions, etc.  {#noise}
 
 Before the data submission, you should remove artifacts, unreliable regions, and so on from your sequences.    
 

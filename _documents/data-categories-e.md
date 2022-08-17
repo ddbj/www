@@ -26,7 +26,7 @@ Even if your sequence is identical to previously reported sequence(s), on the co
 DDBJ also acccepts an entry that is obtained by assembling primary entries publicized from DDBJ/ENA/GenBank of INSDC and/or is added
 annotation(s) by experimental or inferential method by submitter as [TPA (third party data)](/ddbj/tpa-e.html).    
 
-However, there are [unacceptable sequences](/ddbj/sequence-e.html#not_acceptable) for DDBJ.    
+However, some types of sequence data are [not acceptable for DDBJ](/ddbj/sequence-e.html#not_acceptable).    
 
 When you are to publicize raw output data for your studies related to SNPs, [WGS](/ddbj/wgs-e.html#acceptance), [transcriptome](/ddbj/tsa-e.html) and so on, 
 we recommend you to contact with [DDBJ Trace Archive](/dta/index-e.html), or [DDBJ Sequence Read Archive](/dra/index-e.html), instead of DDBJ / ENA / GenBank.
