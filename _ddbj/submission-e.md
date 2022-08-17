@@ -208,7 +208,7 @@ DDBJ](/ddbj/cds-e.html#product) before your submission.
 In general, we accept sequences to share the data enough to believe 'as is' in nature.    
 It is incorrect to submit the sequencer output 'as is' without scrutinizing it.    
 
-See [Nucleotide Sequences](ddbj/sequence-e.html) in detail.
+See [Nucleotide Sequences](/ddbj/sequence-e.html) in detail.
 
 
 ## Workflow of the data submission to DDBJ  {#workflow}
