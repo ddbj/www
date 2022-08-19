@@ -181,30 +181,23 @@ category: about
                 <p class="name">Kimiko Suzuki</p>
                 <p class="position">Data Submission: NGS</p>
             </div>
-            </li>  
-            <li class="staff">
-            <p class="photo"><img src="/assets/images/staff/takaki.jpg" title="Kanae Takaki"></p>
-            <div class="explanation">
-                <p class="name">Kanae Takaki</p>
-                <p class="position">Data Submission: NGS</p>
-            </div>
-            </li>
-            <li class="staff">
+        </li>  
+        <li class="staff">
             <p class="photo"><img src="/assets/images/staff/tokimatsu.jpg" title="Toshiaki Tokimatsu"></p>
             <div class="explanation">
                 <p class="name">Toshiaki Tokimatsu, PhD</p>
                 <p class="position">Data Submission: MetaboBank, NGS</p>
             </div>
-            </li>
+        </li>
+        <li class="staff">
+            <p class="photo"><img src="/assets/images/staff/twatanabe.jpg" title="Emi Yokoyama"></p>
+            <div class="explanation">
+                <p class="name">Tomoko Watanabe</p>
+                <p class="position">Data Updates/Correction</p>
+            </div>
+        </li>
     </ul>
     <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/twatanabe.jpg" title="Emi Yokoyama"></p>
-        <div class="explanation">
-            <p class="name">Tomoko Watanabe</p>
-            <p class="position">Data Updates/Correction</p>
-        </div>
-        </li>
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yokoyama.jpg" title="Emi Yokoyama"></p>
         <div class="explanation">

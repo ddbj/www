@@ -194,39 +194,31 @@ category: about
      </ul>  
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/suzuki.jpg" title="鈴木 紀美子"></p>
-        <div class="explanation">
-            <p class="name">鈴木 紀美子</p>
-                <p class="name">Kimiko Suzuki</p>
-            <p class="position">データ登録：NGS</p>
-        </div>
-        </li> 
-            <li class="staff">
-            <p class="photo"><img src="/assets/images/staff/takaki.jpg" title="高木 佳苗"></p>
+            <p class="photo"><img src="/assets/images/staff/suzuki.jpg" title="鈴木 紀美子"></p>
             <div class="explanation">
-                <p class="name">高木 佳苗</p>
-                <p class="name">Kanae Takaki</p>
+                <p class="name">鈴木 紀美子</p>
+                <p class="name">Kimiko Suzuki</p>
                 <p class="position">データ登録：NGS</p>
             </div>
-            </li>
-            <li class="staff">
+        </li> 
+        <li class="staff">
             <p class="photo"><img src="/assets/images/staff/tokimatsu.jpg" title="時松 敏明"></p>
             <div class="explanation">
                 <p class="name">時松 敏明</p>
                 <p class="name">Toshiaki Tokimatsu, PhD</p>
                 <p class="position">データ登録：MetaboBank, NGS</p>
             </div>
-            </li>
+        </li>
+        <li class="staff">
+            <p class="photo"><img src="/assets/images/staff/twatanabe.jpg" title="渡邊とも子"></p>
+            <div class="explanation">
+                <p class="name">渡邊 とも子</p>
+                <p class="name">Tomoko Watanabe</p>
+                <p class="position">登録データの修正/更新</p>
+            </div>
+        </li>
     </ul>
     <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/twatanabe.jpg" title="渡邊とも子"></p>
-        <div class="explanation">
-            <p class="name">渡邊 とも子</p>
-            <p class="name">Tomoko Watanabe</p>
-            <p class="position">登録データの修正/更新</p>
-        </div>
-        </li>
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yokoyama.jpg" title="横山会美"></p>
         <div class="explanation">
