@@ -195,8 +195,12 @@ ddbj:
           url: /ddbj/features.html	
         - title: Qualifier key の定義	
           url: /ddbj/qualifiers.html	
+        - title: 塩基配列について	
+          url: /ddbj/sequence.html	
         - title: Organism qualifier に記載する生物名	
           url: /ddbj/organism.html	
+        - title: 識別子について	
+          url: /ddbj/identifiers.html	
         - title: Location の記述法	
           url: /ddbj/location.html	
         - title: タンパク質コード配列	
@@ -288,8 +292,12 @@ ddbj:
           url: /ddbj/features-e.html	
         - title: Qualifier key	
           url: /ddbj/qualifiers-e.html	
+        - title: Nucleotide Sequences	
+          url: /ddbj/sequence-e.html	
         - title: Organism qualifier	
           url: /ddbj/organism-e.html	
+        - title: Identifiers	
+          url: /ddbj/identifiers-e.html	
         - title: Description of Location	
           url: /ddbj/location-e.html	
         - title: Protein Coding Sequence	
