@@ -2,6 +2,10 @@ top_news:
   ja:
     - title: D-way, JGA サーバ 停止 9月5日 10:00-12:00
       path: 2022-09-01
+    - title: (9/5-7) getentry と一部の anonymous ftp の更新停止
+      path: 2022-09-01_2
   en:
     - title: D-way and JGA Server downtime, 10:00-12:00 5th September
       path: 2022-09-01-e
+    - title: (September 5th - 7th) Stop updating getentry and anonymous ftp
+      path: 2022-09-01_2-e
