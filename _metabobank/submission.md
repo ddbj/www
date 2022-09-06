@@ -59,13 +59,11 @@ SDRF の Comment[Raw Data File md5]、Comment[Processed Data File md5]、Comment
 
 ### 7. ファイルのアップロード   {#upload}
 
-メタデータエクセルとデータファイル (生・解析済みデータファイル・MAF) を [scp/sftp でファイルサーバにアップロード](/dra/submission.html#upload-sequence-data)します。
+メタデータエクセルとデータファイル (生・解析済みデータファイル・MAF) を scp/sftp でファイルサーバにアップロードします。
 異なる Study のデータをアップロードする場合、Study 毎にファイルを tar もしくは zip でまとめます。
-アップロード先はホーム直下の metabobank ディレクトリで、コマンドで転送する場合は以下のようになります。
+アップロード先はホーム直下の metabobank ディレクトリになります。　　
 
-```
-$ scp -i private-key-for-auth <Your Files> <D-way Login ID>@ftp-private.ddbj.nig.ac.jp:~/metabobank
-```
+データファイルのアップロード方法は「[データのアップロード](/upload.html)」をご覧ください。
 
 ## アクセッション番号  {#accession}
 
@@ -88,69 +86,6 @@ FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
 
 登録されたデータを更新・削除する場合は [MetaboBank チームに連絡](/contact-ddbj.html)してください。
 
-## 補足: MD5 値 {#supplement-md5} 
+## MD5 チェックサム値 {#md5} 
 
-MD5 (Message Digest Algorithm 5) はハッシュ関数であり、与えられたファイルに対してハッシュ値 (MD5値、32桁の英数字) を出力します。
-ファイルが破損していると MD5 値が変化します。MetaboBank では、到着したファイルの MD5 値の一致をチェックすることで、ファイルの破損がないかどうか確認しています。
-
-### MD5 値の取得 (Linux)
-
-ファイルの MD5 値を取得します。
-
-```
-# file1 と file2 の md5 値を取得
-$ md5sum file1 file2
-9F6E6800CFAE7749EB6C486619254B9C file1
-B636E0063E29709B6082F324C76D0911 file2
-
-# sub ディレクトリ以下の全ファイルの md5 値を取得
-$ md5sum sub/*
-9F6E6800CFAE7749EB6C486619254B9C file1
-B636E0063E29709B6082F324C76D0911 file2
-B636E0063E29709B6082F324C76D0911 file3
-
-# 拡張子 txt ファイルの md5 値を取得
-$ md5sum *.txt
-
-# 取得結果をファイルに出力
-$ md5sum *.txt > study.md
-```
-
-### MD5 値の取得 (Mac OS X)
-
-ファイルの MD5 値を取得します。
-
-```
-# file1 と file2 の md5 値を取得
-$ md5sum file1 file2
-9F6E6800CFAE7749EB6C486619254B9C file1
-B636E0063E29709B6082F324C76D0911 file2
-
-# sub ディレクトリ以下の全ファイルの md5 値を取得
-$ md5sum sub/*
-9F6E6800CFAE7749EB6C486619254B9C file1
-B636E0063E29709B6082F324C76D0911 file2
-B636E0063E29709B6082F324C76D0911 file3
-
-# 拡張子 txt ファイルの md5 値を取得
-$ md5sum *.txt
-
-# 取得結果をファイルに出力
-$ md5sum *.txt > study.md
-```
-
-### MD5 値の取得 (Windows)
-
-[Fsum Frontend](http://sourceforge.net/projects/fsumfe/) をインストールし、起動します。  
-まず、 "md5" にチェックを入れてください。
-
-{% include image.html url="books/Fsum1.jpg" caption="md5 を選択" class="w400" %}
-
-\[+\] ボタンをクリックし、必要なデータファイルを開いてください。同時に複数のファイルを選択することが可能です。
-
-{% include image.html url="books/Fsum2.jpg" caption="データファイルを選択" class="w400" %}
-
-最後に、\[Calculate hashes\] ボタンをクリックしてください。各ファイルの MD5 値が表示されます。\[Export\] ボタンから、MD5 値の一覧表 (.html, .csv, .xml) を作成することができます。
-
-{% include image.html url="books/Fsum3.jpg" caption="MD5 値の計算を開始" class="w400" %}
-
+MD5 チェックサム値の取得方法は「[MD5 チェックサム値の取得](/checksum.html)」をご覧ください。

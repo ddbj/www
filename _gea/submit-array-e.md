@@ -55,48 +55,27 @@ metadata can be submitted as a tab-delimited text file.
 
 ## Pre-submission checklist  {#checklist}
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
-<h4 class="toggle-content-btn"><a href="javascript:void(0)">Two-color microarray experiment</a></h4>
-<div class="accordion-content">
+### Two-color microarray experiment {#two-color}
 
 At the moment GEA submission interface only supports one type of two-color workflow ([see graphic here](/gea/example-e.html#sdrf_example2)), where two samples are connected with one common raw data file, which includes both channels.
 If you select the dual-channel option in the IDF tab, it will expect that you provide one file for the two samples that were hybridized together. Some recent two-color microarray technologies generate two separate raw data files (usually one for each channel), which will cause validation to fail (if you connect a single file per sample).
 
 If you have separate files for each channel, please [contact GEA team](/contact-ddbj-e.html).
 
-<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
-</div>
-</div>
-
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
-<h4 class="toggle-content-btn"><a href="javascript:void(0)">Single-cell sequencing experiment</a></h4>
-<div class="accordion-content">
+### Single-cell sequencing experiment {#single-cell}
 
 Refer to [ArrayExpress Single-cell submission guide](https://www.ebi.ac.uk/arrayexpress/help/single-cell_submission_guide.html).
 Please [contact GEA team](/contact-ddbj-e.html) to upload any additional files for custom spike-ins or to facilitate data analysis.
 
-<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
-</div>
-</div>
-
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
-<h4 class="toggle-content-btn"><a href="javascript:void(0)">More than one technology per experiment</a></h4>
-<div class="accordion-content">
+### More than one technology per experiment {#technologies}
 
 GEA will ask you for the technology and name of the array, and applies it to the whole submission. If you have used different types of technologies for the same set of samples, we ask you to create separate submissions. Please make sure that the submissions have distinct titles (even though they may belong to the same study), in order to avoid mistakes. If you have samples from more than one array design in your experiment, it is possible to submit only one experiment. If you wish to do this, please [contact GEA team](/contact-ddbj-e.html).
-
-<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
-</div>
-</div>
 
 ## Microarray experiment submission  {#array-sub}
 
 ### Create a new submission  {#create-new-submission}
 
-Login [the D-way (https://trace.ddbj.nig.ac.jp/D-way)](https://ddbj.nig.ac.jp/D-way/) and the top page is displayed. Move to the GEA submission site from the "GEA" menu at the top.
+Login [D-way](https://ddbj.nig.ac.jp/D-way/) and the top page is displayed. Move to the GEA submission site from the "GEA" menu at the top.
 
 Create a new microarray experiment submission by selecting "Microarray" and clicking the \[New submission\]. At the same time, in the DDBJ file server (ftp-private.ddbj.nig.ac.jp), a corresponding subdirectory is created under the submitter’s GEA upload directory. [Upload data files to this subdirectory](#upload-data).
 
@@ -130,128 +109,7 @@ List of submission status
 
 ### Upload raw and processed data files {#upload-data} 
 
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
-<h4 class="toggle-content-btn"><a href="javascript:void(0)">Upload files by using terminal (Linux/Mac OS X)</a></h4>
-<div class="accordion-content">
-
-Upload files by executing,
-
-- \<Your Files\> Files to be transferred. Ex: file1 file2 (file1 and file2), file\* (all files whose filenames start with "file")
-- \<D-way Login ID\> D-way Login ID (ex. test07)
-- \<GEA Submission ID\> GEA Submission ID (ex. ESUB000350)
-- command example: scp Arabidopsis\_control\_rep\_1.CEL test07@ftp-private.ddbj.nig.ac.jp:\~/gea/ESUB000350
-
-Enter the passphrase set for the keys.
-
-You can directly handle the transferred files by logging in the server. SSH login the server by executing,
-
-Enter the passphrase set for the keys.
-
-After logging in successfully, the following prompt is displayed.
-
-The login environment is private for the submitter. Users other than the submitter cannot access the data. Executable commands are restricted to the following ones. Users can delete unnecessary files.
-
-<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
-</div>
-</div>
-
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
-<h4 class="toggle-content-btn"><a href="javascript:void(0)">Upload files by using WinSCP (Windows)</a></h4>
-<div class="accordion-content">
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gJqgCvUc0Y8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-Submission to DRA ～upload data files (Windows)～
-
-Install and run the ["WinSCP" (http://winscp.net/eng/download.php)](http://winscp.net/eng/download.php).
-
-Set items as below and click the \[Advanced...\] button.
-
-<div class="attention">
-
-Be sure to select the "binary mode" for file transfer. Do NOT select the "text mode".
-
-</div>
-
-- File protocol: SFTP
-- Host name: ftp-private.ddbj.nig.ac.jp
-- Port number: 22
-- User name: (D-way Login ID)
-- Password: (Leave empty)
-
-<a href="/assets/images/books/winscp1_400.jpg" title="privatekey1" class="group1"><img src="/assets/images/books/winscp1_400.jpg" alt="" title="" class="w300"></a>
-
-Please select the private key, which you created beforehand, from "Private key file" in "Authentication".
-
-<a href="/assets/images/books/winscp2_400.jpg" title="privatekey2" class="group1"><img src="/assets/images/books/winscp2_400.jpg" alt="" title="" class="w300"></a>
-
-Last, click the \[Login\] button in the lower center
-
-<a href="/assets/images/books/winscp3_400.jpg" title="login to winSCP" class="group1"><img src="/assets/images/books/winscp3_400.jpg" alt="" title="" class="w300"></a>
-
-At the first time of login, a warning message is displayed; however, please select "Yes" (this message will not be displayed again). Next, enter the passphrase set for the keys.
-
-After login successfully, a folder of your PC is displayed at left, and your private directory in the server is displayed at right. Select the files at the left window and drag & drop them into the right window to transfer the files to the server.
-
-<a href="/assets/images/books/winscp4_400.jpg" title="transfer files" class="group1"><img src="/assets/images/books/winscp4_400.jpg" alt="" title="" class="w500"></a>
-
-You can delete the transferred files by selecting the files and clicking the \[Delete\] button.
-
-<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
-</div>
-</div>
-
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
-<h4 class="toggle-content-btn"><a href="javascript:void(0)">Upload sequence data by using Cyberduck (Mac OS X)</a></h4>
-<div class="accordion-content">
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aO2aVafS3ZE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-Submission to DRA ～upload data files (Mac) ～
-
-Download and install [the Cyberduck (http://cyberduck.ch)](http://cyberduck.ch).
-
-Run the Cyberduck and click the \[Open Connection\] button in the Cyberduck menu.
-
-<a href="/assets/images/books/Cyberduck_1.jpg" title="open connection" class="group1"><img src="/assets/images/books/Cyberduck_1.jpg" alt="" title="" class="w300"></a>
-
-Select "SFTP (SSH File Transfer Protocol)" .
-
-<a href="/assets/images/books/Cyberduck_2.jpg" title="SFTP in the WinSCP" class="group1"><img src="/assets/images/books/Cyberduck_2.jpg" alt="" title="" class="w300"></a>
-
-Set as follows and tick off "Use Public Key Authentication" in the More Options.
-
-- Server: ftp-private.ddbj.nig.ac.jp
-- Port: 22
-- Username: (D-way Login ID)
-- Password: (Leave empty)
-- Add to Keychain: (Check)
-
-<a href="/assets/images/books/Cyberduck_3.jpg" title="key authentication" class="group1"><img src="/assets/images/books/Cyberduck_3.jpg" alt="" title="" class="w300"></a>
-
-By default, the private key is created in "User’s home folder \> .ssh folder (invisible in Finder) \> id\_rsa".
-
-<a href="/assets/images/books/Cyberduck_4.jpg" title="private_key" class="group1"><img src="/assets/images/books/Cyberduck_4.jpg" alt="" title="" class="w300"></a>
-
-At the first time of login, a warning message is displayed; however, please select "Always" (this message will not be displayed again).
-
-After login successfully, your private directory in the server is displayed in the window. Select the files in your PC and drag & drop them into the window to transfer the files to the server.
-
-<a href="/assets/images/books/Cyberduck_5.jpg" title="transfer" class="group1"><img src="/assets/images/books/Cyberduck_5.jpg" alt="" title="" class="w500"></a>
-
-<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
-</div>
-</div>
-
-<div class="attention">
-
-Users can ssh login ftp-private.ddbj.nig.ac.jp server by using a private key. Executable commands are restricted to the following ones. Users can delete unnecessary files.  
-ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
-
-</div>
+Regarding how to upload your data files, please see "[Data upload](/upload.html)".
 
 ### Submission  {#Submission-tab}
 
@@ -422,63 +280,6 @@ You can allow reviewers access to private records by [communicating a reviewer a
 
 To withdrawing archived Experiment, please [contact us](/contact-ddbj-e.html).
 
-## Supplement: MD5 {#supplement-md5}
+## MD5 checksum value {#md5} 
 
-MD5 (Message Digest Algorithm 5) is a hash function which calculates a hash value (MD5 number, 32-digit numbers and letters) of a given file. Because the MD5 number of the damaged file is distinct from the original one, we can check whether the transferred file is intact or not by comparing the numbers before and after the file transfer.
-
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
-<h3 class="toggle-content-btn"><a href="javascript:void(0)">Obtain MD5 number (Linux)</a></h3>
-<div class="accordion-content">
-
-Obtain the MD5 numbers of the files by executing,
-
-```
-$ md5sum file1 file2
-9F6E6800CFAE7749EB6C486619254B9C file1
-B636E0063E29709B6082F324C76D0911 file2
-```
-
-<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
-</div>
-</div>
-
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
-<h3 class="toggle-content-btn"><a href="javascript:void(0)">Obtain MD5 number (Mac OS X)</a></h3>
-<div class="accordion-content">
-
-Obtain the MD5 numbers of the files by executing,
-
-```
-$ md5 file1 file2
-9F6E6800CFAE7749EB6C486619254B9C file1
-B636E0063E29709B6082F324C76D0911 file2
-```
-
-<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
-</div>
-</div>
-
-{::options parse_block_html="true" /}
-<div class="accordion-menu">
-<h3 class="toggle-content-btn"><a href="javascript:void(0)">Obtain MD5 number (Windows)</a></h3>
-<div class="accordion-content">
-
-Install and run the [Fsum Frontend (sourceforge.net/projects/fsumfe/)](//sourceforge.net/projects/fsumfe/).  
-At first, tick off "md5".
-
-<a href="/assets/images/books/Fsum1.jpg" title="Generate md5 in the tool 1" class=""><img src="/assets/images/books/Fsum1.jpg" alt="" title="" class="w500"></a>
-
-After clicking the \[+\] button, open the sequence data files that you need. You can select multiple files at the same time.
-
-<a href="/assets/images/books/Fsum2.jpg" title="Generate md5 in the tool 2" class=""><img src="/assets/images/books/Fsum2.jpg" alt="" title="" class="w500"></a>
-
-Click the \[Calculate hashes\] button. The MD5 numbers of the files are displayed.  
-By clicking the \[Export\] button, you can obtain the list of the MD5 numbers as a html, a csv, or a xml file.
-
-<a href="/assets/images/books/Fsum3.jpg" title="Generate md5 in the tool 3" class=""><img src="/assets/images/books/Fsum3.jpg" alt="" title="" class="w500"></a>
-
-<a href="javascript:void(0)" class="close-content-btn">[« Close]</a>
-</div>
-</div>
+See "[MD5 checksum value](/checksum.html)" for how to obtain MD5 checksum values.

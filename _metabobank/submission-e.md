@@ -61,14 +61,10 @@ Alternatively, you may provide the md5 values in the columns of SDRF as Comment[
 
 ### 7. Upload files {#upload}
 
-Upload metadata and data files (raw, processed data files and MAF) to our file server by [scp/sftp](/dra/submission-e.html#upload-sequence-data).  
-Group all files for each study by using either tar or zip. 
-Upload your files under the metabobank directory. 
-The scp command is as follows.
+Upload metadata and data files (raw, processed data files and MAF) to our file server by scp/sftp. 
+Group all files for each study by using either tar or zip. Upload your files under the metabobank directory. 
 
-```
-$ scp -i private-key-for-auth <Your Files> <D-way Login ID>@ftp-private.ddbj.nig.ac.jp:~/metabobank
-```
+Regarding how to upload your data files, please see "[Data upload](/upload.html)".
 
 ## Accession number  {#accession}
 
@@ -95,66 +91,6 @@ please contact the [MetaboBank team](/contact-ddbj-e.html).
 
 To update your data, please contact the [MetaboBank team](/contact-ddbj-e.html).
 
-## Supplement: MD5 {#supplement-md5} 
+## MD5 checksum value {#md5} 
 
-MD5 (Message Digest Algorithm 5) is a hash function which calculates a hash value (MD5 number, 32-digit numbers and letters) of a given file. Because the MD5 number of the damaged file is distinct from the original one, we can check whether the transferred file is intact or not by comparing the numbers before and after the file transfer.
-
-### Obtain MD5 number (Linux)
-
-Obtain the MD5 numbers of the files by executing,
-
-```
-# obtain md5 values of file1 and file2.
-$ md5sum file1 file2
-9F6E6800CFAE7749EB6C486619254B9C file1
-B636E0063E29709B6082F324C76D0911 file2
-
-# obtain md5 values of all files in the sub directory.
-$ md5sum sub/*
-9F6E6800CFAE7749EB6C486619254B9C file1
-B636E0063E29709B6082F324C76D0911 file2
-B636E0063E29709B6082F324C76D0911 file3
-
-# obtain md5 values of all files end with .txt.
-$ md5sum *.txt
-
-# Output values to a file.
-$ md5sum *.txt > study.md
-```
-
-### Obtain MD5 number (Mac OS X)
-
-Obtain the MD5 numbers of the files by executing,
-
-```
-# obtain md5 values of file1 and file2.
-$ md5sum file1 file2
-9F6E6800CFAE7749EB6C486619254B9C file1
-B636E0063E29709B6082F324C76D0911 file2
-
-# obtain md5 values of all files in the sub directory.
-$ md5sum sub/*
-9F6E6800CFAE7749EB6C486619254B9C file1
-B636E0063E29709B6082F324C76D0911 file2
-B636E0063E29709B6082F324C76D0911 file3
-
-# obtain md5 values of all files end with .txt.
-$ md5sum *.txt
-
-# Output values to a file.
-$ md5sum *.txt > study.md
-```
-
-### Obtain MD5 number (Windows)
-
-Install and run the [Fsum Frontend](https://sourceforge.net/projects/fsumfe/).  
-At first, tick off "md5".
-
-<a href="/assets/images/books/Fsum1.jpg" title="Generate md5 in the tool 1" class=""><img src="/assets/images/books/Fsum1.jpg" alt="" title="" class="w500"></a>
-
-After clicking the \[+\] button, open the sequence data files that you need. You can select multiple files at the same time.
-
-<a href="/assets/images/books/Fsum2.jpg" title="Generate md5 in the tool 2" class=""><img src="/assets/images/books/Fsum2.jpg" alt="" title="" class="w500"></a>
-
-Click the \[Calculate hashes\] button. The MD5 numbers of the files are displayed.  
-By clicking the \[Export\] button, you can obtain the list of the MD5 numbers as a html, a csv, or a xml file.
+See "[MD5 checksum value](/checksum.html)" for how to obtain MD5 checksum values.

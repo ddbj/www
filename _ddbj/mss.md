@@ -144,14 +144,10 @@ OS: Linux
 - ツールのご利用前に[使用許諾](/ddbj/mss-tool.html#license)をご確認ください。
 
 ## アカウント作成  {#account}
+
 - D-way 登録アカウントをお持ちでない場合、[D-way](https://ddbj.nig.ac.jp/D-way/) の "Register for a new account
 " より作成して下さい。
-- SFTP 転送を利用いただくには、アカウントへの公開鍵と Center name の設定が必要です。詳細手順につきましては、[ファイルのアップロード方法](/dra/submission.html#upload-sequence-data)またはチュートリアル動画をご参照ください。
-<div class="attention" markdown="1">
-[ チュートリアル動画 ]    
-- 鍵ペアの作成 ([Windows](https://youtu.be/mggRnbxr0gQ) / [macOS](https://youtu.be/h9LbhwROtOM))
-- データの転送 ([Windows](https://youtu.be/ZxIfewrk8lI) / [macOS](https://youtu.be/A2hPlGZEW_o))
-</div>
+- SCP/SFTP 転送を利用いただくには、アカウントへの公開鍵と Center name の設定が必要です。詳細手順につきましては、「[データのアップロード](/upload.html)」をご参照ください。
 
 ## 登録申し込み  {#submission}
 [MSS 申し込みフォーム](https://mss.ddbj.nig.ac.jp/)から行って下さい。単一の申し込みは、以下の条件を全て満たすエントリセットの場合のみとなっております。一つでも条件が異なるエントリを登録する場合には、複数回の申し込みが必要となります。    

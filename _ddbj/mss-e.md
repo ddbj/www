@@ -155,12 +155,7 @@ Download: [Validation tools for MSS data files](/ddbj/mss-tool-e.html)
 
 ## Creating account  {#account}
 - If you have not obtained D-way account, create your account by clicking "Register for a new account" on [D-way](https://ddbj.nig.ac.jp/D-way/).
-- If you would like to use SFTP for transferring the files to DDBJ, you also need to register public key and "Center name" on the account setting page on D-way. See "Upload sequence data"(/dra/submission-e.html#upload-sequence-data) or tutorial movies for the detail.
-<div class="attention" markdown="1">
-[ Tutorial movies ]    
-- Generate key pair ([Windows](https://youtu.be/Aos7KR6XwUw) / [macOS](https://youtu.be/jBfOqsJxDZU))
-- Upload data files ([Windows](https://youtu.be/gJqgCvUc0Y8) / [macOS](https://youtu.be/aO2aVafS3ZE))
-</div>
+- If you would like to use SCP/SFTP for transferring the files to DDBJ, you also need to register public key and "Center name" on the account setting page on D-way. See "[Data upload](/upload.html)" for the detail.
 
 ## Applying for the registration  {#submission}
 Please apply for your submission through ["Application form for MSS"](https://mss.ddbj.nig.ac.jp/).

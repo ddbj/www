@@ -19,13 +19,19 @@ First, confirm the following basic points.
 
 When transferring data files by using a private key generated in the other operating system, please check format of a private key. [Convert private key](/account-e.html#convert-private-key)
 
-**In Unix/Mac OS X**: Convert a key in the Windows PuTTY file format into the OpenSSH.
-
-**In Windows WinSCP:** Convert a key in the Unix/Mac OS X OpenSSH file format into the Windows PuTTY format.
+Environments and private key formats:
+* Unix/Mac OS X: Use an OpenSSH-format key. Convert a key in the Windows PuTTY file format into the OpenSSH.
+* Windows WinSCP: Use a PuTTY-format key. Convert a key in the Unix/Mac OS X OpenSSH file format into the Windows PuTTY format.
 
 When these are correct, because we do not support technical details regarding use of third-party softwares, please refer to websites of softwares or confirm your system administrators whether scp (port 22) is allowed or not.
 
 ### Windows PowerShell {#ps}  
+
+#### invalid format error {#invalid-format-error}
+
+A PuTTY-format private key causes "invalid format" error, [convert the key into OpenSSH-format](/account-e.html#putty-openssh).   
+
+#### UNPROTECTED PRIVATE KEY FILE WARNING {#unprotected}
 
 If the private key access permission is too open, following error will be shown.  
 ```

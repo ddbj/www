@@ -366,7 +366,6 @@ If you provide WIG, bedGraph, GFF, or GTF files, please refer to the
 [UCSC file format FAQ](http://www.genome.ucsc.edu/FAQ/FAQformat.html)
 for format requirements.
 
-
 ### Processed matrix files (for advanced users)  {#matrix}
 
 For submitters who are familiar with MAGE-TAB specification, we also
@@ -376,8 +375,6 @@ particular assay in the experiment and to a particular probe/probe set
 in the array design file in a human readable way and also
 programmatically. Check out [this guide](/gea/matrix-e.html) on the
 strict matrix format for more information.
-
-
 
 ### Additional files  {#seq-additional}
 

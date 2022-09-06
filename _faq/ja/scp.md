@@ -20,13 +20,19 @@ lang: ja
 鍵を生成した時のコンピュータの OS と異なる環境でデータを転送しようとしている場合，秘密鍵の形式が合っているかどうかご確認ください。    
 [秘密鍵ファイルの変換](/account.html#convert-private-key)
 
-**転送環境 Unix/Mac OS X**: Windows で作成した PuTTY 形式の秘密鍵は OpenSSH 形式に変換します。
-
-**転送環境 Windows WinSCP:** Unix/Mac OS X で作成した OpenSSH 形式の秘密鍵は PuTTY 形式に変換します。
+転送環境と秘密鍵の形式  
+* Unix/Mac OS X/Windows PowerShell: OpenSSH 形式の秘密鍵を使用します。Windows で作成した PuTTY 形式の秘密鍵は OpenSSH 形式に変換します。  
+* Windows WinSCP: PuTTY 形式の秘密鍵を使用します。Unix/Mac OS X で作成した OpenSSH 形式の秘密鍵は PuTTY 形式に変換します。   
 
 上記でも問題が解決しない場合、DDBJ センターではサードパーティ製ソフトウェアの細かい使い方に関するサポートは提供しておりませんので、ソフトウェアのウェブサイト等をご参照頂くか、所属組織のシステム管理者に scp (ポート 22) の通信を許可しているかどうか、ご確認ください。
 
 ### Windows PowerShell {#ps}
+
+#### invalid format error {#invalid-format-error}
+
+OpenSSH 形式の秘密鍵を使用します。PuTTY 形式だと invalid format エラーになるので [OpenSSH 形式に変換](/account.html#putty-openssh)します。    
+
+#### UNPROTECTED PRIVATE KEY FILE WARNING {#unprotected}
 
 Windows PowerShell の scp で秘密鍵のアクセス権限が広すぎると以下のエラーになります。  
 ```
