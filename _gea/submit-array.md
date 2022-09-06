@@ -41,11 +41,11 @@ lang: ja
 
 #### IDF  {#idf}
 
-- [IDF(Investigation Description Format)](/gea/metadata.html#idf) ファイルで実験デザイン、プロトコールや文献情報といった実験全体を記述します
+- [IDF (Investigation Description Format)](/gea/metadata.html#idf) ファイルで実験デザイン、プロトコールや文献情報といった実験全体を記述します
 
 #### SDRF <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#sdrf}
 
-- [SDRF(Sample and Data RelationshipFormat)](/gea/metadata.html#sdrf) ファイルでサンプル属性とサンプル、アレイ、データファイル間の関係性を記述します
+- [SDRF (Sample and Data RelationshipFormat)](/gea/metadata.html#sdrf) ファイルでサンプル属性とサンプル、アレイ、データファイル間の関係性を記述します
 - 選択した BioProject と BioSample の内容から生成された SDRF テンプレートファイルに必要な情報を追加します
 
 ### 6. IDFとSDRFを投稿しデータファイルを検証する   {#validation}
