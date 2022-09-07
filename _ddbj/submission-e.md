@@ -222,7 +222,7 @@ System](/ddbj/web-submission-e.html).
 (B) Mass Submission System (MSS)  
 : We recommend the use of [Mass Submission System (MSS)](/ddbj/mss-e.html) if:
   - the submission consists of large number of sequences (entries);
-    greater than 1024,
+    greater than 100,
   - the submission involves long (greater than 500 kb) nucleotide
     sequences which result in a complex submission containing many
     features (greater than 30 in an entry) as in the case of genome

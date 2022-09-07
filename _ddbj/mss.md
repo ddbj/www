@@ -146,8 +146,8 @@ OS: Linux
 ## アカウント作成  {#account}
 
 - D-way 登録アカウントをお持ちでない場合、[D-way](https://ddbj.nig.ac.jp/D-way/) の "Register for a new account
-" より作成して下さい。
-- SCP/SFTP 転送を利用いただくには、アカウントへの公開鍵と Center name の設定が必要です。詳細手順につきましては、「[データのアップロード](/upload.html)」をご参照ください。
+" より作成して下さい([ヘルプ](/account.html))。
+- SCP/SFTP 転送を利用いただくには、[アカウントへの公開鍵と Center name の設定](/account.html#register-center-name-and-public-key)が必要です。ファイル転送手順につきましては、「[データのアップロード](/upload.html)」をご参照ください。
 
 ## 登録申し込み  {#submission}
 [MSS 申し込みフォーム](https://mss.ddbj.nig.ac.jp/)から行って下さい。単一の申し込みは、以下の条件を全て満たすエントリセットの場合のみとなっております。一つでも条件が異なるエントリを登録する場合には、複数回の申し込みが必要となります。    
@@ -186,7 +186,7 @@ c. 単一真核生物個体の chromosome ドラフトゲノムとアセンブ�
 - MSS formからアップロード    
 MSS form での利用申請時に登録ファイルをアップロードできます。申請時にファイルをアップロードできない場合には、申請完了後に通知されるメールにアップロードサイトへのリンクが表示されますので、登録ファイル完成後に登録ファイルをアップロードして下さい。
 - SFTP によるファイル転送    
-ファイルサイズが合計で 10 Gbyte を超える場合は、公開鍵と秘密鍵を用いた SFTP によるファイル転送をお勧めいたします。この場合、[アカウント作成](#account)をご覧いただき、公開鍵と秘密鍵を用意してください。
+ファイルサイズが合計で 10 Gbyte を超える場合は、[公開鍵と秘密鍵](/account.html#generate-key-pair)を用いた SCP/SFTP によるファイル転送をお勧めいたします。アカウントに[Center name と認証用公開鍵を登録](/account.html#register-center-name-and-public-key)後、「[データのアップロード](/upload.html)」に従い転送してください。
 
 <div class="attention" markdown="1">
 ＜お願い＞ 特に理由のない限り、電子メール添付による登録ファイル送付はおやめください。

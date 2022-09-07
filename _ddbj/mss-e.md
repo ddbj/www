@@ -154,8 +154,8 @@ Download: [Validation tools for MSS data files](/ddbj/mss-tool-e.html)
 - Before installing the validation tools, see [End-user license agreement](/ddbj/mss-tool-e.html#license).
 
 ## Creating account  {#account}
-- If you have not obtained D-way account, create your account by clicking "Register for a new account" on [D-way](https://ddbj.nig.ac.jp/D-way/).
-- If you would like to use SCP/SFTP for transferring the files to DDBJ, you also need to register public key and "Center name" on the account setting page on D-way. See "[Data upload](/upload.html)" for the detail.
+- If you have not obtained D-way account, create your account by clicking "Register for a new account" on [D-way](https://ddbj.nig.ac.jp/D-way/) (see [HELP](/account-e.html)).
+- If you would like to use SCP/SFTP for transferring the files to DDBJ, you also need to [register center name and public key](/account-e.html#register-center-name-and-public-key) on the account setting page on D-way. See "[Data upload](/upload-e.html)" for detailed descriptions how to transfer the files.
 
 ## Applying for the registration  {#submission}
 Please apply for your submission through ["Application form for MSS"](https://mss.ddbj.nig.ac.jp/).
@@ -199,7 +199,7 @@ c. Draft genome sequences of chromosomes from a eukaryotic isolate, and assemble
 - Uploading in MSS form    
 In the process of MSS application, you can upload the submission files in MSS form. Even if you cannot upload the submission files during the application, you can upload them later. You will find the link to upload files in the email that is sent from DDBJ just after the application.
 - Transferring by SFTP    
-If the total submission files exceed more than 10 Gbytes in uncompressed size, we recommend that you use SFTP by using public/private key pair. In the case, see ["Creating account" section](#account) and prepare public/private key for SFTP connection.
+If the total submission files exceed more than 10 Gbytes in uncompressed size, we recommend that you use SCP/SFTP by using [public/private key pair](/account-e.html#generate-key-pair). First, [register center name and public key](/account-e.html#register-center-name-and-public-key) to your account, and then send the files according to ["Data upload"](/upload-e.html).
 
 <div class="attention" markdown="1">
 ＜NOTE＞ Do not send submission files as email attachment unless there is some particular reason.
