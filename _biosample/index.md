@@ -10,7 +10,7 @@ panels:
   icon: /assets/images/icon/howto.png
 - title: ログインして登録
   url: https://ddbj.nig.ac.jp/D-way/
-  icon: ../assets/images/icon/submit.png
+  icon: /assets/images/icon/submit.png
 lang: ja
 ---
 
