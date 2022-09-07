@@ -1,9 +1,9 @@
 ---
 layout: tabbed_indexed_content
 service_name: BioProject
-title: DDBJ BioProject Handbook
+title: BioProject Submission
 category: bioproject
-current_tab: handbook
+current_tab: submission
 lang: en
 ---
 
