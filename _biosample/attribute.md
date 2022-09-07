@@ -162,7 +162,8 @@ lang: ja
 *: 必須  
 **数字: 同一数字グループの中で少なくとも一つ必須（選択必須）  
 
-[いくつかのパッケージの登録例](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482)を公開しています。  
+* [いくつかのパッケージの登録例](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482)
+* [パッケージ一覧](/biosample/sample-info.html#Sample-type)
 
 <h3 id="data-type">データ種別毎のサンプル登録</h3>
 

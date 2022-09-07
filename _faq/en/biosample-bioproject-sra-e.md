@@ -16,7 +16,7 @@ BioSample is descriptive information about the biological source
 materials, or samples, used to generate experimental data in any of
 primary data archives. Biological replicates need to be
 registered as separate BioSamples distinguished by the "biological_replicate" like "biological_replicate = 1" and "biological_replicate = 2".  
-For technical replicates, do not separate BioSample but differentiate them in DRA Experiment or GEA SDRF.
+For technical replicates, do not separate BioSample but differentiate them in DRA Experiment or GEA SDRF. [Sample granularity](/biosample/overview-e.html#granularity) 
 
 Each SRA Experiment is a unique sequencing library for a specific
 sample. Importantly, much of the descriptive information that is

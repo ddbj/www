@@ -32,14 +32,14 @@ DRA への生データの登録は原則として必須です。
 
 #### BioProject  {#raw-reads-bioproject}
 
-[メタゲノム/環境サンプルプロジェクト](/bioproject/submission.html#Project-type)として登録します。
+[メタゲノム/環境サンプルプロジェクト](/bioproject/project-info.html#Project-type)として登録します。
 生物名は [metagenome organism
 names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/)
 から適切なものを選び、"xyz metagenome" (例 soil metagenome) を記載します。
 
 #### BioSample  {#raw-reads-biosample}
 
-[MIxS MIMS.me](/biosample/submission.html#mixs) パッケージを選択します。
+[MIxS MIMS.me](/biosample/sample-info.html#mixs) パッケージを選択します。
 メタゲノムサンプルの場合、生物名は [metagenome organism
 names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/)
 から適切なものを選び、"xyz metagenome" (例 soil metagenome)
@@ -76,7 +76,7 @@ Binning され、既知の分類群に帰属されたアセンブリ配列を [D
 
 #### BioSample  {#binned-metagenome-biosample}
 
-Binned サンプル用にバーチャルなサンプルを登録します。パッケージは ["MIMAG"](/biosample/submission.html#mixs) を選択し、生物名には
+Binned サンプル用にバーチャルなサンプルを登録します。パッケージは ["MIMAG"](/biosample/sample-info.html#mixs) を選択し、生物名には
 uncultured が冠されていない、Binned アセンブリが由来する生物名を記載します (例 "Agrobacterium tumefaciens"、Agrobacterium sp."、"Rhizobiaceae bacterium")。
 (1) の DRA Run 登録に使用する "xyz metagenome" メタゲノムサンプルとは別にバーチャルな Binned 用サンプルが必要になります。　　　　
 
@@ -115,7 +115,7 @@ Analysis は ENA/NCBI と共有されません。また、[DDBJ Search](https://
 
 #### BioSample  {#mag-biosample}
 
-MAG サンプル用にバーチャルなサンプルを登録します。パッケージは ["MIMAG"](/biosample/submission.html#mixs) を選択し、生物名には
+MAG サンプル用にバーチャルなサンプルを登録します。パッケージは ["MIMAG"](/biosample/sample-info.html#mixs) を選択し、生物名には
 uncultured が冠されていない、MAG 配列が由来する生物名を記載します (例 "Agrobacterium tumefaciens")。
 (1) の DRA Run 登録に使用する "xyz metagenome" メタゲノムサンプルとは別にバーチャルな MAG 用サンプルが必要になります。　　　　
 

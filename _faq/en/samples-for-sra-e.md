@@ -14,5 +14,5 @@ lang: en
 ---
 
 Please see the following pages.
-- [Sample Granularity](/biosample/submission-e.html#granularity)
+- [Sample Granularity](/biosample/overview-e.html#granularity)
 - [Genome Assembly Sample](/biosample/genome-assembly-sample-e.html)

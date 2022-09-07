@@ -158,10 +158,13 @@ lang: en
   
 </form>
 
+After selecting the relevant Sample type, click the DEFINITION button to review the definitions and formats of attribute. [See definition in the table](https://docs.google.com/spreadsheets/d/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/edit#gid=631330335) 
 
-After selecting the relevant Sample type, click the DEFINITION button to review the definitions and formats of attribute. [See definition in the table](https://docs.google.com/spreadsheets/d/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/edit#gid=631330335) [BioSample example submission files are available for several packages](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482)    
 *: Required  
 **number: At least one attribute is required in attributes   
+
+* [BioSample example submission files for several packages](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482)    
+* [Package list](/biosample/sample-info-e.html#Sample-type)
 
 <h3 id="data-type">Sample submission by data type</h3>
 

@@ -29,6 +29,6 @@ There are four tiers of [metagenome assembly](/ddbj/metagenome-assembly-e.html) 
 Submit a MAG from a particular organism to the [ENV division](/ddbj/env-e.html) of DDBJ.    
 
 Create a virtual BioSample for MAG submission. 
-Use the [MIMAG](/biosample/submission.html#Sample-type) package and use an organism name without uncultured (e.g., Methanosarcina thermophila). 
+Use the [MIMAG](/biosample/sample-info-e.html#Sample-type) package and use an organism name without uncultured (e.g., Methanosarcina thermophila). 
 Indicate deriving source sample as "derived_from: SAMD00000001". [Examples](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=272411182)  
 A MAG also needs to be linked to a BioSample, create a derived BioSample for MAG.

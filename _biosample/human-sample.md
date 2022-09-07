@@ -15,7 +15,7 @@ lang: ja
 
 ## サンプル属性  {#attribute}
 
-ヒト (*Homo sapiens*) サンプルでは [Human](/biosample/submission.html#Sample-type) パッケージで登録します。以下はヒトサンプルの種類に応じた登録ガイドラインになります。属性の説明は[こちらのページ](/biosample/attribute.html?all=all)を参照してください。    
+ヒト (*Homo sapiens*) サンプルでは [Human](/biosample/sample-info.html#Sample-type) パッケージで登録します。以下はヒトサンプルの種類に応じた登録ガイドラインになります。属性の説明は[こちらのページ](/biosample/attribute.html?all=all)を参照してください。    
 
 ### 個人由来試料 {#human-subject}
 

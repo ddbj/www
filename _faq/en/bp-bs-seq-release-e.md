@@ -13,26 +13,19 @@ lang: en
 ---
 
 Linked [BioProject](/bioproject/index-e.html),
-[BioSample](/biosample/index-e.html), [DDBJ](/ddbj/submission.html) and
-[DRA](/dra/index-e.html) data are released as follows.
+[BioSample](/biosample/index-e.html), [DDBJ](/ddbj/submission.html), [DRA](/dra/index-e.html), [GEA](/gea/index-e.html) and [MetaboBank](/metabobank/index-e.html) data are released as follows.
 
-  - Release of the BioProject and BioSample records DO NOT trigger release of the
-    other linked data.
-  - Release of the BioSample records trigger release of the referencing
-    BioSample in derived_from attributes.
-  - Release of the DDBJ and DRA nucleotide sequence data DO trigger
-    release of the linked BioProject and BioSample records.
-  - Release of the DRA data DO NOT trigger release of the DDBJ records.
+- Release of the BioProject and BioSample records DO NOT trigger release of the other linked data.
+- Release of the BioSample records trigger release of the referencing BioSample in derived_from attributes.
+- Release of the DDBJ, DRA, GEA and MetaboBank data DO trigger release of the linked BioProject and BioSample records.
+- Release of the DRA data DO NOT trigger release of the DDBJ records.
 
-<p class="attention">All metadata and sequencing data in a DRA submission are released at
-once.</p>
+<p class="attention">All metadata and sequencing data in a DRA submission are released at once.</p>
 
 <figure><a href="{{ site.baseurl }}/assets/images/books/bp-bs-seq_release.jpg" title="Release of linked BioProject/BioSample/sequence records"><img src="{{ site.baseurl }}/assets/images/books/bp-bs-seq_release.jpg" alt="Release of linked BioProject/BioSample/sequence records" title="Release of linked BioProject/BioSample/sequence records" class="w450"></a>
   <figcaption class="caption">Release of linked BioProject/BioSample/sequence records</figcaption>
 </figure>
 
 DRA Handbook: [Release of DRA](/dra/submission.html#data-release)  
-BioProject Handbook: [Release of
-BioProject](/bioproject/submission.html#data-release)  
-BioSample Handbook: [Release of
-BioSample](/biosample/submission.html#sample-release)
+BioProject Overview: [Release of BioProject](/bioproject/overview.html#release)  
+BioSample Overview: [Release of BioSample](/biosample/overview.html#sample-release)

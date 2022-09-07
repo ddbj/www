@@ -16,7 +16,7 @@ For all studies involving human subjects, it is the submitter's responsibility t
 
 ## Sample attributes {#attribute}
 
-Describe following attributes for Human (*Homo sapiens*) sample by using [Human](/biosample/submission.html#Sample-type) package. Please see [this page](/biosample/attribute-e.html?all=all) for attribute explanation.  
+Describe following attributes for Human (*Homo sapiens*) sample by using [Human](/biosample/sample-info.html#Sample-type) package. Please see [this page](/biosample/attribute-e.html?all=all) for attribute explanation.  
 
 ### Sample derived from human subjects {#human-subject}
 

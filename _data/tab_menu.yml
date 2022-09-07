@@ -47,9 +47,14 @@ bioproject:
     - id: home
       title: Home
       url: /bioproject/index.html
-    - id: handbook
-      title: Handbook
+    - id: submission
+      title: Submission
       url: /bioproject/submission.html
+      children:
+        - title: Overview
+          url: /bioproject/overview.html
+        - title: Project Information
+          url: /bioproject/project-info.html
     - id: faq
       title: FAQ
       url: /faq/ja/index.html?tag=bioproject
@@ -69,9 +74,14 @@ bioproject:
     - id: home	
       title: Home	
       url: /bioproject/index-e.html	
-    - id: handbook	
-      title: Handbook	
-      url: /bioproject/submission-e.html	
+    - id: submission
+      title: Submission
+      url: /bioproject/submission-e.html
+      children:
+        - title: Overview
+          url: /bioproject/overview-e.html
+        - title: Project Information
+          url: /bioproject/project-info-e.html
     - id: faq	
       title: FAQ	
       url: /faq/en/index-e.html?tag=bioproject	
@@ -94,9 +104,14 @@ biosample:
     - id: home	
       title: Home	
       url: /biosample/index.html	
-    - id: handbook	
-      title: Handbook	
+    - id: submission
+      title: Submission
       url: /biosample/submission.html	
+      children: 
+        - title: Overview
+          url: /biosample/overview.html 
+        - title: Sample Information
+          url: /biosample/sample-info.html 
     - id: sample attribute	
       title: Sample Attribute	
       url: /biosample/attribute.html	
@@ -129,9 +144,14 @@ biosample:
     - id: home
       title: Home
       url: /biosample/index-e.html
-    - id: handbook
-      title: Handbook
-      url: /biosample/submission-e.html
+    - id: submission
+      title: Submission
+      url: /biosample/submission-e.html 
+      children: 
+        - title: Overview
+          url: /biosample/overview-e.html 
+        - title: Sample Information
+          url: /biosample/sample-info-e.html 
     - id: sample attribute
       title: Sample Attribute
       url: /biosample/attribute-e.html

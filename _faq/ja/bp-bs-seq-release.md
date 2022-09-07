@@ -13,12 +13,11 @@ lang: ja
 ---
 
 相互にリンクされている
-[BioProject](/bioproject/index.html)，[BioSample](/biosample/index.html)，[DDBJ](/ddbj/submission.html)
-と [DRA](/dra/index.html) に登録された塩基配列データの連動公開の仕組みは以下のようになっています。
+[BioProject](/bioproject/index.html)、[BioSample](/biosample/index.html)、[DDBJ](/ddbj/submission.html)、[DRA](/dra/index.html) と [MetaboBank](/metabobank/index.html) に登録されたデータの連動公開の仕組みは以下のようになっています。
 
 - BioProject と BioSample の公開はリンクされているデータの連動公開を引き起こしません。
 - BioSample の公開は derived_from 属性で引用されている BioSample の連動公開を引き起こします。
-- DDBJ と DRA Experiment、Run、Analysis の公開はリンクしている BioProject と BioSample の連動公開を引き起こします。
+- DDBJ、DRA、GEA と MetaboBank の公開はリンクしている BioProject と BioSample の連動公開を引き起こします。
 - DRA の公開は DDBJ の連動公開を引き起こしません。
 
 <p class="attention">DRA ではメタデータとシークエンスデータは DRA 登録 (submission) 単位で公開されます。</p>
@@ -28,5 +27,5 @@ lang: ja
 </figure>
 
 DRA Handbook: [DRA のデータ公開](/dra/submission.html#data-release)  
-BioProject Handbook: [BioProjectのデータ公開](/bioproject/submission.html#data-release)  
-BioSample Handbook: [BioSampleのデータ公開](/biosample/submission.html#sample-release)
+BioProject 概要: [BioProjectのデータ公開](/bioproject/overview.html#release)  
+BioSample 概要: [BioSampleのデータ公開](/biosample/overview.html#sample-release)

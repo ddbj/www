@@ -14,7 +14,7 @@ lang: ja
 BioSample
 はデータベースに登録する実験データを得るために使われた生物学的な試料やサンプルに対して作成します。
 Biological replicate は異なる BioSample として登録し，サンプル属性 biological_replicate で区別します。例 "biological_replicate = 1" と "biological_replicate = 2"。  
-Technical replicate はサンプルを分けず、DRA Experiment/GEA SDRF で分けます。[サンプルの粒度](/biosample/submission.html#granularity)  
+Technical replicate はサンプルを分けず、DRA Experiment/GEA SDRF で分けます。[サンプルの粒度](/biosample/overview.html#granularity)  
 
 DRA のデータファイルは一つの BioSample にしかリンクできないことに注意してください。
 

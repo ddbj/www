@@ -30,8 +30,6 @@ lang: ja
 
 特定の生物に由来すると推測される MAG は DDBJ の [ENV division](/ddbj/env.html) にゲノムエントリとして登録します。
 
-MAG 用にバーチャルなサンプルを登録します。パッケージは [MIMAG](/biosample/submission.html#Sample-type) を選択し、生物名には uncultured が冠されていない、MAG が由来する生物種名を記載します (例 Methanosarcina thermophila)。
+MAG 用にバーチャルなサンプルを登録します。パッケージは [MIMAG](/biosample/sample-info.html#Sample-type) を選択し、生物名には uncultured が冠されていない、MAG が由来する生物種名を記載します (例 Methanosarcina thermophila)。
 派生元 BioSample を derived_from: SAMD00000001 のように記載します。[登録例](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=272411182)　　
 MAG も一つの BioSample にリンクする必要があるため、複数サンプルに由来するリードをアセンブルした MAG の場合、複数の派生元サンプルを記載します。derived_from: SAMD00000001,SAMD00000002,SAMD00000004-SAMD00000008
-
-

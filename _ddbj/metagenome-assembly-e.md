@@ -41,7 +41,7 @@ Run](/dra/submission-e.html).
 #### BioProject  {#raw-reads-bioproject}
 
 Register your BioProject as a [metagenome/environmental
-project](/bioproject/submission-e.html#Project-type). For the organism
+project](/bioproject/project-info-e.html#Project-type). For the organism
 name, choose the most appropriate "xyz metagenome" (e.g., soil
 metagenome) from this list of [metagenome organism
 names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/)
@@ -49,7 +49,7 @@ in the taxonomy database.
 
 #### BioSample  {#raw-reads-biosample}
 
-Register your BioSample by using the [MIxS MIMS.me](/biosample/submission-e.html#mixs) package. 
+Register your BioSample by using the [MIxS MIMS.me](/biosample/sample-info-e.html#mixs) package. 
 For the organism name, choose the most appropriate "xyz
 metagenome" (e.g., soil metagenome) from this list of [metagenome
 organism
@@ -93,7 +93,7 @@ Same as (1) Raw reads.
 
 #### BioSample  {#binned-metagenome-biosample}
 
-Register a virtual BioSample by using the ["MIMAG"](/biosample/submission-e.html#mixs) package. Describe
+Register a virtual BioSample by using the ["MIMAG"](/biosample/sample-info-e.html#mixs) package. Describe
 an organism name without 'uncultured' (e.g., "Agrobacterium tumefaciens", "Agrobacterium sp.", "Rhizobiaceae bacterium")
 in the taxonomy database from which the binned assembly was derived. Please note
 that a virtual BioSample derived from the MIMS metagenomic sample used
@@ -139,14 +139,14 @@ as genome entries of [ENV division](/ddbj/env-e.html).
 #### BioProject  {#mag-bioproject}
 
 Register your BioProject as a [metagenome/environmental
-project](/bioproject/submission-e.html#Project-type). If you have
+project](/bioproject/project-info-e.html#Project-type). If you have
 already registered a BioProject for submission of the corresponding raw
 reads to DRA, then, in general, you would use the BioProject when you
 submit the MAG to DDBJ.
 
 #### BioSample  {#mag-biosample}
 
-Register a virtual BioSample by using the ["MIMAG"](/biosample/submission-e.html#mixs) package. 
+Register a virtual BioSample by using the ["MIMAG"](/biosample/sample-info-e.html#mixs) package. 
 Describe an organism name without 'uncultured' (e.g., Agrobacterium tumefaciens)
 in the taxonomy database from which the MAG was derived. Please note
 that a virtual BioSample derived from the MIMS metagenomic sample used
@@ -191,7 +191,7 @@ Required for the ENV division entry.
 - [/isolation\_source](/ddbj/qualifiers-e.html#isolation_source)
 - [/isolate](/ddbj/qualifiers-e.html#isolate)
 
-The assebly information is necessary in [ST\_COMMENT](/ddbj/file-format-e.html#describing_st_comment) as a genome entry.
+The assebly information is necessary in [ST_COMMENT](/ddbj/file-format-e.html#describing_st_comment) as a genome entry.
 
 - Assembly Method
 - Genome Coverage
