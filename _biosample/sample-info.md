@@ -62,6 +62,8 @@ FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
 
 ## Sample type  {#Sample-type}
 
+BioSample ではサンプルや配列の種類毎にデザインされた必須・任意属性から構成されるパッケージを提供し、サンプル記載の充実化と属性名の標準化をサポートしています。  
+
 ### Standard {#standard}
 
 [MIxS](#mixs) パッケージの使用が適切ではないサンプルの場合、生物種・サンプル・塩基配列種別に応じた Standard パッケージを使用します。  

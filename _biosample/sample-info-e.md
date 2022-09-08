@@ -61,6 +61,8 @@ FAQ: [How to request data release?](/faq/en/request-release-e.html)
 
 ## Sample type  {#Sample-type}
 
+BioSample supports richer sample description and standardization of sample attributes by providing sample packages designed for each type of sample and sequences.
+
 ### Standard {#standard}
 
 When it is not appropriate to use [MIxS](#mixs), use standard packages according to sample types and organisms.  

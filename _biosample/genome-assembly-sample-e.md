@@ -10,9 +10,10 @@ lang: en
 ## Package {#package}
 
 A [DDBJ genome sequence](/ddbj/mss-e.html) should be linked to one BioProject and one BioSample. This constraint is set by INSDC to manage genome sequences.    
-Submit sample(s) used for genome assembly in following packages.
-- In the case of isolated, cultured prokaryotes: [Cultured Bacterial/Archaeal Genomic Sequences (MIGS.ba)](/biosample/attribute-e.html)
-- In the case of eukaryotes: [Eukaryotic Genomic Sequences (MIGS.eu)](/biosample/attribute-e.html)
+Submit sample(s) used for genome assembly in following packages. When it is not appropriate to use [MIxS](/biosample/sample-info-e.html#mixs), use standard packages according to organisms.  
+
+- In the case of isolated, cultured prokaryotes: [Cultured Bacterial/Archaeal Genomic Sequences (MIGS.ba)](/biosample/attribute-e.html) or [Microbe](/biosample/sample-info-e.html#Sample-type)
+- In the case of eukaryotes: [Eukaryotic Genomic Sequences (MIGS.eu)](/biosample/attribute-e.html) or one of the standard packages for organism, [Model organism or animal](/biosample/sample-info-e.html#Sample-type), [Invertebrate](/biosample/sample-info-e.html#Sample-type) or [Plant](/biosample/sample-info-e.html#Sample-type)
 
 Register a [locus tag prefix](/ddbj/locus_tag-e.html) necessary for an annotated genome submission by entering a prefix in the BioSample locus_tag_prefix attribute.
 

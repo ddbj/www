@@ -580,10 +580,10 @@ values.](#supplement-md5)
   other words, each BioSample must be linked to one or more unique
   data files.
   - In case of fastq files, submit paired reads in separate files. For
-  bam and sff files, paired reads need to be described in single file.
+  bam files, paired reads need to be described in single file.
   - Upload data files directly under a submission directory. Submitted
   archive files should NOT contain any directory structure.
-  - Binary data formats, including BAM, SFF and HDF5 should be submitted without applying any additional compression.
+  - Binary data formats, including BAM and HDF5 should be submitted without applying any additional compression.
 </div>
 
 ### Formats of sequencing data files  {#formats-sequencing-data-files} 
@@ -606,7 +606,7 @@ Platform specific formats
 
 | Format                                           | Platform            | Recommended                      |
 |---|
-| [SFF](#454)                                      | 454 and Ion Torrent | Yes                              |
+| [SFF](#454)                                      | 454 and Ion Torrent | No (please convert to fastq/bam) |
 | [PacBio HDF](#Pacific_Biosciences)               | PacBio              | Yes                              |
 | [SOLiD csfasta/qual](#SOLiD)                     | SOLiD               | No (please convert to fastq/bam) |
 | [Illumina qseq and scarf](#Illumina_Native_Data) | Illumina            | No (please convert to fastq/bam) |
@@ -802,19 +802,7 @@ website](https://www.ncbi.nlm.nih.gov/books/NBK242622/#File_Format_Guide_BK.FAST
 
 ### 454  <a name="454"></a> 
 
-The DRA accepts sequencing run data from the 454 platform in the sff and
-fastq/bam format. These files should reflect the sequencing run setup.
-If a sff file contains data derived from more than one sample, please
-break up resulting fastq file into files contain data from only one
-sample.
-
-The read names found in the *.sff*file are
-meaningful and reflect the addressing scheme for the picotitre plate as
-well as a globally unique run id. Please do not rewrite this name in the
-sff as such addressing information will be lost. The sff file format is
-nearly optimal in terms of footprint, so there is little to be gained by
-further compressing them. Therefore, please provide
-*.sff*files uncompressed.
+The DRA accepts sequencing run data from the 454 platform in the fastq/bam formats. Please convert output sff files to fastq/bam files.
 
 ### Illumina Genome Analyzer  {#Illumina-Genome-Analyzer}
 

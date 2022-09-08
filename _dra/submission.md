@@ -47,10 +47,10 @@ lang: ja
 
 登録者は実際のデータにあわせて柔軟にオブジェクトを構成することができます。
 
-  - [最もシンプルなケース](#ex_simple)
-  - [三つの菌株の比較ゲノム解析 (ペアエンド)](#ex_samples)
-  - [Biological replicate がある場合 (ペアエンド)](#ex_replicates)
-  - [関連するデータが別々の論文に発表される場合](#ex_submissions)
+- [最もシンプルなケース](#ex_simple)
+- [三つの菌株の比較ゲノム解析 (ペアエンド)](#ex_samples)
+- [Biological replicate がある場合 (ペアエンド)](#ex_replicates)
+- [関連するデータが別々の論文に発表される場合](#ex_submissions)
 
 #### 最もシンプルなケース  {#ex_simple}
 
@@ -88,7 +88,6 @@ SRA にデータを登録する際にはこの Center Name が必要です。
 メタデータ作成ツールはアカウント情報から Center Name を自動的に取得します。
 
 <span class="red">Center Name は登録の所有権を示すものではなく、SRA が運用上使用している略称です。所有権は [Submitter](#Area_submitter-submission) に記載される登録者にあります。</span>
-
 
 [Lab Name](#Laboratory_Name)<a name="Laboratory_Name"></a><span class="red">*</span>  
 : 登録者が所属する研究室やグループ名。アカウントに登録されている "Lab/Group"、"Department (2)"、"Department (1)"、"Organization" がカンマで連結されたテキストが初期表示されます。
@@ -149,7 +148,6 @@ SRA にデータを登録する際にはこの Center Name が必要です。
 | SYNTHETIC          | Synthetic DNA.                                                                     |
 | VIRAL RNA          | Viral RNA.                                                                         |
 | OTHER              | Other, unspecified, or unknown library source material.                            |
-
 
 [Library Selection](#Library_Selection)<a name="Library_Selection"></a><span class="red">*</span>  
 : シークエンスに用いたライブラリを構築するためのサンプルの選別や濃縮方法。
@@ -426,9 +424,9 @@ Analysis に含めるデータファイルを選択します。
 - fasta は受け付けていません。最低限 quality score 付きのベース/カラーコールデータが必要です。
 - ファイル名は英数字 [A-Z,a-z,0-9]、アンダースコア [_]、ハイフン [-] とドット [.] のみから構成され、空白文字、カッコ、句読点やシンボルを含まないこと。
 - バーコード配列で由来サンプルが区別されたデータファイルは登録前に分割し、由来サンプルごとに BioSample を作成します。各 BioSample には１つかそれ以上のユニークなデータファイルがリンクされている状態にします。
-- fastq ファイルの場合、ペアリードは別々のファイルとして登録します。bam や sff ファイルの場合、分割する必要はありません。
+- fastq ファイルの場合、ペアリードは別々のファイルとして登録します。bam ファイルの場合、分割する必要はありません。
 - データファイルは登録用ディレクトリの直下に置いてください。基本的に tar などのアーカイブファイルのなかにディレクトリを作成しないでください。
-- BAM、SFF や HDF5 などのバイナリーファイルは圧縮しないでください。
+- BAM や HDF5 などのバイナリーファイルは圧縮しないでください。
 </div>
 
 ### 登録するデータファイルの形式について  {#formats-sequencing-data-files} 
@@ -448,7 +446,7 @@ DRA のメタデータ作成ツールは technical read (アダプター、プ�
 
 | Format                                           | Platform            | Recommended                      |
 |---|
-| [SFF](#r454)                                      | 454 and Ion Torrent | Yes                              |
+| [SFF](#r454)                                      | 454 and Ion Torrent | No (please convert to fastq/bam) |
 | [PacBio HDF](#Pacific_Biosciences)               | PacBio              | Yes                              |
 | [SOLiD csfasta/qual](#SOLiD)                     | SOLiD               | No (please convert to fastq/bam) |
 | [Illumina qseq and scarf](#Illumina_Native_Data) | Illumina            | No (please convert to fastq/bam) |
@@ -592,11 +590,7 @@ fastq の形式。詳しくは[NCBI のサイト](https://www.ncbi.nlm.nih.gov/s
 
 ### 454  {#r454} 
 
-454 からのシークエンスデータは sff ファイル か fastq/bam ファイルで登録します。
-sff ファイル中のリード名は、プレート内の位置情報とユニークな run id を反映した情報を含んでいるので、sff ファイルを書き変えないでください。
-sffファイル形式はすでに最適化されており、ファイルをさらに圧縮する必要はありません。圧縮していない sff ファイルを送付してください。
-sff ファイルに２つ以上のサンプルに由来するデータが含まれている場合は、sff から生成した fastq
-ファイルをサンプルごとに分割して登録してください。
+454 からのシークエンスデータは fastq/bam ファイルで登録します。出力される sff ファイルは fastq/bam に変換したうえで登録してください。
 
 ### Illumina Genome Analyzer  {#Illumina-Genome-Analyzer}
 
