@@ -735,12 +735,10 @@ BioNano データをアセンブルに使用した場合、bnx ファイル、�
 #### [BioProject (Study)](/bioproject/submission.html) {#BioProject_Study}
 
 - 研究プロジェクトの内容
-- 「なぜ」そのサンプルをシークエンスしたのか
 
 #### [BioSample (Sample)](/biosample/submission.html) <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#BioSample_Sample}
 
 - 生物学的、物理的にユニークなサンプル
-- 「何を」シークエンスしたのか
 
 <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv">メタデータをタブ区切りテキストファイルで登録できます
 
@@ -749,7 +747,6 @@ BioNano データをアセンブルに使用した場合、bnx ファイル、�
 #### DRA Experiment <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#DRA_Experiment}
 
 - 特定のサンプルから構築したライブラリーについての説明
-- 「どのように」シークエンスをしたのか
 - 複数の Experiment は一つの Sample を参照できるが、逆はできない
 
 #### DRA Run <img src="/assets/images/parts/tsv.png" alt="" title="" class="tsv"> {#DRA_Run}
@@ -770,7 +767,7 @@ BioNano データをアセンブルに使用した場合、bnx ファイル、�
 
 ### 登録アカウント  {#submission-account}
 
-[日本 DNA データバンク (DDBJ) センター](/index.html) は [BioProject](/bioproject/index.html) 、[BioSample](/biosample/index.html) と [DRA](/dra/index.html) への登録をユーザアカウントで管理しています。
+[DDBJ センター](/index.html) は [BioProject](/bioproject/index.html) 、[BioSample](/biosample/index.html) と [DRA](/dra/index.html) への登録をユーザアカウントで管理しています。
 
 [登録アカウントマニュアル](/account.html)に従い、登録アカウントを取得し、DRA 登録権限をアカウントに追加します。
 
@@ -876,40 +873,9 @@ Study と Sample タブ画面が表示されない場合、Edge や Firefox で�
 
 {% include image.html url="books/hdra-bp01.jpg" caption="BioProject の新規登録、もしくは選択" class="w450" %}
 
-BioProject を新規登録する場合は左のタブから順番に内容を英語で入力していきます。二段目が BioProject になります。登録者などの情報は DRA Submission で入力した内容が引き写されます。
+BioProject を新規登録する場合は左のタブから順番に内容を英語で入力していきます。登録者などの情報は DRA Submission で入力した内容が引き写されます。  
 
-各項目の説明は [BioProject Handbook](/bioproject/submission.html#metadata) を参照してください。
-
-{% include image.html url="books/hdra-bp02.jpg" caption="BioProject の新規登録" class="w450" %}
-
-個人識別符号に該当するデータを DRA/GEA/DDBJ へ登録するためには、
-[NBDC ヒトデータ審査委員会事務局に登録予定データの提供申請書を提出](/policies.html#unrestricted-access)し、承認されている必要があります。    
-承認されている場合、BioProject の「Private comments to DDBJ staff」に提供申請 ID (例 J-DS000001-001) を記入します。
-
-{% include image.html url="books/bp-nbdc-approval.jpg" caption="NBDC 提供申請 ID の記入" class="w450" %}
-
-
-ゲノムをアセンブルするプロジェクトでは、アセンブリに対してユニークな [Locus tag prefix](/ddbj/locus_tag.html) が必要です。
-
-[Project data type="Genome Sequencing" or "Metagenome"] AND [Capture="Whole"] AND  
-[Objective="Sequence" or "Annotation" or "Assembly"] で Locus tag prefix 入力ボックスが現れます。
-
-プレフィックスには３-12文字の英数字のみを含めることができます。先頭は英文字にします。数字は２文字目以降で使用できます (例: A1C)。
-シンボル (-_*) を含めることはできません。プレフィックスとタグの値はアンダースコア '_' で区切ります (例: A1C_00001)。
-
-[WGS](/ddbj/wgs.html) の登録のみで prefix を使用しない場合は入力欄を空にしてください。
-
-prefix は NCBI が一括管理しています。プロジェクトを投稿する段階で、NCBI に prefix を予約しにいきます。予約済みの場合はエラーになるので、再度希望する prefix を入力して投稿します。
-
-<div class="attention">
-複数の prefix の取得を希望する場合は <a href="/contact-ddbj.html">DRA チームに連絡します</a>。
-</div>
-
-{% include image.html url="books/hdra-bpltag.jpg" caption="Locus tag prefix の取得" class="w450" %}
-
-最後の "OVERVIEW" で内容を確認したうえで \[Submit BioProject\] をクリックして投稿します。
-
-{% include image.html url="books/hdra-bp03.jpg" caption="BioProject の投稿" class="w450" %}
+BioProject の登録方法は「[プロジェクトの登録](/bioproject/submission.html)」を参照してください。
 
 BioProject を投稿した後、Study では投稿したプロジェクトが選択されている状態になります。
 
@@ -917,19 +883,10 @@ BioProject を投稿した後、Study では投稿したプロジェクトが選
 
 #### Sample  {#sample}
 
-<div class="attention">
-Study と Sample タブ画面が表示されない場合、Edge や Firefox で開くと表示されるようになる場合があります。
-</div>
-
 [register sample(s)] でサンプルを新規に登録するか、もしくは、自身のアカウントで作成した BioSample 一覧から、該当するものを全て選択します。
 
 一つのチェックボックスを選択し、続いて Shift キーを押しながら次のボックスをクリックすると、サンプルが範囲選択されます。
-また、カラム上部のボックスにテキストを入力しサンプルを絞った状態で [Select filtered
-BioSamples] をクリックすると、フィルターされたサンプルが全て選択されます。
-
-<div class="attention">
-1 submission で登録できるサンプル数の上限は約 1,000 になります。
-</div>
+また、カラム上部のボックスにテキストを入力しサンプルを絞った状態で [Select filtered BioSamples] をクリックすると、フィルターされたサンプルが全て選択されます。
 
 自身のアカウント以外で取得された BioSample を参照したい場合は [DRA チームに連絡してください](/contact-ddbj.html)。
 
@@ -937,47 +894,7 @@ BioSamples] をクリックすると、フィルターされたサンプルが�
 
 BioSample を新規登録する場合は左のタブから順番に内容を英語で入力していきます。二段目が BioSample になります。登録者などの情報は DRA Submission で入力した内容が引き写されます。
 
-各項目の説明は[サンプル情報](/biosample/sample-info.html)を参照してください。
-
-{% include image.html url="books/hdra-bs02.jpg" caption="BioSample の新規登録" class="w450" %}
-
-"SAMPLE TYPE" でサンプルパッケージを選択します。
-
-パッケージについては[サンプル情報](/biosample/sample-info.html#Sample_type)を参照してください。
-
-{% include image.html url="books/hdra-bs03.jpg" caption="Sample type の選択" class="w450" %}
-
-パッケージに応じた属性入力用テンプレートファイルをダウンロードします。
-
-必須・任意・ユーザが定義した一連の属性でサンプルを記述します。
-
-[BioSample 属性の説明](/biosample/attribute.html)。独自の属性を追加したい場合は、右端に属性名と値を追加します。
-ヒト由来サンプルについては [Human Sample](/biosample/human-sample.html) も参照してください。
-
-[サンプル属性ファイルの記入例](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482)
-
-ファイルはタブで区切られているので、エクセルなどの表計算ソフトで編集することができます。一行目には属性名が記載されています。* が必須属性です。
-
-二行目以降に１行１サンプルで入力していきます。BioProject アクセッション番号が発行されていないプロジェクトの場合 [bioproject_id](/biosample/attribute.html?all=all#bioproject_id) には PSUB 番号を入力します。値がない属性には、適宜 "missing" や "not applicable" などを記入します。
-
-Biological replicate は別々の BioSample として登録します。登録に必要なサンプル数は [FAQ: 塩基配列登録にはいくつのサンプルが必要ですか?](/faq/ja/samples-for-sra)
-を参照してください。
-
-{% include image.html url="books/hdra-bs04.jpg" caption="サンプル属性テンプレートファイルのダウンロード" class="w450" %}
-
-サンプル属性ファイルを選択して Continue をクリックすると validator がルールに基づいてアップロードされたファイルをチェックします。Error や Warning メッセージが表示された場合は必要に応じて内容を修正して再度アップロードします。Error が解消されない限り次のタブに進んで内容を submit することはできません。
-
-Validation ルールとメッセージについては [Validation rules ページ](/biosample/validation.html)をご覧ください。
-
-{% include image.html url="books/hdra-bs04-2.jpg" caption="BioSample の validation。この例では「sample genome bacteria strain C」の collection_date に将来の日付が記入されているエラーと geo_loc_name 中の国名と緯度経度が一致していない warning が表示されています。" class="w500" %}
-
-最後の "OVERVIEW" で内容を確認したうえで投稿します。"ATTRIBUTES" で属性ファイルをダウンロードすることができます。
-
-<div class="attention">
-登録後は最新の属性ファイルをダウンロードすることができます。
-</div>
-
-{% include image.html url="books/hdra-bs05.jpg" caption="BioSample の投稿" class="w450"%}
+BioSample の登録方法は「[サンプルの登録](/biosample/submission.html)」を参照してください。
 
 BioSample を投稿した後、Sample では投稿したサンプルが選択されている状態になります。
 

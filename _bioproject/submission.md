@@ -49,6 +49,12 @@ prefix は NCBI が一括管理しています。プロジェクトを投稿す�
 
 {% include image.html url="books/hbp-03.jpg" caption="Locus tag prefix の取得" class="w450" %}
 
+個人識別符号に該当するデータを DRA/GEA/DDBJ へ登録するためには、
+[NBDC ヒトデータ審査委員会事務局に登録予定データの提供申請書を提出](/policies.html#unrestricted-access)し、承認されている必要があります。    
+承認されている場合、BioProject の「Private comments to DDBJ staff」に提供申請 ID (例 J-DS000001-001) を記入します。
+
+{% include image.html url="books/bp-nbdc-approval.jpg" caption="NBDC 提供申請 ID の記入" class="w450" %}
+
 最後の "OVERVIEW" で内容を確認したうえで \[Submit\] をクリックして投稿します。
 
 {% include image.html url="books/hbp-04.jpg" caption="BioProject の投稿" class="w450" %}

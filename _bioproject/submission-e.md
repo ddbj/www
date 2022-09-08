@@ -59,6 +59,10 @@ When multiple prefixes are necessary, please [register prefixes in BioSample](/b
 
 {% include image.html url="books/hbp-03.jpg" caption="Reserve a locus tag prefix" class="w450" %}
 
+To submit data corresponding to personal identification code to DRA/GEA/DDBJ, [your data submission application needs to be approved by NBDC before the submission](/policies-e.html#unrestricted-access). If your application was approved, write the NBDC application ID (for example, J-DS000001-001) in "Private comments to DDBJ staff" of BioProject.
+
+{% include image.html url="books/bp-nbdc-approval.jpg" caption="NBDC data submission application ID" class="w450" %}
+
 Check the content in "OVERVIEW" and submit a project by clicking the \[Submit\].
 
 {% include image.html url="books/hbp-04.jpg" caption="Submit BioProject" class="w450" %}

@@ -14,7 +14,7 @@ lang: ja
 [MIxS](/biosample/sample-info.html#mixs) パッケージの使用が適切ではないサンプルの場合、生物種に応じた Standard パッケージを使用します。  
 
 - 単離培養された原核生物の場合: [Cultured Bacterial/Archaeal Genomic Sequences (MIGS.ba)](/biosample/sample-info.html#Sample-type)、もしくは、[Microbe](/biosample/sample-info.html#Sample-type)
-- 真核生物の場合: [Eukaryotic Genomic Sequences (MIGS.eu)](/biosample/sample-info.html#Sample-type)、もしくは、生物種に応じた Standard パッケージの [Model organism or animal](/biosample/sample-info.html#Sample-type)、[Invertebrate](/biosample/sample-info.html#Sample-type) もしくは [Plant](/biosample/sample-info.html#Sample-type)
+- 真核生物の場合: [Eukaryotic Genomic Sequences (MIGS.eu)](/biosample/sample-info.html#Sample-type)、もしくは、生物種に応じた Standard パッケージの [Model organism or animal](/biosample/sample-info.html#Sample-type)、[Invertebrate](/biosample/sample-info.html#Sample-type)、[Plant](/biosample/sample-info.html#Sample-type)
 
 アノテーションが付与されたゲノム配列を [DDBJ](/ddbj/mss.html) に登録する場合、locus_tag_prefix 属性に記載して [Locus tag prefix](/ddbj/locus_tag.html) を取得します。
 
