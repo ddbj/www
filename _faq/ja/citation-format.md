@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: 投稿論文にアクセッション番号を記載するときのフォーマットはありますか？
+title: 投稿論文に DRA アクセッション番号を記載するときのフォーマットはありますか？
 category: faq
 db:
   - dra

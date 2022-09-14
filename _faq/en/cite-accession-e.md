@@ -8,46 +8,47 @@ db:
   - ddbj
   - dra
   - gea
+  - metabobank
 tags: 
   - Accession number
 date: 2021-05-24T11:59:04
 lang: en
 ---
 
-Please cite the accession numbers that are assigned to your data submissions, e.g. the DDBJ nucleotide sequence or DRA Run accession numbers.
-
-## DRA {#dra}
-
-A DRA submission is composed of following objects with unique prefix. 
-
-- **Submission**: DRA
-- **BioProject (Study)**: PRJD
-- **Experiment**: DRX
-- **BioSample (Sample)**: SAMD
-- **Run**: DRR
-- **Analysis**: DRZ
-
-{% include image.html url="books/sra_object.png" caption="Metadata objects" class="w450" %}
-
-Please cite accession number(s) of objects you want to refer in your publication.  
-We recommend to cite the DRR Run accession numbers.
+Please cite accession numbers according to journal instructions.  
+It is recommended to cite accession numbers assigned to your data submissions, e.g. the DDBJ nucleotide sequence or DRA Run accession numbers.  
+Citing BioProject and BioSample accession numbers only is not recommended.  
 
 ## DDBJ {#ddbj}
 
 Cite accession number(s) assigned to nucleotide sequence(s).    
 [Prefix Letter List](/prefix-e.html)
 
+## DRA {#dra}
+
+Cite Run accession number(s) (prefix DRR) assigned to sequence reads.  
+[Metadata](/dra/metadata-e.html)
+
 ## GEA {#gea}
 
 Cite Experiment accession "E-GEAD-n".  
 [GEA Accession](/gea/overview-e.html#acc)
 
+## MetaboBank {#metabobank}
+
+Cite Study accession "MTBKSn".  
+[MetaboBank Accession](/metabobank/submission-e.html#accession)
+
 ## BioProject {#bioproject}
 
-[Please avoid citing only BioProject accession](/faq/en/project-accession-e.html).
+Citing only BioProject accession is not recommended.  
+If an individual BioProject needs to be referenced, state that "The data have been deposited with links to BioProject accession number PRJDBxxxxxx in the DDBJ BioProject database." along with the accession numbers assigned to the data submissions.
 
 ## BioSample {#biosample}
 
-Please avoid citing only BioSample accession.
+Citing only BioSample accession is not recommended.  
+If an individual BioSample needs to be referenced, state that "BioSample metadata are available in the DDBJ BioSample database under accession number SAMDxxxxxxxx".
+
+
 
 

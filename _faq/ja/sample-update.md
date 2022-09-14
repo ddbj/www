@@ -10,7 +10,5 @@ date: 2015-10-13T15:46:25
 lang: ja
 ---
 
-現在のところ，プロジェクトの更新や削除は [BioSample チームに連絡](/contact-ddbj.html)する必要があります。
-
-BioSample が更新されても，D-way の Overview 画面は更新されないことにご注意ください。    
-Overview 画面は初回投稿時の内容を表示しており，BioSample データベースになされた変更を反映しません。
+サンプルの更新や削除は [BioSample チームに連絡](/contact-ddbj.html)する必要があります。  
+BioSample が更新されると、D-way サンプル登録画面 ATTRIBUTES の[属性ファイル](/submission.html#update-biosample) (例 SSUB000001.txt) に反映されるので、ダウンロードして更新内容を確認することができます。

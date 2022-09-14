@@ -8,8 +8,8 @@ related_pages:
     url: /documents/data-categories.html
   - title: 国際塩基配列データベースのアクセッション番号
     url: /documents/accessions.html
-  - title: データ公開原則
-    url: /documents/data-release-policy.html
+  - title: 利用規約
+    url: /policies.html
 ---
 
 ## For conventional sequence data (two or one letter)  {#gen}
@@ -424,7 +424,7 @@ DAAAAA-DZZZZZ  GenBank      TPA assemble WGS
 JAAAAA-JZZZZZ  GenBank      general WGS 
 ```
 
-## For protein\_id  {#protein}
+## For protein_id  {#protein}
 
 ```
 AAA-AZZ     GenBank 
@@ -474,8 +474,6 @@ SRS     NCBI       Sample object
 SRX     NCBI       Experiment object
 SRZ     NCBI       Analysis object
 ```
-
-See also [DRA metadata outline](/dra/submission.html#metadata)
 
 ## For BioProject  {#project}
 

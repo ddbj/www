@@ -1,11 +1,13 @@
 ---
 layout: simple
-title: BioProject/BioSample/塩基配列データの連動公開の仕組みは？
+title: BioProject/BioSample/実験データの連動公開の仕組みは？
 category: faq
 db:
   - bioproject
   - biosample
   - dra
+  - gea
+  - metabobank
 tags: 
   - データの公開
 date: 2014-12-15T11:16:30

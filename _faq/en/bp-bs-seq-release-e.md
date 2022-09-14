@@ -1,11 +1,13 @@
 ---
 layout: simple
-title: How are linked BioProject/BioSample/sequence data released?
+title: How are linked BioProject/BioSample/experimental data released?
 category: faq
 db:
   - bioproject
   - biosample
   - dra
+  - gea
+  - metabobank
 tags: 
   - Data release
 date: 2014-12-15T11:41:03
@@ -22,8 +24,8 @@ Linked [BioProject](/bioproject/index-e.html),
 
 <p class="attention">All metadata and sequencing data in a DRA submission are released at once.</p>
 
-<figure><a href="{{ site.baseurl }}/assets/images/books/bp-bs-seq_release.jpg" title="Release of linked BioProject/BioSample/sequence records"><img src="{{ site.baseurl }}/assets/images/books/bp-bs-seq_release.jpg" alt="Release of linked BioProject/BioSample/sequence records" title="Release of linked BioProject/BioSample/sequence records" class="w450"></a>
-  <figcaption class="caption">Release of linked BioProject/BioSample/sequence records</figcaption>
+<figure><a href="{{ site.baseurl }}/assets/images/books/bp-bs-seq_release.jpg" title="Release of linked BioProject/BioSample/experimental data"><img src="{{ site.baseurl }}/assets/images/books/bp-bs-seq_release.jpg" alt="Release of linked BioProject/BioSample/experimental data" title="Release of linked BioProject/BioSample/experimental data" class="w450"></a>
+  <figcaption class="caption">Release of linked BioProject/BioSample/experimental data</figcaption>
 </figure>
 
 DRA Handbook: [Release of DRA](/dra/submission.html#data-release)  

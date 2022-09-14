@@ -5,6 +5,7 @@ category: faq
 db:
   - bioproject
   - biosample
+  - ddbj
   - dra
 tags: 
   - Update
@@ -12,20 +13,20 @@ date: 2014-01-23T11:22:22
 lang: en
 ---
 
-[DDBJ Sequence Database](/ddbj/submission.html)  
-: See the relevant item in [Data Updates/Corrections](/ddbj/update-e.html) and contact us from [this form](/ddbj/update-form-e.html) with "Our paper was published" in \[Subject\].
+DDBJ
+: See [Data Updates/Corrections](/ddbj/update-e.html) and contact us from the [contact form](/ddbj/update-form-e.html) with "Our paper was published" in the subject.
 
-[DRA](/dra/index-e.html)  
-: Add publication information to the [BioProject referenced by relevant DRA submission](/dra/submission-e.html#metadata). Contact [BioProject team to add publication](/contact-ddbj-e.html).
+DRA
+: Add the publication ID, Pubmed ID (recommended) or DOI, to the BioProject referenced by the DRA submission. Contact the [BioProject team](/contact-ddbj-e.html) to add the publication ID.
 
-[BioProject](/bioproject/index-e.html)  
-: Contact [BioProject team to add publication information](/contact-ddbj-e.html). Basically, [citation of the BioProject accession is not recommended](project-accession-e.html).
+GEA
+: Add the publication ID, Pubmed ID (recommended) or DOI, to the GEA metadata [IDF](/gea/metadata-e.html#PubMed_ID) by contacting the [GEA team](/contact-ddbj-e.html).
 
-[BioSample](/biosample/index-e.html)  
-: When sequencing data derived from relevant samples are deposited in DDBJ Sequence Database and DRA, please add publication information as described above.
-    
-For a publication about isolation and growth condition specifications of the organism/material, add pubmed id etc to [isol\_growth\_condt](/biosample/attribute-e.html?all=all#isol_growth_condt).
-For a primary genome report, please add the relevant pubmed id etc to [ref\_biomaterial](/biosample/attribute-e.html?all=all#ref_biomaterial).
-    
-If you want to add publication of the other types, please [contact BioSample team](/contact-ddbj-e.html).
+MetaboBank
+: Add the publication ID, Pubmed ID (recommended) or DOI, to the GEA MetaboBank [IDF](/metabobank/metadata-e.html#idf) by contacting the [MetaboBank team](/contact-ddbj-e.html).
 
+BioProject
+: Contact [BioProject team](/contact-ddbj-e.html) to add publication information.
+
+BioSample
+: If experimental data obtained from samples registered to BioSample, add publication information as above.

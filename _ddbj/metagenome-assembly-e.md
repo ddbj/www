@@ -78,7 +78,7 @@ Same as (1) Raw reads.
 #### DRA  {#primary-metagenome-dra}
 
 Submit assembled contigs derived from the raw sequence data in fasta/bam
-files to the [DRA Analysis](/dra/submission-e.html#Analysis_Type)
+files to the [DRA Analysis](/dra/metadata-e.html#Analysis_Type)
 (Analysis type = 'De Novo Assembly'). Submit the Analysis along with the
 Run registered in (1). Please note that Analysis data are not shared with NCBI/ENA. 
 Analysis is not indexed by [DDBJ Search](https://ddbj.nig.ac.jp/search). Only analysis metadata XML and data files are provided in ftp. (For example, [DRZ000001](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA000/DRA000072/).
@@ -117,7 +117,7 @@ derived_from: SAMD00000002,SAMD00000003,SAMD00000010-SAMD00000015
 
 Submit binned metagenome assemblies derived from the raw sequence data
 in fasta/bam files to the [DRA
-Analysis](/dra/submission-e.html#Analysis_Type) (Analysis type = 'De
+Analysis](/dra/metadata-e.html#Analysis_Type) (Analysis type = 'De
 Novo Assembly'). 
 
 Include information of target BioSample accession, analysis software used and　assembly quality metrics in the description.  
@@ -180,15 +180,12 @@ through the [Mass Submission System (MSS)](/ddbj/mss-e.html).
 Following [Qualifier](/ddbj/qualifiers-e.html) of [source feature](/ddbj/features-e.html#source) are required for the MAG submission.
 
 Required for the MAG entry.
-- /metagenome\_source = 'xyz metagenome' ('xyz metagenome' should
-  be from this list of [metagenome organism
-  names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/)
-  in the taxonomy database).
+- /metagenome_source = 'xyz metagenome' ('xyz metagenome' should be from this list of [metagenome organism names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/) in the taxonomy database).
 
 Required for the ENV division entry.
 
-- [/environmental\_sample](/ddbj/qualifiers-e.html#environmental_sample)
-- [/isolation\_source](/ddbj/qualifiers-e.html#isolation_source)
+- [/environmental_sample](/ddbj/qualifiers-e.html#environmental_sample)
+- [/isolation_source](/ddbj/qualifiers-e.html#isolation_source)
 - [/isolate](/ddbj/qualifiers-e.html#isolate)
 
 The assebly information is necessary in [ST_COMMENT](/ddbj/file-format-e.html#describing_st_comment) as a genome entry.

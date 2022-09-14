@@ -168,8 +168,7 @@ lang: ja
 <h3 id="data-type">データ種別毎のサンプル登録</h3>
 
 <ul>
-  <li><a href="/biosample/genome-assembly-sample.html">ゲノムアセンブリ用サンプル</a></li>
-  <li><a href="/ddbj/metagenome-assembly.html">Metagenome Assembly</a></li>
+  <li><a href="/biosample/genome-assembly-sample.html">ゲノムアセンブリ (含 メタゲノムアセンブリ) 用サンプル</a></li>
   <li><a href="/ddbj/single-amplified-genome.html">Single amplified genome</a></li>
   <li><a href="/ddbj/pseudohaplotype.html">Pseudohaplotype</a></li>
   <li><a href="/biosample/human-sample.html">Human Sample</a></li>

@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: How should I cite accession numbers in publications?
+title: How should I cite DRA accession numbers in publications?
 category: faq
 db:
   - dra

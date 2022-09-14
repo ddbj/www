@@ -40,7 +40,7 @@ lang: ja
 "Hold" か "Release" のどちらかを選びます。公開予定日を指定することはできません。データ公開の仕組みについては[プロジェクトの公開](/bioproject/overview.html#release)をご覧ください。
 
 [Hold](#BioProject_Hold)<a name="BioProject_Hold"></a>  
-: この BioProject アクセッション番号を引用している DDBJ/DRA/GEA/MetaboBank　データが公開されたときに同時に公開されます。
+: この BioProject アクセッション番号を引用している DDBJ/DRA/GEA/MetaboBank データが公開されたときに同時に公開されます。
 
 [Release](#BioProject_Release)<a name="BioProject_Release"></a>  
 : プロジェクトデータを即日公開する。この BioProject アクセッション番号を引用している非公開の DDBJ/DRA/GEA/MetaboBank データが公開されることはありません。
@@ -53,7 +53,7 @@ lang: ja
 
 [Project title](#Project_title)<span class="red">\*</span><a name="Project_title"></a>  
 : プロジェクトの内容を表す短いタイトル。このタイトルは公開されたプロジェクトのタイトルとして使われます。  
-例: Chromosome Y sequencing、Global studies of microbial diversity on human skin.
+例: Chromosome Y sequencing, Global studies of microbial diversity on human skin.
 
 [Description](#Public_description)<span class="red">\*</span><a name="Public_description"></a>  
 : 研究対象やゴールに関する記載。第三者がデータを解釈することができるように十分な量 (100 文字以上) の情報を記入します。
@@ -501,7 +501,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 <Publication id="15557739">
   <DbType>ePubmed</DbType>
 </Publication>
-<ProjectReleaseDate> ...
+<ProjectReleaseDate>
 ```
 
 [DOI](#BioProject_DOI)<a name="BioProject_DOI"></a>  
@@ -511,7 +511,7 @@ Target の Sample scope="Environment" のときに [Organism information](#BioPr
 <Publication id="10.1093/nar/gku1120">
   <DbType>eDOI</DbType>
 </Publication>
-<ProjectReleaseDate> ...
+<ProjectReleaseDate>
 ```
 
 [Reference title](#BioProject_Reference_title)<span class="red">\*</span><a name="BioProject_Reference_title"></a>  

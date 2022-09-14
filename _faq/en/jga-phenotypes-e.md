@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: Are there any required variables/phenotypes that need to be included?
+title: Are there any required variables/phenotypes that need to be included in JGA samples?
 category: faq
 db:
   - jga

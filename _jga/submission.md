@@ -119,7 +119,7 @@ Analysis は複数の Data もしくは Sample を参照することができる
 
 ## メタデータ {#metadata}
 
-JGA データモデルは [Sequence Read Archive](/dra/submission.html) のモデルを拡張してつくられています。JGA メタデータは XML オブジェクトで構成されています。
+JGA データモデルは [Sequence Read Archive](/dra/metadata.html) のモデルを拡張してつくられています。JGA メタデータは XML オブジェクトで構成されています。
 
 JGA XML schema: [JGA xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 

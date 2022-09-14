@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: 論文に DDBJ を利用したことについて謝辞を記載したいと思います。書式を教えてください。
+title: DDBJ サービス利用に対する謝辞の論文での記載方法は？
 category: faq
 db:
   - ddbj
@@ -10,9 +10,4 @@ date: 2017-06-26T17:03:07
 lang: ja
 ---
 
-DDBJ のデータベースや検索・解析ツールを利用して得られた成果を発表される際、よろしければ、[論文の引用](/faq/ja/ddbj-cited-article.html)をお願いいたします。<br>論文の引用には相当しないとお考えの場合、以下の例文の内容を謝辞などにてご記載いただければ幸いです。<br>文章のつながりから改変することはかまいません。
-
----
-
-日本語：本研究は、DDBJ（DNA Data Bank of Japan）の [データベース、検索・解析ツール名]を利用しました。<br>英　語：This research was performed using "name of DDBJ Service, analytical tools".
----
+[利用規約の該当箇所](/policies.html#credit-for-service)をご覧ください。

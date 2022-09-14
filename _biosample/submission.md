@@ -37,7 +37,7 @@ BioSample を新規登録する場合は左のタブから順番に内容を英�
 "SAMPLE TYPE" でサンプルや配列種別に応じたパッケージを選択し、提示される必須・任意のサンプル属性の値を入力します。
 
 * パッケージの選び方は[サンプル情報](/biosample/sample-info.html#Sample-type)を参照してください。
-* パッケージで提供されるサンプル属性は[サンプル属性](/biosample/attribute.html)を参照してください。
+* パッケージで提供される属性は[サンプル属性](/biosample/attribute.html)を参照してください。
 * BioSample では１つの Submission で複数サンプルをまとめて登録することができますが、パッケージが異なるサンプルを混ぜることはできません。
 
 {% include image.html url="books/hbs-03.jpg" caption="パッケージの選択" class="w450" %}
@@ -147,10 +147,11 @@ D-way から validation を通過したサンプルが投稿されると自動�
 - BioSample アクセッション番号を引用しているデータと同時に公開
 
 登録した Sample データは一定期間非公開にすることができます。DDBJ/DRA/GEA/MetaboBank データが公開されると、引用されている BioSample データは自動的に公開されます。
-この BioSample アクセッション番号を引用している非公開の DDBJ/DRA/GEA/MetaboBank データが公開されることはありません。derived_from 属性で引用されている BioSample は連動公開されます。
+BioSample が公開されても、引用している非公開の DDBJ/DRA/GEA/MetaboBank データの公開を引き起こしません。derived_from 属性で引用されている BioSample は連動公開されます。
 
 FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp-bs-seq-release.html)
 
 ## サンプルの更新  {#update-biosample}
 
-登録が完了したデータを更新することができます。[メッセージフォーム](/contact-ddbj.html)からご連絡ください。
+登録が完了したデータを更新することができます。[メッセージフォーム](/contact-ddbj.html)からご連絡ください。  
+更新されると、サンプル登録画面 ATTRIBUTES の属性ファイル (例 SSUB000001.txt) に反映されるので、ダウンロードして更新内容を確認することができます。

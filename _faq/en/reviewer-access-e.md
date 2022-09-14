@@ -14,7 +14,7 @@ date: 2020-12-10T18:14:34
 lang: en
 ---
 
-By using [the GEA reviewer access](/gea/reviewer-access-e.html), you can provide metadata, microarray data and NGS processed data to reviewers.
+By using the [GEA reviewer access](/gea/reviewer-access-e.html), you can provide metadata, microarray data and NGS processed data to reviewers.
 
 Reviewer access services are not available in [DRA](/dra/index-e.html), [DDBJ](/ddbj/index-e.html) and [JGA](/jga/index-e.html).
 
@@ -24,4 +24,4 @@ For DRA, you may send a metadata summary list attached to the accession number n
 
 For JGA, we can not offer the reviewer access service due to [the policy](https://humandbs.biosciencedbc.jp/faq#faq-20).
 
-For open-access GEA/DRA/DDBJ, if you make your data public, all users including reviewers can access the data.
+For open-access GEA/DRA/DDBJ/MetaboBank, if you make your data public, all users including reviewers can access the data.

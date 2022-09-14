@@ -8,14 +8,16 @@ db:
   - biosample
   - dra
   - gea
+  - metabobank
 tags: 
   - データの公開
 date: 2021-05-25T18:14:34
 lang: ja
 ---
 
-データ公開を希望する場合、DDBJ/DRA/GEA データに対するアクセッション番号で公開対象を指定します。BioProject アクセッション番号のみが指定された場合、当該 BioProject のみが公開され、関連データは公開されません。同様に BioSample アクセッション番号のみが指定された場合、当該 BioSample のみが公開され、関連データは公開されません。    
-DDBJ/DRA/GEA データが公開されると、参照されている BioProject と BioSample は連動して公開されます。FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp-bs-seq-release.html)
+データ公開を希望する場合、DDBJ/DRA/GEA/MetaboBank データに対するアクセッション番号で公開対象を指定します。BioProject アクセッション番号のみが指定された場合、当該 BioProject のみが公開され、関連データは公開されません。同様に BioSample アクセッション番号のみが指定された場合、当該 BioSample のみが公開され、関連データは公開されません。    
+DDBJ/DRA/GEA/MetaboBank データが公開されると、参照されている BioProject と BioSample は連動して公開されます。  
+FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp-bs-seq-release.html)
 
 ## DDBJ {#ddbj}
 
@@ -28,6 +30,10 @@ D-way にログインし、[登録者自身で DRA データを公開](/dra/subm
 ## GEA {#gea}
 
 公開を希望する GEA の Experiment アクセッション番号 (E-GEAD-n) もしくは Submission ID (例 ESUB000001) を[お問い合わせフォーム](/contact-ddbj.html)からお知らせください。
+
+## MetaboBank {#metabobank}
+
+公開を希望する MetaboBank の Study アクセッション番号 (MTBKSn) を[お問い合わせフォーム](/contact-ddbj.html)からお知らせください。
 
 ## BioProject {#bioproject}
 

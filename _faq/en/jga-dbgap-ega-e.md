@@ -11,4 +11,3 @@ lang: en
 ---
 
 [DDBJ JGA](/jga/index-e.html) / [NCBI dbGaP](https://www.ncbi.nlm.nih.gov/gap) / [EBI EGA](https://www.ebi.ac.uk/ega) do not exchange data.    
-However, summary metadata of dbGaP and EGA are indexed by the omics metadata cross search system "[EBI Omics DI](https://www.omicsdi.org/database)". The JGA summary metadata will be indexed by Omics DI.

@@ -13,5 +13,4 @@ lang: en
 When there are many Experiment and Run objects, create metadata XMLs by
 using the excel for the DRA metadata and the XML generator. The metadata
 can be registered by uploading the Submission/Experiment/Run XMLs in
-D-way. Please see [the GitHub
-page](https://github.com/ddbj/submission-excel2xml) for details.
+D-way. Please see [Submit metadata by the excel](/dra/submission-e.html#metadata-excel) for details.

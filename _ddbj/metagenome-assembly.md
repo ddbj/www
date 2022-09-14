@@ -13,7 +13,7 @@ lang: ja
 (1) アセンブル前の NGS 生リード    
 (2) 分類群が未同定のアセンブルされたコンティグ配列（プライマリーメタゲノム）    
 (3) Binning され既知の分類群に帰属されたアセンブリ配列（Binned メタゲノム）    
-(4) 単一の分類群に帰属された Binned     アセンブリ配列の中で、分類群を代表する、配列の完成度・コンタミネーション割合といった指標が最も高品質なアセンブリ配列（Metagenome-Assembled Genome、MAG）
+(4) 単一の分類群に帰属された Binned アセンブリ配列の中で、分類群を代表する、配列の完成度・コンタミネーション割合といった指標が最も高品質なアセンブリ配列（Metagenome-Assembled Genome、MAG）
 
 DDBJ センターにおいて (1)-(3) は DRA で、(4) は DDBJ で受付けています。MAG 配列の品質に関しては[こちらの文献](https://www.nature.com/articles/nbt.3893)を参照してください。        
 配列が由来するサンプル情報に関して、(1)-(2) はメタゲノムサンプルを、(3) と (4) はメタゲノムサンプルから派生した Binned と MAG サンプルをそれぞれ BioSample に登録します。    
@@ -33,15 +33,13 @@ DRA への生データの登録は原則として必須です。
 #### BioProject  {#raw-reads-bioproject}
 
 [メタゲノム/環境サンプルプロジェクト](/bioproject/project-info.html#Project-type)として登録します。
-生物名は [metagenome organism
-names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/)
+生物名は [metagenome organism names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/)
 から適切なものを選び、"xyz metagenome" (例 soil metagenome) を記載します。
 
 #### BioSample  {#raw-reads-biosample}
 
 [MIxS MIMS.me](/biosample/sample-info.html#mixs) パッケージを選択します。
-メタゲノムサンプルの場合、生物名は [metagenome organism
-names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/)
+メタゲノムサンプルの場合、生物名は [metagenome organism names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/)
 から適切なものを選び、"xyz metagenome" (例 soil metagenome)
 を記載します。サンプルに関する詳細情報を記載します。
 
@@ -63,7 +61,7 @@ names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=40
 
 #### DRA  {#primary-metagenome-dra}
 
-DRA に登録する場合、プライマリーメタゲノム配列を fasta/bam ファイルで [DRA Analysis](/dra/submission.html#Analysis_Type)（Analysis type = "De Novo Assembly"）に登録します。(1) の生リードが登録された [DRA Run とセットで Analysis を登録](/dra/submission.html#analysis)します。    
+DRA に登録する場合、プライマリーメタゲノム配列を fasta/bam ファイルで [DRA Analysis](/dra/metadata.html#Analysis_Type)（Analysis type = "De Novo Assembly"）に登録します。(1) の生リードが登録された [DRA Run とセットで Analysis を登録](/dra/submission.html#analysis)します。    
 Analysis は ENA/NCBI と共有されません。また、[DDBJ Search](https://ddbj.nig.ac.jp/search) でインデックスされず、ftp でメタデータ XML とデータファイルが公開されるのみとなります（例 [DRZ000001](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA000/DRA000072/)）。
 
 ### (3) Binned メタゲノム {#binned-metagenome}
@@ -96,7 +94,7 @@ derived_from: SAMD00000002,SAMD00000003,SAMD00000010-SAMD00000015　　　
 
 #### DRA  {#binned-metagenome-dra}
 
-DRA に登録する場合、Binned アセンブリ配列を fasta/bam ファイルで [DRA Analysis](/dra/submission.html#Analysis_Type)（Analysis type = "De Novo Assembly"）に登録し、description に使用した解析ソフトウェアや Binning に関する情報を記載します。    
+DRA に登録する場合、Binned アセンブリ配列を fasta/bam ファイルで [DRA Analysis](/dra/metadata.html#Analysis_Type)（Analysis type = "De Novo Assembly"）に登録し、description に使用した解析ソフトウェアや Binning に関する情報を記載します。    
 (1) の生リードが登録された [DRA Run とセットで Analysis を登録](/dra/submission.html#analysis)します。 
 Analysis description に以下の形式で対象 BioSample アクセッション番号、解析ステップ、及び、アセンブリの品質に関する指標を記載します。  
 - BioSample: SAMD00000001
@@ -149,8 +147,8 @@ MAG 特有のルールとして必須
   に含まれていること）を記載。
 
 ENV Division エントリとして必須
-- [/environmental\_sample](/ddbj/qualifiers.html#environmental_sample)
-- [/isolation\_source](/ddbj/qualifiers.html#isolation_source)
+- [/environmental_sample](/ddbj/qualifiers.html#environmental_sample)
+- [/isolation_source](/ddbj/qualifiers.html#isolation_source)
 - [/isolate](/ddbj/qualifiers.html#isolate)
 
 また、ゲノムエントリとして [ST\_COMMENT](/ddbj/file-format.html#describing_st_comment) に以下のアセンブリ情報が必須になります。

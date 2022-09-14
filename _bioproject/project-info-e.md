@@ -497,7 +497,7 @@ The general habitat for any organism. Please indicate additional extremophile pa
 <Publication id="15557739">
   <DbType>ePubmed</DbType>
 </Publication>
-<ProjectReleaseDate> ...
+<ProjectReleaseDate>
 ```
 
 [DOI](#BioProject_DOI)<a name="BioProject_DOI"></a>  
@@ -507,7 +507,7 @@ The general habitat for any organism. Please indicate additional extremophile pa
 <Publication id="10.1093/nar/gku1120">
   <DbType>eDOI</DbType>
 </Publication>
-<ProjectReleaseDate> ...
+<ProjectReleaseDate>
 ```
 
 [Reference title](#BioProject_Reference_title)<span class="red">\*</span><a name="BioProject_Reference_title"></a>  

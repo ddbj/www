@@ -60,13 +60,10 @@ bioproject:
       url: /faq/ja/index.html?tag=bioproject
     - id: search
       title: Search
-      url: http://ddbj.nig.ac.jp/BPSearch/
-    - id: downloads
-      title: Downloads
-      url: https://ddbj.nig.ac.jp/public/ddbj_database/bioproject/
+      url: http://ddbj.nig.ac.jp/search/
       children:
-        - title: XML Schema
-          url: https://github.com/ddbj/pub/tree/master/docs/bioproject/xsd
+        - title: Downloads
+          url: https://ddbj.nig.ac.jp/public/ddbj_database/bioproject/
     - id: about bioProject
       title: About BioProject
       url: /bioproject/about-bioproject.html
@@ -85,15 +82,12 @@ bioproject:
     - id: faq	
       title: FAQ	
       url: /faq/en/index-e.html?tag=bioproject	
-    - id: search	
-      title: Search	
-      url: http://ddbj.nig.ac.jp/BPSearch/	
-    - id: downloads	
-      title: Downloads	
-      url: https://ddbj.nig.ac.jp/public/ddbj_database/bioproject/
-      children:	
-        - title: XML Schema	
-          url: https://github.com/ddbj/pub/tree/master/docs/bioproject/xsd	
+    - id: search
+      title: Search
+      url: http://ddbj.nig.ac.jp/search/
+      children:
+        - title: Downloads
+          url: https://ddbj.nig.ac.jp/public/ddbj_database/bioproject/
     - id: about bioProject	
       title: About BioProject	
       url: /bioproject/about-bioproject-e.html
@@ -112,6 +106,8 @@ biosample:
           url: /biosample/overview.html 
         - title: Sample Information
           url: /biosample/sample-info.html 
+        - title: Validation Rules 
+          url: /biosample/validation.html 
     - id: sample attribute	
       title: Sample Attribute	
       url: /biosample/attribute.html	
@@ -122,21 +118,15 @@ biosample:
           url: /biosample/human-sample.html 
         - title: Example files	
           url: https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482	
-    - id: validation rules	
-      title: Validation Rules	
-      url: /biosample/validation.html	
     - id: faq	
       title: FAQ	
       url: /faq/ja/index.html?tag=biosample	
     - id: search	
       title: Search	
-      url: http://ddbj.nig.ac.jp/BSSearch/	
-    - id: downloads	
-      title: Downloads	
-      url: https://ddbj.nig.ac.jp/public/ddbj_database/biosample/
-      children:	
-        - title: XML Schema	
-          url: https://github.com/ddbj/pub/tree/master/docs/biosample/xsd	
+      url: http://ddbj.nig.ac.jp/search/	
+      children: 
+        - title: Downloads
+          url: https://ddbj.nig.ac.jp/public/ddbj_database/biosample/
     - id: about biosample	
       title: About BioSample	
       url: /biosample/about-biosample.html
@@ -152,6 +142,8 @@ biosample:
           url: /biosample/overview-e.html 
         - title: Sample Information
           url: /biosample/sample-info-e.html 
+        - title: Validation Rules 
+          url: /biosample/validation-e.html 
     - id: sample attribute
       title: Sample Attribute
       url: /biosample/attribute-e.html
@@ -162,21 +154,15 @@ biosample:
           url: /biosample/human-sample-e.html 
         - title: Example files
           url: https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482
-    - id: validation rules
-      title: Validation Rules
-      url: /biosample/validation-e.html
     - id: faq
       title: FAQ
       url: /faq/en/index-e.html?tag=biosample
     - id: search
       title: Search
-      url: http://ddbj.nig.ac.jp/BSSearch/
-    - id: downloads
-      title: Downloads
-      url: https://ddbj.nig.ac.jp/public/ddbj_database/biosample/
-      children:
-        - title: XML Schema
-          url: https://github.com/ddbj/pub/tree/master/docs/biosample/xsd
+      url: http://ddbj.nig.ac.jp/search/
+      children: 
+        - title: Downloads
+          url: https://ddbj.nig.ac.jp/public/ddbj_database/biosample/
     - id: about biosample
       title: About BioSample
       url: /biosample/about-biosample-e.html
@@ -384,16 +370,14 @@ dra:
     - id: home
       title: Home
       url: /dra/index.html
-    - id: handbook
-      title: Handbook
+    - id: submission
+      title: Submission
       url: /dra/submission.html
       children:
-        - title: Metadata examples
-          url: https://docs.google.com/spreadsheets/d/1DTdUQ-WWOMjOA2eYQWmFYUB24hJysuwhvHLJoDFX4rc/edit#gid=0
-        - title: XML examples
-          url: /dra/example.html
-        - title: XML schema
-          url: https://github.com/ddbj/pub/tree/master/docs/dra
+        - title: Metadata
+          url: /dra/metadata.html
+        - title: Data Files
+          url: /dra/datafile.html
     - id: faq
       title: FAQ
       url: /faq/ja/index.html?tag=dra
@@ -408,8 +392,6 @@ dra:
           url: https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/
         - title: SRA
           url: https://ddbj.nig.ac.jp/public/ddbj_database/dra/sralite/ByExp/litesra/
-        - title: XML Schema
-          url: https://github.com/ddbj/pub/tree/master/docs/dra/xsd
     - id: about dra
       title: About DRA
       url: /dra/about-dra.html
@@ -417,16 +399,14 @@ dra:
     - id: home	
       title: Home	
       url: /dra/index-e.html	
-    - id: handbook	
-      title: Handbook	
-      url: /dra/submission-e.html	
-      children:	
-        - title: Metadata examples	
-          url: https://docs.google.com/spreadsheets/d/1DTdUQ-WWOMjOA2eYQWmFYUB24hJysuwhvHLJoDFX4rc/edit#gid=0	
-        - title: XML examples	
-          url: /dra/example-e.html	
-        - title: XML schema	
-          url: https://github.com/ddbj/pub/tree/master/docs/dra	
+    - id: submission
+      title: Submission
+      url: /dra/submission-e.html
+      children:
+        - title: Metadata
+          url: /dra/metadata-e.html
+        - title: Data Files
+          url: /dra/datafile-e.html
     - id: faq	
       title: FAQ	
       url: /faq/en/index-e.html?tag=dra	
@@ -441,8 +421,6 @@ dra:
           url: https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/
         - title: SRA	
           url: https://ddbj.nig.ac.jp/public/ddbj_database/dra/sralite/ByExp/litesra/
-        - title: XML Schema	
-          url: https://github.com/ddbj/pub/tree/master/docs/dra/xsd	
     - id: about dra	
       title: About DRA	
       url: /dra/about-dra-e.html

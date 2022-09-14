@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: 必須属性以外に記載すべき変数や表現型は？
+title: JGA サンプルで必須属性以外に記載すべき変数や表現型は？
 category: faq
 db:
   - jga

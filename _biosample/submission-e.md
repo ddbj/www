@@ -149,4 +149,5 @@ FAQ: [How are linked BioProject/BioSample/sequence data released?](/faq/en/bp-bs
 
 ## Update BioSample  {#update-biosample}
 
-It is possible to update data after registration. Please contact us from [Message form](/contact-ddbj-e.html).
+It is possible to update data after registration. Please contact us from [Message form](/contact-ddbj-e.html).  
+You can confirm updated samples by downloding the attribute tsv (example, SSUB000001.txt) in the ATTRIBUTES of the D-way BiSample submission page.

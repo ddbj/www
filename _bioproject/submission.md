@@ -19,13 +19,9 @@ lang: ja
 
 ## 新規プロジェクトの登録  {#new-bioproject-submission}
 
-[登録用アカウント](/account.html) を取得します。
+[登録用アカウント](/account.html)を取得します。
 
 [D-way](https://ddbj.nig.ac.jp/D-way/) にログインします。ウェブサイト上部にある "BioProject" メニューから BioProject 登録ページに移動します。BioProject ページ内の \[New submission\] をクリックし、新規プロジェクト登録を作成します。
-
-<div class="attention">
-DDBJ センターから登録者に問い合わせた後三か月以上回答が無い場合は Submission をキャンセルいたします。
-</div>
 
 {% include image.html url="books/hbp-01.jpg" caption="BioProject の新規登録作成" class="w450" %}
 
@@ -39,12 +35,11 @@ BioProject を新規登録する場合は左のタブから順番に内容を英
 
 プレフィックスには３-１２文字の英数字のみを含めることができます。先頭は英文字にします。数字は２文字目以降で使用できます (例: A1C)。シンボル (-\_\*) を含めることはできません。プレフィックスとタグの値はアンダースコア '\_' で区切ります (例: A1C\_00001)。
 
-[WGS](/ddbj/wgs.html) の登録のみで prefix を使用しない場合は入力欄を空にしてください。
-
-prefix は NCBI が一括管理しています。プロジェクトを投稿する段階で、NCBI に prefix を予約しにいきます。予約済みの場合はエラーになるので、再度希望する prefix を入力して投稿します。
+Locus tag は NCBI が一括管理しています。プロジェクトを投稿する段階で、NCBI に prefix を予約しにいきます。予約済みの場合はエラーになるので、再度希望する prefix を入力して投稿します。
 
 <div class="attention" markdown="1">
-複数 prefix を取得する場合は [BioSample で取得](/biosample/submission.html)します。
+Locus tag prefix は [BioSample でも取得](/biosample/submission.html)することができます。  
+複数 prefix の取得は BioProject では対応していないため、BioSample で取得する必要があります。
 </div>
 
 {% include image.html url="books/hbp-03.jpg" caption="Locus tag prefix の取得" class="w450" %}
@@ -55,16 +50,16 @@ prefix は NCBI が一括管理しています。プロジェクトを投稿す�
 
 {% include image.html url="books/bp-nbdc-approval.jpg" caption="NBDC 提供申請 ID の記入" class="w450" %}
 
-最後の "OVERVIEW" で内容を確認したうえで \[Submit\] をクリックして投稿します。
+最後の "OVERVIEW" で内容を確認したうえで \[Submit\] をクリックして登録します。
 
 {% include image.html url="books/hbp-04.jpg" caption="BioProject の投稿" class="w450" %}
 
-"OVERVIEW" には初回投稿時の内容が表示され続けます。登録後の更新は反映されませんので、ご注意ください。
+"OVERVIEW" には初回登録時の内容が表示され続けます。登録後の更新は反映されませんので、ご注意ください。
 
 ## アクセッション番号  {#accession-number}
 
 ウェブから投稿されたデータに対して PSUB で始まる仮 ID が自動的に割り当てられます。正式なアクセッション番号が発行されるまでは、この仮 ID で登録を参照します。
-DDBJ BioProject スタッフはデータを査定した後、完成したデータに対してプレフィックス "PRJD" のアクセッション番号を発行します。 [D-way](https://ddbj.nig.ac.jp/D-way/) にログイン後、ウェブ上で登録したプロジェクトの進行状況やアクセッション番号を確認することができます。
+DDBJ BioProject スタッフはデータを査定した後、完成したデータに対してプレフィックス "PRJDB" のアクセッション番号を発行します。 [D-way](https://ddbj.nig.ac.jp/D-way/) にログイン後、ウェブ上で登録したプロジェクトの進行状況やアクセッション番号を確認することができます。
 
 <div class="attention">
 - PSUB で始まる仮 ID を論文中に引用しないでください。<br>
@@ -91,7 +86,9 @@ DDBJ BioProject スタッフはデータを査定した後、完成したデー�
 - 査定が終わった後すぐに公開
 - BioProject アクセッション番号を引用しているデータと同時に公開
 
-登録したプロジェクトは非公開にすることができます。DDBJ/DRA/GEA/MetaboBank　データが公開されると、引用されている BioProject データは自動的に公開されます。この BioProject アクセッション番号を引用している非公開の DDBJ/DRA/GEA/MetaboBank　データが公開されることはありません。  
+登録したプロジェクトは非公開にすることができます。DDBJ/DRA/GEA/MetaboBank データが公開されると、
+引用されている BioProject データは自動的に公開されます。
+BioProject の公開は参照している DDBJ/DRA/GEA/MetaboBank データの公開を引き起こしません。
 [プロジェクトの連動公開について](/bioproject/overview.html#release)
 
 公開された BioProject は [NCBI](https://www.ncbi.nlm.nih.gov/bioproject) と [EBI](https://www.ebi.ac.uk/) BioProject と交換されます。

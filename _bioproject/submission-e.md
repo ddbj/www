@@ -54,7 +54,8 @@ Please leave the prefix box empty, when a prefix is not necessary for [WGS](/ddb
 Prefix is managed by NCBI. When a project is submitted, our system tries to reserve prefix to NCBI. When the prefix has already been reserved, anerror message will be displayed. Please enter a different prefix and submit again.
 
 <div class="attention" markdown="1">
-When multiple prefixes are necessary, please [register prefixes in BioSample](/biosample/submission-e.html).
+Locus tag prefix can be registered in [BioSample](/biosample/submission-e.html).  
+Registration of multiple prefixes is possible in BioSample but is not possible in BioProject.
 </div>
 
 {% include image.html url="books/hbp-03.jpg" caption="Reserve a locus tag prefix" class="w450" %}
@@ -97,8 +98,10 @@ Registered projects can be released in the following two ways. Hold date cannot 
 * Release immediately after registration.
 * Release when records citing the BioProject accession are made public.
 
-The projects can be kept private. If DDBJ records citing the BioProject accession are made public, [cited projects are automatically released](/bioproject/project-e.html#release). Private DDBJ/DRA/GEA/MetaboBank data citing this BioProject accession are not made public.
-
+The projects can be kept private. 
+If DDBJ/DRA/GEA/MetaboBank records citing the BioProject accession are made public, 
+[cited projects are automatically released](/bioproject/project-e.html#release). 
+The BioProject release does not trigger release of private DDBJ/DRA/GEA/MetaboBank data citing the BioProject accession.
 
 Public projects are exchanged among [NCBI](https://www.ncbi.nlm.nih.gov/bioproject) and [EBI](https://www.ebi.ac.uk/) BioProject databases.
 

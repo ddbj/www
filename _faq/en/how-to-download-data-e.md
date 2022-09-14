@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: How do I access public data?
+title: How do I access public DRA data?
 category: faq
 db:
   - dra
@@ -10,31 +10,59 @@ date: 2014-01-23T11:21:04
 lang: en
 ---
 
-Download files from DDBJ ftp server at
-<ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq>.  
-The ftp resources are also accessible via https at https://ddbj.nig.ac.jp/public/ddbj_database
+You can access the public DRA data through https/ftp and in the NIG supercomputer.  
+You can retrieve the filepath by searching accession numbers in the [DDBJ Search](https://ddbj.nig.ac.jp/search).
 
-wget
-: wget is a convenient way to download files over FTP.
+* https: https://ddbj.nig.ac.jp/public/ddbj_database/dra
+* ftp: ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra
+* ascp: anonftp@ascp.ddbj.nig.ac.jp:/ddbj_database/dra
+* Supercomputer: /usr/local/resources/dra
 
+### https {#https}
+
+Access through your web browser.
+
+Examples:   
+DRR000001 fastq    
+* https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA000/DRA000001/DRX000001/DRR000001.fastq.bz2
+* https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA000/DRA000001/DRX000001/DRR000001_1.fastq.bz2
+* https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA000/DRA000001/DRX000001/DRR000001_2.fastq.bz2
+
+DRR000001 sra   
+* https://ddbj.nig.ac.jp/public/ddbj_database/dra/sra/ByExp/sra/DRX/DRX000/DRX000001/DRR000001/DRR000001.sra
+
+### ftp {#ftp}
+
+Download files by wget etc.
+
+Examples:  
+DRR000001 fastq   
 ```
 wget ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/DRA000/DRA000001/DRX000001/DRR000001.fastq.bz2
+wget ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/DRA000/DRA000001/DRX000001/DRR000001_1.fastq.bz2
+wget ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/DRA000/DRA000001/DRX000001/DRR000001_2.fastq.bz2
 ```
-ascp
-: Aspera ascp command line client can be dowloaded
-[here](http://downloads.asperasoft.com/downloadsconnect).Please select
-the correct operating system. The ascp command line client is
-distributed as part of the Aspera connect high-performance transfer
-browser plug-in.
 
-Your command should look similar to this:
+DRR000001 sra
+```
+wget ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/sra/ByExp/sra/DRX/DRX000/DRX000001/DRR000001/DRR000001.sra
+```
 
-```
-ascp -i <aspera connect SSH key> <option> -P 33001 anonftp@ascp.ddbj.nig.ac.jp:<file or files to download> <download location>
-```
+### ascp {#ascp}
+
+[Installing Aspera](https://sc.ddbj.nig.ac.jp/en/software/aspera/install_Aspera/) and install the aspera.  
+To download data, please see [How to use Aspera](https://sc.ddbj.nig.ac.jp/en/software/aspera/).
+
+### Supercomputer {#sc}
+
+You can direcly access the public data at /usr/local/resources/ in the [General Analysis Section of the NIG supercomputer](https://sc.ddbj.nig.ac.jp/en/general_analysis_division/ga_introduction).
+
 Examples:
+Copy DRR000001 fastq files to your home directory.
 ```
-ascp -i <aspera connect SSH key> -QT -l 300m -P 33001 anonftp@ascp.ddbj.nig.ac.jp:/ddbj_database/dra/fastq/DRA000/DRA000001/DRX000001/DRR000001.fastq.bz2 .
+cp /usr/local/resources/dra/fastq/DRA000/DRA000001/DRX000001/DRR000001.fastq.bz2 ~/
+cp /usr/local/resources/dra/fastq/DRA000/DRA000001/DRX000001/DRR000001_1.fastq.bz2 ~/
+cp /usr/local/resources/dra/fastq/DRA000/DRA000001/DRX000001/DRR000001_2.fastq.bz2 ~/
 ```
 
-In the NIG supercomputer, public data are directly acccessible at /usr/local/resources/
+

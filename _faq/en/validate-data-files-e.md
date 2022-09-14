@@ -11,6 +11,6 @@ lang: en
 ---
 
 When all sequencing data files listed in the Run metadata are uploaded to the DRA server, the "Validate data files" button becomes clickable and users are able to start the validation process.If the button remains inactive after submitting metadata ("metadata_submitted"), check the following points.
-- All data files listed in the Run metadata have not yet been uploaded.
-- File contains spaces is not recognized.
-- Uploaded file in directory is not recognized.
+- Have all data files listed in the Run metadata been uploaded?
+- Doesn't data files contain spaces?
+- Aren't uploaded files contained in sub-directories?

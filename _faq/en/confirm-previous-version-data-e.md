@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: Can I confirm previous version of the sequence data?
+title: Can I see history of the sequence record?
 category: faq
 db:
   - getentry
@@ -10,8 +10,5 @@ date: 2014-06-10T10:18:00
 lang: en
 ---
 
-Previous versions of sequence data are available by using getentry
-webAPI.
-
-See [gethistory](/services/getentry-e.html#gethistory) on [getentry
-HELP](/services/getentry-e.html).
+You can see revision history of the sequence record by using [gethistory](/services/getentry-e.html#gethistory). 
+Please see [getentry HELP](/services/getentry-e.html).
