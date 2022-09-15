@@ -56,6 +56,11 @@ A key pair for data transfer.
 
 {% include image.html url="books/two-key-pairs.jpg" caption="Key pairs for data transfer and dataset decryption" class="w450" %}
 
+Please save the public and private keys for decryption using the data use application ID as their filenames.
+Example:  
+* Public key for decryption: J-DU999991_public_key
+* Private key for decryption: J-DU999991_private_key
+
 ## Data use application to NBDC {#du-application}
 
 [Apply the data use application](https://humandbs.biosciencedbc.jp/en/data-use) in the [NBDC Application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application).

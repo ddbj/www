@@ -55,6 +55,11 @@ JGA データは暗号化された状態で提供されます。ユーザは利�
 
 {% include image.html url="books/two-key-pairs-ja.jpg" caption="データ転送用と JGA データセット復号用鍵ペア" class="w450" %}
 
+ペアであることを把握できるよう、復号用公開鍵と秘密鍵には利用申請 ID をファイル名に含めて保存することを推奨します。  
+例  
+* 復号用公開鍵 J-DU999991_public_key
+* 復号用秘密鍵 J-DU999991_private_key
+
 ## 利用申請 {#du-application}
 
 [NBDC 申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)から[利用申請](https://humandbs.biosciencedbc.jp/data-use)します。    
