@@ -106,9 +106,9 @@ Run Windows PowerShell.
 Execute following commands in the PowerShell window to generate openSSH-format key pair.  
 
 ``` 
-Generate key pair. Specify a filename by f option.  
+Generate key pair.
 By default, for example, two keys will be generated at C:\Users\mtaro in the case of mtaro Windows user.  
-PS C:\Users\mtaro> ssh-keygen -t rsa -f ddbjkey
+PS C:\Users\mtaro> ssh-keygen -t rsa
 
 Message will be shown.  
 Generating public/private rsa key pair.
@@ -117,8 +117,8 @@ Press [Enter] for setting no passphrase.
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 
-Your identification has been saved in ddbjkey.
-Your public key has been saved in ddbjkey.pub.
+Your identification has been saved in id_rsa.
+Your public key has been saved in id_rsa.pub.
 
 A private key is saved as "id_rsa" and a public key is saved as "id_rsa.pub" in "C:\Users\mtaro" folder.  
 ```
@@ -130,6 +130,12 @@ Following is the example command execution in the PowerShell window.
 A private key is saved as "id_rsa" and a public key is saved as "id_rsa.pub" in the openSSH format under "C:\Users\mtaro" folder.  
 [![]({{ site.baseurl }}/assets/images/books/win-ps-3.jpg){:.w500}]({{ site.baseurl }}/assets/images/books/win-ps-3.jpg "A openSSH key pair is generated under the user folder"){: .group1}
 
+To distinguish the key pair, please save the JGA [public and private key pair for data decryption](/jga/download-e.html#key-for-decryption) as filenamaes having the applicatio ID by using -f option.
+```
+PS C:\Users\mtaro> ssh-keygen -t rsa -f J-DU999991
+A private key is saved as "J-DU999991" and a public key is saved as "J-DU999991.pub" in "C:\Users\mtaro" folder.  
+```
+
 #### PuTTY format {#putty}
 
 Install and run the [PuTTY Key Generator](https://www.puttygen.com/%0A).
@@ -140,6 +146,9 @@ Set parameters as below and click the [Generate] button.
 Generate a key pair by moving mouse pointer randomly in the window and
 save the public and private keys. The key is saved in the PuTTY format
 and can be used in the WinSCP.
+
+To distinguish the key pair, please save the JGA [public and private key pair for data decryption](/jga/download-e.html#key-for-decryption) as filenamaes having the applicatio ID.
+For example, the public key "J-DU999991.pub" and the private key "J-DU999991".
 
 ### Mac OS X {#mac}
 
@@ -186,6 +195,12 @@ The public key file "id_rsa.pub" is displayed.
 Copy the public key file "id_rsa.pub" to your desk top for your account
 registration.
 
+To distinguish the key pair, please save the JGA [public and private key pair for data decryption](/jga/download-e.html#key-for-decryption) as filenamaes having the applicatio ID by using -f option.
+```
+$ ssh-keygen -t rsa -f J-DU999991
+At "/Users/you/.ssh", the private key is saved as "J-DU999991" and the public key is saved as "J-DU999991.pub".
+```
+
 ### Unix {#unix}
 
 ```
@@ -205,6 +220,12 @@ Enter same passphrase again:
 Your identification has been saved in /Users/you/.ssh/id_rsa.
 Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
 At "/Users/you/.ssh", the private key is saved as "id_rsa" and the public key is saved as "id_rsa.pub".
+```
+
+To distinguish the key pair, please save the JGA [public and private key pair for data decryption](/jga/download-e.html#key-for-decryption) as filenamaes having the applicatio ID by using -f option.
+```
+$ ssh-keygen -t rsa -f J-DU999991
+At "/Users/you/.ssh", the private key is saved as "J-DU999991" and the public key is saved as "J-DU999991.pub".
 ```
 
 ### Register center name and public key  {#register-center-name-and-public-key}

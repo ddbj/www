@@ -56,10 +56,10 @@ A key pair for data transfer.
 
 {% include image.html url="books/two-key-pairs.jpg" caption="Key pairs for data transfer and dataset decryption" class="w450" %}
 
-Please save the public and private keys for decryption using the data use application ID as their filenames.
+Save the public and private keys for decryption as filenames having the application ID.
 Example:  
-* Public key for decryption: J-DU999991_public_key
-* Private key for decryption: J-DU999991_private_key
+* Public key for decryption: J-DU999991.pub
+* Private key for decryption: J-DU999991
 
 ## Data use application to NBDC {#du-application}
 

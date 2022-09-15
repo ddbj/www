@@ -10,12 +10,10 @@ lang: ja
 
 {::options parse_block_html="true" /}
 <div class="attention">
-
-  - 責任者の許可のもとアカウントを作成し，データを管理してください。
-  - アカウントとパスワードはユーザが安全に管理してください。
-  - アカウント名は変更できません。
-  - アカウント作成後、NBDC 申請システムで利用できるようになるまで10分程度時間がかかります。
-
+- 責任者の許可のもとアカウントを作成し，データを管理してください。
+- アカウントとパスワードはユーザが安全に管理してください。
+- アカウント名は変更できません。
+- アカウント作成後、NBDC 申請システムで利用できるようになるまで10分程度時間がかかります。
 </div>
 
 DDBJ センターではサイズの大きいファイルの転送に ssh 鍵認証を介した scp を利用しています。
@@ -103,9 +101,9 @@ Windows PowerShell を起動します。
 PowerShell のターミナルで以下のコマンドを実行し、openSSH 形式の鍵ペアを生成します。   
 
 ``` 
-鍵ペアの生成。-f で鍵のファイル名を指定します。
+鍵ペアの生成。
 デフォルトでは mtaro というユーザであれば C:\Users\mtaro に作成されます。
-PS C:\Users\mtaro> ssh-keygen -t rsa -f ddbjkey
+PS C:\Users\mtaro> ssh-keygen -t rsa
 
 メッセージが表示されます。
 Generating public/private rsa key pair.
@@ -114,10 +112,10 @@ Generating public/private rsa key pair.
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 
-Your identification has been saved in ddbjkey.
-Your public key has been saved in ddbjkey.pub.
+Your identification has been saved in id_rsa.
+Your public key has been saved in id_rsa.pub.
 
-"C:\Users\mtaro" に秘密鍵は "id_rsa" として，公開鍵は "id_rsa.pub" として保存されます。
+"C:\Users\mtaro" に秘密鍵は "id_rsa" として、公開鍵は "id_rsa.pub" として保存されます。
 ```
 
 実際の画面では以下のようになります。  
@@ -126,6 +124,12 @@ Your public key has been saved in ddbjkey.pub.
 
 OpenSSH 形式の秘密鍵 (id_isa) と公開鍵 (id_rsa.pub) がユーザフォルダ（例では C:ユーザ:mtaro の直下）に作成されます。  
 [![]({{ site.baseurl }}/assets/images/books/win-ps-3.jpg){:.w500}]({{ site.baseurl }}/assets/images/books/win-ps-3.jpg "ユーザフォルダの下に鍵ペアが生成されます"){: .group1}
+
+JGA の[データセット復号用公開鍵・秘密鍵ペア](/jga/download.html#key-for-decryption)は -f オプションで利用申請 ID をファイル名に含めて保存するとペアを識別しやすくなります。
+```
+PS C:\Users\mtaro> ssh-keygen -t rsa -f J-DU999991
+"C:\Users\mtaro" に秘密鍵は "J-DU999991" として、公開鍵は "J-DU999991.pub" として保存されます。
+```
 
 #### PuTTY 形式 {#putty}
 
@@ -137,6 +141,9 @@ OpenSSH 形式の秘密鍵 (id_isa) と公開鍵 (id_rsa.pub) がユーザフォ
 
 ウィンドウのなかでマウスポインターをランダムに動かして鍵を生成させます。生成される公開鍵と秘密鍵を保存します。鍵は WinSCP
 でそのまま使用できる PuTTY 形式で保存されます。
+
+JGA の[データセット復号用公開鍵・秘密鍵ペア](/jga/download.html#key-for-decryption)は利用申請 ID をファイル名に含めて保存するとペアを識別しやすくなります。  
+例 公開鍵 J-DU999991.pub、秘密鍵 J-DU999991
 
 ### Mac OS X {#mac}
 
@@ -162,7 +169,7 @@ Enter same passphrase again:
 
 Your identification has been saved in /Users/you/.ssh/id_rsa.
 Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
-"/Users/you/.ssh" フォルダに秘密鍵は "id_rsa" として，公開鍵は "id_rsa.pub" として保存されます。
+"/Users/you/.ssh" フォルダに秘密鍵は "id_rsa" として、公開鍵は "id_rsa.pub" として保存されます。
 ```
 
 公開鍵を含んでいる隠しフォルダ ".ssh" を表示します。 ファインダーの "移動" メニューから "フォルダへ移動" を選択します。
@@ -178,6 +185,12 @@ Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
 [![]({{ site.baseurl }}/assets/images/books/mac_key_4.jpg){:.w400}]({{ site.baseurl }}/assets/images/books/mac_key_4.jpg ".ssh フォルダ中の公開鍵ファイル"){: .group1}
 
 その公開鍵ファイル "id\_rsa.pub" をデスクトップなどにコピーし，アカウントに登録します。
+
+JGA の[データセット復号用公開鍵・秘密鍵ペア](/jga/download.html#key-for-decryption)は -f オプションで利用申請 ID をファイル名に含めて保存するとペアを識別しやすくなります。
+```
+$ ssh-keygen -t rsa -f J-DU999991
+"/Users/you/.ssh" フォルダに秘密鍵は "J-DU999991" として、公開鍵は "J-DU999991.pub" として保存されます。
+```
 
 ### Unix {#unix}
 
@@ -198,6 +211,12 @@ Enter same passphrase again:
 Your identification has been saved in /Users/you/.ssh/id_rsa.
 Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
 "/Users/you/.ssh" フォルダに秘密鍵は "id_rsa" として，公開鍵は "id_rsa.pub" として保存されます。
+```
+
+JGA の[データセット復号用公開鍵・秘密鍵ペア](/jga/download.html#key-for-decryption)は -f オプションで利用申請 ID をファイル名に含めて保存するとペアを識別しやすくなります。
+```
+$ ssh-keygen -t rsa -f J-DU999991
+"/Users/you/.ssh" フォルダに秘密鍵は "J-DU999991" として、公開鍵は "J-DU999991.pub" として保存されます。
 ```
 
 ### Center name と認証用公開鍵の登録  {#register-center-name-and-public-key}
