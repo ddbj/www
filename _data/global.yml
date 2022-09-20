@@ -1,5 +1,7 @@
 top_news:
   ja:
-
+    - title: JGA/AGD 停止 9月28日 10:00-14:00
+      path: 2022-09-20
   en:
-
+    - title: JGA/AGD downtime, 10:00-14:00 28th September
+      path: 2022-09-20-e
