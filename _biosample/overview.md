@@ -31,7 +31,7 @@ DDBJ BioSample データベースはアクセスを制限する仕組みを持�
 
 ## サンプルの粒度 {#granularity}
 
-一般的に、生物学的な試料から抽出された核酸、代謝物などの抽出物に対応する粒度は BioSample を引用する [DRA Experiment](/dra/metadata.html)、[GEA SDRF](/gea/metadata.html) や [MetaboBank SDRF](/metabobank/metadata.html) の Experiment に対応するメタデータで表現します。
+一般的に、生物学的な試料から抽出された核酸、代謝物などの抽出物に対応する粒度は BioSample を引用する [DRA](/dra/metadata.html)、[GEA](/gea/metadata.html) や [MetaboBank](/metabobank/metadata.html) の Experiment に対応するメタデータで表現します。
 
 - biological replicate は biological_replicate 属性で区別します。例 "biological_replicate = 1" と "biological_replicate = 2" 例 [DRA の構成](/dra/submission.html#ex_replicates)
 - technical replicate はサンプルを分けず、DRA Experiment/GEA SDRF/MetaboBank SDRF で分けます。
