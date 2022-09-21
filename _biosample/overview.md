@@ -17,7 +17,8 @@ BioSample はデータベースに登録する実験データを得るために�
 
 ## サンプル  {#sample}
 
-データベースに登録されるサンプルが多様であること、また、サンプルの適切な記載方法が研究内容により異なることから BioSample の定義は柔軟なものになっています。BioSample の典型的な例としては細胞株、組織の生検、生物個体や環境サンプルなどが挙げられます。
+データベースに登録されるサンプルが多様であること、また、サンプルの適切な記載方法が研究内容により異なることから BioSample の定義は柔軟なものになっています。
+BioSample の典型的な例としては細胞株、組織の生検、生物個体や環境サンプルなどが挙げられます。
 
 BioSample はサンプルに関する以下のような情報を含みます。
 
@@ -30,11 +31,14 @@ DDBJ BioSample データベースはアクセスを制限する仕組みを持�
 
 ## サンプルの粒度 {#granularity}
 
-- biological replicate は biological_replicate 属性で区別します。例 "biological_replicate = 1" と "biological_replicate = 2" [DRA の構成](/dra/submission.html#ex_replicates)
+一般的に、生物学的な試料から抽出された核酸、代謝物などの抽出物に対応する粒度は BioSample を引用する [DRA Experiment](/dra/metadata.html)、[GEA SDRF](/gea/metadata.html) や [MetaboBank SDRF](/metabobank/metadata.html) の Experiment に対応するメタデータで表現します。
+
+- biological replicate は biological_replicate 属性で区別します。例 "biological_replicate = 1" と "biological_replicate = 2" 例 [DRA の構成](/dra/submission.html#ex_replicates)
 - technical replicate はサンプルを分けず、DRA Experiment/GEA SDRF/MetaboBank SDRF で分けます。
+- 植物の葉から調整したゲノム、RNA、代謝物サンプルは葉に対応する BioSample を一つ作成し、抽出物は [DDBJ](/ddbj/submission.html)、[GEA](/gea/metadata.html)、[MetaboBank](/metabobank/metadata.html) メタデータで表現します。
 - 同じサンプルから調整した paired-end library をシークエンスした場合、forward と reverse で BioSample を分けずに一つの DRA Run に両ペアードファイルを含めます。[DRA の構成](/dra/submission.html#ex_samples)
 - 同じサンプルを異なる機種でシークエンスした場合、異なる [Instrument model](/dra/submission.html#Instrument) を持つ複数の DRA Experiment を一つの BioSample にリンクします。
-- ユニークなサンプルソースに対し、別々の BioSample を登録します。例えば、羽から調整した RNA と肢から調整した RNA は、両者が別々にシークエンスされている場合、別個の BioSample になります。
+- ユニークなサンプル源に対し、別々の BioSample を登録します。例えば、羽から調整した RNA と肢から調整した RNA は、両者が別々にシークエンスされている場合、別個の BioSample になります。
 
 登録例
 - 海水中のある採取地点から得られた 23,000 本のユニークな 16S 増幅配列 - 1 BioSample（１サンプルが採取され、16S の多様性が解析された）

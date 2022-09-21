@@ -32,8 +32,11 @@ Submit such human samples to [JGA](/jga/index-e.html) which have access-control 
 
 ## Sample granularity {#granularity}
 
+In general, extracted molecules such as nucleic acids and metabolites are represented by [DRA Experiment](/dra/metadata-e.html), [GEA SDRF](/gea/metadata-e.html) and [MetaboBank SDRF](/metabobank/metadata-e.html) experiment metadata referencing BioSample records.
+
 - Biological replicates are represented by separate BioSamples with distinct 'biological_replicate' attributes. [DRA objects organization](/dra/submission-e.html#ex_replicates) For example, 'biological_replicate = 1' and 'biological_replicate = 2'.
 - Technical replicates are represented by DRA Experiments and GEA SDRF. Use a BioSample for technical replicates.
+- Genome, RNA and metabolites samples extracted from a plant leaf, create one BioSample and represent extracts by [DDBJ](/ddbj/submission-e.html), [GEA](/gea/metadata-e.html) and [MetaboBank](/metabobank/metadata-e.html) metadata.
 - If a paired-end library from single sample is sequenced, do not create separate sample for forward and reverse reads but register both reads in a DRA Run. [DRA objects organization](/dra/submission-e.html#ex_samples)
 - If a sample is sequenced by different sequencing instruments, link DRA Experiments with distinct [Instrument model](/dra/submission-e.html#Instrument) to a BioSample.
 - Register a separate BioSample for each unique source, e.g., RNA from the wings is a separate BioSample than RNA from legs if those two sources were sequenced independently.
