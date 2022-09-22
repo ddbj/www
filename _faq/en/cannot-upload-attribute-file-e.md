@@ -19,16 +19,8 @@ Please refer to the [example of BioSample submission files](https://docs.google.
 
 For other messages and validation rules, please see the [Validation rules page](/biosample/validation-e.html) and upload the revised file.
 
-<figure><a href="/assets/images/books/bs-tsv-1.jpg" title="Example of valid tsv file"><img src="/assets/images/books/bs-tsv-1.jpg" alt="Example of valid tsv file" title="Example of valid tsv file" class="w400"></a>
-  <figcaption class="caption">Example of valid tsv file</figcaption>
-</figure>
+<a href="/assets/images/books/bs-tsv-1.jpg" title="Example of valid tsv file" class="group1"><img src="/assets/images/books/bs-tsv-1.jpg" alt="Example of valid tsv file" title="Example of valid tsv file" class="w600"></a>
 
-<figure><a href="/assets/images/books/bs-tsv-2.jpg" title="Example of invalid tsv file which lacks a header"><img src="/assets/images/books/bs-tsv-2.jpg" alt="Example of invalid tsv file which lacks a header" title="Example of invalid tsv file which lacks a header" class="w400"></a>
-  <figcaption class="caption">Example of invalid tsv file which lacks a header</figcaption>
-</figure>
+<a href="/assets/images/books/bs-tsv-2.jpg" title="Example of invalid tsv file which lacks a header" class="group1"><img src="/assets/images/books/bs-tsv-2.jpg" alt="Example of invalid tsv file which lacks a header" title="Example of invalid tsv file which lacks a header" class="w600"></a>
 
-<figure><a href="/assets/images/books/bs-tsv-3.jpg" title="Example of invalid tsv file which has a blank line between sample lines"><img src="/assets/images/books/bs-tsv-3.jpg" alt="Example of invalid tsv file which has a blank line between sample lines" title="Example of invalid tsv file which has a blank line between sample lines" class="w400"></a>
-  <figcaption class="caption">Example of invalid tsv file which has a blank line between sample lines</figcaption>
-</figure>
-
-
+<a href="/assets/images/books/bs-tsv-3.jpg" title="Example of invalid tsv file which has a blank line between sample lines" class="group1"><img src="/assets/images/books/bs-tsv-3.jpg" alt="Example of invalid tsv file which has a blank line between sample lines" title="Example of invalid tsv file which has a blank line between sample lines" class="w600"></a>
