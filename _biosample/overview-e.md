@@ -36,12 +36,14 @@ In general, create BioSample records for biological source materials and represe
 
 - Biological replicates are represented by separate BioSamples with distinct 'biological_replicate' attributes. [DRA objects organization](/dra/submission-e.html#ex_replicates) For example, 'biological_replicate = 1' and 'biological_replicate = 2'.
 - Technical replicates are represented by DRA Experiments and GEA SDRF. Use a BioSample for technical replicates.
-- Genome, RNA and metabolites samples extracted from a plant leaf, create one BioSample and represent extracts by [DDBJ](/ddbj/submission-e.html), [GEA](/gea/metadata-e.html) and [MetaboBank](/metabobank/metadata-e.html) metadata.
+- RNA and metabolites samples extracted from a plant leaf, create one BioSample and represent extracts by [GEA](/gea/metadata-e.html) and [MetaboBank](/metabobank/metadata-e.html) metadata.
 - If a paired-end library from single sample is sequenced, do not create separate sample for forward and reverse reads but register both reads in a DRA Run. [DRA objects organization](/dra/submission-e.html#ex_samples)
 - If a sample is sequenced by different sequencing instruments, link DRA Experiments with distinct [Instrument model](/dra/submission-e.html#Instrument) to a BioSample.
 - Register a separate BioSample for each unique source, e.g., RNA from the wings is a separate BioSample than RNA from legs if those two sources were sequenced independently.
+- [Genome Assembly Sample](/biosample/genome-assembly-sample-e.html) requires genome-specific attributes such as locus tag prefix, so it needs to be separated from other RNA and metabolites samples.
 
 Examples:
+
 - 23,000 unique 16S amplicons from a single seawater collection point \- 1 BioSample (1 sample was collected and then analyzed to deduce 16S diversity)
 - 3 "identical" transgenic mice treated with the same drug as part of an experiment \- 3 BioSamples (biological replicates are represented by separate BioSamples)
 - To examine gene expression profiles, CHO cells infected with a virus and sampled at 0, 2, 4, and 8 hours post infection \- 4 BioSamples (4 time points)
