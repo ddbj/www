@@ -238,7 +238,7 @@ fastq/bam ファイルを登録します。
 
 ## キャピラリシークエンサ  {#Capillary-sequencing-platform}
 
-fastq/bam ファイルを登録します。
+fastq/bam ファイルを登録します。  
 
 ## Analysis データファイル  {#analysis-data-files}
 

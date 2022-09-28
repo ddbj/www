@@ -29,6 +29,6 @@ Please select either of following ways.
 
 Reference
 : [Explanation of DDBJ flat file format](/ddbj/flat-file-e.html): [ACCESSION](/ddbj/flat-file-e.html#AccessionB)
-: [INSDC Status Document](/about/insdc-status-e.html): Replaced
+: [INSDC Status Document](https://www.insdc.org/submitting-standards/insdc-status-document/): Replaced
 : [What is secondary accession
         number?](/faq/en/secondary-accession-number-e.html)
