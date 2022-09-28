@@ -23,5 +23,5 @@ DDBJ では配列データの更新予約は行っておりません。
 
 参考
 : [DDBJ のデータ公開形式 (flat file) の説明](/ddbj/flat-file.html): [ACCESSION](/ddbj/flat-file.html#AccessionB)
-: [INSDC Status Document](/about/insdc-status-e): Replaced
+: [INSDC Status Document](https://www.insdc.org/submitting-standards/insdc-status-document/): Replaced
 : [セカンダリアクセッション番号とは何ですか](/faq/ja/secondary-accession-number.html)
