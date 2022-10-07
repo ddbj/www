@@ -105,7 +105,7 @@ b) pseudogene と見做される場合<a name="stop_b"></a>
 : 想定される CDS location を示し、/[pseudogene](/ddbj/qualifiers.html#pseudogene) qualifier を付加します。<br>この場合、生体内に対応するタンパク質は存在しないことになりますので、[translation](/ddbj/qualifiers.html#translation) qualifier とアミノ酸配列は示されません。
   - 原則、/[inference](/ddbj/qualifiers.html#inference) qualifier に参照したデータの記載をお願いします。
   - /[note](/ddbj/qualifiers.html#note) qualifier に "pseudogene of [protein name]" などの記載もお願いします。
-  - /[pseudogene](/ddbj/qualifiers.html#pseudogene) qualifier の規定値に関しましては、[Controlled vocabulary for /pseudogene qualifier](/ddbj/pseudogene.html) で解説されています。
+  - /[pseudogene](/ddbj/qualifiers.html#pseudogene) qualifier の規定値に関しましては、[Controlled vocabulary for /pseudogene qualifier](https://www.insdc.org/submitting-standards/pseudogene-qualifier-vocabulary/) で解説されています。
   - この CDS feature に相当するタンパク質産物は存在しないことになりますので、/[product](/ddbj/qualifiers.html#product) qualifier は、原則、記載しないでください。
 : [登録の見本 B06](/ddbj/example.html#B06) もご参照ください。
 

@@ -165,7 +165,7 @@ exist in vivo.
     "pseudogene of [protein name]".
   - About controlled values of
     /[pseudogene](/ddbj/qualifiers-e.html#pseudogene) qualifier, see
-    [Controlled vocabulary for /pseudogene qualifier](/ddbj/pseudogene-e.html).
+    [Controlled vocabulary for /pseudogene qualifier](https://www.insdc.org/submitting-standards/pseudogene-qualifier-vocabulary/ ).
   - Since there is no protein product for the CDS feature, do NOT
     describe /[product](/ddbj/qualifiers.html#product) qualifier, in
     principle.
