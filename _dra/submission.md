@@ -297,11 +297,6 @@ Run の数が100を超えるような場合で、ウェブツールの応答が�
 
 <a href="/assets/images/books/hdra-xmlupload.jpg" title="作成した XML のアップロード" class="group1"><img src="/assets/images/books/hdra-xmlupload.jpg" alt="作成した XML のアップロード" title="作成した XML のアップロード" class="w500"></a>
 
-**処理に時間がかかる場合、ブラウザーがタイムアウトしますが、システムでは登録処理が続いているため、が metadata_submitted になるまで放置します。一日経ってもステータスが変わらない場合は問い合わせてください ([FAQ](/faq/ja/dra-xml-timeout.html))。**   
-ステータスが metadata_submitted になったことを確認し、[データファイルの検証処理](#validation)に進みます。   
-タイムアウトした後、何度も XML をアップロードしないでください。
-状況が分からなくなった場合は [DRA チームに問い合わせてください](/contact-ddbj.html)。
-
 ### メタデータ登録用エクセルを担当者に送付 {#send-metadata-excel}
 
 コマンドライン操作に不慣れな方はエクセルを担当者にメール添付でお送りください。    
