@@ -139,15 +139,15 @@ The alignment data can be submitted in the BAM format. The bam files should be r
 
 #### 2. Specify reference by INSDC/RefSeq accession number  {#Specify_reference_by_INSDC/RefSeq_accession_number}
 
-If references are found in [list](/assets/files/ref/ref-file.txt), references can be specified by their accession.version number (for example, NC_000001.11). [Version number](/ddbj/flat-file-e.html#Version)is necessary. Accession numbers for references can be searched in [NCBI Assembly](https://www.ncbi.nlm.nih.gov/assembly/).
+If references are found in [https://ftp.ncbi.nlm.nih.gov/sra/refseq/](https://ftp.ncbi.nlm.nih.gov/sra/refseq/), references can be specified by their accession.version number (for example, NC_000001.11). [Version number](/ddbj/flat-file-e.html#Version)is necessary. Accession numbers for references can be searched in [NCBI Assembly](https://www.ncbi.nlm.nih.gov/assembly/).
 
 #### 3. Specify reference by supplying multi-fasta  {#Specify_reference_by_supplying_multi-fasta}
 
-If references are not found in the [list](/assets/files/ref/ref-file.txt), submit a reference file in multi-fasta format. Select "reference_fasta" in the [Run file type](/dra/submission-e.html#File_Type). The reference name in the bam header and reference sequence are linked by the name in bam header and fasta defline via the mapping table. If sequence length is different between @SQ-LN and multi-fasta, a warning is raised.
+If references are not found in [https://ftp.ncbi.nlm.nih.gov/sra/refseq/](https://ftp.ncbi.nlm.nih.gov/sra/refseq/), submit a reference file in multi-fasta format. Select "reference_fasta" in the [Run file type](/dra/submission-e.html#File_Type). The reference name in the bam header and reference sequence are linked by the name in bam header and fasta defline via the mapping table. If sequence length is different between @SQ-LN and multi-fasta, a warning is raised.
 
 #### 4. Specify reference by both INSDC/RefSeq accession number and multi-fasta  {#Specify_reference_by_both_INSDC/RefSeq_accession_number_and_multi-fasta}
 
-If a part of references are found in [list](/assets/files/ref/ref-file.txt), these references can be specified by their accession.version number (for example, NC_000001.11). The rest of references needs to be supplied by uploading a multi-fasta file. In the SN-reference mapping table, list accession.version numbers and sequence names of multi-fasta deflines.
+If a part of references are found in [https://ftp.ncbi.nlm.nih.gov/sra/refseq/](https://ftp.ncbi.nlm.nih.gov/sra/refseq/), these references can be specified by their accession.version number (for example, NC_000001.11). The rest of references needs to be supplied by uploading a multi-fasta file. In the SN-reference mapping table, list accession.version numbers and sequence names of multi-fasta deflines.
 
 #### 5. SN-reference mapping table  {#SN-reference_mapping_table}
 
