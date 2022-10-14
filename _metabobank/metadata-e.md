@@ -35,19 +35,580 @@ Submit data of different types as separate studies.
 
 ## IDF  {#idf}
 
-IDF (Investigation Description Format) is a file describing study overview, experimental design, protocols, publication and submitter information.
-
+IDF (Investigation Description Format) is a file describing study overview, experimental design, protocols, publication and submitter information.   
+   
 [IDF example](https://docs.google.com/spreadsheets/d/1PziXaK3Cic1xQXdcCgBZ1g-4LIKvZRZt71nYCH5e22k/edit#gid=30173120)  
 
-Please see the HELP sheet of the excel for details.
+## IDF fields {#IDF_fields}
+
+[MAGE-TAB Version](#MAGE-TAB_Version)<a name="MAGE-TAB_Version"></a>
+: Version number of MAGE-TAB. Fixed to 1.1. Filled by MetaboBank.
+
+[Comment\[MetaboBank accession\]](#MetaboBank_accession)<a name="MetaboBank_accession"></a>
+: Accession number assigned by Metabobank. Filled by MetaboBank.
+
+[Study Title](#Study_Title)<a name="Study_Title"></a>
+: The overall title of the study. This field can only have one value.
+
+[Study Description](#Study_Description)<a name="Study_Description"></a>
+: A short paragraph describing the study as free-text. This field can only have one value. The text should clearly explain what you did in your study. In this field, ASCII, Greek characters and symbols \[° μ ± ≠ &#8786; &#060; &#062; ← ↑ ↓ → ↔ Å\] are allowed for richer description.
+
+[Experimental Design](#Experimental_Design)<a name="Experimental_Design"></a>
+: The experiment design types which are applicable to this study. These terms should come from [controlled terms](https://docs.google.com/spreadsheets/d/1b34kjYemmQj-4m5zcp2n7QHCnQA98EjYcf6pOJ9xDTY).
+
+[Experimental Factor Name](#Experimental_Factor_Name)<a name="Experimental_Factor_Name"></a>
+: A user-defined name for each experimental factor studied by the experiment. These experimental factors represent the variables (parameters) within the investigation. The actual values of these variables will be listed in the SDRF file, in "Factor value\[\<factor name\>\]" columns. For example, an experiment studying the effect of different temparature (heat stress) on a cell culture would have "temparature" as an experimental variable with "Unit" column to indicate the unit in the accompanying SDRF [Factor Value\[\]](#Factor_Value) columns (e.g. Factor Value\[temparature\]).
+
+[Experimental Factor Type](#Experimental_Factor_Type)<a name="Experimental_Factor_Type"></a>
+: A term describing the type of each experimental factor. Filled by MetaboBank.
+
+[Person Last Name](#Person_Last_Name)<a name="Person_Last_Name"></a>
+: The last name of each submitter. Enter last names of submitters in each column. Submitters have edit rights to the submission and correspondence will be directed to the submitter. They will also be the main contact for once the study is public. Use [Comment\[Contributor\]](#Contributor) to list contributors.
+
+[Person First Name](#Person_First_Name)<a name="Person_First_Name"></a>
+: The first name of each submitter. Enter first names of submitters in each column.
+
+[Person Mid Initials](#Person_Mid_Initials)<a name="Person_Mid_Initials"></a>
+: The middle name of each submitter. Enter middle names of submitters in each column.
+
+[Person Email](#Person_Email)<a name="Person_Email"></a>
+: The Email address of each submitter. Enter addresses of submitters in each column. The Email address is not publicly displayed.
+
+[Person Affiliation](#Person_Affiliation)<a name="Person_Affiliation"></a>
+: The organization affiliation of each submitter.
+
+[Person Roles](#Person_Roles)<a name="Person_Roles"></a>
+: The role(s) performed by each person. Only "submitter" role is permitted. Filled by MetaboBank.
+
+[PubMed ID](#PubMed_ID)<a name="PubMed_ID"></a>
+: The PubMed IDs of the publication(s) associated with this study (where available).
+
+[Publication DOI](#Publication_DOI)<a name="Publication_DOI"></a>
+: A Digital Object Identifier (DOI) for each publication (where available). When PubMed ID and DOI are available, use PubMed ID.
+
+[Public Release Date](#Public_Release_Date)<a name="Public_Release_Date"></a>
+: Initial public release date of the data. Filled by MetaboBank.
+
+[Term Source Name](#Term_Source_Name)<a name="Term_Source_Name"></a>
+: The names of the Term Sources (ontologies or databases) used within the IDF and SDRF. The "Term Sources" are defined in the IDF and may be used throughout the IDF and SDRF. This name will be used in all corresponding "Term Source REF" fields.
+
+[Term Source File](#Term_Source_File)<a name="Term_Source_File"></a>
+: A filename or valid URI at which the Term Source may be accessed.
+
+[Term Source Version](#Term_Source_Version)<a name="Term_Source_Version"></a>
+: The version of the Term Source used throughout the IDF and SDRF.
+
+[SDRF File](#SDRF_File)<a name="SDRF_File"></a>
+: The name of the SDRF file accompanying this IDF file. Filled by MetaboBank.
+
+[Comment\[Study type\]](#Study_type)<a name="Study_type"></a>
+: The study types which are applicable to this study. These terms should come from [controlled terms](https://docs.google.com/spreadsheets/d/1b34kjYemmQj-4m5zcp2n7QHCnQA98EjYcf6pOJ9xDTY).
+
+[Comment\[Experiment type\]](#Experiment_type)<a name="Experiment_type"></a>
+: The experiment types which are applicable to this study. These terms should come from [controlled terms](https://docs.google.com/spreadsheets/d/1b34kjYemmQj-4m5zcp2n7QHCnQA98EjYcf6pOJ9xDTY). More than one type can be added. Fixed terms for the submission type are filled by MetaboBank.
+
+[Comment\[Submission type\]](#Submission_type)<a name="Submission_type"></a>
+: The type of this submission. These terms should come from [controlled terms](https://docs.google.com/spreadsheets/d/1b34kjYemmQj-4m5zcp2n7QHCnQA98EjYcf6pOJ9xDTY). Filled by MetaboBank.
+
+[Comment\[BioProject\]](#BioProject)<a name="BioProject"></a>
+: A related BioProject accession (for example, PRJDB1).
+
+[Comment\[Related study\]](#Related_study)<a name="Related_study"></a>
+: Related MetaboBank study accession(s). List accessions in the format of "DB:ID" in tab-delimited fields. Example, MB:MTBKS202\<tab\>MB:MTBKS203\<tab\>Metabolonote:SE112.
+
+[Comment\[Contributor\]](#Contributor)<a name="Contributor"></a>
+: Name of each contributor. Contributors such as technical staffs can be listed in the [Comment\[Contributor\]](#Contributor) regardless of they are submitters or not. The contributors do not automatically have edit rights as submitters.  
+Example, Mishima Naoko, Fuji San, Shizuoka Ken.
+
+[Comment\[Submission Date\]](#Submission_Date)<a name="Submission_Date"></a>
+: The date of submission. Filled by MetaboBank.
+
+[Comment\[Last Update Date\]](#Last_Update_Date)<a name="Last_Update_Date"></a>
+: The date of last update. Filled by MetaboBank.
+
+## IDF Protocols {#IDF_Protocols}
+
+Protocols are central for reproducibility purposes and should provide a detailed description of the steps taken in the study.
+
+[Protocol Name](#Protocol_Name)<a name="Protocol_Name"></a>
+: The names of the protocols used. Use the protocol type for the name when there is one protocol for the type. If there are more than one protocols for the type, differentiate them by adding 1, 2, ... (e.g. Data transformation 1, Data transformation 2).
+
+[Protocol Type](#Protocol_Type)<a name="Protocol_Type"></a>
+: The type of the protocol. Required protocols are different for each submission type.
+
+|Protocol type|Description|Submission type|
+|---|
+|Sample collection|Describe the origin of samples, any relevant treatment, time points etc. and the collection and storage procedure.|All types|
+|Extraction|Describe any extraction or preparation methods applied to the sample before analysis. Please also include any control samples prepared for the assay e.g. pooled samples, standards, quality control, solvent blank etc|Other than MSI|
+|Chromatography|Provide details of the instrument and column used (manufacturer), mobile phase and gradient, and settings such as temperatures, flow rate, injection volume.|LC-MS,LC-DAD-MS,GC-MS,GCGC-MS,GC-FID-MS|
+|Mass spectrometry|Provide details of the instrument used (manufacturer), ion source, ionisation mode (positive/negative), m/z range, and specific parameters such as temperatures, voltages, flow rates, scan rates.|Other than NMR|
+|Data processing|Provide details of methods/pipelines and software used to transform the raw data.|All types|
+|Metabolite identification|Provide details of methods/pipelines, reference databases and software used to identify features and/or annotate metabolites.|All types|
+|Capillary Electrophoresis|Provide details of the instrument and column used (manufacturer), mobile phase and gradient, and settings.|CE-MS|
+|Direct infusion|Provide details of the direct infusion methods.|DI-MS|
+|Flow injection analysis|Provide details of the flow injection analysis methods.|FIA-MS|
+|Preparation|Describe sample preparations such as mounting, preservation, tissue modification, sectioning and matrix.|MSI|
+|Histology|Describe histological details such as stain.|MSI|
+|NMR sample|Describe NMR samples such as tube type, solvent, sample pH and temperature.|NMR|
+|NMR spectroscopy|Provide details of NMR instrument, probe and magnetic field strength etc|NMR|
+|NMR assay|Provide details of NMR assay.|NMR|
+
+[Protocol Description](#Protocol_Description)<a name="Protocol_Description"></a>
+: A free-text description of the protocol. This text should be included in a single tab-delimited field. In this field, ASCII, Greek characters and symbols \[° μ ± ≠ &#8786; &#060; &#062; ← ↑ ↓ → ↔ Å\] are allowed for richer description.
+
+[Protocol Parameters](#Protocol_Parameters)<a name="Protocol_Parameters"></a>
+: A semicolon-delimited list of parameter names. Required parameters are different for each submission type. 
+See [SDRF Protocol Parameters](#SDRF_Protocol_Parameters) for details.
+
+[Protocol Hardware](#Protocol_Hardware)<a name="Protocol_Hardware"></a>
+: The protocol hardware is the instrument that was used to capture the sample. If multiple instruments are used, they should be separated by semicolon (;).
+
+[Protocol Software](#Protocol_Software)<a name="Protocol_Software"></a>
+: The software used by the protocol.
 
 ## SDRF  {#sdrf}
 
 SDRF (Sample and Data Relationship Format) is a file describing sample characteristics and relationship between samples, measurement instruments and data files.
 SDRF is a table represents omics experimental flow, starts from source samples and ends with data files.
 
+{% include image.html url="magetab/mb-sdrf.jpg" caption="SDRF structure" class="w550" %}
+
+
 [SDRF example](https://docs.google.com/spreadsheets/d/1PziXaK3Cic1xQXdcCgBZ1g-4LIKvZRZt71nYCH5e22k/edit#gid=513795053)  
 
-Please see the HELP sheet of the excel for details.
+## SDRF columns {#SDRF_columns}
 
-{% include image.html url="magetab/mb-sdrf.jpg" caption="SDRF structure" class="w550" %}
+[Source Name](#Source_Name)<a name="Source_Name"></a>
+: A unique identifier from a particular source. Use a sample name of BioSample in most cases.
+
+[Characteristics](#Characteristics)<a name="Characteristics"></a>
+: Sample attributes. Use BioSample attributes.
+
+[Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
+: Reference a protocol by its name defined in IDF.
+
+[Sample Name](#Sample_Name)<a name="Sample_Name"></a>
+: A unique identifier from a particular sample. Use a sample name of BioSample in most cases.
+
+[Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
+: Reference to Extraction protocol.
+
+[Extract Name](#Extract_Name)<a name="Extract_Name"></a>
+: A unique identifier from a particular extract. Use a sample name of BioSample in most cases.
+
+[Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
+: Reference to Chromatography protocol.
+
+[Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
+: Reference to Capillary Electrophoresis protocol.
+
+[Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
+: Reference to Direct infusion protocol.
+
+[Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
+: Reference to Flow injection analysis protocol.
+
+[Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
+: Reference to NMR sample protocol.
+
+[Labeled Extract Name](#Labeled_Extract_Name)<a name="Labeled_Extract_Name"></a>
+: A unique identifier from a particular extract chemically labeled by isotopes. Optional for non-labeled samples.
+
+[Label](#Label)<a name="Label"></a>
+: When samples are chemically labeled by isotopes (chemical isotope labeling), describe isotopes in the Label column and isotope-labeled compounds in the Comment[isotope_labeled_compound] column.
+
+[Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
+: Reference to Mass spectrometry protocol.
+
+[Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
+: Reference to NMR spectroscopy protocol.
+
+[Assay Name](#Assay_Name)<a name="Assay_Name"></a>
+: A unique identifier from a particular assay name. Use a sample name of BioSample in most cases. Technical replicates are differentiated by same sample names, different assay names and technical replicate comments.
+
+[Comment\[technical_replicate\]](#technical_replicate)<a name="technical_replicate"></a>
+: Technical replicates such as 1, 2 and 3.
+
+[Raw Data File](#Raw_Data_File)<a name="Raw_Data_File"></a>
+: This is where you should enter the raw (unprocessed) data files. If your data has been processed into one of the open-source raw data formats e.g. mzML, nmrML, then add them here.  
+Files can be specified in several ways.
+
+Enter each filename for each sample in single column.
+
+|Raw Data File|Comment\[Raw Data File md5\]|
+|---|
+|sample1.RAW.gz|...|
+|sample2.RAW.gz|...|
+
+Enter tar/zip archived file for each sample in single column.
+
+|Raw Data File|Comment\[Raw Data File md5\]|
+|---|
+|sample1.RAW.tar.gz|...|
+|sample1.RAW.tar.gz|...|
+
+Enter each subdirectory which contains files for each sample in single column.
+
+|Raw Data File|Comment\[Raw Data File md5\]|
+|---|
+|sample1/|...|
+|sample2/|...|
+
+Enter, two filenames for a sample in two columns.
+
+|Raw Data File|Comment\[Raw Data File md5\]|Raw Data File|Comment\[Raw Data File md5\]|
+|---|
+|sample1.RAW.gz|...|sample1.mzML|...|
+|sample2.RAW.gz|...|sample2.mzML|...|
+
+[Comment\[Raw Data File md5\]](#Raw_Data_File_md5)<a name="Raw_Data_File_md5"></a>
+: Enter [MD5 hash value](/checksum-e.html) of raw data file here.
+
+[Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
+: Reference to Histology protocol.
+
+[Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
+: Reference to Data processing protocol.
+
+[Processed Data File](#Processed_Data_File)<a name="Processed_Data_File"></a>
+: This is where you should enter the processed data files.  
+Files can be specified in several ways.
+
+Enter each filename for each sample in single column.
+
+|Processed Data File|Comment\[Processed Data File md5\]|
+|---|
+|sample1.tsv|...|
+|sample2.tsv|...|
+
+Enter tar/zip archived file for each sample in single column.
+
+|Processed Data File|Comment\[Processed Data File md5\]|
+|---|
+|sample1.tsv.tar.gz|...|
+|sample1.tsv.tar.gz|...|
+
+Enter each subdirectory which contains files for each sample in single column.
+
+|Processed Data File|Comment\[Processed Data File md5\]|
+|---|
+|sample1/|...|
+|sample2/|...|
+
+Enter, two filenames for a sample in two columns.
+
+|Processed Data File|Comment\[Processed Data File md5\]|Processed Data File|Comment\[Processed Data File md5\]|
+|---|
+|sample1.tsv|...|sample1.xlsx|...|
+|sample2.tsv|...|sample2.xlsx|...|
+
+[Comment\[Processed Data File md5\]](#Processed_Data_File_md5)<a name="Processed_Data_File_md5"></a>
+: [MD5 hash value](/checksum-e.html) of processed data file here.
+
+[Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
+: Reference to Metabolite identification protocol.
+
+[Metabolite Assignment File](#Metabolite_Assignment_File)<a name="Metabolite_Assignment_File"></a>
+: A TSV file containing information about the metabolites investigated in the study. Information regarding database accession IDs , where in the spectra the metabolite is found and data pertaining to its abundance within the study samples should be in this file. See [Metabolite assignment file](/metabobank/datafile-e.html#ms-maf) for details.
+
+[Comment\[Metabolite Assignment File md5\]](#Metabolite_Assignment_File_md5)<a name="Metabolite_Assignment_File_md5"></a>
+: Enter [MD5 hash value](/checksum-e.html) of metabolite assignment file here.
+
+[Comment\[maf_value_unit\]](#maf_value_unit)<a name="maf_value_unit"></a>
+: Value unit using for the experimental data in metabolite assignment file. (e.g. "peak area", "pico mole" etc)
+
+[Factor Value\[\]](#Factor_Value)<a name="Factor_Value"></a>
+: The factor values for an experiment are the values of the variables (parameters) under investigation. For example, an experiment studying the effect of different temparature (heat stress) on a cell culture would have "temparature" as an experimental variable with "Unit" column to indicate the unit.
+
+## SDRF Protocol Parameters {#SDRF_Protocol_Parameters}
+
+|Protocol parameter|Submission type|Protocol type|
+|---|
+|[Post extraction](#Post_extraction)|Other than MSI,NMR|Extraction|
+|[Derivatization](#Derivatization)|Other than MSI,NMR|Extraction|
+|[Chromatography instrument](#Chromatography_instrument)|LC-MS,LC-DAD-MS,GC-MS,GCGC-MS,GC-FID-MS|Chromatography|
+|[Autosampler model](#Autosampler_model)|LC-MS,LC-DAD-MS,GC-MS,GCGC-MS,GC-FID-MS|Chromatography|
+|[Column model](#Column_model)|LC-MS,LC-DAD-MS,GC-MS,GC-FID-MS|Chromatography|
+|[Column type](#Column_type)|LC-MS,LC-DAD-MS,GC-MS,GC-FID-MS|Chromatography|
+|[Guard column](#Guard_column)|LC-MS,LC-DAD-MS,GC-MS,GCGC-MS,GC-FID-MS|Chromatography|
+|[Column model 1](#Column_model_1)|GCGC-MS|Chromatography|
+|[Column type 1](#Column_type_1)|GCGC-MS|Chromatography|
+|[Column model 2](#Column_model_2)|GCGC-MS|Chromatography|
+|[Column type 2](#Column_type_2)|GCGC-MS|Chromatography|
+|[Detector](#Detector)|LC-DAD-MS,GC-FID-MS|Chromatography|
+|[Signal range](#Signal_range)|LC-DAD-MS|Chromatography|
+|[Resolution](#Resolution)|LC-DAD-MS|Chromatography|
+|[Temperature](#Temperature)|GC-FID-MS|Chromatography|
+|[Scan polarity](#Scan_polarity)|All MS types|Mass spectrometry|
+|[Scan m/z range](#Scan_m/z_range)|All MS types|Mass spectrometry|
+|[Instrument](#Instrument)|All MS types|Mass spectrometry|
+|[Ion source](#Ion_source)|All MS types|Mass spectrometry|
+|[Mass analyzer](#Mass_analyzer)|All MS types|Mass spectrometry|
+|[CE instrument](#CE_instrument)|CE-MS|Capillary Electrophoresis|
+|[Autosampler model](#Autosampler_model)|CE-MS|Capillary Electrophoresis|
+|[Column model](#Column_model)|CE-MS|Capillary Electrophoresis|
+|[Column type](#Column_type)|CE-MS|Capillary Electrophoresis|
+|[DI instrument](#DI_instrument)|DI-MS|Direct infusion|
+|[FIA instrument](#FIA_instrument)|FIA-MS|Flow injection analysis|
+|[Instrument manufacturer](#Instrument_manufacturer)|MSI|Mass spectrometry|
+|[Solvent](#Solvent)|MSI|Mass spectrometry|
+|[Target material](#Target_material)|MSI|Mass spectrometry|
+|[Spatial resolution](#Spatial_resolution)|MSI|Mass spectrometry|
+|[Pixel size x](#Pixel_size_x)|MSI|Mass spectrometry|
+|[Pixel size y](#Pixel_size_y)|MSI|Mass spectrometry|
+|[Max count of pixel x](#Max_count_of_pixel_x)|MSI|Mass spectrometry|
+|[Max count of pixel y](#Max_count_of_pixel_y)|MSI|Mass spectrometry|
+|[Max dimension x](#Max_dimension_x)|MSI|Mass spectrometry|
+|[Max dimension y](#Max_dimension_y)|MSI|Mass spectrometry|
+|[Inlet type](#Inlet_type)|MSI|Mass spectrometry|
+|[Detector](#Detector_MS)|MSI|Mass spectrometry|
+|[Detector mode](#Detector_mode)|MSI|Mass spectrometry|
+|[Resolving power](#Resolving_power)|MSI|Mass spectrometry|
+|[Resolving power m/z](#Resolving_power_m/z)|MSI|Mass spectrometry|
+|[Native spectrum identifier format](#Native_spectrum_identifier_format)|MSI|Mass spectrometry|
+|[Data file content](#Data_file_content)|MSI|Mass spectrometry|
+|[Spectrum representation](#Spectrum_representation)|MSI|Mass spectrometry|
+|[Raw data file format](#Raw_data_file_format)|MSI|Mass spectrometry|
+|[Instrument software](#Instrument_software)|MSI|Mass spectrometry|
+|[Instrument software version](#Instrument_software_version)|MSI|Mass spectrometry|
+|[Line scan direction](#Line_scan_direction)|MSI|Mass spectrometry|
+|[Line scan sequence](#Line_scan_sequence)|MSI|Mass spectrometry|
+|[Scan pattern](#Scan_pattern)|MSI|Mass spectrometry|
+|[Scan type](#Scan_type)|MSI|Mass spectrometry|
+|[Number of scans](#Number_of_scans)|MSI|Mass spectrometry|
+|[Sample mounting](#Sample_mounting)|MSI|Preparation|
+|[Sample preservation](#Sample_preservation)|MSI|Preparation|
+|[Tissue modification](#Tissue_modification)|MSI|Preparation|
+|[Sectioning instrument](#Sectioning_instrument)|MSI|Preparation|
+|[Section thickness](#Section_thickness)|MSI|Preparation|
+|[Matrix](#Matrix)|MSI|Preparation|
+|[Matrix application](#Matrix_application)|MSI|Preparation|
+|[Stain](#Stain)|MSI|Histology|
+|[Data processing software](#Data_processing_software)|MSI|Data processing|
+|[Data processing software version](#Data_processing_software_version)|MSI|Data processing|
+|[Extraction method](#Extraction_method)|NMR|Extraction|
+|[NMR tube type](#NMR_tube_type)|NMR|NMR sample|
+|[Solvent](#Solvent)|NMR|NMR sample|
+|[Sample pH](#Sample_pH)|NMR|NMR sample|
+|[Temperature](#Temperature)|NMR|NMR sample|
+|[Instrument](#Instrument)|NMR|NMR spectroscopy|
+|[NMR probe](#NMR_probe)|NMR|NMR spectroscopy|
+|[Number of transients](#Number_of_transients)|NMR|NMR spectroscopy|
+|[Pulse sequence name](#Pulse_sequence_name)|NMR|NMR spectroscopy|
+|[Magnetic field strength](#Magnetic_field_strength)|NMR|NMR spectroscopy|
+
+[Parameter Value\[Post extraction\]](#Post_extraction)<a name="Post_extraction"></a>
+: This column describes how the sample was extracted into a solvent prior to being injected into the analytical instrument of choice.
+
+[Parameter Value\[Derivatization\]](#Derivatization)<a name="Derivatization"></a>
+: If the sample has been subjected to chemical modification prior to injection.
+
+[Parameter Value\[Chromatography instrument\]](#Chromatography_instrument)<a name="Chromatography_instrument"></a>
+: 'dd the full'name of the instrument you used for the chromatographic part of this assay, including the manufacturer and model number as reported in manufacturer's brochures, user manuals, or on their website.
+
+[Parameter Value\[Autosampler model\]](#Autosampler_model)<a name="Autosampler_model"></a>
+: Manufacturer and model number.
+
+[Parameter Value\[Column model\]](#Column_model)<a name="Column_model"></a>
+: Manufacturer, model number and dimensions.
+
+[Parameter Value\[Column type\]](#Column_type)<a name="Column_type"></a>
+: Type or phase of column used.
+
+[Parameter Value\[Guard column\]](#Guard_column)<a name="Guard_column"></a>
+: Type of guard column used.
+
+[Parameter Value\[Column model 1\]](#Column_model_1)<a name="Column_model_1"></a>
+: TBD
+
+[Parameter Value\[Column type 1\]](#Column_type_1)<a name="Column_type_1"></a>
+: Type or phase of column used.
+
+[Parameter Value\[Column model 2\]](#Column_model_2)<a name="Column_model_2"></a>
+: TBD
+
+[Parameter Value\[Column type 2\]](#Column_type_2)<a name="Column_type_2"></a>
+: TBD
+
+[Parameter Value\[Detector\]](#Detector_Ch)<a name="Detector_Ch"></a>
+: TBD
+
+[Parameter Value\[Signal range\]](#Signal_range)<a name="Signal_range"></a>
+: TBD
+
+[Parameter Value\[Resolution\]](#Resolution)<a name="Resolution"></a>
+: TBD
+
+[Parameter Value\[Temperature\]](#Temperature)<a name="Temperature"></a>
+: TBD
+
+[Parameter Value\[Scan polarity\]](#Scan_polarity)<a name="Scan_polarity"></a>
+: 'positive', 'negative' or 'alternating'
+
+[Parameter Value\[Scan m/z range\]](#Scan_m/z_range)<a name="Scan_mz_range"></a>
+: The range used in the assay.
+
+[Parameter Value\[Instrument\]](#Instrument)<a name="Instrument"></a>
+: Add the full name of the instrument you used for the MS study in this assay, including the model number.
+
+[Parameter Value\[Ion source\]](#Ion_source)<a name="Ion_source"></a>
+: Ion source of the instrument where applicable.
+
+[Parameter Value\[Mass analyzer\]](#Mass_analyzer)<a name="Mass_analyzer"></a>
+: The analyser/detector of the mass fragments generated during the assay.
+
+[Parameter Value\[CE instrument\]](#CE_instrument)<a name="CE_instrument"></a>
+: TBD
+
+[Parameter Value\[Autosampler model\]](#Autosampler_model)<a name="Autosampler_model"></a>
+: TBD
+
+[Parameter Value\[Column model\]](#Column_model)<a name="Column_model"></a>
+: TBD
+
+[Parameter Value\[Column type\]](#Column_type)<a name="Column_type"></a>
+: TBD
+
+[Parameter Value\[DI instrument\]](#DI_instrument)<a name="DI_instrument"></a>
+: TBD
+
+[Parameter Value\[FIA instrument\]](#FIA_instrument)<a name="FIA_instrument"></a>
+: TBD
+
+[Parameter Value\[Instrument manufacturer\]](#Instrument_manufacturer)<a name="Instrument_manufacturer"></a>
+: TBD
+
+[Parameter Value\[Solvent\]](#Solvent)<a name="Solvent"></a>
+: TBD
+
+[Parameter Value\[Target material\]](#Target_material)<a name="Target_material"></a>
+: TBD
+
+[Parameter Value\[Spatial resolution\]](#Spatial_resolution)<a name="Spatial_resolution"></a>
+: TBD
+
+[Parameter Value\[Pixel size x\]](#Pixel_size_x)<a name="Pixel_size_x"></a>
+: TBD
+
+[Parameter Value\[Pixel size y\]](#Pixel_size_y)<a name="Pixel_size_y"></a>
+: TBD
+
+[Parameter Value\[Max count of pixel x\]](#Max_count_of_pixel_x)<a name="Max_count_of_pixel_x"></a>
+: TBD
+
+[Parameter Value\[Max count of pixel y\]](#Max_count_of_pixel_y)<a name="Max_count_of_pixel_y"></a>
+: TBD
+
+[Parameter Value\[Max dimension x\]](#Max_dimension_x)<a name="Max_dimension_x"></a>
+: TBD
+
+[Parameter Value\[Max dimension y\]](#Max_dimension_y)<a name="Max_dimension_y"></a>
+: TBD
+
+[Parameter Value\[Inlet type\]](#Inlet_type)<a name="Inlet_type"></a>
+: TBD
+
+[Parameter Value\[Detector\]](#Detector_MS)<a name="Detector_MS"></a>
+: TBD
+
+[Parameter Value\[Detector mode\]](#Detector_mode)<a name="Detector_mode"></a>
+: TBD
+
+[Parameter Value\[Resolving power\]](#Resolving_power)<a name="Resolving_power"></a>
+: TBD
+
+[Parameter Value\[Resolving power m/z\]](#Resolving_power_m/z)<a name="Resolving_power_m/z"></a>
+: TBD
+
+[Parameter Value\[Native spectrum identifier format\]](#Native_spectrum_identifier_format)<a name="Native_spectrum_identifier_format"></a>
+: TBD
+
+[Parameter Value\[Data file content\]](#Data_file_content)<a name="Data_file_content"></a>
+: TBD
+
+[Parameter Value\[Spectrum representation\]](#Spectrum_representation)<a name="Spectrum_representation"></a>
+: TBD
+
+[Parameter Value\[Raw data file format\]](#Raw_data_file_format)<a name="Raw_data_file_format"></a>
+: TBD
+
+[Parameter Value\[Instrument software\]](#Instrument_software)<a name="Instrument_software"></a>
+: TBD
+
+[Parameter Value\[Instrument software version\]](#Instrument_software_version)<a name="Instrument_software_version"></a>
+: TBD
+
+[Parameter Value\[Line scan direction\]](#Line_scan_direction)<a name="Line_scan_direction"></a>
+: TBD
+
+[Parameter Value\[Line scan sequence\]](#Line_scan_sequence)<a name="Line_scan_sequence"></a>
+: TBD
+
+[Parameter Value\[Scan pattern\]](#Scan_pattern)<a name="Scan_pattern"></a>
+: TBD
+
+[Parameter Value\[Scan type\]](#Scan_type)<a name="Scan_type"></a>
+: TBD
+
+[Parameter Value\[Number of scans\]](#Number_of_scans)<a name="Number_of_scans"></a>
+: TBD
+
+[Parameter Value\[Sample mounting\]](#Sample_mounting)<a name="Sample_mounting"></a>
+: TBD
+
+[Parameter Value\[Sample preservation\]](#Sample_preservation)<a name="Sample_preservation"></a>
+: TBD
+
+[Parameter Value\[Tissue modification\]](#Tissue_modification)<a name="Tissue_modification"></a>
+: TBD
+
+[Parameter Value\[Sectioning instrument\]](#Sectioning_instrument)<a name="Sectioning_instrument"></a>
+: TBD
+
+[Parameter Value\[Section thickness\]](#Section_thickness)<a name="Section_thickness"></a>
+: TBD
+
+[Parameter Value\[Matrix\]](#Matrix)<a name="Matrix"></a>
+: TBD
+
+[Parameter Value\[Matrix application\]](#Matrix_application)<a name="Matrix_application"></a>
+: TBD
+
+[Parameter Value\[Stain\]](#Stain)<a name="Stain"></a>
+: TBD
+
+[Parameter Value\[Data processing software\]](#Data_processing_software)<a name="Data_processing_software"></a>
+: TBD
+
+[Parameter Value\[Data processing software version\]](#Data_processing_software_version)<a name="Data_processing_software_version"></a>
+: TBD
+
+[Parameter Value\[Extraction method\]](#Extraction_method)<a name="Extraction_method"></a>
+: TBD NMR
+
+[Parameter Value\[NMR tube type\]](#NMR_tube_type)<a name="NMR_tube_type"></a>
+: TBD
+
+[Parameter Value\[Solvent\]](#Solvent)<a name="Solvent"></a>
+: TBD
+
+[Parameter Value\[Sample pH\]](#Sample_pH)<a name="Sample_pH"></a>
+: TBD
+
+[Parameter Value\[Temperature\]](#Temperature)<a name="Temperature"></a>
+: TBD
+
+[Parameter Value\[Instrument\]](#Instrument)<a name="Instrument"></a>
+: TBD
+
+[Parameter Value\[NMR probe\]](#NMR_probe)<a name="NMR_probe"></a>
+: TBD
+
+[Parameter Value\[Number of transients\]](#Number_of_transients)<a name="Number_of_transients"></a>
+: TBD
+
+[Parameter Value\[Pulse sequence name\]](#Pulse_sequence_name)<a name="Pulse_sequence_name"></a>
+: TBD
+
+[Parameter Value\[Magnetic field strength\]](#Magnetic_field_strength)<a name="Magnetic_field_strength"></a>
+: TBD

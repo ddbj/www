@@ -40,7 +40,9 @@ IDF (Investigation Description Format) は研究概要、実験デザイン、�
 
 [IDF の例](https://docs.google.com/spreadsheets/d/1PziXaK3Cic1xQXdcCgBZ1g-4LIKvZRZt71nYCH5e22k/edit#gid=30173120)  
 
-各項目の説明はメタデータエクセルをご覧ください。
+## IDF 項目 {#idf_fields}
+
+各項目の説明は [Metadata](/metabobank/metadata-e.html) をご覧ください。日本語の説明ページは作成中です。
 
 ## SDRF  {#sdrf}
 
@@ -48,8 +50,12 @@ SDRF (Sample and Data Relationship Format) はサンプル属性およびサン�
 SDRF はオミックス実験の自然な流れを再現した表であり、
 大元のサンプルから始まり、間にプロトコールを挟みながら最後はサンプルから得られたデータファイルで終わります。
 
+{% include image.html url="magetab/mb-sdrf.jpg" caption="SDRF の構造" class="w550" %}
+
 [SDRF の例](https://docs.google.com/spreadsheets/d/1PziXaK3Cic1xQXdcCgBZ1g-4LIKvZRZt71nYCH5e22k/edit#gid=513795053)  
 
-各項目の説明はメタデータエクセルをご覧ください。
+## SDRF カラム {#sdrf_columns}
 
-{% include image.html url="magetab/mb-sdrf.jpg" caption="SDRF の構造" class="w550" %}
+各項目の説明は [Metadata](/metabobank/metadata-e.html) をご覧ください。日本語の説明ページは作成中です。
+
+
