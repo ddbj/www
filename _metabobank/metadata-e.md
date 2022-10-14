@@ -87,7 +87,7 @@ IDF (Investigation Description Format) is a file describing study overview, expe
 : A Digital Object Identifier (DOI) for each publication (where available). When PubMed ID and DOI are available, use PubMed ID.
 
 [Public Release Date](#Public_Release_Date)<a name="Public_Release_Date"></a>
-: Initial public release date of the data. Filled by MetaboBank.
+: The date the submission was initially released publicly. Filled by MetaboBank.
 
 [Term Source Name](#Term_Source_Name)<a name="Term_Source_Name"></a>
 : The names of the Term Sources (ontologies or databases) used within the IDF and SDRF. The "Term Sources" are defined in the IDF and may be used throughout the IDF and SDRF. This name will be used in all corresponding "Term Source REF" fields.
@@ -102,13 +102,13 @@ IDF (Investigation Description Format) is a file describing study overview, expe
 : The name of the SDRF file accompanying this IDF file. Filled by MetaboBank.
 
 [Comment\[Study type\]](#Study_type)<a name="Study_type"></a>
-: The study types which are applicable to this study. These terms should come from [controlled terms](https://docs.google.com/spreadsheets/d/1b34kjYemmQj-4m5zcp2n7QHCnQA98EjYcf6pOJ9xDTY).
+: The study types which are applicable to this study (e.g., targeted metabolite profiling, lipid profiling). These terms should come from [controlled terms](https://docs.google.com/spreadsheets/d/1b34kjYemmQj-4m5zcp2n7QHCnQA98EjYcf6pOJ9xDTY).
 
 [Comment\[Experiment type\]](#Experiment_type)<a name="Experiment_type"></a>
-: The experiment types which are applicable to this study. These terms should come from [controlled terms](https://docs.google.com/spreadsheets/d/1b34kjYemmQj-4m5zcp2n7QHCnQA98EjYcf6pOJ9xDTY). More than one type can be added. Fixed terms for the submission type are filled by MetaboBank.
+: The experiment types which are applicable to this study (e.g., liquid chromatography-mass spectrometry, capillary electrophoresis-mass spectrometry). These terms should come from [controlled terms](https://docs.google.com/spreadsheets/d/1b34kjYemmQj-4m5zcp2n7QHCnQA98EjYcf6pOJ9xDTY). More than one type can be added. Fixed terms for the submission type are filled by MetaboBank.
 
 [Comment\[Submission type\]](#Submission_type)<a name="Submission_type"></a>
-: The type of this submission. These terms should come from [controlled terms](https://docs.google.com/spreadsheets/d/1b34kjYemmQj-4m5zcp2n7QHCnQA98EjYcf6pOJ9xDTY). Filled by MetaboBank.
+: The type of this submission (e.g., LC-MS, GC-MS). These terms should come from [controlled terms](https://docs.google.com/spreadsheets/d/1b34kjYemmQj-4m5zcp2n7QHCnQA98EjYcf6pOJ9xDTY). Filled by MetaboBank.
 
 [Comment\[BioProject\]](#BioProject)<a name="BioProject"></a>
 : A related BioProject accession (for example, PRJDB1).
@@ -121,7 +121,7 @@ IDF (Investigation Description Format) is a file describing study overview, expe
 Example, Mishima Naoko, Fuji San, Shizuoka Ken.
 
 [Comment\[Submission Date\]](#Submission_Date)<a name="Submission_Date"></a>
-: The date of submission. Filled by MetaboBank.
+: The date this data was submitted. Filled by MetaboBank.
 
 [Comment\[Last Update Date\]](#Last_Update_Date)<a name="Last_Update_Date"></a>
 : The date of last update. Filled by MetaboBank.
@@ -191,7 +191,7 @@ SDRF is a table represents omics experimental flow, starts from source samples a
 : A unique identifier from a particular sample. Use a sample name of BioSample in most cases.
 
 [Extract Name](#Extract_Name)<a name="Extract_Name"></a>
-: A unique identifier from a particular extract. Use a sample name of BioSample in most cases.
+: A unique identifier from a particular extracted material. Use a sample name of BioSample in most cases.
 
 [Labeled Extract Name](#Labeled_Extract_Name)<a name="Labeled_Extract_Name"></a>
 : A unique identifier from a particular extract chemically labeled by isotopes. Optional for non-labeled samples.
@@ -287,6 +287,18 @@ Enter, two filenames for a sample in two columns.
 [Factor Value\[\]](#Factor_Value)<a name="Factor_Value"></a>
 : The factor values for an experiment are the values of the variables (parameters) under investigation. For example, an experiment studying the effect of different temparature (heat stress) on a cell culture would have "temparature" as an experimental variable with "Unit" column to indicate the unit.
 
+[Acquisition Parameter Data File](#Acquisition_Parameter_Data_File)<a name="Acquisition_Parameter_Data_File"></a>
+: Name (or URI) of the acquisition parameter data file gathered for this assay.
+
+[Comment\[Acquisition Parameter Data File md5\]](#Acquisition_Parameter_Data_File_md5)<a name="Acquisition_Parameter_Data_File_md5"></a>
+: Enter [MD5 hash value](/checksum-e.html) of acquisition parameter data file here.
+
+[Free Induction Decay Data File](#Free_Induction_Decay_Data_File)<a name="Free_Induction_Decay_Data_File"></a>
+: Name (or URI) of the free induction decay data file gathered for this assay.
+
+[Comment\[Free Induction Decay Data File md5\]](#Free_Induction_Decay_Data_File_md5)<a name="Free_Induction_Decay_Data_File_md5"></a>
+: Enter [MD5 hash value](/checksum-e.html) of free induction decay data file here.
+
 ## SDRF Protocol Parameters {#SDRF_Protocol_Parameters}
 
 The Protocol Parameters supplement protocols described in IDF. 
@@ -311,7 +323,7 @@ The parameter sets are different for the Submission and the Protocol types.
 |[Temperature](#Temperature)|GC-FID-MS|Chromatography|
 |[Scan polarity](#Scan_polarity)|All MS types|Mass spectrometry|
 |[Scan m/z range](#Scan_m/z_range)|All MS types|Mass spectrometry|
-|[Instrument](#Instrument)|All MS types|Mass spectrometry|
+|[Instrument](#Instrument_MS)|All MS types|Mass spectrometry|
 |[Ion source](#Ion_source)|All MS types|Mass spectrometry|
 |[Mass analyzer](#Mass_analyzer)|All MS types|Mass spectrometry|
 |[CE instrument](#CE_instrument)|CE-MS|Capillary Electrophoresis|
@@ -368,10 +380,10 @@ The parameter sets are different for the Submission and the Protocol types.
 |[Magnetic field strength](#Magnetic_field_strength)|NMR|NMR spectroscopy|
 
 [Parameter Value\[Post extraction\]](#Post_extraction)<a name="Post_extraction"></a>
-: This column describes how the sample was extracted into a solvent prior to being injected into the analytical instrument of choice.
+: Extract concentration, Samples enrichment and resuspension processes e.g. Dried under nitrogen, resuspended in H2O or pyridine, SPE column.
 
 [Parameter Value\[Derivatization\]](#Derivatization)<a name="Derivatization"></a>
-: If the sample has been subjected to chemical modification prior to injection.
+: Derivatization methods e.g. OMS, TMS.
 
 [Parameter Value\[Chromatography instrument\]](#Chromatography_instrument)<a name="Chromatography_instrument"></a>
 : The full name of the instrument you used for the chromatographic part of this assay, including the manufacturer and model number as reported in manufacturer's brochures, user manuals, or on their website.
@@ -383,7 +395,7 @@ The parameter sets are different for the Submission and the Protocol types.
 : Manufacturer, model number and dimensions.
 
 [Parameter Value\[Column type\]](#Column_type)<a name="Column_type"></a>
-: Type or phase of column used.
+: Type or phase of column used e.g reverse phase.
 
 [Parameter Value\[Guard column\]](#Guard_column)<a name="Guard_column"></a>
 : Type of guard column used.
@@ -418,7 +430,7 @@ The parameter sets are different for the Submission and the Protocol types.
 [Parameter Value\[Scan m/z range\]](#Scan_m/z_range)<a name="Scan_mz_range"></a>
 : The range used in the assay.
 
-[Parameter Value\[Instrument\]](#Instrument)<a name="Instrument"></a>
+[Parameter Value\[Instrument\]](#Instrument_MS)<a name="Instrument_MS"></a>
 : Add the full name of the instrument you used for the MS study in this assay, including the model number.
 
 [Parameter Value\[Ion source\]](#Ion_source)<a name="Ion_source"></a>
@@ -554,31 +566,31 @@ The parameter sets are different for the Submission and the Protocol types.
 : TBD
 
 [Parameter Value\[Extraction method\]](#Extraction_method)<a name="Extraction_method"></a>
-: This describes how a sample was extracted from its source material.
+: Extraction method used. e.g. methanol/chloroform extration (1:1 v/v)
 
 [Parameter Value\[NMR tube type\]](#NMR_tube_type)<a name="NMR_tube_type"></a>
-: Size and type of tube.
+: Size and type of tube e.g. 5 mm conventional, Shigemi, mircocell etc.
 
 [Parameter Value\[Solvent\]](#Solvent)<a name="Solvent"></a>
-: Solvent used in the NMR sample.
+: Solvent used in the NMR sample e.g. D2O, CD3OD, CDCl3, etc
 
 [Parameter Value\[Sample pH\]](#Sample_pH)<a name="Sample_pH"></a>
-: Sample pH value.
+: Sample pH value. e.g. 7.4
 
 [Parameter Value\[Temperature\]](#Temperature_NMR)<a name="Temperature_NMR"></a>
-: Sample Temperature value.
+: Sampel temperature run in the magnet, in Kelvin.
 
 [Parameter Value\[Instrument\]](#Instrument_NMR)<a name="Instrument_NMR"></a>
-: Add the full name of the instrument you used for the NMR study in this assay, including the model number and its operating frequency.
+: Add the full name of the instrument you used for the NMR study in this assay, including the model number and its operating frequency. For example, Bruker Avance III.
 
 [Parameter Value\[NMR probe\]](#NMR_probe)<a name="NMR_probe"></a>
-: Add a full description including the name and type of probe used.This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked ' $PROBHD= '.
+: Add a full description including the name and type of probe used.This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked ' $PROBHD= '. For example, 10mm 31P, 5mm HCN coldprobe, 3mm flow-probe, etc.
 
 [Parameter Value\[Number of transients\]](#Number_of_transients)<a name="Number_of_transients"></a>
-: The number of scans acquired. This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked ' $NS= '.
+: The number of scans acquired. This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked ' $NS= '. For example, 128 or 256.
 
 [Parameter Value\[Pulse sequence name\]](#Pulse_sequence_name)<a name="Pulse_sequence_name"></a>
-: The pulse sequence program used with a short description. This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked ' $PULPROG= ' and in the file 'pulseprogram.txt'.
+: The pulse sequence program used with a short description. This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked ' $PULPROG= ' and in the file 'pulseprogram.txt'. Example, noesypr1d.
 
 [Parameter Value\[Magnetic field strength\]](#Magnetic_field_strength)<a name="Magnetic_field_strength"></a>
-: Magnetic field strength in Tesla (T).
+: Magnetic field strength in Tesla (T) e.g. 14.1 T Varian Inova ; 18.8 T Bruker Avance.
