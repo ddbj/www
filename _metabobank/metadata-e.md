@@ -185,43 +185,19 @@ SDRF is a table represents omics experimental flow, starts from source samples a
 : Sample attributes. Use BioSample attributes.
 
 [Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
-: Reference a protocol by its name defined in IDF.
+: Reference protocols defined in IDF by their names.
 
 [Sample Name](#Sample_Name)<a name="Sample_Name"></a>
 : A unique identifier from a particular sample. Use a sample name of BioSample in most cases.
 
-[Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
-: Reference to Extraction protocol.
-
 [Extract Name](#Extract_Name)<a name="Extract_Name"></a>
 : A unique identifier from a particular extract. Use a sample name of BioSample in most cases.
-
-[Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
-: Reference to Chromatography protocol.
-
-[Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
-: Reference to Capillary Electrophoresis protocol.
-
-[Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
-: Reference to Direct infusion protocol.
-
-[Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
-: Reference to Flow injection analysis protocol.
-
-[Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
-: Reference to NMR sample protocol.
 
 [Labeled Extract Name](#Labeled_Extract_Name)<a name="Labeled_Extract_Name"></a>
 : A unique identifier from a particular extract chemically labeled by isotopes. Optional for non-labeled samples.
 
 [Label](#Label)<a name="Label"></a>
 : When samples are chemically labeled by isotopes (chemical isotope labeling), describe isotopes in the Label column and isotope-labeled compounds in the Comment[isotope_labeled_compound] column.
-
-[Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
-: Reference to Mass spectrometry protocol.
-
-[Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
-: Reference to NMR spectroscopy protocol.
 
 [Assay Name](#Assay_Name)<a name="Assay_Name"></a>
 : A unique identifier from a particular assay name. Use a sample name of BioSample in most cases. Technical replicates are differentiated by same sample names, different assay names and technical replicate comments.
@@ -264,12 +240,6 @@ Enter, two filenames for a sample in two columns.
 [Comment\[Raw Data File md5\]](#Raw_Data_File_md5)<a name="Raw_Data_File_md5"></a>
 : Enter [MD5 hash value](/checksum-e.html) of raw data file here.
 
-[Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
-: Reference to Histology protocol.
-
-[Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
-: Reference to Data processing protocol.
-
 [Processed Data File](#Processed_Data_File)<a name="Processed_Data_File"></a>
 : This is where you should enter the processed data files.  
 Files can be specified in several ways.
@@ -305,9 +275,6 @@ Enter, two filenames for a sample in two columns.
 [Comment\[Processed Data File md5\]](#Processed_Data_File_md5)<a name="Processed_Data_File_md5"></a>
 : [MD5 hash value](/checksum-e.html) of processed data file here.
 
-[Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
-: Reference to Metabolite identification protocol.
-
 [Metabolite Assignment File](#Metabolite_Assignment_File)<a name="Metabolite_Assignment_File"></a>
 : A TSV file containing information about the metabolites investigated in the study. Information regarding database accession IDs , where in the spectra the metabolite is found and data pertaining to its abundance within the study samples should be in this file. See [Metabolite assignment file](/metabobank/datafile-e.html#ms-maf) for details.
 
@@ -321,6 +288,9 @@ Enter, two filenames for a sample in two columns.
 : The factor values for an experiment are the values of the variables (parameters) under investigation. For example, an experiment studying the effect of different temparature (heat stress) on a cell culture would have "temparature" as an experimental variable with "Unit" column to indicate the unit.
 
 ## SDRF Protocol Parameters {#SDRF_Protocol_Parameters}
+
+The Protocol Parameters supplement protocols described in IDF. 
+The parameter sets are different for the Submission and the Protocol types.
 
 |Protocol parameter|Submission type|Protocol type|
 |---|
