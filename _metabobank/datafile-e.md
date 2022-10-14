@@ -32,8 +32,9 @@ If there are more than one file for a sample (SDRF one row), group them by tar o
 ### Metabolite assignment file {#ms-maf} 
   
 Submit information of identified metabolites in Metabolite assignment file (MAF). 
-Please see the HELP sheet of the MAF excel for details. 
-* MS MAF excel ([download](/assets/files/submission/metabobank/MetaboBank_maf_MS.xlsx))
+Please see [Metabolite assignment file](#maf) for details.
+
+MS MAF excel ([download](/assets/files/submission/metabobank/MetaboBank_maf_MS.xlsx))
 
 ### Image file {#ms-image} 
 
@@ -61,5 +62,36 @@ If there are more than one file for a sample (SDRF one row), group them by tar o
 ### Metabolite assignment file {#nmr-maf} 
   
 Submit information of identified metabolites in Metabolite assignment file (MAF). 
-Please see the HELP sheet of the MAF excel for details. 
-* NMR MAF excel ([download](/assets/files/submission/metabobank/MetaboBank_maf_NMR.xlsx))
+Please see [Metabolite assignment file](#maf) for details.
+
+NMR MAF excel ([download](/assets/files/submission/metabobank/MetaboBank_maf_NMR.xlsx))
+
+## Metabolite assignment file {#maf}
+
+The metabolite assignment file (MAF) is recommended to include all metabolites/unknowns/features identified or annotated within the study. Please complete the table with as much information as possible. Sample names need to be added in the columns to the right of the table, in each column sample values per metabolite should be included.  
+The fixed MAF columns are as follows.
+
+|Column|Description|Example|Technology type|
+|---|
+|database_identifier|Database identifier for metabolite. ChEBI ID is recommended. This is optional field.|CHEBI:16919|MS and NMR|
+|chemical_formula|Chemical formula of metabolite. This is optional field.|C4H9N3O2|MS and NMR|
+|smiles|SMILES of metabolite. This is optional field.|CN(CC(O)=O)C(N)=N|MS and NMR|
+|inchi|INCHI key of metabolite.  This is optional field.|InChI=1S/C4H9N3O2/c1-7(4(5)6)2-3(8)9/h2H2,1H3,(H3,5,6)(H,8,9)|MS and NMR|
+|metabolite_identification|Identified metabolite name.|creatine|MS and NMR|
+|metabolite_class|Class of metabolite|flavonoids|MS and NMR|
+|mass_to_charge|The mass to charge (m/z) ratio.|132.0765|MS and NMR|
+|fragmentation|Fragmentation|132,0870 l 90,0617 l 87,0618|MS|
+|modifications|Chemical modifications.|[M+H]+|MS|
+|charge|Charge|1|MS|
+|retention_time|Retention time|0.85|MS|
+|chemical_shift|Chemical shift of peak.||NMR|
+|multiplicity|Multiplicity of peak||NMR|
+|taxid|The NCBI taxonomy id for the organism from which the metabolite was obtained. https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi|9606|MS and NMR|
+|species|Species name of the NCBI taxonomy.|Homo sapiens|MS and NMR|
+|database|The database name used for metabolite identification.|CHEBI|MS and NMR|
+|database_version|The database version used for metabolite identification.||MS and NMR|
+|reliability|Reliability. Identification confidence of the metabolite. See https://www.ebi.ac.uk/metabolights/guides/Quick_start_Guide/Study%20Overview||MS and NMR|
+|search_engine|Search engine||MS and NMR|
+|search_engine_score|Search engine score||MS and NMR|
+|peak_identifier|||MS and NMR|
+

@@ -138,20 +138,20 @@ Protocols are central for reproducibility purposes and should provide a detailed
 
 |Protocol type|Description|Submission type|
 |---|
-|Sample collection|Describe the origin of samples, any relevant treatment, time points etc. and the collection and storage procedure.|All types|
-|Extraction|Describe any extraction or preparation methods applied to the sample before analysis. Please also include any control samples prepared for the assay e.g. pooled samples, standards, quality control, solvent blank etc|Other than MSI|
-|Chromatography|Provide details of the instrument and column used (manufacturer), mobile phase and gradient, and settings such as temperatures, flow rate, injection volume.|LC-MS,LC-DAD-MS,GC-MS,GCGC-MS,GC-FID-MS|
-|Mass spectrometry|Provide details of the instrument used (manufacturer), ion source, ionisation mode (positive/negative), m/z range, and specific parameters such as temperatures, voltages, flow rates, scan rates.|Other than NMR|
-|Data processing|Provide details of methods/pipelines and software used to transform the raw data.|All types|
-|Metabolite identification|Provide details of methods/pipelines, reference databases and software used to identify features and/or annotate metabolites.|All types|
-|Capillary Electrophoresis|Provide details of the instrument and column used (manufacturer), mobile phase and gradient, and settings.|CE-MS|
-|Direct infusion|Provide details of the direct infusion methods.|DI-MS|
-|Flow injection analysis|Provide details of the flow injection analysis methods.|FIA-MS|
-|Preparation|Describe sample preparations such as mounting, preservation, tissue modification, sectioning and matrix.|MSI|
-|Histology|Describe histological details such as stain.|MSI|
-|NMR sample|Describe NMR samples such as tube type, solvent, sample pH and temperature.|NMR|
-|NMR spectroscopy|Provide details of NMR instrument, probe and magnetic field strength etc|NMR|
-|NMR assay|Provide details of NMR assay.|NMR|
+|[Sample collection](#Sample_collection_protocol)|Describe the origin of samples, any relevant treatment, time points etc. and the collection and storage procedure.|All types|
+|[Extraction](#Extraction_protocol)|Describe any extraction or preparation methods applied to the sample before analysis. Please also include any control samples prepared for the assay e.g. pooled samples, standards, quality control, solvent blank etc|Other than MSI|
+|[Chromatography](#Chromatography_protocol)|Provide details of the instrument and column used (manufacturer), mobile phase and gradient, and settings such as temperatures, flow rate, injection volume.|LC-MS,LC-DAD-MS,GC-MS,GCGC-MS,GC-FID-MS|
+|[Mass spectrometry](#Mass_spectrometry_protocol)|Provide details of the instrument used (manufacturer), ion source, ionisation mode (positive/negative), m/z range, and specific parameters such as temperatures, voltages, flow rates, scan rates.|Other than NMR|
+|[Data processing](#Data_processing_protocol)|Provide details of methods/pipelines and software used to transform the raw data.|All types|
+|[Metabolite identification](#Metabolite_identification_protocol)|Provide details of methods/pipelines, reference databases and software used to identify features and/or annotate metabolites.|All types|
+|[Capillary Electrophoresis](#Capillary_Electrophoresis_protocol)|Provide details of the instrument and column used (manufacturer), mobile phase and gradient, and settings.|CE-MS|
+|[Direct infusion](#Direct_infusion_protocol)|Provide details of the direct infusion methods.|DI-MS|
+|[Flow injection analysis](#Flow_injection_analysis_protocol)|Provide details of the flow injection analysis methods.|FIA-MS|
+|[Preparation](#Preparation_protocol)|Describe sample preparations such as mounting, preservation, tissue modification, sectioning and matrix.|MSI|
+|[Histology](#Histology_protocol)|Describe histological details such as stain.|MSI|
+|[NMR sample](#NMR_sample_protocol)|Describe NMR samples such as tube type, solvent, sample pH and temperature.|NMR|
+|[NMR spectroscopy](#NMR_spectroscopy_protocol)|Provide details of NMR instrument, probe and magnetic field strength etc|NMR|
+|[NMR assay](#NMR_assay_protocol)|Provide details of NMR assay.|NMR|
 
 [Protocol Description](#Protocol_Description)<a name="Protocol_Description"></a>
 : A free-text description of the protocol. This text should be included in a single tab-delimited field. In this field, ASCII, Greek characters and symbols \[° μ ± ≠ &#8786; &#060; &#062; ← ↑ ↓ → ↔ Å\] are allowed for richer description.
@@ -185,7 +185,7 @@ SDRF is a table represents omics experimental flow, starts from source samples a
 : Sample attributes. Use BioSample attributes.
 
 [Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
-: Reference protocols defined in IDF by their names.
+: The column for referencing protocols defined in IDF by their names.
 
 [Sample Name](#Sample_Name)<a name="Sample_Name"></a>
 : A unique identifier from a particular sample. Use a sample name of BioSample in most cases.
@@ -360,8 +360,8 @@ The parameter sets are different for the Submission and the Protocol types.
 |[NMR tube type](#NMR_tube_type)|NMR|NMR sample|
 |[Solvent](#Solvent)|NMR|NMR sample|
 |[Sample pH](#Sample_pH)|NMR|NMR sample|
-|[Temperature](#Temperature)|NMR|NMR sample|
-|[Instrument](#Instrument)|NMR|NMR spectroscopy|
+|[Temperature](#Temperature_NMR)|NMR|NMR sample|
+|[Instrument](#Instrument_NMR)|NMR|NMR spectroscopy|
 |[NMR probe](#NMR_probe)|NMR|NMR spectroscopy|
 |[Number of transients](#Number_of_transients)|NMR|NMR spectroscopy|
 |[Pulse sequence name](#Pulse_sequence_name)|NMR|NMR spectroscopy|
@@ -374,7 +374,7 @@ The parameter sets are different for the Submission and the Protocol types.
 : If the sample has been subjected to chemical modification prior to injection.
 
 [Parameter Value\[Chromatography instrument\]](#Chromatography_instrument)<a name="Chromatography_instrument"></a>
-: 'dd the full'name of the instrument you used for the chromatographic part of this assay, including the manufacturer and model number as reported in manufacturer's brochures, user manuals, or on their website.
+: The full name of the instrument you used for the chromatographic part of this assay, including the manufacturer and model number as reported in manufacturer's brochures, user manuals, or on their website.
 
 [Parameter Value\[Autosampler model\]](#Autosampler_model)<a name="Autosampler_model"></a>
 : Manufacturer and model number.
@@ -389,28 +389,28 @@ The parameter sets are different for the Submission and the Protocol types.
 : Type of guard column used.
 
 [Parameter Value\[Column model 1\]](#Column_model_1)<a name="Column_model_1"></a>
-: TBD
+: Column model of first GCGC assay.
 
 [Parameter Value\[Column type 1\]](#Column_type_1)<a name="Column_type_1"></a>
-: Type or phase of column used.
+: Column type of first GCGC assay.
 
 [Parameter Value\[Column model 2\]](#Column_model_2)<a name="Column_model_2"></a>
-: TBD
+: Column model of second GCGC assay.
 
 [Parameter Value\[Column type 2\]](#Column_type_2)<a name="Column_type_2"></a>
-: TBD
+: Column type of second GCGC assay.
 
 [Parameter Value\[Detector\]](#Detector_Ch)<a name="Detector_Ch"></a>
-: TBD
+: 
 
 [Parameter Value\[Signal range\]](#Signal_range)<a name="Signal_range"></a>
-: TBD
+: 
 
 [Parameter Value\[Resolution\]](#Resolution)<a name="Resolution"></a>
-: TBD
+: 
 
 [Parameter Value\[Temperature\]](#Temperature)<a name="Temperature"></a>
-: TBD
+: 
 
 [Parameter Value\[Scan polarity\]](#Scan_polarity)<a name="Scan_polarity"></a>
 : 'positive', 'negative' or 'alternating'
@@ -554,31 +554,31 @@ The parameter sets are different for the Submission and the Protocol types.
 : TBD
 
 [Parameter Value\[Extraction method\]](#Extraction_method)<a name="Extraction_method"></a>
-: TBD NMR
+: This describes how a sample was extracted from its source material.
 
 [Parameter Value\[NMR tube type\]](#NMR_tube_type)<a name="NMR_tube_type"></a>
-: TBD
+: Size and type of tube.
 
 [Parameter Value\[Solvent\]](#Solvent)<a name="Solvent"></a>
-: TBD
+: Solvent used in the NMR sample.
 
 [Parameter Value\[Sample pH\]](#Sample_pH)<a name="Sample_pH"></a>
-: TBD
+: Sample pH value.
 
-[Parameter Value\[Temperature\]](#Temperature)<a name="Temperature"></a>
-: TBD
+[Parameter Value\[Temperature\]](#Temperature_NMR)<a name="Temperature_NMR"></a>
+: Sample Temperature value.
 
-[Parameter Value\[Instrument\]](#Instrument)<a name="Instrument"></a>
-: TBD
+[Parameter Value\[Instrument\]](#Instrument_NMR)<a name="Instrument_NMR"></a>
+: Add the full name of the instrument you used for the NMR study in this assay, including the model number and its operating frequency.
 
 [Parameter Value\[NMR probe\]](#NMR_probe)<a name="NMR_probe"></a>
-: TBD
+: Add a full description including the name and type of probe used.This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked ' $PROBHD= '.
 
 [Parameter Value\[Number of transients\]](#Number_of_transients)<a name="Number_of_transients"></a>
-: TBD
+: The number of scans acquired. This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked ' $NS= '.
 
 [Parameter Value\[Pulse sequence name\]](#Pulse_sequence_name)<a name="Pulse_sequence_name"></a>
-: TBD
+: The pulse sequence program used with a short description. This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked ' $PULPROG= ' and in the file 'pulseprogram.txt'.
 
 [Parameter Value\[Magnetic field strength\]](#Magnetic_field_strength)<a name="Magnetic_field_strength"></a>
-: TBD
+: Magnetic field strength in Tesla (T).
