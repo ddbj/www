@@ -150,14 +150,6 @@ category: about
         </div>
         </li> 
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/iizuka.jpg" title="飯塚朋代"></p>
-        <div class="explanation">
-            <p class="name">飯塚 朋代</p>
-            <p class="name">Tomoyo Iizuka, PhD</p>
-            <p class="position">データ登録：NSSS</p>
-        </div>
-        </li> 
-        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/kawazoe.jpg" title="川添 将仁"></p>
         <div class="explanation">
             <p class="name">川添 将仁</p>
@@ -165,8 +157,6 @@ category: about
             <p class="position">データ登録：NSSS</p>
         </div>
         </li> 
-      </ul>  
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/lee.jpg" title="李 慶範"></p>
         <div class="explanation">
@@ -175,6 +165,8 @@ category: about
             <p class="position">データ登録：MSS</p>
         </div>
         </li>
+    </ul>  
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/okido.jpg" title="大城戸 利久"></p>
         <div class="explanation">
@@ -191,8 +183,6 @@ category: about
             <p class="position">データ登録：NGS</p>
         </div>
         </li>
-     </ul>  
-    <ul class="list">
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/suzuki.jpg" title="鈴木 紀美子"></p>
             <div class="explanation">
@@ -200,7 +190,9 @@ category: about
                 <p class="name">Kimiko Suzuki</p>
                 <p class="position">データ登録：NGS</p>
             </div>
-        </li> 
+        </li>
+    </ul>  
+    <ul class="list">
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/tokimatsu.jpg" title="時松 敏明"></p>
             <div class="explanation">
@@ -217,8 +209,6 @@ category: about
                 <p class="position">登録データの修正/更新</p>
             </div>
         </li>
-    </ul>
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yokoyama.jpg" title="横山会美"></p>
         <div class="explanation">

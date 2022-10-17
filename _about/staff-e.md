@@ -137,28 +137,21 @@ category: about
         </div>
         </li>
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/iizuka.jpg" title="Tomoyo Iizuka"></p>
-        <div class="explanation">
-            <p class="name">Tomoyo Iizuka, PhD</p>
-            <p class="position">Data Submission: NSSS</p>
-        </div>
-        </li> 
-        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/kawazoe.jpg" title="Masahito Kawazoe"></p>
         <div class="explanation">
             <p class="name">Masahito Kawazoe</p>
             <p class="position">Data Submission: NSSS</p>
         </div>
         </li> 
-    </ul>  
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/lee.jpg" title="Kyungbum Lee"></p>
         <div class="explanation">
             <p class="name">Kyungbum Lee, PhD</p>
             <p class="position">Data Submission: MSS</p>
         </div>
-        </li>  
+        </li>
+    </ul>  
+    <ul class="list">  
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/okido.jpg" title="Toshihisa Okido"></p>
         <div class="explanation">
@@ -173,15 +166,15 @@ category: about
             <p class="position">Data Submission: NGS</p>
         </div>
         </li>
-    </ul>  
-    <ul class="list">
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/suzuki.jpg" title="Kimiko Suzuki"></p>
             <div class="explanation">
                 <p class="name">Kimiko Suzuki</p>
                 <p class="position">Data Submission: NGS</p>
             </div>
-        </li>  
+        </li>
+    </ul>  
+    <ul class="list">  
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/tokimatsu.jpg" title="Toshiaki Tokimatsu"></p>
             <div class="explanation">
@@ -196,8 +189,6 @@ category: about
                 <p class="position">Data Updates/Correction</p>
             </div>
         </li>
-    </ul>
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yokoyama.jpg" title="Emi Yokoyama"></p>
         <div class="explanation">
