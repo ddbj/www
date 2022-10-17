@@ -194,10 +194,10 @@ SDRF is a table represents omics experimental flow, starts from source samples a
 : A unique identifier from a particular extracted material.
 
 [Labeled Extract Name](#Labeled_Extract_Name)<a name="Labeled_Extract_Name"></a>
-: A unique identifier from a particular extract chemically labeled by isotopes. Optional for non-labeled samples.
+: A unique identifier from a particular extract chemically labeled by isotopes. Optional for non-labeled samples. See [FAQ: How to describe samples labeled by isotopes?](/faq/en/isotope-labeling-e.html) for details.
 
 [Label](#Label)<a name="Label"></a>
-: When samples are chemically labeled by isotopes (chemical isotope labeling), describe isotopes in the Label column and isotope-labeled compounds in Comment[isotope_labeled_compound] column.
+: When samples are chemically labeled by isotopes (chemical isotope labeling), describe isotopes in the Label column and isotope-labeled compounds in Comment[isotope_labeled_compound] column. See [FAQ: How to describe samples labeled by isotopes?](/faq/en/isotope-labeling-e.html) for details.
 
 [Assay Name](#Assay_Name)<a name="Assay_Name"></a>
 : A unique identifier from a particular assay name. Technical replicates are represented by rows having same sample names and different assay names with technical replicate comments.
