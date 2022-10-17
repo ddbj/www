@@ -418,16 +418,16 @@ The necessary and recommended parameters are different for each Submission and P
 : Type of second GCGC column.
 
 [Parameter Value\[Detector\]](#Detector_Ch)<a name="Detector_Ch"></a>
-: 
+: TBD.
 
 [Parameter Value\[Signal range\]](#Signal_range)<a name="Signal_range"></a>
-: 
+: TBD.
 
 [Parameter Value\[Resolution\]](#Resolution)<a name="Resolution"></a>
-: 
+: TBD.
 
 [Parameter Value\[Temperature\]](#Temperature_Ch)<a name="Temperature_Ch"></a>
-: 
+: TBD.
 
 [Parameter Value\[Scan polarity\]](#Scan_polarity)<a name="Scan_polarity"></a>
 : An acquisition mode to which specifies weather polarity is negative, positive or alternating.
@@ -466,109 +466,109 @@ The necessary and recommended parameters are different for each Submission and P
 : The manufacturer of the mass spectrometry imaging instrument.
 
 [Parameter Value\[Solvent\]](#Solvent_MSI)<a name="Solvent_MSI"></a>
-:
+: TBD.
 
 [Parameter Value\[Target material\]](#Target_material)<a name="Target_material"></a>
-:
+: TBD.
 
 [Parameter Value\[Spatial resolution\]](#Spatial_resolution)<a name="Spatial_resolution"></a>
-:
+: TBD.
 
 [Parameter Value\[Pixel size x\]](#Pixel_size_x)<a name="Pixel_size_x"></a>
-:
+: TBD.
 
 [Parameter Value\[Pixel size y\]](#Pixel_size_y)<a name="Pixel_size_y"></a>
-:
+: TBD.
 
 [Parameter Value\[Max count of pixel x\]](#Max_count_of_pixel_x)<a name="Max_count_of_pixel_x"></a>
-:
+: TBD.
 
 [Parameter Value\[Max count of pixel y\]](#Max_count_of_pixel_y)<a name="Max_count_of_pixel_y"></a>
-:
+: TBD.
 
 [Parameter Value\[Max dimension x\]](#Max_dimension_x)<a name="Max_dimension_x"></a>
-:
+: TBD.
 
 [Parameter Value\[Max dimension y\]](#Max_dimension_y)<a name="Max_dimension_y"></a>
-:
+: TBD.
 
 [Parameter Value\[Inlet type\]](#Inlet_type)<a name="Inlet_type"></a>
-:
+: TBD.
 
 [Parameter Value\[Detector\]](#Detector_MSI)<a name="Detector_MSI"></a>
-:
+: TBD.
 
 [Parameter Value\[Detector mode\]](#Detector_mode)<a name="Detector_mode"></a>
-:
+: TBD.
 
 [Parameter Value\[Resolving power\]](#Resolving_power)<a name="Resolving_power"></a>
-:
+: TBD.
 
 [Parameter Value\[Resolving power m/z\]](#Resolving_power_mz)<a name="Resolving_power_m/z"></a>
-:
+: TBD.
 
 [Parameter Value\[Native spectrum identifier format\]](#Native_spectrum_identifier_format)<a name="Native_spectrum_identifier_format"></a>
-:
+: TBD.
 
 [Parameter Value\[Data file content\]](#Data_file_content)<a name="Data_file_content"></a>
-:
+: TBD.
 
 [Parameter Value\[Spectrum representation\]](#Spectrum_representation)<a name="Spectrum_representation"></a>
-:
+: TBD.
 
 [Parameter Value\[Raw data file format\]](#Raw_data_file_format)<a name="Raw_data_file_format"></a>
-:
+: TBD.
 
 [Parameter Value\[Instrument software\]](#Instrument_software)<a name="Instrument_software"></a>
-:
+: TBD.
 
 [Parameter Value\[Instrument software version\]](#Instrument_software_version)<a name="Instrument_software_version"></a>
-:
+: TBD.
 
 [Parameter Value\[Line scan direction\]](#Line_scan_direction)<a name="Line_scan_direction"></a>
-:
+: TBD.
 
 [Parameter Value\[Line scan sequence\]](#Line_scan_sequence)<a name="Line_scan_sequence"></a>
-:
+: TBD.
 
 [Parameter Value\[Scan pattern\]](#Scan_pattern)<a name="Scan_pattern"></a>
-:
+: TBD.
 
 [Parameter Value\[Scan type\]](#Scan_type)<a name="Scan_type"></a>
-:
+: TBD.
 
 [Parameter Value\[Number of scans\]](#Number_of_scans)<a name="Number_of_scans"></a>
-:
+: TBD.
 
 [Parameter Value\[Sample mounting\]](#Sample_mounting)<a name="Sample_mounting"></a>
-:
+: TBD.
 
 [Parameter Value\[Sample preservation\]](#Sample_preservation)<a name="Sample_preservation"></a>
-:
+: TBD.
 
 [Parameter Value\[Tissue modification\]](#Tissue_modification)<a name="Tissue_modification"></a>
-:
+: TBD.
 
 [Parameter Value\[Sectioning instrument\]](#Sectioning_instrument)<a name="Sectioning_instrument"></a>
-:
+: TBD.
 
 [Parameter Value\[Section thickness\]](#Section_thickness)<a name="Section_thickness"></a>
-:
+: TBD.
 
 [Parameter Value\[Matrix\]](#Matrix)<a name="Matrix"></a>
-:
+: TBD.
 
 [Parameter Value\[Matrix application\]](#Matrix_application)<a name="Matrix_application"></a>
-:
+: TBD.
 
 [Parameter Value\[Stain\]](#Stain)<a name="Stain"></a>
-:
+: TBD.
 
 [Parameter Value\[Data processing software\]](#Data_processing_software)<a name="Data_processing_software"></a>
-:
+: TBD.
 
 [Parameter Value\[Data processing software version\]](#Data_processing_software_version)<a name="Data_processing_software_version"></a>
-:
+: TBD.
 
 [Parameter Value\[Extraction method\]](#Extraction_method)<a name="Extraction_method"></a>
 : Extraction method used. e.g. methanol/chloroform extration (1:1 v/v)
