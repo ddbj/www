@@ -10,7 +10,7 @@ $(function(){
   var url = window.location.href;
   var host = window.location.host;
   var pathname = window.location.pathname;
-  var protocol = window.location.protocol;	
+  var protocol = window.location.protocol;  
 
   var url_no_params = url.split("?")[0];
 
@@ -28,20 +28,20 @@ $(function(){
     if( $("#search-text").val() ) {
       $("#search-text").attr('placeholder','');
       $("#search-text").css("background-image", "none");
-      $("#search-text").css('text-indent','1px');		
-    }	
+      $("#search-text").css('text-indent','1px');   
+    } 
 
     if( $("#search-text-faq").val() ) {
       $("#search-text-faq").attr('placeholder','');
       $("#search-text-faq").css("background-image", "none");
-      $("#search-text-faq").css('text-indent','1px');		
-    }	
+      $("#search-text-faq").css('text-indent','1px');   
+    } 
 
     if( $("#search-text-news").val() ) {
       $("#search-text-news").attr('placeholder','');
       $("#search-text-news").css("background-image", "none");
-      $("#search-text-news").css('text-indent','1px');		
-    }	
+      $("#search-text-news").css('text-indent','1px');    
+    } 
   });
 
   /* 検索オプションプルダウン選択、検索ボックス入力で青い枠線 */
@@ -51,7 +51,7 @@ $(function(){
     })
     .focusout(function(e){
       $(this).parent("label").css("border", "0.5px solid #888");
-    });	
+    }); 
 
   $("#search-text, #search-text-news, #search-text-faq")
     .focusin(function(e){
@@ -59,7 +59,7 @@ $(function(){
     })
     .focusout(function(e){
       $(this).css("border", "0.5px solid #888");
-    });	
+    }); 
 
   // 選択オプション値
   var selected = "web";
@@ -70,7 +70,7 @@ $(function(){
     selected = $("#search-options option:selected").val();
 
     // 検索ボックスに値が入力されていない場合
-    if( !$("#search-text").val() ) {	
+    if( !$("#search-text").val() ) {  
       if(selected=="ddbj"){
         $("#search-text").attr("placeholder", "Enter accessions or keywords");
         $("#search-text").css("background-image", "none");
@@ -83,7 +83,7 @@ $(function(){
         $("#search-text").attr("placeholder", "カスタム検索");
         $("#search-text").css("background", "url(https://www.google.com/cse/static/images/1x/googlelogo_lightgrey_46x16dp.png) left center no-repeat");
         $("#search-text").css("text-indent", "48px");
-      }		
+      }   
     } 
 
   });
@@ -109,7 +109,7 @@ $(function(){
         $(this).css("background-image", "none");
         $(this).css("text-indent", "1px");
       } else {
-        $(this).attr("placeholder", "カスタム検索");		
+        $(this).attr("placeholder", "カスタム検索");    
         $(this).css("background", "url(https://www.google.com/cse/static/images/1x/googlelogo_lightgrey_46x16dp.png) left center no-repeat");
         $(this).css("text-indent", "48px");
       }
@@ -171,33 +171,33 @@ $(function(){
 
     $("#cse-search-box").submit();
 
-  });	// $("#search-btn").click(function(){
+  }); // $("#search-btn").click(function(){
     
 
   /*
     news faq の個別ページ Google カスタム検索
   */
-  $("#search-text-news").focus(function(){		
+  $("#search-text-news").focus(function(){    
     $(this).attr('placeholder','');
     $(this).css("background-image", "none");
     $(this).css('text-indent','1px');
   }).blur(function(){
     // 検索ボックスに値が入力されていない場合
     if( !$(this).val() ) {
-      $(this).attr("placeholder", "News カスタム検索");		
+      $(this).attr("placeholder", "News カスタム検索");   
       $(this).css("background", "url(https://www.google.com/cse/static/images/1x/googlelogo_lightgrey_46x16dp.png) left center no-repeat");
       $(this).css("text-indent", "48px");
     } 
   });
 
-  $("#search-text-faq").focus(function(){		
+  $("#search-text-faq").focus(function(){   
     $(this).attr('placeholder','');
     $(this).css("background-image", "none");
     $(this).css('text-indent','1px');
   }).blur(function(){
     // 検索ボックスに値が入力されていない場合
     if( !$(this).val() ) {
-      $(this).attr("placeholder", "FAQ カスタム検索");		
+      $(this).attr("placeholder", "FAQ カスタム検索");    
       $(this).css("background", "url(https://www.google.com/cse/static/images/1x/googlelogo_lightgrey_46x16dp.png) left center no-repeat");
       $(this).css("text-indent", "48px");
     } 
@@ -256,9 +256,9 @@ $(function() {
 
     // fq keys の場合のみ in this page の見出しを変更
     if ( filepath == "/ddbj/features" ) {
-      $('#in_this_page > h2').text("Feature keys");			
+      $('#in_this_page > h2').text("Feature keys");     
     } else if ( filepath == "/ddbj/qualifiers" ) {
-      $('#in_this_page > h2').text("Qualifier keys");			
+      $('#in_this_page > h2').text("Qualifier keys");     
     } 
 
   }
@@ -273,10 +273,10 @@ $(function() {
   */
   // デフォルトは最新以外非表示
   $("#pub-list.switch h2:not(:first)").hide();
-  $("#pub-list.switch > ul:not(:first), #pub-list.switch > div:not(:first)").hide();		
+  $("#pub-list.switch > ul:not(:first), #pub-list.switch > div:not(:first)").hide();    
 
   // jump はせずに anchor 指定セクションを表示
-  function show_pub_list_section(selected_id){		
+  function show_pub_list_section(selected_id){    
 
     if ( selected_id=="all" ){
 
@@ -293,7 +293,7 @@ $(function() {
         year_id = RegExp.$1;
 
         $("#pub-list.switch > h2[id!=" + year_id + "]").hide();
-        $("#pub-list.switch > h2[id!=" + year_id + "] ").next("ul,div").hide();				
+        $("#pub-list.switch > h2[id!=" + year_id + "] ").next("ul,div").hide();       
 
         $("#pub-list.switch > h2#" + year_id).show();
         $("#pub-list.switch > h2#" + year_id).next("ul,div").show();
@@ -302,7 +302,7 @@ $(function() {
         
         // デフォルトは最新以外非表示
         $("#pub-list.switch h2:not(:first)").hide();
-        $("#pub-list.switch > ul:not(:first), #pub-list.switch > div:not(:first)").hide();		
+        $("#pub-list.switch > ul:not(:first), #pub-list.switch > div:not(:first)").hide();    
         
       }
 
@@ -318,21 +318,21 @@ $(function() {
       id_in_url = url.substring(url.indexOf("#") + 1);
       show_pub_list_section(id_in_url);
     }
-    $("a").click(function(e){		
-    //$("#in_this_page a").click(function(e){		
+    $("a").click(function(e){   
+    //$("#in_this_page a").click(function(e){   
       if ( $(this).attr("href").match(/#(\d{4})/) || $(this).attr("href").match(/icm-reports.*html#(\d{4})/) ){
-        var selected_id = RegExp.$1;	
-        //var selected_id = $(this).attr("href").replace("#", "");	
+        var selected_id = RegExp.$1;  
+        //var selected_id = $(this).attr("href").replace("#", "");  
         // jump はせずに anchor 指定セクションを表示
         //e.preventDefault();
-        location.hash = '#' + selected_id;			
+        location.hash = '#' + selected_id;      
         show_pub_list_section(selected_id);
       } else {
 
       }
       
 
-    });	
+    }); 
   }
 
 });
@@ -353,7 +353,7 @@ $(function(){
         scrollTop: 0
       }, 700);
       return false;
-    });	
+    }); 
 
     $(window).scroll(function () {
       
@@ -430,19 +430,19 @@ $(function(){
 
     // 上にのみはみ出している場合
     if ( top_diff > 0 && bottom_diff < 0 ){
-      // height をオリジナルからはみ出している分短く、overflow を scroll に			
+      // height をオリジナルからはみ出している分短く、overflow を scroll に      
       $("#side_navigation").css("height", ( $("#side_navigation").height() - top_diff ) + "px");
       $("#side_navigation").css("overflow-y", "scroll");
     // 下にのみはみ出している場合
     } else if ( top_diff < 0 && bottom_diff > 0 ) {
-      // height をオリジナルからはみ出している分短く、overflow を scroll に			
+      // height をオリジナルからはみ出している分短く、overflow を scroll に      
       $("#side_navigation").css("height", ( $("#side_navigation").height() - bottom_diff ) + "px");
       $("#side_navigation").css("overflow-y", "scroll");
     // 両方にのみはみ出している場合
     } else if ( top_diff > 0 && bottom_diff > 0 ) {
-      // height をオリジナルからはみ出している分短く、overflow を scroll に			
+      // height をオリジナルからはみ出している分短く、overflow を scroll に      
       $("#side_navigation").css("height", ( $("#side_navigation").height() - top_diff - bottom_diff ) + "px");
-      $("#side_navigation").css("overflow-y", "scroll");		
+      $("#side_navigation").css("overflow-y", "scroll");    
     // はみ出していない場合
     } else {
       $("#side_navigation").css("height", "auto");
@@ -603,13 +603,11 @@ $(function(){
   var url = window.location.href;
   var host = window.location.host;
   var pathname = window.location.pathname;
-  var protocol = window.location.protocol;	
+  var protocol = window.location.protocol;  
 
   // 言語判定
   var la = "ja";
   if ( pathname.match(/-e.html/) ) la = "en";
-
-  var prms = getUrlVars();
 
   // 親がチェックされていれば表示する
   if( $('.biosample_attr input[value="MIxS"]:checked').val() ){
@@ -667,7 +665,6 @@ $(function(){
     $('.biosample_attr input').removeAttr('checked');
     $('#env_package').hide();
     $('#sample_type ul ul').hide();
-    $('.biosample_attr input:checked').prop('checked', false);
 
     // all 選択時の処理
       $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
@@ -717,11 +714,6 @@ $(function(){
     }); // $.getJSON
 
   }); // $("#all").click(function()
-
-  // パラメータでの指定時
-  if ( prms.all == "all" ) {
-    $('#all').click();
-  }
 
   // パラメータでの指定時
   // package + env 定義属性リスト表示ボタンクリック 
@@ -1107,68 +1099,9 @@ $(function() {
         $(document).scrollTop( $(anchor).offset().top );
       }     
 
-    } else if ( pathname.match(/\/metabobank\/validation/) ) {
-
-      $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1b34kjYemmQj-4m5zcp2n7QHCnQA98EjYcf6pOJ9xDTY/values/rule?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
-
-      var rule_html = "";
-
-      for(var i = 1; i < data.values.length; i++) {
-       
-        var entries = data.values[i];
-
-        var rule_class = entries[0];
-        var rule_id = entries[1];
-        var level = entries[2];
-        var object = entries[3];
-        var name = entries[4];
-        var message = entries[5];
-        var description = entries[6];
-        var description_ja = entries[7];
-
-        rule_html += '<dl>';
-        rule_html += '<dt id="' + rule_id + '"><a class="rule-id" href="#' + rule_id + '">' + rule_id + '</a><span class="rule-level ' + level + '">' + level + '</span>' + '<span class="rule-object"> Object:' + object + '</span>' + '</dt>';        
-
-        if (la == "ja"){
-          rule_html += '<dd><div class="rule-message"><span class="ja rule-message-tag">message:</span> ' + message + '</div>';
-
-          if (description_ja) {
-            rule_html += '<div class="rule-description"><span class="ja rule-description-tag">説明:</span> ' + description_ja + '</div></dd>';
-          } else {
-            rule_html += '<div class="rule-description"></div></dd>';
-          }
-          
-        } else {
-          rule_html += '<dd><div class="rule-message"><span class="rule-message-tag">message:</span> ' + message + '</div>';
-
-          if (description) {
-            rule_html += '<div class="rule-description"><span class="rule-description-tag">description:</span> ' + description + '</div></dd>';
-          } else {
-            rule_html += '<div class="rule-description"></div></dd>';
-          }
-          
-        }
-
-        rule_html += "</dl>";
-
-        poc_html += '<li><a href="#' + rule_id + '" class="toc_chapter">' + rule_id + '</a></li>';
-
-        }     
-    
-      $("#rule").prepend(rule_html);      
-      poc_html += '</ul>';
-    
-      $('#in_this_page').append(poc_html);
-      $('#in_this_page > h2').text("Rules");        
-      
-      // anchor 指定時にページ内遷移
-      if (anchor && $(anchor).length){
-        $(document).scrollTop( $(anchor).offset().top );
-      }     
-
     }); // $.getJSON
 
-  } // if path match
+  }
 
 });
 
@@ -1184,7 +1117,7 @@ $(function() {
   if ( url.split('#')[1] ) anchor = "#" + url.split('#')[1];
 
   var rule_html = '<ul class="menu single_book">';
-  if ( pathname.match(/-e\.html/) ) la = "en";	
+  if ( pathname.match(/-e\.html/) ) la = "en";  
   
   if ( pathname.match(/\/ddbj\/validator/) ){
   
@@ -1294,4 +1227,3 @@ $(function() {
   }
 
 });
-
