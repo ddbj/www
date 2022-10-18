@@ -185,7 +185,7 @@ SDRF is a table represents omics experimental flow, starts from source samples a
 : Sample attributes. Use BioSample attributes used to describe sample characteristics (e.g. organism, strain). The sample_title, description and BioSample accessions are entered in the Comment columns of Source Name. The other non-sample characteristics attributes such as bioproject_id and locus_tag_prefix are excluded from SDRF.
 
 [Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
-: The column for referencing protocols defined in IDF by their names.
+: The column for referencing a protocol defined in IDF by its name. This is the column marking the start of data pertaining to the referencing protocol. The protocol name must be present in all rows of this column.
 
 [Sample Name](#Sample_Name)<a name="Sample_Name"></a>
 : A unique identifier from a particular sample. Use a sample name of BioSample in most cases.
@@ -194,10 +194,10 @@ SDRF is a table represents omics experimental flow, starts from source samples a
 : A unique identifier from a particular extracted material.
 
 [Labeled Extract Name](#Labeled_Extract_Name)<a name="Labeled_Extract_Name"></a>
-: A unique identifier from a particular extract chemically labeled by isotopes. Optional for non-labeled samples. See [FAQ: How to describe samples labeled by isotopes?](/faq/en/isotope-labeling-e.html) for details.
+: A unique identifier from a particular extract chemically labeled by isotopes. Optional for non-labeled samples. See [FAQ: How to describe samples labeled by isotopes?](/faq/en/isotope-labeling-e.html) for details. Leave blank if you don't have one.
 
 [Label](#Label)<a name="Label"></a>
-: When samples are chemically labeled by isotopes (chemical isotope labeling), describe isotopes in the Label column and isotope-labeled compounds in Comment[isotope_labeled_compound] column. See [FAQ: How to describe samples labeled by isotopes?](/faq/en/isotope-labeling-e.html) for details.
+: If you used a chemical or biochemical marker in the sample such as a radioactive isotope of fluorescent dye which is bound to a material in order to make it detectable in an analytical instrument then enter it here. See [FAQ: How to describe samples labeled by isotopes?](/faq/en/isotope-labeling-e.html) for details. Leave blank if you don't have one.
 
 [Assay Name](#Assay_Name)<a name="Assay_Name"></a>
 : A unique identifier from a particular assay name. Technical replicates are represented by rows having same sample names and different assay names with technical replicate comments.
@@ -293,13 +293,13 @@ Enter two filenames for a sample in two columns.
 |40|degree_C|
 
 [Acquisition Parameter Data File](#Acquisition_Parameter_Data_File)<a name="Acquisition_Parameter_Data_File"></a>
-: Name (or URI) of the acquisition parameter data file gathered for this NMR assay.
+: These should contain the acquisition parameter data. In the Bruker raw data file structure, the file is called 'acqus.txt'. Example, acqus1.txt.
 
 [Comment\[Acquisition Parameter Data File md5\]](#Acquisition_Parameter_Data_File_md5)<a name="Acquisition_Parameter_Data_File_md5"></a>
 : Enter [MD5 hash value](/checksum-e.html) of acquisition parameter data file here.
 
 [Free Induction Decay Data File](#Free_Induction_Decay_Data_File)<a name="Free_Induction_Decay_Data_File"></a>
-: Name (or URI) of the free induction decay data file gathered for this NMR assay.
+: This is where you should enter, either the folder or the zipped NMR raw files for each sample in this study. Example, 17_QC1.zip.
 
 [Comment\[Free Induction Decay Data File md5\]](#Free_Induction_Decay_Data_File_md5)<a name="Free_Induction_Decay_Data_File_md5"></a>
 : Enter [MD5 hash value](/checksum-e.html) of free induction decay data file here.
@@ -385,22 +385,22 @@ The necessary and recommended parameters are different for each Submission and P
 |[Magnetic field strength](#Magnetic_field_strength)|NMR|NMR spectroscopy|
 
 [Parameter Value\[Post extraction\]](#Post_extraction)<a name="Post_extraction"></a>
-: Extract concentration, samples enrichment and resuspension processes e.g. Dried under nitrogen, resuspended in H2O or pyridine, SPE column.
+: This column describes how the sample was extracted into a solvent prior to being injected into the analytical instrument of choice. Example, 400 µL water.
 
 [Parameter Value\[Derivatization\]](#Derivatization)<a name="Derivatization"></a>
-: Derivatization methods e.g. OMS, TMS.
+: If the sample has been subjected to chemical modification prior to injection. Example, sylilation.
 
 [Parameter Value\[Chromatography instrument\]](#Chromatography_instrument)<a name="Chromatography_instrument"></a>
-: The full name of the instrument used for the chromatographic part of this assay, including the manufacturer and model number as reported in manufacturer's brochures, user manuals, or on their website.
+: Add the full name of the instrument used for the Chromatographic part of this assay, including the manufacturer and model number as reported in manufacturer's brochures, user manuals, or on their website. Example, Shimadzu Nexera UHPLC system.
 
 [Parameter Value\[Autosampler model\]](#Autosampler_model_Ch)<a name="Autosampler_model_Ch"></a>
 : Manufacturer and model number.
 
 [Parameter Value\[Column model\]](#Column_model_Ch)<a name="Column_model_Ch"></a>
-: Manufacturer, model number and dimensions.
+: Manufacturer, model number and dimensions. Example, HSS T3 C18 (1.8 μm, 1.0 x 100 mm; Waters).
 
 [Parameter Value\[Column type\]](#Column_type_Ch)<a name="Column_type_Ch"></a>
-: Type or phase of column used e.g reverse phase.
+: Type or phase of column used. Example, reverse phase.
 
 [Parameter Value\[Guard column\]](#Guard_column_Ch)<a name="Guard_column_Ch"></a>
 : Type of guard column used.
@@ -433,16 +433,16 @@ The necessary and recommended parameters are different for each Submission and P
 : An acquisition mode to which specifies weather polarity is negative, positive or alternating.
 
 [Parameter Value\[Scan m/z range\]](#Scan_mz_range)<a name="Scan_mz_range"></a>
-: The limit of m/z over which a mass spectrometer can detect ions. e.g 200-1000
+: The m/z range used in the assay. Example, 100-1000.
 
 [Parameter Value\[Instrument\]](#Instrument_MS)<a name="Instrument_MS"></a>
-: The name of the mass spectrometry instrument, manufacturer, model, operational software name and version.
+: Add the full name of the mass spectrometer/detector you used for this LC/MS assay, including the instrument manufacturer and model number as reported in manufacturer's brochures, user manuals, or on their website. Example, Bruker micrOTOF-Q II.
 
 [Parameter Value\[Ion source\]](#Ion_source)<a name="Ion_source"></a>
-: The ion source, vacuum pressure skimmer/focusing lens voltages (e.g. capillary voltage etc.), gas flows (e.g. nebulization gas, cone gas etc.), source temperature.
+: The ion source where applicable to the instrument e.g. ESI.
 
 [Parameter Value\[Mass analyzer\]](#Mass_analyzer)<a name="Mass_analyzer"></a>
-: The analyzer(s) used by the mass spectrometer.
+: The analyser/detector of the mass fragments generated during the assay. Example, Triple quadrupole.
 
 [Parameter Value\[CE instrument\]](#CE_instrument)<a name="CE_instrument"></a>
 : The name of the capillary electrophoresis instrument, manufacturer, model.
@@ -571,31 +571,31 @@ The necessary and recommended parameters are different for each Submission and P
 : TBD.
 
 [Parameter Value\[Extraction method\]](#Extraction_method)<a name="Extraction_method"></a>
-: Extraction method used. e.g. methanol/chloroform extration (1:1 v/v)
+: How a sample was extracted from its source material e.g. Methanol.
 
 [Parameter Value\[NMR tube type\]](#NMR_tube_type)<a name="NMR_tube_type"></a>
-: Size and type of tube e.g. 5 mm conventional, Shigemi, mircocell etc.
+: Size and type of tube. Example, standard 5 mm glass NMR tube (Wilmad, LabGlass, USA).
 
 [Parameter Value\[Solvent\]](#Solvent)<a name="Solvent"></a>
-: Solvent used in the NMR sample e.g. D2O, CD3OD, CDCl3 etc
+: Solvent used in the NMR sample e.g. D2O.
 
 [Parameter Value\[Sample pH\]](#Sample_pH)<a name="Sample_pH"></a>
-: Sample pH value. e.g. 7.4
+: Sample pH value e.g. 7.
 
 [Parameter Value\[Temperature\]](#Temperature_NMR)<a name="Temperature_NMR"></a>
-: Sample temperature run in the magnet in Kelvin.
+: Sample temperature value with relevant temperature unit.
 
 [Parameter Value\[Instrument\]](#Instrument_NMR)<a name="Instrument_NMR"></a>
-: Add the full name of the instrument used for the NMR study in this assay, including the model number and its operating frequency. For example, Bruker Avance III.
+: Add the full name of the instrument you used for the NMR study in this assay, including the model number and its operating frequency. Example, Varian Unity Inova 500 MHz spectrometer.
 
 [Parameter Value\[NMR probe\]](#NMR_probe)<a name="NMR_probe"></a>
-: Add a full description including the name and type of probe used.This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked ' $PROBHD= '. For example, 10mm 31P, 5mm HCN coldprobe, 3mm flow-probe, etc.
+: Add a full description including the name and type of probe used.This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked ' $PROBHD= ' Example, 5 mm CPTCI 1H-13C/15N/D Z-GRD.
 
 [Parameter Value\[Number of transients\]](#Number_of_transients)<a name="Number_of_transients"></a>
-: The number of scans acquired. This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked ' $NS= '. For example, 128 or 256.
+: The number of scans acquired. This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked '$NS='. Example, 128.
 
 [Parameter Value\[Pulse sequence name\]](#Pulse_sequence_name)<a name="Pulse_sequence_name"></a>
-: The pulse sequence program used with a short description. This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked ' $PULPROG= ' and in the file 'pulseprogram.txt'. Example, noesypr1d.
+: The pulse sequence program used with a short description.This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked ' $PULPROG= ' and in the file 'pulseprogram.txt'. Example, 1D 1H with presaturation (presat).
 
 [Parameter Value\[Magnetic field strength\]](#Magnetic_field_strength)<a name="Magnetic_field_strength"></a>
-: Magnetic field strength in Tesla (T) e.g. 14.1 T Varian Inova; 18.8 T Bruker Avance.
+: Magnetic field strength in Tesla (T) e.g. 11.7.
