@@ -30,7 +30,7 @@ lang: ja
 ### 3. 生データと解析済みデータファイルをアップロード   {#upload}
 
 - GEA 登録用ディレクトリに生データと解析済みデータファイルをアップロード
-- \[必要であれば\] アレイデザインが [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA に未登録の場合、GEA 登録用ディレクトリにデータファイルと一緒にアレイデザインファイルをアップロード
+- \[必要であれば\] アレイデザインが [ArrayExpress](https://www.ebi.ac.uk/biostudies/arrayexpress/studies?query=type%3Aarray)/GEA に未登録の場合、GEA 登録用ディレクトリにデータファイルと一緒にアレイデザインファイルをアップロード
 
 ### 4. BioProjectとBioSampleを選択 {#select-bp-bs}
 
@@ -151,7 +151,7 @@ DDBJ センターから登録者に問い合わせた後三か月以上回答が
 
 - Protocol: チェック済みのプロトコールは必須です
 - Publication: 関連する文献を PubMed ID もしくは DOI で指定します。未公表の文献についてはIDが発行された後に[お知らせください](/contact-ddbj.html)。
-- Array Design: [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA にアレイデザインが登録されている場合は "A-XXXX-n" のアクセッション番号を記入します。アレイデザインが未登録の場合は GEA 登録用ディレクトリにアレイデザインファイルをアップロードして [新規アレイデザインを登録](/gea/adf.html) します。
+- Array Design: [ArrayExpress](https://www.ebi.ac.uk/biostudies/arrayexpress/studies?query=type%3Aarray)/GEA にアレイデザインが登録されている場合は "A-XXXX-n" のアクセッション番号を記入します。アレイデザインが未登録の場合は GEA 登録用ディレクトリにアレイデザインファイルをアップロードして [新規アレイデザインを登録](/gea/adf.html) します。
 - Data File Type: マイクロアレイ実験の場合は生データと解析済みデータが必須です。サンプル毎の生データ・解析済みデータファイルの登録を強く推奨します[マイクロアレイ実験に登録可能なファイル形式](/gea/datafile.html#array_data)。
 
 

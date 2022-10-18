@@ -333,7 +333,7 @@ Assays<a name="Assays_section"></a>
 
 
 [Array Design REF](#Array_Design_REF)<a name="Array_Design_REF"></a>  
-: This column contains references to the array design used for each assay. For GEA submissions this should be an ArrayExpress/GEA accession number, e.g. "A-AFFY-2". An array design accession can be found at [ArrayExpress array design search page](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html). The following columns can be used to annotate "Array Design REF" columns:
+: This column contains references to the array design used for each assay. For GEA submissions this should be an ArrayExpress/GEA accession number, e.g. "A-AFFY-2". An array design accession can be found at [ArrayExpress array design search page](https://www.ebi.ac.uk/biostudies/arrayexpress/studies?query=type%3Aarray). The following columns can be used to annotate "Array Design REF" columns:
     
 - [Comment\[\]](#Comment_sdrf)
 

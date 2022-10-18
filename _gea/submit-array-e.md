@@ -30,7 +30,7 @@ metadata can be submitted as a tab-delimited text file.
 ### 3. Upload raw and processed data files {#upload}
 
 - Upload raw and processed data files into the GEA submission directory.
-- \[Optional\] When an array design is not available in [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA, upload an array design file into the GEA submission directory along with data files.
+- \[Optional\] When an array design is not available in [ArrayExpress](https://www.ebi.ac.uk/biostudies/arrayexpress/studies?query=type%3Aarray)/GEA, upload an array design file into the GEA submission directory along with data files.
 
 ### 4. Select a BioProject and BioSample(s) {#select-bp-bs}
 
@@ -153,7 +153,7 @@ Enter information for [IDF (Investigation Description Format)](/gea/metadata-e.h
 
 - Protocol: Pre-checked protocols are mandatory.
 - Publication: Describe associated publications by PubMed ID or DOI. For unpublished manuscript, please [inform us](/contact-ddbj-e.html) the publication ID after assignment.
-- Array Design: When an array design is available in [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html)/GEA, enter an array design accession number "A-XXXX-n". When an array design is not available, [register a new array design](/gea/adf-e.html) by uploading an array design file into the GEA submission directory.
+- Array Design: When an array design is available in [ArrayExpress](https://www.ebi.ac.uk/biostudies/arrayexpress/studies?query=type%3Aarray)/GEA, enter an array design accession number "A-XXXX-n". When an array design is not available, [register a new array design](/gea/adf-e.html) by uploading an array design file into the GEA submission directory.
 - Data File Type: Raw and processed data files are required for microarray experiment submission. We strongly recommend to submitting raw and processed data file per sample. [Accepted Data Files Formats for microarray experiment](/gea/datafile-e.html#array_data).
 
 

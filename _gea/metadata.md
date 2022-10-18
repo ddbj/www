@@ -330,7 +330,7 @@ All "Assay Name" columns must be followed by a "Technology Type" column.
 
 
 [Array Design REF](#Array_Design_REF)<a name="Array_Design_REF" markdown="1"></a>
-: このカラムはアッセイで使われたアレイデザインを参照します。GEA 登録では ArrayExpress/GEA アレイデザインアクセッション番号（例"A-AFFY-2"）、もしくは、番号が無い場合はアレイデザインファイル名を記載します。アレイデザインアクセッション番号は [ArrayExpress array design search page](https://www.ebi.ac.uk/arrayexpress/arrays/browse.html) で検索できます。以下のカラムが "Array Design REF" カラムを注釈するのに使えます。
+: このカラムはアッセイで使われたアレイデザインを参照します。GEA 登録では ArrayExpress/GEA アレイデザインアクセッション番号（例"A-AFFY-2"）、もしくは、番号が無い場合はアレイデザインファイル名を記載します。アレイデザインアクセッション番号は [ArrayExpress array design search page](https://www.ebi.ac.uk/biostudies/arrayexpress/studies?query=type%3Aarray) で検索できます。以下のカラムが "Array Design REF" カラムを注釈するのに使えます。
 
   - [Comment[]](#Comment_sdrf)
 
