@@ -29,7 +29,7 @@ related_pages:
 
 記載可能な識別子は大まかに2種類あります。
 
-### サンプル生物を対象に割り当て
+### サンプル生物を対象に割り当て  {#sample}
 
 一般的にはこちらの記載を期待しています。
 [/strain](/ddbj/qualifiers.html#strain) qualifier が代表的です。他にも 
@@ -42,7 +42,7 @@ related_pages:
 [/cell_line](/ddbj/qualifiers.html#cell_line), 
  などの qualifer があります。
 
-### 配列を対象に割り当て
+### 配列を対象に割り当て  {#seq}
 
 こちらは操作的な記載になります。研究目的により、こちらで記載するほか選択肢がない場面があります。
 
@@ -65,7 +65,7 @@ related_pages:
 
 ## 識別子各論  {#detail}
 
-### 識別子が不要な状況
+### 識別子が不要な状況  {#not_required}
 
 以下の条件を全て満たすようなケースでは識別子を記載する必要はありません。    
 ただし、記載を禁止する意図はありませんので、必要とお考えでしたら、記載してください。
@@ -74,7 +74,7 @@ related_pages:
 - 登録目的が、種同定、生命地理学、疫学、集団遺伝学に類することではない。
 - 登録目的が、遺伝子・タンパク質の同定、機能解析など対象生物における一般的性質の記載。
 
-### 細菌、古細菌
+### 細菌、古細菌  {#bact}
 
 生物種の同定レベル、あるいは、配列の数に関わらず、識別子の記載が求められます。
 
@@ -82,7 +82,7 @@ related_pages:
 - 管理団体に寄託、あるいは、分譲を受けているならば [/culture_collection](/ddbj/qualifiers.html#culture_collection) qualifier
 - 何らかの理由で純系としての記載が困難な場合に [/isolate](/ddbj/qualifiers.html#isolate) qualifier
 
-### 真菌
+### 真菌  {#fungi}
 
 酵母など単細胞生物では、種同定のレベル、あるいは、配列の数に関わらず、識別子の記載が求められます。
 
@@ -96,7 +96,7 @@ related_pages:
 - 標本管理団体に寄託、あるいは、分譲を受けているならば [/specimen_voucher](/ddbj/qualifiers.html#specimen_voucher) qualifier
 - 純系ならば [/strain](/ddbj/qualifiers.html#strain) qualifier
 
-### 植物
+### 植物  {#plant}
 
 単細胞の藻類などでは、種同定のレベル、あるいは、配列の数に関わらず、識別子の記載が求められます。
 
@@ -112,7 +112,7 @@ related_pages:
 - 栽培品種ならば [/cultivar](/ddbj/qualifiers.html#cultivar) qualifier
 - 純系ならば [/strain](/ddbj/qualifiers.html#strain) qualifier
 
-### 動物
+### 動物  {#animal}
 
 原生動物など単細胞生物などでは、種同定のレベル、あるいは、配列の数に関わらず、識別子の記載が求められます。
 
@@ -129,7 +129,7 @@ related_pages:
 - モデル生物の変異系統の樹立、あるいは、その分譲ならば [/bio_material](/ddbj/qualifiers.html#bio_material) qualifier
 - 単離培養して細胞株を樹立、あるいは、その分譲ならば [/cell_line](/ddbj/qualifiers.html#cell_line) qualifier
 
-### ヒト
+### ヒト  {#human}
 
 ヒト由来配列の場合、多型記述などの目的で個体識別子の記載が必要なケースがあると思います。    
 その場合でも、個体識別子は匿名化されている必要があります。個人名、あるいは、個人名を類推させるような識別子は記載を禁じます。
@@ -137,13 +137,13 @@ related_pages:
 - 個体識別子としての [/isolate](/ddbj/qualifiers.html#isolate) qualifier
 - 単離培養して細胞株を樹立、あるいは、その分譲ならば [/cell_line](/ddbj/qualifiers.html#cell_line) qualifier
 
-### ウイルス
+### ウイルス  {#virus}
 
 通常は [/isolate](/ddbj/qualifiers.html#isolate) qualifier の記載を強く推奨します。    
 厳密には純系と確認することは難しいですが、慣習的に [/strain](/ddbj/qualifiers.html#strain) qualifier を記載することも多いため、記載しています。    
 genotype, genogroup はウイルスの種・系統に準ずるようなものであり、サンプル識別子とは なり得ないことにご注意ください。    
 
-### 環境サンプル
+### 環境サンプル  {#env}
 
 通常は [/isolate](/ddbj/qualifiers.html#isolate) qualifier を個体、または、OTU の識別子と見做して記載してください。    
 環境サンプルには [/strain](/ddbj/qualifiers.html#strain) qualifier は記載できません。    
@@ -155,7 +155,7 @@ DNA を cloning しており、その clone と対応付けが可能であれば
 種、亜種、変種以下のレベルで学名を記載する場合、通常、生物名に識別子を含める必要はありません。    
 ただし、下記のようなケースにご注意ください。    
 
-### 細菌、古細菌、単細胞の真菌
+### 細菌、古細菌、単細胞の真菌  {#org_uni}
 
 種を未同定の場合でも、通常は生物名に識別子を含める必要はありません。
 
@@ -163,16 +163,16 @@ DNA を cloning しており、その clone と対応付けが可能であれば
 - シアノバクテリアは分類体系が特殊なため、生物名に strain name などを含めて記載する必要があります。
 - 以前は 微生物などで全ゲノム規模の配列を登録する場合、strain などを生物名に含めて記載していましたが、現在は学名のみの記載を原則としています。
 
-### 動物、植物、多細胞の真菌 
+### 動物、植物、多細胞の真菌   {#org_multi}
 
 新種提唱も含めて種が未同定の場合、生物名に識別子を含めて記載する必要があります。    
 生物名に含める識別子は、必ずしも個体単位である必要はありませんので、同じ種と見做している単位で識別子を割り当ててください。
 
-### ウイルス
+### ウイルス  {#org_virus}
 
 - 他の分類群とは異なり、新種提唱の段階で、学名に準じた記載が可能です。新種提唱の場合、生物名に識別子を含めて記載することを推奨します。
 - 2017年以前は、登録頻度の高い病原性ウイルスの場合、strain を生物名に含めて記載する運用を続けていましたが、新規登録分には適用されません。 
 
-### 環境サンプル
+### 環境サンプル  {#org_env}
 
 ほとんどの場合、種は未同定となりますが、生物名に識別子を含める必要はありません。

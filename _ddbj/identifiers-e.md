@@ -30,7 +30,7 @@ Further, when you propose a new species name, you have to deposit the organism t
 
 There are two types of identifiers that are acceptable for us.
 
-### Assign to the Sample Organisms
+### Assign to the Sample Organisms  {#sample}
 
 In general, we expect you to use this type of identifier.    
 A typical case is to use the [/strain](/ddbj/qualifiers-e.html#strain) qualifier.  The other qualifiers would be 
@@ -43,7 +43,7 @@ A typical case is to use the [/strain](/ddbj/qualifiers-e.html#strain) qualifier
 [/cell_line](/ddbj/qualifiers-e.html#cell_line), 
  and so on. 
 
-### Assign to the Sequences 
+### Assign to the Sequences   {#seq
 
 This type of identifier is operatively described. In cases of your research purpose, you may need to use this type of identifier.    
 
@@ -69,7 +69,7 @@ Please note we do not systematically manage the identifiers of samples.  So, at 
 
 ## In Detail about Identifiers  {#detail}
 
-### Situations where the identifiers not required
+### Situations where the identifiers not required  {#not_required}
 
 When your samples meet all of the following conditions, it is not required to use identifiers for your samples.    
 Please note we do not intend to prohibit using identifiers for your samples, so, we will accept the identifiers of your samples if you need.  
@@ -78,7 +78,7 @@ Please note we do not intend to prohibit using identifiers for your samples, so,
 - Aimed to study neither of identifying species, biogeography, epidemiology, population genetics or the like.
 - Aimed to study identifying and/or functional analysis genes/proteins and so on to describe general features of the subject organisms.
 
-### Bacteria or Archaea
+### Bacteria or Archaea  {#bact}
 
 Some identifiers are required regardless of the taxonomic identification level of the organisms or the number of sequences. 
 
@@ -86,7 +86,7 @@ Some identifiers are required regardless of the taxonomic identification level o
 - For cultured strains deposited to or divided from culture collections, use [/culture_collection](/ddbj/qualifiers-e.html#culture_collection) qualifier
 - In cases difficult to call the pure cultured lines, use [/isolate](/ddbj/qualifiers-e.html#isolate) qualifier
 
-### Fungi
+### Fungi  {#fungi}
 
 In cases of unicellular organisms like yeasts, some identifiers are required regardless of the taxonomic identification level of the organisms or the number of sequences. 
 
@@ -100,7 +100,7 @@ In cases of multicellular organisms like mushrooms, some identifiers may be requ
 - For specimens deposited to or divided from museum/collections, use [/specimen_voucher](/ddbj/qualifiers-e.html#specimen_voucher) qualifier
 - For the pure lines that are expected to be genetically uniform, [/strain](/ddbj/qualifiers-e.html#strain) qualifier
 
-### Plants
+### Plants  {#plant}
 
 In cases of unicellular organisms like algae, some identifiers are required regardless of the taxonomic identification level of the organisms or the number of sequences. 
 
@@ -116,7 +116,7 @@ In cases of multicellular organisms, some identifiers may be required when the s
 - For cultivated varieties, use [/cultivar](/ddbj/qualifiers-e.html#cultivar) qualifier
 - For the pure lines that are expected to be genetically uniform, use [/strain](/ddbj/qualifiers-e.html#strain) qualifier
 
-### Animals
+### Animals  {#animal}
 
 In cases of unicellular organisms like protists, some identifiers are required regardless of the taxonomic identification level of the organisms or the number of sequences. 
 
@@ -133,7 +133,7 @@ In cases of multicellular organisms, some identifiers may be required when the s
 - For mutated strains of model organisms, use [/bio_material](/ddbj/qualifiers-e.html#bio_material) qualifier
 - For immortalised cell lines deposited to or divided from collections, [/cell_line](/ddbj/qualifiers-e.html#cell_line) qualifier
 
-### Human Subjects
+### Human Subjects  {#human}
 
 For the data derived from human subjects, description of individual identifiers may be needed to report polymorphisms or so.    
 Even in these cases, the identifiers must be anonymized.  We prohibit using any personal names or any identifiers that enable inferring personal names. 
@@ -141,13 +141,13 @@ Even in these cases, the identifiers must be anonymized.  We prohibit using any 
 - For the identifiers of individuals, use [/isolate](/ddbj/qualifiers-e.html#isolate) qualifier
 - For immortalised cell lines deposited to or divided from collections, use [/cell_line](/ddbj/qualifiers-e.html#cell_line) qualifier
 
-### Viruses
+### Viruses  {#virus}
 
 Usually, we recommend using [/isolate](/ddbj/qualifiers-e.html#isolate) qualifiers for viral data.    
 It is difficult for viruses to confirm the pure strains strictly, but we conventionally accepted [/strain](/ddbj/qualifiers-e.html#strain) qualifiers for viral sequences.    
 Please note that genotype and genogroup are similar to viral species/lineages, so, they cannot be sample identifiers.    
 
-### Environmental Samples
+### Environmental Samples  {#env}
 
 In general, please describe [/isolate](/ddbj/qualifiers-e.html#isolate) qualifiers as names of individuals or OTUs.  
 You can not use [/strain](/ddbj/qualifiers-e.html#strain) qualifiers for environmental samples.    
@@ -159,7 +159,7 @@ When you have cloned the corresponding DNA samples, describe the clone names in 
 When you describe the organism names in species, subspecies, varieties or lower levels, it is not required to include any identifiers into the organism names.    
 However, please pay attention to the following cases.    
 
-### Bacteria, Archaea, or Unicellular Fungi
+### Bacteria, Archaea, or Unicellular Fungi  {#org_uni}
 
 In cases of unicellular organisms, it is not required to include any identifiers in organism names regardless of the taxonomic identification level. 
 
@@ -167,17 +167,17 @@ In cases of unicellular organisms, it is not required to include any identifiers
 - In cases of cyanobacteria, it is required to include some identifiers such as strain names in organism names. 
 - Previously, the strain names or some other lower taxa was required to be included in the organism names for whole genomic scale sequences from microorganisms.    However, currently, the organism name should be just a scientific name, in principle, even for microbial genomes.
 
-### Animals, Plants, or Multicellular Fungi 
+### Animals, Plants, or Multicellular Fungi   {#org_multi}
 
 In cases of multicellular organisms, it is required to include some identifiers in organism names when the species is not identified or when you propose new species.    
 The identifiers included in organism names do not have to be assigned to every individual, so you should assign an identifier in each unit that is considered to be the same species.
 
-### Viruses
+### Viruses  {#org_virus}
 
 - Different from other domains, descriptions like scientific names can be accepted during species proposing.    In that case, we recommend to include some identifiers into the virus names.
 - By 2017, we used informal names for frequently submitted pathogenic viruses including their strain names and serotypes in the description of organism names.    However, the rule has been discontinued for future submissions.
  
 
-### Environmental Samples
+### Environmental Samples  {#org_env}
 
 For most cases, the species names of the organisms can not be identified, however, it is not required to include any identifiers into the organism names.  
