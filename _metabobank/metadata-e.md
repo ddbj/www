@@ -292,6 +292,9 @@ Enter two filenames for a sample in two columns.
 |37|degree_C|
 |40|degree_C|
 
+[Unit\[\<unit category\>\]](#Unit)<a name="Unit"></a>
+: Used as an attribute column following [Characteristics](#Characteristics), [Factor Value](#Factor_Value) or [Parameter Value](#SDRF_Protocol_Parameters). This column contains terms describing the unit(s) to be applied to the values in the preceding column. The type of unit is included in the column heading, e.g. "Unit[temperature]". 
+
 [Acquisition Parameter Data File](#Acquisition_Parameter_Data_File)<a name="Acquisition_Parameter_Data_File"></a>
 : These should contain the acquisition parameter data. In the Bruker raw data file structure, the file is called 'acqus.txt'. Example, acqus1.txt.
 
@@ -589,13 +592,13 @@ The necessary and recommended parameters are different for each Submission and P
 : Add the full name of the instrument you used for the NMR study in this assay, including the model number and its operating frequency. Example, Varian Unity Inova 500 MHz spectrometer.
 
 [Parameter Value\[NMR probe\]](#NMR_probe)<a name="NMR_probe"></a>
-: Add a full description including the name and type of probe used.This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked ' $PROBHD= ' Example, 5 mm CPTCI 1H-13C/15N/D Z-GRD.
+: Add a full description including the name and type of probe used.This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked '$PROBHD=' Example, 5 mm CPTCI 1H-13C/15N/D Z-GRD.
 
 [Parameter Value\[Number of transients\]](#Number_of_transients)<a name="Number_of_transients"></a>
 : The number of scans acquired. This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked '$NS='. Example, 128.
 
 [Parameter Value\[Pulse sequence name\]](#Pulse_sequence_name)<a name="Pulse_sequence_name"></a>
-: The pulse sequence program used with a short description.This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked ' $PULPROG= ' and in the file 'pulseprogram.txt'. Example, 1D 1H with presaturation (presat).
+: The pulse sequence program used with a short description.This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked '$PULPROG=' and in the file 'pulseprogram.txt'. Example, 1D 1H with presaturation (presat).
 
 [Parameter Value\[Magnetic field strength\]](#Magnetic_field_strength)<a name="Magnetic_field_strength"></a>
 : Magnetic field strength in Tesla (T) e.g. 11.7.
