@@ -139,7 +139,7 @@ Protocols are central for reproducibility purposes and should provide a detailed
 |Protocol type|Description|Submission type|
 |---|
 |[Sample collection](#Sample_collection_protocol)|Describe the origin of samples, any relevant treatment, time points etc. and the collection and storage procedure.|All types|
-|[Extraction](#Extraction_protocol)|Describe any extraction or preparation methods applied to the sample before analysis. Please also include any control samples prepared for the assay e.g. pooled samples, standards, quality control, solvent blank etc|Other than MSI|
+|[Extraction](#Extraction_protocol)|Describe any extraction or preparation methods applied to the sample before analysis. Please also include any control samples prepared for the assay, e.g. pooled samples, standards, quality control, solvent blank etc|Other than MSI|
 |[Chromatography](#Chromatography_protocol)|Provide details of the instrument and column used (manufacturer), mobile phase and gradient, and settings such as temperatures, flow rate, injection volume.|LC-MS,LC-DAD-MS,GC-MS,GCGC-MS,GC-FID-MS|
 |[Mass spectrometry](#Mass_spectrometry_protocol)|Provide details of the instrument used (manufacturer), ion source, ionisation mode (positive/negative), m/z range, and specific parameters such as temperatures, voltages, flow rates, scan rates.|Other than NMR|
 |[Data processing](#Data_processing_protocol)|Provide details of methods/pipelines and software used to transform the raw data.|All types|
@@ -293,7 +293,7 @@ Enter two filenames for a sample in two columns.
 |40|degree_C|
 
 [Unit\[\<unit category\>\]](#Unit)<a name="Unit"></a>
-: Used as an attribute column following [Characteristics](#Characteristics), [Factor Value](#Factor_Value) or [Parameter Value](#SDRF_Protocol_Parameters). This column contains terms describing the unit(s) to be applied to the values in the preceding column. The type of unit is included in the column heading, e.g. "Unit[temperature]". 
+: Used as an attribute column following [Characteristics](#Characteristics), [Factor Value](#Factor_Value) or [Parameter Value](#SDRF_Protocol_Parameters). This column contains terms describing the unit(s) to be applied to the values in the preceding column. The type of unit is included in the column heading,, e.g. "Unit[temperature]". 
 
 [Acquisition Parameter Data File](#Acquisition_Parameter_Data_File)<a name="Acquisition_Parameter_Data_File"></a>
 : These should contain the acquisition parameter data. In the Bruker raw data file structure, the file is called 'acqus.txt'. Example, acqus1.txt.
@@ -442,7 +442,7 @@ The necessary and recommended parameters are different for each Submission and P
 : Add the full name of the mass spectrometer/detector you used for this LC/MS assay, including the instrument manufacturer and model number as reported in manufacturer's brochures, user manuals, or on their website. Example, Bruker micrOTOF-Q II.
 
 [Parameter Value\[Ion source\]](#Ion_source)<a name="Ion_source"></a>
-: The ion source where applicable to the instrument e.g. ESI.
+: The ion source where applicable to the instrument, e.g. ESI.
 
 [Parameter Value\[Mass analyzer\]](#Mass_analyzer)<a name="Mass_analyzer"></a>
 : The analyser/detector of the mass fragments generated during the assay. Example, Triple quadrupole.
@@ -574,16 +574,16 @@ The necessary and recommended parameters are different for each Submission and P
 : TBD.
 
 [Parameter Value\[Extraction method\]](#Extraction_method)<a name="Extraction_method"></a>
-: How a sample was extracted from its source material e.g. Methanol.
+: How a sample was extracted from its source material, e.g. Methanol.
 
 [Parameter Value\[NMR tube type\]](#NMR_tube_type)<a name="NMR_tube_type"></a>
 : Size and type of tube. Example, standard 5 mm glass NMR tube (Wilmad, LabGlass, USA).
 
 [Parameter Value\[Solvent\]](#Solvent)<a name="Solvent"></a>
-: Solvent used in the NMR sample e.g. D2O.
+: Solvent used in the NMR sample, e.g. D2O.
 
 [Parameter Value\[Sample pH\]](#Sample_pH)<a name="Sample_pH"></a>
-: Sample pH value e.g. 7.
+: Sample pH value, e.g. 7.
 
 [Parameter Value\[Temperature\]](#Temperature_NMR)<a name="Temperature_NMR"></a>
 : Sample temperature value with relevant temperature unit.
@@ -601,4 +601,4 @@ The necessary and recommended parameters are different for each Submission and P
 : The pulse sequence program used with a short description.This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked '$PULPROG=' and in the file 'pulseprogram.txt'. Example, 1D 1H with presaturation (presat).
 
 [Parameter Value\[Magnetic field strength\]](#Magnetic_field_strength)<a name="Magnetic_field_strength"></a>
-: Magnetic field strength in Tesla (T) e.g. 11.7.
+: Magnetic field strength in Tesla (T), e.g. 11.7.
