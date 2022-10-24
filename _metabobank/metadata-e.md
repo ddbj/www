@@ -48,10 +48,10 @@ IDF (Investigation Description Format) is a file describing study overview, expe
 : Accession number assigned by Metabobank (e.g. MTBKS1). Filled by MetaboBank.
 
 [Study Title](#Study_Title)<a name="Study_Title"></a>
-: The overall title of the study. This field can only have one value.
+: The overall title of the study.
 
 [Study Description](#Study_Description)<a name="Study_Description"></a>
-: A short paragraph describing the study as free-text. The text should clearly explain what you did in your study. In this field, ASCII, Greek characters and symbols \[° μ ± ≠ &#8786; &#060; &#062; ← ↑ ↓ → ↔ Å\] are allowed for richer description. This field can only have one value. 
+: A short paragraph describing the study as free-text. The text should clearly explain what you did in your study. In this field, ASCII, Greek characters and symbols \[° μ ± ≠ &#8786; &#060; &#062; ← ↑ ↓ → ↔ Å\] are allowed for richer description.
 
 [Experimental Design](#Experimental_Design)<a name="Experimental_Design"></a>
 : The experiment design types which are applicable to this study. These terms should come from [controlled terms](https://docs.google.com/spreadsheets/d/1b34kjYemmQj-4m5zcp2n7QHCnQA98EjYcf6pOJ9xDTY).
@@ -75,7 +75,7 @@ IDF (Investigation Description Format) is a file describing study overview, expe
 : The Email address of each submitter. Enter addresses of submitters in each column. The Email address is not publicly displayed.
 
 [Person Affiliation](#Person_Affiliation)<a name="Person_Affiliation"></a>
-: The organization affiliation of each submitter.
+: The organization affiliation of each submitter. Enter affiliations of submitters in each column.
 
 [Person Roles](#Person_Roles)<a name="Person_Roles"></a>
 : The role(s) performed by each person. Only "submitter" role is permitted. Filled by MetaboBank.
@@ -114,10 +114,10 @@ IDF (Investigation Description Format) is a file describing study overview, expe
 : A related BioProject accession (for example, PRJDB1).
 
 [Comment\[Related study\]](#Related_study)<a name="Related_study"></a>
-: Related MetaboBank study accession(s). List accessions in the format of "DB:ID" in tab-delimited fields. Example, MB:MTBKS202\<tab\>MB:MTBKS203\<tab\>Metabolonote:SE112.
+: Related accession number(s) of MetaboBank (MB) or other databases. List accessions in the format of "DB:ID" in tab-delimited fields. Example, MB:MTBKS202\<tab\>MB:MTBKS203\<tab\>Metabolonote:SE112.
 
 [Comment\[Contributor\]](#Contributor)<a name="Contributor"></a>
-: Name of each contributor. Contributors such as technical staffs can be listed in the [Comment\[Contributor\]](#Contributor) regardless of they are submitters or not. The contributors do not automatically have edit rights as submitters.  
+: Name of each contributor. Contributors such as technical staffs can be listed in the [Comment\[Contributor\]](#Contributor) regardless of they are submitters or not. The contributors do not automatically have edit rights if they are not specified as submitters.  
 Example, Mishima Naoko, Fuji San, Shizuoka Ken.
 
 [Comment\[Submission Date\]](#Submission_Date)<a name="Submission_Date"></a>
@@ -138,7 +138,7 @@ Protocols are central for reproducibility purposes and should provide a detailed
 
 |Protocol type|Description|Submission type|
 |---|
-|[Sample collection](#Sample_collection_protocol)|Describe the origin of samples, any relevant treatment, time points etc. and the collection and storage procedure.|All types|
+|[Sample collection](#Sample_collection_protocol)|Describe the origin of samples, any relevant treatment, time points etc and the collection and storage procedure.|All types|
 |[Extraction](#Extraction_protocol)|Describe any extraction or preparation methods applied to the sample before analysis. Please also include any control samples prepared for the assay, e.g. pooled samples, standards, quality control, solvent blank etc|Other than MSI|
 |[Chromatography](#Chromatography_protocol)|Provide details of the instrument and column used (manufacturer), mobile phase and gradient, and settings such as temperatures, flow rate, injection volume.|LC-MS,LC-DAD-MS,GC-MS,GCGC-MS,GC-FID-MS|
 |[Mass spectrometry](#Mass_spectrometry_protocol)|Provide details of the instrument used (manufacturer), ion source, ionisation mode (positive/negative), m/z range, and specific parameters such as temperatures, voltages, flow rates, scan rates.|Other than NMR|
