@@ -194,10 +194,10 @@ SDRF is a table represents omics experimental flow, starts from source samples a
 : A unique identifier from a particular extracted material.
 
 [Labeled Extract Name](#Labeled_Extract_Name)<a name="Labeled_Extract_Name"></a>
-: A unique identifier from a particular extract chemically labeled by isotopes. Optional for non-labeled samples. See [FAQ: How to describe samples labeled by isotopes?](/faq/en/isotope-labeling-e.html) for details. Leave blank if you don't have one.
+: A unique identifier from a particular extract chemically labeled by isotopes. Optional for non-labeled samples. Leave blank if you don't have one. See [FAQ: How to describe samples labeled by isotopes?](/faq/en/isotope-labeling-e.html) for details. 
 
 [Label](#Label)<a name="Label"></a>
-: If you used a chemical or biochemical marker in the sample such as a radioactive isotope of fluorescent dye which is bound to a material in order to make it detectable in an analytical instrument then enter it here. See [FAQ: How to describe samples labeled by isotopes?](/faq/en/isotope-labeling-e.html) for details. Leave blank if you don't have one.
+: If you used a chemical or biochemical marker in the sample such as a radioactive isotope which is bound to a material in order to make it detectable in an analytical instrument then enter it here. Leave blank if you don't have one. See [FAQ: How to describe samples labeled by isotopes?](/faq/en/isotope-labeling-e.html) for details. 
 
 [Assay Name](#Assay_Name)<a name="Assay_Name"></a>
 : A unique identifier from a particular assay name. Technical replicates are represented by rows having same sample names and different assay names with technical replicate comments.
@@ -276,7 +276,7 @@ Enter two filenames for a sample in two columns.
 : Enter [MD5 hash value](/checksum-e.html) of processed data file here.
 
 [Metabolite Assignment File](#Metabolite_Assignment_File)<a name="Metabolite_Assignment_File"></a>
-: A TSV file containing information about the metabolites investigated in the study. Information regarding database accession IDs , where in the spectra the metabolite is found and data pertaining to its abundance within the study samples should be reported in this file format. See [Metabolite assignment file](/metabobank/datafile-e.html#ms-maf) for details.
+: A TSV file containing information about the metabolites investigated in the study. Information regarding database accession IDs, where in the spectra the metabolite is found and data pertaining to its abundance within the study samples should be reported in this file format. See [Metabolite assignment file](/metabobank/datafile-e.html#ms-maf) for details.
 
 [Comment\[Metabolite Assignment File md5\]](#Metabolite_Assignment_File_md5)<a name="Metabolite_Assignment_File_md5"></a>
 : Enter [MD5 hash value](/checksum-e.html) of metabolite assignment file here.

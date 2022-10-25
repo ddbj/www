@@ -185,8 +185,430 @@ SDRF はオミックス実験の自然な流れを再現した表であり、
 
 [SDRF の例](https://docs.google.com/spreadsheets/d/1PziXaK3Cic1xQXdcCgBZ1g-4LIKvZRZt71nYCH5e22k/edit#gid=513795053)  
 
-## SDRF カラム {#sdrf_columns}
+## SDRF カラム {#SDRF_columns}
 
-各項目の説明は [Metadata](/metabobank/metadata-e.html) をご覧ください。日本語の説明ページは作成中です。
+[Source Name](#Source_Name)<a name="Source_Name"></a>
+: サンプルソースのユニークな ID。基本的に BioSample の sample name を使います。
 
+[Characteristics](#Characteristics)<a name="Characteristics"></a>
+: サンプル属性。サンプル記述に用いた BioSample 属性 (例 organism や strain) を使います。sample_title、description と BioSample アクセッション番号は Source Name の Comment カラムに記載します。サンプルの特徴に関する属性以外の bioproject_id や locus_tag_prefix といったデータ管理用の属性は SDRF から除外されます。
 
+[Protocol REF](#Protocol_REF)<a name="Protocol_REF"></a>
+: IDF で定義したプロトコールを protocol name で参照するカラム。このカラムが参照プロトコールに関する情報を記載するセクションの始まりになります。Protocol name はこのカラムの全ての行に記載されている必要があります。
+
+[Sample Name](#Sample_Name)<a name="Sample_Name"></a>
+: サンプルのユニークな ID。基本的に BioSample の sample name を使います。
+
+[Extract Name](#Extract_Name)<a name="Extract_Name"></a>
+: 抽出したマテリアルのユニークな ID。
+
+[Labeled Extract Name](#Labeled_Extract_Name)<a name="Labeled_Extract_Name"></a>
+: 同位体で標識した抽出物の ID。標識していないサンプルでは任意。値が無い場合は空欄にします。[FAQ: サンプルを安定同位体で標識した場合の記載方法は？](/faq/ja/isotope-labeling.html)を参照。
+
+[Label](#Label)<a name="Label"></a>
+: 測定機器で検出できるように安定同位体などで試料を標識した場合、標識化合物を記入します。値が無い場合は空欄にします。[FAQ: サンプルを安定同位体で標識した場合の記載方法は？](/faq/ja/isotope-labeling.html)を参照。
+
+[Assay Name](#Assay_Name)<a name="Assay_Name"></a>
+: アッセイに対するユニークな ID。テクニカルレプリケートは同じ sample name、technical replicate Comment を持った異なる assay name の行として表現されます。
+
+[Comment\[technical_replicate\]](#technical_replicate)<a name="technical_replicate"></a>
+: 1、2、3 などのテクニカルレプリケートを区別する値を記載。
+
+[Raw Data File](#Raw_Data_File)<a name="Raw_Data_File"></a>
+: 生データファイルを記載するカラム。データがオープンソース形式のファイル (例 mzML や nmrML) に変換されている場合、それらのファイルもこのカラムに記載します。  
+ファイルの指定方法は何通りかあります。  
+
+各サンプルの各々のファイル名を一つのカラムに記入。　　
+
+|Raw Data File|Comment\[Raw Data File md5\]|
+|---|
+|sample1.RAW.gz|...|
+|sample2.RAW.gz|...|
+
+各サンプルの各々の tar/zip アーカイブしたファイル名を一つのカラムに記入。　　
+
+|Raw Data File|Comment\[Raw Data File md5\]|
+|---|
+|sample1.RAW.tar.gz|...|
+|sample1.RAW.tar.gz|...|
+
+各サンプルのファイルを含むサブディレクトリ名を一つのカラムに記入。　　
+
+|Raw Data File|Comment\[Raw Data File md5\]|
+|---|
+|sample1/|...|
+|sample2/|...|
+
+各サンプルに対応する二つのファイル名を二つのカラムにそれぞれ記入。
+
+|Raw Data File|Comment\[Raw Data File md5\]|Raw Data File|Comment\[Raw Data File md5\]|
+|---|
+|sample1.RAW.gz|...|sample1.mzML|...|
+|sample2.RAW.gz|...|sample2.mzML|...|
+
+[Comment\[Raw Data File md5\]](#Raw_Data_File_md5)<a name="Raw_Data_File_md5"></a>
+: 生データファイルの [MD5 ハッシュ値](/checksum.html) を記入。
+
+[Processed Data File](#Processed_Data_File)<a name="Processed_Data_File"></a>
+: 解析済みデータファイルを記載。解析済みデータファイルは生データを処理したファイルからサマリーテーブルまで広い意味を持っています。    
+ファイルの指定方法は何通りかあります。 
+
+各サンプルの各々のファイル名を一つのカラムに記入。　　
+
+|Processed Data File|Comment\[Processed Data File md5\]|
+|---|
+|sample1.tsv|...|
+|sample2.tsv|...|
+
+各サンプルの各々の tar/zip アーカイブしたファイル名を一つのカラムに記入。　　
+
+|Processed Data File|Comment\[Processed Data File md5\]|
+|---|
+|sample1.tsv.tar.gz|...|
+|sample1.tsv.tar.gz|...|
+
+各サンプルのファイルを含むサブディレクトリ名を一つのカラムに記入。　　
+
+|Processed Data File|Comment\[Processed Data File md5\]|
+|---|
+|sample1/|...|
+|sample2/|...|
+
+各サンプルに対応する二つのファイル名を二つのカラムにそれぞれ記入。
+
+|Processed Data File|Comment\[Processed Data File md5\]|Processed Data File|Comment\[Processed Data File md5\]|
+|---|
+|sample1.tsv|...|sample1.xlsx|...|
+|sample2.tsv|...|sample2.xlsx|...|
+
+[Comment\[Processed Data File md5\]](#Processed_Data_File_md5)<a name="Processed_Data_File_md5"></a>
+: 解析済みデータファイルの [MD5 ハッシュ値](/checksum.html)を記入。
+
+[Metabolite Assignment File](#Metabolite_Assignment_File)<a name="Metabolite_Assignment_File"></a>
+: この研究で解析した代謝物に関する情報を記載した TSV ファイル。データベースのアクセッション番号、代謝物のスペクトル、サンプル中の濃度などはこのファイル形式で登録します。
+詳細は [Metabolite assignment file](/metabobank/datafile.html#ms-maf) を参照。
+
+[Comment\[Metabolite Assignment File md5\]](#Metabolite_Assignment_File_md5)<a name="Metabolite_Assignment_File_md5"></a>
+: metabolite assignment file の [MD5 ハッシュ値](/checksum.html) を記入。
+
+[Comment\[maf_value_unit\]](#maf_value_unit)<a name="maf_value_unit"></a>
+: metabolite assignment file 中の値の単位 (例 peak area や pico mole)。
+
+[Factor Value\[\]](#Factor_Value)<a name="Factor_Value"></a>
+: 研究で調べている「変数 (パラメータ)」例えば、異なる温度 (熱ストレス) が培養細胞に与える影響を解析している研究では "temperature" が変数となり、その数値は単位を示す "Unit" カラムと共に記載します。
+
+|Factor Value\[temperature\]|Unit\[temperature\]|
+|---|
+|37|degree_C|
+|40|degree_C|
+
+[Unit\[\<unit category\>\]](#Unit)<a name="Unit"></a>
+: Used as an attribute column following [Characteristics](#Characteristics), [Factor Value](#Factor_Value) or [Parameter Value](#SDRF_Protocol_Parameters). This column contains terms describing the unit(s) to be applied to the values in the preceding column. The type of unit is included in the column heading,, e.g. "Unit[temperature]". 
+
+[Acquisition Parameter Data File](#Acquisition_Parameter_Data_File)<a name="Acquisition_Parameter_Data_File"></a>
+: These should contain the acquisition parameter data. In the Bruker raw data file structure, the file is called 'acqus.txt'. Example, acqus1.txt.
+
+[Comment\[Acquisition Parameter Data File md5\]](#Acquisition_Parameter_Data_File_md5)<a name="Acquisition_Parameter_Data_File_md5"></a>
+: Enter [MD5 hash value](/checksum-e.html) of acquisition parameter data file here.
+
+[Free Induction Decay Data File](#Free_Induction_Decay_Data_File)<a name="Free_Induction_Decay_Data_File"></a>
+: This is where you should enter, either the folder or the zipped NMR raw files for each sample in this study. Example, 17_QC1.zip.
+
+[Comment\[Free Induction Decay Data File md5\]](#Free_Induction_Decay_Data_File_md5)<a name="Free_Induction_Decay_Data_File_md5"></a>
+: Enter [MD5 hash value](/checksum-e.html) of free induction decay data file here.
+
+## SDRF Protocol Parameters {#SDRF_Protocol_Parameters}
+
+Protocol Parameters supplement protocols described in IDF. 
+The necessary and recommended parameters are different for each Submission and Protocol type.
+
+|Protocol parameter|Submission type|Protocol type|
+|---|
+|[Post extraction](#Post_extraction)|Other than MSI,NMR|Extraction|
+|[Derivatization](#Derivatization)|Other than MSI,NMR|Extraction|
+|[Chromatography instrument](#Chromatography_instrument)|LC-MS,LC-DAD-MS,GC-MS,GCGC-MS,GC-FID-MS|Chromatography|
+|[Autosampler model](#Autosampler_model_Ch)|LC-MS,LC-DAD-MS,GC-MS,GCGC-MS,GC-FID-MS|Chromatography|
+|[Column model](#Column_model_Ch)|LC-MS,LC-DAD-MS,GC-MS,GC-FID-MS|Chromatography|
+|[Column type](#Column_type_Ch)|LC-MS,LC-DAD-MS,GC-MS,GC-FID-MS|Chromatography|
+|[Guard column](#Guard_column_Ch)|LC-MS,LC-DAD-MS,GC-MS,GCGC-MS,GC-FID-MS|Chromatography|
+|[Column model 1](#Column_model_1)|GCGC-MS|Chromatography|
+|[Column type 1](#Column_type_1)|GCGC-MS|Chromatography|
+|[Column model 2](#Column_model_2)|GCGC-MS|Chromatography|
+|[Column type 2](#Column_type_2)|GCGC-MS|Chromatography|
+|[Detector_Ch](#Detector_Ch)|LC-DAD-MS,GC-FID-MS|Chromatography|
+|[Signal range](#Signal_range)|LC-DAD-MS|Chromatography|
+|[Resolution](#Resolution)|LC-DAD-MS|Chromatography|
+|[Temperature](#Temperature_Ch)|GC-FID-MS|Chromatography|
+|[Scan polarity](#Scan_polarity)|All MS types|Mass spectrometry|
+|[Scan m/z range](#Scan_mz_range)|All MS types|Mass spectrometry|
+|[Instrument](#Instrument_MS)|All MS types|Mass spectrometry|
+|[Ion source](#Ion_source)|All MS types|Mass spectrometry|
+|[Mass analyzer](#Mass_analyzer)|All MS types|Mass spectrometry|
+|[CE instrument](#CE_instrument)|CE-MS|Capillary Electrophoresis|
+|[Autosampler model](#Autosampler_model_CE)|CE-MS|Capillary Electrophoresis|
+|[Column model](#Column_model_CE)|CE-MS|Capillary Electrophoresis|
+|[Column type](#Column_type_CE)|CE-MS|Capillary Electrophoresis|
+|[DI instrument](#DI_instrument)|DI-MS|Direct infusion|
+|[FIA instrument](#FIA_instrument)|FIA-MS|Flow injection analysis|
+|[Instrument manufacturer](#Instrument_manufacturer)|MSI|Mass spectrometry|
+|[Solvent](#Solvent_MSI)|MSI|Mass spectrometry|
+|[Target material](#Target_material)|MSI|Mass spectrometry|
+|[Spatial resolution](#Spatial_resolution)|MSI|Mass spectrometry|
+|[Pixel size x](#Pixel_size_x)|MSI|Mass spectrometry|
+|[Pixel size y](#Pixel_size_y)|MSI|Mass spectrometry|
+|[Max count of pixel x](#Max_count_of_pixel_x)|MSI|Mass spectrometry|
+|[Max count of pixel y](#Max_count_of_pixel_y)|MSI|Mass spectrometry|
+|[Max dimension x](#Max_dimension_x)|MSI|Mass spectrometry|
+|[Max dimension y](#Max_dimension_y)|MSI|Mass spectrometry|
+|[Inlet type](#Inlet_type)|MSI|Mass spectrometry|
+|[Detector](#Detector_MSI)|MSI|Mass spectrometry|
+|[Detector mode](#Detector_mode)|MSI|Mass spectrometry|
+|[Resolving power](#Resolving_power)|MSI|Mass spectrometry|
+|[Resolving power m/z](#Resolving_power_mz)|MSI|Mass spectrometry|
+|[Native spectrum identifier format](#Native_spectrum_identifier_format)|MSI|Mass spectrometry|
+|[Data file content](#Data_file_content)|MSI|Mass spectrometry|
+|[Spectrum representation](#Spectrum_representation)|MSI|Mass spectrometry|
+|[Raw data file format](#Raw_data_file_format)|MSI|Mass spectrometry|
+|[Instrument software](#Instrument_software)|MSI|Mass spectrometry|
+|[Instrument software version](#Instrument_software_version)|MSI|Mass spectrometry|
+|[Line scan direction](#Line_scan_direction)|MSI|Mass spectrometry|
+|[Line scan sequence](#Line_scan_sequence)|MSI|Mass spectrometry|
+|[Scan pattern](#Scan_pattern)|MSI|Mass spectrometry|
+|[Scan type](#Scan_type)|MSI|Mass spectrometry|
+|[Number of scans](#Number_of_scans)|MSI|Mass spectrometry|
+|[Sample mounting](#Sample_mounting)|MSI|Preparation|
+|[Sample preservation](#Sample_preservation)|MSI|Preparation|
+|[Tissue modification](#Tissue_modification)|MSI|Preparation|
+|[Sectioning instrument](#Sectioning_instrument)|MSI|Preparation|
+|[Section thickness](#Section_thickness)|MSI|Preparation|
+|[Matrix](#Matrix)|MSI|Preparation|
+|[Matrix application](#Matrix_application)|MSI|Preparation|
+|[Stain](#Stain)|MSI|Histology|
+|[Data processing software](#Data_processing_software)|MSI|Data processing|
+|[Data processing software version](#Data_processing_software_version)|MSI|Data processing|
+|[Extraction method](#Extraction_method)|NMR|Extraction|
+|[NMR tube type](#NMR_tube_type)|NMR|NMR sample|
+|[Solvent](#Solvent_NMR)|NMR|NMR sample|
+|[Sample pH](#Sample_pH)|NMR|NMR sample|
+|[Temperature](#Temperature_NMR)|NMR|NMR sample|
+|[Instrument](#Instrument_NMR)|NMR|NMR spectroscopy|
+|[NMR probe](#NMR_probe)|NMR|NMR spectroscopy|
+|[Number of transients](#Number_of_transients)|NMR|NMR spectroscopy|
+|[Pulse sequence name](#Pulse_sequence_name)|NMR|NMR spectroscopy|
+|[Magnetic field strength](#Magnetic_field_strength)|NMR|NMR spectroscopy|
+
+[Parameter Value\[Post extraction\]](#Post_extraction)<a name="Post_extraction"></a>
+: This column describes how the sample was extracted into a solvent prior to being injected into the analytical instrument of choice. Example, 400 µL water.
+
+[Parameter Value\[Derivatization\]](#Derivatization)<a name="Derivatization"></a>
+: If the sample has been subjected to chemical modification prior to injection. Example, sylilation.
+
+[Parameter Value\[Chromatography instrument\]](#Chromatography_instrument)<a name="Chromatography_instrument"></a>
+: Add the full name of the instrument used for the Chromatographic part of this assay, including the manufacturer and model number as reported in manufacturer's brochures, user manuals, or on their website. Example, Shimadzu Nexera UHPLC system.
+
+[Parameter Value\[Autosampler model\]](#Autosampler_model_Ch)<a name="Autosampler_model_Ch"></a>
+: Manufacturer and model number.
+
+[Parameter Value\[Column model\]](#Column_model_Ch)<a name="Column_model_Ch"></a>
+: Manufacturer, model number and dimensions. Example, HSS T3 C18 (1.8 μm, 1.0 x 100 mm; Waters).
+
+[Parameter Value\[Column type\]](#Column_type_Ch)<a name="Column_type_Ch"></a>
+: Type or phase of column used. Example, reverse phase.
+
+[Parameter Value\[Guard column\]](#Guard_column_Ch)<a name="Guard_column_Ch"></a>
+: Type of guard column used.
+
+[Parameter Value\[Column model 1\]](#Column_model_1)<a name="Column_model_1"></a>
+: Model of first GCGC column.
+
+[Parameter Value\[Column type 1\]](#Column_type_1)<a name="Column_type_1"></a>
+: Type of first GCGC column.
+
+[Parameter Value\[Column model 2\]](#Column_model_2)<a name="Column_model_2"></a>
+: Model of second GCGC column.
+
+[Parameter Value\[Column type 2\]](#Column_type_2)<a name="Column_type_2"></a>
+: Type of second GCGC column.
+
+[Parameter Value\[Detector\]](#Detector_Ch)<a name="Detector_Ch"></a>
+: TBD.
+
+[Parameter Value\[Signal range\]](#Signal_range)<a name="Signal_range"></a>
+: TBD.
+
+[Parameter Value\[Resolution\]](#Resolution)<a name="Resolution"></a>
+: TBD.
+
+[Parameter Value\[Temperature\]](#Temperature_Ch)<a name="Temperature_Ch"></a>
+: TBD.
+
+[Parameter Value\[Scan polarity\]](#Scan_polarity)<a name="Scan_polarity"></a>
+: An acquisition mode to which specifies weather polarity is negative, positive or alternating.
+
+[Parameter Value\[Scan m/z range\]](#Scan_mz_range)<a name="Scan_mz_range"></a>
+: The m/z range used in the assay. Example, 100-1000.
+
+[Parameter Value\[Instrument\]](#Instrument_MS)<a name="Instrument_MS"></a>
+: Add the full name of the mass spectrometer/detector you used for this LC/MS assay, including the instrument manufacturer and model number as reported in manufacturer's brochures, user manuals, or on their website. Example, Bruker micrOTOF-Q II.
+
+[Parameter Value\[Ion source\]](#Ion_source)<a name="Ion_source"></a>
+: The ion source where applicable to the instrument, e.g. ESI.
+
+[Parameter Value\[Mass analyzer\]](#Mass_analyzer)<a name="Mass_analyzer"></a>
+: The analyser/detector of the mass fragments generated during the assay. Example, Triple quadrupole.
+
+[Parameter Value\[CE instrument\]](#CE_instrument)<a name="CE_instrument"></a>
+: The name of the capillary electrophoresis instrument, manufacturer, model.
+
+[Parameter Value\[Autosampler model\]](#Autosampler_model_CE)<a name="Autosampler_model_CE"></a>
+: Manufacturer and model number.
+
+[Parameter Value\[Column model\]](#Column_model_CE)<a name="Column_model"></a>
+: Manufacturer and model number of capillary column used.
+
+[Parameter Value\[Column type\]](#Column_type_CE)<a name="Column_type"></a>
+: Type of capillary column used.
+
+[Parameter Value\[DI instrument\]](#DI_instrument)<a name="DI_instrument"></a>
+: The name of the direct infusion instrument.
+
+[Parameter Value\[FIA instrument\]](#FIA_instrument)<a name="FIA_instrument"></a>
+: The name of the flow injection analysis instrument.
+
+[Parameter Value\[Instrument manufacturer\]](#Instrument_manufacturer_MSI)<a name="Instrument_manufacturer_MSI"></a>
+: The manufacturer of the mass spectrometry imaging instrument.
+
+[Parameter Value\[Solvent\]](#Solvent_MSI)<a name="Solvent_MSI"></a>
+: TBD.
+
+[Parameter Value\[Target material\]](#Target_material)<a name="Target_material"></a>
+: TBD.
+
+[Parameter Value\[Spatial resolution\]](#Spatial_resolution)<a name="Spatial_resolution"></a>
+: TBD.
+
+[Parameter Value\[Pixel size x\]](#Pixel_size_x)<a name="Pixel_size_x"></a>
+: TBD.
+
+[Parameter Value\[Pixel size y\]](#Pixel_size_y)<a name="Pixel_size_y"></a>
+: TBD.
+
+[Parameter Value\[Max count of pixel x\]](#Max_count_of_pixel_x)<a name="Max_count_of_pixel_x"></a>
+: TBD.
+
+[Parameter Value\[Max count of pixel y\]](#Max_count_of_pixel_y)<a name="Max_count_of_pixel_y"></a>
+: TBD.
+
+[Parameter Value\[Max dimension x\]](#Max_dimension_x)<a name="Max_dimension_x"></a>
+: TBD.
+
+[Parameter Value\[Max dimension y\]](#Max_dimension_y)<a name="Max_dimension_y"></a>
+: TBD.
+
+[Parameter Value\[Inlet type\]](#Inlet_type)<a name="Inlet_type"></a>
+: TBD.
+
+[Parameter Value\[Detector\]](#Detector_MSI)<a name="Detector_MSI"></a>
+: TBD.
+
+[Parameter Value\[Detector mode\]](#Detector_mode)<a name="Detector_mode"></a>
+: TBD.
+
+[Parameter Value\[Resolving power\]](#Resolving_power)<a name="Resolving_power"></a>
+: TBD.
+
+[Parameter Value\[Resolving power m/z\]](#Resolving_power_mz)<a name="Resolving_power_m/z"></a>
+: TBD.
+
+[Parameter Value\[Native spectrum identifier format\]](#Native_spectrum_identifier_format)<a name="Native_spectrum_identifier_format"></a>
+: TBD.
+
+[Parameter Value\[Data file content\]](#Data_file_content)<a name="Data_file_content"></a>
+: TBD.
+
+[Parameter Value\[Spectrum representation\]](#Spectrum_representation)<a name="Spectrum_representation"></a>
+: TBD.
+
+[Parameter Value\[Raw data file format\]](#Raw_data_file_format)<a name="Raw_data_file_format"></a>
+: TBD.
+
+[Parameter Value\[Instrument software\]](#Instrument_software)<a name="Instrument_software"></a>
+: TBD.
+
+[Parameter Value\[Instrument software version\]](#Instrument_software_version)<a name="Instrument_software_version"></a>
+: TBD.
+
+[Parameter Value\[Line scan direction\]](#Line_scan_direction)<a name="Line_scan_direction"></a>
+: TBD.
+
+[Parameter Value\[Line scan sequence\]](#Line_scan_sequence)<a name="Line_scan_sequence"></a>
+: TBD.
+
+[Parameter Value\[Scan pattern\]](#Scan_pattern)<a name="Scan_pattern"></a>
+: TBD.
+
+[Parameter Value\[Scan type\]](#Scan_type)<a name="Scan_type"></a>
+: TBD.
+
+[Parameter Value\[Number of scans\]](#Number_of_scans)<a name="Number_of_scans"></a>
+: TBD.
+
+[Parameter Value\[Sample mounting\]](#Sample_mounting)<a name="Sample_mounting"></a>
+: TBD.
+
+[Parameter Value\[Sample preservation\]](#Sample_preservation)<a name="Sample_preservation"></a>
+: TBD.
+
+[Parameter Value\[Tissue modification\]](#Tissue_modification)<a name="Tissue_modification"></a>
+: TBD.
+
+[Parameter Value\[Sectioning instrument\]](#Sectioning_instrument)<a name="Sectioning_instrument"></a>
+: TBD.
+
+[Parameter Value\[Section thickness\]](#Section_thickness)<a name="Section_thickness"></a>
+: TBD.
+
+[Parameter Value\[Matrix\]](#Matrix)<a name="Matrix"></a>
+: TBD.
+
+[Parameter Value\[Matrix application\]](#Matrix_application)<a name="Matrix_application"></a>
+: TBD.
+
+[Parameter Value\[Stain\]](#Stain)<a name="Stain"></a>
+: TBD.
+
+[Parameter Value\[Data processing software\]](#Data_processing_software)<a name="Data_processing_software"></a>
+: TBD.
+
+[Parameter Value\[Data processing software version\]](#Data_processing_software_version)<a name="Data_processing_software_version"></a>
+: TBD.
+
+[Parameter Value\[Extraction method\]](#Extraction_method)<a name="Extraction_method"></a>
+: How a sample was extracted from its source material, e.g. Methanol.
+
+[Parameter Value\[NMR tube type\]](#NMR_tube_type)<a name="NMR_tube_type"></a>
+: Size and type of tube. Example, standard 5 mm glass NMR tube (Wilmad, LabGlass, USA).
+
+[Parameter Value\[Solvent\]](#Solvent)<a name="Solvent"></a>
+: Solvent used in the NMR sample, e.g. D2O.
+
+[Parameter Value\[Sample pH\]](#Sample_pH)<a name="Sample_pH"></a>
+: Sample pH value, e.g. 7.
+
+[Parameter Value\[Temperature\]](#Temperature_NMR)<a name="Temperature_NMR"></a>
+: Sample temperature value with relevant temperature unit.
+
+[Parameter Value\[Instrument\]](#Instrument_NMR)<a name="Instrument_NMR"></a>
+: Add the full name of the instrument you used for the NMR study in this assay, including the model number and its operating frequency. Example, Varian Unity Inova 500 MHz spectrometer.
+
+[Parameter Value\[NMR probe\]](#NMR_probe)<a name="NMR_probe"></a>
+: Add a full description including the name and type of probe used.This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked '$PROBHD=' Example, 5 mm CPTCI 1H-13C/15N/D Z-GRD.
+
+[Parameter Value\[Number of transients\]](#Number_of_transients)<a name="Number_of_transients"></a>
+: The number of scans acquired. This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked '$NS='. Example, 128.
+
+[Parameter Value\[Pulse sequence name\]](#Pulse_sequence_name)<a name="Pulse_sequence_name"></a>
+: The pulse sequence program used with a short description.This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked '$PULPROG=' and in the file 'pulseprogram.txt'. Example, 1D 1H with presaturation (presat).
+
+[Parameter Value\[Magnetic field strength\]](#Magnetic_field_strength)<a name="Magnetic_field_strength"></a>
+: Magnetic field strength in Tesla (T), e.g. 11.7.
