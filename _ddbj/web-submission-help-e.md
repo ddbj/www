@@ -340,6 +340,8 @@ Related page
 
   - Some extra space or illegal characters, such as multibyte, unicode, or unprintable character, are included in the file.
 
+  - The annotation contains only source feature. Add appropriate featute(s) to the annotation.
+
 ### Error/Warning  {#flow-7-7}
 
   - If there are is no error after you click "Confirm", "Next" button is changed to be clickable and you can move to the next process.

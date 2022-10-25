@@ -360,6 +360,8 @@ Assembly information のサンプルは**[ここから](/assets/files/example/NS
 
   - 余計なスペース、不正文字(全角文字、unicode文字、unprintable character)がファイル中に含まれている場合もアップロードできません。
 
+  - source フィーチャーのみではアップロードできません。適切なフィーチャーを加えてください。
+
 ### Error/Warning  {#flow-7-7}
 
   - "Confirm" クリック後、エラーが生じなければ、"Next" ボタンがクリック可能になり次のステップ(Final page)に進めます。
