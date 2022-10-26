@@ -303,24 +303,24 @@ SDRF はオミックス実験の自然な流れを再現した表であり、
 |40|degree_C|
 
 [Unit\[\<unit category\>\]](#Unit)<a name="Unit"></a>
-: Used as an attribute column following [Characteristics](#Characteristics), [Factor Value](#Factor_Value) or [Parameter Value](#SDRF_Protocol_Parameters). This column contains terms describing the unit(s) to be applied to the values in the preceding column. The type of unit is included in the column heading,, e.g. "Unit[temperature]". 
+: 前にあるカラムに記載された値の「単位」を示すカラムで、[Characteristics](#Characteristics)、[Factor Value](#Factor_Value) や [Parameter Value](#SDRF_Protocol_Parameters) に続けて使用します。カラム名に単位の種類を含めます。例 Unit[temperature]
 
 [Acquisition Parameter Data File](#Acquisition_Parameter_Data_File)<a name="Acquisition_Parameter_Data_File"></a>
-: These should contain the acquisition parameter data. In the Bruker raw data file structure, the file is called 'acqus.txt'. Example, acqus1.txt.
+: acquisition parameter data を含むファイル。Bruker では生データファイルの中で 'acqus.txt' と呼ばれているファイルが該当します。例 acqus1.txt
 
 [Comment\[Acquisition Parameter Data File md5\]](#Acquisition_Parameter_Data_File_md5)<a name="Acquisition_Parameter_Data_File_md5"></a>
-: Enter [MD5 hash value](/checksum-e.html) of acquisition parameter data file here.
+: acquisition parameter data file の [MD5 ハッシュ値](/checksum.html) を記入。
 
 [Free Induction Decay Data File](#Free_Induction_Decay_Data_File)<a name="Free_Induction_Decay_Data_File"></a>
-: This is where you should enter, either the folder or the zipped NMR raw files for each sample in this study. Example, 17_QC1.zip.
+: free induction decay data file を記載。
 
 [Comment\[Free Induction Decay Data File md5\]](#Free_Induction_Decay_Data_File_md5)<a name="Free_Induction_Decay_Data_File_md5"></a>
-: Enter [MD5 hash value](/checksum-e.html) of free induction decay data file here.
+: free induction decay data file の [MD5 ハッシュ値](/checksum.html) を記入。
 
 ## SDRF Protocol Parameters {#SDRF_Protocol_Parameters}
 
-Protocol Parameters supplement protocols described in IDF. 
-The necessary and recommended parameters are different for each Submission and Protocol type.
+IDF で記載されたプロトコールを補完するプロトコールパラメータ。
+必須・推奨パラメータは Submission と Protocol type によって異なります。
 
 |Protocol parameter|Submission type|Protocol type|
 |---|
@@ -398,37 +398,37 @@ The necessary and recommended parameters are different for each Submission and P
 |[Magnetic field strength](#Magnetic_field_strength)|NMR|NMR spectroscopy|
 
 [Parameter Value\[Post extraction\]](#Post_extraction)<a name="Post_extraction"></a>
-: This column describes how the sample was extracted into a solvent prior to being injected into the analytical instrument of choice. Example, 400 µL water.
+: サンプルが測定機器に注入される前にどのように溶媒に抽出されたかを記載します。例 400 µL water
 
 [Parameter Value\[Derivatization\]](#Derivatization)<a name="Derivatization"></a>
-: If the sample has been subjected to chemical modification prior to injection. Example, sylilation.
+: サンプルが注入前に化学修飾が施されている場合、その修飾について記載します。例 sylilation.
 
 [Parameter Value\[Chromatography instrument\]](#Chromatography_instrument)<a name="Chromatography_instrument"></a>
-: Add the full name of the instrument used for the Chromatographic part of this assay, including the manufacturer and model number as reported in manufacturer's brochures, user manuals, or on their website. Example, Shimadzu Nexera UHPLC system.
+: 実験のクロマトグラフィー部分で使用した機器の名前、製造元、説明書に記載されているモデル番号、ユーザマニュアルやウェブサイト。例 Shimadzu Nexera UHPLC system
 
 [Parameter Value\[Autosampler model\]](#Autosampler_model_Ch)<a name="Autosampler_model_Ch"></a>
-: Manufacturer and model number.
+: オートサンプラーの製造元とモデル番号。
 
 [Parameter Value\[Column model\]](#Column_model_Ch)<a name="Column_model_Ch"></a>
-: Manufacturer, model number and dimensions. Example, HSS T3 C18 (1.8 μm, 1.0 x 100 mm; Waters).
+: 使用したカラムの製造元、モデル番号や dimension。例 HSS T3 C18 (1.8 μm, 1.0 x 100 mm; Waters)
 
 [Parameter Value\[Column type\]](#Column_type_Ch)<a name="Column_type_Ch"></a>
-: Type or phase of column used. Example, reverse phase.
+: 使用したカラムの種類やフェーズ。例 reverse phase
 
 [Parameter Value\[Guard column\]](#Guard_column_Ch)<a name="Guard_column_Ch"></a>
-: Type of guard column used.
+: 使用したガードカラムの種類。
 
 [Parameter Value\[Column model 1\]](#Column_model_1)<a name="Column_model_1"></a>
-: Model of first GCGC column.
+: 一次元目の GCGC カラムのモデル。
 
 [Parameter Value\[Column type 1\]](#Column_type_1)<a name="Column_type_1"></a>
-: Type of first GCGC column.
+: 一次元目の GCGC カラムの種類。
 
 [Parameter Value\[Column model 2\]](#Column_model_2)<a name="Column_model_2"></a>
-: Model of second GCGC column.
+: 二次元目の GCGC カラムのモデル。
 
 [Parameter Value\[Column type 2\]](#Column_type_2)<a name="Column_type_2"></a>
-: Type of second GCGC column.
+: 二次元目の GCGC カラムの種類。
 
 [Parameter Value\[Detector\]](#Detector_Ch)<a name="Detector_Ch"></a>
 : TBD.
@@ -443,40 +443,40 @@ The necessary and recommended parameters are different for each Submission and P
 : TBD.
 
 [Parameter Value\[Scan polarity\]](#Scan_polarity)<a name="Scan_polarity"></a>
-: An acquisition mode to which specifies weather polarity is negative, positive or alternating.
+: acquisition mode を極性、negative、positive もしくは alternating で示す。
 
 [Parameter Value\[Scan m/z range\]](#Scan_mz_range)<a name="Scan_mz_range"></a>
-: The m/z range used in the assay. Example, 100-1000.
+: 実験の m/z レンジ。例 100-1000
 
 [Parameter Value\[Instrument\]](#Instrument_MS)<a name="Instrument_MS"></a>
-: Add the full name of the mass spectrometer/detector you used for this LC/MS assay, including the instrument manufacturer and model number as reported in manufacturer's brochures, user manuals, or on their website. Example, Bruker micrOTOF-Q II.
+: LC-MS 実験で使用した分光器/検出器の製造元、モデル番号、説明書やウェブサイト。例 Bruker micrOTOF-Q II
 
 [Parameter Value\[Ion source\]](#Ion_source)<a name="Ion_source"></a>
-: The ion source where applicable to the instrument, e.g. ESI.
+: 機器のイオン源。例 ESI
 
 [Parameter Value\[Mass analyzer\]](#Mass_analyzer)<a name="Mass_analyzer"></a>
-: The analyser/detector of the mass fragments generated during the assay. Example, Triple quadrupole.
+: 実験で生成されたマスフラグメントの 解析器/検出器。例 Triple quadrupole
 
 [Parameter Value\[CE instrument\]](#CE_instrument)<a name="CE_instrument"></a>
-: The name of the capillary electrophoresis instrument, manufacturer, model.
+: キャピラリ電気泳動機器の名前、製造元やモデル。
 
 [Parameter Value\[Autosampler model\]](#Autosampler_model_CE)<a name="Autosampler_model_CE"></a>
-: Manufacturer and model number.
+: キャピラリ電気泳動に使用したオートサンプラーの製造元とモデル。
 
 [Parameter Value\[Column model\]](#Column_model_CE)<a name="Column_model"></a>
-: Manufacturer and model number of capillary column used.
+: 使用したキャピラリカラムの製造元とモデル番号。
 
 [Parameter Value\[Column type\]](#Column_type_CE)<a name="Column_type"></a>
-: Type of capillary column used.
+: 使用したキャピラリカラムの種類。
 
 [Parameter Value\[DI instrument\]](#DI_instrument)<a name="DI_instrument"></a>
-: The name of the direct infusion instrument.
+: direct infusion 機器の名前。
 
 [Parameter Value\[FIA instrument\]](#FIA_instrument)<a name="FIA_instrument"></a>
-: The name of the flow injection analysis instrument.
+: flow injection analysis 機器の名前。
 
 [Parameter Value\[Instrument manufacturer\]](#Instrument_manufacturer_MSI)<a name="Instrument_manufacturer_MSI"></a>
-: The manufacturer of the mass spectrometry imaging instrument.
+: マススペクトロメトリーイメージング機器の製造元。
 
 [Parameter Value\[Solvent\]](#Solvent_MSI)<a name="Solvent_MSI"></a>
 : TBD.
@@ -584,31 +584,31 @@ The necessary and recommended parameters are different for each Submission and P
 : TBD.
 
 [Parameter Value\[Extraction method\]](#Extraction_method)<a name="Extraction_method"></a>
-: How a sample was extracted from its source material, e.g. Methanol.
+: 出発材料からサンプルを抽出した方法。例 Methanol
 
 [Parameter Value\[NMR tube type\]](#NMR_tube_type)<a name="NMR_tube_type"></a>
-: Size and type of tube. Example, standard 5 mm glass NMR tube (Wilmad, LabGlass, USA).
+: チューブのサイズと種類。例 standard 5 mm glass NMR tube (Wilmad, LabGlass, USA)
 
 [Parameter Value\[Solvent\]](#Solvent)<a name="Solvent"></a>
-: Solvent used in the NMR sample, e.g. D2O.
+: NMR サンプル調整に使用した溶媒。例 D2O
 
 [Parameter Value\[Sample pH\]](#Sample_pH)<a name="Sample_pH"></a>
-: Sample pH value, e.g. 7.
+: サンプル pH 値。例 7
 
 [Parameter Value\[Temperature\]](#Temperature_NMR)<a name="Temperature_NMR"></a>
-: Sample temperature value with relevant temperature unit.
+: サンプルの温度。単位は [unit](#Unit) に記載。
 
 [Parameter Value\[Instrument\]](#Instrument_NMR)<a name="Instrument_NMR"></a>
-: Add the full name of the instrument you used for the NMR study in this assay, including the model number and its operating frequency. Example, Varian Unity Inova 500 MHz spectrometer.
+: NMR 測定で使用した機器の名前、モデル番号と共鳴周波数。例 Varian Unity Inova 500 MHz spectrometer
 
 [Parameter Value\[NMR probe\]](#NMR_probe)<a name="NMR_probe"></a>
-: Add a full description including the name and type of probe used.This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked '$PROBHD=' Example, 5 mm CPTCI 1H-13C/15N/D Z-GRD.
+: NMR プローブの名前と種類。この情報は 'Acquisition Parameter Data File' に記載されています。Bruker 生データファイルでは 'acqus.txt' 中の '$PROBHD=' と書かれた項目に記載されています。例 5 mm CPTCI 1H-13C/15N/D Z-GRD
 
 [Parameter Value\[Number of transients\]](#Number_of_transients)<a name="Number_of_transients"></a>
-: The number of scans acquired. This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked '$NS='. Example, 128.
+: 得られたスキャンの数。この情報は 'Acquisition Parameter Data File' に記載されています。Bruker 生データファイルでは 'acqus.txt' 中の '$NS=' と書かれた項目に記載されています。例 128
 
 [Parameter Value\[Pulse sequence name\]](#Pulse_sequence_name)<a name="Pulse_sequence_name"></a>
-: The pulse sequence program used with a short description.This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked '$PULPROG=' and in the file 'pulseprogram.txt'. Example, 1D 1H with presaturation (presat).
+: パルスシークエンスプログラムの名前と短い説明。この情報は 'Acquisition Parameter Data File' に記載されています。Bruker 生データファイルでは 'acqus.txt' 中の '$PULPROG=' と書かれた項目に記載されています。例 1D 1H with presaturation (presat)
 
 [Parameter Value\[Magnetic field strength\]](#Magnetic_field_strength)<a name="Magnetic_field_strength"></a>
-: Magnetic field strength in Tesla (T), e.g. 11.7.
+: テスラ (T) で記載した磁場強度。例 11.7

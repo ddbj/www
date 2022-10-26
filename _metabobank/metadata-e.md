@@ -293,7 +293,7 @@ Enter two filenames for a sample in two columns.
 |40|degree_C|
 
 [Unit\[\<unit category\>\]](#Unit)<a name="Unit"></a>
-: Used as an attribute column following [Characteristics](#Characteristics), [Factor Value](#Factor_Value) or [Parameter Value](#SDRF_Protocol_Parameters). This column contains terms describing the unit(s) to be applied to the values in the preceding column. The type of unit is included in the column heading,, e.g. "Unit[temperature]". 
+: Used as an attribute column following [Characteristics](#Characteristics), [Factor Value](#Factor_Value) or [Parameter Value](#SDRF_Protocol_Parameters). This column contains terms describing the unit(s) to be applied to the values in the preceding column. The type of unit is included in the column heading, e.g. "Unit[temperature]". 
 
 [Acquisition Parameter Data File](#Acquisition_Parameter_Data_File)<a name="Acquisition_Parameter_Data_File"></a>
 : These should contain the acquisition parameter data. In the Bruker raw data file structure, the file is called 'acqus.txt'. Example, acqus1.txt.
@@ -302,7 +302,7 @@ Enter two filenames for a sample in two columns.
 : Enter [MD5 hash value](/checksum-e.html) of acquisition parameter data file here.
 
 [Free Induction Decay Data File](#Free_Induction_Decay_Data_File)<a name="Free_Induction_Decay_Data_File"></a>
-: This is where you should enter, either the folder or the zipped NMR raw files for each sample in this study. Example, 17_QC1.zip.
+: These should contain the free induction decay data file.
 
 [Comment\[Free Induction Decay Data File md5\]](#Free_Induction_Decay_Data_File_md5)<a name="Free_Induction_Decay_Data_File_md5"></a>
 : Enter [MD5 hash value](/checksum-e.html) of free induction decay data file here.
@@ -391,16 +391,16 @@ The necessary and recommended parameters are different for each Submission and P
 : This column describes how the sample was extracted into a solvent prior to being injected into the analytical instrument of choice. Example, 400 µL water.
 
 [Parameter Value\[Derivatization\]](#Derivatization)<a name="Derivatization"></a>
-: If the sample has been subjected to chemical modification prior to injection. Example, sylilation.
+: If the sample has been subjected to chemical modification prior to injection, describe the modification. Example, sylilation.
 
 [Parameter Value\[Chromatography instrument\]](#Chromatography_instrument)<a name="Chromatography_instrument"></a>
 : Add the full name of the instrument used for the Chromatographic part of this assay, including the manufacturer and model number as reported in manufacturer's brochures, user manuals, or on their website. Example, Shimadzu Nexera UHPLC system.
 
 [Parameter Value\[Autosampler model\]](#Autosampler_model_Ch)<a name="Autosampler_model_Ch"></a>
-: Manufacturer and model number.
+: Manufacturer and model number of the autosampler used.
 
 [Parameter Value\[Column model\]](#Column_model_Ch)<a name="Column_model_Ch"></a>
-: Manufacturer, model number and dimensions. Example, HSS T3 C18 (1.8 μm, 1.0 x 100 mm; Waters).
+: Manufacturer, model number and dimensions of the column used. Example, HSS T3 C18 (1.8 μm, 1.0 x 100 mm; Waters).
 
 [Parameter Value\[Column type\]](#Column_type_Ch)<a name="Column_type_Ch"></a>
 : Type or phase of column used. Example, reverse phase.
@@ -439,7 +439,7 @@ The necessary and recommended parameters are different for each Submission and P
 : The m/z range used in the assay. Example, 100-1000.
 
 [Parameter Value\[Instrument\]](#Instrument_MS)<a name="Instrument_MS"></a>
-: Add the full name of the mass spectrometer/detector you used for this LC/MS assay, including the instrument manufacturer and model number as reported in manufacturer's brochures, user manuals, or on their website. Example, Bruker micrOTOF-Q II.
+: Add the full name of the mass spectrometer/detector you used for this LC-MS assay, including the instrument manufacturer and model number as reported in manufacturer's brochures, user manuals, or on their website. Example, Bruker micrOTOF-Q II.
 
 [Parameter Value\[Ion source\]](#Ion_source)<a name="Ion_source"></a>
 : The ion source where applicable to the instrument, e.g. ESI.
@@ -451,7 +451,7 @@ The necessary and recommended parameters are different for each Submission and P
 : The name of the capillary electrophoresis instrument, manufacturer, model.
 
 [Parameter Value\[Autosampler model\]](#Autosampler_model_CE)<a name="Autosampler_model_CE"></a>
-: Manufacturer and model number.
+: Manufacturer and model number of the autosampler used for the capillary electrophoresis.
 
 [Parameter Value\[Column model\]](#Column_model_CE)<a name="Column_model"></a>
 : Manufacturer and model number of capillary column used.
@@ -586,19 +586,19 @@ The necessary and recommended parameters are different for each Submission and P
 : Sample pH value, e.g. 7.
 
 [Parameter Value\[Temperature\]](#Temperature_NMR)<a name="Temperature_NMR"></a>
-: Sample temperature value with relevant temperature unit.
+: Sample temperature value with relevant temperature [unit](#Unit).
 
 [Parameter Value\[Instrument\]](#Instrument_NMR)<a name="Instrument_NMR"></a>
 : Add the full name of the instrument you used for the NMR study in this assay, including the model number and its operating frequency. Example, Varian Unity Inova 500 MHz spectrometer.
 
 [Parameter Value\[NMR probe\]](#NMR_probe)<a name="NMR_probe"></a>
-: Add a full description including the name and type of probe used.This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked '$PROBHD=' Example, 5 mm CPTCI 1H-13C/15N/D Z-GRD.
+: Add a full description including the name and type of probe used. This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked '$PROBHD=' Example, 5 mm CPTCI 1H-13C/15N/D Z-GRD.
 
 [Parameter Value\[Number of transients\]](#Number_of_transients)<a name="Number_of_transients"></a>
 : The number of scans acquired. This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked '$NS='. Example, 128.
 
 [Parameter Value\[Pulse sequence name\]](#Pulse_sequence_name)<a name="Pulse_sequence_name"></a>
-: The pulse sequence program used with a short description.This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked '$PULPROG=' and in the file 'pulseprogram.txt'. Example, 1D 1H with presaturation (presat).
+: The pulse sequence program used with a short description. This information can be found in the 'Acquisition Parameter Data File', 'acqus.txt' found within the Bruker raw data file structure, in the field marked '$PULPROG=' and in the file 'pulseprogram.txt'. Example, 1D 1H with presaturation (presat).
 
 [Parameter Value\[Magnetic field strength\]](#Magnetic_field_strength)<a name="Magnetic_field_strength"></a>
 : Magnetic field strength in Tesla (T), e.g. 11.7.
