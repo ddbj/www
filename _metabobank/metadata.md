@@ -130,7 +130,7 @@ Experiment type は [controlled terms](https://docs.google.com/spreadsheets/d/1b
 例 Mishima Naoko, Fuji San, Shizuoka Ken
 
 [Comment\[Submission Date\]](#Submission_Date)<a name="Submission_Date"></a>
-:登録日。MetaboBank で記入。
+: 登録日。MetaboBank で記入。
 
 [Comment\[Last Update Date\]](#Last_Update_Date)<a name="Last_Update_Date"></a>
 : 最終更新日。MetaboBank で記入。
