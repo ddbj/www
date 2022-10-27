@@ -15,7 +15,7 @@ In the spatial gene expression data submission, it is important for data interpr
 
 Submission of output files from the 10xGenomics [Visium](https://www.10xgenomics.com/jp/products/spatial-gene-expression) is explained in this section. Submit barcode sequences, position of spots containing the barcodes, tissue images, and scaling factors that converts pixel positions in the original, full-resolution images to pixel positions in the tissue image files.    
 
-[Spatial Gene Expression - Image Outputs](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/images)
+[Spatial Gene Expression - Image Outputs](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/spatial)
 
 Among the files indicated in the above page, submit the following files along with raw and processed data files. The other related files may also be included.
 

@@ -18,7 +18,7 @@ lang: ja
 
 空間的な遺伝子発現量測定に使用したバーコード配列、バーコード配列を含むスポットの位置、組織切片画像、スポットと画像の対応倍率、を登録します。    
 
-[Spatial Gene Expression - Image Outputs](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/images)
+[Spatial Gene Expression - Image Outputs](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/spatial)
 
 上記の Visium ページで示されている出力ファイルの内、以下のファイルを生・解析データと一緒に登録します。他の関連するファイルを含めることもできます。
 
