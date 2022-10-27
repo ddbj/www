@@ -34,7 +34,7 @@ Submit such human samples to [JGA](/jga/index-e.html) which have access-control 
 
 In general, create BioSample records for biological source materials and represent extracted molecules, nucleic acids and metabolites, by [DRA](/dra/metadata-e.html), [GEA](/gea/metadata-e.html) and [MetaboBank](/metabobank/metadata-e.html) metadata.
 
-- Biological replicates are represented by separate BioSamples with distinct 'biological_replicate' attributes. [DRA objects organization](/dra/submission-e.html#ex_replicates) For example, 'biological_replicate = 1' and 'biological_replicate = 2'.
+- Biological replicates are represented by separate BioSamples with distinct 'biological_replicate' attributes. [DRA objects organization](/dra/metadata-e.html#ex_replicates) For example, 'biological_replicate = 1' and 'biological_replicate = 2'.
 - Technical replicates are represented by DRA Experiments and GEA SDRF. Use a BioSample for technical replicates.
 - RNA and metabolites samples extracted from a plant leaf, create one BioSample and represent extracts by [GEA](/gea/metadata-e.html) and [MetaboBank](/metabobank/metadata-e.html) metadata.
 - If a paired-end library from single sample is sequenced, do not create separate sample for forward and reverse reads but register both reads in a DRA Run. [DRA objects organization](/dra/submission-e.html#ex_samples)

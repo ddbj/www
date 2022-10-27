@@ -33,7 +33,7 @@ DDBJ BioSample データベースはアクセスを制限する仕組みを持�
 
 一般的に、生物学的な試料に対して BioSample を作成し、そこから抽出された核酸、代謝物などの抽出物は [DRA](/dra/metadata.html)、[GEA](/gea/metadata.html) や [MetaboBank](/metabobank/metadata.html) のメタデータで表します。
 
-- biological replicate は biological_replicate 属性で区別します。例 "biological_replicate = 1" と "biological_replicate = 2" 例 [DRA の構成](/dra/submission.html#ex_replicates)
+- biological replicate はサンプルを分けて biological_replicate 属性で区別します。例 "biological_replicate = 1" と "biological_replicate = 2" 例 [DRA の構成](/dra/metadata.html#ex_replicates)
 - technical replicate はサンプルを分けず、DRA Experiment/GEA SDRF/MetaboBank SDRF で分けます。
 - 植物の葉から調整した RNA、代謝物サンプルは葉に対応する BioSample を一つ作成し、抽出物は [GEA](/gea/metadata.html) や [MetaboBank](/metabobank/metadata.html) メタデータで表現します。
 - 同じサンプルから調整した paired-end library をシークエンスした場合、forward と reverse で BioSample を分けずに一つの DRA Run に両ペアードファイルを含めます。[DRA の構成](/dra/submission.html#ex_samples)
