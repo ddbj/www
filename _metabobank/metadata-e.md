@@ -295,6 +295,12 @@ Enter two filenames for a sample in two columns.
 [Unit\[\<unit category\>\]](#Unit)<a name="Unit"></a>
 : Used as an attribute column following [Characteristics](#Characteristics), [Factor Value](#Factor_Value) or [Parameter Value](#SDRF_Protocol_Parameters). This column contains terms describing the unit(s) to be applied to the values in the preceding column. The type of unit is included in the column heading, e.g. "Unit[temperature]". 
 
+[Image Data File](#Image_Data_File)<a name="Image_Data_File"></a>
+: Data files obtained in imaging experiments. The open-source data format files [imzML](https://ms-imaging.org/imzml/) and ibd are recommended to be included. Also submit tissue image files (png, jpg).
+
+[Comment\[Image Data File md5\]](#Comment_Image_Data_File_md5)<a name="Comment_Image_Data_File_md5"></a>
+: Enter [MD5 hash value](/checksum-e.html) of image data file here.
+
 [Acquisition Parameter Data File](#Acquisition_Parameter_Data_File)<a name="Acquisition_Parameter_Data_File"></a>
 : These should contain the acquisition parameter data. In the Bruker raw data file structure, the file is called 'acqus.txt'. Example, acqus1.txt.
 

@@ -305,6 +305,12 @@ SDRF はオミックス実験の自然な流れを再現した表であり、
 [Unit\[\<unit category\>\]](#Unit)<a name="Unit"></a>
 : 前にあるカラムに記載された値の「単位」を示すカラムで、[Characteristics](#Characteristics)、[Factor Value](#Factor_Value) や [Parameter Value](#SDRF_Protocol_Parameters) に続けて使用します。カラム名に単位の種類を含めます。例 Unit[temperature]
 
+[Image Data File](#Image_Data_File)<a name="Image_Data_File"></a>
+: イメージング実験で得られたデータファイル。オープンソース形式の [imzML](https://ms-imaging.org/imzml/) と ibd ファイルの登録を推奨します。組織切片の画像ファイル (png、jpg) も登録します。
+
+[Comment\[Image Data File md5\]](#Comment_Image_Data_File_md5)<a name="Comment_Image_Data_File_md5"></a>
+: image data file の [MD5 ハッシュ値](/checksum.html) を記入。
+
 [Acquisition Parameter Data File](#Acquisition_Parameter_Data_File)<a name="Acquisition_Parameter_Data_File"></a>
 : acquisition parameter data を含むファイル。Bruker では生データファイルの中で 'acqus.txt' と呼ばれているファイルが該当します。例 acqus1.txt
 
