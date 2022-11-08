@@ -450,6 +450,7 @@ SAA-SZZ     ENA
 TAA-TZZ     GenBank       WGS/TSA
 UAA-UZZ     GenBank       
 VAA-VZZ     ENA           
+WAA-WZZ     GenBank       
 ```
 
 ## For Sequence Read Archive  {#dra}

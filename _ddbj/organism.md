@@ -143,9 +143,9 @@ strain 名は [/strain](/ddbj/qualifiers.html#strain) qualifier に記載して�
 
 #### ウイルス  {#virus}
 
-ウイルスの場合は二名法ではありませんが、[the International Committee on Taxonomy of Viruses](https://talk.ictvonline.org/) に従った種名を基本としています。  
+ウイルスの場合は二名法ではありませんが、[the International Committee on Taxonomy of Viruses](https://talk.ictvonline.org/) に従った種名を基本としています。    
 <span class="red">**2017年以前は、登録頻度の高い病原性ウイルスの場合、strain、serotype を生物名に含めて記載する運用を続けていましたが、この運用は新規登録分には適用されません。**</span>
-
+[識別子について](/ddbj/identifiers.html#virus) のウイルスに関するセクションをご参照ください。    
 例
 <pre><code>Influenza A virus</code></pre>
 
@@ -158,10 +158,10 @@ strain 名は [/strain](/ddbj/qualifiers.html#strain) qualifier に記載して�
 <pre><code>                   /<a href="/ddbj/qualifiers.html#country">country</a>="Japan:Tokyo"
                    /<a href="/ddbj/qualifiers.html#collection_date">collection_date</a>="2007-11-01"
                    /<a href="/ddbj/qualifiers.html#host">host</a>="Gallus gallus"
+                   /<a href="/ddbj/qualifiers.html#isolate">isolate</a>="A/chicken/Tokyo/2007"
                    /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="viral cRNA"
                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Influenza A virus"
                    /<a href="/ddbj/qualifiers.html#serotype">serotype</a>="H7N7"
-                   /<a href="/ddbj/qualifiers.html#strain">strain</a>="A/chicken/Tokyo/2007"
 </code></pre>
 
 #### 雑種  {#hybrid}

@@ -215,6 +215,7 @@ qualifier.
 
 For viruses, basically, we also accept scientific names, following [the International Committee on Taxonomy of Viruses](https://talk.ictvonline.org/).  
 <span class="red bold">By 2017, we used informal names for frequently submitted pathogenic viruses including their strain names and serotypes in the description of organism name. However, the rule has been discontinued for the future submissions. </span>
+See also the virus section on [Identifiers](/ddbj/identifiers-e.html#virus).     
 
 Example
 
@@ -232,10 +233,10 @@ Please describe them with appropriate qualifiers as below example.
 <pre><code>                   /<a href="/ddbj/qualifiers.html#country">country</a>="Japan:Tokyo"
                    /<a href="/ddbj/qualifiers.html#collection_date">collection_date</a>="2007-11-01"
                    /<a href="/ddbj/qualifiers.html#host">host</a>="Gallus gallus"
+                   /<a href="/ddbj/qualifiers.html#isolate">isolate</a>="A/chicken/Tokyo/2007"
                    /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="viral cRNA"
                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Influenza A virus"
                    /<a href="/ddbj/qualifiers.html#serotype">serotype</a>="H7N7"
-                   /<a href="/ddbj/qualifiers.html#strain">strain</a>="A/chicken/Tokyo/2007"
 </code></pre>
 
 #### hybrid  {#hybrid}

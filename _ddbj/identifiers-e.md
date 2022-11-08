@@ -43,7 +43,7 @@ A typical case is to use the [/strain](/ddbj/qualifiers-e.html#strain) qualifier
 [/cell_line](/ddbj/qualifiers-e.html#cell_line), 
  and so on. 
 
-### Assign to the Sequences   {#seq
+### Assign to the Sequences   {#seq}
 
 This type of identifier is operatively described. In cases of your research purpose, you may need to use this type of identifier.    
 
@@ -144,6 +144,15 @@ Even in these cases, the identifiers must be anonymized.  We prohibit using any 
 ### Viruses  {#virus}
 
 Usually, we recommend using [/isolate](/ddbj/qualifiers-e.html#isolate) qualifiers for viral data.    
+For frequently submitted pathogenic viruses like SARS-CoV-2 or others, we strongly recommend you using [/isolate](/ddbj/qualifiers-e.html#isolate) qualifiers with the identifiers in the following format recommended by [ICTV](https://ictv.global/ ).    
+-   Format: [virus_type]/[host_common_name]/[locality_name]/[sample_identifier]/[year]
+-   Example: SARS-CoV-2/human/Japan/A12/2021
+-   virus_type: the abbreviated name of the virus
+-   host_common_name: the common name of the viral host organism indicated in [/host](/ddbj/qualifiers-e.html#host) qualifier
+-   locality_name: the name of country or region of the collection site indicated in [/country](/ddbj/qualifiers-e.html#country) qualifier
+-   sample_identifier: any identifiers/numbers assigned by the submitters or the collectors
+-   year: the year of the sampling date indicated in [/collection_date](/ddbj/qualifiers-e.html#collection_date) qualifier
+
 It is difficult for viruses to confirm the pure strains strictly, but we conventionally accepted [/strain](/ddbj/qualifiers-e.html#strain) qualifiers for viral sequences.    
 Please note that genotype and genogroup are similar to viral species/lineages, so, they cannot be sample identifiers.    
 
