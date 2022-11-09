@@ -2,10 +2,6 @@ top_news:
   ja:
     - title: 2022年12月2日 ～ 12月9日 DDBJ センターの登録、検索・解析サービス停止のお知らせ
       path: 2022-11-02
-    - title: D-way 停止 11月9日 10:00-12:00
-      path: 2022-11-04
   en:
     - title: December 2nd - 9th  suspension of DDBJ services due to NIG supercomputer maintenance
       path: 2022-11-02-e
-    - title: D-way downtime, 10:00-12:00 9th November
-      path: 2022-11-04-e
