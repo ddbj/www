@@ -52,8 +52,6 @@ Check the content in "OVERVIEW" and submit a project by clicking the \[Submit\].
 
 {% include image.html url="books/hbp-04.jpg" caption="Submit BioProject" class="w450" %}
 
-The "OVERVIEW" tab continue to display submitted content. Updates will not be reflected in the "OVERVIEW" tab.
-
 ## Accession number  {#accession-number}
 
 A BioProject accession number with prefix PRJDB is automatically assigned to the submitted project. 

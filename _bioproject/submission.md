@@ -39,8 +39,6 @@ BioProject を新規登録する場合は左のタブから順番に内容を英
 
 {% include image.html url="books/hbp-04.jpg" caption="BioProject の投稿" class="w450" %}
 
-"OVERVIEW" には初回登録時の内容が表示され続けます。登録後の更新は反映されませんので、ご注意ください。
-
 ## アクセッション番号  {#accession-number}
 
 登録されたプロジェクトに対して、プレフィックス "PRJDB" の BioProject アクセッション番号が自動で発行されます。  
